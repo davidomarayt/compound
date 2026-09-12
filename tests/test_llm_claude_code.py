@@ -43,7 +43,7 @@ def test_structured_output_is_parsed(llm, monkeypatch):
 
 def test_model_flag_and_result_string_fallback(monkeypatch):
     monkeypatch.setattr("compound.llm.shutil.which", lambda name: "/usr/bin/claude")
-    llm = ClaudeCodeLLM(bin="claude", model="sonnet", style_dir=Path("style"))
+    llm = ClaudeCodeLLM(bin="claude", model="sonnet", style_dir=Path("style"), draft_tools="WebFetch")
     draft = {"headline": "h", "slug": "h", "summary": "s", "body_markdown": "b", "figures": [], "sources": [], "tags": ["x"], "email_cta": "c"}
     seen = {}
 
@@ -55,6 +55,11 @@ def test_model_flag_and_result_string_fallback(monkeypatch):
     d = llm.generate_draft(kind="manual", pillar="health", title="t", url="", summary="", source_text="", interview=[])
     assert isinstance(d, ArticleDraft) and d.headline == "h"
     assert seen["cmd"][seen["cmd"].index("--model") + 1] == "sonnet"
+    # drafts get the configured tools; other calls stay tool-free
+    assert seen["cmd"][seen["cmd"].index("--tools") + 1] == "WebFetch" and "--allowedTools" in seen["cmd"]
+    monkeypatch.setattr("compound.llm.subprocess.run", lambda cmd, **kw: (seen.__setitem__("cmd", cmd), R(json.dumps({"structured_output": {"score": 5, "reason": "r", "angle": "", "summary": "s"}})))[1])
+    llm.generate_triage(kind="news", pillar="wealth", title="t", url="u", source_text="x")
+    assert seen["cmd"][seen["cmd"].index("--tools") + 1] == "" and "--allowedTools" not in seen["cmd"]
 
 
 @pytest.mark.parametrize("resp, needle", [

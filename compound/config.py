@@ -27,6 +27,7 @@ class Settings:
     llm_backend: str  # api (Anthropic API key, pay per token) | claude-code (local `claude -p`, uses your subscription)
     claude_code_bin: str
     claude_code_model: str  # '' = Claude Code's default; else e.g. opus, sonnet, or a full model id
+    claude_code_draft_tools: str  # tools Claude Code may use while drafting, e.g. 'WebFetch'; '' = none
     anthropic_model: str
     draft_effort: str  # low | medium | high: thinking effort for drafts (questions/triage/topic run lower)
     fake_llm: bool
@@ -62,6 +63,7 @@ def load_settings() -> Settings:
         llm_backend=("claude-code" if _env("LLM_BACKEND", "api").lower().replace("_", "-") in {"claude-code", "claudecode", "cc"} else "api"),
         claude_code_bin=_env("CLAUDE_CODE_BIN", "claude"),
         claude_code_model=_env("CLAUDE_CODE_MODEL"),
+        claude_code_draft_tools=_env("CLAUDE_CODE_DRAFT_TOOLS", "WebFetch"),
         anthropic_model=_env("ANTHROPIC_MODEL", "claude-opus-5"),
         draft_effort=(_env("DRAFT_EFFORT", "high").lower() if _env("DRAFT_EFFORT", "high").lower() in {"low", "medium", "high"} else "high"),
         fake_llm=_env("COMPOUND_FAKE_LLM", "0") in {"1", "true", "yes"},
