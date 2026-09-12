@@ -171,7 +171,8 @@ def load_site_config(content_dir: Path) -> dict:
         "adsense": {
             "client": str(ads.get("client") or "").strip(),
             "slots": {k: str(slots.get(k) or "").strip() for k in ("article_top", "article_bottom", "feed")},
-        }
+        },
+        "email_form_action": str(data.get("email_form_action") or "").strip(),
     }
 
 
@@ -182,7 +183,7 @@ def _env(settings: Settings) -> Environment:
     env.globals.update(adsense=site_cfg["adsense"])
     env.globals.update(
         site_url=settings.site_base_url,
-        email_form_action=settings.email_form_action,
+        email_form_action=site_cfg["email_form_action"] or settings.email_form_action,
         pillars=PILLARS,
         pillar_labels=PILLAR_LABELS,
         pillar_blurbs=PILLAR_BLURBS,

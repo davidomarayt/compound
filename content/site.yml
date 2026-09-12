@@ -10,3 +10,8 @@ adsense:
     article_top: ""      # under the standfirst, above the article body
     article_bottom: ""   # after the article body
     feed: ""             # on the pillar listing pages, after the list
+
+# Email signup. The form posts to this URL; leave blank and the signup boxes are not shown at all.
+# Kit (kit.com) and MailerLite both give a form "action" URL for an embedded form; paste it here.
+# The field name posted is email_address (Kit's default); MailerLite forms accept it too.
+email_form_action: ""

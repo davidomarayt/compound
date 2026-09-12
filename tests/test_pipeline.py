@@ -440,3 +440,16 @@ def test_ad_slots_render_only_when_configured(pipeline, settings):
     art = pipeline._article_from_draft(pipeline.db.get_draft(r["draft_id"]), pipeline.db.get_item(r["item_id"]))
     render_preview(settings, "tok123", art)
     assert "adsbygoogle" not in (settings.public_dir / "preview" / "tok123" / "index.html").read_text(encoding="utf-8")
+
+
+def test_signup_form_hidden_until_configured(pipeline, settings):
+    from dataclasses import replace
+    from compound.site.build import build_site
+
+    build_site(settings)
+    home = settings.public_dir / "index.html"
+    assert "signup-form" not in home.read_text(encoding="utf-8")
+    (settings.content_dir / "site.yml").write_text("email_form_action: https://app.kit.com/forms/123/subscriptions\n")
+    build_site(settings)
+    html = home.read_text(encoding="utf-8")
+    assert 'action="https://app.kit.com/forms/123/subscriptions"' in html and 'name="email_address"' in html

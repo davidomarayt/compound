@@ -1,7 +1,8 @@
+{% if email_form_action %}
 <section class="signup {{ variant or '' }}">
   <h2>{{ heading or 'Get the next piece in your inbox' }}</h2>
   <p>{{ blurb or 'One email when something worth knowing lands: Irish grants, tax and money first, with health and happiness pieces alongside. No filler.' }}</p>
-  <form method="post" action="{{ email_form_action or '#' }}" class="signup-form" {% if not email_form_action %}data-unconfigured="1"{% endif %}>
+  <form method="post" action="{{ email_form_action }}" class="signup-form">
     <label class="sr-only" for="email-{{ variant or 'x' }}">Email address</label>
     <input id="email-{{ variant or 'x' }}" type="email" name="email_address" placeholder="you@example.ie" required autocomplete="email">
     <button type="submit">Subscribe</button>
@@ -11,3 +12,4 @@
     </label>
   </form>
 </section>
+{% endif %}
