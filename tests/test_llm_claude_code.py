@@ -116,3 +116,28 @@ def test_research_call_gets_search_tools_and_long_timeout(monkeypatch):
     assert seen["cmd"][seen["cmd"].index("--tools") + 1] == "WebSearch,WebFetch"
     assert seen["cmd"][seen["cmd"].index("--effort") + 1] == "max"
     assert seen["timeout"] == ClaudeCodeLLM.RESEARCH_TIMEOUT
+
+
+def test_transient_failures_are_retried_once(monkeypatch):
+    monkeypatch.setattr("compound.llm.shutil.which", lambda name: "/usr/bin/claude")
+    monkeypatch.setattr("compound.llm.time.sleep", lambda s: None)
+    llm = ClaudeCodeLLM(bin="claude", model="", style_dir=Path("style"))
+    calls = []
+
+    def fake_run(cmd, **kw):
+        calls.append(1)
+        if len(calls) == 1:
+            return R(json.dumps({"is_error": True, "result": "Authentication error · This may be a temporary network issue, please try again"}))
+        return R(json.dumps({"structured_output": {"score": 7, "reason": "r", "angle": "", "summary": "s"}}))
+
+    monkeypatch.setattr("compound.llm.subprocess.run", fake_run)
+    assert llm.generate_triage(kind="news", pillar="wealth", title="t", url="u", source_text="x").score == 7
+    assert len(calls) == 2
+
+    # a usage-limit error is not retried
+    calls.clear()
+    monkeypatch.setattr("compound.llm.subprocess.run",
+                        lambda cmd, **kw: (calls.append(1), R(json.dumps({"is_error": True, "result": "You have hit your usage limit, try again at 3pm"})))[1])
+    with pytest.raises(LLMError, match="usage limit"):
+        llm.generate_triage(kind="news", pillar="wealth", title="t", url="u", source_text="x")
+    assert len(calls) == 1

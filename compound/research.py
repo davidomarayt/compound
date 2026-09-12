@@ -34,6 +34,7 @@ TRUSTED_HOSTS = {
     "revenue.ie", "citizensinformation.ie", "gov.ie", "cso.ie", "centralbank.ie", "pensionsauthority.ie",
     "mabs.ie", "ccpc.ie", "hse.ie", "seai.ie", "esri.ie", "hrb.ie", "hiqa.ie", "rtb.ie", "oireachtas.ie",
     "welfare.ie", "tusla.ie", "safefood.net", "healthyireland.ie", "ihrec.ie", "ncca.ie", "courts.ie",
+    "fsai.ie", "irishheart.ie", "cancer.ie", "diabetes.ie", "mentalhealthireland.ie", "alzheimer.ie", "asthma.ie",
     # Irish universities and research (TILDA, Growing Up in Ireland, ...)
     "tcd.ie", "ucd.ie", "ucc.ie", "universityofgalway.ie", "nuigalway.ie", "ul.ie", "dcu.ie", "mu.ie", "rcsi.com",
     "growingup.gov.ie",

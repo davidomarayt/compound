@@ -11,6 +11,7 @@ import os
 import re
 import shutil
 import subprocess
+import time
 from pathlib import Path
 from typing import Protocol
 
@@ -432,8 +433,20 @@ class ClaudeCodeLLM(ClaudeLLM):
         return path
 
     EFFORTS = {"low", "medium", "high", "xhigh", "max"}
+    TRANSIENT = re.compile(r"authentication error|temporary network|try again|overloaded|rate limit|timed out|5\d\d", re.I)
+    RETRY_WAIT = 30  # seconds before the single retry of a transient failure
 
     def _parse(self, prompt: str, schema, *, effort: str, max_tokens: int, tools: str = "", timeout: int | None = None):
+        try:
+            return self._parse_once(prompt, schema, effort=effort, max_tokens=max_tokens, tools=tools, timeout=timeout)
+        except LLMError as e:
+            if not self.TRANSIENT.search(str(e)) or "usage limit" in str(e).lower():
+                raise
+            log.warning("claude-code transient failure, retrying in %ss: %s", self.RETRY_WAIT, str(e)[:160])
+            time.sleep(self.RETRY_WAIT)
+            return self._parse_once(prompt, schema, effort=effort, max_tokens=max_tokens, tools=tools, timeout=timeout)
+
+    def _parse_once(self, prompt: str, schema, *, effort: str, max_tokens: int, tools: str = "", timeout: int | None = None):
         cmd = [
             self._resolve_bin(), "-p",
             "--output-format", "json",
