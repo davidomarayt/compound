@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block head %}{% if preview %}<meta name="robots" content="noindex,nofollow">{% endif %}{% endblock %}
+{% block content %}
+{% if preview %}<div class="preview-banner">PREVIEW — not published. Approve or redraft from Telegram.</div>{% endif %}
+<article class="article">
+  <p class="meta"><a class="pill pill-{{ article.pillar }}" href="/{{ article.pillar }}/">{{ article.pillar_label }}</a>
+    <time datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%-d %B %Y') }}</time></p>
+  <h1>{{ article.title }}</h1>
+  {% if article.summary %}<p class="standfirst">{{ article.summary }}</p>{% endif %}
+  {% if article.sources %}
+  <aside class="sources">
+    <h2>Sources</h2>
+    <ul>{% for s in article.sources %}<li><a href="{{ s.url }}" rel="noopener">{{ s.title or s.url }}</a></li>{% endfor %}</ul>
+  </aside>
+  {% endif %}
+  <div class="body">{{ article.body_html|safe }}</div>
+  {% with variant="inline", heading="Don't miss the deadline", blurb=(article.email_cta or none) %}{% include "_signup.html" %}{% endwith %}
+  {% if article.figures %}
+  <details class="figures">
+    <summary>Figures used in this piece</summary>
+    <table>
+      <thead><tr><th>Figure</th><th>What</th><th>Source</th></tr></thead>
+      <tbody>{% for f in article.figures %}<tr><td>{{ f.value }}</td><td>{{ f.label }}</td><td>{% if f.source_url and f.source_url != 'owner' %}<a href="{{ f.source_url }}" rel="noopener">source</a>{% else %}author{% endif %}</td></tr>{% endfor %}</tbody>
+    </table>
+  </details>
+  {% endif %}
+  {% if article.tags %}<p class="tags">{% for t in article.tags %}<a href="/tag/{{ t }}/">#{{ t }}</a> {% endfor %}</p>{% endif %}
+</article>
+{% if related %}
+<section class="related"><h2>Related</h2><div class="list">{% for a in related %}{% include "_card.html" %}{% endfor %}</div></section>
+{% endif %}
+{% include "_signup.html" %}
+{% endblock %}

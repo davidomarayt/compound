@@ -1,0 +1,16 @@
+# /etc/systemd/system/compound.service
+[Unit]
+Description=Compound.ie pipeline (Telegram bot + source poller)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=compound
+WorkingDirectory=/srv/compound
+EnvironmentFile=/srv/compound/.env
+ExecStart=/srv/compound/.venv/bin/compound run
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

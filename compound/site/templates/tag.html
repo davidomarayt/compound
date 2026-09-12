@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>#{{ tag }}</h1>
+<div class="list">{% for a in articles %}{% include "_card.html" %}{% endfor %}</div>
+{% include "_signup.html" %}
+{% endblock %}

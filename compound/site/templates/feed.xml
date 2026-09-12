@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+<title>Compound</title><link>{{ site_url }}/</link><description>Three pillars to compound your life.</description>
+{% for a in articles %}<item><title>{{ a.title|e }}</title><link>{{ site_url }}{{ a.url }}</link><guid>{{ site_url }}{{ a.url }}</guid><pubDate>{{ a.date.strftime('%a, %d %b %Y 06:00:00 +0000') }}</pubDate><description>{{ a.summary|e }}</description></item>
+{% endfor %}</channel></rss>

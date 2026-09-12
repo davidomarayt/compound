@@ -1,0 +1,7 @@
+# Serves the built site and the unlisted preview pages from the same directory.
+compound.ie, www.compound.ie {
+    root * /srv/compound/public
+    file_server
+    encode gzip
+    header /preview/* X-Robots-Tag "noindex, nofollow"
+}

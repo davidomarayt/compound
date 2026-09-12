@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block head_title %}Compound · Three pillars to compound your life{% endblock %}
+{% block content %}
+{% with variant="hero" %}{% include "_signup.html" %}{% endwith %}
+<div class="columns">
+  {% for p in pillars %}
+  <section class="column column-{{ p }}">
+    <h2><a href="/{{ p }}/">{{ pillar_labels[p] }}</a></h2>
+    <p class="blurb">{{ pillar_blurbs[p] }}</p>
+    {% set col = columns[p] %}
+    {% if col.pinned %}
+      <div class="pinned">
+        <span class="pinned-label">Start here</span>
+        {% with a=col.pinned %}{% include "_card.html" %}{% endwith %}
+      </div>
+    {% endif %}
+    {% for a in col.feed %}{% include "_card.html" %}{% else %}
+      {% if not col.pinned %}<p class="empty">Nothing here yet.</p>{% endif %}
+    {% endfor %}
+  </section>
+  {% endfor %}
+</div>
+{% endblock %}

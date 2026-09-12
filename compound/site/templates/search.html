@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Search</h1>
+<form class="search-form" onsubmit="return false"><input id="q" type="search" placeholder="Search topics, e.g. rent tax credit" autofocus></form>
+<div id="results" class="list"></div>
+<script>
+(function(){
+  var idx=[], q=document.getElementById('q'), out=document.getElementById('results');
+  fetch('/search.json').then(function(r){return r.json()}).then(function(d){idx=d; run();});
+  function run(){
+    var t=q.value.trim().toLowerCase(); out.innerHTML='';
+    if(!t){return;}
+    var words=t.split(/\s+/);
+    idx.filter(function(a){var hay=(a.title+' '+a.summary+' '+a.tags.join(' ')).toLowerCase();return words.every(function(w){return hay.indexOf(w)>=0;});})
+       .slice(0,30).forEach(function(a){
+         var el=document.createElement('article'); el.className='card';
+         el.innerHTML='<a href="'+a.url+'"><h3></h3></a><p class="meta"><span class="pill pill-'+a.pillar.toLowerCase()+'">'+a.pillar+'</span> '+a.date+'</p><p class="summary"></p>';
+         el.querySelector('h3').textContent=a.title; el.querySelector('.summary').textContent=a.summary; out.appendChild(el);
+       });
+    if(!out.children.length){out.innerHTML='<p class="empty">No matches.</p>';}
+  }
+  q.addEventListener('input', run);
+  var init=new URLSearchParams(location.search).get('q'); if(init){q.value=init;}
+})();
+</script>
+{% endblock %}

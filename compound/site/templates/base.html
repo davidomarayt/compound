@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block head_title %}{{ title }} · Compound{% endblock %}</title>
+{% block head %}{% endblock %}
+<link rel="stylesheet" href="/static/style.css">
+<link rel="alternate" type="application/rss+xml" title="Compound" href="/feed.xml">
+</head>
+<body>
+<header class="site-header">
+  <a class="wordmark" href="/">Compound</a>
+  <p class="tagline">Three pillars to compound your life.</p>
+  <nav class="pillar-nav">
+    {% for p in pillars %}<a href="/{{ p }}/" class="pill pill-{{ p }}">{{ pillar_labels[p] }}</a>{% endfor %}
+    <a href="/search/" class="pill pill-plain">Search</a>
+  </nav>
+</header>
+<main class="site-main">
+{% block content %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <nav>
+    <a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="/privacy/">Privacy</a> ·
+    <a href="/cookies/">Cookie policy</a> · <a href="/disclaimer/">Disclaimer</a> · <a href="/feed.xml">RSS</a>
+  </nav>
+  <p>© {{ year }} Compound. Nothing here is financial, tax or medical advice. Check the source and, where money is involved, a professional.</p>
+</footer>
+</body>
+</html>
