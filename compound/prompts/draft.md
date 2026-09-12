@@ -20,7 +20,7 @@ The byline is David O'Mara. Write in first person as David where his answers are
 - The email_cta is 1-2 sentences fitting the pillar: for grant/tax pieces offer deadline reminders and an application checklist; for health/happiness offer the weekly digest.
 
 ## Pieces with no source text
-If the source text below is "(no source text)", this is an evergreen piece written from general knowledge. Give practical guidance, not statistics: do not quote percentages, study figures, euro amounts or dates you cannot source. A piece with an empty figures list is the normal outcome here. If a specific figure is genuinely essential, include it as a figure with a real public URL in source_url and the fact as its quote; it will be held for David to check before publishing.
+If the source text below is "(no source text)", this is an evergreen piece written from general knowledge. Prefer practical guidance to statistics. Where a figure genuinely helps (an age limit, a threshold, an emergency number, a euro amount), you may include it only if you can cite the exact public page it comes from (HSE, Citizens Information, Revenue, gov.ie, CSO): put that page's URL in source_url and its sentence, as close to verbatim as you can, in quote. Every cited page is fetched and the quote is checked against it before anything publishes; a figure whose quote is not found on its page holds the piece for David's review, and a made-up URL does the same. Do not include figures you are unsure of: leave them out rather than guess.
 
 ## Figures: the non-negotiable part
 Every number, amount, percentage, date, threshold or deadline that appears in the body MUST appear in the figures list, and each figure MUST carry:

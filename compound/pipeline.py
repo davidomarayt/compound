@@ -37,6 +37,12 @@ class Pipeline:
     llm: LLM
     sources: list[Source]
 
+    def fetch_page_text(self, url: str) -> str:
+        """Fetch a cited page as readable text. Replaced in tests."""
+        from compound.sources.base import html_to_text, http_get
+
+        return html_to_text(http_get(url))
+
     def source_for(self, key: str) -> Source | None:
         return next((s for s in self.sources if s.key == key), None)
 
@@ -156,7 +162,7 @@ class Pipeline:
         except LLMError:
             self.db.set_item_status(item_id, "failed")
             raise
-        verification = verify_figures(draft, source_text)
+        verification = verify_figures(draft, source_text, self.fetch_cited_pages(draft, item["url"] or ""))
         token = secrets.token_urlsafe(12)
         draft_id = self.db.add_draft(
             item_id=item_id, headline=draft.headline, slug=draft.slug, summary=draft.summary,
@@ -179,6 +185,25 @@ class Pipeline:
             summary=d["summary"], body_html=render_markdown(d["body_md"]), tags=loads_list(d["tags_json"]),
             sources=loads_list(d["sources_json"]), figures=loads_list(d["figures_json"]), email_cta=d["email_cta"],
         )
+
+    MAX_CITED_PAGES = 6
+
+    def fetch_cited_pages(self, draft, item_url: str) -> dict[str, str]:
+        """Text of every distinct page the draft's figures cite (other than the item's own page and
+        'owner'), so each quote can be checked against the page it claims. Failed fetches map to ''."""
+        urls: list[str] = []
+        for f in draft.figures:
+            u = (f.source_url or "").strip()
+            if u and u.lower() != "owner" and u != item_url and u.startswith("http") and u not in urls:
+                urls.append(u)
+        out: dict[str, str] = {}
+        for u in urls[: self.MAX_CITED_PAGES]:
+            try:
+                out[u] = self.fetch_page_text(u)
+            except Exception:  # noqa: BLE001 - an unreachable citation is a finding, not a crash
+                log.warning("could not fetch cited page %s", u)
+                out[u] = ""
+        return out
 
     def draft_warnings(self, d) -> list[str]:
         """Human-readable warnings for the review message."""

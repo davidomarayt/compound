@@ -235,3 +235,66 @@ def test_topic_bank_takes_priority(pipeline, settings, tmp_path):
     assert pipeline.pick_topic("health") == ("Second idea", "")
     pipeline.create_manual_item("Second idea", "health")
     assert pipeline.pick_topic("health")[0].startswith("(fake) health topic")  # bank exhausted -> Claude
+
+
+def test_figures_verify_against_their_cited_pages():
+    from compound.llm import ArticleDraft, Figure, SourceRef
+    from compound.verify import verify_figures
+
+    draft = ArticleDraft(
+        headline="h", slug="h", summary="s",
+        body_markdown="Children under 8 get a GP visit card. Call 112 or 999 in an emergency. Honey before 1 year is unsafe.",
+        figures=[
+            Figure(value="8", label="GP card age", source_url="https://hse.example/gp", quote="Children aged under 8 are eligible for a GP visit card."),
+            Figure(value="112 or 999", label="emergency", source_url="https://hse.example/fever", quote="Call 112 or 999 if your child is unresponsive."),
+            Figure(value="1 year", label="honey", source_url="https://hse.example/missing", quote="Do not give honey to babies under 1 year."),
+        ],
+        sources=[SourceRef(title="HSE", url="https://hse.example/gp")], tags=["kids"], email_cta="c",
+    )
+    pages = {
+        "https://hse.example/gp": "GP visit cards. Children aged under 8 are eligible for a GP visit card. Apply online.",
+        "https://hse.example/fever": "Fever in children. Call 112 or 999 if your child is unresponsive.",
+        "https://hse.example/missing": "",  # fetch failed
+    }
+    res = {r["label"]: r for r in verify_figures(draft, "", pages)}
+    assert res["GP card age"]["ok"] and res["emergency"]["ok"]
+    assert res["honey"]["in_source"] is False and not res["honey"]["ok"]
+
+
+def test_evergreen_draft_fetches_cited_pages_and_can_auto_publish(pipeline, settings, monkeypatch):
+    """An evergreen piece whose every citation checks out publishes under AUTO_PUBLISH=verified."""
+    from dataclasses import replace
+    from compound.llm import ArticleDraft, Figure, SourceRef
+
+    class CitingFake:
+        triage_score = 8
+        generate_topic = pipeline.llm.generate_topic
+        generate_triage = pipeline.llm.generate_triage
+        generate_questions = pipeline.llm.generate_questions
+
+        def generate_draft(self, **kw):
+            return ArticleDraft(
+                headline="GP visit cards for children", slug="gp-visit-cards-children", summary="Who qualifies.",
+                body_markdown="Children under 8 qualify for a GP visit card ([HSE](https://hse.example/gp)).",
+                figures=[Figure(value="8", label="age limit", source_url="https://hse.example/gp",
+                                quote="Children aged under 8 are eligible for a GP visit card.")],
+                sources=[SourceRef(title="HSE GP visit cards", url="https://hse.example/gp")], tags=["gp"], email_cta="c",
+            )
+
+    fetched = []
+
+    def fake_fetch(url):
+        fetched.append(url)
+        return "Children aged under 8 are eligible for a GP visit card."
+
+    pipeline.llm = CitingFake()
+    pipeline.fetch_page_text = fake_fetch
+    pipeline.settings = replace(settings, auto_publish="verified")
+    r = pipeline.run_scheduled("health")
+    assert fetched == ["https://hse.example/gp"]
+    assert r["warnings"] == [] and r["published"] and r["published"].endswith("/health/gp-visit-cards-children/")
+
+    # the same piece with an unreachable citation is held
+    pipeline.fetch_page_text = lambda url: (_ for _ in ()).throw(RuntimeError("404"))
+    r2 = pipeline.run_scheduled("health")
+    assert r2["published"] is None and any("quote not found" in w for w in r2["warnings"])
