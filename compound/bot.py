@@ -227,7 +227,13 @@ class Bot:
         if r["published"]:
             await self._send(f"🚀 Published ({r['pillar']}) #{r['item_id']}: {r['title']}\n{r['published']}\n{detail}\n/unpublish {r['item_id']} to take it down.")
         else:
-            why = "auto-publish is off" if self.settings.auto_publish == "off" else "held: " + "; ".join(r["warnings"])
+            ws = r["warnings"]
+            if self.settings.auto_publish == "off":
+                why = "auto-publish is off"
+            elif len(ws) > 6:
+                why = f"held ({len(ws)} checks failed): " + "; ".join(ws[:5]) + f"; … and {len(ws) - 5} more"
+            else:
+                why = "held: " + "; ".join(ws)
             await self._send(f"📝 Draft ready ({r['pillar']}), {why}\n{detail}")
             await self.send_review(r["draft_id"])
 

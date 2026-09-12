@@ -38,9 +38,23 @@ class Source:
         return html_to_text(html)
 
 
+BROWSER_UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/128.0.0.0 Safari/537.36"
+)
+_HEADERS = {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-IE,en;q=0.9",
+}
+
+
 def http_get(url: str) -> str:
-    with httpx.Client(timeout=TIMEOUT, follow_redirects=True, headers={"User-Agent": USER_AGENT}) as client:
-        r = client.get(url)
+    """GET a page as text. Identifies itself honestly first; if the site refuses that (403/406/429,
+    typical of bot-blocking front ends on government sites), retries once as a plain browser."""
+    with httpx.Client(timeout=TIMEOUT, follow_redirects=True, headers=_HEADERS) as client:
+        r = client.get(url, headers={"User-Agent": USER_AGENT})
+        if r.status_code in (403, 406, 429):
+            r = client.get(url, headers={"User-Agent": BROWSER_UA})
         r.raise_for_status()
         return r.text
 

@@ -181,10 +181,11 @@ def build_pack(*, pubmed_queries: list[str], urls: list[str], fetch_page, pubmed
             continue
         try:
             text = fetch_page(u)
-        except Exception:  # noqa: BLE001
-            log.warning("could not fetch source %s", u)
+        except Exception as e:  # noqa: BLE001
+            log.warning("could not fetch source %s: %s: %s", u, type(e).__name__, str(e)[:200])
             continue
         if len(text.strip()) < 200:
+            log.warning("source %s fetched but had almost no text (%d chars); skipped", u, len(text.strip()))
             continue
         seen.add(u)
         pack.sources.append(Source(title=_title_from_text(text) or u, url=u, text=text, kind="page"))

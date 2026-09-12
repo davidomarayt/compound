@@ -210,8 +210,8 @@ class Pipeline:
         for u in urls[: self.MAX_CITED_PAGES]:
             try:
                 out[u] = self.fetch_page_text(u)
-            except Exception:  # noqa: BLE001 - an unreachable citation is a finding, not a crash
-                log.warning("could not fetch cited page %s", u)
+            except Exception as e:  # noqa: BLE001 - an unreachable citation is a finding, not a crash
+                log.warning("could not fetch cited page %s: %s: %s", u, type(e).__name__, str(e)[:200])
                 out[u] = ""
         return out
 
@@ -388,9 +388,10 @@ class Pipeline:
         d = self.db.latest_draft_for_item(item_id)
         draft_id = d["id"]
         warnings = self.draft_warnings(d)
-        holds = list(warnings)
+        holds: list[str] = []
         if len(pack.sources) < self.settings.min_sources:
             holds.append(f"only {len(pack.sources)} source(s) could be fetched (need {self.settings.min_sources})")
+        holds += warnings
         if review and (review["verdict"] != "publish" or review["score"] < self.settings.editor_min_score):
             holds.append(f"editor score {review['score']}/10 after revision: " + "; ".join(review["must_fix"] or review["notes"][:2]))
         url = None
