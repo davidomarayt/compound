@@ -422,9 +422,10 @@ class ClaudeCodeLLM(ClaudeLLM):
                 structured = None
         if not isinstance(structured, dict):
             raise LLMError("Claude Code returned no structured output (is --json-schema supported by this version?).")
+        used = ", ".join(sorted((data.get("modelUsage") or {}).keys())) or (self.model or "default")
         log.info(
-            "claude-code ok: turns=%s duration_ms=%s (subscription; nominal cost %s)",
-            data.get("num_turns"), data.get("duration_ms"), data.get("total_cost_usd"),
+            "claude-code ok: model=%s turns=%s duration_ms=%s (subscription; nominal cost %s)",
+            used, data.get("num_turns"), data.get("duration_ms"), data.get("total_cost_usd"),
         )
         try:
             return schema.model_validate(structured)

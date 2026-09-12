@@ -18,7 +18,7 @@ def llm(monkeypatch):
     return ClaudeCodeLLM(bin="claude", model="", style_dir=Path("style"))
 
 
-def test_structured_output_is_parsed(llm, monkeypatch):
+def test_structured_output_is_parsed(llm, monkeypatch, caplog):
     monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-ant-should-not-leak")
     monkeypatch.setenv("SOMETHING_ELSE", "kept")
     seen = {}
@@ -28,6 +28,7 @@ def test_structured_output_is_parsed(llm, monkeypatch):
         seen["input"] = kw["input"]
         seen["env"] = kw["env"]
         return R(json.dumps({"is_error": False, "num_turns": 1, "duration_ms": 1200, "total_cost_usd": 0.01,
+                             "modelUsage": {"claude-fable-5-1": {"inputTokens": 10}},
                              "structured_output": {"score": 8, "reason": "affects renters", "angle": "renters", "summary": "s"}}))
 
     monkeypatch.setattr("compound.llm.subprocess.run", fake_run)
@@ -39,6 +40,7 @@ def test_structured_output_is_parsed(llm, monkeypatch):
     assert "Rent credit €1,000" in seen["input"]
     assert "--model" not in seen["cmd"]
     assert "ANTHROPIC_API_KEY" not in seen["env"] and seen["env"]["SOMETHING_ELSE"] == "kept"
+    assert "model=claude-fable-5-1" in caplog.text
 
 
 def test_model_flag_and_result_string_fallback(monkeypatch):

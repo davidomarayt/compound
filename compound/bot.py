@@ -484,7 +484,17 @@ class Bot:
 
     def run(self) -> None:
         self.app = self.build()
-        log.info("bot starting (owner=%s, poll every %s min)", self.settings.telegram_owner_id, self.settings.poll_interval_minutes)
+        which = (
+            f"claude-code model={self.settings.claude_code_model or 'Claude Code default'}"
+            if self.settings.llm_backend == "claude-code" else f"api model={self.settings.anthropic_model}"
+        )
+        if self.settings.fake_llm:
+            which = "FAKE (canned output)"
+        log.info(
+            "bot starting (owner=%s, poll every %s min, writer: %s, interview=%s, auto_publish=%s, schedule=%sh)",
+            self.settings.telegram_owner_id, self.settings.poll_interval_minutes, which, self.settings.interview,
+            self.settings.auto_publish, self.settings.schedule_hours,
+        )
         self.app.run_polling(allowed_updates=Update.ALL_TYPES)
 
 
