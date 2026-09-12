@@ -13,6 +13,7 @@ def settings(tmp_path, monkeypatch):
     monkeypatch.setenv("COMPOUND_PUBLIC_DIR", str(tmp_path / "public"))
     monkeypatch.setenv("COMPOUND_FAKE_LLM", "1")
     monkeypatch.setenv("SITE_BASE_URL", "https://example.test")
+    monkeypatch.setenv("PREVIEW_BASE_URL", "https://example.test")
     monkeypatch.setenv("FIRST_RUN_BACKFILL", "1")
     monkeypatch.setenv("DEPLOY_COMMAND", "")
     monkeypatch.setenv("STT_PROVIDER", "none")

@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import getpass
 import sys
+import time
 from pathlib import Path
 
 import httpx
@@ -58,6 +59,16 @@ def tg(token: str, method: str, **params):
     return data["result"]
 
 
+def _updates(token: str, **params) -> list:
+    """getUpdates that survives a dropped long-poll: a timeout is retried, not fatal."""
+    while True:
+        try:
+            return tg(token, "getUpdates", **params)
+        except (httpx.TimeoutException, httpx.TransportError) as e:
+            print(f"  (network hiccup: {e.__class__.__name__}; still waiting)")
+            time.sleep(2)
+
+
 def _ask(prompt: str, secret: bool = False, default: str = "") -> str:
     hint = " [keep current]" if default else ""
     val = (getpass.getpass(prompt + hint + ": ") if secret else input(prompt + hint + ": ")).strip()
@@ -105,10 +116,10 @@ def run_setup(env_path: Path | None = None, skip_verify: bool = False) -> int:
         print(f"\nNow open Telegram, find @{bot_username or 'your bot'} and send it /start. Waiting…")
         offset = 0
         try:
-            for u in tg(token, "getUpdates", timeout=0):
+            for u in _updates(token, timeout=0):
                 offset = u["update_id"] + 1
             while True:
-                for u in tg(token, "getUpdates", offset=offset, timeout=30):
+                for u in _updates(token, offset=offset, timeout=30):
                     offset = u["update_id"] + 1
                     msg = u.get("message") or {}
                     frm = msg.get("from") or {}
