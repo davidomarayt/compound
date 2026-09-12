@@ -193,3 +193,45 @@ def test_manual_items_and_disabled_threshold_skip_triage(pipeline, settings, mon
     pipeline.settings = replace(settings, min_relevance=0)
     item_id = poll_all(pipeline.db, pipeline.sources, pipeline.settings)[0]
     assert not pipeline.needs_triage(item_id)
+
+
+def test_scheduled_cycle_rotates_and_holds_by_default(pipeline, settings):
+    from dataclasses import replace
+
+    pipeline.settings = replace(settings, schedule_hours=6, auto_publish="off")
+    assert pipeline.schedule_due()  # never run yet
+    r1 = pipeline.run_scheduled()
+    r2 = pipeline.run_scheduled()
+    r3 = pipeline.run_scheduled()
+    r4 = pipeline.run_scheduled()
+    assert [r["pillar"] for r in (r1, r2, r3, r4)] == ["health", "wealth", "happiness", "health"]
+    assert r1["published"] is None and pipeline.db.get_draft(r1["draft_id"])["status"] == "pending"
+    assert not pipeline.schedule_due()  # just ran
+    # topics do not repeat: the fake proposes from the count of recent titles
+    assert r1["title"] != r4["title"]
+
+
+def test_scheduled_cycle_publishes_when_verified(pipeline, settings):
+    from dataclasses import replace
+
+    pipeline.settings = replace(settings, auto_publish="verified", site_base_url="https://example.test")
+    r = pipeline.run_scheduled("wealth")
+    d = pipeline.db.get_draft(r["draft_id"])
+    if pipeline.draft_warnings(d):
+        assert r["published"] is None and d["status"] == "pending"
+    else:
+        assert r["published"].startswith("https://example.test/wealth/") and d["status"] == "approved"
+        assert pipeline.db.published_for_item(r["item_id"])["approved_by"] == "auto:verified"
+
+
+def test_topic_bank_takes_priority(pipeline, settings, tmp_path):
+    from dataclasses import replace
+
+    bank = tmp_path / "topics"; bank.mkdir()
+    (bank / "health.md").write_text("# my list\nWhy a 20 minute walk beats a gym you never visit\nSecond idea\n")
+    pipeline.settings = replace(settings, topics_dir=bank)
+    assert pipeline.pick_topic("health") == ("Why a 20 minute walk beats a gym you never visit", "")
+    pipeline.create_manual_item("Why a 20 minute walk beats a gym you never visit", "health")
+    assert pipeline.pick_topic("health") == ("Second idea", "")
+    pipeline.create_manual_item("Second idea", "health")
+    assert pipeline.pick_topic("health")[0].startswith("(fake) health topic")  # bank exhausted -> Claude

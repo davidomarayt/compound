@@ -19,7 +19,7 @@ from pathlib import Path
 import yaml
 
 from compound.config import Settings
-from compound.db import Database, loads_list
+from compound.db import utcnow, Database, loads_list
 from compound.llm import Triage, LLM, ArticleDraft, LLMError
 from compound.poller import load_source_text
 from compound.site.build import Article, build_site, remove_preview, render_markdown, render_preview
@@ -204,6 +204,73 @@ class Pipeline:
         except Exception:  # verification must never block review
             log.exception("unlisted_numbers failed")
         return warnings
+
+    # -- scheduled evergreen writing --------------------------------------
+    SCHEDULE_PILLAR_KEY = "schedule_pillar_index"
+    SCHEDULE_LAST_KEY = "schedule_last_run"
+
+    def next_pillar(self) -> str:
+        """Rotate through settings.schedule_pillars, remembering position across restarts."""
+        pillars = self.settings.schedule_pillars or ("health", "wealth", "happiness")
+        idx = int(self.db.get_state(self.SCHEDULE_PILLAR_KEY, "0") or 0) % len(pillars)
+        self.db.set_state(self.SCHEDULE_PILLAR_KEY, str(idx + 1))
+        return pillars[idx]
+
+    def recent_titles(self, pillar: str, limit: int = 40) -> list[str]:
+        rows = self.db._all(
+            "SELECT title FROM items WHERE pillar = ? AND status NOT IN ('dropped', 'skipped', 'seen') ORDER BY id DESC LIMIT ?",
+            (pillar, limit),
+        )
+        return [r["title"] for r in rows]
+
+    def pick_topic(self, pillar: str) -> tuple[str, str]:
+        """First unused line of topics/<pillar>.md, else a Claude proposal. Returns (title, brief)."""
+        used = {t.strip().lower() for t in self.recent_titles(pillar, limit=1000)}
+        bank = self.settings.topics_dir / f"{pillar}.md"
+        if bank.exists():
+            for ln in bank.read_text(encoding="utf-8").splitlines():
+                t = ln.strip()
+                if t and not t.startswith("#") and t.lower() not in used:
+                    return t, ""
+        idea = self.llm.generate_topic(pillar=pillar, recent_titles=self.recent_titles(pillar))
+        return idea.title, idea.brief
+
+    def auto_publishable(self, d) -> bool:
+        mode = self.settings.auto_publish
+        if mode == "always":
+            return True
+        if mode == "verified":
+            return not self.draft_warnings(d)
+        return False
+
+    def run_scheduled(self, pillar: str | None = None) -> dict:
+        """One scheduled cycle: pick a pillar and topic, draft, and publish if allowed.
+        Returns {"item_id", "draft_id", "pillar", "title", "published": url or None, "warnings": [...]}."""
+        pillar = pillar or self.next_pillar()
+        title, brief = self.pick_topic(pillar)
+        item_id = self.create_manual_item(title, pillar)
+        if brief:
+            self.db.conn.execute("UPDATE items SET summary = ? WHERE id = ?", (brief, item_id))
+            self.db.conn.commit()
+        draft_id = self.make_draft(item_id)
+        d = self.db.get_draft(draft_id)
+        warnings = self.draft_warnings(d)
+        url = None
+        if self.auto_publishable(d):
+            url = self.publish(draft_id, approved_by=f"auto:{self.settings.auto_publish}")
+        self.db.set_state(self.SCHEDULE_LAST_KEY, utcnow())
+        return {"item_id": item_id, "draft_id": draft_id, "pillar": pillar, "title": title, "published": url, "warnings": warnings}
+
+    def schedule_due(self) -> bool:
+        hours = self.settings.schedule_hours
+        if hours <= 0:
+            return False
+        last = self.db.get_state(self.SCHEDULE_LAST_KEY)
+        if not last:
+            return True
+        from datetime import datetime, timedelta, timezone
+
+        return datetime.now(timezone.utc) - datetime.fromisoformat(last) >= timedelta(hours=hours)
 
     # -- decisions ---------------------------------------------------------
     def drop(self, item_id: int) -> None:

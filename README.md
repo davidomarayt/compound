@@ -85,6 +85,19 @@ When every question is answered the draft is generated automatically and you get
 summary, figures used (✅ quote verified in source, ❔ figure present but quote not verbatim,
 ⚠️ not found, 🗣 attributed to you), warnings, preview link, and Approve / Redraft / Drop buttons.
 
+## Scheduled writing
+
+Set `SCHEDULE_HOURS=6` (or any interval) and the running bot writes one evergreen piece per interval,
+rotating through `SCHEDULE_PILLARS` (default health, wealth, happiness). Topics come from
+`topics/<pillar>.md` (one per line, first unused line wins) or, if there is none, Claude proposes one
+that does not overlap recent titles. `/auto [pillar]` in Telegram or `compound auto-once` runs a cycle now.
+
+What happens to the draft depends on `AUTO_PUBLISH`: `off` (default) sends it for your ✅ like any other
+draft; `verified` publishes it only when every figure verifies against its source and nothing is flagged,
+holding anything doubtful for your tap; `always` publishes everything. Evergreen pieces are told to give
+practical guidance rather than statistics, so a clean piece usually has no figures at all. The schedule
+survives restarts (the last run time is stored in the database) and only runs while `compound run` is up.
+
 ## Deploy (one VPS)
 
 ```bash

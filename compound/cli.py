@@ -39,6 +39,8 @@ def main(argv: list[str] | None = None) -> int:
     p_sim = sub.add_parser("simulate-item", help="inject a fake item so the loop can be tested without a source")
     p_sim.add_argument("--title", default="Revenue eBrief No. 999/26: Rent Tax Credit increased to €1,000")
     p_sim.add_argument("--pillar", default="wealth")
+    p_auto = sub.add_parser("auto-once", help="run one scheduled cycle now: pick a topic, draft, publish if AUTO_PUBLISH allows")
+    p_auto.add_argument("--pillar", choices=["health", "wealth", "happiness"], help="override the rotation for this run")
     sub.add_parser("queue", help="list open items and pending drafts")
     p_draft = sub.add_parser("draft", help="draft an item from the CLI (answers taken from the DB)")
     p_draft.add_argument("item_id", type=int)
@@ -118,6 +120,18 @@ def main(argv: list[str] | None = None) -> int:
             summary=None, published_at=None, status="new", source_text=text,
         )
         print(f"queued item #{item_id} as 'new'. The bot picks it up on its next poll; or run: compound poll")
+        return 0
+
+    if args.cmd == "auto-once":
+        r = p.run_scheduled(args.pillar)
+        print(f"#{r['item_id']} ({r['pillar']}): {r['title']}")
+        if r["published"]:
+            print(f"published: {r['published']}")
+        else:
+            d = p.db.get_draft(r["draft_id"])
+            print(f"held for review (AUTO_PUBLISH={p.settings.auto_publish}); preview: {p.preview_url(d)}")
+            for w in r["warnings"]:
+                print(f"  check: {w}")
         return 0
 
     if args.cmd == "queue":

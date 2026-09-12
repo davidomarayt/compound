@@ -34,6 +34,11 @@ class Triage(BaseModel):
     summary: str = Field(description="One plain-English line on what the item announces")
 
 
+class TopicIdea(BaseModel):
+    title: str = Field(description="Working title, plain and specific, under 80 chars")
+    brief: str = Field(description="2-3 sentences: angle, who it is for, the one takeaway")
+
+
 class Figure(BaseModel):
     value: str
     label: str
@@ -60,6 +65,8 @@ class ArticleDraft(BaseModel):
 # --- interface --------------------------------------------------------------
 class LLM(Protocol):
     def generate_triage(self, *, kind: str, pillar: str, title: str, url: str, source_text: str) -> Triage: ...
+
+    def generate_topic(self, *, pillar: str, recent_titles: list[str]) -> TopicIdea: ...
 
     def generate_questions(self, *, kind: str, pillar: str, title: str, url: str, source_text: str, n_questions: int = 3) -> QuestionSet: ...
 
@@ -135,6 +142,13 @@ def triage_prompt(*, kind: str, pillar: str, title: str, url: str, source_text: 
         kind=kind, pillar=pillar, title=title, url=url or "(none)",
         source_text=source_text[:TRIAGE_SOURCE_CHARS] or "(no source text)",
     )
+
+
+def topic_prompt(*, pillar: str, recent_titles: list[str]) -> str:
+    from datetime import date
+
+    recent = "\n".join(f"- {t}" for t in recent_titles) or "(none yet)"
+    return _fill((PROMPTS / "topic.md").read_text(encoding="utf-8"), pillar=pillar, recent=recent, today=date.today().isoformat())
 
 
 def questions_prompt(*, kind: str, pillar: str, title: str, url: str, source_text: str, n_questions: int) -> str:
@@ -213,6 +227,11 @@ class ClaudeLLM:
         t.score = max(0, min(10, int(t.score)))
         return t
 
+    def generate_topic(self, *, pillar, recent_titles) -> TopicIdea:
+        t: TopicIdea = self._parse(topic_prompt(pillar=pillar, recent_titles=recent_titles), TopicIdea, effort="medium", max_tokens=2000)
+        t.title = t.title.strip()[:80]
+        return t
+
     def generate_questions(self, *, kind, pillar, title, url, source_text, n_questions=3) -> QuestionSet:
         prompt = questions_prompt(kind=kind, pillar=pillar, title=title, url=url, source_text=source_text, n_questions=n_questions)
         qs: QuestionSet = self._parse(prompt, QuestionSet, effort="medium", max_tokens=4000)
@@ -246,6 +265,10 @@ class FakeLLM:
             angle="(fake) renters: claim it this week" if self.triage_score >= 5 else "",
             summary=f"(fake) {title[:80]}",
         )
+
+    def generate_topic(self, *, pillar, recent_titles) -> TopicIdea:
+        n = len(recent_titles) + 1
+        return TopicIdea(title=f"(fake) {pillar} topic {n}", brief=f"(fake) a {pillar} piece for the everyday reader")
 
     def generate_questions(self, *, kind, pillar, title, url, source_text, n_questions=3) -> QuestionSet:
         return QuestionSet(

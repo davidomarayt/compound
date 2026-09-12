@@ -19,6 +19,9 @@ The byline is David O'Mara. Write in first person as David where his answers are
 - Do not include the headline in the body. Do not include a "Sources" section in the body (the site renders one from your sources list). Do not include the email call to action in the body (it is rendered separately from the email_cta field).
 - The email_cta is 1-2 sentences fitting the pillar: for grant/tax pieces offer deadline reminders and an application checklist; for health/happiness offer the weekly digest.
 
+## Pieces with no source text
+If the source text below is "(no source text)", this is an evergreen piece written from general knowledge. Give practical guidance, not statistics: do not quote percentages, study figures, euro amounts or dates you cannot source. A piece with an empty figures list is the normal outcome here. If a specific figure is genuinely essential, include it as a figure with a real public URL in source_url and the fact as its quote; it will be held for David to check before publishing.
+
 ## Figures: the non-negotiable part
 Every number, amount, percentage, date, threshold or deadline that appears in the body MUST appear in the figures list, and each figure MUST carry:
 - value: the figure exactly as written in the body (e.g. "€1,000", "31 October 2026", "12.5%")

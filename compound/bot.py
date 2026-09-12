@@ -63,6 +63,7 @@ class Bot:
         app.add_handler(CommandHandler("skip", self.cmd_skip, filters=owner))
         app.add_handler(CommandHandler("newpiece", self.cmd_newpiece, filters=owner))
         app.add_handler(CommandHandler("poll", self.cmd_poll, filters=owner))
+        app.add_handler(CommandHandler("auto", self.cmd_auto, filters=owner))
         app.add_handler(CommandHandler("drop", self.cmd_drop, filters=owner))
         app.add_handler(CallbackQueryHandler(self.on_callback))
         app.add_handler(MessageHandler(owner & filters.VOICE, self.on_voice))
@@ -72,6 +73,10 @@ class Bot:
         if self.settings.telegram_owner_id:
             minutes = max(1, self.settings.poll_interval_minutes)
             app.job_queue.run_repeating(self.job_poll, interval=minutes * 60, first=10, name="poll")
+        if self.settings.schedule_hours > 0:
+            # Checked every 10 minutes against the persisted last-run time, so restarts neither
+            # fire an extra piece nor lose the schedule.
+            app.job_queue.run_repeating(self.job_schedule, interval=600, first=30, name="schedule")
         return app
 
     def _is_owner(self, update: Update) -> bool:
@@ -96,7 +101,7 @@ class Bot:
             "Compound pipeline.\n\n"
             "/queue – what's open\n/open <id> – switch to an item and resend its questions\n"
             "/draft [id] – draft now with the answers so far\n/skip – skip the current question\n"
-            "/newpiece [pillar] <topic> – manual evergreen piece\n/drop [id] – kill an item\n/poll – poll sources now\n\n"
+            "/newpiece [pillar] <topic> – manual evergreen piece\n/auto [pillar] – write a scheduled piece now\n/drop [id] – kill an item\n/poll – poll sources now\n\n"
             "Answer questions by voice note or text. Reply to a specific question message to bind the answer to it."
         )
 
@@ -177,6 +182,36 @@ class Bot:
         await update.message.reply_text("Polling…")
         n = await self._poll_and_dispatch()
         await update.message.reply_text(f"Done. {n} new item(s).")
+
+    async def cmd_auto(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+        args = list(context.args or [])
+        pillar = args[0].lower() if args and args[0].lower() in PILLARS else None
+        await update.message.reply_text(f"Writing a {pillar or 'scheduled'} piece now… this takes a minute or two.")
+        await self.run_scheduled(pillar)
+
+    async def run_scheduled(self, pillar: str | None = None) -> None:
+        try:
+            r = await asyncio.to_thread(self.p.run_scheduled, pillar)
+        except LLMError as e:
+            await self._send(f"⚠️ Scheduled piece failed: {e}")
+            return
+        except Exception as e:  # noqa: BLE001 - surface anything to the owner
+            log.exception("scheduled piece failed")
+            await self._send(f"⚠️ Scheduled piece failed: {type(e).__name__}: {e}")
+            return
+        if r["published"]:
+            await self._send(f"🚀 Published ({r['pillar']}): {r['title']}\n{r['published']}")
+        else:
+            why = "auto-publish is off" if self.settings.auto_publish == "off" else "held: " + "; ".join(r["warnings"])
+            await self._send(f"📝 Draft ready ({r['pillar']}), {why}")
+            await self.send_review(r["draft_id"])
+
+    async def job_schedule(self, context: ContextTypes.DEFAULT_TYPE) -> None:
+        try:
+            if self.p.schedule_due():
+                await self.run_scheduled()
+        except Exception:
+            log.exception("schedule job failed")
 
     # -- polling job -----------------------------------------------------------
     async def job_poll(self, context: ContextTypes.DEFAULT_TYPE) -> None:
