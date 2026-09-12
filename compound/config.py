@@ -24,7 +24,12 @@ def _env_int(name: str, default: int) -> int:
 class Settings:
     telegram_bot_token: str
     telegram_owner_id: int  # 0 = not yet configured; bot will tell you your id on /start
+    llm_backend: str  # api (Anthropic API key, pay per token) | claude-code (local `claude -p`, uses your subscription)
+    claude_code_bin: str
+    claude_code_model: str  # '' = Claude Code's default; else e.g. opus, sonnet, or a full model id
+    claude_code_draft_tools: str  # tools Claude Code may use while drafting, e.g. 'WebFetch'; '' = none
     anthropic_model: str
+    draft_effort: str  # low | medium | high: thinking effort for drafts (questions/triage/topic run lower)
     fake_llm: bool
     stt_provider: str
     stt_api_key: str
@@ -40,6 +45,15 @@ class Settings:
     deploy_command: str
     poll_interval_minutes: int
     first_run_backfill: int
+    interview: bool  # False = skip the questions and draft straight from the source
+    min_relevance: int  # 0 = draft everything; otherwise items scoring below this (0-10) are skipped
+    schedule_hours: int  # 0 = off; otherwise write one evergreen piece every N hours, rotating pillars
+    schedule_pillars: tuple[str, ...]
+    auto_publish: str  # off | verified | always
+    topics_dir: Path
+    editor_min_score: int  # 0 = no editor pass; else drafts scoring below this get one revision
+    min_sources: int  # scheduled pieces with fewer fetched sources than this are held for review
+    pubmed_max: int
     # Source URLs (kept here so they can be pointed at a fixture server in tests)
     revenue_ebrief_index_url: str
     revenue_ebrief_rss_url: str
@@ -49,7 +63,12 @@ def load_settings() -> Settings:
     return Settings(
         telegram_bot_token=_env("TELEGRAM_BOT_TOKEN"),
         telegram_owner_id=_env_int("TELEGRAM_OWNER_ID", 0),
+        llm_backend=("claude-code" if _env("LLM_BACKEND", "api").lower().replace("_", "-") in {"claude-code", "claudecode", "cc"} else "api"),
+        claude_code_bin=_env("CLAUDE_CODE_BIN", "claude"),
+        claude_code_model=_env("CLAUDE_CODE_MODEL"),
+        claude_code_draft_tools=_env("CLAUDE_CODE_DRAFT_TOOLS", "WebFetch"),
         anthropic_model=_env("ANTHROPIC_MODEL", "claude-opus-5"),
+        draft_effort=(_env("DRAFT_EFFORT", "high").lower() if _env("DRAFT_EFFORT", "high").lower() in {"low", "medium", "high"} else "high"),
         fake_llm=_env("COMPOUND_FAKE_LLM", "0") in {"1", "true", "yes"},
         stt_provider=_env("STT_PROVIDER", "none").lower(),
         stt_api_key=_env("STT_API_KEY"),
@@ -65,6 +84,17 @@ def load_settings() -> Settings:
         deploy_command=_env("DEPLOY_COMMAND"),
         poll_interval_minutes=_env_int("POLL_INTERVAL_MINUTES", 30),
         first_run_backfill=_env_int("FIRST_RUN_BACKFILL", 1),
+        interview=_env("INTERVIEW", "1") not in {"0", "false", "no"},
+        min_relevance=max(0, min(10, _env_int("MIN_RELEVANCE", 6))),
+        schedule_hours=max(0, _env_int("SCHEDULE_HOURS", 0)),
+        schedule_pillars=tuple(
+            x.strip().lower() for x in _env("SCHEDULE_PILLARS", "health,wealth,happiness").split(",") if x.strip()
+        ),
+        auto_publish=_env("AUTO_PUBLISH", "off").lower() or "off",
+        topics_dir=ROOT / "topics",
+        editor_min_score=max(0, min(10, _env_int("EDITOR_MIN_SCORE", 8))),
+        min_sources=max(0, _env_int("MIN_SOURCES", 2)),
+        pubmed_max=max(1, _env_int("PUBMED_MAX", 5)),
         revenue_ebrief_index_url=_env(
             "REVENUE_EBRIEF_INDEX_URL", "https://www.revenue.ie/en/tax-professionals/ebrief/index.aspx"
         ),

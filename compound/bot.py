@@ -63,6 +63,8 @@ class Bot:
         app.add_handler(CommandHandler("skip", self.cmd_skip, filters=owner))
         app.add_handler(CommandHandler("newpiece", self.cmd_newpiece, filters=owner))
         app.add_handler(CommandHandler("poll", self.cmd_poll, filters=owner))
+        app.add_handler(CommandHandler("auto", self.cmd_auto, filters=owner))
+        app.add_handler(CommandHandler("unpublish", self.cmd_unpublish, filters=owner))
         app.add_handler(CommandHandler("drop", self.cmd_drop, filters=owner))
         app.add_handler(CallbackQueryHandler(self.on_callback))
         app.add_handler(MessageHandler(owner & filters.VOICE, self.on_voice))
@@ -72,6 +74,10 @@ class Bot:
         if self.settings.telegram_owner_id:
             minutes = max(1, self.settings.poll_interval_minutes)
             app.job_queue.run_repeating(self.job_poll, interval=minutes * 60, first=10, name="poll")
+        if self.settings.schedule_hours > 0:
+            # Checked every 10 minutes against the persisted last-run time, so restarts neither
+            # fire an extra piece nor lose the schedule.
+            app.job_queue.run_repeating(self.job_schedule, interval=600, first=30, name="schedule")
         return app
 
     def _is_owner(self, update: Update) -> bool:
@@ -96,7 +102,7 @@ class Bot:
             "Compound pipeline.\n\n"
             "/queue – what's open\n/open <id> – switch to an item and resend its questions\n"
             "/draft [id] – draft now with the answers so far\n/skip – skip the current question\n"
-            "/newpiece [pillar] <topic> – manual evergreen piece\n/drop [id] – kill an item\n/poll – poll sources now\n\n"
+            "/newpiece [pillar] <topic> – research and write a piece on your topic\n/auto [pillar] – write a scheduled piece now\n/unpublish <id> – take a published piece off the site\n/drop [id] – kill an item\n/poll – poll sources now\n\n"
             "Answer questions by voice note or text. Reply to a specific question message to bind the answer to it."
         )
 
@@ -122,7 +128,7 @@ class Bot:
             await update.message.reply_text("Usage: /open <item id>")
             return
         self.db.set_state(ACTIVE_ITEM, str(item["id"]))
-        if item["status"] == "new":
+        if item["status"] in {"new", "skipped"} or (item["status"] == "failed" and not self.db.questions_for(item["id"])):
             await self._start_interview(item["id"])
         elif item["status"] == "pending":
             d = self.db.pending_draft_for_item(item["id"])
@@ -146,6 +152,7 @@ class Bot:
         if not item_id or self.db.get_item(item_id) is None:
             await update.message.reply_text("No active item. /queue then /open <id>.")
             return
+        await update.message.reply_text(f"Drafting #{item_id}… this takes a minute or two.")
         await self.run_draft(item_id)
 
     async def cmd_drop(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -167,6 +174,10 @@ class Bot:
         if not topic:
             await update.message.reply_text("Usage: /newpiece [health|wealth|happiness] <topic>")
             return
+        if not self.settings.interview:
+            await update.message.reply_text(f"New {pillar} piece: {topic}\nResearching, drafting and editing… three to five minutes.")
+            await self.run_scheduled(pillar, fixed_title=topic)
+            return
         item_id = self.p.create_manual_item(topic, pillar)
         self.db.set_state(ACTIVE_ITEM, str(item_id))
         await update.message.reply_text(f"New {pillar} piece #{item_id}: {topic}\nThinking of questions…")
@@ -176,6 +187,56 @@ class Bot:
         await update.message.reply_text("Polling…")
         n = await self._poll_and_dispatch()
         await update.message.reply_text(f"Done. {n} new item(s).")
+
+    async def cmd_auto(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+        args = list(context.args or [])
+        pillar = args[0].lower() if args and args[0].lower() in PILLARS else None
+        await update.message.reply_text(f"Writing a {pillar or 'scheduled'} piece now… this takes a minute or two.")
+        await self.run_scheduled(pillar)
+
+    async def cmd_unpublish(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+        item_id = _int_arg(context.args)
+        if not item_id or self.db.get_item(item_id) is None:
+            await update.message.reply_text("Usage: /unpublish <item id>  (the #number from the published message)")
+            return
+        try:
+            url = await asyncio.to_thread(self.p.unpublish, item_id)
+        except Exception as e:  # noqa: BLE001
+            log.exception("unpublish failed")
+            await update.message.reply_text(f"⚠️ Could not unpublish #{item_id}: {type(e).__name__}: {e}")
+            return
+        if url is None:
+            await update.message.reply_text(f"#{item_id} is not published.")
+            return
+        await update.message.reply_text(f"🗑 Removed #{item_id} from the site: {url}")
+
+    async def run_scheduled(self, pillar: str | None = None, fixed_title: str | None = None) -> None:
+        try:
+            r = await asyncio.to_thread(self.p.run_scheduled, pillar, fixed_title)
+        except LLMError as e:
+            await self._send(f"⚠️ Scheduled piece failed: {e}")
+            return
+        except Exception as e:  # noqa: BLE001 - surface anything to the owner
+            log.exception("scheduled piece failed")
+            await self._send(f"⚠️ Scheduled piece failed: {type(e).__name__}: {e}")
+            return
+        ed = r.get("editor")
+        detail = f"query: {r.get('target_query') or '-'} · sources: {r.get('sources', 0)}"
+        if ed:
+            detail += f" · editor {ed['score']}/10"
+        if r["published"]:
+            await self._send(f"🚀 Published ({r['pillar']}) #{r['item_id']}: {r['title']}\n{r['published']}\n{detail}\n/unpublish {r['item_id']} to take it down.")
+        else:
+            why = "auto-publish is off" if self.settings.auto_publish == "off" else "held: " + "; ".join(r["warnings"])
+            await self._send(f"📝 Draft ready ({r['pillar']}), {why}\n{detail}")
+            await self.send_review(r["draft_id"])
+
+    async def job_schedule(self, context: ContextTypes.DEFAULT_TYPE) -> None:
+        try:
+            if self.p.schedule_due():
+                await self.run_scheduled()
+        except Exception:
+            log.exception("schedule job failed")
 
     # -- polling job -----------------------------------------------------------
     async def job_poll(self, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -194,10 +255,29 @@ class Bot:
 
     # -- interview -------------------------------------------------------------
     async def _start_interview(self, item_id: int) -> None:
+        if self.p.needs_triage(item_id):
+            try:
+                t = await asyncio.to_thread(self.p.triage, item_id)
+            except LLMError as e:
+                await self._send(f"⚠️ Could not triage #{item_id}: {e}\nSend /open {item_id} to retry.")
+                return
+            if t.score < self.settings.min_relevance:
+                self.p.skip(item_id)
+                item = self.db.get_item(item_id)
+                await self._send(
+                    f"⏭ #{item_id} skipped · {t.score}/10 · {_h(item['title'])}\n{_h(t.reason)}\n/open {item_id} to draft it anyway."
+                )
+                return
+        if not self.settings.interview:
+            self.db.set_state(ACTIVE_ITEM, str(item_id))
+            item = self.db.get_item(item_id)
+            await self._send(f"#{item_id} · {_h(item['title'])}\nDrafting…")
+            await self.run_draft(item_id)
+            return
         try:
             await asyncio.to_thread(self.p.prepare_questions, item_id)
         except LLMError as e:
-            await self._send(f"⚠️ Could not generate questions for #{item_id}: {e}")
+            await self._send(f"⚠️ Could not generate questions for #{item_id}: {e}\nSend /open {item_id} to retry.")
             return
         self.db.set_state(ACTIVE_ITEM, str(item_id))
         await self.send_questions(item_id)

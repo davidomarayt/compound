@@ -20,15 +20,25 @@ def _digits(s: str) -> str:
     return re.sub(r"[^\d.]", "", s)
 
 
-def verify_figures(draft: ArticleDraft, source_text: str) -> list[dict]:
-    """Return one dict per figure: {value, label, source_url, quote, in_source, in_body, value_in_quote, ok}."""
-    src = _norm(source_text)
+def verify_figures(draft: ArticleDraft, source_text: str, page_texts: dict[str, str] | None = None) -> list[dict]:
+    """Return one dict per figure: {value, label, source_url, quote, in_source, in_body, value_in_quote, ok}.
+
+    Each figure is checked against the text of the page it cites when `page_texts` has it
+    (url -> fetched text; empty string = fetch failed), and otherwise against the item's own
+    source text. Evergreen pieces have no item source, so their citations live or die by the
+    fetched pages."""
+    item_src = _norm(source_text)
+    pages = {k.strip(): _norm(v) for k, v in (page_texts or {}).items()}
     body = _norm(draft.body_markdown + "\n" + draft.headline + "\n" + draft.summary)
     results: list[dict] = []
     for f in draft.figures:
         quote = _norm(f.quote)
         value = _norm(f.value)
         owner = f.source_url.strip().lower() == "owner"
+        cited = f.source_url.strip()
+        src = pages[cited] if cited in pages else item_src
+        if cited in pages and not src and item_src:
+            src = item_src  # cited page could not be fetched; the item page is the next best evidence
         in_source = bool(quote) and quote in src if not owner else None
         # Fall back to the value's digits when the quote was lightly paraphrased.
         if in_source is False and _digits(value) and _digits(value) in _digits(src):
