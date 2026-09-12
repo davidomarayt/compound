@@ -85,6 +85,26 @@ When every question is answered the draft is generated automatically and you get
 summary, figures used (✅ quote verified in source, ❔ figure present but quote not verbatim,
 ⚠️ not found, 🗣 attributed to you), warnings, preview link, and Approve / Redraft / Drop buttons.
 
+## Research-led writing
+
+Scheduled pieces are not written from memory. For each one the pipeline:
+
+1. **Plans a topic around search demand.** Google autocomplete completions for seed phrases
+   (`topics/seeds/<pillar>.md`, or built-in defaults) go to Claude, which picks a target query, title, slug,
+   meta description, the questions the piece must answer, and the research to fetch.
+2. **Builds a research pack.** PubMed (free NCBI API; meta-analyses, systematic reviews and trials in humans
+   since 2015) for health and happiness; exact pages on trusted bodies (Citizens Information, Revenue, gov.ie,
+   CSO, Central Bank, HSE, WHO, NHS, ...) for anything. Untrusted domains are dropped.
+3. **Drafts from the pack only.** Every figure must quote its source verbatim; each is verified against the
+   text of the page or abstract it cites. Fewer than `MIN_SOURCES` fetched sources holds the piece.
+4. **Editor pass.** A second call scores the draft 0-10 against a rubric (accuracy against sources, honesty
+   about evidence, usefulness, writing, safety). Below `EDITOR_MIN_SCORE` it is redrafted once with the
+   editor's notes and re-scored; still below, it is held for you.
+5. **Publishes with search metadata**: meta description, canonical link, Open Graph tags and schema.org
+   Article markup, plus the sitemap and RSS feed that already existed.
+
+`/unpublish <id>` removes a published piece (file deleted, site rebuilt, deploy command run).
+
 ## Scheduled writing
 
 Set `SCHEDULE_HOURS=6` (or any interval) and the running bot writes one evergreen piece per interval,

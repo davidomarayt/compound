@@ -1,5 +1,14 @@
 {% extends "base.html" %}
-{% block head %}{% if preview %}<meta name="robots" content="noindex,nofollow">{% endif %}{% endblock %}
+{% block meta %}<meta name="description" content="{{ article.description }}">{% endblock %}
+{% block head %}{% if preview %}<meta name="robots" content="noindex,nofollow">{% else %}
+<link rel="canonical" href="{{ site_url }}{{ article.url }}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ article.title }}">
+<meta property="og:description" content="{{ article.description }}">
+<meta property="og:url" content="{{ site_url }}{{ article.url }}">
+<meta property="og:site_name" content="Compound">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{{ article_jsonld | safe }}</script>{% endif %}{% endblock %}
 {% block content %}
 {% if preview %}<div class="preview-banner">PREVIEW — not published. Approve or redraft from Telegram.</div>{% endif %}
 <article class="article">

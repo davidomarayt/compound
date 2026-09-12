@@ -41,8 +41,15 @@ class Article:
     sources: list[dict] = field(default_factory=list)
     figures: list[dict] = field(default_factory=list)
     email_cta: str = ""
+    meta_description: str = ""
     pinned: bool = False
     path: Path | None = None
+
+    @property
+    def description(self) -> str:
+        """Search-result description: the planned one, else the summary trimmed to ~155 chars."""
+        d = (self.meta_description or self.summary or "").strip()
+        return d if len(d) <= 160 else d[:157].rsplit(" ", 1)[0] + "…"
 
     @property
     def url(self) -> str:
@@ -101,6 +108,7 @@ def article_from_file(path: Path) -> Article | None:
         sources=list(meta.get("sources") or []),
         figures=list(meta.get("figures") or []),
         email_cta=str(meta.get("email_cta") or ""),
+        meta_description=str(meta.get("meta_description") or ""),
         pinned=bool(meta.get("pinned")),
         path=path,
     )
@@ -134,6 +142,20 @@ def load_pages(content_dir: Path) -> list[Page]:
 def long_date(d: date) -> str:
     """'3 September 2026' without relying on strftime('%-d'), which Windows rejects."""
     return f"{d.day} {d.strftime('%B %Y')}"
+
+
+def article_jsonld(a: Article, site_url: str) -> str:
+    """schema.org Article markup for search engines."""
+    data = {
+        "@context": "https://schema.org", "@type": "Article", "headline": a.title, "description": a.description,
+        "datePublished": a.date.isoformat(), "dateModified": a.date.isoformat(),
+        "author": {"@type": "Person", "name": "David O'Mara"},
+        "publisher": {"@type": "Organization", "name": "Compound", "url": site_url},
+        "mainEntityOfPage": f"{site_url}{a.url}", "articleSection": PILLAR_LABELS.get(a.pillar, a.pillar),
+        "keywords": ", ".join(a.tags),
+        "citation": [s.get("url") for s in a.sources if s.get("url")],
+    }
+    return json.dumps(data, ensure_ascii=False)
 
 
 def _env(settings: Settings) -> Environment:
@@ -200,7 +222,8 @@ def build_site(settings: Settings) -> dict:
     tag_map: dict[str, list[Article]] = {}
     for a in articles:
         _write(out / a.pillar / a.slug / "index.html",
-               env.get_template("article.html").render(article=a, related=related(a, articles), title=a.title, preview=False))
+               env.get_template("article.html").render(article=a, related=related(a, articles), title=a.title, preview=False,
+                                                        article_jsonld=article_jsonld(a, settings.site_base_url)))
         for t in a.tags:
             tag_map.setdefault(t, []).append(a)
     for t, arts in tag_map.items():

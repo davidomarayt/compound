@@ -42,6 +42,25 @@ class TopicIdea(BaseModel):
     brief: str = Field(description="2-3 sentences: angle, who it is for, the one takeaway")
 
 
+class TopicPlan(BaseModel):
+    title: str = Field(description="Plain, specific, under 70 chars")
+    slug: str = Field(description="lowercase-hyphenated, under 60 chars")
+    target_query: str = Field(description="The search phrase the piece answers")
+    meta_description: str = Field(description="140-155 chars")
+    brief: str = Field(description="2-3 sentences: angle, who it is for, the takeaway")
+    questions: list[str] = Field(description="3-6 questions the piece must answer, in order")
+    pubmed_queries: list[str] = Field(description="0-3 PubMed keyword searches")
+    source_urls: list[str] = Field(description="2-5 exact trusted public URLs")
+    tags: list[str] = Field(description="3-6 lowercase hyphenated tags")
+
+
+class EditorReview(BaseModel):
+    score: int = Field(description="0-10")
+    verdict: str = Field(description="publish or revise")
+    must_fix: list[str] = Field(description="Blocking problems, each quoting the sentence")
+    notes: list[str] = Field(description="Concrete edits for the writer, most important first")
+
+
 class Figure(BaseModel):
     value: str
     label: str
@@ -58,6 +77,7 @@ class ArticleDraft(BaseModel):
     headline: str
     slug: str
     summary: str
+    meta_description: str = Field(default="", description="140-155 chars for search results; may be empty")
     body_markdown: str
     figures: list[Figure]
     sources: list[SourceRef]
@@ -70,6 +90,10 @@ class LLM(Protocol):
     def generate_triage(self, *, kind: str, pillar: str, title: str, url: str, source_text: str) -> Triage: ...
 
     def generate_topic(self, *, pillar: str, recent_titles: list[str]) -> TopicIdea: ...
+
+    def generate_plan(self, *, pillar: str, recent_titles: list[str], suggestions: list[str], fixed_title: str = "") -> TopicPlan: ...
+
+    def review_draft(self, *, pillar: str, target_query: str, questions: list[str], draft: "ArticleDraft", source_text: str) -> EditorReview: ...
 
     def generate_questions(self, *, kind: str, pillar: str, title: str, url: str, source_text: str, n_questions: int = 3) -> QuestionSet: ...
 
@@ -84,6 +108,7 @@ class LLM(Protocol):
         source_text: str,
         interview: list[tuple[str, str]],
         angle: str = "",
+        seo: str = "",
         previous_draft: str | None = None,
         redraft_notes: str | None = None,
     ) -> ArticleDraft: ...
@@ -159,6 +184,30 @@ def topic_prompt(*, pillar: str, recent_titles: list[str]) -> str:
     return _fill((PROMPTS / "topic.md").read_text(encoding="utf-8"), pillar=pillar, recent=recent, today=date.today().isoformat())
 
 
+def plan_prompt(*, pillar: str, recent_titles: list[str], suggestions: list[str], fixed_title: str = "") -> str:
+    from datetime import date
+
+    fixed = ""
+    if fixed_title.strip():
+        fixed = f"The owner has fixed the working title: \"{fixed_title.strip()}\". Keep the title's meaning (you may tidy the wording) and plan the rest around it.\n"
+    return _fill(
+        (PROMPTS / "plan.md").read_text(encoding="utf-8"),
+        pillar=pillar, today=date.today().isoformat(), fixed_title_block=fixed,
+        suggestions="\n".join(f"- {q}" for q in suggestions) or "(none available)",
+        recent="\n".join(f"- {t}" for t in recent_titles) or "(none yet)",
+    )
+
+
+def editor_prompt(*, pillar: str, target_query: str, questions: list[str], draft: ArticleDraft, source_text: str) -> str:
+    figs = "\n".join(f"- {f.value} — {f.label} — {f.source_url} — \"{f.quote}\"" for f in draft.figures) or "(none)"
+    return _fill(
+        (PROMPTS / "editor.md").read_text(encoding="utf-8"),
+        pillar=pillar, target_query=target_query or "(none)", questions="\n".join(f"- {q}" for q in questions) or "(none)",
+        headline=draft.headline, summary=draft.summary, body=draft.body_markdown, figures=figs,
+        source_text=source_text[:MAX_SOURCE_CHARS] or "(no source text)",
+    )
+
+
 def questions_prompt(*, kind: str, pillar: str, title: str, url: str, source_text: str, n_questions: int) -> str:
     return _fill(
         (PROMPTS / "questions.md").read_text(encoding="utf-8"),
@@ -170,9 +219,10 @@ def questions_prompt(*, kind: str, pillar: str, title: str, url: str, source_tex
 def draft_prompt(
     *, kind: str, pillar: str, title: str, url: str, summary: str, source_text: str,
     interview: list[tuple[str, str]], samples: list[str], previous_draft: str | None, redraft_notes: str | None,
-    angle: str = "",
+    angle: str = "", seo: str = "",
 ) -> str:
     angle_block = f"## Reader angle\n{angle.strip()}\n" if angle.strip() else ""
+    seo_block = f"## Search intent\n{seo.strip()}\n" if seo.strip() else ""
     redraft = ""
     if previous_draft or redraft_notes:
         redraft = "## Redraft\nDavid reviewed the previous draft and asked for changes. Apply them.\n"
@@ -184,7 +234,7 @@ def draft_prompt(
         (PROMPTS / "draft.md").read_text(encoding="utf-8"),
         style_block=style_block(samples), kind=kind, pillar=pillar, title=title, url=url or "(none)",
         summary=summary or "(none)", source_text=source_text[:MAX_SOURCE_CHARS] or "(no source text)",
-        interview=interview_block(interview), redraft_block=redraft, angle_block=angle_block,
+        interview=interview_block(interview), redraft_block=redraft, angle_block=angle_block, seo_block=seo_block,
     )
 
 
@@ -241,6 +291,25 @@ class ClaudeLLM:
         t.title = t.title.strip()[:80]
         return t
 
+    def generate_plan(self, *, pillar, recent_titles, suggestions, fixed_title="") -> TopicPlan:
+        plan: TopicPlan = self._parse(
+            plan_prompt(pillar=pillar, recent_titles=recent_titles, suggestions=suggestions, fixed_title=fixed_title),
+            TopicPlan, effort="medium", max_tokens=3000,
+        )
+        plan.title = plan.title.strip()[:80]
+        plan.slug = slugify(plan.slug or plan.title)
+        plan.tags = normalise_tags(plan.tags)
+        return plan
+
+    def review_draft(self, *, pillar, target_query, questions, draft, source_text) -> EditorReview:
+        r: EditorReview = self._parse(
+            editor_prompt(pillar=pillar, target_query=target_query, questions=questions, draft=draft, source_text=source_text),
+            EditorReview, effort="medium", max_tokens=4000,
+        )
+        r.score = max(0, min(10, int(r.score)))
+        r.verdict = "publish" if r.verdict.strip().lower().startswith("publish") and not r.must_fix else "revise"
+        return r
+
     def generate_questions(self, *, kind, pillar, title, url, source_text, n_questions=3) -> QuestionSet:
         prompt = questions_prompt(kind=kind, pillar=pillar, title=title, url=url, source_text=source_text, n_questions=n_questions)
         qs: QuestionSet = self._parse(prompt, QuestionSet, effort="medium", max_tokens=4000)
@@ -248,11 +317,11 @@ class ClaudeLLM:
         qs.tags = normalise_tags(qs.tags)
         return qs
 
-    def generate_draft(self, *, kind, pillar, title, url, summary, source_text, interview, angle="", previous_draft=None, redraft_notes=None) -> ArticleDraft:
+    def generate_draft(self, *, kind, pillar, title, url, summary, source_text, interview, angle="", seo="", previous_draft=None, redraft_notes=None) -> ArticleDraft:
         prompt = draft_prompt(
             kind=kind, pillar=pillar, title=title, url=url, summary=summary, source_text=source_text,
             interview=interview, samples=load_style_samples(self.style_dir),
-            previous_draft=previous_draft, redraft_notes=redraft_notes, angle=angle,
+            previous_draft=previous_draft, redraft_notes=redraft_notes, angle=angle, seo=seo,
         )
         draft: ArticleDraft = self._parse(prompt, ArticleDraft, effort=self.draft_effort, max_tokens=16000)
         draft.slug = slugify(draft.slug or draft.headline)
@@ -280,11 +349,11 @@ class ClaudeCodeLLM(ClaudeLLM):
         self.draft_effort = draft_effort
         self.draft_tools = draft_tools.strip()
 
-    def generate_draft(self, *, kind, pillar, title, url, summary, source_text, interview, angle="", previous_draft=None, redraft_notes=None) -> ArticleDraft:
+    def generate_draft(self, *, kind, pillar, title, url, summary, source_text, interview, angle="", seo="", previous_draft=None, redraft_notes=None) -> ArticleDraft:
         prompt = draft_prompt(
             kind=kind, pillar=pillar, title=title, url=url, summary=summary, source_text=source_text,
             interview=interview, samples=load_style_samples(self.style_dir),
-            previous_draft=previous_draft, redraft_notes=redraft_notes, angle=angle,
+            previous_draft=previous_draft, redraft_notes=redraft_notes, angle=angle, seo=seo,
         )
         draft: ArticleDraft = self._parse(prompt, ArticleDraft, effort=self.draft_effort, max_tokens=16000, tools=self.draft_tools)
         draft.slug = slugify(draft.slug or draft.headline)
@@ -378,6 +447,24 @@ class FakeLLM:
         n = len(recent_titles) + 1
         return TopicIdea(title=f"(fake) {pillar} topic {n}", brief=f"(fake) a {pillar} piece for the everyday reader")
 
+    review_score = 9  # tests lower this to exercise the revise path
+
+    def generate_plan(self, *, pillar, recent_titles, suggestions, fixed_title="") -> TopicPlan:
+        n = len(recent_titles) + 1
+        title = fixed_title or f"(fake) {pillar} topic {n}"
+        return TopicPlan(
+            title=title, slug=slugify(title), target_query=f"{pillar} question {n}",
+            meta_description=f"(fake) what the everyday reader gets from {title}.", brief=f"(fake) a {pillar} piece",
+            questions=["What is it?", "Who does it apply to?", "What should I do?"],
+            pubmed_queries=[f"{pillar} intervention"] if pillar != "wealth" else [],
+            source_urls=["https://www.citizensinformation.ie/en/"], tags=[pillar, "guide"],
+        )
+
+    def review_draft(self, *, pillar, target_query, questions, draft, source_text) -> EditorReview:
+        ok = self.review_score >= 8
+        return EditorReview(score=self.review_score, verdict="publish" if ok else "revise",
+                            must_fix=[] if ok else ["(fake) overstated claim"], notes=["(fake) tighten the intro"])
+
     def generate_questions(self, *, kind, pillar, title, url, source_text, n_questions=3) -> QuestionSet:
         return QuestionSet(
             summary=f"(fake) {title[:80]}",
@@ -389,7 +476,7 @@ class FakeLLM:
             tags=["revenue", "paye"],
         )
 
-    def generate_draft(self, *, kind, pillar, title, url, summary, source_text, interview, angle="", previous_draft=None, redraft_notes=None) -> ArticleDraft:
+    def generate_draft(self, *, kind, pillar, title, url, summary, source_text, interview, angle="", seo="", previous_draft=None, redraft_notes=None) -> ArticleDraft:
         answers = "\n\n".join(f"{a}" for _, a in interview if a.strip()) or "No answers were given."
         m = re.search(r"€\s?[\d,]+", source_text)
         value = m.group(0).replace(" ", "") if m else "€0"

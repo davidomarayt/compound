@@ -64,6 +64,7 @@ class Bot:
         app.add_handler(CommandHandler("newpiece", self.cmd_newpiece, filters=owner))
         app.add_handler(CommandHandler("poll", self.cmd_poll, filters=owner))
         app.add_handler(CommandHandler("auto", self.cmd_auto, filters=owner))
+        app.add_handler(CommandHandler("unpublish", self.cmd_unpublish, filters=owner))
         app.add_handler(CommandHandler("drop", self.cmd_drop, filters=owner))
         app.add_handler(CallbackQueryHandler(self.on_callback))
         app.add_handler(MessageHandler(owner & filters.VOICE, self.on_voice))
@@ -101,7 +102,7 @@ class Bot:
             "Compound pipeline.\n\n"
             "/queue – what's open\n/open <id> – switch to an item and resend its questions\n"
             "/draft [id] – draft now with the answers so far\n/skip – skip the current question\n"
-            "/newpiece [pillar] <topic> – manual evergreen piece\n/auto [pillar] – write a scheduled piece now\n/drop [id] – kill an item\n/poll – poll sources now\n\n"
+            "/newpiece [pillar] <topic> – manual evergreen piece\n/auto [pillar] – write a scheduled piece now\n/unpublish <id> – take a published piece off the site\n/drop [id] – kill an item\n/poll – poll sources now\n\n"
             "Answer questions by voice note or text. Reply to a specific question message to bind the answer to it."
         )
 
@@ -189,6 +190,22 @@ class Bot:
         await update.message.reply_text(f"Writing a {pillar or 'scheduled'} piece now… this takes a minute or two.")
         await self.run_scheduled(pillar)
 
+    async def cmd_unpublish(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+        item_id = _int_arg(context.args)
+        if not item_id or self.db.get_item(item_id) is None:
+            await update.message.reply_text("Usage: /unpublish <item id>  (the #number from the published message)")
+            return
+        try:
+            url = await asyncio.to_thread(self.p.unpublish, item_id)
+        except Exception as e:  # noqa: BLE001
+            log.exception("unpublish failed")
+            await update.message.reply_text(f"⚠️ Could not unpublish #{item_id}: {type(e).__name__}: {e}")
+            return
+        if url is None:
+            await update.message.reply_text(f"#{item_id} is not published.")
+            return
+        await update.message.reply_text(f"🗑 Removed #{item_id} from the site: {url}")
+
     async def run_scheduled(self, pillar: str | None = None) -> None:
         try:
             r = await asyncio.to_thread(self.p.run_scheduled, pillar)
@@ -199,11 +216,15 @@ class Bot:
             log.exception("scheduled piece failed")
             await self._send(f"⚠️ Scheduled piece failed: {type(e).__name__}: {e}")
             return
+        ed = r.get("editor")
+        detail = f"query: {r.get('target_query') or '-'} · sources: {r.get('sources', 0)}"
+        if ed:
+            detail += f" · editor {ed['score']}/10"
         if r["published"]:
-            await self._send(f"🚀 Published ({r['pillar']}): {r['title']}\n{r['published']}")
+            await self._send(f"🚀 Published ({r['pillar']}) #{r['item_id']}: {r['title']}\n{r['published']}\n{detail}\n/unpublish {r['item_id']} to take it down.")
         else:
             why = "auto-publish is off" if self.settings.auto_publish == "off" else "held: " + "; ".join(r["warnings"])
-            await self._send(f"📝 Draft ready ({r['pillar']}), {why}")
+            await self._send(f"📝 Draft ready ({r['pillar']}), {why}\n{detail}")
             await self.send_review(r["draft_id"])
 
     async def job_schedule(self, context: ContextTypes.DEFAULT_TYPE) -> None:

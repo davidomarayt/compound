@@ -195,46 +195,153 @@ def test_manual_items_and_disabled_threshold_skip_triage(pipeline, settings, mon
     assert not pipeline.needs_triage(item_id)
 
 
-def test_scheduled_cycle_rotates_and_holds_by_default(pipeline, settings):
+PUBMED_XML = """<PubmedArticleSet><PubmedArticle><MedlineCitation><PMID>111</PMID><Article>
+<Journal><Title>BMJ</Title><JournalIssue><PubDate><Year>2021</Year></PubDate></JournalIssue></Journal>
+<ArticleTitle>Walking and mortality: a meta-analysis</ArticleTitle>
+<Abstract><AbstractText Label="RESULTS">Each additional 1,000 steps a day was associated with a 15% lower risk of death.</AbstractText></Abstract>
+<PublicationTypeList><PublicationType>Meta-Analysis</PublicationType></PublicationTypeList></Article></MedlineCitation></PubmedArticle></PubmedArticleSet>"""
+
+CI_PAGE = "GP visit cards\nChildren aged under 8 are eligible for a GP visit card. Apply online through the HSE. " + "More detail about the scheme, who qualifies, how to apply and what the card covers. " * 4
+
+
+@pytest.fixture
+def offline(pipeline, monkeypatch):
+    """No network in tests: canned PubMed results, canned autocomplete, canned trusted pages."""
+    from compound.research import parse_pubmed_xml
+
+    monkeypatch.setattr("compound.research.pubmed_search", lambda q, n=5: parse_pubmed_xml(PUBMED_XML))
+    pipeline.fetch_suggestions = lambda seed: [f"{seed} ireland", f"{seed} how to claim"]
+    pipeline.fetch_page_text = lambda url: CI_PAGE if "citizensinformation" in url else (_ for _ in ()).throw(RuntimeError("404"))
+    return pipeline
+
+
+class CitingFake:
+    """A fake writer that quotes the research pack, so verification can pass."""
+    triage_score = 8
+    review_score = 9
+
+    def __init__(self, base):
+        self.base = base
+
+    def __getattr__(self, name):
+        return getattr(self.base, name)
+
+    def generate_draft(self, *, kind, pillar, title, url, summary, source_text, interview, angle="", seo="", previous_draft=None, redraft_notes=None):
+        from compound.llm import ArticleDraft, Figure, SourceRef
+
+        self.last_seo = seo
+        self.last_notes = redraft_notes
+        if pillar == "wealth":
+            figs = [Figure(value="8", label="GP card age", source_url="https://www.citizensinformation.ie/en/",
+                           quote="Children aged under 8 are eligible for a GP visit card.")]
+            body = "Children under 8 qualify for a GP visit card ([Citizens Information](https://www.citizensinformation.ie/en/))."
+            srcs = [SourceRef(title="Citizens Information", url="https://www.citizensinformation.ie/en/")]
+        else:
+            q = "Each additional 1,000 steps a day was associated with a 15% lower risk of death."
+            figs = [Figure(value="15%", label="lower risk of death", source_url="https://pubmed.ncbi.nlm.nih.gov/111/", quote=q),
+                    Figure(value="1,000", label="steps a day", source_url="https://pubmed.ncbi.nlm.nih.gov/111/", quote=q)]
+            body = "A meta-analysis found each extra 1,000 steps a day went with a 15% lower risk of death ([BMJ](https://pubmed.ncbi.nlm.nih.gov/111/))."
+            srcs = [SourceRef(title="BMJ meta-analysis", url="https://pubmed.ncbi.nlm.nih.gov/111/")]
+        return ArticleDraft(headline=title, slug=title.lower().replace(" ", "-")[:60], summary="What it means for you.",
+                            meta_description="A plain guide for people in Ireland.", body_markdown=body, figures=figs,
+                            sources=srcs, tags=[pillar], email_cta="c")
+
+    def review_draft(self, **kw):
+        return self.base.review_draft(**kw)
+
+
+def test_scheduled_cycle_rotates_and_holds_by_default(offline, settings):
     from dataclasses import replace
 
+    pipeline = offline
+    pipeline.llm = CitingFake(pipeline.llm)
     pipeline.settings = replace(settings, schedule_hours=6, auto_publish="off")
-    assert pipeline.schedule_due()  # never run yet
-    r1 = pipeline.run_scheduled()
-    r2 = pipeline.run_scheduled()
-    r3 = pipeline.run_scheduled()
-    r4 = pipeline.run_scheduled()
-    assert [r["pillar"] for r in (r1, r2, r3, r4)] == ["health", "wealth", "happiness", "health"]
-    assert r1["published"] is None and pipeline.db.get_draft(r1["draft_id"])["status"] == "pending"
-    assert not pipeline.schedule_due()  # just ran
-    # topics do not repeat: the fake proposes from the count of recent titles
-    assert r1["title"] != r4["title"]
+    assert pipeline.schedule_due()
+    rs = [pipeline.run_scheduled() for _ in range(4)]
+    assert [r["pillar"] for r in rs] == ["health", "wealth", "happiness", "health"]
+    assert rs[0]["published"] is None and pipeline.db.get_draft(rs[0]["draft_id"])["status"] == "pending"
+    assert not pipeline.schedule_due()
+    assert rs[0]["title"] != rs[3]["title"]
+    # the plan reached the writer as search intent, and the pack became the item's source text
+    assert "Target search query" in pipeline.llm.last_seo
+    item = pipeline.db.get_item(rs[0]["item_id"])
+    assert "### Source 1" in item["source_text"] and "15% lower risk" in item["source_text"]
+    assert pipeline.item_plan(rs[0]["item_id"]).questions
 
 
-def test_scheduled_cycle_publishes_when_verified(pipeline, settings):
+def test_research_led_piece_verifies_and_auto_publishes(offline, settings):
     from dataclasses import replace
 
-    pipeline.settings = replace(settings, auto_publish="verified", site_base_url="https://example.test")
-    r = pipeline.run_scheduled("wealth")
+    pipeline = offline
+    pipeline.llm = CitingFake(pipeline.llm)
+    pipeline.settings = replace(settings, auto_publish="verified")
+    r = pipeline.run_scheduled("health")
+    assert r["sources"] == 1 + 1  # one PubMed abstract + one trusted page
+    assert r["warnings"] == [] and r["editor"]["verdict"] == "publish"
+    assert r["published"] and "/health/" in r["published"]
     d = pipeline.db.get_draft(r["draft_id"])
-    if pipeline.draft_warnings(d):
-        assert r["published"] is None and d["status"] == "pending"
-    else:
-        assert r["published"].startswith("https://example.test/wealth/") and d["status"] == "approved"
-        assert pipeline.db.published_for_item(r["item_id"])["approved_by"] == "auto:verified"
+    assert d["meta_description"].startswith("A plain guide") and d["editor_json"]
+    # the published file carries the meta description and the site rendered search metadata
+    path = Path(pipeline.db.published_for_item(r["item_id"])["path"])
+    assert "meta_description: A plain guide" in path.read_text(encoding="utf-8")
+    html = (settings.public_dir / "health" / d["slug"] / "index.html").read_text(encoding="utf-8")
+    assert '<meta name="description" content="A plain guide' in html and 'rel="canonical"' in html
+    assert '"@type": "Article"' in html and "pubmed.ncbi.nlm.nih.gov/111" in html
+
+    # take it down again
+    url = pipeline.unpublish(r["item_id"])
+    assert url == r["published"] and not path.exists()
+    assert pipeline.db.get_item(r["item_id"])["status"] == "dropped"
+    assert pipeline.unpublish(r["item_id"]) is None
 
 
-def test_topic_bank_takes_priority(pipeline, settings, tmp_path):
+def test_editor_revise_path_and_holds(offline, settings):
     from dataclasses import replace
 
+    pipeline = offline
+    fake = CitingFake(pipeline.llm)
+    pipeline.llm = fake
+    pipeline.settings = replace(settings, auto_publish="verified", editor_min_score=8)
+    fake.base.review_score = 5  # editor rejects both the draft and the revision
+    r = pipeline.run_scheduled("wealth")
+    assert fake.last_notes and "Editor review (score 5/10)" in fake.last_notes
+    assert r["editor"]["revised_from"] and r["published"] is None
+    assert any(w.startswith("editor score 5/10") for w in r["warnings"])
+    assert pipeline.db.get_draft(r["draft_id"])["version"] == 2
+
+
+def test_too_few_sources_holds(offline, settings, monkeypatch):
+    from dataclasses import replace
+
+    pipeline = offline
+    pipeline.llm = CitingFake(pipeline.llm)
+    monkeypatch.setattr("compound.research.pubmed_search", lambda q, n=5: [])
+    pipeline.settings = replace(settings, auto_publish="verified", min_sources=2)
+    r = pipeline.run_scheduled("health")  # only the CI page fetches
+    assert r["sources"] == 1 and r["published"] is None
+    assert any("only 1 source" in w for w in r["warnings"])
+
+
+def test_topic_bank_fixes_the_title(offline, settings, tmp_path):
+    from dataclasses import replace
+
+    pipeline = offline
     bank = tmp_path / "topics"; bank.mkdir()
-    (bank / "health.md").write_text("# my list\nWhy a 20 minute walk beats a gym you never visit\nSecond idea\n")
+    (bank / "health.md").write_text("# my list\nWhy a 20 minute walk beats a gym you never visit\n")
     pipeline.settings = replace(settings, topics_dir=bank)
-    assert pipeline.pick_topic("health") == ("Why a 20 minute walk beats a gym you never visit", "")
-    pipeline.create_manual_item("Why a 20 minute walk beats a gym you never visit", "health")
-    assert pipeline.pick_topic("health") == ("Second idea", "")
-    pipeline.create_manual_item("Second idea", "health")
-    assert pipeline.pick_topic("health")[0].startswith("(fake) health topic")  # bank exhausted -> Claude
+    assert pipeline.bank_topic("health") == "Why a 20 minute walk beats a gym you never visit"
+    plan = pipeline.plan_topic("health")
+    assert plan.title == "Why a 20 minute walk beats a gym you never visit"
+    pipeline.create_manual_item(plan.title, "health")
+    assert pipeline.bank_topic("health") == ""  # used up -> planner chooses freely
+
+
+def test_untrusted_urls_are_dropped():
+    from compound.research import build_pack
+
+    pack = build_pack(pubmed_queries=[], urls=["https://blog.example.com/x", "https://www.revenue.ie/en/"],
+                      fetch_page=lambda u: "Revenue page\n" + "x" * 300)
+    assert [s.url for s in pack.sources] == ["https://www.revenue.ie/en/"]
 
 
 def test_figures_verify_against_their_cited_pages():
@@ -254,47 +361,8 @@ def test_figures_verify_against_their_cited_pages():
     pages = {
         "https://hse.example/gp": "GP visit cards. Children aged under 8 are eligible for a GP visit card. Apply online.",
         "https://hse.example/fever": "Fever in children. Call 112 or 999 if your child is unresponsive.",
-        "https://hse.example/missing": "",  # fetch failed
+        "https://hse.example/missing": "",
     }
     res = {r["label"]: r for r in verify_figures(draft, "", pages)}
     assert res["GP card age"]["ok"] and res["emergency"]["ok"]
     assert res["honey"]["in_source"] is False and not res["honey"]["ok"]
-
-
-def test_evergreen_draft_fetches_cited_pages_and_can_auto_publish(pipeline, settings, monkeypatch):
-    """An evergreen piece whose every citation checks out publishes under AUTO_PUBLISH=verified."""
-    from dataclasses import replace
-    from compound.llm import ArticleDraft, Figure, SourceRef
-
-    class CitingFake:
-        triage_score = 8
-        generate_topic = pipeline.llm.generate_topic
-        generate_triage = pipeline.llm.generate_triage
-        generate_questions = pipeline.llm.generate_questions
-
-        def generate_draft(self, **kw):
-            return ArticleDraft(
-                headline="GP visit cards for children", slug="gp-visit-cards-children", summary="Who qualifies.",
-                body_markdown="Children under 8 qualify for a GP visit card ([HSE](https://hse.example/gp)).",
-                figures=[Figure(value="8", label="age limit", source_url="https://hse.example/gp",
-                                quote="Children aged under 8 are eligible for a GP visit card.")],
-                sources=[SourceRef(title="HSE GP visit cards", url="https://hse.example/gp")], tags=["gp"], email_cta="c",
-            )
-
-    fetched = []
-
-    def fake_fetch(url):
-        fetched.append(url)
-        return "Children aged under 8 are eligible for a GP visit card."
-
-    pipeline.llm = CitingFake()
-    pipeline.fetch_page_text = fake_fetch
-    pipeline.settings = replace(settings, auto_publish="verified")
-    r = pipeline.run_scheduled("health")
-    assert fetched == ["https://hse.example/gp"]
-    assert r["warnings"] == [] and r["published"] and r["published"].endswith("/health/gp-visit-cards-children/")
-
-    # the same piece with an unreachable citation is held
-    pipeline.fetch_page_text = lambda url: (_ for _ in ()).throw(RuntimeError("404"))
-    r2 = pipeline.run_scheduled("health")
-    assert r2["published"] is None and any("quote not found" in w for w in r2["warnings"])

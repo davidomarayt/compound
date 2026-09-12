@@ -51,6 +51,9 @@ class Settings:
     schedule_pillars: tuple[str, ...]
     auto_publish: str  # off | verified | always
     topics_dir: Path
+    editor_min_score: int  # 0 = no editor pass; else drafts scoring below this get one revision
+    min_sources: int  # scheduled pieces with fewer fetched sources than this are held for review
+    pubmed_max: int
     # Source URLs (kept here so they can be pointed at a fixture server in tests)
     revenue_ebrief_index_url: str
     revenue_ebrief_rss_url: str
@@ -89,6 +92,9 @@ def load_settings() -> Settings:
         ),
         auto_publish=_env("AUTO_PUBLISH", "off").lower() or "off",
         topics_dir=ROOT / "topics",
+        editor_min_score=max(0, min(10, _env_int("EDITOR_MIN_SCORE", 8))),
+        min_sources=max(0, _env_int("MIN_SOURCES", 2)),
+        pubmed_max=max(1, _env_int("PUBMED_MAX", 5)),
         revenue_ebrief_index_url=_env(
             "REVENUE_EBRIEF_INDEX_URL", "https://www.revenue.ie/en/tax-professionals/ebrief/index.aspx"
         ),
