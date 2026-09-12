@@ -297,10 +297,10 @@ class Pipeline:
         """Replaced in tests."""
         return suggestions(seed)
 
-    def plan_topic(self, pillar: str) -> TopicPlan:
+    def plan_topic(self, pillar: str, fixed_title: str | None = None) -> TopicPlan:
         return self.llm.generate_plan(
             pillar=pillar, recent_titles=self.recent_titles(pillar), suggestions=self.search_suggestions(pillar),
-            fixed_title=self.bank_topic(pillar),
+            fixed_title=fixed_title if fixed_title is not None else self.bank_topic(pillar),
         )
 
     def item_plan(self, item_id: int) -> TopicPlan | None:
@@ -376,11 +376,11 @@ class Pipeline:
             return not self.draft_warnings(d)
         return False
 
-    def run_scheduled(self, pillar: str | None = None) -> dict:
-        """One scheduled cycle: plan a search-led topic, gather its research pack, draft from it, run the
-        editor pass, publish if allowed. Returns a dict for the owner's notification."""
+    def run_scheduled(self, pillar: str | None = None, fixed_title: str | None = None) -> dict:
+        """One research-led cycle: plan a search-led topic (or the given one), gather its research pack,
+        draft from it, run the editor pass, publish if allowed. Returns a dict for the owner's notification."""
         pillar = pillar or self.next_pillar()
-        plan = self.plan_topic(pillar)
+        plan = self.plan_topic(pillar, fixed_title)
         pack = self.research(plan)
         item_id = self.create_planned_item(pillar, plan, pack)
         draft_id = self.make_draft(item_id)
@@ -398,7 +398,8 @@ class Pipeline:
             url = self.publish(draft_id, approved_by=f"auto:{self.settings.auto_publish}")
         elif self.settings.auto_publish == "always" and not url:
             url = self.publish(draft_id, approved_by="auto:always")
-        self.db.set_state(self.SCHEDULE_LAST_KEY, utcnow())
+        if fixed_title is None:
+            self.db.set_state(self.SCHEDULE_LAST_KEY, utcnow())  # an owner-requested piece does not reset the clock
         return {
             "item_id": item_id, "draft_id": draft_id, "pillar": pillar, "title": d["headline"],
             "target_query": plan.target_query, "sources": len(pack.sources), "published": url,
