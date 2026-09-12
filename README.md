@@ -72,6 +72,9 @@ compound run
 Then either wait for the poller (every `POLL_INTERVAL_MINUTES`) or send `/poll`. On the first poll
 of a source only the newest `FIRST_RUN_BACKFILL` item is queued; the rest are marked seen.
 
+Don't want to be interviewed? Set `INTERVIEW=0` in `.env` and every new item goes straight to a draft
+and the review message. `/draft <id>` also works on any item at any time.
+
 Bot commands: `/queue`, `/open <id>`, `/draft [id]`, `/skip`, `/newpiece [pillar] <topic>`,
 `/drop [id]`, `/poll`. Answer a question by replying to its message, or just send answers in order.
 When every question is answered the draft is generated automatically and you get: headline,

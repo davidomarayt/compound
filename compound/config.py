@@ -40,6 +40,7 @@ class Settings:
     deploy_command: str
     poll_interval_minutes: int
     first_run_backfill: int
+    interview: bool  # False = skip the questions and draft straight from the source
     # Source URLs (kept here so they can be pointed at a fixture server in tests)
     revenue_ebrief_index_url: str
     revenue_ebrief_rss_url: str
@@ -65,6 +66,7 @@ def load_settings() -> Settings:
         deploy_command=_env("DEPLOY_COMMAND"),
         poll_interval_minutes=_env_int("POLL_INTERVAL_MINUTES", 30),
         first_run_backfill=_env_int("FIRST_RUN_BACKFILL", 1),
+        interview=_env("INTERVIEW", "1") not in {"0", "false", "no"},
         revenue_ebrief_index_url=_env(
             "REVENUE_EBRIEF_INDEX_URL", "https://www.revenue.ie/en/tax-professionals/ebrief/index.aspx"
         ),

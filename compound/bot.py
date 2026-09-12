@@ -194,6 +194,12 @@ class Bot:
 
     # -- interview -------------------------------------------------------------
     async def _start_interview(self, item_id: int) -> None:
+        if not self.settings.interview:
+            self.db.set_state(ACTIVE_ITEM, str(item_id))
+            item = self.db.get_item(item_id)
+            await self._send(f"#{item_id} · {_h(item['title'])}\nDrafting…")
+            await self.run_draft(item_id)
+            return
         try:
             await asyncio.to_thread(self.p.prepare_questions, item_id)
         except LLMError as e:

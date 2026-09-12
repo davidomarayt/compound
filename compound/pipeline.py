@@ -46,11 +46,7 @@ class Pipeline:
         item = self.db.get_item(item_id)
         if item is None:
             raise ValueError(f"no item {item_id}")
-        source_text = item["source_text"] or ""
-        if not source_text and item["kind"] == "news":
-            src = self.source_for(item["source_key"])
-            if src is not None:
-                source_text = load_source_text(self.db, src, item_id)
+        source_text = self.ensure_source_text(item_id)
         try:
             qs = self.llm.generate_questions(
                 kind=item["kind"], pillar=item["pillar"], title=item["title"], url=item["url"] or "",
@@ -65,6 +61,16 @@ class Pipeline:
         ids = self.db.add_questions(item_id, qs.questions)
         self.db.set_item_status(item_id, "questions_sent")
         return ids
+
+    def ensure_source_text(self, item_id: int) -> str:
+        """The item's cached page text, fetching it first if a news item has none yet."""
+        item = self.db.get_item(item_id)
+        source_text = item["source_text"] or ""
+        if not source_text and item["kind"] == "news":
+            src = self.source_for(item["source_key"])
+            if src is not None:
+                source_text = load_source_text(self.db, src, item_id)
+        return source_text
 
     def create_manual_item(self, topic: str, pillar: str) -> int:
         ext = f"manual-{secrets.token_hex(4)}"
@@ -114,7 +120,7 @@ class Pipeline:
         prev_md = None
         if previous is not None and redraft_notes:
             prev_md = f"# {previous['headline']}\n\n{previous['summary']}\n\n{previous['body_md']}"
-        source_text = item["source_text"] or ""
+        source_text = self.ensure_source_text(item_id)
         try:
             draft = self.llm.generate_draft(
                 kind=item["kind"], pillar=item["pillar"], title=item["title"], url=item["url"] or "",

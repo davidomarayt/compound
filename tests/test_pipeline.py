@@ -131,3 +131,15 @@ def test_drop_rejects_pending_draft(pipeline):
     pipeline.drop(item_id)
     assert pipeline.db.get_draft(did)["status"] == "rejected"
     assert pipeline.db.get_item(item_id)["status"] == "dropped"
+
+
+def test_draft_without_interview(pipeline, settings):
+    """INTERVIEW=0 path: a fresh item can be drafted with no questions; the draft step fetches the source."""
+    db = pipeline.db
+    item_id = poll_all(db, pipeline.sources, settings)[0]
+    assert db.get_item(item_id)["status"] == "new" and not db.get_item(item_id)["source_text"]
+    draft_id = pipeline.make_draft(item_id)
+    d = db.get_draft(draft_id)
+    assert db.get_item(item_id)["status"] == "pending"
+    assert "€1,000" in db.get_item(item_id)["source_text"]
+    assert d["headline"] and pipeline.preview_url(d).startswith("https://example.test/preview/")

@@ -97,7 +97,10 @@ def style_block(samples: list[str]) -> str:
 
 def interview_block(interview: list[tuple[str, str]]) -> str:
     if not interview:
-        return "(David gave no answers; write a short, factual piece and flag in the summary that it has no owner take.)"
+        return (
+            "(No interview for this piece. Write it from the source alone: report the facts neutrally, say plainly "
+            "what they mean for the reader, and give practical next steps. Do not invent opinions or first-person claims.)"
+        )
     parts = []
     for i, (q, a) in enumerate(interview, start=1):
         a = a.strip() or "(no answer)"

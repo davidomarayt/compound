@@ -128,7 +128,7 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     if args.cmd == "draft":
-        if p.db.get_item(args.item_id) and p.db.get_item(args.item_id)["status"] == "new":
+        if p.settings.interview and p.db.get_item(args.item_id) and p.db.get_item(args.item_id)["status"] == "new":
             p.prepare_questions(args.item_id)
         draft_id = p.make_draft(args.item_id)
         d = p.db.get_draft(draft_id)
