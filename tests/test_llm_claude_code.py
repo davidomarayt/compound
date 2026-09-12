@@ -33,7 +33,7 @@ def test_structured_output_is_parsed(llm, monkeypatch):
     monkeypatch.setattr("compound.llm.subprocess.run", fake_run)
     t = llm.generate_triage(kind="news", pillar="wealth", title="t", url="u", source_text="Rent credit €1,000")
     assert isinstance(t, Triage) and t.score == 8
-    assert seen["cmd"][:2] == ["/usr/bin/claude", "-p"] and "--json-schema" in seen["cmd"] and "--bare" in seen["cmd"]
+    assert seen["cmd"][:2] == ["/usr/bin/claude", "-p"] and "--json-schema" in seen["cmd"] and "--bare" not in seen["cmd"]
     assert seen["cmd"][seen["cmd"].index("--tools") + 1] == ""
     assert seen["cmd"][seen["cmd"].index("--effort") + 1] == "low"  # triage runs at low effort
     assert "Rent credit €1,000" in seen["input"]

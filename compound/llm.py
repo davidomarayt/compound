@@ -295,7 +295,7 @@ class ClaudeCodeLLM(ClaudeLLM):
             "--json-schema", json.dumps(schema.model_json_schema()),
             "--tools", "",  # answer from the prompt alone: no file reads, shell or browsing
             "--permission-mode", "dontAsk",
-            "--bare",  # skip hooks, plugins and MCP servers: faster and nothing else runs
+            # No --bare: it disables OAuth and accepts only an API key, which defeats the point.
             "--effort", effort if effort in {"low", "medium", "high"} else "high",
         ]
         if self.model:
