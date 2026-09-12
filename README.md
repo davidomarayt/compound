@@ -98,6 +98,15 @@ holding anything doubtful for your tap; `always` publishes everything. Evergreen
 practical guidance rather than statistics, so a clean piece usually has no figures at all. The schedule
 survives restarts (the last run time is stored in the database) and only runs while `compound run` is up.
 
+## Using your Claude subscription instead of API credits
+
+If Claude Code is installed and logged in on the machine running the bot, set `LLM_BACKEND=claude-code`
+in `.env`. Every Claude call (triage, topic, questions, draft) then runs `claude -p --output-format json
+--json-schema ...` locally with the same prompts, and is covered by the subscription that `claude` is
+logged in with. `ANTHROPIC_API_KEY` is not used. Subscription usage limits apply, and Claude Code must be
+runnable from the same user account as the bot (check with `claude --version`). This is Anthropic's
+documented headless mode; it does not extract or reuse login tokens.
+
 ## Keeping the API bill down
 
 Every Claude call is logged with its token counts (`llm ok: ... in=... out=...`). The levers, cheapest first:

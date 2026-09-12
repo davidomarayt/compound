@@ -5,9 +5,12 @@ Set COMPOUND_FAKE_LLM=1 to get canned output without an API key (for testing the
 """
 from __future__ import annotations
 
+import json
 import logging
 import os
 import re
+import shutil
+import subprocess
 from pathlib import Path
 from typing import Protocol
 
@@ -89,6 +92,11 @@ class LLM(Protocol):
 def build_llm(settings: Settings) -> LLM:
     if settings.fake_llm:
         return FakeLLM()
+    if settings.llm_backend == "claude-code":
+        return ClaudeCodeLLM(
+            bin=settings.claude_code_bin, model=settings.claude_code_model, style_dir=settings.style_dir,
+            draft_effort=settings.draft_effort,
+        )
     return ClaudeLLM(model=settings.anthropic_model, style_dir=settings.style_dir, draft_effort=settings.draft_effort)
 
 
@@ -254,6 +262,82 @@ class ClaudeLLM:
 
 class LLMError(RuntimeError):
     pass
+
+
+# --- Claude Code (headless, subscription-billed) --------------------------------
+class ClaudeCodeLLM(ClaudeLLM):
+    """Same prompts and schemas as ClaudeLLM, but each call runs the local Claude Code CLI in
+    non-interactive mode (`claude -p --output-format json --json-schema ...`). Authenticated by
+    whatever `claude` is logged in as, so a Pro/Max subscription covers it instead of API credits.
+    The CLI must be installed and logged in on this machine; run `claude` once by hand to check."""
+
+    TIMEOUT = 900  # seconds; a long draft at high effort can take a few minutes
+
+    def __init__(self, bin: str, model: str, style_dir: Path, draft_effort: str = "high"):
+        self.bin = bin
+        self.model = model
+        self.style_dir = style_dir
+        self.draft_effort = draft_effort
+
+    def _resolve_bin(self) -> str:
+        path = shutil.which(self.bin) or shutil.which(self.bin + ".cmd") or shutil.which(self.bin + ".exe")
+        if not path:
+            raise LLMError(
+                f"Claude Code CLI '{self.bin}' not found. Install it (https://code.claude.com), log in with `claude`, "
+                "or set CLAUDE_CODE_BIN to its full path."
+            )
+        return path
+
+    def _parse(self, prompt: str, schema, *, effort: str, max_tokens: int):
+        cmd = [
+            self._resolve_bin(), "-p",
+            "--output-format", "json",
+            "--json-schema", json.dumps(schema.model_json_schema()),
+            "--tools", "",  # answer from the prompt alone: no file reads, shell or browsing
+            "--permission-mode", "dontAsk",
+            "--bare",  # skip hooks, plugins and MCP servers: faster and nothing else runs
+            "--effort", effort if effort in {"low", "medium", "high"} else "high",
+        ]
+        if self.model:
+            cmd += ["--model", self.model]
+        full_prompt = prompt + "\n\nAnswer directly from the text above."
+        try:
+            r = subprocess.run(
+                cmd, input=full_prompt, capture_output=True, text=True, encoding="utf-8", errors="replace",
+                timeout=self.TIMEOUT,
+            )
+        except subprocess.TimeoutExpired as e:
+            raise LLMError(f"Claude Code did not answer within {self.TIMEOUT}s.") from e
+        except OSError as e:
+            raise LLMError(f"Could not run Claude Code: {e}") from e
+        out = (r.stdout or "").strip()
+        if r.returncode != 0 or not out:
+            err = (r.stderr or out or "").strip()
+            raise LLMError(f"Claude Code failed (exit {r.returncode}): {err[:400] or 'no output'}")
+        try:
+            data = json.loads(out)
+        except json.JSONDecodeError as e:
+            raise LLMError(f"Claude Code returned non-JSON output: {out[:200]}") from e
+        if data.get("is_error"):
+            raise LLMError(f"Claude Code error: {str(data.get('result') or data.get('subtype') or data)[:400]}")
+        structured = data.get("structured_output")
+        if structured is None:
+            # Some versions put the schema-conforming JSON in `result` as a string.
+            raw = data.get("result")
+            try:
+                structured = json.loads(raw) if isinstance(raw, str) else raw
+            except (TypeError, json.JSONDecodeError):
+                structured = None
+        if not isinstance(structured, dict):
+            raise LLMError("Claude Code returned no structured output (is --json-schema supported by this version?).")
+        log.info(
+            "claude-code ok: turns=%s duration_ms=%s (subscription; nominal cost %s)",
+            data.get("num_turns"), data.get("duration_ms"), data.get("total_cost_usd"),
+        )
+        try:
+            return schema.model_validate(structured)
+        except Exception as e:  # noqa: BLE001
+            raise LLMError(f"Claude Code output did not match the expected shape: {e}") from e
 
 
 # --- fake backend for tests / dry runs -----------------------------------------
