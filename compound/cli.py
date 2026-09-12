@@ -83,6 +83,15 @@ def main(argv: list[str] | None = None) -> int:
         if not args.dry_run:
             print(f"new items: {ids}")
             for item_id in ids:
+                if p.needs_triage(item_id):
+                    t = p.triage(item_id)
+                    if t.score < p.settings.min_relevance:
+                        p.skip(item_id)
+                        print(f"  #{item_id} skipped ({t.score}/10): {t.reason}")
+                        continue
+                if not p.settings.interview:
+                    print(f"  #{item_id}: queued for drafting (INTERVIEW=0); run: compound draft {item_id}")
+                    continue
                 p.prepare_questions(item_id)
                 for q in p.db.questions_for(item_id):
                     print(f"  #{item_id} Q{q['ordinal']}: {q['text']}")

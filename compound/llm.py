@@ -27,6 +27,13 @@ class QuestionSet(BaseModel):
     tags: list[str] = Field(description="3-6 lowercase hyphenated tags")
 
 
+class Triage(BaseModel):
+    score: int = Field(description="0-10 relevance to an everyday reader in Ireland")
+    reason: str = Field(description="One plain sentence on why")
+    angle: str = Field(description="If relevant: the everyday reader it affects and what they should know or do; else empty")
+    summary: str = Field(description="One plain-English line on what the item announces")
+
+
 class Figure(BaseModel):
     value: str
     label: str
@@ -52,6 +59,8 @@ class ArticleDraft(BaseModel):
 
 # --- interface --------------------------------------------------------------
 class LLM(Protocol):
+    def generate_triage(self, *, kind: str, pillar: str, title: str, url: str, source_text: str) -> Triage: ...
+
     def generate_questions(self, *, kind: str, pillar: str, title: str, url: str, source_text: str, n_questions: int = 3) -> QuestionSet: ...
 
     def generate_draft(
@@ -64,6 +73,7 @@ class LLM(Protocol):
         summary: str,
         source_text: str,
         interview: list[tuple[str, str]],
+        angle: str = "",
         previous_draft: str | None = None,
         redraft_notes: str | None = None,
     ) -> ArticleDraft: ...
@@ -116,6 +126,17 @@ def _fill(template: str, **values: str) -> str:
     return out
 
 
+TRIAGE_SOURCE_CHARS = 20_000  # triage is a cheap pass; the opening of the page is enough to score it
+
+
+def triage_prompt(*, kind: str, pillar: str, title: str, url: str, source_text: str) -> str:
+    return _fill(
+        (PROMPTS / "triage.md").read_text(encoding="utf-8"),
+        kind=kind, pillar=pillar, title=title, url=url or "(none)",
+        source_text=source_text[:TRIAGE_SOURCE_CHARS] or "(no source text)",
+    )
+
+
 def questions_prompt(*, kind: str, pillar: str, title: str, url: str, source_text: str, n_questions: int) -> str:
     return _fill(
         (PROMPTS / "questions.md").read_text(encoding="utf-8"),
@@ -127,7 +148,9 @@ def questions_prompt(*, kind: str, pillar: str, title: str, url: str, source_tex
 def draft_prompt(
     *, kind: str, pillar: str, title: str, url: str, summary: str, source_text: str,
     interview: list[tuple[str, str]], samples: list[str], previous_draft: str | None, redraft_notes: str | None,
+    angle: str = "",
 ) -> str:
+    angle_block = f"## Reader angle\n{angle.strip()}\n" if angle.strip() else ""
     redraft = ""
     if previous_draft or redraft_notes:
         redraft = "## Redraft\nDavid reviewed the previous draft and asked for changes. Apply them.\n"
@@ -139,7 +162,7 @@ def draft_prompt(
         (PROMPTS / "draft.md").read_text(encoding="utf-8"),
         style_block=style_block(samples), kind=kind, pillar=pillar, title=title, url=url or "(none)",
         summary=summary or "(none)", source_text=source_text[:MAX_SOURCE_CHARS] or "(no source text)",
-        interview=interview_block(interview), redraft_block=redraft,
+        interview=interview_block(interview), redraft_block=redraft, angle_block=angle_block,
     )
 
 
@@ -184,6 +207,12 @@ class ClaudeLLM:
         log.info("llm ok: model=%s in=%s out=%s", response.model, response.usage.input_tokens, response.usage.output_tokens)
         return response.parsed_output
 
+    def generate_triage(self, *, kind, pillar, title, url, source_text) -> Triage:
+        prompt = triage_prompt(kind=kind, pillar=pillar, title=title, url=url, source_text=source_text)
+        t: Triage = self._parse(prompt, Triage, effort="low", max_tokens=1500)
+        t.score = max(0, min(10, int(t.score)))
+        return t
+
     def generate_questions(self, *, kind, pillar, title, url, source_text, n_questions=3) -> QuestionSet:
         prompt = questions_prompt(kind=kind, pillar=pillar, title=title, url=url, source_text=source_text, n_questions=n_questions)
         qs: QuestionSet = self._parse(prompt, QuestionSet, effort="medium", max_tokens=4000)
@@ -191,11 +220,11 @@ class ClaudeLLM:
         qs.tags = normalise_tags(qs.tags)
         return qs
 
-    def generate_draft(self, *, kind, pillar, title, url, summary, source_text, interview, previous_draft=None, redraft_notes=None) -> ArticleDraft:
+    def generate_draft(self, *, kind, pillar, title, url, summary, source_text, interview, angle="", previous_draft=None, redraft_notes=None) -> ArticleDraft:
         prompt = draft_prompt(
             kind=kind, pillar=pillar, title=title, url=url, summary=summary, source_text=source_text,
             interview=interview, samples=load_style_samples(self.style_dir),
-            previous_draft=previous_draft, redraft_notes=redraft_notes,
+            previous_draft=previous_draft, redraft_notes=redraft_notes, angle=angle,
         )
         draft: ArticleDraft = self._parse(prompt, ArticleDraft, effort="high", max_tokens=16000)
         draft.slug = slugify(draft.slug or draft.headline)
@@ -209,6 +238,15 @@ class LLMError(RuntimeError):
 
 # --- fake backend for tests / dry runs -----------------------------------------
 class FakeLLM:
+    triage_score = 8  # tests set this low to exercise the skip path
+
+    def generate_triage(self, *, kind, pillar, title, url, source_text) -> Triage:
+        return Triage(
+            score=self.triage_score, reason="(fake) scored by the fake backend",
+            angle="(fake) renters: claim it this week" if self.triage_score >= 5 else "",
+            summary=f"(fake) {title[:80]}",
+        )
+
     def generate_questions(self, *, kind, pillar, title, url, source_text, n_questions=3) -> QuestionSet:
         return QuestionSet(
             summary=f"(fake) {title[:80]}",
@@ -220,7 +258,7 @@ class FakeLLM:
             tags=["revenue", "paye"],
         )
 
-    def generate_draft(self, *, kind, pillar, title, url, summary, source_text, interview, previous_draft=None, redraft_notes=None) -> ArticleDraft:
+    def generate_draft(self, *, kind, pillar, title, url, summary, source_text, interview, angle="", previous_draft=None, redraft_notes=None) -> ArticleDraft:
         answers = "\n\n".join(f"{a}" for _, a in interview if a.strip()) or "No answers were given."
         m = re.search(r"€\s?[\d,]+", source_text)
         value = m.group(0).replace(" ", "") if m else "€0"

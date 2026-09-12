@@ -20,7 +20,7 @@ import yaml
 
 from compound.config import Settings
 from compound.db import Database, loads_list
-from compound.llm import LLM, ArticleDraft, LLMError
+from compound.llm import Triage, LLM, ArticleDraft, LLMError
 from compound.poller import load_source_text
 from compound.site.build import Article, build_site, remove_preview, render_markdown, render_preview
 from compound.sources import Source
@@ -41,6 +41,32 @@ class Pipeline:
         return next((s for s in self.sources if s.key == key), None)
 
     # -- questions ---------------------------------------------------------
+    def triage(self, item_id: int) -> Triage:
+        """Score the item for the everyday reader and store the result. Cheap; runs before any draft."""
+        item = self.db.get_item(item_id)
+        if item is None:
+            raise ValueError(f"no item {item_id}")
+        source_text = self.ensure_source_text(item_id)
+        try:
+            t = self.llm.generate_triage(
+                kind=item["kind"], pillar=item["pillar"], title=item["title"], url=item["url"] or "", source_text=source_text,
+            )
+        except LLMError:
+            self.db.set_item_status(item_id, "failed")
+            raise
+        self.db.set_triage(item_id, t.score, t.reason, t.angle)
+        if t.summary and not item["summary"]:
+            self.db.conn.execute("UPDATE items SET summary = ? WHERE id = ?", (t.summary, item_id))
+            self.db.conn.commit()
+        return t
+
+    def needs_triage(self, item_id: int) -> bool:
+        item = self.db.get_item(item_id)
+        return bool(item) and self.settings.min_relevance > 0 and item["kind"] == "news" and item["relevance"] is None
+
+    def skip(self, item_id: int) -> None:
+        self.db.set_item_status(item_id, "skipped")
+
     def prepare_questions(self, item_id: int) -> list[int]:
         """Fetch the source page, generate questions, store them. Returns question ids."""
         item = self.db.get_item(item_id)
@@ -125,7 +151,7 @@ class Pipeline:
             draft = self.llm.generate_draft(
                 kind=item["kind"], pillar=item["pillar"], title=item["title"], url=item["url"] or "",
                 summary=item["summary"] or "", source_text=source_text, interview=self.interview(item_id),
-                previous_draft=prev_md, redraft_notes=redraft_notes,
+                angle=item["angle"] or "", previous_draft=prev_md, redraft_notes=redraft_notes,
             )
         except LLMError:
             self.db.set_item_status(item_id, "failed")

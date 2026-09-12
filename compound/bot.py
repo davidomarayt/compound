@@ -122,7 +122,7 @@ class Bot:
             await update.message.reply_text("Usage: /open <item id>")
             return
         self.db.set_state(ACTIVE_ITEM, str(item["id"]))
-        if item["status"] == "new" or (item["status"] == "failed" and not self.db.questions_for(item["id"])):
+        if item["status"] in {"new", "skipped"} or (item["status"] == "failed" and not self.db.questions_for(item["id"])):
             await self._start_interview(item["id"])
         elif item["status"] == "pending":
             d = self.db.pending_draft_for_item(item["id"])
@@ -195,6 +195,19 @@ class Bot:
 
     # -- interview -------------------------------------------------------------
     async def _start_interview(self, item_id: int) -> None:
+        if self.p.needs_triage(item_id):
+            try:
+                t = await asyncio.to_thread(self.p.triage, item_id)
+            except LLMError as e:
+                await self._send(f"⚠️ Could not triage #{item_id}: {e}\nSend /open {item_id} to retry.")
+                return
+            if t.score < self.settings.min_relevance:
+                self.p.skip(item_id)
+                item = self.db.get_item(item_id)
+                await self._send(
+                    f"⏭ #{item_id} skipped · {t.score}/10 · {_h(item['title'])}\n{_h(t.reason)}\n/open {item_id} to draft it anyway."
+                )
+                return
         if not self.settings.interview:
             self.db.set_state(ACTIVE_ITEM, str(item_id))
             item = self.db.get_item(item_id)

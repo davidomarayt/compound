@@ -143,3 +143,53 @@ def test_draft_without_interview(pipeline, settings):
     assert db.get_item(item_id)["status"] == "pending"
     assert "€1,000" in db.get_item(item_id)["source_text"]
     assert d["headline"] and pipeline.preview_url(d).startswith("https://example.test/preview/")
+
+
+def test_triage_scores_and_skips(pipeline, settings, monkeypatch):
+    """Triage stores the score, reason and angle; a low score can be skipped and reopened."""
+    db = pipeline.db
+    item_id = poll_all(db, pipeline.sources, settings)[0]
+    assert pipeline.needs_triage(item_id)
+
+    pipeline.llm.triage_score = 2
+    t = pipeline.triage(item_id)
+    row = db.get_item(item_id)
+    assert t.score == 2 and row["relevance"] == 2 and row["triage_note"] and row["angle"] == ""
+    assert row["summary"].startswith("(fake)")  # triage fills the summary when the source had none
+    assert not pipeline.needs_triage(item_id)  # scored once, never re-scored
+
+    pipeline.skip(item_id)
+    assert db.get_item(item_id)["status"] == "skipped"
+    assert item_id not in {it["id"] for it in db.open_items()}
+
+    # /open on a skipped item drafts it anyway; the angle (empty here) does not break the prompt
+    draft_id = pipeline.make_draft(item_id)
+    assert db.get_draft(draft_id)["headline"]
+
+
+def test_triage_angle_reaches_draft_prompt(pipeline, settings):
+    from compound.llm import draft_prompt
+
+    db = pipeline.db
+    item_id = poll_all(db, pipeline.sources, settings)[0]
+    pipeline.llm.triage_score = 9
+    pipeline.triage(item_id)
+    assert db.get_item(item_id)["angle"].startswith("(fake) renters")
+    text = draft_prompt(
+        kind="news", pillar="wealth", title="t", url="u", summary="", source_text="s", interview=[], samples=[],
+        previous_draft=None, redraft_notes=None, angle=db.get_item(item_id)["angle"],
+    )
+    assert "## Reader angle\n(fake) renters" in text
+    assert "## Reader angle" not in draft_prompt(
+        kind="news", pillar="wealth", title="t", url="u", summary="", source_text="s", interview=[], samples=[],
+        previous_draft=None, redraft_notes=None,
+    )
+
+
+def test_manual_items_and_disabled_threshold_skip_triage(pipeline, settings, monkeypatch):
+    manual = pipeline.create_manual_item("Rent tax credit explained", "wealth")
+    assert not pipeline.needs_triage(manual)
+    from dataclasses import replace
+    pipeline.settings = replace(settings, min_relevance=0)
+    item_id = poll_all(pipeline.db, pipeline.sources, pipeline.settings)[0]
+    assert not pipeline.needs_triage(item_id)

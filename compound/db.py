@@ -39,7 +39,10 @@ CREATE TABLE IF NOT EXISTS items (
     source_text   TEXT,                              -- fetched page text the LLM reads
     published_at  TEXT,
     discovered_at TEXT NOT NULL,
-    status        TEXT NOT NULL DEFAULT 'new',       -- new | seen | questions_sent | drafting | pending | published | dropped | failed
+    status        TEXT NOT NULL DEFAULT 'new',       -- new | seen | skipped | questions_sent | drafting | pending | published | dropped | failed
+    relevance     INTEGER,                          -- triage score 0-10, NULL until triaged
+    triage_note   TEXT,                             -- one-line reason from triage
+    angle         TEXT,                             -- everyday-reader angle carried into the draft
     UNIQUE (source_key, external_id)
 );
 
@@ -111,6 +114,15 @@ class Database:
         self.conn.execute("PRAGMA journal_mode=WAL")
         self.conn.execute("PRAGMA foreign_keys=ON")
         self.conn.executescript(SCHEMA)
+        self._migrate()
+
+    def _migrate(self) -> None:
+        """Columns added after the first release; CREATE TABLE IF NOT EXISTS does not add them to old files."""
+        have = {r["name"] for r in self.conn.execute("PRAGMA table_info(items)")}
+        for col, typ in (("relevance", "INTEGER"), ("triage_note", "TEXT"), ("angle", "TEXT")):
+            if col not in have:
+                self.conn.execute(f"ALTER TABLE items ADD COLUMN {col} {typ}")
+        self.conn.commit()
 
     def close(self) -> None:
         self.conn.close()
@@ -169,6 +181,12 @@ class Database:
 
     def set_item_status(self, item_id: int, status: str) -> None:
         self.conn.execute("UPDATE items SET status = ? WHERE id = ?", (status, item_id))
+        self.conn.commit()
+
+    def set_triage(self, item_id: int, score: int, note: str, angle: str) -> None:
+        self.conn.execute(
+            "UPDATE items SET relevance = ?, triage_note = ?, angle = ? WHERE id = ?", (score, note, angle, item_id)
+        )
         self.conn.commit()
 
     def set_item_source_text(self, item_id: int, text: str) -> None:

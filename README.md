@@ -72,6 +72,10 @@ compound run
 Then either wait for the poller (every `POLL_INTERVAL_MINUTES`) or send `/poll`. On the first poll
 of a source only the newest `FIRST_RUN_BACKFILL` item is queued; the rest are marked seen.
 
+Every polled item is first triaged: a cheap Claude call scores it 0-10 for an everyday reader in Ireland and
+writes a one-line reason. Anything under `MIN_RELEVANCE` (default 6) is skipped with that reason in Telegram;
+`/open <id>` drafts it anyway. Set `MIN_RELEVANCE=0` to draft everything.
+
 Don't want to be interviewed? Set `INTERVIEW=0` in `.env` and every new item goes straight to a draft
 and the review message. `/draft <id>` also works on any item at any time.
 
