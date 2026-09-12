@@ -27,12 +27,28 @@ PUBMED_FILTER = (
 )
 STRONG_TYPES = ("Meta-Analysis", "Systematic Review", "Randomized Controlled Trial")
 
-# Pages on these hosts count as trustworthy sources for wealth (and general Irish) pieces.
+# Sources figures may be drawn from. Government, statutory and research bodies, universities and the
+# major medical journals. Anything else the researcher reads is context only: its figures are dropped.
 TRUSTED_HOSTS = {
+    # Irish state and statutory
     "revenue.ie", "citizensinformation.ie", "gov.ie", "cso.ie", "centralbank.ie", "pensionsauthority.ie",
-    "mabs.ie", "ccpc.ie", "hse.ie", "seai.ie", "esri.ie", "oecd.org", "who.int", "nice.org.uk",
-    "pubmed.ncbi.nlm.nih.gov", "ncbi.nlm.nih.gov", "cochranelibrary.com", "bmj.com", "thelancet.com", "nhs.uk",
+    "mabs.ie", "ccpc.ie", "hse.ie", "seai.ie", "esri.ie", "hrb.ie", "hiqa.ie", "rtb.ie", "oireachtas.ie",
+    "welfare.ie", "tusla.ie", "safefood.net", "healthyireland.ie", "ihrec.ie", "ncca.ie", "courts.ie",
+    # Irish universities and research (TILDA, Growing Up in Ireland, ...)
+    "tcd.ie", "ucd.ie", "ucc.ie", "universityofgalway.ie", "nuigalway.ie", "ul.ie", "dcu.ie", "mu.ie", "rcsi.com",
+    "growingup.gov.ie",
+    # international public bodies
+    "who.int", "oecd.org", "europa.eu", "un.org", "worldbank.org", "imf.org", "nhs.uk", "nice.org.uk",
+    "gov.uk", "ons.gov.uk", "cdc.gov", "nih.gov", "fda.gov", "canada.ca", "health.gov.au",
+    # evidence and journals
+    "pubmed.ncbi.nlm.nih.gov", "ncbi.nlm.nih.gov", "cochranelibrary.com", "cochrane.org", "bmj.com",
+    "thelancet.com", "nejm.org", "jamanetwork.com", "nature.com", "science.org", "cell.com", "plos.org",
+    "frontiersin.org", "springer.com", "link.springer.com", "wiley.com", "onlinelibrary.wiley.com",
+    "sciencedirect.com", "tandfonline.com", "sagepub.com", "journals.sagepub.com", "apa.org", "psycnet.apa.org",
+    "hindawi.com", "mdpi.com", "biomedcentral.com", "annualreviews.org",
 }
+# Any host under these suffixes is also trusted (public sector and universities generally).
+TRUSTED_SUFFIXES = (".gov", ".gov.ie", ".gov.uk", ".edu", ".ac.uk", ".europa.eu", ".int", ".nhs.uk", ".ac.ie")
 MAX_SOURCE_CHARS = 6_000
 MAX_PACK_CHARS = 40_000
 TIMEOUT = 30.0
@@ -88,7 +104,22 @@ class ResearchPack:
 
 def is_trusted(url: str) -> bool:
     host = (urlparse(url).hostname or "").lower()
-    return any(host == h or host.endswith("." + h) for h in TRUSTED_HOSTS)
+    if any(host == h or host.endswith("." + h) for h in TRUSTED_HOSTS):
+        return True
+    return any(host.endswith(sfx) for sfx in TRUSTED_SUFFIXES)
+
+
+PMC_RE = re.compile(r"pmc\.ncbi\.nlm\.nih\.gov/articles/(PMC\d+)", re.I)
+IDCONV = "https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/"
+
+
+def pmc_to_pmid(pmcid: str) -> str:
+    """PubMed Central full-text pages do not render for us; map the PMCID to its PubMed record."""
+    r = _get(IDCONV, {"ids": pmcid, "format": "json", "tool": "compound.ie", "email": "hello@compound.ie"})
+    for rec in r.json().get("records", []):
+        if rec.get("pmid"):
+            return str(rec["pmid"])
+    return ""
 
 
 # --- PubMed -------------------------------------------------------------------
@@ -184,12 +215,30 @@ def build_pack(*, pubmed_queries: list[str], urls: list[str], fetch_page, pubmed
                 pack.sources.append(s)
     for u in urls:
         u = u.strip()
-        if not u or u in seen or not is_trusted(u):
-            if u and not is_trusted(u):
-                log.info("dropping untrusted source url %s", u)
+        if not u or u in seen:
+            continue
+        m = PMC_RE.search(u)
+        if m:
+            try:
+                pmid = pmc_to_pmid(m.group(1))
+                for s in (pubmed_fetch([pmid]) if pmid else []):
+                    if s.url not in seen:
+                        seen.add(s.url)
+                        pack.sources.append(s)
+            except Exception as e:  # noqa: BLE001
+                log.warning("could not resolve %s via PubMed: %s", u, e)
+            continue
+        if not is_trusted(u):
+            log.info("dropping untrusted source url %s (context only; figures may not come from it)", u)
             continue
         try:
             text = fetch_page(u)
+        except httpx.TimeoutException:
+            try:
+                text = fetch_page(u)  # one retry; government sites are often slow, not down
+            except Exception as e:  # noqa: BLE001
+                log.warning("could not fetch source %s: %s: %s", u, type(e).__name__, str(e)[:200])
+                continue
         except Exception as e:  # noqa: BLE001
             log.warning("could not fetch source %s: %s: %s", u, type(e).__name__, str(e)[:200])
             continue

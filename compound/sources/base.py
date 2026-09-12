@@ -9,7 +9,7 @@ from html.parser import HTMLParser
 import httpx
 
 USER_AGENT = "compound.ie poller (+https://compound.ie; contact: hello@compound.ie)"
-TIMEOUT = 30.0
+TIMEOUT = 45.0
 
 
 @dataclass(frozen=True)

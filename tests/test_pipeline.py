@@ -337,12 +337,22 @@ def test_topic_bank_fixes_the_title(offline, settings, tmp_path):
     assert pipeline.bank_topic("health") == ""  # used up -> planner chooses freely
 
 
-def test_untrusted_urls_are_dropped():
-    from compound.research import build_pack
+def test_untrusted_urls_are_dropped_and_pmc_resolves_to_pubmed(monkeypatch):
+    from compound.research import build_pack, is_trusted, parse_pubmed_xml
 
-    pack = build_pack(pubmed_queries=[], urls=["https://blog.example.com/x", "https://www.revenue.ie/en/"],
-                      fetch_page=lambda u: "Revenue page\n" + "x" * 300)
-    assert [s.url for s in pack.sources] == ["https://www.revenue.ie/en/"]
+    assert is_trusted("https://tilda.tcd.ie/news-events/2025/x/")
+    assert is_trusted("https://joint-research-centre.ec.europa.eu/loneliness")
+    assert is_trusted("https://www.cdc.gov/x") and is_trusted("https://www.ox.ac.uk/x")
+    assert not is_trusted("https://blog.example.com/x") and not is_trusted("https://alone.ie/contact/")
+
+    monkeypatch.setattr("compound.research.pmc_to_pmid", lambda pmcid: "111" if pmcid == "PMC9593938" else "")
+    monkeypatch.setattr("compound.research.pubmed_fetch", lambda ids: parse_pubmed_xml(PUBMED_XML) if ids == ["111"] else [])
+    pack = build_pack(
+        pubmed_queries=[],
+        urls=["https://blog.example.com/x", "https://www.revenue.ie/en/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC9593938/"],
+        fetch_page=lambda u: "Revenue page\n" + "x" * 300,
+    )
+    assert [s.url for s in pack.sources] == ["https://www.revenue.ie/en/", "https://pubmed.ncbi.nlm.nih.gov/111/"]
 
 
 def test_figures_verify_against_their_cited_pages():
