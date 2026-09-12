@@ -89,7 +89,7 @@ class LLM(Protocol):
 def build_llm(settings: Settings) -> LLM:
     if settings.fake_llm:
         return FakeLLM()
-    return ClaudeLLM(model=settings.anthropic_model, style_dir=settings.style_dir)
+    return ClaudeLLM(model=settings.anthropic_model, style_dir=settings.style_dir, draft_effort=settings.draft_effort)
 
 
 # --- prompt assembly --------------------------------------------------------
@@ -182,7 +182,7 @@ def draft_prompt(
 
 # --- Claude ---------------------------------------------------------------------
 class ClaudeLLM:
-    def __init__(self, model: str, style_dir: Path):
+    def __init__(self, model: str, style_dir: Path, draft_effort: str = "high"):
         import anthropic
 
         # An empty key (e.g. ANTHROPIC_API_KEY= in .env) makes the SDK raise a bare TypeError at
@@ -190,6 +190,7 @@ class ClaudeLLM:
         self.client = anthropic.Anthropic() if os.environ.get("ANTHROPIC_API_KEY", "").strip() else None
         self.model = model
         self.style_dir = style_dir
+        self.draft_effort = draft_effort
 
     def _parse(self, prompt: str, schema, *, effort: str, max_tokens: int):
         import anthropic
@@ -245,7 +246,7 @@ class ClaudeLLM:
             interview=interview, samples=load_style_samples(self.style_dir),
             previous_draft=previous_draft, redraft_notes=redraft_notes, angle=angle,
         )
-        draft: ArticleDraft = self._parse(prompt, ArticleDraft, effort="high", max_tokens=16000)
+        draft: ArticleDraft = self._parse(prompt, ArticleDraft, effort=self.draft_effort, max_tokens=16000)
         draft.slug = slugify(draft.slug or draft.headline)
         draft.tags = normalise_tags(draft.tags)
         return draft

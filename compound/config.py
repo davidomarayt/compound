@@ -25,6 +25,7 @@ class Settings:
     telegram_bot_token: str
     telegram_owner_id: int  # 0 = not yet configured; bot will tell you your id on /start
     anthropic_model: str
+    draft_effort: str  # low | medium | high: thinking effort for drafts (questions/triage/topic run lower)
     fake_llm: bool
     stt_provider: str
     stt_api_key: str
@@ -56,6 +57,7 @@ def load_settings() -> Settings:
         telegram_bot_token=_env("TELEGRAM_BOT_TOKEN"),
         telegram_owner_id=_env_int("TELEGRAM_OWNER_ID", 0),
         anthropic_model=_env("ANTHROPIC_MODEL", "claude-opus-5"),
+        draft_effort=(_env("DRAFT_EFFORT", "high").lower() if _env("DRAFT_EFFORT", "high").lower() in {"low", "medium", "high"} else "high"),
         fake_llm=_env("COMPOUND_FAKE_LLM", "0") in {"1", "true", "yes"},
         stt_provider=_env("STT_PROVIDER", "none").lower(),
         stt_api_key=_env("STT_API_KEY"),

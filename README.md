@@ -98,6 +98,14 @@ holding anything doubtful for your tap; `always` publishes everything. Evergreen
 practical guidance rather than statistics, so a clean piece usually has no figures at all. The schedule
 survives restarts (the last run time is stored in the database) and only runs while `compound run` is up.
 
+## Keeping the API bill down
+
+Every Claude call is logged with its token counts (`llm ok: ... in=... out=...`). The levers, cheapest first:
+`SCHEDULE_HOURS` (fewer scheduled pieces), `DRAFT_EFFORT=medium` (roughly halves draft cost),
+`ANTHROPIC_MODEL=claude-sonnet-5` (about 2.5x cheaper per token than Opus), `MIN_RELEVANCE` (fewer news
+drafts). Never run two copies of the bot on one token: they both fire the schedule. Set a monthly spend
+limit in the Anthropic console as a backstop.
+
 ## Deploy (one VPS)
 
 ```bash
