@@ -19,6 +19,9 @@ def llm(monkeypatch):
 
 
 def test_structured_output_is_parsed(llm, monkeypatch, caplog):
+    import logging
+
+    caplog.set_level(logging.INFO, logger="compound.llm")
     monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-ant-should-not-leak")
     monkeypatch.setenv("SOMETHING_ELSE", "kept")
     seen = {}
