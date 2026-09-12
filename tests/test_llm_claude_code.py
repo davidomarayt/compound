@@ -94,3 +94,25 @@ def test_build_llm_selects_backend(settings):
     real = replace(settings, fake_llm=False)
     assert type(build_llm(replace(real, llm_backend="claude-code"))) is ClaudeCodeLLM
     assert type(build_llm(replace(real, llm_backend="api"))) is ClaudeLLM
+
+
+def test_research_call_gets_search_tools_and_long_timeout(monkeypatch):
+    from compound.llm import ResearchReport, TopicPlan
+
+    monkeypatch.setattr("compound.llm.shutil.which", lambda name: "/usr/bin/claude")
+    llm = ClaudeCodeLLM(bin="claude", model="", style_dir=Path("style"), research_effort="max")
+    seen = {}
+
+    def fake_run(cmd, **kw):
+        seen["cmd"], seen["timeout"] = cmd, kw["timeout"]
+        return R(json.dumps({"structured_output": {"summary": "s", "findings": [], "sources": [],
+                                                   "pubmed_ids": ["PMID: 123", "456"], "caveats": [], "suggested_structure": []}}))
+
+    monkeypatch.setattr("compound.llm.subprocess.run", fake_run)
+    plan = TopicPlan(title="t", slug="t", target_query="q", meta_description="m", brief="b", questions=["a?"],
+                     pubmed_queries=[], source_urls=[], tags=["x"])
+    rep = llm.research_topic(pillar="health", plan=plan)
+    assert isinstance(rep, ResearchReport) and rep.pubmed_ids == ["123", "456"]
+    assert seen["cmd"][seen["cmd"].index("--tools") + 1] == "WebSearch,WebFetch"
+    assert seen["cmd"][seen["cmd"].index("--effort") + 1] == "max"
+    assert seen["timeout"] == ClaudeCodeLLM.RESEARCH_TIMEOUT

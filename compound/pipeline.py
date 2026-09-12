@@ -12,6 +12,7 @@ from __future__ import annotations
 import json
 
 import logging
+import re
 import secrets
 import subprocess
 from dataclasses import dataclass
@@ -161,7 +162,8 @@ class Pipeline:
             draft = self.llm.generate_draft(
                 kind=item["kind"], pillar=item["pillar"], title=item["title"], url=item["url"] or "",
                 summary=item["summary"] or "", source_text=source_text, interview=self.interview(item_id),
-                angle=item["angle"] or "", seo=self.seo_block(plan), previous_draft=prev_md, redraft_notes=redraft_notes,
+                angle=item["angle"] or "", seo=self.seo_block(plan, (item["research_notes"] if "research_notes" in item.keys() else "") or ""),
+                previous_draft=prev_md, redraft_notes=redraft_notes,
             )
         except LLMError:
             self.db.set_item_status(item_id, "failed")
@@ -309,28 +311,65 @@ class Pipeline:
         return TopicPlan.model_validate_json(raw) if raw else None
 
     @staticmethod
-    def seo_block(plan: TopicPlan | None) -> str:
+    def seo_block(plan: TopicPlan | None, notes: str = "") -> str:
         if plan is None:
             return ""
         qs = "\n".join(f"- {q}" for q in plan.questions)
-        return (
+        block = (
             f"Target search query: {plan.target_query}\nAnswer it directly in the first two paragraphs.\n"
             f"Use these questions as the subheadings, in this order:\n{qs}\n"
             f"Suggested meta description: {plan.meta_description}"
         )
+        if notes.strip():
+            block += (
+                "\n\n## Research notes\nThe researcher read the sources below and reported this. Use it to decide what "
+                "to say and how strongly; every figure must still be quoted from the source text itself.\n" + notes.strip()
+            )
+        return block
 
-    def research(self, plan: TopicPlan) -> ResearchPack:
-        return build_pack(
-            pubmed_queries=plan.pubmed_queries, urls=plan.source_urls, fetch_page=self.fetch_page_text,
-            pubmed_max=self.settings.pubmed_max,
+    def research(self, pillar: str, plan: TopicPlan) -> tuple[ResearchPack, str]:
+        """Deep research (Claude with web search, when the backend has it) plus the planner's
+        queries and URLs, fetched into a pack. Returns (pack, research notes for the writer)."""
+        notes = ""
+        pubmed_ids: list[str] = []
+        urls = list(plan.source_urls)
+        if self.settings.deep_research:
+            try:
+                report = self.llm.research_topic(pillar=pillar, plan=plan)
+            except LLMError as e:
+                log.warning("deep research failed, continuing with the planner's sources: %s", e)
+                report = None
+            if report is not None and (report.findings or report.sources or report.pubmed_ids):
+                notes = report.notes()
+                pubmed_ids = list(report.pubmed_ids)
+                for src in report.sources:
+                    if src.url not in urls:
+                        urls.append(src.url)
+                for f in report.findings:
+                    if f.source_url not in urls:
+                        urls.append(f.source_url)
+                if report.suggested_structure:
+                    plan.questions = report.suggested_structure[:7]
+        # PubMed pages are fetched as abstracts by ID, not as HTML
+        for u in list(urls):
+            m = re.search(r"pubmed\.ncbi\.nlm\.nih\.gov/(\d+)", u)
+            if m:
+                urls.remove(u)
+                if m.group(1) not in pubmed_ids:
+                    pubmed_ids.append(m.group(1))
+        pack = build_pack(
+            pubmed_queries=plan.pubmed_queries, urls=urls, fetch_page=self.fetch_page_text,
+            pubmed_max=self.settings.pubmed_max, max_sources=16, pubmed_ids=pubmed_ids,
         )
+        return pack, notes
 
-    def create_planned_item(self, pillar: str, plan: TopicPlan, pack: ResearchPack) -> int:
+    def create_planned_item(self, pillar: str, plan: TopicPlan, pack: ResearchPack, notes: str = "") -> int:
         item_id = self.create_manual_item(plan.title, pillar)
         self.db.set_item_field(item_id, "summary", plan.brief)
         self.db.set_item_field(item_id, "angle", plan.brief)
         self.db.set_item_field(item_id, "plan_json", plan.model_dump_json())
         self.db.set_item_field(item_id, "research_json", pack.to_json())
+        self.db.set_item_field(item_id, "research_notes", notes)
         if pack.sources:
             self.db.set_item_source_text(item_id, pack.source_text())
         return item_id
@@ -381,8 +420,8 @@ class Pipeline:
         draft from it, run the editor pass, publish if allowed. Returns a dict for the owner's notification."""
         pillar = pillar or self.next_pillar()
         plan = self.plan_topic(pillar, fixed_title)
-        pack = self.research(plan)
-        item_id = self.create_planned_item(pillar, plan, pack)
+        pack, notes = self.research(pillar, plan)
+        item_id = self.create_planned_item(pillar, plan, pack, notes)
         draft_id = self.make_draft(item_id)
         review = self.editor_pass(item_id, draft_id)
         d = self.db.latest_draft_for_item(item_id)

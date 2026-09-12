@@ -210,6 +210,7 @@ def offline(pipeline, monkeypatch):
     from compound.research import parse_pubmed_xml
 
     monkeypatch.setattr("compound.research.pubmed_search", lambda q, n=5: parse_pubmed_xml(PUBMED_XML))
+    monkeypatch.setattr("compound.research.pubmed_fetch", lambda ids: parse_pubmed_xml(PUBMED_XML) if "111" in ids else [])
     pipeline.fetch_suggestions = lambda seed: [f"{seed} ireland", f"{seed} how to claim"]
     pipeline.fetch_page_text = lambda url: CI_PAGE if "citizensinformation" in url else (_ for _ in ()).throw(RuntimeError("404"))
     return pipeline
@@ -316,7 +317,7 @@ def test_too_few_sources_holds(offline, settings, monkeypatch):
     pipeline = offline
     pipeline.llm = CitingFake(pipeline.llm)
     monkeypatch.setattr("compound.research.pubmed_search", lambda q, n=5: [])
-    pipeline.settings = replace(settings, auto_publish="verified", min_sources=2)
+    pipeline.settings = replace(settings, auto_publish="verified", min_sources=2, deep_research=False)
     r = pipeline.run_scheduled("health")  # only the CI page fetches
     assert r["sources"] == 1 and r["published"] is None
     assert any("only 1 source" in w for w in r["warnings"])
@@ -379,3 +380,35 @@ def test_owner_topic_goes_through_research_flow(offline, settings):
     assert r["sources"] == 2 and r["published"]
     assert pipeline.item_plan(r["item_id"]).target_query
     assert pipeline.schedule_due()  # an owner-requested piece does not count as the scheduled one
+
+
+def test_deep_research_feeds_the_pack_and_the_writer(offline, settings, monkeypatch):
+    from dataclasses import replace
+
+    pipeline = offline
+    fake = CitingFake(pipeline.llm)
+    pipeline.llm = fake
+    # the planner names no PubMed queries for wealth, so the study can only come from the research report
+    monkeypatch.setattr("compound.research.pubmed_search", lambda q, n=5: [])
+    pipeline.settings = replace(settings, auto_publish="verified", deep_research=True)
+    r = pipeline.run_scheduled("wealth")
+    item = pipeline.db.get_item(r["item_id"])
+    assert "pubmed.ncbi.nlm.nih.gov/111" in item["research_json"]  # PMID from the report was fetched as an abstract
+    assert "(fake) research summary" in item["research_notes"]
+    assert "Research notes" in fake.last_seo and "walking lowers mortality" in fake.last_seo
+    assert r["sources"] == 2 and r["published"]
+
+    pipeline.settings = replace(settings, auto_publish="verified", deep_research=False)
+    r2 = pipeline.run_scheduled("wealth")
+    assert pipeline.db.get_item(r2["item_id"])["research_notes"] == ""
+
+
+def test_schedule_accepts_fractions_of_an_hour(pipeline, settings):
+    from dataclasses import replace
+    from datetime import datetime, timedelta, timezone
+
+    pipeline.settings = replace(settings, schedule_hours=0.25)
+    pipeline.db.set_state(pipeline.SCHEDULE_LAST_KEY, (datetime.now(timezone.utc) - timedelta(minutes=10)).isoformat())
+    assert not pipeline.schedule_due()
+    pipeline.db.set_state(pipeline.SCHEDULE_LAST_KEY, (datetime.now(timezone.utc) - timedelta(minutes=16)).isoformat())
+    assert pipeline.schedule_due()

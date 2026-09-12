@@ -75,9 +75,10 @@ class Bot:
             minutes = max(1, self.settings.poll_interval_minutes)
             app.job_queue.run_repeating(self.job_poll, interval=minutes * 60, first=10, name="poll")
         if self.settings.schedule_hours > 0:
-            # Checked every 10 minutes against the persisted last-run time, so restarts neither
-            # fire an extra piece nor lose the schedule.
-            app.job_queue.run_repeating(self.job_schedule, interval=600, first=30, name="schedule")
+            # Checked periodically against the persisted last-run time, so restarts neither fire an
+            # extra piece nor lose the schedule. Short test schedules get a proportionally quicker check.
+            every = int(max(60, min(600, self.settings.schedule_hours * 3600 / 3)))
+            app.job_queue.run_repeating(self.job_schedule, interval=every, first=30, name="schedule")
         return app
 
     def _is_owner(self, update: Update) -> bool:

@@ -120,7 +120,7 @@ class Database:
         """Columns added after the first release; CREATE TABLE IF NOT EXISTS does not add them to old files."""
         have = {r["name"] for r in self.conn.execute("PRAGMA table_info(items)")}
         for col, typ in (("relevance", "INTEGER"), ("triage_note", "TEXT"), ("angle", "TEXT"),
-                         ("plan_json", "TEXT"), ("research_json", "TEXT")):
+                         ("plan_json", "TEXT"), ("research_json", "TEXT"), ("research_notes", "TEXT")):
             if col not in have:
                 self.conn.execute(f"ALTER TABLE items ADD COLUMN {col} {typ}")
         have_d = {r["name"] for r in self.conn.execute("PRAGMA table_info(drafts)")}
@@ -189,7 +189,7 @@ class Database:
         self.conn.commit()
 
     def set_item_field(self, item_id: int, column: str, value) -> None:
-        assert column in {"plan_json", "research_json", "angle", "summary", "source_text", "url"}
+        assert column in {"plan_json", "research_json", "research_notes", "angle", "summary", "source_text", "url"}
         self.conn.execute(f"UPDATE items SET {column} = ? WHERE id = ?", (value, item_id))
         self.conn.commit()
 

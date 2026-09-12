@@ -164,10 +164,19 @@ def suggestions(seed: str, region: str = "ie") -> list[str]:
 
 # --- assembly -------------------------------------------------------------------------
 def build_pack(*, pubmed_queries: list[str], urls: list[str], fetch_page, pubmed_max: int = 5,
-               max_sources: int = 8) -> ResearchPack:
-    """Run the PubMed queries and fetch the trusted URLs; dedupe; keep at most max_sources."""
+               max_sources: int = 8, pubmed_ids: list[str] | None = None) -> ResearchPack:
+    """Fetch the named PubMed IDs, run the PubMed queries, fetch the trusted URLs; dedupe; cap."""
     pack = ResearchPack()
     seen: set[str] = set()
+    ids = [i for i in (pubmed_ids or []) if i.isdigit()]
+    if ids:
+        try:
+            for s in pubmed_fetch(ids[:20]):
+                if s.url not in seen:
+                    seen.add(s.url)
+                    pack.sources.append(s)
+        except Exception:  # noqa: BLE001
+            log.exception("pubmed fetch by id failed")
     for q in pubmed_queries:
         for s in pubmed_search(q, pubmed_max):
             if s.url not in seen:
