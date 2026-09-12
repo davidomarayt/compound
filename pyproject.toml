@@ -32,3 +32,4 @@ compound = ["prompts/*.md", "site/templates/*.html", "site/static/*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
