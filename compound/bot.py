@@ -146,6 +146,7 @@ class Bot:
         if not item_id or self.db.get_item(item_id) is None:
             await update.message.reply_text("No active item. /queue then /open <id>.")
             return
+        await update.message.reply_text(f"Drafting #{item_id}… this takes a minute or two.")
         await self.run_draft(item_id)
 
     async def cmd_drop(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
