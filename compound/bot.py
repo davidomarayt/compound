@@ -342,6 +342,14 @@ class Bot:
         if not text:
             return
         awaiting = self.db.get_state(AWAITING_REDRAFT)
+        if not awaiting and not self.settings.interview:
+            # No interview: free text is not an answer to anything. Point at the commands instead of
+            # silently filing it against whatever item happens to be active.
+            await update.message.reply_text(
+                "I only take commands in this mode. Try /newpiece <pillar> <topic>, /auto [pillar], /queue, "
+                "/unpublish <id>, or tap Redraft on a draft to send notes."
+            )
+            return
         if awaiting:
             self.db.set_state(AWAITING_REDRAFT, None)
             d = self.db.get_draft(int(awaiting))
