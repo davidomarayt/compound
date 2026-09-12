@@ -6,6 +6,7 @@ Previews render to /preview/<token>/ with noindex and are never listed anywhere.
 from __future__ import annotations
 
 import json
+from urllib.parse import urlparse
 import re
 import shutil
 from dataclasses import dataclass, field
@@ -241,6 +242,10 @@ def build_site(settings: Settings) -> dict:
     _write(out / "search" / "index.html", env.get_template("search.html").render(title="Search"))
     _write(out / "feed.xml", env.get_template("feed.xml").render(articles=articles[:30]))
     _write(out / "robots.txt", f"User-agent: *\nDisallow: /preview/\nSitemap: {settings.site_base_url}/sitemap.xml\n")
+    host = urlparse(settings.site_base_url).hostname or ""
+    if host and host not in {"localhost", "127.0.0.1"}:
+        _write(out / "CNAME", host + "\n")  # custom domain for GitHub Pages; harmless elsewhere
+    _write(out / ".nojekyll", "")  # tell GitHub Pages to serve files as-is
     urls = [settings.site_base_url + "/"] + [settings.site_base_url + f"/{p}/" for p in PILLARS] + [settings.site_base_url + a.url for a in articles]
     _write(out / "sitemap.xml", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
            + "".join(f"  <url><loc>{u}</loc></url>\n" for u in urls) + "</urlset>\n")

@@ -136,6 +136,27 @@ Every Claude call is logged with its token counts (`llm ok: ... in=... out=...`)
 drafts). Never run two copies of the bot on one token: they both fire the schedule. Set a monthly spend
 limit in the Anthropic console as a backstop.
 
+## Publish for free on GitHub Pages (bot on your own machine)
+
+If the bot runs on a laptop or PC that stays on, the site itself can be served by GitHub Pages at no
+cost. The bot commits each published article to `content/` and pushes; the `site.yml` workflow builds
+`public/` and deploys it.
+
+1. In the GitHub repo: Settings -> Pages -> Source: **GitHub Actions**. Then Custom domain: `compound.ie`
+   (GitHub shows the DNS records it wants; they are the four `A` records below plus a `CNAME` for `www`).
+2. At your domain's DNS: `A` records for `compound.ie` -> `185.199.108.153`, `185.199.109.153`,
+   `185.199.110.153`, `185.199.111.153`; `CNAME` for `www` -> `<your-github-username>.github.io`.
+   Tick "Enforce HTTPS" in the Pages settings once DNS has propagated.
+3. In `.env`: `SITE_BASE_URL=https://compound.ie`, `PREVIEW_BASE_URL=http://localhost:8080` (previews stay
+   local), and `DEPLOY_COMMAND=git add content && git commit -q -m "publish" && git push`.
+4. Run `git push` once by hand in the project folder so Git stores your GitHub login; after that the bot's
+   pushes need no prompt.
+
+Keep the machine awake: on Windows, Settings -> System -> Power -> Screen and sleep -> Never when plugged
+in, and set "closing the lid" to "Do nothing". The bot only runs while its window is open; to start it
+automatically at login, create a Task Scheduler task that runs `python -m compound.cli run` in the
+project folder.
+
 ## Deploy (one VPS)
 
 On a fresh Ubuntu 22.04/24.04 server, as root:
