@@ -6,6 +6,7 @@ Set COMPOUND_FAKE_LLM=1 to get canned output without an API key (for testing the
 from __future__ import annotations
 
 import logging
+import os
 import re
 from pathlib import Path
 from typing import Protocol
@@ -144,13 +145,17 @@ class ClaudeLLM:
     def __init__(self, model: str, style_dir: Path):
         import anthropic
 
-        self.client = anthropic.Anthropic()
+        # An empty key (e.g. ANTHROPIC_API_KEY= in .env) makes the SDK raise a bare TypeError at
+        # request time; hold the client back and turn that into a clear LLMError instead.
+        self.client = anthropic.Anthropic() if os.environ.get("ANTHROPIC_API_KEY", "").strip() else None
         self.model = model
         self.style_dir = style_dir
 
     def _parse(self, prompt: str, schema, *, effort: str, max_tokens: int):
         import anthropic
 
+        if self.client is None:
+            raise LLMError("ANTHROPIC_API_KEY is not set. Add it to .env and restart, or run with COMPOUND_FAKE_LLM=1.")
         try:
             response = self.client.messages.parse(
                 model=self.model,
@@ -165,6 +170,8 @@ class ClaudeLLM:
             raise LLMError(f"Anthropic API error {e.status_code}: {e.message}") from e
         except anthropic.APIConnectionError as e:
             raise LLMError("Could not reach the Anthropic API.") from e
+        except anthropic.AnthropicError as e:
+            raise LLMError(f"Anthropic client error: {e}") from e
         if response.stop_reason == "refusal":
             raise LLMError("The model declined this request (stop_reason=refusal).")
         if response.stop_reason == "max_tokens":

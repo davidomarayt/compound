@@ -122,7 +122,7 @@ class Bot:
             await update.message.reply_text("Usage: /open <item id>")
             return
         self.db.set_state(ACTIVE_ITEM, str(item["id"]))
-        if item["status"] == "new":
+        if item["status"] == "new" or (item["status"] == "failed" and not self.db.questions_for(item["id"])):
             await self._start_interview(item["id"])
         elif item["status"] == "pending":
             d = self.db.pending_draft_for_item(item["id"])
@@ -197,7 +197,7 @@ class Bot:
         try:
             await asyncio.to_thread(self.p.prepare_questions, item_id)
         except LLMError as e:
-            await self._send(f"⚠️ Could not generate questions for #{item_id}: {e}")
+            await self._send(f"⚠️ Could not generate questions for #{item_id}: {e}\nSend /open {item_id} to retry.")
             return
         self.db.set_state(ACTIVE_ITEM, str(item_id))
         await self.send_questions(item_id)
