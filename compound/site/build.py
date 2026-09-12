@@ -131,8 +131,14 @@ def load_pages(content_dir: Path) -> list[Page]:
     return pages
 
 
+def long_date(d: date) -> str:
+    """'3 September 2026' without relying on strftime('%-d'), which Windows rejects."""
+    return f"{d.day} {d.strftime('%B %Y')}"
+
+
 def _env(settings: Settings) -> Environment:
     env = Environment(loader=FileSystemLoader(str(HERE / "templates")), autoescape=select_autoescape(["html"]))
+    env.filters["long_date"] = long_date
     env.globals.update(
         site_url=settings.site_base_url,
         email_form_action=settings.email_form_action,
