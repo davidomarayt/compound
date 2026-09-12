@@ -1,0 +1,12 @@
+# Site-wide settings that are safe to commit (nothing secret goes here).
+#
+# Google AdSense. Leave client blank until your site is approved, then fill in your publisher id
+# (ca-pub-...) and the slot ids of three display ad units created in the AdSense console. Blank
+# slots are simply not rendered. Also turn on Google's consent message under Privacy & messaging in
+# the AdSense console: EU readers must be asked before personalised ads are shown.
+adsense:
+  client: ""
+  slots:
+    article_top: ""      # under the standfirst, above the article body
+    article_bottom: ""   # after the article body
+    feed: ""             # on the pillar listing pages, after the list

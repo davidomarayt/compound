@@ -3,5 +3,6 @@
 <h1 class="pillar-title pill-{{ pillar }}">{{ pillar_labels[pillar] }}</h1>
 <p class="blurb">{{ pillar_blurbs[pillar] }}</p>
 <div class="list">{% for a in articles %}{% include "_card.html" %}{% else %}<p class="empty">Nothing here yet.</p>{% endfor %}</div>
+{% with slot=adsense.slots.feed, name="feed" %}{% include "_ad.html" %}{% endwith %}
 {% include "_signup.html" %}
 {% endblock %}

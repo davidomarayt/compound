@@ -44,3 +44,7 @@ a{color:inherit}
 .search-form input{width:100%;padding:12px;font-size:1.05rem;border:1px solid #bbb;border-radius:8px;margin-bottom:16px}
 .related h2{font-size:1.2rem}
 @media (min-width:860px){.columns{grid-template-columns:repeat(3,1fr)}.column-health{order:1}.column-wealth{order:2}.column-happiness{order:3}.site-main{padding:24px}}
+
+/* Ad slots: rendered only when content/site.yml has an AdSense client and slot id. */
+.ad { margin: 1.5rem 0; min-height: 90px; }
+.ad ins { width: 100%; }

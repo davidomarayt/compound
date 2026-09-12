@@ -159,9 +159,27 @@ def article_jsonld(a: Article, site_url: str) -> str:
     return json.dumps(data, ensure_ascii=False)
 
 
+def load_site_config(content_dir: Path) -> dict:
+    """content/site.yml: committed, non-secret site settings (ads). Missing file = defaults."""
+    f = content_dir / "site.yml"
+    data = {}
+    if f.exists():
+        data = yaml.safe_load(f.read_text(encoding="utf-8")) or {}
+    ads = data.get("adsense") or {}
+    slots = ads.get("slots") or {}
+    return {
+        "adsense": {
+            "client": str(ads.get("client") or "").strip(),
+            "slots": {k: str(slots.get(k) or "").strip() for k in ("article_top", "article_bottom", "feed")},
+        }
+    }
+
+
 def _env(settings: Settings) -> Environment:
     env = Environment(loader=FileSystemLoader(str(HERE / "templates")), autoescape=select_autoescape(["html"]))
     env.filters["long_date"] = long_date
+    site_cfg = load_site_config(settings.content_dir)
+    env.globals.update(adsense=site_cfg["adsense"])
     env.globals.update(
         site_url=settings.site_base_url,
         email_form_action=settings.email_form_action,
@@ -246,6 +264,10 @@ def build_site(settings: Settings) -> dict:
     if host and host not in {"localhost", "127.0.0.1"}:
         _write(out / "CNAME", host + "\n")  # custom domain for GitHub Pages; harmless elsewhere
     _write(out / ".nojekyll", "")  # tell GitHub Pages to serve files as-is
+    client = load_site_config(settings.content_dir)["adsense"]["client"]
+    if client.startswith("ca-pub-"):
+        # AdSense checks this file to confirm the site is allowed to show your ads.
+        _write(out / "ads.txt", f"google.com, {client.removeprefix('ca-')}, DIRECT, f08c47fec0942fa0\n")
     urls = [settings.site_base_url + "/"] + [settings.site_base_url + f"/{p}/" for p in PILLARS] + [settings.site_base_url + a.url for a in articles]
     _write(out / "sitemap.xml", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
            + "".join(f"  <url><loc>{u}</loc></url>\n" for u in urls) + "</urlset>\n")

@@ -131,6 +131,13 @@ runnable from the same user account as the bot (check with `claude --version`). 
 documented headless mode; it does not extract or reuse login tokens. The bot strips `ANTHROPIC_API_KEY`
 from Claude Code's environment, because Claude Code would otherwise prefer the key to the login and bill it.
 
+## Ads
+
+Ad slots are built in but render nothing until `content/site.yml` has your AdSense publisher id and slot
+ids (three display units: under the standfirst, after the article body, after each pillar list). Commit the
+file and push; the site rebuilds with the AdSense script, the slots, and an `ads.txt`. Preview pages never
+carry ads. Turn on Google's consent message in the AdSense console (Privacy & messaging) for EU readers.
+
 ## Keeping the API bill down
 
 Every Claude call is logged with its token counts (`llm ok: ... in=... out=...`). The levers, cheapest first:

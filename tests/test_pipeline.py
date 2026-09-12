@@ -412,3 +412,31 @@ def test_schedule_accepts_fractions_of_an_hour(pipeline, settings):
     assert not pipeline.schedule_due()
     pipeline.db.set_state(pipeline.SCHEDULE_LAST_KEY, (datetime.now(timezone.utc) - timedelta(minutes=16)).isoformat())
     assert pipeline.schedule_due()
+
+
+def test_ad_slots_render_only_when_configured(pipeline, settings):
+    from dataclasses import replace
+    from compound.site.build import build_site
+
+    pipeline.llm = CitingFake(pipeline.llm)
+    pipeline.settings = replace(settings, auto_publish="always", deep_research=False)
+    r = pipeline.run_scheduled("health")
+    slug = pipeline.db.get_draft(r["draft_id"])["slug"]
+    page = settings.public_dir / "health" / slug / "index.html"
+    assert "adsbygoogle" not in page.read_text(encoding="utf-8")
+    assert not (settings.public_dir / "ads.txt").exists()
+
+    (settings.content_dir / "site.yml").write_text(
+        "adsense:\n  client: ca-pub-123\n  slots:\n    article_top: '111'\n    article_bottom: ''\n    feed: '333'\n"
+    )
+    build_site(settings)
+    html = page.read_text(encoding="utf-8")
+    assert "adsbygoogle.js?client=ca-pub-123" in html
+    assert html.count('data-ad-slot="111"') == 1 and 'data-ad-slot=""' not in html  # blank bottom slot not rendered
+    assert 'data-ad-slot="333"' in (settings.public_dir / "health" / "index.html").read_text(encoding="utf-8")
+    assert (settings.public_dir / "ads.txt").read_text() == "google.com, pub-123, DIRECT, f08c47fec0942fa0\n"
+    # previews never carry ads
+    from compound.site.build import render_preview
+    art = pipeline._article_from_draft(pipeline.db.get_draft(r["draft_id"]), pipeline.db.get_item(r["item_id"]))
+    render_preview(settings, "tok123", art)
+    assert "adsbygoogle" not in (settings.public_dir / "preview" / "tok123" / "index.html").read_text(encoding="utf-8")
