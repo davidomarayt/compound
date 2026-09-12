@@ -38,18 +38,19 @@ deploy/              systemd unit + Caddyfile
 ```bash
 python3 -m venv .venv && . .venv/bin/activate
 pip install -e ".[dev]"
-cp .env.example .env
+compound setup
 ```
 
-1. **Telegram**: create a bot with @BotFather, put the token in `.env`. Run `compound run`, send
-   `/start` to the bot; it replies with your user id. Put that in `TELEGRAM_OWNER_ID`, restart.
-   The bot then ignores everyone else.
-2. **Anthropic**: set `ANTHROPIC_API_KEY`.
-3. **Voice notes**: set `STT_PROVIDER=openai` plus `STT_API_KEY` (OpenAI, or Groq with
-   `STT_BASE_URL=https://api.groq.com/openai/v1` and `STT_MODEL=whisper-large-v3-turbo`).
-   Until then, answer by text.
-4. **Your voice**: paste 20–30 of your own sentences into `style/voice-samples.md`.
-5. **Site URL**: set `SITE_BASE_URL` / `PREVIEW_BASE_URL` to wherever `public/` is served.
+`compound setup` asks for the Telegram bot token (from @BotFather), checks it, asks for the
+Anthropic key and an optional speech-to-text key, writes `.env`, then waits for you to send
+`/start` to the bot and records your Telegram user id. After that the bot ignores everyone else.
+Run it again any time to change a key. `.env` is gitignored; never commit it.
+
+Speech to text: any OpenAI-compatible endpoint. A Groq key (`gsk_…`) is detected and configured
+automatically; an OpenAI key uses `whisper-1` at api.openai.com. Until a key is set, answer by text.
+
+Then paste 20-30 of your own sentences into `style/voice-samples.md`, and set `SITE_BASE_URL` /
+`PREVIEW_BASE_URL` in `.env` to wherever `public/` is served (defaults to http://localhost:8080).
 
 ## Prove the loop
 

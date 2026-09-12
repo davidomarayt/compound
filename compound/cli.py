@@ -28,6 +28,8 @@ def main(argv: list[str] | None = None) -> int:
     sub = parser.add_subparsers(dest="cmd", required=True)
 
     sub.add_parser("init-db", help="create the SQLite database")
+    p_setup = sub.add_parser("setup", help="interactive: write .env, verify the bot token, link your Telegram account")
+    p_setup.add_argument("--skip-verify", action="store_true", help="do not contact Telegram (offline)")
     p_poll = sub.add_parser("poll", help="poll sources once and queue new items")
     p_poll.add_argument("--dry-run", action="store_true", help="list what the sources return, store nothing")
     sub.add_parser("run", help="run the Telegram bot with the source poller inside it")
@@ -50,6 +52,11 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
     logging.getLogger("httpx").setLevel(logging.WARNING)
+
+    if args.cmd == "setup":
+        from compound.setup import run_setup
+
+        return run_setup(skip_verify=args.skip_verify)
 
     if args.cmd == "init-db":
         s = load_settings()
