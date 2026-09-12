@@ -102,7 +102,7 @@ class Bot:
             "Compound pipeline.\n\n"
             "/queue – what's open\n/open <id> – switch to an item and resend its questions\n"
             "/draft [id] – draft now with the answers so far\n/skip – skip the current question\n"
-            "/newpiece [pillar] <topic> – manual evergreen piece\n/auto [pillar] – write a scheduled piece now\n/unpublish <id> – take a published piece off the site\n/drop [id] – kill an item\n/poll – poll sources now\n\n"
+            "/newpiece [pillar] <topic> – research and write a piece on your topic\n/auto [pillar] – write a scheduled piece now\n/unpublish <id> – take a published piece off the site\n/drop [id] – kill an item\n/poll – poll sources now\n\n"
             "Answer questions by voice note or text. Reply to a specific question message to bind the answer to it."
         )
 
@@ -174,6 +174,10 @@ class Bot:
         if not topic:
             await update.message.reply_text("Usage: /newpiece [health|wealth|happiness] <topic>")
             return
+        if not self.settings.interview:
+            await update.message.reply_text(f"New {pillar} piece: {topic}\nResearching, drafting and editing… three to five minutes.")
+            await self.run_scheduled(pillar, fixed_title=topic)
+            return
         item_id = self.p.create_manual_item(topic, pillar)
         self.db.set_state(ACTIVE_ITEM, str(item_id))
         await update.message.reply_text(f"New {pillar} piece #{item_id}: {topic}\nThinking of questions…")
@@ -206,9 +210,9 @@ class Bot:
             return
         await update.message.reply_text(f"🗑 Removed #{item_id} from the site: {url}")
 
-    async def run_scheduled(self, pillar: str | None = None) -> None:
+    async def run_scheduled(self, pillar: str | None = None, fixed_title: str | None = None) -> None:
         try:
-            r = await asyncio.to_thread(self.p.run_scheduled, pillar)
+            r = await asyncio.to_thread(self.p.run_scheduled, pillar, fixed_title)
         except LLMError as e:
             await self._send(f"⚠️ Scheduled piece failed: {e}")
             return

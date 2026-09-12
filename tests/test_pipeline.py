@@ -366,3 +366,16 @@ def test_figures_verify_against_their_cited_pages():
     res = {r["label"]: r for r in verify_figures(draft, "", pages)}
     assert res["GP card age"]["ok"] and res["emergency"]["ok"]
     assert res["honey"]["in_source"] is False and not res["honey"]["ok"]
+
+
+def test_owner_topic_goes_through_research_flow(offline, settings):
+    from dataclasses import replace
+
+    pipeline = offline
+    pipeline.llm = CitingFake(pipeline.llm)
+    pipeline.settings = replace(settings, auto_publish="verified", schedule_hours=6)
+    r = pipeline.run_scheduled("health", fixed_title="Vitamin D in Ireland: who needs a supplement")
+    assert r["title"] == "Vitamin D in Ireland: who needs a supplement"
+    assert r["sources"] == 2 and r["published"]
+    assert pipeline.item_plan(r["item_id"]).target_query
+    assert pipeline.schedule_due()  # an owner-requested piece does not count as the scheduled one
