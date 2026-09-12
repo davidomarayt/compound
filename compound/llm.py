@@ -301,10 +301,14 @@ class ClaudeCodeLLM(ClaudeLLM):
         if self.model:
             cmd += ["--model", self.model]
         full_prompt = prompt + "\n\nAnswer directly from the text above."
+        # Claude Code prefers an API key over the subscription login when it finds one in the
+        # environment. The bot loads .env into its own environment, so strip the API credentials
+        # here or every "subscription" call would quietly bill the key.
+        env = {k: v for k, v in os.environ.items() if k not in {"ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN"}}
         try:
             r = subprocess.run(
                 cmd, input=full_prompt, capture_output=True, text=True, encoding="utf-8", errors="replace",
-                timeout=self.TIMEOUT,
+                timeout=self.TIMEOUT, env=env,
             )
         except subprocess.TimeoutExpired as e:
             raise LLMError(f"Claude Code did not answer within {self.TIMEOUT}s.") from e

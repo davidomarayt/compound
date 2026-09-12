@@ -19,11 +19,14 @@ def llm(monkeypatch):
 
 
 def test_structured_output_is_parsed(llm, monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-ant-should-not-leak")
+    monkeypatch.setenv("SOMETHING_ELSE", "kept")
     seen = {}
 
     def fake_run(cmd, **kw):
         seen["cmd"] = cmd
         seen["input"] = kw["input"]
+        seen["env"] = kw["env"]
         return R(json.dumps({"is_error": False, "num_turns": 1, "duration_ms": 1200, "total_cost_usd": 0.01,
                              "structured_output": {"score": 8, "reason": "affects renters", "angle": "renters", "summary": "s"}}))
 
@@ -35,6 +38,7 @@ def test_structured_output_is_parsed(llm, monkeypatch):
     assert seen["cmd"][seen["cmd"].index("--effort") + 1] == "low"  # triage runs at low effort
     assert "Rent credit €1,000" in seen["input"]
     assert "--model" not in seen["cmd"]
+    assert "ANTHROPIC_API_KEY" not in seen["env"] and seen["env"]["SOMETHING_ELSE"] == "kept"
 
 
 def test_model_flag_and_result_string_fallback(monkeypatch):

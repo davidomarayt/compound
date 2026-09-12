@@ -105,7 +105,8 @@ in `.env`. Every Claude call (triage, topic, questions, draft) then runs `claude
 --json-schema ...` locally with the same prompts, and is covered by the subscription that `claude` is
 logged in with. `ANTHROPIC_API_KEY` is not used. Subscription usage limits apply, and Claude Code must be
 runnable from the same user account as the bot (check with `claude --version`). This is Anthropic's
-documented headless mode; it does not extract or reuse login tokens.
+documented headless mode; it does not extract or reuse login tokens. The bot strips `ANTHROPIC_API_KEY`
+from Claude Code's environment, because Claude Code would otherwise prefer the key to the login and bill it.
 
 ## Keeping the API bill down
 
