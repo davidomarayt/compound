@@ -446,7 +446,7 @@ def test_signup_form_hidden_until_configured(pipeline, settings):
     from dataclasses import replace
     from compound.site.build import build_site
 
-    build_site(settings)
+    build_site(replace(settings, email_form_action=""))
     home = settings.public_dir / "index.html"
     assert "signup-form" not in home.read_text(encoding="utf-8")
     (settings.content_dir / "site.yml").write_text("email_form_action: https://app.kit.com/forms/123/subscriptions\n")

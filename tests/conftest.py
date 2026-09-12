@@ -16,6 +16,7 @@ def settings(tmp_path, monkeypatch):
     monkeypatch.setenv("PREVIEW_BASE_URL", "https://example.test")
     monkeypatch.setenv("FIRST_RUN_BACKFILL", "1")
     monkeypatch.setenv("DEPLOY_COMMAND", "")
+    monkeypatch.setenv("EMAIL_FORM_ACTION", "https://example.test/subscribe")
     monkeypatch.setenv("STT_PROVIDER", "none")
     from compound.config import load_settings
 
