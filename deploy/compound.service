@@ -7,6 +7,9 @@ Wants=network-online.target
 [Service]
 User=compound
 WorkingDirectory=/srv/compound
+# HOME so Claude Code finds its login under ~/.claude; PATH so `claude` resolves if CLAUDE_CODE_BIN is unset.
+Environment=HOME=/srv/compound
+Environment=PATH=/srv/compound/.local/bin:/srv/compound/.venv/bin:/usr/local/bin:/usr/bin:/bin
 EnvironmentFile=/srv/compound/.env
 ExecStart=/srv/compound/.venv/bin/compound run
 Restart=always

@@ -118,6 +118,22 @@ limit in the Anthropic console as a backstop.
 
 ## Deploy (one VPS)
 
+On a fresh Ubuntu 22.04/24.04 server, as root:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/<you>/compound/main/deploy/bootstrap.sh -o bootstrap.sh
+bash bootstrap.sh https://github.com/<you>/compound.git main
+```
+
+That installs Python, Caddy and Claude Code, creates the `compound` user, clones into `/srv/compound`,
+builds the venv, writes a starter `.env` (Claude Code backend, site URL https://compound.ie) and
+installs the systemd unit and Caddyfile. It then prints the three remaining steps: log Claude Code in
+as the `compound` user, fill in the Telegram token and owner id, start the service. Point the domain's
+A records at the server and Caddy issues HTTPS certificates itself. Re-running the script is safe: it
+pulls the repo and reinstalls without touching `.env`.
+
+By hand, the same thing is:
+
 ```bash
 sudo useradd -r -m -d /srv/compound compound
 sudo -u compound git clone <repo> /srv/compound && cd /srv/compound
