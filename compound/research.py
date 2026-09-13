@@ -53,7 +53,7 @@ TRUSTED_SUFFIXES = (".gov", ".gov.ie", ".gov.uk", ".edu", ".ac.uk", ".europa.eu"
 MAX_SOURCE_CHARS = 6_000
 MAX_PACK_CHARS = 40_000
 TIMEOUT = 30.0
-USER_AGENT = "compound.ie research (+https://compound.ie; contact: hello@compound.ie)"
+USER_AGENT = "compound.ie research (+https://compound.ie; contact: david@compound.ie)"
 
 
 @dataclass
@@ -116,7 +116,7 @@ IDCONV = "https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/"
 
 def pmc_to_pmid(pmcid: str) -> str:
     """PubMed Central full-text pages do not render for us; map the PMCID to its PubMed record."""
-    r = _get(IDCONV, {"ids": pmcid, "format": "json", "tool": "compound.ie", "email": "hello@compound.ie"})
+    r = _get(IDCONV, {"ids": pmcid, "format": "json", "tool": "compound.ie", "email": "david@compound.ie"})
     for rec in r.json().get("records", []):
         if rec.get("pmid"):
             return str(rec["pmid"])

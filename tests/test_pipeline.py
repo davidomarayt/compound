@@ -433,7 +433,7 @@ def test_ad_slots_render_only_when_configured(pipeline, settings):
     r = pipeline.run_scheduled("health")
     slug = pipeline.db.get_draft(r["draft_id"])["slug"]
     page = settings.public_dir / "health" / slug / "index.html"
-    assert "adsbygoogle" not in page.read_text(encoding="utf-8")
+    assert "adsbygoogle" not in page.read_text(encoding="utf-8") and "Privacy settings" not in page.read_text(encoding="utf-8")
     assert not (settings.public_dir / "ads.txt").exists()
 
     (settings.content_dir / "site.yml").write_text(
@@ -444,6 +444,7 @@ def test_ad_slots_render_only_when_configured(pipeline, settings):
     assert "adsbygoogle.js?client=ca-pub-123" in html
     assert html.count('data-ad-slot="111"') == 1 and 'data-ad-slot=""' not in html  # blank bottom slot not rendered
     assert 'data-ad-slot="333"' in (settings.public_dir / "health" / "index.html").read_text(encoding="utf-8")
+    assert "Privacy settings" in html  # consent-change link appears only once ads are configured
     assert (settings.public_dir / "ads.txt").read_text() == "google.com, pub-123, DIRECT, f08c47fec0942fa0\n"
     # previews never carry ads
     from compound.site.build import render_preview
@@ -463,3 +464,49 @@ def test_signup_form_hidden_until_configured(pipeline, settings):
     build_site(settings)
     html = home.read_text(encoding="utf-8")
     assert 'action="https://app.kit.com/forms/123/subscriptions"' in html and 'name="email_address"' in html
+
+
+def test_charts_are_verified_and_rendered(pipeline, settings):
+    from compound.llm import ArticleDraft, Chart, ChartItem, Figure, SourceRef
+    from compound.site.build import place_charts
+    from compound.verify import verify_charts, verify_figures
+
+    src = "https://www2.hse.ie/vitamin-d/"
+    text = "Children age 1 to 4 need 5 micrograms a day. People age 13 to 64 need 15 micrograms a day. Adults 65 and older need 15 micrograms every day."
+    draft = ArticleDraft(
+        headline="h", slug="h", summary="s",
+        body_markdown="Doses by age.\n\n[chart:1]\n\nMore text. 5 micrograms, 15 micrograms and 15 micrograms.",
+        figures=[
+            Figure(value="5 micrograms", label="1 to 4", source_url=src, quote="Children age 1 to 4 need 5 micrograms a day."),
+            Figure(value="15 micrograms", label="13 to 64", source_url=src, quote="People age 13 to 64 need 15 micrograms a day."),
+        ],
+        sources=[SourceRef(title="HSE", url=src)], tags=["x"], email_cta="c",
+        charts=[
+            Chart(kind="bar", title="HSE vitamin D dose by age", unit="micrograms", source_url=src, caption="Adults take three times the toddler dose.",
+                  items=[ChartItem(label="Age 1 to 4", value=5, text="5 micrograms"), ChartItem(label="Age 13 to 64", value=15, text="15 micrograms"),
+                         ChartItem(label="Age 65+", value=15, text="15 micrograms")]),
+            Chart(kind="bar", title="Made up", unit="", source_url=src, caption="",
+                  items=[ChartItem(label="a", value=1, text="1 microgram"), ChartItem(label="b", value=2, text="2 micrograms"), ChartItem(label="c", value=3, text="3 micrograms")]),
+            Chart(kind="line", title="Too few", unit="", source_url=src, caption="", items=[ChartItem(label="a", value=5, text="5 micrograms")]),
+        ],
+    )
+    ver = verify_figures(draft, "", {src: text})
+    kept, warnings = verify_charts(draft, ver)
+    assert [c["title"] for c in kept] == ["HSE vitamin D dose by age"]
+    assert len(warnings) == 2 and "not a verified figure" in warnings[0] and "need 3-12" in warnings[1]
+
+    html = place_charts("<p>Doses by age.</p>\n<p>[chart:1]</p>\n<p>More text.</p>", kept, "health")
+    assert "[chart:1]" not in html and html.count("<figure") == 1
+    assert 'fill="var(--health)"' in html and "<title>Age 65+: 15 micrograms</title>" in html
+    assert '<table class="chart-table">' in html and "Adults take three times" in html
+    # a chart the writer did not place is appended; stray placeholders vanish
+    assert place_charts("<p>x</p><p>[chart:1]</p><p>[chart:2]</p>", kept, "health").count("<figure") == 1
+
+
+def test_line_chart_renders(pipeline, settings):
+    from compound.site.build import chart_svg
+
+    svg = chart_svg({"kind": "line", "title": "t", "unit": "€", "items": [
+        {"label": "2022", "value": 500, "text": "€500"}, {"label": "2023", "value": 500, "text": "€500"},
+        {"label": "2024", "value": 750, "text": "€750"}, {"label": "2025", "value": 1000, "text": "€1,000"}]}, "wealth")
+    assert "<polyline" in svg and svg.count("<circle") == 4 and "€1,000" in svg and 'stroke="var(--wealth)"' in svg

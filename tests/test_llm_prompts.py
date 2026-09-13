@@ -8,7 +8,7 @@ def test_prompts_fill_without_breaking_on_braces():
     assert "{weird} {braces}" in p and "{n_questions}" not in p and "3 short" in p
     d = draft_prompt(kind="news", pillar="wealth", title="T", url="U", summary="S", source_text="src",
                      interview=[("Q?", "A.")], samples=["I write like this."], previous_draft="old", redraft_notes="tighter")
-    assert "I write like this." in d and "Q1: Q?" in d and "David: A." in d and "tighter" in d and "<previous>" in d
+    assert "I write like this." in d and "Q1: Q?" in d and "Owner: A." in d and "tighter" in d and "<previous>" in d
     assert "{" not in d.replace("{weird}", "")  # every placeholder replaced
 
 

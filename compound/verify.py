@@ -81,3 +81,28 @@ def unlisted_numbers(draft: ArticleDraft) -> list[str]:
         if tok not in found:
             found.append(tok)
     return found[:10]
+
+
+def verify_charts(draft: ArticleDraft, verification: list[dict]) -> tuple[list[dict], list[str]]:
+    """Keep only charts whose every value is a verified figure. Returns (charts to render, warnings)."""
+    ok_values = {_digits(_norm(v["value"])) for v in verification if v.get("ok") and _digits(_norm(v["value"]))}
+    sources = {s.url.strip() for s in draft.sources}
+    kept: list[dict] = []
+    warnings: list[str] = []
+    for i, c in enumerate(draft.charts, start=1):
+        problems = []
+        if c.kind not in {"bar", "line"}:
+            problems.append(f"unknown kind '{c.kind}'")
+        if not 3 <= len(c.items) <= 12:
+            problems.append(f"{len(c.items)} points (need 3-12)")
+        if c.source_url.strip() not in sources:
+            problems.append("source not in the sources list")
+        for it in c.items:
+            d = _digits(_norm(it.text))
+            if not d or d not in ok_values:
+                problems.append(f"value '{it.text}' is not a verified figure")
+        if problems:
+            warnings.append(f"chart {i} ({c.title}) dropped: " + "; ".join(problems[:3]))
+            continue
+        kept.append(c.model_dump())
+    return kept, warnings

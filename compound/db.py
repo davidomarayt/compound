@@ -124,7 +124,7 @@ class Database:
             if col not in have:
                 self.conn.execute(f"ALTER TABLE items ADD COLUMN {col} {typ}")
         have_d = {r["name"] for r in self.conn.execute("PRAGMA table_info(drafts)")}
-        for col, typ in (("meta_description", "TEXT NOT NULL DEFAULT ''"), ("editor_json", "TEXT")):
+        for col, typ in (("meta_description", "TEXT NOT NULL DEFAULT ''"), ("editor_json", "TEXT"), ("charts_json", "TEXT")):
             if col not in have_d:
                 self.conn.execute(f"ALTER TABLE drafts ADD COLUMN {col} {typ}")
         self.conn.commit()
@@ -194,7 +194,7 @@ class Database:
         self.conn.commit()
 
     def set_draft_field(self, draft_id: int, column: str, value) -> None:
-        assert column in {"meta_description", "editor_json"}
+        assert column in {"meta_description", "editor_json", "charts_json"}
         self.conn.execute(f"UPDATE drafts SET {column} = ? WHERE id = ?", (value, draft_id))
         self.conn.commit()
 

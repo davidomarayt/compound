@@ -6,6 +6,9 @@ Previews render to /preview/<token>/ with noindex and are never listed anywhere.
 from __future__ import annotations
 
 import json
+import math
+import re
+from html import escape as html_escape
 from urllib.parse import urlparse
 import re
 import shutil
@@ -19,12 +22,12 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from compound.config import Settings
 
-PILLARS = ["wealth", "health", "happiness"]
+PILLARS = ["health", "wealth", "happiness"]
 PILLAR_LABELS = {"wealth": "Wealth", "health": "Health", "happiness": "Happiness"}
 PILLAR_BLURBS = {
-    "wealth": "Irish grants, tax and money news, explained for the person paying.",
+    "wealth": "Irish tax credits, grants, pensions and money, explained for the person paying.",
     "health": "What the evidence actually says, without the hype.",
-    "happiness": "Slower pieces on living well, written between shifts.",
+    "happiness": "Slower pieces on living well: relationships, habits, attention, and what the research says.",
 }
 HERE = Path(__file__).parent
 FRONT_MATTER = re.compile(r"^---\s*\n(.*?)\n---\s*\n?", re.DOTALL)
@@ -43,8 +46,13 @@ class Article:
     figures: list[dict] = field(default_factory=list)
     email_cta: str = ""
     meta_description: str = ""
+    charts: list[dict] = field(default_factory=list)
     pinned: bool = False
     path: Path | None = None
+
+    @property
+    def body_with_charts(self) -> str:
+        return place_charts(self.body_html, self.charts, self.pillar)
 
     @property
     def description(self) -> str:
@@ -81,6 +89,126 @@ def render_markdown(text: str) -> str:
     return markdown.markdown(text, extensions=["extra", "sane_lists", "smarty"], output_format="html5")
 
 
+# --- charts: single-series inline SVG built only from verified figures ---------------------
+CHART_W = 640
+CHART_PLACEHOLDER = re.compile(r"<p>\s*\[chart:(\d+)\]\s*</p>|\[chart:(\d+)\]")
+
+
+def _nice_max(v: float) -> float:
+    if v <= 0:
+        return 1.0
+    mag = 10 ** math.floor(math.log10(v))
+    for m in (1, 2, 2.5, 5, 10):
+        if v <= m * mag:
+            return m * mag
+    return 10 * mag
+
+
+def _fmt(v: float) -> str:
+    return f"{v:,.0f}" if float(v).is_integer() else f"{v:,.1f}"
+
+
+def chart_svg(chart: dict, pillar: str) -> str:
+    """Bar (horizontal) or line chart as inline SVG. One series in the pillar colour; text in ink
+    tokens; hairline grid; value labelled selectively; a <title> per mark for hover."""
+    items = chart.get("items") or []
+    kind = chart.get("kind", "bar")
+    unit = html_escape(chart.get("unit") or "")
+    color = f"var(--{pillar})"
+    if kind == "line":
+        return _line_svg(items, color, unit)
+    return _bar_svg(items, color, unit)
+
+
+def _bar_svg(items: list[dict], color: str, unit: str) -> str:
+    row, bar_h, label_w, pad = 34, 20, 170, 8
+    vmax = _nice_max(max(float(i["value"]) for i in items))
+    plot_w = CHART_W - label_w - 90
+    h = row * len(items) + 12
+    top = max(range(len(items)), key=lambda k: float(items[k]["value"]))
+    out = [f'<svg class="chart-svg" viewBox="0 0 {CHART_W} {h}" width="100%" role="img" aria-hidden="true">']
+    for i, it in enumerate(items):
+        y = i * row + 6
+        w = max(2.0, plot_w * float(it["value"]) / vmax)
+        x0 = label_w
+        label = html_escape(str(it["label"]))
+        text = html_escape(str(it["text"]))
+        out.append(f'<text x="{label_w - pad}" y="{y + bar_h / 2 + 4}" text-anchor="end" class="chart-label">{label}</text>')
+        # square at the baseline, 4px rounded data-end
+        path = f"M{x0},{y} h{w - 4:.1f} a4,4 0 0 1 4,4 v{bar_h - 8} a4,4 0 0 1 -4,4 H{x0} z"
+        out.append(f'<path d="{path}" fill="{color}"><title>{label}: {text}</title></path>')
+        cls = "chart-value" + (" chart-value-strong" if i == top else "")
+        out.append(f'<text x="{x0 + w + pad}" y="{y + bar_h / 2 + 4}" class="{cls}">{text}</text>')
+    out.append("</svg>")
+    return "".join(out)
+
+
+def _line_svg(items: list[dict], color: str, unit: str) -> str:
+    w, h, left, right, top, bottom = CHART_W, 260, 56, 24, 18, 40
+    vals = [float(i["value"]) for i in items]
+    vmax = _nice_max(max(vals))
+    vmin = 0.0 if min(vals) >= 0 else min(vals)
+    n = len(items)
+    px = lambda k: left + (w - left - right) * (k / max(1, n - 1))
+    py = lambda v: top + (h - top - bottom) * (1 - (v - vmin) / (vmax - vmin or 1))
+    out = [f'<svg class="chart-svg" viewBox="0 0 {w} {h}" width="100%" role="img" aria-hidden="true">']
+    for g in range(5):  # hairline grid with clean ticks
+        v = vmin + (vmax - vmin) * g / 4
+        y = py(v)
+        out.append(f'<line x1="{left}" x2="{w - right}" y1="{y:.1f}" y2="{y:.1f}" class="chart-grid"/>')
+        out.append(f'<text x="{left - 8}" y="{y + 4:.1f}" text-anchor="end" class="chart-tick">{_fmt(v)}</text>')
+    pts = " ".join(f"{px(k):.1f},{py(v):.1f}" for k, v in enumerate(vals))
+    out.append(f'<polyline points="{pts}" fill="none" stroke="{color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>')
+    for k, it in enumerate(items):
+        label = html_escape(str(it["label"]))
+        text = html_escape(str(it["text"]))
+        out.append(f'<circle cx="{px(k):.1f}" cy="{py(vals[k]):.1f}" r="4" fill="{color}" stroke="var(--surface)" stroke-width="2"><title>{label}: {text}</title></circle>')
+        out.append(f'<text x="{px(k):.1f}" y="{h - 14}" text-anchor="middle" class="chart-tick">{label}</text>')
+    last = items[-1]
+    out.append(f'<text x="{px(n - 1) - 6:.1f}" y="{py(vals[-1]) - 10:.1f}" text-anchor="end" class="chart-value chart-value-strong">{html_escape(str(last["text"]))}</text>')
+    if unit:
+        out.append(f'<text x="{left - 8}" y="{top - 6}" text-anchor="end" class="chart-tick">{unit}</text>')
+    out.append("</svg>")
+    return "".join(out)
+
+
+def chart_figure(chart: dict, pillar: str) -> str:
+    """Figure with the SVG, a plain table for screen readers and print, caption and source."""
+    title = html_escape(chart.get("title") or "")
+    caption = html_escape(chart.get("caption") or "")
+    src = html_escape(chart.get("source_url") or "")
+    unit = html_escape(chart.get("unit") or "")
+    rows = "".join(f"<tr><th scope=\"row\">{html_escape(str(i['label']))}</th><td>{html_escape(str(i['text']))}</td></tr>" for i in chart.get("items") or [])
+    return (
+        f'<figure class="chart chart-{html_escape(chart.get("kind", "bar"))}">'
+        f'<figcaption class="chart-title">{title}{f" <span class=chart-unit>({unit})</span>" if unit else ""}</figcaption>'
+        f'<div class="chart-scroll">{chart_svg(chart, pillar)}</div>'
+        f'<table class="chart-table"><caption class="sr-only">{title}</caption><tbody>{rows}</tbody></table>'
+        f'<p class="chart-note">{caption}{" " if caption else ""}<a href="{src}" rel="noopener">Source</a></p>'
+        f"</figure>"
+    )
+
+
+def place_charts(body_html: str, charts: list[dict], pillar: str) -> str:
+    """Replace [chart:N] placeholders with rendered charts; append any the writer did not place."""
+    if not charts:
+        return CHART_PLACEHOLDER.sub("", body_html)
+    used: set[int] = set()
+
+    def sub(m):
+        n = int(m.group(1) or m.group(2))
+        if 1 <= n <= len(charts) and n not in used:
+            used.add(n)
+            return chart_figure(charts[n - 1], pillar)
+        return ""
+
+    out = CHART_PLACEHOLDER.sub(sub, body_html)
+    for n in range(1, len(charts) + 1):
+        if n not in used:
+            out += chart_figure(charts[n - 1], pillar)
+    return out
+
+
 def _as_date(v) -> date:
     if isinstance(v, datetime):
         return v.date()
@@ -110,6 +238,7 @@ def article_from_file(path: Path) -> Article | None:
         figures=list(meta.get("figures") or []),
         email_cta=str(meta.get("email_cta") or ""),
         meta_description=str(meta.get("meta_description") or ""),
+        charts=list(meta.get("charts") or []),
         pinned=bool(meta.get("pinned")),
         path=path,
     )
@@ -150,7 +279,7 @@ def article_jsonld(a: Article, site_url: str) -> str:
     data = {
         "@context": "https://schema.org", "@type": "Article", "headline": a.title, "description": a.description,
         "datePublished": a.date.isoformat(), "dateModified": a.date.isoformat(),
-        "author": {"@type": "Person", "name": "David O'Mara"},
+        "author": {"@type": "Organization", "name": "Compound", "url": site_url},
         "publisher": {"@type": "Organization", "name": "Compound", "url": site_url},
         "mainEntityOfPage": f"{site_url}{a.url}", "articleSection": PILLAR_LABELS.get(a.pillar, a.pillar),
         "keywords": ", ".join(a.tags),

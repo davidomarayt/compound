@@ -1,50 +1,153 @@
-:root{--wealth:#0f6b3a;--health:#1b5fa7;--happiness:#b8560f;--ink:#1a1a1a;--muted:#5c5c5c;--line:#e4e2dc;--bg:#faf9f6;--card:#fff}
+/* Compound — editorial design. Serif display, humanist body, three pillar columns.
+   Light and dark palettes; the pillar colours are the only accents. */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+  --bg:#f7f5f0;--surface:#fffdf9;--ink:#171a1f;--ink-2:#3a3f47;--muted:#6b7079;--line:#e6e1d7;--line-2:#d6d0c4;
+  --health:#0f6f8a;--health-soft:#e3f0f4;--wealth:#1f6b3f;--wealth-soft:#e4f0e8;--happiness:#b45f1d;--happiness-soft:#f6e9dd;
+  --accent:#171a1f;--radius:14px;--serif:"Fraunces",Georgia,"Times New Roman",serif;--sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --measure:68ch;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#131518;--surface:#1b1e23;--ink:#f1efe9;--ink-2:#d8d4cc;--muted:#9a9891;--line:#2a2e35;--line-2:#3a3f48;
+    --health:#6fc3dc;--health-soft:#15303a;--wealth:#7fd0a0;--wealth-soft:#17311f;--happiness:#f0a86a;--happiness-soft:#3b2716;--accent:#f1efe9}
+}
 *{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;font-size:17px}
-a{color:inherit}
-.site-header{padding:20px 16px 8px;text-align:center;border-bottom:1px solid var(--line);background:var(--card)}
-.wordmark{font-size:2rem;font-weight:800;letter-spacing:-.02em;text-decoration:none}
-.tagline{margin:2px 0 10px;color:var(--muted)}
-.pillar-nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
-.pill{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.8rem;font-weight:600;text-decoration:none;color:#fff;background:#666}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px;font-feature-settings:"kern","liga","calt"}
+a{color:inherit;text-decoration-color:var(--line-2);text-underline-offset:.16em}
+a:hover{text-decoration-color:currentColor}
+img{max-width:100%}
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.012em;line-height:1.15;margin:0}
+
+/* Header */
+.site-header{position:static;z-index:10;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line);padding:14px 20px 12px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px}
+.wordmark{grid-column:2;justify-self:center;font-family:var(--serif);font-size:1.9rem;font-weight:700;letter-spacing:-.02em;text-decoration:none;line-height:1}
+.tagline{display:none;grid-column:1/-1;grid-row:2;margin:6px 0 0;text-align:center;color:var(--muted);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
+.pillar-nav{grid-column:1/-1;grid-row:3;display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;margin-top:10px}
+.pillar-nav .pill{background:none;color:var(--ink-2);padding:4px 2px;font-size:.86rem;font-weight:500;letter-spacing:.02em;border-bottom:2px solid transparent;border-radius:0}
+.pillar-nav .pill::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;background:var(--line-2);vertical-align:1px}
+.pillar-nav .pill-health::before{background:var(--health)}.pillar-nav .pill-wealth::before{background:var(--wealth)}.pillar-nav .pill-happiness::before{background:var(--happiness)}
+.pillar-nav .pill:hover{border-bottom-color:currentColor}
+@media (min-width:860px){
+  .site-header{position:sticky;top:0;grid-template-columns:1fr auto 1fr;padding:16px 32px}
+  .tagline{display:block;grid-column:1;grid-row:1;justify-self:start;text-align:left;margin:0}
+  .pillar-nav{grid-column:3;grid-row:1;justify-self:end;margin:0}
+}
+
+/* Chips */
+.pill{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:#fff;background:#666}
 .pill-wealth{background:var(--wealth)}.pill-health{background:var(--health)}.pill-happiness{background:var(--happiness)}.pill-plain{background:#444}
-.site-main{max-width:1100px;margin:0 auto;padding:16px}
-.site-footer{border-top:1px solid var(--line);padding:24px 16px 40px;text-align:center;color:var(--muted);font-size:.85rem}
-.signup{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin:8px 0 20px}
-.signup h2{margin:0 0 6px;font-size:1.2rem}.signup p{margin:0 0 12px;color:var(--muted)}
-.signup-form{display:flex;flex-wrap:wrap;gap:8px}
-.signup-form input[type=email]{flex:1 1 220px;padding:12px;font-size:1rem;border:1px solid #bbb;border-radius:8px}
-.signup-form button{padding:12px 18px;font-size:1rem;border:0;border-radius:8px;background:var(--ink);color:#fff;font-weight:600}
-.consent{flex-basis:100%;display:flex;gap:8px;align-items:flex-start;font-size:.85rem;color:var(--muted)}
+.card .pill,.article .meta .pill{color:var(--ink);background:var(--line)}
+.card .pill-health,.article .meta .pill-health{background:var(--health-soft);color:var(--health)}
+.card .pill-wealth,.article .meta .pill-wealth{background:var(--wealth-soft);color:var(--wealth)}
+.card .pill-happiness,.article .meta .pill-happiness{background:var(--happiness-soft);color:var(--happiness)}
+@media (prefers-color-scheme:dark){.card .pill-health,.article .meta .pill-health,.card .pill-wealth,.article .meta .pill-wealth,.card .pill-happiness,.article .meta .pill-happiness{color:var(--ink)}}
+
+/* Layout */
+.site-main{max-width:1180px;margin:0 auto;padding:28px 20px 48px}
+@media (min-width:860px){.site-main{padding:44px 32px 72px}}
+.site-footer{border-top:1px solid var(--line);padding:32px 20px 56px;text-align:center;color:var(--muted);font-size:.84rem}
+.site-footer nav{margin-bottom:10px}
+.site-footer a{text-decoration:none;color:var(--ink-2)}
+.site-footer a:hover{text-decoration:underline}
+
+/* Home: hero + three columns */
+.hero{text-align:center;max-width:760px;margin:6px auto 40px}
+.hero h1{font-size:clamp(2rem,4.6vw,3.4rem);font-weight:500;letter-spacing:-.02em}
+.hero p{color:var(--muted);font-size:1.08rem;margin:14px auto 0;max-width:56ch}
+.columns{display:grid;grid-template-columns:1fr;gap:34px}
+@media (min-width:860px){.columns{grid-template-columns:repeat(3,1fr);gap:40px}.column-health{order:1}.column-wealth{order:2}.column-happiness{order:3}}
+.column{border-top:3px solid var(--line-2);padding-top:16px}
+.column-health{border-top-color:var(--health)}.column-wealth{border-top-color:var(--wealth)}.column-happiness{border-top-color:var(--happiness)}
+.column h2{font-family:var(--sans);font-size:.8rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin:0 0 6px}
+.column h2 a{text-decoration:none}
+.column-health h2 a{color:var(--health)}.column-wealth h2 a{color:var(--wealth)}.column-happiness h2 a{color:var(--happiness)}
+.blurb{color:var(--muted);margin:0 0 18px;font-size:.95rem;line-height:1.5}
+
+/* Cards: hairline list, first card featured */
+.card{padding:18px 0;border-top:1px solid var(--line);background:none;border-radius:0;margin:0}
+.card:first-of-type{border-top:0;padding-top:4px}
+.column .card:first-of-type h3,.pinned .card h3{font-size:1.5rem;font-weight:600}
+.card h3{font-size:1.15rem;line-height:1.28;margin:0 0 8px;transition:color .15s}
+.card a{text-decoration:none}
+.card a:hover h3{color:var(--muted)}
+.card .meta,.article .meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:.78rem;color:var(--muted);margin:0 0 8px}
+.card .summary{margin:0;color:var(--ink-2);font-size:.95rem;line-height:1.55}
+.pinned{margin-bottom:6px}
+.pinned-label{display:block;font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin-bottom:6px}
+.empty{color:var(--muted);font-style:italic}
+.list{max-width:760px}
+.list .card:first-of-type{padding-top:0}
+
+/* Pillar / tag / search pages */
+.pillar-title{font-size:clamp(2rem,4vw,2.8rem);margin:0 0 8px;background:none;color:var(--ink);padding:0;border-radius:0;letter-spacing:-.02em;text-transform:none;font-weight:600}
+.pillar-title.pill-health{color:var(--health)}.pillar-title.pill-wealth{color:var(--wealth)}.pillar-title.pill-happiness{color:var(--happiness)}
+.site-main>h1{font-size:2rem;margin-bottom:18px}
+.search-form input{width:100%;max-width:760px;padding:14px 16px;font-size:1.05rem;font-family:var(--sans);border:1px solid var(--line-2);border-radius:var(--radius);margin-bottom:22px;background:var(--surface);color:var(--ink)}
+
+/* Article */
+.article{max-width:var(--measure);margin:0 auto}
+.article .meta{margin-bottom:14px}
+.article h1{font-size:clamp(2rem,4.4vw,3rem);font-weight:600;margin:0 0 16px}
+.standfirst{font-family:var(--serif);font-weight:400;font-size:1.28rem;line-height:1.45;color:var(--ink-2);margin:0 0 26px}
+.article .body{font-size:1.06rem;line-height:1.72}
+.article .body p{margin:0 0 1.25em}
+.article .body h2{font-size:1.55rem;margin:2em 0 .6em;font-weight:600}
+.article .body h3{font-size:1.2rem;margin:1.6em 0 .5em}
+.article .body ul,.article .body ol{padding-left:1.3em;margin:0 0 1.25em}
+.article .body li{margin-bottom:.4em}
+.article .body a{text-decoration:underline;text-decoration-color:var(--line-2);text-decoration-thickness:1px}
+.article .body a:hover{text-decoration-color:currentColor}
+.article .body strong{font-weight:600}
+.article .body table{width:100%;border-collapse:collapse;margin:1.2em 0 1.6em;font-size:.95rem;line-height:1.45}
+.article .body th,.article .body td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}
+.article .body th{font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:600;border-bottom:1px solid var(--line-2)}
+.article .body tr:last-child td{border-bottom:1px solid var(--line-2)}
+.article .body td:first-child{font-weight:500}
+@media (max-width:600px){.article .body table{display:block;overflow-x:auto}}
+.article .body blockquote{margin:1.4em 0;padding:.2em 0 .2em 1.1em;border-left:3px solid var(--line-2);color:var(--ink-2);font-family:var(--serif);font-size:1.12rem}
+.sources{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;margin:34px 0 0;font-size:.9rem}
+.sources h2{font-family:var(--sans);margin:0 0 8px;font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);font-weight:600}
+.sources ol,.sources ul{margin:0;padding-left:20px}.sources li{margin-bottom:5px}
+.figures{margin:30px 0;font-size:.9rem;border-top:1px solid var(--line);padding-top:14px}
+.figures summary{cursor:pointer;font-weight:500;color:var(--ink-2)}
+.figures table{width:100%;border-collapse:collapse;margin-top:12px}
+.figures td,.figures th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+.figures th{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:600}
+.tags{margin-top:22px}.tags a{text-decoration:none;color:var(--muted);margin-right:10px;font-size:.88rem}
+.tags a:hover{color:var(--ink)}
+.related{max-width:var(--measure);margin:52px auto 0;border-top:1px solid var(--line);padding-top:22px}
+.related h2{font-family:var(--sans);font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);font-weight:600;margin-bottom:6px}
+.preview-banner{max-width:var(--measure);margin:0 auto 18px;background:#fff3cd;color:#5a4400;border:1px solid #ecd48a;padding:10px 14px;border-radius:10px;font-weight:600;font-size:.9rem}
+
+/* Signup */
+.signup{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin:28px auto}
+.signup.hero{max-width:760px;text-align:center;margin:0 auto 44px}
+.signup.inline{max-width:var(--measure);margin:36px auto 0}
+.signup h2{margin:0 0 6px;font-size:1.35rem}.signup p{margin:0 0 14px;color:var(--muted)}
+.signup-form{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.signup-form input[type=email]{flex:1 1 240px;padding:13px 14px;font-size:1rem;font-family:var(--sans);border:1px solid var(--line-2);border-radius:10px;background:var(--bg);color:var(--ink)}
+.signup-form button{padding:13px 20px;font-size:.95rem;font-family:var(--sans);border:0;border-radius:10px;background:var(--accent);color:var(--bg);font-weight:600;cursor:pointer}
+.consent{flex-basis:100%;display:flex;gap:8px;align-items:flex-start;font-size:.82rem;color:var(--muted);text-align:left}
 .consent input{margin-top:4px}
 .sr-only{position:absolute;left:-9999px}
-.columns{display:grid;grid-template-columns:1fr;gap:20px}
-.column h2{margin:0 0 2px;font-size:1.4rem}.column h2 a{text-decoration:none}
-.column-wealth h2 a{color:var(--wealth)}.column-health h2 a{color:var(--health)}.column-happiness h2 a{color:var(--happiness)}
-.column-wealth{order:1}.column-health{order:2}.column-happiness{order:3}
-.blurb{color:var(--muted);margin:0 0 12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;margin-bottom:10px}
-.card h3{margin:0 0 6px;font-size:1.05rem;line-height:1.3}.card a{text-decoration:none}
-.card .meta,.article .meta{font-size:.8rem;color:var(--muted);margin:0 0 6px}
-.card .summary{margin:0;color:#333;font-size:.95rem}
-.pinned{border-left:4px solid var(--ink);padding-left:10px;margin-bottom:12px}
-.pinned-label{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
-.empty{color:var(--muted)}
-.article h1{font-size:1.9rem;line-height:1.2;margin:6px 0 10px;letter-spacing:-.01em}
-.standfirst{font-size:1.15rem;color:#333;margin:0 0 16px}
-.article .body{max-width:720px}
-.article .body p{margin:0 0 1em}.article .body h2{font-size:1.3rem;margin:1.4em 0 .5em}
-.sources{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:0 0 18px;font-size:.9rem;max-width:720px}
-.sources h2{margin:0 0 6px;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
-.sources ul{margin:0;padding-left:18px}
-.figures{max-width:720px;margin:18px 0;font-size:.9rem}
-.figures table{width:100%;border-collapse:collapse;margin-top:8px}.figures td,.figures th{border-bottom:1px solid var(--line);padding:6px;text-align:left;vertical-align:top}
-.tags a{text-decoration:none;color:var(--muted);margin-right:8px}
-.preview-banner{background:#ffefc2;border:1px solid #e3c26a;padding:10px 14px;border-radius:8px;margin-bottom:14px;font-weight:600}
-.search-form input{width:100%;padding:12px;font-size:1.05rem;border:1px solid #bbb;border-radius:8px;margin-bottom:16px}
-.related h2{font-size:1.2rem}
-@media (min-width:860px){.columns{grid-template-columns:repeat(3,1fr)}.column-health{order:1}.column-wealth{order:2}.column-happiness{order:3}.site-main{padding:24px}}
 
-/* Ad slots: rendered only when content/site.yml has an AdSense client and slot id. */
-.ad { margin: 1.5rem 0; min-height: 90px; }
-.ad ins { width: 100%; }
+/* Ads: rendered only when content/site.yml has an AdSense client and slot id. */
+.ad{margin:1.75rem auto;min-height:90px;max-width:var(--measure)}
+.ad ins{width:100%}
+
+/* Charts: single series in the pillar colour; text in ink tokens; table view below. */
+.chart{margin:1.6em 0 2em;padding:18px 18px 12px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+.chart-title{font-family:var(--sans);font-weight:600;font-size:.95rem;margin:0 0 10px;color:var(--ink)}
+.chart-unit{font-weight:400;color:var(--muted)}
+.chart-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.chart-svg{display:block;width:100%;min-width:540px;height:auto;font-family:var(--sans)}
+.chart-label,.chart-tick{fill:var(--muted);font-size:12px}
+.chart-value{fill:var(--ink-2);font-size:12px}
+.chart-value-strong{fill:var(--ink);font-weight:600}
+.chart-grid{stroke:var(--line);stroke-width:1}
+.chart-table{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.chart-note{margin:10px 0 0;font-size:.82rem;color:var(--muted)}
+.chart-note a{color:var(--muted)}
+@media print{.chart-svg{display:none}.chart-table{position:static;width:100%;height:auto;font-size:.9rem}.chart-table th,.chart-table td{text-align:left;padding:4px 8px;border-bottom:1px solid var(--line)}}

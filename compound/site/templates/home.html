@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% block head_title %}Compound · Three pillars to compound your life{% endblock %}
 {% block content %}
+<section class="hero">
+  <h1>Three pillars to compound your life.</h1>
+  <p>Plain, sourced writing on health, money and happiness for people in Ireland. Every figure checked against where it came from.</p>
+</section>
 {% with variant="hero" %}{% include "_signup.html" %}{% endwith %}
 <div class="columns">
   {% for p in pillars %}
