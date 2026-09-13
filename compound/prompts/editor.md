@@ -9,6 +9,7 @@ Check, in this order:
 2. Honesty: no invented mechanisms, no health advice beyond what the sources support, no legal or tax certainty the sources do not give. Says clearly who the piece does NOT apply to.
 3. Usefulness: answers the target query and the planned questions directly, early, in plain Irish-context English; tells the reader what to do.
 4. Writing: short paragraphs, no filler intros, no rhetorical-question openers, none of the banned phrases ("delve", "in today's fast-paced world", "game-changer", "unlock", "navigate", "it's not X, it's Y"). Subheadings are the planned questions or close to them.
+4b. Plain terms: every abbreviation, acronym, named diet, scheme, form, scale, drug class or protocol is spelled out and explained in plain words the first time it appears (e.g. "the DASH diet (Dietary Approaches to Stop Hypertension: an eating pattern built around ...)"). A term used without that explanation is a must_fix; quote it.
 5. Safety: nothing that could harm a reader who follows it (medication doses, stopping treatment, tax positions that could attract penalties). If a sentence needs a "talk to your GP / accountant" line, it has one.
 
 Return:
