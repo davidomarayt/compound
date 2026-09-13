@@ -484,13 +484,21 @@ class ClaudeCodeLLM(ClaudeLLM):
         except OSError as e:
             raise LLMError(f"Could not run Claude Code: {e}") from e
         out = (r.stdout or "").strip()
+        data = None
+        if out:
+            try:
+                data = json.loads(out)
+            except json.JSONDecodeError:
+                data = None
         if r.returncode != 0 or not out:
-            err = (r.stderr or out or "").strip()
-            raise LLMError(f"Claude Code failed (exit {r.returncode}): {err[:400] or 'no output'}")
-        try:
-            data = json.loads(out)
-        except json.JSONDecodeError as e:
-            raise LLMError(f"Claude Code returned non-JSON output: {out[:200]}") from e
+            # Prefer Claude Code's own message (usage limit, auth, network) over the raw envelope.
+            reason = ""
+            if isinstance(data, dict):
+                reason = str(data.get("result") or data.get("error") or data.get("subtype") or "")
+            reason = reason or (r.stderr or "").strip() or (out[:200] if out else "no output")
+            raise LLMError(f"Claude Code failed (exit {r.returncode}): {reason[:400]}")
+        if data is None:
+            raise LLMError(f"Claude Code returned non-JSON output: {out[:200]}")
         if data.get("is_error"):
             raise LLMError(f"Claude Code error: {str(data.get('result') or data.get('subtype') or data)[:400]}")
         structured = data.get("structured_output")

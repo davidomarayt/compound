@@ -69,6 +69,7 @@ def test_model_flag_and_result_string_fallback(monkeypatch):
 
 @pytest.mark.parametrize("resp, needle", [
     (R("", returncode=1, stderr="Not logged in. Run `claude` to log in."), "Not logged in"),
+    (R(json.dumps({"is_error": True, "result": "You've hit your usage limit. Resets 3pm.", "usage": {"input_tokens": 0}}), returncode=1), "usage limit"),
     (R(json.dumps({"is_error": True, "result": "You've hit your usage limit"}), 0), "usage limit"),
     (R("not json"), "non-JSON"),
     (R(json.dumps({"result": "plain prose, no schema"}), 0), "no structured output"),
