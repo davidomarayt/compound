@@ -17,13 +17,13 @@
   <h1>{{ article.title }}</h1>
   {% if article.summary %}<p class="standfirst">{{ article.summary }}</p>{% endif %}
   {% if not preview %}{% with slot=adsense.slots.article_top, name="article-top" %}{% include "_ad.html" %}{% endwith %}{% endif %}
+  <div class="body">{{ article.body_html|safe }}</div>
   {% if article.sources %}
   <aside class="sources">
     <h2>Sources</h2>
-    <ul>{% for s in article.sources %}<li><a href="{{ s.url }}" rel="noopener">{{ s.title or s.url }}</a></li>{% endfor %}</ul>
+    <ol>{% for s in article.sources %}<li><a href="{{ s.url }}" rel="noopener">{{ s.title or s.url }}</a></li>{% endfor %}</ol>
   </aside>
   {% endif %}
-  <div class="body">{{ article.body_html|safe }}</div>
   {% if not preview %}{% with slot=adsense.slots.article_bottom, name="article-bottom" %}{% include "_ad.html" %}{% endwith %}{% endif %}
   {% with variant="inline", heading="Don't miss the deadline", blurb=(article.email_cta or none) %}{% include "_signup.html" %}{% endwith %}
   {% if article.figures %}

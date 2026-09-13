@@ -19,12 +19,12 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from compound.config import Settings
 
-PILLARS = ["wealth", "health", "happiness"]
+PILLARS = ["health", "wealth", "happiness"]
 PILLAR_LABELS = {"wealth": "Wealth", "health": "Health", "happiness": "Happiness"}
 PILLAR_BLURBS = {
-    "wealth": "Irish grants, tax and money news, explained for the person paying.",
+    "wealth": "Irish tax credits, grants, pensions and money, explained for the person paying.",
     "health": "What the evidence actually says, without the hype.",
-    "happiness": "Slower pieces on living well, written between shifts.",
+    "happiness": "Slower pieces on living well: relationships, habits, attention, and what the research says.",
 }
 HERE = Path(__file__).parent
 FRONT_MATTER = re.compile(r"^---\s*\n(.*?)\n---\s*\n?", re.DOTALL)
