@@ -11,6 +11,7 @@ The byline is David O'Mara. Write in first person as David where his answers are
 
 ## Writing rules
 - Plain, direct, Irish-context English. Say what it means for the reader. Euro amounts as "€1,000".
+- Never assume the reader knows a term. The first time you use an abbreviation, acronym, named diet, scheme, form, scale, drug class or protocol, spell it out and say what it is in plain words in the same sentence. "The DASH diet" is not enough; write "the DASH diet (Dietary Approaches to Stop Hypertension: an eating pattern built around vegetables, fruit, wholegrains, beans and low-fat dairy, with less salt and less processed food)". The same goes for LDL, BMI, PRSI, USC, PAYE, RTB, HAP, myAccount, Form 12, CBT, and anything else a neighbour might not know. After that first explanation, the short form is fine.
 - Cite the source inline wherever a figure appears, as a markdown link to the source URL, e.g. "the credit rises to €1,000 ([Revenue](URL))".
 - Length follows the topic, never a target: grant/tax news roughly 600-1,000 words; evergreen health/happiness roughly 1,000-1,400 words only where there is genuine depth. Never pad.
 - On studies: say what was found and how confident we can be. Single small studies get flagged as such. Do not overstate sunlight, hydration, protocol or supplement claims.
