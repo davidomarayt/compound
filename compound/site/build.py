@@ -150,7 +150,7 @@ def article_jsonld(a: Article, site_url: str) -> str:
     data = {
         "@context": "https://schema.org", "@type": "Article", "headline": a.title, "description": a.description,
         "datePublished": a.date.isoformat(), "dateModified": a.date.isoformat(),
-        "author": {"@type": "Person", "name": "David O'Mara"},
+        "author": {"@type": "Organization", "name": "Compound", "url": site_url},
         "publisher": {"@type": "Organization", "name": "Compound", "url": site_url},
         "mainEntityOfPage": f"{site_url}{a.url}", "articleSection": PILLAR_LABELS.get(a.pillar, a.pillar),
         "keywords": ", ".join(a.tags),

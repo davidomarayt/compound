@@ -8,7 +8,7 @@ from html.parser import HTMLParser
 
 import httpx
 
-USER_AGENT = "compound.ie poller (+https://compound.ie; contact: hello@compound.ie)"
+USER_AGENT = "compound.ie poller (+https://compound.ie; contact: david@compound.ie)"
 TIMEOUT = 45.0
 
 

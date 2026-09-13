@@ -180,7 +180,7 @@ def style_block(samples: list[str]) -> str:
     if not samples:
         return "## Voice\nNo voice samples supplied yet. Write plainly and directly; avoid corporate tone."
     joined = "\n".join(f"- {s}" for s in samples)
-    return "## Voice\nThese are sentences David has written. Match this register, rhythm and directness:\n" + joined
+    return "## Voice\nThese are sentences the site's owner has written. Match this register, rhythm and directness:\n" + joined
 
 
 def interview_block(interview: list[tuple[str, str]]) -> str:
@@ -192,7 +192,7 @@ def interview_block(interview: list[tuple[str, str]]) -> str:
     parts = []
     for i, (q, a) in enumerate(interview, start=1):
         a = a.strip() or "(no answer)"
-        parts.append(f"Q{i}: {q}\nDavid: {a}")
+        parts.append(f"Q{i}: {q}\nOwner: {a}")
     return "\n\n".join(parts)
 
 
@@ -271,9 +271,9 @@ def draft_prompt(
     seo_block = f"## Search intent\n{seo.strip()}\n" if seo.strip() else ""
     redraft = ""
     if previous_draft or redraft_notes:
-        redraft = "## Redraft\nDavid reviewed the previous draft and asked for changes. Apply them.\n"
+        redraft = "## Redraft\nThe editor reviewed the previous draft and asked for changes. Apply them.\n"
         if redraft_notes:
-            redraft += f"David's notes: {redraft_notes}\n"
+            redraft += f"Notes: {redraft_notes}\n"
         if previous_draft:
             redraft += f"\nPrevious draft:\n<previous>\n{previous_draft}\n</previous>"
     return _fill(
@@ -606,7 +606,7 @@ class FakeLLM:
             quote = source_text[start : end if end != -1 else None].strip()
         body = (
             f"Revenue has published an update: {title}. The headline figure is {value} ([source]({url})).\n\n"
-            f"## What David says\n\n{answers}\n\n"
+            f"## What the owner says\n\n{answers}\n\n"
             f"{'Redrafted with notes: ' + redraft_notes if redraft_notes else ''}"
         ).strip()
         return ArticleDraft(

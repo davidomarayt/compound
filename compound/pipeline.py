@@ -143,7 +143,7 @@ class Pipeline:
                 by_q.setdefault(int(a["question_id"]), []).append(a["text"])
         out = [(q["text"], " ".join(by_q.get(int(q["id"]), []))) for q in self.db.questions_for(item_id)]
         if extras:
-            out.append(("Anything else David added:", " ".join(extras)))
+            out.append(("Anything else the owner added:", " ".join(extras)))
         return out
 
     # -- drafting ----------------------------------------------------------
