@@ -9,7 +9,7 @@ Article being planned:
 {questions}
 
 How to research:
-1. Search widely first, then read deeply. Use web search to find candidate sources, then fetch and read the ones that matter. Aim to read 8-15 sources; more if the questions demand it.
+1. Search widely first, then read deeply. Use web search to find candidate sources, then fetch and read the ones that matter. Aim to read 6-10 sources; more only if the questions demand it. Stop once every question has a strong source.
 2. Prefer, in this order: systematic reviews and meta-analyses (Cochrane, PubMed), large randomised trials, official Irish guidance and statistics (HSE, Revenue, Citizens Information, gov.ie, CSO, Central Bank, Pensions Authority, MABS, CCPC, ESRI), then WHO / NHS / NICE / OECD. Avoid blogs, news write-ups of studies, and commercial sites; if you use one for context, do not draw figures from it.
 3. For PubMed studies, record the PMID (the number in the pubmed.ncbi.nlm.nih.gov URL). The pipeline fetches abstracts by PMID, so a correct PMID is worth more than a summary.
 4. For every figure, threshold, date, amount, rate or study result you report, copy the exact sentence from the source into `quote`. Do not paraphrase quotes. If you cannot find the exact sentence, do not report the figure.
