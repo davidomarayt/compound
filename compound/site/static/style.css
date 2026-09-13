@@ -136,3 +136,18 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.012em;line-he
 /* Ads: rendered only when content/site.yml has an AdSense client and slot id. */
 .ad{margin:1.75rem auto;min-height:90px;max-width:var(--measure)}
 .ad ins{width:100%}
+
+/* Charts: single series in the pillar colour; text in ink tokens; table view below. */
+.chart{margin:1.6em 0 2em;padding:18px 18px 12px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+.chart-title{font-family:var(--sans);font-weight:600;font-size:.95rem;margin:0 0 10px;color:var(--ink)}
+.chart-unit{font-weight:400;color:var(--muted)}
+.chart-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.chart-svg{display:block;width:100%;min-width:540px;height:auto;font-family:var(--sans)}
+.chart-label,.chart-tick{fill:var(--muted);font-size:12px}
+.chart-value{fill:var(--ink-2);font-size:12px}
+.chart-value-strong{fill:var(--ink);font-weight:600}
+.chart-grid{stroke:var(--line);stroke-width:1}
+.chart-table{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.chart-note{margin:10px 0 0;font-size:.82rem;color:var(--muted)}
+.chart-note a{color:var(--muted)}
+@media print{.chart-svg{display:none}.chart-table{position:static;width:100%;height:auto;font-size:.9rem}.chart-table th,.chart-table td{text-align:left;padding:4px 8px;border-bottom:1px solid var(--line)}}

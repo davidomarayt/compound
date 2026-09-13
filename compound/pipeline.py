@@ -28,7 +28,7 @@ from compound.research import ResearchPack, build_pack, suggestions
 from compound.poller import load_source_text
 from compound.site.build import Article, build_site, remove_preview, render_markdown, render_preview
 from compound.sources import Source
-from compound.verify import unlisted_numbers, verify_figures
+from compound.verify import unlisted_numbers, verify_charts, verify_figures
 
 log = logging.getLogger(__name__)
 N_QUESTIONS = 3
@@ -172,6 +172,9 @@ class Pipeline:
         page_texts = pack.page_texts()
         page_texts.update(self.fetch_cited_pages(draft, item["url"] or "", skip=set(page_texts)))
         verification = verify_figures(draft, source_text, page_texts)
+        charts, chart_warnings = verify_charts(draft, verification)
+        for w in chart_warnings:
+            log.warning("draft chart dropped: %s", w)
         token = secrets.token_urlsafe(12)
         draft_id = self.db.add_draft(
             item_id=item_id, headline=draft.headline, slug=draft.slug, summary=draft.summary,
@@ -179,6 +182,8 @@ class Pipeline:
             sources=[s.model_dump() for s in draft.sources], tags=draft.tags, email_cta=draft.email_cta,
             verification=verification, preview_token=token, redraft_notes=redraft_notes,
         )
+        if charts:
+            self.db.set_draft_field(draft_id, "charts_json", json.dumps(charts, ensure_ascii=False))
         if draft.meta_description or (plan and plan.meta_description):
             self.db.set_draft_field(draft_id, "meta_description", (draft.meta_description or plan.meta_description).strip()[:160])
         if previous is not None:
@@ -196,6 +201,7 @@ class Pipeline:
             summary=d["summary"], body_html=render_markdown(d["body_md"]), tags=loads_list(d["tags_json"]),
             sources=loads_list(d["sources_json"]), figures=loads_list(d["figures_json"]), email_cta=d["email_cta"],
             meta_description=(d["meta_description"] if "meta_description" in d.keys() else "") or "",
+            charts=loads_list(d["charts_json"]) if "charts_json" in d.keys() and d["charts_json"] else [],
         )
 
     MAX_CITED_PAGES = 6
@@ -500,6 +506,7 @@ class Pipeline:
             "summary": d["summary"], "tags": loads_list(d["tags_json"]), "sources": loads_list(d["sources_json"]),
             "figures": loads_list(d["figures_json"]), "email_cta": d["email_cta"],
             "meta_description": (d["meta_description"] if "meta_description" in d.keys() else "") or "",
+            "charts": loads_list(d["charts_json"]) if "charts_json" in d.keys() and d["charts_json"] else [],
             "item_id": item["id"], "draft_id": d["id"], "approved_by": approved_by,
         }
         front = yaml.safe_dump(meta, allow_unicode=True, sort_keys=False, width=1000)

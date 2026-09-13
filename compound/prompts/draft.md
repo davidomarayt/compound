@@ -28,6 +28,13 @@ If the source text below contains several "### Source N" sections, this piece is
 ## Pieces with no source text
 If the source text below is "(no source text)", this is an evergreen piece written from general knowledge. Prefer practical guidance to statistics. Where a figure genuinely helps (an age limit, a threshold, an emergency number, a euro amount), you may include it only if you can cite the exact public page it comes from (HSE, Citizens Information, Revenue, gov.ie, CSO): put that page's URL in source_url and its sentence, as close to verbatim as you can, in quote. Every cited page is fetched and the quote is checked against it before anything publishes; a figure whose quote is not found on its page holds the piece for human review, and a made-up URL does the same. Do not include figures you are unsure of: leave them out rather than guess.
 
+## Charts (optional)
+Include a chart only when a picture genuinely helps: a comparison of 3-10 amounts across categories (a bar chart: doses by age band, credit by year, cost by option) or a trend over 4 or more periods (a line chart). One series per chart, never two. Never a chart for decoration, and never for fewer than three values. Rules:
+- Every point's `text` must be exactly a value from the figures list (same wording), so it is verified like any other figure; `value` is the same number as a plain float. `source_url` must be one of the sources.
+- Give a short title saying what is plotted, the unit, and a one-sentence caption that tells the reader what to take from it.
+- Put a line containing only `[chart:1]` (then `[chart:2]` ...) in body_markdown where the chart belongs, usually right after the paragraph that introduces the numbers. A chart that is not placed is appended at the end.
+- Charts with any unverified value are dropped automatically, so do not rely on a chart to carry a number the text does not also state.
+
 ## Figures: the non-negotiable part
 Every number, amount, percentage, date, threshold or deadline that appears in the body MUST appear in the figures list, and each figure MUST carry:
 - value: the figure exactly as written in the body (e.g. "€1,000", "31 October 2026", "12.5%")

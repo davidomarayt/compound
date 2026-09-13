@@ -106,6 +106,21 @@ class SourceRef(BaseModel):
     url: str
 
 
+class ChartItem(BaseModel):
+    label: str = Field(description="Short category or period label, e.g. 'Age 65+' or '2024'")
+    value: float = Field(description="The number to plot, as a plain number")
+    text: str = Field(description="The value exactly as it appears in the figures list, e.g. '€1,000' or '15 micrograms'")
+
+
+class Chart(BaseModel):
+    kind: str = Field(description="bar (compare categories) or line (trend over time)")
+    title: str = Field(description="What is plotted, plain, under 70 chars")
+    unit: str = Field(default="", description="Unit shown on the axis, e.g. '€', 'micrograms', '%'")
+    items: list[ChartItem] = Field(description="3-10 points, single series")
+    source_url: str = Field(description="One of the sources listed; where every value comes from")
+    caption: str = Field(default="", description="One plain sentence under the chart")
+
+
 class ArticleDraft(BaseModel):
     headline: str
     slug: str
@@ -116,6 +131,7 @@ class ArticleDraft(BaseModel):
     sources: list[SourceRef]
     tags: list[str]
     email_cta: str
+    charts: list[Chart] = Field(default_factory=list, description="Optional; only when a picture of the numbers helps")
 
 
 # --- interface --------------------------------------------------------------
