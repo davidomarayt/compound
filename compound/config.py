@@ -44,6 +44,9 @@ class Settings:
     deep_research: bool  # claude-code only: a research phase with web search before drafting
     research_effort: str
     claude_code_research_tools: str
+    claude_code_research_model: str  # '' = same as CLAUDE_CODE_MODEL; e.g. sonnet to save allowance
+    claude_code_editor_model: str
+    editor_effort: str
     fake_llm: bool
     stt_provider: str
     stt_api_key: str
@@ -84,8 +87,11 @@ def load_settings() -> Settings:
         anthropic_model=_env("ANTHROPIC_MODEL", "claude-opus-5"),
         draft_effort=(_env("DRAFT_EFFORT", "high").lower() if _env("DRAFT_EFFORT", "high").lower() in _EFFORTS else "high"),
         deep_research=_env("DEEP_RESEARCH", "1") not in {"0", "false", "no"},
-        research_effort=(_env("RESEARCH_EFFORT", "high").lower() if _env("RESEARCH_EFFORT", "high").lower() in _EFFORTS else "high"),
+        research_effort=(_env("RESEARCH_EFFORT", "medium").lower() if _env("RESEARCH_EFFORT", "medium").lower() in _EFFORTS else "medium"),
         claude_code_research_tools=_env("CLAUDE_CODE_RESEARCH_TOOLS", "WebSearch,WebFetch"),
+        claude_code_research_model=_env("CLAUDE_CODE_RESEARCH_MODEL"),
+        claude_code_editor_model=_env("CLAUDE_CODE_EDITOR_MODEL"),
+        editor_effort=(_env("EDITOR_EFFORT", "medium").lower() if _env("EDITOR_EFFORT", "medium").lower() in _EFFORTS else "medium"),
         fake_llm=_env("COMPOUND_FAKE_LLM", "0") in {"1", "true", "yes"},
         stt_provider=_env("STT_PROVIDER", "none").lower(),
         stt_api_key=_env("STT_API_KEY"),

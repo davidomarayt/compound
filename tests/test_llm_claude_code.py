@@ -101,7 +101,7 @@ def test_research_call_gets_search_tools_and_long_timeout(monkeypatch):
     from compound.llm import ResearchReport, TopicPlan
 
     monkeypatch.setattr("compound.llm.shutil.which", lambda name: "/usr/bin/claude")
-    llm = ClaudeCodeLLM(bin="claude", model="", style_dir=Path("style"), research_effort="max")
+    llm = ClaudeCodeLLM(bin="claude", model="claude-fable-5-1", style_dir=Path("style"), research_effort="max", research_model="sonnet")
     seen = {}
 
     def fake_run(cmd, **kw):
@@ -116,6 +116,7 @@ def test_research_call_gets_search_tools_and_long_timeout(monkeypatch):
     assert isinstance(rep, ResearchReport) and rep.pubmed_ids == ["123", "456"]
     assert seen["cmd"][seen["cmd"].index("--tools") + 1] == "WebSearch,WebFetch"
     assert seen["cmd"][seen["cmd"].index("--effort") + 1] == "max"
+    assert seen["cmd"][seen["cmd"].index("--model") + 1] == "sonnet"  # research model overrides the writer's
     assert seen["timeout"] == ClaudeCodeLLM.RESEARCH_TIMEOUT
 
 
