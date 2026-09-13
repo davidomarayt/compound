@@ -433,7 +433,7 @@ def test_ad_slots_render_only_when_configured(pipeline, settings):
     r = pipeline.run_scheduled("health")
     slug = pipeline.db.get_draft(r["draft_id"])["slug"]
     page = settings.public_dir / "health" / slug / "index.html"
-    assert "adsbygoogle" not in page.read_text(encoding="utf-8")
+    assert "adsbygoogle" not in page.read_text(encoding="utf-8") and "Privacy settings" not in page.read_text(encoding="utf-8")
     assert not (settings.public_dir / "ads.txt").exists()
 
     (settings.content_dir / "site.yml").write_text(
@@ -444,6 +444,7 @@ def test_ad_slots_render_only_when_configured(pipeline, settings):
     assert "adsbygoogle.js?client=ca-pub-123" in html
     assert html.count('data-ad-slot="111"') == 1 and 'data-ad-slot=""' not in html  # blank bottom slot not rendered
     assert 'data-ad-slot="333"' in (settings.public_dir / "health" / "index.html").read_text(encoding="utf-8")
+    assert "Privacy settings" in html  # consent-change link appears only once ads are configured
     assert (settings.public_dir / "ads.txt").read_text() == "google.com, pub-123, DIRECT, f08c47fec0942fa0\n"
     # previews never carry ads
     from compound.site.build import render_preview
