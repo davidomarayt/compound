@@ -100,6 +100,12 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.012em;line-he
 .article .body a{text-decoration:underline;text-decoration-color:var(--line-2);text-decoration-thickness:1px}
 .article .body a:hover{text-decoration-color:currentColor}
 .article .body strong{font-weight:600}
+.article .body table{width:100%;border-collapse:collapse;margin:1.2em 0 1.6em;font-size:.95rem;line-height:1.45}
+.article .body th,.article .body td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}
+.article .body th{font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:600;border-bottom:1px solid var(--line-2)}
+.article .body tr:last-child td{border-bottom:1px solid var(--line-2)}
+.article .body td:first-child{font-weight:500}
+@media (max-width:600px){.article .body table{display:block;overflow-x:auto}}
 .article .body blockquote{margin:1.4em 0;padding:.2em 0 .2em 1.1em;border-left:3px solid var(--line-2);color:var(--ink-2);font-family:var(--serif);font-size:1.12rem}
 .sources{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;margin:34px 0 0;font-size:.9rem}
 .sources h2{font-family:var(--sans);margin:0 0 8px;font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);font-weight:600}
