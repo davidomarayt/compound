@@ -401,6 +401,46 @@ button {
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
   gap:38px 23px}
+.journal-columns {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  align-items:start;
+  gap:32px}
+.journal-column {
+  min-width:0;
+  --pillar-color:var(--health)}
+.journal-column-wealth {
+  --pillar-color:var(--wealth)}
+.journal-column-happiness {
+  --pillar-color:var(--happiness)}
+.journal-column-heading {
+  border-top:3px solid var(--pillar-color);
+  padding:17px 0 24px}
+.journal-column-heading h2 {
+  font-size:38px;
+  line-height:1.15;
+  color:var(--ink)}
+.journal-column-heading h2 a {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px}
+.journal-column-heading h2 span {
+  font-family:var(--sans);
+  font-size:22px;
+  color:var(--pillar-color)}
+.journal-column-stories {
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  gap:38px}
+.journal-column-more {
+  display:inline-flex;
+  margin-top:28px}
+@media (max-width:760px) {
+  .journal-columns {
+    grid-template-columns:minmax(0,1fr);
+    gap:48px}
+}
 .compound-story {
   min-width:0;
   display:flex;
