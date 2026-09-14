@@ -1,0 +1,14 @@
+
+.article-prose .mortgage-table{display:table;width:100%;table-layout:fixed;min-width:0;border-collapse:collapse}
+.mortgage-table caption,.mortgage-note{font:13px/1.65 Arial,sans-serif!important;color:#5f555b!important;text-align:left}
+.mortgage-table td,.mortgage-table th{padding:14px 10px;overflow-wrap:anywhere;white-space:normal;text-align:left;border-bottom:1px solid #d8cfcf}
+.mortgage-tool{padding:24px;background:#eee9e4;color:#33252e;border:1px solid #d8cfcf;border-radius:12px;margin:24px 0}
+.mortgage-inputs{display:grid;grid-template-columns:1fr 1fr;gap:18px}.mortgage-inputs>div{min-width:0}
+.mortgage-tool label{display:block;font:600 15px/1.5 Arial,sans-serif;margin-bottom:8px}
+.mortgage-tool input{width:100%;min-width:0;box-sizing:border-box;font-size:18px;padding:12px;background:#fffdf9;color:#33252e;border:1px solid #76656f;border-radius:6px}
+.mortgage-tool input:focus-visible{outline:3px solid #664258;outline-offset:3px}
+.mortgage-outcome{padding:20px 0;border-top:1px solid #c8bbc0;border-bottom:1px solid #c8bbc0}.mortgage-outcome span{display:block;font-size:15px}.mortgage-outcome strong{display:block;font-size:42px;color:#51384b}
+#mortgage-error{color:#7b2634;font-size:15px}#mortgage-results[hidden]{display:none!important}
+@media(max-width:600px){.mortgage-tool{padding:16px}.mortgage-inputs{grid-template-columns:1fr}.mortgage-table th,.mortgage-table td{font-size:14px;padding:10px 6px}}
+
+.article-image-credit{font:13px/1.65 Arial,sans-serif;color:#5f555b}.article-cover{height:auto!important;aspect-ratio:auto!important}.article-cover img{width:100%!important;height:auto!important;object-fit:contain!important}
