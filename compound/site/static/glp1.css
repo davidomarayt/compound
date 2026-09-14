@@ -17,3 +17,12 @@
 @media(max-width:600px){.article-prose .glp-table th,.article-prose .glp-table td{padding:12px 7px;font-size:15px;}.article-prose .glp-figure h3{font-size:27px;}}
  .article-prose .glp-table caption{font:400 13px/1.65 var(--sans);color:#5f555b;}
 .article-prose .glp-table{display:table;min-width:0;}
+
+.article-prose .glp-static-figure{margin:32px 0;padding:24px 0;border-block:1px solid #d7cec7;min-width:0}
+.article-prose .glp-static-figure img{display:block;width:100%;height:auto;max-width:600px;margin:auto}
+.article-prose .glp-static-figure figcaption{font:400 13px/1.65 var(--sans);color:#5f555b;margin-top:16px}
+.article-prose .glp-callout{padding:22px 24px;margin:24px 0;background:#eee6dc;color:#33252e;border-left:4px solid #714653}
+.article-prose .glp-callout h3{margin-top:0;color:#33252e}
+.article-prose .glp-callout p:last-child{margin-bottom:0}
+.article-prose .glp-table th small{font-weight:400;font-size:13px}
+@media(max-width:600px){.article-prose .glp-callout{padding:18px 16px}.article-prose .glp-table th:first-child{width:35%}}

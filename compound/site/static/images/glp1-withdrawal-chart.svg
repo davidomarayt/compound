@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="345.6pt" height="244.8pt" viewBox="0 0 345.6 244.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <title>SURMOUNT-4: total average weight reduction at week 88</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>SURMOUNT-4: total average weight reduction at week 88</dc:title>
+    <dc:date>2026-09-14T20:56:13.958870</dc:date>
+    <dc:description>Continued tirzepatide 25.3%; switched to placebo at week 36, 9.9%. Both relative to original pretreatment weight. Source DOI 10.1001/jama.2023.24945.</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 244.8 
+L 345.6 244.8 
+L 345.6 0 
+L 0 0 
+z
+" style="fill: #f8f6f1"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 27.648 190.944 
+L 335.232 190.944 
+L 335.232 2.448 
+L 27.648 2.448 
+z
+" style="fill: #f8f6f1"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 27.648 190.944 
+L 27.648 2.448 
+" clip-path="url(#p5359c9f6d8)" style="fill: none; stroke: #d7cec7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #5f555b" x="27.648" y="210.341656" transform="rotate(-0 27.648 210.341656)">0%</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 123.768 190.944 
+L 123.768 2.448 
+" clip-path="url(#p5359c9f6d8)" style="fill: none; stroke: #d7cec7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #5f555b" x="123.768" y="210.341656" transform="rotate(-0 123.768 210.341656)">10%</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 219.888 190.944 
+L 219.888 2.448 
+" clip-path="url(#p5359c9f6d8)" style="fill: none; stroke: #d7cec7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #5f555b" x="219.888" y="210.341656" transform="rotate(-0 219.888 210.341656)">20%</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 316.008 190.944 
+L 316.008 2.448 
+" clip-path="url(#p5359c9f6d8)" style="fill: none; stroke: #d7cec7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #5f555b" x="316.008" y="210.341656" transform="rotate(-0 316.008 210.341656)">30%</text>
+     </g>
+    </g>
+    <g id="text_5">
+     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #33252e" x="181.44" y="236.579312" transform="rotate(-0 181.44 236.579312)">Reduction from original body weight</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_3">
+    <path d="M 27.648 73.248937 
+L 270.8316 73.248937 
+L 270.8316 51.181112 
+L 27.648 51.181112 
+z
+" clip-path="url(#p5359c9f6d8)" style="fill: #526448"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 27.648 165.198205 
+L 122.8068 165.198205 
+L 122.8068 143.13038 
+L 27.648 143.13038 
+z
+" clip-path="url(#p5359c9f6d8)" style="fill: #714653"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #33252e" x="27.648" y="38.658685" transform="rotate(-0 27.648 38.658685)">Continued tirzepatide</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #33252e" x="276.5988" y="66.630024" transform="rotate(-0 276.5988 66.630024)">25.3%</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #33252e" x="27.648" y="130.607954" transform="rotate(-0 27.648 130.607954)">Switched to placebo</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #33252e" x="128.574" y="158.579293" transform="rotate(-0 128.574 158.579293)">9.9%</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p5359c9f6d8">
+   <rect x="27.648" y="2.448" width="307.584" height="188.496"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -96,6 +96,8 @@ The HSE states that Ozempic is available on the medical card and Long-Term Illne
 
 Saxenda is a separate option: the HSE describes restricted medical-card/DPS access for people meeting specific criteria. It is not automatically interchangeable with these weekly medicines. An assessment or a headline about possible future funding is not the same as an approved entitlement. Check the current position before budgeting on State support. [HSE](https://www2.hse.ie/conditions/obesity/medicines/).
 
+For eligibility, the €80 DPS limit and the Saxenda application process, see our [detailed HSE funding guide](/health/glp1-hse-medical-card-ireland/).
+
 ## The other costs worth asking about
 
 A pharmacy consultation is not necessarily the prescribing consultation. McGorisks explicitly excludes the doctor’s consultation fee from its Mounjaro prices. Laois lists a separate €10 cold-chain delivery charge on its Mounjaro page. [McGorisks](https://mcgorisks.ie/blogs/mcgorisks-blog/mounjaro-injections-for-weight-loss), [Laois](https://laoispharmacy.com/mounjaro-ireland/).
@@ -120,6 +122,8 @@ These treatments can cause gastrointestinal side effects, and serious symptoms s
 Avoid supposed bargain pens, drops or patches from unregulated sellers. In March 2026, the HPRA reported testing seized patches marketed as containing semaglutide and finding that the tested products did not contain it. A familiar medicine name on a listing is not evidence of authenticity. Use a regulated prescribing and pharmacy pathway. [HPRA warning](https://www.hpra.ie/news-events/news/article/over-750-000-units-of-illegal-medicines-detained-by-the-hpra-in-2025).
 
 The useful question is not simply “Which one starts cheapest?” It is: **“What will my prescribed treatment and follow-up actually cost—and can I sustain that?”** Take that question to the appointment. It deserves as clear an answer as the medical ones.
+
+If cost makes continuation difficult, our [stopping-treatment guide](/health/stopping-glp1-weight-regain/) explains the evidence and follow-up questions. For symptoms affecting tolerability, see [side effects and when to get help](/health/glp1-side-effects-when-to-seek-help/).
 
 ## How we checked this comparison
 
