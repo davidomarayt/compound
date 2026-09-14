@@ -1,0 +1,13 @@
+.article-prose .hobby-caption{font-size:13px;line-height:1.65;color:#5f555b;margin-top:12px;}
+.hobby-picker{background:#eee9df;color:#33252e;padding:clamp(18px,4vw,32px);margin:40px 0;}
+.hobby-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:24px 0;}
+.hobby-fields label{display:block;font:500 14px/1.5 var(--sans);color:#33252e;min-width:0;}
+.hobby-fields select{display:block;width:100%;max-width:100%;min-height:46px;margin-top:7px;padding:10px 8px;font:400 16px/1.4 var(--sans);background:#f8f6f1;color:#33252e;border:1px solid #8b7d83;border-radius:0;}
+#hobby-results{border-top:1px solid #c6bdb5;padding-top:8px;}
+.article-prose #hobby-results h3{font-size:25px;line-height:1.2;color:#33252e;margin:22px 0 9px;}
+.article-prose #hobby-results p{font-size:16px;line-height:1.7;color:#33252e;}
+.hobby-ideas{width:100%;table-layout:fixed;border-collapse:collapse;}
+.hobby-ideas caption{text-align:left;font:500 18px/1.5 var(--sans);color:#33252e;margin-bottom:15px;}
+.hobby-ideas th,.hobby-ideas td{white-space:normal;overflow-wrap:anywhere;padding:14px 10px;text-align:left;font-size:16px;line-height:1.65;}
+.hobby-ideas th:first-child{width:35%;}
+@media(max-width:600px){.hobby-fields{grid-template-columns:1fr;}.hobby-ideas th,.hobby-ideas td{padding:12px 7px;font-size:15px;}}

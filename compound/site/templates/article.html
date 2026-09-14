@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block meta %}<meta name="description" content="{{ article.description }}">{% endblock %}
-{% block head %}{% if article.slug == 'budget-2027-what-to-watch' %}<link rel="stylesheet" href="/static/budget-2027.css?v=1"><script src="/static/budget-2027.js?v=1" defer></script>{% endif %}{% if preview %}<meta name="robots" content="noindex,nofollow">{% else %}
+{% block head %}{% if article.slug == 'when-did-you-last-do-something-for-fun' %}<link rel="stylesheet" href="/static/hobbies.css?v=1"><script src="/static/hobbies.js?v=1" defer></script>{% endif %}{% if article.slug == 'budget-2027-what-to-watch' %}<link rel="stylesheet" href="/static/budget-2027.css?v=1"><script src="/static/budget-2027.js?v=1" defer></script>{% endif %}{% if preview %}<meta name="robots" content="noindex,nofollow">{% else %}
 <link rel="canonical" href="{{ site_url }}{{ article.url }}"><meta property="og:type" content="article"><meta property="og:title" content="{{ article.title }}"><meta property="og:description" content="{{ article.description }}"><meta property="og:url" content="{{ site_url }}{{ article.url }}"><meta property="og:site_name" content="Compound"><meta property="og:image" content="{{ site_url }}{{ article.image }}"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{{ article_jsonld | safe }}</script>{% endif %}{% endblock %}
 {% block content %}
 {% if preview %}<div class="preview-banner">PREVIEW — not published. Approve or redraft from Telegram.</div>{% endif %}

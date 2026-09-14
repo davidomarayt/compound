@@ -21,3 +21,5 @@ Licensed under https://unsplash.com/license. Illustrative photographs; people pi
 - retirement-walk.jpg: micheile henderson / Unsplash. https://unsplash.com/photos/man-and-woman-walking-on-road-during-daytime-PpZasS086os
 - adult-sleep.jpg: Greg Pappas / Unsplash. https://unsplash.com/photos/woman-sleeping-on-bed-under-blankets-rUc9hVE-L-E
 - oatmeal.jpg: Brooke Lark / Unsplash. https://unsplash.com/photos/two-bowls-of-oatmeal-with-fruits-W9OKrxBqiZA
+
+- `hobby-painting.jpg`: Paintbrushes and coloured paint. Unsplash, https://images.unsplash.com/photo-1513364776144-60967b0f800f . Illustrative article cover; downloaded 14 September 2026.
