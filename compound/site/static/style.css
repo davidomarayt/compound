@@ -985,6 +985,32 @@ button {
 .author-note p:last-child { margin: 0; }
 .author-note strong { color: var(--ink); }
 
+.privacy-banner {
+  position:fixed;
+  z-index:1000;
+  right:24px;
+  bottom:24px;
+  width:min(560px,calc(100vw - 48px));
+  padding:24px;
+  background:var(--surface);
+  color:var(--ink);
+  border:1px solid var(--line);
+  box-shadow:0 18px 55px rgba(51,37,46,.2);
+}
+.privacy-banner[hidden] { display:none; }
+.privacy-banner h2 { margin:6px 0 10px;font:400 29px/1.15 var(--serif); }
+.privacy-banner p { margin:0;color:var(--muted);font-size:14px;line-height:1.55; }
+.privacy-banner .privacy-banner-links { margin-top:8px;font-size:12px; }
+.privacy-banner-actions { display:flex;gap:10px;align-items:center;margin-top:18px; }
+.privacy-banner-actions .button { border:1px solid var(--ink);cursor:pointer; }
+.privacy-banner-actions .button-light { background:transparent;color:var(--ink); }
+@media(max-width:600px) {
+  .privacy-banner { right:12px;bottom:12px;width:calc(100vw - 24px);padding:20px; }
+  .privacy-banner h2 { font-size:25px; }
+  .privacy-banner-actions { align-items:stretch;flex-direction:column; }
+  .privacy-banner-actions .button { width:100%; }
+}
+
 @media(max-width:1000px) {
   .site-header {
   gap:20px}

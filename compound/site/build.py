@@ -312,12 +312,14 @@ def load_site_config(content_dir: Path) -> dict:
     if f.exists():
         data = yaml.safe_load(f.read_text(encoding="utf-8")) or {}
     ads = data.get("adsense") or {}
+    analytics = data.get("analytics") or {}
     slots = ads.get("slots") or {}
     return {
         "adsense": {
             "client": str(ads.get("client") or "").strip(),
             "slots": {k: str(slots.get(k) or "").strip() for k in ("article_top", "article_bottom", "feed")},
         },
+        "analytics": {"measurement_id": str(analytics.get("measurement_id") or "").strip()},
         "email_form_action": str(data.get("email_form_action") or "").strip(),
     }
 
@@ -327,6 +329,7 @@ def _env(settings: Settings) -> Environment:
     env.filters["long_date"] = long_date
     site_cfg = load_site_config(settings.content_dir)
     env.globals.update(adsense=site_cfg["adsense"])
+    env.globals.update(analytics=site_cfg["analytics"])
     env.globals.update(
         site_url=settings.site_base_url,
         email_form_action=site_cfg["email_form_action"] or settings.email_form_action,

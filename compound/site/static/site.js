@@ -1,5 +1,24 @@
 (function () {
   'use strict';
+  const track = (name, parameters) => {
+    if (analyticsChoice === 'granted' && typeof window.gtag === 'function') window.gtag('event', name, parameters || {});
+  };
+  const privacyBanner = document.querySelector('[data-privacy-banner]');
+  let analyticsChoice = null;
+  try { analyticsChoice = localStorage.getItem('compound_analytics_consent'); } catch (_) {}
+  if (privacyBanner && !analyticsChoice) privacyBanner.hidden = false;
+  document.querySelectorAll('[data-analytics-consent]').forEach(button => button.addEventListener('click', () => {
+    const choice = button.dataset.analyticsConsent;
+    analyticsChoice = choice;
+    try { localStorage.setItem('compound_analytics_consent', choice); } catch (_) {}
+    if (typeof window.gtag === 'function') window.gtag('consent', 'update', {analytics_storage: choice});
+    if (choice === 'granted' && typeof window.compoundStartAnalytics === 'function') window.compoundStartAnalytics();
+    if (privacyBanner) privacyBanner.hidden = true;
+  }));
+  document.querySelectorAll('[data-privacy-settings]').forEach(link => link.addEventListener('click', event => {
+    event.preventDefault();
+    if (privacyBanner) { privacyBanner.hidden = false; privacyBanner.querySelector('button').focus(); }
+  }));
   const filters = document.querySelectorAll('[data-filter]');
   filters.forEach(button => button.addEventListener('click', () => {
     const value = button.dataset.filter;
@@ -35,9 +54,30 @@
     const canonical = document.querySelector('link[rel=canonical]');
     const url = canonical ? canonical.href : location.href;
     const status = document.getElementById('share-status');
-    try { await navigator.clipboard.writeText(url); share.textContent = 'Link copied ✓'; if (status) status.textContent = 'Article link copied.'; }
+    try { await navigator.clipboard.writeText(url); share.textContent = 'Link copied ✓'; track('share_article', {method:'copy_link'}); if (status) status.textContent = 'Article link copied.'; }
     catch (_) { if (status) { status.classList.remove('sr-only'); status.textContent = 'Copy this link: ' + url; } }
   });
+  const article = document.querySelector('.article');
+  if (article) {
+    const milestones = [25, 50, 75, 90], sent = new Set();
+    const measureDepth = () => {
+      const top = article.offsetTop, height = article.offsetHeight - innerHeight;
+      const depth = height > 0 ? Math.max(0, Math.min(100, ((scrollY - top + innerHeight) / article.offsetHeight) * 100)) : 100;
+      milestones.forEach(percent => { if (depth >= percent && !sent.has(percent)) { sent.add(percent); track('article_progress', {percent}); } });
+    };
+    addEventListener('scroll', measureDepth, {passive:true}); measureDepth();
+    article.querySelectorAll('.sources a').forEach(link => link.addEventListener('click', () => {
+      let domain = ''; try { domain = new URL(link.href).hostname; } catch (_) {}
+      track('source_click', {source_domain:domain});
+    }));
+    article.querySelectorAll('.budget-calculator input,.hobby-picker select').forEach(control => control.addEventListener('change', () => {
+      const tool = control.closest('.budget-calculator') ? 'budget_calculator' : 'hobby_picker';
+      if (!control.closest('[data-tool-tracked]')) {
+        const container = control.closest('.budget-calculator,.hobby-picker'); if (container) container.dataset.toolTracked = 'true';
+        track('interactive_tool_used', {tool_name:tool});
+      }
+    }));
+  }
   const source = document.getElementById('search-data');
   if (!source) return;
   const index = JSON.parse(source.textContent), input = document.getElementById('q'), results = document.getElementById('results'), status = document.getElementById('search-status');

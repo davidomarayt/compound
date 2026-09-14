@@ -1,13 +1,15 @@
 ---
 title: Privacy policy
 ---
-*Last updated: 13 September 2026*
+*Last updated: 14 September 2026*
 
 This policy explains what personal data Compound (compound.ie) collects, why, and your rights over it. The site is operated from Ireland by its owner, who is the data controller for the purposes of the General Data Protection Regulation (GDPR) and the Data Protection Act 2018. Contact: [david@compound.ie](mailto:david@compound.ie).
 
 ## What we collect
 
-**Reading the site.** You can read every page without creating an account or giving us any information. Compound sets no cookies of its own and runs no analytics that identify you. Our hosting provider, GitHub Pages, records standard server logs (such as IP address, browser type and pages requested) to operate and secure the service; GitHub's handling of that data is described in [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+**Reading the site.** You can read every page without creating an account or giving us any information. With your permission, Compound uses Google Analytics 4 to measure page views, approximate engagement, device type and broad traffic source. We also measure article-reading milestones, source-link clicks, use of an interactive tool and use of the copy-link control. We do not send names, email addresses, calculator entries, form values or other information intended to identify you as analytics events. Google may process technical information such as your IP address as part of providing the service. Analytics storage is denied unless you choose to allow it. You can change that choice using **Analytics settings** in the footer.
+
+Our hosting provider, GitHub Pages, records standard server logs (such as IP address, browser type and pages requested) to operate and secure the service; GitHub's handling of that data is described in [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Google's handling of analytics information is described in [Google's privacy policy](https://policies.google.com/privacy).
 
 **Email subscription.** If you subscribe to Compound emails, we store your email address and the date and source of your consent with our email service provider, and use it only to send you Compound emails. You can unsubscribe with one click in any email, after which your address is removed from the active list. We do not sell, rent or share subscriber lists.
 
@@ -21,7 +23,7 @@ Where advertising is shown to visitors in the European Economic Area or the UK, 
 
 ## Legal basis
 
-We rely on your consent for email subscriptions and for personalised advertising cookies, and on our legitimate interest in running and securing the site for server logs and correspondence.
+We rely on your consent for Google Analytics, email subscriptions and personalised advertising cookies, and on our legitimate interest in running and securing the site for server logs and correspondence.
 
 ## Your rights
 
@@ -29,7 +31,7 @@ You have the right to access the personal data we hold about you, to have it cor
 
 ## Retention
 
-Subscriber data is kept until you unsubscribe. Correspondence is kept for up to two years. We hold no other personal data.
+Subscriber data is kept until you unsubscribe. Correspondence is kept for up to two years. Google Analytics event-level data is retained according to the retention period selected in the Compound Analytics property and is reported mainly in aggregate.
 
 ## Children
 

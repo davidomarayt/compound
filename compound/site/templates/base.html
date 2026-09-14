@@ -7,6 +7,19 @@
 <title>{% block head_title %}{{ title }} · Compound{% endblock %}</title>
 {% block meta %}<meta name="description" content="Thoughtful, sourced guides to health, wealth and happiness. A little clarity for a richer life in Ireland.">{% endblock %}
 {% block head %}{% endblock %}
+{% if analytics.measurement_id and not preview %}<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+(function(){var choice=null;try{choice=localStorage.getItem('compound_analytics_consent')}catch(e){}
+gtag('consent','default',{
+  analytics_storage:choice==='granted'?'granted':'denied',
+  ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500
+});
+window.compoundStartAnalytics=function(){if(document.querySelector('script[data-compound-ga]'))return;
+  var tag=document.createElement('script');tag.async=true;tag.dataset.compoundGa='true';tag.src='https://www.googletagmanager.com/gtag/js?id={{ analytics.measurement_id }}';document.head.appendChild(tag);
+  gtag('js',new Date());gtag('config','{{ analytics.measurement_id }}',{anonymize_ip:true});
+};
+if(choice==='granted')window.compoundStartAnalytics();})();
+</script>{% endif %}
 {% if adsense.client and not preview and (ads_allowed is not defined or ads_allowed) %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense.client }}" crossorigin="anonymous"></script>{% endif %}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
@@ -30,8 +43,12 @@
 </main>
 <footer class="site-footer">
  <div class="footer-top"><div><a class="wordmark" href="/">compound<span class="brand-dot">.</span></a><p>Good things build on each other.</p></div><div class="footer-mission">A little more clarity.<br>A little more possibility.<br>A life that feels like yours.</div><nav aria-label="Footer navigation"><a href="/about/">Our approach</a><a href="/contact/">Get in touch</a><a href="/search/">Explore the journal</a><a href="/feed.xml">Follow via RSS ↗</a></nav></div>
- <div class="footer-bottom"><span>© {{ year }} Compound · Made for life in Ireland</span><nav aria-label="Policies"><a href="/editorial-policy/">Editorial policy</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/disclaimer/">Disclaimer</a>{% if adsense.client and not preview and (ads_allowed is not defined or ads_allowed) %}<a href="#" onclick="window.googlefc&&googlefc.callbackQueue.push({CONSENT_DATA_READY:function(){googlefc.showRevocationMessage()}});return false;">Privacy settings</a>{% endif %}</nav></div>
+ <div class="footer-bottom"><span>© {{ year }} Compound · Made for life in Ireland</span><nav aria-label="Policies"><a href="/editorial-policy/">Editorial policy</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/disclaimer/">Disclaimer</a>{% if analytics.measurement_id and not preview %}<a href="#" data-privacy-settings>Analytics settings</a>{% endif %}{% if adsense.client and not preview and (ads_allowed is not defined or ads_allowed) %}<a href="#" onclick="window.googlefc&&googlefc.callbackQueue.push({CONSENT_DATA_READY:function(){googlefc.showRevocationMessage()}});return false;">Privacy settings</a>{% endif %}</nav></div>
  <p class="footer-disclaimer">For information, not individual medical, financial or tax advice. Check the sources and speak to a qualified professional about your circumstances.</p>
 </footer>
+{% if analytics.measurement_id and not preview %}<section class="privacy-banner" data-privacy-banner hidden aria-labelledby="privacy-banner-title" aria-live="polite">
+ <div><p class="eyebrow">YOUR PRIVACY</p><h2 id="privacy-banner-title">Help us understand what gets read.</h2><p>With your permission, anonymous Google Analytics measurements tell us which articles are useful. We do not send calculator entries or form values. You can decline and still read everything.</p><p class="privacy-banner-links"><a href="/privacy/">Privacy policy</a> · <a href="/cookies/">Cookie policy</a></p></div>
+ <div class="privacy-banner-actions"><button type="button" class="button button-dark" data-analytics-consent="granted">Allow analytics</button><button type="button" class="button button-light" data-analytics-consent="denied">Decline</button></div>
+</section>{% endif %}
 </body>
 </html>

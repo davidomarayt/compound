@@ -1,13 +1,15 @@
 ---
 title: Cookie policy
 ---
-*Last updated: 13 September 2026*
+*Last updated: 14 September 2026*
 
 Cookies are small files a website stores in your browser. This page explains which ones are used on Compound (compound.ie).
 
-## Cookies we set
+## Analytics storage
 
-None. Compound has no login, no analytics of its own and no tracking. You can read the whole site without any cookie being set by us.
+Compound uses Google Analytics 4 only with your permission. Analytics helps us understand which pages are read, how readers found the site and whether articles are read to different depths. Analytics storage is denied by default. If you allow it, Google Analytics may store identifiers in your browser for measurement. We do not send names, email addresses, calculator entries or form values to Analytics.
+
+Your analytics choice is saved in your browser's local storage so the site can remember it. This preference is necessary to respect the choice you made. Use **Analytics settings** in the footer to allow, decline or change your choice. Declining does not stop you reading anything.
 
 ## Advertising cookies
 
