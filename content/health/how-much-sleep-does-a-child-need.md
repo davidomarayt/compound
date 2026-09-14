@@ -1,4 +1,8 @@
 ---
+image: /static/images/sleep.jpg
+image_alt: A bed with pillows and bedding.
+image_credit: Unsplash
+image_source: https://images.unsplash.com/photo-1505693416388-ac5ce068fe85
 title: How much sleep does a child need? Hours by age, toddler to teen
 slug: how-much-sleep-does-a-child-need
 pillar: health

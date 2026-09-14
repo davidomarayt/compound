@@ -50,12 +50,12 @@
     status.textContent = query ? matches.length + (matches.length === 1 ? ' story found' : ' stories found') : 'All ' + index.length + ' stories';
     matches.forEach(({a}) => {
       const card = el('article', 'compound-story'), imageLink = el('a', 'card-image'); imageLink.href = a.url; imageLink.setAttribute('aria-label', 'Read ' + a.title);
-      const img = el('img'); img.src = a.image; img.alt = ''; img.loading = 'lazy'; img.width = 800; img.height = 520; imageLink.append(img);
+      const img = el('img'); if (a.image) img.src = a.image; img.alt = ''; img.loading = 'lazy'; img.width = 800; img.height = 520; imageLink.append(img);
       const content = el('div', 'card-content'), meta = el('p', 'meta'); meta.append(el('span', 'category category-' + a.pillar.toLowerCase(), a.pillar), el('span', '', a.reading_minutes + ' min read'));
       const heading = el('h3'), link = el('a', '', a.title); link.href = a.url; heading.append(link);
       content.append(meta, heading, el('p', 'summary', a.description));
       const bottom = el('div', 'card-bottom'), date = el('time', '', a.date_label); date.dateTime = a.date;
-      const read = el('a', '', 'Read story ↗'); read.href = a.url; read.setAttribute('aria-label', 'Read ' + a.title); bottom.append(date, read); content.append(bottom); card.append(imageLink, content); results.append(card);
+      const read = el('a', '', 'Read story ↗'); read.href = a.url; read.setAttribute('aria-label', 'Read ' + a.title); bottom.append(date, read); content.append(bottom); if (a.image) card.append(imageLink); card.append(content); results.append(card);
     });
     if (!matches.length) results.append(el('p', 'empty', 'No stories found. Try a broader topic such as sleep, tax or wellbeing.'));
   }

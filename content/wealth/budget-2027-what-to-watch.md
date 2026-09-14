@@ -1,4 +1,8 @@
 ---
+image: /static/images/budget-dublin.jpg
+image_alt: Samuel Beckett Bridge and the River Liffey in Dublin.
+image_credit: Yanhao Fang / Unsplash
+image_source: https://unsplash.com/photos/samuel-beckett-bridge-and-dublin-cityscape-reflected-in-the-liffey-bjROiiuUXwA
 title: 'Budget 2027: what to watch, and what it could mean for your household'
 slug: budget-2027-what-to-watch
 pillar: wealth

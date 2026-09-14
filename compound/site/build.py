@@ -49,6 +49,10 @@ class Article:
     charts: list[dict] = field(default_factory=list)
     pinned: bool = False
     path: Path | None = None
+    image_path: str = ""
+    image_alt: str = ""
+    image_credit: str = ""
+    image_source: str = ""
 
     @property
     def body_with_charts(self) -> str:
@@ -74,15 +78,7 @@ class Article:
 
     @property
     def image(self) -> str:
-        if "sleep" in self.slug:
-            image = "sleep"
-        elif "vitamin" in self.slug or "cholesterol" in self.slug:
-            image = "nutrition"
-        elif "worry" in self.slug:
-            image = "mindful"
-        else:
-            image = self.pillar
-        return f"/static/images/{image}.jpg"
+        return self.image_path
 
 
 @dataclass
@@ -257,6 +253,10 @@ def article_from_file(path: Path) -> Article | None:
         charts=list(meta.get("charts") or []),
         pinned=bool(meta.get("pinned")),
         path=path,
+        image_path=str(meta.get("image") or ""),
+        image_alt=str(meta.get("image_alt") or ""),
+        image_credit=str(meta.get("image_credit") or ""),
+        image_source=str(meta.get("image_source") or ""),
     )
 
 
@@ -361,6 +361,17 @@ def build_site(settings: Settings) -> dict:
     out = settings.public_dir
     articles = load_articles(settings.content_dir)
     pages = load_pages(settings.content_dir)
+    image_owners = {}
+    for article in articles:
+        if not article.image_path:
+            continue  # No generic photograph: render text until an editor chooses a cover.
+        if not article.image_alt:
+            raise ValueError(f"Add cover alt text for {article.slug}")
+        if article.image in image_owners:
+            raise ValueError(f"Cover image reused by {article.slug} and {image_owners[article.image]}")
+        image_owners[article.image] = article.slug
+        if not article.image.startswith("/static/images/") or not (HERE / article.image.lstrip("/")).is_file():
+            raise ValueError(f"Missing local cover image for {article.slug}")
 
     # Wipe rendered output except previews (they belong to the pending queue, not the content dir).
     if out.exists():

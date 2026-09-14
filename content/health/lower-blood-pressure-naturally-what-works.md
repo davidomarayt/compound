@@ -1,4 +1,8 @@
 ---
+image: /static/images/health.jpg
+image_alt: A walking path through a green forest.
+image_credit: Unsplash
+image_source: https://images.unsplash.com/photo-1441974231531-c6227db76b6e
 title: 'How to lower blood pressure naturally: what works and by how much'
 slug: lower-blood-pressure-naturally-what-works
 pillar: health

@@ -1,4 +1,8 @@
 ---
+image: /static/images/mindful.jpg
+image_alt: A person sitting outdoors in meditation.
+image_credit: Unsplash
+image_source: https://images.unsplash.com/photo-1506126613408-eca07ce68773
 title: 'How to stop worrying and overthinking: what the trials actually show'
 slug: how-to-stop-worrying-and-overthinking
 pillar: happiness

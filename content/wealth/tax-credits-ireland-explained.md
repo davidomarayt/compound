@@ -1,4 +1,8 @@
 ---
+image: /static/images/tax-paperwork.jpg
+image_alt: Paperwork, a pen and a calculator on a desk.
+image_credit: Kelly Sikkema / Unsplash
+image_source: https://unsplash.com/photos/person-holding-paper-near-pen-and-calculator-xoU52jUVUXA
 title: 'Tax credits in Ireland explained: what they are and how they work'
 slug: tax-credits-ireland-explained
 pillar: wealth

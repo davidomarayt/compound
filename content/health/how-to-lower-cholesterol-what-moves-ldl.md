@@ -1,4 +1,8 @@
 ---
+image: /static/images/oatmeal.jpg
+image_alt: Bowls of oatmeal and fruit beside a cup of coffee.
+image_credit: Brooke Lark / Unsplash
+image_source: https://unsplash.com/photos/two-bowls-of-oatmeal-with-fruits-W9OKrxBqiZA
 title: 'How to lower cholesterol: what actually moves LDL, and by how much'
 slug: how-to-lower-cholesterol-what-moves-ldl
 pillar: health

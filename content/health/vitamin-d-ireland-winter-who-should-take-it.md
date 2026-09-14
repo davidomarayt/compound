@@ -1,4 +1,8 @@
 ---
+image: /static/images/nutrition.jpg
+image_alt: A bowl of fruit, used as an illustrative nutrition photograph.
+image_credit: Unsplash
+image_source: https://images.unsplash.com/photo-1494597564530-871f2b93ac55
 title: 'Vitamin D in winter: who in Ireland should take a supplement'
 slug: vitamin-d-ireland-winter-who-should-take-it
 pillar: health

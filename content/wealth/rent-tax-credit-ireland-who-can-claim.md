@@ -1,4 +1,8 @@
 ---
+image: /static/images/wealth.jpg
+image_alt: A bright kitchen and dining area.
+image_credit: Unsplash
+image_source: https://images.unsplash.com/photo-1484154218962-a197022b5858
 title: 'Rent Tax Credit in Ireland: Who Can Claim It and How'
 slug: rent-tax-credit-ireland-who-can-claim
 pillar: wealth

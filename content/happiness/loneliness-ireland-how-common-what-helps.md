@@ -1,4 +1,8 @@
 ---
+image: /static/images/happiness.jpg
+image_alt: A notebook and coffee on a desk.
+image_credit: Unsplash
+image_source: https://images.unsplash.com/photo-1499750310107-5fef28a66643
 title: 'Loneliness in Ireland: how common it is and what actually helps'
 slug: loneliness-ireland-how-common-what-helps
 pillar: happiness

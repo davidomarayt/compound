@@ -1,4 +1,8 @@
 ---
+image: /static/images/retirement-walk.jpg
+image_alt: An older couple walking together through a park.
+image_credit: micheile henderson / Unsplash
+image_source: https://unsplash.com/photos/man-and-woman-walking-on-road-during-daytime-PpZasS086os
 title: 'Pension tax relief in Ireland: what it''s worth, the limits, and how to claim'
 slug: pension-tax-relief-ireland-how-to-claim
 pillar: wealth

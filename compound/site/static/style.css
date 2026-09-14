@@ -1377,3 +1377,6 @@ h1, h2, h3 {
     object-fit:cover;
   }
 }
+
+.article-image-credit { font:13px/1.6 var(--sans); color:#5f555b; margin:12px 0 30px; }
+.article-image-credit a { text-decoration:underline; }

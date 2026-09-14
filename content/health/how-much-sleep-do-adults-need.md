@@ -1,4 +1,8 @@
 ---
+image: /static/images/adult-sleep.jpg
+image_alt: An adult sleeping beneath a blanket.
+image_credit: Greg Pappas / Unsplash
+image_source: https://unsplash.com/photos/woman-sleeping-on-bed-under-blankets-rUc9hVE-L-E
 title: How much sleep do adults need? What the evidence says, by age
 slug: how-much-sleep-do-adults-need
 pillar: health
