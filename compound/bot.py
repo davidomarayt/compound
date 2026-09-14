@@ -65,6 +65,7 @@ class Bot:
         app.add_handler(CommandHandler("poll", self.cmd_poll, filters=owner))
         app.add_handler(CommandHandler("auto", self.cmd_auto, filters=owner))
         app.add_handler(CommandHandler("unpublish", self.cmd_unpublish, filters=owner))
+        app.add_handler(CommandHandler("status", self.cmd_status, filters=owner))
         app.add_handler(CommandHandler("drop", self.cmd_drop, filters=owner))
         app.add_handler(CallbackQueryHandler(self.on_callback))
         app.add_handler(MessageHandler(owner & filters.VOICE, self.on_voice))
@@ -103,7 +104,7 @@ class Bot:
             "Compound pipeline.\n\n"
             "/queue – what's open\n/open <id> – switch to an item and resend its questions\n"
             "/draft [id] – draft now with the answers so far\n/skip – skip the current question\n"
-            "/newpiece [pillar] <topic> – research and write a piece on your topic\n/auto [pillar] – write a scheduled piece now\n/unpublish <id> – take a published piece off the site\n/drop [id] – kill an item\n/poll – poll sources now\n\n"
+            "/newpiece [pillar] <topic> – research and write a piece on your topic\n/auto [pillar] – write a scheduled piece now\n/unpublish <id> – take a published piece off the site\n/status – is it running, what settings, when is the next piece\n/drop [id] – kill an item\n/poll – poll sources now\n\n"
             "Answer questions by voice note or text. Reply to a specific question message to bind the answer to it."
         )
 
@@ -194,6 +195,38 @@ class Bot:
         pillar = args[0].lower() if args and args[0].lower() in PILLARS else None
         await update.message.reply_text(f"Writing a {pillar or 'scheduled'} piece now… this takes a minute or two.")
         await self.run_scheduled(pillar)
+
+    async def cmd_status(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+        from datetime import datetime, timedelta, timezone
+
+        st = self.settings
+        writer = (f"Claude Code · {st.claude_code_model or 'default model'}" if st.llm_backend == "claude-code"
+                  else f"API · {st.anthropic_model}")
+        if st.fake_llm:
+            writer = "FAKE (canned output)"
+        last = self.db.get_state(self.p.SCHEDULE_LAST_KEY)
+        if st.schedule_hours <= 0:
+            sched = "off"
+        elif not last:
+            sched = f"every {st.schedule_hours:g}h · next: as soon as the timer checks"
+        else:
+            last_dt = datetime.fromisoformat(last)
+            due = last_dt + timedelta(hours=st.schedule_hours)
+            wait = due - datetime.now(timezone.utc)
+            when = "due now" if wait.total_seconds() <= 0 else f"in {int(wait.total_seconds() // 60)} min"
+            sched = f"every {st.schedule_hours:g}h · last {last_dt.astimezone().strftime('%H:%M')} · next {when}"
+        open_items = self.db.open_items()
+        published = self.db._one("SELECT COUNT(*) AS n FROM published")["n"]
+        lines = [
+            "✅ Running",
+            f"Writer: {writer}",
+            f"Research: {st.claude_code_research_model or 'same model'} ({st.research_effort}) · editor: {st.claude_code_editor_model or 'same model'}",
+            f"Schedule: {sched}",
+            f"Auto-publish: {st.auto_publish} · interview: {'on' if st.interview else 'off'}",
+            f"Published: {published} · open in queue: {len(open_items)}",
+            f"Started: {self.started_at.astimezone().strftime('%a %H:%M')}",
+        ]
+        await update.message.reply_text("\n".join(lines))
 
     async def cmd_unpublish(self, update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         item_id = _int_arg(context.args)
@@ -498,6 +531,9 @@ class Bot:
         log.error("update %s caused error", update, exc_info=context.error)
 
     def run(self) -> None:
+        from datetime import datetime, timezone
+
+        self.started_at = datetime.now(timezone.utc)
         self.app = self.build()
         which = (
             f"claude-code model={self.settings.claude_code_model or 'Claude Code default'}"
