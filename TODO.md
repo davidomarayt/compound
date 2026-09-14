@@ -16,4 +16,4 @@
 - [x] Verify the Search Console property through the domain's DNS record.
 - [x] Submit `https://compound.ie/sitemap.xml` in Search Console.
 - [ ] Check indexing, search queries, article clicks and impressions after sufficient data accumulates.
-- [ ] Add the AdSense publisher ID and generate `ads.txt` once Google provides the `ca-pub-…` value.
+- [x] Add the AdSense publisher ID and generate `ads.txt` once Google provides the `ca-pub-…` value.

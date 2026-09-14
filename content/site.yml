@@ -5,7 +5,7 @@
 # slots are simply not rendered. Also turn on Google's consent message under Privacy & messaging in
 # the AdSense console: EU readers must be asked before personalised ads are shown.
 adsense:
-  client: ""
+  client: "ca-pub-6115783809711785"
   slots:
     article_top: ""      # under the standfirst, above the article body
     article_bottom: ""   # after the article body
