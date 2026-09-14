@@ -1,0 +1,20 @@
+.budget-static-chart { margin:24px 0; min-width:0; width:100%; }
+.budget-static-row { margin:0 0 18px; min-width:0; }
+.budget-static-label { display:flex; justify-content:space-between; align-items:baseline; gap:12px; font:14px/1.5 var(--sans); color:var(--ink); margin-bottom:7px; }
+.budget-static-label span { min-width:0; overflow-wrap:anywhere; }
+.budget-static-label strong { white-space:nowrap; font-weight:500; }
+.budget-static-bar { height:18px; width:100%; }
+.budget-static-bar span { display:block; height:100%; background:var(--wealth); }
+.article-prose p.budget-caption,
+.article-prose p.chart-note,
+.budget-image-credit { font:13px/1.6 var(--sans); color:#5f555b; margin:10px 0 24px; }
+.article-prose .budget-calculator { margin:32px 0; padding:24px; background:#f0e3d3; color:#33252e; border-radius:3px; }
+.article-prose .budget-calculator h3 { font:400 30px/1.2 var(--serif); color:#33252e; margin:8px 0 14px; }
+.article-prose .budget-calculator p.budget-calculator-kicker { font:500 11px/1.5 var(--sans); letter-spacing:.12em; color:#5f555b; margin:0; }
+.article-prose .budget-calculator p.budget-calculator-intro { font:16px/1.65 var(--sans); color:#33252e; margin:0 0 20px; }
+.budget-calculator label { display:block; font:500 15px/1.5 var(--sans); margin-bottom:8px; }
+.budget-calculator input { width:100%; min-width:0; box-sizing:border-box; background:#fffdf9; color:#33252e; border:1px solid #9a8675; border-radius:3px; padding:12px; font:400 18px/1.4 var(--sans); }
+.budget-calculator input::placeholder { color:#70636b; }
+.article-prose .budget-calculator p.budget-calculator-result { font:500 19px/1.6 var(--sans); color:#33252e; margin:22px 0; }
+.article-prose .budget-calculator p.budget-caption { margin:10px 0; }
+@media(max-width:440px) { .article-prose .budget-calculator { padding:18px; } }
