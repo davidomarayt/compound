@@ -295,9 +295,10 @@ def article_jsonld(a: Article, site_url: str) -> str:
     data = {
         "@context": "https://schema.org", "@type": "Article", "headline": a.title, "description": a.description,
         "datePublished": a.date.isoformat(), "dateModified": a.date.isoformat(),
-        "author": {"@type": "Organization", "name": "Compound", "url": site_url},
+        "author": {"@type": "Person", "name": "David", "url": f"{site_url}/about/"},
         "publisher": {"@type": "Organization", "name": "Compound", "url": site_url},
-        "mainEntityOfPage": f"{site_url}{a.url}", "articleSection": PILLAR_LABELS.get(a.pillar, a.pillar),
+        "mainEntityOfPage": f"{site_url}{a.url}", "image": f"{site_url}{a.image}" if a.image else None,
+        "articleSection": PILLAR_LABELS.get(a.pillar, a.pillar),
         "keywords": ", ".join(a.tags),
         "citation": [s.get("url") for s in a.sources if s.get("url")],
     }
@@ -410,7 +411,7 @@ def build_site(settings: Settings) -> dict:
         for t in a.tags:
             tag_map.setdefault(t, []).append(a)
     for t, arts in tag_map.items():
-        _write(out / "tag" / t / "index.html", env.get_template("tag.html").render(tag=t, articles=arts, title=f"#{t}"))
+        _write(out / "tag" / t / "index.html", env.get_template("tag.html").render(tag=t, articles=arts, title=f"#{t}", ads_allowed=False))
 
     for pg in pages:
         _write(out / pg.slug / "index.html", env.get_template("page.html").render(page=pg, title=pg.title))
@@ -422,7 +423,7 @@ def build_site(settings: Settings) -> dict:
         for a in articles
     ]
     _write(out / "search.json", json.dumps(index, ensure_ascii=False))
-    _write(out / "search" / "index.html", env.get_template("search.html").render(title="Search", search_index=index))
+    _write(out / "search" / "index.html", env.get_template("search.html").render(title="Search", search_index=index, ads_allowed=False))
     _write(out / "feed.xml", env.get_template("feed.xml").render(articles=articles[:30]))
     _write(out / "robots.txt", f"User-agent: *\nDisallow: /preview/\nSitemap: {settings.site_base_url}/sitemap.xml\n")
     host = urlparse(settings.site_base_url).hostname or ""
@@ -433,7 +434,10 @@ def build_site(settings: Settings) -> dict:
     if client.startswith("ca-pub-"):
         # AdSense checks this file to confirm the site is allowed to show your ads.
         _write(out / "ads.txt", f"google.com, {client.removeprefix('ca-')}, DIRECT, f08c47fec0942fa0\n")
-    urls = [settings.site_base_url + "/"] + [settings.site_base_url + f"/{p}/" for p in PILLARS] + [settings.site_base_url + a.url for a in articles]
+    urls = ([settings.site_base_url + "/"]
+            + [settings.site_base_url + f"/{p}/" for p in PILLARS]
+            + [settings.site_base_url + a.url for a in articles]
+            + [settings.site_base_url + f"/{pg.slug}/" for pg in pages])
     _write(out / "sitemap.xml", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
            + "".join(f"  <url><loc>{u}</loc></url>\n" for u in urls) + "</urlset>\n")
     return {"articles": len(articles), "tags": len(tag_map), "pages": len(pages)}

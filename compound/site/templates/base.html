@@ -7,13 +7,13 @@
 <title>{% block head_title %}{{ title }} · Compound{% endblock %}</title>
 {% block meta %}<meta name="description" content="Thoughtful, sourced guides to health, wealth and happiness. A little clarity for a richer life in Ireland.">{% endblock %}
 {% block head %}{% endblock %}
-{% if adsense.client and not preview %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense.client }}" crossorigin="anonymous"></script>{% endif %}
+{% if adsense.client and not preview and (ads_allowed is not defined or ads_allowed) %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense.client }}" crossorigin="anonymous"></script>{% endif %}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/static/style.css?v=20260914-images">
+<link rel="stylesheet" href="/static/style.css?v=20260914-trust">
 <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="Compound" href="/feed.xml">
-<script src="/static/site.js?v=20260914-images" defer></script>
+<script src="/static/site.js?v=20260914-trust" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -30,7 +30,7 @@
 </main>
 <footer class="site-footer">
  <div class="footer-top"><div><a class="wordmark" href="/">compound<span class="brand-dot">.</span></a><p>Good things build on each other.</p></div><div class="footer-mission">A little more clarity.<br>A little more possibility.<br>A life that feels like yours.</div><nav aria-label="Footer navigation"><a href="/about/">Our approach</a><a href="/contact/">Get in touch</a><a href="/search/">Explore the journal</a><a href="/feed.xml">Follow via RSS ↗</a></nav></div>
- <div class="footer-bottom"><span>© {{ year }} Compound · Made for life in Ireland</span><nav aria-label="Policies"><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/disclaimer/">Disclaimer</a>{% if adsense.client and not preview %}<a href="#" onclick="window.googlefc&&googlefc.callbackQueue.push({CONSENT_DATA_READY:function(){googlefc.showRevocationMessage()}});return false;">Privacy settings</a>{% endif %}</nav></div>
+ <div class="footer-bottom"><span>© {{ year }} Compound · Made for life in Ireland</span><nav aria-label="Policies"><a href="/editorial-policy/">Editorial policy</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/disclaimer/">Disclaimer</a>{% if adsense.client and not preview and (ads_allowed is not defined or ads_allowed) %}<a href="#" onclick="window.googlefc&&googlefc.callbackQueue.push({CONSENT_DATA_READY:function(){googlefc.showRevocationMessage()}});return false;">Privacy settings</a>{% endif %}</nav></div>
  <p class="footer-disclaimer">For information, not individual medical, financial or tax advice. Check the sources and speak to a qualified professional about your circumstances.</p>
 </footer>
 </body>

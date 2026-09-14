@@ -972,6 +972,19 @@ button {
   padding-inline:72px}
 }
 
+.author-note {
+  margin: 3rem 0 2rem;
+  padding: 1.4rem 1.5rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .94rem;
+  line-height: 1.65;
+}
+.author-note .eyebrow { margin: 0 0 .55rem; }
+.author-note p:last-child { margin: 0; }
+.author-note strong { color: var(--ink); }
+
 @media(max-width:1000px) {
   .site-header {
   gap:20px}

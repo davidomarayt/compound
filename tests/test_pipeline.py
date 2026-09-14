@@ -108,6 +108,9 @@ def test_full_loop(pipeline, settings):
     assert (settings.public_dir / "tag" / "revenue" / "index.html").exists()
     assert d2["headline"] in (settings.public_dir / "search.json").read_text()
     assert (settings.public_dir / "about" / "index.html").exists()
+    assert "David, editor of Compound" in out
+    assert 'name="robots" content="noindex,follow"' in (settings.public_dir / "tag" / "revenue" / "index.html").read_text()
+    assert 'name="robots" content="noindex,follow"' in (settings.public_dir / "search" / "index.html").read_text()
     assert "Disallow: /preview/" in (settings.public_dir / "robots.txt").read_text()
 
 
