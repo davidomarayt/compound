@@ -1,6 +1,2 @@
 {% extends "base.html" %}
-{% block content %}
-<h1>#{{ tag }}</h1>
-<div class="list">{% for a in articles %}{% include "_card.html" %}{% endfor %}</div>
-{% include "_signup.html" %}
-{% endblock %}
+{% block content %}<div class="simple-heading"><p class="eyebrow">EXPLORE A LITTLE FURTHER</p><h1>{{ tag|replace('-', ' ')|capitalize }}</h1><p>{{ articles|length }} stories from the Compound journal.</p></div><div class="story-grid">{% for a in articles %}{% include "_card.html" %}{% endfor %}</div>{% include "_signup.html" %}{% endblock %}

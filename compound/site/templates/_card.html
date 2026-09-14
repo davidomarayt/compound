@@ -1,5 +1,4 @@
-<article class="card">
-  <a href="{{ a.url }}"><h3>{{ a.title }}</h3></a>
-  <p class="meta"><span class="pill pill-{{ a.pillar }}">{{ a.pillar_label }}</span> <time datetime="{{ a.date.isoformat() }}">{{ a.date | long_date }}</time></p>
-  {% if a.summary %}<p class="summary">{{ a.summary }}</p>{% endif %}
+<article class="compound-story" data-pillar="{{ a.pillar }}">
+ <a class="card-image" href="{{ a.url }}" aria-label="Read {{ a.title }}"><img src="{{ a.image }}" alt="" width="800" height="520" loading="lazy"><span class="card-image-arrow" aria-hidden="true">↗</span></a>
+ <div class="card-content"><p class="meta"><span class="category category-{{ a.pillar }}">{{ a.pillar_label }}</span><span>{{ a.reading_minutes }} min read</span></p><h3><a href="{{ a.url }}">{{ a.title }}</a></h3><p class="summary">{{ a.description }}</p><div class="card-bottom"><time datetime="{{ a.date.isoformat() }}">{{ a.date | long_date }}</time><a href="{{ a.url }}" aria-label="Read {{ a.title }}">Read story <span aria-hidden="true">↗</span></a></div></div>
 </article>

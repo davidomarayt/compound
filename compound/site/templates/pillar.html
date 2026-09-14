@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
-<h1 class="pillar-title pill-{{ pillar }}">{{ pillar_labels[pillar] }}</h1>
-<p class="blurb">{{ pillar_blurbs[pillar] }}</p>
-<div class="list">{% for a in articles %}{% include "_card.html" %}{% else %}<p class="empty">Nothing here yet.</p>{% endfor %}</div>
+<section class="collection-hero collection-{{ pillar }}"><div><p class="eyebrow">THE COMPOUND JOURNAL / {{ pillar_labels[pillar] }}</p><h1>{{ {'health':'A little better.<br>From the inside out.', 'wealth':'More clarity.<br>More possibility.', 'happiness':'Make space<br>for the good.'}[pillar]|safe }}</h1><p>{{ pillar_blurbs[pillar] }}</p></div><img src="/static/images/{{ pillar }}.jpg" alt="" width="800" height="520"></section>
+<div class="section-heading collection-heading"><h2>The {{ pillar }} edit.</h2><span>{{ articles|length }} stories to explore</span></div>
+<div class="story-grid">{% for a in articles %}{% include "_card.html" %}{% else %}<p class="empty">Our first stories are on their way. Explore another pillar in the meantime.</p>{% endfor %}</div>
 {% with slot=adsense.slots.feed, name="feed" %}{% include "_ad.html" %}{% endwith %}
 {% include "_signup.html" %}
 {% endblock %}

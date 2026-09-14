@@ -68,6 +68,22 @@ class Article:
     def pillar_label(self) -> str:
         return PILLAR_LABELS.get(self.pillar, self.pillar.title())
 
+    @property
+    def reading_minutes(self) -> int:
+        return max(1, math.ceil(len(re.sub(r"<[^>]+>", " ", self.body_html).split()) / 220))
+
+    @property
+    def image(self) -> str:
+        if "sleep" in self.slug:
+            image = "sleep"
+        elif "vitamin" in self.slug or "cholesterol" in self.slug:
+            image = "nutrition"
+        elif "worry" in self.slug:
+            image = "mindful"
+        else:
+            image = self.pillar
+        return f"/static/images/{image}.jpg"
+
 
 @dataclass
 class Page:
@@ -363,7 +379,14 @@ def build_site(settings: Settings) -> dict:
         feed = [a for a in arts if a is not pinned]
         columns[p] = {"pinned": pinned, "feed": feed[:8]}
 
-    _write(out / "index.html", env.get_template("home.html").render(columns=columns, title="Compound"))
+    # Balance the first row across the three pillars, retaining date order within each.
+    home_articles = []
+    for i in range(max((len(items) for items in by_pillar.values()), default=0)):
+        for p in PILLARS:
+            if i < len(by_pillar[p]):
+                home_articles.append(by_pillar[p][i])
+    _write(out / "index.html", env.get_template("home.html").render(
+        columns=columns, articles=articles, home_articles=home_articles, title="Compound"))
 
     for p in PILLARS:
         _write(out / p / "index.html", env.get_template("pillar.html").render(pillar=p, articles=by_pillar[p], title=PILLAR_LABELS[p]))
@@ -383,11 +406,12 @@ def build_site(settings: Settings) -> dict:
 
     index = [
         {"title": a.title, "url": a.url, "pillar": a.pillar_label, "date": a.date.isoformat(),
-         "summary": a.summary, "tags": a.tags}
+         "summary": a.summary, "tags": a.tags, "description": a.description,
+         "image": a.image, "reading_minutes": a.reading_minutes, "date_label": long_date(a.date)}
         for a in articles
     ]
     _write(out / "search.json", json.dumps(index, ensure_ascii=False))
-    _write(out / "search" / "index.html", env.get_template("search.html").render(title="Search"))
+    _write(out / "search" / "index.html", env.get_template("search.html").render(title="Search", search_index=index))
     _write(out / "feed.xml", env.get_template("feed.xml").render(articles=articles[:30]))
     _write(out / "robots.txt", f"User-agent: *\nDisallow: /preview/\nSitemap: {settings.site_base_url}/sitemap.xml\n")
     host = urlparse(settings.site_base_url).hostname or ""

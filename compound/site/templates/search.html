@@ -1,26 +1,5 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Search</h1>
-<form class="search-form" onsubmit="return false"><input id="q" type="search" placeholder="Search topics, e.g. rent tax credit" autofocus></form>
-<div id="results" class="list"></div>
-<script>
-(function(){
-  var idx=[], q=document.getElementById('q'), out=document.getElementById('results');
-  fetch('/search.json').then(function(r){return r.json()}).then(function(d){idx=d; run();});
-  function run(){
-    var t=q.value.trim().toLowerCase(); out.innerHTML='';
-    if(!t){return;}
-    var words=t.split(/\s+/);
-    idx.filter(function(a){var hay=(a.title+' '+a.summary+' '+a.tags.join(' ')).toLowerCase();return words.every(function(w){return hay.indexOf(w)>=0;});})
-       .slice(0,30).forEach(function(a){
-         var el=document.createElement('article'); el.className='card';
-         el.innerHTML='<a href="'+a.url+'"><h3></h3></a><p class="meta"><span class="pill pill-'+a.pillar.toLowerCase()+'">'+a.pillar+'</span> '+a.date+'</p><p class="summary"></p>';
-         el.querySelector('h3').textContent=a.title; el.querySelector('.summary').textContent=a.summary; out.appendChild(el);
-       });
-    if(!out.children.length){out.innerHTML='<p class="empty">No matches.</p>';}
-  }
-  q.addEventListener('input', run);
-  var init=new URLSearchParams(location.search).get('q'); if(init){q.value=init;}
-})();
-</script>
+<section class="search-hero"><p class="eyebrow">FOLLOW YOUR CURIOSITY</p><h1>What’s on your mind?</h1><p>A question about your money. A better night’s sleep. A little peace of mind.</p><form class="search-form" role="search"><label class="sr-only" for="q">Search the journal</label><input id="q" type="search" name="q" placeholder="Search the journal…" autocomplete="off"><button type="submit" class="button button-dark">Search <span aria-hidden="true">↗</span></button></form><div class="suggested-searches"><span>Try</span><button data-query="sleep">Better sleep</button><button data-query="tax">Irish tax credits</button><button data-query="worry">Peace of mind</button></div></section><p id="search-status" class="eyebrow" role="status">Browse all stories</p><div id="results" class="story-grid"></div><noscript><p>Enable JavaScript to search, or browse <a href="/health/">Health</a>, <a href="/wealth/">Wealth</a> and <a href="/happiness/">Happiness</a>.</p></noscript>
+<script id="search-data" type="application/json">{{ search_index|tojson }}</script>
 {% endblock %}

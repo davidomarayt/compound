@@ -1,27 +1,16 @@
 {% extends "base.html" %}
-{% block head_title %}Compound · Three pillars to compound your life{% endblock %}
+{% block head_title %}Compound · Health, wealth & happiness for life in Ireland{% endblock %}
+{% block head %}<link rel="canonical" href="{{ site_url }}/"><meta property="og:title" content="Compound · A little better, every day"><meta property="og:description" content="Thoughtful guides to health, wealth and happiness, for life in Ireland."><meta property="og:image" content="{{ site_url }}/static/images/landscape.jpg"><meta property="og:type" content="website"><meta property="og:url" content="{{ site_url }}/">{% endblock %}
 {% block content %}
-<section class="hero">
-  <h1>Three pillars to compound your life.</h1>
-  <p>Plain, sourced writing on health, money and happiness for people in Ireland. Every figure checked against where it came from.</p>
+<section class="home-hero">
+ <div class="hero-copy"><p class="eyebrow"><span class="tiny-star" aria-hidden="true">✳</span> HEALTH. WEALTH. HAPPINESS.</p><h1>Small changes.<br>A <em>richer</em> life.</h1><p class="hero-description">Clear thinking for your health, your money, and the things that make life good. Thoughtfully researched. Written for Ireland.</p><a class="button button-dark" href="#latest">Find your next good read <span aria-hidden="true">↗</span></a><div class="hero-footnote"><span class="triple-dot" aria-hidden="true">● ● ●</span> Three pillars. One better everyday.</div></div>
+ <div class="hero-art"><img src="/static/images/landscape.jpg" width="1200" height="800" fetchpriority="high" alt="Quiet water reflecting mountains and a sunlit green landscape"><div class="image-caption"><span>A FRESH PERSPECTIVE</span><p>Make room for<br>what matters.</p><span class="round-arrow" aria-hidden="true">↗</span></div></div>
 </section>
-{% with variant="hero" %}{% include "_signup.html" %}{% endwith %}
-<div class="columns">
-  {% for p in pillars %}
-  <section class="column column-{{ p }}">
-    <h2><a href="/{{ p }}/">{{ pillar_labels[p] }}</a></h2>
-    <p class="blurb">{{ pillar_blurbs[p] }}</p>
-    {% set col = columns[p] %}
-    {% if col.pinned %}
-      <div class="pinned">
-        <span class="pinned-label">Start here</span>
-        {% with a=col.pinned %}{% include "_card.html" %}{% endwith %}
-      </div>
-    {% endif %}
-    {% for a in col.feed %}{% include "_card.html" %}{% else %}
-      {% if not col.pinned %}<p class="empty">Nothing here yet.</p>{% endif %}
-    {% endfor %}
-  </section>
-  {% endfor %}
-</div>
+<div class="values-strip"><span>Curiosity, with substance.</span><span>Grounded in evidence</span><span>An Irish perspective</span><a href="/about/">Independent by design <span aria-hidden="true">↗</span></a></div>
+<section class="pillar-section" aria-labelledby="pillars-title"><div class="section-heading"><div><p class="eyebrow">THE BIG PICTURE</p><h2 id="pillars-title">A good life has more than one side.</h2></div><p>Explore what matters to you.</p></div><div class="pillar-cards">
+{% for p in pillars %}<a class="pillar-tile tile-{{ p }}" href="/{{ p }}/"><div class="tile-top"><span class="eyebrow">0{{ loop.index }} / {{ pillar_labels[p] }}</span><span class="tile-arrow" aria-hidden="true">↗</span></div><h3>{{ {'health':'Feel more like yourself.', 'wealth':'Make your money matter.', 'happiness':'Find the good in everyday.'}[p] }}</h3><p>{{ {'health':'Sleep, movement and wellbeing. Make sense of what the evidence says.', 'wealth':'Irish money, without the maze. Tax, pensions and the bigger picture.', 'happiness':'A little space for relationships, peace of mind and living well.'}[p] }}</p><div class="tile-bottom"><span>Explore {{ p }}</span><span class="pillar-symbol symbol-{{ p }}" aria-hidden="true"></span></div></a>{% endfor %}
+</div></section>
+<section class="latest-section" id="latest" aria-labelledby="latest-title"><div class="section-heading"><div><p class="eyebrow">THE JOURNAL</p><h2 id="latest-title">Worth your time.</h2></div><a class="text-link" href="/search/">View all stories <span aria-hidden="true">↗</span></a></div><div class="filter-row" role="group" aria-label="Filter stories"><button class="filter active" data-filter="all" aria-pressed="true">All stories</button>{% for p in pillars %}<button class="filter" data-filter="{{ p }}" aria-pressed="false">{{ pillar_labels[p] }}</button>{% endfor %}<span class="filter-count" aria-live="polite">{{ articles|length }} stories to explore</span></div><div class="story-grid">{% for a in home_articles %}{% include "_card.html" %}{% endfor %}</div></section>
+<section class="editorial-note"><div class="note-symbol" aria-hidden="true">✳</div><div><p class="eyebrow">LESS NOISE. MORE UNDERSTANDING.</p><h2>Life is complicated.<br>Good information shouldn’t be.</h2><p>We follow the research, explain the caveats, and link to the sources. So you can spend less time searching and more time living.</p><a class="text-link" href="/about/">Get to know Compound <span aria-hidden="true">↗</span></a></div><span class="note-aside">INDEPENDENT THINKING.<br>EVERYDAY POSSIBILITY.</span></section>
+{% with variant="home" %}{% include "_signup.html" %}{% endwith %}
 {% endblock %}

@@ -1,44 +1,21 @@
 {% extends "base.html" %}
 {% block meta %}<meta name="description" content="{{ article.description }}">{% endblock %}
 {% block head %}{% if preview %}<meta name="robots" content="noindex,nofollow">{% else %}
-<link rel="canonical" href="{{ site_url }}{{ article.url }}">
-<meta property="og:type" content="article">
-<meta property="og:title" content="{{ article.title }}">
-<meta property="og:description" content="{{ article.description }}">
-<meta property="og:url" content="{{ site_url }}{{ article.url }}">
-<meta property="og:site_name" content="Compound">
-<meta name="twitter:card" content="summary">
-<script type="application/ld+json">{{ article_jsonld | safe }}</script>{% endif %}{% endblock %}
+<link rel="canonical" href="{{ site_url }}{{ article.url }}"><meta property="og:type" content="article"><meta property="og:title" content="{{ article.title }}"><meta property="og:description" content="{{ article.description }}"><meta property="og:url" content="{{ site_url }}{{ article.url }}"><meta property="og:site_name" content="Compound"><meta property="og:image" content="{{ site_url }}{{ article.image }}"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{{ article_jsonld | safe }}</script>{% endif %}{% endblock %}
 {% block content %}
 {% if preview %}<div class="preview-banner">PREVIEW — not published. Approve or redraft from Telegram.</div>{% endif %}
-<article class="article">
-  <p class="meta"><a class="pill pill-{{ article.pillar }}" href="/{{ article.pillar }}/">{{ article.pillar_label }}</a>
-    <time datetime="{{ article.date.isoformat() }}">{{ article.date | long_date }}</time></p>
-  <h1>{{ article.title }}</h1>
-  {% if article.summary %}<p class="standfirst">{{ article.summary }}</p>{% endif %}
-  {% if not preview %}{% with slot=adsense.slots.article_top, name="article-top" %}{% include "_ad.html" %}{% endwith %}{% endif %}
-  <div class="body">{{ article.body_with_charts|safe }}</div>
-  {% if article.sources %}
-  <aside class="sources">
-    <h2>Sources</h2>
-    <ol>{% for s in article.sources %}<li><a href="{{ s.url }}" rel="noopener">{{ s.title or s.url }}</a></li>{% endfor %}</ol>
-  </aside>
-  {% endif %}
-  {% if not preview %}{% with slot=adsense.slots.article_bottom, name="article-bottom" %}{% include "_ad.html" %}{% endwith %}{% endif %}
-  {% with variant="inline", heading="Don't miss the deadline", blurb=(article.email_cta or none) %}{% include "_signup.html" %}{% endwith %}
-  {% if article.figures %}
-  <details class="figures">
-    <summary>Figures used in this piece</summary>
-    <table>
-      <thead><tr><th>Figure</th><th>What</th><th>Source</th></tr></thead>
-      <tbody>{% for f in article.figures %}<tr><td>{{ f.value }}</td><td>{{ f.label }}</td><td>{% if f.source_url and f.source_url != 'owner' %}<a href="{{ f.source_url }}" rel="noopener">source</a>{% else %}author{% endif %}</td></tr>{% endfor %}</tbody>
-    </table>
-  </details>
-  {% endif %}
-  {% if article.tags %}<p class="tags">{% for t in article.tags %}<a href="/tag/{{ t }}/">#{{ t }}</a> {% endfor %}</p>{% endif %}
+<article class="article article-{{ article.pillar }}">
+ <header class="article-header"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/{{ article.pillar }}/">{{ article.pillar_label }}</a></nav><p class="meta"><span class="category category-{{ article.pillar }}">{{ article.pillar_label }}</span><span>{{ article.reading_minutes }} min read</span></p><h1>{{ article.title }}</h1>{% if article.summary %}<p class="standfirst">{{ article.summary }}</p>{% endif %}<div class="article-byline"><span>By <a href="/about/">Compound</a> <span class="byline-date">/ <time datetime="{{ article.date.isoformat() }}">{{ article.date | long_date }}</time></span></span><button class="share-button" type="button" data-share>Copy link <span aria-hidden="true">↗</span></button><span class="sr-only" role="status" id="share-status"></span></div></header>
+ <div class="article-cover"><img src="{{ article.image }}" width="1200" height="660" alt="" fetchpriority="high"><span>{{ article.pillar_label }} / The Compound journal</span></div>
+ <div class="article-layout"><aside class="reading-sidebar"><div class="reading-nav" hidden><p class="eyebrow">IN THIS STORY</p><nav id="article-toc" aria-label="Article sections"></nav><a class="back-top" href="#main">Back to top ↑</a></div></aside><div class="reading-column">
+ {% if not preview %}{% with slot=adsense.slots.article_top, name="article-top" %}{% include "_ad.html" %}{% endwith %}{% endif %}
+ <div class="article-prose">{{ article.body_with_charts|safe }}</div>
+ {% if article.sources %}<aside class="sources" id="sources"><p class="eyebrow">Sources / Follow the evidence</p><h2>The sources behind this story.</h2><ol>{% for s in article.sources %}<li><a href="{{ s.url }}" rel="noopener">{{ s.title or s.url }}</a></li>{% endfor %}</ol></aside>{% endif %}
+ {% if article.figures %}<details class="figures"><summary>Figures used in this piece</summary><div class="table-scroll"><table><thead><tr><th>Figure</th><th>What it means</th><th>Source</th></tr></thead><tbody>{% for f in article.figures %}<tr><td>{{ f.value }}</td><td>{{ f.label }}</td><td>{% if f.source_url and f.source_url != 'owner' %}<a href="{{ f.source_url }}" rel="noopener">Source ↗</a>{% else %}Author{% endif %}</td></tr>{% endfor %}</tbody></table></div></details>{% endif %}
+ {% if article.tags %}<div class="tags">{% for t in article.tags %}<a href="/tag/{{ t }}/">{{ t|replace('-', ' ') }}</a>{% endfor %}</div>{% endif %}
+ {% if not preview %}{% with slot=adsense.slots.article_bottom, name="article-bottom" %}{% include "_ad.html" %}{% endwith %}{% endif %}
+ </div></div>
 </article>
-{% if related %}
-<section class="related"><h2>Related</h2><div class="list">{% for a in related %}{% include "_card.html" %}{% endfor %}</div></section>
-{% endif %}
-{% include "_signup.html" %}
+{% if related %}<section class="related"><div class="section-heading"><div><p class="eyebrow">KEEP YOUR CURIOSITY GOING</p><h2>A little more worth reading.</h2></div><a class="text-link" href="/{{ article.pillar }}/">Explore {{ article.pillar }} ↗</a></div><div class="story-grid">{% for a in related %}{% include "_card.html" %}{% endfor %}</div></section>{% endif %}
+{% with variant="article" %}{% include "_signup.html" %}{% endwith %}
 {% endblock %}
