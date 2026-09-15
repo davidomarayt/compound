@@ -15,15 +15,85 @@ The reference categories below follow NICE adult guidance. This is UK clinical g
 
 For the ethnic backgrounds listed in the calculator, NICE uses **23 for overweight and 27.5 for obesity**, because cardiometabolic risk can occur at lower BMI. Selecting that option updates both the result and visual scale. “Prefer not to say” uses standard thresholds; it cannot account for an undisclosed background. [2]
 
-<h2 id="bmi-limits">Where BMI helps — and where it falls short</h2>
+<h2 id="bmi-limits">Why BMI is not a complete health assessment</h2>
 
-The HSE treats BMI as one part of an assessment, alongside waist-to-height ratio and weight-related health problems. It cannot distinguish muscle from fat. A number in the healthy-weight range does not guarantee good health; a high number alone does not establish a diagnosis. [HSE [1]](#source-hse)
+**BMI answers a narrow question: how much do you weigh relative to your height?** It does not calculate your fitness, body-fat percentage or overall health. The HSE uses it alongside other information, rather than treating the category as a diagnosis. [HSE [1]](#source-hse)
 
-This tool is for adults. Do not use it during pregnancy, for children, with a known or suspected eating disorder, or where a condition affects height. [1] For adults **65 and over**, NICE advises interpreting BMI cautiously alongside other health conditions and functional ability. [2]
+An accurate calculator can therefore produce an incomplete picture. The arithmetic may be correct while the conclusion someone draws from it — “I am unhealthy” or “I have nothing to worry about” — is not justified.
 
-### Why add your waist measurement?
+<aside class="bmi-notice" aria-labelledby="bmi-rugby-example" markdown="1">
 
-For adults with **BMI below 35**, the HSE recommends waist-to-height ratio as an additional check. Divide waist by height in the same units. At **0.5 or above**, health risks may be increased. For example, an 85 cm waist at 170 cm gives 0.5. The tool reports the ratio without setting a personal weight-loss target. [1]
+<h3 id="bmi-rugby-example">The Irish rugby example: Tadhg Furlong</h3>
+
+The **British & Irish Lions’ official profile** lists Ireland and Leinster prop Tadhg Furlong at **1.83 m and 119 kg**. It also records his participation in all three Tests on each of the 2017, 2021 and 2025 Lions tours — an elite international playing record. [Official Lions profile [7]](#source-furlong)
+
+| Published measurement | Value used |
+| --- | --- |
+| Height | 1.83 m / 183 cm |
+| Weight | 119 kg |
+| Calculated BMI | **119 ÷ (1.83 × 1.83) = 35.5** |
+| Standard adult BMI category | **Obesity class 2** |
+
+*BMI calculated by Compound from the profile measurements checked on 15 September 2026. Published playing weights may change or differ between profiles; these are not a current clinical measurement. Category thresholds: NICE [2].*
+
+**A BMI of 35.5 and elite sporting performance can coexist.** The calculator only receives height and total weight. It has no input for strength, conditioning, muscle mass or rugby performance.
+
+This is an illustration of BMI’s limits, **not a diagnosis of Furlong**. The profile does not establish his body-fat percentage, blood pressure or metabolic health. We cannot conclude that all of his weight is muscle, or that an elite athlete has no health risks. Equally, the BMI category cannot tell us his fitness level or prescribe how much weight he should lose.
+
+</aside>
+
+### 1. It cannot separate muscle from fat
+
+A kilogram contributes the same amount to BMI whether it is muscle or fat. The CDC explicitly notes that muscular people can fall into the overweight or obesity categories because BMI cannot distinguish fat, muscle and bone. It also cannot show where body fat is carried. [CDC BMI FAQs [8]](#source-cdc-faq)
+
+Imagine two adults who are both 1.80 m tall and weigh 90 kg. Both have a BMI of **27.8**. Even if their body compositions differ substantially, the calculator must give the same result: it has identical inputs. This is a mathematical example, not a claim about two measured individuals.
+
+### 2. A “healthy” BMI can also give false reassurance
+
+The limitation works in both directions. NICE notes that someone in the healthy-weight BMI category may still have excess fat around the abdomen. That is one reason to consider waist measurements as well. [NICE, recommendation 1.9.10 [2]](#source-nice)
+
+The category name should not be read as a clean bill of health. A BMI calculator cannot check your blood pressure, cholesterol or the findings of a physical examination. The CDC recommends considering those factors alongside BMI when assessing an individual. [CDC: About BMI [9]](#source-cdc-about)
+
+### 3. It does not measure your fitness or daily function
+
+There is no test of stamina, strength, balance or mobility in the BMI formula. Nor does it record whether you smoke, how you sleep or what you can comfortably do each day. Those omissions are a reason to ask more questions, rather than to judge someone from the number alone. Clinical assessment considers history, health behaviours, examination and relevant laboratory findings. [8]
+
+For example, if your weight and height stay the same while your walking endurance improves, your BMI stays exactly the same. The calculator has not captured that improvement. The same logic applies in reverse: an unchanged BMI cannot reassure you about a new symptom.
+
+### 4. Context changes the interpretation
+
+NICE advises caution with high muscle mass and in adults aged 65 or over; age-related health conditions and functional ability matter. Some ethnic backgrounds also have cardiometabolic risks at lower BMI, as explained in the category section above. A single unadjusted label cannot account for all of these differences. [2]
+
+This tool is not suitable during pregnancy, for under-18s, with a known or suspected eating disorder, or where a condition affects height. These are reasons to use a different assessment with appropriate professional support, not to reinterpret the adult chart yourself. [1]
+
+### 5. A category boundary is not a sudden biological change
+
+At 1.80 m, **80.9 kg gives a BMI of 24.97**, while **81.0 kg gives 25.00**. A 100 g difference crosses the standard category boundary. These are calculated examples: the change of label does not, by itself, establish a sudden change in someone’s health.
+
+Categories help organise a continuous measurement. They should prompt proportionate interpretation, not turn a small difference or rounding artefact into a verdict.
+
+### So why keep a BMI calculator at all?
+
+BMI remains quick, inexpensive and useful for screening and tracking populations. Its limitations do not mean that excess body fat is harmless, or that everyone with a high BMI has an athlete’s body composition. The CDC recommends using BMI as one part of a fuller individual assessment. [9]
+
+Ireland’s 2022 adapted obesity clinical practice guideline similarly emphasises health, function and quality of life, rather than weight loss alone. It recommends a comprehensive assessment to guide care. This supports using the result to start a conversation, rather than to decide a treatment from a category. [Irish clinical practice guideline [10]](#source-irish-guideline)
+
+### What gives a fuller picture than BMI alone?
+
+| Measure or question | What it adds |
+| --- | --- |
+| Waist-to-height ratio, where appropriate | An additional indication of fat carried around the abdomen. [1, 2] |
+| Blood pressure and relevant blood tests | Information about risks that height and weight cannot reveal. Your GP decides which checks are appropriate. [1, 9] |
+| Physical examination and medical history | Context for symptoms, existing conditions and the BMI result. [8, 9] |
+| Daily function and quality of life | A focus on how health affects your life, alongside measurements. [10] |
+
+There is no single replacement number that answers every health question. You do not need to collect every possible measurement yourself; a GP can help decide what would be useful in your circumstances.
+
+### Why add your waist measurement here?
+
+For adults with **BMI below 35**, the HSE recommends waist-to-height ratio as an additional check. Divide waist by height in the same units. At **0.5 or above**, health risks may be increased. For example, an 85 cm waist at 170 cm gives 0.5. [1]
+
+This is still a screening measure. A ratio below 0.5 does not establish overall health, and this tool does not provide waist-ratio interpretation at BMI 35 or above. In particular, it should not be used to infer Furlong’s waist ratio: his waist measurement is not supplied in the example.
 
 <h2 id="bmi-habits">Irish recommendations you can put into practice</h2>
 
@@ -76,6 +146,10 @@ The links below support the guidance on this page. HSE and Healthy Ireland provi
 <li id="source-hse-activity"><a href="https://www2.hse.ie/living-well/exercise/increase-activity/">HSE — How to increase your activity levels</a>. Practical guidance for adults and older adults.</li>
 <li id="source-food"><a href="https://www.gov.ie/en/healthy-ireland/publications/eat-well/">Healthy Ireland — Eat Well</a>. Food choices, portions, cooking and shift-work planning.</li>
 <li id="source-care"><a href="https://www2.hse.ie/conditions/obesity/treatment/">HSE — Lifestyle changes to treat obesity</a>. Support, sustainable habits and multidisciplinary care.</li>
+<li id="source-furlong"><a href="https://www.lionsrugby.com/en/teams/mens-team/tadhg-furlong-TF974321">British & Irish Lions — Tadhg Furlong</a>. Official player profile; published height, weight and Test-tour record. Measurements checked 15 September 2026.</li>
+<li id="source-cdc-faq"><a href="https://www.cdc.gov/bmi/faq/index.html">CDC — BMI Frequently Asked Questions</a>. Muscle, body-fat distribution and assessment of athletes. US explanatory source; this calculator continues to use the adult scope and thresholds described above.</li>
+<li id="source-cdc-about"><a href="https://www.cdc.gov/bmi/about/index.html">CDC — About Body Mass Index</a>. Screening, population use and additional clinical information.</li>
+<li id="source-irish-guideline"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9801383/">Breen and colleagues — Obesity in Adults: A 2022 Adapted Clinical Practice Guideline for Ireland</a>. Comprehensive assessment and a focus on health, function and quality of life.</li>
 </ol>
 
 [Back to the calculator](#bmi-form) · [More on health in Ireland](/health/) · [Compound’s editorial policy](/editorial-policy/)
