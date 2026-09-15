@@ -38,6 +38,8 @@ A competition provides the reason to gather. Around it, conversations can range 
 
 **Community and cultural events can support mental wellbeing through enjoyment, connection and participation. The evidence does not establish that a visit to the Ploughing prevents or treats a mental illness.** Its value deserves a more thoughtful explanation than that.
 
+<figure class="ploughing-photo" style="margin:32px 0"><img src="/static/images/ploughing-exhibition.webp" alt="Crowds walking between machinery displays and exhibition tents at the National Ploughing Championships." width="1400" height="933" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;border-radius:4px"><figcaption style="font-size:13px;line-height:1.6;margin-top:10px;color:#655f59">The exhibition grounds at the National Ploughing Championships, 2007. Photo: <a href="https://commons.wikimedia.org/wiki/File:PloughingCarlow.jpg">Capabletom / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>. Resized and compressed; no content alterations.</figcaption></figure>
+
 ## From a county challenge to a national institution
 
 According to the National Ploughing Association’s own history, the beginning was a disagreement between friends Denis Allen of Wexford and J.J. Bergin of Kildare about which county had the better ploughmen. The challenge led to a contest on **16 February 1931**, in W.K. Hosie’s field at Coursetown, Athy.
@@ -76,6 +78,8 @@ A more specific study by Daisy Fancourt and Urszula Tymoszuk, published in the *
 The HSE’s practical advice is more straightforward: social contact and participation in community activities can improve mental health. It encourages people to build connections and find activities through places such as libraries, local groups and education providers. [Source: HSE](https://www2.hse.ie/mental-health/self-help/activities/activities-with-other-people/).
 
 Taken together, these sources support creating opportunities for enjoyable, meaningful participation. They do not justify promising a particular reduction in anxiety or depression from buying a ticket.
+
+<figure class="ploughing-photo" style="margin:32px 0"><img src="/static/images/ploughing-dancing.webp" alt="Couples dancing beside the bandstand while a singer performs and visitors watch at the Ploughing Championships." width="1400" height="933" loading="lazy" decoding="async" style="display:block;width:100%;max-width:100%;height:auto;border-radius:4px"><figcaption style="font-size:13px;line-height:1.6;margin-top:10px;color:#655f59">Dancing at the bandstand: a photograph from an earlier Ploughing Championships, showing its social and cultural side. Photo: <a href="https://commons.wikimedia.org/wiki/File:Dancing_at_the_bandstand.jpg">Jack Caffrey / Nationalploughing / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>. Resized and compressed; no content alterations.</figcaption></figure>
 
 ## How a shared occasion can help
 
