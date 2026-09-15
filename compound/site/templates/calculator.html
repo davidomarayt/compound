@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block head_title %}Compound Interest Calculator Ireland — Savings & Investment Growth | Compound{% endblock %}
+{% block meta %}<meta name="description" content="Free Irish compound interest calculator. Compare savings plans, set goals, add lump sums and explore inflation, fees and supported Irish tax illustrations.">{% endblock %}
+{% block head %}
+<link rel="canonical" href="{{ site_url }}/compound-interest-calculator/">
+<meta property="og:type" content="website"><meta property="og:title" content="Compound Interest Calculator Ireland"><meta property="og:description" content="Small steps. A bigger future. Explore your growth, compare plans and find what it takes to reach your goal."><meta property="og:url" content="{{ site_url }}/compound-interest-calculator/"><meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/static/compound-calculator.css?v=20260915"><script defer src="/static/compound-calculator.js?v=20260915"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Compound Interest Calculator Ireland","url":"{{ site_url }}/compound-interest-calculator/","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}}</script>
+{% endblock %}
+{% block content %}
+{% include "_compound_calculator.html" %}
+<article class="calculator-guide" aria-labelledby="guide-title">
+<div class="guide-heading"><p class="eyebrow">UNDERSTAND THE NUMBERS</p><h2 id="guide-title">What happens between now and your future balance?</h2><p>A practical guide to compound growth, written for savers and investors in Ireland.</p><p class="guide-meta">By Compound · Published 15 September 2026 · Tax sources checked 15 September 2026</p></div>
+<nav class="guide-contents" aria-label="In this guide"><a href="#how-compounding-works">How it works</a><a href="#worked-examples">Worked examples</a><a href="#starting-early">Starting early</a><a href="#inflation-fees">Inflation & fees</a><a href="#irish-tax">Irish tax</a><a href="#calculator-method">Our method</a><a href="#calculator-faq">FAQs</a></nav>
+{{ calculator_guide | safe }}
+<aside class="guide-next"><h2>Put the numbers in context</h2><p>Explore our <a href="/wealth/">Irish wealth guides</a>, see <a href="/wealth/mortgage-overpayments-100-euro-ireland/">what an extra €100 a month could do to your mortgage</a>, or learn about <a href="/wealth/pension-tax-relief-ireland-how-to-claim/">pension tax relief in Ireland</a>.</p><a class="button button-dark" href="#compound-concept">Try another scenario</a></aside>
+</article>
+{% endblock %}

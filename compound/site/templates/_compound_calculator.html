@@ -1,0 +1,37 @@
+<div id="compound-concept">
+
+
+<div class="intro"><span class="quiet">FREE TOOL · BUILT FOR IRELAND</span><h1>Compound Interest Calculator Ireland</h1><p>Explore growth, compare plans and work towards a goal. Start with four numbers; open Advanced when you need more detail.</p></div>
+<noscript><p>Enable JavaScript to use the interactive calculator. Worked examples and the guide below remain available.</p></noscript><div class="layout"><section class="controls" aria-label="Calculator inputs">
+<div class="switches"><button type="button" id="cc-basic" aria-pressed="true">Basic</button><button type="button" id="cc-advanced" aria-pressed="false">Advanced</button></div>
+<label>Planning mode<select id="cc-mode"><option value="growth">Project my growth</option><option value="goal">Reach my goal</option><option value="time">Find my timeline</option></select></label>
+<div id="cc-goal-wrap" hidden><label>Target balance (€)<input id="cc-target" type="number" min="1" max="100000000" value="250000"></label><p id="cc-goal-answer" aria-live="polite"></p></div>
+<label>Starting amount (€)<input id="cc-start" type="number" step="any" min="0" max="100000000" value="10000"></label>
+<label>Monthly contribution (€)<input id="cc-monthly" type="number" step="any" min="0" max="1000000" value="300"></label>
+<label for="cc-years">Time to grow <strong id="cc-years-label">25 years</strong></label><input id="cc-years" type="range" min="1" max="50" value="25">
+<label>Assumed annual return (%)<input id="cc-rate" type="number" min="-50" max="30" step="0.1" value="5"></label>
+<div id="cc-extra" hidden><label>Annual contribution increase (%)<input id="cc-increase" type="number" min="0" max="20" value="0" step="0.5"></label><label>Annual fee (%)<input id="cc-fee" type="number" min="0" max="5" value="0" step="0.1"></label><label>Assumed inflation (%)<input id="cc-inflation" type="number" min="0" max="15" value="2" step="0.1"></label></div>
+<p class="quiet" id="cc-error" role="alert"></p>
+<div id="cc-planning-extra" hidden>
+<details><summary>Life events</summary><div id="cc-events"></div><button id="cc-event-add" type="button">Add a life event</button></details>
+<details><summary>Irish tax illustration</summary><label>Tax treatment<select id="cc-tax"><option value="none">Before tax</option><option value="dirt">Irish deposits — DIRT</option><option value="cgt">Direct shares — CGT on final sale</option></select></label><label id="cc-exempt-wrap" hidden>Unused CGT exemption in sale year (€)<input id="cc-exempt" type="number" min="0" max="1270" value="1270"></label><p id="cc-tax-note"></p><p class="quiet">Illustration for an Irish-resident individual. Current rules held constant. ETFs, funds, pensions, dividends and company taxation are outside this module.</p><a href="https://www.revenue.ie/en/additional-incomes/dirt/what-dirt-rate-is-applicable.aspx" target="_blank" rel="noopener">Revenue: DIRT</a> · <a href="https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx" target="_blank" rel="noopener">Revenue: CGT</a><p class="quiet">Rules checked 15 September 2026.</p></details>
+</div>
+</section><section class="result" aria-label="Projection">
+<span id="cc-result-label">Projected balance after 25 years</span><div class="amount" id="cc-total" aria-live="polite"></div>
+<div class="stats"><div><span>You contribute</span><strong id="cc-paid"></strong></div><div><span>Growth after fees</span><strong id="cc-growth"></strong></div></div>
+
+<svg id="cc-chart" role="img" aria-label="Projected balance and contributions. Touch or hover to inspect; use the year slider for keyboard access."></svg>
+<div class="chart-legend"><span><i></i>Projected balance</span><span><i class="deposits"></i>Contributions</span></div>
+<div id="cc-inspect"></div>
+<label for="cc-scrub">Explore year <output id="cc-scrub-year">25</output></label><input id="cc-scrub" type="range" min="0" max="25" value="25" step="1">
+<label><input id="cc-real" type="checkbox"> Show projected balance in today’s money</label><p id="cc-real-result" hidden></p>
+<h3>See the difference</h3><div class="actions"><button type="button" id="cc-add" aria-pressed="false">Compare +€100/month</button><button type="button" id="cc-wait" aria-pressed="false">Compare starting 5 years later</button></div><p id="cc-comparison" aria-live="polite"></p>
+<details><summary>What’s driving your result?</summary><div id="cc-insights"></div></details>
+</section></div>
+<section class="workspace"><h3>Your plans</h3><label>Plan name<input id="cc-name" type="text" maxlength="50" value="My long-term plan"></label><div class="actions"><button id="cc-save" type="button">Save on this device</button><button id="cc-share" type="button">Share scenario</button><button id="cc-export" type="button">Export annual CSV</button><button id="cc-report" type="button">View / print summary</button></div><p id="cc-status" role="status"></p><div id="cc-saved"></div><div id="cc-share-panel" hidden><label>Share link<input id="cc-share-url" type="text" readonly></label><label>Scenario code<textarea id="cc-code" rows="3"></textarea></label><div class="actions"><button id="cc-copy" type="button">Copy share link</button><button id="cc-import" type="button">Load code</button></div><p class="quiet">Share the link or keep the code to reopen your plan. Anyone with either can read its amounts and assumptions.</p></div></section>
+<details class="workspace"><summary>Year-by-year breakdown</summary><div id="cc-table" class="scroll-table"></div></details>
+<section id="cc-report-panel" class="workspace" hidden><h2>Your Compound plan</h2><div id="cc-report-content"></div><button id="cc-print" type="button">Print / save as PDF</button></section>
+<footer class="quiet" id="cc-method">Illustrative assumptions, not a forecast. Monthly deposits at month-end. Annual effective return converted to monthly growth; percentage fees deducted monthly. Life-event years start at month 1 of that year. Contribution increases continue during pauses. Advanced settings remain active in Basic view. Goal amounts use the selected tax treatment; purchasing-power view adjusts display only, not your nominal goal.</footer>
+
+
+</div>

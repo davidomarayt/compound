@@ -419,12 +419,25 @@ def build_site(settings: Settings) -> dict:
     for pg in pages:
         _write(out / pg.slug / "index.html", env.get_template("page.html").render(page=pg, title=pg.title))
 
+    calculator_path = "/compound-interest-calculator/"
+    has_calculator = (settings.content_dir / "compound-calculator-guide.md").is_file()
+    if has_calculator:
+        calculator_guide = render_markdown((settings.content_dir / "compound-calculator-guide.md").read_text(encoding="utf-8"))
+        _write(out / "compound-interest-calculator" / "index.html", env.get_template("calculator.html").render(
+            title="Compound Interest Calculator Ireland", pillar="wealth", ads_allowed=False,
+            calculator_guide=calculator_guide.replace("<table>", '<div class="guide-table-scroll"><table>').replace("</table>", "</table></div>")))
+
     index = [
         {"title": a.title, "url": a.url, "pillar": a.pillar_label, "date": a.date.isoformat(),
          "summary": a.summary, "tags": a.tags, "description": a.description,
          "image": a.image, "reading_minutes": a.reading_minutes, "date_label": long_date(a.date)}
         for a in articles
     ]
+    if has_calculator:
+        index.insert(0, {"title": "Compound Interest Calculator Ireland", "url": calculator_path,
+                        "pillar": "Wealth", "date": "2026-09-15", "summary": "Explore growth, compare plans, set goals and model inflation, fees and supported Irish tax.",
+                        "tags": ["saving", "investing", "calculator"], "description": "Free interactive compound interest calculator for Ireland.",
+                        "image": "", "reading_minutes": 10, "date_label": "15 September 2026"})
     _write(out / "search.json", json.dumps(index, ensure_ascii=False))
     _write(out / "search" / "index.html", env.get_template("search.html").render(title="Search", search_index=index, ads_allowed=False))
     _write(out / "feed.xml", env.get_template("feed.xml").render(articles=articles[:30]))
@@ -438,6 +451,7 @@ def build_site(settings: Settings) -> dict:
         # AdSense checks this file to confirm the site is allowed to show your ads.
         _write(out / "ads.txt", f"google.com, {client.removeprefix('ca-')}, DIRECT, f08c47fec0942fa0\n")
     urls = ([settings.site_base_url + "/"]
+            + ([settings.site_base_url + calculator_path] if has_calculator else [])
             + [settings.site_base_url + f"/{p}/" for p in PILLARS]
             + [settings.site_base_url + a.url for a in articles]
             + [settings.site_base_url + f"/{pg.slug}/" for pg in pages])

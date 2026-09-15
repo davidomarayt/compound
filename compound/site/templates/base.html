@@ -16,7 +16,7 @@ gtag('consent','default',{
 });
 window.compoundStartAnalytics=function(){if(document.querySelector('script[data-compound-ga]'))return;
   var tag=document.createElement('script');tag.async=true;tag.dataset.compoundGa='true';tag.src='https://www.googletagmanager.com/gtag/js?id={{ analytics.measurement_id }}';document.head.appendChild(tag);
-  gtag('js',new Date());gtag('config','{{ analytics.measurement_id }}',{anonymize_ip:true});
+  gtag('js',new Date());gtag('config','{{ analytics.measurement_id }}',{anonymize_ip:true,page_location:location.origin+location.pathname+location.search});
 };
 if(choice==='granted')window.compoundStartAnalytics();})();
 </script>{% endif %}
@@ -34,6 +34,7 @@ if(choice==='granted')window.compoundStartAnalytics();})();
 <header class="site-header">
   <a class="wordmark" href="/" aria-label="Compound home">compound<span class="brand-dot">.</span></a>
   <nav class="pillar-nav" aria-label="Main navigation">
+    <a href="/compound-interest-calculator/" class="nav-wealth">Calculator</a>
     {% for p in pillars %}<a href="/{{ p }}/" class="nav-{{ p }}" {% if pillar == p or (article is defined and article.pillar == p) %}aria-current="page"{% endif %}>{{ pillar_labels[p] }}</a>{% endfor %}
   </nav>
   <a class="search-link" href="/search/"><span>Explore the journal</span><span aria-hidden="true">⌕</span></a>
