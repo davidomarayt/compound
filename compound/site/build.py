@@ -427,6 +427,14 @@ def build_site(settings: Settings) -> dict:
             title="Compound Interest Calculator Ireland", pillar="wealth", ads_allowed=False,
             calculator_guide=calculator_guide.replace("<table>", '<div class="guide-table-scroll"><table>').replace("</table>", "</table></div>")))
 
+    bmi_path = "/bmi-calculator/"
+    has_bmi = (settings.content_dir / "bmi-guide.md").is_file()
+    if has_bmi:
+        bmi_guide = render_markdown((settings.content_dir / "bmi-guide.md").read_text(encoding="utf-8"))
+        _write(out / "bmi-calculator" / "index.html", env.get_template("bmi.html").render(
+            title="BMI Calculator Ireland", pillar="health", ads_allowed=False,
+            bmi_guide=bmi_guide.replace("<table>", '<div class="bmi-table"><table>').replace("</table>", "</table></div>")))
+
     index = [
         {"title": a.title, "url": a.url, "pillar": a.pillar_label, "date": a.date.isoformat(),
          "summary": a.summary, "tags": a.tags, "description": a.description,
@@ -438,6 +446,11 @@ def build_site(settings: Settings) -> dict:
                         "pillar": "Wealth", "date": "2026-09-15", "summary": "Explore growth, compare plans, set goals and model inflation, fees and supported Irish tax.",
                         "tags": ["saving", "investing", "calculator"], "description": "Free interactive compound interest calculator for Ireland.",
                         "image": "", "reading_minutes": 10, "date_label": "15 September 2026"})
+    if has_bmi:
+        index.insert(0, {"title": "BMI Calculator Ireland", "url": bmi_path,
+                         "pillar": "Health", "date": "2026-09-15", "summary": "Calculate adult BMI in kg or stones, explore waist-to-height ratio and read sourced Irish guidance.",
+                         "tags": ["BMI", "health", "calculator", "weight"], "description": "Free BMI calculator with HSE guidance for Ireland.",
+                         "image": "", "reading_minutes": 7, "date_label": "15 September 2026"})
     _write(out / "search.json", json.dumps(index, ensure_ascii=False))
     _write(out / "search" / "index.html", env.get_template("search.html").render(title="Search", search_index=index, ads_allowed=False))
     _write(out / "feed.xml", env.get_template("feed.xml").render(articles=articles[:30]))
@@ -451,6 +464,7 @@ def build_site(settings: Settings) -> dict:
         # AdSense checks this file to confirm the site is allowed to show your ads.
         _write(out / "ads.txt", f"google.com, {client.removeprefix('ca-')}, DIRECT, f08c47fec0942fa0\n")
     urls = ([settings.site_base_url + "/"]
+            + ([settings.site_base_url + bmi_path] if has_bmi else [])
             + ([settings.site_base_url + calculator_path] if has_calculator else [])
             + [settings.site_base_url + f"/{p}/" for p in PILLARS]
             + [settings.site_base_url + a.url for a in articles]
