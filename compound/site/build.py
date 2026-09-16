@@ -8,7 +8,7 @@ from __future__ import annotations
 import json
 import math
 import re
-from html import escape as html_escape
+from html import escape as html_escape, unescape as html_unescape
 from urllib.parse import urlparse
 import re
 import shutil
@@ -362,13 +362,19 @@ def article_context(env: Environment, settings: Settings, article: Article, prev
         for block in ("figures", "horizon", "timeline"):
             fragment = env.get_template(f"_live100_{block}.html").render()
             body = body.replace(f"<p>[live100:{block}]</p>", fragment)
+    crumb_items = [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": settings.site_base_url + "/"},
+        {"@type": "ListItem", "position": 2, "name": "Live to 100", "item": settings.site_base_url + "/live-to-100/"},
+    ]
+    if article.series_order > 1:
+        crumb_items.append({"@type": "ListItem", "position": 3, "name": article.title,
+                            "item": settings.site_base_url + article.url})
+    toc = [{"id": ident, "title": html_unescape(re.sub(r"<[^>]+>", "", heading))}
+           for ident, heading in re.findall(r'<h2 id="([^"]+)">(.*?)</h2>', body, re.DOTALL)]
     breadcrumbs = {
-        "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Home", "item": settings.site_base_url + "/"},
-            {"@type": "ListItem", "position": 2, "name": "Live to 100", "item": settings.site_base_url + article.url},
-        ]
+        "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": crumb_items
     }
-    return dict(article=article, preview=preview, series=series, article_body=body,
+    return dict(article=article, preview=preview, series=series, article_body=body, article_toc=toc,
                 title=article.seo_title or article.title,
                 article_jsonld=article_jsonld(article, settings.site_base_url),
                 breadcrumb_jsonld=json.dumps(breadcrumbs, ensure_ascii=False))

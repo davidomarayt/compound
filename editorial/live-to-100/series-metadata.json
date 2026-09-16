@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Happiness for a 100-Year Life: Connection, Purpose and Ordinary Days",
+    "seo_title": "Happiness for a 100-Year Life in Ireland | Compound",
+    "url": "https://compound.ie/happiness/happiness-for-a-100-year-life/",
+    "description": "Explore friendship, community, purpose and changing identity through a longer life, with practical Irish supports and careful use of research.",
+    "description_length": 142,
+    "word_count": 2128,
+    "reading_minutes": 10,
+    "publication_date": "2026-09-16",
+    "reviewed": "2026-09-16",
+    "sources": 10,
+    "hero": "/static/images/live-to-100-happiness.webp",
+    "image_alt": "Illustration of adults of different generations, including a wheelchair user, sharing tea and food in a community garden.",
+    "image_credit": "Compound / AI-generated illustration. An imagined community garden gathering in Ireland; not a documentary photograph."
+  },
+  {
+    "title": "Health for a 100-Year Life: Staying Capable, Connected and Well",
+    "seo_title": "Health for a 100-Year Life in Ireland | Compound",
+    "url": "https://compound.ie/health/health-for-a-100-year-life/",
+    "description": "An Irish guide to strength, heart and brain health, food, sleep and prevention, with practical priorities and clear limits on longevity claims.",
+    "description_length": 143,
+    "word_count": 2050,
+    "reading_minutes": 10,
+    "publication_date": "2026-09-16",
+    "reviewed": "2026-09-16",
+    "sources": 15,
+    "hero": "/static/images/live-to-100-health.webp",
+    "image_alt": "Illustration of an older woman carrying hand weights with an instructor beside her in a bright exercise studio.",
+    "image_credit": "Compound / AI-generated illustration. An imagined supported strength session; not a documentary photograph or an exercise prescription."
+  },
+  {
+    "title": "Live to 100: What a 100-Year Life Would Really Mean in Ireland",
+    "seo_title": "Live to 100 in Ireland: Planning a 100-Year Life | Compound",
+    "url": "https://compound.ie/live-to-100/",
+    "description": "What would living to 100 mean in Ireland? Explore healthspan, retirement, relationships and how to plan for a longer life without assuming you will reach 100.",
+    "description_length": 158,
+    "word_count": 2049,
+    "reading_minutes": 10,
+    "publication_date": "2026-09-16",
+    "reviewed": "2026-09-16",
+    "sources": 9,
+    "hero": "/static/images/live-to-100-coast.webp",
+    "image_alt": "Original illustration of three adults from different generations walking together on an imagined Irish coastal path.",
+    "image_credit": "Compound / AI-generated illustration. An imagined Irish coastal scene; not a documentary photograph."
+  },
+  {
+    "title": "Wealth for a 100-Year Life: Money, Housing and Choices in Ireland",
+    "seo_title": "Wealth for a 100-Year Life in Ireland | Compound",
+    "url": "https://compound.ie/wealth/wealth-for-a-100-year-life/",
+    "description": "Plan for a potentially longer life in Ireland: pensions, inflation, housing, care and changing work, with assumptions and uncertainty made clear.",
+    "description_length": 145,
+    "word_count": 2188,
+    "reading_minutes": 10,
+    "publication_date": "2026-09-16",
+    "reviewed": "2026-09-16",
+    "sources": 11,
+    "hero": "/static/images/live-to-100-wealth.webp",
+    "image_alt": "Illustration of two adults discussing a notebook at a garden table beside an imagined Irish village home.",
+    "image_credit": "Compound / AI-generated illustration. Planning at home in an imagined Irish village; not a documentary photograph."
+  }
+]

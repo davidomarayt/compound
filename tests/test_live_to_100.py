@@ -49,7 +49,9 @@ def test_local_review_has_content_but_no_publication_claims(settings, series_dra
     assert '<strong>70</strong>' in html and '<strong>35</strong>' in html
     assert html.count('class="chapter-panel"') == 5
     assert html.count("Coming next") == 6
-    assert '/wealth/wealth-for-a-100-year-life/' not in html
+    nav_blocks = re.findall(r'<nav class="series-nav".*?</nav>', html, re.DOTALL)
+    assert len(nav_blocks) == 2
+    assert all('/wealth/wealth-for-a-100-year-life/' not in nav for nav in nav_blocks)
     assert not settings.public_dir.exists()
     # The independently selected ages are not submitted by an HTML form.
     assert '<form' not in html
@@ -97,3 +99,46 @@ def test_canonical_conflicts_and_unsafe_preview_destinations_fail(settings, seri
     series_draft.write_text(text.replace("reviewed: 2026-09-16", "reviewed: 2026-09-16\ndate: 2026-09-16"))
     with pytest.raises(ValueError, match="route conflicts"):
         build_site(settings)
+
+
+def test_complete_series_has_live_navigation_and_article_specific_metadata(settings):
+    for pillar in ("health", "wealth", "happiness"):
+        (settings.content_dir / pillar).mkdir()
+        for source in (ROOT / "content" / pillar).glob("*100*.md"):
+            shutil.copy(source, settings.content_dir / pillar / source.name)
+    shutil.copytree(ROOT / "content/series", settings.content_dir / "series")
+    build_site(settings)
+    routes = ["/live-to-100/", "/wealth/wealth-for-a-100-year-life/",
+              "/health/health-for-a-100-year-life/", "/happiness/happiness-for-a-100-year-life/"]
+    for index, route in enumerate(routes):
+        html = (settings.public_dir / route.strip("/") / "index.html").read_text()
+        assert "Coming next" not in html
+        assert "noindex" not in html
+        assert html.count("<h1>") == 1
+        assert f'<link rel="canonical" href="https://example.test{route}">' in html
+        navs = re.findall(r'<nav class="series-nav".*?</nav>', html, re.DOTALL)
+        assert len(navs) == 2
+        for nav in navs:
+            assert nav.count('aria-current="page"') == 1
+            assert nav.count('class="series-status">Read article') == 3
+            for other in set(routes) - {route}:
+                assert f'href="{other}"' in nav
+        schemas = [json.loads(s) for s in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html)]
+        crumbs = next(s for s in schemas if s["@type"] == "BreadcrumbList")["itemListElement"]
+        assert crumbs[1]["item"] == "https://example.test/live-to-100/"
+        assert len(crumbs) == (2 if index == 0 else 3)
+        assert crumbs[-1]["item"] == "https://example.test" + route
+        ids = re.findall(r'\bid="([^"]+)"', html)
+        assert len(ids) == len(set(ids))
+        for anchor in re.findall(r'href="#([^"]+)"', html):
+            assert anchor in ids
+        assert "AI-generated illustration" in html
+        assert (settings.public_dir / "sitemap.xml").read_text().count(route) == 1
+
+
+def test_inflation_illustration_matches_disclosed_assumptions():
+    # Independently calculate the published prices, rather than snapshotting the prose.
+    text = (ROOT / "content/wealth/wealth-for-a-100-year-life.md").read_text()
+    for rate in (2, 3, 4):
+        expected = round(1000 * (1 + rate / 100) ** 30)
+        assert f'<th scope="row">{rate}%</th><td>€{expected:,}</td>' in text

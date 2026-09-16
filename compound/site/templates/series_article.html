@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block head_title %}{{ article.seo_title or article.title }}{% endblock %}
 {% block meta %}<meta name="description" content="{{ article.description }}">{% endblock %}
-{% block post_styles %}<link rel="stylesheet" href="/static/live-to-100.css?v=1">{% endblock %}
+{% block post_styles %}<link rel="stylesheet" href="/static/live-to-100.css?v=2">{% endblock %}
 {% block head %}
 <script src="/static/live-to-100.js?v=1" defer></script>
 {% if preview %}<meta name="robots" content="noindex,nofollow,noarchive">{% else %}
@@ -15,27 +15,27 @@
 {% endblock %}
 {% block content %}
 {% if preview %}<div class="preview-banner live100-preview"><strong>DRAFT FOR REVIEW</strong><span>Not published · Awaiting David’s editorial approval</span></div>{% endif %}
-<article class="article article-health live100-article" id="live100-article">
+<article class="article article-{{ article.pillar }} live100-article{% if article.series_order > 1 %} live100-companion{% endif %}" id="live100-article">
   <header class="live100-header">
-    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Live to 100</span></nav>
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span>{% if article.series_order == 1 %}<span aria-current="page">Live to 100</span>{% else %}<a href="/live-to-100/">Live to 100</a><span aria-hidden="true">/</span><span aria-current="page">{{ article.pillar_label }}</span>{% endif %}</nav>
     <p class="live100-label">LIVE TO 100 <span aria-hidden="true">·</span> PART {{ article.series_order }} OF {{ series.parts|length }}</p>
     <h1>{{ article.title }}</h1>
     <p class="standfirst">{{ article.summary }}</p>
     <div class="live100-byline"><span>{% if preview %}Prepared for{% else %}By{% endif %} <a href="/about/">David, editor of Compound</a></span><span>{{ article.reading_minutes }} min read</span>{% if article.reviewed %}<span>Evidence checked <time datetime="{{ article.reviewed.isoformat() }}">{{ article.reviewed | long_date }}</time></span>{% endif %}{% if not preview %}<span>Published <time datetime="{{ article.date.isoformat() }}">{{ article.date | long_date }}</time></span>{% endif %}</div>
   </header>
   {% with position="opening" %}{% include "_series_nav.html" %}{% endwith %}
-  <figure class="live100-cover"><img src="{{ article.image }}" width="1536" height="1024" alt="{{ article.image_alt }}" fetchpriority="high"><figcaption>Original AI-generated illustration for Compound. An imagined Irish coastal scene.</figcaption></figure>
+  <figure class="live100-cover"><img src="{{ article.image }}" width="1536" height="1024" alt="{{ article.image_alt }}" fetchpriority="high"><figcaption>{{ article.image_credit }}</figcaption></figure>
   <div class="article-layout live100-layout">
-    <aside class="reading-sidebar live100-sidebar"><nav aria-label="In this article" class="live100-toc"><p class="eyebrow">IN THIS ARTICLE</p><a href="#ireland">Ireland in context</a><a href="#healthspan">Lifespan &amp; healthspan</a><a href="#life-chapters">A different timetable</a><a href="#four-things">Four things to make room for</a><a href="#timeline">Explore ages 0–100</a><a href="#place">The place you live</a><a href="#begin">Where to begin</a><a href="#sources">Sources &amp; definitions</a></nav></aside>
+    <aside class="reading-sidebar live100-sidebar"><nav aria-label="In this article" class="live100-toc"><p class="eyebrow">IN THIS ARTICLE</p>{% for item in article_toc %}<a href="#{{ item.id }}">{{ item.title }}</a>{% endfor %}<a href="#sources">Sources &amp; definitions</a></nav></aside>
     <div class="reading-column">
       {% if not preview %}{% with slot=adsense.slots.article_top, name="article-top" %}{% include "_ad.html" %}{% endwith %}{% endif %}
       <div class="article-prose live100-prose">{{ article_body | safe }}</div>
       <aside class="live100-editorial"><p><strong>About this series.</strong> General information, not personalised medical or financial advice. Living to 100 is a scenario, not a promised outcome. {% if preview %}This is an AI-assisted draft for David’s review. Source checks are recorded in the accompanying claim ledger; no clinical or financial review is claimed.{% else %}See Compound’s <a href="/editorial-policy/">editorial policy</a> and <a href="/about/">author information</a>.{% endif %}</p></aside>
-      <section class="sources live100-sources" id="sources" aria-labelledby="sources-title"><p class="eyebrow">FOLLOW THE EVIDENCE</p><h2 id="sources-title">Sources, dates and definitions.</h2><p>Source numbers match the links in the article. All were accessed on 16 September 2026.</p><ol>{% for source in article.sources %}<li id="source-{{ source.id }}"><a href="{{ source.url }}" rel="noopener">{{ source.title }}</a><p>{{ source.publisher }}. {{ source.published }}.</p><p>{{ source.period }}.</p></li>{% endfor %}</ol></section>
+      <section class="sources live100-sources" id="sources" aria-labelledby="sources-title"><p class="eyebrow">FOLLOW THE EVIDENCE</p><h2 id="sources-title">Sources, dates and definitions.</h2><p>Source numbers match the links in the article. Access dates and the period each source covers are recorded below.</p><ol>{% for source in article.sources %}<li id="source-{{ source.id }}"><a href="{{ source.url }}" rel="noopener">{{ source.title }}</a><p>{{ source.publisher }}. {{ source.published }}.</p><p>{{ source.period }}.</p><p>Accessed {{ source.accessed }}.</p></li>{% endfor %}</ol></section>
       {% if not preview %}{% with slot=adsense.slots.article_bottom, name="article-bottom" %}{% include "_ad.html" %}{% endwith %}{% endif %}
     </div>
   </div>
   {% with position="end of article" %}{% include "_series_nav.html" %}{% endwith %}
-  <p class="live100-last-thought">If I did live to 100, what kind of life would I want waiting for me?</p>
+  <p class="live100-last-thought">{% if article.series_order == 1 %}If I did live to 100, what kind of life would I want waiting for me?{% elif article.series_order == 2 %}Money is useful when it leaves room for the life you value.{% elif article.series_order == 3 %}What would you like to keep being able to do?{% else %}A longer life is made of days that matter.{% endif %}</p>
 </article>
 {% endblock %}

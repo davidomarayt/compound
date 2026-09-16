@@ -1,11 +1,11 @@
 # Live to 100 — follow-on outlines
 
-Internal planning only. These are not public article files, and no follow-on page is generated, linked as available, or included in a sitemap. Part 1 remains the only implemented article. Titles and slugs below are proposed; all factual details must be researched again when each article is written.
+Original agreed outlines, retained as the editorial plan. David subsequently authorised the full build and publication of all three follow-ons on 16 September 2026. The completed articles implement this plan; current metadata and source records are in `series-metadata.json` and `follow-on-claim-ledger.md`.
 
 ## Part 2 — Wealth for a 100-Year Life
 
 - **Reader promise:** Understand how a potentially long later life changes the questions to ask about income, housing and financial flexibility in Ireland.
-- **Pillar:** Wealth. **Series order:** 2. **Status:** Planned.
+- **Pillar:** Wealth. **Series order:** 2. **Status:** Full article completed for publication.
 - **Proposed route:** `/wealth/wealth-for-a-100-year-life/`.
 - **SEO title:** Wealth for a 100-Year Life in Ireland | Compound.
 - **Meta description:** Plan for a potentially longer life in Ireland: pensions, inflation, housing, care and changing work, with uncertainty made clear.
@@ -28,7 +28,7 @@ Principal sections:
 ## Part 3 — Health for a 100-Year Life
 
 - **Reader promise:** Prioritise evidence-based ways to support health, capability and participation while separating established advice from longevity marketing.
-- **Pillar:** Health. **Series order:** 3. **Status:** Planned.
+- **Pillar:** Health. **Series order:** 3. **Status:** Full article completed for publication.
 - **Proposed route:** `/health/health-for-a-100-year-life/`.
 - **SEO title:** Health for a 100-Year Life in Ireland | Compound.
 - **Meta description:** An Irish guide to healthspan, strength, heart and brain health, nutrition, sleep and prevention, with realistic expectations for later life.
@@ -52,7 +52,7 @@ Principal sections:
 ## Part 4 — Happiness for a 100-Year Life
 
 - **Reader promise:** Explore ways to sustain belonging, meaning and enjoyable daily life through changing relationships, work, health and responsibilities.
-- **Pillar:** Happiness. **Series order:** 4. **Status:** Planned.
+- **Pillar:** Happiness. **Series order:** 4. **Status:** Full article completed for publication.
 - **Proposed route:** `/happiness/happiness-for-a-100-year-life/`.
 - **SEO title:** Happiness for a 100-Year Life in Ireland | Compound.
 - **Meta description:** Explore friendship, community, purpose and changing identity through a longer life, with practical Irish context and careful use of research.

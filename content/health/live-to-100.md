@@ -86,7 +86,7 @@ What would need to last if you had another seventy years ahead of you?
 
 Imagine being 30 and reaching 100. Between those birthdays there could be several working chapters, friendships you have not yet made, places you have not yet called home and a long stretch beyond full-time employment. There would also be ordinary Tuesdays: making breakfast, paying bills, finding someone to talk to, deciding what to do with the afternoon.
 
-That is the useful starting point for **Live to 100**, Compound’s four-part series on a longer life in Ireland. This opening article brings the questions together. The following guides will explore Wealth, Health and Happiness in depth. You do not need to wait for them to use the perspective here.
+That is the useful starting point for **Live to 100**, Compound’s four-part series on a longer life in Ireland. This opening article brings the questions together. The companion guides explore [Wealth](/wealth/wealth-for-a-100-year-life/), [Health](/health/health-for-a-100-year-life/) and [Happiness](/happiness/happiness-for-a-100-year-life/) in depth. Start here for the perspective, then follow the question that matters most to you.
 
 **One hundred is a planning scenario, not a prediction.** Nothing in this series estimates your chance of reaching it. And being 30 does not put everyone at the same starting line: a person studying, raising children, recovering from illness or beginning again after a separation will have different choices. The point is to leave room for a future that may be longer, and less linear, than expected.
 
@@ -132,7 +132,7 @@ Inflation matters because a broad rise in prices reduces what a euro can buy. Yo
 
 A useful starting question is: which costs would continue if my wages stopped? Another is: what could change if I needed more help? There is no single savings target here. Someone renting alone, someone with a paid-off home and someone supporting another adult face different decisions. Investment returns, future prices and personal circumstances are uncertain.
 
-Part 2 will examine pensions, housing, care and the risks in a long financial plan. For now, Compound’s [compound interest calculator](/compound-interest-calculator/) lets you explore how assumptions change an illustration. Its results are scenarios, not a guarantee of what you will earn or a verdict on what you ought to have saved.
+[Part 2, Wealth](/wealth/wealth-for-a-100-year-life/), examines pensions, housing, care and the risks in a long financial plan. Compound’s [compound interest calculator](/compound-interest-calculator/) lets you explore how assumptions change an illustration. Its results are scenarios, not a guarantee of what you will earn or a verdict on what you ought to have saved.
 
 ### Physical and cognitive capability
 
@@ -142,7 +142,7 @@ The WHO identifies regular physical activity, a balanced diet and avoiding tobac
 
 Think of capability as something to support and adapt. A person may use a walking aid, hearing aid, accessible transport or help at home and still pursue what matters to them. Asking for support can belong in a good plan from the outset.
 
-Part 3 will look carefully at strength, cardiovascular and metabolic health, nutrition, sleep, brain health and prevention. Here, the task is simpler: identify something you value being able to do, and consider what appropriate support would help you keep doing it. Individual symptoms and treatment decisions belong with a qualified health professional.
+[Part 3, Health](/health/health-for-a-100-year-life/), looks carefully at strength, cardiovascular and metabolic health, nutrition, sleep, brain health and prevention. Here, the task is simpler: identify something you value being able to do, and consider what appropriate support would help you keep doing it. Individual symptoms and treatment decisions belong with a qualified health professional.
 
 ### Relationships and a place in the community
 
@@ -152,7 +152,7 @@ Research connects social relationships with health outcomes, but its limits matt
 
 Connection also has value without a mortality statistic. It can mean being expected somewhere, sharing a joke, having someone to ask or feeling able to offer something yourself. It need not mean marriage, children or a large friendship group. Nor should a plan assume family members can provide unlimited care.
 
-For a reader in Ireland, the setting might be a library, a local club, a community group, a faith community or an online group that feels welcoming. The practical reflection is which connections you would like to keep making room for. Compound’s article on [the Ploughing, community and wellbeing](/happiness/ploughing-championships-history-community-mental-health/) explores one familiar setting; Part 4 will widen the lens.
+For a reader in Ireland, the setting might be a library, a local club, a community group, a faith community or an online group that feels welcoming. The practical reflection is which connections you would like to keep making room for. Compound’s article on [the Ploughing, community and wellbeing](/happiness/ploughing-championships-history-community-mental-health/) explores one familiar setting; [Part 4, Happiness](/happiness/happiness-for-a-100-year-life/), widens the lens.
 
 ### Purpose beyond a job title
 
@@ -188,4 +188,4 @@ Start with this reflection: **What would I like an ordinary day at 80 to look li
 
 Then choose one manageable step for financial resilience, one for physical capability and one for connection or purpose. Those could be understanding a regular expense, seeking help with an activity that has become difficult, or arranging time with someone whose company you enjoy. They are examples, not prescriptions.
 
-The three deeper guides will return to those questions with more detail.
+Continue with [Wealth](/wealth/wealth-for-a-100-year-life/) for money and choices, [Health](/health/health-for-a-100-year-life/) for capability and care, or [Happiness](/happiness/happiness-for-a-100-year-life/) for connection and purpose.

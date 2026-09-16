@@ -11,17 +11,17 @@ parts:
     title: Wealth for a 100-Year Life
     description: Money and choices
     pillar: wealth
-    status: planned
+    status: published
     path: /wealth/wealth-for-a-100-year-life/
   - order: 3
     title: Health for a 100-Year Life
     description: Capability and care
     pillar: health
-    status: planned
+    status: published
     path: /health/health-for-a-100-year-life/
   - order: 4
     title: Happiness for a 100-Year Life
     description: Connection and purpose
     pillar: happiness
-    status: planned
+    status: published
     path: /happiness/happiness-for-a-100-year-life/

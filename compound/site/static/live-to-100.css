@@ -148,3 +148,30 @@
   .chapter-panel, .horizon-example, .live100-facts { break-inside: avoid; }
   .live100-sources { break-before: page; }
 }
+
+/* Companion articles share the hub typography and their existing pillar identity. */
+.live100-article.article-wealth { --series-ink: #573e2c; --series-soft: #efe5d7; }
+.live100-article.article-happiness { --series-ink: #503d57; --series-soft: #ece4ef; }
+.live100-companion .live100-cover img { aspect-ratio: 3 / 2; object-position: center; }
+.series-note { margin: 2rem 0; padding: 1.5rem 1.75rem; border-top: 3px solid var(--series-ink); background: var(--series-soft); }
+.series-note .eyebrow { color: var(--series-ink); font-size: .75rem; letter-spacing: .1em; margin: 0 0 .75rem; }
+.series-note p:last-child { margin-bottom: 0; font-size: 1.0625rem; line-height: 1.75; }
+.series-table-wrap { max-width: 100%; overflow-x: auto; margin: 2rem 0; }
+.live100-prose .series-table-wrap table { width: 100%; border-collapse: collapse; font-size: 1rem; line-height: 1.6; }
+.series-table-wrap caption { text-align: left; font-weight: 600; color: var(--series-ink); padding: 0 0 1rem; }
+.series-table-wrap th, .series-table-wrap td { border-bottom: 1px solid var(--line-2); padding: .9rem 1rem; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.series-table-wrap thead th { background: var(--series-ink); color: #fff; font-weight: 600; }
+.series-table-wrap tbody th { color: var(--series-ink); font-weight: 600; }
+.series-table-wrap tbody tr:nth-child(odd) { background: var(--series-soft); }
+@media (max-width: 620px) {
+  .live100-companion .live100-cover img { aspect-ratio: 4 / 3; }
+  .series-note { padding: 1.25rem; }
+  .series-table-wrap th, .series-table-wrap td { padding: .8rem .65rem; }
+  .live100-header .breadcrumbs { flex-wrap: wrap; line-height: 1.7; }
+}
+@media print {
+  .series-note { break-inside: avoid; }
+  .series-table-wrap { overflow: visible; }
+  .series-table-wrap thead th { background: white; color: #222; }
+  .live100-companion .live100-cover img { aspect-ratio: auto; object-fit: contain; }
+}
