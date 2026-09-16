@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% block head %}<link rel="canonical" href="{{ site_url }}/{{ pillar }}/">{% endblock %}
 {% block content %}
 <section class="collection-hero collection-{{ pillar }}"><div><p class="eyebrow">THE COMPOUND JOURNAL / {{ pillar_labels[pillar] }}</p><h1>{{ {'health':'A little better.<br>From the inside out.', 'wealth':'More clarity.<br>More possibility.', 'happiness':'Make space<br>for the good.'}[pillar]|safe }}</h1><p>{{ pillar_blurbs[pillar] }}</p></div><img src="/static/images/{{ pillar }}.jpg" alt="" width="800" height="520"></section>
 <div class="section-heading collection-heading"><h2>The {{ pillar }} edit.</h2><span>{{ articles|length }} stories to explore</span></div>
