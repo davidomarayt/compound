@@ -132,7 +132,7 @@ def test_complete_series_has_live_navigation_and_article_specific_metadata(setti
         assert len(ids) == len(set(ids))
         for anchor in re.findall(r'href="#([^"]+)"', html):
             assert anchor in ids
-        assert "AI-generated illustration" in html
+        assert "Illustration: Compound." in html
         assert (settings.public_dir / "sitemap.xml").read_text().count(route) == 1
 
 

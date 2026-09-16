@@ -9,7 +9,7 @@ meta_description: 'Compare advertised Irish Wegovy, Mounjaro and Ozempic prices,
 tags: [glp-1, obesity, medicines, irish-healthcare]
 image: /static/images/glp1-cost-illustration.png
 image_alt: 'Editorial illustration of an unbranded capped injection pen, medicine carton, receipt and euro coins.'
-image_credit: 'Compound / AI-generated editorial illustration; not a photograph of any named product'
+image_credit: 'Illustration: Compound.'
 image_source: '#image-note'
 sources:
 - title: 'Laois Pharmacy: Ozempic price table, including Wegovy starter price. Accessed 14 September 2026.'

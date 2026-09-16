@@ -14,7 +14,7 @@ meta_description: 'Plan for a potentially longer life in Ireland: pensions, infl
 tags: [longevity, pensions, financial-planning, retirement]
 image: /static/images/live-to-100-wealth.webp
 image_alt: 'Illustration of two adults discussing a notebook at a garden table beside an imagined Irish village home.'
-image_credit: 'Compound / AI-generated illustration. Planning at home in an imagined Irish village; not a documentary photograph.'
+image_credit: 'Illustration: Compound.'
 sources:
   - id: 1
     publisher: Department of Social Protection / MyWelfare

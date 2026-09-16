@@ -2,7 +2,7 @@
 
 All four assets are original AI-generated artwork created for this Compound project in this conversation on 16 September 2026. They illustrate imagined scenes, not named real people, documentary events or identified Irish locations. The three companion images were inspected before reuse from the earlier project materials. No new generation or third-party stock photograph was needed.
 
-The usage basis is project-generated output supplied for Compound materials. No third-party stock licence, exclusive copyright or model/property release is asserted. Visible captions explicitly identify AI-generated illustrations. Each article supplies its own descriptive alt text and Open Graph/Twitter image.
+The usage basis is project-generated output supplied for Compound materials. No third-party stock licence, exclusive copyright or model/property release is asserted. At David’s request, public captions use “Illustration: Compound.”; creation details remain recorded here. Each article supplies its own descriptive alt text and Open Graph/Twitter image.
 
 | Part | Source PNG | Published WebP | Subject |
 |---|---|---|---|

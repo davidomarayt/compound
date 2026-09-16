@@ -9,7 +9,7 @@ meta_description: 'GLP-1 side effects explained using EMA information and trial 
 tags: [glp-1, obesity, medicines, medicine-safety]
 image: /static/images/glp1-safety-illustration.png
 image_alt: 'Paper collage illustration of a glass of water, a notebook and a clock.'
-image_credit: 'Compound / AI-generated editorial illustration'
+image_credit: 'Illustration: Compound.'
 image_source: '#image-note'
 sources:
 - title: 'Wharton S et al. Gastrointestinal tolerability of semaglutide 2.4 mg and the relationship with weight loss. Diabetes Obesity and Metabolism. 2022;24:94–105. doi:10.1111/dom.14551.'

@@ -9,7 +9,7 @@ meta_description: 'Why time off can leave you unrested: evidence on switching of
 tags: [rest, work-life, everyday-happiness]
 image: /static/images/time-off-illustration.png
 image_alt: 'Illustration of a plum armchair beside a softly lit window, with a work bag set aside.'
-image_credit: 'Compound / AI-generated editorial illustration'
+image_credit: 'Illustration: Compound.'
 image_source: '#image-note'
 sources:
 - title: 'Wendsche & Lohmann-Haislah (2017). A Meta-Analysis on Antecedents and Outcomes of Detachment from Work. Frontiers in Psychology.'

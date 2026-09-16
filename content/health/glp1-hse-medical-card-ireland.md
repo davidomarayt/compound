@@ -9,7 +9,7 @@ meta_description: 'Irish GLP-1 funding explained: medical cards, the Drugs Payme
 tags: [glp-1, obesity, medicines, irish-healthcare]
 image: /static/images/glp1-funding-illustration.png
 image_alt: 'Paper collage illustration of an application folder, blank paperwork and a fountain pen.'
-image_credit: 'Compound / AI-generated editorial illustration'
+image_credit: 'Illustration: Compound.'
 image_source: '#image-note'
 sources:
 - title: 'HSE: medicines to treat obesity. Funding status checked 14 September 2026.'

@@ -15,7 +15,7 @@ meta_description: 'What would living to 100 mean in Ireland? Explore healthspan,
 tags: [longevity, healthy-ageing, life-planning]
 image: /static/images/live-to-100-coast.webp
 image_alt: 'Original illustration of three adults from different generations walking together on an imagined Irish coastal path.'
-image_credit: 'Compound / AI-generated illustration. An imagined Irish coastal scene; not a documentary photograph.'
+image_credit: 'Illustration: Compound.'
 sources:
   - id: 1
     publisher: Eurostat

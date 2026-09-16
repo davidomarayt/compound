@@ -8,7 +8,7 @@ David authorised publication of Part 1 and completion/publication of Parts 2–4
 - Publication and evidence-check date: 16 September 2026.
 - Approximately 2,060 words of main prose, nine substantive sources, a five-chapter 0–100 timeline and two independent years-to-100 inputs.
 - Shared four-part navigation now links all four complete articles at both the opening and end of every article.
-- Original coastal illustration, WebP, with alt text and explicit AI credit. See `image-provenance.md`.
+- Original coastal illustration, WebP, with alt text and an illustration credit. See `image-provenance.md`.
 - Article/Breadcrumb structured data, Open Graph/Twitter metadata and a single canonical route. No new pillar, dependency, analytics configuration or homepage redesign.
 
 ## Project and workflow

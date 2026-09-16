@@ -9,7 +9,7 @@ meta_description: 'See what €100 extra a month could save on an Irish mortgage
 tags: [mortgages, household-money, saving]
 image: /static/images/mortgage-overpayment-illustration.png
 image_alt: 'Editorial illustration of a small model house, a brass key and coins on a plum desk.'
-image_credit: 'Compound / AI-generated editorial illustration'
+image_credit: 'Illustration: Compound.'
 image_source: '#image-note'
 sources:
 - title: 'CCPC: Paying extra off your mortgage. Accessed 14 September 2026.'

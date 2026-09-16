@@ -9,7 +9,7 @@ meta_description: 'What STEP 1, STEP 4 and SURMOUNT-4 show about stopping semagl
 tags: [glp-1, obesity, medicines, weight-management]
 image: /static/images/glp1-stopping-illustration.png
 image_alt: 'Paper collage illustration of an open gate and a winding path through green coastal hills.'
-image_credit: 'Compound / AI-generated editorial illustration'
+image_credit: 'Illustration: Compound.'
 image_source: '#image-note'
 sources:
 - title: 'Wilding JPH et al. Weight regain and cardiometabolic effects after withdrawal of semaglutide: STEP 1 extension. Diabetes Obesity and Metabolism. 2022;24:1553–1564. doi:10.1111/dom.14725.'

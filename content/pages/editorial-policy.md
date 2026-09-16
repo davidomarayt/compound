@@ -39,7 +39,11 @@ An article is revised, delayed or not published when it does not meet those stan
 
 AI tools may help organise research, compare source material, check draft claims against supplied sources and produce an early draft. They do not independently select or publish articles. David reviews the source material, edits the finished piece and makes the publication decision.
 
-AI output is not treated as a source. A factual claim must be supported by the source cited in the article. Generated images, where used, are identified as illustrations and are not used to depict a real event as documentary photography.
+AI output is not treated as a source. A factual claim must be supported by the source cited in the article.
+
+## Images
+
+Editorial illustrations are labelled as illustrations. Photographs and other third-party visual material carry source and licence credits where applicable.
 
 ## Health and financial information
 

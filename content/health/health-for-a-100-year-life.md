@@ -14,7 +14,7 @@ meta_description: 'An Irish guide to strength, heart and brain health, food, sle
 tags: [longevity, healthy-ageing, exercise, prevention]
 image: /static/images/live-to-100-health.webp
 image_alt: 'Illustration of an older woman carrying hand weights with an instructor beside her in a bright exercise studio.'
-image_credit: 'Compound / AI-generated illustration. An imagined supported strength session; not a documentary photograph or an exercise prescription.'
+image_credit: 'Illustration: Compound.'
 sources:
   - id: 1
     publisher: World Health Organization

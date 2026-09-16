@@ -14,7 +14,7 @@ meta_description: 'Explore friendship, community, purpose and changing identity 
 tags: [longevity, relationships, community, wellbeing]
 image: /static/images/live-to-100-happiness.webp
 image_alt: 'Illustration of adults of different generations, including a wheelchair user, sharing tea and food in a community garden.'
-image_credit: 'Compound / AI-generated illustration. An imagined community garden gathering in Ireland; not a documentary photograph.'
+image_credit: 'Illustration: Compound.'
 sources:
   - id: 1
     publisher: World Health Organization
