@@ -1,0 +1,27 @@
+id: live-to-100
+title: Live to 100
+parts:
+  - order: 1
+    title: The 100-Year Life
+    description: The big picture
+    pillar: health
+    status: published
+    path: /live-to-100/
+  - order: 2
+    title: Wealth for a 100-Year Life
+    description: Money and choices
+    pillar: wealth
+    status: planned
+    path: /wealth/wealth-for-a-100-year-life/
+  - order: 3
+    title: Health for a 100-Year Life
+    description: Capability and care
+    pillar: health
+    status: planned
+    path: /health/health-for-a-100-year-life/
+  - order: 4
+    title: Happiness for a 100-Year Life
+    description: Connection and purpose
+    pillar: happiness
+    status: planned
+    path: /happiness/happiness-for-a-100-year-life/

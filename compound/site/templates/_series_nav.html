@@ -1,0 +1,14 @@
+<nav class="series-nav" aria-label="{{ series.title }} series — {{ position }}">
+  <div class="series-nav-heading"><span class="eyebrow">THE FOUR-PART SERIES</span><span>One life. Three connected pillars.</span></div>
+  <ol>
+    {% for part in series.parts %}
+    <li class="series-part series-part-{{ part.pillar }}{% if part.current %} is-current{% endif %}">
+      {% if part.url and not part.current %}<a href="{{ part.url }}">{% else %}<div{% if part.current %} aria-current="page"{% endif %}>{% endif %}
+        <span class="series-number">0{{ part.order }}</span>
+        <span class="series-name">{{ part.title }}</span>
+        <span class="series-status">{% if part.current %}You are here{% elif part.url %}Read article{% else %}Coming next{% endif %}</span>
+      {% if part.url and not part.current %}</a>{% else %}</div>{% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</nav>

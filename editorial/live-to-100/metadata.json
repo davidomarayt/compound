@@ -1,0 +1,21 @@
+{
+  "title": "Live to 100: What a 100-Year Life Would Really Mean in Ireland",
+  "seo_title": "Live to 100 in Ireland: Planning a 100-Year Life | Compound",
+  "slug": "live-to-100",
+  "pillar": "health",
+  "publication_status": "published",
+  "canonical_path": "/live-to-100/",
+  "series_id": "live-to-100",
+  "series_order": 1,
+  "reviewed": "2026-09-16",
+  "summary": "A longer life raises a bigger question: what would we want those years to hold? An Irish perspective on money, health, relationships and the freedom to keep changing.",
+  "meta_description": "What would living to 100 mean in Ireland? Explore healthspan, retirement, relationships and how to plan for a longer life without assuming you will reach 100.",
+  "image": "/static/images/live-to-100-coast.webp",
+  "image_alt": "Original illustration of three adults from different generations walking together on an imagined Irish coastal path.",
+  "publication_date": "2026-09-16",
+  "canonical": "https://compound.ie/live-to-100/",
+  "public_schema": [
+    "Article",
+    "BreadcrumbList"
+  ]
+}

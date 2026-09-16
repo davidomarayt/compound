@@ -1,0 +1,19 @@
+<section class="live100-horizon" aria-labelledby="horizon-title" data-live100-horizon>
+  <div class="horizon-intro"><p class="eyebrow">A LITTLE PERSPECTIVE</p><h3 id="horizon-title">Put a longer life in view.</h3><p>Two independent examples. Planning arithmetic, not a lifespan forecast.</p></div>
+  <div class="horizon-examples">
+    <div class="horizon-example">
+      <label for="chosen-age">Chosen current age</label>
+      <div class="age-control"><input id="chosen-age" type="number" inputmode="numeric" min="18" max="100" step="1" value="30" autocomplete="off" disabled aria-describedby="chosen-age-help chosen-age-error"><span>years</span></div>
+      <p class="input-help" id="chosen-age-help">Whole numbers from 18 to 100.</p><p id="chosen-age-error" class="input-error" hidden>Enter a whole age from 18 to 100.</p>
+      <output id="chosen-age-result" for="chosen-age" aria-live="polite" aria-atomic="true"><strong>70</strong><span>Years between the chosen age and 100</span></output>
+    </div>
+    <div class="horizon-example">
+      <label for="retirement-age">Illustrative retirement age</label>
+      <div class="age-control"><input id="retirement-age" type="number" inputmode="numeric" min="18" max="100" step="1" value="65" autocomplete="off" disabled aria-describedby="retirement-age-help retirement-age-error"><span>years</span></div>
+      <p class="input-help" id="retirement-age-help">A separate hypothetical scenario, not an eligibility rule.</p><p id="retirement-age-error" class="input-error" hidden>Enter a whole age from 18 to 100.</p>
+      <output id="retirement-age-result" for="retirement-age" aria-live="polite" aria-atomic="true"><strong>35</strong><span>Years from the illustrative retirement age to 100</span></output>
+    </div>
+  </div>
+  <p class="horizon-note">Each result is simply 100 minus the chosen age. No input is submitted, saved or tracked.</p>
+  <noscript><p class="horizon-note">These are fixed examples with JavaScript off. To try another whole age from 18 to 100, subtract it from 100; the two examples are independent.</p></noscript>
+</section>

@@ -53,6 +53,12 @@ class Article:
     image_alt: str = ""
     image_credit: str = ""
     image_source: str = ""
+    series_id: str = ""
+    series_order: int = 0
+    publication_status: str = "published"
+    canonical_path: str = ""
+    seo_title: str = ""
+    reviewed: date | None = None
 
     @property
     def body_with_charts(self) -> str:
@@ -66,7 +72,7 @@ class Article:
 
     @property
     def url(self) -> str:
-        return f"/{self.pillar}/{self.slug}/"
+        return self.canonical_path or f"/{self.pillar}/{self.slug}/"
 
     @property
     def pillar_label(self) -> str:
@@ -231,10 +237,18 @@ def _as_date(v) -> date:
     return date.today()
 
 
-def article_from_file(path: Path) -> Article | None:
+def article_from_file(path: Path, *, include_drafts: bool = False) -> Article | None:
     meta, body = parse_markdown_file(path)
-    if not meta.get("title") or meta.get("draft"):
+    status = str(meta.get("publication_status") or ("draft" if meta.get("draft") else "published"))
+    if not meta.get("title") or (not include_drafts and (meta.get("draft") or status != "published")):
         return None
+    if meta.get("draft"):
+        status = "draft"
+    canonical_path = str(meta.get("canonical_path") or "")
+    if canonical_path and not re.fullmatch(r"/(?:[a-z0-9]+(?:-[a-z0-9]+)*/)+", canonical_path):
+        raise ValueError(f"Invalid canonical path in {path}")
+    if meta.get("series_id") and status == "published" and not meta.get("date"):
+        raise ValueError(f"Set the actual publication date before publishing {path}")
     pillar = str(meta.get("pillar") or path.parent.name)
     if pillar not in PILLARS:
         return None
@@ -242,7 +256,7 @@ def article_from_file(path: Path) -> Article | None:
         title=str(meta["title"]),
         slug=str(meta.get("slug") or path.stem),
         pillar=pillar,
-        date=_as_date(meta.get("date")),
+        date=_as_date(meta.get("date") or meta.get("reviewed")),
         summary=str(meta.get("summary") or ""),
         body_html=render_markdown(body),
         tags=[str(t) for t in (meta.get("tags") or [])],
@@ -257,6 +271,12 @@ def article_from_file(path: Path) -> Article | None:
         image_alt=str(meta.get("image_alt") or ""),
         image_credit=str(meta.get("image_credit") or ""),
         image_source=str(meta.get("image_source") or ""),
+        series_id=str(meta.get("series_id") or ""),
+        series_order=int(meta.get("series_order") or 0),
+        publication_status=status,
+        canonical_path=canonical_path,
+        seo_title=str(meta.get("seo_title") or ""),
+        reviewed=_as_date(meta["reviewed"]) if meta.get("reviewed") else None,
     )
 
 
@@ -302,7 +322,56 @@ def article_jsonld(a: Article, site_url: str) -> str:
         "keywords": ", ".join(a.tags),
         "citation": [s.get("url") for s in a.sources if s.get("url")],
     }
+    if a.publication_status != "published":
+        data.pop("datePublished", None)
+        data["creativeWorkStatus"] = "Draft"
+    if a.reviewed:
+        data["dateModified"] = a.reviewed.isoformat()
+    if a.series_id:
+        data["isPartOf"] = {"@type": "CreativeWorkSeries", "name": "Live to 100"}
     return json.dumps(data, ensure_ascii=False)
+
+
+def article_template(article: Article) -> str:
+    return "series_article.html" if article.series_id == "live-to-100" else "article.html"
+
+
+def series_context(article: Article, content_dir: Path) -> dict:
+    """Series identity is independent of pillars. Only published articles receive links."""
+    if not article.series_id:
+        return {}
+    if not re.fullmatch(r"[a-z0-9-]+", article.series_id):
+        raise ValueError("Invalid series identifier")
+    path = content_dir / "series" / f"{article.series_id}.yml"
+    data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    published = {(a.series_id, a.series_order): a for a in load_articles(content_dir)}
+    parts = []
+    for part in data["parts"]:
+        item = dict(part)
+        item["current"] = int(item["order"]) == article.series_order
+        live_article = published.get((article.series_id, int(item["order"])))
+        item["url"] = live_article.url if live_article and item.get("status") == "published" else ""
+        parts.append(item)
+    return {"id": data["id"], "title": data["title"], "parts": parts}
+
+
+def article_context(env: Environment, settings: Settings, article: Article, preview: bool) -> dict:
+    body = article.body_with_charts
+    series = series_context(article, settings.content_dir)
+    if article.series_id == "live-to-100":
+        for block in ("figures", "horizon", "timeline"):
+            fragment = env.get_template(f"_live100_{block}.html").render()
+            body = body.replace(f"<p>[live100:{block}]</p>", fragment)
+    breadcrumbs = {
+        "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": settings.site_base_url + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Live to 100", "item": settings.site_base_url + article.url},
+        ]
+    }
+    return dict(article=article, preview=preview, series=series, article_body=body,
+                title=article.seo_title or article.title,
+                article_jsonld=article_jsonld(article, settings.site_base_url),
+                breadcrumb_jsonld=json.dumps(breadcrumbs, ensure_ascii=False))
 
 
 def load_site_config(content_dir: Path) -> dict:
@@ -365,6 +434,14 @@ def build_site(settings: Settings) -> dict:
     out = settings.public_dir
     articles = load_articles(settings.content_dir)
     pages = load_pages(settings.content_dir)
+    reserved = {"/", "/search/", "/compound-interest-calculator/", "/bmi-calculator/"}
+    reserved.update(f"/{p}/" for p in PILLARS)
+    reserved.update(f"/{pg.slug}/" for pg in pages)
+    seen_urls = set(reserved)
+    for article in articles:
+        if article.url in seen_urls or article.url.startswith(("/preview/", "/static/", "/tag/")):
+            raise ValueError(f"Article route conflicts with another page: {article.url}")
+        seen_urls.add(article.url)
     image_owners = {}
     for article in articles:
         if not article.image_path:
@@ -408,9 +485,9 @@ def build_site(settings: Settings) -> dict:
 
     tag_map: dict[str, list[Article]] = {}
     for a in articles:
-        _write(out / a.pillar / a.slug / "index.html",
-               env.get_template("article.html").render(article=a, related=related(a, articles), title=a.title, preview=False,
-                                                        article_jsonld=article_jsonld(a, settings.site_base_url)))
+        _write(out / a.url.strip("/") / "index.html",
+               env.get_template(article_template(a)).render(
+                   **article_context(env, settings, a, False), related=related(a, articles)))
         for t in a.tags:
             tag_map.setdefault(t, []).append(a)
     for t, arts in tag_map.items():
@@ -480,8 +557,31 @@ def render_preview(settings: Settings, token: str, article: Article) -> Path:
     out = settings.public_dir / "preview" / token / "index.html"
     if not (settings.public_dir / "static").exists():
         shutil.copytree(HERE / "static", settings.public_dir / "static", dirs_exist_ok=True)
-    _write(out, env.get_template("article.html").render(article=article, related=[], title=f"PREVIEW: {article.title}", preview=True))
+    _write(out, env.get_template(article_template(article)).render(
+        **article_context(env, settings, article, True), related=[]))
     return out
+
+
+def render_file_preview(settings: Settings, source: Path, destination: Path) -> Path:
+    """Build a review tree outside deployment output; never calls the publishing pipeline."""
+    from dataclasses import replace
+
+    destination = destination.resolve()
+    protected = (settings.content_dir.resolve(), HERE.resolve(), Path(__file__).resolve())
+    if any(destination == p or destination in p.parents for p in protected):
+        raise ValueError("Review output must not contain project source files")
+    if destination == settings.public_dir.resolve() or settings.public_dir.resolve() in destination.parents:
+        raise ValueError("Review output must be outside the production build directory")
+    marker = destination / ".compound-review"
+    if destination.exists() and any(destination.iterdir()) and not marker.is_file():
+        raise ValueError("Review output must be empty or a previously generated review tree")
+    article = article_from_file(source, include_drafts=True)
+    if not article or article.publication_status != "draft":
+        raise ValueError("preview-file requires a draft article")
+    preview_settings = replace(settings, public_dir=destination, deploy_command="")
+    build_site(preview_settings)
+    marker.write_text("Local review output; not for deployment.\n", encoding="utf-8")
+    return render_preview(preview_settings, article.slug, article)
 
 
 def remove_preview(settings: Settings, token: str) -> None:

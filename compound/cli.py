@@ -7,6 +7,7 @@ import http.server
 import logging
 import sys
 from functools import partial
+from pathlib import Path
 
 from compound.config import load_settings
 from compound.db import Database
@@ -34,6 +35,9 @@ def main(argv: list[str] | None = None) -> int:
     p_poll.add_argument("--dry-run", action="store_true", help="list what the sources return, store nothing")
     sub.add_parser("run", help="run the Telegram bot with the source poller inside it")
     sub.add_parser("build", help="render the static site into public/")
+    p_file_preview = sub.add_parser("preview-file", help="render a markdown draft into a local review tree without publishing")
+    p_file_preview.add_argument("source", type=Path)
+    p_file_preview.add_argument("--output", type=Path, default=Path("review"))
     p_serve = sub.add_parser("serve", help="serve public/ locally")
     p_serve.add_argument("--port", type=int, default=8080)
     p_sim = sub.add_parser("simulate-item", help="inject a fake item so the loop can be tested without a source")
@@ -69,6 +73,12 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "build":
         stats = build_site(load_settings())
         print(f"built: {stats}")
+        return 0
+
+    if args.cmd == "preview-file":
+        from compound.site.build import render_file_preview
+        path = render_file_preview(load_settings(), args.source, args.output)
+        print(f"Local draft: {path}")
         return 0
 
     if args.cmd == "serve":
