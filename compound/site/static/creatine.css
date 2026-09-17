@@ -1,0 +1,22 @@
+.article:has(.creatine-guide) .reading-column{min-width:0}
+.creatine-guide{font-size:17px;line-height:1.85}
+.creatine-guide .cr-kicker{font:600 .78rem/1.5 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--health);margin:0 0 .65rem}
+.cr-takeaway,.cr-safety{margin:2rem 0;padding:1.5rem;border-left:4px solid var(--health);background:var(--health-soft)}
+.article-prose .cr-takeaway p:last-child,.article-prose .cr-safety p:last-child{margin-bottom:0}
+.cr-takeaway>p:nth-child(2){font:400 1.8rem/1.25 var(--serif);color:var(--ink)}
+.cr-safety{background:var(--surface);border:1px solid var(--line-2);border-left:4px solid var(--health)}
+.cr-evidence-grid{display:grid;grid-template-columns:1fr;gap:1rem;margin:1.5rem 0}
+.cr-evidence-card{padding:1.2rem 1.35rem;border:1px solid var(--line);border-top:3px solid var(--health);background:var(--surface)}
+.cr-evidence-card:nth-child(2){border-top-color:#8c7552}.cr-evidence-card:nth-child(3){border-top-color:#746387}
+.article-prose .cr-evidence-card h3{font-size:1.65rem;line-height:1.2;margin:.2rem 0 .65rem}
+.article-prose .cr-evidence-card p:last-child{font-size:1rem;line-height:1.65;margin:0}
+.cr-table-wrap{width:100%;max-width:100%;overflow-x:auto;margin:1.5rem 0;border:1px solid var(--line);border-radius:3px}
+.cr-table-wrap:focus-visible{outline:3px solid var(--health);outline-offset:4px}
+.article-prose .cr-table-wrap table{display:table;width:100%;min-width:540px;font-size:.91rem;line-height:1.65;margin:0}
+.article-prose .cr-table-wrap caption{text-align:left;font-weight:600;padding:1rem;color:var(--ink);background:var(--surface)}
+.article-prose .cr-table-wrap th,.article-prose .cr-table-wrap td{padding:1rem;min-width:105px}
+.article-prose .cr-table-wrap th{background:var(--health-soft)}
+.article-prose .cr-table-wrap th[scope=row]{background:transparent;min-width:120px}
+@media(min-width:1100px){.cr-evidence-grid{grid-template-columns:1fr 1fr 1fr}.cr-evidence-card{padding:1rem}.article-prose .cr-evidence-card h3{font-size:1.45rem}.article-prose .cr-evidence-card p:last-child{font-size:.92rem}}
+@media(max-width:600px){.creatine-guide{font-size:16px}.cr-takeaway,.cr-safety{padding:1.1rem}}
+@media print{.cr-table-wrap{overflow:visible;border:0}.article-prose .cr-table-wrap table{min-width:0;font-size:10pt}.cr-takeaway,.cr-safety{background:white}.cr-evidence-grid{display:block}.cr-evidence-card{break-inside:avoid;margin:1rem 0}.creatine-guide h2,.creatine-guide h3{break-after:avoid}}
