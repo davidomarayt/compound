@@ -1,0 +1,43 @@
+.article-wealth .reading-column{min-width:0}
+.cs-intro{border-top:3px solid var(--wealth);padding:1.3rem 0;margin:1.5rem 0 2rem}
+.article-prose .cs-intro p{margin:0 0 .6rem}.cs-intro strong{font-size:1.1rem}
+.cs-kicker{font:600 .8rem/1.5 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--wealth)}
+.cs-table-wrap{max-width:100%;overflow-x:auto;margin:1.5rem 0;border:1px solid var(--line);border-radius:3px}
+.cs-table-wrap:focus-visible{outline:3px solid var(--wealth);outline-offset:4px}
+.article-prose .cs-table-wrap table{display:table;font-size:.9rem;line-height:1.6;margin:0;width:100%;min-width:560px}
+.article-prose .cs-table-wrap caption{text-align:left;padding:1rem;font-weight:500;color:var(--ink)}
+.article-prose .cs-table-wrap th,.article-prose .cs-table-wrap td{padding:1rem;min-width:110px}
+.article-prose .cs-table-wrap th[scope=row]{background:transparent;min-width:125px}
+.cs-note{border-left:3px solid var(--wealth);padding:1.2rem 1.3rem;background:var(--wealth-soft);margin:1.8rem 0}
+.article-prose .cs-note p:last-child{margin-bottom:0}
+.cs-tool{border:1px solid var(--line-2);padding:1.5rem;margin:2rem 0;background:var(--surface);border-radius:4px;color:var(--ink);font-family:var(--sans);line-height:1.5}
+.cs-tool [hidden]{display:none!important}
+.article-prose .cs-tool h3{font-size:2rem;margin:.3rem 0 1rem}
+.cs-inputs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.cs-inputs label{display:block;font-size:.9rem;font-weight:500;margin-bottom:.4rem}
+.cs-inputs input{width:100%;min-height:48px;border:1px solid var(--line-2);background:#fff;color:var(--ink);padding:.6rem;font:inherit;border-radius:3px}
+.cs-inputs input[aria-invalid=true]{border:2px solid #9e2929}
+.cs-presets{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0 1.2rem}
+.cs-presets button{min-height:44px;padding:.5rem .9rem;color:var(--ink);background:var(--bg);border:1px solid var(--line-2);border-radius:2px}
+.cs-presets button[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.article-prose .cs-error{color:#942c2c;font-size:.9rem;margin:0 0 .6rem}
+.cs-result{display:grid;grid-template-columns:1.1fr 1fr;gap:1rem;padding:1.2rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:1rem}
+.cs-result span{display:block;font-size:.875rem;margin-bottom:.4rem}
+.cs-result strong{display:block;font-family:var(--serif);font-size:clamp(2rem,5vw,3.5rem);font-weight:400;letter-spacing:-.04em;line-height:1.1}
+.cs-result .cs-secondary strong{font-size:clamp(1.8rem,4vw,2.7rem)}
+.article-prose .cs-small{font-size:.875rem;line-height:1.65;margin:.7rem 0}
+.cs-legend{display:flex;gap:.8rem;flex-wrap:wrap;font-size:.875rem;margin:1.2rem 0 .3rem}
+.cs-legend span{display:flex;align-items:center;gap:.4rem}
+.cs-legend i{width:22px;height:0;border-top:3px solid var(--wealth)}
+.cs-legend span:nth-child(2) i{border-color:#365e4f;border-top-style:dashed}
+.cs-legend span:nth-child(3) i{border-color:#715e88;border-top-style:dotted}
+#cs-chart{width:100%;height:auto;overflow:visible;display:block}
+.cs-grid{stroke:#ded8d3;stroke-width:1}.cs-axis{fill:#5f555b;font:14px Arial,sans-serif}
+.cs-line{stroke-width:3;stroke-linejoin:round;stroke-linecap:round}.cs-line-0{stroke:#755436}.cs-line-1{stroke:#365e4f;stroke-dasharray:8 5}.cs-line-2{stroke:#715e88;stroke-dasharray:2 6}
+.cs-point{stroke:#fff;stroke-width:2}.cs-point-0{fill:#755436}.cs-point-1{fill:#365e4f}.cs-point-2{fill:#715e88}.cs-cursor{stroke:#33252e;stroke-dasharray:3 4;stroke-width:1}
+#cs-explore label{display:block;font-weight:600;font-size:.9rem}#cs-age{width:100%;accent-color:var(--wealth);height:36px}
+.cs-tool .cs-table-wrap{margin:1rem 0}.article-prose .cs-tool .cs-table-wrap table{min-width:470px}
+.cs-tool details{border-top:1px solid var(--line);padding-top:1rem;margin-top:1rem}.cs-tool summary{cursor:pointer;font-size:.9rem;font-weight:600}
+.cs-tool details p{margin-top:.8rem}
+@media(max-width:640px){.cs-tool{padding:1rem}.cs-inputs{grid-template-columns:1fr}.cs-result{grid-template-columns:1fr}.cs-result strong{font-size:2.25rem}.cs-result .cs-secondary strong{font-size:1.9rem}.cs-legend{gap:.6rem}.cs-table-wrap{margin-left:0;margin-right:0}}
+@media print{.cs-controls,#cs-explore{display:none!important}.cs-table-wrap{overflow:visible;border:0}.article-prose .cs-table-wrap table{min-width:0;font-size:10pt}.cs-tool{break-inside:avoid}.cs-tool details>*{display:block}.cs-tool{background:white}}
