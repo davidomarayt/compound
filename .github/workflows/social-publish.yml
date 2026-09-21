@@ -1,0 +1,50 @@
+name: Publish social posts
+
+on:
+  push:
+    branches:
+      - claude/clever-babbage-uibieq
+    paths:
+      - 'content/**/*.md'
+  workflow_dispatch:
+    inputs:
+      article_path:
+        description: 'Article markdown path, e.g. content/news/example.md'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  publish-social:
+    runs-on: ubuntu-latest
+    environment: social-production
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check requests PyYAML
+
+      - name: Publish social posts
+        env:
+          ARTICLE_PATH: ${{ inputs.article_path }}
+          BASE_SHA: ${{ github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+          SOCIAL_DRY_RUN: ${{ vars.SOCIAL_DRY_RUN }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_AUTHOR_URN: ${{ secrets.LINKEDIN_AUTHOR_URN }}
+          LINKEDIN_VERSION: ${{ vars.LINKEDIN_VERSION }}
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+          META_GRAPH_VERSION: ${{ vars.META_GRAPH_VERSION }}
+        run: python scripts/social_publish.py
