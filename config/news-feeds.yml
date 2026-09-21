@@ -1,21 +1,114 @@
 # Compound News Radar sources
 #
-# These feeds are used for discovery only. Every story selected for publication
-# must be independently checked against primary/authoritative sources before it
-# is published on Compound.ie.
+# Discovery only. Feed items are prompts for original Compound reporting.
+# Before publication, independently verify the development and use primary/
+# authoritative sources for every material claim, number and date.
 #
-# For commercial safety, only feeds with clearly suitable reuse terms or
-# first-party institutional feeds should be added here.
+# Commercial safety rule: prefer first-party institutional/government feeds
+# that explicitly provide RSS/Atom syndication. Do not copy article text,
+# graphics or photography into Compound.
 
 feeds:
   - name: ECB — Press releases and speeches
     url: https://www.ecb.europa.eu/rss/press.html
     source_type: primary
+    region: EU
+    default_tags: [wealth]
+    weight: 6
+    ireland_angle: 'Explain what the development could mean for Irish mortgage rates, savings, inflation, the euro and household finances.'
+    tool_targets: ['Mortgage calculator', 'Compound interest calculator', 'Loan/finance calculators']
+
+  - name: Federal Reserve — Monetary policy
+    url: https://www.federalreserve.gov/feeds/press_monetary.xml
+    source_type: primary
+    region: US
     default_tags: [wealth]
     weight: 5
+    ireland_angle: 'Translate US rate decisions into possible effects on the euro-dollar rate, global markets, US-heavy Irish investment portfolios and wider borrowing conditions.'
+    tool_targets: ['Compound interest calculator', 'Mortgage calculator', 'Investment calculators']
 
-# Topic terms are deliberately broad. They score and classify possible stories;
-# they do not decide whether an article should be published.
+  - name: U.S. BLS — Consumer Price Index
+    url: https://www.bls.gov/feed/cpi.rss
+    source_type: primary
+    region: US
+    default_tags: [wealth]
+    weight: 5
+    ireland_angle: 'Explain how US inflation can change Fed expectations, markets, exchange rates and returns relevant to Irish investors.'
+    tool_targets: ['Compound interest calculator', 'Investment calculators']
+
+  - name: U.S. BLS — Employment Situation
+    url: https://www.bls.gov/feed/empsit.rss
+    source_type: primary
+    region: US
+    default_tags: [wealth]
+    weight: 4
+    ireland_angle: 'Focus on what US jobs data could mean for Fed policy, markets, multinational exposure and Irish investors rather than reporting the US labour market for its own sake.'
+    tool_targets: ['Compound interest calculator', 'Salary/take-home pay tools']
+
+  - name: U.S. EIA — Today in Energy
+    url: https://www.eia.gov/rss/todayinenergy.xml
+    source_type: primary
+    region: US/global
+    default_tags: [wealth]
+    weight: 4
+    ireland_angle: 'Use global oil, gas and energy developments to explain possible Irish petrol, diesel, heating, electricity and inflation implications.'
+    tool_targets: ['Car finance/running-cost tools', 'Household budget tools']
+
+  - name: U.S. EIA — Press releases
+    url: https://www.eia.gov/rss/press_rss.xml
+    source_type: primary
+    region: US/global
+    default_tags: [wealth]
+    weight: 4
+    ireland_angle: 'Prioritise oil, gas, LNG and electricity stories with a plausible transmission route to Irish household or business costs.'
+    tool_targets: ['Car finance/running-cost tools', 'Household budget tools']
+
+  - name: SEC — Press releases
+    url: https://www.sec.gov/news/pressreleases.rss
+    source_type: primary
+    region: US
+    default_tags: [wealth]
+    weight: 4
+    ireland_angle: 'Cover only material investing/regulatory developments that matter to Irish holders of US shares, ETFs, brokers or crypto-linked assets.'
+    tool_targets: ['Compound interest calculator', 'Investment calculators', 'Investing-for-a-child guide']
+
+  - name: Eurostat — Economy and finance news releases
+    url: 'https://ec.europa.eu/eurostat/en/search?_estatsearchportlet_WAR_estatsearchportlet_collection=CAT_PREREL&_estatsearchportlet_WAR_estatsearchportlet_theme=PER_ECOFIN&p_p_id=estatsearchportlet_WAR_estatsearchportlet&p_p_lifecycle=2&p_p_mode=view&p_p_resource_id=atom&p_p_state=maximized'
+    source_type: primary
+    region: EU
+    default_tags: [wealth]
+    weight: 6
+    ireland_angle: 'Compare Ireland with the euro area/EU and translate inflation, rates, savings, housing or labour data into a practical Irish household angle.'
+    tool_targets: ['Mortgage calculator', 'Compound interest calculator', 'Salary/take-home pay tools']
+
+  - name: Eurostat — Population and social conditions news releases
+    url: 'https://ec.europa.eu/eurostat/en/search?_estatsearchportlet_WAR_estatsearchportlet_collection=CAT_PREREL&_estatsearchportlet_WAR_estatsearchportlet_theme=PER_POPSOC&p_p_id=estatsearchportlet_WAR_estatsearchportlet&p_p_lifecycle=2&p_p_mode=view&p_p_resource_id=atom&p_p_state=maximized'
+    source_type: primary
+    region: EU
+    default_tags: [happiness, wealth]
+    weight: 4
+    ireland_angle: 'Look for Irish-relevant stories on ageing, fertility, household finances, work, inequality, childcare and quality of life.'
+    tool_targets: ['Pregnancy/due-date tools', 'Investing-for-a-child guide', 'Salary/take-home pay tools']
+
+  - name: EMA — News and press releases
+    url: https://www.ema.europa.eu/en/news.xml
+    source_type: primary
+    region: EU
+    default_tags: [health]
+    weight: 6
+    ireland_angle: 'Explain what an EU medicine approval, review or safety action actually means for Irish patients, availability and next steps.'
+    tool_targets: ['BMI calculator', 'Pregnancy tools', 'Nutrition/protein tools']
+
+  - name: FDA — MedWatch safety alerts
+    url: https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/medwatch/rss.xml
+    source_type: primary
+    region: US
+    default_tags: [health]
+    weight: 3
+    ireland_angle: 'Only pursue alerts with plausible Irish relevance, and clearly distinguish an FDA action from EMA/HPRA authorisation or Irish availability.'
+    tool_targets: ['Health explainers', 'Pregnancy tools', 'BMI calculator']
+
+# Topic terms are broad discovery signals, not publication decisions.
 topics:
   wealth:
     - budget
@@ -28,8 +121,11 @@ topics:
     - housing
     - property
     - ecb
+    - federal reserve
+    - fed
     - interest rate
     - inflation
+    - cpi
     - pension
     - savings
     - bank
@@ -40,12 +136,21 @@ topics:
     - income
     - welfare
     - social protection
-    - energy bill
+    - energy
+    - oil
+    - gas
+    - petrol
+    - diesel
     - electricity
     - cost of living
     - consumer prices
     - employment
     - unemployment
+    - markets
+    - stocks
+    - shares
+    - etf
+    - crypto
 
   health:
     - hse
@@ -56,6 +161,7 @@ topics:
     - nurse
     - medicine
     - medication
+    - drug
     - cancer
     - screening
     - vaccine
@@ -70,6 +176,7 @@ topics:
     - fertility
     - pregnancy
     - nutrition
+    - safety alert
 
   happiness:
     - childcare
@@ -89,20 +196,23 @@ topics:
     - commuting
     - quality of life
     - recreation
+    - fertility
+    - ageing
+    - population
 
 priority_terms:
   - ireland
   - irish
-  - budget
-  - revenue
-  - hse
-  - cso
-  - central bank
+  - euro area
+  - european union
   - ecb
-  - tax
+  - federal reserve
+  - inflation
   - mortgage
-  - rent
   - housing
   - pension
   - health
+  - medicine
   - childcare
+  - oil
+  - energy
