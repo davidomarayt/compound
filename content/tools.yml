@@ -1316,3 +1316,329 @@ tools:
       This calculator therefore does not guess a kWh figure from a letter grade. Enter an energy-use assumption or figure relevant to your assessment and compare it with a target. Actual bills also depend on fuel mix, standing charges, tariffs, occupancy and behaviour.
     sources:
       - {title: "SEAI — Building Energy Rating information", url: "https://www.seai.ie/ber"}
+
+
+  - slug: solar-ev-battery-optimiser
+    title: Solar + EV + Battery Optimiser Ireland
+    category: Home Energy
+    formula: solar_optimizer
+    summary: Compare solar-only, solar with smart EV charging, solar with a battery, and a combined solar + EV + battery setup side by side.
+    meta_description: Solar EV battery optimiser Ireland. Compare annual value, payback and 20-year net benefit for solar-only, EV smart charging, battery and combined scenarios.
+    updated: 2026-09-21
+    fields:
+      - {id: solar_cost, label: Solar PV installed cost before grant, type: number, prefix: "€", default: 9000, min: 0, step: 100}
+      - id: grant_eligible
+        label: Include the SEAI Solar PV grant
+        type: checkbox
+        default: true
+      - {id: kwp, label: Solar PV system size, type: number, suffix: "kWp", default: 4, min: 0, max: 30, step: 0.1}
+      - {id: generation_per_kwp, label: Expected annual generation per kWp, type: number, suffix: "kWh", default: 850, min: 0, max: 2000, step: 10}
+      - {id: home_kwh, label: Household electricity use before EV, type: number, suffix: "kWh/year", default: 4200, min: 0, step: 100}
+      - {id: direct_home_pct, label: Solar generation used directly by household loads, type: number, suffix: "%", default: 35, min: 0, max: 100, step: 1}
+      - {id: day_rate, label: Day / avoided import rate, type: number, prefix: "€", suffix: "/kWh", default: 0.30, min: 0, step: 0.01}
+      - {id: export_rate, label: Export payment, type: number, prefix: "€", suffix: "/kWh", default: 0.15, min: 0, step: 0.01}
+      - id: has_ev
+        label: Include an EV charged at home
+        type: checkbox
+        default: true
+      - {id: ev_km, label: EV distance per year, type: number, suffix: "km", default: 15000, min: 0, step: 500, show_if: has_ev}
+      - {id: ev_efficiency, label: EV consumption, type: number, suffix: "kWh/100km", default: 18, min: 1, max: 60, step: 0.5, show_if: has_ev}
+      - {id: ev_loss_pct, label: EV charging losses, type: number, suffix: "%", default: 10, min: 0, max: 40, step: 1, show_if: has_ev}
+      - {id: ev_home_pct, label: Share of EV charging done at home, type: number, suffix: "%", default: 80, min: 0, max: 100, step: 1, show_if: has_ev}
+      - {id: ev_solar_pct, label: Share of home EV charging that can follow solar, type: number, suffix: "%", default: 35, min: 0, max: 100, step: 1, show_if: has_ev}
+      - {id: ev_grid_rate, label: Grid rate otherwise used for EV charging, type: number, prefix: "€", suffix: "/kWh", default: 0.10, min: 0, step: 0.01, show_if: has_ev}
+      - {id: battery_cost, label: Battery installed cost, type: number, prefix: "€", default: 4500, min: 0, step: 100}
+      - {id: battery_kwh, label: Usable battery capacity, type: number, suffix: "kWh", default: 5, min: 0.1, max: 100, step: 0.5}
+      - {id: battery_efficiency, label: Battery round-trip efficiency, type: number, suffix: "%", default: 90, min: 50, max: 100, step: 1}
+      - {id: solar_capture_pct, label: Remaining solar surplus captured by battery, type: number, suffix: "%", default: 60, min: 0, max: 100, step: 1}
+      - id: use_night_charge
+        label: Include cheap-rate grid charging of the battery
+        type: checkbox
+        default: true
+      - {id: night_rate, label: Night battery charging rate, type: number, prefix: "€", suffix: "/kWh", default: 0.10, min: 0, step: 0.01, show_if: use_night_charge}
+      - {id: night_kwh_day, label: Average battery energy bought at night, type: number, suffix: "kWh/day", default: 3, min: 0, step: 0.5, show_if: use_night_charge}
+    results:
+      - {id: generation, label: Annual solar generation}
+      - {id: ev_demand, label: Annual home EV charging demand}
+      - {id: best_scenario, label: Highest 20-year net-benefit scenario}
+      - {id: solar_payback, label: Solar-only simple payback}
+      - {id: ev_payback, label: Solar + smart EV payback}
+      - {id: battery_payback, label: Solar + battery payback}
+      - {id: combined_payback, label: Solar + EV + battery payback}
+    guide: |
+      ## Compare systems rather than asking whether a battery is “good”
+
+      The optimiser runs four scenarios from the same house, solar and tariff assumptions. It separates direct household use, EV charging, battery storage and exports so the same kWh is not counted twice.
+
+      An EV only improves solar economics when it is available to absorb solar that would otherwise be exported. If the car normally charges on a cheap night rate, a solar kWh going into the car avoids that cheaper rate, not the daytime rate.
+
+      A battery can capture solar surplus and can also shift cheap night-rate electricity into expensive daytime hours. The model applies battery round-trip losses and caps combined solar + grid charging at one full equivalent battery cycle per day on average.
+
+      ## Read the 20-year comparison carefully
+
+      The chart compares **20-year net benefit after the upfront system cost** under constant tariff and generation assumptions. It is not a forecast. Battery degradation/replacement, inverter replacement, financing, panel degradation and future tariff changes are outside the model.
+
+      Use it to see what actually creates value in your own case: higher self-consumption, an EV at home during daylight, a large day/night tariff spread, or simply a solar-only system with fewer moving parts.
+    sources:
+      - {title: "SEAI — Solar Electricity PV Grant", url: "https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant"}
+      - {title: "SEAI — Electricity from Solar", url: "https://www.seai.ie/renewable-energy/solar-energy/electricity-from-solar"}
+      - {title: "SEAI — Smart energy technologies", url: "https://www.seai.ie/plan-your-energy-journey/for-your-home/smart-living/smart-energy-technologies"}
+
+  - slug: whole-house-retrofit-planner
+    title: Whole-House Retrofit Planner Ireland
+    category: Home Energy
+    formula: retrofit_planner
+    summary: Combine upgrade quotes, current One Stop Shop grant values and an editable energy-saving assumption into one retrofit budget and payback plan.
+    meta_description: Whole-house retrofit planner Ireland. Combine insulation, windows, heat pump, solar and other upgrades with current SEAI One Stop Shop grants and payback estimates.
+    updated: 2026-09-21
+    fields:
+      - id: home_type
+        label: Home type
+        type: select
+        default: semi
+        options:
+          - {value: detached, label: Detached house}
+          - {value: semi, label: Semi-detached / end terrace}
+          - {value: mid, label: Mid-terrace}
+          - {value: apartment, label: Apartment}
+      - id: oss_eligible
+        label: Model the current One Stop Shop grant schedule
+        type: checkbox
+        default: true
+        help: "The standard One Stop Shop route generally requires a home built and occupied before 2011 and a qualifying complete upgrade. Untick to model the project with no grants."
+      - id: first_time_buyer
+        label: Qualifying first-time buyer for the enhanced attic grant
+        type: checkbox
+        default: false
+        show_if: oss_eligible
+      - {id: annual_energy_bill, label: Current annual home energy bill, type: number, prefix: "€", default: 3000, min: 0, step: 100}
+      - {id: saving_pct, label: Assumed reduction in annual energy cost after all selected works, type: number, suffix: "%", default: 35, min: 0, max: 100, step: 1}
+      - id: attic
+        label: Include attic insulation
+        type: checkbox
+        default: true
+      - {id: attic_cost, label: Attic insulation quote, type: number, prefix: "€", default: 2500, min: 0, step: 100, show_if: attic}
+      - id: external_wall
+        label: Include external wall insulation / wrap
+        type: checkbox
+        default: true
+      - {id: wall_cost, label: External wall insulation quote, type: number, prefix: "€", default: 18000, min: 0, step: 500, show_if: external_wall}
+      - id: windows
+        label: Include complete window upgrade
+        type: checkbox
+        default: true
+      - {id: windows_cost, label: Window upgrade quote, type: number, prefix: "€", default: 12000, min: 0, step: 500, show_if: windows}
+      - id: heat_pump
+        label: Include heat pump system
+        type: checkbox
+        default: true
+      - {id: heat_pump_cost, label: Heat pump system quote, type: number, prefix: "€", default: 14000, min: 0, step: 500, show_if: heat_pump}
+      - id: solar
+        label: Include solar PV
+        type: checkbox
+        default: true
+      - {id: solar_cost, label: Solar PV quote, type: number, prefix: "€", default: 8000, min: 0, step: 500, show_if: solar}
+      - {id: solar_kwp, label: Solar PV size, type: number, suffix: "kWp", default: 4, min: 0, max: 30, step: 0.1, show_if: solar}
+      - id: doors
+        label: Include external doors
+        type: checkbox
+        default: false
+      - {id: doors_cost, label: External door quote total, type: number, prefix: "€", default: 3000, min: 0, step: 100, show_if: doors}
+      - {id: door_count, label: Number of external doors, type: number, default: 2, min: 1, max: 10, step: 1, show_if: doors}
+      - id: ventilation
+        label: Include mechanical ventilation
+        type: checkbox
+        default: false
+      - {id: ventilation_cost, label: Ventilation quote, type: number, prefix: "€", default: 5000, min: 0, step: 100, show_if: ventilation}
+      - id: airtightness
+        label: Include airtightness works
+        type: checkbox
+        default: false
+      - {id: airtightness_cost, label: Airtightness works quote, type: number, prefix: "€", default: 2500, min: 0, step: 100, show_if: airtightness}
+      - {id: other_cost, label: Other retrofit / professional costs, type: number, prefix: "€", default: 3000, min: 0, step: 100}
+    results:
+      - {id: gross_cost, label: Total selected upgrade cost}
+      - {id: grants, label: Indicative grants included}
+      - {id: net_cost, label: Net project cost}
+      - {id: annual_saving, label: Assumed annual energy saving}
+      - {id: payback, label: Simple energy-bill payback}
+    guide: |
+      ## This is a budget planner, not a BER design tool
+
+      SEAI's One Stop Shop route is intended for multiple upgrades and generally requires the property to have been built and occupied before 2011 and to achieve the required post-works energy-performance outcome. A registered One Stop Shop assesses the home and determines the qualifying package.
+
+      This planner uses the current published homeowner One Stop Shop grant schedule for the selected home type. It does not decide technical eligibility, heat-loss readiness, heritage suitability or whether two grants can be combined in your exact project.
+
+      ## Why the energy saving is an editable assumption
+
+      The same €40,000 retrofit can produce very different bill savings depending on the starting BER, fuel, thermostat settings, floor area and how much comfort improves after the work. Rather than invent a universal savings percentage, the calculator asks you to model it.
+
+      Run several scenarios — for example 20%, 35% and 50% — and judge the project on comfort, resilience and property performance as well as simple financial payback.
+    sources:
+      - {title: "SEAI — One Stop Shop multiple energy upgrades and grant values", url: "https://www.seai.ie/grants/home-energy-grants/one-stop-shop/multiple-energy-upgrades"}
+      - {title: "SEAI — Home energy upgrade options", url: "https://www.seai.ie/grants/home-energy-grants"}
+      - {title: "SEAI — Heat pump systems", url: "https://www.seai.ie/grants/home-energy-grants/individual-grants/heat-pump-systems"}
+
+  - slug: myfuturefund-calculator
+    title: MyFutureFund Auto-Enrolment Calculator Ireland
+    category: Retirement & Investing
+    formula: myfuturefund
+    summary: Check likely MyFutureFund enrolment status, see employee/employer/State contributions and project the fund using the phased contribution schedule.
+    meta_description: MyFutureFund calculator Ireland 2026. Check auto-enrolment eligibility and project employee, employer and State contributions through retirement.
+    updated: 2026-09-21
+    fields:
+      - {id: age, label: Current age, type: number, default: 30, min: 18, max: 70, step: 1}
+      - {id: salary, label: Gross annual pay across enrolled employment(s), type: number, prefix: "€", default: 50000, min: 0, step: 500}
+      - id: workplace_pension
+        label: Already paying into a qualifying pension through payroll
+        type: checkbox
+        default: false
+      - {id: current_fund, label: Existing MyFutureFund balance, type: number, prefix: "€", default: 0, min: 0, step: 100}
+      - {id: retirement_age, label: Projection age, type: number, default: 66, min: 18, max: 80, step: 1}
+      - {id: salary_growth, label: Assumed annual salary growth, type: number, suffix: "%", default: 2, min: -10, max: 15, step: 0.1}
+      - {id: return_rate, label: Assumed annual investment return, type: number, suffix: "%", default: 5, min: -20, max: 20, step: 0.1}
+    results:
+      - {id: status, label: 2026 participation status}
+      - {id: employee_2026, label: Employee contribution in 2026}
+      - {id: employer_2026, label: Employer contribution in 2026}
+      - {id: state_2026, label: State contribution in 2026}
+      - {id: total_2026, label: Total added in 2026}
+      - {id: projected, label: Projected fund at selected age}
+      - {id: employee_total, label: Total employee contributions in projection}
+    guide: |
+      ## MyFutureFund started in 2026
+
+      Employees are automatically enrolled where they are generally aged 23 to 59, earn at least €20,000 a year across employments and are not already paying into a qualifying pension through payroll. Eligible employees outside the automatic age/income thresholds can opt in in certain circumstances; self-employed people cannot currently opt in.
+
+      Contributions are phased by calendar year. In 2026–2028 the employee and employer each pay 1.5% and the State adds 0.5%. Those rates rise to 3% / 3% / 1% in 2029–2031, 4.5% / 4.5% / 1.5% in 2032–2034, and 6% / 6% / 2% from 2035.
+
+      Contributions stop after the €80,000 annual gross-pay threshold is reached, subject to payroll timing around the pay period in which the threshold is crossed. This calculator uses an €80,000 annual cap for a clean annual illustration.
+
+      ## Projection assumptions
+
+      The investment return and salary growth are assumptions, not MyFutureFund forecasts. The model assumes continuous participation to the selected age and applies the calendar-year contribution rate that is in force each year.
+    sources:
+      - {title: "MyFutureFund — participant eligibility", url: "https://myfuturefund.ie/participant"}
+      - {title: "MyFutureFund — contribution rates and €80,000 threshold", url: "https://myfuturefund.ie/participant/contributions"}
+      - {title: "MyFutureFund — participant guide", url: "https://myfuturefund.ie/participant-guide"}
+
+  - slug: childcare-return-to-work-calculator
+    title: Childcare Cost vs Returning to Work Calculator Ireland
+    category: Family
+    formula: childcare_return
+    summary: Estimate what returning to paid work adds to household finances after PAYE, childcare, NCS support, commuting and work-related costs.
+    meta_description: Childcare vs returning to work calculator Ireland. Estimate net salary after PAYE, childcare fees, NCS subsidy, commuting and work costs.
+    updated: 2026-09-21
+    fields:
+      - {id: salary, label: Gross annual salary on returning to work, type: number, prefix: "€", default: 45000, min: 0, step: 500}
+      - {id: pension_pct, label: Employee pension contribution, type: number, suffix: "%", default: 0, min: 0, max: 30, step: 0.5}
+      - {id: work_hours, label: Paid working hours per week, type: number, default: 37.5, min: 1, max: 80, step: 0.5}
+      - {id: children, label: Children using paid childcare, type: number, default: 1, min: 1, max: 10, step: 1}
+      - {id: childcare_hours, label: Paid childcare hours per child per week, type: number, default: 40, min: 0, max: 80, step: 1}
+      - {id: childcare_fee, label: Childcare fee before NCS, type: number, prefix: "€", suffix: "/hour", default: 8, min: 0, step: 0.10}
+      - {id: ncs_rate, label: NCS hourly subsidy actually available to you, type: number, prefix: "€", suffix: "/hour", default: 2.14, min: 0, step: 0.01}
+      - {id: childcare_weeks, label: Childcare / working weeks per year, type: number, default: 48, min: 1, max: 52, step: 1}
+      - {id: commute_weekly, label: Weekly commuting cost, type: number, prefix: "€", default: 60, min: 0, step: 5}
+      - {id: work_cost_weekly, label: Other weekly work costs, type: number, prefix: "€", default: 30, min: 0, step: 5}
+      - {id: other_annual, label: Other annual costs caused by returning to work, type: number, prefix: "€", default: 0, min: 0, step: 100}
+    results:
+      - {id: take_home, label: Estimated annual take-home pay}
+      - {id: childcare_gross, label: Gross annual childcare cost}
+      - {id: ncs_support, label: NCS support modelled}
+      - {id: childcare_net, label: Net childcare cost}
+      - {id: work_costs, label: Commute + other work costs}
+      - {id: household_gain, label: Estimated annual household financial gain from working}
+      - {id: effective_hourly, label: Financial gain per paid working hour}
+    guide: |
+      ## Start with the actual NCS award if you have one
+
+      The current universal NCS subsidy is €2.14 per hour for up to 45 hours a week. Income-assessed awards can be higher and depend on household circumstances, child age, educational stage and family composition. Enter your actual hourly NCS award if you have it rather than relying on the default.
+
+      This calculator asks a different question from a normal salary calculator: **after tax and the costs created by going to work, how much additional household cash is left?**
+
+      The model estimates single-person PAYE/USC/Class A PRSI using the 2026 default tax assumptions, then subtracts net childcare, commuting and other work costs. It does not value pension benefits, career progression, employment rights, future earnings, social insurance entitlements or the non-financial value of work.
+
+      Childcare fees remain provider-specific. Use your provider's actual weekly/hourly fee and your actual NCS award for the most meaningful answer.
+    sources:
+      - {title: "Government of Ireland — National Childcare Scheme universal subsidy", url: "https://www.gov.ie/en/department-of-children-disability-and-equality/publications/ready-for-pre-school/"}
+      - {title: "HSE — childcare options and NCS support", url: "https://www2.hse.ie/babies-children/parenting-advice/services-supports/childcare-options-free-pre-school-scheme/"}
+      - {title: "Revenue — 2026 tax rates, bands and credits", url: "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx"}
+
+  - slug: mortgage-switch-calculator
+    title: Mortgage Switch & Rate Change Calculator Ireland
+    category: Mortgage & Property
+    formula: mortgage_switch
+    summary: Compare your current mortgage with a new rate or lender, including switching costs, break fees, cashback and a new mortgage term.
+    meta_description: Mortgage switch calculator Ireland. Compare monthly repayments, interest, switching costs, cashback, break-even time and remaining mortgage balance.
+    updated: 2026-09-21
+    fields:
+      - {id: balance, label: Current mortgage balance, type: number, prefix: "€", default: 250000, min: 0, step: 1000}
+      - {id: current_rate, label: Current interest rate, type: number, suffix: "%", default: 4.2, min: 0, max: 20, step: 0.01}
+      - {id: current_years, label: Remaining term, type: number, suffix: years, default: 20, min: 1, max: 50, step: 1}
+      - {id: new_rate, label: New / alternative interest rate, type: number, suffix: "%", default: 3.4, min: 0, max: 20, step: 0.01}
+      - {id: new_years, label: New mortgage term, type: number, suffix: years, default: 20, min: 1, max: 50, step: 1}
+      - {id: switching_costs, label: Legal, valuation and other switching costs, type: number, prefix: "€", default: 1500, min: 0, step: 100}
+      - {id: break_fee, label: Fixed-rate break fee if applicable, type: number, prefix: "€", default: 0, min: 0, step: 100}
+      - {id: cashback, label: Cashback / switching incentive, type: number, prefix: "€", default: 0, min: 0, step: 100}
+    results:
+      - {id: current_payment, label: Current monthly repayment estimate}
+      - {id: new_payment, label: New monthly repayment estimate}
+      - {id: monthly_change, label: Monthly repayment change}
+      - {id: net_switch_cost, label: Net upfront switching cost}
+      - {id: break_even, label: Break-even from monthly saving}
+      - {id: lifetime_difference, label: Estimated total-cost difference}
+    guide: |
+      ## A lower monthly payment is not automatically a cheaper mortgage
+
+      Switching can reduce the rate, but extending the term can lower the monthly repayment while increasing the total interest paid. This calculator therefore compares both **monthly cash flow** and the **total scheduled repayment cost**.
+
+      Net switching cost is legal/valuation/other costs plus any break fee, less cashback. Break-even uses the monthly repayment saving only, so it is most meaningful where the new term is similar to the old term.
+
+      The balance chart compares how quickly the mortgage is scheduled to fall under both rates and terms. Real fixed-rate break fees, lender cashback conditions, mortgage protection and future rate changes must be checked with the relevant lender or adviser.
+    sources:
+      - {title: "CCPC — switching your mortgage", url: "https://www.ccpc.ie/consumers/money/mortgages/switching-lenders-or-mortgage/"}
+
+  - slug: lifetime-cost-calculator
+    title: Lifetime Cost Calculator Ireland
+    category: Everyday Money
+    formula: lifetime_cost
+    summary: Project the cumulative cost of your current lifestyle from today to a chosen age, including housing, food, transport, travel, childcare and recurring major purchases.
+    meta_description: Lifetime cost calculator Ireland. Project housing, food, transport, childcare, travel and other spending from your current age to a chosen age with inflation.
+    updated: 2026-09-21
+    fields:
+      - {id: current_age, label: Current age, type: number, default: 30, min: 18, max: 100, step: 1}
+      - {id: end_age, label: Project spending to age, type: number, default: 80, min: 19, max: 110, step: 1}
+      - {id: inflation, label: Annual spending inflation assumption, type: number, suffix: "%", default: 2.5, min: -5, max: 15, step: 0.1}
+      - {id: housing_monthly, label: Housing cost per month today, type: number, prefix: "€", default: 1800, min: 0, step: 50}
+      - {id: housing_until, label: Current housing cost continues until age, type: number, default: 65, min: 18, max: 110, step: 1}
+      - {id: food_monthly, label: Groceries / household essentials per month, type: number, prefix: "€", default: 700, min: 0, step: 25}
+      - {id: utilities_monthly, label: Utilities / home services per month, type: number, prefix: "€", default: 350, min: 0, step: 25}
+      - {id: transport_monthly, label: Transport running cost per month, type: number, prefix: "€", default: 500, min: 0, step: 25}
+      - {id: leisure_monthly, label: Leisure, eating out and subscriptions per month, type: number, prefix: "€", default: 500, min: 0, step: 25}
+      - {id: travel_annual, label: Holidays / travel per year, type: number, prefix: "€", default: 4000, min: 0, step: 100}
+      - {id: insurance_health_annual, label: Insurance and health costs per year, type: number, prefix: "€", default: 3500, min: 0, step: 100}
+      - {id: childcare_annual, label: Net childcare / child-related recurring cost per year today, type: number, prefix: "€", default: 0, min: 0, step: 100}
+      - {id: childcare_years, label: Years that childcare / child cost continues, type: number, default: 0, min: 0, max: 30, step: 1}
+      - {id: major_purchase, label: Recurring major purchase cost today (for example replacement car), type: number, prefix: "€", default: 25000, min: 0, step: 500}
+      - {id: major_interval, label: Years between major purchases, type: number, default: 8, min: 1, max: 40, step: 1}
+      - {id: other_monthly, label: Other recurring spending per month, type: number, prefix: "€", default: 300, min: 0, step: 25}
+    results:
+      - {id: years, label: Years modelled}
+      - {id: today_annual, label: Current annual lifestyle cost}
+      - {id: lifetime_nominal, label: Total projected cash spending}
+      - {id: lifetime_today_money, label: Equivalent total at today's prices}
+      - {id: housing_total, label: Projected housing spend}
+      - {id: major_total, label: Projected recurring major purchases}
+    guide: |
+      ## A lifetime cost is a planning lens, not a bill
+
+      This calculator asks what your current lifestyle could cost if broad spending patterns continued from your current age to the age you choose. Recurring expenses rise with the inflation assumption, while housing can be stopped at a chosen age and childcare can be limited to a chosen number of years.
+
+      “Projected cash spending” is the sum of future inflated euro amounts. “Today's-money spending” keeps each category at today's price level so you can see the underlying volume of lifestyle spending without inflation.
+
+      ## Why this can be useful
+
+      A €500 monthly decision can look small next to a salary, but over 40 or 50 years it becomes a major lifetime allocation. The same applies to cars, housing, travel and recurring subscriptions.
+
+      The chart shows cumulative cash spending by age. Use the tool to compare lifestyles rather than to forecast your exact future. It deliberately does not assume investment returns, taxes, inheritance, State Pension or salary growth.
+    sources: []

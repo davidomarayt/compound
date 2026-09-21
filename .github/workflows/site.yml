@@ -71,9 +71,35 @@ jobs:
           grep -Fq 'data-calculator="pension_projection"' /tmp/pension.html
           grep -Fq 'data-tool-chart' /tmp/pension.html
 
+          fetch https://compound.ie/myfuturefund-calculator/ /tmp/mff.html
+          grep -Fq 'data-calculator="myfuturefund"' /tmp/mff.html
+          grep -Fq 'MyFutureFund Auto-Enrolment Calculator Ireland' /tmp/mff.html
+
+          fetch https://compound.ie/childcare-return-to-work-calculator/ /tmp/childcare.html
+          grep -Fq 'data-calculator="childcare_return"' /tmp/childcare.html
+          grep -Fq '2.14' /tmp/childcare.html
+
+          fetch https://compound.ie/mortgage-switch-calculator/ /tmp/switch.html
+          grep -Fq 'data-calculator="mortgage_switch"' /tmp/switch.html
+
+          fetch https://compound.ie/lifetime-cost-calculator/ /tmp/lifetime.html
+          grep -Fq 'data-calculator="lifetime_cost"' /tmp/lifetime.html
+
+          fetch https://compound.ie/solar-ev-battery-optimiser/ /tmp/solar-opt.html
+          grep -Fq 'data-calculator="solar_optimizer"' /tmp/solar-opt.html
+
+          fetch https://compound.ie/whole-house-retrofit-planner/ /tmp/retrofit.html
+          grep -Fq 'data-calculator="retrofit_planner"' /tmp/retrofit.html
+
           fetch https://compound.ie/static/tools.js?v=20260921b /tmp/tools.js
           grep -Fq 'take_home_2026' /tmp/tools.js
           grep -Fq 'renderToolChart' /tmp/tools.js
+          grep -Fq 'myfuturefund' /tmp/tools.js
+          grep -Fq 'childcare_return' /tmp/tools.js
+          grep -Fq 'mortgage_switch' /tmp/tools.js
+          grep -Fq 'lifetime_cost' /tmp/tools.js
+          grep -Fq 'solar_optimizer' /tmp/tools.js
+          grep -Fq 'retrofit_planner' /tmp/tools.js
 
           fetch https://compound.ie/sitemap.xml /tmp/sitemap.xml
           grep -Fq 'https://compound.ie/tools/' /tmp/sitemap.xml

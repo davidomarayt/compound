@@ -7,7 +7,7 @@ from compound.site.build import load_tools
 def test_tool_catalogue_has_unique_routes():
     content_dir = Path(__file__).parents[1] / "content"
     tools = load_tools(content_dir)
-    assert len(tools) >= 37
+    assert len(tools) >= 43
     assert len({tool["slug"] for tool in tools}) == len(tools)
     assert all(tool["url"].startswith("/") and tool["url"].endswith("/") for tool in tools)
     assert all(tool["fields"] and tool["results"] for tool in tools)
@@ -25,6 +25,8 @@ def test_tool_formulas_are_supported():
         "contractor_vs_salary", "investment_fees", "fire_number", "retirement_income",
         "pension_projection", "rent_vs_buy", "mortgage_affordability",
         "house_buying_costs", "solar_payback", "ber_energy",
+        "solar_optimizer", "retrofit_planner", "myfuturefund", "childcare_return",
+        "mortgage_switch", "lifetime_cost",
     }
     assert {tool["formula"] for tool in data["tools"]} <= supported
 
@@ -39,6 +41,8 @@ def test_high_intent_tool_routes_present():
         "investment-fee-calculator", "fire-number-calculator", "retirement-income-calculator",
         "pension-projection-calculator", "rent-vs-buy-calculator", "mortgage-affordability-calculator",
         "house-buying-costs-calculator", "solar-payback-calculator", "ber-energy-cost-calculator",
+        "solar-ev-battery-optimiser", "whole-house-retrofit-planner", "myfuturefund-calculator",
+        "childcare-return-to-work-calculator", "mortgage-switch-calculator", "lifetime-cost-calculator",
     }
     assert expected <= slugs
 
@@ -61,3 +65,27 @@ def test_solar_payback_has_energy_system_controls():
     assert "4,200 kWh" in guide
     assert "built and occupied before 2021" in guide
     assert "EV" in guide and "battery" in guide.lower() and "night" in guide.lower()
+
+
+def test_next_flagship_tools_have_expected_controls():
+    content_dir = Path(__file__).parents[1] / "content"
+    tools = {tool["slug"]: tool for tool in load_tools(content_dir)}
+
+    mff_fields = {field["id"]: field for field in tools["myfuturefund-calculator"]["fields"]}
+    assert mff_fields["workplace_pension"]["type"] == "checkbox"
+
+    childcare = tools["childcare-return-to-work-calculator"]
+    childcare_fields = {field["id"]: field for field in childcare["fields"]}
+    assert childcare_fields["ncs_rate"]["default"] == 2.14
+
+    retrofit_fields = {field["id"]: field for field in tools["whole-house-retrofit-planner"]["fields"]}
+    assert retrofit_fields["oss_eligible"]["type"] == "checkbox"
+    assert retrofit_fields["solar_kwp"]["show_if"] == "solar"
+
+    solar_fields = {field["id"]: field for field in tools["solar-ev-battery-optimiser"]["fields"]}
+    assert solar_fields["grant_eligible"]["type"] == "checkbox"
+    assert solar_fields["has_ev"]["type"] == "checkbox"
+    assert solar_fields["ev_loss_pct"]["show_if"] == "has_ev"
+
+    lifetime = tools["lifetime-cost-calculator"]
+    assert any(result["id"] == "lifetime_nominal" for result in lifetime["results"])

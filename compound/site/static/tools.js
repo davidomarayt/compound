@@ -393,6 +393,174 @@
         current_use:num(current)+' kWh',target_use:num(target)+' kWh',current_cost:money(currentCost),target_cost:money(targetCost),saving:money(currentCost-targetCost),
         __chart:{type:'bar',title:'Current versus target energy-cost illustration',caption:'Uses the same blended energy-price assumption for both scenarios.',labels:['Current','Target'],series:[{label:'Annual energy cost',values:[currentCost,targetCost]}]}
       };
+    },
+    solar_optimizer(v){
+      const generation=Math.max(0,v.kwp*v.generation_per_kwp);
+      const grant=v.grant_eligible?Math.min(1800,Math.min(v.kwp,2)*700+Math.max(0,Math.min(v.kwp-2,2))*200):0;
+      const solarNet=Math.max(0,v.solar_cost-grant);
+      const directHome=Math.min(generation*Math.max(0,Math.min(100,v.direct_home_pct))/100,Math.max(0,v.home_kwh));
+      const surplus0=Math.max(0,generation-directHome);
+      let evDemand=0,directEv=0;
+      if(v.has_ev){
+        const chargeEff=Math.max(.01,1-Math.max(0,Math.min(40,v.ev_loss_pct))/100);
+        evDemand=Math.max(0,v.ev_km)*Math.max(0,v.ev_efficiency)/100/chargeEff*Math.max(0,Math.min(100,v.ev_home_pct))/100;
+        directEv=Math.min(surplus0,evDemand*Math.max(0,Math.min(100,v.ev_solar_pct))/100);
+      }
+      const solarOnlyAnnual=directHome*v.day_rate+surplus0*v.export_rate;
+      const evSurplus=Math.max(0,surplus0-directEv);
+      const evAnnual=directHome*v.day_rate+directEv*v.ev_grid_rate+evSurplus*v.export_rate;
+
+      const batteryEff=Math.max(.01,Math.min(1,v.battery_efficiency/100));
+      const annualInputCap=Math.max(0,v.battery_kwh)*365;
+      const homeRemaining=Math.max(0,v.home_kwh-directHome);
+      const batteryInput=Math.min(surplus0*Math.max(0,Math.min(100,v.solar_capture_pct))/100,annualInputCap,homeRemaining/batteryEff);
+      const batteryDelivered=batteryInput*batteryEff;
+      const batteryExport=Math.max(0,surplus0-batteryInput);
+      const remainingCap=Math.max(0,annualInputCap-batteryInput);
+      const remainingHome=Math.max(0,homeRemaining-batteryDelivered);
+      const nightInput=v.use_night_charge?Math.min(Math.max(0,v.night_kwh_day)*365,remainingCap,remainingHome/batteryEff):0;
+      const nightDelivered=nightInput*batteryEff;
+      const nightValue=nightDelivered*v.day_rate-nightInput*v.night_rate;
+      const batteryAnnual=directHome*v.day_rate+batteryDelivered*v.day_rate+batteryExport*v.export_rate+nightValue;
+
+      const combinedHomeRemaining=Math.max(0,v.home_kwh-directHome);
+      const combinedSurplus=Math.max(0,surplus0-directEv);
+      const combinedBatteryInput=Math.min(combinedSurplus*Math.max(0,Math.min(100,v.solar_capture_pct))/100,annualInputCap,combinedHomeRemaining/batteryEff);
+      const combinedDelivered=combinedBatteryInput*batteryEff;
+      const combinedExport=Math.max(0,combinedSurplus-combinedBatteryInput);
+      const combinedCap=Math.max(0,annualInputCap-combinedBatteryInput);
+      const combinedHomeGrid=Math.max(0,combinedHomeRemaining-combinedDelivered);
+      const combinedNightInput=v.use_night_charge?Math.min(Math.max(0,v.night_kwh_day)*365,combinedCap,combinedHomeGrid/batteryEff):0;
+      const combinedNightDelivered=combinedNightInput*batteryEff;
+      const combinedNightValue=combinedNightDelivered*v.day_rate-combinedNightInput*v.night_rate;
+      const combinedAnnual=directHome*v.day_rate+directEv*v.ev_grid_rate+combinedDelivered*v.day_rate+combinedExport*v.export_rate+combinedNightValue;
+
+      const withBatteryCost=solarNet+Math.max(0,v.battery_cost);
+      const pb=a=>a>0?solarNet/a:Infinity;
+      const pbb=a=>a>0?withBatteryCost/a:Infinity;
+      const benefits=[
+        {name:'Solar only',value:solarOnlyAnnual*20-solarNet},
+        {name:'Solar + smart EV',value:evAnnual*20-solarNet},
+        {name:'Solar + battery',value:batteryAnnual*20-withBatteryCost},
+        {name:'Solar + EV + battery',value:combinedAnnual*20-withBatteryCost}
+      ];
+      const best=benefits.reduce((a,b)=>b.value>a.value?b:a,benefits[0]);
+      return {
+        generation:num(generation)+' kWh',ev_demand:num(evDemand)+' kWh',best_scenario:best.name,
+        solar_payback:Number.isFinite(pb(solarOnlyAnnual))?number.format(pb(solarOnlyAnnual))+' years':'Not reached',
+        ev_payback:Number.isFinite(pb(evAnnual))?number.format(pb(evAnnual))+' years':'Not reached',
+        battery_payback:Number.isFinite(pbb(batteryAnnual))?number.format(pbb(batteryAnnual))+' years':'Not reached',
+        combined_payback:Number.isFinite(pbb(combinedAnnual))?number.format(pbb(combinedAnnual))+' years':'Not reached',
+        __chart:{type:'bar',title:'20-year net benefit by configuration',caption:'Annual values are held constant and upfront solar/battery costs are deducted.',labels:benefits.map(x=>x.name),series:[{label:'20-year net benefit',values:benefits.map(x=>x.value)}]}
+      };
+    },
+    retrofit_planner(v){
+      const costs={
+        attic:v.attic?v.attic_cost:0,wall:v.external_wall?v.wall_cost:0,windows:v.windows?v.windows_cost:0,
+        heat:v.heat_pump?v.heat_pump_cost:0,solar:v.solar?v.solar_cost:0,doors:v.doors?v.doors_cost:0,
+        ventilation:v.ventilation?v.ventilation_cost:0,airtight:v.airtightness?v.airtightness_cost:0,other:v.other_cost
+      };
+      const gross=Object.values(costs).reduce((a,b)=>a+b,0);
+      let grants=0;
+      if(v.oss_eligible){
+        const type=v.home_type;
+        const atticStandard={detached:2000,semi:1500,mid:1400,apartment:1100};
+        const atticFtb={detached:2500,semi:1900,mid:1800,apartment:1400};
+        const wallGrant={detached:8000,semi:6000,mid:3500,apartment:3000};
+        const windowGrant={detached:4000,semi:3000,mid:1800,apartment:1500};
+        if(v.attic) grants+=Math.min(v.attic_cost,(v.first_time_buyer?atticFtb:atticStandard)[type]||0);
+        if(v.external_wall) grants+=Math.min(v.wall_cost,wallGrant[type]||0);
+        if(v.windows) grants+=Math.min(v.windows_cost,windowGrant[type]||0);
+        if(v.heat_pump) grants+=Math.min(v.heat_pump_cost,type==='apartment'?4500:6500);
+        if(v.solar) grants+=Math.min(v.solar_cost,Math.min(1800,Math.min(v.solar_kwp,2)*700+Math.max(0,Math.min(v.solar_kwp-2,2))*200));
+        if(v.doors) grants+=Math.min(v.doors_cost,Math.min(2,Math.max(0,v.door_count))*800);
+        if(v.ventilation) grants+=Math.min(v.ventilation_cost,1500);
+        if(v.airtightness) grants+=Math.min(v.airtightness_cost,1000);
+      }
+      const net=Math.max(0,gross-grants), annual=v.annual_energy_bill*Math.max(0,Math.min(100,v.saving_pct))/100, payback=annual>0?net/annual:Infinity;
+      const labels=['Start'],vals=[-net];for(let y=1;y<=20;y++){labels.push('Year '+y);vals.push(-net+annual*y);}
+      return {
+        gross_cost:money(gross),grants:money(grants),net_cost:money(net),annual_saving:money(annual),payback:Number.isFinite(payback)?number.format(payback)+' years':'Not reached',
+        __chart:{type:'line',title:'Simple retrofit cash payback',caption:'Uses the energy-saving percentage entered and holds annual savings constant.',labels,series:[{label:'Cumulative cash position',values:vals}]}
+      };
+    },
+    myfuturefund(v){
+      let status;
+      if(v.workplace_pension) status='Employment normally exempt';
+      else if(v.age>=23&&v.age<60&&v.salary>=20000) status='Likely auto-enrolled';
+      else if(v.age>=18&&v.age<66) status='May opt in';
+      else status='Outside current participation age';
+      const rateForYear=year=>year<=2028?.015:year<=2031?.03:year<=2034?.045:.06;
+      const stateRateForYear=year=>rateForYear(year)/3;
+      const participating=!v.workplace_pension&&v.age>=18&&v.age<66;
+      const baseEarnings=Math.min(Math.max(0,v.salary),80000);
+      const er2026=participating?baseEarnings*rateForYear(2026):0, sr2026=participating?baseEarnings*stateRateForYear(2026):0;
+      let fund=Math.max(0,v.current_fund), salary=Math.max(0,v.salary), employeeTotal=0, labels=['Age '+v.age],funds=[fund],employeeCum=[0];
+      const years=Math.max(0,Math.floor(v.retirement_age-v.age));
+      for(let i=0;i<years;i++){
+        const year=2026+i, age=v.age+i;
+        fund*=1+v.return_rate/100;
+        if(participating&&age<66){
+          const earnings=Math.min(salary,80000), emp=earnings*rateForYear(year), employer=emp, state=earnings*stateRateForYear(year);
+          fund+=emp+employer+state; employeeTotal+=emp;
+        }
+        salary*=1+v.salary_growth/100;
+        labels.push('Age '+(v.age+i+1));funds.push(fund);employeeCum.push(employeeTotal);
+      }
+      return {
+        status,employee_2026:money(er2026),employer_2026:money(er2026),state_2026:money(sr2026),total_2026:money(er2026*2+sr2026),projected:money(fund),employee_total:money(employeeTotal),
+        __chart:{type:'line',title:'Projected MyFutureFund balance',caption:'Uses the statutory calendar-year contribution phases plus the salary-growth and investment-return assumptions entered.',labels,series:[{label:'Projected fund',values:funds},{label:'Cumulative employee contributions',values:employeeCum}]}
+      };
+    },
+    childcare_return(v){
+      const pension=v.salary*Math.max(0,v.pension_pct)/100, net=employeeNet2026(v.salary,pension,44000,0);
+      const gross=v.children*v.childcare_hours*v.childcare_fee*v.childcare_weeks;
+      const subsidisedHours=Math.min(45,Math.max(0,v.childcare_hours));
+      const ncs=v.children*subsidisedHours*Math.min(v.childcare_fee,v.ncs_rate)*v.childcare_weeks;
+      const childcare=Math.max(0,gross-ncs), workCosts=(v.commute_weekly+v.work_cost_weekly)*v.childcare_weeks+v.other_annual;
+      const gain=net.net-childcare-workCosts, hours=v.work_hours*v.childcare_weeks, hourly=hours>0?gain/hours:0;
+      return {
+        take_home:money(net.net),childcare_gross:money(gross),ncs_support:money(ncs),childcare_net:money(childcare),work_costs:money(workCosts),household_gain:(gain>=0?'+':'-')+money(Math.abs(gain)),effective_hourly:(hourly>=0?'+':'-')+money(Math.abs(hourly))+'/hour',
+        __chart:{type:'bar',title:'What remains after returning-to-work costs',caption:'Estimated take-home pay compared with net childcare, commuting/work costs and the resulting annual household cash gain.',labels:['Take-home','Net childcare','Work costs','Financial gain'],series:[{label:'Annual amount',values:[net.net,childcare,workCosts,gain]}]}
+      };
+    },
+    mortgage_switch(v){
+      const n1=Math.round(v.current_years*12),n2=Math.round(v.new_years*12),p1=monthlyPayment(v.balance,v.current_rate,n1),p2=monthlyPayment(v.balance,v.new_rate,n2);
+      const total1=p1*n1,total2=p2*n2,netCost=Math.max(0,v.switching_costs+v.break_fee-v.cashback),monthlySaving=p1-p2;
+      const breakEven=monthlySaving>0?(netCost<=0?'Immediate':duration(netCost/monthlySaving)):'No monthly saving';
+      const diff=total1-(total2+netCost);
+      const labels=['Now'],a=[v.balance],b=[v.balance];let bal1=v.balance,bal2=v.balance,r1=v.current_rate/100/12,r2=v.new_rate/100/12;
+      const years=Math.max(v.current_years,v.new_years);
+      for(let y=1;y<=years;y++){
+        for(let m=0;m<12;m++){
+          if(bal1>0){const i=bal1*r1;bal1=Math.max(0,bal1-(p1-i));}
+          if(bal2>0){const i=bal2*r2;bal2=Math.max(0,bal2-(p2-i));}
+        }
+        labels.push('Year '+y);a.push(bal1);b.push(bal2);
+      }
+      return {
+        current_payment:money(p1),new_payment:money(p2),monthly_change:(monthlySaving>=0?'-':'+')+money(Math.abs(monthlySaving)),net_switch_cost:money(netCost),break_even:breakEven,lifetime_difference:(diff>=0?'+':'-')+money(Math.abs(diff)),
+        __chart:{type:'line',title:'Scheduled mortgage balance',caption:'Current mortgage versus the alternative rate/term entered.',labels,series:[{label:'Current mortgage',values:a},{label:'Alternative mortgage',values:b}]}
+      };
+    },
+    lifetime_cost(v){
+      const years=Math.max(0,Math.floor(v.end_age-v.current_age)), inflation=v.inflation/100;
+      const monthlyBase=v.food_monthly+v.utilities_monthly+v.transport_monthly+v.leisure_monthly+v.other_monthly;
+      const baseAnnual=monthlyBase*12+v.travel_annual+v.insurance_health_annual;
+      const todayAnnual=baseAnnual+(v.current_age<v.housing_until?v.housing_monthly*12:0)+(v.childcare_years>0?v.childcare_annual:0)+(v.major_interval>0?v.major_purchase/v.major_interval:0);
+      let nominal=0,todayMoney=0,housingTotal=0,majorTotal=0,cumulative=0;const labels=['Age '+v.current_age],vals=[0];
+      for(let y=0;y<years;y++){
+        const factor=Math.pow(1+inflation,y),age=v.current_age+y;
+        let annual=baseAnnual*factor, annualToday=baseAnnual;
+        if(age<v.housing_until){annual+=v.housing_monthly*12*factor;annualToday+=v.housing_monthly*12;housingTotal+=v.housing_monthly*12*factor;}
+        if(y<v.childcare_years){annual+=v.childcare_annual*factor;annualToday+=v.childcare_annual;}
+        if(v.major_interval>0&&(y+1)%Math.round(v.major_interval)===0){const mp=v.major_purchase*factor;annual+=mp;annualToday+=v.major_purchase;majorTotal+=mp;}
+        nominal+=annual;todayMoney+=annualToday;cumulative+=annual;labels.push('Age '+(age+1));vals.push(cumulative);
+      }
+      return {
+        years:years+' years',today_annual:money(todayAnnual),lifetime_nominal:money(nominal),lifetime_today_money:money(todayMoney),housing_total:money(housingTotal),major_total:money(majorTotal),
+        __chart:{type:'line',title:'Cumulative projected lifetime spending',caption:'Future cash spending rises with the inflation assumption and follows the time limits entered for housing and childcare.',labels,series:[{label:'Cumulative spending',values:vals}]}
+      };
     }
   };
 
