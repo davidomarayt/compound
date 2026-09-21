@@ -168,6 +168,16 @@ jobs:
           grep -Fq 'data-calculator="pregnancy_timeline"' /tmp/pregnancy.html
           grep -Fq 'type="date"' /tmp/pregnancy.html
           grep -Fq 'first-trimester ultrasound' /tmp/pregnancy.html
+          grep -Fq '±5–7 days' /tmp/pregnancy.html
+          grep -Fq '1 in 20 women' /tmp/pregnancy.html
+
+          fetch https://compound.ie/health/pregnancy-due-date-accuracy-lmp-vs-scan-ireland/ /tmp/pregnancy-article.html
+          grep -Fq 'How accurate is a pregnancy due date?' /tmp/pregnancy-article.html
+          grep -Fq '/pregnancy-due-date-calculator/' /tmp/pregnancy-article.html
+          grep -Fq 'before 15 weeks' /tmp/pregnancy-article.html
+          grep -Fq '±5–7 days' /tmp/pregnancy-article.html
+
+          grep -Fq '/health/pregnancy-due-date-accuracy-lmp-vs-scan-ireland/' /tmp/pregnancy.html
 
           fetch https://compound.ie/alcohol-units-calories-cost-calculator/ /tmp/alcohol.html
           grep -Fq 'data-calculator="alcohol_ireland"' /tmp/alcohol.html
