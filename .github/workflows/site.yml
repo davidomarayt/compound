@@ -75,6 +75,15 @@ jobs:
           grep -Fq 'data-calculator="myfuturefund"' /tmp/mff.html
           grep -Fq 'MyFutureFund Auto-Enrolment Calculator Ireland' /tmp/mff.html
 
+          fetch https://compound.ie/wealth/myfuturefund-vs-private-pension-ireland/ /tmp/mff-article.html
+          grep -Fq 'MyFutureFund vs a private pension in Ireland' /tmp/mff-article.html
+          grep -Fq '/myfuturefund-calculator/' /tmp/mff-article.html
+          grep -Fq '/pension-tax-relief-calculator/' /tmp/mff-article.html
+          grep -Fq '/pension-projection-calculator/' /tmp/mff-article.html
+          grep -Fq '/wealth/pension-tax-relief-ireland-how-to-claim/' /tmp/mff-article.html
+
+          grep -Fq '/wealth/myfuturefund-vs-private-pension-ireland/' /tmp/mff.html
+
           fetch https://compound.ie/childcare-return-to-work-calculator/ /tmp/childcare.html
           grep -Fq 'data-calculator="childcare_return"' /tmp/childcare.html
           grep -Fq '2.14' /tmp/childcare.html
