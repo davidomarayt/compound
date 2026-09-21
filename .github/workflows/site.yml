@@ -85,6 +85,12 @@ jobs:
           fetch https://compound.ie/lifetime-cost-calculator/ /tmp/lifetime.html
           grep -Fq 'data-calculator="lifetime_cost"' /tmp/lifetime.html
 
+          fetch https://compound.ie/car-finance-calculator/ /tmp/car-finance.html
+          grep -Fq 'data-calculator="car_finance"' /tmp/car-finance.html
+          grep -Fq 'Basic calculation' /tmp/car-finance.html
+          grep -Fq 'Advanced calculation' /tmp/car-finance.html
+          grep -Fq 'PCP final balloon / GMFV' /tmp/car-finance.html
+
           fetch https://compound.ie/solar-ev-battery-optimiser/ /tmp/solar-opt.html
           grep -Fq 'data-calculator="solar_optimizer"' /tmp/solar-opt.html
 
@@ -98,6 +104,8 @@ jobs:
           grep -Fq 'childcare_return' /tmp/tools.js
           grep -Fq 'mortgage_switch' /tmp/tools.js
           grep -Fq 'lifetime_cost' /tmp/tools.js
+          grep -Fq 'car_finance' /tmp/tools.js
+          grep -Fq 'balloonPayment' /tmp/tools.js
           grep -Fq 'solar_optimizer' /tmp/tools.js
           grep -Fq 'retrofit_planner' /tmp/tools.js
 

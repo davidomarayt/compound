@@ -7,7 +7,7 @@ from compound.site.build import load_tools
 def test_tool_catalogue_has_unique_routes():
     content_dir = Path(__file__).parents[1] / "content"
     tools = load_tools(content_dir)
-    assert len(tools) >= 43
+    assert len(tools) >= 44
     assert len({tool["slug"] for tool in tools}) == len(tools)
     assert all(tool["url"].startswith("/") and tool["url"].endswith("/") for tool in tools)
     assert all(tool["fields"] and tool["results"] for tool in tools)
@@ -26,7 +26,7 @@ def test_tool_formulas_are_supported():
         "pension_projection", "rent_vs_buy", "mortgage_affordability",
         "house_buying_costs", "solar_payback", "ber_energy",
         "solar_optimizer", "retrofit_planner", "myfuturefund", "childcare_return",
-        "mortgage_switch", "lifetime_cost",
+        "mortgage_switch", "lifetime_cost", "car_finance",
     }
     assert {tool["formula"] for tool in data["tools"]} <= supported
 
@@ -43,6 +43,7 @@ def test_high_intent_tool_routes_present():
         "house-buying-costs-calculator", "solar-payback-calculator", "ber-energy-cost-calculator",
         "solar-ev-battery-optimiser", "whole-house-retrofit-planner", "myfuturefund-calculator",
         "childcare-return-to-work-calculator", "mortgage-switch-calculator", "lifetime-cost-calculator",
+        "car-finance-calculator",
     }
     assert expected <= slugs
 
@@ -89,3 +90,20 @@ def test_next_flagship_tools_have_expected_controls():
 
     lifetime = tools["lifetime-cost-calculator"]
     assert any(result["id"] == "lifetime_nominal" for result in lifetime["results"])
+
+
+def test_car_finance_has_basic_and_advanced_fields():
+    content_dir = Path(__file__).parents[1] / "content"
+    car = next(tool for tool in load_tools(content_dir) if tool["slug"] == "car-finance-calculator")
+    fields = {field["id"]: field for field in car["fields"]}
+    assert fields["car_price"].get("advanced") is not True
+    assert fields["pcp_balloon"].get("advanced") is not True
+    assert fields["loan_term_years"]["advanced"] is True
+    assert fields["estimated_value"]["advanced"] is True
+    assert fields["annual_mileage_limit"]["advanced"] is True
+    assert fields["condition_charge"]["advanced"] is True
+    result_ids = {result["id"] for result in car["results"]}
+    assert {"loan_monthly", "hp_monthly", "pcp_monthly", "pcp_keep_total", "pcp_return_total", "pcp_equity"} <= result_ids
+    assert "Personal car loan" in car["guide"]
+    assert "Hire Purchase" in car["guide"]
+    assert "Personal Contract Plan" in car["guide"]

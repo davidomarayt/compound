@@ -22,3 +22,10 @@
 .tool-check input{width:1.15rem;height:1.15rem;margin:.08rem 0 0;accent-color:var(--wealth);flex:0 0 auto}
 .tool-field[hidden]{display:none!important}
 .tool-explainer-main table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.92rem}.tool-explainer-main th,.tool-explainer-main td{padding:.8rem;border-bottom:1px solid var(--line);text-align:left}.tool-explainer-main th:last-child,.tool-explainer-main td:last-child{text-align:right}.tool-explainer-main thead th{background:var(--wealth-soft)}
+
+.tool-mode-switch{display:inline-flex;gap:2px;margin-top:26px;padding:3px;border:1px solid var(--line-2);background:var(--paper)}
+.tool-mode-button{border:0;background:transparent;color:var(--ink-2);font:700 .86rem var(--sans);padding:.72rem .95rem;cursor:pointer}
+.tool-mode-button.is-active{background:var(--ink);color:var(--paper)}
+.tool-mode-button:focus-visible{outline:3px solid color-mix(in srgb,var(--wealth) 28%,transparent);outline-offset:2px}
+.tool-mode-note{margin:.7rem 0 0;color:var(--ink-3);font-size:.82rem;line-height:1.5;max-width:620px}
+.tool-field[data-advanced-field]{border-left:2px solid color-mix(in srgb,var(--wealth) 45%,var(--line))}

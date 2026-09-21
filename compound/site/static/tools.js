@@ -17,6 +17,13 @@
     const r = annual/100/12;
     return r === 0 ? p/months : p*r/(1-Math.pow(1+r,-months));
   };
+  const balloonPayment = (principal, annual, months, balloon) => {
+    if(months<=0) return NaN;
+    const r=annual/100/12, p=Math.max(0,principal), b=Math.max(0,balloon);
+    if(r===0) return Math.max(0,(p-b)/months);
+    const pvBalloon=b/Math.pow(1+r,months);
+    return Math.max(0,(p-pvBalloon)*r/(1-Math.pow(1+r,-months)));
+  };
   const lptBands = [
     [240000,95],[315000,235],[420000,333],[525000,428],[630000,523],[735000,618],[840000,713],
     [945000,808],[1050000,903],[1155000,998],[1260000,1094],[1365000,1272],[1470000,1535],
@@ -561,6 +568,46 @@
         years:years+' years',today_annual:money(todayAnnual),lifetime_nominal:money(nominal),lifetime_today_money:money(todayMoney),housing_total:money(housingTotal),major_total:money(majorTotal),
         __chart:{type:'line',title:'Cumulative projected lifetime spending',caption:'Future cash spending rises with the inflation assumption and follows the time limits entered for housing and childcare.',labels,series:[{label:'Cumulative spending',values:vals}]}
       };
+    },
+    car_finance(v){
+      const advanced=Boolean(v.__advanced);
+      const price=Math.max(0,v.car_price), deposit=Math.min(price,Math.max(0,v.deposit)), financed=Math.max(0,price-deposit);
+      const loanYears=advanced?v.loan_term_years:v.term_years;
+      const hpYears=advanced?v.hp_term_years:v.term_years;
+      const pcpYears=advanced?v.pcp_term_years:v.term_years;
+      const loanMonths=Math.max(1,Math.round(loanYears*12)), hpMonths=Math.max(1,Math.round(hpYears*12)), pcpMonths=Math.max(1,Math.round(pcpYears*12));
+      const loanFee=advanced?Math.max(0,v.loan_fee):0, hpDoc=advanced?Math.max(0,v.hp_doc_fee):0, hpCompletion=advanced?Math.max(0,v.hp_completion_fee):0;
+      const pcpDoc=advanced?Math.max(0,v.pcp_doc_fee):0, pcpCompletion=advanced?Math.max(0,v.pcp_completion_fee):0;
+      const balloon=Math.max(0,v.pcp_balloon);
+      const loanMonthly=monthlyPayment(financed,v.loan_rate,loanMonths);
+      const hpMonthly=monthlyPayment(financed,v.hp_rate,hpMonths);
+      const pcpMonthly=balloonPayment(financed,v.pcp_rate,pcpMonths,balloon);
+      const loanTotal=deposit+loanFee+loanMonthly*loanMonths;
+      const hpTotal=deposit+hpDoc+hpMonthly*hpMonths+hpCompletion;
+      const pcpKeep=deposit+pcpDoc+pcpMonthly*pcpMonths+balloon+pcpCompletion;
+      let returnCharges=0, equityText='Switch to Advanced for end-value estimate';
+      if(advanced){
+        const excessAnnual=Math.max(0,v.expected_annual_mileage-v.annual_mileage_limit);
+        returnCharges=excessAnnual*pcpYears*Math.max(0,v.excess_km_charge)+Math.max(0,v.condition_charge);
+        const equity=Math.max(0,v.estimated_value)-balloon;
+        equityText=(equity>=0?'+':'-')+money(Math.abs(equity));
+      }
+      const pcpReturn=deposit+pcpDoc+pcpMonthly*pcpMonths+returnCharges;
+      const maxYears=Math.ceil(Math.max(loanYears,hpYears,pcpYears));
+      const labels=['Start'],loanLine=[deposit+loanFee],hpLine=[deposit+hpDoc],pcpLine=[deposit+pcpDoc];
+      for(let y=1;y<=maxYears;y++){
+        labels.push('Year '+y);
+        loanLine.push(deposit+loanFee+loanMonthly*Math.min(loanMonths,y*12));
+        hpLine.push(deposit+hpDoc+hpMonthly*Math.min(hpMonths,y*12)+(y*12>=hpMonths?hpCompletion:0));
+        pcpLine.push(deposit+pcpDoc+pcpMonthly*Math.min(pcpMonths,y*12)+(y*12>=pcpMonths?balloon+pcpCompletion:0));
+      }
+      return {
+        loan_monthly:money(loanMonthly),hp_monthly:money(hpMonthly),pcp_monthly:money(pcpMonthly),
+        loan_total:money(loanTotal),hp_total:money(hpTotal),pcp_keep_total:money(pcpKeep),pcp_return_total:money(pcpReturn),
+        pcp_equity:equityText,
+        ownership_summary:'Loan: owned from day 1 • HP: after final payment • PCP: only if balloon is paid',
+        __chart:{type:'line',title:'Cumulative cash paid if you ultimately keep the car',caption:'PCP rises at the end when the balloon/GMFV is paid. Advanced mode uses separate terms and entered fees.',labels,series:[{label:'Personal loan',values:loanLine},{label:'Hire Purchase',values:hpLine},{label:'PCP — keep car',values:pcpLine}]}
+      };
     }
   };
 
@@ -574,6 +621,7 @@
         if(el.tagName==='SELECT'){ values[el.dataset.field]=raw; return; }
         const n=Number(raw); if(!Number.isFinite(n)){invalid=true; return;} values[el.dataset.field]=n;
       });
+      values.__advanced=root.dataset.advancedMode==='true';
       if(invalid){ error.textContent='Check the numbers entered and try again.'; return; }
       error.textContent='';
       const fn=calculators[root.dataset.calculator]; if(!fn) return;
@@ -588,21 +636,39 @@
         if(window.gtag) window.gtag('event','tool_calculate',{tool_name:root.dataset.toolName});
       }catch(e){ error.textContent='This combination could not be calculated. Check the values and try again.'; }
     };
+    root.dataset.advancedMode='false';
     const syncVisibility=()=>{
-      root.querySelectorAll('[data-show-if]').forEach(wrapper=>{
-        const controller=root.querySelector('[data-field="'+wrapper.dataset.showIf+'"]');
-        let show=false;
-        if(controller){
-          if(controller.type==='checkbox') show=controller.checked;
-          else show=controller.value!==''&&controller.value!=='no'&&controller.value!=='false'&&controller.value!=='0';
+      root.querySelectorAll('.tool-field').forEach(wrapper=>{
+        let show=true;
+        if(wrapper.dataset.showIf){
+          const controller=root.querySelector('[data-field="'+wrapper.dataset.showIf+'"]');
+          if(controller){
+            if(controller.type==='checkbox') show=controller.checked;
+            else show=controller.value!==''&&controller.value!=='no'&&controller.value!=='false'&&controller.value!=='0';
+          } else show=false;
         }
+        if(wrapper.hasAttribute('data-advanced-field')&&root.dataset.advancedMode!=='true') show=false;
         wrapper.hidden=!show;
       });
     };
+    const modeButtons=[...root.querySelectorAll('[data-tool-mode]')];
+    modeButtons.forEach(button=>button.addEventListener('click',()=>{
+      const advanced=button.dataset.toolMode==='advanced';
+      root.dataset.advancedMode=advanced?'true':'false';
+      modeButtons.forEach(b=>{const active=b===button;b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',active?'true':'false');});
+      const note=root.querySelector('[data-tool-mode-note]');
+      if(note) note.textContent=advanced?'Advanced mode: use the detailed figures from the lender or dealer quote.':'Start with the core figures. Switch to Advanced when you have the detailed finance quote.';
+      syncVisibility();run();
+    }));
     if(form){
       form.addEventListener('submit',e=>{e.preventDefault();run();});
       form.addEventListener('change',()=>{syncVisibility();run();});
-      form.addEventListener('reset',()=>setTimeout(()=>{syncVisibility();run();},0));
+      form.addEventListener('reset',()=>setTimeout(()=>{
+        root.dataset.advancedMode='false';
+        modeButtons.forEach(b=>{const active=b.dataset.toolMode==='basic';b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',active?'true':'false');});
+        const note=root.querySelector('[data-tool-mode-note]'); if(note) note.textContent='Start with the core figures. Switch to Advanced when you have the detailed finance quote.';
+        syncVisibility();run();
+      },0));
     }
     syncVisibility();
     run();

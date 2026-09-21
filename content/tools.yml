@@ -1642,3 +1642,118 @@ tools:
 
       The chart shows cumulative cash spending by age. Use the tool to compare lifestyles rather than to forecast your exact future. It deliberately does not assume investment returns, taxes, inheritance, State Pension or salary growth.
     sources: []
+
+
+  - slug: car-finance-calculator
+    title: Car Finance Calculator Ireland — Loan vs PCP vs Hire Purchase
+    category: Loans & Debt
+    formula: car_finance
+    summary: Compare a personal car loan, hire purchase and PCP using the same car price, deposit and finance assumptions, with an optional advanced mode for fees, mileage and end-value equity.
+    meta_description: Car finance calculator Ireland comparing personal loan vs hire purchase vs PCP. Compare monthly payments, balloon payments, total cost, ownership and advanced PCP mileage/equity scenarios.
+    updated: 2026-09-21
+    fields:
+      - {id: car_price, label: Car cash price, type: number, prefix: "€", default: 40000, min: 0, step: 500}
+      - {id: deposit, label: Cash deposit / trade-in used upfront, type: number, prefix: "€", default: 8000, min: 0, step: 500}
+      - {id: term_years, label: Comparison term, type: number, suffix: years, default: 4, min: 1, max: 10, step: 1}
+      - {id: loan_rate, label: Personal car-loan annual rate, type: number, suffix: "%", default: 6.5, min: 0, max: 30, step: 0.1}
+      - {id: hp_rate, label: Hire Purchase annual rate, type: number, suffix: "%", default: 6.9, min: 0, max: 30, step: 0.1}
+      - {id: pcp_rate, label: PCP annual rate, type: number, suffix: "%", default: 4.9, min: 0, max: 30, step: 0.1}
+      - {id: pcp_balloon, label: PCP final balloon / GMFV, type: number, prefix: "€", default: 18000, min: 0, step: 500, help: "The amount left to pay at the end if you want to own the car."}
+
+      - {id: loan_term_years, label: Personal-loan term, type: number, suffix: years, default: 4, min: 1, max: 10, step: 1, advanced: true}
+      - {id: hp_term_years, label: HP term, type: number, suffix: years, default: 4, min: 1, max: 10, step: 1, advanced: true}
+      - {id: pcp_term_years, label: PCP term, type: number, suffix: years, default: 3, min: 1, max: 7, step: 1, advanced: true}
+      - {id: loan_fee, label: Personal-loan setup / admin fees, type: number, prefix: "€", default: 0, min: 0, step: 25, advanced: true}
+      - {id: hp_doc_fee, label: HP documentation / setup fee, type: number, prefix: "€", default: 75, min: 0, step: 25, advanced: true}
+      - {id: hp_completion_fee, label: HP completion / option-to-purchase fee, type: number, prefix: "€", default: 75, min: 0, step: 25, advanced: true}
+      - {id: pcp_doc_fee, label: PCP documentation / setup fee, type: number, prefix: "€", default: 75, min: 0, step: 25, advanced: true}
+      - {id: pcp_completion_fee, label: PCP fee if you buy the car at the end, type: number, prefix: "€", default: 75, min: 0, step: 25, advanced: true}
+      - {id: estimated_value, label: Estimated car value at the end of the PCP term, type: number, prefix: "€", default: 21000, min: 0, step: 500, advanced: true, help: "Used to estimate PCP equity versus the GMFV. It is an assumption, not a guaranteed resale value."}
+      - {id: annual_mileage_limit, label: PCP annual mileage allowance, type: number, suffix: "km/year", default: 15000, min: 0, step: 1000, advanced: true}
+      - {id: expected_annual_mileage, label: Your expected annual mileage, type: number, suffix: "km/year", default: 18000, min: 0, step: 1000, advanced: true}
+      - {id: excess_km_charge, label: Assumed PCP excess-mileage charge, type: number, prefix: "€", suffix: "/km", default: 0.10, min: 0, step: 0.01, advanced: true}
+      - {id: condition_charge, label: Assumed end-of-PCP condition / damage charge, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true}
+
+    results:
+      - {id: loan_monthly, label: Personal loan monthly repayment}
+      - {id: hp_monthly, label: Hire Purchase monthly repayment}
+      - {id: pcp_monthly, label: PCP monthly repayment}
+      - {id: loan_total, label: Personal loan total paid}
+      - {id: hp_total, label: HP total paid to own}
+      - {id: pcp_keep_total, label: PCP total paid if you keep the car}
+      - {id: pcp_return_total, label: PCP total paid if you return the car}
+      - {id: pcp_equity, label: Estimated PCP equity versus balloon}
+      - {id: ownership_summary, label: Ownership at the end}
+
+    guide: |
+      ## Loan vs HP vs PCP: what do they actually mean?
+
+      **Personal car loan:** you borrow money from a bank, credit union or other lender and use it to buy the car. You normally own the car from the day you buy it. The loan exists separately from the vehicle.
+
+      **Hire Purchase (HP):** the finance company is the legal owner while the agreement is running. You make the agreed deposit and repayments and become the legal owner after the final payment is made. Traditional HP normally pays down most or all of the financed balance through the regular instalments, although some HP agreements can include a final payment.
+
+      **Personal Contract Plan (PCP):** PCP is similar to HP but deliberately leaves a large amount unpaid until the end. That final amount is often called the **balloon payment** or **Guaranteed Minimum Future Value (GMFV)**. Monthly repayments can therefore look lower even though a substantial amount remains outstanding.
+
+      ## Basic calculation
+
+      The default view asks only for the core numbers:
+
+      - car cash price;
+      - deposit or trade-in used upfront;
+      - one comparison term;
+      - the annual rate for each finance type; and
+      - the PCP balloon / GMFV.
+
+      Compound then estimates the monthly payments and the total amount paid if you ultimately own the vehicle.
+
+      For a like-for-like Basic comparison, the same deposit and term are applied to all three options. The personal loan and HP use standard amortising-payment mathematics. PCP uses a balloon-payment calculation where the GMFV remains outstanding at the end.
+
+      ## Advanced calculation
+
+      Switch to **Advanced calculation** when you have actual dealer/lender quotations. You can then use separate terms for the personal loan, HP and PCP and include setup, documentation and completion fees.
+
+      Advanced mode also lets you model the part of PCP that is often overlooked: what happens to the car at the end.
+
+      You can enter:
+
+      - your expected end-of-term car value;
+      - annual PCP mileage allowance;
+      - expected mileage;
+      - an assumed excess-mileage charge; and
+      - an assumed condition/damage charge.
+
+      If estimated market value is above the balloon, the difference is shown as **potential equity**. If the car is worth less than the balloon, the calculator shows negative equity versus buying the car outright. The actual trade-in value is determined by the market and vehicle condition, not by this calculator.
+
+      ## What happens at the end of a PCP?
+
+      CCPC describes three common choices:
+
+      1. **Pay the balloon and keep the car.** You then become the owner.
+      2. **Return the car.** You generally avoid the balloon, but mileage, condition and other contractual requirements can produce charges.
+      3. **Trade it into another deal.** If the car is worth more than the balloon, that difference may provide equity towards another car. If it is worth less, there may be no equity.
+
+      This is why the calculator shows both **PCP total if kept** and **PCP total if returned** instead of pretending there is one single PCP cost.
+
+      ## Ownership matters
+
+      With a personal loan you normally own the vehicle from the start. With HP and PCP the finance company remains the legal owner until the final required payment is made.
+
+      HP and PCP agreements also have consumer-credit rights that do not work in exactly the same way as a personal loan. The CCPC explains the **half rule**, which can allow a consumer to end an HP/PCP agreement early by returning the car while limiting liability to half the hire-purchase price, subject to the agreement, arrears and damage obligations.
+
+      ## Why monthly payment can be misleading
+
+      A PCP can have the lowest monthly repayment simply because a large part of the purchase price has been postponed into the balloon. That is not the same thing as being the cheapest way to own the car.
+
+      The graph therefore compares **cumulative cash paid if the vehicle is ultimately kept**. For PCP, the line jumps at the end when the balloon is paid.
+
+      ## Important calculation limitation
+
+      This is a comparison model rather than a lender quotation. Real APR calculations can incorporate fee timing and other contractual details. If a mandatory fee is already reflected in an APR quoted by the lender, entering it again in Advanced mode can overstate the total cost.
+
+      Always compare the lender's own **total amount payable**, fees, balloon/GMFV, mileage conditions and early-termination terms before signing an agreement.
+
+    sources:
+      - {title: "CCPC — Paying for your car: loan, HP and PCP", url: "https://www.ccpc.ie/manage-your-money/borrowing-money/car-loans-and-car-finance/paying-for-your-car"}
+      - {title: "CCPC — Hire Purchase explained", url: "https://www.ccpc.ie/manage-your-money/borrowing-money/car-loans-and-car-finance/hire-purchase"}
+      - {title: "CCPC — Personal Contract Plan explained", url: "https://www.ccpc.ie/manage-your-money/borrowing-money/car-loans-and-car-finance/personal-contract-plan"}
+      - {title: "CCPC — Problems making car repayments and the half rule", url: "https://www.ccpc.ie/manage-your-money/managing-debt/problems-making-car-repayments"}
