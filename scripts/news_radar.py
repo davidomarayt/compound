@@ -24,6 +24,9 @@ class Item:
     categories: list[str]
     score: int
     source_type: str
+    region: str
+    ireland_angle: str
+    tool_targets: list[str]
 
 
 def clean(value: str) -> str:
@@ -93,6 +96,9 @@ def fetch(config_path: Path, hours: int, limit: int) -> list[Item]:
         defaults = [str(x) for x in (feed_cfg.get("default_tags") or [])]
         weight = int(feed_cfg.get("weight") or 0)
         source_type = str(feed_cfg.get("source_type") or "publisher")
+        region = str(feed_cfg.get("region") or "")
+        ireland_angle = str(feed_cfg.get("ireland_angle") or "").strip()
+        tool_targets = [str(x) for x in (feed_cfg.get("tool_targets") or [])]
 
         for entry in parsed.entries:
             title = clean(getattr(entry, "title", ""))
@@ -129,6 +135,9 @@ def fetch(config_path: Path, hours: int, limit: int) -> list[Item]:
                     categories=categories,
                     score=score,
                     source_type=source_type,
+                    region=region,
+                    ireland_angle=ireland_angle,
+                    tool_targets=tool_targets,
                 )
             )
 
@@ -143,7 +152,7 @@ def build_markdown(items: list[Item], hours: int) -> str:
         "",
         f"_Updated {now:%Y-%m-%d %H:%M UTC}. Looking back {hours} hours._",
         "",
-        "**Discovery only.** A feed item is not enough to publish a story. Before publication, verify the development against primary/authoritative sources and independently confirm every material figure, date and claim.",
+        "**Discovery only.** A feed item is not enough to publish a story. Verify it independently, write original Compound analysis, and use the source mainly for facts and discovery rather than copying its wording.",
         "",
     ]
 
@@ -155,10 +164,11 @@ def build_markdown(items: list[Item], hours: int) -> str:
         category = " / ".join(x.title() for x in item.categories)
         stamp = item.published.astimezone(dt.timezone.utc).strftime("%d %b %Y %H:%M UTC")
         source_marker = "PRIMARY" if item.source_type == "primary" else "PUBLISHER"
+        region = f" · {item.region}" if item.region else ""
         lines += [
             f"## {idx}. {item.title}",
             "",
-            f"**{category} · Score {item.score} · {source_marker} · {item.source} · {stamp}**",
+            f"**{category} · Score {item.score} · {source_marker}{region} · {item.source} · {stamp}**",
             "",
         ]
         if item.summary:
@@ -166,10 +176,17 @@ def build_markdown(items: list[Item], hours: int) -> str:
             if len(item.summary) > 500:
                 summary += "…"
             lines += [summary, ""]
+
+        if item.ireland_angle:
+            lines += [f"**Irish angle:** {item.ireland_angle}", ""]
+
+        if item.tool_targets:
+            lines += [f"**Possible funnel:** {' → '.join(item.tool_targets)}", ""]
+
         lines += [
             f"Source: {item.link}",
             "",
-            "Suggested Compound treatment: identify the practical Irish consequence, verify the underlying facts, then connect the news story to the most relevant evergreen guide or tool.",
+            "Editorial rule: only publish if there is a genuine Irish consequence or useful comparison. Independently verify the story and connect it to the most relevant evergreen guide/tool.",
             "",
         ]
 
