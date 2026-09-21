@@ -977,12 +977,12 @@ tools:
         default: 9000
         min: 0
         step: 100
-        help: Enter the solar PV quote excluding any battery cost. Keep VAT and installation charges in the figure if they are part of the quote.
+        help: "Enter the solar PV quote excluding any battery cost. Keep VAT and installation charges in the figure if they are part of the quote."
       - id: grant_eligible
         label: Include the SEAI Solar PV grant
         type: checkbox
         default: true
-        help: Untick this if the home is not eligible, the grant has already been used at this MPRN, or you simply want to see the no-grant economics.
+        help: "Untick this if the home is not eligible, the grant has already been used at this MPRN, or you simply want to see the no-grant economics."
       - id: kwp
         label: Solar PV system size
         type: number
@@ -991,7 +991,7 @@ tools:
         min: 0
         max: 30
         step: 0.1
-        help: Use the kWp figure from the installer quote.
+        help: "Use the kWp figure from the installer quote."
       - id: generation_per_kwp
         label: Expected annual generation per kWp
         type: number
@@ -1000,7 +1000,7 @@ tools:
         min: 0
         max: 2000
         step: 10
-        help: Replace the default with the installer or SEAI estimate for your location, roof direction, pitch and shading.
+        help: "Replace the default with the installer or SEAI estimate for your location, roof direction, pitch and shading."
       - id: annual_home_kwh
         label: Household electricity use before EV
         type: number
@@ -1008,7 +1008,7 @@ tools:
         default: 4200
         min: 0
         step: 100
-        help: 4,200 kWh is the CRU average annual-consumption figure and a useful starting point for a typical 3–4 bed semi. Your own bill or smart-meter data is better.
+        help: "4,200 kWh is the CRU average annual-consumption figure and a useful starting point for a typical 3–4 bed semi. Your own bill or smart-meter data is better."
       - id: direct_solar_pct
         label: Solar generation used directly by the home before EV/battery
         type: number
@@ -1017,7 +1017,7 @@ tools:
         min: 0
         max: 100
         step: 1
-        help: This is an assumption about how well your daytime household demand overlaps solar generation before adding EV or battery storage.
+        help: "This is an assumption about how well your daytime household demand overlaps solar generation before adding EV or battery storage."
       - id: import_rate
         label: Day / avoided import rate
         type: number
@@ -1026,7 +1026,7 @@ tools:
         default: 0.30
         min: 0
         step: 0.01
-        help: Use the rate that solar or battery discharge would actually avoid. Do not include standing charges.
+        help: "Use the rate that solar or battery discharge would actually avoid. Do not include standing charges."
       - id: export_rate
         label: Solar export payment
         type: number
@@ -1035,13 +1035,13 @@ tools:
         default: 0.15
         min: 0
         step: 0.01
-        help: Suppliers set their own Clean Export Guarantee rate, so use the rate on your current or proposed tariff.
+        help: "Suppliers set their own Clean Export Guarantee rate, so use the rate on your current or proposed tariff."
 
       - id: has_ev
         label: EV is charged at this home
         type: checkbox
         default: false
-        help: Tick this to include the extra electricity demand from home EV charging and the option to divert solar into the car.
+        help: "Tick this to include the extra electricity demand from home EV charging and the option to divert solar into the car."
       - id: annual_ev_km
         label: EV distance driven per year
         type: number
@@ -1059,7 +1059,7 @@ tools:
         max: 60
         step: 0.5
         show_if: has_ev
-        help: Use a real-world figure from the car if you have it.
+        help: "Use a real-world figure from the car if you have it."
       - id: ev_loss_pct
         label: EV charging losses
         type: number
@@ -1087,7 +1087,7 @@ tools:
         max: 100
         step: 1
         show_if: has_ev
-        help: Leave at 0% if the car is normally away during solar hours. Increase it if the EV is regularly home and a charger can follow solar surplus.
+        help: "Leave at 0% if the car is normally away during solar hours. Increase it if the EV is regularly home and a charger can follow solar surplus."
       - id: ev_alternative_rate
         label: Grid rate the solar EV charging would otherwise use
         type: number
@@ -1097,13 +1097,13 @@ tools:
         min: 0
         step: 0.01
         show_if: has_ev
-        help: If you normally charge the EV on a cheap night/EV rate, solar charging only avoids that cheaper rate, not the daytime rate.
+        help: "If you normally charge the EV on a cheap night/EV rate, solar charging only avoids that cheaper rate, not the daytime rate."
 
       - id: has_battery
         label: Include a home battery
         type: checkbox
         default: false
-        help: Tick this if the quote includes a battery or you want to test whether adding one improves or lengthens payback.
+        help: "Tick this if the quote includes a battery or you want to test whether adding one improves or lengthens payback."
       - id: battery_cost
         label: Battery installed cost
         type: number
@@ -1112,7 +1112,7 @@ tools:
         min: 0
         step: 100
         show_if: has_battery
-        help: Enter the incremental cost of the battery, inverter changes and installation if applicable.
+        help: "Enter the incremental cost of the battery, inverter changes and installation if applicable."
       - id: battery_kwh
         label: Usable battery capacity
         type: number
@@ -1131,7 +1131,7 @@ tools:
         max: 100
         step: 1
         show_if: has_battery
-        help: Storage is not lossless. Use the manufacturer's round-trip figure where available.
+        help: "Storage is not lossless. Use the manufacturer's round-trip figure where available."
       - id: solar_to_battery_pct
         label: Share of remaining solar surplus you expect the battery to capture
         type: number
@@ -1141,14 +1141,14 @@ tools:
         max: 100
         step: 1
         show_if: has_battery
-        help: The model also caps annual battery charging to one full equivalent charge per day, shared with night-rate charging.
+        help: "The model also caps annual battery charging to one full equivalent charge per day, shared with night-rate charging."
 
       - id: night_charge
         label: Charge the home battery on a cheap night rate as well
         type: checkbox
         default: false
         show_if: has_battery
-        help: This models grid shifting: buying electricity when it is cheap and discharging later to avoid the day rate.
+        help: "This models grid shifting: buying electricity when it is cheap and discharging later to avoid the day rate."
       - id: night_rate
         label: Night / battery charging rate
         type: number
@@ -1166,7 +1166,7 @@ tools:
         min: 0
         step: 0.5
         show_if: night_charge
-        help: Use a conservative average. The calculator limits combined solar and grid charging to one full equivalent battery charge per day across the year.
+        help: "Use a conservative average. The calculator limits combined solar and grid charging to one full equivalent battery charge per day across the year."
 
     results:
       - {id: grant, label: SEAI grant included}
