@@ -1916,11 +1916,13 @@ tools:
 
       ## Ultrasound dating is more accurate early in pregnancy
 
-      The American College of Obstetricians and Gynecologists, together with the American Institute of Ultrasound in Medicine and the Society for Maternal–Fetal Medicine, states that **first-trimester ultrasound up to 13 weeks and 6 days is the most accurate method to establish or confirm gestational age**. Crown–rump-length dating in this period is typically accurate to about ±5–7 days.
+      The American College of Obstetricians and Gynecologists, together with the American Institute of Ultrasound in Medicine and the Society for Maternal–Fetal Medicine, states that **first-trimester ultrasound up to 13 weeks and 6 days is the most accurate method to establish or confirm gestational age**. Crown–rump-length dating in this period is typically accurate to about **±5–7 days**.
 
-      If your maternity team has already assigned a due date from the clinical record or dating scan, enter that in the optional field. Compound then uses that date for the timeline rather than trying to override it with an LMP calculation.
+      HSE says all pregnant women in Ireland are offered a dating scan and that this should be done **before 15 weeks**. The standard LMP method assumes a 28-day cycle with ovulation around day 14, so later or earlier ovulation, irregular cycles or uncertain menstrual dates can make the scan and LMP estimates differ.
 
-      The HSE's own pregnancy calculator similarly describes its result as an estimate based on a 40-week pregnancy.
+      If your maternity team has already assigned a due date from the clinical record or dating scan, enter that in the optional field. Compound then uses that date for the timeline rather than trying to override it with an LMP calculation. Once an EDD has been established, later scans should not be used casually to keep changing the date because later fetal size increasingly reflects growth as well as gestational age.
+
+      The HSE's own pregnancy calculator similarly describes its result as an estimate based on a 40-week pregnancy. ACOG notes that only about **1 in 20 women give birth on the exact estimated due date**, so the EDD should be understood as a clinical timeline anchor rather than a prediction of the exact birth day.
 
       ## What the conception date means
 
@@ -1948,8 +1950,10 @@ tools:
 
     sources:
       - {title: "HSE — Pregnancy due date calculator", url: "https://www2.hse.ie/pregnancy-birth/baby-development-pregnancy-stages/stages/due-date-calculator/"}
+      - {title: "HSE — Dating scan, offered before 15 weeks", url: "https://www2.hse.ie/pregnancy-birth/scans-tests/ultrasound-scans/dating-scan/"}
       - {title: "HSE — Fetal anatomy scan, usually 18 to 22 weeks", url: "https://www2.hse.ie/pregnancy-birth/scans-tests/ultrasound-scans/fetal-anatomy-scan/"}
       - {title: "ACOG/AIUM/SMFM — Methods for Estimating the Due Date", url: "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/05/methods-for-estimating-the-due-date"}
+      - {title: "ACOG — How Your Fetus Grows During Pregnancy", url: "https://www.acog.org/womens-health/faqs/how-your-fetus-grows-during-pregnancy"}
 
   - slug: alcohol-units-calories-cost-calculator
     title: Alcohol Standard Drinks, Calories & Cost Calculator Ireland
