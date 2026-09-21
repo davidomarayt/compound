@@ -38,3 +38,48 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  verify-live:
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify public Compound deployment
+        shell: bash
+        run: |
+          set -euo pipefail
+          fetch() {
+            curl --fail --silent --show-error --location \
+              --retry 12 --retry-delay 5 --retry-all-errors \
+              --connect-timeout 10 --max-time 30 \
+              "$1" -o "$2"
+          }
+
+          fetch https://compound.ie/tools/ /tmp/tools.html
+          grep -Fq '<title>Free Calculators &amp; Tools for Ireland | Compound</title>' /tmp/tools.html || \
+            grep -Fq '<title>Free Calculators & Tools for Ireland | Compound</title>' /tmp/tools.html
+          grep -Fq '/take-home-pay-calculator/' /tmp/tools.html
+          grep -Fq '/pension-projection-calculator/' /tmp/tools.html
+          grep -Fq '/rent-vs-buy-calculator/' /tmp/tools.html
+          grep -Fq '/solar-payback-calculator/' /tmp/tools.html
+
+          fetch https://compound.ie/take-home-pay-calculator/ /tmp/take-home.html
+          grep -Fq 'Take-Home Pay Calculator Ireland 2026' /tmp/take-home.html
+          grep -Fq 'data-calculator="take_home_2026"' /tmp/take-home.html
+
+          fetch https://compound.ie/pension-projection-calculator/ /tmp/pension.html
+          grep -Fq 'data-calculator="pension_projection"' /tmp/pension.html
+          grep -Fq 'data-tool-chart' /tmp/pension.html
+
+          fetch https://compound.ie/static/tools.js?v=20260921b /tmp/tools.js
+          grep -Fq 'take_home_2026' /tmp/tools.js
+          grep -Fq 'renderToolChart' /tmp/tools.js
+
+          fetch https://compound.ie/sitemap.xml /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/tools/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/take-home-pay-calculator/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/pension-projection-calculator/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/rent-vs-buy-calculator/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/solar-payback-calculator/' /tmp/sitemap.xml
+
+          echo 'Live verification passed for Compound tools, calculator pages, assets and sitemap.'
