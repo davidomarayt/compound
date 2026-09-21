@@ -2020,6 +2020,12 @@ tools:
 
       It deliberately does **not** label that number as the total calories in your drinks. Beer, cider, wine, liqueurs and mixers can contain additional carbohydrate, sugar or other energy. Brand-specific nutrition information is needed for a more complete calorie total.
 
+      ## Irish alcohol labels and the grams figure
+
+      Ireland has legislated for comprehensive alcohol labels that will include the **grams of alcohol** and **energy value** in the product alongside health warnings. The relevant Section 12 labelling requirements are currently scheduled to commence on **3 September 2028**, following the 2025 amendment to the original commencement order.
+
+      When those labels are in force, the grams figure will map directly onto Ireland's standard-drink definition: divide grams of alcohol by 10. For example, 17 g of alcohol is 1.7 Irish standard drinks.
+
       ## The money calculation is deliberately simple
 
       Enter what you actually spend in a normal week. The annual figure multiplies that by 52. The reduction scenario then applies the percentage you select to both the entered spend and calculated alcohol amount.
@@ -2038,5 +2044,7 @@ tools:
       - {title: "HSE — Weekly low-risk alcohol guidelines and Irish standard drink definition", url: "https://www2.hse.ie/living-well/alcohol/health/improve-your-health/weekly-low-risk-alcohol-guidelines/"}
       - {title: "HSE — Drinks calculator", url: "https://www2.hse.ie/living-well/alcohol/drinks-calculator/"}
       - {title: "HSE — Alcohol, weight and nutrition", url: "https://www2.hse.ie/living-well/alcohol/health/effects-on-your-body/weight-gain/"}
-      - {title: "HSE — Public Health Alcohol Labelling FAQ and grams-of-alcohol formula", url: "https://www.hse.ie/eng/services/publications/environmentalhealth/public-alcohol-act-section-22-faqs.pdf"}
+      - {title: "Irish Statute Book — Public Health (Alcohol) Act 2018, section 12 grams-of-alcohol formula", url: "https://www.irishstatutebook.ie/eli/2018/act/24/section/12/enacted/en/html"}
+      - {title: "Irish Statute Book — Section 12 labelling commencement moved to 3 September 2028", url: "https://www.irishstatutebook.ie/eli/isbc/2018_24.html"}
+      - {title: "HSE — Public Health Alcohol Labelling FAQ", url: "https://www.hse.ie/eng/services/publications/environmentalhealth/public-alcohol-act-section-22-faqs.pdf"}
       - {title: "Schutz 2000 — alcohol provides about 7.1 kcal/g", url: "https://pubmed.ncbi.nlm.nih.gov/11115785/"}
