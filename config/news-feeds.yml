@@ -3,26 +3,11 @@
 # These feeds are used for discovery only. Every story selected for publication
 # must be independently checked against primary/authoritative sources before it
 # is published on Compound.ie.
+#
+# For commercial safety, only feeds with clearly suitable reuse terms or
+# first-party institutional feeds should be added here.
 
 feeds:
-  - name: Irish Examiner — Ireland
-    url: https://feeds.feedburner.com/ieireland
-    source_type: publisher
-    default_tags: [ireland]
-    weight: 3
-
-  - name: Irish Examiner — Business
-    url: https://feeds.feedburner.com/iebusiness
-    source_type: publisher
-    default_tags: [wealth, ireland]
-    weight: 4
-
-  - name: Irish Examiner — Lifestyle
-    url: https://feeds.feedburner.com/ielifestyle
-    source_type: publisher
-    default_tags: [health, happiness, ireland]
-    weight: 3
-
   - name: ECB — Press releases and speeches
     url: https://www.ecb.europa.eu/rss/press.html
     source_type: primary
