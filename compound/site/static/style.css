@@ -1419,3 +1419,22 @@ h1, h2, h3 {
 
 .article-image-credit { font:13px/1.6 var(--sans); color:#5f555b; margin:12px 0 30px; }
 .article-image-credit a { text-decoration:underline; }
+
+/* Editorial internal-link network: article → tool → related reading. */
+.article-tools{margin:46px 0 36px;padding:28px;border:1px solid var(--line);background:var(--surface)}
+.article-tools h2{font:400 clamp(27px,3vw,36px)/1.12 var(--serif);margin:5px 0 20px;color:var(--ink)}
+.article-tool-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line)}
+.article-tool-link{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding:20px;background:var(--paper);text-decoration:none;color:var(--ink)}
+.article-tool-link:hover{background:var(--wealth-soft)}
+.article-tool-link strong{display:block;font:600 16px/1.3 var(--sans);color:var(--ink)}
+.article-tool-link small{display:block;margin-top:7px;font:400 13px/1.5 var(--sans);color:var(--ink-2)}
+.article-tool-link>span:last-child{font-size:20px;line-height:1}
+.tool-reading{width:min(1180px,calc(100% - 40px));margin:58px auto 0;padding:32px;border:1px solid var(--line);background:var(--surface)}
+.tool-reading h2{font:400 clamp(28px,3vw,38px)/1.12 var(--serif);margin:5px 0 22px;color:var(--ink)}
+.tool-reading-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line)}
+.tool-reading-grid a{display:grid;grid-template-columns:1fr auto;gap:7px 16px;padding:20px;background:var(--paper);text-decoration:none;color:var(--ink)}
+.tool-reading-grid a:hover{background:var(--wealth-soft)}
+.tool-reading-grid strong{font:600 15px/1.35 var(--sans);color:var(--ink)}
+.tool-reading-pillar{grid-column:1/-1;font:700 10px/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+@media(max-width:620px){.article-tools{padding:22px}.article-tool-grid,.tool-reading-grid{grid-template-columns:1fr}.tool-reading{width:min(100% - 24px,1180px);padding:22px}}
+@media print{.article-tools,.tool-reading{display:none!important}}

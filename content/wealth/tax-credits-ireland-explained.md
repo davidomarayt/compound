@@ -15,6 +15,10 @@ tags:
 - myaccount
 - income-tax
 - wealth
+related_tools:
+- income-tax-calculator
+- take-home-pay-calculator
+- rent-tax-credit-calculator
 sources:
 - title: 'Revenue: Tax credits (calculating your income tax)'
   url: https://www.revenue.ie/en/jobs-and-pensions/calculating-your-income-tax/tax-credits.aspx
@@ -288,7 +292,6 @@ item_id: 155
 draft_id: 30
 approved_by: auto:always
 ---
-
 A tax credit is a fixed sum taken off your income tax bill after the bill has been worked out. Revenue's own wording is that tax credits reduce the amount of tax you pay ([Revenue](https://www.revenue.ie/en/jobs-and-pensions/calculating-your-income-tax/tax-credits.aspx)). For 2026 a single employee gets two of them almost automatically: a Personal Tax Credit of €2,000 and an Employee Tax Credit of €2,000, a total of €4,000 that comes off the tax rather than off the wages ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx)).
 
 That is why a single worker earning €20,000 or less pays no income tax at all: 20% of that income is €4,000, and the credits cancel it out ([Citizens Information](https://www.citizensinformation.ie/en/money-and-tax/tax/income-tax-credits-and-reliefs/introduction-to-income-tax-credits-and-reliefs/)). You may still pay USC (the Universal Social Charge, a separate levy on gross income) and PRSI (Pay Related Social Insurance, the contribution that funds welfare payments and the State Pension), because income tax credits do not touch either. The "tax credits" figure on your payslip or Revenue letters is your yearly total, divided across your pay periods. The rest of this piece covers where that total comes from, what people commonly leave out of it, and how to check it.

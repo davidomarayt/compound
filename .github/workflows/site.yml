@@ -82,6 +82,19 @@ jobs:
           fetch https://compound.ie/mortgage-switch-calculator/ /tmp/switch.html
           grep -Fq 'data-calculator="mortgage_switch"' /tmp/switch.html
 
+          fetch https://compound.ie/wealth/mortgage-overpayments-100-euro-ireland/ /tmp/mortgage-article.html
+          grep -Fq '/mortgage-overpayment-calculator/' /tmp/mortgage-article.html
+          grep -Fq '/mortgage-switch-calculator/' /tmp/mortgage-article.html
+
+          fetch https://compound.ie/mortgage-overpayment-calculator/ /tmp/mortgage-tool.html
+          grep -Fq '/wealth/mortgage-overpayments-100-euro-ireland/' /tmp/mortgage-tool.html
+
+          fetch https://compound.ie/health/macronutrients-micronutrients-guide-ireland/ /tmp/macros-article.html
+          grep -Fq '/nutrition-needs-calculator/' /tmp/macros-article.html
+
+          fetch https://compound.ie/nutrition-needs-calculator/ /tmp/nutrition-tool-links.html
+          grep -Fq '/health/macronutrients-micronutrients-guide-ireland/' /tmp/nutrition-tool-links.html
+
           fetch https://compound.ie/lifetime-cost-calculator/ /tmp/lifetime.html
           grep -Fq 'data-calculator="lifetime_cost"' /tmp/lifetime.html
 

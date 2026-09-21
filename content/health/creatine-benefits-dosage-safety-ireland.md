@@ -11,6 +11,8 @@ reviewed: '2026-09-17'
 summary: 'A useful training supplement deserves a clear explanation. The evidence on strength, dosing, kidneys, hair loss and brain health, plus what to check before buying.'
 meta_description: 'A clear Irish guide to creatine monohydrate: benefits, daily dose, loading, kidney tests, hair loss, brain-health claims and choosing a supplement.'
 tags: [creatine, supplements, strength-training, nutrition, irish-health]
+related_tools:
+- nutrition-needs-calculator
 sources:
 - title: 'Hultman et al. (1996): Muscle creatine loading in men; comparison of gradual and loading approaches. PMID 8828669.'
   url: https://pubmed.ncbi.nlm.nih.gov/8828669/
@@ -49,7 +51,6 @@ sources:
 - title: 'Sport Ireland: Supplements and Herbal Remedies; current advice on need, contamination and batch testing. Checked 17 September 2026.'
   url: https://www.sportireland.ie/anti-doping/athlete-zone/supplements-and-herbal-remedies
 ---
-
 Creatine is an unusual supplement: there is a substantial research base behind some of its claims. That makes it worth understanding—and makes the claims that go beyond the evidence easier to miss.
 
 For an adult lifting weights or doing repeated hard efforts, creatine monohydrate can be a useful addition to training. It is less convincing as an all-purpose answer to tiredness, a way to burn fat or a guarantee of sharper thinking. The benefit depends on what you expect it to do. [NIH: creatine and exercise performance](https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-HealthProfessional/).

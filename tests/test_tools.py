@@ -1,7 +1,7 @@
 from pathlib import Path
 import yaml
 
-from compound.site.build import load_tools
+from compound.site.build import load_articles, load_tools, linked_articles, tool_catalogue
 
 
 def test_tool_catalogue_has_unique_routes():
@@ -140,3 +140,31 @@ def test_bmi_guide_cites_waist_to_height_meta_analysis():
     guide = (content_dir / "bmi-guide.md").read_text()
     assert "300,000 adults" in guide
     assert "22106927" in guide
+
+
+def test_article_tool_link_network_is_explicit_and_bidirectional():
+    content_dir = Path(__file__).parents[1] / "content"
+    articles = load_articles(content_dir)
+    tools = load_tools(content_dir)
+    catalogue = tool_catalogue(content_dir, tools)
+
+    linked = [article for article in articles if article.related_tools]
+    assert len(linked) >= 15
+    assert all(len(article.related_tools) <= 4 for article in linked)
+    assert all(slug in catalogue for article in linked for slug in article.related_tools)
+
+    by_slug = {article.slug: article for article in articles}
+    assert by_slug["mortgage-overpayments-100-euro-ireland"].related_tools == [
+        "mortgage-overpayment-calculator", "mortgage-switch-calculator"
+    ]
+    assert "nutrition-needs-calculator" in by_slug["macronutrients-micronutrients-guide-ireland"].related_tools
+    assert by_slug["rent-tax-credit-ireland-who-can-claim"].related_tools == ["rent-tax-credit-calculator"]
+
+    reverse = linked_articles("mortgage-overpayment-calculator", articles)
+    assert any(article.slug == "mortgage-overpayments-100-euro-ireland" for article in reverse)
+
+def test_happiness_articles_are_not_forced_into_tool_links():
+    content_dir = Path(__file__).parents[1] / "content"
+    happiness = [a for a in load_articles(content_dir) if a.pillar == "happiness"]
+    assert happiness
+    assert all(not a.related_tools for a in happiness)

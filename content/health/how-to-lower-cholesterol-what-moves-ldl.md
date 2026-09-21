@@ -14,6 +14,8 @@ tags:
 - diet
 - exercise
 - statins
+related_tools:
+- nutrition-needs-calculator
 sources:
 - title: 'Cochrane: Reduction in saturated fat intake for cardiovascular disease (17% version)'
   url: https://pubmed.ncbi.nlm.nih.gov/32827219/
@@ -158,7 +160,6 @@ item_id: 141
 draft_id: 9
 approved_by: telegram:DavieXBT
 ---
-
 If you have just had a cholesterol reading and want to know what to do before the next test, two changes have a measured effect on LDL cholesterol in the trials behind this piece. Eating oats daily lowered LDL by about 0.19 mmol/l — millimoles per litre, the unit on an Irish lab report — in a pooled analysis of fifty-eight randomised trials ([British Journal of Nutrition](https://pubmed.ncbi.nlm.nih.gov/27724985/)). Replacing solid fats such as butter with liquid vegetable oils lowered LDL by 0.23 to 0.42 mmol/l in a network meta-analysis of fifty-four trials ([Journal of Lipid Research](https://pubmed.ncbi.nlm.nih.gov/30006369/)) — though that figure comes from modelling an exchange of 10% of your total calories from one fat to the other, which is a far bigger change than switching what you fry in.
 
 Exercise and losing some weight belong in the plan too, on general health grounds. But be straight about the evidence: the exercise research assembled here ranks types of training against each other rather than measuring millimoles, and none of these studies is a weight-loss trial. They point in the right direction; they do not come with a number. And every one of these changes was tested on its own, so nobody can tell you from this evidence what the whole package would do to your reading. That is the honest reason a GP may still raise medication with someone who is doing everything right.

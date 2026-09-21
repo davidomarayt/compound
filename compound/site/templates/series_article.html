@@ -30,6 +30,7 @@
     <div class="reading-column">
       {% if not preview %}{% with slot=adsense.slots.article_top, name="article-top" %}{% include "_ad.html" %}{% endwith %}{% endif %}
       <div class="article-prose live100-prose">{{ article_body | safe }}</div>
+      {% include "_article_tools.html" %}
       <aside class="live100-editorial"><p><strong>About this series.</strong> General information, not personalised medical or financial advice. Living to 100 is a scenario, not a promised outcome. {% if preview %}This is an AI-assisted draft for David’s review. Source checks are recorded in the accompanying claim ledger; no clinical or financial review is claimed.{% else %}See Compound’s <a href="/editorial-policy/">editorial policy</a> and <a href="/about/">author information</a>.{% endif %}</p></aside>
       <section class="sources live100-sources" id="sources" aria-labelledby="sources-title"><p class="eyebrow">FOLLOW THE EVIDENCE</p><h2 id="sources-title">Sources, dates and definitions.</h2><p>Source numbers match the links in the article. Access dates and the period each source covers are recorded below.</p><ol>{% for source in article.sources %}<li id="source-{{ source.id }}"><a href="{{ source.url }}" rel="noopener">{{ source.title }}</a><p>{{ source.publisher }}. {{ source.published }}.</p><p>{{ source.period }}.</p><p>Accessed {{ source.accessed }}.</p></li>{% endfor %}</ol></section>
       {% if not preview %}{% with slot=adsense.slots.article_bottom, name="article-bottom" %}{% include "_ad.html" %}{% endwith %}{% endif %}

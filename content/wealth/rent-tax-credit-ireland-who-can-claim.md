@@ -15,6 +15,8 @@ tags:
 - tax-credits
 - students
 - myaccount
+related_tools:
+- rent-tax-credit-calculator
 sources:
 - title: 'Revenue: Rent Tax Credit overview'
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx
@@ -133,7 +135,6 @@ item_id: 149
 draft_id: 19
 approved_by: telegram:DavieXBT
 ---
-
 If you pay rent for a home in Ireland, you can probably knock up to €1,000 a year off your income tax bill, or €2,000 if you are a married couple or civil partners taxed jointly ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx)). That is the Rent Tax Credit. It is not paid automatically. You have to claim it, and you can claim it for every year back to 2022.
 
 The catch is the four-year rule. Revenue only lets you go back four years, so the 2022 credit must be claimed by 31 December 2026 or it is gone for good ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/four-year-rule/index.aspx)). If you have been renting since 2022 and never claimed, this is the year to sort it.

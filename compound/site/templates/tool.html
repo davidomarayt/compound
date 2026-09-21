@@ -71,6 +71,7 @@
       <p><a href="/disclaimer/">Important information disclaimer</a></p>
     </aside>
   </section>
+  {% include "_tool_reading.html" %}
   <aside class="tool-more"><p class="eyebrow">MORE COMPOUND TOOLS</p><h2>Run another scenario.</h2><div class="tool-more-links">{% for other in related_tools %}<a href="{{ other.url }}">{{ other.title }} <span>→</span></a>{% endfor %}<a href="/tools/">Browse all tools <span>→</span></a></div></aside>
 </article>
 {% endblock %}

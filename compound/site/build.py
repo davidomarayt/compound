@@ -59,6 +59,7 @@ class Article:
     canonical_path: str = ""
     seo_title: str = ""
     reviewed: date | None = None
+    related_tools: list[str] = field(default_factory=list)
 
     @property
     def body_with_charts(self) -> str:
@@ -277,6 +278,7 @@ def article_from_file(path: Path, *, include_drafts: bool = False) -> Article | 
         canonical_path=canonical_path,
         seo_title=str(meta.get("seo_title") or ""),
         reviewed=_as_date(meta["reviewed"]) if meta.get("reviewed") else None,
+        related_tools=[str(t) for t in (meta.get("related_tools") or [])],
     )
 
 
@@ -331,6 +333,35 @@ def load_tools(content_dir: Path) -> list[dict]:
         tool["sources"] = list(tool.get("sources") or [])
         items.append(tool)
     return items
+
+
+def tool_catalogue(content_dir: Path, tools: list[dict]) -> dict[str, dict]:
+    """All linkable tools, including the two bespoke legacy calculator pages."""
+    items = {tool["slug"]: tool for tool in tools}
+    if (content_dir / "compound-calculator-guide.md").is_file():
+        items["compound-interest-calculator"] = {
+            "slug": "compound-interest-calculator",
+            "title": "Compound Interest Calculator Ireland",
+            "url": "/compound-interest-calculator/",
+            "category": "Saving & Investing",
+            "summary": "Model contributions, growth, inflation, fees and long-term savings scenarios.",
+        }
+    if (content_dir / "bmi-guide.md").is_file():
+        items["bmi-calculator"] = {
+            "slug": "bmi-calculator",
+            "title": "BMI Calculator Ireland",
+            "url": "/bmi-calculator/",
+            "category": "Health",
+            "summary": "Calculate adult BMI, explore waist-to-height ratio and put the result in context.",
+        }
+    return items
+
+
+def linked_articles(tool_slug: str, articles: list[Article], n: int = 4) -> list[Article]:
+    """Articles that explicitly nominate this tool, newest first."""
+    matches = [a for a in articles if tool_slug in a.related_tools]
+    matches.sort(key=lambda a: (a.date, a.slug), reverse=True)
+    return matches[:n]
 
 
 def long_date(d: date) -> str:
@@ -469,6 +500,13 @@ def build_site(settings: Settings) -> dict:
     articles = load_articles(settings.content_dir)
     pages = load_pages(settings.content_dir)
     tools = load_tools(settings.content_dir)
+    tools_by_slug = tool_catalogue(settings.content_dir, tools)
+    for article in articles:
+        if len(article.related_tools) > 4:
+            raise ValueError(f"Keep related_tools to four or fewer on {article.slug}")
+        unknown = [slug for slug in article.related_tools if slug not in tools_by_slug]
+        if unknown:
+            raise ValueError(f"Unknown related_tools on {article.slug}: {unknown}")
     reserved = {"/", "/search/", "/tools/", "/compound-interest-calculator/", "/bmi-calculator/"}
     reserved.update(tool["url"] for tool in tools)
     reserved.update(f"/{p}/" for p in PILLARS)
@@ -523,7 +561,8 @@ def build_site(settings: Settings) -> dict:
     for a in articles:
         _write(out / a.url.strip("/") / "index.html",
                env.get_template(article_template(a)).render(
-                   **article_context(env, settings, a, False), related=related(a, articles)))
+                   **article_context(env, settings, a, False), related=related(a, articles),
+                   linked_tools=[tools_by_slug[s] for s in a.related_tools])))
         for t in a.tags:
             tag_map.setdefault(t, []).append(a)
     for t, arts in tag_map.items():
@@ -552,7 +591,9 @@ def build_site(settings: Settings) -> dict:
                 "publisher": {"@type": "Organization", "name": "Compound", "url": settings.site_base_url},
             }, ensure_ascii=False)
             _write(out / tool["slug"] / "index.html", env.get_template("tool.html").render(
-                title=tool["title"], tool=tool, related_tools=related_tools, tool_jsonld=tool_jsonld, pillar="wealth"))
+                title=tool["title"], tool=tool, related_tools=related_tools,
+                related_articles=linked_articles(tool["slug"], articles),
+                tool_jsonld=tool_jsonld, pillar="wealth"))
 
     calculator_path = "/compound-interest-calculator/"
     has_calculator = (settings.content_dir / "compound-calculator-guide.md").is_file()
@@ -560,6 +601,7 @@ def build_site(settings: Settings) -> dict:
         calculator_guide = render_markdown((settings.content_dir / "compound-calculator-guide.md").read_text(encoding="utf-8"))
         _write(out / "compound-interest-calculator" / "index.html", env.get_template("calculator.html").render(
             title="Compound Interest Calculator Ireland", pillar="wealth", ads_allowed=False,
+            related_articles=linked_articles("compound-interest-calculator", articles),
             calculator_guide=calculator_guide.replace("<table>", '<div class="guide-table-scroll"><table>').replace("</table>", "</table></div>")))
 
     bmi_path = "/bmi-calculator/"
@@ -568,6 +610,7 @@ def build_site(settings: Settings) -> dict:
         bmi_guide = render_markdown((settings.content_dir / "bmi-guide.md").read_text(encoding="utf-8"))
         _write(out / "bmi-calculator" / "index.html", env.get_template("bmi.html").render(
             title="BMI Calculator Ireland", pillar="health", ads_allowed=False,
+            related_articles=linked_articles("bmi-calculator", articles),
             bmi_guide=bmi_guide.replace("<table>", '<div class="bmi-table"><table>').replace("</table>", "</table></div>")))
 
     index = [
@@ -624,7 +667,10 @@ def render_preview(settings: Settings, token: str, article: Article) -> Path:
     if not (settings.public_dir / "static").exists():
         shutil.copytree(HERE / "static", settings.public_dir / "static", dirs_exist_ok=True)
     _write(out, env.get_template(article_template(article)).render(
-        **article_context(env, settings, article, True), related=[]))
+        **article_context(env, settings, article, True), related=[],
+        linked_tools=[tool_catalogue(settings.content_dir, load_tools(settings.content_dir))[s]
+                      for s in article.related_tools
+                      if s in tool_catalogue(settings.content_dir, load_tools(settings.content_dir))]))
     return out
 
 

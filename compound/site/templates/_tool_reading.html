@@ -1,0 +1,11 @@
+{% if related_articles %}
+<section class="tool-reading" aria-labelledby="tool-reading-title">
+  <p class="eyebrow">READ THE CONTEXT</p>
+  <h2 id="tool-reading-title">Related Compound guides.</h2>
+  <div class="tool-reading-grid">
+    {% for article in related_articles %}
+    <a href="{{ article.url }}"><span class="tool-reading-pillar">{{ article.pillar_label }}</span><strong>{{ article.title }}</strong><span aria-hidden="true">→</span></a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

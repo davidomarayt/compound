@@ -15,6 +15,9 @@ tags: [longevity, healthy-ageing, exercise, prevention]
 image: /static/images/live-to-100-health.webp
 image_alt: 'Illustration of an older woman carrying hand weights with an instructor beside her in a bright exercise studio.'
 image_credit: 'Illustration: Compound.'
+related_tools:
+- nutrition-needs-calculator
+- bmi-calculator
 sources:
   - id: 1
     publisher: World Health Organization
@@ -122,7 +125,6 @@ sources:
     period: 'Recording treatment wishes and understanding the distinct roles of advance directives and enduring powers of attorney'
     accessed: '16 September 2026'
 ---
-
 Think of something you would like to keep being able to do.
 
 It might be lifting a bag onto a train, getting out to a match, cooking dinner or following the conversation around a busy table. It might be taking part with an aid, an adapted activity or another person's help. Those ordinary capabilities give a health plan a useful direction.

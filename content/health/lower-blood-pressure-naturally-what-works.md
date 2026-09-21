@@ -15,6 +15,9 @@ tags:
 - exercise
 - dash-diet
 - hse
+related_tools:
+- alcohol-units-calories-cost-calculator
+- nutrition-needs-calculator
 sources:
 - title: 'HSE: High blood pressure, symptoms and diagnosis'
   url: https://www2.hse.ie/conditions/high-blood-pressure-hypertension/symptoms-and-diagnosis/
@@ -455,7 +458,6 @@ item_id: 148
 draft_id: 17
 approved_by: telegram:DavieXBT
 ---
-
 If you have been told your blood pressure is high or borderline, the changes with the strongest trial evidence are eating less salt, losing weight if you are overweight, exercising regularly, and drinking less if you take more than a couple of drinks a day. Each one lowers the top number, the systolic pressure, by a few points on average. Add a DASH-style diet built on fruit, vegetables and low-fat dairy, and the drop in people with hypertension ran into double figures in both DASH feeding trials. None of it replaces a GP check, and if your readings are high enough you will be offered medicine alongside the changes rather than instead of them.
 
 Here is the ranking by average fall in systolic pressure, in mmHg, the unit blood pressure is measured in. The drops are consistently bigger in people who already have high blood pressure than in people with borderline readings, so each entry says which group the figure is for and how long the trials ran:

@@ -1,0 +1,13 @@
+{% if linked_tools %}
+<aside class="article-tools" aria-labelledby="article-tools-title">
+  <p class="eyebrow">USEFUL TOOLS</p>
+  <h2 id="article-tools-title">Put this article into your own numbers.</h2>
+  <div class="article-tool-grid">
+    {% for tool in linked_tools %}
+    <a class="article-tool-link" href="{{ tool.url }}">
+      <span><strong>{{ tool.title }}</strong><small>{{ tool.summary }}</small></span><span aria-hidden="true">→</span>
+    </a>
+    {% endfor %}
+  </div>
+</aside>
+{% endif %}

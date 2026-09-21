@@ -15,6 +15,10 @@ tags: [longevity, pensions, financial-planning, retirement]
 image: /static/images/live-to-100-wealth.webp
 image_alt: 'Illustration of two adults discussing a notebook at a garden table beside an imagined Irish village home.'
 image_credit: 'Illustration: Compound.'
+related_tools:
+- lifetime-cost-calculator
+- pension-projection-calculator
+- myfuturefund-calculator
 sources:
   - id: 1
     publisher: Department of Social Protection / MyWelfare
@@ -94,7 +98,6 @@ sources:
     period: 'Free, independent and confidential money advice and budgeting support'
     accessed: '16 September 2026'
 ---
-
 The useful question is what your money needs to make possible.
 
 A warm home. Food you enjoy. A way to visit people. The option to reduce work if your health changes. Help with tasks you can no longer manage alone. These are less dramatic than a target pension pot, but they give a financial plan its meaning.

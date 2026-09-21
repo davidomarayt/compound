@@ -11,6 +11,8 @@ image: /static/images/glp1-injector.jpg
 image_alt: Close-up of a semaglutide injector pen resting on its blue cap.
 image_credit: Haberdoedas / Unsplash
 image_source: https://unsplash.com/photos/a-semaglutide-injection-pen-is-shown-TzKc7FGaL7Y
+related_tools:
+- bmi-calculator
 sources:
 - title: 'Doran S et al. Utilization of GLP-1 receptor agonists in the Irish healthcare system. ISPOR Europe 2025, HPR235; conference abstract.'
   url: https://www.ispor.org/heor-resources/presentations-database/presentation-cti/ispor-europe-2025/poster-session-5-2/utilization-of-glucagon-like-peptide-1-receptor-agonists-in-the-irish-healthcare-system
@@ -35,7 +37,6 @@ sources:
 - title: 'HPRA. Illegal medicines detained in 2025; enforcement release, 24 March 2026.'
   url: https://www.hpra.ie/news-events/news/article/over-750-000-units-of-illegal-medicines-detained-by-the-hpra-in-2025
 ---
-
 <p class="glp-note">Evidence checked 14 September 2026. This article concerns adults and the Republic of Ireland. It is general information, not a recommendation to start, stop or choose a medicine.</p>
 
 <p>For someone considering treatment, the questions are fairly immediate. Will it help? What are the side effects? Is it covered? And what happens if paying for it becomes difficult?</p>

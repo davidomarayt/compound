@@ -11,6 +11,9 @@ image: /static/images/mortgage-overpayment-illustration.png
 image_alt: 'Editorial illustration of a small model house, a brass key and coins on a plum desk.'
 image_credit: 'Illustration: Compound.'
 image_source: '#image-note'
+related_tools:
+- mortgage-overpayment-calculator
+- mortgage-switch-calculator
 sources:
 - title: 'CCPC: Paying extra off your mortgage. Accessed 14 September 2026.'
   url: https://www.ccpc.ie/manage-your-money/buying-a-home/about-mortgages/paying-extra-off-your-mortgage
@@ -25,7 +28,6 @@ sources:
 - title: 'CCPC: Switching your mortgage. Accessed 14 September 2026.'
   url: https://www.ccpc.ie/manage-your-money/buying-a-home/about-mortgages/switching-your-mortgage
 ---
-
 An extra €100 can look small beside a six-figure mortgage. It is also €1,200 a year that has to come from somewhere. Before committing it, you deserve a clearer answer than “every little helps”.
 
 Here is one: on an illustrative **€250,000 mortgage with 25 years remaining at 4%**, paying an extra €100 each month could save approximately **€18,619 in interest** and finish repayments **two years and ten months earlier**.

@@ -15,6 +15,10 @@ tags:
 - prsa
 - self-employed
 - paye
+related_tools:
+- pension-tax-relief-calculator
+- pension-projection-calculator
+- myfuturefund-calculator
 sources:
 - title: 'Revenue: Tax relief for pension contributions'
   url: https://www.revenue.ie/en/jobs-and-pensions/pension/relief/index.aspx
@@ -193,7 +197,6 @@ item_id: 152
 draft_id: 25
 approved_by: telegram:DavieXBT
 ---
-
 Pension tax relief means the money you put into a pension is taken off your income before income tax is worked out. Revenue gives that relief at your marginal rate, which is the highest rate you pay, so a contribution from income taxed at 40% cuts your tax bill by 40% of the amount you put in ([Revenue](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/index.aspx)). If all of your income is taxed at 20%, the relief is 20%.
 
 There are limits. Relief is capped at a percentage of your earnings that rises with your age, from 15% if you are under 30 to 40% at 60 or over, and only the first €115,000 of earnings counts ([Revenue](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx)). For most PAYE workers (PAYE is Pay As You Earn, the system where your employer deducts tax before you are paid) the relief arrives automatically through payroll. If you pay into a pension yourself, you claim it, and a lump sum paid before the pay-and-file deadline can be set against last year's income.

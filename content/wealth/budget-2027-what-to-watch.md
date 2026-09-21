@@ -19,6 +19,10 @@ tags:
 - income-tax
 - childcare
 - household-finances
+related_tools:
+- take-home-pay-calculator
+- childcare-return-to-work-calculator
+- myfuturefund-calculator
 sources:
 - title: 'Department of Finance: Summer Economic Statement 2026 announcement'
   url: https://www.gov.ie/en/department-of-finance/press-releases/t%C3%A1naiste-simon-harris-and-minister-jack-chambers-publish-summer-economic-statement-2026/
@@ -48,7 +52,6 @@ sources:
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/mortgage/how-much-can-you-claim.aspx
 charts: []
 ---
-
 <p><em>Pre-Budget analysis. Information checked on 14 September 2026. Proposals and illustrative calculations below are not announced entitlements.</em></p>
 
 <p>The Budget arrives as one big number. At home, it arrives in smaller pieces: a payslip, a childcare invoice, a winter electricity bill.</p>

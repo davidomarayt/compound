@@ -16,6 +16,8 @@ tags:
 - minerals
 - protein
 - irish-health
+related_tools:
+- nutrition-needs-calculator
 sources:
 - title: 'HSE: How to eat well'
   url: https://www2.hse.ie/living-well/healthy-eating/how-to-eat-well/
@@ -68,8 +70,6 @@ sources:
 - title: 'Sport Ireland: Supplements policy'
   url: https://www.sportireland.ie/sites/default/files/2019-10/sport-ireland-anti-doping-supplements-policy.pdf
 ---
-
-
 <div class="nutrient-guide" markdown="1">
 
 <p class="nutrient-meta">Republic of Ireland · General adult nutrition · Sources checked 15 September 2026</p>

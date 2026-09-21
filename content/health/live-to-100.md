@@ -16,6 +16,8 @@ tags: [longevity, healthy-ageing, life-planning]
 image: /static/images/live-to-100-coast.webp
 image_alt: 'Original illustration of three adults from different generations walking together on an imagined Irish coastal path.'
 image_credit: 'Illustration: Compound.'
+related_tools:
+- lifetime-cost-calculator
 sources:
   - id: 1
     publisher: Eurostat
@@ -81,7 +83,6 @@ sources:
     period: '148 studies; 308,849 participants; literature search through January 2007'
     accessed: '16 September 2026'
 ---
-
 What would need to last if you had another seventy years ahead of you?
 
 Imagine being 30 and reaching 100. Between those birthdays there could be several working chapters, friendships you have not yet made, places you have not yet called home and a long stretch beyond full-time employment. There would also be ordinary Tuesdays: making breakfast, paying bills, finding someone to talk to, deciding what to do with the afternoon.

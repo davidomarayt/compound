@@ -11,6 +11,10 @@ reviewed: '2026-09-17'
 summary: 'A fund for college, a first home or a little more freedom. Explore what monthly saving could build—and how ownership, Irish tax and the investment itself change the handover.'
 meta_description: 'Saving for a child in Ireland: compare ownership, bare trusts, gift and inheritance tax, shares, ETFs and insurance plans, including what happens at 18.'
 tags: [saving, family-money, investing, tax]
+related_tools:
+- compound-interest-calculator
+- inheritance-tax-calculator
+- regular-savings-calculator
 sources:
 - title: 'Revenue: Small Gift Exemption. Checked 17 September 2026.'
   url: https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-exemptions/small-gift-exemption/index.aspx
@@ -51,7 +55,6 @@ sources:
 - title: 'Revenue: Central Register of Beneficial Ownership of Trusts. Checked 17 September 2026.'
   url: https://www.revenue.ie/en/crbot/index.aspx
 ---
-
 Saving for a child begins with a generous intention. Perhaps you want to help with college, make their first rent deposit less daunting, or give them options you did not have yourself.
 
 The monthly standing order is the easy part to picture. The harder question is what you are actually building: **your own savings that you may give away later, or money that already belongs to your child.** A label in a banking app does not settle that question.

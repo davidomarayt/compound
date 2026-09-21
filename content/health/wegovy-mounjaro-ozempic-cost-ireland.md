@@ -11,6 +11,8 @@ image: /static/images/glp1-cost-illustration.png
 image_alt: 'Editorial illustration of an unbranded capped injection pen, medicine carton, receipt and euro coins.'
 image_credit: 'Illustration: Compound.'
 image_source: '#image-note'
+related_tools:
+- bmi-calculator
 sources:
 - title: 'Laois Pharmacy: Ozempic price table, including Wegovy starter price. Accessed 14 September 2026.'
   url: https://laoispharmacy.com/ozempic-ireland/
@@ -37,7 +39,6 @@ sources:
 - title: 'HPRA: illegal medicines detained in 2025; safety warning, 24 March 2026.'
   url: https://www.hpra.ie/news-events/news/article/over-750-000-units-of-illegal-medicines-detained-by-the-hpra-in-2025
 ---
-
 <p class="glp-note">Prices and sources checked 14 September 2026. Republic of Ireland; adult treatment. Advertised prices are examples, not guaranteed quotes or a national price survey. This is general information, not a recommendation to start, switch or stop a medicine.</p>
 
 A price beginning with “from” can answer the wrong question. It tells you what the first purchase might cost. It does not necessarily tell you what you will pay after the dose changes, how much clinical care costs, or whether you can afford treatment over time.
