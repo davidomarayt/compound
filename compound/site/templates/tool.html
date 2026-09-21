@@ -4,7 +4,7 @@
 {% block head %}
 <link rel="canonical" href="{{ site_url }}{{ tool.url }}">
 <meta property="og:type" content="website"><meta property="og:title" content="{{ tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="/static/tools.css?v=20260921"><script defer src="/static/tools.js?v=20260921"></script>
+<link rel="stylesheet" href="/static/tools.css?v=20260921b"><script defer src="/static/tools.js?v=20260921b"></script>
 <script type="application/ld+json">{{ tool_jsonld|safe }}</script>
 {% endblock %}
 {% block content %}
@@ -41,6 +41,11 @@
       </div>
       <p class="tool-result-note">Planning estimate only. Read the notes below before relying on the result.</p>
     </section>
+  </section>
+  <section class="tool-chart-panel" data-tool-chart hidden aria-live="polite">
+    <header><p class="eyebrow">SEE THE SCENARIO</p><h2 data-chart-title>How the numbers develop</h2><p data-chart-caption></p></header>
+    <div class="tool-chart-scroll"><div class="tool-chart-canvas" data-chart-canvas></div></div>
+    <div class="tool-chart-legend" data-chart-legend></div>
   </section>
   <section class="tool-explainer">
     <div class="tool-explainer-main">{{ tool.guide_html|safe }}</div>

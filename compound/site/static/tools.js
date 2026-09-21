@@ -30,6 +30,78 @@
   };
   const pensionPct = age => age < 30 ? .15 : age < 40 ? .20 : age < 50 ? .25 : age < 55 ? .30 : age < 60 ? .35 : .40;
 
+  const incomeTax2026 = (income, band, credits) => {
+    const taxable=Math.max(0,income), standard=Math.min(taxable,Math.max(0,band));
+    const gross=standard*.20 + Math.max(0,taxable-standard)*.40;
+    return {taxable,standard,higher:Math.max(0,taxable-standard),gross,net:Math.max(0,gross-Math.max(0,credits))};
+  };
+  const usc2026 = income => {
+    const x=Math.max(0,income);
+    if(x<=13000) return 0;
+    let left=x, tax=0;
+    const bands=[[12012,.005],[16688,.02],[41344,.03],[Infinity,.08]];
+    for(const [size,rate] of bands){ const slice=Math.min(left,size); if(slice<=0) break; tax+=slice*rate; left-=slice; }
+    return tax;
+  };
+  const weeklyPrsiCredit = weekly => weekly>352 && weekly<=424 ? Math.max(0,12-(weekly-352.01)/6) : 0;
+  const weeklyClassA = (weekly,rate) => weekly<=352 ? 0 : Math.max(0,weekly*rate-weeklyPrsiCredit(weekly));
+  const annualClassA2026 = salary => {
+    const weekly=Math.max(0,salary)/52;
+    const before=weeklyClassA(weekly,.042), after=weeklyClassA(weekly,.0435);
+    return {weekly,before,after,annual:before*39+after*13};
+  };
+  const employeeNet2026 = (salary,pension,band=44000,extraCredits=0) => {
+    const employeeCredit=Math.min(2000,Math.max(0,salary)*.20);
+    const credits=2000+employeeCredit+Math.max(0,extraCredits);
+    const tax=incomeTax2026(Math.max(0,salary-pension),band,credits).net;
+    const usc=usc2026(salary), prsi=annualClassA2026(salary).annual;
+    return {tax,usc,prsi,credits,net:salary-pension-tax-usc-prsi};
+  };
+  const selfEmployedNet2026 = (profit,pension=0) => {
+    const x=Math.max(0,profit), earnedCredit=Math.min(2000,x*.20), credits=2000+earnedCredit;
+    const tax=incomeTax2026(Math.max(0,x-pension),44000,credits).net;
+    const usc=usc2026(x);
+    const prsi=x<5000?0:Math.max(650,x*.042375);
+    return {tax,usc,prsi,credits,net:x-pension-tax-usc-prsi};
+  };
+  const stampDutyResidential = price => Math.min(price,1000000)*.01 + Math.max(0,Math.min(price,1500000)-1000000)*.02 + Math.max(0,price-1500000)*.06;
+  const projectMonthly = (initial,monthly,annualRate,years) => {
+    const r=annualRate/100/12, points=[Math.max(0,initial)]; let bal=Math.max(0,initial);
+    for(let y=1;y<=years;y++){ for(let m=0;m<12;m++){ bal*=1+r; bal+=monthly; } points.push(bal); }
+    return points;
+  };
+  const compact = new Intl.NumberFormat('en-IE',{notation:'compact',maximumFractionDigits:1});
+  const esc = s => String(s).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  const renderToolChart = (root,spec) => {
+    const panel=root.querySelector('[data-tool-chart]'); if(!panel) return;
+    if(!spec || !spec.labels || !spec.series || !spec.series.length){ panel.hidden=true; return; }
+    panel.hidden=false;
+    const title=panel.querySelector('[data-chart-title]'), caption=panel.querySelector('[data-chart-caption]');
+    if(title) title.textContent=spec.title||'Scenario chart';
+    if(caption) caption.textContent=spec.caption||'';
+    const labels=spec.labels.map(String), series=spec.series.filter(s=>Array.isArray(s.values));
+    const all=series.flatMap(s=>s.values).filter(Number.isFinite);
+    if(!all.length){ panel.hidden=true; return; }
+    let min=Math.min(0,...all), max=Math.max(0,...all); if(max===min){max=min+1;}
+    const W=760,H=300,L=64,R=24,T=18,B=54,plotW=W-L-R,plotH=H-T-B;
+    const y=v=>T+(max-v)/(max-min)*plotH;
+    let svg='<svg class="tool-chart-svg" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+esc(spec.title||'Calculator chart')+'">';
+    for(let i=0;i<=4;i++){const val=min+(max-min)*i/4, yy=y(val);svg+='<line class="tool-chart-grid" x1="'+L+'" x2="'+(W-R)+'" y1="'+yy.toFixed(1)+'" y2="'+yy.toFixed(1)+'"/><text class="tool-chart-axis" x="'+(L-8)+'" y="'+(yy+4).toFixed(1)+'" text-anchor="end">'+esc((spec.currency===false?compact.format(val):'€'+compact.format(val)))+'</text>';}
+    const zeroY=y(0); svg+='<line class="tool-chart-grid" x1="'+L+'" x2="'+(W-R)+'" y1="'+zeroY.toFixed(1)+'" y2="'+zeroY.toFixed(1)+'"/>';
+    if(spec.type==='bar'){
+      const n=Math.max(1,labels.length), group=plotW/n, totalBar=Math.min(group*.72,80), bw=totalBar/Math.max(1,series.length);
+      labels.forEach((lab,i)=>{ const cx=L+group*(i+.5); svg+='<text class="tool-chart-axis" x="'+cx.toFixed(1)+'" y="'+(H-18)+'" text-anchor="middle">'+esc(lab)+'</text>'; series.forEach((s,j)=>{const v=Number(s.values[i])||0,x=cx-totalBar/2+j*bw,yy=y(Math.max(0,v)),y0=y(Math.min(0,v)),top=Math.min(yy,y0),h=Math.max(1,Math.abs(y0-yy));svg+='<rect class="tool-chart-bar tool-chart-series-'+(j%3)+'" x="'+x.toFixed(1)+'" y="'+top.toFixed(1)+'" width="'+Math.max(2,bw-3).toFixed(1)+'" height="'+h.toFixed(1)+'"><title>'+esc(s.label)+': '+esc(money(v))+'</title></rect>';});});
+    } else {
+      const n=Math.max(1,labels.length-1);
+      series.forEach((s,j)=>{let pts='';s.values.forEach((v,i)=>{const x=L+plotW*(i/n),yy=y(Number(v)||0);pts+=x.toFixed(1)+','+yy.toFixed(1)+' ';});svg+='<polyline class="tool-chart-line tool-chart-series-'+(j%3)+'" points="'+pts.trim()+'"/>';s.values.forEach((v,i)=>{if(i===0||i===s.values.length-1||i%Math.max(1,Math.ceil(s.values.length/12))===0){const x=L+plotW*(i/n),yy=y(Number(v)||0);svg+='<circle class="tool-chart-point tool-chart-series-'+(j%3)+'" cx="'+x.toFixed(1)+'" cy="'+yy.toFixed(1)+'" r="4"><title>'+esc(labels[i])+': '+esc(s.label)+' '+esc(money(Number(v)||0))+'</title></circle>';}});});
+      const ticks=[0,Math.round(n*.25),Math.round(n*.5),Math.round(n*.75),n].filter((v,i,a)=>a.indexOf(v)===i);
+      ticks.forEach(i=>{const x=L+plotW*(i/n);svg+='<text class="tool-chart-axis" x="'+x.toFixed(1)+'" y="'+(H-18)+'" text-anchor="middle">'+esc(labels[i])+'</text>';});
+    }
+    svg+='</svg>';
+    const canvas=panel.querySelector('[data-chart-canvas]'); if(canvas) canvas.innerHTML=svg;
+    const legend=panel.querySelector('[data-chart-legend]'); if(legend) legend.innerHTML=series.map((s,i)=>'<span><i class="series-'+(i%3)+'"></i>'+esc(s.label)+'</span>').join('');
+  };
+
   const calculators = {
     mortgage(v){
       const n=v.years*12, p=monthlyPayment(v.amount,v.rate,n), total=p*n;
@@ -123,6 +195,131 @@
     electricity(v){
       const kwh=v.watts/1000*v.hours*v.days, monthly=kwh*v.price;
       return {kwh:num(kwh)+' kWh',monthly:money(monthly),annual:money(monthly*12)};
+    },
+    take_home_2026(v){
+      const pension=Math.max(0,v.salary*v.pension_pct/100), net=employeeNet2026(v.salary,pension,v.band,v.other_credits);
+      return {
+        annual_net:money(net.net),monthly_net:money(net.net/12),paye:money(net.tax),usc:money(net.usc),prsi:money(net.prsi),pension:money(pension),
+        __chart:{type:'bar',title:'Where the gross salary goes',caption:'Estimated 2026 annual amounts using the inputs above.',labels:['Take-home','PAYE','USC','PRSI','Pension'],series:[{label:'Annual amount',values:[net.net,net.tax,net.usc,net.prsi,pension]}]}
+      };
+    },
+    income_tax_2026(v){
+      const t=incomeTax2026(Math.max(0,v.income-v.pension),v.band,v.credits);
+      return {
+        taxable:money(t.taxable),tax20:money(t.standard*.20),tax40:money(t.higher*.40),gross_tax:money(t.gross),final_tax:money(t.net),
+        __chart:{type:'bar',title:'Income Tax calculation',caption:'Tax charged in each band, before and after the credits entered.',labels:['20% band tax','40% band tax','Credits','Final tax'],series:[{label:'Amount',values:[t.standard*.20,t.higher*.40,Math.min(v.credits,t.gross),t.net]}]}
+      };
+    },
+    usc_2026(v){
+      const u=usc2026(v.income); return {usc:money(u),effective:pct(v.income?u/v.income*100:0),monthly:money(u/12)};
+    },
+    prsi_2026(v){
+      const p=annualClassA2026(v.salary); return {weekly_before:money(p.before),weekly_after:money(p.after),annual:money(p.annual),effective:pct(v.salary?p.annual/v.salary*100:0)};
+    },
+    cat(v){
+      const thresholds={A:400000,B:40000,C:20000}, threshold=thresholds[v.group]||0, small=v.benefit_type==='gift'?Math.min(3000,v.benefit):0;
+      const current=Math.max(0,v.benefit-small), beforeTax=Math.max(0,v.prior-threshold)*.33, afterTax=Math.max(0,v.prior+current-threshold)*.33, cat=Math.max(0,afterTax-beforeTax);
+      return {threshold:money(threshold),current_taxable_value:money(current),threshold_remaining:money(Math.max(0,threshold-v.prior)),cat:money(cat)};
+    },
+    rent_credit(v){
+      const rentBased=v.rent*.20, cap=v.joint==='yes'?2000:1000, credit=Math.min(rentBased,cap,v.income_tax_liability);
+      return {rent_based:money(rentBased),statutory_cap:money(cap),credit:money(Math.max(0,credit))};
+    },
+    help_to_buy(v){
+      const ltv=v.property_value>0?v.mortgage/v.property_value*100:0, valueCap=v.property_value*.10, basic=v.property_value<=500000&&ltv>=70;
+      const claim=basic?Math.min(30000,valueCap,v.tax_paid):0;
+      return {ltv:pct(ltv),value_cap:money(valueCap),claim:money(claim),eligibility:basic?'Passes basic value/LTV check':'Fails basic value/LTV check'};
+    },
+    first_home_scheme(v){
+      const htb=v.htb==='yes'?Math.min(v.htb_amount,v.property_value):0, gap=Math.max(0,v.property_value-v.mortgage-v.deposit-htb), maxShare=v.htb==='yes'?.20:.30, maxFhs=v.property_value*maxShare, minFhs=Math.max(v.property_value*.025,10000), share=v.property_value?gap/v.property_value*100:0;
+      let check='Within basic funding range'; if(gap===0)check='No funding gap'; else if(gap<minFhs)check='Gap is below the FHS minimum'; else if(gap>maxFhs)check='Gap exceeds the percentage maximum';
+      return {gap:money(gap),share:pct(share),max_fhs:money(maxFhs),check};
+    },
+    dirt(v){ const tax=v.interest*.33, net=v.interest-tax; return {dirt:money(tax),net:money(net),retained:pct(v.interest?net/v.interest*100:0)}; },
+    contractor_vs_salary(v){
+      const employee=employeeNet2026(v.salary,0,44000,0), revenue=v.day_rate*v.billable_days, profit=Math.max(0,revenue-v.contractor_costs), pension=Math.min(v.contractor_pension,profit), contractor=selfEmployedNet2026(profit,pension), diff=contractor.net-employee.net;
+      return {
+        employee_net:money(employee.net),contractor_revenue:money(revenue),contractor_profit:money(profit),contractor_net:money(contractor.net),net_difference:(diff>=0?'+':'')+money(diff),
+        __chart:{type:'bar',title:'Gross and estimated net comparison',caption:'The contractor side excludes the value of employment benefits and uses the stated self-employed assumptions.',labels:['Employee','Contractor'],series:[{label:'Gross / profit',values:[v.salary,profit]},{label:'Estimated take-home',values:[employee.net,contractor.net]}]}
+      };
+    },
+    investment_fees(v){
+      const low=projectMonthly(v.initial,v.monthly,v.gross_return-v.fee_low,v.years), high=projectMonthly(v.initial,v.monthly,v.gross_return-v.fee_high,v.years), labels=Array.from({length:v.years+1},(_,i)=>'Year '+i);
+      return {
+        low_balance:money(low[low.length-1]),high_balance:money(high[high.length-1]),fee_gap:money(low[low.length-1]-high[high.length-1]),
+        __chart:{type:'line',title:'Fee drag over time',caption:'Same before-fee return and contributions; only the annual fee assumption changes.',labels,series:[{label:'Lower fee',values:low},{label:'Higher fee',values:high}]}
+      };
+    },
+    fire_number(v){
+      const target=v.withdrawal_rate>0?v.annual_spend/(v.withdrawal_rate/100):Infinity, r=v.return_rate/100/12, monthly=v.annual_contribution/12; let bal=v.current, months=0;
+      while(bal<target&&months<1200){bal=bal*(1+r)+monthly;months++;}
+      const years=Math.min(60,Math.max(1,Math.ceil(Math.min(months,1200)/12))), labels=[], vals=[], targets=[]; bal=v.current;
+      labels.push('Now');vals.push(bal);targets.push(target);
+      for(let y=1;y<=years;y++){for(let m=0;m<12;m++)bal=bal*(1+r)+monthly;labels.push('Year '+y);vals.push(bal);targets.push(target);}
+      return {
+        target:money(target),gap:money(Math.max(0,target-v.current)),years:months>=1200&&bal<target?'Not reached within 100 years':duration(months),
+        __chart:{type:'line',title:'Portfolio path towards the FIRE target',caption:'Constant-return illustration using the spending, withdrawal and contribution assumptions entered.',labels,series:[{label:'Projected portfolio',values:vals},{label:'FIRE target',values:targets}]}
+      };
+    },
+    retirement_income(v){
+      const portfolio=v.pot*v.withdrawal_rate/100, total=portfolio+v.state_pension+v.other_income;
+      return {
+        portfolio_income:money(portfolio),annual_income:money(total),monthly_income:money(total/12),
+        __chart:{type:'bar',title:'Illustrative retirement income mix',caption:'Gross annual income before tax.',labels:['Portfolio','State Pension','Other'],series:[{label:'Annual income',values:[portfolio,v.state_pension,v.other_income]}]}
+      };
+    },
+    pension_projection(v){
+      const years=Math.max(0,Math.floor(v.retirement_age-v.age)), monthly=v.monthly_employee+v.monthly_employer, netRate=v.return_rate-v.annual_fee, labels=['Age '+v.age], pots=[v.current], contribs=[v.current]; let bal=v.current, contrib=v.current, r=netRate/100/12;
+      for(let y=1;y<=years;y++){for(let m=0;m<12;m++){bal=bal*(1+r)+monthly;contrib+=monthly;}labels.push('Age '+(v.age+y));pots.push(bal);contribs.push(contrib);}
+      return {
+        years:years+' years',projected:money(bal),contributed:money(contrib),growth:money(bal-contrib),
+        __chart:{type:'line',title:'Pension projection to retirement',caption:'Projected fund versus cumulative money contributed, using the return and fee assumptions entered.',labels,series:[{label:'Projected pension',values:pots},{label:'Contributions + starting pot',values:contribs}]}
+      };
+    },
+    rent_vs_buy(v){
+      const mortgage=Math.max(0,v.house_price-v.deposit), n=v.mortgage_years*12, payment=monthlyPayment(mortgage,v.mortgage_rate,n), mr=v.mortgage_rate/100/12, hr=Math.pow(1+v.house_growth/100,1/12)-1, rr=Math.pow(1+v.annual_rent_growth/100,1/12)-1, ir=Math.pow(1+v.renter_return/100,1/12)-1;
+      let house=v.house_price, balance=mortgage, rent=v.monthly_rent, renter=v.deposit, ownerInvest=0; const labels=['Now'], ownerVals=[v.deposit], renterVals=[renter];
+      for(let month=1;month<=v.years*12;month++){
+        house*=1+hr; rent*=1+rr; renter*=1+ir; ownerInvest*=1+ir;
+        const interest=balance*mr, principal=Math.max(0,Math.min(balance,payment-interest)); balance=Math.max(0,balance-principal);
+        const maintenance=house*(v.maintenance_pct/100)/12, ownerCost=(balance>0?payment:0)+maintenance;
+        if(ownerCost>rent) renter+=ownerCost-rent; else ownerInvest+=rent-ownerCost;
+        if(month%12===0){labels.push('Year '+(month/12));ownerVals.push(house-balance+ownerInvest);renterVals.push(renter);}
+      }
+      const owner=ownerVals[ownerVals.length-1], renterEnd=renterVals[renterVals.length-1], diff=owner-renterEnd;
+      return {
+        mortgage_payment:money(payment),owner_equity:money(owner),renter_portfolio:money(renterEnd),difference:(diff>=0?'+':'')+money(diff),
+        __chart:{type:'line',title:'Illustrative net-wealth paths',caption:'Both paths invest any monthly cost advantage; the renter starts by investing the deposit.',labels,series:[{label:'Buy scenario',values:ownerVals},{label:'Rent scenario',values:renterVals}]}
+      };
+    },
+    mortgage_affordability(v){
+      const lti=v.income*(v.buyer_type==='ftb'?4:3.5), capacity=Math.max(0,v.income/12*v.max_payment_pct/100-v.other_debt), r=v.rate/100/12, n=v.term*12, paymentBased=r===0?capacity*n:capacity*(1-Math.pow(1+r,-n))/r, mortgage=Math.max(0,Math.min(lti,paymentBased)), price=Math.min(mortgage+v.deposit,v.deposit>0?v.deposit/.10:mortgage);
+      return {
+        lti_mortgage:money(lti),payment_capacity:money(capacity),payment_based_mortgage:money(paymentBased),indicative_mortgage:money(mortgage),indicative_price:money(Math.max(0,price)),
+        __chart:{type:'bar',title:'Which limit is binding?',caption:'The lower mortgage amount between the LTI ceiling and your chosen cash-flow limit drives this illustration.',labels:['LTI ceiling','Payment-based','Indicative'],series:[{label:'Mortgage amount',values:[lti,paymentBased,mortgage]}]}
+      };
+    },
+    house_buying_costs(v){
+      const deposit=v.price*v.deposit_pct/100, stamp=stampDutyResidential(v.price), other=v.legal+v.survey+v.valuation+v.moving+v.other, total=deposit+stamp+other;
+      return {
+        deposit:money(deposit),stamp:money(stamp),other_costs:money(other),total_upfront:money(total),
+        __chart:{type:'bar',title:'Upfront cash budget',caption:'Deposit plus stamp duty and the other costs entered above.',labels:['Deposit','Stamp duty','Legal','Survey','Valuation','Moving','Other'],series:[{label:'Estimated cost',values:[deposit,stamp,v.legal,v.survey,v.valuation,v.moving,v.other]}]}
+      };
+    },
+    solar_payback(v){
+      const grant=Math.min(1800,Math.min(v.kwp,2)*700+Math.max(0,Math.min(v.kwp-2,2))*200), net=Math.max(0,v.system_cost-grant), generation=v.kwp*v.generation_per_kwp, self=generation*v.self_consumption/100, exported=generation-self, annual=self*v.import_rate+exported*v.export_rate, payback=annual>0?net/annual:Infinity;
+      const labels=['Install'],values=[-net];for(let y=1;y<=20;y++){labels.push('Year '+y);values.push(-net+annual*y);}
+      return {
+        grant:money(grant),net_cost:money(net),annual_generation:num(generation)+' kWh',annual_value:money(annual),payback:Number.isFinite(payback)?number.format(payback)+' years':'Not reached',
+        __chart:{type:'line',title:'Simple cumulative solar payback',caption:'Starts with the net system cost and adds the same annual saving/export value each year.',labels,series:[{label:'Cumulative cash position',values}]}
+      };
+    },
+    ber_energy(v){
+      const current=v.area*v.current_kwh_m2, target=v.area*v.target_kwh_m2, currentCost=current*v.energy_price, targetCost=target*v.energy_price;
+      return {
+        current_use:num(current)+' kWh',target_use:num(target)+' kWh',current_cost:money(currentCost),target_cost:money(targetCost),saving:money(currentCost-targetCost),
+        __chart:{type:'bar',title:'Current versus target energy-cost illustration',caption:'Uses the same blended energy-price assumption for both scenarios.',labels:['Current','Target'],series:[{label:'Annual energy cost',values:[currentCost,targetCost]}]}
+      };
     }
   };
 
@@ -141,9 +338,11 @@
       try{
         const results=fn(values);
         Object.entries(results).forEach(([k,v])=>{
+          if(k.startsWith('__')) return;
           const el=root.querySelector('[data-result="' + k + '"]');
           if(el) el.textContent=v;
         });
+        renderToolChart(root,results.__chart);
         if(window.gtag) window.gtag('event','tool_calculate',{tool_name:root.dataset.toolName});
       }catch(e){ error.textContent='This combination could not be calculated. Check the values and try again.'; }
     };

@@ -491,3 +491,527 @@ tools:
 
       Many appliances cycle on and off rather than drawing their rated wattage continuously. Smart plugs or energy monitors can give a better real-world input for fridges, heat pumps and other variable-load devices.
     sources: []
+
+
+  - slug: take-home-pay-calculator
+    title: Take-Home Pay Calculator Ireland 2026
+    category: Pay & Tax
+    formula: take_home_2026
+    summary: Estimate 2026 PAYE, USC, Class A PRSI and monthly take-home pay from a gross salary.
+    meta_description: Take-home pay calculator Ireland 2026. Estimate PAYE, USC, Class A PRSI, pension deductions and monthly net salary using current 2026 rules.
+    updated: 2026-09-21
+    fields:
+      - {id: salary, label: Annual gross salary, type: number, prefix: "€", default: 60000, min: 0, step: 500}
+      - {id: pension_pct, label: Employee pension contribution, type: number, suffix: "%", default: 0, min: 0, max: 40, step: 0.5}
+      - {id: band, label: Your annual 20% tax band, type: number, prefix: "€", default: 44000, min: 0, step: 500}
+      - {id: other_credits, label: Extra annual tax credits, type: number, prefix: "€", default: 0, min: 0, step: 50}
+    results:
+      - {id: annual_net, label: Estimated annual take-home}
+      - {id: monthly_net, label: Estimated monthly take-home}
+      - {id: paye, label: PAYE Income Tax}
+      - {id: usc, label: USC}
+      - {id: prsi, label: Employee PRSI}
+      - {id: pension, label: Employee pension contribution}
+    guide: |
+      ## A 2026 Irish PAYE estimate
+      The default €44,000 standard-rate band is the 2026 single-person band. The calculator automatically includes a €2,000 Single Person Tax Credit and up to €2,000 Employee Tax Credit, then adds any extra tax credits you enter. If Revenue has given you a different rate band or credits on your Tax Credit Certificate, enter those figures instead.
+
+      Employee pension contributions are treated as reducing Income Tax in this illustration, but not USC or PRSI. Pension tax relief limits are not enforced here; use the separate pension tax relief tool to check the age-related limit.
+
+      ## PRSI changes during 2026
+      Class A employee PRSI is 4.20% up to 30 September 2026 and 4.35% from 1 October 2026 for earnings above the contribution threshold. This annual estimate blends those periods and applies the weekly PRSI credit where relevant. Payroll can differ because real deductions are calculated by pay period and depend on your exact circumstances.
+    sources:
+      - {title: Revenue — 2026 tax rates, bands and credits, url: "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx"}
+      - {title: Revenue — 2026 USC rates and thresholds, url: "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx"}
+      - {title: Department of Social Protection — PRSI Class A rates, url: "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/"}
+
+  - slug: income-tax-calculator
+    title: Income Tax Calculator Ireland 2026
+    category: Pay & Tax
+    formula: income_tax_2026
+    summary: Calculate 2026 Income Tax before and after credits, with an editable standard-rate band.
+    meta_description: Income Tax calculator Ireland 2026. Estimate tax at 20% and 40%, pension tax relief and tax credits using current Revenue bands.
+    updated: 2026-09-21
+    fields:
+      - {id: income, label: Annual taxable earnings before pension, type: number, prefix: "€", default: 60000, min: 0, step: 500}
+      - {id: pension, label: Pension contribution eligible for Income Tax relief, type: number, prefix: "€", default: 0, min: 0, step: 100}
+      - {id: band, label: Annual 20% tax band, type: number, prefix: "€", default: 44000, min: 0, step: 500}
+      - {id: credits, label: Annual tax credits, type: number, prefix: "€", default: 4000, min: 0, step: 50}
+    results:
+      - {id: taxable, label: Income used for this tax estimate}
+      - {id: tax20, label: Tax charged at 20%}
+      - {id: tax40, label: Tax charged at 40%}
+      - {id: gross_tax, label: Income Tax before credits}
+      - {id: final_tax, label: Income Tax after credits}
+    guide: |
+      ## Income Tax is separate from USC and PRSI
+      Irish PAYE Income Tax uses a standard-rate band and tax credits. For a single person without qualifying children, the 2026 standard-rate band is €44,000. Income inside the band is taxed at 20% and the balance is taxed at 40%, before credits.
+
+      The default €4,000 credits represent the 2026 Single Person Tax Credit plus the maximum Employee Tax Credit. Change the figure to match your own Revenue Tax Credit Certificate. This page calculates Income Tax only; use the take-home-pay calculator for PAYE, USC and PRSI together.
+    sources:
+      - {title: Revenue — 2026 tax rates, bands and credits, url: "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx"}
+
+  - slug: usc-calculator
+    title: USC Calculator Ireland 2026
+    category: Pay & Tax
+    formula: usc_2026
+    summary: Estimate Universal Social Charge using the 2026 standard USC bands.
+    meta_description: USC calculator Ireland 2026. Apply the €13,000 exemption and current 0.5%, 2%, 3% and 8% standard USC bands.
+    updated: 2026-09-21
+    fields:
+      - {id: income, label: Annual income subject to USC, type: number, prefix: "€", default: 50000, min: 0, step: 500}
+    results:
+      - {id: usc, label: Estimated annual USC}
+      - {id: effective, label: Effective USC rate}
+      - {id: monthly, label: Average monthly USC}
+    guide: |
+      ## 2026 standard USC bands
+      If annual income subject to USC is €13,000 or less, the standard USC exemption applies. Above that limit, USC is charged on the full relevant income: 0.5% on the first €12,012, 2% on the next €16,688, 3% on the next €41,344 and 8% on the balance.
+
+      This tool uses the standard bands. Reduced rates and special categories are not modelled.
+    sources:
+      - {title: Revenue — Standard USC rates and thresholds, url: "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx"}
+      - {title: Revenue — USC exemptions, url: "https://www.revenue.ie/en/jobs-and-pensions/usc/exempt-payments-income.aspx"}
+
+  - slug: prsi-calculator
+    title: PRSI Calculator Ireland 2026
+    category: Pay & Tax
+    formula: prsi_2026
+    summary: Estimate Class A employee PRSI across the 2026 rate change on 1 October.
+    meta_description: PRSI calculator Ireland 2026 for Class A employees. Estimate weekly and annual PRSI across the 4.20% to 4.35% rate change.
+    updated: 2026-09-21
+    fields:
+      - {id: salary, label: Annual reckonable earnings, type: number, prefix: "€", default: 50000, min: 0, step: 500}
+    results:
+      - {id: weekly_before, label: Weekly PRSI before 1 October}
+      - {id: weekly_after, label: Weekly PRSI from 1 October}
+      - {id: annual, label: Approximate 2026 employee PRSI}
+      - {id: effective, label: Approximate annual effective rate}
+    guide: |
+      ## Class A employee PRSI in 2026
+      For a standard Class A employee, earnings up to €352 per week are not charged employee PRSI. Above that threshold the employee rate is 4.20% up to 30 September 2026 and 4.35% from 1 October 2026. A tapered weekly PRSI credit applies between €352.01 and €424.
+
+      The annual figure assumes an even weekly salary and approximates 39 weeks at the earlier rate and 13 weeks at the later rate. Actual payroll is calculated pay period by pay period.
+    sources:
+      - {title: Department of Social Protection — PRSI Class A rates, url: "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/"}
+
+  - slug: inheritance-tax-calculator
+    title: Inheritance & Gift Tax Calculator Ireland
+    category: Pay & Tax
+    formula: cat
+    summary: Estimate Capital Acquisitions Tax using current Group A, B and C thresholds and the 33% CAT rate.
+    meta_description: Inheritance tax and gift tax calculator Ireland. Estimate CAT using current €400,000, €40,000 and €20,000 group thresholds and the 33% rate.
+    updated: 2026-09-21
+    fields:
+      - {id: benefit, label: Current gift or inheritance value, type: number, prefix: "€", default: 500000, min: 0, step: 1000}
+      - {id: prior, label: Prior taxable benefits in the same group since 5 December 1991, type: number, prefix: "€", default: 0, min: 0, step: 1000}
+      - id: group
+        label: CAT relationship group
+        type: select
+        default: A
+        options:
+          - {value: A, label: Group A — €400,000 threshold}
+          - {value: B, label: Group B — €40,000 threshold}
+          - {value: C, label: Group C — €20,000 threshold}
+      - id: benefit_type
+        label: Benefit type
+        type: select
+        default: inheritance
+        options:
+          - {value: inheritance, label: Inheritance}
+          - {value: gift, label: Gift — apply €3,000 small gift exemption}
+    results:
+      - {id: threshold, label: Group threshold}
+      - {id: current_taxable_value, label: Current benefit after small-gift exemption}
+      - {id: threshold_remaining, label: Threshold remaining before current benefit}
+      - {id: cat, label: Estimated CAT on current benefit}
+    guide: |
+      ## CAT depends on your relationship and earlier benefits
+      The current CAT thresholds are €400,000 for Group A, €40,000 for Group B and €20,000 for Group C. Benefits within the same group are aggregated with relevant prior gifts and inheritances received since 5 December 1991. CAT is currently charged at 33% on the excess over the threshold.
+
+      Gifts can also use the €3,000 Small Gift Exemption from each disponer in a calendar year. This calculator applies one €3,000 exemption when “Gift” is selected. It does not model spouse/civil-partner exemptions, dwelling-house relief, agricultural relief, business relief or valuation complexities.
+    sources:
+      - {title: Revenue — CAT thresholds, url: "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx"}
+      - {title: Revenue — CAT rates, url: "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-rates.aspx"}
+      - {title: Revenue — Small Gift Exemption, url: "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-exemptions/small-gift-exemption/index.aspx"}
+
+  - slug: rent-tax-credit-calculator
+    title: Rent Tax Credit Calculator Ireland 2026
+    category: Pay & Tax
+    formula: rent_credit
+    summary: Estimate the 2026 Rent Tax Credit from rent paid and available Income Tax liability.
+    meta_description: Rent Tax Credit calculator Ireland 2026. Estimate the credit at 20% of qualifying rent up to €1,000 or €2,000 for a jointly assessed couple.
+    updated: 2026-09-21
+    fields:
+      - {id: rent, label: Qualifying rent paid in the year, type: number, prefix: "€", default: 12000, min: 0, step: 100}
+      - id: joint
+        label: Claim type
+        type: select
+        default: no
+        options:
+          - {value: no, label: Individual / not jointly assessed}
+          - {value: yes, label: Jointly assessed married couple or civil partners}
+      - {id: income_tax_liability, label: Income Tax liability available to offset, type: number, prefix: "€", default: 5000, min: 0, step: 100}
+    results:
+      - {id: rent_based, label: 20% of qualifying rent}
+      - {id: statutory_cap, label: Maximum 2026 credit}
+      - {id: credit, label: Estimated usable Rent Tax Credit}
+    guide: |
+      ## The credit is limited by rent, the statutory cap and your tax liability
+      Relief is granted at 20%. For 2024 to 2028 the maximum is €1,000 for an individual and €2,000 for a jointly assessed couple. You must also have enough Income Tax liability to absorb the credit; it does not reduce USC or PRSI.
+
+      This calculator estimates the amount only. Revenue's qualifying conditions still need to be met.
+    sources:
+      - {title: Revenue — How much Rent Tax Credit can you claim?, url: "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/how-much-claim.aspx"}
+
+  - slug: help-to-buy-calculator
+    title: Help to Buy Calculator Ireland
+    category: Home Buying
+    formula: help_to_buy
+    summary: Estimate the maximum Help to Buy refund for a qualifying new home or self-build.
+    meta_description: Help to Buy calculator Ireland. Estimate relief up to €30,000, 10% of property value or tax paid, subject to the €500,000 property cap and 70% mortgage rule.
+    updated: 2026-09-21
+    fields:
+      - {id: property_value, label: New-home purchase price or approved self-build valuation, type: number, prefix: "€", default: 400000, min: 0, step: 1000}
+      - {id: mortgage, label: Qualifying mortgage amount, type: number, prefix: "€", default: 300000, min: 0, step: 1000}
+      - {id: tax_paid, label: Income Tax + DIRT paid in the previous four tax years, type: number, prefix: "€", default: 30000, min: 0, step: 500}
+    results:
+      - {id: ltv, label: Mortgage loan-to-value}
+      - {id: value_cap, label: 10% of property value}
+      - {id: claim, label: Indicative maximum HTB refund}
+      - {id: eligibility, label: Basic value/LTV check}
+    guide: |
+      ## Enhanced Help to Buy runs to the end of 2029
+      For a qualifying application, the enhanced refund is the lowest of €30,000, 10% of the qualifying property value, or the Income Tax and DIRT paid in the four tax years before the application. A qualifying property must generally be a new home or self-build valued at €500,000 or less, and the qualifying mortgage must normally be at least 70% of the purchase value or approved valuation.
+
+      This tool checks those numerical conditions only. First-time-buyer status, occupancy, lender, tax-compliance and property requirements still apply.
+    sources:
+      - {title: Revenue — How much can you claim under Help to Buy?, url: "https://www.revenue.ie/en/property/help-to-buy-incentive/how-much-can-you-claim.aspx"}
+      - {title: Revenue — What is a qualifying Help to Buy property?, url: "https://www.revenue.ie/en/property/help-to-buy-incentive/what-type-of-property-qualifies.aspx"}
+
+  - slug: first-home-scheme-calculator
+    title: First Home Scheme Calculator Ireland
+    category: Home Buying
+    formula: first_home_scheme
+    summary: Estimate the funding gap a First Home Scheme equity share could potentially bridge.
+    meta_description: First Home Scheme calculator Ireland. Estimate the funding gap, equity share and current 20% or 30% maximum FHS contribution.
+    updated: 2026-09-21
+    fields:
+      - {id: property_value, label: Purchase price or self-build cost, type: number, prefix: "€", default: 400000, min: 0, step: 1000}
+      - {id: mortgage, label: Mortgage available, type: number, prefix: "€", default: 300000, min: 0, step: 1000}
+      - {id: deposit, label: Cash deposit / own funds, type: number, prefix: "€", default: 40000, min: 0, step: 1000}
+      - id: htb
+        label: Using Help to Buy?
+        type: select
+        default: yes
+        options:
+          - {value: yes, label: Yes — maximum FHS share is 20%}
+          - {value: no, label: No — maximum FHS share is 30%}
+      - {id: htb_amount, label: Help to Buy amount included in your funds, type: number, prefix: "€", default: 30000, min: 0, step: 500}
+    results:
+      - {id: gap, label: Funding gap before FHS}
+      - {id: share, label: Equity share needed}
+      - {id: max_fhs, label: Current maximum FHS amount by percentage}
+      - {id: check, label: Basic funding-range check}
+    guide: |
+      ## FHS is shared equity, not an ordinary loan
+      The First Home Scheme can fund up to 30% of the purchase price or eligible self-build cost, reduced to 20% when Help to Buy is used. The minimum equity share is 2.5% of the property price/build cost or €10,000, whichever is higher.
+
+      The Scheme also has buyer, lender, property and local-authority price-ceiling conditions. This calculator only estimates the arithmetic funding gap; it does not determine formal eligibility.
+    sources:
+      - {title: First Home Scheme — Eligibility, url: "https://www.firsthomescheme.ie/about-the-scheme/eligibility/"}
+      - {title: First Home Scheme — How the equity share works, url: "https://www.firsthomescheme.ie/about-the-scheme/how-the-equity-share-works/"}
+
+  - slug: dirt-calculator
+    title: DIRT Calculator Ireland
+    category: Pay & Tax
+    formula: dirt
+    summary: Calculate Deposit Interest Retention Tax and net deposit interest at the current 33% rate.
+    meta_description: DIRT calculator Ireland. Estimate 33% Deposit Interest Retention Tax and the net interest remaining on Irish deposit interest.
+    updated: 2026-09-21
+    fields:
+      - {id: interest, label: Gross deposit interest, type: number, prefix: "€", default: 1000, min: 0, step: 10}
+    results:
+      - {id: dirt, label: DIRT at 33%}
+      - {id: net, label: Net interest after DIRT}
+      - {id: retained, label: Percentage of gross interest retained}
+    guide: |
+      ## Current DIRT rate
+      Revenue states that DIRT is deducted at 33% from deposit interest paid to Irish-resident individuals. Certain people and account types can qualify for exemptions or refunds, which this simple calculator does not model.
+    sources:
+      - {title: Revenue — Current DIRT rate, url: "https://www.revenue.ie/en/additional-incomes/dirt/what-dirt-rate-is-applicable.aspx"}
+
+  - slug: contractor-vs-salary-calculator
+    title: Contractor Day Rate vs Salary Calculator Ireland 2026
+    category: Pay & Tax
+    formula: contractor_vs_salary
+    summary: Compare an indicative single-person PAYE salary with self-employed contractor profit and take-home.
+    meta_description: Contractor vs salary calculator Ireland 2026. Compare employee salary with contractor day-rate revenue, business costs and estimated single-person taxes.
+    updated: 2026-09-21
+    fields:
+      - {id: salary, label: Employee gross salary, type: number, prefix: "€", default: 70000, min: 0, step: 1000}
+      - {id: day_rate, label: Contractor day rate, type: number, prefix: "€", suffix: "/day", default: 450, min: 0, step: 10}
+      - {id: billable_days, label: Billable days per year, type: number, default: 220, min: 0, max: 366, step: 1}
+      - {id: contractor_costs, label: Allowable contractor business costs, type: number, prefix: "€", default: 5000, min: 0, step: 500}
+      - {id: contractor_pension, label: Contractor pension contribution used for Income Tax illustration, type: number, prefix: "€", default: 0, min: 0, step: 500}
+    results:
+      - {id: employee_net, label: Estimated employee take-home}
+      - {id: contractor_revenue, label: Contractor gross revenue}
+      - {id: contractor_profit, label: Contractor profit before pension}
+      - {id: contractor_net, label: Indicative contractor take-home}
+      - {id: net_difference, label: Difference in estimated annual take-home}
+    guide: |
+      ## A comparison tool, not a contractor-status test
+      The employee side uses the 2026 single-person PAYE band and standard personal/employee credits. The contractor side assumes self-employed trading income, the standard USC bands, personal plus Earned Income Tax Credits and the 2026 blended Class S PRSI rate published by the Department of Social Protection.
+
+      This does not decide whether a real engagement is employment or self-employment, and it does not value paid leave, employer pension contributions, sick pay, insurance, administration time, VAT, limited-company structures or employment rights. Use it to test the size of the gap, then price those differences separately.
+    sources:
+      - {title: Revenue — 2026 tax rates, bands and credits, url: "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx"}
+      - {title: Revenue — 2026 USC rates, url: "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx"}
+      - {title: Department of Social Protection — PRSI Class S rates, url: "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/"}
+
+  - slug: investment-fee-calculator
+    title: Investment Fee Impact Calculator
+    category: Retirement & Investing
+    formula: investment_fees
+    summary: See how annual investment fees can compound into a large difference over long periods.
+    meta_description: Investment fee calculator. Compare two annual fee levels and see their long-term effect on a lump sum plus monthly investments.
+    updated: 2026-09-21
+    fields:
+      - {id: initial, label: Starting investment, type: number, prefix: "€", default: 25000, min: 0, step: 500}
+      - {id: monthly, label: Monthly investment, type: number, prefix: "€", default: 500, min: 0, step: 10}
+      - {id: gross_return, label: Assumed annual return before fees, type: number, suffix: "%", default: 7, min: -20, max: 30, step: 0.1}
+      - {id: fee_low, label: Lower annual fee, type: number, suffix: "%", default: 0.25, min: 0, max: 10, step: 0.05}
+      - {id: fee_high, label: Higher annual fee, type: number, suffix: "%", default: 1.5, min: 0, max: 10, step: 0.05}
+      - {id: years, label: Years invested, type: number, default: 25, min: 1, max: 70, step: 1}
+    results:
+      - {id: low_balance, label: Projected balance with lower fee}
+      - {id: high_balance, label: Projected balance with higher fee}
+      - {id: fee_gap, label: Difference attributable to fee drag and compounding}
+    guide: |
+      ## Fees compound too
+      This illustration subtracts each annual fee from the assumed annual return and compounds monthly. It does not model Irish investment taxation, transaction costs or uneven market returns.
+
+      The purpose is to isolate one question: if two investments earned the same return before fees, how much could a persistent fee difference matter over time?
+    sources: []
+
+  - slug: fire-number-calculator
+    title: FIRE Number Calculator Ireland
+    category: Retirement & Investing
+    formula: fire_number
+    summary: Turn annual spending and a chosen withdrawal rate into an illustrative financial-independence target.
+    meta_description: FIRE number calculator Ireland. Estimate an investment target from annual spending, withdrawal rate, current portfolio and future contributions.
+    updated: 2026-09-21
+    fields:
+      - {id: annual_spend, label: Annual spending to fund, type: number, prefix: "€", default: 36000, min: 0, step: 500}
+      - {id: withdrawal_rate, label: Assumed withdrawal rate, type: number, suffix: "%", default: 4, min: 1, max: 10, step: 0.1}
+      - {id: current, label: Current invested assets, type: number, prefix: "€", default: 100000, min: 0, step: 1000}
+      - {id: annual_contribution, label: Annual new investment, type: number, prefix: "€", default: 18000, min: 0, step: 500}
+      - {id: return_rate, label: Assumed annual investment return, type: number, suffix: "%", default: 6, min: -20, max: 30, step: 0.1}
+    results:
+      - {id: target, label: Illustrative FIRE target}
+      - {id: gap, label: Gap from current portfolio}
+      - {id: years, label: Years to target at entered assumptions}
+    guide: |
+      ## A withdrawal-rate target is a planning shortcut
+      Dividing desired annual portfolio withdrawals by a chosen withdrawal rate creates a simple target. A 4% assumption, for example, corresponds to 25 times annual spending.
+
+      It is not a guarantee that a portfolio will last for life. Tax, inflation, market sequence, fees, retirement duration, State Pension and changing spending all matter. The graph is an illustration using the constant return you enter.
+    sources: []
+
+  - slug: retirement-income-calculator
+    title: Retirement Income Calculator Ireland
+    category: Retirement & Investing
+    formula: retirement_income
+    summary: Combine an illustrative pension-pot withdrawal with State Pension and other retirement income.
+    meta_description: Retirement income calculator Ireland. Estimate annual and monthly gross retirement income from a pension pot, withdrawal rate, State Pension and other income.
+    updated: 2026-09-21
+    fields:
+      - {id: pot, label: Pension / investment pot at retirement, type: number, prefix: "€", default: 500000, min: 0, step: 5000}
+      - {id: withdrawal_rate, label: Illustrative annual withdrawal rate, type: number, suffix: "%", default: 4, min: 0, max: 15, step: 0.1}
+      - {id: state_pension, label: Annual State Pension or social-welfare income to include, type: number, prefix: "€", default: 0, min: 0, step: 100}
+      - {id: other_income, label: Other annual retirement income, type: number, prefix: "€", default: 0, min: 0, step: 100}
+    results:
+      - {id: portfolio_income, label: Illustrative income from pot}
+      - {id: annual_income, label: Total annual gross retirement income}
+      - {id: monthly_income, label: Average monthly gross retirement income}
+    guide: |
+      ## Build retirement income from several sources
+      This calculator combines a simple percentage withdrawal from your entered pot with the State Pension amount and other income you choose to include. It intentionally leaves the State Pension field editable because entitlement and rates depend on the person and can change.
+
+      The result is gross income before tax. A fixed withdrawal percentage is not a guarantee of sustainability.
+    sources: []
+
+  - slug: pension-projection-calculator
+    title: Pension Projection Calculator Ireland
+    category: Retirement & Investing
+    formula: pension_projection
+    summary: Project a pension pot from current savings, employee and employer contributions, return and annual fees.
+    meta_description: Pension projection calculator Ireland. Project a future pension pot from age, retirement age, current fund, monthly contributions, return and fees.
+    updated: 2026-09-21
+    fields:
+      - {id: age, label: Current age, type: number, default: 35, min: 16, max: 90, step: 1}
+      - {id: retirement_age, label: Target retirement age, type: number, default: 65, min: 18, max: 90, step: 1}
+      - {id: current, label: Current pension value, type: number, prefix: "€", default: 50000, min: 0, step: 1000}
+      - {id: monthly_employee, label: Your monthly contribution, type: number, prefix: "€", default: 400, min: 0, step: 25}
+      - {id: monthly_employer, label: Employer monthly contribution, type: number, prefix: "€", default: 300, min: 0, step: 25}
+      - {id: return_rate, label: Assumed annual return before fee, type: number, suffix: "%", default: 6, min: -20, max: 30, step: 0.1}
+      - {id: annual_fee, label: Annual fund fee, type: number, suffix: "%", default: 0.75, min: 0, max: 10, step: 0.05}
+    results:
+      - {id: years, label: Years to retirement}
+      - {id: projected, label: Projected pension pot}
+      - {id: contributed, label: Total contributions including current pot}
+      - {id: growth, label: Estimated net investment growth}
+    guide: |
+      ## Projection, not forecast
+      Contributions are added monthly and the assumed return is reduced by the annual fee before compounding. Real pension returns are uneven, fees can have several components and contribution levels can change.
+
+      Use the chart to see whether the long-term result is being driven mainly by time, contributions or the return assumption. Check pension tax-relief limits separately.
+    sources: []
+
+  - slug: rent-vs-buy-calculator
+    title: Rent vs Buy Calculator Ireland
+    category: Home Buying
+    formula: rent_vs_buy
+    summary: Compare an illustrative homeowner-equity path with a renter who invests the deposit and any monthly cost advantage.
+    meta_description: Rent vs buy calculator Ireland. Compare mortgage equity with renting and investing using editable rent, house price, rate, deposit, growth and maintenance assumptions.
+    updated: 2026-09-21
+    fields:
+      - {id: monthly_rent, label: Current monthly rent, type: number, prefix: "€", default: 1800, min: 0, step: 50}
+      - {id: annual_rent_growth, label: Annual rent growth assumption, type: number, suffix: "%", default: 2.5, min: -10, max: 20, step: 0.1}
+      - {id: house_price, label: Home purchase price, type: number, prefix: "€", default: 400000, min: 0, step: 1000}
+      - {id: deposit, label: Deposit, type: number, prefix: "€", default: 40000, min: 0, step: 1000}
+      - {id: mortgage_rate, label: Mortgage interest rate, type: number, suffix: "%", default: 3.5, min: 0, max: 20, step: 0.1}
+      - {id: mortgage_years, label: Mortgage term, type: number, suffix: years, default: 30, min: 1, max: 50, step: 1}
+      - {id: house_growth, label: Annual house-price growth assumption, type: number, suffix: "%", default: 2.5, min: -20, max: 20, step: 0.1}
+      - {id: maintenance_pct, label: Annual maintenance / ownership costs as % of home value, type: number, suffix: "%", default: 1, min: 0, max: 10, step: 0.1}
+      - {id: renter_return, label: Renter investment return assumption, type: number, suffix: "%", default: 5, min: -20, max: 30, step: 0.1}
+      - {id: years, label: Comparison period, type: number, suffix: years, default: 15, min: 1, max: 40, step: 1}
+    results:
+      - {id: mortgage_payment, label: Starting monthly mortgage repayment}
+      - {id: owner_equity, label: Homeowner equity at end}
+      - {id: renter_portfolio, label: Renter investment portfolio at end}
+      - {id: difference, label: End-value difference}
+    guide: |
+      ## The assumptions matter more than the headline
+      This model gives the renter an initial investment equal to the buyer's deposit and then invests any month where renting costs less than mortgage plus estimated maintenance. If owning is cheaper in a month, the model does not assume the renter borrows to fund the difference. The homeowner result is estimated property value minus the remaining mortgage.
+
+      Stamp duty, legal costs, tax on investments, selling costs, mortgage rate changes, insurance and many real-life differences are not fully modelled. Change the assumptions aggressively rather than treating one scenario as a verdict.
+    sources: []
+
+  - slug: mortgage-affordability-calculator
+    title: Mortgage Affordability Calculator Ireland
+    category: Home Buying
+    formula: mortgage_affordability
+    summary: Compare an income multiple with a user-set monthly affordability limit and deposit constraint.
+    meta_description: Mortgage affordability calculator Ireland. Compare Central Bank loan-to-income limits with monthly repayment affordability and deposit constraints.
+    updated: 2026-09-21
+    fields:
+      - {id: income, label: Gross household annual income, type: number, prefix: "€", default: 80000, min: 0, step: 1000}
+      - id: buyer_type
+        label: Buyer type
+        type: select
+        default: ftb
+        options:
+          - {value: ftb, label: First-time buyer — 4× LTI limit}
+          - {value: subsequent, label: Second/subsequent buyer — 3.5× LTI limit}
+      - {id: deposit, label: Deposit available, type: number, prefix: "€", default: 40000, min: 0, step: 1000}
+      - {id: rate, label: Mortgage interest rate for affordability test, type: number, suffix: "%", default: 4.5, min: 0, max: 20, step: 0.1}
+      - {id: term, label: Mortgage term, type: number, suffix: years, default: 30, min: 1, max: 50, step: 1}
+      - {id: max_payment_pct, label: Maximum mortgage payment as % of gross monthly income, type: number, suffix: "%", default: 30, min: 5, max: 70, step: 1}
+      - {id: other_debt, label: Other monthly debt payments to subtract, type: number, prefix: "€", default: 0, min: 0, step: 50}
+    results:
+      - {id: lti_mortgage, label: Central Bank LTI ceiling before exceptions}
+      - {id: payment_capacity, label: User-set monthly mortgage capacity}
+      - {id: payment_based_mortgage, label: Mortgage supported by that payment}
+      - {id: indicative_mortgage, label: Lower of LTI and payment-based amount}
+      - {id: indicative_price, label: Indicative price including deposit}
+    guide: |
+      ## Two different constraints
+      The Central Bank mortgage measures limit first-time buyers to 4 times gross income and second/subsequent buyers to 3.5 times, subject to lender exceptions. Separately, a household has its own cash-flow limit. This tool lets you choose a maximum mortgage-payment share of gross monthly income and subtract other debt payments.
+
+      The percentage you enter is your scenario assumption, not a Central Bank affordability rule and not a lender approval test.
+    sources:
+      - {title: Central Bank of Ireland — Mortgage Measures, url: "https://www.centralbank.ie/financial-system/financial-stability/macro-prudential-policy/mortgage-measures"}
+
+  - slug: house-buying-costs-calculator
+    title: House Buying Costs Calculator Ireland
+    category: Home Buying
+    formula: house_buying_costs
+    summary: Add the deposit, residential stamp duty and editable professional/moving costs into one upfront budget.
+    meta_description: House buying costs calculator Ireland. Estimate deposit, residential stamp duty, legal, survey, valuation, moving and other upfront purchase costs.
+    updated: 2026-09-21
+    fields:
+      - {id: price, label: Property price, type: number, prefix: "€", default: 400000, min: 0, step: 1000}
+      - {id: deposit_pct, label: Deposit percentage, type: number, suffix: "%", default: 10, min: 0, max: 100, step: 1}
+      - {id: legal, label: Legal / conveyancing budget, type: number, prefix: "€", default: 2500, min: 0, step: 100}
+      - {id: survey, label: Survey / engineer budget, type: number, prefix: "€", default: 600, min: 0, step: 50}
+      - {id: valuation, label: Valuation budget, type: number, prefix: "€", default: 200, min: 0, step: 50}
+      - {id: moving, label: Moving / setup budget, type: number, prefix: "€", default: 1500, min: 0, step: 100}
+      - {id: other, label: Other upfront costs, type: number, prefix: "€", default: 1000, min: 0, step: 100}
+    results:
+      - {id: deposit, label: Deposit}
+      - {id: stamp, label: Residential stamp duty}
+      - {id: other_costs, label: Other entered costs}
+      - {id: total_upfront, label: Total upfront cash budget}
+    guide: |
+      ## The deposit is only part of the cash needed
+      This tool calculates standard residential stamp duty using Revenue's current 1%, 2% and 6% progressive bands and adds the cost estimates you enter. Professional fees vary, so the legal, survey, valuation, moving and other figures are deliberately editable rather than presented as official averages.
+
+      Mortgage protection, home insurance, furnishing, repairs and scheme-specific costs may need a separate budget.
+    sources:
+      - {title: Revenue — Residential Stamp Duty rates, url: "https://www.revenue.ie/en/property/stamp-duty/property/stamp-duty-property/rates.aspx"}
+
+  - slug: solar-payback-calculator
+    title: Solar PV Payback Calculator Ireland
+    category: Home Energy
+    formula: solar_payback
+    summary: Estimate annual solar value, SEAI grant, simple payback and cumulative savings.
+    meta_description: Solar PV payback calculator Ireland. Estimate SEAI solar grant, annual electricity savings, export income and simple payback from system size and energy prices.
+    updated: 2026-09-21
+    fields:
+      - {id: system_cost, label: Quoted installed system cost before grant, type: number, prefix: "€", default: 9000, min: 0, step: 100}
+      - {id: kwp, label: Solar PV system size, type: number, suffix: "kWp", default: 4, min: 0, max: 30, step: 0.1}
+      - {id: generation_per_kwp, label: Assumed annual generation per kWp, type: number, suffix: "kWh", default: 850, min: 0, max: 2000, step: 10}
+      - {id: self_consumption, label: Share of generation used in the home, type: number, suffix: "%", default: 60, min: 0, max: 100, step: 1}
+      - {id: import_rate, label: Avoided electricity import price, type: number, prefix: "€", suffix: "/kWh", default: 0.30, min: 0, step: 0.01}
+      - {id: export_rate, label: Export payment assumption, type: number, prefix: "€", suffix: "/kWh", default: 0.15, min: 0, step: 0.01}
+    results:
+      - {id: grant, label: Indicative SEAI solar PV grant}
+      - {id: net_cost, label: Net system cost after indicative grant}
+      - {id: annual_generation, label: Assumed annual generation}
+      - {id: annual_value, label: Estimated annual bill saving + export value}
+      - {id: payback, label: Simple payback}
+    guide: |
+      ## Current 2026 SEAI grant
+      SEAI currently lists €700 per kWp up to 2 kWp and €200 for each additional kWp up to 4 kWp, with a maximum domestic Solar PV grant of €1,800 in 2026. Eligibility conditions apply, so the grant result is an indicative amount rather than a promise of funding.
+
+      Generation, self-consumption and export value vary materially by roof, orientation, shading, household use, tariff and system design. The graph holds your assumptions constant and does not include panel degradation, inverter replacement, financing or future electricity-price changes.
+    sources:
+      - {title: SEAI — Solar Electricity PV Grant, url: "https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant"}
+
+  - slug: ber-energy-cost-calculator
+    title: BER Energy Cost Calculator Ireland
+    category: Home Energy
+    formula: ber_energy
+    summary: Turn an energy-use figure into an indicative annual cost and compare it with a target efficiency level.
+    meta_description: BER energy cost calculator Ireland. Use your home's energy-use figure, floor area and energy price to compare current and target annual energy costs.
+    updated: 2026-09-21
+    fields:
+      - {id: area, label: Floor area, type: number, suffix: "m²", default: 120, min: 1, step: 1}
+      - {id: current_kwh_m2, label: Current annual energy-use assumption, type: number, suffix: "kWh/m²", default: 180, min: 0, step: 5}
+      - {id: target_kwh_m2, label: Target annual energy-use assumption, type: number, suffix: "kWh/m²", default: 90, min: 0, step: 5}
+      - {id: energy_price, label: Blended energy price assumption, type: number, prefix: "€", suffix: "/kWh", default: 0.18, min: 0, step: 0.01}
+    results:
+      - {id: current_use, label: Current annual energy use}
+      - {id: target_use, label: Target annual energy use}
+      - {id: current_cost, label: Indicative current annual energy cost}
+      - {id: target_cost, label: Indicative target annual energy cost}
+      - {id: saving, label: Indicative annual difference}
+    guide: |
+      ## BER is an energy-performance rating, not your utility bill
+      Ireland's BER scale changed to a simplified A-to-G scale from 24 May 2026. A BER is produced through the official assessment methodology and does not directly equal a household's actual metered energy consumption.
+
+      This calculator therefore does not guess a kWh figure from a letter grade. Enter an energy-use assumption or figure relevant to your assessment and compare it with a target. Actual bills also depend on fuel mix, standing charges, tariffs, occupancy and behaviour.
+    sources:
+      - {title: SEAI — Building Energy Rating information, url: "https://www.seai.ie/ber"}
