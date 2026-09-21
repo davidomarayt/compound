@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block head_title %}Free Calculators & Tools for Ireland | Compound{% endblock %}
+{% block meta %}<meta name="description" content="Free Irish calculators for mortgages, property tax, pensions, VAT, CGT, savings, loans, fuel, EV charging and everyday money decisions.">{% endblock %}
+{% block head %}
+<link rel="canonical" href="{{ site_url }}/tools/">
+<meta property="og:type" content="website"><meta property="og:title" content="Compound Tools — Free Calculators for Ireland"><meta property="og:description" content="Practical calculators built for everyday decisions in Ireland."><meta property="og:url" content="{{ site_url }}/tools/">
+<link rel="stylesheet" href="/static/tools.css?v=20260921"><script defer src="/static/tools.js?v=20260921"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Compound Tools","url":"{{ site_url }}/tools/","description":"Free calculators and planning tools for Ireland.","publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}}</script>
+{% endblock %}
+{% block content %}
+<section class="tools-hub">
+  <header class="tools-hero">
+    <p class="eyebrow">COMPOUND TOOLS</p>
+    <h1>Useful numbers, without the spreadsheet.</h1>
+    <p>Free calculators for money, property and everyday costs in Ireland. No account. No form submission. Your entries stay in your browser.</p>
+    <label class="tool-search"><span class="sr-only">Search tools</span><input type="search" placeholder="Search mortgage, VAT, savings, fuel…" data-tool-search></label>
+  </header>
+  <div class="tool-featured">
+    <a class="tool-card tool-card-featured" href="/compound-interest-calculator/" data-tool-card data-tool-text="compound interest savings investment calculator">
+      <span class="tool-category">Saving & Investing</span><h2>Compound Interest Calculator</h2><p>Model contributions, growth, inflation and fees with the flagship Compound calculator.</p><span>Open tool →</span>
+    </a>
+    <a class="tool-card tool-card-featured" href="/bmi-calculator/" data-tool-card data-tool-text="bmi health body mass index calculator">
+      <span class="tool-category">Health</span><h2>BMI Calculator</h2><p>Calculate adult BMI with metric or imperial units and put the number in context.</p><span>Open tool →</span>
+    </a>
+  </div>
+  {% for category, items in grouped_tools.items() %}
+  <section class="tool-group" data-tool-group>
+    <div class="tool-group-heading"><p class="eyebrow">{{ category|upper }}</p><h2>{{ category }}</h2></div>
+    <div class="tool-grid">
+      {% for tool in items %}
+      <a class="tool-card" href="{{ tool.url }}" data-tool-card data-tool-text="{{ tool.title|lower }} {{ tool.summary|lower }} {{ tool.category|lower }}">
+        <span class="tool-category">{{ tool.category }}</span><h3>{{ tool.title }}</h3><p>{{ tool.summary }}</p><span>Open tool →</span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+  <p class="tool-no-results" data-tool-no-results hidden>No matching tool yet. Try a broader search.</p>
+</section>
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block head_title %}{{ tool.title }} | Compound{% endblock %}
+{% block meta %}<meta name="description" content="{{ tool.meta_description }}">{% endblock %}
+{% block head %}
+<link rel="canonical" href="{{ site_url }}{{ tool.url }}">
+<meta property="og:type" content="website"><meta property="og:title" content="{{ tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/static/tools.css?v=20260921"><script defer src="/static/tools.js?v=20260921"></script>
+<script type="application/ld+json">{{ tool_jsonld|safe }}</script>
+{% endblock %}
+{% block content %}
+<article class="tool-page" data-calculator="{{ tool.formula }}" data-tool-name="{{ tool.slug }}">
+  <header class="tool-page-header">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/tools/">Tools</a></nav>
+    <p class="eyebrow">{{ tool.category|upper }}</p><h1>{{ tool.title }}</h1><p class="tool-standfirst">{{ tool.summary }}</p>
+    <p class="tool-updated">Updated 21 September 2026</p>
+  </header>
+  <section class="tool-workspace">
+    <form class="tool-form" data-tool-form novalidate>
+      <div><p class="eyebrow">YOUR NUMBERS</p><h2>Enter your details</h2><p>Results update when you calculate. Nothing you enter is submitted to Compound.</p></div>
+      <div class="tool-fields">
+      {% for field in tool.fields %}
+        <label class="tool-field" for="tool-{{ field.id }}">
+          <span>{{ field.label }}</span>
+          {% if field.type == "select" %}
+          <select id="tool-{{ field.id }}" name="{{ field.id }}" data-field="{{ field.id }}">
+            {% for option in field.options %}<option value="{{ option.value }}" {% if option.value|string == field.default|string %}selected{% endif %}>{{ option.label }}</option>{% endfor %}
+          </select>
+          {% else %}
+          <span class="tool-input-wrap">{% if field.prefix %}<span class="tool-affix">{{ field.prefix }}</span>{% endif %}<input id="tool-{{ field.id }}" name="{{ field.id }}" data-field="{{ field.id }}" type="number" inputmode="decimal" value="{{ field.default }}" {% if field.min is defined %}min="{{ field.min }}"{% endif %} {% if field.max is defined %}max="{{ field.max }}"{% endif %} step="{{ field.step or 'any' }}">{% if field.suffix %}<span class="tool-affix tool-affix-right">{{ field.suffix }}</span>{% endif %}</span>
+          {% endif %}
+        </label>
+      {% endfor %}
+      </div>
+      <p class="tool-error" data-tool-error role="status"></p>
+      <div class="tool-actions"><button class="button button-dark" type="submit">Calculate</button><button type="reset" class="button button-light">Reset</button></div>
+    </form>
+    <section class="tool-results" aria-live="polite">
+      <p class="eyebrow">YOUR ESTIMATE</p><h2>At a glance</h2>
+      <div class="tool-result-grid">
+        {% for result in tool.results %}<div class="tool-result"><span>{{ result.label }}</span><strong data-result="{{ result.id }}">—</strong></div>{% endfor %}
+      </div>
+      <p class="tool-result-note">Planning estimate only. Read the notes below before relying on the result.</p>
+    </section>
+  </section>
+  <section class="tool-explainer">
+    <div class="tool-explainer-main">{{ tool.guide_html|safe }}</div>
+    <aside class="tool-source-box">
+      <p class="eyebrow">CHECK THE BASIS</p><h2>Method & sources</h2>
+      <p>This calculator runs locally in your browser. Compound does not receive the values you enter.</p>
+      {% if tool.sources %}<ul>{% for source in tool.sources %}<li><a href="{{ source.url }}" rel="noopener">{{ source.title }} ↗</a></li>{% endfor %}</ul>{% else %}<p>The calculation uses standard arithmetic or amortisation formulas and does not depend on a changing statutory rate.</p>{% endif %}
+      <p><a href="/disclaimer/">Financial and tax information disclaimer</a></p>
+    </aside>
+  </section>
+  <aside class="tool-more"><p class="eyebrow">MORE COMPOUND TOOLS</p><h2>Run another scenario.</h2><div class="tool-more-links">{% for other in related_tools %}<a href="{{ other.url }}">{{ other.title }} <span>→</span></a>{% endfor %}<a href="/tools/">Browse all tools <span>→</span></a></div></aside>
+</article>
+{% endblock %}

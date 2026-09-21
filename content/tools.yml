@@ -1,0 +1,493 @@
+tools:
+  - slug: mortgage-calculator
+    title: Mortgage Calculator Ireland
+    category: Mortgage & Property
+    formula: mortgage
+    summary: Estimate monthly mortgage repayments, total interest and the total amount repaid over the term.
+    meta_description: Free mortgage calculator for Ireland. Estimate monthly repayments, total interest and total repayment from your mortgage amount, rate and term.
+    updated: 2026-09-21
+    fields:
+      - {id: amount, label: Mortgage amount, type: number, prefix: "€", default: 300000, min: 1000, step: 1000}
+      - {id: rate, label: Interest rate, type: number, suffix: "%", default: 3.5, min: 0, max: 30, step: 0.01}
+      - {id: years, label: Mortgage term, type: number, suffix: years, default: 30, min: 1, max: 50, step: 1}
+    results:
+      - {id: monthly, label: Estimated monthly repayment}
+      - {id: interest, label: Total interest}
+      - {id: total, label: Total repaid}
+    guide: |
+      ## How this mortgage calculator works
+      This calculator uses the standard amortising-loan formula. Enter the amount you expect to borrow, the annual interest rate and the mortgage term. The result assumes the rate stays unchanged for the full term, so a real mortgage that switches from a fixed rate to a different rate will not follow the estimate exactly.
+
+      Use it to compare scenarios rather than as a lender quote. Try changing the rate by 0.5 or 1 percentage point as well as changing the term. A longer term usually lowers the monthly repayment but increases the total interest paid.
+
+      ## What is not included
+      The estimate does not include mortgage protection, home insurance, valuation fees, legal fees, cashback offers, lender fees or future rate changes. Lenders also assess affordability separately.
+    sources: []
+
+  - slug: mortgage-overpayment-calculator
+    title: Mortgage Overpayment Calculator Ireland
+    category: Mortgage & Property
+    formula: mortgage_overpayment
+    summary: See how an extra monthly mortgage payment could shorten your term and reduce interest.
+    meta_description: Mortgage overpayment calculator for Ireland. Estimate how much time and interest regular overpayments could save on your mortgage.
+    updated: 2026-09-21
+    fields:
+      - {id: balance, label: Current mortgage balance, type: number, prefix: "€", default: 250000, min: 1000, step: 1000}
+      - {id: rate, label: Interest rate, type: number, suffix: "%", default: 3.5, min: 0, max: 30, step: 0.01}
+      - {id: years, label: Remaining term, type: number, suffix: years, default: 25, min: 1, max: 50, step: 1}
+      - {id: overpayment, label: Extra payment each month, type: number, prefix: "€", default: 100, min: 0, step: 10}
+    results:
+      - {id: payment, label: Standard monthly repayment}
+      - {id: new_payment, label: Monthly payment with overpayment}
+      - {id: time_saved, label: Estimated time saved}
+      - {id: interest_saved, label: Estimated interest saved}
+    guide: |
+      ## What an overpayment changes
+      Mortgage interest is charged on the outstanding balance. Paying extra capital earlier can therefore reduce both the balance on which future interest is calculated and the number of months the mortgage remains outstanding.
+
+      This calculator keeps the interest rate constant and assumes the same overpayment is made every month. It is most useful for comparing “what if” scenarios. Check your mortgage terms before acting: fixed-rate mortgages can have overpayment limits or break costs.
+    sources: []
+
+  - slug: mortgage-borrowing-calculator
+    title: Mortgage Borrowing Calculator Ireland
+    category: Mortgage & Property
+    formula: mortgage_borrowing
+    summary: Estimate the Central Bank loan-to-income ceiling and how your deposit can constrain your purchase price.
+    meta_description: Ireland mortgage borrowing calculator using Central Bank loan-to-income and loan-to-value limits for first-time and subsequent buyers.
+    updated: 2026-09-21
+    fields:
+      - {id: income, label: Gross household income, type: number, prefix: "€", default: 80000, min: 1000, step: 1000}
+      - id: buyer_type
+        label: Buyer type
+        type: select
+        default: ftb
+        options:
+          - {value: ftb, label: First-time buyer}
+          - {value: subsequent, label: Second or subsequent buyer}
+      - {id: deposit, label: Deposit available, type: number, prefix: "€", default: 40000, min: 0, step: 1000}
+    results:
+      - {id: lti_limit, label: Loan-to-income ceiling}
+      - {id: deposit_limit, label: Purchase price supported by deposit}
+      - {id: purchase_price, label: Indicative maximum purchase price}
+    guide: |
+      ## Central Bank limits are not the same as mortgage approval
+      The Central Bank mortgage measures cap loan-to-income at 4 times gross income for first-time buyers and 3.5 times for second and subsequent buyers. Principal-home buyers generally need at least a 10% deposit.
+
+      This tool applies both constraints and shows the lower resulting purchase-price estimate. A lender can approve less after looking at affordability, age, other borrowing, dependants and its own credit policy. A limited share of lending can also be issued above the macroprudential limits.
+    sources:
+      - {title: Central Bank of Ireland — Mortgage Measures, url: "https://www.centralbank.ie/financial-system/financial-stability/macro-prudential-policy/mortgage-measures"}
+
+  - slug: house-deposit-calculator
+    title: House Deposit Calculator Ireland
+    category: Mortgage & Property
+    formula: house_deposit
+    summary: Calculate the minimum deposit implied by Irish mortgage loan-to-value limits.
+    meta_description: House deposit calculator Ireland. Estimate the minimum deposit and maximum mortgage under current Central Bank loan-to-value limits.
+    updated: 2026-09-21
+    fields:
+      - {id: price, label: Property price, type: number, prefix: "€", default: 400000, min: 1000, step: 1000}
+      - id: buyer_type
+        label: Purchase type
+        type: select
+        default: home
+        options:
+          - {value: home, label: Principal home — first-time or subsequent buyer}
+          - {value: btl, label: Buy-to-let}
+    results:
+      - {id: deposit_rate, label: Minimum deposit percentage}
+      - {id: deposit, label: Minimum deposit}
+      - {id: mortgage, label: Maximum mortgage from LTV alone}
+    guide: |
+      ## Deposit rules in Ireland
+      Under the Central Bank mortgage measures, first-time and second/subsequent buyers of a principal home are generally limited to 90% loan-to-value, implying a 10% minimum deposit. Buy-to-let lending is generally limited to 70% loan-to-value, implying a 30% deposit.
+
+      This is only the loan-to-value side of the rules. Owner-occupiers are also subject to loan-to-income limits, and lenders apply their own affordability tests.
+    sources:
+      - {title: Central Bank of Ireland — Mortgage Measures, url: "https://www.centralbank.ie/financial-system/financial-stability/macro-prudential-policy/mortgage-measures"}
+
+  - slug: stamp-duty-calculator
+    title: Stamp Duty Calculator Ireland
+    category: Mortgage & Property
+    formula: stamp_duty
+    summary: Estimate Irish residential property stamp duty using the current progressive rates.
+    meta_description: Stamp duty calculator Ireland for residential property. Calculate 1%, 2% and 6% bands using current Revenue rates.
+    updated: 2026-09-21
+    fields:
+      - {id: price, label: Residential property consideration, type: number, prefix: "€", default: 400000, min: 0, step: 1000}
+    results:
+      - {id: duty, label: Estimated stamp duty}
+      - {id: effective_rate, label: Effective rate}
+      - {id: total_cost, label: Price plus stamp duty}
+    guide: |
+      ## Current residential stamp duty bands
+      Revenue's current standard residential rates are 1% on the first €1 million, 2% on the portion over €1 million up to €1.5 million, and 6% on the portion over €1.5 million.
+
+      This calculator is for a straightforward residential purchase. Different rules can apply to bulk acquisitions, mixed-use property, gifts, exchanges and other transactions. Legal advice may be required for a real purchase.
+    sources:
+      - {title: Revenue — Stamp Duty property rates, url: "https://www.revenue.ie/en/property/stamp-duty/property/stamp-duty-property/rates.aspx"}
+
+  - slug: local-property-tax-calculator
+    title: Local Property Tax Calculator Ireland 2026
+    category: Mortgage & Property
+    formula: lpt
+    summary: Estimate 2026 Local Property Tax from your property value and local authority.
+    meta_description: Ireland Local Property Tax calculator for 2026. Use Revenue valuation bands and your local authority adjustment to estimate LPT.
+    updated: 2026-09-21
+    fields:
+      - {id: value, label: Property market value, type: number, prefix: "€", default: 400000, min: 1, step: 1000}
+      - id: authority
+        label: Local authority
+        type: select
+        default: meath
+        options:
+          - {value: carlow, label: Carlow County Council}
+          - {value: cavan, label: Cavan County Council}
+          - {value: clare, label: Clare County Council}
+          - {value: cork_city, label: Cork City Council}
+          - {value: cork_county, label: Cork County Council}
+          - {value: donegal, label: Donegal County Council}
+          - {value: dublin_city, label: Dublin City Council}
+          - {value: dlr, label: Dún Laoghaire Rathdown County Council}
+          - {value: fingal, label: Fingal County Council}
+          - {value: galway_city, label: Galway City Council}
+          - {value: galway_county, label: Galway County Council}
+          - {value: kerry, label: Kerry County Council}
+          - {value: kildare, label: Kildare County Council}
+          - {value: kilkenny, label: Kilkenny County Council}
+          - {value: laois, label: Laois County Council}
+          - {value: leitrim, label: Leitrim County Council}
+          - {value: limerick, label: Limerick City & County Council}
+          - {value: longford, label: Longford County Council}
+          - {value: louth, label: Louth County Council}
+          - {value: mayo, label: Mayo County Council}
+          - {value: meath, label: Meath County Council}
+          - {value: monaghan, label: Monaghan County Council}
+          - {value: offaly, label: Offaly County Council}
+          - {value: roscommon, label: Roscommon County Council}
+          - {value: sligo, label: Sligo County Council}
+          - {value: south_dublin, label: South Dublin County Council}
+          - {value: tipperary, label: Tipperary County Council}
+          - {value: waterford, label: Waterford City & County Council}
+          - {value: westmeath, label: Westmeath County Council}
+          - {value: wexford, label: Wexford County Council}
+          - {value: wicklow, label: Wicklow County Council}
+    results:
+      - {id: base_lpt, label: Revenue basic LPT}
+      - {id: adjustment, label: Local adjustment}
+      - {id: lpt, label: Estimated 2026 LPT}
+    guide: |
+      ## 2026 LPT valuation period
+      Revenue introduced new valuation bands for 2026 to 2030 based on the property's value on 1 November 2025. Local authorities may then vary the basic charge through a Local Adjustment Factor.
+
+      This tool uses Revenue's published 2026 bands and local-authority adjustments. For properties above €2.1 million it applies Revenue's percentage formula to the declared value. Exemptions, deferrals and unusual circumstances are outside this simple estimate.
+    sources:
+      - {title: Revenue — LPT valuation bands and 2026 local adjustments, url: "https://www.revenue.ie/en/property/local-property-tax/valuing-your-property/valuation-bands-rates.aspx"}
+
+  - slug: loan-repayment-calculator
+    title: Loan Repayment Calculator Ireland
+    category: Loans & Debt
+    formula: loan
+    summary: Estimate monthly repayments and total interest on a personal or car loan.
+    meta_description: Free loan repayment calculator Ireland. Estimate monthly repayments, total interest and total repayment for a personal or car loan.
+    updated: 2026-09-21
+    fields:
+      - {id: amount, label: Loan amount, type: number, prefix: "€", default: 20000, min: 1, step: 100}
+      - {id: rate, label: APR / annual rate, type: number, suffix: "%", default: 7.5, min: 0, max: 100, step: 0.01}
+      - {id: years, label: Term, type: number, suffix: years, default: 5, min: 0.25, max: 40, step: 0.25}
+    results:
+      - {id: monthly, label: Estimated monthly repayment}
+      - {id: interest, label: Total interest}
+      - {id: total, label: Total repaid}
+    guide: |
+      ## Compare the total cost, not only the monthly repayment
+      Stretching a loan over more years can make the monthly figure look easier while increasing the total interest substantially. Use the calculator to compare the same loan amount across different rates and terms.
+
+      Real loan APR calculations can include fees and timing details that a simple amortisation model does not capture. Treat this as a planning tool rather than a lender quotation.
+    sources: []
+
+  - slug: savings-goal-calculator
+    title: Savings Goal Calculator Ireland
+    category: Saving & Investing
+    formula: savings_goal
+    summary: Estimate how long it could take to reach a savings target with regular monthly contributions.
+    meta_description: Savings goal calculator Ireland. Estimate how many months it could take to reach a target from your current savings, monthly contribution and interest rate.
+    updated: 2026-09-21
+    fields:
+      - {id: target, label: Savings target, type: number, prefix: "€", default: 30000, min: 1, step: 100}
+      - {id: current, label: Current savings, type: number, prefix: "€", default: 5000, min: 0, step: 100}
+      - {id: monthly, label: Monthly contribution, type: number, prefix: "€", default: 500, min: 0, step: 10}
+      - {id: rate, label: Annual interest / return, type: number, suffix: "%", default: 2, min: -20, max: 30, step: 0.1}
+    results:
+      - {id: time, label: Estimated time to target}
+      - {id: contributions, label: Additional contributions}
+      - {id: growth, label: Estimated interest / growth}
+    guide: |
+      ## Turn a target into a timeline
+      A savings target is easier to plan when it becomes a monthly path. This calculator grows the balance monthly using the annual rate you enter and then adds your regular contribution.
+
+      Returns are not guaranteed. For a bank savings account, use a realistic deposit rate and remember that tax can reduce the interest you keep. For investments, a smooth annual return is only an illustration; real returns move up and down.
+    sources: []
+
+  - slug: regular-savings-calculator
+    title: Regular Savings Calculator Ireland
+    category: Saving & Investing
+    formula: regular_savings
+    summary: Project what regular monthly saving could build over time.
+    meta_description: Regular savings calculator Ireland. Project a future balance from your starting amount, monthly savings, term and annual return.
+    updated: 2026-09-21
+    fields:
+      - {id: current, label: Starting balance, type: number, prefix: "€", default: 5000, min: 0, step: 100}
+      - {id: monthly, label: Monthly saving, type: number, prefix: "€", default: 300, min: 0, step: 10}
+      - {id: years, label: Time horizon, type: number, suffix: years, default: 10, min: 0.25, max: 70, step: 0.25}
+      - {id: rate, label: Annual interest / return, type: number, suffix: "%", default: 4, min: -20, max: 30, step: 0.1}
+    results:
+      - {id: final, label: Projected balance}
+      - {id: contributed, label: Total money contributed}
+      - {id: growth, label: Estimated growth}
+    guide: |
+      ## Small regular amounts can become meaningful
+      This tool compounds the starting balance monthly and assumes each new monthly contribution is added at the end of the month. It is useful for testing different saving rates and time horizons.
+
+      The return is an assumption, not a forecast. Investment returns are uneven and can be negative, while deposit-account returns can change and may be taxable.
+    sources: []
+
+  - slug: pension-tax-relief-calculator
+    title: Pension Tax Relief Calculator Ireland 2026
+    category: Pensions & Tax
+    formula: pension_relief
+    summary: Estimate how much of a personal pension contribution may qualify for Irish income-tax relief.
+    meta_description: Pension tax relief calculator Ireland 2026. Apply Revenue age-related contribution limits and the €115,000 earnings cap.
+    updated: 2026-09-21
+    fields:
+      - {id: age, label: Age, type: number, default: 35, min: 16, max: 100, step: 1}
+      - {id: earnings, label: Relevant annual earnings, type: number, prefix: "€", default: 60000, min: 0, step: 1000}
+      - {id: contribution, label: Your annual contribution, type: number, prefix: "€", default: 6000, min: 0, step: 100}
+      - id: tax_rate
+        label: Income-tax rate used for this illustration
+        type: select
+        default: "40"
+        options:
+          - {value: "20", label: 20%}
+          - {value: "40", label: 40%}
+    results:
+      - {id: limit, label: Maximum contribution within age limit}
+      - {id: eligible, label: Contribution potentially eligible for relief}
+      - {id: relief, label: Estimated income-tax relief}
+      - {id: net_cost, label: Contribution less estimated relief}
+    guide: |
+      ## Revenue's age-related limits
+      Employee pension tax relief is limited by an age-related percentage of earnings: 15% under 30, 20% from 30–39, 25% from 40–49, 30% from 50–54, 35% from 55–59 and 40% from age 60. Revenue also caps the earnings taken into account at €115,000.
+
+      This tool estimates income-tax relief only and lets you choose a 20% or 40% illustration. Your actual relief depends on your taxable income, pension arrangement and other circumstances. Pension contributions do not simply create an automatic refund at the selected rate if you have insufficient income taxed at that rate.
+    sources:
+      - {title: Revenue — Tax relief limits on pension contributions, url: "https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx"}
+
+  - slug: capital-gains-tax-calculator
+    title: Capital Gains Tax Calculator Ireland
+    category: Pensions & Tax
+    formula: cgt
+    summary: Estimate CGT on a straightforward disposal using the 33% standard rate and €1,270 annual exemption.
+    meta_description: Capital Gains Tax calculator Ireland. Estimate CGT using the standard 33% rate, allowable costs, losses and the €1,270 annual exemption.
+    updated: 2026-09-21
+    fields:
+      - {id: sale, label: Sale proceeds, type: number, prefix: "€", default: 30000, min: 0, step: 100}
+      - {id: purchase, label: Original purchase cost, type: number, prefix: "€", default: 15000, min: 0, step: 100}
+      - {id: costs, label: Allowable acquisition, disposal and enhancement costs, type: number, prefix: "€", default: 500, min: 0, step: 10}
+      - {id: losses, label: Allowable capital losses to use, type: number, prefix: "€", default: 0, min: 0, step: 10}
+    results:
+      - {id: gain, label: Gain before losses and exemption}
+      - {id: taxable, label: Taxable gain after losses and exemption}
+      - {id: tax, label: Estimated CGT at 33%}
+    guide: |
+      ## A simple CGT estimate
+      Revenue states that the standard CGT rate is 33% for most gains and that an individual has a €1,270 annual personal exemption. Allowable capital losses are generally deducted before the annual exemption.
+
+      This calculator does not determine whether a disposal is exempt, whether a relief such as Principal Private Residence relief applies, or whether a special CGT rate applies. It also does not calculate tax on Irish-domiciled investment funds, which can fall under different tax rules.
+    sources:
+      - {title: Revenue — How to calculate CGT, url: "https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx"}
+      - {title: Revenue — CGT exemptions, url: "https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx"}
+
+  - slug: vat-calculator
+    title: VAT Calculator Ireland 2026
+    category: Pensions & Tax
+    formula: vat
+    summary: Add or remove Irish VAT at common 2026 rates.
+    meta_description: VAT calculator Ireland 2026. Add or remove VAT at 23%, 13.5%, 9%, 4.8% or 0% and see the net, VAT and gross amounts.
+    updated: 2026-09-21
+    fields:
+      - {id: amount, label: Amount, type: number, prefix: "€", default: 100, min: 0, step: 0.01}
+      - id: direction
+        label: Amount entered is
+        type: select
+        default: net
+        options:
+          - {value: net, label: Net — add VAT}
+          - {value: gross, label: Gross — remove VAT}
+      - id: rate
+        label: VAT rate
+        type: select
+        default: "23"
+        options:
+          - {value: "23", label: 23% standard rate}
+          - {value: "13.5", label: 13.5% reduced rate}
+          - {value: "9", label: 9% second reduced rate}
+          - {value: "4.8", label: 4.8% livestock rate}
+          - {value: "0", label: 0% zero rate}
+    results:
+      - {id: net, label: Net amount}
+      - {id: vat, label: VAT amount}
+      - {id: gross, label: Gross amount}
+    guide: |
+      ## Irish VAT rates in 2026
+      Revenue lists the 2026 standard rate as 23%, with 13.5%, 9%, 4.8% and zero rates applying to qualifying supplies. Selecting the correct VAT rate depends on what is being supplied, not simply on the seller's preference.
+
+      Use this calculator only after identifying the correct rate. It does not decide whether a business must register for VAT or whether a particular product or service qualifies for a reduced or zero rate.
+    sources:
+      - {title: Revenue — Current VAT rates, url: "https://www.revenue.ie/en/vat/vat-rates/search-vat-rates/current-VAT-rates.aspx"}
+
+  - slug: inflation-calculator
+    title: Inflation Calculator Ireland
+    category: Everyday Money
+    formula: inflation
+    summary: See how inflation changes the future cost of today's spending and the purchasing power of money.
+    meta_description: Inflation calculator Ireland. Estimate the future cost of today's spending and how inflation can reduce purchasing power over time.
+    updated: 2026-09-21
+    fields:
+      - {id: amount, label: Amount today, type: number, prefix: "€", default: 10000, min: 0, step: 100}
+      - {id: rate, label: Assumed annual inflation, type: number, suffix: "%", default: 2, min: -20, max: 30, step: 0.1}
+      - {id: years, label: Years, type: number, default: 10, min: 0, max: 100, step: 1}
+    results:
+      - {id: future_cost, label: Future cost of the same basket}
+      - {id: purchasing_power, label: Purchasing power of the same nominal amount}
+      - {id: lost_power, label: Purchasing power lost}
+    guide: |
+      ## Inflation works in both directions
+      If prices rise by a constant percentage each year, the future cost of today's basket compounds upward. The same nominal amount of cash therefore buys less.
+
+      This is a scenario calculator, not an inflation forecast. Actual Irish inflation varies from year to year and individual households experience different price changes depending on what they buy.
+    sources: []
+
+  - slug: emergency-fund-calculator
+    title: Emergency Fund Calculator Ireland
+    category: Everyday Money
+    formula: emergency
+    summary: Turn your essential monthly spending into a target emergency fund and savings timeline.
+    meta_description: Emergency fund calculator Ireland. Set a 3, 6, 9 or 12 month target from essential spending and estimate how long it could take to build.
+    updated: 2026-09-21
+    fields:
+      - {id: expenses, label: Essential monthly spending, type: number, prefix: "€", default: 2000, min: 0, step: 50}
+      - id: months
+        label: Target buffer
+        type: select
+        default: "6"
+        options:
+          - {value: "3", label: 3 months}
+          - {value: "6", label: 6 months}
+          - {value: "9", label: 9 months}
+          - {value: "12", label: 12 months}
+      - {id: current, label: Current emergency savings, type: number, prefix: "€", default: 3000, min: 0, step: 100}
+      - {id: monthly, label: Amount you can add each month, type: number, prefix: "€", default: 300, min: 0, step: 10}
+    results:
+      - {id: target, label: Target emergency fund}
+      - {id: gap, label: Amount still to build}
+      - {id: time, label: Time to target}
+    guide: |
+      ## Build the target around your own essential costs
+      There is no single correct emergency-fund number for everyone. Someone with secure employment, two incomes and low fixed costs may choose a different buffer from a single-income household with dependants or volatile earnings.
+
+      Use essential spending rather than total lifestyle spending: housing, utilities, basic food, insurance, transport, debt minimums and other costs that would continue after an income shock.
+    sources: []
+
+  - slug: salary-hourly-rate-calculator
+    title: Salary to Hourly Rate Calculator Ireland
+    category: Everyday Money
+    formula: salary_hourly
+    summary: Convert an annual gross salary into monthly, weekly, daily and hourly gross pay.
+    meta_description: Salary to hourly rate calculator Ireland. Convert annual gross pay into monthly, weekly, daily and hourly rates from your working hours.
+    updated: 2026-09-21
+    fields:
+      - {id: salary, label: Annual gross salary, type: number, prefix: "€", default: 50000, min: 0, step: 500}
+      - {id: hours, label: Working hours per week, type: number, default: 39, min: 1, max: 100, step: 0.5}
+      - {id: weeks, label: Paid weeks per year, type: number, default: 52, min: 1, max: 53, step: 1}
+      - {id: days, label: Working days per week, type: number, default: 5, min: 1, max: 7, step: 1}
+    results:
+      - {id: monthly, label: Gross per month}
+      - {id: weekly, label: Gross per week}
+      - {id: daily, label: Gross per working day}
+      - {id: hourly, label: Gross per hour}
+    guide: |
+      ## Gross salary expressed in different ways
+      This calculator simply divides annual gross pay across the working pattern you enter. It can be useful when comparing a salaried role with hourly contracting or shift work.
+
+      It is not a take-home-pay calculator and does not deduct PAYE, USC, PRSI, pension contributions or benefits in kind. Paid annual leave is also treated according to the paid-weeks figure you enter.
+    sources: []
+
+  - slug: fuel-cost-calculator
+    title: Fuel Cost Calculator Ireland
+    category: Travel & Energy
+    formula: fuel
+    summary: Estimate litres used and fuel cost for a journey from distance, consumption and pump price.
+    meta_description: Fuel cost calculator Ireland. Estimate petrol or diesel cost from journey distance, L/100km consumption, fuel price and number of trips.
+    updated: 2026-09-21
+    fields:
+      - {id: distance, label: Distance per trip, type: number, suffix: km, default: 100, min: 0, step: 1}
+      - {id: consumption, label: Vehicle consumption, type: number, suffix: "L/100km", default: 6.5, min: 0, max: 100, step: 0.1}
+      - {id: price, label: Fuel price per litre, type: number, prefix: "€", default: 1.75, min: 0, step: 0.01}
+      - {id: trips, label: Number of trips, type: number, default: 1, min: 1, step: 1}
+    results:
+      - {id: litres, label: Estimated fuel used}
+      - {id: cost, label: Estimated fuel cost}
+      - {id: per100, label: Fuel cost per 100 km}
+    guide: |
+      ## Plan a commute or long journey
+      Fuel consumption is normally quoted in litres per 100 km in Ireland. Multiply distance by consumption, then by the pump price, to get a simple trip estimate.
+
+      Real-world use changes with speed, temperature, traffic, tyres, load and driving style. Use your own observed consumption for a more useful estimate than an official test figure.
+    sources: []
+
+  - slug: ev-charging-cost-calculator
+    title: EV Charging Cost Calculator Ireland
+    category: Travel & Energy
+    formula: ev
+    summary: Estimate EV electricity use and charging cost for a journey, including charging losses.
+    meta_description: EV charging cost calculator Ireland. Estimate kWh and charging cost from journey distance, vehicle efficiency, electricity price and charging losses.
+    updated: 2026-09-21
+    fields:
+      - {id: distance, label: Distance, type: number, suffix: km, default: 100, min: 0, step: 1}
+      - {id: efficiency, label: Vehicle efficiency, type: number, suffix: "kWh/100km", default: 18, min: 1, max: 100, step: 0.1}
+      - {id: price, label: Electricity price, type: number, prefix: "€", suffix: "/kWh", default: 0.30, min: 0, step: 0.01}
+      - {id: loss, label: Charging losses, type: number, suffix: "%", default: 10, min: 0, max: 50, step: 1}
+    results:
+      - {id: battery_kwh, label: Energy used by vehicle}
+      - {id: wall_kwh, label: Energy drawn from charger}
+      - {id: cost, label: Estimated charging cost}
+      - {id: per100, label: Charging cost per 100 km}
+    guide: |
+      ## Home charging versus public charging
+      Vehicle efficiency describes energy used by the car, while your electricity bill reflects energy drawn from the charger. Charging losses mean the two figures are not identical, so this calculator lets you include an estimated loss percentage.
+
+      Enter the tariff that actually applies to the charging session. A cheap overnight home rate and a rapid public charger can produce very different costs for the same journey.
+    sources: []
+
+  - slug: electricity-cost-calculator
+    title: Electricity Cost Calculator Ireland
+    category: Travel & Energy
+    formula: electricity
+    summary: Estimate how much an appliance costs to run per month and per year.
+    meta_description: Electricity cost calculator Ireland. Estimate appliance running costs from watts, hours used and your electricity unit rate.
+    updated: 2026-09-21
+    fields:
+      - {id: watts, label: Appliance power, type: number, suffix: watts, default: 2000, min: 0, step: 10}
+      - {id: hours, label: Hours used per day, type: number, default: 1, min: 0, max: 24, step: 0.1}
+      - {id: days, label: Days used per month, type: number, default: 30, min: 0, max: 31, step: 1}
+      - {id: price, label: Electricity unit rate, type: number, prefix: "€", suffix: "/kWh", default: 0.30, min: 0, step: 0.01}
+    results:
+      - {id: kwh, label: Electricity used per month}
+      - {id: monthly, label: Estimated monthly cost}
+      - {id: annual, label: Estimated annual cost at same usage}
+    guide: |
+      ## Convert watts into an electricity cost
+      Divide appliance wattage by 1,000 to get kilowatts, multiply by hours used to get kWh, then multiply by your unit rate. This calculator does that across the days you enter.
+
+      Many appliances cycle on and off rather than drawing their rated wattage continuously. Smart plugs or energy monitors can give a better real-world input for fridges, heat pumps and other variable-load devices.
+    sources: []

@@ -35,7 +35,7 @@ if(choice==='granted')window.compoundStartAnalytics();})();
 <header class="site-header">
   <a class="wordmark" href="/" aria-label="Compound home">compound<span class="brand-dot">.</span></a>
   <nav class="pillar-nav" aria-label="Main navigation">
-    <a href="/compound-interest-calculator/" class="nav-wealth">Calculator</a>
+    <a href="/tools/" class="nav-wealth">Tools</a>
     {% for p in pillars %}<a href="/{{ p }}/" class="nav-{{ p }}" {% if pillar == p or (article is defined and article.pillar == p) %}aria-current="page"{% endif %}>{{ pillar_labels[p] }}</a>{% endfor %}
   </nav>
   <a class="search-link" href="/search/"><span>Explore the journal</span><span aria-hidden="true">⌕</span></a>
@@ -44,7 +44,7 @@ if(choice==='granted')window.compoundStartAnalytics();})();
 {% block content %}{% endblock %}
 </main>
 <footer class="site-footer">
- <div class="footer-top"><div><a class="wordmark" href="/">compound<span class="brand-dot">.</span></a><p>Good things build on each other.</p></div><div class="footer-mission">A little more clarity.<br>A little more possibility.<br>A life that feels like yours.</div><nav aria-label="Footer navigation"><a href="/about/">Our approach</a><a href="/contact/">Get in touch</a><a href="/search/">Explore the journal</a><a href="/feed.xml">Follow via RSS ↗</a></nav></div>
+ <div class="footer-top"><div><a class="wordmark" href="/">compound<span class="brand-dot">.</span></a><p>Good things build on each other.</p></div><div class="footer-mission">A little more clarity.<br>A little more possibility.<br>A life that feels like yours.</div><nav aria-label="Footer navigation"><a href="/about/">Our approach</a><a href="/contact/">Get in touch</a><a href="/search/">Explore the journal</a><a href="/tools/">Tools & calculators</a><a href="/feed.xml">Follow via RSS ↗</a></nav></div>
  <div class="footer-bottom"><span>© {{ year }} Compound · Made for life in Ireland</span><nav aria-label="Policies"><a href="/editorial-policy/">Editorial policy</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/disclaimer/">Disclaimer</a>{% if analytics.measurement_id and not preview %}<a href="#" data-privacy-settings>Analytics settings</a>{% endif %}{% if adsense.client and not preview and (ads_allowed is not defined or ads_allowed) %}<a href="#" onclick="window.googlefc&&googlefc.callbackQueue.push({CONSENT_DATA_READY:function(){googlefc.showRevocationMessage()}});return false;">Privacy settings</a>{% endif %}</nav></div>
  <p class="footer-disclaimer">For information, not individual medical, financial or tax advice. Check the sources and speak to a qualified professional about your circumstances.</p>
 </footer>

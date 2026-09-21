@@ -305,6 +305,34 @@ def load_pages(content_dir: Path) -> list[Page]:
     return pages
 
 
+def load_tools(content_dir: Path) -> list[dict]:
+    """Load the scalable calculator catalogue from content/tools.yml."""
+    path = content_dir / "tools.yml"
+    if not path.is_file():
+        return []
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    items = []
+    seen = set()
+    for raw in data.get("tools") or []:
+        tool = dict(raw)
+        slug = str(tool.get("slug") or "").strip()
+        if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", slug):
+            raise ValueError(f"Invalid tool slug: {slug!r}")
+        if slug in seen:
+            raise ValueError(f"Duplicate tool slug: {slug}")
+        seen.add(slug)
+        if not tool.get("title") or not tool.get("formula"):
+            raise ValueError(f"Tool {slug} needs title and formula")
+        tool["slug"] = slug
+        tool["url"] = f"/{slug}/"
+        tool["guide_html"] = render_markdown(str(tool.get("guide") or ""))
+        tool["fields"] = list(tool.get("fields") or [])
+        tool["results"] = list(tool.get("results") or [])
+        tool["sources"] = list(tool.get("sources") or [])
+        items.append(tool)
+    return items
+
+
 def long_date(d: date) -> str:
     """'3 September 2026' without relying on strftime('%-d'), which Windows rejects."""
     return f"{d.day} {d.strftime('%B %Y')}"
@@ -440,7 +468,9 @@ def build_site(settings: Settings) -> dict:
     out = settings.public_dir
     articles = load_articles(settings.content_dir)
     pages = load_pages(settings.content_dir)
-    reserved = {"/", "/search/", "/compound-interest-calculator/", "/bmi-calculator/"}
+    tools = load_tools(settings.content_dir)
+    reserved = {"/", "/search/", "/tools/", "/compound-interest-calculator/", "/bmi-calculator/"}
+    reserved.update(tool["url"] for tool in tools)
     reserved.update(f"/{p}/" for p in PILLARS)
     reserved.update(f"/{pg.slug}/" for pg in pages)
     seen_urls = set(reserved)
@@ -502,6 +532,28 @@ def build_site(settings: Settings) -> dict:
     for pg in pages:
         _write(out / pg.slug / "index.html", env.get_template("page.html").render(page=pg, title=pg.title))
 
+    if tools:
+        grouped_tools = {}
+        for tool in tools:
+            grouped_tools.setdefault(str(tool.get("category") or "Other"), []).append(tool)
+        _write(out / "tools" / "index.html", env.get_template("tools.html").render(
+            title="Free Calculators & Tools for Ireland", grouped_tools=grouped_tools, tools=tools, pillar="wealth"))
+        for tool in tools:
+            related_tools = [t for t in tools if t["slug"] != tool["slug"] and t.get("category") == tool.get("category")][:3]
+            if len(related_tools) < 3:
+                related_tools += [t for t in tools if t["slug"] != tool["slug"] and t not in related_tools][:3-len(related_tools)]
+            tool_jsonld = json.dumps({
+                "@context": "https://schema.org", "@type": "WebApplication",
+                "name": tool["title"], "url": settings.site_base_url + tool["url"],
+                "applicationCategory": "FinanceApplication", "operatingSystem": "Any",
+                "browserRequirements": "Requires JavaScript", "inLanguage": "en-IE",
+                "isAccessibleForFree": True,
+                "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+                "publisher": {"@type": "Organization", "name": "Compound", "url": settings.site_base_url},
+            }, ensure_ascii=False)
+            _write(out / tool["slug"] / "index.html", env.get_template("tool.html").render(
+                title=tool["title"], tool=tool, related_tools=related_tools, tool_jsonld=tool_jsonld, pillar="wealth"))
+
     calculator_path = "/compound-interest-calculator/"
     has_calculator = (settings.content_dir / "compound-calculator-guide.md").is_file()
     if has_calculator:
@@ -534,6 +586,12 @@ def build_site(settings: Settings) -> dict:
                          "pillar": "Health", "date": "2026-09-15", "summary": "Calculate adult BMI in kg or stones, explore waist-to-height ratio and read sourced Irish guidance.",
                          "tags": ["BMI", "health", "calculator", "weight"], "description": "Free BMI calculator with HSE guidance for Ireland.",
                          "image": "", "reading_minutes": 7, "date_label": "15 September 2026"})
+    for tool in reversed(tools):
+        index.insert(0, {"title": tool["title"], "url": tool["url"], "pillar": "Tools",
+                         "date": str(tool.get("updated") or "2026-09-21"), "summary": str(tool.get("summary") or ""),
+                         "tags": ["calculator", str(tool.get("category") or "").lower().replace(" ", "-")],
+                         "description": str(tool.get("meta_description") or tool.get("summary") or ""),
+                         "image": "", "reading_minutes": 3, "date_label": "21 September 2026"})
     _write(out / "search.json", json.dumps(index, ensure_ascii=False))
     _write(out / "search" / "index.html", env.get_template("search.html").render(title="Search", search_index=index, ads_allowed=False))
     _write(out / "feed.xml", env.get_template("feed.xml").render(articles=articles[:30]))
@@ -547,6 +605,8 @@ def build_site(settings: Settings) -> dict:
         # AdSense checks this file to confirm the site is allowed to show your ads.
         _write(out / "ads.txt", f"google.com, {client.removeprefix('ca-')}, DIRECT, f08c47fec0942fa0\n")
     urls = ([settings.site_base_url + "/"]
+            + ([settings.site_base_url + "/tools/"] if tools else [])
+            + [settings.site_base_url + tool["url"] for tool in tools]
             + ([settings.site_base_url + bmi_path] if has_bmi else [])
             + ([settings.site_base_url + calculator_path] if has_calculator else [])
             + [settings.site_base_url + f"/{p}/" for p in PILLARS]
@@ -554,7 +614,7 @@ def build_site(settings: Settings) -> dict:
             + [settings.site_base_url + f"/{pg.slug}/" for pg in pages])
     _write(out / "sitemap.xml", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
            + "".join(f"  <url><loc>{u}</loc></url>\n" for u in urls) + "</urlset>\n")
-    return {"articles": len(articles), "tags": len(tag_map), "pages": len(pages)}
+    return {"articles": len(articles), "tags": len(tag_map), "pages": len(pages), "tools": len(tools)}
 
 
 def render_preview(settings: Settings, token: str, article: Article) -> Path:
