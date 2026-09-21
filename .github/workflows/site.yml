@@ -153,6 +153,16 @@ jobs:
           grep -Fq 'data-calculator="nutrition_needs"' /tmp/nutrition.html
           grep -Fq 'Mifflin' /tmp/nutrition.html
           grep -Fq 'Morton et al. 2018' /tmp/nutrition.html
+          grep -Fq 'Does protein timing matter?' /tmp/nutrition.html
+
+          fetch https://compound.ie/health/how-much-protein-do-you-need-ireland/ /tmp/protein-article.html
+          grep -Fq 'How much protein do you actually need?' /tmp/protein-article.html
+          grep -Fq '0.83 g/kg/day' /tmp/protein-article.html
+          grep -Fq '1.6 g/kg/day' /tmp/protein-article.html
+          grep -Fq '/nutrition-needs-calculator/' /tmp/protein-article.html
+          grep -Fq '/health/macronutrients-micronutrients-guide-ireland/' /tmp/protein-article.html
+
+          grep -Fq '/health/how-much-protein-do-you-need-ireland/' /tmp/nutrition.html
 
           fetch https://compound.ie/pregnancy-due-date-calculator/ /tmp/pregnancy.html
           grep -Fq 'data-calculator="pregnancy_timeline"' /tmp/pregnancy.html
