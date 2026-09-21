@@ -143,6 +143,14 @@ jobs:
           fetch https://compound.ie/solar-ev-battery-optimiser/ /tmp/solar-opt.html
           grep -Fq 'data-calculator="solar_optimizer"' /tmp/solar-opt.html
 
+          fetch https://compound.ie/wealth/solar-panels-vs-battery-ireland/ /tmp/solar-battery-article.html
+          grep -Fq 'Do you actually need a battery with solar panels in Ireland?' /tmp/solar-battery-article.html
+          grep -Fq '/solar-payback-calculator/' /tmp/solar-battery-article.html
+          grep -Fq '/solar-ev-battery-optimiser/' /tmp/solar-battery-article.html
+          grep -Fq '/ev-charging-cost-calculator/' /tmp/solar-battery-article.html
+
+          grep -Fq '/wealth/solar-panels-vs-battery-ireland/' /tmp/solar-opt.html
+
           fetch https://compound.ie/whole-house-retrofit-planner/ /tmp/retrofit.html
           grep -Fq 'data-calculator="retrofit_planner"' /tmp/retrofit.html
 
