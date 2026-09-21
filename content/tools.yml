@@ -1849,6 +1849,10 @@ tools:
 
       For people doing resistance training, a 2018 systematic review, meta-analysis and meta-regression found that increases in fat-free mass with protein supplementation during resistance training plateaued at around **1.62 g/kg/day**, with the confidence interval extending higher. Compound therefore uses **1.6 g/kg/day as an evidence point** in the resistance-training option. It should not be interpreted as a minimum requirement for every gym user or proof that more protein is always better.
 
+      ## Does protein timing matter?
+
+      Total daily protein intake appears more important than treating a tiny post-workout window as mandatory. A 2025 meta-analysis directly comparing protein consumed before versus after exercise found no important difference in exercise-induced changes in lean body mass. A protein-containing meal around training is sensible, but the calculator does not pretend minute-by-minute timing can be reduced to one superior rule.
+
       ## The macro illustration
 
       Protein contributes approximately 4 kcal per gram. For the remaining macro illustration, Compound shows total fat at **30% of the selected energy figure**, consistent with WHO guidance that adults limit total fat intake to 30% of total energy or less for prevention of unhealthy weight gain. Carbohydrate is then the mathematical remainder after protein and fat.
@@ -1873,6 +1877,7 @@ tools:
       - {title: "EFSA — Dietary Reference Values and Physical Activity Level", url: "https://www.efsa.europa.eu/en/topics/topic/dietary-reference-values"}
       - {title: "EFSA — adult protein Population Reference Intake", url: "https://www.efsa.europa.eu/en/press/news/120209"}
       - {title: "Morton et al. 2018 — protein supplementation and resistance training meta-analysis", url: "https://pubmed.ncbi.nlm.nih.gov/28698222/"}
+      - {title: "Casuso and Goossens 2025 — protein timing before versus after exercise meta-analysis", url: "https://pubmed.ncbi.nlm.nih.gov/40647175/"}
       - {title: "WHO — updated guidance on fats and carbohydrates", url: "https://www.who.int/news/item/17-07-2023-who-updates-guidelines-on-fats-and-carbohydrates"}
 
   - slug: pregnancy-due-date-calculator
