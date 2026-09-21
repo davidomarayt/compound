@@ -183,6 +183,15 @@ jobs:
           grep -Fq 'data-calculator="alcohol_ireland"' /tmp/alcohol.html
           grep -Fq '10 grams of pure alcohol' /tmp/alcohol.html
           grep -Fq '0.789' /tmp/alcohol.html
+          grep -Fq '3 September 2028' /tmp/alcohol.html
+
+          fetch https://compound.ie/health/standard-drinks-ireland-pints-wine-spirits/ /tmp/alcohol-article.html
+          grep -Fq 'Standard drinks in Ireland' /tmp/alcohol-article.html
+          grep -Fq '/alcohol-units-calories-cost-calculator/' /tmp/alcohol-article.html
+          grep -Fq '1 standard drink = 10 grams of pure alcohol' /tmp/alcohol-article.html
+          grep -Fq '3 September 2028' /tmp/alcohol-article.html
+
+          grep -Fq '/health/standard-drinks-ireland-pints-wine-spirits/' /tmp/alcohol.html
 
           fetch https://compound.ie/bmi-calculator/ /tmp/bmi.html
           grep -Fq 'BMI REFERENCE RANGE' /tmp/bmi.html
