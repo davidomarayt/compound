@@ -91,6 +91,14 @@ jobs:
           fetch https://compound.ie/mortgage-switch-calculator/ /tmp/switch.html
           grep -Fq 'data-calculator="mortgage_switch"' /tmp/switch.html
 
+          fetch https://compound.ie/wealth/is-switching-your-mortgage-worth-it-ireland/ /tmp/switch-article.html
+          grep -Fq 'Is switching your mortgage worth it in Ireland?' /tmp/switch-article.html
+          grep -Fq '/mortgage-switch-calculator/' /tmp/switch-article.html
+          grep -Fq '/mortgage-calculator/' /tmp/switch-article.html
+          grep -Fq '/mortgage-overpayment-calculator/' /tmp/switch-article.html
+
+          grep -Fq '/wealth/is-switching-your-mortgage-worth-it-ireland/' /tmp/switch.html
+
           fetch https://compound.ie/wealth/mortgage-overpayments-100-euro-ireland/ /tmp/mortgage-article.html
           grep -Fq '/mortgage-overpayment-calculator/' /tmp/mortgage-article.html
           grep -Fq '/mortgage-switch-calculator/' /tmp/mortgage-article.html
