@@ -75,7 +75,7 @@ tools:
 
       This tool applies both constraints and shows the lower resulting purchase-price estimate. A lender can approve less after looking at affordability, age, other borrowing, dependants and its own credit policy. A limited share of lending can also be issued above the macroprudential limits.
     sources:
-      - {title: Central Bank of Ireland — Mortgage Measures, url: "https://www.centralbank.ie/financial-system/financial-stability/macro-prudential-policy/mortgage-measures"}
+      - {title: "Central Bank of Ireland — Mortgage Measures", url: "https://www.centralbank.ie/financial-system/financial-stability/macro-prudential-policy/mortgage-measures"}
 
   - slug: house-deposit-calculator
     title: House Deposit Calculator Ireland
@@ -103,7 +103,7 @@ tools:
 
       This is only the loan-to-value side of the rules. Owner-occupiers are also subject to loan-to-income limits, and lenders apply their own affordability tests.
     sources:
-      - {title: Central Bank of Ireland — Mortgage Measures, url: "https://www.centralbank.ie/financial-system/financial-stability/macro-prudential-policy/mortgage-measures"}
+      - {title: "Central Bank of Ireland — Mortgage Measures", url: "https://www.centralbank.ie/financial-system/financial-stability/macro-prudential-policy/mortgage-measures"}
 
   - slug: stamp-duty-calculator
     title: Stamp Duty Calculator Ireland
@@ -124,7 +124,7 @@ tools:
 
       This calculator is for a straightforward residential purchase. Different rules can apply to bulk acquisitions, mixed-use property, gifts, exchanges and other transactions. Legal advice may be required for a real purchase.
     sources:
-      - {title: Revenue — Stamp Duty property rates, url: "https://www.revenue.ie/en/property/stamp-duty/property/stamp-duty-property/rates.aspx"}
+      - {title: "Revenue — Stamp Duty property rates", url: "https://www.revenue.ie/en/property/stamp-duty/property/stamp-duty-property/rates.aspx"}
 
   - slug: local-property-tax-calculator
     title: Local Property Tax Calculator Ireland 2026
@@ -181,7 +181,7 @@ tools:
 
       This tool uses Revenue's published 2026 bands and local-authority adjustments. For properties above €2.1 million it applies Revenue's percentage formula to the declared value. Exemptions, deferrals and unusual circumstances are outside this simple estimate.
     sources:
-      - {title: Revenue — LPT valuation bands and 2026 local adjustments, url: "https://www.revenue.ie/en/property/local-property-tax/valuing-your-property/valuation-bands-rates.aspx"}
+      - {title: "Revenue — LPT valuation bands and 2026 local adjustments", url: "https://www.revenue.ie/en/property/local-property-tax/valuing-your-property/valuation-bands-rates.aspx"}
 
   - slug: loan-repayment-calculator
     title: Loan Repayment Calculator Ireland
@@ -280,7 +280,7 @@ tools:
 
       This tool estimates income-tax relief only and lets you choose a 20% or 40% illustration. Your actual relief depends on your taxable income, pension arrangement and other circumstances. Pension contributions do not simply create an automatic refund at the selected rate if you have insufficient income taxed at that rate.
     sources:
-      - {title: Revenue — Tax relief limits on pension contributions, url: "https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx"}
+      - {title: "Revenue — Tax relief limits on pension contributions", url: "https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx"}
 
   - slug: capital-gains-tax-calculator
     title: Capital Gains Tax Calculator Ireland
@@ -304,8 +304,8 @@ tools:
 
       This calculator does not determine whether a disposal is exempt, whether a relief such as Principal Private Residence relief applies, or whether a special CGT rate applies. It also does not calculate tax on Irish-domiciled investment funds, which can fall under different tax rules.
     sources:
-      - {title: Revenue — How to calculate CGT, url: "https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx"}
-      - {title: Revenue — CGT exemptions, url: "https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx"}
+      - {title: "Revenue — How to calculate CGT", url: "https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx"}
+      - {title: "Revenue — CGT exemptions", url: "https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx"}
 
   - slug: vat-calculator
     title: VAT Calculator Ireland 2026
@@ -343,7 +343,7 @@ tools:
 
       Use this calculator only after identifying the correct rate. It does not decide whether a business must register for VAT or whether a particular product or service qualifies for a reduced or zero rate.
     sources:
-      - {title: Revenue — Current VAT rates, url: "https://www.revenue.ie/en/vat/vat-rates/search-vat-rates/current-VAT-rates.aspx"}
+      - {title: "Revenue — Current VAT rates", url: "https://www.revenue.ie/en/vat/vat-rates/search-vat-rates/current-VAT-rates.aspx"}
 
   - slug: inflation-calculator
     title: Inflation Calculator Ireland
@@ -522,8 +522,8 @@ tools:
       Class A employee PRSI is 4.20% up to 30 September 2026 and 4.35% from 1 October 2026 for earnings above the contribution threshold. This annual estimate blends those periods and applies the weekly PRSI credit where relevant. Payroll can differ because real deductions are calculated by pay period and depend on your exact circumstances.
     sources:
       - {title: Revenue — 2026 tax rates, bands and credits, url: "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx"}
-      - {title: Revenue — 2026 USC rates and thresholds, url: "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx"}
-      - {title: Department of Social Protection — PRSI Class A rates, url: "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/"}
+      - {title: "Revenue — 2026 USC rates and thresholds", url: "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx"}
+      - {title: "Department of Social Protection — PRSI Class A rates", url: "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/"}
 
   - slug: income-tax-calculator
     title: Income Tax Calculator Ireland 2026
@@ -570,8 +570,8 @@ tools:
 
       This tool uses the standard bands. Reduced rates and special categories are not modelled.
     sources:
-      - {title: Revenue — Standard USC rates and thresholds, url: "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx"}
-      - {title: Revenue — USC exemptions, url: "https://www.revenue.ie/en/jobs-and-pensions/usc/exempt-payments-income.aspx"}
+      - {title: "Revenue — Standard USC rates and thresholds", url: "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx"}
+      - {title: "Revenue — USC exemptions", url: "https://www.revenue.ie/en/jobs-and-pensions/usc/exempt-payments-income.aspx"}
 
   - slug: prsi-calculator
     title: PRSI Calculator Ireland 2026
@@ -593,7 +593,7 @@ tools:
 
       The annual figure assumes an even weekly salary and approximates 39 weeks at the earlier rate and 13 weeks at the later rate. Actual payroll is calculated pay period by pay period.
     sources:
-      - {title: Department of Social Protection — PRSI Class A rates, url: "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/"}
+      - {title: "Department of Social Protection — PRSI Class A rates", url: "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/"}
 
   - slug: inheritance-tax-calculator
     title: Inheritance & Gift Tax Calculator Ireland
@@ -631,9 +631,9 @@ tools:
 
       Gifts can also use the €3,000 Small Gift Exemption from each disponer in a calendar year. This calculator applies one €3,000 exemption when “Gift” is selected. It does not model spouse/civil-partner exemptions, dwelling-house relief, agricultural relief, business relief or valuation complexities.
     sources:
-      - {title: Revenue — CAT thresholds, url: "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx"}
-      - {title: Revenue — CAT rates, url: "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-rates.aspx"}
-      - {title: Revenue — Small Gift Exemption, url: "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-exemptions/small-gift-exemption/index.aspx"}
+      - {title: "Revenue — CAT thresholds", url: "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx"}
+      - {title: "Revenue — CAT rates", url: "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-rates.aspx"}
+      - {title: "Revenue — Small Gift Exemption", url: "https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-exemptions/small-gift-exemption/index.aspx"}
 
   - slug: rent-tax-credit-calculator
     title: Rent Tax Credit Calculator Ireland 2026
@@ -662,7 +662,7 @@ tools:
 
       This calculator estimates the amount only. Revenue's qualifying conditions still need to be met.
     sources:
-      - {title: Revenue — How much Rent Tax Credit can you claim?, url: "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/how-much-claim.aspx"}
+      - {title: "Revenue — How much Rent Tax Credit can you claim?", url: "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/how-much-claim.aspx"}
 
   - slug: help-to-buy-calculator
     title: Help to Buy Calculator Ireland
@@ -686,8 +686,8 @@ tools:
 
       This tool checks those numerical conditions only. First-time-buyer status, occupancy, lender, tax-compliance and property requirements still apply.
     sources:
-      - {title: Revenue — How much can you claim under Help to Buy?, url: "https://www.revenue.ie/en/property/help-to-buy-incentive/how-much-can-you-claim.aspx"}
-      - {title: Revenue — What is a qualifying Help to Buy property?, url: "https://www.revenue.ie/en/property/help-to-buy-incentive/what-type-of-property-qualifies.aspx"}
+      - {title: "Revenue — How much can you claim under Help to Buy?", url: "https://www.revenue.ie/en/property/help-to-buy-incentive/how-much-can-you-claim.aspx"}
+      - {title: "Revenue — What is a qualifying Help to Buy property?", url: "https://www.revenue.ie/en/property/help-to-buy-incentive/what-type-of-property-qualifies.aspx"}
 
   - slug: first-home-scheme-calculator
     title: First Home Scheme Calculator Ireland
@@ -719,8 +719,8 @@ tools:
 
       The Scheme also has buyer, lender, property and local-authority price-ceiling conditions. This calculator only estimates the arithmetic funding gap; it does not determine formal eligibility.
     sources:
-      - {title: First Home Scheme — Eligibility, url: "https://www.firsthomescheme.ie/about-the-scheme/eligibility/"}
-      - {title: First Home Scheme — How the equity share works, url: "https://www.firsthomescheme.ie/about-the-scheme/how-the-equity-share-works/"}
+      - {title: "First Home Scheme — Eligibility", url: "https://www.firsthomescheme.ie/about-the-scheme/eligibility/"}
+      - {title: "First Home Scheme — How the equity share works", url: "https://www.firsthomescheme.ie/about-the-scheme/how-the-equity-share-works/"}
 
   - slug: dirt-calculator
     title: DIRT Calculator Ireland
@@ -739,7 +739,7 @@ tools:
       ## Current DIRT rate
       Revenue states that DIRT is deducted at 33% from deposit interest paid to Irish-resident individuals. Certain people and account types can qualify for exemptions or refunds, which this simple calculator does not model.
     sources:
-      - {title: Revenue — Current DIRT rate, url: "https://www.revenue.ie/en/additional-incomes/dirt/what-dirt-rate-is-applicable.aspx"}
+      - {title: "Revenue — Current DIRT rate", url: "https://www.revenue.ie/en/additional-incomes/dirt/what-dirt-rate-is-applicable.aspx"}
 
   - slug: contractor-vs-salary-calculator
     title: Contractor Day Rate vs Salary Calculator Ireland 2026
@@ -767,8 +767,8 @@ tools:
       This does not decide whether a real engagement is employment or self-employment, and it does not value paid leave, employer pension contributions, sick pay, insurance, administration time, VAT, limited-company structures or employment rights. Use it to test the size of the gap, then price those differences separately.
     sources:
       - {title: Revenue — 2026 tax rates, bands and credits, url: "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx"}
-      - {title: Revenue — 2026 USC rates, url: "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx"}
-      - {title: Department of Social Protection — PRSI Class S rates, url: "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/"}
+      - {title: "Revenue — 2026 USC rates", url: "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx"}
+      - {title: "Department of Social Protection — PRSI Class S rates", url: "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/"}
 
   - slug: investment-fee-calculator
     title: Investment Fee Impact Calculator
@@ -932,7 +932,7 @@ tools:
 
       The percentage you enter is your scenario assumption, not a Central Bank affordability rule and not a lender approval test.
     sources:
-      - {title: Central Bank of Ireland — Mortgage Measures, url: "https://www.centralbank.ie/financial-system/financial-stability/macro-prudential-policy/mortgage-measures"}
+      - {title: "Central Bank of Ireland — Mortgage Measures", url: "https://www.centralbank.ie/financial-system/financial-stability/macro-prudential-policy/mortgage-measures"}
 
   - slug: house-buying-costs-calculator
     title: House Buying Costs Calculator Ireland
@@ -960,7 +960,7 @@ tools:
 
       Mortgage protection, home insurance, furnishing, repairs and scheme-specific costs may need a separate budget.
     sources:
-      - {title: Revenue — Residential Stamp Duty rates, url: "https://www.revenue.ie/en/property/stamp-duty/property/stamp-duty-property/rates.aspx"}
+      - {title: "Revenue — Residential Stamp Duty rates", url: "https://www.revenue.ie/en/property/stamp-duty/property/stamp-duty-property/rates.aspx"}
 
   - slug: solar-payback-calculator
     title: Solar PV Payback Calculator Ireland
@@ -988,7 +988,7 @@ tools:
 
       Generation, self-consumption and export value vary materially by roof, orientation, shading, household use, tariff and system design. The graph holds your assumptions constant and does not include panel degradation, inverter replacement, financing or future electricity-price changes.
     sources:
-      - {title: SEAI — Solar Electricity PV Grant, url: "https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant"}
+      - {title: "SEAI — Solar Electricity PV Grant", url: "https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant"}
 
   - slug: ber-energy-cost-calculator
     title: BER Energy Cost Calculator Ireland
@@ -1014,4 +1014,4 @@ tools:
 
       This calculator therefore does not guess a kWh figure from a letter grade. Enter an energy-use assumption or figure relevant to your assessment and compare it with a target. Actual bills also depend on fuel mix, standing charges, tariffs, occupancy and behaviour.
     sources:
-      - {title: SEAI — Building Energy Rating information, url: "https://www.seai.ie/ber"}
+      - {title: "SEAI — Building Energy Rating information", url: "https://www.seai.ie/ber"}
