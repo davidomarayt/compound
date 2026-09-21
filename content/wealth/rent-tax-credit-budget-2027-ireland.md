@@ -10,6 +10,26 @@ reviewed: 2026-09-21
 summary: 'Taoiseach Micheál Martin says the Rent Tax Credit will be increased in Budget 2027. The new amount has not yet been announced. Here is what the current credit is worth, who can claim it and how to judge the eventual increase.'
 meta_description: 'Ireland’s Rent Tax Credit will increase in Budget 2027. See the current €1,000 individual credit, eligibility rules, how to claim and what a higher credit could mean.'
 tags: [budget-2027, rent-tax-credit, renters, housing, income-tax, ireland]
+social:
+  enabled: true
+  x:
+    enabled: true
+    text: >-
+      Ireland's Rent Tax Credit is increasing in Budget 2027. The new amount
+      has not yet been announced. Here is what renters need to know.
+  linkedin:
+    enabled: true
+    text: >-
+      Ireland's Rent Tax Credit will increase in Budget 2027, but the final
+      amount has not yet been announced. We break down the current €1,000
+      individual credit, eligibility rules and what different increases would
+      mean in practical euro terms.
+  instagram:
+    enabled: false
+    caption: >-
+      Rent Tax Credit update: an increase is confirmed for Budget 2027, but
+      the new maximum has not yet been announced. Our guide explains the
+      current credit, who qualifies and what to watch on Budget day.
 sources:
 - title: 'RTÉ News: Rent tax credit to be increased in Budget, says Taoiseach — 21 September 2026'
   url: https://www.rte.ie/news/2026/0921/1592282-budget-politics-ireland/
