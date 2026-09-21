@@ -4,7 +4,7 @@
 {% block head %}
 <link rel="canonical" href="{{ site_url }}{{ tool.url }}">
 <meta property="og:type" content="website"><meta property="og:title" content="{{ tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="/static/tools.css?v=20260921b"><script defer src="/static/tools.js?v=20260921b"></script>
+<link rel="stylesheet" href="/static/tools.css?v=20260921c"><script defer src="/static/tools.js?v=20260921c"></script>
 <script type="application/ld+json">{{ tool_jsonld|safe }}</script>
 {% endblock %}
 {% block content %}
@@ -19,8 +19,11 @@
       <div><p class="eyebrow">YOUR NUMBERS</p><h2>Enter your details</h2><p>Results update when you calculate. Nothing you enter is submitted to Compound.</p></div>
       <div class="tool-fields">
       {% for field in tool.fields %}
-        <label class="tool-field" for="tool-{{ field.id }}">
-          <span>{{ field.label }}</span>
+        <div class="tool-field{% if field.type == 'checkbox' %} tool-field-checkbox{% endif %}"{% if field.show_if %} data-show-if="{{ field.show_if }}"{% endif %}>
+          {% if field.type == "checkbox" %}
+          <label class="tool-check" for="tool-{{ field.id }}"><input id="tool-{{ field.id }}" name="{{ field.id }}" data-field="{{ field.id }}" type="checkbox" {% if field.default %}checked{% endif %}><span>{{ field.label }}</span></label>
+          {% else %}
+          <label for="tool-{{ field.id }}">{{ field.label }}</label>
           {% if field.type == "select" %}
           <select id="tool-{{ field.id }}" name="{{ field.id }}" data-field="{{ field.id }}">
             {% for option in field.options %}<option value="{{ option.value }}" {% if option.value|string == field.default|string %}selected{% endif %}>{{ option.label }}</option>{% endfor %}
@@ -28,7 +31,9 @@
           {% else %}
           <span class="tool-input-wrap">{% if field.prefix %}<span class="tool-affix">{{ field.prefix }}</span>{% endif %}<input id="tool-{{ field.id }}" name="{{ field.id }}" data-field="{{ field.id }}" type="number" inputmode="decimal" value="{{ field.default }}" {% if field.min is defined %}min="{{ field.min }}"{% endif %} {% if field.max is defined %}max="{{ field.max }}"{% endif %} step="{{ field.step or 'any' }}">{% if field.suffix %}<span class="tool-affix tool-affix-right">{{ field.suffix }}</span>{% endif %}</span>
           {% endif %}
-        </label>
+          {% endif %}
+          {% if field.help %}<small class="tool-field-help">{{ field.help }}</small>{% endif %}
+        </div>
       {% endfor %}
       </div>
       <p class="tool-error" data-tool-error role="status"></p>

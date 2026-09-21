@@ -966,29 +966,330 @@ tools:
     title: Solar PV Payback Calculator Ireland
     category: Home Energy
     formula: solar_payback
-    summary: Estimate annual solar value, SEAI grant, simple payback and cumulative savings.
-    meta_description: Solar PV payback calculator Ireland. Estimate SEAI solar grant, annual electricity savings, export income and simple payback from system size and energy prices.
+    summary: Model solar PV payback with or without the SEAI grant, plus household demand, EV charging, battery storage, export income and night-rate battery charging.
+    meta_description: Solar PV payback calculator Ireland with grant eligibility, household electricity use, EV charging, battery storage, night-rate arbitrage and export income.
     updated: 2026-09-21
     fields:
-      - {id: system_cost, label: Quoted installed system cost before grant, type: number, prefix: "€", default: 9000, min: 0, step: 100}
-      - {id: kwp, label: Solar PV system size, type: number, suffix: "kWp", default: 4, min: 0, max: 30, step: 0.1}
-      - {id: generation_per_kwp, label: Assumed annual generation per kWp, type: number, suffix: "kWh", default: 850, min: 0, max: 2000, step: 10}
-      - {id: self_consumption, label: Share of generation used in the home, type: number, suffix: "%", default: 60, min: 0, max: 100, step: 1}
-      - {id: import_rate, label: Avoided electricity import price, type: number, prefix: "€", suffix: "/kWh", default: 0.30, min: 0, step: 0.01}
-      - {id: export_rate, label: Export payment assumption, type: number, prefix: "€", suffix: "/kWh", default: 0.15, min: 0, step: 0.01}
-    results:
-      - {id: grant, label: Indicative SEAI solar PV grant}
-      - {id: net_cost, label: Net system cost after indicative grant}
-      - {id: annual_generation, label: Assumed annual generation}
-      - {id: annual_value, label: Estimated annual bill saving + export value}
-      - {id: payback, label: Simple payback}
-    guide: |
-      ## Current 2026 SEAI grant
-      SEAI currently lists €700 per kWp up to 2 kWp and €200 for each additional kWp up to 4 kWp, with a maximum domestic Solar PV grant of €1,800 in 2026. Eligibility conditions apply, so the grant result is an indicative amount rather than a promise of funding.
+      - id: system_cost
+        label: Solar PV installed cost before grant
+        type: number
+        prefix: "€"
+        default: 9000
+        min: 0
+        step: 100
+        help: Enter the solar PV quote excluding any battery cost. Keep VAT and installation charges in the figure if they are part of the quote.
+      - id: grant_eligible
+        label: Include the SEAI Solar PV grant
+        type: checkbox
+        default: true
+        help: Untick this if the home is not eligible, the grant has already been used at this MPRN, or you simply want to see the no-grant economics.
+      - id: kwp
+        label: Solar PV system size
+        type: number
+        suffix: "kWp"
+        default: 4
+        min: 0
+        max: 30
+        step: 0.1
+        help: Use the kWp figure from the installer quote.
+      - id: generation_per_kwp
+        label: Expected annual generation per kWp
+        type: number
+        suffix: "kWh"
+        default: 850
+        min: 0
+        max: 2000
+        step: 10
+        help: Replace the default with the installer or SEAI estimate for your location, roof direction, pitch and shading.
+      - id: annual_home_kwh
+        label: Household electricity use before EV
+        type: number
+        suffix: "kWh/year"
+        default: 4200
+        min: 0
+        step: 100
+        help: 4,200 kWh is the CRU average annual-consumption figure and a useful starting point for a typical 3–4 bed semi. Your own bill or smart-meter data is better.
+      - id: direct_solar_pct
+        label: Solar generation used directly by the home before EV/battery
+        type: number
+        suffix: "%"
+        default: 35
+        min: 0
+        max: 100
+        step: 1
+        help: This is an assumption about how well your daytime household demand overlaps solar generation before adding EV or battery storage.
+      - id: import_rate
+        label: Day / avoided import rate
+        type: number
+        prefix: "€"
+        suffix: "/kWh"
+        default: 0.30
+        min: 0
+        step: 0.01
+        help: Use the rate that solar or battery discharge would actually avoid. Do not include standing charges.
+      - id: export_rate
+        label: Solar export payment
+        type: number
+        prefix: "€"
+        suffix: "/kWh"
+        default: 0.15
+        min: 0
+        step: 0.01
+        help: Suppliers set their own Clean Export Guarantee rate, so use the rate on your current or proposed tariff.
 
-      Generation, self-consumption and export value vary materially by roof, orientation, shading, household use, tariff and system design. The graph holds your assumptions constant and does not include panel degradation, inverter replacement, financing or future electricity-price changes.
+      - id: has_ev
+        label: EV is charged at this home
+        type: checkbox
+        default: false
+        help: Tick this to include the extra electricity demand from home EV charging and the option to divert solar into the car.
+      - id: annual_ev_km
+        label: EV distance driven per year
+        type: number
+        suffix: "km"
+        default: 15000
+        min: 0
+        step: 500
+        show_if: has_ev
+      - id: ev_efficiency
+        label: EV consumption
+        type: number
+        suffix: "kWh/100km"
+        default: 18
+        min: 1
+        max: 60
+        step: 0.5
+        show_if: has_ev
+        help: Use a real-world figure from the car if you have it.
+      - id: ev_loss_pct
+        label: EV charging losses
+        type: number
+        suffix: "%"
+        default: 10
+        min: 0
+        max: 40
+        step: 1
+        show_if: has_ev
+      - id: ev_home_charge_pct
+        label: Share of EV charging done at home
+        type: number
+        suffix: "%"
+        default: 80
+        min: 0
+        max: 100
+        step: 1
+        show_if: has_ev
+      - id: ev_solar_share_pct
+        label: Share of home EV charging you expect to take directly from solar
+        type: number
+        suffix: "%"
+        default: 0
+        min: 0
+        max: 100
+        step: 1
+        show_if: has_ev
+        help: Leave at 0% if the car is normally away during solar hours. Increase it if the EV is regularly home and a charger can follow solar surplus.
+      - id: ev_alternative_rate
+        label: Grid rate the solar EV charging would otherwise use
+        type: number
+        prefix: "€"
+        suffix: "/kWh"
+        default: 0.10
+        min: 0
+        step: 0.01
+        show_if: has_ev
+        help: If you normally charge the EV on a cheap night/EV rate, solar charging only avoids that cheaper rate, not the daytime rate.
+
+      - id: has_battery
+        label: Include a home battery
+        type: checkbox
+        default: false
+        help: Tick this if the quote includes a battery or you want to test whether adding one improves or lengthens payback.
+      - id: battery_cost
+        label: Battery installed cost
+        type: number
+        prefix: "€"
+        default: 4500
+        min: 0
+        step: 100
+        show_if: has_battery
+        help: Enter the incremental cost of the battery, inverter changes and installation if applicable.
+      - id: battery_kwh
+        label: Usable battery capacity
+        type: number
+        suffix: "kWh"
+        default: 5
+        min: 0.1
+        max: 100
+        step: 0.5
+        show_if: has_battery
+      - id: battery_efficiency
+        label: Battery round-trip efficiency
+        type: number
+        suffix: "%"
+        default: 90
+        min: 50
+        max: 100
+        step: 1
+        show_if: has_battery
+        help: Storage is not lossless. Use the manufacturer's round-trip figure where available.
+      - id: solar_to_battery_pct
+        label: Share of remaining solar surplus you expect the battery to capture
+        type: number
+        suffix: "%"
+        default: 60
+        min: 0
+        max: 100
+        step: 1
+        show_if: has_battery
+        help: The model also caps annual battery charging to one full equivalent charge per day, shared with night-rate charging.
+
+      - id: night_charge
+        label: Charge the home battery on a cheap night rate as well
+        type: checkbox
+        default: false
+        show_if: has_battery
+        help: This models grid shifting: buying electricity when it is cheap and discharging later to avoid the day rate.
+      - id: night_rate
+        label: Night / battery charging rate
+        type: number
+        prefix: "€"
+        suffix: "/kWh"
+        default: 0.10
+        min: 0
+        step: 0.01
+        show_if: night_charge
+      - id: night_battery_kwh_day
+        label: Average battery energy bought from the grid each night
+        type: number
+        suffix: "kWh/day"
+        default: 3
+        min: 0
+        step: 0.5
+        show_if: night_charge
+        help: Use a conservative average. The calculator limits combined solar and grid charging to one full equivalent battery charge per day across the year.
+
+    results:
+      - {id: grant, label: SEAI grant included}
+      - {id: net_cost, label: Net solar + battery investment}
+      - {id: annual_generation, label: Estimated solar generation}
+      - {id: total_demand, label: Household + home-EV electricity demand}
+      - {id: solar_used, label: Solar electricity used on site}
+      - {id: exported, label: Solar electricity exported}
+      - {id: solar_value, label: Annual value from solar generation}
+      - {id: battery_arbitrage, label: Annual night-rate battery saving}
+      - {id: annual_value, label: Total estimated annual value}
+      - {id: payback, label: Simple payback}
+
+    guide: |
+      ## Start with your real annual electricity use
+
+      The strongest input is not the number of bedrooms — it is the **kWh on your electricity bills or smart-meter data**. If you do not know it yet, **4,200 kWh a year** is the CRU average-consumption figure used for Irish electricity comparisons. Electric Ireland's household benchmarks also use about **4,200 kWh for a 3–4 bed semi-detached home**, around **3,000 kWh for a 2-bed semi**, and around **6,000 kWh for a 3–4 bed detached home**.
+
+      Those are starting points, not targets. An all-electric home, heat pump, electric shower, tumble dryer, EV or large family can move consumption materially higher. A very efficient home can use much less.
+
+      | Household starting point | Indicative annual electricity use |
+      | --- | ---: |
+      | 2-bed semi | 3,000 kWh |
+      | 3–4 bed semi | 4,200 kWh |
+      | 3–4 bed detached | 6,000 kWh |
+      | 4–6 bed detached | 8,000 kWh |
+
+      If you have a smart meter, your own half-hourly import/export data is much more useful than a national average because **when** you use electricity determines how much solar you can use directly.
+
+      ## Grant eligible or not?
+
+      The calculator now makes the grant optional. For the individual SEAI domestic Solar PV grant, the home needs an MPRN, must have been **built and occupied before 2021**, and cannot previously have received solar-PV funding at that MPRN. SEAI also requires the grant application and approval to be in place before works start.
+
+      For an eligible installation, the 2026 grant is **€700 per kWp up to 2 kWp, then €200 per additional kWp up to 4 kWp, capped at €1,800**. Untick **“Include the SEAI Solar PV grant”** if any eligibility condition is not met or if you want to see the project on a no-grant basis.
+
+      ## Generation is not the same as saving
+
+      A 4 kWp array generating 850 kWh per kWp would produce about **3,400 kWh in a year**. But every generated unit does not automatically save the daytime retail rate.
+
+      The calculator separates generation into four destinations:
+
+      1. **Used directly by the house.** This avoids buying electricity at the import rate you entered.
+      2. **Used directly to charge an EV.** This avoids whatever rate you would otherwise use to charge the car. If you normally charge overnight at 10c/kWh, a solar kWh going into the car is closer to a 10c saving than a 30c saving.
+      3. **Stored in a battery and used later.** Battery losses mean less energy comes back out than went in.
+      4. **Exported to the grid.** This earns your supplier's Clean Export Guarantee rate rather than the retail import rate.
+
+      SEAI notes that Irish solar generation is highly seasonal, with around **75% produced from May to September**. A home battery shifts energy from one part of the day to another; it does not move a July surplus into January.
+
+      ## How the EV changes the calculation
+
+      An EV can make a solar system more valuable **if the car is actually available to take solar generation**.
+
+      The calculator estimates wall energy for the EV from:
+
+      **annual km × kWh/100 km ÷ charging efficiency × share charged at home**
+
+      For example, 15,000 km at 18 kWh/100 km is 2,700 kWh delivered to the car. With 10% charging losses, that is about 3,000 kWh from the charger if every charge happens at home. If only 80% is charged at home, the home sees about 2,400 kWh of additional annual demand.
+
+      That extra demand does **not** automatically mean more solar self-consumption. Set the **solar share of home EV charging** to match reality. If the car leaves at 07:30 and returns after sunset, use a low figure. If it sits at home during the day and a smart charger follows surplus generation, a higher figure can be reasonable.
+
+      SEAI specifically notes that smart charging can schedule EV charging around solar production and that off-peak grid charging is usually cheaper than charging at peak times.
+
+      ## What a battery can add
+
+      A battery can improve solar self-consumption by storing daytime surplus for the evening. The model first gives the home and EV a chance to use solar directly, then allows the battery to capture a share of the remaining surplus.
+
+      The important comparison is not simply:
+
+      **stored kWh × daytime electricity rate**
+
+      because without a battery that surplus solar could have been exported and earned an export payment. The calculator therefore compares the value of using battery-delivered solar against the export income that is given up, while also applying the round-trip efficiency you enter.
+
+      Battery cost is added to the initial investment. This matters: a battery can reduce the electricity bill while still **lengthening the payback period** if the extra annual saving is small relative to the installed battery price.
+
+      ## Charging the battery at night and using it by day
+
+      A smart tariff can create a second source of battery value even in winter: charge from the grid when electricity is cheap and discharge when it is expensive.
+
+      Suppose the day rate is 30c/kWh, the night rate is 10c/kWh and round-trip efficiency is 90%. Delivering 1 kWh from the battery requires roughly 1.11 kWh of night electricity, costing about 11.1c. Avoiding a 30c daytime unit leaves a gross spread of about **18.9c per delivered kWh** before battery degradation and other costs.
+
+      That spread can be valuable, but it should not be multiplied by the full battery capacity blindly. The battery is also being used for solar. To keep the estimate conservative, this calculator caps the **combined solar charging plus night-grid charging at one full equivalent battery charge per day over the year**.
+
+      ## Export still has value
+
+      Solar that the home, EV and battery cannot absorb is treated as exported. SEAI describes the Clean Export Guarantee as a supplier payment for excess generation; suppliers set their own rates. Enter the actual export rate available to you rather than assuming the rate shown here will always apply.
+
+      A larger array can therefore still make sense even when self-consumption falls, but the economics increasingly depend on the difference between the export rate and the retail rate you avoid.
+
+      ## What is included in payback
+
+      The simple payback is:
+
+      **net upfront investment ÷ estimated annual value**
+
+      The upfront investment includes the solar quote, plus the battery cost if selected, minus the SEAI grant only when the grant box is ticked.
+
+      Annual value includes direct household solar savings, direct EV solar savings, battery-shifted solar, export income and any positive or negative night-rate battery-arbitrage result.
+
+      ## What this calculator deliberately does not pretend to know
+
+      It does not forecast future electricity tariffs, future export rates, panel degradation, battery degradation, battery replacement, inverter replacement, financing interest, maintenance, curtailment, changes in household behaviour or future EV mileage.
+
+      SEAI notes that batteries increase system cost and lose some energy during the charge/discharge cycle. It also advises that PV generation should be monitored and that the inverter can require replacement during the system lifetime.
+
+      Use the calculator to compare **scenarios**:
+
+      - grant eligible versus no grant;
+      - solar only versus solar + battery;
+      - no EV versus an EV charged at home;
+      - EV charged at night versus EV charged from daytime solar;
+      - battery used only for solar versus solar + night-rate grid shifting;
+      - a smaller system with high self-consumption versus a larger system with more export.
+
+      The most useful result is often not the headline payback number but seeing **which assumption is doing the work**.
+
     sources:
       - {title: "SEAI — Solar Electricity PV Grant", url: "https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant"}
+      - {title: "SEAI — Solar Electricity Calculator and assumptions", url: "https://www.seai.ie/about/tools/solar-electricity-calculator"}
+      - {title: "SEAI — Electricity from Solar: batteries, export and seasonality", url: "https://www.seai.ie/renewable-energy/solar-energy/electricity-from-solar"}
+      - {title: "SEAI — Smart energy technologies: solar, EVs and battery storage", url: "https://www.seai.ie/plan-your-energy-journey/for-your-home/smart-living/smart-energy-technologies"}
+      - {title: "CRU — Smart Meter Glossary: 4,200 kWh average household consumption", url: "https://www.cru.ie/about-us/news/smart-meter-glossary/"}
+      - {title: "CRU — Microgeneration and export payments", url: "https://www.cru.ie/consumer-information/microgeneration/"}
+      - {title: "Electric Ireland — Household electricity-consumption benchmarks", url: "https://www.electricireland.ie/residential/help/detail/energy-efficiency-advice"}
 
   - slug: ber-energy-cost-calculator
     title: BER Energy Cost Calculator Ireland

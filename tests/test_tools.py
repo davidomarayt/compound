@@ -41,3 +41,23 @@ def test_high_intent_tool_routes_present():
         "house-buying-costs-calculator", "solar-payback-calculator", "ber-energy-cost-calculator",
     }
     assert expected <= slugs
+
+
+def test_solar_payback_has_energy_system_controls():
+    content_dir = Path(__file__).parents[1] / "content"
+    solar = next(tool for tool in load_tools(content_dir) if tool["slug"] == "solar-payback-calculator")
+    fields = {field["id"]: field for field in solar["fields"]}
+    assert fields["grant_eligible"]["type"] == "checkbox"
+    assert fields["has_ev"]["type"] == "checkbox"
+    assert fields["has_battery"]["type"] == "checkbox"
+    assert fields["night_charge"]["type"] == "checkbox"
+    assert fields["annual_home_kwh"]["default"] == 4200
+    assert fields["annual_ev_km"]["show_if"] == "has_ev"
+    assert fields["battery_cost"]["show_if"] == "has_battery"
+    assert fields["night_rate"]["show_if"] == "night_charge"
+    result_ids = {result["id"] for result in solar["results"]}
+    assert {"grant", "total_demand", "solar_used", "exported", "battery_arbitrage", "payback"} <= result_ids
+    guide = solar["guide"]
+    assert "4,200 kWh" in guide
+    assert "built and occupied before 2021" in guide
+    assert "EV" in guide and "battery" in guide.lower() and "night" in guide.lower()

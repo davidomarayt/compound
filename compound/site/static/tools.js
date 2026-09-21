@@ -307,11 +307,84 @@
       };
     },
     solar_payback(v){
-      const grant=Math.min(1800,Math.min(v.kwp,2)*700+Math.max(0,Math.min(v.kwp-2,2))*200), net=Math.max(0,v.system_cost-grant), generation=v.kwp*v.generation_per_kwp, self=generation*v.self_consumption/100, exported=generation-self, annual=self*v.import_rate+exported*v.export_rate, payback=annual>0?net/annual:Infinity;
-      const labels=['Install'],values=[-net];for(let y=1;y<=20;y++){labels.push('Year '+y);values.push(-net+annual*y);}
+      const generation=Math.max(0,v.kwp*v.generation_per_kwp);
+      const rawGrant=Math.min(1800,Math.min(Math.max(0,v.kwp),2)*700+Math.max(0,Math.min(v.kwp-2,2))*200);
+      const grant=v.grant_eligible?rawGrant:0;
+
+      const homeDemand=Math.max(0,v.annual_home_kwh);
+      const directHome=Math.min(generation*Math.max(0,Math.min(100,v.direct_solar_pct))/100,homeDemand);
+      let remainingSolar=Math.max(0,generation-directHome);
+
+      let evHomeDemand=0, directEv=0;
+      if(v.has_ev){
+        const chargeEfficiency=Math.max(.01,1-Math.max(0,Math.min(40,v.ev_loss_pct))/100);
+        const vehicleEnergy=Math.max(0,v.annual_ev_km)*Math.max(0,v.ev_efficiency)/100;
+        evHomeDemand=vehicleEnergy/chargeEfficiency*Math.max(0,Math.min(100,v.ev_home_charge_pct))/100;
+        directEv=Math.min(remainingSolar,evHomeDemand*Math.max(0,Math.min(100,v.ev_solar_share_pct))/100);
+        remainingSolar=Math.max(0,remainingSolar-directEv);
+      }
+
+      const totalDemand=homeDemand+evHomeDemand;
+      const efficiency=v.has_battery?Math.max(.01,Math.min(1,v.battery_efficiency/100)):1;
+      const batteryCapacity=v.has_battery?Math.max(0,v.battery_kwh):0;
+      const annualBatteryInputCapacity=batteryCapacity*365;
+      const remainingDemandBeforeBattery=Math.max(0,totalDemand-directHome-directEv);
+
+      let solarBatteryInput=0, solarBatteryDelivered=0;
+      if(v.has_battery&&batteryCapacity>0){
+        const requestedSolarInput=remainingSolar*Math.max(0,Math.min(100,v.solar_to_battery_pct))/100;
+        solarBatteryInput=Math.min(requestedSolarInput,annualBatteryInputCapacity,remainingDemandBeforeBattery/efficiency);
+        solarBatteryDelivered=solarBatteryInput*efficiency;
+        remainingSolar=Math.max(0,remainingSolar-solarBatteryInput);
+      }
+
+      const exported=remainingSolar;
+      const directHomeValue=directHome*Math.max(0,v.import_rate);
+      const directEvValue=directEv*Math.max(0,v.ev_alternative_rate);
+      const batterySolarValue=solarBatteryDelivered*Math.max(0,v.import_rate);
+      const exportValue=exported*Math.max(0,v.export_rate);
+      const solarValue=directHomeValue+directEvValue+batterySolarValue+exportValue;
+
+      let nightInput=0, nightDelivered=0, arbitrage=0;
+      if(v.has_battery&&v.night_charge&&batteryCapacity>0){
+        const remainingAnnualBatteryInput=Math.max(0,annualBatteryInputCapacity-solarBatteryInput);
+        const requestedNightInput=Math.max(0,v.night_battery_kwh_day)*365;
+        const remainingGridDemand=Math.max(0,totalDemand-directHome-directEv-solarBatteryDelivered);
+        nightInput=Math.min(requestedNightInput,remainingAnnualBatteryInput,remainingGridDemand/efficiency);
+        nightDelivered=nightInput*efficiency;
+        arbitrage=nightDelivered*Math.max(0,v.import_rate)-nightInput*Math.max(0,v.night_rate);
+      }
+
+      const batteryCost=v.has_battery?Math.max(0,v.battery_cost):0;
+      const solarOnlyNet=Math.max(0,v.system_cost-grant);
+      const net=Math.max(0,solarOnlyNet+batteryCost);
+      const annual=solarValue+arbitrage;
+      const payback=annual>0?net/annual:Infinity;
+
+      const solarOnlyExport=Math.max(0,generation-directHome-directEv);
+      const solarOnlyAnnual=directHomeValue+directEvValue+solarOnlyExport*Math.max(0,v.export_rate);
+      const labels=['Install'],full=[-net],solarOnly=[-solarOnlyNet];
+      for(let year=1;year<=20;year++){
+        labels.push('Year '+year);
+        full.push(-net+annual*year);
+        solarOnly.push(-solarOnlyNet+solarOnlyAnnual*year);
+      }
+      const series=v.has_battery
+        ? [{label:'Solar + battery scenario',values:full},{label:'Solar-only comparison',values:solarOnly}]
+        : [{label:'Solar scenario',values:full}];
+
       return {
-        grant:money(grant),net_cost:money(net),annual_generation:num(generation)+' kWh',annual_value:money(annual),payback:Number.isFinite(payback)?number.format(payback)+' years':'Not reached',
-        __chart:{type:'line',title:'Simple cumulative solar payback',caption:'Starts with the net system cost and adds the same annual saving/export value each year.',labels,series:[{label:'Cumulative cash position',values}]}
+        grant:money(grant),
+        net_cost:money(net),
+        annual_generation:num(generation)+' kWh',
+        total_demand:num(totalDemand)+' kWh',
+        solar_used:num(directHome+directEv+solarBatteryDelivered)+' kWh',
+        exported:num(exported)+' kWh',
+        solar_value:money(solarValue),
+        battery_arbitrage:(arbitrage>=0?'':'-')+money(Math.abs(arbitrage)),
+        annual_value:money(annual),
+        payback:Number.isFinite(payback)?number.format(payback)+' years':'Not reached',
+        __chart:{type:'line',title:'Cumulative payback under your assumptions',caption:'Solar-only is shown separately when a battery is selected. Constant annual savings are assumed; degradation and tariff changes are not modelled.',labels,series}
       };
     },
     ber_energy(v){
@@ -329,6 +402,7 @@
       const values={}; let invalid=false;
       root.querySelectorAll('[data-field]').forEach(el=>{
         const raw=el.value;
+        if(el.type==='checkbox'){ values[el.dataset.field]=el.checked; return; }
         if(el.tagName==='SELECT'){ values[el.dataset.field]=raw; return; }
         const n=Number(raw); if(!Number.isFinite(n)){invalid=true; return;} values[el.dataset.field]=n;
       });
@@ -346,10 +420,23 @@
         if(window.gtag) window.gtag('event','tool_calculate',{tool_name:root.dataset.toolName});
       }catch(e){ error.textContent='This combination could not be calculated. Check the values and try again.'; }
     };
+    const syncVisibility=()=>{
+      root.querySelectorAll('[data-show-if]').forEach(wrapper=>{
+        const controller=root.querySelector('[data-field="'+wrapper.dataset.showIf+'"]');
+        let show=false;
+        if(controller){
+          if(controller.type==='checkbox') show=controller.checked;
+          else show=controller.value!==''&&controller.value!=='no'&&controller.value!=='false'&&controller.value!=='0';
+        }
+        wrapper.hidden=!show;
+      });
+    };
     if(form){
       form.addEventListener('submit',e=>{e.preventDefault();run();});
-      form.addEventListener('reset',()=>setTimeout(run,0));
+      form.addEventListener('change',()=>{syncVisibility();run();});
+      form.addEventListener('reset',()=>setTimeout(()=>{syncVisibility();run();},0));
     }
+    syncVisibility();
     run();
   });
 
