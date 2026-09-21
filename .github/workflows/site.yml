@@ -124,6 +124,17 @@ jobs:
 
           fetch https://compound.ie/lifetime-cost-calculator/ /tmp/lifetime.html
           grep -Fq 'data-calculator="lifetime_cost"' /tmp/lifetime.html
+          grep -Fq '€1,007.47' /tmp/lifetime.html
+          grep -Fq '3.7%' /tmp/lifetime.html
+
+          fetch https://compound.ie/wealth/lifetime-cost-of-lifestyle-ireland/ /tmp/lifetime-article.html
+          grep -Fq 'How much does your lifestyle actually cost over a lifetime?' /tmp/lifetime-article.html
+          grep -Fq '/lifetime-cost-calculator/' /tmp/lifetime-article.html
+          grep -Fq '/car-finance-calculator/' /tmp/lifetime-article.html
+          grep -Fq '/childcare-return-to-work-calculator/' /tmp/lifetime-article.html
+          grep -Fq '/compound-interest-calculator/' /tmp/lifetime-article.html
+
+          grep -Fq '/wealth/lifetime-cost-of-lifestyle-ireland/' /tmp/lifetime.html
 
           fetch https://compound.ie/car-finance-calculator/ /tmp/car-finance.html
           grep -Fq 'data-calculator="car_finance"' /tmp/car-finance.html
