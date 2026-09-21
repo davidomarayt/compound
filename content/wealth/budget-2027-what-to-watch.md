@@ -222,6 +222,8 @@ charts: []
 
 <p>The Rent Tax Credit already runs to <strong>2028</strong>. For 2026, the maximum is €1,000 for an individual or €2,000 for jointly assessed married couples or civil partners, subject to the rules and sufficient income-tax liability. That existing entitlement is not a fresh Budget 2027 saving. <a href="https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx" target="_blank" rel="noopener noreferrer">Revenue overview</a>; <a href="https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/how-much-claim.aspx" target="_blank" rel="noopener noreferrer">amounts</a>.</p>
 
+<p><strong>Update, 21 September:</strong> Taoiseach Micheál Martin has now said the Rent Tax Credit will be increased in the Budget, although the new maximum has not yet been announced. See our <a href="/wealth/rent-tax-credit-budget-2027-ireland/">full guide to the Rent Tax Credit increase</a>.</p>
+
 <p>Eligible mortgage holders have a different reason to pay attention: Revenue puts the maximum Mortgage Interest Tax Credit for 2026 at <strong>€625 per residence</strong>. Watch for an explicit announcement about its treatment in 2027 rather than assuming the current relief continues unchanged. <a href="https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/mortgage/how-much-can-you-claim.aspx" target="_blank" rel="noopener noreferrer">Revenue</a>.</p>
 
 <p>For anyone trying to find a home, also look beyond tax relief. Funding for housing, water and transport needs a delivery timetable before it becomes a usable home or a shorter commute. A large allocation and an available service are different stages of the same process.</p>
