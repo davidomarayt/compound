@@ -474,6 +474,12 @@ When using the calculator, enter the value of the trade-in being consumed as the
 
 Otherwise the comparison understates what you are putting into the deal.
 
+## Put the car decision in the wider household budget
+
+A car is often treated as a one-off purchase, but most households replace vehicles repeatedly over decades. A €10,000 difference in car choice can therefore recur several times.
+
+For that longer view, see [How much does your lifestyle actually cost over a lifetime?](/wealth/lifetime-cost-of-lifestyle-ireland/), which models repeated major purchases separately from day-to-day transport running costs.
+
 ## A useful comparison is "cost to own", not only "cost per month"
 
 For someone who expects to keep the car long-term, calculate:
