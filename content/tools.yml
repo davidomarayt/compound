@@ -1641,7 +1641,15 @@ tools:
       A €500 monthly decision can look small next to a salary, but over 40 or 50 years it becomes a major lifetime allocation. The same applies to cars, housing, travel and recurring subscriptions.
 
       The chart shows cumulative cash spending by age. Use the tool to compare lifestyles rather than to forecast your exact future. It deliberately does not assume investment returns, taxes, inheritance, State Pension or salary growth.
-    sources: []
+
+      For context, the CSO's 2022–2023 Household Budget Survey estimated average weekly household expenditure at €1,007.47, but spending varied materially by income, tenure, household type and location. The calculator therefore uses your own inputs rather than treating the national average as a target.
+
+      The inflation field is also an editable scenario assumption. Ireland's CPI was 3.7% higher year-on-year in August 2026, while the Eurosystem's medium-term price-stability objective is 2% HICP inflation. Neither figure is a forecast for the next several decades.
+    sources:
+      - {title: "CSO — Household Budget Survey 2022–2023 key findings", url: "https://www.cso.ie/en/releasesandpublications/ep/p-hbs/householdbudgetsurvey2022-2023/keyfindings/"}
+      - {title: "CSO — Consumer Price Index August 2026", url: "https://www.cso.ie/en/releasesandpublications/ep/p-cpi/consumerpriceindexaugust2026/"}
+      - {title: "Central Bank of Ireland — Eurosystem price-stability objective", url: "https://www.centralbank.ie/monetary-policy/policy-setting"}
+      - {title: "CCPC — Building your personal budget plan", url: "https://www.ccpc.ie/manage-your-money/day-to-day-finances/budgeting-resources/building-your-personal-budget-plan"}
 
 
   - slug: car-finance-calculator
