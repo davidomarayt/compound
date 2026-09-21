@@ -91,13 +91,32 @@ jobs:
           grep -Fq 'Advanced calculation' /tmp/car-finance.html
           grep -Fq 'PCP final balloon / GMFV' /tmp/car-finance.html
 
+          fetch https://compound.ie/nutrition-needs-calculator/ /tmp/nutrition.html
+          grep -Fq 'data-calculator="nutrition_needs"' /tmp/nutrition.html
+          grep -Fq 'Mifflin' /tmp/nutrition.html
+          grep -Fq 'Morton et al. 2018' /tmp/nutrition.html
+
+          fetch https://compound.ie/pregnancy-due-date-calculator/ /tmp/pregnancy.html
+          grep -Fq 'data-calculator="pregnancy_timeline"' /tmp/pregnancy.html
+          grep -Fq 'type="date"' /tmp/pregnancy.html
+          grep -Fq 'first-trimester ultrasound' /tmp/pregnancy.html
+
+          fetch https://compound.ie/alcohol-units-calories-cost-calculator/ /tmp/alcohol.html
+          grep -Fq 'data-calculator="alcohol_ireland"' /tmp/alcohol.html
+          grep -Fq '10 grams of pure alcohol' /tmp/alcohol.html
+          grep -Fq '0.789' /tmp/alcohol.html
+
+          fetch https://compound.ie/bmi-calculator/ /tmp/bmi.html
+          grep -Fq 'BMI REFERENCE RANGE' /tmp/bmi.html
+          grep -Fq '300,000 adults' /tmp/bmi.html
+
           fetch https://compound.ie/solar-ev-battery-optimiser/ /tmp/solar-opt.html
           grep -Fq 'data-calculator="solar_optimizer"' /tmp/solar-opt.html
 
           fetch https://compound.ie/whole-house-retrofit-planner/ /tmp/retrofit.html
           grep -Fq 'data-calculator="retrofit_planner"' /tmp/retrofit.html
 
-          fetch https://compound.ie/static/tools.js?v=20260921b /tmp/tools.js
+          fetch https://compound.ie/static/tools.js?v=20260921e /tmp/tools.js
           grep -Fq 'take_home_2026' /tmp/tools.js
           grep -Fq 'renderToolChart' /tmp/tools.js
           grep -Fq 'myfuturefund' /tmp/tools.js
@@ -106,6 +125,10 @@ jobs:
           grep -Fq 'lifetime_cost' /tmp/tools.js
           grep -Fq 'car_finance' /tmp/tools.js
           grep -Fq 'balloonPayment' /tmp/tools.js
+          grep -Fq 'nutrition_needs' /tmp/tools.js
+          grep -Fq 'pregnancy_timeline' /tmp/tools.js
+          grep -Fq 'alcohol_ireland' /tmp/tools.js
+          grep -Fq 'parseDateOnly' /tmp/tools.js
           grep -Fq 'solar_optimizer' /tmp/tools.js
           grep -Fq 'retrofit_planner' /tmp/tools.js
 

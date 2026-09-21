@@ -91,9 +91,11 @@ There is no single replacement number that answers every health question. You do
 
 ### Why add your waist measurement here?
 
-For adults with **BMI below 35**, the HSE recommends waist-to-height ratio as an additional check. Divide waist by height in the same units. At **0.5 or above**, health risks may be increased. For example, an 85 cm waist at 170 cm gives 0.5. [1]
+For adults with **BMI below 35**, waist-to-height ratio can add information about central adiposity that BMI cannot provide. NICE classifies ratios of **0.40–0.49** as healthy central adiposity, **0.50–0.59** as increased central adiposity and **0.60 or more** as high central adiposity, and uses the simple message to keep your waist below half your height. [2]
 
-This is still a screening measure. A ratio below 0.5 does not establish overall health, and this tool does not provide waist-ratio interpretation at BMI 35 or above. In particular, it should not be used to infer Furlong’s waist ratio: his waist measurement is not supplied in the example.
+This recommendation is supported by a systematic review and meta-analysis of 31 studies involving more than 300,000 adults across several ethnic groups. In that analysis, waist-to-height ratio had modestly better discrimination of cardiometabolic risk factors than BMI and waist circumference. That does **not** make it a diagnostic test: it remains a screening measurement with population-level evidence and individual uncertainty. [Ashwell, Gunn & Gibson [11]](#source-wht-meta)
+
+For example, an 85 cm waist at 170 cm gives a ratio of 0.50. This tool does not provide waist-ratio interpretation at BMI 35 or above, in line with the limitations in current guidance. It should not be used to infer Tadhg Furlong’s waist ratio because his waist measurement is not supplied in the example.
 
 <h2 id="bmi-habits">Irish recommendations you can put into practice</h2>
 
@@ -137,7 +139,7 @@ BMI alone cannot tell you whether you need weight-management medicine or qualify
 
 <h2 id="bmi-sources">Guidelines and sources</h2>
 
-The links below support the guidance on this page. HSE and Healthy Ireland provide the Irish context; NICE supplies the detailed screening thresholds. Compound is independent and is not endorsed by these organisations. Sources checked **15 September 2026**; guidance and services may change.
+The links below support the guidance on this page. HSE and Healthy Ireland provide the Irish context; NICE supplies the detailed screening thresholds. Compound is independent and is not endorsed by these organisations. Sources checked **21 September 2026**; guidance and services may change.
 
 <ol class="bmi-sources">
 <li id="source-hse"><a href="https://www2.hse.ie/conditions/obesity/diagnosis/">HSE — How obesity is diagnosed</a>. BMI limitations, exclusions and waist-to-height guidance. Page reviewed 20 October 2025.</li>
@@ -150,6 +152,7 @@ The links below support the guidance on this page. HSE and Healthy Ireland provi
 <li id="source-cdc-faq"><a href="https://www.cdc.gov/bmi/faq/index.html">CDC — BMI Frequently Asked Questions</a>. Muscle, body-fat distribution and assessment of athletes. US explanatory source; this calculator continues to use the adult scope and thresholds described above.</li>
 <li id="source-cdc-about"><a href="https://www.cdc.gov/bmi/about/index.html">CDC — About Body Mass Index</a>. Screening, population use and additional clinical information.</li>
 <li id="source-irish-guideline"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9801383/">Breen and colleagues — Obesity in Adults: A 2022 Adapted Clinical Practice Guideline for Ireland</a>. Comprehensive assessment and a focus on health, function and quality of life.</li>
+<li id="source-wht-meta"><a href="https://pubmed.ncbi.nlm.nih.gov/22106927/">Ashwell, Gunn & Gibson — systematic review and meta-analysis of waist-to-height ratio, waist circumference and BMI</a>. Thirty-one studies; more than 300,000 adults across several ethnic groups.</li>
 </ol>
 
 [Back to the calculator](#bmi-form) · [More on health in Ireland](/health/) · [Compound’s editorial policy](/editorial-policy/)

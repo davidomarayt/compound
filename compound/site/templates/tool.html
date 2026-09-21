@@ -4,7 +4,7 @@
 {% block head %}
 <link rel="canonical" href="{{ site_url }}{{ tool.url }}">
 <meta property="og:type" content="website"><meta property="og:title" content="{{ tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="/static/tools.css?v=20260921d"><script defer src="/static/tools.js?v=20260921d"></script>
+<link rel="stylesheet" href="/static/tools.css?v=20260921e"><script defer src="/static/tools.js?v=20260921e"></script>
 <script type="application/ld+json">{{ tool_jsonld|safe }}</script>
 {% endblock %}
 {% block content %}
@@ -36,6 +36,8 @@
           <select id="tool-{{ field.id }}" name="{{ field.id }}" data-field="{{ field.id }}">
             {% for option in field.options %}<option value="{{ option.value }}" {% if option.value|string == field.default|string %}selected{% endif %}>{{ option.label }}</option>{% endfor %}
           </select>
+          {% elif field.type == "date" %}
+          <span class="tool-input-wrap"><input id="tool-{{ field.id }}" name="{{ field.id }}" data-field="{{ field.id }}" type="date" {% if field.default %}value="{{ field.default }}"{% endif %} {% if field.optional %}data-optional="true"{% endif %}></span>
           {% else %}
           <span class="tool-input-wrap">{% if field.prefix %}<span class="tool-affix">{{ field.prefix }}</span>{% endif %}<input id="tool-{{ field.id }}" name="{{ field.id }}" data-field="{{ field.id }}" type="number" inputmode="decimal" value="{{ field.default }}" {% if field.min is defined %}min="{{ field.min }}"{% endif %} {% if field.max is defined %}max="{{ field.max }}"{% endif %} step="{{ field.step or 'any' }}">{% if field.suffix %}<span class="tool-affix tool-affix-right">{{ field.suffix }}</span>{% endif %}</span>
           {% endif %}
@@ -66,7 +68,7 @@
       <p class="eyebrow">CHECK THE BASIS</p><h2>Method & sources</h2>
       <p>This calculator runs locally in your browser. Compound does not receive the values you enter.</p>
       {% if tool.sources %}<ul>{% for source in tool.sources %}<li><a href="{{ source.url }}" rel="noopener">{{ source.title }} ↗</a></li>{% endfor %}</ul>{% else %}<p>The calculation uses standard arithmetic or amortisation formulas and does not depend on a changing statutory rate.</p>{% endif %}
-      <p><a href="/disclaimer/">Financial and tax information disclaimer</a></p>
+      <p><a href="/disclaimer/">Important information disclaimer</a></p>
     </aside>
   </section>
   <aside class="tool-more"><p class="eyebrow">MORE COMPOUND TOOLS</p><h2>Run another scenario.</h2><div class="tool-more-links">{% for other in related_tools %}<a href="{{ other.url }}">{{ other.title }} <span>→</span></a>{% endfor %}<a href="/tools/">Browse all tools <span>→</span></a></div></aside>

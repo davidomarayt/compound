@@ -48,6 +48,8 @@
       'This is above the selected healthy-weight reference range. Your GP can put it in context with your waist measurement, health history and other checks.',
       'This falls within the selected obesity screening range. A diagnosis requires a fuller assessment. Your GP can discuss your health and support options with you.'
     ][category];
+    const hM=height/100, refLow=18.5*hM*hM, refHigh=cuts[1]*hM*hM;
+    get('reference-weight').textContent = `${refLow.toFixed(1)} kg to below ${refHigh.toFixed(1)} kg at your entered height, based only on the selected BMI reference thresholds.`;
     get('older').hidden = suitability !== 'older';
     const position = Math.min(100, Math.max(0, (bmi - 12) / 33 * 100));
     get('marker').style.left = `${position}%`;
@@ -63,7 +65,8 @@
         waistText = 'Check your waist measurement and units. This tool accepts 30–300 cm (or equivalent). Your BMI above is unchanged.';
       } else {
         const ratio = waist / height;
-        waistText = `Your ratio is ${ratio.toFixed(3)}. ` + (!below(ratio, .5) ? 'At or above 0.5, this may indicate increased health risks. Consider discussing it with your GP. [1]' : 'Below the 0.5 increased-risk threshold. This does not rule out other health risks. [1]');
+        const waistClass = ratio < .4 ? 'below the NICE central-adiposity reference range' : ratio < .5 ? 'within the NICE healthy central-adiposity range (0.40–0.49)' : ratio < .6 ? 'within the NICE increased central-adiposity range (0.50–0.59)' : 'within the NICE high central-adiposity range (0.60+)';
+        waistText = `Your ratio is ${ratio.toFixed(3)}, ${waistClass}. Waist-to-height ratio is still a screening measure, not a diagnosis. [1, 2]`;
       }
     }
     get('waist-result').textContent = waistText;

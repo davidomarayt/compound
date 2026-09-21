@@ -7,7 +7,7 @@ from compound.site.build import load_tools
 def test_tool_catalogue_has_unique_routes():
     content_dir = Path(__file__).parents[1] / "content"
     tools = load_tools(content_dir)
-    assert len(tools) >= 44
+    assert len(tools) >= 47
     assert len({tool["slug"] for tool in tools}) == len(tools)
     assert all(tool["url"].startswith("/") and tool["url"].endswith("/") for tool in tools)
     assert all(tool["fields"] and tool["results"] for tool in tools)
@@ -27,6 +27,7 @@ def test_tool_formulas_are_supported():
         "house_buying_costs", "solar_payback", "ber_energy",
         "solar_optimizer", "retrofit_planner", "myfuturefund", "childcare_return",
         "mortgage_switch", "lifetime_cost", "car_finance",
+        "nutrition_needs", "pregnancy_timeline", "alcohol_ireland",
     }
     assert {tool["formula"] for tool in data["tools"]} <= supported
 
@@ -44,6 +45,8 @@ def test_high_intent_tool_routes_present():
         "solar-ev-battery-optimiser", "whole-house-retrofit-planner", "myfuturefund-calculator",
         "childcare-return-to-work-calculator", "mortgage-switch-calculator", "lifetime-cost-calculator",
         "car-finance-calculator",
+        "nutrition-needs-calculator", "pregnancy-due-date-calculator",
+        "alcohol-units-calories-cost-calculator",
     }
     assert expected <= slugs
 
@@ -107,3 +110,33 @@ def test_car_finance_has_basic_and_advanced_fields():
     assert "Personal car loan" in car["guide"]
     assert "Hire Purchase" in car["guide"]
     assert "Personal Contract Plan" in car["guide"]
+
+
+def test_health_expansion_is_substantial_and_sourced():
+    content_dir = Path(__file__).parents[1] / "content"
+    tools = {tool["slug"]: tool for tool in load_tools(content_dir)}
+
+    nutrition = tools["nutrition-needs-calculator"]
+    nutrition_results = {result["id"] for result in nutrition["results"]}
+    assert {"resting", "maintenance", "target", "protein", "fat", "carbs", "fibre"} <= nutrition_results
+    assert len(nutrition["sources"]) >= 6
+    assert "Mifflin" in nutrition["guide"] and "0.83 g" in nutrition["guide"] and "1.6 g/kg" in nutrition["guide"]
+
+    pregnancy = tools["pregnancy-due-date-calculator"]
+    pregnancy_fields = {field["id"]: field for field in pregnancy["fields"]}
+    assert pregnancy_fields["lmp"]["type"] == "date"
+    assert pregnancy_fields["assigned_due_date"]["optional"] is True
+    assert len(pregnancy["sources"]) >= 3
+    assert "first-trimester ultrasound" in pregnancy["guide"]
+
+    alcohol = tools["alcohol-units-calories-cost-calculator"]
+    alcohol_results = {result["id"] for result in alcohol["results"]}
+    assert {"standard_drinks", "grams", "weekly_kcal", "annual_spend", "annual_saving"} <= alcohol_results
+    assert len(alcohol["sources"]) >= 5
+    assert "10 grams" in alcohol["guide"] and "0.789" in alcohol["guide"]
+
+def test_bmi_guide_cites_waist_to_height_meta_analysis():
+    content_dir = Path(__file__).parents[1] / "content"
+    guide = (content_dir / "bmi-guide.md").read_text()
+    assert "300,000 adults" in guide
+    assert "22106927" in guide

@@ -1757,3 +1757,269 @@ tools:
       - {title: "CCPC — Hire Purchase explained", url: "https://www.ccpc.ie/manage-your-money/borrowing-money/car-loans-and-car-finance/hire-purchase"}
       - {title: "CCPC — Personal Contract Plan explained", url: "https://www.ccpc.ie/manage-your-money/borrowing-money/car-loans-and-car-finance/personal-contract-plan"}
       - {title: "CCPC — Problems making car repayments and the half rule", url: "https://www.ccpc.ie/manage-your-money/managing-debt/problems-making-car-repayments"}
+
+
+  - slug: nutrition-needs-calculator
+    title: Nutrition Needs Calculator — Energy, Protein & Macros
+    category: Health
+    formula: nutrition_needs
+    summary: Estimate resting energy, activity-adjusted maintenance needs, protein and an evidence-grounded macro illustration in one calculator.
+    meta_description: Nutrition needs calculator using Mifflin-St Jeor, EFSA physical activity levels and protein reference values. Estimate resting energy, maintenance calories, protein and macros.
+    updated: 2026-09-21
+    fields:
+      - id: sex
+        label: Sex used by the Mifflin–St Jeor equation
+        type: select
+        default: male
+        options:
+          - {value: male, label: Male}
+          - {value: female, label: Female}
+        help: "The published equation uses different constants for male and female adults. This is a limitation of the equation, not a complete description of an individual."
+      - {id: age, label: Age, type: number, suffix: years, default: 35, min: 18, max: 80, step: 1}
+      - {id: weight, label: Weight, type: number, suffix: kg, default: 75, min: 30, max: 300, step: 0.1}
+      - {id: height, label: Height, type: number, suffix: cm, default: 175, min: 120, max: 230, step: 0.1}
+      - id: activity
+        label: Physical activity level (PAL)
+        type: select
+        default: "1.6"
+        options:
+          - {value: "1.4", label: Low active / sedentary — PAL 1.4}
+          - {value: "1.6", label: Moderately active — PAL 1.6}
+          - {value: "1.8", label: Active — PAL 1.8}
+          - {value: "2.0", label: Very active — PAL 2.0}
+        help: "EFSA uses these PAL values when illustrating adult energy requirements. Self-selecting an activity category is still approximate."
+      - id: energy_scenario
+        label: Energy scenario to display
+        type: select
+        default: maintain
+        options:
+          - {value: maintain, label: Estimated maintenance energy}
+          - {value: lower10, label: Illustrative 10% below maintenance — not a prescribed deficit}
+          - {value: higher10, label: Illustrative 10% above maintenance — not a prescribed surplus}
+      - id: protein_context
+        label: Protein context
+        type: select
+        default: general
+        options:
+          - {value: general, label: General adult reference intake}
+          - {value: resistance, label: Regular resistance-training context}
+        help: "The general reference uses EFSA's 0.83 g/kg population reference intake. The resistance-training option uses approximately 1.6 g/kg as an evidence point from a large meta-analysis, not a personalised prescription."
+    results:
+      - {id: resting, label: Estimated resting energy expenditure}
+      - {id: maintenance, label: Estimated maintenance energy}
+      - {id: target, label: Selected energy scenario}
+      - {id: protein, label: Protein reference / evidence point}
+      - {id: fat, label: Illustrative fat at 30% of energy}
+      - {id: carbs, label: Carbohydrate remainder in this illustration}
+      - {id: fibre, label: WHO adult dietary fibre reference}
+    guide: |
+      ## What this calculator is — and is not
+
+      This tool combines several related nutrition calculations on one page so you do not need separate BMR, TDEE, protein and macro calculators.
+
+      It is designed for **generally healthy adults** as an educational planning tool. It is not intended for pregnancy, breastfeeding, under-18s, people with an eating disorder, or people who need medical nutrition therapy. In those situations, energy and nutrient needs should be assessed appropriately by a clinician or dietitian.
+
+      ## Resting energy: Mifflin–St Jeor
+
+      The resting-energy estimate uses the **Mifflin–St Jeor equation**, published in the *American Journal of Clinical Nutrition* in 1990. A systematic review comparing commonly used equations found Mifflin–St Jeor more likely than the alternatives assessed to estimate measured resting metabolic rate within 10% in non-obese and obese adults, while also emphasising meaningful individual errors.
+
+      That uncertainty matters. A calculated value such as 1,650 kcal/day should be read as an estimate, not as a measurement of your metabolism. **Indirect calorimetry** is the reference method when an accurate clinical measurement is needed.
+
+      ## From resting energy to maintenance energy
+
+      Total energy needs depend heavily on movement and activity. EFSA describes Physical Activity Level (PAL) as total daily energy use relative to resting energy and uses PAL values such as **1.4, 1.6, 1.8 and 2.0** to illustrate low-active through very-active adult lifestyles.
+
+      Compound multiplies the resting-energy estimate by the PAL you select. The weakest part of this calculation may be the activity selection itself: two people who both choose “moderately active” can have quite different true energy expenditure.
+
+      ## Why the ±10% scenarios are labelled illustrative
+
+      The 10% lower and higher options are **mathematical scenarios**, not weight-loss or weight-gain prescriptions. Appropriate energy intake can depend on health, training, body composition, medications, pregnancy status, previous dieting and other factors this calculator does not know.
+
+      ## Protein: general health versus resistance training
+
+      EFSA's adult Population Reference Intake for protein is **0.83 g per kg of body weight per day**. This is intended to cover the needs of the large majority of generally healthy adults consuming a mixed European diet.
+
+      For people doing resistance training, a 2018 systematic review, meta-analysis and meta-regression found that increases in fat-free mass with protein supplementation during resistance training plateaued at around **1.62 g/kg/day**, with the confidence interval extending higher. Compound therefore uses **1.6 g/kg/day as an evidence point** in the resistance-training option. It should not be interpreted as a minimum requirement for every gym user or proof that more protein is always better.
+
+      ## The macro illustration
+
+      Protein contributes approximately 4 kcal per gram. For the remaining macro illustration, Compound shows total fat at **30% of the selected energy figure**, consistent with WHO guidance that adults limit total fat intake to 30% of total energy or less for prevention of unhealthy weight gain. Carbohydrate is then the mathematical remainder after protein and fat.
+
+      This is not a claim that every person should eat exactly 30% fat or that macro percentages determine diet quality. WHO emphasises **quality as well as quantity**: carbohydrate should come primarily from whole grains, vegetables, fruits and pulses; adults should consume at least **25 g/day of naturally occurring dietary fibre** and at least **400 g/day of fruit and vegetables**.
+
+      ## Use the result as a range of questions, not a precise prescription
+
+      Useful follow-up questions include:
+
+      - Does your actual body weight remain broadly stable around the estimated maintenance intake over several weeks?
+      - Is your chosen activity level realistic?
+      - Are you meeting protein needs through a varied diet?
+      - Are fibre, fruit, vegetables and food quality getting lost behind the macro numbers?
+      - Are you using the tool in a situation where professional nutrition advice would be safer?
+
+      The more precise the number looks, the easier it is to forget the uncertainty behind it. The purpose of the calculator is to make the assumptions visible.
+
+    sources:
+      - {title: "Mifflin et al. 1990 — A new predictive equation for resting energy expenditure", url: "https://pubmed.ncbi.nlm.nih.gov/2305711/"}
+      - {title: "Frankenfield et al. — systematic review of resting metabolic rate prediction equations", url: "https://pubmed.ncbi.nlm.nih.gov/15883556/"}
+      - {title: "EFSA — Dietary Reference Values and Physical Activity Level", url: "https://www.efsa.europa.eu/en/topics/topic/dietary-reference-values"}
+      - {title: "EFSA — adult protein Population Reference Intake", url: "https://www.efsa.europa.eu/en/press/news/120209"}
+      - {title: "Morton et al. 2018 — protein supplementation and resistance training meta-analysis", url: "https://pubmed.ncbi.nlm.nih.gov/28698222/"}
+      - {title: "WHO — updated guidance on fats and carbohydrates", url: "https://www.who.int/news/item/17-07-2023-who-updates-guidelines-on-fats-and-carbohydrates"}
+
+  - slug: pregnancy-due-date-calculator
+    title: Pregnancy Due Date & Timeline Calculator Ireland
+    category: Health
+    formula: pregnancy_timeline
+    summary: Estimate a pregnancy due date, gestational age, trimester and key timeline dates from the last menstrual period or a clinician-assigned due date.
+    meta_description: Pregnancy due date calculator Ireland. Estimate gestational age, trimester, conception date and pregnancy milestones, with HSE and obstetric dating guidance.
+    updated: 2026-09-21
+    fields:
+      - id: lmp
+        label: First day of your last menstrual period (LMP)
+        type: date
+        optional: true
+        help: "If you do not have an assigned due date from your maternity team, the calculator uses the conventional 280-day estimate from LMP."
+      - id: assigned_due_date
+        label: Due date assigned by your clinician or dating scan (optional)
+        type: date
+        optional: true
+        help: "If entered, this takes priority over the LMP calculation. First-trimester ultrasound is more accurate for establishing or confirming gestational age than LMP alone."
+    results:
+      - {id: due_date, label: Estimated / assigned due date}
+      - {id: gestational_age, label: Gestational age today}
+      - {id: trimester, label: Trimester today}
+      - {id: conception_estimate, label: Approximate conception date from dating convention}
+      - {id: week12, label: 12-week point}
+      - {id: anatomy_window, label: HSE fetal anatomy scan window}
+      - {id: week37, label: 37-week point}
+      - {id: week42, label: 42-week point}
+    guide: |
+      ## How pregnancy dating works
+
+      Pregnancy is conventionally dated from the **first day of the last menstrual period (LMP)** rather than from the date of conception. The standard LMP calculation assumes a pregnancy length of **280 days, or 40 weeks**.
+
+      That convention also assumes a regular 28-day menstrual cycle with ovulation around day 14. Real cycles and ovulation dates vary, and people may not recall the LMP exactly. That is why a calendar calculation is an estimate rather than a clinical measurement.
+
+      ## Ultrasound dating is more accurate early in pregnancy
+
+      The American College of Obstetricians and Gynecologists, together with the American Institute of Ultrasound in Medicine and the Society for Maternal–Fetal Medicine, states that **first-trimester ultrasound up to 13 weeks and 6 days is the most accurate method to establish or confirm gestational age**. Crown–rump-length dating in this period is typically accurate to about ±5–7 days.
+
+      If your maternity team has already assigned a due date from the clinical record or dating scan, enter that in the optional field. Compound then uses that date for the timeline rather than trying to override it with an LMP calculation.
+
+      The HSE's own pregnancy calculator similarly describes its result as an estimate based on a 40-week pregnancy.
+
+      ## What the conception date means
+
+      The conception date displayed here is **not a claim about the exact day fertilisation occurred**. It is simply the date 266 days before the due date — equivalent to approximately two weeks after LMP in the conventional 28-day model.
+
+      Ovulation varies, sperm can survive for several days, and pregnancy dating is deliberately based on gestational age rather than an attempt to identify a precise conception date.
+
+      ## Timeline milestones
+
+      The tool shows calendar points that are useful for orientation:
+
+      - **12 weeks** — a simple gestational milestone, not a guaranteed appointment date.
+      - **18 to 22 weeks** — the HSE says the fetal anatomy/anomaly scan is usually offered in this window.
+      - **37 weeks** — the beginning of the early-term period in common obstetric terminology.
+      - **40 weeks** — the estimated due date.
+      - **42 weeks** — a calendar milestone two weeks after the due date.
+
+      Your actual appointments and management should follow your maternity team's plan, not a website timeline.
+
+      ## Important limitations
+
+      This calculator cannot assess pregnancy viability, fetal growth, scan findings, bleeding, pain, reduced movements or any other clinical concern. A due date is also not a prediction of the exact day a baby will be born.
+
+      If the dates here differ from the dates given by your maternity team, use the dates in your clinical record and ask your midwife, GP or obstetric team if you are unsure.
+
+    sources:
+      - {title: "HSE — Pregnancy due date calculator", url: "https://www2.hse.ie/pregnancy-birth/baby-development-pregnancy-stages/stages/due-date-calculator/"}
+      - {title: "HSE — Fetal anatomy scan, usually 18 to 22 weeks", url: "https://www2.hse.ie/pregnancy-birth/scans-tests/ultrasound-scans/fetal-anatomy-scan/"}
+      - {title: "ACOG/AIUM/SMFM — Methods for Estimating the Due Date", url: "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/05/methods-for-estimating-the-due-date"}
+
+  - slug: alcohol-units-calories-cost-calculator
+    title: Alcohol Standard Drinks, Calories & Cost Calculator Ireland
+    category: Health
+    formula: alcohol_ireland
+    summary: Convert common drinks into Irish standard drinks, grams of alcohol, alcohol-derived calories and annual spending, then model a reduction scenario.
+    meta_description: Alcohol calculator Ireland. Estimate Irish standard drinks, grams of alcohol, alcohol-derived calories, annual spend and savings from drinking less.
+    updated: 2026-09-21
+    fields:
+      - id: guideline_group
+        label: Optional comparison with current HSE weekly low-risk guideline
+        type: select
+        default: none
+        options:
+          - {value: none, label: Do not compare}
+          - {value: woman, label: HSE guideline for women}
+          - {value: man, label: HSE guideline for men}
+      - {id: beer_pints, label: Pints of beer / stout / cider per week, type: number, default: 2, min: 0, step: 0.5}
+      - {id: beer_abv, label: Beer / stout / cider strength, type: number, suffix: "% ABV", default: 4.5, min: 0, max: 20, step: 0.1}
+      - {id: wine_glasses, label: Glasses of wine per week, type: number, default: 0, min: 0, step: 0.5}
+      - {id: wine_ml, label: Wine glass size, type: number, suffix: ml, default: 175, min: 25, max: 500, step: 25}
+      - {id: wine_abv, label: Wine strength, type: number, suffix: "% ABV", default: 12.5, min: 0, max: 30, step: 0.1}
+      - {id: spirits, label: Spirit measures per week, type: number, default: 0, min: 0, step: 0.5}
+      - {id: spirit_ml, label: Spirit measure size, type: number, suffix: ml, default: 35.5, min: 10, max: 200, step: 0.5}
+      - {id: spirit_abv, label: Spirit strength, type: number, suffix: "% ABV", default: 40, min: 0, max: 95, step: 0.1}
+      - {id: cans, label: Large cans / bottles per week, type: number, default: 0, min: 0, step: 0.5}
+      - {id: can_ml, label: Can / bottle size, type: number, suffix: ml, default: 500, min: 50, max: 2000, step: 10}
+      - {id: can_abv, label: Can / bottle strength, type: number, suffix: "% ABV", default: 4.3, min: 0, max: 20, step: 0.1}
+      - {id: weekly_spend, label: What you spend on alcohol in a typical week, type: number, prefix: "€", default: 30, min: 0, step: 1}
+      - {id: reduction_pct, label: Model reducing intake and spend by, type: number, suffix: "%", default: 25, min: 0, max: 100, step: 5}
+    results:
+      - {id: standard_drinks, label: Irish standard drinks per week}
+      - {id: grams, label: Pure alcohol per week}
+      - {id: guideline, label: HSE guideline comparison}
+      - {id: weekly_kcal, label: Calories from alcohol itself per week}
+      - {id: annual_kcal, label: Calories from alcohol itself per year}
+      - {id: annual_spend, label: Annual alcohol spend at entered amount}
+      - {id: reduced_drinks, label: Standard drinks after modelled reduction}
+      - {id: annual_saving, label: Annual cash saving from modelled reduction}
+    guide: |
+      ## Ireland uses a 10 g standard drink
+
+      In Ireland, **one standard drink contains 10 grams of pure alcohol**. That differs from the UK “unit”, which contains 8 grams.
+
+      Compound calculates grams of alcohol from the amount and strength of each drink using the formula in Ireland's Public Health (Alcohol) Act labelling guidance:
+
+      **volume in mL × ABV as a decimal × 0.789 = grams of alcohol**
+
+      The result is then divided by 10 to give Irish standard drinks.
+
+      This is more accurate than assuming “one glass equals one drink”. For example, the HSE notes that a pint of 4.5% beer/stout/cider is roughly **two Irish standard drinks**, while a 100 mL glass of 12.5% wine is roughly one.
+
+      ## Current HSE weekly low-risk guidance
+
+      The HSE currently advises no more than **11 standard drinks per week for women** and **17 for men**, spread across the week, with at least 2–3 alcohol-free days. It also advises not drinking more than **6 standard drinks on any one occasion**.
+
+      The HSE explicitly states that **there is no level of alcohol use that is safe for health** and that drinking less reduces risk. It also notes that the evidence for its weekly low-risk guidelines is under review in 2026.
+
+      This calculator can compare your weekly total with the current guideline if you choose a comparison group. It cannot determine whether your drinking pattern is safe, because it does not know how drinks are distributed across occasions or your individual health circumstances.
+
+      ## What the calorie number means
+
+      Ethanol provides approximately **7 kcal per gram**. The calculator therefore shows the energy supplied by the alcohol itself.
+
+      It deliberately does **not** label that number as the total calories in your drinks. Beer, cider, wine, liqueurs and mixers can contain additional carbohydrate, sugar or other energy. Brand-specific nutrition information is needed for a more complete calorie total.
+
+      ## The money calculation is deliberately simple
+
+      Enter what you actually spend in a normal week. The annual figure multiplies that by 52. The reduction scenario then applies the percentage you select to both the entered spend and calculated alcohol amount.
+
+      It is an illustration of what a sustained change would mean over a year, not a prediction that spending or drinking will remain identical every week.
+
+      ## What this calculator does not do
+
+      It does not estimate blood alcohol concentration, tell you whether you can drive, diagnose alcohol dependence or recommend a personalised “safe” amount.
+
+      The HSE warns that even one standard drink can put some people over the legal driving limit. Do not use a drinks calculator to decide whether you are safe to drive.
+
+      The HSE also advises avoiding alcohol during pregnancy. If alcohol is causing problems in your life or you are concerned about your intake, use HSE alcohol supports or speak with a healthcare professional.
+
+    sources:
+      - {title: "HSE — Weekly low-risk alcohol guidelines and Irish standard drink definition", url: "https://www2.hse.ie/living-well/alcohol/health/improve-your-health/weekly-low-risk-alcohol-guidelines/"}
+      - {title: "HSE — Drinks calculator", url: "https://www2.hse.ie/living-well/alcohol/drinks-calculator/"}
+      - {title: "HSE — Alcohol, weight and nutrition", url: "https://www2.hse.ie/living-well/alcohol/health/effects-on-your-body/weight-gain/"}
+      - {title: "HSE — Public Health Alcohol Labelling FAQ and grams-of-alcohol formula", url: "https://www.hse.ie/eng/services/publications/environmentalhealth/public-alcohol-act-section-22-faqs.pdf"}
+      - {title: "Schutz 2000 — alcohol provides about 7.1 kcal/g", url: "https://pubmed.ncbi.nlm.nih.gov/11115785/"}

@@ -17,6 +17,15 @@
     const r = annual/100/12;
     return r === 0 ? p/months : p*r/(1-Math.pow(1+r,-months));
   };
+  const parseDateOnly = value => {
+    if(!value) return null;
+    const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(value);
+    if(!m) return null;
+    const d=new Date(Date.UTC(Number(m[1]),Number(m[2])-1,Number(m[3])));
+    return Number.isNaN(d.getTime())?null:d;
+  };
+  const addDaysUTC = (date,days) => new Date(date.getTime()+days*86400000);
+  const formatDateIE = date => new Intl.DateTimeFormat('en-IE',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(date);
   const balloonPayment = (principal, annual, months, balloon) => {
     if(months<=0) return NaN;
     const r=annual/100/12, p=Math.max(0,principal), b=Math.max(0,balloon);
@@ -608,6 +617,77 @@
         ownership_summary:'Loan: owned from day 1 • HP: after final payment • PCP: only if balloon is paid',
         __chart:{type:'line',title:'Cumulative cash paid if you ultimately keep the car',caption:'PCP rises at the end when the balloon/GMFV is paid. Advanced mode uses separate terms and entered fees.',labels,series:[{label:'Personal loan',values:loanLine},{label:'Hire Purchase',values:hpLine},{label:'PCP — keep car',values:pcpLine}]}
       };
+    },
+    nutrition_needs(v){
+      const sexConst=v.sex==='female'?-161:5;
+      const resting=10*Math.max(0,v.weight)+6.25*Math.max(0,v.height)-5*Math.max(0,v.age)+sexConst;
+      const pal=Number(v.activity)||1.4, maintenance=resting*pal;
+      const factor=v.energy_scenario==='lower10'?.90:v.energy_scenario==='higher10'?1.10:1;
+      const target=maintenance*factor;
+      const proteinRate=v.protein_context==='resistance'?1.6:.83;
+      const proteinG=Math.max(0,v.weight)*proteinRate;
+      const fatG=Math.max(0,target*.30/9);
+      const carbG=Math.max(0,(target-proteinG*4-fatG*9)/4);
+      return {
+        resting:num(Math.round(resting))+' kcal/day',
+        maintenance:num(Math.round(maintenance))+' kcal/day',
+        target:num(Math.round(target))+' kcal/day',
+        protein:num(proteinG)+' g/day',
+        fat:num(fatG)+' g/day',
+        carbs:num(carbG)+' g/day',
+        fibre:'At least 25 g/day',
+        __chart:{type:'bar',currency:false,title:'Energy estimates under your selected assumptions',caption:'Resting energy is predicted from Mifflin–St Jeor. Maintenance multiplies that estimate by the selected EFSA-style PAL; the third bar is the scenario you selected.',labels:['Resting','Maintenance','Selected scenario'],series:[{label:'kcal/day',values:[resting,maintenance,target]}]}
+      };
+    },
+    pregnancy_timeline(v){
+      const lmp=parseDateOnly(v.lmp), assigned=parseDateOnly(v.assigned_due_date);
+      if(!lmp&&!assigned) return {due_date:'Enter a date above',gestational_age:'—',trimester:'—',conception_estimate:'—',week12:'—',anatomy_window:'—',week37:'—',week42:'—'};
+      const due=assigned||addDaysUTC(lmp,280);
+      const baseLmp=assigned?addDaysUTC(due,-280):lmp;
+      const todayLocal=new Date();
+      const today=new Date(Date.UTC(todayLocal.getFullYear(),todayLocal.getMonth(),todayLocal.getDate()));
+      const gestDays=Math.floor((today-baseLmp)/86400000);
+      let gestational='Not yet at LMP date',trimester='Not yet in pregnancy timeline';
+      if(gestDays>=0){
+        const weeks=Math.floor(gestDays/7),days=gestDays%7;
+        gestational=weeks+' week'+(weeks===1?'':'s')+' '+days+' day'+(days===1?'':'s');
+        trimester=gestDays<98?'First trimester':gestDays<196?'Second trimester':'Third trimester';
+      }
+      const conception=addDaysUTC(due,-266);
+      return {
+        due_date:formatDateIE(due)+(assigned?' (assigned date used)':' (LMP estimate)'),
+        gestational_age:gestational,
+        trimester,
+        conception_estimate:formatDateIE(conception),
+        week12:formatDateIE(addDaysUTC(baseLmp,84)),
+        anatomy_window:formatDateIE(addDaysUTC(baseLmp,126))+' – '+formatDateIE(addDaysUTC(baseLmp,154)),
+        week37:formatDateIE(addDaysUTC(baseLmp,259)),
+        week42:formatDateIE(addDaysUTC(baseLmp,294))
+      };
+    },
+    alcohol_ireland(v){
+      const grams=(ml,abv,count)=>Math.max(0,ml)*Math.max(0,abv)/100*.789*Math.max(0,count);
+      const total=
+        grams(568,v.beer_abv,v.beer_pints)+
+        grams(v.wine_ml,v.wine_abv,v.wine_glasses)+
+        grams(v.spirit_ml,v.spirit_abv,v.spirits)+
+        grams(v.can_ml,v.can_abv,v.cans);
+      const drinks=total/10, weeklyKcal=total*7, annualKcal=weeklyKcal*52, annualSpend=Math.max(0,v.weekly_spend)*52;
+      const reduction=Math.max(0,Math.min(100,v.reduction_pct))/100;
+      let guideline='Not compared';
+      if(v.guideline_group==='woman') guideline=drinks<=11?'Within current HSE weekly low-risk limit':'Above current HSE weekly low-risk limit';
+      if(v.guideline_group==='man') guideline=drinks<=17?'Within current HSE weekly low-risk limit':'Above current HSE weekly low-risk limit';
+      return {
+        standard_drinks:num(drinks),
+        grams:num(total)+' g/week',
+        guideline,
+        weekly_kcal:num(Math.round(weeklyKcal))+' kcal/week',
+        annual_kcal:num(Math.round(annualKcal))+' kcal/year',
+        annual_spend:money(annualSpend),
+        reduced_drinks:num(drinks*(1-reduction)),
+        annual_saving:money(annualSpend*reduction),
+        __chart:{type:'bar',currency:false,title:'Current intake and modelled reduction',caption:'Irish standard drinks are based on 10 g of pure alcohol. The reduced scenario applies the percentage you entered to the same weekly pattern.',labels:['Current','After reduction'],series:[{label:'Standard drinks/week',values:[drinks,drinks*(1-reduction)]}]}
+      };
     }
   };
 
@@ -618,6 +698,7 @@
       root.querySelectorAll('[data-field]').forEach(el=>{
         const raw=el.value;
         if(el.type==='checkbox'){ values[el.dataset.field]=el.checked; return; }
+        if(el.type==='date'){ if(!raw&&el.dataset.optional==='true'){values[el.dataset.field]='';return;} if(!/^\d{4}-\d{2}-\d{2}$/.test(raw)){invalid=true;return;} values[el.dataset.field]=raw; return; }
         if(el.tagName==='SELECT'){ values[el.dataset.field]=raw; return; }
         const n=Number(raw); if(!Number.isFinite(n)){invalid=true; return;} values[el.dataset.field]=n;
       });
