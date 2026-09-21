@@ -121,6 +121,13 @@ jobs:
           grep -Fq 'Advanced calculation' /tmp/car-finance.html
           grep -Fq 'PCP final balloon / GMFV' /tmp/car-finance.html
 
+          fetch https://compound.ie/wealth/pcp-vs-hp-vs-car-loan-ireland/ /tmp/car-finance-article.html
+          grep -Fq 'PCP vs Hire Purchase vs Car Loan in Ireland' /tmp/car-finance-article.html
+          grep -Fq '/car-finance-calculator/' /tmp/car-finance-article.html
+          grep -Fq 'The lower monthly payment did not come from making €18,000 disappear.' /tmp/car-finance-article.html
+
+          grep -Fq '/wealth/pcp-vs-hp-vs-car-loan-ireland/' /tmp/car-finance.html
+
           fetch https://compound.ie/nutrition-needs-calculator/ /tmp/nutrition.html
           grep -Fq 'data-calculator="nutrition_needs"' /tmp/nutrition.html
           grep -Fq 'Mifflin' /tmp/nutrition.html
