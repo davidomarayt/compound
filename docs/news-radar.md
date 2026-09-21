@@ -4,7 +4,7 @@ The News Radar is the discovery layer for Compound's future News section.
 
 ## Purpose
 
-Every two hours, GitHub Actions checks a curated set of RSS feeds and maintains a single open GitHub issue titled:
+Every two hours, GitHub Actions checks a curated set of permitted RSS feeds and maintains a single open GitHub issue titled:
 
 **Compound News Radar**
 
@@ -32,22 +32,33 @@ When asked for recent Compound news ideas:
 
 ## Current feeds
 
-The initial feed set uses:
+The automated feed set currently uses only first-party or clearly suitable feeds:
 
-- Irish Examiner Ireland
-- Irish Examiner Business
-- Irish Examiner Lifestyle
 - ECB official press RSS
 
-The Irish Examiner explicitly provides free RSS feeds for parsing/use via a website or reader. ECB provides official RSS news feeds.
+## Irish Examiner
 
-RTÉ RSS is **not** included in the automated feed set because RTÉ's published terms state that commercial use of its RSS feeds requires prior agreement. RTÉ can still be used as a normal reporting source during independent web research.
+Irish Examiner RSS is **not currently included** in the automated Compound News Radar.
+
+Its syndication page says its RSS feeds are free for anyone to parse and use on a website or reader. However, its Terms and Conditions also contain additional restrictions for commercial users, including restrictions on reproducing, scraping, automatically summarising or aggregating content without prior licence or written permission.
+
+Because Compound.ie is intended to be a commercial site, the safer position is not to automate Irish Examiner RSS ingestion unless written permission is obtained.
+
+Irish Examiner reporting can still be used as a normal source during manual/independent web research, with appropriate attribution and without copying protected content.
+
+## RTÉ
+
+RTÉ RSS is also not included in the automated feed set because its published terms state that commercial use of its RSS feeds requires prior agreement.
+
+RTÉ can still be used as a normal reporting source during independent web research.
 
 ## Adding sources
 
 Edit:
 
 `config/news-feeds.yml`
+
+Only add feeds where the terms are suitable for Compound's commercial use, or where they are first-party institutional feeds clearly intended for public syndication.
 
 Each feed can have:
 
