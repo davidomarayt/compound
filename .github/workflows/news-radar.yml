@@ -1,0 +1,39 @@
+name: Compound News Radar
+
+on:
+  schedule:
+    - cron: '17 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  refresh-news-radar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install feed dependencies
+        run: python -m pip install --disable-pip-version-check feedparser PyYAML
+
+      - name: Build latest news radar
+        run: python scripts/news_radar.py --hours 36 --limit 25 --output news-radar.md
+
+      - name: Create or refresh News Radar issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          issue_number="$(gh issue list --state open --search '"Compound News Radar" in:title' --json number,title --jq '.[] | select(.title == "Compound News Radar") | .number' | head -n1)"
+          if [ -z "$issue_number" ]; then
+            gh issue create --title "Compound News Radar" --body-file news-radar.md --label "news-radar" 2>/dev/null ||             gh issue create --title "Compound News Radar" --body-file news-radar.md
+          else
+            gh issue edit "$issue_number" --body-file news-radar.md
+          fi
