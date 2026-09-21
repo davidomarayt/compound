@@ -562,7 +562,7 @@ def build_site(settings: Settings) -> dict:
         _write(out / a.url.strip("/") / "index.html",
                env.get_template(article_template(a)).render(
                    **article_context(env, settings, a, False), related=related(a, articles),
-                   linked_tools=[tools_by_slug[s] for s in a.related_tools])))
+                   linked_tools=[tools_by_slug[s] for s in a.related_tools]))
         for t in a.tags:
             tag_map.setdefault(t, []).append(a)
     for t, arts in tag_map.items():
