@@ -504,9 +504,10 @@ def build_site(settings: Settings) -> dict:
     for article in articles:
         if len(article.related_tools) > 4:
             raise ValueError(f"Keep related_tools to four or fewer on {article.slug}")
-        unknown = [slug for slug in article.related_tools if slug not in tools_by_slug]
-        if unknown:
-            raise ValueError(f"Unknown related_tools on {article.slug}: {unknown}")
+        if tools_by_slug:
+            unknown = [slug for slug in article.related_tools if slug not in tools_by_slug]
+            if unknown:
+                raise ValueError(f"Unknown related_tools on {article.slug}: {unknown}")
     reserved = {"/", "/search/", "/tools/", "/compound-interest-calculator/", "/bmi-calculator/"}
     reserved.update(tool["url"] for tool in tools)
     reserved.update(f"/{p}/" for p in PILLARS)
@@ -562,7 +563,7 @@ def build_site(settings: Settings) -> dict:
         _write(out / a.url.strip("/") / "index.html",
                env.get_template(article_template(a)).render(
                    **article_context(env, settings, a, False), related=related(a, articles),
-                   linked_tools=[tools_by_slug[s] for s in a.related_tools]))
+                   linked_tools=[tools_by_slug[s] for s in a.related_tools if s in tools_by_slug]))
         for t in a.tags:
             tag_map.setdefault(t, []).append(a)
     for t, arts in tag_map.items():
