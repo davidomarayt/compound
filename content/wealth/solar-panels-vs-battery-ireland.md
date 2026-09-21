@@ -112,6 +112,14 @@ It can move midday electricity into the evening. It cannot save a large surplus 
 
 [SEAI: electricity from solar](https://www.seai.ie/renewable-energy/solar-energy/electricity-from-solar).
 
+## Start with your real household electricity use
+
+Before sizing solar or a battery, establish how much electricity the home actually uses.
+
+The CRU's 4,200 kWh household figure is a useful Irish benchmark, but an EV, heat pump, electric shower or all-electric heating can move a home far above it. Your own annual bills and smart-meter data are much better inputs.
+
+See [How much electricity does an Irish home use?](/wealth/average-home-electricity-use-ireland/) for the benchmarks, daily-use equivalents and a practical smart-meter audit.
+
 ## A worked 5 kWp household
 
 To make the trade-off visible, consider an illustrative household.
