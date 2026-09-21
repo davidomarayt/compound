@@ -147,6 +147,18 @@ jobs:
           grep -Fq 'BMI REFERENCE RANGE' /tmp/bmi.html
           grep -Fq '300,000 adults' /tmp/bmi.html
 
+          fetch https://compound.ie/electricity-cost-calculator/ /tmp/electricity-cost.html
+          grep -Fq 'data-calculator="electricity"' /tmp/electricity-cost.html
+
+          fetch https://compound.ie/wealth/average-home-electricity-use-ireland/ /tmp/electricity-article.html
+          grep -Fq 'How much electricity does an Irish home use?' /tmp/electricity-article.html
+          grep -Fq '/electricity-cost-calculator/' /tmp/electricity-article.html
+          grep -Fq '/ev-charging-cost-calculator/' /tmp/electricity-article.html
+          grep -Fq '/solar-payback-calculator/' /tmp/electricity-article.html
+          grep -Fq '/solar-ev-battery-optimiser/' /tmp/electricity-article.html
+
+          grep -Fq '/wealth/average-home-electricity-use-ireland/' /tmp/electricity-cost.html
+
           fetch https://compound.ie/solar-ev-battery-optimiser/ /tmp/solar-opt.html
           grep -Fq 'data-calculator="solar_optimizer"' /tmp/solar-opt.html
 
