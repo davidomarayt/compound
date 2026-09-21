@@ -120,6 +120,8 @@ For someone playing GAA, rugby or doing endurance training, a nutrition plan sho
 
 A practical meal-planning question is: **where is the protein in this meal?** It might be eggs on toast, lentils in soup, yoghurt with breakfast, or fish at dinner. Protein powder can be a convenient food product, but a “high protein” claim does not tell you whether the rest of your diet is balanced.
 
+For a deeper comparison of the EFSA reference intake, resistance-training evidence, per-meal claims and protein timing, read [How much protein do you actually need?](/health/how-much-protein-do-you-need-ireland/).
+
 ## Carbohydrates and fibre: look at the food, not just the grams
 
 Carbohydrates include sugars and starches. Their food sources range from oats, potatoes and beans to soft drinks and sweets; those foods are not nutritionally interchangeable. WHO recommends that carbohydrate intake come mainly from wholegrains, vegetables, fruit and pulses. [WHO: healthy diet](https://www.who.int/news-room/fact-sheets/detail/healthy-diet)
