@@ -228,3 +228,33 @@ def test_calculator_responsive_overflow_guardrails():
     assert 'overflow-wrap:anywhere' in debt_css
     assert '#compound-concept .result{container-type:inline-size}' in compound_css
     assert '.bmi-workspace>*' in bmi_css
+
+
+def test_sponsorship_categories_cover_tool_catalogue():
+    from compound.site.build import TOOL_SPONSORSHIP_CATEGORY_ORDER
+
+    content_dir = Path(__file__).parents[1] / "content"
+    tools = load_tools(content_dir)
+    expected_order = [
+        "Mortgages & Home Buying",
+        "Pensions & Investing",
+        "Home Energy",
+        "Tax & Take-Home Pay",
+        "Loans & Debt",
+        "EV & Motoring",
+        "Health",
+        "Family & Life Planning",
+    ]
+    assert TOOL_SPONSORSHIP_CATEGORY_ORDER == expected_order
+    assert {tool["category"] for tool in tools} <= set(expected_order)
+    assert all(any(tool["category"] == category for tool in tools) for category in expected_order)
+
+    by_slug = {tool["slug"]: tool["category"] for tool in tools}
+    assert by_slug["mortgage-calculator"] == "Mortgages & Home Buying"
+    assert by_slug["net-worth-calculator"] == "Pensions & Investing"
+    assert by_slug["solar-payback-calculator"] == "Home Energy"
+    assert by_slug["take-home-pay-calculator"] == "Tax & Take-Home Pay"
+    assert by_slug["debt-repayment-calculator"] == "Loans & Debt"
+    assert by_slug["car-finance-calculator"] == "EV & Motoring"
+    assert by_slug["nutrition-needs-calculator"] == "Health"
+    assert by_slug["pregnancy-due-date-calculator"] == "Family & Life Planning"
