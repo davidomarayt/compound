@@ -1474,90 +1474,131 @@ tools:
     title: FIRE Number Calculator Ireland
     category: Pensions & Investing
     formula: fire_number
-    summary: Turn annual spending and a chosen withdrawal rate into an illustrative financial-independence target.
-    meta_description: FIRE number calculator Ireland. Estimate an investment target from annual spending, withdrawal rate, current portfolio and future contributions.
+    summary: Build a financial-independence target from spending, a chosen withdrawal rate and a today’s-money accumulation path, then stress-test fees, other income and target sensitivity.
+    meta_description: FIRE number calculator Ireland. Estimate a financial-independence target, years to target and withdrawal-rate sensitivity with inflation, fees and contribution growth.
     updated: 2026-09-22
-    basic_note: "Basic mode treats spending, current assets and annual contributions in today’s money and uses 2% inflation to convert the entered nominal return into a real return."
-    advanced_note: "Advanced mode lets you change the inflation assumption used to convert the nominal investment return into today’s-money growth."
+    basic_note: "Basic mode treats spending, current assets and annual contributions in today’s money, assumes 2% inflation and no explicit annual investment fee."
+    advanced_note: "Advanced mode can subtract ongoing income available from the target date, add a separate capital reserve, model annual fees and grow contributions in real terms."
     fields:
       - {id: annual_spend, label: Annual spending to fund, type: number, prefix: "€", default: 36000, min: 0, step: 500, section_start: Independence target}
-      - {id: withdrawal_rate, label: Assumed withdrawal rate, type: number, suffix: "%", default: 4, min: 1, max: 10, step: 0.1}
+      - {id: withdrawal_rate, label: Assumed starting withdrawal rate, type: number, suffix: "%", default: 4, min: 1, max: 10, step: 0.1}
+      - {id: ongoing_income, label: Ongoing annual income available from the target date, type: number, prefix: "€", default: 0, min: 0, step: 500, advanced: true, help: "Only include income expected to be available throughout the period you are modelling. Do not subtract a State Pension that starts years later unless your target date is after it begins."}
+      - {id: extra_reserve, label: Extra one-off capital reserve, type: number, prefix: "€", default: 0, min: 0, step: 1000, advanced: true, help: "Optional capital held outside the spending/withdrawal-rate calculation for large one-off costs or an additional safety margin."}
       - {id: current, label: Current invested assets, type: number, prefix: "€", default: 100000, min: 0, step: 1000, section_start: Portfolio & contributions}
-      - {id: annual_contribution, label: Annual new investment, type: number, prefix: "€", default: 18000, min: 0, step: 500}
-      - {id: return_rate, label: Assumed annual nominal investment return, type: number, suffix: "%", default: 6, min: -20, max: 30, step: 0.1}
-      - {id: inflation_rate, label: Assumed annual inflation, type: number, suffix: "%", default: 2, min: -5, max: 15, step: 0.1, advanced: true, section_start: Advanced real-return assumption}
+      - {id: annual_contribution, label: Annual new investment in today’s money, type: number, prefix: "€", default: 18000, min: 0, step: 500}
+      - {id: contribution_growth, label: Annual real growth in contribution, type: number, suffix: "%", default: 0, min: -20, max: 30, step: 0.5, advanced: true}
+      - {id: return_rate, label: Assumed annual nominal investment return, type: number, suffix: "%", default: 6, min: -20, max: 30, step: 0.1, section_start: Return assumptions}
+      - {id: annual_fee, label: Annual investment fee, type: number, suffix: "%", default: 0, min: 0, max: 10, step: 0.05, advanced: true}
+      - {id: inflation_rate, label: Assumed annual inflation, type: number, suffix: "%", default: 2, min: -5, max: 15, step: 0.1, advanced: true}
     results:
+      - {id: portfolio_spending, label: Annual spending that must come from portfolio}
       - {id: target, label: Illustrative FIRE target}
       - {id: gap, label: Gap from current portfolio}
-      - {id: real_return, label: Implied annual real return}
+      - {id: progress, label: Progress towards target}
+      - {id: real_return, label: Implied annual real return after fee}
       - {id: years, label: Years to target in today’s-money terms}
+      - {id: contributions_to_target, label: New contributions made before target, advanced: true}
+      - {id: growth_to_target, label: Modelled real investment growth before target, advanced: true}
+      - {id: target_3, label: Target at a 3% withdrawal rate, advanced: true}
+      - {id: target_35, label: Target at a 3.5% withdrawal rate, advanced: true}
+      - {id: target_4, label: Target at a 4% withdrawal rate, advanced: true}
     guide: |
-      ## A withdrawal-rate target is a planning shortcut
-      Dividing desired annual portfolio withdrawals by a chosen withdrawal rate creates a simple target. A 4% assumption, for example, corresponds to 25 times annual spending.
+      ## A target, not a promise
+      The FIRE number is annual portfolio-funded spending divided by a chosen starting withdrawal rate, plus any separate capital reserve entered in Advanced mode. The accumulation path is shown in today’s money.
 
-      It is not a guarantee that a portfolio will last for life. Tax, inflation, market sequence, fees, retirement duration, State Pension and changing spending all matter. The graph is an illustration using the constant return you enter.
-    sources: []
+      A historical withdrawal-rate study is not a guarantee for an Irish household. Tax, fees, pension access, sequence of returns, retirement length and the timing of State Pension or other income can materially change the amount required.
+    sources:
+      - {title: "Bengen (1994) — Determining Withdrawal Rates Using Historical Data", url: "https://www.retailinvestor.org/pdf/Bengen1.pdf"}
+      - {title: "Pensions Authority — Pension calculator assumptions", url: "https://pensionsauthority.ie/scheme-members-and-prsa-contributors/pension-calculator/assumptions/"}
+      - {title: "Revenue — Taxation of pensions", url: "https://www.revenue.ie/en/jobs-and-pensions/pension/private/index.aspx"}
 
   - slug: retirement-income-calculator
     title: Retirement Income Calculator Ireland
     category: Pensions & Investing
     formula: retirement_income
-    summary: Combine an illustrative pension-pot withdrawal with State Pension and other retirement income.
-    meta_description: Retirement income calculator Ireland. Estimate annual and monthly gross retirement income from a pension pot, withdrawal rate, State Pension and other income.
+    summary: Combine portfolio withdrawals with State Pension and other income, then stress-test a deterministic retirement path for fees, inflation and lower returns.
+    meta_description: Retirement income calculator Ireland. Estimate gross retirement income and model portfolio sustainability, fees, inflation, target income and a lower-return stress scenario.
     updated: 2026-09-22
-    basic_note: "Basic mode shows first-year gross income and uses a 30-year retirement, 4% annual portfolio return and 2% annual inflation for the deterministic sustainability illustration."
-    advanced_note: "Advanced mode lets you change retirement length, portfolio return and inflation. The projection is smooth and does not model sequence-of-returns risk."
+    basic_note: "Basic mode shows first-year gross income and a 30-year deterministic path using 4% annual portfolio return, 2% annual withdrawal increases and no explicit annual fee."
+    advanced_note: "Advanced mode adds a gross-income target, an annual portfolio fee and a separate lower-return stress scenario. It still does not model year-by-year market volatility."
     fields:
       - {id: pot, label: Pension / investment pot at retirement, type: number, prefix: "€", default: 500000, min: 0, step: 5000, section_start: Portfolio}
-      - {id: withdrawal_rate, label: Illustrative annual withdrawal rate, type: number, suffix: "%", default: 4, min: 0, max: 15, step: 0.1}
-      - {id: state_pension, label: Annual State Pension or social-welfare income to include, type: number, prefix: "€", default: 0, min: 0, step: 100, section_start: Other retirement income}
+      - {id: withdrawal_rate, label: Illustrative starting withdrawal rate, type: number, suffix: "%", default: 4, min: 0, max: 15, step: 0.1}
+      - {id: state_pension, label: Annual State Pension or social-welfare income to include, type: number, prefix: "€", default: 0, min: 0, step: 100, section_start: Other retirement income, help: "Leave at €0 unless you expect to receive this income during the period being modelled. Entitlement and rates vary."}
       - {id: other_income, label: Other annual retirement income, type: number, prefix: "€", default: 0, min: 0, step: 100}
+      - {id: target_income, label: Optional annual gross-income target, type: number, prefix: "€", default: 0, min: 0, step: 500, advanced: true, section_start: Advanced income check, help: "Used to calculate the portfolio draw and withdrawal rate that would be required after the State Pension and other income entered. Enter 0 to disable."}
       - {id: retirement_years, label: Retirement period to model, type: number, suffix: years, default: 30, min: 1, max: 60, step: 1, advanced: true, section_start: Advanced sustainability assumptions}
-      - {id: return_rate, label: Assumed annual portfolio return, type: number, suffix: "%", default: 4, min: -20, max: 30, step: 0.1, advanced: true}
+      - {id: return_rate, label: Baseline annual portfolio return, type: number, suffix: "%", default: 4, min: -20, max: 30, step: 0.1, advanced: true}
+      - {id: stress_return_rate, label: Lower-return stress scenario, type: number, suffix: "%", default: 2, min: -20, max: 30, step: 0.1, advanced: true}
+      - {id: annual_fee, label: Annual portfolio fee, type: number, suffix: "%", default: 0, min: 0, max: 10, step: 0.05, advanced: true}
       - {id: inflation_rate, label: Annual increase in portfolio withdrawals, type: number, suffix: "%", default: 2, min: -5, max: 15, step: 0.1, advanced: true}
     results:
-      - {id: portfolio_income, label: Illustrative income from pot}
-      - {id: annual_income, label: Total annual gross retirement income}
+      - {id: portfolio_income, label: First-year portfolio withdrawal}
+      - {id: annual_income, label: Total first-year gross retirement income}
       - {id: monthly_income, label: Average monthly gross retirement income}
       - {id: ending_pot, label: Portfolio after modelled retirement period}
       - {id: depletion, label: Deterministic portfolio sustainability}
+      - {id: target_gap, label: First-year surplus / shortfall versus income target, advanced: true}
+      - {id: required_portfolio_income, label: Portfolio income required for target, advanced: true}
+      - {id: required_withdrawal_rate, label: Starting withdrawal rate required for target, advanced: true}
+      - {id: real_ending_pot, label: Ending portfolio in today’s money, advanced: true}
+      - {id: fees_paid, label: Modelled cumulative portfolio fees, advanced: true}
+      - {id: stress_ending_pot, label: Ending portfolio in lower-return scenario, advanced: true}
+      - {id: stress_depletion, label: Lower-return scenario sustainability, advanced: true}
     guide: |
-      ## Build retirement income from several sources
-      This calculator combines a simple percentage withdrawal from your entered pot with the State Pension amount and other income you choose to include. It intentionally leaves the State Pension field editable because entitlement and rates depend on the person and can change.
+      ## Gross retirement income and portfolio sustainability are different questions
+      The first-year income result adds the portfolio withdrawal, State Pension amount and other income entered. The sustainability model then follows the portfolio withdrawal separately so you can see what a constant-return path would do to the pot.
 
-      The result is gross income before tax. A fixed withdrawal percentage is not a guarantee of sustainability.
-    sources: []
+      Pension and investment income can be taxable. The calculator deliberately reports gross income and does not attempt to reproduce an individual PAYE, USC or PRSI position.
+    sources:
+      - {title: "Revenue — Taxation of pensions", url: "https://www.revenue.ie/en/jobs-and-pensions/pension/private/index.aspx"}
+      - {title: "Revenue — Taxation of Department of Social Protection pensions", url: "https://www.revenue.ie/en/jobs-and-pensions/pension/dsp/index.aspx"}
+      - {title: "Revenue — Taxation of retirement lump sums", url: "https://www.revenue.ie/en/jobs-and-pensions/pension/private/retirement-lump-sums.aspx"}
+      - {title: "Pensions Authority — Pension calculator assumptions", url: "https://pensionsauthority.ie/scheme-members-and-prsa-contributors/pension-calculator/assumptions/"}
 
   - slug: pension-projection-calculator
     title: Pension Projection Calculator Ireland
     category: Pensions & Investing
     formula: pension_projection
-    summary: Project a pension pot from current savings, employee and employer contributions, return and annual fees.
-    meta_description: Pension projection calculator Ireland. Project a future pension pot from age, retirement age, current fund, monthly contributions, return and fees.
+    summary: Project a pension pot from current savings and contributions, then test contribution growth, annual AVCs, fees, inflation and a lower-return scenario.
+    meta_description: Pension projection calculator Ireland. Project a pension pot with employee and employer contributions, annual AVCs, fees, inflation and a lower-return stress scenario.
     updated: 2026-09-22
-    basic_note: "Basic mode uses the contribution figures entered plus a 6% gross return, 0.75% annual fee and 2% inflation to show both nominal and today’s-money outcomes."
-    advanced_note: "Advanced mode lets you change the investment return, annual fee and inflation assumptions."
+    basic_note: "Basic mode uses the contribution figures entered plus a 6% gross return, 0.75% annual fee, level monthly contributions and 2% inflation."
+    advanced_note: "Advanced mode lets contributions rise annually, adds an annual AVC, changes fees and inflation, and compares the baseline with a lower-return stress scenario."
     fields:
       - {id: age, label: Current age, type: number, default: 35, min: 16, max: 90, step: 1, section_start: Timeline}
       - {id: retirement_age, label: Target retirement age, type: number, default: 65, min: 18, max: 90, step: 1}
       - {id: current, label: Current pension value, type: number, prefix: "€", default: 50000, min: 0, step: 1000, section_start: Pension today}
       - {id: monthly_employee, label: Your monthly contribution, type: number, prefix: "€", default: 400, min: 0, step: 25, section_start: Contributions}
       - {id: monthly_employer, label: Employer monthly contribution, type: number, prefix: "€", default: 300, min: 0, step: 25}
-      - {id: return_rate, label: Assumed annual return before fee, type: number, suffix: "%", default: 6, min: -20, max: 30, step: 0.1, advanced: true, section_start: Investment assumptions}
+      - {id: contribution_growth, label: Annual growth in monthly contributions, type: number, suffix: "%", default: 0, min: -20, max: 30, step: 0.5, advanced: true}
+      - {id: annual_avc, label: Additional employee / personal contribution each year, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true, help: "Model an annual AVC or other personal contribution. Check the separate Pension Tax Relief Calculator before assuming it all qualifies for Income Tax relief."}
+      - {id: return_rate, label: Baseline annual return before fee, type: number, suffix: "%", default: 6, min: -20, max: 30, step: 0.1, advanced: true, section_start: Investment assumptions}
+      - {id: stress_return_rate, label: Lower-return stress scenario before fee, type: number, suffix: "%", default: 3, min: -20, max: 30, step: 0.1, advanced: true}
       - {id: annual_fee, label: Annual fund fee, type: number, suffix: "%", default: 0.75, min: 0, max: 10, step: 0.05, advanced: true}
       - {id: inflation_rate, label: Assumed annual inflation, type: number, suffix: "%", default: 2, min: -5, max: 15, step: 0.1, advanced: true}
     results:
       - {id: years, label: Years to retirement}
       - {id: projected, label: Projected pension pot (nominal)}
       - {id: projected_real, label: Projected pot in today’s money}
-      - {id: contributed, label: Total nominal contributions including current pot}
+      - {id: contributed, label: Starting pot + total nominal contributions}
       - {id: growth, label: Estimated net investment growth}
+      - {id: employee_contributions, label: Employee / personal contributions added, advanced: true}
+      - {id: employer_contributions, label: Employer contributions added, advanced: true}
+      - {id: ending_employee_monthly, label: Employee monthly contribution in final year, advanced: true}
+      - {id: ending_employer_monthly, label: Employer monthly contribution in final year, advanced: true}
+      - {id: fee_drag, label: Modelled ending-balance reduction from annual fee, advanced: true}
+      - {id: stress_projected, label: Projected pot in lower-return scenario, advanced: true}
     guide: |
       ## Projection, not forecast
-      Contributions are added monthly and the assumed return is reduced by the annual fee before compounding. Real pension returns are uneven, fees can have several components and contribution levels can change.
+      The calculator compounds the existing pot and contributions using a constant annual return assumption after the annual percentage fee. Advanced mode can escalate contributions, add an annual AVC and compare a lower-return scenario.
 
-      Use the chart to see whether the long-term result is being driven mainly by time, contributions or the return assumption. Check pension tax-relief limits separately.
-    sources: []
+      Revenue tax relief limits and pension-product rules are separate from investment growth. Use the tax-relief calculator for contribution-limit planning and your provider’s benefit statement for scheme-specific projections.
+    sources:
+      - {title: "Revenue — Tax relief limits on pension contributions", url: "https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx"}
+      - {title: "Revenue — Tax relief on pension contributions", url: "https://www.revenue.ie/en/jobs-and-pensions/pension/relief/index.aspx"}
+      - {title: "Pensions Authority — Statement of reasonable projection", url: "https://pensionsauthority.ie/scheme-members-and-prsa-contributors/understanding-pensions/your_right_to_information/statement_of_reasonable_projection/"}
+      - {title: "Pensions Authority — Pension calculator assumptions", url: "https://pensionsauthority.ie/scheme-members-and-prsa-contributors/pension-calculator/assumptions/"}
 
   - slug: rent-vs-buy-calculator
     title: Rent vs Buy Calculator Ireland
