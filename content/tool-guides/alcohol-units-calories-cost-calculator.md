@@ -50,6 +50,16 @@ The HSE warns that even one standard drink can put some people over the legal dr
 
 The HSE also advises avoiding alcohol during pregnancy. If alcohol is causing problems in your life or you are concerned about your intake, use HSE alcohol supports or speak with a healthcare professional.
 
+## Volume and ABV matter more than drink names
+
+“Pint”, “glass” and “shot” are serving descriptions, not fixed alcohol doses. Two drinks with the same name can contain different amounts of pure alcohol because serving size and ABV differ.
+
+The calculator therefore works from **volume × ABV** rather than relying on a generic drink label. This is especially useful for stronger craft beers, large wine pours or spirits served in different measures.
+
+When comparing two patterns, keep the same method: calculate grams or standard drinks first, then compare weekly calories and spending. That makes the reduction scenario transparent rather than depending on vague labels such as “a couple of drinks”.
+
+If alcohol intake is causing concern, or if stopping suddenly could create withdrawal risk, use HSE or clinical support rather than a calculator.
+
 ## Method and limitations
 
 The calculator converts each entered drink into grams of pure alcohol using volume × ABV × 0.789, then divides the total by 10 to express the result in Irish standard drinks. Alcohol-derived calories are estimated at approximately 7 kcal per gram. The annual spending and reduction scenarios simply scale the weekly figures entered by the user.
