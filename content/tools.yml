@@ -1508,23 +1508,23 @@ tools:
     title: Rent vs Buy Calculator Ireland
     category: Mortgages & Home Buying
     formula: rent_vs_buy
-    summary: Compare an illustrative homeowner-equity path with a renter who invests the deposit and any monthly cost advantage.
-    meta_description: Rent vs buy calculator Ireland. Compare mortgage equity with renting and investing using editable rent, house price, rate, deposit, growth and maintenance assumptions.
+    summary: Compare a homeowner's net-equity path with a renter who invests the deposit, avoided buying costs and any monthly cash-flow advantage.
+    meta_description: Rent vs buy calculator Ireland. Compare home equity with renting and investing using editable mortgage, rent, growth, maintenance, transaction-cost and investment-return assumptions.
     updated: 2026-09-22
-    basic_note: "Basic mode includes standard residential stamp duty plus default assumptions of €3,500 other buying costs, €1,200 annual fixed ownership costs, 1.5% selling costs, 2.5% rent/house-price growth, 1% maintenance and 5% renter investment return."
-    advanced_note: "Advanced mode exposes transaction costs, annual ownership costs, growth, maintenance, selling costs and renter-return assumptions that can materially change a long-run comparison."
+    basic_note: "Basic mode uses transparent default assumptions for rent/house-price growth, maintenance, selling costs, fixed ownership costs and renter investment return. Switch to Advanced to challenge them."
+    advanced_note: "Advanced mode exposes the assumptions that drive long-run rent-versus-buy results. Treat the investment return as a net return after whatever fees and tax treatment apply to your own investment."
     fields:
       - {id: monthly_rent, label: Current monthly rent, type: number, prefix: "€", default: 1800, min: 0, step: 50, section_start: Renting}
       - {id: annual_rent_growth, label: Annual rent growth assumption, type: number, suffix: "%", default: 2.5, min: -10, max: 20, step: 0.1, advanced: true, section_start: Advanced assumptions}
       - {id: buying_costs, label: Legal, valuation & other buying costs (excluding stamp duty), type: number, prefix: "€", default: 3500, min: 0, step: 100, advanced: true}
       - {id: owner_fixed_annual, label: Annual LPT, insurance & other fixed ownership costs, type: number, prefix: "€", default: 1200, min: 0, step: 100, advanced: true}
-      - {id: house_price, label: Home purchase price, type: number, prefix: "€", default: 400000, min: 0, step: 1000, section_start: Buying}
+      - {id: house_price, label: Home purchase price, type: number, prefix: "€", default: 400000, min: 1, step: 1000, section_start: Buying}
       - {id: deposit, label: Deposit, type: number, prefix: "€", default: 40000, min: 0, step: 1000}
-      - {id: mortgage_rate, label: Mortgage interest rate, type: number, suffix: "%", default: 3.5, min: 0, max: 20, step: 0.1}
+      - {id: mortgage_rate, label: Mortgage interest rate assumption, type: number, suffix: "%", default: 3.5, min: 0, max: 20, step: 0.1}
       - {id: mortgage_years, label: Mortgage term, type: number, suffix: years, default: 30, min: 1, max: 50, step: 1}
       - {id: house_growth, label: Annual house-price growth assumption, type: number, suffix: "%", default: 2.5, min: -20, max: 20, step: 0.1, advanced: true}
-      - {id: maintenance_pct, label: Annual maintenance / ownership costs as % of home value, type: number, suffix: "%", default: 1, min: 0, max: 10, step: 0.1, advanced: true}
-      - {id: renter_return, label: Renter investment return assumption, type: number, suffix: "%", default: 5, min: -20, max: 30, step: 0.1, advanced: true}
+      - {id: maintenance_pct, label: Annual maintenance as % of current home value, type: number, suffix: "%", default: 1, min: 0, max: 10, step: 0.1, advanced: true}
+      - {id: renter_return, label: Renter investment return assumption — net of fees/tax, type: number, suffix: "%", default: 5, min: -20, max: 30, step: 0.1, advanced: true}
       - {id: selling_cost_pct, label: Selling costs at comparison date, type: number, suffix: "% of home value", default: 1.5, min: 0, max: 10, step: 0.1, advanced: true}
       - {id: years, label: Comparison period, type: number, suffix: years, default: 15, min: 1, max: 40, step: 1, section_start: Time horizon}
     results:
@@ -1533,22 +1533,29 @@ tools:
       - {id: owner_equity, label: Buyer net position at end}
       - {id: renter_portfolio, label: Renter investment portfolio at end}
       - {id: difference, label: End-value difference}
+      - {id: first_crossover, label: First modelled point buyer is ahead, advanced: true}
+      - {id: ending_home_value, label: Modelled home value at end, advanced: true}
+      - {id: remaining_mortgage, label: Mortgage balance at end, advanced: true}
+      - {id: buyer_sale_equity, label: Home sale equity after selling costs, advanced: true}
+      - {id: ending_monthly_rent, label: Modelled monthly rent at end, advanced: true}
     guide: |
-      ## The assumptions matter more than the headline
-      This model gives the renter an initial investment equal to the buyer's deposit and then invests any month where renting costs less than mortgage plus estimated maintenance. If owning is cheaper in a month, the model does not assume the renter borrows to fund the difference. The homeowner result is estimated property value minus the remaining mortgage.
+      ## A scenario engine, not a verdict
+      Rent versus buy depends on uncertain variables that compound over time. This tool compares a buyer's liquidated net position with a renter who invests the cash not committed to buying and any monthly housing-cost advantage.
 
-      Stamp duty, legal costs, tax on investments, selling costs, mortgage rate changes, insurance and many real-life differences are not fully modelled. Change the assumptions aggressively rather than treating one scenario as a verdict.
-    sources: []
+      The default assumptions are deliberately editable. Run conservative, central and optimistic cases rather than relying on one result.
+    sources:
+      - {title: "CCPC — Understanding mortgages", url: "https://www.ccpc.ie/manage-your-money/buying-a-home/about-mortgages/understanding-mortgages"}
+      - {title: "Revenue — Stamp Duty property rates", url: "https://www.revenue.ie/en/property/stamp-duty/property/stamp-duty-property/rates.aspx"}
 
   - slug: mortgage-affordability-calculator
     title: Mortgage Affordability Calculator Ireland
     category: Mortgages & Home Buying
     formula: mortgage_affordability
-    summary: Compare an income multiple with a user-set monthly affordability limit and deposit constraint.
-    meta_description: Mortgage affordability calculator Ireland. Compare Central Bank loan-to-income limits with monthly repayment affordability and deposit constraints.
+    summary: Compare the Central Bank income ceiling, your deposit/LTV constraint and a user-set repayment budget, with an optional net-income household budget check.
+    meta_description: Mortgage affordability calculator Ireland. Compare Central Bank LTI and LTV limits with monthly repayment capacity, household budget and a rate stress test.
     updated: 2026-09-22
-    basic_note: "Basic mode uses a 4.5% test rate, 30-year term, a 30% gross-income payment cap and no other monthly debt unless you switch to Advanced."
-    advanced_note: "Advanced mode lets you set the test rate, term, payment-share assumption and other monthly debt."
+    basic_note: "Basic mode uses a 4.5% scenario rate, 30-year term and a 30% gross-income payment cap. The payment share is a modelling choice, not an official affordability rule."
+    advanced_note: "Advanced mode lets you change the rate, term and payment share, subtract other debt, add an optional net-income household budget and stress-test the resulting mortgage at a higher rate."
     fields:
       - {id: income, label: Gross household annual income, type: number, prefix: "€", default: 80000, min: 0, step: 1000, section_start: Household & deposit}
       - id: buyer_type
@@ -1559,52 +1566,75 @@ tools:
           - {value: ftb, label: First-time buyer — 4× LTI limit}
           - {value: subsequent, label: Second/subsequent buyer — 3.5× LTI limit}
       - {id: deposit, label: Deposit available, type: number, prefix: "€", default: 40000, min: 0, step: 1000}
-      - {id: rate, label: Mortgage interest rate for affordability test, type: number, suffix: "%", default: 4.5, min: 0, max: 20, step: 0.1, advanced: true, section_start: Advanced affordability assumptions}
+      - {id: rate, label: Mortgage interest rate for affordability scenario, type: number, suffix: "%", default: 4.5, min: 0, max: 20, step: 0.1, advanced: true, section_start: Advanced affordability assumptions}
       - {id: term, label: Mortgage term, type: number, suffix: years, default: 30, min: 1, max: 50, step: 1, advanced: true}
       - {id: max_payment_pct, label: Maximum mortgage payment as % of gross monthly income, type: number, suffix: "%", default: 30, min: 5, max: 70, step: 1, advanced: true}
-      - {id: other_debt, label: Other monthly debt payments to subtract, type: number, prefix: "€", default: 0, min: 0, step: 50, advanced: true}
+      - {id: other_debt, label: Other monthly debt payments, type: number, prefix: "€", default: 0, min: 0, step: 50, advanced: true}
+      - {id: net_income_monthly, label: Optional household net income per month, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true, section_start: Optional net-income budget check, help: "Enter 0 to ignore this check. If entered, the model also limits the mortgage payment to cash left after the costs and buffer below."}
+      - {id: essential_spend_monthly, label: Essential monthly spending excluding mortgage and debt, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true}
+      - {id: buffer_monthly, label: Monthly cash buffer you want to preserve, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true}
+      - {id: stress_rate_add, label: Stress-test rate increase, type: number, suffix: "percentage points", default: 1, min: 0, max: 10, step: 0.25, advanced: true, section_start: Rate stress test}
     results:
-      - {id: lti_mortgage, label: Central Bank LTI ceiling before exceptions}
-      - {id: payment_capacity, label: User-set monthly mortgage capacity}
-      - {id: payment_based_mortgage, label: Mortgage supported by that payment}
+      - {id: lti_mortgage, label: Central Bank LTI ceiling before allowances}
+      - {id: payment_capacity, label: Modelled monthly mortgage capacity}
+      - {id: payment_based_mortgage, label: Mortgage supported by payment capacity}
       - {id: deposit_based_mortgage, label: Mortgage supported by deposit at 90% LTV}
-      - {id: indicative_mortgage, label: Lower of income, payment and deposit constraints}
+      - {id: indicative_mortgage, label: Indicative mortgage from the tightest constraint}
       - {id: indicative_price, label: Indicative price including deposit}
+      - {id: binding_constraint, label: Binding modelled constraint}
+      - {id: gross_payment_limit, label: Gross-income payment limit after debt, advanced: true}
+      - {id: net_budget_limit, label: Net-income budget payment limit, advanced: true}
+      - {id: stress_rate, label: Stress-test interest rate, advanced: true}
+      - {id: stress_payment, label: Repayment at stress-test rate, advanced: true}
     guide: |
-      ## Two different constraints
-      The Central Bank mortgage measures limit first-time buyers to 4 times gross income and second/subsequent buyers to 3.5 times, subject to lender exceptions. Separately, a household has its own cash-flow limit. This tool lets you choose a maximum mortgage-payment share of gross monthly income and subtract other debt payments.
+      ## Regulatory capacity and household affordability are different
+      The Central Bank mortgage measures set LTI/LTV boundaries. Lenders then apply their own underwriting. This tool adds a user-defined cash-flow constraint so you can deliberately set a stricter ceiling than the regulatory maximum.
 
-      The percentage you enter is your scenario assumption, not a Central Bank affordability rule and not a lender approval test.
+      The percentage-of-gross-income setting is not a Central Bank rule or lender approval formula. Advanced mode can add a net-income budget check so the model uses the lower of the two monthly payment limits.
     sources:
       - {title: "Central Bank of Ireland — Mortgage Measures", url: "https://www.centralbank.ie/financial-system/financial-stability/macro-prudential-policy/mortgage-measures"}
+      - {title: "CCPC — Understanding mortgages", url: "https://www.ccpc.ie/manage-your-money/buying-a-home/about-mortgages/understanding-mortgages"}
 
   - slug: house-buying-costs-calculator
     title: House Buying Costs Calculator Ireland
     category: Mortgages & Home Buying
     formula: house_buying_costs
-    summary: Add the deposit, residential stamp duty and editable professional/moving costs into one upfront budget.
-    meta_description: House buying costs calculator Ireland. Estimate deposit, residential stamp duty, legal, survey, valuation, moving and other upfront purchase costs.
+    summary: Build a completion-cash budget from your deposit, current residential Stamp Duty and editable professional, moving and setup costs.
+    meta_description: House buying costs calculator Ireland. Estimate deposit, Stamp Duty, legal, survey, valuation, moving and other upfront costs, then compare the total with cash available.
     updated: 2026-09-22
+    basic_note: "Basic mode totals the deposit, current standard residential Stamp Duty and the editable professional/moving budgets below."
+    advanced_note: "Advanced mode adds insurance/setup, furnishing, immediate works, a reserve you want to keep after closing and a cash-available check."
     fields:
-      - {id: price, label: Property price, type: number, prefix: "€", default: 400000, min: 0, step: 1000, section_start: Purchase}
+      - {id: price, label: Property price, type: number, prefix: "€", default: 400000, min: 1, step: 1000, section_start: Purchase}
       - {id: deposit_pct, label: Deposit percentage, type: number, suffix: "%", default: 10, min: 0, max: 100, step: 1}
-      - {id: legal, label: Legal / conveyancing budget, type: number, prefix: "€", default: 2500, min: 0, step: 100, section_start: Professional & moving costs}
+      - {id: legal, label: Solicitor / conveyancing and legal-outlay budget, type: number, prefix: "€", default: 2500, min: 0, step: 100, section_start: Professional & moving costs}
       - {id: survey, label: Survey / engineer budget, type: number, prefix: "€", default: 600, min: 0, step: 50}
-      - {id: valuation, label: Valuation budget, type: number, prefix: "€", default: 200, min: 0, step: 50}
-      - {id: moving, label: Moving / setup budget, type: number, prefix: "€", default: 1500, min: 0, step: 100}
+      - {id: valuation, label: Lender valuation budget, type: number, prefix: "€", default: 200, min: 0, step: 50}
+      - {id: moving, label: Moving / basic setup budget, type: number, prefix: "€", default: 1500, min: 0, step: 100}
       - {id: other, label: Other upfront costs, type: number, prefix: "€", default: 1000, min: 0, step: 100}
+      - {id: insurance_setup, label: Initial home-insurance / mortgage-protection budget, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true, section_start: Advanced setup & resilience}
+      - {id: furnishing, label: Furniture & appliance budget, type: number, prefix: "€", default: 0, min: 0, step: 250, advanced: true}
+      - {id: immediate_works, label: Immediate repairs / works budget, type: number, prefix: "€", default: 0, min: 0, step: 250, advanced: true}
+      - {id: reserve, label: Cash reserve you want left after purchase, type: number, prefix: "€", default: 0, min: 0, step: 500, advanced: true}
+      - {id: cash_available, label: Total cash available, type: number, prefix: "€", default: 50000, min: 0, step: 500, advanced: true, help: "Used only for the advanced surplus/shortfall check. Include cash genuinely available for the purchase plan."}
     results:
       - {id: deposit, label: Deposit}
       - {id: stamp, label: Residential stamp duty}
-      - {id: other_costs, label: Other entered costs}
+      - {id: other_costs, label: Professional, moving & setup costs}
       - {id: total_upfront, label: Total upfront cash budget}
+      - {id: mortgage_required, label: Mortgage required from price less deposit}
+      - {id: professional_costs, label: Professional-cost subtotal, advanced: true}
+      - {id: moving_setup_costs, label: Moving, setup & immediate works, advanced: true}
+      - {id: cash_target, label: Cash target including retained reserve, advanced: true}
+      - {id: cash_position, label: Cash surplus / shortfall versus target, advanced: true}
     guide: |
-      ## The deposit is only part of the cash needed
-      This tool calculates standard residential stamp duty using Revenue's current 1%, 2% and 6% progressive bands and adds the cost estimates you enter. Professional fees vary, so the legal, survey, valuation, moving and other figures are deliberately editable rather than presented as official averages.
+      ## Completion needs more cash than the deposit
+      This tool combines the mortgage deposit, current standard residential Stamp Duty and the editable costs you enter. Advanced mode also separates spending from a reserve you deliberately want to retain after the keys are collected.
 
-      Mortgage protection, home insurance, furnishing, repairs and scheme-specific costs may need a separate budget.
+      Replace the defaults with actual quotes as the purchase progresses. Professional fees and insurance costs vary by property and buyer.
     sources:
       - {title: "Revenue — Residential Stamp Duty rates", url: "https://www.revenue.ie/en/property/stamp-duty/property/stamp-duty-property/rates.aspx"}
+      - {title: "CCPC — Understanding mortgages", url: "https://www.ccpc.ie/manage-your-money/buying-a-home/about-mortgages/understanding-mortgages"}
 
   - slug: solar-payback-calculator
     title: Solar PV Payback Calculator Ireland
