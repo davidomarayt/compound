@@ -2198,6 +2198,8 @@ tools:
     summary: Compare a personal car loan, hire purchase and PCP using the same car price, deposit and finance assumptions, with an optional advanced mode for fees, mileage and end-value equity.
     meta_description: Car finance calculator Ireland comparing personal loan vs hire purchase vs PCP. Compare monthly payments, balloon payments, total cost, ownership and advanced PCP mileage/equity scenarios.
     updated: 2026-09-22
+    basic_note: "Basic mode compares loan, HP and PCP using the same car price, deposit and comparison term. Fees and end-of-PCP assumptions stay at the stated defaults."
+    advanced_note: "Advanced mode lets you use the actual term and fees for each quote, plus PCP mileage, condition charges and an estimated end value."
     fields:
       - {id: car_price, label: Car cash price, type: number, prefix: "€", default: 40000, min: 0, step: 500}
       - {id: deposit, label: Cash deposit / trade-in used upfront, type: number, prefix: "€", default: 8000, min: 0, step: 500}
