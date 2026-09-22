@@ -2,6 +2,16 @@
 
 Deposit Interest Retention Tax is the tax deducted from interest on many deposit accounts held by Irish-resident individuals. This calculator separates gross interest, DIRT and net interest.
 
+## Gross interest, DIRT and the rate you actually keep
+
+A deposit account is normally advertised using a **gross** interest rate. The calculator's first section starts one step later: enter the gross euro interest and it shows the DIRT deduction and the amount retained after that tax assumption.
+
+Advanced mode reverses the perspective. You enter a starting deposit, gross annual rate and number of years, and the calculator compounds the balance after applying DIRT to each year's modelled interest. This makes the difference between a quoted gross rate and the **after-DIRT compounding rate** visible.
+
+For example, a 3% gross deposit rate does not produce 3% annual compounding after a 33% DIRT deduction in this simplified model. The retained interest rate is 67% of the gross interest rate before considering exemptions or special account treatment. That distinction becomes more important over several years because the tax reduces the amount available to compound in later years.
+
+Use the [Regular Savings Calculator](/regular-savings-calculator/) if you also plan to add monthly contributions, and the [Inflation Calculator](/inflation-calculator/) if you want to compare nominal deposit growth with purchasing power.
+
 ## How to read the result
 
 DIRT applies to the **interest earned**, not the deposit principal. A €50,000 deposit does not create a €16,500 tax bill; only the interest paid is taxed at the applicable rate.
