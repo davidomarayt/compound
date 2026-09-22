@@ -468,3 +468,22 @@ def test_every_calculator_guide_has_a_worked_example():
         guide = str(tool.get("guide") or "")
         assert "## Worked example" in guide, f"{tool['slug']} needs a worked example"
         assert "## Method and limitations" in guide, f"{tool['slug']} needs an explicit methodology section"
+
+
+def test_bespoke_flagships_match_quality_system():
+    root = Path(__file__).parents[1] / "compound" / "site"
+    compound_template = (root / "templates" / "calculator.html").read_text()
+    compound_partial = (root / "templates" / "_compound_calculator.html").read_text()
+    bmi_template = (root / "templates" / "bmi.html").read_text()
+    bmi_js = (root / "static" / "bmi-calculator.js").read_text()
+
+    assert "dateModified" in compound_template
+    assert "cc-trust" in compound_partial
+    assert "cc-share" in compound_partial and "cc-export" in compound_partial and "cc-report" in compound_partial
+    assert "Rules checked 22 September 2026" in compound_partial
+
+    assert "dateModified" in bmi_template
+    assert "bmi-trust" in bmi_template
+    assert "bmi-copy-result" in bmi_template and "bmi-print-result" in bmi_template
+    assert "navigator.clipboard" in bmi_js
+    assert "<noscript>" in bmi_template
