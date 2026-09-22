@@ -13,6 +13,11 @@
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/tools/">Tools</a></nav>
     <p class="eyebrow">{{ tool.category|upper }}</p><h1>{{ tool.title }}</h1><p class="tool-standfirst">{{ tool.summary }}</p>
     <p class="tool-updated">Updated {{ tool.updated|long_date }}</p>
+    <div class="tool-trust-row" aria-label="Calculator quality information">
+      <span>Runs in your browser</span>
+      <span>{{ tool.sources|length }} source{% if tool.sources|length != 1 %}s{% endif %}</span>
+      <span>Reviewed {{ tool.updated|long_date }}</span>
+    </div>
   </header>
   <section class="tool-workspace">
     <form class="tool-form" data-tool-form novalidate>
@@ -66,6 +71,7 @@
       </div>
       <div class="tool-result-actions">
         <button type="button" class="tool-text-action" data-tool-share>Copy scenario link</button>
+        <button type="button" class="tool-text-action" data-tool-copy-results>Copy results</button>
         <button type="button" class="tool-text-action" data-tool-print>Print / save</button>
         <span class="tool-action-status" data-tool-action-status role="status"></span>
         <small class="tool-share-privacy">Shared scenarios are encoded in the link fragment and are not sent to Compound.</small>
