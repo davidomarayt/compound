@@ -544,3 +544,14 @@
   .tool-explainer,.tool-use-strip,.tool-more,.tool-reading,.tool-result-actions{display:none!important}
   .tool-chart-panel{margin-top:20px!important;border:1px solid #bbb!important}
 }
+
+
+.tool-noscript{
+  margin:0 0 18px;
+  padding:14px 16px;
+  border:1px solid #d8c9a5;
+  background:#fff8e5;
+  color:#5f5130;
+  font-size:.86rem;
+  line-height:1.55;
+}
