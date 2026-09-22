@@ -1409,11 +1409,13 @@ tools:
     summary: Compare an illustrative homeowner-equity path with a renter who invests the deposit and any monthly cost advantage.
     meta_description: Rent vs buy calculator Ireland. Compare mortgage equity with renting and investing using editable rent, house price, rate, deposit, growth and maintenance assumptions.
     updated: 2026-09-22
-    basic_note: "Basic mode keeps the long-term assumptions at the defaults: 2.5% rent growth, 2.5% house-price growth, 1% ownership costs and 5% renter investment return."
-    advanced_note: "Advanced mode exposes the growth, maintenance and renter-return assumptions that can materially change a long-run comparison."
+    basic_note: "Basic mode includes standard residential stamp duty plus default assumptions of €3,500 other buying costs, €1,200 annual fixed ownership costs, 1.5% selling costs, 2.5% rent/house-price growth, 1% maintenance and 5% renter investment return."
+    advanced_note: "Advanced mode exposes transaction costs, annual ownership costs, growth, maintenance, selling costs and renter-return assumptions that can materially change a long-run comparison."
     fields:
       - {id: monthly_rent, label: Current monthly rent, type: number, prefix: "€", default: 1800, min: 0, step: 50, section_start: Renting}
       - {id: annual_rent_growth, label: Annual rent growth assumption, type: number, suffix: "%", default: 2.5, min: -10, max: 20, step: 0.1, advanced: true, section_start: Advanced assumptions}
+      - {id: buying_costs, label: Legal, valuation & other buying costs (excluding stamp duty), type: number, prefix: "€", default: 3500, min: 0, step: 100, advanced: true}
+      - {id: owner_fixed_annual, label: Annual LPT, insurance & other fixed ownership costs, type: number, prefix: "€", default: 1200, min: 0, step: 100, advanced: true}
       - {id: house_price, label: Home purchase price, type: number, prefix: "€", default: 400000, min: 0, step: 1000, section_start: Buying}
       - {id: deposit, label: Deposit, type: number, prefix: "€", default: 40000, min: 0, step: 1000}
       - {id: mortgage_rate, label: Mortgage interest rate, type: number, suffix: "%", default: 3.5, min: 0, max: 20, step: 0.1}
@@ -1421,10 +1423,12 @@ tools:
       - {id: house_growth, label: Annual house-price growth assumption, type: number, suffix: "%", default: 2.5, min: -20, max: 20, step: 0.1, advanced: true}
       - {id: maintenance_pct, label: Annual maintenance / ownership costs as % of home value, type: number, suffix: "%", default: 1, min: 0, max: 10, step: 0.1, advanced: true}
       - {id: renter_return, label: Renter investment return assumption, type: number, suffix: "%", default: 5, min: -20, max: 30, step: 0.1, advanced: true}
+      - {id: selling_cost_pct, label: Selling costs at comparison date, type: number, suffix: "% of home value", default: 1.5, min: 0, max: 10, step: 0.1, advanced: true}
       - {id: years, label: Comparison period, type: number, suffix: years, default: 15, min: 1, max: 40, step: 1, section_start: Time horizon}
     results:
       - {id: mortgage_payment, label: Starting monthly mortgage repayment}
-      - {id: owner_equity, label: Homeowner equity at end}
+      - {id: upfront_buying_costs, label: Stamp duty + other buying costs}
+      - {id: owner_equity, label: Buyer net position at end}
       - {id: renter_portfolio, label: Renter investment portfolio at end}
       - {id: difference, label: End-value difference}
     guide: |
