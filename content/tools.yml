@@ -239,9 +239,11 @@ tools:
     title: Mortgage Borrowing Calculator Ireland
     category: Mortgages & Home Buying
     formula: mortgage_borrowing
-    summary: Estimate the Central Bank loan-to-income ceiling and how your deposit can constrain your purchase price.
-    meta_description: Ireland mortgage borrowing calculator using Central Bank loan-to-income and loan-to-value limits for first-time and subsequent buyers.
+    summary: Estimate the standard Central Bank loan-to-income ceiling, the purchase price your deposit can support and which constraint binds first.
+    meta_description: Ireland mortgage borrowing calculator using current Central Bank loan-to-income and loan-to-value limits, with an optional target-home check.
     updated: 2026-09-22
+    basic_note: "Basic mode compares the standard income and 90% LTV deposit constraints before lender affordability checks."
+    advanced_note: "Advanced mode adds a target-home check showing the mortgage, income and minimum deposit implied by the price you enter."
     fields:
       - {id: income, label: Gross household income, type: number, prefix: "€", default: 80000, min: 1000, step: 1000}
       - id: buyer_type
@@ -251,11 +253,18 @@ tools:
         options:
           - {value: ftb, label: First-time buyer}
           - {value: subsequent, label: Second or subsequent buyer}
-      - {id: deposit, label: Deposit available, type: number, prefix: "€", default: 40000, min: 0, step: 1000}
+      - {id: deposit, label: Deposit available for the purchase, type: number, prefix: "€", default: 40000, min: 0, step: 1000}
+      - {id: target_price, label: Target property price, type: number, prefix: "€", default: 400000, min: 0, step: 1000, advanced: true, section_start: Target-home check, help: "Optional target price. The check uses the deposit entered above and standard Central Bank LTI/LTV arithmetic; it does not model lender underwriting."}
     results:
-      - {id: lti_limit, label: Loan-to-income ceiling}
+      - {id: lti_multiple, label: Standard LTI multiple}
+      - {id: lti_limit, label: Mortgage ceiling from income}
       - {id: deposit_limit, label: Purchase price supported by deposit}
       - {id: purchase_price, label: Indicative maximum purchase price}
+      - {id: binding_constraint, label: Binding standard constraint}
+      - {id: target_mortgage, label: Mortgage needed for target, advanced: true}
+      - {id: target_income, label: Gross income needed for target mortgage, advanced: true}
+      - {id: target_min_deposit, label: Minimum 10% deposit for target, advanced: true}
+      - {id: target_gap, label: Gap from indicative maximum to target, advanced: true}
     guide: |
       ## Central Bank limits are not the same as mortgage approval
       The Central Bank mortgage measures cap loan-to-income at 4 times gross income for first-time buyers and 3.5 times for second and subsequent buyers. Principal-home buyers generally need at least a 10% deposit.
@@ -268,9 +277,11 @@ tools:
     title: House Deposit Calculator Ireland
     category: Mortgages & Home Buying
     formula: house_deposit
-    summary: Calculate the minimum deposit implied by Irish mortgage loan-to-value limits.
-    meta_description: House deposit calculator Ireland. Estimate the minimum deposit and maximum mortgage under current Central Bank loan-to-value limits.
+    summary: Calculate the standard minimum deposit, maximum LTV mortgage and how your own cash position compares.
+    meta_description: House deposit calculator Ireland. Estimate the minimum deposit and maximum mortgage under current Central Bank LTV limits, with an optional cash-position check.
     updated: 2026-09-22
+    basic_note: "Basic mode shows the standard minimum deposit and mortgage implied by the selected LTV rule."
+    advanced_note: "Advanced mode compares your available deposit with the standard minimum and shows the resulting LTV if you use that cash."
     fields:
       - {id: price, label: Property price, type: number, prefix: "€", default: 400000, min: 1000, step: 1000}
       - id: buyer_type
@@ -280,10 +291,15 @@ tools:
         options:
           - {value: home, label: Principal home — first-time or subsequent buyer}
           - {value: btl, label: Buy-to-let}
+      - {id: deposit_available, label: Deposit cash available, type: number, prefix: "€", default: 60000, min: 0, step: 1000, advanced: true, section_start: Your cash position, help: "Cash you could put towards the purchase price. Keep stamp duty, legal costs and any emergency reserve separate when deciding how much to use."}
     results:
-      - {id: deposit_rate, label: Minimum deposit percentage}
-      - {id: deposit, label: Minimum deposit}
+      - {id: deposit_rate, label: Standard minimum deposit percentage}
+      - {id: deposit, label: Standard minimum deposit}
       - {id: mortgage, label: Maximum mortgage from LTV alone}
+      - {id: ltv, label: Maximum standard LTV}
+      - {id: deposit_position, label: Your cash versus minimum deposit, advanced: true}
+      - {id: resulting_ltv, label: LTV using your available deposit, advanced: true}
+      - {id: mortgage_with_available, label: Mortgage needed using your available deposit, advanced: true}
     guide: |
       ## Deposit rules in Ireland
       Under the Central Bank mortgage measures, first-time and second/subsequent buyers of a principal home are generally limited to 90% loan-to-value, implying a 10% minimum deposit. Buy-to-let lending is generally limited to 70% loan-to-value, implying a 30% deposit.
@@ -296,13 +312,16 @@ tools:
     title: Stamp Duty Calculator Ireland
     category: Mortgages & Home Buying
     formula: stamp_duty
-    summary: Estimate Irish residential property stamp duty using the current progressive rates.
-    meta_description: Stamp duty calculator Ireland for residential property. Calculate 1%, 2% and 6% bands using current Revenue rates.
+    summary: Estimate Irish residential property Stamp Duty and see exactly how each progressive rate band contributes.
+    meta_description: Stamp duty calculator Ireland for residential property. Calculate the current 1%, 2% and 6% bands, effective rate and total price plus duty.
     updated: 2026-09-22
     fields:
       - {id: price, label: Residential property consideration, type: number, prefix: "€", default: 400000, min: 0, step: 1000}
     results:
       - {id: duty, label: Estimated stamp duty}
+      - {id: band_1_duty, label: Duty from 1% band}
+      - {id: band_2_duty, label: Duty from 2% band}
+      - {id: band_6_duty, label: Duty from 6% band}
       - {id: effective_rate, label: Effective rate}
       - {id: total_cost, label: Price plus stamp duty}
     guide: |
@@ -317,7 +336,7 @@ tools:
     title: Local Property Tax Calculator Ireland 2026
     category: Mortgages & Home Buying
     formula: lpt
-    summary: Estimate 2026 Local Property Tax from your property value and local authority.
+    summary: Estimate 2026 Local Property Tax from the 2026–2030 valuation bands and your local authority adjustment.
     meta_description: Ireland Local Property Tax calculator for 2026. Use Revenue valuation bands and your local authority adjustment to estimate LPT.
     updated: 2026-09-22
     fields:
@@ -359,9 +378,13 @@ tools:
           - {value: wexford, label: Wexford County Council}
           - {value: wicklow, label: Wicklow County Council}
     results:
+      - {id: valuation_band, label: 2026–2030 valuation band}
       - {id: base_lpt, label: Revenue basic LPT}
+      - {id: local_factor, label: Local Adjustment Factor}
       - {id: adjustment, label: Local adjustment}
-      - {id: lpt, label: Estimated 2026 LPT}
+      - {id: lpt, label: Estimated annual LPT}
+      - {id: monthly_lpt, label: Monthly budgeting equivalent}
+      - {id: effective_rate, label: Effective tax rate}
     guide: |
       ## 2026 LPT valuation period
       Revenue introduced new valuation bands for 2026 to 2030 based on the property's value on 1 November 2025. Local authorities may then vary the basic charge through a Local Adjustment Factor.
