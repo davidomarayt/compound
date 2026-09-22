@@ -55,6 +55,10 @@
       <div class="tool-result-grid">
         {% for result in tool.results %}<div class="tool-result{% if result.id == tool.primary_result %} tool-result-primary{% endif %}"><span>{{ result.label }}</span><strong data-result="{{ result.id }}">—</strong></div>{% endfor %}
       </div>
+      <div class="tool-insights" data-tool-insights hidden>
+        <p class="eyebrow">SCENARIO READOUT</p>
+        <ul data-tool-insight-list></ul>
+      </div>
       <p class="tool-result-note">{{ tool.result_note or 'Planning estimate only. Read the notes below before relying on the result.' }}</p>
       <div class="tool-scenario-summary" data-tool-scenario-summary hidden>
         <span>Scenario</span><div data-tool-scenario-chips></div>
