@@ -393,29 +393,41 @@ tools:
     sources:
       - {title: "Revenue — LPT valuation bands and 2026 local adjustments", url: "https://www.revenue.ie/en/property/local-property-tax/valuing-your-property/valuation-bands-rates.aspx"}
 
+
   - slug: loan-repayment-calculator
     title: Loan Repayment Calculator Ireland
     category: Loans & Debt
     formula: loan
-    summary: Estimate monthly repayments and total interest on a personal or car loan.
-    meta_description: Free loan repayment calculator Ireland. Estimate monthly repayments, total interest and total repayment for a personal or car loan.
+    summary: Estimate a fixed-payment personal or car loan, then model how extra monthly payments or a lump sum could change payoff time and interest.
+    meta_description: Loan repayment calculator Ireland. Estimate monthly repayments, total interest and an advanced overpayment scenario for a personal or car loan.
     updated: 2026-09-22
+    basic_note: "Basic mode shows the scheduled repayment, total interest and total repaid using the amount, annual rate and term entered."
+    advanced_note: "Advanced mode models an upfront fee plus optional extra monthly repayments and a lump sum. Check the actual loan agreement for early-repayment charges, limits and lender-specific interest calculations."
     fields:
-      - {id: amount, label: Loan amount, type: number, prefix: "€", default: 20000, min: 1, step: 100}
-      - {id: rate, label: APR / annual rate, type: number, suffix: "%", default: 7.5, min: 0, max: 100, step: 0.01}
-      - {id: years, label: Term, type: number, suffix: years, default: 5, min: 0.25, max: 40, step: 0.25}
+      - {id: amount, label: Loan amount, type: number, prefix: "€", default: 20000, min: 1, step: 100, section_start: Loan}
+      - {id: rate, label: Annual interest rate used in the model, type: number, suffix: "%", default: 7.5, min: 0, max: 100, step: 0.01, help: "Use the contractual annual rate if available. APR is a broader comparison measure and can reflect fees/timing that this simple amortisation model does not reproduce."}
+      - {id: years, label: Scheduled term, type: number, suffix: years, default: 5, min: 0.25, max: 40, step: 0.25}
+      - {id: upfront_fee, label: Upfront fee paid separately, type: number, prefix: "€", default: 0, min: 0, step: 10, advanced: true, section_start: Advanced repayment scenario, help: "Enter only a fee paid separately rather than financed inside the loan amount."}
+      - {id: extra_monthly, label: Extra monthly repayment, type: number, prefix: "€", default: 0, min: 0, step: 10, advanced: true}
+      - {id: extra_start_month, label: Start extra monthly repayment in month, type: number, default: 1, min: 1, max: 480, step: 1, advanced: true}
+      - {id: lump_sum, label: One-off lump-sum repayment, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true}
+      - {id: lump_sum_month, label: Make lump sum in month, type: number, default: 12, min: 1, max: 480, step: 1, advanced: true}
     results:
-      - {id: monthly, label: Estimated monthly repayment}
-      - {id: interest, label: Total interest}
-      - {id: total, label: Total repaid}
+      - {id: monthly, label: Scheduled monthly repayment}
+      - {id: interest, label: Scheduled total interest}
+      - {id: total, label: Scheduled total repaid}
+      - {id: payoff_time, label: Modelled payoff time, advanced: true}
+      - {id: scenario_interest, label: Interest in advanced scenario, advanced: true}
+      - {id: interest_saved, label: Interest saved versus schedule, advanced: true}
+      - {id: scenario_total, label: Total cash paid incl. entered upfront fee, advanced: true}
     guide: |
       ## Compare the total cost, not only the monthly repayment
-      Stretching a loan over more years can make the monthly figure look easier while increasing the total interest substantially. Use the calculator to compare the same loan amount across different rates and terms.
+      Stretching a loan over more years can make the monthly figure look easier while increasing the total interest substantially. Advanced mode also lets you test overpayments while keeping the original scheduled payment visible as the baseline.
 
-      Real loan APR calculations can include fees and timing details that a simple amortisation model does not capture. Treat this as a planning tool rather than a lender quotation.
-    sources: []
-
-
+      Real APR calculations and early-settlement terms can include fees, daily interest and contract rules that a simple amortisation model does not capture. Treat this as a planning tool rather than a lender quotation.
+    sources:
+      - {title: "CCPC — Borrowing money", url: "https://www.ccpc.ie/consumers/money/borrowing/"}
+      - {title: "CCPC — Loan calculator", url: "https://www.ccpc.ie/consumers/money-tools/loan-calculator/"}
   - slug: debt-repayment-calculator
     title: Debt Snowball vs Avalanche Calculator Ireland
     category: Loans & Debt
@@ -1055,78 +1067,106 @@ tools:
     sources:
       - {title: "Workplace Relations Commission — Annual Leave", url: "https://www.workplacerelations.ie/en/what_you_should_know/leave/annual-leave/"}
       - {title: "Workplace Relations Commission — Working Hours & Breaks", url: "https://workplacerelations.ie/en/what_you_should_know/hours-and-wages/"}
+
   - slug: fuel-cost-calculator
     title: Fuel Cost Calculator Ireland
     category: EV & Motoring
     formula: fuel
-    summary: Estimate litres used and fuel cost for a journey from distance, consumption and pump price.
-    meta_description: Fuel cost calculator Ireland. Estimate petrol or diesel cost from journey distance, L/100km consumption, fuel price and number of trips.
+    summary: Estimate litres and fuel cost for a journey, then use Advanced mode to annualise the same real-world consumption and pump-price assumptions.
+    meta_description: Fuel cost calculator Ireland. Estimate petrol or diesel cost per trip, per kilometre and per year from L/100km, distance and fuel price.
     updated: 2026-09-22
+    basic_note: "Basic mode prices the trip pattern entered using one fuel-consumption figure and one pump price."
+    advanced_note: "Advanced mode adds annual distance so the same consumption and pump-price assumptions can be translated into yearly litres and fuel spend."
     fields:
-      - {id: distance, label: Distance per trip, type: number, suffix: km, default: 100, min: 0, step: 1}
-      - {id: consumption, label: Vehicle consumption, type: number, suffix: "L/100km", default: 6.5, min: 0, max: 100, step: 0.1}
+      - {id: distance, label: Distance per trip, type: number, suffix: km, default: 100, min: 0, step: 1, section_start: Journey}
+      - {id: consumption, label: Real-world vehicle consumption, type: number, suffix: "L/100km", default: 6.5, min: 0, max: 100, step: 0.1, help: "Use your own measured consumption where possible; speed, weather, traffic and driving style can move this materially."}
       - {id: price, label: Fuel price per litre, type: number, prefix: "€", default: 1.75, min: 0, step: 0.01}
       - {id: trips, label: Number of trips, type: number, default: 1, min: 1, step: 1}
+      - {id: annual_distance, label: Annual driving distance, type: number, suffix: "km/year", default: 15000, min: 0, step: 500, advanced: true, section_start: Advanced annual view}
     results:
       - {id: litres, label: Estimated fuel used}
       - {id: cost, label: Estimated fuel cost}
       - {id: per100, label: Fuel cost per 100 km}
+      - {id: cost_per_km, label: Fuel cost per km}
+      - {id: annual_litres, label: Annual fuel volume, advanced: true}
+      - {id: annual_cost, label: Annual fuel cost, advanced: true}
     guide: |
-      ## Plan a commute or long journey
-      Fuel consumption is normally quoted in litres per 100 km in Ireland. Multiply distance by consumption, then by the pump price, to get a simple trip estimate.
+      ## Plan a commute, journey or annual fuel budget
+      Fuel consumption is normally quoted in litres per 100 km in Ireland. The calculator converts the entered journey into litres and euro cost, while Advanced mode annualises the same consumption and pump-price assumptions.
 
-      Real-world use changes with speed, temperature, traffic, tyres, load and driving style. Use your own observed consumption for a more useful estimate than an official test figure.
-    sources: []
+      Fuel is only one part of motoring cost. Depreciation, finance, insurance, motor tax, tyres, servicing and repairs are outside this calculator.
+    sources:
+      - {title: "SEAI — Journey Cost Calculator", url: "https://www.seai.ie/about/tools/journey-calculator/results"}
 
   - slug: ev-charging-cost-calculator
     title: EV Charging Cost Calculator Ireland
     category: EV & Motoring
     formula: ev
-    summary: Estimate EV electricity use and charging cost for a journey, including charging losses.
-    meta_description: EV charging cost calculator Ireland. Estimate kWh and charging cost from journey distance, vehicle efficiency, electricity price and charging losses.
+    summary: Estimate EV energy and charging cost including charging losses, then model a home/public charging mix and compare annual energy cost with an ICE fuel scenario.
+    meta_description: EV charging cost calculator Ireland. Estimate kWh, charging losses, home/public blended charging cost and annual EV energy spend.
     updated: 2026-09-22
+    basic_note: "Basic mode assumes all grid energy is bought at the single electricity price entered."
+    advanced_note: "Advanced mode blends a home and public charging price by the share entered, annualises the result and adds an optional petrol/diesel fuel-cost comparison. It compares energy only, not total vehicle ownership cost."
     fields:
-      - {id: distance, label: Distance, type: number, suffix: km, default: 100, min: 0, step: 1}
-      - {id: efficiency, label: Vehicle efficiency, type: number, suffix: "kWh/100km", default: 18, min: 1, max: 100, step: 0.1}
-      - {id: price, label: Electricity price, type: number, prefix: "€", suffix: "/kWh", default: 0.30, min: 0, step: 0.01}
+      - {id: distance, label: Journey distance, type: number, suffix: km, default: 100, min: 0, step: 1, section_start: Journey}
+      - {id: efficiency, label: Vehicle efficiency, type: number, suffix: "kWh/100km", default: 18, min: 1, max: 100, step: 0.1, help: "Use a real-world figure from the vehicle where available."}
+      - {id: price, label: Home electricity price, type: number, prefix: "€", suffix: "/kWh", default: 0.30, min: 0, step: 0.01}
       - {id: loss, label: Charging losses, type: number, suffix: "%", default: 10, min: 0, max: 50, step: 1}
+      - {id: home_share, label: Share of charging energy bought at home, type: number, suffix: "%", default: 80, min: 0, max: 100, step: 1, advanced: true, section_start: Advanced charging mix}
+      - {id: public_price, label: Average public charging price, type: number, prefix: "€", suffix: "/kWh", default: 0.55, min: 0, step: 0.01, advanced: true, help: "Use your own expected weighted public-charging price; rapid, destination and subscription tariffs can differ substantially."}
+      - {id: annual_distance, label: Annual distance, type: number, suffix: "km/year", default: 15000, min: 0, step: 500, advanced: true, section_start: Annual comparison}
+      - {id: ice_consumption, label: Comparison petrol/diesel consumption, type: number, suffix: "L/100km", default: 6.5, min: 0, max: 100, step: 0.1, advanced: true}
+      - {id: fuel_price, label: Comparison fuel price, type: number, prefix: "€", suffix: "/L", default: 1.75, min: 0, step: 0.01, advanced: true}
     results:
       - {id: battery_kwh, label: Energy used by vehicle}
       - {id: wall_kwh, label: Energy drawn from charger}
       - {id: cost, label: Estimated charging cost}
       - {id: per100, label: Charging cost per 100 km}
+      - {id: blended_rate, label: Blended charging price, advanced: true}
+      - {id: annual_wall_kwh, label: Annual grid energy for charging, advanced: true}
+      - {id: annual_cost, label: Annual EV charging cost, advanced: true}
+      - {id: ice_annual_cost, label: Comparison annual fuel cost, advanced: true}
+      - {id: annual_saving_vs_ice, label: EV energy-cost difference vs fuel, advanced: true}
     guide: |
       ## Home charging versus public charging
-      Vehicle efficiency describes energy used by the car, while your electricity bill reflects energy drawn from the charger. Charging losses mean the two figures are not identical, so this calculator lets you include an estimated loss percentage.
+      Vehicle efficiency describes energy used by the car, while your electricity bill reflects energy drawn from the charger. Charging losses mean those figures are not identical.
 
-      Enter the tariff that actually applies to the charging session. A cheap overnight home rate and a rapid public charger can produce very different costs for the same journey.
-    sources: []
+      Advanced mode avoids assuming every kWh comes from the cheapest tariff: it weights the home and public prices by the charging split entered. The petrol/diesel comparison is energy-only and does not include vehicle price, depreciation, finance, tax, insurance or servicing.
+    sources:
+      - {title: "SEAI — EV charging", url: "https://www.seai.ie/plan-your-energy-journey/for-your-home/electric-vehicles/about-evs/ev-charging"}
+      - {title: "CRU — Smart meters and services", url: "https://www.cru.ie/consumer-information/billing/smart-meters-and-services/"}
 
   - slug: electricity-cost-calculator
     title: Electricity Cost Calculator Ireland
     category: Home Energy
     formula: electricity
-    summary: Estimate how much an appliance costs to run per month and per year.
-    meta_description: Electricity cost calculator Ireland. Estimate appliance running costs from watts, hours used and your electricity unit rate.
+    summary: Estimate an appliance's incremental electricity use and running cost, with Advanced controls for cycling/duty cycle and off-peak usage.
+    meta_description: Electricity cost calculator Ireland. Estimate appliance kWh and running cost from watts, usage, duty cycle and day/off-peak electricity rates.
     updated: 2026-09-22
+    basic_note: "Basic mode assumes the appliance draws the entered wattage for every hour entered and all energy is charged at one unit rate."
+    advanced_note: "Advanced mode can reduce nameplate power with a duty-cycle assumption and split the appliance's energy between the main and off-peak rates. Fixed standing charges are excluded because they are not caused by running one appliance."
     fields:
-      - {id: watts, label: Appliance power, type: number, suffix: watts, default: 2000, min: 0, step: 10}
-      - {id: hours, label: Hours used per day, type: number, default: 1, min: 0, max: 24, step: 0.1}
+      - {id: watts, label: Appliance rated power, type: number, suffix: watts, default: 2000, min: 0, step: 10, section_start: Appliance}
+      - {id: hours, label: Hours switched on per day of use, type: number, default: 1, min: 0, max: 24, step: 0.1}
       - {id: days, label: Days used per month, type: number, default: 30, min: 0, max: 31, step: 1}
-      - {id: price, label: Electricity unit rate, type: number, prefix: "€", suffix: "/kWh", default: 0.30, min: 0, step: 0.01}
+      - {id: price, label: Main electricity unit rate, type: number, prefix: "€", suffix: "/kWh", default: 0.30, min: 0, step: 0.01}
+      - {id: duty_cycle, label: Average duty cycle while switched on, type: number, suffix: "%", default: 100, min: 0, max: 100, step: 1, advanced: true, section_start: Advanced usage assumptions, help: "100% means the appliance draws the entered wattage continuously. Use a lower measured/estimated figure for cycling loads such as thermostatically controlled appliances."}
+      - {id: offpeak_share, label: Share of this appliance's kWh used off-peak, type: number, suffix: "%", default: 0, min: 0, max: 100, step: 1, advanced: true}
+      - {id: offpeak_rate, label: Off-peak unit rate, type: number, prefix: "€", suffix: "/kWh", default: 0.15, min: 0, step: 0.01, advanced: true}
     results:
       - {id: kwh, label: Electricity used per month}
-      - {id: monthly, label: Estimated monthly cost}
-      - {id: annual, label: Estimated annual cost at same usage}
+      - {id: monthly, label: Estimated monthly running cost}
+      - {id: annual, label: Estimated annual running cost}
+      - {id: annual_kwh, label: Annual electricity use, advanced: true}
+      - {id: blended_rate, label: Effective unit rate for this appliance, advanced: true}
     guide: |
-      ## Convert watts into an electricity cost
-      Divide appliance wattage by 1,000 to get kilowatts, multiply by hours used to get kWh, then multiply by your unit rate. This calculator does that across the days you enter.
+      ## Convert appliance use into kWh and euro
+      Basic mode divides wattage by 1,000, multiplies by hours and days, then applies the unit rate. Advanced mode can account for a cycling load and an off-peak share.
 
-      Many appliances cycle on and off rather than drawing their rated wattage continuously. Smart plugs or energy monitors can give a better real-world input for fridges, heat pumps and other variable-load devices.
-    sources: []
-
-
-
+      This is an **incremental appliance running-cost** calculator. It deliberately excludes household standing charges because those fixed charges generally remain whether this individual appliance is run or not.
+    sources:
+      - {title: "CRU — Your electricity bill", url: "https://www.cru.ie/consumer-information/billing/your-electricity-bill/"}
+      - {title: "CRU — Dynamic price tariffs", url: "https://www.cru.ie/consumer-information/billing/dynamic-price-tariffs-for-electricity/"}
   - slug: take-home-pay-calculator
     title: Take-Home Pay Calculator Ireland 2026
     category: Tax & Take-Home Pay
@@ -2352,6 +2392,8 @@ tools:
     summary: Combine upgrade quotes, current One Stop Shop grant values and an editable energy-saving assumption into one retrofit budget and payback plan.
     meta_description: Whole-house retrofit planner Ireland. Combine insulation, windows, heat pump, solar and other upgrades with current SEAI One Stop Shop grants and payback estimates.
     updated: 2026-09-22
+    basic_note: "Basic mode applies the published base One Stop Shop grant amounts for the selected measures where you choose to model OSS eligibility."
+    advanced_note: "Advanced mode can add the current conditional heat-pump supports and OSS assessment/project-management grants only when you explicitly select them. These toggles are modelling choices, not an eligibility determination."
     fields:
       - id: home_type
         section_start: Home & assumptions
@@ -2397,6 +2439,20 @@ tools:
         type: checkbox
         default: true
       - {id: heat_pump_cost, label: Heat pump system quote, type: number, prefix: "€", default: 14000, min: 0, step: 500, show_if: heat_pump}
+      - id: central_heating_upgrade
+        label: Include eligible central-heating-system grant
+        type: checkbox
+        default: false
+        advanced: true
+        show_if: heat_pump
+        help: "Current SEAI support can be up to €2,000 for houses or €1,000 for apartments where the qualifying central-heating upgrade is required with the heat pump."
+      - id: renewable_heat_bonus
+        label: Include €4,000 renewable-heating bonus
+        type: checkbox
+        default: false
+        advanced: true
+        show_if: heat_pump
+        help: "Select only if you expect the project to meet SEAI's current bonus conditions for replacing an eligible old fossil-fuel boiler or electric storage-heating system with a heat pump."
       - id: solar
         label: Include solar PV
         type: checkbox
@@ -2421,18 +2477,28 @@ tools:
         default: false
       - {id: airtightness_cost, label: Airtightness works quote, type: number, prefix: "€", default: 2500, min: 0, step: 100, show_if: airtightness}
       - {id: other_cost, label: Other retrofit / professional costs, type: number, prefix: "€", default: 3000, min: 0, step: 100, section_start: Other project costs}
+      - id: include_oss_services
+        label: Include eligible OSS assessment + project-management grants
+        type: checkbox
+        default: false
+        advanced: true
+        show_if: oss_eligible
+        help: "Models the published €350 assessment grant plus the home-type project-management grant, capped against the other/professional cost entered above."
     results:
       - {id: gross_cost, label: Total selected upgrade cost}
       - {id: grants, label: Indicative grants included}
       - {id: net_cost, label: Net project cost}
       - {id: annual_saving, label: Assumed annual energy saving}
       - {id: payback, label: Simple energy-bill payback}
+      - {id: base_grants, label: Base measure grants included, advanced: true}
+      - {id: conditional_heat_grants, label: Conditional heat-pump grants included, advanced: true}
+      - {id: oss_service_grants, label: OSS assessment / project-management grants, advanced: true}
     guide: |
       ## This is a budget planner, not a BER design tool
 
       SEAI's One Stop Shop route is intended for multiple upgrades and generally requires the property to have been built and occupied before 2011 and to achieve the required post-works energy-performance outcome. A registered One Stop Shop assesses the home and determines the qualifying package.
 
-      This planner uses the current published homeowner One Stop Shop grant schedule for the selected home type. It does not decide technical eligibility, heat-loss readiness, heritage suitability or whether two grants can be combined in your exact project.
+      This planner uses the current published homeowner One Stop Shop grant schedule for the selected home type. Advanced mode can separately model the current central-heating support, €4,000 renewable-heating bonus and assessment/project-management grants when you explicitly select them. It does not decide technical eligibility, heat-loss readiness, heritage suitability or whether every selected grant can be combined in your exact project.
 
       ## Why the energy saving is an editable assumption
 
