@@ -199,6 +199,33 @@ def render_tool_guide(text: str) -> tuple[str, list[dict]]:
     return html, toc
 
 
+def extract_tool_faq(text: str) -> list[dict]:
+    """Extract displayed FAQ questions and plain-text answers from a calculator guide."""
+    match = re.search(
+        r"^##\s+Frequently asked questions\s*$\n(.*?)(?=^##\s+|\Z)",
+        text,
+        flags=re.MULTILINE | re.DOTALL | re.IGNORECASE,
+    )
+    if not match:
+        return []
+    section = match.group(1)
+    parts = re.split(r"^###\s+", section, flags=re.MULTILINE)
+    faq = []
+    for part in parts[1:]:
+        lines = part.strip().splitlines()
+        if not lines:
+            continue
+        question = lines[0].strip()
+        answer_md = "\n".join(lines[1:]).strip()
+        if not question or not answer_md:
+            continue
+        answer_html = render_markdown(answer_md)
+        answer = " ".join(html_unescape(re.sub(r"<[^>]+>", " ", answer_html)).split())
+        if answer:
+            faq.append({"question": question, "answer": answer})
+    return faq[:10]
+
+
 # --- charts: single-series inline SVG built only from verified figures ---------------------
 CHART_W = 640
 CHART_PLACEHOLDER = re.compile(r"<p>\s*\[chart:(\d+)\]\s*</p>|\[chart:(\d+)\]")
@@ -422,6 +449,7 @@ def load_tools(content_dir: Path) -> list[dict]:
         if guide_path.is_file():
             tool["guide"] = guide_path.read_text(encoding="utf-8")
         tool["guide_html"], tool["guide_toc"] = render_tool_guide(str(tool.get("guide") or ""))
+        tool["faq"] = extract_tool_faq(str(tool.get("guide") or ""))
         tool["fields"] = list(tool.get("fields") or [])
         tool["results"] = list(tool.get("results") or [])
         tool["sources"] = list(tool.get("sources") or [])
@@ -755,15 +783,48 @@ def build_site(settings: Settings) -> dict:
             related_tools = [t for t in tools if t["slug"] != tool["slug"] and t.get("category") == tool.get("category")][:3]
             if len(related_tools) < 3:
                 related_tools += [t for t in tools if t["slug"] != tool["slug"] and t not in related_tools][:3-len(related_tools)]
-            tool_jsonld = json.dumps({
-                "@context": "https://schema.org", "@type": "WebApplication",
+            app_category = (
+                "HealthApplication" if tool.get("category") == "Health"
+                else "UtilitiesApplication" if tool.get("category") in {"Home Energy", "EV & Motoring"}
+                else "LifestyleApplication" if tool.get("category") == "Family & Life Planning"
+                else "FinanceApplication"
+            )
+            app_data = {
+                "@type": "WebApplication",
                 "name": tool["title"], "url": settings.site_base_url + tool["url"],
-                "applicationCategory": "FinanceApplication", "operatingSystem": "Any",
+                "description": tool.get("meta_description") or tool.get("summary") or "",
+                "applicationCategory": app_category, "operatingSystem": "Any",
                 "browserRequirements": "Requires JavaScript", "inLanguage": "en-IE",
                 "isAccessibleForFree": True,
+                "dateModified": str(tool.get("updated") or ""),
                 "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
                 "publisher": {"@type": "Organization", "name": "Compound", "url": settings.site_base_url},
-            }, ensure_ascii=False)
+                "citation": [source.get("url") for source in tool.get("sources", []) if source.get("url")],
+            }
+            graph = [
+                app_data,
+                {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {"@type": "ListItem", "position": 1, "name": "Home", "item": settings.site_base_url + "/"},
+                        {"@type": "ListItem", "position": 2, "name": "Tools", "item": settings.site_base_url + "/tools/"},
+                        {"@type": "ListItem", "position": 3, "name": tool["title"], "item": settings.site_base_url + tool["url"]},
+                    ],
+                },
+            ]
+            if tool.get("faq"):
+                graph.append({
+                    "@type": "FAQPage",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": item["question"],
+                            "acceptedAnswer": {"@type": "Answer", "text": item["answer"]},
+                        }
+                        for item in tool["faq"]
+                    ],
+                })
+            tool_jsonld = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
             tool_template = "debt_repayment.html" if tool["slug"] == "debt-repayment-calculator" else "tool.html"
             _write(out / tool["slug"] / "index.html", env.get_template(tool_template).render(
                 title=tool["title"], tool=tool, related_tools=related_tools,
