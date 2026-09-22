@@ -68,6 +68,44 @@ For businesses, the VAT shown on an invoice is also not automatically the busine
 
 Registration thresholds, exempt activities, reverse-charge rules and cross-border supplies can all change the position. This calculator should therefore be used for arithmetic, not for deciding the legal VAT treatment of a transaction.
 
+## Use the correct Irish VAT rate before doing the arithmetic
+
+For 2026, Revenue lists the main Irish VAT rates as 23% standard, 13.5% reduced and 9% second reduced, with separate rates for particular categories such as livestock. The rate depends on the goods or services being supplied, so the calculator should only be used after the correct legal rate has been identified.
+
+That distinction matters because a perfectly calculated 23% VAT amount is still wrong if the supply belongs at 13.5%, 9%, zero rate or is exempt.
+
+### Net, VAT and gross are three different numbers
+
+For a net price of €100 at 23% VAT:
+
+- net price = €100,
+- VAT = €23,
+- gross price = €123.
+
+But starting from a gross price of €123, the VAT is **not** 23% of €123. The gross already contains VAT. The correct extraction is €123 ÷ 1.23 = €100 net, with €23 VAT.
+
+That is why the calculator uses division when removing VAT rather than simply subtracting the headline percentage.
+
+### Business cash flow is not the same as economic cost
+
+A VAT-registered business can collect output VAT on sales and may be entitled to recover allowable input VAT on business purchases. The amount shown on an invoice is therefore not automatically the business's final tax cost.
+
+For budgeting, keep three concepts separate:
+
+1. the VAT-inclusive cash amount paid or received,
+2. the VAT liability or recoverable input VAT under the rules,
+3. the underlying net revenue or expense.
+
+This is especially important for cash-flow planning where VAT is collected before it is paid over, or a large purchase creates recoverable input VAT.
+
+### This calculator does not decide registration or place of supply
+
+VAT registration thresholds, exempt activities, reverse charge, intra-EU transactions and cross-border services can all change the treatment. Those are legal/tax classification questions, not arithmetic questions.
+
+Use the calculator once the rate and treatment are known. If you are modelling personal take-home rather than a business invoice, use the [Take-Home Pay Calculator](/take-home-pay-calculator/) instead.
+
+Revenue's [current VAT rates](https://www.revenue.ie/en/vat/vat-rates/search-vat-rates/current-VAT-rates.aspx) are the primary reference and should be checked before relying on a rate for an actual transaction.
+
 ## Method and limitations
 
 For net-to-gross, the calculator multiplies the net amount by 1 + VAT rate. For gross-to-net, it divides the gross by 1 + rate and treats the difference as VAT.
