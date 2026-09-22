@@ -50,6 +50,18 @@ assert.equal(stampDutyResidential(1600000), 26000);
 close(usc2026(50000), 1032.82, 0.01, '2026 USC on €50,000');
 assert.equal(usc2026(13000), 0);
 
+// 2026 reduced USC: qualifying taxpayers use 0.5% to €12,012 and 2% on the balance,
+// but the reduced regime must fall back to standard rates above the €60,000 income ceiling.
+close(usc2026(50000, true), 819.82, 0.01, '2026 reduced USC on €50,000');
+close(usc2026(61000, true), usc2026(61000), 0.001, 'reduced USC fallback above €60,000');
+
+const uscReduced = calculators.usc_2026({income: 50000, reduced_rate: 'yes', __advanced: true});
+assert.equal(uscReduced.usc, '€819.82');
+assert.equal(uscReduced.rate_basis, 'Reduced 2026 rates');
+
+const uscFallback = calculators.usc_2026({income: 61000, reduced_rate: 'yes', __advanced: true});
+assert.equal(uscFallback.rate_basis, 'Standard 2026 rates');
+
 // Class A annual blend should use 39 weeks at 4.20% and 13 at 4.35%.
 const prsi = annualClassA2026(50000);
 close(prsi.annual, prsi.before * 39 + prsi.after * 13, 0.0001, '2026 PRSI blend');
@@ -248,5 +260,36 @@ assert.equal(fhs.max_fhs, '€80,000.00');
 assert.equal(fhs.year6_charge, '€525.00');
 assert.equal(fhs.charges_to_year10, '€2,625.00');
 assert.equal(fhs.check, 'Within calculator’s basic scheme range');
+
+// Tax/pay flagship outputs added in the September 2026 upgrade.
+const hourly = calculators.salary_hourly({salary: 50000, hours: 39, weeks: 52, days: 5});
+assert.equal(hourly.hourly, '€24.65');
+assert.equal(hourly.annual_hours, '2,028 hours');
+
+const takeHomeReduced = calculators.take_home_2026({
+  salary: 50000, pension_pct: 0, band: 44000, other_credits: 0,
+  usc_reduced: 'yes', __advanced: true
+});
+assert.equal(takeHomeReduced.usc, '€819.82');
+assert.match(takeHomeReduced.deductions, /^€/);
+assert.match(takeHomeReduced.effective_deductions, /%$/);
+assert.match(takeHomeReduced.next_1000_net, /€/);
+
+const prsiFlagship = calculators.prsi_2026({salary: 52000});
+assert.equal(prsiFlagship.weekly_equivalent, '€1,000.00');
+assert.equal(prsiFlagship.october_increase, '€19.50');
+
+const rentCreditFlagship = calculators.rent_credit({
+  rent: 12000, joint: 'no', income_tax_liability: 5000
+});
+assert.equal(rentCreditFlagship.credit, '€1,000.00');
+assert.equal(rentCreditFlagship.rent_for_max, '€5,000.00');
+assert.equal(rentCreditFlagship.unused_cap, '€0.00');
+
+const contractorFlagship = calculators.contractor_vs_salary({
+  salary: 70000, day_rate: 450, billable_days: 220,
+  contractor_costs: 5000, contractor_pension: 0
+});
+assert.match(contractorFlagship.break_even_day_rate, /^€[\d,.]+\/day$/);
 
 console.log('Calculator arithmetic regression checks passed.');
