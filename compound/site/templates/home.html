@@ -1,12 +1,27 @@
 {% extends "base.html" %}
-{% block head_title %}Compound · Health, wealth & happiness for life in Ireland{% endblock %}
-{% block head %}<link rel="canonical" href="{{ site_url }}/"><meta property="og:title" content="Compound · A little better, every day"><meta property="og:description" content="Thoughtful guides to health, wealth and happiness, for life in Ireland."><meta property="og:image" content="{{ site_url }}/static/images/landscape.jpg"><meta property="og:type" content="website"><meta property="og:url" content="{{ site_url }}/">{% endblock %}
+{% block head_title %}Compound · Tools, health, wealth, happiness & news for Ireland{% endblock %}
+{% block head %}<link rel="canonical" href="{{ site_url }}/"><meta property="og:title" content="Compound · A little better, every day"><meta property="og:description" content="Useful tools, thoughtful guides and timely news on health, wealth and happiness in Ireland."><meta property="og:image" content="{{ site_url }}/static/images/landscape.jpg"><meta property="og:type" content="website"><meta property="og:url" content="{{ site_url }}/">{% endblock %}
 {% block content %}
 <section class="home-hero">
- <div class="hero-copy"><p class="eyebrow"><span class="tiny-star" aria-hidden="true">✳</span> HEALTH. WEALTH. HAPPINESS.</p><h1>Small changes.<br>A <em>richer</em> life.</h1><p class="hero-description">Clear thinking for your health, your money, and the things that make life good. Thoughtfully researched. Written for Ireland.</p><a class="button button-dark" href="#latest">Find your next good read <span aria-hidden="true">↗</span></a><div class="hero-footnote"><span class="triple-dot" aria-hidden="true">● ● ●</span> Three pillars. One better everyday.</div></div>
+ <div class="hero-copy"><p class="eyebrow"><span class="tiny-star" aria-hidden="true">✳</span> HEALTH. WEALTH. HAPPINESS. NEWS.</p><h1>Small changes.<br>A <em>richer</em> life.</h1><p class="hero-description">Clear thinking for your health, your money, and the things that make life good — plus the news that could change them. Thoughtfully researched. Written for Ireland.</p><a class="button button-dark" href="#latest">Find your next good read <span aria-hidden="true">↗</span></a><div class="hero-footnote"><span class="triple-dot" aria-hidden="true">● ● ●</span> Three pillars. One better everyday.</div></div>
  <div class="hero-art"><img src="/static/images/landscape.jpg" width="1200" height="800" fetchpriority="high" alt="Quiet water reflecting mountains and a sunlit green landscape"><div class="image-caption"><span>A FRESH PERSPECTIVE</span><p>Make room for<br>what matters.</p><span class="round-arrow" aria-hidden="true">↗</span></div></div>
 </section>
 <div class="values-strip"><span>Curiosity, with substance.</span><span>Grounded in evidence</span><span>An Irish perspective</span><a href="/about/">Independent by design <span aria-hidden="true">↗</span></a></div>
+{% if news_articles %}
+<section class="home-news" aria-labelledby="home-news-title">
+ <div class="section-heading"><div><p class="eyebrow">WHAT CHANGED</p><h2 id="home-news-title">Latest news, with the Irish angle.</h2></div><a class="text-link" href="/news/">View all news <span aria-hidden="true">↗</span></a></div>
+ <div class="home-news-grid">
+  {% for a in news_articles[:4] %}
+  <article class="home-news-item{% if loop.first %} home-news-lead{% endif %}">
+   <div class="home-news-meta"><span>News · {{ a.pillar_label }}</span><time datetime="{{ a.date.isoformat() }}">{{ a.date | long_date }}</time></div>
+   <h3><a href="{{ a.url }}">{{ a.title }}</a></h3>
+   <p>{{ a.description }}</p>
+   <a class="text-link" href="{{ a.url }}">Read the story <span aria-hidden="true">↗</span></a>
+  </article>
+  {% endfor %}
+ </div>
+</section>
+{% endif %}
 <section class="editorial-note"><div><p class="eyebrow">THE COMPOUND CALCULATOR</p><h2>What could your money become?</h2><p>Explore compound growth, compare savings plans and work towards your next financial milestone. Free, interactive and built for Ireland.</p><a class="button button-dark" href="/compound-interest-calculator/">Try the compound interest calculator</a></div></section>
 <section class="pillar-section" aria-labelledby="pillars-title"><div class="section-heading"><div><p class="eyebrow">THE BIG PICTURE</p><h2 id="pillars-title">A good life has more than one side.</h2></div><p>Explore what matters to you.</p></div><div class="pillar-cards">
 {% for p in pillars %}<a class="pillar-tile tile-{{ p }}" href="/{{ p }}/"><div class="tile-top"><span class="eyebrow">0{{ loop.index }} / {{ pillar_labels[p] }}</span><span class="tile-arrow" aria-hidden="true">↗</span></div><h3>{{ {'health':'Feel more like yourself.', 'wealth':'Make your money matter.', 'happiness':'Find the good in everyday.'}[p] }}</h3><p>{{ {'health':'Sleep, movement and wellbeing. Make sense of what the evidence says.', 'wealth':'Irish money, without the maze. Tax, pensions and the bigger picture.', 'happiness':'A little space for relationships, peace of mind and living well.'}[p] }}</p><div class="tile-bottom"><span>Explore {{ p }}</span><span class="pillar-symbol symbol-{{ p }}" aria-hidden="true"></span></div></a>{% endfor %}
