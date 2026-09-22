@@ -1528,15 +1528,36 @@
       };
     },
     childcare_return(v){
-      const pension=v.salary*Math.max(0,v.pension_pct)/100, net=employeeNet2026(v.salary,pension,44000,0);
-      const gross=v.children*v.childcare_hours*v.childcare_fee*v.childcare_weeks;
+      const advanced=Boolean(v.__advanced);
+      const salary=Math.max(0,v.salary);
+      const pension=advanced?salary*Math.max(0,v.pension_pct||0)/100:0;
+      const band=advanced?Math.max(0,v.standard_rate_band||44000):44000;
+      const extraCredits=advanced?Math.max(0,v.extra_tax_credits||0):0;
+      const reduced=advanced&&v.reduced_usc==='yes'&&salary<=60000;
+      const net=employeeNet2026(salary,pension,band,extraCredits,reduced);
+      const weeks=advanced?Math.max(1,v.childcare_weeks||48):48;
+      const gross=Math.max(0,v.children)*Math.max(0,v.childcare_hours)*Math.max(0,v.childcare_fee)*weeks;
       const subsidisedHours=Math.min(45,Math.max(0,v.childcare_hours));
-      const ncs=v.children*subsidisedHours*Math.min(v.childcare_fee,v.ncs_rate)*v.childcare_weeks;
-      const childcare=Math.max(0,gross-ncs), workCosts=(v.commute_weekly+v.work_cost_weekly)*v.childcare_weeks+v.other_annual;
-      const gain=net.net-childcare-workCosts, hours=v.work_hours*v.childcare_weeks, hourly=hours>0?gain/hours:0;
+      const ncs=Math.max(0,v.children)*subsidisedHours*Math.min(Math.max(0,v.childcare_fee),Math.max(0,v.ncs_rate))*weeks;
+      const childcare=Math.max(0,gross-ncs);
+      const workCosts=advanced?((Math.max(0,v.commute_weekly||0)+Math.max(0,v.work_cost_weekly||0))*weeks+Math.max(0,v.other_annual||0)):0;
+      const gain=net.net-childcare-workCosts;
+      const workHours=(advanced?Math.max(0,v.work_hours||0):37.5)*weeks;
+      const hourly=workHours>0?gain/workHours:0;
+      const retained=salary>0?gain/salary*100:0;
+      const fixedCosts=childcare+workCosts;
+      const netAtGross=grossSalary=>{
+        const p=advanced?grossSalary*Math.max(0,v.pension_pct||0)/100:0;
+        return employeeNet2026(grossSalary,p,band,extraCredits,advanced&&v.reduced_usc==='yes'&&grossSalary<=60000).net;
+      };
+      let lo=0,hi=Math.max(100000,salary*2,fixedCosts*3);
+      while(netAtGross(hi)<fixedCosts&&hi<1000000) hi*=2;
+      for(let i=0;i<60;i++){const mid=(lo+hi)/2;if(netAtGross(mid)>=fixedCosts)hi=mid;else lo=mid;}
       return {
-        take_home:money(net.net),childcare_gross:money(gross),ncs_support:money(ncs),childcare_net:money(childcare),work_costs:money(workCosts),household_gain:(gain>=0?'+':'-')+money(Math.abs(gain)),effective_hourly:(hourly>=0?'+':'-')+money(Math.abs(hourly))+'/hour',
-        __chart:{type:'bar',title:'What remains after returning-to-work costs',caption:'Estimated take-home pay compared with net childcare, commuting/work costs and the resulting annual household cash gain.',labels:['Take-home','Net childcare','Work costs','Financial gain'],series:[{label:'Annual amount',values:[net.net,childcare,workCosts,gain]}]}
+        take_home:money(net.net),childcare_gross:money(gross),ncs_support:money(ncs),childcare_net:money(childcare),work_costs:money(workCosts),
+        household_gain:(gain>=0?'+':'-')+money(Math.abs(gain)),monthly_gain:(gain>=0?'+':'-')+money(Math.abs(gain/12)),
+        effective_hourly:(hourly>=0?'+':'-')+money(Math.abs(hourly))+'/hour',retained_pct:pct(retained),breakeven_salary:money(hi),
+        __chart:{type:'bar',title:'What remains after returning-to-work costs',caption:'Estimated annual take-home pay compared with net childcare, employment-related costs and the resulting household cash gain.',labels:['Take-home','Net childcare','Work costs','Financial gain'],series:[{label:'Annual amount',values:[net.net,childcare,workCosts,gain]}]}
       };
     },
     mortgage_switch(v){
@@ -1569,22 +1590,32 @@
       };
     },
     lifetime_cost(v){
-      const years=Math.max(0,Math.floor(v.end_age-v.current_age)), inflation=v.inflation/100;
-      const monthlyBase=v.food_monthly+v.utilities_monthly+v.transport_monthly+v.leisure_monthly+v.other_monthly;
-      const baseAnnual=monthlyBase*12+v.travel_annual+v.insurance_health_annual;
-      const todayAnnual=baseAnnual+(v.current_age<v.housing_until?v.housing_monthly*12:0)+(v.childcare_years>0?v.childcare_annual:0)+(v.major_interval>0?v.major_purchase/v.major_interval:0);
-      let nominal=0,todayMoney=0,housingTotal=0,majorTotal=0,cumulative=0;const labels=['Age '+v.current_age],vals=[0];
+      const advanced=Boolean(v.__advanced),years=Math.max(0,Math.floor(v.end_age-v.current_age)),inflation=v.inflation/100;
+      const otherMonthly=advanced?Math.max(0,v.other_monthly||0):0;
+      const monthlyBase=Math.max(0,v.food_monthly)+Math.max(0,v.utilities_monthly)+Math.max(0,v.transport_monthly)+Math.max(0,v.leisure_monthly)+otherMonthly;
+      const baseAnnual=monthlyBase*12+Math.max(0,v.travel_annual)+Math.max(0,v.insurance_health_annual);
+      const housingUntil=advanced?Math.max(v.current_age,Math.min(v.end_age,v.housing_until)):v.end_age;
+      const childcareYears=advanced?Math.max(0,v.childcare_years||0):0;
+      const childcareAnnual=advanced?Math.max(0,v.childcare_annual||0):0;
+      const majorInterval=advanced?Math.max(1,Math.round(v.major_interval||1)):0;
+      const majorPurchase=advanced?Math.max(0,v.major_purchase||0):0;
+      const todayAnnual=baseAnnual+(v.current_age<housingUntil?Math.max(0,v.housing_monthly)*12:0)+(childcareYears>0?childcareAnnual:0)+(majorInterval>0?majorPurchase/majorInterval:0);
+      let nominal=0,todayMoney=0,housingTotal=0,majorTotal=0,cumulative=0,lastAnnual=0;
+      const labels=['Age '+v.current_age],vals=[0];
       for(let y=0;y<years;y++){
         const factor=Math.pow(1+inflation,y),age=v.current_age+y;
-        let annual=baseAnnual*factor, annualToday=baseAnnual;
-        if(age<v.housing_until){annual+=v.housing_monthly*12*factor;annualToday+=v.housing_monthly*12;housingTotal+=v.housing_monthly*12*factor;}
-        if(y<v.childcare_years){annual+=v.childcare_annual*factor;annualToday+=v.childcare_annual;}
-        if(v.major_interval>0&&(y+1)%Math.round(v.major_interval)===0){const mp=v.major_purchase*factor;annual+=mp;annualToday+=v.major_purchase;majorTotal+=mp;}
-        nominal+=annual;todayMoney+=annualToday;cumulative+=annual;labels.push('Age '+(age+1));vals.push(cumulative);
+        let annual=baseAnnual*factor,annualToday=baseAnnual;
+        if(age<housingUntil){annual+=Math.max(0,v.housing_monthly)*12*factor;annualToday+=Math.max(0,v.housing_monthly)*12;housingTotal+=Math.max(0,v.housing_monthly)*12*factor;}
+        if(y<childcareYears){annual+=childcareAnnual*factor;annualToday+=childcareAnnual;}
+        if(majorInterval>0&&(y+1)%majorInterval===0){const mp=majorPurchase*factor;annual+=mp;annualToday+=majorPurchase;majorTotal+=mp;}
+        nominal+=annual;todayMoney+=annualToday;cumulative+=annual;lastAnnual=annual;
+        labels.push('Age '+(age+1));vals.push(cumulative);
       }
       return {
-        years:years+' years',today_annual:money(todayAnnual),lifetime_nominal:money(nominal),lifetime_today_money:money(todayMoney),housing_total:money(housingTotal),major_total:money(majorTotal),
-        __chart:{type:'line',title:'Cumulative projected lifetime spending',caption:'Future cash spending rises with the inflation assumption and follows the time limits entered for housing and childcare.',labels,series:[{label:'Cumulative spending',values:vals}]}
+        years:years+' years',today_annual:money(todayAnnual),lifetime_nominal:money(nominal),lifetime_today_money:money(todayMoney),
+        inflation_uplift:money(Math.max(0,nominal-todayMoney)),average_annual:money(years?nominal/years:0),end_year_spend:money(lastAnnual),
+        housing_total:money(housingTotal),major_total:money(majorTotal),
+        __chart:{type:'line',title:'Cumulative projected lifetime spending',caption:'Future cash spending rises with the inflation assumption and follows the time limits entered for housing, childcare and recurring major purchases.',labels,series:[{label:'Cumulative spending',values:vals}]}
       };
     },
     car_finance(v){
@@ -1628,30 +1659,28 @@
       };
     },
     nutrition_needs(v){
-      const sexConst=v.sex==='female'?-161:5;
+      const advanced=Boolean(v.__advanced),sexConst=v.sex==='female'?-161:5;
       const resting=10*Math.max(0,v.weight)+6.25*Math.max(0,v.height)-5*Math.max(0,v.age)+sexConst;
-      const pal=Number(v.activity)||1.4, maintenance=resting*pal;
-      const factor=v.energy_scenario==='lower10'?.90:v.energy_scenario==='higher10'?1.10:1;
+      const pal=Number(v.activity)||1.4,maintenance=resting*pal;
+      const scenario=advanced?v.energy_scenario:'maintain';
+      const factor=scenario==='lower10'?.90:scenario==='higher10'?1.10:1;
       const target=maintenance*factor;
-      const proteinRate=v.protein_context==='resistance'?1.6:.83;
-      const proteinG=Math.max(0,v.weight)*proteinRate;
-      const fatG=Math.max(0,target*.30/9);
-      const carbG=Math.max(0,(target-proteinG*4-fatG*9)/4);
+      const resistance=advanced&&v.protein_context==='resistance';
+      const proteinRate=resistance?1.6:.83,proteinG=Math.max(0,v.weight)*proteinRate;
+      const fatG=Math.max(0,target*.30/9),carbG=Math.max(0,(target-proteinG*4-fatG*9)/4);
+      const delta=target-maintenance;
       return {
-        resting:num(Math.round(resting))+' kcal/day',
-        maintenance:num(Math.round(maintenance))+' kcal/day',
-        target:num(Math.round(target))+' kcal/day',
-        protein:num(proteinG)+' g/day',
-        fat:num(fatG)+' g/day',
-        carbs:num(carbG)+' g/day',
-        fibre:'At least 25 g/day',
-        __chart:{type:'bar',currency:false,title:'Energy estimates under your selected assumptions',caption:'Resting energy is predicted from Mifflin–St Jeor. Maintenance multiplies that estimate by the selected EFSA-style PAL; the third bar is the scenario you selected.',labels:['Resting','Maintenance','Selected scenario'],series:[{label:'kcal/day',values:[resting,maintenance,target]}]}
+        resting:num(Math.round(resting))+' kcal/day',maintenance:num(Math.round(maintenance))+' kcal/day',
+        target:num(Math.round(target))+' kcal/day',energy_delta:(delta>=0?'+':'-')+num(Math.abs(Math.round(delta)))+' kcal/day',
+        protein:num(proteinG)+' g/day',protein_per_kg:num(proteinRate)+' g/kg/day',fat:num(fatG)+' g/day',carbs:num(carbG)+' g/day',fibre:'At least 25 g/day',
+        __chart:advanced?{type:'bar',currency:false,title:'Illustrative macro amounts',caption:'Protein uses the selected evidence/reference context; fat is set at 30% of energy and carbohydrate is the mathematical remainder.',labels:['Protein','Fat','Carbohydrate'],series:[{label:'g/day',values:[proteinG,fatG,carbG]}]}:{type:'bar',currency:false,title:'Resting and estimated maintenance energy',caption:'Resting energy is predicted from Mifflin–St Jeor and maintenance multiplies that estimate by the selected physical activity level.',labels:['Resting','Maintenance'],series:[{label:'kcal/day',values:[resting,maintenance]}]}
       };
     },
     pregnancy_timeline(v){
-      const lmp=parseDateOnly(v.lmp), assigned=parseDateOnly(v.assigned_due_date);
-      if(!lmp&&!assigned) return {due_date:'Enter a date above',gestational_age:'—',trimester:'—',conception_estimate:'—',week12:'—',anatomy_window:'—',week37:'—',week42:'—'};
-      const due=assigned||addDaysUTC(lmp,280);
+      const lmp=parseDateOnly(v.lmp),assigned=parseDateOnly(v.assigned_due_date);
+      if(!lmp&&!assigned) return {due_date:'Enter a date above',gestational_age:'—',pregnancy_progress:'—',days_to_due:'—',trimester:'—',conception_estimate:'—',week12:'—',anatomy_window:'—',week37:'—',week42:'—'};
+      const cycleAdjust=(!assigned&&v.__advanced)?Math.round((Number(v.cycle_length)||28)-28):0;
+      const due=assigned||addDaysUTC(lmp,280+cycleAdjust);
       const baseLmp=assigned?addDaysUTC(due,-280):lmp;
       const todayLocal=new Date();
       const today=new Date(Date.UTC(todayLocal.getFullYear(),todayLocal.getMonth(),todayLocal.getDate()));
@@ -1662,40 +1691,39 @@
         gestational=weeks+' week'+(weeks===1?'':'s')+' '+days+' day'+(days===1?'':'s');
         trimester=gestDays<98?'First trimester':gestDays<196?'Second trimester':'Third trimester';
       }
+      const daysToDue=Math.round((due-today)/86400000);
+      const progress=Math.max(0,Math.min(100,gestDays/280*100));
       const conception=addDaysUTC(due,-266);
+      const source=assigned?'assigned date used':cycleAdjust?'LMP estimate adjusted '+(cycleAdjust>0?'+':'')+cycleAdjust+' day'+(Math.abs(cycleAdjust)===1?'':'s')+' for cycle length':'LMP estimate';
+      const completedWeeks=Math.max(0,Math.min(40,gestDays/7)),remainingWeeks=Math.max(0,40-completedWeeks);
       return {
-        due_date:formatDateIE(due)+(assigned?' (assigned date used)':' (LMP estimate)'),
-        gestational_age:gestational,
-        trimester,
-        conception_estimate:formatDateIE(conception),
-        week12:formatDateIE(addDaysUTC(baseLmp,84)),
+        due_date:formatDateIE(due)+' ('+source+')',gestational_age:gestational,pregnancy_progress:pct(progress),
+        days_to_due:daysToDue>0?daysToDue+' day'+(daysToDue===1?'':'s'):daysToDue===0?'Estimated due date is today':Math.abs(daysToDue)+' day'+(Math.abs(daysToDue)===1?'':'s')+' past estimated due date',
+        trimester,conception_estimate:formatDateIE(conception),week12:formatDateIE(addDaysUTC(baseLmp,84)),
         anatomy_window:formatDateIE(addDaysUTC(baseLmp,126))+' – '+formatDateIE(addDaysUTC(baseLmp,154)),
-        week37:formatDateIE(addDaysUTC(baseLmp,259)),
-        week42:formatDateIE(addDaysUTC(baseLmp,294))
+        week37:formatDateIE(addDaysUTC(baseLmp,259)),week42:formatDateIE(addDaysUTC(baseLmp,294)),
+        __chart:{type:'bar',currency:false,title:'Progress to the 40-week estimate',caption:'This is calendar progress only, not a clinical assessment of pregnancy or fetal development.',labels:['Completed','Remaining to 40 weeks'],series:[{label:'Weeks',values:[completedWeeks,remainingWeeks]}]}
       };
     },
     alcohol_ireland(v){
+      const advanced=Boolean(v.__advanced);
       const grams=(ml,abv,count)=>Math.max(0,ml)*Math.max(0,abv)/100*.789*Math.max(0,count);
-      const total=
-        grams(568,v.beer_abv,v.beer_pints)+
-        grams(v.wine_ml,v.wine_abv,v.wine_glasses)+
-        grams(v.spirit_ml,v.spirit_abv,v.spirits)+
-        grams(v.can_ml,v.can_abv,v.cans);
-      const drinks=total/10, weeklyKcal=total*7, annualKcal=weeklyKcal*52, annualSpend=Math.max(0,v.weekly_spend)*52;
-      const reduction=Math.max(0,Math.min(100,v.reduction_pct))/100;
-      let guideline='Not compared';
-      if(v.guideline_group==='woman') guideline=drinks<=11?'Within current HSE weekly low-risk limit':'Above current HSE weekly low-risk limit';
-      if(v.guideline_group==='man') guideline=drinks<=17?'Within current HSE weekly low-risk limit':'Above current HSE weekly low-risk limit';
+      const beerAbv=advanced?Math.max(0,v.beer_abv):4.5;
+      const wineMl=advanced?Math.max(0,v.wine_ml):175,wineAbv=advanced?Math.max(0,v.wine_abv):12.5;
+      const spiritMl=advanced?Math.max(0,v.spirit_ml):35.5,spiritAbv=advanced?Math.max(0,v.spirit_abv):40;
+      const canMl=advanced?Math.max(0,v.can_ml):500,canAbv=advanced?Math.max(0,v.can_abv):4.3;
+      const total=grams(568,beerAbv,v.beer_pints)+grams(wineMl,wineAbv,v.wine_glasses)+grams(spiritMl,spiritAbv,v.spirits)+grams(canMl,canAbv,v.cans);
+      const drinks=total/10,weeklyKcal=total*7,annualKcal=weeklyKcal*52;
+      const weeklySpend=advanced?Math.max(0,v.weekly_spend||0):0,annualSpend=weeklySpend*52;
+      const reduction=advanced?Math.max(0,Math.min(100,v.reduction_pct||0))/100:0;
+      let guideline='Not compared',limit=null;
+      if(v.guideline_group==='woman'){limit=11;guideline=drinks<=limit?'Within current HSE weekly low-risk limit':'Above current HSE weekly low-risk limit';}
+      if(v.guideline_group==='man'){limit=17;guideline=drinks<=limit?'Within current HSE weekly low-risk limit':'Above current HSE weekly low-risk limit';}
+      const difference=limit===null?'Choose a guideline group':drinks===limit?'At selected weekly limit':drinks<limit?num(limit-drinks)+' below selected weekly limit':num(drinks-limit)+' above selected weekly limit';
       return {
-        standard_drinks:num(drinks),
-        grams:num(total)+' g/week',
-        guideline,
-        weekly_kcal:num(Math.round(weeklyKcal))+' kcal/week',
-        annual_kcal:num(Math.round(annualKcal))+' kcal/year',
-        annual_spend:money(annualSpend),
-        reduced_drinks:num(drinks*(1-reduction)),
-        annual_saving:money(annualSpend*reduction),
-        __chart:{type:'bar',currency:false,title:'Current intake and modelled reduction',caption:'Irish standard drinks are based on 10 g of pure alcohol. The reduced scenario applies the percentage you entered to the same weekly pattern.',labels:['Current','After reduction'],series:[{label:'Standard drinks/week',values:[drinks,drinks*(1-reduction)]}]}
+        standard_drinks:num(drinks),grams:num(total)+' g/week',guideline,guideline_difference:difference,weekly_kcal:num(Math.round(weeklyKcal))+' kcal/week',
+        annual_kcal:num(Math.round(annualKcal))+' kcal/year',annual_spend:money(annualSpend),reduced_drinks:num(drinks*(1-reduction)),annual_saving:money(annualSpend*reduction),
+        __chart:{type:'bar',currency:false,title:advanced?'Current intake and modelled reduction':'Estimated weekly alcohol intake',caption:advanced?'Irish standard drinks are based on 10 g of pure alcohol. The reduced scenario applies the percentage you entered to the same weekly pattern.':'Basic mode uses typical drink sizes and strengths; switch to Advanced to enter the exact ABV and serving sizes.',labels:advanced?['Current','After reduction']:['Current'],series:[{label:'Standard drinks/week',values:advanced?[drinks,drinks*(1-reduction)]:[drinks]}]}
       };
     }
   };
