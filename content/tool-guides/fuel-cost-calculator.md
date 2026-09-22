@@ -58,6 +58,46 @@ For example, 15,000 km a year at 6.5 L/100 km requires about 975 litres. The eur
 
 This is deliberately a **fuel-only annual budget**. It is not total cost of ownership. A cheaper-to-fuel vehicle can still be more expensive overall once depreciation, finance, insurance, tax, servicing and the purchase-price difference are included.
 
+## Use real consumption, not brochure consumption, where possible
+
+Official or advertised fuel-consumption figures are useful for comparing cars on a consistent basis, but your personal fuel budget is driven by what the vehicle actually achieves in your driving.
+
+Short trips, cold starts, motorway speed, heavy traffic, roof boxes, towing, tyre pressure and driving style can all move real-world litres per 100 km away from a rated figure.
+
+If you already own the car, a strong input is the average consumption shown over several full tanks rather than the best single journey displayed on the dashboard.
+
+### Convert fuel economy into a decision metric
+
+Fuel cost becomes more useful when expressed in three ways:
+
+- cost per 100 km,
+- annual fuel spend,
+- and the difference between two vehicles.
+
+For example, a car saving 1.5 L/100 km can sound significant, but whether it matters financially depends on annual distance and fuel price. At low mileage the euro saving may be modest; at high mileage it can become material.
+
+Advanced mode turns that efficiency difference into an annual budget so you can compare it with the extra purchase price of the more efficient vehicle.
+
+### Stress-test fuel price
+
+Do not build a five-year ownership decision around today's pump price as though it were fixed.
+
+Run a low, central and high fuel-price scenario. If one car only justifies its higher purchase price when fuel prices are unusually high, the economics are fragile. If it remains attractive across a wide range, the decision is more robust.
+
+### Diesel, petrol and hybrid comparisons need more than L/100 km
+
+A lower fuel bill does not automatically mean lower total ownership cost. A diesel or hybrid may differ in purchase price, depreciation, maintenance, motor tax, insurance or financing.
+
+Use this calculator to isolate the **fuel** component, then move the result into the [Lifetime Cost Calculator](/lifetime-cost-calculator/) for the ownership decision.
+
+If the alternative is an EV, use the [EV Charging Cost Calculator](/ev-charging-cost-calculator/) so both options are compared on annual driving distance rather than on incompatible units such as litres and kWh.
+
+### Separate sunk cost from future cost
+
+If you already own a reliable car, the relevant question is usually not “which car is cheapest from new?” but “does the future fuel saving justify the cost of changing from the car I already have?”
+
+That means comparing the additional capital cost of changing vehicle with the annual fuel saving and other ownership differences. A more efficient replacement can be a good car and still be a poor financial swap if the fuel saving is too small relative to the cash required to change.
+
 ## Method and limitations
 
 The tool converts distance and fuel consumption into litres used, then multiplies by the entered fuel price. It does not model depreciation, maintenance, insurance or tax.
