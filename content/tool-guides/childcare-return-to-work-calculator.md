@@ -62,6 +62,42 @@ A useful analysis therefore has three layers:
 
 The calculator intentionally focuses on layer one because it can be measured. Use it as a foundation rather than a verdict on whether returning to work is worthwhile for your family.
 
+## Measure the marginal value of returning, not just the salary
+
+The relevant household question is usually not “what is the salary?” but “how much better off is the household after the costs created by working?”
+
+That means starting with estimated take-home pay, then subtracting childcare, commuting, parking, work clothing, meals and any other recurring costs that genuinely arise because of the return to work.
+
+The result is the **net household cash contribution** of employment.
+
+### Use your actual NCS award where possible
+
+Childcare support can vary by household circumstances and scheme rules. The calculator includes an NCS subsidy input so you can replace a generic assumption with the hourly support actually awarded or expected for your family.
+
+Do not assume every paid childcare hour is subsidised at the same effective amount without checking the award and provider arrangement.
+
+### Compare one extra day at a time
+
+For part-time decisions, the most useful question can be: “What does the fourth day of work add after the fourth day of childcare and commuting?”
+
+Run separate scenarios for two, three, four and five working days where practical. The marginal day can have a different financial value because childcare pricing, travel and tax do not always scale perfectly.
+
+This is more informative than assuming a five-day job is simply five times the value of one day.
+
+### Employer benefits can change the result
+
+The cash-flow output intentionally focuses on spendable household money, but paid annual leave, employer pension contributions, sick pay, maternity-related employment rights, health insurance and career progression can all add value beyond first-year net cash.
+
+If two options are close, create a second “total reward” comparison alongside the cash result rather than forcing those benefits into childcare cost.
+
+### Career effects are real but uncertain
+
+Time out of the workforce can affect future earnings, skills, pension contributions and promotion opportunities, but those effects are difficult to model honestly as one universal percentage.
+
+The calculator therefore keeps long-term career value outside the headline answer. Use the first-year result as a transparent cash baseline, then add your own longer-term judgment.
+
+Use the [Take-Home Pay Calculator](/take-home-pay-calculator/) for a more detailed salary estimate and the [Pension Projection Calculator](/pension-projection-calculator/) if a return to work materially changes long-term pension saving.
+
 ## Method and limitations
 
 The tool estimates take-home income under its tax assumptions, subtracts entered childcare and work costs, and compares the result with the alternative scenario. It does not value career progression, unpaid care, employment rights or every social-welfare interaction.
