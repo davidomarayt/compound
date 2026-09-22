@@ -84,6 +84,16 @@ Not necessarily. Providers can calculate and deduct charges at different frequen
 ### What should I enter as the gross return?
 Use a consistent before-fee return for both options if your goal is to isolate cost. The number is a scenario assumption, not a forecast.
 
+## Test the fee gap as a return hurdle
+
+Another useful way to read the result is to ask how much extra investment return the more expensive option would need to generate just to overcome its higher charges.
+
+If two products hold broadly similar assets but one has materially higher ongoing costs, the higher-cost option starts with a structural disadvantage. It may still be appropriate because of advice, asset allocation, guarantees or other features, but those benefits should be identified explicitly rather than assumed.
+
+Run the calculator with the same gross-return assumption for both options first. That isolates the fee effect. Only then test different return assumptions if the products genuinely pursue different investment strategies.
+
+For pension decisions, combine fee analysis with the [Pension Projection Calculator](/pension-projection-calculator/) so the long-term effect of contributions and charges can be viewed together.
+
 ## Method and limitations
 
 The engine converts the gross annual return into an equivalent monthly growth rate. The annual percentage fee is converted into an equivalent monthly fee factor so that the combined annual effect matches the stated annual percentage assumption.
