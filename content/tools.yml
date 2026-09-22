@@ -537,25 +537,33 @@ tools:
     title: Savings Goal Calculator Ireland
     category: Pensions & Investing
     formula: savings_goal
-    summary: Estimate how long it could take to reach a savings target with regular monthly contributions.
-    meta_description: Savings goal calculator Ireland. Estimate how many months it could take to reach a target from your current savings, monthly contribution and interest rate.
+    summary: Turn a savings target into a timeline, then stress-test contribution increases, annual lump sums and a target that may itself rise over time.
+    meta_description: Savings goal calculator Ireland. Estimate time to a target from current savings, monthly contributions and return, with advanced contribution-growth and target-growth scenarios.
     updated: 2026-09-22
+    basic_note: "Basic mode assumes the target stays fixed and your monthly contribution stays unchanged. Enter a return you expect to keep after relevant fees and tax."
+    advanced_note: "Advanced mode can increase the monthly contribution each year, add an annual lump sum and let the target itself grow. Use target growth only where the thing you are saving for is likely to become more expensive."
     fields:
-      - {id: target, label: Savings target, type: number, prefix: "€", default: 30000, min: 1, step: 100}
+      - {id: target, label: Savings target today, type: number, prefix: "€", default: 30000, min: 1, step: 100, section_start: Goal}
       - {id: current, label: Current savings, type: number, prefix: "€", default: 5000, min: 0, step: 100}
-      - {id: monthly, label: Monthly contribution, type: number, prefix: "€", default: 500, min: 0, step: 10}
-      - {id: rate, label: Annual interest / return, type: number, suffix: "%", default: 2, min: -20, max: 30, step: 0.1}
+      - {id: monthly, label: Monthly contribution now, type: number, prefix: "€", default: 500, min: 0, step: 10, section_start: Saving plan}
+      - {id: rate, label: Annual net interest / return assumption, type: number, suffix: "%", default: 2, min: -20, max: 30, step: 0.1}
+      - {id: annual_contribution_growth, label: Increase monthly contribution each year, type: number, suffix: "%", default: 0, min: -20, max: 30, step: 0.5, advanced: true, section_start: Advanced plan}
+      - {id: annual_lump, label: Extra lump sum each year, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true}
+      - {id: target_growth, label: Annual growth of the target itself, type: number, suffix: "%", default: 0, min: -20, max: 30, step: 0.1, advanced: true, help: "For example, a goal linked to a rising future cost. Leave at 0% for a fixed euro target."}
     results:
       - {id: time, label: Estimated time to target}
       - {id: contributions, label: Additional contributions}
-      - {id: growth, label: Estimated interest / growth}
+      - {id: growth, label: Estimated interest / investment growth}
+      - {id: ending_balance, label: Balance when target is reached, advanced: true}
+      - {id: ending_target, label: Target at that point, advanced: true}
+      - {id: monthly_at_target, label: Monthly contribution by then, advanced: true}
     guide: |
       ## Turn a target into a timeline
-      A savings target is easier to plan when it becomes a monthly path. This calculator grows the balance monthly using the annual rate you enter and then adds your regular contribution.
+      Basic mode compounds the current balance using the net annual rate entered and adds the same contribution at the end of each month. Advanced mode can model increasing contributions, annual lump sums and a target that grows over time.
 
-      Returns are not guaranteed. For a bank savings account, use a realistic deposit rate and remember that tax can reduce the interest you keep. For investments, a smooth annual return is only an illustration; real returns move up and down.
-    sources: []
-
+      Returns are assumptions, not forecasts. If you are modelling a deposit account, use a rate after the tax you expect to pay on interest. If you are modelling an investment, use a return that is sensible after the fees and tax treatment relevant to you.
+    sources:
+      - {title: "CCPC — About savings", url: "https://www.ccpc.ie/manage-your-money/saving-and-investments/savings"}
 
   - slug: net-worth-calculator
     title: Net Worth Calculator Ireland
@@ -792,55 +800,73 @@ tools:
     title: Regular Savings Calculator Ireland
     category: Pensions & Investing
     formula: regular_savings
-    summary: Project what regular monthly saving could build over time.
-    meta_description: Regular savings calculator Ireland. Project a future balance from your starting amount, monthly savings, term and annual return.
+    summary: Project a regular saving or investment plan, then show the effect of contribution increases, annual fees and inflation.
+    meta_description: Regular savings calculator Ireland. Project a future balance from starting savings and monthly contributions, with advanced fees, contribution growth and inflation-adjusted results.
     updated: 2026-09-22
+    basic_note: "Basic mode keeps the monthly contribution constant and treats the annual return as the return received by the account or investment."
+    advanced_note: "Advanced mode can increase contributions each year, apply an annual percentage fee and translate the final balance into today's purchasing power."
     fields:
-      - {id: current, label: Starting balance, type: number, prefix: "€", default: 5000, min: 0, step: 100}
-      - {id: monthly, label: Monthly saving, type: number, prefix: "€", default: 300, min: 0, step: 10}
-      - {id: years, label: Time horizon, type: number, suffix: years, default: 10, min: 0.25, max: 70, step: 0.25}
-      - {id: rate, label: Annual interest / return, type: number, suffix: "%", default: 4, min: -20, max: 30, step: 0.1}
+      - {id: current, label: Starting balance, type: number, prefix: "€", default: 5000, min: 0, step: 100, section_start: Starting point}
+      - {id: monthly, label: Monthly saving now, type: number, prefix: "€", default: 300, min: 0, step: 10}
+      - {id: years, label: Time horizon, type: number, suffix: years, default: 10, min: 0.25, max: 70, step: 0.25, section_start: Growth}
+      - {id: rate, label: Annual return before advanced fee, type: number, suffix: "%", default: 4, min: -20, max: 30, step: 0.1}
+      - {id: annual_contribution_growth, label: Increase monthly saving each year, type: number, suffix: "%", default: 0, min: -20, max: 30, step: 0.5, advanced: true, section_start: Advanced assumptions}
+      - {id: annual_fee, label: Annual percentage fee, type: number, suffix: "%", default: 0, min: 0, max: 10, step: 0.05, advanced: true}
+      - {id: inflation_rate, label: Annual inflation assumption, type: number, suffix: "%", default: 2, min: -5, max: 20, step: 0.1, advanced: true}
     results:
-      - {id: final, label: Projected balance}
+      - {id: final, label: Projected nominal balance}
       - {id: contributed, label: Total money contributed}
-      - {id: growth, label: Estimated growth}
+      - {id: growth, label: Estimated net growth}
+      - {id: net_return, label: Implied annual return after fee, advanced: true}
+      - {id: real_balance, label: Final balance in today's money, advanced: true}
+      - {id: ending_monthly, label: Monthly saving in final year, advanced: true}
+      - {id: fee_drag, label: Modelled balance reduction from fee, advanced: true}
     guide: |
-      ## Small regular amounts can become meaningful
-      This tool compounds the starting balance monthly and assumes each new monthly contribution is added at the end of the month. It is useful for testing different saving rates and time horizons.
+      ## Build a savings path, not just an end number
+      The calculator compounds monthly and adds each regular contribution at the end of the month. Advanced mode lets the contribution rise annually and separates nominal balance from today's purchasing power.
 
-      The return is an assumption, not a forecast. Investment returns are uneven and can be negative, while deposit-account returns can change and may be taxable.
-    sources: []
+      Investment returns are uneven in real life. The model uses a constant return for planning and does not calculate Irish investment tax. Use a return assumption appropriate to the product you are modelling.
+    sources:
+      - {title: "CCPC — About savings", url: "https://www.ccpc.ie/manage-your-money/saving-and-investments/savings"}
 
   - slug: pension-tax-relief-calculator
     title: Pension Tax Relief Calculator Ireland 2026
     category: Pensions & Investing
     formula: pension_relief
-    summary: Estimate how much of a personal pension contribution may qualify for Irish income-tax relief.
-    meta_description: Pension tax relief calculator Ireland 2026. Apply Revenue age-related contribution limits and the €115,000 earnings cap.
+    summary: Estimate how much of a new employee or personal pension contribution falls within Revenue's age-related relief limit after allowing for contributions already using that limit.
+    meta_description: Pension tax relief calculator Ireland 2026. Apply Revenue age-related contribution limits, the €115,000 earnings cap and existing employee contributions.
     updated: 2026-09-22
+    basic_note: "Basic mode assumes no other employee/personal pension contribution has already used this year's age-related limit."
+    advanced_note: "Advanced mode subtracts employee/personal contributions already made for the relevant earnings. Do not enter employer contributions here: Revenue says employer contributions are not counted against the employee's earnings threshold."
     fields:
-      - {id: age, label: Age, type: number, default: 35, min: 16, max: 100, step: 1}
+      - {id: age, label: Age, type: number, default: 35, min: 16, max: 100, step: 1, section_start: Revenue limit}
       - {id: earnings, label: Relevant annual earnings, type: number, prefix: "€", default: 60000, min: 0, step: 1000}
-      - {id: contribution, label: Your annual contribution, type: number, prefix: "€", default: 6000, min: 0, step: 100}
+      - {id: contribution, label: New employee / personal contribution to model, type: number, prefix: "€", default: 6000, min: 0, step: 100, section_start: Contribution}
+      - {id: existing_contributions, label: Other employee / personal contributions already using this year's limit, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true}
       - id: tax_rate
-        label: Income-tax rate used for this illustration
+        label: Income-tax rate available for this illustration
         type: select
         default: "40"
         options:
           - {value: "20", label: 20%}
           - {value: "40", label: 40%}
     results:
-      - {id: limit, label: Maximum contribution within age limit}
-      - {id: eligible, label: Contribution potentially eligible for relief}
-      - {id: relief, label: Estimated income-tax relief}
-      - {id: net_cost, label: Contribution less estimated relief}
+      - {id: age_percentage, label: Revenue age-related percentage}
+      - {id: earnings_used, label: Earnings used for relief limit}
+      - {id: limit, label: Maximum employee/personal contributions within age limit}
+      - {id: remaining_limit, label: Remaining limit before new contribution}
+      - {id: eligible, label: New contribution potentially eligible}
+      - {id: excess, label: New contribution above remaining limit}
+      - {id: relief, label: Estimated Income Tax relief}
+      - {id: net_cost, label: New contribution less estimated relief}
     guide: |
-      ## Revenue's age-related limits
-      Employee pension tax relief is limited by an age-related percentage of earnings: 15% under 30, 20% from 30–39, 25% from 40–49, 30% from 50–54, 35% from 55–59 and 40% from age 60. Revenue also caps the earnings taken into account at €115,000.
+      ## Revenue's age and earnings limits
+      Tax relief for employee/personal pension contributions is limited by an age-related percentage and an annual earnings ceiling of €115,000. The percentages are 15% under 30, 20% from 30–39, 25% from 40–49, 30% from 50–54, 35% from 55–59 and 40% from age 60.
 
-      This tool estimates income-tax relief only and lets you choose a 20% or 40% illustration. Your actual relief depends on your taxable income, pension arrangement and other circumstances. Pension contributions do not simply create an automatic refund at the selected rate if you have insufficient income taxed at that rate.
+      Revenue states that qualifying employee pension contributions receive Income Tax relief at the marginal rate, subject to the limits, but do not receive USC or PRSI relief. The selected 20%/40% rate is an illustration; actual usable relief depends on your taxable income and circumstances.
     sources:
       - {title: "Revenue — Tax relief limits on pension contributions", url: "https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx"}
+      - {title: "Revenue — Tax relief on pension contributions", url: "https://www.revenue.ie/en/jobs-and-pensions/pension/relief/index.aspx"}
 
   - slug: capital-gains-tax-calculator
     title: Capital Gains Tax Calculator Ireland
@@ -909,22 +935,29 @@ tools:
     title: Inflation Calculator Ireland
     category: Pensions & Investing
     formula: inflation
-    summary: See how inflation changes the future cost of today's spending and the purchasing power of money.
-    meta_description: Inflation calculator Ireland. Estimate the future cost of today's spending and how inflation can reduce purchasing power over time.
+    summary: See how inflation compounds future prices, erodes a fixed amount of cash and changes the real return on savings or investments.
+    meta_description: Inflation calculator Ireland. Estimate future prices, lost purchasing power and the inflation-adjusted real return on a savings or investment assumption.
     updated: 2026-09-22
+    basic_note: "Basic mode compares the future cost of today's basket with the purchasing power of holding the same nominal euro amount."
+    advanced_note: "Advanced mode adds a nominal investment/savings return and converts it to a real return using the compounding relationship between growth and inflation."
     fields:
       - {id: amount, label: Amount today, type: number, prefix: "€", default: 10000, min: 0, step: 100}
       - {id: rate, label: Assumed annual inflation, type: number, suffix: "%", default: 2, min: -20, max: 30, step: 0.1}
       - {id: years, label: Years, type: number, default: 10, min: 0, max: 100, step: 1}
+      - {id: nominal_return, label: Nominal annual savings / investment return, type: number, suffix: "%", default: 5, min: -20, max: 30, step: 0.1, advanced: true, section_start: Advanced real-return check}
     results:
       - {id: future_cost, label: Future cost of the same basket}
       - {id: purchasing_power, label: Purchasing power of the same nominal amount}
       - {id: lost_power, label: Purchasing power lost}
+      - {id: price_multiplier, label: Modelled price multiplier, advanced: true}
+      - {id: real_return, label: Inflation-adjusted annual return, advanced: true}
+      - {id: nominal_growth_value, label: Value after nominal return, advanced: true}
+      - {id: real_growth_value, label: That value in today's money, advanced: true}
     guide: |
-      ## Inflation works in both directions
-      If prices rise by a constant percentage each year, the future cost of today's basket compounds upward. The same nominal amount of cash therefore buys less.
+      ## Nominal euros and real purchasing power are different
+      A constant inflation rate compounds the future cost of today's basket upward while the purchasing power of a fixed nominal cash amount falls.
 
-      This is a scenario calculator, not an inflation forecast. Actual Irish inflation varies from year to year and individual households experience different price changes depending on what they buy.
+      Advanced mode uses the exact real-return relationship rather than simply subtracting inflation from the nominal return. Actual inflation and market returns vary from year to year; this is a deterministic scenario.
     sources: []
 
   - slug: emergency-fund-calculator
