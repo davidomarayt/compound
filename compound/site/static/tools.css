@@ -400,3 +400,10 @@
   border-radius:50%;
   background:var(--wealth);
 }
+
+.tool-share-privacy{
+  flex:1 1 100%;
+  color:var(--ink-3);
+  font-size:.68rem;
+  line-height:1.45;
+}
