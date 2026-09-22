@@ -5,7 +5,7 @@ tools:
     formula: mortgage
     summary: Estimate monthly mortgage repayments, total interest and the total amount repaid over the term.
     meta_description: Free mortgage calculator for Ireland. Estimate monthly repayments, total interest and total repayment from your mortgage amount, rate and term.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: amount, label: Mortgage amount, type: number, prefix: "€", default: 300000, min: 1000, step: 1000}
       - {id: rate, label: Interest rate, type: number, suffix: "%", default: 3.5, min: 0, max: 30, step: 0.01}
