@@ -10,6 +10,12 @@ The result is then divided by 10 to give Irish standard drinks.
 
 This is more accurate than assuming “one glass equals one drink”. For example, the HSE notes that a pint of 4.5% beer/stout/cider is roughly **two Irish standard drinks**, while a 100 mL glass of 12.5% wine is roughly one.
 
+## Basic and Advanced modes
+
+**Basic** is a quick weekly intake estimate. You enter how many common drinks you have, while the calculator uses typical serving sizes and strengths for the hidden drink-detail assumptions. The result shows Irish standard drinks, grams of alcohol, alcohol-derived calories and, if selected, the current HSE weekly guideline comparison.
+
+Use **Advanced** when the label or serving in front of you differs from those defaults. You can enter the actual ABV and serving size, add your typical weekly spend and model a percentage reduction. The cost and reduction figures are scenario arithmetic; they are not a judgement about an appropriate personal drinking level.
+
 ## Current HSE weekly low-risk guidance
 
 The HSE currently advises no more than **11 standard drinks per week for women** and **17 for men**, spread across the week, with at least 2–3 alcohol-free days. It also advises not drinking more than **6 standard drinks on any one occasion**.
