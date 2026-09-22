@@ -697,13 +697,39 @@
       return {monthly:money(p),interest:money(total-v.amount),total:money(total)};
     },
     savings_goal(v){
-      if(v.current>=v.target) return {time:'Already reached',contributions:money(0),growth:money(0)};
-      const r=Math.pow(Math.max(.000001,1+v.rate/100),1/12)-1; let bal=v.current, months=0, contributed=0;
-      while(bal<v.target && months<1200){
-        bal*=1+r; bal+=v.monthly; contributed+=v.monthly; months++;
-        if(v.monthly<=0 && r<=0) break;
+      const advanced=Boolean(v.__advanced), start=Math.max(0,v.current), initialTarget=Math.max(0,v.target);
+      const r=Math.pow(Math.max(.000001,1+v.rate/100),1/12)-1;
+      const targetR=advanced?Math.pow(Math.max(.000001,1+v.target_growth/100),1/12)-1:0;
+      const contributionGrowth=advanced?Math.max(-.99,v.annual_contribution_growth/100):0, annualLump=advanced?Math.max(0,v.annual_lump):0;
+      let bal=start, target=initialTarget, monthly=Math.max(0,v.monthly), months=0, contributed=0;
+      const labels=['Start'], balances=[bal], targets=[target];
+      if(bal>=target) return {
+        time:'Already reached',contributions:money(0),growth:money(0),ending_balance:money(bal),ending_target:money(target),monthly_at_target:money(monthly),
+        __chart:{type:'line',title:'Path to the savings goal',caption:'The current balance already meets or exceeds the target entered.',labels,series:[{label:'Projected balance',values:balances},{label:'Target',values:targets}]}
+      };
+      while(bal<target && months<1200){
+        bal*=1+r;
+        bal+=monthly; contributed+=monthly; months++;
+        target*=1+targetR;
+        if(months%12===0){
+          if(annualLump>0){bal+=annualLump;contributed+=annualLump;}
+          if(bal<target) monthly*=1+contributionGrowth;
+        }
+        if(months%12===0 || bal>=target){
+          labels.push(months%12===0?'Year '+(months/12):duration(months));
+          balances.push(bal);targets.push(target);
+        }
       }
-      return {time:bal>=v.target?duration(months):'Not reached within 100 years',contributions:money(contributed),growth:money(bal-v.current-contributed)};
+      const reached=bal>=target, growth=bal-start-contributed;
+      return {
+        time:reached?duration(months):'Not reached within 100 years',
+        contributions:money(contributed),
+        growth:money(growth),
+        ending_balance:money(bal),
+        ending_target:money(target),
+        monthly_at_target:money(monthly),
+        __chart:{type:'line',title:'Path to the savings goal',caption:advanced?'Balance and target both follow the assumptions entered. Monthly saving can rise annually and any annual lump sum is added at each 12-month point.':'Modelled balance against the fixed target using the net annual return and monthly contribution entered.',labels,series:[{label:'Projected balance',values:balances},{label:'Target',values:targets}]}
+      };
     },
     net_worth(v){
       const advanced=Boolean(v.__advanced);
@@ -753,14 +779,48 @@
       };
     },
     regular_savings(v){
-      const months=Math.round(v.years*12), r=v.rate/100/12; let bal=v.current;
-      for(let i=0;i<months;i++){ bal*=1+r; bal+=v.monthly; }
-      const contributed=v.current+v.monthly*months;
-      return {final:money(bal),contributed:money(contributed),growth:money(bal-contributed)};
+      const advanced=Boolean(v.__advanced), months=Math.max(0,Math.round(v.years*12));
+      const contributionGrowth=advanced?Math.max(-.99,v.annual_contribution_growth/100):0, fee=advanced?Math.max(0,v.annual_fee):0;
+      const simulate=feePct=>{
+        const netAnnual=(1+v.rate/100)*(1-feePct/100)-1, r=Math.pow(Math.max(.000001,1+netAnnual),1/12)-1;
+        let bal=Math.max(0,v.current), contributed=bal, monthly=Math.max(0,v.monthly);
+        const labels=['Start'], balances=[bal], contributions=[contributed];
+        for(let m=1;m<=months;m++){
+          bal=bal*(1+r)+monthly; contributed+=monthly;
+          if(m%12===0 && m<months) monthly*=1+contributionGrowth;
+          if(m%12===0 || m===months){labels.push(m%12===0?'Year '+(m/12):duration(m));balances.push(bal);contributions.push(contributed);}
+        }
+        return {bal,contributed,monthly,labels,balances,contributions,netAnnual};
+      };
+      const main=simulate(fee), noFee=simulate(0);
+      const inflation=advanced?Math.max(-.99,v.inflation_rate/100):0, years=months/12;
+      const real=main.bal/Math.pow(1+inflation,years), feeDrag=Math.max(0,noFee.bal-main.bal);
+      return {
+        final:money(main.bal),
+        contributed:money(main.contributed),
+        growth:money(main.bal-main.contributed),
+        net_return:pct(main.netAnnual*100),
+        real_balance:money(real),
+        ending_monthly:money(main.monthly),
+        fee_drag:money(feeDrag),
+        __chart:{type:'line',title:'Contributions versus projected balance',caption:advanced?'The projected balance uses the entered return, annual percentage fee and contribution-growth assumption. Contributions show money actually added.':'Shows how much comes from money added versus modelled growth at the entered constant annual return.',labels:main.labels,series:[{label:'Projected balance',values:main.balances},{label:'Money contributed',values:main.contributions}]}
+      };
     },
     pension_relief(v){
-      const earnings=Math.min(v.earnings,115000), limit=earnings*pensionPct(v.age), eligible=Math.min(v.contribution,limit), relief=eligible*(Number(v.tax_rate)/100);
-      return {limit:money(limit),eligible:money(eligible),relief:money(relief),net_cost:money(v.contribution-relief)};
+      const pctLimit=pensionPct(v.age), earnings=Math.min(Math.max(0,v.earnings),115000), limit=earnings*pctLimit;
+      const existing=v.__advanced?Math.max(0,v.existing_contributions):0, remaining=Math.max(0,limit-existing), contribution=Math.max(0,v.contribution);
+      const eligible=Math.min(contribution,remaining), excess=Math.max(0,contribution-eligible), relief=eligible*(Number(v.tax_rate)/100);
+      return {
+        age_percentage:pct(pctLimit*100),
+        earnings_used:money(earnings),
+        limit:money(limit),
+        remaining_limit:money(remaining),
+        eligible:money(eligible),
+        excess:money(excess),
+        relief:money(relief),
+        net_cost:money(contribution-relief),
+        __chart:{type:'bar',title:'New contribution inside and outside the relief limit',caption:'The age-related limit is applied to earnings up to €115,000, then any employee/personal contributions already entered are deducted before assessing the new contribution.',labels:['New contribution','Potentially eligible','Above remaining limit','Illustrative Income Tax relief'],series:[{label:'Amount',values:[contribution,eligible,excess,relief]}]}
+      };
     },
     cgt(v){
       const gain=v.sale-v.purchase-v.costs, afterLoss=Math.max(0,gain-v.losses), taxable=Math.max(0,afterLoss-1270), tax=taxable*.33;
@@ -773,12 +833,50 @@
       return {net:money(net),vat:money(vat),gross:money(gross)};
     },
     inflation(v){
-      const factor=Math.pow(1+v.rate/100,v.years), future=v.amount*factor, power=factor===0?0:v.amount/factor;
-      return {future_cost:money(future),purchasing_power:money(power),lost_power:money(v.amount-power)};
+      const amount=Math.max(0,v.amount), years=Math.max(0,v.years), inflation=Math.max(-.99,v.rate/100), factor=Math.pow(1+inflation,years);
+      const future=amount*factor, power=factor===0?0:amount/factor;
+      const nominal=v.__advanced?Math.max(-.99,v.nominal_return/100):0, real=(1+nominal)/(1+inflation)-1;
+      const grown=amount*Math.pow(1+nominal,years), grownReal=factor===0?0:grown/factor;
+      const chartYears=Math.round(years), labels=Array.from({length:chartYears+1},(_,i)=>i===0?'Today':'Year '+i);
+      const futureSeries=labels.map((_,i)=>amount*Math.pow(1+inflation,i)), powerSeries=labels.map((_,i)=>amount/Math.pow(1+inflation,i));
+      return {
+        future_cost:money(future),
+        purchasing_power:money(power),
+        lost_power:money(amount-power),
+        price_multiplier:number.format(factor)+'×',
+        real_return:pct(real*100),
+        nominal_growth_value:money(grown),
+        real_growth_value:money(grownReal),
+        __chart:{type:'line',title:'Inflation compounds in both directions',caption:'Future cost of today’s amount versus the purchasing power of holding the same nominal euro amount.',labels,series:[{label:'Future cost',values:futureSeries},{label:'Purchasing power',values:powerSeries}]}
+      };
     },
     emergency(v){
-      const target=v.expenses*Number(v.months), gap=Math.max(0,target-v.current), months=v.monthly>0?Math.ceil(gap/v.monthly):Infinity;
-      return {target:money(target),gap:money(gap),time:gap===0?'Already reached':duration(months)};
+      const advanced=Boolean(v.__advanced), recurring=Math.max(0,v.expenses)+(advanced?Math.max(0,v.annual_essentials)/12:0);
+      const target=recurring*Number(v.months)+(advanced?Math.max(0,v.extra_buffer):0), current=Math.max(0,v.current), gap=Math.max(0,target-current);
+      const annualRate=advanced?Math.max(-.99,v.interest_rate/100):0, r=Math.pow(1+annualRate,1/12)-1, monthly=Math.max(0,v.monthly);
+      let bal=current, months=0, contributed=0;
+      const labels=['Start'], balances=[bal], targets=[target];
+      while(bal<target && months<1200){
+        bal=bal*(1+r)+monthly; contributed+=monthly; months++;
+        if(months%12===0 || bal>=target){labels.push(months%12===0?'Year '+(months/12):duration(months));balances.push(bal);targets.push(target);}
+        if(monthly<=0 && r<=0) break;
+      }
+      const reached=bal>=target, deadline=advanced?Math.max(1,Math.round(v.deadline_months)):24;
+      const futureCurrent=current*Math.pow(1+r,deadline);
+      let needed=0;
+      if(futureCurrent<target){
+        const annuity=Math.abs(r)<1e-12?deadline:(Math.pow(1+r,deadline)-1)/r;
+        needed=annuity>0?(target-futureCurrent)/annuity:Infinity;
+      }
+      return {
+        target:money(target),
+        gap:money(gap),
+        time:gap===0?'Already reached':(reached?duration(months):'Not reached within 100 years'),
+        coverage_now:recurring>0?number.format(current/recurring)+' months':'No recurring essentials entered',
+        monthly_needed:Number.isFinite(needed)?money(Math.max(0,needed)):'Not calculable',
+        interest_growth:money(reached?bal-current-contributed:bal-current-contributed),
+        __chart:{type:'line',title:'Emergency-fund path',caption:advanced?'Includes irregular essential bills, the extra buffer and the net savings-interest assumption entered.':'Current savings grow only from the monthly amount entered; no interest is assumed in Basic mode.',labels,series:[{label:'Projected emergency fund',values:balances},{label:'Target',values:targets}]}
+      };
     },
     salary_hourly(v){
       const weekly=v.weeks?v.salary/v.weeks:0, monthly=v.salary/12, daily=v.days?weekly/v.days:0, hourly=(v.hours&&v.weeks)?v.salary/(v.hours*v.weeks):0;
