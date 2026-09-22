@@ -64,6 +64,34 @@ For a normal salaried role where annual leave is paid, **52 paid weeks** is usua
 
 The working-hours input should represent paid working hours in a normal week. Unpaid breaks should generally be excluded. The result is still a contractual gross-pay equivalent rather than a valuation of the entire employment package.
 
+## Turn salary into a fair job-to-job comparison
+
+An hourly equivalent becomes most useful when two roles have different schedules. A €70,000 salary based on 37.5 paid hours a week is not the same time proposition as €70,000 based on 45 regular hours, even before commuting or benefits are considered.
+
+Start with the contractual gross hourly equivalent, then build a second comparison using the hours you realistically expect to work. Keep those numbers separate. The contractual figure answers “what does the employment contract imply?” while the real-world figure answers “what does this role pay for the time it actually consumes?”
+
+### Add total reward without pretending benefits are cash salary
+
+Employer pension contributions, health insurance, bonus, paid professional fees and other benefits can materially change the package. Rather than inflating the salary input, calculate the salary-based hourly figure first and then add the annual value of benefits as a separate total-reward layer.
+
+For example, a role with a lower salary but a meaningful employer pension contribution can be economically closer to a higher-paid role than the headline salary suggests. The reverse can also be true where a higher salary comes with longer hours and little employer-funded benefit.
+
+Use the [Pension Projection Calculator](/pension-projection-calculator/) when you want to model the long-term value of pension contributions instead of treating the employer contribution as if it were immediately spendable cash.
+
+### Commute time is not paid working time, but it is still your time
+
+A normal commute should not be added to contractual working hours when calculating the employer's hourly pay rate. It can, however, be useful in a **personal opportunity-cost comparison** between jobs.
+
+If one role requires ten hours a week of commuting and another is largely remote, calculate both the official hourly equivalent and an optional “time committed” equivalent that includes travel. Label the second number clearly so it is not confused with a legal or contractual hourly rate.
+
+The same principle applies to unpaid preparation, regular out-of-hours calls or predictable overtime: keep the contractual calculation clean, then create a separate real-world scenario.
+
+### Salary versus contracting
+
+Do not compare a PAYE hourly equivalent directly with a contractor's invoice rate. A contractor rate may need to cover unpaid leave, gaps between engagements, insurance, pension funding, accounting, equipment and other business costs. The [Contractor vs Salary Calculator](/contractor-vs-salary-calculator/) is built for that broader comparison.
+
+For two PAYE jobs, this calculator is a strong first pass. For PAYE versus self-employed or company contracting, use the hourly conversion only as one input into the wider economic comparison.
+
 ## Method and limitations
 
 The calculator divides annual salary into the selected weeks, days and hours. It does not calculate tax, overtime law, benefits or employment rights.
