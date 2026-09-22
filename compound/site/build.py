@@ -853,9 +853,27 @@ def build_site(settings: Settings) -> dict:
             category_blurbs=TOOL_SPONSORSHIP_CATEGORY_BLURBS,
             pillar="wealth", tools_page=True))
         for tool in tools:
-            related_tools = [t for t in tools if t["slug"] != tool["slug"] and t.get("category") == tool.get("category")][:3]
+            guide_links = re.findall(r"\]\(/([a-z0-9]+(?:-[a-z0-9]+)*)/\)", str(tool.get("guide") or ""))
+            related_tools = []
+            for slug in guide_links:
+                candidate = tools_by_slug.get(slug)
+                if candidate and candidate.get("slug") != tool["slug"] and candidate not in related_tools:
+                    related_tools.append(candidate)
+                if len(related_tools) >= 3:
+                    break
             if len(related_tools) < 3:
-                related_tools += [t for t in tools if t["slug"] != tool["slug"] and t not in related_tools][:3-len(related_tools)]
+                same_category = [
+                    t for t in tools_by_slug.values()
+                    if t.get("slug") != tool["slug"]
+                    and t.get("category") == tool.get("category")
+                    and t not in related_tools
+                ]
+                related_tools += same_category[:3-len(related_tools)]
+            if len(related_tools) < 3:
+                related_tools += [
+                    t for t in tools_by_slug.values()
+                    if t.get("slug") != tool["slug"] and t not in related_tools
+                ][:3-len(related_tools)]
             app_category = (
                 "HealthApplication" if tool.get("category") == "Health" or tool.get("slug") == "pregnancy-due-date-calculator"
                 else "UtilitiesApplication" if tool.get("category") in {"Home Energy", "EV & Motoring"}
