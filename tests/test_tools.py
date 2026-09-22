@@ -520,3 +520,29 @@ def test_mortgage_affordability_applies_deposit_constraint():
     js = (Path(__file__).parents[1] / "compound" / "site" / "static" / "tools.js").read_text()
     assert "const depositBased=Math.max(0,v.deposit)*9" in js
     assert "Math.min(lti,paymentBased,depositBased)" in js
+
+
+def test_retirement_tools_distinguish_nominal_real_and_sustainability():
+    content_dir = Path(__file__).parents[1] / "content"
+    tools = {tool["slug"]: tool for tool in load_tools(content_dir)}
+
+    fire_fields = {field["id"]: field for field in tools["fire-number-calculator"]["fields"]}
+    fire_results = {result["id"] for result in tools["fire-number-calculator"]["results"]}
+    assert fire_fields["inflation_rate"]["advanced"] is True
+    assert "real_return" in fire_results
+
+    pension_fields = {field["id"]: field for field in tools["pension-projection-calculator"]["fields"]}
+    pension_results = {result["id"] for result in tools["pension-projection-calculator"]["results"]}
+    assert pension_fields["inflation_rate"]["advanced"] is True
+    assert "projected_real" in pension_results
+
+    retirement_fields = {field["id"]: field for field in tools["retirement-income-calculator"]["fields"]}
+    retirement_results = {result["id"] for result in tools["retirement-income-calculator"]["results"]}
+    assert retirement_fields["retirement_years"]["advanced"] is True
+    assert retirement_fields["return_rate"]["advanced"] is True
+    assert {"ending_pot", "depletion"} <= retirement_results
+
+    js = (Path(__file__).parents[1] / "compound" / "site" / "static" / "tools.js").read_text()
+    assert "(1+v.return_rate/100)/(1+v.inflation_rate/100)-1" in js
+    assert "(1+v.return_rate/100)*(1-v.annual_fee/100)-1" in js
+    assert "withdrawal*=1+v.inflation_rate/100" in js
