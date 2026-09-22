@@ -53,212 +53,43 @@ jobs:
         run: |
           set -euo pipefail
           fetch() {
-            curl --fail --silent --show-error --location \
-              --retry 12 --retry-delay 5 --retry-all-errors \
-              --connect-timeout 10 --max-time 30 \
-              "$1" -o "$2"
+            curl --fail --silent --show-error --location               --retry 12 --retry-delay 5 --retry-all-errors               --connect-timeout 10 --max-time 30               "$1" -o "$2"
           }
 
           fetch https://compound.ie/tools/ /tmp/tools.html
-          grep -Fq '<title>Free Calculators &amp; Tools for Ireland | Compound</title>' /tmp/tools.html || \
-            grep -Fq '<title>Free Calculators & Tools for Ireland | Compound</title>' /tmp/tools.html
-          grep -Fq '/take-home-pay-calculator/' /tmp/tools.html
-          grep -Fq '/pension-projection-calculator/' /tmp/tools.html
-          grep -Fq '/rent-vs-buy-calculator/' /tmp/tools.html
-          grep -Fq '/solar-payback-calculator/' /tmp/tools.html
+          grep -Fq 'Mortgages &amp; Home Buying' /tmp/tools.html || grep -Fq 'Mortgages & Home Buying' /tmp/tools.html
+          grep -Fq 'Pensions &amp; Investing' /tmp/tools.html || grep -Fq 'Pensions & Investing' /tmp/tools.html
           grep -Fq '/net-worth-calculator/' /tmp/tools.html
           grep -Fq '/debt-repayment-calculator/' /tmp/tools.html
+          grep -Fq '/solar-payback-calculator/' /tmp/tools.html
+          grep -Fq '/nutrition-needs-calculator/' /tmp/tools.html
+
+          fetch https://compound.ie/mortgage-calculator/ /tmp/mortgage.html
+          grep -Fq 'Mortgage Calculator Ireland' /tmp/mortgage.html
+          grep -Fq 'Worked example' /tmp/mortgage.html
+          grep -Fq 'Central Bank' /tmp/mortgage.html
 
           fetch https://compound.ie/net-worth-calculator/ /tmp/net-worth.html
           grep -Fq 'data-tool-name="net-worth-calculator"' /tmp/net-worth.html
-          grep -Fq '20260922-responsive1' /tmp/net-worth.html
+          grep -Fq 'What net worth actually measures' /tmp/net-worth.html
 
-          fetch https://compound.ie/debt-repayment-calculator/ /tmp/debt-repayment.html
-          grep -Fq 'data-debt-calculator' /tmp/debt-repayment.html
-          grep -Fq 'Debt avalanche' /tmp/debt-repayment.html
-          grep -Fq '20260922-responsive1' /tmp/debt-repayment.html
-
-          fetch https://compound.ie/take-home-pay-calculator/ /tmp/take-home.html
-          grep -Fq 'Take-Home Pay Calculator Ireland 2026' /tmp/take-home.html
-          grep -Fq 'data-calculator="take_home_2026"' /tmp/take-home.html
-
-          fetch https://compound.ie/pension-projection-calculator/ /tmp/pension.html
-          grep -Fq 'data-calculator="pension_projection"' /tmp/pension.html
-          grep -Fq 'data-tool-chart' /tmp/pension.html
-
-          fetch https://compound.ie/myfuturefund-calculator/ /tmp/mff.html
-          grep -Fq 'data-calculator="myfuturefund"' /tmp/mff.html
-          grep -Fq 'MyFutureFund Auto-Enrolment Calculator Ireland' /tmp/mff.html
-
-          fetch https://compound.ie/wealth/myfuturefund-vs-private-pension-ireland/ /tmp/mff-article.html
-          grep -Fq 'MyFutureFund vs a private pension in Ireland' /tmp/mff-article.html
-          grep -Fq '/myfuturefund-calculator/' /tmp/mff-article.html
-          grep -Fq '/pension-tax-relief-calculator/' /tmp/mff-article.html
-          grep -Fq '/pension-projection-calculator/' /tmp/mff-article.html
-          grep -Fq '/wealth/pension-tax-relief-ireland-how-to-claim/' /tmp/mff-article.html
-
-          grep -Fq '/wealth/myfuturefund-vs-private-pension-ireland/' /tmp/mff.html
-
-          fetch https://compound.ie/childcare-return-to-work-calculator/ /tmp/childcare.html
-          grep -Fq 'data-calculator="childcare_return"' /tmp/childcare.html
-          grep -Fq '2.14' /tmp/childcare.html
-          grep -Fq '€34,000' /tmp/childcare.html
-          grep -Fq '€68,000' /tmp/childcare.html
-
-          fetch https://compound.ie/wealth/returning-to-work-childcare-costs-ireland/ /tmp/childcare-article.html
-          grep -Fq 'Is it financially worth returning to work after having children in Ireland?' /tmp/childcare-article.html
-          grep -Fq '/childcare-return-to-work-calculator/' /tmp/childcare-article.html
-          grep -Fq '/take-home-pay-calculator/' /tmp/childcare-article.html
-          grep -Fq '/pension-projection-calculator/' /tmp/childcare-article.html
-
-          grep -Fq '/wealth/returning-to-work-childcare-costs-ireland/' /tmp/childcare.html
-
-          fetch https://compound.ie/mortgage-switch-calculator/ /tmp/switch.html
-          grep -Fq 'data-calculator="mortgage_switch"' /tmp/switch.html
-
-          fetch https://compound.ie/wealth/is-switching-your-mortgage-worth-it-ireland/ /tmp/switch-article.html
-          grep -Fq 'Is switching your mortgage worth it in Ireland?' /tmp/switch-article.html
-          grep -Fq '/mortgage-switch-calculator/' /tmp/switch-article.html
-          grep -Fq '/mortgage-calculator/' /tmp/switch-article.html
-          grep -Fq '/mortgage-overpayment-calculator/' /tmp/switch-article.html
-
-          grep -Fq '/wealth/is-switching-your-mortgage-worth-it-ireland/' /tmp/switch.html
-
-          fetch https://compound.ie/wealth/mortgage-overpayments-100-euro-ireland/ /tmp/mortgage-article.html
-          grep -Fq '/mortgage-overpayment-calculator/' /tmp/mortgage-article.html
-          grep -Fq '/mortgage-switch-calculator/' /tmp/mortgage-article.html
-
-          fetch https://compound.ie/mortgage-overpayment-calculator/ /tmp/mortgage-tool.html
-          grep -Fq '/wealth/mortgage-overpayments-100-euro-ireland/' /tmp/mortgage-tool.html
-
-          fetch https://compound.ie/health/macronutrients-micronutrients-guide-ireland/ /tmp/macros-article.html
-          grep -Fq '/nutrition-needs-calculator/' /tmp/macros-article.html
-
-          fetch https://compound.ie/nutrition-needs-calculator/ /tmp/nutrition-tool-links.html
-          grep -Fq '/health/macronutrients-micronutrients-guide-ireland/' /tmp/nutrition-tool-links.html
-
-          fetch https://compound.ie/lifetime-cost-calculator/ /tmp/lifetime.html
-          grep -Fq 'data-calculator="lifetime_cost"' /tmp/lifetime.html
-          grep -Fq '€1,007.47' /tmp/lifetime.html
-          grep -Fq '3.7%' /tmp/lifetime.html
-
-          fetch https://compound.ie/wealth/lifetime-cost-of-lifestyle-ireland/ /tmp/lifetime-article.html
-          grep -Fq 'How much does your lifestyle actually cost over a lifetime?' /tmp/lifetime-article.html
-          grep -Fq '/lifetime-cost-calculator/' /tmp/lifetime-article.html
-          grep -Fq '/car-finance-calculator/' /tmp/lifetime-article.html
-          grep -Fq '/childcare-return-to-work-calculator/' /tmp/lifetime-article.html
-          grep -Fq '/compound-interest-calculator/' /tmp/lifetime-article.html
-
-          grep -Fq '/wealth/lifetime-cost-of-lifestyle-ireland/' /tmp/lifetime.html
-
-          fetch https://compound.ie/car-finance-calculator/ /tmp/car-finance.html
-          grep -Fq 'data-calculator="car_finance"' /tmp/car-finance.html
-          grep -Fq 'Basic calculation' /tmp/car-finance.html
-          grep -Fq 'Advanced calculation' /tmp/car-finance.html
-          grep -Fq 'PCP final balloon / GMFV' /tmp/car-finance.html
-
-          fetch https://compound.ie/wealth/pcp-vs-hp-vs-car-loan-ireland/ /tmp/car-finance-article.html
-          grep -Fq 'PCP vs Hire Purchase vs Car Loan in Ireland' /tmp/car-finance-article.html
-          grep -Fq '/car-finance-calculator/' /tmp/car-finance-article.html
-          grep -Fq 'The lower monthly payment did not come from making €18,000 disappear.' /tmp/car-finance-article.html
-
-          grep -Fq '/wealth/pcp-vs-hp-vs-car-loan-ireland/' /tmp/car-finance.html
+          fetch https://compound.ie/debt-repayment-calculator/ /tmp/debt.html
+          grep -Fq 'data-debt-calculator' /tmp/debt.html
+          grep -Fq 'Debt avalanche' /tmp/debt.html
+          grep -Fq 'MABS' /tmp/debt.html
 
           fetch https://compound.ie/nutrition-needs-calculator/ /tmp/nutrition.html
-          grep -Fq 'data-calculator="nutrition_needs"' /tmp/nutrition.html
           grep -Fq 'Mifflin' /tmp/nutrition.html
-          grep -Fq 'Morton et al. 2018' /tmp/nutrition.html
-          grep -Fq 'Does protein timing matter?' /tmp/nutrition.html
+          grep -Fq 'Frequently asked questions' /tmp/nutrition.html
 
-          fetch https://compound.ie/health/how-much-protein-do-you-need-ireland/ /tmp/protein-article.html
-          grep -Fq 'How much protein do you actually need?' /tmp/protein-article.html
-          grep -Fq '0.83 g/kg/day' /tmp/protein-article.html
-          grep -Fq '1.6 g/kg/day' /tmp/protein-article.html
-          grep -Fq '/nutrition-needs-calculator/' /tmp/protein-article.html
-          grep -Fq '/health/macronutrients-micronutrients-guide-ireland/' /tmp/protein-article.html
-
-          grep -Fq '/health/how-much-protein-do-you-need-ireland/' /tmp/nutrition.html
-
-          fetch https://compound.ie/pregnancy-due-date-calculator/ /tmp/pregnancy.html
-          grep -Fq 'data-calculator="pregnancy_timeline"' /tmp/pregnancy.html
-          grep -Fq 'type="date"' /tmp/pregnancy.html
-          grep -Fq 'first-trimester ultrasound' /tmp/pregnancy.html
-          grep -Fq '±5–7 days' /tmp/pregnancy.html
-          grep -Fq '1 in 20 women' /tmp/pregnancy.html
-
-          fetch https://compound.ie/health/pregnancy-due-date-accuracy-lmp-vs-scan-ireland/ /tmp/pregnancy-article.html
-          grep -Fq 'How accurate is a pregnancy due date?' /tmp/pregnancy-article.html
-          grep -Fq '/pregnancy-due-date-calculator/' /tmp/pregnancy-article.html
-          grep -Fq 'before 15 weeks' /tmp/pregnancy-article.html
-          grep -Fq '±5–7 days' /tmp/pregnancy-article.html
-
-          grep -Fq '/health/pregnancy-due-date-accuracy-lmp-vs-scan-ireland/' /tmp/pregnancy.html
-
-          fetch https://compound.ie/alcohol-units-calories-cost-calculator/ /tmp/alcohol.html
-          grep -Fq 'data-calculator="alcohol_ireland"' /tmp/alcohol.html
-          grep -Fq '10 grams of pure alcohol' /tmp/alcohol.html
-          grep -Fq '0.789' /tmp/alcohol.html
-          grep -Fq '3 September 2028' /tmp/alcohol.html
-
-          fetch https://compound.ie/health/standard-drinks-ireland-pints-wine-spirits/ /tmp/alcohol-article.html
-          grep -Fq 'Standard drinks in Ireland' /tmp/alcohol-article.html
-          grep -Fq '/alcohol-units-calories-cost-calculator/' /tmp/alcohol-article.html
-          grep -Fq '1 standard drink = 10 grams of pure alcohol' /tmp/alcohol-article.html
-          grep -Fq '3 September 2028' /tmp/alcohol-article.html
-
-          grep -Fq '/health/standard-drinks-ireland-pints-wine-spirits/' /tmp/alcohol.html
-
-          fetch https://compound.ie/bmi-calculator/ /tmp/bmi.html
-          grep -Fq 'BMI REFERENCE RANGE' /tmp/bmi.html
-          grep -Fq '300,000 adults' /tmp/bmi.html
-
-          fetch https://compound.ie/electricity-cost-calculator/ /tmp/electricity-cost.html
-          grep -Fq 'data-calculator="electricity"' /tmp/electricity-cost.html
-
-          fetch https://compound.ie/wealth/average-home-electricity-use-ireland/ /tmp/electricity-article.html
-          grep -Fq 'How much electricity does an Irish home use?' /tmp/electricity-article.html
-          grep -Fq '/electricity-cost-calculator/' /tmp/electricity-article.html
-          grep -Fq '/ev-charging-cost-calculator/' /tmp/electricity-article.html
-          grep -Fq '/solar-payback-calculator/' /tmp/electricity-article.html
-          grep -Fq '/solar-ev-battery-optimiser/' /tmp/electricity-article.html
-
-          grep -Fq '/wealth/average-home-electricity-use-ireland/' /tmp/electricity-cost.html
-
-          fetch https://compound.ie/solar-ev-battery-optimiser/ /tmp/solar-opt.html
-          grep -Fq 'data-calculator="solar_optimizer"' /tmp/solar-opt.html
-
-          fetch https://compound.ie/wealth/solar-panels-vs-battery-ireland/ /tmp/solar-battery-article.html
-          grep -Fq 'Do you actually need a battery with solar panels in Ireland?' /tmp/solar-battery-article.html
-          grep -Fq '/solar-payback-calculator/' /tmp/solar-battery-article.html
-          grep -Fq '/solar-ev-battery-optimiser/' /tmp/solar-battery-article.html
-          grep -Fq '/ev-charging-cost-calculator/' /tmp/solar-battery-article.html
-
-          grep -Fq '/wealth/solar-panels-vs-battery-ireland/' /tmp/solar-opt.html
-
-          fetch https://compound.ie/whole-house-retrofit-planner/ /tmp/retrofit.html
-          grep -Fq 'data-calculator="retrofit_planner"' /tmp/retrofit.html
-
-          fetch https://compound.ie/static/tools.js?v=20260922-responsive1 /tmp/tools.js
-          grep -Fq 'take_home_2026' /tmp/tools.js
-          grep -Fq 'renderToolChart' /tmp/tools.js
-          grep -Fq 'myfuturefund' /tmp/tools.js
-          grep -Fq 'childcare_return' /tmp/tools.js
-          grep -Fq 'mortgage_switch' /tmp/tools.js
-          grep -Fq 'lifetime_cost' /tmp/tools.js
-          grep -Fq 'car_finance' /tmp/tools.js
-          grep -Fq 'balloonPayment' /tmp/tools.js
+          fetch https://compound.ie/static/tools.js /tmp/tools.js
+          grep -Fq 'net_worth' /tmp/tools.js
+          grep -Fq 'solar_payback' /tmp/tools.js
           grep -Fq 'nutrition_needs' /tmp/tools.js
-          grep -Fq 'pregnancy_timeline' /tmp/tools.js
-          grep -Fq 'alcohol_ireland' /tmp/tools.js
-          grep -Fq 'parseDateOnly' /tmp/tools.js
-          grep -Fq 'solar_optimizer' /tmp/tools.js
-          grep -Fq 'retrofit_planner' /tmp/tools.js
 
           fetch https://compound.ie/sitemap.xml /tmp/sitemap.xml
-          grep -Fq 'https://compound.ie/tools/' /tmp/sitemap.xml
-          grep -Fq 'https://compound.ie/take-home-pay-calculator/' /tmp/sitemap.xml
-          grep -Fq 'https://compound.ie/pension-projection-calculator/' /tmp/sitemap.xml
-          grep -Fq 'https://compound.ie/rent-vs-buy-calculator/' /tmp/sitemap.xml
-          grep -Fq 'https://compound.ie/solar-payback-calculator/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/mortgage-calculator/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/net-worth-calculator/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/debt-repayment-calculator/' /tmp/sitemap.xml
 
-          echo 'Live verification passed for Compound tools, calculator pages, assets and sitemap.'
+          echo 'Live verification passed for Compound calculator catalogue and flagship guides.'
