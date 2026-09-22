@@ -94,6 +94,14 @@ The largest lifetime saving is not automatically the best personal decision. Som
 
 The calculator's role is to reveal the scale of repeated costs so that trade-offs are explicit. It is a planning lens, not a recommendation to minimise every category.
 
+### Model replacement cycles explicitly
+
+Some costs recur every month; others arrive in large replacement events. A car, boiler, roof, appliance or major home repair should not automatically be treated like a monthly subscription.
+
+Use the periodic-cost inputs to represent realistic replacement intervals. Then test a shorter and longer lifespan. This shows whether the lifetime total is driven by the price of each item or by how often it needs to be replaced.
+
+That distinction is useful when comparing a cheaper product with a shorter life against a more expensive option expected to last longer.
+
 ## Method and limitations
 
 The tool projects entered recurring and periodic costs year by year, inflating future cash spending at the chosen rate while also tracking a constant-price today's-money total. It does not forecast actual prices or life events.
