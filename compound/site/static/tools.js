@@ -168,6 +168,18 @@
         const monthly=v.watts/1000*v.hours*v.days*v.price, labels=Array.from({length:12},(_,i)=>'M'+(i+1)), vals=labels.map((_,i)=>monthly*(i+1));
         return {type:'line',title:'Cumulative running cost over a year',caption:'Assumes the same monthly usage pattern continues for 12 months.',labels,series:[{label:'Cumulative cost',values:vals}]};
       }
+      case 'salary_hourly': {
+        const base=Math.max(1,v.hours), hours=[Math.max(20,base-5),base,base+5], vals=hours.map(h=>v.salary/(Math.max(1,v.weeks)*h));
+        return {type:'bar',title:'Hourly equivalent versus weekly hours',caption:'Same annual salary spread across fewer or more paid working hours.',labels:hours.map(h=>h+' hrs/wk'),series:[{label:'Gross hourly equivalent',values:vals}]};
+      }
+      case 'fuel': {
+        const distance=v.distance*v.trips, litres=distance*v.consumption/100, prices=[v.price*.8,v.price,v.price*1.2], vals=prices.map(p=>litres*p);
+        return {type:'bar',title:'Fuel-price sensitivity',caption:'Trip cost if the entered fuel price were 20% lower, unchanged or 20% higher.',labels:['-20%','Current','+20%'],series:[{label:'Fuel cost',values:vals}]};
+      }
+      case 'prsi_2026': {
+        const p=annualClassA2026(v.salary);
+        return {type:'bar',title:'Weekly employee PRSI before and after the 2026 rate change',caption:'Class A estimate using the same weekly-equivalent salary.',labels:['Before change','After change'],series:[{label:'Weekly PRSI',values:[p.before,p.after]}]};
+      }
       case 'usc_2026': {
         const x=Math.max(0,v.income); if(x<=13000) return null; let left=x; const vals=[]; for(const [size,rate] of [[12012,.005],[16688,.02],[41344,.03],[Infinity,.08]]){const slice=Math.min(left,size);vals.push(Math.max(0,slice*rate));left-=slice;if(left<=0){while(vals.length<4)vals.push(0);break;}}
         return {type:'bar',title:'USC by rate band',caption:'Each rate applies only to income within that USC band.',labels:['0.5%','2%','3%','8%'],series:[{label:'USC',values:vals}]};
