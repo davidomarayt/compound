@@ -348,6 +348,9 @@ def load_tools(content_dir: Path) -> list[dict]:
             raise ValueError(f"Tool {slug} needs title and formula")
         tool["slug"] = slug
         tool["url"] = f"/{slug}/"
+        guide_path = content_dir / "tool-guides" / f"{slug}.md"
+        if guide_path.is_file():
+            tool["guide"] = guide_path.read_text(encoding="utf-8")
         tool["guide_html"] = render_markdown(str(tool.get("guide") or ""))
         tool["fields"] = list(tool.get("fields") or [])
         tool["results"] = list(tool.get("results") or [])
