@@ -491,3 +491,21 @@ def test_bespoke_flagships_match_quality_system():
     assert "bmi-copy-result" in bmi_template and "bmi-print-result" in bmi_template
     assert "navigator.clipboard" in bmi_js
     assert "<noscript>" in bmi_template
+
+
+def test_rent_vs_buy_models_transaction_and_ownership_costs():
+    content_dir = Path(__file__).parents[1] / "content"
+    tool = next(tool for tool in load_tools(content_dir) if tool["slug"] == "rent-vs-buy-calculator")
+    fields = {field["id"]: field for field in tool["fields"]}
+    results = {result["id"] for result in tool["results"]}
+
+    assert fields["buying_costs"]["advanced"] is True
+    assert fields["owner_fixed_annual"]["advanced"] is True
+    assert fields["selling_cost_pct"]["advanced"] is True
+    assert "upfront_buying_costs" in results
+
+    js = (Path(__file__).parents[1] / "compound" / "site" / "static" / "tools.js").read_text()
+    assert "stampDutyResidential(v.house_price)" in js
+    assert "v.deposit+upfrontCosts" in js
+    assert "house*(1-sellPct)" in js
+    assert "v.owner_fixed_annual" in js
