@@ -2,7 +2,7 @@
 {% block head_title %}Compound · Irish news, practical guides & useful tools{% endblock %}
 {% block head %}<link rel="canonical" href="{{ site_url }}/"><meta property="og:title" content="Compound · Understand what’s changing"><meta property="og:description" content="Independent Irish news, practical guides and useful tools for your health, money and everyday life."><meta property="og:image" content="{{ site_url }}/static/images/landscape.jpg"><meta property="og:type" content="website"><meta property="og:url" content="{{ site_url }}/">{% endblock %}
 {% block content %}
-<section class="home-hero home-hero-v2">
+<section class="home-hero home-hero-v2 home-hero-text-only">
  <div class="hero-copy hero-copy-v2">
   <p class="eyebrow hero-kicker">IRISH NEWS. PRACTICAL GUIDES. POWERFUL TOOLS.</p>
   <h1>Understand what’s changing.<br><em>See what it means for you.</em></h1>
@@ -23,7 +23,6 @@
    <span><b aria-hidden="true">◎</b> Practical tools<br>for real life</span>
   </div>
  </div>
- <div class="hero-art hero-art-v2"><img src="/static/images/landscape.jpg" width="1200" height="800" fetchpriority="high" alt="Irish landscape with mountains and water"><div class="image-caption hero-image-message"><p>Better information<br>for a brighter Ireland.</p><span class="caption-rule" aria-hidden="true"></span></div></div>
 </section>
 
 {% if news_articles or home_tools %}
