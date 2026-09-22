@@ -546,7 +546,7 @@ tools:
       - {id: target, label: Savings target today, type: number, prefix: "€", default: 30000, min: 1, step: 100, section_start: Goal}
       - {id: current, label: Current savings, type: number, prefix: "€", default: 5000, min: 0, step: 100}
       - {id: monthly, label: Monthly contribution now, type: number, prefix: "€", default: 500, min: 0, step: 10, section_start: Saving plan}
-      - {id: rate, label: Annual net interest / return assumption, type: number, suffix: "%", default: 2, min: -20, max: 30, step: 0.1}
+      - {id: rate, label: Annual net interest / return assumption, type: number, suffix: "%", default: 2, min: -20, max: 30, step: 0.1, help: "Use the return you expect to keep after relevant fees and tax. For an ordinary taxable Irish deposit, gross interest is generally reduced by DIRT."}
       - {id: annual_contribution_growth, label: Increase monthly contribution each year, type: number, suffix: "%", default: 0, min: -20, max: 30, step: 0.5, advanced: true, section_start: Advanced plan}
       - {id: annual_lump, label: Extra lump sum each year, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true}
       - {id: target_growth, label: Annual growth of the target itself, type: number, suffix: "%", default: 0, min: -20, max: 30, step: 0.1, advanced: true, help: "For example, a goal linked to a rising future cost. Leave at 0% for a fixed euro target."}
@@ -564,6 +564,8 @@ tools:
       Returns are assumptions, not forecasts. If you are modelling a deposit account, use a rate after the tax you expect to pay on interest. If you are modelling an investment, use a return that is sensible after the fees and tax treatment relevant to you.
     sources:
       - {title: "CCPC — About savings", url: "https://www.ccpc.ie/manage-your-money/saving-and-investments/savings"}
+      - {title: "Revenue — Deposit Interest Retention Tax", url: "https://www.revenue.ie/en/additional-incomes/dirt/index.aspx"}
+      - {title: "Revenue — DIRT rate", url: "https://www.revenue.ie/en/additional-incomes/dirt/what-dirt-rate-is-applicable.aspx"}
 
   - slug: net-worth-calculator
     title: Net Worth Calculator Ireland
@@ -809,9 +811,9 @@ tools:
       - {id: current, label: Starting balance, type: number, prefix: "€", default: 5000, min: 0, step: 100, section_start: Starting point}
       - {id: monthly, label: Monthly saving now, type: number, prefix: "€", default: 300, min: 0, step: 10}
       - {id: years, label: Time horizon, type: number, suffix: years, default: 10, min: 0.25, max: 70, step: 0.25, section_start: Growth}
-      - {id: rate, label: Annual return before advanced fee, type: number, suffix: "%", default: 4, min: -20, max: 30, step: 0.1}
+      - {id: rate, label: Annual return before advanced fee, type: number, suffix: "%", default: 4, min: -20, max: 30, step: 0.1, help: "In Basic mode treat this as the return received by the account. In Advanced mode it is the return before the annual percentage fee entered below."}
       - {id: annual_contribution_growth, label: Increase monthly saving each year, type: number, suffix: "%", default: 0, min: -20, max: 30, step: 0.5, advanced: true, section_start: Advanced assumptions}
-      - {id: annual_fee, label: Annual percentage fee, type: number, suffix: "%", default: 0, min: 0, max: 10, step: 0.05, advanced: true}
+      - {id: annual_fee, label: Annual percentage fee, type: number, suffix: "%", default: 0, min: 0, max: 10, step: 0.05, advanced: true, help: "Enter a recurring percentage charge not already reflected in the return assumption. Do not double-count a fee already embedded in a quoted net return."}
       - {id: inflation_rate, label: Annual inflation assumption, type: number, suffix: "%", default: 2, min: -5, max: 20, step: 0.1, advanced: true}
     results:
       - {id: final, label: Projected nominal balance}
@@ -828,6 +830,8 @@ tools:
       Investment returns are uneven in real life. The model uses a constant return for planning and does not calculate Irish investment tax. Use a return assumption appropriate to the product you are modelling.
     sources:
       - {title: "CCPC — About savings", url: "https://www.ccpc.ie/manage-your-money/saving-and-investments/savings"}
+      - {title: "Revenue — Deposit Interest Retention Tax", url: "https://www.revenue.ie/en/additional-incomes/dirt/index.aspx"}
+      - {title: "CSO — Consumer Price Index methodology", url: "https://www.cso.ie/en/methods/prices/consumerpriceindex/methodologydocuments/csoconsumerpriceindexmethodology/"}
 
   - slug: pension-tax-relief-calculator
     title: Pension Tax Relief Calculator Ireland 2026
@@ -840,9 +844,9 @@ tools:
     advanced_note: "Advanced mode subtracts employee/personal contributions already made for the relevant earnings. Do not enter employer contributions here: Revenue says employer contributions are not counted against the employee's earnings threshold."
     fields:
       - {id: age, label: Age, type: number, default: 35, min: 16, max: 100, step: 1, section_start: Revenue limit}
-      - {id: earnings, label: Relevant annual earnings, type: number, prefix: "€", default: 60000, min: 0, step: 1000}
+      - {id: earnings, label: Relevant annual earnings, type: number, prefix: "€", default: 60000, min: 0, step: 1000, help: "Revenue caps the earnings used for this relief-limit calculation at €115,000. If you have multiple income sources, relief can depend on the source to which the contribution relates."}
       - {id: contribution, label: New employee / personal contribution to model, type: number, prefix: "€", default: 6000, min: 0, step: 100, section_start: Contribution}
-      - {id: existing_contributions, label: Other employee / personal contributions already using this year's limit, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true}
+      - {id: existing_contributions, label: Other employee / personal contributions already using this year's limit, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true, help: "Include employee/personal contributions already using this annual limit. Do not include employer contributions or the new contribution being modelled."}
       - id: tax_rate
         label: Income-tax rate available for this illustration
         type: select
@@ -942,9 +946,9 @@ tools:
     advanced_note: "Advanced mode adds a nominal investment/savings return and converts it to a real return using the compounding relationship between growth and inflation."
     fields:
       - {id: amount, label: Amount today, type: number, prefix: "€", default: 10000, min: 0, step: 100}
-      - {id: rate, label: Assumed annual inflation, type: number, suffix: "%", default: 2, min: -20, max: 30, step: 0.1}
+      - {id: rate, label: Assumed annual inflation, type: number, suffix: "%", default: 2, min: -20, max: 30, step: 0.1, help: "Use this as a scenario rate. The CSO CPI is Ireland's official broad inflation measure, but your household's costs can move differently."}
       - {id: years, label: Years, type: number, default: 10, min: 0, max: 100, step: 1}
-      - {id: nominal_return, label: Nominal annual savings / investment return, type: number, suffix: "%", default: 5, min: -20, max: 30, step: 0.1, advanced: true, section_start: Advanced real-return check}
+      - {id: nominal_return, label: Nominal annual savings / investment return, type: number, suffix: "%", default: 5, min: -20, max: 30, step: 0.1, advanced: true, section_start: Advanced real-return check, help: "Enter a nominal return on the same basis as your inflation assumption. The calculator converts it to an exact real return; it does not model tax or fees separately."}
     results:
       - {id: future_cost, label: Future cost of the same basket}
       - {id: purchasing_power, label: Purchasing power of the same nominal amount}
@@ -958,7 +962,9 @@ tools:
       A constant inflation rate compounds the future cost of today's basket upward while the purchasing power of a fixed nominal cash amount falls.
 
       Advanced mode uses the exact real-return relationship rather than simply subtracting inflation from the nominal return. Actual inflation and market returns vary from year to year; this is a deterministic scenario.
-    sources: []
+    sources:
+      - {title: "CSO — Consumer Price Index methodology", url: "https://www.cso.ie/en/methods/prices/consumerpriceindex/methodologydocuments/csoconsumerpriceindexmethodology/"}
+      - {title: "CSO — Consumer Price Index", url: "https://www.cso.ie/en/methods/prices/consumerpriceindex/"}
 
   - slug: emergency-fund-calculator
     title: Emergency Fund Calculator Ireland
@@ -984,8 +990,8 @@ tools:
       - {id: extra_buffer, label: Extra one-off emergency buffer, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true}
       - {id: current, label: Current emergency savings, type: number, prefix: "€", default: 3000, min: 0, step: 100, section_start: Build the fund}
       - {id: monthly, label: Amount you can add each month, type: number, prefix: "€", default: 300, min: 0, step: 10}
-      - {id: interest_rate, label: Annual net savings interest, type: number, suffix: "%", default: 0, min: -10, max: 20, step: 0.1, advanced: true}
-      - {id: deadline_months, label: Target deadline, type: number, suffix: months, default: 24, min: 1, max: 120, step: 1, advanced: true}
+      - {id: interest_rate, label: Annual net savings interest, type: number, suffix: "%", default: 0, min: -10, max: 20, step: 0.1, advanced: true, help: "Use the rate you expect to retain after relevant tax and fees. Keeping this at 0% gives a conservative cash-buffer path."}
+      - {id: deadline_months, label: Target deadline, type: number, suffix: months, default: 24, min: 1, max: 120, step: 1, advanced: true, help: "Used to calculate the monthly saving required to reach the emergency-fund target by this deadline."}
     results:
       - {id: target, label: Target emergency fund}
       - {id: gap, label: Amount still to build}
