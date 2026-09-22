@@ -453,6 +453,18 @@
     return items.slice(0,3);
   };
 
+  const validateRelationships = (name,v) => {
+    if(name==='pension_projection' && v.retirement_age<=v.age) return 'Target retirement age must be later than your current age.';
+    if(name==='lifetime_cost' && v.end_age<=v.current_age) return 'The projection end age must be later than your current age.';
+    if(name==='car_finance' && v.deposit>v.car_price) return 'The car-finance deposit cannot exceed the car price.';
+    if(name==='rent_vs_buy' && v.deposit>v.house_price) return 'The deposit cannot exceed the home purchase price in this comparison.';
+    if(name==='mortgage_switch' && v.balance===0) return 'Enter a current mortgage balance above €0 to compare switching.';
+    if(name==='mortgage_overpayment' && v.balance===0) return 'Enter a current mortgage balance above €0.';
+    if(name==='first_home_scheme' && v.property_value===0) return 'Enter a property value above €0.';
+    if(name==='help_to_buy' && v.property_value===0) return 'Enter a property value above €0.';
+    return '';
+  };
+
   const renderInsights = (root,items) => {
     const panel=root.querySelector('[data-tool-insights]'), list=root.querySelector('[data-tool-insight-list]');
     if(!panel||!list) return;
@@ -1146,6 +1158,8 @@
         if(showErrors) error.textContent=invalidMessage||'Check the numbers entered and try again.';
         return;
       }
+      const relationshipError=validateRelationships(root.dataset.calculator,values);
+      if(relationshipError){ if(showErrors) error.textContent=relationshipError; return; }
       error.textContent='';
       const fn=calculators[root.dataset.calculator]; if(!fn) return;
       try{
