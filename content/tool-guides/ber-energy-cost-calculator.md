@@ -2,6 +2,12 @@
 
 This calculator converts an entered BER-style energy intensity into an annual energy-use and cost illustration. It helps make kWh/m²/year easier to understand in household-euro terms.
 
+## Reading the comparison outputs
+
+The calculator now shows the annual and monthly cost difference, the percentage reduction in the modelled energy-use figure and a simple **10-year gross difference** if the same energy price were held constant.
+
+That 10-year figure is deliberately not a retrofit payback forecast. It does not include inflation, tariff changes, capital cost, finance, maintenance or rebound effects. Its purpose is to make the scale of the current-versus-target energy assumption easier to understand before moving to a more detailed retrofit model.
+
 ## How to read the result
 
 A BER is an **asset rating**, not a prediction of your exact bill. SEAI's DEAP methodology uses standard assumptions about occupancy, heating patterns, hot water and lighting so homes can be compared consistently.
