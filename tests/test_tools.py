@@ -567,7 +567,8 @@ def test_rent_vs_buy_models_transaction_and_ownership_costs():
     assert "upfront_buying_costs" in results
 
     js = (Path(__file__).parents[1] / "compound" / "site" / "static" / "tools.js").read_text()
-    assert "rent_vs_buy(v)" in js\n    assert "stampDutyResidential(price)" in js
+    assert "rent_vs_buy(v)" in js
+    assert "stampDutyResidential(price)" in js
     assert "v.deposit+upfrontCosts" in js
     assert "house*(1-sellPct)" in js
     assert "v.owner_fixed_annual" in js
@@ -580,7 +581,8 @@ def test_mortgage_affordability_applies_deposit_constraint():
     assert "deposit_based_mortgage" in result_ids
 
     js = (Path(__file__).parents[1] / "compound" / "site" / "static" / "tools.js").read_text()
-    assert "mortgage_affordability(v)" in js\n    assert "const depositBased=deposit*9" in js
+    assert "mortgage_affordability(v)" in js
+    assert "const depositBased=deposit*9" in js
     assert "Math.min(lti,paymentBased,depositBased)" in js
 
 
