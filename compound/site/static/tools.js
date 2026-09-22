@@ -82,7 +82,7 @@
   };
   const stampDutyResidential = price => Math.min(price,1000000)*.01 + Math.max(0,Math.min(price,1500000)-1000000)*.02 + Math.max(0,price-1500000)*.06;
   const projectMonthly = (initial,monthly,annualRate,years) => {
-    const r=annualRate/100/12, points=[Math.max(0,initial)]; let bal=Math.max(0,initial);
+    const r=Math.pow(Math.max(.000001,1+annualRate/100),1/12)-1, points=[Math.max(0,initial)]; let bal=Math.max(0,initial);
     for(let y=1;y<=years;y++){ for(let m=0;m<12;m++){ bal*=1+r; bal+=monthly; } points.push(bal); }
     return points;
   };
@@ -260,7 +260,7 @@
         break;
       }
       case 'regular_savings': {
-        const months=Math.round(v.years*12), r=v.rate/100/12; let bal=v.current; for(let i=0;i<months;i++){bal*=1+r;bal+=v.monthly;}
+        const months=Math.round(v.years*12), r=Math.pow(Math.max(.000001,1+v.rate/100),1/12)-1; let bal=v.current; for(let i=0;i<months;i++){bal*=1+r;bal+=v.monthly;}
         const contrib=v.current+v.monthly*months, growth=bal-contrib;
         items.push('Under this smooth-return model, growth provides about '+pct(bal>0?growth/bal*100:0)+' of the ending balance.');
         break;
@@ -552,7 +552,7 @@
     },
     savings_goal(v){
       if(v.current>=v.target) return {time:'Already reached',contributions:money(0),growth:money(0)};
-      const r=v.rate/100/12; let bal=v.current, months=0, contributed=0;
+      const r=Math.pow(Math.max(.000001,1+v.rate/100),1/12)-1; let bal=v.current, months=0, contributed=0;
       while(bal<v.target && months<1200){
         bal*=1+r; bal+=v.monthly; contributed+=v.monthly; months++;
         if(v.monthly<=0 && r<=0) break;
@@ -698,10 +698,13 @@
       };
     },
     investment_fees(v){
-      const low=projectMonthly(v.initial,v.monthly,v.gross_return-v.fee_low,v.years), high=projectMonthly(v.initial,v.monthly,v.gross_return-v.fee_high,v.years), labels=Array.from({length:v.years+1},(_,i)=>'Year '+i);
+      const gross=v.gross_return/100;
+      const lowNet=((1+gross)*(1-v.fee_low/100)-1)*100, highNet=((1+gross)*(1-v.fee_high/100)-1)*100;
+      const low=projectMonthly(v.initial,v.monthly,lowNet,v.years), high=projectMonthly(v.initial,v.monthly,highNet,v.years), labels=Array.from({length:v.years+1},(_,i)=>'Year '+i);
+      const gap=low[low.length-1]-high[high.length-1];
       return {
-        low_balance:money(low[low.length-1]),high_balance:money(high[high.length-1]),fee_gap:money(low[low.length-1]-high[high.length-1]),
-        __chart:{type:'line',title:'Fee drag over time',caption:'Same before-fee return and contributions; only the annual fee assumption changes.',labels,series:[{label:'Lower fee',values:low},{label:'Higher fee',values:high}]}
+        low_net_return:pct(lowNet),high_net_return:pct(highNet),low_balance:money(low[low.length-1]),high_balance:money(high[high.length-1]),fee_gap:money(gap),
+        __chart:{type:'line',title:'Fee drag over time',caption:'Same before-fee return and contributions; the annual fee is applied multiplicatively to the gross annual growth factor.',labels,series:[{label:'Lower fee',values:low},{label:'Higher fee',values:high}]}
       };
     },
     fire_number(v){
