@@ -211,3 +211,20 @@ def test_debt_repayment_custom_assets_exist():
     assert (root / "compound" / "site" / "templates" / "debt_repayment.html").is_file()
     assert (root / "compound" / "site" / "static" / "debt-repayment.css").is_file()
     assert (root / "compound" / "site" / "static" / "debt-repayment.js").is_file()
+
+
+def test_calculator_responsive_overflow_guardrails():
+    root = Path(__file__).parents[1] / "compound" / "site" / "static"
+    tools_css = (root / "tools.css").read_text()
+    debt_css = (root / "debt-repayment.css").read_text()
+    compound_css = (root / "compound-calculator.css").read_text()
+    bmi_css = (root / "bmi-calculator.css").read_text()
+
+    assert 'container-type:inline-size' in tools_css
+    assert '.tool-page[data-tool-name="net-worth-calculator"] .tool-result-grid' in tools_css
+    assert 'grid-template-columns:1fr!important' in tools_css
+    assert 'overflow-wrap:anywhere' in tools_css
+    assert 'container-type:inline-size' in debt_css
+    assert 'overflow-wrap:anywhere' in debt_css
+    assert '#compound-concept .result{container-type:inline-size}' in compound_css
+    assert '.bmi-workspace>*' in bmi_css
