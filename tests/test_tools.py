@@ -369,9 +369,11 @@ def test_every_calculator_has_substantial_educational_depth():
     assert len(tools) >= 49
     for tool in tools:
         words = str(tool.get("guide") or "").split()
-        assert len(words) >= 500, f"{tool['slug']} guide is too thin: {len(words)} words"
+        assert len(words) >= 650, f"{tool['slug']} guide is too thin: {len(words)} words"
         assert tool.get("sources"), f"{tool['slug']} should expose at least one source"
-        assert "Method" in str(tool.get("guide") or "") or "method" in str(tool.get("guide") or "").lower()
+        guide = str(tool.get("guide") or "")
+        assert "Method" in guide or "method" in guide.lower()
+        assert re.search(r"\]\(/[a-z0-9]+(?:-[a-z0-9]+)*/\)", guide), f"{tool['slug']} needs at least one internal link"
 
     compound = (content_dir / "compound-calculator-guide.md").read_text()
     bmi = (content_dir / "bmi-guide.md").read_text()
