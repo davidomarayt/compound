@@ -519,8 +519,11 @@ def build_site(settings: Settings) -> dict:
         seen_urls.add(article.url)
     image_owners = {}
     for article in articles:
+        is_news = "news" in article.tags or article.url.startswith("/news/")
+        if is_news and not article.image_path:
+            raise ValueError(f"Published News article needs an image: {article.slug}")
         if not article.image_path:
-            continue  # No generic photograph: render text until an editor chooses a cover.
+            continue  # Evergreen articles may render without a generic cover.
         if not article.image_alt:
             raise ValueError(f"Add cover alt text for {article.slug}")
         if article.image in image_owners:
