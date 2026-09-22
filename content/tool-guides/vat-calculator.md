@@ -40,6 +40,18 @@ No.
 ### Can I reclaim the VAT shown?
 Input VAT recovery depends on business circumstances and Revenue rules.
 
+## Why removing VAT is not the reverse of adding it
+
+A common arithmetic error is to add 23% to a net price correctly, then try to remove VAT from the gross price by subtracting 23%.
+
+If €100 net becomes €123 gross, 23% of the gross figure is €28.29—not the €23 VAT originally added. To recover the net price, divide €123 by 1.23.
+
+The same principle works for other VAT rates. That is why this calculator has separate net-to-gross and gross-to-net directions.
+
+For businesses, the VAT shown on an invoice is also not automatically the business's tax cost. VAT-registered traders can, subject to the rules, collect output VAT and recover allowable input VAT. The economic burden and cash-flow timing depend on the business.
+
+Registration thresholds, exempt activities, reverse-charge rules and cross-border supplies can all change the position. This calculator should therefore be used for arithmetic, not for deciding the legal VAT treatment of a transaction.
+
 ## Method and limitations
 
 For net-to-gross, the calculator multiplies the net amount by 1 + VAT rate. For gross-to-net, it divides the gross by 1 + rate and treats the difference as VAT.

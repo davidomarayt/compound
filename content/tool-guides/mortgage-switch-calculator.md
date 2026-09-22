@@ -40,6 +40,16 @@ Possibly, but a break fee may apply.
 ### Should I ask my current lender for another rate first?
 Yes. A product switch with the same lender can be worth comparing with a full lender move.
 
+## Compare like with like before changing the term
+
+The cleanest switching comparison keeps the **remaining mortgage term the same** and changes only the rate and costs. That reveals the value of the rate reduction without hiding anything inside a longer repayment period.
+
+After that, you can deliberately test a longer term if cash-flow relief is one of your goals. The calculator then helps quantify what you are buying: lower monthly payments in exchange for potentially more years of interest.
+
+APRC can also be useful when comparing lender offers because it is designed to reflect the overall annual cost of credit under specified assumptions. It is not a perfect forecast, but it can expose products where a low headline fixed rate sits alongside fees or later pricing.
+
+If the switch is mainly driven by cashback, rerun the model with cashback set to zero. If the new mortgage still looks attractive, the underlying economics are stronger rather than depending on a one-off incentive.
+
 ## Method and limitations
 
 The tool calculates scheduled repayments under both rate/term sets, adds switching costs and break fee, subtracts cashback, and estimates break-even from the monthly saving. It assumes each entered rate remains constant.

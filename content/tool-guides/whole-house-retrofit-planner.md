@@ -40,6 +40,20 @@ No.
 ### Does this replace a home energy assessment?
 No.
 
+## Fabric, ventilation and heating need to work together
+
+A deep retrofit can fail to deliver comfort if measures are chosen in isolation.
+
+Adding insulation and airtightness reduces heat loss, but tighter buildings also need appropriate ventilation to control moisture and indoor air quality. Installing a heat pump in a home with high heat demand can require higher flow temperatures and may reduce efficiency unless the fabric and heat emitters are suitable.
+
+This is why a whole-house assessment is more valuable than simply ranking grants by size.
+
+For older or traditional buildings, moisture behaviour deserves particular attention. Materials and construction details that work well in a modern cavity-wall house may not be appropriate for a solid-wall heritage building.
+
+A strong retrofit plan therefore asks three questions for every measure: **what does it save, what does it enable, and what could it compromise?** The cheapest sequence is not always the best sequence if later work has to undo earlier work.
+
+Use contractor quotes and professional design advice for final decisions; the planner is there to organise the financial scenario.
+
 ## Method and limitations
 
 The planner combines the selected measures, entered costs and implemented grant assumptions into a scenario. Energy savings are indicative and cannot reproduce a detailed DEAP assessment or contractor design.

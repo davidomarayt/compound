@@ -40,6 +40,18 @@ Eligibility depends on Revenue conditions.
 ### Does this include the self-employed surcharge?
 Not unless explicitly implemented in the tool.
 
+## The €13,000 exemption threshold is often misunderstood
+
+For 2026, Revenue's general USC exemption threshold is €13,000. If relevant income is at or below that level, standard USC is not due.
+
+Once income goes above the threshold, however, USC is generally calculated on the full relevant income using the bands. It is not calculated only on the amount above €13,000.
+
+Reduced rates are another important exception. Revenue currently provides reduced rates for qualifying people aged 70 or over and for some full Medical Card holders where income is €60,000 or less.
+
+There are also special rules for certain self-employed income and exempt income categories. That means the simple standard schedule is excellent for a typical employee scenario but should not be treated as a complete USC assessment for every taxpayer.
+
+When reviewing a payslip, keep USC separate from Income Tax and PRSI so you can see which part of a change comes from each system.
+
 ## Method and limitations
 
 The calculator applies the standard 2026 USC bands implemented in the site. It does not model every exemption, reduced-rate case or special income category.

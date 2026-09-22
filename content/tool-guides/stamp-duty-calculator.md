@@ -40,6 +40,16 @@ No.
 ### Does it cover gifts or transfers between relatives?
 No. Those can involve different valuation and tax rules.
 
+## Who pays and when?
+
+In a normal home purchase, the buyer's solicitor usually handles the Stamp Duty return and payment as part of the conveyancing process. From the buyer's perspective, that makes Stamp Duty a **completion cash requirement** rather than an ongoing annual cost.
+
+The practical planning consequence is simple: keep the duty amount separate from the deposit. A buyer with exactly enough cash for a 10% deposit but nothing left for Stamp Duty, legal fees and other outlays is not actually fully funded for completion.
+
+For high-value properties, progressive bands matter. The jump to the 2% or 6% marginal band does not mean the entire property suddenly becomes taxed at that higher rate.
+
+If the transaction involves a gift, exchange, mixed residential/commercial use, multiple properties or a corporate purchaser, the legal instrument and special rules can become more important than the basic price. That is the point where the solicitor or tax adviser, not a general calculator, should determine the final liability.
+
 ## Method and limitations
 
 The calculator applies 1% to the first €1 million, 2% to the next €500,000 and 6% to the balance above €1.5 million. It does not model reliefs, exemptions, bulk-acquisition surcharges or mixed-use apportionment.

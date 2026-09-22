@@ -40,6 +40,18 @@ Class A thresholds and credits operate on a pay-period basis.
 ### Does this decide my PRSI class?
 No.
 
+## PRSI is linked to social-insurance entitlement
+
+PRSI is not only a payroll deduction. Contributions help determine access to parts of Ireland's social-insurance system, including benefits and State Pension entitlement subject to the relevant contribution conditions.
+
+That is one reason PRSI class matters. Class A is common for employees, while self-employed workers and other groups can fall into different classes with different contribution rules and benefit coverage.
+
+The calculator estimates the employee deduction; it does not tell you what benefits you will qualify for or how many credited/paid contributions you have on your record.
+
+If retirement planning is the reason you are looking at PRSI, check your social-insurance contribution history separately. A small difference in payroll deduction today is not the same question as whether you will satisfy future State Pension conditions.
+
+For employment-cost comparisons, remember that employers can also pay employer PRSI on top of the employee's gross salary. That is a business cost, not money deducted from the employee's net pay.
+
 ## Method and limitations
 
 The tool converts annual salary to weekly earnings and applies the implemented 2026 Class A employee rates/credit structure across the relevant parts of the year. It does not cover every PRSI class or payroll edge case.

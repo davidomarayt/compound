@@ -40,6 +40,18 @@ Revenue currently states the credit applies for tax years 2022–2028.
 ### Does the calculator prove eligibility?
 No.
 
+## Eligibility matters as much as the headline maximum
+
+The annual maximum is only the top of the calculation. To benefit, the claimant must satisfy the qualifying conditions and have enough Income Tax liability to offset.
+
+That is why two renters paying the same monthly rent can receive different effective benefits. One may have enough Income Tax liability to use the full available credit while another may not.
+
+Revenue distinguishes between qualifying rent paid for a principal private residence, certain second-home situations linked to work or education, and rent paid for accommodation used by a child in specified circumstances. Relationship and tenancy conditions can also matter.
+
+Keep evidence of rent paid and the landlord/property information Revenue requires. If the tenancy changes during the year, calculate from the actual qualifying rent rather than simply multiplying the final month's rent by 12.
+
+The credit is valuable, but it should not be treated as a permanent reduction in rent: it is a tax measure with statutory dates and rules that can change.
+
 ## Method and limitations
 
 The calculator applies the implemented annual credit limit to the qualifying rent/tax assumptions entered. It does not validate tenancy registration, landlord relationships, duplicate claims or every eligibility condition.

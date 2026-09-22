@@ -40,6 +40,18 @@ No. You supply the value.
 ### Does it determine exemptions?
 No. Check Revenue for liability and exemption rules.
 
+## Valuation bands and the Local Adjustment Factor
+
+LPT can feel unusual because the tax is not calculated as one simple percentage of your exact home value across the ordinary bands. Instead, the value places the property into a band, and that band has a basic charge.
+
+That creates **step changes**. Two properties close in value but on opposite sides of a band boundary can have different basic LPT amounts.
+
+The Local Adjustment Factor then modifies the charge for the relevant local authority. This is why using an old calculator or copying a neighbour's bill can be misleading even when the homes are similar.
+
+For budgeting, LPT is best treated as one annual ownership cost rather than as a measure of whether a home is affordable. Mortgage repayment, insurance, maintenance, energy and management charges can be much larger.
+
+If you are unsure about the correct valuation or whether an exemption/deferral applies, the legal answer comes from Revenue guidance rather than the calculator.
+
 ## Method and limitations
 
 The tool maps the entered property value to the implemented LPT band or high-value formula, then applies the local-authority adjustment. It does not determine legal liability, exemptions, deferrals or the correct valuation evidence.

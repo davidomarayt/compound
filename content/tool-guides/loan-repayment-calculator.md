@@ -40,6 +40,16 @@ Only if the tool has an explicit fee input; otherwise no.
 ### Can I model 0% finance?
 Yes, if the product genuinely has no interest or hidden charges relevant to the calculation.
 
+## APR, term and early repayment
+
+APR is useful because it is designed to help compare the annual cost of credit, but the **total amount repayable** is still essential. A loan with a lower APR can cost more in euro terms if it is stretched over a much longer period.
+
+Before borrowing, compare quotes using the same amount and term. If one lender includes fees in the APR and another advertises a headline interest rate separately from fees, comparing only those headline numbers can be misleading.
+
+If you expect to repay early, check the agreement for early-settlement rules. Paying a loan off sooner usually reduces future interest, but the exact saving and any charge depend on the contract.
+
+Finally, distinguish between affordability and cost. A five-year term may make a payment easy to fit into the monthly budget, but a three-year term can reduce total interest. The best term is one that is both affordable and does not keep the debt alive unnecessarily long.
+
 ## Method and limitations
 
 The calculator uses the standard amortising-loan payment formula with a constant monthly rate over the selected term. It does not model changing rates, late fees or lender-specific early-repayment rules.
