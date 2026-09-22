@@ -2,6 +2,16 @@
 
 Universal Social Charge is a separate tax on income. This calculator applies the standard 2026 USC bands to the income entered and shows the estimated annual charge.
 
+## Why the effective USC rate is lower than the top band
+
+USC is progressive. Reaching a higher rate does not mean that rate is applied to all of the income entered. Each slice of income is charged under the relevant band, which is why the calculator shows both the total USC and an **effective rate** across the whole income figure.
+
+This distinction is useful when comparing salaries. The change in USC on an extra €1,000 of income can be materially different from the existing average USC percentage shown on the full salary.
+
+The reduced-rate option is deliberately kept in Advanced mode because eligibility depends on Revenue conditions, not simply on choosing a lower rate. The calculator also prevents the reduced calculation from continuing above the €60,000 income ceiling used in the 2026 model.
+
+For the complete payroll picture, use the [Take-Home Pay Calculator](/take-home-pay-calculator/), which combines PAYE, USC and Class A PRSI under the calculator's stated assumptions. Use the [Income Tax Calculator](/income-tax-calculator/) when you want to isolate PAYE and tax credits from the other payroll deductions.
+
 ## How to read the result
 
 USC is progressive: each rate applies only to the slice of income within its band. If income exceeds the exemption threshold, standard USC is generally calculated on the full income rather than only the amount above €13,000.
