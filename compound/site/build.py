@@ -24,6 +24,27 @@ from compound.config import Settings
 
 PILLARS = ["health", "wealth", "happiness"]
 PILLAR_LABELS = {"wealth": "Wealth", "health": "Health", "happiness": "Happiness"}
+
+TOOL_SPONSORSHIP_CATEGORY_ORDER = [
+    "Mortgages & Home Buying",
+    "Pensions & Investing",
+    "Home Energy",
+    "Tax & Take-Home Pay",
+    "Loans & Debt",
+    "EV & Motoring",
+    "Health",
+    "Family & Life Planning",
+]
+TOOL_SPONSORSHIP_CATEGORY_BLURBS = {
+    "Mortgages & Home Buying": "Mortgage, affordability, deposits, switching and home-buying costs.",
+    "Pensions & Investing": "Long-term saving, pensions, retirement planning, net worth and investing.",
+    "Home Energy": "Solar, electricity, BER, retrofit and home-energy planning.",
+    "Tax & Take-Home Pay": "Irish income tax, take-home pay, USC, PRSI and other common taxes.",
+    "Loans & Debt": "Repayment planning, debt payoff strategies and borrowing costs.",
+    "EV & Motoring": "Driving costs, EV charging and car-finance comparisons.",
+    "Health": "Evidence-based calculators for everyday health decisions.",
+    "Family & Life Planning": "Childcare, pregnancy and longer-term household planning.",
+}
 PILLAR_BLURBS = {
     "wealth": "Irish tax credits, grants, pensions and money, explained for the person paying.",
     "health": "What the evidence actually says, without the hype.",
@@ -343,7 +364,7 @@ def tool_catalogue(content_dir: Path, tools: list[dict]) -> dict[str, dict]:
             "slug": "compound-interest-calculator",
             "title": "Compound Interest Calculator Ireland",
             "url": "/compound-interest-calculator/",
-            "category": "Saving & Investing",
+            "category": "Pensions & Investing",
             "summary": "Model contributions, growth, inflation, fees and long-term savings scenarios.",
         }
     if (content_dir / "bmi-guide.md").is_file():
@@ -619,11 +640,36 @@ def build_site(settings: Settings) -> dict:
         _write(out / pg.slug / "index.html", env.get_template("page.html").render(page=pg, title=pg.title))
 
     if tools:
+        hub_tools = list(tools)
+        if (settings.content_dir / "compound-calculator-guide.md").is_file():
+            hub_tools.append({
+                "slug": "compound-interest-calculator",
+                "title": "Compound Interest Calculator Ireland",
+                "url": "/compound-interest-calculator/",
+                "category": "Pensions & Investing",
+                "summary": "Model contributions, growth, inflation, fees and long-term savings scenarios.",
+            })
+        if (settings.content_dir / "bmi-guide.md").is_file():
+            hub_tools.append({
+                "slug": "bmi-calculator",
+                "title": "BMI Calculator Ireland",
+                "url": "/bmi-calculator/",
+                "category": "Health",
+                "summary": "Calculate adult BMI, explore waist-to-height ratio and put the result in context.",
+            })
+
         grouped_tools = {}
-        for tool in tools:
-            grouped_tools.setdefault(str(tool.get("category") or "Other"), []).append(tool)
+        for category in TOOL_SPONSORSHIP_CATEGORY_ORDER:
+            grouped_tools[category] = [tool for tool in hub_tools if tool.get("category") == category]
+        for tool in hub_tools:
+            category = str(tool.get("category") or "Other")
+            if category not in grouped_tools:
+                grouped_tools.setdefault(category, []).append(tool)
+
         _write(out / "tools" / "index.html", env.get_template("tools.html").render(
-            title="Free Calculators & Tools for Ireland", grouped_tools=grouped_tools, tools=tools, pillar="wealth", tools_page=True))
+            title="Free Calculators & Tools for Ireland", grouped_tools=grouped_tools, tools=hub_tools,
+            category_blurbs=TOOL_SPONSORSHIP_CATEGORY_BLURBS,
+            pillar="wealth", tools_page=True))
         for tool in tools:
             related_tools = [t for t in tools if t["slug"] != tool["slug"] and t.get("category") == tool.get("category")][:3]
             if len(related_tools) < 3:
