@@ -359,4 +359,79 @@ assert.equal(retrofitAdvanced.oss_service_grants, '€1,950.00');
 assert.equal(retrofitAdvanced.grants, '€14,450.00');
 assert.equal(retrofitAdvanced.net_cost, '€2,550.00');
 
+
+// Family & Life Planning + Health flagship regression coverage.
+const childcareBasic = calculators.childcare_return({
+  salary: 45000, pension_pct: 8, work_hours: 35, children: 1, childcare_hours: 40,
+  childcare_fee: 8, ncs_rate: 2.14, childcare_weeks: 48, commute_weekly: 80,
+  work_cost_weekly: 30, other_annual: 500, standard_rate_band: 50000,
+  extra_tax_credits: 500, reduced_usc: 'no', __advanced: false
+});
+assert.equal(childcareBasic.work_costs, '€0.00');
+assert.match(childcareBasic.monthly_gain, /^[+-]€/);
+assert.match(childcareBasic.breakeven_salary, /^€/);
+
+const childcareAdvanced = calculators.childcare_return({
+  salary: 45000, pension_pct: 5, work_hours: 35, children: 1, childcare_hours: 40,
+  childcare_fee: 8, ncs_rate: 2.14, childcare_weeks: 48, commute_weekly: 80,
+  work_cost_weekly: 30, other_annual: 500, standard_rate_band: 44000,
+  extra_tax_credits: 0, reduced_usc: 'no', __advanced: true
+});
+assert.notEqual(childcareAdvanced.work_costs, '€0.00');
+assert.match(childcareAdvanced.retained_pct, /%$/);
+
+const lifetimeBasic = calculators.lifetime_cost({
+  current_age: 30, end_age: 40, inflation: 2.5, housing_monthly: 1500, housing_until: 32,
+  food_monthly: 600, utilities_monthly: 300, transport_monthly: 400, leisure_monthly: 300,
+  travel_annual: 3000, insurance_health_annual: 2500, childcare_annual: 10000, childcare_years: 5,
+  major_purchase: 30000, major_interval: 5, other_monthly: 500, __advanced: false
+});
+const lifetimeAdvanced = calculators.lifetime_cost({
+  current_age: 30, end_age: 40, inflation: 2.5, housing_monthly: 1500, housing_until: 32,
+  food_monthly: 600, utilities_monthly: 300, transport_monthly: 400, leisure_monthly: 300,
+  travel_annual: 3000, insurance_health_annual: 2500, childcare_annual: 10000, childcare_years: 5,
+  major_purchase: 30000, major_interval: 5, other_monthly: 500, __advanced: true
+});
+assert.equal(lifetimeBasic.major_total, '€0.00');
+assert.notEqual(lifetimeAdvanced.major_total, '€0.00');
+assert.match(lifetimeAdvanced.inflation_uplift, /^€/);
+
+const pregnancyCycle = calculators.pregnancy_timeline({
+  lmp: '2026-01-01', assigned_due_date: '', cycle_length: 35, __advanced: true
+});
+assert.match(pregnancyCycle.due_date, /adjusted \+7 days for cycle length/);
+assert.match(pregnancyCycle.pregnancy_progress, /%$/);
+assert.ok(pregnancyCycle.__chart.series[0].values.length === 2);
+
+const nutritionBasic = calculators.nutrition_needs({
+  sex: 'male', age: 35, weight: 75, height: 175, activity: '1.6',
+  energy_scenario: 'lower10', protein_context: 'resistance', __advanced: false
+});
+assert.equal(nutritionBasic.protein_per_kg, '0.83 g/kg/day');
+assert.equal(nutritionBasic.energy_delta, '+0 kcal/day');
+
+const nutritionAdvanced = calculators.nutrition_needs({
+  sex: 'male', age: 35, weight: 75, height: 175, activity: '1.6',
+  energy_scenario: 'lower10', protein_context: 'resistance', __advanced: true
+});
+assert.equal(nutritionAdvanced.protein_per_kg, '1.6 g/kg/day');
+assert.match(nutritionAdvanced.energy_delta, /^-/);
+
+const alcoholBasic = calculators.alcohol_ireland({
+  guideline_group: 'woman', beer_pints: 2, beer_abv: 12, wine_glasses: 0, wine_ml: 300,
+  wine_abv: 20, spirits: 0, spirit_ml: 100, spirit_abv: 80, cans: 0, can_ml: 1000,
+  can_abv: 12, weekly_spend: 100, reduction_pct: 50, __advanced: false
+});
+assert.equal(alcoholBasic.annual_spend, '€0.00');
+assert.equal(alcoholBasic.reduced_drinks, alcoholBasic.standard_drinks);
+assert.match(alcoholBasic.guideline, /HSE weekly low-risk limit/);
+
+const alcoholAdvanced = calculators.alcohol_ireland({
+  guideline_group: 'woman', beer_pints: 2, beer_abv: 12, wine_glasses: 0, wine_ml: 300,
+  wine_abv: 20, spirits: 0, spirit_ml: 100, spirit_abv: 80, cans: 0, can_ml: 1000,
+  can_abv: 12, weekly_spend: 100, reduction_pct: 50, __advanced: true
+});
+assert.equal(alcoholAdvanced.annual_spend, '€5,200.00');
+assert.notEqual(alcoholAdvanced.reduced_drinks, alcoholAdvanced.standard_drinks);
+
 console.log('Calculator arithmetic regression checks passed.');
