@@ -54,9 +54,28 @@ A strong retrofit plan therefore asks three questions for every measure: **what 
 
 Use contractor quotes and professional design advice for final decisions; the planner is there to organise the financial scenario.
 
+## Advanced mode: model the full current heat-pump support only when it applies
+
+The standard heat-pump grant is not necessarily the entire support available in a qualifying 2026 project. SEAI's current schedule can also include support for required central-heating-system upgrades and a **€4,000 renewable-heating bonus** in qualifying replacement cases.
+
+Compound does not assume those conditional supports apply. Advanced mode exposes them as separate opt-in switches:
+
+- up to €2,000 for qualifying central-heating-system upgrades in a house, or €1,000 for an apartment;
+- the €4,000 renewable-heating bonus where SEAI's qualifying replacement conditions are met.
+
+The model caps these supports against the entered heat-pump-system cost so grants cannot make the modelled measure cost negative.
+
+Advanced mode can also include the published One Stop Shop assessment grant and the home-type project-management grant, capped against the “other retrofit / professional costs” amount entered. These are financial scenario inputs, not an eligibility decision.
+
+## Why grant eligibility must stay separate from the arithmetic
+
+A grant table can tell you the maximum published support; it cannot prove that your property, measure, contractor, technical design or timing meets all scheme conditions. One Stop Shop projects have route-specific eligibility and post-works requirements, and heat-pump supports depend on the qualifying project.
+
+Use the toggles only where you have a reasonable basis to expect the support, then confirm the final package with the registered provider/SEAI before relying on it in a budget.
+
 ## Method and limitations
 
-The planner combines the selected measures, entered costs and implemented grant assumptions into a scenario. Energy savings are indicative and cannot reproduce a detailed DEAP assessment or contractor design.
+The planner combines the selected measures, entered costs and selected grant assumptions into a scenario. Base grants follow the implemented published schedule; conditional heat-pump and One Stop Shop service grants are included only when selected in Advanced mode. Grant amounts are capped by the entered cost pools. Energy savings are indicative and cannot reproduce a detailed DEAP assessment, grant approval or contractor design.
 
 ### Useful sources
 
