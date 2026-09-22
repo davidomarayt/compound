@@ -29,3 +29,65 @@
 .tool-mode-button:focus-visible{outline:3px solid color-mix(in srgb,var(--wealth) 28%,transparent);outline-offset:2px}
 .tool-mode-note{margin:.7rem 0 0;color:var(--ink-3);font-size:.82rem;line-height:1.5;max-width:620px}
 .tool-field[data-advanced-field]{border-left:2px solid color-mix(in srgb,var(--wealth) 45%,var(--line))}
+
+
+/* Calculator field groups */
+.tool-field-section{
+  grid-column:1/-1;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin:10px 0 -2px;
+  color:var(--ink);
+  font:700 .72rem/1.2 var(--sans);
+  letter-spacing:.11em;
+  text-transform:uppercase;
+}
+.tool-field-section:after{
+  content:'';
+  height:1px;
+  flex:1;
+  background:var(--line);
+}
+.tool-fields>.tool-field-section:first-child{margin-top:0}
+
+/* Negative values in comparison charts, e.g. liabilities. */
+.tool-chart-negative{
+  fill:#a45f42!important;
+  stroke:#a45f42!important;
+}
+
+/* Net worth flagship treatment */
+.tool-page[data-tool-name="net-worth-calculator"] .tool-workspace{
+  box-shadow:0 18px 55px rgba(51,37,46,.045);
+}
+.tool-page[data-tool-name="net-worth-calculator"] .tool-results{
+  background:#e7eee9;
+}
+.tool-page[data-tool-name="net-worth-calculator"] .tool-result-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.tool-page[data-tool-name="net-worth-calculator"] .tool-result:first-child{
+  grid-column:1/-1;
+  padding:26px 22px;
+  background:#365e4f;
+  color:#fffdf9;
+}
+.tool-page[data-tool-name="net-worth-calculator"] .tool-result:first-child span{
+  color:#e0ebe4;
+}
+.tool-page[data-tool-name="net-worth-calculator"] .tool-result:first-child strong{
+  color:#fffdf9;
+  font-size:clamp(2.3rem,5vw,3.7rem);
+}
+.tool-page[data-tool-name="net-worth-calculator"] .tool-chart-panel{
+  border-top:3px solid #365e4f;
+}
+@media(max-width:620px){
+  .tool-page[data-tool-name="net-worth-calculator"] .tool-result-grid{
+    grid-template-columns:1fr;
+  }
+  .tool-page[data-tool-name="net-worth-calculator"] .tool-result:first-child{
+    grid-column:auto;
+  }
+}
