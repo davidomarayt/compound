@@ -32,7 +32,7 @@
       {% endif %}
       <div class="tool-fields">
       {% for field in tool.fields %}
-        {% if field.section_start %}<div class="tool-field-section"><span>{{ field.section_start }}</span></div>{% endif %}
+        {% if field.section_start %}<div class="tool-field-section" data-section-for="{{ field.id }}"{% if field.show_if or field.advanced %} hidden{% endif %}><span>{{ field.section_start }}</span></div>{% endif %}
         <div class="tool-field{% if field.type == 'checkbox' %} tool-field-checkbox{% endif %}"{% if field.show_if %} data-show-if="{{ field.show_if }}"{% endif %}{% if field.advanced %} data-advanced-field hidden{% endif %}>
           {% if field.type == "checkbox" %}
           <label class="tool-check" for="tool-{{ field.id }}"><input id="tool-{{ field.id }}" name="{{ field.id }}" data-field="{{ field.id }}" type="checkbox" {% if field.default %}checked{% endif %}><span>{{ field.label }}</span></label>
