@@ -468,20 +468,35 @@
         items.push('The modelled annual return after the entered fee is about '+pct(netAnnual*100)+'.');
         items.push('At '+pct(v.inflation_rate)+' inflation, the today’s-money result can be materially lower than the future nominal pot.');
         break;
-      case 'rent_vs_buy':
+      case 'rent_vs_buy': {
         items.push('The model assumes house-price growth of '+pct(v.house_growth)+' and renter investment returns of '+pct(v.renter_return)+'. Small changes to either can move a long-term result materially.');
-        items.push('A robust decision should survive more than one plausible assumption set.');
+        if(v.__advanced) items.push('Treat the renter return as a net return after the fees and tax treatment that would apply to your actual investment rather than a headline market return.');
+        if(v.years>v.mortgage_years) items.push('The comparison continues beyond the entered mortgage term, so the buyer stops making mortgage payments after the modelled balance reaches zero.');
+        else items.push('A robust decision should survive more than one plausible assumption set.');
         break;
+      }
       case 'mortgage_affordability': {
-        const lti=v.income*(v.buyer_type==='ftb'?4:3.5), capacity=Math.max(0,v.income/12*v.max_payment_pct/100-v.other_debt), r=v.rate/100/12,n=v.term*12,paymentBased=r===0?capacity*n:capacity*(1-Math.pow(1+r,-n))/r,depositBased=Math.max(0,v.deposit)*9;
-        const constraints=[['The LTI ceiling',lti],['Your chosen payment limit',paymentBased],['Your deposit at 90% LTV',depositBased]].sort((a,b)=>a[1]-b[1]);
+        const multiple=v.buyer_type==='ftb'?4:3.5, income=Math.max(0,v.income), debt=Math.max(0,v.other_debt);
+        const lti=income*multiple, grossLimit=Math.max(0,income/12*v.max_payment_pct/100-debt);
+        const useNet=Boolean(v.__advanced)&&Math.max(0,v.net_income_monthly)>0;
+        const netLimit=useNet?Math.max(0,v.net_income_monthly-Math.max(0,v.essential_spend_monthly)-debt-Math.max(0,v.buffer_monthly)):Infinity;
+        const capacity=Math.min(grossLimit,netLimit), r=v.rate/100/12,n=v.term*12;
+        const paymentBased=r===0?capacity*n:capacity*(1-Math.pow(1+r,-n))/r,depositBased=Math.max(0,v.deposit)*9;
+        const constraints=[['The LTI ceiling',lti],['Your payment budget',paymentBased],['Your deposit at 90% LTV',depositBased]].sort((a,b)=>a[1]-b[1]);
         items.push(constraints[0][0]+' is the tightest mortgage constraint in this scenario.');
-        items.push('The '+pct(v.max_payment_pct)+' payment share is your modelling choice, not an official affordability rule.');
+        if(useNet) items.push('The optional net-income budget lowers the monthly mortgage capacity to '+money(capacity)+' after the spending, debt and buffer entered.');
+        else items.push('The '+pct(v.max_payment_pct)+' gross-income payment share is your modelling choice, not an official affordability rule.');
         break;
       }
       case 'house_buying_costs': {
-        const deposit=v.price*v.deposit_pct/100, total=deposit+stampDutyResidential(v.price)+v.legal+v.survey+v.valuation+v.moving+v.other;
+        const advanced=Boolean(v.__advanced), deposit=v.price*v.deposit_pct/100, professional=v.legal+v.survey+v.valuation;
+        const setup=v.moving+v.other+(advanced?v.insurance_setup+v.furnishing+v.immediate_works:0);
+        const total=deposit+stampDutyResidential(v.price)+professional+setup;
         if(v.price>0) items.push('The upfront cash budget is about '+pct(total/v.price*100)+' of the purchase price under the costs entered.');
+        if(advanced){
+          const target=total+Math.max(0,v.reserve), position=Math.max(0,v.cash_available)-target;
+          items.push(position>=0?'Your cash input leaves about '+money(position)+' above the entered purchase-plus-reserve target.':'Your cash input is about '+money(Math.abs(position))+' short of the entered purchase-plus-reserve target.');
+        }
         break;
       }
       case 'solar_payback':
@@ -900,43 +915,98 @@
       };
     },
     rent_vs_buy(v){
-      const mortgage=Math.max(0,v.house_price-v.deposit), n=v.mortgage_years*12, payment=monthlyPayment(mortgage,v.mortgage_rate,n), mr=v.mortgage_rate/100/12;
-      const hr=Math.pow(1+v.house_growth/100,1/12)-1, rr=Math.pow(1+v.annual_rent_growth/100,1/12)-1, ir=Math.pow(1+v.renter_return/100,1/12)-1;
-      const stamp=stampDutyResidential(v.house_price), upfrontCosts=stamp+Math.max(0,v.buying_costs), sellPct=Math.max(0,v.selling_cost_pct)/100;
-      let house=v.house_price, balance=mortgage, rent=v.monthly_rent, renter=v.deposit+upfrontCosts, ownerInvest=0;
-      const ownerNet=()=>Math.max(0,house*(1-sellPct))-balance+ownerInvest;
+      const price=Math.max(0,v.house_price), deposit=Math.min(price,Math.max(0,v.deposit)), mortgage=Math.max(0,price-deposit);
+      const n=Math.max(1,Math.round(v.mortgage_years*12)), payment=monthlyPayment(mortgage,v.mortgage_rate,n), mr=v.mortgage_rate/100/12;
+      const hr=Math.pow(Math.max(.000001,1+v.house_growth/100),1/12)-1;
+      const rr=Math.pow(Math.max(.000001,1+v.annual_rent_growth/100),1/12)-1;
+      const ir=Math.pow(Math.max(.000001,1+v.renter_return/100),1/12)-1;
+      const stamp=stampDutyResidential(price), upfrontCosts=stamp+Math.max(0,v.buying_costs), sellPct=Math.max(0,v.selling_cost_pct)/100;
+      let house=price, balance=mortgage, rent=Math.max(0,v.monthly_rent), renter=deposit+upfrontCosts, ownerInvest=0, firstCrossover=null;
+      const saleEquity=()=>Math.max(0,house*(1-sellPct))-balance;
+      const ownerNet=()=>saleEquity()+ownerInvest;
       const labels=['Now'], ownerVals=[ownerNet()], renterVals=[renter];
-      for(let month=1;month<=v.years*12;month++){
+      const totalMonths=Math.max(1,Math.round(v.years*12));
+      for(let month=1;month<=totalMonths;month++){
         house*=1+hr; rent*=1+rr; renter*=1+ir; ownerInvest*=1+ir;
-        const interest=balance*mr, principal=Math.max(0,Math.min(balance,payment-interest)); balance=Math.max(0,balance-principal);
-        const maintenance=house*(v.maintenance_pct/100)/12;
-        const ownerCost=(balance>0?payment:0)+maintenance+Math.max(0,v.owner_fixed_annual)/12;
-        if(ownerCost>rent) renter+=ownerCost-rent; else ownerInvest+=rent-ownerCost;
-        if(month%12===0){labels.push('Year '+(month/12));ownerVals.push(ownerNet());renterVals.push(renter);}
+        let mortgageOutflow=0;
+        if(balance>0.005){
+          const interest=balance*mr, due=balance+interest;
+          mortgageOutflow=Math.min(payment,due);
+          balance=Math.max(0,due-mortgageOutflow);
+        }
+        const maintenance=house*(Math.max(0,v.maintenance_pct)/100)/12;
+        const ownerCost=mortgageOutflow+maintenance+Math.max(0,v.owner_fixed_annual)/12;
+        if(ownerCost>rent) renter+=ownerCost-rent;
+        else ownerInvest+=rent-ownerCost;
+        if(month%12===0 || month===totalMonths){
+          const label=month%12===0?'Year '+(month/12):'Month '+month;
+          const ownerNow=ownerNet();
+          labels.push(label); ownerVals.push(ownerNow); renterVals.push(renter);
+          if(firstCrossover===null && ownerNow>=renter) firstCrossover=month;
+        }
       }
       const owner=ownerVals[ownerVals.length-1], renterEnd=renterVals[renterVals.length-1], diff=owner-renterEnd;
       return {
-        mortgage_payment:money(payment),upfront_buying_costs:money(upfrontCosts),owner_equity:money(owner),renter_portfolio:money(renterEnd),difference:(diff>=0?'+':'')+money(diff),
-        __chart:{type:'line',title:'Illustrative net-wealth paths',caption:'The renter starts with the deposit plus buyer transaction costs invested. The buyer path deducts modelled selling costs and includes fixed ownership costs.',labels,series:[{label:'Buy scenario',values:ownerVals},{label:'Rent scenario',values:renterVals}]}
+        mortgage_payment:money(payment),
+        upfront_buying_costs:money(upfrontCosts),
+        owner_equity:money(owner),
+        renter_portfolio:money(renterEnd),
+        difference:(diff>=0?'+':'')+money(diff),
+        first_crossover:firstCrossover===null?'Not reached in '+number.format(v.years)+' years':duration(firstCrossover),
+        ending_home_value:money(house),
+        remaining_mortgage:money(balance),
+        buyer_sale_equity:money(saleEquity()),
+        ending_monthly_rent:money(rent),
+        __chart:{type:'line',title:'Illustrative liquidated net-wealth paths',caption:'The renter starts with the buyer deposit plus Stamp Duty and other buying costs invested. Buyer value assumes the home is sold at the comparison point and the entered selling-cost percentage is deducted. The mortgage rate, growth rates and investment return are held constant.',labels,series:[{label:'Buy scenario',values:ownerVals},{label:'Rent scenario',values:renterVals}]}
       };
     },
     mortgage_affordability(v){
-      const lti=v.income*(v.buyer_type==='ftb'?4:3.5);
-      const capacity=Math.max(0,v.income/12*v.max_payment_pct/100-v.other_debt), r=v.rate/100/12, n=v.term*12;
+      const multiple=v.buyer_type==='ftb'?4:3.5, income=Math.max(0,v.income), deposit=Math.max(0,v.deposit), debt=Math.max(0,v.other_debt);
+      const lti=income*multiple;
+      const grossLimit=Math.max(0,income/12*Math.max(0,v.max_payment_pct)/100-debt);
+      const useNet=Boolean(v.__advanced)&&Math.max(0,v.net_income_monthly)>0;
+      const netLimit=useNet?Math.max(0,v.net_income_monthly-Math.max(0,v.essential_spend_monthly)-debt-Math.max(0,v.buffer_monthly)):Infinity;
+      const capacity=Math.min(grossLimit,netLimit);
+      const r=Math.max(0,v.rate)/100/12, n=Math.max(1,Math.round(v.term*12));
       const paymentBased=r===0?capacity*n:capacity*(1-Math.pow(1+r,-n))/r;
-      const depositBased=Math.max(0,v.deposit)*9;
-      const mortgage=Math.max(0,Math.min(lti,paymentBased,depositBased));
-      const price=mortgage+Math.max(0,v.deposit);
+      const depositBased=deposit*9;
+      const options=[['Income (LTI)',lti],['Payment budget',paymentBased],['Deposit (LTV)',depositBased]].sort((a,b)=>a[1]-b[1]);
+      const mortgage=Math.max(0,options[0][1]), price=mortgage+deposit, stressRate=Math.max(0,v.rate)+(v.__advanced?Math.max(0,v.stress_rate_add):1);
+      const stressPayment=monthlyPayment(mortgage,stressRate,n);
       return {
-        lti_mortgage:money(lti),payment_capacity:money(capacity),payment_based_mortgage:money(paymentBased),deposit_based_mortgage:money(depositBased),indicative_mortgage:money(mortgage),indicative_price:money(price),
-        __chart:{type:'bar',title:'Which limit is binding?',caption:'The lowest mortgage amount across income, your chosen cash-flow limit and the standard 90% LTV deposit constraint drives this illustration.',labels:['LTI ceiling','Payment-based','Deposit-based','Indicative'],series:[{label:'Mortgage amount',values:[lti,paymentBased,depositBased,mortgage]}]}
+        lti_mortgage:money(lti),
+        payment_capacity:money(capacity),
+        payment_based_mortgage:money(paymentBased),
+        deposit_based_mortgage:money(depositBased),
+        indicative_mortgage:money(mortgage),
+        indicative_price:money(price),
+        binding_constraint:options[0][0],
+        gross_payment_limit:money(grossLimit),
+        net_budget_limit:useNet?money(netLimit):'Not used',
+        stress_rate:pct(stressRate),
+        stress_payment:money(stressPayment),
+        __chart:{type:'bar',title:'Which mortgage constraint is binding?',caption:'Compares the standard LTI ceiling, your payment-budget mortgage and the 90% LTV deposit constraint. The payment budget can optionally use the lower of your gross-income percentage and entered net-income household budget.',labels:['LTI ceiling','Payment budget','Deposit/LTV','Indicative'],series:[{label:'Mortgage amount',values:[lti,paymentBased,depositBased,mortgage]}]}
       };
     },
     house_buying_costs(v){
-      const deposit=v.price*v.deposit_pct/100, stamp=stampDutyResidential(v.price), other=v.legal+v.survey+v.valuation+v.moving+v.other, total=deposit+stamp+other;
+      const advanced=Boolean(v.__advanced), price=Math.max(0,v.price), deposit=price*Math.max(0,v.deposit_pct)/100, stamp=stampDutyResidential(price);
+      const professional=Math.max(0,v.legal)+Math.max(0,v.survey)+Math.max(0,v.valuation);
+      const setup=Math.max(0,v.moving)+Math.max(0,v.other)+(advanced?Math.max(0,v.insurance_setup)+Math.max(0,v.furnishing)+Math.max(0,v.immediate_works):0);
+      const other=professional+setup, total=deposit+stamp+other, mortgage=Math.max(0,price-deposit);
+      const reserve=advanced?Math.max(0,v.reserve):0, target=total+reserve, cash=advanced?Math.max(0,v.cash_available):0, position=cash-target;
+      const labels=advanced?['Deposit','Stamp duty','Professional','Moving/setup','Retained reserve']:['Deposit','Stamp duty','Legal','Survey','Valuation','Moving','Other'];
+      const values=advanced?[deposit,stamp,professional,setup,reserve]:[deposit,stamp,v.legal,v.survey,v.valuation,v.moving,v.other];
       return {
-        deposit:money(deposit),stamp:money(stamp),other_costs:money(other),total_upfront:money(total),
-        __chart:{type:'bar',title:'Upfront cash budget',caption:'Deposit plus stamp duty and the other costs entered above.',labels:['Deposit','Stamp duty','Legal','Survey','Valuation','Moving','Other'],series:[{label:'Estimated cost',values:[deposit,stamp,v.legal,v.survey,v.valuation,v.moving,v.other]}]}
+        deposit:money(deposit),
+        stamp:money(stamp),
+        other_costs:money(other),
+        total_upfront:money(total),
+        mortgage_required:money(mortgage),
+        professional_costs:money(professional),
+        moving_setup_costs:money(setup),
+        cash_target:money(target),
+        cash_position:(position>=0?'+':'-')+money(Math.abs(position))+(position>=0?' surplus':' shortfall'),
+        __chart:{type:'bar',title:advanced?'Cash target for purchase and retained reserve':'Upfront cash budget',caption:advanced?'Purchase costs plus the cash reserve you chose to keep after closing. The reserve is not a transaction cost.':'Deposit plus Stamp Duty and the editable professional/moving costs entered above.',labels,series:[{label:'Cash amount',values}]}
       };
     },
     solar_payback(v){
