@@ -429,6 +429,10 @@ def test_2026_statutory_calculator_parameters_are_regression_locked():
     assert "weeklyClassA(weekly,.0435)" in js
     assert "before*39+after*13" in js
 
+    # Self-employed USC surcharge and 2026 Class S blended PRSI.
+    assert "Math.max(0,x-100000)*.03" in js
+    assert "Math.max(650,x*.042375)" in js
+
     # CAT thresholds / rate and small-gift exemption.
     assert "A:400000,B:40000,C:20000" in js
     assert "Math.min(3000,v.benefit)" in js
