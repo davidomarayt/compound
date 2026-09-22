@@ -425,6 +425,21 @@ def test_flagship_calculator_frontend_features_are_present():
     assert "TextEncoder" in debt_js and "#scenario=" in debt_js
 
 
+
+def test_shared_calculator_engines_have_direct_arithmetic_regressions():
+    content_dir = Path(__file__).parents[1] / "content"
+    tools = load_tools(content_dir)
+    arithmetic = (Path(__file__).parents[1] / "tests" / "tools_arithmetic.cjs").read_text()
+
+    # Debt repayment intentionally has its own dedicated frontend engine, which the same
+    # Node regression file loads and tests through globalThis.CompoundDebtTest.
+    shared_formulas = {tool["formula"] for tool in tools if tool["formula"] != "debt_repayment"}
+    missing = {formula for formula in shared_formulas if f"calculators.{formula}(" not in arithmetic}
+    assert missing == set()
+    assert "simulateDebt(" in arithmetic
+    assert "chooseDebtTarget(" in arithmetic
+
+
 def test_every_formula_has_a_personalised_readout():
     root = Path(__file__).parents[1] / "compound" / "site" / "static"
     js = (root / "tools.js").read_text()
