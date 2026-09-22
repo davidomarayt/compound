@@ -209,7 +209,7 @@ tools:
     formula: mortgage_overpayment
     summary: See how an extra monthly mortgage payment could shorten your term and reduce interest.
     meta_description: Mortgage overpayment calculator for Ireland. Estimate how much time and interest regular overpayments could save on your mortgage.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: balance, label: Current mortgage balance, type: number, prefix: "€", default: 250000, min: 1000, step: 1000}
       - {id: rate, label: Interest rate, type: number, suffix: "%", default: 3.5, min: 0, max: 30, step: 0.01}
@@ -233,7 +233,7 @@ tools:
     formula: mortgage_borrowing
     summary: Estimate the Central Bank loan-to-income ceiling and how your deposit can constrain your purchase price.
     meta_description: Ireland mortgage borrowing calculator using Central Bank loan-to-income and loan-to-value limits for first-time and subsequent buyers.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: income, label: Gross household income, type: number, prefix: "€", default: 80000, min: 1000, step: 1000}
       - id: buyer_type
@@ -262,7 +262,7 @@ tools:
     formula: house_deposit
     summary: Calculate the minimum deposit implied by Irish mortgage loan-to-value limits.
     meta_description: House deposit calculator Ireland. Estimate the minimum deposit and maximum mortgage under current Central Bank loan-to-value limits.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: price, label: Property price, type: number, prefix: "€", default: 400000, min: 1000, step: 1000}
       - id: buyer_type
@@ -290,7 +290,7 @@ tools:
     formula: stamp_duty
     summary: Estimate Irish residential property stamp duty using the current progressive rates.
     meta_description: Stamp duty calculator Ireland for residential property. Calculate 1%, 2% and 6% bands using current Revenue rates.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: price, label: Residential property consideration, type: number, prefix: "€", default: 400000, min: 0, step: 1000}
     results:
@@ -311,7 +311,7 @@ tools:
     formula: lpt
     summary: Estimate 2026 Local Property Tax from your property value and local authority.
     meta_description: Ireland Local Property Tax calculator for 2026. Use Revenue valuation bands and your local authority adjustment to estimate LPT.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: value, label: Property market value, type: number, prefix: "€", default: 400000, min: 1, step: 1000}
       - id: authority
@@ -368,7 +368,7 @@ tools:
     formula: loan
     summary: Estimate monthly repayments and total interest on a personal or car loan.
     meta_description: Free loan repayment calculator Ireland. Estimate monthly repayments, total interest and total repayment for a personal or car loan.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: amount, label: Loan amount, type: number, prefix: "€", default: 20000, min: 1, step: 100}
       - {id: rate, label: APR / annual rate, type: number, suffix: "%", default: 7.5, min: 0, max: 100, step: 0.01}
@@ -508,7 +508,7 @@ tools:
     formula: savings_goal
     summary: Estimate how long it could take to reach a savings target with regular monthly contributions.
     meta_description: Savings goal calculator Ireland. Estimate how many months it could take to reach a target from your current savings, monthly contribution and interest rate.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: target, label: Savings target, type: number, prefix: "€", default: 30000, min: 1, step: 100}
       - {id: current, label: Current savings, type: number, prefix: "€", default: 5000, min: 0, step: 100}
@@ -763,7 +763,7 @@ tools:
     formula: regular_savings
     summary: Project what regular monthly saving could build over time.
     meta_description: Regular savings calculator Ireland. Project a future balance from your starting amount, monthly savings, term and annual return.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: current, label: Starting balance, type: number, prefix: "€", default: 5000, min: 0, step: 100}
       - {id: monthly, label: Monthly saving, type: number, prefix: "€", default: 300, min: 0, step: 10}
@@ -786,7 +786,7 @@ tools:
     formula: pension_relief
     summary: Estimate how much of a personal pension contribution may qualify for Irish income-tax relief.
     meta_description: Pension tax relief calculator Ireland 2026. Apply Revenue age-related contribution limits and the €115,000 earnings cap.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: age, label: Age, type: number, default: 35, min: 16, max: 100, step: 1}
       - {id: earnings, label: Relevant annual earnings, type: number, prefix: "€", default: 60000, min: 0, step: 1000}
@@ -817,7 +817,7 @@ tools:
     formula: cgt
     summary: Estimate CGT on a straightforward disposal using the 33% standard rate and €1,270 annual exemption.
     meta_description: Capital Gains Tax calculator Ireland. Estimate CGT using the standard 33% rate, allowable costs, losses and the €1,270 annual exemption.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: sale, label: Sale proceeds, type: number, prefix: "€", default: 30000, min: 0, step: 100}
       - {id: purchase, label: Original purchase cost, type: number, prefix: "€", default: 15000, min: 0, step: 100}
@@ -842,7 +842,7 @@ tools:
     formula: vat
     summary: Add or remove Irish VAT at common 2026 rates.
     meta_description: VAT calculator Ireland 2026. Add or remove VAT at 23%, 13.5%, 9%, 4.8% or 0% and see the net, VAT and gross amounts.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: amount, label: Amount, type: number, prefix: "€", default: 100, min: 0, step: 0.01}
       - id: direction
@@ -880,7 +880,7 @@ tools:
     formula: inflation
     summary: See how inflation changes the future cost of today's spending and the purchasing power of money.
     meta_description: Inflation calculator Ireland. Estimate the future cost of today's spending and how inflation can reduce purchasing power over time.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: amount, label: Amount today, type: number, prefix: "€", default: 10000, min: 0, step: 100}
       - {id: rate, label: Assumed annual inflation, type: number, suffix: "%", default: 2, min: -20, max: 30, step: 0.1}
@@ -902,7 +902,7 @@ tools:
     formula: emergency
     summary: Turn your essential monthly spending into a target emergency fund and savings timeline.
     meta_description: Emergency fund calculator Ireland. Set a 3, 6, 9 or 12 month target from essential spending and estimate how long it could take to build.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: expenses, label: Essential monthly spending, type: number, prefix: "€", default: 2000, min: 0, step: 50}
       - id: months
@@ -933,7 +933,7 @@ tools:
     formula: salary_hourly
     summary: Convert an annual gross salary into monthly, weekly, daily and hourly gross pay.
     meta_description: Salary to hourly rate calculator Ireland. Convert annual gross pay into monthly, weekly, daily and hourly rates from your working hours.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: salary, label: Annual gross salary, type: number, prefix: "€", default: 50000, min: 0, step: 500}
       - {id: hours, label: Working hours per week, type: number, default: 39, min: 1, max: 100, step: 0.5}
@@ -957,7 +957,7 @@ tools:
     formula: fuel
     summary: Estimate litres used and fuel cost for a journey from distance, consumption and pump price.
     meta_description: Fuel cost calculator Ireland. Estimate petrol or diesel cost from journey distance, L/100km consumption, fuel price and number of trips.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: distance, label: Distance per trip, type: number, suffix: km, default: 100, min: 0, step: 1}
       - {id: consumption, label: Vehicle consumption, type: number, suffix: "L/100km", default: 6.5, min: 0, max: 100, step: 0.1}
@@ -980,7 +980,7 @@ tools:
     formula: ev
     summary: Estimate EV electricity use and charging cost for a journey, including charging losses.
     meta_description: EV charging cost calculator Ireland. Estimate kWh and charging cost from journey distance, vehicle efficiency, electricity price and charging losses.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: distance, label: Distance, type: number, suffix: km, default: 100, min: 0, step: 1}
       - {id: efficiency, label: Vehicle efficiency, type: number, suffix: "kWh/100km", default: 18, min: 1, max: 100, step: 0.1}
@@ -1004,7 +1004,7 @@ tools:
     formula: electricity
     summary: Estimate how much an appliance costs to run per month and per year.
     meta_description: Electricity cost calculator Ireland. Estimate appliance running costs from watts, hours used and your electricity unit rate.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: watts, label: Appliance power, type: number, suffix: watts, default: 2000, min: 0, step: 10}
       - {id: hours, label: Hours used per day, type: number, default: 1, min: 0, max: 24, step: 0.1}
@@ -1028,7 +1028,7 @@ tools:
     formula: take_home_2026
     summary: Estimate 2026 PAYE, USC, Class A PRSI and monthly take-home pay from a gross salary.
     meta_description: Take-home pay calculator Ireland 2026. Estimate PAYE, USC, Class A PRSI, pension deductions and monthly net salary using current 2026 rules.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: salary, label: Annual gross salary, type: number, prefix: "€", default: 60000, min: 0, step: 500}
       - {id: pension_pct, label: Employee pension contribution, type: number, suffix: "%", default: 0, min: 0, max: 40, step: 0.5}
@@ -1060,7 +1060,7 @@ tools:
     formula: income_tax_2026
     summary: Calculate 2026 Income Tax before and after credits, with an editable standard-rate band.
     meta_description: Income Tax calculator Ireland 2026. Estimate tax at 20% and 40%, pension tax relief and tax credits using current Revenue bands.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: income, label: Annual taxable earnings before pension, type: number, prefix: "€", default: 60000, min: 0, step: 500}
       - {id: pension, label: Pension contribution eligible for Income Tax relief, type: number, prefix: "€", default: 0, min: 0, step: 100}
@@ -1086,7 +1086,7 @@ tools:
     formula: usc_2026
     summary: Estimate Universal Social Charge using the 2026 standard USC bands.
     meta_description: USC calculator Ireland 2026. Apply the €13,000 exemption and current 0.5%, 2%, 3% and 8% standard USC bands.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: income, label: Annual income subject to USC, type: number, prefix: "€", default: 50000, min: 0, step: 500}
     results:
@@ -1108,7 +1108,7 @@ tools:
     formula: prsi_2026
     summary: Estimate Class A employee PRSI across the 2026 rate change on 1 October.
     meta_description: PRSI calculator Ireland 2026 for Class A employees. Estimate weekly and annual PRSI across the 4.20% to 4.35% rate change.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: salary, label: Annual reckonable earnings, type: number, prefix: "€", default: 50000, min: 0, step: 500}
     results:
@@ -1130,7 +1130,7 @@ tools:
     formula: cat
     summary: Estimate Capital Acquisitions Tax using current Group A, B and C thresholds and the 33% CAT rate.
     meta_description: Inheritance tax and gift tax calculator Ireland. Estimate CAT using current €400,000, €40,000 and €20,000 group thresholds and the 33% rate.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: benefit, label: Current gift or inheritance value, type: number, prefix: "€", default: 500000, min: 0, step: 1000}
       - {id: prior, label: Prior taxable benefits in the same group since 5 December 1991, type: number, prefix: "€", default: 0, min: 0, step: 1000}
@@ -1170,7 +1170,7 @@ tools:
     formula: rent_credit
     summary: Estimate the 2026 Rent Tax Credit from rent paid and available Income Tax liability.
     meta_description: Rent Tax Credit calculator Ireland 2026. Estimate the credit at 20% of qualifying rent up to €1,000 or €2,000 for a jointly assessed couple.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: rent, label: Qualifying rent paid in the year, type: number, prefix: "€", default: 12000, min: 0, step: 100}
       - id: joint
@@ -1199,7 +1199,7 @@ tools:
     formula: help_to_buy
     summary: Estimate the maximum Help to Buy refund for a qualifying new home or self-build.
     meta_description: Help to Buy calculator Ireland. Estimate relief up to €30,000, 10% of property value or tax paid, subject to the €500,000 property cap and 70% mortgage rule.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: property_value, label: New-home purchase price or approved self-build valuation, type: number, prefix: "€", default: 400000, min: 0, step: 1000}
       - {id: mortgage, label: Qualifying mortgage amount, type: number, prefix: "€", default: 300000, min: 0, step: 1000}
@@ -1224,7 +1224,7 @@ tools:
     formula: first_home_scheme
     summary: Estimate the funding gap a First Home Scheme equity share could potentially bridge.
     meta_description: First Home Scheme calculator Ireland. Estimate the funding gap, equity share and current 20% or 30% maximum FHS contribution.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: property_value, label: Purchase price or self-build cost, type: number, prefix: "€", default: 400000, min: 0, step: 1000}
       - {id: mortgage, label: Mortgage available, type: number, prefix: "€", default: 300000, min: 0, step: 1000}
@@ -1257,7 +1257,7 @@ tools:
     formula: dirt
     summary: Calculate Deposit Interest Retention Tax and net deposit interest at the current 33% rate.
     meta_description: DIRT calculator Ireland. Estimate 33% Deposit Interest Retention Tax and the net interest remaining on Irish deposit interest.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: interest, label: Gross deposit interest, type: number, prefix: "€", default: 1000, min: 0, step: 10}
     results:
@@ -1276,7 +1276,7 @@ tools:
     formula: contractor_vs_salary
     summary: Compare an indicative single-person PAYE salary with self-employed contractor profit and take-home.
     meta_description: Contractor vs salary calculator Ireland 2026. Compare employee salary with contractor day-rate revenue, business costs and estimated single-person taxes.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: salary, label: Employee gross salary, type: number, prefix: "€", default: 70000, min: 0, step: 1000}
       - {id: day_rate, label: Contractor day rate, type: number, prefix: "€", suffix: "/day", default: 450, min: 0, step: 10}
@@ -1305,7 +1305,7 @@ tools:
     formula: investment_fees
     summary: See how annual investment fees can compound into a large difference over long periods.
     meta_description: Investment fee calculator. Compare two annual fee levels and see their long-term effect on a lump sum plus monthly investments.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: initial, label: Starting investment, type: number, prefix: "€", default: 25000, min: 0, step: 500}
       - {id: monthly, label: Monthly investment, type: number, prefix: "€", default: 500, min: 0, step: 10}
@@ -1330,7 +1330,7 @@ tools:
     formula: fire_number
     summary: Turn annual spending and a chosen withdrawal rate into an illustrative financial-independence target.
     meta_description: FIRE number calculator Ireland. Estimate an investment target from annual spending, withdrawal rate, current portfolio and future contributions.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: annual_spend, label: Annual spending to fund, type: number, prefix: "€", default: 36000, min: 0, step: 500}
       - {id: withdrawal_rate, label: Assumed withdrawal rate, type: number, suffix: "%", default: 4, min: 1, max: 10, step: 0.1}
@@ -1354,7 +1354,7 @@ tools:
     formula: retirement_income
     summary: Combine an illustrative pension-pot withdrawal with State Pension and other retirement income.
     meta_description: Retirement income calculator Ireland. Estimate annual and monthly gross retirement income from a pension pot, withdrawal rate, State Pension and other income.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: pot, label: Pension / investment pot at retirement, type: number, prefix: "€", default: 500000, min: 0, step: 5000}
       - {id: withdrawal_rate, label: Illustrative annual withdrawal rate, type: number, suffix: "%", default: 4, min: 0, max: 15, step: 0.1}
@@ -1377,7 +1377,7 @@ tools:
     formula: pension_projection
     summary: Project a pension pot from current savings, employee and employer contributions, return and annual fees.
     meta_description: Pension projection calculator Ireland. Project a future pension pot from age, retirement age, current fund, monthly contributions, return and fees.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: age, label: Current age, type: number, default: 35, min: 16, max: 90, step: 1}
       - {id: retirement_age, label: Target retirement age, type: number, default: 65, min: 18, max: 90, step: 1}
@@ -1404,7 +1404,7 @@ tools:
     formula: rent_vs_buy
     summary: Compare an illustrative homeowner-equity path with a renter who invests the deposit and any monthly cost advantage.
     meta_description: Rent vs buy calculator Ireland. Compare mortgage equity with renting and investing using editable rent, house price, rate, deposit, growth and maintenance assumptions.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: monthly_rent, label: Current monthly rent, type: number, prefix: "€", default: 1800, min: 0, step: 50}
       - {id: annual_rent_growth, label: Annual rent growth assumption, type: number, suffix: "%", default: 2.5, min: -10, max: 20, step: 0.1}
@@ -1434,7 +1434,7 @@ tools:
     formula: mortgage_affordability
     summary: Compare an income multiple with a user-set monthly affordability limit and deposit constraint.
     meta_description: Mortgage affordability calculator Ireland. Compare Central Bank loan-to-income limits with monthly repayment affordability and deposit constraints.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: income, label: Gross household annual income, type: number, prefix: "€", default: 80000, min: 0, step: 1000}
       - id: buyer_type
@@ -1469,7 +1469,7 @@ tools:
     formula: house_buying_costs
     summary: Add the deposit, residential stamp duty and editable professional/moving costs into one upfront budget.
     meta_description: House buying costs calculator Ireland. Estimate deposit, residential stamp duty, legal, survey, valuation, moving and other upfront purchase costs.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: price, label: Property price, type: number, prefix: "€", default: 400000, min: 0, step: 1000}
       - {id: deposit_pct, label: Deposit percentage, type: number, suffix: "%", default: 10, min: 0, max: 100, step: 1}
@@ -1497,7 +1497,7 @@ tools:
     formula: solar_payback
     summary: Model solar PV payback with or without the SEAI grant, plus household demand, EV charging, battery storage, export income and night-rate battery charging.
     meta_description: Solar PV payback calculator Ireland with grant eligibility, household electricity use, EV charging, battery storage, night-rate arbitrage and export income.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - id: system_cost
         label: Solar PV installed cost before grant
@@ -1826,7 +1826,7 @@ tools:
     formula: ber_energy
     summary: Turn an energy-use figure into an indicative annual cost and compare it with a target efficiency level.
     meta_description: BER energy cost calculator Ireland. Use your home's energy-use figure, floor area and energy price to compare current and target annual energy costs.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: area, label: Floor area, type: number, suffix: "m²", default: 120, min: 1, step: 1}
       - {id: current_kwh_m2, label: Current annual energy-use assumption, type: number, suffix: "kWh/m²", default: 180, min: 0, step: 5}
@@ -1853,7 +1853,7 @@ tools:
     formula: solar_optimizer
     summary: Compare solar-only, solar with smart EV charging, solar with a battery, and a combined solar + EV + battery setup side by side.
     meta_description: Solar EV battery optimiser Ireland. Compare annual value, payback and 20-year net benefit for solar-only, EV smart charging, battery and combined scenarios.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: solar_cost, label: Solar PV installed cost before grant, type: number, prefix: "€", default: 9000, min: 0, step: 100}
       - id: grant_eligible
@@ -1919,7 +1919,7 @@ tools:
     formula: retrofit_planner
     summary: Combine upgrade quotes, current One Stop Shop grant values and an editable energy-saving assumption into one retrofit budget and payback plan.
     meta_description: Whole-house retrofit planner Ireland. Combine insulation, windows, heat pump, solar and other upgrades with current SEAI One Stop Shop grants and payback estimates.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - id: home_type
         label: Home type
@@ -2014,7 +2014,7 @@ tools:
     formula: myfuturefund
     summary: Check likely MyFutureFund enrolment status, see employee/employer/State contributions and project the fund using the phased contribution schedule.
     meta_description: MyFutureFund calculator Ireland 2026. Check auto-enrolment eligibility and project employee, employer and State contributions through retirement.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: age, label: Current age, type: number, default: 30, min: 18, max: 70, step: 1}
       - {id: salary, label: Gross annual pay across enrolled employment(s), type: number, prefix: "€", default: 50000, min: 0, step: 500}
@@ -2057,7 +2057,7 @@ tools:
     formula: childcare_return
     summary: Estimate what returning to paid work adds to household finances after PAYE, childcare, NCS support, commuting and work-related costs.
     meta_description: Childcare vs returning to work calculator Ireland. Estimate net salary after PAYE, childcare fees, NCS subsidy, commuting and work costs.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: salary, label: Gross annual salary on returning to work, type: number, prefix: "€", default: 45000, min: 0, step: 500}
       - {id: pension_pct, label: Employee pension contribution, type: number, suffix: "%", default: 0, min: 0, max: 30, step: 0.5}
@@ -2099,7 +2099,7 @@ tools:
     formula: mortgage_switch
     summary: Compare your current mortgage with a new rate or lender, including switching costs, break fees, cashback and a new mortgage term.
     meta_description: Mortgage switch calculator Ireland. Compare monthly repayments, interest, switching costs, cashback, break-even time and remaining mortgage balance.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: balance, label: Current mortgage balance, type: number, prefix: "€", default: 250000, min: 0, step: 1000}
       - {id: current_rate, label: Current interest rate, type: number, suffix: "%", default: 4.2, min: 0, max: 20, step: 0.01}
@@ -2133,7 +2133,7 @@ tools:
     formula: lifetime_cost
     summary: Project the cumulative cost of your current lifestyle from today to a chosen age, including housing, food, transport, travel, childcare and recurring major purchases.
     meta_description: Lifetime cost calculator Ireland. Project housing, food, transport, childcare, travel and other spending from your current age to a chosen age with inflation.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: current_age, label: Current age, type: number, default: 30, min: 18, max: 100, step: 1}
       - {id: end_age, label: Project spending to age, type: number, default: 80, min: 19, max: 110, step: 1}
@@ -2187,7 +2187,7 @@ tools:
     formula: car_finance
     summary: Compare a personal car loan, hire purchase and PCP using the same car price, deposit and finance assumptions, with an optional advanced mode for fees, mileage and end-value equity.
     meta_description: Car finance calculator Ireland comparing personal loan vs hire purchase vs PCP. Compare monthly payments, balloon payments, total cost, ownership and advanced PCP mileage/equity scenarios.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - {id: car_price, label: Car cash price, type: number, prefix: "€", default: 40000, min: 0, step: 500}
       - {id: deposit, label: Cash deposit / trade-in used upfront, type: number, prefix: "€", default: 8000, min: 0, step: 500}
@@ -2302,7 +2302,7 @@ tools:
     formula: nutrition_needs
     summary: Estimate resting energy, activity-adjusted maintenance needs, protein and an evidence-grounded macro illustration in one calculator.
     meta_description: Nutrition needs calculator using Mifflin-St Jeor, EFSA physical activity levels and protein reference values. Estimate resting energy, maintenance calories, protein and macros.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - id: sex
         label: Sex used by the Mifflin–St Jeor equation
@@ -2415,7 +2415,7 @@ tools:
     formula: pregnancy_timeline
     summary: Estimate a pregnancy due date, gestational age, trimester and key timeline dates from the last menstrual period or a clinician-assigned due date.
     meta_description: Pregnancy due date calculator Ireland. Estimate gestational age, trimester, conception date and pregnancy milestones, with HSE and obstetric dating guidance.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - id: lmp
         label: First day of your last menstrual period (LMP)
@@ -2490,7 +2490,7 @@ tools:
     formula: alcohol_ireland
     summary: Convert common drinks into Irish standard drinks, grams of alcohol, alcohol-derived calories and annual spending, then model a reduction scenario.
     meta_description: Alcohol calculator Ireland. Estimate Irish standard drinks, grams of alcohol, alcohol-derived calories, annual spend and savings from drinking less.
-    updated: 2026-09-21
+    updated: 2026-09-22
     fields:
       - id: guideline_group
         label: Optional comparison with current HSE weekly low-risk guideline
