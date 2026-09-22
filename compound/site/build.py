@@ -1,6 +1,6 @@
 """Static site generator. Reads content/**/*.md (YAML front matter + markdown) and renders public/.
 
-URL structure (fixed, do not change): /wealth/<slug>/, /health/<slug>/, /happiness/<slug>/, /tag/<topic>/
+URL structure: evergreen articles live under their pillar; timely news may use /news/<slug>/ via canonical_path.
 Previews render to /preview/<token>/ with noindex and are never listed anywhere.
 """
 from __future__ import annotations
@@ -377,7 +377,7 @@ def article_jsonld(a: Article, site_url: str) -> str:
         "author": {"@type": "Person", "name": "David", "url": f"{site_url}/about/"},
         "publisher": {"@type": "Organization", "name": "Compound", "url": site_url},
         "mainEntityOfPage": f"{site_url}{a.url}", "image": f"{site_url}{a.image}" if a.image else None,
-        "articleSection": PILLAR_LABELS.get(a.pillar, a.pillar),
+        "articleSection": (f"News / {PILLAR_LABELS.get(a.pillar, a.pillar)}" if "news" in a.tags else PILLAR_LABELS.get(a.pillar, a.pillar)),
         "keywords": ", ".join(a.tags),
         "citation": [s.get("url") for s in a.sources if s.get("url")],
     }
@@ -508,7 +508,7 @@ def build_site(settings: Settings) -> dict:
             unknown = [slug for slug in article.related_tools if slug not in tools_by_slug]
             if unknown:
                 raise ValueError(f"Unknown related_tools on {article.slug}: {unknown}")
-    reserved = {"/", "/search/", "/tools/", "/compound-interest-calculator/", "/bmi-calculator/"}
+    reserved = {"/", "/search/", "/tools/", "/news/", "/compound-interest-calculator/", "/bmi-calculator/"}
     reserved.update(tool["url"] for tool in tools)
     reserved.update(f"/{p}/" for p in PILLARS)
     reserved.update(f"/{pg.slug}/" for pg in pages)
@@ -538,7 +538,9 @@ def build_site(settings: Settings) -> dict:
     out.mkdir(parents=True, exist_ok=True)
     shutil.copytree(HERE / "static", out / "static", dirs_exist_ok=True)
 
-    by_pillar = {p: [a for a in articles if a.pillar == p] for p in PILLARS}
+    news_articles = [a for a in articles if "news" in a.tags or a.url.startswith("/news/")]
+    news_articles.sort(key=lambda a: (a.date, a.slug), reverse=True)
+    by_pillar = {p: [a for a in articles if a.pillar == p and a not in news_articles] for p in PILLARS}
     columns = {}
     for p in PILLARS:
         arts = by_pillar[p]
@@ -553,7 +555,11 @@ def build_site(settings: Settings) -> dict:
             if i < len(by_pillar[p]):
                 home_articles.append(by_pillar[p][i])
     _write(out / "index.html", env.get_template("home.html").render(
-        columns=columns, articles=articles, home_articles=home_articles, title="Compound"))
+        columns=columns, articles=articles, home_articles=home_articles,
+        news_articles=news_articles[:4], title="Compound"))
+
+    _write(out / "news" / "index.html", env.get_template("news.html").render(
+        articles=news_articles, title="Latest News for Ireland", news=True, ads_allowed=False))
 
     for p in PILLARS:
         _write(out / p / "index.html", env.get_template("pillar.html").render(pillar=p, articles=by_pillar[p], title=PILLAR_LABELS[p]))
@@ -615,7 +621,7 @@ def build_site(settings: Settings) -> dict:
             bmi_guide=bmi_guide.replace("<table>", '<div class="bmi-table"><table>').replace("</table>", "</table></div>")))
 
     index = [
-        {"title": a.title, "url": a.url, "pillar": a.pillar_label, "date": a.date.isoformat(),
+        {"title": a.title, "url": a.url, "pillar": ("News" if "news" in a.tags else a.pillar_label), "date": a.date.isoformat(),
          "summary": a.summary, "tags": a.tags, "description": a.description,
          "image": a.image, "reading_minutes": a.reading_minutes, "date_label": long_date(a.date)}
         for a in articles
@@ -649,6 +655,7 @@ def build_site(settings: Settings) -> dict:
         # AdSense checks this file to confirm the site is allowed to show your ads.
         _write(out / "ads.txt", f"google.com, {client.removeprefix('ca-')}, DIRECT, f08c47fec0942fa0\n")
     urls = ([settings.site_base_url + "/"]
+            + [settings.site_base_url + "/news/"]
             + ([settings.site_base_url + "/tools/"] if tools else [])
             + [settings.site_base_url + tool["url"] for tool in tools]
             + ([settings.site_base_url + bmi_path] if has_bmi else [])
