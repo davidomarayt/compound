@@ -2,6 +2,14 @@
 
 This tool compares how solar generation can interact with household demand, EV charging and a battery. Its purpose is not to find a universally 'optimal' system, but to reveal where each generated kWh goes and what value it creates under your tariff assumptions.
 
+## Basic and Advanced modes
+
+**Basic** compares the available configurations from the same core solar quote, tariff, EV and battery inputs. The more technical assumptions use transparent defaults: 35% direct household solar use, 18 kWh/100 km EV consumption, 10% EV charging losses, 80% home charging, 35% of home-EV demand able to follow solar, 90% battery round-trip efficiency, 60% solar-surplus capture and 3 kWh/day of night charging when that option is enabled.
+
+**Advanced** lets you replace those defaults with your own evidence. It also adds an optional **incremental smart-EV charger/control cost**. Leave that at €0 if the charger is already installed or its cost is outside the decision; include it if the extra hardware is part of the solar/EV investment you are comparing.
+
+The results now expose the **20-year net benefit of each configuration**, not just the payback period and the name of the highest-value scenario. That makes the ranking auditable: you can see how far the modelled winner is ahead of solar only rather than treating the label as a black box.
+
 ## How to read the result
 
 Look at **direct self-consumption**, **EV charging**, **battery-delivered energy**, **night-rate arbitrage** and **exports** separately. These flows have different economics.
