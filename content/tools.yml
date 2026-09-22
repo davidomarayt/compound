@@ -2201,8 +2201,8 @@ tools:
     summary: Compare your current mortgage with a new rate or lender, including switching costs, break fees, cashback and a new mortgage term.
     meta_description: Mortgage switch calculator Ireland. Compare monthly repayments, interest, switching costs, cashback, break-even time and remaining mortgage balance.
     updated: 2026-09-22
-    basic_note: "Basic mode compares the two rates and terms using €1,500 of switching costs, no break fee and no cashback."
-    advanced_note: "Advanced mode lets you replace the default switching costs and add an actual break fee or cashback incentive."
+    basic_note: "Basic mode compares the two rates and terms using €1,500 of switching costs, no break fee/cashback and a five-year comparison horizon."
+    advanced_note: "Advanced mode lets you replace switching costs, add an actual break fee or cashback, and choose a comparison horizon that matches the period you want to assess."
     fields:
       - {id: balance, label: Current mortgage balance, type: number, prefix: "€", default: 250000, min: 0, step: 1000, section_start: Current mortgage}
       - {id: current_rate, label: Current interest rate, type: number, suffix: "%", default: 4.2, min: 0, max: 20, step: 0.01}
@@ -2212,13 +2212,18 @@ tools:
       - {id: switching_costs, label: Legal, valuation and other switching costs, type: number, prefix: "€", default: 1500, min: 0, step: 100, advanced: true, section_start: Advanced switching costs}
       - {id: break_fee, label: Fixed-rate break fee if applicable, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true}
       - {id: cashback, label: Cashback / switching incentive, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true}
+      - {id: comparison_years, label: Comparison horizon, type: number, suffix: years, default: 5, min: 1, max: 30, step: 1, advanced: true, help: "For a fixed-rate comparison, use a horizon no longer than the period for which the entered rates are actually expected to apply."}
     results:
       - {id: current_payment, label: Current monthly repayment estimate}
       - {id: new_payment, label: New monthly repayment estimate}
       - {id: monthly_change, label: Monthly repayment change}
       - {id: net_switch_cost, label: Net upfront switching cost}
       - {id: break_even, label: Break-even from monthly saving}
-      - {id: lifetime_difference, label: Estimated total-cost difference}
+      - {id: horizon_interest_current, label: Current-mortgage interest over comparison horizon}
+      - {id: horizon_interest_new, label: Alternative interest + net switching cost over horizon}
+      - {id: horizon_saving, label: Interest / fee saving over comparison horizon}
+      - {id: horizon_balance_difference, label: Alternative balance advantage at horizon}
+      - {id: lifetime_difference, label: Scheduled lifetime cost difference if rates never change}
     guide: |
       ## A lower monthly payment is not automatically a cheaper mortgage
 
