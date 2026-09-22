@@ -52,6 +52,12 @@ For job comparisons, calculate at least two versions: the **contracted hourly eq
 
 Then add the cash value of benefits separately. This creates a much fairer comparison than using salary alone.
 
+## Paid leave and the 52-week denominator
+
+For a normal salaried role where annual leave is paid, **52 paid weeks** is usually the appropriate denominator for the gross hourly equivalent. Reducing the input to 48 weeks simply because the employee receives four weeks of paid annual leave would spread the same annual salary across too few paid weeks and overstate the hourly figure.
+
+The working-hours input should represent paid working hours in a normal week. Unpaid breaks should generally be excluded. The result is still a contractual gross-pay equivalent rather than a valuation of the entire employment package.
+
 ## Method and limitations
 
 The calculator divides annual salary into the selected weeks, days and hours. It does not calculate tax, overtime law, benefits or employment rights.
