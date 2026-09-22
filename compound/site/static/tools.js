@@ -109,6 +109,31 @@
     }
     return {labels,values};
   };
+  const mortgageOverpaymentProjection = v => {
+    const months=Math.max(1,Math.round(v.years*12));
+    const base=monthlyPayment(v.balance,v.rate,months), r=v.rate/100/12;
+    const advanced=Boolean(v.__advanced);
+    const startAfter=advanced?Math.max(0,Math.round(v.overpayment_start_month||0)):0;
+    const lumpSum=advanced?Math.max(0,v.lump_sum||0):0;
+    const lumpMonth=advanced?Math.max(1,Math.round(v.lump_sum_month||1)):0;
+    let bal=Math.max(0,v.balance), interest=0, month=0;
+    const labels=['Start'], values=[bal];
+    while(bal>0.005 && month<months){
+      month++;
+      const monthlyInterest=bal*r;
+      interest+=monthlyInterest;
+      const regularExtra=month>startAfter?Math.max(0,v.overpayment):0;
+      const due=bal+monthlyInterest;
+      bal=Math.max(0,due-Math.min(due,base+regularExtra));
+      if(lumpSum>0 && month===lumpMonth && bal>0) bal=Math.max(0,bal-Math.min(bal,lumpSum));
+      if(month%12===0 || bal<=0.005 || month===months){
+        labels.push(month%12===0?'Year '+(month/12):'Month '+month);
+        values.push(bal);
+      }
+    }
+    const standardInterest=Math.max(0,base*months-v.balance);
+    return {months,base,startAfter,lumpSum,lumpMonth,pay:base+Math.max(0,v.overpayment),scenarioMonths:month,interest,standardInterest,labels,values};
+  };
   const fallbackChart = (name,v) => {
     switch(name){
       case 'mortgage': {
@@ -116,11 +141,16 @@
         return {type:'line',title:'Mortgage balance over time',caption:'Scheduled balance if the entered rate stayed unchanged for the full term.',labels:s.labels,series:[{label:'Mortgage balance',values:s.values}]};
       }
       case 'mortgage_overpayment': {
-        const months=Math.round(v.years*12), base=monthlyPayment(v.balance,v.rate,months);
-        const a=amortisationSeries(v.balance,v.rate,months,base), b=amortisationSeries(v.balance,v.rate,months,base+v.overpayment);
-        const n=Math.max(a.values.length,b.values.length), labels=Array.from({length:n},(_,i)=>i===0?'Start':'Year '+i);
-        const pad=arr=>Array.from({length:n},(_,i)=>arr[i]??0);
-        return {type:'line',title:'How the balance falls',caption:'Standard repayment versus the monthly overpayment scenario.',labels,series:[{label:'Standard',values:pad(a.values)},{label:'With overpayment',values:pad(b.values)}]};
+        const p=mortgageOverpaymentProjection(v), standard=amortisationSeries(v.balance,v.rate,p.months,p.base);
+        const labels=standard.labels, scenario=[];
+        const byLabel=new Map(p.labels.map((label,i)=>[label,p.values[i]]));
+        let last=v.balance;
+        labels.forEach(label=>{ if(byLabel.has(label)) last=byLabel.get(label); scenario.push(last); });
+        if(p.values[p.values.length-1]===0) {
+          const payoffLabel=p.labels[p.labels.length-1], idx=labels.indexOf(payoffLabel);
+          if(idx>=0) for(let i=idx;i<scenario.length;i++) scenario[i]=0;
+        }
+        return {type:'line',title:'How the balance falls',caption:'Standard repayment versus your overpayment timing and any lump sum entered.',labels,series:[{label:'Standard',values:standard.values},{label:'Overpayment plan',values:scenario}]};
       }
       case 'mortgage_borrowing': {
         const multiple=v.buyer_type==='ftb'?4:3.5, byIncome=v.income*multiple+v.deposit, byDeposit=v.deposit/.10;
@@ -235,9 +265,11 @@
         break;
       }
       case 'mortgage_overpayment': {
-        const n=Math.round(v.years*12), base=monthlyPayment(v.balance,v.rate,n);
-        items.push('Your overpayment is '+pct(base>0?v.overpayment/base*100:0)+' of the scheduled monthly repayment.');
-        items.push('The benefit is strongest when extra capital is paid earlier, because less balance remains for future interest.');
+        const p=mortgageOverpaymentProjection(v);
+        items.push('Your regular overpayment is '+pct(p.base>0?v.overpayment/p.base*100:0)+' of the scheduled monthly repayment.');
+        if(v.__advanced&&p.startAfter>0) items.push('The regular overpayment begins after month '+p.startAfter+', so the early-interest saving is lower than if the same amount started immediately.');
+        if(v.__advanced&&p.lumpSum>0) items.push('The '+money(p.lumpSum)+' lump sum is modelled after the scheduled payment in month '+p.lumpMonth+'.');
+        if(items.length<3) items.push('Earlier principal reduction usually saves more interest because less balance remains for later months.');
         break;
       }
       case 'mortgage_borrowing': {
@@ -486,6 +518,8 @@
     if(name==='rent_vs_buy' && v.deposit>v.house_price) return 'The deposit cannot exceed the home purchase price in this comparison.';
     if(name==='mortgage_switch' && v.balance===0) return 'Enter a current mortgage balance above €0 to compare switching.';
     if(name==='mortgage_overpayment' && v.balance===0) return 'Enter a current mortgage balance above €0.';
+    if(name==='mortgage_overpayment' && v.__advanced && v.lump_sum>0 && v.lump_sum_month>v.years*12) return 'The lump-sum month must fall within the remaining mortgage term.';
+    if(name==='mortgage_overpayment' && v.__advanced && v.overpayment_start_month>=v.years*12 && v.overpayment>0) return 'The regular overpayment must start before the remaining mortgage term ends.';
     if(name==='first_home_scheme' && v.property_value===0) return 'Enter a property value above €0.';
     if(name==='help_to_buy' && v.property_value===0) return 'Enter a property value above €0.';
     return '';
@@ -537,16 +571,17 @@
       return {monthly:money(p),interest:money(total-v.amount),total:money(total)};
     },
     mortgage_overpayment(v){
-      const n=Math.round(v.years*12), base=monthlyPayment(v.balance,v.rate,n), pay=base+v.overpayment, r=v.rate/100/12;
-      let b=v.balance, interest=0, months=0;
-      while(b>0.005 && months<1200){
-        const i=b*r;
-        interest+=i;
-        if(pay<=i && b>0) return {payment:money(base),new_payment:money(pay),time_saved:'Loan would not amortise',interest_saved:'—'};
-        b=Math.max(0,b+i-pay); months++;
-      }
-      const standardInterest=base*n-v.balance;
-      return {payment:money(base),new_payment:money(pay),time_saved:duration(Math.max(0,n-months)),interest_saved:money(Math.max(0,standardInterest-interest))};
+      const p=mortgageOverpaymentProjection(v);
+      return {
+        payment:money(p.base),
+        new_payment:money(p.pay),
+        new_term:duration(p.scenarioMonths),
+        time_saved:duration(Math.max(0,p.months-p.scenarioMonths)),
+        standard_interest:money(p.standardInterest),
+        overpayment_interest:money(p.interest),
+        interest_saved:money(Math.max(0,p.standardInterest-p.interest)),
+        __chart:fallbackChart('mortgage_overpayment',v)
+      };
     },
     mortgage_borrowing(v){
       const multiple=v.buyer_type==='ftb'?4:3.5, lti=v.income*multiple, depPrice=v.deposit/.10, maxPrice=Math.min(lti+v.deposit,depPrice);
@@ -1200,7 +1235,7 @@
   };
 
   if(typeof globalThis!=='undefined'){
-    globalThis.CompoundToolsTest={calculators,monthlyPayment,incomeTax2026,usc2026,annualClassA2026,selfEmployedNet2026,stampDutyResidential,lptBands,lptAdjust,fhsPriceCeilings,fhsPriceCeiling};
+    globalThis.CompoundToolsTest={calculators,monthlyPayment,incomeTax2026,usc2026,annualClassA2026,selfEmployedNet2026,stampDutyResidential,lptBands,lptAdjust,fhsPriceCeilings,fhsPriceCeiling,mortgageOverpaymentProjection};
   }
   if(typeof document==='undefined') return;
 
