@@ -14,6 +14,13 @@ tools:
       - {id: monthly, label: Estimated monthly repayment}
       - {id: interest, label: Total interest}
       - {id: total, label: Total repaid}
+      - {id: annual_repayment, label: Scheduled repayment per year}
+      - {id: first_year_interest, label: Interest paid in first 12 months}
+      - {id: first_year_principal, label: Principal repaid in first 12 months}
+      - {id: balance_5y, label: Balance after 5 years}
+      - {id: stress_1pp, label: Monthly repayment if rate were 1 percentage point higher}
+      - {id: stress_2pp, label: Monthly repayment if rate were 2 percentage points higher}
+      - {id: payment_per_100k, label: Monthly repayment per €100,000 borrowed}
     guide: |
       ## What this mortgage calculator tells you
 
@@ -946,6 +953,8 @@ tools:
       - {id: net, label: Net amount}
       - {id: vat, label: VAT amount}
       - {id: gross, label: Gross amount}
+      - {id: vat_share_gross, label: VAT as a share of the gross price}
+      - {id: multiplier, label: Net-to-gross multiplier}
     guide: |
       ## Irish VAT rates in 2026
       Revenue lists the 2026 standard rate as 23%, with 13.5%, 9%, 4.8% and zero rates applying to qualifying supplies. Selecting the correct VAT rate depends on what is being supplied, not simply on the seller's preference.
@@ -1046,6 +1055,9 @@ tools:
       - {id: daily, label: Gross per working day}
       - {id: hourly, label: Gross per paid hour}
       - {id: annual_hours, label: Paid hours represented}
+      - {id: fortnightly, label: Gross per fortnight}
+      - {id: workday_hours, label: Average paid hours per working day}
+      - {id: weekly_hours_share, label: Share of a 168-hour week spent in paid work}
     guide: |
       ## Put an annual salary on the same basis as hourly work
 
@@ -1368,6 +1380,9 @@ tools:
       - {id: annual, label: Approximate 2026 employee PRSI}
       - {id: effective, label: Approximate annual effective rate}
       - {id: october_increase, label: Approx. 2026 cost of October rate rise}
+      - {id: annual_if_old_rate, label: Full-year PRSI at pre-October rate}
+      - {id: annual_if_new_rate, label: Full-year PRSI at post-October rate}
+      - {id: monthly_equivalent, label: Approximate monthly budgeting equivalent}
     guide: |
       ## Class A changes during 2026
 
@@ -1460,6 +1475,8 @@ tools:
       - {id: credit, label: Estimated usable Rent Tax Credit}
       - {id: rent_for_max, label: Qualifying rent needed to reach statutory cap}
       - {id: unused_cap, label: Statutory cap not used}
+      - {id: binding_limit, label: What limits the estimated credit}
+      - {id: effective_rent_relief, label: Credit as a share of qualifying rent}
     guide: |
       ## Three separate limits determine the credit
 
@@ -2364,6 +2381,10 @@ tools:
       - {id: current_cost, label: Indicative current annual energy cost}
       - {id: target_cost, label: Indicative target annual energy cost}
       - {id: saving, label: Indicative annual difference}
+      - {id: monthly_saving, label: Indicative monthly difference}
+      - {id: energy_reduction, label: Modelled reduction in annual energy use}
+      - {id: cost_reduction, label: Modelled reduction in annual energy cost}
+      - {id: ten_year_saving, label: 10-year gross difference at constant energy price}
     guide: |
       ## BER is an energy-performance rating, not your utility bill
       Ireland's BER scale changed to a simplified A-to-G scale from 24 May 2026. A BER is produced through the official assessment methodology and does not directly equal a household's actual metered energy consumption.
