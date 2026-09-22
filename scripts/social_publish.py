@@ -90,7 +90,12 @@ def article_url(meta: dict[str, Any]) -> str:
 
 
 def changed_markdown_paths(base: str, head: str) -> list[str]:
-    if not base or not head or set(base) == {"0"}:
+    if not head:
+        return []
+    if not base or set(base) == {"0"}:
+        proc = subprocess.run(["git", "rev-parse", f"{head}^"], text=True, capture_output=True, check=False)
+        base = proc.stdout.strip() if proc.returncode == 0 else ""
+    if not base:
         return []
     proc = subprocess.run(
         ["git", "diff", "--name-only", base, head, "--", "content/**/*.md"],
@@ -195,6 +200,10 @@ def post_instagram(meta: dict[str, Any], url: str, dry_run: bool) -> str:
         return "Instagram disabled"
     caption = str(cfg.get("caption", "")).strip()
     image_url = str(cfg.get("image_url") or meta.get("social_image") or meta.get("image") or "").strip()
+    if not image_url and "news" in {str(x).lower() for x in (meta.get("tags") or [])}:
+        slug = str(meta.get("slug") or "").strip()
+        if slug:
+            image_url = f"{SITE_URL}/static/images/news/{slug}-portrait.jpg"
     if image_url.startswith("/"):
         image_url = SITE_URL + image_url
     if not caption:
