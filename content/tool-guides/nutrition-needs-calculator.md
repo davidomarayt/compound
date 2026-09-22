@@ -4,6 +4,12 @@ This tool combines several related nutrition calculations on one page so you do 
 
 It is designed for **generally healthy adults** as an educational planning tool. It is not intended for pregnancy, breastfeeding, under-18s, people with an eating disorder, or people who need medical nutrition therapy. In those situations, energy and nutrient needs should be assessed appropriately by a clinician or dietitian.
 
+## Basic and Advanced modes
+
+**Basic** answers the most common questions with the fewest assumptions: predicted resting energy, activity-adjusted maintenance energy and the general adult protein reference based on body weight. It deliberately avoids turning an estimate into a diet prescription.
+
+**Advanced** adds the optional 10% higher/lower energy scenario, the resistance-training protein evidence point and an illustrative macro split. The added values make the arithmetic more useful for scenario planning, but they do not make the underlying estimate more clinically precise.
+
 ## Resting energy: Mifflin–St Jeor
 
 The resting-energy estimate uses the **Mifflin–St Jeor equation**, published in the *American Journal of Clinical Nutrition* in 1990. A systematic review comparing commonly used equations found Mifflin–St Jeor more likely than the alternatives assessed to estimate measured resting metabolic rate within 10% in non-obese and obese adults, while also emphasising meaningful individual errors.
