@@ -641,8 +641,17 @@
 
   const calculators = {
     mortgage(v){
-      const n=v.years*12, p=monthlyPayment(v.amount,v.rate,n), total=p*n;
-      return {monthly:money(p),interest:money(total-v.amount),total:money(total)};
+      const amount=Math.max(0,v.amount),n=Math.max(1,Math.round(v.years*12)),p=monthlyPayment(amount,v.rate,n),total=p*n;
+      const firstYear=mortgageSnapshot(amount,v.rate,n,p,Math.min(12,n));
+      const fiveYears=mortgageSnapshot(amount,v.rate,n,p,Math.min(60,n));
+      const firstYearPrincipal=Math.max(0,amount-firstYear.balance);
+      const stress1=monthlyPayment(amount,Math.max(0,v.rate)+1,n),stress2=monthlyPayment(amount,Math.max(0,v.rate)+2,n);
+      return {
+        monthly:money(p),interest:money(Math.max(0,total-amount)),total:money(total),annual_repayment:money(p*12),
+        first_year_interest:money(firstYear.interest),first_year_principal:money(firstYearPrincipal),
+        balance_5y:money(fiveYears.balance),stress_1pp:money(stress1),stress_2pp:money(stress2),
+        payment_per_100k:money(amount>0?p/amount*100000:0)
+      };
     },
     mortgage_overpayment(v){
       const p=mortgageOverpaymentProjection(v);
@@ -882,10 +891,14 @@
       };
     },
     vat(v){
-      const r=Number(v.rate)/100; let net,vat,gross;
-      if(v.direction==='gross'){ gross=v.amount; net=r===0?gross:gross/(1+r); vat=gross-net; }
-      else { net=v.amount; vat=net*r; gross=net+vat; }
-      return {net:money(net),vat:money(vat),gross:money(gross)};
+      const amount=Math.max(0,v.amount),r=Math.max(0,Number(v.rate))/100; let net,vat,gross;
+      if(v.direction==='gross'){ gross=amount; net=r===0?gross:gross/(1+r); vat=gross-net; }
+      else { net=amount; vat=net*r; gross=net+vat; }
+      return {
+        net:money(net),vat:money(vat),gross:money(gross),
+        vat_share_gross:pct(gross?vat/gross*100:0),
+        multiplier:r===0?'1.000×':number.format(1+r)+'×'
+      };
     },
     inflation(v){
       const amount=Math.max(0,v.amount), years=Math.max(0,v.years), inflation=Math.max(-.99,v.rate/100), factor=Math.pow(1+inflation,years);
@@ -934,8 +947,13 @@
       };
     },
     salary_hourly(v){
-      const annualHours=Math.max(0,v.hours)*Math.max(0,v.weeks), weekly=v.weeks?v.salary/v.weeks:0, monthly=v.salary/12, daily=v.days?weekly/v.days:0, hourly=annualHours?v.salary/annualHours:0;
-      return {monthly:money(monthly),weekly:money(weekly),daily:money(daily),hourly:money(hourly),annual_hours:num(annualHours)+' hours'};
+      const salary=Math.max(0,v.salary),hours=Math.max(0,v.hours),weeks=Math.max(0,v.weeks),days=Math.max(0,v.days);
+      const annualHours=hours*weeks,weekly=weeks?salary/weeks:0,monthly=salary/12,daily=days?weekly/days:0,hourly=annualHours?salary/annualHours:0;
+      const workdayHours=days?hours/days:0,weeklyShare=hours/168*100;
+      return {
+        monthly:money(monthly),weekly:money(weekly),daily:money(daily),hourly:money(hourly),annual_hours:num(annualHours)+' hours',
+        fortnightly:money(weekly*2),workday_hours:num(workdayHours)+' hours',weekly_hours_share:pct(weeklyShare)
+      };
     },
     fuel(v){
       const distance=Math.max(0,v.distance)*Math.max(0,v.trips), consumption=Math.max(0,v.consumption), price=Math.max(0,v.price);
@@ -994,8 +1012,13 @@
       return {usc:money(u),effective:pct(v.income?u/v.income*100:0),monthly:money(u/12),rate_basis:reduced?'Reduced 2026 rates':'Standard 2026 rates'};
     },
     prsi_2026(v){
-      const p=annualClassA2026(v.salary), octoberEffect=Math.max(0,(p.after-p.before)*13);
-      return {weekly_equivalent:money(p.weekly),weekly_before:money(p.before),weekly_after:money(p.after),annual:money(p.annual),effective:pct(v.salary?p.annual/v.salary*100:0),october_increase:money(octoberEffect)};
+      const salary=Math.max(0,v.salary),p=annualClassA2026(salary),octoberEffect=Math.max(0,(p.after-p.before)*13);
+      const oldAnnual=p.before*52,newAnnual=p.after*52;
+      return {
+        weekly_equivalent:money(p.weekly),weekly_before:money(p.before),weekly_after:money(p.after),annual:money(p.annual),
+        effective:pct(salary?p.annual/salary*100:0),october_increase:money(octoberEffect),
+        annual_if_old_rate:money(oldAnnual),annual_if_new_rate:money(newAnnual),monthly_equivalent:money(p.annual/12)
+      };
     },
     cat(v){
       const advanced=Boolean(v.__advanced), thresholds={A:400000,B:40000,C:20000}, threshold=thresholds[v.group]||0;
@@ -1011,8 +1034,14 @@
       };
     },
     rent_credit(v){
-      const rentBased=v.rent*.20, cap=v.joint==='yes'?2000:1000, credit=Math.min(rentBased,cap,v.income_tax_liability), usable=Math.max(0,credit);
-      return {rent_based:money(rentBased),statutory_cap:money(cap),credit:money(usable),rent_for_max:money(cap/.20),unused_cap:money(Math.max(0,cap-usable))};
+      const rent=Math.max(0,v.rent),liability=Math.max(0,v.income_tax_liability),rentBased=rent*.20,cap=v.joint==='yes'?2000:1000;
+      const credit=Math.min(rentBased,cap,liability),usable=Math.max(0,credit);
+      const limits=[['20% of qualifying rent',rentBased],['2026 statutory cap',cap],['available Income Tax liability',liability]].sort((a,b)=>a[1]-b[1]);
+      return {
+        rent_based:money(rentBased),statutory_cap:money(cap),credit:money(usable),rent_for_max:money(cap/.20),
+        unused_cap:money(Math.max(0,cap-usable)),binding_limit:limits[0][0],
+        effective_rent_relief:pct(rent?usable/rent*100:0)
+      };
     },
     help_to_buy(v){
       const propertyValue=Math.max(0,v.property_value), taxPaid=Math.max(0,v.tax_paid), affordable=v.__advanced?Math.max(0,v.la_affordable_contribution||0):0;
@@ -1389,9 +1418,13 @@
       };
     },
     ber_energy(v){
-      const current=v.area*v.current_kwh_m2, target=v.area*v.target_kwh_m2, currentCost=current*v.energy_price, targetCost=target*v.energy_price;
+      const area=Math.max(0,v.area),currentRate=Math.max(0,v.current_kwh_m2),targetRate=Math.max(0,v.target_kwh_m2),price=Math.max(0,v.energy_price);
+      const current=area*currentRate,target=area*targetRate,currentCost=current*price,targetCost=target*price,saving=currentCost-targetCost;
+      const energyReduction=current>0?(current-target)/current*100:0,costReduction=currentCost>0?saving/currentCost*100:0;
       return {
-        current_use:num(current)+' kWh',target_use:num(target)+' kWh',current_cost:money(currentCost),target_cost:money(targetCost),saving:money(currentCost-targetCost),
+        current_use:num(current)+' kWh',target_use:num(target)+' kWh',current_cost:money(currentCost),target_cost:money(targetCost),saving:(saving>=0?'+':'-')+money(Math.abs(saving)),
+        monthly_saving:(saving>=0?'+':'-')+money(Math.abs(saving/12)),energy_reduction:pct(energyReduction),cost_reduction:pct(costReduction),
+        ten_year_saving:(saving>=0?'+':'-')+money(Math.abs(saving*10)),
         __chart:{type:'bar',title:'Current versus target energy-cost illustration',caption:'Uses the same blended energy-price assumption for both scenarios.',labels:['Current','Target'],series:[{label:'Annual energy cost',values:[currentCost,targetCost]}]}
       };
     },
