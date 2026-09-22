@@ -84,6 +84,27 @@ It does not deduct hypothetical Capital Gains Tax, transaction costs, pension ta
 
 The calculator runs entirely in your browser. Compound does not receive the values you enter.
 
+## Worked example
+
+Consider a household with:
+
+- a home worth €400,000;
+- €20,000 in cash;
+- €30,000 in investments;
+- €80,000 in pension funds;
+- a €250,000 mortgage;
+- and a €10,000 car/personal loan.
+
+Total assets are €530,000 and total liabilities are €260,000, producing an estimated **net worth of €270,000**.
+
+Within that number, home equity is €150,000. The pension is part of long-term wealth but is not normally available like a bank balance. That is why Compound also separates property equity, financial assets and net worth excluding pension pots rather than treating every euro of wealth as equally liquid.
+
+## Method and limitations
+
+The calculation is current asset values minus current liabilities. Property equity is property value minus related secured borrowing. The debt-to-assets ratio divides total liabilities by total assets.
+
+No hypothetical selling tax, transaction cost or future market movement is deducted. Private businesses, property, vehicles and valuables can be difficult to value accurately. Use consistent valuation methods if you track the figure over time.
+
 ## Frequently asked questions
 
 ### Should I include my pension?
