@@ -66,6 +66,17 @@ jobs:
           grep -Fq '/pension-projection-calculator/' /tmp/tools.html
           grep -Fq '/rent-vs-buy-calculator/' /tmp/tools.html
           grep -Fq '/solar-payback-calculator/' /tmp/tools.html
+          grep -Fq '/net-worth-calculator/' /tmp/tools.html
+          grep -Fq '/debt-repayment-calculator/' /tmp/tools.html
+
+          fetch https://compound.ie/net-worth-calculator/ /tmp/net-worth.html
+          grep -Fq 'data-tool-name="net-worth-calculator"' /tmp/net-worth.html
+          grep -Fq '20260922-responsive1' /tmp/net-worth.html
+
+          fetch https://compound.ie/debt-repayment-calculator/ /tmp/debt-repayment.html
+          grep -Fq 'data-debt-calculator' /tmp/debt-repayment.html
+          grep -Fq 'Debt avalanche' /tmp/debt-repayment.html
+          grep -Fq '20260922-responsive1' /tmp/debt-repayment.html
 
           fetch https://compound.ie/take-home-pay-calculator/ /tmp/take-home.html
           grep -Fq 'Take-Home Pay Calculator Ireland 2026' /tmp/take-home.html
@@ -227,7 +238,7 @@ jobs:
           fetch https://compound.ie/whole-house-retrofit-planner/ /tmp/retrofit.html
           grep -Fq 'data-calculator="retrofit_planner"' /tmp/retrofit.html
 
-          fetch https://compound.ie/static/tools.js?v=20260921e /tmp/tools.js
+          fetch https://compound.ie/static/tools.js?v=20260922-responsive1 /tmp/tools.js
           grep -Fq 'take_home_2026' /tmp/tools.js
           grep -Fq 'renderToolChart' /tmp/tools.js
           grep -Fq 'myfuturefund' /tmp/tools.js
