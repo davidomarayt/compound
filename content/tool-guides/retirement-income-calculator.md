@@ -4,11 +4,15 @@ This tool translates a retirement pot into an indicative stream of income under 
 
 ## How to read the result
 
-A monthly or annual withdrawal is not the same thing as a guaranteed pension. An investment portfolio can rise and fall, and a fixed withdrawal can become unsustainable if returns are weaker than assumed or inflation is higher.
+The first three income results describe the **first modelled retirement year**: portfolio withdrawal plus any State Pension and other income you enter.
+
+Advanced mode then adds a deterministic sustainability illustration. The portfolio grows at the constant annual return entered, while the portfolio withdrawal starts at the selected percentage of the original pot and increases each year with the inflation assumption. The tool shows the portfolio remaining at the end of the chosen period and whether the smooth-return model depletes it.
+
+A monthly or annual withdrawal is not the same thing as a guaranteed pension. Real investment returns arrive unevenly, and a fixed real spending path can become unsustainable if returns are weaker or badly sequenced.
 
 ## Worked example
 
-A €500,000 portfolio supporting €25,000 of annual withdrawals starts at a 5% withdrawal rate before tax and fees. Whether that lasts 30 years depends on returns, inflation, charges and the sequence in which returns occur.
+A €500,000 portfolio at a 5% starting withdrawal produces €25,000 of first-year portfolio income before tax and fees. With a smooth 4% annual portfolio return, 2% annual increases in that withdrawal and a 30-year horizon, the calculator then steps the portfolio forward year by year and shows whether capital remains. A real portfolio will not follow that smooth path because market returns are volatile and sequence matters.
 
 ## Irish context
 
@@ -42,7 +46,11 @@ Not as a full personal tax calculation.
 
 ## Method and limitations
 
-The calculator projects the entered retirement pot forward under a constant return and withdrawal assumption. It is deterministic, so it does not simulate market volatility, sequence risk, changing tax rules or individual pension-product restrictions.
+First-year portfolio income is the starting pot multiplied by the withdrawal rate. State Pension and other income are added to that figure for the first-year gross-income results.
+
+For the Advanced sustainability path, the portfolio is grown once per year at the constant return entered, then the modelled portfolio withdrawal is deducted. That withdrawal increases annually at the inflation rate. State Pension and other income are **not** used to reduce portfolio withdrawals in this model; they are shown separately as income sources.
+
+The projection is deterministic. It does not simulate market volatility or sequence-of-returns risk, and it does not include tax, fund charges, changing State Pension rates, ARF rules or individual pension-product restrictions.
 
 ### Useful sources
 
