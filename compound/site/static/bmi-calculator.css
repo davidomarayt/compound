@@ -2,3 +2,15 @@
 
 .bmi-result h2,.bmi-result h3{color:inherit}
 .bmi-reference-result{border-top:1px solid #769489;margin-top:28px;padding-top:22px}.bmi-reference-result h3{font-size:22px;margin:6px 0}
+
+/* Responsive integrity guardrails */
+.bmi-workspace>*,
+.bmi-result,
+.bmi-number,
+.bmi-reference-result,
+.bmi-waist-result{min-width:0}
+.bmi-number>span:first-child,
+.bmi-empty-number{
+  max-width:100%;
+  overflow-wrap:anywhere;
+}
