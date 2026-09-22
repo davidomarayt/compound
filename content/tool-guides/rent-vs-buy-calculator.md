@@ -182,7 +182,7 @@ This is one reason a 35-year comparison can look very different from a 10-year c
 
 ## Use realistic Irish buying costs
 
-CCPC guidance highlights that a home-buying budget extends beyond the deposit and includes items such as legal fees, Stamp Duty, valuation and insurance. citeturn338676search0turn338676search4
+CCPC guidance highlights that a home-buying budget extends beyond the deposit and includes items such as legal fees, Stamp Duty, valuation and insurance.
 
 For a more detailed purchase budget, use the [House Buying Costs Calculator](/house-buying-costs-calculator/) first and transfer a realistic non-Stamp-Duty cost estimate into this model.
 
