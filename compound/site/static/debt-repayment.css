@@ -1,0 +1,244 @@
+.debt-tool-page{padding-top:54px}
+.debt-tool-header{max-width:980px}
+.debt-priority-note{
+  display:grid;
+  grid-template-columns:54px minmax(0,1fr);
+  gap:20px;
+  align-items:start;
+  margin:30px 0 36px;
+  padding:24px 26px;
+  border:1px solid #dfd0c8;
+  border-left:4px solid #a45f42;
+  background:#f7eee9
+}
+.debt-priority-icon{
+  width:42px;height:42px;border-radius:50%;
+  display:grid;place-items:center;
+  background:#a45f42;color:#fffdf9;
+  font:700 1rem var(--sans)
+}
+.debt-priority-note h2{font:400 1.75rem/1.15 var(--serif);margin:.2rem 0 .55rem}
+.debt-priority-note p:not(.eyebrow){margin:.2rem 0 .7rem;color:var(--ink-2);line-height:1.65}
+.debt-priority-note a{font-weight:700;color:#7b452f;text-decoration:underline;text-underline-offset:3px}
+
+.debt-workspace{
+  display:grid;
+  grid-template-columns:minmax(0,1.42fr) minmax(300px,.58fr);
+  border:1px solid var(--line);
+  background:var(--surface);
+  margin:36px 0 62px
+}
+.debt-form{padding:36px;border-right:1px solid var(--line)}
+.debt-form-intro{max-width:760px}
+.debt-form h2,.debt-summary-panel h2,.debt-comparison h2,.debt-chart-panel h2{
+  font:400 2.1rem/1.1 var(--serif);margin:.25rem 0 .65rem
+}
+.debt-form-intro>p:last-child,.debt-comparison>header>p:last-child,.debt-chart-panel header>p:last-child{
+  color:var(--ink-2);line-height:1.6
+}
+.debt-budget-row{
+  display:grid;
+  grid-template-columns:minmax(220px,1fr) minmax(180px,240px);
+  gap:8px 18px;
+  align-items:center;
+  margin:28px 0;
+  padding:20px 0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line)
+}
+.debt-budget-row label{font-weight:700}
+.debt-budget-row small{grid-column:1/-1;color:var(--ink-3);line-height:1.5}
+.debt-budget-row .tool-input-wrap input{font-size:1.05rem}
+
+.debt-table{margin-top:24px}
+.debt-table-head,.debt-row{
+  display:grid;
+  grid-template-columns:minmax(130px,1.35fr) minmax(115px,.9fr) minmax(90px,.65fr) minmax(130px,.95fr) 38px;
+  gap:10px;
+  align-items:end
+}
+.debt-table-head{
+  padding:0 0 8px;
+  border-bottom:1px solid var(--line);
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--ink-3)
+}
+.debt-row{
+  padding:14px 0;
+  border-bottom:1px solid var(--line)
+}
+.debt-cell{display:flex;flex-direction:column;gap:6px;min-width:0}
+.debt-cell label{display:none;font-size:.72rem;font-weight:700;color:var(--ink-3)}
+.debt-cell input{
+  width:100%;
+  min-width:0;
+  border:1px solid var(--line-2);
+  background:var(--paper);
+  color:var(--ink);
+  font:500 1rem var(--sans);
+  padding:.84rem;
+  border-radius:2px
+}
+.debt-cell input:focus{
+  outline:3px solid color-mix(in srgb,var(--wealth) 22%,transparent);
+  border-color:var(--wealth)
+}
+.debt-input-affix{position:relative}
+.debt-input-affix>span{
+  position:absolute;left:.78rem;top:50%;transform:translateY(-50%);
+  color:var(--ink-3);pointer-events:none
+}
+.debt-input-affix input{padding-left:1.75rem}
+.debt-input-affix.debt-input-percent>span{left:auto;right:.8rem}
+.debt-input-affix.debt-input-percent input{padding-left:.84rem;padding-right:2rem}
+.debt-remove{
+  width:36px;height:42px;border:0;background:transparent;
+  color:var(--muted);font-size:1.3rem;cursor:pointer;border-radius:2px
+}
+.debt-remove:hover{background:#f1e9e4;color:#8a3030}
+.debt-remove:focus-visible{outline:3px solid #b97253}
+.debt-row-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.debt-form-hint{font-size:.78rem;color:var(--ink-3);margin:.75rem 0 0}
+.debt-form .tool-error{margin:.8rem 0 .3rem}
+
+.debt-summary-panel{
+  padding:36px;
+  background:#edf2ef
+}
+.debt-summary-grid{display:grid;gap:1px;background:#cad8d0;margin-top:26px}
+.debt-summary-grid>div{background:#fffdf9;padding:19px}
+.debt-summary-grid span{display:block;font-size:.75rem;color:var(--ink-3);margin-bottom:.4rem}
+.debt-summary-grid strong{display:block;font:400 1.8rem/1 var(--serif);letter-spacing:-.025em}
+.debt-summary-total{background:#365e4f!important;color:#fffdf9}
+.debt-summary-total span{color:#dce9e1}
+.debt-summary-total strong{color:#fffdf9;font-size:2.1rem}
+.debt-interest-warning{
+  margin:20px 0 0;
+  padding:14px 15px;
+  background:#fff8e5;
+  border:1px solid #e8d69d;
+  font-size:.82rem;
+  line-height:1.55;
+  color:#685529
+}
+
+.debt-comparison{margin:0 0 64px}
+.debt-comparison>header{max-width:780px;margin-bottom:22px}
+.debt-strategy-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px
+}
+.debt-strategy-card{
+  border:1px solid var(--line);
+  background:var(--surface);
+  padding:28px
+}
+.debt-strategy-avalanche{border-top:4px solid #365e4f}
+.debt-strategy-snowball{border-top:4px solid #9a6b4d}
+.debt-strategy-title{display:flex;gap:14px;align-items:center;margin-bottom:24px}
+.debt-strategy-mark{
+  width:42px;height:42px;border-radius:50%;display:grid;place-items:center;
+  flex:0 0 42px;background:#365e4f;color:#fff;font-weight:700
+}
+.debt-strategy-snowball .debt-strategy-mark{background:#9a6b4d}
+.debt-strategy-title h3{font:400 2rem/1 var(--serif);margin:.1rem 0 0}
+.debt-metrics{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1px;
+  background:var(--line)
+}
+.debt-metrics>div{background:#fffdf9;padding:18px;min-width:0}
+.debt-metrics span,.debt-order>span{display:block;font-size:.74rem;color:var(--ink-3);margin-bottom:.45rem}
+.debt-metrics strong{display:block;font:400 clamp(1.45rem,3vw,2.05rem)/1.03 var(--serif);overflow-wrap:anywhere}
+.debt-metrics small{display:block;color:var(--muted);margin-top:.45rem;line-height:1.4}
+.debt-order{margin-top:22px}
+.debt-order ol{display:flex;gap:8px;flex-wrap:wrap;list-style:none;padding:0;margin:9px 0 0}
+.debt-order li{
+  padding:8px 10px;border:1px solid var(--line);background:#f8f6f1;
+  font-size:.8rem;border-radius:20px
+}
+.debt-comparison-callout{
+  margin-top:18px;
+  padding:18px 20px;
+  border:1px solid var(--line);
+  background:#f6f2ea;
+  font-size:.93rem;
+  line-height:1.6
+}
+.debt-comparison-callout strong{color:#365e4f}
+
+.debt-chart-panel{
+  margin:0 0 68px;
+  padding:32px 36px 26px;
+  border:1px solid var(--line);
+  background:var(--surface)
+}
+.debt-chart-panel header{max-width:760px;margin-bottom:20px}
+.debt-chart-scroll{width:100%;overflow-x:auto}
+.debt-chart-canvas{min-width:680px}
+.debt-chart-svg{display:block;width:100%;height:auto}
+.debt-chart-grid{stroke:var(--line);stroke-width:1}
+.debt-chart-axis{fill:var(--ink-3);font:11px var(--sans)}
+.debt-chart-a{fill:none;stroke:#365e4f;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.debt-chart-s{fill:none;stroke:#9a6b4d;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.debt-chart-legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font-size:.82rem;color:var(--ink-2)}
+.debt-chart-legend span{display:inline-flex;align-items:center;gap:7px}
+.debt-chart-legend i{width:18px;height:3px;display:inline-block}
+.debt-line-a{background:#365e4f}.debt-line-s{background:#9a6b4d}
+
+.debt-method-strip{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line);
+  margin:0 0 72px
+}
+.debt-method-strip article{background:#fffdf9;padding:26px}
+.debt-method-strip article>span{font-size:.72rem;letter-spacing:.08em;color:var(--wealth);font-weight:700}
+.debt-method-strip h3{font:400 1.55rem/1.1 var(--serif);margin:.5rem 0 .7rem}
+.debt-method-strip p{margin:0;color:var(--ink-2);font-size:.9rem;line-height:1.6}
+
+@media(max-width:900px){
+  .debt-workspace{grid-template-columns:1fr}
+  .debt-form{border-right:0;border-bottom:1px solid var(--line)}
+  .debt-strategy-grid{grid-template-columns:1fr}
+  .debt-method-strip{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .debt-table-head{display:none}
+  .debt-row{
+    grid-template-columns:repeat(2,minmax(0,1fr)) 36px;
+    gap:12px;
+    padding:18px 0
+  }
+  .debt-cell label{display:block}
+  .debt-cell-name{grid-column:1/-2}
+  .debt-remove{grid-column:3;grid-row:1;align-self:end}
+  .debt-cell-payment{grid-column:1/-1}
+  .debt-budget-row{grid-template-columns:1fr}
+  .debt-budget-row small{grid-column:auto}
+  .debt-metrics{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .debt-tool-page{padding-top:38px}
+  .debt-priority-note{grid-template-columns:1fr;padding:20px}
+  .debt-priority-icon{width:36px;height:36px}
+  .debt-form,.debt-summary-panel,.debt-strategy-card{padding:22px}
+  .debt-chart-panel{padding:24px 18px}
+  .debt-chart-canvas{min-width:560px}
+  .debt-summary-grid strong{font-size:1.6rem}
+  .debt-summary-total strong{font-size:1.9rem}
+}
+@media(max-width:420px){
+  .debt-row{grid-template-columns:1fr 1fr 34px}
+  .debt-cell-balance,.debt-cell-apr{min-width:0}
+  .debt-cell input{font-size:16px;padding:.78rem .7rem}
+  .debt-input-affix>span{left:.65rem}
+  .debt-input-affix input{padding-left:1.55rem}
+}
