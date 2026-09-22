@@ -228,6 +228,238 @@ tools:
       Returns are not guaranteed. For a bank savings account, use a realistic deposit rate and remember that tax can reduce the interest you keep. For investments, a smooth annual return is only an illustration; real returns move up and down.
     sources: []
 
+
+  - slug: net-worth-calculator
+    title: Net Worth Calculator Ireland
+    category: Saving & Investing
+    formula: net_worth
+    summary: Build a clear household balance-sheet snapshot from your assets and debts, then see what is driving your net worth.
+    meta_description: Net worth calculator Ireland. Add savings, investments, pensions, property and debts to estimate household net worth, property equity and debt-to-assets.
+    updated: 2026-09-22
+    basic_note: Start with the big balance-sheet items. You can get a useful first snapshot in under two minutes.
+    advanced_note: Advanced mode adds other property, vehicles, business interests and additional liabilities. Use current values and avoid counting the same asset twice.
+    result_note: A balance-sheet snapshot, not a measure of income or financial security. Some assets are difficult to value or access quickly, and market values can change.
+    fields:
+      - id: cash
+        label: Cash & bank accounts
+        type: number
+        prefix: "€"
+        default: 15000
+        min: 0
+        step: 100
+        section_start: Assets
+        help: "Current accounts, savings accounts, credit-union balances and cash. Use today's balance rather than an annual average."
+      - id: investments
+        label: Shares, funds & other investments
+        type: number
+        prefix: "€"
+        default: 10000
+        min: 0
+        step: 100
+        help: "Use current market value before any tax that might arise on a future sale. Do not include pension funds here."
+      - id: pensions
+        label: Pension & retirement pots
+        type: number
+        prefix: "€"
+        default: 50000
+        min: 0
+        step: 100
+        help: "Use the current fund or transfer value if you know it — not a projected retirement value or future pension income."
+      - id: home_value
+        label: Main home market value
+        type: number
+        prefix: "€"
+        default: 350000
+        min: 0
+        step: 1000
+        help: "Use a realistic current estimate, not necessarily the price you paid. Leave at €0 if you do not own your home."
+      - id: other_property
+        label: Other property / land
+        type: number
+        prefix: "€"
+        default: 0
+        min: 0
+        step: 1000
+        advanced: true
+        help: "Estimated current value of rental property, holiday homes, land or other real estate."
+      - id: vehicles
+        label: Vehicles
+        type: number
+        prefix: "€"
+        default: 0
+        min: 0
+        step: 500
+        advanced: true
+        help: "Use realistic resale value, not the original purchase price."
+      - id: business_value
+        label: Business ownership
+        type: number
+        prefix: "€"
+        default: 0
+        min: 0
+        step: 1000
+        advanced: true
+        help: "Only include a defensible estimate of the value of your ownership interest. Private businesses can be especially difficult to value."
+      - id: other_assets
+        label: Other material assets
+        type: number
+        prefix: "€"
+        default: 0
+        min: 0
+        step: 100
+        advanced: true
+        help: "For example valuables or other assets you would genuinely include on a household balance sheet. Avoid double counting."
+      - id: mortgage
+        label: Main home mortgage balance
+        type: number
+        prefix: "€"
+        default: 250000
+        min: 0
+        step: 1000
+        section_start: Debts
+        help: "Enter the outstanding principal balance, not the sum of all future scheduled repayments."
+      - id: other_property_mortgage
+        label: Mortgage on other property
+        type: number
+        prefix: "€"
+        default: 0
+        min: 0
+        step: 1000
+        advanced: true
+        help: "Outstanding mortgage or secured borrowing linked to the other property entered above."
+      - id: loans
+        label: Personal & car loans
+        type: number
+        prefix: "€"
+        default: 10000
+        min: 0
+        step: 100
+        help: "Outstanding balances on personal loans, car loans or hire-purchase borrowing."
+      - id: credit_cards
+        label: Credit cards & overdrafts
+        type: number
+        prefix: "€"
+        default: 0
+        min: 0
+        step: 50
+        help: "Use the amount currently owed, including any overdraft balance you want included."
+      - id: other_debt
+        label: Other debts
+        type: number
+        prefix: "€"
+        default: 0
+        min: 0
+        step: 100
+        help: "Other personal liabilities not already counted above."
+      - id: tax_liabilities
+        label: Tax / other material liabilities
+        type: number
+        prefix: "€"
+        default: 0
+        min: 0
+        step: 100
+        advanced: true
+        help: "Include known material amounts owed if you want them reflected in the snapshot."
+    results:
+      - {id: net_worth, label: Estimated net worth}
+      - {id: total_assets, label: Total assets}
+      - {id: total_liabilities, label: Total liabilities}
+      - {id: property_equity, label: Property equity}
+      - {id: financial_assets, label: Cash + investments + pensions}
+      - {id: net_ex_pension, label: Net worth excluding pension pots}
+      - {id: debt_asset_ratio, label: Debt-to-assets ratio}
+    guide: |
+      ## What net worth actually measures
+
+      **Net worth is a balance-sheet number:** the current value of what you own minus the current amount you owe.
+
+      The Central Statistics Office uses essentially the same framework when measuring Irish household wealth. In the Household Finance and Consumption Survey, **gross wealth** is the value of real and financial assets, while **net wealth** is gross wealth less debt.
+
+      That sounds simple, but the quality of the result depends on the quality of the values you enter. A bank balance is precise. The value of a home, private business, vehicle or collection of valuables is an estimate. This calculator is designed to make those assumptions visible rather than create false precision.
+
+      ## What to count as an asset
+
+      For a personal or household net-worth snapshot, common assets include:
+
+      - cash in current, savings and credit-union accounts;
+      - shares, funds and other investments at current market value;
+      - pension and retirement funds at their current fund value;
+      - your main home and other property at a realistic current market value;
+      - vehicles, business interests and other material assets where a reasonable current value can be estimated.
+
+      The CSO's Irish household wealth survey similarly includes main residences, other property, land, businesses, vehicles and valuables as real assets, alongside deposits, shares, funds, voluntary pensions and other financial assets.
+
+      The important rule is **do not count the same value twice**. If a business owns a property and your estimate of the business already includes that property, do not add the property again personally. Likewise, do not include a pension fund inside “investments” and then again under “pensions”.
+
+      ## Use current value, not what you originally paid
+
+      Net worth is intended to be a snapshot of the balance sheet **today**.
+
+      A home bought for €250,000 that could reasonably sell for €350,000 is a €350,000 asset for this purpose. A car bought for €40,000 that might now sell for €22,000 is closer to a €22,000 asset.
+
+      The opposite is true for debt. Enter the **current outstanding balance**, not the original amount borrowed and not the total of all future repayments including future interest.
+
+      ## Why pensions are included — and also shown separately
+
+      Pension assets can be a major part of long-term household wealth, but they are not the same as cash in a savings account. Access is restricted and the eventual amount available can be affected by investment performance, pension rules and taxation.
+
+      Compound therefore includes pension pots in the main net-worth figure but also shows **net worth excluding pensions**. That second number is not “liquid net worth” — your home and other illiquid assets may still be included — but it helps separate retirement assets from the rest of the balance sheet.
+
+      ## Property equity is not the same as property value
+
+      If a home is worth €400,000 and the mortgage balance is €250,000, the household has approximately **€150,000 of home equity** before selling costs and any other adjustments.
+
+      Compound's property-equity result combines the property values you enter and subtracts the related mortgage balances. Property equity can be negative if secured debt exceeds the estimated property value.
+
+      ## Debt-to-assets: useful, but not a score
+
+      The debt-to-assets ratio divides total liabilities by total assets. A household with €100,000 of debt and €400,000 of assets has a 25% ratio.
+
+      Lower leverage generally means more of the asset base is financed by the household's own equity, but there is no universal “good” percentage for an individual household. Age, income stability, mortgage stage, interest rates, liquidity and the type of assets and debts all matter.
+
+      The Central Bank also tracks household debt relative to assets at an economy-wide level. Those national figures are useful context, but they should not be treated as a personal target.
+
+      ## Irish context: useful perspective, not a leaderboard
+
+      The CSO's 2023 Household Finance and Consumption Survey reported **median household net wealth of €256,900**. The main residence represented 46% of gross household wealth, and 66% of households had some form of debt.
+
+      Those statistics describe households across Ireland, not an appropriate target for any one person. Household size, age, home ownership, pension coverage, region and life stage all have a large effect on the number. A 28-year-old renter and a mortgage-free retired couple should not expect similar balance sheets.
+
+      More recent Central Bank aggregate data show the same broad lesson: housing and pension/financial assets make up a large share of Irish household wealth, while household liabilities are dominated by long-term loans.
+
+      ## Net worth is not the same as financial health
+
+      A high net worth can coexist with poor cash flow. Someone may own a valuable home but have little accessible cash and a stretched monthly budget. Conversely, someone early in their career may have a low or negative net worth while having a strong income, manageable debt and a high savings rate.
+
+      For that reason, use this number alongside other questions:
+
+      - Do you have enough accessible cash for emergencies?
+      - Is expensive debt falling over time?
+      - Are pension and long-term investment contributions on track?
+      - Is your monthly cash flow sustainable?
+      - Is too much of your wealth concentrated in one asset?
+
+      Net worth is most useful as a **trend you track against your own previous position**, not as a single score.
+
+      ## A simple way to use this calculator
+
+      Pick a date — for example the end of each quarter or year — and use reasonably consistent valuation methods each time.
+
+      Keep bank and investment balances exact where possible. For property, vehicles and private businesses, avoid changing the valuation method merely to make the result look better. Over time, the change in your balance sheet can then be separated into things such as saving, debt repayment and changes in asset values.
+
+      ## Important limitations
+
+      This is an educational balance-sheet calculator, not a formal valuation, insolvency assessment or financial-planning recommendation.
+
+      It does not deduct hypothetical Capital Gains Tax, transaction costs, pension tax, estate costs or selling costs from the asset values you enter. Those amounts may matter if an asset is actually sold or transferred. Private-company interests, property and valuables may also sell for materially more or less than an estimate.
+
+      The calculator runs entirely in your browser. Compound does not receive the values you enter.
+
+    sources:
+      - {title: "CSO — Household Finance and Consumption Survey 2023: Wealth and Debt", url: "https://www.cso.ie/en/releasesandpublications/ep/p-hfcs/householdfinanceandconsumptionsurvey2023/wealthanddebt/"}
+      - {title: "CSO — Household Finance and Consumption Survey 2023: Key Findings", url: "https://www.cso.ie/en/releasesandpublications/ep/p-hfcs/householdfinanceandconsumptionsurvey2023/keyfindings/"}
+      - {title: "Central Bank of Ireland — Household Wealth, Q1 2026", url: "https://www.centralbank.ie/statistics/data-and-analysis/household-wealth"}
+
   - slug: regular-savings-calculator
     title: Regular Savings Calculator Ireland
     category: Saving & Investing
