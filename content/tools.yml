@@ -1316,6 +1316,8 @@ tools:
       - {id: fee_high, label: Higher annual fee, type: number, suffix: "%", default: 1.5, min: 0, max: 10, step: 0.05}
       - {id: years, label: Years invested, type: number, default: 25, min: 1, max: 70, step: 1}
     results:
+      - {id: low_net_return, label: Implied annual net return — lower fee}
+      - {id: high_net_return, label: Implied annual net return — higher fee}
       - {id: low_balance, label: Projected balance with lower fee}
       - {id: high_balance, label: Projected balance with higher fee}
       - {id: fee_gap, label: Difference attributable to fee drag and compounding}
