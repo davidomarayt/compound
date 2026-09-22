@@ -40,6 +40,16 @@ Yes, if the relevant property value rises.
 ### Is it the same as Help to Buy?
 No. HTB is a tax-refund scheme.
 
+## Why the future redemption value deserves attention
+
+Shared equity is easiest to understand with a percentage example. If the scheme takes a 10% equity share in a €400,000 home, the initial contribution is €40,000. If the relevant property value later rises to €500,000, buying back the same 10% share could require about €50,000 before allowing for the exact scheme valuation and redemption rules.
+
+The reverse can also happen if the property value falls. This is why the initial euro contribution should not be mentally treated as a fixed loan balance.
+
+A buyer should also think about the timing of redemption. Buying out part of the equity earlier can reduce future exposure to house-price growth, but it requires cash or refinancing capacity. Leaving the share outstanding can preserve short-term liquidity but can make the future cost less certain.
+
+Before committing, read the scheme's current customer documents on valuation, partial redemptions, service charges and what happens on sale, refinance or death. Those contractual details matter as much as the calculator's opening funding gap.
+
 ## Method and limitations
 
 The calculator models the funding gap and the selected shared-equity percentage. It does not determine formal eligibility, future property value, service charges, redemption cost or lender approval.

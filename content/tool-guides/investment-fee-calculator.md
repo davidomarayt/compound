@@ -40,6 +40,16 @@ No. Read the product documentation.
 ### Is the cheapest fund always best?
 No.
 
+## A useful way to compare fee quotes
+
+When two investments appear similar, convert the percentage fee into both an annual euro amount and a long-term opportunity cost.
+
+On a €100,000 portfolio, a 1% annual fee starts at roughly €1,000 a year before allowing for changes in value. But the true long-term cost is larger than the sum of the fees because money deducted in year one is no longer present to earn returns in later years.
+
+Also distinguish between layers of cost. A platform fee, fund ongoing charge, adviser fee and transaction charge can all coexist. Some quoted performance figures are already net of fund-level costs while other charges are deducted separately from your account.
+
+The correct comparison is the **all-in cost for the service and portfolio you will actually use**. A higher fee can still be reasonable if it pays for something valuable, but that value should be explicit rather than assumed.
+
 ## Method and limitations
 
 The calculator projects the same cash flows under the entered gross-return assumptions and deducts annualised fees in the model. It is an illustration and does not reproduce every charging convention or product tax regime.

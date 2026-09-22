@@ -40,6 +40,20 @@ No.
 ### Does it include Help to Buy?
 No. Scheme support is a funding source rather than a purchase cost.
 
+## A practical pre-completion cash checklist
+
+Before signing contracts or approaching completion, separate your money into three buckets:
+
+1. **Funds needed to complete** — deposit balance, Stamp Duty, legal outlays and any amount the solicitor needs.
+2. **Costs triggered by moving** — removals, utility setup, furniture, appliances and immediate repairs.
+3. **Cash you deliberately keep** — an emergency reserve that remains untouched after the keys are collected.
+
+This prevents a common budgeting error where a buyer technically has enough money to close but becomes cash-poor the next day.
+
+Ask the solicitor for an itemised estimate of professional fees and outlays, and ask the lender exactly which valuation or insurance costs must be paid before drawdown. For a second-hand property, survey findings can create a fourth bucket: works that are not legally part of completion but are realistically unavoidable soon afterwards.
+
+The calculator is most useful when you replace every default with an actual quote as the purchase progresses.
+
 ## Method and limitations
 
 The calculator applies standard residential Stamp Duty to the entered price and adds the deposit plus your editable cost estimates. It does not estimate insurance, renovation, lender-specific charges or scheme eligibility.

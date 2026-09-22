@@ -40,6 +40,16 @@ The current standard rate is 33%, but exemptions and reliefs can change the taxa
 ### When must I file?
 Revenue can require a return before tax is actually due in some circumstances; check current filing rules.
 
+## Aggregation and filing can matter before tax is due
+
+CAT thresholds are lifetime-style group thresholds rather than a fresh allowance for each gift or inheritance. Revenue requires relevant prior benefits received since 5 December 1991 in the same group to be aggregated.
+
+That can make an old gift surprisingly important. Someone who previously received €150,000 within Group A does not start again with the full €400,000 threshold for the next Group A inheritance.
+
+There is also a filing rule worth knowing: Revenue states that an IT38 return is generally required when the total taxable value of benefits exceeds 80% of the relevant group threshold, even if the full threshold has not yet been exceeded. Claims for certain reliefs can also trigger filing requirements.
+
+The calculator focuses on estimated tax. It does not tell you whether an IT38 is due, what the valuation date is or whether agricultural, business, dwelling-house or other reliefs apply. Those questions can materially change both paperwork and tax.
+
 ## Method and limitations
 
 The calculator takes the selected group threshold, subtracts relevant prior benefits and applies 33% to the taxable excess under its simplified assumptions. It does not determine relief eligibility or every valuation rule.

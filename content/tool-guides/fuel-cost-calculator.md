@@ -40,6 +40,16 @@ Use the calculator's supported units or convert consistently.
 ### Why does my real cost differ from the rated consumption?
 Driving conditions and behaviour vary from test cycles.
 
+## Fuel is only one part of the cost of driving
+
+Fuel is highly visible because you pay for it repeatedly, but it is often not the largest ownership cost. Depreciation, finance interest, insurance, servicing, tyres, motor tax and repairs can materially exceed the difference between two cars' fuel bills.
+
+That matters when deciding whether to replace a car with a more efficient one. Saving €400 a year in fuel does not automatically justify spending €15,000 more on the replacement vehicle.
+
+A better comparison is **total cost of ownership** over the period you expect to keep the car. Use this calculator to isolate fuel, then add the other costs separately.
+
+Driving style also has a real effect. Repeated short cold journeys, heavy acceleration, roof boxes, low tyre pressure and high motorway speeds can all push real consumption above the figure used in the calculator. If you already own the car, use fuel receipts and distance travelled over several tanks to estimate your own L/100 km rather than relying only on the manufacturer's test figure.
+
 ## Method and limitations
 
 The tool converts distance and fuel consumption into litres used, then multiplies by the entered fuel price. It does not model depreciation, maintenance, insurance or tax.

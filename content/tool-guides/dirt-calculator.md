@@ -40,6 +40,16 @@ Certain qualifying individuals can be exempt or claim refunds under Revenue rule
 ### Does DIRT cover shares or funds?
 No. Those can fall under different tax regimes.
 
+## Gross rate versus the rate you actually keep
+
+Savings accounts are usually advertised using a gross interest rate. DIRT means the amount that lands in your account after tax is lower unless an exemption applies.
+
+At a 3% gross deposit rate, the simple after-DIRT rate for a standard taxable account is roughly 2.01% before allowing for the exact timing of interest payments. That distinction becomes important when comparing deposits with other products: compare **after-tax, after-fee outcomes**, not one product's gross headline rate with another product's net return.
+
+Revenue also provides exemption and refund rules for certain individuals, including qualifying people aged 65 or over and permanently incapacitated people where the relevant income conditions are met. Those are personal eligibility questions rather than something this calculator can infer from an account balance.
+
+For longer-term savings, also compare the after-tax return with inflation. A positive bank balance can still lose purchasing power if the net interest rate is below inflation.
+
 ## Method and limitations
 
 The tool multiplies gross deposit interest by the implemented DIRT rate and subtracts that tax from gross interest. It does not determine exemption eligibility or foreign-account reporting.

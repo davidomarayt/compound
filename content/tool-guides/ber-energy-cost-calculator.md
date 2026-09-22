@@ -40,6 +40,14 @@ Not guarantee, but it indicates a more energy-efficient building under standard 
 ### Is this a replacement for a BER assessment?
 No.
 
+## BER versus your actual energy bills
+
+A useful way to think about BER is as a **standardised building-performance benchmark**. It deliberately holds occupant behaviour constant so one dwelling can be compared with another. Your actual electricity, gas, oil or solid-fuel bills reflect a different question: how you personally use the home.
+
+That distinction explains why an A-rated home can still have a high bill if it is very large, heavily occupied or kept unusually warm, while a lower-rated home can show modest bills if the occupants heat only a small part of it. When planning upgrades, use BER to understand the building and actual bills to understand your behaviour and tariff.
+
+If you are comparing two homes, look at both the BER certificate and the floor area. A larger efficient home can still use more total energy than a smaller less-efficient one. The calculator helps translate the rating-style intensity into a whole-house number so that difference is easier to see.
+
 ## Method and limitations
 
 The calculator multiplies floor area by the entered energy-intensity figures and applies the same blended energy-price assumption to current and target scenarios. It is a planning illustration rather than DEAP software.

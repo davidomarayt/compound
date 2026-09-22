@@ -40,6 +40,16 @@ No.
 ### Does it cover every first-time buyer?
 No. Tax paid, property type, price and other conditions matter.
 
+## The refund mechanics matter
+
+Help to Buy is best understood as a refund of qualifying Income Tax and DIRT already paid, subject to the scheme's other limits. It is therefore possible for two buyers purchasing identical homes to receive different amounts because their recent tax histories differ.
+
+If you are applying as a couple, Revenue looks at the qualifying tax available to the applicants rather than simply multiplying a headline maximum by two. The application and claim stages also happen through Revenue's process, and the developer or contractor must satisfy the relevant scheme requirements.
+
+The scheme can include clawback provisions when conditions are not met after payment. That is another reason not to treat the estimated amount as unconditional cash.
+
+For budgeting, keep three numbers separate: the deposit you have already saved, the HTB amount Revenue has actually confirmed, and other supports such as shared equity. Only once those are clear should you decide how much additional cash you need for the purchase and transaction costs.
+
 ## Method and limitations
 
 The tool applies the scheme limits encoded in the calculator to the values entered. It cannot validate Revenue records, buyer status, developer qualification, mortgage conditions or clawback exposure.

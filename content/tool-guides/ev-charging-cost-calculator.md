@@ -40,6 +40,16 @@ It changes speed; cost depends mainly on kWh price and losses.
 ### Can solar make charging free?
 Solar has an opportunity value and system cost, so 'free' is an oversimplification.
 
+## Home charging, public charging and time of use
+
+The same EV can have very different running costs depending on **where and when** it is charged. Home charging on a low night or smart-tariff rate can be substantially cheaper than repeated use of high-speed public DC chargers.
+
+SEAI notes that home charging is generally the cheapest option and that public high-speed charging is usually more expensive. That means a realistic annual model should reflect your actual charging mix rather than assuming every kWh comes from the cheapest home rate.
+
+Smart tariffs add another layer. If the car is parked overnight, scheduled charging can shift a large flexible load into cheaper periods. From June 2026, dynamic tariffs can also vary every half-hour, so the cheapest time may change day by day.
+
+For a fair petrol-versus-EV comparison, include charging losses and use a blended electricity price if some charging happens away from home. The headline battery efficiency number alone is not enough.
+
 ## Method and limitations
 
 The calculator estimates vehicle energy from distance × kWh/100 km, adjusts for charging efficiency and multiplies by the electricity price entered.

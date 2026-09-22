@@ -40,6 +40,16 @@ No. It applies to the portion above the standard-rate band.
 ### Does this calculate every credit?
 No.
 
+## Marginal tax rate versus effective tax rate
+
+Crossing into the 40% Income Tax band does **not** mean your entire salary is suddenly taxed at 40%. Only the slice above the standard-rate band is taxed at the higher rate before credits.
+
+That is the difference between a **marginal rate** and an **effective rate**. The marginal rate describes the tax on the next euro of taxable income; the effective rate is total Income Tax divided by total income.
+
+For example, a single taxpayer with €50,000 of taxable income in 2026 has €44,000 within the 20% band and €6,000 in the 40% band before credits. The effective Income Tax rate after credits can therefore be far below 40%.
+
+This distinction is important when considering overtime, bonuses or salary increases. Earning more gross income does not make you worse off merely because part of the extra income enters a higher band, although the extra euro can face a higher combined marginal deduction once USC and PRSI are included.
+
 ## Method and limitations
 
 The calculator applies 20% to income within the entered standard-rate band and 40% above it, then subtracts the credits entered, floored at zero. It does not model every relief or personal circumstance.

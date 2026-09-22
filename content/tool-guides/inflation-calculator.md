@@ -40,6 +40,20 @@ Because the price level compounds.
 ### Does this predict future inflation?
 No.
 
+## Nominal returns and real returns
+
+Inflation is especially important when evaluating savings and investments. A portfolio that grows by 5% while prices rise by 3% has not increased purchasing power by the full 5%.
+
+A quick approximation is to subtract inflation from the nominal return, but the precise real return is:
+
+**(1 + nominal return) ÷ (1 + inflation) − 1**
+
+So a 5% nominal return with 3% inflation is about 1.94% real, not exactly 2%.
+
+This same logic matters for salaries and pensions. A 2% pay rise in a year when your cost of living rises 4% is a fall in real purchasing power even though the euro salary is higher.
+
+When modelling goals 10, 20 or 30 years away, consider showing the result both in future euros and in today's money. The future nominal figure is useful for cash planning; the real figure is usually easier for understanding lifestyle.
+
 ## Method and limitations
 
 The calculator compounds the entered amount at the chosen annual inflation rate for the selected years. Purchasing power uses the inverse of the same compounding factor.
