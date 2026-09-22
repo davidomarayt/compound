@@ -44,6 +44,19 @@
     leitrim:.15,limerick:.15,longford:.15,louth:0,mayo:.10,meath:0,monaghan:.15,offaly:.15,
     roscommon:.15,sligo:.15,south_dublin:-.075,tipperary:.15,waterford:.15,westmeath:.15,wexford:.15,wicklow:.06
   };
+  const fhsPriceCeilings = {
+    carlow:375000,cavan:375000,clare:400000,cork_city:500000,cork_county:450000,donegal:400000,
+    dublin_city:500000,dlr:500000,fingal:500000,galway_city:475000,galway_county:450000,kerry:425000,
+    kildare:475000,kilkenny:400000,laois:400000,leitrim:400000,limerick:450000,longford:375000,
+    louth:425000,mayo:425000,meath:475000,monaghan:375000,offaly:375000,roscommon:400000,sligo:400000,
+    south_dublin:500000,tipperary:375000,waterford:{house:400000,apartment:450000,self_build:400000},
+    westmeath:400000,wexford:400000,wicklow:500000
+  };
+  const fhsPriceCeiling = (authority,propertyType) => {
+    const ceiling=fhsPriceCeilings[authority];
+    if(typeof ceiling==='number') return ceiling;
+    return ceiling?.[propertyType] ?? ceiling?.house ?? 0;
+  };
   const pensionPct = age => age < 30 ? .15 : age < 40 ? .20 : age < 50 ? .25 : age < 55 ? .30 : age < 60 ? .35 : .40;
 
   const incomeTax2026 = (income, band, credits) => {
@@ -193,12 +206,17 @@
         return {type:'bar',title:'What limits the Rent Tax Credit?',caption:'The claim is constrained by rent-based calculation, statutory cap and available Income Tax liability.',labels:['Rent-based','Statutory cap','Usable credit'],series:[{label:'Amount',values:[rentBased,cap,Math.max(0,credit)]}]};
       }
       case 'help_to_buy': {
-        const valueCap=v.property_value*.10, ltv=v.property_value>0?v.mortgage/v.property_value*100:0, basic=v.property_value<=500000&&ltv>=70, claim=basic?Math.min(30000,valueCap,v.tax_paid):0;
-        return {type:'bar',title:'Help to Buy constraints',caption:'Illustrates the property-value cap, qualifying tax paid and resulting basic claim estimate.',labels:['10% value cap','Tax paid','Estimated claim'],series:[{label:'Amount',values:[valueCap,v.tax_paid,claim]}]};
+        const affordable=v.__advanced?Math.max(0,v.la_affordable_contribution||0):0;
+        const qualifyingFinance=Math.max(0,v.mortgage)+affordable, valueCap=v.property_value*.10;
+        const ltv=v.property_value>0?qualifyingFinance/v.property_value*100:0, basic=v.property_value<=500000&&ltv>=70;
+        const claim=basic?Math.min(30000,valueCap,v.tax_paid):0;
+        return {type:'bar',title:'Help to Buy refund constraints',caption:'The refund is the lowest applicable amount after the property-value and qualifying-finance screens are met.',labels:['€30k cap','10% value cap','Tax paid','Estimated claim'],series:[{label:'Amount',values:[30000,valueCap,v.tax_paid,claim]}]};
       }
       case 'first_home_scheme': {
-        const htb=v.htb==='yes'?Math.min(v.htb_amount,v.property_value):0, gap=Math.max(0,v.property_value-v.mortgage-v.deposit-htb), max=v.property_value*(v.htb==='yes'?.20:.30);
-        return {type:'bar',title:'Funding gap versus scheme maximum',caption:'A funding-stack view before formal eligibility and property-price-ceiling checks.',labels:['Funding gap','Maximum share'],series:[{label:'Amount',values:[gap,max]}]};
+        const htb=v.htb==='yes'?Math.min(v.htb_amount,v.property_value):0;
+        const depositFunds=Math.max(0,v.deposit)+htb, gap=Math.max(0,v.property_value-v.mortgage-depositFunds);
+        const max=v.property_value*(v.htb==='yes'?.20:.30), ceiling=fhsPriceCeiling(v.authority,v.property_type);
+        return {type:'bar',title:'First Home Scheme funding stack',caption:'Compares the mortgage, deposit/HTB, funding gap and maximum percentage-based FHS contribution. Local price-ceiling eligibility is checked separately.',labels:['Mortgage','Deposit + HTB','Funding gap','Maximum FHS'],series:[{label:'Amount',values:[v.mortgage,depositFunds,gap,max]}]};
       }
       case 'dirt': {
         const tax=v.interest*.33, net=v.interest-tax;
@@ -345,15 +363,19 @@
         break;
       }
       case 'help_to_buy': {
-        const ltv=v.property_value>0?v.mortgage/v.property_value*100:0;
-        items.push(v.property_value<=500000&&ltv>=70?'The inputs pass the calculator’s basic property-value and LTV screen.':'The inputs fail at least one basic property-value/LTV screen.');
-        items.push('Revenue approval and qualifying tax paid still determine the actual claim.');
+        const affordable=v.__advanced?Math.max(0,v.la_affordable_contribution||0):0;
+        const qualifyingFinance=Math.max(0,v.mortgage)+affordable, ltv=v.property_value>0?qualifyingFinance/v.property_value*100:0;
+        items.push(v.property_value<=500000&&ltv>=70?'The inputs pass the calculator’s basic property-value and 70% qualifying-finance screen.':'The inputs fail at least one basic property-value/qualifying-finance screen.');
+        if(affordable>0) items.push('Advanced mode counts '+money(affordable)+' of Local Authority affordable dwelling contribution with the mortgage for the 70% test. First Home Scheme equity is excluded.');
+        else items.push('Revenue approval and qualifying Income Tax/DIRT still determine the actual refund.');
         break;
       }
       case 'first_home_scheme': {
-        const htb=v.htb==='yes'?Math.min(v.htb_amount,v.property_value):0, gap=Math.max(0,v.property_value-v.mortgage-v.deposit-htb);
-        if(v.property_value>0) items.push('The modelled funding gap is about '+pct(gap/v.property_value*100)+' of the property price.');
-        items.push('Shared equity is an ownership interest, not a conventional grant.');
+        const htb=v.htb==='yes'?Math.min(v.htb_amount,v.property_value):0, depositFunds=Math.max(0,v.deposit)+htb;
+        const gap=Math.max(0,v.property_value-v.mortgage-depositFunds), ceiling=fhsPriceCeiling(v.authority,v.property_type);
+        if(v.property_value>0) items.push('The modelled funding gap is '+pct(gap/v.property_value*100)+' of the property price; the selected local price ceiling is '+money(ceiling)+'.');
+        if(gap>0) items.push('If the full '+money(gap)+' equity share remained outstanding, the year-6 service charge would be about '+money(gap*.0175)+' before any redemption.');
+        items.push('Formal eligibility also requires the maximum mortgage available from a participating lender, subject to the scheme rules.');
         break;
       }
       case 'dirt':
@@ -680,14 +702,35 @@
       return {rent_based:money(rentBased),statutory_cap:money(cap),credit:money(Math.max(0,credit))};
     },
     help_to_buy(v){
-      const ltv=v.property_value>0?v.mortgage/v.property_value*100:0, valueCap=v.property_value*.10, basic=v.property_value<=500000&&ltv>=70;
+      const affordable=v.__advanced?Math.max(0,v.la_affordable_contribution||0):0;
+      const qualifyingFinance=Math.max(0,v.mortgage)+affordable, minimumFinance=v.property_value*.70;
+      const ltv=v.property_value>0?qualifyingFinance/v.property_value*100:0, valueCap=v.property_value*.10;
+      const valueOk=v.property_value<=500000, financeOk=ltv>=70, basic=valueOk&&financeOk;
       const claim=basic?Math.min(30000,valueCap,v.tax_paid):0;
-      return {ltv:pct(ltv),value_cap:money(valueCap),claim:money(claim),eligibility:basic?'Passes basic value/LTV check':'Fails basic value/LTV check'};
+      let eligibility='Passes basic value/finance check';
+      if(!valueOk) eligibility='Property value exceeds €500,000';
+      else if(!financeOk) eligibility='Qualifying finance is below 70%';
+      return {ltv:pct(ltv),qualifying_finance:money(qualifyingFinance),minimum_finance:money(minimumFinance),value_cap:money(valueCap),claim:money(claim),eligibility};
     },
     first_home_scheme(v){
-      const htb=v.htb==='yes'?Math.min(v.htb_amount,v.property_value):0, gap=Math.max(0,v.property_value-v.mortgage-v.deposit-htb), maxShare=v.htb==='yes'?.20:.30, maxFhs=v.property_value*maxShare, minFhs=Math.max(v.property_value*.025,10000), share=v.property_value?gap/v.property_value*100:0;
-      let check='Within basic funding range'; if(gap===0)check='No funding gap'; else if(gap<minFhs)check='Gap is below the FHS minimum'; else if(gap>maxFhs)check='Gap exceeds the percentage maximum';
-      return {gap:money(gap),share:pct(share),max_fhs:money(maxFhs),check};
+      const htb=v.htb==='yes'?Math.min(v.htb_amount,v.property_value):0;
+      const depositFunds=Math.max(0,v.deposit)+htb, gap=Math.max(0,v.property_value-v.mortgage-depositFunds);
+      const maxShare=v.htb==='yes'?.20:.30, maxFhs=v.property_value*maxShare, minFhs=Math.max(v.property_value*.025,10000);
+      const share=v.property_value?gap/v.property_value*100:0, ceiling=fhsPriceCeiling(v.authority,v.property_type);
+      const priceOk=v.property_value<=ceiling, depositOk=depositFunds>=v.property_value*.10;
+      const fundingOk=gap>=minFhs&&gap<=maxFhs, serviceBase=(priceOk&&depositOk&&fundingOk)?gap:0;
+      let check='Within calculator’s basic scheme range';
+      if(gap===0) check='No funding gap';
+      else if(!priceOk) check='Above local property price ceiling';
+      else if(!depositOk) check='Deposit / HTB is below 10%';
+      else if(gap<minFhs) check='Gap is below the FHS minimum';
+      else if(gap>maxFhs) check='Gap exceeds the percentage maximum';
+      return {
+        price_ceiling:money(ceiling),gap:money(gap),share:pct(share),max_fhs:money(maxFhs),
+        year6_charge:serviceBase>0?money(serviceBase*.0175):'—',
+        charges_to_year10:serviceBase>0?money(serviceBase*.0175*5):'—',
+        check
+      };
     },
     dirt(v){ const tax=v.interest*.33, net=v.interest-tax; return {dirt:money(tax),net:money(net),retained:pct(v.interest?net/v.interest*100:0)}; },
     contractor_vs_salary(v){
@@ -1157,7 +1200,7 @@
   };
 
   if(typeof globalThis!=='undefined'){
-    globalThis.CompoundToolsTest={calculators,monthlyPayment,incomeTax2026,usc2026,annualClassA2026,selfEmployedNet2026,stampDutyResidential,lptBands,lptAdjust};
+    globalThis.CompoundToolsTest={calculators,monthlyPayment,incomeTax2026,usc2026,annualClassA2026,selfEmployedNet2026,stampDutyResidential,lptBands,lptAdjust,fhsPriceCeilings,fhsPriceCeiling};
   }
   if(typeof document==='undefined') return;
 
