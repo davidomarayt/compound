@@ -14,6 +14,14 @@ A €500 day rate across 220 billable days is €110,000 gross turnover. But 220
 
 Employee and self-employed tax treatment differs. Employees may receive benefits such as paid annual leave, employer pension contributions, sick pay and employment protections. Contractors can have deductible business costs, but genuine self-employment status depends on the actual working relationship, not just the contract label.
 
+## A 2026 self-employed USC detail that matters at higher profits
+
+Revenue applies an additional **3% USC surcharge to non-PAYE income above €100,000**. In practical terms, the standard 8% USC rate on the top band becomes 11% on the slice of non-PAYE income above €100,000.
+
+Compound now includes that surcharge in the contractor side of this comparison. This is important for higher day-rate scenarios because applying only the ordinary USC bands would overstate estimated contractor take-home pay.
+
+For Class S PRSI, the model uses the Department of Social Protection's published **4.2375% blended self-assessment rate for 2026**, subject to the €650 minimum where the Class S liability applies.
+
 ## What can change the answer
 
 Billable days, day rate, allowable expenses, pension contributions, tax credits, VAT registration, insurance and downtime can move the comparison substantially. A one-month gap between contracts can erase a large part of the apparent premium.
@@ -59,4 +67,6 @@ The tool annualises the entered contractor rate and billable days, subtracts sel
 ### Useful sources
 
 - [Revenue — Self-employed people](https://www.revenue.ie/en/self-assessment-and-self-employment/index.aspx)
+- [Revenue — Other rates of USC](https://www.revenue.ie/en/jobs-and-pensions/usc/other-rates.aspx)
+- [Department of Social Protection — PRSI Class S rates](https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/)
 - [Revenue — Code of Practice on Determining Employment Status](https://www.revenue.ie/en/self-assessment-and-self-employment/documents/code-of-practice-on-employment-status.pdf)
