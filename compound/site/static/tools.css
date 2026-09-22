@@ -434,3 +434,8 @@
   text-underline-offset:3px;
 }
 .tool-explainer-main h2[id]{scroll-margin-top:24px}
+
+.tool-page[data-tool-name="car-finance-calculator"] .tool-result-primary strong{
+  font-size:clamp(1.25rem,6cqw,1.9rem);
+  line-height:1.25;
+}
