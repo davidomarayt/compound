@@ -912,7 +912,7 @@
       const deductions=net.tax+net.usc+net.prsi+pension;
       return {
         annual_net:money(net.net),monthly_net:money(net.net/12),paye:money(net.tax),usc:money(net.usc),prsi:money(net.prsi),pension:money(pension),
-        deductions:money(deductions),effective_deductions:pct(v.salary?deductions/v.salary*100:0),next_1000_net:money(Math.max(0,netPlus.net-net.net)),
+        deductions:money(deductions),effective_deductions:pct(v.salary?deductions/v.salary*100:0),next_1000_net:money(netPlus.net-net.net),
         __chart:{type:'bar',title:'Where the gross salary goes',caption:'Estimated 2026 annual amounts using the inputs above.',labels:['Take-home','PAYE','USC','PRSI','Pension'],series:[{label:'Annual amount',values:[net.net,net.tax,net.usc,net.prsi,pension]}]}
       };
     },
@@ -974,16 +974,18 @@
     dirt(v){ const tax=v.interest*.33, net=v.interest-tax; return {dirt:money(tax),net:money(net),retained:pct(v.interest?net/v.interest*100:0)}; },
     contractor_vs_salary(v){
       const employee=employeeNet2026(v.salary,0,44000,0), revenue=v.day_rate*v.billable_days, profit=Math.max(0,revenue-v.contractor_costs), pension=Math.min(v.contractor_pension,profit), contractor=selfEmployedNet2026(profit,pension), diff=contractor.net-employee.net;
-      let breakEven=0;
+      let breakEven=null;
       if(v.billable_days>0){
         let lo=0, hi=Math.max(1000,v.day_rate*3,1);
         const netAt=rate=>{const p=Math.max(0,rate*v.billable_days-v.contractor_costs), pen=Math.min(v.contractor_pension,p);return selfEmployedNet2026(p,pen).net;};
-        while(netAt(hi)<employee.net && hi<10000) hi*=2;
-        for(let i=0;i<60;i++){const mid=(lo+hi)/2;if(netAt(mid)>=employee.net)hi=mid;else lo=mid;}
-        breakEven=hi;
+        while(netAt(hi)<employee.net && hi<1000000) hi*=2;
+        if(netAt(hi)>=employee.net){
+          for(let i=0;i<60;i++){const mid=(lo+hi)/2;if(netAt(mid)>=employee.net)hi=mid;else lo=mid;}
+          breakEven=hi;
+        }
       }
       return {
-        employee_net:money(employee.net),contractor_revenue:money(revenue),contractor_profit:money(profit),contractor_net:money(contractor.net),net_difference:(diff>=0?'+':'')+money(diff),break_even_day_rate:v.billable_days>0?money(breakEven)+'/day':'—',
+        employee_net:money(employee.net),contractor_revenue:money(revenue),contractor_profit:money(profit),contractor_net:money(contractor.net),net_difference:(diff>=0?'+':'')+money(diff),break_even_day_rate:breakEven===null?'—':money(breakEven)+'/day',
         __chart:{type:'bar',title:'Gross and estimated net comparison',caption:'The contractor side excludes the value of employment benefits and uses the stated self-employed assumptions.',labels:['Employee','Contractor'],series:[{label:'Gross / profit',values:[v.salary,profit]},{label:'Estimated take-home',values:[employee.net,contractor.net]}]}
       };
     },
