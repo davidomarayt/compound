@@ -276,3 +276,20 @@ def test_mortgage_calculator_has_flagship_guide():
     assert "/mortgage-overpayment-calculator/" in guide
     assert "/mortgage-switch-calculator/" in guide
     assert "/house-buying-costs-calculator/" in guide
+
+
+def test_every_calculator_has_substantial_educational_depth():
+    content_dir = Path(__file__).parents[1] / "content"
+    tools = load_tools(content_dir)
+
+    assert len(tools) >= 49
+    for tool in tools:
+        words = str(tool.get("guide") or "").split()
+        assert len(words) >= 450, f"{tool['slug']} guide is too thin: {len(words)} words"
+        assert tool.get("sources"), f"{tool['slug']} should expose at least one source"
+        assert "Method" in str(tool.get("guide") or "") or "method" in str(tool.get("guide") or "").lower()
+
+    compound = (content_dir / "compound-calculator-guide.md").read_text()
+    bmi = (content_dir / "bmi-guide.md").read_text()
+    assert len(compound.split()) >= 1800
+    assert len(bmi.split()) >= 1800
