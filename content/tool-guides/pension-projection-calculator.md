@@ -4,11 +4,13 @@ This calculator projects how an existing pension pot plus regular contributions 
 
 ## How to read the result
 
-Separate the future pot into contributions and investment growth. Contributions, employer payments and tax relief can be powerful; the growth component is uncertain. Test more than one return assumption and pay close attention to fees.
+Compound now shows both the **future nominal pension pot** and the same ending pot expressed in **today's money** using the inflation assumption. The nominal figure is what the model projects in future euros; the today's-money figure is usually more useful when asking what that pot might actually buy.
+
+Separate the future pot into contributions and investment growth. Contributions and employer payments are under much more control than market returns. Test more than one return assumption and pay close attention to fees.
 
 ## Worked example
 
-A worker with €50,000 already saved, adding €500 a month for 25 years, will contribute another €150,000 before growth. The ending pot can vary dramatically depending on whether long-run net returns are 3%, 5% or 7%.
+A worker with €50,000 already saved, adding €500 a month for 25 years, will contribute another €150,000 before growth. If the future nominal pot reached €500,000 after 25 years, 2% annual inflation would make that equivalent to only about €305,000 in today's purchasing power. The exact ending pot can vary dramatically with contributions, market returns and fees.
 
 ## Irish context
 
@@ -42,7 +44,15 @@ Be consistent. If you model nominal returns, compare the result with future nomi
 
 ## Method and limitations
 
-The tool compounds the current pot and regular contributions under a constant annual return for the years entered. It does not simulate market volatility, fund-specific fees unless explicitly entered, tax at retirement or changing contribution rules.
+Compound combines the gross annual return and annual fund fee multiplicatively:
+
+**net annual growth factor = (1 + gross return) × (1 − annual fee)**
+
+That net annual growth factor is converted to a monthly rate, and employee plus employer contributions are added each month. The nominal contribution total assumes the entered monthly contributions remain unchanged in cash terms.
+
+The today's-money result divides the final nominal pot by **(1 + inflation)^years**. It is therefore an inflation-adjusted illustration, not a forecast of future purchasing power.
+
+The model does not simulate market volatility, contribution escalation, multiple fund charges, tax at retirement, changing employer contributions or pension-product rules.
 
 ### Useful sources
 
