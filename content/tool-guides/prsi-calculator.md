@@ -2,6 +2,12 @@
 
 PRSI funds access to Ireland's social-insurance system. This calculator estimates employee PRSI under the 2026 Class A assumptions implemented in the tool.
 
+## Comparing the October 2026 rate change
+
+The annual estimate blends the two employee Class A rates used during 2026. The calculator also shows what the same weekly-equivalent earnings would produce if the **pre-October rate applied for all 52 weeks** and if the **post-October rate applied for all 52 weeks**.
+
+Those two full-year figures are comparison scenarios, not alternative 2026 liabilities. The monthly equivalent simply divides the blended annual estimate by 12 for budgeting; actual PRSI is calculated through individual pay periods.
+
 ## How to read the result
 
 PRSI is not simply another Income Tax band. Liability depends on PRSI class, weekly earnings and credits/thresholds. The annual estimate is built from weekly-equivalent earnings.
