@@ -62,6 +62,42 @@ There is also a filing rule worth knowing: Revenue states that an IT38 return is
 
 The calculator focuses on estimated tax. It does not tell you whether an IT38 is due, what the valuation date is or whether agricultural, business, dwelling-house or other reliefs apply. Those questions can materially change both paperwork and tax.
 
+## Treat CAT as a lifetime threshold system, not a one-off inheritance tax
+
+A common mistake is to look only at the current inheritance and compare it with a fresh threshold. Irish CAT group thresholds are **cumulative**. Revenue requires relevant taxable gifts and inheritances taken within the same group threshold since 5 December 1991 to be aggregated.
+
+That means two people receiving the same inheritance today can have very different CAT outcomes because one may already have used a large part of the relevant Group A, B or C threshold.
+
+For benefits taken on or after 2 October 2024, Revenue lists the current thresholds as €400,000 for Group A, €40,000 for Group B and €20,000 for Group C. The current CAT rate is 33% on the taxable balance above the available threshold, subject to the applicable rules and reliefs.
+
+### Build the calculation in the correct order
+
+For planning, use this sequence:
+
+1. identify the correct relationship group,
+2. total prior taxable benefits already taken in that same group,
+3. calculate how much of the threshold remains,
+4. add the taxable value of the new gift or inheritance,
+5. then test whether any specific exemption or relief could change the result.
+
+Do not treat agricultural relief, business relief or dwelling-house relief as automatic deductions. Those regimes depend on eligibility conditions that a generic calculator cannot verify.
+
+### Filing can arise even before a tax bill
+
+CAT compliance is not simply “tax due or no tax due”. Revenue notes that an IT38 return can be required once the total taxable value of benefits reaches more than 80% of the relevant group threshold, even if no CAT is payable at that point. Specific relief claims can also create filing obligations.
+
+That is why the calculator shows an estimated tax position but should not be used as the sole filing test.
+
+### Gifts and inheritances should be modelled together
+
+If you are doing family wealth planning, do not model gifts and inheritances in separate mental buckets where the same CAT group applies. A lifetime gift can use part of the threshold that would otherwise have been available for a later inheritance.
+
+For long-term planning, keep a simple record of the date, disponer, relationship group and taxable value of each relevant benefit. That makes future CAT modelling much more reliable.
+
+Use the [Net Worth Calculator](/net-worth-calculator/) to estimate the size of an estate or balance sheet before modelling a transfer, and the [Investment Fee Calculator](/investment-fee-calculator/) when evaluating the effect of costs on assets that may eventually be transferred.
+
+Revenue's current references are the [CAT group thresholds](https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx), [CAT rates](https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-rates.aspx) and [filing/aggregation overview](https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/index.aspx).
+
 ## Method and limitations
 
 The calculator takes the selected group threshold, subtracts relevant prior benefits and applies 33% to the taxable excess under its simplified assumptions. It does not determine relief eligibility or every valuation rule.
