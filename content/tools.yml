@@ -1465,7 +1465,8 @@ tools:
       - {id: lti_mortgage, label: Central Bank LTI ceiling before exceptions}
       - {id: payment_capacity, label: User-set monthly mortgage capacity}
       - {id: payment_based_mortgage, label: Mortgage supported by that payment}
-      - {id: indicative_mortgage, label: Lower of LTI and payment-based amount}
+      - {id: deposit_based_mortgage, label: Mortgage supported by deposit at 90% LTV}
+      - {id: indicative_mortgage, label: Lower of income, payment and deposit constraints}
       - {id: indicative_price, label: Indicative price including deposit}
     guide: |
       ## Two different constraints
