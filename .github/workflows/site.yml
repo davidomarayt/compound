@@ -26,16 +26,6 @@ jobs:
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: python scripts/news_images.py
-      - name: Persist generated News images
-        shell: bash
-        run: |
-          if ! git diff --quiet -- content compound/site/static/images/news; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add content compound/site/static/images/news
-            git commit -m "Attach automatic images to News stories"
-            git push origin HEAD:"${GITHUB_REF_NAME}"
-          fi
       - run: compound build
         env:
           SITE_BASE_URL: https://compound.ie
