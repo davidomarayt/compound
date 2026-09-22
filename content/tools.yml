@@ -2569,6 +2569,12 @@ tools:
 
       The HSE also advises avoiding alcohol during pregnancy. If alcohol is causing problems in your life or you are concerned about your intake, use HSE alcohol supports or speak with a healthcare professional.
 
+      ## Method and limitations
+
+      The calculator converts each entered drink into grams of pure alcohol using volume × ABV × 0.789, then divides the total by 10 to express the result in Irish standard drinks. Alcohol-derived calories are estimated at approximately 7 kcal per gram. The annual spending and reduction scenarios simply scale the weekly figures entered by the user.
+
+      It does not model drinking pattern across individual days, food intake, body size, medicines, pregnancy, liver function, tolerance, blood alcohol concentration or driving fitness. The HSE guideline comparison is population-level guidance rather than a personalised safety assessment.
+
     sources:
       - {title: "HSE — Weekly low-risk alcohol guidelines and Irish standard drink definition", url: "https://www2.hse.ie/living-well/alcohol/health/improve-your-health/weekly-low-risk-alcohol-guidelines/"}
       - {title: "HSE — Drinks calculator", url: "https://www2.hse.ie/living-well/alcohol/drinks-calculator/"}
