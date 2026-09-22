@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block head_title %}Latest Irish News & Analysis · Compound{% endblock %}
+{% block meta %}<meta name="description" content="The health, wealth and everyday-life news that could matter in Ireland — explained with context, primary sources and the practical Irish angle.">{% endblock %}
+{% block head %}<link rel="canonical" href="{{ site_url }}/news/"><meta property="og:title" content="Compound News · What changed, and why it matters in Ireland"><meta property="og:description" content="Timely health, wealth and everyday-life news, analysed for Ireland."><meta property="og:type" content="website"><meta property="og:url" content="{{ site_url }}/news/">{% endblock %}
+{% block content %}
+<section class="news-hero">
+ <p class="eyebrow">COMPOUND NEWS / WHAT CHANGED</p>
+ <h1>The news that could<br>change your <em>day.</em></h1>
+ <p>Short, sourced explanations of developments in Ireland and abroad — with the practical Irish angle separated from the headline.</p>
+ <div class="news-principles"><span>Primary sources first</span><span>Irish context</span><span>No headline rewriting</span></div>
+</section>
+<div class="section-heading news-list-heading"><div><p class="eyebrow">LATEST</p><h2>What we're following.</h2></div><span>{{ articles|length }} {% if articles|length == 1 %}story{% else %}stories{% endif %}</span></div>
+{% if articles %}
+<div class="story-grid news-story-grid">{% for a in articles %}{% include "_card.html" %}{% endfor %}</div>
+{% else %}
+<section class="editorial-note"><div><p class="eyebrow">NEWSROOM</p><h2>The feed is warming up.</h2><p>Compound only publishes a news story when there is something useful to add: context, an Irish consequence, or a clearer explanation of what changed.</p></div></section>
+{% endif %}
+{% with variant="home" %}{% include "_signup.html" %}{% endwith %}
+{% endblock %}
