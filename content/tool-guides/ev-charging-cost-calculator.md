@@ -50,6 +50,16 @@ Smart tariffs add another layer. If the car is parked overnight, scheduled charg
 
 For a fair petrol-versus-EV comparison, include charging losses and use a blended electricity price if some charging happens away from home. The headline battery efficiency number alone is not enough.
 
+## Advanced mode: model where you actually charge
+
+The cheapest home tariff is not a realistic annual charging price if a meaningful share of your energy comes from public chargers. Advanced mode therefore lets you enter the share charged at home and a separate average public-charging price.
+
+Compound creates a weighted charging price from those two inputs and applies it to the grid energy required after charging losses. The annual-distance input then converts the result into yearly grid kWh and euro cost.
+
+Advanced mode also includes a petrol/diesel comparison using the L/100 km and fuel price you enter. This is an **energy-cost comparison only**. It does not claim an EV is cheaper overall, because purchase price, depreciation, finance, insurance, tax, tyres, servicing and charging-hardware costs are outside that number.
+
+The home/public split can matter as much as vehicle efficiency. An EV charged almost entirely overnight at home can have very different energy economics from the same EV relying heavily on rapid public charging.
+
 ## Method and limitations
 
 The calculator estimates vehicle energy from distance × kWh/100 km, adjusts for charging efficiency and multiplies by the electricity price entered.
