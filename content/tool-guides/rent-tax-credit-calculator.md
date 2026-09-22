@@ -52,6 +52,14 @@ Keep evidence of rent paid and the landlord/property information Revenue require
 
 The credit is valuable, but it should not be treated as a permanent reduction in rent: it is a tax measure with statutory dates and rules that can change.
 
+## See which limit is actually binding
+
+The calculator now makes the three constraints explicit: 20% of qualifying rent, the statutory annual maximum, and the Income Tax liability available to absorb the credit.
+
+For an individual, €5,000 of qualifying annual rent is enough for 20% of rent to reach the €1,000 statutory cap. For a jointly assessed couple or civil partners, €10,000 reaches the €2,000 cap. Paying more qualifying rent does not increase those statutory maxima.
+
+The results therefore show both the qualifying rent needed to reach the statutory cap and any part of that cap left unused in the scenario. A low Income Tax liability can still reduce the usable credit even where enough rent was paid.
+
 ## Method and limitations
 
 The calculator applies the implemented annual credit limit to the qualifying rent/tax assumptions entered. It does not validate tenancy registration, landlord relationships, duplicate claims or every eligibility condition.
