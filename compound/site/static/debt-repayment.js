@@ -1,4 +1,109 @@
 (() => {
+  const chooseTarget = (active, strategy) => {
+    const candidates = active.filter(d => d.balance > 0.005);
+    if (!candidates.length) return null;
+    const sorted = [...candidates].sort((a,b) => {
+      if (strategy === 'avalanche') {
+        if (b.apr !== a.apr) return b.apr - a.apr;
+        if (a.balance !== b.balance) return a.balance - b.balance;
+      } else {
+        if (a.balance !== b.balance) return a.balance - b.balance;
+        if (b.apr !== a.apr) return b.apr - a.apr;
+      }
+      return a.index - b.index;
+    });
+    return sorted[0];
+  };
+
+  const simulate = (inputDebts, extra, strategy) => {
+    const debts = inputDebts.map((d, index) => ({...d, index, paidOff:false}));
+    const startingBalance = debts.reduce((sum,d) => sum + d.balance, 0);
+    const fixedBudget = debts.reduce((sum,d) => sum + d.minimum, 0) + Math.max(0,extra);
+    let totalInterest = 0;
+    let totalPaid = 0;
+    let month = 0;
+    const schedule = [startingBalance];
+    const payoffOrder = [];
+
+    if (fixedBudget <= 0 || startingBalance <= 0) {
+      return {success:false, months:Infinity, interest:Infinity, paid:Infinity, schedule, payoffOrder, first:null};
+    }
+
+    const recordPaid = d => {
+      if (!d.paidOff && d.balance <= 0.005) {
+        d.balance = 0;
+        d.paidOff = true;
+        payoffOrder.push({name:d.name, month});
+      }
+    };
+
+    while (month < 1200) {
+      month += 1;
+
+      for (const d of debts) {
+        if (d.balance <= 0.005) continue;
+        const interest = d.balance * (d.apr / 100 / 12);
+        d.balance += interest;
+        totalInterest += interest;
+      }
+
+      let budgetLeft = fixedBudget;
+
+      for (const d of debts) {
+        if (d.balance <= 0.005) continue;
+        const payment = Math.min(d.balance, d.minimum, budgetLeft);
+        if (payment > 0) {
+          d.balance -= payment;
+          budgetLeft -= payment;
+          totalPaid += payment;
+        }
+        recordPaid(d);
+      }
+
+      let guard = 0;
+      while (budgetLeft > 0.005 && guard < debts.length + 4) {
+        guard += 1;
+        const target = chooseTarget(debts, strategy);
+        if (!target) break;
+        const payment = Math.min(target.balance, budgetLeft);
+        target.balance -= payment;
+        budgetLeft -= payment;
+        totalPaid += payment;
+        recordPaid(target);
+      }
+
+      const remaining = debts.reduce((sum,d) => sum + Math.max(0,d.balance), 0);
+      schedule.push(remaining);
+
+      if (remaining <= 0.005) {
+        return {
+          success:true,
+          months:month,
+          interest:totalInterest,
+          paid:totalPaid,
+          schedule,
+          payoffOrder,
+          first:payoffOrder[0] || null
+        };
+      }
+
+      if (!Number.isFinite(remaining) || remaining > 1e9) break;
+    }
+
+    return {
+      success:false,
+      months:Infinity,
+      interest:totalInterest,
+      paid:totalPaid,
+      schedule,
+      payoffOrder,
+      first:payoffOrder[0] || null
+    };
+  };
+
+  if (typeof globalThis !== 'undefined') globalThis.CompoundDebtTest = {chooseTarget, simulate};
+  if (typeof document === 'undefined') return;
+
   const root = document.querySelector('[data-debt-calculator]');
   if (!root) return;
 
@@ -239,107 +344,6 @@
     }
   };
 
-  const chooseTarget = (active, strategy) => {
-    const candidates = active.filter(d => d.balance > 0.005);
-    if (!candidates.length) return null;
-    const sorted = [...candidates].sort((a,b) => {
-      if (strategy === 'avalanche') {
-        if (b.apr !== a.apr) return b.apr - a.apr;
-        if (a.balance !== b.balance) return a.balance - b.balance;
-      } else {
-        if (a.balance !== b.balance) return a.balance - b.balance;
-        if (b.apr !== a.apr) return b.apr - a.apr;
-      }
-      return a.index - b.index;
-    });
-    return sorted[0];
-  };
-
-  const simulate = (inputDebts, extra, strategy) => {
-    const debts = inputDebts.map((d, index) => ({...d, index, paidOff:false}));
-    const startingBalance = debts.reduce((s,d) => s + d.balance, 0);
-    const fixedBudget = debts.reduce((s,d) => s + d.minimum, 0) + extra;
-    let totalInterest = 0;
-    let totalPaid = 0;
-    let month = 0;
-    const schedule = [startingBalance];
-    const payoffOrder = [];
-
-    if (fixedBudget <= 0 || startingBalance <= 0) {
-      return {success:false, months:Infinity, interest:Infinity, paid:Infinity, schedule, payoffOrder};
-    }
-
-    const recordPaid = d => {
-      if (!d.paidOff && d.balance <= 0.005) {
-        d.balance = 0;
-        d.paidOff = true;
-        payoffOrder.push({name:d.name, month});
-      }
-    };
-
-    while (month < 1200) {
-      month += 1;
-
-      for (const d of debts) {
-        if (d.balance <= 0.005) continue;
-        const interest = d.balance * (d.apr / 100 / 12);
-        d.balance += interest;
-        totalInterest += interest;
-      }
-
-      let budgetLeft = fixedBudget;
-
-      for (const d of debts) {
-        if (d.balance <= 0.005) continue;
-        const payment = Math.min(d.balance, d.minimum, budgetLeft);
-        if (payment > 0) {
-          d.balance -= payment;
-          budgetLeft -= payment;
-          totalPaid += payment;
-        }
-        recordPaid(d);
-      }
-
-      let guard = 0;
-      while (budgetLeft > 0.005 && guard < debts.length + 4) {
-        guard += 1;
-        const target = chooseTarget(debts, strategy);
-        if (!target) break;
-        const payment = Math.min(target.balance, budgetLeft);
-        target.balance -= payment;
-        budgetLeft -= payment;
-        totalPaid += payment;
-        recordPaid(target);
-      }
-
-      const remaining = debts.reduce((s,d) => s + Math.max(0,d.balance), 0);
-      schedule.push(remaining);
-
-      if (remaining <= 0.005) {
-        return {
-          success:true,
-          months:month,
-          interest:totalInterest,
-          paid:totalPaid,
-          schedule,
-          payoffOrder,
-          first:payoffOrder[0] || null
-        };
-      }
-
-      if (!Number.isFinite(remaining) || remaining > 1e9) break;
-    }
-
-    return {
-      success:false,
-      months:Infinity,
-      interest:totalInterest,
-      paid:totalPaid,
-      schedule,
-      payoffOrder,
-      first:payoffOrder[0] || null
-    };
-  };
 
   const setText = (selector, text) => {
     const el = root.querySelector(selector);
