@@ -108,6 +108,11 @@ def fetch(config_path: Path, hours: int, limit: int) -> list[Item]:
                 continue
 
             published = parse_date(entry, now)
+            # Some feeds occasionally expose malformed/future publication dates.
+            # Ignore anything materially in the future rather than letting it
+            # dominate the freshness score.
+            if published > now + dt.timedelta(hours=6):
+                continue
             if published < cutoff:
                 continue
 
