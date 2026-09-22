@@ -8,7 +8,7 @@ Focus on the **difference in ending wealth**, not only the annual fee percentage
 
 ## Worked example
 
-If €100,000 grows for 25 years at 6% before fees, the difference between a 0.5% and 1.5% annual fee can become tens of thousands of euro because the fee drag compounds. The exact result depends on contributions and the return assumption.
+If €100,000 grows for 25 years at 6% before fees, a 0.5% annual fee implies an annual net growth rate of about 5.47%, while a 1.5% fee implies about 4.41%, before tax and under the simplified charging convention used here. Over decades, that difference can become tens of thousands of euro because the fee drag compounds.
 
 ## Irish context
 
@@ -52,7 +52,13 @@ The correct comparison is the **all-in cost for the service and portfolio you wi
 
 ## Method and limitations
 
-The calculator projects the same cash flows under the entered gross-return assumptions and deducts annualised fees in the model. It is an illustration and does not reproduce every charging convention or product tax regime.
+The calculator starts with the same gross annual return for both scenarios. Each annual fee is applied **multiplicatively** to that annual growth factor:
+
+**net growth factor = (1 + gross return) × (1 − annual fee)**
+
+The resulting effective annual net return is converted to an equivalent monthly rate, and the same starting amount and month-end contributions are projected under both fee assumptions.
+
+This is more precise than simply subtracting the fee percentage from the return percentage, although real products can deduct charges at different frequencies and from different parts of an account. The tool does not reproduce every charging convention, transaction cost or Irish investment-tax regime.
 
 ### Useful sources
 
