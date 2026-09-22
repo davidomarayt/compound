@@ -500,6 +500,7 @@
   resetButton.addEventListener('click', loadExample);
 
   const shareButton=root.querySelector('[data-debt-share]');
+  const copyResultsButton=root.querySelector('[data-debt-copy-results]');
   const printButton=root.querySelector('[data-debt-print]');
   const actionStatus=root.querySelector('[data-debt-action-status]');
   if(shareButton) shareButton.addEventListener('click', async()=>{
@@ -508,6 +509,19 @@
     const copied=await copyText(scenarioUrl(debts));
     if(actionStatus) actionStatus.textContent=copied?'Scenario link copied.':'Copy the current page URL to share this scenario.';
     if(window.gtag) window.gtag('event','tool_share',{tool_name:'debt-repayment-calculator'});
+  });
+  if(copyResultsButton) copyResultsButton.addEventListener('click',async()=>{
+    const lines=['Debt Snowball vs Avalanche Calculator Ireland'];
+    const pull=(selector,label)=>{const value=root.querySelector(selector)?.textContent?.trim();if(value&&value!=='—')lines.push(label+': '+value);};
+    pull('[data-summary="balance"]','Total debt');
+    pull('[data-summary="budget"]','Monthly debt budget');
+    pull('[data-avalanche="duration"]','Avalanche payoff time');
+    pull('[data-avalanche="interest"]','Avalanche interest');
+    pull('[data-snowball="duration"]','Snowball payoff time');
+    pull('[data-snowball="interest"]','Snowball interest');
+    const copied=await copyText(lines.join('\n'));
+    if(actionStatus) actionStatus.textContent=copied?'Results copied.':'Could not copy automatically.';
+    if(window.gtag) window.gtag('event','tool_copy_results',{tool_name:'debt-repayment-calculator'});
   });
   if(printButton) printButton.addEventListener('click',()=>window.print());
 
