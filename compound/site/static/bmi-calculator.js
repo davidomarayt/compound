@@ -101,6 +101,46 @@
     }
     get('waist-label').textContent = waistUnit === 'cm' ? '(cm)' : '(inches)';
   }
+  const copyResult = get('copy-result');
+  const printResult = get('print-result');
+  const actionStatus = get('action-status');
+
+  async function copyBmiResult() {
+    if (get('output').hidden) {
+      if (actionStatus) actionStatus.textContent = 'Enter valid measurements first.';
+      return;
+    }
+    const lines = [
+      'BMI Calculator Ireland',
+      'BMI: ' + get('value').textContent + ' kg/m²',
+      'Reference category: ' + get('category').textContent,
+      get('waist-result').textContent
+    ];
+    const value = lines.filter(Boolean).join('\n');
+    let copied = false;
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(value);
+        copied = true;
+      }
+    } catch (e) {}
+    if (!copied) {
+      const ta = document.createElement('textarea');
+      ta.value = value;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'absolute';
+      ta.style.left = '-9999px';
+      document.body.appendChild(ta);
+      ta.select();
+      try { copied = document.execCommand('copy'); } catch (e) {}
+      ta.remove();
+    }
+    if (actionStatus) actionStatus.textContent = copied ? 'Result copied.' : 'Could not copy automatically.';
+  }
+
+  if (copyResult) copyResult.addEventListener('click', copyBmiResult);
+  if (printResult) printResult.addEventListener('click', () => window.print());
+
   form.addEventListener('submit', event => { event.preventDefault(); render(true); if (!get('output').hidden) get('result').focus(); });
   form.addEventListener('input', () => { switchUnits(); render(); });
   form.addEventListener('change', () => { switchUnits(); render(); });
