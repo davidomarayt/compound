@@ -364,6 +364,30 @@ def linked_articles(tool_slug: str, articles: list[Article], n: int = 4) -> list
     return matches[:n]
 
 
+def insert_article_tool_cta(body: str, tool: dict, env: Environment, pillar: str) -> str:
+    """Insert one contextual tool CTA into an article without requiring manual HTML.
+
+    Writers can place it precisely with a standalone [tool-cta] paragraph. Otherwise
+    it is inserted near the middle of the prose at a paragraph boundary. The full
+    related-tools module still appears after the article.
+    """
+    if not body or not tool:
+        return body
+    banner = env.get_template("_article_tool_banner.html").render(tool=tool, pillar=pillar)
+    placeholder = re.compile(r"<p>\s*\[tool-cta\]\s*</p>", re.IGNORECASE)
+    if placeholder.search(body):
+        return placeholder.sub(banner, body, count=1)
+
+    paragraph_ends = [m.end() for m in re.finditer(r"</p>", body, re.IGNORECASE)]
+    if len(paragraph_ends) < 4:
+        return body + banner
+
+    target = len(body) * 0.46
+    candidates = [pos for pos in paragraph_ends if len(body) * 0.30 <= pos <= len(body) * 0.68]
+    insert_at = min(candidates or paragraph_ends, key=lambda pos: abs(pos - target))
+    return body[:insert_at] + banner + body[insert_at:]
+
+
 def long_date(d: date) -> str:
     """'3 September 2026' without relying on strftime('%-d'), which Windows rejects."""
     return f"{d.day} {d.strftime('%B %Y')}"
@@ -569,10 +593,15 @@ def build_site(settings: Settings) -> dict:
 
     tag_map: dict[str, list[Article]] = {}
     for a in articles:
+        linked_tools = [tools_by_slug[s] for s in a.related_tools if s in tools_by_slug]
+        context = article_context(env, settings, a, False)
+        if linked_tools:
+            context["article_body"] = insert_article_tool_cta(
+                context["article_body"], linked_tools[0], env, a.pillar
+            )
         _write(out / a.url.strip("/") / "index.html",
                env.get_template(article_template(a)).render(
-                   **article_context(env, settings, a, False), related=related(a, articles),
-                   linked_tools=[tools_by_slug[s] for s in a.related_tools if s in tools_by_slug]))
+                   **context, related=related(a, articles), linked_tools=linked_tools))
         for t in a.tags:
             tag_map.setdefault(t, []).append(a)
     for t, arts in tag_map.items():
@@ -677,11 +706,15 @@ def render_preview(settings: Settings, token: str, article: Article) -> Path:
     out = settings.public_dir / "preview" / token / "index.html"
     if not (settings.public_dir / "static").exists():
         shutil.copytree(HERE / "static", settings.public_dir / "static", dirs_exist_ok=True)
+    catalogue = tool_catalogue(settings.content_dir, load_tools(settings.content_dir))
+    linked_tools = [catalogue[s] for s in article.related_tools if s in catalogue]
+    context = article_context(env, settings, article, True)
+    if linked_tools:
+        context["article_body"] = insert_article_tool_cta(
+            context["article_body"], linked_tools[0], env, article.pillar
+        )
     _write(out, env.get_template(article_template(article)).render(
-        **article_context(env, settings, article, True), related=[],
-        linked_tools=[tool_catalogue(settings.content_dir, load_tools(settings.content_dir))[s]
-                      for s in article.related_tools
-                      if s in tool_catalogue(settings.content_dir, load_tools(settings.content_dir))]))
+        **context, related=[], linked_tools=linked_tools))
     return out
 
 
