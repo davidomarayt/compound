@@ -50,6 +50,14 @@ For example, a single taxpayer with €50,000 of taxable income in 2026 has €4
 
 This distinction is important when considering overtime, bonuses or salary increases. Earning more gross income does not make you worse off merely because part of the extra income enters a higher band, although the extra euro can face a higher combined marginal deduction once USC and PRSI are included.
 
+## Advanced mode: pension relief, bands and credits
+
+Basic mode uses the 2026 €44,000 single-person standard-rate band and €4,000 of standard personal plus maximum employee tax credits. Advanced mode is designed for users who know the figures on their own Revenue record.
+
+A pension amount entered in Advanced mode is deducted before the 20% and 40% band calculation, but the tool assumes that amount qualifies for Income Tax relief. Revenue's age-related pension contribution limits and earnings ceiling are separate tests, so use the Pension Tax Relief Calculator where that limit matters.
+
+Changing the tax band and credits can materially alter the answer. This is particularly relevant for married/civil-partner assessment, transferred bands, additional credits and other situations where the single-person defaults do not represent the taxpayer.
+
 ## Method and limitations
 
 The calculator applies 20% to income within the entered standard-rate band and 40% above it, then subtracts the credits entered, floored at zero. It does not model every relief or personal circumstance.
