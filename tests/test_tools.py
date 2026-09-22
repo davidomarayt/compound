@@ -258,3 +258,21 @@ def test_sponsorship_categories_cover_tool_catalogue():
     assert by_slug["car-finance-calculator"] == "EV & Motoring"
     assert by_slug["nutrition-needs-calculator"] == "Health"
     assert by_slug["pregnancy-due-date-calculator"] == "Family & Life Planning"
+
+
+def test_mortgage_calculator_has_flagship_guide():
+    content_dir = Path(__file__).parents[1] / "content"
+    mortgage = next(tool for tool in load_tools(content_dir) if tool["slug"] == "mortgage-calculator")
+    guide = mortgage["guide"]
+
+    assert len(guide.split()) >= 1200
+    assert len(mortgage["sources"]) >= 4
+    assert "€1,347" in guide
+    assert "4 times gross income" in guide
+    assert "3.5 times gross income" in guide
+    assert "APRC" in guide
+    assert "/mortgage-borrowing-calculator/" in guide
+    assert "/mortgage-affordability-calculator/" in guide
+    assert "/mortgage-overpayment-calculator/" in guide
+    assert "/mortgage-switch-calculator/" in guide
+    assert "/house-buying-costs-calculator/" in guide
