@@ -34,16 +34,16 @@
           {% else %}
           <label for="tool-{{ field.id }}">{{ field.label }}</label>
           {% if field.type == "select" %}
-          <select id="tool-{{ field.id }}" name="{{ field.id }}" data-field="{{ field.id }}">
+          <select id="tool-{{ field.id }}" name="{{ field.id }}" data-field="{{ field.id }}"{% if field.help %} aria-describedby="tool-help-{{ field.id }}"{% endif %}>
             {% for option in field.options %}<option value="{{ option.value }}" {% if option.value|string == field.default|string %}selected{% endif %}>{{ option.label }}</option>{% endfor %}
           </select>
           {% elif field.type == "date" %}
-          <span class="tool-input-wrap"><input id="tool-{{ field.id }}" name="{{ field.id }}" data-field="{{ field.id }}" type="date" {% if field.default %}value="{{ field.default }}"{% endif %} {% if field.optional %}data-optional="true"{% endif %}></span>
+          <span class="tool-input-wrap"><input id="tool-{{ field.id }}" name="{{ field.id }}" data-field="{{ field.id }}" type="date" {% if field.default %}value="{{ field.default }}"{% endif %} {% if field.optional %}data-optional="true"{% endif %}{% if field.help %} aria-describedby="tool-help-{{ field.id }}"{% endif %}></span>
           {% else %}
-          <span class="tool-input-wrap">{% if field.prefix %}<span class="tool-affix">{{ field.prefix }}</span>{% endif %}<input id="tool-{{ field.id }}" name="{{ field.id }}" data-field="{{ field.id }}" type="number" inputmode="decimal" value="{{ field.default }}" {% if field.min is defined %}min="{{ field.min }}"{% endif %} {% if field.max is defined %}max="{{ field.max }}"{% endif %} step="{{ field.step or 'any' }}">{% if field.suffix %}<span class="tool-affix tool-affix-right">{{ field.suffix }}</span>{% endif %}</span>
+          <span class="tool-input-wrap">{% if field.prefix %}<span class="tool-affix">{{ field.prefix }}</span>{% endif %}<input id="tool-{{ field.id }}" name="{{ field.id }}" data-field="{{ field.id }}" type="number" inputmode="decimal" value="{{ field.default }}" {% if field.min is defined %}min="{{ field.min }}"{% endif %} {% if field.max is defined %}max="{{ field.max }}"{% endif %} step="{{ field.step or 'any' }}"{% if field.help %} aria-describedby="tool-help-{{ field.id }}"{% endif %}>{% if field.suffix %}<span class="tool-affix tool-affix-right">{{ field.suffix }}</span>{% endif %}</span>
           {% endif %}
           {% endif %}
-          {% if field.help %}<small class="tool-field-help">{{ field.help }}</small>{% endif %}
+          {% if field.help %}<small class="tool-field-help" id="tool-help-{{ field.id }}">{{ field.help }}</small>{% endif %}
         </div>
       {% endfor %}
       </div>
