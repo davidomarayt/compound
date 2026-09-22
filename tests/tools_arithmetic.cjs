@@ -44,7 +44,7 @@ close(overpayLump.interest, 100575.47, 0.02, 'lump-sum overpayment interest');
 // Standard residential Stamp Duty is progressive.
 assert.equal(stampDutyResidential(400000), 4000);
 assert.equal(stampDutyResidential(1200000), 14000);
-assert.equal(stampDutyResidential(1600000), 28000);
+assert.equal(stampDutyResidential(1600000), 26000);
 
 // 2026 standard USC example published by Revenue for €50,000.
 close(usc2026(50000), 1032.82, 0.01, '2026 USC on €50,000');
@@ -76,6 +76,52 @@ const noDeposit = calculators.mortgage_affordability({
 });
 assert.equal(noDeposit.indicative_mortgage, '€0.00');
 assert.equal(noDeposit.indicative_price, '€0.00');
+
+// Advanced affordability: an optional net-income household budget can be tighter than the gross-income percentage.
+const affordabilityBudget = calculators.mortgage_affordability({
+  income: 80000, buyer_type: 'ftb', deposit: 40000, rate: 0, term: 10,
+  max_payment_pct: 30, other_debt: 0, net_income_monthly: 5000,
+  essential_spend_monthly: 3000, buffer_monthly: 500, stress_rate_add: 1,
+  __advanced: true
+});
+assert.equal(affordabilityBudget.gross_payment_limit, '€2,000.00');
+assert.equal(affordabilityBudget.net_budget_limit, '€1,500.00');
+assert.equal(affordabilityBudget.payment_capacity, '€1,500.00');
+assert.equal(affordabilityBudget.payment_based_mortgage, '€180,000.00');
+assert.equal(affordabilityBudget.indicative_mortgage, '€180,000.00');
+assert.equal(affordabilityBudget.indicative_price, '€220,000.00');
+assert.equal(affordabilityBudget.binding_constraint, 'Payment budget');
+assert.equal(affordabilityBudget.stress_rate, '1%');
+
+// Rent-vs-buy must include the final mortgage payment and stop mortgage cash outflow after payoff.
+const rentBuyPayoff = calculators.rent_vs_buy({
+  monthly_rent: 0, annual_rent_growth: 0, buying_costs: 0, owner_fixed_annual: 0,
+  house_price: 100000, deposit: 10000, mortgage_rate: 0, mortgage_years: 1,
+  house_growth: 0, maintenance_pct: 0, renter_return: 0, selling_cost_pct: 0,
+  years: 2, __advanced: true
+});
+assert.equal(rentBuyPayoff.mortgage_payment, '€7,500.00');
+assert.equal(rentBuyPayoff.owner_equity, '€100,000.00');
+assert.equal(rentBuyPayoff.renter_portfolio, '€101,000.00');
+assert.equal(rentBuyPayoff.difference, '-€1,000.00');
+assert.equal(rentBuyPayoff.remaining_mortgage, '€0.00');
+assert.equal(rentBuyPayoff.first_crossover, 'Not reached in 2 years');
+
+// Advanced home-buying cash plan separates transaction/setup spending from the retained reserve.
+const buyingCosts = calculators.house_buying_costs({
+  price: 400000, deposit_pct: 10, legal: 2500, survey: 600, valuation: 200,
+  moving: 1500, other: 1000, insurance_setup: 500, furnishing: 5000,
+  immediate_works: 10000, reserve: 10000, cash_available: 70000, __advanced: true
+});
+assert.equal(buyingCosts.deposit, '€40,000.00');
+assert.equal(buyingCosts.stamp, '€4,000.00');
+assert.equal(buyingCosts.professional_costs, '€3,300.00');
+assert.equal(buyingCosts.moving_setup_costs, '€18,000.00');
+assert.equal(buyingCosts.other_costs, '€21,300.00');
+assert.equal(buyingCosts.total_upfront, '€65,300.00');
+assert.equal(buyingCosts.mortgage_required, '€360,000.00');
+assert.equal(buyingCosts.cash_target, '€75,300.00');
+assert.equal(buyingCosts.cash_position, '-€5,300.00 shortfall');
 
 // Mortgage switching: compare interest plus net switching cost over a five-year horizon.
 const switchResult = calculators.mortgage_switch({
