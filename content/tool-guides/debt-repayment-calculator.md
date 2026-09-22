@@ -87,6 +87,26 @@ If your required payments are already difficult to meet, a snowball or avalanche
 
 The calculator is most useful when you are **already meeting the required payments** and want to understand how directing an additional affordable amount changes the path to becoming debt-free.
 
+## Worked example
+
+Imagine three ordinary consumer debts:
+
+- €1,500 at 5% APR;
+- €5,000 at 22% APR;
+- €10,000 at 8% APR.
+
+If the required monthly payments are all being maintained and you have €200 extra each month, **avalanche** directs that extra €200 towards the 22% debt first because it is the most expensive balance to carry. **Snowball** directs it towards the €1,500 balance because it is the smallest.
+
+The snowball may produce the psychological milestone of clearing one account sooner. The avalanche is designed to reduce the amount of time that the highest-cost balance remains outstanding. Once either target is cleared, the money that had been going to it is rolled into the next target.
+
+The exact euro difference depends on every balance, APR and payment you enter, which is why the side-by-side result is more useful than a general rule of thumb.
+
+## Method and limitations
+
+Compound applies one month of interest using APR ÷ 12, makes the fixed monthly payments entered on all active debts, then sends the remaining fixed debt budget to the strategy target. When a debt is cleared, its former payment remains in the total debt budget and is redirected.
+
+The model does not reproduce lender-specific daily interest, changing card minimums, promotional 0% periods, late fees, restructures or legal priority between creditors. It is designed for debts whose required payments are already being maintained.
+
 ## Frequently asked questions
 
 ### Which method usually costs less interest?
