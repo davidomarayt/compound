@@ -367,3 +367,36 @@
   .tool-result-actions,.tool-use-strip{display:none!important}
   .tool-results{position:static!important}
 }
+
+
+.tool-insights{
+  margin:18px 0 0;
+  padding:18px 18px 16px;
+  border:1px solid color-mix(in srgb,var(--wealth) 22%,var(--line));
+  background:color-mix(in srgb,var(--wealth) 6%,var(--paper));
+}
+.tool-insights .eyebrow{margin-bottom:9px}
+.tool-insights ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  gap:9px;
+}
+.tool-insights li{
+  position:relative;
+  padding-left:17px;
+  color:var(--ink-2);
+  font-size:.84rem;
+  line-height:1.55;
+}
+.tool-insights li:before{
+  content:'';
+  position:absolute;
+  left:0;
+  top:.62em;
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:var(--wealth);
+}
