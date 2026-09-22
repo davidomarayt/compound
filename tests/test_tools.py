@@ -72,6 +72,31 @@ def test_solar_payback_has_energy_system_controls():
     assert "EV" in guide and "battery" in guide.lower() and "night" in guide.lower()
 
 
+
+def test_solar_flagship_modes_expose_decision_outputs():
+    content_dir = Path(__file__).parents[1] / "content"
+    tools = {tool["slug"]: tool for tool in load_tools(content_dir)}
+
+    payback = tools["solar-payback-calculator"]
+    payback_fields = {field["id"]: field for field in payback["fields"]}
+    payback_results = {result["id"] for result in payback["results"]}
+    assert payback_fields["has_ev"]["advanced"] is True
+    assert payback_fields["has_battery"]["advanced"] is True
+    assert payback_fields["night_charge"]["advanced"] is True
+    assert {"self_consumption", "self_sufficiency", "battery_incremental_value",
+            "battery_incremental_payback", "twenty_year_net"} <= payback_results
+
+    optimiser = tools["solar-ev-battery-optimiser"]
+    optimiser_fields = {field["id"]: field for field in optimiser["fields"]}
+    optimiser_results = {result["id"] for result in optimiser["results"]}
+    assert optimiser_fields["direct_home_pct"]["advanced"] is True
+    assert optimiser_fields["smart_ev_cost"]["advanced"] is True
+    assert optimiser_fields["battery_efficiency"]["advanced"] is True
+    assert optimiser_fields["night_kwh_day"]["advanced"] is True
+    assert {"solar_benefit", "ev_benefit", "battery_benefit",
+            "combined_benefit", "best_margin"} <= optimiser_results
+
+
 def test_next_flagship_tools_have_expected_controls():
     content_dir = Path(__file__).parents[1] / "content"
     tools = {tool["slug"]: tool for tool in load_tools(content_dir)}
