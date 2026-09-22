@@ -1,71 +1,170 @@
 ## What this calculator is for
 
-This tool translates a retirement pot into an indicative stream of income under the withdrawal assumptions entered. It is designed to make the relationship between pot size, return, withdrawals and retirement duration easier to see.
+Retirement planning has two separate questions:
 
-## How to read the result
+1. **How much gross income could the assets and pensions entered provide in the first year?**
+2. **What happens to the investment pot if withdrawals continue and rise over time?**
 
-The first three income results describe the **first modelled retirement year**: portfolio withdrawal plus any State Pension and other income you enter.
+This calculator keeps those questions visible instead of collapsing them into one headline number.
 
-Advanced mode then adds a deterministic sustainability illustration. The portfolio grows at the constant annual return entered, while the portfolio withdrawal starts at the selected percentage of the original pot and increases each year with the inflation assumption. The tool shows the portfolio remaining at the end of the chosen period and whether the smooth-return model depletes it.
+Basic mode gives first-year gross income and a simple 30-year sustainability path. Advanced mode adds a target-income check, explicit annual fees and a lower-return stress scenario.
 
-A monthly or annual withdrawal is not the same thing as a guaranteed pension. Real investment returns arrive unevenly, and a fixed real spending path can become unsustainable if returns are weaker or badly sequenced.
+## First-year retirement income
 
-## Worked example
+The calculator begins with a percentage withdrawal from the starting portfolio:
 
-A €500,000 portfolio at a 5% starting withdrawal produces €25,000 of first-year portfolio income before tax and fees. With a smooth 4% annual portfolio return, 2% annual increases in that withdrawal and a 30-year horizon, the calculator then steps the portfolio forward year by year and shows whether capital remains. A real portfolio will not follow that smooth path because market returns are volatile and sequence matters.
+**starting portfolio × withdrawal rate = first-year portfolio withdrawal**
 
-## Irish context
+It then adds the annual State Pension/social-welfare income and other retirement income entered.
 
-Irish retirement income can come from several sources: occupational pensions, PRSAs, ARFs or other pension structures, the State Pension and non-pension assets. Each source can have different tax and access rules. The calculator should be used to understand portfolio mechanics, not to replace pension-specific advice.
+The total is shown annually and as an average monthly gross amount.
 
-## What can change the answer
+These are **gross** figures. They are not equivalent to spendable after-tax income.
 
-Starting pot, withdrawal amount, return, inflation and time horizon are all powerful inputs. Sequence-of-returns risk is not captured well by a smooth average-return model; two retirees with the same average return can experience very different outcomes if losses arrive early versus late.
+## State Pension input
+
+The State Pension field defaults to zero deliberately.
+
+Not everyone will qualify for the maximum contributory rate, not everyone will be modelling a period after State Pension age, and rates can change.
+
+For current context, the Pensions Authority's 2026 pension-calculator assumptions use a maximum State Pension (Contributory) figure of €15,563.60 per year, or €299.30 per week, from 1 January 2026. That is a reference assumption, not a promise of individual entitlement.
+
+Enter an amount only if it is appropriate to the retirement period you are modelling.
+
+## Tax treatment matters
+
+Revenue states that personal and occupational pensions are taxable income and are generally subject to Income Tax and USC, with PRSI depending on circumstances.
+
+Department of Social Protection pensions are liable to Income Tax but are not liable to USC or PRSI.
+
+That difference is one reason this calculator does not try to turn several income sources into one universal net-income figure. A proper after-tax result depends on age, credits, total income, pension type and other personal circumstances.
+
+Use the output as a **gross retirement-income framework**.
+
+## Optional target-income check
+
+Advanced mode lets you enter an annual gross-income target.
+
+The engine then compares first-year modelled income with that target and shows the surplus or shortfall.
+
+It also calculates the amount the portfolio would need to provide after the State Pension and other income entered, plus the starting withdrawal rate that would be required from the portfolio.
+
+For example, if the target is €45,000 and the State Pension plus other income totals €20,000, the portfolio needs to provide €25,000 in year one.
+
+On a €500,000 pot that would require a 5% starting withdrawal.
+
+This is not a recommendation to withdraw 5%; it exposes the arithmetic behind the target.
+
+## The deterministic sustainability model
+
+The portfolio path is intentionally simple.
+
+Each year, the engine:
+
+1. grows the portfolio at the selected constant annual return;
+2. deducts the selected annual percentage fee in Advanced mode;
+3. deducts the portfolio withdrawal;
+4. increases the next year's withdrawal by the inflation assumption.
+
+Basic mode uses a 4% annual portfolio return, 2% annual increase in withdrawals and no explicit fee for 30 years.
+
+If the balance reaches zero, the calculator reports the first modelled year of depletion.
+
+## Baseline versus lower-return stress
+
+Advanced mode adds a second return assumption.
+
+Both paths use the same starting pot, withdrawal, fee and inflation-linked spending pattern. Only the constant annual return changes.
+
+This gives a direct stress comparison without pretending it is a full probability model.
+
+If the baseline path survives 30 years but the lower-return path depletes in year 22, the useful conclusion is not that either path will occur. It is that the plan is sensitive to the return assumption.
+
+## Sequence-of-returns risk remains missing
+
+A stress scenario is still not the same as market reality.
+
+Real returns are volatile. A retiree can experience a large market fall in the first few years, continue taking withdrawals, and permanently reduce the capital available to recover later.
+
+That is sequence-of-returns risk.
+
+Two retirees can earn the same average return over 30 years and finish with very different outcomes depending on the order of those returns.
+
+A constant-return calculator cannot capture that.
+
+## Fees are shown separately
+
+Advanced mode applies an annual percentage fee after the modelled annual investment growth and before the withdrawal.
+
+The calculator accumulates those modelled fee deductions and reports them.
+
+The number is useful for seeing scale, but real providers can charge at different frequencies or through several layers. Use product-specific documentation for an actual pension or investment.
+
+## Today's-money ending pot
+
+A nominal balance remaining after 30 years can look large while representing much less purchasing power.
+
+Advanced mode therefore converts the ending portfolio into today's money using the inflation assumption.
+
+This does not change the actual nominal path. It gives a second view of what the ending value might mean economically.
+
+## Retirement lump sums are separate
+
+This calculator assumes the full starting pot entered is available for the drawdown scenario.
+
+In reality, pension benefits can involve retirement lump sums and different post-retirement options.
+
+Revenue notes that a personal pension can provide a retirement lump sum of 25% of the fund, while occupational-scheme lump-sum rules can depend on salary and service. Revenue also applies lifetime tax limits to retirement lump sums.
+
+If you plan to take a lump sum, enter the **post-lump-sum amount actually intended for the drawdown portfolio** rather than the pre-lump-sum pension value.
 
 ## Common mistakes to avoid
 
-Do not treat a smooth 5% return as if every year produces 5%. Do not forget Income Tax, USC and possible PRSI treatment of retirement income. And do not assume your spending remains flat in nominal euro terms for decades.
+Do not treat the State Pension as available before the relevant age.
+
+Do not compare gross retirement income with current net salary.
+
+Do not assume a smooth 4% return arrives every year.
+
+Do not ignore product fees because the withdrawal rate looks conservative.
+
+Do not enter the full pension pot if part of it will be taken as a lump sum and spent or held elsewhere.
+
+And do not regard “not depleted in 30 years” as proof that the plan is safe. It only means the deterministic path did not hit zero under those inputs.
 
 ## Related Compound tools
 
-Use the [Pension Projection Calculator](/pension-projection-calculator/) for the saving phase, [FIRE Number Calculator](/fire-number-calculator/) for a target portfolio and [Inflation Calculator](/inflation-calculator/) to test real spending needs.
+Use the [Pension Projection Calculator](/pension-projection-calculator/) for the accumulation phase, the [FIRE Number Calculator](/fire-number-calculator/) for a portfolio target, the [Pension Tax Relief Calculator](/pension-tax-relief-calculator/) for contribution relief limits and the [Investment Fee Calculator](/investment-fee-calculator/) to isolate fee drag.
 
 ## Frequently asked questions
 
-### Is the withdrawal guaranteed?
-No.
+### Does the calculator include tax?
+No. It reports gross income.
 
-### Does the calculator include the State Pension?
-Only if the specific tool inputs explicitly include it; otherwise model it separately.
+### Does it increase the State Pension with inflation?
+No. The State Pension and other income inputs are used for the first-year income calculation and target comparison. The sustainability path models the portfolio withdrawal separately.
 
-### Why does sequence risk matter?
-Because early losses combined with withdrawals can permanently reduce the capital available to recover.
+### Why not let other income reduce every future portfolio withdrawal automatically?
+Because the start dates and escalation rules for different income sources vary. A single automatic rule would create false precision.
 
-### Does it include tax?
-Not as a full personal tax calculation.
+### What does the lower-return scenario tell me?
+It shows how the same withdrawal plan behaves under a different constant return assumption. It is a sensitivity test, not a forecast.
 
 ## Method and limitations
 
-First-year portfolio income is the starting pot multiplied by the withdrawal rate. State Pension and other income are added to that figure for the first-year gross-income results.
+The first-year portfolio withdrawal is the starting pot multiplied by the selected withdrawal rate.
 
-For the Advanced sustainability path, the portfolio is grown once per year at the constant return entered, then the modelled portfolio withdrawal is deducted. That withdrawal increases annually at the inflation rate. State Pension and other income are **not** used to reduce portfolio withdrawals in this model; they are shown separately as income sources.
+The baseline and stress simulations then run once per year. The portfolio receives the selected constant annual return, the annual percentage fee is deducted, and the inflation-linked withdrawal is taken.
 
-The projection is deterministic. It does not simulate market volatility or sequence-of-returns risk, and it does not include tax, fund charges, changing State Pension rates, ARF rules or individual pension-product restrictions.
+The withdrawal amount itself starts from the selected percentage of the original pot and grows with the inflation assumption each year.
+
+The target-income outputs do not change the sustainability-path withdrawal automatically; they show the arithmetic required to meet the separate target. This avoids silently overriding the withdrawal rate selected by the user.
+
+The model excludes tax, sequence-of-returns volatility, changing asset allocation, annuity pricing, ARF-specific rules, future State Pension changes and product-specific restrictions.
 
 ### Useful sources
 
-- [Citizens Information — Pensions and retirement](https://www.citizensinformation.ie/en/money-and-tax/personal-finance/pensions/)
-- [Revenue — Pensions](https://www.revenue.ie/en/jobs-and-pensions/pension/index.aspx)
-
-## The hidden problem: sequence-of-returns risk
-
-A smooth-return calculator can show the mechanics of retirement withdrawals, but real markets do not deliver the same return every year.
-
-If a portfolio falls sharply in the first few years of retirement while withdrawals continue, capital is removed when asset values are depressed. The portfolio then has less money available to participate in a later recovery. This is known as **sequence-of-returns risk**.
-
-The same average return can therefore produce very different retirement outcomes depending on the order in which gains and losses arrive.
-
-Ways retirees sometimes manage this risk include flexible spending, holding lower-volatility assets or cash reserves, delaying large discretionary withdrawals and adjusting asset allocation. Those are planning choices rather than guarantees, and the right approach depends on the pension structure and individual circumstances.
-
-Treat the deterministic result here as a baseline, then ask what would happen if the first five retirement years were much weaker than the long-run average.
-
+- [Revenue — Taxation of pensions](https://www.revenue.ie/en/jobs-and-pensions/pension/private/index.aspx)
+- [Revenue — Taxation of Department of Social Protection pensions](https://www.revenue.ie/en/jobs-and-pensions/pension/dsp/index.aspx)
+- [Revenue — Taxation of retirement lump sums](https://www.revenue.ie/en/jobs-and-pensions/pension/private/retirement-lump-sums.aspx)
+- [Pensions Authority — Pension calculator assumptions](https://pensionsauthority.ie/scheme-members-and-prsa-contributors/pension-calculator/assumptions/)
