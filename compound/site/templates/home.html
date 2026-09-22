@@ -22,7 +22,21 @@
  </div>
 </section>
 {% endif %}
-<section class="editorial-note"><div><p class="eyebrow">THE COMPOUND CALCULATOR</p><h2>What could your money become?</h2><p>Explore compound growth, compare savings plans and work towards your next financial milestone. Free, interactive and built for Ireland.</p><a class="button button-dark" href="/compound-interest-calculator/">Try the compound interest calculator</a></div></section>
+<section class="calculator-feature" aria-labelledby="calculator-feature-title">
+ <div class="calculator-feature-copy">
+  <p class="eyebrow">THE COMPOUND CALCULATOR</p>
+  <h2 id="calculator-feature-title">What could your money become?</h2>
+  <p>Explore compound growth, compare savings plans and work towards your next financial milestone. Free, interactive and built for Ireland.</p>
+  <a class="button button-dark" href="/compound-interest-calculator/">Try the compound interest calculator <span aria-hidden="true">↗</span></a>
+ </div>
+ <div class="calculator-feature-preview" aria-hidden="true">
+  <span class="calculator-preview-label">A quick example</span>
+  <div class="calculator-preview-value">€10,000</div>
+  <div class="calculator-preview-arrow">↓</div>
+  <div class="calculator-preview-result">€25,937</div>
+  <p>10 years · 10% annual growth<br>before fees and tax</p>
+ </div>
+</section>
 <section class="pillar-section" aria-labelledby="pillars-title"><div class="section-heading"><div><p class="eyebrow">THE BIG PICTURE</p><h2 id="pillars-title">A good life has more than one side.</h2></div><p>Explore what matters to you.</p></div><div class="pillar-cards">
 {% for p in pillars %}<a class="pillar-tile tile-{{ p }}" href="/{{ p }}/"><div class="tile-top"><span class="eyebrow">0{{ loop.index }} / {{ pillar_labels[p] }}</span><span class="tile-arrow" aria-hidden="true">↗</span></div><h3>{{ {'health':'Feel more like yourself.', 'wealth':'Make your money matter.', 'happiness':'Find the good in everyday.'}[p] }}</h3><p>{{ {'health':'Sleep, movement and wellbeing. Make sense of what the evidence says.', 'wealth':'Irish money, without the maze. Tax, pensions and the bigger picture.', 'happiness':'A little space for relationships, peace of mind and living well.'}[p] }}</p><div class="tile-bottom"><span>Explore {{ p }}</span><span class="pillar-symbol symbol-{{ p }}" aria-hidden="true"></span></div></a>{% endfor %}
 </div></section>
