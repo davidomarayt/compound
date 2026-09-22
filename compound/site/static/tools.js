@@ -1141,14 +1141,26 @@
         if(window.gtag) window.gtag('event','tool_calculate',{tool_name:root.dataset.toolName});
       }catch(e){ if(showErrors) error.textContent='This combination could not be calculated. Check the values and try again.'; }
     };
-    const params=new URLSearchParams(window.location.search);
-    root.dataset.advancedMode=params.get('advanced')==='1'?'true':'false';
+    const decodeScenario = () => {
+      if(!window.location.hash.startsWith('#scenario=')) return null;
+      try{
+        let raw=window.location.hash.slice(10).replace(/-/g,'+').replace(/_/g,'/');
+        while(raw.length%4) raw+='=';
+        const bytes=Uint8Array.from(atob(raw),ch=>ch.charCodeAt(0));
+        return JSON.parse(new TextDecoder().decode(bytes));
+      }catch(e){ return null; }
+    };
+    const sharedScenario=decodeScenario();
+    const legacyParams=new URLSearchParams(window.location.search);
+    root.dataset.advancedMode=(sharedScenario?.advanced===true||legacyParams.get('advanced')==='1')?'true':'false';
     root.querySelectorAll('[data-field]').forEach(el=>{
       const key=el.dataset.field;
-      if(!params.has(key)) return;
-      const val=params.get(key);
-      if(el.type==='checkbox') el.checked=val==='1'||val==='true';
-      else el.value=val;
+      let has=false,val='';
+      if(sharedScenario&&sharedScenario.values&&Object.prototype.hasOwnProperty.call(sharedScenario.values,key)){has=true;val=sharedScenario.values[key];}
+      else if(legacyParams.has(key)){has=true;val=legacyParams.get(key);}
+      if(!has) return;
+      if(el.type==='checkbox') el.checked=val===true||val==='1'||val==='true';
+      else el.value=String(val);
     });
     const renderScenarioSummary=()=>{
       const wrap=root.querySelector('[data-tool-scenario-summary]'), chips=root.querySelector('[data-tool-scenario-chips]');
@@ -1210,12 +1222,16 @@
     }
     const shareButton=root.querySelector('[data-tool-share]'), printButton=root.querySelector('[data-tool-print]'), actionStatus=root.querySelector('[data-tool-action-status]');
     if(shareButton) shareButton.addEventListener('click',async()=>{
-      const url=new URL(window.location.href); url.search='';
+      const url=new URL(window.location.href); url.search=''; url.hash='';
+      const values={};
       root.querySelectorAll('[data-field]').forEach(el=>{
-        if(el.type==='checkbox') url.searchParams.set(el.dataset.field,el.checked?'1':'0');
-        else if(el.value!=='') url.searchParams.set(el.dataset.field,el.value);
+        values[el.dataset.field]=el.type==='checkbox'?el.checked:el.value;
       });
-      if(root.dataset.advancedMode==='true') url.searchParams.set('advanced','1');
+      const json=JSON.stringify({advanced:root.dataset.advancedMode==='true',values});
+      const bytes=new TextEncoder().encode(json);
+      let binary=''; bytes.forEach(byte=>binary+=String.fromCharCode(byte));
+      const encoded=btoa(binary).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+      url.hash='scenario='+encoded;
       const value=url.toString();
       let copied=false;
       try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(value);copied=true;}}catch(e){}
