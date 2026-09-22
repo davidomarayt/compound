@@ -348,3 +348,9 @@ Start with your GP. The HSE's threshold is worry on most days for six months or 
 Private counselling is the other route, and fees vary by counsellor and area, so no figure is quoted here. GP visit fees also vary, and whether you pay depends on whether you hold a medical card or GP visit card.
 
 The practical order for most people: try worry postponement and the bedtime list for a week or two, keep moving, and go easy on the drink. If the worry has been most days for six months, or it is costing you sleep, work or relationships, book the GP. The trials say the loop responds to treatment. They also say it responds better to a structured programme than to willpower, and there is no shame in using one.
+
+## Related Compound guides
+
+If worry is part of a broader period of sustained pressure, start with [Stress symptoms: how to recognise stress and what actually helps](/happiness/stress-symptoms-what-helps-ireland/).
+
+If the loop is driven by harsh self-judgement or fear of not being good enough, read [How to improve self-esteem and confidence](/happiness/how-to-improve-self-esteem-confidence/).
