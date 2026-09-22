@@ -727,19 +727,24 @@
       };
     },
     rent_vs_buy(v){
-      const mortgage=Math.max(0,v.house_price-v.deposit), n=v.mortgage_years*12, payment=monthlyPayment(mortgage,v.mortgage_rate,n), mr=v.mortgage_rate/100/12, hr=Math.pow(1+v.house_growth/100,1/12)-1, rr=Math.pow(1+v.annual_rent_growth/100,1/12)-1, ir=Math.pow(1+v.renter_return/100,1/12)-1;
-      let house=v.house_price, balance=mortgage, rent=v.monthly_rent, renter=v.deposit, ownerInvest=0; const labels=['Now'], ownerVals=[v.deposit], renterVals=[renter];
+      const mortgage=Math.max(0,v.house_price-v.deposit), n=v.mortgage_years*12, payment=monthlyPayment(mortgage,v.mortgage_rate,n), mr=v.mortgage_rate/100/12;
+      const hr=Math.pow(1+v.house_growth/100,1/12)-1, rr=Math.pow(1+v.annual_rent_growth/100,1/12)-1, ir=Math.pow(1+v.renter_return/100,1/12)-1;
+      const stamp=stampDutyResidential(v.house_price), upfrontCosts=stamp+Math.max(0,v.buying_costs), sellPct=Math.max(0,v.selling_cost_pct)/100;
+      let house=v.house_price, balance=mortgage, rent=v.monthly_rent, renter=v.deposit+upfrontCosts, ownerInvest=0;
+      const ownerNet=()=>Math.max(0,house*(1-sellPct))-balance+ownerInvest;
+      const labels=['Now'], ownerVals=[ownerNet()], renterVals=[renter];
       for(let month=1;month<=v.years*12;month++){
         house*=1+hr; rent*=1+rr; renter*=1+ir; ownerInvest*=1+ir;
         const interest=balance*mr, principal=Math.max(0,Math.min(balance,payment-interest)); balance=Math.max(0,balance-principal);
-        const maintenance=house*(v.maintenance_pct/100)/12, ownerCost=(balance>0?payment:0)+maintenance;
+        const maintenance=house*(v.maintenance_pct/100)/12;
+        const ownerCost=(balance>0?payment:0)+maintenance+Math.max(0,v.owner_fixed_annual)/12;
         if(ownerCost>rent) renter+=ownerCost-rent; else ownerInvest+=rent-ownerCost;
-        if(month%12===0){labels.push('Year '+(month/12));ownerVals.push(house-balance+ownerInvest);renterVals.push(renter);}
+        if(month%12===0){labels.push('Year '+(month/12));ownerVals.push(ownerNet());renterVals.push(renter);}
       }
       const owner=ownerVals[ownerVals.length-1], renterEnd=renterVals[renterVals.length-1], diff=owner-renterEnd;
       return {
-        mortgage_payment:money(payment),owner_equity:money(owner),renter_portfolio:money(renterEnd),difference:(diff>=0?'+':'')+money(diff),
-        __chart:{type:'line',title:'Illustrative net-wealth paths',caption:'Both paths invest any monthly cost advantage; the renter starts by investing the deposit.',labels,series:[{label:'Buy scenario',values:ownerVals},{label:'Rent scenario',values:renterVals}]}
+        mortgage_payment:money(payment),upfront_buying_costs:money(upfrontCosts),owner_equity:money(owner),renter_portfolio:money(renterEnd),difference:(diff>=0?'+':'')+money(diff),
+        __chart:{type:'line',title:'Illustrative net-wealth paths',caption:'The renter starts with the deposit plus buyer transaction costs invested. The buyer path deducts modelled selling costs and includes fixed ownership costs.',labels,series:[{label:'Buy scenario',values:ownerVals},{label:'Rent scenario',values:renterVals}]}
       };
     },
     mortgage_affordability(v){
