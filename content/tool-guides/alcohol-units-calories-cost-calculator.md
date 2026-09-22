@@ -50,6 +50,20 @@ The calculator converts each entered drink into grams of pure alcohol using volu
 
 It does not model drinking pattern across individual days, food intake, body size, medicines, pregnancy, liver function, tolerance, blood alcohol concentration or driving fitness. The HSE guideline comparison is population-level guidance rather than a personalised safety assessment.
 
+## Worked example
+
+A pint is 568 mL. At 4.5% ABV:
+
+**568 × 0.045 × 0.789 ≈ 20.2 g alcohol**, or about **2.0 Irish standard drinks**.
+
+A 175 mL glass of wine at 12.5% ABV contains:
+
+**175 × 0.125 × 0.789 ≈ 17.3 g alcohol**, or about **1.7 Irish standard drinks**.
+
+So two 4.5% pints plus three 175 mL glasses of 12.5% wine would be roughly **9.2 standard drinks** before counting anything else consumed that week.
+
+The example shows why counting glasses or pints alone is unreliable: serving size and ABV both change the amount of alcohol.
+
 ## Frequently asked questions
 
 ### Is one pint one standard drink?
