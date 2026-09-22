@@ -10,6 +10,7 @@ const {
   annualClassA2026,
   selfEmployedNet2026,
   stampDutyResidential,
+  mortgageOverpaymentProjection,
 } = globalThis.CompoundToolsTest;
 
 const close = (actual, expected, tolerance, message) => {
@@ -18,6 +19,26 @@ const close = (actual, expected, tolerance, message) => {
 
 // Mortgage amortisation: €300k, 3.5%, 30 years.
 close(monthlyPayment(300000, 3.5, 360), 1347.13, 0.02, 'mortgage payment');
+
+// Mortgage overpayment timing: delaying regular extras costs interest; an early lump sum offsets that.
+const overpayImmediate = mortgageOverpaymentProjection({
+  balance: 250000, rate: 3.5, years: 25, overpayment: 100, __advanced: false
+});
+const overpayDelayed = mortgageOverpaymentProjection({
+  balance: 250000, rate: 3.5, years: 25, overpayment: 100,
+  overpayment_start_month: 12, lump_sum: 0, lump_sum_month: 12, __advanced: true
+});
+const overpayLump = mortgageOverpaymentProjection({
+  balance: 250000, rate: 3.5, years: 25, overpayment: 100,
+  overpayment_start_month: 12, lump_sum: 10000, lump_sum_month: 12, __advanced: true
+});
+close(overpayImmediate.base, 1251.5589, 0.001, 'overpayment base payment');
+assert.equal(overpayImmediate.scenarioMonths, 267);
+assert.equal(overpayDelayed.scenarioMonths, 269);
+assert.equal(overpayLump.scenarioMonths, 253);
+close(overpayImmediate.interest, 109858.14, 0.02, 'immediate overpayment interest');
+close(overpayDelayed.interest, 111225.97, 0.02, 'delayed overpayment interest');
+close(overpayLump.interest, 100575.47, 0.02, 'lump-sum overpayment interest');
 
 // Standard residential Stamp Duty is progressive.
 assert.equal(stampDutyResidential(400000), 4000);
