@@ -142,6 +142,24 @@ And do not treat “years to target” as a predicted date. It is the result of 
 
 Use the [Retirement Income Calculator](/retirement-income-calculator/) to test the drawdown phase, the [Pension Projection Calculator](/pension-projection-calculator/) for pension accumulation, the [Investment Fee Calculator](/investment-fee-calculator/) to isolate cost drag and the [Inflation Calculator](/inflation-calculator/) for nominal-versus-real comparisons.
 
+## Frequently asked questions
+
+### Is a 4% withdrawal rate guaranteed to be safe?
+
+No. The 4% figure is a planning reference derived from historical retirement research, not a guarantee for every market, retirement length, portfolio, tax position or spending pattern. Use the 3%, 3.5% and 4% sensitivity outputs to see how strongly the target depends on this assumption.
+
+### Should I subtract the State Pension from my FIRE spending?
+
+Only when the income is relevant to the period being modelled. The Advanced ongoing-income input assumes that income is available to offset portfolio-funded spending from the financial-independence point. Do not use a future State Pension starting years later as though it were available from day one.
+
+### Should my pension pot count towards my current FIRE portfolio?
+
+It can be part of long-term retirement wealth, but access timing matters. If you want financial independence before pension assets can be accessed, you may need enough accessible assets to bridge the gap separately. The calculator does not model pension-access ages or account-specific restrictions.
+
+### Why does the calculator use today's money?
+
+Expressing the target and projection in today's purchasing power makes spending and portfolio values easier to compare. The model converts the entered nominal return, after any Advanced annual fee, into a real return using the inflation assumption.
+
 ## Method and limitations
 
 The engine calculates portfolio-funded spending as annual spending less any Advanced ongoing-income amount, floored at zero.
