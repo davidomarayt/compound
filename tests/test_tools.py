@@ -7,7 +7,7 @@ from compound.site.build import load_articles, load_tools, linked_articles, tool
 def test_tool_catalogue_has_unique_routes():
     content_dir = Path(__file__).parents[1] / "content"
     tools = load_tools(content_dir)
-    assert len(tools) >= 48
+    assert len(tools) >= 49
     assert len({tool["slug"] for tool in tools}) == len(tools)
     assert all(tool["url"].startswith("/") and tool["url"].endswith("/") for tool in tools)
     assert all(tool["fields"] and tool["results"] for tool in tools)
@@ -27,7 +27,7 @@ def test_tool_formulas_are_supported():
         "house_buying_costs", "solar_payback", "ber_energy",
         "solar_optimizer", "retrofit_planner", "myfuturefund", "childcare_return",
         "mortgage_switch", "lifetime_cost", "car_finance",
-        "nutrition_needs", "pregnancy_timeline", "alcohol_ireland", "net_worth",
+        "nutrition_needs", "pregnancy_timeline", "alcohol_ireland", "net_worth", "debt_repayment",
     }
     assert {tool["formula"] for tool in data["tools"]} <= supported
 
@@ -46,7 +46,7 @@ def test_high_intent_tool_routes_present():
         "childcare-return-to-work-calculator", "mortgage-switch-calculator", "lifetime-cost-calculator",
         "car-finance-calculator",
         "nutrition-needs-calculator", "pregnancy-due-date-calculator",
-        "alcohol-units-calories-cost-calculator", "net-worth-calculator",
+        "alcohol-units-calories-cost-calculator", "net-worth-calculator", "debt-repayment-calculator",
     }
     assert expected <= slugs
 
@@ -188,3 +188,26 @@ def test_net_worth_calculator_is_substantial_and_sourced():
     assert "€256,900" in tool["guide"]
     assert "net worth is a balance-sheet number" in tool["guide"].lower()
     assert "do not count the same value twice" in tool["guide"].lower()
+
+
+def test_debt_repayment_calculator_is_flagship_quality():
+    content_dir = Path(__file__).parents[1] / "content"
+    tool = next(tool for tool in load_tools(content_dir) if tool["slug"] == "debt-repayment-calculator")
+
+    assert tool["formula"] == "debt_repayment"
+    assert len(tool["sample_debts"]) >= 3
+    assert tool["extra_default"] > 0
+    assert len(tool["sources"]) >= 5
+    guide = tool["guide"].lower()
+    assert "debt avalanche" in guide
+    assert "debt snowball" in guide
+    assert "priority debts" in guide
+    assert "mabs" in guide
+    assert "credit card" in guide
+
+
+def test_debt_repayment_custom_assets_exist():
+    root = Path(__file__).parents[1]
+    assert (root / "compound" / "site" / "templates" / "debt_repayment.html").is_file()
+    assert (root / "compound" / "site" / "static" / "debt-repayment.css").is_file()
+    assert (root / "compound" / "site" / "static" / "debt-repayment.js").is_file()
