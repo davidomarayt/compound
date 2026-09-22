@@ -963,53 +963,123 @@
       };
     },
     investment_fees(v){
-      const gross=v.gross_return/100;
-      const lowNet=((1+gross)*(1-v.fee_low/100)-1)*100, highNet=((1+gross)*(1-v.fee_high/100)-1)*100;
-      const low=projectMonthly(v.initial,v.monthly,lowNet,v.years), high=projectMonthly(v.initial,v.monthly,highNet,v.years), labels=Array.from({length:v.years+1},(_,i)=>'Year '+i);
-      const gap=low[low.length-1]-high[high.length-1];
+      const advanced=Boolean(v.__advanced), gross=Math.max(-.99,v.gross_return/100);
+      const simulate=(feePct,fixedAnnual,contributionChargePct)=>{
+        const pctFee=Math.max(0,feePct)/100, fixed=advanced?Math.max(0,fixedAnnual):0, contributionCharge=advanced?Math.max(0,contributionChargePct)/100:0;
+        const grossMonthly=Math.pow(1+gross,1/12)-1, feeMonthFactor=Math.pow(Math.max(.000001,1-pctFee),1/12);
+        const months=Math.max(0,Math.round(v.years*12)), monthly=Math.max(0,v.monthly);
+        let bal=Math.max(0,v.initial), fees=0;
+        const labels=['Start'], balances=[bal];
+        for(let m=1;m<=months;m++){
+          const beforeFee=bal*(1+grossMonthly);
+          const afterPct=beforeFee*feeMonthFactor;
+          const pctCharge=Math.max(0,beforeFee-afterPct);
+          const fixedCharge=Math.min(afterPct,fixed/12);
+          const contributionFee=monthly*contributionCharge;
+          bal=Math.max(0,afterPct-fixedCharge)+Math.max(0,monthly-contributionFee);
+          fees+=pctCharge+fixedCharge+contributionFee;
+          if(m%12===0 || m===months){labels.push(m%12===0?'Year '+(m/12):duration(m));balances.push(bal);}
+        }
+        return {bal,fees,labels,balances};
+      };
+      const low=simulate(v.fee_low,v.fixed_low,v.contribution_charge_low), high=simulate(v.fee_high,v.fixed_high,v.contribution_charge_high);
+      const lowNet=((1+gross)*(1-Math.max(0,v.fee_low)/100)-1)*100, highNet=((1+gross)*(1-Math.max(0,v.fee_high)/100)-1)*100;
+      const gap=low.bal-high.bal, inflation=advanced?Math.max(-.99,v.inflation_rate/100):0, realGap=gap/Math.pow(1+inflation,Math.max(0,v.years));
       return {
-        low_net_return:pct(lowNet),high_net_return:pct(highNet),low_balance:money(low[low.length-1]),high_balance:money(high[high.length-1]),fee_gap:money(gap),
-        __chart:{type:'line',title:'Fee drag over time',caption:'Same before-fee return and contributions; the annual fee is applied multiplicatively to the gross annual growth factor.',labels,series:[{label:'Lower fee',values:low},{label:'Higher fee',values:high}]}
+        low_net_return:pct(lowNet),high_net_return:pct(highNet),low_balance:money(low.bal),high_balance:money(high.bal),fee_gap:(gap>=0?'+':'-')+money(Math.abs(gap)),
+        low_fees_paid:money(low.fees),high_fees_paid:money(high.fees),real_fee_gap:(realGap>=0?'+':'-')+money(Math.abs(realGap)),
+        __chart:{type:'line',title:'Fee drag over time',caption:advanced?'Both options use the same before-fee return and gross contribution plan. Percentage fees, fixed charges and contribution charges are applied separately so the compounding effect is visible.':'Both options use the same before-fee return and contribution plan; only the annual percentage fee changes.',labels:low.labels,series:[{label:'Lower-fee option',values:low.balances},{label:'Higher-fee option',values:high.balances}]}
       };
     },
     fire_number(v){
-      const target=v.withdrawal_rate>0?v.annual_spend/(v.withdrawal_rate/100):Infinity;
-      const realAnnual=(1+v.return_rate/100)/(1+v.inflation_rate/100)-1;
-      const r=Math.pow(Math.max(.000001,1+realAnnual),1/12)-1, monthly=v.annual_contribution/12;
-      let bal=v.current, months=0;
-      while(bal<target&&months<1200){bal=bal*(1+r)+monthly;months++;}
-      const years=Math.min(60,Math.max(1,Math.ceil(Math.min(months,1200)/12))), labels=['Now'],vals=[v.current],targets=[target]; bal=v.current;
-      for(let y=1;y<=years;y++){for(let m=0;m<12;m++)bal=bal*(1+r)+monthly;labels.push('Year '+y);vals.push(bal);targets.push(target);}
+      const advanced=Boolean(v.__advanced), withdrawalRate=Math.max(.000001,v.withdrawal_rate/100);
+      const otherIncome=advanced?Math.max(0,v.ongoing_income):0, reserve=advanced?Math.max(0,v.extra_reserve):0;
+      const portfolioSpend=Math.max(0,Math.max(0,v.annual_spend)-otherIncome);
+      const baseTarget=portfolioSpend/withdrawalRate, target=baseTarget+reserve;
+      const fee=advanced?Math.max(0,v.annual_fee/100):0;
+      const nominalNet=(1+Math.max(-.99,v.return_rate/100))*(1-fee)-1;
+      const inflation=Math.max(-.99,(advanced?v.inflation_rate:2)/100), realAnnual=(1+nominalNet)/(1+inflation)-1;
+      const r=Math.pow(Math.max(.000001,1+realAnnual),1/12)-1;
+      let annualContribution=Math.max(0,v.annual_contribution), monthly=annualContribution/12, bal=Math.max(0,v.current), months=0, contributed=0;
+      const contributionGrowth=advanced?Math.max(-.99,v.contribution_growth/100):0;
+      const labels=['Now'], vals=[bal], targets=[target], contributions=[bal];
+      while(bal<target&&months<1200){
+        bal=bal*(1+r)+monthly; contributed+=monthly; months++;
+        if(months%12===0 && bal<target){annualContribution*=1+contributionGrowth;monthly=annualContribution/12;}
+        if(months%12===0 || bal>=target){labels.push(months%12===0?'Year '+(months/12):duration(months));vals.push(bal);targets.push(target);contributions.push(Math.max(0,v.current)+contributed);}
+      }
+      const reached=bal>=target, sensitivity=r=>portfolioSpend/(r/100)+reserve;
       return {
-        target:money(target),gap:money(Math.max(0,target-v.current)),real_return:pct(realAnnual*100),years:months>=1200&&bal<target?'Not reached within 100 years':duration(months),
-        __chart:{type:'line',title:'Today’s-money portfolio path towards the FIRE target',caption:'Spending, contributions and portfolio values are shown in today’s purchasing power using the implied real return.',labels,series:[{label:'Projected portfolio — today’s money',values:vals},{label:'FIRE target — today’s money',values:targets}]}
+        portfolio_spending:money(portfolioSpend),target:money(target),gap:money(Math.max(0,target-Math.max(0,v.current))),progress:pct(target>0?Math.min(100,Math.max(0,v.current)/target*100):100),
+        real_return:pct(realAnnual*100),years:reached?duration(months):'Not reached within 100 years',
+        contributions_to_target:money(contributed),growth_to_target:money(bal-Math.max(0,v.current)-contributed),
+        target_3:money(sensitivity(3)),target_35:money(sensitivity(3.5)),target_4:money(sensitivity(4)),
+        __chart:{type:'line',title:'Today’s-money path towards the financial-independence target',caption:advanced?'The path uses the entered return after the annual fee, adjusts it for inflation, and can grow the annual contribution in real terms. Ongoing income reduces the portfolio-funded spending only if you choose to include it.':'Spending, portfolio value and annual contributions are treated in today’s money using the default 2% inflation assumption.',labels,series:[{label:'Projected portfolio — today’s money',values:vals},{label:'Target — today’s money',values:targets},{label:'Starting capital + contributions',values:contributions}]}
       };
     },
     retirement_income(v){
-      const portfolio=v.pot*v.withdrawal_rate/100, total=portfolio+v.state_pension+v.other_income;
-      let bal=Math.max(0,v.pot), withdrawal=portfolio, depletedYear=null;
-      const labels=['Start'], balances=[bal];
-      for(let year=1;year<=Math.round(v.retirement_years);year++){
-        bal=Math.max(0,bal*(1+v.return_rate/100)-withdrawal);
-        if(bal<=0.005&&depletedYear===null) depletedYear=year;
-        labels.push('Year '+year);balances.push(bal);
-        withdrawal*=1+v.inflation_rate/100;
-      }
+      const advanced=Boolean(v.__advanced), pot=Math.max(0,v.pot), portfolio=pot*Math.max(0,v.withdrawal_rate)/100;
+      const state=Math.max(0,v.state_pension), other=Math.max(0,v.other_income), total=portfolio+state+other;
+      const years=Math.max(1,Math.round(advanced?v.retirement_years:30)), inflation=Math.max(-.99,(advanced?v.inflation_rate:2)/100);
+      const fee=advanced?Math.max(0,v.annual_fee/100):0, baselineReturn=advanced?v.return_rate:4, stressReturn=advanced?v.stress_return_rate:2;
+      const simulate=annualReturn=>{
+        let bal=pot, withdrawal=portfolio, depletedYear=null, fees=0, withdrawn=0;
+        const labels=['Start'], balances=[bal];
+        for(let year=1;year<=years;year++){
+          const afterGrowth=bal*(1+Math.max(-.99,annualReturn/100));
+          const charge=Math.max(0,afterGrowth*fee);
+          fees+=charge;
+          bal=Math.max(0,afterGrowth-charge-withdrawal);
+          withdrawn+=Math.min(withdrawal,Math.max(0,afterGrowth-charge));
+          if(bal<=0.005&&depletedYear===null) depletedYear=year;
+          labels.push('Year '+year);balances.push(bal);
+          withdrawal*=1+inflation;
+        }
+        return {bal,depletedYear,fees,withdrawn,labels,balances};
+      };
+      const base=simulate(baselineReturn), stress=simulate(stressReturn);
+      const targetIncome=advanced?Math.max(0,v.target_income):0, requiredDraw=Math.max(0,targetIncome-state-other);
+      const requiredRate=pot>0?requiredDraw/pot*100:(requiredDraw>0?Infinity:0);
+      const realEnding=base.bal/Math.pow(1+inflation,years);
+      const depletionText=x=>x===null?'Not depleted in '+years+' years':'Depleted in year '+x;
       return {
-        portfolio_income:money(portfolio),annual_income:money(total),monthly_income:money(total/12),ending_pot:money(bal),
-        depletion:depletedYear===null?'Not depleted in '+Math.round(v.retirement_years)+' years':'Depleted in year '+depletedYear,
-        __chart:{type:'line',title:'Deterministic retirement-pot path',caption:'Portfolio grows at the entered constant return while the starting portfolio withdrawal rises with the inflation assumption. State Pension and other income do not reduce portfolio withdrawals in this model.',labels,series:[{label:'Projected portfolio',values:balances}]}
+        portfolio_income:money(portfolio),annual_income:money(total),monthly_income:money(total/12),ending_pot:money(base.bal),depletion:depletionText(base.depletedYear),
+        target_gap:targetIncome>0?(total>=targetIncome?'+':'-')+money(Math.abs(total-targetIncome)):'Not set',
+        required_portfolio_income:targetIncome>0?money(requiredDraw):'Not set',
+        required_withdrawal_rate:targetIncome>0?(Number.isFinite(requiredRate)?pct(requiredRate):'Not calculable'):'Not set',
+        real_ending_pot:money(realEnding),fees_paid:money(base.fees),stress_ending_pot:money(stress.bal),stress_depletion:depletionText(stress.depletedYear),
+        __chart:{type:'line',title:'Retirement-pot sustainability scenarios',caption:advanced?'Baseline and stress paths use the same inflation-linked withdrawals and annual fee, but different constant return assumptions. This still does not model volatile year-by-year market returns.':'Basic mode shows a 30-year deterministic path using 4% annual return and 2% annual withdrawal increases.',labels:base.labels,series:[{label:'Baseline portfolio',values:base.balances},{label:'Stress-return portfolio',values:stress.balances}]}
       };
     },
     pension_projection(v){
-      const years=Math.max(0,Math.floor(v.retirement_age-v.age)), monthly=v.monthly_employee+v.monthly_employer;
-      const netAnnual=(1+v.return_rate/100)*(1-v.annual_fee/100)-1, r=Math.pow(Math.max(.000001,1+netAnnual),1/12)-1;
-      const labels=['Age '+v.age], pots=[v.current], contribs=[v.current]; let bal=v.current, contrib=v.current;
-      for(let y=1;y<=years;y++){for(let m=0;m<12;m++){bal=bal*(1+r)+monthly;contrib+=monthly;}labels.push('Age '+(v.age+y));pots.push(bal);contribs.push(contrib);}
-      const real=bal/Math.pow(1+v.inflation_rate/100,years);
+      const advanced=Boolean(v.__advanced), years=Math.max(0,Math.floor(v.retirement_age-v.age));
+      const contributionGrowth=advanced?Math.max(-.99,v.contribution_growth/100):0, annualAvc=advanced?Math.max(0,v.annual_avc):0;
+      const fee=advanced?Math.max(0,v.annual_fee/100):.0075, baseReturn=advanced?v.return_rate:6, stressReturn=advanced?v.stress_return_rate:3;
+      const simulate=(annualReturn,feeRate)=>{
+        const netAnnual=(1+Math.max(-.99,annualReturn/100))*(1-feeRate)-1, r=Math.pow(Math.max(.000001,1+netAnnual),1/12)-1;
+        let bal=Math.max(0,v.current), employeeMonthly=Math.max(0,v.monthly_employee), employerMonthly=Math.max(0,v.monthly_employer);
+        let employeeTotal=0, employerTotal=0, avcTotal=0;
+        const labels=['Age '+v.age], pots=[bal], contribs=[bal];
+        for(let y=1;y<=years;y++){
+          for(let m=0;m<12;m++){
+            bal=bal*(1+r)+employeeMonthly+employerMonthly;
+            employeeTotal+=employeeMonthly;employerTotal+=employerMonthly;
+          }
+          if(annualAvc>0){bal+=annualAvc;avcTotal+=annualAvc;}
+          labels.push('Age '+(v.age+y));pots.push(bal);contribs.push(Math.max(0,v.current)+employeeTotal+employerTotal+avcTotal);
+          if(y<years){employeeMonthly*=1+contributionGrowth;employerMonthly*=1+contributionGrowth;}
+        }
+        return {bal,employeeMonthly,employerMonthly,employeeTotal,employerTotal,avcTotal,labels,pots,contribs,netAnnual};
+      };
+      const base=simulate(baseReturn,fee), noFee=simulate(baseReturn,0), stress=simulate(stressReturn,fee);
+      const contributed=Math.max(0,v.current)+base.employeeTotal+base.employerTotal+base.avcTotal;
+      const inflation=Math.max(-.99,(advanced?v.inflation_rate:2)/100), real=base.bal/Math.pow(1+inflation,years);
       return {
-        years:years+' years',projected:money(bal),projected_real:money(real),contributed:money(contrib),growth:money(bal-contrib),
-        __chart:{type:'line',title:'Pension projection to retirement',caption:'Nominal projected fund versus cumulative nominal contributions. The today’s-money value is shown separately in the results.',labels,series:[{label:'Projected pension',values:pots},{label:'Contributions + starting pot',values:contribs}]}
+        years:years+' years',projected:money(base.bal),projected_real:money(real),contributed:money(contributed),growth:money(base.bal-contributed),
+        employee_contributions:money(base.employeeTotal+base.avcTotal),employer_contributions:money(base.employerTotal),
+        ending_employee_monthly:money(base.employeeMonthly),ending_employer_monthly:money(base.employerMonthly),
+        fee_drag:money(Math.max(0,noFee.bal-base.bal)),stress_projected:money(stress.bal),
+        __chart:{type:'line',title:'Pension projection to retirement',caption:advanced?'Baseline and lower-return stress paths use the same contribution-growth, AVC and fee assumptions. Cumulative contributions are shown separately from investment outcomes.':'Basic mode uses 6% gross return, a 0.75% annual fee, level monthly contributions and 2% inflation.',labels:base.labels,series:[{label:'Baseline pension',values:base.pots},{label:'Lower-return stress',values:stress.pots},{label:'Starting pot + contributions',values:base.contribs}]}
       };
     },
     rent_vs_buy(v){
@@ -1286,31 +1356,39 @@
       };
     },
     myfuturefund(v){
+      const advanced=Boolean(v.__advanced), employee=v.employment_status==='employee', age=Math.max(0,v.age), salary=Math.max(0,v.salary);
+      const autoEligible=employee&&!v.workplace_pension&&age>=23&&age<60&&salary>=20000;
+      const optInEligible=employee&&!v.workplace_pension&&age>=18&&age<66&&!autoEligible;
+      const participating=autoEligible||(advanced&&optInEligible&&Boolean(v.assume_opt_in));
       let status;
-      if(v.workplace_pension) status='Employment normally exempt';
-      else if(v.age>=23&&v.age<60&&v.salary>=20000) status='Likely auto-enrolled';
-      else if(v.age>=18&&v.age<66) status='May opt in';
+      if(!employee) status='Self-employed only — not currently eligible';
+      else if(v.workplace_pension) status='Employment normally exempt';
+      else if(autoEligible) status='Likely auto-enrolled';
+      else if(optInEligible&&advanced&&v.assume_opt_in) status='Opt-in scenario selected';
+      else if(optInEligible) status='Eligible to opt in';
       else status='Outside current participation age';
       const rateForYear=year=>year<=2028?.015:year<=2031?.03:year<=2034?.045:.06;
       const stateRateForYear=year=>rateForYear(year)/3;
-      const participating=!v.workplace_pension&&v.age>=18&&v.age<66;
-      const baseEarnings=Math.min(Math.max(0,v.salary),80000);
-      const er2026=participating?baseEarnings*rateForYear(2026):0, sr2026=participating?baseEarnings*stateRateForYear(2026):0;
-      let fund=Math.max(0,v.current_fund), salary=Math.max(0,v.salary), employeeTotal=0, labels=['Age '+v.age],funds=[fund],employeeCum=[0];
-      const years=Math.max(0,Math.floor(v.retirement_age-v.age));
+      const baseEarnings=Math.min(salary,80000), er2026=participating?baseEarnings*rateForYear(2026):0, sr2026=participating?baseEarnings*stateRateForYear(2026):0;
+      let fund=advanced?Math.max(0,v.current_fund):0, projectedSalary=salary, employeeTotal=0, employerTotal=0, stateTotal=0;
+      const startingFund=fund, labels=['Age '+age], funds=[fund], contributionCum=[fund];
+      const years=Math.max(0,Math.floor(v.retirement_age-age)), salaryGrowth=advanced?v.salary_growth/100:0, investmentReturn=advanced?v.return_rate/100:.05;
       for(let i=0;i<years;i++){
-        const year=2026+i, age=v.age+i;
-        fund*=1+v.return_rate/100;
-        if(participating&&age<66){
-          const earnings=Math.min(salary,80000), emp=earnings*rateForYear(year), employer=emp, state=earnings*stateRateForYear(year);
-          fund+=emp+employer+state; employeeTotal+=emp;
+        const year=2026+i, currentAge=age+i;
+        fund*=1+investmentReturn;
+        if(participating&&currentAge<66){
+          const earnings=Math.min(Math.max(0,projectedSalary),80000), emp=earnings*rateForYear(year), employer=emp, state=earnings*stateRateForYear(year);
+          fund+=emp+employer+state; employeeTotal+=emp; employerTotal+=employer; stateTotal+=state;
         }
-        salary*=1+v.salary_growth/100;
-        labels.push('Age '+(v.age+i+1));funds.push(fund);employeeCum.push(employeeTotal);
+        projectedSalary*=1+salaryGrowth;
+        labels.push('Age '+(age+i+1));funds.push(fund);contributionCum.push(startingFund+employeeTotal+employerTotal+stateTotal);
       }
+      const inflation=advanced?Math.max(-.99,v.inflation_rate/100):.02, projectedReal=fund/Math.pow(1+inflation,years);
+      const investmentGrowth=fund-startingFund-employeeTotal-employerTotal-stateTotal;
       return {
-        status,employee_2026:money(er2026),employer_2026:money(er2026),state_2026:money(sr2026),total_2026:money(er2026*2+sr2026),projected:money(fund),employee_total:money(employeeTotal),
-        __chart:{type:'line',title:'Projected MyFutureFund balance',caption:'Uses the statutory calendar-year contribution phases plus the salary-growth and investment-return assumptions entered.',labels,series:[{label:'Projected fund',values:funds},{label:'Cumulative employee contributions',values:employeeCum}]}
+        status,employee_2026:money(er2026),employer_2026:money(er2026),state_2026:money(sr2026),total_2026:money(er2026*2+sr2026),external_2026:money(er2026+sr2026),
+        projected:money(fund),employee_total:money(employeeTotal),employer_total:money(employerTotal),state_total:money(stateTotal),projected_real:money(projectedReal),investment_growth:money(investmentGrowth),
+        __chart:{type:'line',title:'Projected MyFutureFund balance',caption:'The projection applies the statutory calendar-year contribution phases to the annual pay assumption, subject to the €80,000 annual modelling cap. Actual eligibility and payroll collection use NAERSA rules including pay-period assessment.',labels,series:[{label:'Projected fund',values:funds},{label:'Starting fund + all contributions',values:contributionCum}]}
       };
     },
     childcare_return(v){
