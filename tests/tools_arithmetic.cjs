@@ -292,4 +292,71 @@ const contractorFlagship = calculators.contractor_vs_salary({
 });
 assert.match(contractorFlagship.break_even_day_rate, /^€[\d,.]+\/day$/);
 
+
+// Flagship loan: an extra €100/month plus a €1,000 month-12 lump sum shortens the schedule.
+const loanAdvanced = calculators.loan({
+  amount: 20000, rate: 7.5, years: 5, upfront_fee: 100,
+  extra_monthly: 100, extra_start_month: 1, lump_sum: 1000, lump_sum_month: 12,
+  __advanced: true
+});
+assert.equal(loanAdvanced.monthly, '€400.76');
+assert.equal(loanAdvanced.payoff_time, '3 yr 8 mo');
+assert.equal(loanAdvanced.scenario_interest, '€2,850.18');
+assert.equal(loanAdvanced.interest_saved, '€1,195.35');
+assert.equal(loanAdvanced.scenario_total, '€22,950.18');
+
+// Fuel annualisation should use the same L/100km and pump-price assumptions.
+const fuelAnnual = calculators.fuel({
+  distance: 100, consumption: 6.5, price: 1.75, trips: 1,
+  annual_distance: 15000, __advanced: true
+});
+assert.equal(fuelAnnual.cost_per_km, '€0.11');
+assert.equal(fuelAnnual.annual_litres, '975 L');
+assert.equal(fuelAnnual.annual_cost, '€1,706.25');
+
+// Mixed EV charging: 80% at €0.20 and 20% at €0.60 = €0.28/kWh blended.
+// 15,000 km at 18 kWh/100km with 10% charging losses = 3,000 grid kWh.
+const evAnnual = calculators.ev({
+  distance: 100, efficiency: 18, price: 0.20, loss: 10,
+  home_share: 80, public_price: 0.60, annual_distance: 15000,
+  ice_consumption: 6.5, fuel_price: 1.75, __advanced: true
+});
+assert.equal(evAnnual.blended_rate, '€0.28/kWh');
+assert.equal(evAnnual.annual_wall_kwh, '3,000 kWh');
+assert.equal(evAnnual.annual_cost, '€840.00');
+assert.equal(evAnnual.ice_annual_cost, '€1,706.25');
+assert.equal(evAnnual.annual_saving_vs_ice, '+€866.25');
+
+// Appliance advanced mode: 2 kW × 1h × 30 days × 50% duty = 30 kWh;
+// 50/50 split across €0.30 and €0.10 tariffs = €0.20/kWh.
+const applianceAdvanced = calculators.electricity({
+  watts: 2000, hours: 1, days: 30, price: 0.30,
+  duty_cycle: 50, offpeak_share: 50, offpeak_rate: 0.10, __advanced: true
+});
+assert.equal(applianceAdvanced.kwh, '30 kWh');
+assert.equal(applianceAdvanced.monthly, '€6.00');
+assert.equal(applianceAdvanced.annual, '€72.00');
+assert.equal(applianceAdvanced.annual_kwh, '360 kWh');
+assert.equal(applianceAdvanced.blended_rate, '€0.20/kWh');
+
+// 2026 retrofit: semi-detached heat pump with explicit central-heating grant + renewable-heat bonus.
+// Base heat-pump grant €6,500 + conditional €6,000 + €350 assessment + €1,600 PM.
+const retrofitAdvanced = calculators.retrofit_planner({
+  home_type: 'semi', oss_eligible: true, first_time_buyer: false,
+  annual_energy_bill: 3000, saving_pct: 35,
+  attic: false, attic_cost: 2500, external_wall: false, wall_cost: 18000,
+  windows: false, windows_cost: 12000, heat_pump: true, heat_pump_cost: 14000,
+  central_heating_upgrade: true, renewable_heat_bonus: true,
+  solar: false, solar_cost: 8000, solar_kwp: 4,
+  doors: false, doors_cost: 3000, door_count: 2,
+  ventilation: false, ventilation_cost: 5000,
+  airtightness: false, airtightness_cost: 2500,
+  other_cost: 3000, include_oss_services: true, __advanced: true
+});
+assert.equal(retrofitAdvanced.base_grants, '€6,500.00');
+assert.equal(retrofitAdvanced.conditional_heat_grants, '€6,000.00');
+assert.equal(retrofitAdvanced.oss_service_grants, '€1,950.00');
+assert.equal(retrofitAdvanced.grants, '€14,450.00');
+assert.equal(retrofitAdvanced.net_cost, '€2,550.00');
+
 console.log('Calculator arithmetic regression checks passed.');
