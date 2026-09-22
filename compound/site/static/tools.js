@@ -106,7 +106,7 @@
     const zeroY=y(0); svg+='<line class="tool-chart-grid" x1="'+L+'" x2="'+(W-R)+'" y1="'+zeroY.toFixed(1)+'" y2="'+zeroY.toFixed(1)+'"/>';
     if(spec.type==='bar'){
       const n=Math.max(1,labels.length), group=plotW/n, totalBar=Math.min(group*.72,80), bw=totalBar/Math.max(1,series.length);
-      labels.forEach((lab,i)=>{ const cx=L+group*(i+.5); svg+='<text class="tool-chart-axis" x="'+cx.toFixed(1)+'" y="'+(H-18)+'" text-anchor="middle">'+esc(lab)+'</text>'; series.forEach((s,j)=>{const v=Number(s.values[i])||0,x=cx-totalBar/2+j*bw,yy=y(Math.max(0,v)),y0=y(Math.min(0,v)),top=Math.min(yy,y0),h=Math.max(1,Math.abs(y0-yy));svg+='<rect class="tool-chart-bar tool-chart-series-'+(j%3)+'" x="'+x.toFixed(1)+'" y="'+top.toFixed(1)+'" width="'+Math.max(2,bw-3).toFixed(1)+'" height="'+h.toFixed(1)+'"><title>'+esc(s.label)+': '+esc(money(v))+'</title></rect>';});});
+      labels.forEach((lab,i)=>{ const cx=L+group*(i+.5); svg+='<text class="tool-chart-axis" x="'+cx.toFixed(1)+'" y="'+(H-18)+'" text-anchor="middle">'+esc(lab)+'</text>'; series.forEach((s,j)=>{const v=Number(s.values[i])||0,x=cx-totalBar/2+j*bw,yy=y(Math.max(0,v)),y0=y(Math.min(0,v)),top=Math.min(yy,y0),h=Math.max(1,Math.abs(y0-yy));svg+='<rect class="tool-chart-bar tool-chart-series-'+(j%3)+(v<0?' tool-chart-negative':'')+'" x="'+x.toFixed(1)+'" y="'+top.toFixed(1)+'" width="'+Math.max(2,bw-3).toFixed(1)+'" height="'+h.toFixed(1)+'"><title>'+esc(s.label)+': '+esc(money(v))+'</title></rect>';});});
     } else {
       const n=Math.max(1,labels.length-1);
       series.forEach((s,j)=>{let pts='';s.values.forEach((v,i)=>{const x=L+plotW*(i/n),yy=y(Number(v)||0);pts+=x.toFixed(1)+','+yy.toFixed(1)+' ';});svg+='<polyline class="tool-chart-line tool-chart-series-'+(j%3)+'" points="'+pts.trim()+'"/>';s.values.forEach((v,i)=>{if(i===0||i===s.values.length-1||i%Math.max(1,Math.ceil(s.values.length/12))===0){const x=L+plotW*(i/n),yy=y(Number(v)||0);svg+='<circle class="tool-chart-point tool-chart-series-'+(j%3)+'" cx="'+x.toFixed(1)+'" cy="'+yy.toFixed(1)+'" r="4"><title>'+esc(labels[i])+': '+esc(s.label)+' '+esc(money(Number(v)||0))+'</title></circle>';}});});
@@ -167,6 +167,53 @@
         if(v.monthly<=0 && r<=0) break;
       }
       return {time:bal>=v.target?duration(months):'Not reached within 100 years',contributions:money(contributed),growth:money(bal-v.current-contributed)};
+    },
+    net_worth(v){
+      const advanced=Boolean(v.__advanced);
+      const cash=Math.max(0,v.cash), investments=Math.max(0,v.investments), pensions=Math.max(0,v.pensions), home=Math.max(0,v.home_value);
+      const otherProperty=advanced?Math.max(0,v.other_property):0;
+      const vehicles=advanced?Math.max(0,v.vehicles):0;
+      const business=advanced?Math.max(0,v.business_value):0;
+      const otherAssets=advanced?Math.max(0,v.other_assets):0;
+      const mortgage=Math.max(0,v.mortgage);
+      const otherPropertyMortgage=advanced?Math.max(0,v.other_property_mortgage):0;
+      const loans=Math.max(0,v.loans), cards=Math.max(0,v.credit_cards), otherDebt=Math.max(0,v.other_debt);
+      const taxLiabilities=advanced?Math.max(0,v.tax_liabilities):0;
+
+      const totalAssets=cash+investments+pensions+home+otherProperty+vehicles+business+otherAssets;
+      const totalLiabilities=mortgage+otherPropertyMortgage+loans+cards+otherDebt+taxLiabilities;
+      const net=totalAssets-totalLiabilities;
+      const propertyEquity=home+otherProperty-mortgage-otherPropertyMortgage;
+      const financialAssets=cash+investments+pensions;
+      const netExPension=net-pensions;
+      const debtAsset=totalAssets>0?totalLiabilities/totalAssets*100:null;
+
+      const labels=['Cash','Investments','Pensions','Main home'];
+      const values=[cash,investments,pensions,home];
+      if(advanced){
+        if(otherProperty>0){labels.push('Other property');values.push(otherProperty);}
+        if(vehicles>0){labels.push('Vehicles');values.push(vehicles);}
+        if(business>0){labels.push('Business');values.push(business);}
+        if(otherAssets>0){labels.push('Other assets');values.push(otherAssets);}
+      }
+      labels.push('All liabilities'); values.push(-totalLiabilities);
+
+      return {
+        net_worth:money(net),
+        total_assets:money(totalAssets),
+        total_liabilities:money(totalLiabilities),
+        property_equity:money(propertyEquity),
+        financial_assets:money(financialAssets),
+        net_ex_pension:money(netExPension),
+        debt_asset_ratio:debtAsset===null?'Not meaningful with €0 assets':pct(debtAsset),
+        __chart:{
+          type:'bar',
+          title:'What is driving your balance sheet?',
+          caption:'Asset categories are shown above zero. Total liabilities are shown below zero so you can see the scale of debt against the assets entered.',
+          labels,
+          series:[{label:'Balance-sheet value',values}]
+        }
+      };
     },
     regular_savings(v){
       const months=Math.round(v.years*12), r=v.rate/100/12; let bal=v.current;
@@ -738,7 +785,7 @@
       root.dataset.advancedMode=advanced?'true':'false';
       modeButtons.forEach(b=>{const active=b===button;b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',active?'true':'false');});
       const note=root.querySelector('[data-tool-mode-note]');
-      if(note) note.textContent=advanced?'Advanced mode: use the detailed figures from the lender or dealer quote.':'Start with the core figures. Switch to Advanced when you have the detailed finance quote.';
+      if(note) note.textContent=advanced?(note.dataset.advancedNote||'Advanced mode: add optional detail for a more complete scenario.'):(note.dataset.basicNote||'Start with the core figures. Switch to Advanced for optional detail.');
       syncVisibility();run();
     }));
     if(form){
@@ -747,7 +794,7 @@
       form.addEventListener('reset',()=>setTimeout(()=>{
         root.dataset.advancedMode='false';
         modeButtons.forEach(b=>{const active=b.dataset.toolMode==='basic';b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',active?'true':'false');});
-        const note=root.querySelector('[data-tool-mode-note]'); if(note) note.textContent='Start with the core figures. Switch to Advanced when you have the detailed finance quote.';
+        const note=root.querySelector('[data-tool-mode-note]'); if(note) note.textContent=note.dataset.basicNote||'Start with the core figures. Switch to Advanced for optional detail.';
         syncVisibility();run();
       },0));
     }
