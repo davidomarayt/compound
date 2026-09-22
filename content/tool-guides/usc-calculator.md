@@ -52,6 +52,14 @@ There are also special rules for certain self-employed income and exempt income 
 
 When reviewing a payslip, keep USC separate from Income Tax and PRSI so you can see which part of a change comes from each system.
 
+## Reduced USC rates in Advanced mode
+
+Advanced mode can apply Revenue's reduced 2026 USC schedule where the qualifying conditions are met. A qualifying person aged 70 or over, or a holder of a full Medical Card, can use reduced rates when aggregate income is **€60,000 or less**.
+
+For 2026, the reduced schedule is 0.5% on the first €12,012 and 2% on the balance. A GP visit card is not the same as a full Medical Card for this rule.
+
+If the reduced-rate option is selected but the income entered is above €60,000, Compound automatically uses the standard USC bands. The result card identifies whether the standard or reduced rate basis was actually used.
+
 ## Method and limitations
 
 The calculator applies the standard 2026 USC bands implemented in the site. It does not model every exemption, reduced-rate case or special income category.
