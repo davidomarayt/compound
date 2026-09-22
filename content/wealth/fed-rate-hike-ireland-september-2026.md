@@ -11,6 +11,7 @@ reviewed: 2026-09-22
 summary: 'The US Federal Reserve has raised rates by 0.25 percentage points. It does not set Irish mortgage rates, but the move can still matter for Irish investors, the euro-dollar exchange rate and global financial conditions.'
 meta_description: 'The US Federal Reserve raised rates to 3.75%–4.00% in September 2026. Here is what the decision can — and cannot — mean for Irish mortgages, savers and investors.'
 tags: [news, federal-reserve, interest-rates, investing, mortgages, ireland, united-states]
+news_image_query: 'US dollar banknotes finance interest rates economy'
 related_tools:
 - compound-interest-calculator
 social:
