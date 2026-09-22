@@ -1333,16 +1333,20 @@ tools:
     summary: Turn annual spending and a chosen withdrawal rate into an illustrative financial-independence target.
     meta_description: FIRE number calculator Ireland. Estimate an investment target from annual spending, withdrawal rate, current portfolio and future contributions.
     updated: 2026-09-22
+    basic_note: "Basic mode treats spending, current assets and annual contributions in today’s money and uses 2% inflation to convert the entered nominal return into a real return."
+    advanced_note: "Advanced mode lets you change the inflation assumption used to convert the nominal investment return into today’s-money growth."
     fields:
       - {id: annual_spend, label: Annual spending to fund, type: number, prefix: "€", default: 36000, min: 0, step: 500, section_start: Independence target}
       - {id: withdrawal_rate, label: Assumed withdrawal rate, type: number, suffix: "%", default: 4, min: 1, max: 10, step: 0.1}
       - {id: current, label: Current invested assets, type: number, prefix: "€", default: 100000, min: 0, step: 1000, section_start: Portfolio & contributions}
       - {id: annual_contribution, label: Annual new investment, type: number, prefix: "€", default: 18000, min: 0, step: 500}
-      - {id: return_rate, label: Assumed annual investment return, type: number, suffix: "%", default: 6, min: -20, max: 30, step: 0.1}
+      - {id: return_rate, label: Assumed annual nominal investment return, type: number, suffix: "%", default: 6, min: -20, max: 30, step: 0.1}
+      - {id: inflation_rate, label: Assumed annual inflation, type: number, suffix: "%", default: 2, min: -5, max: 15, step: 0.1, advanced: true, section_start: Advanced real-return assumption}
     results:
       - {id: target, label: Illustrative FIRE target}
       - {id: gap, label: Gap from current portfolio}
-      - {id: years, label: Years to target at entered assumptions}
+      - {id: real_return, label: Implied annual real return}
+      - {id: years, label: Years to target in today’s-money terms}
     guide: |
       ## A withdrawal-rate target is a planning shortcut
       Dividing desired annual portfolio withdrawals by a chosen withdrawal rate creates a simple target. A 4% assumption, for example, corresponds to 25 times annual spending.
@@ -1357,15 +1361,22 @@ tools:
     summary: Combine an illustrative pension-pot withdrawal with State Pension and other retirement income.
     meta_description: Retirement income calculator Ireland. Estimate annual and monthly gross retirement income from a pension pot, withdrawal rate, State Pension and other income.
     updated: 2026-09-22
+    basic_note: "Basic mode shows first-year gross income and uses a 30-year retirement, 4% annual portfolio return and 2% annual inflation for the deterministic sustainability illustration."
+    advanced_note: "Advanced mode lets you change retirement length, portfolio return and inflation. The projection is smooth and does not model sequence-of-returns risk."
     fields:
       - {id: pot, label: Pension / investment pot at retirement, type: number, prefix: "€", default: 500000, min: 0, step: 5000, section_start: Portfolio}
       - {id: withdrawal_rate, label: Illustrative annual withdrawal rate, type: number, suffix: "%", default: 4, min: 0, max: 15, step: 0.1}
       - {id: state_pension, label: Annual State Pension or social-welfare income to include, type: number, prefix: "€", default: 0, min: 0, step: 100, section_start: Other retirement income}
       - {id: other_income, label: Other annual retirement income, type: number, prefix: "€", default: 0, min: 0, step: 100}
+      - {id: retirement_years, label: Retirement period to model, type: number, suffix: years, default: 30, min: 1, max: 60, step: 1, advanced: true, section_start: Advanced sustainability assumptions}
+      - {id: return_rate, label: Assumed annual portfolio return, type: number, suffix: "%", default: 4, min: -20, max: 30, step: 0.1, advanced: true}
+      - {id: inflation_rate, label: Annual increase in portfolio withdrawals, type: number, suffix: "%", default: 2, min: -5, max: 15, step: 0.1, advanced: true}
     results:
       - {id: portfolio_income, label: Illustrative income from pot}
       - {id: annual_income, label: Total annual gross retirement income}
       - {id: monthly_income, label: Average monthly gross retirement income}
+      - {id: ending_pot, label: Portfolio after modelled retirement period}
+      - {id: depletion, label: Deterministic portfolio sustainability}
     guide: |
       ## Build retirement income from several sources
       This calculator combines a simple percentage withdrawal from your entered pot with the State Pension amount and other income you choose to include. It intentionally leaves the State Pension field editable because entitlement and rates depend on the person and can change.
@@ -1380,8 +1391,8 @@ tools:
     summary: Project a pension pot from current savings, employee and employer contributions, return and annual fees.
     meta_description: Pension projection calculator Ireland. Project a future pension pot from age, retirement age, current fund, monthly contributions, return and fees.
     updated: 2026-09-22
-    basic_note: "Basic mode uses the contribution figures entered plus a 6% gross return and 0.75% annual fee."
-    advanced_note: "Advanced mode lets you change the investment-return and annual-fee assumptions."
+    basic_note: "Basic mode uses the contribution figures entered plus a 6% gross return, 0.75% annual fee and 2% inflation to show both nominal and today’s-money outcomes."
+    advanced_note: "Advanced mode lets you change the investment return, annual fee and inflation assumptions."
     fields:
       - {id: age, label: Current age, type: number, default: 35, min: 16, max: 90, step: 1, section_start: Timeline}
       - {id: retirement_age, label: Target retirement age, type: number, default: 65, min: 18, max: 90, step: 1}
@@ -1390,10 +1401,12 @@ tools:
       - {id: monthly_employer, label: Employer monthly contribution, type: number, prefix: "€", default: 300, min: 0, step: 25}
       - {id: return_rate, label: Assumed annual return before fee, type: number, suffix: "%", default: 6, min: -20, max: 30, step: 0.1, advanced: true, section_start: Investment assumptions}
       - {id: annual_fee, label: Annual fund fee, type: number, suffix: "%", default: 0.75, min: 0, max: 10, step: 0.05, advanced: true}
+      - {id: inflation_rate, label: Assumed annual inflation, type: number, suffix: "%", default: 2, min: -5, max: 15, step: 0.1, advanced: true}
     results:
       - {id: years, label: Years to retirement}
-      - {id: projected, label: Projected pension pot}
-      - {id: contributed, label: Total contributions including current pot}
+      - {id: projected, label: Projected pension pot (nominal)}
+      - {id: projected_real, label: Projected pot in today’s money}
+      - {id: contributed, label: Total nominal contributions including current pot}
       - {id: growth, label: Estimated net investment growth}
     guide: |
       ## Projection, not forecast
