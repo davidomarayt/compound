@@ -36,7 +36,7 @@ if(choice==='granted')window.compoundStartAnalytics();})();
   <a class="wordmark" href="/" aria-label="Compound home">compound<span class="brand-dot">.</span></a>
   <nav class="pillar-nav" aria-label="Main navigation">
     <a href="/tools/" class="nav-wealth" {% if tools_page is defined and tools_page %}aria-current="page"{% endif %}>Tools</a>
-    {% for p in pillars %}<a href="/{{ p }}/" class="nav-{{ p }}" {% if (pillar == p or (article is defined and article.pillar == p)) and not (article is defined and 'news' in article.tags) %}aria-current="page"{% endif %}>{{ pillar_labels[p] }}</a>{% endfor %}
+    {% for p in pillars %}<a href="/{{ p }}/" class="nav-{{ p }}" {% if (pillar == p or (article is defined and article.pillar == p)) and not (article is defined and 'news' in article.tags) and not (tools_page is defined and tools_page) %}aria-current="page"{% endif %}>{{ pillar_labels[p] }}</a>{% endfor %}
     <a href="/news/" class="nav-news" {% if (news is defined and news) or (article is defined and 'news' in article.tags) %}aria-current="page"{% endif %}>News</a>
   </nav>
   <a class="search-link" href="/search/"><span>Explore the journal</span><span aria-hidden="true">⌕</span></a>
