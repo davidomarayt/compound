@@ -11,6 +11,7 @@ const {
   selfEmployedNet2026,
   stampDutyResidential,
   mortgageOverpaymentProjection,
+  mortgageSnapshot,
 } = globalThis.CompoundToolsTest;
 
 const close = (actual, expected, tolerance, message) => {
@@ -75,6 +76,21 @@ const noDeposit = calculators.mortgage_affordability({
 });
 assert.equal(noDeposit.indicative_mortgage, '€0.00');
 assert.equal(noDeposit.indicative_price, '€0.00');
+
+// Mortgage switching: compare interest plus net switching cost over a five-year horizon.
+const switchResult = calculators.mortgage_switch({
+  balance: 250000, current_rate: 4.2, current_years: 20,
+  new_rate: 3.4, new_years: 20,
+  switching_costs: 1500, break_fee: 0, cashback: 0,
+  comparison_years: 5, __advanced: true
+});
+assert.equal(switchResult.current_payment, '€1,541.43');
+assert.equal(switchResult.new_payment, '€1,437.09');
+assert.equal(switchResult.horizon_interest_current, '€48,077.63');
+assert.equal(switchResult.horizon_interest_new, '€40,136.76');
+assert.equal(switchResult.horizon_saving, '+€7,940.86');
+assert.equal(switchResult.horizon_balance_difference, '+€3,180.40');
+assert.equal(switchResult.lifetime_difference, '+€23,541.85');
 
 // FIRE uses an implied real return when inputs are expressed in today's money.
 const fire = calculators.fire_number({
