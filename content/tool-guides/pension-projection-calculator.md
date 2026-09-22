@@ -152,6 +152,24 @@ And do not judge retirement adequacy from the pot alone: State Pension, other as
 
 Use the [Pension Tax Relief Calculator](/pension-tax-relief-calculator/) to check the Revenue contribution-relief ceiling, the [Retirement Income Calculator](/retirement-income-calculator/) to model the spending phase, the [MyFutureFund Calculator](/myfuturefund-calculator/) for auto-enrolment and the [Investment Fee Calculator](/investment-fee-calculator/) for a dedicated cost comparison.
 
+## Frequently asked questions
+
+### Is the projected pension pot guaranteed?
+
+No. The projection assumes a constant annual return and fee. Real investment returns vary from year to year, so the result is a planning scenario rather than a forecast or promise.
+
+### Does the projection include the State Pension?
+
+No. The calculator projects the private pension contributions and starting fund entered. State Pension entitlement and future rates are separate and should be considered when you later model retirement income.
+
+### Why is the today's-money figure lower than the nominal pot?
+
+Inflation reduces future purchasing power. The nominal result shows future euros; the today's-money result discounts that amount using the inflation assumption so it can be compared more meaningfully with current spending.
+
+### Are employer and employee contributions treated differently in the growth projection?
+
+Once contributed, both are added to the modelled pension fund and compound in the same way. Their tax treatment and eligibility rules can differ outside the projection, which is why the separate Pension Tax Relief Calculator should be used for employee/personal relief limits.
+
 ## Method and limitations
 
 The engine calculates the number of complete years between the current age and target retirement age.
