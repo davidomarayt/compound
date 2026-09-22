@@ -1,69 +1,165 @@
 ## What this calculator is for
 
-This calculator works backwards from a target. You enter what you already have, how much you can add each month and an assumed annual return; the tool estimates how long it could take to reach the goal.
+A savings goal becomes more useful when it has three things: a target amount, a contribution plan and a timeline. This calculator combines those pieces and estimates when the balance could reach the target under the assumptions entered.
+
+Basic mode keeps the target and monthly contribution fixed. Advanced mode can increase the monthly contribution each year, add a recurring annual lump sum and allow the target itself to rise over time.
+
+That last feature matters for goals such as a future house deposit, education cost or major purchase whose price may not remain fixed while you save.
 
 ## How to read the result
 
-Separate the result into **contributions** and **growth**. Contributions are under your control; growth is an assumption. If most of the target depends on a high return, the plan is more fragile than one that works mainly through saving.
+The estimated time to target is the headline result, but it should not be read alone.
+
+The calculator also separates:
+
+- additional money you contribute;
+- modelled interest or investment growth;
+- the balance when the target is reached;
+- the target amount at that point if target growth is enabled;
+- the monthly contribution in force by then if annual contribution growth is enabled.
+
+A plan driven mostly by contributions is less dependent on the return assumption than a plan in which a large share of the target depends on investment growth.
+
+For a short-term essential goal, that distinction can be more important than maximising the projected return.
 
 ## Worked example
 
-Suppose you have €10,000, add €500 a month and target €50,000. At 0% growth, the gap is filled almost entirely by contributions. At a positive return, the target may arrive sooner, but the exact date is uncertain because real returns do not arrive smoothly.
+Suppose your target today is €30,000, you already have €5,000 and you can save €500 per month.
 
-## Irish context
+At a 0% return and with a fixed target, the €25,000 gap would require 50 monthly contributions.
 
-For Irish deposit savings, interest may be subject to DIRT. For investments, tax treatment depends on the product and can be materially different from deposit taxation. This calculator models growth before product-specific tax unless the page explicitly states otherwise.
+Now suppose the money earns a positive net return. The model may reach the target earlier because the existing balance and previous contributions compound.
 
-## What can change the answer
+In Advanced mode, the picture can change again. If you increase the monthly contribution by 3% each year, add a €1,000 annual lump sum and assume the target itself rises by 2% annually, both sides of the race are moving. The balance grows faster, but the amount you are trying to reach also becomes larger.
 
-The monthly contribution is often the strongest lever over shorter horizons. Over longer horizons, return assumptions matter more. Fees, tax, inflation and pauses in saving can all delay the goal.
+That is often a more realistic way to model a future cost than pretending today's sticker price will be unchanged several years from now.
+
+## Fixed targets versus moving targets
+
+Not every goal should grow.
+
+A target such as “build €15,000 of cash” is a fixed nominal target if €15,000 is genuinely the amount required.
+
+A goal such as “save a 10% deposit for a home that costs €400,000 today” may not be fixed. If the future purchase price changes, the required euro deposit may change too.
+
+The Advanced target-growth input allows you to model that uncertainty explicitly. It is not a forecast of house prices or any other cost. It is a scenario variable.
+
+Run more than one case rather than assuming a single growth rate is correct.
+
+## Deposit savings and DIRT in Ireland
+
+Revenue states that Deposit Interest Retention Tax is deducted at 33% from deposit interest paid to Irish-resident individuals, subject to exemptions and specific rules.
+
+Because this calculator asks for an **annual net interest / return assumption**, a person modelling an ordinary taxable Irish deposit account should normally enter the rate they expect to retain after relevant tax rather than entering a gross deposit rate and then forgetting DIRT.
+
+For a simple illustration, if a deposit account paid 3% gross and all of that interest were subject to 33% DIRT, the retained rate would be about 2.01% before considering any other relevant circumstances.
+
+That shortcut should not be used for every investment product. Irish taxation of funds, shares and other assets can follow different rules.
+
+## Saving versus investing for the goal
+
+A higher expected investment return can make a goal arrive sooner in a deterministic calculator, but return is not free.
+
+Investment values can fall, sometimes at exactly the point when the money is needed. If the goal date is short and non-negotiable, capital stability and access may matter more than a higher expected return.
+
+The calculator deliberately does not decide whether cash or investments are appropriate. It lets you model the path after you have chosen an assumption suitable for the product and time horizon.
+
+## Annual contribution growth
+
+Advanced mode can raise the monthly contribution once per year.
+
+This can be useful if you intend to increase saving when pay rises. For example, a €500 monthly contribution growing by 3% per year becomes €515 after the first increase, then about €530.45 after the next.
+
+The model compounds those increases, so an aggressive contribution-growth assumption can materially shorten the timeline.
+
+Only use a rate that your future budget could plausibly support.
+
+## Annual lump sums
+
+Advanced mode can also add one lump sum every 12 months.
+
+This can represent a bonus, tax refund, annual saving transfer or another planned top-up.
+
+The lump sum is included as a contribution rather than investment growth, which keeps the result transparent: the tool does not pretend money you added yourself was generated by the market.
+
+## Return assumptions
+
+The return is treated as a constant effective annual rate and converted into an equivalent monthly rate.
+
+Real deposit rates can change. Investment returns are uneven and can be negative. A smooth rate is useful for planning but does not predict the actual path.
+
+For that reason, test at least three cases where the return matters materially: conservative, central and optimistic.
+
+If the plan fails under a modest return but succeeds only under an ambitious one, that tells you the target is relying heavily on something you do not control.
+
+## Inflation and the target
+
+Inflation can affect a goal in two different ways.
+
+First, it can reduce what a fixed euro target will buy. Second, the specific thing you want to purchase can rise at a different rate from general consumer inflation.
+
+The Advanced target-growth field is therefore separate from the return assumption. Do not automatically set it equal to CPI unless that is genuinely the scenario you want to test.
+
+Use the [Inflation Calculator](/inflation-calculator/) when you want to explore purchasing power separately.
+
+## What if the target is already reached?
+
+If current savings equal or exceed the target entered, the calculator reports that the target is already reached.
+
+That does not mean the money should automatically be spent. A target may need to coexist with an emergency fund or other reserves.
+
+The [Emergency Fund Calculator](/emergency-fund-calculator/) can help separate a specific savings goal from money intended to protect the household against unexpected costs.
 
 ## Common mistakes to avoid
 
-Do not choose an optimistic return simply to make the date look better. Do not forget that a €50,000 target ten years from now may buy less because of inflation. And do not invest short-term essential money in volatile assets merely because the calculator shows a higher expected return.
+Do not enter a gross deposit interest rate if you intend the calculator to represent an after-tax deposit outcome.
+
+Do not assume an investment return will arrive smoothly.
+
+Do not use a high expected return simply to make the target date look acceptable.
+
+Do not forget that the target itself may rise.
+
+Do not count the same annual bonus twice by including it in both the monthly contribution and annual lump-sum fields.
+
+And do not commit emergency cash to a volatile strategy merely because the deterministic projection reaches the target sooner.
 
 ## Related Compound tools
 
-Use the [Regular Savings Calculator](/regular-savings-calculator/) if you care about the final balance rather than a target date, the [Inflation Calculator](/inflation-calculator/) to restate a future target in today's purchasing power, and the [Compound Interest Calculator](/compound-interest-calculator/) for a more detailed growth model.
+Use the [Regular Savings Calculator](/regular-savings-calculator/) when the end balance matters more than a target date, the [Investment Fee Calculator](/investment-fee-calculator/) to isolate cost drag, the [Inflation Calculator](/inflation-calculator/) for purchasing power and the [Emergency Fund Calculator](/emergency-fund-calculator/) for a dedicated household buffer.
 
 ## Frequently asked questions
 
-### What return should I use?
-Use a conservative assumption appropriate to the product and time horizon. A bank deposit and an equity portfolio should not share the same assumed return.
+### Does the calculator include tax?
+Not automatically. The return input is described as net so you can enter a rate after the tax and fees relevant to the product being modelled.
 
-### Does this include tax?
-No, not automatically.
+### What happens if the target grows faster than my savings?
+The target can remain out of reach within the 100-year modelling limit. That is useful information: the saving plan or target assumptions may need to change.
 
-### What if I already reached the target?
-The tool identifies the goal as already reached.
+### When is the annual lump sum added?
+At each 12-month point in the model.
 
-### Can I use it for an emergency fund?
-Yes, but an emergency fund is normally about accessible cash rather than maximising return.
+### Are monthly contributions made at the beginning or end of the month?
+The model grows the existing balance for the month and then adds that month's contribution.
 
 ## Method and limitations
 
-The annual return entered is treated as an **effective annual return** and converted to an equivalent monthly rate using **(1 + annual return)^(1/12) − 1**. Compound then grows the existing balance and adds the entered contribution at the end of each month until the target is reached or the modelling horizon is exhausted.
+The annual net return is converted into an equivalent monthly rate using:
 
-The result assumes a smooth constant return, regular month-end contributions and a nominal target. It does not deduct tax, product fees or inflation unless those are reflected in the return/target assumptions you enter.
+**monthly rate = (1 + annual rate)^(1/12) − 1**
+
+The balance is grown monthly and the monthly contribution is then added.
+
+In Advanced mode, the target is also grown monthly using the annual target-growth assumption. Every 12 months, the annual lump sum is added and the monthly contribution is increased for the following year.
+
+The engine continues until the projected balance reaches the projected target or 1,200 months have been modelled.
+
+Growth is calculated as the ending balance less the starting balance and all contributions made.
+
+The model does not calculate product-specific Irish tax, variable rates, market volatility, transaction costs, withdrawals, contribution interruptions or a probabilistic range of outcomes.
 
 ### Useful sources
 
+- [CCPC — About savings](https://www.ccpc.ie/manage-your-money/saving-and-investments/savings)
 - [Revenue — Deposit Interest Retention Tax](https://www.revenue.ie/en/additional-incomes/dirt/index.aspx)
-- [CCPC — Saving and investing](https://www.ccpc.ie/consumers/money/saving-investing/)
-
-## Build a goal with a margin of safety
-
-Savings goals are often stated as one precise number, but real purchases rarely land exactly on budget.
-
-For a house deposit, wedding, car, education fund or large renovation, consider adding a contingency rather than targeting the minimum expected cost. Inflation can also move the required amount while you are saving.
-
-A useful method is to model three targets:
-
-- the minimum amount you think you need;
-- a central target;
-- a target with a 10–15% buffer.
-
-Then compare how much additional monthly saving is required for the buffered target. That turns uncertainty into an explicit planning choice rather than an unpleasant surprise near the deadline.
-
-For short-horizon goals, prioritise the probability that the money is there when needed over an aggressive return assumption.
-
+- [Revenue — What DIRT rate is applicable?](https://www.revenue.ie/en/additional-incomes/dirt/what-dirt-rate-is-applicable.aspx)
