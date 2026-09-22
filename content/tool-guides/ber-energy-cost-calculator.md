@@ -12,7 +12,7 @@ A 150 m² home modelled at 200 kWh/m²/year implies 30,000 kWh of calculated ann
 
 ## Irish context
 
-SEAI rates homes on an A-to-G BER scale and from May 2026 introduced a simplified scale structure. A BER reflects the building fabric and installed systems rather than the occupants' actual behaviour.
+From 24 May 2026, SEAI's simplified domestic BER scale uses **A0, A, B, C, D, E, F and G**, replacing the older plus/minus-style sub-bands. A BER reflects the building fabric and installed systems rather than the occupants' actual behaviour.
 
 ## What can change the answer
 
