@@ -583,7 +583,7 @@ def build_site(settings: Settings) -> dict:
         for tool in tools:
             grouped_tools.setdefault(str(tool.get("category") or "Other"), []).append(tool)
         _write(out / "tools" / "index.html", env.get_template("tools.html").render(
-            title="Free Calculators & Tools for Ireland", grouped_tools=grouped_tools, tools=tools, pillar="wealth"))
+            title="Free Calculators & Tools for Ireland", grouped_tools=grouped_tools, tools=tools, pillar="wealth", tools_page=True))
         for tool in tools:
             related_tools = [t for t in tools if t["slug"] != tool["slug"] and t.get("category") == tool.get("category")][:3]
             if len(related_tools) < 3:
@@ -600,14 +600,14 @@ def build_site(settings: Settings) -> dict:
             _write(out / tool["slug"] / "index.html", env.get_template("tool.html").render(
                 title=tool["title"], tool=tool, related_tools=related_tools,
                 related_articles=linked_articles(tool["slug"], articles),
-                tool_jsonld=tool_jsonld, pillar="wealth"))
+                tool_jsonld=tool_jsonld, pillar="wealth", tools_page=True))
 
     calculator_path = "/compound-interest-calculator/"
     has_calculator = (settings.content_dir / "compound-calculator-guide.md").is_file()
     if has_calculator:
         calculator_guide = render_markdown((settings.content_dir / "compound-calculator-guide.md").read_text(encoding="utf-8"))
         _write(out / "compound-interest-calculator" / "index.html", env.get_template("calculator.html").render(
-            title="Compound Interest Calculator Ireland", pillar="wealth", ads_allowed=False,
+            title="Compound Interest Calculator Ireland", pillar="wealth", tools_page=True, ads_allowed=False,
             related_articles=linked_articles("compound-interest-calculator", articles),
             calculator_guide=calculator_guide.replace("<table>", '<div class="guide-table-scroll"><table>').replace("</table>", "</table></div>")))
 
@@ -616,7 +616,7 @@ def build_site(settings: Settings) -> dict:
     if has_bmi:
         bmi_guide = render_markdown((settings.content_dir / "bmi-guide.md").read_text(encoding="utf-8"))
         _write(out / "bmi-calculator" / "index.html", env.get_template("bmi.html").render(
-            title="BMI Calculator Ireland", pillar="health", ads_allowed=False,
+            title="BMI Calculator Ireland", pillar="health", tools_page=True, ads_allowed=False,
             related_articles=linked_articles("bmi-calculator", articles),
             bmi_guide=bmi_guide.replace("<table>", '<div class="bmi-table"><table>').replace("</table>", "</table></div>")))
 
