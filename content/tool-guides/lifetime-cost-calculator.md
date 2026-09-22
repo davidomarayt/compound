@@ -58,6 +58,42 @@ It is also worth running the same scenario at more than one inflation rate. Over
 
 Use the calculator to identify the categories that drive the total, then investigate those categories with more specific tools rather than optimising every small expense equally.
 
+## Separate nominal euros from today's purchasing power
+
+A lifetime total expressed in future nominal euros can become very large because prices are assumed to rise over decades. That does not mean the future amount has the same purchasing power as the same euro figure today.
+
+The calculator therefore keeps both a nominal total and a today's-money view. The nominal number is useful for future cash-flow scale; the real/today's-money number is usually better for understanding the economic weight of the spending.
+
+### Use sensitivity ranges, not one inflation forecast
+
+Over 30 or 40 years, a one-percentage-point change in inflation can move nominal totals dramatically.
+
+Run at least three cases: low, central and high inflation. If the ranking of your biggest cost categories stays similar across all three, you have a robust insight even though the exact euro total is uncertain.
+
+The purpose is not to predict inflation decades ahead. It is to identify which recurring choices dominate the long-run spending profile.
+
+### Opportunity cost is a separate calculation
+
+This tool totals spending. It does not automatically assume that every euro not spent would have been invested at a particular return.
+
+If you want to examine the investment opportunity cost of a recurring expense, take the annual saving from the scenario and model it separately in the [Regular Savings Calculator](/regular-savings-calculator/) or [Compound Interest Calculator](/compound-interest-calculator/).
+
+Keeping those two calculations separate avoids pretending an uncertain investment return is part of the cost itself.
+
+### Focus on the categories with leverage
+
+A lifetime-cost model is most useful when it changes priorities.
+
+Housing, transport, childcare, energy, subscriptions, insurance and recurring lifestyle costs can behave very differently. A small percentage reduction in a very large recurring category may matter more than eliminating several tiny purchases.
+
+Use the result to rank categories by total impact, then investigate the biggest items with dedicated tools such as the [Mortgage Calculator](/mortgage-calculator/), [Car Finance Calculator](/car-finance-calculator/) or [Electricity Cost Calculator](/electricity-cost-calculator/).
+
+### Do not optimise life to the point of absurdity
+
+The largest lifetime saving is not automatically the best personal decision. Some spending buys time, comfort, safety or experiences that are deliberately valuable.
+
+The calculator's role is to reveal the scale of repeated costs so that trade-offs are explicit. It is a planning lens, not a recommendation to minimise every category.
+
 ## Method and limitations
 
 The tool projects entered recurring and periodic costs year by year, inflating future cash spending at the chosen rate while also tracking a constant-price today's-money total. It does not forecast actual prices or life events.
