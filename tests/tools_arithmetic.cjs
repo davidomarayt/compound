@@ -536,4 +536,123 @@ assert.equal(berCore.monthly_saving, '+€162.00');
 assert.equal(berCore.energy_reduction, '50%');
 assert.equal(berCore.ten_year_saving, '+€19,440.00');
 
+
+// Direct regression examples for engines previously covered only indirectly.
+const overpayDirect = calculators.mortgage_overpayment({
+  balance: 250000, rate: 3.5, years: 25, overpayment: 100,
+  overpayment_start_month: 0, lump_sum: 0, lump_sum_month: 12, __advanced: false
+});
+assert.match(overpayDirect.payment, /^€/);
+assert.match(overpayDirect.interest_saved, /^€/);
+assert.notEqual(overpayDirect.time_saved, 'Already reached');
+
+const savingsGoalDirect = calculators.savings_goal({
+  target: 1000, current: 0, monthly: 100, rate: 0,
+  annual_contribution_growth: 0, annual_lump: 0, target_growth: 0, __advanced: false
+});
+assert.equal(savingsGoalDirect.time, '10 months');
+assert.equal(savingsGoalDirect.contributions, '€1,000.00');
+assert.equal(savingsGoalDirect.growth, '€0.00');
+
+const netWorthDirect = calculators.net_worth({
+  cash: 10000, investments: 20000, pensions: 30000, home_value: 400000,
+  other_property: 0, vehicles: 0, business_value: 0, other_assets: 0,
+  mortgage: 200000, other_property_mortgage: 0, loans: 10000,
+  credit_cards: 5000, other_debt: 5000, tax_liabilities: 0, __advanced: false
+});
+assert.equal(netWorthDirect.total_assets, '€460,000.00');
+assert.equal(netWorthDirect.total_liabilities, '€220,000.00');
+assert.equal(netWorthDirect.net_worth, '€240,000.00');
+assert.equal(netWorthDirect.property_equity, '€200,000.00');
+
+const regularSavingsDirect = calculators.regular_savings({
+  current: 0, monthly: 100, years: 1, rate: 0,
+  annual_contribution_growth: 0, annual_fee: 0, inflation_rate: 0, __advanced: false
+});
+assert.equal(regularSavingsDirect.final, '€1,200.00');
+assert.equal(regularSavingsDirect.contributed, '€1,200.00');
+assert.equal(regularSavingsDirect.growth, '€0.00');
+
+const pensionReliefDirect = calculators.pension_relief({
+  age: 35, earnings: 60000, contribution: 6000, existing_contributions: 0,
+  tax_rate: '40', __advanced: false
+});
+assert.equal(pensionReliefDirect.age_percentage, '20%');
+assert.equal(pensionReliefDirect.limit, '€12,000.00');
+assert.equal(pensionReliefDirect.relief, '€2,400.00');
+assert.equal(pensionReliefDirect.net_cost, '€3,600.00');
+
+const cgtDirect = calculators.cgt({
+  sale: 30000, purchase: 15000, costs: 0, losses: 0, exemption_used: 0, __advanced: false
+});
+assert.equal(cgtDirect.gain, '€15,000.00');
+assert.equal(cgtDirect.taxable, '€13,730.00');
+assert.equal(cgtDirect.tax, '€4,530.90');
+
+const inflationDirect = calculators.inflation({
+  amount: 1000, rate: 0, years: 10, nominal_return: 0, __advanced: false
+});
+assert.equal(inflationDirect.future_cost, '€1,000.00');
+assert.equal(inflationDirect.purchasing_power, '€1,000.00');
+assert.equal(inflationDirect.lost_power, '€0.00');
+assert.equal(inflationDirect.price_multiplier, '1×');
+
+const emergencyDirect = calculators.emergency({
+  expenses: 2000, months: '6', annual_essentials: 0, extra_buffer: 0,
+  current: 3000, monthly: 300, interest_rate: 0, deadline_months: 24, __advanced: false
+});
+assert.equal(emergencyDirect.target, '€12,000.00');
+assert.equal(emergencyDirect.gap, '€9,000.00');
+assert.equal(emergencyDirect.time, '2 yr 6 mo');
+assert.equal(emergencyDirect.interest_growth, '€0.00');
+
+const incomeTaxDirect = calculators.income_tax_2026({
+  income: 60000, pension: 0, band: 44000, credits: 4000, __advanced: false
+});
+assert.equal(incomeTaxDirect.tax20, '€8,800.00');
+assert.equal(incomeTaxDirect.tax40, '€6,400.00');
+assert.equal(incomeTaxDirect.gross_tax, '€15,200.00');
+assert.equal(incomeTaxDirect.final_tax, '€11,200.00');
+
+const catDirect = calculators.cat({
+  benefit: 500000, prior: 0, group: 'A', benefit_type: 'inheritance',
+  small_gift_used: 0, __advanced: false
+});
+assert.equal(catDirect.threshold, '€400,000.00');
+assert.equal(catDirect.current_taxable_value, '€500,000.00');
+assert.equal(catDirect.cat, '€33,000.00');
+
+const dirtDirect = calculators.dirt({
+  interest: 1000, deposit: 50000, gross_rate: 3, years: 5, __advanced: false
+});
+assert.equal(dirtDirect.dirt, '€330.00');
+assert.equal(dirtDirect.net, '€670.00');
+assert.equal(dirtDirect.retained, '67%');
+
+const myFutureFundDirect = calculators.myfuturefund({
+  employment_status: 'employee', age: 30, salary: 50000, workplace_pension: false,
+  assume_opt_in: false, current_fund: 0, retirement_age: 66,
+  salary_growth: 2, return_rate: 5, inflation_rate: 2, __advanced: false
+});
+assert.equal(myFutureFundDirect.status, 'Likely auto-enrolled');
+assert.equal(myFutureFundDirect.employee_2026, '€750.00');
+assert.equal(myFutureFundDirect.employer_2026, '€750.00');
+assert.equal(myFutureFundDirect.state_2026, '€250.00');
+assert.equal(myFutureFundDirect.total_2026, '€1,750.00');
+
+const carFinanceDirect = calculators.car_finance({
+  car_price: 40000, deposit: 8000, term_years: 4,
+  loan_rate: 6.5, hp_rate: 6.9, pcp_rate: 4.9, pcp_balloon: 18000,
+  loan_term_years: 4, hp_term_years: 4, pcp_term_years: 3,
+  loan_fee: 0, hp_doc_fee: 75, hp_completion_fee: 75,
+  pcp_doc_fee: 75, pcp_completion_fee: 75, estimated_value: 21000,
+  annual_mileage_limit: 15000, expected_annual_mileage: 18000,
+  excess_km_charge: 0.10, condition_charge: 0, __advanced: false
+});
+assert.match(carFinanceDirect.loan_monthly, /^€/);
+assert.match(carFinanceDirect.hp_monthly, /^€/);
+assert.match(carFinanceDirect.pcp_monthly, /^€/);
+assert.match(carFinanceDirect.pcp_equity, /Switch to Advanced/);
+assert.match(carFinanceDirect.ownership_summary, /Loan: owned from day 1/);
+
 console.log('Calculator arithmetic regression checks passed.');
