@@ -2,6 +2,14 @@
 
 This calculator converts an entered BER-style energy intensity into an annual energy-use and cost illustration. It helps make kWh/m²/year easier to understand in household-euro terms.
 
+## A worked way to use the comparison
+
+Suppose a 120 m² home is modelled at 180 kWh/m² a year and you want to compare it with a 90 kWh/m² target. The calculator turns those assumptions into 21,600 kWh and 10,800 kWh respectively. At the same blended energy-price assumption, the target scenario therefore uses 50% less modelled energy and produces a 50% lower variable-energy cost.
+
+That does **not** mean a real retrofit is guaranteed to cut the household's bill by exactly 50%. The exercise is useful because it keeps the arithmetic transparent: floor area × energy-use assumption × energy price. If the target looks unrealistic, change it. If the fuel mix changes, use an appropriate blended price or model the fuels separately outside this simplified comparison.
+
+For a fuller capital-cost and grant scenario, use the [Whole-House Retrofit Planner](/whole-house-retrofit-planner/). If the project includes solar PV, use the [Solar PV Payback Calculator](/solar-payback-calculator/) separately so generation and building-efficiency assumptions are not mixed together.
+
 ## Reading the comparison outputs
 
 The calculator now shows the annual and monthly cost difference, the percentage reduction in the modelled energy-use figure and a simple **10-year gross difference** if the same energy price were held constant.
