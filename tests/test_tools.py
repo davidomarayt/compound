@@ -386,3 +386,11 @@ def test_advanced_modes_explain_hidden_assumptions():
         if any(field.get("advanced") for field in tool["fields"]):
             assert tool.get("basic_note"), f"{tool['slug']} needs a Basic-mode assumptions note"
             assert tool.get("advanced_note"), f"{tool['slug']} needs an Advanced-mode explanation"
+
+
+def test_every_calculator_has_contextual_input_help():
+    content_dir = Path(__file__).parents[1] / "content"
+    tools = load_tools(content_dir)
+
+    for tool in tools:
+        assert any(field.get("help") for field in tool["fields"]), f"{tool['slug']} needs at least one contextual input hint"
