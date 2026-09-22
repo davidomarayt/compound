@@ -194,11 +194,13 @@ def post_instagram(meta: dict[str, Any], url: str, dry_run: bool) -> str:
     if not is_true(cfg.get("enabled", True)):
         return "Instagram disabled"
     caption = str(cfg.get("caption", "")).strip()
-    image_url = str(cfg.get("image_url", "")).strip()
+    image_url = str(cfg.get("image_url") or meta.get("social_image") or meta.get("image") or "").strip()
+    if image_url.startswith("/"):
+        image_url = SITE_URL + image_url
     if not caption:
         return "Instagram skipped: no caption"
     if not image_url:
-        return "Instagram skipped: social.instagram.image_url missing"
+        return "Instagram skipped: no article/social image available"
     caption = text_with_url(caption, url)
     if dry_run:
         print(f"[DRY RUN] Instagram\nImage: {image_url}\n{caption}\n")
