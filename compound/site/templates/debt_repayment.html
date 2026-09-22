@@ -17,6 +17,11 @@
     <h1>{{ tool.title }}</h1>
     <p class="tool-standfirst">{{ tool.summary }}</p>
     <p class="tool-updated">Updated {{ tool.updated|long_date }}</p>
+    <div class="tool-trust-row" aria-label="Calculator quality information">
+      <span>Runs in your browser</span>
+      <span>{{ tool.sources|length }} sources</span>
+      <span>Reviewed {{ tool.updated|long_date }}</span>
+    </div>
   </header>
 
   <aside class="debt-priority-note">
@@ -111,6 +116,7 @@
     </div>
     <div class="tool-result-actions debt-result-actions">
       <button type="button" class="tool-text-action" data-debt-share>Copy scenario link</button>
+      <button type="button" class="tool-text-action" data-debt-copy-results>Copy results</button>
       <button type="button" class="tool-text-action" data-debt-print>Print / save</button>
       <span class="tool-action-status" data-debt-action-status role="status"></span>
       <small class="tool-share-privacy">Shared debt scenarios are encoded in the link fragment and are not sent to Compound.</small>
