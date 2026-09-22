@@ -42,11 +42,18 @@ Short horizons make buying costs particularly important.
 
 ## Method and limitations
 
-The calculator compares the entered renting and ownership assumptions over time. It cannot predict future property prices, rents, investment returns, interest rates or tax rules.
+The model starts the renter with capital equal to the buyer's **deposit plus standard residential Stamp Duty and the other buying costs entered**. The buyer starts with home equity equal to the deposit; the transaction costs are treated as sunk costs.
+
+Each month, the property value and rent change using the growth assumptions entered. The mortgage amortises at the constant rate entered. Homeowner cash cost includes the mortgage payment while outstanding, maintenance as a percentage of the current home value, and the fixed annual ownership-cost assumption. Whichever side has the lower monthly housing cost is assumed to invest the difference at the renter-return assumption.
+
+At each comparison point, the buyer's net position is the modelled home value **after the selling-cost percentage**, less remaining mortgage debt, plus any invested monthly cost advantage. The renter's position is the modelled investment portfolio.
+
+This is materially more complete than comparing rent with a mortgage payment, but it is still a deterministic scenario. It does not model investment tax, mortgage-rate changes, transaction timing, renovations, rent caps, tax on property gains, changing household needs or uncertain market returns.
 
 ### Useful sources
 
 - [CCPC — Buying a home](https://www.ccpc.ie/consumers/housing/buying-home/)
+- [Revenue — Stamp Duty property rates](https://www.revenue.ie/en/property/stamp-duty/property/stamp-duty-property/rates.aspx)
 - [Revenue — Rent Tax Credit](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx)
 
 ## Why the break-even year can move so much
