@@ -1156,6 +1156,11 @@
     }
   };
 
+  if(typeof globalThis!=='undefined'){
+    globalThis.CompoundToolsTest={calculators,monthlyPayment,incomeTax2026,usc2026,annualClassA2026,selfEmployedNet2026,stampDutyResidential,lptBands,lptAdjust};
+  }
+  if(typeof document==='undefined') return;
+
   document.querySelectorAll('[data-calculator]').forEach(root => {
     const form=root.querySelector('[data-tool-form]'), error=root.querySelector('[data-tool-error]');
     const run=(showErrors=true)=>{
