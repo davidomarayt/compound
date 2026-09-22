@@ -73,6 +73,25 @@ def test_solar_payback_has_energy_system_controls():
 
 
 
+
+def test_simple_flagship_calculators_expose_interpretive_outputs():
+    content_dir = Path(__file__).parents[1] / "content"
+    tools = {tool["slug"]: tool for tool in load_tools(content_dir)}
+
+    expected = {
+        "mortgage-calculator": {"first_year_interest", "first_year_principal", "balance_5y",
+                                "stress_1pp", "stress_2pp", "payment_per_100k"},
+        "vat-calculator": {"vat_share_gross", "multiplier"},
+        "salary-hourly-rate-calculator": {"fortnightly", "workday_hours", "weekly_hours_share"},
+        "prsi-calculator": {"annual_if_old_rate", "annual_if_new_rate", "monthly_equivalent"},
+        "rent-tax-credit-calculator": {"binding_limit", "effective_rent_relief"},
+        "ber-energy-cost-calculator": {"monthly_saving", "energy_reduction", "cost_reduction", "ten_year_saving"},
+    }
+    for slug, result_ids in expected.items():
+        actual = {result["id"] for result in tools[slug]["results"]}
+        assert result_ids <= actual
+
+
 def test_solar_flagship_modes_expose_decision_outputs():
     content_dir = Path(__file__).parents[1] / "content"
     tools = {tool["slug"]: tool for tool in load_tools(content_dir)}
