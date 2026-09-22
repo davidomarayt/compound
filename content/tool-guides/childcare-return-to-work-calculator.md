@@ -98,6 +98,14 @@ The calculator therefore keeps long-term career value outside the headline answe
 
 Use the [Take-Home Pay Calculator](/take-home-pay-calculator/) for a more detailed salary estimate and the [Pension Projection Calculator](/pension-projection-calculator/) if a return to work materially changes long-term pension saving.
 
+### Add a net value per working hour
+
+A useful final check is to divide the household's additional net cash from working by the extra hours committed to work and commuting.
+
+This is not the employee's wage rate. It is a household decision metric showing how much first-year cash the family gains for each additional hour committed.
+
+That number can make part-time comparisons clearer, especially where an extra workday triggers a full extra day of childcare or a large commuting cost.
+
 ## Method and limitations
 
 The tool estimates take-home income under its tax assumptions, subtracts entered childcare and work costs, and compares the result with the alternative scenario. It does not value career progression, unpaid care, employment rights or every social-welfare interaction.
