@@ -210,15 +210,23 @@ tools:
     summary: See how an extra monthly mortgage payment could shorten your term and reduce interest.
     meta_description: Mortgage overpayment calculator for Ireland. Estimate how much time and interest regular overpayments could save on your mortgage.
     updated: 2026-09-22
+    basic_note: "Basic mode assumes the same monthly overpayment starts immediately and continues until the mortgage is cleared."
+    advanced_note: "Advanced mode lets you delay the regular overpayment and add a one-off lump sum at a chosen month."
     fields:
       - {id: balance, label: Current mortgage balance, type: number, prefix: "€", default: 250000, min: 1000, step: 1000}
       - {id: rate, label: Interest rate, type: number, suffix: "%", default: 3.5, min: 0, max: 30, step: 0.01}
       - {id: years, label: Remaining term, type: number, suffix: years, default: 25, min: 1, max: 50, step: 1}
       - {id: overpayment, label: Extra payment each month, type: number, prefix: "€", default: 100, min: 0, step: 10}
+      - {id: overpayment_start_month, label: Start regular overpayment after, type: number, suffix: months, default: 0, min: 0, max: 600, step: 1, advanced: true, section_start: Advanced timing, help: "Enter 0 to start immediately. Enter 12 to make the first extra monthly payment in month 13."}
+      - {id: lump_sum, label: One-off lump sum, type: number, prefix: "€", default: 0, min: 0, step: 500, advanced: true}
+      - {id: lump_sum_month, label: Apply lump sum in month, type: number, default: 12, min: 1, max: 600, step: 1, advanced: true, show_if: lump_sum, help: "The lump sum is applied after that month's scheduled repayment in this model."}
     results:
       - {id: payment, label: Standard monthly repayment}
-      - {id: new_payment, label: Monthly payment with overpayment}
+      - {id: new_payment, label: Monthly payment once overpayment starts}
+      - {id: new_term, label: Estimated mortgage term with overpayments}
       - {id: time_saved, label: Estimated time saved}
+      - {id: standard_interest, label: Scheduled interest without overpayments}
+      - {id: overpayment_interest, label: Interest with overpayment plan}
       - {id: interest_saved, label: Estimated interest saved}
     guide: |
       ## What an overpayment changes
