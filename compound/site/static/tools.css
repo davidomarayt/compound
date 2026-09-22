@@ -412,3 +412,25 @@
   border-color:#8a3030!important;
   box-shadow:0 0 0 2px color-mix(in srgb,#8a3030 16%,transparent);
 }
+
+
+.tool-guide-toc{
+  margin:0 0 34px;
+  padding:18px 0 20px;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.tool-guide-toc>span{display:block;margin-bottom:10px}
+.tool-guide-toc>div{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 18px;
+}
+.tool-guide-toc a{
+  color:var(--ink-2);
+  font-size:.82rem;
+  line-height:1.4;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.tool-explainer-main h2[id]{scroll-margin-top:24px}
