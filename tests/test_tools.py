@@ -438,13 +438,18 @@ def test_2026_statutory_calculator_parameters_are_regression_locked():
     assert "Math.min(3000,v.benefit)" in js
     assert "afterTax=Math.max(0,v.prior+current-threshold)*.33" in js
 
-    # Help to Buy enhanced 2026 limits.
-    assert "v.property_value<=500000&&ltv>=70" in js
+    # Help to Buy enhanced 2026 limits and qualifying-finance treatment.
+    assert "valueOk=v.property_value<=500000" in js
+    assert "financeOk=ltv>=70" in js
     assert "Math.min(30000,valueCap,v.tax_paid)" in js
+    assert "v.__advanced?Math.max(0,v.la_affordable_contribution||0):0" in js
+    assert "qualifyingFinance=Math.max(0,v.mortgage)+affordable" in js
 
-    # First Home Scheme basic funding limits.
+    # First Home Scheme funding limits, local price ceilings and service charges.
     assert "v.htb==='yes'?.20:.30" in js
     assert "Math.max(v.property_value*.025,10000)" in js
+    assert "fhsPriceCeiling(v.authority,v.property_type)" in js
+    assert "serviceBase*.0175" in js
 
     # Solar PV grant: €700/kWp first 2 kWp, €200/kWp next 2 kWp, €1,800 max.
     assert "Math.min(1800" in js
@@ -462,6 +467,33 @@ def test_2026_statutory_calculator_parameters_are_regression_locked():
     # Central Bank standard LTI/LTV modelling assumptions.
     assert "v.buyer_type==='ftb'?4:3.5" in js
     assert "v.buyer_type==='btl'?.30:.10" in js
+
+
+
+
+def test_home_support_calculators_model_current_scheme_constraints():
+    content_dir = Path(__file__).parents[1] / "content"
+    tools = {tool["slug"]: tool for tool in load_tools(content_dir)}
+
+    htb = tools["help-to-buy-calculator"]
+    htb_fields = {field["id"]: field for field in htb["fields"]}
+    htb_results = {result["id"] for result in htb["results"]}
+    assert htb_fields["la_affordable_contribution"]["advanced"] is True
+    assert {"ltv", "qualifying_finance", "minimum_finance", "claim", "eligibility"} <= htb_results
+    assert "First Home Scheme equity does not count" in htb["guide"]
+    assert "11 October 2023" in htb["guide"]
+
+    fhs = tools["first-home-scheme-calculator"]
+    fhs_fields = {field["id"]: field for field in fhs["fields"]}
+    fhs_results = {result["id"] for result in fhs["results"]}
+    assert fhs_fields["authority"]["type"] == "select"
+    assert len(fhs_fields["authority"]["options"]) == 31
+    assert fhs_fields["property_type"]["type"] == "select"
+    assert {"price_ceiling", "gap", "share", "max_fhs", "year6_charge", "charges_to_year10", "check"} <= fhs_results
+    assert "€475,000" in fhs["guide"]
+    assert "1.75%" in fhs["guide"]
+    assert "2.15%" in fhs["guide"]
+    assert "2.85%" in fhs["guide"]
 
 
 def test_every_calculator_guide_has_a_worked_example():
