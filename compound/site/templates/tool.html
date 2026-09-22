@@ -4,7 +4,7 @@
 {% block head %}
 <link rel="canonical" href="{{ site_url }}{{ tool.url }}">
 <meta property="og:type" content="website"><meta property="og:title" content="{{ tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="/static/tools.css?v=20260921e"><script defer src="/static/tools.js?v=20260921e"></script>
+<link rel="stylesheet" href="/static/tools.css?v=20260922-networth1"><script defer src="/static/tools.js?v=20260922-networth1"></script>
 <script type="application/ld+json">{{ tool_jsonld|safe }}</script>
 {% endblock %}
 {% block content %}
@@ -12,7 +12,7 @@
   <header class="tool-page-header">
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/tools/">Tools</a></nav>
     <p class="eyebrow">{{ tool.category|upper }}</p><h1>{{ tool.title }}</h1><p class="tool-standfirst">{{ tool.summary }}</p>
-    <p class="tool-updated">Updated 21 September 2026</p>
+    <p class="tool-updated">Updated {{ tool.updated|long_date }}</p>
   </header>
   <section class="tool-workspace">
     <form class="tool-form" data-tool-form novalidate>
@@ -23,10 +23,11 @@
         <button type="button" class="tool-mode-button is-active" data-tool-mode="basic" aria-pressed="true">Basic calculation</button>
         <button type="button" class="tool-mode-button" data-tool-mode="advanced" aria-pressed="false">Advanced calculation</button>
       </div>
-      <p class="tool-mode-note" data-tool-mode-note>Start with the core figures. Switch to Advanced when you have the detailed finance quote.</p>
+      <p class="tool-mode-note" data-tool-mode-note data-basic-note="{{ tool.basic_note or 'Start with the core figures. Switch to Advanced for optional detail.' }}" data-advanced-note="{{ tool.advanced_note or 'Advanced mode: add optional detail for a more complete scenario.' }}">{{ tool.basic_note or 'Start with the core figures. Switch to Advanced for optional detail.' }}</p>
       {% endif %}
       <div class="tool-fields">
       {% for field in tool.fields %}
+        {% if field.section_start %}<div class="tool-field-section"><span>{{ field.section_start }}</span></div>{% endif %}
         <div class="tool-field{% if field.type == 'checkbox' %} tool-field-checkbox{% endif %}"{% if field.show_if %} data-show-if="{{ field.show_if }}"{% endif %}{% if field.advanced %} data-advanced-field hidden{% endif %}>
           {% if field.type == "checkbox" %}
           <label class="tool-check" for="tool-{{ field.id }}"><input id="tool-{{ field.id }}" name="{{ field.id }}" data-field="{{ field.id }}" type="checkbox" {% if field.default %}checked{% endif %}><span>{{ field.label }}</span></label>
@@ -54,7 +55,7 @@
       <div class="tool-result-grid">
         {% for result in tool.results %}<div class="tool-result"><span>{{ result.label }}</span><strong data-result="{{ result.id }}">—</strong></div>{% endfor %}
       </div>
-      <p class="tool-result-note">Planning estimate only. Read the notes below before relying on the result.</p>
+      <p class="tool-result-note">{{ tool.result_note or 'Planning estimate only. Read the notes below before relying on the result.' }}</p>
     </section>
   </section>
   <section class="tool-chart-panel" data-tool-chart hidden aria-live="polite">
