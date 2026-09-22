@@ -60,6 +60,14 @@ There is also a risk premium. A contract can end with less notice and may not ca
 
 Finally, employment status is a legal/factual question. Revenue, the Department of Social Protection and the WRC look at the reality of the relationship. A contract that calls someone 'self-employed' does not settle the issue by itself.
 
+## The break-even day rate is a cash benchmark, not a quote
+
+Advanced mode calculates the approximate contractor day rate at which modelled self-employed net cash matches the employee take-home result, while holding billable days, business costs and the contractor pension input constant.
+
+That number deliberately excludes the value of employment benefits and protections. Paid annual leave, public holidays, employer pension contributions, sick pay, bonuses, health cover, redundancy rights and other benefits can all make the economic employee package worth more than the net salary alone.
+
+A contractor may also need to fund professional indemnity insurance, accounting, equipment, training, administration time and gaps between assignments. The displayed break-even rate is therefore a useful **cash-equivalence floor for the assumptions entered**, not a recommended rate to quote.
+
 ## Method and limitations
 
 The tool annualises the entered contractor rate and billable days, subtracts selected business costs and applies the simplified 2026 employee/self-employed tax functions implemented in the site. It is not a full tax return or legal employment-status test.
