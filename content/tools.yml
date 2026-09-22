@@ -205,6 +205,124 @@ tools:
       Real loan APR calculations can include fees and timing details that a simple amortisation model does not capture. Treat this as a planning tool rather than a lender quotation.
     sources: []
 
+
+  - slug: debt-repayment-calculator
+    title: Debt Snowball vs Avalanche Calculator Ireland
+    category: Loans & Debt
+    formula: debt_repayment
+    summary: Compare debt avalanche and debt snowball strategies across multiple loans and cards, including payoff time, total interest and payoff order.
+    meta_description: Debt repayment calculator Ireland. Compare debt avalanche vs snowball, model multiple debts and extra monthly repayments, and estimate payoff time and total interest.
+    updated: 2026-09-22
+    extra_default: 200
+    sample_debts:
+      - {name: "Credit card", balance: 4500, apr: 19.9, minimum: 150}
+      - {name: "Personal loan", balance: 8000, apr: 8.5, minimum: 220}
+      - {name: "Car loan", balance: 12000, apr: 6.9, minimum: 280}
+    fields:
+      - {id: extra_payment, label: Extra monthly payment above minimums, type: number, prefix: "€", default: 200, min: 0, step: 10}
+      - {id: debt_count, label: Number of debts, type: number, default: 3, min: 1, max: 8, step: 1}
+    results:
+      - {id: avalanche_months, label: Avalanche payoff time}
+      - {id: avalanche_interest, label: Avalanche total interest}
+      - {id: snowball_months, label: Snowball payoff time}
+      - {id: snowball_interest, label: Snowball total interest}
+    guide: |
+      ## What this calculator is designed to do
+
+      This calculator compares two common ways of directing **extra money** towards ordinary consumer debts once the required payments on every debt are being maintained:
+
+      - **Debt avalanche:** direct the extra payment to the debt with the highest APR first.
+      - **Debt snowball:** direct the extra payment to the debt with the smallest balance first.
+
+      When a debt is cleared, this calculator rolls the payment that had been going to that debt into the next target. The overall monthly debt budget therefore stays broadly constant until the debts are cleared.
+
+      The two methods answer slightly different questions. Avalanche focuses on the **cost of interest**. Snowball focuses on **clearing smaller balances earlier**. Under the simplified assumptions in this calculator, directing extra money to the highest interest rate is mathematically designed to minimise interest, while the snowball can produce an earlier first cleared account.
+
+      ## Important: priority debts come before a snowball or avalanche plan
+
+      A generic snowball or avalanche calculator is **not appropriate for deciding whether to pay your mortgage, rent, electricity, gas, Revenue debt, court obligations or other essential/priority commitments**.
+
+      MABS guidance separates priority payments from secondary debts and places particular emphasis on keeping appropriate accommodation, essential utilities and other basic necessities protected. The BPFI–MABS protocol similarly says mortgage debt should be prioritised over other debt and that other debts should then be considered according to the consequences of non-payment.
+
+      If you are already behind on essential or secured payments, are unable to make the required repayments, or are borrowing to cover basic living costs, use a full budget and seek help rather than relying on the ranking produced here. MABS provides free and confidential money and debt advice in Ireland.
+
+      ## How the avalanche works
+
+      Every month the calculator:
+
+      1. applies one month of interest to each remaining balance using the APR you entered;
+      2. makes the stated minimum payment on each debt;
+      3. sends the rest of your fixed monthly debt budget to the remaining debt with the highest APR;
+      4. once that debt is cleared, rolls the freed payment into the next highest-rate debt.
+
+      If two debts have the same APR, the smaller balance is targeted first as a tie-breaker.
+
+      This is why avalanche usually reduces total interest: expensive balances are attacked earlier.
+
+      ## How the snowball works
+
+      The monthly process is the same, except the extra payment is directed to the **smallest remaining balance**.
+
+      When the smallest debt disappears, its payment is rolled into the next-smallest balance. That can create visible milestones sooner, even though a higher-rate debt may continue accumulating interest in the background.
+
+      If two balances are equal, the higher APR is targeted first as a tie-breaker.
+
+      ## Minimum payments matter
+
+      The minimum-payment figures are not cosmetic. They determine the starting monthly debt budget and how much each non-target debt receives while another debt is being attacked.
+
+      The CCPC warns that credit-card balances can take years to clear when only minimum repayments are made because a large share of the payment may go towards interest. It recommends paying more than the minimum where affordable and stopping new card spending while trying to clear the balance.
+
+      Real credit-card minimums often change as the balance changes. This calculator deliberately uses the **fixed monthly payment you enter** so that both strategies can be compared on the same basis.
+
+      ## What APR means in this model
+
+      For modelling, Compound converts each annual percentage rate into a simple monthly rate by dividing it by 12 and applies that rate to the outstanding balance each month.
+
+      Real lenders can calculate interest daily, include fees, use variable rates, apply promotional periods or calculate APR using conventions that are more detailed than this model. The output is therefore a planning estimate, not a lender settlement figure.
+
+      ## The extra-payment assumption
+
+      “Extra monthly payment” means money available **after** all of the minimum payments entered in the table.
+
+      If your debt minimums total €500 and you enter €200 extra, the model starts with a €700 monthly debt budget. As debts are cleared, their former minimum payments are not treated as spare spending money: they are rolled into the next target.
+
+      This is important. If you stop rolling freed payments forward, the payoff time will be longer than the result shown here.
+
+      ## A repayment plan still needs a real household budget
+
+      The CCPC's debt action plan recommends identifying all debts, building a realistic budget and working out affordable repayments. Before committing to an aggressive extra payment, leave enough room for essential bills and unexpected costs.
+
+      A mathematically fast plan that causes missed rent, mortgage, utility or other essential payments is not a sustainable plan.
+
+      ## What this calculator does not model
+
+      It does not include:
+
+      - new borrowing or new card spending;
+      - late fees, account fees or penalty interest;
+      - 0% balance-transfer promotional periods;
+      - changing minimum-payment percentages;
+      - variable interest rates;
+      - settlements, restructures or negotiated repayment arrangements;
+      - legal priority between creditors;
+      - mortgage arrears or personal-insolvency arrangements.
+
+      It also assumes each payment reaches the debt in the same monthly cycle used for the interest calculation.
+
+      ## If the numbers are not affordable
+
+      If your required payments are already difficult to meet, a snowball or avalanche comparison may be the wrong starting point. The CCPC directs people struggling with repayments to MABS, and MABS can help review the full financial position and deal with creditors.
+
+      The calculator is most useful when you are **already meeting the required payments** and want to understand how directing an additional affordable amount changes the path to becoming debt-free.
+
+    sources:
+      - {title: "CCPC — Debt action plan", url: "https://www.ccpc.ie/manage-your-money/managing-debt/debt-action-plan"}
+      - {title: "CCPC — Credit card debt", url: "https://www.ccpc.ie/manage-your-money/managing-debt/credit-card-debt"}
+      - {title: "CCPC — Credit card balance calculator", url: "https://www.ccpc.ie/manage-your-money/borrowing-money/compare-credit-cards/credit-card-balance-calculator"}
+      - {title: "MABS — Financial Statement template and priority debts", url: "https://assets.mabs.ie/documents/my-financial-statement-template.pdf"}
+      - {title: "BPFI–MABS Operational Protocol", url: "https://assets.mabs.ie/documents/BPFI_MABS_Operational_Protocol_2015.pdf"}
+
   - slug: savings-goal-calculator
     title: Savings Goal Calculator Ireland
     category: Saving & Investing
