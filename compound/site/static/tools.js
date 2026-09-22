@@ -1300,16 +1300,18 @@
       };
     },
     solar_payback(v){
-      const generation=Math.max(0,v.kwp*v.generation_per_kwp);
-      const rawGrant=Math.min(1800,Math.min(Math.max(0,v.kwp),2)*700+Math.max(0,Math.min(v.kwp-2,2))*200);
+      const advanced=Boolean(v.__advanced), size=Math.max(0,v.kwp);
+      const generation=size*Math.max(0,v.generation_per_kwp);
+      const rawGrant=Math.min(1800,Math.min(size,2)*700+Math.max(0,Math.min(size-2,2))*200);
       const grant=v.grant_eligible?rawGrant:0;
+      const hasEv=advanced&&Boolean(v.has_ev),hasBattery=advanced&&Boolean(v.has_battery);
 
       const homeDemand=Math.max(0,v.annual_home_kwh);
       const directHome=Math.min(generation*Math.max(0,Math.min(100,v.direct_solar_pct))/100,homeDemand);
       let remainingSolar=Math.max(0,generation-directHome);
 
-      let evHomeDemand=0, directEv=0;
-      if(v.has_ev){
+      let evHomeDemand=0,directEv=0;
+      if(hasEv){
         const chargeEfficiency=Math.max(.01,1-Math.max(0,Math.min(40,v.ev_loss_pct))/100);
         const vehicleEnergy=Math.max(0,v.annual_ev_km)*Math.max(0,v.ev_efficiency)/100;
         evHomeDemand=vehicleEnergy/chargeEfficiency*Math.max(0,Math.min(100,v.ev_home_charge_pct))/100;
@@ -1318,13 +1320,13 @@
       }
 
       const totalDemand=homeDemand+evHomeDemand;
-      const efficiency=v.has_battery?Math.max(.01,Math.min(1,v.battery_efficiency/100)):1;
-      const batteryCapacity=v.has_battery?Math.max(0,v.battery_kwh):0;
+      const efficiency=hasBattery?Math.max(.01,Math.min(1,v.battery_efficiency/100)):1;
+      const batteryCapacity=hasBattery?Math.max(0,v.battery_kwh):0;
       const annualBatteryInputCapacity=batteryCapacity*365;
       const remainingDemandBeforeBattery=Math.max(0,totalDemand-directHome-directEv);
 
-      let solarBatteryInput=0, solarBatteryDelivered=0;
-      if(v.has_battery&&batteryCapacity>0){
+      let solarBatteryInput=0,solarBatteryDelivered=0;
+      if(hasBattery&&batteryCapacity>0){
         const requestedSolarInput=remainingSolar*Math.max(0,Math.min(100,v.solar_to_battery_pct))/100;
         solarBatteryInput=Math.min(requestedSolarInput,annualBatteryInputCapacity,remainingDemandBeforeBattery/efficiency);
         solarBatteryDelivered=solarBatteryInput*efficiency;
@@ -1338,8 +1340,8 @@
       const exportValue=exported*Math.max(0,v.export_rate);
       const solarValue=directHomeValue+directEvValue+batterySolarValue+exportValue;
 
-      let nightInput=0, nightDelivered=0, arbitrage=0;
-      if(v.has_battery&&v.night_charge&&batteryCapacity>0){
+      let nightInput=0,nightDelivered=0,arbitrage=0;
+      if(hasBattery&&v.night_charge&&batteryCapacity>0){
         const remainingAnnualBatteryInput=Math.max(0,annualBatteryInputCapacity-solarBatteryInput);
         const requestedNightInput=Math.max(0,v.night_battery_kwh_day)*365;
         const remainingGridDemand=Math.max(0,totalDemand-directHome-directEv-solarBatteryDelivered);
@@ -1348,36 +1350,42 @@
         arbitrage=nightDelivered*Math.max(0,v.import_rate)-nightInput*Math.max(0,v.night_rate);
       }
 
-      const batteryCost=v.has_battery?Math.max(0,v.battery_cost):0;
-      const solarOnlyNet=Math.max(0,v.system_cost-grant);
+      const batteryCost=hasBattery?Math.max(0,v.battery_cost):0;
+      const solarOnlyNet=Math.max(0,Math.max(0,v.system_cost)-grant);
       const net=Math.max(0,solarOnlyNet+batteryCost);
       const annual=solarValue+arbitrage;
       const payback=annual>0?net/annual:Infinity;
 
       const solarOnlyExport=Math.max(0,generation-directHome-directEv);
       const solarOnlyAnnual=directHomeValue+directEvValue+solarOnlyExport*Math.max(0,v.export_rate);
-      const labels=['Install'],full=[-net],solarOnly=[-solarOnlyNet];
+      const batteryIncremental=hasBattery?annual-solarOnlyAnnual:0;
+      const batteryPayback=hasBattery&&batteryIncremental>0?batteryCost/batteryIncremental:Infinity;
+      const solarDelivered=directHome+directEv+solarBatteryDelivered;
+      const selfConsumption=generation>0?(generation-exported)/generation*100:0;
+      const selfSufficiency=totalDemand>0?solarDelivered/totalDemand*100:0;
+      const twentyYear=annual*20-net;
+
+      const labels=['Install'],full=[-net],withoutBattery=[-solarOnlyNet];
       for(let year=1;year<=20;year++){
         labels.push('Year '+year);
         full.push(-net+annual*year);
-        solarOnly.push(-solarOnlyNet+solarOnlyAnnual*year);
+        withoutBattery.push(-solarOnlyNet+solarOnlyAnnual*year);
       }
-      const series=v.has_battery
-        ? [{label:'Solar + battery scenario',values:full},{label:'Solar-only comparison',values:solarOnly}]
-        : [{label:'Solar scenario',values:full}];
+      const fullLabel=hasBattery?(hasEv?'Solar + EV + battery':'Solar + battery'):(hasEv?'Solar + EV':'Solar');
+      const series=hasBattery
+        ? [{label:fullLabel,values:full},{label:hasEv?'Solar + EV, no battery':'Solar only',values:withoutBattery}]
+        : [{label:fullLabel,values:full}];
 
       return {
-        grant:money(grant),
-        net_cost:money(net),
-        annual_generation:num(generation)+' kWh',
-        total_demand:num(totalDemand)+' kWh',
-        solar_used:num(directHome+directEv+solarBatteryDelivered)+' kWh',
-        exported:num(exported)+' kWh',
-        solar_value:money(solarValue),
-        battery_arbitrage:(arbitrage>=0?'':'-')+money(Math.abs(arbitrage)),
-        annual_value:money(annual),
-        payback:Number.isFinite(payback)?number.format(payback)+' years':'Not reached',
-        __chart:{type:'line',title:'Cumulative payback under your assumptions',caption:'Solar-only is shown separately when a battery is selected. Constant annual savings are assumed; degradation and tariff changes are not modelled.',labels,series}
+        grant:money(grant),net_cost:money(net),annual_generation:num(generation)+' kWh',total_demand:num(totalDemand)+' kWh',
+        solar_used:num(solarDelivered)+' kWh',exported:num(exported)+' kWh',solar_value:money(solarValue),
+        self_consumption:pct(selfConsumption),self_sufficiency:pct(selfSufficiency),
+        battery_arbitrage:(arbitrage>=0?'+':'-')+money(Math.abs(arbitrage)),
+        battery_incremental_value:hasBattery?(batteryIncremental>=0?'+':'-')+money(Math.abs(batteryIncremental)):'Not included',
+        battery_incremental_payback:hasBattery?(Number.isFinite(batteryPayback)?number.format(batteryPayback)+' years':'Not reached'):'Not included',
+        annual_value:money(annual),payback:Number.isFinite(payback)?number.format(payback)+' years':'Not reached',
+        twenty_year_net:(twentyYear>=0?'+':'-')+money(Math.abs(twentyYear)),
+        __chart:{type:'line',title:'Cumulative value under your assumptions',caption:hasBattery?'The battery scenario is compared with the same solar/EV setup without a battery. Constant annual values are assumed; degradation and tariff changes are not modelled.':'Constant annual savings and export value are assumed; degradation and tariff changes are not modelled.',labels,series}
       };
     },
     ber_energy(v){
@@ -1388,63 +1396,87 @@
       };
     },
     solar_optimizer(v){
-      const generation=Math.max(0,v.kwp*v.generation_per_kwp);
-      const grant=v.grant_eligible?Math.min(1800,Math.min(v.kwp,2)*700+Math.max(0,Math.min(v.kwp-2,2))*200):0;
-      const solarNet=Math.max(0,v.solar_cost-grant);
-      const directHome=Math.min(generation*Math.max(0,Math.min(100,v.direct_home_pct))/100,Math.max(0,v.home_kwh));
+      const advanced=Boolean(v.__advanced),size=Math.max(0,v.kwp);
+      const generation=size*Math.max(0,v.generation_per_kwp);
+      const grant=v.grant_eligible?Math.min(1800,Math.min(size,2)*700+Math.max(0,Math.min(size-2,2))*200):0;
+      const solarNet=Math.max(0,Math.max(0,v.solar_cost)-grant);
+      const directHomePct=advanced?Math.max(0,Math.min(100,v.direct_home_pct)):35;
+      const directHome=Math.min(generation*directHomePct/100,Math.max(0,v.home_kwh));
       const surplus0=Math.max(0,generation-directHome);
-      let evDemand=0,directEv=0;
-      if(v.has_ev){
-        const chargeEff=Math.max(.01,1-Math.max(0,Math.min(40,v.ev_loss_pct))/100);
-        evDemand=Math.max(0,v.ev_km)*Math.max(0,v.ev_efficiency)/100/chargeEff*Math.max(0,Math.min(100,v.ev_home_pct))/100;
-        directEv=Math.min(surplus0,evDemand*Math.max(0,Math.min(100,v.ev_solar_pct))/100);
-      }
-      const solarOnlyAnnual=directHome*v.day_rate+surplus0*v.export_rate;
-      const evSurplus=Math.max(0,surplus0-directEv);
-      const evAnnual=directHome*v.day_rate+directEv*v.ev_grid_rate+evSurplus*v.export_rate;
+      const hasEv=Boolean(v.has_ev);
+      const evEfficiency=advanced?Math.max(0,v.ev_efficiency):18;
+      const evLossPct=advanced?Math.max(0,Math.min(40,v.ev_loss_pct)):10;
+      const evHomePct=advanced?Math.max(0,Math.min(100,v.ev_home_pct)):80;
+      const evSolarPct=advanced?Math.max(0,Math.min(100,v.ev_solar_pct)):35;
+      const smartEvCost=advanced&&hasEv?Math.max(0,v.smart_ev_cost||0):0;
 
-      const batteryEff=Math.max(.01,Math.min(1,v.battery_efficiency/100));
+      let evDemand=0,directEv=0;
+      if(hasEv){
+        const chargeEff=Math.max(.01,1-evLossPct/100);
+        evDemand=Math.max(0,v.ev_km)*evEfficiency/100/chargeEff*evHomePct/100;
+        directEv=Math.min(surplus0,evDemand*evSolarPct/100);
+      }
+      const dayRate=Math.max(0,v.day_rate),exportRate=Math.max(0,v.export_rate),evGridRate=Math.max(0,v.ev_grid_rate);
+      const solarOnlyAnnual=directHome*dayRate+surplus0*exportRate;
+      const evSurplus=Math.max(0,surplus0-directEv);
+      const evAnnual=directHome*dayRate+directEv*evGridRate+evSurplus*exportRate;
+
+      const batteryEff=advanced?Math.max(.01,Math.min(1,v.battery_efficiency/100)):.90;
+      const solarCapturePct=advanced?Math.max(0,Math.min(100,v.solar_capture_pct)):60;
       const annualInputCap=Math.max(0,v.battery_kwh)*365;
       const homeRemaining=Math.max(0,v.home_kwh-directHome);
-      const batteryInput=Math.min(surplus0*Math.max(0,Math.min(100,v.solar_capture_pct))/100,annualInputCap,homeRemaining/batteryEff);
+      const batteryInput=Math.min(surplus0*solarCapturePct/100,annualInputCap,homeRemaining/batteryEff);
       const batteryDelivered=batteryInput*batteryEff;
       const batteryExport=Math.max(0,surplus0-batteryInput);
       const remainingCap=Math.max(0,annualInputCap-batteryInput);
       const remainingHome=Math.max(0,homeRemaining-batteryDelivered);
-      const nightInput=v.use_night_charge?Math.min(Math.max(0,v.night_kwh_day)*365,remainingCap,remainingHome/batteryEff):0;
+      const nightKwhDay=advanced?Math.max(0,v.night_kwh_day):3;
+      const nightInput=v.use_night_charge?Math.min(nightKwhDay*365,remainingCap,remainingHome/batteryEff):0;
       const nightDelivered=nightInput*batteryEff;
-      const nightValue=nightDelivered*v.day_rate-nightInput*v.night_rate;
-      const batteryAnnual=directHome*v.day_rate+batteryDelivered*v.day_rate+batteryExport*v.export_rate+nightValue;
+      const nightValue=nightDelivered*dayRate-nightInput*Math.max(0,v.night_rate);
+      const batteryAnnual=directHome*dayRate+batteryDelivered*dayRate+batteryExport*exportRate+nightValue;
 
       const combinedHomeRemaining=Math.max(0,v.home_kwh-directHome);
       const combinedSurplus=Math.max(0,surplus0-directEv);
-      const combinedBatteryInput=Math.min(combinedSurplus*Math.max(0,Math.min(100,v.solar_capture_pct))/100,annualInputCap,combinedHomeRemaining/batteryEff);
+      const combinedBatteryInput=Math.min(combinedSurplus*solarCapturePct/100,annualInputCap,combinedHomeRemaining/batteryEff);
       const combinedDelivered=combinedBatteryInput*batteryEff;
       const combinedExport=Math.max(0,combinedSurplus-combinedBatteryInput);
       const combinedCap=Math.max(0,annualInputCap-combinedBatteryInput);
       const combinedHomeGrid=Math.max(0,combinedHomeRemaining-combinedDelivered);
-      const combinedNightInput=v.use_night_charge?Math.min(Math.max(0,v.night_kwh_day)*365,combinedCap,combinedHomeGrid/batteryEff):0;
+      const combinedNightInput=v.use_night_charge?Math.min(nightKwhDay*365,combinedCap,combinedHomeGrid/batteryEff):0;
       const combinedNightDelivered=combinedNightInput*batteryEff;
-      const combinedNightValue=combinedNightDelivered*v.day_rate-combinedNightInput*v.night_rate;
-      const combinedAnnual=directHome*v.day_rate+directEv*v.ev_grid_rate+combinedDelivered*v.day_rate+combinedExport*v.export_rate+combinedNightValue;
+      const combinedNightValue=combinedNightDelivered*dayRate-combinedNightInput*Math.max(0,v.night_rate);
+      const combinedAnnual=directHome*dayRate+directEv*evGridRate+combinedDelivered*dayRate+combinedExport*exportRate+combinedNightValue;
 
-      const withBatteryCost=solarNet+Math.max(0,v.battery_cost);
-      const pb=a=>a>0?solarNet/a:Infinity;
-      const pbb=a=>a>0?withBatteryCost/a:Infinity;
+      const batteryCost=Math.max(0,v.battery_cost),batteryNet=solarNet+batteryCost,evNet=solarNet+smartEvCost,combinedNet=batteryNet+smartEvCost;
+      const payback=(cost,annual)=>annual>0?cost/annual:Infinity;
+      const solarBenefit=solarOnlyAnnual*20-solarNet;
+      const evBenefit=hasEv?evAnnual*20-evNet:null;
+      const batteryBenefit=batteryAnnual*20-batteryNet;
+      const combinedBenefit=hasEv?combinedAnnual*20-combinedNet:null;
       const benefits=[
-        {name:'Solar only',value:solarOnlyAnnual*20-solarNet},
-        {name:'Solar + smart EV',value:evAnnual*20-solarNet},
-        {name:'Solar + battery',value:batteryAnnual*20-withBatteryCost},
-        {name:'Solar + EV + battery',value:combinedAnnual*20-withBatteryCost}
+        {name:'Solar only',value:solarBenefit},
+        ...(hasEv?[{name:'Solar + smart EV',value:evBenefit}]:[]),
+        {name:'Solar + battery',value:batteryBenefit},
+        ...(hasEv?[{name:'Solar + EV + battery',value:combinedBenefit}]:[])
       ];
       const best=benefits.reduce((a,b)=>b.value>a.value?b:a,benefits[0]);
+      const bestMargin=Math.max(0,best.value-solarBenefit);
+      const fmtPayback=(cost,annual,enabled=true)=>enabled?(Number.isFinite(payback(cost,annual))?number.format(payback(cost,annual))+' years':'Not reached'):'EV not included';
+      const fmtBenefit=(value,enabled=true)=>enabled?((value>=0?'+':'-')+money(Math.abs(value))):'EV not included';
+
       return {
         generation:num(generation)+' kWh',ev_demand:num(evDemand)+' kWh',best_scenario:best.name,
-        solar_payback:Number.isFinite(pb(solarOnlyAnnual))?number.format(pb(solarOnlyAnnual))+' years':'Not reached',
-        ev_payback:Number.isFinite(pb(evAnnual))?number.format(pb(evAnnual))+' years':'Not reached',
-        battery_payback:Number.isFinite(pbb(batteryAnnual))?number.format(pbb(batteryAnnual))+' years':'Not reached',
-        combined_payback:Number.isFinite(pbb(combinedAnnual))?number.format(pbb(combinedAnnual))+' years':'Not reached',
-        __chart:{type:'bar',title:'20-year net benefit by configuration',caption:'Annual values are held constant and upfront solar/battery costs are deducted.',labels:benefits.map(x=>x.name),series:[{label:'20-year net benefit',values:benefits.map(x=>x.value)}]}
+        solar_payback:fmtPayback(solarNet,solarOnlyAnnual),
+        ev_payback:fmtPayback(evNet,evAnnual,hasEv),
+        battery_payback:fmtPayback(batteryNet,batteryAnnual),
+        combined_payback:fmtPayback(combinedNet,combinedAnnual,hasEv),
+        solar_benefit:fmtBenefit(solarBenefit),ev_benefit:fmtBenefit(evBenefit,hasEv),
+        battery_benefit:fmtBenefit(batteryBenefit),combined_benefit:fmtBenefit(combinedBenefit,hasEv),
+        best_margin:'+'+money(bestMargin),
+        solar_annual:money(solarOnlyAnnual),ev_annual:hasEv?money(evAnnual):'EV not included',
+        battery_annual:money(batteryAnnual),combined_annual:hasEv?money(combinedAnnual):'EV not included',
+        __chart:{type:'bar',title:'20-year net benefit by configuration',caption:'Annual values are held constant and the relevant upfront solar, smart-EV and battery costs are deducted. EV scenarios are omitted if no home-charged EV is selected.',labels:benefits.map(x=>x.name),series:[{label:'20-year net benefit',values:benefits.map(x=>x.value)}]}
       };
     },
     retrofit_planner(v){
