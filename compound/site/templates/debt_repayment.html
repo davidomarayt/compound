@@ -4,9 +4,9 @@
 {% block head %}
 <link rel="canonical" href="{{ site_url }}{{ tool.url }}">
 <meta property="og:type" content="website"><meta property="og:title" content="{{ tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="/static/tools.css?v=20260922-responsive1">
-<link rel="stylesheet" href="/static/debt-repayment.css?v=20260922-responsive1">
-<script defer src="/static/debt-repayment.js?v=20260922-responsive1"></script>
+<link rel="stylesheet" href="/static/tools.css?v=20260922-gold1">
+<link rel="stylesheet" href="/static/debt-repayment.css?v=20260922-gold1">
+<script defer src="/static/debt-repayment.js?v=20260922-gold1"></script>
 <script type="application/ld+json">{{ tool_jsonld|safe }}</script>
 {% endblock %}
 {% block content %}
@@ -109,6 +109,11 @@
     <div class="debt-comparison-callout" data-comparison-callout>
       Enter your debts above to compare the two strategies.
     </div>
+    <div class="tool-result-actions debt-result-actions">
+      <button type="button" class="tool-text-action" data-debt-share>Copy scenario link</button>
+      <button type="button" class="tool-text-action" data-debt-print>Print / save</button>
+      <span class="tool-action-status" data-debt-action-status role="status"></span>
+    </div>
   </section>
 
   <section class="debt-chart-panel" data-debt-chart hidden>
@@ -133,6 +138,7 @@
       <p class="eyebrow">CHECK THE BASIS</p>
       <h2>Method & sources</h2>
       <p>The calculation runs locally in your browser. Compound does not receive the balances or repayments you enter.</p>
+      <p class="tool-source-reviewed">Sources and assumptions reviewed {{ tool.updated|long_date }}.</p>
       <ul>{% for source in tool.sources %}<li><a href="{{ source.url }}" rel="noopener">{{ source.title }} ↗</a></li>{% endfor %}</ul>
       <p><a href="/disclaimer/">Important information disclaimer</a></p>
     </aside>
