@@ -55,6 +55,7 @@ TOOL_PRIMARY_RESULTS = {
     "stamp-duty-calculator": "duty",
     "local-property-tax-calculator": "lpt",
     "loan-repayment-calculator": "monthly",
+    "debt-repayment-calculator": "avalanche_interest",
     "savings-goal-calculator": "time",
     "net-worth-calculator": "net_worth",
     "regular-savings-calculator": "final",
