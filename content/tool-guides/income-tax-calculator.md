@@ -58,6 +58,37 @@ A pension amount entered in Advanced mode is deducted before the 20% and 40% ban
 
 Changing the tax band and credits can materially alter the answer. This is particularly relevant for married/civil-partner assessment, transferred bands, additional credits and other situations where the single-person defaults do not represent the taxpayer.
 
+## A better way to use the 2026 result
+
+The most useful way to read an Income Tax estimate is as a **waterfall**, not as a single percentage. In 2026, a single person without a qualifying child has a standard-rate band of €44,000: income inside that band is generally charged at 20% and income above it at 40%, before tax credits are deducted. A typical PAYE employee may also have a €2,000 Single Person Tax Credit and a €2,000 Employee Tax Credit, although the credits and band on your own Revenue record are what matter for payroll.
+
+That structure explains why crossing the standard-rate band does **not** cause all of your earnings to be taxed at 40%. Only the slice above the band moves into the higher Income Tax rate. For salary decisions, the better question is therefore: “How much of my next €1,000 falls into the 40% band, and what other deductions apply to that extra income?”
+
+The calculator deliberately separates Income Tax from USC and PRSI. That makes it easier to diagnose a payslip. If the Income Tax estimate looks reasonable but net pay still feels lower than expected, open the [USC calculator](/usc-calculator/) and [PRSI calculator](/prsi-calculator/) rather than trying to force every deduction into the Income Tax number.
+
+### Why your Revenue record can beat a generic default
+
+Irish PAYE normally operates on a cumulative basis. Your employer receives Revenue Payroll Notification information containing the tax credits and rate bands Revenue says should apply. That means a person who changed jobs, has a second employment, transferred a band between spouses or civil partners, or has non-standard credits can legitimately have a payroll result that differs from a simple “single PAYE worker” example.
+
+Use Advanced mode when you know your actual annual standard-rate band and tax credits. The default figures are useful for orientation; the personalised figures are better for reconciling real payroll.
+
+### Scenario test: a pay rise or bonus
+
+When testing a pay rise, run the existing salary first and save the Income Tax result. Then increase only gross income and compare the difference. This produces an estimate of the **incremental Income Tax** on the raise.
+
+Do the same exercise in the [Take-Home Pay Calculator](/take-home-pay-calculator/) when you want the combined effect of Income Tax, USC and PRSI. A bonus can have a high deduction rate even though your average tax rate across the full year is much lower. That is a normal feature of a progressive system, not evidence that the entire salary has moved to the highest rate.
+
+### Payroll reconciliation checklist
+
+If the estimate and payslip differ materially, check four items before assuming either is wrong:
+
+1. **Tax basis:** cumulative versus Week 1/Month 1 treatment can change deductions in a particular pay period.
+2. **Revenue credits and bands:** use the figures on your own Tax Credit Certificate or Revenue record.
+3. **Taxable pay:** benefits-in-kind and other payroll items can make taxable pay differ from cash salary.
+4. **Timing:** payroll works by pay period, while this calculator is designed primarily as an annual planning model.
+
+For current statutory figures, Revenue remains the primary source. See [Revenue's 2026 tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx) and its explanation of [how Income Tax is calculated](https://www.revenue.ie/en/jobs-and-pensions/calculating-your-income-tax/how-income-tax-is-calculated.aspx).
+
 ## Method and limitations
 
 The calculator applies 20% to income within the entered standard-rate band and 40% above it, then subtracts the credits entered, floored at zero. It does not model every relief or personal circumstance.
