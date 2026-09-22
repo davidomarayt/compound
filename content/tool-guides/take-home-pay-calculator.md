@@ -48,6 +48,34 @@ Advanced mode can also model Revenue's **reduced USC rates**. For 2026, those ra
 
 The Advanced results also show the total deductions modelled, the effective deduction rate and the change in take-home produced by the next €1,000 of gross salary under the same assumptions. That last figure is a marginal scenario, not a promise about an individual payslip.
 
+## Build a gross-to-net bridge instead of trusting one percentage
+
+A useful take-home calculation should let you explain where the gross salary went. Start with gross annual pay, then separate **Income Tax**, **USC** and **PRSI**. Those are different systems with different bands and rules. The final net-pay figure is easier to trust when each deduction can be inspected on its own.
+
+For a 2026 PAYE benchmark, Revenue's standard single-person Income Tax band is €44,000 at 20% with the balance generally at 40%, subject to tax credits and personal circumstances. USC uses its own progressive thresholds, including 0.5%, 2%, 3% and 8% standard bands in 2026. PRSI is separate again. That is why the phrase “I am in the 40% tax bracket” is not enough information to estimate a payslip.
+
+Use the [Income Tax Calculator](/income-tax-calculator/), [USC Calculator](/usc-calculator/) and [PRSI Calculator](/prsi-calculator/) when you want to isolate one layer of the calculation.
+
+### Pay rises, overtime and bonuses
+
+For a salary decision, compare **two complete net-pay scenarios** rather than multiplying the extra gross pay by a single headline tax rate. Run the current salary, save the result, then run the proposed salary. The difference between the two net figures is the amount the change is estimated to add to annual take-home pay.
+
+This is especially helpful for bonuses and overtime. The next euro can face a higher marginal deduction rate than your average salary because it may sit above an Income Tax or USC threshold. That does not mean earning the extra money makes you worse off; it means the additional gross amount converts to net pay at a different rate.
+
+### From annual net pay to a usable monthly budget
+
+Annual net pay is the cleanest comparison metric, but household budgeting usually happens monthly. Treat the displayed monthly figure as a **planning average**, particularly where pay is weekly, fortnightly, four-weekly or includes irregular bonuses.
+
+If you are comparing jobs, do not stop at net salary. Add items that change real household cash flow: employee pension contributions, employer pension value, health insurance, car or travel benefits, bonus probability, commuting cost, professional fees and unpaid time. The [Salary to Hourly Rate Calculator](/salary-hourly-rate-calculator/) is useful for converting the salary into a time-based comparison, while the [Contractor vs Salary Calculator](/contractor-vs-salary-calculator/) is more appropriate when the alternative is contract work rather than another PAYE role.
+
+### How to reconcile the estimate with a payslip
+
+A difference does not automatically mean the payroll is wrong. Check whether your employer is using cumulative or Week 1 treatment, whether the tax credits and standard-rate band on Revenue's record match the calculator inputs, and whether taxable benefits are included in payroll.
+
+The calculator is strongest as an **annual scenario tool**. Actual payroll is period-specific and uses the Revenue Payroll Notification available to the employer. For a precise reconciliation, use the annual result to identify the likely source of the difference, then compare the detailed Income Tax, USC and PRSI lines against the payslip.
+
+Current statutory references should be checked directly with Revenue, including [2026 tax rates and bands](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx) and [2026 USC thresholds](https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx).
+
 ## Method and limitations
 
 The tool applies the implemented 2026 Income Tax bands/credits, standard USC schedule and Class A employee PRSI assumptions to the entered salary and pension amount. It is an estimate, not a payroll engine.
