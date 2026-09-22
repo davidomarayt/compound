@@ -50,6 +50,16 @@ If you expect to repay early, check the agreement for early-settlement rules. Pa
 
 Finally, distinguish between affordability and cost. A five-year term may make a payment easy to fit into the monthly budget, but a three-year term can reduce total interest. The best term is one that is both affordable and does not keep the debt alive unnecessarily long.
 
+## Advanced mode: test overpayments without hiding the original loan
+
+Advanced mode keeps the original scheduled repayment as the baseline and separately models an overpayment scenario. You can add a recurring extra monthly repayment, choose the month it starts, and add a one-off lump sum in a specified month.
+
+The results then show the modelled payoff time, interest under that repayment path and the interest difference versus simply following the original schedule. An upfront fee can also be added to the scenario's total cash paid, provided that fee is paid separately rather than financed inside the loan balance.
+
+This is useful for answering a more practical question than “what is my repayment?”: **what does paying an extra €50, €100 or €200 per month actually do?**
+
+Early repayment is still governed by the real credit agreement. Fixed-rate loans can have settlement rules, charges or restrictions that this generic model cannot infer. Check the lender's terms before assuming every overpayment can be made without cost.
+
 ## Method and limitations
 
 The calculator uses the standard amortising-loan payment formula with a constant monthly rate over the selected term. It does not model changing rates, late fees or lender-specific early-repayment rules.
