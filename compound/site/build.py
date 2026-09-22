@@ -110,6 +110,59 @@ TOOL_CATEGORY_RESULT_NOTES = {
     "Family & Life Planning": "Household planning estimate. Personal circumstances, eligibility, costs and future conditions can change the result.",
 }
 
+TOOL_FIELD_HELP = {
+    "mortgage-calculator": {"rate": "Use the mortgage interest rate, not APRC. Test a higher rate as a stress scenario."},
+    "mortgage-overpayment-calculator": {"overpayment": "Extra capital you intend to pay every month on top of the scheduled repayment."},
+    "mortgage-borrowing-calculator": {"deposit": "Cash available for the property deposit only; keep buying costs and emergency savings separate."},
+    "house-deposit-calculator": {"buyer_type": "Principal-home and buy-to-let purchases use different standard LTV limits."},
+    "stamp-duty-calculator": {"price": "Enter the residential consideration/purchase price for a straightforward purchase."},
+    "local-property-tax-calculator": {"value": "Use the property value relevant to the current LPT valuation rules, not the mortgage balance."},
+    "loan-repayment-calculator": {"rate": "Use the annual borrowing rate from the quote; lender APR/fees can make the real cost differ."},
+    "debt-repayment-calculator": {"extra_payment": "Money available each month after all required debt payments are maintained."},
+    "savings-goal-calculator": {"rate": "A constant annual return assumption. Use a conservative figure for short-term goals."},
+    "net-worth-calculator": {"home_value": "Use a realistic current market value, not the original purchase price."},
+    "regular-savings-calculator": {"rate": "Modelled annual return before any tax or product-specific charges not already reflected."},
+    "pension-tax-relief-calculator": {"earnings": "Relevant annual earnings used for the age-related relief limit; the calculation caps this at €115,000."},
+    "capital-gains-tax-calculator": {"losses": "Enter allowable capital losses you intend to offset in this simplified scenario."},
+    "vat-calculator": {"direction": "Choose whether the amount you entered is before VAT or already VAT-inclusive."},
+    "inflation-calculator": {"rate": "A constant annual inflation assumption, not a forecast of future CPI."},
+    "emergency-fund-calculator": {"expenses": "Use essential monthly spending that would continue if household income suddenly fell."},
+    "salary-hourly-rate-calculator": {"hours": "Use paid working hours per week for the comparison, including regular paid hours only."},
+    "fuel-cost-calculator": {"consumption": "Use real-world L/100 km if available; brochure figures can differ from actual driving."},
+    "ev-charging-cost-calculator": {"loss": "Charging losses account for electricity drawn from the grid that does not reach the battery."},
+    "electricity-cost-calculator": {"watts": "Rated appliance power can overstate average consumption for devices that cycle on and off."},
+    "take-home-pay-calculator": {"band": "Use the standard-rate Income Tax band relevant to your circumstances, not automatically the default."},
+    "income-tax-calculator": {"credits": "Tax credits reduce Income Tax euro-for-euro; they are different from deductions from taxable income."},
+    "usc-calculator": {"income": "Enter annual income to which the standard USC schedule should be applied in this estimate."},
+    "prsi-calculator": {"salary": "This calculator models employee Class A PRSI assumptions; other PRSI classes can differ."},
+    "inheritance-tax-calculator": {"prior": "Relevant prior gifts/inheritances in the same CAT group can reduce the threshold remaining."},
+    "rent-tax-credit-calculator": {"income_tax_liability": "The usable credit can be limited by the Income Tax you would otherwise owe."},
+    "help-to-buy-calculator": {"tax_paid": "Enter qualifying Income Tax and DIRT available for refund under the scheme rules."},
+    "first-home-scheme-calculator": {"deposit": "Cash deposit available before any shared-equity contribution."},
+    "dirt-calculator": {"interest": "Enter gross deposit interest, not the deposit account balance."},
+    "contractor-vs-salary-calculator": {"billable_days": "Use realistic paid client days after holidays, public holidays, admin, training and downtime."},
+    "investment-fee-calculator": {"gross_return": "Use the same before-fee return for both scenarios so the fee difference is isolated."},
+    "fire-number-calculator": {"withdrawal_rate": "A planning assumption, not a guaranteed sustainable withdrawal rate."},
+    "retirement-income-calculator": {"withdrawal_rate": "Illustrative first-year withdrawal as a percentage of the retirement pot; it is not guaranteed income."},
+    "pension-projection-calculator": {"annual_fee": "Annual percentage charge deducted from the modelled investment return."},
+    "rent-vs-buy-calculator": {"years": "Time horizon is one of the strongest drivers because buying has large upfront transaction costs."},
+    "mortgage-affordability-calculator": {"max_payment_pct": "Your own modelling limit as a share of gross monthly income; this is not a Central Bank rule."},
+    "house-buying-costs-calculator": {"legal": "Use an itemised solicitor/conveyancing quote where possible, including VAT and relevant outlays."},
+    "solar-payback-calculator": {"generation_per_kwp": "Use the installer/site-specific annual yield estimate where available instead of a national rule of thumb."},
+    "ber-energy-cost-calculator": {"current_kwh_m2": "Use a relevant energy-use intensity figure; a BER letter alone is not a metered-consumption figure."},
+    "solar-ev-battery-optimiser": {"ev_grid_rate": "Use the tariff the EV would genuinely use without solar, often a cheaper night/EV rate."},
+    "whole-house-retrofit-planner": {"saving_pct": "Editable bill-saving assumption. Actual savings depend on the starting home, fuel, comfort and behaviour."},
+    "myfuturefund-calculator": {"workplace_pension": "Existing qualifying pension contributions for the employment can affect auto-enrolment status."},
+    "childcare-return-to-work-calculator": {"ncs_rate": "Enter the actual NCS hourly award available to your household if you know it."},
+    "mortgage-switch-calculator": {"break_fee": "Ask the current lender for the actual fixed-rate break-fee quote rather than estimating it."},
+    "lifetime-cost-calculator": {"inflation": "A constant scenario assumption across decades; category-specific prices will not all move at this rate."},
+    "car-finance-calculator": {"pcp_balloon": "The final amount/GMFV left to pay at the end if you want to own the car."},
+    "nutrition-needs-calculator": {"activity": "Choose the activity factor that best approximates your habitual activity; the result remains an estimate."},
+    "pregnancy-due-date-calculator": {"assigned_due_date": "If your maternity team has assigned a due date from clinical dating, enter it here to use that date instead of LMP."},
+    "alcohol-units-calories-cost-calculator": {"reduction_pct": "A what-if reduction applied to both intake and spend; it is not a clinical recommendation."},
+}
+
+
 PILLAR_BLURBS = {
     "wealth": "Irish tax credits, grants, pensions and money, explained for the person paying.",
     "health": "What the evidence actually says, without the hype.",
@@ -465,6 +518,10 @@ def load_tools(content_dir: Path) -> list[dict]:
         tool["guide_html"], tool["guide_toc"] = render_tool_guide(str(tool.get("guide") or ""))
         tool["faq"] = extract_tool_faq(str(tool.get("guide") or ""))
         tool["fields"] = list(tool.get("fields") or [])
+        help_map = TOOL_FIELD_HELP.get(slug, {})
+        for field in tool["fields"]:
+            if not field.get("help") and field.get("id") in help_map:
+                field["help"] = help_map[field["id"]]
         tool["results"] = list(tool.get("results") or [])
         tool["sources"] = list(tool.get("sources") or [])
         tool["primary_result"] = TOOL_PRIMARY_RESULTS.get(slug, (tool["results"][0]["id"] if tool["results"] else ""))
