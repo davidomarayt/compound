@@ -2,6 +2,14 @@
 
 This tool estimates how long a domestic solar PV system could take to recover its net upfront cost through avoided electricity purchases, export payments and, where selected, battery arbitrage.
 
+## Basic and Advanced modes
+
+**Basic** is deliberately solar-only. It keeps the first calculation focused on the quote, grant, array size, expected annual generation, household electricity use, direct self-consumption and import/export rates. Even if an old shared scenario contains EV or battery values, Basic mode does not silently include them.
+
+**Advanced** adds a home-charged EV and/or battery. EV value is based on the grid tariff that solar charging would actually displace. Battery value includes round-trip losses, the export income displaced when surplus is stored, and optional cheap-rate grid charging.
+
+The Advanced results now show the battery's **incremental annual value and battery-only simple payback** against the same solar/EV scenario without a battery. That is often a more useful buying question than looking only at the payback of the combined solar-plus-battery package.
+
 ## How to read the result
 
 Payback is not a guarantee. The result is only as strong as the assumptions for generation, self-consumption, import tariff, export rate, battery efficiency and system cost. Compare the solar-only and solar-plus-battery cases separately.
