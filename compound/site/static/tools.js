@@ -1681,7 +1681,7 @@
       if(!lmp&&!assigned) return {due_date:'Enter a date above',gestational_age:'—',pregnancy_progress:'—',days_to_due:'—',trimester:'—',conception_estimate:'—',week12:'—',anatomy_window:'—',week37:'—',week42:'—'};
       const cycleAdjust=(!assigned&&v.__advanced)?Math.round((Number(v.cycle_length)||28)-28):0;
       const due=assigned||addDaysUTC(lmp,280+cycleAdjust);
-      const baseLmp=assigned?addDaysUTC(due,-280):lmp;
+      const baseLmp=(assigned||cycleAdjust)?addDaysUTC(due,-280):lmp;
       const todayLocal=new Date();
       const today=new Date(Date.UTC(todayLocal.getFullYear(),todayLocal.getMonth(),todayLocal.getDate()));
       const gestDays=Math.floor((today-baseLmp)/86400000);
