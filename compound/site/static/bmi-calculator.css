@@ -14,3 +14,47 @@
   max-width:100%;
   overflow-wrap:anywhere;
 }
+
+
+.bmi-trust{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 18px;
+  margin-top:14px;
+  color:var(--ink-3);
+  font-size:13px;
+}
+.bmi-trust span{display:inline-flex;align-items:center;gap:8px}
+.bmi-trust span:not(:last-child)::after{content:'•';margin-left:10px;color:var(--line-2)}
+.bmi-result-actions{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:10px 14px;
+  margin-top:22px;
+  padding-top:18px;
+  border-top:1px solid #769489;
+}
+.bmi-result-actions button{
+  border:1px solid #b8d0c5;
+  background:transparent;
+  color:inherit;
+  border-radius:999px;
+  min-height:42px;
+  padding:9px 14px;
+  font:600 14px var(--sans);
+  cursor:pointer;
+}
+.bmi-result-actions button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+#bmi-action-status{flex:1 1 100%;font-size:13px;color:#d7e5df;min-height:1em}
+@media(max-width:620px){
+  .bmi-trust{gap:6px 12px}
+  .bmi-trust span:not(:last-child)::after{display:none}
+}
+@media print{
+  .bmi-heading,.bmi-workspace form,.bmi-result-actions,.bmi-result-link,.bmi-guide,.site-header,.site-footer,.masthead-note,.privacy-banner{display:none!important}
+  .bmi-workspace{display:block!important;border:0!important}
+  .bmi-result{display:block!important;background:white!important;color:#222!important;padding:0!important}
+  .bmi-result .bmi-small,.bmi-result .eyebrow,.bmi-number>span:last-child,.bmi-scale-labels{color:#333!important}
+  .bmi-marker{background:#222!important;box-shadow:none!important}
+}
