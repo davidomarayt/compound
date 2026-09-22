@@ -362,6 +362,20 @@ def test_mortgage_calculator_has_flagship_guide():
     assert "/house-buying-costs-calculator/" in guide
 
 
+
+def test_calculator_search_metadata_is_consistent():
+    content_dir = Path(__file__).parents[1] / "content"
+    tools = load_tools(content_dir)
+
+    titles = [str(tool.get("title") or "") for tool in tools]
+    assert len(titles) == len(set(titles))
+
+    for tool in tools:
+        meta = str(tool.get("meta_description") or "")
+        assert 80 <= len(meta) <= 170, f"{tool['slug']} meta description length is {len(meta)}"
+        assert "ireland" in meta.lower(), f"{tool['slug']} meta description should signal Irish relevance"
+
+
 def test_every_calculator_has_substantial_educational_depth():
     content_dir = Path(__file__).parents[1] / "content"
     tools = load_tools(content_dir)
