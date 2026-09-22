@@ -66,6 +66,38 @@ The annual estimate uses an even weekly-equivalent salary and approximates the y
 
 The additional result labelled **Approx. 2026 cost of October rate rise** isolates the difference caused by the higher final-quarter employee rate under those same assumptions. Actual payroll can differ when earnings vary by pay period.
 
+## 2026 has a mid-year Class A rate change
+
+PRSI is unusually important to date correctly in 2026. For standard Class A employees in the relevant earnings bands, the employee rate is 4.20% up to 30 September 2026 and rises to 4.35% from 1 October 2026.
+
+That is why this calculator exposes both the old-rate and new-rate annual equivalents rather than pretending one percentage describes the whole calendar year.
+
+### Weekly earnings bands can matter
+
+Class A is not simply “salary × one rate” in every case. Department of Social Protection tables include weekly earnings bands and a tapered employee PRSI credit for earnings between €352.01 and €424 a week.
+
+A broad annual calculator is useful for planning, but low-to-middle weekly earnings can require more detailed payroll treatment than a simple annual percentage.
+
+### Employer PRSI is separate
+
+The PRSI amount deducted from an employee's payslip is not the employer's full employment cost. Employers can have a separate PRSI contribution on top of gross pay.
+
+This becomes important when comparing a PAYE role with contracting. A contractor rate that merely matches the employee's gross hourly rate may ignore employer PRSI, pension contributions, paid leave and other employment costs.
+
+Use the [Contractor vs Salary Calculator](/contractor-vs-salary-calculator/) for that broader comparison.
+
+### PRSI class matters more than the headline percentage
+
+Different PRSI classes can have different rates and can be linked to different social-insurance entitlements. This calculator is centred on the Class A employee case and does not determine your correct PRSI class.
+
+If your employment category is unusual, or if you are self-employed, verify the class before relying on the estimate.
+
+### The deduction also has an entitlement dimension
+
+PRSI contributes to a social-insurance record that can affect access to benefits and the State Pension (Contributory). That does not reduce the cash cost on a payslip, but it is one reason PRSI should not be treated as interchangeable with Income Tax or USC.
+
+For current rates, use the Department of Social Protection's [PRSI Class A rates](https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/). For full net pay, combine the result with the [Income Tax Calculator](/income-tax-calculator/) and [USC Calculator](/usc-calculator/).
+
 ## Method and limitations
 
 The tool converts annual salary to weekly earnings and applies the implemented 2026 Class A employee rates/credit structure across the relevant parts of the year. It does not cover every PRSI class or payroll edge case.
