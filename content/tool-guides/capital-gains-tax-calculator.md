@@ -50,6 +50,14 @@ For investments, be especially careful about assuming every product is taxed und
 
 If you are making a significant disposal, use the calculator to estimate scale, then reconcile the exact asset, cost basis, reliefs and payment date against Revenue guidance before filing.
 
+## Advanced mode: do not reuse the annual exemption
+
+The €1,270 personal exemption is an **annual** exemption for an individual, not a fresh exemption for every asset sold. If another net chargeable gain has already used €500 of it in the same tax year, only €770 remains for the disposal being tested here.
+
+Advanced mode lets you enter the part already used. Compound then applies entered allowable capital losses first and only the remaining annual exemption afterwards.
+
+The extra results also separate losses used in this disposal from entered losses that remain unused, and show when the disposal itself produces a capital loss. A capital loss does not create a negative CGT bill, and the annual exemption cannot be used to create or increase a loss.
+
 ## Method and limitations
 
 The tool calculates sale proceeds minus purchase cost and entered allowable costs, subtracts entered losses and the €1,270 annual exemption, then applies 33% to the remaining taxable gain. It does not model every relief, rate or product-specific tax regime.
