@@ -55,6 +55,10 @@ On a €500,000 pot that would require a 5% starting withdrawal.
 
 This is not a recommendation to withdraw 5%; it exposes the arithmetic behind the target.
 
+## Worked example
+
+Take a €500,000 retirement portfolio with a 4% starting withdrawal rate, €15,000 of annual State Pension income and €5,000 of other annual income. The first-year portfolio withdrawal is €20,000, so the modelled total gross income is €40,000. If Advanced mode sets a €45,000 gross-income target, the portfolio would need to supply €25,000 in year one, equivalent to a 5% starting withdrawal from that €500,000 pot. The baseline and stress paths then show how the selected return, fee and inflation assumptions affect the remaining portfolio over the retirement period.
+
 ## The deterministic sustainability model
 
 The portfolio path is intentionally simple.
