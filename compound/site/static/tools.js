@@ -163,12 +163,18 @@
         return {type:'line',title:'How the balance falls',caption:'Standard repayment versus your overpayment timing and any lump sum entered.',labels,series:[{label:'Standard',values:standard.values},{label:'Overpayment plan',values:scenario}]};
       }
       case 'mortgage_borrowing': {
-        const multiple=v.buyer_type==='ftb'?4:3.5, byIncome=v.income*multiple+v.deposit, byDeposit=v.deposit/.10;
-        return {type:'bar',title:'Which constraint is tighter?',caption:'Indicative purchase price supported by income versus the 10% deposit assumption.',labels:['Income + deposit','Deposit constraint'],series:[{label:'Purchase price',values:[byIncome,byDeposit]}]};
+        const multiple=v.buyer_type==='ftb'?4:3.5, deposit=Math.max(0,v.deposit), byIncome=Math.max(0,v.income)*multiple+deposit, byDeposit=deposit/.10;
+        const labels=['Income-supported price','Deposit-supported price','Indicative maximum'], values=[byIncome,byDeposit,Math.min(byIncome,byDeposit)];
+        if(v.__advanced){labels.push('Target price');values.push(Math.max(0,v.target_price||0));}
+        return {type:'bar',title:'What sets the purchase-price ceiling?',caption:'Compares standard LTI capacity plus your deposit with the 90% LTV deposit constraint. Lender affordability is separate.',labels,series:[{label:'Purchase price',values}]};
       }
       case 'house_deposit': {
-        const rate=v.buyer_type==='btl'?.30:.10;
-        return {type:'bar',title:'How the purchase is funded',caption:'Deposit and mortgage amounts implied by the selected LTV assumption.',labels:['Deposit','Mortgage'],series:[{label:'Amount',values:[v.price*rate,v.price*(1-rate)]}]};
+        const rate=v.buyer_type==='btl'?.30:.10, price=Math.max(0,v.price), minimum=price*rate;
+        if(v.__advanced){
+          const available=Math.min(price,Math.max(0,v.deposit_available||0));
+          return {type:'bar',title:'Minimum deposit versus your cash position',caption:'Compares the standard LTV minimum with the deposit cash entered. Purchase costs are not included.',labels:['Minimum deposit','Available deposit','Mortgage needed'],series:[{label:'Amount',values:[minimum,available,Math.max(0,price-available)]}]};
+        }
+        return {type:'bar',title:'How the purchase is funded',caption:'Deposit and mortgage amounts implied by the selected LTV assumption.',labels:['Deposit','Mortgage'],series:[{label:'Amount',values:[minimum,price-minimum]}]};
       }
       case 'stamp_duty': {
         const p=v.price, a=Math.min(p,1000000)*.01, b=Math.max(0,Math.min(p,1500000)-1000000)*.02, d=Math.max(0,p-1500000)*.06;
@@ -283,23 +289,36 @@
         break;
       }
       case 'mortgage_borrowing': {
-        const multiple=v.buyer_type==='ftb'?4:3.5, byIncome=v.income*multiple+v.deposit, byDeposit=v.deposit/.10;
-        items.push((byIncome<=byDeposit?'Income':'Deposit')+' is the tighter constraint in this scenario before lender affordability checks.');
+        const multiple=v.buyer_type==='ftb'?4:3.5, deposit=Math.max(0,v.deposit), byIncome=Math.max(0,v.income)*multiple+deposit, byDeposit=deposit/.10, maxPrice=Math.min(byIncome,byDeposit);
+        const binding=Math.abs(byIncome-byDeposit)<1?'Income and deposit are equally binding':(byIncome<byDeposit?'Income is the tighter standard constraint':'Deposit is the tighter standard constraint');
+        items.push(binding+' before lender affordability checks.');
+        if(v.__advanced){
+          const target=Math.max(0,v.target_price||0), gap=Math.max(0,target-maxPrice);
+          items.push(gap>0?'The target price is '+money(gap)+' above the standard LTI/LTV arithmetic shown here.':'The target price sits within the standard LTI/LTV arithmetic shown here, before lender underwriting.');
+        }
         items.push('The Central Bank multiple is a ceiling for most lending, not a mortgage approval.');
         break;
       }
       case 'house_deposit': {
-        const rate=v.buyer_type==='btl'?.30:.10;
-        items.push('You are modelling a '+pct(rate*100)+' deposit and '+pct((1-rate)*100)+' loan-to-value.');
+        const rate=v.buyer_type==='btl'?.30:.10, minimum=Math.max(0,v.price)*rate;
+        items.push('The standard LTV assumption here is a '+pct(rate*100)+' minimum deposit and '+pct((1-rate)*100)+' maximum loan-to-value.');
+        if(v.__advanced){
+          const available=Math.max(0,v.deposit_available||0), difference=available-minimum;
+          items.push(difference>=0?'Your entered deposit is '+money(difference)+' above the standard minimum.':'Your entered deposit is '+money(Math.abs(difference))+' below the standard minimum.');
+        }
         items.push('Keep purchase costs and an emergency reserve separate from the deposit where possible.');
         break;
       }
-      case 'stamp_duty':
-        items.push(v.price<=1000000?'The full entered price sits inside the 1% standard residential band.':v.price<=1500000?'Only the slice above €1 million is charged at 2%.':'The 6% rate applies only to the slice above €1.5 million.');
+      case 'stamp_duty': {
+        const p=Math.max(0,v.price), a=Math.min(p,1000000)*.01, b=Math.max(0,Math.min(p,1500000)-1000000)*.02, d=Math.max(0,p-1500000)*.06, duty=a+b+d;
+        items.push(p<=1000000?'The full entered price sits inside the 1% standard residential band.':p<=1500000?'Only the slice above €1 million is charged at 2%.':'The 6% rate applies only to the slice above €1.5 million.');
+        if(p>0) items.push('The effective Stamp Duty rate across the full price is '+pct(duty/p*100)+', which is lower than the highest marginal band that may apply.');
         break;
+      }
       case 'lpt': {
         const factor=lptAdjust[v.authority]??0;
         items.push(factor===0?'The selected authority applies no local adjustment in the assumptions currently encoded.':'The selected local adjustment changes the basic LPT estimate by '+pct(Math.abs(factor)*100)+(factor>0?' upward.':' downward.'));
+        items.push(v.value<=2100000?'The ordinary 2026–2030 LPT bands create step changes at band boundaries.':'Properties above €2.1 million use Revenue’s actual-value percentage formula rather than a fixed band charge.');
         break;
       }
       case 'loan': {
@@ -596,24 +615,67 @@
       };
     },
     mortgage_borrowing(v){
-      const multiple=v.buyer_type==='ftb'?4:3.5, lti=v.income*multiple, depPrice=v.deposit/.10, maxPrice=Math.min(lti+v.deposit,depPrice);
-      return {lti_limit:money(lti),deposit_limit:money(depPrice),purchase_price:money(Math.max(0,maxPrice))};
+      const multiple=v.buyer_type==='ftb'?4:3.5, income=Math.max(0,v.income), deposit=Math.max(0,v.deposit);
+      const lti=income*multiple, byIncome=lti+deposit, depPrice=deposit/.10, maxPrice=Math.max(0,Math.min(byIncome,depPrice));
+      const binding=Math.abs(byIncome-depPrice)<1?'Income and deposit':(byIncome<depPrice?'Income':'Deposit');
+      const target=Math.max(0,v.target_price||0), targetMortgage=Math.max(0,target-deposit), targetIncome=multiple>0?targetMortgage/multiple:0;
+      const targetMinDeposit=target*.10, targetGap=Math.max(0,target-maxPrice);
+      return {
+        lti_multiple:number.format(multiple)+'× gross income',
+        lti_limit:money(lti),
+        deposit_limit:money(depPrice),
+        purchase_price:money(maxPrice),
+        binding_constraint:binding,
+        target_mortgage:money(targetMortgage),
+        target_income:money(targetIncome),
+        target_min_deposit:money(targetMinDeposit),
+        target_gap:targetGap>0?money(targetGap):'No standard-rule gap',
+        __chart:fallbackChart('mortgage_borrowing',v)
+      };
     },
     house_deposit(v){
-      const rate=v.buyer_type==='btl'?.30:.10, dep=v.price*rate;
-      return {deposit_rate:pct(rate*100),deposit:money(dep),mortgage:money(v.price-dep)};
+      const price=Math.max(0,v.price), rate=v.buyer_type==='btl'?.30:.10, dep=price*rate, maxMortgage=Math.max(0,price-dep);
+      const available=Math.min(price,Math.max(0,v.deposit_available||0)), difference=available-dep, needed=Math.max(0,price-available);
+      const resultingLtv=price>0?needed/price*100:0;
+      return {
+        deposit_rate:pct(rate*100),
+        deposit:money(dep),
+        mortgage:money(maxMortgage),
+        ltv:pct((1-rate)*100),
+        deposit_position:(difference>=0?'+':'-')+money(Math.abs(difference))+(difference>=0?' above minimum':' below minimum'),
+        resulting_ltv:pct(resultingLtv),
+        mortgage_with_available:money(needed),
+        __chart:fallbackChart('house_deposit',v)
+      };
     },
     stamp_duty(v){
-      const p=v.price;
-      const duty=Math.min(p,1000000)*.01 + Math.max(0,Math.min(p,1500000)-1000000)*.02 + Math.max(0,p-1500000)*.06;
-      return {duty:money(duty),effective_rate:pct(p?duty/p*100:0),total_cost:money(p+duty)};
+      const p=Math.max(0,v.price);
+      const band1=Math.min(p,1000000)*.01, band2=Math.max(0,Math.min(p,1500000)-1000000)*.02, band6=Math.max(0,p-1500000)*.06;
+      const duty=band1+band2+band6;
+      return {duty:money(duty),band_1_duty:money(band1),band_2_duty:money(band2),band_6_duty:money(band6),effective_rate:pct(p?duty/p*100:0),total_cost:money(p+duty)};
     },
     lpt(v){
-      let base=0;
-      if(v.value<=2100000){ const band=lptBands.find(b=>v.value<=b[0]); base=band?band[1]:0; }
-      else { base=1260000*.000906 + (2100000-1260000)*.0025 + (v.value-2100000)*.003; }
+      const value=Math.max(0,v.value);
+      let base=0, bandLabel='';
+      if(value<=2100000){
+        const idx=lptBands.findIndex(b=>value<=b[0]), band=idx>=0?lptBands[idx]:null;
+        base=band?band[1]:0;
+        const lower=idx<=0?1:lptBands[idx-1][0]+1, upper=band?band[0]:2100000;
+        bandLabel='€'+Math.round(lower).toLocaleString('en-IE')+'–€'+Math.round(upper).toLocaleString('en-IE');
+      } else {
+        base=1260000*.000906 + (2100000-1260000)*.0025 + (value-2100000)*.003;
+        bandLabel='Over €2.1m — actual-value formula';
+      }
       const factor=lptAdjust[v.authority]??0, adj=base*factor, total=base+adj;
-      return {base_lpt:money(base),adjustment:(factor>=0?'+':'')+money(adj),lpt:money(total)};
+      return {
+        valuation_band:bandLabel,
+        base_lpt:money(base),
+        local_factor:(factor>0?'+':'')+pct(factor*100),
+        adjustment:(factor>=0?'+':'-')+money(Math.abs(adj)),
+        lpt:money(total),
+        monthly_lpt:money(total/12),
+        effective_rate:pct(value?total/value*100:0)
+      };
     },
     loan(v){
       const n=Math.round(v.years*12), p=monthlyPayment(v.amount,v.rate,n), total=p*n;
@@ -1354,6 +1416,7 @@
       wrap.hidden=!pieces.length;
     };
     const syncVisibility=()=>{
+      root.querySelectorAll('[data-advanced-result]').forEach(card=>{card.hidden=root.dataset.advancedMode!=='true';});
       root.querySelectorAll('.tool-field').forEach(wrapper=>{
         let show=true;
         if(wrapper.dataset.showIf){
@@ -1402,7 +1465,7 @@
     const compareTable=root.querySelector('[data-tool-compare-table]');
     let savedScenario=null;
 
-    const snapshotResults=()=>[...root.querySelectorAll('.tool-result')].map(card=>({
+    const snapshotResults=()=>[...root.querySelectorAll('.tool-result')].filter(card=>!card.hidden).map(card=>({
       label:card.querySelector('span')?.textContent?.trim()||'Result',
       value:card.querySelector('strong')?.textContent?.trim()||'—'
     }));
