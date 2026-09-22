@@ -2,6 +2,12 @@
 
 This calculator converts annual salary into monthly, weekly, daily and hourly gross equivalents. It helps compare job offers, part-time work and contractor quotes on a common time basis.
 
+## What the time-conversion outputs mean
+
+The calculator now also shows a **fortnightly gross figure**, the average number of paid hours represented by each working day, and the share of a full 168-hour week represented by paid work.
+
+These are conversion tools, not measures of workload or quality of life. Two jobs with the same gross hourly equivalent can still be very different once commuting, unpaid overtime, shift patterns, annual leave, employer pension contributions and other benefits are considered.
+
 ## How to read the result
 
 The result is a **gross pay conversion**, not take-home pay. The hourly rate depends strongly on how many paid weeks, working days and hours you assume.
