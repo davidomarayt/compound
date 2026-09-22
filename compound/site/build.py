@@ -25,6 +25,43 @@ from compound.config import Settings
 PILLARS = ["health", "wealth", "happiness"]
 PILLAR_LABELS = {"wealth": "Wealth", "health": "Health", "happiness": "Happiness"}
 
+# Homepage "Worth your time" is deliberately capped at ten evergreen pages per pillar.
+# These are the pages we want to receive the strongest recurring homepage internal-link signal.
+HOME_SEO_PRIORITY = {
+    "health": [
+        "how-much-protein-do-you-need-ireland",
+        "macronutrients-micronutrients-guide-ireland",
+        "creatine-benefits-dosage-safety-ireland",
+        "wegovy-mounjaro-ozempic-cost-ireland",
+        "glp1-medicines-ireland-rise-evidence",
+        "pregnancy-due-date-accuracy-lmp-vs-scan-ireland",
+        "how-much-sleep-do-adults-need",
+        "how-to-lower-cholesterol-what-moves-ldl",
+        "lower-blood-pressure-naturally-what-works",
+        "vitamin-d-ireland-winter-who-should-take-it",
+    ],
+    "wealth": [
+        "saving-for-your-child-ireland",
+        "is-switching-your-mortgage-worth-it-ireland",
+        "mortgage-overpayments-100-euro-ireland",
+        "pension-tax-relief-ireland-how-to-claim",
+        "myfuturefund-vs-private-pension-ireland",
+        "rent-tax-credit-ireland-who-can-claim",
+        "tax-credits-ireland-explained",
+        "pcp-vs-hp-vs-car-loan-ireland",
+        "solar-panels-vs-battery-ireland",
+        "returning-to-work-childcare-costs-ireland",
+    ],
+    "happiness": [
+        "loneliness-ireland-how-common-what-helps",
+        "how-to-stop-worrying-and-overthinking",
+        "why-time-off-doesnt-feel-like-a-break",
+        "when-did-you-last-do-something-for-fun",
+        "ploughing-championships-history-community-mental-health",
+        "happiness-for-a-100-year-life",
+    ],
+}
+
 TOOL_SPONSORSHIP_CATEGORY_ORDER = [
     "Mortgages & Home Buying",
     "Pensions & Investing",
@@ -778,12 +815,23 @@ def build_site(settings: Settings) -> dict:
         feed = [a for a in arts if a is not pinned]
         columns[p] = {"pinned": pinned, "feed": feed[:8]}
 
-    # Balance the first row across the three pillars, retaining date order within each.
+    # Homepage authority is concentrated on up to ten SEO-priority evergreen pages per pillar.
+    # Pillar pages still receive the complete evergreen archive.
+    home_by_pillar = {}
+    for p in PILLARS:
+        available = {a.slug: a for a in by_pillar[p]}
+        selected = [available[slug] for slug in HOME_SEO_PRIORITY.get(p, []) if slug in available]
+        if len(selected) < 10:
+            selected_slugs = {a.slug for a in selected}
+            selected.extend(a for a in by_pillar[p] if a.slug not in selected_slugs)
+        home_by_pillar[p] = selected[:10]
+
+    # Interleave the selected pages so template filtering preserves the curated order in each column.
     home_articles = []
-    for i in range(max((len(items) for items in by_pillar.values()), default=0)):
+    for i in range(max((len(items) for items in home_by_pillar.values()), default=0)):
         for p in PILLARS:
-            if i < len(by_pillar[p]):
-                home_articles.append(by_pillar[p][i])
+            if i < len(home_by_pillar[p]):
+                home_articles.append(home_by_pillar[p][i])
     preferred_home_tools = [
         "compound-interest-calculator",
         "solar-payback-calculator",
