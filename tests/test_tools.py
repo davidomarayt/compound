@@ -339,3 +339,49 @@ def test_flagship_calculator_frontend_features_are_present():
     assert "tool-use-strip" in tools_css
     assert "data-debt-share" in debt_template
     assert "TextEncoder" in debt_js and "#scenario=" in debt_js
+
+
+def test_every_formula_has_a_personalised_readout():
+    root = Path(__file__).parents[1] / "compound" / "site" / "static"
+    js = (root / "tools.js").read_text()
+
+    calculator_block = js.split("const calculators = {", 1)[1].split("\n  };", 1)[0]
+    formulas = set(re.findall(r"^\s{4}([a-zA-Z0-9_]+)\(v\)\{", calculator_block, re.MULTILINE))
+    insight_block = js.split("const buildInsights", 1)[1].split("const renderInsights", 1)[0]
+    insight_cases = set(re.findall(r"case '([^']+)'", insight_block))
+
+    assert formulas
+    assert formulas == insight_cases
+
+
+def test_every_numeric_formula_has_visual_context_or_explicit_timeline():
+    root = Path(__file__).parents[1] / "compound" / "site" / "static"
+    js = (root / "tools.js").read_text()
+
+    calculator_block = js.split("const calculators = {", 1)[1].split("\n  };", 1)[0]
+    formulas = re.findall(r"^\s{4}([a-zA-Z0-9_]+)\(v\)\{", calculator_block, re.MULTILINE)
+    fallback_block = js.split("const fallbackChart", 1)[1].split("const buildInsights", 1)[0]
+    fallback_cases = set(re.findall(r"case '([^']+)'", fallback_block))
+
+    embedded = set()
+    for index, formula in enumerate(formulas):
+        start = calculator_block.index(f"    {formula}(v){{")
+        end = (
+            calculator_block.index(f"    {formulas[index + 1]}(v){{", start)
+            if index + 1 < len(formulas)
+            else len(calculator_block)
+        )
+        if "__chart" in calculator_block[start:end]:
+            embedded.add(formula)
+
+    assert set(formulas) - embedded - fallback_cases == {"pregnancy_timeline"}
+
+
+def test_advanced_modes_explain_hidden_assumptions():
+    content_dir = Path(__file__).parents[1] / "content"
+    tools = load_tools(content_dir)
+
+    for tool in tools:
+        if any(field.get("advanced") for field in tool["fields"]):
+            assert tool.get("basic_note"), f"{tool['slug']} needs a Basic-mode assumptions note"
+            assert tool.get("advanced_note"), f"{tool['slug']} needs an Advanced-mode explanation"
