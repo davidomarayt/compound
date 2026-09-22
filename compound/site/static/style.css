@@ -1833,3 +1833,25 @@ h1, h2, h3 {
   .home-today-copy strong{font-size:17px}
   .home-tools-list strong{font-size:13px}
 }
+
+.hero-proof-ireland{
+  display:flex!important;
+  gap:10px;
+  align-items:flex-start!important;
+}
+.ireland-icon{
+  width:24px;
+  height:24px;
+  color:#365e4f;
+  flex:0 0 24px;
+  margin-top:1px;
+}
+@media(max-width:620px){
+  .hero-proof-ireland{display:block!important}
+  .ireland-icon{
+    display:block;
+    width:20px;
+    height:20px;
+    margin:0 0 6px;
+  }
+}
