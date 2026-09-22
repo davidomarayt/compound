@@ -207,6 +207,260 @@
       default: return null;
     }
   };
+  const buildInsights = (name,v) => {
+    const items=[];
+    switch(name){
+      case 'mortgage': {
+        const n=v.years*12, p=monthlyPayment(v.amount,v.rate,n), pUp=monthlyPayment(v.amount,v.rate+.5,n);
+        items.push('At this rate and term, every €100,000 borrowed costs about '+money(p/v.amount*100000)+' per month.');
+        if(Number.isFinite(pUp)) items.push('If the rate were 0.5 percentage points higher, the monthly repayment would rise by about '+money(pUp-p)+'.');
+        break;
+      }
+      case 'mortgage_overpayment': {
+        const n=Math.round(v.years*12), base=monthlyPayment(v.balance,v.rate,n);
+        items.push('Your overpayment is '+pct(base>0?v.overpayment/base*100:0)+' of the scheduled monthly repayment.');
+        items.push('The benefit is strongest when extra capital is paid earlier, because less balance remains for future interest.');
+        break;
+      }
+      case 'mortgage_borrowing': {
+        const multiple=v.buyer_type==='ftb'?4:3.5, byIncome=v.income*multiple+v.deposit, byDeposit=v.deposit/.10;
+        items.push((byIncome<=byDeposit?'Income':'Deposit')+' is the tighter constraint in this scenario before lender affordability checks.');
+        items.push('The Central Bank multiple is a ceiling for most lending, not a mortgage approval.');
+        break;
+      }
+      case 'house_deposit': {
+        const rate=v.buyer_type==='btl'?.30:.10;
+        items.push('You are modelling a '+pct(rate*100)+' deposit and '+pct((1-rate)*100)+' loan-to-value.');
+        items.push('Keep purchase costs and an emergency reserve separate from the deposit where possible.');
+        break;
+      }
+      case 'stamp_duty':
+        items.push(v.price<=1000000?'The full entered price sits inside the 1% standard residential band.':v.price<=1500000?'Only the slice above €1 million is charged at 2%.':'The 6% rate applies only to the slice above €1.5 million.');
+        break;
+      case 'lpt': {
+        const factor=lptAdjust[v.authority]??0;
+        items.push(factor===0?'The selected authority applies no local adjustment in the assumptions currently encoded.':'The selected local adjustment changes the basic LPT estimate by '+pct(Math.abs(factor)*100)+(factor>0?' upward.':' downward.'));
+        break;
+      }
+      case 'loan': {
+        const n=Math.round(v.years*12), p=monthlyPayment(v.amount,v.rate,n), total=p*n;
+        items.push('Modelled interest is about '+pct(v.amount>0?(total-v.amount)/v.amount*100:0)+' of the amount borrowed over the full term.');
+        items.push('A longer term normally lowers the monthly payment but increases total interest.');
+        break;
+      }
+      case 'savings_goal':
+        items.push(v.monthly>0?'Each additional €100 per month adds €1,200 a year of direct contributions before growth.':'With no monthly contribution, the goal depends entirely on the starting balance and assumed return.');
+        items.push('For short-term goals, test a lower return as well as the central assumption.');
+        break;
+      case 'net_worth': {
+        const assets=Math.max(0,v.cash)+Math.max(0,v.investments)+Math.max(0,v.pensions)+Math.max(0,v.home_value)+(v.__advanced?Math.max(0,v.other_property)+Math.max(0,v.vehicles)+Math.max(0,v.business_value)+Math.max(0,v.other_assets):0);
+        const debt=Math.max(0,v.mortgage)+Math.max(0,v.loans)+Math.max(0,v.credit_cards)+Math.max(0,v.other_debt)+(v.__advanced?Math.max(0,v.other_property_mortgage)+Math.max(0,v.tax_liabilities):0);
+        if(assets>0) items.push('Liabilities are about '+pct(debt/assets*100)+' of the assets entered.');
+        items.push('Track the same valuation method over time; the trend is usually more useful than comparing yourself with another household.');
+        break;
+      }
+      case 'regular_savings': {
+        const months=Math.round(v.years*12), r=v.rate/100/12; let bal=v.current; for(let i=0;i<months;i++){bal*=1+r;bal+=v.monthly;}
+        const contrib=v.current+v.monthly*months, growth=bal-contrib;
+        items.push('Under this smooth-return model, growth provides about '+pct(bal>0?growth/bal*100:0)+' of the ending balance.');
+        break;
+      }
+      case 'pension_relief': {
+        const limit=Math.min(v.earnings,115000)*pensionPct(v.age), eligible=Math.min(v.contribution,limit);
+        items.push('The entered contribution uses about '+pct(limit>0?eligible/limit*100:0)+' of the age-related tax-relief limit in this illustration.');
+        items.push('Tax relief reduces the effective cash cost; it does not guarantee any investment return.');
+        break;
+      }
+      case 'cgt': {
+        const gain=v.sale-v.purchase-v.costs, taxable=Math.max(0,Math.max(0,gain-v.losses)-1270);
+        items.push(taxable>0?'After entered losses and the annual exemption, '+money(taxable)+' remains taxable in this simplified scenario.':'The entered gain is fully absorbed by losses/exemption in this simplified scenario.');
+        break;
+      }
+      case 'vat': {
+        const rate=Number(v.rate)/100; const gross=v.direction==='gross'?v.amount:v.amount*(1+rate), vat=v.direction==='gross'?(rate===0?0:v.amount-v.amount/(1+rate)):v.amount*rate;
+        if(gross>0) items.push('VAT represents about '+pct(vat/gross*100)+' of the VAT-inclusive price at this rate.');
+        break;
+      }
+      case 'inflation': {
+        const factor=Math.pow(1+v.rate/100,v.years);
+        items.push('Over '+v.years+' years, the modelled price level changes by about '+pct((factor-1)*100)+'.');
+        items.push('A future nominal amount should be judged against its purchasing power, not just its euro value.');
+        break;
+      }
+      case 'emergency': {
+        const target=v.expenses*Number(v.months), gap=Math.max(0,target-v.current);
+        items.push(gap===0?'The entered reserve already meets the target.':'The remaining gap equals about '+number.format(v.expenses>0?gap/v.expenses:0)+' months of the essential spending entered.');
+        break;
+      }
+      case 'salary_hourly':
+        items.push('The hourly equivalent depends on '+v.hours+' paid hours a week across '+v.weeks+' paid weeks.');
+        items.push('Compare contractor rates only after allowing for unpaid leave, downtime, pension and other employment benefits.');
+        break;
+      case 'fuel': {
+        const distance=v.distance*v.trips, cost=distance*v.consumption/100*v.price;
+        if(distance>0) items.push('Fuel alone costs about '+money(cost/distance)+' per kilometre under these assumptions.');
+        items.push('Depreciation, finance, insurance, tax and servicing are outside this fuel-only comparison.');
+        break;
+      }
+      case 'ev': {
+        const battery=v.distance*v.efficiency/100, wall=battery/(1-v.loss/100);
+        items.push('Charging losses add about '+num(Math.max(0,wall-battery))+' kWh of grid demand over the entered distance.');
+        items.push('Use a blended rate if some charging happens on more expensive public chargers.');
+        break;
+      }
+      case 'electricity': {
+        const kwh=v.watts/1000*v.hours*v.days;
+        items.push('The entered usage works out at about '+num(kwh/Math.max(1,v.days))+' kWh on each day of use.');
+        items.push('Cycling appliances can consume less than their nameplate wattage suggests.');
+        break;
+      }
+      case 'take_home_2026': {
+        const pension=Math.max(0,v.salary*v.pension_pct/100), net=employeeNet2026(v.salary,pension,v.band,v.other_credits);
+        if(v.salary>0) items.push('Estimated take-home after the deductions modelled is about '+pct(net.net/v.salary*100)+' of gross salary.');
+        items.push('Your marginal deduction rate on the next euro can be much higher than your average deduction rate.');
+        break;
+      }
+      case 'income_tax_2026': {
+        const t=incomeTax2026(Math.max(0,v.income-v.pension),v.band,v.credits);
+        if(v.income>0) items.push('Estimated Income Tax alone is about '+pct(t.net/v.income*100)+' of the gross income entered after the selected pension deduction.');
+        break;
+      }
+      case 'usc_2026': {
+        const u=usc2026(v.income); if(v.income>0) items.push('The effective USC rate in this scenario is '+pct(u/v.income*100)+', lower than the highest marginal band because USC is progressive.');
+        break;
+      }
+      case 'prsi_2026': {
+        const p=annualClassA2026(v.salary); if(v.salary>0) items.push('Estimated employee PRSI is about '+pct(p.annual/v.salary*100)+' of annual salary under these Class A assumptions.');
+        break;
+      }
+      case 'cat': {
+        const thresholds={A:400000,B:40000,C:20000}, threshold=thresholds[v.group]||0, remaining=Math.max(0,threshold-v.prior);
+        items.push('Before this benefit, about '+money(remaining)+' of the selected group threshold remains under the amounts entered.');
+        items.push('Relevant prior gifts and inheritances in the same group are part of the calculation.');
+        break;
+      }
+      case 'rent_credit': {
+        const rentBased=v.rent*.20, cap=v.joint==='yes'?2000:1000, vals=[['rent-based amount',rentBased],['statutory cap',cap],['Income Tax liability',v.income_tax_liability]].sort((a,b)=>a[1]-b[1]);
+        items.push('The '+vals[0][0]+' is the binding limit in this simplified scenario.');
+        break;
+      }
+      case 'help_to_buy': {
+        const ltv=v.property_value>0?v.mortgage/v.property_value*100:0;
+        items.push(v.property_value<=500000&&ltv>=70?'The inputs pass the calculator’s basic property-value and LTV screen.':'The inputs fail at least one basic property-value/LTV screen.');
+        items.push('Revenue approval and qualifying tax paid still determine the actual claim.');
+        break;
+      }
+      case 'first_home_scheme': {
+        const htb=v.htb==='yes'?Math.min(v.htb_amount,v.property_value):0, gap=Math.max(0,v.property_value-v.mortgage-v.deposit-htb);
+        if(v.property_value>0) items.push('The modelled funding gap is about '+pct(gap/v.property_value*100)+' of the property price.');
+        items.push('Shared equity is an ownership interest, not a conventional grant.');
+        break;
+      }
+      case 'dirt':
+        items.push('At the standard 33% DIRT rate, about 67% of the gross deposit interest remains before any exemption/refund considerations.');
+        break;
+      case 'contractor_vs_salary': {
+        const employee=employeeNet2026(v.salary,0,44000,0), revenue=v.day_rate*v.billable_days, profit=Math.max(0,revenue-v.contractor_costs), contractor=selfEmployedNet2026(profit,Math.min(v.contractor_pension,profit));
+        const diff=contractor.net-employee.net;
+        items.push('The contractor scenario is '+(diff>=0?'ahead by ':'behind by ')+money(Math.abs(diff))+' in estimated annual net cash before valuing employment benefits.');
+        items.push(v.billable_days+' billable days are doing significant work in the contractor annualisation.');
+        break;
+      }
+      case 'investment_fees':
+        items.push('The fee assumptions differ by '+pct(Math.abs(v.fee_high-v.fee_low))+' percentage points a year over '+v.years+' years.');
+        items.push('Fee drag compounds because money paid in fees also loses future growth.');
+        break;
+      case 'fire_number':
+        items.push('A '+pct(v.withdrawal_rate)+' withdrawal assumption implies a target equal to about '+number.format(100/v.withdrawal_rate)+' times annual spending.');
+        items.push('This is a planning ratio, not a guarantee that the portfolio lasts for life.');
+        break;
+      case 'retirement_income':
+        items.push('The portfolio withdrawal assumption is '+pct(v.withdrawal_rate)+' of the starting pot before tax.');
+        if(v.state_pension+v.other_income>0) items.push('Non-portfolio income supplies '+pct((v.state_pension+v.other_income)/(v.pot*v.withdrawal_rate/100+v.state_pension+v.other_income)*100)+' of the modelled annual income.');
+        break;
+      case 'pension_projection':
+        items.push('The modelled investment return after the entered annual fee is '+pct(v.return_rate-v.annual_fee)+'.');
+        items.push('Contributions are controllable; future market returns are not, so test lower-return cases as well.');
+        break;
+      case 'rent_vs_buy':
+        items.push('The model assumes house-price growth of '+pct(v.house_growth)+' and renter investment returns of '+pct(v.renter_return)+'. Small changes to either can move a long-term result materially.');
+        items.push('A robust decision should survive more than one plausible assumption set.');
+        break;
+      case 'mortgage_affordability': {
+        const lti=v.income*(v.buyer_type==='ftb'?4:3.5), capacity=Math.max(0,v.income/12*v.max_payment_pct/100-v.other_debt), r=v.rate/100/12,n=v.term*12,paymentBased=r===0?capacity*n:capacity*(1-Math.pow(1+r,-n))/r;
+        items.push((lti<=paymentBased?'The LTI ceiling':'Your chosen payment limit')+' is the tighter mortgage constraint in this scenario.');
+        items.push('The '+pct(v.max_payment_pct)+' payment share is your modelling choice, not an official affordability rule.');
+        break;
+      }
+      case 'house_buying_costs': {
+        const deposit=v.price*v.deposit_pct/100, total=deposit+stampDutyResidential(v.price)+v.legal+v.survey+v.valuation+v.moving+v.other;
+        if(v.price>0) items.push('The upfront cash budget is about '+pct(total/v.price*100)+' of the purchase price under the costs entered.');
+        break;
+      }
+      case 'solar_payback':
+        items.push('Directly used solar is valued against avoided imports, while exports are valued at the separate export rate.');
+        if(v.has_ev) items.push('EV solar charging is valued against the '+money(v.ev_alternative_rate)+'/kWh rate you say the car would otherwise use.');
+        break;
+      case 'ber_energy':
+        if(v.current_kwh_m2>0) items.push('The target energy-use assumption is '+pct((1-v.target_kwh_m2/v.current_kwh_m2)*100)+' lower than the current assumption.');
+        items.push('BER performance and actual metered bills are related but not identical.');
+        break;
+      case 'solar_optimizer':
+        items.push('The day-versus-night tariff spread entered is '+money(Math.max(0,v.day_rate-v.night_rate))+'/kWh before battery losses.');
+        items.push('Maximum self-consumption is not automatically maximum financial value when export and EV rates differ.');
+        break;
+      case 'retrofit_planner': {
+        const costs=(v.attic?v.attic_cost:0)+(v.external_wall?v.wall_cost:0)+(v.windows?v.windows_cost:0)+(v.heat_pump?v.heat_pump_cost:0)+(v.solar?v.solar_cost:0)+(v.doors?v.doors_cost:0)+(v.ventilation?v.ventilation_cost:0)+(v.airtightness?v.airtightness_cost:0)+v.other_cost;
+        items.push('The entered energy-saving assumption is '+pct(v.saving_pct)+' of the current annual energy bill.');
+        items.push('Simple payback does not capture comfort, ventilation, building durability or financing.');
+        break;
+      }
+      case 'myfuturefund':
+        items.push('The statutory employee contribution rate starts lower and phases upward over time, so future take-home impact will not stay at the 2026 level.');
+        items.push('Employer and State contributions are part of the retirement value even though they are not employee take-home deductions.');
+        break;
+      case 'childcare_return':
+        items.push('This is an immediate cash-flow comparison; employer pension value and future career earnings are not included in the headline household gain.');
+        items.push('Using your actual NCS award and provider fee matters more than relying on national averages.');
+        break;
+      case 'mortgage_switch': {
+        const p1=monthlyPayment(v.balance,v.current_rate,Math.round(v.current_years*12)), p2=monthlyPayment(v.balance,v.new_rate,Math.round(v.new_years*12)), saving=p1-p2;
+        items.push(saving>0?'The alternative reduces the modelled monthly repayment by '+money(saving)+'.':'The alternative does not reduce the modelled monthly repayment.');
+        if(v.current_years!==v.new_years) items.push('The terms differ, so part of the monthly change comes from repayment length rather than rate alone.');
+        break;
+      }
+      case 'lifetime_cost':
+        items.push('The scenario spans '+Math.max(0,Math.floor(v.end_age-v.current_age))+' years, so the '+pct(v.inflation)+' inflation assumption has a large effect on nominal totals.');
+        items.push('Use today’s-money spending to separate lifestyle scale from inflation.');
+        break;
+      case 'car_finance':
+        items.push('PCP monthly payments are reduced by deferring part of the financed amount into the final balloon/GMFV.');
+        items.push('Compare total paid and end-of-term ownership, not monthly payment alone.');
+        break;
+      case 'nutrition_needs':
+        items.push('Maintenance energy is a prediction from resting energy × the selected activity factor, not a direct measurement.');
+        items.push('The protein setting is '+(v.protein_context==='resistance'?'1.6 g/kg/day for the resistance-training illustration.':'0.83 g/kg/day for the general adult reference illustration.'));
+        break;
+      case 'pregnancy_timeline':
+        items.push(v.assigned_due_date?'The assigned due date takes priority over the LMP-derived estimate in this scenario.':'The due date is estimated as 280 days from the LMP entered.');
+        items.push('Clinical dating from an early ultrasound can supersede a menstrual-date estimate.');
+        break;
+      case 'alcohol_ireland':
+        items.push('Ireland defines one standard drink as 10 g of pure alcohol; drink size and ABV both matter.');
+        items.push('The calorie figure covers ethanol itself and can understate total drink calories where sugar or mixers add energy.');
+        break;
+    }
+    return items.slice(0,3);
+  };
+
+  const renderInsights = (root,items) => {
+    const panel=root.querySelector('[data-tool-insights]'), list=root.querySelector('[data-tool-insight-list]');
+    if(!panel||!list) return;
+    list.innerHTML='';
+    (items||[]).forEach(text=>{const li=document.createElement('li');li.textContent=text;list.appendChild(li);});
+    panel.hidden=!(items&&items.length);
+  };
+
   const compact = new Intl.NumberFormat('en-IE',{notation:'compact',maximumFractionDigits:1});
   const esc = s => String(s).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const renderToolChart = (root,spec) => {
@@ -882,6 +1136,7 @@
           if(el) el.textContent=v;
         });
         renderToolChart(root,results.__chart || fallbackChart(root.dataset.calculator,values));
+        renderInsights(root,buildInsights(root.dataset.calculator,values));
         renderScenarioSummary(values);
         if(window.gtag) window.gtag('event','tool_calculate',{tool_name:root.dataset.toolName});
       }catch(e){ if(showErrors) error.textContent='This combination could not be calculated. Check the values and try again.'; }
