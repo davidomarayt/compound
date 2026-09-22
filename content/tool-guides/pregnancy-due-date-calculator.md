@@ -58,6 +58,16 @@ On that same LMP-based timeline:
 
 Those are calendar landmarks, not promises about when an individual scan, test or birth will occur. If a maternity team assigns a different due date after clinical dating, the assigned date should take priority for care planning.
 
+## Use one agreed clinical date for planning
+
+It is common for an LMP-based estimate and an early ultrasound estimate to differ slightly. For appointments, screening windows and maternity planning, use the estimated due date assigned by the maternity team rather than switching between calculator outputs.
+
+The calculator remains useful for orientation: it can translate the agreed due date into an approximate gestational timeline and show where major calendar milestones fall.
+
+If cycle length is unusual or the last menstrual period is uncertain, the LMP estimate is inherently less reliable. That is one reason early ultrasound dating can become the preferred clinical reference.
+
+For practical household planning rather than medical decisions, pair the timeline with the [Childcare Return-to-Work Calculator](/childcare-return-to-work-calculator/) when considering future childcare and employment costs.
+
 ## Method and limitations
 
 LMP dating adds 280 days to the first day of the last menstrual period. The conception estimate is calculated 266 days before the due date, which is only an approximation. If an assigned due date is entered, Compound works backwards 280 days to create the displayed gestational timeline.
