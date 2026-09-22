@@ -73,6 +73,51 @@ A grant table can tell you the maximum published support; it cannot prove that y
 
 Use the toggles only where you have a reasonable basis to expect the support, then confirm the final package with the registered provider/SEAI before relying on it in a budget.
 
+## Sequence the building before sizing the heating system
+
+A whole-house retrofit works best as a system. Reducing heat loss through insulation and airtightness can change the size of heating system the home needs. Installing a heat pump first and improving the fabric later can therefore produce a different design outcome from planning the package together.
+
+SEAI explicitly notes that a home must be sufficiently well insulated for a heat pump to perform efficiently and provides for a technical assessment of heat loss in the heat-pump process.
+
+The planner should therefore be used to compare packages, not merely to total a shopping list of independent measures.
+
+### Fabric, ventilation and moisture must be considered together
+
+Insulation and airtightness can improve comfort and reduce heat loss, but tighter buildings also need appropriate ventilation. A retrofit plan that chases energy savings without considering ventilation, moisture and indoor-air quality is incomplete.
+
+For major projects, use the calculator as the financial layer around a technically designed retrofit rather than as a substitute for building assessment.
+
+### Individual grants and One Stop Shop are different project routes
+
+SEAI allows homeowners to pursue individual energy upgrades over time or use a registered One Stop Shop for a managed, deeper renovation.
+
+A One Stop Shop can coordinate assessment, grant application, contractors and follow-up BER, with eligible grants deducted upfront from the cost. A staged individual-grant approach can suit households that want to spread work over a longer period or retain more direct project control.
+
+The cheaper route on paper is not always the better route if project management, sequencing risk and financing differ.
+
+### Grant approval comes before works
+
+SEAI grant rules can require approval before work starts and registered contractors for eligible measures. Do not sign a budget on the assumption that a grant will definitely be paid simply because the calculator shows an amount.
+
+Treat every grant as conditional until the property's eligibility, measure, contractor and application route have been confirmed.
+
+### Compare net cost and energy effect separately
+
+A high grant percentage does not automatically make a measure the best investment. A lower-grant measure can have a stronger comfort or energy impact.
+
+For each package, compare:
+
+- gross project cost,
+- eligible grant support,
+- net household cost,
+- estimated energy reduction,
+- comfort/resilience benefits,
+- and whether the measure enables later upgrades.
+
+Use the [BER Energy Cost Calculator](/ber-energy-cost-calculator/) to translate energy-intensity changes into indicative household energy use and the [Solar Payback Calculator](/solar-payback-calculator/) for PV-specific economics.
+
+See SEAI's [individual grants](https://www.seai.ie/grants/home-energy-grants/individual-grants), [heat-pump grant guidance](https://www.seai.ie/grants/home-energy-grants/individual-grants/heat-pump-systems) and [One Stop Shop](https://www.seai.ie/grants/home-energy-grants/one-stop-shop) information.
+
 ## Method and limitations
 
 The planner combines the selected measures, entered costs and selected grant assumptions into a scenario. Base grants follow the implemented published schedule; conditional heat-pump and One Stop Shop service grants are included only when selected in Advanced mode. Grant amounts are capped by the entered cost pools. Energy savings are indicative and cannot reproduce a detailed DEAP assessment, grant approval or contractor design.
