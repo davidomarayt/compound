@@ -479,15 +479,15 @@ def test_2026_statutory_calculator_parameters_are_regression_locked():
     assert "afterTax=Math.max(0,aggregate-threshold)*.33" in js
 
     # Help to Buy enhanced 2026 limits and qualifying-finance treatment.
-    assert "valueOk=v.property_value<=500000" in js
+    assert "valueOk=propertyValue<=500000" in js
     assert "financeOk=ltv>=70" in js
-    assert "Math.min(30000,valueCap,v.tax_paid)" in js
+    assert "scheme cap',30000]" in js
     assert "v.__advanced?Math.max(0,v.la_affordable_contribution||0):0" in js
     assert "qualifyingFinance=Math.max(0,v.mortgage)+affordable" in js
 
     # First Home Scheme funding limits, local price ceilings and service charges.
     assert "v.htb==='yes'?.20:.30" in js
-    assert "Math.max(v.property_value*.025,10000)" in js
+    assert "Math.max(propertyValue*.025,10000)" in js
     assert "fhsPriceCeiling(v.authority,v.property_type)" in js
     assert "serviceBase*.0175" in js
 
@@ -501,8 +501,8 @@ def test_2026_statutory_calculator_parameters_are_regression_locked():
     assert "Math.max(0,p-1500000)*.06" in js
 
     # DIRT and standard CGT rate / annual exemption.
-    assert "dirt(v){ const tax=v.interest*.33" in js
-    assert "afterLoss-1270" in js and "tax=taxable*.33" in js
+    assert "const interest=Math.max(0,v.interest), tax=interest*.33" in js
+    assert "exemptionRemaining=Math.max(0,1270-exemptionUsed)" in js and "tax=taxable*.33" in js
 
     # Central Bank standard LTI/LTV modelling assumptions.
     assert "v.buyer_type==='ftb'?4:3.5" in js
