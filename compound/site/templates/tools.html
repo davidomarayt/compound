@@ -4,7 +4,7 @@
 {% block head %}
 <link rel="canonical" href="{{ site_url }}/tools/">
 <meta property="og:type" content="website"><meta property="og:title" content="Compound Tools — Free Calculators for Ireland"><meta property="og:description" content="Practical calculators built for everyday decisions in Ireland."><meta property="og:url" content="{{ site_url }}/tools/">
-<link rel="stylesheet" href="/static/tools.css?v=20260922-responsive1"><script defer src="/static/tools.js?v=20260922-responsive1"></script>
+<link rel="stylesheet" href="/static/tools.css?v=20260922-groups1"><script defer src="/static/tools.js?v=20260922-responsive1"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Compound Tools","url":"{{ site_url }}/tools/","description":"Free calculators and planning tools for Ireland.","publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}}</script>
 {% endblock %}
 {% block content %}
@@ -15,17 +15,17 @@
     <p>Free calculators for money, property, home energy and everyday health decisions in Ireland. No account. No form submission. Your entries stay in your browser.</p>
     <label class="tool-search"><span class="sr-only">Search tools</span><input type="search" placeholder="Search mortgage, nutrition, pregnancy, VAT, solar…" data-tool-search></label>
   </header>
-  <div class="tool-featured">
-    <a class="tool-card tool-card-featured" href="/compound-interest-calculator/" data-tool-card data-tool-text="compound interest savings investment calculator">
-      <span class="tool-category">Saving & Investing</span><h2>Compound Interest Calculator</h2><p>Model contributions, growth, inflation and fees with the flagship Compound calculator.</p><span>Open tool →</span>
-    </a>
-    <a class="tool-card tool-card-featured" href="/bmi-calculator/" data-tool-card data-tool-text="bmi health body mass index calculator">
-      <span class="tool-category">Health</span><h2>BMI Calculator</h2><p>Calculate adult BMI with metric or imperial units and put the number in context.</p><span>Open tool →</span>
-    </a>
-  </div>
   {% for category, items in grouped_tools.items() %}
-  <section class="tool-group" data-tool-group>
-    <div class="tool-group-heading"><p class="eyebrow">{{ category|upper }}</p><h2>{{ category }}</h2></div>
+  {% if items %}
+  <section class="tool-group" data-tool-group data-sponsorship-category="{{ category|lower|replace(' ', '-')|replace('&', 'and') }}">
+    <div class="tool-group-heading">
+      <div>
+        <p class="eyebrow">0{{ loop.index }} / SPONSORSHIP CATEGORY</p>
+        <h2>{{ category }}</h2>
+        {% if category_blurbs and category in category_blurbs %}<p class="tool-group-blurb">{{ category_blurbs[category] }}</p>{% endif %}
+      </div>
+      <span class="tool-group-count">{{ items|length }} tool{% if items|length != 1 %}s{% endif %}</span>
+    </div>
     <div class="tool-grid">
       {% for tool in items %}
       <a class="tool-card" href="{{ tool.url }}" data-tool-card data-tool-text="{{ tool.title|lower }} {{ tool.summary|lower }} {{ tool.category|lower }}">
@@ -34,6 +34,7 @@
       {% endfor %}
     </div>
   </section>
+  {% endif %}
   {% endfor %}
   <p class="tool-no-results" data-tool-no-results hidden>No matching tool yet. Try a broader search.</p>
 </section>
