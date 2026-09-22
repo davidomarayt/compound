@@ -1,0 +1,50 @@
+## What this calculator is for
+
+This calculator converts an entered BER-style energy intensity into an annual energy-use and cost illustration. It helps make kWh/m²/year easier to understand in household-euro terms.
+
+## How to read the result
+
+A BER is an **asset rating**, not a prediction of your exact bill. SEAI's DEAP methodology uses standard assumptions about occupancy, heating patterns, hot water and lighting so homes can be compared consistently.
+
+## Worked example
+
+A 150 m² home modelled at 200 kWh/m²/year implies 30,000 kWh of calculated annual energy demand. At a blended €0.10/kWh energy price, that illustration is €3,000. A real household can use materially more or less.
+
+## Irish context
+
+SEAI rates homes on an A-to-G BER scale and from May 2026 introduced a simplified scale structure. A BER reflects the building fabric and installed systems rather than the occupants' actual behaviour.
+
+## What can change the answer
+
+Floor area, building fabric, heating system, ventilation, hot-water system and the selected energy price all affect the estimate. Behaviour, thermostat settings and occupancy affect real bills even though they are deliberately standardised in BER calculations.
+
+## Common mistakes to avoid
+
+Do not multiply a BER value by an electricity price if the home's calculated energy demand includes fuels priced differently. Use a blended rate cautiously. Do not treat a BER certificate as a measured smart-meter reading.
+
+## Related Compound tools
+
+Use the [Whole-House Retrofit Planner](/whole-house-retrofit-planner/) for upgrade sequencing and the [Electricity Cost Calculator](/electricity-cost-calculator/) for actual metered electricity.
+
+## Frequently asked questions
+
+### Is BER based on my real bills?
+No.
+
+### Can two households in the same house have different bills?
+Yes.
+
+### Does a better BER guarantee lower bills?
+Not guarantee, but it indicates a more energy-efficient building under standard assumptions.
+
+### Is this a replacement for a BER assessment?
+No.
+
+## Method and limitations
+
+The calculator multiplies floor area by the entered energy-intensity figures and applies the same blended energy-price assumption to current and target scenarios. It is a planning illustration rather than DEAP software.
+
+### Useful sources
+
+- [SEAI — Understand a BER rating](https://www.seai.ie/ber/understand-a-ber-rating)
+- [SEAI — Building Energy Rating](https://www.seai.ie/ber)
