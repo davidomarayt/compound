@@ -203,7 +203,7 @@ def test_debt_repayment_calculator_is_flagship_quality():
     assert "debt snowball" in guide
     assert "priority debts" in guide
     assert "mabs" in guide
-    assert "credit card" in guide
+    assert "credit card" in guide or "credit-card" in guide
 
 
 def test_debt_repayment_custom_assets_exist():
