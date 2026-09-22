@@ -64,6 +64,12 @@ LMP dating adds 280 days to the first day of the last menstrual period. The conc
 
 Cycle length, ovulation timing and uncertain LMP dates can make menstrual dating inaccurate. Early ultrasound is generally more reliable for establishing gestational age when dates are uncertain. This tool is for timeline orientation and does not replace maternity care.
 
+## Related planning tools
+
+The pregnancy timeline is intentionally kept separate from financial or nutrition advice. For later household planning, the [Childcare Cost vs Returning to Work Calculator](/childcare-return-to-work-calculator/) can model childcare and employment cash flow, while the [Lifetime Cost Calculator](/lifetime-cost-calculator/) can be used for broader long-term household scenarios.
+
+Neither tool changes or interprets the clinical pregnancy dates shown here.
+
 ## Frequently asked questions
 
 ### Is the estimated conception date exact?
