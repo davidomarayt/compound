@@ -1159,7 +1159,7 @@ tools:
       - {id: pension, label: Employee pension contribution}
       - {id: deductions, label: Total deductions modelled, advanced: true}
       - {id: effective_deductions, label: Effective deduction rate, advanced: true}
-      - {id: next_1000_net, label: Extra take-home from next €1,000 gross, advanced: true}
+      - {id: next_1000_net, label: Change in take-home from next €1,000 gross, advanced: true}
     guide: |
       ## What this calculator is doing
 
