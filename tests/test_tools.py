@@ -414,7 +414,7 @@ def test_every_numeric_formula_has_visual_context_or_explicit_timeline():
         if "__chart" in calculator_block[start:end]:
             embedded.add(formula)
 
-    assert set(formulas) - embedded - fallback_cases == {"pregnancy_timeline"}
+    assert set(formulas) - embedded - fallback_cases == set()
 
 
 def test_advanced_modes_explain_hidden_assumptions():
@@ -472,10 +472,11 @@ def test_2026_statutory_calculator_parameters_are_regression_locked():
     assert "Math.max(0,x-100000)*.03" in js
     assert "Math.max(650,x*.042375)" in js
 
-    # CAT thresholds / rate and small-gift exemption.
+    # CAT thresholds / rate and small-gift exemption, including prior use in Advanced mode.
     assert "A:400000,B:40000,C:20000" in js
-    assert "Math.min(3000,v.benefit)" in js
-    assert "afterTax=Math.max(0,v.prior+current-threshold)*.33" in js
+    assert "Math.min(3000,v.small_gift_used||0)" in js
+    assert "smallApplied=Math.min(smallAvailable,benefit)" in js
+    assert "afterTax=Math.max(0,aggregate-threshold)*.33" in js
 
     # Help to Buy enhanced 2026 limits and qualifying-finance treatment.
     assert "valueOk=v.property_value<=500000" in js
