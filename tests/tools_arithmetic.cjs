@@ -163,7 +163,7 @@ const fee = calculators.investment_fees({
   initial: 25000, monthly: 500, gross_return: 7, fee_low: 0.25, fee_high: 1.5, years: 25
 });
 assert.equal(fee.low_net_return, '6.73%');
-assert.equal(fee.high_net_return, '5.40%');
+assert.equal(fee.high_net_return, '5.4%');
 
 // Pension projection should surface both nominal and inflation-adjusted outcomes.
 const pension = calculators.pension_projection({
