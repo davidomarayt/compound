@@ -458,3 +458,13 @@ def test_2026_statutory_calculator_parameters_are_regression_locked():
     # Central Bank standard LTI/LTV modelling assumptions.
     assert "v.buyer_type==='ftb'?4:3.5" in js
     assert "v.buyer_type==='btl'?.30:.10" in js
+
+
+def test_every_calculator_guide_has_a_worked_example():
+    content_dir = Path(__file__).parents[1] / "content"
+    tools = load_tools(content_dir)
+
+    for tool in tools:
+        guide = str(tool.get("guide") or "")
+        assert "## Worked example" in guide, f"{tool['slug']} needs a worked example"
+        assert "## Method and limitations" in guide, f"{tool['slug']} needs an explicit methodology section"
