@@ -2053,3 +2053,14 @@ h1, h2, h3 {
     font-size:clamp(46px,12.5vw,64px);
   }
 }
+
+
+/* Global responsive integrity guardrails. Local chart/table scrollers remain scrollable. */
+html,body{max-width:100%;overflow-x:clip}
+.site-main,
+.site-header,
+.masthead-note,
+.site-footer,
+.site-main>*{min-width:0}
+svg,canvas,video{max-width:100%}
+input,select,textarea,button{max-width:100%}
