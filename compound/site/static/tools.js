@@ -204,8 +204,10 @@
         return {type:'bar',title:'Contribution and tax-relief envelope',caption:'Illustrative personal contribution amounts under the entered age, earnings and tax-rate assumptions.',labels:['Contribution','Eligible','Tax relief','Net cost'],series:[{label:'Amount',values:[v.contribution,eligible,relief,v.contribution-relief]}]};
       }
       case 'cgt': {
-        const gain=v.sale-v.purchase-v.costs, taxable=Math.max(0,Math.max(0,gain-v.losses)-1270), tax=taxable*.33;
-        return {type:'bar',title:'From gain to estimated CGT',caption:'Shows the gain, taxable amount after entered losses/exemption, and estimated tax.',labels:['Gain','Taxable gain','CGT'],series:[{label:'Amount',values:[Math.max(0,gain),taxable,tax]}]};
+        const gain=Math.max(0,v.sale)-Math.max(0,v.purchase)-Math.max(0,v.costs), lossesUsed=Math.min(Math.max(0,v.losses),Math.max(0,gain));
+        const exemptionRemaining=Math.max(0,1270-(Boolean(v.__advanced)?Math.max(0,Math.min(1270,v.exemption_used||0)):0));
+        const taxable=Math.max(0,Math.max(0,gain-lossesUsed)-exemptionRemaining), tax=taxable*.33;
+        return {type:'bar',title:'From gain to estimated CGT',caption:'Uses entered losses and the remaining annual exemption under this scenario.',labels:['Gain','Taxable gain','CGT'],series:[{label:'Amount',values:[Math.max(0,gain),taxable,tax]}]};
       }
       case 'vat': {
         const r=Number(v.rate)/100; let net,vat,gross;if(v.direction==='gross'){gross=v.amount;net=r===0?gross:gross/(1+r);vat=gross-net;}else{net=v.amount;vat=net*r;gross=net+vat;}
@@ -253,8 +255,10 @@
         return {type:'bar',title:'USC by rate band',caption:'Each rate applies only to income within that standard USC band.',labels:['0.5%','2%','3%','8%'],series:[{label:'USC',values:vals}]};
       }
       case 'cat': {
-        const thresholds={A:400000,B:40000,C:20000}, threshold=thresholds[v.group]||0, remaining=Math.max(0,threshold-v.prior), small=v.benefit_type==='gift'?Math.min(3000,v.benefit):0, current=Math.max(0,v.benefit-small), afterTax=Math.max(0,v.prior+current-threshold)*.33, beforeTax=Math.max(0,v.prior-threshold)*.33;
-        return {type:'bar',title:'Benefit versus remaining CAT threshold',caption:'Uses the selected relationship group and prior aggregated benefits.',labels:['Current benefit','Threshold remaining','Estimated CAT'],series:[{label:'Amount',values:[current,remaining,Math.max(0,afterTax-beforeTax)]}]};
+        const thresholds={A:400000,B:40000,C:20000}, threshold=thresholds[v.group]||0, prior=Math.max(0,v.prior), remaining=Math.max(0,threshold-prior);
+        const used=Boolean(v.__advanced)&&v.benefit_type==='gift'?Math.max(0,Math.min(3000,v.small_gift_used||0)):0, available=v.benefit_type==='gift'?Math.max(0,3000-used):0;
+        const current=Math.max(0,Math.max(0,v.benefit)-Math.min(available,Math.max(0,v.benefit))), afterTax=Math.max(0,prior+current-threshold)*.33, beforeTax=Math.max(0,prior-threshold)*.33;
+        return {type:'bar',title:'Benefit versus remaining CAT threshold',caption:'Uses the selected relationship group, prior aggregated benefits and the remaining small-gift exemption entered.',labels:['Current taxable value','Threshold remaining','Estimated CAT'],series:[{label:'Amount',values:[current,remaining,Math.max(0,afterTax-beforeTax)]}]};
       }
       case 'rent_credit': {
         const rentBased=v.rent*.20, cap=v.joint==='yes'?2000:1000, credit=Math.min(rentBased,cap,v.income_tax_liability);
@@ -361,8 +365,10 @@
         break;
       }
       case 'cgt': {
-        const gain=v.sale-v.purchase-v.costs, taxable=Math.max(0,Math.max(0,gain-v.losses)-1270);
-        items.push(taxable>0?'After entered losses and the annual exemption, '+money(taxable)+' remains taxable in this simplified scenario.':'The entered gain is fully absorbed by losses/exemption in this simplified scenario.');
+        const gain=Math.max(0,v.sale)-Math.max(0,v.purchase)-Math.max(0,v.costs), used=Boolean(v.__advanced)?Math.max(0,Math.min(1270,v.exemption_used||0)):0;
+        const remaining=Math.max(0,1270-used), taxable=Math.max(0,Math.max(0,gain-Math.max(0,v.losses))-remaining);
+        items.push(taxable>0?'After entered losses and the remaining annual exemption, '+money(taxable)+' remains taxable in this simplified scenario.':'The entered gain is fully absorbed by losses/the remaining annual exemption in this simplified scenario.');
+        if(Boolean(v.__advanced)&&used>0) items.push(money(used)+' of the €1,270 annual exemption is assumed to have been used elsewhere in the tax year.');
         break;
       }
       case 'vat': {
@@ -431,9 +437,12 @@
         break;
       }
       case 'cat': {
-        const thresholds={A:400000,B:40000,C:20000}, threshold=thresholds[v.group]||0, remaining=Math.max(0,threshold-v.prior);
-        items.push('Before this benefit, about '+money(remaining)+' of the selected group threshold remains under the amounts entered.');
-        items.push('Relevant prior gifts and inheritances in the same group are part of the calculation.');
+        const thresholds={A:400000,B:40000,C:20000}, threshold=thresholds[v.group]||0, prior=Math.max(0,v.prior), used=Boolean(v.__advanced)&&v.benefit_type==='gift'?Math.max(0,Math.min(3000,v.small_gift_used||0)):0;
+        const small=v.benefit_type==='gift'?Math.max(0,3000-used):0, current=Math.max(0,Math.max(0,v.benefit)-Math.min(small,Math.max(0,v.benefit))), aggregate=prior+current;
+        items.push('Before this benefit, about '+money(Math.max(0,threshold-prior))+' of the selected group threshold remains under the amounts entered.');
+        if(v.benefit_type==='gift') items.push('This scenario has '+money(small)+' of the €3,000 annual small-gift exemption still available from this disponer before the current gift.');
+        if(aggregate>=threshold*.8) items.push('The aggregate reaches the general 80% numerical IT38 filing marker; other filing triggers can also apply.');
+        else items.push('Relevant prior gifts and inheritances in the same group are part of the calculation.');
         break;
       }
       case 'rent_credit': {
@@ -459,6 +468,7 @@
       }
       case 'dirt':
         items.push('At the standard 33% DIRT rate, about 67% of the gross deposit interest remains before any exemption/refund considerations.');
+        if(Boolean(v.__advanced)) items.push('The Advanced projection assumes interest is credited annually and 33% DIRT is deducted from each year’s interest before the remaining interest compounds.');
         break;
       case 'contractor_vs_salary': {
         const employee=employeeNet2026(v.salary,0,44000,0), revenue=v.day_rate*v.billable_days, profit=Math.max(0,revenue-v.contractor_costs), contractor=selfEmployedNet2026(profit,Math.min(v.contractor_pension,profit));
@@ -860,8 +870,16 @@
       };
     },
     cgt(v){
-      const gain=v.sale-v.purchase-v.costs, afterLoss=Math.max(0,gain-v.losses), taxable=Math.max(0,afterLoss-1270), tax=taxable*.33;
-      return {gain:money(gain),taxable:money(taxable),tax:money(tax)};
+      const advanced=Boolean(v.__advanced), gain=Math.max(0,v.sale)-Math.max(0,v.purchase)-Math.max(0,v.costs);
+      const losses=Math.max(0,v.losses), lossesUsed=Math.min(losses,Math.max(0,gain)), afterLoss=Math.max(0,gain-lossesUsed);
+      const exemptionUsed=advanced?Math.max(0,Math.min(1270,v.exemption_used||0)):0, exemptionRemaining=Math.max(0,1270-exemptionUsed);
+      const exemptionApplied=Math.min(afterLoss,exemptionRemaining), taxable=Math.max(0,afterLoss-exemptionApplied), tax=taxable*.33;
+      const lossGenerated=Math.max(0,-gain), unusedLosses=Math.max(0,losses-lossesUsed);
+      return {
+        gain:money(gain),taxable:money(taxable),tax:money(tax),
+        exemption_remaining:money(exemptionRemaining),losses_used:money(lossesUsed),
+        unused_losses:money(unusedLosses),loss_generated:money(lossGenerated)
+      };
     },
     vat(v){
       const r=Number(v.rate)/100; let net,vat,gross;
@@ -980,32 +998,48 @@
       return {weekly_equivalent:money(p.weekly),weekly_before:money(p.before),weekly_after:money(p.after),annual:money(p.annual),effective:pct(v.salary?p.annual/v.salary*100:0),october_increase:money(octoberEffect)};
     },
     cat(v){
-      const thresholds={A:400000,B:40000,C:20000}, threshold=thresholds[v.group]||0, small=v.benefit_type==='gift'?Math.min(3000,v.benefit):0;
-      const current=Math.max(0,v.benefit-small), beforeTax=Math.max(0,v.prior-threshold)*.33, afterTax=Math.max(0,v.prior+current-threshold)*.33, cat=Math.max(0,afterTax-beforeTax);
-      return {threshold:money(threshold),current_taxable_value:money(current),threshold_remaining:money(Math.max(0,threshold-v.prior)),cat:money(cat)};
+      const advanced=Boolean(v.__advanced), thresholds={A:400000,B:40000,C:20000}, threshold=thresholds[v.group]||0;
+      const benefit=Math.max(0,v.benefit), prior=Math.max(0,v.prior);
+      const smallAlreadyUsed=advanced&&v.benefit_type==='gift'?Math.max(0,Math.min(3000,v.small_gift_used||0)):0;
+      const smallAvailable=v.benefit_type==='gift'?Math.max(0,3000-smallAlreadyUsed):0;
+      const smallApplied=Math.min(smallAvailable,benefit), current=Math.max(0,benefit-smallApplied);
+      const beforeTax=Math.max(0,prior-threshold)*.33, aggregate=prior+current, afterTax=Math.max(0,aggregate-threshold)*.33, cat=Math.max(0,afterTax-beforeTax);
+      const filingMarker=threshold>0&&aggregate>=threshold*.80?'80% filing marker reached':'Below 80% numerical filing marker';
+      return {
+        threshold:money(threshold),current_taxable_value:money(current),threshold_remaining:money(Math.max(0,threshold-prior)),cat:money(cat),
+        small_gift_applied:money(smallApplied),aggregate_after_current:money(aggregate),threshold_remaining_after:money(Math.max(0,threshold-aggregate)),it38_marker:filingMarker
+      };
     },
     rent_credit(v){
       const rentBased=v.rent*.20, cap=v.joint==='yes'?2000:1000, credit=Math.min(rentBased,cap,v.income_tax_liability), usable=Math.max(0,credit);
       return {rent_based:money(rentBased),statutory_cap:money(cap),credit:money(usable),rent_for_max:money(cap/.20),unused_cap:money(Math.max(0,cap-usable))};
     },
     help_to_buy(v){
-      const affordable=v.__advanced?Math.max(0,v.la_affordable_contribution||0):0;
-      const qualifyingFinance=Math.max(0,v.mortgage)+affordable, minimumFinance=v.property_value*.70;
-      const ltv=v.property_value>0?qualifyingFinance/v.property_value*100:0, valueCap=v.property_value*.10;
-      const valueOk=v.property_value<=500000, financeOk=ltv>=70, basic=valueOk&&financeOk;
-      const claim=basic?Math.min(30000,valueCap,v.tax_paid):0;
+      const propertyValue=Math.max(0,v.property_value), taxPaid=Math.max(0,v.tax_paid), affordable=v.__advanced?Math.max(0,v.la_affordable_contribution||0):0;
+      const qualifyingFinance=Math.max(0,v.mortgage)+affordable, minimumFinance=propertyValue*.70;
+      const ltv=propertyValue>0?qualifyingFinance/propertyValue*100:0, valueCap=propertyValue*.10;
+      const valueOk=propertyValue<=500000, financeOk=ltv>=70, basic=valueOk&&financeOk;
+      const constraints=[['€30,000 scheme cap',30000],['10% property-value cap',valueCap],['four-year Income Tax + DIRT paid',taxPaid]].sort((a,b)=>a[1]-b[1]);
+      const claim=basic?Math.max(0,constraints[0][1]):0;
       let eligibility='Passes basic value/finance check';
       if(!valueOk) eligibility='Property value exceeds €500,000';
       else if(!financeOk) eligibility='Qualifying finance is below 70%';
-      return {ltv:pct(ltv),qualifying_finance:money(qualifyingFinance),minimum_finance:money(minimumFinance),value_cap:money(valueCap),claim:money(claim),eligibility};
+      return {
+        ltv:pct(ltv),qualifying_finance:money(qualifyingFinance),minimum_finance:money(minimumFinance),value_cap:money(valueCap),claim:money(claim),eligibility,
+        binding_limit:basic?constraints[0][0]:'Basic value/finance screen not passed',
+        finance_shortfall:money(Math.max(0,minimumFinance-qualifyingFinance))
+      };
     },
     first_home_scheme(v){
-      const htb=v.htb==='yes'?Math.min(v.htb_amount,v.property_value):0;
-      const depositFunds=Math.max(0,v.deposit)+htb, gap=Math.max(0,v.property_value-v.mortgage-depositFunds);
-      const maxShare=v.htb==='yes'?.20:.30, maxFhs=v.property_value*maxShare, minFhs=Math.max(v.property_value*.025,10000);
-      const share=v.property_value?gap/v.property_value*100:0, ceiling=fhsPriceCeiling(v.authority,v.property_type);
-      const priceOk=v.property_value<=ceiling, depositOk=depositFunds>=v.property_value*.10;
+      const propertyValue=Math.max(0,v.property_value), htb=v.htb==='yes'?Math.min(Math.max(0,v.htb_amount),propertyValue):0;
+      const depositFunds=Math.max(0,v.deposit)+htb, gap=Math.max(0,propertyValue-Math.max(0,v.mortgage)-depositFunds);
+      const maxShare=v.htb==='yes'?.20:.30, maxFhs=propertyValue*maxShare, minFhs=Math.max(propertyValue*.025,10000);
+      const share=propertyValue?gap/propertyValue*100:0, ceiling=fhsPriceCeiling(v.authority,v.property_type);
+      const priceOk=propertyValue<=ceiling, depositOk=depositFunds>=propertyValue*.10;
       const fundingOk=gap>=minFhs&&gap<=maxFhs, serviceBase=(priceOk&&depositOk&&fundingOk)?gap:0;
+      const rateForYear=y=>y<=5?0:y<=15?.0175:y<=29?.0215:.0285;
+      const horizon=Boolean(v.__advanced)?Math.max(5,Math.min(40,Math.round(v.service_charge_horizon||10))):10;
+      let cumulative=0; for(let y=1;y<=horizon;y++) cumulative+=serviceBase*rateForYear(y);
       let check='Within calculator’s basic scheme range';
       if(gap===0) check='No funding gap';
       else if(!priceOk) check='Above local property price ceiling';
@@ -1016,10 +1050,22 @@
         price_ceiling:money(ceiling),gap:money(gap),share:pct(share),max_fhs:money(maxFhs),
         year6_charge:serviceBase>0?money(serviceBase*.0175):'—',
         charges_to_year10:serviceBase>0?money(serviceBase*.0175*5):'—',
+        year16_charge:serviceBase>0?money(serviceBase*.0215):'—',
+        year30_charge:serviceBase>0?money(serviceBase*.0285):'—',
+        charges_to_horizon:serviceBase>0?money(cumulative):'—',
         check
       };
     },
-    dirt(v){ const tax=v.interest*.33, net=v.interest-tax; return {dirt:money(tax),net:money(net),retained:pct(v.interest?net/v.interest*100:0)}; },
+    dirt(v){
+      const interest=Math.max(0,v.interest), tax=interest*.33, net=interest-tax, advanced=Boolean(v.__advanced);
+      const deposit=advanced?Math.max(0,v.deposit||0):0, grossRate=advanced?Math.max(0,v.gross_rate||0)/100:0, years=advanced?Math.max(0,Math.round(v.years||0)):0;
+      let balance=deposit, projectedTax=0;
+      for(let y=0;y<years;y++){const grossInterest=balance*grossRate, yearTax=grossInterest*.33; projectedTax+=yearTax; balance+=grossInterest-yearTax;}
+      return {
+        dirt:money(tax),net:money(net),retained:pct(interest?net/interest*100:0),
+        after_dirt_rate:pct(grossRate*(1-.33)*100),projected_balance:money(balance),projected_dirt:money(projectedTax),projected_net_growth:money(Math.max(0,balance-deposit))
+      };
+    },
     contractor_vs_salary(v){
       const employee=employeeNet2026(v.salary,0,44000,0), revenue=v.day_rate*v.billable_days, profit=Math.max(0,revenue-v.contractor_costs), pension=Math.min(v.contractor_pension,profit), contractor=selfEmployedNet2026(profit,pension), diff=contractor.net-employee.net;
       let breakEven=null;
