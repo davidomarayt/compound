@@ -200,3 +200,35 @@
     font-size:clamp(2rem, 7vw, 3.2rem);
   }
 }
+
+
+/* Ranked commercial tool categories */
+.tool-group-heading{
+  align-items:flex-end;
+  gap:24px;
+}
+.tool-group-heading>div{min-width:0}
+.tool-group-heading .eyebrow{margin-bottom:.45rem}
+.tool-group-heading h2{margin:.15rem 0 .55rem}
+.tool-group-blurb{
+  margin:0;
+  max-width:680px;
+  color:var(--ink-2);
+  font-size:.92rem;
+  line-height:1.6;
+}
+.tool-group-count{
+  flex:0 0 auto;
+  font-size:.78rem;
+  font-weight:700;
+  color:var(--ink-3);
+  letter-spacing:.04em;
+  white-space:nowrap;
+}
+.tool-group[data-sponsorship-category]{
+  scroll-margin-top:24px;
+}
+@media(max-width:620px){
+  .tool-group-heading{display:block}
+  .tool-group-count{display:block;margin-top:10px}
+}
