@@ -76,7 +76,7 @@
   const selfEmployedNet2026 = (profit,pension=0) => {
     const x=Math.max(0,profit), earnedCredit=Math.min(2000,x*.20), credits=2000+earnedCredit;
     const tax=incomeTax2026(Math.max(0,x-pension),44000,credits).net;
-    const usc=usc2026(x);
+    const usc=usc2026(x)+Math.max(0,x-100000)*.03;
     const prsi=x<5000?0:Math.max(650,x*.042375);
     return {tax,usc,prsi,credits,net:x-pension-tax-usc-prsi};
   };
