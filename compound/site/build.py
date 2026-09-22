@@ -583,7 +583,7 @@ def build_site(settings: Settings) -> dict:
                 home_articles.append(by_pillar[p][i])
     preferred_home_tools = [
         "compound-interest-calculator",
-        "electricity-cost-calculator",
+        "solar-payback-calculator",
         "mortgage-overpayment-calculator",
         "savings-goal-calculator",
         "bmi-calculator",
