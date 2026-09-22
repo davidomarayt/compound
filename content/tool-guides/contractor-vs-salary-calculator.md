@@ -68,6 +68,48 @@ That number deliberately excludes the value of employment benefits and protectio
 
 A contractor may also need to fund professional indemnity insurance, accounting, equipment, training, administration time and gaps between assignments. The displayed break-even rate is therefore a useful **cash-equivalence floor for the assumptions entered**, not a recommended rate to quote.
 
+## Start with the employee's total package, not the headline salary
+
+A fair contractor comparison needs a benchmark that includes more than gross PAYE salary.
+
+Add the annual value of employer pension contributions, paid annual leave, paid public holidays, employer-funded health insurance, bonus, professional fees, equipment and any other benefits you would need to replace personally as a contractor.
+
+Then consider employer PRSI as part of the employer's cost of employing someone, even though it is not cash paid to the employee. The result is a much more realistic economic benchmark for a contract rate.
+
+### Billable days are the key contractor denominator
+
+A calendar year has many days that cannot be billed: weekends, public holidays, annual leave, sick days, administration, training, gaps between contracts and business-development time.
+
+That is why the same day rate can produce very different annual income depending on whether you realistically bill 180, 210 or 230 days.
+
+When uncertain, use a conservative billable-days assumption first. It is easier to outperform a cautious model than to build a household budget around a utilisation rate that never materialises.
+
+### Separate business revenue from personal take-home
+
+A contractor invoice is not personal income.
+
+Business costs, pension funding, professional insurance, accountancy, equipment and tax all sit between gross invoiced revenue and spendable household cash. VAT, where applicable, is also not extra income simply because it passes through the bank account.
+
+Model contractor revenue first, then subtract genuine business costs, then compare estimated personal take-home with the employee package.
+
+### Employment status is a legal classification
+
+A high day rate does not automatically make someone genuinely self-employed. Irish employment status depends on the real working relationship and relevant legal tests, not simply the wording on an invoice or contract.
+
+The calculator does not decide status. Revenue's Code of Practice and professional advice should be used where classification is uncertain.
+
+### Use three rate thresholds
+
+Rather than asking for one “correct” contractor day rate, calculate:
+
+- **cash break-even** — matches estimated employee take-home,
+- **package break-even** — also replaces pension and benefits,
+- **risk-adjusted target** — adds a margin for gaps, unpaid leave and commercial risk.
+
+That creates a negotiation range rather than a false point estimate.
+
+Use the [Salary to Hourly Rate Calculator](/salary-hourly-rate-calculator/) to understand the employee time value and the [Pension Projection Calculator](/pension-projection-calculator/) when employer pension replacement is material.
+
 ## Method and limitations
 
 The tool annualises the entered contractor rate and billable days, subtracts selected business costs and applies the simplified 2026 employee/self-employed tax functions implemented in the site. It is not a full tax return or legal employment-status test.
