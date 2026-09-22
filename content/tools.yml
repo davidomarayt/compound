@@ -1,7 +1,7 @@
 tools:
   - slug: mortgage-calculator
     title: Mortgage Calculator Ireland
-    category: Mortgage & Property
+    category: Mortgages & Home Buying
     formula: mortgage
     summary: Estimate monthly mortgage repayments, total interest and the total amount repaid over the term.
     meta_description: Free mortgage calculator for Ireland. Estimate monthly repayments, total interest and total repayment from your mortgage amount, rate and term.
@@ -26,7 +26,7 @@ tools:
 
   - slug: mortgage-overpayment-calculator
     title: Mortgage Overpayment Calculator Ireland
-    category: Mortgage & Property
+    category: Mortgages & Home Buying
     formula: mortgage_overpayment
     summary: See how an extra monthly mortgage payment could shorten your term and reduce interest.
     meta_description: Mortgage overpayment calculator for Ireland. Estimate how much time and interest regular overpayments could save on your mortgage.
@@ -50,7 +50,7 @@ tools:
 
   - slug: mortgage-borrowing-calculator
     title: Mortgage Borrowing Calculator Ireland
-    category: Mortgage & Property
+    category: Mortgages & Home Buying
     formula: mortgage_borrowing
     summary: Estimate the Central Bank loan-to-income ceiling and how your deposit can constrain your purchase price.
     meta_description: Ireland mortgage borrowing calculator using Central Bank loan-to-income and loan-to-value limits for first-time and subsequent buyers.
@@ -79,7 +79,7 @@ tools:
 
   - slug: house-deposit-calculator
     title: House Deposit Calculator Ireland
-    category: Mortgage & Property
+    category: Mortgages & Home Buying
     formula: house_deposit
     summary: Calculate the minimum deposit implied by Irish mortgage loan-to-value limits.
     meta_description: House deposit calculator Ireland. Estimate the minimum deposit and maximum mortgage under current Central Bank loan-to-value limits.
@@ -107,7 +107,7 @@ tools:
 
   - slug: stamp-duty-calculator
     title: Stamp Duty Calculator Ireland
-    category: Mortgage & Property
+    category: Mortgages & Home Buying
     formula: stamp_duty
     summary: Estimate Irish residential property stamp duty using the current progressive rates.
     meta_description: Stamp duty calculator Ireland for residential property. Calculate 1%, 2% and 6% bands using current Revenue rates.
@@ -128,7 +128,7 @@ tools:
 
   - slug: local-property-tax-calculator
     title: Local Property Tax Calculator Ireland 2026
-    category: Mortgage & Property
+    category: Mortgages & Home Buying
     formula: lpt
     summary: Estimate 2026 Local Property Tax from your property value and local authority.
     meta_description: Ireland Local Property Tax calculator for 2026. Use Revenue valuation bands and your local authority adjustment to estimate LPT.
@@ -325,7 +325,7 @@ tools:
 
   - slug: savings-goal-calculator
     title: Savings Goal Calculator Ireland
-    category: Saving & Investing
+    category: Pensions & Investing
     formula: savings_goal
     summary: Estimate how long it could take to reach a savings target with regular monthly contributions.
     meta_description: Savings goal calculator Ireland. Estimate how many months it could take to reach a target from your current savings, monthly contribution and interest rate.
@@ -349,7 +349,7 @@ tools:
 
   - slug: net-worth-calculator
     title: Net Worth Calculator Ireland
-    category: Saving & Investing
+    category: Pensions & Investing
     formula: net_worth
     summary: Build a clear household balance-sheet snapshot from your assets and debts, then see what is driving your net worth.
     meta_description: Net worth calculator Ireland. Add savings, investments, pensions, property and debts to estimate household net worth, property equity and debt-to-assets.
@@ -580,7 +580,7 @@ tools:
 
   - slug: regular-savings-calculator
     title: Regular Savings Calculator Ireland
-    category: Saving & Investing
+    category: Pensions & Investing
     formula: regular_savings
     summary: Project what regular monthly saving could build over time.
     meta_description: Regular savings calculator Ireland. Project a future balance from your starting amount, monthly savings, term and annual return.
@@ -603,7 +603,7 @@ tools:
 
   - slug: pension-tax-relief-calculator
     title: Pension Tax Relief Calculator Ireland 2026
-    category: Pensions & Tax
+    category: Pensions & Investing
     formula: pension_relief
     summary: Estimate how much of a personal pension contribution may qualify for Irish income-tax relief.
     meta_description: Pension tax relief calculator Ireland 2026. Apply Revenue age-related contribution limits and the €115,000 earnings cap.
@@ -634,7 +634,7 @@ tools:
 
   - slug: capital-gains-tax-calculator
     title: Capital Gains Tax Calculator Ireland
-    category: Pensions & Tax
+    category: Tax & Take-Home Pay
     formula: cgt
     summary: Estimate CGT on a straightforward disposal using the 33% standard rate and €1,270 annual exemption.
     meta_description: Capital Gains Tax calculator Ireland. Estimate CGT using the standard 33% rate, allowable costs, losses and the €1,270 annual exemption.
@@ -659,7 +659,7 @@ tools:
 
   - slug: vat-calculator
     title: VAT Calculator Ireland 2026
-    category: Pensions & Tax
+    category: Tax & Take-Home Pay
     formula: vat
     summary: Add or remove Irish VAT at common 2026 rates.
     meta_description: VAT calculator Ireland 2026. Add or remove VAT at 23%, 13.5%, 9%, 4.8% or 0% and see the net, VAT and gross amounts.
@@ -697,7 +697,7 @@ tools:
 
   - slug: inflation-calculator
     title: Inflation Calculator Ireland
-    category: Everyday Money
+    category: Pensions & Investing
     formula: inflation
     summary: See how inflation changes the future cost of today's spending and the purchasing power of money.
     meta_description: Inflation calculator Ireland. Estimate the future cost of today's spending and how inflation can reduce purchasing power over time.
@@ -719,7 +719,7 @@ tools:
 
   - slug: emergency-fund-calculator
     title: Emergency Fund Calculator Ireland
-    category: Everyday Money
+    category: Pensions & Investing
     formula: emergency
     summary: Turn your essential monthly spending into a target emergency fund and savings timeline.
     meta_description: Emergency fund calculator Ireland. Set a 3, 6, 9 or 12 month target from essential spending and estimate how long it could take to build.
@@ -750,7 +750,7 @@ tools:
 
   - slug: salary-hourly-rate-calculator
     title: Salary to Hourly Rate Calculator Ireland
-    category: Everyday Money
+    category: Tax & Take-Home Pay
     formula: salary_hourly
     summary: Convert an annual gross salary into monthly, weekly, daily and hourly gross pay.
     meta_description: Salary to hourly rate calculator Ireland. Convert annual gross pay into monthly, weekly, daily and hourly rates from your working hours.
@@ -774,7 +774,7 @@ tools:
 
   - slug: fuel-cost-calculator
     title: Fuel Cost Calculator Ireland
-    category: Travel & Energy
+    category: EV & Motoring
     formula: fuel
     summary: Estimate litres used and fuel cost for a journey from distance, consumption and pump price.
     meta_description: Fuel cost calculator Ireland. Estimate petrol or diesel cost from journey distance, L/100km consumption, fuel price and number of trips.
@@ -797,7 +797,7 @@ tools:
 
   - slug: ev-charging-cost-calculator
     title: EV Charging Cost Calculator Ireland
-    category: Travel & Energy
+    category: EV & Motoring
     formula: ev
     summary: Estimate EV electricity use and charging cost for a journey, including charging losses.
     meta_description: EV charging cost calculator Ireland. Estimate kWh and charging cost from journey distance, vehicle efficiency, electricity price and charging losses.
@@ -821,7 +821,7 @@ tools:
 
   - slug: electricity-cost-calculator
     title: Electricity Cost Calculator Ireland
-    category: Travel & Energy
+    category: Home Energy
     formula: electricity
     summary: Estimate how much an appliance costs to run per month and per year.
     meta_description: Electricity cost calculator Ireland. Estimate appliance running costs from watts, hours used and your electricity unit rate.
@@ -845,7 +845,7 @@ tools:
 
   - slug: take-home-pay-calculator
     title: Take-Home Pay Calculator Ireland 2026
-    category: Pay & Tax
+    category: Tax & Take-Home Pay
     formula: take_home_2026
     summary: Estimate 2026 PAYE, USC, Class A PRSI and monthly take-home pay from a gross salary.
     meta_description: Take-home pay calculator Ireland 2026. Estimate PAYE, USC, Class A PRSI, pension deductions and monthly net salary using current 2026 rules.
@@ -877,7 +877,7 @@ tools:
 
   - slug: income-tax-calculator
     title: Income Tax Calculator Ireland 2026
-    category: Pay & Tax
+    category: Tax & Take-Home Pay
     formula: income_tax_2026
     summary: Calculate 2026 Income Tax before and after credits, with an editable standard-rate band.
     meta_description: Income Tax calculator Ireland 2026. Estimate tax at 20% and 40%, pension tax relief and tax credits using current Revenue bands.
@@ -903,7 +903,7 @@ tools:
 
   - slug: usc-calculator
     title: USC Calculator Ireland 2026
-    category: Pay & Tax
+    category: Tax & Take-Home Pay
     formula: usc_2026
     summary: Estimate Universal Social Charge using the 2026 standard USC bands.
     meta_description: USC calculator Ireland 2026. Apply the €13,000 exemption and current 0.5%, 2%, 3% and 8% standard USC bands.
@@ -925,7 +925,7 @@ tools:
 
   - slug: prsi-calculator
     title: PRSI Calculator Ireland 2026
-    category: Pay & Tax
+    category: Tax & Take-Home Pay
     formula: prsi_2026
     summary: Estimate Class A employee PRSI across the 2026 rate change on 1 October.
     meta_description: PRSI calculator Ireland 2026 for Class A employees. Estimate weekly and annual PRSI across the 4.20% to 4.35% rate change.
@@ -947,7 +947,7 @@ tools:
 
   - slug: inheritance-tax-calculator
     title: Inheritance & Gift Tax Calculator Ireland
-    category: Pay & Tax
+    category: Tax & Take-Home Pay
     formula: cat
     summary: Estimate Capital Acquisitions Tax using current Group A, B and C thresholds and the 33% CAT rate.
     meta_description: Inheritance tax and gift tax calculator Ireland. Estimate CAT using current €400,000, €40,000 and €20,000 group thresholds and the 33% rate.
@@ -987,7 +987,7 @@ tools:
 
   - slug: rent-tax-credit-calculator
     title: Rent Tax Credit Calculator Ireland 2026
-    category: Pay & Tax
+    category: Tax & Take-Home Pay
     formula: rent_credit
     summary: Estimate the 2026 Rent Tax Credit from rent paid and available Income Tax liability.
     meta_description: Rent Tax Credit calculator Ireland 2026. Estimate the credit at 20% of qualifying rent up to €1,000 or €2,000 for a jointly assessed couple.
@@ -1016,7 +1016,7 @@ tools:
 
   - slug: help-to-buy-calculator
     title: Help to Buy Calculator Ireland
-    category: Home Buying
+    category: Mortgages & Home Buying
     formula: help_to_buy
     summary: Estimate the maximum Help to Buy refund for a qualifying new home or self-build.
     meta_description: Help to Buy calculator Ireland. Estimate relief up to €30,000, 10% of property value or tax paid, subject to the €500,000 property cap and 70% mortgage rule.
@@ -1041,7 +1041,7 @@ tools:
 
   - slug: first-home-scheme-calculator
     title: First Home Scheme Calculator Ireland
-    category: Home Buying
+    category: Mortgages & Home Buying
     formula: first_home_scheme
     summary: Estimate the funding gap a First Home Scheme equity share could potentially bridge.
     meta_description: First Home Scheme calculator Ireland. Estimate the funding gap, equity share and current 20% or 30% maximum FHS contribution.
@@ -1074,7 +1074,7 @@ tools:
 
   - slug: dirt-calculator
     title: DIRT Calculator Ireland
-    category: Pay & Tax
+    category: Tax & Take-Home Pay
     formula: dirt
     summary: Calculate Deposit Interest Retention Tax and net deposit interest at the current 33% rate.
     meta_description: DIRT calculator Ireland. Estimate 33% Deposit Interest Retention Tax and the net interest remaining on Irish deposit interest.
@@ -1093,7 +1093,7 @@ tools:
 
   - slug: contractor-vs-salary-calculator
     title: Contractor Day Rate vs Salary Calculator Ireland 2026
-    category: Pay & Tax
+    category: Tax & Take-Home Pay
     formula: contractor_vs_salary
     summary: Compare an indicative single-person PAYE salary with self-employed contractor profit and take-home.
     meta_description: Contractor vs salary calculator Ireland 2026. Compare employee salary with contractor day-rate revenue, business costs and estimated single-person taxes.
@@ -1122,7 +1122,7 @@ tools:
 
   - slug: investment-fee-calculator
     title: Investment Fee Impact Calculator
-    category: Retirement & Investing
+    category: Pensions & Investing
     formula: investment_fees
     summary: See how annual investment fees can compound into a large difference over long periods.
     meta_description: Investment fee calculator. Compare two annual fee levels and see their long-term effect on a lump sum plus monthly investments.
@@ -1147,7 +1147,7 @@ tools:
 
   - slug: fire-number-calculator
     title: FIRE Number Calculator Ireland
-    category: Retirement & Investing
+    category: Pensions & Investing
     formula: fire_number
     summary: Turn annual spending and a chosen withdrawal rate into an illustrative financial-independence target.
     meta_description: FIRE number calculator Ireland. Estimate an investment target from annual spending, withdrawal rate, current portfolio and future contributions.
@@ -1171,7 +1171,7 @@ tools:
 
   - slug: retirement-income-calculator
     title: Retirement Income Calculator Ireland
-    category: Retirement & Investing
+    category: Pensions & Investing
     formula: retirement_income
     summary: Combine an illustrative pension-pot withdrawal with State Pension and other retirement income.
     meta_description: Retirement income calculator Ireland. Estimate annual and monthly gross retirement income from a pension pot, withdrawal rate, State Pension and other income.
@@ -1194,7 +1194,7 @@ tools:
 
   - slug: pension-projection-calculator
     title: Pension Projection Calculator Ireland
-    category: Retirement & Investing
+    category: Pensions & Investing
     formula: pension_projection
     summary: Project a pension pot from current savings, employee and employer contributions, return and annual fees.
     meta_description: Pension projection calculator Ireland. Project a future pension pot from age, retirement age, current fund, monthly contributions, return and fees.
@@ -1221,7 +1221,7 @@ tools:
 
   - slug: rent-vs-buy-calculator
     title: Rent vs Buy Calculator Ireland
-    category: Home Buying
+    category: Mortgages & Home Buying
     formula: rent_vs_buy
     summary: Compare an illustrative homeowner-equity path with a renter who invests the deposit and any monthly cost advantage.
     meta_description: Rent vs buy calculator Ireland. Compare mortgage equity with renting and investing using editable rent, house price, rate, deposit, growth and maintenance assumptions.
@@ -1251,7 +1251,7 @@ tools:
 
   - slug: mortgage-affordability-calculator
     title: Mortgage Affordability Calculator Ireland
-    category: Home Buying
+    category: Mortgages & Home Buying
     formula: mortgage_affordability
     summary: Compare an income multiple with a user-set monthly affordability limit and deposit constraint.
     meta_description: Mortgage affordability calculator Ireland. Compare Central Bank loan-to-income limits with monthly repayment affordability and deposit constraints.
@@ -1286,7 +1286,7 @@ tools:
 
   - slug: house-buying-costs-calculator
     title: House Buying Costs Calculator Ireland
-    category: Home Buying
+    category: Mortgages & Home Buying
     formula: house_buying_costs
     summary: Add the deposit, residential stamp duty and editable professional/moving costs into one upfront budget.
     meta_description: House buying costs calculator Ireland. Estimate deposit, residential stamp duty, legal, survey, valuation, moving and other upfront purchase costs.
@@ -1831,7 +1831,7 @@ tools:
 
   - slug: myfuturefund-calculator
     title: MyFutureFund Auto-Enrolment Calculator Ireland
-    category: Retirement & Investing
+    category: Pensions & Investing
     formula: myfuturefund
     summary: Check likely MyFutureFund enrolment status, see employee/employer/State contributions and project the fund using the phased contribution schedule.
     meta_description: MyFutureFund calculator Ireland 2026. Check auto-enrolment eligibility and project employee, employer and State contributions through retirement.
@@ -1874,7 +1874,7 @@ tools:
 
   - slug: childcare-return-to-work-calculator
     title: Childcare Cost vs Returning to Work Calculator Ireland
-    category: Family
+    category: Family & Life Planning
     formula: childcare_return
     summary: Estimate what returning to paid work adds to household finances after PAYE, childcare, NCS support, commuting and work-related costs.
     meta_description: Childcare vs returning to work calculator Ireland. Estimate net salary after PAYE, childcare fees, NCS subsidy, commuting and work costs.
@@ -1916,7 +1916,7 @@ tools:
 
   - slug: mortgage-switch-calculator
     title: Mortgage Switch & Rate Change Calculator Ireland
-    category: Mortgage & Property
+    category: Mortgages & Home Buying
     formula: mortgage_switch
     summary: Compare your current mortgage with a new rate or lender, including switching costs, break fees, cashback and a new mortgage term.
     meta_description: Mortgage switch calculator Ireland. Compare monthly repayments, interest, switching costs, cashback, break-even time and remaining mortgage balance.
@@ -1950,7 +1950,7 @@ tools:
 
   - slug: lifetime-cost-calculator
     title: Lifetime Cost Calculator Ireland
-    category: Everyday Money
+    category: Family & Life Planning
     formula: lifetime_cost
     summary: Project the cumulative cost of your current lifestyle from today to a chosen age, including housing, food, transport, travel, childcare and recurring major purchases.
     meta_description: Lifetime cost calculator Ireland. Project housing, food, transport, childcare, travel and other spending from your current age to a chosen age with inflation.
@@ -2004,7 +2004,7 @@ tools:
 
   - slug: car-finance-calculator
     title: Car Finance Calculator Ireland — Loan vs PCP vs Hire Purchase
-    category: Loans & Debt
+    category: EV & Motoring
     formula: car_finance
     summary: Compare a personal car loan, hire purchase and PCP using the same car price, deposit and finance assumptions, with an optional advanced mode for fees, mileage and end-value equity.
     meta_description: Car finance calculator Ireland comparing personal loan vs hire purchase vs PCP. Compare monthly payments, balloon payments, total cost, ownership and advanced PCP mileage/equity scenarios.
@@ -2232,7 +2232,7 @@ tools:
 
   - slug: pregnancy-due-date-calculator
     title: Pregnancy Due Date & Timeline Calculator Ireland
-    category: Health
+    category: Family & Life Planning
     formula: pregnancy_timeline
     summary: Estimate a pregnancy due date, gestational age, trimester and key timeline dates from the last menstrual period or a clinician-assigned due date.
     meta_description: Pregnancy due date calculator Ireland. Estimate gestational age, trimester, conception date and pregnancy milestones, with HSE and obstetric dating guidance.
