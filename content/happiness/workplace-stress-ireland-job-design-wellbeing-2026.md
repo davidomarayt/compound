@@ -10,7 +10,7 @@ date: 2026-09-22
 reviewed: 2026-09-22
 summary: 'A major all-island study of 4,300 workers found work-related stress is closely linked to workload, deadlines, management quality, fairness and the ability to disconnect from work.'
 meta_description: 'A major 2026 study finds workplace stress in Ireland is strongly linked to workload, deadlines, management and the ability to switch off. Here is what employers and workers should know.'
-tags: [news, workplace-stress, wellbeing, work-life-balance, right-to-disconnect, burnout, ireland]
+tags: [news, workplace-stress, wellbeing, work-life, work-life-balance, right-to-disconnect, burnout, ireland]
 news_image_query: 'Irish office workers workplace stress wellbeing Ireland modern office'
 social:
   enabled: true
@@ -115,6 +115,8 @@ Work-related stress is not defined simply as being busy.
 A demanding job can be stimulating and satisfying when the pressure is manageable, resources are adequate and the worker has enough control and support.
 
 The problem arises when demands consistently exceed the person's capacity or the resources available to do the job.
+
+The ability to recover outside work matters too. Our evidence-based guide to [why time off does not always feel like a break](/happiness/why-time-off-doesnt-feel-like-a-break/) looks at the difference between simply being off the clock and actually getting restorative downtime.
 
 ## Stress is not just an individual coping problem
 
