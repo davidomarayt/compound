@@ -48,3 +48,16 @@ The calculator projects the entered retirement pot forward under a constant retu
 
 - [Citizens Information — Pensions and retirement](https://www.citizensinformation.ie/en/money-and-tax/personal-finance/pensions/)
 - [Revenue — Pensions](https://www.revenue.ie/en/jobs-and-pensions/pension/index.aspx)
+
+## The hidden problem: sequence-of-returns risk
+
+A smooth-return calculator can show the mechanics of retirement withdrawals, but real markets do not deliver the same return every year.
+
+If a portfolio falls sharply in the first few years of retirement while withdrawals continue, capital is removed when asset values are depressed. The portfolio then has less money available to participate in a later recovery. This is known as **sequence-of-returns risk**.
+
+The same average return can therefore produce very different retirement outcomes depending on the order in which gains and losses arrive.
+
+Ways retirees sometimes manage this risk include flexible spending, holding lower-volatility assets or cash reserves, delaying large discretionary withdrawals and adjusting asset allocation. Those are planning choices rather than guarantees, and the right approach depends on the pension structure and individual circumstances.
+
+Treat the deterministic result here as a baseline, then ask what would happen if the first five retirement years were much weaker than the long-run average.
+

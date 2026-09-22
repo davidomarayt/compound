@@ -60,3 +60,14 @@ The tool converts annual salary to weekly earnings and applies the implemented 2
 
 - [Gov.ie — PRSI classes and social insurance](https://www.gov.ie/en/department-of-social-protection/collections/prsi-pay-related-social-insurance/)
 - [Revenue — Employers and PRSI](https://www.revenue.ie/en/employing-people/paying-an-employee/methods-of-calculating-tax/index.aspx)
+
+## Why PRSI should not be viewed only as a tax
+
+PRSI is a contribution-based social-insurance system. Contribution history can affect access to benefits and pensions, so the deduction has a different policy purpose from ordinary Income Tax.
+
+That does not change the cash deducted from a payslip, but it is useful context when comparing employment with self-employment or different PRSI classes.
+
+For employees, the amount shown on the payslip is only one side of the system: employers can also have a separate PRSI liability. A contractor day rate therefore needs to compensate for employment costs and protections that are not visible in the employee's own PRSI deduction.
+
+If you are checking entitlement to a particular social-insurance benefit, use Department of Social Protection records and guidance rather than this contribution calculator.
+

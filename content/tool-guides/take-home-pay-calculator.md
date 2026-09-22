@@ -48,3 +48,14 @@ The tool applies the implemented 2026 Income Tax bands/credits, standard USC sch
 
 - [Revenue — 2026 tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx)
 - [Revenue — USC rates](https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx)
+
+## Marginal tax is not the same as your average tax rate
+
+People often hear that income is “taxed at 40%” and assume 40% of the entire salary disappears. Irish Income Tax is progressive: only the portion above the standard-rate band is taxed at the higher Income Tax rate, and tax credits then reduce the Income Tax bill.
+
+Your **marginal deduction rate** is the amount of tax and social charges applied to the next euro of income. Your **average deduction rate** is total deductions divided by total gross income. They are not the same.
+
+This distinction matters when evaluating overtime, bonuses or a pay rise. A higher marginal rate reduces how much of the extra euro reaches your bank account, but earning more gross income still normally increases net income.
+
+Use the separate Income Tax, USC and PRSI calculators if you want to see which deduction is responsible for the change.
+

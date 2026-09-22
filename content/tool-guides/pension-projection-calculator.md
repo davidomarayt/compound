@@ -48,3 +48,14 @@ The tool compounds the current pot and regular contributions under a constant an
 
 - [Revenue — Pension contribution tax relief limits](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx)
 - [CCPC — Pensions](https://www.ccpc.ie/consumers/money/pensions/)
+
+## Why the contribution rate usually matters more than guessing the perfect return
+
+Long-term pension projections often create false precision because a small change in the assumed return can produce a very large difference decades later. You cannot control markets, but you can control how much goes into the pension, when contributions start and whether contributions rise with income.
+
+For that reason, run a **contribution sensitivity test** as well as a return sensitivity test. Compare the same return with, for example, €300, €500 and €700 monthly contributions. Then compare each of those at conservative, middle and optimistic returns.
+
+This separates decisions you can make from outcomes you cannot guarantee.
+
+Also remember that a future €500,000 pension pot is a nominal amount. If retirement is decades away, use the [Inflation Calculator](/inflation-calculator/) to translate that figure into today's purchasing power before judging whether it looks adequate.
+

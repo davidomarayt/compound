@@ -57,3 +57,16 @@ The tool converts distance and fuel consumption into litres used, then multiplie
 ### Useful sources
 
 - [SEAI — Journey cost calculator](https://www.seai.ie/about/tools/journey-calculator/results)
+
+## The replacement-car trap
+
+Lower fuel use does not automatically justify changing cars.
+
+Suppose a newer car saves €500 a year in fuel but costs €12,000 more after selling your current car. Ignoring finance, depreciation and maintenance differences, fuel savings alone would take 24 years to recover that price gap.
+
+That does not mean the newer car is a bad purchase. It means fuel economy should be separated from the broader ownership decision.
+
+If you are comparing petrol, diesel, hybrid and EV options, calculate fuel/charging first, then add finance, insurance, motor tax, servicing, expected depreciation and how long you actually plan to own the vehicle.
+
+The biggest cost in motoring is often not the one shown at the pump.
+

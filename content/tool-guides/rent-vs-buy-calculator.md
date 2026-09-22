@@ -48,3 +48,14 @@ The calculator compares the entered renting and ownership assumptions over time.
 
 - [CCPC — Buying a home](https://www.ccpc.ie/consumers/housing/buying-home/)
 - [Revenue — Rent Tax Credit](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx)
+
+## Why the break-even year can move so much
+
+Rent-versus-buy models are unusually sensitive because several uncertain variables compound at the same time.
+
+A 1 percentage point change in mortgage rate, house-price growth, rent inflation or investment return can move the long-run result substantially. Transaction costs make the first few years especially sensitive, while property appreciation and mortgage principal repayment matter more as the horizon lengthens.
+
+This is why the most useful output is not a single “winner”. Instead, look for a **robust zone**: does buying still look financially stronger under conservative property growth and higher mortgage rates? Does renting still look stronger if investment returns are lower than expected?
+
+If the answer flips under small assumption changes, the financial case is not decisive and non-financial factors deserve more weight.
+

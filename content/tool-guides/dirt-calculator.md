@@ -57,3 +57,14 @@ The tool multiplies gross deposit interest by the implemented DIRT rate and subt
 ### Useful sources
 
 - [Revenue — What DIRT rate is applicable?](https://www.revenue.ie/en/additional-incomes/dirt/what-dirt-rate-is-applicable.aspx)
+
+## Gross savings rate versus net savings rate
+
+When comparing deposit accounts, the advertised interest rate is normally a gross rate. What matters to an Irish-resident saver is the amount left after DIRT where DIRT applies.
+
+At a 4% gross rate and 33% DIRT, the simple after-DIRT return on the interest is about 2.68% before considering compounding details.
+
+That makes it useful to compare accounts on a consistent net basis, especially when one product advertises a promotional gross rate and another quotes a different structure.
+
+Inflation is another layer. A deposit can grow in euro terms while losing purchasing power if the after-tax interest rate is below inflation. Use the [Inflation Calculator](/inflation-calculator/) when the savings horizon is long enough for that difference to matter.
+

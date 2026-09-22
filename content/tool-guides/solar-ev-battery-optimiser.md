@@ -48,3 +48,14 @@ The tool estimates annual solar generation, allocates energy to home use, EV use
 
 - [CRU — Smart meters and services](https://www.cru.ie/consumer-information/billing/smart-meters-and-services/)
 - [SEAI — EV charging](https://www.seai.ie/plan-your-energy-journey/for-your-home/electric-vehicles/about-evs/ev-charging)
+
+## Why “maximum self-consumption” is not always maximum value
+
+Solar advice often treats self-consumption as the goal, but the financially relevant question is **what alternative each kWh replaces**.
+
+If exported electricity earns €0.15/kWh and your EV would otherwise charge overnight at €0.10/kWh, diverting a solar kWh from export into the EV can actually reduce its immediate cash value. The opposite may be true for a daytime household load that would otherwise buy electricity at €0.35/kWh.
+
+A battery introduces the same opportunity-cost question. Storing a surplus kWh sacrifices the export payment today in exchange for avoiding a later import, minus round-trip losses.
+
+That is why this optimiser separates energy flows rather than simply rewarding the highest self-consumption percentage. The best configuration depends on tariff spreads and timing, not on a single headline percentage.
+

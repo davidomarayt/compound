@@ -48,3 +48,20 @@ The tool compounds the existing balance monthly and adds the entered contributio
 
 - [Revenue — Deposit Interest Retention Tax](https://www.revenue.ie/en/additional-incomes/dirt/index.aspx)
 - [CCPC — Saving and investing](https://www.ccpc.ie/consumers/money/saving-investing/)
+
+## Build a goal with a margin of safety
+
+Savings goals are often stated as one precise number, but real purchases rarely land exactly on budget.
+
+For a house deposit, wedding, car, education fund or large renovation, consider adding a contingency rather than targeting the minimum expected cost. Inflation can also move the required amount while you are saving.
+
+A useful method is to model three targets:
+
+- the minimum amount you think you need;
+- a central target;
+- a target with a 10–15% buffer.
+
+Then compare how much additional monthly saving is required for the buffered target. That turns uncertainty into an explicit planning choice rather than an unpleasant surprise near the deadline.
+
+For short-horizon goals, prioritise the probability that the money is there when needed over an aggressive return assumption.
+

@@ -52,3 +52,14 @@ The tool estimates annual generation from system size and generation-per-kWp, va
 
 - [SEAI — Solar electricity grant](https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant)
 - [SEAI — Individual home energy grants](https://www.seai.ie/grants/home-energy-grants/individual-grants)
+
+## Simple payback is useful, but it is not the whole investment case
+
+A simple payback period answers one question: how many years of current estimated annual savings are needed to recover the net upfront cost?
+
+It does **not** account for the time value of money, financing interest, panel degradation, inverter replacement, maintenance or future tariff changes. A 7-year payback and a 10-year payback therefore should not be treated as precise forecasts.
+
+Solar also has a different risk profile from a financial investment. Much of the benefit comes from reducing future electricity purchases, so the value depends on the electricity price you would otherwise have paid. Export income is a separate revenue stream and can change with supplier rates.
+
+A robust decision should still look attractive when you lower generation slightly, reduce export payments and avoid assuming unusually high future electricity prices.
+

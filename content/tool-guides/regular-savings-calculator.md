@@ -48,3 +48,14 @@ The balance compounds monthly at the entered annual rate divided by 12, with the
 
 - [Revenue — DIRT](https://www.revenue.ie/en/additional-incomes/dirt/what-dirt-rate-is-applicable.aspx)
 - [CCPC — Saving and investing](https://www.ccpc.ie/consumers/money/saving-investing/)
+
+## Saving rate versus investment return
+
+For shorter savings horizons, the amount you contribute usually matters far more than a small difference in annual return.
+
+For example, increasing monthly saving by €100 adds €6,000 of direct contributions over five years before any growth. By contrast, trying to earn an extra 1 percentage point of return on a relatively small balance may add much less while exposing you to more risk.
+
+That changes over very long horizons because compounding has more time to work. The calculator is therefore most useful when you test both levers separately: first ask what happens if you save more, then ask what happens if returns differ.
+
+For money needed within a few years—such as a house deposit—the certainty and accessibility of the capital may matter more than maximising expected return.
+

@@ -47,3 +47,14 @@ The tool caps relevant earnings at €115,000, applies the Revenue age-related p
 ### Useful sources
 
 - [Revenue — Tax relief limits on pension contributions](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx)
+
+## Tax relief changes the cost of a contribution, not its investment risk
+
+A pension contribution that qualifies for Income Tax relief can cost less in take-home pay than the amount entering the pension.
+
+For example, where the full contribution genuinely receives relief at 40%, €1,000 entering the pension may reduce take-home resources by about €600 before considering payroll timing. That is a powerful incentive, but it does not guarantee any investment return and the money becomes subject to pension access rules.
+
+It is also possible to contribute more than the amount that qualifies for relief. The age-related percentage and earnings cap govern the relievable personal contribution, not necessarily the pension provider's maximum permitted contribution in every circumstance.
+
+The calculator should therefore be used first to understand the **tax-relief envelope**, then the pension projection tool should be used to understand the long-term accumulation scenario.
+

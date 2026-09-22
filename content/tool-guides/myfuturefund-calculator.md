@@ -48,3 +48,14 @@ The calculator applies the statutory contribution rates for the relevant phase t
 
 - [Gov.ie — MyFutureFund contribution examples](https://www.gov.ie/en/department-of-social-protection/publications/myfuturefund-contribution-examples-for-employees/)
 - [Gov.ie — MyFutureFund](https://www.gov.ie/en/department-of-social-protection/press-releases/my-future-fund/)
+
+## A better way to compare MyFutureFund with a private pension
+
+The strongest comparison is not simply “which one has the higher contribution rate?” Compare the **total money entering retirement savings**, the investment options available, charges, access rules and what happens when employment changes.
+
+MyFutureFund has a built-in employer contribution and State top-up, which gives it an important advantage for an eligible employee who might otherwise save nothing. A private pension or occupational scheme can, however, allow a different contribution pattern, different investment choices and ordinary Income Tax relief subject to Revenue rules.
+
+If you are deciding whether to make additional pension contributions outside auto-enrolment, model those contributions separately rather than assuming the two systems are interchangeable.
+
+It is also worth revisiting the result when contribution rates step up. A household budget that comfortably absorbs the 2026 employee rate may feel different when the statutory percentage rises later in the phase-in.
+
