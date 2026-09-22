@@ -1116,16 +1116,36 @@
   document.querySelectorAll('[data-calculator]').forEach(root => {
     const form=root.querySelector('[data-tool-form]'), error=root.querySelector('[data-tool-error]');
     const run=(showErrors=true)=>{
-      const values={}; let invalid=false;
+      const values={}; let invalid=false, invalidField=null, invalidMessage='';
+      root.querySelectorAll('[data-field]').forEach(el=>el.removeAttribute('aria-invalid'));
       root.querySelectorAll('[data-field]').forEach(el=>{
         const raw=el.value;
         if(el.type==='checkbox'){ values[el.dataset.field]=el.checked; return; }
-        if(el.type==='date'){ if(!raw&&el.dataset.optional==='true'){values[el.dataset.field]='';return;} if(!/^\d{4}-\d{2}-\d{2}$/.test(raw)){invalid=true;return;} values[el.dataset.field]=raw; return; }
+        if(el.type==='date'){
+          if(!raw&&el.dataset.optional==='true'){values[el.dataset.field]='';return;}
+          if(!/^\d{4}-\d{2}-\d{2}$/.test(raw)){invalid=true;invalidField=invalidField||el;invalidMessage=invalidMessage||'Enter a valid date.';return;}
+          values[el.dataset.field]=raw; return;
+        }
         if(el.tagName==='SELECT'){ values[el.dataset.field]=raw; return; }
-        const n=Number(raw); if(!Number.isFinite(n)){invalid=true; return;} values[el.dataset.field]=n;
+        const n=Number(raw);
+        const min=el.min!==''?Number(el.min):null, max=el.max!==''?Number(el.max):null;
+        if(!raw || !Number.isFinite(n) || (min!==null&&n<min) || (max!==null&&n>max)){
+          invalid=true; invalidField=invalidField||el;
+          const field=el.closest('.tool-field'), label=field?.querySelector('label')?.textContent?.trim()||'This field';
+          if(min!==null&&max!==null) invalidMessage=invalidMessage||label+' must be between '+num(min)+' and '+num(max)+'.';
+          else if(min!==null) invalidMessage=invalidMessage||label+' must be at least '+num(min)+'.';
+          else if(max!==null) invalidMessage=invalidMessage||label+' must be no more than '+num(max)+'.';
+          else invalidMessage=invalidMessage||'Check the value entered for '+label+'.';
+          return;
+        }
+        values[el.dataset.field]=n;
       });
       values.__advanced=root.dataset.advancedMode==='true';
-      if(invalid){ if(showErrors) error.textContent='Check the numbers entered and try again.'; return; }
+      if(invalid){
+        if(invalidField) invalidField.setAttribute('aria-invalid','true');
+        if(showErrors) error.textContent=invalidMessage||'Check the numbers entered and try again.';
+        return;
+      }
       error.textContent='';
       const fn=calculators[root.dataset.calculator]; if(!fn) return;
       try{
