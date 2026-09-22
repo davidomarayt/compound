@@ -371,16 +371,19 @@
         items.push('Fee drag compounds because money paid in fees also loses future growth.');
         break;
       case 'fire_number':
+        const realAnnual=(1+v.return_rate/100)/(1+v.inflation_rate/100)-1;
         items.push('A '+pct(v.withdrawal_rate)+' withdrawal assumption implies a target equal to about '+number.format(100/v.withdrawal_rate)+' times annual spending.');
-        items.push('This is a planning ratio, not a guarantee that the portfolio lasts for life.');
+        items.push('The entered '+pct(v.return_rate)+' nominal return and '+pct(v.inflation_rate)+' inflation imply about '+pct(realAnnual*100)+' annual real return in this model.');
         break;
       case 'retirement_income':
-        items.push('The portfolio withdrawal assumption is '+pct(v.withdrawal_rate)+' of the starting pot before tax.');
-        if(v.state_pension+v.other_income>0) items.push('Non-portfolio income supplies '+pct((v.state_pension+v.other_income)/(v.pot*v.withdrawal_rate/100+v.state_pension+v.other_income)*100)+' of the modelled annual income.');
+        items.push('The first-year portfolio withdrawal is '+pct(v.withdrawal_rate)+' of the starting pot before tax.');
+        if(v.state_pension+v.other_income>0) items.push('Non-portfolio income supplies '+pct((v.state_pension+v.other_income)/(v.pot*v.withdrawal_rate/100+v.state_pension+v.other_income)*100)+' of the modelled first-year gross income.');
+        items.push('The sustainability path assumes a smooth '+pct(v.return_rate)+' annual return and withdrawals rising '+pct(v.inflation_rate)+' a year; real markets will be uneven.');
         break;
       case 'pension_projection':
-        items.push('The modelled investment return after the entered annual fee is '+pct(v.return_rate-v.annual_fee)+'.');
-        items.push('Contributions are controllable; future market returns are not, so test lower-return cases as well.');
+        const netAnnual=(1+v.return_rate/100)*(1-v.annual_fee/100)-1;
+        items.push('The modelled annual return after the entered fee is about '+pct(netAnnual*100)+'.');
+        items.push('At '+pct(v.inflation_rate)+' inflation, the today’s-money result can be materially lower than the future nominal pot.');
         break;
       case 'rent_vs_buy':
         items.push('The model assumes house-price growth of '+pct(v.house_growth)+' and renter investment returns of '+pct(v.renter_return)+'. Small changes to either can move a long-term result materially.');
@@ -702,29 +705,43 @@
       };
     },
     fire_number(v){
-      const target=v.withdrawal_rate>0?v.annual_spend/(v.withdrawal_rate/100):Infinity, r=v.return_rate/100/12, monthly=v.annual_contribution/12; let bal=v.current, months=0;
+      const target=v.withdrawal_rate>0?v.annual_spend/(v.withdrawal_rate/100):Infinity;
+      const realAnnual=(1+v.return_rate/100)/(1+v.inflation_rate/100)-1;
+      const r=Math.pow(Math.max(.000001,1+realAnnual),1/12)-1, monthly=v.annual_contribution/12;
+      let bal=v.current, months=0;
       while(bal<target&&months<1200){bal=bal*(1+r)+monthly;months++;}
-      const years=Math.min(60,Math.max(1,Math.ceil(Math.min(months,1200)/12))), labels=[], vals=[], targets=[]; bal=v.current;
-      labels.push('Now');vals.push(bal);targets.push(target);
+      const years=Math.min(60,Math.max(1,Math.ceil(Math.min(months,1200)/12))), labels=['Now'],vals=[v.current],targets=[target]; bal=v.current;
       for(let y=1;y<=years;y++){for(let m=0;m<12;m++)bal=bal*(1+r)+monthly;labels.push('Year '+y);vals.push(bal);targets.push(target);}
       return {
-        target:money(target),gap:money(Math.max(0,target-v.current)),years:months>=1200&&bal<target?'Not reached within 100 years':duration(months),
-        __chart:{type:'line',title:'Portfolio path towards the FIRE target',caption:'Constant-return illustration using the spending, withdrawal and contribution assumptions entered.',labels,series:[{label:'Projected portfolio',values:vals},{label:'FIRE target',values:targets}]}
+        target:money(target),gap:money(Math.max(0,target-v.current)),real_return:pct(realAnnual*100),years:months>=1200&&bal<target?'Not reached within 100 years':duration(months),
+        __chart:{type:'line',title:'Today’s-money portfolio path towards the FIRE target',caption:'Spending, contributions and portfolio values are shown in today’s purchasing power using the implied real return.',labels,series:[{label:'Projected portfolio — today’s money',values:vals},{label:'FIRE target — today’s money',values:targets}]}
       };
     },
     retirement_income(v){
       const portfolio=v.pot*v.withdrawal_rate/100, total=portfolio+v.state_pension+v.other_income;
+      let bal=Math.max(0,v.pot), withdrawal=portfolio, depletedYear=null;
+      const labels=['Start'], balances=[bal];
+      for(let year=1;year<=Math.round(v.retirement_years);year++){
+        bal=Math.max(0,bal*(1+v.return_rate/100)-withdrawal);
+        if(bal<=0.005&&depletedYear===null) depletedYear=year;
+        labels.push('Year '+year);balances.push(bal);
+        withdrawal*=1+v.inflation_rate/100;
+      }
       return {
-        portfolio_income:money(portfolio),annual_income:money(total),monthly_income:money(total/12),
-        __chart:{type:'bar',title:'Illustrative retirement income mix',caption:'Gross annual income before tax.',labels:['Portfolio','State Pension','Other'],series:[{label:'Annual income',values:[portfolio,v.state_pension,v.other_income]}]}
+        portfolio_income:money(portfolio),annual_income:money(total),monthly_income:money(total/12),ending_pot:money(bal),
+        depletion:depletedYear===null?'Not depleted in '+Math.round(v.retirement_years)+' years':'Depleted in year '+depletedYear,
+        __chart:{type:'line',title:'Deterministic retirement-pot path',caption:'Portfolio grows at the entered constant return while the starting portfolio withdrawal rises with the inflation assumption. State Pension and other income do not reduce portfolio withdrawals in this model.',labels,series:[{label:'Projected portfolio',values:balances}]}
       };
     },
     pension_projection(v){
-      const years=Math.max(0,Math.floor(v.retirement_age-v.age)), monthly=v.monthly_employee+v.monthly_employer, netRate=v.return_rate-v.annual_fee, labels=['Age '+v.age], pots=[v.current], contribs=[v.current]; let bal=v.current, contrib=v.current, r=netRate/100/12;
+      const years=Math.max(0,Math.floor(v.retirement_age-v.age)), monthly=v.monthly_employee+v.monthly_employer;
+      const netAnnual=(1+v.return_rate/100)*(1-v.annual_fee/100)-1, r=Math.pow(Math.max(.000001,1+netAnnual),1/12)-1;
+      const labels=['Age '+v.age], pots=[v.current], contribs=[v.current]; let bal=v.current, contrib=v.current;
       for(let y=1;y<=years;y++){for(let m=0;m<12;m++){bal=bal*(1+r)+monthly;contrib+=monthly;}labels.push('Age '+(v.age+y));pots.push(bal);contribs.push(contrib);}
+      const real=bal/Math.pow(1+v.inflation_rate/100,years);
       return {
-        years:years+' years',projected:money(bal),contributed:money(contrib),growth:money(bal-contrib),
-        __chart:{type:'line',title:'Pension projection to retirement',caption:'Projected fund versus cumulative money contributed, using the return and fee assumptions entered.',labels,series:[{label:'Projected pension',values:pots},{label:'Contributions + starting pot',values:contribs}]}
+        years:years+' years',projected:money(bal),projected_real:money(real),contributed:money(contrib),growth:money(bal-contrib),
+        __chart:{type:'line',title:'Pension projection to retirement',caption:'Nominal projected fund versus cumulative nominal contributions. The today’s-money value is shown separately in the results.',labels,series:[{label:'Projected pension',values:pots},{label:'Contributions + starting pot',values:contribs}]}
       };
     },
     rent_vs_buy(v){
