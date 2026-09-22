@@ -2,6 +2,12 @@
 
 The Rent Tax Credit reduces Income Tax for qualifying renters. This calculator estimates the credit from the rent and taxpayer circumstances entered, subject to the annual cap and available Income Tax liability.
 
+## What limits the credit
+
+The usable credit is the lowest of three figures: **20% of qualifying rent**, the relevant **2026 statutory cap**, and the **Income Tax liability available to offset**. The calculator now names whichever of those is currently binding.
+
+The effective-rent-relief percentage divides the usable credit by the qualifying rent you entered. It is a descriptive ratio, not a separate statutory rate. A household can therefore have the same statutory cap as another household but a different effective percentage because the rent paid or available Income Tax liability differs.
+
 ## How to read the result
 
 A tax credit cannot generally create an Income Tax refund beyond tax that would otherwise be due. The amount of rent paid is therefore only one constraint; eligibility and Income Tax liability also matter.
