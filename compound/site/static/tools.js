@@ -142,14 +142,14 @@
       }
       case 'mortgage_overpayment': {
         const p=mortgageOverpaymentProjection(v), standard=amortisationSeries(v.balance,v.rate,p.months,p.base);
-        const labels=standard.labels, scenario=[];
-        const byLabel=new Map(p.labels.map((label,i)=>[label,p.values[i]]));
+        const labels=standard.labels, scenario=[], byLabel=new Map(p.labels.map((label,i)=>[label,p.values[i]]));
         let last=v.balance;
-        labels.forEach(label=>{ if(byLabel.has(label)) last=byLabel.get(label); scenario.push(last); });
-        if(p.values[p.values.length-1]===0) {
-          const payoffLabel=p.labels[p.labels.length-1], idx=labels.indexOf(payoffLabel);
-          if(idx>=0) for(let i=idx;i<scenario.length;i++) scenario[i]=0;
-        }
+        labels.forEach((label,i)=>{
+          const targetMonth=label==='Start'?0:(label.startsWith('Year ')?Number(label.slice(5))*12:(label.startsWith('Month ')?Number(label.slice(6)):i*12));
+          if(targetMonth>=p.scenarioMonths) last=0;
+          else if(byLabel.has(label)) last=byLabel.get(label);
+          scenario.push(last);
+        });
         return {type:'line',title:'How the balance falls',caption:'Standard repayment versus your overpayment timing and any lump sum entered.',labels,series:[{label:'Standard',values:standard.values},{label:'Overpayment plan',values:scenario}]};
       }
       case 'mortgage_borrowing': {
