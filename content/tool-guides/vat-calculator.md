@@ -2,6 +2,12 @@
 
 This tool converts between net and VAT-inclusive prices at the selected Irish VAT rate. It is useful for invoices, quotations and quick price checks, but it does not determine which VAT rate legally applies to a product or service.
 
+## How to interpret the extra VAT outputs
+
+The VAT percentage is applied to the **net** price, which means VAT is a smaller percentage of the final gross price. At a 23% VAT rate, for example, €23 of VAT on a €123 gross price is about **18.7% of the gross amount**.
+
+The **net-to-gross multiplier** is a quick arithmetic shortcut. At 23%, multiplying a net amount by 1.23 gives the gross amount. When removing VAT from a gross price, divide by the same multiplier rather than simply subtracting 23% from the gross figure.
+
 ## How to read the result
 
 If you start with a net amount, VAT is added to reach the gross amount. If you start with a VAT-inclusive amount, the VAT element must be backed out by dividing by 1 + the rate rather than simply subtracting the percentage from the gross price.
