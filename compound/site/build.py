@@ -98,6 +98,18 @@ TOOL_PRIMARY_RESULTS = {
     "pregnancy-due-date-calculator": "due_date",
     "alcohol-units-calories-cost-calculator": "standard_drinks",
 }
+
+TOOL_CATEGORY_RESULT_NOTES = {
+    "Mortgages & Home Buying": "Illustrative mortgage and home-buying estimate. Lender underwriting, product terms, fees and eligibility can change the real outcome.",
+    "Pensions & Investing": "Long-term planning illustration, not a forecast. Returns, fees, tax, inflation and market conditions can materially change the outcome.",
+    "Home Energy": "Energy-cost scenario using the assumptions entered. Actual generation, consumption, tariffs, grants and building performance can differ.",
+    "Tax & Take-Home Pay": "2026 planning estimate under the assumptions shown. Revenue records, personal circumstances and payroll treatment determine the actual liability.",
+    "Loans & Debt": "Repayment illustration only. Use the APR, fees and contractual terms from the actual lender agreement before making a borrowing decision.",
+    "EV & Motoring": "Running-cost illustration. Real-world efficiency, tariffs, fuel prices, finance, depreciation and driving conditions can change the result.",
+    "Health": "Educational estimate, not a diagnosis or personalised clinical recommendation. Use the context and limitations below.",
+    "Family & Life Planning": "Household planning estimate. Personal circumstances, eligibility, costs and future conditions can change the result.",
+}
+
 PILLAR_BLURBS = {
     "wealth": "Irish tax credits, grants, pensions and money, explained for the person paying.",
     "health": "What the evidence actually says, without the hype.",
@@ -456,6 +468,8 @@ def load_tools(content_dir: Path) -> list[dict]:
         tool["results"] = list(tool.get("results") or [])
         tool["sources"] = list(tool.get("sources") or [])
         tool["primary_result"] = TOOL_PRIMARY_RESULTS.get(slug, (tool["results"][0]["id"] if tool["results"] else ""))
+        if not tool.get("result_note"):
+            tool["result_note"] = TOOL_CATEGORY_RESULT_NOTES.get(str(tool.get("category") or ""), "Planning estimate only. Read the methodology and limitations below.")
         source_section = str(tool.get("guide") or "").split("### Useful sources", 1)
         if len(source_section) == 2:
             seen_urls = {str(source.get("url") or "") for source in tool["sources"]}
