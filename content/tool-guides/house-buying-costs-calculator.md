@@ -156,7 +156,7 @@ The reserve lets you test a stronger condition:
 
 **Can I complete the purchase and still hold the cash buffer I want?**
 
-## Worked advanced example
+## Worked example: advanced cash plan
 
 Assume:
 
