@@ -590,29 +590,68 @@ def test_retirement_tools_distinguish_nominal_real_and_sustainability():
 
     fire_fields = {field["id"]: field for field in tools["fire-number-calculator"]["fields"]}
     fire_results = {result["id"] for result in tools["fire-number-calculator"]["results"]}
-    assert fire_fields["inflation_rate"]["advanced"] is True
-    assert "real_return" in fire_results
+    assert all(fire_fields[field]["advanced"] is True for field in (
+        "ongoing_income", "extra_reserve", "contribution_growth", "annual_fee", "inflation_rate"
+    ))
+    assert {"portfolio_spending", "target", "gap", "progress", "real_return", "years",
+            "target_3", "target_35", "target_4"} <= fire_results
 
     pension_fields = {field["id"]: field for field in tools["pension-projection-calculator"]["fields"]}
     pension_results = {result["id"] for result in tools["pension-projection-calculator"]["results"]}
-    assert pension_fields["inflation_rate"]["advanced"] is True
-    assert "projected_real" in pension_results
+    assert all(pension_fields[field]["advanced"] is True for field in (
+        "contribution_growth", "annual_avc", "stress_return_rate", "annual_fee", "inflation_rate"
+    ))
+    assert {"projected_real", "employee_contributions", "employer_contributions",
+            "fee_drag", "stress_projected"} <= pension_results
 
     retirement_fields = {field["id"]: field for field in tools["retirement-income-calculator"]["fields"]}
     retirement_results = {result["id"] for result in tools["retirement-income-calculator"]["results"]}
-    assert retirement_fields["retirement_years"]["advanced"] is True
-    assert retirement_fields["return_rate"]["advanced"] is True
-    assert {"ending_pot", "depletion"} <= retirement_results
+    assert all(retirement_fields[field]["advanced"] is True for field in (
+        "target_income", "retirement_years", "return_rate", "stress_return_rate",
+        "annual_fee", "inflation_rate"
+    ))
+    assert {"ending_pot", "depletion", "required_withdrawal_rate", "fees_paid",
+            "stress_ending_pot", "stress_depletion"} <= retirement_results
 
     js = (Path(__file__).parents[1] / "compound" / "site" / "static" / "tools.js").read_text()
-    assert "(1+v.return_rate/100)/(1+v.inflation_rate/100)-1" in js
-    assert "(1+v.return_rate/100)*(1-v.annual_fee/100)-1" in js
-    assert "withdrawal*=1+v.inflation_rate/100" in js
+    assert "const otherIncome=advanced?Math.max(0,v.ongoing_income):0" in js
+    assert "const fee=advanced?Math.max(0,v.annual_fee/100):0" in js
+    assert "stressReturn=advanced?v.stress_return_rate:2" in js
+    assert "annualAvc=advanced?Math.max(0,v.annual_avc):0" in js
+
+
+def test_myfuturefund_and_investment_fee_engines_match_advanced_outputs():
+    content_dir = Path(__file__).parents[1] / "content"
+    tools = {tool["slug"]: tool for tool in load_tools(content_dir)}
+
+    mff = tools["myfuturefund-calculator"]
+    mff_fields = {field["id"]: field for field in mff["fields"]}
+    mff_results = {result["id"] for result in mff["results"]}
+    assert mff_fields["employment_status"]["type"] == "select"
+    assert mff_fields["assume_opt_in"]["advanced"] is True
+    assert {"external_2026", "employer_total", "state_total", "projected_real",
+            "investment_growth"} <= mff_results
+
+    fees = tools["investment-fee-calculator"]
+    fee_fields = {field["id"]: field for field in fees["fields"]}
+    fee_results = {result["id"] for result in fees["results"]}
+    assert all(fee_fields[field]["advanced"] is True for field in (
+        "fixed_low", "fixed_high", "contribution_charge_low",
+        "contribution_charge_high", "inflation_rate"
+    ))
+    assert {"low_fees_paid", "high_fees_paid", "real_fee_gap"} <= fee_results
+
+    js = (Path(__file__).parents[1] / "compound" / "site" / "static" / "tools.js").read_text()
+    assert "const participating=autoEligible||(advanced&&optInEligible&&Boolean(v.assume_opt_in));" in js
+    assert "external_2026:money(er2026+sr2026)" in js
+    assert "contributionCharge=advanced?Math.max(0,contributionChargePct)/100:0" in js
+    assert "real_fee_gap:" in js
 
 
 def test_savings_returns_use_effective_annual_compounding():
     js = (Path(__file__).parents[1] / "compound" / "site" / "static" / "tools.js").read_text()
     assert "Math.pow(Math.max(.000001,1+annualRate/100),1/12)-1" in js
     assert "Math.pow(Math.max(.000001,1+v.rate/100),1/12)-1" in js
-    assert "((1+gross)*(1-v.fee_low/100)-1)*100" in js
-    assert "((1+gross)*(1-v.fee_high/100)-1)*100" in js
+    assert "feeMonthFactor=Math.pow(Math.max(.000001,1-pctFee),1/12)" in js
+    assert "((1+gross)*(1-Math.max(0,v.fee_low)/100)-1)*100" in js
+    assert "((1+gross)*(1-Math.max(0,v.fee_high)/100)-1)*100" in js
