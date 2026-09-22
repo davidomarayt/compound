@@ -18,6 +18,8 @@ SEAI's 2026 domestic grant is €700 per kWp up to 2 kWp and €200 per addition
 
 ## What can change the answer
 
+If you have an **EV**, daytime solar charging can increase self-consumption. If you also have a battery, **night**-rate charging can create a separate arbitrage opportunity, but the price spread must be large enough to overcome round-trip efficiency losses and the battery's capital cost.
+
 Roof orientation, shading, local generation, household demand, daytime usage, export price and future electricity prices all affect value. A battery can increase self-consumption but adds capital cost and efficiency losses.
 
 ## Common mistakes to avoid
