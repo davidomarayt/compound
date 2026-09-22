@@ -35,6 +35,8 @@ For a participating employee in 2026, the published contribution structure is:
 
 The result therefore separates what leaves the employee's pay from the additional employer and State amounts.
 
+## Worked example
+
 If €50,000 of annual pay is modelled, that is €750 from the employee, €750 from the employer and €250 from the State in 2026, before any investment return.
 
 The **Employer + State added** result is useful because it shows the amount entering the account from outside the employee contribution.
