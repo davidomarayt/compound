@@ -180,6 +180,25 @@ def render_markdown(text: str) -> str:
     return markdown.markdown(text, extensions=["extra", "sane_lists", "smarty"], output_format="html5")
 
 
+def render_tool_guide(text: str) -> tuple[str, list[dict]]:
+    """Render calculator guidance with stable H2 anchors for a compact on-page contents nav."""
+    html = render_markdown(text)
+    toc: list[dict] = []
+    used: dict[str, int] = {}
+
+    def anchor_heading(match: re.Match) -> str:
+        heading_html = match.group(1)
+        title = html_unescape(re.sub(r"<[^>]+>", "", heading_html)).strip()
+        base = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-") or "section"
+        used[base] = used.get(base, 0) + 1
+        ident = base if used[base] == 1 else f"{base}-{used[base]}"
+        toc.append({"id": ident, "title": title})
+        return f'<h2 id="{ident}">{heading_html}</h2>'
+
+    html = re.sub(r"<h2>(.*?)</h2>", anchor_heading, html, flags=re.DOTALL)
+    return html, toc
+
+
 # --- charts: single-series inline SVG built only from verified figures ---------------------
 CHART_W = 640
 CHART_PLACEHOLDER = re.compile(r"<p>\s*\[chart:(\d+)\]\s*</p>|\[chart:(\d+)\]")
@@ -402,7 +421,7 @@ def load_tools(content_dir: Path) -> list[dict]:
         guide_path = content_dir / "tool-guides" / f"{slug}.md"
         if guide_path.is_file():
             tool["guide"] = guide_path.read_text(encoding="utf-8")
-        tool["guide_html"] = render_markdown(str(tool.get("guide") or ""))
+        tool["guide_html"], tool["guide_toc"] = render_tool_guide(str(tool.get("guide") or ""))
         tool["fields"] = list(tool.get("fields") or [])
         tool["results"] = list(tool.get("results") or [])
         tool["sources"] = list(tool.get("sources") or [])
