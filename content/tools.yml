@@ -440,7 +440,7 @@ tools:
     category: Loans & Debt
     formula: debt_repayment
     summary: Compare debt avalanche and debt snowball strategies across multiple loans and cards, including payoff time, total interest and payoff order.
-    meta_description: Debt repayment calculator Ireland. Compare debt avalanche vs snowball, model multiple debts and extra monthly repayments, and estimate payoff time and total interest.
+    meta_description: Debt repayment calculator Ireland. Compare avalanche vs snowball, model multiple debts and extra repayments, and estimate payoff time and interest.
     updated: 2026-09-22
     extra_default: 200
     sample_debts:
@@ -822,7 +822,7 @@ tools:
     category: Pensions & Investing
     formula: regular_savings
     summary: Project a regular saving or investment plan, then show the effect of contribution increases, annual fees and inflation.
-    meta_description: Regular savings calculator Ireland. Project a future balance from starting savings and monthly contributions, with optional fees, contribution growth and inflation.
+    meta_description: Regular savings calculator Ireland. Project savings from a starting balance and monthly contributions, with optional fees, contribution growth and inflation.
     updated: 2026-09-22
     basic_note: "Basic mode keeps the monthly contribution constant and treats the annual return as the return received by the account or investment."
     advanced_note: "Advanced mode can increase contributions each year, apply an annual percentage fee and translate the final balance into today's purchasing power."
@@ -1661,7 +1661,7 @@ tools:
     category: Tax & Take-Home Pay
     formula: contractor_vs_salary
     summary: Compare an indicative single-person PAYE salary with self-employed contractor profit and take-home, then estimate the day rate that matches the employee net cash result.
-    meta_description: Contractor vs salary calculator Ireland 2026. Compare employee salary with contractor day-rate revenue, business costs, tax and an indicative break-even day rate.
+    meta_description: Contractor vs salary calculator Ireland 2026. Compare employee pay with contractor revenue, business costs, tax and an indicative break-even day rate.
     updated: 2026-09-22
     basic_note: "Basic mode uses €5,000 of annual contractor business costs, no contractor pension contribution and the 2026 single-person tax assumptions."
     advanced_note: "Advanced mode lets you replace the business-cost assumption and include a contractor pension contribution. The break-even rate still excludes the value of employee benefits."
@@ -1714,7 +1714,7 @@ tools:
     category: Pensions & Investing
     formula: investment_fees
     summary: Compare two fee structures and see how percentage fees, fixed annual charges and contribution charges can compound into different long-term outcomes.
-    meta_description: Investment fee calculator Ireland. Compare annual percentage fees and advanced fixed/contribution charges, including cumulative fees and inflation-adjusted balance gap.
+    meta_description: Investment fee calculator Ireland. Compare percentage, fixed and contribution fees and see their cumulative effect on long-term investment growth.
     updated: 2026-09-22
     basic_note: "Basic mode isolates the effect of two annual percentage fees while holding the before-fee return and contributions identical."
     advanced_note: "Advanced mode can add a fixed annual charge and a charge on new monthly contributions to each option, then expresses the ending gap in today's money."
@@ -1752,7 +1752,7 @@ tools:
     category: Pensions & Investing
     formula: fire_number
     summary: Build a financial-independence target from spending, a chosen withdrawal rate and a today’s-money accumulation path, then stress-test fees, other income and target sensitivity.
-    meta_description: FIRE number calculator Ireland. Estimate a financial-independence target, years to target and withdrawal-rate sensitivity with inflation, fees and contribution growth.
+    meta_description: FIRE number calculator Ireland. Estimate your financial-independence target, years to reach it and withdrawal-rate sensitivity under different assumptions.
     updated: 2026-09-22
     basic_note: "Basic mode treats spending, current assets and annual contributions in today’s money, assumes 2% inflation and no explicit annual investment fee."
     advanced_note: "Advanced mode can subtract ongoing income available from the target date, add a separate capital reserve, model annual fees and grow contributions in real terms."
@@ -1838,7 +1838,7 @@ tools:
     category: Pensions & Investing
     formula: pension_projection
     summary: Project a pension pot from current savings and contributions, then test contribution growth, annual AVCs, fees, inflation and a lower-return scenario.
-    meta_description: Pension projection calculator Ireland. Project a pension pot with employee and employer contributions, annual AVCs, fees, inflation and a lower-return stress scenario.
+    meta_description: Pension projection calculator Ireland. Project a pension pot with employee and employer contributions, AVCs, fees, inflation and a lower-return scenario.
     updated: 2026-09-22
     basic_note: "Basic mode uses the contribution figures entered plus a 6% gross return, 0.75% annual fee, level monthly contributions and 2% inflation."
     advanced_note: "Advanced mode lets contributions rise annually, adds an annual AVC, changes fees and inflation, and compares the baseline with a lower-return stress scenario."
@@ -1973,7 +1973,7 @@ tools:
     category: Mortgages & Home Buying
     formula: house_buying_costs
     summary: Build a completion-cash budget from your deposit, current residential Stamp Duty and editable professional, moving and setup costs.
-    meta_description: House buying costs calculator Ireland. Estimate deposit, Stamp Duty, legal, survey, valuation, moving and other upfront costs, then compare the total with cash available.
+    meta_description: House buying costs calculator Ireland. Estimate deposit, Stamp Duty, legal, survey, valuation, moving and other upfront costs against your available cash.
     updated: 2026-09-22
     basic_note: "Basic mode totals the deposit, current standard residential Stamp Duty and the editable professional/moving budgets below."
     advanced_note: "Advanced mode adds insurance/setup, furnishing, immediate works, a reserve you want to keep after closing and a cash-available check."
@@ -2479,7 +2479,7 @@ tools:
     category: Home Energy
     formula: retrofit_planner
     summary: Combine upgrade quotes, current One Stop Shop grant values and an editable energy-saving assumption into one retrofit budget and payback plan.
-    meta_description: Whole-house retrofit planner Ireland. Combine insulation, windows, heat pump, solar and other upgrades with current SEAI One Stop Shop grants and payback estimates.
+    meta_description: Whole-house retrofit planner Ireland. Combine upgrade costs with current SEAI One Stop Shop grants and estimate energy savings, net cost and payback.
     updated: 2026-09-22
     basic_note: "Basic mode applies the published base One Stop Shop grant amounts for the selected measures where you choose to model OSS eligibility."
     advanced_note: "Advanced mode can add the current conditional heat-pump supports and OSS assessment/project-management grants only when you explicitly select them. These toggles are modelling choices, not an eligibility determination."
@@ -2932,7 +2932,7 @@ tools:
     category: Health
     formula: nutrition_needs
     summary: Estimate resting energy, activity-adjusted maintenance needs, protein and an evidence-grounded macro illustration in one calculator.
-    meta_description: Nutrition needs calculator Ireland using Mifflin-St Jeor, EFSA activity levels and protein reference values. Estimate resting energy, maintenance, protein and macros.
+    meta_description: Nutrition needs calculator Ireland. Estimate resting energy, maintenance calories, protein and macros using established equations and reference values.
     updated: 2026-09-22
     basic_note: "Basic mode estimates resting energy, activity-adjusted maintenance energy and the EFSA adult protein reference from a small set of inputs."
     advanced_note: "Advanced mode adds an illustrative ±10% energy scenario and a resistance-training protein evidence point, then shows how the macro arithmetic changes."
