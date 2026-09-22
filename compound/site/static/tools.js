@@ -187,8 +187,8 @@
         return {type:'bar',title:'Basic versus locally adjusted LPT',caption:'The local adjustment is applied to the basic amount.',labels:['Basic LPT','After local adjustment'],series:[{label:'Annual LPT',values:[base,total]}]};
       }
       case 'loan': {
-        const months=Math.round(v.years*12), p=monthlyPayment(v.amount,v.rate,months), s=amortisationSeries(v.amount,v.rate,months,p);
-        return {type:'line',title:'Loan balance over time',caption:'Scheduled balance under the entered fixed-rate assumptions.',labels:s.labels,series:[{label:'Loan balance',values:s.values}]};
+        const months=Math.round(v.years*12), p=monthlyPayment(v.amount,v.rate,months), series=amortisationSeries(v.amount,v.rate,months,p);
+        return {type:'line',title:'Baseline loan balance over time',caption:Boolean(v.__advanced)&&((v.extra_monthly||0)>0||(v.lump_sum||0)>0)?'Shows the original scheduled balance before the optional overpayment scenario, so you can compare it with the shorter payoff result above.':'Scheduled balance under the entered fixed-rate assumptions.',labels:series.labels,series:[{label:'Loan balance',values:series.values}]};
       }
       case 'savings_goal': {
         const r=v.rate/100/12, labels=['Start'], vals=[v.current], target=[v.target]; let bal=v.current;
@@ -221,12 +221,14 @@
         return {type:'bar',title:'Emergency-fund position',caption:'Current reserve compared with the target and remaining gap.',labels:['Current','Target','Gap'],series:[{label:'Amount',values:[v.current,target,Math.max(0,target-v.current)]}]};
       }
       case 'ev': {
-        const battery=v.distance*v.efficiency/100, wall=battery/(1-v.loss/100);
-        return {type:'bar',currency:false,title:'Battery energy versus grid energy',caption:'Charging losses mean the grid supplies more energy than reaches the battery.',labels:['Battery','From grid'],series:[{label:'kWh',values:[battery,wall]}]};
+        const battery=v.distance*v.efficiency/100, wall=battery/Math.max(.01,1-v.loss/100);
+        return {type:'bar',currency:false,title:'Battery energy versus grid energy',caption:'Charging losses mean the grid supplies more energy than reaches the battery. Advanced charging-location assumptions change cost, not the kWh needed for this distance.',labels:['Battery','From grid'],series:[{label:'kWh',values:[battery,wall]}]};
       }
       case 'electricity': {
-        const monthly=v.watts/1000*v.hours*v.days*v.price, labels=Array.from({length:12},(_,i)=>'M'+(i+1)), vals=labels.map((_,i)=>monthly*(i+1));
-        return {type:'line',title:'Cumulative running cost over a year',caption:'Assumes the same monthly usage pattern continues for 12 months.',labels,series:[{label:'Cumulative cost',values:vals}]};
+        const advanced=Boolean(v.__advanced), duty=advanced?Math.max(0,Math.min(100,v.duty_cycle))/100:1, offpeak=advanced?Math.max(0,Math.min(100,v.offpeak_share))/100:0;
+        const blended=Math.max(0,v.price)*(1-offpeak)+(advanced?Math.max(0,v.offpeak_rate):Math.max(0,v.price))*offpeak;
+        const monthly=Math.max(0,v.watts)/1000*Math.max(0,v.hours)*Math.max(0,v.days)*duty*blended, labels=Array.from({length:12},(_,i)=>'M'+(i+1)), vals=labels.map((_,i)=>monthly*(i+1));
+        return {type:'line',title:'Cumulative running cost over a year',caption:'Assumes the same monthly usage pattern, duty cycle and tariff split continue for 12 months.',labels,series:[{label:'Cumulative cost',values:vals}]};
       }
       case 'salary_hourly': {
         const base=Math.max(1,v.hours), hours=[Math.max(20,base-5),base,base+5], vals=hours.map(h=>v.salary/(Math.max(1,v.weeks)*h));
@@ -330,8 +332,9 @@
       }
       case 'loan': {
         const n=Math.round(v.years*12), p=monthlyPayment(v.amount,v.rate,n), total=p*n;
-        items.push('Modelled interest is about '+pct(v.amount>0?(total-v.amount)/v.amount*100:0)+' of the amount borrowed over the full term.');
-        items.push('A longer term normally lowers the monthly payment but increases total interest.');
+        items.push('Modelled scheduled interest is about '+pct(v.amount>0?(total-v.amount)/v.amount*100:0)+' of the amount borrowed over the full term.');
+        if(Boolean(v.__advanced)&&((v.extra_monthly||0)>0||(v.lump_sum||0)>0)) items.push('The Advanced overpayment scenario assumes the lender allows those extra repayments on the timing entered; check the agreement for charges or limits.');
+        else items.push('A longer term normally lowers the monthly payment but increases total interest.');
         break;
       }
       case 'savings_goal':
@@ -385,19 +388,22 @@
       case 'fuel': {
         const distance=v.distance*v.trips, cost=distance*v.consumption/100*v.price;
         if(distance>0) items.push('Fuel alone costs about '+money(cost/distance)+' per kilometre under these assumptions.');
+        if(Boolean(v.__advanced)&&v.annual_distance>0) items.push('The annual-distance scenario uses the same consumption and pump price as the trip calculation.');
         items.push('Depreciation, finance, insurance, tax and servicing are outside this fuel-only comparison.');
         break;
       }
       case 'ev': {
-        const battery=v.distance*v.efficiency/100, wall=battery/(1-v.loss/100);
+        const battery=v.distance*v.efficiency/100, wall=battery/Math.max(.01,1-v.loss/100);
         items.push('Charging losses add about '+num(Math.max(0,wall-battery))+' kWh of grid demand over the entered distance.');
-        items.push('Use a blended rate if some charging happens on more expensive public chargers.');
+        if(Boolean(v.__advanced)) items.push('Advanced mode weights the home and public charging prices by the charging-location split you entered.');
+        else items.push('Use Advanced mode if some charging happens on more expensive public chargers.');
         break;
       }
       case 'electricity': {
-        const kwh=v.watts/1000*v.hours*v.days;
+        const duty=Boolean(v.__advanced)?Math.max(0,Math.min(100,v.duty_cycle))/100:1, kwh=v.watts/1000*v.hours*v.days*duty;
         items.push('The entered usage works out at about '+num(kwh/Math.max(1,v.days))+' kWh on each day of use.');
-        items.push('Cycling appliances can consume less than their nameplate wattage suggests.');
+        if(Boolean(v.__advanced)&&v.duty_cycle<100) items.push('The Advanced duty-cycle assumption reduces nameplate power to reflect time spent cycling off or running below full load.');
+        else items.push('Cycling appliances can consume less than their nameplate wattage suggests.');
         break;
       }
       case 'take_home_2026': {
@@ -524,8 +530,8 @@
         items.push('Maximum self-consumption is not automatically maximum financial value when export and EV rates differ.');
         break;
       case 'retrofit_planner': {
-        const costs=(v.attic?v.attic_cost:0)+(v.external_wall?v.wall_cost:0)+(v.windows?v.windows_cost:0)+(v.heat_pump?v.heat_pump_cost:0)+(v.solar?v.solar_cost:0)+(v.doors?v.doors_cost:0)+(v.ventilation?v.ventilation_cost:0)+(v.airtightness?v.airtightness_cost:0)+v.other_cost;
         items.push('The entered energy-saving assumption is '+pct(v.saving_pct)+' of the current annual energy bill.');
+        if(Boolean(v.__advanced)&&v.heat_pump&&(v.central_heating_upgrade||v.renewable_heat_bonus)) items.push('Advanced mode is including only the conditional 2026 heat-pump grants you explicitly selected; final SEAI eligibility still needs to be confirmed.');
         items.push('Simple payback does not capture comfort, ventilation, building durability or financing.');
         break;
       }
@@ -705,8 +711,27 @@
       };
     },
     loan(v){
-      const n=Math.round(v.years*12), p=monthlyPayment(v.amount,v.rate,n), total=p*n;
-      return {monthly:money(p),interest:money(total-v.amount),total:money(total)};
+      const advanced=Boolean(v.__advanced), amount=Math.max(0,v.amount), n=Math.max(1,Math.round(v.years*12)), p=monthlyPayment(amount,v.rate,n), total=p*n, standardInterest=Math.max(0,total-amount);
+      const fee=advanced?Math.max(0,v.upfront_fee):0, extra=advanced?Math.max(0,v.extra_monthly):0;
+      const extraStart=advanced?Math.max(1,Math.round(v.extra_start_month)):Infinity;
+      const lump=advanced?Math.max(0,v.lump_sum):0, lumpMonth=advanced?Math.max(1,Math.round(v.lump_sum_month)):Infinity;
+      const r=Math.max(0,v.rate)/100/12;
+      let bal=amount, scenarioInterest=0, scenarioPaid=0, months=0;
+      while(bal>0.005 && months<1200){
+        months++;
+        const interest=bal*r; scenarioInterest+=interest; bal+=interest;
+        let due=p+(months>=extraStart?extra:0)+(months===lumpMonth?lump:0);
+        if(!Number.isFinite(due)||due<=0) break;
+        const payment=Math.min(bal,due); bal=Math.max(0,bal-payment); scenarioPaid+=payment;
+      }
+      const saved=Math.max(0,standardInterest-scenarioInterest);
+      return {
+        monthly:money(p),interest:money(standardInterest),total:money(total),
+        payoff_time:advanced?duration(months):duration(n),
+        scenario_interest:money(scenarioInterest),
+        interest_saved:money(saved),
+        scenario_total:money(scenarioPaid+fee)
+      };
     },
     savings_goal(v){
       const advanced=Boolean(v.__advanced), start=Math.max(0,v.current), initialTarget=Math.max(0,v.target);
@@ -895,16 +920,39 @@
       return {monthly:money(monthly),weekly:money(weekly),daily:money(daily),hourly:money(hourly),annual_hours:num(annualHours)+' hours'};
     },
     fuel(v){
-      const distance=v.distance*v.trips, litres=distance*v.consumption/100, cost=litres*v.price, per100=v.consumption*v.price;
-      return {litres:num(litres)+' L',cost:money(cost),per100:money(per100)};
+      const distance=Math.max(0,v.distance)*Math.max(0,v.trips), consumption=Math.max(0,v.consumption), price=Math.max(0,v.price);
+      const litres=distance*consumption/100, cost=litres*price, per100=consumption*price;
+      const annualDistance=Boolean(v.__advanced)?Math.max(0,v.annual_distance):0;
+      const annualLitres=annualDistance*consumption/100, annualCost=annualLitres*price;
+      return {
+        litres:num(litres)+' L',cost:money(cost),per100:money(per100),cost_per_km:money(distance>0?cost/distance:0),
+        annual_litres:num(annualLitres)+' L',annual_cost:money(annualCost)
+      };
     },
     ev(v){
-      const battery=v.distance*v.efficiency/100, wall=battery/(1-v.loss/100), cost=wall*v.price, per100=(v.efficiency/(1-v.loss/100))*v.price;
-      return {battery_kwh:num(battery)+' kWh',wall_kwh:num(wall)+' kWh',cost:money(cost),per100:money(per100)};
+      const advanced=Boolean(v.__advanced), distance=Math.max(0,v.distance), efficiency=Math.max(0,v.efficiency);
+      const chargeEff=Math.max(.01,1-Math.max(0,Math.min(50,v.loss))/100);
+      const homeRate=Math.max(0,v.price), homeShare=advanced?Math.max(0,Math.min(100,v.home_share))/100:1;
+      const publicRate=advanced?Math.max(0,v.public_price):homeRate, blended=homeRate*homeShare+publicRate*(1-homeShare);
+      const battery=distance*efficiency/100, wall=battery/chargeEff, cost=wall*blended, per100=efficiency/chargeEff*blended;
+      const annualDistance=advanced?Math.max(0,v.annual_distance):0, annualBattery=annualDistance*efficiency/100, annualWall=annualBattery/chargeEff, annualCost=annualWall*blended;
+      const iceCost=advanced?annualDistance*Math.max(0,v.ice_consumption)/100*Math.max(0,v.fuel_price):0, saving=iceCost-annualCost;
+      return {
+        battery_kwh:num(battery)+' kWh',wall_kwh:num(wall)+' kWh',cost:money(cost),per100:money(per100),
+        blended_rate:money(blended)+'/kWh',annual_wall_kwh:num(annualWall)+' kWh',annual_cost:money(annualCost),
+        ice_annual_cost:money(iceCost),annual_saving_vs_ice:(saving>=0?'+':'-')+money(Math.abs(saving))
+      };
     },
     electricity(v){
-      const kwh=v.watts/1000*v.hours*v.days, monthly=kwh*v.price;
-      return {kwh:num(kwh)+' kWh',monthly:money(monthly),annual:money(monthly*12)};
+      const advanced=Boolean(v.__advanced), duty=advanced?Math.max(0,Math.min(100,v.duty_cycle))/100:1;
+      const kwh=Math.max(0,v.watts)/1000*Math.max(0,v.hours)*Math.max(0,v.days)*duty;
+      const offpeak=advanced?Math.max(0,Math.min(100,v.offpeak_share))/100:0;
+      const dayRate=Math.max(0,v.price), nightRate=advanced?Math.max(0,v.offpeak_rate):dayRate, blended=dayRate*(1-offpeak)+nightRate*offpeak;
+      const monthly=kwh*blended;
+      return {
+        kwh:num(kwh)+' kWh',monthly:money(monthly),annual:money(monthly*12),
+        annual_kwh:num(kwh*12)+' kWh',blended_rate:money(blended)+'/kWh'
+      };
     },
     take_home_2026(v){
       const reduced=Boolean(v.__advanced)&&v.usc_reduced==='yes', pension=Math.max(0,v.salary*v.pension_pct/100), net=employeeNet2026(v.salary,pension,v.band,v.other_credits,reduced);
@@ -1354,33 +1402,47 @@
       };
     },
     retrofit_planner(v){
+      const advanced=Boolean(v.__advanced);
       const costs={
         attic:v.attic?v.attic_cost:0,wall:v.external_wall?v.wall_cost:0,windows:v.windows?v.windows_cost:0,
         heat:v.heat_pump?v.heat_pump_cost:0,solar:v.solar?v.solar_cost:0,doors:v.doors?v.doors_cost:0,
         ventilation:v.ventilation?v.ventilation_cost:0,airtight:v.airtightness?v.airtightness_cost:0,other:v.other_cost
       };
-      const gross=Object.values(costs).reduce((a,b)=>a+b,0);
-      let grants=0;
+      const gross=Object.values(costs).reduce((a,b)=>a+Math.max(0,b),0);
+      let baseGrants=0, conditionalHeatGrants=0, serviceGrants=0;
       if(v.oss_eligible){
         const type=v.home_type;
         const atticStandard={detached:2000,semi:1500,mid:1400,apartment:1100};
         const atticFtb={detached:2500,semi:1900,mid:1800,apartment:1400};
         const wallGrant={detached:8000,semi:6000,mid:3500,apartment:3000};
         const windowGrant={detached:4000,semi:3000,mid:1800,apartment:1500};
-        if(v.attic) grants+=Math.min(v.attic_cost,(v.first_time_buyer?atticFtb:atticStandard)[type]||0);
-        if(v.external_wall) grants+=Math.min(v.wall_cost,wallGrant[type]||0);
-        if(v.windows) grants+=Math.min(v.windows_cost,windowGrant[type]||0);
-        if(v.heat_pump) grants+=Math.min(v.heat_pump_cost,type==='apartment'?4500:6500);
-        if(v.solar) grants+=Math.min(v.solar_cost,Math.min(1800,Math.min(v.solar_kwp,2)*700+Math.max(0,Math.min(v.solar_kwp-2,2))*200));
-        if(v.doors) grants+=Math.min(v.doors_cost,Math.min(2,Math.max(0,v.door_count))*800);
-        if(v.ventilation) grants+=Math.min(v.ventilation_cost,1500);
-        if(v.airtightness) grants+=Math.min(v.airtightness_cost,1000);
+        const pmGrant={detached:2000,semi:1600,mid:1200,apartment:800};
+        if(v.attic) baseGrants+=Math.min(Math.max(0,v.attic_cost),(v.first_time_buyer?atticFtb:atticStandard)[type]||0);
+        if(v.external_wall) baseGrants+=Math.min(Math.max(0,v.wall_cost),wallGrant[type]||0);
+        if(v.windows) baseGrants+=Math.min(Math.max(0,v.windows_cost),windowGrant[type]||0);
+        if(v.heat_pump){
+          const heatCost=Math.max(0,v.heat_pump_cost), baseHeat=Math.min(heatCost,type==='apartment'?4500:6500);
+          baseGrants+=baseHeat;
+          const central=advanced&&v.central_heating_upgrade?(type==='apartment'?1000:2000):0;
+          const bonus=advanced&&v.renewable_heat_bonus?4000:0;
+          conditionalHeatGrants=Math.min(Math.max(0,heatCost-baseHeat),central+bonus);
+        }
+        if(v.solar) baseGrants+=Math.min(Math.max(0,v.solar_cost),Math.min(1800,Math.min(Math.max(0,v.solar_kwp),2)*700+Math.max(0,Math.min(v.solar_kwp-2,2))*200));
+        if(v.doors) baseGrants+=Math.min(Math.max(0,v.doors_cost),Math.min(2,Math.max(0,v.door_count))*800);
+        if(v.ventilation) baseGrants+=Math.min(Math.max(0,v.ventilation_cost),1500);
+        if(v.airtightness) baseGrants+=Math.min(Math.max(0,v.airtightness_cost),1000);
+        if(advanced&&v.include_oss_services){
+          const available=350+(pmGrant[type]||0);
+          serviceGrants=Math.min(Math.max(0,v.other_cost),available);
+        }
       }
-      const net=Math.max(0,gross-grants), annual=v.annual_energy_bill*Math.max(0,Math.min(100,v.saving_pct))/100, payback=annual>0?net/annual:Infinity;
+      const grants=Math.min(gross,baseGrants+conditionalHeatGrants+serviceGrants);
+      const net=Math.max(0,gross-grants), annual=Math.max(0,v.annual_energy_bill)*Math.max(0,Math.min(100,v.saving_pct))/100, payback=annual>0?net/annual:Infinity;
       const labels=['Start'],vals=[-net];for(let y=1;y<=20;y++){labels.push('Year '+y);vals.push(-net+annual*y);}
       return {
         gross_cost:money(gross),grants:money(grants),net_cost:money(net),annual_saving:money(annual),payback:Number.isFinite(payback)?number.format(payback)+' years':'Not reached',
-        __chart:{type:'line',title:'Simple retrofit cash payback',caption:'Uses the energy-saving percentage entered and holds annual savings constant.',labels,series:[{label:'Cumulative cash position',values:vals}]}
+        base_grants:money(baseGrants),conditional_heat_grants:money(conditionalHeatGrants),oss_service_grants:money(serviceGrants),
+        __chart:{type:'line',title:'Simple retrofit cash payback',caption:'Uses the energy-saving percentage entered and holds annual savings constant. Grant amounts are capped by the entered cost of the relevant measures.',labels,series:[{label:'Cumulative cash position',values:vals}]}
       };
     },
     myfuturefund(v){
