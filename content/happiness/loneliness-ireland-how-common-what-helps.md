@@ -400,3 +400,9 @@ If you are having thoughts of harming yourself, contact your GP, Samaritans or e
 - **Irish Men's Sheds Association** at menssheds.ie for shared, practical activity ([HSE](https://www2.hse.ie/mental-health/life-situations-events/loneliness/older-people/)).
 
 Services and hours can change, so check the linked pages before relying on them.
+
+## Related Compound guides
+
+If the practical problem is **meeting people rather than understanding loneliness**, read [How to make friends as an adult in Ireland](/happiness/how-to-make-friends-as-an-adult-ireland/).
+
+For the wider evidence on relationships, exercise, meaning and life satisfaction, see [How to be happier: what the evidence actually says](/happiness/how-to-be-happier-evidence-ireland/).
