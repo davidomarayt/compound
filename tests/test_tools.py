@@ -471,6 +471,21 @@ def test_2026_statutory_calculator_parameters_are_regression_locked():
 
 
 
+def test_mortgage_overpayment_supports_timing_and_lump_sums():
+    content_dir = Path(__file__).parents[1] / "content"
+    tool = next(tool for tool in load_tools(content_dir) if tool["slug"] == "mortgage-overpayment-calculator")
+    fields = {field["id"]: field for field in tool["fields"]}
+    results = {result["id"] for result in tool["results"]}
+
+    assert fields["overpayment_start_month"]["advanced"] is True
+    assert fields["lump_sum"]["advanced"] is True
+    assert fields["lump_sum_month"]["advanced"] is True
+    assert fields["lump_sum_month"]["show_if"] == "lump_sum"
+    assert {"new_term", "standard_interest", "overpayment_interest", "interest_saved"} <= results
+    assert "one-off lump sum" in tool["guide"].lower()
+    assert "month by month" in tool["guide"].lower()
+
+
 def test_home_support_calculators_model_current_scheme_constraints():
     content_dir = Path(__file__).parents[1] / "content"
     tools = {tool["slug"]: tool for tool in load_tools(content_dir)}
