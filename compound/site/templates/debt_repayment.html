@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% block head_title %}{{ tool.title }} | Compound{% endblock %}
+{% block meta %}<meta name="description" content="{{ tool.meta_description }}">{% endblock %}
+{% block head %}
+<link rel="canonical" href="{{ site_url }}{{ tool.url }}">
+<meta property="og:type" content="website"><meta property="og:title" content="{{ tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/static/tools.css?v=20260922-networth2">
+<link rel="stylesheet" href="/static/debt-repayment.css?v=20260922-1">
+<script defer src="/static/debt-repayment.js?v=20260922-1"></script>
+<script type="application/ld+json">{{ tool_jsonld|safe }}</script>
+{% endblock %}
+{% block content %}
+<article class="tool-page debt-tool-page" data-debt-calculator>
+  <header class="tool-page-header debt-tool-header">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/tools/">Tools</a></nav>
+    <p class="eyebrow">{{ tool.category|upper }}</p>
+    <h1>{{ tool.title }}</h1>
+    <p class="tool-standfirst">{{ tool.summary }}</p>
+    <p class="tool-updated">Updated {{ tool.updated|long_date }}</p>
+  </header>
+
+  <aside class="debt-priority-note">
+    <div class="debt-priority-icon" aria-hidden="true">!</div>
+    <div>
+      <p class="eyebrow">BEFORE YOU START</p>
+      <h2>This is for ordinary consumer debts — not priority arrears.</h2>
+      <p>If you are behind on your mortgage or rent, essential utilities, Revenue debt, court obligations or other priority commitments, a generic snowball or avalanche ranking may be inappropriate. MABS provides free, confidential debt advice in Ireland.</p>
+      <a href="https://www.mabs.ie/" rel="noopener">Visit MABS ↗</a>
+    </div>
+  </aside>
+
+  <section class="debt-workspace">
+    <form class="debt-form" data-debt-form novalidate>
+      <div class="debt-form-intro">
+        <p class="eyebrow">YOUR DEBTS</p>
+        <h2>Build your repayment plan</h2>
+        <p>Add each unsecured debt you want to compare. Use the current balance, APR and the fixed monthly payment you intend to maintain.</p>
+      </div>
+
+      <div class="debt-budget-row">
+        <label for="debt-extra">Extra monthly payment above minimums</label>
+        <span class="tool-input-wrap"><span class="tool-affix">€</span><input id="debt-extra" name="extra_payment" type="number" inputmode="decimal" min="0" step="10" value="{{ tool.extra_default or 200 }}"></span>
+        <small>This amount is added to the minimum payments below and rolled forward as debts are cleared.</small>
+      </div>
+
+      <div class="debt-table" role="group" aria-label="Debts to compare">
+        <div class="debt-table-head" aria-hidden="true">
+          <span>Debt</span><span>Balance</span><span>APR</span><span>Monthly payment</span><span></span>
+        </div>
+        <div data-debt-rows></div>
+      </div>
+
+      <div class="debt-row-actions">
+        <button type="button" class="button button-light" data-add-debt>+ Add another debt</button>
+        <button type="button" class="button button-light" data-clear-debts>Clear example</button>
+      </div>
+      <p class="debt-form-hint">You can add up to 8 debts. Entries stay in your browser and are not sent to Compound.</p>
+      <p class="tool-error" data-debt-error role="status"></p>
+      <div class="tool-actions">
+        <button class="button button-dark" type="submit">Compare strategies</button>
+        <button class="button button-light" type="button" data-reset-example>Reset example</button>
+      </div>
+    </form>
+
+    <aside class="debt-summary-panel" aria-live="polite">
+      <p class="eyebrow">STARTING POSITION</p>
+      <h2>Your monthly debt budget</h2>
+      <div class="debt-summary-grid">
+        <div><span>Total debt</span><strong data-summary="balance">—</strong></div>
+        <div><span>Minimum payments</span><strong data-summary="minimums">—</strong></div>
+        <div><span>Extra payment</span><strong data-summary="extra">—</strong></div>
+        <div class="debt-summary-total"><span>Total monthly debt budget</span><strong data-summary="budget">—</strong></div>
+      </div>
+      <p class="debt-interest-warning" data-interest-warning hidden></p>
+    </aside>
+  </section>
+
+  <section class="debt-comparison" aria-labelledby="debt-comparison-title">
+    <header>
+      <p class="eyebrow">SIDE-BY-SIDE</p>
+      <h2 id="debt-comparison-title">Avalanche versus snowball</h2>
+      <p>Both scenarios use the same total monthly budget. The only difference is which debt receives the extra payment first.</p>
+    </header>
+
+    <div class="debt-strategy-grid">
+      <article class="debt-strategy-card debt-strategy-avalanche">
+        <div class="debt-strategy-title"><span class="debt-strategy-mark">A</span><div><p class="eyebrow">HIGHEST APR FIRST</p><h3>Debt avalanche</h3></div></div>
+        <div class="debt-metrics">
+          <div><span>Debt-free in</span><strong data-avalanche="duration">—</strong><small data-avalanche="date">—</small></div>
+          <div><span>Total interest</span><strong data-avalanche="interest">—</strong></div>
+          <div><span>Total paid</span><strong data-avalanche="paid">—</strong></div>
+          <div><span>First debt cleared</span><strong data-avalanche="first">—</strong><small data-avalanche="first_time">—</small></div>
+        </div>
+        <div class="debt-order"><span>Payoff order</span><ol data-avalanche-order></ol></div>
+      </article>
+
+      <article class="debt-strategy-card debt-strategy-snowball">
+        <div class="debt-strategy-title"><span class="debt-strategy-mark">S</span><div><p class="eyebrow">SMALLEST BALANCE FIRST</p><h3>Debt snowball</h3></div></div>
+        <div class="debt-metrics">
+          <div><span>Debt-free in</span><strong data-snowball="duration">—</strong><small data-snowball="date">—</small></div>
+          <div><span>Total interest</span><strong data-snowball="interest">—</strong></div>
+          <div><span>Total paid</span><strong data-snowball="paid">—</strong></div>
+          <div><span>First debt cleared</span><strong data-snowball="first">—</strong><small data-snowball="first_time">—</small></div>
+        </div>
+        <div class="debt-order"><span>Payoff order</span><ol data-snowball-order></ol></div>
+      </article>
+    </div>
+
+    <div class="debt-comparison-callout" data-comparison-callout>
+      Enter your debts above to compare the two strategies.
+    </div>
+  </section>
+
+  <section class="debt-chart-panel" data-debt-chart hidden>
+    <header>
+      <p class="eyebrow">SEE THE PATH</p>
+      <h2>How your total debt balance falls</h2>
+      <p>The lines use the same monthly budget and differ only in repayment order.</p>
+    </header>
+    <div class="debt-chart-scroll"><div class="debt-chart-canvas" data-debt-chart-canvas></div></div>
+    <div class="debt-chart-legend"><span><i class="debt-line-a"></i>Avalanche</span><span><i class="debt-line-s"></i>Snowball</span></div>
+  </section>
+
+  <section class="debt-method-strip">
+    <article><span>01</span><h3>Keep every minimum current</h3><p>The model maintains the fixed monthly payment entered for each active debt before directing spare budget elsewhere.</p></article>
+    <article><span>02</span><h3>Focus the extra</h3><p>Avalanche targets the highest APR; snowball targets the smallest remaining balance.</p></article>
+    <article><span>03</span><h3>Roll freed payments forward</h3><p>Once one balance is gone, its former payment stays inside the debt budget and accelerates the next target.</p></article>
+  </section>
+
+  <section class="tool-explainer">
+    <div class="tool-explainer-main">{{ tool.guide_html|safe }}</div>
+    <aside class="tool-source-box">
+      <p class="eyebrow">CHECK THE BASIS</p>
+      <h2>Method & sources</h2>
+      <p>The calculation runs locally in your browser. Compound does not receive the balances or repayments you enter.</p>
+      <ul>{% for source in tool.sources %}<li><a href="{{ source.url }}" rel="noopener">{{ source.title }} ↗</a></li>{% endfor %}</ul>
+      <p><a href="/disclaimer/">Important information disclaimer</a></p>
+    </aside>
+  </section>
+
+  {% include "_tool_reading.html" %}
+  <aside class="tool-more"><p class="eyebrow">MORE COMPOUND TOOLS</p><h2>Run another scenario.</h2><div class="tool-more-links">{% for other in related_tools %}<a href="{{ other.url }}">{{ other.title }} <span>→</span></a>{% endfor %}<a href="/tools/">Browse all tools <span>→</span></a></div></aside>
+</article>
+
+<script type="application/json" id="debt-example-data">{{ tool.sample_debts|tojson }}</script>
+{% endblock %}
