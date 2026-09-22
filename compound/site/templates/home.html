@@ -126,18 +126,20 @@
   {% endfor %}
 </section>
 
+{% if home_feature %}
 <section class="editorial-feature" aria-labelledby="feature-title">
-  <a class="editorial-feature-image" href="/live-to-100/">
-    <img src="/static/images/live-to-100-coast.webp" width="1200" height="720" alt="Three adults from different generations walking together on an Irish coastal path." loading="lazy">
+  <a class="editorial-feature-image" href="{{ home_feature.url }}">
+    {% if home_feature.image %}<img src="{{ home_feature.image }}" width="1200" height="720" alt="{{ home_feature.image_alt }}" loading="lazy">{% endif %}
   </a>
   <div class="editorial-feature-copy">
     <p class="eyebrow">THE COMPOUND SERIES</p>
     <span class="editorial-feature-number">01—04</span>
     <h2 id="feature-title">Live to 100.</h2>
-    <p>A longer life raises a bigger question: what would we want those years to hold? Explore the health, money, relationships and choices behind a 100-year life in Ireland.</p>
-    <a class="editorial-read" href="/live-to-100/">Explore the four-part series <span aria-hidden="true">→</span></a>
+    <p>{{ home_feature.description }}</p>
+    <a class="editorial-read" href="{{ home_feature.url }}">Explore the four-part series <span aria-hidden="true">→</span></a>
   </div>
 </section>
+{% endif %}
 
 <section class="editorial-principles">
   <div><p class="eyebrow">LESS NOISE. MORE UNDERSTANDING.</p><h2>Good information should help you decide.</h2></div>
