@@ -1,4 +1,5 @@
 from pathlib import Path
+import re
 import yaml
 
 from compound.site.build import load_articles, load_tools, linked_articles, tool_catalogue
