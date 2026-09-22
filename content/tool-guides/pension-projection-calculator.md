@@ -1,71 +1,174 @@
 ## What this calculator is for
 
-This calculator projects how an existing pension pot plus regular contributions could grow to retirement under an assumed annual return. It is an accumulation model, not a forecast of what your pension provider will deliver.
+This calculator projects how an existing pension pot and future contributions could grow to a selected retirement age.
 
-## How to read the result
+It is an accumulation model, not a provider forecast. The goal is to make the main drivers visible: time, employee contributions, employer contributions, additional personal contributions, fees, investment return and inflation.
 
-Compound now shows both the **future nominal pension pot** and the same ending pot expressed in **today's money** using the inflation assumption. The nominal figure is what the model projects in future euros; the today's-money figure is usually more useful when asking what that pot might actually buy.
+Basic mode keeps the assumptions deliberately simple. Advanced mode adds contribution growth, annual AVCs, an editable fee and a lower-return stress scenario.
 
-Separate the future pot into contributions and investment growth. Contributions and employer payments are under much more control than market returns. Test more than one return assumption and pay close attention to fees.
+## Basic projection
+
+Basic mode uses:
+
+- the current pension value entered;
+- the employee and employer monthly contributions entered;
+- 6% annual gross investment return;
+- 0.75% annual fund fee;
+- level monthly contributions;
+- 2% annual inflation.
+
+The result shows both the future nominal pot and its value in today's money.
+
+Those defaults are planning assumptions, not predictions.
+
+## Contributions deserve separate attention
+
+Long-term pension projections can become dominated by return assumptions because small percentage changes compound over decades.
+
+But return is not the only driver, and it is not the one most people directly control.
+
+The calculator therefore separates:
+
+- employee/personal contributions;
+- employer contributions;
+- investment growth.
+
+Advanced mode also shows the monthly employee and employer contribution reached in the final year when contribution growth is used.
+
+This makes it easier to see whether a stronger result came from a more ambitious savings plan or simply from assuming a higher market return.
+
+## Annual contribution growth
+
+Advanced mode can increase both the employee and employer monthly contributions by the selected percentage once per year.
+
+This can approximate a contribution rate that rises with salary, but it does not calculate salary or percentage-of-salary contributions directly.
+
+For example, a 3% annual contribution-growth assumption takes a €400 monthly employee contribution to roughly €538 after 10 annual increases.
+
+Use a realistic assumption. A contribution-growth rate that cannot be supported by future earnings will overstate the projection.
+
+## Annual AVC or personal contribution
+
+Advanced mode includes an additional annual employee/personal contribution.
+
+This can represent an AVC or another yearly top-up paid into the pension.
+
+The model adds it at the end of each projection year.
+
+Do not assume the entire amount automatically qualifies for Income Tax relief. Revenue applies age-related contribution limits and a €115,000 earnings ceiling to employee/personal pension relief.
+
+The dedicated [Pension Tax Relief Calculator](/pension-tax-relief-calculator/) is designed for that separate question.
+
+## Revenue's relief limits
+
+Revenue's current age-related employee/personal contribution limits are:
+
+- under 30: 15% of relevant earnings;
+- 30–39: 20%;
+- 40–49: 25%;
+- 50–54: 30%;
+- 55–59: 35%;
+- 60 or over: 40%.
+
+The maximum earnings taken into account for this calculation are €115,000 per year.
+
+Revenue also states that employer contributions are not counted against the employee's earnings threshold for this purpose.
+
+Those rules affect tax relief, not the mathematical growth of money already inside the pension. That is why this projection calculator and the tax-relief calculator are separate tools.
+
+## Fees compound too
+
+The annual fund fee is applied multiplicatively to the gross annual growth factor.
+
+In Advanced mode, Compound also runs a no-fee version of the same baseline scenario and shows the **fee drag** as the difference in ending balance.
+
+That number can be larger than the simple sum of annual fees because money removed by fees also loses future investment growth.
+
+Real pension products can have contribution charges, policy fees, adviser charges or other costs that are not represented by one annual percentage.
+
+## Baseline versus lower-return scenario
+
+Advanced mode lets you enter a lower-return scenario.
+
+Both paths use the same contributions, contribution growth, AVC and fee. Only the gross investment return changes.
+
+This is a useful sensitivity test because a projection that looks adequate only at one optimistic return assumption deserves more scrutiny.
+
+The lower-return result is not a prediction of a bad market and the baseline is not a prediction of a normal market. They are deterministic scenarios.
+
+## Nominal versus today's money
+
+The future nominal pension pot is the amount of future euros projected by the model.
+
+The today's-money figure discounts that balance by the compounded inflation assumption.
+
+If a pension pot is projected to be €600,000 in 30 years, it does not follow that it will buy what €600,000 buys today.
+
+The inflation-adjusted result is often the better figure for judging retirement purchasing power.
 
 ## Worked example
 
-A worker with €50,000 already saved, adding €500 a month for 25 years, will contribute another €150,000 before growth. If the future nominal pot reached €500,000 after 25 years, 2% annual inflation would make that equivalent to only about €305,000 in today's purchasing power. The exact ending pot can vary dramatically with contributions, market returns and fees.
+Suppose someone aged 35 has a €50,000 pension, contributes €400 per month and receives €300 per month from an employer.
 
-## Irish context
+Before any investment growth, 30 years of level future contributions would add €252,000.
 
-Irish pension contributions can qualify for Income Tax relief within Revenue's age-related percentage limits and the €115,000 earnings cap. Employer contributions and scheme rules differ. Pension funds also have access, tax and retirement-option rules that are not represented by a simple growth model.
+Investment returns can lift the result materially above that total, but fees reduce the amount retained.
 
-## What can change the answer
+If contributions increase over time or annual AVCs are added, more of the ending pot will come from actual contributions rather than the return assumption.
 
-Contribution rate, years to retirement, investment return and fees matter most. Increasing contributions earlier gives new money longer to compound. Inflation matters when translating a future nominal pot into today's spending power.
+That distinction is valuable because it separates a controllable saving decision from an uncertain market outcome.
+
+## Your provider's projection matters
+
+The Pensions Authority explains that pension projections depend on assumptions about future contributions, investment returns and other economic factors, and that actual benefits will only be known close to retirement.
+
+Modern occupational pension benefit statements can provide more scheme-specific estimates than a general public calculator because the provider knows the actual fund, charges and contribution structure.
+
+Use Compound to test scenarios and understand mechanics; use the scheme/provider statement for product-specific planning.
+
+## Retirement age and access
+
+The target retirement age in this calculator is simply the end of the accumulation projection.
+
+It does not determine whether a specific pension arrangement can legally be accessed at that age.
+
+Different occupational schemes, PRSAs and other arrangements can have different access conditions. Check the rules for the actual pension product.
 
 ## Common mistakes to avoid
 
-Do not judge retirement readiness from the pot alone. The income it supports depends on retirement duration, State Pension, other assets, tax and withdrawal strategy. Avoid using an optimistic return assumption as a substitute for contributions.
+Do not enter a return that is already net of the fee and then also enter the same fee separately.
+
+Do not treat the future nominal balance as today's purchasing power.
+
+Do not assume an annual AVC is fully tax-relievable without checking Revenue limits.
+
+Do not assume employer contributions will continue unchanged if your employment changes.
+
+Do not use one high-return scenario as the retirement plan. Compare a range.
+
+And do not judge retirement adequacy from the pot alone: State Pension, other assets, retirement duration, tax and withdrawal strategy all matter.
 
 ## Related Compound tools
 
-Use the [Pension Tax Relief Calculator](/pension-tax-relief-calculator/) for the tax-relievable contribution limit, [Retirement Income Calculator](/retirement-income-calculator/) for drawdown and [MyFutureFund Calculator](/myfuturefund-calculator/) if auto-enrolment applies.
-
-## Frequently asked questions
-
-### Does this guarantee my pension value?
-No.
-
-### Does it include employer contributions?
-Only if entered within the contribution assumptions.
-
-### Does it include tax relief?
-The projection models money entering the pot; use the dedicated tax-relief tool for the personal tax effect.
-
-### Should I use nominal or real return?
-Be consistent. If you model nominal returns, compare the result with future nominal spending or adjust separately for inflation.
+Use the [Pension Tax Relief Calculator](/pension-tax-relief-calculator/) to check the Revenue contribution-relief ceiling, the [Retirement Income Calculator](/retirement-income-calculator/) to model the spending phase, the [MyFutureFund Calculator](/myfuturefund-calculator/) for auto-enrolment and the [Investment Fee Calculator](/investment-fee-calculator/) for a dedicated cost comparison.
 
 ## Method and limitations
 
-Compound combines the gross annual return and annual fund fee multiplicatively:
+The engine calculates the number of complete years between the current age and target retirement age.
 
-**net annual growth factor = (1 + gross return) × (1 − annual fee)**
+For each scenario it combines the gross annual return and annual percentage fee into a net annual growth factor, converts that to an equivalent monthly rate and compounds the fund monthly.
 
-That net annual growth factor is converted to a monthly rate, and employee plus employer contributions are added each month. The nominal contribution total assumes the entered monthly contributions remain unchanged in cash terms.
+Employee and employer contributions are added each month. The Advanced annual AVC is added at the end of each projection year. Contribution growth is applied once per year for the following year.
 
-The today's-money result divides the final nominal pot by **(1 + inflation)^years**. It is therefore an inflation-adjusted illustration, not a forecast of future purchasing power.
+The baseline, lower-return and no-fee comparison all use the same contribution plan.
 
-The model does not simulate market volatility, contribution escalation, multiple fund charges, tax at retirement, changing employer contributions or pension-product rules.
+The today's-money result divides the final nominal baseline pot by the compounded inflation factor.
+
+The model does not simulate market volatility, sequence of returns, salary directly, changing employer policy, tax at retirement, pension-access rules or all possible product charges.
 
 ### Useful sources
 
-- [Revenue — Pension contribution tax relief limits](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx)
-- [CCPC — Pensions](https://www.ccpc.ie/consumers/money/pensions/)
-
-## Why the contribution rate usually matters more than guessing the perfect return
-
-Long-term pension projections often create false precision because a small change in the assumed return can produce a very large difference decades later. You cannot control markets, but you can control how much goes into the pension, when contributions start and whether contributions rise with income.
-
-For that reason, run a **contribution sensitivity test** as well as a return sensitivity test. Compare the same return with, for example, €300, €500 and €700 monthly contributions. Then compare each of those at conservative, middle and optimistic returns.
-
-This separates decisions you can make from outcomes you cannot guarantee.
-
-Also remember that a future €500,000 pension pot is a nominal amount. If retirement is decades away, use the [Inflation Calculator](/inflation-calculator/) to translate that figure into today's purchasing power before judging whether it looks adequate.
-
+- [Revenue — Tax relief limits on pension contributions](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx)
+- [Revenue — Tax relief on pension contributions](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/index.aspx)
+- [Pensions Authority — Statement of reasonable projection](https://pensionsauthority.ie/scheme-members-and-prsa-contributors/understanding-pensions/your_right_to_information/statement_of_reasonable_projection/)
+- [Pensions Authority — Pension calculator assumptions](https://pensionsauthority.ie/scheme-members-and-prsa-contributors/pension-calculator/assumptions/)
