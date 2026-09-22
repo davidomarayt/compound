@@ -93,6 +93,7 @@ TOOL_PRIMARY_RESULTS = {
     "childcare-return-to-work-calculator": "household_gain",
     "mortgage-switch-calculator": "lifetime_difference",
     "lifetime-cost-calculator": "lifetime_today_money",
+    "car-finance-calculator": "ownership_summary",
     "nutrition-needs-calculator": "maintenance",
     "pregnancy-due-date-calculator": "due_date",
     "alcohol-units-calories-cost-calculator": "standard_drinks",
