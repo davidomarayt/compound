@@ -2,6 +2,7 @@
 
 const assert = require('node:assert/strict');
 require('../compound/site/static/tools.js');
+require('../compound/site/static/debt-repayment.js');
 
 const {
   calculators,
@@ -654,5 +655,29 @@ assert.match(carFinanceDirect.hp_monthly, /^€/);
 assert.match(carFinanceDirect.pcp_monthly, /^€/);
 assert.match(carFinanceDirect.pcp_equity, /Switch to Advanced/);
 assert.match(carFinanceDirect.ownership_summary, /Loan: owned from day 1/);
+
+
+// Dedicated debt payoff engine: strategy target selection and payoff invariants.
+const {chooseTarget: chooseDebtTarget, simulate: simulateDebt} = globalThis.CompoundDebtTest;
+const debtChoice = [
+  {name:'High APR', balance:2000, apr:20, minimum:60, index:0},
+  {name:'Small balance', balance:500, apr:5, minimum:30, index:1}
+];
+assert.equal(chooseDebtTarget(debtChoice, 'avalanche').name, 'High APR');
+assert.equal(chooseDebtTarget(debtChoice, 'snowball').name, 'Small balance');
+
+const debtScenario = [
+  {name:'High APR', balance:4000, apr:19.9, minimum:120},
+  {name:'Personal loan', balance:3000, apr:8.5, minimum:100},
+  {name:'Small loan', balance:900, apr:5, minimum:50}
+];
+const debtAvalanche = simulateDebt(debtScenario, 150, 'avalanche');
+const debtSnowball = simulateDebt(debtScenario, 150, 'snowball');
+assert.equal(debtAvalanche.success, true);
+assert.equal(debtSnowball.success, true);
+assert.ok(debtAvalanche.interest <= debtSnowball.interest + 0.01);
+assert.equal(debtAvalanche.schedule[0], 7900);
+assert.ok(debtAvalanche.schedule.at(-1) <= 0.005);
+assert.equal(debtAvalanche.payoffOrder.length, 3);
 
 console.log('Calculator arithmetic regression checks passed.');
