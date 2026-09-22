@@ -8,6 +8,8 @@ Payback is not a guarantee. The result is only as strong as the assumptions for 
 
 ## Worked example
 
+The calculator's default household-demand assumption is **4,200 kWh a year**. Replace it with your own annual usage from bills where possible.
+
 A 4 kWp system qualifies for up to €1,800 under the current SEAI domestic grant structure if the property and applicant meet the conditions. If the post-grant system cost is €7,000 and annual value is €1,000, simple payback is about seven years before degradation, maintenance or tariff changes.
 
 ## Irish context
