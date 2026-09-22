@@ -387,8 +387,9 @@
         items.push('A robust decision should survive more than one plausible assumption set.');
         break;
       case 'mortgage_affordability': {
-        const lti=v.income*(v.buyer_type==='ftb'?4:3.5), capacity=Math.max(0,v.income/12*v.max_payment_pct/100-v.other_debt), r=v.rate/100/12,n=v.term*12,paymentBased=r===0?capacity*n:capacity*(1-Math.pow(1+r,-n))/r;
-        items.push((lti<=paymentBased?'The LTI ceiling':'Your chosen payment limit')+' is the tighter mortgage constraint in this scenario.');
+        const lti=v.income*(v.buyer_type==='ftb'?4:3.5), capacity=Math.max(0,v.income/12*v.max_payment_pct/100-v.other_debt), r=v.rate/100/12,n=v.term*12,paymentBased=r===0?capacity*n:capacity*(1-Math.pow(1+r,-n))/r,depositBased=Math.max(0,v.deposit)*9;
+        const constraints=[['The LTI ceiling',lti],['Your chosen payment limit',paymentBased],['Your deposit at 90% LTV',depositBased]].sort((a,b)=>a[1]-b[1]);
+        items.push(constraints[0][0]+' is the tightest mortgage constraint in this scenario.');
         items.push('The '+pct(v.max_payment_pct)+' payment share is your modelling choice, not an official affordability rule.');
         break;
       }
@@ -748,10 +749,15 @@
       };
     },
     mortgage_affordability(v){
-      const lti=v.income*(v.buyer_type==='ftb'?4:3.5), capacity=Math.max(0,v.income/12*v.max_payment_pct/100-v.other_debt), r=v.rate/100/12, n=v.term*12, paymentBased=r===0?capacity*n:capacity*(1-Math.pow(1+r,-n))/r, mortgage=Math.max(0,Math.min(lti,paymentBased)), price=Math.min(mortgage+v.deposit,v.deposit>0?v.deposit/.10:mortgage);
+      const lti=v.income*(v.buyer_type==='ftb'?4:3.5);
+      const capacity=Math.max(0,v.income/12*v.max_payment_pct/100-v.other_debt), r=v.rate/100/12, n=v.term*12;
+      const paymentBased=r===0?capacity*n:capacity*(1-Math.pow(1+r,-n))/r;
+      const depositBased=Math.max(0,v.deposit)*9;
+      const mortgage=Math.max(0,Math.min(lti,paymentBased,depositBased));
+      const price=mortgage+Math.max(0,v.deposit);
       return {
-        lti_mortgage:money(lti),payment_capacity:money(capacity),payment_based_mortgage:money(paymentBased),indicative_mortgage:money(mortgage),indicative_price:money(Math.max(0,price)),
-        __chart:{type:'bar',title:'Which limit is binding?',caption:'The lower mortgage amount between the LTI ceiling and your chosen cash-flow limit drives this illustration.',labels:['LTI ceiling','Payment-based','Indicative'],series:[{label:'Mortgage amount',values:[lti,paymentBased,mortgage]}]}
+        lti_mortgage:money(lti),payment_capacity:money(capacity),payment_based_mortgage:money(paymentBased),deposit_based_mortgage:money(depositBased),indicative_mortgage:money(mortgage),indicative_price:money(price),
+        __chart:{type:'bar',title:'Which limit is binding?',caption:'The lowest mortgage amount across income, your chosen cash-flow limit and the standard 90% LTV deposit constraint drives this illustration.',labels:['LTI ceiling','Payment-based','Deposit-based','Indicative'],series:[{label:'Mortgage amount',values:[lti,paymentBased,depositBased,mortgage]}]}
       };
     },
     house_buying_costs(v){
