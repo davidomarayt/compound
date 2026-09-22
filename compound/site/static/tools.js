@@ -1172,6 +1172,7 @@
         renderToolChart(root,results.__chart || fallbackChart(root.dataset.calculator,values));
         renderInsights(root,buildInsights(root.dataset.calculator,values));
         renderScenarioSummary(values);
+        renderSavedComparison();
         if(window.gtag) window.gtag('event','tool_calculate',{tool_name:root.dataset.toolName});
       }catch(e){ if(showErrors) error.textContent='This combination could not be calculated. Check the values and try again.'; }
     };
@@ -1254,6 +1255,50 @@
         syncVisibility();run();
       },0));
     }
+    const saveScenarioButton=root.querySelector('[data-tool-save-scenario]');
+    const clearScenarioButton=root.querySelector('[data-tool-clear-scenario]');
+    const comparePanel=root.querySelector('[data-tool-compare-panel]');
+    const compareTable=root.querySelector('[data-tool-compare-table]');
+    let savedScenario=null;
+
+    const snapshotResults=()=>[...root.querySelectorAll('.tool-result')].map(card=>({
+      label:card.querySelector('span')?.textContent?.trim()||'Result',
+      value:card.querySelector('strong')?.textContent?.trim()||'—'
+    }));
+
+    const renderSavedComparison=()=>{
+      if(!comparePanel||!compareTable) return;
+      if(!savedScenario){comparePanel.hidden=true;compareTable.innerHTML='';return;}
+      const current=snapshotResults();
+      const byLabel=new Map(current.map(item=>[item.label,item.value]));
+      compareTable.innerHTML='';
+      const head=document.createElement('div'); head.className='tool-compare-row tool-compare-row-head';
+      ['Metric','Saved','Current'].forEach(label=>{const el=document.createElement('strong');el.textContent=label;head.appendChild(el);});
+      compareTable.appendChild(head);
+      savedScenario.results.forEach(item=>{
+        const row=document.createElement('div');row.className='tool-compare-row';
+        const metric=document.createElement('span');metric.textContent=item.label;
+        const saved=document.createElement('span');saved.textContent=item.value;
+        const currentValue=document.createElement('span');currentValue.textContent=byLabel.get(item.label)||'—';
+        row.append(metric,saved,currentValue);compareTable.appendChild(row);
+      });
+      comparePanel.hidden=false;
+    };
+
+    if(saveScenarioButton) saveScenarioButton.addEventListener('click',()=>{
+      savedScenario={results:snapshotResults()};
+      saveScenarioButton.textContent='Replace saved scenario';
+      renderSavedComparison();
+      if(actionStatus) actionStatus.textContent='Scenario saved on this page for comparison.';
+      if(window.gtag) window.gtag('event','tool_save_comparison',{tool_name:root.dataset.toolName});
+    });
+    if(clearScenarioButton) clearScenarioButton.addEventListener('click',()=>{
+      savedScenario=null;
+      if(saveScenarioButton) saveScenarioButton.textContent='Save for comparison';
+      renderSavedComparison();
+      if(actionStatus) actionStatus.textContent='Saved comparison cleared.';
+    });
+
     const shareButton=root.querySelector('[data-tool-share]'), copyResultsButton=root.querySelector('[data-tool-copy-results]'), printButton=root.querySelector('[data-tool-print]'), actionStatus=root.querySelector('[data-tool-action-status]');
     if(shareButton) shareButton.addEventListener('click',async()=>{
       const url=new URL(window.location.href); url.search=''; url.hash='';
