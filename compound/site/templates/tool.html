@@ -70,12 +70,20 @@
         <span>Scenario</span><div data-tool-scenario-chips></div>
       </div>
       <div class="tool-result-actions">
+        <button type="button" class="tool-text-action" data-tool-save-scenario>Save for comparison</button>
         <button type="button" class="tool-text-action" data-tool-share>Copy scenario link</button>
         <button type="button" class="tool-text-action" data-tool-copy-results>Copy results</button>
         <button type="button" class="tool-text-action" data-tool-print>Print / save</button>
         <span class="tool-action-status" data-tool-action-status role="status"></span>
-        <small class="tool-share-privacy">Shared scenarios are encoded in the link fragment and are not sent to Compound.</small>
+        <small class="tool-share-privacy">Saved comparisons stay on this page only. Shared scenarios are encoded in the link fragment and are not sent to Compound.</small>
       </div>
+      <section class="tool-compare-panel" data-tool-compare-panel hidden aria-live="polite">
+        <div class="tool-compare-heading">
+          <div><p class="eyebrow">COMPARE SCENARIOS</p><h3>Saved versus current</h3></div>
+          <button type="button" class="tool-text-action" data-tool-clear-scenario>Clear saved</button>
+        </div>
+        <div class="tool-compare-table" data-tool-compare-table></div>
+      </section>
     </section>
   </section>
   <section class="tool-chart-panel" data-tool-chart hidden aria-live="polite">
