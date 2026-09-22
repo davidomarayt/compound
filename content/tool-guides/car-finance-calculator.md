@@ -2,6 +2,16 @@
 
 This calculator compares three common ways to fund a car: a personal loan, Hire Purchase and a Personal Contract Plan. It is designed to show why the lowest monthly payment is not necessarily the lowest total cost.
 
+## Compare the same ownership outcome
+
+Monthly payment alone is a poor way to compare a personal loan, Hire Purchase and PCP because the three structures can leave you in different positions at the end.
+
+The calculator therefore separates **PCP return** from **PCP keep**. Returning the car means you do not pay the balloon/GMFV, but excess-mileage or condition charges may matter. Keeping the car means the balloon and any completion fee need to be included in the total cash paid.
+
+In Advanced mode, the end-value estimate adds another useful question: if the car's estimated market value is above the balloon, there may be positive equity; if it is below the balloon, paying the balloon may not be economically attractive simply because the monthly PCP payment looked low.
+
+When comparing offers, use the actual APR, fees, term, balloon and mileage conditions from each quote. A lower monthly figure can be created simply by moving more of the cost to the final payment.
+
 ## How to read the result
 
 The three structures are shown explicitly as **Personal car loan**, **Hire Purchase**, and **Personal Contract Plan (PCP)** so that ownership timing and end-of-term obligations are not hidden by the monthly payment.
