@@ -25,11 +25,11 @@ The Central Bank's current mortgage measures generally cap borrowing at:
 - **4 times gross income for first-time buyers**;
 - **3.5 times gross income for second and subsequent buyers**.
 
-Principal-home lending is generally subject to a maximum **90% LTV**. citeturn338676search1turn338676search2
+Principal-home lending is generally subject to a maximum **90% LTV**.
 
 Lenders can use limited allowances above the standard limits under the framework, but a borrower should not plan on receiving an exception.
 
-In 2026 the Central Bank introduced a targeted LTI exemption for qualifying principal-home bridging loans. The exemption is specific to that short-term product type; LTV limits continue to apply. citeturn338676search5
+In 2026 the Central Bank introduced a targeted LTI exemption for qualifying principal-home bridging loans. The exemption is specific to that short-term product type; LTV limits continue to apply.
 
 This calculator models an ordinary purchase mortgage and does not model bridging finance.
 
@@ -186,7 +186,7 @@ The Central Bank LTI calculation itself remains based on the mortgage relative t
 
 ## Lenders perform a broader assessment
 
-CCPC guidance explains that mortgage providers assess an application rather than simply multiplying income by the regulatory limit. citeturn338676search9
+CCPC guidance explains that mortgage providers assess an application rather than simply multiplying income by the regulatory limit.
 
 A lender may consider factors such as:
 
@@ -241,7 +241,7 @@ The indicative property price is mortgage plus deposit.
 
 It does not mean you need only the deposit in cash.
 
-CCPC's home-buying guidance highlights additional costs such as legal fees, Stamp Duty, valuation and insurance. citeturn338676search0turn338676search4
+CCPC's home-buying guidance highlights additional costs such as legal fees, Stamp Duty, valuation and insurance.
 
 Use the [House Buying Costs Calculator](/house-buying-costs-calculator/) to make sure completion costs do not consume the reserve you assumed in this affordability model.
 
@@ -306,7 +306,7 @@ A 10% deposit means a 90% mortgage at the standard principal-home LTV, so the mo
 
 ### Can a lender lend above the standard LTI limit?
 
-The Central Bank framework permits limited lender allowances above standard limits. Availability is not guaranteed to an individual borrower. citeturn338676search5
+The Central Bank framework permits limited lender allowances above standard limits. Availability is not guaranteed to an individual borrower.
 
 ### Does the 2026 bridging-loan change affect this calculator?
 
