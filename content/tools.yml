@@ -1280,10 +1280,10 @@ tools:
     basic_note: "Basic mode uses €5,000 of annual contractor business costs and no contractor pension contribution."
     advanced_note: "Advanced mode lets you replace the business-cost assumption and include a contractor pension contribution."
     fields:
-      - {id: salary, label: Employee gross salary, type: number, prefix: "€", default: 70000, min: 0, step: 1000}
-      - {id: day_rate, label: Contractor day rate, type: number, prefix: "€", suffix: "/day", default: 450, min: 0, step: 10}
+      - {id: salary, label: Employee gross salary, type: number, prefix: "€", default: 70000, min: 0, step: 1000, section_start: Employee}
+      - {id: day_rate, label: Contractor day rate, type: number, prefix: "€", suffix: "/day", default: 450, min: 0, step: 10, section_start: Contractor}
       - {id: billable_days, label: Billable days per year, type: number, default: 220, min: 0, max: 366, step: 1}
-      - {id: contractor_costs, label: Allowable contractor business costs, type: number, prefix: "€", default: 5000, min: 0, step: 500, advanced: true}
+      - {id: contractor_costs, label: Allowable contractor business costs, type: number, prefix: "€", default: 5000, min: 0, step: 500, advanced: true, section_start: Advanced contractor assumptions}
       - {id: contractor_pension, label: Contractor pension contribution used for Income Tax illustration, type: number, prefix: "€", default: 0, min: 0, step: 500, advanced: true}
     results:
       - {id: employee_net, label: Estimated employee take-home}
@@ -1309,9 +1309,9 @@ tools:
     meta_description: Investment fee calculator. Compare two annual fee levels and see their long-term effect on a lump sum plus monthly investments.
     updated: 2026-09-22
     fields:
-      - {id: initial, label: Starting investment, type: number, prefix: "€", default: 25000, min: 0, step: 500}
+      - {id: initial, label: Starting investment, type: number, prefix: "€", default: 25000, min: 0, step: 500, section_start: Investment plan}
       - {id: monthly, label: Monthly investment, type: number, prefix: "€", default: 500, min: 0, step: 10}
-      - {id: gross_return, label: Assumed annual return before fees, type: number, suffix: "%", default: 7, min: -20, max: 30, step: 0.1}
+      - {id: gross_return, label: Assumed annual return before fees, type: number, suffix: "%", default: 7, min: -20, max: 30, step: 0.1, section_start: Return & fees}
       - {id: fee_low, label: Lower annual fee, type: number, suffix: "%", default: 0.25, min: 0, max: 10, step: 0.05}
       - {id: fee_high, label: Higher annual fee, type: number, suffix: "%", default: 1.5, min: 0, max: 10, step: 0.05}
       - {id: years, label: Years invested, type: number, default: 25, min: 1, max: 70, step: 1}
@@ -1334,9 +1334,9 @@ tools:
     meta_description: FIRE number calculator Ireland. Estimate an investment target from annual spending, withdrawal rate, current portfolio and future contributions.
     updated: 2026-09-22
     fields:
-      - {id: annual_spend, label: Annual spending to fund, type: number, prefix: "€", default: 36000, min: 0, step: 500}
+      - {id: annual_spend, label: Annual spending to fund, type: number, prefix: "€", default: 36000, min: 0, step: 500, section_start: Independence target}
       - {id: withdrawal_rate, label: Assumed withdrawal rate, type: number, suffix: "%", default: 4, min: 1, max: 10, step: 0.1}
-      - {id: current, label: Current invested assets, type: number, prefix: "€", default: 100000, min: 0, step: 1000}
+      - {id: current, label: Current invested assets, type: number, prefix: "€", default: 100000, min: 0, step: 1000, section_start: Portfolio & contributions}
       - {id: annual_contribution, label: Annual new investment, type: number, prefix: "€", default: 18000, min: 0, step: 500}
       - {id: return_rate, label: Assumed annual investment return, type: number, suffix: "%", default: 6, min: -20, max: 30, step: 0.1}
     results:
@@ -1358,9 +1358,9 @@ tools:
     meta_description: Retirement income calculator Ireland. Estimate annual and monthly gross retirement income from a pension pot, withdrawal rate, State Pension and other income.
     updated: 2026-09-22
     fields:
-      - {id: pot, label: Pension / investment pot at retirement, type: number, prefix: "€", default: 500000, min: 0, step: 5000}
+      - {id: pot, label: Pension / investment pot at retirement, type: number, prefix: "€", default: 500000, min: 0, step: 5000, section_start: Portfolio}
       - {id: withdrawal_rate, label: Illustrative annual withdrawal rate, type: number, suffix: "%", default: 4, min: 0, max: 15, step: 0.1}
-      - {id: state_pension, label: Annual State Pension or social-welfare income to include, type: number, prefix: "€", default: 0, min: 0, step: 100}
+      - {id: state_pension, label: Annual State Pension or social-welfare income to include, type: number, prefix: "€", default: 0, min: 0, step: 100, section_start: Other retirement income}
       - {id: other_income, label: Other annual retirement income, type: number, prefix: "€", default: 0, min: 0, step: 100}
     results:
       - {id: portfolio_income, label: Illustrative income from pot}
@@ -1412,16 +1412,16 @@ tools:
     basic_note: "Basic mode keeps the long-term assumptions at the defaults: 2.5% rent growth, 2.5% house-price growth, 1% ownership costs and 5% renter investment return."
     advanced_note: "Advanced mode exposes the growth, maintenance and renter-return assumptions that can materially change a long-run comparison."
     fields:
-      - {id: monthly_rent, label: Current monthly rent, type: number, prefix: "€", default: 1800, min: 0, step: 50}
-      - {id: annual_rent_growth, label: Annual rent growth assumption, type: number, suffix: "%", default: 2.5, min: -10, max: 20, step: 0.1, advanced: true}
-      - {id: house_price, label: Home purchase price, type: number, prefix: "€", default: 400000, min: 0, step: 1000}
+      - {id: monthly_rent, label: Current monthly rent, type: number, prefix: "€", default: 1800, min: 0, step: 50, section_start: Renting}
+      - {id: annual_rent_growth, label: Annual rent growth assumption, type: number, suffix: "%", default: 2.5, min: -10, max: 20, step: 0.1, advanced: true, section_start: Advanced assumptions}
+      - {id: house_price, label: Home purchase price, type: number, prefix: "€", default: 400000, min: 0, step: 1000, section_start: Buying}
       - {id: deposit, label: Deposit, type: number, prefix: "€", default: 40000, min: 0, step: 1000}
       - {id: mortgage_rate, label: Mortgage interest rate, type: number, suffix: "%", default: 3.5, min: 0, max: 20, step: 0.1}
       - {id: mortgage_years, label: Mortgage term, type: number, suffix: years, default: 30, min: 1, max: 50, step: 1}
       - {id: house_growth, label: Annual house-price growth assumption, type: number, suffix: "%", default: 2.5, min: -20, max: 20, step: 0.1, advanced: true}
       - {id: maintenance_pct, label: Annual maintenance / ownership costs as % of home value, type: number, suffix: "%", default: 1, min: 0, max: 10, step: 0.1, advanced: true}
       - {id: renter_return, label: Renter investment return assumption, type: number, suffix: "%", default: 5, min: -20, max: 30, step: 0.1, advanced: true}
-      - {id: years, label: Comparison period, type: number, suffix: years, default: 15, min: 1, max: 40, step: 1}
+      - {id: years, label: Comparison period, type: number, suffix: years, default: 15, min: 1, max: 40, step: 1, section_start: Time horizon}
     results:
       - {id: mortgage_payment, label: Starting monthly mortgage repayment}
       - {id: owner_equity, label: Homeowner equity at end}
@@ -1444,7 +1444,7 @@ tools:
     basic_note: "Basic mode uses a 4.5% test rate, 30-year term, a 30% gross-income payment cap and no other monthly debt unless you switch to Advanced."
     advanced_note: "Advanced mode lets you set the test rate, term, payment-share assumption and other monthly debt."
     fields:
-      - {id: income, label: Gross household annual income, type: number, prefix: "€", default: 80000, min: 0, step: 1000}
+      - {id: income, label: Gross household annual income, type: number, prefix: "€", default: 80000, min: 0, step: 1000, section_start: Household & deposit}
       - id: buyer_type
         label: Buyer type
         type: select
@@ -1453,7 +1453,7 @@ tools:
           - {value: ftb, label: First-time buyer — 4× LTI limit}
           - {value: subsequent, label: Second/subsequent buyer — 3.5× LTI limit}
       - {id: deposit, label: Deposit available, type: number, prefix: "€", default: 40000, min: 0, step: 1000}
-      - {id: rate, label: Mortgage interest rate for affordability test, type: number, suffix: "%", default: 4.5, min: 0, max: 20, step: 0.1, advanced: true}
+      - {id: rate, label: Mortgage interest rate for affordability test, type: number, suffix: "%", default: 4.5, min: 0, max: 20, step: 0.1, advanced: true, section_start: Advanced affordability assumptions}
       - {id: term, label: Mortgage term, type: number, suffix: years, default: 30, min: 1, max: 50, step: 1, advanced: true}
       - {id: max_payment_pct, label: Maximum mortgage payment as % of gross monthly income, type: number, suffix: "%", default: 30, min: 5, max: 70, step: 1, advanced: true}
       - {id: other_debt, label: Other monthly debt payments to subtract, type: number, prefix: "€", default: 0, min: 0, step: 50, advanced: true}
@@ -1479,9 +1479,9 @@ tools:
     meta_description: House buying costs calculator Ireland. Estimate deposit, residential stamp duty, legal, survey, valuation, moving and other upfront purchase costs.
     updated: 2026-09-22
     fields:
-      - {id: price, label: Property price, type: number, prefix: "€", default: 400000, min: 0, step: 1000}
+      - {id: price, label: Property price, type: number, prefix: "€", default: 400000, min: 0, step: 1000, section_start: Purchase}
       - {id: deposit_pct, label: Deposit percentage, type: number, suffix: "%", default: 10, min: 0, max: 100, step: 1}
-      - {id: legal, label: Legal / conveyancing budget, type: number, prefix: "€", default: 2500, min: 0, step: 100}
+      - {id: legal, label: Legal / conveyancing budget, type: number, prefix: "€", default: 2500, min: 0, step: 100, section_start: Professional & moving costs}
       - {id: survey, label: Survey / engineer budget, type: number, prefix: "€", default: 600, min: 0, step: 50}
       - {id: valuation, label: Valuation budget, type: number, prefix: "€", default: 200, min: 0, step: 50}
       - {id: moving, label: Moving / setup budget, type: number, prefix: "€", default: 1500, min: 0, step: 100}
@@ -2120,12 +2120,12 @@ tools:
     basic_note: "Basic mode compares the two rates and terms using €1,500 of switching costs, no break fee and no cashback."
     advanced_note: "Advanced mode lets you replace the default switching costs and add an actual break fee or cashback incentive."
     fields:
-      - {id: balance, label: Current mortgage balance, type: number, prefix: "€", default: 250000, min: 0, step: 1000}
+      - {id: balance, label: Current mortgage balance, type: number, prefix: "€", default: 250000, min: 0, step: 1000, section_start: Current mortgage}
       - {id: current_rate, label: Current interest rate, type: number, suffix: "%", default: 4.2, min: 0, max: 20, step: 0.01}
       - {id: current_years, label: Remaining term, type: number, suffix: years, default: 20, min: 1, max: 50, step: 1}
-      - {id: new_rate, label: New / alternative interest rate, type: number, suffix: "%", default: 3.4, min: 0, max: 20, step: 0.01}
+      - {id: new_rate, label: New / alternative interest rate, type: number, suffix: "%", default: 3.4, min: 0, max: 20, step: 0.01, section_start: Alternative mortgage}
       - {id: new_years, label: New mortgage term, type: number, suffix: years, default: 20, min: 1, max: 50, step: 1}
-      - {id: switching_costs, label: Legal, valuation and other switching costs, type: number, prefix: "€", default: 1500, min: 0, step: 100, advanced: true}
+      - {id: switching_costs, label: Legal, valuation and other switching costs, type: number, prefix: "€", default: 1500, min: 0, step: 100, advanced: true, section_start: Advanced switching costs}
       - {id: break_fee, label: Fixed-rate break fee if applicable, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true}
       - {id: cashback, label: Cashback / switching incentive, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true}
     results:
