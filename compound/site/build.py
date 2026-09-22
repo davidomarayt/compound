@@ -355,6 +355,13 @@ def load_tools(content_dir: Path) -> list[dict]:
         tool["fields"] = list(tool.get("fields") or [])
         tool["results"] = list(tool.get("results") or [])
         tool["sources"] = list(tool.get("sources") or [])
+        source_section = str(tool.get("guide") or "").split("### Useful sources", 1)
+        if len(source_section) == 2:
+            seen_urls = {str(source.get("url") or "") for source in tool["sources"]}
+            for title, url in re.findall(r"\[([^\]]+)\]\((https?://[^)]+)\)", source_section[1]):
+                if url not in seen_urls:
+                    tool["sources"].append({"title": title.strip(), "url": url.strip()})
+                    seen_urls.add(url)
         items.append(tool)
     return items
 
