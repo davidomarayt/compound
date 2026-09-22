@@ -383,7 +383,7 @@ def test_every_calculator_has_substantial_educational_depth():
     assert len(tools) >= 49
     for tool in tools:
         words = str(tool.get("guide") or "").split()
-        assert len(words) >= 650, f"{tool['slug']} guide is too thin: {len(words)} words"
+        assert len(words) >= 1100, f"{tool['slug']} guide is too thin: {len(words)} words"
         assert tool.get("sources"), f"{tool['slug']} should expose at least one source"
         guide = str(tool.get("guide") or "")
         assert "Method" in guide or "method" in guide.lower()
