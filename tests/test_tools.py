@@ -509,3 +509,14 @@ def test_rent_vs_buy_models_transaction_and_ownership_costs():
     assert "v.deposit+upfrontCosts" in js
     assert "house*(1-sellPct)" in js
     assert "v.owner_fixed_annual" in js
+
+
+def test_mortgage_affordability_applies_deposit_constraint():
+    content_dir = Path(__file__).parents[1] / "content"
+    tool = next(tool for tool in load_tools(content_dir) if tool["slug"] == "mortgage-affordability-calculator")
+    result_ids = {result["id"] for result in tool["results"]}
+    assert "deposit_based_mortgage" in result_ids
+
+    js = (Path(__file__).parents[1] / "compound" / "site" / "static" / "tools.js").read_text()
+    assert "const depositBased=Math.max(0,v.deposit)*9" in js
+    assert "Math.min(lti,paymentBased,depositBased)" in js
