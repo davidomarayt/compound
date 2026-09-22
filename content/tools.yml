@@ -1287,14 +1287,14 @@ tools:
         options:
           - {value: yes, label: Yes — maximum FHS share is 20%}
           - {value: no, label: No — maximum FHS share is 30%}
-      - {id: htb_amount, label: Help to Buy amount included in your funds, type: number, prefix: "€", default: 30000, min: 0, step: 500}
+      - {id: htb_amount, label: Help to Buy amount included in your funds, type: number, prefix: "€", default: 30000, min: 0, step: 500, show_if: htb}
     results:
       - {id: price_ceiling, label: FHS price ceiling for this location/type}
       - {id: gap, label: Funding gap before FHS}
       - {id: share, label: Equity share needed}
       - {id: max_fhs, label: Current maximum FHS amount by percentage}
       - {id: year6_charge, label: Illustrative service charge in year 6}
-      - {id: charges_to_year10, label: Illustrative service charges through year 10}
+      - {id: charges_to_year10, label: Illustrative service charges, years 6–10}
       - {id: check, label: Basic scheme-range check}
     guide: |
       ## FHS is shared equity, not an ordinary loan
@@ -1305,7 +1305,7 @@ tools:
       - {title: "First Home Scheme — Eligibility", url: "https://www.firsthomescheme.ie/about-the-scheme/eligibility/"}
       - {title: "First Home Scheme — Property price ceilings", url: "https://www.firsthomescheme.ie/about-the-scheme/property-price-ceilings/"}
       - {title: "First Home Scheme — How the equity share works", url: "https://www.firsthomescheme.ie/about-the-scheme/how-the-equity-share-works/"}
-      - {title: "First Home Scheme — Service charges", url: "https://www.firsthomescheme.ie/faqs/service-charges/"}
+      - {title: "First Home Scheme — Service charges", url: "https://www.firsthomescheme.ie/about-the-scheme/service-charges/"}
 
   - slug: dirt-calculator
     title: DIRT Calculator Ireland
