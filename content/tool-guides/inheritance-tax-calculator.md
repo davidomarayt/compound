@@ -2,6 +2,18 @@
 
 This calculator estimates Capital Acquisitions Tax on a gift or inheritance using the relationship-based Group A, B or C threshold, prior aggregated benefits and the current 33% CAT rate.
 
+## Why prior benefits matter so much
+
+CAT is not calculated by looking only at the latest gift or inheritance. Relevant prior taxable benefits in the **same group threshold** are aggregated, which means a beneficiary can have little or none of a threshold remaining before the current benefit arrives.
+
+That is why the calculator asks for prior taxable benefits separately. It calculates the position before the current benefit and then the position after it, so the estimated CAT shown is the additional tax attributable to the current benefit under the assumptions entered.
+
+A simple example illustrates the difference. If someone has already used most of a Group A threshold, a further inheritance can become partly taxable even though the new inheritance on its own is below the full headline threshold. Conversely, someone with no relevant prior benefits may still have the full group threshold available.
+
+For gifts, Advanced mode also lets you reflect how much of the annual small-gift exemption from the same giver has already been used. The small-gift exemption is different from the lifetime group threshold and should not be treated as if it permanently increases that threshold.
+
+Use the [Capital Gains Tax Calculator](/capital-gains-tax-calculator/) for a separate disposal of an asset. CAT and CGT are different taxes and a real transaction can require advice on how multiple tax rules interact.
+
 ## How to read the result
 
 The critical number is the **unused group threshold**, not simply the size of the new inheritance. Earlier taxable gifts and inheritances within the same group since 5 December 1991 can use up part of the threshold.
