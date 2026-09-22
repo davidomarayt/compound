@@ -1,0 +1,50 @@
+## What this calculator is for
+
+This tool isolates Irish Income Tax from USC and PRSI. It applies the 2026 standard-rate band and entered credits so you can see gross tax, tax credits and the resulting Income Tax liability.
+
+## How to read the result
+
+Income Tax is progressive. Income within the standard-rate band is taxed at 20%, while income above the band is generally taxed at 40%. Tax credits then reduce the tax bill euro-for-euro; they are not the same as deductions from taxable income.
+
+## Worked example
+
+For a single person with €50,000 of taxable income and a €44,000 standard-rate band, €44,000 is taxed at 20% and €6,000 at 40% before credits. Tax credits are then subtracted from that gross Income Tax.
+
+## Irish context
+
+Revenue's 2026 standard-rate band for a single person without qualifying children is €44,000. Different bands apply to married couples/civil partners and some single parents. The Employee Tax Credit can be up to €2,000, and other credits may apply.
+
+## What can change the answer
+
+Personal circumstances, pension relief, tax credits, jointly assessed income, rental or self-employed income and other reliefs can all alter the liability. This calculator is intentionally narrower than a full Form 11 or PAYE assessment.
+
+## Common mistakes to avoid
+
+Do not confuse tax credits with the 20%/40% bands. Do not add USC and PRSI into the Income Tax result. And do not assume the standard single-person band applies to every taxpayer.
+
+## Related Compound tools
+
+Use the [Take-Home Pay Calculator](/take-home-pay-calculator/) for the combined net-pay picture, [USC Calculator](/usc-calculator/), [PRSI Calculator](/prsi-calculator/) and [Pension Tax Relief Calculator](/pension-tax-relief-calculator/).
+
+## Frequently asked questions
+
+### Are tax credits deductions from income?
+No. They reduce the Income Tax calculated.
+
+### Is USC part of Income Tax?
+No.
+
+### Does the 40% rate apply to my whole salary once I cross the band?
+No. It applies to the portion above the standard-rate band.
+
+### Does this calculate every credit?
+No.
+
+## Method and limitations
+
+The calculator applies 20% to income within the entered standard-rate band and 40% above it, then subtracts the credits entered, floored at zero. It does not model every relief or personal circumstance.
+
+### Useful sources
+
+- [Revenue — Tax rates, bands and reliefs](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx)
+- [Revenue — How tax credits work](https://www.revenue.ie/en/jobs-and-pensions/calculating-your-income-tax/tax-credits.aspx)
