@@ -134,6 +134,16 @@
     const standardInterest=Math.max(0,base*months-v.balance);
     return {months,base,startAfter,lumpSum,lumpMonth,pay:base+Math.max(0,v.overpayment),scenarioMonths:month,interest,standardInterest,labels,values};
   };
+  const mortgageSnapshot = (principal,annual,totalMonths,payment,horizonMonths) => {
+    const r=annual/100/12;
+    let balance=Math.max(0,principal), interest=0, paid=0;
+    const months=Math.min(Math.max(0,Math.round(horizonMonths)),Math.max(0,Math.round(totalMonths)));
+    for(let month=0;month<months && balance>0.005;month++){
+      const monthlyInterest=balance*r, due=balance+monthlyInterest, actual=Math.min(due,payment);
+      interest+=monthlyInterest; paid+=actual; balance=Math.max(0,due-actual);
+    }
+    return {balance,interest,paid};
+  };
   const fallbackChart = (name,v) => {
     switch(name){
       case 'mortgage': {
@@ -483,8 +493,10 @@
         break;
       case 'mortgage_switch': {
         const p1=monthlyPayment(v.balance,v.current_rate,Math.round(v.current_years*12)), p2=monthlyPayment(v.balance,v.new_rate,Math.round(v.new_years*12)), saving=p1-p2;
+        const horizon=v.__advanced?Math.max(1,Math.round(v.comparison_years||5)):5;
         items.push(saving>0?'The alternative reduces the modelled monthly repayment by '+money(saving)+'.':'The alternative does not reduce the modelled monthly repayment.');
-        if(v.current_years!==v.new_years) items.push('The terms differ, so part of the monthly change comes from repayment length rather than rate alone.');
+        items.push('The short-term comparison uses a '+horizon+'-year horizon; keep it within the period for which the entered rates are a reasonable assumption.');
+        if(v.current_years!==v.new_years) items.push('The terms differ, so compare the remaining balances as well as the monthly payments.');
         break;
       }
       case 'lifetime_cost':
@@ -1085,9 +1097,14 @@
     },
     mortgage_switch(v){
       const n1=Math.round(v.current_years*12),n2=Math.round(v.new_years*12),p1=monthlyPayment(v.balance,v.current_rate,n1),p2=monthlyPayment(v.balance,v.new_rate,n2);
-      const total1=p1*n1,total2=p2*n2,netCost=Math.max(0,v.switching_costs+v.break_fee-v.cashback),monthlySaving=p1-p2;
+      const total1=p1*n1,total2=p2*n2,netCost=v.switching_costs+v.break_fee-v.cashback,monthlySaving=p1-p2;
       const breakEven=monthlySaving>0?(netCost<=0?'Immediate':duration(netCost/monthlySaving)):'No monthly saving';
       const diff=total1-(total2+netCost);
+      const horizonYears=v.__advanced?Math.max(1,Math.round(v.comparison_years||5)):5, horizonMonths=horizonYears*12;
+      const currentHorizon=mortgageSnapshot(v.balance,v.current_rate,n1,p1,horizonMonths);
+      const newHorizon=mortgageSnapshot(v.balance,v.new_rate,n2,p2,horizonMonths);
+      const horizonNewCost=newHorizon.interest+netCost, horizonSaving=currentHorizon.interest-horizonNewCost;
+      const horizonBalanceAdvantage=currentHorizon.balance-newHorizon.balance;
       const labels=['Now'],a=[v.balance],b=[v.balance];let bal1=v.balance,bal2=v.balance,r1=v.current_rate/100/12,r2=v.new_rate/100/12;
       const years=Math.max(v.current_years,v.new_years);
       for(let y=1;y<=years;y++){
@@ -1098,8 +1115,13 @@
         labels.push('Year '+y);a.push(bal1);b.push(bal2);
       }
       return {
-        current_payment:money(p1),new_payment:money(p2),monthly_change:(monthlySaving>=0?'-':'+')+money(Math.abs(monthlySaving)),net_switch_cost:money(netCost),break_even:breakEven,lifetime_difference:(diff>=0?'+':'-')+money(Math.abs(diff)),
-        __chart:{type:'line',title:'Scheduled mortgage balance',caption:'Current mortgage versus the alternative rate/term entered.',labels,series:[{label:'Current mortgage',values:a},{label:'Alternative mortgage',values:b}]}
+        current_payment:money(p1),new_payment:money(p2),monthly_change:(monthlySaving>=0?'-':'+')+money(Math.abs(monthlySaving)),
+        net_switch_cost:(netCost>=0?'':'-')+money(Math.abs(netCost)),break_even:breakEven,
+        horizon_interest_current:money(currentHorizon.interest),horizon_interest_new:money(horizonNewCost),
+        horizon_saving:(horizonSaving>=0?'+':'-')+money(Math.abs(horizonSaving)),
+        horizon_balance_difference:(horizonBalanceAdvantage>=0?'+':'-')+money(Math.abs(horizonBalanceAdvantage)),
+        lifetime_difference:(diff>=0?'+':'-')+money(Math.abs(diff)),
+        __chart:{type:'line',title:'Scheduled mortgage balance',caption:'Current mortgage versus the alternative rate/term entered. The full chart assumes the entered rates continue unchanged.',labels,series:[{label:'Current mortgage',values:a},{label:'Alternative mortgage',values:b}]}
       };
     },
     lifetime_cost(v){
@@ -1235,7 +1257,7 @@
   };
 
   if(typeof globalThis!=='undefined'){
-    globalThis.CompoundToolsTest={calculators,monthlyPayment,incomeTax2026,usc2026,annualClassA2026,selfEmployedNet2026,stampDutyResidential,lptBands,lptAdjust,fhsPriceCeilings,fhsPriceCeiling,mortgageOverpaymentProjection};
+    globalThis.CompoundToolsTest={calculators,monthlyPayment,incomeTax2026,usc2026,annualClassA2026,selfEmployedNet2026,stampDutyResidential,lptBands,lptAdjust,fhsPriceCeilings,fhsPriceCeiling,mortgageOverpaymentProjection,mortgageSnapshot};
   }
   if(typeof document==='undefined') return;
 
