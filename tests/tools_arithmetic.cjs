@@ -401,6 +401,7 @@ const pregnancyCycle = calculators.pregnancy_timeline({
 });
 assert.match(pregnancyCycle.due_date, /adjusted \+7 days for cycle length/);
 assert.match(pregnancyCycle.pregnancy_progress, /%$/);
+assert.match(pregnancyCycle.week42, /29 October 2026/);
 assert.ok(pregnancyCycle.__chart.series[0].values.length === 2);
 
 const nutritionBasic = calculators.nutrition_needs({
