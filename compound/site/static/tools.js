@@ -64,9 +64,10 @@
     const gross=standard*.20 + Math.max(0,taxable-standard)*.40;
     return {taxable,standard,higher:Math.max(0,taxable-standard),gross,net:Math.max(0,gross-Math.max(0,credits))};
   };
-  const usc2026 = income => {
+  const usc2026 = (income,reduced=false) => {
     const x=Math.max(0,income);
     if(x<=13000) return 0;
+    if(reduced && x<=60000) return Math.min(x,12012)*.005 + Math.max(0,x-12012)*.02;
     let left=x, tax=0;
     const bands=[[12012,.005],[16688,.02],[41344,.03],[Infinity,.08]];
     for(const [size,rate] of bands){ const slice=Math.min(left,size); if(slice<=0) break; tax+=slice*rate; left-=slice; }
@@ -79,11 +80,11 @@
     const before=weeklyClassA(weekly,.042), after=weeklyClassA(weekly,.0435);
     return {weekly,before,after,annual:before*39+after*13};
   };
-  const employeeNet2026 = (salary,pension,band=44000,extraCredits=0) => {
+  const employeeNet2026 = (salary,pension,band=44000,extraCredits=0,reducedUsc=false) => {
     const employeeCredit=Math.min(2000,Math.max(0,salary)*.20);
     const credits=2000+employeeCredit+Math.max(0,extraCredits);
     const tax=incomeTax2026(Math.max(0,salary-pension),band,credits).net;
-    const usc=usc2026(salary), prsi=annualClassA2026(salary).annual;
+    const usc=usc2026(salary,reducedUsc), prsi=annualClassA2026(salary).annual;
     return {tax,usc,prsi,credits,net:salary-pension-tax-usc-prsi};
   };
   const selfEmployedNet2026 = (profit,pension=0) => {
@@ -240,8 +241,14 @@
         return {type:'bar',title:'Weekly employee PRSI before and after the 2026 rate change',caption:'Class A estimate using the same weekly-equivalent salary.',labels:['Before change','After change'],series:[{label:'Weekly PRSI',values:[p.before,p.after]}]};
       }
       case 'usc_2026': {
-        const x=Math.max(0,v.income); if(x<=13000) return null; let left=x; const vals=[]; for(const [size,rate] of [[12012,.005],[16688,.02],[41344,.03],[Infinity,.08]]){const slice=Math.min(left,size);vals.push(Math.max(0,slice*rate));left-=slice;if(left<=0){while(vals.length<4)vals.push(0);break;}}
-        return {type:'bar',title:'USC by rate band',caption:'Each rate applies only to income within that USC band.',labels:['0.5%','2%','3%','8%'],series:[{label:'USC',values:vals}]};
+        const x=Math.max(0,v.income); if(x<=13000) return null;
+        const reduced=Boolean(v.__advanced)&&v.reduced_rate==='yes'&&x<=60000;
+        if(reduced){
+          const vals=[Math.min(x,12012)*.005,Math.max(0,x-12012)*.02];
+          return {type:'bar',title:'USC by reduced rate band',caption:'2026 reduced USC rates apply only when the qualifying conditions are met and aggregate income is €60,000 or less.',labels:['0.5%','2%'],series:[{label:'USC',values:vals}]};
+        }
+        let left=x; const vals=[]; for(const [size,rate] of [[12012,.005],[16688,.02],[41344,.03],[Infinity,.08]]){const slice=Math.min(left,size);vals.push(Math.max(0,slice*rate));left-=slice;if(left<=0){while(vals.length<4)vals.push(0);break;}}
+        return {type:'bar',title:'USC by rate band',caption:'Each rate applies only to income within that standard USC band.',labels:['0.5%','2%','3%','8%'],series:[{label:'USC',values:vals}]};
       }
       case 'cat': {
         const thresholds={A:400000,B:40000,C:20000}, threshold=thresholds[v.group]||0, remaining=Math.max(0,threshold-v.prior), small=v.benefit_type==='gift'?Math.min(3000,v.benefit):0, current=Math.max(0,v.benefit-small), afterTax=Math.max(0,v.prior+current-threshold)*.33, beforeTax=Math.max(0,v.prior-threshold)*.33;
@@ -394,8 +401,10 @@
         break;
       }
       case 'take_home_2026': {
-        const pension=Math.max(0,v.salary*v.pension_pct/100), net=employeeNet2026(v.salary,pension,v.band,v.other_credits);
+        const pension=Math.max(0,v.salary*v.pension_pct/100), reduced=Boolean(v.__advanced)&&v.usc_reduced==='yes', net=employeeNet2026(v.salary,pension,v.band,v.other_credits,reduced);
         if(v.salary>0) items.push('Estimated take-home after the deductions modelled is about '+pct(net.net/v.salary*100)+' of gross salary.');
+        if(reduced && v.salary<=60000) items.push('The advanced scenario is using the 2026 reduced USC bands. Revenue eligibility conditions still need to be satisfied.');
+        else if(reduced && v.salary>60000) items.push('Reduced USC cannot apply above €60,000 aggregate income, so standard USC rates are used.');
         items.push('Your marginal deduction rate on the next euro can be much higher than your average deduction rate.');
         break;
       }
@@ -405,7 +414,10 @@
         break;
       }
       case 'usc_2026': {
-        const u=usc2026(v.income); if(v.income>0) items.push('The effective USC rate in this scenario is '+pct(u/v.income*100)+', lower than the highest marginal band because USC is progressive.');
+        const reduced=Boolean(v.__advanced)&&v.reduced_rate==='yes'&&v.income<=60000, u=usc2026(v.income,reduced);
+        if(v.income>0) items.push('The effective USC rate in this scenario is '+pct(u/v.income*100)+', lower than the highest marginal band because USC is progressive.');
+        if(Boolean(v.__advanced)&&v.reduced_rate==='yes'&&v.income>60000) items.push('The reduced-rate option is not applied because Revenue limits it to qualifying people with aggregate income of €60,000 or less.');
+        else if(reduced) items.push('This scenario uses the reduced 2026 USC rates: 0.5% on the first €12,012 and 2% on the balance.');
         break;
       }
       case 'prsi_2026': {
@@ -879,8 +891,8 @@
       };
     },
     salary_hourly(v){
-      const weekly=v.weeks?v.salary/v.weeks:0, monthly=v.salary/12, daily=v.days?weekly/v.days:0, hourly=(v.hours&&v.weeks)?v.salary/(v.hours*v.weeks):0;
-      return {monthly:money(monthly),weekly:money(weekly),daily:money(daily),hourly:money(hourly)};
+      const annualHours=Math.max(0,v.hours)*Math.max(0,v.weeks), weekly=v.weeks?v.salary/v.weeks:0, monthly=v.salary/12, daily=v.days?weekly/v.days:0, hourly=annualHours?v.salary/annualHours:0;
+      return {monthly:money(monthly),weekly:money(weekly),daily:money(daily),hourly:money(hourly),annual_hours:num(annualHours)+' hours'};
     },
     fuel(v){
       const distance=v.distance*v.trips, litres=distance*v.consumption/100, cost=litres*v.price, per100=v.consumption*v.price;
@@ -895,9 +907,12 @@
       return {kwh:num(kwh)+' kWh',monthly:money(monthly),annual:money(monthly*12)};
     },
     take_home_2026(v){
-      const pension=Math.max(0,v.salary*v.pension_pct/100), net=employeeNet2026(v.salary,pension,v.band,v.other_credits);
+      const reduced=Boolean(v.__advanced)&&v.usc_reduced==='yes', pension=Math.max(0,v.salary*v.pension_pct/100), net=employeeNet2026(v.salary,pension,v.band,v.other_credits,reduced);
+      const salaryPlus=Math.max(0,v.salary)+1000, pensionPlus=Math.max(0,salaryPlus*v.pension_pct/100), netPlus=employeeNet2026(salaryPlus,pensionPlus,v.band,v.other_credits,reduced);
+      const deductions=net.tax+net.usc+net.prsi+pension;
       return {
         annual_net:money(net.net),monthly_net:money(net.net/12),paye:money(net.tax),usc:money(net.usc),prsi:money(net.prsi),pension:money(pension),
+        deductions:money(deductions),effective_deductions:pct(v.salary?deductions/v.salary*100:0),next_1000_net:money(Math.max(0,netPlus.net-net.net)),
         __chart:{type:'bar',title:'Where the gross salary goes',caption:'Estimated 2026 annual amounts using the inputs above.',labels:['Take-home','PAYE','USC','PRSI','Pension'],series:[{label:'Annual amount',values:[net.net,net.tax,net.usc,net.prsi,pension]}]}
       };
     },
@@ -909,10 +924,12 @@
       };
     },
     usc_2026(v){
-      const u=usc2026(v.income); return {usc:money(u),effective:pct(v.income?u/v.income*100:0),monthly:money(u/12)};
+      const requested=Boolean(v.__advanced)&&v.reduced_rate==='yes', reduced=requested&&v.income<=60000, u=usc2026(v.income,reduced);
+      return {usc:money(u),effective:pct(v.income?u/v.income*100:0),monthly:money(u/12),rate_basis:reduced?'Reduced 2026 rates':'Standard 2026 rates'};
     },
     prsi_2026(v){
-      const p=annualClassA2026(v.salary); return {weekly_before:money(p.before),weekly_after:money(p.after),annual:money(p.annual),effective:pct(v.salary?p.annual/v.salary*100:0)};
+      const p=annualClassA2026(v.salary), octoberEffect=Math.max(0,(p.after-p.before)*13);
+      return {weekly_equivalent:money(p.weekly),weekly_before:money(p.before),weekly_after:money(p.after),annual:money(p.annual),effective:pct(v.salary?p.annual/v.salary*100:0),october_increase:money(octoberEffect)};
     },
     cat(v){
       const thresholds={A:400000,B:40000,C:20000}, threshold=thresholds[v.group]||0, small=v.benefit_type==='gift'?Math.min(3000,v.benefit):0;
@@ -920,8 +937,8 @@
       return {threshold:money(threshold),current_taxable_value:money(current),threshold_remaining:money(Math.max(0,threshold-v.prior)),cat:money(cat)};
     },
     rent_credit(v){
-      const rentBased=v.rent*.20, cap=v.joint==='yes'?2000:1000, credit=Math.min(rentBased,cap,v.income_tax_liability);
-      return {rent_based:money(rentBased),statutory_cap:money(cap),credit:money(Math.max(0,credit))};
+      const rentBased=v.rent*.20, cap=v.joint==='yes'?2000:1000, credit=Math.min(rentBased,cap,v.income_tax_liability), usable=Math.max(0,credit);
+      return {rent_based:money(rentBased),statutory_cap:money(cap),credit:money(usable),rent_for_max:money(cap/.20),unused_cap:money(Math.max(0,cap-usable))};
     },
     help_to_buy(v){
       const affordable=v.__advanced?Math.max(0,v.la_affordable_contribution||0):0;
@@ -957,8 +974,16 @@
     dirt(v){ const tax=v.interest*.33, net=v.interest-tax; return {dirt:money(tax),net:money(net),retained:pct(v.interest?net/v.interest*100:0)}; },
     contractor_vs_salary(v){
       const employee=employeeNet2026(v.salary,0,44000,0), revenue=v.day_rate*v.billable_days, profit=Math.max(0,revenue-v.contractor_costs), pension=Math.min(v.contractor_pension,profit), contractor=selfEmployedNet2026(profit,pension), diff=contractor.net-employee.net;
+      let breakEven=0;
+      if(v.billable_days>0){
+        let lo=0, hi=Math.max(1000,v.day_rate*3,1);
+        const netAt=rate=>{const p=Math.max(0,rate*v.billable_days-v.contractor_costs), pen=Math.min(v.contractor_pension,p);return selfEmployedNet2026(p,pen).net;};
+        while(netAt(hi)<employee.net && hi<10000) hi*=2;
+        for(let i=0;i<60;i++){const mid=(lo+hi)/2;if(netAt(mid)>=employee.net)hi=mid;else lo=mid;}
+        breakEven=hi;
+      }
       return {
-        employee_net:money(employee.net),contractor_revenue:money(revenue),contractor_profit:money(profit),contractor_net:money(contractor.net),net_difference:(diff>=0?'+':'')+money(diff),
+        employee_net:money(employee.net),contractor_revenue:money(revenue),contractor_profit:money(profit),contractor_net:money(contractor.net),net_difference:(diff>=0?'+':'')+money(diff),break_even_day_rate:v.billable_days>0?money(breakEven)+'/day':'—',
         __chart:{type:'bar',title:'Gross and estimated net comparison',caption:'The contractor side excludes the value of employment benefits and uses the stated self-employed assumptions.',labels:['Employee','Contractor'],series:[{label:'Gross / profit',values:[v.salary,profit]},{label:'Estimated take-home',values:[employee.net,contractor.net]}]}
       };
     },
