@@ -40,6 +40,14 @@ Yes, under the implemented Class A assumptions.
 ### Does it include bonuses?
 Only if included in the annual gross pay you enter.
 
+## Advanced mode: use your own Revenue inputs
+
+Basic mode is intentionally a clean single-PAYE baseline. Advanced mode lets you replace the €44,000 standard-rate band with your own annual 20% band, add tax credits beyond the standard personal/employee credits already built into the model, and include an employee pension contribution.
+
+Advanced mode can also model Revenue's **reduced USC rates**. For 2026, those rates can apply to a qualifying person aged 70 or over or a full Medical Card holder where aggregate income is €60,000 or less. The calculator automatically falls back to standard USC when the income entered exceeds €60,000.
+
+The Advanced results also show the total deductions modelled, the effective deduction rate and the change in take-home produced by the next €1,000 of gross salary under the same assumptions. That last figure is a marginal scenario, not a promise about an individual payslip.
+
 ## Method and limitations
 
 The tool applies the implemented 2026 Income Tax bands/credits, standard USC schedule and Class A employee PRSI assumptions to the entered salary and pension amount. It is an estimate, not a payroll engine.
