@@ -48,6 +48,24 @@ Useful follow-up questions include:
 
 The more precise the number looks, the easier it is to forget the uncertainty behind it. The purpose of the calculator is to make the assumptions visible.
 
+## Worked example
+
+For a 30-year-old man weighing 80 kg and measuring 180 cm, the Mifflin–St Jeor equation estimates resting energy at roughly:
+
+**10 × 80 + 6.25 × 180 − 5 × 30 + 5 = 1,780 kcal/day.**
+
+If an activity factor of 1.6 is selected, the maintenance illustration becomes about **2,848 kcal/day**.
+
+If the resistance-training protein context is selected, 1.6 g/kg gives about **128 g protein/day**. The calculator then allocates the remaining modelled energy to its fat and carbohydrate illustration.
+
+Those figures are useful starting points, but they are still predictions. Two people with the same age, height and weight can have different measured energy expenditure.
+
+## Method and limitations
+
+Resting energy is predicted with the Mifflin–St Jeor equation. Maintenance energy multiplies that result by the selected physical-activity factor. The optional ±10% energy scenarios are simple illustrations, not prescribed calorie deficits or surpluses.
+
+Protein is set to the selected evidence context, fat is modelled at 30% of scenario energy and carbohydrate receives the remaining energy. The tool does not account for pregnancy, lactation, clinical disease, eating-disorder history, medication effects or measured metabolic data.
+
 ## Frequently asked questions
 
 ### Is this a weight-loss prescription?
