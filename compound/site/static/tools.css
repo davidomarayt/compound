@@ -129,3 +129,74 @@
     font-size:clamp(2.2rem,11vw,3.2rem);
   }
 }
+
+
+/* Responsive integrity audit — prevent calculator values and controls escaping cards. */
+.tool-page,
+.tools-hub,
+.tool-workspace,
+.tool-form,
+.tool-results,
+.tool-fields,
+.tool-field,
+.tool-input-wrap,
+.tool-result-grid,
+.tool-result,
+.tool-explainer,
+.tool-explainer-main,
+.tool-source-box,
+.tool-more,
+.tool-more-links,
+.tool-card {
+  min-width:0;
+}
+.tool-field input,
+.tool-field select,
+.tool-input-wrap input,
+.tool-search input {
+  min-width:0;
+  max-width:100%;
+}
+.tool-result {
+  container-type:inline-size;
+  overflow:hidden;
+}
+.tool-result strong {
+  max-width:100%;
+  font-variant-numeric:tabular-nums;
+  overflow-wrap:anywhere;
+  font-size:clamp(1.35rem, 9cqw, 2.35rem);
+  line-height:1.05;
+}
+@supports not (font-size:1cqw) {
+  .tool-result strong { font-size:clamp(1.35rem, 5vw, 2.1rem); }
+}
+.tool-page-header h1,
+.tool-card h2,
+.tool-card h3,
+.tool-more-links a {
+  overflow-wrap:anywhere;
+}
+.tool-explainer-main table {
+  max-width:100%;
+}
+@media(max-width:620px){
+  .tool-result { padding:18px; }
+  .tool-result strong { font-size:clamp(1.45rem, 8vw, 2.15rem); }
+}
+
+/* Net worth: one metric per row avoids clipping and improves scanability at every width. */
+.tool-page[data-tool-name="net-worth-calculator"] .tool-result-grid{
+  grid-template-columns:1fr!important;
+}
+.tool-page[data-tool-name="net-worth-calculator"] .tool-result:first-child{
+  grid-column:auto!important;
+}
+.tool-page[data-tool-name="net-worth-calculator"] .tool-result:first-child strong{
+  font-size:clamp(2rem, 11cqw, 3.45rem);
+}
+@supports not (font-size:1cqw) {
+  .tool-page[data-tool-name="net-worth-calculator"] .tool-result:first-child strong{
+    font-size:clamp(2rem, 7vw, 3.2rem);
+  }
+}
