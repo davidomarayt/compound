@@ -38,7 +38,7 @@ Before legal fees, valuation, survey, moving or furnishing, the buyer is already
 
 A buyer who says "I have the 10% deposit" can therefore still be underfunded for completion.
 
-CCPC guidance specifically tells buyers to budget beyond the deposit for costs including legal fees, Stamp Duty, valuation and insurance. citeturn338676search0turn338676search4
+CCPC guidance specifically tells buyers to budget beyond the deposit for costs including legal fees, Stamp Duty, valuation and insurance.
 
 ## Current residential Stamp Duty
 
@@ -46,7 +46,7 @@ The calculator uses the current standard progressive residential rates:
 
 - 1% on the first €1 million;
 - 2% on the portion over €1 million up to €1.5 million;
-- 6% on the portion above €1.5 million. citeturn338676search11
+- 6% on the portion above €1.5 million.
 
 The [Stamp Duty Calculator](/stamp-duty-calculator/) gives a detailed rate-band breakdown.
 
@@ -58,7 +58,7 @@ The House Buying Costs Calculator includes only the standard residential calcula
 
 The percentage of the purchase price you plan to fund without the mortgage.
 
-For a standard principal-home mortgage, the Central Bank's current framework generally has a 90% maximum LTV, implying at least a 10% deposit. citeturn338676search1
+For a standard principal-home mortgage, the Central Bank's current framework generally has a 90% maximum LTV, implying at least a 10% deposit.
 
 A lender may require more, and your income may limit the mortgage independently of the deposit.
 
@@ -82,7 +82,7 @@ Requirements and appropriate scope vary with the property.
 
 A mortgage lender normally requires an approved valuation of the property.
 
-CCPC notes that the lender-approved valuation is part of the drawdown process. citeturn338676search8
+CCPC notes that the lender-approved valuation is part of the drawdown process.
 
 The valuation protects the lender's lending decision; it should not automatically be treated as a substitute for a detailed structural survey.
 
@@ -98,7 +98,7 @@ If a material cost is predictable, it is better to budget it explicitly rather t
 
 ## Advanced mode: insurance and protection
 
-CCPC says most mortgage providers require mortgage protection before the mortgage is issued, and lenders can also require buildings insurance. citeturn338676search10turn338676search14
+CCPC says most mortgage providers require mortgage protection before the mortgage is issued, and lenders can also require buildings insurance.
 
 Premiums vary by borrower, cover and property, so the calculator does not insert an official default.
 
@@ -206,7 +206,7 @@ Use the [Mortgage Borrowing Calculator](/mortgage-borrowing-calculator/) and [Mo
 
 ## Registration fees and legal outlays
 
-CCPC notes that a solicitor handles the transfer and mortgage registration process and identifies registration fees as a separate closing cost. citeturn338676search11
+CCPC notes that a solicitor handles the transfer and mortgage registration process and identifies registration fees as a separate closing cost.
 
 Because professional quotes can package outlays differently, this calculator does not hard-code a registration-fee amount.
 
@@ -303,7 +303,7 @@ Add immediate works identified by the property inspection.
 
 Ask the solicitor and lender for the amounts and conditions still outstanding.
 
-CCPC's drawdown guidance notes insurance, legal checks, valuation and property checks among the items that can matter before funds are released. citeturn338676search8
+CCPC's drawdown guidance notes insurance, legal checks, valuation and property checks among the items that can matter before funds are released.
 
 ### Before completion
 
