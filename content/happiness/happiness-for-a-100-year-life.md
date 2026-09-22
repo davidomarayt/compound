@@ -197,3 +197,9 @@ It may help to write three brief notes: **someone I would like to connect with; 
 Across this series, wealth is there to support choices, health is there to support participation, and happiness gives attention to what makes those choices worthwhile. They overlap in an ordinary visit, a suitable home, time to recover or a meal with someone you like.
 
 A hundredth birthday remains uncertain. The coming week is close enough to make room for something that matters.
+
+## Related Compound guides
+
+For the practical evidence on life satisfaction and the habits most worth testing, read [How to be happier: what the evidence actually says](/happiness/how-to-be-happier-evidence-ireland/).
+
+For the social side of a long life, see [How to make friends as an adult in Ireland](/happiness/how-to-make-friends-as-an-adult-ireland/) and [Loneliness in Ireland](/happiness/loneliness-ireland-how-common-what-helps/).
