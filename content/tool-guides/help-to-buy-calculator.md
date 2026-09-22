@@ -99,6 +99,10 @@ For qualifying Affordable Purchase Scheme contracts entered into on or after 11 
 ### Can I rely on the calculator before Revenue approval?
 No. The result is a numerical planning screen; Revenue determines eligibility and the actual refund.
 
+## How First Home Scheme equity is treated in the 70% test
+
+**First Home Scheme equity does not count** towards the Help to Buy 70% qualifying-finance test. The calculator therefore keeps FHS shared equity separate from the qualifying mortgage/Local Authority affordable-purchase finance used for that screen.
+
 ## Method and limitations
 
 The calculator first sets **qualifying finance** equal to the mortgage entered. In Advanced mode, it adds the Local Authority affordable dwelling contribution entered by the user. It then calculates:
