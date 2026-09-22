@@ -40,6 +40,18 @@ Not directly. This tool assumes the same extra amount every month.
 ### Is the saving guaranteed?
 Only under the entered assumptions. A future rate change changes the outcome.
 
+## Rate changes alter the value of overpaying
+
+The economic value of an overpayment is closely linked to the mortgage rate avoided.
+
+At a higher mortgage rate, each euro of balance eliminated prevents more future interest. At a very low rate, the guaranteed interest saving is smaller, so the trade-off against keeping cash or investing becomes different.
+
+That does not mean you should try to forecast rates perfectly. Instead, run the overpayment at your current rate and again at a plausible future rate. If the strategy still works for your budget under both, the decision is less dependent on one assumption.
+
+Also consider whether you want to reduce **term** or reduce **future required payment** after a lump-sum overpayment. Lenders can handle this differently. Many people prefer keeping the contractual payment unchanged so the mortgage finishes sooner, but some value lower required payments for cash-flow flexibility.
+
+Ask the lender how it will apply the extra payment before assuming the calculator's term-saving path will exactly match the account.
+
 ## Method and limitations
 
 The calculator amortises the balance month by month using the entered annual rate divided by 12. It compares the standard scheduled payment with that payment plus the chosen overpayment. It does not model future rate changes, arrears, payment holidays, lender fees, break charges or irregular lump sums.

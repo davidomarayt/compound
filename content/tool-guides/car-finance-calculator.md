@@ -42,6 +42,18 @@ No. Compare actual APR, fees and term.
 ### Is GMFV guaranteed resale value?
 It is a contractual final-value concept subject to agreement conditions, not a guarantee that every market-sale scenario produces equity.
 
+## Compare the exit, not just the entry
+
+The most revealing part of a car-finance agreement can be what happens at the end.
+
+With a personal loan, the remaining loan balance and the car's market value are separate: you own the car and can sell it subject to clearing any outstanding borrowing. With HP, ownership transfers after the agreement is completed. With PCP, the final balloon means you normally choose among paying to keep the car, returning it subject to the agreement, or using any equity toward another vehicle.
+
+That makes **estimated end value** important. If the car is worth materially more than the PCP balloon, there may be equity. If it is worth close to the balloon, there may be little. If return conditions are breached, mileage or condition charges can change the economics.
+
+Also compare the total amount financed after deposit. A large deposit can make every monthly payment look attractive while hiding how much cash was committed up front.
+
+For a fair comparison, keep car price and deposit constant first, compare equivalent terms, then test the actual dealer offers including fees and balloon. Only after that should convenience or ownership preference break the tie.
+
 ## Method and limitations
 
 The tool amortises the loan and HP balances and uses a balloon-payment formula for PCP. Advanced mode adds the entered fees, mileage/condition charges and estimated end value. It does not model tax, insurance, depreciation curves or every contract clause.

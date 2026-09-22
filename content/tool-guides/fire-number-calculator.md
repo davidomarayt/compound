@@ -40,6 +40,18 @@ Potentially, because future guaranteed income can reduce the amount needed from 
 ### Does this calculator include tax?
 Not unless explicitly modelled in the inputs.
 
+## Sequence risk is the weakness in simple withdrawal rules
+
+A constant withdrawal-rate calculation assumes a neat relationship between portfolio size and spending, but real markets do not deliver average returns in a smooth order.
+
+Imagine two retirees who both average 5% over 20 years. One experiences a large market fall in years 1–2 while making withdrawals; the other experiences the same fall in years 18–19. The first can end with far less capital because assets were sold at depressed prices before the recovery.
+
+That is sequence-of-returns risk, and it is one reason a single 4% figure should not be treated as a law.
+
+Flexible spending can improve resilience. A retiree able to postpone large discretionary spending after a market decline is in a different position from someone whose entire withdrawal is fixed essential expenditure.
+
+Irish tax also matters. A €40,000 gross portfolio withdrawal does not necessarily fund €40,000 of spending after tax, and pension assets can have different access/tax treatment from ordinary investment accounts. Build the FIRE number from **after-tax lifestyle needs**, then model each asset bucket separately.
+
 ## Method and limitations
 
 The tool divides annual spending by the chosen withdrawal-rate assumption. It is a planning ratio, not a stochastic retirement simulation, and it does not model sequence risk, tax, asset allocation or future State Pension policy.

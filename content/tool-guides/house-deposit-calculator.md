@@ -40,6 +40,20 @@ Sometimes, subject to lender evidence requirements and possible tax consideratio
 ### Does Help to Buy replace the deposit?
 Not automatically. Eligibility, limits and lender rules still apply.
 
+## Deposit percentage can influence the mortgage rate
+
+The minimum deposit is not always the economically optimal deposit.
+
+Mortgage products are often priced in loan-to-value bands. If adding several thousand euro to the deposit moves the mortgage into a lower LTV band, the borrower may qualify for a different rate. That rate difference then applies to the entire mortgage balance, not only the extra deposit.
+
+This creates a useful calculation: compare the extra cash required to cross an LTV threshold with the interest saving from the lower rate.
+
+But there is a limit. Putting €20,000 more into the house to save a small amount of interest can be unattractive if it leaves no emergency savings, especially just after moving when unexpected costs are common.
+
+For first-time buyers, also separate **deposit source** from **deposit amount**. Savings, gifts, Help to Buy and shared-equity support can each have documentation or eligibility requirements. A lender may ask for evidence showing where funds came from.
+
+The calculator answers the percentage arithmetic. Funding quality and lender acceptance are separate questions.
+
 ## Method and limitations
 
 The tool applies 10% for a principal home and 30% for buy-to-let under the standard LTV framework. It does not determine lender approval, gifted-deposit acceptability, scheme eligibility or transaction costs.

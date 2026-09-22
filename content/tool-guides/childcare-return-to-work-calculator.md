@@ -40,6 +40,22 @@ They are economically valuable even though they are not immediate cash.
 ### What about career progression?
 That is difficult to quantify and is outside the simple monthly comparison.
 
+## The one-year result can miss long-term financial effects
+
+Returning to work can affect more than this year's bank balance.
+
+Time in employment can contribute to pension saving, employer pension matching, future salary progression, promotion opportunities, professional registration and social-insurance history. A household may accept a modest short-term cash gain because keeping a career active has longer-term value.
+
+The reverse is also true: paid work can create costs that are difficult to capture precisely, including commuting time, additional convenience spending and the need for backup childcare when a child is sick.
+
+A useful analysis therefore has three layers:
+
+1. **Immediate cash flow** — take-home pay minus childcare and work costs.
+2. **Employment benefits** — pension, paid leave and other employer-funded value.
+3. **Long-term trajectory** — how the choice might affect future earnings or working hours.
+
+The calculator intentionally focuses on layer one because it can be measured. Use it as a foundation rather than a verdict on whether returning to work is worthwhile for your family.
+
 ## Method and limitations
 
 The tool estimates take-home income under its tax assumptions, subtracts entered childcare and work costs, and compares the result with the alternative scenario. It does not value career progression, unpaid care, employment rights or every social-welfare interaction.

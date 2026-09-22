@@ -40,6 +40,18 @@ No.
 ### Does it include VAT?
 Not as personal income; VAT collected for Revenue is not ordinary turnover profit.
 
+## Build a contractor rate from the employee package, not the salary alone
+
+A strong contractor comparison starts by estimating the value of the employee package you would be giving up.
+
+Add gross salary, employer pension contributions, paid annual leave, paid public holidays, bonus expectations, health insurance or other benefits that genuinely have value to you. Then consider contractor-only costs such as professional indemnity insurance, accounting, equipment, training and periods between assignments.
+
+Next, divide the contractor revenue target by **realistic billable days**, not working days in the calendar. A 220-day assumption already implies roughly 40–45 weekdays that are not billed; many contractors should stress-test 200 or even 180 days as well.
+
+There is also a risk premium. A contract can end with less notice and may not carry employee redundancy or unfair-dismissal protections. The appropriate premium is personal, but the risk should at least be visible in the decision.
+
+Finally, employment status is a legal/factual question. Revenue, the Department of Social Protection and the WRC look at the reality of the relationship. A contract that calls someone 'self-employed' does not settle the issue by itself.
+
 ## Method and limitations
 
 The tool annualises the entered contractor rate and billable days, subtracts selected business costs and applies the simplified 2026 employee/self-employed tax functions implemented in the site. It is not a full tax return or legal employment-status test.

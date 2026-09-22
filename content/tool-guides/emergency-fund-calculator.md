@@ -40,6 +40,18 @@ Potentially, but it depends on whether the incomes are genuinely independent and
 ### Should I include mortgage payments in essential expenses?
 If they would still need to be paid during an emergency, yes.
 
+## Accessibility matters more than headline return
+
+An emergency fund is insurance against needing to make a bad financial decision under pressure. That is why liquidity matters.
+
+If the car fails, a job ends or a boiler needs replacing, money locked inside a pension or exposed to a sharp market fall is not equivalent to cash in an accessible account.
+
+A practical structure can be layered: a smaller amount instantly accessible for immediate bills, with the rest in a high-quality deposit account that may take a little longer to access. The exact arrangement depends on the household, but the goal is to avoid using expensive credit simply because the emergency money is inaccessible.
+
+Review the target whenever fixed commitments change. Buying a home, taking on childcare costs, becoming self-employed or moving to a single-income household can all increase the amount of cash resilience you need.
+
+Conversely, a household with very secure dual incomes, low fixed costs and strong insurance may choose a smaller buffer. The 'months of expenses' input is therefore a risk preference, not a universal financial law.
+
 ## Method and limitations
 
 The calculator multiplies monthly essential expenses by the selected number of months, subtracts current emergency savings and divides the remaining gap by the monthly saving amount to estimate time. It does not model interest, inflation or unexpected withdrawals.

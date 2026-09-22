@@ -40,6 +40,22 @@ No. Savings depend on when you use electricity.
 ### Are dynamic tariffs the same as day/night tariffs?
 No. Dynamic prices can change every half-hour.
 
+## Use your own load profile where possible
+
+Annual kWh is the starting point, but two households using the same 4,000 kWh can face different bills if one consumes heavily at expensive peak times and the other shifts flexible loads overnight.
+
+Smart-meter data can reveal that pattern. Large flexible uses such as EV charging, immersion heating, dishwashers, laundry and batteries can sometimes be moved without reducing comfort.
+
+When comparing tariffs, calculate at least three elements separately:
+
+- the annual standing charge;
+- the weighted cost of the kWh you expect to use in each time band;
+- any conditions attached to discounts or introductory offers.
+
+A tariff with a very cheap night window can be excellent for an EV household but poor for a home with most consumption during the evening peak.
+
+Also remember that electricity prices can change during the contract period. This calculator is most useful as a snapshot using today's tariff and your recent annual consumption, then repeated when a fixed discount or contract period ends.
+
 ## Method and limitations
 
 The tool multiplies energy consumption by the entered rates and adds fixed charges under the selected assumptions. It does not reproduce every supplier discount, levy, VAT treatment or half-hourly tariff.

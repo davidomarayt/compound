@@ -40,6 +40,16 @@ Not reliably. Many funds can fall under different tax regimes.
 ### Does it calculate payment deadlines?
 No.
 
+## Basis, costs and losses deserve careful records
+
+The purchase price is only part of the CGT basis. Revenue allows certain incidental costs of acquisition and disposal, and qualifying enhancement expenditure can also matter. In practice, old solicitor invoices, broker statements and records of capital improvements can become valuable years after the money was spent.
+
+Capital losses also deserve proper tracking. An allowable loss can generally reduce chargeable gains subject to the tax rules, but losses are not interchangeable with ordinary income losses. Keep documentation even in years when no CGT is payable because the loss may matter later.
+
+For investments, be especially careful about assuming every product is taxed under ordinary CGT. Irish-domiciled and many EU/OECD funds can fall under the investment-undertaking/offshore-fund regime instead, with different rates and deemed-disposal rules. A share sold directly may be a CGT asset while an apparently similar fund can have entirely different tax treatment.
+
+If you are making a significant disposal, use the calculator to estimate scale, then reconcile the exact asset, cost basis, reliefs and payment date against Revenue guidance before filing.
+
 ## Method and limitations
 
 The tool calculates sale proceeds minus purchase cost and entered allowable costs, subtracts entered losses and the €1,270 annual exemption, then applies 33% to the remaining taxable gain. It does not model every relief, rate or product-specific tax regime.

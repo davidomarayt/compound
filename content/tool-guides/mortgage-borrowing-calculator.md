@@ -40,6 +40,18 @@ No. Shared equity changes the funding structure and has separate eligibility rul
 ### Why might my lender quote differ?
 Because lenders apply their own affordability and credit standards on top of the macroprudential rules.
 
+## Why the maximum is not necessarily the target
+
+A regulatory maximum answers "what might fit within the macroprudential rules?" It does not answer "what mortgage would leave the household comfortable?"
+
+A household borrowing at the maximum can still have a strong budget if income is high and fixed costs are low. Another household at a lower multiple can feel stretched because of childcare, commuting, maintenance payments or irregular income.
+
+A useful next step is to take the calculator's indicative mortgage and run it through three repayment scenarios: the expected rate, the expected rate plus 0.5 percentage points, and plus 1 percentage point. Then compare those payments with actual net income.
+
+It is also worth distinguishing **approval capacity** from **purchase budget**. If the bank could lend €320,000 and you have €80,000 in cash, that does not automatically mean you should bid €400,000. Some of the cash may be needed for Stamp Duty, legal costs, furnishing and an emergency reserve.
+
+Treat the maximum as an outer boundary. Your own target can rationally be lower.
+
 ## Method and limitations
 
 The tool applies the standard LTI multiple for the selected buyer type and combines it with the deposit entered. It does not model lender exceptions, full affordability tests, scheme eligibility or purchase costs.
