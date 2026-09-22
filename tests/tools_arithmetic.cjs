@@ -93,4 +93,36 @@ const lpt = calculators.lpt({value: 400000, authority: 'meath'});
 assert.equal(lpt.base_lpt, '€333.00');
 assert.equal(lpt.lpt, '€333.00');
 
+// HTB: Local Authority Affordable Purchase contribution counts only in Advanced mode.
+const htbBasic = calculators.help_to_buy({
+  property_value: 400000, mortgage: 260000, tax_paid: 30000,
+  la_affordable_contribution: 30000, __advanced: false
+});
+assert.equal(htbBasic.ltv, '65%');
+assert.equal(htbBasic.claim, '€0.00');
+assert.equal(htbBasic.eligibility, 'Qualifying finance is below 70%');
+
+const htbAffordable = calculators.help_to_buy({
+  property_value: 400000, mortgage: 260000, tax_paid: 30000,
+  la_affordable_contribution: 30000, __advanced: true
+});
+assert.equal(htbAffordable.qualifying_finance, '€290,000.00');
+assert.equal(htbAffordable.minimum_finance, '€280,000.00');
+assert.equal(htbAffordable.ltv, '72.5%');
+assert.equal(htbAffordable.claim, '€30,000.00');
+assert.equal(htbAffordable.eligibility, 'Passes basic value/finance check');
+
+// FHS: Meath ceiling, deposit/HTB funding stack and service-charge arithmetic.
+const fhs = calculators.first_home_scheme({
+  property_value: 400000, authority: 'meath', property_type: 'house',
+  mortgage: 300000, deposit: 40000, htb: 'yes', htb_amount: 30000
+});
+assert.equal(fhs.price_ceiling, '€475,000.00');
+assert.equal(fhs.gap, '€30,000.00');
+assert.equal(fhs.share, '7.5%');
+assert.equal(fhs.max_fhs, '€80,000.00');
+assert.equal(fhs.year6_charge, '€525.00');
+assert.equal(fhs.charges_to_year10, '€2,625.00');
+assert.equal(fhs.check, 'Within calculator’s basic scheme range');
+
 console.log('Calculator arithmetic regression checks passed.');
