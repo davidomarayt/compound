@@ -13,6 +13,8 @@ meta_description: 'The US Federal Reserve raised rates to 3.75%–4.00% in Septe
 tags: [news, federal-reserve, interest-rates, investing, mortgages, ireland, united-states]
 news_image_query: 'US dollar banknotes finance interest rates economy'
 related_tools:
+- mortgage-calculator
+- mortgage-switch-calculator
 - compound-interest-calculator
 social:
   enabled: true
