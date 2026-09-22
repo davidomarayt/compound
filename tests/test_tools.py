@@ -394,3 +394,17 @@ def test_every_calculator_has_contextual_input_help():
 
     for tool in tools:
         assert any(field.get("help") for field in tool["fields"]), f"{tool['slug']} needs at least one contextual input hint"
+
+
+def test_calculators_support_side_by_side_scenario_comparison():
+    root = Path(__file__).parents[1] / "compound" / "site"
+    template = (root / "templates" / "tool.html").read_text()
+    js = (root / "static" / "tools.js").read_text()
+    css = (root / "static" / "tools.css").read_text()
+
+    assert "data-tool-save-scenario" in template
+    assert "data-tool-compare-panel" in template
+    assert "data-tool-clear-scenario" in template
+    assert "snapshotResults" in js
+    assert "renderSavedComparison" in js
+    assert "tool-compare-row" in css
