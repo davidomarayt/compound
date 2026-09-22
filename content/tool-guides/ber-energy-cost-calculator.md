@@ -62,6 +62,44 @@ That distinction explains why an A-rated home can still have a high bill if it i
 
 If you are comparing two homes, look at both the BER certificate and the floor area. A larger efficient home can still use more total energy than a smaller less-efficient one. The calculator helps translate the rating-style intensity into a whole-house number so that difference is easier to see.
 
+## BER is an asset metric; your bill is a household outcome
+
+A BER is designed to describe the energy performance of the dwelling under standardised assumptions. Your actual electricity, gas or oil bill reflects both the building and the people living in it.
+
+That distinction explains why two households in identical houses can have different bills, and why two different houses with similar annual bills can still have different BERs.
+
+Use the BER side of the calculator to understand the **building**, then use actual bills to understand your household's behaviour, tariff and comfort preferences.
+
+### The BER scale changed in May 2026
+
+SEAI introduced a simplified Irish BER scale from 24 May 2026. The current categories are A0, A, B, C, D, E, F and G, replacing the older sub-categories such as B1, B2 and B3.
+
+A0 identifies the most energy-efficient buildings that do not use fossil fuels. This matters when comparing older BER documentation or property listings because a historical certificate may use the previous, more granular scale.
+
+The calculator should therefore be treated as an energy-intensity planning tool rather than a direct converter between every historic label and the new simplified label.
+
+### Floor area is essential
+
+BER-style energy performance is intensity-based. Multiplying an intensity assumption by floor area converts the rating concept into an indicative whole-house energy requirement.
+
+That means a larger A-rated home can still use more total energy than a much smaller C-rated home. Efficiency and total consumption are related but not identical.
+
+When comparing properties, always look at both the rating and the size of the dwelling.
+
+### Use the Advisory Report for upgrade sequencing
+
+A BER certificate is accompanied by an Advisory Report that can help identify potential improvements. The financial priority of those measures still depends on cost, grants, the existing heating system, the condition of the building and your planned ownership period.
+
+Use the [Whole-House Retrofit Planner](/whole-house-retrofit-planner/) to test packages of measures and the [Solar Payback Calculator](/solar-payback-calculator/) for PV economics.
+
+### Do not convert the estimate directly into a guaranteed bill saving
+
+The calculator applies a blended energy-price assumption to illustrative current and target energy use. Real bills can differ because of fuel mix, thermostat settings, occupancy, weather, hot-water use, tariffs and rebound effects after upgrades.
+
+A better interpretation is: “What order of magnitude of energy and cost reduction might this change represent?” rather than “What exact bill will I receive next year?”
+
+SEAI remains the authoritative source for [BER information](https://www.seai.ie/ber) and [understanding BER ratings](https://www.seai.ie/ber/understand-a-ber-rating).
+
 ## Method and limitations
 
 The calculator multiplies floor area by the entered energy-intensity figures and applies the same blended energy-price assumption to current and target scenarios. It is a planning illustration rather than DEAP software.
