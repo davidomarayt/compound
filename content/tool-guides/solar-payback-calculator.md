@@ -52,6 +52,46 @@ No. Eligibility and approval conditions apply.
 ### Does the calculator model panel degradation?
 The main payback result uses the assumptions described and does not fully model every long-term degradation factor.
 
+## Model self-consumption before chasing headline generation
+
+Solar economics depend on what happens to each generated kilowatt-hour. Electricity used in the home can avoid buying power at the retail import rate, while exported electricity earns the export rate available from the supplier. Those two values are not necessarily equal.
+
+That is why self-consumption is a critical assumption. A household with daytime demand, an EV that can charge during solar hours, a heat pump or a well-managed battery may use a larger share of generation behind the meter than a low-daytime-use household.
+
+Advanced mode is designed to expose those assumptions rather than hide them inside a single payback figure.
+
+### The 2026 SEAI grant should be treated as an eligibility input
+
+SEAI's domestic Solar PV grant remains capped at €1,800 in 2026. The published structure is €700 per kWp up to 2 kWp and €200 per additional kWp up to 4 kWp, with the maximum grant reached at 4 kWp.
+
+Eligibility is not automatic. SEAI states that the property needs an MPRN, must have been built and occupied before 2021, and must not previously have received solar PV funding for that MPRN under the scheme. The calculator therefore separates “grant eligible” from system size instead of assuming every installation receives €1,800.
+
+### Battery payback is a separate investment decision
+
+A battery can increase self-consumption and may add value through night-rate charging and tariff arbitrage, but its economics should be tested separately from the panels.
+
+Compare:
+
+- solar without battery,
+- solar plus battery,
+- and the incremental battery cost versus the incremental annual benefit.
+
+The **battery incremental payback** output is more useful than allowing panel savings to make the battery appear to pay for itself. A battery can be strategically valuable for backup, tariff management or self-sufficiency even where its standalone financial payback is weaker; those non-financial benefits should be kept separate from the pure return calculation.
+
+### Stress-test the quote
+
+Run at least three cases before signing:
+
+- a conservative generation case,
+- your central estimate,
+- and a favourable case.
+
+Then lower the assumed import rate, export rate or self-consumption percentage and check whether the project still looks acceptable. A proposal that only works under very optimistic tariffs or generation is more fragile than one that remains attractive under conservative inputs.
+
+For broader home-energy sequencing, use the [Whole-House Retrofit Planner](/whole-house-retrofit-planner/) and [BER Energy Cost Calculator](/ber-energy-cost-calculator/).
+
+See SEAI's current [Solar Electricity PV Grant](https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant) guidance for eligibility and 2026 grant values.
+
 ## Method and limitations
 
 The tool estimates annual generation from system size and generation-per-kWp, values direct self-use, EV use, battery-delivered energy and exports, subtracts the eligible grant from cost and divides net cost by annual value for simple payback.
