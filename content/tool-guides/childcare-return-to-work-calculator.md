@@ -2,6 +2,12 @@
 
 This calculator compares the household cash-flow effect of returning to paid work with the childcare and work-related costs that come with it. It is not a statement about the value of work or caregiving; it isolates the financial side of the decision.
 
+## Basic and Advanced modes
+
+**Basic** is designed for a fast first-pass comparison: gross salary, number of children, childcare hours and fees, and the NCS hourly subsidy you enter. It uses the calculator's standard 2026 single-PAYE assumptions and does not subtract optional commuting or other work-related costs.
+
+Switch to **Advanced** when the decision is close or you want a more realistic personal scenario. Advanced adds pension contributions, paid working hours, weeks worked, commuting and other employment costs, your available standard-rate tax band, additional tax credits and reduced-USC status. It also estimates the gross salary at which the modelled take-home pay would just cover the childcare and work costs entered. That break-even figure holds the NCS rate you entered constant, so it is a scenario rather than a prediction of future subsidy entitlement.
+
 ## How to read the result
 
 The headline result should be read as **incremental household cash flow**. Start with the additional take-home pay, subtract childcare after any modelled National Childcare Scheme support, then subtract commuting and other work costs.
