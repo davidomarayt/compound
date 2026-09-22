@@ -1480,3 +1480,80 @@ h1, h2, h3 {
   .news-hero{padding:38px 0}
   .news-principles{gap:14px 20px}
 }
+
+
+/* Homepage calculator feature */
+.calculator-feature{
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);
+  gap:54px;
+  align-items:center;
+  margin:70px 0;
+  padding:46px 50px;
+  background:#ede8df;
+  border-radius:3px;
+}
+.calculator-feature-copy{max-width:620px}
+.calculator-feature-copy .eyebrow{margin-bottom:14px}
+.calculator-feature-copy h2{
+  font-size:clamp(42px,4.8vw,64px);
+  line-height:1.02;
+  margin-bottom:18px;
+}
+.calculator-feature-copy>p:not(.eyebrow){
+  max-width:520px;
+  font-size:14px;
+  line-height:1.8;
+  color:var(--ink-2);
+  margin-bottom:24px;
+}
+.calculator-feature-preview{
+  min-height:250px;
+  padding:28px;
+  background:var(--surface);
+  border:1px solid var(--line);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.calculator-preview-label{
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:18px;
+}
+.calculator-preview-value,
+.calculator-preview-result{
+  font-family:var(--serif);
+  font-size:clamp(36px,4vw,52px);
+  line-height:1;
+  color:var(--ink);
+}
+.calculator-preview-result{color:var(--wealth)}
+.calculator-preview-arrow{
+  font-size:24px;
+  color:var(--muted);
+  margin:8px 0;
+}
+.calculator-feature-preview p{
+  margin-top:18px;
+  font-size:11px;
+  line-height:1.6;
+  color:var(--muted);
+}
+@media(max-width:760px){
+  .calculator-feature{
+    grid-template-columns:1fr;
+    gap:26px;
+    margin:44px 0;
+    padding:30px 24px;
+  }
+  .calculator-feature-copy h2{font-size:42px}
+  .calculator-feature-copy>p:not(.eyebrow){font-size:13px}
+  .calculator-feature-preview{
+    min-height:0;
+    padding:22px;
+  }
+}
