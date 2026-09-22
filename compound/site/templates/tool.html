@@ -4,7 +4,7 @@
 {% block head %}
 <link rel="canonical" href="{{ site_url }}{{ tool.url }}">
 <meta property="og:type" content="website"><meta property="og:title" content="{{ tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="/static/tools.css?v=20260922-responsive1"><script defer src="/static/tools.js?v=20260922-responsive1"></script>
+<link rel="stylesheet" href="/static/tools.css?v=20260922-gold1"><script defer src="/static/tools.js?v=20260922-gold1"></script>
 <script type="application/ld+json">{{ tool_jsonld|safe }}</script>
 {% endblock %}
 {% block content %}
@@ -53,9 +53,17 @@
     <section class="tool-results" aria-live="polite">
       <p class="eyebrow">YOUR ESTIMATE</p><h2>At a glance</h2>
       <div class="tool-result-grid">
-        {% for result in tool.results %}<div class="tool-result"><span>{{ result.label }}</span><strong data-result="{{ result.id }}">—</strong></div>{% endfor %}
+        {% for result in tool.results %}<div class="tool-result{% if result.id == tool.primary_result %} tool-result-primary{% endif %}"><span>{{ result.label }}</span><strong data-result="{{ result.id }}">—</strong></div>{% endfor %}
       </div>
       <p class="tool-result-note">{{ tool.result_note or 'Planning estimate only. Read the notes below before relying on the result.' }}</p>
+      <div class="tool-scenario-summary" data-tool-scenario-summary hidden>
+        <span>Scenario</span><div data-tool-scenario-chips></div>
+      </div>
+      <div class="tool-result-actions">
+        <button type="button" class="tool-text-action" data-tool-share>Copy scenario link</button>
+        <button type="button" class="tool-text-action" data-tool-print>Print / save</button>
+        <span class="tool-action-status" data-tool-action-status role="status"></span>
+      </div>
     </section>
   </section>
   <section class="tool-chart-panel" data-tool-chart hidden aria-live="polite">
@@ -63,11 +71,17 @@
     <div class="tool-chart-scroll"><div class="tool-chart-canvas" data-chart-canvas></div></div>
     <div class="tool-chart-legend" data-chart-legend></div>
   </section>
+  <section class="tool-use-strip" aria-label="How to use this calculator">
+    <article><span>01</span><h3>Enter your situation</h3><p>Use figures that match your real quote, payslip, bill or plan where possible.</p></article>
+    <article><span>02</span><h3>Stress-test it</h3><p>Change the assumptions that matter most instead of relying on one perfect-looking result.</p></article>
+    <article><span>03</span><h3>Read the context</h3><p>Use the methodology, Irish rules and limitations below before acting on the estimate.</p></article>
+  </section>
   <section class="tool-explainer">
     <div class="tool-explainer-main">{{ tool.guide_html|safe }}</div>
     <aside class="tool-source-box">
       <p class="eyebrow">CHECK THE BASIS</p><h2>Method & sources</h2>
       <p>This calculator runs locally in your browser. Compound does not receive the values you enter.</p>
+      <p class="tool-source-reviewed">Sources and assumptions reviewed {{ tool.updated|long_date }}.</p>
       {% if tool.sources %}<ul>{% for source in tool.sources %}<li><a href="{{ source.url }}" rel="noopener">{{ source.title }} ↗</a></li>{% endfor %}</ul>{% else %}<p>The calculation uses standard arithmetic or amortisation formulas and does not depend on a changing statutory rate.</p>{% endif %}
       <p><a href="/disclaimer/">Important information disclaimer</a></p>
     </aside>
