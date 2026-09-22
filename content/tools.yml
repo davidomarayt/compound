@@ -557,7 +557,7 @@ tools:
     category: Pensions & Investing
     formula: savings_goal
     summary: Turn a savings target into a timeline, then stress-test contribution increases, annual lump sums and a target that may itself rise over time.
-    meta_description: Savings goal calculator Ireland. Estimate time to a target from current savings, monthly contributions and return, with advanced contribution-growth and target-growth scenarios.
+    meta_description: Savings goal calculator Ireland. Estimate time to a target from current savings, monthly contributions, returns and optional contribution or target growth.
     updated: 2026-09-22
     basic_note: "Basic mode assumes the target stays fixed and your monthly contribution stays unchanged. Enter a return you expect to keep after relevant fees and tax."
     advanced_note: "Advanced mode can increase the monthly contribution each year, add an annual lump sum and let the target itself grow. Use target growth only where the thing you are saving for is likely to become more expensive."
@@ -822,7 +822,7 @@ tools:
     category: Pensions & Investing
     formula: regular_savings
     summary: Project a regular saving or investment plan, then show the effect of contribution increases, annual fees and inflation.
-    meta_description: Regular savings calculator Ireland. Project a future balance from starting savings and monthly contributions, with advanced fees, contribution growth and inflation-adjusted results.
+    meta_description: Regular savings calculator Ireland. Project a future balance from starting savings and monthly contributions, with optional fees, contribution growth and inflation.
     updated: 2026-09-22
     basic_note: "Basic mode keeps the monthly contribution constant and treats the annual return as the return received by the account or investment."
     advanced_note: "Advanced mode can increase contributions each year, apply an annual percentage fee and translate the final balance into today's purchasing power."
@@ -1794,7 +1794,7 @@ tools:
     category: Pensions & Investing
     formula: retirement_income
     summary: Combine portfolio withdrawals with State Pension and other income, then stress-test a deterministic retirement path for fees, inflation and lower returns.
-    meta_description: Retirement income calculator Ireland. Estimate gross retirement income and model portfolio sustainability, fees, inflation, target income and a lower-return stress scenario.
+    meta_description: Retirement income calculator Ireland. Estimate income from a pension pot and test fees, inflation, target income, withdrawal rates and lower-return scenarios.
     updated: 2026-09-22
     basic_note: "Basic mode shows first-year gross income and a 30-year deterministic path using 4% annual portfolio return, 2% annual withdrawal increases and no explicit annual fee."
     advanced_note: "Advanced mode adds a gross-income target, an annual portfolio fee and a separate lower-return stress scenario. It still does not model year-by-year market volatility."
@@ -1882,7 +1882,7 @@ tools:
     category: Mortgages & Home Buying
     formula: rent_vs_buy
     summary: Compare a homeowner's net-equity path with a renter who invests the deposit, avoided buying costs and any monthly cash-flow advantage.
-    meta_description: Rent vs buy calculator Ireland. Compare home equity with renting and investing using editable mortgage, rent, growth, maintenance, transaction-cost and investment-return assumptions.
+    meta_description: Rent vs buy calculator Ireland. Compare renting with buying using mortgage costs, rent, home growth, maintenance, transaction costs and investment returns.
     updated: 2026-09-22
     basic_note: "Basic mode uses transparent default assumptions for rent/house-price growth, maintenance, selling costs, fixed ownership costs and renter investment return. Switch to Advanced to challenge them."
     advanced_note: "Advanced mode exposes the assumptions that drive long-run rent-versus-buy results. Treat the investment return as a net return after whatever fees and tax treatment apply to your own investment."
@@ -2815,7 +2815,7 @@ tools:
     category: EV & Motoring
     formula: car_finance
     summary: Compare a personal car loan, hire purchase and PCP using the same car price, deposit and finance assumptions, with an optional advanced mode for fees, mileage and end-value equity.
-    meta_description: Car finance calculator Ireland comparing personal loan vs hire purchase vs PCP. Compare monthly payments, balloon payments, total cost, ownership and advanced PCP mileage/equity scenarios.
+    meta_description: Car finance calculator Ireland for personal loan, HP and PCP. Compare monthly payments, balloon payments, total cost, ownership, mileage and estimated equity.
     updated: 2026-09-22
     basic_note: "Basic mode compares loan, HP and PCP using the same car price, deposit and comparison term. Fees and end-of-PCP assumptions stay at the stated defaults."
     advanced_note: "Advanced mode lets you use the actual term and fees for each quote, plus PCP mileage, condition charges and an estimated end value."
@@ -2928,11 +2928,11 @@ tools:
 
 
   - slug: nutrition-needs-calculator
-    title: Nutrition Needs Calculator — Energy, Protein & Macros
+    title: Nutrition Needs Calculator Ireland — Energy, Protein & Macros
     category: Health
     formula: nutrition_needs
     summary: Estimate resting energy, activity-adjusted maintenance needs, protein and an evidence-grounded macro illustration in one calculator.
-    meta_description: Nutrition needs calculator using Mifflin-St Jeor, EFSA physical activity levels and protein reference values. Estimate resting energy, maintenance calories, protein and macros.
+    meta_description: Nutrition needs calculator Ireland using Mifflin-St Jeor, EFSA activity levels and protein reference values. Estimate resting energy, maintenance, protein and macros.
     updated: 2026-09-22
     basic_note: "Basic mode estimates resting energy, activity-adjusted maintenance energy and the EFSA adult protein reference from a small set of inputs."
     advanced_note: "Advanced mode adds an illustrative ±10% energy scenario and a resistance-training protein evidence point, then shows how the macro arithmetic changes."
