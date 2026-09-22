@@ -107,3 +107,9 @@ If you enjoy tracking progress, track it. If a class helps you turn up, book one
 But leave yourself permission to do a little, miss a week, change your mind or make something that never leaves the kitchen table.
 
 On an ordinary Tuesday, half an hour spent happily absorbed in something can be worth having on its own terms. You do not need to turn it into anything else.
+
+## Related Compound guides
+
+For the wider evidence on hobbies, relationships, exercise, gratitude and life satisfaction, read [How to be happier: what the evidence actually says](/happiness/how-to-be-happier-evidence-ireland/).
+
+If you want to make a hobby more social, see [How to make friends as an adult in Ireland](/happiness/how-to-make-friends-as-an-adult-ireland/).
