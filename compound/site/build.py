@@ -977,17 +977,36 @@ def build_site(settings: Settings) -> dict:
     if client.startswith("ca-pub-"):
         # AdSense checks this file to confirm the site is allowed to show your ads.
         _write(out / "ads.txt", f"google.com, {client.removeprefix('ca-')}, DIRECT, f08c47fec0942fa0\n")
-    urls = ([settings.site_base_url + "/"]
-            + [settings.site_base_url + "/news/"]
-            + ([settings.site_base_url + "/tools/"] if tools else [])
-            + [settings.site_base_url + tool["url"] for tool in tools]
-            + ([settings.site_base_url + bmi_path] if has_bmi else [])
-            + ([settings.site_base_url + calculator_path] if has_calculator else [])
-            + [settings.site_base_url + f"/{p}/" for p in PILLARS]
-            + [settings.site_base_url + a.url for a in articles]
-            + [settings.site_base_url + f"/{pg.slug}/" for pg in pages])
+    sitemap_entries: list[tuple[str, str | None]] = [
+        (settings.site_base_url + "/", None),
+        (settings.site_base_url + "/news/", None),
+    ]
+    if tools:
+        sitemap_entries.append((settings.site_base_url + "/tools/", max(str(t.get("updated") or "") for t in tools)))
+        sitemap_entries.extend(
+            (settings.site_base_url + tool["url"], str(tool.get("updated") or "") or None)
+            for tool in tools
+        )
+    if has_bmi:
+        sitemap_entries.append((settings.site_base_url + bmi_path, "2026-09-22"))
+    if has_calculator:
+        sitemap_entries.append((settings.site_base_url + calculator_path, "2026-09-22"))
+    sitemap_entries.extend((settings.site_base_url + f"/{p}/", None) for p in PILLARS)
+    sitemap_entries.extend(
+        (settings.site_base_url + a.url, (a.reviewed or a.date).isoformat())
+        for a in articles
+    )
+    sitemap_entries.extend((settings.site_base_url + f"/{pg.slug}/", None) for pg in pages)
+
+    sitemap_rows = []
+    for url, lastmod in sitemap_entries:
+        row = f"  <url><loc>{url}</loc>"
+        if lastmod:
+            row += f"<lastmod>{lastmod}</lastmod>"
+        row += "</url>\n"
+        sitemap_rows.append(row)
     _write(out / "sitemap.xml", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n"
-           + "".join(f"  <url><loc>{u}</loc></url>\n" for u in urls) + "</urlset>\n")
+           + "".join(sitemap_rows) + "</urlset>\n")
     return {"articles": len(articles), "tags": len(tag_map), "pages": len(pages), "tools": len(tools)}
 
 
