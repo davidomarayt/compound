@@ -1200,15 +1200,20 @@ tools:
     summary: Estimate the maximum Help to Buy refund for a qualifying new home or self-build.
     meta_description: Help to Buy calculator Ireland. Estimate relief up to €30,000, 10% of property value or tax paid, subject to the €500,000 property cap and 70% mortgage rule.
     updated: 2026-09-22
+    basic_note: "Basic mode applies the 70% finance test using the qualifying mortgage only."
+    advanced_note: "Advanced mode can include a qualifying Local Authority Affordable Purchase contribution for the HTB 70% finance test. Do not enter First Home Scheme equity here."
     fields:
       - {id: property_value, label: New-home purchase price or approved self-build valuation, type: number, prefix: "€", default: 400000, min: 0, step: 1000}
       - {id: mortgage, label: Qualifying mortgage amount, type: number, prefix: "€", default: 300000, min: 0, step: 1000}
       - {id: tax_paid, label: Income Tax + DIRT paid in the previous four tax years, type: number, prefix: "€", default: 30000, min: 0, step: 500}
+      - {id: la_affordable_contribution, label: Local Authority affordable dwelling contribution, type: number, prefix: "€", default: 0, min: 0, step: 500, advanced: true, section_start: Advanced qualifying finance, help: "For qualifying Local Authority Affordable Purchase contracts on or after 11 October 2023. First Home Scheme equity does not count toward the HTB 70% finance test."}
     results:
-      - {id: ltv, label: Mortgage loan-to-value}
+      - {id: ltv, label: Qualifying finance loan-to-value}
+      - {id: qualifying_finance, label: Finance counted for the 70% test}
+      - {id: minimum_finance, label: 70% finance threshold}
       - {id: value_cap, label: 10% of property value}
       - {id: claim, label: Indicative maximum HTB refund}
-      - {id: eligibility, label: Basic value/LTV check}
+      - {id: eligibility, label: Basic value/finance check}
     guide: |
       ## Enhanced Help to Buy runs to the end of 2029
       For a qualifying application, the enhanced refund is the lowest of €30,000, 10% of the qualifying property value, or the Income Tax and DIRT paid in the four tax years before the application. A qualifying property must generally be a new home or self-build valued at €500,000 or less, and the qualifying mortgage must normally be at least 70% of the purchase value or approved valuation.
@@ -1217,6 +1222,7 @@ tools:
     sources:
       - {title: "Revenue — How much can you claim under Help to Buy?", url: "https://www.revenue.ie/en/property/help-to-buy-incentive/how-much-can-you-claim.aspx"}
       - {title: "Revenue — What is a qualifying Help to Buy property?", url: "https://www.revenue.ie/en/property/help-to-buy-incentive/what-type-of-property-qualifies.aspx"}
+      - {title: "Revenue — Help to Buy incentive", url: "https://www.revenue.ie/en/property/help-to-buy-incentive/index.aspx"}
 
   - slug: first-home-scheme-calculator
     title: First Home Scheme Calculator Ireland
@@ -1227,6 +1233,51 @@ tools:
     updated: 2026-09-22
     fields:
       - {id: property_value, label: Purchase price or self-build cost, type: number, prefix: "€", default: 400000, min: 0, step: 1000}
+      - id: authority
+        label: Local authority
+        type: select
+        default: meath
+        help: "The First Home Scheme price ceiling depends on local authority and, in Waterford, property type."
+        options:
+          - {value: carlow, label: Carlow County Council}
+          - {value: cavan, label: Cavan County Council}
+          - {value: clare, label: Clare County Council}
+          - {value: cork_city, label: Cork City Council}
+          - {value: cork_county, label: Cork County Council}
+          - {value: donegal, label: Donegal County Council}
+          - {value: dublin_city, label: Dublin City Council}
+          - {value: dlr, label: Dún Laoghaire-Rathdown County Council}
+          - {value: fingal, label: Fingal County Council}
+          - {value: galway_city, label: Galway City Council}
+          - {value: galway_county, label: Galway County Council}
+          - {value: kerry, label: Kerry County Council}
+          - {value: kildare, label: Kildare County Council}
+          - {value: kilkenny, label: Kilkenny County Council}
+          - {value: laois, label: Laois County Council}
+          - {value: leitrim, label: Leitrim County Council}
+          - {value: limerick, label: Limerick City & County Council}
+          - {value: longford, label: Longford County Council}
+          - {value: louth, label: Louth County Council}
+          - {value: mayo, label: Mayo County Council}
+          - {value: meath, label: Meath County Council}
+          - {value: monaghan, label: Monaghan County Council}
+          - {value: offaly, label: Offaly County Council}
+          - {value: roscommon, label: Roscommon County Council}
+          - {value: sligo, label: Sligo County Council}
+          - {value: south_dublin, label: South Dublin County Council}
+          - {value: tipperary, label: Tipperary County Council}
+          - {value: waterford, label: Waterford City & County Council}
+          - {value: westmeath, label: Westmeath County Council}
+          - {value: wexford, label: Wexford County Council}
+          - {value: wicklow, label: Wicklow County Council}
+      - id: property_type
+        label: Property type
+        type: select
+        default: house
+        options:
+          - {value: house, label: House}
+          - {value: apartment, label: Apartment}
+          - {value: self_build, label: Self-build}
       - {id: mortgage, label: Mortgage available, type: number, prefix: "€", default: 300000, min: 0, step: 1000}
       - {id: deposit, label: Cash deposit / own funds, type: number, prefix: "€", default: 40000, min: 0, step: 1000}
       - id: htb
@@ -1238,10 +1289,13 @@ tools:
           - {value: no, label: No — maximum FHS share is 30%}
       - {id: htb_amount, label: Help to Buy amount included in your funds, type: number, prefix: "€", default: 30000, min: 0, step: 500}
     results:
+      - {id: price_ceiling, label: FHS price ceiling for this location/type}
       - {id: gap, label: Funding gap before FHS}
       - {id: share, label: Equity share needed}
       - {id: max_fhs, label: Current maximum FHS amount by percentage}
-      - {id: check, label: Basic funding-range check}
+      - {id: year6_charge, label: Illustrative service charge in year 6}
+      - {id: charges_to_year10, label: Illustrative service charges through year 10}
+      - {id: check, label: Basic scheme-range check}
     guide: |
       ## FHS is shared equity, not an ordinary loan
       The First Home Scheme can fund up to 30% of the purchase price or eligible self-build cost, reduced to 20% when Help to Buy is used. The minimum equity share is 2.5% of the property price/build cost or €10,000, whichever is higher.
@@ -1249,7 +1303,9 @@ tools:
       The Scheme also has buyer, lender, property and local-authority price-ceiling conditions. This calculator only estimates the arithmetic funding gap; it does not determine formal eligibility.
     sources:
       - {title: "First Home Scheme — Eligibility", url: "https://www.firsthomescheme.ie/about-the-scheme/eligibility/"}
+      - {title: "First Home Scheme — Property price ceilings", url: "https://www.firsthomescheme.ie/about-the-scheme/property-price-ceilings/"}
       - {title: "First Home Scheme — How the equity share works", url: "https://www.firsthomescheme.ie/about-the-scheme/how-the-equity-share-works/"}
+      - {title: "First Home Scheme — Service charges", url: "https://www.firsthomescheme.ie/faqs/service-charges/"}
 
   - slug: dirt-calculator
     title: DIRT Calculator Ireland
