@@ -70,6 +70,38 @@ For 2026, the reduced schedule is 0.5% on the first €12,012 and 2% on the bala
 
 If the reduced-rate option is selected but the income entered is above €60,000, Compound automatically uses the standard USC bands. The result card identifies whether the standard or reduced rate basis was actually used.
 
+## The 2026 standard USC bands are progressive
+
+Revenue's standard 2026 USC schedule applies 0.5% to the first €12,012, 2% to the next €16,688, 3% to the next €41,344 and 8% to the balance, subject to the USC rules and exemptions.
+
+That does **not** mean someone entering the 8% band pays 8% on all income. Like Income Tax bands, USC rates apply to slices of income. The effective USC rate across the whole income is therefore lower than the highest marginal band reached.
+
+### The €13,000 threshold is an exemption test, not a tax-free band
+
+If total income subject to the rule is €13,000 or less, USC may not be payable. Once the exemption is exceeded, however, USC is calculated using the relevant bands from the first euro rather than simply taxing the amount above €13,000.
+
+This is one of the most common sources of misunderstanding in manual USC estimates.
+
+### Why an annual calculator can differ from a payslip
+
+Payroll deductions happen by pay period and can interact with cumulative payroll treatment, irregular pay, multiple employments and Revenue instructions. This calculator is designed primarily as an annual planning tool.
+
+Use it to understand the structure of USC and to compare salary scenarios. For exact payslip reconciliation, compare the result with the Revenue Payroll Notification and the payroll basis actually applied.
+
+### Reduced rates need eligibility, not just a lower income
+
+Advanced mode includes reduced-rate modelling, but reduced USC is not available merely because someone prefers the lower schedule. Eligibility depends on conditions such as age or holding a full Medical Card and the relevant income ceiling.
+
+A GP visit card is not the same as a full Medical Card for this purpose.
+
+### Use marginal USC in salary decisions
+
+When considering a raise, overtime or bonus, compare the USC result before and after the income change. The difference tells you the incremental USC on the extra income.
+
+Then combine it with the [Income Tax Calculator](/income-tax-calculator/) and [PRSI Calculator](/prsi-calculator/) or use the [Take-Home Pay Calculator](/take-home-pay-calculator/) for the full gross-to-net effect.
+
+Revenue's [2026 USC rates and thresholds](https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx) remain the authoritative reference for current bands.
+
 ## Method and limitations
 
 The calculator applies the standard 2026 USC bands implemented in the site. It does not model every exemption, reduced-rate case or special income category.
