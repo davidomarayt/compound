@@ -149,9 +149,12 @@
 
   const scenarioUrl = debts => {
     const url = new URL(window.location.href);
-    url.search = '';
-    url.searchParams.set('extra', String(readExtra()));
-    url.searchParams.set('debts', JSON.stringify(debts.map(d => ({name:d.name,balance:d.balance,apr:d.apr,minimum:d.minimum}))));
+    url.search = ''; url.hash = '';
+    const payload={extra:readExtra(),debts:debts.map(d=>({name:d.name,balance:d.balance,apr:d.apr,minimum:d.minimum}))};
+    const bytes=new TextEncoder().encode(JSON.stringify(payload));
+    let binary=''; bytes.forEach(byte=>binary+=String.fromCharCode(byte));
+    const encoded=btoa(binary).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+    url.hash='scenario='+encoded;
     return url.toString();
   };
 
@@ -173,10 +176,13 @@
   };
 
   const loadSharedScenario = () => {
-    const params=new URLSearchParams(window.location.search);
-    if(!params.has('debts')) return false;
+    if(!window.location.hash.startsWith('#scenario=')) return false;
     try {
-      const parsed=JSON.parse(params.get('debts'));
+      let raw=window.location.hash.slice(10).replace(/-/g,'+').replace(/_/g,'/');
+      while(raw.length%4) raw+='=';
+      const bytes=Uint8Array.from(atob(raw),ch=>ch.charCodeAt(0));
+      const payload=JSON.parse(new TextDecoder().decode(bytes));
+      const parsed=payload.debts;
       if(!Array.isArray(parsed) || !parsed.length) return false;
       rows.innerHTML=''; rowCounter=0;
       parsed.slice(0,maxDebts).forEach(item=>{
@@ -189,7 +195,7 @@
         if(Number.isFinite(debt.balance)&&debt.balance>0&&Number.isFinite(debt.apr)&&debt.apr>=0&&Number.isFinite(debt.minimum)&&debt.minimum>0) addDebtRow(debt);
       });
       if(!rows.children.length) return false;
-      const extra=Number(params.get('extra'));
+      const extra=Number(payload.extra);
       extraInput.value=Number.isFinite(extra)&&extra>=0?String(extra):'0';
       updateSummaryPreview();
       runComparison();
