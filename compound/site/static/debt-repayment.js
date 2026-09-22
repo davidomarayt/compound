@@ -48,6 +48,16 @@
     return new Intl.DateTimeFormat('en-IE', {month:'long', year:'numeric'}).format(d);
   };
 
+  let comparisonTimer=null;
+  const scheduleComparison = () => {
+    updateSummaryPreview();
+    clearTimeout(comparisonTimer);
+    comparisonTimer=setTimeout(()=>{
+      const check=readDebts(true), extra=readExtra();
+      if(!check.problem && check.debts.length && Number.isFinite(extra)) runComparison();
+    },220);
+  };
+
   const addDebtRow = debt => {
     if (rows.children.length >= maxDebts) return;
     rowCounter += 1;
@@ -81,7 +91,7 @@
       updateSummaryPreview();
       addButton.disabled = rows.children.length >= maxDebts;
     });
-    row.querySelectorAll('input').forEach(input => input.addEventListener('input', updateSummaryPreview));
+    row.querySelectorAll('input').forEach(input => input.addEventListener('input', scheduleComparison));
     rows.appendChild(row);
     addButton.disabled = rows.children.length >= maxDebts;
   };
@@ -484,7 +494,7 @@
     e.preventDefault();
     runComparison();
   });
-  extraInput.addEventListener('input', updateSummaryPreview);
+  extraInput.addEventListener('input', scheduleComparison);
   addButton.addEventListener('click', () => addDebtRow());
   clearButton.addEventListener('click', clearExample);
   resetButton.addEventListener('click', loadExample);
