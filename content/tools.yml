@@ -1999,6 +1999,8 @@ tools:
     summary: Model solar PV payback with or without the SEAI grant, plus household demand, EV charging, battery storage, export income and night-rate battery charging.
     meta_description: Solar PV payback calculator Ireland with grant eligibility, household electricity use, EV charging, battery storage, night-rate arbitrage and export income.
     updated: 2026-09-22
+    basic_note: "Basic mode models a solar-only installation using your quote, system size, annual household use, expected generation, self-consumption and import/export rates."
+    advanced_note: "Advanced mode adds home-EV charging and battery storage, including battery losses, solar capture and optional cheap-rate grid charging. It also separates the battery's incremental value from the solar system itself."
     fields:
       - id: system_cost
         section_start: Solar system
@@ -2072,12 +2074,14 @@ tools:
         section_start: Electric vehicle
         label: EV is charged at this home
         type: checkbox
+        advanced: true
         default: false
         help: "Tick this to include the extra electricity demand from home EV charging and the option to divert solar into the car."
       - id: annual_ev_km
         label: EV distance driven per year
         type: number
         suffix: "km"
+        advanced: true
         default: 15000
         min: 0
         step: 500
@@ -2086,6 +2090,7 @@ tools:
         label: EV consumption
         type: number
         suffix: "kWh/100km"
+        advanced: true
         default: 18
         min: 1
         max: 60
@@ -2096,6 +2101,7 @@ tools:
         label: EV charging losses
         type: number
         suffix: "%"
+        advanced: true
         default: 10
         min: 0
         max: 40
@@ -2105,6 +2111,7 @@ tools:
         label: Share of EV charging done at home
         type: number
         suffix: "%"
+        advanced: true
         default: 80
         min: 0
         max: 100
@@ -2114,6 +2121,7 @@ tools:
         label: Share of home EV charging you expect to take directly from solar
         type: number
         suffix: "%"
+        advanced: true
         default: 0
         min: 0
         max: 100
@@ -2125,6 +2133,7 @@ tools:
         type: number
         prefix: "€"
         suffix: "/kWh"
+        advanced: true
         default: 0.10
         min: 0
         step: 0.01
@@ -2135,12 +2144,14 @@ tools:
         section_start: Home battery
         label: Include a home battery
         type: checkbox
+        advanced: true
         default: false
         help: "Tick this if the quote includes a battery or you want to test whether adding one improves or lengthens payback."
       - id: battery_cost
         label: Battery installed cost
         type: number
         prefix: "€"
+        advanced: true
         default: 4500
         min: 0
         step: 100
@@ -2150,6 +2161,7 @@ tools:
         label: Usable battery capacity
         type: number
         suffix: "kWh"
+        advanced: true
         default: 5
         min: 0.1
         max: 100
@@ -2159,6 +2171,7 @@ tools:
         label: Battery round-trip efficiency
         type: number
         suffix: "%"
+        advanced: true
         default: 90
         min: 50
         max: 100
@@ -2169,6 +2182,7 @@ tools:
         label: Share of remaining solar surplus you expect the battery to capture
         type: number
         suffix: "%"
+        advanced: true
         default: 60
         min: 0
         max: 100
@@ -2179,6 +2193,7 @@ tools:
       - id: night_charge
         label: Charge the home battery on a cheap night rate as well
         type: checkbox
+        advanced: true
         default: false
         show_if: has_battery
         help: "This models grid shifting: buying electricity when it is cheap and discharging later to avoid the day rate."
@@ -2187,6 +2202,7 @@ tools:
         type: number
         prefix: "€"
         suffix: "/kWh"
+        advanced: true
         default: 0.10
         min: 0
         step: 0.01
@@ -2195,6 +2211,7 @@ tools:
         label: Average battery energy bought from the grid each night
         type: number
         suffix: "kWh/day"
+        advanced: true
         default: 3
         min: 0
         step: 0.5
@@ -2209,9 +2226,14 @@ tools:
       - {id: solar_used, label: Solar electricity used on site}
       - {id: exported, label: Solar electricity exported}
       - {id: solar_value, label: Annual value from solar generation}
-      - {id: battery_arbitrage, label: Annual night-rate battery saving}
+      - {id: self_consumption, label: Solar generation used on site}
+      - {id: self_sufficiency, label: Modelled demand supplied by on-site solar}
+      - {id: battery_arbitrage, label: Annual night-rate battery saving, advanced: true}
+      - {id: battery_incremental_value, label: Battery incremental annual value versus no battery, advanced: true}
+      - {id: battery_incremental_payback, label: Battery-only simple payback, advanced: true}
       - {id: annual_value, label: Total estimated annual value}
       - {id: payback, label: Simple payback}
+      - {id: twenty_year_net, label: 20-year net benefit at constant annual value}
 
     guide: |
       ## Start with your real annual electricity use
@@ -2358,6 +2380,8 @@ tools:
     summary: Compare solar-only, solar with smart EV charging, solar with a battery, and a combined solar + EV + battery setup side by side.
     meta_description: Solar EV battery optimiser Ireland. Compare annual value, payback and 20-year net benefit for solar-only, EV smart charging, battery and combined scenarios.
     updated: 2026-09-22
+    basic_note: "Basic mode compares four system configurations using the core quote, generation, tariff, EV and battery inputs. Detailed efficiency and load-shifting assumptions use clearly stated defaults."
+    advanced_note: "Advanced mode exposes the self-consumption, EV charging-loss, battery-efficiency, solar-capture and nightly battery-throughput assumptions, plus any extra smart-EV control cost."
     fields:
       - {id: solar_cost, label: Solar PV installed cost before grant, type: number, prefix: "€", default: 9000, min: 0, step: 100, section_start: Solar system}
       - id: grant_eligible
@@ -2367,7 +2391,7 @@ tools:
       - {id: kwp, label: Solar PV system size, type: number, suffix: "kWp", default: 4, min: 0, max: 30, step: 0.1}
       - {id: generation_per_kwp, label: Expected annual generation per kWp, type: number, suffix: "kWh", default: 850, min: 0, max: 2000, step: 10}
       - {id: home_kwh, label: Household electricity use before EV, type: number, suffix: "kWh/year", default: 4200, min: 0, step: 100}
-      - {id: direct_home_pct, label: Solar generation used directly by household loads, type: number, suffix: "%", default: 35, min: 0, max: 100, step: 1}
+      - {id: direct_home_pct, label: Solar generation used directly by household loads, type: number, suffix: "%", default: 35, min: 0, max: 100, step: 1, advanced: true}
       - {id: day_rate, label: Day / avoided import rate, type: number, prefix: "€", suffix: "/kWh", default: 0.30, min: 0, step: 0.01}
       - {id: export_rate, label: Export payment, type: number, prefix: "€", suffix: "/kWh", default: 0.15, min: 0, step: 0.01}
       - id: has_ev
@@ -2376,22 +2400,23 @@ tools:
         type: checkbox
         default: true
       - {id: ev_km, label: EV distance per year, type: number, suffix: "km", default: 15000, min: 0, step: 500, show_if: has_ev}
-      - {id: ev_efficiency, label: EV consumption, type: number, suffix: "kWh/100km", default: 18, min: 1, max: 60, step: 0.5, show_if: has_ev}
-      - {id: ev_loss_pct, label: EV charging losses, type: number, suffix: "%", default: 10, min: 0, max: 40, step: 1, show_if: has_ev}
-      - {id: ev_home_pct, label: Share of EV charging done at home, type: number, suffix: "%", default: 80, min: 0, max: 100, step: 1, show_if: has_ev}
-      - {id: ev_solar_pct, label: Share of home EV charging that can follow solar, type: number, suffix: "%", default: 35, min: 0, max: 100, step: 1, show_if: has_ev}
+      - {id: ev_efficiency, label: EV consumption, type: number, suffix: "kWh/100km", default: 18, min: 1, max: 60, step: 0.5, show_if: has_ev, advanced: true}
+      - {id: ev_loss_pct, label: EV charging losses, type: number, suffix: "%", default: 10, min: 0, max: 40, step: 1, show_if: has_ev, advanced: true}
+      - {id: ev_home_pct, label: Share of EV charging done at home, type: number, suffix: "%", default: 80, min: 0, max: 100, step: 1, show_if: has_ev, advanced: true}
+      - {id: ev_solar_pct, label: Share of home EV charging that can follow solar, type: number, suffix: "%", default: 35, min: 0, max: 100, step: 1, show_if: has_ev, advanced: true}
       - {id: ev_grid_rate, label: Grid rate otherwise used for EV charging, type: number, prefix: "€", suffix: "/kWh", default: 0.10, min: 0, step: 0.01, show_if: has_ev}
+      - {id: smart_ev_cost, label: Extra smart-EV charger / control cost attributable to this comparison, type: number, prefix: "€", default: 0, min: 0, step: 50, advanced: true, section_start: Optional EV system cost}
       - {id: battery_cost, label: Battery installed cost, type: number, prefix: "€", default: 4500, min: 0, step: 100, section_start: Home battery}
       - {id: battery_kwh, label: Usable battery capacity, type: number, suffix: "kWh", default: 5, min: 0.1, max: 100, step: 0.5}
-      - {id: battery_efficiency, label: Battery round-trip efficiency, type: number, suffix: "%", default: 90, min: 50, max: 100, step: 1}
-      - {id: solar_capture_pct, label: Remaining solar surplus captured by battery, type: number, suffix: "%", default: 60, min: 0, max: 100, step: 1}
+      - {id: battery_efficiency, label: Battery round-trip efficiency, type: number, suffix: "%", default: 90, min: 50, max: 100, step: 1, advanced: true}
+      - {id: solar_capture_pct, label: Remaining solar surplus captured by battery, type: number, suffix: "%", default: 60, min: 0, max: 100, step: 1, advanced: true}
       - id: use_night_charge
         section_start: Night-rate charging
         label: Include cheap-rate grid charging of the battery
         type: checkbox
         default: true
       - {id: night_rate, label: Night battery charging rate, type: number, prefix: "€", suffix: "/kWh", default: 0.10, min: 0, step: 0.01, show_if: use_night_charge}
-      - {id: night_kwh_day, label: Average battery energy bought at night, type: number, suffix: "kWh/day", default: 3, min: 0, step: 0.5, show_if: use_night_charge}
+      - {id: night_kwh_day, label: Average battery energy bought at night, type: number, suffix: "kWh/day", default: 3, min: 0, step: 0.5, show_if: use_night_charge, advanced: true}
     results:
       - {id: generation, label: Annual solar generation}
       - {id: ev_demand, label: Annual home EV charging demand}
@@ -2400,6 +2425,15 @@ tools:
       - {id: ev_payback, label: Solar + smart EV payback}
       - {id: battery_payback, label: Solar + battery payback}
       - {id: combined_payback, label: Solar + EV + battery payback}
+      - {id: solar_benefit, label: Solar-only 20-year net benefit}
+      - {id: ev_benefit, label: Solar + smart EV 20-year net benefit}
+      - {id: battery_benefit, label: Solar + battery 20-year net benefit}
+      - {id: combined_benefit, label: Solar + EV + battery 20-year net benefit}
+      - {id: best_margin, label: Best scenario advantage versus solar only}
+      - {id: solar_annual, label: Solar-only annual value, advanced: true}
+      - {id: ev_annual, label: Solar + smart EV annual value, advanced: true}
+      - {id: battery_annual, label: Solar + battery annual value, advanced: true}
+      - {id: combined_annual, label: Solar + EV + battery annual value, advanced: true}
     guide: |
       ## Compare systems rather than asking whether a battery is “good”
 
