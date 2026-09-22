@@ -2604,18 +2604,31 @@ tools:
     summary: Estimate what returning to paid work adds to household finances after PAYE, childcare, NCS support, commuting and work-related costs.
     meta_description: Childcare vs returning to work calculator Ireland. Estimate net salary after PAYE, childcare fees, NCS subsidy, commuting and work costs.
     updated: 2026-09-22
+    basic_note: "Basic mode estimates the cash added by returning to work using standard 2026 single-PAYE assumptions, your childcare pattern and NCS subsidy."
+    advanced_note: "Advanced mode adds pension deductions, your own tax band and extra credits, reduced-USC eligibility, working hours and employment-related costs. It also estimates the gross salary needed to break even on the cash costs entered."
     fields:
       - {id: salary, label: Gross annual salary on returning to work, type: number, prefix: "€", default: 45000, min: 0, step: 500, section_start: Work income}
-      - {id: pension_pct, label: Employee pension contribution, type: number, suffix: "%", default: 0, min: 0, max: 30, step: 0.5}
-      - {id: work_hours, label: Paid working hours per week, type: number, default: 37.5, min: 1, max: 80, step: 0.5}
+      - {id: pension_pct, label: Employee pension contribution, type: number, suffix: "%", default: 0, min: 0, max: 30, step: 0.5, advanced: true}
+      - {id: work_hours, label: Paid working hours per week, type: number, default: 37.5, min: 1, max: 80, step: 0.5, advanced: true}
       - {id: children, label: Children using paid childcare, type: number, default: 1, min: 1, max: 10, step: 1, section_start: Childcare}
       - {id: childcare_hours, label: Paid childcare hours per child per week, type: number, default: 40, min: 0, max: 80, step: 1}
       - {id: childcare_fee, label: Childcare fee before NCS, type: number, prefix: "€", suffix: "/hour", default: 8, min: 0, step: 0.10}
       - {id: ncs_rate, label: NCS hourly subsidy actually available to you, type: number, prefix: "€", suffix: "/hour", default: 2.14, min: 0, step: 0.01}
-      - {id: childcare_weeks, label: Childcare / working weeks per year, type: number, default: 48, min: 1, max: 52, step: 1}
-      - {id: commute_weekly, label: Weekly commuting cost, type: number, prefix: "€", default: 60, min: 0, step: 5, section_start: Work-related costs}
-      - {id: work_cost_weekly, label: Other weekly work costs, type: number, prefix: "€", default: 30, min: 0, step: 5}
-      - {id: other_annual, label: Other annual costs caused by returning to work, type: number, prefix: "€", default: 0, min: 0, step: 100}
+      - {id: childcare_weeks, label: Childcare / working weeks per year, type: number, default: 48, min: 1, max: 52, step: 1, advanced: true}
+      - {id: commute_weekly, label: Weekly commuting cost, type: number, prefix: "€", default: 60, min: 0, step: 5, section_start: Work-related costs, advanced: true}
+      - {id: work_cost_weekly, label: Other weekly work costs, type: number, prefix: "€", default: 30, min: 0, step: 5, advanced: true}
+      - {id: other_annual, label: Other annual costs caused by returning to work, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true}
+      - {id: standard_rate_band, label: Your 2026 standard-rate Income Tax band, type: number, prefix: "€", default: 44000, min: 0, step: 500, advanced: true, section_start: Tax assumptions, help: "Enter the standard-rate band available to this employment income. Basic mode uses €44,000."}
+      - {id: extra_tax_credits, label: Extra annual tax credits beyond the standard personal and employee credits, type: number, prefix: "€", default: 0, min: 0, step: 50, advanced: true}
+      - id: reduced_usc
+        label: Qualifies for reduced USC rates and income is €60,000 or less
+        type: select
+        default: "no"
+        advanced: true
+        options:
+          - {value: "no", label: "No"}
+          - {value: "yes", label: "Yes"}
+        help: "Only select Yes if the Revenue reduced-USC conditions apply to you; the calculator automatically falls back to standard rates above €60,000."
     results:
       - {id: take_home, label: Estimated annual take-home pay}
       - {id: childcare_gross, label: Gross annual childcare cost}
@@ -2623,7 +2636,10 @@ tools:
       - {id: childcare_net, label: Net childcare cost}
       - {id: work_costs, label: Commute + other work costs}
       - {id: household_gain, label: Estimated annual household financial gain from working}
+      - {id: monthly_gain, label: Estimated monthly household financial gain}
       - {id: effective_hourly, label: Financial gain per paid working hour}
+      - {id: retained_pct, label: Share of gross salary left after modelled deductions and work costs, advanced: true}
+      - {id: breakeven_salary, label: Approximate gross salary needed to break even, advanced: true}
     guide: |
       ## Start with the actual NCS award if you have one
 
@@ -2687,30 +2703,35 @@ tools:
     summary: Project the cumulative cost of your current lifestyle from today to a chosen age, including housing, food, transport, travel, childcare and recurring major purchases.
     meta_description: Lifetime cost calculator Ireland. Project housing, food, transport, childcare, travel and other spending from your current age to a chosen age with inflation.
     updated: 2026-09-22
+    basic_note: "Basic mode projects your main recurring lifestyle costs across the age range you choose. Optional childcare, replacement purchases and extra spending stay out of the first view."
+    advanced_note: "Advanced mode adds a housing end-age, childcare period, recurring major purchases and other monthly spending so you can model a more detailed lifetime cash-flow path."
     fields:
       - {id: current_age, label: Current age, type: number, default: 30, min: 18, max: 100, step: 1, section_start: Time horizon}
       - {id: end_age, label: Project spending to age, type: number, default: 80, min: 19, max: 110, step: 1}
       - {id: inflation, label: Annual spending inflation assumption, type: number, suffix: "%", default: 2.5, min: -5, max: 15, step: 0.1}
       - {id: housing_monthly, label: Housing cost per month today, type: number, prefix: "€", default: 1800, min: 0, step: 50, section_start: Housing}
-      - {id: housing_until, label: Current housing cost continues until age, type: number, default: 65, min: 18, max: 110, step: 1}
+      - {id: housing_until, label: Current housing cost continues until age, type: number, default: 65, min: 18, max: 110, step: 1, advanced: true}
       - {id: food_monthly, label: Groceries / household essentials per month, type: number, prefix: "€", default: 700, min: 0, step: 25, section_start: Recurring household spending}
       - {id: utilities_monthly, label: Utilities / home services per month, type: number, prefix: "€", default: 350, min: 0, step: 25}
       - {id: transport_monthly, label: Transport running cost per month, type: number, prefix: "€", default: 500, min: 0, step: 25}
       - {id: leisure_monthly, label: Leisure, eating out and subscriptions per month, type: number, prefix: "€", default: 500, min: 0, step: 25}
       - {id: travel_annual, label: Holidays / travel per year, type: number, prefix: "€", default: 4000, min: 0, step: 100}
       - {id: insurance_health_annual, label: Insurance and health costs per year, type: number, prefix: "€", default: 3500, min: 0, step: 100}
-      - {id: childcare_annual, label: Net childcare / child-related recurring cost per year today, type: number, prefix: "€", default: 0, min: 0, step: 100, section_start: Childcare}
-      - {id: childcare_years, label: Years that childcare / child cost continues, type: number, default: 0, min: 0, max: 30, step: 1}
-      - {id: major_purchase, label: Recurring major purchase cost today (for example replacement car), type: number, prefix: "€", default: 25000, min: 0, step: 500, section_start: Major purchases}
-      - {id: major_interval, label: Years between major purchases, type: number, default: 8, min: 1, max: 40, step: 1}
-      - {id: other_monthly, label: Other recurring spending per month, type: number, prefix: "€", default: 300, min: 0, step: 25}
+      - {id: childcare_annual, label: Net childcare / child-related recurring cost per year today, type: number, prefix: "€", default: 0, min: 0, step: 100, section_start: Childcare, advanced: true}
+      - {id: childcare_years, label: Years that childcare / child cost continues, type: number, default: 0, min: 0, max: 30, step: 1, advanced: true}
+      - {id: major_purchase, label: Recurring major purchase cost today (for example replacement car), type: number, prefix: "€", default: 25000, min: 0, step: 500, section_start: Major purchases, advanced: true}
+      - {id: major_interval, label: Years between major purchases, type: number, default: 8, min: 1, max: 40, step: 1, advanced: true}
+      - {id: other_monthly, label: Other recurring spending per month, type: number, prefix: "€", default: 300, min: 0, step: 25, advanced: true}
     results:
       - {id: years, label: Years modelled}
       - {id: today_annual, label: Current annual lifestyle cost}
       - {id: lifetime_nominal, label: Total projected cash spending}
       - {id: lifetime_today_money, label: Equivalent total at today's prices}
+      - {id: inflation_uplift, label: Extra projected cash spending attributable to inflation}
+      - {id: average_annual, label: Average projected annual cash spending}
+      - {id: end_year_spend, label: Projected spending in the final modelled year}
       - {id: housing_total, label: Projected housing spend}
-      - {id: major_total, label: Projected recurring major purchases}
+      - {id: major_total, label: Projected recurring major purchases, advanced: true}
     guide: |
       ## A lifetime cost is a planning lens, not a bill
 
@@ -2858,6 +2879,8 @@ tools:
     summary: Estimate resting energy, activity-adjusted maintenance needs, protein and an evidence-grounded macro illustration in one calculator.
     meta_description: Nutrition needs calculator using Mifflin-St Jeor, EFSA physical activity levels and protein reference values. Estimate resting energy, maintenance calories, protein and macros.
     updated: 2026-09-22
+    basic_note: "Basic mode estimates resting energy, activity-adjusted maintenance energy and the EFSA adult protein reference from a small set of inputs."
+    advanced_note: "Advanced mode adds an illustrative ±10% energy scenario and a resistance-training protein evidence point, then shows how the macro arithmetic changes."
     fields:
       - id: sex
         label: Sex used by the Mifflin–St Jeor equation
@@ -2882,6 +2905,7 @@ tools:
         help: "EFSA uses these PAL values when illustrating adult energy requirements. Self-selecting an activity category is still approximate."
       - id: energy_scenario
         label: Energy scenario to display
+        advanced: true
         type: select
         default: maintain
         options:
@@ -2890,6 +2914,7 @@ tools:
           - {value: higher10, label: Illustrative 10% above maintenance — not a prescribed surplus}
       - id: protein_context
         section_start: Protein & macros
+        advanced: true
         label: Protein context
         type: select
         default: general
@@ -2900,10 +2925,12 @@ tools:
     results:
       - {id: resting, label: Estimated resting energy expenditure}
       - {id: maintenance, label: Estimated maintenance energy}
-      - {id: target, label: Selected energy scenario}
+      - {id: target, label: Selected energy scenario, advanced: true}
+      - {id: energy_delta, label: Difference from estimated maintenance, advanced: true}
       - {id: protein, label: Protein reference / evidence point}
-      - {id: fat, label: Illustrative fat at 30% of energy}
-      - {id: carbs, label: Carbohydrate remainder in this illustration}
+      - {id: protein_per_kg, label: Protein rate used, advanced: true}
+      - {id: fat, label: Illustrative fat at 30% of energy, advanced: true}
+      - {id: carbs, label: Carbohydrate remainder in this illustration, advanced: true}
       - {id: fibre, label: WHO adult dietary fibre reference}
     guide: |
       ## What this calculator is — and is not
@@ -2972,6 +2999,8 @@ tools:
     summary: Estimate a pregnancy due date, gestational age, trimester and key timeline dates from the last menstrual period or a clinician-assigned due date.
     meta_description: Pregnancy due date calculator Ireland. Estimate gestational age, trimester, conception date and pregnancy milestones, with HSE and obstetric dating guidance.
     updated: 2026-09-22
+    basic_note: "Basic mode uses the conventional 280-day estimate from the first day of the last menstrual period."
+    advanced_note: "Advanced mode can adjust an LMP estimate for cycle length or use the due date already assigned by your maternity team. A clinician-assigned due date takes priority."
     fields:
       - id: lmp
         label: First day of your last menstrual period (LMP)
@@ -2982,10 +3011,14 @@ tools:
         label: Due date assigned by your clinician or dating scan (optional)
         type: date
         optional: true
+        advanced: true
         help: "If entered, this takes priority over the LMP calculation. First-trimester ultrasound is more accurate for establishing or confirming gestational age than LMP alone."
+      - {id: cycle_length, label: Typical menstrual cycle length, type: number, suffix: days, default: 28, min: 20, max: 44, step: 1, advanced: true, help: "Used only for an LMP estimate when no clinician-assigned due date is entered. The NHS due-date calculator similarly allows cycle-length adjustment."}
     results:
       - {id: due_date, label: Estimated / assigned due date}
       - {id: gestational_age, label: Gestational age today}
+      - {id: pregnancy_progress, label: Progress to 40 weeks}
+      - {id: days_to_due, label: Time to estimated due date}
       - {id: trimester, label: Trimester today}
       - {id: conception_estimate, label: Approximate conception date from dating convention}
       - {id: week12, label: 12-week point}
@@ -3047,6 +3080,8 @@ tools:
     summary: Convert common drinks into Irish standard drinks, grams of alcohol, alcohol-derived calories and annual spending, then model a reduction scenario.
     meta_description: Alcohol calculator Ireland. Estimate Irish standard drinks, grams of alcohol, alcohol-derived calories, annual spend and savings from drinking less.
     updated: 2026-09-22
+    basic_note: "Basic mode uses typical Irish drink sizes and strengths so you can enter only how many drinks you have in a week."
+    advanced_note: "Advanced mode lets you replace the assumed sizes and ABVs with what you actually drink, then model annual spend and a reduction scenario."
     fields:
       - id: guideline_group
         label: Optional comparison with current HSE weekly low-risk guideline
@@ -3057,27 +3092,28 @@ tools:
           - {value: woman, label: HSE guideline for women}
           - {value: man, label: HSE guideline for men}
       - {id: beer_pints, label: Pints of beer / stout / cider per week, type: number, default: 2, min: 0, step: 0.5, section_start: Beer / cider}
-      - {id: beer_abv, label: Beer / stout / cider strength, type: number, suffix: "% ABV", default: 4.5, min: 0, max: 20, step: 0.1}
+      - {id: beer_abv, label: Beer / stout / cider strength, type: number, suffix: "% ABV", default: 4.5, min: 0, max: 20, step: 0.1, advanced: true}
       - {id: wine_glasses, label: Glasses of wine per week, type: number, default: 0, min: 0, step: 0.5, section_start: Wine}
-      - {id: wine_ml, label: Wine glass size, type: number, suffix: ml, default: 175, min: 25, max: 500, step: 25}
-      - {id: wine_abv, label: Wine strength, type: number, suffix: "% ABV", default: 12.5, min: 0, max: 30, step: 0.1}
+      - {id: wine_ml, label: Wine glass size, type: number, suffix: ml, default: 175, min: 25, max: 500, step: 25, advanced: true}
+      - {id: wine_abv, label: Wine strength, type: number, suffix: "% ABV", default: 12.5, min: 0, max: 30, step: 0.1, advanced: true}
       - {id: spirits, label: Spirit measures per week, type: number, default: 0, min: 0, step: 0.5, section_start: Spirits}
-      - {id: spirit_ml, label: Spirit measure size, type: number, suffix: ml, default: 35.5, min: 10, max: 200, step: 0.5}
-      - {id: spirit_abv, label: Spirit strength, type: number, suffix: "% ABV", default: 40, min: 0, max: 95, step: 0.1}
+      - {id: spirit_ml, label: Spirit measure size, type: number, suffix: ml, default: 35.5, min: 10, max: 200, step: 0.5, advanced: true}
+      - {id: spirit_abv, label: Spirit strength, type: number, suffix: "% ABV", default: 40, min: 0, max: 95, step: 0.1, advanced: true}
       - {id: cans, label: Large cans / bottles per week, type: number, default: 0, min: 0, step: 0.5, section_start: Cans / bottles}
-      - {id: can_ml, label: Can / bottle size, type: number, suffix: ml, default: 500, min: 50, max: 2000, step: 10}
-      - {id: can_abv, label: Can / bottle strength, type: number, suffix: "% ABV", default: 4.3, min: 0, max: 20, step: 0.1}
-      - {id: weekly_spend, label: What you spend on alcohol in a typical week, type: number, prefix: "€", default: 30, min: 0, step: 1, section_start: Cost & reduction}
-      - {id: reduction_pct, label: Model reducing intake and spend by, type: number, suffix: "%", default: 25, min: 0, max: 100, step: 5}
+      - {id: can_ml, label: Can / bottle size, type: number, suffix: ml, default: 500, min: 50, max: 2000, step: 10, advanced: true}
+      - {id: can_abv, label: Can / bottle strength, type: number, suffix: "% ABV", default: 4.3, min: 0, max: 20, step: 0.1, advanced: true}
+      - {id: weekly_spend, label: What you spend on alcohol in a typical week, type: number, prefix: "€", default: 30, min: 0, step: 1, section_start: Cost & reduction, advanced: true}
+      - {id: reduction_pct, label: Model reducing intake and spend by, type: number, suffix: "%", default: 25, min: 0, max: 100, step: 5, advanced: true}
     results:
       - {id: standard_drinks, label: Irish standard drinks per week}
       - {id: grams, label: Pure alcohol per week}
       - {id: guideline, label: HSE guideline comparison}
+      - {id: guideline_difference, label: Difference from selected weekly guideline, advanced: true}
       - {id: weekly_kcal, label: Calories from alcohol itself per week}
-      - {id: annual_kcal, label: Calories from alcohol itself per year}
-      - {id: annual_spend, label: Annual alcohol spend at entered amount}
-      - {id: reduced_drinks, label: Standard drinks after modelled reduction}
-      - {id: annual_saving, label: Annual cash saving from modelled reduction}
+      - {id: annual_kcal, label: Calories from alcohol itself per year, advanced: true}
+      - {id: annual_spend, label: Annual alcohol spend at entered amount, advanced: true}
+      - {id: reduced_drinks, label: Standard drinks after modelled reduction, advanced: true}
+      - {id: annual_saving, label: Annual cash saving from modelled reduction, advanced: true}
     guide: |
       ## Ireland uses a 10 g standard drink
 
