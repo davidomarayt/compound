@@ -293,3 +293,14 @@ def test_every_calculator_has_substantial_educational_depth():
     bmi = (content_dir / "bmi-guide.md").read_text()
     assert len(compound.split()) >= 1800
     assert len(bmi.split()) >= 1800
+
+
+def test_every_standard_calculator_has_a_dedicated_guide_file():
+    content_dir = Path(__file__).parents[1] / "content"
+    tools = load_tools(content_dir)
+    guide_dir = content_dir / "tool-guides"
+
+    expected = {f"{tool['slug']}.md" for tool in tools}
+    actual = {path.name for path in guide_dir.glob("*.md")}
+    assert actual == expected
+    assert all((guide_dir / name).stat().st_size >= 2500 for name in expected)
