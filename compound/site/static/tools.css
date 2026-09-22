@@ -91,3 +91,41 @@
     grid-column:auto;
   }
 }
+
+
+/* Net worth result-card overflow fix */
+.tool-page[data-tool-name="net-worth-calculator"] .tool-result{
+  min-width:0;
+  overflow:hidden;
+}
+.tool-page[data-tool-name="net-worth-calculator"] .tool-result strong{
+  max-width:100%;
+  font-size:clamp(1.45rem,3vw,2.15rem);
+  line-height:1.05;
+  letter-spacing:-.025em;
+}
+.tool-page[data-tool-name="net-worth-calculator"] .tool-result:first-child strong{
+  font-size:clamp(2.25rem,5vw,3.6rem);
+}
+@media(max-width:900px){
+  .tool-page[data-tool-name="net-worth-calculator"] .tool-result-grid{
+    grid-template-columns:1fr;
+  }
+  .tool-page[data-tool-name="net-worth-calculator"] .tool-result:first-child{
+    grid-column:auto;
+  }
+  .tool-page[data-tool-name="net-worth-calculator"] .tool-result strong{
+    font-size:clamp(1.85rem,7vw,2.65rem);
+  }
+  .tool-page[data-tool-name="net-worth-calculator"] .tool-result:first-child strong{
+    font-size:clamp(2.45rem,10vw,3.8rem);
+  }
+}
+@media(max-width:430px){
+  .tool-page[data-tool-name="net-worth-calculator"] .tool-result strong{
+    font-size:clamp(1.65rem,7.8vw,2.25rem);
+  }
+  .tool-page[data-tool-name="net-worth-calculator"] .tool-result:first-child strong{
+    font-size:clamp(2.2rem,11vw,3.2rem);
+  }
+}
