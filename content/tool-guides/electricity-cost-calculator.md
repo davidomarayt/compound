@@ -70,6 +70,42 @@ This tool answers “what does running this appliance add?” rather than “wha
 
 For whole-tariff comparisons, evaluate standing charges, discounts, VAT, levies and your complete time-of-use consumption profile separately.
 
+## Appliance cost is a marginal-cost question
+
+This calculator is designed to answer: **what extra electricity cost is caused by running this load?**
+
+That is different from asking for the full household electricity bill. Standing charges and some levies are payable regardless of whether one appliance runs for an extra hour, so assigning the entire fixed bill to a television, heater or server would exaggerate its incremental cost.
+
+For an appliance decision, the key inputs are power, operating time, duty cycle and the unit rate that applies when the load actually runs.
+
+### Duty cycle matters for thermostatic and cycling loads
+
+A 2 kW appliance does not necessarily consume 2 kWh every hour it is switched on. Heaters, fridges, pumps and other thermostatic devices often cycle.
+
+Advanced mode therefore allows a duty-cycle assumption. A 2 kW heater operating at a 50% average duty cycle over four hours is modelled differently from a device drawing 2 kW continuously for the same period.
+
+Where possible, use a plug-in energy monitor or a smart-meter reading to replace assumptions with measured consumption.
+
+### Time-of-use tariffs can change the answer
+
+On a flat tariff, timing does not matter to the unit cost. On a smart or day/night tariff, it can matter a great deal.
+
+For flexible loads such as immersion heating, EV charging, dishwashers or some heat-pump operation, compare the same kWh at the day and off-peak rates. The energy requirement may be unchanged while the cash cost moves because the load is shifted in time.
+
+The [EV Charging Cost Calculator](/ev-charging-cost-calculator/) is better for vehicle-specific charging, while the [Solar + EV + Battery Optimiser](/solar-ev-battery-optimiser/) is designed for households coordinating multiple energy flows.
+
+### Annualise carefully
+
+A small daily load can become meaningful over a year. Conversely, a high-power device used for only a few minutes may cost less than expected.
+
+When annualising, use realistic operating days rather than automatically multiplying every result by 365. Seasonal heaters, dehumidifiers, pumps and garden equipment often have very different use profiles across the year.
+
+### Whole-home tariff comparisons need more inputs
+
+If you are comparing electricity suppliers, this calculator is only one part of the decision. A full tariff comparison should include the complete annual consumption profile, day/night or half-hourly usage where relevant, standing charges, discounts, VAT, levies and any conditions attached to the tariff.
+
+CRU guidance on electricity bills and dynamic tariffs is the appropriate reference point for those broader comparisons.
+
 ## Method and limitations
 
 The tool converts watts to kW, applies the entered operating hours and days, and in Advanced mode applies the duty cycle and weighted main/off-peak unit rate. It does not reproduce every supplier discount, levy, VAT treatment, standing charge or half-hourly dynamic tariff.
