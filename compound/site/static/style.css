@@ -2018,3 +2018,38 @@ h1, h2, h3 {
     padding-top:18px;
   }
 }
+
+
+/* Force the text-only homepage hero to use the full content width. */
+.home-hero-text-only,
+.home-hero-text-only .hero-copy-v2{
+  width:100%;
+  max-width:100%;
+}
+.home-hero-text-only .hero-copy-v2{
+  display:block;
+}
+.home-hero-text-only .hero-copy-v2 h1{
+  width:100%;
+  max-width:none;
+  font-size:clamp(64px,7.2vw,108px);
+  line-height:.94;
+}
+.home-hero-text-only .hero-copy-v2 h1 span,
+.home-hero-text-only .hero-copy-v2 h1 em{
+  display:inline;
+}
+.home-hero-text-only .hero-copy-v2 h1 em{
+  margin:0;
+}
+.home-hero-text-only .hero-description{
+  max-width:940px;
+}
+.home-hero-text-only .hero-proof{
+  max-width:none;
+}
+@media(max-width:760px){
+  .home-hero-text-only .hero-copy-v2 h1{
+    font-size:clamp(46px,12.5vw,64px);
+  }
+}
