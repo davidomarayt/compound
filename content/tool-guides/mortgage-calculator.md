@@ -10,6 +10,14 @@ This calculator estimates three things from the mortgage amount, annual interest
 
 It is designed for scenario planning, not as a lender quote. Real mortgages can move between fixed and variable rates, include fees and incentives, and may be repaid early or switched.
 
+## Reading the extra mortgage outputs
+
+The monthly repayment is still the main result, but a mortgage is easier to understand when you can see how the early years behave. The **first-year interest** and **first-year principal** figures split the first 12 scheduled payments into the amount that pays interest and the amount that actually reduces the balance.
+
+The **balance after five years** is especially useful when comparing a five-year fixed period, thinking about a future switch, or estimating how much debt would remain if you sold. It assumes the entered interest rate stayed unchanged and every scheduled payment was made.
+
+The **+1 and +2 percentage-point stress figures** are not lender stress tests and are not forecasts. They simply recalculate the same mortgage amount and term at higher rates so you can see how sensitive the monthly payment is. The **repayment per €100,000 borrowed** gives a quick scaling figure for comparing different mortgage sizes at the same rate and term.
+
 ## Worked example: €300,000 over 30 years at 3.5%
 
 Using the calculator's default example of a **€300,000 mortgage**, a **3.5% annual rate** and a **30-year term**, the estimated repayment is about **€1,347 per month**.
