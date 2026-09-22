@@ -12,3 +12,4 @@ jobs:
       - run: pytest -q
       - run: node --check compound/site/static/tools.js
       - run: node --check compound/site/static/debt-repayment.js
+      - run: node tests/tools_arithmetic.cjs
