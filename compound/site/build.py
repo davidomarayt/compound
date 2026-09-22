@@ -786,7 +786,7 @@ def build_site(settings: Settings) -> dict:
             if len(related_tools) < 3:
                 related_tools += [t for t in tools if t["slug"] != tool["slug"] and t not in related_tools][:3-len(related_tools)]
             app_category = (
-                "HealthApplication" if tool.get("category") == "Health"
+                "HealthApplication" if tool.get("category") == "Health" or tool.get("slug") == "pregnancy-due-date-calculator"
                 else "UtilitiesApplication" if tool.get("category") in {"Home Energy", "EV & Motoring"}
                 else "LifestyleApplication" if tool.get("category") == "Family & Life Planning"
                 else "FinanceApplication"
