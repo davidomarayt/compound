@@ -1884,8 +1884,7 @@ h1, h2, h3 {
   height:24px;
   flex:0 0 24px;
   margin-top:1px;
-  object-fit:contain;
-  filter:invert(34%) sepia(16%) saturate(934%) hue-rotate(105deg) brightness(88%) contrast(87%);
+  color:#365e4f;
 }
 @media(max-width:620px){
   .hero-proof-ireland{display:block!important}
