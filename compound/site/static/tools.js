@@ -1254,7 +1254,7 @@
         syncVisibility();run();
       },0));
     }
-    const shareButton=root.querySelector('[data-tool-share]'), printButton=root.querySelector('[data-tool-print]'), actionStatus=root.querySelector('[data-tool-action-status]');
+    const shareButton=root.querySelector('[data-tool-share]'), copyResultsButton=root.querySelector('[data-tool-copy-results]'), printButton=root.querySelector('[data-tool-print]'), actionStatus=root.querySelector('[data-tool-action-status]');
     if(shareButton) shareButton.addEventListener('click',async()=>{
       const url=new URL(window.location.href); url.search=''; url.hash='';
       const values={};
@@ -1275,6 +1275,23 @@
       }
       if(actionStatus) actionStatus.textContent=copied?'Scenario link copied.':'Copy the current page URL to share this scenario.';
       if(window.gtag) window.gtag('event','tool_share',{tool_name:root.dataset.toolName});
+    });
+    if(copyResultsButton) copyResultsButton.addEventListener('click',async()=>{
+      const lines=[root.querySelector('h1')?.textContent?.trim()||'Compound calculator'];
+      root.querySelectorAll('.tool-result').forEach(card=>{
+        const label=card.querySelector('span')?.textContent?.trim();
+        const value=card.querySelector('strong')?.textContent?.trim();
+        if(label&&value&&value!=='—') lines.push(label+': '+value);
+      });
+      const textValue=lines.join('\n');
+      let copied=false;
+      try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(textValue);copied=true;}}catch(e){}
+      if(!copied){
+        const ta=document.createElement('textarea');ta.value=textValue;ta.setAttribute('readonly','');ta.style.position='absolute';ta.style.left='-9999px';document.body.appendChild(ta);ta.select();
+        try{copied=document.execCommand('copy');}catch(e){} ta.remove();
+      }
+      if(actionStatus) actionStatus.textContent=copied?'Results copied.':'Could not copy automatically.';
+      if(window.gtag) window.gtag('event','tool_copy_results',{tool_name:root.dataset.toolName});
     });
     if(printButton) printButton.addEventListener('click',()=>window.print());
     syncVisibility();
