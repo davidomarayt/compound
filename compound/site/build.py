@@ -637,7 +637,8 @@ def build_site(settings: Settings) -> dict:
                 "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
                 "publisher": {"@type": "Organization", "name": "Compound", "url": settings.site_base_url},
             }, ensure_ascii=False)
-            _write(out / tool["slug"] / "index.html", env.get_template("tool.html").render(
+            tool_template = "debt_repayment.html" if tool["slug"] == "debt-repayment-calculator" else "tool.html"
+            _write(out / tool["slug"] / "index.html", env.get_template(tool_template).render(
                 title=tool["title"], tool=tool, related_tools=related_tools,
                 related_articles=linked_articles(tool["slug"], articles),
                 tool_jsonld=tool_jsonld, pillar="wealth", tools_page=True))
