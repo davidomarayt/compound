@@ -546,3 +546,11 @@ def test_retirement_tools_distinguish_nominal_real_and_sustainability():
     assert "(1+v.return_rate/100)/(1+v.inflation_rate/100)-1" in js
     assert "(1+v.return_rate/100)*(1-v.annual_fee/100)-1" in js
     assert "withdrawal*=1+v.inflation_rate/100" in js
+
+
+def test_savings_returns_use_effective_annual_compounding():
+    js = (Path(__file__).parents[1] / "compound" / "site" / "static" / "tools.js").read_text()
+    assert "Math.pow(Math.max(.000001,1+annualRate/100),1/12)-1" in js
+    assert "Math.pow(Math.max(.000001,1+v.rate/100),1/12)-1" in js
+    assert "((1+gross)*(1-v.fee_low/100)-1)*100" in js
+    assert "((1+gross)*(1-v.fee_high/100)-1)*100" in js
