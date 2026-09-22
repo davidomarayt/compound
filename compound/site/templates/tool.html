@@ -53,7 +53,8 @@
     <section class="tool-results" aria-live="polite">
       <p class="eyebrow">YOUR ESTIMATE</p><h2>At a glance</h2>
       <div class="tool-result-grid">
-        {% for result in tool.results %}<div class="tool-result{% if result.id == tool.primary_result %} tool-result-primary{% endif %}"><span>{{ result.label }}</span><strong data-result="{{ result.id }}">—</strong></div>{% endfor %}
+        {% for result in tool.results %}{% if result.id == tool.primary_result %}<div class="tool-result tool-result-primary"><span>{{ result.label }}</span><strong data-result="{{ result.id }}">—</strong></div>{% endif %}{% endfor %}
+        {% for result in tool.results %}{% if result.id != tool.primary_result %}<div class="tool-result"><span>{{ result.label }}</span><strong data-result="{{ result.id }}">—</strong></div>{% endif %}{% endfor %}
       </div>
       <div class="tool-insights" data-tool-insights hidden>
         <p class="eyebrow">SCENARIO READOUT</p>
