@@ -964,11 +964,13 @@ tools:
     title: Emergency Fund Calculator Ireland
     category: Pensions & Investing
     formula: emergency
-    summary: Turn your essential monthly spending into a target emergency fund and savings timeline.
-    meta_description: Emergency fund calculator Ireland. Set a 3, 6, 9 or 12 month target from essential spending and estimate how long it could take to build.
+    summary: Build an emergency-fund target from recurring essentials, irregular essential bills and an optional extra buffer, then calculate the savings path.
+    meta_description: Emergency fund calculator Ireland. Build a 3, 6, 9 or 12 month target from essential costs and estimate time or monthly saving needed to reach it.
     updated: 2026-09-22
+    basic_note: "Choose the number of months yourself. The calculator does not claim one buffer is right for every household."
+    advanced_note: "Advanced mode includes irregular annual essentials, a separate one-off buffer, interest on emergency savings and a deadline-based monthly saving target."
     fields:
-      - {id: expenses, label: Essential monthly spending, type: number, prefix: "€", default: 2000, min: 0, step: 50}
+      - {id: expenses, label: Essential recurring monthly spending, type: number, prefix: "€", default: 2000, min: 0, step: 50, section_start: Essential spending}
       - id: months
         label: Target buffer
         type: select
@@ -978,18 +980,27 @@ tools:
           - {value: "6", label: 6 months}
           - {value: "9", label: 9 months}
           - {value: "12", label: 12 months}
-      - {id: current, label: Current emergency savings, type: number, prefix: "€", default: 3000, min: 0, step: 100}
+      - {id: annual_essentials, label: Irregular essential bills per year, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true, help: "Examples might include annual insurance or other unavoidable bills not already included in the monthly figure."}
+      - {id: extra_buffer, label: Extra one-off emergency buffer, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true}
+      - {id: current, label: Current emergency savings, type: number, prefix: "€", default: 3000, min: 0, step: 100, section_start: Build the fund}
       - {id: monthly, label: Amount you can add each month, type: number, prefix: "€", default: 300, min: 0, step: 10}
+      - {id: interest_rate, label: Annual net savings interest, type: number, suffix: "%", default: 0, min: -10, max: 20, step: 0.1, advanced: true}
+      - {id: deadline_months, label: Target deadline, type: number, suffix: months, default: 24, min: 1, max: 120, step: 1, advanced: true}
     results:
       - {id: target, label: Target emergency fund}
       - {id: gap, label: Amount still to build}
-      - {id: time, label: Time to target}
+      - {id: time, label: Time to target at current saving rate}
+      - {id: coverage_now, label: Recurring essential-cost coverage now, advanced: true}
+      - {id: monthly_needed, label: Monthly saving needed for target deadline, advanced: true}
+      - {id: interest_growth, label: Interest earned on path to target, advanced: true}
     guide: |
       ## Build the target around your own essential costs
-      There is no single correct emergency-fund number for everyone. Someone with secure employment, two incomes and low fixed costs may choose a different buffer from a single-income household with dependants or volatile earnings.
+      There is no universal emergency-fund number. CCPC consumer guidance discusses a three-to-six-month financial buffer as a useful reference in some household planning, while the right amount depends on income stability, dependants, insurance, debt and fixed costs.
 
-      Use essential spending rather than total lifestyle spending: housing, utilities, basic food, insurance, transport, debt minimums and other costs that would continue after an income shock.
-    sources: []
+      Use costs that would continue after an income shock. Advanced mode can add irregular essential bills and a one-off buffer without pretending those are recurring monthly expenses.
+    sources:
+      - {title: "CCPC — About savings", url: "https://www.ccpc.ie/manage-your-money/saving-and-investments/savings"}
+      - {title: "CCPC — Moving in with your partner: emergency fund guidance", url: "https://www.ccpc.ie/manage-your-money/planning-for-the-future/moving-in-with-your-partner"}
 
   - slug: salary-hourly-rate-calculator
     title: Salary to Hourly Rate Calculator Ireland
@@ -1425,28 +1436,39 @@ tools:
     title: Investment Fee Impact Calculator
     category: Pensions & Investing
     formula: investment_fees
-    summary: See how annual investment fees can compound into a large difference over long periods.
-    meta_description: Investment fee calculator. Compare two annual fee levels and see their long-term effect on a lump sum plus monthly investments.
+    summary: Compare two fee structures and see how percentage fees, fixed annual charges and contribution charges can compound into different long-term outcomes.
+    meta_description: Investment fee calculator Ireland. Compare annual percentage fees and advanced fixed/contribution charges, including cumulative fees and inflation-adjusted balance gap.
     updated: 2026-09-22
+    basic_note: "Basic mode isolates the effect of two annual percentage fees while holding the before-fee return and contributions identical."
+    advanced_note: "Advanced mode can add a fixed annual charge and a charge on new monthly contributions to each option, then expresses the ending gap in today's money."
     fields:
       - {id: initial, label: Starting investment, type: number, prefix: "€", default: 25000, min: 0, step: 500, section_start: Investment plan}
       - {id: monthly, label: Monthly investment, type: number, prefix: "€", default: 500, min: 0, step: 10}
-      - {id: gross_return, label: Assumed annual return before fees, type: number, suffix: "%", default: 7, min: -20, max: 30, step: 0.1, section_start: Return & fees}
-      - {id: fee_low, label: Lower annual fee, type: number, suffix: "%", default: 0.25, min: 0, max: 10, step: 0.05}
-      - {id: fee_high, label: Higher annual fee, type: number, suffix: "%", default: 1.5, min: 0, max: 10, step: 0.05}
+      - {id: gross_return, label: Assumed annual return before fees, type: number, suffix: "%", default: 7, min: -20, max: 30, step: 0.1, section_start: Return & percentage fees}
+      - {id: fee_low, label: Lower annual percentage fee, type: number, suffix: "%", default: 0.25, min: 0, max: 10, step: 0.05}
+      - {id: fee_high, label: Higher annual percentage fee, type: number, suffix: "%", default: 1.5, min: 0, max: 10, step: 0.05}
       - {id: years, label: Years invested, type: number, default: 25, min: 1, max: 70, step: 1}
+      - {id: fixed_low, label: Lower option fixed annual charge, type: number, prefix: "€", default: 0, min: 0, step: 10, advanced: true, section_start: Advanced charges}
+      - {id: fixed_high, label: Higher option fixed annual charge, type: number, prefix: "€", default: 0, min: 0, step: 10, advanced: true}
+      - {id: contribution_charge_low, label: Lower option charge on each new contribution, type: number, suffix: "%", default: 0, min: 0, max: 20, step: 0.1, advanced: true}
+      - {id: contribution_charge_high, label: Higher option charge on each new contribution, type: number, suffix: "%", default: 0, min: 0, max: 20, step: 0.1, advanced: true}
+      - {id: inflation_rate, label: Annual inflation assumption, type: number, suffix: "%", default: 2, min: -5, max: 20, step: 0.1, advanced: true}
     results:
-      - {id: low_net_return, label: Implied annual net return — lower fee}
-      - {id: high_net_return, label: Implied annual net return — higher fee}
-      - {id: low_balance, label: Projected balance with lower fee}
-      - {id: high_balance, label: Projected balance with higher fee}
-      - {id: fee_gap, label: Difference attributable to fee drag and compounding}
+      - {id: low_net_return, label: Implied annual net return from percentage fee — lower option}
+      - {id: high_net_return, label: Implied annual net return from percentage fee — higher option}
+      - {id: low_balance, label: Projected balance — lower-fee option}
+      - {id: high_balance, label: Projected balance — higher-fee option}
+      - {id: fee_gap, label: Ending balance difference}
+      - {id: low_fees_paid, label: Modelled charges paid — lower option, advanced: true}
+      - {id: high_fees_paid, label: Modelled charges paid — higher option, advanced: true}
+      - {id: real_fee_gap, label: Ending balance difference in today's money, advanced: true}
     guide: |
-      ## Fees compound too
-      This illustration subtracts each annual fee from the assumed annual return and compounds monthly. It does not model Irish investment taxation, transaction costs or uneven market returns.
+      ## Fees compound because they remove capital that could otherwise keep growing
+      Basic mode compares two annual percentage fees against the same gross return and contribution plan. Advanced mode can add fixed and contribution charges.
 
-      The purpose is to isolate one question: if two investments earned the same return before fees, how much could a persistent fee difference matter over time?
-    sources: []
+      This is a fee-mechanics illustration, not an investment recommendation. It does not calculate Irish investment tax and it assumes both options earn the same return before fees, which may not be true in reality.
+    sources:
+      - {title: "CCPC — Thinking of investing", url: "https://www.ccpc.ie/manage-your-money/saving-and-investments/investments/thinking-of-investing"}
 
   - slug: fire-number-calculator
     title: FIRE Number Calculator Ireland
@@ -2199,40 +2221,50 @@ tools:
     title: MyFutureFund Auto-Enrolment Calculator Ireland
     category: Pensions & Investing
     formula: myfuturefund
-    summary: Check likely MyFutureFund enrolment status, see employee/employer/State contributions and project the fund using the phased contribution schedule.
-    meta_description: MyFutureFund calculator Ireland 2026. Check auto-enrolment eligibility and project employee, employer and State contributions through retirement.
+    summary: Check likely MyFutureFund participation status, model the 2026 contribution split and project employee, employer and State contributions under the statutory phase-in.
+    meta_description: MyFutureFund calculator Ireland 2026. Check auto-enrolment or opt-in status and project employee, employer and State contributions through the phased schedule.
     updated: 2026-09-22
+    basic_note: "The status check uses the published 2026 age, pay and payroll-pension criteria for employees. A projection is shown only where the scenario is participating."
+    advanced_note: "Advanced mode lets an eligible non-auto-enrolled employee assume an opt-in, change salary/return assumptions and translate the projected fund into today's money. The €80,000 contribution cap is modelled as a clean annual cap."
     fields:
+      - id: employment_status
+        label: Work status
+        type: select
+        default: employee
+        section_start: Participation
+        options:
+          - {value: employee, label: Employee}
+          - {value: self_employed, label: Self-employed only}
       - {id: age, label: Current age, type: number, default: 30, min: 18, max: 70, step: 1}
-      - {id: salary, label: Gross annual pay across enrolled employment(s), type: number, prefix: "€", default: 50000, min: 0, step: 500}
+      - {id: salary, label: Gross annual pay across employment(s), type: number, prefix: "€", default: 50000, min: 0, step: 500}
       - id: workplace_pension
-        label: Already paying into a qualifying pension through payroll
+        label: Already paying into a pension through payroll for this employment
         type: checkbox
         default: false
-      - {id: current_fund, label: Existing MyFutureFund balance, type: number, prefix: "€", default: 0, min: 0, step: 100}
+      - {id: assume_opt_in, label: If not auto-enrolled but eligible, assume I opt in, type: checkbox, default: false, advanced: true}
+      - {id: current_fund, label: Existing MyFutureFund balance, type: number, prefix: "€", default: 0, min: 0, step: 100, advanced: true, section_start: Projection assumptions}
       - {id: retirement_age, label: Projection age, type: number, default: 66, min: 18, max: 80, step: 1}
-      - {id: salary_growth, label: Assumed annual salary growth, type: number, suffix: "%", default: 2, min: -10, max: 15, step: 0.1}
-      - {id: return_rate, label: Assumed annual investment return, type: number, suffix: "%", default: 5, min: -20, max: 20, step: 0.1}
+      - {id: salary_growth, label: Assumed annual salary growth, type: number, suffix: "%", default: 2, min: -10, max: 15, step: 0.1, advanced: true}
+      - {id: return_rate, label: Assumed annual investment return, type: number, suffix: "%", default: 5, min: -20, max: 20, step: 0.1, advanced: true}
+      - {id: inflation_rate, label: Annual inflation assumption, type: number, suffix: "%", default: 2, min: -5, max: 20, step: 0.1, advanced: true}
     results:
       - {id: status, label: 2026 participation status}
       - {id: employee_2026, label: Employee contribution in 2026}
       - {id: employer_2026, label: Employer contribution in 2026}
       - {id: state_2026, label: State contribution in 2026}
       - {id: total_2026, label: Total added in 2026}
+      - {id: external_2026, label: Employer + State added for employee in 2026}
       - {id: projected, label: Projected fund at selected age}
       - {id: employee_total, label: Total employee contributions in projection}
+      - {id: employer_total, label: Total employer contributions in projection, advanced: true}
+      - {id: state_total, label: Total State contributions in projection, advanced: true}
+      - {id: projected_real, label: Projected fund in today's money, advanced: true}
+      - {id: investment_growth, label: Modelled investment growth, advanced: true}
     guide: |
-      ## MyFutureFund started in 2026
+      ## MyFutureFund rules used by this calculator
+      In 2026, eligible employees are automatically enrolled where they are aged 23 to under 60, earn more than €20,000 across employments and are not already paying into a pension through payroll. Certain employees outside those age/income thresholds can opt in; self-employed people cannot currently opt in.
 
-      Employees are automatically enrolled where they are generally aged 23 to 59, earn at least €20,000 a year across employments and are not already paying into a qualifying pension through payroll. Eligible employees outside the automatic age/income thresholds can opt in in certain circumstances; self-employed people cannot currently opt in.
-
-      Contributions are phased by calendar year. In 2026–2028 the employee and employer each pay 1.5% and the State adds 0.5%. Those rates rise to 3% / 3% / 1% in 2029–2031, 4.5% / 4.5% / 1.5% in 2032–2034, and 6% / 6% / 2% from 2035.
-
-      Contributions stop after the €80,000 annual gross-pay threshold is reached, subject to payroll timing around the pay period in which the threshold is crossed. This calculator uses an €80,000 annual cap for a clean annual illustration.
-
-      ## Projection assumptions
-
-      The investment return and salary growth are assumptions, not MyFutureFund forecasts. The model assumes continuous participation to the selected age and applies the calendar-year contribution rate that is in force each year.
+      Employee and employer contributions are 1.5% in 2026–2028 and the State adds 0.5%. The rates rise to 3% / 3% / 1% in 2029–2031, 4.5% / 4.5% / 1.5% in 2032–2034 and 6% / 6% / 2% from 2035. Contributions stop after the €80,000 annual gross-pay threshold is reached, subject to pay-period timing.
     sources:
       - {title: "MyFutureFund — participant eligibility", url: "https://myfuturefund.ie/participant"}
       - {title: "MyFutureFund — contribution rates and €80,000 threshold", url: "https://myfuturefund.ie/participant/contributions"}
