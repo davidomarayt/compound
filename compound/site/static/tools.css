@@ -439,3 +439,31 @@
   font-size:clamp(1.25rem,6cqw,1.9rem);
   line-height:1.25;
 }
+
+
+.tool-trust-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 18px;
+  margin-top:14px;
+  color:var(--ink-3);
+  font-size:.72rem;
+  line-height:1.4;
+}
+.tool-trust-row span{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+}
+.tool-trust-row span:not(:last-child)::after{
+  content:'';
+  width:3px;
+  height:3px;
+  border-radius:50%;
+  background:var(--line-2);
+  margin-left:12px;
+}
+@media(max-width:620px){
+  .tool-trust-row{gap:7px 12px}
+  .tool-trust-row span:not(:last-child)::after{display:none}
+}
