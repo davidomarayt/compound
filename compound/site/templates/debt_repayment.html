@@ -134,7 +134,15 @@
   </section>
 
   <section class="tool-explainer">
-    <div class="tool-explainer-main">{{ tool.guide_html|safe }}</div>
+    <div class="tool-explainer-main">
+      {% if tool.guide_toc %}
+      <nav class="tool-guide-toc" aria-label="On this calculator page">
+        <span class="eyebrow">ON THIS PAGE</span>
+        <div>{% for item in tool.guide_toc %}<a href="#{{ item.id }}">{{ item.title }}</a>{% endfor %}</div>
+      </nav>
+      {% endif %}
+      {{ tool.guide_html|safe }}
+    </div>
     <aside class="tool-source-box">
       <p class="eyebrow">CHECK THE BASIS</p>
       <h2>Method & sources</h2>
