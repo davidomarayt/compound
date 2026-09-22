@@ -125,10 +125,51 @@ const retirement = calculators.retirement_income({
 assert.equal(retirement.portfolio_income, '€20,000.00');
 assert.match(retirement.depletion, /(Not depleted|Depleted)/);
 
+// Core mortgage/deposit arithmetic: standard Central Bank LTI/LTV constraints.
+const borrowing = calculators.mortgage_borrowing({
+  income: 80000, buyer_type: 'ftb', deposit: 40000, target_price: 400000, __advanced: true
+});
+assert.equal(borrowing.lti_multiple, '4× gross income');
+assert.equal(borrowing.lti_limit, '€320,000.00');
+assert.equal(borrowing.deposit_limit, '€400,000.00');
+assert.equal(borrowing.purchase_price, '€360,000.00');
+assert.equal(borrowing.binding_constraint, 'Income');
+assert.equal(borrowing.target_mortgage, '€360,000.00');
+assert.equal(borrowing.target_income, '€90,000.00');
+assert.equal(borrowing.target_min_deposit, '€40,000.00');
+assert.equal(borrowing.target_gap, '€40,000.00');
+
+const deposit = calculators.house_deposit({
+  price: 400000, buyer_type: 'home', deposit_available: 60000, __advanced: true
+});
+assert.equal(deposit.deposit_rate, '10%');
+assert.equal(deposit.deposit, '€40,000.00');
+assert.equal(deposit.mortgage, '€360,000.00');
+assert.equal(deposit.ltv, '90%');
+assert.equal(deposit.deposit_position, '+€20,000.00 above minimum');
+assert.equal(deposit.resulting_ltv, '85%');
+assert.equal(deposit.mortgage_with_available, '€340,000.00');
+
+// Stamp Duty is progressive: €1m at 1% plus €200k at 2% = €14k.
+const stamp = calculators.stamp_duty({price: 1200000});
+assert.equal(stamp.band_1_duty, '€10,000.00');
+assert.equal(stamp.band_2_duty, '€4,000.00');
+assert.equal(stamp.band_6_duty, '€0.00');
+assert.equal(stamp.duty, '€14,000.00');
+assert.equal(stamp.total_cost, '€1,214,000.00');
+
 // LPT band 3 basic charge is €333 under the 2026–2030 schedule.
 const lpt = calculators.lpt({value: 400000, authority: 'meath'});
+assert.equal(lpt.valuation_band, '€315,001–€420,000');
 assert.equal(lpt.base_lpt, '€333.00');
+assert.equal(lpt.local_factor, '0%');
 assert.equal(lpt.lpt, '€333.00');
+assert.equal(lpt.monthly_lpt, '€27.75');
+
+// Local Adjustment Factor test: Dún Laoghaire-Rathdown is -15% in 2026.
+const lptDlr = calculators.lpt({value: 400000, authority: 'dlr'});
+assert.equal(lptDlr.adjustment, '-€49.95');
+assert.equal(lptDlr.lpt, '€283.05');
 
 // HTB: Local Authority Affordable Purchase contribution counts only in Advanced mode.
 const htbBasic = calculators.help_to_buy({
