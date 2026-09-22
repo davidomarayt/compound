@@ -52,6 +52,14 @@ If retirement planning is the reason you are looking at PRSI, check your social-
 
 For employment-cost comparisons, remember that employers can also pay employer PRSI on top of the employee's gross salary. That is a business cost, not money deducted from the employee's net pay.
 
+## The October 2026 Class A rate change
+
+The calculator separates the two employee Class A rate periods used in 2026. Above the relevant weekly threshold, the employee rate is 4.20% up to 30 September and 4.35% from 1 October.
+
+The annual estimate uses an even weekly-equivalent salary and approximates the year as 39 weeks at the earlier rate and 13 weeks at the later rate. It also applies the tapered weekly PRSI credit where the weekly equivalent falls in the relevant range.
+
+The additional result labelled **Approx. 2026 cost of October rate rise** isolates the difference caused by the higher final-quarter employee rate under those same assumptions. Actual payroll can differ when earnings vary by pay period.
+
 ## Method and limitations
 
 The tool converts annual salary to weekly earnings and applies the implemented 2026 Class A employee rates/credit structure across the relevant parts of the year. It does not cover every PRSI class or payroll edge case.
