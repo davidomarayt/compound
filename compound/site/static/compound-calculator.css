@@ -57,3 +57,19 @@
   #compound-concept .event-fields{grid-template-columns:1fr}
   #compound-concept .amount{font-size:clamp(26px,11cqw,38px)}
 }
+
+
+#compound-concept .cc-trust{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 18px;
+  margin-top:15px;
+  color:#52685e;
+  font-size:13px;
+}
+#compound-concept .cc-trust span{display:inline-flex;align-items:center;gap:8px}
+#compound-concept .cc-trust span:not(:last-child)::after{content:'•';margin-left:10px;color:#82978b}
+@media(max-width:650px){
+  #compound-concept .cc-trust{gap:6px 12px}
+  #compound-concept .cc-trust span:not(:last-child)::after{display:none}
+}
