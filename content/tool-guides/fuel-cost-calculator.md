@@ -50,6 +50,14 @@ A better comparison is **total cost of ownership** over the period you expect to
 
 Driving style also has a real effect. Repeated short cold journeys, heavy acceleration, roof boxes, low tyre pressure and high motorway speeds can all push real consumption above the figure used in the calculator. If you already own the car, use fuel receipts and distance travelled over several tanks to estimate your own L/100 km rather than relying only on the manufacturer's test figure.
 
+## Advanced mode: turn trip economics into an annual fuel budget
+
+Advanced mode adds annual distance while keeping the same L/100 km and pump-price assumptions used for the trip calculation. That produces an annual fuel-volume and fuel-cost estimate without requiring you to guess how many identical trips you make.
+
+For example, 15,000 km a year at 6.5 L/100 km requires about 975 litres. The euro result then changes directly with the fuel price entered.
+
+This is deliberately a **fuel-only annual budget**. It is not total cost of ownership. A cheaper-to-fuel vehicle can still be more expensive overall once depreciation, finance, insurance, tax, servicing and the purchase-price difference are included.
+
 ## Method and limitations
 
 The tool converts distance and fuel consumption into litres used, then multiplies by the entered fuel price. It does not model depreciation, maintenance, insurance or tax.
