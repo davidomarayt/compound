@@ -60,6 +60,48 @@ Advanced mode also includes a petrol/diesel comparison using the L/100 km and fu
 
 The home/public split can matter as much as vehicle efficiency. An EV charged almost entirely overnight at home can have very different energy economics from the same EV relying heavily on rapid public charging.
 
+## Think in kilometres first, tariffs second
+
+The cleanest way to understand EV charging cost is to separate vehicle efficiency from electricity price.
+
+Start with the car's energy use in kWh per 100 km. Then estimate how many kilometres you actually drive. That gives the energy the vehicle needs before charging losses are added. Only after that should you apply the mix of home, night-rate and public-charging prices.
+
+This avoids a common mistake: comparing one EV quoted at a cheap home tariff with another example that assumes expensive rapid charging. The vehicle can be identical while the charging pattern changes the result materially.
+
+### Charging losses belong in the model
+
+Energy drawn from the wall is usually higher than energy stored in the battery because charging is not perfectly efficient. The calculator therefore separates road energy demand from electricity purchased.
+
+If a car needs 18 kWh/100 km at the battery, the household may need to buy more than 18 kWh from the meter to deliver that energy. Charging temperature, equipment and power level can affect the exact loss, so the efficiency input should be treated as an estimate rather than a universal constant.
+
+### Home versus public charging can dominate the economics
+
+For many Irish drivers, the most important EV-cost variable is not the battery size but the share of charging completed at home.
+
+A driver doing most charging on a competitive overnight tariff can have a very different annual energy bill from someone using rapid public charging frequently. Advanced mode lets you enter that split directly.
+
+Run at least three scenarios:
+
+- mostly home charging,
+- a realistic mixed pattern,
+- and a high-public-charging case.
+
+The spread between them is a useful measure of how dependent the savings are on access to home charging.
+
+### Compare with an ICE car carefully
+
+The **annual saving versus ICE** result is an energy-cost comparison only. It does not claim the EV is cheaper to own overall.
+
+For a full ownership decision you still need purchase price, finance, depreciation, motor tax, insurance, tyres, servicing and any charger-installation cost. Use the [Fuel Cost Calculator](/fuel-cost-calculator/) for the petrol/diesel side and the [Lifetime Cost Calculator](/lifetime-cost-calculator/) for the whole-vehicle comparison.
+
+### Solar and smart charging
+
+Solar can reduce imported electricity, but a solar kWh used by the car also gives up whatever export value that kWh would otherwise have earned. Similarly, charging overnight at a very low smart-tariff rate can sometimes be financially preferable to diverting solar from a higher-value export.
+
+That is why the [Solar + EV + Battery Optimiser](/solar-ev-battery-optimiser/) is better for households trying to coordinate tariffs, solar and storage rather than merely estimate annual EV charging cost.
+
+SEAI's current EV guidance explains home charging and charging options; CRU guidance is the better reference for smart-meter and tariff structures.
+
 ## Method and limitations
 
 The calculator estimates vehicle energy from distance × kWh/100 km, adjusts for charging efficiency and multiplies by the electricity price entered.
