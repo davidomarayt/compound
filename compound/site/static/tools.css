@@ -521,3 +521,26 @@
   .tool-compare-panel{break-inside:avoid}
   .tool-compare-panel .tool-text-action{display:none!important}
 }
+
+
+/* Print a compact calculator report rather than the entire editorial page. */
+@media print{
+  .tool-page{padding-top:0}
+  .tool-page-header{margin-bottom:18px}
+  .tool-workspace{display:block!important;border:0!important}
+  .tool-form{display:none!important}
+  .tool-results{
+    display:block!important;
+    width:100%!important;
+    padding:0!important;
+    background:white!important;
+    border:0!important;
+  }
+  .tool-result-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .tool-result{break-inside:avoid;background:white!important;color:#000!important;border:1px solid #bbb!important}
+  .tool-result-primary{grid-column:1/-1!important;background:#f2f2f2!important;color:#000!important}
+  .tool-result strong,.tool-result-primary strong,.tool-result span,.tool-result-primary span{color:#000!important}
+  .tool-insights,.tool-scenario-summary,.tool-compare-panel,.tool-chart-panel{break-inside:avoid}
+  .tool-explainer,.tool-use-strip,.tool-more,.tool-reading,.tool-result-actions{display:none!important}
+  .tool-chart-panel{margin-top:20px!important;border:1px solid #bbb!important}
+}
