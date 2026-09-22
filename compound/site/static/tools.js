@@ -86,6 +86,115 @@
     for(let y=1;y<=years;y++){ for(let m=0;m<12;m++){ bal*=1+r; bal+=monthly; } points.push(bal); }
     return points;
   };
+
+  const amortisationSeries = (principal,annual,months,payment) => {
+    const r=annual/100/12, values=[Math.max(0,principal)], labels=['Start']; let bal=Math.max(0,principal);
+    for(let m=1;m<=months && bal>0.005;m++){
+      const interest=bal*r;
+      bal=Math.max(0,bal+interest-payment);
+      if(m%12===0 || m===months || bal<=0.005){ values.push(bal); labels.push(m%12===0?'Year '+(m/12):'Month '+m); }
+    }
+    return {labels,values};
+  };
+  const fallbackChart = (name,v) => {
+    switch(name){
+      case 'mortgage': {
+        const months=Math.round(v.years*12), p=monthlyPayment(v.amount,v.rate,months), s=amortisationSeries(v.amount,v.rate,months,p);
+        return {type:'line',title:'Mortgage balance over time',caption:'Scheduled balance if the entered rate stayed unchanged for the full term.',labels:s.labels,series:[{label:'Mortgage balance',values:s.values}]};
+      }
+      case 'mortgage_overpayment': {
+        const months=Math.round(v.years*12), base=monthlyPayment(v.balance,v.rate,months);
+        const a=amortisationSeries(v.balance,v.rate,months,base), b=amortisationSeries(v.balance,v.rate,months,base+v.overpayment);
+        const n=Math.max(a.values.length,b.values.length), labels=Array.from({length:n},(_,i)=>i===0?'Start':'Year '+i);
+        const pad=arr=>Array.from({length:n},(_,i)=>arr[i]??0);
+        return {type:'line',title:'How the balance falls',caption:'Standard repayment versus the monthly overpayment scenario.',labels,series:[{label:'Standard',values:pad(a.values)},{label:'With overpayment',values:pad(b.values)}]};
+      }
+      case 'mortgage_borrowing': {
+        const multiple=v.buyer_type==='ftb'?4:3.5, byIncome=v.income*multiple+v.deposit, byDeposit=v.deposit/.10;
+        return {type:'bar',title:'Which constraint is tighter?',caption:'Indicative purchase price supported by income versus the 10% deposit assumption.',labels:['Income + deposit','Deposit constraint'],series:[{label:'Purchase price',values:[byIncome,byDeposit]}]};
+      }
+      case 'house_deposit': {
+        const rate=v.buyer_type==='btl'?.30:.10;
+        return {type:'bar',title:'How the purchase is funded',caption:'Deposit and mortgage amounts implied by the selected LTV assumption.',labels:['Deposit','Mortgage'],series:[{label:'Amount',values:[v.price*rate,v.price*(1-rate)]}]};
+      }
+      case 'stamp_duty': {
+        const p=v.price, a=Math.min(p,1000000)*.01, b=Math.max(0,Math.min(p,1500000)-1000000)*.02, d=Math.max(0,p-1500000)*.06;
+        return {type:'bar',title:'Stamp Duty by rate band',caption:'Each rate applies only to the relevant slice of the residential consideration.',labels:['1% band','2% band','6% band'],series:[{label:'Duty',values:[a,b,d]}]};
+      }
+      case 'lpt': {
+        let base=0; if(v.value<=2100000){const band=lptBands.find(b=>v.value<=b[0]);base=band?band[1]:0;} else {base=1260000*.000906+(2100000-1260000)*.0025+(v.value-2100000)*.003;}
+        const total=base*(1+(lptAdjust[v.authority]??0));
+        return {type:'bar',title:'Basic versus locally adjusted LPT',caption:'The local adjustment is applied to the basic amount.',labels:['Basic LPT','After local adjustment'],series:[{label:'Annual LPT',values:[base,total]}]};
+      }
+      case 'loan': {
+        const months=Math.round(v.years*12), p=monthlyPayment(v.amount,v.rate,months), s=amortisationSeries(v.amount,v.rate,months,p);
+        return {type:'line',title:'Loan balance over time',caption:'Scheduled balance under the entered fixed-rate assumptions.',labels:s.labels,series:[{label:'Loan balance',values:s.values}]};
+      }
+      case 'savings_goal': {
+        const r=v.rate/100/12, labels=['Start'], vals=[v.current], target=[v.target]; let bal=v.current;
+        for(let m=1;m<=1200 && bal<v.target;m++){bal*=1+r;bal+=v.monthly;if(m%12===0||bal>=v.target){labels.push('Year '+Math.ceil(m/12));vals.push(bal);target.push(v.target);}}
+        return {type:'line',title:'Path to the savings goal',caption:'Modelled balance against the target using the contribution and return assumptions entered.',labels,series:[{label:'Projected balance',values:vals},{label:'Target',values:target}]};
+      }
+      case 'regular_savings': {
+        const bal=projectMonthly(v.current,v.monthly,v.rate,Math.round(v.years)), contrib=Array.from({length:Math.round(v.years)+1},(_,i)=>v.current+v.monthly*12*i);
+        return {type:'line',title:'Contributions versus projected balance',caption:'Shows how much comes from money added versus modelled growth.',labels:bal.map((_,i)=>i===0?'Start':'Year '+i),series:[{label:'Projected balance',values:bal},{label:'Contributions',values:contrib}]};
+      }
+      case 'pension_relief': {
+        const earnings=Math.min(v.earnings,115000), limit=earnings*pensionPct(v.age), eligible=Math.min(v.contribution,limit), relief=eligible*(Number(v.tax_rate)/100);
+        return {type:'bar',title:'Contribution and tax-relief envelope',caption:'Illustrative personal contribution amounts under the entered age, earnings and tax-rate assumptions.',labels:['Contribution','Eligible','Tax relief','Net cost'],series:[{label:'Amount',values:[v.contribution,eligible,relief,v.contribution-relief]}]};
+      }
+      case 'cgt': {
+        const gain=v.sale-v.purchase-v.costs, taxable=Math.max(0,Math.max(0,gain-v.losses)-1270), tax=taxable*.33;
+        return {type:'bar',title:'From gain to estimated CGT',caption:'Shows the gain, taxable amount after entered losses/exemption, and estimated tax.',labels:['Gain','Taxable gain','CGT'],series:[{label:'Amount',values:[Math.max(0,gain),taxable,tax]}]};
+      }
+      case 'vat': {
+        const r=Number(v.rate)/100; let net,vat,gross;if(v.direction==='gross'){gross=v.amount;net=r===0?gross:gross/(1+r);vat=gross-net;}else{net=v.amount;vat=net*r;gross=net+vat;}
+        return {type:'bar',title:'Net, VAT and gross price',caption:'A simple breakdown at the selected VAT rate.',labels:['Net','VAT','Gross'],series:[{label:'Amount',values:[net,vat,gross]}]};
+      }
+      case 'inflation': {
+        const years=Math.round(v.years), labels=Array.from({length:years+1},(_,i)=>i===0?'Today':'Year '+i);
+        const future=labels.map((_,i)=>v.amount*Math.pow(1+v.rate/100,i)), power=labels.map((_,i)=>v.amount/Math.pow(1+v.rate/100,i));
+        return {type:'line',title:'Inflation compounds in both directions',caption:'Future cost of today’s amount and purchasing power of a fixed nominal amount.',labels,series:[{label:'Future cost',values:future},{label:'Purchasing power',values:power}]};
+      }
+      case 'emergency': {
+        const target=v.expenses*Number(v.months);
+        return {type:'bar',title:'Emergency-fund position',caption:'Current reserve compared with the target and remaining gap.',labels:['Current','Target','Gap'],series:[{label:'Amount',values:[v.current,target,Math.max(0,target-v.current)]}]};
+      }
+      case 'ev': {
+        const battery=v.distance*v.efficiency/100, wall=battery/(1-v.loss/100);
+        return {type:'bar',currency:false,title:'Battery energy versus grid energy',caption:'Charging losses mean the grid supplies more energy than reaches the battery.',labels:['Battery','From grid'],series:[{label:'kWh',values:[battery,wall]}]};
+      }
+      case 'electricity': {
+        const monthly=v.watts/1000*v.hours*v.days*v.price, labels=Array.from({length:12},(_,i)=>'M'+(i+1)), vals=labels.map((_,i)=>monthly*(i+1));
+        return {type:'line',title:'Cumulative running cost over a year',caption:'Assumes the same monthly usage pattern continues for 12 months.',labels,series:[{label:'Cumulative cost',values:vals}]};
+      }
+      case 'usc_2026': {
+        const x=Math.max(0,v.income); if(x<=13000) return null; let left=x; const vals=[]; for(const [size,rate] of [[12012,.005],[16688,.02],[41344,.03],[Infinity,.08]]){const slice=Math.min(left,size);vals.push(Math.max(0,slice*rate));left-=slice;if(left<=0){while(vals.length<4)vals.push(0);break;}}
+        return {type:'bar',title:'USC by rate band',caption:'Each rate applies only to income within that USC band.',labels:['0.5%','2%','3%','8%'],series:[{label:'USC',values:vals}]};
+      }
+      case 'cat': {
+        const thresholds={A:400000,B:40000,C:20000}, threshold=thresholds[v.group]||0, remaining=Math.max(0,threshold-v.prior), small=v.benefit_type==='gift'?Math.min(3000,v.benefit):0, current=Math.max(0,v.benefit-small), afterTax=Math.max(0,v.prior+current-threshold)*.33, beforeTax=Math.max(0,v.prior-threshold)*.33;
+        return {type:'bar',title:'Benefit versus remaining CAT threshold',caption:'Uses the selected relationship group and prior aggregated benefits.',labels:['Current benefit','Threshold remaining','Estimated CAT'],series:[{label:'Amount',values:[current,remaining,Math.max(0,afterTax-beforeTax)]}]};
+      }
+      case 'rent_credit': {
+        const rentBased=v.rent*.20, cap=v.joint==='yes'?2000:1000, credit=Math.min(rentBased,cap,v.income_tax_liability);
+        return {type:'bar',title:'What limits the Rent Tax Credit?',caption:'The claim is constrained by rent-based calculation, statutory cap and available Income Tax liability.',labels:['Rent-based','Statutory cap','Usable credit'],series:[{label:'Amount',values:[rentBased,cap,Math.max(0,credit)]}]};
+      }
+      case 'help_to_buy': {
+        const valueCap=v.property_value*.10, ltv=v.property_value>0?v.mortgage/v.property_value*100:0, basic=v.property_value<=500000&&ltv>=70, claim=basic?Math.min(30000,valueCap,v.tax_paid):0;
+        return {type:'bar',title:'Help to Buy constraints',caption:'Illustrates the property-value cap, qualifying tax paid and resulting basic claim estimate.',labels:['10% value cap','Tax paid','Estimated claim'],series:[{label:'Amount',values:[valueCap,v.tax_paid,claim]}]};
+      }
+      case 'first_home_scheme': {
+        const htb=v.htb==='yes'?Math.min(v.htb_amount,v.property_value):0, gap=Math.max(0,v.property_value-v.mortgage-v.deposit-htb), max=v.property_value*(v.htb==='yes'?.20:.30);
+        return {type:'bar',title:'Funding gap versus scheme maximum',caption:'A funding-stack view before formal eligibility and property-price-ceiling checks.',labels:['Funding gap','Maximum share'],series:[{label:'Amount',values:[gap,max]}]};
+      }
+      case 'dirt': {
+        const tax=v.interest*.33, net=v.interest-tax;
+        return {type:'bar',title:'Gross interest after DIRT',caption:'Shows the entered gross deposit interest, DIRT and amount retained.',labels:['Gross interest','DIRT','Net interest'],series:[{label:'Amount',values:[v.interest,tax,net]}]};
+      }
+      default: return null;
+    }
+  };
   const compact = new Intl.NumberFormat('en-IE',{notation:'compact',maximumFractionDigits:1});
   const esc = s => String(s).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const renderToolChart = (root,spec) => {
@@ -740,7 +849,7 @@
 
   document.querySelectorAll('[data-calculator]').forEach(root => {
     const form=root.querySelector('[data-tool-form]'), error=root.querySelector('[data-tool-error]');
-    const run=()=>{
+    const run=(showErrors=true)=>{
       const values={}; let invalid=false;
       root.querySelectorAll('[data-field]').forEach(el=>{
         const raw=el.value;
@@ -750,7 +859,7 @@
         const n=Number(raw); if(!Number.isFinite(n)){invalid=true; return;} values[el.dataset.field]=n;
       });
       values.__advanced=root.dataset.advancedMode==='true';
-      if(invalid){ error.textContent='Check the numbers entered and try again.'; return; }
+      if(invalid){ if(showErrors) error.textContent='Check the numbers entered and try again.'; return; }
       error.textContent='';
       const fn=calculators[root.dataset.calculator]; if(!fn) return;
       try{
@@ -760,11 +869,40 @@
           const el=root.querySelector('[data-result="' + k + '"]');
           if(el) el.textContent=v;
         });
-        renderToolChart(root,results.__chart);
+        renderToolChart(root,results.__chart || fallbackChart(root.dataset.calculator,values));
+        renderScenarioSummary(values);
         if(window.gtag) window.gtag('event','tool_calculate',{tool_name:root.dataset.toolName});
-      }catch(e){ error.textContent='This combination could not be calculated. Check the values and try again.'; }
+      }catch(e){ if(showErrors) error.textContent='This combination could not be calculated. Check the values and try again.'; }
     };
-    root.dataset.advancedMode='false';
+    const params=new URLSearchParams(window.location.search);
+    root.dataset.advancedMode=params.get('advanced')==='1'?'true':'false';
+    root.querySelectorAll('[data-field]').forEach(el=>{
+      const key=el.dataset.field;
+      if(!params.has(key)) return;
+      const val=params.get(key);
+      if(el.type==='checkbox') el.checked=val==='1'||val==='true';
+      else el.value=val;
+    });
+    const renderScenarioSummary=()=>{
+      const wrap=root.querySelector('[data-tool-scenario-summary]'), chips=root.querySelector('[data-tool-scenario-chips]');
+      if(!wrap||!chips) return;
+      const pieces=[];
+      root.querySelectorAll('.tool-field:not([hidden]) [data-field]').forEach(el=>{
+        if(pieces.length>=5 || (el.type==='checkbox'&&!el.checked)) return;
+        const field=el.closest('.tool-field'), label=field?.querySelector('label')?.textContent?.trim()||el.dataset.field;
+        let value=el.tagName==='SELECT'?(el.options[el.selectedIndex]?.text||el.value):el.type==='checkbox'?'Included':el.value;
+        if(!value) return;
+        if(el.type!=='checkbox'&&el.tagName!=='SELECT'){
+          const prefix=field?.querySelector('.tool-affix:not(.tool-affix-right)')?.textContent?.trim()||'';
+          const suffix=field?.querySelector('.tool-affix-right')?.textContent?.trim()||'';
+          value=(prefix?prefix:'')+value+(suffix?' '+suffix:'');
+        }
+        pieces.push(label+': '+value);
+      });
+      chips.innerHTML='';
+      pieces.forEach(piece=>{const span=document.createElement('span');span.className='tool-scenario-chip';span.textContent=piece;chips.appendChild(span);});
+      wrap.hidden=!pieces.length;
+    };
     const syncVisibility=()=>{
       root.querySelectorAll('.tool-field').forEach(wrapper=>{
         let show=true;
@@ -780,6 +918,9 @@
       });
     };
     const modeButtons=[...root.querySelectorAll('[data-tool-mode]')];
+    modeButtons.forEach(b=>{const active=(root.dataset.advancedMode==='true')===(b.dataset.toolMode==='advanced');b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',active?'true':'false');});
+    const initialNote=root.querySelector('[data-tool-mode-note]');
+    if(initialNote) initialNote.textContent=root.dataset.advancedMode==='true'?(initialNote.dataset.advancedNote||'Advanced mode: add optional detail for a more complete scenario.'):(initialNote.dataset.basicNote||'Start with the core figures. Switch to Advanced for optional detail.');
     modeButtons.forEach(button=>button.addEventListener('click',()=>{
       const advanced=button.dataset.toolMode==='advanced';
       root.dataset.advancedMode=advanced?'true':'false';
@@ -789,8 +930,10 @@
       syncVisibility();run();
     }));
     if(form){
-      form.addEventListener('submit',e=>{e.preventDefault();run();});
-      form.addEventListener('change',()=>{syncVisibility();run();});
+      let inputTimer=null;
+      form.addEventListener('submit',e=>{e.preventDefault();run(true);});
+      form.addEventListener('change',()=>{syncVisibility();run(false);});
+      form.addEventListener('input',()=>{clearTimeout(inputTimer);inputTimer=setTimeout(()=>{syncVisibility();run(false);},180);});
       form.addEventListener('reset',()=>setTimeout(()=>{
         root.dataset.advancedMode='false';
         modeButtons.forEach(b=>{const active=b.dataset.toolMode==='basic';b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',active?'true':'false');});
@@ -798,8 +941,27 @@
         syncVisibility();run();
       },0));
     }
+    const shareButton=root.querySelector('[data-tool-share]'), printButton=root.querySelector('[data-tool-print]'), actionStatus=root.querySelector('[data-tool-action-status]');
+    if(shareButton) shareButton.addEventListener('click',async()=>{
+      const url=new URL(window.location.href); url.search='';
+      root.querySelectorAll('[data-field]').forEach(el=>{
+        if(el.type==='checkbox') url.searchParams.set(el.dataset.field,el.checked?'1':'0');
+        else if(el.value!=='') url.searchParams.set(el.dataset.field,el.value);
+      });
+      if(root.dataset.advancedMode==='true') url.searchParams.set('advanced','1');
+      const value=url.toString();
+      let copied=false;
+      try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(value);copied=true;}}catch(e){}
+      if(!copied){
+        const ta=document.createElement('textarea');ta.value=value;ta.setAttribute('readonly','');ta.style.position='absolute';ta.style.left='-9999px';document.body.appendChild(ta);ta.select();
+        try{copied=document.execCommand('copy');}catch(e){} ta.remove();
+      }
+      if(actionStatus) actionStatus.textContent=copied?'Scenario link copied.':'Copy the current page URL to share this scenario.';
+      if(window.gtag) window.gtag('event','tool_share',{tool_name:root.dataset.toolName});
+    });
+    if(printButton) printButton.addEventListener('click',()=>window.print());
     syncVisibility();
-    run();
+    run(false);
   });
 
   const search=document.querySelector('[data-tool-search]');
