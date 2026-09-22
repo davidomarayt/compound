@@ -96,6 +96,45 @@ def test_next_flagship_tools_have_expected_controls():
     assert any(result["id"] == "lifetime_nominal" for result in lifetime["results"])
 
 
+
+def test_thin_calculators_now_expose_flagship_advanced_controls():
+    content_dir = Path(__file__).parents[1] / "content"
+    tools = {tool["slug"]: tool for tool in load_tools(content_dir)}
+
+    loan = tools["loan-repayment-calculator"]
+    loan_fields = {field["id"]: field for field in loan["fields"]}
+    loan_results = {result["id"] for result in loan["results"]}
+    assert loan_fields["extra_monthly"]["advanced"] is True
+    assert loan_fields["lump_sum"]["advanced"] is True
+    assert {"payoff_time", "scenario_interest", "interest_saved", "scenario_total"} <= loan_results
+
+    fuel = tools["fuel-cost-calculator"]
+    fuel_fields = {field["id"]: field for field in fuel["fields"]}
+    assert fuel_fields["annual_distance"]["advanced"] is True
+    assert any(result["id"] == "annual_cost" for result in fuel["results"])
+
+    ev = tools["ev-charging-cost-calculator"]
+    ev_fields = {field["id"]: field for field in ev["fields"]}
+    ev_results = {result["id"] for result in ev["results"]}
+    assert ev_fields["home_share"]["advanced"] is True
+    assert ev_fields["public_price"]["advanced"] is True
+    assert {"blended_rate", "annual_cost", "ice_annual_cost", "annual_saving_vs_ice"} <= ev_results
+
+    electricity = tools["electricity-cost-calculator"]
+    electricity_fields = {field["id"]: field for field in electricity["fields"]}
+    assert electricity_fields["duty_cycle"]["advanced"] is True
+    assert electricity_fields["offpeak_share"]["advanced"] is True
+    assert electricity_fields["offpeak_rate"]["advanced"] is True
+
+    retrofit = tools["whole-house-retrofit-planner"]
+    retrofit_fields = {field["id"]: field for field in retrofit["fields"]}
+    retrofit_results = {result["id"] for result in retrofit["results"]}
+    assert retrofit_fields["central_heating_upgrade"]["advanced"] is True
+    assert retrofit_fields["renewable_heat_bonus"]["advanced"] is True
+    assert retrofit_fields["include_oss_services"]["advanced"] is True
+    assert {"base_grants", "conditional_heat_grants", "oss_service_grants"} <= retrofit_results
+
+
 def test_car_finance_has_basic_and_advanced_fields():
     content_dir = Path(__file__).parents[1] / "content"
     car = next(tool for tool in load_tools(content_dir) if tool["slug"] == "car-finance-calculator")
