@@ -1561,22 +1561,22 @@ h1, h2, h3 {
 
 /* Contextual article → tool conversion banner */
 .article-tool-banner{
-  --tool-accent:var(--wealth);
+  --tool-accent:#365e4f;
   margin:42px 0 46px;
   padding:30px 32px;
-  border:1px solid color-mix(in srgb,var(--tool-accent) 24%,#d8d0c6);
-  border-left:4px solid var(--tool-accent);
-  background:linear-gradient(135deg,#fbf8f3 0%,#f4eee6 100%);
-  box-shadow:0 12px 30px rgba(51,37,46,.06);
+  border:1px solid #ded8cf;
+  border-top:3px solid var(--tool-accent);
+  background:#fffdf9;
+  box-shadow:0 10px 28px rgba(51,37,46,.045);
   display:grid;
   grid-template-columns:minmax(0,1fr) minmax(230px,.7fr);
   gap:30px;
   align-items:center;
-  border-radius:2px;
+  border-radius:3px;
 }
-.article-tool-banner-health{--tool-accent:var(--health)}
-.article-tool-banner-wealth{--tool-accent:var(--wealth)}
-.article-tool-banner-happiness{--tool-accent:var(--happiness)}
+.article-tool-banner-health{--tool-accent:#365e4f}
+.article-tool-banner-wealth{--tool-accent:#365e4f}
+.article-tool-banner-happiness{--tool-accent:#b97253}
 .article-tool-banner .eyebrow{
   margin:0 0 9px;
   color:var(--tool-accent);
@@ -1584,14 +1584,14 @@ h1, h2, h3 {
 .article-tool-banner h2{
   margin:0 0 10px!important;
   font:400 clamp(28px,3.4vw,40px)/1.05 var(--serif)!important;
-  color:var(--ink);
+  color:#33252e;
 }
 .article-tool-banner-copy>p:last-child{
   margin:0;
   max-width:520px;
   font-size:13px;
   line-height:1.65;
-  color:var(--ink-2);
+  color:#5f555b;
 }
 .article-tool-banner-cta{
   display:flex;
@@ -1600,22 +1600,23 @@ h1, h2, h3 {
   gap:18px;
   padding:18px 20px;
   min-height:74px;
-  background:var(--ink);
-  color:#fffaf4!important;
-  border:1px solid var(--ink);
+  background:#365e4f;
+  color:#fffdf8!important;
+  border:1px solid #365e4f;
+  border-radius:2px;
   text-decoration:none!important;
   font:600 14px/1.35 var(--sans);
-  box-shadow:0 7px 18px rgba(51,37,46,.12);
-  transition:transform .16s ease,box-shadow .16s ease,background .16s ease;
+  box-shadow:none;
+  transition:transform .16s ease,background .16s ease,border-color .16s ease;
 }
 .article-tool-banner-cta:hover{
-  background:color-mix(in srgb,var(--ink) 92%,var(--tool-accent));
+  background:#2f5145;
+  border-color:#2f5145;
   transform:translateY(-1px);
-  box-shadow:0 10px 22px rgba(51,37,46,.16);
 }
 .article-tool-banner-cta>span:last-child{
   font-size:22px;
-  color:color-mix(in srgb,var(--tool-accent) 78%,#fff);
+  color:#f1e7d7;
 }
 @media(max-width:620px){
   .article-tool-banner{
@@ -1623,7 +1624,6 @@ h1, h2, h3 {
     gap:20px;
     margin:34px 0 38px;
     padding:24px 22px;
-    border-left-width:3px;
   }
   .article-tool-banner-cta{min-height:64px}
 }
