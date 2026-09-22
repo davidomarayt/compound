@@ -107,3 +107,9 @@ Afterwards, notice whether it suited you. An interrupted attempt still tells you
 Persistent tiredness deserves separate attention. If you have been tired for weeks without a clear reason, or fatigue affects daily life, speak to your GP rather than assuming you are simply bad at relaxing. [NHS guidance on tiredness](https://www.nhs.uk/symptoms/tiredness-and-fatigue/).
 
 The aim is modest: some time in which you are allowed to be somewhere other than the next demand.
+
+## Related Compound guides
+
+If work itself is driving the exhaustion, read [Burnout symptoms: how to recognise burnout and what actually helps](/happiness/burnout-symptoms-recovery-ireland/).
+
+For the broader pattern of sustained pressure, see [Stress symptoms: how to recognise stress and what actually helps](/happiness/stress-symptoms-what-helps-ireland/).
