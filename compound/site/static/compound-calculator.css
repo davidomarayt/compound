@@ -26,3 +26,34 @@
 .calculator-guide{max-width:880px;margin:0 auto 80px;font-size:18px;line-height:1.8}.calculator-guide h2{font:400 clamp(28px,4vw,40px)/1.15 'Libre Caslon Display',Georgia,serif;margin:52px 0 18px;scroll-margin-top:24px}.calculator-guide h3{font:600 21px/1.4 'DM Sans',sans-serif;margin:32px 0 12px}.calculator-guide p{margin:18px 0}.calculator-guide a{text-decoration:underline;text-underline-offset:3px}.calculator-guide li{margin:10px 0}.calculator-guide .guide-meta{font-size:13px;color:#685e64}.guide-contents{display:flex;flex-wrap:wrap;gap:10px 20px;border-block:1px solid #d8cfcf;padding:20px 0;font-size:15px;margin:28px 0}.calculator-guide table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5}.calculator-guide th,.calculator-guide td{padding:14px 10px;border-bottom:1px solid #d8cfcf;text-align:left;vertical-align:top}.calculator-guide th{background:#f0ece8}.calculator-guide .guide-next{padding:24px;background:#f0ece8;border-radius:12px;margin-top:40px}.calculator-guide .guide-next h2{margin-top:0}.calculator-guide .button{font-size:16px;text-decoration:none}.guide-table-scroll{overflow-x:auto}.guide-table-scroll table{min-width:550px}
 @media(max-width:650px){#compound-concept{margin-top:16px}#compound-concept .layout{display:flex;flex-direction:column}#compound-concept .amount{font-size:36px}.calculator-guide{font-size:16px}.calculator-guide h2{margin-top:36px}.calculator-guide .guide-next{padding:18px}}
 @media print{.site-header,.site-footer,.masthead-note,.calculator-guide,.privacy-banner{display:none!important}#compound-concept{margin:0;padding:0}#compound-concept .result{break-inside:avoid}#compound-concept #cc-method{font-size:11px}}
+
+
+/* Responsive integrity guardrails */
+#compound-concept .layout>*,
+#compound-concept .controls,
+#compound-concept .result,
+#compound-concept .workspace,
+#compound-concept .stats>div{
+  min-width:0;
+}
+#compound-concept .result{container-type:inline-size}
+#compound-concept .amount{
+  max-width:100%;
+  font-size:clamp(26px,10cqw,48px);
+  line-height:1.05;
+  overflow-wrap:anywhere;
+  font-variant-numeric:tabular-nums;
+}
+#compound-concept .stats strong,
+#compound-concept #cc-goal-answer,
+#compound-concept #cc-real-result,
+#compound-concept #cc-comparison,
+#compound-concept #cc-inspect{
+  max-width:100%;
+  overflow-wrap:anywhere;
+  font-variant-numeric:tabular-nums;
+}
+@media(max-width:650px){
+  #compound-concept .event-fields{grid-template-columns:1fr}
+  #compound-concept .amount{font-size:clamp(26px,11cqw,38px)}
+}
