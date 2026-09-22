@@ -7,7 +7,7 @@ from compound.site.build import load_articles, load_tools, linked_articles, tool
 def test_tool_catalogue_has_unique_routes():
     content_dir = Path(__file__).parents[1] / "content"
     tools = load_tools(content_dir)
-    assert len(tools) >= 47
+    assert len(tools) >= 48
     assert len({tool["slug"] for tool in tools}) == len(tools)
     assert all(tool["url"].startswith("/") and tool["url"].endswith("/") for tool in tools)
     assert all(tool["fields"] and tool["results"] for tool in tools)
@@ -27,7 +27,7 @@ def test_tool_formulas_are_supported():
         "house_buying_costs", "solar_payback", "ber_energy",
         "solar_optimizer", "retrofit_planner", "myfuturefund", "childcare_return",
         "mortgage_switch", "lifetime_cost", "car_finance",
-        "nutrition_needs", "pregnancy_timeline", "alcohol_ireland",
+        "nutrition_needs", "pregnancy_timeline", "alcohol_ireland", "net_worth",
     }
     assert {tool["formula"] for tool in data["tools"]} <= supported
 
@@ -46,7 +46,7 @@ def test_high_intent_tool_routes_present():
         "childcare-return-to-work-calculator", "mortgage-switch-calculator", "lifetime-cost-calculator",
         "car-finance-calculator",
         "nutrition-needs-calculator", "pregnancy-due-date-calculator",
-        "alcohol-units-calories-cost-calculator",
+        "alcohol-units-calories-cost-calculator", "net-worth-calculator",
     }
     assert expected <= slugs
 
@@ -168,3 +168,23 @@ def test_happiness_articles_are_not_forced_into_tool_links():
     happiness = [a for a in load_articles(content_dir) if a.pillar == "happiness"]
     assert happiness
     assert all(not a.related_tools for a in happiness)
+
+
+def test_net_worth_calculator_is_substantial_and_sourced():
+    content_dir = Path(__file__).parents[1] / "content"
+    tool = next(tool for tool in load_tools(content_dir) if tool["slug"] == "net-worth-calculator")
+    fields = {field["id"]: field for field in tool["fields"]}
+    results = {result["id"] for result in tool["results"]}
+
+    assert tool["formula"] == "net_worth"
+    assert fields["cash"]["section_start"] == "Assets"
+    assert fields["mortgage"]["section_start"] == "Debts"
+    assert fields["other_property"]["advanced"] is True
+    assert fields["business_value"]["advanced"] is True
+    assert fields["other_property_mortgage"]["advanced"] is True
+    assert {"net_worth", "total_assets", "total_liabilities", "property_equity",
+            "financial_assets", "net_ex_pension", "debt_asset_ratio"} <= results
+    assert len(tool["sources"]) >= 3
+    assert "€256,900" in tool["guide"]
+    assert "net worth is a balance-sheet number" in tool["guide"].lower()
+    assert "do not count the same value twice" in tool["guide"].lower()
