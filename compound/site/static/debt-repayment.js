@@ -147,6 +147,58 @@
     return Number.isFinite(value) && value >= 0 ? value : NaN;
   };
 
+  const scenarioUrl = debts => {
+    const url = new URL(window.location.href);
+    url.search = '';
+    url.searchParams.set('extra', String(readExtra()));
+    url.searchParams.set('debts', JSON.stringify(debts.map(d => ({name:d.name,balance:d.balance,apr:d.apr,minimum:d.minimum}))));
+    return url.toString();
+  };
+
+  const copyText = async value => {
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(value);
+        return true;
+      }
+    } catch (e) {}
+    const ta=document.createElement('textarea');
+    ta.value=value; ta.setAttribute('readonly','');
+    ta.style.position='absolute'; ta.style.left='-9999px';
+    document.body.appendChild(ta); ta.select();
+    let copied=false;
+    try { copied=document.execCommand('copy'); } catch (e) {}
+    ta.remove();
+    return copied;
+  };
+
+  const loadSharedScenario = () => {
+    const params=new URLSearchParams(window.location.search);
+    if(!params.has('debts')) return false;
+    try {
+      const parsed=JSON.parse(params.get('debts'));
+      if(!Array.isArray(parsed) || !parsed.length) return false;
+      rows.innerHTML=''; rowCounter=0;
+      parsed.slice(0,maxDebts).forEach(item=>{
+        const debt={
+          name:String(item.name||'').slice(0,42),
+          balance:Number(item.balance),
+          apr:Number(item.apr),
+          minimum:Number(item.minimum)
+        };
+        if(Number.isFinite(debt.balance)&&debt.balance>0&&Number.isFinite(debt.apr)&&debt.apr>=0&&Number.isFinite(debt.minimum)&&debt.minimum>0) addDebtRow(debt);
+      });
+      if(!rows.children.length) return false;
+      const extra=Number(params.get('extra'));
+      extraInput.value=Number.isFinite(extra)&&extra>=0?String(extra):'0';
+      updateSummaryPreview();
+      runComparison();
+      return true;
+    } catch(e) {
+      return false;
+    }
+  };
+
   const updateSummaryPreview = () => {
     const {debts} = readDebts(false);
     const extra = readExtra();
@@ -431,5 +483,17 @@
   clearButton.addEventListener('click', clearExample);
   resetButton.addEventListener('click', loadExample);
 
-  loadExample();
+  const shareButton=root.querySelector('[data-debt-share]');
+  const printButton=root.querySelector('[data-debt-print]');
+  const actionStatus=root.querySelector('[data-debt-action-status]');
+  if(shareButton) shareButton.addEventListener('click', async()=>{
+    const {debts,problem}=readDebts(true);
+    if(problem||!debts.length){if(actionStatus)actionStatus.textContent='Complete the debt table before sharing.';return;}
+    const copied=await copyText(scenarioUrl(debts));
+    if(actionStatus) actionStatus.textContent=copied?'Scenario link copied.':'Copy the current page URL to share this scenario.';
+    if(window.gtag) window.gtag('event','tool_share',{tool_name:'debt-repayment-calculator'});
+  });
+  if(printButton) printButton.addEventListener('click',()=>window.print());
+
+  if(!loadSharedScenario()) loadExample();
 })();
