@@ -1286,6 +1286,8 @@ button {
 }
 
 @media(max-width:440px) {
+  .pillar-nav {gap:18px}
+  .pillar-nav a {font-size:12px}
   .story-grid {
   grid-template-columns:1fr;
   gap:34px}
