@@ -792,11 +792,9 @@ def build_site(settings: Settings) -> dict:
         "bmi-calculator",
     ]
     home_tools = [tools_by_slug[s] for s in preferred_home_tools if s in tools_by_slug]
-    home_feature = next((a for a in articles if a.url == "/live-to-100/"), None)
     _write(out / "index.html", env.get_template("home.html").render(
         columns=columns, articles=articles, home_articles=home_articles,
-        news_articles=news_articles[:4], home_tools=home_tools, home_feature=home_feature,
-        title="Compound"))
+        news_articles=news_articles[:4], home_tools=home_tools, title="Compound"))
 
     _write(out / "news" / "index.html", env.get_template("news.html").render(
         articles=news_articles, title="Latest News for Ireland", news=True, ads_allowed=False))
