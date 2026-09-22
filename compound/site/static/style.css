@@ -1815,7 +1815,7 @@ h1, h2, h3 {
   background:#f8e7e7;
   color:#b33a3a;
 }
-.home-tool-electricity-cost-calculator .home-tool-icon{
+.home-tool-solar-payback-calculator .home-tool-icon{
   background:#fff4cf;
   color:#d3a100;
 }
@@ -1946,38 +1946,39 @@ h1, h2, h3 {
 .home-hero-text-only{
   display:block;
   min-height:0;
-  margin:22px 0 34px;
+  margin:12px 0 18px;
 }
 .home-hero-text-only .hero-copy-v2{
   width:100%;
   max-width:none;
-  padding:34px 0 26px;
+  padding:20px 0 14px;
 }
 .home-hero-text-only .hero-copy-v2 h1{
-  max-width:1180px;
-  font-size:clamp(72px,8.7vw,124px);
-  line-height:.92;
+  width:100%;
+  max-width:none;
+  font-size:clamp(68px,7.7vw,112px);
+  line-height:.93;
   letter-spacing:-.035em;
 }
 .home-hero-text-only .hero-copy-v2 h1 em{
-  margin-top:12px;
+  margin-top:8px;
 }
 .home-hero-text-only .hero-copy-v2 .hero-description{
-  max-width:760px;
+  max-width:860px;
   font-size:17px;
-  line-height:1.65;
-  margin:30px 0 28px;
+  line-height:1.62;
+  margin:22px 0 22px;
 }
 .home-hero-text-only .hero-actions{
   margin-bottom:0;
 }
 .home-hero-text-only .hero-proof{
   width:100%;
-  max-width:920px;
-  justify-content:space-between;
-  gap:42px;
-  margin-top:36px;
-  padding-top:24px;
+  max-width:none;
+  justify-content:flex-start;
+  gap:56px;
+  margin-top:24px;
+  padding-top:18px;
   border-top:1px solid var(--line);
 }
 .home-hero-text-only .hero-proof span{
@@ -1994,11 +1995,11 @@ h1, h2, h3 {
 }
 @media(max-width:620px){
   .home-hero-text-only{
-    margin-top:8px;
-    margin-bottom:26px;
+    margin-top:6px;
+    margin-bottom:18px;
   }
   .home-hero-text-only .hero-copy-v2{
-    padding:18px 0 18px;
+    padding:14px 0 12px;
   }
   .home-hero-text-only .hero-copy-v2 h1{
     font-size:clamp(48px,13vw,66px);
