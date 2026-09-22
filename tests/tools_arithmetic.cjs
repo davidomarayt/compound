@@ -435,4 +435,66 @@ const alcoholAdvanced = calculators.alcohol_ireland({
 assert.equal(alcoholAdvanced.annual_spend, '€5,200.00');
 assert.notEqual(alcoholAdvanced.reduced_drinks, alcoholAdvanced.standard_drinks);
 
+
+// Solar flagship Basic/Advanced behaviour.
+const solarBasic = calculators.solar_payback({
+  system_cost: 9000, grant_eligible: true, kwp: 4, generation_per_kwp: 850,
+  annual_home_kwh: 4200, direct_solar_pct: 35, import_rate: 0.30, export_rate: 0.15,
+  has_ev: true, annual_ev_km: 15000, ev_efficiency: 18, ev_loss_pct: 10,
+  ev_home_charge_pct: 80, ev_solar_share_pct: 50, ev_alternative_rate: 0.10,
+  has_battery: true, battery_cost: 4500, battery_kwh: 5, battery_efficiency: 90,
+  solar_to_battery_pct: 60, night_charge: true, night_rate: 0.10,
+  night_battery_kwh_day: 3, __advanced: false
+});
+assert.equal(solarBasic.grant, '€1,800.00');
+assert.equal(solarBasic.net_cost, '€7,200.00');
+assert.equal(solarBasic.total_demand, '4,200 kWh');
+assert.equal(solarBasic.battery_incremental_value, 'Not included');
+assert.equal(solarBasic.solar_annual, undefined);
+assert.match(solarBasic.self_consumption, /%$/);
+assert.equal(solarBasic.twenty_year_net, '+€6,570.00');
+
+const solarAdvanced = calculators.solar_payback({
+  system_cost: 9000, grant_eligible: true, kwp: 4, generation_per_kwp: 850,
+  annual_home_kwh: 4200, direct_solar_pct: 35, import_rate: 0.30, export_rate: 0.15,
+  has_ev: true, annual_ev_km: 15000, ev_efficiency: 18, ev_loss_pct: 10,
+  ev_home_charge_pct: 80, ev_solar_share_pct: 50, ev_alternative_rate: 0.10,
+  has_battery: true, battery_cost: 4500, battery_kwh: 5, battery_efficiency: 90,
+  solar_to_battery_pct: 60, night_charge: true, night_rate: 0.10,
+  night_battery_kwh_day: 3, __advanced: true
+});
+assert.equal(solarAdvanced.net_cost, '€11,700.00');
+assert.notEqual(solarAdvanced.total_demand, '4,200 kWh');
+assert.notEqual(solarAdvanced.battery_incremental_value, 'Not included');
+assert.match(solarAdvanced.battery_incremental_payback, /(years|Not reached)$/);
+
+const optimiserBasicNoEv = calculators.solar_optimizer({
+  solar_cost: 9000, grant_eligible: true, kwp: 4, generation_per_kwp: 850,
+  home_kwh: 4200, direct_home_pct: 90, day_rate: 0.30, export_rate: 0.15,
+  has_ev: false, ev_km: 15000, ev_efficiency: 40, ev_loss_pct: 35,
+  ev_home_pct: 20, ev_solar_pct: 100, ev_grid_rate: 0.10, smart_ev_cost: 1000,
+  battery_cost: 4500, battery_kwh: 5, battery_efficiency: 60,
+  solar_capture_pct: 100, use_night_charge: true, night_rate: 0.10,
+  night_kwh_day: 8, __advanced: false
+});
+assert.equal(optimiserBasicNoEv.solar_annual, '€688.50');
+assert.equal(optimiserBasicNoEv.solar_benefit, '+€6,570.00');
+assert.equal(optimiserBasicNoEv.ev_payback, 'EV not included');
+assert.equal(optimiserBasicNoEv.ev_benefit, 'EV not included');
+assert.equal(optimiserBasicNoEv.__chart.labels.length, 2);
+assert.match(optimiserBasicNoEv.best_margin, /^\+€/);
+
+const optimiserAdvancedEv = calculators.solar_optimizer({
+  solar_cost: 9000, grant_eligible: true, kwp: 4, generation_per_kwp: 850,
+  home_kwh: 4200, direct_home_pct: 35, day_rate: 0.30, export_rate: 0.15,
+  has_ev: true, ev_km: 15000, ev_efficiency: 18, ev_loss_pct: 10,
+  ev_home_pct: 80, ev_solar_pct: 35, ev_grid_rate: 0.10, smart_ev_cost: 1000,
+  battery_cost: 4500, battery_kwh: 5, battery_efficiency: 90,
+  solar_capture_pct: 60, use_night_charge: true, night_rate: 0.10,
+  night_kwh_day: 3, __advanced: true
+});
+assert.notEqual(optimiserAdvancedEv.ev_payback, 'EV not included');
+assert.notEqual(optimiserAdvancedEv.combined_benefit, 'EV not included');
+assert.equal(optimiserAdvancedEv.__chart.labels.length, 4);
+
 console.log('Calculator arithmetic regression checks passed.');
