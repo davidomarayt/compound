@@ -1010,7 +1010,8 @@
         return {bal,fees,labels,balances};
       };
       const low=simulate(v.fee_low,v.fixed_low,v.contribution_charge_low), high=simulate(v.fee_high,v.fixed_high,v.contribution_charge_high);
-      const lowNet=((1+gross)*(1-Math.max(0,v.fee_low)/100)-1)*100, highNet=((1+gross)*(1-Math.max(0,v.fee_high)/100)-1)*100;
+      const cleanRate=x=>Math.round(x*1e10)/1e10;
+      const lowNet=cleanRate(((1+gross)*(1-Math.max(0,v.fee_low)/100)-1)*100), highNet=cleanRate(((1+gross)*(1-Math.max(0,v.fee_high)/100)-1)*100);
       const gap=low.bal-high.bal, inflation=advanced?Math.max(-.99,v.inflation_rate/100):0, realGap=gap/Math.pow(1+inflation,Math.max(0,v.years));
       return {
         low_net_return:pct(lowNet),high_net_return:pct(highNet),low_balance:money(low.bal),high_balance:money(high.bal),fee_gap:(gap>=0?'+':'-')+money(Math.abs(gap)),
