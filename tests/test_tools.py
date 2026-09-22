@@ -304,3 +304,38 @@ def test_every_standard_calculator_has_a_dedicated_guide_file():
     actual = {path.name for path in guide_dir.glob("*.md")}
     assert actual == expected
     assert all((guide_dir / name).stat().st_size >= 2500 for name in expected)
+
+
+def test_flagship_calculator_experience_is_catalogue_wide():
+    from compound.site.build import TOOL_PRIMARY_RESULTS
+
+    content_dir = Path(__file__).parents[1] / "content"
+    tools = load_tools(content_dir)
+
+    assert set(TOOL_PRIMARY_RESULTS) == {tool["slug"] for tool in tools}
+    for tool in tools:
+        result_ids = {result["id"] for result in tool["results"]}
+        assert tool["primary_result"] in result_ids
+        assert len(tool.get("guide_toc") or []) >= 5, f"{tool['slug']} needs navigable guide sections"
+        assert len(tool.get("faq") or []) >= 3, f"{tool['slug']} needs useful FAQs"
+
+
+def test_flagship_calculator_frontend_features_are_present():
+    root = Path(__file__).parents[1] / "compound" / "site"
+    template = (root / "templates" / "tool.html").read_text()
+    tools_js = (root / "static" / "tools.js").read_text()
+    tools_css = (root / "static" / "tools.css").read_text()
+    debt_template = (root / "templates" / "debt_repayment.html").read_text()
+    debt_js = (root / "static" / "debt-repayment.js").read_text()
+
+    assert "data-tool-share" in template
+    assert "data-tool-print" in template
+    assert "data-tool-insights" in template
+    assert "tool-guide-toc" in template
+    assert "buildInsights" in tools_js
+    assert "fallbackChart" in tools_js
+    assert "TextEncoder" in tools_js and "#scenario=" in tools_js
+    assert "tool-result-primary" in tools_css
+    assert "tool-use-strip" in tools_css
+    assert "data-debt-share" in debt_template
+    assert "TextEncoder" in debt_js and "#scenario=" in debt_js
