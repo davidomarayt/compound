@@ -497,4 +497,43 @@ assert.notEqual(optimiserAdvancedEv.ev_payback, 'EV not included');
 assert.notEqual(optimiserAdvancedEv.combined_benefit, 'EV not included');
 assert.equal(optimiserAdvancedEv.__chart.labels.length, 4);
 
+
+// Final simple-calculator flagship output regression coverage.
+const mortgageCore = calculators.mortgage({amount: 300000, rate: 3.5, years: 30});
+assert.equal(mortgageCore.monthly, '€1,347.13');
+assert.equal(mortgageCore.annual_repayment, '€16,165.61');
+assert.equal(mortgageCore.first_year_interest, '€10,408.22');
+assert.equal(mortgageCore.first_year_principal, '€5,757.38');
+assert.equal(mortgageCore.balance_5y, '€269,091.22');
+assert.equal(mortgageCore.stress_1pp, '€1,520.06');
+assert.equal(mortgageCore.stress_2pp, '€1,703.37');
+assert.equal(mortgageCore.payment_per_100k, '€449.04');
+
+const vatCore = calculators.vat({amount: 100, direction: 'net', rate: '23'});
+assert.equal(vatCore.vat, '€23.00');
+assert.equal(vatCore.gross, '€123.00');
+assert.equal(vatCore.vat_share_gross, '18.7%');
+assert.equal(vatCore.multiplier, '1.23×');
+
+assert.equal(hourly.fortnightly, '€1,923.08');
+assert.equal(hourly.workday_hours, '7.8 hours');
+assert.equal(hourly.weekly_hours_share, '23.21%');
+
+assert.equal(prsiFlagship.annual_if_old_rate, '€2,184.00');
+assert.equal(prsiFlagship.annual_if_new_rate, '€2,262.00');
+assert.equal(prsiFlagship.monthly_equivalent, '€183.63');
+
+assert.equal(rentCreditFlagship.binding_limit, '2026 statutory cap');
+assert.equal(rentCreditFlagship.effective_rent_relief, '8.33%');
+
+const berCore = calculators.ber_energy({
+  area: 120, current_kwh_m2: 180, target_kwh_m2: 90, energy_price: 0.18
+});
+assert.equal(berCore.current_use, '21,600 kWh');
+assert.equal(berCore.target_use, '10,800 kWh');
+assert.equal(berCore.saving, '+€1,944.00');
+assert.equal(berCore.monthly_saving, '+€162.00');
+assert.equal(berCore.energy_reduction, '50%');
+assert.equal(berCore.ten_year_saving, '+€19,440.00');
+
 console.log('Calculator arithmetic regression checks passed.');
