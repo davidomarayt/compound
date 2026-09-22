@@ -4,6 +4,14 @@ Pregnancy is conventionally dated from the **first day of the last menstrual per
 
 That convention also assumes a regular 28-day menstrual cycle with ovulation around day 14. Real cycles and ovulation dates vary, and people may not recall the LMP exactly. That is why a calendar calculation is an estimate rather than a clinical measurement.
 
+## Basic and Advanced modes
+
+**Basic** uses the conventional 280-day estimate from the first day of the LMP. **Advanced** is useful when your cycle is not 28 days or your maternity team has already assigned a due date. A clinician-assigned due date takes priority over the LMP calculation.
+
+If no assigned due date is entered, Advanced can shift the LMP-based estimate by the difference between your typical cycle length and 28 days. This is still a calendar estimate. It does not override ultrasound dating or the due date recorded by your maternity team.
+
+The progress bar is simply elapsed calendar time relative to a 40-week timeline. It is not a measure of fetal growth, viability or how the pregnancy is progressing clinically.
+
 ## Ultrasound dating is more accurate early in pregnancy
 
 The American College of Obstetricians and Gynecologists, together with the American Institute of Ultrasound in Medicine and the Society for Maternal–Fetal Medicine, states that **first-trimester ultrasound up to 13 weeks and 6 days is the most accurate method to establish or confirm gestational age**. Crown–rump-length dating in this period is typically accurate to about **±5–7 days**.
