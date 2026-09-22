@@ -60,6 +60,36 @@ Revenue also provides exemption and refund rules for certain individuals, includ
 
 For longer-term savings, also compare the after-tax return with inflation. A positive bank balance can still lose purchasing power if the net interest rate is below inflation.
 
+## Compare deposits on an after-tax, after-inflation basis
+
+DIRT is 33% on deposit interest for Irish-resident individuals in the standard case. That means an advertised gross deposit rate is not the same thing as the return that increases your spendable wealth.
+
+A simple comparison framework is:
+
+**gross interest → DIRT → net interest → inflation-adjusted purchasing power**
+
+At a 4% gross rate, a simple 33% DIRT deduction leaves about 2.68% of net interest before allowing for compounding detail. If inflation were above that net rate, the account could still lose purchasing power even while the euro balance rises.
+
+That is why the [Inflation Calculator](/inflation-calculator/) is a useful companion for medium- and long-term savings decisions.
+
+### Promotional rates need a full-period comparison
+
+A high introductory rate can look better than it really is if it applies only for a short period or to a limited balance. Convert each option into an estimated euro interest amount over the same time horizon, apply the appropriate DIRT assumption, and compare the net euro outcome.
+
+The same principle applies when one account pays monthly interest and another pays annually. Payment frequency can affect compounding, but the advertised headline rate alone does not capture the full result.
+
+### DIRT is not a universal investment-tax calculator
+
+This tool is for deposit interest. It should not be reused to estimate the tax on shares, investment funds, ETFs, rental income or capital gains. Different Irish tax regimes can apply to those assets.
+
+Use the [Capital Gains Tax Calculator](/capital-gains-tax-calculator/) only where ordinary CGT treatment is actually appropriate, and verify the regime for funds or other products separately.
+
+### Exemptions and foreign interest
+
+Some people may qualify for DIRT exemptions or refunds, and foreign deposit interest can have separate reporting requirements. The calculator therefore models the standard Irish-resident deposit case rather than every possible exception.
+
+Revenue's current guidance confirms the 33% rate for Irish-resident individuals. See [What DIRT rate is applicable?](https://www.revenue.ie/en/additional-incomes/dirt/what-dirt-rate-is-applicable.aspx).
+
 ## Method and limitations
 
 The tool multiplies gross deposit interest by the implemented DIRT rate and subtracts that tax from gross interest. It does not determine exemption eligibility or foreign-account reporting.
