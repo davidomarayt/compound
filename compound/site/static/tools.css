@@ -407,3 +407,8 @@
   font-size:.68rem;
   line-height:1.45;
 }
+
+.tool-field [aria-invalid="true"]{
+  border-color:#8a3030!important;
+  box-shadow:0 0 0 2px color-mix(in srgb,#8a3030 16%,transparent);
+}
