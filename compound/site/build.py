@@ -45,6 +45,57 @@ TOOL_SPONSORSHIP_CATEGORY_BLURBS = {
     "Health": "Evidence-based calculators for everyday health decisions.",
     "Family & Life Planning": "Childcare, pregnancy and longer-term household planning.",
 }
+
+
+TOOL_PRIMARY_RESULTS = {
+    "mortgage-calculator": "monthly",
+    "mortgage-overpayment-calculator": "interest_saved",
+    "mortgage-borrowing-calculator": "purchase_price",
+    "house-deposit-calculator": "deposit",
+    "stamp-duty-calculator": "duty",
+    "local-property-tax-calculator": "lpt",
+    "loan-repayment-calculator": "monthly",
+    "savings-goal-calculator": "time",
+    "net-worth-calculator": "net_worth",
+    "regular-savings-calculator": "final",
+    "pension-tax-relief-calculator": "relief",
+    "capital-gains-tax-calculator": "tax",
+    "vat-calculator": "vat",
+    "inflation-calculator": "future_cost",
+    "emergency-fund-calculator": "target",
+    "salary-hourly-rate-calculator": "hourly",
+    "fuel-cost-calculator": "cost",
+    "ev-charging-cost-calculator": "cost",
+    "electricity-cost-calculator": "monthly",
+    "take-home-pay-calculator": "monthly_net",
+    "income-tax-calculator": "final_tax",
+    "usc-calculator": "usc",
+    "prsi-calculator": "annual",
+    "inheritance-tax-calculator": "cat",
+    "rent-tax-credit-calculator": "credit",
+    "help-to-buy-calculator": "claim",
+    "first-home-scheme-calculator": "gap",
+    "dirt-calculator": "net",
+    "contractor-vs-salary-calculator": "net_difference",
+    "investment-fee-calculator": "fee_gap",
+    "fire-number-calculator": "target",
+    "retirement-income-calculator": "monthly_income",
+    "pension-projection-calculator": "projected",
+    "rent-vs-buy-calculator": "difference",
+    "mortgage-affordability-calculator": "indicative_price",
+    "house-buying-costs-calculator": "total_upfront",
+    "solar-payback-calculator": "payback",
+    "ber-energy-cost-calculator": "saving",
+    "solar-ev-battery-optimiser": "best_scenario",
+    "whole-house-retrofit-planner": "payback",
+    "myfuturefund-calculator": "total_2026",
+    "childcare-return-to-work-calculator": "household_gain",
+    "mortgage-switch-calculator": "lifetime_difference",
+    "lifetime-cost-calculator": "lifetime_today_money",
+    "nutrition-needs-calculator": "maintenance",
+    "pregnancy-due-date-calculator": "due_date",
+    "alcohol-units-calories-cost-calculator": "standard_drinks",
+}
 PILLAR_BLURBS = {
     "wealth": "Irish tax credits, grants, pensions and money, explained for the person paying.",
     "health": "What the evidence actually says, without the hype.",
@@ -355,6 +406,7 @@ def load_tools(content_dir: Path) -> list[dict]:
         tool["fields"] = list(tool.get("fields") or [])
         tool["results"] = list(tool.get("results") or [])
         tool["sources"] = list(tool.get("sources") or [])
+        tool["primary_result"] = TOOL_PRIMARY_RESULTS.get(slug, (tool["results"][0]["id"] if tool["results"] else ""))
         source_section = str(tool.get("guide") or "").split("### Useful sources", 1)
         if len(source_section) == 2:
             seen_urls = {str(source.get("url") or "") for source in tool["sources"]}
