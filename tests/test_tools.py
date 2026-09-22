@@ -569,7 +569,7 @@ def test_rent_vs_buy_models_transaction_and_ownership_costs():
     js = (Path(__file__).parents[1] / "compound" / "site" / "static" / "tools.js").read_text()
     assert "rent_vs_buy(v)" in js
     assert "stampDutyResidential(price)" in js
-    assert "v.deposit+upfrontCosts" in js
+    assert "renter=deposit+upfrontCosts" in js
     assert "house*(1-sellPct)" in js
     assert "v.owner_fixed_annual" in js
 
@@ -583,7 +583,10 @@ def test_mortgage_affordability_applies_deposit_constraint():
     js = (Path(__file__).parents[1] / "compound" / "site" / "static" / "tools.js").read_text()
     assert "mortgage_affordability(v)" in js
     assert "const depositBased=deposit*9" in js
-    assert "Math.min(lti,paymentBased,depositBased)" in js
+    assert "['Income (LTI)',lti]" in js
+    assert "['Payment budget',paymentBased]" in js
+    assert "['Deposit (LTV)',depositBased]" in js
+    assert "mortgage=Math.max(0,options[0][1])" in js
 
 
 def test_retirement_tools_distinguish_nominal_real_and_sustainability():
