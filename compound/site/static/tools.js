@@ -1229,6 +1229,11 @@
         }
         if(wrapper.hasAttribute('data-advanced-field')&&root.dataset.advancedMode!=='true') show=false;
         wrapper.hidden=!show;
+        const fieldId=wrapper.querySelector('[data-field]')?.dataset.field;
+        if(fieldId){
+          const section=root.querySelector('[data-section-for="'+fieldId+'"]');
+          if(section) section.hidden=!show;
+        }
       });
     };
     const modeButtons=[...root.querySelectorAll('[data-tool-mode]')];
