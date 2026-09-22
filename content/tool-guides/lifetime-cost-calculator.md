@@ -2,6 +2,12 @@
 
 This calculator takes recurring lifestyle costs and projects them across decades. Its purpose is not to frighten you with a giant number; it is to show how small recurring choices accumulate and how inflation changes nominal spending.
 
+## Basic and Advanced modes
+
+**Basic** keeps the model deliberately broad: housing, food, utilities, transport, leisure, travel and insurance/health spending across the age range you choose. Housing is assumed to continue across the full modelled horizon in this first-pass view.
+
+**Advanced** is where the projection becomes more personal. You can stop the current housing cost at a chosen age, add a finite childcare period, model recurring major purchases such as replacement cars and include other monthly spending. The extra outputs separate the today's-price total from the nominal cash total, show the inflation effect, the average annual cash spend and the final modelled year's spend.
+
 ## How to read the result
 
 Use both **nominal lifetime spending** and **today's-money spending**. A future €2 million total can look dramatic, but much of that difference may simply reflect decades of inflation.
