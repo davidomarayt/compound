@@ -1383,12 +1383,12 @@ tools:
     basic_note: "Basic mode uses the contribution figures entered plus a 6% gross return and 0.75% annual fee."
     advanced_note: "Advanced mode lets you change the investment-return and annual-fee assumptions."
     fields:
-      - {id: age, label: Current age, type: number, default: 35, min: 16, max: 90, step: 1}
+      - {id: age, label: Current age, type: number, default: 35, min: 16, max: 90, step: 1, section_start: Timeline}
       - {id: retirement_age, label: Target retirement age, type: number, default: 65, min: 18, max: 90, step: 1}
-      - {id: current, label: Current pension value, type: number, prefix: "€", default: 50000, min: 0, step: 1000}
-      - {id: monthly_employee, label: Your monthly contribution, type: number, prefix: "€", default: 400, min: 0, step: 25}
+      - {id: current, label: Current pension value, type: number, prefix: "€", default: 50000, min: 0, step: 1000, section_start: Pension today}
+      - {id: monthly_employee, label: Your monthly contribution, type: number, prefix: "€", default: 400, min: 0, step: 25, section_start: Contributions}
       - {id: monthly_employer, label: Employer monthly contribution, type: number, prefix: "€", default: 300, min: 0, step: 25}
-      - {id: return_rate, label: Assumed annual return before fee, type: number, suffix: "%", default: 6, min: -20, max: 30, step: 0.1, advanced: true}
+      - {id: return_rate, label: Assumed annual return before fee, type: number, suffix: "%", default: 6, min: -20, max: 30, step: 0.1, advanced: true, section_start: Investment assumptions}
       - {id: annual_fee, label: Annual fund fee, type: number, suffix: "%", default: 0.75, min: 0, max: 10, step: 0.05, advanced: true}
     results:
       - {id: years, label: Years to retirement}
@@ -1508,6 +1508,7 @@ tools:
     updated: 2026-09-22
     fields:
       - id: system_cost
+        section_start: Solar system
         label: Solar PV installed cost before grant
         type: number
         prefix: "€"
@@ -1575,6 +1576,7 @@ tools:
         help: "Suppliers set their own Clean Export Guarantee rate, so use the rate on your current or proposed tariff."
 
       - id: has_ev
+        section_start: Electric vehicle
         label: EV is charged at this home
         type: checkbox
         default: false
@@ -1637,6 +1639,7 @@ tools:
         help: "If you normally charge the EV on a cheap night/EV rate, solar charging only avoids that cheaper rate, not the daytime rate."
 
       - id: has_battery
+        section_start: Home battery
         label: Include a home battery
         type: checkbox
         default: false
@@ -1863,7 +1866,7 @@ tools:
     meta_description: Solar EV battery optimiser Ireland. Compare annual value, payback and 20-year net benefit for solar-only, EV smart charging, battery and combined scenarios.
     updated: 2026-09-22
     fields:
-      - {id: solar_cost, label: Solar PV installed cost before grant, type: number, prefix: "€", default: 9000, min: 0, step: 100}
+      - {id: solar_cost, label: Solar PV installed cost before grant, type: number, prefix: "€", default: 9000, min: 0, step: 100, section_start: Solar system}
       - id: grant_eligible
         label: Include the SEAI Solar PV grant
         type: checkbox
@@ -1875,6 +1878,7 @@ tools:
       - {id: day_rate, label: Day / avoided import rate, type: number, prefix: "€", suffix: "/kWh", default: 0.30, min: 0, step: 0.01}
       - {id: export_rate, label: Export payment, type: number, prefix: "€", suffix: "/kWh", default: 0.15, min: 0, step: 0.01}
       - id: has_ev
+        section_start: Electric vehicle
         label: Include an EV charged at home
         type: checkbox
         default: true
@@ -1884,11 +1888,12 @@ tools:
       - {id: ev_home_pct, label: Share of EV charging done at home, type: number, suffix: "%", default: 80, min: 0, max: 100, step: 1, show_if: has_ev}
       - {id: ev_solar_pct, label: Share of home EV charging that can follow solar, type: number, suffix: "%", default: 35, min: 0, max: 100, step: 1, show_if: has_ev}
       - {id: ev_grid_rate, label: Grid rate otherwise used for EV charging, type: number, prefix: "€", suffix: "/kWh", default: 0.10, min: 0, step: 0.01, show_if: has_ev}
-      - {id: battery_cost, label: Battery installed cost, type: number, prefix: "€", default: 4500, min: 0, step: 100}
+      - {id: battery_cost, label: Battery installed cost, type: number, prefix: "€", default: 4500, min: 0, step: 100, section_start: Home battery}
       - {id: battery_kwh, label: Usable battery capacity, type: number, suffix: "kWh", default: 5, min: 0.1, max: 100, step: 0.5}
       - {id: battery_efficiency, label: Battery round-trip efficiency, type: number, suffix: "%", default: 90, min: 50, max: 100, step: 1}
       - {id: solar_capture_pct, label: Remaining solar surplus captured by battery, type: number, suffix: "%", default: 60, min: 0, max: 100, step: 1}
       - id: use_night_charge
+        section_start: Night-rate charging
         label: Include cheap-rate grid charging of the battery
         type: checkbox
         default: true
@@ -1930,6 +1935,7 @@ tools:
     updated: 2026-09-22
     fields:
       - id: home_type
+        section_start: Home & assumptions
         label: Home type
         type: select
         default: semi
@@ -1951,6 +1957,7 @@ tools:
       - {id: annual_energy_bill, label: Current annual home energy bill, type: number, prefix: "€", default: 3000, min: 0, step: 100}
       - {id: saving_pct, label: Assumed reduction in annual energy cost after all selected works, type: number, suffix: "%", default: 35, min: 0, max: 100, step: 1}
       - id: attic
+        section_start: Fabric upgrades
         label: Include attic insulation
         type: checkbox
         default: true
@@ -1966,6 +1973,7 @@ tools:
         default: true
       - {id: windows_cost, label: Window upgrade quote, type: number, prefix: "€", default: 12000, min: 0, step: 500, show_if: windows}
       - id: heat_pump
+        section_start: Heating & generation
         label: Include heat pump system
         type: checkbox
         default: true
@@ -1983,6 +1991,7 @@ tools:
       - {id: doors_cost, label: External door quote total, type: number, prefix: "€", default: 3000, min: 0, step: 100, show_if: doors}
       - {id: door_count, label: Number of external doors, type: number, default: 2, min: 1, max: 10, step: 1, show_if: doors}
       - id: ventilation
+        section_start: Ventilation & airtightness
         label: Include mechanical ventilation
         type: checkbox
         default: false
@@ -1992,7 +2001,7 @@ tools:
         type: checkbox
         default: false
       - {id: airtightness_cost, label: Airtightness works quote, type: number, prefix: "€", default: 2500, min: 0, step: 100, show_if: airtightness}
-      - {id: other_cost, label: Other retrofit / professional costs, type: number, prefix: "€", default: 3000, min: 0, step: 100}
+      - {id: other_cost, label: Other retrofit / professional costs, type: number, prefix: "€", default: 3000, min: 0, step: 100, section_start: Other project costs}
     results:
       - {id: gross_cost, label: Total selected upgrade cost}
       - {id: grants, label: Indicative grants included}
@@ -2067,15 +2076,15 @@ tools:
     meta_description: Childcare vs returning to work calculator Ireland. Estimate net salary after PAYE, childcare fees, NCS subsidy, commuting and work costs.
     updated: 2026-09-22
     fields:
-      - {id: salary, label: Gross annual salary on returning to work, type: number, prefix: "€", default: 45000, min: 0, step: 500}
+      - {id: salary, label: Gross annual salary on returning to work, type: number, prefix: "€", default: 45000, min: 0, step: 500, section_start: Work income}
       - {id: pension_pct, label: Employee pension contribution, type: number, suffix: "%", default: 0, min: 0, max: 30, step: 0.5}
       - {id: work_hours, label: Paid working hours per week, type: number, default: 37.5, min: 1, max: 80, step: 0.5}
-      - {id: children, label: Children using paid childcare, type: number, default: 1, min: 1, max: 10, step: 1}
+      - {id: children, label: Children using paid childcare, type: number, default: 1, min: 1, max: 10, step: 1, section_start: Childcare}
       - {id: childcare_hours, label: Paid childcare hours per child per week, type: number, default: 40, min: 0, max: 80, step: 1}
       - {id: childcare_fee, label: Childcare fee before NCS, type: number, prefix: "€", suffix: "/hour", default: 8, min: 0, step: 0.10}
       - {id: ncs_rate, label: NCS hourly subsidy actually available to you, type: number, prefix: "€", suffix: "/hour", default: 2.14, min: 0, step: 0.01}
       - {id: childcare_weeks, label: Childcare / working weeks per year, type: number, default: 48, min: 1, max: 52, step: 1}
-      - {id: commute_weekly, label: Weekly commuting cost, type: number, prefix: "€", default: 60, min: 0, step: 5}
+      - {id: commute_weekly, label: Weekly commuting cost, type: number, prefix: "€", default: 60, min: 0, step: 5, section_start: Work-related costs}
       - {id: work_cost_weekly, label: Other weekly work costs, type: number, prefix: "€", default: 30, min: 0, step: 5}
       - {id: other_annual, label: Other annual costs caused by returning to work, type: number, prefix: "€", default: 0, min: 0, step: 100}
     results:
@@ -2145,20 +2154,20 @@ tools:
     meta_description: Lifetime cost calculator Ireland. Project housing, food, transport, childcare, travel and other spending from your current age to a chosen age with inflation.
     updated: 2026-09-22
     fields:
-      - {id: current_age, label: Current age, type: number, default: 30, min: 18, max: 100, step: 1}
+      - {id: current_age, label: Current age, type: number, default: 30, min: 18, max: 100, step: 1, section_start: Time horizon}
       - {id: end_age, label: Project spending to age, type: number, default: 80, min: 19, max: 110, step: 1}
       - {id: inflation, label: Annual spending inflation assumption, type: number, suffix: "%", default: 2.5, min: -5, max: 15, step: 0.1}
-      - {id: housing_monthly, label: Housing cost per month today, type: number, prefix: "€", default: 1800, min: 0, step: 50}
+      - {id: housing_monthly, label: Housing cost per month today, type: number, prefix: "€", default: 1800, min: 0, step: 50, section_start: Housing}
       - {id: housing_until, label: Current housing cost continues until age, type: number, default: 65, min: 18, max: 110, step: 1}
-      - {id: food_monthly, label: Groceries / household essentials per month, type: number, prefix: "€", default: 700, min: 0, step: 25}
+      - {id: food_monthly, label: Groceries / household essentials per month, type: number, prefix: "€", default: 700, min: 0, step: 25, section_start: Recurring household spending}
       - {id: utilities_monthly, label: Utilities / home services per month, type: number, prefix: "€", default: 350, min: 0, step: 25}
       - {id: transport_monthly, label: Transport running cost per month, type: number, prefix: "€", default: 500, min: 0, step: 25}
       - {id: leisure_monthly, label: Leisure, eating out and subscriptions per month, type: number, prefix: "€", default: 500, min: 0, step: 25}
       - {id: travel_annual, label: Holidays / travel per year, type: number, prefix: "€", default: 4000, min: 0, step: 100}
       - {id: insurance_health_annual, label: Insurance and health costs per year, type: number, prefix: "€", default: 3500, min: 0, step: 100}
-      - {id: childcare_annual, label: Net childcare / child-related recurring cost per year today, type: number, prefix: "€", default: 0, min: 0, step: 100}
+      - {id: childcare_annual, label: Net childcare / child-related recurring cost per year today, type: number, prefix: "€", default: 0, min: 0, step: 100, section_start: Childcare}
       - {id: childcare_years, label: Years that childcare / child cost continues, type: number, default: 0, min: 0, max: 30, step: 1}
-      - {id: major_purchase, label: Recurring major purchase cost today (for example replacement car), type: number, prefix: "€", default: 25000, min: 0, step: 500}
+      - {id: major_purchase, label: Recurring major purchase cost today (for example replacement car), type: number, prefix: "€", default: 25000, min: 0, step: 500, section_start: Major purchases}
       - {id: major_interval, label: Years between major purchases, type: number, default: 8, min: 1, max: 40, step: 1}
       - {id: other_monthly, label: Other recurring spending per month, type: number, prefix: "€", default: 300, min: 0, step: 25}
     results:
@@ -2201,7 +2210,7 @@ tools:
     basic_note: "Basic mode compares loan, HP and PCP using the same car price, deposit and comparison term. Fees and end-of-PCP assumptions stay at the stated defaults."
     advanced_note: "Advanced mode lets you use the actual term and fees for each quote, plus PCP mileage, condition charges and an estimated end value."
     fields:
-      - {id: car_price, label: Car cash price, type: number, prefix: "€", default: 40000, min: 0, step: 500}
+      - {id: car_price, label: Car cash price, type: number, prefix: "€", default: 40000, min: 0, step: 500, section_start: Core comparison}
       - {id: deposit, label: Cash deposit / trade-in used upfront, type: number, prefix: "€", default: 8000, min: 0, step: 500}
       - {id: term_years, label: Comparison term, type: number, suffix: years, default: 4, min: 1, max: 10, step: 1}
       - {id: loan_rate, label: Personal car-loan annual rate, type: number, suffix: "%", default: 6.5, min: 0, max: 30, step: 0.1}
@@ -2209,7 +2218,7 @@ tools:
       - {id: pcp_rate, label: PCP annual rate, type: number, suffix: "%", default: 4.9, min: 0, max: 30, step: 0.1}
       - {id: pcp_balloon, label: PCP final balloon / GMFV, type: number, prefix: "€", default: 18000, min: 0, step: 500, help: "The amount left to pay at the end if you want to own the car."}
 
-      - {id: loan_term_years, label: Personal-loan term, type: number, suffix: years, default: 4, min: 1, max: 10, step: 1, advanced: true}
+      - {id: loan_term_years, label: Personal-loan term, type: number, suffix: years, default: 4, min: 1, max: 10, step: 1, advanced: true, section_start: Advanced quote details}
       - {id: hp_term_years, label: HP term, type: number, suffix: years, default: 4, min: 1, max: 10, step: 1, advanced: true}
       - {id: pcp_term_years, label: PCP term, type: number, suffix: years, default: 3, min: 1, max: 7, step: 1, advanced: true}
       - {id: loan_fee, label: Personal-loan setup / admin fees, type: number, prefix: "€", default: 0, min: 0, step: 25, advanced: true}
@@ -2217,7 +2226,7 @@ tools:
       - {id: hp_completion_fee, label: HP completion / option-to-purchase fee, type: number, prefix: "€", default: 75, min: 0, step: 25, advanced: true}
       - {id: pcp_doc_fee, label: PCP documentation / setup fee, type: number, prefix: "€", default: 75, min: 0, step: 25, advanced: true}
       - {id: pcp_completion_fee, label: PCP fee if you buy the car at the end, type: number, prefix: "€", default: 75, min: 0, step: 25, advanced: true}
-      - {id: estimated_value, label: Estimated car value at the end of the PCP term, type: number, prefix: "€", default: 21000, min: 0, step: 500, advanced: true, help: "Used to estimate PCP equity versus the GMFV. It is an assumption, not a guaranteed resale value."}
+      - {id: estimated_value, label: Estimated car value at the end of the PCP term, type: number, prefix: "€", default: 21000, min: 0, step: 500, advanced: true, section_start: PCP end-of-term assumptions, help: "Used to estimate PCP equity versus the GMFV. It is an assumption, not a guaranteed resale value."}
       - {id: annual_mileage_limit, label: PCP annual mileage allowance, type: number, suffix: "km/year", default: 15000, min: 0, step: 1000, advanced: true}
       - {id: expected_annual_mileage, label: Your expected annual mileage, type: number, suffix: "km/year", default: 18000, min: 0, step: 1000, advanced: true}
       - {id: excess_km_charge, label: Assumed PCP excess-mileage charge, type: number, prefix: "€", suffix: "/km", default: 0.10, min: 0, step: 0.01, advanced: true}
@@ -2346,6 +2355,7 @@ tools:
           - {value: lower10, label: Illustrative 10% below maintenance — not a prescribed deficit}
           - {value: higher10, label: Illustrative 10% above maintenance — not a prescribed surplus}
       - id: protein_context
+        section_start: Protein & macros
         label: Protein context
         type: select
         default: general
@@ -2512,18 +2522,18 @@ tools:
           - {value: none, label: Do not compare}
           - {value: woman, label: HSE guideline for women}
           - {value: man, label: HSE guideline for men}
-      - {id: beer_pints, label: Pints of beer / stout / cider per week, type: number, default: 2, min: 0, step: 0.5}
+      - {id: beer_pints, label: Pints of beer / stout / cider per week, type: number, default: 2, min: 0, step: 0.5, section_start: Beer / cider}
       - {id: beer_abv, label: Beer / stout / cider strength, type: number, suffix: "% ABV", default: 4.5, min: 0, max: 20, step: 0.1}
-      - {id: wine_glasses, label: Glasses of wine per week, type: number, default: 0, min: 0, step: 0.5}
+      - {id: wine_glasses, label: Glasses of wine per week, type: number, default: 0, min: 0, step: 0.5, section_start: Wine}
       - {id: wine_ml, label: Wine glass size, type: number, suffix: ml, default: 175, min: 25, max: 500, step: 25}
       - {id: wine_abv, label: Wine strength, type: number, suffix: "% ABV", default: 12.5, min: 0, max: 30, step: 0.1}
-      - {id: spirits, label: Spirit measures per week, type: number, default: 0, min: 0, step: 0.5}
+      - {id: spirits, label: Spirit measures per week, type: number, default: 0, min: 0, step: 0.5, section_start: Spirits}
       - {id: spirit_ml, label: Spirit measure size, type: number, suffix: ml, default: 35.5, min: 10, max: 200, step: 0.5}
       - {id: spirit_abv, label: Spirit strength, type: number, suffix: "% ABV", default: 40, min: 0, max: 95, step: 0.1}
-      - {id: cans, label: Large cans / bottles per week, type: number, default: 0, min: 0, step: 0.5}
+      - {id: cans, label: Large cans / bottles per week, type: number, default: 0, min: 0, step: 0.5, section_start: Cans / bottles}
       - {id: can_ml, label: Can / bottle size, type: number, suffix: ml, default: 500, min: 50, max: 2000, step: 10}
       - {id: can_abv, label: Can / bottle strength, type: number, suffix: "% ABV", default: 4.3, min: 0, max: 20, step: 0.1}
-      - {id: weekly_spend, label: What you spend on alcohol in a typical week, type: number, prefix: "€", default: 30, min: 0, step: 1}
+      - {id: weekly_spend, label: What you spend on alcohol in a typical week, type: number, prefix: "€", default: 30, min: 0, step: 1, section_start: Cost & reduction}
       - {id: reduction_pct, label: Model reducing intake and spend by, type: number, suffix: "%", default: 25, min: 0, max: 100, step: 5}
     results:
       - {id: standard_drinks, label: Irish standard drinks per week}
