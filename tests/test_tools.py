@@ -471,6 +471,21 @@ def test_2026_statutory_calculator_parameters_are_regression_locked():
 
 
 
+def test_mortgage_switch_supports_fixed_period_comparison():
+    content_dir = Path(__file__).parents[1] / "content"
+    tool = next(tool for tool in load_tools(content_dir) if tool["slug"] == "mortgage-switch-calculator")
+    fields = {field["id"]: field for field in tool["fields"]}
+    results = {result["id"] for result in tool["results"]}
+
+    assert fields["comparison_years"]["advanced"] is True
+    assert fields["comparison_years"]["default"] == 5
+    assert {"horizon_interest_current", "horizon_interest_new", "horizon_saving",
+            "horizon_balance_difference", "lifetime_difference"} <= results
+    assert "comparison horizon" in tool["guide"].lower()
+    assert "cashback" in tool["guide"].lower()
+    assert "remaining balance" in tool["guide"].lower()
+
+
 def test_mortgage_overpayment_supports_timing_and_lump_sums():
     content_dir = Path(__file__).parents[1] / "content"
     tool = next(tool for tool in load_tools(content_dir) if tool["slug"] == "mortgage-overpayment-calculator")
