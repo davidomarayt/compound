@@ -42,7 +42,9 @@ Yes, but an emergency fund is normally about accessible cash rather than maximis
 
 ## Method and limitations
 
-The tool compounds the existing balance monthly and adds the entered contribution each month until the target is reached or the modelling horizon is exhausted. It assumes a constant annual return and regular contributions.
+The annual return entered is treated as an **effective annual return** and converted to an equivalent monthly rate using **(1 + annual return)^(1/12) − 1**. Compound then grows the existing balance and adds the entered contribution at the end of each month until the target is reached or the modelling horizon is exhausted.
+
+The result assumes a smooth constant return, regular month-end contributions and a nominal target. It does not deduct tax, product fees or inflation unless those are reflected in the return/target assumptions you enter.
 
 ### Useful sources
 
