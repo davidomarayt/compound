@@ -53,11 +53,15 @@ HOME_SEO_PRIORITY = {
         "returning-to-work-childcare-costs-ireland",
     ],
     "happiness": [
+        "how-to-be-happier-evidence-ireland",
+        "burnout-symptoms-recovery-ireland",
+        "how-to-make-friends-as-an-adult-ireland",
+        "stress-symptoms-what-helps-ireland",
+        "how-to-improve-self-esteem-confidence",
         "loneliness-ireland-how-common-what-helps",
         "how-to-stop-worrying-and-overthinking",
         "why-time-off-doesnt-feel-like-a-break",
         "when-did-you-last-do-something-for-fun",
-        "ploughing-championships-history-community-mental-health",
         "happiness-for-a-100-year-life",
     ],
 }
