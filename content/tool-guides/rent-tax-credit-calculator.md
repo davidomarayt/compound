@@ -66,6 +66,34 @@ For an individual, €5,000 of qualifying annual rent is enough for 20% of rent 
 
 The results therefore show both the qualifying rent needed to reach the statutory cap and any part of that cap left unused in the scenario. A low Income Tax liability can still reduce the usable credit even where enough rent was paid.
 
+## The headline maximum is only one of several limits
+
+For 2024 to 2028, Revenue states that the maximum Rent Tax Credit is €1,000 a year for most individual claimants and €2,000 for jointly assessed married couples or civil partners. But the statutory maximum is not automatically the amount you receive.
+
+The usable credit can be constrained by qualifying rent, your Income Tax liability and the eligibility rules for the tenancy. That is why this calculator exposes the **binding limit** rather than only showing the headline cap.
+
+If a single claimant has enough qualifying rent to support the €1,000 maximum but only €600 of Income Tax liability available for the credit to reduce, the practical benefit can be lower than €1,000. The credit is an Income Tax credit; it is not a cash subsidy added on top of zero tax.
+
+### What counts as rent for this calculation
+
+Revenue distinguishes rent from extra services. Utilities, board, laundry and similar service charges should not simply be included in the qualifying-rent input because they are not necessarily part of rent for the credit.
+
+If a monthly payment bundles rent and services together, separate the rent element before entering the figure where possible. That avoids overstating the amount supporting the claim.
+
+### Claiming in 2026
+
+PAYE taxpayers can claim the 2026 credit in-year through myAccount under the current-year tax management process, or claim it after year end through the 2026 Income Tax Return in 2027. The calculator does not submit a claim; it estimates the potential value based on the assumptions entered.
+
+Eligibility can also extend beyond a principal private residence in certain cases, including qualifying accommodation connected with work or an approved course, and certain accommodation paid for by a parent for a child attending an approved course. Those cases have conditions that must be checked separately.
+
+### A useful rent-budget perspective
+
+The **effective rent relief** output converts the annual credit into a percentage of qualifying rent. This is useful because a €1,000 credit has a very different household-budget impact on €8,000 of annual rent than on €24,000.
+
+For a wider housing comparison, use the [Rent vs Buy Calculator](/rent-vs-buy-calculator/) and [House Buying Costs Calculator](/house-buying-costs-calculator/). The tax credit can reduce the net cost of renting, but it should be one input in the comparison rather than the entire decision.
+
+See Revenue's current [Rent Tax Credit guidance](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx) and [2026 claiming instructions](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/how-to-claim.aspx).
+
 ## Method and limitations
 
 The calculator applies the implemented annual credit limit to the qualifying rent/tax assumptions entered. It does not validate tenancy registration, landlord relationships, duplicate claims or every eligibility condition.
