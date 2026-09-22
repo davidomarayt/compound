@@ -242,3 +242,34 @@
   .debt-input-affix>span{left:.65rem}
   .debt-input-affix input{padding-left:1.55rem}
 }
+
+
+/* Responsive integrity guardrails */
+.debt-workspace,
+.debt-form,
+.debt-summary-panel,
+.debt-strategy-card,
+.debt-summary-grid,
+.debt-summary-grid>div,
+.debt-metrics,
+.debt-metrics>div{
+  min-width:0;
+}
+.debt-summary-grid>div,
+.debt-metrics>div{
+  container-type:inline-size;
+  overflow:hidden;
+}
+.debt-summary-grid strong,
+.debt-metrics strong{
+  max-width:100%;
+  font-variant-numeric:tabular-nums;
+  overflow-wrap:anywhere;
+}
+.debt-summary-grid strong{font-size:clamp(1.35rem,10cqw,1.8rem)}
+.debt-summary-total strong{font-size:clamp(1.55rem,11cqw,2.1rem)}
+.debt-metrics strong{font-size:clamp(1.35rem,10cqw,2.05rem)}
+@supports not (font-size:1cqw){
+  .debt-summary-grid strong,.debt-metrics strong{font-size:clamp(1.35rem,5vw,1.85rem)}
+  .debt-summary-total strong{font-size:clamp(1.55rem,6vw,2rem)}
+}
