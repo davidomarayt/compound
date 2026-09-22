@@ -38,6 +38,24 @@ This calculator cannot assess pregnancy viability, fetal growth, scan findings, 
 
 If the dates here differ from the dates given by your maternity team, use the dates in your clinical record and ask your midwife, GP or obstetric team if you are unsure.
 
+## Worked example
+
+If the first day of the last menstrual period was **1 January 2026**, the standard 280-day calculation gives an estimated due date of **8 October 2026**.
+
+On that same LMP-based timeline:
+
+- 12 weeks falls around 26 March 2026;
+- the calculator's 18–22 week anatomy-scan window runs roughly 7 May to 4 June 2026;
+- 37 weeks is around 17 September 2026.
+
+Those are calendar landmarks, not promises about when an individual scan, test or birth will occur. If a maternity team assigns a different due date after clinical dating, the assigned date should take priority for care planning.
+
+## Method and limitations
+
+LMP dating adds 280 days to the first day of the last menstrual period. The conception estimate is calculated 266 days before the due date, which is only an approximation. If an assigned due date is entered, Compound works backwards 280 days to create the displayed gestational timeline.
+
+Cycle length, ovulation timing and uncertain LMP dates can make menstrual dating inaccurate. Early ultrasound is generally more reliable for establishing gestational age when dates are uncertain. This tool is for timeline orientation and does not replace maternity care.
+
 ## Frequently asked questions
 
 ### Is the estimated conception date exact?
