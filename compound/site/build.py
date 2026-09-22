@@ -882,11 +882,14 @@ def build_site(settings: Settings) -> dict:
                          "tags": ["BMI", "health", "calculator", "weight"], "description": "Free BMI calculator with HSE guidance for Ireland.",
                          "image": "", "reading_minutes": 7, "date_label": "15 September 2026"})
     for tool in reversed(tools):
+        guide_words = len(str(tool.get("guide") or "").split())
+        updated = tool.get("updated") or date(2026, 9, 22)
         index.insert(0, {"title": tool["title"], "url": tool["url"], "pillar": "Tools",
-                         "date": str(tool.get("updated") or "2026-09-21"), "summary": str(tool.get("summary") or ""),
+                         "date": str(updated), "summary": str(tool.get("summary") or ""),
                          "tags": ["calculator", str(tool.get("category") or "").lower().replace(" ", "-")],
                          "description": str(tool.get("meta_description") or tool.get("summary") or ""),
-                         "image": "", "reading_minutes": 3, "date_label": "21 September 2026"})
+                         "image": "", "reading_minutes": max(2, math.ceil(guide_words / 220)),
+                         "date_label": long_date(updated) if isinstance(updated, date) else str(updated)})
     _write(out / "search.json", json.dumps(index, ensure_ascii=False))
     _write(out / "search" / "index.html", env.get_template("search.html").render(title="Search", search_index=index, ads_allowed=False))
     _write(out / "feed.xml", env.get_template("feed.xml").render(articles=articles[:30]))
