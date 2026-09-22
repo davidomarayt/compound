@@ -1,0 +1,96 @@
+'use strict';
+
+const assert = require('node:assert/strict');
+require('../compound/site/static/tools.js');
+
+const {
+  calculators,
+  monthlyPayment,
+  usc2026,
+  annualClassA2026,
+  selfEmployedNet2026,
+  stampDutyResidential,
+} = globalThis.CompoundToolsTest;
+
+const close = (actual, expected, tolerance, message) => {
+  assert.ok(Math.abs(actual - expected) <= tolerance, `${message}: expected ${expected}, got ${actual}`);
+};
+
+// Mortgage amortisation: €300k, 3.5%, 30 years.
+close(monthlyPayment(300000, 3.5, 360), 1347.13, 0.02, 'mortgage payment');
+
+// Standard residential Stamp Duty is progressive.
+assert.equal(stampDutyResidential(400000), 4000);
+assert.equal(stampDutyResidential(1200000), 14000);
+assert.equal(stampDutyResidential(1600000), 28000);
+
+// 2026 standard USC example published by Revenue for €50,000.
+close(usc2026(50000), 1032.82, 0.01, '2026 USC on €50,000');
+assert.equal(usc2026(13000), 0);
+
+// Class A annual blend should use 39 weeks at 4.20% and 13 at 4.35%.
+const prsi = annualClassA2026(50000);
+close(prsi.annual, prsi.before * 39 + prsi.after * 13, 0.0001, '2026 PRSI blend');
+
+// Self-employed non-PAYE USC includes the extra 3% surcharge above €100k.
+const se100 = selfEmployedNet2026(100000, 0);
+const se110 = selfEmployedNet2026(110000, 0);
+const standardUscDelta = usc2026(110000) - usc2026(100000);
+close((se110.usc - se100.usc) - standardUscDelta, 300, 0.01, 'non-PAYE USC surcharge');
+
+// Mortgage affordability must respect LTI, payment capacity and 90% LTV deposit constraint.
+const affordability = calculators.mortgage_affordability({
+  income: 80000, buyer_type: 'ftb', deposit: 40000, rate: 4.5, term: 30,
+  max_payment_pct: 30, other_debt: 0
+});
+assert.equal(affordability.lti_mortgage, '€320,000.00');
+assert.equal(affordability.deposit_based_mortgage, '€360,000.00');
+assert.equal(affordability.indicative_mortgage, '€320,000.00');
+assert.equal(affordability.indicative_price, '€360,000.00');
+
+const noDeposit = calculators.mortgage_affordability({
+  income: 80000, buyer_type: 'ftb', deposit: 0, rate: 4.5, term: 30,
+  max_payment_pct: 30, other_debt: 0
+});
+assert.equal(noDeposit.indicative_mortgage, '€0.00');
+assert.equal(noDeposit.indicative_price, '€0.00');
+
+// FIRE uses an implied real return when inputs are expressed in today's money.
+const fire = calculators.fire_number({
+  annual_spend: 36000, withdrawal_rate: 4, current: 100000,
+  annual_contribution: 18000, return_rate: 6, inflation_rate: 2
+});
+assert.equal(fire.target, '€900,000.00');
+assert.equal(fire.real_return, '3.92%');
+
+// Investment fees are applied multiplicatively to the annual growth factor.
+const fee = calculators.investment_fees({
+  initial: 25000, monthly: 500, gross_return: 7, fee_low: 0.25, fee_high: 1.5, years: 25
+});
+assert.equal(fee.low_net_return, '6.73%');
+assert.equal(fee.high_net_return, '5.40%');
+
+// Pension projection should surface both nominal and inflation-adjusted outcomes.
+const pension = calculators.pension_projection({
+  age: 35, retirement_age: 65, current: 50000,
+  monthly_employee: 400, monthly_employer: 300,
+  return_rate: 6, annual_fee: 0.75, inflation_rate: 2
+});
+assert.match(pension.projected, /^€/);
+assert.match(pension.projected_real, /^€/);
+assert.notEqual(pension.projected, pension.projected_real);
+
+// Retirement sustainability should report the deterministic horizon result.
+const retirement = calculators.retirement_income({
+  pot: 500000, withdrawal_rate: 4, state_pension: 0, other_income: 0,
+  retirement_years: 30, return_rate: 4, inflation_rate: 2
+});
+assert.equal(retirement.portfolio_income, '€20,000.00');
+assert.match(retirement.depletion, /(Not depleted|Depleted)/);
+
+// LPT band 3 basic charge is €333 under the 2026–2030 schedule.
+const lpt = calculators.lpt({value: 400000, authority: 'meath'});
+assert.equal(lpt.base_lpt, '€333.00');
+assert.equal(lpt.lpt, '€333.00');
+
+console.log('Calculator arithmetic regression checks passed.');
