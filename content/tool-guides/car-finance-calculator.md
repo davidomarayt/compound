@@ -64,6 +64,45 @@ Also compare the total amount financed after deposit. A large deposit can make e
 
 For a fair comparison, keep car price and deposit constant first, compare equivalent terms, then test the actual dealer offers including fees and balloon. Only after that should convenience or ownership preference break the tie.
 
+## Compare four outcomes, not three monthly payments
+
+A fair car-finance comparison should answer four different questions:
+
+1. What cash is needed up front?
+2. What is the monthly commitment?
+3. What is the total cash paid if you keep the car?
+4. What asset, debt or return obligation remains at the end?
+
+That fourth question is where PCP can differ most from a personal loan or HP. PCP monthly payments are often lower because a substantial amount is deferred into the final balloon or Guaranteed Minimum Future Value. A lower monthly payment therefore does not automatically mean a lower total cost.
+
+### Ownership changes the comparison
+
+With a personal loan, you normally own the car from purchase and owe money to the lender separately. Under HP, the finance company remains the legal owner until the agreement is completed. PCP is structurally similar to HP but leaves a larger amount outstanding at the end.
+
+That difference matters if you want the freedom to sell the vehicle during the agreement. A personal-loan buyer owns the car, while HP/PCP customers are dealing with a vehicle legally owned by the finance provider until the relevant obligations are satisfied.
+
+### The PCP end point is the real decision
+
+At the end of a PCP, the practical question is usually whether to:
+
+- pay the balloon and keep the car,
+- return the car subject to the contract,
+- or use available equity toward another vehicle.
+
+The calculator's **PCP keep total**, **PCP return total** and **PCP equity** outputs are intended to make those paths visible.
+
+Mileage limits and condition standards also matter. A PCP that looks cheapest on scheduled payments can become more expensive if excess-mileage or condition charges apply on return. Advanced mode lets you include those assumptions rather than pretending every return is frictionless.
+
+### Compare dealer offers on a like-for-like basis
+
+Keep the car price, deposit and term constant first. Then enter the real APR/rate, fees and balloon for each offer. If one dealer requires a much larger deposit, do not compare only the monthly repayments.
+
+Also compare the finance cost with the cash-price alternative. A dealer contribution or discount tied to finance can alter the economics, but it should be entered transparently rather than treated as “free money”.
+
+The CCPC recommends comparing total cost and understanding the contract terms. See [Paying for your car](https://www.ccpc.ie/manage-your-money/borrowing-money/car-loans-and-car-finance/paying-for-your-car), [Hire Purchase](https://www.ccpc.ie/manage-your-money/borrowing-money/car-loans-and-car-finance/hire-purchase) and [Personal Contract Plans](https://www.ccpc.ie/manage-your-money/borrowing-money/car-loans-and-car-finance/personal-contract-plan).
+
+Use the [Lifetime Cost Calculator](/lifetime-cost-calculator/) when you want to include fuel, maintenance, insurance and depreciation rather than finance alone.
+
 ## Method and limitations
 
 The tool amortises the loan and HP balances and uses a balloon-payment formula for PCP. Advanced mode adds the entered fees, mileage/condition charges and estimated end value. It does not model tax, insurance, depreciation curves or every contract clause.
