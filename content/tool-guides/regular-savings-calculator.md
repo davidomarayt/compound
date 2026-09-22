@@ -42,7 +42,9 @@ No.
 
 ## Method and limitations
 
-The balance compounds monthly at the entered annual rate divided by 12, with the monthly contribution added each period. It assumes a smooth constant return and ignores tax, fees and volatility unless separately modelled.
+The annual return is treated as an **effective annual return**. Compound converts it to the equivalent monthly rate using **(1 + annual return)^(1/12) − 1**, then applies that rate monthly and adds the contribution at the end of each month.
+
+This convention means a 6% annual assumption compounds to 6% over a full year rather than using 0.5% each month (which would produce slightly more than 6% annually). The model still assumes smooth returns and ignores tax, fees and volatility unless separately reflected in your assumptions.
 
 ### Useful sources
 
