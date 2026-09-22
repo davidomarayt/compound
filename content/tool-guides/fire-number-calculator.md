@@ -8,7 +8,7 @@ The core relationship is **annual spending ÷ withdrawal rate**. At 4%, €40,00
 
 ## Worked example
 
-If you expect to need €30,000 a year from investments and model a 4% initial withdrawal rate, the simple target is €750,000. If part of your spending will later be covered by a pension or State Pension, the required bridge capital may differ.
+If you expect to need €30,000 a year from investments and model a 4% initial withdrawal rate, the simple target is €750,000 in today's-money terms. If you enter a 6% nominal return and 2% inflation, the implied real return is about 3.92% a year. Compound uses that real return when estimating how long today's portfolio plus today's-money annual contributions could take to reach the target. If part of your spending will later be covered by a pension or State Pension, the required bridge capital may differ.
 
 ## Irish context
 
@@ -54,7 +54,15 @@ Irish tax also matters. A €40,000 gross portfolio withdrawal does not necessar
 
 ## Method and limitations
 
-The tool divides annual spending by the chosen withdrawal-rate assumption. It is a planning ratio, not a stochastic retirement simulation, and it does not model sequence risk, tax, asset allocation or future State Pension policy.
+The FIRE target is annual spending divided by the chosen withdrawal rate. Compound treats the annual spending, current portfolio, annual contribution and target as **today's-money amounts**.
+
+The return entered is a nominal annual investment-return assumption. The calculator converts it to an implied real return using:
+
+**(1 + nominal return) ÷ (1 + inflation) − 1**
+
+That real return is then converted to a monthly rate for the path-to-target illustration. The annual contribution is therefore treated as a contribution in today's purchasing power — economically equivalent to increasing the nominal contribution with inflation over time.
+
+This is a deterministic planning model, not a stochastic retirement simulation. It does not model sequence risk, investment tax, fees, asset allocation, future State Pension policy or changing spending.
 
 ### Useful sources
 
