@@ -60,6 +60,43 @@ This is useful for answering a more practical question than “what is my repaym
 
 Early repayment is still governed by the real credit agreement. Fixed-rate loans can have settlement rules, charges or restrictions that this generic model cannot infer. Check the lender's terms before assuming every overpayment can be made without cost.
 
+## Compare the total cost, not just the monthly repayment
+
+The easiest loan to afford each month is not automatically the cheapest loan. Extending the term usually lowers the monthly repayment because the principal is spread over more instalments, but it also leaves the balance outstanding for longer and can increase the total cost of credit.
+
+That creates a useful two-part test for any Irish loan offer:
+
+- **Cash-flow test:** is the scheduled repayment comfortably affordable each month?
+- **Total-cost test:** how much will you repay in total, and how much of that is the cost of credit?
+
+The CCPC recommends comparing APR and the cost of credit. APR is especially useful when comparing loans of the same amount and term because it incorporates interest and certain charges into a standard annual measure. When terms differ, the total cost of credit becomes particularly important because a longer loan can look attractive on monthly payment while costing more overall.
+
+### A practical three-scenario method
+
+Instead of entering one term and accepting it, run three scenarios:
+
+1. the shortest term that looks realistic,
+2. your likely preferred term,
+3. a longer “comfort” term with a lower repayment.
+
+Compare **monthly repayment**, **total interest/cost of credit** and the amount of flexibility left in your household budget. If the shortest option leaves almost no buffer for repairs, insurance, childcare or an income shock, a slightly longer term can be rational even if it costs more. If the longer option is affordable but materially increases lifetime interest, consider whether a middle term gives a better balance.
+
+Then use Advanced mode to test an extra repayment. An additional €50 or €100 per month can be more informative than simply choosing a shorter contractual term because it shows the value of flexibility when overpayments are actually permitted.
+
+### Fixed versus variable is also a flexibility decision
+
+A fixed rate gives repayment certainty, but early repayment can be subject to lender-specific rules or charges. A variable rate may change, but can sometimes offer more flexibility for overpayments. The calculator cannot infer those contract terms, so treat an “interest saved” figure as a mathematical scenario rather than a promise that the lender must accept the repayment pattern without cost.
+
+Before taking the loan, confirm how extra repayments are treated, whether a lump sum reduces principal immediately, and whether there are settlement or administration charges.
+
+### APR, nominal rate and lender quotations
+
+If a lender gives you an APR, use that figure cautiously in a generic amortisation calculator when the APR includes fees that are not actually financed into the balance. The mathematically exact monthly payment in the lender agreement may be based on the contractual interest rate and fee structure rather than a simple APR/12 calculation.
+
+For shopping decisions, compare the lender's **quoted repayment and total amount repayable** against the calculator's independent estimate. A large unexplained gap is a reason to inspect fees, insurance, balloon payments or the exact rate basis.
+
+See the CCPC guidance on [applying for a loan](https://www.ccpc.ie/manage-your-money/borrowing-money/applying-for-a-loan) and its [loan calculator](https://www.ccpc.ie/manage-your-money/borrowing-money/loan-calculator). If debt repayments are already difficult rather than merely being optimised, the [Debt Repayment Calculator](/debt-repayment-calculator/) is the more appropriate starting point.
+
 ## Method and limitations
 
 The calculator uses the standard amortising-loan payment formula with a constant monthly rate over the selected term. It does not model changing rates, late fees or lender-specific early-repayment rules.
