@@ -415,3 +415,46 @@ def test_calculator_sitemap_tracks_review_dates():
     assert "<lastmod>" in build_py
     assert 'str(tool.get("updated") or "")' in build_py
     assert '(a.reviewed or a.date).isoformat()' in build_py
+
+
+def test_2026_statutory_calculator_parameters_are_regression_locked():
+    js = (Path(__file__).parents[1] / "compound" / "site" / "static" / "tools.js").read_text()
+
+    # Revenue 2026 USC: €13,000 exemption; 0.5%, 2%, 3%, 8% bands.
+    assert "if(x<=13000) return 0" in js
+    assert "[[12012,.005],[16688,.02],[41344,.03],[Infinity,.08]]" in js
+
+    # Class A employee PRSI changes from 4.20% to 4.35% on 1 October 2026.
+    assert "weeklyClassA(weekly,.042)" in js
+    assert "weeklyClassA(weekly,.0435)" in js
+    assert "before*39+after*13" in js
+
+    # CAT thresholds / rate and small-gift exemption.
+    assert "A:400000,B:40000,C:20000" in js
+    assert "Math.min(3000,v.benefit)" in js
+    assert "afterTax=Math.max(0,v.prior+current-threshold)*.33" in js
+
+    # Help to Buy enhanced 2026 limits.
+    assert "v.property_value<=500000&&ltv>=70" in js
+    assert "Math.min(30000,valueCap,v.tax_paid)" in js
+
+    # First Home Scheme basic funding limits.
+    assert "v.htb==='yes'?.20:.30" in js
+    assert "Math.max(v.property_value*.025,10000)" in js
+
+    # Solar PV grant: €700/kWp first 2 kWp, €200/kWp next 2 kWp, €1,800 max.
+    assert "Math.min(1800" in js
+    assert "*700" in js and "*200" in js
+
+    # Standard residential Stamp Duty bands.
+    assert "Math.min(p,1000000)*.01" in js
+    assert "1500000)-1000000)*.02" in js
+    assert "Math.max(0,p-1500000)*.06" in js
+
+    # DIRT and standard CGT rate / annual exemption.
+    assert "dirt(v){ const tax=v.interest*.33" in js
+    assert "afterLoss-1270" in js and "tax=taxable*.33" in js
+
+    # Central Bank standard LTI/LTV modelling assumptions.
+    assert "v.buyer_type==='ftb'?4:3.5" in js
+    assert "v.buyer_type==='btl'?.30:.10" in js
