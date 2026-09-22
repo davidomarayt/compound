@@ -48,6 +48,46 @@ No. Export has value; whether self-use is better depends on import and export ra
 ### Does this optimise half-hourly dispatch?
 No. It is an annualised planning model.
 
+## Value each kWh by what it replaces
+
+The central optimisation principle is opportunity cost.
+
+A solar kWh used directly in the home can avoid buying one kWh at the applicable import tariff. A solar kWh exported earns the export rate. A solar kWh stored in a battery gives up the export payment in exchange for a later avoided import, after round-trip losses.
+
+The financially best route is therefore not always the route with the highest self-consumption percentage.
+
+### EV charging creates another competing use
+
+An EV can absorb a large amount of household electricity, but timing matters.
+
+If the car can charge overnight on a very low tariff, using midday solar for the EV may save less money than exporting the solar and charging the car later at the cheaper night rate. If the alternative is expensive daytime import, the same solar-to-EV flow can be highly valuable.
+
+Advanced mode lets you model these competing values instead of assuming every solar kWh used on-site is equally valuable.
+
+### A battery needs an incremental test
+
+Do not let panel savings make the battery look profitable.
+
+Run the system without the battery first. Then add battery cost, efficiency, usable capacity and tariff-arbitrage assumptions. The difference between those two scenarios is the battery's **incremental value**.
+
+A battery can still be chosen for resilience, backup or energy-independence reasons, but those benefits should be labelled separately from the financial return.
+
+### Tariff spreads drive arbitrage
+
+Night charging only creates value when the avoided later import is sufficiently more expensive than the night-rate energy used to charge the battery, after losses and any lost export opportunity.
+
+Small tariff spreads can disappear once round-trip losses are included. Large spreads can make smart charging much more valuable.
+
+This is why the optimiser exposes night-rate, import, export and battery-efficiency assumptions rather than using one blended electricity price.
+
+### Optimise the system, not each device in isolation
+
+Solar, EV and battery decisions interact. A larger PV array can increase export. Adding an EV can absorb some of that surplus. Adding a battery can shift more energy into evening hours. A cheap night tariff can then reduce the value of using solar for either the EV or the battery.
+
+Use the [Solar Payback Calculator](/solar-payback-calculator/) for project-level PV economics, the [EV Charging Cost Calculator](/ev-charging-cost-calculator/) for vehicle charging, and this optimiser when the interaction between all three systems is the main question.
+
+A robust result should remain sensible when you reduce solar generation, worsen battery efficiency or narrow the tariff spread. If the preferred setup only wins under one optimistic assumption, treat that as a warning that the optimisation is fragile.
+
 ## Method and limitations
 
 The tool estimates annual solar generation, allocates energy to home use, EV use, battery and export under the entered percentages and capacity limits, and values each flow at the relevant tariff. It is not a half-hourly simulation.
