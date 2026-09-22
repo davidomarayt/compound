@@ -1812,8 +1812,12 @@ h1, h2, h3 {
   color:#416c4f;
 }
 .home-tool-bmi-calculator .home-tool-icon{
-  background:#e9f0f7;
-  color:#2f6489;
+  background:#f8e7e7;
+  color:#b33a3a;
+}
+.home-tool-electricity-cost-calculator .home-tool-icon{
+  background:#fff4cf;
+  color:#d3a100;
 }
 .home-tool-copy{
   min-width:0;
