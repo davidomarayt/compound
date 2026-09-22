@@ -4,6 +4,8 @@ This calculator compares three common ways to fund a car: a personal loan, Hire 
 
 ## How to read the result
 
+The three structures are shown explicitly as **Personal car loan**, **Hire Purchase**, and **Personal Contract Plan (PCP)** so that ownership timing and end-of-term obligations are not hidden by the monthly payment.
+
 Compare **monthly payment**, **total paid**, **ownership point** and, for PCP, the final balloon/GMFV. In advanced mode, include fees, estimated end value, mileage limits and return charges.
 
 ## Worked example
