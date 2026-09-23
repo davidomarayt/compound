@@ -41,6 +41,7 @@ HOME_SEO_PRIORITY = {
         "vitamin-d-ireland-winter-who-should-take-it",
     ],
     "wealth": [
+        "how-to-start-investing-in-ireland",
         "saving-for-your-child-ireland",
         "is-switching-your-mortgage-worth-it-ireland",
         "mortgage-overpayments-100-euro-ireland",
@@ -50,7 +51,6 @@ HOME_SEO_PRIORITY = {
         "tax-credits-ireland-explained",
         "pcp-vs-hp-vs-car-loan-ireland",
         "solar-panels-vs-battery-ireland",
-        "returning-to-work-childcare-costs-ireland",
     ],
     "happiness": [
         "how-to-be-happier-evidence-ireland",
