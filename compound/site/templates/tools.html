@@ -20,7 +20,7 @@
   <section class="tool-group" data-tool-group data-sponsorship-category="{{ category|lower|replace(' ', '-')|replace('&', 'and') }}">
     <div class="tool-group-heading">
       <div>
-        <p class="eyebrow">0{{ loop.index }} / SPONSORSHIP CATEGORY</p>
+        <p class="eyebrow">0{{ loop.index }}</p>
         <h2>{{ category }}</h2>
         {% if category_blurbs and category in category_blurbs %}<p class="tool-group-blurb">{{ category_blurbs[category] }}</p>{% endif %}
       </div>
