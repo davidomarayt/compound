@@ -8,8 +8,6 @@ reviewed: 2026-09-23
 summary: 'A practical map of Irish investment taxation for individuals, covering direct shares, Capital Gains Tax, dividends, DWT, DIRT, fund exit tax and eight-year deemed disposal.'
 meta_description: 'Investment tax in Ireland explained: 33% CGT, €1,270 exemption, dividends, 38% fund tax, DIRT and 8-year deemed disposal, with worked examples.'
 tags: [investment tax, ireland, cgt, etf tax, deemed disposal, dividends, dirt]
-image: /static/images/tax-paperwork.jpg
-image_alt: 'Paperwork and calculator representing Irish investment tax and record keeping.'
 related_tools:
 - capital-gains-tax-calculator
 - investment-fee-calculator
