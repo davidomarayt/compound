@@ -93,7 +93,7 @@ jobs:
           grep -Fq 'https://compound.ie/debt-repayment-calculator/' /tmp/sitemap.xml
 
           fetch https://compound.ie/wealth/how-to-start-investing-in-ireland/ /tmp/investing.html
-          grep -Fq 'Investing in Ireland 101: the complete course' /tmp/investing.html
+          grep -Fq 'A complete beginner course for Irish investors' /tmp/investing.html
           grep -Fq 'course-grid' /tmp/investing.html
           grep -Fq '/static/investing-ireland.css?v=5' /tmp/investing.html
           grep -Fq '/wealth/before-you-invest-ireland/' /tmp/investing.html
