@@ -13,17 +13,60 @@ from urllib.parse import urlparse
 import re
 import shutil
 from dataclasses import dataclass, field
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 import markdown
 import yaml
+from PIL import Image, ImageOps
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from compound.config import Settings
 
 PILLARS = ["health", "wealth", "happiness"]
 PILLAR_LABELS = {"wealth": "Wealth", "health": "Health", "happiness": "Happiness"}
+
+COURSE_PARENTS = {
+    # Investing in Ireland 101
+    "before-you-invest-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
+    "pension-vs-investing-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
+    "shares-etfs-funds-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
+    "investment-tax-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
+    "diversification-portfolio-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
+    "choose-investment-broker-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
+    "investment-fees-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
+    "how-much-to-invest-per-month-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
+    "maintain-investment-portfolio-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
+    # Pensions in Ireland 101
+    "how-pensions-work-ireland": ("Pensions in Ireland 101", "/wealth/pensions-in-ireland/"),
+    "pension-options-ireland": ("Pensions in Ireland 101", "/wealth/pensions-in-ireland/"),
+    "pension-tax-relief-ireland-how-to-claim": ("Pensions in Ireland 101", "/wealth/pensions-in-ireland/"),
+    "how-much-pension-contribute-ireland": ("Pensions in Ireland 101", "/wealth/pensions-in-ireland/"),
+    "pension-funds-fees-ireland": ("Pensions in Ireland 101", "/wealth/pensions-in-ireland/"),
+    "changing-jobs-transfer-pension-ireland": ("Pensions in Ireland 101", "/wealth/pensions-in-ireland/"),
+    "when-can-i-access-pension-ireland": ("Pensions in Ireland 101", "/wealth/pensions-in-ireland/"),
+    "pension-lump-sum-tax-ireland": ("Pensions in Ireland 101", "/wealth/pensions-in-ireland/"),
+    # Buying a Home in Ireland 101
+    "buying-home-budget-deposit-ireland": ("Buying a Home in Ireland 101", "/wealth/buying-a-home-in-ireland/"),
+    "mortgage-approval-affordability-ireland": ("Buying a Home in Ireland 101", "/wealth/buying-a-home-in-ireland/"),
+    "first-time-buyer-supports-ireland": ("Buying a Home in Ireland 101", "/wealth/buying-a-home-in-ireland/"),
+    "house-hunting-bidding-ireland": ("Buying a Home in Ireland 101", "/wealth/buying-a-home-in-ireland/"),
+    "sale-agreed-survey-valuation-ireland": ("Buying a Home in Ireland 101", "/wealth/buying-a-home-in-ireland/"),
+    "solicitor-conveyancing-stamp-duty-ireland": ("Buying a Home in Ireland 101", "/wealth/buying-a-home-in-ireland/"),
+    "fixed-vs-variable-mortgage-ireland": ("Buying a Home in Ireland 101", "/wealth/buying-a-home-in-ireland/"),
+    "mortgage-protection-drawdown-ireland": ("Buying a Home in Ireland 101", "/wealth/buying-a-home-in-ireland/"),
+    "closing-buying-home-ireland": ("Buying a Home in Ireland 101", "/wealth/buying-a-home-in-ireland/"),
+}
+
+DISCOVER_IMAGE_SIZES = {
+    "1x1": (1200, 1200),
+    "4x3": (1200, 900),
+    "16x9": (1200, 675),
+}
+FAQ_SCHEMA_BLOCK = re.compile(
+    r'<script\s+type=["\']application/ld\+json["\']>\s*\{(?:(?!</script>).)*?"@type"\s*:\s*"FAQPage"(?:(?!</script>).)*?</script>',
+    re.IGNORECASE | re.DOTALL,
+)
 
 # Homepage "Worth your time" is deliberately capped at ten evergreen pages per pillar.
 # These are the pages we want to receive the strongest recurring homepage internal-link signal.
@@ -640,26 +683,126 @@ def long_date(d: date) -> str:
     return f"{d.day} {d.strftime('%B %Y')}"
 
 
+def is_news_article(a: Article) -> bool:
+    return "news" in a.tags or a.url.startswith("/news/")
+
+
+def discover_image_paths(a: Article) -> list[str]:
+    if not a.image:
+        return []
+    return [f"/static/discover/{a.slug}-{ratio}.webp" for ratio in ("1x1", "4x3", "16x9")]
+
+
+def discover_image_urls(a: Article, site_url: str) -> list[str]:
+    base = site_url.rstrip("/")
+    return [base + path for path in discover_image_paths(a)]
+
+
+def generate_discover_images(a: Article, output_dir: Path) -> None:
+    if not a.image:
+        return
+    source = HERE / a.image.lstrip("/")
+    target_dir = output_dir / "static" / "discover"
+    target_dir.mkdir(parents=True, exist_ok=True)
+    with Image.open(source) as image:
+        rgb = image.convert("RGB")
+        for ratio, size in DISCOVER_IMAGE_SIZES.items():
+            rendered = ImageOps.fit(rgb, size, method=Image.Resampling.LANCZOS, centering=(0.5, 0.5))
+            rendered.save(target_dir / f"{a.slug}-{ratio}.webp", "WEBP", quality=88, method=6)
+
+
+def site_identity_jsonld(site_url: str) -> str:
+    base = site_url.rstrip("/")
+    graph = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": f"{base}/#organization",
+                "name": "Compound",
+                "alternateName": "Compound.ie",
+                "url": f"{base}/",
+                "logo": {"@type": "ImageObject", "url": f"{base}/static/favicon.svg"},
+                "email": "mailto:david@compound.ie",
+            },
+            {
+                "@type": "WebSite",
+                "@id": f"{base}/#website",
+                "url": f"{base}/",
+                "name": "Compound",
+                "alternateName": "Compound.ie",
+                "publisher": {"@id": f"{base}/#organization"},
+                "inLanguage": "en-IE",
+            },
+        ],
+    }
+    return json.dumps(graph, ensure_ascii=False)
+
+
 def article_jsonld(a: Article, site_url: str) -> str:
-    """schema.org Article markup for search engines."""
+    """schema.org Article/NewsArticle markup for search engines."""
+    base = site_url.rstrip("/")
     data = {
-        "@context": "https://schema.org", "@type": "Article", "headline": a.title, "description": a.description,
-        "datePublished": a.date.isoformat(), "dateModified": a.date.isoformat(),
-        "author": {"@type": "Person", "name": "David", "url": f"{site_url}/about/"},
-        "publisher": {"@type": "Organization", "name": "Compound", "url": site_url},
-        "mainEntityOfPage": f"{site_url}{a.url}", "image": f"{site_url}{a.image}" if a.image else None,
-        "articleSection": (f"News / {PILLAR_LABELS.get(a.pillar, a.pillar)}" if "news" in a.tags else PILLAR_LABELS.get(a.pillar, a.pillar)),
+        "@context": "https://schema.org",
+        "@type": "NewsArticle" if is_news_article(a) else "Article",
+        "headline": a.title,
+        "description": a.description,
+        "datePublished": a.date.isoformat(),
+        "dateModified": (a.reviewed or a.date).isoformat(),
+        "author": {"@type": "Person", "name": "David", "url": f"{base}/about/"},
+        "publisher": {"@id": f"{base}/#organization"},
+        "mainEntityOfPage": {"@type": "WebPage", "@id": f"{base}{a.url}"},
+        "image": discover_image_urls(a, base) if a.image else None,
+        "articleSection": (
+            f"News / {PILLAR_LABELS.get(a.pillar, a.pillar)}"
+            if is_news_article(a)
+            else PILLAR_LABELS.get(a.pillar, a.pillar)
+        ),
         "keywords": ", ".join(a.tags),
         "citation": [s.get("url") for s in a.sources if s.get("url")],
+        "inLanguage": "en-IE",
     }
     if a.publication_status != "published":
         data.pop("datePublished", None)
         data["creativeWorkStatus"] = "Draft"
-    if a.reviewed:
-        data["dateModified"] = a.reviewed.isoformat()
     if a.series_id:
         data["isPartOf"] = {"@type": "CreativeWorkSeries", "name": "Live to 100"}
     return json.dumps(data, ensure_ascii=False)
+
+
+def article_breadcrumb_jsonld(a: Article, site_url: str) -> str:
+    base = site_url.rstrip("/")
+    items = [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{base}/"},
+    ]
+    if is_news_article(a):
+        items.append({"@type": "ListItem", "position": 2, "name": "News", "item": f"{base}/news/"})
+    else:
+        items.append({
+            "@type": "ListItem",
+            "position": 2,
+            "name": PILLAR_LABELS.get(a.pillar, a.pillar.title()),
+            "item": f"{base}/{a.pillar}/",
+        })
+        parent = COURSE_PARENTS.get(a.slug)
+        if parent:
+            items.append({
+                "@type": "ListItem",
+                "position": 3,
+                "name": parent[0],
+                "item": base + parent[1],
+            })
+    items.append({
+        "@type": "ListItem",
+        "position": len(items) + 1,
+        "name": a.title,
+        "item": f"{base}{a.url}",
+    })
+    return json.dumps({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": items,
+    }, ensure_ascii=False)
 
 
 def article_template(article: Article) -> str:
@@ -692,22 +835,24 @@ def article_context(env: Environment, settings: Settings, article: Article, prev
         for block in ("figures", "horizon", "timeline"):
             fragment = env.get_template(f"_live100_{block}.html").render()
             body = body.replace(f"<p>[live100:{block}]</p>", fragment)
-    crumb_items = [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": settings.site_base_url + "/"},
-        {"@type": "ListItem", "position": 2, "name": "Live to 100", "item": settings.site_base_url + "/live-to-100/"},
-    ]
-    if article.series_order > 1:
-        crumb_items.append({"@type": "ListItem", "position": 3, "name": article.title,
-                            "item": settings.site_base_url + article.url})
+    # Google retired FAQ rich results in May 2026. Keep visible FAQs, but strip
+    # embedded FAQPage JSON-LD so future content doesn't accumulate obsolete markup.
+    body = FAQ_SCHEMA_BLOCK.sub("", body)
     toc = [{"id": ident, "title": html_unescape(re.sub(r"<[^>]+>", "", heading))}
            for ident, heading in re.findall(r'<h2 id="([^"]+)">(.*?)</h2>', body, re.DOTALL)]
-    breadcrumbs = {
-        "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": crumb_items
-    }
-    return dict(article=article, preview=preview, series=series, article_body=body, article_toc=toc,
-                title=article.seo_title or article.title,
-                article_jsonld=article_jsonld(article, settings.site_base_url),
-                breadcrumb_jsonld=json.dumps(breadcrumbs, ensure_ascii=False))
+    images = discover_image_urls(article, settings.site_base_url)
+    return dict(
+        article=article,
+        preview=preview,
+        series=series,
+        article_body=body,
+        article_toc=toc,
+        title=article.seo_title or article.title,
+        article_jsonld=article_jsonld(article, settings.site_base_url),
+        breadcrumb_jsonld=article_breadcrumb_jsonld(article, settings.site_base_url),
+        discover_images=images,
+        social_image=(images[-1] if images else (settings.site_base_url.rstrip("/") + article.image if article.image else "")),
+    )
 
 
 def load_site_config(content_dir: Path) -> dict:
@@ -737,6 +882,7 @@ def _env(settings: Settings) -> Environment:
     env.globals.update(analytics=site_cfg["analytics"])
     env.globals.update(
         site_url=settings.site_base_url,
+        site_identity_jsonld=site_identity_jsonld(settings.site_base_url),
         email_form_action=site_cfg["email_form_action"] or settings.email_form_action,
         pillars=PILLARS,
         pillar_labels=PILLAR_LABELS,
@@ -811,6 +957,8 @@ def build_site(settings: Settings) -> dict:
             shutil.rmtree(child) if child.is_dir() else child.unlink()
     out.mkdir(parents=True, exist_ok=True)
     shutil.copytree(HERE / "static", out / "static", dirs_exist_ok=True)
+    for article in articles:
+        generate_discover_images(article, out)
 
     news_articles = [a for a in articles if "news" in a.tags or a.url.startswith("/news/")]
     news_articles.sort(key=lambda a: (a.date, a.slug), reverse=True)
@@ -1023,7 +1171,34 @@ def build_site(settings: Settings) -> dict:
     _write(out / "search.json", json.dumps(index, ensure_ascii=False))
     _write(out / "search" / "index.html", env.get_template("search.html").render(title="Search", search_index=index, ads_allowed=False))
     _write(out / "feed.xml", env.get_template("feed.xml").render(articles=articles[:30]))
-    _write(out / "robots.txt", f"User-agent: *\nDisallow: /preview/\nSitemap: {settings.site_base_url}/sitemap.xml\n")
+
+    today = date.today()
+    recent_news = [a for a in news_articles if today - timedelta(days=2) <= a.date <= today]
+    news_rows = []
+    for a in recent_news[:1000]:
+        title = html_escape(a.title, quote=False)
+        loc = html_escape(settings.site_base_url.rstrip("/") + a.url, quote=False)
+        news_rows.append(
+            "  <url><loc>" + loc + "</loc><news:news>"
+            "<news:publication><news:name>Compound</news:name><news:language>en</news:language></news:publication>"
+            f"<news:publication_date>{a.date.isoformat()}</news:publication_date>"
+            f"<news:title>{title}</news:title>"
+            "</news:news></url>\n"
+        )
+    _write(
+        out / "news-sitemap.xml",
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+        'xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n'
+        + "".join(news_rows)
+        + "</urlset>\n",
+    )
+    _write(
+        out / "robots.txt",
+        f"User-agent: *\nDisallow: /preview/\n"
+        f"Sitemap: {settings.site_base_url}/sitemap.xml\n"
+        f"Sitemap: {settings.site_base_url}/news-sitemap.xml\n",
+    )
     host = urlparse(settings.site_base_url).hostname or ""
     if host and host not in {"localhost", "127.0.0.1"}:
         _write(out / "CNAME", host + "\n")  # custom domain for GitHub Pages; harmless elsewhere
