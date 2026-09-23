@@ -17,7 +17,7 @@ The calculator then estimates:
 
 Advanced mode also models a personal pension contribution within Revenue's age-related Income Tax relief limits.
 
-For a broader explanation of the filing and cash-flow issues, read the [self-employed tax guide for Ireland](/wealth/self-employed-tax-ireland-2026-guide/).
+For a broader explanation of the filing and cash-flow issues, read the [self-employed tax guide for Ireland](/wealth/self-employed-tax-ireland-2026-guide/). To compare the same income with PAYE employment assumptions, use the [Take-Home Pay Calculator](/take-home-pay-calculator/).
 
 ## Turnover is not the same as taxable profit
 
