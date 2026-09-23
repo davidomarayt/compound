@@ -121,4 +121,26 @@ jobs:
           grep -Fq 'https://compound.ie/wealth/changing-jobs-transfer-pension-ireland/' /tmp/sitemap.xml
           grep -Fq 'https://compound.ie/wealth/when-can-i-access-pension-ireland/' /tmp/sitemap.xml
 
+          fetch https://compound.ie/wealth/buying-a-home-in-ireland/ /tmp/homebuying.html
+          grep -Fq 'From your first savings target to the day you get the keys.' /tmp/homebuying.html
+          grep -Fq 'home-course-grid' /tmp/homebuying.html
+          grep -Fq '/static/home-buying-ireland.css?v=1' /tmp/homebuying.html
+          grep -Fq '/wealth/buying-home-budget-deposit-ireland/' /tmp/homebuying.html
+          grep -Fq '/wealth/closing-buying-home-ireland/' /tmp/homebuying.html
+
+          fetch https://compound.ie/static/home-buying-ireland.css?v=1 /tmp/homebuying.css
+          grep -Fq '.home-course-grid' /tmp/homebuying.css
+          grep -Fq '.home-chapter-nav' /tmp/homebuying.css
+
+          grep -Fq 'https://compound.ie/wealth/buying-a-home-in-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/buying-home-budget-deposit-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/mortgage-approval-affordability-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/first-time-buyer-supports-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/house-hunting-bidding-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/sale-agreed-survey-valuation-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/solicitor-conveyancing-stamp-duty-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/fixed-vs-variable-mortgage-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/mortgage-protection-drawdown-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/closing-buying-home-ireland/' /tmp/sitemap.xml
+
           echo 'Live verification passed for Compound calculator catalogue and flagship guides.'
