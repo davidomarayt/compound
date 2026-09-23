@@ -42,11 +42,11 @@ HOME_SEO_PRIORITY = {
     ],
     "wealth": [
         "how-to-start-investing-in-ireland",
+        "pensions-in-ireland",
         "saving-for-your-child-ireland",
         "is-switching-your-mortgage-worth-it-ireland",
         "mortgage-overpayments-100-euro-ireland",
         "pension-tax-relief-ireland-how-to-claim",
-        "myfuturefund-vs-private-pension-ireland",
         "rent-tax-credit-ireland-who-can-claim",
         "tax-credits-ireland-explained",
         "pcp-vs-hp-vs-car-loan-ireland",
