@@ -208,3 +208,4 @@ The purpose of this work is to give your future self more understandable choices
 
 A retirement lump sum can look separate from the rest of a long-life plan, but it still has to serve the same future. If you are considering a personal pension, the [Pension Lump Sum Calculator Ireland](/pension-lump-sum-calculator-ireland/) can estimate the 25% lump sum and show how previous retirement lump sums use the €200,000 lifetime tax-free allowance. The useful question is not only how much can be taken, but what job that money needs to do over the decades that follow.
 
+For the practical mechanics of building a long-term portfolio outside this longevity framework, see [How to Start Investing in Ireland](/wealth/how-to-start-investing-in-ireland/), including pensions, taxable accounts, ETFs, fees, diversification and current Irish tax rules.
