@@ -648,9 +648,16 @@ def tool_catalogue(content_dir: Path, tools: list[dict]) -> dict[str, dict]:
 
 
 def linked_articles(tool_slug: str, articles: list[Article], n: int = 4) -> list[Article]:
-    """Articles that explicitly nominate this tool, newest first."""
+    """Articles that explicitly nominate this tool, prioritising the primary tool relationship."""
     matches = [a for a in articles if tool_slug in a.related_tools]
-    matches.sort(key=lambda a: (a.date, a.slug), reverse=True)
+    matches.sort(
+        key=lambda a: (
+            1 if a.related_tools and a.related_tools[0] == tool_slug else 0,
+            a.date,
+            a.slug,
+        ),
+        reverse=True,
+    )
     return matches[:n]
 
 
@@ -775,6 +782,25 @@ def article_breadcrumb_jsonld(a: Article, site_url: str) -> str:
     items = [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{base}/"},
     ]
+    if a.series_id == "live-to-100":
+        items.append({
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Live to 100",
+            "item": f"{base}/live-to-100/",
+        })
+        if a.series_order > 1:
+            items.append({
+                "@type": "ListItem",
+                "position": 3,
+                "name": a.title,
+                "item": f"{base}{a.url}",
+            })
+        return json.dumps({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": items,
+        }, ensure_ascii=False)
     if is_news_article(a):
         items.append({"@type": "ListItem", "position": 2, "name": "News", "item": f"{base}/news/"})
     else:
