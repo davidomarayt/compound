@@ -1860,7 +1860,7 @@
         lifetime_after:money(after),
         __chart:{type:'bar',title:'Tax treatment of this retirement lump sum',caption:'Slices the current payment according to your cumulative retirement lump sums. The above-€500,000 slice uses the marginal PAYE rate assumption in Advanced mode.',labels:['Tax-free','Taxed at 20%','Above €500k threshold'],series:[{label:'Current lump sum',values:[taxFree,at20,above500]}]}
       };
-
+    }
   };
 
   if(typeof globalThis!=='undefined'){
