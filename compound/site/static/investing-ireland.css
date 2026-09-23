@@ -247,3 +247,86 @@
     grid-template-columns:1fr auto;
   }
 }
+
+
+/* Strong descendant rhythm for the full Investing 101 series.
+   The hub contains a nested .investing-guide wrapper, so direct-child
+   selectors alone do not catch every Markdown heading. */
+.article-prose.investing-guide p{
+  margin:0 0 1.65em;
+}
+.article-prose.investing-guide h2{
+  margin:3.25rem 0 1.15rem;
+}
+.article-prose.investing-guide h3{
+  margin:2.75rem 0 1rem;
+}
+.article-prose.investing-guide p + h2,
+.article-prose.investing-guide ul + h2,
+.article-prose.investing-guide ol + h2,
+.article-prose.investing-guide table + h2,
+.article-prose.investing-guide .table-scroll + h2{
+  margin-top:4rem;
+}
+.article-prose.investing-guide p + h3,
+.article-prose.investing-guide ul + h3,
+.article-prose.investing-guide ol + h3,
+.article-prose.investing-guide table + h3,
+.article-prose.investing-guide .table-scroll + h3{
+  margin-top:3.25rem;
+}
+.article-prose.investing-guide h2 + p{
+  margin-top:.35rem;
+}
+.article-prose.investing-guide h3 + p{
+  margin-top:.45rem;
+}
+.article-prose.investing-guide ul,
+.article-prose.investing-guide ol{
+  margin-top:.6rem;
+  margin-bottom:2rem;
+}
+.article-prose.investing-guide li{
+  margin-bottom:.72rem;
+  line-height:1.75;
+}
+
+@media(max-width:760px){
+  .article-prose.investing-guide{
+    line-height:1.92;
+  }
+  .article-prose.investing-guide p{
+    margin-bottom:1.75em;
+  }
+  .article-prose.investing-guide h2{
+    margin:3.6rem 0 1.25rem;
+  }
+  .article-prose.investing-guide h3{
+    font-size:1.62rem;
+    line-height:1.2;
+    margin:3rem 0 1.05rem;
+  }
+  .article-prose.investing-guide p + h2,
+  .article-prose.investing-guide ul + h2,
+  .article-prose.investing-guide ol + h2,
+  .article-prose.investing-guide table + h2,
+  .article-prose.investing-guide .table-scroll + h2{
+    margin-top:4.25rem;
+  }
+  .article-prose.investing-guide p + h3,
+  .article-prose.investing-guide ul + h3,
+  .article-prose.investing-guide ol + h3,
+  .article-prose.investing-guide table + h3,
+  .article-prose.investing-guide .table-scroll + h3{
+    margin-top:3.5rem;
+  }
+  .article-prose.investing-guide h3 + p{
+    margin-top:.55rem;
+  }
+  .article-prose.investing-guide ul,
+  .article-prose.investing-guide ol{
+    margin-top:.8rem;
+    margin-bottom:2.25rem;
+    padding-left:1.55rem;
+  }
+}
