@@ -8,8 +8,6 @@ reviewed: 2026-09-23
 summary: 'A practical framework for deciding how much to invest each month in Ireland, with €100, €250 and €500 long-term illustrations and guidance on pensions, cash buffers and consistency.'
 meta_description: 'How much should you invest each month in Ireland? See €100, €250 and €500 examples and build a sustainable contribution around your goals and cash flow.'
 tags: [monthly investing, ireland, investing, beginners, compound interest, savings]
-image: /static/images/live-to-100-wealth.webp
-image_alt: 'Editorial illustration representing long-term saving and investing.'
 related_tools:
 - compound-interest-calculator
 - regular-savings-calculator
