@@ -21,7 +21,7 @@
   <div class="home-today-list">
    {% for a in news_articles[:3] %}
    <a class="home-today-story" href="{{ a.url }}">
-    {% if a.image %}<img src="{{ a.image }}" width="210" height="120" alt="" loading="lazy">{% endif %}
+    {% if a.image %}<img src="{{ a.image }}" width="210" height="120" alt="" loading="{% if loop.first %}eager{% else %}lazy{% endif %}"{% if loop.first %} fetchpriority="high"{% endif %}>{% endif %}
     <span class="home-today-copy"><strong>{{ a.title }}</strong><small>{{ a.pillar_label }} · {{ a.date | long_date }}</small></span>
    </a>
    {% endfor %}
