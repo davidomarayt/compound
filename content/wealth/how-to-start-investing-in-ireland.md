@@ -407,22 +407,31 @@ It is not a forecast.
 <h3 id="fee-drag-heading">Illustrative effect of annual fees over 30 years</h3>
 <p>€500 a month, 7% gross annual return, no tax or inflation.</p>
 </header>
-<div class="fee-bars" role="img" aria-label="Ending portfolio values at different annual fee levels">
-<div class="fee-bar-row"><span>0%</span><div class="fee-bar-track"><div class="fee-bar-fill" style="width:100%"></div></div><strong>€584,726</strong></div>
-<div class="fee-bar-row"><span>0.25%</span><div class="fee-bar-track"><div class="fee-bar-fill" style="width:95.2%"></div></div><strong>€556,679</strong></div>
-<div class="fee-bar-row"><span>1%</span><div class="fee-bar-track"><div class="fee-bar-fill" style="width:82.3%"></div></div><strong>€481,147</strong></div>
-<div class="fee-bar-row"><span>2%</span><div class="fee-bar-track"><div class="fee-bar-fill" style="width:68.0%"></div></div><strong>€397,776</strong></div>
+<div class="fee-bars" role="img" aria-label="Illustrative ending portfolio values at different annual fee levels">
+<div class="fee-bar-row">
+<span class="fee-rate">0%</span>
+<strong>€584,726</strong>
+<div class="fee-bar-track"><div class="fee-bar-fill" style="width:100%"></div></div>
+<small class="fee-difference">Baseline — no annual fee</small>
 </div>
-<div class="table-scroll">
-<table class="investing-chart-table">
-<thead><tr><th>Annual fee</th><th>Illustrative ending value</th><th>Difference versus 0% fee</th></tr></thead>
-<tbody>
-<tr><td>0%</td><td>€584,726</td><td>—</td></tr>
-<tr><td>0.25%</td><td>€556,679</td><td>-€28,047</td></tr>
-<tr><td>1%</td><td>€481,147</td><td>-€103,579</td></tr>
-<tr><td>2%</td><td>€397,776</td><td>-€186,951</td></tr>
-</tbody>
-</table>
+<div class="fee-bar-row">
+<span class="fee-rate">0.25%</span>
+<strong>€556,679</strong>
+<div class="fee-bar-track"><div class="fee-bar-fill" style="width:95.2%"></div></div>
+<small class="fee-difference">€28,047 less than the 0% illustration</small>
+</div>
+<div class="fee-bar-row">
+<span class="fee-rate">1%</span>
+<strong>€481,147</strong>
+<div class="fee-bar-track"><div class="fee-bar-fill" style="width:82.3%"></div></div>
+<small class="fee-difference">€103,579 less than the 0% illustration</small>
+</div>
+<div class="fee-bar-row">
+<span class="fee-rate">2%</span>
+<strong>€397,776</strong>
+<div class="fee-bar-track"><div class="fee-bar-fill" style="width:68.0%"></div></div>
+<small class="fee-difference">€186,951 less than the 0% illustration</small>
+</div>
 </div>
 <p class="investing-chart-note">Compound illustration. Net annual return is modelled after the stated fee; monthly contributions are added at month end. Real markets are volatile and product fees can be charged in different ways.</p>
 </section>
