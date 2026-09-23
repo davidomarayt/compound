@@ -14,6 +14,7 @@ related_tools:
 - myfuturefund-calculator
 - pension-tax-relief-calculator
 - pension-projection-calculator
+- pension-lump-sum-calculator-ireland
 sources:
 - title: 'MyFutureFund participant guide: eligibility, contributions, opt-out, investments, fees and drawdown. Checked 21 September 2026.'
   url: https://myfuturefund.ie/participant-guide
@@ -454,3 +455,8 @@ The comparison therefore needs six numbers:
 Once those are visible, “MyFutureFund vs private pension” stops being a slogan and becomes a comparison you can actually calculate.
 
 For more detail on the existing tax-relief system, read [Pension tax relief in Ireland: what it’s worth, the limits, and how to claim](/wealth/pension-tax-relief-ireland-how-to-claim/).
+
+## What happens when you eventually take a lump sum?
+
+Contribution rates are only the accumulation side of a pension. Retirement benefits have their own tax rules. For personal pensions, 25% of the fund can generally be taken as a retirement lump sum, subject to the lifetime tax-free limit across retirement lump sums. Occupational schemes can use salary-and-service rules instead. The [Pension Lump Sum Calculator Ireland](/pension-lump-sum-calculator-ireland/) lets you model the €200,000 lifetime tax-free limit and the tax bands that apply above it.
+
