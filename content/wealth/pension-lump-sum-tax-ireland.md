@@ -21,6 +21,14 @@ sources:
   url: https://www.revenue.ie/en/jobs-and-pensions/pension/private/index.aspx
 ---
 
+<div class="pension-chapter-nav">
+<a href="/wealth/when-can-i-access-pension-ireland/">← Chapter 7</a>
+<a href="/wealth/pensions-in-ireland/">Course hub</a>
+<span>Chapter 8 of 8</span>
+</div>
+
+
+
 A pension lump sum can be tax free in Ireland, but the phrase **"25% tax free"** is easy to misunderstand.
 
 For a personal pension, Revenue says an individual can generally take **25% of the fund as a retirement lump sum**. But the amount that is actually tax free is subject to a separate **€200,000 lifetime limit across retirement lump sums from all sources**.
@@ -199,3 +207,11 @@ Then compare:
 - what happens to the pension funds that remain invested or are converted into retirement income.
 
 The [Pension Lump Sum Calculator Ireland](/pension-lump-sum-calculator-ireland/) is designed to make that first tax calculation transparent.
+
+
+<div class="pension-next pension-course-complete">
+<span>COURSE COMPLETE</span>
+<strong>You now have the full pension framework.</strong>
+<p>Return to the hub to revisit any chapter, or use the pension calculators to model contributions, growth, tax relief and retirement lump sums.</p>
+<a href="/wealth/pensions-in-ireland/">Back to Pensions in Ireland 101 →</a>
+</div>
