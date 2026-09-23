@@ -8,8 +8,6 @@ reviewed: 2026-09-23
 summary: 'The final Investing in Ireland 101 chapter: how to review contributions, rebalance, control fees, keep Irish tax records and avoid turning long-term investing into daily trading.'
 meta_description: 'Maintain an investment portfolio in Ireland with an annual checklist for rebalancing, fees, tax records, contributions, risk and long-term discipline.'
 tags: [portfolio review, investing, ireland, rebalancing, tax records, long-term investing]
-image: /static/images/wealth.jpg
-image_alt: 'Wealth planning image representing long-term portfolio maintenance.'
 related_tools:
 - investment-fee-calculator
 - compound-interest-calculator
