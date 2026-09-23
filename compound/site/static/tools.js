@@ -1834,8 +1834,7 @@
         best_exemption:money(best),
         tax_free_ex_gratia:money(taxFree),
         taxable_ex_gratia:money(taxable),
-        total_package:money(statutory+ex),
-        __chart:{type:'bar',title:advanced?'Redundancy package breakdown':'Statutory redundancy estimate',caption:advanced?'Statutory redundancy is shown separately from the modelled tax-free and taxable portions of the ex-gratia payment.':'Uses the €600 statutory weekly-pay ceiling and complete years of service.',labels:advanced?['Statutory','Tax-free ex-gratia','Taxable ex-gratia']:['Statutory redundancy'],series:[{label:'Amount',values:advanced?[statutory,taxFree,taxable]:[statutory]}]}
+        total_package:money(statutory+ex)
       };
     },
     self_employed_tax_ireland(v){
