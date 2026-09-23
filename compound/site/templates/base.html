@@ -24,7 +24,8 @@ if(choice==='granted')window.compoundStartAnalytics();})();
 </script>{% endif %}
 {% if adsense.client and not preview and (ads_allowed is not defined or ads_allowed) %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense.client }}" crossorigin="anonymous"></script>{% endif %}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=optional" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=optional"></noscript>
 <link rel="stylesheet" href="/static/style.css?v=20260923-discovery1">
 {% block post_styles %}{% endblock %}
 <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
