@@ -29,8 +29,6 @@ sources:
 <a href="/wealth/fixed-vs-variable-mortgage-ireland/">Next →</a>
 </div>
 
-# What your solicitor does when you buy a home
-
 Conveyancing is the legal transfer of ownership from seller to buyer.
 
 It is the part of the process that can feel invisible because much of the work happens between solicitors.
