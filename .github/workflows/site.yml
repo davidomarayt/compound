@@ -94,12 +94,12 @@ jobs:
 
           fetch https://compound.ie/wealth/how-to-start-investing-in-ireland/ /tmp/investing.html
           grep -Fq 'Investing in Ireland 101: the complete course' /tmp/investing.html
-          grep -Fq 'growth-scenarios' /tmp/investing.html
-          grep -Fq '/static/investing-ireland.css?v=4' /tmp/investing.html
+          grep -Fq 'course-grid' /tmp/investing.html
+          grep -Fq '/static/investing-ireland.css?v=5' /tmp/investing.html
           grep -Fq '/wealth/before-you-invest-ireland/' /tmp/investing.html
 
-          fetch https://compound.ie/static/investing-ireland.css?v=4 /tmp/investing.css
+          fetch https://compound.ie/static/investing-ireland.css?v=5 /tmp/investing.css
           grep -Fq 'Mobile-first finishing pass for Investing in Ireland 101' /tmp/investing.css
-          grep -Fq '.investing-guide .growth-scenarios' /tmp/investing.css
+          grep -Fq '.investing-course-hub .course-grid' /tmp/investing.css
 
           echo 'Live verification passed for Compound calculator catalogue and flagship guides.'
