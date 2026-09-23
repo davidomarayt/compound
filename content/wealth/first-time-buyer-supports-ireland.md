@@ -124,6 +124,20 @@ It is not an ordinary loan.
 
 The percentage is important because the euro amount needed to redeem that share later can rise or fall with the property's value.
 
+## Which First Home Scheme products exist?
+
+The FHS currently has three main products:
+
+<div class="home-support-grid">
+<div><span>NEW BUILD</span><strong>Private development</strong><p>For eligible buyers purchasing a newly built house or apartment in a private development.</p></div>
+<div><span>SELF-BUILD</span><strong>Own site</strong><p>For eligible first-time self-builders building a principal private residence on a site they own or are purchasing.</p></div>
+<div><span>TENANT HOME PURCHASE</span><strong>Buy the home you rent</strong><p>For eligible tenants with a valid Notice of Termination because the landlord is selling the property.</p></div>
+</div>
+
+The Tenant Home Purchase product is an important exception to the idea that FHS is only for new homes.
+
+Help to Buy cannot be used with the Tenant Home Purchase product because HTB itself is restricted to qualifying new builds and self-builds.
+
 ## Maximum FHS equity
 
 The current maximum is:
