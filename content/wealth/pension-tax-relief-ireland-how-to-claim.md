@@ -18,6 +18,8 @@ tags:
 related_tools:
 - pension-tax-relief-calculator
 - pension-projection-calculator
+- pension-lump-sum-calculator-ireland
+- self-employed-tax-calculator-ireland
 - myfuturefund-calculator
 sources:
 - title: 'Revenue: Tax relief for pension contributions'
@@ -281,3 +283,10 @@ One-third of workers in the State had no pension cover in 2025, and of those, al
 - **If you missed a claim from 2022**, it has to be in by 31 December 2026 or it is gone.
 
 The relief is real, and the October window is genuinely useful. Just keep the arithmetic honest: the saving is on income tax only, it is only 40% on the income actually taxed at 40%, and the tax is deferred rather than forgiven.
+
+## Planning the tax position from contribution to retirement
+
+Tax relief on the way into a pension is only one side of the calculation. At retirement, the lump-sum rules become relevant too: a personal pension can generally provide a 25% retirement lump sum, while the lifetime tax-free limit across retirement lump sums is €200,000. Use the [Pension Lump Sum Calculator Ireland](/pension-lump-sum-calculator-ireland/) to model that end of the journey.
+
+If you are a sole trader or other self-assessed worker, the [Self-Employed Tax Calculator Ireland](/self-employed-tax-calculator-ireland/) estimates 2026 Income Tax, USC and Class S PRSI before and after a qualifying pension contribution. It is useful for seeing the tax-relief effect in the context of the wider annual liability rather than viewing pension relief in isolation.
+
