@@ -250,3 +250,5 @@ Write down the purpose, a manageable monthly amount, the likely spending date an
 As the spending date approaches, revisit how much can tolerate a market fall. Involve the child in the decisions too: knowing where the money came from, what tax records mean and why some money stays invested is part of the head start.
 
 Your own finances belong in that conversation. The [guide to wealth for a longer life](/wealth/wealth-for-a-100-year-life/) puts family generosity alongside housing, retirement and future care. A useful savings plan should make both generations more resilient.
+
+If you are building your own investment knowledge before choosing how to save for a child, the broader [beginner’s guide to investing in Ireland](/wealth/how-to-start-investing-in-ireland/) explains the main wrappers, fees, diversification questions and Irish tax regimes.
