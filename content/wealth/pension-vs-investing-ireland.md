@@ -8,8 +8,6 @@ reviewed: 2026-09-23
 summary: 'A practical comparison of investing through an Irish pension versus a normal taxable investment account, including tax relief, access, growth, employer contributions and flexibility.'
 meta_description: 'Pension vs investing in Ireland: compare tax relief, access, employer contributions, taxable accounts and long-term trade-offs before choosing where to invest.'
 tags: [pension, investing, ireland, prsa, tax relief, brokerage, retirement]
-image: /static/images/retirement-walk.jpg
-image_alt: 'An older couple walking together through a park.'
 related_tools:
 - pension-tax-relief-calculator
 - pension-projection-calculator
