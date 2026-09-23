@@ -8,8 +8,6 @@ reviewed: 2026-09-23
 summary: 'The first chapter of Compound’s Investing in Ireland 101 series: how to separate short-term cash from long-term investing, assess debt, define goals and choose a realistic time horizon.'
 meta_description: 'Before investing in Ireland, sort your emergency cash, expensive debt, goals and time horizon. A practical beginner checklist with Irish tools.'
 tags: [investing, ireland, beginners, emergency fund, debt, time horizon, wealth]
-image: /static/images/wealth.jpg
-image_alt: 'A simple wealth and long-term planning illustration.'
 related_tools:
 - emergency-fund-calculator
 - compound-interest-calculator
