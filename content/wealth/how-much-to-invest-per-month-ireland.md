@@ -80,8 +80,8 @@ This is the pool from which the monthly investment contribution should come.
 Assume:
 
 - contributions at the end of each month;
-- 7% annual return;
-- monthly compounding;
+- 7% effective annual return;
+- the equivalent monthly rate;
 - no fees;
 - no tax;
 - no inflation;
@@ -91,9 +91,9 @@ This is a mathematical illustration, not a forecast.
 
 | Monthly amount | 10 years | 20 years | 30 years |
 |---|---:|---:|---:|
-| €100 | €17,308 | €52,093 | €121,997 |
-| €250 | €43,271 | €130,232 | €304,993 |
-| €500 | €86,542 | €260,463 | €609,985 |
+| €100 | €17,105 | €50,754 | €116,945 |
+| €250 | €42,763 | €126,884 | €292,363 |
+| €500 | €85,526 | €253,768 | €584,726 |
 
 The important observation is not the assumed 7%.
 
