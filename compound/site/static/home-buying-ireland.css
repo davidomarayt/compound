@@ -100,7 +100,7 @@
   font-size:.7rem;
   font-weight:700;
   letter-spacing:.12em;
-  opacity:.62;
+  opacity:1;color:var(--muted);
 }
 
 .home-course-grid strong{
@@ -184,7 +184,7 @@
   font-size:.67rem;
   font-weight:700;
   letter-spacing:.12em;
-  opacity:.62;
+  opacity:1;color:var(--muted);
 }
 
 .home-principle-grid strong,
@@ -219,7 +219,7 @@
 .home-number-strip span{
   display:block;
   font-size:.72rem;
-  opacity:.7;
+  opacity:1;color:var(--muted);
 }
 
 .home-number-strip strong{
@@ -258,7 +258,7 @@
   font-size:.67rem;
   font-weight:700;
   letter-spacing:.12em;
-  opacity:.62;
+  opacity:1;color:var(--muted);
 }
 
 .home-journey strong{
@@ -304,7 +304,7 @@
   font-size:.65rem;
   font-weight:700;
   letter-spacing:.12em;
-  opacity:.62;
+  opacity:1;color:var(--muted);
 }
 
 .home-tool-grid strong,
