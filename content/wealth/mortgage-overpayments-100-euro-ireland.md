@@ -116,3 +116,8 @@ Pension contributions are another separate decision, involving tax relief, possi
 Paying extra is only one route to reducing mortgage costs. Reviewing your existing lender’s options or switching could help without requiring the same extra monthly outlay. Compare the overall cost, including legal or valuation costs and any fixed-rate break charge, rather than choosing on cashback alone. [CCPC switching guidance](https://www.ccpc.ie/manage-your-money/buying-a-home/about-mortgages/switching-your-mortgage).
 
 For the next step, take the calculator result and your mortgage statement to the lender. Ask what the same plan would mean under your actual agreement. If the fees, payment treatment and household budget all work, you can make the decision with a clearer picture of what that €100 is buying: less interest, and potentially fewer years of repayments.
+
+
+## Where overpayments fit in the bigger home-buying plan
+
+Overpayments make sense only after the purchase itself is stable and cash reserves are healthy. [Buying a Home in Ireland 101](/wealth/buying-a-home-in-ireland/) covers the full journey from deposit and mortgage approval through closing, then shows where overpayments and switching fit after you get the keys.
