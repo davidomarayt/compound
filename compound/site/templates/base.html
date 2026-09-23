@@ -4,9 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#33252e">
+{% if preview is not defined or not preview %}<meta name="robots" content="max-image-preview:large">{% endif %}
 <title>{% block head_title %}{{ title }} · Compound{% endblock %}</title>
 {% block meta %}<meta name="description" content="Thoughtful guides, useful tools and timely news on health, wealth and happiness in Ireland.">{% endblock %}
 {% block head %}{% endblock %}
+{% if preview is not defined or not preview %}<script type="application/ld+json">{{ site_identity_jsonld | safe }}</script>{% endif %}
 {% if analytics.measurement_id and not preview %}<script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 (function(){var choice=null;try{choice=localStorage.getItem('compound_analytics_consent')}catch(e){}
