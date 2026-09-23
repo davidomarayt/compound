@@ -289,3 +289,4 @@ Tax relief on the way into a pension is only one side of the calculation. At ret
 
 If you are a sole trader or other self-assessed worker, the [Self-Employed Tax Calculator Ireland](/self-employed-tax-calculator-ireland/) estimates 2026 Income Tax, USC and Class S PRSI before and after a qualifying pension contribution. It is useful for seeing the tax-relief effect in the context of the wider annual liability rather than viewing pension relief in isolation.
 
+Tax relief is only one part of deciding how to invest for the long term. Our [beginner’s guide to investing in Ireland](/wealth/how-to-start-investing-in-ireland/) puts pensions beside taxable investing, ETFs, shares, fees and Irish tax so the wrapper decision is made before the product decision.
