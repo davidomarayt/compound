@@ -29,6 +29,7 @@ def test_tool_formulas_are_supported():
         "solar_optimizer", "retrofit_planner", "myfuturefund", "childcare_return",
         "mortgage_switch", "lifetime_cost", "car_finance",
         "nutrition_needs", "pregnancy_timeline", "alcohol_ireland", "net_worth", "debt_repayment",
+        "redundancy_ireland", "self_employed_tax_ireland", "pension_lump_sum_ireland",
     }
     assert {tool["formula"] for tool in data["tools"]} <= supported
 
