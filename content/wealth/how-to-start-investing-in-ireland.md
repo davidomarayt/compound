@@ -552,14 +552,28 @@ The table below is an illustration of compounding, not a return forecast.
 
 It assumes contributions are made at the end of every month, returns are smooth and constant, and there are no taxes, fees or inflation.
 
-| Monthly contribution | 10 years at 5% | 20 years at 5% | 30 years at 5% | 30 years at 7% |
-| --- | ---: | ---: | ---: | ---: |
-| €100 | €15,436 | €40,580 | €81,538 | €116,945 |
-| €500 | €77,182 | €202,902 | €407,688 | €584,726 |
+<div class="growth-scenarios" aria-label="Illustrative monthly investment growth scenarios">
+<div class="growth-card">
+<div class="growth-card-head"><span>€100/month</span><strong>€36,000 contributed over 30 years</strong></div>
+<div class="growth-metrics">
+<div><span>10 years · 5%</span><strong>€15,436</strong></div>
+<div><span>20 years · 5%</span><strong>€40,580</strong></div>
+<div><span>30 years · 5%</span><strong>€81,538</strong></div>
+<div><span>30 years · 7%</span><strong>€116,945</strong></div>
+</div>
+</div>
+<div class="growth-card">
+<div class="growth-card-head"><span>€500/month</span><strong>€180,000 contributed over 30 years</strong></div>
+<div class="growth-metrics">
+<div><span>10 years · 5%</span><strong>€77,182</strong></div>
+<div><span>20 years · 5%</span><strong>€202,902</strong></div>
+<div><span>30 years · 5%</span><strong>€407,688</strong></div>
+<div><span>30 years · 7%</span><strong>€584,726</strong></div>
+</div>
+</div>
+</div>
 
-At €100 a month, you contribute €36,000 yourself over 30 years. At €500 a month, you contribute €180,000.
-
-The difference between those contributions and the ending values is the modelled growth. Real returns arrive unevenly and can be negative for long periods.
+The difference between the amount contributed and the ending values is the modelled growth. Real returns arrive unevenly and can be negative for long periods.
 
 The [Compound Interest Calculator](/compound-interest-calculator/) is useful here because you can separate contributions from assumed growth.
 
