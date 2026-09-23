@@ -8,8 +8,6 @@ reviewed: 2026-09-23
 summary: 'A beginner-friendly Irish guide to direct shares, ETFs and investment funds: what you own, how diversification works, what fees matter and why Irish tax treatment can differ.'
 meta_description: 'Shares vs ETFs vs funds in Ireland: understand diversification, fees, ownership and the Irish tax questions to check before you invest.'
 tags: [shares, etfs, funds, investing, ireland, diversification, beginners]
-image: /static/images/live-to-100-wealth.webp
-image_alt: 'Editorial illustration representing long-term financial planning and investment growth.'
 related_tools:
 - investment-fee-calculator
 - capital-gains-tax-calculator
