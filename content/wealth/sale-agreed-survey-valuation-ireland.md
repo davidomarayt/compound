@@ -26,8 +26,6 @@ sources:
 <a href="/wealth/solicitor-conveyancing-stamp-duty-ireland/">Next →</a>
 </div>
 
-# Sale agreed: now investigate the property
-
 Sale agreed is not the finish line.
 
 It is the point where you stop evaluating the asking price and start evaluating the **asset you are actually about to own**.
