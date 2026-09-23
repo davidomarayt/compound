@@ -36,4 +36,12 @@ jobs:
           SITE_BASE_URL: https://compound.ie
           PREVIEW_BASE_URL: https://compound.ie
       - name: Run Lighthouse CI against representative mobile pages
+        id: lighthouse
+        continue-on-error: true
         run: npx --yes @lhci/cli@0.14.0 autorun --config=.lighthouserc.json
+      - name: Print Lighthouse diagnostics
+        if: always()
+        run: python scripts/lighthouse_diagnostics.py .lighthouseci
+      - name: Enforce Lighthouse thresholds
+        if: steps.lighthouse.outcome == 'failure'
+        run: exit 1
