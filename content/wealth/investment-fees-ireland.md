@@ -59,8 +59,8 @@ Assume:
 
 - €500 invested at the end of every month;
 - 30 years;
-- 7% gross annual return;
-- the stated fee reduces the annual return;
+- 7% effective gross annual return;
+- each annual fee is applied to the portfolio, so the net annual growth factor is the gross growth factor multiplied by one minus the fee;
 - no tax;
 - no inflation;
 - smooth returns.
@@ -69,14 +69,14 @@ The results are illustrative, not forecasts.
 
 | Annual fee | Illustrative ending value |
 |---|---:|
-| 0% | €609,985 |
-| 0.25% | €580,733 |
-| 1.00% | €502,258 |
-| 2.00% | €416,129 |
+| 0% | €584,726 |
+| 0.25% | €556,679 |
+| 1.00% | €481,147 |
+| 2.00% | €397,776 |
 
-The difference between 0% and 1% is about **€107,727**.
+The difference between 0% and 1% is about **€103,579**.
 
-The difference between 0.25% and 1% is about **€78,475**.
+The difference between 0.25% and 1% is about **€75,532**.
 
 Small percentages can represent large amounts when applied to a growing portfolio every year.
 
