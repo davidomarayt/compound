@@ -9,6 +9,7 @@
  <p>Short, sourced explanations of developments in Ireland and abroad — with the practical Irish angle separated from the headline.</p>
  <div class="news-principles"><span>Primary sources first</span><span>Irish context</span><span>No headline rewriting</span></div>
 </section>
+{% include "_preferred_source.html" %}
 <div class="section-heading news-list-heading"><div><p class="eyebrow">LATEST</p><h2>What we're following.</h2></div><span>{{ articles|length }} {% if articles|length == 1 %}story{% else %}stories{% endif %}</span></div>
 {% if articles %}
 <div class="story-grid news-story-grid">{% for a in articles %}{% include "_card.html" %}{% endfor %}</div>
