@@ -7,6 +7,8 @@ title: How much sleep do adults need? What the evidence says, by age
 slug: how-much-sleep-do-adults-need
 pillar: health
 date: '2026-09-13'
+reviewed: '2026-09-23'
+meta_description: 'How much sleep do adults need? Evidence-based guidance on 7–9 hours, age, insomnia and when to speak to a GP, with an Irish HSE context.'
 summary: Most adults do best on roughly 7 to 9 hours a night, but the range is wide and the "too much sleep" warning is mostly about illness showing up as sleep. How you function during the day is a better test than the number on your phone.
 tags:
 - sleep
@@ -264,6 +266,8 @@ approved_by: telegram:DavieXBT
 Most adults do best on somewhere between 7 and 9 hours of sleep a night. That is the range set by the National Sleep Foundation, a US body whose expert panel reviewed the evidence and recommended 7 to 9 hours for adults and a slightly tighter 7 to 8 hours for older adults ([National Sleep Foundation](https://pubmed.ncbi.nlm.nih.gov/29073398/)). The American Academy of Sleep Medicine and the Sleep Research Society, the two main professional bodies for sleep doctors and researchers in the US, put it as a floor rather than a range: adults should sleep 7 or more hours a night on a regular basis ([AASM/SRS consensus](https://pmc.ncbi.nlm.nih.gov/articles/PMC4434546/)).
 
 Ireland has no official adult figure. The HSE (Health Service Executive, the public health service) publishes sleep guidance for babies and children but not an hours-per-night target for adults, so the numbers above come from American guidance. They are consensus positions from expert panels, and the evidence behind them is mostly large observational studies, which show a pattern but cannot prove that sleep itself is the cause. What follows is what those studies found, how much weight they bear, and what to do if you are outside the range.
+
+Looking for younger age groups? See our [child and teenager sleep guide](/health/how-much-sleep-does-a-child-need/) for the recommended ranges from toddler years through age 18.
 
 ## How many hours of sleep do adults actually need?
 

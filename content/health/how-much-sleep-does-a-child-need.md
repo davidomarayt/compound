@@ -7,6 +7,8 @@ title: How much sleep does a child need? Hours by age, toddler to teen
 slug: how-much-sleep-does-a-child-need
 pillar: health
 date: '2026-09-13'
+reviewed: '2026-09-23'
+meta_description: 'How much sleep does your child need? Evidence-based sleep ranges for toddlers, school-age children and teenagers, with practical HSE guidance for Ireland.'
 summary: The recommended sleep ranges for children run from 11 to 14 hours for toddlers down to 8 to 10 hours for teenagers, and they are deliberately wide. Judge by how your child functions in the day, protect a regular bedtime and keep phones out of the bedroom; guidance from the HSE (Health Service Executive, Ireland's public health service) stops at age five, so older children fall back on international consensus.
 tags:
 - child-sleep
@@ -233,6 +235,8 @@ approved_by: auto:always
 The recommended amount is a range, and it is wider than most parents expect. The American Academy of Sleep Medicine (AASM, the professional body for sleep doctors in the United States) sets out consensus figures of 11 to 14 hours in every 24 for children aged 1 to 2, 10 to 13 hours for ages 3 to 5, 9 to 12 hours for ages 6 to 12 and 8 to 10 hours for teenagers aged 13 to 18 ([AASM consensus statement](https://pubmed.ncbi.nlm.nih.gov/27707447/)). For children under six, naps count towards the total.
 
 Those ranges were agreed by an expert panel after reviewing 864 published papers, not measured in a trial ([AASM](https://pubmed.ncbi.nlm.nih.gov/27707447/)). They describe what suits most healthy children, not a number your child must hit. With a three-hour spread at every age, the more useful question is whether your child is functioning well during the day. Below is how to judge that, what the evidence says short sleep does, why teenagers drift late, and where guidance from the HSE (Health Service Executive, Ireland's public health service) runs out.
+
+For adult sleep ranges and insomnia guidance, see our separate [adult sleep guide](/health/how-much-sleep-do-adults-need/).
 
 ## How many hours of sleep does a child need at each age?
 

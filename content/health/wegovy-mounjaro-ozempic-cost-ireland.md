@@ -1,8 +1,10 @@
 ---
 title: 'How much do Wegovy, Mounjaro and Ozempic cost in Ireland?'
+seo_title: 'Wegovy, Mounjaro & Ozempic Prices in Ireland (2026)'
 slug: wegovy-mounjaro-ozempic-cost-ireland
 pillar: health
 date: '2026-09-14'
+reviewed: '2026-09-23'
 draft: false
 summary: 'The starting price is only part of the bill. An Irish guide to pharmacy prices, dose changes, public funding and the cost of staying on treatment.'
 meta_description: 'Compare advertised Irish Wegovy, Mounjaro and Ozempic prices, dose-related costs and HSE funding. Dated sources and practical budgeting examples.'
@@ -130,4 +132,4 @@ If cost makes continuation difficult, our [stopping-treatment guide](/health/sto
 
 We used pharmacies’ own public listings as evidence of their advertised prices, not as independent evidence of efficacy or safety. Clinical distinctions come from the EMA; the funding position comes from the HSE. We did not telephone pharmacies, verify stock or conduct an exhaustive market survey. Conflicting product descriptions are flagged rather than treated as confirmed pack details.
 
-No affiliate or purchase-tracking links are used in this draft. Price tables should be checked again immediately before publication and whenever the article is updated.
+No affiliate or purchase-tracking links are used in this article. Price tables should be checked again immediately before publication and whenever the article is updated.
