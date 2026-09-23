@@ -417,6 +417,31 @@ It is **know exactly what you are paying and what you are receiving for it**.
 
 Advice, tax planning, financial planning and behavioural support can have value. Hidden or poorly understood charges do not become harmless because they are quoted as a small percentage.
 
+## How to buy shares in Ireland
+
+The mechanical process is simple. The decisions around it are not.
+
+A typical route is:
+
+1. open an account with a regulated broker or investment firm;
+2. complete identity and tax-residency checks;
+3. transfer euro to the account;
+4. search for the exact security using its name, ticker and preferably ISIN;
+5. check the trading currency and any foreign-exchange cost;
+6. choose the order type;
+7. confirm the total dealing cost; and
+8. keep the contract note and tax records.
+
+For a beginner, the most important safety check is the identity of the security.
+
+Two investments can have almost identical names while having different domiciles, currencies, legal structures or tax treatment. A ticker symbol is also not always unique across exchanges.
+
+If you are buying a fund or ETF, check the fund's legal name and domicile before assuming the tax treatment.
+
+A market order prioritises execution and can fill at a different price from the last quote. A limit order sets the maximum price you are willing to pay, but it may not execute.
+
+Those mechanics matter, but they matter less than the bigger question: whether the investment belongs in your plan at all.
+
 ## How to choose a broker or investment provider
 
 A beginner can lose weeks comparing apps while ignoring more important questions.
@@ -493,6 +518,21 @@ Three variables matter:
 3. **how much volatility you can tolerate without abandoning the plan.**
 
 A person investing €100 every month for 20 years has a very different experience from someone investing €20,000 once and watching the market every hour.
+
+### What €100 or €500 a month can become
+
+The table below is an illustration of compounding, not a return forecast.
+
+It assumes contributions are made at the end of every month, returns are smooth and constant, and there are no taxes, fees or inflation.
+
+| Monthly contribution | 10 years at 5% | 20 years at 5% | 30 years at 5% | 30 years at 7% |
+| --- | ---: | ---: | ---: | ---: |
+| €100 | €15,436 | €40,580 | €81,538 | €116,945 |
+| €500 | €77,182 | €202,902 | €407,688 | €584,726 |
+
+At €100 a month, you contribute €36,000 yourself over 30 years. At €500 a month, you contribute €180,000.
+
+The difference between those contributions and the ending values is the modelled growth. Real returns arrive unevenly and can be negative for long periods.
 
 The [Compound Interest Calculator](/compound-interest-calculator/) is useful here because you can separate contributions from assumed growth.
 
@@ -622,6 +662,21 @@ The cash flow, tax relief, access, taxation during accumulation and taxation at 
 That is why the **wrapper decision can matter as much as the fund decision**.
 
 If you are comparing personal pension contributions, use the [Pension Tax Relief Calculator](/pension-tax-relief-calculator/) and read our [pension tax relief guide](/wealth/pension-tax-relief-ireland-how-to-claim/).
+
+## What is the best way to invest money in Ireland?
+
+There is no single best investment for every person.
+
+A better sequence is:
+
+- **money needed soon:** prioritise access and the risk of losing capital;
+- **retirement money:** compare pension tax relief, employer contributions or State top-ups and access restrictions;
+- **long-term taxable money:** compare diversification, tax regime, fees and record-keeping;
+- **speculative money:** decide in advance how much you can lose without affecting the plan.
+
+The best structure is therefore the one that fits the goal after tax, fees, risk and access are considered together.
+
+A product cannot be judged from its historical return alone.
 
 ## Investing mistakes that are especially expensive in Ireland
 
