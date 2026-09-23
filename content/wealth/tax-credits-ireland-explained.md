@@ -18,6 +18,7 @@ tags:
 related_tools:
 - income-tax-calculator
 - take-home-pay-calculator
+- self-employed-tax-calculator-ireland
 - rent-tax-credit-calculator
 sources:
 - title: 'Revenue: Tax credits (calculating your income tax)'
@@ -387,3 +388,8 @@ Revenue's own advice is blunt: "I encourage all PAYE taxpayers to log on to Reve
 5. Put 31 December 2026 in your diary as the last day for 2022.
 
 Expect a check rather than a windfall. The standard credits are usually applied already, and a return can show an underpayment as easily as a refund. But the amounts are large enough, and the deadline firm enough, that not looking is the one choice that guarantees you never find out.
+
+## Self-employed? The credit is only one part of the bill
+
+A sole trader can qualify for the Earned Income Credit rather than the PAYE Employee Tax Credit, but the final annual liability also depends on taxable profit, Income Tax bands, USC and Class S PRSI. The [Self-Employed Tax Calculator Ireland](/self-employed-tax-calculator-ireland/) puts those pieces together and shows an estimated monthly tax reserve for 2026.
+
