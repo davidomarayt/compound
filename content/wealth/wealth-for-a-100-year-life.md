@@ -18,6 +18,7 @@ image_credit: 'Illustration: Compound.'
 related_tools:
 - lifetime-cost-calculator
 - pension-projection-calculator
+- pension-lump-sum-calculator-ireland
 - myfuturefund-calculator
 sources:
   - id: 1
@@ -202,3 +203,8 @@ At a fuller review, ask: Which income is confirmed? Which costs are missing? Wha
 If the immediate problem is debt or making essential payments, start there. **MABS offers free, independent and confidential money advice and budgeting support.** [MABS (11)](https://www.mabs.ie/about/). A long horizon should not make today's pressure feel like a personal failure.
 
 The purpose of this work is to give your future self more understandable choices. Those choices connect directly with [health and capability in Part 3](/health/health-for-a-100-year-life/): where you live, what support is available and whether everyday life leaves room to look after yourself.
+
+## Treat the retirement lump sum as part of the plan, not free extra money
+
+A retirement lump sum can look separate from the rest of a long-life plan, but it still has to serve the same future. If you are considering a personal pension, the [Pension Lump Sum Calculator Ireland](/pension-lump-sum-calculator-ireland/) can estimate the 25% lump sum and show how previous retirement lump sums use the €200,000 lifetime tax-free allowance. The useful question is not only how much can be taken, but what job that money needs to do over the decades that follow.
+
