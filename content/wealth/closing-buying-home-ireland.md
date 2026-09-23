@@ -30,8 +30,6 @@ sources:
 <span>Chapter 9 of 9</span>
 </div>
 
-# Closing day: when the house actually becomes yours
-
 The emotional moment is getting the keys.
 
 The legal and financial moment is closing.
