@@ -1132,18 +1132,6 @@ def build_site(settings: Settings) -> dict:
                     ],
                 },
             ]
-            if tool.get("faq"):
-                graph.append({
-                    "@type": "FAQPage",
-                    "mainEntity": [
-                        {
-                            "@type": "Question",
-                            "name": item["question"],
-                            "acceptedAnswer": {"@type": "Answer", "text": item["answer"]},
-                        }
-                        for item in tool["faq"]
-                    ],
-                })
             tool_jsonld = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
             tool_template = "debt_repayment.html" if tool["slug"] == "debt-repayment-calculator" else "tool.html"
             _write(out / tool["slug"] / "index.html", env.get_template(tool_template).render(
