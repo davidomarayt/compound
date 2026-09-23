@@ -251,6 +251,10 @@ They are not.
 
 Chapter 3 breaks down how each works and what Irish investors need to check.
 
+## Continue with the pension system
+
+If retirement is the goal, the next step is the dedicated [Pensions in Ireland 101 course](/wealth/pensions-in-ireland/), which covers pension types, tax relief, contribution levels, funds and fees, transfers, retirement access and lump-sum tax.
+
 ## Frequently asked questions
 
 ### Is a pension better than investing in shares in Ireland?
