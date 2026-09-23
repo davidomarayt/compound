@@ -26,8 +26,6 @@ sources:
 <a href="/wealth/closing-buying-home-ireland/">Next →</a>
 </div>
 
-# Mortgage protection, insurance and drawdown
-
 A mortgage can be approved and still not be ready to draw down.
 
 The final stage is a checklist.
