@@ -2064,3 +2064,47 @@ html,body{max-width:100%;overflow-x:clip}
 .site-main>*{min-width:0}
 svg,canvas,video{max-width:100%}
 input,select,textarea,button{max-width:100%}
+
+
+/* Google Preferred Sources */
+.preferred-source-card{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:28px;
+  align-items:center;
+  margin:38px 0;
+  padding:24px 26px;
+  border:1px solid var(--line);
+  background:var(--surface);
+}
+.preferred-source-card .eyebrow{margin-bottom:7px;color:var(--news)}
+.preferred-source-card strong{
+  display:block;
+  font:400 26px/1.15 var(--serif);
+  color:var(--ink);
+  margin-bottom:7px;
+}
+.preferred-source-card p:not(.eyebrow){
+  margin:0;
+  max-width:570px;
+  font-size:13px;
+  line-height:1.65;
+  color:var(--ink-2);
+}
+.preferred-source-control{
+  min-width:190px;
+  min-height:48px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+}
+@media(max-width:620px){
+  .preferred-source-card{
+    grid-template-columns:1fr;
+    gap:18px;
+    padding:21px;
+    margin:30px 0;
+  }
+  .preferred-source-card strong{font-size:24px}
+  .preferred-source-control{justify-content:flex-start;min-width:0}
+}
