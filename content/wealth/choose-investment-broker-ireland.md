@@ -8,8 +8,6 @@ reviewed: 2026-09-23
 summary: 'A neutral framework for comparing investment brokers and platforms in Ireland: regulation, custody, compensation schemes, fees, FX, tax records, transfers and recurring investing.'
 meta_description: 'Compare investment brokers in Ireland by regulation, custody, fees, FX costs, tax records, transfers and investor protection—not just free trades.'
 tags: [broker, investment platform, ireland, investing, fees, regulation, beginners]
-image: /static/images/budget-dublin.jpg
-image_alt: 'Dublin cityscape representing investing and financial services in Ireland.'
 related_tools:
 - investment-fee-calculator
 - compound-interest-calculator
