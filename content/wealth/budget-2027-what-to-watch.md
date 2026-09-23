@@ -3,241 +3,207 @@ image: /static/images/budget-dublin.jpg
 image_alt: Samuel Beckett Bridge and the River Liffey in Dublin.
 image_credit: Yanhao Fang / Unsplash
 image_source: https://unsplash.com/photos/samuel-beckett-bridge-and-dublin-cityscape-reflected-in-the-liffey-bjROiiuUXwA
-title: 'Budget 2027: what to watch, and what it could mean for your household'
+title: 'Budget 2027 Ireland: Tax Cuts, Rent Credit & What We Know So Far'
 slug: budget-2027-what-to-watch
 pillar: wealth
-date: '2026-09-14'
-summary: Tax cuts, childcare fees and the cost of keeping a home warm are shaping
-  the October Budget. Here is what is settled, what is still being negotiated, and
-  how to judge the announcements against your own bills.
-meta_description: 'An Irish household guide to Budget 2027: income tax, childcare,
-  energy, pensions and housing. Confirmed plans, proposals and practical examples,
-  checked 14 September 2026.'
+date: '2026-09-23'
+summary: Budget 2027 is due on 6 October. Here is what has been confirmed, what is still being negotiated, and what the tax, rent, energy and childcare measures could mean for Irish households.
+meta_description: 'Budget 2027 Ireland: latest on income tax cuts, the Rent Tax Credit, fuel and energy measures, childcare and household finances before 6 October.'
 tags:
 - budget-2027
-- cost-of-living
+- budget-2027-ireland
 - income-tax
+- rent-tax-credit
+- cost-of-living
 - childcare
-- household-finances
 related_tools:
 - take-home-pay-calculator
 - childcare-return-to-work-calculator
 - myfuturefund-calculator
 sources:
-- title: 'Department of Finance: Summer Economic Statement 2026 announcement'
+- title: 'Department of Finance: Summer Economic Statement 2026'
   url: https://www.gov.ie/en/department-of-finance/press-releases/t%C3%A1naiste-simon-harris-and-minister-jack-chambers-publish-summer-economic-statement-2026/
-- title: 'CSO: Consumer Price Index, August 2026 (10 September 2026)'
-  url: https://www.cso.ie/en/releasesandpublications/ep/p-cpi/consumerpriceindexaugust2026/
-- title: 'Davy: Budget 2027 expectations (4 September 2026; commentary, not Government
-    policy)'
-  url: https://www.davy.ie/market-and-insights/insights/budget-2027.html
+- title: 'RTÉ: Rent tax credit to be increased in Budget (21 September 2026)'
+  url: https://www.rte.ie/news/2026/0921/1592282-budget-politics-ireland/
+- title: 'RTÉ: €1.5 billion for tax cuts in Budget - Summer Economic Statement'
+  url: https://www.rte.ie/news/2026/0722/1584482-summer-economic-statement/
+- title: 'RTÉ: Government considering higher income-tax threshold'
+  url: https://www.rte.ie/news/politics/2026/0615/1578393-budget-priorities/
+- title: 'RTÉ: Government may introduce tax break for childminders'
+  url: https://www.rte.ie/news/politics/2026/0919/1592192-politics-childminders-harris/
 - title: 'Revenue: Tax rates, bands and reliefs for 2026'
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx
-- title: 'Revenue: How tax credits work'
-  url: https://www.revenue.ie/en/jobs-and-pensions/calculating-your-income-tax/tax-credits.aspx
-- title: 'Department of Social Protection: PRSI Class A rates'
-  url: https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/
-- title: 'Irish Examiner: Ministers on the tax package and childcare (7 September
-    2026)'
-  url: https://www.irishexaminer.com/news/politics/arid-41907940.html
-- title: 'RTÉ: Government rules out universal energy credits (7 September 2026)'
-  url: https://www.rte.ie/news/ireland/2026/0907/1590548-budget-harris/
-- title: 'Social Justice Ireland: Summer Economic Statement analysis and proposals'
-  url: https://www.socialjustice.ie/article/summer-economic-statement-2026
 - title: 'Revenue: Rent Tax Credit overview'
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx
-- title: 'Revenue: Rent Tax Credit amounts'
-  url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/how-much-claim.aspx
-- title: 'Revenue: Mortgage Interest Tax Credit amounts'
-  url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/mortgage/how-much-can-you-claim.aspx
+- title: 'Department of Social Protection: PRSI Class A rates'
+  url: https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/
 charts: []
 ---
-<p><em>Pre-Budget analysis. Information checked on 14 September 2026. Proposals and illustrative calculations below are not announced entitlements.</em></p>
+<p><em>Updated 23 September 2026. Budget 2027 will be delivered on Tuesday, 6 October 2026. This page separates announced Government positions from proposals and pre-Budget speculation, and will be updated as measures are confirmed.</em></p>
 
-<p>The Budget arrives as one big number. At home, it arrives in smaller pieces: a payslip, a childcare invoice, a winter electricity bill.</p>
+<p><strong>Budget 2027 is now less than two weeks away</strong>, and the picture is becoming clearer. The Government has set aside <strong>€1.5 billion for tax measures</strong>, Taoiseach Micheál Martin has said the <strong>Rent Tax Credit will increase</strong>, and ministers are examining income-tax, fuel, energy, childcare and other cost-of-living measures.</p>
 
-<p>That is the useful way to approach <strong>Budget 2027, due on Tuesday, 6 October 2026</strong>. A tax cut can be welcome without making a difficult month comfortable. A service that costs less can matter more than the extra money in your pay. And a promise with a distant start date will not help with this winter’s bills. <a href="https://www.davy.ie/market-and-insights/insights/budget-2027.html" target="_blank" rel="noopener noreferrer">Budget date: Davy</a>.</p>
+<p>But many of the numbers that matter to individual households are still being negotiated. That means headlines such as “tax cuts worth hundreds” cannot yet be turned into a reliable personal saving for every worker.</p>
 
-<p>There is enough information to identify the main choices facing the Government. There is not yet enough to calculate a reliable “you will be €X better off” figure for every household.</p>
+<p>This guide tracks what is confirmed, what is under active consideration and what remains speculation — and explains what each measure could mean for your take-home pay and household budget.</p>
 
-<h2 id="budget-section-1">What is already on the table?</h2>
-
-<p>The Summer Economic Statement set out an <strong>€8.5 billion package</strong>: €5.9 billion in additional current spending, €1.1 billion in additional capital spending and €1.5 billion for tax measures. That is the planned framework for negotiations, rather than a list of agreed personal benefits. <a href="https://www.gov.ie/en/department-of-finance/press-releases/t%C3%A1naiste-simon-harris-and-minister-jack-chambers-publish-summer-economic-statement-2026/" target="_blank" rel="noopener noreferrer">Department of Finance</a>.</p>
-
-<figure class="chart chart-bar"><figcaption class="chart-title">The planned €8.5 billion package <span class="chart-unit">(€ billion)</span></figcaption><div class="budget-static-chart" aria-hidden="true"><div class="budget-static-row"><div class="budget-static-label"><span>Current spending</span><strong>€5.9bn</strong></div><div class="budget-static-bar"><span style="width:100.000000%"></span></div></div><div class="budget-static-row"><div class="budget-static-label"><span>Tax measures</span><strong>€1.5bn</strong></div><div class="budget-static-bar"><span style="width:25.423729%"></span></div></div><div class="budget-static-row"><div class="budget-static-label"><span>Capital spending</span><strong>€1.1bn</strong></div><div class="budget-static-bar"><span style="width:18.644068%"></span></div></div></div><table class="chart-table"><caption class="sr-only">The planned €8.5 billion package</caption><tbody><tr><th scope="row">Current spending</th><td>€5.9bn</td></tr><tr><th scope="row">Tax measures</th><td>€1.5bn</td></tr><tr><th scope="row">Capital spending</th><td>€1.1bn</td></tr></tbody></table><p class="chart-note">Summer Economic Statement allocations for Budget 2027, not final Budget measures. These are additions and tax measures, not total annual State spending. Graphic: Compound. <a href="https://www.gov.ie/en/department-of-finance/press-releases/t%C3%A1naiste-simon-harris-and-minister-jack-chambers-publish-summer-economic-statement-2026/" rel="noopener noreferrer" target="_blank">Source</a></p></figure>
-
-<p>Current spending supports the day-to-day running of services and payments. Capital spending funds assets such as buildings and infrastructure. Neither is a pot that can simply be divided by the population to estimate a household payout.</p>
-
-<p>Here is the distinction to keep in mind as the announcements approach:</p>
+<h2>Budget 2027 Ireland: the key facts</h2>
 
 <table>
 <thead>
-<tr>
-<th>Area</th>
-<th>Position before Budget day</th>
-<th>Detail that matters</th>
-</tr>
+<tr><th>Budget 2027 question</th><th>Latest position</th></tr>
 </thead>
 <tbody>
-<tr>
-<td>Income tax</td>
-<td>Ministers intend to deliver reductions; the precise mix remains unsettled.</td>
-<td>Bands, credits, eligibility and the start date.</td>
-</tr>
-<tr>
-<td>Childcare</td>
-<td>Fee reductions are a stated priority.</td>
-<td>The actual saving, covered hours and participating services.</td>
-</tr>
-<tr>
-<td>Universal energy credits</td>
-<td>Ruled out in the Government’s latest stated position.</td>
-<td>Whether targeted help or other energy measures emerge.</td>
-</tr>
-<tr>
-<td>Welfare and pensions</td>
-<td>Increases are being sought; final rates are not settled.</td>
-<td>Recurring rates, qualification rules and payment dates.</td>
-</tr>
-<tr>
-<td>Housing</td>
-<td>Watch both household reliefs and delivery funding.</td>
-<td>Who can claim relief, and when homes or services become available.</td>
-</tr>
+<tr><td>When is Budget 2027?</td><td><strong>Tuesday, 6 October 2026.</strong></td></tr>
+<tr><td>How large is the tax package?</td><td>The Summer Economic Statement allocated <strong>€1.5 billion</strong> for tax measures.</td></tr>
+<tr><td>Will the Rent Tax Credit increase?</td><td><strong>Yes.</strong> The Taoiseach has said it will increase, but the final amount has not yet been announced.</td></tr>
+<tr><td>Will income tax change?</td><td>The Government has committed to personal-tax changes. The exact mix of bands, credits and other measures remains unsettled.</td></tr>
+<tr><td>Will the 40% tax band rise?</td><td>An increase is being considered. No new threshold has yet been confirmed.</td></tr>
+<tr><td>Will there be electricity credits?</td><td>No final Budget decision has been announced. Government comments have pointed away from a repeat of broad universal supports, although energy measures remain under discussion.</td></tr>
+<tr><td>Are fuel measures possible?</td><td>Yes. Fuel excise and other energy-cost measures are being examined.</td></tr>
+<tr><td>Will childcare feature?</td><td>Childcare affordability is a stated Government priority, but final Budget measures are not yet settled.</td></tr>
 </tbody>
 </table>
 
-<p class="budget-caption">These positions draw on <a href="https://www.irishexaminer.com/news/politics/arid-41907940.html" target="_blank" rel="noopener noreferrer">ministerial reporting in the Irish Examiner</a>, <a href="https://www.rte.ie/news/ireland/2026/0907/1590548-budget-harris/" target="_blank" rel="noopener noreferrer">RTÉ’s energy-credit report</a> and <a href="https://www.socialjustice.ie/article/summer-economic-statement-2026" target="_blank" rel="noopener noreferrer">Social Justice Ireland’s proposals</a>. A campaign request should never be read as a Government commitment.</p>
+<h2>How big is Budget 2027?</h2>
 
-<h2 id="budget-section-2">Why a tax cut might not feel like a pay rise</h2>
+<p>The Government's Summer Economic Statement set out an overall <strong>€8.5 billion Budget package</strong>. That comprises €5.9 billion in additional current spending, €1.1 billion in additional capital spending and €1.5 billion for tax measures.</p>
 
-<p>The latest CSO release puts annual consumer-price inflation at <strong>3.7% in August 2026</strong>. Housing and energy costs, grouped with water and other fuels, were up 8.5%; transport was up 5.4%. These are national averages, not a prediction of anyone’s next bill. <a href="https://www.cso.ie/en/releasesandpublications/ep/p-cpi/consumerpriceindexaugust2026/" target="_blank" rel="noopener noreferrer">CSO</a>.</p>
+<figure class="chart chart-bar">
+<figcaption class="chart-title">Budget 2027 framework <span class="chart-unit">(€ billion)</span></figcaption>
+<div class="budget-static-chart" aria-hidden="true">
+<div class="budget-static-row"><div class="budget-static-label"><span>Current spending</span><strong>€5.9bn</strong></div><div class="budget-static-bar"><span style="width:100%"></span></div></div>
+<div class="budget-static-row"><div class="budget-static-label"><span>Tax measures</span><strong>€1.5bn</strong></div><div class="budget-static-bar"><span style="width:25.4%"></span></div></div>
+<div class="budget-static-row"><div class="budget-static-label"><span>Capital spending</span><strong>€1.1bn</strong></div><div class="budget-static-bar"><span style="width:18.6%"></span></div></div>
+</div>
+<table class="chart-table"><caption class="sr-only">Budget 2027 framework</caption><tbody><tr><th scope="row">Current spending</th><td>€5.9bn</td></tr><tr><th scope="row">Tax measures</th><td>€1.5bn</td></tr><tr><th scope="row">Capital spending</th><td>€1.1bn</td></tr></tbody></table>
+<p class="chart-note">Summer Economic Statement framework rather than final Budget measures. <a href="https://www.gov.ie/en/department-of-finance/press-releases/t%C3%A1naiste-simon-harris-and-minister-jack-chambers-publish-summer-economic-statement-2026/" target="_blank" rel="noopener noreferrer">Source: Department of Finance</a>.</p>
+</figure>
 
-<figure class="chart chart-bar"><figcaption class="chart-title">The price pressure behind the Budget <span class="chart-unit">(% annual change)</span></figcaption><div class="budget-static-chart" aria-hidden="true"><div class="budget-static-row"><div class="budget-static-label"><span>Education services</span><strong>+8.9%</strong></div><div class="budget-static-bar"><span style="width:100.000000%"></span></div></div><div class="budget-static-row"><div class="budget-static-label"><span>Housing &amp; energy</span><strong>+8.5%</strong></div><div class="budget-static-bar"><span style="width:95.505618%"></span></div></div><div class="budget-static-row"><div class="budget-static-label"><span>Transport</span><strong>+5.4%</strong></div><div class="budget-static-bar"><span style="width:60.674157%"></span></div></div><div class="budget-static-row"><div class="budget-static-label"><span>Overall CPI</span><strong>+3.7%</strong></div><div class="budget-static-bar"><span style="width:41.573034%"></span></div></div></div><table class="chart-table"><caption class="sr-only">The price pressure behind the Budget</caption><tbody><tr><th scope="row">Education services</th><td>+8.9%</td></tr><tr><th scope="row">Housing &amp; energy</th><td>+8.5%</td></tr><tr><th scope="row">Transport</th><td>+5.4%</td></tr><tr><th scope="row">Overall CPI</th><td>+3.7%</td></tr></tbody></table><p class="chart-note">August 2025 to August 2026. Selected CSO categories shown alongside the overall CPI; these categories are not an exhaustive breakdown. The housing category includes water, electricity, gas and other fuels. Graphic: Compound. <a href="https://www.cso.ie/en/releasesandpublications/ep/p-cpi/consumerpriceindexaugust2026/" rel="noopener noreferrer" target="_blank">Source</a></p></figure>
+<p>The €1.5 billion tax figure is particularly important for workers because it sets the broad envelope within which income-tax and other tax changes are being negotiated. It does <strong>not</strong> mean €1.5 billion will be distributed evenly between taxpayers.</p>
 
-<p>Your own mix of expenses matters. Someone paying for childcare and a long commute faces different pressures from a pensioner living alone. When assessing the Budget, compare the money coming in with the costs you actually face, rather than treating the inflation rate as your personal household figure.</p>
+<h2>Income tax: what could change?</h2>
 
-<h2 id="budget-section-3">Income tax: the band and the credit do different jobs</h2>
+<p>For 2026, a single person without qualifying children pays income tax at 20% on the first <strong>€44,000</strong> of taxable income and 40% on income above that level. Different bands apply to some married couples, civil partners and lone parents. <a href="https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx" target="_blank" rel="noopener noreferrer">Revenue publishes the current bands and credits here</a>.</p>
 
-<p>For 2026, a single person without qualifying children pays income tax at 20% on the first <strong>€44,000 of taxable income</strong>, and 40% on the balance. The higher rate does not apply to every euro once you cross the threshold. Other family circumstances have different bands. <a href="https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx" target="_blank" rel="noopener noreferrer">Revenue’s rates table</a>.</p>
+<p>Minister for Finance Simon Harris said in June that the Government was considering increasing the point at which workers enter the higher 40% rate. That remains a live Budget option, rather than a confirmed new threshold.</p>
 
-<p>An increase to €46,000 has featured in pre-Budget speculation, including Davy’s analysis. <strong>It is an option being discussed, not an announced threshold.</strong> <a href="https://www.davy.ie/market-and-insights/insights/budget-2027.html" target="_blank" rel="noopener noreferrer">Davy</a>.</p>
-
-<p>The table below shows what that one change would mean in isolation.</p>
+<p>Why does the band matter? If the standard-rate band were increased, some income currently taxed at 40% would instead be taxed at 20%. The maximum benefit would depend on the size of the increase and whether your taxable income is high enough to use the wider band.</p>
 
 <table>
-<thead>
-<tr>
-<th>Annual taxable income</th>
-<th style="text-align: right;">Annual income-tax saving</th>
-<th style="text-align: right;">Monthly equivalent</th>
-</tr>
-</thead>
+<thead><tr><th>Illustrative change</th><th>Maximum annual income-tax saving</th><th>Monthly equivalent</th></tr></thead>
 <tbody>
-<tr>
-<td>€35,000</td>
-<td style="text-align: right;">€0</td>
-<td style="text-align: right;">€0</td>
-</tr>
-<tr>
-<td>€44,000</td>
-<td style="text-align: right;">€0</td>
-<td style="text-align: right;">€0</td>
-</tr>
-<tr>
-<td>€45,000</td>
-<td style="text-align: right;">€200</td>
-<td style="text-align: right;">€16.67</td>
-</tr>
-<tr>
-<td>€46,000</td>
-<td style="text-align: right;">€400</td>
-<td style="text-align: right;">€33.33</td>
-</tr>
-<tr>
-<td>€60,000</td>
-<td style="text-align: right;">€400</td>
-<td style="text-align: right;">€33.33</td>
-</tr>
+<tr><td>Band rises by €500</td><td>€100</td><td>€8.33</td></tr>
+<tr><td>Band rises by €1,000</td><td>€200</td><td>€16.67</td></tr>
+<tr><td>Band rises by €2,000</td><td>€400</td><td>€33.33</td></tr>
+<tr><td>Band rises by €3,000</td><td>€600</td><td>€50.00</td></tr>
 </tbody>
 </table>
 
-<p class="budget-caption"><em>Compound illustration, not a Budget forecast. Assumes a single person without qualifying children, unchanged taxable income, sufficient income-tax liability, and only a €2,000 increase in the standard-rate band. Saving = 20% × the part of taxable income between €44,000 and €46,000. USC, PRSI, other credits and other Budget changes are excluded. Monthly amounts are annual savings divided by 12.</em></p>
+<p class="budget-caption"><em>Illustration only. It assumes the full increase would otherwise have been taxed at 40% rather than 20%, and excludes USC, PRSI, credits and other Budget changes.</em></p>
 
 <section class="budget-calculator" aria-labelledby="budget-calculator-title" id="budget-tax-calculator">
- <p class="budget-calculator-kicker">TRY THE ILLUSTRATION</p>
- <h3 id="budget-calculator-title">What could a wider tax band mean for you?</h3>
- <p class="budget-calculator-intro">Explore a change from €44,000 to €46,000. This is a hypothetical income-tax saving, not your confirmed Budget 2027 outcome.</p>
- <label for="budget-taxable-pay">Annual taxable pay (€)</label>
- <input id="budget-taxable-pay" type="number" inputmode="decimal" min="0" step="any" autocomplete="off" placeholder="For example, 45000" aria-describedby="budget-pay-help budget-assumptions">
- <p id="budget-pay-help" class="budget-caption">Use annual pay after pension deductions that reduce income tax. No need to enter your name or contact details.</p>
- <p class="budget-calculator-result" role="status" aria-live="polite" aria-atomic="true"><span id="budget-result">Enter an amount to see the illustration.</span></p>
- <p id="budget-assumptions" class="budget-caption">Assumes a single person without qualifying children, sufficient income-tax liability and no change except the standard-rate band. Excludes USC, PRSI, other credits, benefits and fees. Monthly savings are annual savings divided by 12.</p>
- <p class="budget-caption">Your entry stays in this page. This calculator does not send or save it.</p>
+<p class="budget-calculator-kicker">BUDGET 2027 PAY ILLUSTRATION</p>
+<h3 id="budget-calculator-title">What could a wider 40% tax band mean for you?</h3>
+<p class="budget-calculator-intro">The example below models a move from the current €44,000 single-person band to €46,000. That €46,000 figure is an illustration, not an announced Budget 2027 threshold.</p>
+<label for="budget-taxable-pay">Annual taxable pay (€)</label>
+<input id="budget-taxable-pay" type="number" inputmode="decimal" min="0" step="any" autocomplete="off" placeholder="For example, 50000" aria-describedby="budget-pay-help budget-assumptions">
+<p id="budget-pay-help" class="budget-caption">Enter annual taxable pay. Your entry stays on this page and is not saved.</p>
+<p class="budget-calculator-result" role="status" aria-live="polite" aria-atomic="true"><span id="budget-result">Enter an amount to see the illustration.</span></p>
+<p id="budget-assumptions" class="budget-caption">Assumes a single taxpayer, a €2,000 increase in the standard-rate band and no other change. Excludes USC, PRSI, credits and other Budget measures.</p>
 </section>
 
-<p>Tax credits work differently: they reduce the income-tax bill itself. A €100 increase in an ordinary, non-refundable credit could reduce that bill by up to €100, but somebody with no remaining income-tax liability would not receive an extra €100 payment. <a href="https://www.revenue.ie/en/jobs-and-pensions/calculating-your-income-tax/tax-credits.aspx" target="_blank" rel="noopener noreferrer">Revenue’s explanation</a>.</p>
+<p>For your full current position rather than a single hypothetical change, use Compound's <strong>Take-Home Pay Calculator</strong>. Once the final Budget measures are published, this page can compare the confirmed 2027 position with 2026 on the same basis.</p>
 
-<p>For a lower-paid worker, the balance between credits, USC changes and spending supports may therefore matter more than a higher 40% threshold. When a headline promises savings “for workers”, look for the income and household assumptions underneath it.</p>
+<h2>Rent Tax Credit: an increase is now confirmed</h2>
 
-<h2 id="budget-section-4">Check the deduction already due before Budget day</h2>
+<p>This is one of the clearest Budget 2027 developments so far. On 21 September, Taoiseach Micheál Martin said the <strong>Rent Tax Credit will be increased in the Budget</strong>.</p>
 
-<p>There is another payslip change to keep separate from the October speech. The published Class A schedule increases the employee PRSI rate from <strong>4.2% to 4.35% on 1 October 2026</strong>, with exemptions and credits applying at lower weekly earnings. This is an already scheduled change. <a href="https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/" target="_blank" rel="noopener noreferrer">Department of Social Protection</a>.</p>
+<p>The current maximum for 2026 is up to <strong>€1,000 for an individual</strong> or €2,000 for a jointly assessed married couple or civil partners, subject to Revenue's conditions and sufficient income-tax liability.</p>
 
-<p>For someone earning a steady €50,000 a year, fully subject to that rate, the 0.15 percentage-point increase is approximately <strong>€6.25 a month</strong>: €50,000 × 0.0015 ÷ 12. That illustrates the rate change alone; it is not a calculation of the overall difference between 2026 and 2027 take-home pay.</p>
+<p>The crucial unanswered question is the size of the Budget 2027 increase. Until that number is formally announced, renters should not build a specific additional amount into their finances.</p>
 
-<p>The practical point is to read the whole payslip. An income-tax saving and a change in another deduction can happen together.</p>
+<p>We are tracking this separately in our <a href="/wealth/rent-tax-credit-budget-2027-ireland/">Budget 2027 Rent Tax Credit guide</a>, including the existing rules and what an increase would mean in practice.</p>
 
-<h2 id="budget-section-5">Childcare: ask what will happen to your invoice</h2>
+<h2>Fuel, petrol, diesel and home heating</h2>
 
-<p>Ministers have identified childcare affordability as a priority. The Government’s €200-a-month-per-child ambition is a commitment for the coalition’s lifetime; it should not be treated as a confirmed universal bill from January. Reporting in September describes a push for a substantial reduction, with the detail still to be agreed. <a href="https://www.irishexaminer.com/news/politics/arid-41907940.html" target="_blank" rel="noopener noreferrer">Irish Examiner</a>.</p>
+<p>Fuel costs have become another active Budget issue. The Government is examining measures around fuel excise as ministers consider the cost of petrol, diesel and home heating.</p>
 
-<p>The questions for parents are quite specific. Does a measure reduce the provider’s fee, increase the subsidy, or both? Which hours and age groups count? Does the service have to participate in a particular scheme? When will the lower charge first appear?</p>
+<p>That could matter differently depending on how a measure is designed. A change in excise can affect the pump price directly; a targeted household payment works through household income; a change related to home-heating fuels affects households differently depending on whether they use oil, gas, electricity or another source.</p>
 
-<p>A simple illustration shows why the date matters. A €100 monthly reduction would save €1,200 over twelve months. If it began in September, it would save €400 during that calendar year. Neither amount is a prediction of the package.</p>
+<p>Until the Budget documents are published, treat individual proposed fuel measures as proposals rather than guaranteed savings.</p>
 
-<p>Availability matters too. A lower advertised fee is of limited use to a family still looking for a place that covers their working hours.</p>
+<h2>Will there be electricity credits in Budget 2027?</h2>
 
-<h2 id="budget-section-6">Energy: don’t put an unannounced credit into the winter budget</h2>
+<p>This remains one of the most searched Budget questions because households became accustomed to once-off electricity credits in earlier cost-of-living packages.</p>
 
-<p>RTÉ reported on 7 September that Taoiseach Micheál Martin had ruled out universal energy credits in the forthcoming Budget. That is the latest stated Government position used in this article, rather than a guarantee that every aspect of energy policy is settled. <a href="https://www.rte.ie/news/ireland/2026/0907/1590548-budget-harris/" target="_blank" rel="noopener noreferrer">RTÉ</a>.</p>
+<p>The Government's public position in early September pointed away from another broad universal credit. More recent Budget negotiations have continued to include energy-cost measures, so the safest position is that <strong>no new universal electricity credit is confirmed at the time of this update</strong>.</p>
 
-<p>Davy’s pre-Budget assessment identifies energy VAT, carbon-tax policy and home-efficiency supports as areas under consideration. Those possibilities still require decisions. <a href="https://www.davy.ie/market-and-insights/insights/budget-2027.html" target="_blank" rel="noopener noreferrer">Davy</a>.</p>
+<p>If an energy measure does appear, check whether it is universal or targeted, whether it is a once-off payment or recurring support, and when it actually reaches bills. Those details determine the real household value.</p>
 
-<p>For households, the mechanism matters. A bill credit offers short-term relief; a recurring support changes the ongoing cost. An insulation grant may help over time but can involve an upfront contribution and a wait for work. Renters may have less control over improvements to their home.</p>
+<h2>Childcare and childminders</h2>
 
-<p>Watch who qualifies, how quickly help arrives and whether it applies to the fuel you actually use. Until a payment is confirmed, it is safer to leave it out of the money you are counting on for winter.</p>
+<p>Childcare costs are also expected to feature heavily in Budget 2027. Ministers have repeatedly described affordability as a priority, but the final structure of any fee or subsidy changes has not yet been announced.</p>
 
-<h2 id="budget-section-7">Pensions and welfare: recurring support deserves attention</h2>
+<p>Simon Harris has also said the Government may introduce a tax break intended to encourage more childminders into the formal system. Again, that is a measure under consideration rather than a final Budget entitlement.</p>
 
-<p>A cost-of-disability payment is among the measures the Taoiseach has said will be considered. The amount and eligibility are not settled. <a href="https://www.irishexaminer.com/news/politics/arid-41907940.html" target="_blank" rel="noopener noreferrer">Irish Examiner</a>.</p>
+<p>For parents, the most useful question on Budget Day will not simply be “how much is being spent?” but <strong>how much will my actual monthly childcare bill change, from what date, and under what eligibility rules?</strong></p>
 
-<p>There is also pressure for higher recurring payments. Social Justice Ireland has called for a €15 increase in core weekly social welfare rates for 2027, alongside changes including refundable tax credits and better support for vulnerable households. <strong>These are the organisation’s recommendations, not agreed Budget measures.</strong> <a href="https://www.socialjustice.ie/article/summer-economic-statement-2026" target="_blank" rel="noopener noreferrer">Social Justice Ireland</a>.</p>
+<h2>PRSI is changing before Budget Day</h2>
 
-<p>A permanent weekly increase and a lump sum solve different problems. Illustratively, €10 a week is €520 across 52 weeks. A one-off €200 payment is €200, however prominently it features in the announcement. Timing and eligibility can alter what arrives in the first year.</p>
+<p>There is an already-scheduled payslip change worth separating from the Budget itself. The published Class A schedule increases the main employee PRSI rate from <strong>4.2% to 4.35% from 1 October 2026</strong>, with different treatment and credits applying at lower earnings. <a href="https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/" target="_blank" rel="noopener noreferrer">Department of Social Protection</a>.</p>
 
-<p>For a pensioner living alone, a carer or a disabled person, the relevant package may also include allowances and access to services. Check those details as well as the headline weekly rate. Look carefully at whether a means-test change brings more people into a scheme or increases payments for existing recipients.</p>
+<p>For someone earning €50,000 a year and fully subject to that rate, a 0.15 percentage-point increase is approximately €75 across a full year, or €6.25 per month. That is a simplified illustration of the rate change alone.</p>
 
-<h2 id="budget-section-8">Housing: watch existing reliefs as well as new promises</h2>
+<p>This is why the final Budget effect should be calculated across <strong>income tax, USC, PRSI and any household supports together</strong>, rather than from the headline income-tax measure alone.</p>
 
-<p>The Rent Tax Credit already runs to <strong>2028</strong>. For 2026, the maximum is €1,000 for an individual or €2,000 for jointly assessed married couples or civil partners, subject to the rules and sufficient income-tax liability. That existing entitlement is not a fresh Budget 2027 saving. <a href="https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx" target="_blank" rel="noopener noreferrer">Revenue overview</a>; <a href="https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/how-much-claim.aspx" target="_blank" rel="noopener noreferrer">amounts</a>.</p>
+<h2>Other Budget 2027 measures to watch</h2>
 
-<p><strong>Update, 21 September:</strong> Taoiseach Micheál Martin has now said the Rent Tax Credit will be increased in the Budget, although the new maximum has not yet been announced. See our <a href="/wealth/rent-tax-credit-budget-2027-ireland/">full guide to the Rent Tax Credit increase</a>.</p>
+<p>A number of other proposals are moving through the final pre-Budget negotiations. These include possible changes to the rent-a-room relief, supports relating to disability and carers, third-level costs and measures intended to encourage saving and investment.</p>
 
-<p>Eligible mortgage holders have a different reason to pay attention: Revenue puts the maximum Mortgage Interest Tax Credit for 2026 at <strong>€625 per residence</strong>. Watch for an explicit announcement about its treatment in 2027 rather than assuming the current relief continues unchanged. <a href="https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/mortgage/how-much-can-you-claim.aspx" target="_blank" rel="noopener noreferrer">Revenue</a>.</p>
+<p>Some will have large effects for relatively small groups of people; others may deliver smaller amounts across a much wider population. Compound will add the final figures once they appear in the official Budget documentation.</p>
 
-<p>For anyone trying to find a home, also look beyond tax relief. Funding for housing, water and transport needs a delivery timetable before it becomes a usable home or a shorter commute. A large allocation and an available service are different stages of the same process.</p>
+<h2>How much could Budget 2027 be worth to you?</h2>
 
-<h2 id="budget-section-9">Five questions to keep beside the Budget coverage</h2>
+<p>Before 6 October, any precise “you will be €X better off” calculation is necessarily based on assumptions. Once the Budget is announced, the useful calculation will combine:</p>
 
-<ol>
-<li><strong>Do I qualify?</strong> Check income limits, household rules and exclusions.</li>
-<li><strong>Is this genuinely new?</strong> Separate existing relief and previously scheduled changes from the new package.</li>
-<li><strong>When does it start?</strong> Convert a full-year headline into the amount available during the first year.</li>
-<li><strong>Does it repeat?</strong> Keep recurring savings separate from lump sums.</li>
-<li><strong>What else changes?</strong> Add up tax, deductions, benefits and fees before deciding whether your household is better off.</li>
-</ol>
+<ul>
+<li>the new income-tax bands and credits;</li>
+<li>USC changes, if any;</li>
+<li>PRSI;</li>
+<li>Rent Tax Credit changes for qualifying renters;</li>
+<li>childcare changes for families using eligible services;</li>
+<li>welfare, pension or disability-related measures where applicable;</li>
+<li>fuel or energy supports; and</li>
+<li>the commencement date of each measure.</li>
+</ul>
 
-<p>The most useful Budget result is one you can trace to your own life: a lower invoice, a reliable payment, more take-home pay or a service you can finally access. On 6 October, those are the details worth staying with after the headline number has passed.</p>
+<p>A measure worth €400 in a full year is not necessarily worth €400 in the year it is introduced. Start dates matter.</p>
 
-<p><em>This article explains policy and illustrative household effects. Final measures, eligibility and commencement dates will need to be checked against the Budget documents and subsequent official guidance.</em></p>
+<h2>Budget 2027 Ireland: questions people are asking</h2>
+
+<h3>When is Budget 2027 in Ireland?</h3>
+<p>Budget 2027 is scheduled for <strong>Tuesday, 6 October 2026</strong>.</p>
+
+<h3>How much is available for tax cuts?</h3>
+<p>The Summer Economic Statement allocated <strong>€1.5 billion for tax measures</strong>. The final division between income-tax changes and other measures will be confirmed in the Budget.</p>
+
+<h3>Is the Rent Tax Credit increasing?</h3>
+<p><strong>Yes.</strong> The Taoiseach has said the credit will increase in Budget 2027. The new maximum has not yet been formally announced.</p>
+
+<h3>Will the 40% income-tax threshold rise?</h3>
+<p>An increase has been publicly identified as an option being considered. The final 2027 threshold is not yet confirmed.</p>
+
+<h3>Will there be another electricity credit?</h3>
+<p>No new universal electricity credit has been confirmed as of 23 September 2026. Energy and fuel measures remain part of the wider Budget discussion.</p>
+
+<h3>Will workers get tax cuts?</h3>
+<p>The Government has committed to changes in personal taxation within the €1.5 billion tax package. The distribution of those changes across bands, credits and other measures will determine the saving for each worker.</p>
+
+<h2>What happens on Budget Day?</h2>
+
+<p>On 6 October, the headline measures will be announced first. The detail that matters comes from the Budget documents and subsequent Revenue and Department guidance: exact thresholds, eligibility, commencement dates and whether a measure is once-off or permanent.</p>
+
+<p>We will update this page when those figures are confirmed so the pre-Budget tracker becomes a practical <strong>Budget 2027 Ireland household guide</strong> rather than leaving an outdated prediction page behind.</p>
+
+<p><em>This article is factual pre-Budget analysis, not tax or financial advice. Measures described as being considered or discussed are not confirmed entitlements until formally announced.</em></p>
