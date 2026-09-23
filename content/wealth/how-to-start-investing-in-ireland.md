@@ -44,7 +44,7 @@ sources:
 
 <div class="course-kicker">INVESTING IN IRELAND 101</div>
 
-# A complete beginner course for Irish investors
+<h2 class="course-title">A complete beginner course for Irish investors</h2>
 
 You do not need to become a stock picker to start investing.
 
