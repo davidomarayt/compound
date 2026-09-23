@@ -15,9 +15,9 @@
 </section>
 
 {% if news_articles or home_tools %}
-<section class="home-command-grid" aria-label="Today on Compound">
+<section class="home-command-grid" aria-label="Todays News">
  <div class="home-today-panel">
-  <div class="home-panel-heading"><h2><span aria-hidden="true">●</span> Today on Compound</h2><a href="/news/">View all news →</a></div>
+  <div class="home-panel-heading"><h2><span aria-hidden="true">●</span> Todays News</h2><a href="/news/">View all news →</a></div>
   <div class="home-today-list">
    {% for a in news_articles[:3] %}
    <a class="home-today-story" href="{{ a.url }}">
