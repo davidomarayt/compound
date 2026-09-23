@@ -473,3 +473,8 @@ For a switch, the useful question is:
 Run that comparison using your own balance, rates, terms, fees and cashback in the [Mortgage Switch Calculator](/mortgage-switch-calculator/).
 
 Then test the underlying repayment separately with the [Mortgage Calculator](/mortgage-calculator/) and see what happens if you keep some of the saving going toward the balance with the [Mortgage Overpayment Calculator](/mortgage-overpayment-calculator/).
+
+
+## From buying the home to managing the mortgage
+
+Switching is only one stage of the ownership lifecycle. [Buying a Home in Ireland 101](/wealth/buying-a-home-in-ireland/) covers the full process from deposit and mortgage approval through bidding, conveyancing, drawdown, closing and the first years of ownership.
