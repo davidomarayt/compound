@@ -38,8 +38,6 @@ sources:
 <a href="/wealth/house-hunting-bidding-ireland/">Next →</a>
 </div>
 
-# First-time buyer supports in Ireland
-
 There are two major schemes that can become part of a first-time buyer's funding plan:
 
 **Help to Buy (HTB)** and the **First Home Scheme (FHS)**.
