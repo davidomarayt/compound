@@ -12,7 +12,7 @@ The important word is **cumulative**.
 
 A person does not receive a new €200,000 tax-free allowance for every pension plan.
 
-For a broader explanation and examples, read the [pension lump-sum tax guide](/wealth/pension-lump-sum-tax-ireland/).
+For a broader explanation and examples, read the [pension lump-sum tax guide](/wealth/pension-lump-sum-tax-ireland/). For the accumulation side, use the [Pension Projection Calculator](/pension-projection-calculator/) to model contributions and growth before retirement.
 
 ## The 25% personal-pension rule
 
