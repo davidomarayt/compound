@@ -1,0 +1,527 @@
+/* Buying a Home in Ireland 101 */
+
+.home-course,
+.article-prose.home-course-page{
+  --home-line:rgba(130,110,100,.28);
+  --home-soft:rgba(154,79,55,.07);
+}
+
+.home-course-kicker{
+  display:inline-flex;
+  padding:.42rem .72rem;
+  margin-bottom:1rem;
+  border:1px solid var(--home-line);
+  border-radius:999px;
+  font-size:.68rem;
+  font-weight:700;
+  letter-spacing:.13em;
+  line-height:1;
+}
+
+.home-course-title{
+  margin:0 0 1.25rem!important;
+  font-size:clamp(2.35rem,5vw,4rem)!important;
+  line-height:1.02!important;
+}
+
+.home-start{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:2rem;
+  align-items:center;
+  margin:2.5rem 0 3.5rem;
+  padding:1.65rem 1.7rem;
+  border:1px solid var(--home-line);
+  background:var(--home-soft);
+}
+
+.home-start>div>span,
+.home-final-cta>span,
+.home-next>span{
+  display:block;
+  margin-bottom:.55rem;
+  font-size:.67rem;
+  font-weight:700;
+  letter-spacing:.13em;
+  line-height:1.2;
+}
+
+.home-start h2,
+.home-final-cta h2{
+  margin:.05rem 0 .65rem!important;
+}
+
+.home-start p{
+  margin:0!important;
+  max-width:44rem;
+}
+
+.home-start>a,
+.home-final-cta>a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:1rem;
+  min-height:48px;
+  padding:.8rem 1.05rem;
+  background:var(--ink);
+  color:var(--bg);
+  text-decoration:none!important;
+  white-space:nowrap;
+}
+
+.home-course-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1px;
+  margin:1.8rem 0 3.6rem;
+  border:1px solid var(--line);
+  background:var(--line);
+}
+
+.home-course-grid>a{
+  display:grid;
+  grid-template-columns:2.3rem minmax(0,1fr) auto;
+  gap:1rem;
+  align-items:start;
+  min-width:0;
+  padding:1.35rem;
+  background:var(--surface);
+  text-decoration:none!important;
+  transition:background .18s ease;
+}
+
+.home-course-grid>a:hover{
+  background:var(--wealth-soft);
+}
+
+.home-course-grid>a>span{
+  padding-top:.16rem;
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  opacity:.62;
+}
+
+.home-course-grid strong{
+  display:block;
+  font-family:"Libre Caslon Display",serif;
+  font-size:1.45rem;
+  font-weight:400;
+  line-height:1.1;
+  color:var(--ink);
+}
+
+.home-course-grid p{
+  margin:.5rem 0 0!important;
+  font-size:.9rem;
+  line-height:1.55;
+}
+
+.home-course-grid b{
+  font-size:1.15rem;
+  font-weight:400;
+  opacity:.72;
+}
+
+.home-stat-grid,
+.home-principle-grid,
+.home-hub-principles,
+.home-checklist,
+.home-compare-grid,
+.home-step-grid,
+.home-support-grid,
+.home-service-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1px;
+  margin:1.8rem 0 3rem;
+  border:1px solid var(--line);
+  background:var(--line);
+}
+
+.home-stat-grid>div,
+.home-principle-grid>div,
+.home-hub-principles>div,
+.home-checklist>div,
+.home-compare-grid>div,
+.home-step-grid>div,
+.home-support-grid>div,
+.home-service-grid>div{
+  padding:1.25rem 1.3rem;
+  background:var(--surface);
+}
+
+.home-stat-grid span{
+  display:block;
+  font-family:"Libre Caslon Display",serif;
+  font-size:2rem;
+  line-height:1;
+  color:var(--ink);
+}
+
+.home-stat-grid p,
+.home-principle-grid p,
+.home-hub-principles p,
+.home-checklist p,
+.home-compare-grid p,
+.home-step-grid p,
+.home-support-grid p,
+.home-service-grid p{
+  margin:.5rem 0 0!important;
+  font-size:.9rem;
+  line-height:1.58;
+}
+
+.home-principle-grid span,
+.home-hub-principles span,
+.home-compare-grid span,
+.home-step-grid span,
+.home-support-grid span,
+.home-service-grid span{
+  display:block;
+  margin-bottom:.65rem;
+  font-size:.67rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  opacity:.62;
+}
+
+.home-principle-grid strong,
+.home-hub-principles strong,
+.home-checklist strong,
+.home-compare-grid strong,
+.home-step-grid strong,
+.home-support-grid strong,
+.home-service-grid strong{
+  display:block;
+  font-family:"Libre Caslon Display",serif;
+  font-size:1.35rem;
+  font-weight:400;
+  line-height:1.12;
+  color:var(--ink);
+}
+
+.home-number-strip{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1px;
+  margin:1.7rem 0 2.8rem;
+  border:1px solid var(--line);
+  background:var(--line);
+}
+
+.home-number-strip>div{
+  padding:1rem;
+  background:var(--surface);
+}
+
+.home-number-strip span{
+  display:block;
+  font-size:.72rem;
+  opacity:.7;
+}
+
+.home-number-strip strong{
+  display:block;
+  margin-top:.25rem;
+  font-family:"Libre Caslon Display",serif;
+  font-size:1.7rem;
+  font-weight:400;
+  color:var(--ink);
+}
+
+.home-number-strip p{
+  margin:.35rem 0 0!important;
+  font-size:.8rem;
+  line-height:1.45;
+}
+
+.home-journey{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1px;
+  margin:1.8rem 0 3.4rem;
+  border:1px solid var(--line);
+  background:var(--line);
+}
+
+.home-journey>div{
+  padding:1.2rem;
+  min-height:150px;
+  background:var(--surface);
+}
+
+.home-journey span{
+  display:block;
+  margin-bottom:.8rem;
+  font-size:.67rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  opacity:.62;
+}
+
+.home-journey strong{
+  display:block;
+  font-family:"Libre Caslon Display",serif;
+  font-size:1.35rem;
+  font-weight:400;
+  line-height:1.1;
+  color:var(--ink);
+}
+
+.home-journey p{
+  margin:.5rem 0 0!important;
+  font-size:.86rem;
+  line-height:1.55;
+}
+
+.home-tool-grid,
+.home-bonus-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.8rem;
+  margin:1.8rem 0 3rem;
+}
+
+.home-tool-grid>a,
+.home-bonus-grid>a{
+  display:block;
+  padding:1.2rem;
+  border:1px solid var(--line);
+  background:var(--surface);
+  text-decoration:none!important;
+}
+
+.home-tool-grid>a:hover,
+.home-bonus-grid>a:hover{
+  background:var(--wealth-soft);
+}
+
+.home-tool-grid span{
+  display:block;
+  margin-bottom:.5rem;
+  font-size:.65rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  opacity:.62;
+}
+
+.home-tool-grid strong,
+.home-bonus-grid strong{
+  display:block;
+  font-family:"Libre Caslon Display",serif;
+  font-size:1.35rem;
+  font-weight:400;
+  line-height:1.12;
+}
+
+.home-tool-grid p,
+.home-bonus-grid p{
+  margin:.45rem 0 0!important;
+  font-size:.88rem;
+  line-height:1.55;
+}
+
+.home-final-cta{
+  margin:3.5rem 0 .5rem;
+  padding:2rem;
+  background:var(--ink);
+  color:var(--bg);
+}
+
+.home-final-cta h2{
+  color:var(--bg)!important;
+  font-size:2.1rem!important;
+}
+
+.home-final-cta p{
+  color:#d7ced2;
+}
+
+.home-final-cta>a{
+  margin-top:.25rem;
+  border:1px solid rgba(255,255,255,.35);
+}
+
+.home-chapter-nav{
+  display:grid;
+  grid-template-columns:auto 1fr auto auto;
+  gap:.65rem 1rem;
+  align-items:center;
+  margin:0 0 2.5rem;
+  padding:.85rem 0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  font-size:.76rem;
+  line-height:1.35;
+}
+
+.home-chapter-nav a{
+  text-decoration:none!important;
+}
+
+.home-chapter-nav a:nth-child(2){
+  justify-self:center;
+}
+
+.home-chapter-nav span{
+  color:var(--muted);
+  white-space:nowrap;
+}
+
+.home-next{
+  margin:3.4rem 0 .5rem;
+  padding:1.5rem;
+  border:1px solid var(--home-line);
+  background:var(--home-soft);
+}
+
+.home-next strong{
+  display:block;
+  font-family:"Libre Caslon Display",serif;
+  font-size:1.65rem;
+  font-weight:400;
+  line-height:1.12;
+  color:var(--ink);
+}
+
+.home-next p{
+  margin:.65rem 0 1rem!important;
+}
+
+.home-next a{
+  display:inline-flex;
+  padding:.7rem .85rem;
+  border:1px solid var(--line-2);
+  text-decoration:none!important;
+}
+
+.home-course-complete{
+  background:var(--ink);
+  color:var(--bg);
+}
+
+.home-course-complete strong{
+  color:var(--bg);
+}
+
+.home-course-complete p{
+  color:#d7ced2;
+}
+
+.home-course-complete a{
+  color:var(--bg);
+  border-color:rgba(255,255,255,.35);
+}
+
+.article-prose.home-course-page{
+  line-height:1.9;
+}
+
+.article-prose.home-course-page h2{
+  margin-top:2.5em;
+}
+
+.article-prose.home-course-page h3{
+  margin-top:1.9em;
+}
+
+@media(max-width:760px){
+  .home-course-title{
+    font-size:2.55rem!important;
+  }
+
+  .home-start{
+    grid-template-columns:1fr;
+    gap:1.25rem;
+    padding:1.25rem;
+    margin:2rem 0 3rem;
+  }
+
+  .home-start>a{
+    width:100%;
+  }
+
+  .home-course-grid,
+  .home-stat-grid,
+  .home-principle-grid,
+  .home-hub-principles,
+  .home-checklist,
+  .home-compare-grid,
+  .home-step-grid,
+  .home-support-grid,
+  .home-service-grid,
+  .home-tool-grid,
+  .home-bonus-grid,
+  .home-journey{
+    grid-template-columns:1fr;
+  }
+
+  .home-course-grid>a{
+    grid-template-columns:2rem minmax(0,1fr) auto;
+    gap:.8rem;
+    padding:1.15rem 1rem;
+  }
+
+  .home-course-grid strong{
+    font-size:1.35rem;
+  }
+
+  .home-number-strip{
+    grid-template-columns:1fr;
+  }
+
+  .home-journey>div{
+    min-height:0;
+  }
+
+  .home-chapter-nav{
+    grid-template-columns:1fr auto;
+    margin-bottom:2.2rem;
+  }
+
+  .home-chapter-nav a:nth-child(2){
+    justify-self:end;
+  }
+
+  .home-chapter-nav span{
+    grid-column:1;
+  }
+
+  .home-chapter-nav a:last-child{
+    grid-column:2;
+    grid-row:2;
+    justify-self:end;
+  }
+
+  .article-prose.home-course-page{
+    font-size:16px;
+    line-height:1.88;
+  }
+
+  .article-prose.home-course-page p{
+    margin-bottom:1.65rem;
+  }
+
+  .article-prose.home-course-page h2{
+    margin-top:3.6rem;
+    margin-bottom:1.15rem;
+    padding-top:1.8rem;
+    border-top:1px solid var(--line);
+  }
+
+  .article-prose.home-course-page h3{
+    margin-top:2.8rem;
+    margin-bottom:.9rem;
+  }
+
+  .article-prose.home-course-page table{
+    min-width:560px;
+  }
+
+  .home-next,
+  .home-final-cta{
+    padding:1.3rem;
+  }
+}
