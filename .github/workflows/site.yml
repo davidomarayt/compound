@@ -102,4 +102,23 @@ jobs:
           grep -Fq 'Mobile-first finishing pass for Investing in Ireland 101' /tmp/investing.css
           grep -Fq '.investing-course-hub .course-grid' /tmp/investing.css
 
+          fetch https://compound.ie/wealth/pensions-in-ireland/ /tmp/pensions.html
+          grep -Fq 'From your first contribution to retirement income.' /tmp/pensions.html
+          grep -Fq 'pension-course-grid' /tmp/pensions.html
+          grep -Fq '/static/pension-ireland.css?v=1' /tmp/pensions.html
+          grep -Fq '/wealth/how-pensions-work-ireland/' /tmp/pensions.html
+          grep -Fq '/wealth/pension-lump-sum-tax-ireland/' /tmp/pensions.html
+
+          fetch https://compound.ie/static/pension-ireland.css?v=1 /tmp/pension.css
+          grep -Fq '.pension-course-grid' /tmp/pension.css
+          grep -Fq '.pension-chapter-nav' /tmp/pension.css
+
+          grep -Fq 'https://compound.ie/wealth/pensions-in-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/how-pensions-work-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/pension-options-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/how-much-pension-contribute-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/pension-funds-fees-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/changing-jobs-transfer-pension-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/when-can-i-access-pension-ireland/' /tmp/sitemap.xml
+
           echo 'Live verification passed for Compound calculator catalogue and flagship guides.'
