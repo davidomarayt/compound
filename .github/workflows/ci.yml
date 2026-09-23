@@ -13,3 +13,22 @@ jobs:
       - run: node --check compound/site/static/tools.js
       - run: node --check compound/site/static/debt-repayment.js
       - run: node tests/tools_arithmetic.cjs
+
+  performance:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: pip install -e .
+      - run: compound build
+        env:
+          SITE_BASE_URL: https://compound.ie
+          PREVIEW_BASE_URL: https://compound.ie
+      - name: Run Lighthouse CI against representative mobile pages
+        run: npx --yes @lhci/cli@0.14.0 autorun --config=.lighthouserc.json
