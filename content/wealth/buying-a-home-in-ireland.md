@@ -11,12 +11,8 @@ tags: [buying a home, ireland, first-time buyer, mortgage, house deposit, help t
 related_tools:
 - mortgage-calculator
 - mortgage-borrowing-calculator
-- mortgage-affordability-calculator
-- house-deposit-calculator
 - house-buying-costs-calculator
 - first-home-scheme-calculator
-- stamp-duty-calculator
-- mortgage-overpayment-calculator
 sources:
 - title: 'Central Bank of Ireland: Mortgage Measures'
   url: https://www.centralbank.ie/financial-system/financial-stability/macro-prudential-policy/mortgage-measures
