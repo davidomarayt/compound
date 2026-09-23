@@ -577,6 +577,28 @@
         items.push(v.assigned_due_date?'The assigned due date takes priority over the LMP-derived estimate in this scenario.':'The due date is estimated as 280 days from the LMP entered.');
         items.push('Clinical dating from an early ultrasound can supersede a menstrual-date estimate.');
         break;
+      case 'redundancy_ireland': {
+        const years=Math.max(0,Math.floor(v.years||0)), weekly=Math.min(600,Math.max(0,v.weekly_pay||0));
+        items.push(weekly<(v.weekly_pay||0)?'The statutory calculation caps the weekly remuneration at €600, so pay above that level does not increase the statutory amount.':'The entered weekly pay is within the current €600 statutory ceiling.');
+        if(v.__advanced) items.push('Advanced mode keeps statutory redundancy separate from the ex-gratia payment because the tax rules are different.');
+        items.push(years>=2?'The entered service meets the calculator’s basic two-year service test; the wider legal redundancy conditions still need to be satisfied.':'The entered service is below the usual 104-week statutory service requirement.');
+        break;
+      }
+      case 'self_employed_tax_ireland': {
+        const profit=Math.max(0,(v.gross_income||0)-(v.expenses||0));
+        items.push('Allowable expenses reduce the entered receipts to '+money(profit)+' of modelled business profit before personal taxes.');
+        if(profit>0){const t=selfEmployedNet2026(profit,v.__advanced?Math.min(Math.max(0,v.pension||0),Math.min(profit,115000)*pensionPct(v.age||35)):0);items.push('The combined Income Tax, USC and PRSI estimate is about '+pct((t.tax+t.usc+t.prsi)/profit*100)+' of the profit entered.');}
+        items.push('The monthly reserve is a cash-planning estimate, not a preliminary-tax or Form 11 calculation.');
+        break;
+      }
+      case 'pension_lump_sum_ireland': {
+        const lump=(v.__advanced&&Math.max(0,v.custom_lump_sum||0)>0)?Math.max(0,v.custom_lump_sum):Math.max(0,v.fund||0)*.25;
+        const previous=Math.max(0,v.previous_lump_sums||0), remaining=Math.max(0,200000-previous);
+        items.push('Before this payment, '+money(remaining)+' of the €200,000 lifetime tax-free retirement-lump-sum allowance remains under the figures entered.');
+        items.push(lump<=remaining?'The current modelled lump sum fits within the remaining lifetime tax-free allowance.':'Part of the current modelled lump sum extends beyond the remaining lifetime tax-free allowance.');
+        if(v.__advanced&&Math.max(0,v.custom_lump_sum||0)>0) items.push('Advanced mode is using the scheme lump sum you entered rather than 25% of the fund.');
+        break;
+      }
       case 'alcohol_ireland':
         items.push('Ireland defines one standard drink as 10 g of pure alcohol; drink size and ABV both matter.');
         items.push('The calorie figure covers ethanol itself and can understate total drink calories where sugar or mixers add energy.');
