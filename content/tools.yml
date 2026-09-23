@@ -3280,6 +3280,62 @@ tools:
       The **Standard Capital Superannuation Benefit (SCSB)** broadly uses one fifteenth of average annual pay over the final 36 months for each complete year of service, less relevant pension lump-sum rights. The calculator compares the modelled exemption routes and applies the remaining €200,000 lifetime exemption ceiling entered in Advanced mode.
 
       Payments that are contractual salary, holiday pay, bonuses or contractual pay in lieu of notice can be taxable as normal pay and should not simply be entered as ex-gratia redundancy.
+      ## Worked examples
+
+      ### 5 years of service on €500 a week
+
+      A worker with five complete years of eligible service and normal weekly remuneration of €500 has an estimated statutory redundancy payment of:
+
+      **€500 × (2 × 5 + 1) = €5,500**
+
+      Because the weekly pay is below the €600 statutory ceiling, the full €500 is used.
+
+      ### 10 years of service on €800 a week
+
+      A worker earning €800 a week is above the statutory weekly ceiling, so the calculation uses €600:
+
+      **€600 × (2 × 10 + 1) = €12,600**
+
+      This is why searching for a "redundancy calculator Ireland 10 years" can produce a result that looks lower than simply multiplying actual weekly salary by service: the statutory ceiling matters.
+
+      ### 20 years of service on €600 a week
+
+      With 20 complete years and weekly remuneration at the cap:
+
+      **€600 × (2 × 20 + 1) = €24,600**
+
+      An employer can pay more than the statutory amount. Any additional ex-gratia payment has separate tax rules, which Advanced mode models.
+
+      ## Frequently asked questions
+
+      ### How much redundancy am I entitled to after 10 years in Ireland?
+
+      If you meet the statutory eligibility rules, the formula is two weeks' capped normal weekly remuneration for each complete year of service plus one bonus week. At the current €600 weekly ceiling, 10 complete years produces an estimated statutory payment of €12,600.
+
+      ### What is the maximum weekly wage used for statutory redundancy in Ireland?
+
+      The statutory redundancy calculation currently caps weekly remuneration at €600. If your normal weekly pay is higher, the statutory calculation still uses €600.
+
+      ### Is redundancy tax free in Ireland?
+
+      Statutory redundancy is exempt from Income Tax and USC. A separate non-contractual ex-gratia termination payment may qualify for the basic exemption, increased exemption or SCSB, while contractual payments can be taxable as normal pay.
+
+      ### What is the basic exemption for an ex-gratia redundancy payment?
+
+      Revenue's basic exemption is €10,160 plus €765 for each complete year of service with the employer.
+
+      ### What is SCSB in a redundancy calculation?
+
+      The Standard Capital Superannuation Benefit is another method of calculating the tax-free portion of a qualifying termination payment. It broadly uses average annual remuneration over the final 36 months, complete years of service and relevant pension lump-sum rights.
+
+      ### Does pay in lieu of notice count as tax-free redundancy?
+
+      A payment in lieu of notice that is provided for in the employment contract is taxable as pay and does not qualify for the termination-payment exemptions.
+
+      ### Do I need two years of service to qualify for statutory redundancy?
+
+      Statutory redundancy normally requires at least 104 weeks of continuous service. Other eligibility conditions also apply, so the calculator's service test is only one part of the legal entitlement check.
+
     sources:
       - {title: "Department of Enterprise — Redundancy and statutory entitlement", url: "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/redundancy-payments/"}
       - {title: "Revenue — Statutory redundancy and other tax-exempt termination payments", url: "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/lump-sum-payments/tax-exempt.aspx"}
@@ -3334,6 +3390,52 @@ tools:
       ## Advanced pension modelling
 
       Qualifying pension contributions can reduce Income Tax, but not USC or PRSI. Revenue applies age-related percentage limits to earnings, subject to an earnings ceiling. The calculator caps the contribution used for Income Tax relief accordingly and shows the estimated Income Tax difference.
+      ## Worked examples
+
+      ### €50,000 receipts with €10,000 allowable expenses
+
+      If annual business receipts are €50,000 and allowable expenses are €10,000, the calculator starts with **€40,000 of business profit**. It then estimates Income Tax, USC and Class S PRSI under the 2026 assumptions.
+
+      This distinction between turnover and profit is essential. A self-employed tax calculator should not apply personal tax rates directly to gross customer receipts where deductible business expenses exist.
+
+      ### €80,000 receipts with €15,000 expenses
+
+      The default example produces **€65,000 of profit before personal taxes**. The calculator applies the single-person Income Tax band and credits, USC bands and the 2026 Class S PRSI assumption, then shows the estimated annual liability and a monthly tax-reserve figure.
+
+      ### Modelling a pension contribution
+
+      In Advanced mode, a 35-year-old with €65,000 of relevant earnings can model a personal pension contribution. The calculator limits the contribution receiving Income Tax relief to the age-related percentage and Revenue's €115,000 earnings ceiling. It does not reduce USC or PRSI for the pension contribution.
+
+      ## Frequently asked questions
+
+      ### How much tax does a self-employed person pay in Ireland?
+
+      It depends on taxable profit, personal circumstances, credits and reliefs. A self-employed person can face Income Tax, USC and Class S PRSI. This calculator estimates those three charges for a single person using 2026 assumptions.
+
+      ### Is self-employed tax calculated on turnover or profit?
+
+      Income Tax is generally based on taxable business profit rather than gross turnover. Taxable profit starts with business income less expenses that Revenue allows as deductions, subject to the tax rules.
+
+      ### What tax credit can a self-employed person claim in Ireland?
+
+      Qualifying self-employed income can receive the Earned Income Credit. For 2026 the maximum is €2,000, or 20% of qualifying earned income if that is lower. The calculator also includes the Single Person Tax Credit for its standard single-person scenario.
+
+      ### How much should a sole trader put aside for tax?
+
+      There is no single percentage that suits every sole trader because the effective rate changes with profit and reliefs. The calculator therefore shows a monthly reserve based on the estimated annual Income Tax, USC and Class S PRSI rather than applying a flat rule of thumb.
+
+      ### Do self-employed people pay PRSI in Ireland?
+
+      Many self-employed people pay Class S PRSI. The calculator uses the published blended 2026 Class S rate for self-assessed income and the applicable minimum contribution assumption.
+
+      ### Do pension contributions reduce self-employed tax?
+
+      Qualifying personal pension contributions can reduce Income Tax within Revenue's age-related and earnings limits. They do not reduce USC or PRSI in this calculator.
+
+      ### Does this replace a Form 11 tax return?
+
+      No. It is a planning estimate. A Form 11 can include other income, capital allowances, losses, tax already paid, married-person treatment and reliefs that this calculator does not model.
+
     sources:
       - {title: "Revenue — 2026 tax rates, bands and credits", url: "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx"}
       - {title: "Revenue — Earned Income Credit", url: "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/income-and-employment/earned-income-credit/index.aspx"}
@@ -3382,6 +3484,50 @@ tools:
       ## Why previous lump sums matter
 
       Someone taking a €150,000 lump sum with no previous retirement lump sums could have the full amount within the lifetime tax-free limit. If the same person had already taken €150,000 previously, only €50,000 of the new payment would remain within that €200,000 lifetime allowance.
+      ## Worked examples
+
+      ### €400,000 personal pension fund with no previous lump sums
+
+      Twenty-five per cent of a €400,000 personal pension fund is **€100,000**. With no previous retirement lump sums, that amount is within the €200,000 lifetime tax-free limit in this model.
+
+      ### €800,000 personal pension fund with no previous lump sums
+
+      Twenty-five per cent of €800,000 is **€200,000**. Revenue's current rules allow a lifetime tax-free retirement-lump-sum amount of €200,000 across all sources, so the full €200,000 is within that limit if no earlier lump sums have used it.
+
+      ### €1.2 million fund with €100,000 of previous retirement lump sums
+
+      Twenty-five per cent of €1.2 million is **€300,000**. If €100,000 of the lifetime tax-free allowance has already been used, the next €100,000 of the current lump sum falls within the remaining tax-free allowance and the following €200,000 falls within the cumulative €200,001 to €500,000 band taxed at 20%.
+
+      ## Frequently asked questions
+
+      ### Is 25% of my pension tax free in Ireland?
+
+      A person with a personal pension can generally take 25% of the fund as a retirement lump sum, but the tax-free treatment is subject to the €200,000 lifetime limit across retirement lump sums from all sources. A 25% lump sum is therefore not automatically fully tax free if it pushes cumulative lump sums above €200,000.
+
+      ### What is the maximum tax-free pension lump sum in Ireland?
+
+      Revenue states that the lifetime tax-free limit for retirement lump sums is €200,000.
+
+      ### What tax applies to a pension lump sum above €200,000?
+
+      The cumulative amount from €200,001 to €500,000 is taxed at 20%. Amounts above the cumulative €500,000 threshold are taxed under PAYE at the individual's marginal rate.
+
+      ### Do previous pension lump sums count toward the €200,000 limit?
+
+      Yes. Revenue counts relevant retirement lump sums from all sources when applying the lifetime limit, including previous retirement lump sums received on or after 7 December 2005.
+
+      ### Can an occupational pension pay more or less than 25% as a lump sum?
+
+      Occupational schemes can calculate retirement lump sums using salary and service rules rather than simply 25% of a fund. Use Advanced mode to enter the lump sum quoted by the scheme.
+
+      ### Is the €200,000 tax-free pension lump sum limit per pension?
+
+      No. It is a lifetime limit across retirement lump sums from all sources, rather than a separate €200,000 allowance for each pension arrangement.
+
+      ### What happens to the rest of a personal pension after taking 25%?
+
+      Revenue notes that the remaining funds may be used for options such as an annuity, transfer to an Approved Retirement Fund or another taxable pension option, depending on the pension arrangement and applicable rules.
+
     sources:
       - {title: "Revenue — Taxation of retirement lump sums", url: "https://www.revenue.ie/en/jobs-and-pensions/pension/private/retirement-lump-sums.aspx"}
       - {title: "Revenue Pensions Manual Chapter 27 — Taxation of Retirement Lump Sums", url: "https://www.revenue.ie/en/tax-professionals/tdm/pensions/chapter-27.pdf"}
