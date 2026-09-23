@@ -8,8 +8,6 @@ reviewed: 2026-09-23
 summary: 'A practical guide to investment fees for Irish investors: platform, fund, adviser, dealing and FX charges, plus long-term examples showing how recurring fees compound.'
 meta_description: 'Investment fees in Ireland explained: fund, platform, adviser, trading and FX costs, with examples showing how annual charges reduce long-term returns.'
 tags: [investment fees, ireland, investing, platform fees, fund fees, fx, compounding]
-image: /static/images/home-wealth.webp
-image_alt: 'Editorial illustration representing long-term wealth and compounding.'
 related_tools:
 - investment-fee-calculator
 - compound-interest-calculator
