@@ -100,7 +100,7 @@
   font-size:.7rem;
   font-weight:700;
   letter-spacing:.12em;
-  opacity:.62;
+  opacity:1;color:var(--muted);
 }
 
 .pension-course-grid strong{
@@ -161,7 +161,7 @@
   font-size:.67rem;
   font-weight:700;
   letter-spacing:.12em;
-  opacity:.62;
+  opacity:1;color:var(--muted);
 }
 
 .pension-hub-principles strong,
@@ -205,7 +205,7 @@
 .pension-rate-grid span{
   display:block;
   font-size:.72rem;
-  opacity:.7;
+  opacity:1;color:var(--muted);
 }
 
 .pension-number-strip strong{
@@ -271,7 +271,7 @@
   font-size:.65rem;
   font-weight:700;
   letter-spacing:.12em;
-  opacity:.62;
+  opacity:1;color:var(--muted);
 }
 
 .pension-tool-grid strong,
