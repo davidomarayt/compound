@@ -657,6 +657,35 @@ assert.match(carFinanceDirect.pcp_equity, /Switch to Advanced/);
 assert.match(carFinanceDirect.ownership_summary, /Loan: owned from day 1/);
 
 
+const redundancyDirect = calculators.redundancy_ireland({
+  years: 10, weekly_pay: 800, ex_gratia: 50000, avg_annual_pay: 60000,
+  pension_lump_sum: 0, prior_exempt: 0, increased_eligible: true, __advanced: true
+});
+assert.equal(redundancyDirect.statutory, '€12,600.00');
+assert.equal(redundancyDirect.scsb, '€40,000.00');
+assert.equal(redundancyDirect.tax_free_ex_gratia, '€40,000.00');
+assert.equal(redundancyDirect.taxable_ex_gratia, '€10,000.00');
+
+const selfEmployedDirect = calculators.self_employed_tax_ireland({
+  gross_income: 50000, expenses: 10000, age: 35, pension: 0, __advanced: false
+});
+assert.equal(selfEmployedDirect.profit, '€40,000.00');
+assert.equal(selfEmployedDirect.income_tax, '€4,000.00');
+assert.equal(selfEmployedDirect.usc, '€732.82');
+assert.equal(selfEmployedDirect.prsi, '€1,695.00');
+assert.equal(selfEmployedDirect.net_income, '€33,572.18');
+
+const pensionLumpDirect = calculators.pension_lump_sum_ireland({
+  fund: 1200000, previous_lump_sums: 100000, custom_lump_sum: 0,
+  marginal_rate: 40, __advanced: false
+});
+assert.equal(pensionLumpDirect.gross_lump, '€300,000.00');
+assert.equal(pensionLumpDirect.tax_free_current, '€100,000.00');
+assert.equal(pensionLumpDirect.at_20, '€200,000.00');
+assert.equal(pensionLumpDirect.total_tax, '€40,000.00');
+assert.equal(pensionLumpDirect.net_lump, '€260,000.00');
+
+
 // Dedicated debt payoff engine: strategy target selection and payoff invariants.
 const {chooseTarget: chooseDebtTarget, simulate: simulateDebt} = globalThis.CompoundDebtTest;
 const debtChoice = [
