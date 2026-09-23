@@ -198,6 +198,15 @@ item_id: 152
 draft_id: 25
 approved_by: telegram:DavieXBT
 ---
+
+<div class="pension-chapter-nav">
+<a href="/wealth/pension-options-ireland/">← Chapter 2</a>
+<a href="/wealth/pensions-in-ireland/">Course hub</a>
+<span>Chapter 3 of 8</span>
+<a href="/wealth/how-much-pension-contribute-ireland/">Next →</a>
+</div>
+
+
 Pension tax relief means the money you put into a pension is taken off your income before income tax is worked out. Revenue gives that relief at your marginal rate, which is the highest rate you pay, so a contribution from income taxed at 40% cuts your tax bill by 40% of the amount you put in ([Revenue](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/index.aspx)). If all of your income is taxed at 20%, the relief is 20%.
 
 There are limits. Relief is capped at a percentage of your earnings that rises with your age, from 15% if you are under 30 to 40% at 60 or over, and only the first €115,000 of earnings counts ([Revenue](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx)). For most PAYE workers (PAYE is Pay As You Earn, the system where your employer deducts tax before you are paid) the relief arrives automatically through payroll. If you pay into a pension yourself, you claim it, and a lump sum paid before the pay-and-file deadline can be set against last year's income.
@@ -290,3 +299,11 @@ Tax relief on the way into a pension is only one side of the calculation. At ret
 If you are a sole trader or other self-assessed worker, the [Self-Employed Tax Calculator Ireland](/self-employed-tax-calculator-ireland/) estimates 2026 Income Tax, USC and Class S PRSI before and after a qualifying pension contribution. It is useful for seeing the tax-relief effect in the context of the wider annual liability rather than viewing pension relief in isolation.
 
 Tax relief is only one part of deciding how to invest for the long term. Our [beginner’s guide to investing in Ireland](/wealth/how-to-start-investing-in-ireland/) puts pensions beside taxable investing, ETFs, shares, fees and Irish tax so the wrapper decision is made before the product decision.
+
+
+<div class="pension-next">
+<span>NEXT CHAPTER</span>
+<strong>Tax relief tells you the ceiling. Your retirement plan tells you the contribution.</strong>
+<p>Chapter 4 turns employer contributions, Revenue headroom and your retirement goal into a sustainable savings target.</p>
+<a href="/wealth/how-much-pension-contribute-ireland/">Chapter 4 — How Much Should You Contribute? →</a>
+</div>
