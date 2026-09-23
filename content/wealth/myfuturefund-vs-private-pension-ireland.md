@@ -461,3 +461,8 @@ For more detail on the existing tax-relief system, read [Pension tax relief in I
 Contribution rates are only the accumulation side of a pension. Retirement benefits have their own tax rules. For personal pensions, 25% of the fund can generally be taken as a retirement lump sum, subject to the lifetime tax-free limit across retirement lump sums. Occupational schemes can use salary-and-service rules instead. The [Pension Lump Sum Calculator Ireland](/pension-lump-sum-calculator-ireland/) lets you model the €200,000 lifetime tax-free limit and the tax bands that apply above it.
 
 If you are deciding where retirement saving fits beside a normal brokerage account, start with our [guide to investing in Ireland](/wealth/how-to-start-investing-in-ireland/). It explains why the tax wrapper, access rules and fees should be compared before choosing the underlying investment.
+
+
+## Where MyFutureFund fits in the wider pension system
+
+MyFutureFund is only one part of retirement planning. For the full sequence—from pension types and tax relief through funds, transfers and retirement access—use [Pensions in Ireland 101](/wealth/pensions-in-ireland/).
