@@ -8,8 +8,6 @@ reviewed: 2026-09-23
 summary: 'A practical guide to diversification for Irish investors: company, sector, country, asset-class and currency concentration, plus how to spot false diversification.'
 meta_description: 'How to diversify an investment portfolio in Ireland: reduce company, sector and country concentration, understand asset allocation and avoid overlap.'
 tags: [diversification, portfolio, investing, ireland, asset allocation, risk]
-image: /static/images/home-wealth.webp
-image_alt: 'Editorial illustration representing long-term wealth building.'
 related_tools:
 - compound-interest-calculator
 - investment-fee-calculator
