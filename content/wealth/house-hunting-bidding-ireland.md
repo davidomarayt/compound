@@ -29,8 +29,6 @@ sources:
 <a href="/wealth/sale-agreed-survey-valuation-ireland/">Next →</a>
 </div>
 
-# House hunting and bidding in Ireland
-
 The bidding stage is where a financial plan can become emotional.
 
 The best protection is to decide the maximum price **before** someone else starts bidding against you.
