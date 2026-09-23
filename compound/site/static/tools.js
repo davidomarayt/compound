@@ -1834,7 +1834,8 @@
         best_exemption:money(best),
         tax_free_ex_gratia:money(taxFree),
         taxable_ex_gratia:money(taxable),
-        total_package:money(statutory+ex)
+        total_package:money(statutory+ex),
+        __chart:null
       };
     },
     self_employed_tax_ireland(v){
