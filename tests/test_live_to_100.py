@@ -77,8 +77,11 @@ def test_publication_requires_actual_date_and_has_one_canonical_route(settings, 
     assert '<link rel="canonical" href="https://example.test/live-to-100/">' in html
     assert not (settings.public_dir / "health/live-to-100/index.html").exists()
     schemas = [json.loads(s) for s in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html)]
-    assert {s["@type"] for s in schemas} == {"Article", "BreadcrumbList"}
-    article_schema = next(s for s in schemas if s["@type"] == "Article")
+    typed = {s["@type"] for s in schemas if "@type" in s}
+    assert typed == {"Article", "BreadcrumbList"}
+    identity = next(s for s in schemas if "@graph" in s)
+    assert {item["@type"] for item in identity["@graph"]} == {"Organization", "WebSite"}
+    article_schema = next(s for s in schemas if s.get("@type") == "Article")
     assert article_schema["datePublished"] == "2026-09-17"
     assert 'Live to 100 in Ireland: Planning a 100-Year Life | Compound' in html
     assert (settings.public_dir / "sitemap.xml").read_text().count("/live-to-100/") == 1
