@@ -8,10 +8,10 @@ reviewed: 2026-09-23
 summary: 'A practical Irish investing guide: what to sort first, pensions versus taxable investing, shares and ETFs, fees, tax, diversification, brokers and a step-by-step route from cash to a long-term plan.'
 meta_description: 'How to start investing in Ireland: pensions, shares, ETFs, tax, deemed disposal, fees, diversification, brokers and a practical beginner roadmap.'
 tags: [investing, ireland, beginners, etfs, shares, pensions, tax, wealth]
-image: /static/images/wealth.jpg
-image_alt: 'A calm home interior representing long-term financial planning and wealth building.'
-image_credit: 'Jason Briscoe / Unsplash'
-image_source: 'https://images.unsplash.com/photo-1484154218962-a197022b5858'
+image: /static/images/home-wealth.webp
+image_alt: 'Editorial illustration representing long-term wealth building and financial planning.'
+image_credit: 'Illustration: Compound.'
+image_source: '#image-note'
 related_tools:
 - compound-interest-calculator
 - investment-fee-calculator
