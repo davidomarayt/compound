@@ -43,6 +43,7 @@ HOME_SEO_PRIORITY = {
     "wealth": [
         "how-to-start-investing-in-ireland",
         "pensions-in-ireland",
+        "buying-a-home-in-ireland",
         "saving-for-your-child-ireland",
         "is-switching-your-mortgage-worth-it-ireland",
         "mortgage-overpayments-100-euro-ireland",
@@ -50,7 +51,6 @@ HOME_SEO_PRIORITY = {
         "rent-tax-credit-ireland-who-can-claim",
         "tax-credits-ireland-explained",
         "pcp-vs-hp-vs-car-loan-ireland",
-        "solar-panels-vs-battery-ireland",
     ],
     "happiness": [
         "how-to-be-happier-evidence-ireland",
