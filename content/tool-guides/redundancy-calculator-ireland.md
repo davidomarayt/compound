@@ -12,7 +12,7 @@ A person normally needs at least **104 weeks of continuous service** to qualify 
 
 If your service history includes breaks, transfers, changes of employer, parental leave, lay-off periods or other complexities, the legal entitlement should be checked separately.
 
-You can also read the wider [redundancy guide for Ireland](/wealth/redundancy-ireland-statutory-ex-gratia-tax/) for the difference between statutory and ex-gratia payments.
+You can also read the wider [redundancy guide for Ireland](/wealth/redundancy-ireland-statutory-ex-gratia-tax/) for the difference between statutory and ex-gratia payments. If you are comparing the package with ongoing employment income, the [Take-Home Pay Calculator](/take-home-pay-calculator/) can help separate a once-off termination payment from normal monthly net pay.
 
 ## Why the €600 weekly ceiling matters
 
