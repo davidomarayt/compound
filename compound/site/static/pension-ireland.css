@@ -1,0 +1,518 @@
+/* Pensions in Ireland 101 */
+
+.pension-course,
+.article-prose.pension-course-page{
+  --pension-line:rgba(130,110,100,.28);
+  --pension-soft:rgba(117,84,54,.08);
+}
+
+.pension-course-kicker{
+  display:inline-flex;
+  padding:.42rem .72rem;
+  margin-bottom:1rem;
+  border:1px solid var(--pension-line);
+  border-radius:999px;
+  font-size:.68rem;
+  font-weight:700;
+  letter-spacing:.13em;
+  line-height:1;
+}
+
+.pension-course-title{
+  margin:0 0 1.25rem!important;
+  font-size:clamp(2.35rem,5vw,4rem)!important;
+  line-height:1.02!important;
+}
+
+.pension-start{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:2rem;
+  align-items:center;
+  margin:2.5rem 0 3.5rem;
+  padding:1.65rem 1.7rem;
+  border:1px solid var(--pension-line);
+  background:var(--pension-soft);
+}
+
+.pension-start>div>span,
+.pension-final-cta>span,
+.pension-next>span{
+  display:block;
+  margin-bottom:.55rem;
+  font-size:.67rem;
+  font-weight:700;
+  letter-spacing:.13em;
+  line-height:1.2;
+}
+
+.pension-start h2,
+.pension-final-cta h2{
+  margin:.05rem 0 .65rem!important;
+}
+
+.pension-start p{
+  margin:0!important;
+  max-width:44rem;
+}
+
+.pension-start>a,
+.pension-final-cta>a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:1rem;
+  min-height:48px;
+  padding:.8rem 1.05rem;
+  background:var(--ink);
+  color:var(--bg);
+  text-decoration:none!important;
+  white-space:nowrap;
+}
+
+.pension-course-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1px;
+  margin:1.8rem 0 3.6rem;
+  border:1px solid var(--line);
+  background:var(--line);
+}
+
+.pension-course-grid>a{
+  display:grid;
+  grid-template-columns:2.3rem minmax(0,1fr) auto;
+  gap:1rem;
+  align-items:start;
+  min-width:0;
+  padding:1.35rem;
+  background:var(--surface);
+  text-decoration:none!important;
+  transition:background .18s ease;
+}
+
+.pension-course-grid>a:hover{
+  background:var(--wealth-soft);
+}
+
+.pension-course-grid>a>span{
+  padding-top:.16rem;
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  opacity:.62;
+}
+
+.pension-course-grid strong{
+  display:block;
+  font-family:"Libre Caslon Display",serif;
+  font-size:1.45rem;
+  font-weight:400;
+  line-height:1.1;
+  color:var(--ink);
+}
+
+.pension-course-grid p{
+  margin:.5rem 0 0!important;
+  font-size:.9rem;
+  line-height:1.55;
+}
+
+.pension-course-grid b{
+  font-size:1.15rem;
+  font-weight:400;
+  opacity:.72;
+}
+
+.pension-hub-principles,
+.pension-key-grid,
+.pension-checklist,
+.pension-compare-grid,
+.pension-tool-grid,
+.pension-bonus-grid,
+.pension-ladder{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1px;
+  margin:1.8rem 0 3rem;
+  border:1px solid var(--line);
+  background:var(--line);
+}
+
+.pension-compare-three{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+
+.pension-hub-principles>div,
+.pension-key-grid>div,
+.pension-checklist>div,
+.pension-compare-grid>div,
+.pension-ladder>div{
+  padding:1.25rem 1.3rem;
+  background:var(--surface);
+}
+
+.pension-hub-principles span,
+.pension-key-grid span,
+.pension-compare-grid span,
+.pension-ladder span{
+  display:block;
+  margin-bottom:.65rem;
+  font-size:.67rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  opacity:.62;
+}
+
+.pension-hub-principles strong,
+.pension-key-grid strong,
+.pension-checklist strong,
+.pension-compare-grid strong,
+.pension-ladder strong{
+  display:block;
+  font-family:"Libre Caslon Display",serif;
+  font-size:1.35rem;
+  font-weight:400;
+  line-height:1.12;
+  color:var(--ink);
+}
+
+.pension-hub-principles p,
+.pension-key-grid p,
+.pension-checklist p,
+.pension-compare-grid p,
+.pension-ladder p{
+  margin:.5rem 0 0!important;
+  font-size:.9rem;
+  line-height:1.58;
+}
+
+.pension-number-strip{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:1px;
+  margin:1.7rem 0 2.8rem;
+  border:1px solid var(--line);
+  background:var(--line);
+}
+
+.pension-number-strip>div{
+  padding:1rem;
+  background:var(--surface);
+}
+
+.pension-number-strip span,
+.pension-rate-grid span{
+  display:block;
+  font-size:.72rem;
+  opacity:.7;
+}
+
+.pension-number-strip strong{
+  display:block;
+  margin-top:.25rem;
+  font-family:"Libre Caslon Display",serif;
+  font-size:1.7rem;
+  font-weight:400;
+  color:var(--ink);
+}
+
+.pension-stat-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.8rem;
+  margin:1.8rem 0 3rem;
+}
+
+.pension-stat-grid>div{
+  padding:1.25rem;
+  border:1px solid var(--line);
+  background:var(--surface);
+}
+
+.pension-stat-grid span{
+  display:block;
+  font-family:"Libre Caslon Display",serif;
+  font-size:2rem;
+  line-height:1;
+  color:var(--ink);
+}
+
+.pension-stat-grid p{
+  margin:.6rem 0 0!important;
+  font-size:.9rem;
+  line-height:1.55;
+}
+
+.pension-tool-grid,
+.pension-bonus-grid{
+  gap:.8rem;
+  border:0;
+  background:transparent;
+}
+
+.pension-tool-grid>a,
+.pension-bonus-grid>a{
+  display:block;
+  padding:1.2rem;
+  border:1px solid var(--line);
+  background:var(--surface);
+  text-decoration:none!important;
+}
+
+.pension-tool-grid>a:hover,
+.pension-bonus-grid>a:hover{
+  background:var(--wealth-soft);
+}
+
+.pension-tool-grid span{
+  display:block;
+  margin-bottom:.5rem;
+  font-size:.65rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  opacity:.62;
+}
+
+.pension-tool-grid strong,
+.pension-bonus-grid strong{
+  display:block;
+  font-family:"Libre Caslon Display",serif;
+  font-size:1.35rem;
+  font-weight:400;
+  line-height:1.12;
+}
+
+.pension-tool-grid p,
+.pension-bonus-grid p{
+  margin:.45rem 0 0!important;
+  font-size:.88rem;
+  line-height:1.55;
+}
+
+.pension-final-cta{
+  margin:3.5rem 0 .5rem;
+  padding:2rem;
+  background:var(--ink);
+  color:var(--bg);
+}
+
+.pension-final-cta h2{
+  color:var(--bg)!important;
+  font-size:2.1rem!important;
+}
+
+.pension-final-cta p{
+  color:#d7ced2;
+}
+
+.pension-final-cta>a{
+  margin-top:.25rem;
+  border:1px solid rgba(255,255,255,.35);
+}
+
+.pension-chapter-nav{
+  display:grid;
+  grid-template-columns:auto 1fr auto auto;
+  gap:.65rem 1rem;
+  align-items:center;
+  margin:0 0 2.5rem;
+  padding:.85rem 0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  font-size:.76rem;
+  line-height:1.35;
+}
+
+.pension-chapter-nav a{
+  text-decoration:none!important;
+}
+
+.pension-chapter-nav a:nth-child(2){
+  justify-self:center;
+}
+
+.pension-chapter-nav span{
+  color:var(--muted);
+  white-space:nowrap;
+}
+
+.pension-next{
+  margin:3.4rem 0 .5rem;
+  padding:1.5rem;
+  border:1px solid var(--pension-line);
+  background:var(--pension-soft);
+}
+
+.pension-next strong{
+  display:block;
+  font-family:"Libre Caslon Display",serif;
+  font-size:1.65rem;
+  font-weight:400;
+  line-height:1.12;
+  color:var(--ink);
+}
+
+.pension-next p{
+  margin:.65rem 0 1rem!important;
+}
+
+.pension-next a{
+  display:inline-flex;
+  padding:.7rem .85rem;
+  border:1px solid var(--line-2);
+  text-decoration:none!important;
+}
+
+.pension-course-complete{
+  background:var(--ink);
+  color:var(--bg);
+}
+
+.pension-course-complete strong{
+  color:var(--bg);
+}
+
+.pension-course-complete p{
+  color:#d7ced2;
+}
+
+.pension-course-complete a{
+  color:var(--bg);
+  border-color:rgba(255,255,255,.35);
+}
+
+.pension-rate-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:1px;
+  margin:1.6rem 0 2.8rem;
+  border:1px solid var(--line);
+  background:var(--line);
+}
+
+.pension-rate-grid>div{
+  padding:1rem;
+  background:var(--surface);
+}
+
+.pension-rate-grid strong{
+  display:block;
+  margin-top:.25rem;
+  font-family:"Libre Caslon Display",serif;
+  font-size:1.55rem;
+  font-weight:400;
+  color:var(--ink);
+}
+
+.article-prose.pension-course-page{
+  line-height:1.9;
+}
+
+.article-prose.pension-course-page h2{
+  margin-top:2.5em;
+}
+
+.article-prose.pension-course-page h3{
+  margin-top:1.9em;
+}
+
+@media(max-width:760px){
+  .pension-course-title{
+    font-size:2.55rem!important;
+  }
+
+  .pension-start{
+    grid-template-columns:1fr;
+    gap:1.25rem;
+    padding:1.25rem;
+    margin:2rem 0 3rem;
+  }
+
+  .pension-start>a{
+    width:100%;
+  }
+
+  .pension-course-grid,
+  .pension-hub-principles,
+  .pension-key-grid,
+  .pension-checklist,
+  .pension-compare-grid,
+  .pension-compare-three,
+  .pension-tool-grid,
+  .pension-bonus-grid,
+  .pension-ladder,
+  .pension-stat-grid{
+    grid-template-columns:1fr;
+  }
+
+  .pension-course-grid>a{
+    grid-template-columns:2rem minmax(0,1fr) auto;
+    gap:.8rem;
+    padding:1.15rem 1rem;
+  }
+
+  .pension-course-grid strong{
+    font-size:1.35rem;
+  }
+
+  .pension-number-strip{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .pension-rate-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .pension-chapter-nav{
+    grid-template-columns:1fr auto;
+    margin-bottom:2.2rem;
+  }
+
+  .pension-chapter-nav a:nth-child(2){
+    justify-self:end;
+  }
+
+  .pension-chapter-nav span{
+    grid-column:1;
+  }
+
+  .pension-chapter-nav a:last-child{
+    grid-column:2;
+    grid-row:2;
+    justify-self:end;
+  }
+
+  .article-prose.pension-course-page{
+    font-size:16px;
+    line-height:1.88;
+  }
+
+  .article-prose.pension-course-page p{
+    margin-bottom:1.65rem;
+  }
+
+  .article-prose.pension-course-page h2{
+    margin-top:3.6rem;
+    margin-bottom:1.15rem;
+    padding-top:1.8rem;
+    border-top:1px solid var(--line);
+  }
+
+  .article-prose.pension-course-page h3{
+    margin-top:2.8rem;
+    margin-bottom:.9rem;
+  }
+
+  .pension-next,
+  .pension-final-cta{
+    padding:1.3rem;
+  }
+}
+
+@media(max-width:420px){
+  .pension-number-strip,
+  .pension-rate-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
