@@ -20,7 +20,6 @@ related_tools:
 - pension-projection-calculator
 - pension-lump-sum-calculator-ireland
 - self-employed-tax-calculator-ireland
-- myfuturefund-calculator
 sources:
 - title: 'Revenue: Tax relief for pension contributions'
   url: https://www.revenue.ie/en/jobs-and-pensions/pension/relief/index.aspx
