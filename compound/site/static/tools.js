@@ -1790,7 +1790,77 @@
         annual_kcal:num(Math.round(annualKcal))+' kcal/year',annual_spend:money(annualSpend),reduced_drinks:num(drinks*(1-reduction)),annual_saving:money(annualSpend*reduction),
         __chart:{type:'bar',currency:false,title:advanced?'Current intake and modelled reduction':'Estimated weekly alcohol intake',caption:advanced?'Irish standard drinks are based on 10 g of pure alcohol. The reduced scenario applies the percentage you entered to the same weekly pattern.':'Basic mode uses typical drink sizes and strengths; switch to Advanced to enter the exact ABV and serving sizes.',labels:advanced?['Current','After reduction']:['Current'],series:[{label:'Standard drinks/week',values:advanced?[drinks,drinks*(1-reduction)]:[drinks]}]}
       };
-    }
+    },
+    redundancy_ireland(v){
+      const years=Math.max(0,Math.floor(v.years||0)), weekly=Math.min(600,Math.max(0,v.weekly_pay||0));
+      const eligible=years>=2, statutory=eligible?weekly*(2*years+1):0;
+      const advanced=Boolean(v.__advanced), ex=Math.max(0,v.ex_gratia||0), pension=Math.max(0,v.pension_lump_sum||0);
+      const basic=10160+765*years;
+      const increasedAdd=advanced&&v.increased_eligible?Math.max(0,10000-pension):0;
+      const increased=basic+increasedAdd;
+      const avg=Math.max(0,v.avg_annual_pay||0), scsb=Math.max(0,(avg/15)*years-pension);
+      const best=Math.max(basic,increased,scsb);
+      const remainingLifetime=Math.max(0,200000-Math.max(0,v.prior_exempt||0));
+      const taxFree=Math.min(ex,best,remainingLifetime), taxable=Math.max(0,ex-taxFree);
+      return {
+        statutory:money(statutory),
+        capped_weekly:money(weekly),
+        statutory_status:eligible?'Meets 2-year service test':'Under 2 years — no statutory amount modelled',
+        basic_exemption:money(basic),
+        increased_exemption:money(increased),
+        scsb:money(scsb),
+        best_exemption:money(best),
+        tax_free_ex_gratia:money(taxFree),
+        taxable_ex_gratia:money(taxable),
+        total_package:money(statutory+ex),
+        __chart:{type:'bar',title:advanced?'Redundancy package breakdown':'Statutory redundancy estimate',caption:advanced?'Statutory redundancy is shown separately from the modelled tax-free and taxable portions of the ex-gratia payment.':'Uses the €600 statutory weekly-pay ceiling and complete years of service.',labels:advanced?['Statutory','Tax-free ex-gratia','Taxable ex-gratia']:['Statutory redundancy'],series:[{label:'Amount',values:advanced?[statutory,taxFree,taxable]:[statutory]}]}
+      };
+    },
+    self_employed_tax_ireland(v){
+      const gross=Math.max(0,v.gross_income||0), expenses=Math.min(gross,Math.max(0,v.expenses||0)), profit=Math.max(0,gross-expenses);
+      const advanced=Boolean(v.__advanced), age=Math.max(18,Math.min(100,v.age||35));
+      const maxPension=advanced?Math.min(profit,115000)*pensionPct(age):0;
+      const pension=advanced?Math.min(Math.max(0,v.pension||0),maxPension):0;
+      const base=selfEmployedNet2026(profit,0), withPension=selfEmployedNet2026(profit,pension);
+      const total=withPension.tax+withPension.usc+withPension.prsi, effective=profit>0?total/profit*100:0;
+      const pensionSaving=Math.max(0,base.tax-withPension.tax);
+      return {
+        profit:money(profit),
+        income_tax:money(withPension.tax),
+        usc:money(withPension.usc),
+        prsi:money(withPension.prsi),
+        total_tax:money(total),
+        net_income:money(profit-total),
+        effective_rate:pct(effective),
+        monthly_reserve:money(total/12),
+        pension_relief_used:money(pension),
+        pension_tax_saving:money(pensionSaving),
+        net_after_pension:money(profit-total-pension),
+        __chart:{type:'bar',title:'Where the annual profit goes',caption:'Estimated 2026 personal taxes on the business profit entered. Pension contributions are shown separately in Advanced mode.',labels:advanced?['Income Tax','USC','PRSI','Pension','Cash after tax & pension']:['Income Tax','USC','PRSI','Cash after tax'],series:[{label:'Annual amount',values:advanced?[withPension.tax,withPension.usc,withPension.prsi,pension,Math.max(0,profit-total-pension)]:[withPension.tax,withPension.usc,withPension.prsi,Math.max(0,profit-total)]}]}
+      };
+    },
+    pension_lump_sum_ireland(v){
+      const advanced=Boolean(v.__advanced), fund=Math.max(0,v.fund||0), previous=Math.max(0,v.previous_lump_sums||0);
+      const calculated=fund*.25, custom=advanced?Math.max(0,v.custom_lump_sum||0):0, lump=custom>0?custom:calculated;
+      const before=previous, after=previous+lump;
+      const overlap=(lo,hi)=>Math.max(0,Math.min(after,hi)-Math.max(before,lo));
+      const taxFree=overlap(0,200000), at20=overlap(200000,500000), above500=Math.max(0,after-Math.max(before,500000));
+      const rate=advanced?Math.max(0,Math.min(60,v.marginal_rate||40))/100:.40;
+      const tax20=at20*.20, marginalTax=above500*rate, totalTax=tax20+marginalTax;
+      return {
+        gross_lump:money(lump),
+        remaining_tax_free:money(Math.max(0,200000-previous)),
+        tax_free_current:money(taxFree),
+        at_20:money(at20),
+        tax_20:money(tax20),
+        above_500:money(above500),
+        marginal_tax:money(marginalTax),
+        total_tax:money(totalTax),
+        net_lump:money(Math.max(0,lump-totalTax)),
+        lifetime_after:money(after),
+        __chart:{type:'bar',title:'Tax treatment of this retirement lump sum',caption:'Slices the current payment according to your cumulative retirement lump sums. The above-€500,000 slice uses the marginal PAYE rate assumption in Advanced mode.',labels:['Tax-free','Taxed at 20%','Above €500k threshold'],series:[{label:'Current lump sum',values:[taxFree,at20,above500]}]}
+      };
+
   };
 
   if(typeof globalThis!=='undefined'){
