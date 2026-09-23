@@ -49,3 +49,201 @@
 .investing-guide .tax-warning{border-left:3px solid currentColor;padding:.7rem 0 .7rem 1rem;margin:1.3rem 0}
 @media(max-width:760px){.investing-guide .investing-map{grid-template-columns:1fr 1fr}.investing-guide .investing-tool-grid{grid-template-columns:1fr}.investing-guide .tax-result-grid{grid-template-columns:1fr}.investing-guide .fee-bar-row{grid-template-columns:4.5rem 1fr 6.2rem}.investing-guide .ireland-stat{grid-template-columns:1fr}.investing-guide .ireland-stat strong{font-size:2.35rem}}
 @media(max-width:480px){.investing-guide .investing-map{grid-template-columns:1fr}.investing-guide .investing-chart{padding:.85rem}.investing-guide .fee-bar-row{grid-template-columns:4rem 1fr}.investing-guide .fee-bar-row strong{grid-column:2}.investing-guide .investing-svg{min-height:240px}}
+
+
+/* 2026-09 mobile editorial pass: give the flagship guide more breathing room
+   and keep data visualisations legible on narrow screens. */
+.investing-guide > p{
+  margin-bottom:1.55em;
+}
+.investing-guide > h2{
+  margin-top:2.15em;
+  margin-bottom:.72em;
+}
+.investing-guide > h3{
+  margin-top:1.75em;
+  margin-bottom:.72em;
+}
+.investing-guide > ul,
+.investing-guide > ol{
+  margin-bottom:1.8rem;
+}
+.investing-guide > ul li,
+.investing-guide > ol li{
+  margin-bottom:.65rem;
+}
+.investing-guide .investing-chart,
+.investing-guide .investing-tool,
+.investing-guide .investing-image{
+  margin-top:2.6rem;
+  margin-bottom:2.6rem;
+}
+.investing-guide .investing-chart{
+  padding:1.45rem 1.5rem;
+}
+.investing-guide .investing-chart header{
+  margin-bottom:1.35rem;
+}
+.investing-guide .investing-chart header h3{
+  margin:0;
+}
+.investing-guide .investing-chart header p{
+  line-height:1.65;
+  margin-top:.55rem;
+}
+.investing-guide .investing-chart-note{
+  line-height:1.65;
+  margin-top:1.15rem;
+}
+.investing-guide .fee-bars{
+  gap:0;
+  margin-top:1.35rem;
+}
+.investing-guide .fee-bar-row{
+  display:grid;
+  grid-template-columns:4.6rem minmax(0,1fr) 7.5rem;
+  gap:.7rem .9rem;
+  align-items:center;
+  padding:1rem 0;
+  border-bottom:1px solid rgba(130,110,100,.22);
+}
+.investing-guide .fee-bar-row:last-child{
+  border-bottom:0;
+  padding-bottom:.25rem;
+}
+.investing-guide .fee-rate{
+  font-weight:600;
+  color:inherit;
+}
+.investing-guide .fee-bar-track{
+  height:1rem;
+  min-width:0;
+  border-radius:999px;
+  overflow:hidden;
+  background:rgba(167,131,93,.18);
+  border:1px solid rgba(167,131,93,.18);
+}
+.investing-guide .fee-bar-fill{
+  height:100%;
+  border-radius:inherit;
+  background:#a7835d;
+  opacity:.92;
+}
+.investing-guide .fee-bar-row strong{
+  text-align:right;
+  font-variant-numeric:tabular-nums;
+  white-space:nowrap;
+}
+.investing-guide .fee-difference{
+  grid-column:2 / -1;
+  font-size:.76rem;
+  line-height:1.45;
+  opacity:.72;
+}
+.investing-guide .table-scroll{
+  margin:1.6rem 0 2rem;
+  border-top:1px solid rgba(130,110,100,.2);
+  border-bottom:1px solid rgba(130,110,100,.2);
+}
+.investing-guide .table-scroll table{
+  margin:0;
+}
+
+@media(max-width:760px){
+  .investing-guide{
+    font-size:17px;
+    line-height:1.9;
+  }
+  .investing-guide > p{
+    margin-bottom:1.6em;
+  }
+  .investing-guide > h2{
+    font-size:2rem;
+    line-height:1.12;
+    margin-top:2.3em;
+    margin-bottom:.8em;
+  }
+  .investing-guide > h3{
+    font-size:1.6rem;
+    line-height:1.18;
+    margin-top:1.9em;
+    margin-bottom:.75em;
+  }
+  .investing-guide .investing-hero-note,
+  .investing-guide .investing-tool{
+    padding:1.2rem;
+  }
+  .investing-guide .investing-map{
+    gap:.65rem;
+    margin:1.7rem 0 2.4rem;
+  }
+  .investing-guide .investing-map a{
+    padding:1.1rem 1.05rem;
+  }
+  .investing-guide .investing-chart{
+    padding:1.15rem;
+    margin:2.5rem 0;
+  }
+  .investing-guide .investing-chart header{
+    margin-bottom:1.2rem;
+  }
+  .investing-guide .investing-chart header h3{
+    font-size:1.85rem;
+    line-height:1.12;
+  }
+  .investing-guide .investing-chart header p{
+    font-size:.98rem;
+    line-height:1.65;
+  }
+  .investing-guide .fee-bar-row{
+    grid-template-columns:minmax(0,1fr) auto;
+    gap:.55rem .9rem;
+    padding:1.15rem 0;
+  }
+  .investing-guide .fee-rate{
+    font-size:1rem;
+  }
+  .investing-guide .fee-bar-row strong{
+    font-size:1.08rem;
+  }
+  .investing-guide .fee-bar-track{
+    grid-column:1 / -1;
+    height:.9rem;
+  }
+  .investing-guide .fee-difference{
+    grid-column:1 / -1;
+    font-size:.78rem;
+    margin-top:.05rem;
+  }
+  .investing-guide .investing-chart-note{
+    font-size:.82rem;
+    line-height:1.65;
+    padding-top:.25rem;
+  }
+  .investing-guide .table-scroll{
+    margin:1.75rem 0 2.25rem;
+  }
+  .investing-guide .table-scroll table{
+    min-width:620px;
+  }
+  .investing-guide .step-ladder{
+    gap:1.15rem;
+    margin:2rem 0;
+  }
+  .investing-guide .step-ladder>div{
+    padding-top:1.2rem;
+    padding-left:3rem;
+  }
+}
+
+@media(max-width:480px){
+  .investing-guide .investing-chart{
+    padding:1rem;
+  }
+  .investing-guide .investing-chart header h3{
+    font-size:1.72rem;
+  }
+  .investing-guide .fee-bar-row{
+    grid-template-columns:1fr auto;
+  }
+}
