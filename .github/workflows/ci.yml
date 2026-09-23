@@ -26,6 +26,10 @@ jobs:
         with:
           node-version: "22"
       - run: pip install -e .
+      - name: Attach images to published News stories
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: python scripts/news_images.py
       - run: compound build
         env:
           SITE_BASE_URL: https://compound.ie
