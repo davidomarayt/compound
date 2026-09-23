@@ -32,8 +32,6 @@ sources:
 <a href="/wealth/mortgage-approval-affordability-ireland/">Next →</a>
 </div>
 
-# Start with the real budget, not the asking price
-
 The first number in a home search should not be the maximum mortgage.
 
 It should be the amount you can spend **without using every euro you have**.
