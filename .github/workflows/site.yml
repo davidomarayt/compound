@@ -143,4 +143,26 @@ jobs:
           grep -Fq 'https://compound.ie/wealth/mortgage-protection-drawdown-ireland/' /tmp/sitemap.xml
           grep -Fq 'https://compound.ie/wealth/closing-buying-home-ireland/' /tmp/sitemap.xml
 
-          echo 'Live verification passed for Compound calculator catalogue and flagship guides.'
+          fetch https://compound.ie/news-sitemap.xml /tmp/news-sitemap.xml
+          grep -Fq 'http://www.google.com/schemas/sitemap-news/0.9' /tmp/news-sitemap.xml
+          grep -Fq 'https://compound.ie/news/rent-a-room-relief-20000-budget-2027/' /tmp/news-sitemap.xml
+
+          fetch https://compound.ie/news/rent-a-room-relief-20000-budget-2027/ /tmp/discovery-news.html
+          grep -Fq 'max-image-preview:large' /tmp/discovery-news.html
+          grep -Fq '"@type": "NewsArticle"' /tmp/discovery-news.html
+          grep -Fq '"@type": "BreadcrumbList"' /tmp/discovery-news.html
+          grep -Fq '"@type": "Organization"' /tmp/discovery-news.html
+          grep -Fq '"@type": "WebSite"' /tmp/discovery-news.html
+          grep -Fq 'google-add-preferred-source-btn' /tmp/discovery-news.html
+          grep -Fq '/static/discover/rent-a-room-relief-20000-budget-2027-16x9.webp' /tmp/discovery-news.html
+          ! grep -Fq 'FAQPage' /tmp/discovery-news.html
+
+          fetch https://compound.ie/static/discover/rent-a-room-relief-20000-budget-2027-16x9.webp /tmp/discover-image.webp
+          test -s /tmp/discover-image.webp
+
+          fetch https://compound.ie/news/ /tmp/news-hub.html
+          grep -Fq 'google-add-preferred-source-btn' /tmp/news-hub.html
+
+          grep -Fq 'Sitemap: https://compound.ie/news-sitemap.xml' <(curl --fail --silent --show-error --location https://compound.ie/robots.txt)
+
+          echo 'Live verification passed for Compound calculator catalogue, discovery metadata and flagship guides.'
