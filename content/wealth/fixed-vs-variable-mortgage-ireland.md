@@ -28,8 +28,6 @@ sources:
 <a href="/wealth/mortgage-protection-drawdown-ireland/">Next →</a>
 </div>
 
-# Fixed or variable: choose the mortgage you can live with
-
 The mortgage rate matters.
 
 So do the rules attached to it.
