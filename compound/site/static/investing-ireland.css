@@ -330,3 +330,212 @@
     padding-left:1.55rem;
   }
 }
+
+
+/* Mobile-first finishing pass for Investing in Ireland 101. */
+.investing-guide .growth-scenarios{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:1rem;
+  margin:2rem 0 2.6rem;
+}
+.investing-guide .growth-card{
+  border:1px solid rgba(130,110,100,.28);
+  background:rgba(255,255,255,.025);
+  padding:1.15rem;
+}
+.investing-guide .growth-card-head{
+  padding-bottom:1rem;
+  margin-bottom:1rem;
+  border-bottom:1px solid rgba(130,110,100,.22);
+}
+.investing-guide .growth-card-head span{
+  display:block;
+  font-family:"Libre Caslon Display",serif;
+  font-size:1.65rem;
+  line-height:1.05;
+  color:inherit;
+}
+.investing-guide .growth-card-head strong{
+  display:block;
+  margin-top:.45rem;
+  font-size:.75rem;
+  line-height:1.5;
+  font-weight:500;
+  opacity:.72;
+}
+.investing-guide .growth-metrics{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.8rem;
+}
+.investing-guide .growth-metrics div{
+  min-width:0;
+}
+.investing-guide .growth-metrics span{
+  display:block;
+  font-size:.72rem;
+  line-height:1.35;
+  opacity:.68;
+}
+.investing-guide .growth-metrics strong{
+  display:block;
+  margin-top:.2rem;
+  font-size:1rem;
+  font-variant-numeric:tabular-nums;
+  white-space:nowrap;
+}
+
+@media(max-width:760px){
+  .article-prose.investing-guide{
+    font-size:16px;
+    line-height:1.86;
+  }
+
+  .article-prose.investing-guide p{
+    margin:0 0 1.65rem;
+  }
+
+  .article-prose.investing-guide h2{
+    font-size:2rem;
+    line-height:1.12;
+    margin:4rem 0 1.25rem;
+    padding-top:2rem;
+    border-top:1px solid rgba(130,110,100,.24);
+  }
+
+  .article-prose.investing-guide h3{
+    font-size:1.55rem;
+    line-height:1.2;
+    margin:3.15rem 0 1rem;
+  }
+
+  .article-prose.investing-guide h2 + p,
+  .article-prose.investing-guide h3 + p{
+    margin-top:0;
+  }
+
+  .article-prose.investing-guide ul,
+  .article-prose.investing-guide ol{
+    padding-left:1.35rem;
+    margin:1rem 0 2.1rem;
+  }
+
+  .article-prose.investing-guide li{
+    margin-bottom:.65rem;
+    padding-left:.2rem;
+    line-height:1.7;
+  }
+
+  .article-prose.investing-guide blockquote{
+    margin:2.2rem 0;
+    padding-left:1.1rem;
+    font-size:1.55rem;
+    line-height:1.35;
+  }
+
+  .investing-guide .growth-scenarios{
+    grid-template-columns:1fr;
+    gap:.9rem;
+    margin:1.8rem 0 2.5rem;
+  }
+
+  .investing-guide .growth-card{
+    padding:1rem;
+    border-radius:3px;
+  }
+
+  .investing-guide .growth-card-head{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:1rem;
+  }
+
+  .investing-guide .growth-card-head span{
+    font-size:1.55rem;
+  }
+
+  .investing-guide .growth-card-head strong{
+    margin:0;
+    max-width:9.5rem;
+    text-align:right;
+  }
+
+  .investing-guide .growth-metrics{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:0;
+    border-top:0;
+  }
+
+  .investing-guide .growth-metrics div{
+    padding:.75rem .4rem;
+    border-bottom:1px solid rgba(130,110,100,.18);
+  }
+
+  .investing-guide .growth-metrics div:nth-child(odd){
+    padding-left:0;
+    padding-right:.8rem;
+    border-right:1px solid rgba(130,110,100,.18);
+  }
+
+  .investing-guide .growth-metrics div:nth-child(even){
+    padding-left:.8rem;
+    padding-right:0;
+  }
+
+  .investing-guide .growth-metrics div:nth-last-child(-n+2){
+    border-bottom:0;
+  }
+
+  .investing-guide .growth-metrics span{
+    font-size:.7rem;
+  }
+
+  .investing-guide .growth-metrics strong{
+    font-size:1.03rem;
+  }
+
+  .investing-guide .table-scroll{
+    width:calc(100vw - 10vw);
+    max-width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    margin:1.8rem 0 2.4rem;
+  }
+
+  .investing-guide .table-scroll table{
+    min-width:600px;
+    font-size:.82rem;
+  }
+
+  .investing-guide .investing-tool,
+  .investing-guide .investing-chart,
+  .investing-guide .investing-hero-note{
+    border-radius:3px;
+  }
+
+  .investing-guide .investing-tool{
+    margin:2.6rem 0 3rem;
+  }
+
+  .investing-guide .investing-image{
+    margin:2.8rem 0;
+  }
+
+  .investing-guide .step-ladder>div{
+    padding-top:1.25rem;
+    padding-bottom:.35rem;
+  }
+}
+
+@media(max-width:420px){
+  .investing-guide .growth-card-head{
+    display:block;
+  }
+  .investing-guide .growth-card-head strong{
+    max-width:none;
+    text-align:left;
+    margin-top:.4rem;
+  }
+}
