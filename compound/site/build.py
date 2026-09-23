@@ -138,6 +138,9 @@ TOOL_PRIMARY_RESULTS = {
     "nutrition-needs-calculator": "maintenance",
     "pregnancy-due-date-calculator": "due_date",
     "alcohol-units-calories-cost-calculator": "standard_drinks",
+    "redundancy-calculator-ireland": "statutory",
+    "self-employed-tax-calculator-ireland": "net_income",
+    "pension-lump-sum-calculator-ireland": "net_lump",
 }
 
 TOOL_CATEGORY_RESULT_NOTES = {
