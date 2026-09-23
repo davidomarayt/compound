@@ -30,8 +30,6 @@ sources:
 <a href="/wealth/first-time-buyer-supports-ireland/">Next →</a>
 </div>
 
-# Mortgage approval in Ireland
-
 The Central Bank sets the outer mortgage limits.
 
 Your lender decides whether it is willing to lend to **you**.
