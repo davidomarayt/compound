@@ -5,7 +5,7 @@ slug: how-to-start-investing-in-ireland
 pillar: wealth
 date: 2026-09-23
 reviewed: 2026-09-23
-summary: 'A practical Irish investing guide: what to sort first, pensions versus taxable investing, shares and ETFs, fees, tax, diversification, brokers and a step-by-step route from cash to a long-term plan.'
+summary: 'The complete Investing in Ireland 101 hub: a practical guide plus nine deep-dive chapters on preparation, pensions, investments, tax, diversification, brokers, fees, monthly investing and maintenance.'
 meta_description: 'How to start investing in Ireland: pensions, shares, ETFs, tax, deemed disposal, fees, diversification, brokers and a practical beginner roadmap.'
 tags: [investing, ireland, beginners, etfs, shares, pensions, tax, wealth]
 image: /static/images/home-wealth.webp
@@ -75,6 +75,24 @@ The aim of this guide is to take you from “I should probably invest” to a fr
 <a href="#investments"><span>03</span><strong>Choose investments</strong><br>Risk, diversification and fees.</a>
 <a href="#maintain"><span>04</span><strong>Maintain</strong><br>Automate, review and ignore noise.</a>
 </div>
+
+## Investing in Ireland 101: the complete course
+
+The guide below works as a standalone overview. If you want to go deeper, the nine chapters turn each major decision into its own practical lesson.
+
+<div class="investing-map">
+<a href="/wealth/before-you-invest-ireland/"><span>01</span><strong>Before you invest</strong><br>Cash, debt, goals and time horizon.</a>
+<a href="/wealth/pension-vs-investing-ireland/"><span>02</span><strong>Pension vs taxable</strong><br>Choose the wrapper before the product.</a>
+<a href="/wealth/shares-etfs-funds-ireland/"><span>03</span><strong>Shares, ETFs & funds</strong><br>Understand what you actually own.</a>
+<a href="/wealth/investment-tax-ireland/"><span>04</span><strong>Irish investment tax</strong><br>CGT, dividends, fund tax and deemed disposal.</a>
+<a href="/wealth/diversification-portfolio-ireland/"><span>05</span><strong>Diversification</strong><br>Company, sector, country and asset risk.</a>
+<a href="/wealth/choose-investment-broker-ireland/"><span>06</span><strong>Choose a broker</strong><br>Regulation, custody, fees and records.</a>
+<a href="/wealth/investment-fees-ireland/"><span>07</span><strong>Investment fees</strong><br>See how small charges compound for decades.</a>
+<a href="/wealth/how-much-to-invest-per-month-ireland/"><span>08</span><strong>How much to invest</strong><br>Build a contribution you can sustain.</a>
+<a href="/wealth/maintain-investment-portfolio-ireland/"><span>09</span><strong>Maintain the portfolio</strong><br>Rebalance, review, record and repeat.</a>
+</div>
+
+**New to investing?** Start with [Chapter 1: Before You Invest in Ireland](/wealth/before-you-invest-ireland/) and use the Previous / Next links to work through the series in order.
 
 ## Ireland has plenty of money available to invest
 
@@ -792,6 +810,14 @@ Start with the goal. Then the wrapper. Then the investment.
 In that order.
 
 </div>
+
+---
+
+## Continue the Investing in Ireland 101 course
+
+If you want the detailed version rather than the condensed hub, begin with [Chapter 1: Before You Invest in Ireland](/wealth/before-you-invest-ireland/). Each chapter links directly to the next, while remaining substantial enough to use as a standalone reference.
+
+**Start:** [Before You Invest in Ireland →](/wealth/before-you-invest-ireland/)
 
 <script type="application/ld+json">
 {
