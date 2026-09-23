@@ -6,6 +6,7 @@
 <meta property="og:type" content="website"><meta property="og:title" content="{{ tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="/static/tools.css?v=20260922-gold2"><script defer src="/static/tools.js?v=20260922-gold14"></script>
 <script type="application/ld+json">{{ tool_jsonld|safe }}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ site_url }}/"},{"@type":"ListItem","position":2,"name":"Tools","item":"{{ site_url }}/tools/"},{"@type":"ListItem","position":3,"name":{{ tool.title|tojson }},"item":"{{ site_url }}{{ tool.url }}"}]}</script>
 {% endblock %}
 {% block content %}
 <article class="tool-page" data-calculator="{{ tool.formula }}" data-tool-name="{{ tool.slug }}">
