@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#33252e">
 {% if preview is not defined or not preview %}<meta name="robots" content="max-image-preview:large">{% endif %}
 <title>{% block head_title %}{{ title }} · Compound{% endblock %}</title>
-{% block meta %}<meta name="description" content="Thoughtful guides, useful tools and timely news on health, wealth and happiness in Ireland.">{% endblock %}
+{% block meta %}<meta name="description" content="Thoughtful guides, useful tools and timely news on health, wealth and life in Ireland.">{% endblock %}
 {% block head %}{% endblock %}
 {% if preview is not defined or not preview %}<script type="application/ld+json">{{ site_identity_jsonld | safe }}</script>{% endif %}
 {% if analytics.measurement_id and not preview %}<script>
@@ -39,7 +39,9 @@ if(choice==='granted')window.compoundStartAnalytics();})();
   <a class="wordmark" href="/" aria-label="Compound home">compound<span class="brand-dot">.</span></a>
   <nav class="pillar-nav" aria-label="Main navigation">
     <a href="/tools/" class="nav-wealth" {% if tools_page is defined and tools_page %}aria-current="page"{% endif %}>Tools</a>
-    {% for p in pillars %}<a href="/{{ p }}/" class="nav-{{ p }}" {% if (pillar == p or (article is defined and article.pillar == p)) and not (article is defined and 'news' in article.tags) and not (tools_page is defined and tools_page) %}aria-current="page"{% endif %}>{{ pillar_labels[p] }}</a>{% endfor %}
+    <a href="/health/" class="nav-health" {% if (pillar is defined and pillar == 'health') or (article is defined and article.pillar == 'health' and 'news' not in article.tags) %}aria-current="page"{% endif %}>Health</a>
+    <a href="/wealth/" class="nav-wealth" {% if (pillar is defined and pillar == 'wealth') or (article is defined and article.pillar == 'wealth' and 'news' not in article.tags) %}aria-current="page"{% endif %}>Wealth</a>
+    <a href="/life/" class="nav-life" {% if page is defined and page.slug == 'life' %}aria-current="page"{% endif %}>Life</a>
     <a href="/news/" class="nav-news" {% if (news is defined and news) or (article is defined and 'news' in article.tags) %}aria-current="page"{% endif %}>News</a>
   </nav>
   <a class="search-link" href="/search/"><span>Explore the journal</span><span aria-hidden="true">⌕</span></a>
