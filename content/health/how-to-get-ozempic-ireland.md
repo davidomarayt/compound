@@ -40,6 +40,8 @@ This guide explains the legitimate route to treatment in Ireland, what a doctor 
 
 If pregnancy is possible or planned, see [GLP-1s and pregnancy: Ozempic, Wegovy, Mounjaro and what the evidence says](/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/) before treating these medicines as ordinary weight-management options.
 
+Looking beyond currently approved medicines, [Retatrutide in Ireland: what it is, whether you can get it and how its trial results compare](/health/retatrutide-ireland/) covers the next-generation triple agonist now in Phase 3 development.
+
 ## Can you get Ozempic in Ireland?
 
 Yes. Ozempic is authorised in the European Union and is available in Ireland as a **prescription-only medicine**.

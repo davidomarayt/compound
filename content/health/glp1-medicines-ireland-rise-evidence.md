@@ -53,6 +53,8 @@ sources:
 
 <p class="glp-note">Sources: <a href="https://www.ema.europa.eu/en/medicines/human/EPAR/ozempic">EMA: Ozempic</a>, <a href="https://www.ema.europa.eu/en/medicines/human/EPAR/mounjaro">EMA: Mounjaro</a> and <a href="https://www2.hse.ie/conditions/obesity/medicines/">HSE: obesity medicines</a>. These are prescription medicines, not interchangeable products or dosing instructions.</p>
 
+<p>Retatrutide is the next major molecule to watch, but it is <strong>not an approved Irish medicine</strong>. Our dedicated guide explains <a href="/health/retatrutide-ireland/">what retatrutide is, whether it can be obtained in Ireland and how its Phase 2/3 results compare with Mounjaro, Wegovy and Ozempic</a>.</p>
+
 <p>For adult weight management, Wegovy and Mounjaro generally require a BMI of at least 30, or at least 27 with a weight-related condition. Meeting that threshold starts a clinical assessment; it does not establish that treatment is suitable or publicly funded. <a href="https://www2.hse.ie/conditions/obesity/medicines/">HSE guidance</a>.</p>
 <h2>Why the results attracted so much attention</h2>
 <p>One useful comparison is <strong>SURMOUNT-5</strong>, a randomised, open-label trial involving 751 adults with obesity but without type 2 diabetes. It directly compared maximum tolerated weekly tirzepatide doses of 10 or 15 mg with semaglutide doses of 1.7 or 2.4 mg over 72 weeks. <a href="https://pubmed.ncbi.nlm.nih.gov/40353578/">Published trial</a>.</p>
