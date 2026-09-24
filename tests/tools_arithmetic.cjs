@@ -397,6 +397,25 @@ assert.equal(lifetimeBasic.major_total, '€0.00');
 assert.notEqual(lifetimeAdvanced.major_total, '€0.00');
 assert.match(lifetimeAdvanced.inflation_uplift, /^€/);
 
+const weightLossBasic = calculators.weight_loss({
+  current_weight: 100, height: 180, target_weight: 90, weekly_rate: 0.5,
+  include_waist: false, waist: 100, __advanced: false
+});
+assert.equal(weightLossBasic.kg_to_target, '10 kg');
+assert.equal(weightLossBasic.percentage_to_target, '10%');
+assert.equal(weightLossBasic.milestone_10, '90 kg');
+assert.equal(weightLossBasic.current_bmi_category, 'Obesity');
+assert.equal(weightLossBasic.waist_height_ratio, 'Not included');
+
+const weightLossAdvanced = calculators.weight_loss({
+  current_weight: 100, height: 180, target_weight: 90, weekly_rate: 0.5,
+  include_waist: true, waist: 90, __advanced: true
+});
+assert.match(weightLossAdvanced.estimated_time, /^20 weeks/);
+assert.equal(weightLossAdvanced.waist_height_ratio, '0.5');
+assert.match(weightLossAdvanced.waist_context, /0.5/);
+assert.equal(weightLossAdvanced.__chart.series[0].values.length, 6);
+
 const pregnancyCycle = calculators.pregnancy_timeline({
   lmp: '2026-01-01', assigned_due_date: '', cycle_length: 35, __advanced: true
 });
