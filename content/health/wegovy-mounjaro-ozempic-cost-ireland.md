@@ -60,6 +60,8 @@ Milligrams are not comparable across different active ingredients. A 5 mg tirzep
 
 Pregnancy changes the treatment decision completely. Current European product information does not recommend these medicines during pregnancy; see [our evidence review of GLP-1s and pregnancy](/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/), including washout periods for semaglutide and tirzepatide.
 
+Retatrutide is different again: it is still investigational and has **no legitimate Irish pharmacy price**. See [Retatrutide in Ireland: availability, Phase 2/3 results and comparison with Mounjaro and Wegovy](/health/retatrutide-ireland/).
+
 ## What Irish pharmacies advertise
 
 These examples come directly from pharmacies’ published price tables. They exclude any assumption that a consultation, delivery or future refill will be free. Contact the dispensing pharmacy for the exact product, pack and final amount.
