@@ -58,6 +58,8 @@ Mounjaro contains **tirzepatide**, which acts on GIP and GLP-1 receptors. Its EU
 
 Milligrams are not comparable across different active ingredients. A 5 mg tirzepatide dose is not “twice as strong” as a 2.4 mg semaglutide dose. The useful comparison is the appropriate treatment and its total cost—not the amount printed on the box.
 
+Pregnancy changes the treatment decision completely. Current European product information does not recommend these medicines during pregnancy; see [our evidence review of GLP-1s and pregnancy](/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/), including washout periods for semaglutide and tirzepatide.
+
 ## What Irish pharmacies advertise
 
 These examples come directly from pharmacies’ published price tables. They exclude any assumption that a consultation, delivery or future refill will be free. Contact the dispensing pharmacy for the exact product, pack and final amount.
