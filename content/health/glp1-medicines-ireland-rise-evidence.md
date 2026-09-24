@@ -12,6 +12,7 @@ image_alt: Close-up of a semaglutide injector pen resting on its blue cap.
 image_credit: Haberdoedas / Unsplash
 image_source: https://unsplash.com/photos/a-semaglutide-injection-pen-is-shown-TzKc7FGaL7Y
 related_tools:
+- weight-loss-calculator
 - bmi-calculator
 sources:
 - title: 'Doran S et al. Utilization of GLP-1 receptor agonists in the Irish healthcare system. ISPOR Europe 2025, HPR235; conference abstract.'
