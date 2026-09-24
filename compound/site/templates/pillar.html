@@ -1,11 +1,92 @@
 {% extends "base.html" %}
+{% block head_title %}{% if pillar == 'health' %}Compound Health Hub Ireland: Tools & Evidence{% else %}{{ title }} · Compound{% endif %}{% endblock %}
+{% block meta %}{% if pillar == 'health' %}<meta name="description" content="Compound Health brings together free health calculators, evidence-based Irish guides, GLP-1 information, nutrition, sleep, heart health and pregnancy resources.">{% else %}{{ super() }}{% endif %}{% endblock %}
 {% block head %}<link rel="canonical" href="{{ site_url }}/{{ pillar }}/">{% endblock %}
+{% block post_styles %}{% if pillar == 'health' %}<link rel="stylesheet" href="/static/health-hub.css?v=1">{% endif %}{% endblock %}
 {% block content %}
+{% if pillar == 'health' %}
+<div class="health-hub">
+  <section class="health-hub-hero">
+    <div class="health-hub-hero-copy">
+      <p class="eyebrow">COMPOUND HEALTH</p>
+      <h1>Know more.<br>Live better.</h1>
+      <p>Free tools and evidence-based guides for the health decisions that come up in real life — built for people in Ireland, without the wellness noise.</p>
+      <div class="health-hub-trust" aria-label="Compound Health principles"><span>Evidence first</span><span>Ireland specific</span><span>Free tools</span><span>Sources shown</span></div>
+    </div>
+    <div class="health-hub-hero-media"><img src="/static/images/health.jpg" alt="A calm everyday health and wellbeing scene" width="800" height="520"></div>
+  </section>
+
+  <section class="health-hub-intro" aria-labelledby="health-start-heading">
+    <div><p class="eyebrow">START WITH WHAT MATTERS TO YOU</p><h2 id="health-start-heading">Health is easier to use when it starts with a question.</h2></div>
+    <div class="health-hub-intro-copy"><p><strong>Compound Health is a network, not a reading list.</strong> Start with a goal, use a calculator where numbers help, then move into the evidence and Irish context behind the result.</p></div>
+  </section>
+
+  <nav class="health-goals" aria-label="Health goals">
+    <a class="health-goal" href="#weight-metabolism"><span class="health-goal-number">01</span><div><h3>Manage my weight</h3><p>Calories, BMI, nutrition, GLP-1 medicines and sustainable weight change.</p></div></a>
+    <a class="health-goal" href="#nutrition-performance"><span class="health-goal-number">02</span><div><h3>Eat better</h3><p>Protein, macros, micronutrients, supplements and practical nutrition.</p></div></a>
+    <a class="health-goal" href="#sleep-recovery"><span class="health-goal-number">03</span><div><h3>Sleep better</h3><p>Sleep needs, recovery and the habits that support better rest.</p></div></a>
+    <a class="health-goal" href="#heart-health"><span class="health-goal-number">04</span><div><h3>Protect my heart</h3><p>Blood pressure, cholesterol and the changes that move risk.</p></div></a>
+    <a class="health-goal" href="#pregnancy-family"><span class="health-goal-number">05</span><div><h3>Plan a pregnancy</h3><p>Due dates, pregnancy timing and evidence-led family health information.</p></div></a>
+    <a class="health-goal" href="#medicines"><span class="health-goal-number">06</span><div><h3>Understand a medicine</h3><p>What medicines are for, access in Ireland, side effects and when to seek help.</p></div></a>
+  </nav>
+
+  <section class="health-feature" id="weight-metabolism" aria-labelledby="weight-heading">
+    <div class="health-section-heading"><div><p class="eyebrow">FLAGSHIP PATHWAY</p><h2 id="weight-heading">Weight & metabolism</h2></div><p>Start with your own numbers, then use the guides to understand calories, nutrition and medicines in context. No single calculator or medication tells the whole story.</p></div>
+    <div class="health-feature-panel">
+      <div class="health-feature-copy">
+        <p class="eyebrow">YOUR STARTING POINT</p>
+        <h3>Turn a goal into something measurable.</h3>
+        <p>Estimate maintenance calories, a sensible weight-change target and the nutrition around it. Then adjust using real progress rather than chasing a perfect formula.</p>
+        <a class="button button-dark" href="/weight-loss-calculator/">Open the weight loss calculator</a>
+      </div>
+      <div class="health-tool-grid">
+        <a class="health-tool-card" href="/weight-loss-calculator/"><p class="eyebrow">CALCULATOR</p><h3>Calorie & weight loss</h3><p>Estimate maintenance calories, energy deficit and a target-weight timeline.</p><span class="health-card-link">Calculate →</span></a>
+        <a class="health-tool-card" href="/bmi-calculator/"><p class="eyebrow">CALCULATOR</p><h3>BMI</h3><p>Calculate BMI with Irish context and an optional waist measurement.</p><span class="health-card-link">Check BMI →</span></a>
+        <a class="health-tool-card" href="/nutrition-needs-calculator/"><p class="eyebrow">CALCULATOR</p><h3>Nutrition needs</h3><p>Estimate calories, protein and macronutrient needs from your goal and activity.</p><span class="health-card-link">Estimate nutrition →</span></a>
+        <div class="health-tool-card is-coming"><p class="eyebrow">BUILDING NEXT</p><h3>Daily food tracker</h3><p>Search foods, log portions and compare calories and protein with your daily target.</p><span class="health-card-link">Open Food Facts integration in progress</span></div>
+      </div>
+    </div>
+    <div class="health-cluster-guides" id="medicines">
+      <a class="health-guide-link" href="/health/how-to-get-ozempic-ireland/"><span>GLP-1 access</span><strong>How to get Ozempic in Ireland</strong></a>
+      <a class="health-guide-link" href="/health/wegovy-mounjaro-ozempic-cost-ireland/"><span>Costs & comparison</span><strong>Wegovy, Mounjaro and Ozempic costs</strong></a>
+      <a class="health-guide-link" href="/health/glp1-side-effects-when-to-seek-help/"><span>Safety</span><strong>GLP-1 side effects and when to seek help</strong></a>
+      <a class="health-guide-link" href="/health/stopping-glp1-weight-regain/"><span>Long-term weight</span><strong>What happens after stopping a GLP-1?</strong></a>
+      <a class="health-guide-link" href="/health/how-much-protein-do-you-need-ireland/"><span>Nutrition</span><strong>How much protein do you actually need?</strong></a>
+      <a class="health-guide-link" href="/health/macronutrients-micronutrients-guide-ireland/"><span>Nutrition</span><strong>Macro & micronutrients explained</strong></a>
+    </div>
+  </section>
+
+  <section class="health-pathways" aria-labelledby="pathways-heading">
+    <div class="health-section-heading"><div><p class="eyebrow">EXPLORE COMPOUND HEALTH</p><h2 id="pathways-heading">Build the full picture.</h2></div><p>The Health Hub will grow around connected pathways, with tools and guides feeding into one another instead of sitting as isolated pages.</p></div>
+    <div class="health-pathway-grid">
+      <article class="health-pathway" id="nutrition-performance"><p class="eyebrow">NUTRITION & PERFORMANCE</p><h3>Fuel, protein & supplements</h3><div class="health-pathway-links"><a href="/nutrition-needs-calculator/">Nutrition Needs Calculator</a><a href="/health/how-much-protein-do-you-need-ireland/">Protein needs in Ireland</a><a href="/health/creatine-benefits-dosage-safety-ireland/">Creatine: benefits, dose and safety</a><a href="/health/vitamin-d-ireland-winter-who-should-take-it/">Vitamin D in Ireland</a></div></article>
+      <article class="health-pathway" id="sleep-recovery"><p class="eyebrow">SLEEP & RECOVERY</p><h3>Sleep that supports the day</h3><div class="health-pathway-links"><a href="/health/how-much-sleep-do-adults-need/">How much sleep do adults need?</a><a href="/health/how-much-sleep-does-a-child-need/">How much sleep does a child need?</a><a href="/health/health-for-a-100-year-life/">Health across a 100-year life</a></div></article>
+      <article class="health-pathway" id="heart-health"><p class="eyebrow">HEART HEALTH</p><h3>Know the numbers that matter</h3><div class="health-pathway-links"><a href="/health/how-to-lower-cholesterol-what-moves-ldl/">What actually lowers LDL cholesterol?</a><a href="/health/lower-blood-pressure-naturally-what-works/">What works for lowering blood pressure?</a><a href="/health/standard-drinks-ireland-pints-wine-spirits/">Standard drinks in Ireland explained</a></div></article>
+      <article class="health-pathway" id="pregnancy-family"><p class="eyebrow">PREGNANCY & FAMILY</p><h3>Plan with better context</h3><div class="health-pathway-links"><a href="/pregnancy-due-date-calculator/">Pregnancy Due Date Calculator</a><a href="/health/pregnancy-due-date-accuracy-lmp-vs-scan-ireland/">LMP vs scan: due-date accuracy</a><a href="/health/how-much-sleep-does-a-child-need/">Children's sleep needs</a></div></article>
+      <article class="health-pathway"><p class="eyebrow">ALCOHOL & LIFESTYLE</p><h3>See the trade-offs clearly</h3><div class="health-pathway-links"><a href="/alcohol-units-calories-cost-calculator/">Alcohol units, calories & cost</a><a href="/health/standard-drinks-ireland-pints-wine-spirits/">Standard drinks: pints, wine and spirits</a><a href="/health/alcohol-loyalty-card-discounts-ban-ireland-2028/">Ireland's alcohol discount rules</a></div></article>
+      <article class="health-pathway"><p class="eyebrow">PREVENTION & LONGEVITY</p><h3>Small decisions, longer horizon</h3><div class="health-pathway-links"><a href="/health/health-for-a-100-year-life/">Health for a 100-year life</a><a href="/health/how-to-lower-cholesterol-what-moves-ldl/">Long-term heart health</a><a href="/health/vitamin-d-ireland-winter-who-should-take-it/">Vitamin D and the Irish winter</a></div></article>
+    </div>
+  </section>
+
+  <section class="health-latest" aria-labelledby="health-latest-heading">
+    <div class="section-heading"><h2 id="health-latest-heading">Latest from Health.</h2><span>{{ articles|length }} stories and guides</span></div>
+    <div class="story-grid">{% for a in articles[:6] %}{% include "_card.html" %}{% endfor %}</div>
+  </section>
+
+  <section class="health-evidence" aria-labelledby="evidence-heading">
+    <div><p class="eyebrow">HOW WE BUILD HEALTH CONTENT</p><h2 id="evidence-heading">Evidence before certainty.</h2></div>
+    <div class="health-evidence-copy"><p>Health information can change decisions, so Compound separates estimates from diagnoses and explains the limits of each tool. Irish guidance is prioritised where it exists, with sources such as the HSE and HPRA alongside peer-reviewed evidence.</p><p>Medication pages explain authorised uses, access and safety rather than recommending treatment. Urgent symptoms belong with emergency services or a clinician, not a calculator.</p><div class="health-evidence-points"><span>Sources displayed</span><span>Irish context prioritised</span><span>Educational, not diagnostic</span></div><p><a href="/editorial-policy/">Read the Compound editorial policy →</a></p></div>
+  </section>
+
+  {% with slot=adsense.slots.feed, name="feed" %}{% include "_ad.html" %}{% endwith %}
+  {% include "_signup.html" %}
+</div>
+{% else %}
 <section class="collection-hero collection-{{ pillar }}"><div><p class="eyebrow">THE COMPOUND JOURNAL / {{ pillar_labels[pillar] }}</p><h1>{{ {'health':'A little better.<br>From the inside out.', 'wealth':'More clarity.<br>More possibility.', 'happiness':'Make space<br>for the good.'}[pillar]|safe }}</h1><p>{{ pillar_blurbs[pillar] }}</p></div><img src="/static/images/{{ pillar }}.jpg" alt="" width="800" height="520"></section>
 <div class="section-heading collection-heading"><h2>The {{ pillar }} edit.</h2><span>{{ articles|length }} stories to explore</span></div>
 {% if pillar == 'wealth' %}<section class="editorial-note"><div><p class="eyebrow">PLAN YOUR NEXT STEP</p><h2>Small contributions. A longer view.</h2><p>Use our free compound interest calculator to compare plans, explore inflation and fees, and find the monthly amount needed for your goal.</p><a class="button button-dark" href="/compound-interest-calculator/">Open the calculator</a></div></section>{% endif %}
-{% if pillar == 'health' %}<section class="editorial-note"><div><p class="eyebrow">UNDERSTAND YOUR MEASUREMENTS</p><h2>Your BMI. The context that matters.</h2><p>Use kg or stones, add an optional waist check and understand your result with sourced guidance for Ireland.</p><a class="button button-dark" href="/bmi-calculator/">Try the BMI calculator</a></div></section>{% endif %}
 <div class="story-grid">{% for a in articles %}{% include "_card.html" %}{% else %}<p class="empty">Our first stories are on their way. Explore another pillar in the meantime.</p>{% endfor %}</div>
 {% with slot=adsense.slots.feed, name="feed" %}{% include "_ad.html" %}{% endwith %}
 {% include "_signup.html" %}
+{% endif %}
 {% endblock %}
