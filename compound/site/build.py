@@ -179,6 +179,7 @@ TOOL_PRIMARY_RESULTS = {
     "lifetime-cost-calculator": "lifetime_today_money",
     "car-finance-calculator": "ownership_summary",
     "nutrition-needs-calculator": "maintenance",
+    "weight-loss-calculator": "kg_to_target",
     "pregnancy-due-date-calculator": "due_date",
     "alcohol-units-calories-cost-calculator": "standard_drinks",
     "redundancy-calculator-ireland": "statutory",
