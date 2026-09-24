@@ -24,6 +24,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+# Open Food Facts contains a small number of very large TSV fields. Python's
+# csv module defaults to 128 KiB per field, which is too small for the full
+# export even though Compound discards those oversized fields later.
+csv.field_size_limit(sys.maxsize)
+
 SOURCE_URL = "https://static.openfoodfacts.org/data/en.openfoodfacts.org.products.csv.gz"
 SOURCE_NAME = "Open Food Facts"
 SOURCE_LICENSE = "Open Database License (ODbL) 1.0"
