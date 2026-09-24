@@ -518,6 +518,15 @@ If nausea, vomiting or food aversion is making adequate intake difficult, that i
 </ul>
 </div>
 
+
+## More on GLP-1 medicines in Ireland
+
+- [**GLP-1 medicines in Ireland: evidence, benefits and access**](/health/glp1-medicines-ireland-rise-evidence/) — The broader Irish evidence and access overview.
+- [**How to get Ozempic in Ireland**](/health/how-to-get-ozempic-ireland/) — How prescription access works in Ireland.
+- [**GLP-1 side effects and when to seek help**](/health/glp1-side-effects-when-to-seek-help/) — Common adverse effects and urgent warning signs.
+- [**What happens after stopping a GLP-1?**](/health/stopping-glp1-weight-regain/) — What the discontinuation evidence shows.
+- [**Retatrutide in Ireland**](/health/retatrutide-ireland/) — What is known about the investigational triple agonist.
+
 ## Bottom line
 
 The evidence in 2026 is more reassuring than it was only a few years ago.
