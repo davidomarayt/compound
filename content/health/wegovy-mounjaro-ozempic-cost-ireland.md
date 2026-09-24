@@ -138,3 +138,12 @@ If cost makes continuation difficult, our [stopping-treatment guide](/health/sto
 We used pharmacies’ own public listings as evidence of their advertised prices, not as independent evidence of efficacy or safety. Clinical distinctions come from the EMA; the funding position comes from the HSE. We did not telephone pharmacies, verify stock or conduct an exhaustive market survey. Conflicting product descriptions are flagged rather than treated as confirmed pack details.
 
 No affiliate or purchase-tracking links are used in this article. Price tables should be checked again immediately before publication and whenever the article is updated.
+
+## More on GLP-1 medicines in Ireland
+
+- [**GLP-1 medicines in Ireland: evidence, benefits and access**](/health/glp1-medicines-ireland-rise-evidence/) — Start with the evidence and Irish treatment landscape.
+- [**How to get Ozempic in Ireland**](/health/how-to-get-ozempic-ireland/) — Prescription access, eligibility and alternatives.
+- [**GLP-1 medicines and the HSE / Medical Card**](/health/glp1-hse-medical-card-ireland/) — Current public funding position.
+- [**GLP-1 side effects and when to seek help**](/health/glp1-side-effects-when-to-seek-help/) — Safety and warning signs.
+- [**Retatrutide in Ireland**](/health/retatrutide-ireland/) — Availability and Phase 2/3 results for the investigational triple agonist.
+
