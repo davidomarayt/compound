@@ -284,3 +284,12 @@ Legitimate Ozempic and Wegovy supply requires a prescription. Avoid unverified s
 See Compound's [Irish GLP-1 cost comparison](/health/wegovy-mounjaro-ozempic-cost-ireland/), which keeps price observations separate from this evergreen access guide so they can be updated as the market changes.
 
 <p class="glp-note">How this guide was checked: prescription status comes from the Irish medicines database; authorised indication comes from EMA product information; Irish access, BMI and reimbursement statements come from current HSE patient guidance; illegal-market figures come from the HPRA. None of those sources can determine whether a medicine is appropriate for an individual reader.</p>
+
+## More on GLP-1 medicines in Ireland
+
+- [**GLP-1 medicines in Ireland: evidence, benefits and access**](/health/glp1-medicines-ireland-rise-evidence/) — The wider Irish GLP-1 picture.
+- [**Wegovy, Mounjaro and Ozempic costs in Ireland**](/health/wegovy-mounjaro-ozempic-cost-ireland/) — Compare current private prices and funding.
+- [**GLP-1 side effects and when to seek help**](/health/glp1-side-effects-when-to-seek-help/) — What is common and what needs medical attention.
+- [**GLP-1s and pregnancy**](/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/) — Pregnancy, preconception and breastfeeding guidance.
+- [**Retatrutide in Ireland**](/health/retatrutide-ireland/) — The next-generation medicine to watch.
+
