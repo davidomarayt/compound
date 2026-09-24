@@ -38,6 +38,8 @@ That distinction matters because the words *Ozempic*, *semaglutide* and *weight-
 
 This guide explains the legitimate route to treatment in Ireland, what a doctor may assess, the current HSE funding position, what it can cost privately and how Wegovy and Mounjaro fit into the picture.
 
+If pregnancy is possible or planned, see [GLP-1s and pregnancy: Ozempic, Wegovy, Mounjaro and what the evidence says](/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/) before treating these medicines as ordinary weight-management options.
+
 ## Can you get Ozempic in Ireland?
 
 Yes. Ozempic is authorised in the European Union and is available in Ireland as a **prescription-only medicine**.
