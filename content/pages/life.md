@@ -19,16 +19,16 @@ title: Life
 </section>
 
 <nav class="life-goals" aria-label="Compound Life categories">
-  <a href="#relationships-family"><span>01</span><div><h3>Relationships &amp; family</h3><p>Connection, parenting, friendships and family life.</p></div><b>Go to category ↓</b></a>
-  <a href="#work-purpose"><span>02</span><div><h3>Work &amp; purpose</h3><p>Careers, working life, time off and meaningful work.</p></div><b>Go to category ↓</b></a>
-  <a href="#travel-experiences"><span>03</span><div><h3>Travel &amp; experiences</h3><p>Trips, days out and making more of your time away.</p></div><b>Go to category ↓</b></a>
-  <a href="#home-everyday-life"><span>04</span><div><h3>Home &amp; everyday life</h3><p>Running a home, routines, energy and practical living.</p></div><b>Go to category ↓</b></a>
-  <a href="#leisure-culture"><span>05</span><div><h3>Leisure &amp; culture</h3><p>Hobbies, sport, events, books and doing things for fun.</p></div><b>Go to category ↓</b></a>
-  <a href="#community-connection"><span>06</span><div><h3>Community &amp; connection</h3><p>Friendship, belonging, local life and social connection.</p></div><b>Go to category ↓</b></a>
+  <a href="#family-relationships"><span>01</span><div><h3>Family &amp; Relationships</h3><p>Family life, parenting, friendships and the relationships around you.</p></div><b>Go to category ↓</b></a>
+  <a href="#work-careers"><span>02</span><div><h3>Work &amp; Careers</h3><p>Careers, working life, time off and the choices that shape your working week.</p></div><b>Go to category ↓</b></a>
+  <a href="#travel-days-out"><span>03</span><div><h3>Travel &amp; Days Out</h3><p>Trips, weekends, attractions and making more of your time away.</p></div><b>Go to category ↓</b></a>
+  <a href="#home-living"><span>04</span><div><h3>Home &amp; Living</h3><p>Running a home, energy, upgrades, routines and practical living.</p></div><b>Go to category ↓</b></a>
+  <a href="#leisure-culture"><span>05</span><div><h3>Leisure &amp; Culture</h3><p>Hobbies, sport, events, books and doing things for fun.</p></div><b>Go to category ↓</b></a>
+  <a href="#society-community"><span>06</span><div><h3>Society &amp; Community</h3><p>Irish society, community life, belonging and social connection.</p></div><b>Go to category ↓</b></a>
 </nav>
 
-<section class="life-category" id="relationships-family" data-sponsorship-category="relationships-family">
-  <header><span>01</span><div><p class="eyebrow">RELATIONSHIPS &amp; FAMILY</p><h2>Build the relationships around you.</h2></div><p>Family life is part logistics and part connection. This section brings both together without turning every everyday question into a health or finance problem.</p></header>
+<section class="life-category" id="family-relationships" data-sponsorship-category="family-relationships">
+  <header><span>01</span><div><p class="eyebrow">FAMILY &amp; RELATIONSHIPS</p><h2>Build the relationships around you.</h2></div><p>Family life is part logistics and part connection. This section brings both together without turning every everyday question into a health or finance problem.</p></header>
   <div class="life-resource-grid">
     <a class="life-resource life-resource-primary" href="/childcare-return-to-work-calculator/"><small>Calculator</small><h3>Childcare &amp; Return-to-Work Calculator</h3><p>Compare childcare costs with the household impact of returning to work.</p><strong>Open calculator →</strong></a>
     <a class="life-resource" href="/pregnancy-due-date-calculator/"><small>Calculator</small><h3>Pregnancy Due Date Calculator</h3><p>Estimate due dates and milestones with the assumptions clearly shown.</p><strong>Calculate due date →</strong></a>
@@ -40,8 +40,8 @@ title: Life
   </div>
 </section>
 
-<section class="life-category" id="work-purpose" data-sponsorship-category="work-purpose">
-  <header><span>02</span><div><p class="eyebrow">WORK &amp; PURPOSE</p><h2>Make work fit the rest of your life.</h2></div><p>Pay matters, but so do time, flexibility, stress and what a job leaves you with at the end of the day.</p></header>
+<section class="life-category" id="work-careers" data-sponsorship-category="work-careers">
+  <header><span>02</span><div><p class="eyebrow">WORK &amp; CAREERS</p><h2>Make work fit the rest of your life.</h2></div><p>Pay matters, but so do time, flexibility, stress and what a job leaves you with at the end of the day.</p></header>
   <div class="life-resource-grid">
     <a class="life-resource life-resource-primary" href="/salary-hourly-rate-calculator/"><small>Calculator</small><h3>Salary to Hourly Rate Calculator</h3><p>Translate annual pay into an hourly figure using your real working pattern.</p><strong>Compare your time →</strong></a>
     <a class="life-resource" href="/contractor-vs-salary-calculator/"><small>Calculator</small><h3>Contractor vs Salary Calculator</h3><p>Compare employment and contracting using realistic paid days and costs.</p><strong>Compare options →</strong></a>
@@ -54,8 +54,8 @@ title: Life
   </div>
 </section>
 
-<section class="life-category" id="travel-experiences" data-sponsorship-category="travel-experiences">
-  <header><span>03</span><div><p class="eyebrow">TRAVEL &amp; EXPERIENCES</p><h2>Spend on memories with your eyes open.</h2></div><p>Travel and days out should feel enjoyable, not like a spreadsheet. The tools here simply make the practical decisions easier.</p></header>
+<section class="life-category" id="travel-days-out" data-sponsorship-category="travel-days-out">
+  <header><span>03</span><div><p class="eyebrow">TRAVEL &amp; DAYS OUT</p><h2>Spend on memories with your eyes open.</h2></div><p>Travel and days out should feel enjoyable, not like a spreadsheet. The tools here simply make the practical decisions easier.</p></header>
   <div class="life-resource-grid">
     <a class="life-resource life-resource-primary" href="/fuel-cost-calculator/"><small>Calculator</small><h3>Fuel Cost Calculator</h3><p>Estimate the petrol or diesel cost of a trip from distance and real-world consumption.</p><strong>Price a journey →</strong></a>
     <a class="life-resource" href="/ev-charging-cost-calculator/"><small>Calculator</small><h3>EV Charging Cost Calculator</h3><p>Compare charging costs using your efficiency, tariff and charging losses.</p><strong>Calculate charging →</strong></a>
@@ -63,8 +63,8 @@ title: Life
   </div>
 </section>
 
-<section class="life-category" id="home-everyday-life" data-sponsorship-category="home-everyday-life">
-  <header><span>04</span><div><p class="eyebrow">HOME &amp; EVERYDAY LIFE</p><h2>Make the place you live work better.</h2></div><p>Home life overlaps with money, energy and comfort. This category pulls the practical decisions together in one place.</p></header>
+<section class="life-category" id="home-living" data-sponsorship-category="home-living">
+  <header><span>04</span><div><p class="eyebrow">HOME &amp; LIVING</p><h2>Make the place you live work better.</h2></div><p>Home life overlaps with money, energy and comfort. This category pulls the practical decisions together in one place.</p></header>
   <div class="life-resource-grid">
     <a class="life-resource life-resource-primary" href="/electricity-cost-calculator/"><small>Calculator</small><h3>Electricity Cost Calculator</h3><p>Turn appliance use and tariffs into a clearer monthly or annual cost.</p><strong>Calculate electricity →</strong></a>
     <a class="life-resource" href="/ber-energy-cost-calculator/"><small>Calculator</small><h3>BER &amp; Energy Cost Calculator</h3><p>Model energy use and potential savings across different home-performance assumptions.</p><strong>Explore energy costs →</strong></a>
@@ -85,8 +85,8 @@ title: Life
   </div>
 </section>
 
-<section class="life-category" id="community-connection" data-sponsorship-category="community-connection">
-  <header><span>06</span><div><p class="eyebrow">COMMUNITY &amp; CONNECTION</p><h2>Belong somewhere.</h2></div><p>Connection is easier to talk about than to build. This section focuses on the practical side of friendship, community and participation in everyday Irish life.</p></header>
+<section class="life-category" id="society-community" data-sponsorship-category="society-community">
+  <header><span>06</span><div><p class="eyebrow">SOCIETY &amp; COMMUNITY</p><h2>Understand the place you live in.</h2></div><p>This section looks at belonging, friendship, participation and the wider social changes shaping everyday life in Ireland.</p></header>
   <div class="life-reading life-reading-wide">
     <a href="/happiness/loneliness-ireland-how-common-what-helps/"><span>Connection</span><strong>Loneliness in Ireland: how common it is and what helps</strong></a>
     <a href="/happiness/how-to-make-friends-as-an-adult-ireland/"><span>Friendship</span><strong>How to make friends as an adult in Ireland</strong></a>
