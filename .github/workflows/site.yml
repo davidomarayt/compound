@@ -1,9 +1,10 @@
 # Builds the static site from content/ and publishes it to GitHub Pages whenever an article is
-# committed. The bot's DEPLOY_COMMAND does the commit and push; this does the rest. Enable once in
-# the repo: Settings -> Pages -> Source: GitHub Actions.
+# committed to the publishing branch. The bot's DEPLOY_COMMAND does the commit and push; this does
+# the rest. Enable once in the repo: Settings -> Pages -> Source: GitHub Actions.
 name: site
 on:
   push:
+    branches: ["claude/clever-babbage-uibieq"]
     paths: ["content/**", "compound/site/**", ".github/workflows/site.yml"]
   workflow_dispatch:
 permissions:
@@ -81,6 +82,12 @@ jobs:
           fetch https://compound.ie/nutrition-needs-calculator/ /tmp/nutrition.html
           grep -Fq 'Mifflin' /tmp/nutrition.html
           grep -Fq 'Frequently asked questions' /tmp/nutrition.html
+
+          fetch https://compound.ie/health/ /tmp/health.html
+          grep -Fq 'COMPOUND HEALTH' /tmp/health.html
+          grep -Fq 'Weight &amp; metabolism' /tmp/health.html || grep -Fq 'Weight & metabolism' /tmp/health.html
+          grep -Fq '/weight-loss-calculator/' /tmp/health.html
+          grep -Fq '/health/how-to-get-ozempic-ireland/' /tmp/health.html
 
           fetch https://compound.ie/static/tools.js /tmp/tools.js
           grep -Fq 'net_worth' /tmp/tools.js
@@ -165,4 +172,4 @@ jobs:
 
           grep -Fq 'Sitemap: https://compound.ie/news-sitemap.xml' <(curl --fail --silent --show-error --location https://compound.ie/robots.txt)
 
-          echo 'Live verification passed for Compound calculator catalogue, discovery metadata and flagship guides.'
+          echo 'Live verification passed for Compound calculator catalogue, Health Hub, discovery metadata and flagship guides.'
