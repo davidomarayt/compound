@@ -1,0 +1,48 @@
+name: Open Food Facts index
+
+on:
+  schedule:
+    - cron: "23 3 * * 1"
+  workflow_dispatch:
+    inputs:
+      max_rows:
+        description: "Optional source-row limit for a smoke test; 0 scans the full export"
+        required: false
+        default: "0"
+
+permissions:
+  contents: read
+
+jobs:
+  build-food-index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build Irish Open Food Facts dataset
+        env:
+          MAX_ROWS: ${{ github.event.inputs.max_rows || '0' }}
+        run: |
+          set -euo pipefail
+          python scripts/build_open_food_facts_index.py \
+            --output-dir build/food-index \
+            --max-rows "$MAX_ROWS"
+
+      - name: Report generated dataset
+        run: |
+          set -euo pipefail
+          cat build/food-index/manifest.json
+          du -h build/food-index/*
+
+      - name: Upload food index artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: compound-open-food-facts-ie
+          path: build/food-index/
+          if-no-files-found: error
+          retention-days: 14
