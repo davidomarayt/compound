@@ -1,3 +1,6 @@
 {% extends "base.html" %}
+{% block head_title %}{% if page.slug == 'life' %}Compound Life Ireland: Home, Work, Travel & Relationships{% else %}{{ page.title }} · Compound{% endif %}{% endblock %}
+{% block meta %}{% if page.slug == 'life' %}<meta name="description" content="Compound Life brings together practical Irish guides and useful tools across relationships, family, work, travel, home, leisure and community.">{% else %}{{ super() }}{% endif %}{% endblock %}
 {% block head %}<link rel="canonical" href="{{ site_url }}/{{ page.slug }}/">{% endblock %}
-{% block content %}<article class="info-page"><p class="eyebrow">COMPOUND / THE DETAILS</p><h1>{{ page.title }}</h1><div class="article-prose">{{ page.body_html|safe }}</div></article>{% endblock %}
+{% block post_styles %}{% if page.slug == 'life' %}<link rel="stylesheet" href="/static/life-hub.css?v=1">{% endif %}{% endblock %}
+{% block content %}{% if page.slug == 'life' %}<div class="life-hub">{{ page.body_html|safe }}</div>{% else %}<article class="info-page"><p class="eyebrow">COMPOUND / THE DETAILS</p><h1>{{ page.title }}</h1><div class="article-prose">{{ page.body_html|safe }}</div></article>{% endif %}{% endblock %}

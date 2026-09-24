@@ -56,9 +56,14 @@
 </section>
 {% endif %}
 
-<section class="pillar-section home-pillars-v2" aria-labelledby="pillars-title"><div class="section-heading"><div><p class="eyebrow">EXPLORE COMPOUND</p><h2 id="pillars-title">Health, wealth and everyday life.</h2></div><p>Go deeper into what matters to you.</p></div><div class="pillar-cards">
-{% for p in pillars %}<a class="pillar-tile tile-{{ p }}" href="/{{ p }}/"><div class="pillar-tile-image"><img src="/static/images/home-{{ p }}.webp" width="720" height="480" alt="" loading="lazy"></div><div class="pillar-tile-content"><div class="tile-top"><span class="eyebrow">0{{ loop.index }} / {{ pillar_labels[p] }}</span><span class="tile-arrow" aria-hidden="true">↗</span></div><h3>{{ {'health':'Health', 'wealth':'Wealth', 'happiness':'Happiness'}[p] }}</h3><p>{{ {'health':'Evidence-based health information and practical tools for life in Ireland.', 'wealth':'Practical financial guides, calculators and Irish money explained clearly.', 'happiness':'Ideas, research and Irish stories for a better everyday life.'}[p] }}</p><div class="tile-bottom"><span>Explore {{ p }}</span><span class="pillar-symbol symbol-{{ p }}" aria-hidden="true"></span></div></div></a>{% endfor %}
-</div></section>
+<section class="pillar-section home-pillars-v2" aria-labelledby="pillars-title">
+ <div class="section-heading"><div><p class="eyebrow">EXPLORE COMPOUND</p><h2 id="pillars-title">Health, Wealth, Life.</h2></div><p>Go deeper into what matters to you.</p></div>
+ <div class="pillar-cards">
+  <a class="pillar-tile tile-health" href="/health/"><div class="pillar-tile-image"><img src="/static/images/home-health.webp" width="720" height="480" alt="" loading="lazy"></div><div class="pillar-tile-content"><div class="tile-top"><span class="eyebrow">01 / HEALTH</span><span class="tile-arrow" aria-hidden="true">↗</span></div><h3>Health</h3><p>Evidence-based health information and practical tools for life in Ireland.</p><div class="tile-bottom"><span>Explore health</span><span class="pillar-symbol symbol-health" aria-hidden="true"></span></div></div></a>
+  <a class="pillar-tile tile-wealth" href="/wealth/"><div class="pillar-tile-image"><img src="/static/images/home-wealth.webp" width="720" height="480" alt="" loading="lazy"></div><div class="pillar-tile-content"><div class="tile-top"><span class="eyebrow">02 / WEALTH</span><span class="tile-arrow" aria-hidden="true">↗</span></div><h3>Wealth</h3><p>Practical financial guides, calculators and Irish money explained clearly.</p><div class="tile-bottom"><span>Explore wealth</span><span class="pillar-symbol symbol-wealth" aria-hidden="true"></span></div></div></a>
+  <a class="pillar-tile tile-happiness" href="/life/"><div class="pillar-tile-image"><img src="/static/images/home-happiness.webp" width="720" height="480" alt="" loading="lazy"></div><div class="pillar-tile-content"><div class="tile-top"><span class="eyebrow">03 / LIFE</span><span class="tile-arrow" aria-hidden="true">↗</span></div><h3>Life</h3><p>Work, relationships, home, travel, culture and the rest of everyday life.</p><div class="tile-bottom"><span>Explore life</span><span class="pillar-symbol symbol-happiness" aria-hidden="true"></span></div></div></a>
+ </div>
+</section>
 
 {% if news_articles %}
 <section class="home-news" aria-labelledby="home-news-title">
@@ -79,14 +84,23 @@
 <section class="latest-section" id="latest" aria-labelledby="latest-title">
  <div class="section-heading"><div><p class="eyebrow">GUIDES & EXPLAINERS</p><h2 id="latest-title">Worth your time.</h2></div><a class="text-link" href="/search/">View all stories <span aria-hidden="true">↗</span></a></div>
  <div class="journal-columns">
- {% for p in pillars %}
+  {% for p in ['health','wealth'] %}
   <section class="journal-column journal-column-{{ p }}" aria-labelledby="journal-{{ p }}">
    <header class="journal-column-heading"><h2 id="journal-{{ p }}"><a href="/{{ p }}/">{{ pillar_labels[p] }} <span aria-hidden="true">↗</span></a></h2></header>
    <div class="journal-column-stories">{% for a in home_articles if a.pillar == p %}{% include "_card.html" %}{% endfor %}</div>
    {% if p == 'health' %}<p><a class="text-link" href="/bmi-calculator/">Try our Irish BMI calculator ↗</a></p>{% endif %}
    <a class="text-link journal-column-more" href="/{{ p }}/">Explore {{ p }} <span aria-hidden="true">↗</span></a>
   </section>
- {% endfor %}
+  {% endfor %}
+  <section class="journal-column journal-column-happiness" aria-labelledby="journal-life">
+   <header class="journal-column-heading"><h2 id="journal-life"><a href="/life/">Life <span aria-hidden="true">↗</span></a></h2></header>
+   <div class="journal-column-stories">
+    <article class="compound-story"><div class="card-content"><div class="meta"><span class="category category-happiness">Relationships &amp; family</span></div><h3><a href="/life/#relationships-family">The people around you.</a></h3><p>Friendship, parenting, family life and practical tools for the decisions that come with them.</p></div></article>
+    <article class="compound-story"><div class="card-content"><div class="meta"><span class="category category-happiness">Work &amp; purpose</span></div><h3><a href="/life/#work-purpose">Make work fit your life.</a></h3><p>Pay, time, careers, stress and the trade-offs that shape working life.</p></div></article>
+    <article class="compound-story"><div class="card-content"><div class="meta"><span class="category category-happiness">Home &amp; experiences</span></div><h3><a href="/life/#home-everyday-life">Make everyday life work better.</a></h3><p>Home, travel, leisure, culture and community — practical where it helps, enjoyable where it should be.</p></div></article>
+   </div>
+   <a class="text-link journal-column-more" href="/life/">Explore life <span aria-hidden="true">↗</span></a>
+  </section>
  </div>
 </section>
 <section class="editorial-note"><div class="note-symbol" aria-hidden="true">✳</div><div><p class="eyebrow">LESS NOISE. MORE UNDERSTANDING.</p><h2>Life is complicated.<br>Good information shouldn’t be.</h2><p>We follow the research, explain the caveats, and link to the sources. So you can spend less time searching and more time making informed decisions.</p><a class="text-link" href="/about/">Get to know Compound <span aria-hidden="true">↗</span></a></div><span class="note-aside">INDEPENDENT THINKING.<br>PRACTICAL TOOLS.</span></section>
