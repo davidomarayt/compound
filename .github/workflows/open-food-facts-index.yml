@@ -1,6 +1,9 @@
 name: Open Food Facts index
 
 on:
+  push:
+    branches: ["feature/open-food-facts-index"]
+    paths: [".github/workflows/open-food-facts-index.yml"]
   schedule:
     - cron: "23 3 * * 1"
   workflow_dispatch:
