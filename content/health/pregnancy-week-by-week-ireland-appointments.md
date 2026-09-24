@@ -43,6 +43,8 @@ If you know your last menstrual period or due date, start with the [Pregnancy Du
 
 This article describes the **routine national schedule**. Your own maternity team may change it depending on your hospital, your previous pregnancies, your health, your baby's growth or any pregnancy complications.
 
+If you became pregnant while using Ozempic, Wegovy, Mounjaro or another GLP-1-based medicine, see [GLP-1s and pregnancy: what the evidence says](/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/). It covers accidental early exposure, preconception washout periods and the current European pregnancy advice.
+
 ## Pregnancy appointment schedule in Ireland at a glance
 
 Under the HSE's Maternity and Infant Care Scheme, routine antenatal care is shared between general practice and your chosen maternity unit.
