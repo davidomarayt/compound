@@ -51,6 +51,8 @@ It is:
 
 The [Pregnancy Due Date & Timeline Calculator](/pregnancy-due-date-calculator/) can show the standard calendar calculation, but a clinician-assigned date from your maternity team should take priority over a website estimate.
 
+For the Irish antenatal calendar itself, see [Pregnancy week by week in Ireland: GP, hospital and scan schedule](/health/pregnancy-week-by-week-ireland-appointments/).
+
 ## The two common starting points
 
 Pregnancy dating usually begins from one of two pieces of information:
