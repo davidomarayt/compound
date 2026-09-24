@@ -14,6 +14,7 @@ image_alt: 'Editorial illustration of an unbranded capped injection pen, medicin
 image_credit: 'Illustration: Compound.'
 image_source: '#image-note'
 related_tools:
+- weight-loss-calculator
 - bmi-calculator
 sources:
 - title: 'Laois Pharmacy: Ozempic price table, including Wegovy starter price. Accessed 14 September 2026.'
