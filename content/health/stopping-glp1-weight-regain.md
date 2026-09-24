@@ -109,3 +109,12 @@ If side effects are driving the decision, their severity matters. Use our [side-
 **Restarting after a gap.** Do not assume the old dose is the right starting point. Wegovy's product information says a reduced starting dose should be considered when reinitiating after multiple missed doses. Ask for product-specific advice rather than treating a leftover pen as a restart plan. [EMA: Wegovy, section 4.2](https://www.ema.europa.eu/en/documents/product-information/wegovy-epar-product-information_en.pdf)
 
 The last injection does not have to be the last point of contact. Agreeing the next appointment, the reasons to seek help sooner and the support available gives the next stage some structure. That remains worthwhile whether weight stays steady, rises or falls.
+
+## More on GLP-1 medicines in Ireland
+
+- [**GLP-1 medicines in Ireland: evidence, benefits and access**](/health/glp1-medicines-ireland-rise-evidence/) — The main Irish GLP-1 overview.
+- [**How to get Ozempic in Ireland**](/health/how-to-get-ozempic-ireland/) — Understand prescription access and alternatives.
+- [**Wegovy, Mounjaro and Ozempic costs in Ireland**](/health/wegovy-mounjaro-ozempic-cost-ireland/) — The cost of staying on treatment.
+- [**GLP-1 side effects and when to seek help**](/health/glp1-side-effects-when-to-seek-help/) — Common effects and warning signs.
+- [**GLP-1 medicines and the HSE / Medical Card**](/health/glp1-hse-medical-card-ireland/) — How current Irish funding works.
+
