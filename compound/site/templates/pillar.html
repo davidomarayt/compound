@@ -1,8 +1,8 @@
 {% extends "base.html" %}
-{% block head_title %}{% if pillar == 'health' %}Compound Health Hub Ireland: Tools & Evidence{% else %}{{ title }} · Compound{% endif %}{% endblock %}
-{% block meta %}{% if pillar == 'health' %}<meta name="description" content="Compound Health brings together free health calculators and evidence-based Irish guides across weight, nutrition, sleep, heart health, pregnancy and medicines.">{% else %}{{ super() }}{% endif %}{% endblock %}
+{% block head_title %}{% if pillar == 'health' %}Compound Health Hub Ireland: Tools & Evidence{% elif pillar == 'wealth' %}Compound Wealth Hub Ireland: Calculators & Guides{% else %}{{ title }} · Compound{% endif %}{% endblock %}
+{% block meta %}{% if pillar == 'health' %}<meta name="description" content="Compound Health brings together free health calculators and evidence-based Irish guides across weight, nutrition, sleep, heart health, pregnancy and medicines.">{% elif pillar == 'wealth' %}<meta name="description" content="Compound Wealth brings together free Irish calculators and practical guides across mortgages, investing, pensions, tax, savings, debt and family wealth.">{% else %}{{ super() }}{% endif %}{% endblock %}
 {% block head %}<link rel="canonical" href="{{ site_url }}/{{ pillar }}/">{% endblock %}
-{% block post_styles %}{% if pillar == 'health' %}<link rel="stylesheet" href="/static/health-hub.css?v=2">{% endif %}{% endblock %}
+{% block post_styles %}{% if pillar == 'health' %}<link rel="stylesheet" href="/static/health-hub.css?v=2">{% elif pillar == 'wealth' %}<link rel="stylesheet" href="/static/wealth-hub.css?v=1">{% endif %}{% endblock %}
 {% block content %}
 {% if pillar == 'health' %}
 <div class="health-hub">
@@ -149,6 +149,8 @@
   {% with slot=adsense.slots.feed, name="feed" %}{% include "_ad.html" %}{% endwith %}
   {% include "_signup.html" %}
 </div>
+{% elif pillar == 'wealth' %}
+{% include "wealth_hub.html" %}
 {% else %}
 <section class="collection-hero collection-{{ pillar }}"><div><p class="eyebrow">THE COMPOUND JOURNAL / {{ pillar_labels[pillar] }}</p><h1>{{ {'health':'A little better.<br>From the inside out.', 'wealth':'More clarity.<br>More possibility.', 'happiness':'Make space<br>for the good.'}[pillar]|safe }}</h1><p>{{ pillar_blurbs[pillar] }}</p></div><img src="/static/images/{{ pillar }}.jpg" alt="" width="800" height="520"></section>
 <div class="section-heading collection-heading"><h2>The {{ pillar }} edit.</h2><span>{{ articles|length }} stories to explore</span></div>
