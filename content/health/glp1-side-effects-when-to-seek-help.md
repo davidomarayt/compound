@@ -109,3 +109,12 @@ If treatment needs to change, ask what happens next and who will follow up. Our 
 Patients and carers can report directly to the HPRA, including when they suspect a medicine but are not certain. A useful report identifies the medicine and describes what happened. These reports contribute to safety monitoring; submitting one does not prove causation. [HPRA: patient reporting](https://www.hpra.ie/safety-information/how-we-monitor-safety/medicines/reporting-suspected-side-effects-to-the-hpra/reporting-a-suspected-side-effect-as-a-patient-or-carer)
 
 Reporting is separate from getting care. The HPRA does not provide clinical advice, so contact a health professional about symptoms and use emergency services when needed. You do not have to decide whether a reaction is officially attributable to the medicine before asking for help.
+
+## More on GLP-1 medicines in Ireland
+
+- [**GLP-1 medicines in Ireland: evidence, benefits and access**](/health/glp1-medicines-ireland-rise-evidence/) — Start with the class-wide Irish overview.
+- [**How to get Ozempic in Ireland**](/health/how-to-get-ozempic-ireland/) — The regulated access pathway.
+- [**Wegovy, Mounjaro and Ozempic costs in Ireland**](/health/wegovy-mounjaro-ozempic-cost-ireland/) — Private price and funding context.
+- [**GLP-1s and pregnancy**](/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/) — Current pregnancy, preconception and breastfeeding evidence.
+- [**What happens after stopping a GLP-1?**](/health/stopping-glp1-weight-regain/) — Weight regain and long-term treatment evidence.
+
