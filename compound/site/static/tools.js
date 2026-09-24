@@ -573,6 +573,14 @@
         items.push('Maintenance energy is a prediction from resting energy × the selected activity factor, not a direct measurement.');
         items.push('The protein setting is '+(v.protein_context==='resistance'?'1.6 g/kg/day for the resistance-training illustration.':'0.83 g/kg/day for the general adult reference illustration.'));
         break;
+      case 'weight_loss': {
+        const h=Math.max(0,v.height||0)/100, current=Math.max(0,v.current_weight||0), target=Math.max(0,v.target_weight||0);
+        const bmi=h>0?current/(h*h):0, change=Math.max(0,current-target), changePct=current>0?change/current*100:0;
+        items.push('Your selected target is '+num(changePct)+'% below the starting weight entered.');
+        items.push('BMI is a screening measure only; HSE notes that it cannot distinguish muscle from fat and should not be read as a diagnosis.');
+        if(v.__advanced) items.push('The timeline is simple arithmetic using the pace you entered, not a forecast of how quickly your body will lose weight.');
+        break;
+      }
       case 'pregnancy_timeline':
         items.push(v.assigned_due_date?'The assigned due date takes priority over the LMP-derived estimate in this scenario.':'The due date is estimated as 280 days from the LMP entered.');
         items.push('Clinical dating from an early ultrasound can supersede a menstrual-date estimate.');
@@ -608,6 +616,13 @@
   };
 
   const validateRelationships = (name,v) => {
+    if(name==='weight_loss'){
+      const h=Math.max(0,v.height||0)/100, current=Math.max(0,v.current_weight||0), target=Math.max(0,v.target_weight||0);
+      const currentBmi=h>0?current/(h*h):0, targetBmi=h>0?target/(h*h):0;
+      if(target>=current) return 'Target weight must be below current weight for this weight-loss calculator.';
+      if(currentBmi<18.5) return 'This tool is not suitable for planning further weight loss when BMI is below 18.5. Speak with a healthcare professional if weight change is a concern.';
+      if(targetBmi<18.5) return 'Choose a target that corresponds to a BMI of 18.5 or above. Discuss a lower target with a healthcare professional rather than relying on this calculator.';
+    }
     if(name==='pension_projection' && v.retirement_age<=v.age) return 'Target retirement age must be later than your current age.';
     if(name==='lifetime_cost' && v.end_age<=v.current_age) return 'The projection end age must be later than your current age.';
     if(name==='car_finance' && v.deposit>v.car_price) return 'The car-finance deposit cannot exceed the car price.';
@@ -649,10 +664,10 @@
     const zeroY=y(0); svg+='<line class="tool-chart-grid" x1="'+L+'" x2="'+(W-R)+'" y1="'+zeroY.toFixed(1)+'" y2="'+zeroY.toFixed(1)+'"/>';
     if(spec.type==='bar'){
       const n=Math.max(1,labels.length), group=plotW/n, totalBar=Math.min(group*.72,80), bw=totalBar/Math.max(1,series.length);
-      labels.forEach((lab,i)=>{ const cx=L+group*(i+.5); svg+='<text class="tool-chart-axis" x="'+cx.toFixed(1)+'" y="'+(H-18)+'" text-anchor="middle">'+esc(lab)+'</text>'; series.forEach((s,j)=>{const v=Number(s.values[i])||0,x=cx-totalBar/2+j*bw,yy=y(Math.max(0,v)),y0=y(Math.min(0,v)),top=Math.min(yy,y0),h=Math.max(1,Math.abs(y0-yy));svg+='<rect class="tool-chart-bar tool-chart-series-'+(j%3)+(v<0?' tool-chart-negative':'')+'" x="'+x.toFixed(1)+'" y="'+top.toFixed(1)+'" width="'+Math.max(2,bw-3).toFixed(1)+'" height="'+h.toFixed(1)+'"><title>'+esc(s.label)+': '+esc(money(v))+'</title></rect>';});});
+      labels.forEach((lab,i)=>{ const cx=L+group*(i+.5); svg+='<text class="tool-chart-axis" x="'+cx.toFixed(1)+'" y="'+(H-18)+'" text-anchor="middle">'+esc(lab)+'</text>'; series.forEach((s,j)=>{const v=Number(s.values[i])||0,x=cx-totalBar/2+j*bw,yy=y(Math.max(0,v)),y0=y(Math.min(0,v)),top=Math.min(yy,y0),h=Math.max(1,Math.abs(y0-yy));svg+='<rect class="tool-chart-bar tool-chart-series-'+(j%3)+(v<0?' tool-chart-negative':'')+'" x="'+x.toFixed(1)+'" y="'+top.toFixed(1)+'" width="'+Math.max(2,bw-3).toFixed(1)+'" height="'+h.toFixed(1)+'"><title>'+esc(s.label)+': '+esc(spec.currency===false?num(v):money(v))+'</title></rect>';});});
     } else {
       const n=Math.max(1,labels.length-1);
-      series.forEach((s,j)=>{let pts='';s.values.forEach((v,i)=>{const x=L+plotW*(i/n),yy=y(Number(v)||0);pts+=x.toFixed(1)+','+yy.toFixed(1)+' ';});svg+='<polyline class="tool-chart-line tool-chart-series-'+(j%3)+'" points="'+pts.trim()+'"/>';s.values.forEach((v,i)=>{if(i===0||i===s.values.length-1||i%Math.max(1,Math.ceil(s.values.length/12))===0){const x=L+plotW*(i/n),yy=y(Number(v)||0);svg+='<circle class="tool-chart-point tool-chart-series-'+(j%3)+'" cx="'+x.toFixed(1)+'" cy="'+yy.toFixed(1)+'" r="4"><title>'+esc(labels[i])+': '+esc(s.label)+' '+esc(money(Number(v)||0))+'</title></circle>';}});});
+      series.forEach((s,j)=>{let pts='';s.values.forEach((v,i)=>{const x=L+plotW*(i/n),yy=y(Number(v)||0);pts+=x.toFixed(1)+','+yy.toFixed(1)+' ';});svg+='<polyline class="tool-chart-line tool-chart-series-'+(j%3)+'" points="'+pts.trim()+'"/>';s.values.forEach((v,i)=>{if(i===0||i===s.values.length-1||i%Math.max(1,Math.ceil(s.values.length/12))===0){const x=L+plotW*(i/n),yy=y(Number(v)||0);svg+='<circle class="tool-chart-point tool-chart-series-'+(j%3)+'" cx="'+x.toFixed(1)+'" cy="'+yy.toFixed(1)+'" r="4"><title>'+esc(labels[i])+': '+esc(s.label)+' '+esc(spec.currency===false?num(Number(v)||0):money(Number(v)||0))+'</title></circle>';}});});
       const ticks=[0,Math.round(n*.25),Math.round(n*.5),Math.round(n*.75),n].filter((v,i,a)=>a.indexOf(v)===i);
       ticks.forEach(i=>{const x=L+plotW*(i/n);svg+='<text class="tool-chart-axis" x="'+x.toFixed(1)+'" y="'+(H-18)+'" text-anchor="middle">'+esc(labels[i])+'</text>';});
     }
@@ -1761,6 +1776,41 @@
         target:num(Math.round(target))+' kcal/day',energy_delta:(delta>=0?'+':'-')+num(Math.abs(Math.round(delta)))+' kcal/day',
         protein:num(proteinG)+' g/day',protein_per_kg:num(proteinRate)+' g/kg/day',fat:num(fatG)+' g/day',carbs:num(carbG)+' g/day',fibre:'At least 25 g/day',
         __chart:advanced?{type:'bar',currency:false,title:'Illustrative macro amounts',caption:'Protein uses the selected evidence/reference context; fat is set at 30% of energy and carbohydrate is the mathematical remainder.',labels:['Protein','Fat','Carbohydrate'],series:[{label:'g/day',values:[proteinG,fatG,carbG]}]}:{type:'bar',currency:false,title:'Resting and estimated maintenance energy',caption:'Resting energy is predicted from Mifflin–St Jeor and maintenance multiplies that estimate by the selected physical activity level.',labels:['Resting','Maintenance'],series:[{label:'kcal/day',values:[resting,maintenance]}]}
+      };
+    },
+    weight_loss(v){
+      const advanced=Boolean(v.__advanced),current=Math.max(0,v.current_weight||0),target=Math.max(0,v.target_weight||0),h=Math.max(0,v.height||0)/100;
+      const bmi=h>0?current/(h*h):0,targetBmi=h>0?target/(h*h):0,loss=Math.max(0,current-target),lossPct=current>0?loss/current*100:0;
+      const category=(x)=>x<18.5?'Underweight':x<25?'Healthy weight':x<30?'Overweight':'Obesity';
+      const milestone=(p)=>current*(1-p/100);
+      const rate=advanced?Math.max(.1,Math.min(1,Number(v.weekly_rate)||.5)):0;
+      const weeks=advanced&&rate>0?loss/rate:0;
+      const months=weeks/4.345;
+      const todayLocal=new Date(), today=new Date(Date.UTC(todayLocal.getFullYear(),todayLocal.getMonth(),todayLocal.getDate()));
+      const targetDate=advanced?addDaysUTC(today,Math.round(weeks*7)):null;
+      const includeWaist=advanced&&Boolean(v.include_waist),ratio=includeWaist&&v.height>0?Math.max(0,v.waist||0)/Math.max(1,v.height):0;
+      let waistContext='Not included';
+      if(includeWaist){
+        if(bmi>=35) waistContext=(ratio>=.5?'At/above 0.5':'Below 0.5')+' — HSE notes this measure is less accurate at BMI 35+';
+        else waistContext=ratio>=.5?'At or above HSE 0.5 increased-risk threshold':'Below HSE 0.5 increased-risk threshold';
+      }
+      const labels=['Current','5%','10%','15%','20%','Target'];
+      const values=[current,milestone(5),milestone(10),milestone(15),milestone(20),target];
+      return {
+        kg_to_target:num(loss)+' kg',
+        percentage_to_target:num(lossPct)+'%',
+        current_bmi:num(bmi),
+        current_bmi_category:category(bmi),
+        target_bmi:num(targetBmi),
+        milestone_5:num(milestone(5))+' kg',
+        milestone_10:num(milestone(10))+' kg',
+        milestone_15:num(milestone(15))+' kg',
+        milestone_20:num(milestone(20))+' kg',
+        estimated_time:advanced?(num(weeks)+' weeks (about '+num(months)+' months)'):'—',
+        estimated_date:advanced?formatDateIE(targetDate):'—',
+        waist_height_ratio:includeWaist?num(ratio):'Not included',
+        waist_context:waistContext,
+        __chart:{type:'line',currency:false,title:'Starting weight, percentage milestones and target',caption:'The 5%, 10%, 15% and 20% points are arithmetic reductions from your starting weight. They are reference milestones, not promises of outcome.',labels,series:[{label:'Weight (kg)',values}]}
       };
     },
     pregnancy_timeline(v){
