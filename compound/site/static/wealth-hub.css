@@ -1,0 +1,74 @@
+.wealth-hub{display:grid;gap:64px}
+.wealth-hub-hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(360px,.95fr);gap:34px;align-items:stretch;margin:18px 0 0}
+.wealth-hub-hero-copy{background:var(--wealth);color:#fffdf9;border-radius:4px;padding:clamp(36px,5vw,76px);display:flex;flex-direction:column;justify-content:center;min-height:500px}
+.wealth-hub-hero-copy .eyebrow{margin-bottom:22px;opacity:.8}
+.wealth-hub-hero-copy h1{font-size:clamp(60px,7vw,104px);line-height:.92;max-width:8ch}
+.wealth-hub-hero-copy>p:not(.eyebrow){font-size:17px;line-height:1.75;max-width:580px;margin-top:28px;color:#f6eee5}
+.wealth-hub-trust{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.wealth-hub-trust span{border:1px solid rgba(255,255,255,.34);border-radius:999px;padding:8px 12px;font-size:11px;letter-spacing:.02em}
+.wealth-hub-hero-media{position:relative;min-height:500px;border-radius:4px;overflow:hidden}
+.wealth-hub-hero-media img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
+.wealth-hub-intro{display:grid;grid-template-columns:.72fr 1.28fr;gap:48px;align-items:start}
+.wealth-hub-intro h2{font-size:clamp(40px,4.4vw,64px)}
+.wealth-hub-intro-copy{font-size:17px;line-height:1.8;color:var(--ink-2);max-width:760px}
+.wealth-hub-intro-copy strong{color:var(--ink)}
+.wealth-goals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.wealth-goal{display:flex;min-height:180px;padding:24px;border:1px solid var(--line);background:var(--surface);border-radius:4px;flex-direction:column;justify-content:space-between;transition:transform .2s,border-color .2s,background .2s}
+.wealth-goal:hover{transform:translateY(-3px);border-color:var(--wealth);background:#f7f0e8}
+.wealth-goal-number{font-size:11px;color:var(--wealth);font-weight:700;letter-spacing:.08em}
+.wealth-goal h3{font-family:var(--serif);font-size:28px;letter-spacing:-.03em;margin-top:20px}
+.wealth-goal p{font-size:13px;line-height:1.55;color:var(--muted);margin-top:10px}
+.wealth-goal-jump{font-size:11px;font-weight:700;color:var(--wealth);margin-top:22px}
+.wealth-category-section{scroll-margin-top:32px;border-top:1px solid var(--line-2);padding-top:56px;display:grid;gap:26px}
+.wealth-category-section:nth-of-type(even){background:linear-gradient(90deg,rgba(240,227,211,.5),rgba(240,227,211,0));margin-left:-2vw;margin-right:-2vw;padding-left:2vw;padding-right:2vw;padding-bottom:38px;border-radius:4px}
+.wealth-category-featured{border-top:3px solid var(--wealth)}
+.wealth-category-header{display:grid;grid-template-columns:68px minmax(0,1fr) minmax(280px,470px);gap:26px;align-items:start}
+.wealth-category-number{font-family:var(--serif);font-size:50px;line-height:.9;color:var(--wealth);opacity:.58}
+.wealth-category-header .eyebrow{color:var(--wealth);margin-bottom:10px}
+.wealth-category-header h2{font-size:clamp(42px,4.5vw,66px);max-width:12ch}
+.wealth-category-header>p{color:var(--ink-2);line-height:1.75;padding-top:4px}
+.wealth-category-tools{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.wealth-resource{display:flex;flex-direction:column;min-height:230px;border:1px solid var(--line);background:var(--surface);border-radius:4px;padding:25px;transition:transform .2s,border-color .2s}
+.wealth-resource:hover{transform:translateY(-3px);border-color:var(--wealth)}
+.wealth-resource>span{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--wealth);margin-bottom:18px}
+.wealth-resource h3{font-size:30px;line-height:1.05}
+.wealth-resource p{font-size:13px;line-height:1.6;color:var(--muted);margin-top:13px}
+.wealth-resource strong{font-size:12px;color:var(--wealth);margin-top:auto;padding-top:22px}
+.wealth-resource-primary{background:var(--wealth-soft);border-color:#d6c0a8}
+.wealth-category-reading{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 18px;border-top:1px solid var(--line)}
+.wealth-category-reading a{padding:21px 4px 22px;border-bottom:1px solid var(--line);display:block}
+.wealth-category-reading a span{display:block;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--wealth);margin-bottom:8px}
+.wealth-category-reading a strong{display:block;font-family:var(--serif);font-size:23px;font-weight:400;line-height:1.18;letter-spacing:-.02em}
+.wealth-category-reading a:hover strong{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.wealth-latest{border-top:1px solid var(--line);padding-top:54px}
+.wealth-latest .section-heading{margin-bottom:28px}
+.wealth-evidence{display:grid;grid-template-columns:.65fr 1.35fr;gap:46px;background:var(--wealth);color:#fffdf9;border-radius:4px;padding:clamp(30px,5vw,62px)}
+.wealth-evidence h2{font-size:clamp(38px,4vw,58px)}
+.wealth-evidence-copy{display:grid;gap:16px;color:#f6eee5;line-height:1.75}
+.wealth-evidence-copy a{text-decoration:underline;text-underline-offset:3px}
+.wealth-evidence-points{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+.wealth-evidence-points span{border:1px solid rgba(255,255,255,.28);padding:14px;border-radius:3px;font-size:12px;line-height:1.45}
+@media(max-width:980px){
+  .wealth-hub{gap:50px}
+  .wealth-hub-hero{grid-template-columns:1fr}
+  .wealth-hub-hero-copy,.wealth-hub-hero-media{min-height:430px}
+  .wealth-hub-intro,.wealth-category-header,.wealth-evidence{grid-template-columns:1fr}
+  .wealth-category-number{font-size:36px}
+  .wealth-goals,.wealth-category-tools,.wealth-category-reading{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .wealth-hub{gap:42px}
+  .wealth-hub-hero{gap:12px}
+  .wealth-hub-hero-copy{padding:34px 24px;min-height:390px}
+  .wealth-hub-hero-copy h1{font-size:58px}
+  .wealth-hub-hero-media{min-height:300px}
+  .wealth-hub-intro{gap:20px}
+  .wealth-goals,.wealth-category-tools,.wealth-category-reading,.wealth-evidence-points{grid-template-columns:1fr}
+  .wealth-goal{min-height:158px}
+  .wealth-category-section{scroll-margin-top:18px;padding-top:42px}
+  .wealth-category-section:nth-of-type(even){margin-left:-12px;margin-right:-12px;padding-left:12px;padding-right:12px;padding-bottom:28px}
+  .wealth-category-header{gap:14px}
+  .wealth-category-header h2{font-size:45px}
+  .wealth-resource{min-height:210px}
+  .wealth-evidence{gap:24px;padding:32px 24px}
+}

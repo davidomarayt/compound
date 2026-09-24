@@ -89,6 +89,16 @@ jobs:
           grep -Fq '/weight-loss-calculator/' /tmp/health.html
           grep -Fq '/health/how-to-get-ozempic-ireland/' /tmp/health.html
 
+          fetch https://compound.ie/wealth/ /tmp/wealth.html
+          grep -Fq 'COMPOUND WEALTH' /tmp/wealth.html
+          grep -Fq 'Mortgages &amp; home' /tmp/wealth.html || grep -Fq 'Mortgages & home' /tmp/wealth.html
+          grep -Fq 'Pensions &amp; retirement' /tmp/wealth.html || grep -Fq 'Pensions & retirement' /tmp/wealth.html
+          grep -Fq '/compound-interest-calculator/' /tmp/wealth.html
+          grep -Fq '/pension-projection-calculator/' /tmp/wealth.html
+          grep -Fq '/take-home-pay-calculator/' /tmp/wealth.html
+          grep -Fq '/debt-repayment-calculator/' /tmp/wealth.html
+          grep -Fq '/inheritance-tax-calculator/' /tmp/wealth.html
+
           fetch https://compound.ie/static/tools.js /tmp/tools.js
           grep -Fq 'net_worth' /tmp/tools.js
           grep -Fq 'solar_payback' /tmp/tools.js
@@ -172,4 +182,4 @@ jobs:
 
           grep -Fq 'Sitemap: https://compound.ie/news-sitemap.xml' <(curl --fail --silent --show-error --location https://compound.ie/robots.txt)
 
-          echo 'Live verification passed for Compound calculator catalogue, Health Hub, discovery metadata and flagship guides.'
+          echo 'Live verification passed for Compound calculator catalogue, Health and Wealth Hubs, discovery metadata and flagship guides.'
