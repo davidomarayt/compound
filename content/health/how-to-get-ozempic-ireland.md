@@ -9,10 +9,10 @@ draft: false
 summary: "Ozempic is available in Ireland on prescription, but it is authorised for type 2 diabetes rather than weight management. Here is how access works, what to ask your doctor and where Wegovy and Mounjaro fit."
 meta_description: "How to get Ozempic in Ireland in 2026: prescription rules, HSE coverage, weight-loss use, cost, Wegovy and Mounjaro alternatives, and safe access."
 tags: [ozempic, semaglutide, glp-1, wegovy, mounjaro, obesity, diabetes, irish-healthcare]
-image: /static/images/glp1-injector.jpg
-image_alt: Close-up of a semaglutide injector pen resting on its cap.
-image_credit: Haberdoedas / Unsplash
-image_source: https://unsplash.com/photos/a-semaglutide-injection-pen-is-shown-TzKc7FGaL7Y
+
+
+
+
 related_tools:
 - weight-loss-calculator
 - bmi-calculator
