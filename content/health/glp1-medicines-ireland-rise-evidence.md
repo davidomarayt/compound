@@ -43,6 +43,18 @@ sources:
 <p>For someone considering treatment, the questions are fairly immediate. Will it help? What are the side effects? Is it covered? And what happens if paying for it becomes difficult?</p>
 <p>The public conversation about Ozempic, Wegovy and Mounjaro can move quickly past those questions. A striking weight-loss photograph tells one kind of story. An Irish reimbursement record or a clinical trial tells another, usually with more qualifications.</p>
 <p>There is a substantial medical development here. There is also a growing gap between recognising that a treatment can work and knowing who will be able to use it over time.</p>
+<section class="glp-callout">
+<h2>Start here: GLP-1 medicines in Ireland</h2>
+<p>This page is the central guide to the Compound GLP-1 cluster. Use the route that matches the question you actually have.</p>
+<ul>
+<li><strong>Considering treatment:</strong> <a href="/health/how-to-get-ozempic-ireland/">how regulated Ozempic access works in Ireland</a> and <a href="/health/wegovy-mounjaro-ozempic-cost-ireland/">what Wegovy, Mounjaro and Ozempic cost</a>.</li>
+<li><strong>Paying for treatment:</strong> <a href="/health/glp1-hse-medical-card-ireland/">GLP-1 medicines, the HSE and Medical Card</a>.</li>
+<li><strong>Already taking one:</strong> <a href="/health/glp1-side-effects-when-to-seek-help/">side effects and warning signs</a> and <a href="/health/stopping-glp1-weight-regain/">what happens after stopping treatment</a>.</li>
+<li><strong>Pregnant or planning pregnancy:</strong> <a href="/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/">GLP-1s and pregnancy</a>.</li>
+<li><strong>What comes next:</strong> <a href="/health/retatrutide-ireland/">Retatrutide in Ireland</a>, including the latest Phase 2/3 results and availability status.</li>
+</ul>
+</section>
+
 <h2>How much has use grown in Ireland?</h2>
 <p>An analysis by HSE and Medicines Management Programme researchers found that the number of people receiving a GLP-1 receptor agonist through the schemes studied rose from approximately <strong>21,400 in January 2022 to 51,800 in December 2024</strong>—an increase of about <strong>142%</strong>. Ozempic accounted for most use and expenditure. <a href="https://www.ispor.org/heor-resources/presentations-database/presentation-cti/ispor-europe-2025/poster-session-5-2/utilization-of-glucagon-like-peptide-1-receptor-agonists-in-the-irish-healthcare-system">Irish utilisation study</a>.</p>
 <figure class="glp-figure" aria-labelledby="glp-spending-chart-title"><h3 id="glp-spending-chart-title">Annual public expenditure on the GLP-1 medicines studied</h3><p class="glp-unit">€ million</p><div class="glp-row"><div class="glp-bar-label"><span>2022</span><strong>€45.94m</strong></div><div class="glp-track" aria-hidden="true"><div class="glp-fill" style="width:57.4250%"></div></div></div><div class="glp-row"><div class="glp-bar-label"><span>2023</span><strong>€61.31m</strong></div><div class="glp-track" aria-hidden="true"><div class="glp-fill" style="width:76.6375%"></div></div></div><div class="glp-row"><div class="glp-bar-label"><span>2024</span><strong>€78.78m</strong></div><div class="glp-track" aria-hidden="true"><div class="glp-fill" style="width:98.4750%"></div></div></div><div class="glp-axis" aria-hidden="true"><span>0</span><span>40</span><span>80</span></div><figcaption>Approximate totals; public schemes only, including diabetes treatment. Source: Doran et al., ISPOR Europe 2025, HPR235. Graphic: Compound. <a href="https://www.ispor.org/heor-resources/presentations-database/presentation-cti/ispor-europe-2025/poster-session-5-2/utilization-of-glucagon-like-peptide-1-receptor-agonists-in-the-irish-healthcare-system">Read source</a></figcaption></figure><p>These are public pharmacy-claims figures across the medical-card, Drugs Payment and Long-Term Illness schemes, covering liraglutide, semaglutide, dulaglutide and exenatide. <strong>They are not a count of everyone taking weight-loss medicines.</strong> Diabetes treatment is included; private prescriptions and subsequent growth are not captured. The findings were presented as a 2025 conference abstract, rather than a full research paper.</p>
@@ -88,3 +100,12 @@ sources:
 <p>For an individual, a useful appointment starts with five questions: What health outcome are we treating? Why this medicine? How will we monitor benefits and side effects? What is the full ongoing cost? What is the plan if it does not suit me or I need to stop?</p>
 <p>The rise of these medicines deserves serious attention because the evidence shows meaningful treatment effects. Making those benefits accessible, sustainable and safe is the harder part of the Irish story.</p>
 <p class="glp-note">How this article was checked: Irish utilisation figures come from a defined public-claims analysis; clinical results come from a published randomised trial, a trial extension and EU product information; funding statements come from HSE and NCPE records. Charts are Compound redraws of reported numbers. We have not inferred a 2026 national user total or a confirmed future reimbursement date.</p>
+
+## More on GLP-1 medicines in Ireland
+
+- [**How to get Ozempic in Ireland**](/health/how-to-get-ozempic-ireland/) — prescription access, eligibility and alternatives.
+- [**Wegovy, Mounjaro and Ozempic costs in Ireland**](/health/wegovy-mounjaro-ozempic-cost-ireland/) — current private prices and funding context.
+- [**GLP-1 side effects and when to seek help**](/health/glp1-side-effects-when-to-seek-help/) — common adverse effects and urgent warning signs.
+- [**GLP-1 medicines and the HSE / Medical Card**](/health/glp1-hse-medical-card-ireland/) — public funding and reimbursement.
+- [**Retatrutide in Ireland**](/health/retatrutide-ireland/) — the investigational triple agonist and what to watch next.
+

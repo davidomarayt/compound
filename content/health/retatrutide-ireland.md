@@ -720,6 +720,15 @@ There is no official Irish pharmacy price because retatrutide has not been appro
 
 Products advertised online are not an approved retatrutide medicine. Lilly warns against products claiming to be retatrutide outside its clinical trials because purity, dose and contents cannot be reliably assured.
 
+
+## More on GLP-1 medicines in Ireland
+
+- [**GLP-1 medicines in Ireland: evidence, benefits and access**](/health/glp1-medicines-ireland-rise-evidence/) — Put retatrutide in the wider Irish treatment landscape.
+- [**How to get Ozempic in Ireland**](/health/how-to-get-ozempic-ireland/) — How approved prescription access currently works.
+- [**Wegovy, Mounjaro and Ozempic costs in Ireland**](/health/wegovy-mounjaro-ozempic-cost-ireland/) — Compare currently available medicines and prices.
+- [**GLP-1 side effects and when to seek help**](/health/glp1-side-effects-when-to-seek-help/) — Safety information for approved GLP-1-based treatments.
+- [**What happens after stopping a GLP-1?**](/health/stopping-glp1-weight-regain/) — What long-term discontinuation evidence shows.
+
 ## Bottom line
 
 Retatrutide has moved from an interesting Phase 2 drug to one of the most closely watched late-stage obesity medicines in the world.

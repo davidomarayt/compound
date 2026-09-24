@@ -110,3 +110,12 @@ Try to leave the consultation or pharmacy with answers to four questions:
 If access is declined, ask for the precise reason: a medicine outside the scheme, an unmet clinical criterion, missing information or an application still being processed. Those are different problems and need different next steps. A refusal of funding is not, by itself, a verdict on whether someone's health needs deserve care.
 
 <p class="glp-note">Editorial scope: this guide explains public payment routes. It does not determine clinical suitability or guarantee reimbursement. Funding changes will be checked against HSE decisions rather than inferred from media reports or private advertisements.</p>
+
+## More on GLP-1 medicines in Ireland
+
+- [**GLP-1 medicines in Ireland: evidence, benefits and access**](/health/glp1-medicines-ireland-rise-evidence/) — Start with the wider Irish GLP-1 overview.
+- [**Wegovy, Mounjaro and Ozempic costs in Ireland**](/health/wegovy-mounjaro-ozempic-cost-ireland/) — Compare private prices and funding context.
+- [**How to get Ozempic in Ireland**](/health/how-to-get-ozempic-ireland/) — Understand the regulated prescription route.
+- [**What happens after stopping a GLP-1?**](/health/stopping-glp1-weight-regain/) — See what the withdrawal studies actually found.
+- [**GLP-1 side effects and when to seek help**](/health/glp1-side-effects-when-to-seek-help/) — Separate common symptoms from warning signs.
+
