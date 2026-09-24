@@ -3047,6 +3047,44 @@ tools:
       - {title: "Casuso and Goossens 2025 — protein timing before versus after exercise meta-analysis", url: "https://pubmed.ncbi.nlm.nih.gov/40647175/"}
       - {title: "WHO — updated guidance on fats and carbohydrates", url: "https://www.who.int/news/item/17-07-2023-who-updates-guidelines-on-fats-and-carbohydrates"}
 
+  - slug: weight-loss-calculator
+    title: Weight Loss Calculator Ireland
+    category: Health
+    formula: weight_loss
+    summary: Calculate BMI, target-weight change, 5% to 20% weight-loss milestones and an optional timeline scenario, with Irish clinical context.
+    meta_description: Free weight loss calculator Ireland. Calculate BMI, target weight, percentage loss, 5–20% milestones and an optional timeline with HSE-based context.
+    updated: 2026-09-24
+    basic_note: "Basic mode shows your current BMI, the change to your chosen target and 5%, 10%, 15% and 20% body-weight milestones."
+    advanced_note: "Advanced mode adds an arithmetic weekly-loss timeline and optional waist-to-height ratio. These are planning scenarios, not a prescription or medicine-eligibility test."
+    fields:
+      - {id: current_weight, label: Current weight, type: number, suffix: kg, default: 95, min: 35, max: 350, step: 0.1, section_start: Your starting point}
+      - {id: height, label: Height, type: number, suffix: cm, default: 175, min: 120, max: 230, step: 0.1}
+      - {id: target_weight, label: Target weight, type: number, suffix: kg, default: 85, min: 35, max: 350, step: 0.1, help: "A planning target only. The calculator will not project a target below BMI 18.5."}
+      - {id: weekly_rate, label: Scenario weight-loss pace, type: number, suffix: "kg/week", default: 0.5, min: 0.1, max: 1, step: 0.1, advanced: true, section_start: Advanced timeline, help: "Used only to divide kilograms-to-target by a weekly pace. It is not a recommended rate for you."}
+      - {id: include_waist, label: Include waist-to-height ratio, type: checkbox, default: false, advanced: true, section_start: Optional waist check}
+      - {id: waist, label: Waist circumference, type: number, suffix: cm, default: 90, min: 40, max: 250, step: 0.1, advanced: true, show_if: include_waist, help: "Measure midway between your lowest rib and hip bone, using the same units as height. HSE says waist-to-height ratio is less accurate when BMI is 35 or above."}
+    results:
+      - {id: kg_to_target, label: Weight to target}
+      - {id: percentage_to_target, label: Percentage of starting weight}
+      - {id: current_bmi, label: Current BMI}
+      - {id: current_bmi_category, label: HSE BMI screening category}
+      - {id: target_bmi, label: BMI at target weight}
+      - {id: milestone_5, label: Weight after 5% loss}
+      - {id: milestone_10, label: Weight after 10% loss}
+      - {id: milestone_15, label: Weight after 15% loss}
+      - {id: milestone_20, label: Weight after 20% loss}
+      - {id: estimated_time, label: Timeline at entered pace, advanced: true}
+      - {id: estimated_date, label: Approximate target date, advanced: true}
+      - {id: waist_height_ratio, label: Waist-to-height ratio, advanced: true}
+      - {id: waist_context, label: Waist-ratio context, advanced: true}
+    result_note: "Adult educational planning tool only. BMI and waist measures are screening tools, not diagnoses. It does not determine whether weight loss or a prescription medicine is appropriate for you."
+    sources:
+      - {title: "HSE — How obesity is diagnosed: BMI and waist-to-height ratio", url: "https://www2.hse.ie/conditions/obesity/diagnosis/"}
+      - {title: "HSE — Obesity treatment and healthy weight-management context", url: "https://www2.hse.ie/conditions/obesity/treatment/"}
+      - {title: "HSE — Medicines to treat obesity", url: "https://www2.hse.ie/conditions/obesity/medicines/"}
+      - {title: "HSE — Model of Care for the Management of Overweight and Obesity", url: "https://www.hse.ie/eng/about/who/cspd/ncps/obesity/model-of-care/obesity-model-of-care.pdf"}
+      - {title: "NICE NG246 — Overweight and obesity management", url: "https://www.nice.org.uk/guidance/ng246"}
+
   - slug: pregnancy-due-date-calculator
     title: Pregnancy Due Date & Timeline Calculator Ireland
     category: Family & Life Planning
