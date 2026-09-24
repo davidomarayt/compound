@@ -1,5 +1,5 @@
 ---
-title: 'Retatrutide in Ireland: what is it, can you get it, and how does it compare with Mounjaro, Wegovy and Ozempic?'
+title: 'Retatrutide Ireland: what is it, can you get it, and how does it compare with Mounjaro, Wegovy and Ozempic?'
 seo_title: 'Retatrutide Ireland: Availability, Results & GLP-1 Comparison'
 slug: retatrutide-ireland
 pillar: health
@@ -32,6 +32,8 @@ sources:
   url: https://www.nejm.org/doi/full/10.1056/NEJMoa2032183
 - title: 'Jastreboff AM et al. Tirzepatide Once Weekly for the Treatment of Obesity — SURMOUNT-1. New England Journal of Medicine. 2022.'
   url: https://www.nejm.org/doi/10.1056/NEJMoa2206038
+- title: 'Aronne LJ et al. Tirzepatide as Compared with Semaglutide for the Treatment of Obesity — SURMOUNT-5. New England Journal of Medicine. 2025.'
+  url: https://pubmed.ncbi.nlm.nih.gov/40353578/
 - title: 'Pi-Sunyer X et al. Liraglutide 3.0 mg for Weight Management — SCALE. New England Journal of Medicine. 2015.'
   url: https://www.nejm.org/doi/full/10.1056/NEJMoa1411892
 - title: 'RTÉ: Public warned not to take unapproved retatrutide — 23 August 2026.'
@@ -362,6 +364,23 @@ Separate trials therefore suggest an approximate progression:
 for average weight loss in the specific studies shown.
 
 But that sequence is **not yet a proven head-to-head hierarchy**.
+
+### What we already know from Mounjaro vs Wegovy head-to-head
+
+There **is** now a direct head-to-head obesity trial for two approved medicines.
+
+In **SURMOUNT-5**, tirzepatide was compared directly with semaglutide over 72 weeks in 751 adults with obesity and without type 2 diabetes.
+
+Average weight reduction was approximately:
+
+- **20.2% with tirzepatide**;
+- **13.7% with semaglutide**.
+
+That result confirms that trial-to-trial comparisons can sometimes be tested properly when the drugs are studied in the same protocol.
+
+Retatrutide has not yet had that published head-to-head moment.
+
+That is why the pending **TRIUMPH-5 retatrutide-versus-tirzepatide trial** matters much more than simply placing separate headline percentages beside each other.
 
 ## Retatrutide vs Mounjaro: is retatrutide actually better?
 
