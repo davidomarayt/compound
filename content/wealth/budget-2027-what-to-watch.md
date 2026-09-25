@@ -7,6 +7,7 @@ title: 'Budget 2027 Ireland: Tax Cuts, Rent Credit & What We Know So Far'
 slug: budget-2027-what-to-watch
 pillar: wealth
 date: '2026-09-23'
+reviewed: '2026-09-25'
 summary: Budget 2027 is due on 6 October. Here is what has been confirmed, what is still being negotiated, and what the tax, rent, energy and childcare measures could mean for Irish households.
 meta_description: 'Budget 2027 Ireland: latest on income tax cuts, the Rent Tax Credit, fuel and energy measures, childcare and household finances before 6 October.'
 tags:
@@ -37,9 +38,11 @@ sources:
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx
 - title: 'Department of Social Protection: PRSI Class A rates'
   url: https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/
+- title: 'RTÉ: Details of new personal investment account scheme revealed'
+  url: https://www.rte.ie/news/business/2026/0831/1589781-personal-investment-account-scheme-launched/
 charts: []
 ---
-<p><em>Updated 23 September 2026. Budget 2027 will be delivered on Tuesday, 6 October 2026. This page separates announced Government positions from proposals and pre-Budget speculation, and will be updated as measures are confirmed.</em></p>
+<p><em>Updated 25 September 2026. Budget 2027 will be delivered on Tuesday, 6 October 2026. This page separates announced Government positions from proposals and pre-Budget speculation, and will be updated as measures are confirmed.</em></p>
 
 <p><strong>Budget 2027 is now less than two weeks away</strong>, and the picture is becoming clearer. The Government has set aside <strong>€1.5 billion for tax measures</strong>, Taoiseach Micheál Martin has said the <strong>Rent Tax Credit will increase</strong>, and ministers are examining income-tax, fuel, energy, childcare and other cost-of-living measures.</p>
 
@@ -156,6 +159,16 @@ charts: []
 <p>For someone earning €50,000 a year and fully subject to that rate, a 0.15 percentage-point increase is approximately €75 across a full year, or €6.25 per month. That is a simplified illustration of the rate change alone.</p>
 
 <p>This is why the final Budget effect should be calculated across <strong>income tax, USC, PRSI and any household supports together</strong>, rather than from the headline income-tax measure alone.</p>
+
+<h2>Personal Investment Account: three key numbers are coming in the Budget</h2>
+
+<p>Budget 2027 will also fill in the most important missing details of Ireland's new <strong>Personal Investment Account</strong>, which is intended to become available in 2027.</p>
+
+<p>The framework has already been announced: eligible investments are expected to include shares, bonds, funds and ETFs; the existing deemed-disposal regime will not apply inside the account; and providers are expected to handle the tax administration.</p>
+
+<p>What is still unknown is the <strong>tax-free threshold, annual flat tax rate and annual contribution limit</strong>. Those three figures are due to be announced as part of Budget 2027 and will determine how the account compares with normal taxable investing.</p>
+
+<p>See our full <a href="/wealth/personal-investment-account-ireland/">Personal Investment Account Ireland guide</a> for the current rules, the deemed-disposal change and a comparison with pensions and ordinary brokerage accounts.</p>
 
 <h2>Other Budget 2027 measures to watch</h2>
 
