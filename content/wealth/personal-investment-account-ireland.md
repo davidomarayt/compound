@@ -8,10 +8,6 @@ reviewed: 2026-09-25
 summary: 'Ireland is introducing a new Personal Investment Account in 2027. Here is what is confirmed so far about tax, ETFs, deemed disposal, contribution limits, eligibility and the key Budget 2027 details still unknown.'
 meta_description: 'Ireland’s new Personal Investment Account explained: 2027 launch, ETFs, shares, tax-free threshold, no deemed disposal, tax rules and Budget 2027 updates.'
 tags: [personal investment account, ireland, investing, etfs, deemed disposal, investment tax, budget 2027]
-image: /static/images/home-wealth.webp
-image_alt: 'Editorial illustration representing investing and long-term wealth building in Ireland.'
-image_credit: 'Illustration: Compound.'
-image_source: '#image-note'
 related_tools:
 - compound-interest-calculator
 - investment-fee-calculator
