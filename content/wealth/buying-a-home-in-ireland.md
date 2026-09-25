@@ -4,7 +4,7 @@ seo_title: 'Buying a Home in Ireland 101: Complete Buyer Course'
 slug: buying-a-home-in-ireland
 pillar: wealth
 date: 2026-09-23
-reviewed: 2026-09-23
+reviewed: 2026-09-25
 summary: 'A complete nine-chapter guide to buying a home in Ireland: deposit, mortgage approval, first-time buyer supports, bidding, survey, solicitor, mortgage choice, drawdown, closing and what happens after you get the keys.'
 meta_description: 'Buying a home in Ireland explained in 9 chapters: deposit, mortgage approval, Help to Buy, First Home Scheme, bidding, survey, solicitor, drawdown and closing.'
 tags: [buying a home, ireland, first-time buyer, mortgage, house deposit, help to buy, first home scheme, wealth]
@@ -171,6 +171,8 @@ This course is designed to keep those decisions separate and deliberate.
 <a href="/wealth/mortgage-overpayments-100-euro-ireland/"><strong>What €100 Extra a Month Can Do</strong><p>A detailed look at Irish mortgage overpayments and interest saved.</p></a>
 <a href="/wealth/is-switching-your-mortgage-worth-it-ireland/"><strong>Is Switching Your Mortgage Worth It?</strong><p>Compare remaining balance, switching costs and possible savings.</p></a>
 <a href="/wealth/how-to-start-investing-in-ireland/"><strong>Investing in Ireland 101</strong><p>Once the home finances are stable, build the wider long-term plan.</p></a>
+<a href="/wealth/pensions-in-ireland/"><strong>Pensions in Ireland 101</strong><p>Balance mortgage decisions with retirement saving, employer contributions and long-term tax planning.</p></a>
+<a href="/wealth/wealth-for-a-100-year-life/"><strong>Wealth for a 100-Year Life</strong><p>See housing as one part of a longer plan covering retirement, inflation, care and financial flexibility.</p></a>
 </div>
 
 ## Frequently asked questions
