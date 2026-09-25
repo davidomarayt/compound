@@ -4,7 +4,7 @@ seo_title: 'Pensions in Ireland 101: Complete Beginner Course'
 slug: pensions-in-ireland
 pillar: wealth
 date: 2026-09-23
-reviewed: 2026-09-23
+reviewed: 2026-09-25
 summary: 'A complete eight-chapter Irish pension course covering workplace pensions, PRSAs, MyFutureFund, tax relief, AVCs, contribution levels, pension funds and fees, transfers, retirement access and lump-sum tax.'
 meta_description: 'Pensions in Ireland explained in 8 chapters: workplace pensions, PRSAs, MyFutureFund, tax relief, AVCs, fees, transfers, retirement age, ARFs and lump sums.'
 tags: [pensions, ireland, retirement, prsa, myfuturefund, tax relief, avc, wealth]
@@ -153,6 +153,8 @@ The eight chapters form the core course. These related guides go deeper into spe
 <a href="/wealth/myfuturefund-vs-private-pension-ireland/"><strong>MyFutureFund vs Private Pension</strong><p>A detailed 2026 comparison of contribution rates, tax support, access and flexibility.</p></a>
 <a href="/wealth/pension-vs-investing-ireland/"><strong>Pension vs Investing Outside a Pension</strong><p>Compare the pension wrapper with a normal taxable investment account.</p></a>
 <a href="/wealth/how-to-start-investing-in-ireland/"><strong>Investing in Ireland 101</strong><p>See pensions in the wider context of ETFs, shares, tax, brokers and diversification.</p></a>
+<a href="/wealth/wealth-for-a-100-year-life/"><strong>Wealth for a 100-Year Life</strong><p>Put retirement saving into the wider context of inflation, housing, care and a longer financial life.</p></a>
+<a href="/wealth/buying-a-home-in-ireland/"><strong>Buying a Home in Ireland 101</strong><p>Connect pension planning with the other major long-term household balance-sheet decision.</p></a>
 </div>
 
 ## Frequently asked questions
