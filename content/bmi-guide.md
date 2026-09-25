@@ -111,17 +111,21 @@ Healthy Ireland recommends **5–7 servings of vegetables, salad and fruit each 
 
 For an everyday starting point, add vegetables to a meal you already cook, put fruit on your shopping list, or prepare lunch ahead of a busy shift. Batch cooking can reduce the effort needed later in the week. The aim is a routine that fits your life. [5]
 
+For the nutritional side in more detail, see the [complete macronutrients and micronutrients guide](/health/macronutrients-micronutrients-guide-ireland/) and the dedicated guide to [how much protein adults need](/health/how-much-protein-do-you-need-ireland/).
+
 ### 3. Look beyond the scales
 
 The HSE’s approach to obesity care includes food, activity, sleep, mental health and other medical conditions. It recommends manageable changes and advises against fad diets promising rapid weight loss. A GP or dietitian can help you find an approach suited to your circumstances. [HSE: Treatment and lifestyle [6]](#source-care)
 
 Consider a small, specific habit you can repeat: a regular meal break, a short walk or a more consistent bedtime. These are examples, not a prescribed treatment plan. Progress can include feeling stronger, sleeping better or finding daily activity easier; the calculator cannot measure those changes.
 
+For a broader view of health beyond body weight, [Health for a 100-Year Life](/health/health-for-a-100-year-life/) looks at strength, prevention, food, sleep and maintaining capability over time.
+
 <h2 id="bmi-help">Where to get support in Ireland</h2>
 
 Start with your **GP** if your weight concerns you or affects your health. You can bring questions about changes over time, current medicines and what support is available locally. Depending on your needs, care may involve a dietitian, nurse, physiotherapist, psychologist or specialist doctor. Ask your GP about local courses and support groups. [HSE [6]](#source-care)
 
-BMI alone cannot tell you whether you need weight-management medicine or qualify for funding. Those are separate clinical and eligibility decisions. Explore our [Irish health guides](/health/) for further reading, and use a consultation to discuss your own circumstances.
+BMI alone cannot tell you whether you need weight-management medicine or qualify for funding. Those are separate clinical and eligibility decisions. If you are researching medicines, the [GLP-1 medicines in Ireland guide](/health/glp1-medicines-ireland-rise-evidence/) is the central hub for access, costs, side effects, pregnancy and what happens after stopping treatment. For lifestyle and nutrition context, use the [macronutrients and micronutrients guide](/health/macronutrients-micronutrients-guide-ireland/) or the broader [Health for a 100-Year Life](/health/health-for-a-100-year-life/).
 
 <h2 id="bmi-faq">Questions about the calculator</h2>
 
