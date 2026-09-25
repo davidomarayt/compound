@@ -4,7 +4,7 @@ seo_title: 'Investing in Ireland 101: Beginner’s Guide & Course'
 slug: how-to-start-investing-in-ireland
 pillar: wealth
 date: 2026-09-23
-reviewed: 2026-09-23
+reviewed: 2026-09-25
 summary: 'Investing in Ireland 101: a nine-chapter beginner course covering preparation, pensions, shares and ETFs, Irish investment tax, diversification, brokers, fees, monthly investing and portfolio maintenance.'
 meta_description: 'Learn how to start investing in Ireland with a practical 9-chapter beginner course covering pensions, ETFs, shares, Irish tax, brokers, fees and diversification.'
 tags: [investing, ireland, beginners, etfs, shares, pensions, tax, wealth]
@@ -172,6 +172,8 @@ An Irish resident can face very different tax treatment depending on whether mon
 That means “buy the cheapest fund” or “just buy the S&P 500” is not a complete Irish investing plan.
 
 The course is built around **after-tax, after-fee, real-world decision making**, not around finding the most exciting product.
+
+> **New for 2027:** Ireland is introducing a [Personal Investment Account](/wealth/personal-investment-account-ireland/) with a new tax framework for eligible shares, bonds, funds and ETFs. The tax-free threshold, annual tax rate and contribution cap are due to be set in Budget 2027.
 
 <div class="course-principles">
 <div><span>01</span><strong>Goal before product</strong><p>Decide what the money is for and when it may be needed.</p></div>
