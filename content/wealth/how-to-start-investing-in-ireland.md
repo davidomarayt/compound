@@ -255,6 +255,13 @@ Many funds and ETFs can fall under Ireland's investment-fund tax rules rather th
 
 There is no single best platform for everyone. Compare the legal entity, regulator, custody arrangements, dealing and FX costs, recurring fees, tax records and transfer options. [Chapter 6 gives a neutral comparison framework.](/wealth/choose-investment-broker-ireland/)
 
+## Continue your Wealth plan
+
+- [Pensions in Ireland 101](/wealth/pensions-in-ireland/) — put investing alongside employer contributions, tax relief and retirement access.
+- [Buying a Home in Ireland 101](/wealth/buying-a-home-in-ireland/) — connect long-term investing with deposits, mortgages and housing costs.
+- [Wealth for a 100-Year Life](/wealth/wealth-for-a-100-year-life/) — see investing in the wider context of inflation, housing, retirement and care.
+- [Saving for Your Child in Ireland](/wealth/saving-for-your-child-ireland/) — apply long-horizon investing principles to a specific family goal.
+
 <div class="course-final-cta">
 <span>READY TO BEGIN?</span>
 <h2>Start with the money before the market.</h2>
