@@ -94,6 +94,16 @@ def pexels_photo(query: str, api_key: str) -> dict[str, Any] | None:
         return photos[0] if photos else None
 
 
+def pexels_photo_by_id(photo_id: str, api_key: str) -> dict[str, Any]:
+    with httpx.Client(timeout=30, follow_redirects=True) as client:
+        response = client.get(
+            f"https://api.pexels.com/v1/photos/{photo_id}",
+            headers={"Authorization": api_key},
+        )
+        response.raise_for_status()
+        return response.json()
+
+
 def download(url: str, destination: Path) -> None:
     destination.parent.mkdir(parents=True, exist_ok=True)
     with httpx.Client(timeout=60, follow_redirects=True) as client:
@@ -171,6 +181,26 @@ def inject_fields(path: Path, raw: str, match: re.Match[str], fields: dict[str, 
 
 def process(path: Path, api_key: str, force: bool = False) -> str:
     meta, raw, match = parse(path)
+    slug = str(meta.get("slug") or path.stem)
+
+    # Evergreen articles can pin a specific Pexels photo by ID. This keeps the
+    # selected cover stable while reusing the same attribution/download pipeline.
+    pinned_pexels_id = str(meta.get("pexels_photo_id") or "").strip()
+    if pinned_pexels_id:
+        if not api_key:
+            raise RuntimeError(f"PEXELS_API_KEY is required for pinned cover on {slug}")
+        photo = pexels_photo_by_id(pinned_pexels_id, api_key)
+        hero_rel = f"/static/images/evergreen/{slug}.jpg"
+        download(photo["src"]["landscape"], STATIC / hero_rel.removeprefix("/static/"))
+        fields = {
+            "image": hero_rel,
+            "image_alt": str(photo.get("alt") or f"Illustrative photo for {meta.get('title', 'Compound')}"),
+            "image_credit": f"{photo.get('photographer', 'Pexels photographer')} on Pexels",
+            "image_source": str(photo.get("url") or "https://www.pexels.com"),
+        }
+        inject_fields(path, raw, match, fields)
+        return f"pexels-pinned:{pinned_pexels_id}"
+
     if not is_published_news(meta):
         return "skip:not-news"
 
@@ -178,7 +208,6 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
     if existing and not force and not (api_key and is_fallback(meta)):
         return "skip:has-image"
 
-    slug = str(meta.get("slug") or path.stem)
     query = default_query(meta)
     NEWS_IMAGES.mkdir(parents=True, exist_ok=True)
 
