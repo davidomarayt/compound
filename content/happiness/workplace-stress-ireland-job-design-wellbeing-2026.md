@@ -396,3 +396,8 @@ Those changes are harder than buying a wellbeing platform.
 They may also matter more.
 
 <p><em>This article discusses population-level workplace research and is not medical advice. If stress is persistently affecting your health, sleep, mood or ability to function, consider speaking with a GP or appropriate health professional.</em></p>
+
+
+## Related Compound guides
+
+For the individual side of the same problem, see [Stress symptoms: what helps in Ireland](/happiness/stress-symptoms-what-helps-ireland/) and [Burnout symptoms and recovery](/happiness/burnout-symptoms-recovery-ireland/). If time away from work is not actually restoring you, read [Why time off doesn't feel like a break](/happiness/why-time-off-doesnt-feel-like-a-break/).
