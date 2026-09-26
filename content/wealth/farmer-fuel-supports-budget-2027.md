@@ -50,3 +50,6 @@ For now, the key point is that **additional support is being actively considered
 Budget 2027 is due on **6 October 2026**.
 
 For the wider measures under discussion, see Compound's **[Budget 2027 tracker](/wealth/budget-2027-what-to-watch/)**.
+
+
+For a practical estimate of what diesel price changes mean over your own annual mileage or machinery use, use Compound's [Fuel Cost Calculator](/fuel-cost-calculator/). The broader package of measures under discussion is tracked in the [Budget 2027 guide](/wealth/budget-2027-what-to-watch/).
