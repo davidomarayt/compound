@@ -247,3 +247,8 @@ If introduced as reported, it could shift the scheme from a general spare-room i
 The final Budget measure could differ from what is currently being discussed.
 
 Until it is announced and legislated, **€14,000 remains the number that matters for tax purposes**.
+
+
+## Related Compound guides
+
+For the wider measures still being negotiated, follow the [Budget 2027 tracker](/wealth/budget-2027-what-to-watch/). Homeowners considering whether extra room income could change their mortgage position can also model repayments with the [Mortgage Calculator](/mortgage-calculator/) or test overpayments with the [Mortgage Overpayment Calculator](/mortgage-overpayment-calculator/).
