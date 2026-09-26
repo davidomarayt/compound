@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">Most common sports and physical activities in Ireland, Q3 2025</title>
+<desc id="desc">Walking or hiking 42.3%, gym-based activities 22.4%, swimming 9.8%, running 9.3%, cycling 6.9%, soccer 4.7%, Gaelic football 3.9%, hurling or camogie 2.2%, rugby 0.7%.</desc>
+<rect width="1200" height="720" fill="#ffffff"/>
+<text x="70" y="72" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#17212b">How Ireland exercises</text>
+<text x="70" y="112" font-family="Arial, sans-serif" font-size="20" fill="#5c6670">Share of people aged 15–74 participating in each activity, Q3 2025</text>
+<g font-family="Arial, sans-serif" font-size="19" fill="#17212b">
+<text x="70" y="174">Walking / hiking</text><rect x="310" y="150" width="762" height="30" rx="6" fill="#2f6f5e"/><text x="1090" y="173" font-weight="700">42.3%</text>
+<text x="70" y="236">Gym-based</text><rect x="310" y="212" width="403" height="30" rx="6" fill="#2f6f5e"/><text x="731" y="235" font-weight="700">22.4%</text>
+<text x="70" y="298">Swimming</text><rect x="310" y="274" width="176" height="30" rx="6" fill="#2f6f5e"/><text x="504" y="297" font-weight="700">9.8%</text>
+<text x="70" y="360">Running</text><rect x="310" y="336" width="167" height="30" rx="6" fill="#2f6f5e"/><text x="495" y="359" font-weight="700">9.3%</text>
+<text x="70" y="422">Cycling</text><rect x="310" y="398" width="124" height="30" rx="6" fill="#2f6f5e"/><text x="452" y="421" font-weight="700">6.9%</text>
+<text x="70" y="484">Soccer</text><rect x="310" y="460" width="85" height="30" rx="6" fill="#2f6f5e"/><text x="413" y="483" font-weight="700">4.7%</text>
+<text x="70" y="546">Gaelic football</text><rect x="310" y="522" width="70" height="30" rx="6" fill="#2f6f5e"/><text x="398" y="545" font-weight="700">3.9%</text>
+<text x="70" y="608">Hurling / camogie</text><rect x="310" y="584" width="40" height="30" rx="6" fill="#2f6f5e"/><text x="368" y="607" font-weight="700">2.2%</text>
+<text x="70" y="670">Rugby</text><rect x="310" y="646" width="13" height="30" rx="6" fill="#2f6f5e"/><text x="341" y="669" font-weight="700">0.7%</text>
+</g>
+<text x="70" y="705" font-family="Arial, sans-serif" font-size="14" fill="#69737d">Source: CSO Labour Force Survey — Sports and Physical Exercise Q3 2025. People may report more than one activity.</text>
+</svg>
