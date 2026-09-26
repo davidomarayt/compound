@@ -187,19 +187,45 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
     # selected cover stable while reusing the same attribution/download pipeline.
     pinned_pexels_id = str(meta.get("pexels_photo_id") or "").strip()
     if pinned_pexels_id:
-        if not api_key:
-            raise RuntimeError(f"PEXELS_API_KEY is required for pinned cover on {slug}")
-        photo = pexels_photo_by_id(pinned_pexels_id, api_key)
-        hero_rel = f"/static/images/evergreen/{slug}.jpg"
-        download(photo["src"]["landscape"], STATIC / hero_rel.removeprefix("/static/"))
-        fields = {
-            "image": hero_rel,
-            "image_alt": str(photo.get("alt") or f"Illustrative photo for {meta.get('title', 'Compound')}"),
-            "image_credit": f"{photo.get('photographer', 'Pexels photographer')} on Pexels",
-            "image_source": str(photo.get("url") or "https://www.pexels.com"),
-        }
-        inject_fields(path, raw, match, fields)
-        return f"pexels-pinned:{pinned_pexels_id}"
+        # Pinned evergreen covers are stable assets. Do not hit Pexels on every
+        # build once the image already exists; that only burns API quota.
+        if image_exists(meta) and not force:
+            return "skip:has-pinned-image"
+
+        try:
+            if not api_key:
+                raise RuntimeError(f"PEXELS_API_KEY is required for pinned cover on {slug}")
+            photo = pexels_photo_by_id(pinned_pexels_id, api_key)
+            hero_rel = f"/static/images/evergreen/{slug}.jpg"
+            download(photo["src"]["landscape"], STATIC / hero_rel.removeprefix("/static/"))
+            fields = {
+                "image": hero_rel,
+                "image_alt": str(photo.get("alt") or f"Illustrative photo for {meta.get('title', 'Compound')}"),
+                "image_credit": f"{photo.get('photographer', 'Pexels photographer')} on Pexels",
+                "image_source": str(photo.get("url") or "https://www.pexels.com"),
+            }
+            inject_fields(path, raw, match, fields)
+            return f"pexels-pinned:{pinned_pexels_id}"
+        except Exception as exc:
+            # A transient Pexels outage/rate limit must never take down the site.
+            print(f"Pexels pinned lookup failed for {path.name}: {exc}")
+            if image_exists(meta):
+                return "skip:pinned-fetch-failed-existing"
+
+            if is_published_news(meta):
+                fallback_rel = f"/static/images/news/{slug}.svg"
+                fallback_svg(meta, STATIC / fallback_rel.removeprefix("/static/"))
+                fields = {
+                    "image": fallback_rel,
+                    "image_alt": f"Compound editorial graphic for {meta.get('title', 'this news story')}",
+                    "image_credit": "Illustration: Compound news fallback",
+                    "image_source": "#image-note",
+                    "social_image": fallback_rel,
+                }
+                inject_fields(path, raw, match, fields)
+                return "fallback:pinned-pexels-unavailable"
+
+            return "skip:pinned-pexels-unavailable"
 
     if not is_published_news(meta):
         return "skip:not-news"
