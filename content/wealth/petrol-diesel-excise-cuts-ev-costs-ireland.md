@@ -90,3 +90,6 @@ It also lets you enter the fuel consumption and petrol or diesel price of a comp
 **[Compare EV charging with petrol or diesel costs →](/ev-charging-cost-calculator/)**
 
 The excise extension is still being considered, so the eventual timing and structure of any further deferral could change before Budget 2027 measures are finalised.
+
+
+For the wider package of tax and cost-of-living measures still under discussion, follow the [Budget 2027 tracker](/wealth/budget-2027-what-to-watch/). To compare combustion running costs directly, use the [Fuel Cost Calculator](/fuel-cost-calculator/) alongside the EV charging tool above.
