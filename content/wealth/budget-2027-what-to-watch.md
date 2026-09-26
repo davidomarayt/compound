@@ -91,6 +91,8 @@ charts: []
 
 <p>The €1.5 billion tax figure is particularly important for workers because it sets the broad envelope within which income-tax and other tax changes are being negotiated. It does <strong>not</strong> mean €1.5 billion will be distributed evenly between taxpayers.</p>
 
+<p>For the wider context on why the €44,000 higher-rate threshold matters, see our new explainer: <a href="/news/ireland-40-percent-tax-rate-threshold-europe/">Ireland's 40% tax band starts at €44,000 — how that really compares with Europe</a>.</p>
+
 <h2>Income tax: what could change?</h2>
 
 <p>For 2026, a single person without qualifying children pays income tax at 20% on the first <strong>€44,000</strong> of taxable income and 40% on income above that level. Different bands apply to some married couples, civil partners and lone parents. <a href="https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx" target="_blank" rel="noopener noreferrer">Revenue publishes the current bands and credits here</a>.</p>
