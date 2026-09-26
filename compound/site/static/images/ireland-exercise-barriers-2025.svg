@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<title id="title">Main reasons people in Ireland did not participate in sport or physical exercise, Q3 2025</title>
+<desc id="desc">Lack of time due to work 33.9%, lack of time due to family commitments 22.5%, illness injury or disability 21.6%, and lack of motivation 19.5%.</desc>
+<rect width="1200" height="520" fill="#ffffff"/>
+<text x="70" y="72" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#17212b">What gets in the way?</text>
+<text x="70" y="112" font-family="Arial, sans-serif" font-size="20" fill="#5c6670">Reasons given by people who did not participate in sport or physical exercise</text>
+<g font-family="Arial, sans-serif" font-size="20" fill="#17212b">
+<text x="70" y="190">Work / lack of time</text><rect x="365" y="164" width="610" height="34" rx="6" fill="#b05b3b"/><text x="993" y="189" font-weight="700">33.9%</text>
+<text x="70" y="266">Family commitments</text><rect x="365" y="240" width="405" height="34" rx="6" fill="#b05b3b"/><text x="788" y="265" font-weight="700">22.5%</text>
+<text x="70" y="342">Illness, injury or disability</text><rect x="365" y="316" width="389" height="34" rx="6" fill="#b05b3b"/><text x="772" y="341" font-weight="700">21.6%</text>
+<text x="70" y="418">Lack of motivation</text><rect x="365" y="392" width="351" height="34" rx="6" fill="#b05b3b"/><text x="734" y="417" font-weight="700">19.5%</text>
+</g>
+<text x="70" y="485" font-family="Arial, sans-serif" font-size="14" fill="#69737d">Source: CSO Labour Force Survey — Sports and Physical Exercise Q3 2025.</text>
+</svg>
