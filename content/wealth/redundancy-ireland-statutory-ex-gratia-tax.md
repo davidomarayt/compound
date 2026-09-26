@@ -11,6 +11,7 @@ tags: [redundancy, statutory-redundancy, ex-gratia, tax, employment, ireland]
 related_tools:
 - redundancy-calculator-ireland
 - take-home-pay-calculator
+- emergency-fund-calculator
 sources:
 - title: 'Department of Enterprise: Redundancy Payments'
   url: https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/redundancy-payments/
@@ -219,3 +220,8 @@ Start with the statutory amount. Then separate every additional component of the
 That prevents the most common error: assuming the words "redundancy payment" automatically mean the entire amount is tax free.
 
 Use the [Redundancy Calculator Ireland](/redundancy-calculator-ireland/) for the numbers, then verify a material ex-gratia package against the current Revenue guidance or professional advice before acting.
+
+
+## What to do after the redundancy calculation
+
+If redundancy also means changing employer or leaving a workplace pension behind, read [Changing jobs in Ireland: what happens to your pension](/wealth/changing-jobs-transfer-pension-ireland/). If the payment needs to bridge a period without income, the [Emergency Fund Calculator](/emergency-fund-calculator/) can turn essential monthly spending into a target runway.
