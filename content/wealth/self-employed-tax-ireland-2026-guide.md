@@ -12,6 +12,7 @@ related_tools:
 - self-employed-tax-calculator-ireland
 - income-tax-calculator
 - pension-tax-relief-calculator
+- take-home-pay-calculator
 - contractor-vs-salary-calculator
 sources:
 - title: 'Revenue: Income Tax rates, bands and credits'
@@ -218,3 +219,8 @@ No. It is a planning estimate. A Form 11 is the actual tax return and can includ
 For day-to-day business decisions, turnover is useful. For personal cash planning, **profit after business costs and the estimated tax reserve** is usually more informative.
 
 Run the [Self-Employed Tax Calculator Ireland](/self-employed-tax-calculator-ireland/) whenever expected profit changes materially, rather than waiting until the tax deadline to discover the size of the liability.
+
+
+## Related tax guides
+
+If you are comparing self-employment with PAYE work, the [Take-Home Pay Calculator](/take-home-pay-calculator/) gives the employee-side benchmark. For the wider Irish tax system, see [Tax credits in Ireland explained](/wealth/tax-credits-ireland-explained/) and [Ireland's 40% tax band starts at €44,000 — how that really compares with Europe](/news/ireland-40-percent-tax-rate-threshold-europe/).
