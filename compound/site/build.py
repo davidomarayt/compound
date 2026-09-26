@@ -710,6 +710,14 @@ def generate_discover_images(a: Article, output_dir: Path) -> None:
     if not a.image:
         return
     source = HERE / a.image.lstrip("/")
+
+    # The news-image pipeline can temporarily fall back to a branded SVG when
+    # the stock-photo provider is rate-limited. Pillow cannot rasterise SVGs,
+    # so skip Discover derivatives rather than failing the entire site build.
+    # A later successful image refresh will restore the normal raster variants.
+    if source.suffix.lower() == ".svg":
+        return
+
     target_dir = output_dir / "static" / "discover"
     target_dir.mkdir(parents=True, exist_ok=True)
     with Image.open(source) as image:
