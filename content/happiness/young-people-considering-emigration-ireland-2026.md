@@ -254,3 +254,8 @@ It may be:
 > **Why do so many believe their quality of life would be better if they did?**
 
 <p><em>This article reports survey findings and official migration data. Survey responses represent stated attitudes at the time of polling and should not be interpreted as a forecast of future migration.</em></p>
+
+
+## Related Compound guides
+
+The pressures identified in the survey overlap with some of Compound's practical money guides. If housing is the issue, start with [Buying a Home in Ireland](/wealth/buying-a-home-in-ireland/). If the question is whether a higher salary abroad would actually improve day-to-day finances, the [Salary & Hourly Rate Calculator](/salary-hourly-rate-calculator/) and [Lifetime Cost Calculator](/lifetime-cost-calculator/) can help put the numbers into context.
