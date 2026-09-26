@@ -7,7 +7,7 @@ title: 'Budget 2027 Ireland: Tax Cuts, Rent Credit & What We Know So Far'
 slug: budget-2027-what-to-watch
 pillar: wealth
 date: '2026-09-23'
-reviewed: '2026-09-25'
+reviewed: '2026-09-26'
 summary: Budget 2027 is due on 6 October. Here is what has been confirmed, what is still being negotiated, and what the tax, rent, energy and childcare measures could mean for Irish households.
 meta_description: 'Budget 2027 Ireland: latest on income tax cuts, the Rent Tax Credit, fuel and energy measures, childcare and household finances before 6 October.'
 tags:
@@ -21,6 +21,7 @@ related_tools:
 - take-home-pay-calculator
 - childcare-return-to-work-calculator
 - myfuturefund-calculator
+- retirement-income-calculator
 sources:
 - title: 'Department of Finance: Summer Economic Statement 2026'
   url: https://www.gov.ie/en/department-of-finance/press-releases/t%C3%A1naiste-simon-harris-and-minister-jack-chambers-publish-summer-economic-statement-2026/
@@ -38,6 +39,10 @@ sources:
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx
 - title: 'Department of Social Protection: PRSI Class A rates'
   url: https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/
+- title: 'Department of Social Protection: State Pension (Contributory)'
+  url: https://www.gov.ie/en/service/e6f908-state-pension-contributory/
+- title: 'Business Plus: Budget 2027 — how much more can you expect in your pocket?'
+  url: https://businessplus.ie/economy/budget-2027-what-we-know-so-far/
 - title: 'RTÉ: Details of new personal investment account scheme revealed'
   url: https://www.rte.ie/news/business/2026/0831/1589781-personal-investment-account-scheme-launched/
 charts: []
@@ -61,6 +66,7 @@ charts: []
 <tr><td>How large is the tax package?</td><td>The Summer Economic Statement allocated <strong>€1.5 billion</strong> for tax measures.</td></tr>
 <tr><td>Will the Rent Tax Credit increase?</td><td><strong>Yes.</strong> The Taoiseach has said it will increase, but the final amount has not yet been announced.</td></tr>
 <tr><td>Will income tax change?</td><td>The Government has committed to personal-tax changes. The exact mix of bands, credits and other measures remains unsettled.</td></tr>
+<tr><td>Will the State Pension increase?</td><td><strong>Reports now point to an increase of at least €7.50 a week.</strong> The final rate will be confirmed on Budget Day.</td></tr>
 <tr><td>Will the 40% tax band rise?</td><td>An increase is being considered. No new threshold has yet been confirmed.</td></tr>
 <tr><td>Will there be electricity credits?</td><td>No final Budget decision has been announced. Government comments have pointed away from a repeat of broad universal supports, although energy measures remain under discussion.</td></tr>
 <tr><td>Are fuel measures possible?</td><td>Yes. Fuel excise and other energy-cost measures are being examined.</td></tr>
@@ -169,6 +175,12 @@ charts: []
 <p>What is still unknown is the <strong>tax-free threshold, annual flat tax rate and annual contribution limit</strong>. Those three figures are due to be announced as part of Budget 2027 and will determine how the account compares with normal taxable investing.</p>
 
 <p>See our full <a href="/wealth/personal-investment-account-ireland/">Personal Investment Account Ireland guide</a> for the current rules, the deemed-disposal change and a comparison with pensions and ordinary brokerage accounts.</p>
+
+<h2>State Pension: at least €7.50 a week now expected</h2>
+
+<p>Reports ahead of the final Budget negotiations now point to a <strong>State Pension increase of at least €7.50 a week</strong>. The current maximum State Pension (Contributory) rate for a person under 80 is <strong>€299.30 a week</strong>, so a €7.50 increase would take that to <strong>€306.80</strong> and add <strong>€390 over a full 52-week year</strong>.</p>
+
+<p>The final increase, treatment of reduced-rate pensions and any linked changes to Fuel Allowance, the Living Alone Increase or other supports will not be confirmed until Budget Day. See our full <a href="/news/state-pension-increase-budget-2027-ireland/">State Pension Budget 2027 breakdown</a>, or model retirement income with the <a href="/retirement-income-calculator/">Retirement Income Calculator</a>.</p>
 
 <h2>Other Budget 2027 measures to watch</h2>
 
