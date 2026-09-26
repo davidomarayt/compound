@@ -10,10 +10,9 @@ meta_description: 'Self-employed tax Ireland 2026: understand taxable profit, In
 tags: [self-employed, sole-trader, income-tax, usc, prsi, form-11, ireland]
 related_tools:
 - self-employed-tax-calculator-ireland
-- income-tax-calculator
-- pension-tax-relief-calculator
-- take-home-pay-calculator
 - contractor-vs-salary-calculator
+- pension-tax-relief-calculator
+- income-tax-calculator
 sources:
 - title: 'Revenue: Income Tax rates, bands and credits'
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx
