@@ -221,3 +221,8 @@ But the scheme is **not yet final**.
 The current confirmed position is that SEAI already offers up to **€12,500** for qualifying house heat-pump systems. The Minister is now proposing an additional **€2,000 boiler scrappage grant**, which — if approved and fully stackable — could lift the potential maximum support to **€14,500**.
 
 The next important milestone is Cabinet consideration and publication of the final eligibility and application rules.
+
+
+## Model the wider retrofit
+
+A heat pump is only one part of the household-energy decision. Use the [Whole House Retrofit Planner](/whole-house-retrofit-planner/) to compare insulation, heating and other upgrades together, and the [BER Energy Cost Calculator](/ber-energy-cost-calculator/) to estimate how energy performance can translate into annual running costs.
