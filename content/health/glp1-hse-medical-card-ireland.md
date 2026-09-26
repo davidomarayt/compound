@@ -11,6 +11,10 @@ image: /static/images/glp1-funding-illustration.png
 image_alt: 'Paper collage illustration of an application folder, blank paperwork and a fountain pen.'
 image_credit: 'Illustration: Compound.'
 image_source: '#image-note'
+related_tools:
+- weight-loss-calculator
+- bmi-calculator
+
 sources:
 - title: 'HSE: medicines to treat obesity. Funding status checked 14 September 2026.'
   url: https://www2.hse.ie/conditions/obesity/medicines/
