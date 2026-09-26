@@ -217,3 +217,8 @@ With 26 productions across 18 days, there is enough variety that you do not need
 - [RTÉ — Dublin Theatre Festival to celebrate creative artistry on stage](https://www.rte.ie/culture/2026/0924/1592728-dublin-theatre-festival/)
 - [RTÉ — Dublin Theatre Festival 2026 programme](https://www.rte.ie/culture/2026/0715/1583451-ruth-negga-leads-packed-dublin-theatre-festival-2026-programme/)
 - [RTÉ — Five shows to catch at Dublin Theatre Festival 2026](https://www.rte.ie/culture/2026/0922/1591906-5-must-see-shows-at-this-years-dublin-theatre-festival/)
+
+
+## More on getting out and doing things
+
+If the festival is the nudge to do something different, see [When did you last do something for fun?](/happiness/when-did-you-last-do-something-for-fun/) for the evidence on leisure and wellbeing. For the broader picture, read [How to be happier: what the evidence actually says](/happiness/how-to-be-happier-evidence-ireland/).
