@@ -925,12 +925,21 @@ def _write(path: Path, html: str) -> None:
 
 
 def related(article: Article, all_articles: list[Article], n: int = 3) -> list[Article]:
+    """Choose related stories using both topic tags and shared calculator intent."""
     tags = set(article.tags)
+    tools = set(article.related_tools)
     scored = []
     for a in all_articles:
         if a.slug == article.slug and a.pillar == article.pillar:
             continue
-        score = len(tags & set(a.tags)) * 2 + (1 if a.pillar == article.pillar else 0)
+
+        shared_tags = len(tags & set(a.tags))
+        shared_tools = len(tools & set(a.related_tools))
+        same_pillar = 1 if a.pillar == article.pillar else 0
+
+        # A shared calculator usually signals a stronger user-intent relationship
+        # than a broad tag such as "ireland" or "news".
+        score = shared_tags * 2 + shared_tools * 4 + same_pillar
         if score:
             scored.append((score, a.date, a))
     scored.sort(key=lambda t: (t[0], t[1]), reverse=True)
