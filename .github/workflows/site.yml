@@ -162,7 +162,7 @@ jobs:
 
           fetch https://compound.ie/news-sitemap.xml /tmp/news-sitemap.xml
           grep -Fq 'http://www.google.com/schemas/sitemap-news/0.9' /tmp/news-sitemap.xml
-          grep -Fq 'https://compound.ie/news/rent-a-room-relief-20000-budget-2027/' /tmp/news-sitemap.xml
+          grep -Fq 'https://compound.ie/news/state-pension-increase-budget-2027-ireland/' /tmp/news-sitemap.xml
 
           fetch https://compound.ie/news/rent-a-room-relief-20000-budget-2027/ /tmp/discovery-news.html
           grep -Fq 'max-image-preview:large' /tmp/discovery-news.html
