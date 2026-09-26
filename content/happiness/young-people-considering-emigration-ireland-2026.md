@@ -35,6 +35,10 @@ social:
       Almost 7 in 10 young adults surveyed say they are considering leaving
       Ireland. But the latest CSO data show actual emigration fell. The full
       story is more complicated than the headline.
+related_tools:
+- salary-hourly-rate-calculator
+- lifetime-cost-calculator
+
 sources:
 - title: 'Irish Times: Seven out of 10 under-25s consider emigrating for a better life — 22 September 2026'
   url: https://www.irishtimes.com/ireland/2026/09/22/seven-out-of-10-young-people-consider-emigrating-in-pursuit-of-better-life/
