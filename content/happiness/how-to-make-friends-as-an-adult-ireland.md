@@ -397,3 +397,8 @@ and start asking:
 Then you show up again.
 
 That is how most adult friendships begin.
+
+
+## Related Compound guides
+
+If the bigger issue is loneliness rather than simply meeting new people, read [Loneliness in Ireland: how common it is and what actually helps](/happiness/loneliness-ireland-how-common-what-helps/). For practical ways to build more enjoyment and social activity into ordinary weeks, see [When did you last do something for fun?](/happiness/when-did-you-last-do-something-for-fun/) and [How to be happier: what the evidence actually says](/happiness/how-to-be-happier-evidence-ireland/).
