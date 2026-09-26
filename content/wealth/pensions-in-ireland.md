@@ -183,6 +183,12 @@ It depends on the pension type. PRSAs can normally be accessed from age 60. Occu
 
 No. A personal pension can generally provide a retirement lump sum equal to 25% of the fund, but the amount actually tax free is subject to the separate €200,000 lifetime limit across relevant retirement lump sums.
 
+<div class="pension-callout">
+<span>MODEL THE RETIREMENT PHASE</span>
+<h2>Turn a pension pot into an income scenario.</h2>
+<p>Once you have a target pot, use the <a href="/retirement-income-calculator/">Retirement Income Calculator</a> to combine portfolio withdrawals, State Pension and other income and stress-test the result over time.</p>
+</div>
+
 <div class="pension-final-cta">
 <span>READY TO START?</span>
 <h2>First identify what pension you actually have.</h2>
