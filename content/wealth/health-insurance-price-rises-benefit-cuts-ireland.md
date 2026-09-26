@@ -57,6 +57,8 @@ The practical lesson is simple:
 
 **Do not renew health insurance by looking only at the price. Check what the plan will actually cover next year.**
 
+Health insurance is one of several recurring household costs that can quietly become much larger over time. Compound's [lifetime cost guide](/wealth/lifetime-cost-of-lifestyle-ireland/) shows how repeated annual spending compounds, while the [Budget 2027 tracker](/wealth/budget-2027-what-to-watch/) follows the wider tax and cost-of-living measures affecting household finances.
+
 ## What is changing?
 
 The Health Insurance Authority (HIA), Ireland's independent regulator for private health insurance, publishes regular updates on insurer price and benefit changes.

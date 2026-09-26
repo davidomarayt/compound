@@ -34,6 +34,8 @@ They are related, but they are not the same calculation.
 
 For a quick estimate, use the [Redundancy Calculator Ireland](/redundancy-calculator-ireland/). The calculator handles the statutory formula in Basic mode and adds Revenue's main ex-gratia exemption calculations in Advanced mode.
 
+Redundancy can also change the rest of your year's PAYE position. Compound's [tax credits guide](/wealth/tax-credits-ireland-explained/) explains how credits interact with Income Tax, while the [Take-Home Pay Calculator](/take-home-pay-calculator/) can model a new salary if you move into another PAYE role.
+
 ## Statutory redundancy in Ireland: the core formula
 
 For an eligible employee, statutory redundancy is generally calculated as:

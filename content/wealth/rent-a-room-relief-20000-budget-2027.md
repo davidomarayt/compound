@@ -73,6 +73,8 @@ If qualifying gross Rent-a-Room income exceeds that limit, the current rules do 
 
 [Revenue: current Rent-a-Room qualifying conditions](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-a-room-relief/qualifying-conditions.aspx).
 
+Because this is a Budget proposal rather than a current rule, keep the existing €14,000 threshold separate from speculation. Compound's [Budget 2027 tracker](/wealth/budget-2027-what-to-watch/) follows the final decision, while our [tax credits guide](/wealth/tax-credits-ireland-explained/) explains how this relief differs from a tax credit.
+
 ## What is being proposed?
 
 Reporting on 23 September says Higher Education Minister James Lawless is pushing for a change that could increase the tax-free ceiling to as much as **€20,000** for homeowners who rent more than one room.

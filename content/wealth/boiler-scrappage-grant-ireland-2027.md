@@ -35,6 +35,10 @@ social:
       A proposed €2,000 boiler scrappage grant could increase the support
       available to some Irish households switching from oil or kerosene to a
       heat pump. Here is what we know so far.
+related_tools:
+- whole-house-retrofit-planner
+- ber-energy-cost-calculator
+- electricity-cost-calculator
 sources:
   - title: "RTÉ News: Boiler scrappage scheme offering €2,000 grant proposed by Minister — 23 September 2026"
     url: https://www.rte.ie/news/ireland/2026/0923/1592710-boiler-scrappage-scheme-budget/
@@ -61,6 +65,8 @@ That creates an eye-catching headline figure:
 The important word is **potential**.
 
 The €2,000 scheme has not yet been approved by Cabinet, and the detailed rules on eligibility, qualifying heating systems and how the payment will interact with existing SEAI grants have not yet been published.
+
+For homeowners looking beyond the headline grant, Compound's [average household electricity-use guide](/wealth/average-home-electricity-use-ireland/) helps establish a realistic energy baseline, while the [Whole-House Retrofit Planner](/whole-house-retrofit-planner/) can put a heat-pump upgrade alongside insulation and other retrofit measures.
 
 ## What is being proposed?
 

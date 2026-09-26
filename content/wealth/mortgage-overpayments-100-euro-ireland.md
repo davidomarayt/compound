@@ -34,6 +34,8 @@ Here is one: on an illustrative **€250,000 mortgage with 25 years remaining at
 
 That result assumes the rate never changes, payments stay up, every extra euro reduces the balance, and no fees apply. It is a calculation, not a lender’s offer. Those assumptions are where the useful conversation starts.
 
+To test the same idea against your own balance, rate and remaining term, use the [Mortgage Overpayment Calculator](/mortgage-overpayment-calculator/). If your rate itself may be the bigger issue, compare the numbers with our guide to [switching your mortgage in Ireland](/wealth/is-switching-your-mortgage-worth-it-ireland/).
+
 ## What the extra money actually does
 
 A repayment mortgage gradually pays back the amount borrowed, while also covering interest. At the beginning of our example, the first month’s interest is about €833. The scheduled €1,319.59 payment therefore reduces the balance by roughly €486.

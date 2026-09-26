@@ -12,6 +12,7 @@ related_tools:
 - self-employed-tax-calculator-ireland
 - income-tax-calculator
 - pension-tax-relief-calculator
+- contractor-vs-salary-calculator
 sources:
 - title: 'Revenue: Income Tax rates, bands and credits'
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx
@@ -32,6 +33,8 @@ For a sole trader, the most important number is usually not turnover. It is **ta
 A business can collect €100,000 from customers without having €100,000 available to tax personally. Allowable business costs come first. Income Tax, USC and Class S PRSI are then calculated using the tax rules that apply to the resulting profit and the person's wider circumstances.
 
 For a quick 2026 estimate, use the [Self-Employed Tax Calculator Ireland](/self-employed-tax-calculator-ireland/).
+
+If you are deciding between employment and contracting rather than simply calculating a sole trader bill, the [Contractor vs Salary Calculator](/contractor-vs-salary-calculator/) compares indicative net cash outcomes. The [tax credits guide](/wealth/tax-credits-ireland-explained/) is also useful for understanding why employee and self-employed credit mechanics differ.
 
 ## Turnover, expenses and profit
 

@@ -139,6 +139,8 @@ If you pay rent for a home in Ireland, you can probably knock up to €1,000 a y
 
 The catch is the four-year rule. Revenue only lets you go back four years, so the 2022 credit must be claimed by 31 December 2026 or it is gone for good ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/four-year-rule/index.aspx)). If you have been renting since 2022 and never claimed, this is the year to sort it.
 
+If you want to check the amount rather than just the eligibility rules, use Compound's [Rent Tax Credit Calculator](/rent-tax-credit-calculator/). For the wider PAYE picture, see [Tax Credits in Ireland Explained](/wealth/tax-credits-ireland-explained/), and follow the [Budget 2027 tracker](/wealth/budget-2027-what-to-watch/) for any change to the credit after 2026.
+
 ## What is the Rent Tax Credit and how much is it worth in 2026?
 
 The Rent Tax Credit is available for the tax years 2022 to 2028 and reduces the amount of income tax you owe for the year ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx)). A tax credit comes straight off your tax bill, so €1,000 of credit means €1,000 less tax, not €1,000 less taxable income.

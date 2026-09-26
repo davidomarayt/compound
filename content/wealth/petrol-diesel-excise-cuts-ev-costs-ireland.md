@@ -32,6 +32,9 @@ social:
     caption: >-
       Petrol and diesel excise reductions could remain in place into spring
       2027. Here is what that may mean for running-cost comparisons with EVs.
+related_tools:
+- fuel-cost-calculator
+- ev-charging-cost-calculator
 sources:
   - title: "RTÉ News: Govt considers extending excise cuts on fuel until spring — 23 September 2026"
     url: https://www.rte.ie/news/politics/2026/0923/1592651-ireland-politics/
@@ -46,6 +49,8 @@ The Government is considering keeping Ireland's temporary **petrol and diesel ex
 [RTÉ reports](https://www.rte.ie/news/politics/2026/0923/1592651-ireland-politics/) that Tánaiste and Minister for Finance Simon Harris and Minister for Public Expenditure Jack Chambers have indicated that the reductions could remain in place into spring.
 
 For motorists, the immediate question is simple: **how much does that change the cost of running a petrol or diesel car — and how does it compare with an EV?**
+
+For a petrol or diesel car, Compound's [Fuel Cost Calculator](/fuel-cost-calculator/) turns mileage, fuel economy and pump price into an annual estimate. The wider tax and energy measures under discussion are tracked in our [Budget 2027 guide](/wealth/budget-2027-what-to-watch/).
 
 ## How much are the current fuel-tax reductions worth?
 

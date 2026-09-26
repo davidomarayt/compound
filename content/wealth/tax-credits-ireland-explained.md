@@ -297,6 +297,8 @@ A tax credit is a fixed sum taken off your income tax bill after the bill has be
 
 That is why a single worker earning €20,000 or less pays no income tax at all: 20% of that income is €4,000, and the credits cancel it out ([Citizens Information](https://www.citizensinformation.ie/en/money-and-tax/tax/income-tax-credits-and-reliefs/introduction-to-income-tax-credits-and-reliefs/)). You may still pay USC (the Universal Social Charge, a separate levy on gross income) and PRSI (Pay Related Social Insurance, the contribution that funds welfare payments and the State Pension), because income tax credits do not touch either. The "tax credits" figure on your payslip or Revenue letters is your yearly total, divided across your pay periods. The rest of this piece covers where that total comes from, what people commonly leave out of it, and how to check it.
 
+You can put those rules into your own numbers with Compound's [Income Tax Calculator](/income-tax-calculator/) or see PAYE, USC and PRSI together in the [Take-Home Pay Calculator](/take-home-pay-calculator/). Renters should also check the separate [Rent Tax Credit guide](/wealth/rent-tax-credit-ireland-who-can-claim/).
+
 ## What is a tax credit, and how is it different from a rate band or a relief?
 
 Three separate things shape the tax of a PAYE worker (Pay As You Earn, the system where your employer deducts income tax from your wages on Revenue's behalf), and they are constantly confused.

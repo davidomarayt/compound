@@ -8,6 +8,9 @@ reviewed: 2026-09-23
 summary: 'Chapter 5 of Buying a Home in Ireland 101: what to do after sale agreed, the difference between lender valuation and structural survey, snagging, planning, boundaries and specialist checks.'
 meta_description: 'Sale agreed in Ireland: understand lender valuation vs structural survey, engineer checks, planning, boundaries, snagging and due diligence before contracts.'
 tags: [sale agreed, survey, valuation, engineer, ireland, buying a home, first-time buyer]
+related_tools:
+- house-buying-costs-calculator
+- mortgage-affordability-calculator
 sources:
 - title: 'CCPC: Applying for a mortgage'
   url: https://www.ccpc.ie/manage-your-money/buying-a-home/about-mortgages/understanding-mortgages/applying-for-a-mortgage
@@ -37,6 +40,8 @@ Three processes now run together:
 3. physical property checks.
 
 None replaces the others.
+
+Survey findings can change the cash you need before closing. The [House Buying Costs Calculator](/house-buying-costs-calculator/) helps keep legal, survey, valuation and other upfront costs in one place, while the [Mortgage Affordability Calculator](/mortgage-affordability-calculator/) can stress-test the wider purchase budget.
 
 ## Valuation versus survey
 
