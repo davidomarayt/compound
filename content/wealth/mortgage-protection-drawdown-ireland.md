@@ -8,6 +8,9 @@ reviewed: 2026-09-23
 summary: 'Chapter 8 of Buying a Home in Ireland 101: mortgage protection, home insurance, full mortgage approval, Letter of Offer, lender valuation and the conditions that must be met before mortgage drawdown.'
 meta_description: 'Mortgage drawdown Ireland: understand mortgage protection, home insurance, Letter of Offer, valuation, legal checks and final conditions before funds release.'
 tags: [mortgage protection, drawdown, ireland, letter of offer, home insurance, first-time buyer]
+related_tools:
+- mortgage-calculator
+- house-buying-costs-calculator
 sources:
 - title: 'CCPC: From approval to closing'
   url: https://www.ccpc.ie/manage-your-money/buying-a-home/about-mortgages/understanding-mortgages/from-approval-to-closing
