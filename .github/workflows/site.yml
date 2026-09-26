@@ -52,7 +52,7 @@ jobs:
       - name: Verify public Compound deployment
         shell: bash
         run: |
-          set -euo pipefail
+          set -euxo pipefail
           fetch() {
             curl --fail --silent --show-error --location               --retry 12 --retry-delay 5 --retry-all-errors               --connect-timeout 10 --max-time 30               "$1" -o "$2"
           }
