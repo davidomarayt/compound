@@ -937,16 +937,30 @@ def related(article: Article, all_articles: list[Article], n: int = 3) -> list[A
         candidate_tags = set(a.tags) - generic_tags
         shared_tags = len(tags & candidate_tags)
         shared_tools = len(tools & set(a.related_tools))
-        same_pillar = 1 if a.pillar == article.pillar else 0
+        relevance = shared_tags * 2 + shared_tools * 4
+        if not relevance:
+            continue
 
-        # Shared calculators are a strong user-intent signal. Generic labels such
-        # as "news" and "ireland" are deliberately excluded so unrelated stories
-        # do not become related merely because they are recent.
-        score = shared_tags * 2 + shared_tools * 4 + same_pillar
-        if score:
-            scored.append((score, a.date, a))
+        same_pillar_bonus = 1 if a.pillar == article.pillar else 0
+        scored.append((relevance + same_pillar_bonus, a.date, a))
+
     scored.sort(key=lambda t: (t[0], t[1]), reverse=True)
-    return [a for _, _, a in scored[:n]]
+    selected = [a for _, _, a in scored[:n]]
+
+    # Sparse or genuinely standalone topics still get navigation, but only as a
+    # fallback after all real topical matches have been exhausted.
+    if len(selected) < n:
+        selected_slugs = {a.slug for a in selected}
+        fallback = [
+            a for a in all_articles
+            if a.pillar == article.pillar
+            and a.slug != article.slug
+            and a.slug not in selected_slugs
+        ]
+        fallback.sort(key=lambda a: (is_news_article(a), -a.date.toordinal(), a.slug))
+        selected.extend(fallback[: n - len(selected)])
+
+    return selected
 
 
 def build_site(settings: Settings) -> dict:
