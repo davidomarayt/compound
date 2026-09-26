@@ -12,7 +12,6 @@ related_tools:
 - redundancy-calculator-ireland
 - take-home-pay-calculator
 - emergency-fund-calculator
-- emergency-fund-calculator
 sources:
 - title: 'Department of Enterprise: Redundancy Payments'
   url: https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/redundancy-payments/
