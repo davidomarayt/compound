@@ -142,7 +142,7 @@ charts: []
 
 <p>That could matter differently depending on how a measure is designed. A change in excise can affect the pump price directly; a targeted household payment works through household income; a change related to home-heating fuels affects households differently depending on whether they use oil, gas, electricity or another source.</p>
 
-<p>Until the Budget documents are published, treat individual proposed fuel measures as proposals rather than guaranteed savings.</p>
+<p>Until the Budget documents are published, treat individual proposed fuel measures as proposals rather than guaranteed savings. For motorists, see our separate explainer on the <a href="/news/petrol-diesel-excise-cuts-ev-costs-ireland/">possible extension of petrol and diesel excise cuts</a>.</p>
 
 <h2>Will there be electricity credits in Budget 2027?</h2>
 
@@ -186,7 +186,7 @@ charts: []
 
 <h2>Other Budget 2027 measures to watch</h2>
 
-<p>A number of other proposals are moving through the final pre-Budget negotiations. These include possible changes to the rent-a-room relief, supports relating to disability and carers, third-level costs and measures intended to encourage saving and investment.</p>
+<p>A number of other proposals are moving through the final pre-Budget negotiations. These include possible changes to <a href="/news/rent-a-room-relief-20000-budget-2027/">Rent-a-Room Relief</a>, supports relating to disability and carers, third-level costs and measures intended to encourage saving and investment.</p>
 
 <p>Some will have large effects for relatively small groups of people; others may deliver smaller amounts across a much wider population. Compound will add the final figures once they appear in the official Budget documentation.</p>
 
