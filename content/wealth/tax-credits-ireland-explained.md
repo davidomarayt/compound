@@ -395,3 +395,8 @@ Expect a check rather than a windfall. The standard credits are usually applied 
 
 A sole trader can qualify for the Earned Income Credit rather than the PAYE Employee Tax Credit, but the final annual liability also depends on taxable profit, Income Tax bands, USC and Class S PRSI. The [Self-Employed Tax Calculator Ireland](/self-employed-tax-calculator-ireland/) puts those pieces together and shows an estimated monthly tax reserve for 2026.
 
+
+
+## Related tax guides
+
+If you want to see where the 40% band begins and why the marginal rate matters, read [Ireland's 40% tax band starts at €44,000 — how that really compares with Europe](/news/ireland-40-percent-tax-rate-threshold-europe/). Renters should also check the dedicated [Rent Tax Credit guide](/wealth/rent-tax-credit-ireland-who-can-claim/) before filing their return.
