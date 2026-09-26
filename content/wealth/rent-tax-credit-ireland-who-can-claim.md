@@ -219,3 +219,8 @@ The common reasons a claim fails or pays less than expected:
 - The year has passed the four-year limit ([Revenue](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/four-year-rule/index.aspx)).
 
 None of these are reasons not to check. Log into myAccount, look at 2022 first, and work forward. It takes minutes per year, and the 2022 money is only there until the end of December.
+
+
+## Related Compound guides
+
+Before claiming, use the [Rent Tax Credit Calculator](/rent-tax-credit-calculator/) to estimate the maximum credit your rent and Income Tax liability could support. For the wider system, see [Tax credits in Ireland explained](/wealth/tax-credits-ireland-explained/). Budget 2027 may also change the credit, so the latest position is tracked in [Rent Tax Credit and Budget 2027](/wealth/rent-tax-credit-budget-2027-ireland/).
