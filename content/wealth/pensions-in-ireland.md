@@ -56,14 +56,14 @@ This eight-chapter course works through those questions in order.
 ## The eight chapters
 
 <div class="pension-course-grid">
-<a href="/wealth/how-pensions-work-ireland/"><span>01</span><div><strong>How Pensions Work</strong><p>State, workplace, DB, DC, PRSA, RAC and MyFutureFund.</p></div><b>→</b></a>
-<a href="/wealth/pension-options-ireland/"><span>02</span><div><strong>Your Pension Options</strong><p>Workplace pension vs PRSA vs MyFutureFund.</p></div><b>→</b></a>
-<a href="/wealth/pension-tax-relief-ireland-how-to-claim/"><span>03</span><div><strong>Pension Tax Relief & AVCs</strong><p>Age limits, the €115,000 earnings cap and claiming relief.</p></div><b>→</b></a>
-<a href="/wealth/how-much-pension-contribute-ireland/"><span>04</span><div><strong>How Much to Contribute</strong><p>Employer matching, retirement targets and a sustainable contribution rate.</p></div><b>→</b></a>
-<a href="/wealth/pension-funds-fees-ireland/"><span>05</span><div><strong>Pension Funds & Fees</strong><p>Risk, default funds, lifestyle strategies and long-term charges.</p></div><b>→</b></a>
-<a href="/wealth/changing-jobs-transfer-pension-ireland/"><span>06</span><div><strong>Changing Jobs & Transfers</strong><p>Preserved benefits, PRSAs, buy-out bonds and old pensions.</p></div><b>→</b></a>
-<a href="/wealth/when-can-i-access-pension-ireland/"><span>07</span><div><strong>Accessing Your Pension</strong><p>Retirement ages, annuities, ARFs and taxable withdrawals.</p></div><b>→</b></a>
-<a href="/wealth/pension-lump-sum-tax-ireland/"><span>08</span><div><strong>Pension Lump Sum Tax</strong><p>The 25% rule, €200,000 lifetime limit and tax above it.</p></div><b>→</b></a>
+<a href="/wealth/how-pensions-work-ireland/" aria-label="How Pensions Work"><span>01</span><div><strong>How Pensions Work</strong><p>State, workplace, DB, DC, PRSA, RAC and MyFutureFund.</p></div><b>→</b></a>
+<a href="/wealth/pension-options-ireland/" aria-label="Your Pension Options"><span>02</span><div><strong>Your Pension Options</strong><p>Workplace pension vs PRSA vs MyFutureFund.</p></div><b>→</b></a>
+<a href="/wealth/pension-tax-relief-ireland-how-to-claim/" aria-label="Pension Tax Relief &amp; AVCs"><span>03</span><div><strong>Pension Tax Relief & AVCs</strong><p>Age limits, the €115,000 earnings cap and claiming relief.</p></div><b>→</b></a>
+<a href="/wealth/how-much-pension-contribute-ireland/" aria-label="How Much to Contribute"><span>04</span><div><strong>How Much to Contribute</strong><p>Employer matching, retirement targets and a sustainable contribution rate.</p></div><b>→</b></a>
+<a href="/wealth/pension-funds-fees-ireland/" aria-label="Pension Funds &amp; Fees"><span>05</span><div><strong>Pension Funds & Fees</strong><p>Risk, default funds, lifestyle strategies and long-term charges.</p></div><b>→</b></a>
+<a href="/wealth/changing-jobs-transfer-pension-ireland/" aria-label="Changing Jobs &amp; Transfers"><span>06</span><div><strong>Changing Jobs & Transfers</strong><p>Preserved benefits, PRSAs, buy-out bonds and old pensions.</p></div><b>→</b></a>
+<a href="/wealth/when-can-i-access-pension-ireland/" aria-label="Accessing Your Pension"><span>07</span><div><strong>Accessing Your Pension</strong><p>Retirement ages, annuities, ARFs and taxable withdrawals.</p></div><b>→</b></a>
+<a href="/wealth/pension-lump-sum-tax-ireland/" aria-label="Pension Lump Sum Tax"><span>08</span><div><strong>Pension Lump Sum Tax</strong><p>The 25% rule, €200,000 lifetime limit and tax above it.</p></div><b>→</b></a>
 </div>
 
 ## The pension system in 60 seconds
