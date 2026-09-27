@@ -2176,3 +2176,20 @@ input,select,textarea,button{max-width:100%}
   .footer-top nav{gap:0}
   .footer-bottom nav{gap:4px 14px}
 }
+
+
+/* Final mobile target-size cleanup */
+@media(max-width:760px){
+  .home-news-item>.text-link{
+    display:inline-flex;
+    align-items:center;
+    min-height:44px;
+    padding-block:9px;
+  }
+  .site-footer nav a{
+    min-width:44px;
+    min-height:44px;
+    padding:8px;
+    justify-content:center;
+  }
+}
