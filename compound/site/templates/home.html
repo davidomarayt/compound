@@ -71,6 +71,7 @@
  <div class="home-news-grid">
   {% for a in news_articles[:4] %}
   <article class="home-news-item{% if loop.first %} home-news-lead{% endif %}">
+   {% if a.image %}<a class="home-news-image" href="{{ a.url }}" aria-label="Read {{ a.title }}"><img src="{{ a.image }}" alt="" width="800" height="520" loading="lazy" decoding="async"></a>{% endif %}
    <div class="home-news-meta"><span>News · {{ a.pillar_label }}</span><time datetime="{{ a.date.isoformat() }}">{{ a.date | long_date }}</time></div>
    <h3><a href="{{ a.url }}">{{ a.title }}</a></h3>
    <p>{{ a.description }}</p>
