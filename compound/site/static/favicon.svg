@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#33252e"/><text x="12" y="47" fill="#f8f5ef" font-family="Georgia,serif" font-size="53">c</text><circle cx="49" cy="45" r="5" fill="#e4ae8d"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Compound.ie">
+  <rect width="64" height="64" rx="14" fill="#0F3D2E"/>
+  <g transform="translate(4 1) scale(.39 .345)" fill="#FAF8F2">
+    <path d="M112 15C54 8 14 39 14 90s40 82 98 75c-33-15-51-43-51-75s18-60 51-75Z"/>
+    <path d="M128 30C93 25 68 52 68 90s25 65 60 60c-23-13-35-34-35-60s12-47 35-60Z"/>
+  </g>
+</svg>
