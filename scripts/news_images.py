@@ -135,7 +135,7 @@ def wrap(text: str, width: int = 33, max_lines: int = 4) -> list[str]:
     return lines[:max_lines]
 
 
-def _fallback_font(size: int, bold: bool = false):
+def _fallback_font(size: int, bold: bool = False):
     try:
         return ImageFont.truetype("DejaVuSans-Bold.ttf" if bold else "DejaVuSans.ttf", size)
     except OSError:
