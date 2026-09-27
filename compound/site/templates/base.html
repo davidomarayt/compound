@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en-IE">
 <head>
+{% set ads_configured = adsense.client and (adsense.slots.article_top or adsense.slots.article_bottom or adsense.slots.feed) %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#33252e">
@@ -23,9 +24,9 @@ window.compoundStartAnalytics=function(){if(document.querySelector('script[data-
 };
 if(choice==='granted')window.compoundStartAnalytics();})();
 </script>{% endif %}
-{% if adsense.client and not preview and (ads_allowed is not defined or ads_allowed) %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense.client }}" crossorigin="anonymous"></script>{% endif %}
+{% if ads_configured and not preview and (ads_allowed is not defined or ads_allowed) %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense.client }}" crossorigin="anonymous"></script>{% endif %}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=optional" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" as="style" fetchpriority="low" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=optional" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=optional"></noscript>
 <link rel="stylesheet" href="/static/style.css?v=20260923-discovery1">
 {% block post_styles %}{% endblock %}
@@ -52,7 +53,7 @@ if(choice==='granted')window.compoundStartAnalytics();})();
 </main>
 <footer class="site-footer">
  <div class="footer-top"><div><a class="wordmark" href="/">compound<span class="brand-dot">.</span></a><p>Good things build on each other.</p></div><div class="footer-mission">A little more clarity.<br>A little more possibility.<br>A life that feels like yours.</div><nav aria-label="Footer navigation"><a href="/about/">Our approach</a><a href="/contact/">Get in touch</a><a href="/search/">Explore the journal</a><a href="/news/">Latest news</a><a href="/tools/">Tools & calculators</a><a href="/feed.xml">Follow via RSS ↗</a></nav></div>
- <div class="footer-bottom"><span>© {{ year }} Compound · Made for life in Ireland</span><nav aria-label="Policies"><a href="/editorial-policy/">Editorial policy</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/disclaimer/">Disclaimer</a>{% if analytics.measurement_id and not preview %}<a href="#" data-privacy-settings>Analytics settings</a>{% endif %}{% if adsense.client and not preview and (ads_allowed is not defined or ads_allowed) %}<a href="#" onclick="window.googlefc&&googlefc.callbackQueue.push({CONSENT_DATA_READY:function(){googlefc.showRevocationMessage()}});return false;">Privacy settings</a>{% endif %}</nav></div>
+ <div class="footer-bottom"><span>© {{ year }} Compound · Made for life in Ireland</span><nav aria-label="Policies"><a href="/editorial-policy/">Editorial policy</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/disclaimer/">Disclaimer</a>{% if analytics.measurement_id and not preview %}<a href="#" data-privacy-settings>Analytics settings</a>{% endif %}{% if ads_configured and not preview and (ads_allowed is not defined or ads_allowed) %}<a href="#" onclick="window.googlefc&&googlefc.callbackQueue.push({CONSENT_DATA_READY:function(){googlefc.showRevocationMessage()}});return false;">Privacy settings</a>{% endif %}</nav></div>
  <p class="footer-disclaimer">For information, not individual medical, financial or tax advice. Check the sources and speak to a qualified professional about your circumstances.</p>
 </footer>
 {% if analytics.measurement_id and not preview %}<section class="privacy-banner" data-privacy-banner hidden aria-labelledby="privacy-banner-title" aria-live="polite">
