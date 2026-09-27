@@ -39,7 +39,7 @@
       const link = document.createElement('a'); link.href = '#' + heading.id; link.textContent = heading.textContent;
       toc.appendChild(link);
     });
-    if (headings.length) {
+    if (headings.length && window.matchMedia('(min-width: 761px)').matches) {
       toc.closest('.reading-nav').hidden = false;
       if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver(entries => {
