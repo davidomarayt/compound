@@ -4,6 +4,7 @@
 {% set ads_configured = adsense.client and (adsense.slots.article_top or adsense.slots.article_bottom or adsense.slots.feed) %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{if(localStorage.getItem('compound_analytics_consent'))document.documentElement.classList.add('analytics-consent-set')}catch(e){}</script>
 <meta name="theme-color" content="#33252e">
 <meta name='impact-site-verification' value='ed8874b0-4836-4d6a-b0cc-42104a8a0221'>
 {% if preview is not defined or not preview %}<meta name="robots" content="max-image-preview:large">{% endif %}
@@ -25,14 +26,11 @@ window.compoundStartAnalytics=function(){if(document.querySelector('script[data-
 if(choice==='granted')window.compoundStartAnalytics();})();
 </script>{% endif %}
 {% if ads_configured and not preview and (ads_allowed is not defined or ads_allowed) %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense.client }}" crossorigin="anonymous"></script>{% endif %}
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" fetchpriority="low" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=optional" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=optional"></noscript>
-<link rel="stylesheet" href="/static/style.css?v=20260927-quality1">
+<link rel="stylesheet" href="/static/style.css?v=20260927-quality2">
 {% block post_styles %}{% endblock %}
 <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="Compound" href="/feed.xml">
-<script src="/static/site.js?v=20260927-quality1" defer></script>
+<script src="/static/site.js?v=20260927-quality2" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -56,7 +54,7 @@ if(choice==='granted')window.compoundStartAnalytics();})();
  <div class="footer-bottom"><span>© {{ year }} Compound · Made for life in Ireland</span><nav aria-label="Policies"><a href="/editorial-policy/">Editorial policy</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/disclaimer/">Disclaimer</a>{% if analytics.measurement_id and not preview %}<a href="#" data-privacy-settings>Analytics settings</a>{% endif %}{% if ads_configured and not preview and (ads_allowed is not defined or ads_allowed) %}<a href="#" onclick="window.googlefc&&googlefc.callbackQueue.push({CONSENT_DATA_READY:function(){googlefc.showRevocationMessage()}});return false;">Privacy settings</a>{% endif %}</nav></div>
  <p class="footer-disclaimer">For information, not individual medical, financial or tax advice. Check the sources and speak to a qualified professional about your circumstances.</p>
 </footer>
-{% if analytics.measurement_id and not preview %}<section class="privacy-banner" data-privacy-banner hidden aria-labelledby="privacy-banner-title" aria-live="polite">
+{% if analytics.measurement_id and not preview %}<section class="privacy-banner" data-privacy-banner aria-labelledby="privacy-banner-title" aria-live="polite">
  <div><p class="eyebrow">YOUR PRIVACY</p><h2 id="privacy-banner-title">Help us understand what gets read.</h2><p>With your permission, anonymous Google Analytics measurements tell us which articles are useful. We do not send calculator entries or form values. You can decline and still read everything.</p><p class="privacy-banner-links"><a href="/privacy/">Privacy policy</a> · <a href="/cookies/">Cookie policy</a></p></div>
  <div class="privacy-banner-actions"><button type="button" class="button button-dark" data-analytics-consent="granted">Allow analytics</button><button type="button" class="button button-light" data-analytics-consent="denied">Decline</button></div>
 </section>{% endif %}
