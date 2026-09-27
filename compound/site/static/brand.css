@@ -1,4 +1,4 @@
-/* Compound.ie approved brand identity — traced from the final brand board, 27 Sep 2026 */
+/* Compound.ie brand identity — clean vector implementation, 27 Sep 2026 */
 :root {
   --bg:#faf8f2;
   --surface:#fffdf8;
@@ -23,22 +23,51 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible {
 
 .masthead-note { background:#f3f0e9; color:#5d5a54; }
 .masthead-note a { color:var(--brand-forest); font-weight:600; }
-.site-header { border-bottom:1px solid var(--line); }
+.site-header { border-bottom:1px solid var(--line); overflow:visible; }
 
-.brand-lockup-link {
-  display:block;
+.brand-lockup-clean {
+  display:flex;
+  align-items:center;
+  gap:13px;
   flex:0 0 auto;
-  line-height:0;
+  min-width:0;
+  line-height:1;
 }
-.brand-lockup-image {
+.brand-symbol {
+  width:54px;
+  height:68px;
+  flex:0 0 auto;
+  overflow:visible;
+  fill:var(--brand-forest);
+}
+.brand-copy {
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+}
+.brand-word {
   display:block;
-  width:310px;
-  max-width:34vw;
-  height:auto;
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:42px;
+  line-height:.9;
+  letter-spacing:-.045em;
+  color:var(--brand-charcoal);
+  white-space:nowrap;
 }
-.site-footer .brand-lockup-image {
-  width:340px;
-  max-width:100%;
+.brand-ie { color:#365e4f; }
+.brand-pillars {
+  display:flex;
+  justify-content:space-between;
+  gap:28px;
+  padding:10px 4px 0 5px;
+  font-family:Arial,'Helvetica Neue',sans-serif;
+  font-size:8px;
+  font-weight:500;
+  line-height:1;
+  letter-spacing:.38em;
+  text-transform:uppercase;
+  color:#365e4f;
+  white-space:nowrap;
 }
 
 .pillar-nav a[aria-current="page"] { color:var(--brand-forest); font-weight:600; }
@@ -52,17 +81,34 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible {
 .note-symbol { color:var(--brand-forest); }
 
 .site-footer { background:var(--brand-forest); color:var(--brand-cream); }
+.site-footer .brand-symbol { fill:var(--brand-cream); }
+.site-footer .brand-word { color:var(--brand-cream); }
+.site-footer .brand-ie { color:#c8d8cf; }
+.site-footer .brand-pillars { color:#d7e0da; }
 .site-footer .footer-top>div>p { color:#d7e0da; }
 .site-footer .footer-bottom { border-top-color:#547164; color:#c8d5ce; }
 .site-footer .footer-disclaimer { color:#b6c8bf; }
 
 @media(max-width:1000px) {
-  .brand-lockup-image { width:270px; max-width:32vw; }
+  .brand-symbol { width:48px; height:61px; }
+  .brand-word { font-size:36px; }
+  .brand-pillars { gap:22px; font-size:7px; letter-spacing:.32em; padding-top:8px; }
 }
+
 @media(max-width:760px) {
-  .brand-lockup-image { width:235px; max-width:62vw; }
-  .site-footer .brand-lockup-image { width:300px; max-width:90vw; }
+  .site-header {
+    min-height:76px;
+    padding-top:14px;
+    padding-bottom:12px;
+  }
+  .brand-lockup-clean { gap:9px; }
+  .brand-symbol { width:41px; height:53px; }
+  .brand-word { font-size:31px; letter-spacing:-.04em; }
+  .brand-pillars { gap:17px; font-size:6px; letter-spacing:.27em; padding:7px 2px 0 3px; }
 }
+
 @media(max-width:440px) {
-  .brand-lockup-image { width:210px; max-width:58vw; }
+  .brand-symbol { width:37px; height:48px; }
+  .brand-word { font-size:28px; }
+  .brand-pillars { gap:12px; font-size:5.5px; letter-spacing:.23em; }
 }
