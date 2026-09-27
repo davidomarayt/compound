@@ -298,7 +298,7 @@
   background:var(--wealth-soft);
 }
 
-.home-tool-grid span{
+.home-tool-grid>a>span{
   display:block;
   margin-bottom:.5rem;
   font-size:.65rem;
