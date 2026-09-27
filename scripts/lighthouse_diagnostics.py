@@ -67,6 +67,14 @@ def main() -> int:
             for audit_id, cats, title, value in failures:
                 suffix = f" — {value}" if value else ""
                 print(f"  [{cats}] {audit_id}: {title}{suffix}")
+                details = (audits.get(audit_id) or {}).get("details") or {}
+                items = details.get("items") or []
+                for item in items[:4]:
+                    node = item.get("node") if isinstance(item, dict) else None
+                    if isinstance(node, dict):
+                        selector = node.get("selector") or node.get("snippet") or node.get("nodeLabel")
+                        if selector:
+                            print(f"      node: {selector}")
     return 0
 
 
