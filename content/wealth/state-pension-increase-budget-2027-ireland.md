@@ -49,10 +49,8 @@ sources:
     url: https://www.irishtimes.com/your-money/2026/09/16/budget-2027-heres-what-we-know-so-far/
   - title: "The Irish Times: Budget 2027 unlikely to see return of energy credits"
     url: https://www.irishtimes.com/politics/2026/09/07/taoiseach-cant-see-the-capacity-for-return-of-energy-credits-in-next-months-budget/
-image: "/static/images/retirement-walk.jpg"
-image_alt: "Older couple walking together outdoors"
-image_credit: "micheile henderson / Unsplash"
-image_source: "https://unsplash.com/photos/man-and-woman-walking-on-road-during-daytime-PpZasS086os"
+image: "/static/images/home-wealth.webp"
+image_alt: "Illustrative editorial photograph for an article about pensions and household finances"
 ---
 
 <p><em>News analysis · 26 September 2026. Budget 2027 will be delivered on 6 October. The final pension increase and energy measures are not official until the Budget is announced.</em></p>
