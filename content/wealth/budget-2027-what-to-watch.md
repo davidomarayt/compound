@@ -7,7 +7,7 @@ title: 'Budget 2027 Ireland: Tax Cuts, Rent Credit & What We Know So Far'
 slug: budget-2027-what-to-watch
 pillar: wealth
 date: '2026-09-23'
-reviewed: '2026-09-26'
+reviewed: '2026-09-27'
 summary: Budget 2027 is due on 6 October. Here is what has been confirmed, what is still being negotiated, and what the tax, rent, energy and childcare measures could mean for Irish households.
 meta_description: 'Budget 2027 Ireland: latest on income tax cuts, the Rent Tax Credit, fuel and energy measures, childcare and household finances before 6 October.'
 tags:
@@ -45,6 +45,10 @@ sources:
   url: https://businessplus.ie/economy/budget-2027-what-we-know-so-far/
 - title: 'RTÉ: Details of new personal investment account scheme revealed'
   url: https://www.rte.ie/news/business/2026/0831/1589781-personal-investment-account-scheme-launched/
+- title: 'The Irish Times: Provision will be made in Budget for new public pay deal'
+  url: https://www.irishtimes.com/politics/2026/09/23/trade-union-balloting-is-only-delaying-public-sector-pay-deal-jack-chambers-says/
+- title: 'RTÉ: Public sector workers threaten strike action next month'
+  url: https://www.rte.ie/news/business/2026/0911/1591217-public-sector-workers/
 charts: []
 ---
 <p><em>Updated 25 September 2026. Budget 2027 will be delivered on Tuesday, 6 October 2026. This page separates announced Government positions from proposals and pre-Budget speculation, and will be updated as measures are confirmed.</em></p>
@@ -71,6 +75,7 @@ charts: []
 <tr><td>Will there be electricity credits?</td><td>No final Budget decision has been announced. Government comments have pointed away from a repeat of broad universal supports, although energy measures remain under discussion.</td></tr>
 <tr><td>Are fuel measures possible?</td><td>Yes. Fuel excise and other energy-cost measures are being examined.</td></tr>
 <tr><td>Will childcare feature?</td><td>Childcare affordability is a stated Government priority, but final Budget measures are not yet settled.</td></tr>
+<tr><td>Will there be a new public-sector pay deal?</td><td><strong>Budget provision is expected.</strong> Reports on 27 September say up to €2bn may be set aside, but no successor agreement has yet been negotiated.</td></tr>
 </tbody>
 </table>
 
@@ -183,6 +188,16 @@ charts: []
 <p>Reports ahead of the final Budget negotiations now point to a <strong>State Pension increase of at least €7.50 a week</strong>. The current maximum State Pension (Contributory) rate for a person under 80 is <strong>€299.30 a week</strong>, so a €7.50 increase would take that to <strong>€306.80</strong> and add <strong>€390 over a full 52-week year</strong>.</p>
 
 <p>The final increase, treatment of reduced-rate pensions and any linked changes to Fuel Allowance, the Living Alone Increase or other supports will not be confirmed until Budget Day. See our full <a href="/news/state-pension-increase-budget-2027-ireland/">State Pension Budget 2027 breakdown</a>, or model retirement income with the <a href="/retirement-income-calculator/">Retirement Income Calculator</a>.</p>
+
+<h2>Public-sector pay: up to €2bn reportedly being provided</h2>
+
+<p>Public-service pay has become one of the largest late-stage Budget issues. Minister for Public Expenditure Jack Chambers told the Oireachtas Budgetary Oversight Committee that provision would be made for a new agreement even though the previous deal expired on 30 June without a successor in place.</p>
+
+<p>Reports on 27 September say that provision could be <strong>up to €2 billion</strong>. That does not mean a €2 billion pay award has been agreed: the final percentage increases, staging and duration remain subject to negotiations between Government and unions.</p>
+
+<p>Several unions have already backed industrial action, with work-to-rule measures due from 30 September and a one-day strike planned for 14 October if the dispute is unresolved.</p>
+
+<p>See our full breakdown: <a href="/news/budget-2027-public-sector-pay-deal-2bn/">Budget 2027: what a reported €2bn public-sector pay provision actually means</a>.</p>
 
 <h2>Other Budget 2027 measures to watch</h2>
 
