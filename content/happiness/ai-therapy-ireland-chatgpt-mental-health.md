@@ -12,7 +12,6 @@ summary: 'A new Irish survey says 61% of people are turning to AI for mental-hea
 meta_description: 'AI therapy is booming in Ireland. We examine the 61% survey claim, what research says about ChatGPT for mental health, the risks, benefits and safer ways to use AI.'
 tags: [news, ai, mental-health, chatgpt, artificial-intelligence, therapy, wellbeing, ireland]
 news_image_query: 'online mental health therapy laptop counselling'
-pexels_photo_id: '3958401'
 social:
   enabled: true
   url: https://compound.ie/news/ai-therapy-ireland-chatgpt-mental-health/
@@ -56,6 +55,10 @@ sources:
     url: https://www.cso.ie/en/releasesandpublications/ep/p-isshdcb/householddigitalconsumerbehaviour2025/generativeai/
   - title: 'HSE: Get urgent help for a mental health crisis'
     url: https://www2.hse.ie/mental-health/services-support/get-urgent-help/
+image: "/static/images/happiness.jpg"
+image_alt: "Illustrative editorial photograph for digital mental-health support"
+image_credit: "Unsplash"
+image_source: "https://unsplash.com/license"
 ---
 
 <p><em>News analysis · 27 September 2026. This article is general information, not mental-health treatment or diagnosis. If you are in crisis or at immediate risk, use the Irish support information near the end of this article rather than relying on an AI chatbot.</em></p>
