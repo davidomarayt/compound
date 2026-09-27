@@ -764,7 +764,7 @@ button {
   margin-top:20px}
 .reading-nav nav a {
   font-size:11px;
-  color:var(--muted);
+  color:var(--ink-2);
   line-height:1.5;
   border-left:2px solid var(--line);
   padding-left:12px}
