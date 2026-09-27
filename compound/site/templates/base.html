@@ -46,7 +46,7 @@ if(choice==='granted')window.compoundStartAnalytics();})();
     <a href="/life/" class="nav-life" {% if page is defined and page.slug == 'life' %}aria-current="page"{% endif %}>Life</a>
     <a href="/news/" class="nav-news" {% if (news is defined and news) or (article is defined and 'news' in article.tags) %}aria-current="page"{% endif %}>News</a>
   </nav>
-  <a class="search-link" href="/search/"><span>Explore the journal</span><span aria-hidden="true">⌕</span></a>
+  <a class="search-link" href="/search/" aria-label="Search Compound"><span>Explore the journal</span><span aria-hidden="true">⌕</span></a>
 </header>
 <main id="main" class="site-main">
 {% block content %}{% endblock %}
