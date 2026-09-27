@@ -3,7 +3,7 @@
   --surface:#fffdf9;
   --ink:#33252e;
   --ink-2:#5f555b;
-  --muted:#756c70;
+  --muted:#675e63;
   --line:#ded8d3;
   --line-2:#c5bcb7;
   --health:#365e4f;
@@ -15,8 +15,8 @@
   --happiness-soft:#e9e3ee;
   --news-soft:#efe2dc;
   --accent:#33252e;
-  --serif:'Libre Caslon Display',Georgia,serif;
-  --sans:'DM Sans',Arial,sans-serif;
+  --serif:Georgia,'Times New Roman',serif;
+  --sans:Arial,'Helvetica Neue',Helvetica,sans-serif;
   --measure:68ch}
 
 * {
@@ -1001,7 +1001,7 @@ button {
   border:1px solid var(--line);
   box-shadow:0 18px 55px rgba(51,37,46,.2);
 }
-.privacy-banner[hidden] { display:none; }
+.privacy-banner[hidden],.analytics-consent-set .privacy-banner { display:none; }
 .privacy-banner h2 { margin:6px 0 10px;font:400 29px/1.15 var(--serif); }
 .privacy-banner p { margin:0;color:var(--muted);font-size:14px;line-height:1.55; }
 .privacy-banner .privacy-banner-links { margin-top:8px;font-size:12px; }
@@ -2148,4 +2148,31 @@ input,select,textarea,button{max-width:100%}
     padding-top:8px;
     padding-bottom:8px;
   }
+}
+
+
+/* 2026-09 quality pass: keep below-the-fold homepage work out of the critical render path. */
+.home-pillars-v2,
+.home-news,
+.latest-section,
+.editorial-note,
+.signup.home{
+  content-visibility:auto;
+  contain-intrinsic-size:auto 760px;
+}
+
+/* Mobile accessibility: give small navigation and tag links a reliable tap target. */
+@media(max-width:760px){
+  .tags a,
+  .footer-top nav a,
+  .footer-bottom nav a,
+  .home-panel-heading>a,
+  .journal-column-more,
+  .section-heading>.text-link{
+    min-height:44px;
+    display:inline-flex;
+    align-items:center;
+  }
+  .footer-top nav{gap:0}
+  .footer-bottom nav{gap:4px 14px}
 }
