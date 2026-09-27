@@ -11,6 +11,7 @@ jobs:
       - run: pip install -e ".[dev]"
       - run: pytest -q
       - run: node --check compound/site/static/tools.js
+      - run: node --check compound/site/static/mortgage-calculator.js
       - run: node --check compound/site/static/debt-repayment.js
       - run: node tests/tools_arithmetic.cjs
 
