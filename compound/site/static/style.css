@@ -2193,3 +2193,43 @@ input,select,textarea,button{max-width:100%}
     justify-content:center;
   }
 }
+
+
+/* Final mobile accessibility pass: make compact navigation links reliably tappable
+   without changing the desktop layout or visual hierarchy. */
+@media(max-width:760px){
+  .pillar-nav a,
+  .search-link,
+  .text-link,
+  .card-bottom a,
+  .breadcrumbs a,
+  .article-byline a,
+  .home-panel-heading>a{
+    min-height:44px;
+    display:inline-flex;
+    align-items:center;
+  }
+
+  .pillar-nav a{
+    padding-top:11px;
+    padding-bottom:11px;
+  }
+
+  .card-bottom{
+    row-gap:4px;
+  }
+
+  .card-bottom a{
+    padding-inline:2px;
+  }
+
+  .breadcrumbs{
+    align-items:center;
+    row-gap:4px;
+    flex-wrap:wrap;
+  }
+
+  .article-byline a{
+    vertical-align:middle;
+  }
+}
