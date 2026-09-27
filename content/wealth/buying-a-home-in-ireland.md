@@ -56,15 +56,15 @@ This nine-chapter course follows the Irish buying process in the order it actual
 ## The nine chapters
 
 <div class="home-course-grid">
-<a href="/wealth/buying-home-budget-deposit-ireland/"><span>01</span><div><strong>Budget, Deposit & Costs</strong><p>Build the full cash target, not just the minimum mortgage deposit.</p></div><b>→</b></a>
-<a href="/wealth/mortgage-approval-affordability-ireland/"><span>02</span><div><strong>Mortgage Approval & Affordability</strong><p>4× income, 3.5× income, AIP and lender affordability checks.</p></div><b>→</b></a>
-<a href="/wealth/first-time-buyer-supports-ireland/"><span>03</span><div><strong>First-Time Buyer Supports</strong><p>Help to Buy, First Home Scheme and shared-equity trade-offs.</p></div><b>→</b></a>
-<a href="/wealth/house-hunting-bidding-ireland/"><span>04</span><div><strong>House Hunting & Bidding</strong><p>Research prices, set your maximum and understand sale agreed.</p></div><b>→</b></a>
-<a href="/wealth/sale-agreed-survey-valuation-ireland/"><span>05</span><div><strong>Survey, Valuation & Checks</strong><p>Separate the lender valuation from the inspection that protects you.</p></div><b>→</b></a>
-<a href="/wealth/solicitor-conveyancing-stamp-duty-ireland/"><span>06</span><div><strong>Solicitor & Conveyancing</strong><p>Contracts, title, planning, Stamp Duty and registration.</p></div><b>→</b></a>
-<a href="/wealth/fixed-vs-variable-mortgage-ireland/"><span>07</span><div><strong>Choose the Mortgage</strong><p>Fixed vs variable, cashback, mortgage term and overpayment flexibility.</p></div><b>→</b></a>
-<a href="/wealth/mortgage-protection-drawdown-ireland/"><span>08</span><div><strong>Insurance & Drawdown</strong><p>Mortgage protection, home insurance, Letter of Offer and final checks.</p></div><b>→</b></a>
-<a href="/wealth/closing-buying-home-ireland/"><span>09</span><div><strong>Closing, Keys & After You Buy</strong><p>Completion, first payments, LPT, maintenance, overpayments and switching.</p></div><b>→</b></a>
+<a href="/wealth/buying-home-budget-deposit-ireland/" aria-label="Budget, Deposit &amp; Costs"><span>01</span><div><strong>Budget, Deposit & Costs</strong><p>Build the full cash target, not just the minimum mortgage deposit.</p></div><b>→</b></a>
+<a href="/wealth/mortgage-approval-affordability-ireland/" aria-label="Mortgage Approval &amp; Affordability"><span>02</span><div><strong>Mortgage Approval & Affordability</strong><p>4× income, 3.5× income, AIP and lender affordability checks.</p></div><b>→</b></a>
+<a href="/wealth/first-time-buyer-supports-ireland/" aria-label="First-Time Buyer Supports"><span>03</span><div><strong>First-Time Buyer Supports</strong><p>Help to Buy, First Home Scheme and shared-equity trade-offs.</p></div><b>→</b></a>
+<a href="/wealth/house-hunting-bidding-ireland/" aria-label="House Hunting &amp; Bidding"><span>04</span><div><strong>House Hunting & Bidding</strong><p>Research prices, set your maximum and understand sale agreed.</p></div><b>→</b></a>
+<a href="/wealth/sale-agreed-survey-valuation-ireland/" aria-label="Survey, Valuation &amp; Checks"><span>05</span><div><strong>Survey, Valuation & Checks</strong><p>Separate the lender valuation from the inspection that protects you.</p></div><b>→</b></a>
+<a href="/wealth/solicitor-conveyancing-stamp-duty-ireland/" aria-label="Solicitor &amp; Conveyancing"><span>06</span><div><strong>Solicitor & Conveyancing</strong><p>Contracts, title, planning, Stamp Duty and registration.</p></div><b>→</b></a>
+<a href="/wealth/fixed-vs-variable-mortgage-ireland/" aria-label="Choose the Mortgage"><span>07</span><div><strong>Choose the Mortgage</strong><p>Fixed vs variable, cashback, mortgage term and overpayment flexibility.</p></div><b>→</b></a>
+<a href="/wealth/mortgage-protection-drawdown-ireland/" aria-label="Insurance &amp; Drawdown"><span>08</span><div><strong>Insurance & Drawdown</strong><p>Mortgage protection, home insurance, Letter of Offer and final checks.</p></div><b>→</b></a>
+<a href="/wealth/closing-buying-home-ireland/" aria-label="Closing, Keys &amp; After You Buy"><span>09</span><div><strong>Closing, Keys & After You Buy</strong><p>Completion, first payments, LPT, maintenance, overpayments and switching.</p></div><b>→</b></a>
 </div>
 
 ## The 2026 rules worth knowing
