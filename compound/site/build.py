@@ -738,7 +738,7 @@ def site_identity_jsonld(site_url: str) -> str:
                 "name": "Compound",
                 "alternateName": "Compound.ie",
                 "url": f"{base}/",
-                "logo": {"@type": "ImageObject", "url": f"{base}/static/brand-avatar.svg"},
+                "logo": {"@type": "ImageObject", "url": f"{base}/static/favicon.svg"},
                 "email": "mailto:david@compound.ie",
             },
             {

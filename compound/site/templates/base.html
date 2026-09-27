@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>try{if(localStorage.getItem('compound_analytics_consent'))document.documentElement.classList.add('analytics-consent-set')}catch(e){}</script>
-<meta name="theme-color" content="#0f3d2e">
+<meta name="theme-color" content="#33252e">
 <meta name='impact-site-verification' value='ed8874b0-4836-4d6a-b0cc-42104a8a0221'>
 {% if preview is not defined or not preview %}<meta name="robots" content="max-image-preview:large">{% endif %}
 <title>{% block head_title %}{{ title }} · Compound{% endblock %}</title>
@@ -27,7 +27,6 @@ if(choice==='granted')window.compoundStartAnalytics();})();
 </script>{% endif %}
 {% if ads_configured and not preview and (ads_allowed is not defined or ads_allowed) %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense.client }}" crossorigin="anonymous"></script>{% endif %}
 <link rel="stylesheet" href="/static/style.css?v=20260927-quality4">
-<link rel="stylesheet" href="/static/brand.css?v=20260927-approved3">
 {% block post_styles %}{% endblock %}
 <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="Compound" href="/feed.xml">
@@ -35,18 +34,9 @@ if(choice==='granted')window.compoundStartAnalytics();})();
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<div class="masthead-note"><span>Independent information and tools for life in Ireland</span><a href="/about/">Better decisions compound. <span aria-hidden="true">↗</span></a></div>
+<div class="masthead-note"><span>Independent information and tools for life in Ireland</span><a href="/about/">Understand. Decide. Compound. <span aria-hidden="true">↗</span></a></div>
 <header class="site-header">
-  <a class="brand-lockup-clean" href="/" aria-label="Compound.ie home">
-    <svg class="brand-symbol" viewBox="0 0 135 190" aria-hidden="true" focusable="false">
-      <path d="M124 12C69 4 36 39 36 94c0 51 34 86 88 78-37-14-58-43-58-78 0-36 21-65 58-82Z"/>
-      <path d="M103 22C52 19 14 50 14 95c0 35 17 64 43 80-20-21-30-48-30-80 0-37 27-65 76-73Z"/>
-    </svg>
-    <span class="brand-copy">
-      <span class="brand-word">Compound<span class="brand-ie">.ie</span></span>
-      <span class="brand-pillars"><span>Health</span><span>Wealth</span><span>Life</span></span>
-    </span>
-  </a>
+  <a class="wordmark" href="/" aria-label="Compound home">compound<span class="brand-dot">.</span></a>
   <nav class="pillar-nav" aria-label="Main navigation">
     <a href="/tools/" class="nav-wealth" {% if tools_page is defined and tools_page %}aria-current="page"{% endif %}>Tools</a>
     <a href="/health/" class="nav-health" {% if (pillar is defined and pillar == 'health') or (article is defined and article.pillar == 'health' and 'news' not in article.tags) %}aria-current="page"{% endif %}>Health</a>
@@ -60,16 +50,7 @@ if(choice==='granted')window.compoundStartAnalytics();})();
 {% block content %}{% endblock %}
 </main>
 <footer class="site-footer">
- <div class="footer-top"><div><a class="brand-lockup-clean" href="/" aria-label="Compound.ie home">
-    <svg class="brand-symbol" viewBox="0 0 135 190" aria-hidden="true" focusable="false">
-      <path d="M124 12C69 4 36 39 36 94c0 51 34 86 88 78-37-14-58-43-58-78 0-36 21-65 58-82Z"/>
-      <path d="M103 22C52 19 14 50 14 95c0 35 17 64 43 80-20-21-30-48-30-80 0-37 27-65 76-73Z"/>
-    </svg>
-    <span class="brand-copy">
-      <span class="brand-word">Compound<span class="brand-ie">.ie</span></span>
-      <span class="brand-pillars"><span>Health</span><span>Wealth</span><span>Life</span></span>
-    </span>
-  </a><p>Better decisions compound.</p></div><div class="footer-mission">Health. Wealth. Life.<br>Built for better decisions.<br>Made for life in Ireland.</div><nav aria-label="Footer navigation"><a href="/about/">Our approach</a><a href="/contact/">Get in touch</a><a href="/search/">Explore the journal</a><a href="/news/">Latest news</a><a href="/tools/">Tools & calculators</a><a href="/feed.xml">Follow via RSS ↗</a></nav></div>
+ <div class="footer-top"><div><a class="wordmark" href="/">compound<span class="brand-dot">.</span></a><p>Good things build on each other.</p></div><div class="footer-mission">A little more clarity.<br>A little more possibility.<br>A life that feels like yours.</div><nav aria-label="Footer navigation"><a href="/about/">Our approach</a><a href="/contact/">Get in touch</a><a href="/search/">Explore the journal</a><a href="/news/">Latest news</a><a href="/tools/">Tools & calculators</a><a href="/feed.xml">Follow via RSS ↗</a></nav></div>
  <div class="footer-bottom"><span>© {{ year }} Compound · Made for life in Ireland</span><nav aria-label="Policies"><a href="/editorial-policy/">Editorial policy</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/disclaimer/">Disclaimer</a>{% if analytics.measurement_id and not preview %}<a href="#" data-privacy-settings>Analytics settings</a>{% endif %}{% if ads_configured and not preview and (ads_allowed is not defined or ads_allowed) %}<a href="#" onclick="window.googlefc&&googlefc.callbackQueue.push({CONSENT_DATA_READY:function(){googlefc.showRevocationMessage()}});return false;">Privacy settings</a>{% endif %}</nav></div>
  <p class="footer-disclaimer">For information, not individual medical, financial or tax advice. Check the sources and speak to a qualified professional about your circumstances.</p>
 </footer>

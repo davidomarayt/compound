@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Compound.ie">
-  <rect width="64" height="64" rx="14" fill="#0F3D2E"/>
-  <g transform="translate(9 6) scale(.34 .28)">
-    <path fill="#FAF8F2" d="M124 12C69 4 36 39 36 94c0 51 34 86 88 78-37-14-58-43-58-78 0-36 21-65 58-82Z"/>
-    <path fill="#FAF8F2" d="M103 22C52 19 14 50 14 95c0 35 17 64 43 80-20-21-30-48-30-80 0-37 27-65 76-73Z"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#33252e"/><text x="12" y="47" fill="#f8f5ef" font-family="Georgia,serif" font-size="53">c</text><circle cx="49" cy="45" r="5" fill="#e4ae8d"/></svg>
