@@ -10,6 +10,7 @@ jobs:
           python-version: "3.11"
       - run: pip install -e ".[dev]"
       - run: pytest -q
+      - run: python -m py_compile scripts/news_images.py
       - run: node --check compound/site/static/tools.js
       - run: node --check compound/site/static/mortgage-calculator.js
       - run: node --check compound/site/static/debt-repayment.js
