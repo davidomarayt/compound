@@ -525,3 +525,46 @@
     padding:1.3rem;
   }
 }
+
+
+/* Markdown can wrap course cards in paragraphs; keep those wrappers neutral so
+   the full card remains the tap target. */
+.home-course-grid>p{margin:0!important}
+.home-course-grid>p>a{
+  display:grid;
+  grid-template-columns:2.3rem minmax(0,1fr) auto;
+  gap:1rem;
+  align-items:start;
+  min-width:0;
+  min-height:44px;
+  padding:1.35rem;
+  background:var(--surface);
+  text-decoration:none!important;
+  transition:background .18s ease;
+}
+.home-course-grid>p>a:hover{background:var(--wealth-soft)}
+.home-course-grid>p>a>span{
+  padding-top:.16rem;
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  color:var(--muted);
+}
+.home-course-grid>p>a strong{
+  display:block;
+  font-family:"Libre Caslon Display",serif;
+  font-size:1.45rem;
+  font-weight:400;
+  line-height:1.1;
+  color:var(--ink);
+}
+.home-course-grid>p>a p{
+  margin:.5rem 0 0!important;
+  font-size:.9rem;
+  line-height:1.55;
+}
+.home-course-grid>p>a b{
+  font-size:1.15rem;
+  font-weight:400;
+  opacity:1;
+}
