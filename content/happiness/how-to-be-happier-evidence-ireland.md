@@ -389,6 +389,9 @@ It can be family, craft, community, work, learning, volunteering or creating som
 
 ### 6. Then experiment with small interventions
 
+If the problem is less about happiness and more about feeling stagnant, our practical guide to [getting out of a rut](/happiness/how-to-get-out-of-a-rut/) gives you a structured reset without requiring a complete life overhaul.
+
+
 Try gratitude.
 
 Try mindfulness.
