@@ -55,8 +55,6 @@ sources:
     url: https://www.cso.ie/en/releasesandpublications/ep/p-isshdcb/householddigitalconsumerbehaviour2025/generativeai/
   - title: 'HSE: Get urgent help for a mental health crisis'
     url: https://www2.hse.ie/mental-health/services-support/get-urgent-help/
-image: "/static/images/home-happiness.webp"
-image_alt: "Illustrative lifestyle photograph for an article about digital mental-health support"
 ---
 
 <p><em>News analysis · 27 September 2026. This article is general information, not mental-health treatment or diagnosis. If you are in crisis or at immediate risk, use the Irish support information near the end of this article rather than relying on an AI chatbot.</em></p>
