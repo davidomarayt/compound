@@ -2108,3 +2108,44 @@ input,select,textarea,button{max-width:100%}
   .preferred-source-card strong{font-size:24px}
   .preferred-source-control{justify-content:flex-start;min-width:0}
 }
+
+
+/* 2026-09 Lighthouse accessibility hardening */
+/* Preserve the compact editorial look while giving small navigation links a
+   proper interaction box on touch devices and in keyboard navigation. */
+.reading-nav nav a{
+  display:flex;
+  align-items:center;
+  min-height:32px;
+  padding-top:6px;
+  padding-bottom:6px;
+}
+.breadcrumbs a,
+.card-bottom a,
+.home-panel-heading>a,
+.journal-column-more,
+.site-footer nav a,
+.masthead-note a{
+  display:inline-flex;
+  align-items:center;
+  min-height:24px;
+}
+@media(max-width:760px){
+  .pillar-nav a,
+  .search-link{
+    min-height:44px;
+  }
+  .breadcrumbs a,
+  .card-bottom a,
+  .home-panel-heading>a,
+  .journal-column-more,
+  .site-footer nav a,
+  .masthead-note a{
+    min-height:32px;
+  }
+  .reading-nav nav a{
+    min-height:40px;
+    padding-top:8px;
+    padding-bottom:8px;
+  }
+}
