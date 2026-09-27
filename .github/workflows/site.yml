@@ -5,7 +5,7 @@ name: site
 on:
   push:
     branches: ["claude/clever-babbage-uibieq"]
-    paths: ["content/**", "compound/site/**", ".github/workflows/site.yml"]
+    paths: ["content/**", "compound/site/**", "scripts/news_images.py", ".github/workflows/site.yml"]
   workflow_dispatch:
 permissions:
   contents: read
