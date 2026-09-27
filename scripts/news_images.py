@@ -9,7 +9,7 @@ Primary path:
 
 Fallback:
 - If no PEXELS_API_KEY is configured or the search fails, create a unique branded
-  Compound editorial SVG so a published news story is never image-less.
+  Compound editorial JPEG so the article still has a raster cover and Google Discover derivatives.
 
 RSS/source images are deliberately not scraped: licensing is handled separately.
 """
@@ -26,6 +26,7 @@ from typing import Any
 
 import httpx
 import yaml
+from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / "content"
@@ -134,26 +135,37 @@ def wrap(text: str, width: int = 33, max_lines: int = 4) -> list[str]:
     return lines[:max_lines]
 
 
-def fallback_svg(meta: dict[str, Any], destination: Path) -> None:
+def _fallback_font(size: int, bold: bool = false):
+    try:
+        return ImageFont.truetype("DejaVuSans-Bold.ttf" if bold else "DejaVuSans.ttf", size)
+    except OSError:
+        try:
+            return ImageFont.load_default(size=size)
+        except TypeError:
+            return ImageFont.load_default()
+
+
+def fallback_image(meta: dict[str, Any], destination: Path) -> None:
     pillar = str(meta.get("pillar") or "wealth")
     bg, accent = PILLAR_FALLBACK.get(pillar, ("#eee8df", "#755436"))
     title = str(meta.get("title") or "Compound News")
-    lines = wrap(title)
-    title_svg = "".join(
-        f'<text x="84" y="{250 + i * 80}" font-family="Georgia,serif" font-size="62" fill="#33252e">{html.escape(line)}</text>'
-        for i, line in enumerate(lines)
-    )
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660">
-<rect width="1200" height="660" fill="{bg}"/>
-<rect x="0" y="0" width="18" height="660" fill="{accent}"/>
-<text x="84" y="95" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="4" fill="{accent}">COMPOUND NEWS · {html.escape(pillar.upper())}</text>
-<line x1="84" x2="1110" y1="130" y2="130" stroke="#c8bfb9" stroke-width="2"/>
-{title_svg}
-<text x="84" y="604" font-family="Arial,sans-serif" font-size="20" fill="#5f555b">What changed · What it could mean in Ireland</text>
-<text x="1085" y="604" text-anchor="end" font-family="Georgia,serif" font-size="38" fill="{accent}">compound.</text>
-</svg>"""
+    lines = wrap(title, width=31, max_lines=4)
+
+    image = Image.new("RGB", (1200, 660), bg)
+    draw = ImageDraw.Draw(image)
+    draw.rectangle((0, 0, 18, 660), fill=accent)
+    draw.text((84, 72), f"COMPOUND NEWS · {pillar.upper()}", fill=accent, font=_fallback_font(25, True))
+    draw.line((84, 130, 1110, 130), fill="#c8bfb9", width=2)
+
+    title_font = _fallback_font(58)
+    for i, line in enumerate(lines):
+        draw.text((84, 205 + i * 76), line, fill="#33252e", font=title_font)
+
+    draw.text((84, 592), "What changed · What it could mean in Ireland", fill="#5f555b", font=_fallback_font(20))
+    draw.text((935, 580), "compound.", fill=accent, font=_fallback_font(38))
+
     destination.parent.mkdir(parents=True, exist_ok=True)
-    destination.write_text(svg, encoding="utf-8")
+    image.save(destination, "JPEG", quality=90, optimize=True)
 
 
 def yaml_line(key: str, value: str) -> str:
@@ -213,8 +225,8 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
                 return "skip:pinned-fetch-failed-existing"
 
             if is_published_news(meta):
-                fallback_rel = f"/static/images/news/{slug}.svg"
-                fallback_svg(meta, STATIC / fallback_rel.removeprefix("/static/"))
+                fallback_rel = f"/static/images/news/{slug}.jpg"
+                fallback_image(meta, STATIC / fallback_rel.removeprefix("/static/"))
                 fields = {
                     "image": fallback_rel,
                     "image_alt": f"Compound editorial graphic for {meta.get('title', 'this news story')}",
@@ -264,8 +276,8 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
         except Exception as exc:
             print(f"Pexels lookup failed for {path.name}: {exc}")
 
-    fallback_rel = f"/static/images/news/{slug}.svg"
-    fallback_svg(meta, STATIC / fallback_rel.removeprefix("/static/"))
+    fallback_rel = f"/static/images/news/{slug}.jpg"
+    fallback_image(meta, STATIC / fallback_rel.removeprefix("/static/"))
     fields = {
         "image": fallback_rel,
         "image_alt": f"Compound editorial graphic for {meta.get('title', 'this news story')}",
