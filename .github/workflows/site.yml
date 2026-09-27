@@ -69,6 +69,7 @@ jobs:
           grep -Fq 'Mortgage Calculator Ireland' /tmp/mortgage.html
           grep -Fq 'Worked example' /tmp/mortgage.html
           grep -Fq 'Central Bank' /tmp/mortgage.html
+          grep -Fq '/static/mortgage-calculator.js?v=20260927-performance1' /tmp/mortgage.html
 
           fetch https://compound.ie/net-worth-calculator/ /tmp/net-worth.html
           grep -Fq 'data-tool-name="net-worth-calculator"' /tmp/net-worth.html
@@ -112,21 +113,21 @@ jobs:
           fetch https://compound.ie/wealth/how-to-start-investing-in-ireland/ /tmp/investing.html
           grep -Fq 'A complete beginner course for Irish investors' /tmp/investing.html
           grep -Fq 'course-grid' /tmp/investing.html
-          grep -Fq '/static/investing-ireland.css?v=5' /tmp/investing.html
+          grep -Fq '/static/investing-ireland.css?v=6' /tmp/investing.html
           grep -Fq '/wealth/before-you-invest-ireland/' /tmp/investing.html
 
-          fetch https://compound.ie/static/investing-ireland.css?v=5 /tmp/investing.css
+          fetch https://compound.ie/static/investing-ireland.css?v=6 /tmp/investing.css
           grep -Fq 'Mobile-first finishing pass for Investing in Ireland 101' /tmp/investing.css
           grep -Fq '.investing-course-hub .course-grid' /tmp/investing.css
 
           fetch https://compound.ie/wealth/pensions-in-ireland/ /tmp/pensions.html
           grep -Fq 'From your first contribution to retirement income.' /tmp/pensions.html
           grep -Fq 'pension-course-grid' /tmp/pensions.html
-          grep -Fq '/static/pension-ireland.css?v=1' /tmp/pensions.html
+          grep -Fq '/static/pension-ireland.css?v=2' /tmp/pensions.html
           grep -Fq '/wealth/how-pensions-work-ireland/' /tmp/pensions.html
           grep -Fq '/wealth/pension-lump-sum-tax-ireland/' /tmp/pensions.html
 
-          fetch https://compound.ie/static/pension-ireland.css?v=1 /tmp/pension.css
+          fetch https://compound.ie/static/pension-ireland.css?v=2 /tmp/pension.css
           grep -Fq '.pension-course-grid' /tmp/pension.css
           grep -Fq '.pension-chapter-nav' /tmp/pension.css
 
@@ -141,11 +142,11 @@ jobs:
           fetch https://compound.ie/wealth/buying-a-home-in-ireland/ /tmp/homebuying.html
           grep -Fq 'From your first savings target to the day you get the keys.' /tmp/homebuying.html
           grep -Fq 'home-course-grid' /tmp/homebuying.html
-          grep -Fq '/static/home-buying-ireland.css?v=1' /tmp/homebuying.html
+          grep -Fq '/static/home-buying-ireland.css?v=2' /tmp/homebuying.html
           grep -Fq '/wealth/buying-home-budget-deposit-ireland/' /tmp/homebuying.html
           grep -Fq '/wealth/closing-buying-home-ireland/' /tmp/homebuying.html
 
-          fetch https://compound.ie/static/home-buying-ireland.css?v=1 /tmp/homebuying.css
+          fetch https://compound.ie/static/home-buying-ireland.css?v=2 /tmp/homebuying.css
           grep -Fq '.home-course-grid' /tmp/homebuying.css
           grep -Fq '.home-chapter-nav' /tmp/homebuying.css
 
