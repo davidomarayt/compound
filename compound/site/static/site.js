@@ -6,17 +6,19 @@
   const privacyBanner = document.querySelector('[data-privacy-banner]');
   let analyticsChoice = null;
   try { analyticsChoice = localStorage.getItem('compound_analytics_consent'); } catch (_) {}
-  if (privacyBanner && !analyticsChoice) privacyBanner.hidden = false;
+  if (privacyBanner) privacyBanner.hidden = Boolean(analyticsChoice);
   document.querySelectorAll('[data-analytics-consent]').forEach(button => button.addEventListener('click', () => {
     const choice = button.dataset.analyticsConsent;
     analyticsChoice = choice;
     try { localStorage.setItem('compound_analytics_consent', choice); } catch (_) {}
     if (typeof window.gtag === 'function') window.gtag('consent', 'update', {analytics_storage: choice});
     if (choice === 'granted' && typeof window.compoundStartAnalytics === 'function') window.compoundStartAnalytics();
+    document.documentElement.classList.add('analytics-consent-set');
     if (privacyBanner) privacyBanner.hidden = true;
   }));
   document.querySelectorAll('[data-privacy-settings]').forEach(link => link.addEventListener('click', event => {
     event.preventDefault();
+    document.documentElement.classList.remove('analytics-consent-set');
     if (privacyBanner) { privacyBanner.hidden = false; privacyBanner.querySelector('button').focus(); }
   }));
   const filters = document.querySelectorAll('[data-filter]');
