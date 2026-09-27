@@ -568,3 +568,13 @@
   font-weight:400;
   opacity:1;
 }
+
+
+/* Lighthouse mobile target-size fix for course navigation. */
+@media(max-width:760px){
+  .home-chapter-nav a{
+    min-height:44px;
+    display:inline-flex;
+    align-items:center;
+  }
+}
