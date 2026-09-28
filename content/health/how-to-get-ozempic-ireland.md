@@ -2,6 +2,7 @@
 title: "How to get Ozempic in Ireland: prescription, eligibility, cost and alternatives"
 seo_title: "How to Get Ozempic in Ireland (2026): Prescription & Cost"
 slug: how-to-get-ozempic-ireland
+news_image_query: "pharmacy prescription consultation doctor patient medicine"
 pillar: health
 date: '2026-09-24'
 reviewed: '2026-09-24'
