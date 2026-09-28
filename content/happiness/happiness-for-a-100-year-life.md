@@ -2,6 +2,7 @@
 title: 'Happiness for a 100-Year Life: Connection, Purpose and Ordinary Days'
 seo_title: 'Happiness for a 100-Year Life in Ireland | Compound'
 slug: happiness-for-a-100-year-life
+news_image_query: "older friends walking laughing outdoors healthy ageing"
 pillar: happiness
 draft: false
 publication_status: published
