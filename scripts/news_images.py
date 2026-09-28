@@ -98,6 +98,7 @@ def image_exists(meta: dict[str, Any]) -> bool:
 def is_fallback(meta: dict[str, Any]) -> bool:
     credit = str(meta.get("image_credit") or "")
     image = str(meta.get("image") or "")
+    source = str(meta.get("image_source") or "")
     generic_assets = {
         "/static/images/wealth.jpg",
         "/static/images/tax-paperwork.jpg",
@@ -105,8 +106,36 @@ def is_fallback(meta: dict[str, Any]) -> bool:
         "/static/images/budget-dublin.jpg",
         "/static/images/landscape.jpg",
         "/static/images/home-wealth.webp",
+        "/static/images/happiness.jpg",
+        "/static/images/mindful.jpg",
+        "/static/images/hobby-painting.jpg",
+        "/static/images/home-happiness.webp",
+        "/static/images/health.jpg",
+        "/static/images/nutrition.jpg",
+        "/static/images/adult-sleep.jpg",
+        "/static/images/oatmeal.jpg",
+        "/static/images/glp1-injector.jpg",
     }
-    return credit.startswith("Illustration: Compound news fallback") or image in generic_assets
+    generic_sources = {
+        "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
+        "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
+        "https://images.unsplash.com/photo-1506126613408-eca07ce68773",
+        "https://images.unsplash.com/photo-1513364776144-60967b0f800f",
+        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e",
+        "https://images.unsplash.com/photo-1494597564530-871f2b93ac55",
+        "https://unsplash.com/photos/woman-sleeping-on-bed-under-blankets-rUc9hVE-L-E",
+        "https://unsplash.com/photos/two-bowls-of-oatmeal-with-fruits-W9OKrxBqiZA",
+        "https://unsplash.com/photos/a-semaglutide-injection-pen-is-shown-TzKc7FGaL7Y",
+        "https://unsplash.com/photos/person-holding-paper-near-pen-and-calculator-xoU52jUVUXA",
+        "https://unsplash.com/photos/man-and-woman-walking-on-road-during-daytime-PpZasS086os",
+        "https://unsplash.com/photos/samuel-beckett-bridge-and-dublin-cityscape-reflected-in-the-liffey-bjROiiuUXwA",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+    }
+    return (
+        credit.startswith("Illustration: Compound news fallback")
+        or image in generic_assets
+        or source in generic_sources
+    )
 
 
 def default_query(meta: dict[str, Any]) -> str:
