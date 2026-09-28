@@ -2,6 +2,7 @@
 title: 'Health for a 100-Year Life: Staying Capable, Connected and Well'
 seo_title: 'Health for a 100-Year Life in Ireland | Compound'
 slug: health-for-a-100-year-life
+news_image_query: "healthy older adult walking outdoors Ireland"
 pillar: health
 draft: false
 publication_status: published
