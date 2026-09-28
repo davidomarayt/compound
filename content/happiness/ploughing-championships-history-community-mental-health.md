@@ -1,6 +1,7 @@
 ---
 title: 'The Ploughing: a history of gathering, and why it matters for wellbeing'
 slug: ploughing-championships-history-community-mental-health
+news_image_query: "Irish agricultural show crowd farming community"
 pillar: happiness
 date: '2026-09-15'
 draft: false
