@@ -1,6 +1,7 @@
 ---
 title: 'What would an extra €100 a month do to your mortgage?'
 slug: mortgage-overpayments-100-euro-ireland
+news_image_query: "mortgage overpayment house keys euro coins calculator"
 pillar: wealth
 date: '2026-09-14'
 draft: false
