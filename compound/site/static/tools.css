@@ -25,7 +25,7 @@
 
 .tool-mode-switch{display:inline-flex;gap:2px;margin-top:26px;padding:3px;border:1px solid var(--line-2);background:var(--paper)}
 .tool-mode-button{border:0;background:transparent;color:var(--ink-2);font:700 .86rem var(--sans);padding:.72rem .95rem;cursor:pointer}
-.tool-mode-button.is-active{background:var(--ink);color:var(--paper)}
+.tool-mode-button.is-active{background:var(--ink);color:#fffdf9}
 .tool-mode-button:focus-visible{outline:3px solid color-mix(in srgb,var(--wealth) 28%,transparent);outline-offset:2px}
 .tool-mode-note{margin:.7rem 0 0;color:var(--ink-3);font-size:.82rem;line-height:1.5;max-width:620px}
 .tool-field[data-advanced-field]{border-left:2px solid color-mix(in srgb,var(--wealth) 45%,var(--line))}
@@ -250,12 +250,12 @@
 .tool-result-primary{
   grid-column:1/-1;
   background:var(--ink);
-  color:var(--paper);
+  color:#fffdf9;
   padding:26px 22px;
 }
 .tool-result-primary span{color:#d9d2d6}
 .tool-result-primary strong{
-  color:var(--paper);
+  color:#fffdf9;
   font-size:clamp(2rem,10cqw,3.35rem);
 }
 .tool-scenario-summary{
