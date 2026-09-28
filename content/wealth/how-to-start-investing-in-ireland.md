@@ -2,6 +2,7 @@
 title: 'How to Start Investing in Ireland: A Beginner’s Guide'
 seo_title: 'Investing in Ireland 101: Beginner’s Guide & Course'
 slug: how-to-start-investing-in-ireland
+news_image_query: "investing financial planning laptop notebook Irish household"
 pillar: wealth
 date: 2026-09-23
 reviewed: 2026-09-25
