@@ -11,7 +11,7 @@ reviewed: 2026-09-22
 summary: 'A major all-island study of 4,300 workers found work-related stress is closely linked to workload, deadlines, management quality, fairness and the ability to disconnect from work.'
 meta_description: 'A major 2026 study finds workplace stress in Ireland is strongly linked to workload, deadlines, management and the ability to switch off. Here is what employers and workers should know.'
 tags: [news, workplace-stress, wellbeing, work-life, work-life-balance, right-to-disconnect, burnout, ireland]
-news_image_query: 'Irish office workers workplace stress wellbeing Ireland modern office'
+news_image_query: "Irish office workplace team meeting stress"
 social:
   enabled: true
   url: https://compound.ie/news/workplace-stress-ireland-job-design-wellbeing-2026/
