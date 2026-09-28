@@ -24,7 +24,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from compound.config import Settings
 
 PILLARS = ["health", "wealth", "happiness"]
-PILLAR_LABELS = {"wealth": "Wealth", "health": "Health", "happiness": "Happiness"}
+PILLAR_LABELS = {"wealth": "Wealth", "health": "Health", "happiness": "Life"}
 
 COURSE_PARENTS = {
     # Investing in Ireland 101
