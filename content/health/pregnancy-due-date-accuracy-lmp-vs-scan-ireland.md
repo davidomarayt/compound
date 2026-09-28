@@ -2,6 +2,7 @@
 title: 'How accurate is a pregnancy due date? LMP vs dating scan explained'
 seo_title: 'Pregnancy Due Date Accuracy: LMP vs Dating Scan Ireland'
 slug: pregnancy-due-date-accuracy-lmp-vs-scan-ireland
+news_image_query: "pregnancy ultrasound scan appointment"
 pillar: health
 draft: false
 publication_status: published
