@@ -5,6 +5,7 @@ image_credit: Kelly Sikkema / Unsplash
 image_source: https://unsplash.com/photos/person-holding-paper-near-pen-and-calculator-xoU52jUVUXA
 title: 'Tax credits in Ireland explained: what they are and how they work'
 slug: tax-credits-ireland-explained
+news_image_query: "Irish tax paperwork calculator payslip Revenue"
 pillar: wealth
 date: '2026-09-13'
 summary: A tax credit comes straight off your income tax bill, and a single PAYE worker has €4,000 of them for 2026 before claiming anything else. Here is how credits differ from rate bands and reliefs, which ones people miss, and how to check your Tax Credit Certificate and claim four years back.
