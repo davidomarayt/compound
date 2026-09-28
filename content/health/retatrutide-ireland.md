@@ -2,6 +2,7 @@
 title: 'Retatrutide Ireland: what is it, can you get it, and how does it compare with Mounjaro, Wegovy and Ozempic?'
 seo_title: 'Retatrutide Ireland: Availability, Results & GLP-1 Comparison'
 slug: retatrutide-ireland
+news_image_query: "clinical weight loss research doctor patient consultation"
 pillar: health
 draft: false
 publication_status: published
