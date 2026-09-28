@@ -2,6 +2,7 @@
 title: 'Burnout symptoms: how to recognise burnout and what actually helps'
 seo_title: 'Burnout Symptoms & Recovery: An Evidence-Based Guide'
 slug: burnout-symptoms-recovery-ireland
+news_image_query: "tired office worker desk burnout recovery"
 pillar: happiness
 draft: false
 publication_status: published
