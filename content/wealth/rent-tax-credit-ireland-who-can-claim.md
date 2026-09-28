@@ -5,6 +5,7 @@ image_credit: Unsplash
 image_source: https://images.unsplash.com/photo-1484154218962-a197022b5858
 title: 'Rent Tax Credit in Ireland: Who Can Claim It and How'
 slug: rent-tax-credit-ireland-who-can-claim
+news_image_query: "rental apartment keys tenancy paperwork Ireland"
 pillar: wealth
 date: '2026-09-13'
 summary: The Rent Tax Credit is worth up to €1,000 a year for a single renter and €2,000 for a jointly assessed couple, but you have to claim it yourself. Here is who qualifies, what the RTB (Residential Tenancies Board) registration rule really means, how to claim in myAccount (Revenue's online service for individuals) or on Form 11, and why the 2022 year disappears on 31 December 2026.
