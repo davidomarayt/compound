@@ -180,6 +180,7 @@ TOOL_PRIMARY_RESULTS = {
     "car-finance-calculator": "ownership_summary",
     "nutrition-needs-calculator": "maintenance",
     "weight-loss-calculator": "kg_to_target",
+    "glp1-cost-calculator-ireland": "total_cost",
     "pregnancy-due-date-calculator": "due_date",
     "alcohol-units-calories-cost-calculator": "standard_drinks",
     "redundancy-calculator-ireland": "statutory",
