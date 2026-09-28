@@ -196,8 +196,14 @@ def _local_photo_for(meta: dict[str, Any]) -> dict[str, str]:
         (("home", "house", "mortgage", "property"), "wealth.jpg"),
         (("hobby", "fun", "creative"), "hobby-painting.jpg"),
     ]
+    slug = str(meta.get("slug") or "")
     for keywords, filename in keyword_preferences:
         if any(k in haystack for k in keywords):
+            # Keep the dedicated GLP injector for the core GLP evidence page only.
+            # Other GLP/medicine stories should get their own Pexels result, and if
+            # stock lookup fails they fall through to a different generic health photo.
+            if filename == "glp1-injector.jpg" and slug != "glp1-medicines-ireland-rise-evidence":
+                continue
             for item in pool:
                 if item["file"] == filename:
                     return item
