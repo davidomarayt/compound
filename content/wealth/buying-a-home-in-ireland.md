@@ -2,6 +2,7 @@
 title: 'Buying a Home in Ireland 101: A Complete Step-by-Step Guide'
 seo_title: 'Buying a Home in Ireland 101: Complete Buyer Course'
 slug: buying-a-home-in-ireland
+news_image_query: "Irish house keys first time buyer home purchase"
 pillar: wealth
 date: 2026-09-23
 reviewed: 2026-09-25
