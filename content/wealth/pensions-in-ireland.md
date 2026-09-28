@@ -2,6 +2,7 @@
 title: 'Pensions in Ireland 101: A Complete Beginner’s Guide'
 seo_title: 'Pensions in Ireland 101: Complete Beginner Course'
 slug: pensions-in-ireland
+news_image_query: "retirement pension planning older couple financial adviser Ireland"
 pillar: wealth
 date: 2026-09-23
 reviewed: 2026-09-25
