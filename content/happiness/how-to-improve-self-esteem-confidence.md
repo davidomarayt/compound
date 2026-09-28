@@ -2,6 +2,7 @@
 title: 'How to improve self-esteem and confidence: what actually helps'
 seo_title: 'How to Improve Self-Esteem & Confidence'
 slug: how-to-improve-self-esteem-confidence
+news_image_query: "confident adult walking outdoors everyday life"
 pillar: happiness
 draft: false
 publication_status: published
