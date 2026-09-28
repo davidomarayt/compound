@@ -5,6 +5,7 @@ image_credit: micheile henderson / Unsplash
 image_source: https://unsplash.com/photos/man-and-woman-walking-on-road-during-daytime-PpZasS086os
 title: 'Pension tax relief in Ireland: what it''s worth, the limits, and how to claim'
 slug: pension-tax-relief-ireland-how-to-claim
+news_image_query: "pension tax planning retirement paperwork calculator"
 pillar: wealth
 date: '2026-09-13'
 summary: Pension contributions get income tax relief at your highest rate, capped by an age-related percentage of earnings up to €115,000. Here is what that is worth, how a PAYE (Pay As You Earn, where your employer deducts tax before paying you) worker or sole trader claims it, and why a payment before the October deadline can still count against last year.
