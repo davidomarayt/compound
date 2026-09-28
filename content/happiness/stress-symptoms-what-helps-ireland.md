@@ -2,6 +2,7 @@
 title: 'Stress symptoms: how to recognise stress and what actually helps'
 seo_title: 'Stress Symptoms: Signs & What Actually Helps'
 slug: stress-symptoms-what-helps-ireland
+news_image_query: "calm breathing outdoors stress relief adult"
 pillar: happiness
 draft: false
 publication_status: published
