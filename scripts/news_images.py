@@ -124,16 +124,39 @@ def default_query(meta: dict[str, Any]) -> str:
     return useful or generic
 
 
-def pexels_photo(query: str, api_key: str) -> dict[str, Any] | None:
+USED_PEXELS_PHOTO_IDS: set[int] = set()
+
+def pexels_photo(query: str, api_key: str, seed_key: str = "") -> dict[str, Any] | None:
     with httpx.Client(timeout=30, follow_redirects=True) as client:
         response = client.get(
             "https://api.pexels.com/v1/search",
             headers={"Authorization": api_key},
-            params={"query": query, "orientation": "landscape", "size": "large", "per_page": 8},
+            params={"query": query, "orientation": "landscape", "size": "large", "per_page": 15},
         )
         response.raise_for_status()
         photos = response.json().get("photos") or []
-        return photos[0] if photos else None
+        if not photos:
+            return None
+
+        # Rotate the result order deterministically per article, then choose the
+        # first photo not already used during this build. This prevents several
+        # different stories from receiving the same generic stock image.
+        seed = sum(ord(ch) for ch in (seed_key or query))
+        offset = seed % len(photos)
+        ordered = photos[offset:] + photos[:offset]
+        for photo in ordered:
+            photo_id = int(photo.get("id") or 0)
+            if photo_id and photo_id not in USED_PEXELS_PHOTO_IDS:
+                USED_PEXELS_PHOTO_IDS.add(photo_id)
+                return photo
+
+        # If every result has already been used, prefer a deterministic result
+        # rather than failing the build.
+        photo = ordered[0]
+        photo_id = int(photo.get("id") or 0)
+        if photo_id:
+            USED_PEXELS_PHOTO_IDS.add(photo_id)
+        return photo
 
 
 def pexels_photo_by_id(photo_id: str, api_key: str) -> dict[str, Any]:
@@ -324,7 +347,7 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
         query = default_query(meta)
         if api_key:
             try:
-                photo = pexels_photo(query, api_key)
+                photo = pexels_photo(query, api_key, slug)
                 if photo:
                     hero_rel = f"/static/images/evergreen/{slug}.jpg"
                     download(photo["src"]["landscape"], STATIC / hero_rel.removeprefix("/static/"))
