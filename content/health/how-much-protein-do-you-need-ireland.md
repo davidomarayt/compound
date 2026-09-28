@@ -2,6 +2,7 @@
 title: 'How much protein do you actually need? An Irish evidence-based guide'
 seo_title: 'How Much Protein Do You Need? Ireland Guide & Calculator'
 slug: how-much-protein-do-you-need-ireland
+news_image_query: "high protein healthy food chicken eggs yoghurt beans"
 pillar: health
 draft: false
 publication_status: published
