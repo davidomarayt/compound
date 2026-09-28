@@ -573,6 +573,13 @@
         items.push('Maintenance energy is a prediction from resting energy × the selected activity factor, not a direct measurement.');
         items.push('The protein setting is '+(v.protein_context==='resistance'?'1.6 g/kg/day for the resistance-training illustration.':'0.83 g/kg/day for the general adult reference illustration.'));
         break;
+      case 'glp1_cost': {
+        const period=v.price_period==='four_weeks'?'4-week':'calendar-month';
+        items.push('The medicine price entered is treated as a '+period+' quote supplied by you; Compound does not assume a national private price.');
+        if(v.price_period==='four_weeks') items.push('A four-week quote occurs 13 times in a 52-week year, not 12 times.');
+        items.push('This tool compares costs only and does not assess medicine choice, dose, eligibility, safety or likely weight change.');
+        break;
+      }
       case 'weight_loss': {
         const h=Math.max(0,v.height||0)/100, current=Math.max(0,v.current_weight||0), target=Math.max(0,v.target_weight||0);
         const bmi=h>0?current/(h*h):0, change=Math.max(0,current-target), changePct=current>0?change/current*100:0;
@@ -1776,6 +1783,35 @@
         target:num(Math.round(target))+' kcal/day',energy_delta:(delta>=0?'+':'-')+num(Math.abs(Math.round(delta)))+' kcal/day',
         protein:num(proteinG)+' g/day',protein_per_kg:num(proteinRate)+' g/kg/day',fat:num(fatG)+' g/day',carbs:num(carbG)+' g/day',fibre:'At least 25 g/day',
         __chart:advanced?{type:'bar',currency:false,title:'Illustrative macro amounts',caption:'Protein uses the selected evidence/reference context; fat is set at 30% of energy and carbohydrate is the mathematical remainder.',labels:['Protein','Fat','Carbohydrate'],series:[{label:'g/day',values:[proteinG,fatG,carbG]}]}:{type:'bar',currency:false,title:'Resting and estimated maintenance energy',caption:'Resting energy is predicted from Mifflin–St Jeor and maintenance multiplies that estimate by the selected physical activity level.',labels:['Resting','Maintenance'],series:[{label:'kcal/day',values:[resting,maintenance]}]}
+      };
+    },
+    glp1_cost(v){
+      const advanced=Boolean(v.__advanced), months=Math.max(1,Math.min(120,v.treatment_months||12));
+      const years=months/12, medPrice=Math.max(0,v.medicine_cost||0);
+      const cyclesPerYear=v.price_period==='four_weeks'?13:12;
+      const cycles=cyclesPerYear*years;
+      const medicine=medPrice*cycles;
+      const consultation=Math.max(0,v.consultation_cost||0)*Math.max(0,v.consultations_per_year||0)*years;
+      const initial=advanced?Math.max(0,v.initial_fee||0):0;
+      const monitoring=advanced?Math.max(0,v.blood_test_cost||0)*Math.max(0,v.blood_tests_per_year||0)*years:0;
+      const recurring=advanced?Math.max(0,v.other_monthly||0)*months:0;
+      const extras=initial+monitoring+recurring;
+      const total=medicine+consultation+extras;
+      const averageMonthly=total/months;
+      const annualised=averageMonthly*12;
+      const fourWeek=annualised/13;
+      const names={mounjaro:'Mounjaro (tirzepatide)',wegovy:'Wegovy (semaglutide)',ozempic:'Ozempic (semaglutide)',other:'Other prescription treatment'};
+      return {
+        total_cost:money(total),
+        selected_medication:names[v.medication]||'Selected treatment',
+        billing_cycles:num(cycles)+' '+(v.price_period==='four_weeks'?'4-week':'monthly')+' period'+(Math.abs(cycles-1)<.001?'':'s'),
+        medicine_spend:money(medicine),
+        consultation_spend:money(consultation),
+        extra_spend:money(extras),
+        average_monthly:money(averageMonthly),
+        annualised_cost:money(annualised),
+        four_week_equivalent:money(fourWeek),
+        __chart:{type:'bar',title:'What makes up the treatment budget',caption:'Uses only the prices and frequencies you entered. It does not assume a current market price for any medicine.',labels:advanced?['Medicine','Ongoing consultations','Initial / monitoring / other']:['Medicine','Ongoing consultations'],series:[{label:'Cost over selected period',values:advanced?[medicine,consultation,extras]:[medicine,consultation]}]}
       };
     },
     weight_loss(v){
