@@ -16,7 +16,6 @@ related_tools:
   - mortgage-affordability-calculator
   - mortgage-borrowing-calculator
   - mortgage-calculator
-  - house-deposit-calculator
   - house-buying-costs-calculator
 social:
   enabled: true
