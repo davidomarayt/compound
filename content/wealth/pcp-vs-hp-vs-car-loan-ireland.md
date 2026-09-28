@@ -2,6 +2,7 @@
 title: 'PCP vs Hire Purchase vs Car Loan in Ireland: the real cost of each'
 seo_title: 'PCP vs HP vs Car Loan Ireland: Compare the Real Cost'
 slug: pcp-vs-hp-vs-car-loan-ireland
+news_image_query: "car dealership finance contract keys calculator"
 pillar: wealth
 draft: false
 publication_status: published
