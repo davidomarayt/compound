@@ -5,6 +5,7 @@ image_credit: Unsplash
 image_source: https://images.unsplash.com/photo-1506126613408-eca07ce68773
 title: 'How to stop worrying and overthinking: what the trials actually show'
 slug: how-to-stop-worrying-and-overthinking
+news_image_query: "quiet walk nature reflection wellbeing"
 pillar: happiness
 date: '2026-09-13'
 summary: Worry is a habit that responds to specific techniques, not to trying harder to stop. The trial evidence backs postponing worry to a set slot, CBT and therapies built around the worry itself, and if worry has been near-daily for six months the HSE route starts with your GP.
