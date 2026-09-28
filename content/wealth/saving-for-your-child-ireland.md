@@ -2,6 +2,7 @@
 title: 'Saving for your child in Ireland: tax, ownership and what happens at 18'
 seo_title: 'Saving for Your Child in Ireland: Tax & Turning 18'
 slug: saving-for-your-child-ireland
+news_image_query: "parent child savings jar financial planning family"
 pillar: wealth
 draft: false
 publication_status: published
