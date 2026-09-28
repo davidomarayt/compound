@@ -1,6 +1,7 @@
 ---
 title: When did you last do something just for fun?
 slug: when-did-you-last-do-something-for-fun
+news_image_query: "adult hobby painting pottery leisure fun"
 pillar: happiness
 date: '2026-09-14'
 draft: false
