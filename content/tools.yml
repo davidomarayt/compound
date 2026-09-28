@@ -3588,3 +3588,129 @@ tools:
       - {title: "Revenue — Taxation of retirement lump sums", url: "https://www.revenue.ie/en/jobs-and-pensions/pension/private/retirement-lump-sums.aspx"}
       - {title: "Revenue Pensions Manual Chapter 27 — Taxation of Retirement Lump Sums", url: "https://www.revenue.ie/en/tax-professionals/tdm/pensions/chapter-27.pdf"}
 
+  - slug: glp1-cost-calculator-ireland
+    title: GLP-1 Cost Calculator Ireland
+    category: Health
+    formula: glp1_cost
+    summary: Work out the real cost of Mounjaro, Wegovy, Ozempic or another prescription treatment using your own pharmacy or clinic price, including consultations and optional extra costs.
+    meta_description: GLP-1 cost calculator Ireland. Estimate the 4-week, monthly, annual and total cost of Mounjaro, Wegovy, Ozempic or another treatment using your actual quoted price.
+    updated: 2026-09-28
+    basic_note: "Enter the price you have actually been quoted. Compound does not hard-code a medicine price because private pharmacy and clinic charges can differ and change over time."
+    advanced_note: "Advanced mode adds one-off setup fees, blood-test costs and other recurring costs so you can compare the full treatment budget rather than the medicine price alone."
+    result_note: "Cost estimate only. It does not determine whether a medicine is clinically suitable, licensed for your intended use, available, reimbursed or safe for you. Prescription medicines require assessment by an appropriate prescriber."
+    fields:
+      - id: medication
+        label: Medicine or treatment
+        type: select
+        default: mounjaro
+        section_start: Treatment quote
+        options:
+          - {value: mounjaro, label: "Mounjaro (tirzepatide)"}
+          - {value: wegovy, label: "Wegovy (semaglutide)"}
+          - {value: ozempic, label: "Ozempic (semaglutide)"}
+          - {value: other, label: "Other prescription treatment"}
+        help: "The medicine name is used only to label your scenario. Enter the actual price from your own pharmacy, clinic or prescriber."
+      - {id: medicine_cost, label: Medicine price per billing period, type: number, prefix: "€", default: 0, min: 0, step: 1, help: "Replace €0 with the amount you have actually been quoted for one 4-week supply or one calendar month, matching the billing period below."}
+      - id: price_period
+        label: What period does that medicine price cover?
+        type: select
+        default: four_weeks
+        options:
+          - {value: four_weeks, label: "4 weeks"}
+          - {value: calendar_month, label: "1 calendar month"}
+        help: "A 4-week price occurs 13 times in a 52-week year; a calendar-month price occurs 12 times."
+      - {id: treatment_months, label: Planned treatment period, type: number, suffix: months, default: 12, min: 1, max: 120, step: 1, section_start: Time horizon}
+      - {id: consultation_cost, label: Ongoing consultation / prescription fee, type: number, prefix: "€", default: 0, min: 0, step: 1, help: "Enter the fee for each ongoing review or prescription appointment, if charged separately."}
+      - {id: consultations_per_year, label: Ongoing consultations per year, type: number, suffix: "/year", default: 4, min: 0, max: 52, step: 1}
+      - {id: initial_fee, label: Initial consultation or setup fee, type: number, prefix: "€", default: 0, min: 0, step: 1, advanced: true, section_start: Extra treatment costs}
+      - {id: blood_test_cost, label: Cost per blood-test / monitoring visit, type: number, prefix: "€", default: 0, min: 0, step: 1, advanced: true}
+      - {id: blood_tests_per_year, label: Blood-test / monitoring visits per year, type: number, suffix: "/year", default: 0, min: 0, max: 52, step: 1, advanced: true}
+      - {id: other_monthly, label: Other recurring treatment costs, type: number, prefix: "€", suffix: "/month", default: 0, min: 0, step: 1, advanced: true, help: "For example delivery, administration or other recurring charges that are not already included in the medicine price."}
+    results:
+      - {id: total_cost, label: Total estimated treatment cost}
+      - {id: selected_medication, label: Scenario}
+      - {id: billing_cycles, label: Medicine billing periods}
+      - {id: medicine_spend, label: Medicine spend}
+      - {id: consultation_spend, label: Ongoing consultation fees}
+      - {id: extra_spend, label: Other modelled costs, advanced: true}
+      - {id: average_monthly, label: Average cost per calendar month}
+      - {id: annualised_cost, label: Equivalent 12-month cost}
+      - {id: four_week_equivalent, label: Equivalent cost per 4 weeks}
+    guide: |
+      ## What this GLP-1 cost calculator does
+
+      This calculator is designed for people in Ireland who have received a private pharmacy, clinic or prescriber quote and want to understand the **full cost over time**. It does not assume that every patient pays the same amount.
+
+      Choose Mounjaro, Wegovy, Ozempic or "Other", then enter the price you have actually been quoted. You can tell the calculator whether that price covers **four weeks** or a **calendar month**. That distinction matters: there are 13 four-week periods in a 52-week year, but 12 calendar months.
+
+      The basic calculation also lets you add ongoing consultation or prescription fees. Advanced mode adds an initial fee, monitoring or blood-test costs and other recurring charges.
+
+      ## Why a 4-week quote is not the same as a monthly quote
+
+      A price of €X every four weeks is charged approximately **13 times a year**. A price of €X every calendar month is charged 12 times a year.
+
+      The calculator converts both formats onto the same time horizon so that quotes can be compared consistently. It also shows an average calendar-month cost and an equivalent four-week cost.
+
+      ## Mounjaro, Wegovy and Ozempic are not interchangeable
+
+      **Mounjaro contains tirzepatide.** It acts at GIP and GLP-1 receptors and is often grouped with GLP-1 medicines in everyday discussion. **Wegovy and Ozempic contain semaglutide**, but they are separate authorised medicines with different licensed uses and product information.
+
+      The HSE states that Wegovy can be prescribed for weight management for eligible patients. The HSE describes Ozempic as a medicine prescribed for type 2 diabetes rather than as a weight-management medicine. The HPRA lists Mounjaro, Wegovy and Ozempic as prescription-only medicines supplied through pharmacies.
+
+      Do not use the calculator to choose a medicine or dose. The clinical decision belongs with an appropriate prescriber.
+
+      ## Reimbursement can change the amount you personally pay
+
+      HSE reimbursement depends on the specific medicine, indication, eligibility scheme and current reimbursement rules. For example, the HSE states that Ozempic reimbursement is restricted to approved diabetes use under relevant schemes, while Wegovy is not covered by the Medical Card, Long-Term Illness Scheme or Drugs Payment Scheme on the HSE's current obesity-medicines guidance.
+
+      Because these rules can change and individual eligibility differs, the calculator deliberately asks for **your actual out-of-pocket quote** rather than guessing what you will pay.
+
+      ## Worked example
+
+      Suppose a treatment is quoted at **€250 every four weeks**, with four €50 review appointments per year and a 12-month treatment horizon.
+
+      There are 13 four-week medicine billing periods in a 52-week year, so the medicine component would be **€3,250**. Four €50 reviews add **€200**, producing a modelled annual total of **€3,450** before any other fees.
+
+      This is only an arithmetic example and is not a statement of the current price of any named medicine.
+
+      ## Frequently asked questions
+
+      ### How much does Mounjaro cost in Ireland?
+
+      Private prices can vary by provider, dose, services included and timing. Enter the price you have actually been quoted into the calculator rather than relying on an old headline price.
+
+      ### How much does Wegovy cost in Ireland?
+
+      The calculator does not assume a fixed national private price. Use the current quote from your pharmacy, clinic or prescriber and specify whether it covers four weeks or one calendar month.
+
+      ### How much does Ozempic cost in Ireland?
+
+      Out-of-pocket cost depends on the circumstances and reimbursement eligibility. The HSE states that Ozempic is prescribed for type 2 diabetes and reimbursement controls apply. Use your actual quoted personal cost in the calculator.
+
+      ### Why does a four-week price give 13 payments per year?
+
+      A year contains 52 weeks. Dividing 52 by four gives 13 four-week billing periods. Treating a four-week quote as though it were a calendar-month quote would understate a full-year cost.
+
+      ### Does this calculator estimate weight loss?
+
+      No. It estimates money only. Weight response, side effects, dose changes, treatment duration and clinical suitability are individual medical matters and are not predicted here.
+
+      ### Are Mounjaro and Wegovy GLP-1 medicines?
+
+      Wegovy contains the GLP-1 receptor agonist semaglutide. Mounjaro contains tirzepatide, which acts at both GIP and GLP-1 receptors. It is commonly discussed alongside GLP-1 medicines, but the pharmacology is not identical.
+
+      ## Method and limitations
+
+      For a four-week medicine quote, the calculator annualises the price using 13 billing periods per 52-week year. For a calendar-month quote, it uses 12 periods per year. It scales medicine and ongoing consultation costs to the treatment duration entered.
+
+      Advanced mode adds the one-off initial fee once, scales monitoring visits to the treatment duration and adds recurring monthly costs. The annualised and four-week-equivalent figures are derived from the average cost across the complete scenario.
+
+      The calculation does not model dose-specific prices, price increases, missed doses, treatment interruptions, clinical outcomes, adverse effects, reimbursement entitlement or whether a medicine is appropriate for you.
+
+    sources:
+      - {title: "HSE — Medicines to treat obesity", url: "https://www2.hse.ie/conditions/obesity/medicines/"}
+      - {title: "HSE — Current GLP-1 reimbursement arrangements (2026)", url: "https://about.hse.ie/publications/question-from-deputy-padraig-rice-pq-10332-26/"}
+      - {title: "HPRA — Mounjaro (tirzepatide) authorised medicine", url: "https://www.hpra.ie/find-a-medicine/for-human-use/authorised-medicines/details/41201"}
+      - {title: "HPRA — Wegovy (semaglutide) authorised medicine", url: "https://www.hpra.ie/find-a-medicine/for-human-use/authorised-medicines/details/41192"}
+      - {title: "HPRA — Ozempic (semaglutide) authorised medicine", url: "https://www.hpra.ie/find-a-medicine/for-human-use/authorised-medicines/details/41174"}
+
