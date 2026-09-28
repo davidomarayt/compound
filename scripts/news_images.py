@@ -188,7 +188,7 @@ def _local_photo_for(meta: dict[str, Any]) -> dict[str, str]:
     keyword_preferences = [
         (("sleep", "bedtime"), "adult-sleep.jpg"),
         (("protein", "nutrition", "vitamin", "food", "macro", "creatine"), "nutrition.jpg"),
-        (("ozempic", "wegovy", "mounjaro", "glp", "medicine", "retatrutide"), "glp1-injector.jpg"),
+        (("ozempic", "wegovy", "mounjaro", "glp", "retatrutide", "semaglutide", "tirzepatide"), "glp1-injector.jpg"),
         (("stress", "burnout", "therapy", "mental", "loneliness", "worry", "self-esteem"), "mindful.jpg"),
         (("pension", "retire"), "retirement-walk.jpg"),
         (("tax", "salary", "income", "rent", "credit"), "tax-paperwork.jpg"),
@@ -204,8 +204,11 @@ def _local_photo_for(meta: dict[str, Any]) -> dict[str, str]:
 
     # Stable distribution across the remaining pool so adjacent cards do not all
     # show the same source photograph.
+    generic_pool = [item for item in pool if not (pillar == "health" and item["file"] == "glp1-injector.jpg")]
+    if not generic_pool:
+        generic_pool = pool
     seed = sum(ord(ch) for ch in str(meta.get("slug") or meta.get("title") or "compound"))
-    return pool[seed % len(pool)]
+    return generic_pool[seed % len(generic_pool)]
 
 
 def fallback_image(meta: dict[str, Any], destination: Path) -> dict[str, str]:
@@ -298,8 +301,30 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
         return "skip:not-published"
 
     if not is_published_news(meta):
-        if image_exists(meta):
+        existing = image_exists(meta)
+        if existing and not force and not (api_key and is_fallback(meta)):
             return "skip:has-image"
+
+        query = default_query(meta)
+        if api_key:
+            try:
+                photo = pexels_photo(query, api_key)
+                if photo:
+                    hero_rel = f"/static/images/evergreen/{slug}.jpg"
+                    download(photo["src"]["landscape"], STATIC / hero_rel.removeprefix("/static/"))
+                    fields = {
+                        "image": hero_rel,
+                        "image_alt": str(photo.get("alt") or f"Illustrative photo for {meta.get('title', 'Compound')}"),
+                        "image_credit": f"{photo.get('photographer', 'Pexels photographer')} on Pexels",
+                        "image_source": str(photo.get("url") or "https://www.pexels.com"),
+                        "social_image": hero_rel,
+                        "news_image_query": query,
+                    }
+                    inject_fields(path, raw, match, fields)
+                    return f"pexels-evergreen:{photo.get('id')}:{query}"
+            except Exception as exc:
+                print(f"Pexels evergreen lookup failed for {path.name}: {exc}")
+
         fallback_rel = f"/static/images/evergreen/{slug}.jpg"
         photo = fallback_image(meta, STATIC / fallback_rel.removeprefix("/static/"))
         fields = {
@@ -308,9 +333,10 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
             "image_credit": photo["credit"],
             "image_source": photo["url"],
             "social_image": fallback_rel,
+            "news_image_query": query,
         }
         inject_fields(path, raw, match, fields)
-        return "photo-fallback:evergreen"
+        return f"photo-fallback:evergreen:{query}"
 
     existing = image_exists(meta)
     if existing and not force and not (api_key and is_fallback(meta)):
