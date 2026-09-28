@@ -2,6 +2,7 @@
 title: 'Creatine in Ireland: what it does, how to take it and what to watch'
 seo_title: 'Creatine in Ireland: Benefits, Dose & Safety'
 slug: creatine-benefits-dosage-safety-ireland
+news_image_query: "creatine powder shaker gym strength training"
 pillar: health
 draft: false
 publication_status: published
