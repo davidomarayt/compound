@@ -2,6 +2,7 @@
 title: 'GLP-1s and pregnancy: Ozempic, Wegovy, Mounjaro and what the evidence says'
 seo_title: 'GLP-1 Pregnancy Safety Ireland: Ozempic, Wegovy & Mounjaro'
 slug: glp1-pregnancy-ozempic-wegovy-mounjaro-ireland
+news_image_query: "pregnant woman doctor consultation maternity clinic"
 pillar: health
 draft: false
 publication_status: published
