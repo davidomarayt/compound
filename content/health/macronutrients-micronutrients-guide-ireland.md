@@ -1,6 +1,7 @@
 ---
 title: 'Macronutrients and micronutrients: a complete guide for Ireland'
 slug: macronutrients-micronutrients-guide-ireland
+news_image_query: "healthy balanced meal vegetables whole grains protein"
 pillar: health
 date: '2026-09-15'
 draft: false
