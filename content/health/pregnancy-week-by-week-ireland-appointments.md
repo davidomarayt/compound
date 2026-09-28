@@ -2,6 +2,7 @@
 title: 'Pregnancy week by week in Ireland: GP, hospital and scan schedule'
 seo_title: 'Pregnancy Appointments Ireland: Week-by-Week Schedule'
 slug: pregnancy-week-by-week-ireland-appointments
+news_image_query: "pregnancy ultrasound scan maternity appointment"
 pillar: health
 draft: false
 publication_status: published
