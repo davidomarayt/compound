@@ -2,6 +2,7 @@
 title: 'How to be happier: what the evidence actually says'
 seo_title: 'How to Be Happier: What the Evidence Actually Says'
 slug: how-to-be-happier-evidence-ireland
+news_image_query: "friends laughing outdoors everyday life Ireland"
 pillar: happiness
 draft: false
 publication_status: published
