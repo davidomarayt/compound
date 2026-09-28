@@ -201,9 +201,9 @@ def _local_photo_for(meta: dict[str, Any]) -> dict[str, str]:
         (("ozempic", "wegovy", "mounjaro", "glp", "retatrutide", "semaglutide", "tirzepatide"), "glp1-injector.jpg"),
         (("stress", "burnout", "therapy", "mental", "loneliness", "worry", "self-esteem"), "mindful.jpg"),
         (("pension", "retire"), "retirement-walk.jpg"),
-        (("tax", "salary", "income", "rent", "credit"), "tax-paperwork.jpg"),
-        (("budget", "ireland", "dublin"), "budget-dublin.jpg"),
-        (("home", "house", "mortgage", "property"), "wealth.jpg"),
+        (("tax", "salary", "income", "rent", "credit", "pay", "wage", "public-sector", "public sector"), "tax-paperwork.jpg"),
+        (("budget", "dublin", "government", "exchequer"), "budget-dublin.jpg"),
+        (("home", "house", "mortgage", "property", "energy", "electricity", "solar", "battery", "fuel", "petrol", "diesel", "car", "ev"), "wealth.jpg"),
         (("hobby", "fun", "creative"), "hobby-painting.jpg"),
     ]
     slug = str(meta.get("slug") or "")
