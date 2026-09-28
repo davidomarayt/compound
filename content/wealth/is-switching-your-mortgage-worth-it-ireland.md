@@ -2,6 +2,7 @@
 title: 'Is switching your mortgage worth it in Ireland? A worked €250,000 example'
 seo_title: 'Is Switching Your Mortgage Worth It in Ireland?'
 slug: is-switching-your-mortgage-worth-it-ireland
+news_image_query: "mortgage paperwork house keys calculator refinance"
 pillar: wealth
 draft: false
 publication_status: published
