@@ -1,6 +1,7 @@
 ---
 title: "Why your time off doesn’t always feel like a break"
 slug: why-time-off-doesnt-feel-like-a-break
+news_image_query: "person resting on sofa phone weekend time off"
 pillar: happiness
 date: '2026-09-14'
 draft: false
