@@ -5,6 +5,7 @@ image_credit: Unsplash
 image_source: https://images.unsplash.com/photo-1499750310107-5fef28a66643
 title: 'Loneliness in Ireland: how common it is and what actually helps'
 slug: loneliness-ireland-how-common-what-helps
+news_image_query: "person alone cafe window loneliness connection"
 pillar: happiness
 date: '2026-09-13'
 summary: 'Around one in seven adults in Ireland felt lonely at least some of the time in 2024, and large studies link loneliness and isolation to worse heart health and earlier death. The approaches with the best evidence are specific: structured help with how you read social situations, and regular group activity, not just "getting out more".'
