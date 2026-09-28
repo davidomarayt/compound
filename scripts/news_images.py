@@ -96,7 +96,17 @@ def image_exists(meta: dict[str, Any]) -> bool:
 
 
 def is_fallback(meta: dict[str, Any]) -> bool:
-    return str(meta.get("image_credit") or "").startswith("Illustration: Compound news fallback")
+    credit = str(meta.get("image_credit") or "")
+    image = str(meta.get("image") or "")
+    generic_assets = {
+        "/static/images/wealth.jpg",
+        "/static/images/tax-paperwork.jpg",
+        "/static/images/retirement-walk.jpg",
+        "/static/images/budget-dublin.jpg",
+        "/static/images/landscape.jpg",
+        "/static/images/home-wealth.webp",
+    }
+    return credit.startswith("Illustration: Compound news fallback") or image in generic_assets
 
 
 def default_query(meta: dict[str, Any]) -> str:
