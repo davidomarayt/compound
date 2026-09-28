@@ -2,6 +2,7 @@
 title: 'How to make friends as an adult in Ireland'
 seo_title: 'How to Make Friends as an Adult in Ireland'
 slug: how-to-make-friends-as-an-adult-ireland
+news_image_query: "adult friends meeting cafe walking Ireland"
 pillar: happiness
 draft: false
 publication_status: published
