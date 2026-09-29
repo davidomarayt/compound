@@ -1180,7 +1180,7 @@ def build_site(settings: Settings) -> dict:
     if has_calculator:
         calculator_guide = render_markdown((settings.content_dir / "compound-calculator-guide.md").read_text(encoding="utf-8"))
         _write(out / "compound-interest-calculator" / "index.html", env.get_template("calculator.html").render(
-            title="Compound Interest Calculator Ireland", pillar="wealth", tools_page=True, ads_allowed=False,
+            title="Compound Interest Calculator Ireland", pillar="wealth", tools_page=True,
             related_articles=linked_articles("compound-interest-calculator", articles),
             calculator_guide=calculator_guide.replace("<table>", '<div class="guide-table-scroll"><table>').replace("</table>", "</table></div>")))
 
@@ -1189,7 +1189,7 @@ def build_site(settings: Settings) -> dict:
     if has_bmi:
         bmi_guide = render_markdown((settings.content_dir / "bmi-guide.md").read_text(encoding="utf-8"))
         _write(out / "bmi-calculator" / "index.html", env.get_template("bmi.html").render(
-            title="BMI Calculator Ireland", pillar="health", tools_page=True, ads_allowed=False,
+            title="BMI Calculator Ireland", pillar="health", tools_page=True,
             related_articles=linked_articles("bmi-calculator", articles),
             bmi_guide=bmi_guide.replace("<table>", '<div class="bmi-table"><table>').replace("</table>", "</table></div>")))
 
