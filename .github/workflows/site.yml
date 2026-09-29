@@ -71,6 +71,12 @@ jobs:
           grep -Fq '/solar-payback-calculator/' /tmp/tools.html
           grep -Fq '/nutrition-needs-calculator/' /tmp/tools.html
 
+          fetch https://compound.ie/compound-interest-calculator/ /tmp/compound-interest.html
+          grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/compound-interest.html
+
+          fetch https://compound.ie/bmi-calculator/ /tmp/bmi.html
+          grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/bmi.html
+
           fetch https://compound.ie/mortgage-calculator/ /tmp/mortgage.html
           grep -Fq 'Mortgage Calculator Ireland' /tmp/mortgage.html
           grep -Fq 'Worked example' /tmp/mortgage.html
