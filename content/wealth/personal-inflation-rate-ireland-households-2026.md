@@ -15,9 +15,7 @@ news_image_query: "Irish household cost of living euro bills groceries electrici
 related_tools:
   - inflation-calculator
   - rent-vs-buy-calculator
-  - mortgage-calculator
   - electricity-cost-calculator
-  - fuel-cost-calculator
   - take-home-pay-calculator
 social:
   enabled: true
