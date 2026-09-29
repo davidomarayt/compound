@@ -17,3 +17,8 @@
 - [x] Submit `https://compound.ie/sitemap.xml` in Search Console.
 - [ ] Check indexing, search queries, article clicks and impressions after sufficient data accumulates.
 - [x] Add the AdSense publisher ID and generate `ads.txt` once Google provides the `ca-pub-…` value.
+
+
+## Content roadmap
+
+- [ ] Build a **GLP-1 in Ireland hub** that organises the full cluster: access, cost, HSE/Medical Card coverage, treatment duration, stopping/weight regain, side effects, pregnancy, retatrutide and future GLP-1 articles. Link every GLP-1 article back to the hub and surface the GLP-1 Cost Calculator prominently.
