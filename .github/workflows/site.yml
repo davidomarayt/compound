@@ -57,6 +57,12 @@ jobs:
             curl --fail --silent --show-error --location               --retry 12 --retry-delay 5 --retry-all-errors               --connect-timeout 10 --max-time 30               "$1" -o "$2"
           }
 
+          fetch https://compound.ie/ /tmp/home.html
+          grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/home.html
+
+          fetch https://compound.ie/ads.txt /tmp/ads.txt
+          grep -Fq 'google.com, pub-6115783809711785, DIRECT, f08c47fec0942fa0' /tmp/ads.txt
+
           fetch https://compound.ie/tools/ /tmp/tools.html
           grep -Fq 'Mortgages &amp; Home Buying' /tmp/tools.html || grep -Fq 'Mortgages & Home Buying' /tmp/tools.html
           grep -Fq 'Pensions &amp; Investing' /tmp/tools.html || grep -Fq 'Pensions & Investing' /tmp/tools.html
