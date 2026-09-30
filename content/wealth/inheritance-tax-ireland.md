@@ -399,7 +399,7 @@ Keep records of significant gifts and inheritances, the disponer, the relationsh
 
 The annual €3,000 Small Gift Exemption can allow genuine gifts to pass without using the recipient's group threshold.
 
-But gifting assets can have consequences for the person making the gift too, including possible Capital Gains Tax depending on the asset.
+But gifting assets can have consequences for the person making the gift too, including possible [Capital Gains Tax](/wealth/capital-gains-tax-ireland/) depending on the asset.
 
 Do not look only at CAT.
 
