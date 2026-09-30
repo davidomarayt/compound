@@ -78,7 +78,7 @@ Ignoring transaction costs and previous losses:
 
 That is a simplified example. Allowable acquisition/disposal costs and losses can change the answer.
 
-Use the [Capital Gains Tax Calculator](/capital-gains-tax-calculator/) for the arithmetic, then check Revenue for filing and payment obligations.
+Use the [Capital Gains Tax Calculator](/capital-gains-tax-calculator/) for the arithmetic, and see the full [Capital Gains Tax in Ireland guide](/wealth/capital-gains-tax-ireland/) for allowable costs, losses, property, gifts, crypto, payment dates and filing obligations.
 
 ## The €1,270 exemption is not a €1,270 tax credit
 
