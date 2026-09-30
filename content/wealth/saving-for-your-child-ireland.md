@@ -8,7 +8,7 @@ draft: false
 publication_status: published
 date: '2026-09-17'
 approved_by: 'David O’Mara — explicit Publish instruction, 17 September 2026'
-reviewed: '2026-09-17'
+reviewed: '2026-09-30'
 summary: 'A fund for college, a first home or a little more freedom. Explore what monthly saving could build—and how ownership, Irish tax and the investment itself change the handover.'
 meta_description: 'Saving for a child in Ireland: compare ownership, bare trusts, gift and inheritance tax, shares, ETFs and insurance plans, including what happens at 18.'
 tags: [saving, family-money, investing, tax]
@@ -130,6 +130,8 @@ Try a lower return as well as a higher one. Investments can lose value, includin
 ## Gifts and inheritances: two routes into the same tax system
 
 Ireland’s **Capital Acquisitions Tax (CAT)** covers both gifts and inheritances. It is assessed on the recipient’s taxable benefit, with a current rate of **33%** on the amount above the applicable unused threshold. It is separate from the taxes on investment returns. [Revenue: CAT overview](https://www.revenue.ie/en/gains-gifts-and-inheritance/gift-and-inheritance-tax-cat/index.aspx).
+
+For the full threshold rules, house examples, reliefs and filing deadlines, see [Inheritance Tax in Ireland: How Much Can You Inherit Tax-Free?](/wealth/inheritance-tax-ireland/).
 
 The small-gift exemption currently covers **€3,000 from each donor to each recipient per calendar year**. Qualifying exempt gifts do not consume the recipient’s lifetime group threshold. Two parents can each give €3,000; a grandparent can make a separate gift. Count all gifts from the same person in that year. The exemption is for **gifts, not inheritances**. [Revenue: Small Gift Exemption](https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-exemptions/small-gift-exemption/index.aspx).
 
