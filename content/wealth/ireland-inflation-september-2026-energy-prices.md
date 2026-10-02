@@ -16,7 +16,7 @@ related_tools:
   - inflation-calculator
   - electricity-cost-calculator
   - mortgage-calculator
-  - compound-interest-calculator
+  - regular-savings-calculator
   - solar-payback-calculator
 social:
   enabled: true
@@ -168,7 +168,7 @@ The lesson is not that savers should chase risk.
 
 It is that the **real return** — the return after inflation — matters as much as the headline interest rate.
 
-For longer-term scenarios, use Compound's **[Compound Interest Calculator](/compound-interest-calculator/)** and compare the return assumption with an inflation assumption rather than looking at nominal growth alone.
+For longer-term scenarios, use Compound's **[Regular Savings Calculator](/regular-savings-calculator/)** and compare the return assumption with an inflation assumption rather than looking at nominal growth alone.
 
 ## Could higher inflation affect mortgage rates?
 
