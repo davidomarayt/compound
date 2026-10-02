@@ -1,6 +1,7 @@
 ---
 title: "Your Commute Could Be Costing You 10 Days a Year"
 slug: commute-time-ireland-hidden-cost
+canonical_path: /life/commute-time-ireland-hidden-cost/
 pillar: happiness
 date: '2026-10-02'
 draft: false
@@ -100,7 +101,7 @@ sources:
 
 <p>Of course, remote work is not possible in every job, and the value of working from home depends on the person, the role and the home environment. But when employers and workers discuss hybrid arrangements, the time saved from commuting is a real part of the equation.</p>
 
-<p>For the Irish rules around requesting flexible or remote work, see our guide to <a href="/life/remote-working-ireland-rights-request/">remote working in Ireland</a>.</p>
+<p>For the Irish rules around requesting flexible or remote work, see our guide to <a href="/happiness/remote-working-ireland-rights-request/">remote working in Ireland</a>.</p>
 
 <h2>The financial cost compounds too</h2>
 
