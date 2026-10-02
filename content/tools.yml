@@ -930,7 +930,7 @@ tools:
     category: Tax & Take-Home Pay
     formula: vat
     summary: Add or remove Irish VAT at common 2026 rates.
-    meta_description: "Add or remove Irish VAT at 23%, 13.5%, 9%, 4.8% or 0%. Instantly see net price, VAT amount and gross price for invoices and quotations."
+    meta_description: "VAT calculator Ireland 2026: add or remove 23%, 13.5%, 9%, 4.8% or 0% VAT. Instantly see the net price, VAT amount and gross price."
     updated: 2026-09-22
     fields:
       - {id: amount, label: Amount, type: number, prefix: "€", default: 100, min: 0, step: 0.01}
