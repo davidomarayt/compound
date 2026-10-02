@@ -1,8 +1,8 @@
 ---
-image: /static/images/budget-dublin.jpg
-image_alt: Samuel Beckett Bridge and the River Liffey in Dublin.
-image_credit: Yanhao Fang / Unsplash
-image_source: https://unsplash.com/photos/samuel-beckett-bridge-and-dublin-cityscape-reflected-in-the-liffey-bjROiiuUXwA
+image: https://images.unsplash.com/photo-1728022873385-1b48bbc41ecc?auto=format&fit=crop&fm=jpg&q=82&w=1800
+image_alt: Euro banknotes and a calculator representing household budgeting and the cost of living.
+image_credit: Jakub Żerdzicki / Unsplash
+image_source: https://unsplash.com/photos/a-person-putting-money-into-a-calculator-hIbCtd-gjqM
 title: 'Budget 2027 Ireland: 10 Things Households Should Watch on Tuesday'
 slug: budget-2027-what-to-watch
 pillar: wealth
