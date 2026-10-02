@@ -17,7 +17,6 @@ related_tools:
   - electricity-cost-calculator
   - mortgage-calculator
   - regular-savings-calculator
-  - solar-payback-calculator
 social:
   enabled: true
   url: https://compound.ie/news/ireland-inflation-september-2026-energy-prices/
