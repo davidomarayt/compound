@@ -25,6 +25,7 @@ from compound.config import Settings
 
 PILLARS = ["health", "wealth", "happiness"]
 PILLAR_LABELS = {"wealth": "Wealth", "health": "Health", "happiness": "Life"}
+PILLAR_PUBLIC_SLUGS = {"wealth": "wealth", "health": "health", "happiness": "life"}
 
 COURSE_PARENTS = {
     # Investing in Ireland 101
@@ -300,8 +301,12 @@ class Article:
         return d if len(d) <= 160 else d[:157].rsplit(" ", 1)[0] + "…"
 
     @property
+    def public_pillar_slug(self) -> str:
+        return PILLAR_PUBLIC_SLUGS.get(self.pillar, self.pillar)
+
+    @property
     def url(self) -> str:
-        return self.canonical_path or f"/{self.pillar}/{self.slug}/"
+        return self.canonical_path or f"/{self.public_pillar_slug}/{self.slug}/"
 
     @property
     def pillar_label(self) -> str:
@@ -818,7 +823,7 @@ def article_breadcrumb_jsonld(a: Article, site_url: str) -> str:
             "@type": "ListItem",
             "position": 2,
             "name": PILLAR_LABELS.get(a.pillar, a.pillar.title()),
-            "item": f"{base}/{a.pillar}/",
+            "item": f"{base}/{a.public_pillar_slug}/",
         })
         parent = COURSE_PARENTS.get(a.slug)
         if parent:
@@ -922,6 +927,7 @@ def _env(settings: Settings) -> Environment:
         email_form_action=site_cfg["email_form_action"] or settings.email_form_action,
         pillars=PILLARS,
         pillar_labels=PILLAR_LABELS,
+        pillar_public_slugs=PILLAR_PUBLIC_SLUGS,
         pillar_blurbs=PILLAR_BLURBS,
         year=date.today().year,
     )
@@ -931,6 +937,20 @@ def _env(settings: Settings) -> Environment:
 def _write(path: Path, html: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(html, encoding="utf-8")
+
+
+def _redirect_html(target: str) -> str:
+    safe_target = html_escape(target, quote=True)
+    return (
+        "<!doctype html><html><head><meta charset=\"utf-8\">"
+        f"<link rel=\"canonical\" href=\"{safe_target}\">"
+        f"<meta http-equiv=\"refresh\" content=\"0; url={safe_target}\">"
+        "<meta name=\"robots\" content=\"noindex,follow\">"
+        f"<script>location.replace({json.dumps(target)})</script>"
+        "</head><body>"
+        f"<p>This page has moved to <a href=\"{safe_target}\">{safe_target}</a>.</p>"
+        "</body></html>"
+    )
 
 
 def related(article: Article, all_articles: list[Article], n: int = 3) -> list[Article]:
@@ -1078,6 +1098,10 @@ def build_site(settings: Settings) -> dict:
         _write(out / a.url.strip("/") / "index.html",
                env.get_template(article_template(a)).render(
                    **context, related=related(a, articles), linked_tools=linked_tools))
+        if a.pillar == "happiness":
+            legacy_url = f"/happiness/{a.slug}/"
+            if a.url != legacy_url:
+                _write(out / legacy_url.strip("/") / "index.html", _redirect_html(a.url))
         for t in a.tags:
             tag_map.setdefault(t, []).append(a)
     for t, arts in tag_map.items():
@@ -1271,7 +1295,11 @@ def build_site(settings: Settings) -> dict:
         sitemap_entries.append((settings.site_base_url + bmi_path, "2026-09-22"))
     if has_calculator:
         sitemap_entries.append((settings.site_base_url + calculator_path, "2026-09-22"))
-    sitemap_entries.extend((settings.site_base_url + f"/{p}/", None) for p in PILLARS)
+    sitemap_entries.extend(
+        (settings.site_base_url + f"/{PILLAR_PUBLIC_SLUGS[p]}/", None)
+        for p in PILLARS
+        if PILLAR_PUBLIC_SLUGS[p] != "life"
+    )
     sitemap_entries.extend(
         (settings.site_base_url + a.url, (a.reviewed or a.date).isoformat())
         for a in articles
