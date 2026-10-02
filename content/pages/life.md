@@ -34,7 +34,7 @@ title: Life
     <a class="life-resource" href="/pregnancy-due-date-calculator/"><small>Calculator</small><h3>Pregnancy Due Date Calculator</h3><p>Estimate due dates and milestones with the assumptions clearly shown.</p><strong>Calculate due date →</strong></a>
   </div>
   <div class="life-reading">
-    <a href="/happiness/how-to-make-friends-as-an-adult-ireland/"><span>Friendship</span><strong>How to make friends as an adult in Ireland</strong></a>
+    <a href="/life/how-to-make-friends-as-an-adult-ireland/"><span>Friendship</span><strong>How to make friends as an adult in Ireland</strong></a>
     <a href="/health/how-much-sleep-does-a-child-need/"><span>Family life</span><strong>How much sleep does a child need?</strong></a>
     <a href="/wealth/saving-for-your-child-ireland/"><span>Planning ahead</span><strong>Saving and investing for your child in Ireland</strong></a>
   </div>
@@ -48,9 +48,9 @@ title: Life
     <a class="life-resource" href="/redundancy-calculator-ireland/"><small>Calculator</small><h3>Redundancy Calculator Ireland</h3><p>Estimate statutory redundancy and understand the key assumptions.</p><strong>Open calculator →</strong></a>
   </div>
   <div class="life-reading">
-    <a href="/happiness/workplace-stress-ireland-job-design-wellbeing-2026/"><span>Working life</span><strong>Workplace stress in Ireland: what job design changes</strong></a>
-    <a href="/happiness/why-time-off-doesnt-feel-like-a-break/"><span>Time off</span><strong>Why time off does not always feel like a break</strong></a>
-    <a href="/happiness/burnout-symptoms-recovery-ireland/"><span>Burnout</span><strong>Burnout symptoms and recovery</strong></a>
+    <a href="/life/workplace-stress-ireland-job-design-wellbeing-2026/"><span>Working life</span><strong>Workplace stress in Ireland: what job design changes</strong></a>
+    <a href="/life/why-time-off-doesnt-feel-like-a-break/"><span>Time off</span><strong>Why time off does not always feel like a break</strong></a>
+    <a href="/life/burnout-symptoms-recovery-ireland/"><span>Burnout</span><strong>Burnout symptoms and recovery</strong></a>
   </div>
 </section>
 
@@ -79,8 +79,8 @@ title: Life
 <section class="life-category" id="leisure-culture" data-sponsorship-category="leisure-culture">
   <header><span>05</span><div><p class="eyebrow">LEISURE &amp; CULTURE</p><h2>Leave room for things that are simply enjoyable.</h2></div><p>Not everything needs to optimise health or money. Hobbies, sport, culture and shared experiences are allowed to matter because you enjoy them.</p></header>
   <div class="life-reading life-reading-wide">
-    <a href="/happiness/when-did-you-last-do-something-for-fun/"><span>Leisure</span><strong>When did you last do something just for fun?</strong></a>
-    <a href="/happiness/ploughing-championships-history-community-mental-health/"><span>Irish life</span><strong>The Ploughing Championships: history, community and connection</strong></a>
+    <a href="/life/when-did-you-last-do-something-for-fun/"><span>Leisure</span><strong>When did you last do something just for fun?</strong></a>
+    <a href="/life/ploughing-championships-history-community-mental-health/"><span>Irish life</span><strong>The Ploughing Championships: history, community and connection</strong></a>
     <a href="/health/live-to-100/"><span>Long life</span><strong>Live to 100: what makes a longer life worth living?</strong></a>
   </div>
 </section>
@@ -88,9 +88,9 @@ title: Life
 <section class="life-category" id="society-community" data-sponsorship-category="society-community">
   <header><span>06</span><div><p class="eyebrow">SOCIETY &amp; COMMUNITY</p><h2>Understand the place you live in.</h2></div><p>This section looks at belonging, friendship, participation and the wider social changes shaping everyday life in Ireland.</p></header>
   <div class="life-reading life-reading-wide">
-    <a href="/happiness/loneliness-ireland-how-common-what-helps/"><span>Connection</span><strong>Loneliness in Ireland: how common it is and what helps</strong></a>
-    <a href="/happiness/how-to-make-friends-as-an-adult-ireland/"><span>Friendship</span><strong>How to make friends as an adult in Ireland</strong></a>
-    <a href="/happiness/ploughing-championships-history-community-mental-health/"><span>Community</span><strong>Why shared events can matter for community life</strong></a>
+    <a href="/life/loneliness-ireland-how-common-what-helps/"><span>Connection</span><strong>Loneliness in Ireland: how common it is and what helps</strong></a>
+    <a href="/life/how-to-make-friends-as-an-adult-ireland/"><span>Friendship</span><strong>How to make friends as an adult in Ireland</strong></a>
+    <a href="/life/ploughing-championships-history-community-mental-health/"><span>Community</span><strong>Why shared events can matter for community life</strong></a>
   </div>
 </section>
 
