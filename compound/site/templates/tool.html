@@ -1,9 +1,9 @@
 {% extends "base.html" %}
-{% block head_title %}{{ tool.title }} | Compound{% endblock %}
+{% block head_title %}{{ tool.seo_title or tool.title }} | Compound{% endblock %}
 {% block meta %}<meta name="description" content="{{ tool.meta_description }}">{% endblock %}
 {% block head %}
 <link rel="canonical" href="{{ site_url }}{{ tool.url }}">
-<meta property="og:type" content="website"><meta property="og:title" content="{{ tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="summary">
+<meta property="og:type" content="website"><meta property="og:title" content="{{ tool.seo_title or tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="/static/tools.css?v=20260928-contrast2">{% if tool.slug == "mortgage-calculator" %}<script defer src="/static/mortgage-calculator.js?v=20260927-performance1"></script>{% else %}<script defer src="/static/tools.js?v=20260928-glp1"></script>{% endif %}
 <script type="application/ld+json">{{ tool_jsonld|safe }}</script>
 {% endblock %}

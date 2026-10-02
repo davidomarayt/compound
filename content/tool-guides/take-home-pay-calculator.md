@@ -2,6 +2,14 @@
 
 This calculator estimates 2026 Irish take-home pay after Income Tax, USC and employee PRSI under the assumptions built into the tool. It is designed to make the gap between gross salary and net income visible.
 
+## How take-home pay is calculated in Ireland
+
+At its simplest, the calculator starts with gross salary and subtracts the deductions it models:
+
+**gross salary − PAYE Income Tax − USC − employee PRSI − modelled pension contribution = estimated take-home pay**
+
+PAYE itself depends on the tax band and tax credits that apply to you. Advanced mode lets you replace the standard single-person assumptions with your own annual 20% band, extra credits, pension percentage and qualifying reduced-USC status.
+
 ## How to read the result
 
 Look beyond the final net number. The breakdown shows which deductions come from Income Tax, USC and PRSI. That makes it easier to understand why an extra €1 of gross pay does not always increase take-home pay by €1.

@@ -14,6 +14,16 @@ It shows:
 
 The monthly figure is only a budgeting aid. It does not mean Revenue necessarily collects the charge in twelve equal instalments.
 
+## How Local Property Tax is calculated in Ireland
+
+For a property within Revenue's banded system, the calculator maps the relevant market value to the **2026–2030 valuation band**, takes the Revenue basic LPT amount for that band, and then applies the selected local authority's 2026 Local Adjustment Factor.
+
+In simplified form:
+
+**estimated LPT = Revenue basic LPT × (1 + local adjustment factor)**
+
+The value entered should relate to the applicable LPT valuation date. Exemptions, deferrals and special treatment can change what is actually due.
+
 ## The key date is 1 November 2025
 
 For the 2026–2030 LPT valuation period, Revenue says the relevant self-assessed property value is the value **as at 1 November 2025**.

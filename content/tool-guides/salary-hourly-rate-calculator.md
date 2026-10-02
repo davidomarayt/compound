@@ -2,6 +2,14 @@
 
 This calculator converts annual salary into monthly, weekly, daily and hourly gross equivalents. It helps compare job offers, part-time work and contractor quotes on a common time basis.
 
+## How to convert salary to an hourly rate
+
+For a gross annual salary, the basic conversion is:
+
+**hourly rate = annual salary ÷ (paid weeks per year × paid hours per week)**
+
+For example, €52,000 across 52 paid weeks and 40 paid hours a week is €25 gross per hour. Use paid hours and paid weeks: for a normal salaried job with paid annual leave, reducing the denominator to exclude that paid leave would overstate the hourly equivalent.
+
 ## What the time-conversion outputs mean
 
 The calculator now also shows a **fortnightly gross figure**, the average number of paid hours represented by each working day, and the share of a full 168-hour week represented by paid work.

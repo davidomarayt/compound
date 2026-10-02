@@ -341,10 +341,11 @@ tools:
 
   - slug: local-property-tax-calculator
     title: Local Property Tax Calculator Ireland 2026
+    seo_title: Property Tax Calculator Ireland 2026 – Estimate Your LPT
     category: Mortgages & Home Buying
     formula: lpt
     summary: Estimate 2026 Local Property Tax from the 2026–2030 valuation bands and your local authority adjustment.
-    meta_description: Ireland Local Property Tax calculator for 2026. Use Revenue valuation bands and your local authority adjustment to estimate LPT.
+    meta_description: "Estimate 2026 Local Property Tax in Ireland using Revenue’s 2026–2030 valuation bands and your local authority adjustment. See annual and monthly LPT."
     updated: 2026-09-22
     fields:
       - {id: value, label: Property market value, type: number, prefix: "€", default: 400000, min: 1, step: 1000}
@@ -925,10 +926,11 @@ tools:
       - {title: "Revenue — Capital Gains Tax", url: "https://www.revenue.ie/en/gains-gifts-and-inheritance/cgt/index.aspx"}
   - slug: vat-calculator
     title: VAT Calculator Ireland 2026
+    seo_title: VAT Calculator Ireland 2026 – Add or Remove 23% VAT
     category: Tax & Take-Home Pay
     formula: vat
     summary: Add or remove Irish VAT at common 2026 rates.
-    meta_description: VAT calculator Ireland 2026. Add or remove VAT at 23%, 13.5%, 9%, 4.8% or 0% and see the net, VAT and gross amounts.
+    meta_description: "Add or remove Irish VAT at 23%, 13.5%, 9%, 4.8% or 0%. Instantly see net price, VAT amount and gross price for invoices and quotations."
     updated: 2026-09-22
     fields:
       - {id: amount, label: Amount, type: number, prefix: "€", default: 100, min: 0, step: 0.01}
@@ -965,10 +967,11 @@ tools:
 
   - slug: inflation-calculator
     title: Inflation Calculator Ireland
+    seo_title: Inflation Calculator Ireland – Purchasing Power
     category: Pensions & Investing
     formula: inflation
     summary: See how inflation compounds future prices, erodes a fixed amount of cash and changes the real return on savings or investments.
-    meta_description: Inflation calculator Ireland. Estimate future prices, lost purchasing power and the inflation-adjusted real return on a savings or investment assumption.
+    meta_description: "Model how inflation changes future prices and purchasing power in Ireland. Compare nominal and real returns using your own inflation and investment assumptions."
     updated: 2026-09-22
     basic_note: "Basic mode compares the future cost of today's basket with the purchasing power of holding the same nominal euro amount."
     advanced_note: "Advanced mode adds a nominal investment/savings return and converts it to a real return using the compounding relationship between growth and inflation."
@@ -1039,10 +1042,11 @@ tools:
 
   - slug: salary-hourly-rate-calculator
     title: Salary to Hourly Rate Calculator Ireland
+    seo_title: Salary to Hourly Rate Calculator Ireland 2026
     category: Tax & Take-Home Pay
     formula: salary_hourly
     summary: Convert an annual gross salary into monthly, weekly, daily and hourly gross pay using the working pattern you actually want to compare.
-    meta_description: Salary to hourly rate calculator Ireland. Convert annual gross pay into monthly, weekly, daily and hourly rates and see the annual paid hours behind the result.
+    meta_description: "Convert an Irish annual salary into hourly, daily, weekly, fortnightly and monthly gross pay. Adjust hours and paid weeks to compare jobs accurately."
     updated: 2026-09-22
     fields:
       - {id: salary, label: Annual gross salary, type: number, prefix: "€", default: 50000, min: 0, step: 500, section_start: Gross pay}
@@ -1188,10 +1192,11 @@ tools:
       - {title: "CRU — Dynamic price tariffs", url: "https://www.cru.ie/consumer-information/billing/dynamic-price-tariffs-for-electricity/"}
   - slug: take-home-pay-calculator
     title: Take-Home Pay Calculator Ireland 2026
+    seo_title: Take-Home Pay Calculator Ireland 2026 – Net Salary
     category: Tax & Take-Home Pay
     formula: take_home_2026
     summary: Estimate 2026 PAYE, USC, Class A PRSI, pension deductions and net pay, with an advanced mode for your own Revenue band, credits and reduced-USC status.
-    meta_description: Take-home pay calculator Ireland 2026. Estimate PAYE, USC, Class A PRSI, pension deductions and monthly net salary using current 2026 rules.
+    meta_description: "Estimate 2026 Irish take-home pay from gross salary after PAYE, USC and Class A PRSI. Add pension contributions, tax bands and credits in Advanced mode."
     updated: 2026-09-22
     basic_note: "Basic mode models a single PAYE employee using the €44,000 standard-rate band, the standard Single Person and Employee tax credits, standard USC and no employee pension contribution."
     advanced_note: "Advanced mode lets you add an employee pension percentage, replace the tax band, add extra credits and model Revenue's reduced USC rates where the qualifying conditions are met."
@@ -3389,10 +3394,11 @@ tools:
 
   - slug: self-employed-tax-calculator-ireland
     title: Self-Employed Tax Calculator Ireland
+    seo_title: Self-Employed Tax Calculator Ireland 2026
     category: Tax & Take-Home Pay
     formula: self_employed_tax_ireland
     summary: Estimate 2026 Income Tax, USC, Class S PRSI and take-home profit for a self-employed person in Ireland, with pension tax-relief modelling in Advanced mode.
-    meta_description: Self-employed tax calculator Ireland 2026. Estimate Income Tax, USC, Class S PRSI, net income, monthly tax reserve and pension tax relief.
+    meta_description: "Estimate 2026 self-employed tax in Ireland from business profit, including Income Tax, USC and Class S PRSI, plus net income and monthly tax reserve."
     updated: 2026-09-23
     basic_note: "Basic mode starts with annual business receipts and allowable business expenses, then estimates 2026 Income Tax, USC and Class S PRSI for a single self-employed person."
     advanced_note: "Advanced mode adds a personal pension contribution and applies the age-related income-tax relief limit, subject to the €115,000 earnings cap. It does not model VAT, capital allowances, spouses, losses or every relief."
