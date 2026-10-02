@@ -7,7 +7,7 @@ canonical_path: /news/personal-inflation-rate-ireland-households-2026/
 draft: false
 publication_status: published
 date: 2026-09-29
-reviewed: 2026-09-29
+reviewed: 2026-10-02
 summary: "Ireland's headline inflation rate was 3.4% in the year to June, but new CSO analysis shows under-35 households, renters and lower-income households experienced higher estimated inflation. Here is why your own cost-of-living experience can be very different from the national average."
 meta_description: "Irish inflation was 3.4%, but under-35 households faced 3.9% and renters 3.7%. See the CSO data, five-year price changes and what it means for your household."
 tags: [news, inflation, cost-of-living, cso, renters, under-35s, household-budgets, ireland]
@@ -46,6 +46,8 @@ sources:
 ---
 
 <p><em>News analysis · 29 September 2026. The household figures below are CSO estimates, not a personalised calculation for any individual household. The CSO classifies this work as a Frontier Series output and says care is needed when interpreting it.</em></p>
+
+<p><strong>Latest update:</strong> Ireland's September HICP flash estimate has since risen to <strong>3.9%</strong>, with energy prices up <strong>15.3%</strong> year-on-year. Read Compound's <strong>[2 October inflation update](/news/ireland-inflation-september-2026-energy-prices/)</strong>.</p>
 
 Ireland's headline inflation rate was **3.4%** in the year to June 2026.
 
