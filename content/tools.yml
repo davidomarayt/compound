@@ -1196,7 +1196,7 @@ tools:
     category: Tax & Take-Home Pay
     formula: take_home_2026
     summary: Estimate 2026 PAYE, USC, Class A PRSI, pension deductions and net pay, with an advanced mode for your own Revenue band, credits and reduced-USC status.
-    meta_description: "Estimate 2026 Irish take-home pay from gross salary after PAYE, USC and Class A PRSI. Add pension contributions, tax bands and credits in Advanced mode."
+    meta_description: "Take-home pay calculator Ireland 2026. Estimate net salary after PAYE, USC and Class A PRSI, with pension contributions, tax bands and credits in Advanced mode."
     updated: 2026-09-22
     basic_note: "Basic mode models a single PAYE employee using the €44,000 standard-rate band, the standard Single Person and Employee tax credits, standard USC and no employee pension contribution."
     advanced_note: "Advanced mode lets you add an employee pension percentage, replace the tax band, add extra credits and model Revenue's reduced USC rates where the qualifying conditions are met."
