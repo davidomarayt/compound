@@ -1046,7 +1046,7 @@ tools:
     category: Tax & Take-Home Pay
     formula: salary_hourly
     summary: Convert an annual gross salary into monthly, weekly, daily and hourly gross pay using the working pattern you actually want to compare.
-    meta_description: "Convert an Irish annual salary into hourly, daily, weekly, fortnightly and monthly gross pay. Adjust hours and paid weeks to compare jobs accurately."
+    meta_description: "Salary to hourly rate calculator Ireland 2026. Convert annual gross pay into hourly, daily, weekly, fortnightly and monthly rates using your paid hours."
     updated: 2026-09-22
     fields:
       - {id: salary, label: Annual gross salary, type: number, prefix: "€", default: 50000, min: 0, step: 500, section_start: Gross pay}
