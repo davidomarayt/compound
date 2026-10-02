@@ -4,11 +4,12 @@ image_alt: A bed with pillows and bedding.
 image_credit: Unsplash
 image_source: https://images.unsplash.com/photo-1505693416388-ac5ce068fe85
 title: How much sleep does a child need? Hours by age, toddler to teen
+seo_title: 'How Much Sleep Does a Child Need? Hours by Age | Ireland'
 slug: how-much-sleep-does-a-child-need
 pillar: health
 date: '2026-09-13'
 reviewed: '2026-09-23'
-meta_description: 'How much sleep does your child need? Evidence-based sleep ranges for toddlers, school-age children and teenagers, with practical HSE guidance for Ireland.'
+meta_description: 'How much sleep should a child get? See evidence-based ranges by age: 11–14 hours for ages 1–2, 10–13 for 3–5, 9–12 for 6–12 and 8–10 for teens.'
 summary: The recommended sleep ranges for children run from 11 to 14 hours for toddlers down to 8 to 10 hours for teenagers, and they are deliberately wide. Judge by how your child functions in the day, protect a regular bedtime and keep phones out of the bedroom; guidance from the HSE (Health Service Executive, Ireland's public health service) stops at age five, so older children fall back on international consensus.
 tags:
 - child-sleep

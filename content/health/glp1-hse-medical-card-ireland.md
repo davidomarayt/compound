@@ -1,11 +1,12 @@
 ---
 title: 'Ozempic, Wegovy & Mounjaro: medical card cover in Ireland'
+seo_title: 'Ozempic Medical Card Ireland: Wegovy & Mounjaro Cover 2026'
 slug: glp1-hse-medical-card-ireland
 pillar: health
 date: '2026-09-14'
 draft: false
 summary: 'A prescription does not automatically mean public funding. Here is how the Irish schemes work, where Saxenda fits, and what to ask before paying privately.'
-meta_description: 'Are Ozempic, Wegovy, Mounjaro or Saxenda covered in Ireland? Current HSE medical card, DPS and Long-Term Illness funding rules explained.'
+meta_description: 'Are Ozempic, Wegovy or Mounjaro covered by the medical card in Ireland in 2026? See HSE funding rules, DPS/LTI limits and when private payment applies.'
 tags: [glp-1, obesity, medicines, irish-healthcare]
 image: /static/images/glp1-funding-illustration.png
 image_alt: 'Paper collage illustration of an application folder, blank paperwork and a fountain pen.'

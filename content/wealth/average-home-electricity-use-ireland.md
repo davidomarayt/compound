@@ -1,6 +1,6 @@
 ---
 title: 'How much electricity does an Irish home use? A practical 2026 guide'
-seo_title: 'Average Electricity Use Ireland: Home kWh Guide 2026'
+seo_title: 'Average Electricity Use Ireland: kWh per Day & Year 2026'
 slug: average-home-electricity-use-ireland
 pillar: wealth
 draft: false
@@ -8,7 +8,7 @@ publication_status: published
 date: 2026-09-21
 reviewed: 2026-09-21
 summary: 'The 4,200 kWh Irish household benchmark is useful, but it can be badly wrong for an all-electric home, an EV household or a small apartment. This guide shows realistic starting points, what drives electricity use and how to read your smart-meter data.'
-meta_description: 'How much electricity does an Irish home use? Compare Irish household kWh benchmarks, daily and monthly use, smart-meter data, EVs, showers, dryers, solar and practical ways to cut consumption.'
+meta_description: 'Average electricity use in Ireland: compare the 4,200 kWh household benchmark with apartments, larger and all-electric homes, plus daily and monthly kWh.'
 tags: [electricity, home-energy, smart-meter, appliances, ev, solar, ireland]
 related_tools:
 - electricity-cost-calculator

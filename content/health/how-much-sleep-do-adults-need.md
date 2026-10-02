@@ -4,11 +4,12 @@ image_alt: An adult sleeping beneath a blanket.
 image_credit: Greg Pappas / Unsplash
 image_source: https://unsplash.com/photos/woman-sleeping-on-bed-under-blankets-rUc9hVE-L-E
 title: How much sleep do adults need? What the evidence says, by age
+seo_title: 'How Much Sleep Do Adults Need? 7–9 Hours Explained'
 slug: how-much-sleep-do-adults-need
 pillar: health
 date: '2026-09-13'
 reviewed: '2026-09-23'
-meta_description: 'How much sleep do adults need? Evidence-based guidance on 7–9 hours, age, insomnia and when to speak to a GP, with an Irish HSE context.'
+meta_description: 'How much sleep do adults need? See evidence-based guidance on 7–9 hours, how needs change with age, insomnia, sleep quality and when to speak to a GP.'
 summary: Most adults do best on roughly 7 to 9 hours a night, but the range is wide and the "too much sleep" warning is mostly about illness showing up as sleep. How you function during the day is a better test than the number on your phone.
 tags:
 - sleep

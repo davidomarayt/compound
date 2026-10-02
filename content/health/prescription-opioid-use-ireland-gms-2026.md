@@ -1,6 +1,6 @@
 ---
 title: "Prescription opioid use rises more than 10% under Ireland's medical card scheme"
-seo_title: "Prescription Opioid Use Rises in Ireland: What the GMS Data Shows"
+seo_title: "GMS Opioid Consumption Data Ireland: 2018–2025 Trend"
 slug: prescription-opioid-use-ireland-gms-2026
 pillar: health
 canonical_path: /news/prescription-opioid-use-ireland-gms-2026/
@@ -9,7 +9,7 @@ publication_status: published
 date: 2026-09-28
 reviewed: 2026-09-28
 summary: "RTÉ Investigates says estimated consumption of opioid pain medicines under the General Medical Services scheme increased by more than 10% between 2018 and 2025. We explain what that figure means, the limits of the data and why prescribing patterns matter."
-meta_description: "Estimated opioid painkiller consumption under Ireland's GMS scheme rose more than 10% from 2018 to 2025. Here is what the data does — and does not — show."
+meta_description: "Ireland’s GMS opioid consumption data shows estimated opioid pain-medicine use rose more than 10% from 2018 to 2025. See what the data can and cannot show."
 tags: [news, opioids, pain, medicines, prescriptions, gms, medical-card, hse, ireland]
 news_image_query: "prescription pain medication pharmacy tablets Ireland healthcare"
 social:
