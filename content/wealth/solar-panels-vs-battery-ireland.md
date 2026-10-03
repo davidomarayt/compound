@@ -78,6 +78,8 @@ An EV does not automatically make a battery necessary.
 
 In fact, a very cheap EV night rate can sometimes make it financially better to **export daytime solar and charge the car at night**.
 
+That comparison depends on the full household tariff, not the cheap window alone. See **[Electricity Tariffs in Ireland](/wealth/electricity-tariffs-ireland/)** for the current 24-hour, smart, EV and dynamic tariff structures.
+
 That sounds counter-intuitive, but the arithmetic is straightforward.
 
 ## First: what support is available in 2026?
