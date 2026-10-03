@@ -48,6 +48,8 @@ sources:
 
 If you are looking at solar in Ireland, **CEG and SRESS can sound like competing export tariffs**.
 
+For a household or ordinary self-consumption installation, start with our **[complete Solar Panels in Ireland guide](/wealth/solar-panels-ireland/)**. This page goes deeper on the point where farm, SME and export-led projects begin to diverge.
+
 They are not.
 
 The **Clean Export Guarantee (CEG)** is primarily a payment for **surplus renewable electricity** that you generate but do not use yourself.
