@@ -58,6 +58,8 @@ The **Clean Export Guarantee (CEG)** — the system under which eligible microge
 
 That clarification matters for anyone who already has rooftop solar, and for households trying to work out whether a new solar installation or home battery will pay for itself.
 
+For the full buying and installation picture — grants, 0% VAT, sizing, batteries, planning and payback — see our **[Solar Panels in Ireland 2026 guide](/wealth/solar-panels-ireland/)**.
+
 The most important point is simple:
 
 > **There has been no announced abolition of Ireland's solar export payment system.**
