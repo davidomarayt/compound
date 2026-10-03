@@ -2,6 +2,8 @@
 
 This tool estimates how long a domestic solar PV system could take to recover its net upfront cost through avoided electricity purchases, export payments and, where selected, battery arbitrage.
 
+For the rules and decisions behind the inputs — the 2026 grant, 0% VAT, battery support, planning, CEG, NC6 and system sizing — use our **[complete Solar Panels in Ireland guide](/wealth/solar-panels-ireland/)** alongside the calculator.
+
 ## Basic and Advanced modes
 
 **Basic** is deliberately solar-only. It keeps the first calculation focused on the quote, grant, array size, expected annual generation, household electricity use, direct self-consumption and import/export rates. Even if an old shared scenario contains EV or battery values, Basic mode does not silently include them.
