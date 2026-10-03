@@ -139,6 +139,8 @@ When comparing solar quotes, ask each supplier to specify:
 
 Two quotes described as a "6 kW solar system" can still be materially different.
 
+Before comparing quotes, our **[Solar Panels in Ireland 2026 guide](/wealth/solar-panels-ireland/)** sets out the current grant, 0% VAT treatment, system sizing, expected generation, batteries, CEG export payments and the questions to ask an installer.
+
 ## Get at least three genuinely independent quotes
 
 The traditional advice to obtain several quotes becomes particularly relevant when there is concern about competition.
