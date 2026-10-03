@@ -79,6 +79,8 @@ For an EV, the result depends heavily on:
 
 A driver charging mainly at home on a competitive night rate can have a very different annual electricity cost from someone relying heavily on rapid public charging.
 
+Our **[Electricity Tariffs in Ireland guide](/wealth/electricity-tariffs-ireland/)** explains the difference between 24-hour, day/night, smart, EV and dynamic tariffs, so the charging rate used in an EV comparison reflects the household's actual plan rather than a headline night price.
+
 The same applies to petrol and diesel: annual fuel cost depends on your vehicle's actual litres per 100 km and the pump price you pay.
 
 ### Compare your own numbers
