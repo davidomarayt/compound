@@ -42,6 +42,8 @@ sources:
 
 Solar panels are one of the few home upgrades in Ireland that can create value in **two ways at once**:
 
+Your electricity tariff is part of that calculation. Our **[Electricity Tariffs in Ireland guide](/wealth/electricity-tariffs-ireland/)** explains flat, smart, EV and dynamic tariffs — useful when comparing the value of self-consumption, battery charging and grid imports.
+
 1. every unit of solar electricity you use yourself can reduce the amount you buy from the grid;
 2. surplus electricity can potentially earn a payment when it is exported.
 
