@@ -56,6 +56,8 @@ The most useful comparison is therefore:
 
 > **How much electricity does my home actually use, what is causing it, and when during the day am I using it?**
 
+Once you know that timing, our **[Electricity Tariffs in Ireland guide](/wealth/electricity-tariffs-ireland/)** shows how to compare 24-hour, day/night, smart, EV and dynamic plans using the same usage pattern.
+
 That is what this guide works through.
 
 ## The headline Irish benchmark
