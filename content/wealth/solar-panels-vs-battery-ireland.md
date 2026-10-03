@@ -294,6 +294,8 @@ The CRU requires suppliers to compensate eligible microgenerators for metered el
 
 [CRU: microgeneration](https://www.cru.ie/consumer-information/microgeneration/).
 
+For larger farm and business systems, CEG should not be confused with the separate export-only SRESS route. Our **[CEG vs SRESS Ireland guide](/wealth/ceg-vs-sress-ireland/)** explains where self-consumption, the Non-Domestic Microgen Grant and the 15-year SRESS tariff fit.
+
 ## This is why using your own tariff matters
 
 A household on:
