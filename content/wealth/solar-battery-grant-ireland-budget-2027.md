@@ -7,7 +7,7 @@ canonical_path: /news/solar-battery-grant-ireland-budget-2027/
 draft: false
 publication_status: published
 date: 2026-09-28
-reviewed: 2026-09-28
+reviewed: 2026-10-03
 summary: "A new €600 grant for home battery storage is expected in Budget 2027. We explain what has been reported, how much it could reduce upfront costs, and when a battery is actually likely to make financial sense for an Irish household."
 meta_description: "A €600 solar battery grant is expected in Budget 2027. See how it could affect payback, who may benefit most, and model your own solar and battery costs."
 tags: [news, solar, battery-storage, budget-2027, seai, electricity, home-energy, ireland]
@@ -39,6 +39,8 @@ sources:
     url: https://www.irishtimes.com/politics/2026/09/25/grant-of-600-for-solar-panel-batteries-set-to-be-announced-in-budget/
   - title: "SEAI: Solar electricity grant — current 2026 grant values and eligibility"
     url: https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant
+  - title: "SEAI: Battery Energy Storage System Grant — live €600 grant for qualifying 5kWh+ systems. Checked 3 October 2026."
+    url: https://www.seai.ie/grants/home-energy-grants/individual-grants/battery
   - title: "SEAI: Solar electricity calculator"
     url: https://www.seai.ie/about/tools/solar-electricity-calculator
   - title: "SEAI: Solar energy and storage guidance"
@@ -47,7 +49,11 @@ sources:
     url: https://www.irishtimes.com/your-money/2026/09/16/budget-2027-heres-what-we-know-so-far/
 ---
 
-<p><em>News analysis · 28 September 2026. The €600 battery grant has been reported as an expected Budget 2027 measure but has not yet been formally announced. Budget 2027 is due on 6 October.</em></p>
+<div class="cs-intro">
+<p class="cs-kicker">Update · 3 October 2026</p>
+<p><strong>SEAI now lists a live Battery Energy Storage System Grant of €600 for qualifying home batteries of 5kWh or larger.</strong> This article was originally published on 28 September from pre-Budget reporting. The original reporting context remains below, but the current grant position should now be checked against SEAI's live scheme.</p>
+<p>For the current rules in context, see our <strong><a href="/wealth/solar-panels-ireland/">complete Solar Panels in Ireland guide</a></strong>.</p>
+</div>
 
 A new **€600 grant for home battery storage** is expected to be announced in Budget 2027.
 
