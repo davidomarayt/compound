@@ -74,6 +74,8 @@ When that happens, the surplus can be exported through the electricity meter to 
 
 The Clean Export Guarantee gives eligible micro- and small-scale generators the right to receive payment from their electricity supplier for surplus renewable electricity exported to the grid.
 
+If you are looking at a larger farm, business or land-based project, the key distinction is whether the installation is a **self-consumer exporting surplus under CEG** or an **export-only project using SRESS**. See our evergreen guide: **[CEG vs SRESS in Ireland: which solar export route fits your project?](/wealth/ceg-vs-sress-ireland/)**
+
 The [CRU's current microgeneration guidance](https://www.cru.ie/consumer-information/microgeneration/) says its regulatory arrangements are designed to ensure customers are paid for electricity they generate beyond their own use and export to the network.
 
 The enduring CEG arrangements were published by the CRU in June 2024.
