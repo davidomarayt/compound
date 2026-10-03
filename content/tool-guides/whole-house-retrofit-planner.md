@@ -2,6 +2,8 @@
 
 A whole-house retrofit is a sequence of interacting measures rather than a shopping list. This planner helps assemble costs, grants and estimated energy effects across insulation, heating, ventilation, windows, solar and related upgrades.
 
+If a heat pump is part of the plan, read our **[Heat Pumps in Ireland 2026 guide](/wealth/heat-pumps-ireland/)** first. It explains the €12,500 grant bundle, HLI/technical-assessment rules, radiator sizing, SCOP and the running-cost maths behind the calculator assumptions.
+
 ## How to read the result
 
 The cheapest measure is not always the first measure you should do, but fabric measures often influence the suitability and sizing of later heating upgrades. Focus on the post-grant cost, expected comfort/energy effect and the dependencies between measures.
