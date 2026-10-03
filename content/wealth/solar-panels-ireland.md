@@ -46,6 +46,8 @@ If your home also uses a heat pump, read **[Heat Pumps in Ireland 2026](/wealth/
 
 Your electricity tariff is part of that calculation. Our **[Electricity Tariffs in Ireland guide](/wealth/electricity-tariffs-ireland/)** explains flat, smart, EV and dynamic tariffs — useful when comparing the value of self-consumption, battery charging and grid imports.
 
+If the house still has obvious heat-loss problems, solar may not be the first euro to spend. Our **[Insulation Grants Ireland 2026 guide](/wealth/insulation-grants-ireland/)** shows the current grant and cost position for attic and wall upgrades.
+
 1. every unit of solar electricity you use yourself can reduce the amount you buy from the grid;
 2. surplus electricity can potentially earn a payment when it is exported.
 

@@ -76,6 +76,8 @@ It is:
 
 This guide reflects published Irish rules checked on **3 October 2026**.
 
+Before pricing the heat pump itself, it is worth checking the fabric. Our **[Insulation Grants Ireland 2026 guide](/wealth/insulation-grants-ireland/)** compares current attic, cavity, internal and external wall grants with SEAI's latest median costs.
+
 ## Heat pumps in Ireland at a glance
 
 <div class="cs-table-wrap" tabindex="0" role="region" aria-label="Heat pumps in Ireland quick facts">
