@@ -187,6 +187,8 @@ Before agreeing to one, ask:
 
 The right solution is the one that is sustainable, not simply the one that clears the debt fastest.
 
+Once an arrears arrangement is stable, understanding the underlying tariff can help prevent avoidable future costs. Our **[Electricity Tariffs in Ireland guide](/wealth/electricity-tariffs-ireland/)** explains standing charges, 24-hour rates, smart tariffs, EV plans and dynamic pricing. Tariff comparison is not a substitute for contacting the supplier about existing arrears.
+
 ## Are vulnerable customers given extra protection?
 
 Yes.
