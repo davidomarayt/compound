@@ -652,6 +652,8 @@ An EV tariff can be excellent for a household charging 3,000kWh a year overnight
 
 Heat pumps can be substantial electrical loads.
 
+If you are considering installing one, our **[Heat Pumps in Ireland 2026 guide](/wealth/heat-pumps-ireland/)** shows how SCOP converts electricity prices into useful-heat cost and why tariff choice matters after switching from oil or gas.
+
 Unlike an EV, some heating demand cannot simply be moved to 3am.
 
 But a well-controlled heating system can sometimes preheat a home or hot-water cylinder during cheaper periods and reduce demand during expensive peaks.
