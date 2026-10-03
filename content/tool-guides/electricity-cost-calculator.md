@@ -2,6 +2,8 @@
 
 This calculator estimates the **incremental running cost of an appliance** from its power, usage pattern and electricity unit rate. It is useful for understanding what heaters, immersions, dehumidifiers, dryers, EV-related equipment and other loads can add to a bill.
 
+For whole-house tariff selection, use our **[Electricity Tariffs in Ireland guide](/wealth/electricity-tariffs-ireland/)** to compare 24-hour, day/night, smart, EV and dynamic pricing before entering the relevant unit rate here.
+
 ## How to read the result
 
 The calculator focuses on **usage charges**, not the household's fixed standing charge. Reducing appliance kWh lowers the variable part of the bill, while a standing charge generally remains whether this individual appliance is used or not. On time-of-use plans, when the appliance runs can matter as much as how many kWh it uses.
