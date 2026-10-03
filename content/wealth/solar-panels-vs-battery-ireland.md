@@ -6,7 +6,7 @@ pillar: wealth
 draft: false
 publication_status: published
 date: 2026-09-21
-reviewed: 2026-09-21
+reviewed: 2026-10-03
 summary: 'A battery can increase how much of your solar you use at home, but that does not automatically mean a faster payback. The answer depends on export rates, night tariffs, when you use electricity and whether you have an EV.'
 meta_description: 'Solar panels vs battery in Ireland: worked 2026 examples on payback, export payments, night-rate charging, EV charging, battery efficiency and the SEAI solar grant.'
 tags: [solar, battery-storage, electricity, ev, home-energy, ireland]
@@ -17,8 +17,10 @@ related_tools:
 sources:
 - title: 'SEAI: Solar electricity grant — 2026 domestic grant values and eligibility. Checked 21 September 2026.'
   url: https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant
-- title: 'SEAI: Individual home energy grants — current grant list. Checked 21 September 2026.'
+- title: 'SEAI: Individual home energy grants — current grant list. Checked 3 October 2026.'
   url: https://www.seai.ie/grants/home-energy-grants/individual-grants
+- title: 'SEAI: Battery Energy Storage System Grant — €600 for qualifying 5kWh+ systems. Checked 3 October 2026.'
+  url: https://www.seai.ie/grants/home-energy-grants/individual-grants/battery
 - title: 'SEAI: Electricity from solar — Irish generation pattern, self-consumption and storage. Checked 21 September 2026.'
   url: https://www.seai.ie/renewable-energy/solar-energy/electricity-from-solar
 - title: 'SEAI: Smart energy technologies combined — solar, battery, EV, heat pump and time shifting. Checked 21 September 2026.'
@@ -94,9 +96,13 @@ The home must have an MPRN, must have been built and occupied before 2021, must 
 
 [SEAI: Solar electricity grant](https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant).
 
-As of 21 September 2026, SEAI's individual home-energy grant list includes the solar PV grant but does **not list a separate standalone domestic battery-storage grant**.
+SEAI now also provides a separate **€600 Battery Energy Storage System Grant** for qualifying battery systems of **5kWh or larger**.
 
-That means the battery part of a quote should be assessed on its own economics rather than assuming a separate battery grant will reduce the price.
+SEAI says batteries below 5kWh are not eligible. The property must meet the battery scheme's own conditions, including having an MPRN and being built and occupied before 2025, and works must not begin before the grant offer.
+
+[SEAI: Battery Energy Storage System Grant](https://www.seai.ie/grants/home-energy-grants/individual-grants/battery).
+
+The grant improves the battery economics, but the battery should still be tested as a separate investment rather than assuming the grant makes it pay automatically.
 
 ## Ireland gets useful solar generation—but not evenly through the year
 
@@ -141,6 +147,8 @@ These are **assumptions**, not current market quotes:
 | Export payment | 18c/kWh |
 | Direct solar self-use without battery | 35% |
 | Battery installed cost | €5,000 |
+| SEAI battery grant | €600 |
+| Net battery investment | €4,400 |
 | Battery round-trip efficiency | 90% |
 | Share of surplus solar captured by battery | 60% |
 
@@ -244,9 +252,9 @@ But the upfront investment has risen from:
 
 to:
 
-**€13,200**
+**€12,600**
 
-because of the €5,000 battery.
+because the illustrative €5,000 battery is reduced to €4,400 after the current €600 battery grant.
 
 ### Simple payback
 
@@ -256,7 +264,7 @@ Solar only:
 
 Solar + battery:
 
-**about 12.1 years**
+**about 11.5 years**
 
 So in this particular example, the battery improves self-consumption and annual savings but **slows the overall payback**.
 
@@ -641,10 +649,12 @@ A useful second calculation is:
 
 In our worked example:
 
-- battery cost: €5,000;
+- battery installed cost: €5,000;
+- current battery grant: €600;
+- net battery cost: €4,400;
 - additional annual value from solar shifting: about €149.
 
-That gives an incremental simple payback of more than **33 years** for the battery **from solar shifting alone**.
+That gives an incremental simple payback of roughly **29.5 years** for the battery **from solar shifting alone**.
 
 That is why the separate night-tariff use case can matter so much.
 
