@@ -10,6 +10,8 @@ For the rules and decisions behind the inputs — the 2026 grant, 0% VAT, batter
 
 **Advanced** adds a home-charged EV and/or battery. EV value is based on the grid tariff that solar charging would actually displace. Battery value includes round-trip losses, the export income displaced when surplus is stored, and optional cheap-rate grid charging.
 
+If you are unsure what import rate to model, our **[Electricity Tariffs in Ireland guide](/wealth/electricity-tariffs-ireland/)** explains flat, smart, EV and dynamic plans and why the cheapest advertised rate should not automatically be used for every imported kWh.
+
 The Advanced results now show the battery's **incremental annual value and battery-only simple payback** against the same solar/EV scenario without a battery. That is often a more useful buying question than looking only at the payback of the combined solar-plus-battery package.
 
 ## How to read the result
