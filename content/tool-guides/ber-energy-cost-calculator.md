@@ -20,6 +20,8 @@ That 10-year figure is deliberately not a retrofit payback forecast. It does not
 
 A BER is an **asset rating**, not a prediction of your exact bill. SEAI's DEAP methodology uses standard assumptions about occupancy, heating patterns, hot water and lighting so homes can be compared consistently.
 
+For homes considering a heating-system change, see **[Heat Pumps in Ireland: Costs, Grants, Running Costs & Suitability](/wealth/heat-pumps-ireland/)**. A BER is useful context, but heat-pump design also needs heat-loss, flow-temperature and emitter calculations.
+
 ## Worked example
 
 A 150 m² home modelled at 200 kWh/m²/year implies 30,000 kWh of calculated annual energy demand. At a blended €0.10/kWh energy price, that illustration is €3,000. A real household can use materially more or less.
