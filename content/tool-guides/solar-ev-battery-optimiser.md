@@ -2,6 +2,8 @@
 
 This tool compares how solar generation can interact with household demand, EV charging and a battery. Its purpose is not to find a universally 'optimal' system, but to reveal where each generated kWh goes and what value it creates under your tariff assumptions.
 
+Use the optimiser alongside our **[Solar Panels in Ireland guide](/wealth/solar-panels-ireland/)** for grants, CEG and system sizing, and **[Electricity Tariffs in Ireland](/wealth/electricity-tariffs-ireland/)** for the 24-hour, smart, EV and dynamic tariff structures behind the inputs.
+
 ## Basic and Advanced modes
 
 **Basic** compares the available configurations from the same core solar quote, tariff, EV and battery inputs. The more technical assumptions use transparent defaults: 35% direct household solar use, 18 kWh/100 km EV consumption, 10% EV charging losses, 80% home charging, 35% of home-EV demand able to follow solar, 90% battery round-trip efficiency, 60% solar-surplus capture and 3 kWh/day of night charging when that option is enabled.
