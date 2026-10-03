@@ -2,6 +2,8 @@
 
 This calculator estimates the electricity needed to drive an EV and the cost of charging it. It accounts for vehicle efficiency, distance and charging losses so the grid energy purchased can be higher than the energy reaching the battery.
 
+If you are choosing a home charging plan, first read **[Electricity Tariffs in Ireland: Smart, Day/Night, EV & Dynamic Rates](/wealth/electricity-tariffs-ireland/)**. A cheap EV window only makes sense in the context of the rest of the household tariff.
+
 ## How to read the result
 
 The important inputs are **kWh/100 km**, annual distance, charging efficiency and electricity rate. Home charging and public fast charging can have very different prices.
