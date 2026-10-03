@@ -124,6 +124,8 @@ That can increase the percentage of your own solar generation that you consume i
 
 It can also potentially allow households to charge a battery cheaply at night and discharge it during expensive daytime or peak-rate periods.
 
+Whether that arbitrage is worthwhile depends on the real tariff spread and battery losses. Our **[Electricity Tariffs in Ireland guide](/wealth/electricity-tariffs-ireland/)** explains the current smart, EV and dynamic tariff structures behind that calculation.
+
 That flexibility is one reason batteries are increasingly being paired with solar systems.
 
 The Irish Times reported that around **half of current solar installations now include battery storage**.
