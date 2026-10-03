@@ -52,6 +52,8 @@ That does **not** mean every Irish household should use 4,200 kWh.
 
 A one-bedroom apartment, a four-bedroom detached house, a home with an electric shower, an all-electric home, a heat-pump house and an EV household can have completely different electricity profiles.
 
+If you are considering electrifying more of the home, our **[Heat Pumps in Ireland guide](/wealth/heat-pumps-ireland/)** explains how heating can change annual demand, while the **[Solar Panels in Ireland guide](/wealth/solar-panels-ireland/)** explains how on-site generation changes the import/export picture.
+
 The most useful comparison is therefore:
 
 > **How much electricity does my home actually use, what is causing it, and when during the day am I using it?**
