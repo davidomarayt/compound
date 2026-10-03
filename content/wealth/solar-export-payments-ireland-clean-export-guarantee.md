@@ -106,6 +106,8 @@ Your electricity supplier sets the tariff it pays you.
 
 That means two households with otherwise identical solar systems can receive different amounts for the same number of exported kilowatt-hours if they are on different supplier export tariffs.
 
+For the other side of the calculation — what imported electricity costs at different times of day — see **[Electricity Tariffs in Ireland](/wealth/electricity-tariffs-ireland/)**. Solar economics are strongest when import and export prices are modelled separately.
+
 SEAI describes the CEG as effectively a feed-in tariff paid at a competitive market rate and notes that [each supplier sets its own rate](https://www.seai.ie/renewable-energy/solar-energy/electricity-from-solar).
 
 ## Do you need a smart meter to get paid?
