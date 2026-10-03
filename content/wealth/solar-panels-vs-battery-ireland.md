@@ -39,6 +39,8 @@ sources:
 
 A home battery solves a real solar problem.
 
+If you are starting from scratch, first read our **[complete guide to solar panels in Ireland](/wealth/solar-panels-ireland/)** for the 2026 grant, 0% VAT, system sizing, planning, grid connection and Clean Export Guarantee. This article then tackles the narrower question: whether adding a battery improves the economics.
+
 Your panels often generate most strongly around the middle of the day. Your home may need the most electricity in the morning and evening.
 
 A battery can move some of that electricity from one part of the day to another.
