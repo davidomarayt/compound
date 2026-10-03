@@ -68,6 +68,8 @@ The €2,000 scheme has not yet been approved by Cabinet, and the detailed rules
 
 For homeowners looking beyond the headline grant, Compound's [average household electricity-use guide](/wealth/average-home-electricity-use-ireland/) helps establish a realistic energy baseline, while the [Whole-House Retrofit Planner](/whole-house-retrofit-planner/) can put a heat-pump upgrade alongside insulation and other retrofit measures.
 
+For the full current grant structure, HLI rules, radiator requirements and running-cost maths, see our **[Heat Pumps in Ireland 2026 guide](/wealth/heat-pumps-ireland/)**.
+
 ## What is being proposed?
 
 The proposal is aimed at households that currently rely on **oil or kerosene boilers**.
