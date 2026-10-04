@@ -184,7 +184,7 @@ If a change in hours is feasible, sketch the whole effect: take-home income, pen
 
 Learning can also belong in a financial plan without a guaranteed payoff. Before paying for retraining, examine the total cost, the time required and evidence of the work it could lead to. A longer possible working life is not a reason to accept an expensive promise uncritically.
 
-And notice what work provides beyond money. The routine and company may need a new home when paid work ends. [Part 4, Happiness](/happiness/happiness-for-a-100-year-life/), explores that transition; it deserves attention alongside the income calculation.
+And notice what work provides beyond money. The routine and company may need a new home when paid work ends. [Part 4, Happiness](/life/happiness-for-a-100-year-life/), explores that transition; it deserves attention alongside the income calculation.
 
 ## Make the plan understandable to someone else {#administration}
 
