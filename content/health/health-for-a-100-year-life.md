@@ -201,7 +201,7 @@ There is a difference between making a sensible effort and taking responsibility
 
 Keep daily participation in view too. If hearing or vision difficulties make conversation, reading or getting out harder, ask about assessment and support. The immediate purpose can be clearer communication and a more workable day. It does not need to rest on a claim that an aid will prevent dementia.
 
-Learning, music, reading and conversation can be worthwhile because you enjoy them. A commercial brain score is a different thing from evidence that an activity prevents disease. The [Happiness article](/happiness/happiness-for-a-100-year-life/) considers interests and connection without making them another performance test.
+Learning, music, reading and conversation can be worthwhile because you enjoy them. A commercial brain score is a different thing from evidence that an activity prevents disease. The [Happiness article](/life/happiness-for-a-100-year-life/) considers interests and connection without making them another performance test.
 
 ## Use screening and vaccination for their intended purpose {#screening}
 
