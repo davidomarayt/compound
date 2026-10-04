@@ -190,7 +190,7 @@ Indicators of separate accommodation can include:
 - separate services;
 - ability to function independently.
 
-Government has proposed new exemptions around subdivision of dwellings and detached habitable accommodation, but do not rely on future proposals until the relevant regulations are actually in force.
+Since 27 July 2026, a separate Class 1A exemption can apply to qualifying subdivision of a principal dwelling into one additional self-contained unit, subject to detailed conditions including minimum floor-area and notification requirements. A separate Class 3A exemption covers certain detached auxiliary garden dwellings. These are distinct from the ordinary attached-garage domestic-conversion exemption.
 
 ## Renting out the converted garage
 
