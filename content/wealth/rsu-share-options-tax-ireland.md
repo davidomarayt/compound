@@ -74,7 +74,7 @@ Those stages use different rules, different tax bases and different filing respo
 <p>If you then hold the shares and later sell them, a separate CGT calculation can arise. Your employer does not normally calculate or pay that CGT for you.</p>
 </div>
 
-This guide reflects Revenue rules checked on **4 October 2026**.
+This guide reflects Revenue rules checked on **4 October 2026** and separates the payroll event from the later investor tax obligations.
 
 It focuses on the common position for an Irish employee receiving ordinary RSUs or unapproved share options. Approved schemes, KEEP, internationally mobile employees, directors, non-domiciled individuals and unusual plan structures can require different treatment.
 
