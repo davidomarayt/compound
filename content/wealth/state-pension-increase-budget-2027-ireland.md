@@ -87,7 +87,7 @@ For people planning retirement income, Compound's **[Retirement Income Calculato
 
 Budget 2026 increased the maximum weekly rate of State pensions by **€10 from January 2026**.
 
-That moved the maximum State Pension (Contributory) for a person under 80 to its current **€299.30 weekly rate**.
+That moved the maximum State Pension (Contributory) for a person under 80 to its current **€299.30 weekly rate**.\n\nFor the permanent rules behind that number — including PRSI qualification, the 520 and 2,080 contribution thresholds, deferral and the non-contributory pension — read our **[State Pension in Ireland 2026 guide](/wealth/state-pension-ireland/)**.
 
 A €7.50 increase in Budget 2027 would therefore be smaller than last year's €10 rise, although the reported wording that the pension will rise by **at least** €7.50 leaves open the possibility of a larger final increase.
 
