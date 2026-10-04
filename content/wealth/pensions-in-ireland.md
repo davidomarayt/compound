@@ -150,7 +150,7 @@ If several answers are unknown, that is where to focus before increasing complex
 
 The eight chapters form the core course. These related guides go deeper into specific questions:
 
-<div class="pension-bonus-grid">
+<div class="pension-bonus-grid">\n<a href="/wealth/state-pension-ireland/"><strong>State Pension Ireland 2026</strong><p>Rates, PRSI thresholds, the 2026 calculation transition, caring supports and deferring from 66 to 70.</p></a>
 <a href="/wealth/myfuturefund-vs-private-pension-ireland/"><strong>MyFutureFund vs Private Pension</strong><p>A detailed 2026 comparison of contribution rates, tax support, access and flexibility.</p></a>
 <a href="/wealth/pension-vs-investing-ireland/"><strong>Pension vs Investing Outside a Pension</strong><p>Compare the pension wrapper with a normal taxable investment account.</p></a>
 <a href="/wealth/how-to-start-investing-in-ireland/"><strong>Investing in Ireland 101</strong><p>See pensions in the wider context of ETFs, shares, tax, brokers and diversification.</p></a>
