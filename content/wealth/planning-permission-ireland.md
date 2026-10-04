@@ -32,8 +32,8 @@ sources:
     url: https://www.localgov.ie/services/planning-and-building/planning-permission
   - title: "Local Government Ireland Planning System — national online planning portal. Checked 5 October 2026."
     url: https://planning.localgov.ie/homepage
-  - title: "Planning and Development Regulations 2001–2025, Schedule 2 — domestic exempted development conditions including the current 40 m² extension limit."
-    url: https://consult.housing.gov.ie/en/system/files/materials/9/Exempted%20Development%202001%20regulations%20-%20Schedule%202.pdf
+  - title: "S.I. No. 338/2026 — Planning and Development (Exempted Development) Regulations 2026, in force from 27 July 2026."
+    url: https://www.irishstatutebook.ie/eli/2026/si/338/made/en/print
   - title: "Citizens Information: Planning permission for altering your house — current domestic extension summary. Checked 5 October 2026."
     url: https://www.citizensinformation.ie/en/housing/planning-permission/planning-permission-for-altering-a-house/
   - title: "Galway City Council: Planning application process — application fees, retention fees and statutory process."
@@ -66,7 +66,7 @@ This guide is the starting point for the entire Compound planning-permission ser
 <p class="cs-kicker">Quick answer</p>
 <p><strong>In Ireland, development generally requires planning permission unless it is specifically classed as exempted development.</strong></p>
 <p>A new house normally needs permission. A large extension normally needs permission. A material change in the use of a property can need permission. Some smaller domestic works are exempt if every relevant condition is satisfied.</p>
-<p>The current domestic rear-extension exemption remains <strong>40 square metres</strong> in the regulations checked for this guide. The Government announced a proposal in April 2026 to increase that limit to 45 square metres, but do not rely on the proposed 45 m² figure unless and until the relevant regulations are brought into force.</p>
+<p>Since <strong>27 July 2026</strong>, the headline domestic rear-extension exemption is <strong>45 square metres</strong>, subject to the detailed Class 1 conditions and the cumulative treatment of earlier extensions.</p>
 </div>
 
 This guide reflects the planning system checked on **5 October 2026**.
@@ -162,17 +162,17 @@ The better sentence is:
 
 > “It may be exempt if it falls within the relevant class and satisfies every applicable condition and limitation.”
 
-## The current 40 m² house-extension rule
+## The current 45 m² house-extension rule
 
 The current regulations allow a qualifying extension to the **rear** of a house without a normal planning application where the conditions are met.
 
-The headline limit is **40 m²**.
+The headline limit is now **45 m²**.
 
-That is not simply 40 m² of new work today.
+That is not simply 45 m² of new work today.
 
 The rules take account of previous extensions after 1 October 1964.
 
-For example, if a house has already had a 25 m² qualifying extension, adding another 25 m² does not normally create a 25 m² planning exemption simply because the new extension itself is below 40 m².
+For example, if a house has already had a 25 m² qualifying extension, adding another 25 m² would bring the relevant combined extension area to 50 m², so the new work is not automatically exempt simply because the new extension itself is below 45 m².
 
 The combined extension history matters.
 
@@ -183,27 +183,21 @@ There are additional upper-floor limits:
 
 subject to the overall rules.
 
-At least **25 m² of private open space** must also remain to the rear of the house.
+At least **25 m² of private open space** must also remain within the relevant curtilage after the extension.
 
 There are further conditions about height and windows.
 
 Read our dedicated guide:
 
-**[House Extension Planning Permission Ireland: The 40 m² Rule Explained](/wealth/house-extension-planning-permission-ireland/)**
+**[House Extension Planning Permission Ireland: The 45 m² Rule Explained](/wealth/house-extension-planning-permission-ireland/)**
 
-## Is the exemption changing from 40 m² to 45 m²?
+## What changed on 27 July 2026?
 
-The Government announced in April 2026 that proposed new residential exempted-development regulations would increase the principal-dwelling extension exemption from **40 m² to 45 m²**.
+The residential exemption package came into force on **27 July 2026**.
 
-That proposal has attracted understandable attention.
+Among the changes, the principal-dwelling rear-extension limit increased from **40 m² to 45 m²**. The cumulative rule remains important: previous relevant extensions still count toward the total.
 
-However, a policy announcement is not the same as a commenced regulation.
-
-The regulations and statutory material checked for this guide still show the **40 m²** domestic Class 1 limit.
-
-Until the legal change takes effect, do not design a 45 m² project on the assumption that the announcement itself created the exemption.
-
-Compound will update this guide when the new regulations are actually in force.
+Older articles and archived guidance may therefore still quote 40 m². For a new project in late 2026, use the current 45 m² rule and the full set of Class 1 conditions.
 
 ## Sheds, garages and other structures
 
@@ -645,9 +639,9 @@ Their site, extension history, boundaries, planning history and design may be di
 
 Previous extensions can count toward the exemption limit.
 
-### Relying on the proposed 45 m² exemption too early
+### Relying on old 40 m² guidance
 
-The April 2026 announcement proposed a change. The current regulations checked for this guide still use 40 m².
+The limit changed to 45 m² on 27 July 2026. Older guidance may still quote the former 40 m² threshold.
 
 ### Starting before the permission is final
 
@@ -673,7 +667,7 @@ Ordinary domestic exemptions can be restricted.
 
 Use this hub to start, then go directly to the page that matches your problem:
 
-- **[House Extension Planning Permission Ireland](/wealth/house-extension-planning-permission-ireland/)** — the 40 m² exemption, previous extensions, upper floors and open-space rules.
+- **[House Extension Planning Permission Ireland](/wealth/house-extension-planning-permission-ireland/)** — the 45 m² exemption, previous extensions, upper floors and open-space rules.
 - **[Planning Application Process Ireland](/wealth/planning-application-process-ireland/)** — forms, notices, fees, eight-week decision target, further information and final grant.
 - **[Section 5 Declaration Ireland](/wealth/section-5-declaration-ireland/)** — how to get a formal decision on whether development is exempt.
 - **[Retention Planning Permission Ireland](/wealth/retention-planning-permission-ireland/)** — unauthorised development, higher fees and the risk of refusal.
@@ -681,9 +675,9 @@ Use this hub to start, then go directly to the page that matches your problem:
 
 The cluster now also includes:
 
-- **[Sheds, Garden Rooms & Home Offices](/wealth/sheds-garden-rooms-home-offices-planning-ireland/)** — the 25 m² aggregate limit, height, garden-space rules and why intended use matters.
+- **[Sheds, Garden Rooms & Home Offices](/wealth/sheds-garden-rooms-home-offices-planning-ireland/)** — the 30 m² aggregate limit, height, garden-space rules and why intended use matters.
 - **[Rural House Planning Permission Ireland](/wealth/rural-one-off-house-planning-ireland/)** — one-off houses, local need, development plans, access and wastewater.
-- **[Attic Conversion & Dormer Planning Permission](/wealth/attic-conversion-dormer-planning-permission-ireland/)** — internal works, dormers, rooflights, proposed exemptions and building regulations.
+- **[Attic Conversion & Dormer Planning Permission](/wealth/attic-conversion-dormer-planning-permission-ireland/)** — internal works, the new 2026 dormer/rooflight exemptions and building regulations.
 - **[Planning Objections & Submissions](/wealth/planning-objections-submissions-ireland/)** — the five-week deadline, €20 fee, relevant planning grounds and third-party appeal rights.
 - **[Protected Structures & Architectural Conservation Areas](/wealth/protected-structures-aca-planning-ireland/)** — Section 57 declarations, ACAs and heritage-sensitive works.
 - **[Garage Conversion & Change of Use](/wealth/garage-conversion-change-of-use-planning-ireland/)** — domestic conversions, home businesses, separate accommodation and material change of use.
@@ -698,7 +692,7 @@ Yes, a new house normally requires planning permission from the relevant plannin
 
 ### How big can an extension be without planning permission in Ireland?
 
-The current domestic rear-extension exemption has a headline maximum of 40 m², subject to detailed conditions and previous-extension rules. The Government has proposed increasing the limit to 45 m², but the current regulations checked on 5 October 2026 still use 40 m².
+The current domestic rear-extension exemption has a headline maximum of 45 m², subject to detailed conditions and previous-extension rules. The limit increased from 40 m² on 27 July 2026.
 
 ### How much is a planning application for a house?
 
@@ -744,7 +738,7 @@ That sequence can prevent expensive mistakes.
 
 And for residential work in particular, remember the key 2026 point:
 
-> **The announced 45 m² extension exemption is a proposal, not a number to rely on until the legal change actually takes effect. The current regulations checked for this guide remain at 40 m².**
+> **Since 27 July 2026, the headline rear-extension exemption is 45 m². Older 40 m² guidance is now out of date for new projects, though all of the other exemption conditions still matter.**
 
 <script type="application/ld+json">
 {
@@ -752,7 +746,7 @@ And for residential work in particular, remember the key 2026 point:
   "@type":"FAQPage",
   "mainEntity":[
     {"@type":"Question","name":"Do I need planning permission to build a house in Ireland?","acceptedAnswer":{"@type":"Answer","text":"Yes. A new house normally requires planning permission from the relevant planning authority."}},
-    {"@type":"Question","name":"How big can an extension be without planning permission in Ireland?","acceptedAnswer":{"@type":"Answer","text":"The current domestic rear-extension exemption has a headline maximum of 40 square metres, subject to detailed conditions and previous-extension rules. A proposed increase to 45 square metres had not yet replaced the current 40 square metre rule in the regulations checked on 5 October 2026."}},
+    {"@type":"Question","name":"How big can an extension be without planning permission in Ireland?","acceptedAnswer":{"@type":"Answer","text":"Since 27 July 2026, the current domestic rear-extension exemption has a headline maximum of 45 square metres, subject to detailed conditions and previous-extension rules."}},
     {"@type":"Question","name":"How much is a planning application for a house?","acceptedAnswer":{"@type":"Answer","text":"The current statutory application fee for providing a dwelling is €65. Professional, survey, newspaper and technical-report costs are additional."}},
     {"@type":"Question","name":"How long does planning permission take?","acceptedAnswer":{"@type":"Answer","text":"A planning authority generally has eight weeks to make a decision on a valid standard application where no further information is required. A four-week appeal period follows a decision."}},
     {"@type":"Question","name":"Can I get written confirmation that my extension is exempt?","acceptedAnswer":{"@type":"Answer","text":"Yes. A Section 5 declaration can be requested from the planning authority to determine whether development is or is not exempted development."}},
