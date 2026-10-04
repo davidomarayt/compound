@@ -75,7 +75,12 @@ def test_publication_requires_actual_date_and_has_one_canonical_route(settings, 
     build_site(settings)
     html = (settings.public_dir / "live-to-100/index.html").read_text()
     assert '<link rel="canonical" href="https://example.test/live-to-100/">' in html
-    assert not (settings.public_dir / "health/live-to-100/index.html").exists()
+    legacy = (settings.public_dir / "health/live-to-100/index.html")
+    assert legacy.exists()
+    legacy_html = legacy.read_text()
+    assert 'content="0; url=/live-to-100/"' in legacy_html
+    assert 'rel="canonical" href="/live-to-100/"' in legacy_html
+    assert 'noindex,follow' in legacy_html
     schemas = [json.loads(s) for s in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html)]
     typed = {s["@type"] for s in schemas if "@type" in s}
     assert typed == {"Article", "BreadcrumbList"}
