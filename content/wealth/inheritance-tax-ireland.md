@@ -49,6 +49,8 @@ sources:
 
 If you inherit money, investments, land or a house in Ireland, the tax people usually mean by **inheritance tax** is **Capital Acquisitions Tax (CAT)**.
 
+If you are planning your own estate rather than dealing with an inheritance you have received, start with [How to Make a Will in Ireland](/wealth/how-to-make-a-will-ireland/) and then use this guide for the tax consequences.
+
 The headline numbers are simple. The calculation often is not.
 
 For gifts and inheritances taken under the current rules, the tax-free group thresholds are **€400,000 for Group A, €40,000 for Group B and €20,000 for Group C**. CAT is generally charged at **33%** on the taxable amount above the unused threshold.
