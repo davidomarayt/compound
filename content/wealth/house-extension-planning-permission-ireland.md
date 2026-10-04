@@ -1,5 +1,5 @@
 ---
-title: "House Extension Planning Permission Ireland: The 40 m² Rule Explained"
+title: "House Extension Planning Permission Ireland: The 45 m² Rule Explained"
 seo_title: "House Extension Planning Permission Ireland 2026"
 slug: house-extension-planning-permission-ireland
 pillar: wealth
@@ -7,8 +7,8 @@ draft: false
 publication_status: published
 date: 2026-10-05
 reviewed: 2026-10-05
-summary: "A practical guide to when a house extension can be exempt from planning permission in Ireland, including the 40 m² limit, previous extensions, upper-floor limits, private open space, boundaries and the proposed 45 m² change."
-meta_description: "House extension planning permission Ireland: understand the current 40 m² exemption, previous extensions, upper-floor limits, garden space and Section 5."
+summary: "A practical guide to when a house extension can be exempt from planning permission in Ireland, including the current 45 m² limit, previous extensions, upper-floor limits, private open space, boundaries and the July 2026 rule change."
+meta_description: "House extension planning permission Ireland: understand the current 45 m² exemption, previous extensions, upper-floor limits, garden space and Section 5."
 tags: [planning-permission, house-extension, exempted-development, property, ireland]
 news_image_query: "Irish house rear extension architectural drawing garden residential Ireland"
 sources:
@@ -34,14 +34,14 @@ But it is not the whole rule.
 
 <div class="cs-intro">
 <p class="cs-kicker">Quick answer</p>
-<p>A qualifying extension to the <strong>rear of a house</strong> can currently be exempt from planning permission where the detailed Class 1 conditions are satisfied and the total relevant extension area does not exceed <strong>40 m²</strong>.</p>
-<p>Previous extensions after 1 October 1964 can count toward that 40 m² total. Upper-floor extensions have smaller limits, and at least <strong>25 m² of private open space</strong> must remain to the rear.</p>
-<p>The Government announced a proposal in April 2026 to increase the exemption to 45 m². The current regulations checked on 5 October 2026 still use 40 m², so do not rely on 45 m² yet.</p>
+<p>A qualifying extension to the <strong>rear of a house</strong> can currently be exempt from planning permission where the detailed Class 1 conditions are satisfied and the total relevant extension area does not exceed <strong>45 m²</strong>.</p>
+<p>Previous extensions after 1 October 1964 can count toward that 45 m² total. Upper-floor extensions have smaller limits, and at least <strong>25 m² of private open space</strong> must remain within the relevant curtilage.</p>
+<p>The limit increased from 40 m² to 45 m² on <strong>27 July 2026</strong>. Older guides quoting 40 m² are now out of date for new projects.</p>
 </div>
 
 For the wider planning system, start with [Planning Permission in Ireland: The Complete Guide](/wealth/planning-permission-ireland/).
 
-## The 40 m² rule is cumulative
+## The 45 m² rule is cumulative
 
 The most common mistake is measuring only the new extension.
 
@@ -49,7 +49,7 @@ Suppose the original house has already been extended by 20 m².
 
 You now want another 25 m².
 
-The new project is below 40 m², but the combined relevant extension area would be 45 m².
+The new project is below 45 m², but the combined relevant extension area would be 50 m².
 
 That can take the proposed work outside the Class 1 exemption.
 
@@ -67,7 +67,7 @@ If your design changes the front building line or front elevation, check the pla
 
 ## Upper-floor limits
 
-Even where the total extension remains below the 40 m² headline limit, additional limits apply above ground level.
+Even where the total extension remains below the 45 m² headline limit, additional limits apply above ground level.
 
 For a terraced or semi-detached house, the floor area of an extension above ground level is limited to **12 m²**.
 
@@ -81,7 +81,7 @@ You have to examine how much of the extension is above ground level and the type
 
 ## You must leave enough private open space
 
-The extension must not reduce the private open space to the rear of the house below **25 m²**.
+The extension must not reduce the relevant private open space within the curtilage below **25 m²**.
 
 This matters particularly on:
 
@@ -170,25 +170,17 @@ A conversion into a separate dwelling, commercial premises or independent lettin
 
 Use, not just construction, matters.
 
-## The proposed 45 m² rule
+## What changed on 27 July 2026
 
-In April 2026, the Government announced proposed changes to residential exempted-development regulations.
+The 2026 residential exempted-development regulations came into force on **27 July 2026**.
 
-One proposal is to increase the existing house-extension exemption from **40 m² to 45 m²**.
+The Class 1 rear-extension limit increased from **40 m² to 45 m²**.
 
-Other proposed changes included larger back-garden structures and new exemptions around roof alterations and subdivision of a principal dwelling.
-
-Those proposals are significant.
-
-But they should not be treated as commenced law simply because they were announced.
-
-The statutory material checked for this article still sets the current Class 1 extension limit at 40 m².
-
-If you are designing something between 40 and 45 m², verify the law again immediately before proceeding.
+The change does not remove the other conditions. Previous extensions still count, upper-floor limits still matter, and the design still has to satisfy the rest of the exemption.
 
 ## What if my extension is 41 m²?
 
-If the current exemption limit is 40 m² and your proposal falls outside it, the ordinary approach is to seek planning permission rather than assuming the excess is too small to matter.
+If the current exemption limit is 45 m² and your proposal falls outside it, the ordinary approach is to seek planning permission rather than assuming the excess is too small to matter.
 
 Planning thresholds are not approximate.
 
@@ -198,7 +190,7 @@ A professional may be able to redesign the project, but do not build first and h
 
 ## Can I split an extension into phases?
 
-Do not assume that building 20 m² now and another 20 m² later creates two separate 40 m² allowances.
+Do not assume that building 25 m² now and another 25 m² later creates two separate 45 m² allowances.
 
 The rules are cumulative.
 
@@ -230,7 +222,7 @@ Attic and roof works have their own planning issues. See [Attic Conversion & Dor
 
 ## What about a protected structure?
 
-Do not apply the ordinary 40 m² checklist blindly to a protected structure.
+Do not apply the ordinary 45 m² checklist blindly to a protected structure.
 
 Works that materially affect the character of a protected structure can require planning permission.
 
@@ -306,9 +298,9 @@ Their planning history and site can be different.
 
 Conservatories are included in the Class 1 extension rules.
 
-### “45 m² is allowed now”
+### “The limit is still 40 m²”
 
-It was proposed in April 2026. The current regulation checked for this guide still says 40 m².
+That was the old rule. The headline limit increased to 45 m² on 27 July 2026.
 
 ### “If it is exempt from planning, there are no regulations”
 
@@ -322,7 +314,7 @@ Retention is not guaranteed.
 
 ### What is the current extension limit without planning permission?
 
-The headline Class 1 limit is currently 40 m², subject to all other conditions.
+The headline Class 1 limit is currently 45 m², subject to all other conditions.
 
 ### Do old extensions count?
 
@@ -330,7 +322,7 @@ Relevant extensions constructed after 1 October 1964 can count toward the total.
 
 ### Is the limit 45 m² now?
 
-Not yet based on the regulations checked on 5 October 2026. A 45 m² limit has been proposed by Government but should not be relied on until legally commenced.
+Yes. The headline Class 1 rear-extension limit increased from 40 m² to 45 m² on 27 July 2026, subject to the full set of exemption conditions.
 
 ### How much garden must be left?
 
@@ -348,7 +340,7 @@ Consider professional advice and a formal Section 5 declaration before building.
 
 The right way to test a domestic extension is not:
 
-> “Is it below 40 m²?”
+> “Is it below 45 m²?”
 
 It is:
 
