@@ -36,6 +36,8 @@ sources:
 
 There is an awkward truth about happiness advice:
 
+Season can matter too. If your energy or mood reliably dips as the Irish days shorten, our [guide to autumn tiredness, daylight and seasonal mood](/happiness/why-you-feel-tired-in-autumn-dark-evenings-ireland/) explains what the evidence can — and cannot — support.
+
 **most of it sounds more certain than the evidence is.**
 
 Exercise.
