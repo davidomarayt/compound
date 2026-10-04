@@ -73,6 +73,7 @@ title: Life
   <div class="life-reading">
     <a href="/wealth/average-home-electricity-use-ireland/"><span>Home energy</span><strong>How much electricity does an Irish home use?</strong></a>
     <a href="/wealth/solar-panels-vs-battery-ireland/"><span>Home upgrades</span><strong>Solar panels vs battery in Ireland</strong></a>
+    <a href="/wealth/planning-permission-ireland/"><span>Planning</span><strong>Planning Permission in Ireland: Complete Guide</strong></a>
   </div>
 </section>
 
