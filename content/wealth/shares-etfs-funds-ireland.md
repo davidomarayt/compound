@@ -60,6 +60,8 @@ A great company can still have a falling share price if expectations were too hi
 
 Owning ten companies is more diversified than owning one, but it can still be highly concentrated if they are all in the same sector or country.
 
+That concentration can be especially easy to miss when the shares come from your employer. If you receive RSUs or employee options, see our [RSU & Share Options Tax in Ireland guide](/wealth/rsu-share-options-tax-ireland/) for the separate employment-tax and CGT stages.
+
 ## What is an ETF?
 
 An exchange-traded fund is a pooled investment that trades on an exchange.
