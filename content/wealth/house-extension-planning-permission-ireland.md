@@ -226,7 +226,7 @@ An attic conversion is not automatically the same thing as a rear extension.
 
 Internal works may be exempt in planning terms, while dormer windows, roof alterations, front-facing changes or other external works can create planning issues.
 
-A dedicated attic/dormer planning guide is part of this cluster's next phase.
+Attic and roof works have their own planning issues. See [Attic Conversion & Dormer Planning Permission Ireland](/wealth/attic-conversion-dormer-planning-permission-ireland/).
 
 ## What about a protected structure?
 
