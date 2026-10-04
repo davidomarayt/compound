@@ -81,7 +81,7 @@ title: Life
   <div class="life-reading life-reading-wide">
     <a href="/life/when-did-you-last-do-something-for-fun/"><span>Leisure</span><strong>When did you last do something just for fun?</strong></a>
     <a href="/life/ploughing-championships-history-community-mental-health/"><span>Irish life</span><strong>The Ploughing Championships: history, community and connection</strong></a>
-    <a href="/health/live-to-100/"><span>Long life</span><strong>Live to 100: what makes a longer life worth living?</strong></a>
+    <a href="/live-to-100/"><span>Long life</span><strong>Live to 100: what makes a longer life worth living?</strong></a>
   </div>
 </section>
 
