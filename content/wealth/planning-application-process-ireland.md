@@ -227,7 +227,7 @@ That resets your timetable.
 
 A valid application becomes open to public participation.
 
-Anyone can generally make a submission or observation during the statutory period, subject to the required fee and process.
+Anyone can generally make a submission or observation during the statutory period, subject to the required fee and process. Our [Planning Objections & Submissions guide](/wealth/planning-objections-submissions-ireland/) explains the €20 fee, five-week deadline, planning grounds and why participation matters for later appeal rights.
 
 The normal local-authority submission fee is **€20**.
 
