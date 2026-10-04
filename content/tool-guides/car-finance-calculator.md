@@ -36,7 +36,7 @@ Do not compare monthly payments without equalising term and deposit. Do not assu
 
 ## Related Compound tools
 
-Use the [Loan Repayment Calculator](/loan-repayment-calculator/) for a simple loan, [Fuel Cost Calculator](/fuel-cost-calculator/) and [EV Charging Cost Calculator](/ev-charging-cost-calculator/) for running costs.
+Use the [Loan Repayment Calculator](/loan-repayment-calculator/) for a simple loan, [Fuel Cost Calculator](/fuel-cost-calculator/) and [EV Charging Cost Calculator](/ev-charging-cost-calculator/) for running costs. Before choosing the car itself, [EV vs Petrol vs Diesel in Ireland](/wealth/ev-vs-petrol-vs-diesel-ireland/) compares the purchase-price gap, tax, servicing, charging and depreciation alongside those running costs.
 
 ## Frequently asked questions
 
