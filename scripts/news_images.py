@@ -247,6 +247,17 @@ def _local_photo_for(meta: dict[str, Any]) -> dict[str, str]:
         " ".join(str(x) for x in meta.get("tags") or []),
     ]).lower()
 
+    # Planning/property guidance must never fall back to the generic Wealth
+    # kitchen photograph. If Pexels is unavailable or rate-limited, use the
+    # paperwork image instead so the cover still reads as permits/documents.
+    planning_keywords = ("planning", "planning-permission", "permission", "retention", "section-5", "section 5", "planning-appeal", "planning application")
+    if any(k in haystack for k in planning_keywords):
+        for item in pool:
+            if item["file"] == "tax-paperwork.jpg":
+                selected = dict(item)
+                selected["alt"] = "Illustrative planning paperwork and documents photograph"
+                return selected
+
     keyword_preferences = [
         (("sleep", "bedtime"), "adult-sleep.jpg"),
         (("protein", "nutrition", "vitamin", "food", "macro", "creatine"), "nutrition.jpg"),
