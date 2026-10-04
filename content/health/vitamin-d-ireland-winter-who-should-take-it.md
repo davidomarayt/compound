@@ -9,7 +9,7 @@ pillar: health
 date: '2026-09-12'
 reviewed: '2026-09-23'
 meta_description: 'Vitamin D guidance for Ireland: HSE supplement doses by age, winter timing, who needs it year-round and what the evidence says about bones, falls and colds.'
-summary: The HSE says everyone in Ireland should take a vitamin D supplement, because sunlight here cannot make it between October and early March. The trials back a low daily dose for bones and, in care homes, for falls, but the cold-and-flu claim has faded as the studies got bigger.
+summary: Feeling more tired or flat as the days shorten is not automatically a vitamin D problem; our [guide to autumn tiredness, daylight and seasonal mood](/happiness/why-you-feel-tired-in-autumn-dark-evenings-ireland/) separates those issues. The HSE says everyone in Ireland should take a vitamin D supplement, because sunlight here cannot make it between October and early March. The trials back a low daily dose for bones and, in care homes, for falls, but the cold-and-flu claim has faded as the studies got bigger.
 tags:
 - vitamin-d
 - supplements
