@@ -26,7 +26,7 @@ Do not multiply battery capacity by the number of charges per year unless you ac
 
 ## Related Compound tools
 
-Use the [Electricity Cost Calculator](/electricity-cost-calculator/) for the home tariff, [Fuel Cost Calculator](/fuel-cost-calculator/) for petrol/diesel comparison and [Solar + EV + Battery Optimiser](/solar-ev-battery-optimiser/) for solar charging.
+Use the [Electricity Cost Calculator](/electricity-cost-calculator/) for the home tariff, [Fuel Cost Calculator](/fuel-cost-calculator/) for petrol/diesel comparison and [Solar + EV + Battery Optimiser](/solar-ev-battery-optimiser/) for solar charging. For the full ownership decision — including grants, tax, servicing, depreciation and the cost of changing car — read [EV vs Petrol vs Diesel in Ireland](/wealth/ev-vs-petrol-vs-diesel-ireland/).
 
 ## Frequently asked questions
 
