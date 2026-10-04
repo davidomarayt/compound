@@ -87,7 +87,7 @@ What would need to last if you had another seventy years ahead of you?
 
 Imagine being 30 and reaching 100. Between those birthdays there could be several working chapters, friendships you have not yet made, places you have not yet called home and a long stretch beyond full-time employment. There would also be ordinary Tuesdays: making breakfast, paying bills, finding someone to talk to, deciding what to do with the afternoon.
 
-That is the useful starting point for **Live to 100**, Compound’s four-part series on a longer life in Ireland. This opening article brings the questions together. The companion guides explore [Wealth](/wealth/wealth-for-a-100-year-life/), [Health](/health/health-for-a-100-year-life/) and [Happiness](/happiness/happiness-for-a-100-year-life/) in depth. Start here for the perspective, then follow the question that matters most to you.
+That is the useful starting point for **Live to 100**, Compound’s four-part series on a longer life in Ireland. This opening article brings the questions together. The companion guides explore [Wealth](/wealth/wealth-for-a-100-year-life/), [Health](/health/health-for-a-100-year-life/) and [Happiness](/life/happiness-for-a-100-year-life/) in depth. Start here for the perspective, then follow the question that matters most to you.
 
 **One hundred is a planning scenario, not a prediction.** Nothing in this series estimates your chance of reaching it. And being 30 does not put everyone at the same starting line: a person studying, raising children, recovering from illness or beginning again after a separation will have different choices. The point is to leave room for a future that may be longer, and less linear, than expected.
 
@@ -153,7 +153,7 @@ Research connects social relationships with health outcomes, but its limits matt
 
 Connection also has value without a mortality statistic. It can mean being expected somewhere, sharing a joke, having someone to ask or feeling able to offer something yourself. It need not mean marriage, children or a large friendship group. Nor should a plan assume family members can provide unlimited care.
 
-For a reader in Ireland, the setting might be a library, a local club, a community group, a faith community or an online group that feels welcoming. The practical reflection is which connections you would like to keep making room for. Compound’s article on [the Ploughing, community and wellbeing](/happiness/ploughing-championships-history-community-mental-health/) explores one familiar setting; [Part 4, Happiness](/happiness/happiness-for-a-100-year-life/), widens the lens.
+For a reader in Ireland, the setting might be a library, a local club, a community group, a faith community or an online group that feels welcoming. The practical reflection is which connections you would like to keep making room for. Compound’s article on [the Ploughing, community and wellbeing](/life/ploughing-championships-history-community-mental-health/) explores one familiar setting; [Part 4, Happiness](/life/happiness-for-a-100-year-life/), widens the lens.
 
 ### Purpose beyond a job title
 
@@ -189,4 +189,4 @@ Start with this reflection: **What would I like an ordinary day at 80 to look li
 
 Then choose one manageable step for financial resilience, one for physical capability and one for connection or purpose. Those could be understanding a regular expense, seeking help with an activity that has become difficult, or arranging time with someone whose company you enjoy. They are examples, not prescriptions.
 
-Continue with [Wealth](/wealth/wealth-for-a-100-year-life/) for money and choices, [Health](/health/health-for-a-100-year-life/) for capability and care, or [Happiness](/happiness/happiness-for-a-100-year-life/) for connection and purpose.
+Continue with [Wealth](/wealth/wealth-for-a-100-year-life/) for money and choices, [Health](/health/health-for-a-100-year-life/) for capability and care, or [Happiness](/life/happiness-for-a-100-year-life/) for connection and purpose.
