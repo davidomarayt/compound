@@ -28,6 +28,8 @@ sources:
 
 Stress is not always obvious.
 
+If the change seems strongly seasonal, especially as daylight shortens, see [why autumn can affect energy, sleep and mood](/happiness/why-you-feel-tired-in-autumn-dark-evenings-ireland/) before assuming every symptom is simply stress.
+
 Sometimes it feels like anxiety.
 
 Sometimes it looks like irritability.
