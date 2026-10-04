@@ -270,6 +270,8 @@ Under the ordinary FIFO rule, the first 100 shares acquired are generally treate
 
 Bonus issues, rights issues, reorganisations and other transactions can create additional rules.
 
+Employee shares add another layer because the acquisition cost may be linked to an earlier employment-tax event. If you receive RSUs or exercise employee options, read our [RSU & Share Options Tax in Ireland guide](/wealth/rsu-share-options-tax-ireland/) before calculating the later share disposal.
+
 ## CGT on investment property
 
 An investment property can produce a large capital gain because property values and transaction costs are substantial.
