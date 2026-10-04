@@ -80,6 +80,8 @@ That is a simplified example. Allowable acquisition/disposal costs and losses ca
 
 Use the [Capital Gains Tax Calculator](/capital-gains-tax-calculator/) for the arithmetic, and see the full [Capital Gains Tax in Ireland guide](/wealth/capital-gains-tax-ireland/) for allowable costs, losses, property, gifts, crypto, payment dates and filing obligations.
 
+If the shares came from your employer, do not skip the earlier employment-tax event: our [RSU & Share Options Tax in Ireland guide](/wealth/rsu-share-options-tax-ireland/) explains vesting, exercise, PAYE/USC/PRSI and the later CGT calculation.
+
 ## The €1,270 exemption is not a €1,270 tax credit
 
 This is an important distinction.
