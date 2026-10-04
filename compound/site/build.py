@@ -1102,6 +1102,11 @@ def build_site(settings: Settings) -> dict:
             legacy_url = f"/happiness/{a.slug}/"
             if a.url != legacy_url:
                 _write(out / legacy_url.strip("/") / "index.html", _redirect_html(a.url))
+        # The Live to 100 opener has always had the root canonical route. Preserve
+        # the intuitive pillar-prefixed URL as a redirect so stale hub links,
+        # bookmarks and external links cannot produce a 404.
+        if a.slug == "live-to-100" and a.url == "/live-to-100/":
+            _write(out / "health" / "live-to-100" / "index.html", _redirect_html(a.url))
         for t in a.tags:
             tag_map.setdefault(t, []).append(a)
     for t, arts in tag_map.items():
