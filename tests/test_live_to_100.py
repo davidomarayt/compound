@@ -112,7 +112,7 @@ def test_complete_series_has_live_navigation_and_article_specific_metadata(setti
     shutil.copytree(ROOT / "content/series", settings.content_dir / "series")
     build_site(settings)
     routes = ["/live-to-100/", "/wealth/wealth-for-a-100-year-life/",
-              "/health/health-for-a-100-year-life/", "/happiness/happiness-for-a-100-year-life/"]
+              "/health/health-for-a-100-year-life/", "/life/happiness-for-a-100-year-life/"]
     for index, route in enumerate(routes):
         html = (settings.public_dir / route.strip("/") / "index.html").read_text()
         assert "Coming next" not in html
