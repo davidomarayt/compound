@@ -679,16 +679,16 @@ Use this hub to start, then go directly to the page that matches your problem:
 - **[Retention Planning Permission Ireland](/wealth/retention-planning-permission-ireland/)** — unauthorised development, higher fees and the risk of refusal.
 - **[Planning Appeals Ireland](/wealth/planning-appeal-ireland/)** — who can appeal, the four-week deadline and current fees.
 
-The next satellite pages planned for this cluster are:
+The cluster now also includes:
 
-- Planning permission for sheds, garden rooms and home offices;
-- rural one-off housing and local-needs rules;
-- planning permission for attic conversions and dormers;
-- garage conversions;
-- planning submissions and objections;
-- protected structures and Architectural Conservation Areas;
-- planning permission for change of use and home businesses;
-- and planning permission costs beyond the statutory application fee.
+- **[Sheds, Garden Rooms & Home Offices](/wealth/sheds-garden-rooms-home-offices-planning-ireland/)** — the 25 m² aggregate limit, height, garden-space rules and why intended use matters.
+- **[Rural House Planning Permission Ireland](/wealth/rural-one-off-house-planning-ireland/)** — one-off houses, local need, development plans, access and wastewater.
+- **[Attic Conversion & Dormer Planning Permission](/wealth/attic-conversion-dormer-planning-permission-ireland/)** — internal works, dormers, rooflights, proposed exemptions and building regulations.
+- **[Planning Objections & Submissions](/wealth/planning-objections-submissions-ireland/)** — the five-week deadline, €20 fee, relevant planning grounds and third-party appeal rights.
+- **[Protected Structures & Architectural Conservation Areas](/wealth/protected-structures-aca-planning-ireland/)** — Section 57 declarations, ACAs and heritage-sensitive works.
+- **[Garage Conversion & Change of Use](/wealth/garage-conversion-change-of-use-planning-ireland/)** — domestic conversions, home businesses, separate accommodation and material change of use.
+
+Future additions should only be created where they answer a genuinely distinct planning question rather than repeating the same rules under different county names.
 
 ## Frequently asked questions
 
