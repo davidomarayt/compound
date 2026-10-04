@@ -14,10 +14,10 @@ news_image_query: "garden room architectural plans Irish house backyard shed pla
 sources:
   - title: "Citizens Information: Planning permission for altering your house — garages and sheds. Checked 5 October 2026."
     url: https://www.citizensinformation.ie/en/housing/planning-permission/planning-permission-for-altering-a-house/
-  - title: "Planning and Development Regulations 2001–2025, Schedule 2 — current exempted-development classes."
-    url: https://consult.housing.gov.ie/en/system/files/materials/9/Exempted%20Development%202001%20regulations%20-%20Schedule%202.pdf
-  - title: "Department of Housing: proposed changes to Planning Exemptions Regulations. 21 April 2026."
-    url: https://www.gov.ie/en/department-of-housing-local-government-and-heritage/press-releases/government-announces-changes-to-planning-exemptions-regulations/
+  - title: "S.I. No. 338/2026 — garden-structure exemption increased to 30 m² from 27 July 2026."
+    url: https://www.irishstatutebook.ie/eli/2026/si/338/made/en/print
+  - title: "S.I. No. 340/2026 — Class 3A auxiliary habitable dwelling exemption from 27 July 2026."
+    url: https://www.irishstatutebook.ie/eli/2026/si/340/made/en/print
   - title: "Dublin City Council: planning applications and material change of use."
     url: https://www.gov.ie/en/dublin-city-council/services/planning-applications/
 ---
