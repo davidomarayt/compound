@@ -24,7 +24,7 @@ Do not compare two cars on fuel alone. Depreciation, finance, insurance, tax and
 
 ## Related Compound tools
 
-Use the [EV Charging Cost Calculator](/ev-charging-cost-calculator/) for electric driving and the [Car Finance Calculator](/car-finance-calculator/) for acquisition financing.
+Use the [EV Charging Cost Calculator](/ev-charging-cost-calculator/) for electric driving and the [Car Finance Calculator](/car-finance-calculator/) for acquisition financing. If you are deciding which drivetrain to buy rather than calculating fuel alone, use [EV vs Petrol vs Diesel in Ireland](/wealth/ev-vs-petrol-vs-diesel-ireland/) to compare total ownership factors.
 
 ## Frequently asked questions
 
