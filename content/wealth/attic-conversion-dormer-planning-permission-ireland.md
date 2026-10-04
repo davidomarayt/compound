@@ -7,8 +7,8 @@ draft: false
 publication_status: published
 date: 2026-10-05
 reviewed: 2026-10-05
-summary: "When an attic conversion may be exempt from planning permission in Ireland, when dormers and roof alterations can trigger permission, why building regulations still matter and what the proposed 2026 exemption changes mean."
-meta_description: "Attic conversion planning permission Ireland: internal conversions, dormer windows, rooflights, external roof changes, building regulations and proposed exemptions."
+summary: "When an attic conversion may be exempt from planning permission in Ireland, including the new 2026 dormer and rooflight exemptions, external roof changes, and why building regulations still matter."
+meta_description: "Attic conversion planning permission Ireland: internal conversions, 2026 dormer and rooflight exemptions, external roof changes and building regulations."
 tags: [planning-permission, attic-conversion, dormer, rooflight, home-improvement, ireland]
 news_image_query: "attic conversion architectural roof plans dormer Irish house planning"
 sources:
@@ -29,7 +29,7 @@ The key distinction is between **internal works** and a conversion that changes 
 <div class="cs-intro">
 <p class="cs-kicker">Quick answer</p>
 <p>Internal works can be exempt from planning permission where they affect only the interior or do not materially alter the external appearance in a way inconsistent with the character of the structure or neighbouring structures.</p>
-<p>A dormer, major roof-profile change or other visible alteration can raise a different planning question and may require permission.</p>
+<p>Since 27 July 2026, new specific exemptions cover qualifying dormer roof boxes and rooflights on a principal dwelling, subject to detailed conditions. Larger or non-qualifying roof alterations can still require permission.</p>
 <p>Separate building-regulation and building-control requirements can apply even where planning permission is not required.</p>
 </div>
 
@@ -82,11 +82,11 @@ That can materially affect the appearance of:
 - a semi-detached pair;
 - or the streetscape.
 
-Whether planning permission is required depends on the nature, scale and planning context of the proposal.
+The 2026 regulations introduced a specific exemption for qualifying dormer roof boxes, including dimensional and location conditions.
 
-A large front dormer is very different from a small rear rooflight.
+That does not mean every dormer is exempt.
 
-If the conversion relies on a dormer to create usable headroom, resolve planning before committing to the design.
+A large front dormer, a dormer that exceeds the conditions, or work on a protected or heritage-sensitive property can still require planning permission.
 
 ## Rear dormer versus front dormer
 
@@ -108,30 +108,20 @@ Front roof changes usually attract even greater scrutiny because they directly a
 
 Rooflights are generally less visually intrusive than dormers, but their planning status still depends on the legal exemption framework and context.
 
-The Government's review of exempted-development rules has specifically included proposed attic-conversion and rooflight exemptions.
+The July 2026 regulations also introduced a specific rooflight exemption for qualifying work on a principal dwelling.
 
-That tells you something important:
+The exact siting and dimensional conditions still matter, so do not treat “rooflight” as an unlimited category.
 
-> do not assume every rooflight arrangement is automatically covered by a broad existing attic exemption.
+## What changed on 27 July 2026
 
-Check the current rules when designing the project.
+The residential exempted-development package came into force on **27 July 2026**.
 
-## The proposed 2026 attic exemption reforms
+For attic and roof work, it introduced new specific classes for qualifying:
 
-The Government has been developing new residential exempted-development regulations.
+- dormer roof boxes; and
+- rooflights.
 
-Public material has identified proposed exemptions for:
-
-- attic conversions;
-- rooflights;
-- detached habitable accommodation;
-- and other domestic changes.
-
-Those proposals could materially change the practical answer for homeowners.
-
-But this page reflects the law verified on **5 October 2026**.
-
-Until the new regulations are actually made and commenced, do not rely on a policy announcement as if it were the current exemption.
+The dormer exemption is not unlimited: the design has to satisfy the conditions of the new class. If your proposal falls outside them, normal planning assessment may still be required.
 
 ## What if no external change is visible?
 
@@ -281,9 +271,9 @@ If the planning position is doubtful, resolving it before construction is usuall
 
 Internal works can be exempt. External roof changes are a different question.
 
-### “A rear dormer never needs permission”
+### “All rear dormers are exempt now”
 
-There is no universal rule that every rear dormer is automatically exempt.
+No. The 2026 exemption has detailed conditions. A non-qualifying dormer can still need permission.
 
 ### “The neighbour has one”
 
@@ -293,23 +283,23 @@ That is evidence of local context, not proof that yours needs no permission.
 
 Structural and fire-safety issues can be more important than planning.
 
-### “The Government announced an attic exemption, so it is live”
+### “Any dormer or rooflight is now exempt”
 
-Proposed regulations must actually come into force before you rely on them.
+No. The July 2026 regulations created specific classes with conditions; they did not create an unlimited exemption for all roof alterations.
 
 ## Frequently asked questions
 
 ### Do I need planning permission for an attic conversion in Ireland?
 
-A purely internal conversion can often be exempt. External changes such as dormers or significant roof alterations can require separate planning assessment.
+A purely internal conversion can often be exempt. Since 27 July 2026, qualifying dormer roof boxes and rooflights can also be exempt under specific new classes; non-qualifying external roof changes can still require permission.
 
 ### Does a dormer window need planning permission?
 
-It may. Dormers materially change roof form and should not be assumed exempt without checking the specific design and context.
+A qualifying dormer can now be exempt under the July 2026 regulations, but larger or otherwise non-qualifying dormers can still require permission.
 
 ### Are rooflights exempt?
 
-It depends on the current exemption rules and design. The Government has proposed clearer attic and rooflight exemptions, but proposed reforms should not be treated as live until commenced.
+Qualifying rooflights can now be exempt under the July 2026 regulations, subject to the specific siting and dimensional conditions.
 
 ### Do building regulations apply if planning is not needed?
 
