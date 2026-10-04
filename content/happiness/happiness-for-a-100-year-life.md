@@ -1,6 +1,6 @@
 ---
-title: 'Happiness for a 100-Year Life: Connection, Purpose and Ordinary Days'
-seo_title: 'Happiness for a 100-Year Life in Ireland | Compound'
+title: 'Life for a 100-Year Life: Connection, Purpose and Ordinary Days'
+seo_title: 'Life for a 100-Year Life in Ireland | Compound'
 slug: happiness-for-a-100-year-life
 news_image_query: "older friends walking laughing outdoors healthy ageing"
 pillar: happiness
@@ -115,7 +115,7 @@ A crowded diary therefore cannot tell the whole story. You may meet plenty of pe
 
 Ask a more specific question: what kind of connection is missing? It could be somebody to confide in, companions for an activity, casual conversation or help when a day goes wrong. Different needs suggest different next steps. A hobby group may offer a pleasant shared activity without immediately becoming the place for a deeply personal conversation.
 
-Compound's [guide to loneliness in Ireland](/happiness/loneliness-ireland-how-common-what-helps/) explores that subject further. Here, the invitation is to notice the quality and fit of your connections without turning them into a score.
+Compound's [guide to loneliness in Ireland](/life/loneliness-ireland-how-common-what-helps/) explores that subject further. Here, the invitation is to notice the quality and fit of your connections without turning them into a score.
 
 ## Give relationships a place in the week {#relationships}
 
@@ -139,7 +139,7 @@ That is encouraging evidence of a relationship, not proof that taking up a parti
 
 The personal question is simpler: is there something you would like to try, return to or adapt? Begin at a scale you can afford in time, energy and money. Borrow equipment before buying it if that is possible. Give yourself permission to stop an activity that does not fit.
 
-Our article [When did you last do something for fun?](/happiness/when-did-you-last-do-something-for-fun/) develops that invitation. Enjoyment does not need an impressive explanation, measurable improvement or an audience.
+Our article [When did you last do something for fun?](/life/when-did-you-last-do-something-for-fun/) develops that invitation. Enjoyment does not need an impressive explanation, measurable improvement or an audience.
 
 ## Find a door into community in Ireland {#community}
 
@@ -151,7 +151,7 @@ Our article [When did you last do something for fun?](/happiness/when-did-you-la
 
 **Social prescribing.** The HSE describes services that connect people with local activities and support, with help from a social prescriber or link worker. It says you can refer yourself, or another person with their consent, by contacting a local service. [HSE (6)](https://www2.hse.ie/mental-health/services-support/supports-services/). It can be a starting conversation when you do not know where to begin; it does not replace needed healthcare.
 
-There may also be sports clubs, cultural groups, community gardens, faith communities or disability-led organisations that suit you. Check the actual access and welcome rather than relying on a general label. Compound's [article on the Ploughing and community](/happiness/ploughing-championships-history-community-mental-health/) explores one familiar Irish gathering. A smaller, repeated encounter may be more useful for your own week.
+There may also be sports clubs, cultural groups, community gardens, faith communities or disability-led organisations that suit you. Check the actual access and welcome rather than relying on a general label. Compound's [article on the Ploughing and community](/life/ploughing-championships-history-community-mental-health/) explores one familiar Irish gathering. A smaller, repeated encounter may be more useful for your own week.
 
 ## Let purpose change shape {#purpose}
 
@@ -201,6 +201,6 @@ A hundredth birthday remains uncertain. The coming week is close enough to make 
 
 ## Related Compound guides
 
-For the practical evidence on life satisfaction and the habits most worth testing, read [How to be happier: what the evidence actually says](/happiness/how-to-be-happier-evidence-ireland/).
+For the practical evidence on life satisfaction and the habits most worth testing, read [How to be happier: what the evidence actually says](/life/how-to-be-happier-evidence-ireland/).
 
-For the social side of a long life, see [How to make friends as an adult in Ireland](/happiness/how-to-make-friends-as-an-adult-ireland/) and [Loneliness in Ireland](/happiness/loneliness-ireland-how-common-what-helps/).
+For the social side of a long life, see [How to make friends as an adult in Ireland](/life/how-to-make-friends-as-an-adult-ireland/) and [Loneliness in Ireland](/life/loneliness-ireland-how-common-what-helps/).
