@@ -277,6 +277,8 @@ Use the [Local Property Tax Calculator](/local-property-tax-calculator/) for the
 
 A purchase can be affordable at completion but uncomfortable month to month if recurring costs were ignored.
 
+If the property has an extension, converted garage or other alteration whose planning status is unclear, read [Planning Permission in Ireland](/wealth/planning-permission-ireland/) before treating the issue as a minor post-purchase detail. Planning uncertainty can affect conveyancing, lending and future resale.
+
 ## A practical pre-completion workflow
 
 ### Early search stage
