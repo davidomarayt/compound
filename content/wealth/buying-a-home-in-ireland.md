@@ -89,7 +89,7 @@ They do not tell you what you can comfortably afford.
 <div><span>03</span><strong>Check supports</strong><p>Confirm HTB/FHS eligibility before relying on the money.</p></div>
 <div><span>04</span><strong>Find and bid</strong><p>Use comparable sales and your own maximum—not emotion.</p></div>
 <div><span>05</span><strong>Sale agreed</strong><p>Book survey, valuation and start property-specific finance checks.</p></div>
-<div><span>06</span><strong>Conveyancing</strong><p>Solicitor resolves title, contracts, planning and legal issues.</p></div>
+<div><span>06</span><strong>Conveyancing</strong><p>Solicitor resolves title, contracts, planning and legal issues. If the property has extensions or alterations, use our <a href="/wealth/planning-permission-ireland/">Planning Permission in Ireland guide</a> to understand the records and exemptions that may matter.</p></div>
 <div><span>07</span><strong>Finalise mortgage</strong><p>Choose rate structure, insurance and satisfy lender conditions.</p></div>
 <div><span>08</span><strong>Draw down</strong><p>Lender releases mortgage funds to your solicitor.</p></div>
 <div><span>09</span><strong>Close</strong><p>Complete the purchase, get the keys and begin ownership.</p></div>
