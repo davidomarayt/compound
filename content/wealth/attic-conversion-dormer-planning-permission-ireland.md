@@ -14,10 +14,10 @@ news_image_query: "attic conversion architectural roof plans dormer Irish house 
 sources:
   - title: "Planning and Development Act 2000, section 4(1)(h) — interior works and external appearance exemption."
     url: https://www.irishstatutebook.ie/eli/2000/act/30/section/4/enacted/en/html
-  - title: "Department of Housing: Planning Permission Exemptions — proposed attic-conversion reforms. Published 13 November 2025."
-    url: https://www.gov.ie/en/department-of-housing-local-government-and-heritage/publications/planning-permission-exemptions/
-  - title: "Department of Housing: consultation on proposed planning exemptions including attic conversions and rooflights."
-    url: https://www.gov.ie/en/department-of-housing-local-government-and-heritage/press-releases/four-week-public-consultation-on-planning-permission-exemptions-now-open/
+  - title: "S.I. No. 344/2026 — dormer roof box and rooflight exemptions, in force from 27 July 2026."
+    url: https://www.irishstatutebook.ie/eli/2026/si/344/made/en/print
+  - title: "Department of Housing: background to the 2026 residential planning-exemption reforms."
+    url: https://www.gov.ie/en/department-of-housing-local-government-and-heritage/press-releases/government-announces-changes-to-planning-exemptions-regulations/
   - title: "Department of Housing: Building Control — Building Regulations and material alteration/change of use."
     url: https://www.gov.ie/en/department-of-housing-local-government-and-heritage/publications/building-control/
 ---
