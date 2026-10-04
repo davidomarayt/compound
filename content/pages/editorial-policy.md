@@ -1,7 +1,7 @@
 ---
 title: Editorial and Corrections Policy
 ---
-Compound publishes practical, evidence-led articles about health, wealth and happiness in Ireland. This policy explains how we choose, research, review and correct them.
+Compound publishes practical, evidence-led articles about health, wealth and life in Ireland. This policy explains how we choose, research, review and correct them.
 
 ## Editorial responsibility
 
