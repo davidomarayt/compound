@@ -48,7 +48,7 @@ The Government is considering keeping Ireland's temporary **petrol and diesel ex
 
 [RTÉ reports](https://www.rte.ie/news/politics/2026/0923/1592651-ireland-politics/) that Tánaiste and Minister for Finance Simon Harris and Minister for Public Expenditure Jack Chambers have indicated that the reductions could remain in place into spring.
 
-For motorists, the immediate question is simple: **how much does that change the cost of running a petrol or diesel car — and how does it compare with an EV?**
+For motorists, the immediate question is simple: **how much does that change the cost of running a petrol or diesel car — and how does it compare with an EV?** For the evergreen ownership comparison beyond this temporary excise story, see [EV vs Petrol vs Diesel in Ireland](/wealth/ev-vs-petrol-vs-diesel-ireland/).
 
 For a petrol or diesel car, Compound's [Fuel Cost Calculator](/fuel-cost-calculator/) turns mileage, fuel economy and pump price into an annual estimate. The wider tax and energy measures under discussion are tracked in our [Budget 2027 guide](/wealth/budget-2027-what-to-watch/).
 
