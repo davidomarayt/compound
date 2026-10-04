@@ -166,7 +166,7 @@ Read [MyFutureFund vs a Private Pension in Ireland](/wealth/myfuturefund-vs-priv
 
 A private pension builds additional retirement income.
 
-The State Pension is a separate public benefit.
+The [State Pension](/wealth/state-pension-ireland/) is a separate public benefit.
 
 For retirement planning, the important question is not whether one replaces the other.
 
