@@ -7,8 +7,8 @@ draft: false
 publication_status: published
 date: 2026-10-05
 reviewed: 2026-10-05
-summary: "When sheds, garages, garden rooms and home offices can be exempt from planning permission in Ireland, including the 25 m² limit, height rules, open-space requirements and why intended use matters."
-meta_description: "Shed and garden room planning permission Ireland: 25 m² limit, height rules, open space, home-office use, garden studios and when planning is needed."
+summary: "When sheds, garages, garden rooms and home offices can be exempt from planning permission in Ireland, including the current 30 m² limit, height rules, open-space requirements and why intended use matters."
+meta_description: "Shed and garden room planning permission Ireland: 30 m² limit, height rules, open space, home-office use, garden dwellings and when planning is needed."
 tags: [planning-permission, shed, garden-room, home-office, garage, exempted-development, ireland]
 news_image_query: "garden room architectural plans Irish house backyard shed planning documents"
 sources:
@@ -32,18 +32,18 @@ The planning rules look at what is being built, where it is located, how large i
 
 <div class="cs-intro">
 <p class="cs-kicker">Quick answer</p>
-<p>A qualifying garage, shed, greenhouse or similar structure can generally be exempt from planning permission where it is to the rear or side of the house, stays within the relevant height rules and the combined floor area of such structures does not exceed <strong>25 m²</strong>.</p>
+<p>A qualifying garage, shed, greenhouse or similar structure can generally be exempt from planning permission where it is to the rear or side of the house, stays within the relevant height rules and the combined floor area of such structures does not exceed <strong>30 m²</strong>.</p>
 <p>At least <strong>25 m² of private open space</strong> must remain to the rear or side. The structure must not project forward of the front building line.</p>
 <p>The ordinary exemption is not a blanket permission for separate accommodation or commercial premises. Intended use matters.</p>
 </div>
 
 For the overall system, start with [Planning Permission in Ireland: The Complete Guide](/wealth/planning-permission-ireland/).
 
-## The current 25 m² rule
+## The current 30 m² rule
 
 Citizens Information summarises the current domestic exemption for garages, sheds, greenhouses and similar structures.
 
-The floor area of the new structure, **together with similar structures already on the property**, should not exceed **25 m²**.
+Since 27 July 2026, the floor area of the new structure, **together with similar structures already on the property**, should not exceed **30 m²** under the ordinary domestic Class 3 exemption.
 
 That cumulative point is important.
 
@@ -52,7 +52,7 @@ If you already have:
 - a 12 m² shed; and
 - an 8 m² greenhouse,
 
-you do not automatically have a fresh 25 m² allowance for another garden building.
+you do not automatically have a fresh 30 m² allowance for another garden building.
 
 The existing relevant structures can affect how much exemption remains.
 
@@ -93,7 +93,7 @@ The structure should not reduce the private open space to the rear or side of th
 
 That can become the limiting factor on smaller urban sites.
 
-A 20 m² garden room may look comfortably under the 25 m² floor-area threshold but still fail the exemption if too little usable private open space remains.
+A 20 m² garden room may look comfortably under the 30 m² floor-area threshold but still fail the exemption if too little usable private open space remains.
 
 ## Side structures need to match the house finish
 
@@ -117,13 +117,11 @@ That means a garden building marketed as:
 - rental pod;
 - independent bedroom suite;
 
-should not be assumed exempt simply because its shell is under 25 m².
+should not be assumed exempt simply because its shell is under 30 m² under the ordinary shed/garden-room exemption.
 
-Habitable accommodation raises a different planning question.
+However, a separate **Class 3A** exemption came into force on 27 July 2026 for a qualifying detached auxiliary habitable dwelling of **32–45 m²** to the rear of a principal house, subject to detailed conditions and a notification requirement.
 
-The Government has been working on proposed new residential exemptions, including detached accommodation within the boundary of a principal dwelling, but proposed reforms are not the same thing as a current exemption.
-
-Check the law in force before relying on an announced future measure.
+That is a different exemption from the ordinary shed/garden-room class, so do not mix the two sets of rules.
 
 ## What about a garden office?
 
@@ -214,21 +212,21 @@ If the end result functions as a separate dwelling, the ordinary shed exemption 
 
 The exemption is concerned with the floor area of the structure.
 
-For a project near 25 m², do not rely on a seller's nominal product size without checking the actual planning measurement.
+For a project near 30 m², do not rely on a seller's nominal product size without checking the actual planning measurement.
 
 Ask the designer or supplier for dimensioned drawings.
 
-A 5 m × 5 m structure is already 25 m² before any ambiguity about measurement is introduced.
+A 5 m × 6 m structure is already 30 m² before any ambiguity about measurement is introduced.
 
 ## Can I build two 20 m² sheds?
 
-Not under a simple reading of a 25 m² aggregate limit.
+Not under a simple reading of a 30 m² aggregate limit.
 
 The floor area is considered on its own **or together with other similar structures**.
 
 Two 20 m² buildings would total 40 m².
 
-The exemption is not 25 m² per building.
+The exemption is not 30 m² per building.
 
 ## What about an existing shed from years ago?
 
@@ -281,21 +279,22 @@ Depending on the works and use, building regulations can apply to:
 
 A garden building used as a habitable room deserves more technical scrutiny than a simple tool shed.
 
-## The proposed exemption reforms
+## The July 2026 exemption reforms
 
-Government announced a broader review of residential exempted-development regulations during 2026.
+The residential exemption package came into force on **27 July 2026**.
 
-The proposals included more flexibility for homeowners, including potential detached habitable accommodation within a property boundary.
+For garden development, two especially important changes are:
 
-Those changes are important, but this article is based on the current rules verified on **5 October 2026**.
+- the ordinary aggregate limit for qualifying garden structures increased from **25 m² to 30 m²**;
+- a separate Class 3A exemption was introduced for qualifying detached auxiliary habitable accommodation of **32–45 m²**, subject to its own conditions and notification requirements.
 
-Do not design around a proposed future exemption until the relevant regulations are actually in force.
+These are separate classes and should be assessed separately.
 
 ## When to apply for planning permission
 
 Consider a normal planning application where the proposal:
 
-- exceeds the 25 m² aggregate limit;
+- exceeds the 30 m² aggregate limit under the ordinary garden-structure class;
 - exceeds the relevant height;
 - projects forward of the front building line;
 - leaves insufficient private open space;
@@ -326,7 +325,7 @@ The cost and process are covered in [Section 5 Declaration Ireland](/wealth/sect
 
 ### How big can a shed be without planning permission in Ireland?
 
-The current domestic exemption has a 25 m² aggregate floor-area limit for the relevant garage, shed, greenhouse or similar structures, subject to all other conditions.
+The current ordinary domestic exemption has a 30 m² aggregate floor-area limit for the relevant garage, shed, greenhouse or similar structures, subject to all other conditions.
 
 ### How high can an exempt shed be?
 
@@ -340,7 +339,7 @@ Do not assume so. The ordinary shed/garage exemption is not for structures that 
 
 Potentially, but the planning position depends on the actual use. A domestic remote-work space is not necessarily the same as a customer-facing commercial premises. If uncertain, consider a Section 5 declaration.
 
-### Can I build 25 m² if I already have a shed?
+### Can I build 30 m² if I already have a shed?
 
 Not necessarily. Existing similar structures count toward the aggregate floor-area limit.
 
