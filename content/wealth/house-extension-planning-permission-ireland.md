@@ -12,8 +12,8 @@ meta_description: "House extension planning permission Ireland: understand the c
 tags: [planning-permission, house-extension, exempted-development, property, ireland]
 news_image_query: "Irish house rear extension architectural drawing garden residential Ireland"
 sources:
-  - title: "Planning and Development Regulations 2001–2025, Schedule 2, Class 1 — domestic extension exemption."
-    url: https://consult.housing.gov.ie/en/system/files/materials/9/Exempted%20Development%202001%20regulations%20-%20Schedule%202.pdf
+  - title: "S.I. No. 338/2026 — current Class 1 extension exemption, in force from 27 July 2026."
+    url: https://www.irishstatutebook.ie/eli/2026/si/338/made/en/print
   - title: "Citizens Information: Planning permission for altering your house. Checked 5 October 2026."
     url: https://www.citizensinformation.ie/en/housing/planning-permission/planning-permission-for-altering-a-house/
   - title: "Department of Housing: proposed residential planning exemption changes, including proposed 45 m² extension threshold. 21 April 2026."
@@ -26,11 +26,11 @@ One of the most searched planning questions in Ireland is also one of the easies
 
 > **How big can I build an extension without planning permission?**
 
-The answer most people hear is **40 square metres**.
+The headline number is now **45 square metres**.
 
-That number is important.
+That number changed on 27 July 2026.
 
-But it is not the whole rule.
+And it is still not the whole rule.
 
 <div class="cs-intro">
 <p class="cs-kicker">Quick answer</p>
