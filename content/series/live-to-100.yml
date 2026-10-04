@@ -20,8 +20,8 @@ parts:
     status: published
     path: /health/health-for-a-100-year-life/
   - order: 4
-    title: Happiness for a 100-Year Life
+    title: Life for a 100-Year Life
     description: Connection and purpose
     pillar: happiness
     status: published
-    path: /happiness/happiness-for-a-100-year-life/
+    path: /life/happiness-for-a-100-year-life/
