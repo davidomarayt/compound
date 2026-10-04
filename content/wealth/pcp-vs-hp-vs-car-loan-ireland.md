@@ -677,7 +677,7 @@ Then record:
 7. what restrictions apply if you return it; and
 8. what happens if you need to exit early.
 
-Then run the exact figures through the [Car Finance Calculator](/car-finance-calculator/).
+Then run the exact figures through the [Car Finance Calculator](/car-finance-calculator/). If the decision is also about drivetrain, compare the running-cost and ownership trade-offs in [EV vs Petrol vs Diesel in Ireland](/wealth/ev-vs-petrol-vs-diesel-ireland/).
 
 That turns a question that often looks like:
 
