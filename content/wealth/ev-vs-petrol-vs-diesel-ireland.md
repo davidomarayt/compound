@@ -17,7 +17,6 @@ related_tools:
   - fuel-cost-calculator
   - lifetime-cost-calculator
   - car-finance-calculator
-  - electricity-cost-calculator
 social:
   enabled: true
   url: https://compound.ie/wealth/ev-vs-petrol-vs-diesel-ireland/
