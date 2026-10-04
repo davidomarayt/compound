@@ -258,6 +258,14 @@ def _local_photo_for(meta: dict[str, Any]) -> dict[str, str]:
                 selected["alt"] = "Illustrative planning paperwork and documents photograph"
                 return selected
 
+    estate_keywords = ("will", "wills", "probate", "executor", "intestate", "inheritance", "estate-planning", "succession")
+    if any(k in haystack for k in estate_keywords):
+        for item in pool:
+            if item["file"] == "tax-paperwork.jpg":
+                selected = dict(item)
+                selected["alt"] = "Illustrative legal and estate-planning paperwork photograph"
+                return selected
+
     keyword_preferences = [
         (("sleep", "bedtime"), "adult-sleep.jpg"),
         (("protein", "nutrition", "vitamin", "food", "macro", "creatine"), "nutrition.jpg"),
