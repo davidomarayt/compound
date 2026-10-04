@@ -54,6 +54,8 @@ This is one of the most important distinctions in the process.
 
 A clean valuation does not mean the house is structurally sound.
 
+If the survey identifies an extension, converted garage, outbuilding or other alteration, the next question is often planning status. Our [Planning Permission in Ireland guide](/wealth/planning-permission-ireland/) explains the difference between permission, exempted development, Section 5 declarations and retention.
+
 A valuer can support a €400,000 value even if the roof will need significant work.
 
 ## The lender valuation
