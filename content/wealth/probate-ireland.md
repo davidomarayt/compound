@@ -447,6 +447,8 @@ But it is not available for every estate.
 
 ## Probate fees in Ireland
 
+For a full breakdown of court fees, solicitor charges, valuations, conveyancing and worked estate examples, see [Probate Costs & Fees in Ireland](/wealth/probate-costs-fees-ireland/).
+
 Court fees depend on the route and the net value of the estate.
 
 ### Solicitor applications
@@ -947,7 +949,7 @@ Start with:
 Next satellites should cover:
 
 - [Executor of a Will in Ireland: Duties & Responsibilities](/wealth/executor-of-a-will-ireland/);
-- Probate Costs & Fees;
+- [Probate Costs & Fees in Ireland](/wealth/probate-costs-fees-ireland/);
 - How Long Probate Takes;
 - Applying for Probate Yourself vs Using a Solicitor;
 - Spouse & Civil Partner Legal Right Share;
