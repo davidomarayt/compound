@@ -729,3 +729,20 @@ assert.ok(debtAvalanche.schedule.at(-1) <= 0.005);
 assert.equal(debtAvalanche.payoffOrder.length, 3);
 
 console.log('Calculator arithmetic regression checks passed.');
+
+
+const glp1CostDirect = calculators.glp1_cost({
+  medication: 'mounjaro', medicine_cost: 250, price_period: 'four_weeks',
+  treatment_months: 12, consultation_cost: 50, consultations_per_year: 4,
+  initial_fee: 100, blood_test_cost: 75, blood_tests_per_year: 2,
+  other_monthly: 10, __advanced: true
+});
+assert.equal(glp1CostDirect.total_cost, '€3,820.00');
+assert.equal(glp1CostDirect.selected_medication, 'Mounjaro (tirzepatide)');
+assert.equal(glp1CostDirect.billing_cycles, '13 4-week periods');
+assert.equal(glp1CostDirect.medicine_spend, '€3,250.00');
+assert.equal(glp1CostDirect.consultation_spend, '€200.00');
+assert.equal(glp1CostDirect.extra_spend, '€370.00');
+assert.equal(glp1CostDirect.average_monthly, '€318.33');
+assert.equal(glp1CostDirect.annualised_cost, '€3,820.00');
+assert.equal(glp1CostDirect.four_week_equivalent, '€293.85');
