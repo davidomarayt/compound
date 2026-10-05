@@ -415,7 +415,7 @@ Our [saving for your child in Ireland](/wealth/saving-for-your-child-ireland/) g
 
 Who legally owns a property, bank account, investment or business interest can affect what passes through an estate and how.
 
-Estate planning is therefore wider than the CAT calculation.
+Estate planning is therefore wider than the CAT calculation. If you are dealing with an estate after a death, [Probate in Ireland: Complete Guide](/wealth/probate-ireland/) explains the grant process, SA.2, fees and current timelines.
 
 ### 5. Check reliefs before a transfer happens
 
