@@ -771,7 +771,7 @@ It depends on:
 
 An intestate estate can sometimes take longer than a comparable estate with a clear valid will because somebody first has to establish who is entitled to administer and inherit.
 
-Our forthcoming **Probate in Ireland** guide will cover timelines and grant processes in detail.
+Our [Probate in Ireland: Complete Guide](/wealth/probate-ireland/) covers grant types, Revenue's SA.2, fees, processing times and what happens after a grant issues.
 
 ## Is dying without a will cheaper?
 
@@ -844,7 +844,7 @@ Then use this page for the no-will scenario.
 
 The next satellites will cover:
 
-- Probate in Ireland;
+- [Probate in Ireland: Complete Guide](/wealth/probate-ireland/);
 - Executor and administrator duties;
 - Probate costs and fees;
 - How long probate takes;
