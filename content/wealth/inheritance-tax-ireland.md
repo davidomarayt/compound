@@ -49,7 +49,7 @@ sources:
 
 If you inherit money, investments, land or a house in Ireland, the tax people usually mean by **inheritance tax** is **Capital Acquisitions Tax (CAT)**.
 
-If you are planning your own estate rather than dealing with an inheritance you have received, start with [How to Make a Will in Ireland](/wealth/how-to-make-a-will-ireland/) and then use this guide for the tax consequences.
+If you are planning your own estate rather than dealing with an inheritance you have received, start with [How to Make a Will in Ireland](/wealth/how-to-make-a-will-ireland/) and then use this guide for the tax consequences. If no valid will exists, [What Happens If You Die Without a Will in Ireland?](/wealth/what-happens-if-you-die-without-a-will-ireland/) explains the statutory inheritance order.
 
 The headline numbers are simple. The calculation often is not.
 
