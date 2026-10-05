@@ -845,7 +845,7 @@ Then use this page for the no-will scenario.
 The next satellites will cover:
 
 - [Probate in Ireland: Complete Guide](/wealth/probate-ireland/);
-- Executor and administrator duties;
+- [Executor of a Will in Ireland: Duties & Responsibilities](/wealth/executor-of-a-will-ireland/);
 - Probate costs and fees;
 - How long probate takes;
 - applying personally versus using a solicitor;
