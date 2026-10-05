@@ -828,7 +828,7 @@ The executor then:
 
 Some jointly held assets can pass outside probate.
 
-Our dedicated **Probate in Ireland** guide will cover this process in detail.
+Our dedicated [Probate in Ireland: Complete Guide](/wealth/probate-ireland/) covers the grant types, SA.2 process, current fees, personal applications and processing times.
 
 ## What if there is no will?
 
@@ -844,7 +844,7 @@ That can be particularly important for:
 - people who wanted friends or charities to inherit;
 - business owners.
 
-A future satellite in this cluster will cover the intestacy rules in full.
+For the full no-will scenario, read [What Happens If You Die Without a Will in Ireland?](/wealth/what-happens-if-you-die-without-a-will-ireland/).
 
 ## Common mistakes when making a will
 
@@ -925,7 +925,7 @@ This guide is the starting point.
 The next satellite pages should answer separate high-intent questions rather than repeating this article:
 
 - **[What Happens If You Die Without a Will in Ireland?](/wealth/what-happens-if-you-die-without-a-will-ireland/)**
-- **Probate in Ireland: Complete Guide**
+- **[Probate in Ireland: Complete Guide](/wealth/probate-ireland/)**
 - **Executor of a Will in Ireland: Duties & Responsibilities**
 - **Probate Costs & Fees in Ireland**
 - **How Long Does Probate Take in Ireland?**
