@@ -37,6 +37,7 @@ jobs:
         env:
           SITE_BASE_URL: https://compound.ie
           PREVIEW_BASE_URL: https://compound.ie
+          COMPOUND_AUDIT_MODE: "1"
       - name: Run Lighthouse CI against representative mobile pages
         id: lighthouse
         continue-on-error: true
