@@ -608,6 +608,10 @@ button {
 .footer-bottom nav {
   display:flex;
   gap:20px}
+.footer-top nav a,.footer-bottom nav a {
+  min-height:44px;
+  display:inline-flex;
+  align-items:center}
 .footer-disclaimer {
   font-size:10px;
   line-height:1.8;
