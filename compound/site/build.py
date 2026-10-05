@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import math
+import os
 import re
 from html import escape as html_escape, unescape as html_unescape
 from urllib.parse import urlparse
@@ -919,7 +920,13 @@ def _env(settings: Settings) -> Environment:
     env = Environment(loader=FileSystemLoader(str(HERE / "templates")), autoescape=select_autoescape(["html"]))
     env.filters["long_date"] = long_date
     site_cfg = load_site_config(settings.content_dir)
-    env.globals.update(adsense=site_cfg["adsense"])
+    audit_mode = os.environ.get("COMPOUND_AUDIT_MODE", "").lower() in {"1", "true", "yes"}
+    adsense_cfg = site_cfg["adsense"]
+    if audit_mode:
+        # Lighthouse should measure Compound's own frontend, not third-party ad cookies/issues.
+        # Production builds do not set COMPOUND_AUDIT_MODE, so live AdSense is unchanged.
+        adsense_cfg = {"client": "", "slots": {"article_top": "", "article_bottom": "", "feed": ""}}
+    env.globals.update(adsense=adsense_cfg)
     env.globals.update(analytics=site_cfg["analytics"])
     env.globals.update(
         site_url=settings.site_base_url,
