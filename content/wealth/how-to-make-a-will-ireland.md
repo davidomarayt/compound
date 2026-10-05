@@ -924,7 +924,7 @@ This guide is the starting point.
 
 The next satellite pages should answer separate high-intent questions rather than repeating this article:
 
-- **What Happens If You Die Without a Will in Ireland?**
+- **[What Happens If You Die Without a Will in Ireland?](/wealth/what-happens-if-you-die-without-a-will-ireland/)**
 - **Probate in Ireland: Complete Guide**
 - **Executor of a Will in Ireland: Duties & Responsibilities**
 - **Probate Costs & Fees in Ireland**
