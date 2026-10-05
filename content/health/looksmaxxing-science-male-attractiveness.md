@@ -51,10 +51,8 @@ sources:
 
 <figure class="looks-david">
 <img
-  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Galleria_dell%27Accademia_Michelangelo%E2%80%99s_David%2C_Florence_2019_-_48170171006.jpg/1920px-Galleria_dell%27Accademia_Michelangelo%E2%80%99s_David%2C_Florence_2019_-_48170171006.jpg"
-  srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Galleria_dell%27Accademia_Michelangelo%E2%80%99s_David%2C_Florence_2019_-_48170171006.jpg/960px-Galleria_dell%27Accademia_Michelangelo%E2%80%99s_David%2C_Florence_2019_-_48170171006.jpg 960w, https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Galleria_dell%27Accademia_Michelangelo%E2%80%99s_David%2C_Florence_2019_-_48170171006.jpg/1920px-Galleria_dell%27Accademia_Michelangelo%E2%80%99s_David%2C_Florence_2019_-_48170171006.jpg 1920w, https://upload.wikimedia.org/wikipedia/commons/0/07/Galleria_dell%27Accademia_Michelangelo%E2%80%99s_David%2C_Florence_2019_-_48170171006.jpg 3703w"
-  sizes="(max-width: 760px) 100vw, 980px"
-  width="1920" height="2880"
+  src="https://upload.wikimedia.org/wikipedia/commons/0/07/Galleria_dell%27Accademia_Michelangelo%E2%80%99s_David%2C_Florence_2019_-_48170171006.jpg"
+  width="3703" height="5554"
   alt="Michelangelo's marble statue David, shown from the front in the Galleria dell'Accademia."
   decoding="async" fetchpriority="high">
 <div class="looks-david-overlay"><span>1504 → 2026</span><strong>The male ideal is old. The scoring system is new.</strong></div>
