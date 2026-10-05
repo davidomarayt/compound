@@ -1051,16 +1051,16 @@ def build_site(settings: Settings) -> dict:
         feed = [a for a in arts if a is not pinned]
         columns[p] = {"pinned": pinned, "feed": feed[:8]}
 
-    # Homepage authority is concentrated on up to ten SEO-priority evergreen pages per pillar.
+    # Homepage authority is concentrated on up to four SEO-priority evergreen pages per pillar.
     # Pillar pages still receive the complete evergreen archive.
     home_by_pillar = {}
     for p in PILLARS:
         available = {a.slug: a for a in by_pillar[p]}
         selected = [available[slug] for slug in HOME_SEO_PRIORITY.get(p, []) if slug in available]
-        if len(selected) < 10:
+        if len(selected) < 4:
             selected_slugs = {a.slug for a in selected}
             selected.extend(a for a in by_pillar[p] if a.slug not in selected_slugs)
-        home_by_pillar[p] = selected[:10]
+        home_by_pillar[p] = selected[:4]
 
     # Interleave the selected pages so template filtering preserves the curated order in each column.
     home_articles = []
