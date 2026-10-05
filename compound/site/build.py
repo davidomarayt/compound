@@ -943,6 +943,7 @@ def _redirect_html(target: str) -> str:
     safe_target = html_escape(target, quote=True)
     return (
         "<!doctype html><html><head><meta charset=\"utf-8\">"
+        "<meta name=\"robots\" content=\"noindex,follow\">"
         f"<link rel=\"canonical\" href=\"{safe_target}\">"
         f"<meta http-equiv=\"refresh\" content=\"0; url={safe_target}\">"
         f"<script>location.replace({json.dumps(target)})</script>"
