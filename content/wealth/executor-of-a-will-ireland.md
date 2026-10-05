@@ -922,7 +922,7 @@ Use these guides together:
 
 Next useful satellites include:
 
-- Probate Costs & Fees;
+- [Probate Costs & Fees in Ireland](/wealth/probate-costs-fees-ireland/);
 - How Long Probate Takes;
 - Applying for Probate Yourself vs Using a Solicitor;
 - Spouse & Civil Partner Legal Right Share;
