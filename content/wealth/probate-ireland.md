@@ -110,7 +110,7 @@ Used where:
 - there is a valid will; and
 - an executor named in the will is applying.
 
-The executor is the person appointed by the will to administer the estate.
+The executor is the person appointed by the will to administer the estate. Our [Executor of a Will in Ireland](/wealth/executor-of-a-will-ireland/) guide covers the role and duties in detail.
 
 ### Grant of Administration Intestate
 
@@ -946,7 +946,7 @@ Start with:
 
 Next satellites should cover:
 
-- Executor of a Will in Ireland;
+- [Executor of a Will in Ireland: Duties & Responsibilities](/wealth/executor-of-a-will-ireland/);
 - Probate Costs & Fees;
 - How Long Probate Takes;
 - Applying for Probate Yourself vs Using a Solicitor;
