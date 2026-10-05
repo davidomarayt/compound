@@ -945,7 +945,6 @@ def _redirect_html(target: str) -> str:
         "<!doctype html><html><head><meta charset=\"utf-8\">"
         f"<link rel=\"canonical\" href=\"{safe_target}\">"
         f"<meta http-equiv=\"refresh\" content=\"0; url={safe_target}\">"
-        "<meta name=\"robots\" content=\"noindex,follow\">"
         f"<script>location.replace({json.dumps(target)})</script>"
         "</head><body>"
         f"<p>This page has moved to <a href=\"{safe_target}\">{safe_target}</a>.</p>"
@@ -1085,7 +1084,13 @@ def build_site(settings: Settings) -> dict:
         articles=news_articles, title="Latest News for Ireland", news=True, ads_allowed=False))
 
     for p in PILLARS:
-        _write(out / p / "index.html", env.get_template("pillar.html").render(pillar=p, articles=by_pillar[p], title=PILLAR_LABELS[p]))
+        if p == "happiness":
+            # Public branding moved from /happiness/ to /life/. Keep the legacy
+            # route only as a permanent-style client redirect so search engines
+            # consolidate historical signals onto the public Life URL.
+            _write(out / "happiness" / "index.html", _redirect_html("/life/"))
+            continue
+        _write(out / PILLAR_PUBLIC_SLUGS[p] / "index.html", env.get_template("pillar.html").render(pillar=p, articles=by_pillar[p], title=PILLAR_LABELS[p]))
 
     tag_map: dict[str, list[Article]] = {}
     for a in articles:
