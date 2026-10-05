@@ -826,6 +826,8 @@ The executor then:
 6. pays debts/tax;
 7. distributes the estate.
 
+Our [Executor of a Will in Ireland](/wealth/executor-of-a-will-ireland/) guide explains the role, personal liability, estate accounts, property sales, renunciation and distribution in detail.
+
 Some jointly held assets can pass outside probate.
 
 Our dedicated [Probate in Ireland: Complete Guide](/wealth/probate-ireland/) covers the grant types, SA.2 process, current fees, personal applications and processing times.
@@ -926,7 +928,7 @@ The next satellite pages should answer separate high-intent questions rather tha
 
 - **[What Happens If You Die Without a Will in Ireland?](/wealth/what-happens-if-you-die-without-a-will-ireland/)**
 - **[Probate in Ireland: Complete Guide](/wealth/probate-ireland/)**
-- **Executor of a Will in Ireland: Duties & Responsibilities**
+- **[Executor of a Will in Ireland: Duties & Responsibilities](/wealth/executor-of-a-will-ireland/)**
 - **Probate Costs & Fees in Ireland**
 - **How Long Does Probate Take in Ireland?**
 - **Applying for Probate Yourself vs Using a Solicitor**
