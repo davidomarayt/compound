@@ -929,7 +929,7 @@ The next satellite pages should answer separate high-intent questions rather tha
 - **[What Happens If You Die Without a Will in Ireland?](/wealth/what-happens-if-you-die-without-a-will-ireland/)**
 - **[Probate in Ireland: Complete Guide](/wealth/probate-ireland/)**
 - **[Executor of a Will in Ireland: Duties & Responsibilities](/wealth/executor-of-a-will-ireland/)**
-- **Probate Costs & Fees in Ireland**
+- **[Probate Costs & Fees in Ireland](/wealth/probate-costs-fees-ireland/)**
 - **How Long Does Probate Take in Ireland?**
 - **Applying for Probate Yourself vs Using a Solicitor**
 - **Spouse & Civil Partner Legal Right Share**
