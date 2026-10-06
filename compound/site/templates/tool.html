@@ -9,6 +9,7 @@
 {% endblock %}
 {% block content %}
 <article class="tool-page" data-calculator="{{ tool.formula }}" data-tool-name="{{ tool.slug }}">
+  <div id="tool-interaction-zone" class="tool-interaction-zone">
   <header class="tool-page-header">
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/tools/">Tools</a></nav>
     <p class="eyebrow">{{ tool.category|upper }}</p><h1>{{ tool.title }}</h1><p class="tool-standfirst">{{ tool.summary }}</p>
@@ -98,6 +99,7 @@
     <article><span>02</span><h3>Stress-test it</h3><p>Change the assumptions that matter most instead of relying on one perfect-looking result.</p></article>
     <article><span>03</span><h3>Read the context</h3><p>Use the methodology, Irish rules and limitations below before acting on the estimate.</p></article>
   </section>
+  </div>
   <section class="tool-explainer">
     <div class="tool-explainer-main">
       {% if tool.guide_toc %}
