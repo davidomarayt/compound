@@ -150,6 +150,7 @@ TOOL_PRIMARY_RESULTS = {
     "regular-savings-calculator": "final",
     "pension-tax-relief-calculator": "relief",
     "capital-gains-tax-calculator": "tax",
+    "pia-calculator": "projected_balance",
     "vat-calculator": "vat",
     "inflation-calculator": "future_cost",
     "emergency-fund-calculator": "target",
