@@ -5,7 +5,7 @@ slug: how-to-start-investing-in-ireland
 news_image_query: "investing financial planning laptop notebook Irish household"
 pillar: wealth
 date: 2026-09-23
-reviewed: 2026-09-25
+reviewed: 2026-10-06
 summary: 'Investing in Ireland 101: a nine-chapter beginner course covering preparation, pensions, shares and ETFs, Irish investment tax, diversification, brokers, fees, monthly investing and portfolio maintenance.'
 meta_description: 'Learn how to start investing in Ireland with a practical 9-chapter beginner course covering pensions, ETFs, shares, Irish tax, brokers, fees and diversification.'
 tags: [investing, ireland, beginners, etfs, shares, pensions, tax, wealth]
@@ -61,6 +61,8 @@ For an Irish investor, that system begins with four questions:
 Only after those questions are answered does the product choice become useful.
 
 This course takes you through that process in order. It is designed for someone starting from zero, but each chapter also works as a standalone reference.
+
+> **New for 2027:** Ireland is introducing a new investment wrapper. Our [Personal Investment Account Ireland (PIA) guide](/wealth/personal-investment-account-ireland/) explains the €50,000 threshold, 1% annual charge above it, €12,000 contribution limit, eligible ETFs and shares, and the rules still awaiting legislation.
 
 <div class="course-start">
 <div>
