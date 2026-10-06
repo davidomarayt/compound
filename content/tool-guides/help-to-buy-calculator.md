@@ -1,3 +1,9 @@
+## Budget 2027 Help to Buy increase
+
+Budget 2027 announced an increase in the maximum Help to Buy refund from **€30,000 to €35,000**. The calculator now defaults to the €35,000 cap while retaining the previous €30,000 cap for comparison.
+
+The other core numerical constraints remain visible in the tool: the refund is still limited by the percentage-of-property-value test and by qualifying Income Tax and DIRT paid. The property-value and qualifying-finance checks also still matter.
+
 ## What this calculator is for
 
 Help to Buy (HTB) is a Revenue tax-refund scheme for eligible first-time purchasers and self-builders buying or building a qualifying new home in Ireland. It is not a flat grant. The amount available depends on the property value, the qualifying finance used for the purchase and the Income Tax and DIRT actually paid by the applicants in the four tax years before the application.
@@ -8,7 +14,7 @@ This calculator brings those numerical limits together so you can see which one 
 
 The headline refund is an **indicative maximum**, not an approval. Under the enhanced HTB rules, the refund is limited to the lowest of:
 
-- **€30,000**;
+- **€35,000**;
 - **10% of the qualifying property value**; or
 - the qualifying **Income Tax and DIRT paid in the previous four tax years**.
 
@@ -22,7 +28,7 @@ Assume a first-time buyer is purchasing a qualifying new home for **€400,000**
 
 The mortgage is 75% of the property value, so the 70% finance test is met. The three refund limits are:
 
-- statutory maximum: €30,000;
+- statutory maximum: €35,000;
 - 10% of €400,000: €40,000;
 - qualifying tax paid: €24,000.
 
@@ -44,7 +50,7 @@ For example, on a €400,000 qualifying property, a €260,000 mortgage alone is
 
 HTB is aimed at qualifying **new homes and self-builds**. It is not a general first-time-buyer payment for second-hand homes. The buyer, property, developer or contractor, mortgage and tax-compliance conditions all matter.
 
-The enhanced HTB measure has been extended to **31 December 2029**. That does not mean every application through 2029 will qualify for €30,000: the percentage cap, tax-paid cap and the rest of the eligibility rules still apply.
+The enhanced HTB measure has been extended to **31 December 2029**. That does not mean every application through 2029 will qualify for €35,000: the percentage cap, tax-paid cap and the rest of the eligibility rules still apply.
 
 The Revenue application process remains the authoritative test. A calculator cannot verify whether the applicants are first-time buyers, whether a developer or contractor is qualifying, whether the loan is from a qualifying lender, whether the applicants are tax compliant, or whether Revenue's occupancy and clawback rules will be satisfied.
 
@@ -74,7 +80,7 @@ A couple does not simply receive twice the headline cap. The refund remains subj
 
 ## Common mistakes to avoid
 
-Do not treat €30,000 as an automatic entitlement. Do not count a First Home Scheme equity contribution towards the HTB 70% mortgage test. Do not use the current market value of a second-hand home as though it were a qualifying HTB property. And do not spend against an estimated refund before the Revenue process confirms the claim.
+Do not treat €35,000 as an automatic entitlement. Do not count a First Home Scheme equity contribution towards the HTB 70% mortgage test. Do not use the current market value of a second-hand home as though it were a qualifying HTB property. And do not spend against an estimated refund before the Revenue process confirms the claim.
 
 For a complete buying budget, also keep the deposit separate from legal fees, stamp duty, surveys, valuation and moving costs. The [House Buying Costs Calculator](/house-buying-costs-calculator/) is designed for that wider cash requirement.
 
@@ -113,7 +119,7 @@ The basic numerical screen requires the property value to be no more than €500
 
 If those screens are passed, the indicative refund is:
 
-**minimum of €30,000, 10% of property value, and qualifying Income Tax + DIRT entered**
+**minimum of the selected €35,000/€30,000 scheme cap, 10% of property value, and qualifying Income Tax + DIRT entered**
 
 No First Home Scheme equity is added to qualifying finance. The calculator does not validate first-time-buyer status, the nature of the property, qualifying-lender status, developer/contractor status, tax compliance, occupancy, application dates, Revenue records or clawback exposure.
 
