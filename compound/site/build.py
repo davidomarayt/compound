@@ -1223,12 +1223,10 @@ def build_site(settings: Settings) -> dict:
             ]
             tool_jsonld = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
             tool_template = "debt_repayment.html" if tool["slug"] == "debt-repayment-calculator" else "tool.html"
-            ad_free_tool_slugs = {"budget-2027-calculator", "employer-cost-calculator"}
             _write(out / tool["slug"] / "index.html", env.get_template(tool_template).render(
                 title=tool["title"], tool=tool, related_tools=related_tools,
                 related_articles=linked_articles(tool["slug"], articles),
-                tool_jsonld=tool_jsonld, pillar="wealth", tools_page=True,
-                ads_allowed=tool["slug"] not in ad_free_tool_slugs))
+                tool_jsonld=tool_jsonld, pillar="wealth", tools_page=True))
 
     calculator_path = "/compound-interest-calculator/"
     has_calculator = (settings.content_dir / "compound-calculator-guide.md").is_file()
