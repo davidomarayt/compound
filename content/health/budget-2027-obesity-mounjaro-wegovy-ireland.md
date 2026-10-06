@@ -3,11 +3,15 @@ title: 'Budget 2027 gives health €29.1bn. So why aren’t Mounjaro and Wegovy 
 seo_title: 'Budget 2027, Mounjaro & Wegovy: Why Obesity Drugs Aren’t Funded'
 slug: budget-2027-obesity-mounjaro-wegovy-ireland
 pillar: health
+canonical_path: /news/budget-2027-obesity-mounjaro-wegovy-ireland/
 date: '2026-10-06'
-draft: true
+reviewed: '2026-10-06'
+draft: false
+publication_status: published
 summary: 'Ireland is spending €29.1bn on health in 2027, while obesity already carries a major healthcare and economic cost. So why are newer weight-loss medicines still largely private? The answer is in the scale of the reimbursement bill.'
 meta_description: 'Budget 2027 gives Irish health €29.1bn. We examine Mounjaro and Wegovy funding, obesity costs in Ireland, and the NCPE’s €5.23bn budget-impact estimate.'
-tags: [budget-2027, glp-1, obesity, mounjaro, wegovy, medicines, irish-healthcare]
+tags: [news, budget-2027, glp-1, obesity, mounjaro, wegovy, medicines, irish-healthcare, ireland]
+news_image_query: "weight loss injection pen healthcare medicine prescription obesity treatment"
 related_tools:
 - weight-loss-calculator
 - bmi-calculator
