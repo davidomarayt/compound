@@ -159,6 +159,18 @@ const fire = calculators.fire_number({
 assert.equal(fire.target, '€900,000.00');
 assert.equal(fire.real_return, '3.92%');
 
+// PIA: a flat €100k average account with no contributions or growth has a €500 annual charge
+// because only the €50k above the announced threshold is charged at 1%.
+const pia = calculators.pia({
+  current_balance: 100000, annual_contribution: 0, years: 1,
+  return_rate: 0, annual_fee: 0, inflation_rate: 0, __advanced: false
+});
+assert.equal(pia.projected_balance, '€99,500.00');
+assert.equal(pia.total_pia_tax, '€500.00');
+assert.equal(pia.first_tax_year, 'Year 1');
+assert.equal(pia.final_year_average, '€100,000.00');
+assert.equal(pia.final_year_tax, '€500.00');
+
 // Investment fees are applied multiplicatively to the annual growth factor.
 const fee = calculators.investment_fees({
   initial: 25000, monthly: 500, gross_return: 7, fee_low: 0.25, fee_high: 1.5, years: 25
