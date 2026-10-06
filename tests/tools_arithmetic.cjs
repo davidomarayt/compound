@@ -740,6 +740,68 @@ assert.equal(debtAvalanche.schedule[0], 7900);
 assert.ok(debtAvalanche.schedule.at(-1) <= 0.005);
 assert.equal(debtAvalanche.payoffOrder.length, 3);
 
+
+// Budget 2027: new rates and thresholds retain explicit historical modes.
+const cgt2027 = calculators.cgt({
+  sale: 30000, purchase: 15000, costs: 0, losses: 0, exemption_used: 0,
+  disposal_period: 'after', asset_type: 'standard', __advanced: true
+});
+assert.equal(cgt2027.rate_applied, '31%');
+assert.equal(cgt2027.tax, '€4,256.30');
+
+const cat2027 = calculators.cat({
+  benefit: 500000, prior: 0, group: 'A', benefit_type: 'inheritance',
+  benefit_period: 'after', small_gift_used: 0, __advanced: false
+});
+assert.equal(cat2027.threshold, '€420,000.00');
+assert.equal(cat2027.cat, '€26,400.00');
+
+const htb2027 = calculators.help_to_buy({
+  property_value: 400000, mortgage: 300000, tax_paid: 35000,
+  tax_year: '2027', la_affordable_contribution: 0, __advanced: false
+});
+assert.equal(htb2027.scheme_cap, '€35,000.00');
+assert.equal(htb2027.claim, '€35,000.00');
+
+const rentCredit2027 = calculators.rent_credit({
+  rent: 12000, joint: 'no', income_tax_liability: 5000, tax_year: '2027'
+});
+assert.equal(rentCredit2027.credit, '€1,150.00');
+
+const incomeTax2027Direct = calculators.income_tax_2027({
+  income: 60000, pension: 0, band: 46500, credits: 4250, __advanced: false
+});
+assert.equal(incomeTax2027Direct.final_tax, '€10,450.00');
+
+const usc2027Direct = calculators.usc_2027({
+  income: 60000, reduced_rate: 'no', __advanced: false
+});
+assert.equal(usc2027Direct.usc, '€1,316.82');
+
+const takeHome2027Direct = calculators.take_home_2027({
+  salary: 60000, pension_pct: 0, band: 46500, other_credits: 0,
+  usc_reduced: 'no', __advanced: false
+});
+assert.equal(takeHome2027Direct.annual_net, '€45,600.68');
+assert.equal(takeHome2027Direct.monthly_net, '€3,800.06');
+
+const budget2027 = calculators.budget_2027({
+  household: 'single', income1: 60000, income2: 0, rent: 0,
+  childcare_children: 0, childcare_monthly: 735,
+  welfare_payments: 0, disability_payment: 'no', __advanced: false
+});
+assert.equal(budget2027.annual_better_off, '+€676.00');
+assert.equal(budget2027.monthly_better_off, '+€56.33');
+
+const employer2027 = calculators.employer_cost_2027({
+  salary: 30298.32, weekly_hours: 39, employer_pension: 0, other_costs: 0, __advanced: false
+});
+assert.equal(employer2027.weekly_pay, '€582.66');
+assert.equal(employer2027.minimum_wage_check, 'At or above €14.94/hour');
+assert.equal(employer2027.employer_prsi, '€2,783.66');
+assert.equal(employer2027.threshold_saving, '€681.71');
+assert.equal(employer2027.total_cost, '€33,081.98');
+
 console.log('Calculator arithmetic regression checks passed.');
 
 
