@@ -1,18 +1,24 @@
+## Budget 2027 CGT rate change
+
+Budget 2027 reduced the **standard Capital Gains Tax rate from 33% to 31% for standard disposals on or after 7 October 2026**. Development land remains subject to 33%, and the earlier 33% standard rate remains relevant to disposals before the change.
+
+The calculator now asks for the rate basis instead of silently applying one rate to every disposal. The €1,270 individual annual exemption remains part of the simplified calculation.
+
 ## What this calculator is for
 
 This calculator estimates Capital Gains Tax on a straightforward disposal by an individual, starting with sale proceeds, acquisition cost, allowable costs and losses, then applying the annual personal exemption and the standard CGT rate.
 
 ## How to read the result
 
-The most important distinction is between **sale proceeds** and the **chargeable gain**. CGT is not normally 33% of the amount you sell an asset for; it applies to the taxable gain after allowable deductions and reliefs.
+The most important distinction is between **sale proceeds** and the **chargeable gain**. CGT is not normally 31% or 33% of the amount you sell an asset for; it applies to the taxable gain after allowable deductions and reliefs.
 
 ## Worked example
 
-If an asset bought for €20,000 is sold for €30,000 and there are €1,000 of allowable acquisition/disposal costs, the starting gain is €9,000. After the €1,270 annual exemption, the simple taxable amount would be €7,730, giving €2,550.90 at 33% before considering any other losses or reliefs.
+If an asset bought for €20,000 is sold for €30,000 and there are €1,000 of allowable acquisition/disposal costs, the starting gain is €9,000. After the €1,270 annual exemption, the simple taxable amount would be €7,730, giving €2,396.30 at the 31% standard rate applying to a standard disposal on or after 7 October 2026 before considering any other losses or reliefs.
 
 ## Irish context
 
-Revenue states that the standard CGT rate is 33% for most gains and that individuals have an annual personal exemption of €1,270. Different rates and reliefs can apply to particular assets and circumstances.
+Budget 2027 reduced the standard CGT rate to 31% for standard disposals on or after 7 October 2026. Development land remains at 33%, while individuals continue to have an annual personal exemption of €1,270. Different rates and reliefs can apply to particular assets and circumstances.
 
 ## What can change the answer
 
@@ -20,7 +26,7 @@ Allowable costs, carried-forward capital losses, enhancement expenditure, relief
 
 ## Common mistakes to avoid
 
-Do not calculate CGT as sale price × 33%. Do not deduct ordinary running costs that are not allowable capital expenses. Do not assume losses can be used against every type of income. And do not forget that filing obligations can exist even when tax is low or nil.
+Do not calculate CGT as sale price multiplied by the headline rate. Do not deduct ordinary running costs that are not allowable capital expenses. Do not assume losses can be used against every type of income. And do not forget that filing obligations can exist even when tax is low or nil.
 
 ## Related Compound tools
 
@@ -60,7 +66,7 @@ The extra results also separate losses used in this disposal from entered losses
 
 ## Separate the gain calculation from the tax-product question
 
-Before using 33% as the answer, first ask whether the asset is actually taxed under the ordinary Irish CGT regime. Shares and many directly held assets can fall within CGT, but some investment funds, ETFs, life policies and other products can be subject to different tax regimes. A mathematically correct CGT calculation applied to the wrong tax regime is still the wrong answer.
+Before using 31% or 33% as the answer, first ask whether the asset is actually taxed under the ordinary Irish CGT regime. Shares and many directly held assets can fall within CGT, but some investment funds, ETFs, life policies and other products can be subject to different tax regimes. A mathematically correct CGT calculation applied to the wrong tax regime is still the wrong answer.
 
 The calculator therefore works best after you have identified that ordinary CGT treatment is appropriate for the disposal being modelled. If the asset structure is unusual, verify the treatment with Revenue or a qualified adviser before relying on the estimate.
 
@@ -86,7 +92,7 @@ Revenue states that the standard CGT rate is 33% for most gains and that individ
 
 ## Method and limitations
 
-The tool calculates sale proceeds minus purchase cost and entered allowable costs, subtracts entered losses and the €1,270 annual exemption, then applies 33% to the remaining taxable gain. It does not model every relief, rate or product-specific tax regime.
+The tool calculates sale proceeds minus purchase cost and entered allowable costs, subtracts entered losses and the €1,270 annual exemption, then applies the selected 31% or 33% rate to the remaining taxable gain. It does not model every relief, rate or product-specific tax regime.
 
 ### Useful sources
 
