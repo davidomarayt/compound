@@ -13,9 +13,9 @@ meta_description: "Personal Investment Account Ireland (PIA): how the €50,000 
 tags: [personal-investment-account, pia-account, pia-ireland, investment-account, savings-investment-account, investing, etfs, tax, budget-2027, ireland]
 pexels_photo_id: 34016390
 related_tools:
+  - pia-calculator
   - compound-interest-calculator
   - investment-fee-calculator
-  - capital-gains-tax-calculator
   - regular-savings-calculator
 news_image_query: "Irish person investing at home laptop investment portfolio euro financial planning natural light"
 sources:
@@ -242,7 +242,9 @@ These are illustrations using the announced rate and threshold. They are **not**
 
 <h2 id="pia-tax-calculator">Personal Investment Account tax calculator</h2>
 
-Use this calculator to see the annual PIA charge under the **Budget 2027 headline formula**.
+For a full projection including contributions, investment growth, the year you may first cross the €50,000 threshold, cumulative PIA tax, provider fees and the long-run balance impact, use Compound's standalone **[PIA Calculator Ireland](/pia-calculator/)**.
+
+The quick calculator below estimates the annual PIA charge under the **Budget 2027 headline formula** from a single illustrative average account value.
 
 <div class="investing-tool pia-calculator" data-pia-calculator>
 <p class="cs-kicker">PIA annual tax calculator</p>
