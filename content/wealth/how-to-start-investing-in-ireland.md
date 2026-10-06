@@ -67,7 +67,6 @@ This course takes you through that process in order. It is designed for someone 
 Ireland's new PIA is planned for 1 July 2027 with a €12,000 annual contribution limit, a €50,000 threshold and a 1% annual charge above it. Read our continuously updated [Personal Investment Account Ireland guide](/wealth/personal-investment-account-ireland/) for the Budget 2027 rules, ETFs, withdrawals, providers and outstanding Finance Bill details.
 </div>
 
-> **New for 2027:** Ireland is introducing a new investment wrapper. Our [Personal Investment Account Ireland (PIA) guide](/wealth/personal-investment-account-ireland/) explains the €50,000 threshold, 1% annual charge above it, €12,000 contribution limit, eligible ETFs and shares, and the rules still awaiting legislation.
 
 <div class="course-start">
 <div>
