@@ -154,6 +154,8 @@ That means two investments with similar market exposure can have different after
 
 Read [Investment Tax in Ireland](/wealth/investment-tax-ireland/) before choosing a product solely on its pre-tax return or fee.
 
+From 1 July 2027, the planned [Personal Investment Account (PIA)](/wealth/personal-investment-account-ireland/) is due to add a new wrapper for eligible shares, funds and ETFs. Its announced tax framework is different from both ordinary CGT treatment and the existing fund-tax/deemed-disposal regime, so the wrapper will become part of the product decision.
+
 ## Accumulating vs distributing funds
 
 A **distributing** fund pays investment income out to the investor.
