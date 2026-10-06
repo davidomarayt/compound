@@ -21,7 +21,7 @@ def test_tool_formulas_are_supported():
         "stamp_duty", "lpt", "loan", "savings_goal", "regular_savings",
         "pension_relief", "cgt", "vat", "inflation", "emergency",
         "salary_hourly", "fuel", "ev", "electricity",
-        "take_home_2026", "income_tax_2026", "usc_2026", "prsi_2026", "cat",
+        "budget_2027", "employer_cost_2027", "take_home_2026", "income_tax_2026", "usc_2026", "prsi_2026", "cat",
         "rent_credit", "help_to_buy", "first_home_scheme", "dirt",
         "contractor_vs_salary", "investment_fees", "fire_number", "retirement_income",
         "pension_projection", "pia", "rent_vs_buy", "mortgage_affordability",
@@ -38,7 +38,7 @@ def test_high_intent_tool_routes_present():
     content_dir = Path(__file__).parents[1] / "content"
     slugs = {tool["slug"] for tool in load_tools(content_dir)}
     expected = {
-        "take-home-pay-calculator", "income-tax-calculator", "usc-calculator", "prsi-calculator",
+        "budget-2027-calculator", "employer-cost-calculator", "take-home-pay-calculator", "income-tax-calculator", "usc-calculator", "prsi-calculator",
         "inheritance-tax-calculator", "rent-tax-credit-calculator", "help-to-buy-calculator",
         "first-home-scheme-calculator", "dirt-calculator", "contractor-vs-salary-calculator",
         "investment-fee-calculator", "fire-number-calculator", "retirement-income-calculator",
@@ -543,21 +543,26 @@ def test_2026_statutory_calculator_parameters_are_regression_locked():
     assert "weeklyClassA(weekly,.042)" in js
     assert "weeklyClassA(weekly,.0435)" in js
     assert "before*39+after*13" in js
+    # Budget 2027 USC and Class A PRSI changes are separately encoded.
+    assert "[[12012,.005],[18288,.02],[39744,.03],[Infinity,.08]]" in js
+    assert "weeklyClassA(weekly,.045)" in js
+    assert "threshold=y===2026?552:600" in js
 
     # Self-employed USC surcharge and 2026 Class S blended PRSI.
     assert "Math.max(0,x-100000)*.03" in js
     assert "Math.max(650,x*.042375)" in js
 
-    # CAT thresholds / rate and small-gift exemption, including prior use in Advanced mode.
+    # CAT thresholds / rate and small-gift exemption, including Budget 2027 thresholds.
     assert "A:400000,B:40000,C:20000" in js
+    assert "A:420000,B:44000,C:22000" in js
     assert "Math.min(3000,v.small_gift_used||0)" in js
     assert "smallApplied=Math.min(smallAvailable,benefit)" in js
     assert "afterTax=Math.max(0,aggregate-threshold)*.33" in js
 
-    # Help to Buy enhanced 2026 limits and qualifying-finance treatment.
+    # Help to Buy property/finance tests and selectable Budget 2027 €35,000 cap.
     assert "valueOk=propertyValue<=500000" in js
     assert "financeOk=ltv>=70" in js
-    assert "scheme cap',30000]" in js
+    assert "schemeCap=v.scheme_cap_basis==='previous'?30000:35000" in js
     assert "v.__advanced?Math.max(0,v.la_affordable_contribution||0):0" in js
     assert "qualifyingFinance=Math.max(0,v.mortgage)+affordable" in js
 
@@ -576,9 +581,10 @@ def test_2026_statutory_calculator_parameters_are_regression_locked():
     assert "1500000)-1000000)*.02" in js
     assert "Math.max(0,p-1500000)*.06" in js
 
-    # DIRT and standard CGT rate / annual exemption.
+    # DIRT and CGT rate / annual exemption, including Budget 2027's 31% standard rate.
     assert "const interest=Math.max(0,v.interest), tax=interest*.33" in js
-    assert "exemptionRemaining=Math.max(0,1270-exemptionUsed)" in js and "tax=taxable*.33" in js
+    assert "exemptionRemaining=Math.max(0,1270-exemptionUsed)" in js
+    assert "?.33:.31" in js
 
     # Central Bank standard LTI/LTV modelling assumptions.
     assert "v.buyer_type==='ftb'?4:3.5" in js
