@@ -24,7 +24,7 @@ def test_tool_formulas_are_supported():
         "take_home_2026", "income_tax_2026", "usc_2026", "prsi_2026", "cat",
         "rent_credit", "help_to_buy", "first_home_scheme", "dirt",
         "contractor_vs_salary", "investment_fees", "fire_number", "retirement_income",
-        "pension_projection", "rent_vs_buy", "mortgage_affordability",
+        "pension_projection", "pia", "rent_vs_buy", "mortgage_affordability",
         "house_buying_costs", "solar_payback", "ber_energy",
         "solar_optimizer", "retrofit_planner", "myfuturefund", "childcare_return",
         "mortgage_switch", "lifetime_cost", "car_finance",
