@@ -4,7 +4,7 @@ seo_title: 'Pension vs Investing in Ireland: Tax, Access & Trade-offs'
 slug: pension-vs-investing-ireland
 pillar: wealth
 date: 2026-09-23
-reviewed: 2026-09-23
+reviewed: 2026-10-06
 summary: 'A practical comparison of investing through an Irish pension versus a normal taxable investment account, including tax relief, access, growth, employer contributions and flexibility.'
 meta_description: 'Pension vs investing in Ireland: compare tax relief, access, employer contributions, taxable accounts and long-term trade-offs before choosing where to invest.'
 tags: [pension, investing, ireland, prsa, tax relief, brokerage, retirement]
@@ -34,7 +34,9 @@ Two people can hold broadly similar underlying investments and end up with very 
 
 The right comparison is therefore not “pension or stock market?”. Pensions usually invest in markets too.
 
-The useful comparison is **pension wrapper versus taxable investing wrapper**.
+The useful comparison has historically been **pension wrapper versus taxable investing wrapper**.
+
+From 2027 there is a third route to understand: Ireland's planned [Personal Investment Account (PIA)](/wealth/personal-investment-account-ireland/). It is designed to sit between a pension and ordinary taxable investing: flexible access, no pension-style contribution relief, and a separate annual PIA tax framework.
 
 ## The short version
 
