@@ -21,7 +21,7 @@ def test_tool_formulas_are_supported():
         "stamp_duty", "lpt", "loan", "savings_goal", "regular_savings",
         "pension_relief", "cgt", "vat", "inflation", "emergency",
         "salary_hourly", "fuel", "ev", "electricity",
-        "take_home_2026", "income_tax_2026", "usc_2026", "prsi_2026", "cat",
+        "take_home_2026", "income_tax_2026", "usc_2026", "prsi_2026", "take_home_2027", "income_tax_2027", "usc_2027", "budget_2027", "employer_cost_2027", "cat",
         "rent_credit", "help_to_buy", "first_home_scheme", "dirt",
         "contractor_vs_salary", "investment_fees", "fire_number", "retirement_income",
         "pension_projection", "pia", "rent_vs_buy", "mortgage_affordability",
@@ -38,7 +38,7 @@ def test_high_intent_tool_routes_present():
     content_dir = Path(__file__).parents[1] / "content"
     slugs = {tool["slug"] for tool in load_tools(content_dir)}
     expected = {
-        "take-home-pay-calculator", "income-tax-calculator", "usc-calculator", "prsi-calculator",
+        "take-home-pay-calculator", "income-tax-calculator", "usc-calculator", "prsi-calculator", "budget-2027-calculator", "employer-cost-calculator",
         "inheritance-tax-calculator", "rent-tax-credit-calculator", "help-to-buy-calculator",
         "first-home-scheme-calculator", "dirt-calculator", "contractor-vs-salary-calculator",
         "investment-fee-calculator", "fire-number-calculator", "retirement-income-calculator",
