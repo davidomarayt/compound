@@ -1,6 +1,12 @@
+## Budget 2027 Income Tax update
+
+The calculator now defaults to the **2027** single-person PAYE baseline: a **€46,500 standard-rate band** and **€4,250** of combined Single Person and maximum Employee Tax Credits.
+
+The 2026 €44,000 band and €4,000 combined baseline remain available through the tax-year selector. Advanced mode can still replace the band and credits with the figures on your own Revenue record.
+
 ## What this calculator is for
 
-This tool isolates Irish Income Tax from USC and PRSI. It applies the 2026 standard-rate band and entered credits so you can see gross tax, tax credits and the resulting Income Tax liability.
+This tool isolates Irish Income Tax from USC and PRSI. It applies the selected 2026 or 2027 standard-rate band and credits so you can see gross tax, tax credits and the resulting Income Tax liability.
 
 ## How to read the result
 
@@ -52,7 +58,7 @@ This distinction is important when considering overtime, bonuses or salary incre
 
 ## Advanced mode: pension relief, bands and credits
 
-Basic mode uses the 2026 €44,000 single-person standard-rate band and €4,000 of standard personal plus maximum employee tax credits. Advanced mode is designed for users who know the figures on their own Revenue record.
+Basic mode defaults to the 2027 €46,500 single-person standard-rate band and €4,250 of standard personal plus maximum employee tax credits. Select 2026 to reproduce the prior-year baseline. Advanced mode is designed for users who know the figures on their own Revenue record.
 
 A pension amount entered in Advanced mode is deducted before the 20% and 40% band calculation, but the tool assumes that amount qualifies for Income Tax relief. Revenue's age-related pension contribution limits and earnings ceiling are separate tests, so use the Pension Tax Relief Calculator where that limit matters.
 
