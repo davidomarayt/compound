@@ -87,12 +87,14 @@ jobs:
           fetch https://compound.ie/budget-2027-calculator/ /tmp/budget-calculator.html
           grep -Fq 'Budget 2027 Calculator Ireland' /tmp/budget-calculator.html
           grep -Fq 'data-tool-name="budget-2027-calculator"' /tmp/budget-calculator.html
-          ! grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' /tmp/budget-calculator.html
+          grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/budget-calculator.html
+          grep -Fq 'id="tool-interaction-zone"' /tmp/budget-calculator.html
 
           fetch https://compound.ie/employer-cost-calculator/ /tmp/employer-cost.html
           grep -Fq 'Employer Cost Calculator Ireland 2027' /tmp/employer-cost.html
           grep -Fq 'data-tool-name="employer-cost-calculator"' /tmp/employer-cost.html
-          ! grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' /tmp/employer-cost.html
+          grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/employer-cost.html
+          grep -Fq 'id="tool-interaction-zone"' /tmp/employer-cost.html
 
           fetch https://compound.ie/take-home-pay-calculator/ /tmp/take-home-2027.html
           grep -Fq 'Take-Home Pay Calculator Ireland 2027' /tmp/take-home-2027.html
