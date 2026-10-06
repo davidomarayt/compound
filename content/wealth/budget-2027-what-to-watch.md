@@ -31,6 +31,8 @@ sources:
   url: https://www.rte.ie/news/business/2026/1006/1594234-housing-budget-2027/
 - title: 'RTÉ: Fuel excise cuts extended'
   url: https://www.rte.ie/news/business/2026/1006/1594210-budget-2027-energy/
+- title: 'RTÉ: Irish Investment Account to open on 1 July 2027'
+  url: https://www.rte.ie/news/business/2026/1006/1594235-investment-accounts-budget-2027/
 - title: 'TheJournal.ie: Budget 2027 childcare changes'
   url: https://www.thejournal.ie/budget-2025-childcare-7183765-Oct2026/
 charts: []
@@ -138,9 +140,13 @@ charts: []
 
 <p>The exit-tax rate applying to many existing investment products is also being reduced by three percentage points to <strong>35%</strong>.</p>
 
-<p>A new personal investment account is due to become available from <strong>July 2027</strong>. The announced framework allows contributions of up to <strong>€12,000 per year</strong>, with investments up to <strong>€50,000</strong> receiving the new tax treatment. Holdings above that threshold are to face a 1% annual charge.</p>
+<p>The new <strong>Irish Investment Account</strong> is due to open on <strong>1 July 2027</strong>. The announced framework allows contributions of up to <strong>€12,000 per year</strong>, with no minimum contribution.</p>
 
-<p>This will need careful analysis once the legislation and product rules are published, because the tax treatment could materially change the relative attractiveness of investing through different structures in Ireland.</p>
+<p>The first <strong>€50,000 of account value is tax-free</strong>. Above that threshold, a flat annual tax of <strong>1%</strong> applies to the portion of the account value above €50,000. For example, an account worth €100,000 would have €50,000 above the threshold, implying a €500 annual account tax under the announced structure.</p>
+
+<p>Investments held inside the account are intended to sit outside the taxes that normally apply to different investment products: no Capital Gains Tax, dividend withholding tax, Investment Undertaking Tax or Life Assurance Exit Tax will apply inside the account, and the deemed-disposal rule will not apply. The provider, rather than the investor, is expected to handle the normal tax administration.</p>
+
+<p>This does <strong>not</strong> mean providers must charge zero management fees. Platform, dealing and fund charges will still depend on the provider and products chosen. The legislation and final provider terms will therefore matter when comparing the account with pensions and ordinary taxable investing.</p>
 
 <h2>9. Inheritance tax thresholds all increase</h2>
 
