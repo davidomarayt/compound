@@ -143,7 +143,9 @@ charts: []
 
 <p>The new <strong>Irish Investment Account</strong> is due to open on <strong>1 July 2027</strong>. The announced framework allows contributions of up to <strong>€12,000 per year</strong>, with no minimum contribution.</p>
 
-<p>The first <strong>€50,000 of account value is tax-free</strong>. Above that threshold, a flat annual tax of <strong>1%</strong> applies to the portion of the account value above €50,000. For example, an account worth €100,000 would have €50,000 above the threshold, implying a €500 annual account tax under the announced structure.</p>
+<p>The first <strong>€50,000 of relevant account value is below the PIA annual-tax threshold</strong>. Above that threshold, a flat annual tax of <strong>1%</strong> applies to the portion of the account value above €50,000. For example, an account with a relevant average value of €100,000 would have €50,000 above the threshold, implying a €500 annual account tax under the announced structure.</p>
+
+<p>For the full rules, worked examples, ETFs and shares, provider questions and an interactive tax calculator, read our <a href="/wealth/personal-investment-account-ireland/"><strong>Personal Investment Account Ireland (PIA) guide</strong></a>.</p>
 
 <p>Investments held inside the account are intended to sit outside the taxes that normally apply to different investment products: no Capital Gains Tax, dividend withholding tax, Investment Undertaking Tax or Life Assurance Exit Tax will apply inside the account, and the deemed-disposal rule will not apply. The provider, rather than the investor, is expected to handle the normal tax administration.</p>
 
