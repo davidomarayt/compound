@@ -818,6 +818,202 @@ tools:
       - {title: "CSO — Household Finance and Consumption Survey 2023: Key Findings", url: "https://www.cso.ie/en/releasesandpublications/ep/p-hfcs/householdfinanceandconsumptionsurvey2023/keyfindings/"}
       - {title: "Central Bank of Ireland — Household Wealth, Q1 2026", url: "https://www.centralbank.ie/statistics/data-and-analysis/household-wealth"}
 
+  - slug: pia-calculator
+    title: Personal Investment Account (PIA) Calculator Ireland
+    seo_title: PIA Calculator Ireland – Tax, Growth & €50k Threshold
+    category: Pensions & Investing
+    formula: pia
+    summary: Project Ireland's new Personal Investment Account, estimate when the €50,000 threshold may be crossed and model the 1% annual PIA charge above it.
+    meta_description: PIA calculator Ireland. Project your Personal Investment Account, estimate annual PIA tax above €50,000, contributions, growth, fees and threshold timing.
+    updated: 2026-10-06
+    basic_note: "Basic mode applies the Budget 2027 headline design: up to €12,000 annual contributions, a €50,000 threshold and a 1% annual PIA charge on the modelled average account value above that threshold."
+    advanced_note: "Advanced mode adds an annual investment/provider fee, inflation-adjusted value and the long-run balance drag from the PIA charge. The final Finance Bill may change valuation or payment mechanics."
+    result_note: "Planning illustration based on the Budget 2027 PIA design. The account is not yet available and detailed Finance Bill rules may change the final calculation."
+    fields:
+      - {id: current_balance, label: Starting PIA balance, type: number, prefix: "€", default: 0, min: 0, step: 500, section_start: Your PIA}
+      - {id: annual_contribution, label: Annual contribution, type: number, prefix: "€", default: 12000, min: 0, max: 12000, step: 100, help: "Budget 2027 announced a €12,000 annual contribution cap. The calculator spreads this amount evenly across the year for projection purposes."}
+      - {id: years, label: Years to project, type: number, suffix: years, default: 10, min: 1, max: 40, step: 1, section_start: Growth assumptions}
+      - {id: return_rate, label: Expected annual investment return before fees, type: number, suffix: "%", default: 6, min: -20, max: 30, step: 0.1, help: "A scenario assumption, not a forecast. Investment returns will vary and can be negative."}
+      - {id: annual_fee, label: Annual provider / investment fee, type: number, suffix: "%", default: 0.25, min: 0, max: 10, step: 0.05, advanced: true, section_start: Advanced assumptions, help: "Enter recurring percentage fees not already reflected in the return assumption. Actual PIA provider pricing has not yet been published across the market."}
+      - {id: inflation_rate, label: Annual inflation assumption, type: number, suffix: "%", default: 2, min: -5, max: 20, step: 0.1, advanced: true}
+    results:
+      - {id: projected_balance, label: Projected PIA value}
+      - {id: total_contributions, label: Starting balance + contributions}
+      - {id: net_growth, label: Net investment growth after modelled fees & PIA tax}
+      - {id: total_pia_tax, label: Total modelled PIA tax}
+      - {id: first_tax_year, label: First modelled year with PIA tax}
+      - {id: final_year_average, label: Modelled average value in final year}
+      - {id: final_year_tax, label: Estimated PIA tax in final year}
+      - {id: effective_final_tax, label: Final-year PIA tax as % of average account value, advanced: true}
+      - {id: total_fees, label: Total modelled provider / investment fees, advanced: true}
+      - {id: pia_tax_drag, label: Ending-balance drag from PIA tax incl. lost growth, advanced: true}
+      - {id: real_balance, label: Projected PIA value in today's money, advanced: true}
+    guide: |
+      ## What the PIA Calculator does
+
+      This calculator models Ireland's planned **Personal Investment Account (PIA)** using the headline terms announced in Budget 2027.
+
+      It projects a starting account balance and annual contributions forward using the investment-return assumption you enter. It then estimates when the account may move above the **€50,000 PIA tax threshold** and calculates the proposed **1% annual charge on the portion of the modelled average account value above €50,000**.
+
+      The full background, eligible investments, withdrawals, providers and outstanding legislative questions are covered in Compound's [Personal Investment Account Ireland guide](/wealth/personal-investment-account-ireland/).
+
+      ## Budget 2027 assumptions used
+
+      The calculator currently encodes these announced headline terms:
+
+      - planned PIA launch from **1 July 2027**;
+      - maximum annual contribution of **€12,000**;
+      - no minimum contribution;
+      - a **€50,000 threshold** for the annual PIA charge;
+      - a **1% annual charge** on the relevant account value above €50,000;
+      - no eight-year deemed disposal inside the PIA under the published Department of Finance design.
+
+      The PIA still requires legislation. If the Finance Bill changes these rules, Compound will update the calculator.
+
+      ## How the calculator estimates average account value
+
+      The Department of Finance design uses an **average account valuation over the taxable period**, but the final legislation still has to settle the precise valuation intervals and mechanics.
+
+      For a transparent planning estimate, this calculator:
+
+      1. spreads the annual contribution evenly across 12 months;
+      2. applies the entered investment return through the year;
+      3. applies the annual fee monthly in Advanced mode;
+      4. records each month-end account value;
+      5. uses the average of those 12 month-end values as the modelled annual average;
+      6. calculates 1% of the amount by which that average exceeds €50,000;
+      7. assumes that estimated PIA charge is paid from the account at year-end.
+
+      This is a modelling convention, not a statement that Revenue will use exactly this monthly-average method.
+
+      ## The PIA tax formula used
+
+      For each modelled full year:
+
+      **PIA charge = 1% × max(€0, modelled average account value − €50,000)**
+
+      If the modelled average account value is €50,000 or less, the PIA charge is €0.
+
+      If the modelled average value is €100,000, the illustrative annual charge is:
+
+      **€100,000 − €50,000 = €50,000**
+
+      **€50,000 × 1% = €500**
+
+      The 1% is applied to the amount above the threshold, not to the full €100,000 and not merely to the year's investment profit.
+
+      ## Why the threshold-crossing year matters
+
+      Someone contributing the maximum €12,000 a year may not pay any PIA charge in the early years because the account has not yet moved above the threshold on the modelled average-value basis.
+
+      The calculator therefore reports the **first modelled year in which a PIA charge appears**. That can be more useful than looking only at the eventual tax bill.
+
+      The exact year depends on:
+
+      - starting balance;
+      - annual contributions;
+      - investment returns;
+      - fees;
+      - and the final statutory valuation method.
+
+      ## What “PIA tax drag” means
+
+      Advanced mode runs the same investment path twice: once with the modelled PIA charge and once without it.
+
+      The difference in ending balances is shown as the **PIA tax drag**.
+
+      This number is larger than simply adding the annual tax payments because money removed to pay tax also loses the future investment growth it could otherwise have earned.
+
+      It is not a comparison with an ordinary brokerage account. Ordinary investments can face completely different Irish tax rules depending on whether you own direct shares, funds, ETFs or another product.
+
+      ## Provider and fund fees still matter
+
+      The €50,000 threshold is a tax rule. It does **not** mean a PIA holding less than €50,000 will necessarily be free.
+
+      A provider or underlying investment may charge:
+
+      - an account or platform fee;
+      - an annual fund charge;
+      - dealing commission;
+      - foreign-exchange costs;
+      - custody or advice fees;
+      - transfer charges.
+
+      Advanced mode lets you enter one recurring annual percentage fee so you can see its compounding effect. Use the separate [Investment Fee Impact Calculator](/investment-fee-calculator/) for a deeper fee comparison.
+
+      ## Contribution cap modelling
+
+      The annual contribution field is capped at **€12,000**, matching the Budget 2027 headline limit.
+
+      The calculator assumes that amount is contributed evenly through the year. In reality, you may contribute monthly, irregularly or as a lump sum if the final rules and provider allow it.
+
+      Contribution timing changes the average value and therefore can change the modelled annual PIA charge slightly.
+
+      ## PIA versus an ordinary investment account
+
+      This calculator deliberately does not claim that the PIA is always better or worse than ordinary investing.
+
+      Outside the PIA, tax depends on what you own. Direct shares can commonly involve CGT and dividend taxation, while relevant investment funds can fall under a separate fund-tax regime. Read [Investment Tax in Ireland](/wealth/investment-tax-ireland/) before making an after-tax comparison.
+
+      The PIA is also not a substitute for a pension. A pension can have upfront Income Tax relief and employer contributions but different access rules. See [Pension vs Investing in Ireland](/wealth/pension-vs-investing-ireland/) for the wider wrapper decision.
+
+      ## Investment returns are not smooth
+
+      The model uses a constant annual return because a calculator needs a repeatable assumption.
+
+      Real markets do not behave that way.
+
+      A portfolio might rise 20% one year and fall 15% the next. The sequence of returns can alter both the account value and the PIA charge.
+
+      Use several scenarios rather than treating one return assumption as a forecast.
+
+      ## Frequently asked questions
+
+      ### How much PIA tax will I pay on €100,000?
+
+      If the relevant average account value were €100,000 under the announced formula, the amount above the €50,000 threshold would be €50,000. At 1%, the illustrative annual PIA charge would be **€500**.
+
+      ### Do I pay 1% on the whole PIA once it passes €50,000?
+
+      No under the announced design. The 1% charge applies to the portion of the relevant account value above €50,000.
+
+      ### Is the PIA tax 1% of my investment profit?
+
+      No. The proposed charge is based on account value above the threshold, not simply on realised profit.
+
+      ### Does deemed disposal apply inside a PIA?
+
+      The Department of Finance roadmap says the existing retail-investment tax regime, including deemed disposal, will not apply inside the new account.
+
+      ### How much can I contribute to a PIA each year?
+
+      Budget 2027 announced a maximum contribution of **€12,000 per year** and no minimum contribution.
+
+      ### Can I use this calculator before PIAs launch?
+
+      Yes, as a planning illustration. PIAs are planned for 1 July 2027 and the detailed legislation is not final, so results should not be treated as an official Revenue calculation.
+
+      ### Does the calculator include provider fees?
+
+      Basic mode does not. Advanced mode lets you enter a recurring annual percentage fee. Actual provider and investment charges will vary.
+
+      ### Is this a PIA versus ETF tax calculator?
+
+      No. ETFs held outside a PIA can be subject to a different Irish tax regime depending on their structure and domicile. This calculator focuses on the proposed PIA wrapper itself.
+
+      ## Method and limitations
+
+      This is an educational scenario tool, not financial or tax advice.
+
+      It assumes a constant investment return, level annual contributions spread evenly monthly, the Budget 2027 headline threshold and rate, and an annual PIA charge deducted from the account. It does not model market volatility, irregular withdrawals, provider-specific investment restrictions, existing-asset migration, changes in tax residency or future changes in law.
+
+      The detailed Finance Bill rules should take precedence over this calculator once enacted.
+
+    sources:
+      - {title: "Department of Finance — Taxation of Retail Investment: A New Path Forward for Ireland", url: "https://assets.gov.ie/static/documents/a5d640c2/Roadmap_for_the_Taxation_of_Retail_Investment.pdf"}
+      - {title: "RTÉ — Irish Investment Account to open on 1 July 2027", url: "https://www.rte.ie/news/business/2026/1006/1594235-investment-accounts-budget-2027/"}
+      - {title: "Central Bank of Ireland — Investing your money", url: "https://www.centralbank.ie/consumer-hub/investing-your-money-consumer-faq"}
+
   - slug: regular-savings-calculator
     title: Regular Savings Calculator Ireland
     category: Pensions & Investing
