@@ -8,7 +8,10 @@ const {
   calculators,
   monthlyPayment,
   usc2026,
+  usc2027,
   annualClassA2026,
+  annualClassA2027,
+  employerPrsiAnnual,
   selfEmployedNet2026,
   stampDutyResidential,
   mortgageOverpaymentProjection,
@@ -56,11 +59,11 @@ assert.equal(usc2026(13000), 0);
 close(usc2026(50000, true), 819.82, 0.01, '2026 reduced USC on €50,000');
 close(usc2026(61000, true), usc2026(61000), 0.001, 'reduced USC fallback above €60,000');
 
-const uscReduced = calculators.usc_2026({income: 50000, reduced_rate: 'yes', __advanced: true});
+const uscReduced = calculators.usc_2026({income: 50000, tax_year: '2026', reduced_rate: 'yes', __advanced: true});
 assert.equal(uscReduced.usc, '€819.82');
 assert.equal(uscReduced.rate_basis, 'Reduced 2026 rates');
 
-const uscFallback = calculators.usc_2026({income: 61000, reduced_rate: 'yes', __advanced: true});
+const uscFallback = calculators.usc_2026({income: 61000, tax_year: '2026', reduced_rate: 'yes', __advanced: true});
 assert.equal(uscFallback.rate_basis, 'Standard 2026 rates');
 
 // Class A annual blend should use 39 weeks at 4.20% and 13 at 4.35%.
@@ -280,7 +283,7 @@ assert.equal(hourly.hourly, '€24.65');
 assert.equal(hourly.annual_hours, '2,028 hours');
 
 const takeHomeReduced = calculators.take_home_2026({
-  salary: 50000, pension_pct: 0, band: 44000, other_credits: 0,
+  salary: 50000, tax_year: '2026', pension_pct: 0, band: 44000, other_credits: 0,
   usc_reduced: 'yes', __advanced: true
 });
 assert.equal(takeHomeReduced.usc, '€819.82');
@@ -293,9 +296,61 @@ assert.equal(prsiFlagship.weekly_equivalent, '€1,000.00');
 assert.equal(prsiFlagship.october_increase, '€19.50');
 
 const rentCreditFlagship = calculators.rent_credit({
-  rent: 12000, joint: 'no', income_tax_liability: 5000
+  rent: 12000, tax_year: '2026', joint: 'no', income_tax_liability: 5000
 });
 assert.equal(rentCreditFlagship.credit, '€1,000.00');
+
+// Budget 2027 statutory changes: new USC band, PRSI blend, CGT/CAT/HTB and rent-credit limits.
+close(usc2027(50000), 1016.82, 0.01, '2027 USC on €50,000');
+const prsi2027 = annualClassA2027(50000);
+close(prsi2027.annual, prsi2027.before * 39 + prsi2027.after * 13, 0.0001, '2027 PRSI blend');
+
+const cgt2027 = calculators.cgt({
+  sale: 30000, purchase: 15000, costs: 0, losses: 0,
+  rate_basis: 'standard_new', exemption_used: 0, __advanced: false
+});
+assert.equal(cgt2027.rate, '31%');
+assert.equal(cgt2027.tax, '€4,256.30');
+
+const cat2027 = calculators.cat({
+  benefit: 500000, prior: 0, threshold_basis: 'new', group: 'A',
+  benefit_type: 'inheritance', small_gift_used: 0, __advanced: false
+});
+assert.equal(cat2027.threshold, '€420,000.00');
+assert.equal(cat2027.cat, '€26,400.00');
+
+const rentCredit2027 = calculators.rent_credit({
+  rent: 12000, tax_year: '2027', joint: 'no', income_tax_liability: 5000
+});
+assert.equal(rentCredit2027.credit, '€1,150.00');
+
+const htb2027 = calculators.help_to_buy({
+  scheme_cap_basis: 'budget_2027', property_value: 400000, mortgage: 300000,
+  tax_paid: 35000, la_affordable_contribution: 0, __advanced: false
+});
+assert.equal(htb2027.claim, '€35,000.00');
+
+const budget2027 = calculators.budget_2027({
+  filing_status: 'single', salary1: 60000, salary2: 0, home_carer: 'no',
+  qualifying_rent: 12000, childcare_children: 1, childcare_monthly_fee: 735,
+  core_welfare_recipients: 0, child_support_children: 0, fuel_allowance_households: 0,
+  living_alone_recipients: 0, disability_payment_recipients: 0, __advanced: false
+});
+assert.match(budget2027.annual_gain, /^\+/);
+assert.equal(budget2027.rent_gain, '+€150.00');
+assert.equal(budget2027.childcare_gain, '+€740.00');
+assert.notEqual(budget2027.household_net_2026, budget2027.household_net_2027);
+
+const employer2027 = calculators.employer_cost_2027({
+  hourly_rate: 14.94, hours_per_week: 39, paid_weeks: 52, employees: 1,
+  employer_pension_pct: 0, myfuturefund: 'no', other_annual_cost: 0, __advanced: false
+});
+assert.match(employer2027.total_cost, /^€/);
+assert.match(employer2027.minimum_wage_cost_change, /^\+/);
+assert.match(employer2027.prsi_basis, /€600\.00/);
+const employerPrsiCheck = employerPrsiAnnual(14.94*39*52,14.94*39,2027);
+assert.equal(employerPrsiCheck.lower, true);
+
 assert.equal(rentCreditFlagship.rent_for_max, '€5,000.00');
 assert.equal(rentCreditFlagship.unused_cap, '€0.00');
 
@@ -615,7 +670,7 @@ assert.equal(pensionReliefDirect.relief, '€2,400.00');
 assert.equal(pensionReliefDirect.net_cost, '€3,600.00');
 
 const cgtDirect = calculators.cgt({
-  sale: 30000, purchase: 15000, costs: 0, losses: 0, exemption_used: 0, __advanced: false
+  sale: 30000, purchase: 15000, costs: 0, losses: 0, rate_basis: 'standard_old', exemption_used: 0, __advanced: false
 });
 assert.equal(cgtDirect.gain, '€15,000.00');
 assert.equal(cgtDirect.taxable, '€13,730.00');
@@ -639,7 +694,7 @@ assert.equal(emergencyDirect.time, '2 yr 6 mo');
 assert.equal(emergencyDirect.interest_growth, '€0.00');
 
 const incomeTaxDirect = calculators.income_tax_2026({
-  income: 60000, pension: 0, band: 44000, credits: 4000, __advanced: false
+  income: 60000, tax_year: '2026', pension: 0, band: 44000, credits: 4000, __advanced: false
 });
 assert.equal(incomeTaxDirect.tax20, '€8,800.00');
 assert.equal(incomeTaxDirect.tax40, '€6,400.00');
@@ -647,7 +702,7 @@ assert.equal(incomeTaxDirect.gross_tax, '€15,200.00');
 assert.equal(incomeTaxDirect.final_tax, '€11,200.00');
 
 const catDirect = calculators.cat({
-  benefit: 500000, prior: 0, group: 'A', benefit_type: 'inheritance',
+  benefit: 500000, prior: 0, threshold_basis: 'old', group: 'A', benefit_type: 'inheritance',
   small_gift_used: 0, __advanced: false
 });
 assert.equal(catDirect.threshold, '€400,000.00');
