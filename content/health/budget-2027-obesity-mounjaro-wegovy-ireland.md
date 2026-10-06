@@ -12,6 +12,7 @@ summary: 'Ireland is spending €29.1bn on health in 2027, while obesity already
 meta_description: 'Budget 2027 gives Irish health €29.1bn. We examine Mounjaro and Wegovy funding, obesity costs in Ireland, and the NCPE’s €5.23bn budget-impact estimate.'
 tags: [news, budget-2027, glp-1, obesity, mounjaro, wegovy, medicines, irish-healthcare, ireland]
 news_image_query: "weight loss injection pen healthcare medicine prescription obesity treatment"
+pexels_photo_id: "7653692"
 related_tools:
 - weight-loss-calculator
 - bmi-calculator
