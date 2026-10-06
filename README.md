@@ -208,3 +208,5 @@ Subclass `compound.sources.base.Source`, implement `fetch()` returning `SourceIt
 (and `fetch_text()` if the default HTML-to-text is not good enough), register it in
 `compound/sources/__init__.py`. Run `compound poll --dry-run` to see what it returns before it
 goes live.
+
+<!-- production deploy trigger: Budget 2027 calculators, 2026-10-06 -->
