@@ -195,22 +195,6 @@
         for(let m=1;m<=1200 && bal<v.target;m++){bal*=1+r;bal+=v.monthly;if(m%12===0||bal>=v.target){labels.push('Year '+Math.ceil(m/12));vals.push(bal);target.push(v.target);}}
         return {type:'line',title:'Path to the savings goal',caption:'Modelled balance against the target using the contribution and return assumptions entered.',labels,series:[{label:'Projected balance',values:vals},{label:'Target',values:target}]};
       }
-      case 'pia': {
-        const annual=Math.max(0,Math.min(12000,v.annual_contribution)), years=Math.max(1,Math.round(v.years));
-        items.push(annual>=12000?'The projection uses the full announced €12,000 annual PIA contribution limit.':'The projection uses '+money(annual)+' a year, below the announced €12,000 maximum.');
-        const grossAnnual=Math.max(-.99,v.return_rate/100), monthlyContribution=annual/12, r=Math.pow(1+grossAnnual,1/12)-1;
-        let bal=Math.max(0,v.current_balance), first=null;
-        for(let year=1;year<=years;year++){
-          const vals=[];
-          for(let m=0;m<12;m++){bal=bal*(1+r)+monthlyContribution;vals.push(bal);}
-          const avg=vals.reduce((a,b)=>a+b,0)/12, tax=Math.max(0,avg-50000)*.01;
-          if(tax>0&&first===null) first=year;
-          bal=Math.max(0,bal-tax);
-        }
-        items.push(first===null?'The modelled average account value does not cross the €50,000 tax threshold within the selected period.':'The first modelled PIA charge appears in Year '+first+' under these smooth-return assumptions.');
-        items.push('The Finance Bill still has to finalise the official valuation mechanics, so treat this as a planning estimate rather than a Revenue calculation.');
-        break;
-      }
       case 'regular_savings': {
         const bal=projectMonthly(v.current,v.monthly,v.rate,Math.round(v.years)), contrib=Array.from({length:Math.round(v.years)+1},(_,i)=>v.current+v.monthly*12*i);
         return {type:'line',title:'Contributions versus projected balance',caption:'Shows how much comes from money added versus modelled growth.',labels:bal.map((_,i)=>i===0?'Start':'Year '+i),series:[{label:'Projected balance',values:bal},{label:'Contributions',values:contrib}]};
@@ -366,6 +350,23 @@
         const debt=Math.max(0,v.mortgage)+Math.max(0,v.loans)+Math.max(0,v.credit_cards)+Math.max(0,v.other_debt)+(v.__advanced?Math.max(0,v.other_property_mortgage)+Math.max(0,v.tax_liabilities):0);
         if(assets>0) items.push('Liabilities are about '+pct(debt/assets*100)+' of the assets entered.');
         items.push('Track the same valuation method over time; the trend is usually more useful than comparing yourself with another household.');
+        break;
+      }
+      case 'pia': {
+        const annual=Math.max(0,Math.min(12000,v.annual_contribution)), years=Math.max(1,Math.round(v.years));
+        items.push(annual>=12000?'The projection uses the full announced €12,000 annual PIA contribution limit.':'The projection uses '+money(annual)+' a year, below the announced €12,000 maximum.');
+        const grossAnnual=Math.max(-.99,v.return_rate/100), monthlyContribution=annual/12, r=Math.pow(1+grossAnnual,1/12)-1;
+        const fee=Boolean(v.__advanced)?Math.max(0,v.annual_fee/100):0, feeMonthFactor=Math.pow(Math.max(.000001,1-fee),1/12);
+        let bal=Math.max(0,v.current_balance), first=null;
+        for(let year=1;year<=years;year++){
+          const vals=[];
+          for(let m=0;m<12;m++){bal=bal*(1+r)*feeMonthFactor+monthlyContribution;vals.push(bal);}
+          const avg=vals.reduce((a,b)=>a+b,0)/12, tax=Math.max(0,avg-50000)*.01;
+          if(tax>0&&first===null) first=year;
+          bal=Math.max(0,bal-tax);
+        }
+        items.push(first===null?'The modelled average account value does not cross the €50,000 tax threshold within the selected period.':'The first modelled PIA charge appears in Year '+first+' under these smooth-return assumptions.');
+        items.push('The Finance Bill still has to finalise the official valuation mechanics, so treat this as a planning estimate rather than a Revenue calculation.');
         break;
       }
       case 'regular_savings': {
