@@ -63,6 +63,17 @@ jobs:
           fetch https://compound.ie/ads.txt /tmp/ads.txt
           grep -Fq 'google.com, pub-6115783809711785, DIRECT, f08c47fec0942fa0' /tmp/ads.txt
 
+          # Budget 2027 is a flagship live article with bespoke artwork. Verify the
+          # exact hero/social asset so an old fallback image cannot silently return.
+          fetch https://compound.ie/wealth/budget-2027-what-to-watch/ /tmp/budget-2027.html
+          grep -Fq '<img src="/static/images/budget-2027-hero.webp"' /tmp/budget-2027.html
+          grep -Fq 'alt="Red Budget 2027 folder surrounded by a payslip, house keys, childcare, energy, pension and household-cost elements."' /tmp/budget-2027.html
+          grep -Fq 'content="https://compound.ie/static/images/budget-2027-hero.webp"' /tmp/budget-2027.html
+          grep -Fq 'Illustration: Compound' /tmp/budget-2027.html
+          ! grep -Fq 'Illustrative retirement photograph' /tmp/budget-2027.html
+          fetch https://compound.ie/static/images/budget-2027-hero.webp /tmp/budget-2027-hero.webp
+          test -s /tmp/budget-2027-hero.webp
+
           fetch https://compound.ie/tools/ /tmp/tools.html
           grep -Fq 'Mortgages &amp; Home Buying' /tmp/tools.html || grep -Fq 'Mortgages & Home Buying' /tmp/tools.html
           grep -Fq 'Pensions &amp; Investing' /tmp/tools.html || grep -Fq 'Pensions & Investing' /tmp/tools.html
