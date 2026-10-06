@@ -4,7 +4,7 @@ seo_title: 'Shares vs ETFs vs Funds in Ireland: Beginner Guide'
 slug: shares-etfs-funds-ireland
 pillar: wealth
 date: 2026-09-23
-reviewed: 2026-09-23
+reviewed: 2026-10-06
 summary: 'A beginner-friendly Irish guide to direct shares, ETFs and investment funds: what you own, how diversification works, what fees matter and why Irish tax treatment can differ.'
 meta_description: 'Shares vs ETFs vs funds in Ireland: understand diversification, fees, ownership and the Irish tax questions to check before you invest.'
 tags: [shares, etfs, funds, investing, ireland, diversification, beginners]
@@ -36,6 +36,8 @@ The biggest beginner mistake is choosing from the label alone.
 An ETF can be diversified or concentrated. A fund can be cheap or expensive. A share can be an excellent company and still be a poor portfolio if it is your only holding.
 
 In Ireland there is another complication: **tax treatment can differ materially depending on what you own and how the product is structured**.
+
+From 2027, the choice of wrapper may become even more important. The new [Personal Investment Account Ireland (PIA)](/wealth/personal-investment-account-ireland/) is designed to allow eligible shares, funds and ETFs inside a separate account-level tax system, with no deemed disposal inside the wrapper under the published framework.
 
 ## What is a direct share?
 
