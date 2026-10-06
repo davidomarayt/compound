@@ -40,6 +40,7 @@ COURSE_PARENTS = {
     "how-much-to-invest-per-month-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
     "maintain-investment-portfolio-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
     "personal-investment-account-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
+    "personal-investment-account-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
     # Pensions in Ireland 101
     "how-pensions-work-ireland": ("Pensions in Ireland 101", "/wealth/pensions-in-ireland/"),
     "pension-options-ireland": ("Pensions in Ireland 101", "/wealth/pensions-in-ireland/"),
@@ -88,6 +89,7 @@ HOME_SEO_PRIORITY = {
     ],
     "wealth": [
         "how-to-start-investing-in-ireland",
+        "personal-investment-account-ireland",
         "pensions-in-ireland",
         "buying-a-home-in-ireland",
         "saving-for-your-child-ireland",
