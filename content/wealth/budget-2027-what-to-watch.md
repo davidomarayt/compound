@@ -1,7 +1,7 @@
 ---
-image: /static/images/budget-2027-hero.webp
-image_alt: Red Budget 2027 folder surrounded by a payslip, house keys, childcare, energy and pension documents.
-image_credit: 'Illustration: Compound'
+image: /static/images/budget-dublin.jpg
+image_alt: Dublin city and Irish budget imagery representing Budget 2027 and household finances.
+image_credit: 'Image: Compound'
 title: 'Budget 2027 Ireland: The Key Changes to Tax, Rent, Childcare, Pensions and Energy'
 slug: budget-2027-what-to-watch
 pillar: wealth
