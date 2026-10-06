@@ -705,6 +705,11 @@ def is_news_article(a: Article) -> bool:
 def discover_image_paths(a: Article) -> list[str]:
     if not a.image:
         return []
+    # The bespoke Budget 2027 cover is already an optimised local WebP. The
+    # GitHub Pages runner's Pillow/libwebp build cannot decode this particular
+    # WebP for derivative generation, so serve the original image directly.
+    if a.slug == "budget-2027-what-to-watch" and a.image.endswith(".webp"):
+        return []
     return [f"/static/discover/{a.slug}-{ratio}.webp" for ratio in ("1x1", "4x3", "16x9")]
 
 
@@ -714,7 +719,7 @@ def discover_image_urls(a: Article, site_url: str) -> list[str]:
 
 
 def generate_discover_images(a: Article, output_dir: Path) -> None:
-    if not a.image:
+    if not a.image or not discover_image_paths(a):
         return
     source = HERE / a.image.lstrip("/")
 
