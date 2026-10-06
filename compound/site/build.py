@@ -39,6 +39,7 @@ COURSE_PARENTS = {
     "investment-fees-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
     "how-much-to-invest-per-month-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
     "maintain-investment-portfolio-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
+    "personal-investment-account-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
     # Pensions in Ireland 101
     "how-pensions-work-ireland": ("Pensions in Ireland 101", "/wealth/pensions-in-ireland/"),
     "pension-options-ireland": ("Pensions in Ireland 101", "/wealth/pensions-in-ireland/"),
@@ -95,7 +96,7 @@ HOME_SEO_PRIORITY = {
         "pension-tax-relief-ireland-how-to-claim",
         "rent-tax-credit-ireland-who-can-claim",
         "tax-credits-ireland-explained",
-        "pcp-vs-hp-vs-car-loan-ireland",
+        "personal-investment-account-ireland",
     ],
     "happiness": [
         "how-to-be-happier-evidence-ireland",
