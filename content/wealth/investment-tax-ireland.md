@@ -4,7 +4,7 @@ seo_title: 'Investment Tax Ireland: CGT, ETF Tax & Deemed Disposal'
 slug: investment-tax-ireland
 pillar: wealth
 date: 2026-09-23
-reviewed: 2026-09-25
+reviewed: 2026-10-06
 summary: 'A practical map of Irish investment taxation for individuals, covering direct shares, Capital Gains Tax, dividends, DWT, DIRT, fund exit tax and eight-year deemed disposal.'
 meta_description: 'Investment tax in Ireland explained: 33% CGT, €1,270 exemption, dividends, 38% fund tax, DIRT and 8-year deemed disposal, with worked examples.'
 tags: [investment tax, ireland, cgt, etf tax, deemed disposal, dividends, dirt]
@@ -52,7 +52,7 @@ This guide covers the main regimes an Irish-resident individual is likely to enc
 
 The word **typical** matters. Product structure, domicile, residency and personal circumstances can change the treatment.
 
-> **Coming in 2027:** Ireland's new [Personal Investment Account](/wealth/personal-investment-account-ireland/) is designed to use a separate annual tax framework. Under the announced proposal, the existing investment-fund tax regime and deemed disposal will not apply to investments held inside the PIA. The tax-free threshold, annual tax rate and contribution cap are still to be announced in Budget 2027.
+> **Budget 2027 update:** Ireland's new [Personal Investment Account (PIA)](/wealth/personal-investment-account-ireland/) is planned for 1 July 2027. The announced design has a €50,000 threshold, a 1% annual charge on the relevant account value above it and a €12,000 annual contribution limit. The existing retail-investment tax regime, including deemed disposal, is not intended to apply inside the PIA. The Finance Bill still has to enact the detailed rules.
 
 ## Capital Gains Tax on direct shares
 
