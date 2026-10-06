@@ -4,7 +4,7 @@ seo_title: 'Best Investment Broker Ireland? How to Compare Platforms'
 slug: choose-investment-broker-ireland
 pillar: wealth
 date: 2026-09-23
-reviewed: 2026-09-23
+reviewed: 2026-10-06
 summary: 'A neutral framework for comparing investment brokers and platforms in Ireland: regulation, custody, compensation schemes, fees, FX, tax records, transfers and recurring investing.'
 meta_description: 'Compare investment brokers in Ireland by regulation, custody, fees, FX costs, tax records, transfers and investor protection—not just free trades.'
 tags: [broker, investment platform, ireland, investing, fees, regulation, beginners]
@@ -191,6 +191,12 @@ Access to:
 can encourage a beginner to take risks that were never part of the original plan.
 
 A good long-term platform does not need to make speculation effortless.
+
+## Personal Investment Account providers will need a different comparison
+
+Ireland's new [Personal Investment Account (PIA)](/wealth/personal-investment-account-ireland/) is planned for 1 July 2027. When providers launch their products, compare more than the statutory PIA tax rules.
+
+The meaningful provider differences are likely to be **account fees, fund charges, FX costs, investment range, recurring-investment features, customer service and transfer options**. Two providers can operate under the same €50,000 threshold and 1% charge above it while producing very different all-in costs for the investor.
 
 ## How to compare two brokers
 
