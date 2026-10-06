@@ -81,6 +81,32 @@ jobs:
           grep -Fq '/debt-repayment-calculator/' /tmp/tools.html
           grep -Fq '/solar-payback-calculator/' /tmp/tools.html
           grep -Fq '/nutrition-needs-calculator/' /tmp/tools.html
+          grep -Fq '/budget-2027-calculator/' /tmp/tools.html
+          grep -Fq '/employer-cost-calculator/' /tmp/tools.html
+
+          fetch https://compound.ie/budget-2027-calculator/ /tmp/budget-calculator.html
+          grep -Fq 'Budget 2027 Calculator Ireland' /tmp/budget-calculator.html
+          grep -Fq 'data-tool-name="budget-2027-calculator"' /tmp/budget-calculator.html
+
+          fetch https://compound.ie/employer-cost-calculator/ /tmp/employer-cost.html
+          grep -Fq 'Employer Cost Calculator Ireland 2027' /tmp/employer-cost.html
+          grep -Fq 'data-tool-name="employer-cost-calculator"' /tmp/employer-cost.html
+
+          fetch https://compound.ie/take-home-pay-calculator/ /tmp/take-home-2027.html
+          grep -Fq 'Take-Home Pay Calculator Ireland 2027' /tmp/take-home-2027.html
+          grep -Fq '€46,500' /tmp/take-home-2027.html
+
+          fetch https://compound.ie/capital-gains-tax-calculator/ /tmp/cgt-2027.html
+          grep -Fq '31%' /tmp/cgt-2027.html
+
+          fetch https://compound.ie/inheritance-tax-calculator/ /tmp/cat-2027.html
+          grep -Fq '€420,000' /tmp/cat-2027.html
+
+          fetch https://compound.ie/help-to-buy-calculator/ /tmp/htb-2027.html
+          grep -Fq '€35,000' /tmp/htb-2027.html
+
+          fetch https://compound.ie/rent-tax-credit-calculator/ /tmp/rent-credit-2027.html
+          grep -Fq '€1,150' /tmp/rent-credit-2027.html
 
           fetch https://compound.ie/compound-interest-calculator/ /tmp/compound-interest.html
           grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/compound-interest.html
@@ -127,11 +153,16 @@ jobs:
           grep -Fq 'net_worth' /tmp/tools.js
           grep -Fq 'solar_payback' /tmp/tools.js
           grep -Fq 'nutrition_needs' /tmp/tools.js
+          grep -Fq 'budget_2027' /tmp/tools.js
+          grep -Fq 'employer_cost_2027' /tmp/tools.js
+          grep -Fq '?.33:.31' /tmp/tools.js
 
           fetch https://compound.ie/sitemap.xml /tmp/sitemap.xml
           grep -Fq 'https://compound.ie/mortgage-calculator/' /tmp/sitemap.xml
           grep -Fq 'https://compound.ie/net-worth-calculator/' /tmp/sitemap.xml
           grep -Fq 'https://compound.ie/debt-repayment-calculator/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/budget-2027-calculator/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/employer-cost-calculator/' /tmp/sitemap.xml
 
           fetch https://compound.ie/wealth/how-to-start-investing-in-ireland/ /tmp/investing.html
           grep -Fq 'A complete beginner course for Irish investors' /tmp/investing.html
