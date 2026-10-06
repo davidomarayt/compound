@@ -1,12 +1,12 @@
 ---
-title: 'Personal Investment Account Ireland: How the New Account Will Work in 2027'
-seo_title: 'Personal Investment Account Ireland 2027: Tax, ETFs & Rules'
+title: 'Irish Investment Account 2027: €50,000 Tax-Free Threshold and 1% Rate'
+seo_title: 'Irish Investment Account 2027: €50k Threshold, 1% Tax & €12k Limit'
 slug: personal-investment-account-ireland
 pillar: wealth
 date: 2026-09-25
-reviewed: 2026-09-25
-summary: 'Ireland is introducing a new Personal Investment Account in 2027. Here is what is confirmed so far about tax, ETFs, deemed disposal, contribution limits, eligibility and the key Budget 2027 details still unknown.'
-meta_description: 'Ireland’s new Personal Investment Account explained: 2027 launch, ETFs, shares, tax-free threshold, no deemed disposal, tax rules and Budget 2027 updates.'
+reviewed: 2026-10-06
+summary: 'Budget 2027 confirms Ireland’s new Investment Account will open on 1 July 2027 with a €50,000 tax-free threshold, 1% annual tax above it and a €12,000 annual contribution limit.'
+meta_description: 'Irish Investment Account 2027 explained: 1 July launch, €50,000 tax-free threshold, 1% annual tax above it, €12,000 contribution limit and no deemed disposal.'
 tags: [personal investment account, ireland, investing, etfs, deemed disposal, investment tax, budget 2027]
 pexels_photo_id: 34016390
 related_tools:
@@ -35,41 +35,41 @@ sources:
   url: https://www.irishtimes.com/politics/2026/08/31/state-backed-investment-account-could-be-made-available-to-children-in-future/
 - title: 'The Irish Times: Who stands to benefit from the Government’s Personal Investment Account?'
   url: https://www.irishtimes.com/special-reports/2026/09/25/who-stands-to-benefit-from-the-governments-personal-investment-account/
+- title: 'RTÉ: Irish Investment Account to open on 1 July 2027'
+  url: https://www.rte.ie/news/business/2026/1006/1594235-investment-accounts-budget-2027/
+- title: 'Fine Gael: Budget 2027 investment-account tax treatment'
+  url: https://www.finegael.ie/helping-in-the-here-and-now-planning-for-the-future/
 ---
 
-Ireland is preparing to introduce a **Personal Investment Account (PIA)** in 2027.
+Ireland's new **Investment Account** is now substantially clearer after Budget 2027.
 
-For Irish investors, it could be one of the biggest structural changes to ordinary investing in years.
+The account is due to open on **1 July 2027** and is designed to let eligible adults hold investments such as **shares, bonds, funds and ETFs inside one simplified tax framework**.
 
-The proposed account is designed to let an eligible adult hold investments such as **shares, bonds, funds and ETFs inside one tax framework**. The existing deemed-disposal regime will not apply inside the account, providers are expected to handle the tax administration, and there will be no compulsory holding period.
+Budget 2027 confirmed the three numbers that matter most:
 
-But the three numbers that will determine how attractive the account actually is have **not yet been announced**:
+1. a **€50,000 tax-free threshold** based on account value;
+2. a **1% annual tax** on the portion of the account value above €50,000; and
+3. a **€12,000 maximum annual contribution**, with no minimum contribution.
 
-1. the tax-free threshold;
-2. the annual tax rate; and
-3. the annual contribution limit.
+The existing taxes that normally apply to different investment products will not apply inside the account. That includes Capital Gains Tax, dividend withholding tax, Investment Undertaking Tax and Life Assurance Exit Tax. The deemed-disposal rule will also not apply inside the account.
 
-Those are due to be announced in **Budget 2027 on 6 October 2026**.
-
-So this is not a page predicting what the Government might do. It is a living guide to what is confirmed, what remains unknown, and what the new account could change for an Irish investor.
-
-> **Current status — 25 September 2026:** the framework has been announced, but the account is not yet available to open. The key tax figures are expected in Budget 2027. Compound will update this page when the official numbers are published.
+> **Current status — 6 October 2026:** the Budget terms are announced, but the account is not yet available to open. It is due to launch on 1 July 2027 and will be legislated for in the Finance Bill.
 
 ## Personal Investment Account Ireland: the short version
 
 | Question | What we know so far |
 |---|---|
-| When is it expected to launch? | 2027 |
+| When will it launch? | **1 July 2027** |
 | Who is expected to qualify? | Irish residents aged 18+ with a PPS number |
 | How many accounts? | The published outline provides for one account per eligible person |
 | What can it hold? | Listed shares, listed bonds, regulated-market instruments and suitable investment funds, including ETFs |
 | Can it hold crypto? | No, under the current proposal |
 | Can it hold derivatives? | No, under the current proposal |
-| Minimum contribution? | None announced |
-| Annual contribution cap? | Yes, but the amount is not yet announced |
+| Minimum contribution? | **None** |
+| Annual contribution cap? | **€12,000 per year** |
 | Lock-in period? | None |
-| Tax-free amount? | Yes, but the threshold is not yet announced |
-| Tax above that amount? | A low flat annual rate is proposed; the rate is not yet announced |
+| Tax-free amount? | **First €50,000 of account value** |
+| Tax above that amount? | **1% a year on the portion above €50,000** |
 | Deemed disposal inside the PIA? | No, under the published framework |
 | Who handles the tax? | Providers are expected to calculate, report and pay tax due to Revenue |
 | Can you switch provider? | Transfers are intended to be tax-neutral where possible |
@@ -117,7 +117,7 @@ For many Irish investors, this is the headline feature.
 
 Under the existing Irish tax regime, many Irish-domiciled funds and equivalent offshore funds can be subject to the investment-fund tax regime rather than ordinary Capital Gains Tax.
 
-Revenue confirmed that the individual rate applying to relevant Irish-domiciled investment funds and equivalent offshore funds in qualifying jurisdictions fell from 41% to **38% from 1 January 2026**.
+Revenue confirmed that the individual rate applying to relevant Irish-domiciled investment funds and equivalent offshore funds in qualifying jurisdictions fell from 41% to **38% from 1 January 2026**. Budget 2027 announced a further reduction to **35% from 1 January 2027** for the existing regime outside the new Investment Account.
 
 That regime can also include **eight-year deemed disposal**: tax can become due at an eight-year point even though the investor has not actually sold the investment.
 
@@ -131,38 +131,29 @@ The Government has deferred wider consideration of the existing retail-investmen
 
 For the current rules outside the PIA, see [Investment Tax in Ireland: CGT, ETFs, Dividends and Deemed Disposal](/wealth/investment-tax-ireland/).
 
-## How will the new PIA tax work?
+## How will the new Investment Account tax work?
 
-The outline published so far says the account will have:
+The annual calculation is simple in principle:
 
-- a **tax-free threshold**;
-- a **low flat annual tax rate** on the value above that threshold; and
-- an **annual maximum contribution limit**.
+**Taxable account value = max(€0, account value − €50,000)**
 
-All three figures remain unknown.
+**Annual account tax = taxable account value × 1%**
 
-The tax structure is therefore different from simply charging tax when you sell an investment for a profit.
+So:
 
-Based on the framework currently described, the basic annual calculation would be:
+| Account value | Amount above €50,000 | Illustrative annual account tax |
+|---:|---:|---:|
+| €25,000 | €0 | **€0** |
+| €50,000 | €0 | **€0** |
+| €52,000 | €2,000 | **€20** |
+| €75,000 | €25,000 | **€250** |
+| €100,000 | €50,000 | **€500** |
 
-**Taxable PIA value = account value − tax-free threshold**
+This is a tax on **account value above the threshold**, not a 1% tax on gains.
 
-**Annual PIA tax = taxable PIA value × annual PIA tax rate**
+That distinction matters. If you contributed €50,000 over time and the account later grew to €100,000, the announced structure would not charge 31% CGT on the €50,000 gain inside the account. The annual account tax would instead be based on the €50,000 of account value above the threshold.
 
-If the account value is below the tax-free threshold, no PIA tax would be due under the announced framework.
-
-However, until the legislation and Budget figures are published, it would be misleading to put a euro tax bill beside a €5,000, €10,000 or €25,000 portfolio.
-
-### What we cannot calculate yet
-
-| Account value | Can we calculate the PIA tax today? | Why not? |
-|---:|---|---|
-| €5,000 | No | Tax-free threshold and rate are unknown |
-| €10,000 | No | Tax-free threshold and rate are unknown |
-| €25,000 | No | Tax-free threshold and rate are unknown |
-| €100,000 | No | Tax-free threshold, rate and contribution rules are unknown |
-
-As soon as the official figures are published, this section can become a worked calculator-style comparison.
+The final legislation will determine the precise valuation and administration mechanics.
 
 ## A crucial detail: the proposed tax is based on account value
 
@@ -213,14 +204,14 @@ The PIA is not simply a replacement for every other investment account.
 | Feature | Personal Investment Account | Normal taxable investing | PRSA / pension | Deposit savings |
 |---|---|---|---|---|
 | Main purpose | Flexible investing | Flexible investing | Retirement | Short-term savings / cash |
-| Expected availability | 2027 | Available now | Available now | Available now |
+| Expected availability | **1 July 2027** | Available now | Available now | Available now |
 | Access | No proposed lock-in | Generally flexible | Restricted by pension rules | Generally flexible, subject to product |
 | Upfront income-tax relief | Not announced | No | Can apply to qualifying pension contributions within limits | No |
 | Tax on investments | New annual PIA regime | Depends on asset/product | Investment income and gains not taxed as they arise inside a PRSA | Interest generally subject to deposit tax rules |
 | Deemed disposal | Not under proposed PIA rules | Can apply to relevant funds/ETFs | Not in the same way inside the pension wrapper | Not applicable |
 | Investment choice | Eligible shares, bonds, funds/ETFs | Broad, provider-dependent | Provider/fund-dependent | Cash products |
 | Market risk | Yes | Yes | Yes | Normally much lower; deposit protection rules may apply |
-| Contribution limit | Annual cap planned; amount unknown | No PIA-specific cap | Tax-relief limits and pension rules apply | Product-dependent |
+| Contribution limit | **€12,000 a year** | No PIA-specific cap | Tax-relief limits and pension rules apply | Product-dependent |
 
 A pension can still have a major advantage for retirement saving because qualifying contributions may receive **income-tax relief**, and the Pensions Authority states that investment income and capital gains are not taxed as they arise inside a PRSA.
 
@@ -236,7 +227,7 @@ See [Pension vs Investing in Ireland](/wealth/pension-vs-investing-ireland/) for
 
 Outside the PIA, direct shares commonly fall under Capital Gains Tax rules.
 
-Revenue states that the standard CGT rate is **33% for most gains**, and individuals have a **€1,270 annual personal exemption**.
+Budget 2027 cuts the standard CGT rate from **33% to 31% for disposals from 7 October 2026**. The existing annual personal exemption is separate from that rate change.
 
 Dividends have their own tax treatment.
 
@@ -252,7 +243,7 @@ That could make record keeping simpler, but whether it produces a lower or highe
 - provider and fund fees; and
 - the tax treatment that would otherwise have applied.
 
-Until the Budget numbers are known, claims that the PIA is automatically "better" or "worse" than a normal brokerage account are premature.
+The Budget numbers now make a meaningful comparison possible, but the result still depends on account size, investment returns, time horizon and provider fees. A 1% annual charge on value above €50,000 can be very attractive in some scenarios and less attractive in others.
 
 ## Can you transfer a PIA between providers?
 
@@ -282,29 +273,25 @@ So parents should not currently assume the 2027 PIA will be available as a child
 
 For the existing options, see [Saving and Investing for Your Child in Ireland](/wealth/saving-for-your-child-ireland/).
 
-## What will Budget 2027 decide?
+## What Budget 2027 confirmed
 
-Three numbers.
+The Budget settled the account's core economics:
 
-### 1. The tax-free threshold
+- **Launch:** 1 July 2027.
+- **Annual contribution limit:** €12,000.
+- **Minimum contribution:** none.
+- **Tax-free threshold:** €50,000 of account value.
+- **Annual tax above the threshold:** 1%.
+- **Tax administration:** handled by the provider in normal operation.
+- **CGT inside the account:** none.
+- **Dividend withholding tax inside the account:** none.
+- **Investment Undertaking Tax inside the account:** none.
+- **Life Assurance Exit Tax inside the account:** none.
+- **Deemed disposal inside the account:** does not apply.
 
-This determines how much account value can sit below the annual PIA tax charge.
+The key remaining commercial questions are provider fees, available investments, dealing costs, foreign-exchange charges and the exact transfer process.
 
-A larger threshold would make the account more attractive to smaller investors. A smaller threshold would cause the annual charge to begin earlier.
-
-### 2. The annual flat tax rate
-
-This is arguably the most important unknown because it is expected to apply every year to account value above the threshold.
-
-Even a small recurring percentage matters when applied over decades.
-
-### 3. The annual contribution limit
-
-This will determine how quickly an investor can build assets inside the wrapper.
-
-A low annual cap would make the PIA primarily a small-to-medium saver product. A high cap would allow a much larger portion of household investment wealth to move inside the structure over time.
-
-Budget 2027 is scheduled for **6 October 2026**. Compound's [Budget 2027 Ireland tracker](/wealth/budget-2027-what-to-watch/) follows the wider tax and household measures.
+Compound's [Budget 2027 Ireland guide](/wealth/budget-2027-what-to-watch/) covers the wider household package.
 
 ## What should you do before the PIA launches?
 
@@ -334,9 +321,9 @@ Do not look only at tax.
 
 Platform charges, dealing fees, foreign-exchange costs, fund charges and transfer fees can materially affect long-term returns.
 
-### 6. Wait for the official tax numbers
+### 6. Compare the full provider cost
 
-The threshold, annual tax rate and contribution cap are necessary before anyone can make a serious after-tax comparison.
+The tax terms are now known. The next major comparison is commercial: platform fees, dealing charges, foreign-exchange costs, fund charges and transfer fees.
 
 If you want to model the investment side independently of tax, use the [Compound Interest Calculator](/compound-interest-calculator/) and [Regular Savings Calculator](/regular-savings-calculator/).
 
@@ -374,11 +361,11 @@ So an investor who continues to hold relevant ETFs or funds outside a PIA may re
 
 ### When will the Personal Investment Account launch in Ireland?
 
-The Government intends for Personal Investment Accounts to become available in **2027**. The exact launch date and first providers have not yet been confirmed.
+The Investment Account is due to open on **1 July 2027**. The first provider line-up and individual provider pricing are still developing.
 
 ### Is the Irish Personal Investment Account available now?
 
-No. As of **25 September 2026**, the framework has been announced but the accounts are not yet available.
+No. As of **6 October 2026**, the Budget terms have been announced but accounts are not yet available. The launch date is **1 July 2027**.
 
 ### Will ETFs be allowed in a PIA?
 
@@ -390,7 +377,7 @@ The announced framework says the existing deemed-disposal regime will **not** ap
 
 ### What will the PIA tax rate be?
 
-It has not yet been announced. The Government says the flat annual rate, tax-free threshold and annual contribution limit will be announced in **Budget 2027 on 6 October 2026**.
+The announced rate is **1% per year on the portion of account value above €50,000**. The annual contribution limit is €12,000.
 
 ### Is the PIA tax charged only when I sell?
 
@@ -412,19 +399,15 @@ They are designed for different purposes. Pensions can provide income-tax relief
 
 No. The PIA is an investment wrapper, not a guaranteed savings product. Returns depend on the investments held inside it.
 
-## The three numbers to watch on 6 October
+## The numbers that now matter
 
-The framework is now reasonably clear.
+Budget 2027 has fixed the core tax structure:
 
-The economics are not.
+**€50,000 threshold × 1% annual tax above it × €12,000 annual contribution limit**
 
-For most ordinary investors, the entire PIA proposition will turn on the interaction between:
+That makes the next comparison much more practical.
 
-**tax-free threshold × annual tax rate × contribution limit**
-
-Those figures will tell us far more than the label on the account.
-
-Once Budget 2027 is published, Compound will update this guide with the confirmed figures, worked examples at multiple portfolio sizes, and a direct comparison with investing outside the PIA.
+For an investor deciding whether to use the account from July 2027, the important questions will be the investments available, the provider's total fees, how quickly the account can be funded and how the 1% annual charge compares with the tax that would otherwise apply outside the wrapper.
 
 <em>This article is educational information, not financial, investment or tax advice. Tax treatment depends on the final legislation and individual circumstances. Investments can fall as well as rise in value.</em>
 
@@ -433,11 +416,11 @@ Once Budget 2027 is published, Compound will update this guide with the confirme
   "@context":"https://schema.org",
   "@type":"FAQPage",
   "mainEntity":[
-    {"@type":"Question","name":"When will the Personal Investment Account launch in Ireland?","acceptedAnswer":{"@type":"Answer","text":"The Government intends for Personal Investment Accounts to become available in 2027. The exact launch date and first providers have not yet been confirmed."}},
-    {"@type":"Question","name":"Is the Irish Personal Investment Account available now?","acceptedAnswer":{"@type":"Answer","text":"No. As of 25 September 2026, the framework has been announced but the accounts are not yet available."}},
+    {"@type":"Question","name":"When will the Personal Investment Account launch in Ireland?","acceptedAnswer":{"@type":"Answer","text":"The Investment Account is due to open on 1 July 2027. Individual provider availability and pricing will depend on product launches."}},
+    {"@type":"Question","name":"Is the Irish Personal Investment Account available now?","acceptedAnswer":{"@type":"Answer","text":"No. As of 6 October 2026, the Budget terms are confirmed but the accounts are not yet available. The launch date is 1 July 2027."}},
     {"@type":"Question","name":"Will ETFs be allowed in a PIA?","acceptedAnswer":{"@type":"Answer","text":"The published framework includes suitable investment funds and ETFs among the types of assets expected to qualify, subject to final eligibility rules."}},
     {"@type":"Question","name":"Will deemed disposal apply inside the PIA?","acceptedAnswer":{"@type":"Answer","text":"The announced framework says the existing deemed-disposal regime will not apply to investments held inside the Personal Investment Account."}},
-    {"@type":"Question","name":"What will the PIA tax rate be?","acceptedAnswer":{"@type":"Answer","text":"It has not yet been announced. The flat annual rate, tax-free threshold and annual contribution limit are due to be announced in Budget 2027 on 6 October 2026."}},
+    {"@type":"Question","name":"What will the PIA tax rate be?","acceptedAnswer":{"@type":"Answer","text":"The announced rate is 1% per year on the portion of account value above €50,000, with a €12,000 annual contribution limit."}},
     {"@type":"Question","name":"Can I put crypto in a Personal Investment Account?","acceptedAnswer":{"@type":"Answer","text":"No. Crypto assets are excluded under the announced framework."}},
     {"@type":"Question","name":"Can I withdraw money before retirement?","acceptedAnswer":{"@type":"Answer","text":"The proposed account has no minimum holding period or lock-in period, although investments can still rise or fall in value."}}
   ]
