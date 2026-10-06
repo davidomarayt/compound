@@ -1,3 +1,13 @@
+## Budget 2027 CAT thresholds
+
+Budget 2027 increased all three Capital Acquisitions Tax group thresholds for benefits taken on or after **7 October 2026**:
+
+- Group A: **€420,000**;
+- Group B: **€44,000**;
+- Group C: **€22,000**.
+
+The standard CAT rate remains 33%. The calculator retains the previous €400,000 / €40,000 / €20,000 thresholds for older benefits, so the date basis can be selected explicitly.
+
 ## What this calculator is for
 
 This calculator estimates Capital Acquisitions Tax on a gift or inheritance using the relationship-based Group A, B or C threshold, prior aggregated benefits and the current 33% CAT rate.
@@ -20,11 +30,11 @@ The critical number is the **unused group threshold**, not simply the size of th
 
 ## Worked example
 
-If someone in Group A has a €400,000 threshold and has already received €100,000 of aggregated taxable benefits in that group, only €300,000 of threshold remains for a new benefit before CAT arises, subject to exemptions and reliefs.
+If someone using the new Group A €420,000 threshold has already received €100,000 of aggregated taxable benefits in that group, €320,000 of threshold remains for a new benefit before CAT arises, subject to exemptions and reliefs.
 
 ## Irish context
 
-Revenue's current thresholds are €400,000 for Group A, €40,000 for Group B and €20,000 for Group C. The current CAT rate is 33%. Spouse/civil-partner gifts and inheritances are generally exempt, and special reliefs such as agricultural or business relief can materially alter the outcome.
+For benefits taken on or after 7 October 2026, the thresholds are €420,000 for Group A, €44,000 for Group B and €22,000 for Group C. The previous €400,000 / €40,000 / €20,000 thresholds remain relevant to earlier benefits. The CAT rate remains 33%. Spouse/civil-partner gifts and inheritances are generally exempt, and special reliefs such as agricultural or business relief can materially alter the outcome.
 
 ## What can change the answer
 
@@ -56,7 +66,7 @@ Revenue can require a return before tax is actually due in some circumstances; c
 
 CAT thresholds are lifetime-style group thresholds rather than a fresh allowance for each gift or inheritance. Revenue requires relevant prior benefits received since 5 December 1991 in the same group to be aggregated.
 
-That can make an old gift surprisingly important. Someone who previously received €150,000 within Group A does not start again with the full €400,000 threshold for the next Group A inheritance.
+That can make an old gift surprisingly important. Someone who previously received €150,000 within Group A does not start again with the full threshold applicable on the date of the next benefit for the next Group A inheritance.
 
 There is also a filing rule worth knowing: Revenue states that an IT38 return is generally required when the total taxable value of benefits exceeds 80% of the relevant group threshold, even if the full threshold has not yet been exceeded. Claims for certain reliefs can also trigger filing requirements.
 
@@ -68,7 +78,7 @@ A common mistake is to look only at the current inheritance and compare it with 
 
 That means two people receiving the same inheritance today can have very different CAT outcomes because one may already have used a large part of the relevant Group A, B or C threshold.
 
-For benefits taken on or after 2 October 2024, Revenue lists the current thresholds as €400,000 for Group A, €40,000 for Group B and €20,000 for Group C. The current CAT rate is 33% on the taxable balance above the available threshold, subject to the applicable rules and reliefs.
+For benefits taken from 2 October 2024 until the Budget 2027 change, the thresholds were €400,000 for Group A, €40,000 for Group B and €20,000 for Group C. For benefits on or after 7 October 2026, the Budget 2027 thresholds are €420,000, €44,000 and €22,000 respectively. The current CAT rate is 33% on the taxable balance above the available threshold, subject to the applicable rules and reliefs.
 
 ### Build the calculation in the correct order
 
@@ -100,7 +110,7 @@ Revenue's current references are the [CAT group thresholds](https://www.revenue.
 
 ## Method and limitations
 
-The calculator takes the selected group threshold, subtracts relevant prior benefits and applies 33% to the taxable excess under its simplified assumptions. It does not determine relief eligibility or every valuation rule.
+The calculator takes the group threshold for the selected date basis, subtracts relevant prior benefits and applies 33% to the taxable excess under its simplified assumptions. It does not determine relief eligibility or every valuation rule.
 
 ### Useful sources
 

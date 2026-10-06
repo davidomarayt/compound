@@ -1,10 +1,16 @@
+## Budget 2027 Rent Tax Credit increase
+
+Budget 2027 increases the maximum Rent Tax Credit to **€1,150 for an individual** and **€2,300 for a jointly assessed married couple or civil partners**.
+
+The calculator now defaults to 2027 but retains the 2026 €1,000 / €2,000 caps for comparison. The usable credit is still constrained by 20% of qualifying rent and by the Income Tax liability available to offset.
+
 ## What this calculator is for
 
 The Rent Tax Credit reduces Income Tax for qualifying renters. This calculator estimates the credit from the rent and taxpayer circumstances entered, subject to the annual cap and available Income Tax liability.
 
 ## What limits the credit
 
-The usable credit is the lowest of three figures: **20% of qualifying rent**, the relevant **2026 statutory cap**, and the **Income Tax liability available to offset**. The calculator now names whichever of those is currently binding.
+The usable credit is the lowest of three figures: **20% of qualifying rent**, the relevant **statutory cap for the selected year**, and the **Income Tax liability available to offset**. The calculator now names whichever of those is currently binding.
 
 The effective-rent-relief percentage divides the usable credit by the qualifying rent you entered. It is a descriptive ratio, not a separate statutory rate. A household can therefore have the same statutory cap as another household but a different effective percentage because the rent paid or available Income Tax liability differs.
 
@@ -62,13 +68,13 @@ The credit is valuable, but it should not be treated as a permanent reduction in
 
 The calculator now makes the three constraints explicit: 20% of qualifying rent, the statutory annual maximum, and the Income Tax liability available to absorb the credit.
 
-For an individual, €5,000 of qualifying annual rent is enough for 20% of rent to reach the €1,000 statutory cap. For a jointly assessed couple or civil partners, €10,000 reaches the €2,000 cap. Paying more qualifying rent does not increase those statutory maxima.
+In 2027, an individual needs €5,750 of qualifying annual rent for 20% of rent to reach the €1,150 statutory cap. A jointly assessed couple reaches the €2,300 cap at €11,500 of qualifying rent. The 2026 caps remain selectable for comparison. Paying more qualifying rent does not increase those statutory maxima.
 
 The results therefore show both the qualifying rent needed to reach the statutory cap and any part of that cap left unused in the scenario. A low Income Tax liability can still reduce the usable credit even where enough rent was paid.
 
 ## The headline maximum is only one of several limits
 
-For 2024 to 2028, Revenue states that the maximum Rent Tax Credit is €1,000 a year for most individual claimants and €2,000 for jointly assessed married couples or civil partners. But the statutory maximum is not automatically the amount you receive.
+The calculator retains the previous €1,000 individual / €2,000 joint cap for 2026 and applies the Budget 2027 €1,150 / €2,300 cap when 2027 is selected. But the statutory maximum is not automatically the amount you receive.
 
 The usable credit can be constrained by qualifying rent, your Income Tax liability and the eligibility rules for the tenancy. That is why this calculator exposes the **binding limit** rather than only showing the headline cap.
 

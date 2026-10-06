@@ -1,6 +1,19 @@
+## Budget 2027 USC update
+
+Budget 2027 widens the 2% USC band so that the 3% rate begins after **€30,300** rather than €28,700.
+
+For the 2027 standard schedule, the calculator models:
+
+- 0.5% on the first €12,012;
+- 2% on the next €18,288;
+- 3% on the next €39,744;
+- 8% on the balance.
+
+The general €13,000 exemption remains in the model. The 2026 schedule remains selectable for comparison.
+
 ## What this calculator is for
 
-Universal Social Charge is a separate tax on income. This calculator applies the standard 2026 USC bands to the income entered and shows the estimated annual charge.
+Universal Social Charge is a separate tax on income. This calculator applies the standard USC bands for the selected 2026 or 2027 year to the income entered and shows the estimated annual charge.
 
 ## Why the effective USC rate is lower than the top band
 
@@ -104,7 +117,7 @@ Revenue's [2026 USC rates and thresholds](https://www.revenue.ie/en/jobs-and-pen
 
 ## Method and limitations
 
-The calculator applies the standard 2026 USC bands implemented in the site. It does not model every exemption, reduced-rate case or special income category.
+The calculator applies the standard USC bands implemented for the selected 2026 or 2027 tax year. It does not model every exemption, reduced-rate case or special income category.
 
 ### Useful sources
 

@@ -1,6 +1,14 @@
+## Budget 2027 update
+
+The calculator now defaults to **2027** while retaining a 2026 selector for direct comparison.
+
+For a basic single PAYE employee, the 2027 model uses a **€46,500** standard-rate band, a **€2,125 Single Person Tax Credit**, a maximum **€2,125 Employee Tax Credit**, the wider USC 2% band ending at **€30,300**, and the 2027 Class A PRSI blend including the legislated October 2027 increase.
+
+Use the year selector rather than trying to manually recreate the prior-year rules.
+
 ## What this calculator is for
 
-This calculator estimates 2026 Irish take-home pay after Income Tax, USC and employee PRSI under the assumptions built into the tool. It is designed to make the gap between gross salary and net income visible.
+This calculator estimates Irish take-home pay for the selected 2026 or 2027 tax year after Income Tax, USC and employee PRSI under the assumptions built into the tool. It is designed to make the gap between gross salary and net income visible.
 
 ## How take-home pay is calculated in Ireland
 
@@ -50,7 +58,7 @@ Only if included in the annual gross pay you enter.
 
 ## Advanced mode: use your own Revenue inputs
 
-Basic mode is intentionally a clean single-PAYE baseline. Advanced mode lets you replace the €44,000 standard-rate band with your own annual 20% band, add tax credits beyond the standard personal/employee credits already built into the model, and include an employee pension contribution.
+Basic mode is intentionally a clean single-PAYE baseline and now defaults to the Budget 2027 parameters. Advanced mode lets you replace the €44,000 standard-rate band with your own annual 20% band, add tax credits beyond the standard personal/employee credits already built into the model, and include an employee pension contribution.
 
 Advanced mode can also model Revenue's **reduced USC rates**. For 2026, those rates can apply to a qualifying person aged 70 or over or a full Medical Card holder where aggregate income is €60,000 or less. The calculator automatically falls back to standard USC when the income entered exceeds €60,000.
 
