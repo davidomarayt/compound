@@ -1,14 +1,14 @@
 ---
-title: 'Rent Tax Credit to increase in Budget 2027: what Irish renters need to know'
-seo_title: 'Rent Tax Credit Increase Budget 2027: What Irish Renters Need to Know'
+title: 'Rent Tax Credit Budget 2027: New €1,150 Credit Explained'
+seo_title: 'Rent Tax Credit Budget 2027: €1,150 Single, €2,300 Couple'
 slug: rent-tax-credit-budget-2027-ireland
 pillar: wealth
 draft: false
 publication_status: published
 date: 2026-09-21
-reviewed: 2026-09-21
-summary: 'Taoiseach Micheál Martin says the Rent Tax Credit will be increased in Budget 2027. The new amount has not yet been announced. Here is what the current credit is worth, who can claim it and how to judge the eventual increase.'
-meta_description: 'Ireland’s Rent Tax Credit will increase in Budget 2027. See the current €1,000 individual credit, eligibility rules, how to claim and what a higher credit could mean.'
+reviewed: 2026-10-06
+summary: 'Budget 2027 increases Ireland’s Rent Tax Credit to €1,150 for an individual and €2,300 for a jointly assessed couple. Here is what changed, who can claim and what the extra relief is worth.'
+meta_description: 'Budget 2027 Rent Tax Credit: €1,150 for an individual and €2,300 for a jointly assessed couple. See the increase, eligibility and worked examples.'
 tags: [budget-2027, rent-tax-credit, renters, housing, income-tax, ireland]
 related_tools:
 - rent-tax-credit-calculator
@@ -18,25 +18,20 @@ social:
   x:
     enabled: true
     text: >-
-      Ireland's Rent Tax Credit is increasing in Budget 2027. The new amount
-      has not yet been announced. Here is what renters need to know.
+      Budget 2027 raises Ireland's Rent Tax Credit to €1,150 for an individual
+      and €2,300 for a jointly assessed couple — an extra €150 or €300 a year.
   linkedin:
     enabled: true
     text: >-
-      Ireland's Rent Tax Credit will increase in Budget 2027, but the final
-      amount has not yet been announced. We break down the current €1,000
-      individual credit, eligibility rules and what different increases would
-      mean in practical euro terms.
+      Budget 2027 increases Ireland's Rent Tax Credit to €1,150 for an
+      individual and €2,300 for a jointly assessed couple. Compound explains
+      the eligibility rules, timing and what the extra relief is worth.
   instagram:
     enabled: false
-    caption: >-
-      Rent Tax Credit update: an increase is confirmed for Budget 2027, but
-      the new maximum has not yet been announced. Our guide explains the
-      current credit, who qualifies and what to watch on Budget day.
 sources:
-- title: 'RTÉ News: Rent tax credit to be increased in Budget, says Taoiseach — 21 September 2026'
-  url: https://www.rte.ie/news/2026/0921/1592282-budget-politics-ireland/
-- title: 'Revenue: Rent Tax Credit overview — current maximums for 2024 to 2028'
+- title: 'RTÉ: Budget 2027 housing measures — 6 October 2026'
+  url: https://www.rte.ie/news/business/2026/1006/1594234-housing-budget-2027/
+- title: 'Revenue: Rent Tax Credit overview'
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx
 - title: 'Revenue: How much can you claim?'
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/how-much-claim.aspx
@@ -44,353 +39,221 @@ sources:
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/qualifying-conditions.aspx
 - title: 'Revenue: How to claim the Rent Tax Credit'
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/how-to-claim.aspx
-- title: 'RTB: Director’s Quarterly Update, May 2026 — Q4 2025 rent index data'
-  url: https://rtb.ie/about/news/rtb-releases-directors-quarterly-update-may-2026/
 ---
 
-<p><em>Pre-Budget article. Information checked on 21 September 2026. The Government has confirmed an increase to the Rent Tax Credit, but the new amount and final commencement details have not yet been announced.</em></p>
+<p><em>Updated 6 October 2026 following the Budget 2027 announcement. The new maximums are €1,150 for an individual and €2,300 for a jointly assessed couple. Revenue guidance and the Finance Bill will determine the final administrative detail.</em></p>
 
-The Rent Tax Credit will be increased in Budget 2027, Taoiseach Micheál Martin has said.
+Budget 2027 has now answered the key question for renters.
 
-That is the confirmed part.
+The **Rent Tax Credit is increasing by €150 per individual**.
 
-The part that matters most to renters — **how large the increase will be** — is not yet confirmed.
+That takes the maximum from:
 
-RTÉ reported on 21 September that the Taoiseach said the renters' tax credit would rise in the Budget, while the Government was also examining fuel excise. [RTÉ News](https://www.rte.ie/news/2026/0921/1592282-budget-politics-ireland/).
+- **€1,000 to €1,150** for an individual; and
+- **€2,000 to €2,300** for a jointly assessed married couple or civil partnership.
 
-For a renter trying to work out what this means for their own finances, the sensible starting point is the current scheme.
+For someone who qualifies for the full individual credit and has enough Income Tax liability to use it, the increase is worth an extra **€150 a year**, or **€12.50 a month** when expressed as a simple monthly equivalent.
 
-Under Revenue's existing rules, the maximum Rent Tax Credit for the 2024 to 2028 tax years is:
+For a jointly assessed couple able to use the full combined credit, the increase is **€300 a year**, or **€25 a month**.
 
-- **€1,000 a year** in most individual cases; and
-- **€2,000 a year** for jointly assessed married couples or civil partners.
+For the wider package, see our [Budget 2027 household guide](/wealth/budget-2027-what-to-watch/).
 
-Those are the **current** limits. Budget 2027 may change them.
+## Budget 2027 Rent Tax Credit: before and after
 
-This article will be updated when the final Budget figure is announced.
-
-For the wider tax, childcare, energy and household-finance picture, see our [Budget 2027 household guide](/wealth/budget-2027-what-to-watch/).
-
-For the underlying eligibility rules and claim process, read our [complete Rent Tax Credit guide](/wealth/rent-tax-credit-ireland-who-can-claim/).
-
-## First: what is the Rent Tax Credit?
-
-The Rent Tax Credit reduces the amount of **Income Tax** you owe.
-
-That distinction matters.
-
-It is not automatically a €1,000 payment into your bank account, and it does not reduce USC or PRSI.
-
-Revenue states that you must have enough Income Tax liability to offset the credit. If the credit available to you is greater than your remaining Income Tax bill, you cannot use the unused balance against USC or PRSI.
-
-[Revenue: how much can you claim?](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/how-much-claim.aspx).
-
-For someone who qualifies for the full current individual credit and has enough Income Tax liability, the maximum reduction in their annual Income Tax bill is therefore:
-
-**€1,000.**
-
-That is equivalent to about:
-
-**€83.33 a month**
-
-when expressed as a simple annual-to-monthly comparison.
-
-The rent itself does not change. The tax bill does.
-
-## What is confirmed for Budget 2027?
-
-As of 21 September 2026:
-
-**Confirmed:** the Rent Tax Credit will increase.
-
-**Not confirmed:** the size of the increase.
-
-**Not yet finalised publicly:** the detailed implementation rules attached to the Budget change.
-
-That separation is important because pre-Budget reporting often mixes Government commitments, proposals being considered and outside recommendations.
-
-An increase is now part of the Government's stated Budget position. A specific new maximum should not be treated as settled until it appears in the Budget announcement or subsequent official documentation.
-
-## What could different increases mean?
-
-The table below is purely illustrative.
-
-It shows the effect on the **individual maximum** if the current €1,000 ceiling were increased by different amounts.
-
-| Hypothetical increase | Illustrative new individual maximum | Extra per year | Monthly equivalent of extra relief |
+| | Existing maximum | Budget 2027 maximum | Increase |
 |---|---:|---:|---:|
-| €100 | €1,100 | €100 | €8.33 |
-| €250 | €1,250 | €250 | €20.83 |
-| €500 | €1,500 | €500 | €41.67 |
-| €1,000 | €2,000 | €1,000 | €83.33 |
+| Individual | €1,000 | **€1,150** | **€150** |
+| Jointly assessed couple | €2,000 | **€2,300** | **€300** |
 
-These are **not Budget forecasts**.
+The credit reduces **Income Tax**. It is not a direct rent payment and does not reduce USC or PRSI.
 
-They simply show why the final number matters.
+That means the headline maximum is only fully useful where the claimant:
 
-A €100 increase and a €1,000 increase can both be described as "an increase", while having very different effects on a household budget.
+1. meets the eligibility rules;
+2. has paid enough qualifying rent; and
+3. has enough Income Tax liability to offset the credit.
 
-The actual benefit would also depend on eligibility, qualifying rent and Income Tax liability.
+## What the extra €150 actually means
 
-## The current maximum is €1,000 for most individual claims
+Take a single PAYE renter who qualifies for the full credit.
 
-Revenue's current guidance says that for 2024 to 2028 the maximum Rent Tax Credit is:
+Under the existing maximum:
 
-- **€2,000 for a jointly assessed married couple or civil partnership**; or
-- **€1,000 in all other cases**, including single people.
+**€1,000 annual Income Tax reduction**
 
-[Revenue: Rent Tax Credit overview](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx).
+Under the Budget 2027 maximum:
 
-Those figures are maximum credits, not automatic entitlements.
+**€1,150 annual Income Tax reduction**
 
-Revenue calculates the amount based on factors including the qualifying rent paid and the Income Tax available to offset.
+Difference:
 
-## A tax credit is not the same as a rent reduction
+**€150 a year**
 
-Suppose a tenant pays:
+That is the direct tax saving created by the Budget increase.
 
-**€1,500 per month in rent.**
+It does not mean rent falls by €150. The landlord still receives the agreed rent; the financial benefit comes through the renter's tax position.
 
-That is:
+## Who can claim the Rent Tax Credit?
 
-**€18,000 per year.**
-
-If the tenant qualifies for the full current €1,000 credit, the landlord still receives the agreed rent.
-
-The financial benefit is through the tenant's Income Tax position.
-
-So it is useful to keep two separate numbers in mind:
-
-1. **gross rent paid to the landlord**; and
-2. **net household cost after tax relief**.
-
-A larger Rent Tax Credit improves the second number. It does not directly change the first.
-
-## Why the increase matters when rents are already high
-
-The latest rent figures cited by the RTB in its May 2026 update relate to the **fourth quarter of 2025**.
-
-The RTB said the standardised average rent for:
-
-- new tenancies was **€1,755 per month**; and
-- existing tenancies was **€1,503 per month**.
-
-On average, sitting tenants were paying €252 a month less than new tenants.
-
-[RTB: Director's Quarterly Update](https://rtb.ie/about/news/rtb-releases-directors-quarterly-update-may-2026/).
-
-At €1,503 a month, twelve months of rent comes to:
-
-**€18,036.**
-
-At €1,755 a month, it is:
-
-**€21,060.**
-
-These are national standardised averages, not what every renter pays. Location, property type, tenancy history and other factors can produce very different individual rents.
-
-But they show why a change in the tax credit can be meaningful to a renter without being remotely equivalent to the full cost of renting.
-
-## Who can currently qualify?
-
-Revenue says the Rent Tax Credit may be available where qualifying rent is paid for:
+Revenue's existing rules allow the credit in qualifying cases where rent is paid for:
 
 - your principal private residence;
-- another property used to facilitate attendance at work or on an approved course; or
-- qualifying accommodation used by your child to facilitate attendance on an approved course.
+- another property used to facilitate attendance at work or an approved course; or
+- qualifying accommodation used by your child to facilitate attendance at an approved course.
 
 The detailed conditions depend on the rental arrangement.
 
-The property must generally be a residential property in Ireland.
+Where a tenancy is required to be registered with the Residential Tenancies Board, that registration requirement generally has to be satisfied.
 
-Where a tenancy is required to be registered with the Residential Tenancies Board, the registration requirement must be met for the credit to be available.
+Some arrangements, including certain rent-a-room or digs tenancies, can be treated differently under Revenue's rules.
 
-Some arrangements, such as certain rent-a-room or digs tenancies, do not require RTB registration and can still fall within the credit rules, subject to Revenue's conditions.
+For the full eligibility detail, read our [Rent Tax Credit guide](/wealth/rent-tax-credit-ireland-who-can-claim/).
 
-[Revenue: qualifying conditions](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/qualifying-conditions.aspx).
+## Who cannot claim under the existing rules?
 
-## Who cannot claim under the current rules?
+A major exclusion applies to supported tenants.
 
-One important exclusion applies to "supported tenants".
+Revenue says the credit is not available where the claimant receives State housing support such as:
 
-Revenue says you cannot claim the Rent Tax Credit if you receive State housing support such as:
-
-- Housing Assistance Payment (**HAP**);
+- Housing Assistance Payment (HAP);
 - Rent Supplement; or
-- the Rental Accommodation Scheme (**RAS**).
+- Rental Accommodation Scheme (RAS).
 
-Revenue also states that the credit cannot be claimed for a rent top-up paid by a supported tenant above the amount covered by one of those schemes.
+The credit is also not available simply because a renter pays a top-up above one of those supports.
 
-The credit is also not available where the landlord is a Housing Association or Approved Housing Body.
+Other restrictions can apply depending on the landlord, tenancy and relationship between the parties.
 
-Other restrictions can apply depending on the relationship between tenant and landlord.
+## Renting from a relative
 
-These are the current rules. Budget legislation could amend tax provisions, so anyone affected should re-check Revenue guidance after the Budget.
+The relationship rules are more nuanced than a blanket ban on renting from family.
 
-## What if you rent from a relative?
+For a principal private residence, Revenue's current rules restrict claims in certain parent-child arrangements.
 
-The relationship rules are more detailed than a simple ban on renting from family.
+Other family tenancies can potentially qualify where the relevant conditions, including RTB registration where required, are satisfied.
 
-For a principal private residence, Revenue says the credit is not available where the tenant and landlord are parent and child, or vice versa.
-
-For some other family relationships, the credit may still be available where the tenancy is of a type that must be registered with the RTB and the landlord has complied with that requirement.
-
-This is an area where it is worth reading Revenue's conditions rather than relying on a general rule of thumb.
-
-[Revenue: principal private residence conditions](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/principal-residence.aspx).
+Because these cases are fact-specific, Revenue's qualifying-condition pages are more reliable than a general rule of thumb.
 
 ## Can parents claim for student accommodation?
 
 Potentially.
 
-Revenue's scheme can apply where a parent pays qualifying rent for a property used by their child to attend an approved course, subject to specific conditions.
+The scheme can apply where a parent pays qualifying rent for accommodation used by their child to attend an approved course, subject to Revenue's specific conditions.
 
-That means the Rent Tax Credit is not limited to the person physically living in the rented property in every case.
+That means the person claiming the credit is not always the person physically living in the rented property.
 
-Parents paying for student accommodation should check the separate Revenue conditions covering property used by a child before claiming.
+## How do you claim it?
 
-## How do you claim the 2026 credit?
+PAYE taxpayers can claim the Rent Tax Credit through Revenue's **myAccount**.
 
-For PAYE taxpayers, Revenue allows the 2026 Rent Tax Credit to be claimed during the year through myAccount.
+The current route is:
 
-Revenue's current route is:
+**myAccount → PAYE Services → Manage your tax for the current year → Add new credits → You and your family → Rent Tax Credit**
 
-**myAccount → PAYE Services → Manage your tax for the current year → Add new credits → You and your family → Rent Tax Credit.**
+A claim can also be made through the relevant Income Tax Return.
 
-Alternatively, the 2026 credit can be claimed by completing the 2026 Income Tax Return in 2027.
+Self-assessed taxpayers claim through the normal return process.
 
-[Revenue: how to claim](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/how-to-claim.aspx).
+The Budget increase changes the maximum available; it does not remove the need to make a valid claim.
 
-The practical point is that an available tax credit does not help your household unless it is actually claimed.
+## What records should you keep?
 
-## What information should you keep?
-
-Revenue advises claimants to provide as much information about the rental arrangement as possible and to retain records in case they are requested later.
-
-Depending on the tenancy, useful information can include:
+Useful records can include:
 
 - the rental property's address;
-- rent paid during the relevant year;
+- the amount of qualifying rent paid;
 - landlord details;
 - RTB registration information where applicable; and
-- records supporting the rental payments.
+- records showing the rental payments.
 
-Only the amount paid for use of the property counts as rent for the credit.
+Only qualifying rent counts. Amounts paid separately for services such as utilities, food, laundry or other extras may need to be excluded.
 
-Revenue says amounts paid for additional services such as utilities, board or laundry should be excluded when calculating qualifying rent.
+## Worked example: €1,600 monthly rent
 
-## How should renters judge the Budget announcement?
+Suppose a single renter pays:
 
-When the final figure is published, four details will matter more than the headline alone.
+**€1,600 per month**
 
-### 1. The new maximum
+Annual rent:
 
-This tells you the largest possible credit.
+**€19,200**
 
-It does not tell you that every renter will receive that amount.
+Assume the renter meets all Revenue conditions and has enough Income Tax liability to use the full credit.
 
-### 2. The start date
+Under the old maximum:
 
-A measure described in Budget 2027 could have a particular commencement date.
+**€1,000 relief**
 
-That determines when the benefit actually begins.
+Under the Budget 2027 maximum:
 
-### 3. Whether the eligibility rules change
+**€1,150 relief**
 
-An increase in the maximum is one question.
+The Budget therefore improves their annual position by:
 
-Changes to who qualifies could be equally important for some households.
+**€150**
 
-### 4. Your own Income Tax liability
+The effective annual rent cost is still overwhelmingly determined by the rent itself. The credit is useful relief, but it is not equivalent to a material cut in market rent.
 
-Because the Rent Tax Credit offsets Income Tax, the usable amount can depend on how much Income Tax you otherwise owe.
+## Does the increase solve rental affordability?
 
-A larger headline credit does not necessarily mean every qualifying renter receives the entire stated maximum.
+No single tax credit can answer the broader rental-affordability problem.
 
-## Does increasing the credit solve rental affordability?
+The direct effect of this measure is clear: qualifying renters can offset more Income Tax.
 
-That is a broader policy question than the value of the credit itself.
+It does not itself:
 
-The direct effect of the Rent Tax Credit is straightforward: it can reduce the Income Tax liability of qualifying renters.
+- build more rental homes;
+- cap the rent on a tenancy;
+- reduce the rent a landlord charges; or
+- guarantee lower market rents.
 
-It does **not**, by itself:
+That wider debate depends on housing supply, construction, rental regulation and household incomes.
 
-- build additional rental homes;
-- set the rent charged on a tenancy;
-- guarantee that rents fall; or
-- determine how landlords or the wider rental market respond.
+For a renter, however, the practical Budget calculation is straightforward: **up to €150 more annual relief per individual**.
 
-Supporters of renter tax relief can point to the immediate reduction in tax for qualifying households.
+## What should renters do now?
 
-Critics of demand-side housing supports may argue that affordability also depends on housing supply, construction, rental regulation and broader market conditions.
+If you are eligible, the useful steps are:
 
-The Budget measure should therefore be assessed for what it directly does — tax relief for qualifying renters — separately from the wider housing-policy debate.
+1. make sure your tenancy satisfies the relevant Revenue rules;
+2. keep evidence of qualifying rent paid;
+3. check whether RTB registration is required and in place;
+4. claim the credit rather than assuming it is automatic; and
+5. use the correct tax-year maximum when Revenue updates its systems for the Budget 2027 change.
 
-## A worked example
+## Frequently asked questions
 
-Consider a single PAYE renter who:
+### How much is the Rent Tax Credit after Budget 2027?
 
-- qualifies under Revenue's rules;
-- pays enough rent to support the full credit; and
-- has enough Income Tax liability to use it.
+The announced maximum is **€1,150 for an individual** and **€2,300 for a jointly assessed couple**.
 
-Under the current maximum:
+### How much did Budget 2027 add?
 
-**Rent Tax Credit: €1,000**
+The increase is **€150 per individual**, or **€300 for a jointly assessed couple** using the full combined maximum.
 
-If, purely as an example, Budget 2027 increased the maximum to €1,500:
+### Is the Rent Tax Credit a cash payment?
 
-**New maximum: €1,500**
+No. It is an Income Tax credit. It reduces qualifying Income Tax liability.
 
-**Additional annual tax relief: €500**
+### Does it reduce USC or PRSI?
 
-**Monthly equivalent: €41.67**
+No. The Rent Tax Credit offsets Income Tax, not USC or PRSI.
 
-Again, €1,500 is **not** the announced Budget figure. It is an illustration.
+### Do HAP tenants qualify?
 
-Once the real amount is announced, the same calculation becomes simple:
+Under Revenue's existing rules, supported tenants receiving HAP, Rent Supplement or RAS generally cannot claim the credit.
 
-**new maximum − current maximum = potential additional annual relief**
+### Is the credit automatic?
 
-Then divide by 12 if you want a monthly equivalent.
+No. You need to claim it through Revenue and satisfy the scheme conditions.
 
-## The important distinction on Budget day
+## The bottom line
 
-There will likely be plenty of large numbers in Budget coverage.
+Budget 2027 has moved the Rent Tax Credit from **€1,000 to €1,150 per individual**.
 
-For renters, the useful calculation is much smaller and more personal.
+For a qualifying single renter who can use the full credit, that is **€150 more a year**.
 
-Ask:
+For a qualifying jointly assessed couple using the full combined credit, it is **€300 more a year**.
 
-> What was the maximum before the Budget?
+The amount matters, but eligibility still matters just as much.
 
-Then:
-
-> What is the maximum after the Budget?
-
-Then:
-
-> Do I qualify for the full amount, and when does it begin?
-
-That turns a political headline into a household-finance calculation.
-
-## Where things stand on 21 September 2026
-
-The position is currently:
-
-| Question | Position |
-|---|---|
-| Will the Rent Tax Credit increase? | **Yes — announced by the Taoiseach** |
-| What is the current individual maximum? | **€1,000** |
-| What is the current jointly assessed maximum? | **€2,000** |
-| Has the new maximum been announced? | **No** |
-| Can PAYE renters claim the 2026 credit in-year? | **Yes, subject to Revenue's rules** |
-| When is Budget 2027 due? | **6 October 2026** |
-
-The most important number is therefore still missing.
-
-When Budget 2027 is announced, this page will be updated with the confirmed maximum, commencement date, eligibility changes and worked examples showing the difference for renters.
-
-Until then, the current €1,000 / €2,000 limits remain the figures to use when looking at the existing Rent Tax Credit.
-
-<p><em>This article provides general information on Irish tax and Budget measures. Individual entitlement depends on Revenue's rules and personal circumstances. Check Revenue guidance or obtain professional tax advice where needed.</em></p>
+<p><em>This article provides general information on Irish tax and Budget measures. Individual entitlement depends on Revenue rules, the relevant tax year and personal circumstances.</em></p>
