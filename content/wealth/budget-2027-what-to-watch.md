@@ -19,10 +19,11 @@ tags:
 - cost-of-living
 - energy
 related_tools:
+- budget-2027-calculator
 - take-home-pay-calculator
+- employer-cost-calculator
 - childcare-return-to-work-calculator
 - myfuturefund-calculator
-- retirement-income-calculator
 sources:
 - title: 'Department of Finance: Statement by Minister Harris on Budget 2027'
   url: https://www.gov.ie/en/department-of-finance/speeches/statement-by-minister-harris-on-budget-2027/
