@@ -346,6 +346,31 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
     meta, raw, match = parse(path)
     slug = str(meta.get("slug") or path.stem)
 
+    # Editorially approved stock images can be pinned by their public image URL.
+    # This path bypasses search ranking and API-rate limits entirely, while still
+    # downloading the asset locally so the site never hotlinks the publisher.
+    pinned_image_url = str(meta.get("hero_image_url") or "").strip()
+    if pinned_image_url:
+        if image_exists(meta) and not force:
+            return "skip:has-pinned-url-image"
+        try:
+            hero_rel = f"/static/images/evergreen/{slug}.jpg"
+            download(pinned_image_url, STATIC / hero_rel.removeprefix("/static/"))
+            fields = {
+                "image": hero_rel,
+                "image_alt": str(meta.get("hero_image_alt") or f"Illustrative photo for {meta.get('title', 'Compound')}"),
+                "image_credit": str(meta.get("hero_image_credit") or ""),
+                "image_source": str(meta.get("hero_image_source") or pinned_image_url),
+                "social_image": hero_rel,
+            }
+            inject_fields(path, raw, match, fields)
+            return "pinned-url"
+        except Exception as exc:
+            print(f"Pinned image URL failed for {path.name}: {exc}")
+            if image_exists(meta):
+                return "skip:pinned-url-fetch-failed-existing"
+            return "skip:pinned-url-fetch-failed-no-image"
+
     # Evergreen articles can pin a specific Pexels photo by ID. This keeps the
     # selected cover stable while reusing the same attribution/download pipeline.
     pinned_pexels_id = str(meta.get("pexels_photo_id") or "").strip()
