@@ -1,14 +1,14 @@
 ---
-title: "How to Make a Will in Ireland: A Complete Guide"
-seo_title: "How to Make a Will in Ireland 2026: Complete Guide"
+title: "Making a Will in Ireland: Complete Guide & Costs"
+seo_title: "Making a Will in Ireland 2027: Guide, Rules & Costs"
 slug: how-to-make-a-will-ireland
 pillar: wealth
 draft: false
 publication_status: published
 date: 2026-10-05
-reviewed: 2026-10-05
-summary: "A practical guide to making a valid will in Ireland: who can make one, what it should contain, choosing executors and witnesses, spouse and child rights, cohabiting partners, changing a will, storing the original and what happens after death."
-meta_description: "How to make a will in Ireland: legal requirements, witnesses, executors, spouse and child rights, cohabiting partners, changing a will and probate explained."
+reviewed: 2026-10-07
+summary: "A complete 2027 guide to making a will in Ireland: legal requirements, witnesses, executors, guardians, spouse and child rights, cohabiting partners, solicitor costs, storage, changes and probate."
+meta_description: "Making a will in Ireland in 2027: legal rules, witnesses, executors, guardians, spouse and child rights, solicitor costs, storage, changes and probate."
 tags: [will, wills, estate-planning, probate, inheritance, succession, executor, ireland]
 news_image_query: "Irish will estate planning documents solicitor family paperwork pen legal documents"
 related_tools:
@@ -20,7 +20,7 @@ social:
   x:
     enabled: true
     text: >-
-      Making a will in Ireland is simple in principle but easy to get wrong. We built a complete guide covering witnesses, executors, spouse and child rights, cohabiting partners, changing a will, probate and the mistakes that can invalidate gifts.
+      Making a will in Ireland is simple in principle but easy to get wrong. Our 2027 guide covers legal requirements, witnesses, executors, guardians, spouse and child rights, cohabiting partners, solicitor costs, storage, probate and the mistakes that can invalidate gifts.
   linkedin:
     enabled: true
     text: >-
@@ -28,8 +28,16 @@ social:
   instagram:
     enabled: false
 sources:
-  - title: "Citizens Information: Making a will — validity requirements, witnesses, contents and revocation. Checked 5 October 2026."
+  - title: "Citizens Information: Making a will — validity requirements, witnesses, contents, costs and revocation. Checked 7 October 2026."
     url: https://www.citizensinformation.ie/en/death/before-a-death/making-a-will/
+  - title: "Law Society of Ireland: Get a Quote — solicitor quote service covering making a will and probate. Checked 7 October 2026."
+    url: https://www.lawsociety.ie/getaquote
+  - title: "Irish Times: Making a will, administering an estate, and will disputes — published fee examples and legal-cost context, 1 June 2026."
+    url: https://www.irishtimes.com/crime-law/2026/06/01/making-a-will-administering-an-estate-and-will-disputes-the-costs-and-challenges/
+  - title: "Mark A. Quinn Solicitors: published standard will fee range of €150–€300 plus VAT. Checked 7 October 2026."
+    url: https://maqs.ie/wills-and-probate/
+  - title: "Coyne Solicitors: published fixed fees of €369 for a single will and €615 for couples' mirror wills, VAT included. Checked 7 October 2026."
+    url: https://coynesolicitors.ie/services/wills
   - title: "Succession Act 1965, section 77 — capacity to make a will."
     url: https://www.irishstatutebook.ie/eli/1965/act/27/section/77/enacted/en/html
   - title: "Succession Act 1965, section 78 — signing and witnessing a will."
@@ -73,7 +81,7 @@ If you own a home, savings, investments, a car, a business interest, personal po
 <p>A solicitor is not legally required for every will, but legal advice is strongly worth considering where there is property, children, a business, a cohabiting partner, a blended family, overseas assets, a possible family dispute or a large estate.</p>
 </div>
 
-This guide reflects Irish succession law checked on **5 October 2026**.
+This guide reflects Irish succession law and published solicitor pricing checked on **7 October 2026**.
 
 It is general information, not personal legal advice. Wills are one of the areas where a relatively small drafting mistake can create a very expensive problem later.
 
@@ -716,6 +724,57 @@ Review the will after:
 
 Even without a major event, reading it every few years is sensible.
 
+## How much does it cost to make a will in Ireland?
+
+There is **no national fixed fee** for making a will.
+
+Citizens Information says solicitor charges vary, and the Law Society of Ireland operates a quote service that includes will-making. In practice, the price depends on how much advice and drafting your circumstances require.
+
+Published prices checked in October 2026 show the sort of range people may encounter:
+
+<div class="cs-table-wrap" tabindex="0" role="region" aria-label="Published examples of will drafting costs in Ireland">
+<table>
+<caption>Published Irish solicitor pricing examples — check the firm's current quote before proceeding</caption>
+<thead>
+<tr><th scope="col">Example</th><th scope="col">Published price</th><th scope="col">Notes</th></tr>
+</thead>
+<tbody>
+<tr><td>Mark A. Quinn Solicitors</td><td>€150–€300 + VAT</td><td>Standard will drafting; more complex wills priced by time</td></tr>
+<tr><td>Coyne Solicitors</td><td>€369 incl. VAT</td><td>Single straightforward will</td></tr>
+<tr><td>Coyne Solicitors</td><td>€615 incl. VAT</td><td>Couples' mirror wills</td></tr>
+</tbody>
+</table>
+</div>
+
+The Irish Times also reported in June 2026 that one firm charged **€350 + VAT for one will** and **€550 + VAT for two**, while more specialist or complex work can start higher.
+
+Those are examples, not an official national tariff.
+
+A straightforward will is usually cheaper than a will involving:
+
+- trusts for children;
+- a farm or trading business;
+- foreign property;
+- a blended family;
+- substantial tax planning;
+- a vulnerable beneficiary;
+- disputed capacity;
+- or likely family conflict.
+
+Ask for a written quote and clarify whether it includes:
+
+- the initial consultation;
+- drafting and revisions;
+- execution/signing guidance;
+- VAT;
+- will storage;
+- and any later amendments.
+
+<div class="cs-intro">
+<p class="cs-kicker">Cost takeaway</p>
+<p>For a simple will, current published Irish examples cluster in the low hundreds of euro. There is no fixed national price, so compare written quotes rather than relying on one headline number.</p>
+</div>
+
 ## Do you need a solicitor?
 
 Legally, not always.
@@ -888,6 +947,10 @@ Family, assets and law change.
 
 Yes. You can make your own will, but it must meet the legal validity and execution requirements. A solicitor is particularly advisable for complicated family or asset situations.
 
+### How much does a will cost in Ireland?
+
+There is no set national fee. Current published examples for straightforward wills are generally in the low hundreds of euro, with higher fees for trusts, farms, businesses, foreign assets or more involved estate planning. Always get a written quote and check whether VAT, revisions and storage are included.
+
 ### How many witnesses do I need?
 
 Two witnesses. The testator's signature must be made or acknowledged in the presence of both witnesses present at the same time.
@@ -918,7 +981,7 @@ No. Cohabitation does not automatically revoke an existing will.
 
 ### Where should I keep my will?
 
-Keep the original securely and make sure the executor knows where it is. Solicitor storage or secure fire-resistant storage are common options.
+Keep the original securely and make sure the executor knows where it is. Solicitor storage or secure fire-resistant storage are common options. The Law Society's Probate Committee said in August 2026 that the safest place is generally the solicitor's will safe, and that any storage charge should be agreed with the client in advance.
 
 ## The Compound wills, probate & inheritance cluster
 
@@ -965,6 +1028,7 @@ It is the one that is legally valid, clearly expresses what you want and can act
   "@type":"FAQPage",
   "mainEntity":[
     {"@type":"Question","name":"Can I make my own will in Ireland?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can make your own will, but it must meet the legal validity and execution requirements. A solicitor is particularly advisable for complicated family or asset situations."}},
+    {"@type":"Question","name":"How much does a will cost in Ireland?","acceptedAnswer":{"@type":"Answer","text":"There is no fixed national fee. Published prices for straightforward solicitor-drafted wills are commonly in the low hundreds of euro, while complex estate planning costs more. Ask for a written quote and check whether VAT, revisions and storage are included."}},
     {"@type":"Question","name":"How many witnesses do I need for a will in Ireland?","acceptedAnswer":{"@type":"Answer","text":"Two witnesses. The testator's signature must be made or acknowledged in the presence of both witnesses present at the same time."}},
     {"@type":"Question","name":"Can a beneficiary witness my will?","acceptedAnswer":{"@type":"Answer","text":"They should not. A gift to an attesting witness, or the witness's spouse or civil partner, is void under the Succession Act."}},
     {"@type":"Question","name":"Can I leave my spouse nothing in my will?","acceptedAnswer":{"@type":"Answer","text":"A surviving spouse or civil partner normally has a statutory legal-right share: one-half where there are no children, or one-third where there are children, subject to specific legal exceptions and renunciations."}},
