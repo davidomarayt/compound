@@ -11,7 +11,10 @@ summary: "Pickleball is growing rapidly across Ireland. This complete beginner's
 meta_description: "Pickleball Ireland guide: learn the rules, scoring, court layout, equipment, costs, club finder, tournaments and how to start playing pickleball in Ireland."
 tags: [pickleball, sport, leisure, hobbies, clubs, exercise, community, ireland]
 news_image_query: "pickleball paddle ball on court"
-pexels_photo_id: "38208389"
+hero_image_url: "https://images.pexels.com/photos/38208389/pexels-photo-38208389.jpeg?cs=srgb&dl=pexels-abdulaziz-hasan-2154785125-38208389.jpg&fm=jpg"
+hero_image_alt: "Purple pickleball paddle and yellow perforated ball resting on a green pickleball court."
+hero_image_credit: "Abdulaziz hasan on Pexels"
+hero_image_source: "https://www.pexels.com/photo/pickleball-paddle-and-ball-on-court-38208389/"
 social:
   enabled: true
   url: https://compound.ie/life/pickleball-ireland/
