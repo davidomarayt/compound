@@ -10,7 +10,8 @@ reviewed: 2026-10-07
 summary: "Pickleball is growing rapidly across Ireland. This complete beginner's guide explains what the sport is, how the rules work, what equipment you need, how scoring works, where to find a club and how to start playing."
 meta_description: "Pickleball Ireland guide: learn the rules, scoring, court layout, equipment, costs, club finder, tournaments and how to start playing pickleball in Ireland."
 tags: [pickleball, sport, leisure, hobbies, clubs, exercise, community, ireland]
-news_image_query: "pickleball doubles players court paddles Ireland sport"
+news_image_query: "pickleball paddle ball on court"
+pexels_photo_id: "38208389"
 social:
   enabled: true
   url: https://compound.ie/life/pickleball-ireland/
