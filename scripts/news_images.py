@@ -155,7 +155,7 @@ def default_query(meta: dict[str, Any]) -> str:
 
 USED_PEXELS_PHOTO_IDS: set[int] = set()
 
-def pexels_photo(query: str, api_key: str, seed_key: str = "") -> dict[str, Any] | None:
+def pexels_photo(query: str, api_key: str, seed_key: str = "", prefer_ranked: bool = False) -> dict[str, Any] | None:
     with httpx.Client(timeout=30, follow_redirects=True) as client:
         response = client.get(
             "https://api.pexels.com/v1/search",
@@ -167,12 +167,15 @@ def pexels_photo(query: str, api_key: str, seed_key: str = "") -> dict[str, Any]
         if not photos:
             return None
 
-        # Rotate the result order deterministically per article, then choose the
-        # first photo not already used during this build. This prevents several
-        # different stories from receiving the same generic stock image.
-        seed = sum(ord(ch) for ch in (seed_key or query))
-        offset = seed % len(photos)
-        ordered = photos[offset:] + photos[:offset]
+        # For an explicit editorial query, preserve Pexels relevance ranking.
+        # Only rotate generic/tag-derived searches, where avoiding repeated stock
+        # matters more than choosing between near-equivalent results.
+        if prefer_ranked:
+            ordered = photos
+        else:
+            seed = sum(ord(ch) for ch in (seed_key or query))
+            offset = seed % len(photos)
+            ordered = photos[offset:] + photos[:offset]
         for photo in ordered:
             photo_id = int(photo.get("id") or 0)
             if photo_id and photo_id not in USED_PEXELS_PHOTO_IDS:
@@ -372,17 +375,10 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
             if image_exists(meta):
                 return "skip:pinned-fetch-failed-existing"
 
-            fallback_rel = f"/static/images/{'news' if is_published_news(meta) else 'evergreen'}/{slug}.jpg"
-            photo = fallback_image(meta, STATIC / fallback_rel.removeprefix("/static/"))
-            fields = {
-                "image": fallback_rel,
-                "image_alt": photo["alt"],
-                "image_credit": photo["credit"],
-                "image_source": photo["url"],
-                "social_image": fallback_rel,
-            }
-            inject_fields(path, raw, match, fields)
-            return "photo-fallback:pinned-pexels-unavailable"
+            # If an editor pinned an exact stock photo, never replace it with an
+            # unrelated generic pillar image. It is better to render no hero than
+            # silently publish the wrong visual.
+            return "skip:pinned-fetch-failed-no-image"
 
     if not is_published(meta):
         return "skip:not-published"
@@ -393,9 +389,10 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
             return "skip:has-image"
 
         query = default_query(meta)
+        explicit_query = bool(str(meta.get("news_image_query") or "").strip())
         if api_key:
             try:
-                photo = pexels_photo(query, api_key, slug)
+                photo = pexels_photo(query, api_key, slug, prefer_ranked=explicit_query)
                 if photo:
                     hero_rel = f"/static/images/evergreen/{slug}.jpg"
                     download(photo["src"]["landscape"], STATIC / hero_rel.removeprefix("/static/"))
@@ -411,6 +408,12 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
                     return f"pexels-evergreen:{photo.get('id')}:{query}"
             except Exception as exc:
                 print(f"Pexels evergreen lookup failed for {path.name}: {exc}")
+
+        # An explicit editorial query means the article has a real visual subject.
+        # Do not substitute a generic pillar image if that topical lookup fails;
+        # a missing hero is preferable to a misleading one.
+        if explicit_query:
+            return f"skip:evergreen-topic-image-unavailable:{query}"
 
         fallback_rel = f"/static/images/evergreen/{slug}.jpg"
         photo = fallback_image(meta, STATIC / fallback_rel.removeprefix("/static/"))
@@ -434,7 +437,7 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
 
     if api_key:
         try:
-            photo = pexels_photo(query, api_key)
+            photo = pexels_photo(query, api_key, prefer_ranked=bool(str(meta.get("news_image_query") or "").strip()))
             if photo:
                 hero_rel = f"/static/images/news/{slug}.jpg"
                 social_rel = f"/static/images/news/{slug}-portrait.jpg"
