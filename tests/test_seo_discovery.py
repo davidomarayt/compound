@@ -68,7 +68,7 @@ Yes.
     assert "/static/discover/seo-news-test-16x9.webp" in html
 
     sitemap = (settings.public_dir / "sitemap.xml").read_text(encoding="utf-8")
-    assert "<loc>https://example.test/life/</loc>" in sitemap
+    assert sitemap.count("<loc>https://example.test/life/</loc>") == 1
 
     legacy_life = (settings.public_dir / "happiness" / "index.html").read_text(encoding="utf-8")
     assert '<meta name="robots" content="noindex,follow">' in legacy_life
