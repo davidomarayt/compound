@@ -305,6 +305,8 @@ But you cannot take an inheritance after a death and simply deduct another €3,
 
 For families building wealth over many years, that distinction is important. The exemption can form part of a genuine lifetime gifting strategy, but it is not a last-minute inheritance allowance.
 
+For the lifetime-transfer side in detail — including gifts from parents, house deposits, grandparents, family loans and worked examples — read [Gift Tax in Ireland 2027](/wealth/gift-tax-ireland/).
+
 ## What is the taxable value of an inheritance?
 
 Revenue distinguishes between **market value** and **taxable value**.
