@@ -1,6 +1,6 @@
 ---
 title: "Inheritance Tax in Ireland: How Much Can You Inherit Tax-Free?"
-seo_title: "Inheritance Tax Ireland 2026: CAT Thresholds & Examples"
+seo_title: "Inheritance Tax Ireland 2027: CAT Thresholds & Calculator"
 slug: inheritance-tax-ireland
 news_image_query: "older couple family paperwork home estate planning inheritance financial documents"
 pillar: wealth
@@ -8,15 +8,19 @@ draft: false
 publication_status: published
 date: '2026-09-30'
 approved_by: 'Explicit publish instruction — 30 September 2026'
-reviewed: '2026-09-30'
-summary: "Ireland's inheritance tax is Capital Acquisitions Tax (CAT). See the €400,000, €40,000 and €20,000 thresholds, worked examples, house rules, exemptions and when an IT38 return is required."
-meta_description: "Inheritance tax Ireland guide: CAT thresholds, 33% rate, parent-to-child examples, house inheritance, previous gifts, exemptions and IT38 filing."
+reviewed: '2026-10-07'
+summary: "Ireland's inheritance tax is Capital Acquisitions Tax (CAT). Budget 2027 raised the thresholds to €420,000, €44,000 and €22,000 from 7 October 2026. See worked examples, exemptions, filing rules and the CAT calculator."
+meta_description: "Inheritance tax Ireland 2027 guide: CAT thresholds of €420k/€44k/€22k, 33% rate, worked examples, exemptions, previous gifts and IT38 filing."
 tags: [inheritance-tax, capital-acquisitions-tax, cat, tax, estate-planning, inheritance, ireland]
 related_tools:
 - inheritance-tax-calculator
 - regular-savings-calculator
 - compound-interest-calculator
 sources:
+- title: 'Budget 2027: KPMG summary of CAT threshold changes effective 7 October 2026. Checked 7 October 2026.'
+  url: https://kpmg.com/ie/en/insights/tax/budget-2027/headlines.html
+- title: 'Budget 2027: William Fry tax summary confirming CAT thresholds. Checked 7 October 2026.'
+  url: https://www.williamfry.com/knowledge/budget-2027/
 - title: 'Revenue: CAT group thresholds. Checked 30 September 2026.'
   url: https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/cat-thresholds.aspx
 - title: 'Revenue: CAT groups. Checked 30 September 2026.'
@@ -53,33 +57,55 @@ If you are planning your own estate rather than dealing with an inheritance you 
 
 The headline numbers are simple. The calculation often is not.
 
-For gifts and inheritances taken under the current rules, the tax-free group thresholds are **€400,000 for Group A, €40,000 for Group B and €20,000 for Group C**. CAT is generally charged at **33%** on the taxable amount above the unused threshold.
+For gifts and inheritances taken **on or after 7 October 2026**, the tax-free group thresholds are **€420,000 for Group A, €44,000 for Group B and €22,000 for Group C**. CAT is generally charged at **33%** on the taxable amount above the unused threshold.
 
 The part that catches people is that the threshold is **cumulative**. It is not a fresh allowance for every inheritance. Relevant earlier taxable gifts and inheritances in the same group since **5 December 1991** can use up part of it.
 
 <div class="cs-intro">
 <p class="cs-kicker">Quick answer</p>
-<p><strong>A child can currently receive up to €400,000 under Group A before CAT is due, assuming none of that Group A threshold has already been used.</strong></p>
-<p>A sibling, niece, nephew, grandparent or most grandchildren normally fall into Group B with a €40,000 threshold. People outside Groups A and B generally fall into Group C with a €20,000 threshold.</p>
+<p><strong>A child can currently receive up to €420,000 under Group A before CAT is due, assuming none of that Group A threshold has already been used.</strong></p>
+<p>A sibling, niece, nephew, grandparent or most grandchildren normally fall into Group B with a €44,000 threshold. People outside Groups A and B generally fall into Group C with a €22,000 threshold.</p>
 </div>
 
-This guide reflects Revenue rules checked on **30 September 2026**. Tax thresholds, reliefs and filing rules can change, so use it as general information rather than a substitute for advice on a particular estate.
+This guide was updated on **7 October 2026** for the Budget 2027 CAT threshold changes. Revenue guidance is used for the underlying CAT, aggregation, exemption and filing rules. Tax law can change, so use this as general information rather than a substitute for advice on a particular estate.
 
 ## Inheritance tax in Ireland at a glance
 
 <div class="cs-table-wrap" tabindex="0" role="region" aria-label="Capital Acquisitions Tax thresholds and filing markers">
 <table>
-<caption>Current CAT thresholds for gifts and inheritances taken on or after 2 October 2024</caption>
+<caption>Current CAT thresholds for gifts and inheritances taken on or after 7 October 2026</caption>
 <thead>
 <tr><th scope="col">Group</th><th scope="col">Typical relationship</th><th scope="col">Tax-free threshold</th><th scope="col">80% filing marker</th></tr>
 </thead>
 <tbody>
-<tr><th scope="row">Group A</th><td>Parent to child in the ordinary case</td><td><strong>€400,000</strong></td><td>€320,000</td></tr>
-<tr><th scope="row">Group B</th><td>Sibling, niece/nephew, grandparent, most grandchildren</td><td><strong>€40,000</strong></td><td>€32,000</td></tr>
-<tr><th scope="row">Group C</th><td>Other relationships, including many cousins, friends and in-laws</td><td><strong>€20,000</strong></td><td>€16,000</td></tr>
+<tr><th scope="row">Group A</th><td>Parent to child in the ordinary case</td><td><strong>€420,000</strong></td><td>€336,000</td></tr>
+<tr><th scope="row">Group B</th><td>Sibling, niece/nephew, grandparent, most grandchildren</td><td><strong>€44,000</strong></td><td>€35,200</td></tr>
+<tr><th scope="row">Group C</th><td>Other relationships, including many cousins, friends and in-laws</td><td><strong>€22,000</strong></td><td>€17,600</td></tr>
 </tbody>
 </table>
 </div>
+
+## What changed in Budget 2027?
+
+Budget 2027 increased all three CAT group thresholds for gifts and inheritances taken on or after **7 October 2026**:
+
+<div class="cs-table-wrap" tabindex="0" role="region" aria-label="Budget 2027 CAT threshold changes">
+<table>
+<caption>CAT thresholds before and after the Budget 2027 change</caption>
+<thead>
+<tr><th scope="col">Group</th><th scope="col">Previous threshold</th><th scope="col">From 7 Oct 2026</th><th scope="col">Increase</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Group A</th><td>€400,000</td><td><strong>€420,000</strong></td><td>€20,000</td></tr>
+<tr><th scope="row">Group B</th><td>€40,000</td><td><strong>€44,000</strong></td><td>€4,000</td></tr>
+<tr><th scope="row">Group C</th><td>€20,000</td><td><strong>€22,000</strong></td><td>€2,000</td></tr>
+</tbody>
+</table>
+</div>
+
+The **CAT rate itself did not change** and remains 33%. The date of the gift or inheritance determines which threshold applies, so the older €400,000 / €40,000 / €20,000 thresholds remain relevant to benefits taken before 7 October 2026.
+
+The practical saving from the higher threshold can be meaningful. For example, a child inheriting €550,000 with the full Group A threshold available would have paid €49,500 under the previous €400,000 threshold. Under the new €420,000 threshold, the simplified CAT bill is €42,900 — a **€6,600 reduction**.
 
 The current CAT rate is **33%**.
 
@@ -116,9 +142,9 @@ Only after those questions are answered does the 33% rate become useful.
 
 For the ordinary parent-to-child inheritance, **Group A** applies.
 
-The current Group A threshold is **€400,000**.
+The current Group A threshold is **€420,000**.
 
-That does **not** mean every parent can leave every child €400,000 tax-free independently of previous benefits. The threshold is applied to the beneficiary's aggregated taxable benefits within Group A.
+That does **not** mean every parent can leave every child €420,000 tax-free independently of previous benefits. The threshold is applied to the beneficiary's aggregated taxable benefits within Group A.
 
 ### Example: child inherits €550,000 from a parent
 
@@ -126,11 +152,11 @@ Assume:
 
 - inheritance: €550,000
 - earlier Group A taxable benefits: €0
-- available Group A threshold: €400,000
-- taxable excess: €150,000
+- available Group A threshold: €420,000
+- taxable excess: €130,000
 - CAT rate: 33%
 
-**Estimated CAT: €49,500.**
+**Estimated CAT: €42,900.**
 
 The beneficiary keeps the benefit subject to the tax due and any other estate costs or liabilities relevant to the particular assets.
 
@@ -140,11 +166,11 @@ Suppose the child previously received €100,000 of taxable Group A benefits and
 
 The remaining threshold is only:
 
-**€400,000 − €100,000 = €300,000.**
+**€420,000 − €100,000 = €320,000.**
 
-The current €350,000 inheritance therefore exceeds the remaining threshold by €50,000.
+The current €350,000 inheritance therefore exceeds the remaining threshold by €30,000.
 
-**Estimated CAT: €16,500.**
+**Estimated CAT: €9,900.**
 
 This is why earlier gifts matter even if no CAT was payable when those gifts were received.
 
@@ -154,15 +180,15 @@ Revenue requires relevant taxable benefits in the same group threshold received 
 
 So the question is not simply:
 
-> “Is this inheritance below €400,000?”
+> “Is this inheritance below €420,000?”
 
 It is:
 
-> “After adding the relevant earlier taxable Group A benefits, how much of my €400,000 threshold is still unused?”
+> “After adding the relevant earlier taxable Group A benefits, how much of my €420,000 threshold is still unused?”
 
 The same principle applies to Groups B and C.
 
-Revenue gives the example of a beneficiary who has already used €365,000 of Group A. With only €35,000 left, a later €40,000 benefit leaves €5,000 exposed to CAT.
+For example, if a beneficiary has already used €390,000 of Group A, only €30,000 of the current €420,000 threshold remains. A later €40,000 taxable benefit would leave €10,000 exposed to CAT.
 
 This aggregation rule is central to both inheritance planning and lifetime gifting.
 
@@ -170,13 +196,13 @@ If you are building assets for children during your lifetime, our guide to [savi
 
 ## Group A, Group B and Group C explained
 
-### Group A — €400,000
+### Group A — €420,000
 
 Group A most commonly covers a child receiving a gift or inheritance from a parent.
 
 Revenue also includes adopted children and stepchildren within the definition of child. There are additional Group A situations, including certain foster-child cases, certain minor descendants of a deceased child, and a parent taking an absolute inheritance from a child.
 
-### Group B — €40,000
+### Group B — €44,000
 
 Group B generally includes:
 
@@ -186,7 +212,7 @@ Group B generally includes:
 - a grandparent;
 - a grandchild, except where a specific Group A rule applies.
 
-### Group C — €20,000
+### Group C — €22,000
 
 Group C applies where the relationship is not covered by Group A or Group B.
 
@@ -210,17 +236,17 @@ The examples below ignore special reliefs and assume the stated threshold is ful
 <tr><th scope="col">Example</th><th scope="col">Benefit</th><th scope="col">Threshold</th><th scope="col">Taxable excess</th><th scope="col">Estimated CAT</th></tr>
 </thead>
 <tbody>
-<tr><th scope="row">Child inherits from parent</th><td>€550,000</td><td>€400,000</td><td>€150,000</td><td><strong>€49,500</strong></td></tr>
-<tr><th scope="row">Sibling inherits from sibling</th><td>€100,000</td><td>€40,000</td><td>€60,000</td><td><strong>€19,800</strong></td></tr>
-<tr><th scope="row">Friend inherits from friend</th><td>€100,000</td><td>€20,000</td><td>€80,000</td><td><strong>€26,400</strong></td></tr>
-<tr><th scope="row">Child inherits €330,000, no prior Group A benefits</th><td>€330,000</td><td>€400,000</td><td>€0</td><td><strong>€0</strong></td></tr>
+<tr><th scope="row">Child inherits from parent</th><td>€550,000</td><td>€420,000</td><td>€130,000</td><td><strong>€42,900</strong></td></tr>
+<tr><th scope="row">Sibling inherits from sibling</th><td>€100,000</td><td>€44,000</td><td>€56,000</td><td><strong>€18,480</strong></td></tr>
+<tr><th scope="row">Friend inherits from friend</th><td>€100,000</td><td>€22,000</td><td>€78,000</td><td><strong>€25,740</strong></td></tr>
+<tr><th scope="row">Child inherits €350,000, no prior Group A benefits</th><td>€350,000</td><td>€420,000</td><td>€0</td><td><strong>€0</strong></td></tr>
 </tbody>
 </table>
 </div>
 
 The last example is important: **no CAT is due, but a filing obligation can still arise.**
 
-A €330,000 Group A inheritance is more than 80% of the €400,000 threshold. In the ordinary case that means an **IT38 return must be filed**, even though the inheritance remains below the threshold and no CAT is payable.
+A €350,000 Group A inheritance is more than 80% of the €420,000 threshold. In the ordinary case that means an **IT38 return must be filed**, even though the inheritance remains below the threshold and no CAT is payable.
 
 ## What if you inherit a house?
 
@@ -233,9 +259,9 @@ In a straightforward case, the house is valued for CAT and the beneficiary's ava
 Assume a parent leaves a house with a taxable value of €500,000 to an adult child, the child has no earlier Group A benefits, and no special exemption or relief applies.
 
 - taxable value: €500,000
-- Group A threshold: €400,000
-- taxable excess: €100,000
-- CAT at 33%: **€33,000**
+- Group A threshold: €420,000
+- taxable excess: €80,000
+- CAT at 33%: **€26,400**
 
 That is a simplified example. The actual **taxable value** is not always the headline property value.
 
@@ -314,19 +340,19 @@ Revenue's general rule is that you must file an **IT38 CAT return** when the tot
 
 Using today's thresholds, the numerical markers are:
 
-- Group A: **€320,000**
-- Group B: **€32,000**
-- Group C: **€16,000**
+- Group A: **€336,000**
+- Group B: **€35,200**
+- Group C: **€17,600**
 
 That does not mean tax becomes payable at 80%. It means a return can be required before the full tax-free threshold has been used.
 
 ### Example: filing with no CAT bill
 
-A child receives a €330,000 inheritance from a parent and has no earlier Group A benefits.
+A child receives a €350,000 inheritance from a parent and has no earlier Group A benefits.
 
-The amount is below the €400,000 threshold, so there is no CAT on this simplified example.
+The amount is below the €420,000 threshold, so there is no CAT on this simplified example.
 
-But €330,000 exceeds the €320,000 filing marker.
+But €350,000 exceeds the €336,000 filing marker.
 
 **An IT38 filing obligation therefore arises even though the estimated CAT is €0.**
 
@@ -439,23 +465,31 @@ Then use the [Inheritance & Gift Tax Calculator](/inheritance-tax-calculator/) f
 
 ## Frequently asked questions
 
+### What are the inheritance tax thresholds in Ireland for 2027?
+
+For gifts and inheritances taken on or after 7 October 2026, the CAT thresholds are **€420,000 for Group A, €44,000 for Group B and €22,000 for Group C**. The standard CAT rate remains 33%.
+
+### Did Budget 2027 abolish inheritance tax?
+
+No. Budget 2027 increased the three tax-free thresholds but did not abolish CAT. Tax can still arise at 33% on the part of a taxable gift or inheritance above the beneficiary's remaining threshold, subject to exemptions and reliefs.
+
 ### How much can a child inherit tax-free in Ireland?
 
-Under the current Group A threshold, a child can generally receive up to **€400,000** in aggregated taxable Group A benefits before CAT is due, assuming the full threshold is still available.
+Under the current Group A threshold, a child can generally receive up to **€420,000** in aggregated taxable Group A benefits before CAT is due, assuming the full threshold is still available.
 
 ### What is the inheritance tax rate in Ireland?
 
 The current CAT rate is **33%** on the taxable amount above the available threshold.
 
-### Is the €400,000 threshold per parent?
+### Is the €420,000 threshold per parent?
 
-Do not treat it as a separate €400,000 allowance from each parent.
+Do not treat it as a separate €420,000 allowance from each parent.
 
 The Group A threshold applies to the beneficiary's aggregated taxable Group A benefits. Gifts and inheritances from both parents can therefore use the same Group A threshold.
 
-### Can I inherit €400,000 from my mother and another €400,000 from my father tax-free?
+### Can I inherit €420,000 from my mother and another €420,000 from my father tax-free?
 
-Not under the normal aggregation rules if both benefits are Group A and fall within the aggregation period. The current €400,000 Group A threshold is applied to the accumulated taxable benefits in that group, not separately to each parent.
+Not under the normal aggregation rules if both benefits are Group A and fall within the aggregation period. The current €420,000 Group A threshold is applied to the accumulated taxable benefits in that group, not separately to each parent.
 
 ### Is inheritance tax based on the value of the whole estate?
 
@@ -493,7 +527,7 @@ The Small Gift Exemption applies to gifts, not ordinary inheritances.
 
 ### Can inheritance tax rules change in a Budget?
 
-Yes. CAT thresholds, rates and reliefs are set by law and can change. The figures in this guide were checked against Revenue on **30 September 2026**.
+Yes. CAT thresholds, rates and reliefs are set by law and can change. This guide was updated on **7 October 2026** for the Budget 2027 threshold changes, while Revenue guidance is used for the underlying CAT rules.
 
 ## The bottom line
 
@@ -501,7 +535,7 @@ For most people, Irish inheritance tax comes down to three numbers:
 
 **the taxable value of what you receive, the threshold available for your relationship group, and how much of that threshold you have already used.**
 
-The current thresholds are **€400,000, €40,000 and €20,000**, with CAT generally charged at **33%** above the available threshold.
+For benefits taken on or after **7 October 2026**, the current thresholds are **€420,000, €44,000 and €22,000**, with CAT generally charged at **33%** above the available threshold.
 
 But the simple headline can hide the issues that matter most: previous gifts, the valuation date, an IT38 filing obligation before tax is due, and reliefs for homes, farms and businesses.
 
