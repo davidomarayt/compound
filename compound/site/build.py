@@ -1347,8 +1347,14 @@ def build_site(settings: Settings) -> dict:
     )
     sitemap_entries.extend((settings.site_base_url + f"/{pg.slug}/", None) for pg in pages)
 
-    sitemap_rows = []
+    sitemap_by_url: dict[str, str | None] = {}
     for url, lastmod in sitemap_entries:
+        existing = sitemap_by_url.get(url)
+        if url not in sitemap_by_url or (lastmod and (not existing or lastmod > existing)):
+            sitemap_by_url[url] = lastmod
+
+    sitemap_rows = []
+    for url, lastmod in sitemap_by_url.items():
         row = f"  <url><loc>{url}</loc>"
         if lastmod:
             row += f"<lastmod>{lastmod}</lastmod>"
