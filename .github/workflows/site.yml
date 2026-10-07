@@ -105,6 +105,14 @@ jobs:
 
           fetch https://compound.ie/inheritance-tax-calculator/ /tmp/cat-2027.html
           grep -Fq '€420,000' /tmp/cat-2027.html
+          grep -Fq '7 October 2026' /tmp/cat-2027.html
+
+          fetch https://compound.ie/wealth/inheritance-tax-ireland/ /tmp/inheritance-tax-2027.html
+          grep -Fq '€420,000' /tmp/inheritance-tax-2027.html
+          grep -Fq '€44,000' /tmp/inheritance-tax-2027.html
+          grep -Fq '€22,000' /tmp/inheritance-tax-2027.html
+          grep -Fq 'What changed in Budget 2027?' /tmp/inheritance-tax-2027.html
+          grep -Fq '€336,000' /tmp/inheritance-tax-2027.html
 
           fetch https://compound.ie/help-to-buy-calculator/ /tmp/htb-2027.html
           grep -Fq '€35,000' /tmp/htb-2027.html
