@@ -22,6 +22,8 @@ A simple example illustrates the difference. If someone has already used most of
 
 For gifts, Advanced mode also lets you reflect how much of the annual small-gift exemption from the same giver has already been used. The small-gift exemption is different from the lifetime group threshold and should not be treated as if it permanently increases that threshold.
 
+Read [Gift Tax in Ireland 2027](/wealth/gift-tax-ireland/) for the €3,000 exemption, parent-to-child gifts, house deposits, grandparents, family loans, aggregation and filing rules.
+
 Use the [Capital Gains Tax Calculator](/capital-gains-tax-calculator/) for a separate disposal of an asset. CAT and CGT are different taxes and a real transaction can require advice on how multiple tax rules interact.
 
 ## How to read the result
