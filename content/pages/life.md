@@ -80,6 +80,7 @@ title: Life
 <section class="life-category" id="leisure-culture" data-sponsorship-category="leisure-culture">
   <header><span>05</span><div><p class="eyebrow">LEISURE &amp; CULTURE</p><h2>Leave room for things that are simply enjoyable.</h2></div><p>Not everything needs to optimise health or money. Hobbies, sport, culture and shared experiences are allowed to matter because you enjoy them.</p></header>
   <div class="life-reading life-reading-wide">
+    <a href="/life/pickleball-ireland/"><span>Sport</span><strong>Pickleball in Ireland: rules, clubs and how to start</strong></a>
     <a href="/life/when-did-you-last-do-something-for-fun/"><span>Leisure</span><strong>When did you last do something just for fun?</strong></a>
     <a href="/life/ploughing-championships-history-community-mental-health/"><span>Irish life</span><strong>The Ploughing Championships: history, community and connection</strong></a>
     <a href="/live-to-100/"><span>Long life</span><strong>Live to 100: what makes a longer life worth living?</strong></a>
