@@ -51,6 +51,8 @@ sources:
 
 Irish households reviewing health insurance are being reminded to look beyond the headline premium.
 
+For the full evergreen explanation of providers, current costs, waiting periods, Lifetime Community Rating, tax relief and switching, see Compound's [Health Insurance in Ireland guide](/wealth/health-insurance-ireland/).
+
 Across 2026, insurers have repeatedly changed not only **prices**, but also the **benefits attached to individual plans**. In some cases, that means a customer can face a higher renewal cost while the structure of their cover is also changing.
 
 The practical lesson is simple:
