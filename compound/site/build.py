@@ -957,12 +957,18 @@ def _write(path: Path, html: str) -> None:
     path.write_text(html, encoding="utf-8")
 
 
-def _redirect_html(target: str) -> str:
+def _redirect_html(target: str, site_base_url: str = "") -> str:
     safe_target = html_escape(target, quote=True)
+    canonical_target = (
+        f"{site_base_url.rstrip('/')}{target}"
+        if site_base_url and target.startswith("/")
+        else target
+    )
+    safe_canonical = html_escape(canonical_target, quote=True)
     return (
         "<!doctype html><html><head><meta charset=\"utf-8\">"
         "<meta name=\"robots\" content=\"noindex,follow\">"
-        f"<link rel=\"canonical\" href=\"{safe_target}\">"
+        f"<link rel=\"canonical\" href=\"{safe_canonical}\">"
         f"<meta http-equiv=\"refresh\" content=\"0; url={safe_target}\">"
         f"<script>location.replace({json.dumps(target)})</script>"
         "</head><body>"
@@ -1104,10 +1110,14 @@ def build_site(settings: Settings) -> dict:
 
     for p in PILLARS:
         if p == "happiness":
-            # Public branding moved from /happiness/ to /life/. Keep the legacy
-            # route only as a permanent-style client redirect so search engines
-            # consolidate historical signals onto the public Life URL.
-            _write(out / "happiness" / "index.html", _redirect_html("/life/"))
+            # Public branding moved from /happiness/ to /life/. GitHub Pages
+            # cannot emit per-path HTTP 301 responses, so keep the legacy route
+            # as noindex + canonical + instant client redirect. The absolute
+            # canonical makes the consolidation signal unambiguous to crawlers.
+            _write(
+                out / "happiness" / "index.html",
+                _redirect_html("/life/", settings.site_base_url),
+            )
             continue
         _write(out / PILLAR_PUBLIC_SLUGS[p] / "index.html", env.get_template("pillar.html").render(pillar=p, articles=by_pillar[p], title=PILLAR_LABELS[p]))
 
@@ -1125,7 +1135,10 @@ def build_site(settings: Settings) -> dict:
         if a.pillar == "happiness":
             legacy_url = f"/happiness/{a.slug}/"
             if a.url != legacy_url:
-                _write(out / legacy_url.strip("/") / "index.html", _redirect_html(a.url))
+                _write(
+                    out / legacy_url.strip("/") / "index.html",
+                    _redirect_html(a.url, settings.site_base_url),
+                )
         # The Live to 100 opener has always had the root canonical route. Preserve
         # the intuitive pillar-prefixed URL as a redirect so stale hub links,
         # bookmarks and external links cannot produce a 404.
@@ -1327,7 +1340,6 @@ def build_site(settings: Settings) -> dict:
     sitemap_entries.extend(
         (settings.site_base_url + f"/{PILLAR_PUBLIC_SLUGS[p]}/", None)
         for p in PILLARS
-        if PILLAR_PUBLIC_SLUGS[p] != "life"
     )
     sitemap_entries.extend(
         (settings.site_base_url + a.url, (a.reviewed or a.date).isoformat())
