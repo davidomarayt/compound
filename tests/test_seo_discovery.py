@@ -66,3 +66,10 @@ Yes.
     assert (discover / "seo-news-test-4x3.webp").exists()
     assert (discover / "seo-news-test-16x9.webp").exists()
     assert "/static/discover/seo-news-test-16x9.webp" in html
+
+    sitemap = (settings.public_dir / "sitemap.xml").read_text(encoding="utf-8")
+    assert "<loc>https://example.test/life/</loc>" in sitemap
+
+    legacy_life = (settings.public_dir / "happiness" / "index.html").read_text(encoding="utf-8")
+    assert '<meta name="robots" content="noindex,follow">' in legacy_life
+    assert '<link rel="canonical" href="https://example.test/life/">' in legacy_life
