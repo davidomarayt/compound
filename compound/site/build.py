@@ -88,6 +88,7 @@ HOME_SEO_PRIORITY = {
         "vitamin-d-ireland-winter-who-should-take-it",
     ],
     "wealth": [
+        "health-insurance-ireland",
         "how-to-start-investing-in-ireland",
         "personal-investment-account-ireland",
         "pensions-in-ireland",
