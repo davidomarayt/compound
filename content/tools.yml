@@ -1742,7 +1742,7 @@ tools:
     formula: cat
     summary: Estimate Capital Acquisitions Tax using the new €420,000 / €44,000 / €22,000 thresholds from 7 October 2026, with the prior thresholds retained for older benefits.
     meta_description: Inheritance tax calculator Ireland. Estimate CAT using Budget 2027 thresholds of €420,000, €44,000 and €22,000, prior benefits and the 33% rate.
-    updated: 2026-10-06
+    updated: 2026-10-07
     basic_note: "For a gift, Basic mode assumes none of the €3,000 Small Gift Exemption from this same disponer has already been used in the current calendar year."
     advanced_note: "Advanced mode lets you enter how much of the €3,000 Small Gift Exemption from this same giver has already been used this calendar year. The calculator also shows the general 80% numerical IT38 filing marker."
     fields:
@@ -1783,7 +1783,7 @@ tools:
       - {id: small_gift_applied, label: Small Gift Exemption applied now, advanced: true}
     guide: |
       ## CAT depends on relationship, aggregation and exemptions
-      Current group thresholds are €400,000 for Group A, €40,000 for Group B and €20,000 for Group C, with CAT generally charged at 33% on the taxable excess.
+      Budget 2027 increased the group thresholds to €420,000 for Group A, €44,000 for Group B and €22,000 for Group C for benefits taken on or after 7 October 2026. The previous €400,000 / €40,000 / €20,000 thresholds remain relevant for older benefits. CAT is generally charged at 33% on the taxable excess.
 
       Gifts can use the first €3,000 received from each disponer in a calendar year under the Small Gift Exemption. Advanced mode lets you account for part of that €3,000 already having been used by another gift from the same person in the same year.
 
