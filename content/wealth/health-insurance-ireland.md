@@ -1,6 +1,6 @@
 ---
 title: "Health Insurance in Ireland: Costs, Cover & How to Choose a Plan"
-seo_title: "Health Insurance Ireland 2026: Costs, Cover & Comparison"
+seo_title: "Health Insurance Ireland 2026: Costs, Cover & Plans"
 slug: health-insurance-ireland
 pillar: wealth
 draft: false
@@ -11,6 +11,7 @@ approved_by: "Explicit evergreen publish instruction — 7 October 2026"
 summary: "A complete guide to private health insurance in Ireland: current costs, Vhi, Laya, Irish Life Health and Level Health, waiting periods, Lifetime Community Rating, tax relief, switching and how to compare plans properly."
 meta_description: "Health insurance Ireland 2026 guide: average costs, Vhi, Laya, Irish Life Health, Level Health, waiting periods, tax relief, LCR and how to compare plans."
 tags: [health-insurance, private-health-insurance, insurance, vhi, laya-healthcare, irish-life-health, level-health, tax-relief, household-costs, ireland]
+pexels_photo_id: 7731326
 news_image_query: "Irish family reviewing health insurance paperwork kitchen table stethoscope euro bills natural light"
 sources:
 - title: "Health Insurance Authority: Health insurance comparison tool. Checked 7 October 2026."
