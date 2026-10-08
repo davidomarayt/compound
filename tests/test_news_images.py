@@ -92,9 +92,49 @@ Body.
         raise RuntimeError("temporary Pexels failure")
 
     monkeypatch.setattr(news_images, "pexels_photo_by_id", fail)
+    monkeypatch.setattr(news_images, "download", fail)
 
     result = news_images.process(article, "fake-key")
     updated = article.read_text(encoding="utf-8")
 
     assert result == "skip:pinned-fetch-failed-no-image"
     assert "\nimage:" not in updated
+
+
+def test_pinned_evergreen_recovers_same_photo_from_cdn_if_api_rate_limited(tmp_path, monkeypatch):
+    article = tmp_path / "pickleball-ireland.md"
+    article.write_text(
+        '''---
+title: "Pickleball in Ireland"
+slug: pickleball-ireland
+pillar: happiness
+draft: false
+publication_status: published
+pexels_photo_id: "38208389"
+---
+
+Body.
+''',
+        encoding="utf-8",
+    )
+
+    def api_failed(*args, **kwargs):
+        raise RuntimeError("Pexels API 429")
+
+    downloads = []
+
+    def fake_download(url, dest):
+        downloads.append(url)
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(b"fake jpeg test bytes")
+
+    monkeypatch.setattr(news_images, "pexels_photo_by_id", api_failed)
+    monkeypatch.setattr(news_images, "download", fake_download)
+    monkeypatch.setattr(news_images, "STATIC", tmp_path / "static")
+
+    result = news_images.process(article, "fake-key")
+    updated = article.read_text(encoding="utf-8")
+
+    assert result == "pexels-pinned-direct:38208389"
+    assert "https://images.pexels.com/photos/38208389/pexels-photo-38208389.jpeg" in downloads[0]
+    assert "image: /static/images/evergreen/pickleball-ireland.jpg" in updated
