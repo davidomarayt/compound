@@ -34,6 +34,10 @@ A business can collect €100,000 from customers without having €100,000 avail
 
 For a quick 2026 estimate, use the [Self-Employed Tax Calculator Ireland](/self-employed-tax-calculator-ireland/).
 
+
+
+If you are assessing what happens when illness prevents you earning, see our [Income Protection Insurance Ireland guide](/wealth/income-protection-insurance-ireland/) for self-employed eligibility, deferred periods and the tax treatment of qualifying premiums.
+
 If you are deciding between employment and contracting rather than simply calculating a sole trader bill, the [Contractor vs Salary Calculator](/contractor-vs-salary-calculator/) compares indicative net cash outcomes. The [tax credits guide](/wealth/tax-credits-ireland-explained/) is also useful for understanding why employee and self-employed credit mechanics differ.
 
 ## Turnover, expenses and profit
