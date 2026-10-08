@@ -395,14 +395,42 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
             inject_fields(path, raw, match, fields)
             return f"pexels-pinned:{pinned_pexels_id}"
         except Exception as exc:
-            # A transient Pexels outage/rate limit must never take down the site.
+            # API requests have much tighter rate limits than Pexels' public
+            # image CDN. Recover the SAME editorially pinned photo by its ID,
+            # rather than substituting a random search or unrelated fallback.
             print(f"Pexels pinned lookup failed for {path.name}: {exc}")
             if image_exists(meta):
                 return "skip:pinned-fetch-failed-existing"
+            if re.fullmatch(r"[0-9]{4,15}", pinned_pexels_id):
+                try:
+                    direct_url = (
+                        f"https://images.pexels.com/photos/{pinned_pexels_id}/"
+                        f"pexels-photo-{pinned_pexels_id}.jpeg"
+                        "?auto=compress&cs=tinysrgb&w=1600"
+                    )
+                    hero_rel = f"/static/images/evergreen/{slug}.jpg"
+                    download(direct_url, STATIC / hero_rel.removeprefix("/static/"))
+                    fields = {
+                        "image": hero_rel,
+                        "image_alt": str(
+                            meta.get("image_alt")
+                            or meta.get("hero_image_alt")
+                            or f"Editorial photograph illustrating {meta.get('title', 'Compound')}"
+                        ),
+                        "image_credit": str(meta.get("image_credit") or "Pexels"),
+                        "image_source": str(
+                            meta.get("image_source")
+                            or f"https://www.pexels.com/photo/{pinned_pexels_id}/"
+                        ),
+                        "social_image": hero_rel,
+                    }
+                    inject_fields(path, raw, match, fields)
+                    return f"pexels-pinned-direct:{pinned_pexels_id}"
+                except Exception as direct_exc:
+                    print(f"Pexels pinned CDN fetch failed for {path.name}: {direct_exc}")
 
-            # If an editor pinned an exact stock photo, never replace it with an
-            # unrelated generic pillar image. It is better to render no hero than
-            # silently publish the wrong visual.
+            # Never swap an editorially pinned image for an unrelated generic
+            # fallback. An unavailable source is surfaced for review instead.
             return "skip:pinned-fetch-failed-no-image"
 
     if not is_published(meta):
