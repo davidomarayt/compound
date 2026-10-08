@@ -137,4 +137,4 @@ Body.
 
     assert result == "pexels-pinned-direct:38208389"
     assert "https://images.pexels.com/photos/38208389/pexels-photo-38208389.jpeg" in downloads[0]
-    assert "image: /static/images/evergreen/pickleball-ireland.jpg" in updated
+    assert 'image: "/static/images/evergreen/pickleball-ireland.jpg"' in updated
