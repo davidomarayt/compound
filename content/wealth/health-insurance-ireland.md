@@ -107,6 +107,10 @@ Two plans at similar prices can have very different hospital lists, room entitle
 
 <h2 id="what-is-private-health-insurance">What does private health insurance actually do in Ireland?</h2>
 
+<p><strong>Looking to protect your salary rather than pay for treatment?</strong> Private health insurance and income protection solve different problems. See our detailed <a href="/wealth/income-protection-insurance-ireland/">Income Protection Insurance Ireland 2026 guide</a> for cover limits, tax relief and waiting periods.</p>
+
+
+
 Private health insurance is not a replacement for Ireland's public health service.
 
 Instead, depending on the policy, it can pay towards treatment in public or private hospitals, give access to private or semi-private accommodation, cover some consultant and procedure costs, and reimburse part of day-to-day expenses such as GP, consultant, physiotherapy or diagnostic bills.
