@@ -74,6 +74,10 @@ For most owner-occupier mortgages, mortgage protection is required.
 
 The policy is designed to repay the outstanding mortgage if the insured borrower dies, subject to policy terms.
 
+
+
+Mortgage protection is not the same as insurance against losing your earnings while ill. Our [Income Protection Insurance Ireland guide](/wealth/income-protection-insurance-ireland/) explains how monthly income replacement works and when it may be worth considering.
+
 There are statutory exceptions.
 
 Citizens Information lists exceptions including situations where:
