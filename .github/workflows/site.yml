@@ -262,4 +262,21 @@ jobs:
           fetch https://compound.ie/static/discover/income-protection-insurance-ireland-16x9.webp /tmp/income-protection-og.webp
           test -s /tmp/income-protection-og.webp
 
+          # Padel evergreen: verify a real padel-court photograph, SEO image
+          # derivatives and links between the paired padel/pickleball guides.
+          fetch https://compound.ie/life/padel-ireland/ /tmp/padel-ireland.html
+          grep -Fq 'Padel in Ireland: Rules, Courts, Costs' /tmp/padel-ireland.html
+          grep -Fq '<img src="/static/images/evergreen/padel-ireland.jpg"' /tmp/padel-ireland.html
+          grep -Fq 'Indoor padel court with blue playing surface' /tmp/padel-ireland.html
+          grep -Fq 'Ercan Evcimen on Pexels' /tmp/padel-ireland.html
+          grep -Fq 'https://compound.ie/static/discover/padel-ireland-16x9.webp' /tmp/padel-ireland.html
+          grep -Fq 'href="/life/pickleball-ireland/"' /tmp/padel-ireland.html
+          grep -Fq 'https://compound.ie/life/padel-ireland/' /tmp/sitemap.xml
+          fetch https://compound.ie/static/images/evergreen/padel-ireland.jpg /tmp/padel-hero.jpg
+          test -s /tmp/padel-hero.jpg
+          fetch https://compound.ie/static/discover/padel-ireland-16x9.webp /tmp/padel-social.webp
+          test -s /tmp/padel-social.webp
+          fetch https://compound.ie/life/pickleball-ireland/ /tmp/pickleball-crosslink.html
+          grep -Fq 'href="/life/padel-ireland/"' /tmp/pickleball-crosslink.html
+
           echo 'Live verification passed for Compound calculator catalogue, Health and Wealth Hubs, discovery metadata and flagship guides.'
