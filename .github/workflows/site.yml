@@ -248,4 +248,18 @@ jobs:
 
           grep -Fq 'Sitemap: https://compound.ie/news-sitemap.xml' <(curl --fail --silent --show-error --location https://compound.ie/robots.txt)
 
+          # Income protection evergreen: assert the live page, correct editorial
+          # photograph, social image and sitemap entry all exist after deployment.
+          fetch https://compound.ie/wealth/income-protection-insurance-ireland/ /tmp/income-protection.html
+          grep -Fq 'Income Protection Insurance in Ireland' /tmp/income-protection.html
+          grep -Fq '<img src="/static/images/evergreen/income-protection-insurance-ireland.jpg"' /tmp/income-protection.html
+          grep -Fq 'alt="Man using a calculator while reviewing household financial paperwork beside a laptop."' /tmp/income-protection.html
+          grep -Fq 'Tima Miroshnichenko on Pexels' /tmp/income-protection.html
+          grep -Fq 'content="https://compound.ie/static/discover/income-protection-insurance-ireland-16x9.webp"' /tmp/income-protection.html
+          grep -Fq 'https://compound.ie/wealth/income-protection-insurance-ireland/' /tmp/sitemap.xml
+          fetch https://compound.ie/static/images/evergreen/income-protection-insurance-ireland.jpg /tmp/income-protection-hero.jpg
+          test -s /tmp/income-protection-hero.jpg
+          fetch https://compound.ie/static/discover/income-protection-insurance-ireland-16x9.webp /tmp/income-protection-og.webp
+          test -s /tmp/income-protection-og.webp
+
           echo 'Live verification passed for Compound calculator catalogue, Health and Wealth Hubs, discovery metadata and flagship guides.'
