@@ -770,7 +770,7 @@ Yes. Pickleball is commonly played both indoors and outdoors.
 
 ### Is pickleball the same as padel?
 
-No. Padel uses an enclosed court with walls and a different ball and racket. Pickleball uses an open 20 ft × 44 ft court, a perforated plastic ball and a solid paddle.
+No. Padel uses an enclosed court with walls and a different ball and racket. Pickleball uses an open 20 ft × 44 ft court, a perforated plastic ball and a solid paddle. Read our [Padel in Ireland beginner guide](/life/padel-ireland/) for the full comparison.
 
 ## The bottom line
 
