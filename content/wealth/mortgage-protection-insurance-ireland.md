@@ -1,6 +1,6 @@
 ---
 title: "Mortgage Protection Insurance in Ireland: The Complete 2026 Guide"
-seo_title: "Mortgage Protection Ireland 2026: Cost & Best Cover"
+seo_title: "Mortgage Protection Ireland 2026: Costs & Cover"
 slug: mortgage-protection-insurance-ireland
 pillar: wealth
 draft: false

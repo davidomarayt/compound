@@ -341,12 +341,12 @@ tools:
 
   - slug: local-property-tax-calculator
     title: Local Property Tax Calculator Ireland 2026
-    seo_title: Property Tax Calculator Ireland 2026 – Estimate Your LPT
+    seo_title: Property Tax Calculator Ireland 2026 – LPT
     category: Mortgages & Home Buying
     formula: lpt
     summary: Estimate 2026 Local Property Tax from the 2026–2030 valuation bands and your local authority adjustment.
-    meta_description: "Estimate 2026 Local Property Tax in Ireland using Revenue’s 2026–2030 valuation bands and your local authority adjustment. See annual and monthly LPT."
-    updated: 2026-09-22
+    meta_description: "Property tax calculator Ireland 2026: estimate LPT using Revenue's 2026–2030 valuation bands and your council adjustment. See annual and monthly costs."
+    updated: 2026-10-09
     fields:
       - {id: value, label: Property market value, type: number, prefix: "€", default: 400000, min: 1, step: 1000}
       - id: authority
@@ -1496,12 +1496,12 @@ tools:
 
   - slug: take-home-pay-calculator
     title: Take-Home Pay Calculator Ireland 2027
-    seo_title: Take-Home Pay Calculator Ireland 2027 – Net Salary
+    seo_title: Take-Home Pay Calculator Ireland 2026 & 2027
     category: Tax & Take-Home Pay
     formula: take_home_2026
-    summary: Estimate 2027 PAYE, USC, Class A PRSI, pension deductions and net pay, with a 2026 comparison built in.
-    meta_description: "Take-home pay calculator Ireland 2027. Estimate net salary after PAYE, USC and Class A PRSI using Budget 2027 bands and credits, with a 2026 comparison."
-    updated: 2026-10-06
+    summary: Calculate Irish net salary from gross pay after PAYE, USC, Class A PRSI and optional pension deductions. Compare 2026 with Budget 2027 figures.
+    meta_description: "Free take-home pay calculator Ireland: estimate monthly net salary after PAYE, USC and PRSI. Compare 2026 and 2027 tax bands and credits."
+    updated: 2026-10-09
     basic_note: "Basic mode defaults to 2027: a €46,500 single-person standard-rate band, €2,125 Single Person Tax Credit, up to €2,125 Employee Tax Credit, 2027 USC and Class A PRSI."
     advanced_note: "Advanced mode lets you add an employee pension percentage, replace the tax band, add extra credits and model Revenue's reduced USC rates where the qualifying conditions are met."
     fields:
@@ -1543,9 +1543,9 @@ tools:
 
       Compound keeps those components separate in the results so the final take-home figure can be audited rather than presented as a single unexplained number.
 
-      ## Basic mode: a clean 2026 single-PAYE baseline
+      ## Basic mode: 2027 by default, with 2026 comparison
 
-      The basic calculation uses the 2026 single-person standard-rate band of **€44,000**. Revenue's 2026 examples also show a €2,000 Single Person Tax Credit and a maximum €2,000 Employee Tax Credit.
+      The tool defaults to Budget 2027 announced values: a **€46,500** single-person rate band and **€2,125** standard personal and maximum Employee Tax Credits. Select 2026 for the earlier **€44,000** band and **€2,000** credits. The 2027 figures are subject to enactment and possible changes.
 
       The Employee Tax Credit is capped at 20% of PAYE income where annual PAYE income is below €10,000. The calculator applies that cap automatically.
 
@@ -3627,12 +3627,13 @@ tools:
       - {title: "Schutz 2000 — alcohol provides about 7.1 kcal/g", url: "https://pubmed.ncbi.nlm.nih.gov/11115785/"}
 
   - slug: redundancy-calculator-ireland
-    title: Redundancy Calculator Ireland
+    title: Redundancy Calculator Ireland 2026
+    seo_title: Redundancy Calculator Ireland 2026 – Pay & Tax
     category: Tax & Take-Home Pay
     formula: redundancy_ireland
-    summary: Calculate statutory redundancy in Ireland and, in Advanced mode, estimate the tax-free portion of an ex-gratia termination payment using the basic exemption, increased exemption and SCSB.
-    meta_description: Redundancy calculator Ireland 2026. Estimate statutory redundancy, ex-gratia tax exemptions, SCSB and the taxable part of a termination payment.
-    updated: 2026-09-23
+    summary: Free 2026 redundancy calculator for Ireland. Estimate statutory pay from weekly earnings and service; Advanced mode estimates ex-gratia tax exemptions and SCSB.
+    meta_description: Redundancy calculator Ireland 2026. Calculate statutory pay and estimate ex-gratia termination tax, tax-free exemptions and SCSB in Advanced mode.
+    updated: 2026-10-09
     basic_note: "Basic mode calculates statutory redundancy using two weeks' capped normal weekly remuneration for each complete year of service, plus one bonus week."
     advanced_note: "Advanced mode separately models an ex-gratia termination payment and compares the Revenue basic/increased exemption with SCSB. Contractual payments such as taxable pay in lieu of notice are outside this model."
     result_note: "Statutory redundancy is generally exempt from Income Tax and USC. Ex-gratia tax treatment depends on the facts of the termination, pension rights and previous exemptions; use the result as an estimate and verify material payments with Revenue or a tax adviser."
@@ -3749,9 +3750,9 @@ tools:
     seo_title: Self-Employed Tax Calculator Ireland 2026
     category: Tax & Take-Home Pay
     formula: self_employed_tax_ireland
-    summary: Estimate 2026 Income Tax, USC, Class S PRSI and take-home profit for a self-employed person in Ireland, with pension tax-relief modelling in Advanced mode.
-    meta_description: "Estimate 2026 self-employed tax in Ireland from business profit, including Income Tax, USC and Class S PRSI, plus net income and monthly tax reserve."
-    updated: 2026-09-23
+    summary: Estimate 2026 sole trader tax from business receipts and expenses, including Income Tax, USC, Class S PRSI, take-home income and a monthly tax reserve.
+    meta_description: "Self-employed tax calculator Ireland 2026: enter sole trader income and expenses to estimate Income Tax, USC, Class S PRSI and monthly tax reserve."
+    updated: 2026-10-09
     basic_note: "Basic mode starts with annual business receipts and allowable business expenses, then estimates 2026 Income Tax, USC and Class S PRSI for a single self-employed person."
     advanced_note: "Advanced mode adds a personal pension contribution and applies the age-related income-tax relief limit, subject to the €115,000 earnings cap. It does not model VAT, capital allowances, spouses, losses or every relief."
     result_note: "This is an estimate for planning a tax reserve, not a Form 11 calculation. Actual taxable profit can differ because Revenue rules determine which expenses, capital allowances, losses and reliefs are allowable."

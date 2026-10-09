@@ -1,3 +1,7 @@
+**Self-Employed Tax Calculator Ireland 2026:** Enter business receipts and allowable expenses to estimate profit subject to **Income Tax, USC and Class S PRSI**. See the estimated annual liability, after-tax income and monthly cash reserve. Advanced mode models the potential Income Tax relief on pension contributions.
+
+For example, €80,000 receipts less €15,000 allowable expenses gives €65,000 starting business profit, not €80,000. The tool is a simplified estimate rather than a Form 11 return. For filing and preliminary-tax rules, see [Self-Employed Tax Ireland 2026](/wealth/self-employed-tax-ireland-2026-guide/).
+
 ## What this self-employed tax calculator estimates
 
 This calculator is designed for a sole trader or other self-employed individual who wants a practical 2026 estimate of the personal taxes arising from business profit.

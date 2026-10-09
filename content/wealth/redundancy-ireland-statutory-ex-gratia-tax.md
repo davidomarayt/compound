@@ -1,12 +1,12 @@
 ---
-title: 'Redundancy in Ireland: Statutory Pay, Ex-Gratia Payments and Tax Explained'
-seo_title: 'Redundancy Ireland 2026: Pay, Tax & Ex-Gratia Guide'
+title: 'Redundancy Tax in Ireland: Statutory Pay, Ex-Gratia & SCSB'
+seo_title: 'Redundancy Tax Ireland 2026: Ex-Gratia & SCSB'
 slug: redundancy-ireland-statutory-ex-gratia-tax
 pillar: wealth
 date: 2026-09-23
-reviewed: 2026-09-23
+reviewed: 2026-10-09
 summary: 'How statutory redundancy works in Ireland, how the €600 weekly ceiling affects the calculation, and how Revenue treats qualifying ex-gratia termination payments.'
-meta_description: 'Redundancy Ireland 2026: calculate statutory redundancy, understand the €600 weekly cap, ex-gratia payments, tax exemptions and SCSB.'
+meta_description: 'Redundancy tax Ireland 2026 explained: statutory pay, ex-gratia termination payments, Revenue exemptions, SCSB and which payments are taxable.'
 tags: [redundancy, statutory-redundancy, ex-gratia, tax, employment, ireland]
 related_tools:
 - redundancy-calculator-ireland
@@ -33,7 +33,7 @@ Redundancy calculations in Ireland become confusing because three different ques
 
 They are related, but they are not the same calculation.
 
-For a quick estimate, use the [Redundancy Calculator Ireland](/redundancy-calculator-ireland/). The calculator handles the statutory formula in Basic mode and adds Revenue's main ex-gratia exemption calculations in Advanced mode.
+**Need to calculate a redundancy payment?** Use the [Redundancy Calculator Ireland 2026](/redundancy-calculator-ireland/) for statutory pay and ex-gratia exemption estimates. **This guide focuses on legal and tax treatment:** which payments qualify, how Revenue's exemptions work and when SCSB becomes relevant.
 
 Redundancy can also change the rest of your year's PAYE position. Compound's [tax credits guide](/wealth/tax-credits-ireland-explained/) explains how credits interact with Income Tax, while the [Take-Home Pay Calculator](/take-home-pay-calculator/) can model a new salary if you move into another PAYE role.
 

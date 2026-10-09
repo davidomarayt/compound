@@ -1221,7 +1221,7 @@ def build_site(settings: Settings) -> dict:
                 "isAccessibleForFree": True,
                 "dateModified": str(tool.get("updated") or ""),
                 "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
-                "publisher": {"@type": "Organization", "name": "Compound", "url": settings.site_base_url},
+                "publisher": {"@id": f"{settings.site_base_url.rstrip('/')}/#organization"},
                 "citation": [source.get("url") for source in tool.get("sources", []) if source.get("url")],
             }
             graph = [

@@ -1,3 +1,7 @@
+**Redundancy Calculator Ireland 2026:** Enter normal weekly pay and complete years of service to estimate statutory redundancy using the €600 weekly cap. Select **Advanced calculation** to estimate the tax-free portion of a separate **ex-gratia termination payment** under Revenue's basic/increased exemptions and SCSB. The taxable balance is not a final after-tax payout; individual PAYE circumstances affect tax withheld.
+
+For the detailed legal explanation, read [Redundancy Tax Ireland: Statutory Pay, Ex-Gratia and SCSB](/wealth/redundancy-ireland-statutory-ex-gratia-tax/). To model earnings in another job, use the [Take-Home Pay Calculator](/take-home-pay-calculator/).
+
 ## How statutory redundancy is calculated in Ireland
 
 The statutory redundancy formula is straightforward once the eligible weekly remuneration and complete years of service are known.

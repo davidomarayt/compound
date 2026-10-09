@@ -51,7 +51,7 @@ sources:
 
 Irish households reviewing health insurance are being reminded to look beyond the headline premium.
 
-For the full evergreen explanation of providers, current costs, waiting periods, Lifetime Community Rating, tax relief and switching, see Compound's [Health Insurance in Ireland guide](/wealth/health-insurance-ireland/).
+**Comparing Irish health insurance plans?** Start with our [Health Insurance Ireland 2026 comparison guide](/wealth/health-insurance-ireland/) for insurer options, costs, waiting periods and switching. For current plan-by-plan prices and benefits, use the [Health Insurance Authority's independent comparison tool](https://www.hia.ie/health-insurance-comparison). This news analysis focuses specifically on 2026 changes.
 
 Across 2026, insurers have repeatedly changed not only **prices**, but also the **benefits attached to individual plans**. In some cases, that means a customer can face a higher renewal cost while the structure of their cover is also changing.
 

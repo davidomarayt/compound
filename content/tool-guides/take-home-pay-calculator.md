@@ -6,6 +6,10 @@ For a basic single PAYE employee, the 2027 model uses a **€46,500** standard-r
 
 Use the year selector rather than trying to manually recreate the prior-year rules.
 
+## Calculate net salary from gross pay
+
+Enter your annual gross salary, select **2026 or 2027**, and see annual and monthly net take-home after PAYE Income Tax, USC and employee PRSI. The calculator defaults to Budget 2027 assumptions and offers a 2026 comparison. Actual payslips can differ from these simplified estimates.
+
 ## What this calculator is for
 
 This calculator estimates Irish take-home pay for the selected 2026 or 2027 tax year after Income Tax, USC and employee PRSI under the assumptions built into the tool. It is designed to make the gap between gross salary and net income visible.
@@ -58,7 +62,7 @@ Only if included in the annual gross pay you enter.
 
 ## Advanced mode: use your own Revenue inputs
 
-Basic mode is intentionally a clean single-PAYE baseline and now defaults to the Budget 2027 parameters. Advanced mode lets you replace the €44,000 standard-rate band with your own annual 20% band, add tax credits beyond the standard personal/employee credits already built into the model, and include an employee pension contribution.
+Basic mode is intentionally a clean single-PAYE baseline and now defaults to the Budget 2027 parameters. Advanced mode lets you replace the selected year's standard-rate band with your own annual 20% band, add tax credits beyond the standard personal/employee credits already built into the model, and include an employee pension contribution.
 
 Advanced mode can also model Revenue's **reduced USC rates**. For 2026, those rates can apply to a qualifying person aged 70 or over or a full Medical Card holder where aggregate income is €60,000 or less. The calculator automatically falls back to standard USC when the income entered exceeds €60,000.
 
@@ -94,7 +98,7 @@ Current statutory references should be checked directly with Revenue, including 
 
 ## Method and limitations
 
-The tool applies the implemented 2026 Income Tax bands/credits, standard USC schedule and Class A employee PRSI assumptions to the entered salary and pension amount. It is an estimate, not a payroll engine.
+The tool applies the selected tax year's modelled Income Tax bands and credits, USC schedule and Class A PRSI assumptions. The 2027 option uses Budget 2027 figures, subject to legislative and payroll changes. It is an estimate, not a payroll engine.
 
 ### Useful sources
 

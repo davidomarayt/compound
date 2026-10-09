@@ -1,3 +1,7 @@
+**Property Tax Calculator Ireland 2026:** Enter your home's value **as at 1 November 2025** and choose your local authority. This LPT calculator uses Revenue's **2026–2030 valuation bands** and the selected council's **2026 Local Adjustment Factor** to show estimated annual Local Property Tax and monthly budgeting equivalent.
+
+**Important:** Do not automatically use today's asking price or subtract your mortgage balance. Council adjustments can change in later LPT years. For the bands and exemptions, see [Local Property Tax Ireland 2026–2030](/wealth/local-property-tax-ireland/).
+
 ## What this calculator is for
 
 This calculator estimates **2026 Local Property Tax (LPT)** using Revenue's valuation bands for the 2026–2030 valuation period and the 2026 Local Adjustment Factor for the local authority you select.
