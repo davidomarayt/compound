@@ -68,6 +68,8 @@ This nine-chapter course follows the Irish buying process in the order it actual
 <a href="/wealth/closing-buying-home-ireland/" aria-label="Closing, Keys &amp; After You Buy"><span>09</span><div><strong>Closing, Keys & After You Buy</strong><p>Completion, first payments, LPT, maintenance, overpayments and switching.</p></div><b>→</b></a>
 </div>
 
+**Compare mortgage protection before drawdown:** our [2026 Mortgage Protection Insurance Ireland guide](/wealth/mortgage-protection-insurance-ireland/) explains price factors, Irish insurers and joint versus dual-life policies.
+
 ## The 2026 rules worth knowing
 
 <div class="home-stat-grid">
