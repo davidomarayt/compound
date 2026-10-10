@@ -71,7 +71,7 @@ SEC filing results described here.
     assert "Close enlarged stock chart" in js
     assert "Escape" in js
     assert "refreshChartSize" in js
-    assert 'earnings.css?v=5' in profile and 'earnings.css?v=5' in report
+    assert 'earnings.css?v=6' in profile and 'earnings.css?v=5' in report
 
 
 def test_unverified_report_without_matching_registry_company_has_no_price_widget(settings):
