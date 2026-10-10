@@ -138,3 +138,30 @@ Body.
     assert result == "pexels-pinned-direct:38208389"
     assert "https://images.pexels.com/photos/38208389/pexels-photo-38208389.jpeg" in downloads[0]
     assert 'image: "/static/images/evergreen/pickleball-ireland.jpg"' in updated
+
+
+def test_automated_earnings_never_receive_images_even_when_forced(tmp_path, monkeypatch):
+    article = tmp_path / "len-earnings-fy2026-q3.md"
+    original = """---
+title: 'Lennar (LEN) Earnings'
+slug: len-earnings-fy2026-q3
+pillar: wealth
+publication_status: published
+tags: [earnings, automated-earnings, stocks]
+hero_image_url: https://example.com/some-kitchen.jpg
+---
+
+Earnings text only.
+"""
+    article.write_text(original, encoding="utf-8")
+
+    def unexpected(*args, **kwargs):
+        raise AssertionError("Image lookup/download must not run for automated earnings")
+
+    monkeypatch.setattr(news_images, "download", unexpected)
+    monkeypatch.setattr(news_images, "pexels_photo", unexpected)
+    monkeypatch.setattr(news_images, "fallback_image", unexpected)
+
+    assert news_images.process(article, "fake-key", force=False) == "skip:automated-earnings-text-only"
+    assert news_images.process(article, "fake-key", force=True) == "skip:automated-earnings-text-only"
+    assert article.read_text(encoding="utf-8") == original

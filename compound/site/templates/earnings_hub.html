@@ -5,7 +5,7 @@
 {% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=2">{% endblock %}
 {% block content %}<div class="earnings-hub">
 <nav class="earnings-crumb" aria-label="Breadcrumb"><a href="/">Compound</a> / <a href="/wealth/">Wealth</a> / Earnings</nav>
-<header class="earnings-hero"><p class="eyebrow">COMPOUND WEALTH / EARNINGS</p><h1>Company earnings. The numbers behind the headlines.</h1><p class="earnings-lede">Follow company quarterly and full-year results, with revenue, net income and earnings per share checked against US SEC filings. Clear comparisons. Original charts. Links to the data.</p><div class="earnings-hero-links"><a href="/pia/">Personal Investment Accounts →</a><a href="/wealth/how-to-start-investing-in-ireland/">Investing in Ireland 101 →</a></div></header>
+<header class="earnings-hero"><p class="eyebrow">COMPOUND WEALTH / EARNINGS</p><h1>Company earnings. The numbers behind the headlines.</h1><p class="earnings-lede">Follow company quarterly and full-year results, with revenue, net income and earnings per share checked against US SEC filings. Clear comparisons. Financial tables. Links to the data.</p><div class="earnings-hero-links"><a href="/pia/">Personal Investment Accounts →</a><a href="/wealth/how-to-start-investing-in-ireland/">Investing in Ireland 101 →</a></div></header>
 <section class="earnings-section" aria-labelledby="earnings-latest"><div class="earnings-heading"><p class="eyebrow">FINANCIAL RESULTS</p><h2 id="earnings-latest">Latest earnings reports</h2><span>{{ articles|length }} published report{{ '' if articles|length == 1 else 's' }}</span></div>
 {% if articles %}
 <div class="earnings-cards">

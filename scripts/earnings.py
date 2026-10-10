@@ -236,26 +236,6 @@ def _comparison_note(label: str, now: float, prior: float, formatter) -> str:
     return f"{label} {movement} from {formatter(prior)} to {formatter(now)} ({diff:+.1f}% year on year)."
 
 
-def chart_svg(revenue: dict) -> str:
-    """Two-period accessible inline graphic; sourced data also appears in HTML table."""
-    a, b = float(revenue["prior"]), float(revenue["current"])
-    top = max(a, b)
-    prior_h = max(4, round(a / top * 126))
-    now_h = max(4, round(b / top * 126))
-    return (
-        '<figure class="earnings-bars">'
-        '<svg viewBox="0 0 560 190" width="560" height="190" role="img" '
-        'aria-label="Reported revenue in US dollars: previous comparable period versus current filing">'
-        '<rect x="85" y="' + str(148 - prior_h) + '" width="124" height="' + str(prior_h) + '" rx="4" fill="#9a8b91"/>'
-        '<rect x="342" y="' + str(148 - now_h) + '" width="124" height="' + str(now_h) + '" rx="4" fill="#7d4b4e"/>'
-        '<text x="147" y="167" text-anchor="middle" fill="#393139" font-size="14">Prior year</text>'
-        '<text x="404" y="167" text-anchor="middle" fill="#393139" font-size="14">Current</text>'
-        '<text x="147" y="' + str(139 - prior_h) + '" text-anchor="middle" fill="#393139" font-size="14">' + escape(money(a)) + '</text>'
-        '<text x="404" y="' + str(139 - now_h) + '" text-anchor="middle" fill="#393139" font-size="14">' + escape(money(b)) + '</text>'
-        '</svg><figcaption>Revenue for matched reporting periods; primary source: SEC filing.</figcaption></figure>'
-    )
-
-
 def build_article(ticker: str, company: str, cik: int, filing: dict, metrics: dict, today: date) -> tuple[str, str]:
     label, period_slug = period_label(filing, metrics)
     slug = f"{ticker.lower()}-earnings-{period_slug}"
@@ -313,7 +293,6 @@ def build_article(ticker: str, company: str, cik: int, filing: dict, metrics: di
         _comparison_note("Revenue", rev["current"], rev["prior"], money), "",
         _comparison_note("Net income", net["current"], net["prior"], money), "",
         _comparison_note("Diluted GAAP EPS", diluted["current"], diluted["prior"], eps), "",
-        chart_svg(rev), "",
         "## How to interpret these results", "",
         "These figures are reported US GAAP results from the SEC's standardised company facts. They do not include management's full commentary, adjusted (non-GAAP) EPS, analyst estimates, guidance or the share-price reaction. Revenue growth does not by itself establish profitability or future returns.", "",
         "The comparison uses the same financial-statement concept and a corresponding period one year earlier; amended disclosures or accounting changes can affect comparability. Consult the source filing before relying on the figures.", "",

@@ -346,6 +346,11 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
     meta, raw, match = parse(path)
     slug = str(meta.get("slug") or path.stem)
 
+    # Compound Earnings reports are deliberately text-only. This must run
+    # before pinned-image and evergreen/news fallback handling, including --force.
+    if "automated-earnings" in {str(tag).lower() for tag in meta.get("tags") or []}:
+        return "skip:automated-earnings-text-only"
+
     # Editorially approved stock images can be pinned by their public image URL.
     # This path bypasses search ranking and API-rate limits entirely, while still
     # downloading the asset locally so the site never hotlinks the publisher.
