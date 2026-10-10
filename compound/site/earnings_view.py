@@ -38,6 +38,8 @@ def _from_legacy(article):
         return None
     sources = meta.get("sources") or []
     url = sources[0].get("url", "") if sources else ""
+    if not url.startswith("https://www.sec.gov/Archives/"):
+        return None
     filing_date = ""
     if sources:
         mo = re.search(r"filed\s*(\d{4}-\d{2}-\d{2})",sources[0].get("title",""))
