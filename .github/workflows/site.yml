@@ -295,7 +295,15 @@ jobs:
           grep -Fq 'Not published' /tmp/pia-providers.html
           grep -Fq 'www.aib.ie/make-a-plan/investments/personal-investment-account' /tmp/pia-providers.html
           grep -Fq 'www.irishlife.ie/investments/pia/' /tmp/pia-providers.html
-          grep -Fq 'www.zurich.ie/savings-and-investments/savings-options/investment-account/' /tmp/pia-providers.html
+          grep -Fq 'www.zurich.ie/blog/a-guide-to-irelands-new-investment-account/' /tmp/pia-providers.html
+          grep -Fq 'data-pia-comparison' /tmp/pia-providers.html
+          grep -Fq 'data-pia-filter-search' /tmp/pia-providers.html
+          grep -Fq 'data-pia-provider-list' /tmp/pia-providers.html
+          grep -Fq 'Awaiting verified fees' /tmp/pia-providers.html
+          grep -Fq 'pia-providers.js?v=1' /tmp/pia-providers.html
+          ! grep -Fq 'class="pia-referral-link"' /tmp/pia-providers.html
+          fetch https://compound.ie/static/pia-providers.js /tmp/pia-provider-script.js
+          grep -Fq 'estimateAnnualCost' /tmp/pia-provider-script.js
           grep -Fq '<loc>https://compound.ie/pia/</loc>' /tmp/sitemap.xml
           grep -Fq '<loc>https://compound.ie/pia/providers/</loc>' /tmp/sitemap.xml
 
