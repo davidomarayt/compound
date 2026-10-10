@@ -1606,10 +1606,14 @@ def build_site(settings: Settings) -> dict:
         if not stock_coverage(company):
             continue
         coverage = company_reports[str(company["cik"])] + company_stories[str(company["cik"])]
+        dashboard_report = company_dashboards.get(str(company["cik"]))
+        coverage_dates = [a.date for a in coverage]
+        if dashboard_report:
+            coverage_dates.append(date.fromisoformat(dashboard_report["latest_end"]))
         index.append({
             "title": f'{company["name"]} ({company["symbol"]}) Stock, Earnings & News',
             "url": f'/stocks/{company["symbol"].lower()}/',
-            "pillar": "Wealth", "date": max(a.date for a in coverage).isoformat(),
+            "pillar": "Wealth", "date": max(coverage_dates).isoformat(),
             "summary": f'Share-price chart, financial filings and Compound coverage for {company["name"]}.',
             "tags": ["stocks", "earnings", company["symbol"].lower()],
             "description": f'Stock price context and company-specific research for {company["name"]}.',
