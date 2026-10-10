@@ -2,15 +2,26 @@ name: Compound Earnings Monitor
 
 on:
   schedule:
-    # Twice per hour, off common whole-hour boundaries. UTC.
+    # Four rotating shards: the entire S&P 500 is checked approximately every 2 hours.
     - cron: '17,47 * * * *'
+    # Refresh membership reference weekly. The official index may change between refreshes.
+    - cron: '6 7 * * 1'
+  push:
+    branches: ['claude/clever-babbage-uibieq']
+    paths:
+      - 'scripts/earnings.py'
+      - 'scripts/sp500_registry.py'
+      - '.github/workflows/earnings.yml'
   workflow_dispatch:
     inputs:
       dry_run:
-        description: 'Check SEC and show candidates without committing articles'
-        required: false
+        description: 'Check financial filings without committing results'
         type: boolean
         default: true
+      refresh_registry:
+        description: 'Refresh S&P 500 membership from public reference'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -22,8 +33,9 @@ concurrency:
 
 jobs:
   check-earnings:
+    if: github.ref == 'refs/heads/claude/clever-babbage-uibieq'
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 18
     steps:
       - uses: actions/checkout@v4
         with:
@@ -33,34 +45,52 @@ jobs:
           python-version: '3.11'
       - name: Install structured-data dependency
         run: python -m pip install --disable-pip-version-check PyYAML
-      - name: Check SEC financial filings and create verified content
-        # david@compound.ie is published on the site's Contact page, allowing
-        # SEC administrators to identify and contact the automated client.
+      - name: Refresh validated S&P 500 company registry
+        env:
+          CRON: ${{ github.event.schedule }}
+          REFRESH_REQUESTED: ${{ inputs.refresh_registry }}
+        run: |
+          set -euo pipefail
+          if [ ! -s content/earnings-sp500.json ] || [ "$CRON" = '6 7 * * 1' ] || [ "$REFRESH_REQUESTED" = 'true' ]; then
+            python scripts/sp500_registry.py --output content/earnings-sp500.json
+          else
+            echo 'Using the last validated S&P 500 membership snapshot.'
+          fi
+          # Do not describe the old 15-stock trial as complete index monitoring.
+          python - <<'PY'
+          import json
+          data=json.load(open('content/earnings-sp500.json'))
+          assert 480 <= data['company_count'] <= 515
+          assert 490 <= data['security_count'] <= 520
+          print(f"Validated membership: {data['company_count']} companies, {data['security_count']} share classes")
+          PY
+      - name: Check one shard of SEC company filings
         env:
           SEC_USER_AGENT: 'Compound.ie Earnings Research david@compound.ie'
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
         run: |
+          set -euo pipefail
+          SHARD="$(python -c 'from datetime import datetime, timezone; print(int(datetime.now(timezone.utc).timestamp()//1800)%4)')"
+          echo "Checking SEC shard $SHARD of 4"
           if [ "$DRY_RUN" = 'true' ]; then
-            python scripts/earnings.py --lookback-days 5 --max-new 3 --dry-run
+            python scripts/earnings.py --registry content/earnings-sp500.json --lookback-days 10 --max-new 8 --shard-count 4 --shard-index "$SHARD" --dry-run
           else
-            python scripts/earnings.py --lookback-days 5 --max-new 3
+            python scripts/earnings.py --registry content/earnings-sp500.json --lookback-days 10 --max-new 8 --shard-count 4 --shard-index "$SHARD"
           fi
-      - name: Commit verified earnings articles
-        if: github.event_name == 'schedule' || inputs.dry_run == false
+      - name: Commit registry changes and verified earnings reports
+        if: github.event_name != 'workflow_dispatch' || inputs.dry_run == false
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A -- content/wealth/
+          git add -A -- content/wealth/ content/earnings-sp500.json
           if git diff --cached --quiet; then
-            echo 'No new verified filings to publish.'
+            echo 'No new verified reports or registry updates.'
             exit 0
           fi
-          git commit -m 'Publish SEC-verified earnings results'
-          # Push with token via authenticated remote, without leaving credentials persisted on disk.
+          git commit -m 'Update S&P 500 coverage and verified earnings'
           git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push origin HEAD:"$GITHUB_REF_NAME"
-          # GITHUB_TOKEN pushes do NOT start push-triggered workflows.
-          # workflow_dispatch is permitted; launch the existing site publisher explicitly.
+          # Commits made with GITHUB_TOKEN do not trigger the pages push workflow.
           gh workflow run site.yml --ref "$GITHUB_REF_NAME"

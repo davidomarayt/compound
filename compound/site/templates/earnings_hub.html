@@ -2,7 +2,7 @@
 {% block head_title %}Company Earnings Reports & Financial Results | Compound Ireland{% endblock %}
 {% block meta %}<meta name="description" content="Explore SEC-verified quarterly and annual company earnings. Revenue, net income, diluted EPS, year-on-year comparisons and original charts from primary filings."><meta property="og:title" content="Compound Earnings — Financial Results Explained"><meta property="og:description" content="Verified quarterly and annual earnings summaries, with source data and clear comparisons."><meta property="og:url" content="{{ site_url }}/wealth/earnings/">{% endblock %}
 {% block head %}<link rel="canonical" href="{{ site_url }}/wealth/earnings/"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Compound","item":"{{ site_url }}/"},{"@type":"ListItem","position":2,"name":"Wealth","item":"{{ site_url }}/wealth/"},{"@type":"ListItem","position":3,"name":"Earnings","item":"{{ site_url }}/wealth/earnings/"}]}</script>{% endblock %}
-{% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=1">{% endblock %}
+{% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=2">{% endblock %}
 {% block content %}<div class="earnings-hub">
 <nav class="earnings-crumb" aria-label="Breadcrumb"><a href="/">Compound</a> / <a href="/wealth/">Wealth</a> / Earnings</nav>
 <header class="earnings-hero"><p class="eyebrow">COMPOUND WEALTH / EARNINGS</p><h1>Company earnings. The numbers behind the headlines.</h1><p class="earnings-lede">Follow company quarterly and full-year results, with revenue, net income and earnings per share checked against US SEC filings. Clear comparisons. Original charts. Links to the data.</p><div class="earnings-hero-links"><a href="/pia/">Personal Investment Accounts →</a><a href="/wealth/how-to-start-investing-in-ireland/">Investing in Ireland 101 →</a></div></header>
@@ -13,5 +13,21 @@
 </div>
 {% else %}<div class="earnings-empty"><h3>Preparing verified earnings coverage</h3><p>Our first filing-backed company results will appear when a monitored business submits a qualifying 10-Q or 10-K and the financial figures pass verification. We do not publish unverified estimates or placeholder reports.</p></div>{% endif %}
 </section>
+<section class="earnings-section" aria-labelledby="earnings-sp500-title">
+<div class="earnings-heading"><p class="eyebrow">S&amp;P 500 COMPANY DIRECTORY</p><h2 id="earnings-sp500-title">Track the companies behind the index.</h2><span>{{ registry.company_count }} companies / {{ registry.security_count }} share classes</span></div>
+{% if companies %}
+<p>The directory uses a public third-party constituent list, not an official licensed S&amp;P index feed. It was checked {{ registry.checked }}; memberships can change. Multiple share classes belonging to one company are counted once for earnings monitoring. SEC report availability varies by industry.</p>
+<div class="earnings-directory-controls"><div><label for="earnings-search">Search by company or ticker</label><input id="earnings-search" type="search" placeholder="Company name or stock ticker" data-earnings-search></div><div><label for="earnings-sector">Filter by GICS sector</label><select id="earnings-sector" data-earnings-sector><option value="">All sectors</option>{% for sector in sectors %}<option value="{{ sector }}">{{ sector }}</option>{% endfor %}</select></div></div>
+<p class="earnings-directory-count" data-earnings-count aria-live="polite">Showing {{ registry.company_count }} active companies</p>
+<div class="earnings-directory-scroll" tabindex="0" role="region" aria-label="S&amp;P 500 listed companies">
+<table class="earnings-directory"><thead><tr><th scope="col">Company</th><th scope="col">Ticker(s)</th><th scope="col">Sector</th><th scope="col">Earnings</th></tr></thead><tbody>
+{% for company in companies %}<tr data-earnings-row data-name="{{ company.name|lower }}" data-symbols="{{ company.symbols|join(' ')|lower }}" data-sector="{{ company.sector }}"><th scope="row"><a href="/wealth/earnings/company/{{ company.symbol|lower }}/">{{ company.name }}</a></th><td>{{ company.symbols|join(', ') }}</td><td>{{ company.sector }}</td><td>{% if report_counts.get(company.cik|string, 0) %}{{ report_counts[company.cik|string] }} verified{% else %}Awaiting filing{% endif %}</td></tr>{% endfor %}
+</tbody></table></div>
+<p class="earnings-directory-empty" data-earnings-empty hidden>No companies match the search.</p>
+<p class="earnings-directory-source">Membership reference: <a href="{{ registry.source }}" rel="noopener">public constituent table</a>. Company filing links point directly to the SEC. Some company profiles are excluded from search indexing until an earnings report is available.</p>
+{% else %}
+<div class="earnings-empty"><h3>S&amp;P 500 company register is being populated</h3><p>The scheduled monitor will add the full validated company list. We will not present the original 15-company trial watchlist as complete S&amp;P 500 coverage.</p></div>
+{% endif %}
+</section>
 <section class="earnings-section earnings-method" aria-labelledby="earnings-method"><div><p class="eyebrow">HOW IT WORKS</p><h2 id="earnings-method">Original figures. Clear limitations.</h2></div><div><p>These articles are generated from SEC XBRL financial-statement data, not analyst forecasts. A quarter is only reported if standalone three-month figures are available. A 10-K is treated as a full-year report, not as a fourth-quarter release.</p><p>Some companies' earnings press releases appear days or weeks before their 10-Q or 10-K filings; this feed is not a real-time earnings-release wire. Reports are deterministic and automatically source-checked, but they are <strong>not individually reviewed before publication</strong>. Corrections: <a href="mailto:david@compound.ie">david@compound.ie</a>.</p><p>These results do not represent personalised investment advice or imply that any shares can be bought in a PIA. Read the official filing before making decisions.</p></div></section>
-</div>{% endblock %}
+</div><script src="/static/earnings-directory.js?v=1" defer></script>{% endblock %}

@@ -1117,9 +1117,42 @@ def build_site(settings: Settings) -> dict:
     # Permanent earnings archive: source-linked automated filings are ordinary
     # Wealth articles with stable canonical URLs, not Google News submissions.
     earnings_articles = [a for a in articles if "automated-earnings" in a.tags]
+    registry_path = settings.content_dir / "earnings-sp500.json"
+    if registry_path.is_file():
+        earnings_registry = json.loads(registry_path.read_text(encoding="utf-8"))
+        if not isinstance(earnings_registry.get("members"), list):
+            raise ValueError("Malformed S&P 500 company registry")
+    else:
+        earnings_registry = {
+            "members": [], "company_count": 0, "security_count": 0, "checked": None,
+            "source": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
+        }
+    registry_members = earnings_registry["members"]
+    active_earnings_companies = sorted(
+        (c for c in registry_members if c.get("active")),
+        key=lambda c: (c["name"].casefold(), c["symbol"]),
+    )
+    company_reports = {
+        str(c["cik"]): [
+            a for a in earnings_articles
+            if any(symbol.lower() in a.tags for symbol in c["symbols"])
+        ]
+        for c in registry_members
+    }
+    report_counts = {cik: len(reports) for cik, reports in company_reports.items()}
+    sector_names = sorted({c["sector"] for c in active_earnings_companies})
     _write(out / "wealth" / "earnings" / "index.html", env.get_template("earnings_hub.html").render(
         title="Company Earnings and Financial Results", pillar="wealth",
-        articles=earnings_articles, ads_allowed=True))
+        articles=earnings_articles, ads_allowed=True, registry=earnings_registry,
+        companies=active_earnings_companies, sectors=sector_names, report_counts=report_counts))
+    for company in registry_members:
+        company_symbol = company["symbol"].lower()
+        _write(
+            out / "wealth" / "earnings" / "company" / company_symbol / "index.html",
+            env.get_template("earnings_company.html").render(
+                title=f'{company["name"]} ({company["symbol"]}) Earnings',
+                pillar="wealth", company=company, reports=company_reports[str(company["cik"])]),
+        )
 
     for p in PILLARS:
         if p == "happiness":
@@ -1338,6 +1371,20 @@ def build_site(settings: Settings) -> dict:
         "description": "Ireland's new investment account: official rules, providers and calculator.",
         "image": "", "reading_minutes": 5, "date_label": pia_updated,
     })
+    # Empty profiles remain browseable but are noindex and excluded from search.
+    for company in registry_members:
+        reports = company_reports[str(company["cik"])]
+        if not reports:
+            continue
+        index.append({
+            "title": f'{company["name"]} ({company["symbol"]}) Earnings History',
+            "url": f'/wealth/earnings/company/{company["symbol"].lower()}/',
+            "pillar": "Wealth", "date": max(a.date for a in reports).isoformat(),
+            "summary": f'SEC-verified earnings reports for {company["name"]}.',
+            "tags": ["earnings", "stocks", company["symbol"].lower()],
+            "description": f'Historic SEC earnings reports for {company["name"]}.',
+            "image": "", "reading_minutes": 3, "date_label": "Company earnings",
+        })
     _write(out / "search.json", json.dumps(index, ensure_ascii=False))
     _write(out / "search" / "index.html", env.get_template("search.html").render(title="Search", search_index=index, ads_allowed=False))
     _write(out / "feed.xml", env.get_template("feed.xml").render(articles=articles[:30]))
@@ -1405,6 +1452,16 @@ def build_site(settings: Settings) -> dict:
         for a in articles
     )
     sitemap_entries.extend((settings.site_base_url + f"/{pg.slug}/", None) for pg in pages)
+
+    # Only profiles with real earnings coverage are indexable in search engines.
+    sitemap_entries.extend(
+        (
+            settings.site_base_url + f'/wealth/earnings/company/{company["symbol"].lower()}/',
+            max((a.reviewed or a.date) for a in company_reports[str(company["cik"])]).isoformat(),
+        )
+        for company in registry_members
+        if company_reports[str(company["cik"])]
+    )
 
     sitemap_by_url: dict[str, str | None] = {}
     for url, lastmod in sitemap_entries:
