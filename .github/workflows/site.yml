@@ -316,11 +316,25 @@ jobs:
           # Confirm the directory is populated across the full index rather than
           # assuming a fixed security count forever (share classes can change).
           test "$(grep -o 'data-earnings-row' /tmp/earnings-hub.html | wc -l)" -ge 490
-          fetch https://compound.ie/wealth/earnings/company/aapl/ /tmp/aapl-earnings-profile.html
-          grep -Fq '<link rel="canonical" href="https://compound.ie/wealth/earnings/company/aapl/">' /tmp/aapl-earnings-profile.html
-          grep -Fq 'SEC Central Index Key' /tmp/aapl-earnings-profile.html
-          grep -Fq 'published summar' /tmp/aapl-earnings-profile.html
-          ! grep -Fq 'summaryies' /tmp/aapl-earnings-profile.html
+          # The canonical stock directory and company hubs replaced earnings/company.
+          fetch https://compound.ie/stocks/ /tmp/stocks-hub.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/stocks/">' /tmp/stocks-hub.html
+          grep -Fq 'Browse stocks by company or ticker.' /tmp/stocks-hub.html
+          test "$(grep -o 'data-earnings-row' /tmp/stocks-hub.html | wc -l)" -ge 490
+          fetch https://compound.ie/stocks/aapl/ /tmp/aapl-stock-profile.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/stocks/aapl/">' /tmp/aapl-stock-profile.html
+          grep -Fq 'US SEC CIK' /tmp/aapl-stock-profile.html
+          grep -Fq 'published summar' /tmp/aapl-stock-profile.html
+          grep -Fq 'data-tv-symbol="AAPL"' /tmp/aapl-stock-profile.html
+          ! grep -Fq 'summaryies' /tmp/aapl-stock-profile.html
+          # GitHub Pages lacks native 301s: old URLs must point canonically to Stocks.
+          fetch https://compound.ie/wealth/earnings/company/aapl/ /tmp/aapl-legacy-profile.html
+          grep -Fq 'name="robots" content="noindex,follow"' /tmp/aapl-legacy-profile.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/stocks/aapl/">' /tmp/aapl-legacy-profile.html
+          grep -Fq 'content="0; url=/stocks/aapl/"' /tmp/aapl-legacy-profile.html
+          fetch https://compound.ie/stocks/goog/ /tmp/goog-alias.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/stocks/googl/">' /tmp/goog-alias.html
+          grep -Fq '<loc>https://compound.ie/stocks/</loc>' /tmp/sitemap.xml
           fetch https://compound.ie/static/earnings-directory.js /tmp/earnings-directory.js
           grep -Fq 'data-earnings-row' /tmp/earnings-directory.js
           grep -Fq 'href="/wealth/earnings/"' /tmp/wealth.html
@@ -351,7 +365,7 @@ jobs:
           ! grep -Fq 'class="article-tool-banner' /tmp/earnings-lennar.html
           ! grep -Fq 'class="article-tools"' /tmp/earnings-lennar.html
           grep -Fq 'More Lennar earnings and filings' /tmp/earnings-lennar.html
-          grep -Fq 'href="/wealth/earnings/company/len/"' /tmp/earnings-lennar.html
+          grep -Fq 'href="/stocks/len/"' /tmp/earnings-lennar.html
           grep -Fq 'href="/pia/"' /tmp/earnings-lennar.html
           grep -Fq 'href="/pia-calculator/"' /tmp/earnings-lennar.html
 
