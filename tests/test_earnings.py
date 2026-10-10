@@ -6,9 +6,9 @@ from types import SimpleNamespace
 import pytest
 
 MODULE = Path(__file__).resolve().parents[1] / 'scripts' / 'earnings.py'
-spec = importlib.util.spec_from_file_location('earnings', MODULE)
-earnings = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(earnings)
+import sys
+sys.path.insert(0, str(MODULE.parent))
+import earnings
 
 FILING = {'form':'10-Q','filingDate':'2026-10-09','reportDate':'2026-09-30',
           'accessionNumber':'0000000001-26-000123','primaryDocument':'q3.htm'}
@@ -99,17 +99,24 @@ class FakeClient:
         return facts()
 
 
-def test_run_is_idempotent_and_dry_run_is_safe(tmp_path):
+def test_run_updates_one_profile_without_creating_quarterly_article(tmp_path):
     watchlist=tmp_path/'watchlist.yml'
     watchlist.write_text('tickers: [AAPL]\n')
     content=tmp_path/'content'
-    out=earnings.run(watchlist,content,client=FakeClient(),now=date(2026,10,10),lookback=5,max_new=3,dry_run=True)
+    out=earnings.run(watchlist,content,client=FakeClient(),now=date(2026,10,10),
+                     lookback=5,max_new=3,dry_run=True)
     assert len(out)==1
-    assert not list((content/'wealth').glob('*.md'))
-    out=earnings.run(watchlist,content,client=FakeClient(),now=date(2026,10,10),lookback=5,max_new=3,dry_run=False)
+    assert not list((content/'wealth').glob('*.md')) if (content/'wealth').exists() else True
+    assert not list((content/'earnings-profiles').glob('*.json')) if (content/'earnings-profiles').exists() else True
+    out=earnings.run(watchlist,content,client=FakeClient(),now=date(2026,10,10),
+                     lookback=5,max_new=3,dry_run=False)
     assert len(out)==1
-    assert Path(out[0]).exists()
-    assert earnings.run(watchlist,content,client=FakeClient(),now=date(2026,10,10),lookback=5,max_new=3,dry_run=False)==[]
+    profile=content/'earnings-profiles'/'aapl.json'
+    assert profile.exists()
+    assert '"fp": "Q3"' in profile.read_text()
+    assert not list((content/'wealth').glob('*earnings*.md')) if (content/'wealth').exists() else True
+    assert earnings.run(watchlist,content,client=FakeClient(),now=date(2026,10,10),
+                        lookback=5,max_new=3,dry_run=False)==[]
 
 
 def test_reporting_period_misalignment_rejected():
