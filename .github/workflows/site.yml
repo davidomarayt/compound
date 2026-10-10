@@ -329,7 +329,7 @@ jobs:
           grep -Fq '<loc>https://compound.ie/pia/providers/</loc>' /tmp/sitemap.xml
 
           fetch https://compound.ie/wealth/earnings/ /tmp/earnings-hub.html
-          grep -Fq 'Company earnings. The numbers behind the headlines.' /tmp/earnings-hub.html
+          grep -Fq 'Company earnings. One report per business.' /tmp/earnings-hub.html
           grep -Fq '<link rel="canonical" href="https://compound.ie/wealth/earnings/">' /tmp/earnings-hub.html
           grep -Fq 'not individually reviewed before publication' /tmp/earnings-hub.html
           grep -Fq 'earnings-directory.js?v=1' /tmp/earnings-hub.html
@@ -345,7 +345,7 @@ jobs:
           fetch https://compound.ie/stocks/aapl/ /tmp/aapl-stock-profile.html
           grep -Fq '<link rel="canonical" href="https://compound.ie/stocks/aapl/">' /tmp/aapl-stock-profile.html
           grep -Fq 'US SEC CIK' /tmp/aapl-stock-profile.html
-          grep -Fq 'published summar' /tmp/aapl-stock-profile.html
+          grep -Fq 'id="earnings-company-results"' /tmp/aapl-stock-profile.html
           grep -Fq 'data-tv-symbol="AAPL"' /tmp/aapl-stock-profile.html
           ! grep -Fq 'summaryies' /tmp/aapl-stock-profile.html
           # GitHub Pages lacks native 301s: old URLs must point canonically to Stocks.
@@ -370,33 +370,20 @@ jobs:
           fetch https://compound.ie/static/images/evergreen/tesla-spacex-merger-2027.jpg /tmp/tesla-spacex-photo.jpg
           test -s /tmp/tesla-spacex-photo.jpg
 
-          # All automatically generated earnings articles must remain text-only.
-          # Guard against the generic Wealth kitchen photo and any future image fallback.
-          fetch https://compound.ie/wealth/earnings/len-earnings-fy2026-q3/ /tmp/earnings-lennar.html
-          grep -Fq 'Lennar (LEN) Earnings' /tmp/earnings-lennar.html
-          ! grep -Fq '<div class="article-cover">' /tmp/earnings-lennar.html
-          ! grep -Fq '<img ' /tmp/earnings-lennar.html
-          ! grep -Fq '<figure ' /tmp/earnings-lennar.html
-          ! grep -Fq 'og:image' /tmp/earnings-lennar.html
-          ! grep -Fq 'twitter:image' /tmp/earnings-lennar.html
-          ! grep -Fq 'Photo: Unsplash' /tmp/earnings-lennar.html
-          grep -Fq 'US GAAP · matched reporting periods' /tmp/earnings-lennar.html
-          # Premium earnings template must show readable source-bound charts,
-          # SEO canonical metadata and no mismatched stock-photo hero.
-          test "$(grep -o 'class="earnings-kpi earnings-kpi-' /tmp/earnings-lennar.html | wc -l)" -eq 3
-          test "$(grep -o 'class="earnings-trend"' /tmp/earnings-lennar.html | wc -l)" -eq 3
-          grep -Fq 'class="earnings-results-table"' /tmp/earnings-lennar.html
-          grep -Fq 'role="img"' /tmp/earnings-lennar.html
-          grep -Fq '−8.7%' /tmp/earnings-lennar.html
-          grep -Fq '<link rel="canonical" href="https://compound.ie/wealth/earnings/len-earnings-fy2026-q3/">' /tmp/earnings-lennar.html
-          ! grep -Fq 'Investment Fee Impact Calculator' /tmp/earnings-lennar.html
-          # Relevant low-profile links go AFTER the filing data, not
-          # a large investment-fee calculator panel in the middle.
-          ! grep -Fq 'class="article-tool-banner' /tmp/earnings-lennar.html
-          ! grep -Fq 'class="article-tools"' /tmp/earnings-lennar.html
-          grep -Fq 'More Lennar earnings and filings' /tmp/earnings-lennar.html
-          grep -Fq 'href="/stocks/len/"' /tmp/earnings-lennar.html
-          grep -Fq 'href="/pia/"' /tmp/earnings-lennar.html
-          grep -Fq 'href="/pia-calculator/"' /tmp/earnings-lennar.html
+          # One source-backed fiscal earnings dashboard per business.
+          fetch https://compound.ie/stocks/len/ /tmp/earnings-lennar.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/stocks/len/">' /tmp/earnings-lennar.html
+          grep -Fq 'FY2026 Q3' /tmp/earnings-lennar.html
+          grep -Fq '2026-' /tmp/earnings-lennar.html
+          grep -Fq 'class="earnings-one-table"' /tmp/earnings-lennar.html
+          grep -Fq 'Original Q3 filing' /tmp/earnings-lennar.html
+          grep -Fq 'earnings-one-chart-row' /tmp/earnings-lennar.html
+          ! grep -Fq 'article-cover' /tmp/earnings-lennar.html
+          # Every legacy quarter URL redirects to the canonical stock profile.
+          fetch https://compound.ie/wealth/earnings/len-earnings-fy2026-q3/ /tmp/legacy-lennar.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/stocks/len/">' /tmp/legacy-lennar.html
+          grep -Fq 'name="robots" content="noindex,follow"' /tmp/legacy-lennar.html
+          grep -Fq 'content="0; url=/stocks/len/"' /tmp/legacy-lennar.html
+          ! grep -Fq '<loc>https://compound.ie/wealth/earnings/len-earnings-fy2026-q3/</loc>' /tmp/sitemap.xml
 
           echo 'Live verification passed for Compound calculator catalogue, Health and Wealth Hubs, PIA Centre, Earnings, discovery metadata and flagship guides.'

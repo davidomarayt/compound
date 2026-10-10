@@ -113,9 +113,12 @@ Primary-source analysis of OpenAI.
     assert 'href="/companies/canva/"' in companies
     assert 'data-tv-symbol="NASDAQ:SPCX"' in spcx
     assert "SpaceX original research" in spcx
-    assert "SpaceX filing-backed SEC report" in spcx
-    assert 'href="/wealth/earnings/spcx-earnings-fy2026-q3/"' in spcx
-    assert "1 published SEC-backed report" in spcx
+    # An unverified legacy fixture must not be shown as a new earnings article.
+    assert "SpaceX filing-backed SEC report" not in spcx
+    assert "Awaiting a verified filing" in spcx
+    legacy=(root / "wealth/earnings/spcx-earnings-fy2026-q3/index.html").read_text()
+    assert 'http-equiv="refresh"' in legacy
+    assert 'https://example.test/stocks/spcx/' in legacy
     assert 'name="robots" content="noindex,follow"' not in spcx
     assert 'data-tv-symbol="KRX:005930"' in samsung
     assert 'name="robots" content="noindex,follow"' in samsung

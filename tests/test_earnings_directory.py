@@ -25,6 +25,17 @@ canonical_path: /wealth/earnings/aapl-earnings-fy2026-q3/
 date: 2026-10-10
 summary: Verifiable filing summary.
 tags: [earnings, automated-earnings, aapl]
+earnings_snapshot:
+  form: 10-Q
+  report_end: '2026-09-30'
+  period_label: FY 2026 Q3
+  metrics:
+    revenue: {current: 10000000000, prior: 9000000000}
+    net_income: {current: 2000000000, prior: 1800000000}
+    diluted_eps: {current: 1.5, prior: 1.2}
+sources:
+  - title: SEC Apple 10-Q filed 2026-10-09
+    url: https://www.sec.gov/Archives/edgar/data/320193/example.htm
 ---
 
 A sourced report.
@@ -39,11 +50,13 @@ A sourced report.
     assert '3 share classes' in hub and '2 active companies' in hub
     assert '/stocks/aapl/' in hub
     assert '/stocks/googl/' in hub
-    assert 'Example Apple results' in apple
+    assert 'FY2026 Q3' in apple
+    assert '2026-09-30' in apple
     assert 'name="robots" content="noindex,follow"' not in apple
     assert 'name="robots" content="noindex,follow"' in alphabet
-    assert '1 published summary' in apple
-    assert '0 published summaries' in alphabet
+    assert 'Verified FY2026' not in alphabet
+    assert 'Awaiting a verified SEC filing' in alphabet
+    assert 'one report per business' in hub.lower() or 'one live report per company' in hub.lower()
     assert 'summaryies' not in apple
     assert 'summaryies' not in alphabet
     assert '<loc>https://example.test/stocks/aapl/</loc>' in sitemap
@@ -67,22 +80,10 @@ A sourced report.
     assert any(x['url']=='/stocks/aapl/' for x in search)
     assert not any(x['url']=='/stocks/googl/' for x in search)
 
-def test_all_earnings_profile_report_counts_are_grammatical():
-    """Render the exact template expression for zero, one, and multiple reports."""
+def test_earnings_profile_is_one_report_not_a_quarterly_article_list():
     from pathlib import Path
-    import re
-
-    from jinja2 import Environment
-
-    template = (Path(__file__).resolve().parents[1] /
-                "compound/site/templates/earnings_company.html").read_text(encoding="utf-8")
-    matched = re.search(r"<span>\{\{ reports\|length \}\} published .*?</span>", template)
-    assert matched is not None, "Company profile must display report count"
-    counter = Environment().from_string(matched.group(0))
-    for count, label in ((0, "0 published summaries"),
-                         (1, "1 published summary"),
-                         (2, "2 published summaries"),
-                         (5, "5 published summaries")):
-        rendered = counter.render(reports=[object()] * count)
-        assert label in rendered
-        assert "summaryies" not in rendered
+    template=(Path(__file__).resolve().parents[1] /
+              "compound/site/templates/earnings_company.html").read_text()
+    assert 'include "_company_quarters.html"' in template
+    assert "published summaries" not in template
+    assert "quarterly report cards" not in template

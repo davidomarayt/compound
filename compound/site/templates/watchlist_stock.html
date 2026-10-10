@@ -2,7 +2,7 @@
 {% block head_title %}{{ company.name }} ({{ company.ticker }}) Stock — Chart, News &amp; Research | Compound{% endblock %}
 {% block meta %}<meta name="description" content="{{ company.name }} ({{ company.ticker }}) on {{ company.exchange }}: share-price chart, listing details, news and research from Compound."><meta property="og:title" content="{{ company.name }} Stock Research | Compound"><meta property="og:url" content="{{ site_url }}/stocks/{{ company.slug }}/">{% endblock %}
 {% block head %}<link rel="canonical" href="{{ site_url }}/stocks/{{ company.slug }}/">{% if not has_coverage %}<meta name="robots" content="noindex,follow">{% endif %}{% endblock %}
-{% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=8"><link rel="stylesheet" href="/static/company-watchlist.css?v=1"><script src="/static/tradingview-earnings.js?v=4" defer></script>{% endblock %}
+{% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=10"><link rel="stylesheet" href="/static/company-watchlist.css?v=1"><script src="/static/tradingview-earnings.js?v=4" defer></script>{% endblock %}
 {% block content %}
 <div class="earnings-hub stocks-company">
 <nav class="earnings-crumb" aria-label="Breadcrumb"><a href="/">Compound</a> / <a href="/stocks/">Stocks</a> / {{ company.ticker }}</nav>
@@ -12,12 +12,8 @@
 <p class="earnings-directory-source">Primary listing reference: <a href="{{ company.source }}" rel="noopener noreferrer" target="_blank">{{ company.exchange }} ↗</a>. For ADRs, prices refer to the named depositary receipt rather than the local ordinary share.</p>
 </header>
 {{ tradingview_panel|safe }}
-<section class="earnings-section" id="stocks-company-earnings" aria-labelledby="additional-company-earnings-heading">
-<div class="earnings-heading"><p class="eyebrow">VERIFIED FINANCIAL FILINGS</p><h2 id="additional-company-earnings-heading">Earnings &amp; financial results</h2><span>{{ reports|length }} published SEC-backed report{{ '' if reports|length == 1 else 's' }}</span></div>
-{% if reports %}<div class="earnings-cards">
-{% for article in reports %}<article class="earnings-card"><p class="earnings-kicker">SOURCE-VERIFIED 10-Q / 10-K · <time datetime="{{ article.date.isoformat() }}">{{ article.date|long_date }}</time></p><h3><a href="{{ article.url }}">{{ article.title }}</a></h3><p>{{ article.summary }}</p><a class="earnings-read" href="{{ article.url }}">Explore filing data →</a></article>{% endfor %}
-</div>{% else %}<div class="earnings-empty"><h3>Awaiting a fully verified filing</h3><p>Compound monitors primary financial disclosures for this company. International reporting formats vary and may require individual verification before a financial report can be published. <a href="/wealth/earnings/">Browse published SEC earnings reports →</a></p></div>{% endif %}
-</section>
+{% if report %}{% include "_company_quarters.html" %}{% else %}
+<section class="earnings-section" id="earnings-company-results"><div class="earnings-heading"><h2>Fiscal earnings and quarterly growth</h2><span>Awaiting a verified filing</span></div><p>Compound checks this company's official filings. International reporting formats require additional verification; no quarterly figures are invented and no separate quarterly articles are automatically published.</p></section>{% endif %}
 <section class="earnings-section" id="stocks-company-coverage"><div class="earnings-heading"><p class="eyebrow">ORIGINAL COVERAGE</p><h2>News &amp; analysis</h2><span>{{ news|length + research|length }} linked articles</span></div>
 {% if news or research %}<div class="earnings-cards">
 {% for article in news %}<article class="earnings-card"><p class="earnings-kicker">NEWS · <time datetime="{{ article.date.isoformat() }}">{{ article.date|long_date }}</time></p><h3><a href="{{ article.url }}">{{ article.title }}</a></h3><p>{{ article.summary }}</p><a class="earnings-read" href="{{ article.url }}">Read article →</a></article>{% endfor %}

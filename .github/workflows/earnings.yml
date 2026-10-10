@@ -93,7 +93,7 @@ jobs:
           else
             python scripts/global_earnings_watch.py
           fi
-      - name: Commit registry changes and verified earnings reports
+      - name: Commit registry changes and consolidated earnings datasets
         if: github.event_name != 'workflow_dispatch' || inputs.dry_run == false
         env:
           GH_TOKEN: ${{ github.token }}
@@ -101,16 +101,17 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A -- content/wealth/ content/earnings-sp500.json
+          if [ -d content/earnings-profiles ]; then git add -A -- content/earnings-profiles/; fi
+          git add -A -- content/earnings-sp500.json
           if [ -f monitoring/global-earnings-review.json ]; then
             git add -- monitoring/global-earnings-review.json
           fi
-          site_changes="$(git diff --cached --name-only -- content/wealth/ content/earnings-sp500.json)"
+          site_changes="$(git diff --cached --name-only -- content/earnings-profiles/ content/earnings-sp500.json)"
           if git diff --cached --quiet; then
             echo 'No new verified reports or registry updates.'
             exit 0
           fi
-          git commit -m 'Update S&P 500 coverage and verified earnings'
+          git commit -m 'Update SEC-verified quarterly data on existing stock profiles'
           git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push origin HEAD:"$GITHUB_REF_NAME"
           # Commits made with GITHUB_TOKEN do not trigger the pages push workflow.
           if [ -n "$site_changes" ]; then

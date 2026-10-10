@@ -24,3 +24,15 @@ No shares prices, earnings guidance, analyst consensus or unsupported banks' rev
 The additional 10 public companies are tracked from `content/company-watchlist.json` and retain their existing `/stocks/<slug>/` URLs. They are **not** S&P 500 members by virtue of being in the directory. Their official primary investor sources are checked daily, with 20-F/6-K filings staged for review rather than auto-parsed as US domestic earnings. SpaceX may qualify for SEC 10-Q/10-K articles only after validating its issuer identity.
 
 Historical SEC earnings backfill is strictly limited to 2026-or-newer filing dates and financial periods, with at most two retrospective reports each day and thirty across the site, and never more than one per issuer in the first pass. The live thirty-minute monitor is unchanged apart from the SEC-verified extra issuer check. Each backfilled story retains its filing date and public filing URL; publishing occurs on the actual day Compound first posts it.
+
+## 10 October 2026: consolidated SEC reports
+
+The earnings monitor no longer emits individual FY-quarter Markdown articles.
+Instead, source-verified Q1/Q2/Q3 data feeds a single canonical company
+page at `/stocks/<ticker>/`, preserving actual fiscal periods and SEC
+source dates. Q3 vs Q2 and year-to-date financial comparisons are omitted
+if comparable standalone quarters cannot be validated. Old quarter URLs
+canonical-redirect to their company page and are removed from the sitemap.
+The historical article backfill scheduler was retired to avoid duplicate
+or outdated quarter pages. Legacy document paragraphs above describe the
+former launch architecture only.
