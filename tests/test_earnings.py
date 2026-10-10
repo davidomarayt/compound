@@ -56,6 +56,8 @@ def test_report_text_has_attribution_yoy_sources_and_no_unverified_claims():
     assert 'same financial-statement concept' in article
     assert 'automated-earnings' in article
     assert 'not individually reviewed' in article
+    assert '<img' not in article and '<figure' not in article and '<svg' not in article
+    assert 'image:' not in article
     assert 'https://www.sec.gov/Archives/edgar/data/320193/000000000126000123/q3.htm' in article
     assert 'investment recommendation' in article
 
