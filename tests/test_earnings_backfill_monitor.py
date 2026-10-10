@@ -188,9 +188,11 @@ def test_two_per_day_and_total_thirty_historical_reports(tmp_path, monkeypatch):
 
     # Once 29 existing reports are marked as backfilled, only one slot remains.
     for i in range(27):
-        (folder / f"stub{i}-earnings-fy2026.md").write_text(
-            "---\\nhistorical_backfill: true\\n---\\nSample article\\n".replace("\\\\n", "\\n")
-        )
+        (folder / f"stub{i}-earnings-fy2026.md").write_text("""---
+historical_backfill: true
+---
+Sample article
+""")
     assert backfill.existing_backfill_count(folder) == 29
     final = backfill.backfill(tmp_path / "registry", root, client=FakeSEC(),
                               today=date(2026, 10, 11), days=365, max_new=8)
