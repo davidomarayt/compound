@@ -1631,11 +1631,15 @@ def build_site(settings: Settings) -> dict:
     })
     for c in extra_listed:
         stories = listed_stories[c["slug"]]
-        if stories:
+        dashboard_report = extra_dashboards[c["slug"]]
+        if stories or dashboard_report:
+            dates = [a.date for a in stories]
+            if dashboard_report:
+                dates.append(date.fromisoformat(dashboard_report["latest_end"]))
             index.append({
                 "title": f'{c["name"]} ({c["ticker"]}) Stock Research',
                 "url": f'/stocks/{c["slug"]}/', "pillar": "Wealth",
-                "date": max(a.date for a in stories).isoformat(),
+                "date": max(dates).isoformat(),
                 "summary": c["summary"], "tags": ["stocks", c["ticker"].lower()],
                 "description": c["summary"], "image": "", "reading_minutes": 3,
                 "date_label": "Stock profile",
