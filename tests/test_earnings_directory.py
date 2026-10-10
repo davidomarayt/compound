@@ -59,7 +59,7 @@ def test_all_earnings_profile_report_counts_are_grammatical():
 
     template = (Path(__file__).resolve().parents[1] /
                 "compound/site/templates/earnings_company.html").read_text(encoding="utf-8")
-    matched = re.search(r"<span>{{ reports\\|length }} published .+?</span>", template)
+    matched = re.search(r"<span>\{\{ reports\|length \}\} published .*?</span>", template)
     assert matched is not None, "Company profile must display report count"
     counter = Environment().from_string(matched.group(0))
     for count, label in ((0, "0 published summaries"),
