@@ -25,7 +25,7 @@
   <tbody>
   {% for q in report.quarters %}
   <tr><th scope="row">FY{{ report.fy }} {{ q.label }}</th>
-    {% if q.available %}<td>{{ q.period_end }}</td><td>{{ q.figures.revenue }}</td><td>{{ q.figures.net_income }}</td><td>{{ q.figures.diluted_eps }}</td><td><a href="{{ q.source }}" rel="noopener">Original {{ q.label }} filing ↗</a></td>
+    {% if q.available %}<td>{{ q.period_end }}</td><td>{{ q.figures.revenue }}</td><td>{{ q.figures.net_income }}</td><td>{{ q.figures.diluted_eps }}</td><td>{% if q.source %}<a href="{{ q.source }}" rel="noopener">Original {{ q.label }} filing ↗</a>{% else %}Source unavailable{% endif %}</td>
     {% else %}<td colspan="5">Not verified or not yet filed</td>{% endif %}
   </tr>{% endfor %}
   </tbody></table>
