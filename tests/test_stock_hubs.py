@@ -66,6 +66,10 @@ General advice, not about Alphabet or Apple.
     assert '<loc>https://example.test/stocks/aapl/</loc>' not in sitemap
     assert '<loc>https://example.test/stocks/goog/</loc>' not in sitemap
     assert '<loc>https://example.test/wealth/earnings/company/googl/</loc>' not in sitemap
+    directory = (root / "stocks/index.html").read_text(encoding="utf-8")
+    assert "Showing 2 of 2 companies" in directory
+    assert directory.index('href="/stocks/googl/"') < directory.index('href="/stocks/aapl/"')
+    assert "S&amp;P 500" not in directory
     assert any(x["url"] == "/stocks/" for x in search)
     assert any(x["url"] == "/stocks/googl/" for x in search)
     assert all(x["url"] not in ("/stocks/goog/", "/stocks/aapl/") for x in search)

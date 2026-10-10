@@ -85,7 +85,13 @@ Primary-source analysis of OpenAI.
     sitemap = (root / "sitemap.xml").read_text(encoding="utf-8")
     search = json.loads((root / "search.json").read_text(encoding="utf-8"))
 
-    assert "Global companies to watch" in stocks
+    assert "Global companies to watch" not in stocks
+    assert "S&amp;P 500" not in stocks
+    assert "Showing 2 of 2 companies" in stocks
+    assert stocks.count("data-earnings-row") == 2
+    assert stocks.index('href="/stocks/005930-ks/"') < stocks.index('href="/stocks/spcx/"')
+    assert 'data-sector="Semiconductors"' in stocks
+    assert '<option value="Semiconductors">' in stocks
     assert 'href="/stocks/spcx/"' in stocks
     assert 'href="/stocks/005930-ks/"' in stocks
     assert 'href="/companies/"' in stocks

@@ -1224,11 +1224,25 @@ def build_site(settings: Settings) -> dict:
         title="Company Earnings and Financial Results", pillar="wealth",
         articles=earnings_articles, ads_allowed=True, registry=earnings_registry,
         companies=active_earnings_companies, sectors=sector_names, report_counts=report_counts))
+    # One directory of all public companies; do not visually segregate companies
+    # based on which source register they came from.
+    stock_directory_companies = sorted(
+        [
+            {**company, "slug": company["symbol"].lower(),
+             "report_count": report_counts.get(str(company["cik"]), 0)}
+            for company in active_earnings_companies
+        ] + [
+            {**company, "symbols": [company["ticker"]], "report_count": 0}
+            for company in extra_listed
+        ],
+        key=lambda company: (company["name"].casefold(), company["slug"]),
+    )
+    stock_sectors = sorted({company["sector"] for company in stock_directory_companies})
     _write(out / "stocks" / "index.html", env.get_template("stocks_hub.html").render(
-        title="Stock Market Directory and Company Research", pillar="wealth",
-        registry=earnings_registry, companies=active_earnings_companies,
-        listed_companies=extra_listed, private_companies=private_companies,
-        sectors=sector_names, report_counts=report_counts))
+        title="Stocks Directory and Company Research", pillar="wealth",
+        registry=earnings_registry, companies=stock_directory_companies,
+        checked=watchlist.get("checked") or earnings_registry.get("checked"),
+        sectors=stock_sectors))
     from compound.site.tradingview import render_tradingview_panel
     for company in registry_members:
         company_symbol = company["symbol"].lower()
@@ -1473,11 +1487,11 @@ def build_site(settings: Settings) -> dict:
         for a in articles
     ]
     index.insert(0, {
-        "title": "Stocks Directory — S&P 500 and Global Public Companies",
+        "title": "Stocks Directory — Public Companies and Research",
         "url": "/stocks/", "pillar": "Wealth",
         "date": date.today().isoformat(),
         "summary": "Browse S&P 500 and global listed companies, price charts and original research.",
-        "tags": ["stocks", "companies", "s&p 500", "stock market", "investing"],
+        "tags": ["stocks", "companies", "stock market", "investing", "company research"],
         "description": "Public company stock charts and primary-source earnings profiles.",
         "image": "", "reading_minutes": 3, "date_label": "Stocks",
     })
