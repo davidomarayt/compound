@@ -1,66 +1,17 @@
-name: Verified Earnings Historical Backfill
-
+# Retired: quarter-by-quarter article backfill replaced by Q1–Q3 hydration when
+# a real SEC filing triggers an existing company's consolidated earnings page.
+name: Historical Earnings Backfill (Retired)
 on:
-  schedule:
-    # Deliberately limited to one small batch daily, away from the main SEC monitor.
-    - cron: '12 9 * * *'
-  push:
-    branches: ['claude/clever-babbage-uibieq']
-    paths:
-      - 'scripts/earnings_backfill.py'
-      - '.github/workflows/earnings-backfill.yml'
   workflow_dispatch:
     inputs:
       dry_run:
-        description: 'Inspect SEC candidates without publishing'
+        description: 'Historical article backfill has been retired; no publication is performed.'
         type: boolean
         default: true
-
 permissions:
-  contents: write
-  actions: write
-
-concurrency:
-  group: compound-earnings-publisher
-  cancel-in-progress: false
-
+  contents: read
 jobs:
-  backfill:
-    if: github.ref == 'refs/heads/claude/clever-babbage-uibieq'
+  retired:
     runs-on: ubuntu-latest
-    timeout-minutes: 18
     steps:
-      - uses: actions/checkout@v4
-        with:
-          persist-credentials: false
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      - run: python -m pip install --disable-pip-version-check PyYAML
-      - name: Publish at most two SEC reports from 2026 onward
-        env:
-          SEC_USER_AGENT: 'Compound.ie Earnings Research david@compound.ie'
-          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
-        run: |
-          set -euo pipefail
-          if [ "$DRY_RUN" = 'true' ]; then
-            python scripts/earnings_backfill.py --registry content/earnings-sp500.json --extra-watchlist content/company-watchlist.json --lookback-days 365 --max-new 2 --dry-run
-          else
-            python scripts/earnings_backfill.py --registry content/earnings-sp500.json --extra-watchlist content/company-watchlist.json --lookback-days 365 --max-new 2
-          fi
-      - name: Commit new reports and trigger public site build
-        if: github.event_name != 'workflow_dispatch' || inputs.dry_run == false
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          set -euo pipefail
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A -- content/wealth/
-          if git diff --cached --quiet; then
-            echo 'No new eligible historical reports. Existing records are unchanged.'
-            exit 0
-          fi
-          git commit -m 'Backfill SEC earnings from 2026 onward (max two)'
-          git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push origin HEAD:"$GITHUB_REF_NAME"
-          gh workflow run site.yml --ref "$GITHUB_REF_NAME"
+      - run: echo 'No historical earnings articles are published. The main earnings monitor hydrates Q1/Q2/Q3 into one company page.'
