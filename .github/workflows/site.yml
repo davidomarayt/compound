@@ -324,4 +324,16 @@ jobs:
           grep -Fq 'href="/wealth/earnings/"' /tmp/wealth.html
           grep -Fq '<loc>https://compound.ie/wealth/earnings/</loc>' /tmp/sitemap.xml
 
+          # All automatically generated earnings articles must remain text-only.
+          # Guard against the generic Wealth kitchen photo and any future image fallback.
+          fetch https://compound.ie/wealth/earnings/len-earnings-fy2026-q3/ /tmp/earnings-lennar.html
+          grep -Fq 'Lennar (LEN) Earnings' /tmp/earnings-lennar.html
+          ! grep -Fq '<div class="article-cover">' /tmp/earnings-lennar.html
+          ! grep -Fq '<img ' /tmp/earnings-lennar.html
+          ! grep -Fq '<figure ' /tmp/earnings-lennar.html
+          ! grep -Fq 'og:image' /tmp/earnings-lennar.html
+          ! grep -Fq 'twitter:image' /tmp/earnings-lennar.html
+          ! grep -Fq 'Photo: Unsplash' /tmp/earnings-lennar.html
+          grep -Fq 'Revenue (US GAAP)' /tmp/earnings-lennar.html
+
           echo 'Live verification passed for Compound calculator catalogue, Health and Wealth Hubs, PIA Centre, Earnings, discovery metadata and flagship guides.'
