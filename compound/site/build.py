@@ -711,7 +711,9 @@ def is_news_article(a: Article) -> bool:
 
 
 def discover_image_paths(a: Article) -> list[str]:
-    if not a.image:
+    if not a.image or a.image.startswith(("https://", "http://")):
+        # Approved remote editorial photographs use the original URL, not
+        # locally generated Google Discover derivatives.
         return []
     # The bespoke Budget 2027 cover is already an optimised local WebP. The
     # GitHub Pages runner's Pillow/libwebp build cannot decode this particular
@@ -790,7 +792,8 @@ def article_jsonld(a: Article, site_url: str) -> str:
                    {"@type": "Person", "name": "David", "url": f"{base}/about/"}),
         "publisher": {"@id": f"{base}/#organization"},
         "mainEntityOfPage": {"@type": "WebPage", "@id": f"{base}{a.url}"},
-        "image": discover_image_urls(a, base) if a.image else None,
+        "image": (discover_image_urls(a, base) or
+                  ([a.image] if a.image.startswith("https://") else [])) if a.image else None,
         "articleSection": (
             f"News / {PILLAR_LABELS.get(a.pillar, a.pillar)}"
             if is_news_article(a)
@@ -929,7 +932,9 @@ def article_context(env: Environment, settings: Settings, article: Article, prev
         article_jsonld=article_jsonld(article, settings.site_base_url),
         breadcrumb_jsonld=article_breadcrumb_jsonld(article, settings.site_base_url),
         discover_images=images,
-        social_image=(images[-1] if images else (settings.site_base_url.rstrip("/") + article.image if article.image else "")),
+        social_image=(images[-1] if images else
+                      (article.image if article.image.startswith("https://") else
+                       (settings.site_base_url.rstrip("/") + article.image if article.image else ""))),
     )
 
 
@@ -1071,13 +1076,23 @@ def build_site(settings: Settings) -> dict:
         if is_news and not article.image_path:
             raise ValueError(f"Published News article needs an image: {article.slug}")
         if not article.image_path:
-            continue  # Evergreen articles may render without a generic cover.
+            # New editorial company/stock research must not silently acquire
+            # unrelated stock photography from an automated fallback.
+            is_stock_story = bool({"stocks", "company-research", "stock-analysis"} & set(article.tags))
+            if is_stock_story and "automated-earnings" not in article.tags and article.date >= date(2026, 10, 11):
+                raise ValueError(f"Editorial stock article needs a relevant cover image: {article.slug}")
+            continue  # Other evergreen articles may render without a generic cover.
         if not article.image_alt:
             raise ValueError(f"Add cover alt text for {article.slug}")
         if article.image in image_owners:
             raise ValueError(f"Cover image reused by {article.slug} and {image_owners[article.image]}")
         image_owners[article.image] = article.slug
-        if not article.image.startswith("/static/images/") or not (HERE / article.image.lstrip("/")).is_file():
+        # Use local owned assets by default. A clearly credited Commons-hosted
+        # CC0 source is also permitted for editorial stock photos.
+        if article.image.startswith("https://upload.wikimedia.org/wikipedia/commons/"):
+            if not article.image_source.startswith("https://commons.wikimedia.org/wiki/File"):
+                raise ValueError(f"Credit the Wikimedia Commons file page: {article.slug}")
+        elif not article.image.startswith("/static/images/") or not (HERE / article.image.lstrip("/")).is_file():
             raise ValueError(f"Missing local cover image for {article.slug}")
 
     # Wipe rendered output except previews (they belong to the pending queue, not the content dir).
