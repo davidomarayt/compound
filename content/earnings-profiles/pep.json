@@ -1,0 +1,125 @@
+{
+  "cik": 77476,
+  "company": "PepsiCo",
+  "latest": {
+    "accession": "0000077476-26-000048",
+    "filed": "2026-10-08",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.23,
+        "prior_year": 1.9,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 3048000000,
+        "prior_year": 2603000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 25274000000,
+        "prior_year": 23937000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-05",
+    "source": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000048/pep-20260905.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000077476-26-000017",
+      "filed": "2026-04-16",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.7,
+          "prior_year": 1.33,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2327000000,
+          "prior_year": 1834000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 19443000000,
+          "prior_year": 17919000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-21",
+      "source": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000017/pep-20260321.htm"
+    },
+    {
+      "accession": "0000077476-26-000035",
+      "filed": "2026-07-09",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.18,
+          "prior_year": 0.92,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2981000000,
+          "prior_year": 1263000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 24181000000,
+          "prior_year": 22726000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-13",
+      "source": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000035/pep-20260613.htm"
+    },
+    {
+      "accession": "0000077476-26-000048",
+      "filed": "2026-10-08",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.23,
+          "prior_year": 1.9,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 3048000000,
+          "prior_year": 2603000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 25274000000,
+          "prior_year": 23937000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-05",
+      "source": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000048/pep-20260905.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "PEP",
+  "updated": "2026-10-10"
+}
