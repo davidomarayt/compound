@@ -67,8 +67,8 @@ def test_eight_sourced_quarters_render_in_order_without_js():
     # Real SEC quarter endings can vary: source periods, not inferred spacing.
     html = render_earnings_dashboard(snapshot(points))
     assert "8 reported periods" in html
-    assert "Mar '24" in html
-    assert "Dec '25" in html
+    assert "Mar &#x27;24" in html
+    assert "Dec &#x27;25" in html
     assert 'viewBox="0 0 720 238"' in html
 
 
