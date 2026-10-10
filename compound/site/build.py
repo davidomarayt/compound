@@ -1131,7 +1131,8 @@ def build_site(settings: Settings) -> dict:
     pia_referrals_active = any(p["referral"].get("active") for p in pia_providers)
     _write(out / "pia" / "index.html", env.get_template("pia_centre.html").render(
         title="Personal Investment Account Ireland", pillar="wealth", pia_page=True,
-        providers=pia_providers, pia_updated=pia_updated))
+        providers=pia_providers, pia_updated=pia_updated,
+        pia_referrals_active=pia_referrals_active))
     _write(out / "pia" / "providers" / "index.html", env.get_template("pia_providers.html").render(
         title="PIA Providers Ireland", pillar="wealth", pia_page=True,
         providers=pia_providers, pia_updated=pia_updated,
