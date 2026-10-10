@@ -116,8 +116,16 @@ def backfill(registry_path: Path, content_dir: Path, *, client, today: date,
             fields["historical_backfill"] = True
             fields["filing_date"] = filing["filingDate"]
             fields["tags"].append("historical-filing")
+            # Explicitly disclose the distinction between SEC filing date and
+            # Compound's later backfill publication date to readers and crawlers.
+            historical_note = (
+                f"> **Historical SEC filing.** {company['name']} filed this "
+                f"{filing['form']} on **{filing['filingDate']}**. "
+                f"Compound published this source-verified retrospective on "
+                f"**{today.isoformat()}**; it is not a current earnings release.\n\n"
+            )
             article = ("---\n" + yaml.safe_dump(fields, allow_unicode=True, sort_keys=False,
-                                                width=120) + "---\n" + body)
+                                                width=120) + "---\n" + historical_note + body)
             target = directory / f"{slug}.md"
             if not dry_run:
                 target.write_text(article, encoding="utf-8")
