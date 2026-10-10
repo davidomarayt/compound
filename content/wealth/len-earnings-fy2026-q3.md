@@ -49,7 +49,6 @@ Net income fell from $590.97m to $283.88m (-52.0% year on year).
 
 Diluted GAAP EPS fell from $2.29 to $1.19 (-48.0% year on year).
 
-<figure class="earnings-bars"><svg viewBox="0 0 560 190" width="560" height="190" role="img" aria-label="Reported revenue in US dollars: previous comparable period versus current filing"><rect x="85" y="22" width="124" height="126" rx="4" fill="#9a8b91"/><rect x="342" y="33" width="124" height="115" rx="4" fill="#7d4b4e"/><text x="147" y="167" text-anchor="middle" fill="#393139" font-size="14">Prior year</text><text x="404" y="167" text-anchor="middle" fill="#393139" font-size="14">Current</text><text x="147" y="13" text-anchor="middle" fill="#393139" font-size="14">$8.81bn</text><text x="404" y="24" text-anchor="middle" fill="#393139" font-size="14">$8.05bn</text></svg><figcaption>Revenue for matched reporting periods; primary source: SEC filing.</figcaption></figure>
 
 ## How to interpret these results
 
