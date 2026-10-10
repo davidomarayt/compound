@@ -47,7 +47,7 @@ def test_fiscal_q3_q2_and_verified_ytd(tmp_path):
 
 def test_fiscal_2027_q1_ended_2026_is_not_wrong_q3(tmp_path):
     folder=tmp_path/"earnings-profiles"; folder.mkdir()
-    data=record(2027,"Q1","2026-08-31","2026-10-08","accn","3000000000","100000000",0.8,"2026-06-01")
+    data=record(2027,"Q1","2026-08-31","2026-10-08","accn",3000000000,100000000,0.8,"2026-06-01")
     data["metrics"]["revenue"]["current"]=3000000000
     data["metrics"]["net_income"]["current"]=100000000
     (folder/"ctas.json").write_text(json.dumps({
