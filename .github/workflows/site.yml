@@ -311,6 +311,10 @@ jobs:
           grep -Fq 'Company earnings. The numbers behind the headlines.' /tmp/earnings-hub.html
           grep -Fq '<link rel="canonical" href="https://compound.ie/wealth/earnings/">' /tmp/earnings-hub.html
           grep -Fq 'not individually reviewed before publication' /tmp/earnings-hub.html
+          grep -Fq 'earnings-directory.js?v=1' /tmp/earnings-hub.html
+          grep -Fq 'S&amp;P 500 COMPANY DIRECTORY' /tmp/earnings-hub.html
+          fetch https://compound.ie/static/earnings-directory.js /tmp/earnings-directory.js
+          grep -Fq 'data-earnings-row' /tmp/earnings-directory.js
           grep -Fq 'href="/wealth/earnings/"' /tmp/wealth.html
           grep -Fq '<loc>https://compound.ie/wealth/earnings/</loc>' /tmp/sitemap.xml
 
