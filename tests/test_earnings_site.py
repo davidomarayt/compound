@@ -122,7 +122,32 @@ Source filing linked below.
 """,
         encoding="utf-8",
     )
+    (folder / "regular-investing-guide.md").write_text(
+        """---
+title: Regular investing guide
+slug: regular-investing-guide
+pillar: wealth
+date: 2026-10-10
+tags: [investing]
+related_tools: [investment-fee-calculator]
+---
+
+First paragraph about investment costs.
+
+Second paragraph explains percentage fees.
+
+Third paragraph discusses compounding.
+
+Fourth paragraph discusses fixed fees.
+
+Fifth paragraph discusses financial choices.
+""",
+        encoding="utf-8",
+    )
     build_site(settings)
+    normal = (settings.public_dir / "wealth" /
+              "regular-investing-guide" / "index.html").read_text(encoding="utf-8")
+    assert 'class="article-tool-banner' in normal
     article = (settings.public_dir / "wealth" / "earnings" /
                "len-test-earnings" / "index.html").read_text(encoding="utf-8")
     assert 'href="/wealth/earnings/company/len/"' in article
