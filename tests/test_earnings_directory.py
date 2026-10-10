@@ -55,7 +55,7 @@ A sourced report.
     assert 'name="robots" content="noindex,follow"' not in apple
     assert 'name="robots" content="noindex,follow"' in alphabet
     assert 'Verified FY2026' not in alphabet
-    assert 'Awaiting a comparable SEC filing' in alphabet
+    assert 'Awaiting a verified SEC filing' in alphabet
     assert 'one report per business' in hub.lower() or 'one live report per company' in hub.lower()
     assert 'summaryies' not in apple
     assert 'summaryies' not in alphabet
