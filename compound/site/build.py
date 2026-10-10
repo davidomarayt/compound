@@ -785,7 +785,9 @@ def article_jsonld(a: Article, site_url: str) -> str:
         "description": a.description,
         "datePublished": a.date.isoformat(),
         "dateModified": (a.reviewed or a.date).isoformat(),
-        "author": {"@type": "Person", "name": "David", "url": f"{base}/about/"},
+        "author": ({"@type": "Organization", "name": "Compound Earnings", "url": f"{base}/wealth/earnings/"}
+                   if "automated-earnings" in a.tags else
+                   {"@type": "Person", "name": "David", "url": f"{base}/about/"}),
         "publisher": {"@id": f"{base}/#organization"},
         "mainEntityOfPage": {"@type": "WebPage", "@id": f"{base}{a.url}"},
         "image": discover_image_urls(a, base) if a.image else None,
@@ -830,7 +832,9 @@ def article_breadcrumb_jsonld(a: Article, site_url: str) -> str:
             "@type": "BreadcrumbList",
             "itemListElement": items,
         }, ensure_ascii=False)
-    if is_news_article(a):
+    if "automated-earnings" in a.tags:
+        items.append({"@type": "ListItem", "position": 2, "name": "Earnings", "item": f"{base}/wealth/earnings/"})
+    elif is_news_article(a):
         items.append({"@type": "ListItem", "position": 2, "name": "News", "item": f"{base}/news/"})
     else:
         items.append({
