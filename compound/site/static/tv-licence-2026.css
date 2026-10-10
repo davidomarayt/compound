@@ -1,0 +1,16 @@
+/* TV licence revenue feature · 10 October 2026 */
+.article-prose .tv-story-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:25px 0 34px}
+.article-prose .tv-story-metrics>div{display:flex;flex-direction:column;gap:10px;background:#efe7dd;border-top:3px solid #79503b;padding:19px 15px;min-width:0;border-radius:3px}
+.article-prose .tv-story-metrics span{font:700 10px/1.4 Arial,sans-serif;color:#79503b;letter-spacing:.095em}
+.article-prose .tv-story-metrics strong{font:400 clamp(25px,3vw,41px)/1.05 Georgia,serif;letter-spacing:-.04em;color:#33252e}
+.article-prose .tv-story-metrics small{font:12px/1.5 Arial,sans-serif;color:#5f555b}
+.article-prose .tv-story-options{display:grid;gap:12px;margin:25px 0}
+.article-prose .tv-story-options>div{padding:22px 24px;background:#f4eee7;border-left:3px solid #79503b}
+.article-prose .tv-story-options strong{display:block;font:700 15px/1.5 Arial,sans-serif;margin-bottom:8px;color:#33252e}
+.article-prose .tv-story-options p{margin:0;color:#5f555b;font-size:14px;line-height:1.7}
+.article-prose .chart{margin:29px 0 35px;border:1px solid #ded8d3;background:#fffdf9;border-radius:3px;padding:clamp(14px,3vw,26px);max-width:100%}
+.article-prose .chart-title{font:400 25px/1.18 Georgia,serif}
+.article-prose .chart .chart-scroll{margin:16px 0 12px}
+.article-prose .chart .chart-note{font-size:12px;color:#5f555b}
+.article-prose .chart .chart-note a{text-decoration:underline}
+@media(max-width:680px){.article-prose .tv-story-metrics{grid-template-columns:1fr;gap:8px}.article-prose .tv-story-metrics>div{padding:14px 17px;gap:4px}.article-prose .tv-story-metrics strong{font-size:33px}.article-prose .tv-story-options>div{padding:16px}.article-prose .chart-title{font-size:21px}}
