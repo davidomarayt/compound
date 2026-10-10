@@ -224,6 +224,27 @@ def main():
     client = SECClient(os.getenv("SEC_USER_AGENT", ""))
     state = run(args.watchlist, args.snapshot, today=datetime.now(timezone.utc).date(),
                 client=client, dry_run=args.dry_run)
+    # Surface discoveries prominently on the scheduled GitHub Actions run.
+    summary_path = os.getenv("GITHUB_STEP_SUMMARY")
+    if summary_path:
+        lines = [
+            "## International company earnings watch",
+            "",
+            f"Checked **{state['companies_checked']}** additional public companies; "
+            f"**{state['new_review_candidates']}** new review candidates.",
+            "",
+            "| Company | Primary source status |",
+            "|---|---|",
+        ]
+        for entry in state["companies"].values():
+            lines.append(f"| {entry['company']} | {entry['official_source_status'].replace('|', ' ')} |")
+        for row in state["pending_review"][:state["new_review_candidates"]]:
+            lines.append(f"- **{row['company']}**: [{row['title']}]({row['url']}) — review only")
+        lines.append("")
+        lines.append("Review queue: monitoring/global-earnings-review.json. "
+                     "No unverified foreign-market results are auto-published.")
+        with open(summary_path, "a", encoding="utf-8") as output:
+            output.write("\n".join(lines) + "\n")
     print(f"Global financial-disclosure watch: {state['companies_checked']} companies, "
           f"{state['new_review_candidates']} new items for review, "
           f"{len(state['pending_review'])} pending")
