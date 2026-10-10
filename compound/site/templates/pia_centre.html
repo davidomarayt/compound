@@ -43,7 +43,7 @@
   </section>
   <section class="pia-section pia-provider-preview" aria-labelledby="pia-providers-title">
     <div class="pia-section-top"><div class="pia-heading"><p class="eyebrow">PROVIDER WATCH</p><h2 id="pia-providers-title">Who is preparing for the PIA launch?</h2></div><a href="/pia/providers/">Full comparison →</a></div>
-    <p>These are public statements, <strong>not endorsements, product rankings or confirmed account-opening offers</strong>. No PIA referral arrangements are active through this directory.</p>
+    <p>These are public statements, <strong>not endorsements, product rankings or confirmed account-opening offers</strong>. {% if pia_referrals_active %}Paid referral arrangements are disclosed separately and do not influence our editorial ordering.{% else %}No PIA referral arrangements are active through this directory.{% endif %}</p>
     <div class="pia-provider-list">
     {% for provider in providers %}
       <div class="pia-provider-row"><div><h3>{{ provider.name }}</h3><p>{{ provider.statement }}</p></div><div class="pia-provider-meta"><span class="pia-status-tag">{{ provider.status }}</span><span>Fees: {{ provider.annual_fee }}</span><a href="{{ provider.source_url }}" rel="noopener">{{ provider.source_label }} ↗</a></div></div>

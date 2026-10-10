@@ -1,34 +1,73 @@
-# Public primary-source tracker. No rankings or referral claims until verified.
-# Update each provider only after checking its official published terms.
-updated: "2026-10-10"
+# Compound PIA comparison — official-provider statements only.
+# PIA-specific fees and referral contracts are NOT yet verified.
+# Future sponsored/referral placements require approval and a disclosed paid relationship.
+updated: '2026-10-10'
 providers:
   - name: AIB
     slug: aib
-    statement: "AIB says it plans to offer a Personal Investment Account once the scheme rules and required services are finalised."
-    status: "Plans to offer"
-    availability: "Not open yet"
-    annual_fee: "Not published"
-    dealing_fee: "Not published"
-    investment_range: "Not published"
-    source_url: "https://www.aib.ie/make-a-plan/investments/personal-investment-account"
-    source_label: "AIB — Personal Investment Account"
+    category: Bank
+    stage: intent
+    status: 'Plans to offer, subject to final rules'
+    statement: 'AIB says it plans to offer a PIA after the scheme rules are finalised and the necessary services are developed.'
+    availability: 'Not open yet'
+    annual_fee: 'Not published'
+    dealing_fee: 'Not published'
+    fund_fee: 'Not published'
+    fx_fee: 'Not published'
+    minimum_investment: 'Not published'
+    transfer_terms: 'Not published'
+    investment_range: 'Not published'
+    checked: '2026-10-10'
+    source_url: 'https://www.aib.ie/make-a-plan/investments/personal-investment-account'
+    source_label: 'AIB — Personal Investment Account'
+    fee_model:
+      verified: false
+    referral:
+      active: false
+      approved: false
   - name: Irish Life
     slug: irish-life
-    statement: "Irish Life advertises its proposed Personal Investment Account as coming in July 2027."
-    status: "Announced for 2027"
-    availability: "Not open yet"
-    annual_fee: "Not published"
-    dealing_fee: "Not published"
-    investment_range: "Not published"
-    source_url: "https://www.irishlife.ie/investments/pia/"
-    source_label: "Irish Life — Personal Investment Accounts"
+    category: Insurer
+    stage: launch-planned
+    status: 'PIA announced for July 2027'
+    statement: 'Irish Life says its Personal Investment Account is coming in July 2027, subject to final scheme implementation.'
+    availability: 'Not open yet'
+    annual_fee: 'Not published'
+    dealing_fee: 'Not published'
+    fund_fee: 'Not published'
+    fx_fee: 'Not published'
+    minimum_investment: 'Not published'
+    transfer_terms: 'Not published'
+    investment_range: 'Full PIA product range not published'
+    checked: '2026-10-10'
+    source_url: 'https://www.irishlife.ie/investments/pia/'
+    source_label: 'Irish Life — Personal Investment Accounts'
+    fee_model:
+      verified: false
+    referral:
+      active: false
+      approved: false
   - name: Zurich
     slug: zurich
-    statement: "Zurich describes a forthcoming Investment Account planned for 1 July 2027."
-    status: "Describes planned account"
-    availability: "Not open yet"
-    annual_fee: "Not published"
-    dealing_fee: "Not published"
-    investment_range: "Not published"
-    source_url: "https://www.zurich.ie/savings-and-investments/savings-options/investment-account/"
-    source_label: "Zurich — Investment Account"
+    category: Insurer
+    stage: launch-planned
+    status: 'Intends to offer from launch'
+    statement: 'Zurich says it intends to make its Investment Account available from the scheme launch date, with a range of funds.'
+    availability: 'Not open yet'
+    annual_fee: 'Not published'
+    dealing_fee: 'Not published'
+    fund_fee: 'Not published'
+    fx_fee: 'Not published'
+    minimum_investment: 'Not published'
+    transfer_terms: 'Not published'
+    investment_range: 'Funds discussed; individual options not published'
+    checked: '2026-10-10'
+    source_url: 'https://www.zurich.ie/blog/a-guide-to-irelands-new-investment-account/'
+    source_label: 'Zurich — Guide to Ireland’s new Investment Account'
+    fee_model:
+      verified: false
+    referral:
+      active: false
+      approved: false
+# Paid sponsorships are rendered OUTSIDE the organic comparison table.
+sponsorships: []

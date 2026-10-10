@@ -1,7 +1,7 @@
 {% extends "base.html" %}
-{% block head_title %}PIA Providers Ireland 2027: Compare Fees & Availability | Compound{% endblock %}
+{% block head_title %}PIA Providers Ireland 2027: Compare Fees, Funds & Availability | Compound{% endblock %}
 {% block meta %}
-<meta name="description" content="Compare announced Personal Investment Account (PIA) providers in Ireland. Check official statements, availability, fees and investment choices as 2027 launches approach.">
+<meta name="description" content="Compare announced Personal Investment Account (PIA) providers in Ireland. Filter official PIA provider announcements, track fees, funds and availability, and compare verified costs when firms publish 2027 terms.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="PIA Providers Ireland — Independent Comparison | Compound">
 <meta property="og:description" content="A source-linked, independent tracker of Irish PIA providers, fees and availability. Unconfirmed features are clearly marked.">
@@ -11,7 +11,7 @@
 <link rel="canonical" href="{{ site_url }}/pia/providers/">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Compound","item":"{{ site_url }}/"},{"@type":"ListItem","position":2,"name":"PIA Centre","item":"{{ site_url }}/pia/"},{"@type":"ListItem","position":3,"name":"PIA providers","item":"{{ site_url }}/pia/providers/"}]}</script>
 {% endblock %}
-{% block post_styles %}<link rel="stylesheet" href="/static/pia-centre.css?v=1">{% endblock %}
+{% block post_styles %}<link rel="stylesheet" href="/static/pia-centre.css?v=2">{% endblock %}
 {% block content %}
 <div class="pia-centre">
   <nav class="pia-crumbs" aria-label="Breadcrumb"><a href="/">Compound</a><span>/</span><a href="/pia/">PIA Centre</a><span>/</span><span aria-current="page">Providers</span></nav>
@@ -21,20 +21,127 @@
     <p class="pia-lede">Which companies have announced plans for Ireland's Personal Investment Account? Our tracker separates public statements from final product details, so you can compare what's known without mistaking proposals for offers.</p>
     <p class="pia-note"><strong>Status: pre-launch.</strong> Personal Investment Accounts are not yet available. Planned scheme launch: 1 July 2027, subject to legislation and operational readiness.</p>
   </header>
-  <section class="pia-section" aria-labelledby="comparison-heading">
-    <div class="pia-section-top"><div class="pia-heading"><p class="eyebrow">INDEPENDENT TRACKER</p><h2 id="comparison-heading">Provider statements and terms</h2></div><span class="pia-small">Last checked {{ pia_updated }}</span></div>
-    <div class="pia-table-scroll" role="region" tabindex="0" aria-label="PIA provider comparison table">
-      <table class="pia-compare-table">
-        <thead><tr><th scope="col">Provider</th><th scope="col">Published position</th><th scope="col">Availability</th><th scope="col">Account fees</th><th scope="col">Dealing fees</th><th scope="col">Investments offered</th><th scope="col">Official source</th></tr></thead>
-        <tbody>
-        {% for provider in providers %}
-        <tr><th scope="row">{{ provider.name }}</th><td><span class="pia-status-tag">{{ provider.status }}</span><p>{{ provider.statement }}</p></td><td>{{ provider.availability }}</td><td>{{ provider.annual_fee }}</td><td>{{ provider.dealing_fee }}</td><td>{{ provider.investment_range }}</td><td><a href="{{ provider.source_url }}" rel="noopener">{{ provider.source_label }} ↗</a></td></tr>
-        {% else %}<tr><td colspan="7">No provider statements currently verified.</td></tr>{% endfor %}
-        </tbody>
-      </table>
+  <section class="pia-section" aria-labelledby="comparison-heading" data-pia-comparison>
+    <div class="pia-section-top">
+      <div class="pia-heading"><p class="eyebrow">SOURCE-VERIFIED PROVIDER TRACKER</p><h2 id="comparison-heading">Compare announced PIA providers</h2></div>
+      <span class="pia-small">Checked {{ pia_updated }}</span>
     </div>
-    <p class="pia-small">Alphabetical listing. “Not published” means we have not found verified PIA-specific terms in the cited provider material; it does not mean the provider charges nothing. Provider statements can change. This table is not a ranking or recommendation.</p>
+    <p class="pia-small">Published intentions are not live products. The government scheme is pending legislation and all PIA-specific provider fees shown as <strong>Not published</strong> are unknown — not zero.</p>
+    <div class="pia-filter-panel" aria-label="Filter PIA providers">
+      <div class="pia-control">
+        <label for="pia-provider-search">Search providers</label>
+        <input id="pia-provider-search" type="search" autocomplete="off" placeholder="Provider name" data-pia-filter-search>
+      </div>
+      <div class="pia-control">
+        <label for="pia-provider-type">Provider type</label>
+        <select id="pia-provider-type" data-pia-filter-type>
+          <option value="all">All types</option>
+          <option value="Bank">Banks</option>
+          <option value="Insurer">Insurers</option>
+          <option value="Broker">Brokers</option>
+          <option value="Investment firm">Investment firms</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="pia-control">
+        <label for="pia-provider-stage">Launch status</label>
+        <select id="pia-provider-stage" data-pia-filter-stage>
+          <option value="all">All statements</option>
+          <option value="intent">Plans subject to rules</option>
+          <option value="launch-planned">Plans for launch</option>
+          <option value="live">Open for applications</option>
+        </select>
+      </div>
+      <div class="pia-control">
+        <label for="pia-provider-sort">Sort results</label>
+        <select id="pia-provider-sort" data-pia-sort>
+          <option value="name">Provider A–Z (independent default)</option>
+          <option value="stage">Launch status (announcements first)</option>
+          <option value="fee-low" {% if not complete_fee_count %}disabled{% endif %}>Annual scenario cost: lowest first</option>
+          <option value="fee-high" {% if not complete_fee_count %}disabled{% endif %}>Annual scenario cost: highest first</option>
+        </select>
+      </div>
+    </div>
+    <p class="pia-results-count" data-pia-results-count aria-live="polite">{{ providers | length }} provider statements shown</p>
+    <div class="pia-comparison-grid" data-pia-provider-list>
+      {% for provider in providers %}
+      {% set model = provider.fee_model %}
+      <article class="pia-comparison-card" data-pia-provider data-provider="{{ provider.name | lower }}" data-type="{{ provider.category }}" data-stage="{{ provider.stage }}" data-fees-verified="{{ 'true' if model.verified else 'false' }}"
+       {% if model.verified %}data-account-eur="{{ model.account_annual_eur }}" data-account-pct="{{ model.account_annual_pct }}" data-custody-pct="{{ model.custody_annual_pct }}" data-fund-pct="{{ model.fund_annual_pct }}" data-trade-eur="{{ model.trade_eur }}"{% endif %}>
+        <div class="pia-card-top">
+          <div><p class="pia-card-kicker">{{ provider.category }}</p><h3>{{ provider.name }}</h3></div>
+          <span class="pia-status-tag">{{ provider.status }}</span>
+        </div>
+        <p class="pia-provider-summary">{{ provider.statement }}</p>
+        <dl class="pia-fee-facts">
+          <div><dt>Opening availability</dt><dd>{{ provider.availability }}</dd></div>
+          <div><dt>Account / ongoing fee</dt><dd>{{ provider.annual_fee }}</dd></div>
+          <div><dt>Dealing charges</dt><dd>{{ provider.dealing_fee }}</dd></div>
+          <div><dt>Fund costs</dt><dd>{{ provider.fund_fee }}</dd></div>
+          <div><dt>FX charges</dt><dd>{{ provider.fx_fee }}</dd></div>
+          <div><dt>Minimum investment</dt><dd>{{ provider.minimum_investment }}</dd></div>
+          <div><dt>Investments / funds</dt><dd>{{ provider.investment_range }}</dd></div>
+          <div><dt>Transfer rules and charges</dt><dd>{{ provider.transfer_terms }}</dd></div>
+        </dl>
+        <div class="pia-scenario-output">
+          <p class="pia-card-kicker">MODELLED ANNUAL COST</p>
+          <p class="pia-estimate" data-pia-estimate>
+            {% if model.verified %}Calculating from published fees…{% else %}Awaiting verified fees{% endif %}
+          </p>
+          {% if model.verified %}
+            <p class="pia-small">For {{ model.reference_investment }}. Model verified {{ model.as_of }}. <a href="{{ model.source_url }}" rel="noopener">Fee evidence ↗</a></p>
+          {% else %}
+            <p class="pia-small">No numerical estimate until a complete PIA-specific fee schedule is verified.</p>
+          {% endif %}
+        </div>
+        <div class="pia-provider-bottom">
+          <p class="pia-small">Provider statement checked {{ provider.checked }}</p>
+          <a class="pia-source-link" href="{{ provider.source_url }}" rel="noopener noreferrer" target="_blank">Read the official source ↗</a>
+          {% if provider.referral.active %}
+          <a class="pia-referral-link" href="{{ provider.referral.url }}" rel="sponsored nofollow noopener noreferrer" target="_blank" data-pia-referral="{{ provider.slug }}">
+            {{ provider.referral.label }} ↗
+          </a>
+          <p class="pia-disclosure"><strong>Paid referral:</strong> {{ provider.referral.disclosure }}</p>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="pia-no-results" data-pia-no-results hidden>No announced providers match these filters. Try another search or provider type.</p>
+    <p class="pia-small">The comparison is editorial, initially alphabetical, and includes named firms with public primary-source statements. Being featured does not imply approval or suitability. Provider offers, fees and account-opening details may change.</p>
   </section>
+  <section class="pia-section" aria-labelledby="pia-fee-scenario">
+    <div class="pia-heading"><p class="eyebrow">COST COMPARISON ENGINE</p><h2 id="pia-fee-scenario">Compare costs on the same assumptions</h2></div>
+    <p>When complete PIA-specific pricing is available, we'll compare provider fees for an identical investment balance and number of trades. Until then, the tool correctly displays an unavailable estimate rather than a guessed price.</p>
+    <div class="pia-scenario-tools" data-pia-scenario>
+      <div class="pia-control">
+        <label for="pia-balance">Illustrative investment balance (€)</label>
+        <input id="pia-balance" type="number" inputmode="decimal" min="0" max="10000000" step="100" value="10000" data-pia-balance>
+      </div>
+      <div class="pia-control">
+        <label for="pia-trades">Illustrative trades per year</label>
+        <input id="pia-trades" type="number" inputmode="numeric" min="0" max="1000" step="1" value="12" data-pia-trades>
+      </div>
+      <p class="pia-small">Published fee models would include annual account, custody and reference-fund percentages plus fixed annual and per-trade charges. The estimate excludes FX costs, exit charges, investment tax, market movement and any fees not in the verified reference schedule. It is a simple one-year illustration, not a personalised quote.</p>
+    </div>
+    {% if complete_fee_count == 0 %}
+    <p class="pia-unavailable">No provider has yet published a complete PIA fee schedule suitable for a fair like-for-like calculation.</p>
+    {% endif %}
+    <p>For your own assumptions, use our <a href="/investment-fee-calculator/">investment fee impact calculator</a> and the <a href="/pia-calculator/">PIA calculator</a>.</p>
+  </section>
+  {% if pia_sponsorships %}
+  <aside class="pia-sponsored-placements" aria-label="Paid sponsorships">
+    <p class="pia-card-kicker">SPONSORED · PAID PLACEMENTS</p>
+    {% for sponsor in pia_sponsorships %}
+    <div class="pia-sponsor-placement">
+      <strong>{{ sponsor.label }}: {{ sponsor.name }}</strong>
+      <p>{{ sponsor.disclosure }}</p>
+      <a href="{{ sponsor.url }}" rel="sponsored nofollow noopener noreferrer" target="_blank">Visit sponsor ↗</a>
+    </div>
+    {% endfor %}
+    <p>Paid placements are separate from the alphabetical comparison and cannot change editorial rankings.</p>
+  </aside>
+  {% endif %}
   <section class="pia-section" aria-labelledby="pia-compare-guide">
     <div class="pia-heading"><p class="eyebrow">HOW TO COMPARE</p><h2 id="pia-compare-guide">What to check when applications open</h2></div>
     <div class="pia-link-grid">
@@ -47,8 +154,9 @@
   <section class="pia-section pia-transparency">
     <h2>How this comparison is compiled</h2>
     <p>We include providers with a directly attributable public statement about Ireland's planned scheme. All entries have a link to the organisation's own published information and are listed alphabetically. We do not rank or recommend providers while fees and product documents are unavailable. Changes must be verified against an official provider source before the tracker is updated.</p>
-    <p>This directory currently contains no paid placements or affiliate referral links. If sponsorship or affiliate relationships are added, they will be visibly labelled and editorial criteria will remain independent. Investment values can fall and returns are not guaranteed. This is general information, not personal investment advice.</p>
+    <p>Any paid referral or sponsorship is separately labelled and requires an approved partner agreement. Unpaid provider source links are not affiliate links. If sponsorship or affiliate relationships are added, they will be visibly labelled and editorial criteria will remain independent. Investment values can fall and returns are not guaranteed. This is general information, not personal investment advice.</p>
     <p><a href="/pia/">← Return to the PIA Centre</a> · <a href="/wealth/personal-investment-account-ireland/">Read the full PIA guide</a>.</p>
   </section>
 </div>
+<script src="/static/pia-providers.js?v=1" defer></script>
 {% endblock %}
