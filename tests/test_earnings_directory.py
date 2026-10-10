@@ -52,7 +52,9 @@ A sourced report.
     stocks=(p/'stocks'/'index.html').read_text()
     assert '<link rel="canonical" href="https://example.test/stocks/">' in stocks
     assert '/stocks/aapl/' in stocks and '/stocks/googl/' in stocks
-    assert '3 share classes' in stocks
+    assert 'Showing 2 of 2 companies' in stocks
+    assert '2 companies' in stocks
+    assert 'S&amp;P 500' not in stocks
     assert '<loc>https://example.test/stocks/</loc>' in sitemap
     legacy=(p/'wealth'/'earnings'/'company'/'aapl'/'index.html').read_text()
     assert 'http-equiv="refresh"' in legacy
