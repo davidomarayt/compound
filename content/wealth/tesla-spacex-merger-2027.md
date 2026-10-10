@@ -1,4 +1,8 @@
 ---
+image: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Elon_Musk%27s_Tesla_Roadster_%2840143096241%29.jpg'
+image_alt: 'A Tesla Roadster carrying a SpaceX-suited mannequin in orbit with Earth behind it, photographed during the 2018 SpaceX Falcon Heavy mission.'
+image_credit: 'SpaceX / Wikimedia Commons (CC0)'
+image_source: 'https://commons.wikimedia.org/wiki/File:Elon_Musk%27s_Tesla_Roadster_(40143096241).jpg'
 title: "Will Tesla and SpaceX Merge in 2027? The Financial Case, Risks and Shareholder Impact"
 seo_title: "Tesla–SpaceX Merger 2027: Will It Happen? Financial Analysis"
 slug: tesla-spacex-merger-2027
