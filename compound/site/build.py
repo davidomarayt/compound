@@ -1056,13 +1056,13 @@ def build_site(settings: Settings) -> dict:
             unknown = [slug for slug in article.related_tools if slug not in tools_by_slug]
             if unknown:
                 raise ValueError(f"Unknown related_tools on {article.slug}: {unknown}")
-    reserved = {"/", "/search/", "/tools/", "/news/", "/pia/", "/pia/providers/", "/wealth/earnings/", "/compound-interest-calculator/", "/bmi-calculator/"}
+    reserved = {"/", "/search/", "/tools/", "/news/", "/pia/", "/pia/providers/", "/wealth/earnings/", "/stocks/", "/compound-interest-calculator/", "/bmi-calculator/"}
     reserved.update(tool["url"] for tool in tools)
     reserved.update(f"/{p}/" for p in PILLARS)
     reserved.update(f"/{pg.slug}/" for pg in pages)
     seen_urls = set(reserved)
     for article in articles:
-        if article.url in seen_urls or article.url.startswith(("/preview/", "/static/", "/tag/")):
+        if article.url in seen_urls or article.url.startswith(("/preview/", "/static/", "/tag/", "/stocks/")):
             raise ValueError(f"Article route conflicts with another page: {article.url}")
         seen_urls.add(article.url)
     image_owners = {}
@@ -1159,10 +1159,25 @@ def build_site(settings: Settings) -> dict:
         for c in registry_members
     }
     report_counts = {cik: len(reports) for cik, reports in company_reports.items()}
-    # Match earnings ticker tags to the canonical company profile, including
+    # Explicit per-ticker tags connect future analysis and news to the correct
+    # company hub. No headline matching or guessed company affiliations.
+    company_stories = {
+        str(c["cik"]): sorted(
+            (a for a in articles
+             if "automated-earnings" not in a.tags
+             and any(symbol.casefold() in a.tags for symbol in c["symbols"])),
+            key=lambda a: (a.date, a.slug), reverse=True,
+        )
+        for c in registry_members
+    }
+    def stock_coverage(company: dict) -> bool:
+        cik = str(company["cik"])
+        return bool(company_reports[cik] or company_stories[cik])
+
+    # Match ticker tags to the canonical stock hub, including
     # multiple share classes (GOOG / GOOGL share one permanent profile).
     earnings_profile_by_ticker = {
-        symbol.lower(): (f'/wealth/earnings/company/{company["symbol"].lower()}/', company["name"], company["symbol"])
+        symbol.lower(): (f'/stocks/{company["symbol"].lower()}/', company["name"], company["symbol"])
         for company in registry_members
         for symbol in company["symbols"]
     }
@@ -1171,16 +1186,36 @@ def build_site(settings: Settings) -> dict:
         title="Company Earnings and Financial Results", pillar="wealth",
         articles=earnings_articles, ads_allowed=True, registry=earnings_registry,
         companies=active_earnings_companies, sectors=sector_names, report_counts=report_counts))
+    _write(out / "stocks" / "index.html", env.get_template("stocks_hub.html").render(
+        title="Stock Market Directory and Company Research", pillar="wealth",
+        registry=earnings_registry, companies=active_earnings_companies,
+        sectors=sector_names, report_counts=report_counts))
     from compound.site.tradingview import render_tradingview_panel
     for company in registry_members:
         company_symbol = company["symbol"].lower()
+        cik = str(company["cik"])
+        stories = company_stories[cik]
+        is_covered = stock_coverage(company)
         _write(
-            out / "wealth" / "earnings" / "company" / company_symbol / "index.html",
+            out / "stocks" / company_symbol / "index.html",
             env.get_template("earnings_company.html").render(
-                title=f'{company["name"]} ({company["symbol"]}) Earnings',
-                pillar="wealth", company=company, reports=company_reports[str(company["cik"])],
+                title=f'{company["name"]} ({company["symbol"]}) Stock',
+                pillar="wealth", company=company, reports=company_reports[cik],
+                news=[a for a in stories if is_news_article(a)],
+                research=[a for a in stories if not is_news_article(a)],
+                has_coverage=is_covered, ads_allowed=is_covered,
                 tradingview_panel=render_tradingview_panel(company["symbol"], company["name"], "advanced")),
         )
+        # GitHub Pages cannot emit true 301s; a noindex canonical + instant
+        # redirect preserves old bookmarks without maintaining duplicate pages.
+        _write(out / "wealth" / "earnings" / "company" / company_symbol / "index.html",
+               _redirect_html(f"/stocks/{company_symbol}/", settings.site_base_url))
+        # Multiple share classes have one CIK/company research destination.
+        for alias in company["symbols"]:
+            alias = alias.lower()
+            if alias != company_symbol:
+                _write(out / "stocks" / alias / "index.html",
+                       _redirect_html(f"/stocks/{company_symbol}/", settings.site_base_url))
 
     for p in PILLARS:
         if p == "happiness":
@@ -1219,15 +1254,17 @@ def build_site(settings: Settings) -> dict:
         # that still nominate related_tools in YAML front matter.
         linked_tools = ([] if is_automated_earnings else
                         [tools_by_slug[s] for s in a.related_tools if s in tools_by_slug])
-        profile = (next(
+        profile = next(
             (earnings_profile_by_ticker[tag] for tag in a.tags
              if tag in earnings_profile_by_ticker), None
-        ) if is_automated_earnings else None)
+        )
         context = article_context(
             env, settings, a, False,
             earnings_ticker=profile[2] if profile else "",
             earnings_company_name=profile[1] if profile else "",
         )
+        context["stock_company_url"] = profile[0] if profile else ""
+        context["stock_company_name"] = profile[1] if profile else ""
         if is_automated_earnings:
             context["earnings_company_url"] = profile[0] if profile else ""
             context["earnings_company_name"] = profile[1] if profile else ""
@@ -1372,6 +1409,15 @@ def build_site(settings: Settings) -> dict:
         for a in articles
     ]
     index.insert(0, {
+        "title": "Stocks Directory — S&P 500 Company Profiles",
+        "url": "/stocks/", "pillar": "Wealth",
+        "date": date.today().isoformat(),
+        "summary": "Browse individual company profiles, TradingView price charts, SEC earnings reports and linked research.",
+        "tags": ["stocks", "companies", "s&p 500", "stock market", "investing"],
+        "description": "Public company stock charts and primary-source earnings profiles.",
+        "image": "", "reading_minutes": 3, "date_label": "Stocks",
+    })
+    index.insert(0, {
         "title": "Company Earnings Reports and Financial Results",
         "url": "/wealth/earnings/", "pillar": "Wealth",
         "date": date.today().isoformat(),
@@ -1415,19 +1461,20 @@ def build_site(settings: Settings) -> dict:
         "description": "Ireland's new investment account: official rules, providers and calculator.",
         "image": "", "reading_minutes": 5, "date_label": pia_updated,
     })
-    # Empty profiles remain browseable but are noindex and excluded from search.
+    # Only company profiles with substantive associated reports or editorial
+    # coverage are surfaced to search; empty templates remain noindex.
     for company in registry_members:
-        reports = company_reports[str(company["cik"])]
-        if not reports:
+        if not stock_coverage(company):
             continue
+        coverage = company_reports[str(company["cik"])] + company_stories[str(company["cik"])]
         index.append({
-            "title": f'{company["name"]} ({company["symbol"]}) Earnings History',
-            "url": f'/wealth/earnings/company/{company["symbol"].lower()}/',
-            "pillar": "Wealth", "date": max(a.date for a in reports).isoformat(),
-            "summary": f'SEC-verified earnings reports for {company["name"]}.',
-            "tags": ["earnings", "stocks", company["symbol"].lower()],
-            "description": f'Historic SEC earnings reports for {company["name"]}.',
-            "image": "", "reading_minutes": 3, "date_label": "Company earnings",
+            "title": f'{company["name"]} ({company["symbol"]}) Stock, Earnings & News',
+            "url": f'/stocks/{company["symbol"].lower()}/',
+            "pillar": "Wealth", "date": max(a.date for a in coverage).isoformat(),
+            "summary": f'Share-price chart, financial filings and Compound coverage for {company["name"]}.',
+            "tags": ["stocks", "earnings", company["symbol"].lower()],
+            "description": f'Stock price context and company-specific research for {company["name"]}.',
+            "image": "", "reading_minutes": 3, "date_label": "Company profile",
         })
     _write(out / "search.json", json.dumps(index, ensure_ascii=False))
     _write(out / "search" / "index.html", env.get_template("search.html").render(title="Search", search_index=index, ads_allowed=False))
@@ -1472,6 +1519,7 @@ def build_site(settings: Settings) -> dict:
         (settings.site_base_url + "/", None),
         (settings.site_base_url + "/news/", None),
         (settings.site_base_url + "/wealth/earnings/", None),
+        (settings.site_base_url + "/stocks/", None),
     ]
     sitemap_entries.extend([
         (settings.site_base_url + "/pia/", pia_updated),
@@ -1497,14 +1545,15 @@ def build_site(settings: Settings) -> dict:
     )
     sitemap_entries.extend((settings.site_base_url + f"/{pg.slug}/", None) for pg in pages)
 
-    # Only profiles with real earnings coverage are indexable in search engines.
+    # Canonical stock hub URLs only; old earnings-company aliases are noindex.
     sitemap_entries.extend(
         (
-            settings.site_base_url + f'/wealth/earnings/company/{company["symbol"].lower()}/',
-            max((a.reviewed or a.date) for a in company_reports[str(company["cik"])]).isoformat(),
+            settings.site_base_url + f'/stocks/{company["symbol"].lower()}/',
+            max((a.reviewed or a.date) for a in
+                company_reports[str(company["cik"])] + company_stories[str(company["cik"])]).isoformat(),
         )
         for company in registry_members
-        if company_reports[str(company["cik"])]
+        if stock_coverage(company)
     )
 
     sitemap_by_url: dict[str, str | None] = {}
