@@ -14,8 +14,8 @@
 {% else %}<p class="earnings-directory-source">Q3 versus Q2 growth will appear only after both quarters are verified for the same fiscal year. Missing periods are never guessed or filled from annual totals.</p>{% endif %}
 {% if report.ytd_complete %}
 <div class="earnings-one-ytd">
-  <div><span>Verified FY{{ report.fy }} revenue · Q1–{{ report.through }}</span><strong>{{ report.total_revenue }}</strong></div>
-  <div><span>Verified FY{{ report.fy }} net income · Q1–{{ report.through }}</span><strong>{{ report.total_net }}</strong></div>
+  <div><span>Verified FY{{ report.fy }} revenue · Q1–{{ report.through }}</span><strong>{{ report.total_revenue }}</strong><small>{% if report.ytd_yoy.revenue is not none %}{{ '%+.1f'|format(report.ytd_yoy.revenue) }}% versus matching previous-year quarters{% else %}Prior-year YTD growth unavailable{% endif %}</small></div>
+  <div><span>Verified FY{{ report.fy }} net income · Q1–{{ report.through }}</span><strong>{{ report.total_net }}</strong><small>{% if report.ytd_yoy.net_income is not none %}{{ '%+.1f'|format(report.ytd_yoy.net_income) }}% versus matching previous-year quarters{% else %}Prior-year YTD growth unavailable{% endif %}</small></div>
 </div>
 {% else %}<p class="earnings-directory-source">Year-to-date totals are withheld until all preceding standalone quarters in this fiscal year have verified values. Previous-year figures may be used only for valid same-quarter comparisons.</p>{% endif %}
 <div class="earnings-one-table-wrap" role="region" tabindex="0" aria-label="Quarterly filing results table">
