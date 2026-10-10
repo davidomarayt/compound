@@ -18,8 +18,8 @@ def test_merger_report_has_consistent_source_backed_visual_inputs():
     assert "4.355" in source and "2.589" in source
     assert "7.814" in source and "4.071" in source
     assert "$405m" in source and "$318m" in source and "$87m" in source
-    assert 'href="/stocks/tsla/"' in source
-    assert 'href="/stocks/spcx/"' in source
+    assert "](/stocks/tsla/)" in source
+    assert "](/stocks/spcx/)" in source
     assert "hypothetical" in source.lower()
     assert 'data-mx27-simulator' in source
     assert source.count('class="mx27 mx27-chart"') >= 5
