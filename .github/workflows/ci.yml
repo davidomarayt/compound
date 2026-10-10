@@ -14,6 +14,7 @@ jobs:
       - run: python -m py_compile scripts/earnings.py
       - run: python -m py_compile scripts/sp500_registry.py
       - run: node --check compound/site/static/earnings-directory.js
+      - run: node --check compound/site/static/wealth-hub.js
       - run: node --check compound/site/static/tools.js
       - run: node --check compound/site/static/mortgage-calculator.js
       - run: node --check compound/site/static/debt-repayment.js
