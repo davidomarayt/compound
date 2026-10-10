@@ -1,0 +1,67 @@
+{
+  "cik": 723254,
+  "company": "Cintas",
+  "latest": {
+    "accession": "0000723254-26-000047",
+    "filed": "2026-10-07",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.36,
+        "prior_year": 1.2,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 551711000,
+        "prior_year": 491140000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 3013981000,
+        "prior_year": 2718122000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000723254-26-000047",
+      "filed": "2026-10-07",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.36,
+          "prior_year": 1.2,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 551711000,
+          "prior_year": 491140000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3013981000,
+          "prior_year": 2718122000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "CTAS",
+  "updated": "2026-10-10"
+}

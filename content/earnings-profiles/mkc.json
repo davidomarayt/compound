@@ -1,0 +1,125 @@
+{
+  "cik": 63754,
+  "company": "McCormick & Company",
+  "latest": {
+    "accession": "0000063754-26-000329",
+    "filed": "2026-10-01",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.36,
+        "prior_year": 0.84,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 97600000,
+        "prior_year": 225500000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2024800000,
+        "prior_year": 1724900000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000063754-26-000192",
+      "filed": "2026-03-31",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.77,
+          "prior_year": 0.6,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1016200000,
+          "prior_year": 162300000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1873900000,
+          "prior_year": 1605500000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-02-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000192/mkc-20260228.htm"
+    },
+    {
+      "accession": "0000063754-26-000274",
+      "filed": "2026-06-25",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.56,
+          "prior_year": 0.65,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 150100000,
+          "prior_year": 175000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1936600000,
+          "prior_year": 1659500000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000274/mkc-20260531.htm"
+    },
+    {
+      "accession": "0000063754-26-000329",
+      "filed": "2026-10-01",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.36,
+          "prior_year": 0.84,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 97600000,
+          "prior_year": 225500000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2024800000,
+          "prior_year": 1724900000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "MKC",
+  "updated": "2026-10-10"
+}
