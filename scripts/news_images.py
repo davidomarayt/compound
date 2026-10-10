@@ -374,7 +374,13 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
         if image_exists(meta) and not force:
             return "skip:has-pinned-url-image"
         try:
-            hero_rel = f"/static/images/evergreen/{slug}.jpg"
+            # Editorial image replacements must use a NEW filename. Reusing
+            # a previously published fallback asset can leave visitors seeing
+            # an unrelated browser/CDN-cached photograph after deployment.
+            filename = str(meta.get("hero_image_filename") or f"{slug}.jpg")
+            if not re.fullmatch(r"[a-z0-9][a-z0-9-]{0,120}\.jpg", filename):
+                raise ValueError(f"Invalid pinned hero_image_filename for {slug}: {filename}")
+            hero_rel = f"/static/images/evergreen/{filename}"
             download(pinned_image_url, STATIC / hero_rel.removeprefix("/static/"))
             fields = {
                 "image": hero_rel,
