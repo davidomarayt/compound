@@ -18,8 +18,6 @@ tags:
 - stocks
 - quarterly-results
 - len
-related_tools:
-- investment-fee-calculator
 sources:
 - title: 'SEC EDGAR: Lennar 10-Q filed 2026-10-02'
   url: https://www.sec.gov/Archives/edgar/data/920760/000162828026064557/len-20260831.htm
@@ -59,7 +57,5 @@ The comparison uses the same financial-statement concept and a corresponding per
 ## When were the results filed?
 
 The SEC received the **10-Q** on **2026-10-02**, covering a period ending **2026-08-31**. [Read the original filing](https://www.sec.gov/Archives/edgar/data/920760/000162828026064557/len-20260831.htm).
-
-For wider Irish investing context, see the [Compound PIA Centre](/pia/), our [Irish investing guide](/wealth/how-to-start-investing-in-ireland/) and the [earnings archive](/wealth/earnings/).
 
 *This report is automated and source-linked. It is not individually reviewed before publication; corrections can be sent to [Compound](mailto:david@compound.ie). It is general financial information, not investment advice.*
