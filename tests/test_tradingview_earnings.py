@@ -1,6 +1,8 @@
 """TradingView is a separate, lazy-loaded market context beside verified SEC data."""
 import json
 from pathlib import Path
+import shutil
+import subprocess
 
 from compound.site.build import build_site
 from compound.site.tradingview import render_tradingview_panel
@@ -12,6 +14,8 @@ def test_tradingview_markup_is_safe_and_has_visible_attribution():
     assert "Berkshire &amp; &lt;Co&gt;" in panel
     assert 'data-tv-variant="advanced"' in panel
     assert 'by TradingView' in panel
+    assert 'data-tv-expand aria-pressed="false"' in panel
+    assert 'aria-label="Expand interactive stock chart"' in panel
     assert 'target="_blank" rel="noopener nofollow"' in panel
     assert 'https://www.tradingview.com/symbols/BRK.B/' in panel
     assert '<script' not in panel and '<iframe' not in panel
@@ -53,7 +57,7 @@ SEC filing results described here.
     assert "Quarterly and annual filings" in profile
     assert 'data-tv-symbol="AAPL"' in report
     assert 'data-tv-variant="compact"' in report
-    assert 'tradingview-earnings.js?v=1' in report and 'tradingview-earnings.js?v=1' in profile
+    assert 'tradingview-earnings.js?v=2' in report and 'tradingview-earnings.js?v=2' in profile
     assert report.index('compound-tv-panel') < report.index('SEC filing results described here.')
     assert '<link rel="canonical" href="https://example.test/wealth/earnings/aapl-test-earnings/">' in report
     assert 'by TradingView' in profile and 'by TradingView' in report
@@ -63,6 +67,11 @@ SEC filing results described here.
     assert "embed-widget-advanced-chart.js" in js
     assert "embed-widget-symbol-overview.js" in js
     assert "https://s3.tradingview.com/external-embedding/" in js
+    assert "compound-tv-scroll-lock" in js
+    assert "Close enlarged stock chart" in js
+    assert "Escape" in js
+    assert "refreshChartSize" in js
+    assert 'earnings.css?v=5' in profile and 'earnings.css?v=5' in report
 
 
 def test_unverified_report_without_matching_registry_company_has_no_price_widget(settings):
@@ -81,3 +90,29 @@ Earnings data text.
     build_site(settings)
     report = (settings.public_dir / "wealth/earnings/unknown-earnings/index.html").read_text(encoding="utf-8")
     assert "compound-tv-panel" not in report
+
+
+def test_mobile_charts_break_out_of_narrow_article_columns(settings):
+    """Both price chart variants must be readable on a 360px-wide phone."""
+    build_site(settings)
+    css = (settings.public_dir / "static/earnings.css").read_text(encoding="utf-8")
+    assert "@media(max-width:760px)" in css
+    assert "width:calc(100vw - 16px)" in css
+    assert "height:570px" in css
+    assert "height:510px" in css
+    assert ".article-prose .compound-tv-panel" in css
+    assert ".earnings-hub > .compound-tv-panel" in css
+    assert ".compound-tv-panel.tv-expanded" in css
+    assert "height:100dvh!important" in css
+    assert "min-height:44px" in css
+
+
+def test_mobile_chart_script_has_valid_javascript(settings):
+    build_site(settings)
+    node = shutil.which("node")
+    if not node:
+        return
+    subprocess.run(
+        [node, "--check", str(settings.public_dir / "static/tradingview-earnings.js")],
+        check=True, capture_output=True, text=True,
+    )
