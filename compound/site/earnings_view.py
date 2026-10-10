@@ -94,6 +94,17 @@ def load_company_report(content_dir: Path, ticker: str, legacy_articles=()):
     contiguous=end_at>=0 and all(rows[i] for i in range(end_at+1))
     totals={key:sum(x["metrics"][key]["current"] for x in rows[:end_at+1])
             for key in ("revenue","net_income")} if contiguous else {}
+    totals_prior={}
+    if contiguous:
+        for key in ("revenue","net_income"):
+            comparable=[r["metrics"][key].get("prior_year") for r in rows[:end_at+1]]
+            if all(isinstance(v,(int,float)) for v in comparable):
+                totals_prior[key]=sum(comparable)
+    ytd_yoy={
+        key:round((totals[key]/totals_prior[key]-1)*100,1)
+        if key in totals and totals_prior.get(key,0)>0 else None
+        for key in ("revenue","net_income")
+    }
     chart_max={key:max((abs(x["metrics"][key]["current"]) for x in rows if x),default=0)
                for key in METRICS}
     display=[]
@@ -116,7 +127,7 @@ def load_company_report(content_dir: Path, ticker: str, legacy_articles=()):
               "quarters":display,"q3q2":q3q2,"yoy":yoy,
               "total_revenue":money(totals["revenue"],"revenue") if totals else None,
               "total_net":money(totals["net_income"],"net_income") if totals else None,
-              "ytd_complete":bool(totals),"through":f"Q{end_at+1}" if end_at>=0 else "",
+              "ytd_complete":bool(totals),"ytd_yoy":ytd_yoy,"through":f"Q{end_at+1}" if end_at>=0 else "",
               "summary":("All three fiscal quarters are available" if all(rows)
                          else "Only SEC-verified, available quarters are shown"),
               "period_count":len(periods)}
