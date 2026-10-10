@@ -88,6 +88,19 @@ def is_published_news(meta: dict[str, Any]) -> bool:
     return is_published(meta) and ("news" in tags or canonical.startswith("/news/"))
 
 
+def is_stock_editorial(meta: dict[str, Any]) -> bool:
+    """Stock news/research need a verified company photo, never a generic finance image.
+
+    Automated SEC earnings reports intentionally use their financial charts rather than
+    an unverified photo, and are covered by a separate publishing rule.
+    """
+    tags = {str(x).lower() for x in meta.get("tags") or []}
+    return "automated-earnings" not in tags and (
+        "stocks" in tags or "company-research" in tags
+        or any(tag.startswith("stock-") for tag in tags)
+    )
+
+
 def image_exists(meta: dict[str, Any]) -> bool:
     image = str(meta.get("image") or "")
     if not image.startswith("/static/"):
@@ -261,8 +274,10 @@ def _local_photo_for(meta: dict[str, Any]) -> dict[str, str]:
                 selected["alt"] = "Illustrative planning paperwork and documents photograph"
                 return selected
 
-    estate_keywords = ("will", "wills", "probate", "executor", "intestate", "inheritance", "estate-planning", "succession")
-    if any(k in haystack for k in estate_keywords):
+    # Never treat the auxiliary verb "will" ("Will Tesla and SpaceX Merge?")
+    # as estate planning; only use estate-specific, word-bounded expressions.
+    estate_expression = r"\b(?:wills|probate|executor|intestate|inheritance|estate[- ]planning|succession|(?:make|write|writing)[- ]a[- ]will|last[- ]will)\b"
+    if re.search(estate_expression, haystack):
         for item in pool:
             if item["file"] == "tax-paperwork.jpg":
                 selected = dict(item)
@@ -372,6 +387,10 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
             return "pinned-url"
         except Exception as exc:
             print(f"Pinned image URL failed for {path.name}: {exc}")
+            if is_published(meta) and is_stock_editorial(meta):
+                raise RuntimeError(
+                    f"Published stock article {slug} needs a downloadable company-specific hero image"
+                ) from exc
             if image_exists(meta):
                 return "skip:pinned-url-fetch-failed-existing"
             return "skip:pinned-url-fetch-failed-no-image"
@@ -436,10 +455,28 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
 
             # Never swap an editorially pinned image for an unrelated generic
             # fallback. An unavailable source is surfaced for review instead.
+            if is_published(meta) and is_stock_editorial(meta):
+                raise RuntimeError(
+                    f"Published stock article {slug} needs its approved company-specific photo"
+                )
             return "skip:pinned-fetch-failed-no-image"
 
     if not is_published(meta):
         return "skip:not-published"
+
+    # Fail closed: published stock editorial cannot inherit the generic wealth
+    # photographs or a loosely matched Pexels search result. The editor must
+    # approve an actual company photo via hero_image_url/pexels_photo_id, or
+    # supply a previously reviewed, local, non-fallback photo with attribution.
+    if is_stock_editorial(meta):
+        if image_exists(meta) and not is_fallback(meta) and not force:
+            if all(str(meta.get(k) or "").strip() for k in ("image_alt", "image_credit", "image_source")):
+                return "skip:has-approved-stock-image"
+        raise ValueError(
+            f"Published stock article {slug} needs an approved company-specific photograph "
+            "(hero_image_url or pexels_photo_id) with accurate credit/alt text; "
+            "generic finance and fallback images are forbidden"
+        )
 
     if not is_published_news(meta):
         existing = image_exists(meta)
