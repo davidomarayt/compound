@@ -106,15 +106,15 @@ def test_run_updates_one_profile_without_creating_quarterly_article(tmp_path):
     out=earnings.run(watchlist,content,client=FakeClient(),now=date(2026,10,10),
                      lookback=5,max_new=3,dry_run=True)
     assert len(out)==1
-    assert not list((content/'wealth').glob('*.md')) if (content/'wealth').exists() else True
-    assert not list((content/'earnings-profiles').glob('*.json')) if (content/'earnings-profiles').exists() else True
+    assert not (content/'wealth').exists()
+    assert not (content/'earnings-profiles').exists()
     out=earnings.run(watchlist,content,client=FakeClient(),now=date(2026,10,10),
                      lookback=5,max_new=3,dry_run=False)
     assert len(out)==1
     profile=content/'earnings-profiles'/'aapl.json'
     assert profile.exists()
     assert '"fp": "Q3"' in profile.read_text()
-    assert not list((content/'wealth').glob('*earnings*.md')) if (content/'wealth').exists() else True
+    assert not (content/'wealth').exists()
     assert earnings.run(watchlist,content,client=FakeClient(),now=date(2026,10,10),
                         lookback=5,max_new=3,dry_run=False)==[]
 
