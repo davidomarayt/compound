@@ -1032,7 +1032,7 @@ def build_site(settings: Settings) -> dict:
             unknown = [slug for slug in article.related_tools if slug not in tools_by_slug]
             if unknown:
                 raise ValueError(f"Unknown related_tools on {article.slug}: {unknown}")
-    reserved = {"/", "/search/", "/tools/", "/news/", "/compound-interest-calculator/", "/bmi-calculator/"}
+    reserved = {"/", "/search/", "/tools/", "/news/", "/pia/", "/pia/providers/", "/compound-interest-calculator/", "/bmi-calculator/"}
     reserved.update(tool["url"] for tool in tools)
     reserved.update(f"/{p}/" for p in PILLARS)
     reserved.update(f"/{pg.slug}/" for pg in pages)
@@ -1121,6 +1121,19 @@ def build_site(settings: Settings) -> dict:
             )
             continue
         _write(out / PILLAR_PUBLIC_SLUGS[p] / "index.html", env.get_template("pillar.html").render(pillar=p, articles=by_pillar[p], title=PILLAR_LABELS[p]))
+
+    # PIA Centre: retain the existing pillar article and tool URLs as canonicals.
+    # Static provider facts live in a dated primary-source tracker, not code.
+    pia_tracker_path = settings.content_dir / "pia-providers.yml"
+    pia_tracker = yaml.safe_load(pia_tracker_path.read_text(encoding="utf-8")) or {} if pia_tracker_path.is_file() else {}
+    pia_providers = pia_tracker.get("providers") or []
+    pia_updated = str(pia_tracker.get("updated") or "2026-10-10")
+    _write(out / "pia" / "index.html", env.get_template("pia_centre.html").render(
+        title="Personal Investment Account Ireland", pillar="wealth", pia_page=True,
+        providers=pia_providers, pia_updated=pia_updated))
+    _write(out / "pia" / "providers" / "index.html", env.get_template("pia_providers.html").render(
+        title="PIA Providers Ireland", pillar="wealth", pia_page=True,
+        providers=pia_providers, pia_updated=pia_updated))
 
     tag_map: dict[str, list[Article]] = {}
     for a in articles:
@@ -1285,6 +1298,22 @@ def build_site(settings: Settings) -> dict:
                          "description": str(tool.get("meta_description") or tool.get("summary") or ""),
                          "image": "", "reading_minutes": max(2, math.ceil(guide_words / 220)),
                          "date_label": long_date(updated) if isinstance(updated, date) else str(updated)})
+    index.insert(0, {
+        "title": "PIA Providers Ireland — Compare Announcements and Fees",
+        "url": "/pia/providers/", "pillar": "Wealth", "date": pia_updated,
+        "summary": "Compare official Personal Investment Account provider announcements, status and unpublished fees.",
+        "tags": ["pia", "personal investment account", "providers", "investing"],
+        "description": "Independent PIA provider tracker with source links and verified availability.",
+        "image": "", "reading_minutes": 5, "date_label": pia_updated,
+    })
+    index.insert(0, {
+        "title": "Personal Investment Account Ireland — PIA Centre",
+        "url": "/pia/", "pillar": "Wealth", "date": pia_updated,
+        "summary": "Personal Investment Account guide, provider comparison and PIA calculator for Ireland.",
+        "tags": ["pia", "personal investment account", "investment account", "investing"],
+        "description": "Ireland's new investment account: official rules, providers and calculator.",
+        "image": "", "reading_minutes": 5, "date_label": pia_updated,
+    })
     _write(out / "search.json", json.dumps(index, ensure_ascii=False))
     _write(out / "search" / "index.html", env.get_template("search.html").render(title="Search", search_index=index, ads_allowed=False))
     _write(out / "feed.xml", env.get_template("feed.xml").render(articles=articles[:30]))
@@ -1328,6 +1357,10 @@ def build_site(settings: Settings) -> dict:
         (settings.site_base_url + "/", None),
         (settings.site_base_url + "/news/", None),
     ]
+    sitemap_entries.extend([
+        (settings.site_base_url + "/pia/", pia_updated),
+        (settings.site_base_url + "/pia/providers/", pia_updated),
+    ])
     if tools:
         sitemap_entries.append((settings.site_base_url + "/tools/", max(str(t.get("updated") or "") for t in tools)))
         sitemap_entries.extend(

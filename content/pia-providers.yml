@@ -1,0 +1,34 @@
+# Public primary-source tracker. No rankings or referral claims until verified.
+# Update each provider only after checking its official published terms.
+updated: "2026-10-10"
+providers:
+  - name: AIB
+    slug: aib
+    statement: "AIB says it plans to offer a Personal Investment Account once the scheme rules and required services are finalised."
+    status: "Plans to offer"
+    availability: "Not open yet"
+    annual_fee: "Not published"
+    dealing_fee: "Not published"
+    investment_range: "Not published"
+    source_url: "https://www.aib.ie/make-a-plan/investments/personal-investment-account"
+    source_label: "AIB — Personal Investment Account"
+  - name: Irish Life
+    slug: irish-life
+    statement: "Irish Life advertises its proposed Personal Investment Account as coming in July 2027."
+    status: "Announced for 2027"
+    availability: "Not open yet"
+    annual_fee: "Not published"
+    dealing_fee: "Not published"
+    investment_range: "Not published"
+    source_url: "https://www.irishlife.ie/investments/pia/"
+    source_label: "Irish Life — Personal Investment Accounts"
+  - name: Zurich
+    slug: zurich
+    statement: "Zurich describes a forthcoming Investment Account planned for 1 July 2027."
+    status: "Describes planned account"
+    availability: "Not open yet"
+    annual_fee: "Not published"
+    dealing_fee: "Not published"
+    investment_range: "Not published"
+    source_url: "https://www.zurich.ie/savings-and-investments/savings-options/investment-account/"
+    source_label: "Zurich — Investment Account"
