@@ -57,7 +57,7 @@ def _from_legacy(article):
 def load_company_report(content_dir: Path, ticker: str, legacy_articles=()):
     target = content_dir / "earnings-profiles" / (ticker.lower() + ".json")
     data = json.loads(target.read_text(encoding="utf-8")) if target.is_file() else {}
-    periods = list(data.get("periods") or [])
+    periods = [p for p in (data.get("periods") or []) if p.get("period_end","") >= "2026-01-01"]
     seen = {(p["fy"],p["fp"]) for p in periods}
     for article in legacy_articles:
         if ticker.lower() not in article.tags:
