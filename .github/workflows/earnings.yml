@@ -6,11 +6,15 @@ on:
     - cron: '17,47 * * * *'
     # Refresh membership reference weekly. The official index may change between refreshes.
     - cron: '6 7 * * 1'
+    # Check all ten additional public companies for foreign-market disclosures daily.
+    - cron: '9 8 * * *'
   push:
     branches: ['claude/clever-babbage-uibieq']
     paths:
       - 'scripts/earnings.py'
       - 'scripts/sp500_registry.py'
+      - 'scripts/global_earnings_watch.py'
+      - 'content/company-watchlist.json'
       - '.github/workflows/earnings.yml'
   workflow_dispatch:
     inputs:
@@ -73,9 +77,21 @@ jobs:
           SHARD="$(python -c 'from datetime import datetime, timezone; print(int(datetime.now(timezone.utc).timestamp()//1800)%4)')"
           echo "Checking SEC shard $SHARD of 4"
           if [ "$DRY_RUN" = 'true' ]; then
-            python scripts/earnings.py --registry content/earnings-sp500.json --lookback-days 10 --max-new 8 --shard-count 4 --shard-index "$SHARD" --dry-run
+            python scripts/earnings.py --registry content/earnings-sp500.json --lookback-days 10 --max-new 8 --extra-watchlist content/company-watchlist.json --shard-count 4 --shard-index "$SHARD" --dry-run
           else
-            python scripts/earnings.py --registry content/earnings-sp500.json --lookback-days 10 --max-new 8 --shard-count 4 --shard-index "$SHARD"
+            python scripts/earnings.py --registry content/earnings-sp500.json --lookback-days 10 --max-new 8 --extra-watchlist content/company-watchlist.json --shard-count 4 --shard-index "$SHARD"
+          fi
+      - name: Check all ten additional company investor disclosures
+        if: github.event.schedule == '9 8 * * *' || github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        env:
+          SEC_USER_AGENT: 'Compound.ie Earnings Research david@compound.ie'
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+        run: |
+          set -euo pipefail
+          if [ "$DRY_RUN" = 'true' ]; then
+            python scripts/global_earnings_watch.py --dry-run
+          else
+            python scripts/global_earnings_watch.py
           fi
       - name: Commit registry changes and verified earnings reports
         if: github.event_name != 'workflow_dispatch' || inputs.dry_run == false
@@ -86,6 +102,10 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A -- content/wealth/ content/earnings-sp500.json
+          if [ -f monitoring/global-earnings-review.json ]; then
+            git add -- monitoring/global-earnings-review.json
+          fi
+          site_changes="$(git diff --cached --name-only -- content/wealth/ content/earnings-sp500.json)"
           if git diff --cached --quiet; then
             echo 'No new verified reports or registry updates.'
             exit 0
@@ -93,4 +113,8 @@ jobs:
           git commit -m 'Update S&P 500 coverage and verified earnings'
           git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push origin HEAD:"$GITHUB_REF_NAME"
           # Commits made with GITHUB_TOKEN do not trigger the pages push workflow.
-          gh workflow run site.yml --ref "$GITHUB_REF_NAME"
+          if [ -n "$site_changes" ]; then
+            gh workflow run site.yml --ref "$GITHUB_REF_NAME"
+          else
+            echo "International monitoring status saved; no site rebuild needed."
+          fi

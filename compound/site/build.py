@@ -1226,6 +1226,15 @@ def build_site(settings: Settings) -> dict:
             tags.add(c["ticker"].lower())
         return sorted((a for a in articles if "automated-earnings" not in a.tags and any(t in a.tags for t in tags)),
                       key=lambda a: (a.date, a.slug), reverse=True)
+    # Source-checked 10-Q/10-K reports for eligible additional US issuers link
+    # to their existing /stocks/<slug>/ profiles, not duplicate directories.
+    extra_reports = {
+        c["slug"]: sorted(
+            [a for a in earnings_articles
+             if c["ticker"].lower() in a.tags or "stock-" + c["slug"] in a.tags],
+            key=lambda a: (a.date, a.slug), reverse=True)
+        for c in extra_listed
+    }
     listed_stories = {c["slug"]: watchlist_stories(c) for c in extra_listed}
     private_stories = {c["slug"]: watchlist_stories(c, private=True) for c in private_companies}
     for c in extra_listed:
@@ -1247,7 +1256,8 @@ def build_site(settings: Settings) -> dict:
              "report_count": report_counts.get(str(company["cik"]), 0)}
             for company in active_earnings_companies
         ] + [
-            {**company, "symbols": [company["ticker"]], "report_count": 0}
+            {**company, "symbols": [company["ticker"]],
+             "report_count": len(extra_reports[company["slug"]])}
             for company in extra_listed
         ],
         key=lambda company: (company["name"].casefold(), company["slug"]),
@@ -1294,7 +1304,9 @@ def build_site(settings: Settings) -> dict:
                    title=f'{c["name"]} ({c["ticker"]}) Stock Research', pillar="wealth",
                    company=c, news=[a for a in stories if is_news_article(a)],
                    research=[a for a in stories if not is_news_article(a)],
-                   has_coverage=bool(stories), ads_allowed=bool(stories),
+                   reports=extra_reports[c["slug"]],
+                   has_coverage=bool(stories or extra_reports[c["slug"]]),
+                   ads_allowed=bool(stories or extra_reports[c["slug"]]),
                    tradingview_panel=render_tradingview_panel(c["tv_symbol"], c["name"], "advanced")))
     _write(out / "companies" / "index.html", env.get_template("companies_hub.html").render(
         title="Private Company Research Directory", pillar="wealth",

@@ -62,6 +62,20 @@ tags: [stock-spcx, company-research]
 ---
 Primary-source analysis of SpaceX.
 """, encoding="utf-8")
+    (wealth / "spcx-earnings-fy2026-q3.md").write_text("""---
+title: SpaceX filing-backed SEC report
+slug: spcx-earnings-fy2026-q3
+pillar: wealth
+canonical_path: /wealth/earnings/spcx-earnings-fy2026-q3/
+date: 2026-10-10
+tags: [earnings, automated-earnings, spcx]
+summary: Verified financial statement from a hypothetical test fixture.
+sources:
+  - title: SEC test filing
+    url: https://www.sec.gov/Archives/edgar/data/123/000000000126000123/form10q.htm
+---
+SEC filing report test content.
+""", encoding="utf-8")
     (wealth / "openai-analysis.md").write_text("""---
 title: OpenAI original research
 slug: openai-analysis
@@ -99,6 +113,9 @@ Primary-source analysis of OpenAI.
     assert 'href="/companies/canva/"' in companies
     assert 'data-tv-symbol="NASDAQ:SPCX"' in spcx
     assert "SpaceX original research" in spcx
+    assert "SpaceX filing-backed SEC report" in spcx
+    assert 'href="/wealth/earnings/spcx-earnings-fy2026-q3/"' in spcx
+    assert "1 published SEC-backed report" in spcx
     assert 'name="robots" content="noindex,follow"' not in spcx
     assert 'data-tv-symbol="KRX:005930"' in samsung
     assert 'name="robots" content="noindex,follow"' in samsung

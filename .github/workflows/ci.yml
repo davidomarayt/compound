@@ -12,6 +12,8 @@ jobs:
       - run: pytest -q
       - run: python -m py_compile scripts/news_images.py
       - run: python -m py_compile scripts/earnings.py
+      - run: python -m py_compile scripts/earnings_backfill.py
+      - run: python -m py_compile scripts/global_earnings_watch.py
       - run: python -m py_compile scripts/sp500_registry.py
       - run: node --check compound/site/static/earnings-directory.js
       - run: node --check compound/site/static/wealth-hub.js
