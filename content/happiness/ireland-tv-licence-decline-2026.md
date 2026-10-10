@@ -14,6 +14,7 @@ meta_description: "Ireland's TV licence sales are projected to fall again in 202
 tags: [news, ireland, tv-licence, rte, broadcasting, public-service-media, television, budget-2027]
 news_image_query: "vintage television CRT screens no signal dark room stock photo"
 hero_image_url: "https://images.pexels.com/photos/8059376/pexels-photo-8059376.jpeg?auto=compress&cs=tinysrgb&w=1600"
+require_pinned_hero: true
 hero_image_alt: "Two vintage cathode-ray televisions displaying a no-signal screen in a dark room."
 hero_image_credit: "cottonbro studio / Pexels"
 hero_image_source: "https://www.pexels.com/photo/photo-of-black-crt-tv-turned-on-in-a-dark-room-8059376/"
