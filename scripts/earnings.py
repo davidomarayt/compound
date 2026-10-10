@@ -356,7 +356,8 @@ def build_article(ticker: str, company: str, cik: int, filing: dict, metrics: di
         f"[Read the original SEC filing]({source}).",
         "",
         "These are reported US GAAP figures, not analyst expectations, adjusted results or a share-price reaction. "
-        "Some historical quarters may be unavailable in comparable SEC data and are omitted rather than estimated.",
+        "Year-on-year comparisons use the same financial-statement concept; missing quarters are omitted, not estimated. "
+        "The report is not an investment recommendation.",
         "",
         "*Automated source-verified report, not individually reviewed before publication. "
         "This is general financial information, not investment advice. "
