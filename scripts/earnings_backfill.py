@@ -35,7 +35,11 @@ def extra_sec_companies(client, watchlist_path: Path) -> list[dict]:
                   and row.get("exchange", "").lower().startswith("nasdaq")]
     if not candidates:
         return []
-    mapping = resolve_tickers(client.get_json(SEC_TICKERS), [r["ticker"] for r in candidates])
+    try:
+        mapping = resolve_tickers(client.get_json(SEC_TICKERS), [r["ticker"] for r in candidates])
+    except RuntimeError as exc:
+        LOG.warning("Extra-issuer SEC ticker lookup unavailable; continuing S&P backfill: %s", exc)
+        return []
     result = []
     for row in candidates:
         issuer = mapping.get(row["ticker"])
