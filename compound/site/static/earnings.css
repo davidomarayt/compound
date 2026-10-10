@@ -7,3 +7,18 @@
 .earnings-method{display:grid;grid-template-columns:1fr 1.5fr;gap:60px}.earnings-method p{font-size:15px;line-height:1.7;color:#62575d}.earnings-method a{color:#844b3e}
 .article-prose .earnings-bars{margin:25px auto;max-width:560px}.article-prose .earnings-bars svg{max-width:100%;height:auto}.article-prose .earnings-bars figcaption{font-size:12px;color:#655b60;line-height:1.5;margin-top:9px;text-align:center}
 @media(max-width:700px){.earnings-cards,.earnings-method{grid-template-columns:1fr}.earnings-method{gap:18px}.earnings-section{padding:34px 0}}
+/* Public S&P 500 directory. Unlike earnings articles, empty company profiles are noindex. */
+.earnings-directory-controls{display:grid;grid-template-columns:1.5fr 1fr;gap:14px;margin:28px 0 12px}
+.earnings-directory-controls>div{display:flex;flex-direction:column;gap:7px}
+.earnings-directory-controls label{font-size:13px;font-weight:700;color:#50474b}
+.earnings-directory-controls input,.earnings-directory-controls select{font:inherit;min-height:46px;padding:11px 13px;border:1px solid #afa1a4;background:#fff;border-radius:7px;color:#33252e;width:100%}
+.earnings-directory-scroll{width:100%;max-height:620px;overflow:auto;border:1px solid #e3dadd;border-radius:9px}
+.earnings-directory{width:100%;border-collapse:collapse;min-width:640px;font-size:14px}
+.earnings-directory thead{background:#f7f2ef;position:sticky;top:0;z-index:1}
+.earnings-directory th,.earnings-directory td{padding:12px 15px;border-bottom:1px solid #eee7e5;text-align:left;line-height:1.4}
+.earnings-directory th{font-weight:700}.earnings-directory a{color:#7b443f;text-decoration:underline;text-underline-offset:3px}
+.earnings-directory tr[hidden],.earnings-directory-empty[hidden]{display:none}
+.earnings-directory-count,.earnings-directory-source{font-size:13px;color:#76696f;line-height:1.55}
+.earnings-directory-source a{color:#844b3e;text-decoration:underline}
+.earnings-directory-empty{padding:24px;background:#f8f5f2}
+@media(max-width:700px){.earnings-directory-controls{grid-template-columns:1fr}.earnings-directory-scroll{max-height:570px}}
