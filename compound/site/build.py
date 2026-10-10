@@ -1128,6 +1128,7 @@ def build_site(settings: Settings) -> dict:
     pia_tracker = load_pia_tracker(settings.content_dir / "pia-providers.yml")
     pia_providers = pia_tracker["providers"]
     pia_updated = pia_tracker["updated"]
+    pia_referrals_active = any(p["referral"].get("active") for p in pia_providers)
     _write(out / "pia" / "index.html", env.get_template("pia_centre.html").render(
         title="Personal Investment Account Ireland", pillar="wealth", pia_page=True,
         providers=pia_providers, pia_updated=pia_updated))
