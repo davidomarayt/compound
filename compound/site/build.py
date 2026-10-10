@@ -1260,9 +1260,11 @@ def build_site(settings: Settings) -> dict:
     for old in legacy_earnings_articles:
         match = next((earnings_profile_by_ticker[tag] for tag in old.tags
                       if tag in earnings_profile_by_ticker), None)
-        if match:
-            _write(out / old.url.strip("/") / "index.html",
-                   _redirect_html(match[0], settings.site_base_url))
+        # Unknown/delisted legacy tickers must not become broken links.
+        # Unmatched reports consolidate to the archive instead.
+        canonical = match[0] if match else "/wealth/earnings/"
+        _write(out / old.url.strip("/") / "index.html",
+               _redirect_html(canonical, settings.site_base_url))
     archive_companies = [
         {"name": c["name"], "symbol": c["symbol"],
          "url": f'/stocks/{c["symbol"].lower()}/',
