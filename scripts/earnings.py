@@ -262,7 +262,6 @@ def build_article(ticker: str, company: str, cik: int, filing: dict, metrics: di
         "summary": summary,
         "meta_description": f"{ticker} {label} reported earnings: revenue {money(rev['current'])}, diluted EPS {eps(diluted['current'])}. View verified SEC figures and year-on-year changes.",
         "tags": ["earnings", "automated-earnings", "stocks", "quarterly-results" if filing["form"] == "10-Q" else "annual-results", ticker.lower()],
-        "related_tools": ["investment-fee-calculator"],
         "sources": [
             {"title": f"SEC EDGAR: {company} {filing['form']} filed {filing['filingDate']}", "url": source},
             {"title": "SEC EDGAR XBRL company facts: comparable US GAAP results", "url": f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json"},
@@ -298,7 +297,6 @@ def build_article(ticker: str, company: str, cik: int, filing: dict, metrics: di
         "The comparison uses the same financial-statement concept and a corresponding period one year earlier; amended disclosures or accounting changes can affect comparability. Consult the source filing before relying on the figures.", "",
         "## When were the results filed?", "",
         f"The SEC received the **{filing['form']}** on **{filing['filingDate']}**, covering a period ending **{filing['reportDate']}**. [Read the original filing]({source}).", "",
-        "For wider Irish investing context, see the [Compound PIA Centre](/pia/), our [Irish investing guide](/wealth/how-to-start-investing-in-ireland/) and the [earnings archive](/wealth/earnings/).", "",
         "*This report is automated and source-linked. It is not individually reviewed before publication; corrections can be sent to [Compound](mailto:david@compound.ie). It is general financial information, not investment advice.*", "",
     ])
     body = "---\n" + yaml.safe_dump(meta, allow_unicode=True, sort_keys=False, width=120) + "---\n\n" + "\n".join(lines)
