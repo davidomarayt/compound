@@ -319,6 +319,8 @@ jobs:
           fetch https://compound.ie/wealth/earnings/company/aapl/ /tmp/aapl-earnings-profile.html
           grep -Fq '<link rel="canonical" href="https://compound.ie/wealth/earnings/company/aapl/">' /tmp/aapl-earnings-profile.html
           grep -Fq 'SEC Central Index Key' /tmp/aapl-earnings-profile.html
+          grep -Fq 'published summar' /tmp/aapl-earnings-profile.html
+          ! grep -Fq 'summaryies' /tmp/aapl-earnings-profile.html
           fetch https://compound.ie/static/earnings-directory.js /tmp/earnings-directory.js
           grep -Fq 'data-earnings-row' /tmp/earnings-directory.js
           grep -Fq 'href="/wealth/earnings/"' /tmp/wealth.html
