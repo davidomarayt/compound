@@ -58,7 +58,7 @@ def _fee_model(model: object, slug: str) -> dict:
 
 
 def load_pia_tracker(path: Path) -> dict:
-    data = yaml.safe_load(path.read_text(encoding="utf-8")) if path.is_file() else {}
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) if path.is_file() else {"updated": "2026-10-10"}
     data = data or {}
     if not isinstance(data, dict):
         raise ValueError("PIA tracker must be a mapping")
