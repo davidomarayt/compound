@@ -340,6 +340,15 @@ jobs:
           grep -Fq 'href="/wealth/earnings/"' /tmp/wealth.html
           grep -Fq '<loc>https://compound.ie/wealth/earnings/</loc>' /tmp/sitemap.xml
 
+          # Tesla/SpaceX hero is an actual NASA photograph, never a finance fallback.
+          fetch https://compound.ie/wealth/tesla-spacex-merger-2027/ /tmp/tesla-spacex.html
+          grep -Fq '<img src="/static/images/evergreen/tesla-spacex-merger-2027.jpg"' /tmp/tesla-spacex.html
+          grep -Fq "SpaceX Falcon 9 rocket carrying NASA" /tmp/tesla-spacex.html
+          grep -Fq "NASA / Joel Kowsky" /tmp/tesla-spacex.html
+          ! grep -Fq "Illustrative legal and estate-planning paperwork" /tmp/tesla-spacex.html
+          fetch https://compound.ie/static/images/evergreen/tesla-spacex-merger-2027.jpg /tmp/tesla-spacex-photo.jpg
+          test -s /tmp/tesla-spacex-photo.jpg
+
           # All automatically generated earnings articles must remain text-only.
           # Guard against the generic Wealth kitchen photo and any future image fallback.
           fetch https://compound.ie/wealth/earnings/len-earnings-fy2026-q3/ /tmp/earnings-lennar.html
