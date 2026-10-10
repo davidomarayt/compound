@@ -30,14 +30,17 @@ TOTAL_BACKFILL_LIMIT = 30
 
 
 def existing_backfill_count(directory: Path) -> int:
-    """Count backfill-marked articles, not routine new SEC filings."""
+    """Count all backfill-marked articles, including ones with large YAML metadata."""
     total = 0
     for article in directory.glob("*-earnings-fy*.md"):
-        with article.open(encoding="utf-8") as handle:
-            front_matter = handle.read(1500).split("---", 2)
-        if len(front_matter) >= 3 and re.search(
-            r"(?m)^historical_backfill:\s*true\s*$", front_matter[1]
-        ):
+        raw = article.read_text(encoding="utf-8")
+        if not raw.startswith("---\n"):
+            continue
+        marker = raw.find("\n---\n", 4)
+        if marker < 0:
+            continue
+        meta = yaml.safe_load(raw[4:marker]) or {}
+        if meta.get("historical_backfill") is True:
             total += 1
     return total
 
