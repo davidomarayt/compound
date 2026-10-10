@@ -18,3 +18,35 @@ a.pia-link-card:hover{border-color:#b88976;box-shadow:0 7px 20px rgba(32,18,23,.
 .pia-compact-hero{padding:18px 0 26px;max-width:980px}.pia-compact-hero h1{font-size:clamp(35px,5vw,59px)}.pia-table-scroll{width:100%;overflow:auto;border:1px solid var(--pia-line);border-radius:9px;margin:22px 0}.pia-table-scroll:focus{outline:2px solid var(--pia-accent);outline-offset:2px}.pia-compare-table{width:100%;border-collapse:collapse;min-width:900px;font-size:14px;line-height:1.5}.pia-compare-table th,.pia-compare-table td{text-align:left;vertical-align:top;padding:18px 14px;border-bottom:1px solid var(--pia-line)}.pia-compare-table thead{background:var(--pia-soft)}.pia-compare-table tbody th{font-size:18px}.pia-compare-table tbody p{margin:8px 0 0;color:var(--pia-muted);font-size:13px}.pia-compare-table a{color:var(--pia-accent);font-weight:600;text-decoration:underline}
 @media(max-width:860px){.pia-hero{grid-template-columns:1fr}.pia-link-grid{grid-template-columns:1fr 1fr}.pia-provider-row{grid-template-columns:1fr}}@media(max-width:620px){.pia-centre{padding:22px 5vw 65px}.pia-link-grid,.pia-resource-list{grid-template-columns:1fr}.pia-section{padding:35px 0}.pia-section-top{align-items:flex-start;flex-direction:column}.pia-hero{padding:18px 0 36px}.pia-hero-aside{padding:24px}.pia-link-card{padding:20px}.pia-transparency{padding:20px;margin-top:20px}}
 @media(max-width:440px){.pillar-nav{gap:10px!important;flex-wrap:wrap}}
+
+
+/* PIA comparison V2: dense, mobile-friendly and readable without JavaScript. */
+.pia-filter-panel{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;padding:22px;background:#f7f3f0;border:1px solid var(--pia-line);border-radius:12px;margin:26px 0 14px}
+.pia-control{display:flex;flex-direction:column;gap:8px;min-width:0}.pia-control label{font-weight:750;font-size:13px;color:var(--pia-ink)}
+.pia-control input,.pia-control select{font:inherit;width:100%;min-height:44px;border:1px solid #b5a7a4;border-radius:7px;padding:10px 12px;background:#fff;color:var(--pia-ink)}
+.pia-control input:focus-visible,.pia-control select:focus-visible{outline:3px solid #bd937e;outline-offset:2px}
+.pia-results-count{font-size:13px;font-weight:700;color:#695b60;margin:14px 0 19px}
+.pia-comparison-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-bottom:20px}
+.pia-comparison-card{display:flex;flex-direction:column;border:1px solid var(--pia-line);border-radius:12px;padding:25px 24px;min-width:0;background:#fff}
+.pia-comparison-card[hidden],.pia-no-results[hidden]{display:none!important}
+.pia-card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:18px}.pia-card-top h3{font-family:Georgia,serif;font-size:30px;letter-spacing:-.025em;margin:8px 0 6px;line-height:1.1}.pia-card-top .pia-status-tag{max-width:180px;text-align:center;line-height:1.35}
+.pia-provider-summary{font-size:15px;line-height:1.55;color:var(--pia-muted);min-height:65px}
+.pia-fee-facts{margin:20px 0 0;border-top:1px solid var(--pia-line)}
+.pia-fee-facts>div{display:flex;gap:10px;align-items:flex-start;justify-content:space-between;border-bottom:1px solid var(--pia-line);padding:11px 0}
+.pia-fee-facts dt{color:#76666e;font-size:13px;flex:0 0 44%}.pia-fee-facts dd{margin:0;font-size:13px;font-weight:680;text-align:right;overflow-wrap:anywhere;flex:1}
+.pia-scenario-output{background:#f7f3f0;padding:18px 19px;border-radius:8px;margin:24px 0 16px}
+.pia-scenario-output .pia-card-kicker{margin:0 0 8px}.pia-scenario-output .pia-estimate{font-family:Georgia,serif;font-size:21px;line-height:1.2;margin:0 0 10px}
+.pia-scenario-output .pia-small{margin-bottom:0}
+.pia-provider-bottom{margin-top:auto;display:flex;flex-direction:column;align-items:flex-start;gap:10px}.pia-provider-bottom .pia-small{margin:0}
+.pia-source-link,.pia-referral-link{color:var(--pia-accent)!important;text-decoration:underline;text-underline-offset:3px;font-weight:750}
+.pia-referral-link{display:inline-flex;border:1px solid #9d5e49;padding:10px 15px;border-radius:6px;text-decoration:none;background:#fbf1ec}
+.pia-disclosure{font-size:13px;line-height:1.5;color:var(--pia-muted)}
+.pia-no-results{padding:24px;background:#f7f3f0;border-radius:8px;font-size:15px}
+.pia-scenario-tools{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;background:#f7f3f0;border:1px solid var(--pia-line);border-radius:10px;padding:22px;margin:22px 0}
+.pia-scenario-tools>.pia-small{grid-column:1/-1;margin:0}.pia-unavailable{padding:15px 18px;border-left:3px solid #a07f70;background:#f7f3f0}
+.pia-sponsored-placements{margin-top:45px;padding:24px;border:2px solid #ccb5aa;border-radius:10px}.pia-sponsor-placement{padding:16px 0;border-bottom:1px solid #e5d2c8}
+.pia-sponsored-placements>p,.pia-sponsor-placement p{font-size:13px;color:var(--pia-muted);line-height:1.55}
+.pia-sponsored-placements a{color:var(--pia-accent);font-weight:750}
+@media(max-width:980px){.pia-filter-panel{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:750px){.pia-comparison-grid{grid-template-columns:1fr}.pia-provider-summary{min-height:0}}
+@media(max-width:500px){.pia-filter-panel,.pia-scenario-tools{grid-template-columns:1fr;padding:15px}.pia-scenario-tools>.pia-small{grid-column:1}.pia-comparison-card{padding:20px 17px}.pia-card-top{flex-direction:column;gap:9px}.pia-card-top .pia-status-tag{max-width:none}.pia-fee-facts dt{flex-basis:46%}}
