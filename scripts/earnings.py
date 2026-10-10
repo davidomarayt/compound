@@ -374,10 +374,9 @@ def run(watchlist: Path, content_dir: Path, *, client: SECClient, now: date,
         extra_watchlist: Path | None = None) -> list[str]:
     if not 1 <= shard_count <= 24 or not 0 <= shard_index < shard_count:
         raise ValueError("Invalid SEC scan shard")
-    directory = content_dir / "wealth"
-    if not dry_run:
-        directory.mkdir(parents=True, exist_ok=True)
-
+    # One JSON data file per company. Never create earnings article URLs.
+    from earnings_consolidated import dashboard, store_update
+    directory = content_dir / "earnings-profiles"
     registry_active = registry_path is not None and registry_path.is_file()
     if registry_active:
         # One SEC request per COMPANY, not per share class (GOOG/GOOGL etc).
@@ -434,51 +433,48 @@ def run(watchlist: Path, content_dir: Path, *, client: SECClient, now: date,
     for ticker in tickers:
         company, cik = resolved[ticker]
         try:
-            filings = recent_filings(client.get_json(f"{SEC_DATA}/submissions/CIK{cik:010d}.json"), now, lookback)
+            submissions = client.get_json(f"{SEC_DATA}/submissions/CIK{cik:010d}.json")
+            filings = recent_filings(submissions, now, lookback)
         except RuntimeError as exc:
             failed.append(ticker)
-            LOG.warning("SEC submission unavailable for %s: %s", ticker, exc)
+            LOG.warning("SEC submissions unavailable for %s: %s", ticker, exc)
             continue
+        if not filings:
+            continue
+        # Never invent FY2027 Q3 just because a filing appears in 2026.
+        # Form, fiscal year, and quarter are taken from that issuer's SEC facts.
         for filing in filings:
-            # Pull only if a new, recent complete SEC financial filing exists.
-            # Annual 10-K is annual reporting, never mislabelled as Q4 earnings.
             if len(written) >= max_new:
-                LOG.info("Article cap reached (%d). Remaining filings held for next scheduled scan", max_new)
                 return written
-            # Path identity is ticker + fiscal period (derived from XBRL), so fact fetch is needed.
+            target = directory / f"{ticker.lower()}.json"
+            previous = json.loads(target.read_text(encoding="utf-8")) if target.is_file() else None
             accession = filing["accessionNumber"]
-            if any(accession in p.read_text(encoding="utf-8")
-                   for p in directory.glob(f"{ticker.lower()}-earnings-*.md")):
+            if previous and any(p["accession"] == accession for p in previous["periods"]):
                 continue
             try:
                 facts = client.get_json(f"{SEC_DATA}/api/xbrl/companyfacts/CIK{cik:010d}.json")
             except RuntimeError as exc:
                 failed.append(ticker)
-                LOG.warning("SEC XBRL facts unavailable for %s: %s", ticker, exc)
+                LOG.warning("SEC facts unavailable for %s: %s", ticker, exc)
                 continue
-            metrics = extract_metrics(facts, filing)
-            if metrics is None:
+            verified = dashboard(previous, ticker, company, cik, filing, submissions, facts,
+                                 checked=now)
+            if verified is None:
                 continue
-            try:
-                slug, content = build_article(ticker, company, cik, filing, metrics, now, facts=facts)
-            except ValueError as exc:
-                LOG.warning("Skipping %s %s: %s", ticker, filing["accessionNumber"], exc)
-                continue
-            target = directory / f"{slug}.md"
-            if target.exists():
-                LOG.info("Existing article for %s %s; leaving published URL stable", ticker, slug)
-                continue
-            LOG.info("NEW %s: %s", ticker, slug)
-            if not dry_run:
-                target.write_text(content, encoding="utf-8", newline="\n")
-            written.append(str(target))
+            result = store_update(directory, ticker, verified, dry_run=dry_run)
+            if result:
+                written.append(result)
+                LOG.info("UPDATED %s: one canonical company report, SEC %s",
+                         ticker, accession)
+            # Revisit the rest of the company's filings on the next run.
+            break
     if len(set(failed)) >= max(8, (len(tickers) + 4) // 5):
         raise RuntimeError(f"SEC unavailable for {len(set(failed))} of {len(tickers)} scanned companies: halt publishing")
     return written
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description="Source-verified, deterministic SEC earnings publication")
+    parser = argparse.ArgumentParser(description="Source-verified, single-page SEC company earnings updates")
     parser.add_argument("--watchlist", type=Path, default=Path("content/earnings-watchlist.yml"))
     parser.add_argument("--content-dir", type=Path, default=Path("content"))
     parser.add_argument("--lookback-days", type=int, default=5)
@@ -500,7 +496,7 @@ def main(argv: list[str] | None = None) -> int:
                   extra_watchlist=args.extra_watchlist)
     for f in created:
         print(f)
-    print(f"Earnings checked: {len(created)} new {'candidates' if args.dry_run else 'articles'}")
+    print(f"Earnings checked: {len(created)} {'candidate updates' if args.dry_run else 'company profiles updated'}")
     return 0
 
 
