@@ -67,7 +67,7 @@
       target.textContent = fee === null ? "Awaiting verified fees" : eur.format(fee) + " / year";
       card.dataset.scenarioFee = fee === null ? "" : String(fee);
     });
-    const stageOrder = { "launch-planned": 0, "live": 1, "intent": 2 };
+    const stageOrder = { "live": 0, "launch-planned": 1, "intent": 2 };
     cards.sort(function (a, b) {
       if (sort.value === "stage") {
         const rank = (stageOrder[a.dataset.stage] ?? 99) - (stageOrder[b.dataset.stage] ?? 99);
