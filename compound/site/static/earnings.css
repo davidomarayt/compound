@@ -79,3 +79,23 @@
 /* One chart per row keeps 8-period labels legible in the narrow article column. */
 @media(max-width:650px){.article-prose .earnings-kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.article-prose .earnings-kpi:first-child{grid-column:1/-1}.article-prose .earnings-kpi{padding:15px}.article-prose .earnings-kpi-value{font-size:clamp(21px,6vw,27px)}.article-prose .earnings-section-heading{flex-wrap:wrap}.article-prose .earnings-section-heading p{text-align:left}.article-prose .earnings-trend{padding:11px 9px 6px}.article-prose .earnings-trend-header{padding:0 6px}.article-prose .earnings-trend-plot{width:100%}}
 @media(prefers-reduced-motion:reduce){.article-prose .earnings-dashboard *{animation:none!important;transition:none!important}}
+
+
+/* TradingView is share-price context, separate from the SEC results dashboard. */
+.compound-tv-panel{border:1px solid #e3dadd;border-radius:12px;background:#fff;padding:22px;margin:31px 0 35px;min-width:0;box-shadow:0 3px 12px rgb(45 32 40 / 4%);color:#33252e}
+.compound-tv-heading{display:flex;align-items:start;justify-content:space-between;gap:18px;margin:0 0 16px}
+.compound-tv-eyebrow{font:800 10px/1.4 system-ui,sans-serif;letter-spacing:.13em;color:#8d4b39;margin:0 0 8px}
+.compound-tv-heading h2{font:normal clamp(24px,2.6vw,32px)/1.17 Georgia,serif;letter-spacing:-.025em;margin:0 0 8px}
+.compound-tv-description{font:400 13px/1.6 system-ui,sans-serif;color:#62575d;margin:0;max-width:62ch}
+.compound-tv-ticker{font:800 12px/1.3 system-ui,sans-serif;letter-spacing:.06em;color:#563d40;background:#f4efec;border-radius:6px;padding:9px 11px;white-space:nowrap}
+.compound-tv-panel .tradingview-widget-container{width:100%;min-width:0;height:465px;overflow:hidden;background:#f8f6f4;border-radius:8px}
+.compound-tv-compact .tradingview-widget-container{height:325px}
+.compound-tv-panel .tradingview-widget-container__widget{width:100%;height:100%}
+.compound-tv-loading{font:400 13px/1.5 system-ui,sans-serif;color:#76696f;margin:0;display:flex;align-items:center;justify-content:center;min-height:100%;padding:25px;text-align:center}
+.compound-tv-footnote{font:400 11px/1.6 system-ui,sans-serif;color:#76696f;margin:11px 0 0}
+.compound-tv-footnote a{color:#744c46;text-decoration:underline;text-underline-offset:3px}
+.article-prose .compound-tv-panel{max-width:100%;margin:20px 0 29px}
+.article-prose .compound-tv-heading h2{font:normal clamp(22px,3vw,28px)/1.18 Georgia,serif!important;margin:0 0 8px!important}
+.article-prose .compound-tv-description{font-size:13px!important;line-height:1.6!important;margin:0!important}
+.article-prose .compound-tv-footnote{font-size:11px!important;line-height:1.6!important;margin:11px 0 0!important}
+@media(max-width:700px){.compound-tv-panel{padding:15px;margin:24px 0}.compound-tv-panel .tradingview-widget-container{height:375px}.compound-tv-compact .tradingview-widget-container{height:300px}.compound-tv-heading{gap:10px}.compound-tv-ticker{padding:7px 8px;font-size:11px}}
