@@ -54,13 +54,12 @@ SEC filing results described here.
     report = (root / "wealth/earnings/aapl-test-earnings/index.html").read_text(encoding="utf-8")
     assert 'data-tv-symbol="AAPL"' in profile
     assert 'data-tv-variant="advanced"' in profile
-    assert "Quarterly and annual earnings" in profile
-    assert 'data-tv-symbol="AAPL"' in report
-    assert 'data-tv-variant="compact"' in report
-    assert 'tradingview-earnings.js?v=3' in report and 'tradingview-earnings.js?v=3' in profile
-    assert report.index('compound-tv-panel') < report.index('SEC filing results described here.')
-    assert '<link rel="canonical" href="https://example.test/wealth/earnings/aapl-test-earnings/">' in report
-    assert 'by TradingView' in profile and 'by TradingView' in report
+    assert "Fiscal earnings and quarterly growth" in profile
+    assert 'http-equiv="refresh"' in report
+    assert 'https://example.test/stocks/aapl/' in report
+    assert 'compound-tv-panel' not in report
+    assert 'tradingview-earnings.js?v=3' in profile
+    assert 'by TradingView' in profile
     assert 'data-tv-symbol="LEN"' in (root / "stocks/len/index.html").read_text(encoding="utf-8")
     js = (root / "static/tradingview-earnings.js").read_text(encoding="utf-8")
     assert "IntersectionObserver" in js
@@ -73,7 +72,8 @@ SEC filing results described here.
     assert "refreshChartSize" in js
     assert "hide_top_toolbar: mobile, hide_legend: mobile, hide_volume: mobile" in js
     assert "chartOnly: mobile" in js
-    assert 'earnings.css?v=7' in profile and 'earnings.css?v=7' in report
+    assert 'earnings.css?v=10' in profile
+    assert 'earnings.css' not in report
 
 
 def test_unverified_report_without_matching_registry_company_has_no_price_widget(settings):
