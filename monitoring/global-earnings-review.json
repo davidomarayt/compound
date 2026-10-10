@@ -1,0 +1,275 @@
+{
+  "checked": "2026-10-10",
+  "companies_checked": 10,
+  "companies": {
+    "spcx": {
+      "company": "SpaceX",
+      "official_source": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/",
+      "regulatory": "SEC verified issuer: SPACE EXPLORATION TECHNOLOGIES CORP (1181412)",
+      "official_source_status": "Checked 0 relevant investor links"
+    },
+    "tsm": {
+      "company": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "official_source": "https://investor.tsmc.com/english/financial-calendar",
+      "regulatory": "SEC verified issuer: TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD (1046179)",
+      "official_source_status": "Unavailable; retry next run: HTTP Error 403: Forbidden"
+    },
+    "asml": {
+      "company": "ASML Holding",
+      "official_source": "https://www.asml.com/en/investors/financial-results",
+      "regulatory": "SEC verified issuer: ASML HOLDING NV (937966)",
+      "official_source_status": "Unavailable; retry next run: HTTP Error 403: Forbidden"
+    },
+    "005930-ks": {
+      "company": "Samsung Electronics",
+      "official_source": "https://www.samsung.com/global/ir/financial-information/earnings-release/",
+      "regulatory": "Local-market / non-SEC disclosures",
+      "official_source_status": "Checked 3 relevant investor links"
+    },
+    "tm": {
+      "company": "Toyota Motor Corporation",
+      "official_source": "https://global.toyota/en/ir/library/",
+      "regulatory": "SEC verified issuer: TOYOTA MOTOR CORP/ (1094517)",
+      "official_source_status": "Checked 0 relevant investor links"
+    },
+    "0700-hk": {
+      "company": "Tencent Holdings",
+      "official_source": "https://www.tencent.com/investors/results/",
+      "regulatory": "Local-market / non-SEC disclosures",
+      "official_source_status": "Checked 1 relevant investor links"
+    },
+    "1211-hk": {
+      "company": "BYD Company",
+      "official_source": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=2696",
+      "regulatory": "Local-market / non-SEC disclosures",
+      "official_source_status": "Checked 8 relevant investor links"
+    },
+    "7974-t": {
+      "company": "Nintendo",
+      "official_source": "https://www.nintendo.co.jp/ir/en/events/index.html",
+      "regulatory": "Local-market / non-SEC disclosures",
+      "official_source_status": "Checked 0 relevant investor links"
+    },
+    "nvo": {
+      "company": "Novo Nordisk",
+      "official_source": "https://www.novonordisk.com/investors/financial-results.html",
+      "regulatory": "SEC verified issuer: NOVO NORDISK A S (353278)",
+      "official_source_status": "Checked 57 relevant investor links"
+    },
+    "mc-pa": {
+      "company": "LVMH",
+      "official_source": "https://www.lvmh.com/publications",
+      "regulatory": "Local-market / non-SEC disclosures",
+      "official_source_status": "Checked 1 relevant investor links"
+    }
+  },
+  "observed_links": {
+    "spcx": [],
+    "005930-ks": [
+      "https://www.samsung.com/global/ir/financial-information/audited-financial-statements/",
+      "https://www.samsung.com/global/ir/financial-information/earnings-release/",
+      "https://www.samsung.com/global/ir/reports-disclosures/business-report/"
+    ],
+    "tm": [],
+    "0700-hk": [
+      "https://www.tencent.com/wp-content/uploads/2026/08/Tencent-Announces-2026-Second-Quarter-Results.pdf"
+    ],
+    "1211-hk": [
+      "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0327/2026032702644.pdf",
+      "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0327/2026032703008.pdf",
+      "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200412.pdf",
+      "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200434.pdf",
+      "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0428/2026042803001.pdf",
+      "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0609/2026060901352.pdf",
+      "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082801633.pdf",
+      "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082801695.pdf"
+    ],
+    "7974-t": [],
+    "nvo": [
+      "https://www.novonordisk.com/about/corporate-governance.html",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/irmaterial/annual_report/2022/novo-nordisk-annual-report-2021.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/irmaterial/annual_report/2023/novo-nordisk-annual-report-2022.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/irmaterial/annual_report/2024/novo-nordisk-annual-report-2023.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/irmaterial/annual_report/2026/Q4-2025-financial-workbook.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/irmaterial/annual_report/2026/novo-nordisk-annual-report-2025.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2021/Q3-2021-company-announcement.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2021/Q3-2021-financial-workbook.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2021/Q4-2021-company-announcement.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2021/Q4-2021-financial-workbook.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2021/Q4-2021-full-investor-presentation.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2021/ada-investor-presentation-2021.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2021/company-announcement-Q2-2021.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2021/conference-call-supply-update-20Dec2021.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2021/financial-workbook-Q2-2021.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2021/investor-presentation-Q1-2021.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2021/investor-presentation-Q2-2021.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2021/investor-presentation-Q3-2021.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2021/semaglutide-2-4-mg-approved-in-the-usa-2021.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2022/Q1-2022-financial-workbook.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2022/Q1-2022-investor-presentation.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2022/Q2-2022-financial-data.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2022/Q2-2022-investor-presentation.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2022/Q3-2022-financial-workbook.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2022/Q3-2022-investor-presentation.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2022/Q4-2022-financial-data.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2022/Q4-2022-investor-presentation.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2023/Q1-2023-financial-data.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2023/Q1-2023-investor-presentation.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2023/Q2-2023-investor-presentation.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2023/Q3-2023-investor-presentation.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2023/q2-2023-financial-data.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2023/q3-2023-financial-data.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2023/q4-2023-presentation.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2023/v2-aha-investor-rresentation-2023.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2024/Q2-2024-investor-presentation.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2024/q1-2024-financial-data.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2024/q1-2024-investor-presentation.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2024/q2-2024-financial-data.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2024/q3-2024-financial-data.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2024/q3-2024-investor-presentation.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2025/Q1-2025-financial-workbook.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2025/Q1-2025-investor-presentation.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2025/Q2-2025-financial-workbook.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2025/Q2-2025-investor-presentation-updated.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2025/Q3-2025-financial-workbook.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2025/Q3-investor-presentation-2025.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Financial%20Workbook%20Q2%202026.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q1-2026-financial-workbook.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q1-2026-investor-presentation.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q2-2026-Full%20presentation.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q4-2025-investor-presentation-4Feb.pdf",
+      "https://www.novonordisk.com/investors/agm-divider.html",
+      "https://www.novonordisk.com/investors/annual-general-meeting.html",
+      "https://www.novonordisk.com/investors/annual-report.html",
+      "https://www.novonordisk.com/investors/financial-results.html",
+      "https://www.novonordisk.com/investors/financial-results/extraordinary-general-meeting-conference-call.html"
+    ],
+    "mc-pa": [
+      "https://www.lvmh.com/en/financial-calendar?tag=Annual%20General%20Meetings"
+    ]
+  },
+  "new_review_candidates": 12,
+  "pending_review": [
+    {
+      "id": "sec:1046179:0001046179-26-000680",
+      "company": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "slug": "tsm",
+      "title": "Taiwan Semiconductor Manufacturing Company (TSMC) SEC 6-K filed 2026-10-08",
+      "filed": "2026-10-08",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
+    {
+      "id": "sec:1046179:0001046179-26-000660",
+      "company": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "slug": "tsm",
+      "title": "Taiwan Semiconductor Manufacturing Company (TSMC) SEC 6-K filed 2026-09-24",
+      "filed": "2026-09-24",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
+    {
+      "id": "sec:1046179:0001046179-26-000658",
+      "company": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "slug": "tsm",
+      "title": "Taiwan Semiconductor Manufacturing Company (TSMC) SEC 6-K filed 2026-09-10",
+      "filed": "2026-09-10",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
+    {
+      "id": "sec:1046179:0001046179-26-000552",
+      "company": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "slug": "tsm",
+      "title": "Taiwan Semiconductor Manufacturing Company (TSMC) SEC 6-K filed 2026-09-01",
+      "filed": "2026-09-01",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
+    {
+      "id": "sec:1094517:0001193125-26-413029",
+      "company": "Toyota Motor Corporation",
+      "slug": "tm",
+      "title": "Toyota Motor Corporation SEC 6-K filed 2026-10-05",
+      "filed": "2026-10-05",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1094517",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
+    {
+      "id": "sec:1094517:0001193125-26-380869",
+      "company": "Toyota Motor Corporation",
+      "slug": "tm",
+      "title": "Toyota Motor Corporation SEC 6-K filed 2026-09-03",
+      "filed": "2026-09-03",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1094517",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
+    {
+      "id": "sec:353278:0001171843-26-006440",
+      "company": "Novo Nordisk",
+      "slug": "nvo",
+      "title": "Novo Nordisk SEC 6-K filed 2026-10-06",
+      "filed": "2026-10-06",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=353278",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
+    {
+      "id": "sec:353278:0001171843-26-006374",
+      "company": "Novo Nordisk",
+      "slug": "nvo",
+      "title": "Novo Nordisk SEC 6-K filed 2026-10-05",
+      "filed": "2026-10-05",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=353278",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
+    {
+      "id": "sec:353278:0001171843-26-006248",
+      "company": "Novo Nordisk",
+      "slug": "nvo",
+      "title": "Novo Nordisk SEC 6-K filed 2026-09-28",
+      "filed": "2026-09-28",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=353278",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
+    {
+      "id": "sec:353278:0001171843-26-006128",
+      "company": "Novo Nordisk",
+      "slug": "nvo",
+      "title": "Novo Nordisk SEC 6-K filed 2026-09-21",
+      "filed": "2026-09-21",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=353278",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
+    {
+      "id": "sec:353278:0001171843-26-006088",
+      "company": "Novo Nordisk",
+      "slug": "nvo",
+      "title": "Novo Nordisk SEC 6-K filed 2026-09-17",
+      "filed": "2026-09-17",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=353278",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
+    {
+      "id": "sec:353278:0001171843-26-006038",
+      "company": "Novo Nordisk",
+      "slug": "nvo",
+      "title": "Novo Nordisk SEC 6-K filed 2026-09-15",
+      "filed": "2026-09-15",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=353278",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    }
+  ],
+  "note": "A discovery queue, not published financial analysis. Source pages can be blocked or JavaScript-rendered; a successful HTTP request does not guarantee full coverage."
+}
