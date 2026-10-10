@@ -1,0 +1,125 @@
+{
+  "cik": 920760,
+  "company": "Lennar",
+  "latest": {
+    "accession": "0001628280-26-064557",
+    "filed": "2026-10-02",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.19,
+        "prior_year": 2.29,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 283876000,
+        "prior_year": 590967000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 8046119000,
+        "prior_year": 8810278000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/920760/000162828026064557/len-20260831.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-024352",
+      "filed": "2026-04-09",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.93,
+          "prior_year": 1.96,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 229383000,
+          "prior_year": 519526000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6619476000,
+          "prior_year": 7631545000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-02-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/920760/000162828026024352/len-20260228.htm"
+    },
+    {
+      "accession": "0001628280-26-046019",
+      "filed": "2026-06-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.24,
+          "prior_year": 1.81,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 304772000,
+          "prior_year": 477449000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7939872000,
+          "prior_year": 8377502000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/920760/000162828026046019/len-20260531.htm"
+    },
+    {
+      "accession": "0001628280-26-064557",
+      "filed": "2026-10-02",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.19,
+          "prior_year": 2.29,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 283876000,
+          "prior_year": 590967000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 8046119000,
+          "prior_year": 8810278000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/920760/000162828026064557/len-20260831.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "LEN",
+  "updated": "2026-10-10"
+}
