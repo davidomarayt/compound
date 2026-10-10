@@ -307,4 +307,11 @@ jobs:
           grep -Fq '<loc>https://compound.ie/pia/</loc>' /tmp/sitemap.xml
           grep -Fq '<loc>https://compound.ie/pia/providers/</loc>' /tmp/sitemap.xml
 
-          echo 'Live verification passed for Compound calculator catalogue, Health and Wealth Hubs, PIA Centre, discovery metadata and flagship guides.'
+          fetch https://compound.ie/wealth/earnings/ /tmp/earnings-hub.html
+          grep -Fq 'Company earnings. The numbers behind the headlines.' /tmp/earnings-hub.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/wealth/earnings/">' /tmp/earnings-hub.html
+          grep -Fq 'not individually reviewed before publication' /tmp/earnings-hub.html
+          grep -Fq 'href="/wealth/earnings/"' /tmp/wealth.html
+          grep -Fq '<loc>https://compound.ie/wealth/earnings/</loc>' /tmp/sitemap.xml
+
+          echo 'Live verification passed for Compound calculator catalogue, Health and Wealth Hubs, PIA Centre, Earnings, discovery metadata and flagship guides.'

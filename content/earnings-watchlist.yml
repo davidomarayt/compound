@@ -1,0 +1,19 @@
+# US-listed companies monitored for new 10-Q and 10-K filings.
+# No prices, analyst estimates or earnings transcripts are scraped.
+# SEC CIKs are resolved afresh against the SEC's ticker mapping.
+tickers:
+  - AAPL
+  - MSFT
+  - NVDA
+  - GOOGL
+  - AMZN
+  - META
+  - TSLA
+  - AMD
+  - NFLX
+  - ORCL
+  - JPM
+  - V
+  - KO
+  - COST
+  - PLTR
