@@ -29,18 +29,26 @@ Use Actions → Compound Earnings Monitor → Run workflow, with **dry_run=true*
 To test offline: `python -m pytest tests/test_earnings.py -q`. No SEC traffic is used in the unit tests.
 
 The old `content/earnings-watchlist.yml` is a fallback for offline/manual legacy tests only. Production index coverage is controlled by the validated `content/earnings-sp500.json` snapshot, refreshed by `scripts/sp500_registry.py`. Do not manually add tickers to imply index membership. Avoid mass publishing without reviewing factual quality and web-search traffic.
-## Historical SEC earnings rollout (from 10 October 2026)
+## Historical SEC earnings rollout (2026 onward only)
 
-`.github/workflows/earnings-backfill.yml` publishes up to **eight** verified
-filing reports in one daily batch, with an initial batch on release. The first
-pass is capped at **one recent, qualifying historic 10-Q or 10-K per issuer**.
-It looks back up to 550 days for matching SEC XBRL revenue, GAAP net income
-and diluted EPS with year-earlier comparables. Every article includes the
-real filing date and accession, and carries a publication date of the day
-it was published; history is never falsely presented as breaking news.
-Existing issuer reports are not duplicated or silently overwritten.
-Eligible reports retain SEO indexability; monitor indexing, quality and
-crawl load before increasing batch size. Dry-run dispatches do not publish.
+**The backfill must never publish reporting periods or SEC filings before
+1 January 2026.** Both the original filing date and the end of the financial
+period must be on or after 2026-01-01; this is enforced in the generator,
+independently of the rolling lookback window.
+
+The historical rollout is capped at **two** reports per scheduled day and
+**30 backfilled reports in total** across the entire site. When the limit
+is reached, backfilling stops automatically. Only the latest qualifying
+filing per issuer is added if there is no existing company report. We never
+publish several quarters for the same company just to populate archives.
+The regular new-filing SEC monitor continues independently.
+
+Each backfill reports its genuine filing date and shows the actual
+Compound publication date, without impersonating current breaking news.
+The latest 365 days are considered, subject to the hard 2026 cutoff.
+Manual overrides cannot exceed the limits. Dry runs do not publish.
+The constraints protect the site against large numbers of thin or
+outdated automatically generated pages.
 
 ## Ten additional global public companies
 
