@@ -1491,7 +1491,7 @@ def build_site(settings: Settings) -> dict:
         "url": "/stocks/", "pillar": "Wealth",
         "date": date.today().isoformat(),
         "summary": "Browse S&P 500 and global listed companies, price charts and original research.",
-        "tags": ["stocks", "companies", "s&p 500", "stock market", "investing"],
+        "tags": ["stocks", "companies", "stock market", "investing", "company research"],
         "description": "Public company stock charts and primary-source earnings profiles.",
         "image": "", "reading_minutes": 3, "date_label": "Stocks",
     })
