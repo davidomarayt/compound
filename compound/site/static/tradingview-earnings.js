@@ -10,7 +10,7 @@
     var symbol = panel.getAttribute("data-tv-symbol") || "";
     var variant = panel.getAttribute("data-tv-variant");
     var mobile = !!(window.matchMedia && window.matchMedia("(max-width: 760px)").matches);
-    if (!/^[A-Z][A-Z0-9.]{0,11}$/.test(symbol) || (variant !== "compact" && variant !== "advanced")) return;
+    if (!/^(?:[A-Z][A-Z0-9_]{1,14}:)?[A-Z0-9][A-Z0-9.]{0,11}$/.test(symbol) || (variant !== "compact" && variant !== "advanced")) return;
     var wrapper = panel.querySelector(".tradingview-widget-container");
     var target = panel.querySelector(".tradingview-widget-container__widget");
     if (!wrapper || !target) return;
