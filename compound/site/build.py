@@ -887,7 +887,8 @@ def series_context(article: Article, content_dir: Path) -> dict:
     return {"id": data["id"], "title": data["title"], "parts": parts}
 
 
-def article_context(env: Environment, settings: Settings, article: Article, preview: bool) -> dict:
+def article_context(env: Environment, settings: Settings, article: Article, preview: bool,
+                    earnings_ticker: str = "", earnings_company_name: str = "") -> dict:
     body = article.body_with_charts
     if "automated-earnings" in article.tags and article.path is not None:
         # Use SEC-verified dashboard metadata for new reports; older reports
@@ -900,8 +901,13 @@ def article_context(env: Environment, settings: Settings, article: Article, prev
         snapshot = earnings_meta.get("earnings_snapshot")
         if not snapshot:
             snapshot = from_existing_markdown(earnings_markdown, earnings_meta)
+        from compound.site.tradingview import render_tradingview_panel
+        # Market-price charts are separate from SEC financial charts.
+        price_panel = render_tradingview_panel(earnings_ticker, earnings_company_name, "compact")
         if snapshot:
-            body = render_earnings_dashboard(snapshot) + "\n" + body
+            body = render_earnings_dashboard(snapshot) + "\n" + price_panel + "\n" + body
+        elif price_panel:
+            body = price_panel + "\n" + body
     series = series_context(article, settings.content_dir)
     if article.series_id == "live-to-100":
         for block in ("figures", "horizon", "timeline"):
@@ -1156,7 +1162,7 @@ def build_site(settings: Settings) -> dict:
     # Match earnings ticker tags to the canonical company profile, including
     # multiple share classes (GOOG / GOOGL share one permanent profile).
     earnings_profile_by_ticker = {
-        symbol.lower(): (f'/wealth/earnings/company/{company["symbol"].lower()}/', company["name"])
+        symbol.lower(): (f'/wealth/earnings/company/{company["symbol"].lower()}/', company["name"], company["symbol"])
         for company in registry_members
         for symbol in company["symbols"]
     }
@@ -1165,13 +1171,15 @@ def build_site(settings: Settings) -> dict:
         title="Company Earnings and Financial Results", pillar="wealth",
         articles=earnings_articles, ads_allowed=True, registry=earnings_registry,
         companies=active_earnings_companies, sectors=sector_names, report_counts=report_counts))
+    from compound.site.tradingview import render_tradingview_panel
     for company in registry_members:
         company_symbol = company["symbol"].lower()
         _write(
             out / "wealth" / "earnings" / "company" / company_symbol / "index.html",
             env.get_template("earnings_company.html").render(
                 title=f'{company["name"]} ({company["symbol"]}) Earnings',
-                pillar="wealth", company=company, reports=company_reports[str(company["cik"])]),
+                pillar="wealth", company=company, reports=company_reports[str(company["cik"])],
+                tradingview_panel=render_tradingview_panel(company["symbol"], company["name"], "advanced")),
         )
 
     for p in PILLARS:
@@ -1211,12 +1219,16 @@ def build_site(settings: Settings) -> dict:
         # that still nominate related_tools in YAML front matter.
         linked_tools = ([] if is_automated_earnings else
                         [tools_by_slug[s] for s in a.related_tools if s in tools_by_slug])
-        context = article_context(env, settings, a, False)
+        profile = (next(
+            (earnings_profile_by_ticker[tag] for tag in a.tags
+             if tag in earnings_profile_by_ticker), None
+        ) if is_automated_earnings else None)
+        context = article_context(
+            env, settings, a, False,
+            earnings_ticker=profile[2] if profile else "",
+            earnings_company_name=profile[1] if profile else "",
+        )
         if is_automated_earnings:
-            profile = next(
-                (earnings_profile_by_ticker[tag] for tag in a.tags
-                 if tag in earnings_profile_by_ticker), None
-            )
             context["earnings_company_url"] = profile[0] if profile else ""
             context["earnings_company_name"] = profile[1] if profile else ""
         if linked_tools:

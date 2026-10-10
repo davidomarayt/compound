@@ -12,7 +12,7 @@ A reader should understand **what changed in under ten seconds** and reach the o
 2. One-sentence data-led takeaway.
 3. Three responsive KPI cards: revenue, net income, diluted US GAAP EPS, with the corresponding year-earlier figure and YoY percentage.
 4. Source-verified four-column comparison table, with correct headings and tabular numerals.
-5. Three responsive accessible SEC-period charts with dates, units and underlying values in expandable HTML tables.
+5. Three responsive accessible SEC-period charts with dates, units and underlying values in expandable HTML tables. A distinct, clearly attributed TradingView share-price context chart loads only when the user scrolls near it.
 6. Short interpretation and limitations, with a direct primary-filing URL.
 7. One compact related-company-history / PIA Centre / PIA Calculator navigation area near the bottom.
 8. Any separately configured display ads only outside the core financial data.
@@ -31,7 +31,7 @@ Generated content is terse and factual; missing values must be withheld, not fab
 
 ## Graph standards
 
-Charts use inline semantic SVG with real dates and legible labels, no remote scripts or image downloads. Maintain neutral axes, note negative EPS/profit correctly, and provide the source values in HTML tables underneath each graph. Data labels are not based on price movements. Graphs are responsive and honour reduced-motion preferences.
+SEC financial charts use inline semantic SVG with real dates and legible labels, no remote scripts or image downloads for the filing metrics. A separate third-party TradingView price chart is progressively loaded near the viewport on company and earnings-report pages. Prices are not described as SEC-verified facts. Maintain neutral axes, note negative EPS/profit correctly, and provide the source values in HTML tables underneath each graph. Data labels are not based on price movements. Graphs are responsive and honour reduced-motion preferences.
 
 ## SEO
 
@@ -49,7 +49,7 @@ Do not place fixed ads inside KPI cards, rows of financial statements, source ta
 
 ## Acceptance criteria
 
-- Rendered report shows 3 KPI cards, 3 labelled data charts and a readable comparison table, with no raster hero, stock-image credit or client-side chart API.
+- Rendered report shows 3 KPI cards, 3 labelled SEC-data charts, a readable comparison table, and a separate optional TradingView price chart, with no raster hero or stock-image credit. TradingView's remote script is not used to calculate SEC figures.
 - The reported YoY percentages agree with the original financial facts, including legacy rounded reports.
 - Incomplete SEC data cannot create new unverified lines or false 8-quarter history.
 - Internal links point to correct company profile, PIA Centre and calculator.
