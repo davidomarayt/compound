@@ -66,7 +66,7 @@ def test_no_pre_2026_historical_quarters(tmp_path):
     folder=tmp_path/"earnings-profiles"; folder.mkdir()
     valid=record(2026,"Q2","2026-06-30","2026-08-08","accn2",10e9,2e9,1,"2026-04-01")
     old=record(2026,"Q1","2025-12-31","2026-02-08","accn1",9e9,1e9,.5,"2025-10-01")
-    (folder/"example.json").write_text(json.dumps({
+    (folder/"ex.json").write_text(json.dumps({
         "ticker":"EX","company":"Example","cik":101,
         "periods":[old,valid],"latest":valid
     }))
