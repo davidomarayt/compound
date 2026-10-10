@@ -1,0 +1,209 @@
+{
+  "checked": "2026-10-10",
+  "listed": [
+    {
+      "slug": "spcx",
+      "name": "SpaceX",
+      "ticker": "SPCX",
+      "exchange": "Nasdaq",
+      "sector": "Aerospace, connectivity & AI",
+      "market": "United States",
+      "tv_symbol": "NASDAQ:SPCX",
+      "summary": "Space launch, Starlink connectivity and AI infrastructure.",
+      "source": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/"
+    },
+    {
+      "slug": "tsm",
+      "name": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "ticker": "TSM",
+      "exchange": "NYSE ADR",
+      "sector": "Semiconductors",
+      "market": "Taiwan",
+      "tv_symbol": "NYSE:TSM",
+      "summary": "Advanced chip manufacturing and semiconductor capacity.",
+      "source": "https://investor.tsmc.com/english"
+    },
+    {
+      "slug": "asml",
+      "name": "ASML Holding",
+      "ticker": "ASML",
+      "exchange": "Nasdaq / Euronext Amsterdam",
+      "sector": "Semiconductor equipment",
+      "market": "Netherlands",
+      "tv_symbol": "NASDAQ:ASML",
+      "summary": "Lithography systems used in advanced semiconductor production.",
+      "source": "https://www.asml.com/en/investors/share-information"
+    },
+    {
+      "slug": "005930-ks",
+      "name": "Samsung Electronics",
+      "ticker": "005930",
+      "exchange": "KRX",
+      "sector": "Electronics & semiconductors",
+      "market": "South Korea",
+      "tv_symbol": "KRX:005930",
+      "summary": "Memory chips, consumer electronics and semiconductor fabrication.",
+      "source": "https://www.samsung.com/global/ir/stock-information/listing-Info/"
+    },
+    {
+      "slug": "tm",
+      "name": "Toyota Motor Corporation",
+      "ticker": "TM",
+      "exchange": "NYSE ADR / TSE 7203",
+      "sector": "Automotive",
+      "market": "Japan",
+      "tv_symbol": "NYSE:TM",
+      "summary": "Global vehicle manufacturing, hybrids, batteries and mobility.",
+      "source": "https://global.toyota/en/ir/stock/outline/"
+    },
+    {
+      "slug": "0700-hk",
+      "name": "Tencent Holdings",
+      "ticker": "0700",
+      "exchange": "HKEX 700",
+      "sector": "Gaming & internet services",
+      "market": "Hong Kong",
+      "tv_symbol": "HKEX:700",
+      "summary": "WeChat, online games, financial technology and cloud services.",
+      "source": "https://www.tencent.com/en-us/investors.html"
+    },
+    {
+      "slug": "1211-hk",
+      "name": "BYD Company",
+      "ticker": "1211",
+      "exchange": "HKEX",
+      "sector": "Electric vehicles & batteries",
+      "market": "China",
+      "tv_symbol": "HKEX:1211",
+      "summary": "Electric vehicles, batteries and energy technologies.",
+      "source": "https://www.hkex.com.hk/Market-Data/Securities-Prices/Equities/Equities-Quote?sc_lang=en&sym=1211"
+    },
+    {
+      "slug": "7974-t",
+      "name": "Nintendo",
+      "ticker": "7974",
+      "exchange": "Tokyo Stock Exchange",
+      "sector": "Gaming & entertainment",
+      "market": "Japan",
+      "tv_symbol": "TSE:7974",
+      "summary": "Gaming hardware, software and entertainment franchises.",
+      "source": "https://www.nintendo.co.jp/ir/en/stock/information/index.html"
+    },
+    {
+      "slug": "nvo",
+      "name": "Novo Nordisk",
+      "ticker": "NVO",
+      "exchange": "NYSE ADR",
+      "sector": "Pharmaceuticals",
+      "market": "Denmark",
+      "tv_symbol": "NYSE:NVO",
+      "summary": "Diabetes and obesity medicines, research and production.",
+      "source": "https://www.novonordisk.com/investors.html"
+    },
+    {
+      "slug": "mc-pa",
+      "name": "LVMH",
+      "ticker": "MC",
+      "exchange": "Euronext Paris",
+      "sector": "Luxury goods",
+      "market": "France",
+      "tv_symbol": "EURONEXT:MC",
+      "summary": "Luxury fashion, beauty, jewellery and wines and spirits.",
+      "source": "https://www.lvmh.com/en/investors/frequently-asked-questions"
+    }
+  ],
+  "private": [
+    {
+      "slug": "openai",
+      "name": "OpenAI",
+      "sector": "Artificial intelligence",
+      "summary": "AI models, products, infrastructure and governance.",
+      "website": "https://openai.com/"
+    },
+    {
+      "slug": "anthropic",
+      "name": "Anthropic",
+      "sector": "Artificial intelligence",
+      "summary": "Claude AI models, research and enterprise deployments.",
+      "website": "https://www.anthropic.com/"
+    },
+    {
+      "slug": "bytedance",
+      "name": "ByteDance",
+      "sector": "Social media & AI",
+      "summary": "TikTok, digital content distribution and AI systems.",
+      "website": "https://www.bytedance.com/en/"
+    },
+    {
+      "slug": "databricks",
+      "name": "Databricks",
+      "sector": "Data & AI software",
+      "summary": "Enterprise data platforms, analytics and AI tooling.",
+      "website": "https://www.databricks.com/"
+    },
+    {
+      "slug": "stripe",
+      "name": "Stripe",
+      "sector": "Payments infrastructure",
+      "summary": "Payment processing and financial software infrastructure.",
+      "website": "https://stripe.com/"
+    },
+    {
+      "slug": "revolut",
+      "name": "Revolut",
+      "sector": "Financial technology",
+      "summary": "Consumer and business financial services.",
+      "website": "https://www.revolut.com/"
+    },
+    {
+      "slug": "blue-origin",
+      "name": "Blue Origin",
+      "sector": "Space technology",
+      "summary": "Launch vehicles, engines and space infrastructure.",
+      "website": "https://www.blueorigin.com/"
+    },
+    {
+      "slug": "anduril",
+      "name": "Anduril Industries",
+      "sector": "Defence technology",
+      "summary": "Autonomous systems, sensing and defence software.",
+      "website": "https://www.anduril.com/"
+    },
+    {
+      "slug": "neuralink",
+      "name": "Neuralink",
+      "sector": "Neurotechnology",
+      "summary": "Brain-computer interface research and devices.",
+      "website": "https://neuralink.com/"
+    },
+    {
+      "slug": "epic-games",
+      "name": "Epic Games",
+      "sector": "Gaming software",
+      "summary": "Fortnite, Unreal Engine and gaming distribution.",
+      "website": "https://www.epicgames.com/"
+    },
+    {
+      "slug": "valve",
+      "name": "Valve",
+      "sector": "Gaming platforms",
+      "summary": "Steam distribution, game development and hardware.",
+      "website": "https://www.valvesoftware.com/"
+    },
+    {
+      "slug": "canva",
+      "name": "Canva",
+      "sector": "Design software",
+      "summary": "Visual design, collaboration and publishing software.",
+      "website": "https://www.canva.com/"
+    },
+    {
+      "slug": "lego",
+      "name": "LEGO Group",
+      "sector": "Consumer products",
+      "summary": "LEGO toys, entertainment and branded experiences.",
+      "website": "https://www.lego.com/en-us/aboutus"
+    }
+  ],
+  "notes": "Editorial watchlist only. Listed securities and private businesses are distinct. No valuation or quoted price is inferred. Company status must be rechecked before a new report."
+}

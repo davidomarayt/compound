@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block head_title %}{{ company.name }} ({{ company.ticker }}) Stock — Chart, News &amp; Research | Compound{% endblock %}
+{% block meta %}<meta name="description" content="{{ company.name }} ({{ company.ticker }}) on {{ company.exchange }}: share-price chart, listing details, news and research from Compound."><meta property="og:title" content="{{ company.name }} Stock Research | Compound"><meta property="og:url" content="{{ site_url }}/stocks/{{ company.slug }}/">{% endblock %}
+{% block head %}<link rel="canonical" href="{{ site_url }}/stocks/{{ company.slug }}/">{% if not has_coverage %}<meta name="robots" content="noindex,follow">{% endif %}{% endblock %}
+{% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=8"><link rel="stylesheet" href="/static/company-watchlist.css?v=1"><script src="/static/tradingview-earnings.js?v=4" defer></script>{% endblock %}
+{% block content %}
+<div class="earnings-hub stocks-company">
+<nav class="earnings-crumb" aria-label="Breadcrumb"><a href="/">Compound</a> / <a href="/stocks/">Stocks</a> / {{ company.ticker }}</nav>
+<header class="earnings-hero"><p class="eyebrow">COMPOUND STOCKS / GLOBAL LISTED COMPANY</p><h1>{{ company.name }} ({{ company.ticker }})</h1>
+<p class="earnings-lede">{{ company.summary }}</p>
+<div class="company-fact-strip"><span><strong>Ticker:</strong> {{ company.ticker }}</span><span><strong>Listing:</strong> {{ company.exchange }}</span><span><strong>Home market:</strong> {{ company.market }}</span><span><strong>Industry:</strong> {{ company.sector }}</span></div>
+<p class="earnings-directory-source">Primary listing reference: <a href="{{ company.source }}" rel="noopener noreferrer" target="_blank">{{ company.exchange }} ↗</a>. This company is on Compound's expanded watchlist, not the monitored S&amp;P 500 register. For ADRs, prices refer to the named depositary receipt rather than the local ordinary share.</p>
+</header>
+{{ tradingview_panel|safe }}
+<section class="earnings-section" id="stocks-company-coverage"><div class="earnings-heading"><p class="eyebrow">ORIGINAL COVERAGE</p><h2>News &amp; analysis</h2><span>{{ news|length + research|length }} linked articles</span></div>
+{% if news or research %}<div class="earnings-cards">
+{% for article in news %}<article class="earnings-card"><p class="earnings-kicker">NEWS · <time datetime="{{ article.date.isoformat() }}">{{ article.date|long_date }}</time></p><h3><a href="{{ article.url }}">{{ article.title }}</a></h3><p>{{ article.summary }}</p><a class="earnings-read" href="{{ article.url }}">Read article →</a></article>{% endfor %}
+{% for article in research %}<article class="earnings-card"><p class="earnings-kicker">COMPANY RESEARCH · <time datetime="{{ article.date.isoformat() }}">{{ article.date|long_date }}</time></p><h3><a href="{{ article.url }}">{{ article.title }}</a></h3><p>{{ article.summary }}</p><a class="earnings-read" href="{{ article.url }}">Read analysis →</a></article>{% endfor %}</div>
+{% else %}<div class="earnings-empty"><h3>Research coverage being developed</h3><p>We have not published a company-specific analysis for {{ company.name }} yet. We do not fabricate financial reports to fill empty profiles. <a href="/wealth/earnings/">Explore published earnings analysis →</a></p></div>{% endif %}</section>
+<section class="earnings-section earnings-method"><div><p class="eyebrow">SOURCES &amp; LIMITATIONS</p><h2>About this profile</h2></div><div><p>Prices and charting are supplied by TradingView and may be delayed. Listing markets and accounting standards vary; the US SEC quarterly reporting workflow does not automatically cover overseas issuers. Future research must cite appropriate primary filings and use explicit company tags.</p><p>For information only, not personal financial advice. <a href="/editorial-policy/">Editorial policy</a>.</p></div></section>
+</div>{% endblock %}

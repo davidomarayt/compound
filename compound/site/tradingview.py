@@ -16,7 +16,7 @@ def render_tradingview_panel(symbol: str, company_name: str = "", variant: str =
     arbitrary external symbol or injecting untrusted content into the DOM.
     """
     ticker = str(symbol or "").strip().upper()
-    if not re.fullmatch(r"[A-Z][A-Z0-9.-]{0,11}", ticker):
+    if not re.fullmatch(r"(?:[A-Z][A-Z0-9_]{1,14}:)?[A-Z0-9][A-Z0-9.-]{0,11}", ticker):
         return ""
     if variant not in {"compact", "advanced"}:
         return ""
@@ -31,7 +31,7 @@ def render_tradingview_panel(symbol: str, company_name: str = "", variant: str =
         if variant == "advanced" else
         "Historical market prices, separate from the SEC financial results above."
     )
-    url = "https://www.tradingview.com/symbols/" + ticker + "/"
+    url = "https://www.tradingview.com/symbols/" + ticker.replace(":", "-") + "/"
     return (
         f'<section class="compound-tv-panel compound-tv-{variant}" '
         f'data-compound-tradingview data-tv-symbol="{safe_ticker}" data-tv-variant="{variant}" '
