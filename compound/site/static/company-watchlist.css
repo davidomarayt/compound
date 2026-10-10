@@ -1,0 +1,11 @@
+.company-watchlist-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:24px 0}
+.company-watchlist-item{border:1px solid #e3dadd;border-radius:11px;padding:19px;background:#fff;display:flex;flex-direction:column;gap:9px;color:#33252e;text-decoration:none;min-width:0}
+.company-watchlist-item strong{font:normal 24px/1.18 Georgia,serif;letter-spacing:-.02em}
+.company-watchlist-item>span:not(.company-watchlist-link):not(.company-watchlist-kicker){font-size:14px;line-height:1.5;color:#645a5f;flex-grow:1}
+.company-watchlist-kicker{font-size:11px;line-height:1.3;font-weight:750;letter-spacing:.06em;text-transform:uppercase;color:#7c4941}
+.company-watchlist-link{font-size:13px;font-weight:700;color:#7c4941;margin-top:4px}
+.company-watchlist-item:hover,.company-watchlist-item:focus-visible{border-color:#a97e73;outline-offset:3px}
+.company-fact-strip{display:flex;flex-wrap:wrap;gap:10px 22px;margin:22px 0 10px;font-size:14px;line-height:1.5}
+.company-fact-strip span{padding:5px 0}.company-fact-strip strong{color:#76514a}
+@media(max-width:800px){.company-watchlist-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.company-watchlist-grid{grid-template-columns:1fr}.company-watchlist-item{padding:17px}.company-fact-strip{display:block}.company-fact-strip span{display:block}}
