@@ -63,7 +63,7 @@ def load_pia_tracker(path: Path) -> dict:
     if not isinstance(data, dict):
         raise ValueError("PIA tracker must be a mapping")
     updated = str(data.get("updated") or "").strip()
-    if not re.fullmatch(r"20\\d{2}-\\d{2}-\\d{2}", updated):
+    if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}", updated):
         raise ValueError("PIA tracker needs an YYYY-MM-DD last-checked date")
     providers = data.get("providers") or []
     if not isinstance(providers, list):
