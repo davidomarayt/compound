@@ -27,6 +27,18 @@ jobs:
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: python scripts/news_images.py
+      - name: Verify approved TV licence stock photograph
+        run: |
+          test -s compound/site/static/images/evergreen/ireland-tv-licence-decline-2026.jpg
+          python - <<'PY'
+          from PIL import Image
+          p = 'compound/site/static/images/evergreen/ireland-tv-licence-decline-2026.jpg'
+          with Image.open(p) as img:
+              img.verify()
+          with Image.open(p) as img:
+              assert img.width >= 1000 and img.height >= 500, img.size
+          print('Approved TV licence image validated')
+          PY
       - run: compound build
         env:
           SITE_BASE_URL: https://compound.ie
@@ -150,6 +162,15 @@ jobs:
           grep -Fq 'Weight &amp; metabolism' /tmp/health.html || grep -Fq 'Weight & metabolism' /tmp/health.html
           grep -Fq '/weight-loss-calculator/' /tmp/health.html
           grep -Fq '/health/how-to-get-ozempic-ireland/' /tmp/health.html
+
+          fetch https://compound.ie/news/ireland-tv-licence-decline-2026/ /tmp/tv-licence-story.html
+          grep -Fq 'Ireland’s TV Licence Is Dying' /tmp/tv-licence-story.html
+          grep -Fq '715,401' /tmp/tv-licence-story.html
+          grep -Fq 'chart-svg' /tmp/tv-licence-story.html
+          grep -Fq '/static/images/evergreen/ireland-tv-licence-decline-2026.jpg' /tmp/tv-licence-story.html
+          grep -Fq 'cottonbro studio / Pexels' /tmp/tv-licence-story.html
+          fetch https://compound.ie/static/images/evergreen/ireland-tv-licence-decline-2026.jpg /tmp/tv-licence-stock.jpg
+          test -s /tmp/tv-licence-stock.jpg
 
           fetch https://compound.ie/wealth/ /tmp/wealth.html
           grep -Fq 'COMPOUND WEALTH' /tmp/wealth.html
