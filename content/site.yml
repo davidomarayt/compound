@@ -9,6 +9,7 @@ adsense:
   slots:
     article_top: ""      # under the standfirst, above the article body
     article_bottom: ""   # after the article body
+    earnings_mid: ""    # optional AdSense display-unit ID: after earnings charts; blank = no fixed ad
     feed: ""             # on the pillar listing pages, after the list
 
 # Google Analytics 4. The measurement ID is public by design. Analytics storage defaults to
