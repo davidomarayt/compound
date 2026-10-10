@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block head_title %}Personal Investment Account (PIA) Ireland: 2027 Guide & Providers | Compound{% endblock %}
+{% block meta %}
+<meta name="description" content="Ireland's Personal Investment Account (PIA) hub: 2027 rules, €12,000 annual limit, 1% tax over €50,000, provider comparisons and a free PIA calculator.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Personal Investment Account Ireland — Compound PIA Centre">
+<meta property="og:description" content="Understand Ireland's new investment account, compare provider announcements and model the tax and fees.">
+<meta property="og:url" content="{{ site_url }}/pia/">
+{% endblock %}
+{% block head %}
+<link rel="canonical" href="{{ site_url }}/pia/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Compound","item":"{{ site_url }}/"},{"@type":"ListItem","position":2,"name":"Wealth","item":"{{ site_url }}/wealth/"},{"@type":"ListItem","position":3,"name":"Personal Investment Accounts","item":"{{ site_url }}/pia/"}]}</script>
+{% endblock %}
+{% block post_styles %}<link rel="stylesheet" href="/static/pia-centre.css?v=1">{% endblock %}
+{% block content %}
+<div class="pia-centre">
+  <nav class="pia-crumbs" aria-label="Breadcrumb"><a href="/">Compound</a><span>/</span><a href="/wealth/">Wealth</a><span>/</span><span aria-current="page">PIA Centre</span></nav>
+  <header class="pia-hero">
+    <div>
+      <p class="eyebrow">COMPOUND WEALTH · PIA CENTRE</p>
+      <h1>Personal Investment Accounts in Ireland.</h1>
+      <p class="pia-lede">Understand Ireland's planned new investment account, compare the providers preparing for launch, and work out how the proposed tax system could affect your investments.</p>
+      <div class="pia-actions"><a class="pia-button pia-button-primary" href="/pia/providers/">Compare PIA providers <span aria-hidden="true">→</span></a><a class="pia-button" href="/pia-calculator/">Open PIA calculator <span aria-hidden="true">→</span></a></div>
+      <p class="pia-note"><strong>Important:</strong> The scheme is not law yet. The announced 1 July 2027 opening is subject to legislation and provider readiness. Investments can lose value.</p>
+    </div>
+    <div class="pia-hero-aside" aria-label="Budget 2027 announced PIA features">
+      <p class="pia-panel-label">THE ANNOUNCED FRAMEWORK</p>
+      <dl class="pia-stats">
+        <div><dt>Planned opening</dt><dd>1 July 2027</dd></div>
+        <div><dt>Annual contributions</dt><dd>Up to €12,000</dd></div>
+        <div><dt>Annual PIA tax</dt><dd>1% above €50,000</dd></div>
+      </dl>
+      <p>These are announced scheme features, not currently available provider products. <a href="/wealth/personal-investment-account-ireland/">Read the sources and outstanding questions →</a></p>
+    </div>
+  </header>
+  <section class="pia-section" aria-labelledby="pia-start-title">
+    <div class="pia-heading"><p class="eyebrow">START HERE</p><h2 id="pia-start-title">Explore the account before choosing a provider.</h2></div>
+    <div class="pia-link-grid">
+      <a href="/wealth/personal-investment-account-ireland/" class="pia-link-card"><span class="pia-card-kicker">01 · THE GUIDE</span><h3>What is a PIA?</h3><p>Understand tax, eligibility, investments, withdrawals and what is still undecided.</p><strong>Read the complete guide →</strong></a>
+      <a href="/pia/providers/" class="pia-link-card"><span class="pia-card-kicker">02 · PROVIDERS</span><h3>Compare PIA providers</h3><p>See which companies have publicly discussed PIAs, with source links and unconfirmed fees clearly marked.</p><strong>See the tracker →</strong></a>
+      <a href="/pia-calculator/" class="pia-link-card"><span class="pia-card-kicker">03 · CALCULATOR</span><h3>Model a PIA</h3><p>Estimate long-term balances and the effect of the proposed 1% charge and assumed provider fees.</p><strong>Open the calculator →</strong></a>
+    </div>
+  </section>
+  <section class="pia-section pia-provider-preview" aria-labelledby="pia-providers-title">
+    <div class="pia-section-top"><div class="pia-heading"><p class="eyebrow">PROVIDER WATCH</p><h2 id="pia-providers-title">Who is preparing for the PIA launch?</h2></div><a href="/pia/providers/">Full comparison →</a></div>
+    <p>These are public statements, <strong>not endorsements, product rankings or confirmed account-opening offers</strong>. No PIA referral arrangements are active through this directory.</p>
+    <div class="pia-provider-list">
+    {% for provider in providers %}
+      <div class="pia-provider-row"><div><h3>{{ provider.name }}</h3><p>{{ provider.statement }}</p></div><div class="pia-provider-meta"><span class="pia-status-tag">{{ provider.status }}</span><span>Fees: {{ provider.annual_fee }}</span><a href="{{ provider.source_url }}" rel="noopener">{{ provider.source_label }} ↗</a></div></div>
+    {% else %}
+      <p>Provider terms have not yet been added to the tracker.</p>
+    {% endfor %}
+    </div>
+    <p class="pia-small">Sources checked: {{ pia_updated }}. Always confirm up-to-date information directly with each provider.</p>
+  </section>
+  <section class="pia-section" aria-labelledby="pia-learn-title">
+    <div class="pia-heading"><p class="eyebrow">KEEP LEARNING</p><h2 id="pia-learn-title">PIAs are one part of your investing plan.</h2></div>
+    <div class="pia-resource-list">
+      <a href="/wealth/how-to-start-investing-in-ireland/">Investing in Ireland 101 <span>→</span></a>
+      <a href="/wealth/investment-tax-ireland/">Investment tax in Ireland <span>→</span></a>
+      <a href="/wealth/pension-vs-investing-ireland/">Pension vs investing in Ireland <span>→</span></a>
+      <a href="/investment-fee-calculator/">Investment fee calculator <span>→</span></a>
+      <a href="/wealth/choose-investment-broker-ireland/">How to choose an investment broker <span>→</span></a>
+    </div>
+  </section>
+  <section class="pia-section pia-transparency" aria-labelledby="pia-policy-title">
+    <h2 id="pia-policy-title">Independent comparisons, with the sources shown.</h2>
+    <p>Compound is an independent publisher, not a PIA provider or investment adviser. The provider tracker is alphabetical and based on public primary-source statements. Until official terms are published, we do not guess fees, investment availability or rankings. Any future commercial relationships or referral links will be disclosed and will not determine our editorial assessments.</p>
+    <p><strong>Primary references:</strong> <a href="https://www.rte.ie/news/business/2026/1006/1594235-investment-accounts-budget-2027/">Budget 2027 announcement (RTÉ)</a>, <a href="https://assets.gov.ie/static/documents/a5d640c2/Roadmap_for_the_Taxation_of_Retail_Investment.pdf">Department of Finance roadmap</a>, and the provider sources on the <a href="/pia/providers/">comparison page</a>.</p>
+  </section>
+</div>
+{% endblock %}
