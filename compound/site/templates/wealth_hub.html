@@ -1,12 +1,73 @@
-<div class="wealth-hub">
-  <section class="wealth-hub-hero">
-    <div class="wealth-hub-hero-copy">
-      <p class="eyebrow">COMPOUND WEALTH</p>
-      <h1>Make money<br>make sense.</h1>
-      <p>Free calculators and practical Irish guides for the financial decisions that shape a life — from your first payslip and mortgage to investing, pensions and family wealth.</p>
-      <div class="wealth-hub-trust" aria-label="Compound Wealth principles"><span>Ireland specific</span><span>Free tools</span><span>Sources shown</span><span>No product recommendations</span></div>
+<div class="wealth-hub wealth-hub-v2">
+  <header class="wealth-v2-hero">
+    <div class="wealth-v2-hero-copy">
+      <p class="eyebrow">COMPOUND / WEALTH</p>
+      <h1>Understand money.<br><em>Build wealth.</em></h1>
+      <p class="wealth-v2-lede">Independent Irish financial guides, free calculators, stock research and company earnings — everything you need to make more informed decisions.</p>
+      <div class="wealth-v2-hero-actions">
+        <a class="wealth-v2-button" href="#wealth-tool-finder">Find a calculator <span aria-hidden="true">↗</span></a>
+        <a class="wealth-v2-text-link" href="#wealth-start-heading">Explore personal finance ↓</a>
+      </div>
+      <div class="wealth-v2-credentials" aria-label="Our approach"><span>Irish context</span><span>Sources and assumptions</span><span>Free to explore</span></div>
     </div>
-    <div class="wealth-hub-hero-media"><img src="/static/images/wealth.jpg" alt="A calm editorial scene representing financial planning and long-term wealth" width="800" height="520"></div>
+    <div class="wealth-v2-hero-feature">
+      <p class="eyebrow">THE RESEARCH DESK</p>
+      <span class="wealth-v2-panel-rule" aria-hidden="true"></span>
+      <div class="wealth-v2-feature-copy">
+        <span class="wealth-v2-feature-label">BEYOND THE HEADLINE</span>
+        <h2>More than a share price.</h2>
+        <p>Find the businesses, filings and investment decisions behind the numbers.</p>
+      </div>
+      <div class="wealth-v2-feature-links">
+        <a href="/stocks/"><span>01</span><strong>Stock directory</strong><span aria-hidden="true">↗</span></a>
+        <a href="/wealth/earnings/"><span>02</span><strong>Company earnings</strong><span aria-hidden="true">↗</span></a>
+        <a href="/wealth/how-to-start-investing-in-ireland/"><span>03</span><strong>Investing in Ireland 101</strong><span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="wealth-v2-platform" aria-labelledby="wealth-platform-heading">
+    <div class="wealth-v2-section-head"><div><p class="eyebrow">THE INVESTING DESK</p><h2 id="wealth-platform-heading">Explore investing in depth.</h2></div><p>Dedicated research areas, connected to our guides and calculators.</p></div>
+    <div class="wealth-v2-platform-grid">
+      <a class="wealth-v2-platform-card wealth-v2-pia" href="/pia/"><span class="wealth-v2-tile-kicker">01 / IRISH INVESTING</span><span class="wealth-v2-tile-icon" aria-hidden="true">€</span><h3>Personal Investment Accounts</h3><p>Understand PIA rules, compare providers and explore the tax and fee implications.</p><strong>Visit PIA Centre <span aria-hidden="true">↗</span></strong></a>
+      <a class="wealth-v2-platform-card wealth-v2-stocks" href="/stocks/"><span class="wealth-v2-tile-kicker">02 / COMPANY RESEARCH</span><span class="wealth-v2-tile-icon" aria-hidden="true">↗</span><h3>Stocks &amp; company profiles</h3><p>Find public companies in one searchable register, with stock-specific research and coverage.</p><strong>Browse stocks <span aria-hidden="true">↗</span></strong></a>
+      <a class="wealth-v2-platform-card wealth-v2-earnings" href="/wealth/earnings/"><span class="wealth-v2-tile-kicker">03 / FINANCIAL RESULTS</span><span class="wealth-v2-tile-icon" aria-hidden="true">≡</span><h3>Company earnings</h3><p>Explore quarterly and annual results, financial tables and source-linked analysis.</p><strong>Explore earnings <span aria-hidden="true">↗</span></strong></a>
+    </div>
+  </section>
+
+  <section class="wealth-v2-finder" id="wealth-tool-finder" data-wealth-tool-finder aria-labelledby="wealth-finder-heading">
+    <div class="wealth-v2-finder-intro"><div><p class="eyebrow">FREE FINANCIAL TOOLS</p><h2 id="wealth-finder-heading">Find the right calculator.</h2><p>Search the calculators below by goal, such as mortgages, investing, tax or retirement.</p></div><a href="/tools/">See all Compound tools ↗</a></div>
+    <label class="wealth-v2-search-label" for="wealth-tool-search">Search financial calculators</label>
+    <div class="wealth-v2-search-wrap"><span aria-hidden="true">⌕</span><input id="wealth-tool-search" type="search" autocomplete="off" placeholder="Try PIA, mortgage, take-home pay, pension…" data-wealth-search></div>
+    <p class="wealth-v2-search-status" data-wealth-search-status aria-live="polite">Popular calculators</p>
+    <div class="wealth-v2-finder-results" data-wealth-results>
+      <a href="/pia-calculator/">PIA Calculator <span aria-hidden="true">↗</span></a>
+      <a href="/compound-interest-calculator/">Compound Interest Calculator <span aria-hidden="true">↗</span></a>
+      <a href="/mortgage-calculator/">Mortgage Calculator <span aria-hidden="true">↗</span></a>
+      <a href="/take-home-pay-calculator/">Take-Home Pay Calculator <span aria-hidden="true">↗</span></a>
+      <a href="/budget-2027-calculator/">Budget 2027 Calculator <span aria-hidden="true">↗</span></a>
+      <a href="/net-worth-calculator/">Net Worth Calculator <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  {% set editorial = namespace(items=[]) %}
+  {% for a in articles %}
+    {% if 'automated-earnings' not in a.tags and editorial.items|length < 7 %}
+      {% set editorial.items = editorial.items + [a] %}
+    {% endif %}
+  {% endfor %}
+  <section class="wealth-v2-editorial" aria-labelledby="wealth-editorial-heading">
+    <div class="wealth-v2-section-head"><div><p class="eyebrow">EDITORIAL RESEARCH</p><h2 id="wealth-editorial-heading">Worth your attention.</h2></div><p>Guides and original reporting, separate from our automated company-results feed.</p></div>
+    <div class="wealth-v2-editorial-grid">
+      {% if editorial.items %}
+        <div class="wealth-v2-editorial-feature">{% with a=editorial.items[0] %}{% include "_card.html" %}{% endwith %}</div>
+      {% endif %}
+      <div class="wealth-v2-editorial-reads">
+        <a href="/wealth/personal-investment-account-ireland/"><span>PERSONAL INVESTMENT ACCOUNTS</span><strong>Everything you need to know about Ireland’s PIA</strong><span class="wealth-v2-reads-arrow" aria-hidden="true">↗</span></a>
+        <a href="/wealth/how-to-start-investing-in-ireland/"><span>START HERE</span><strong>Investing in Ireland 101: the complete guide</strong><span class="wealth-v2-reads-arrow" aria-hidden="true">↗</span></a>
+        <a href="/wealth/buying-a-home-in-ireland/"><span>HOME BUYING</span><strong>Buying a Home in Ireland 101</strong><span class="wealth-v2-reads-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
   </section>
 
   <section class="wealth-hub-intro" aria-labelledby="wealth-start-heading">
@@ -54,9 +115,7 @@
       <p>Start with compounding and fees, then understand diversification, investment products and the Irish tax rules that can materially change long-term returns.</p>
     </div>
     <div class="wealth-category-tools">
-      <a class="wealth-resource" href="/pia/"><span>PIA Centre · New for 2027</span><h3>Personal Investment Accounts Ireland</h3><p>Explore the proposed Irish Investment Account rules, compare planned providers and model your tax and fees.</p><strong>Explore PIA Centre →</strong></a>
-      <a class="wealth-resource" href="/stocks/"><span>Stocks · Company research</span><h3>Stocks &amp; Company Profiles</h3><p>Explore our stock directory, earnings reports, charts and company research.</p><strong>Explore stocks →</strong></a>
-      <a class="wealth-resource" href="/wealth/earnings/"><span>Company results · New</span><h3>Compound Earnings</h3><p>SEC-verified financial statements, revenue and EPS comparisons, and original earnings charts.</p><strong>Explore earnings →</strong></a>
+      <a class="wealth-resource" href="/pia-calculator/"><span>PIA planning tool</span><h3>PIA Calculator</h3><p>Explore contributions, growth, charges and illustrative tax outcomes using the calculator's assumptions.</p><strong>Calculate your PIA →</strong></a>
       <a class="wealth-resource wealth-resource-primary" href="/compound-interest-calculator/"><span>Flagship calculator</span><h3>Compound Interest Calculator</h3><p>Model contributions, returns, fees and inflation over long periods.</p><strong>Model compounding →</strong></a>
       <a class="wealth-resource" href="/investment-fee-calculator/"><span>Calculator</span><h3>Investment Fee Impact</h3><p>See how apparently small annual fees compound into a long-term difference.</p><strong>Compare fees →</strong></a>
       <a class="wealth-resource" href="/regular-savings-calculator/"><span>Calculator</span><h3>Regular Savings</h3><p>Project a recurring monthly contribution under different return assumptions.</p><strong>Project savings →</strong></a>
@@ -104,6 +163,7 @@
     </div>
     <div class="wealth-category-tools">
       <a class="wealth-resource wealth-resource-primary" href="/take-home-pay-calculator/"><span>Calculator</span><h3>Take-Home Pay</h3><p>Estimate annual and monthly net pay after Irish payroll deductions.</p><strong>Calculate net pay →</strong></a>
+      <a class="wealth-resource" href="/budget-2027-calculator/"><span>Budget 2027 · Calculator</span><h3>Budget 2027 Calculator</h3><p>Compare how announced Irish Budget measures affect an illustrative household scenario.</p><strong>Explore Budget 2027 →</strong></a>
       <a class="wealth-resource" href="/income-tax-calculator/"><span>Calculator</span><h3>Income Tax</h3><p>Model standard-rate bands, tax credits and Income Tax.</p><strong>Calculate Income Tax →</strong></a>
       <a class="wealth-resource" href="/usc-calculator/"><span>Calculator</span><h3>USC</h3><p>Estimate Universal Social Charge across the standard bands.</p><strong>Calculate USC →</strong></a>
       <a class="wealth-resource" href="/prsi-calculator/"><span>Calculator</span><h3>PRSI</h3><p>Estimate employee PRSI under the calculator's current assumptions.</p><strong>Calculate PRSI →</strong></a>
@@ -160,15 +220,16 @@
   </section>
 
   <section class="wealth-latest" aria-labelledby="wealth-latest-heading">
-    <div class="section-heading"><h2 id="wealth-latest-heading">Latest from Wealth.</h2><span>{{ articles|length }} stories and guides</span></div>
-    <div class="story-grid">{% for a in articles[:6] %}{% include "_card.html" %}{% endfor %}</div>
+    <div class="section-heading"><div><p class="eyebrow">LATEST GUIDES &amp; ARTICLES</p><h2 id="wealth-latest-heading">More from Wealth.</h2></div><a href="/wealth/earnings/" class="wealth-v2-earnings-link">Looking for earnings reports? <span aria-hidden="true">↗</span></a></div>
+    {% if editorial.items|length > 1 %}<div class="story-grid">{% for a in editorial.items[1:7] %}{% include "_card.html" %}{% endfor %}</div>{% else %}<p class="wealth-v2-empty">Discover our full library through the categories above, or explore the <a href="/wealth/earnings/">company earnings feed</a>.</p>{% endif %}
   </section>
+
+  <div class="wealth-v2-ad">{% with slot=adsense.slots.feed, name="feed" %}{% include "_ad.html" %}{% endwith %}</div>
 
   <section class="wealth-evidence" aria-labelledby="wealth-method-heading">
     <div><p class="eyebrow">HOW WE BUILD WEALTH CONTENT</p><h2 id="wealth-method-heading">Useful numbers. Visible assumptions.</h2></div>
     <div class="wealth-evidence-copy"><p>Compound calculators are planning tools, not lender quotes, tax returns, forecasts or personalised investment advice. The assumptions are shown so you can stress-test them rather than treating one output as a promise.</p><p>Irish primary sources are prioritised where available, including Revenue, the Central Bank, CCPC, the Pensions Authority and government schemes.</p><div class="wealth-evidence-points"><span>Irish rules prioritised</span><span>Assumptions explained</span><span>Educational, not advice</span></div><p><a href="/editorial-policy/">Read the Compound editorial policy →</a></p></div>
   </section>
 
-  {% with slot=adsense.slots.feed, name="feed" %}{% include "_ad.html" %}{% endwith %}
   {% include "_signup.html" %}
 </div>
