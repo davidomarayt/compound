@@ -150,7 +150,7 @@ Fifth paragraph discusses financial choices.
     assert 'class="article-tool-banner' in normal
     article = (settings.public_dir / "wealth" / "earnings" /
                "len-test-earnings" / "index.html").read_text(encoding="utf-8")
-    assert 'href="/wealth/earnings/company/len/"' in article
+    assert 'href="/stocks/len/"' in article
     assert "More Lennar earnings and filings" in article
     assert 'href="/pia/"' in article
     assert 'href="/pia-calculator/"' in article

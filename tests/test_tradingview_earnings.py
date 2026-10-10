@@ -50,18 +50,18 @@ SEC filing results described here.
 """, encoding="utf-8")
     build_site(settings)
     root = settings.public_dir
-    profile = (root / "wealth/earnings/company/aapl/index.html").read_text(encoding="utf-8")
+    profile = (root / "stocks/aapl/index.html").read_text(encoding="utf-8")
     report = (root / "wealth/earnings/aapl-test-earnings/index.html").read_text(encoding="utf-8")
     assert 'data-tv-symbol="AAPL"' in profile
     assert 'data-tv-variant="advanced"' in profile
-    assert "Quarterly and annual filings" in profile
+    assert "Quarterly and annual earnings" in profile
     assert 'data-tv-symbol="AAPL"' in report
     assert 'data-tv-variant="compact"' in report
     assert 'tradingview-earnings.js?v=2' in report and 'tradingview-earnings.js?v=2' in profile
     assert report.index('compound-tv-panel') < report.index('SEC filing results described here.')
     assert '<link rel="canonical" href="https://example.test/wealth/earnings/aapl-test-earnings/">' in report
     assert 'by TradingView' in profile and 'by TradingView' in report
-    assert 'data-tv-symbol="LEN"' in (root / "wealth/earnings/company/len/index.html").read_text(encoding="utf-8")
+    assert 'data-tv-symbol="LEN"' in (root / "stocks/len/index.html").read_text(encoding="utf-8")
     js = (root / "static/tradingview-earnings.js").read_text(encoding="utf-8")
     assert "IntersectionObserver" in js
     assert "embed-widget-advanced-chart.js" in js
@@ -71,7 +71,7 @@ SEC filing results described here.
     assert "Close enlarged stock chart" in js
     assert "Escape" in js
     assert "refreshChartSize" in js
-    assert 'earnings.css?v=5' in profile and 'earnings.css?v=5' in report
+    assert 'earnings.css?v=6' in profile and 'earnings.css?v=5' in report
 
 
 def test_unverified_report_without_matching_registry_company_has_no_price_widget(settings):

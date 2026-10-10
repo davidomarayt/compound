@@ -5,7 +5,7 @@
 {% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=2">{% endblock %}
 {% block content %}<div class="earnings-hub">
 <nav class="earnings-crumb" aria-label="Breadcrumb"><a href="/">Compound</a> / <a href="/wealth/">Wealth</a> / Earnings</nav>
-<header class="earnings-hero"><p class="eyebrow">COMPOUND WEALTH / EARNINGS</p><h1>Company earnings. The numbers behind the headlines.</h1><p class="earnings-lede">Follow company quarterly and full-year results, with revenue, net income and earnings per share checked against US SEC filings. Clear comparisons. Financial tables. Links to the data.</p><div class="earnings-hero-links"><a href="/pia/">Personal Investment Accounts →</a><a href="/wealth/how-to-start-investing-in-ireland/">Investing in Ireland 101 →</a></div></header>
+<header class="earnings-hero"><p class="eyebrow">COMPOUND WEALTH / EARNINGS</p><h1>Company earnings. The numbers behind the headlines.</h1><p class="earnings-lede">Follow company quarterly and full-year results, with revenue, net income and earnings per share checked against US SEC filings. Clear comparisons. Financial tables. Links to the data.</p><div class="earnings-hero-links"><a href="/stocks/">Browse stock profiles →</a><a href="/pia/">Personal Investment Accounts →</a><a href="/wealth/how-to-start-investing-in-ireland/">Investing in Ireland 101 →</a></div></header>
 <section class="earnings-section" aria-labelledby="earnings-latest"><div class="earnings-heading"><p class="eyebrow">FINANCIAL RESULTS</p><h2 id="earnings-latest">Latest earnings reports</h2><span>{{ articles|length }} published report{{ '' if articles|length == 1 else 's' }}</span></div>
 {% if articles %}
 <div class="earnings-cards">
@@ -21,10 +21,10 @@
 <p class="earnings-directory-count" data-earnings-count aria-live="polite">Showing {{ registry.company_count }} active companies</p>
 <div class="earnings-directory-scroll" tabindex="0" role="region" aria-label="S&amp;P 500 listed companies">
 <table class="earnings-directory"><thead><tr><th scope="col">Company</th><th scope="col">Ticker(s)</th><th scope="col">Sector</th><th scope="col">Earnings</th></tr></thead><tbody>
-{% for company in companies %}<tr data-earnings-row data-name="{{ company.name|lower }}" data-symbols="{{ company.symbols|join(' ')|lower }}" data-sector="{{ company.sector }}"><th scope="row"><a href="/wealth/earnings/company/{{ company.symbol|lower }}/">{{ company.name }}</a></th><td>{{ company.symbols|join(', ') }}</td><td>{{ company.sector }}</td><td>{% if report_counts.get(company.cik|string, 0) %}{{ report_counts[company.cik|string] }} verified{% else %}Awaiting filing{% endif %}</td></tr>{% endfor %}
+{% for company in companies %}<tr data-earnings-row data-name="{{ company.name|lower }}" data-symbols="{{ company.symbols|join(' ')|lower }}" data-sector="{{ company.sector }}"><th scope="row"><a href="/stocks/{{ company.symbol|lower }}/">{{ company.name }}</a></th><td>{{ company.symbols|join(', ') }}</td><td>{{ company.sector }}</td><td>{% if report_counts.get(company.cik|string, 0) %}{{ report_counts[company.cik|string] }} verified{% else %}Awaiting filing{% endif %}</td></tr>{% endfor %}
 </tbody></table></div>
 <p class="earnings-directory-empty" data-earnings-empty hidden>No companies match the search.</p>
-<p class="earnings-directory-source">Membership reference: <a href="{{ registry.source }}" rel="noopener">public constituent table</a>. Company filing links point directly to the SEC. Some company profiles are excluded from search indexing until an earnings report is available.</p>
+<p class="earnings-directory-source">Membership reference: <a href="{{ registry.source }}" rel="noopener">public constituent table</a>. Company filing links point directly to the SEC. Company profiles are excluded from search indexing until a verified earnings report or relevant original coverage is published.</p>
 {% else %}
 <div class="earnings-empty"><h3>S&amp;P 500 company register is being populated</h3><p>The scheduled monitor will add the full validated company list. We will not present the original 15-company trial watchlist as complete S&amp;P 500 coverage.</p></div>
 {% endif %}
