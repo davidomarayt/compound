@@ -32,13 +32,13 @@ A sourced report.
     build_site(settings)
     p=settings.public_dir
     hub=(p/'wealth'/'earnings'/'index.html').read_text()
-    apple=(p/'wealth'/'earnings'/'company'/'aapl'/'index.html').read_text()
-    alphabet=(p/'wealth'/'earnings'/'company'/'googl'/'index.html').read_text()
+    apple=(p/'stocks'/'aapl'/'index.html').read_text()
+    alphabet=(p/'stocks'/'googl'/'index.html').read_text()
     sitemap=(p/'sitemap.xml').read_text()
     assert 'Example Apple' in hub and 'Example Alphabet' in hub
     assert '3 share classes' in hub and '2 active companies' in hub
-    assert '/wealth/earnings/company/aapl/' in hub
-    assert '/wealth/earnings/company/googl/' in hub
+    assert '/stocks/aapl/' in hub
+    assert '/stocks/googl/' in hub
     assert 'Example Apple results' in apple
     assert 'name="robots" content="noindex,follow"' not in apple
     assert 'name="robots" content="noindex,follow"' in alphabet
@@ -46,9 +46,24 @@ A sourced report.
     assert '0 published summaries' in alphabet
     assert 'summaryies' not in apple
     assert 'summaryies' not in alphabet
-    assert '<loc>https://example.test/wealth/earnings/company/aapl/</loc>' in sitemap
-    assert '<loc>https://example.test/wealth/earnings/company/googl/</loc>' not in sitemap
+    assert '<loc>https://example.test/stocks/aapl/</loc>' in sitemap
+    assert '<loc>https://example.test/stocks/googl/</loc>' not in sitemap
     assert '/static/earnings-directory.js?v=1' in hub
+    stocks=(p/'stocks'/'index.html').read_text()
+    assert '<link rel="canonical" href="https://example.test/stocks/">' in stocks
+    assert '/stocks/aapl/' in stocks and '/stocks/googl/' in stocks
+    assert '3 share classes' in stocks
+    assert '<loc>https://example.test/stocks/</loc>' in sitemap
+    legacy=(p/'wealth'/'earnings'/'company'/'aapl'/'index.html').read_text()
+    assert 'http-equiv="refresh"' in legacy
+    assert '<link rel="canonical" href="https://example.test/stocks/aapl/">' in legacy
+    assert 'name="robots" content="noindex,follow"' in legacy
+    assert '<loc>https://example.test/wealth/earnings/company/aapl/</loc>' not in sitemap
+    assert "https://example.test/stocks/aapl/" in apple
+    search=json.loads((p/'search.json').read_text())
+    assert any(x['url']=='/stocks/' for x in search)
+    assert any(x['url']=='/stocks/aapl/' for x in search)
+    assert not any(x['url']=='/stocks/googl/' for x in search)
 
 def test_all_earnings_profile_report_counts_are_grammatical():
     """Render the exact template expression for zero, one, and multiple reports."""
