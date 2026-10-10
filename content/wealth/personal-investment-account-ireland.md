@@ -47,6 +47,8 @@ That makes the PIA one of the biggest changes to ordinary investing in Ireland i
 
 But there is an important caveat at the outset: **the Personal Investment Account is not law yet**. Budget 2027 has announced the headline design, while the detailed legal framework is due through the Finance (No. 2) Bill 2026. Some operational rules can still change before accounts become available.
 
+**New from Compound:** Visit our [PIA Centre](/pia/) for the current rules and tools, or go straight to the [independent PIA provider comparison](/pia/providers/) to see verified provider statements and which fees remain unpublished.
+
 <div class="cs-intro pia-answer">
 <p class="cs-kicker">Quick answer</p>
 <p><strong>A Personal Investment Account (PIA) is Ireland's planned tax-efficient investment account for adults.</strong></p>
