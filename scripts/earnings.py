@@ -327,29 +327,69 @@ def build_article(ticker: str, company: str, cik: int, filing: dict, metrics: di
 
 
 def run(watchlist: Path, content_dir: Path, *, client: SECClient, now: date,
-        lookback: int, max_new: int, dry_run: bool) -> list[str]:
-    config = yaml.safe_load(watchlist.read_text(encoding="utf-8"))
-    tickers = [str(s).upper() for s in config["tickers"]]
-    if not tickers or len(tickers) != len(set(tickers)) or any(not re.fullmatch(r"[A-Z]{1,6}", t) for t in tickers):
-        raise ValueError("Watchlist must contain distinct stock symbols")
+        lookback: int, max_new: int, dry_run: bool,
+        registry_path: Path | None = None, shard_count: int = 1, shard_index: int = 0) -> list[str]:
+    if not 1 <= shard_count <= 24 or not 0 <= shard_index < shard_count:
+        raise ValueError("Invalid SEC scan shard")
     directory = content_dir / "wealth"
     if not dry_run:
         directory.mkdir(parents=True, exist_ok=True)
-    resolved = resolve_tickers(client.get_json(SEC_TICKERS), tickers)
-    missing = sorted(set(tickers) - set(resolved))
-    if missing:
-        raise RuntimeError("Watchlist symbols not found in SEC ticker list: " + ", ".join(missing))
+
+    registry_active = registry_path is not None and registry_path.is_file()
+    if registry_active:
+        # One SEC request per COMPANY, not per share class (GOOG/GOOGL etc).
+        from importlib.util import module_from_spec, spec_from_file_location
+        module_path = Path(__file__).with_name("sp500_registry.py")
+        spec = spec_from_file_location("compound_sp500_registry", module_path)
+        module = module_from_spec(spec)
+        spec.loader.exec_module(module)
+        registry = module.load_registry(registry_path)
+        if registry.get("company_count", 0) < 480:
+            raise ValueError("S&P 500 registry is unexpectedly incomplete")
+        members = [r for r in registry["members"] if r["active"]]
+        resolved = {r["symbol"]: (r["name"], r["cik"]) for r in members}
+        tickers = sorted(resolved)
+    else:
+        config = yaml.safe_load(watchlist.read_text(encoding="utf-8"))
+        tickers = [str(s).upper() for s in config["tickers"]]
+        if not tickers or len(tickers) != len(set(tickers)) or any(not re.fullmatch(r"[A-Z]{1,6}", t) for t in tickers):
+            raise ValueError("Watchlist must contain distinct stock symbols")
+        resolved = resolve_tickers(client.get_json(SEC_TICKERS), tickers)
+        missing = sorted(set(tickers) - set(resolved))
+        if missing:
+            raise RuntimeError("Watchlist symbols not found in SEC ticker list: " + ", ".join(missing))
+    # Every half-hour run examines one stable shard. Four sharded runs scan
+    # the complete index in two hours, while remaining SEC-fair and cheap.
+    total = len(tickers)
+    tickers = [ticker for i, ticker in enumerate(tickers) if i % shard_count == shard_index]
+    LOG.info("SEC scan %s/%s: %s of %s unique companies", shard_index + 1, shard_count, len(tickers), total)
     written = []
+    failed = []
     for ticker in tickers:
         company, cik = resolved[ticker]
-        filings = recent_filings(client.get_json(f"{SEC_DATA}/submissions/CIK{cik:010d}.json"), now, lookback)
+        try:
+            filings = recent_filings(client.get_json(f"{SEC_DATA}/submissions/CIK{cik:010d}.json"), now, lookback)
+        except RuntimeError as exc:
+            failed.append(ticker)
+            LOG.warning("SEC submission unavailable for %s: %s", ticker, exc)
+            continue
         for filing in filings:
             # Pull only if a new, recent complete SEC financial filing exists.
             # Annual 10-K is annual reporting, never mislabelled as Q4 earnings.
             if len(written) >= max_new:
+                LOG.info("Article cap reached (%d). Remaining filings held for next scheduled scan", max_new)
                 return written
             # Path identity is ticker + fiscal period (derived from XBRL), so fact fetch is needed.
-            facts = client.get_json(f"{SEC_DATA}/api/xbrl/companyfacts/CIK{cik:010d}.json")
+            accession = filing["accessionNumber"]
+            if any(accession in p.read_text(encoding="utf-8")
+                   for p in directory.glob(f"{ticker.lower()}-earnings-*.md")):
+                continue
+            try:
+                facts = client.get_json(f"{SEC_DATA}/api/xbrl/companyfacts/CIK{cik:010d}.json")
+            except RuntimeError as exc:
+                failed.append(ticker)
+                LOG.warning("SEC XBRL facts unavailable for %s: %s", ticker, exc)
+                continue
             metrics = extract_metrics(facts, filing)
             if metrics is None:
                 continue
@@ -366,6 +406,8 @@ def run(watchlist: Path, content_dir: Path, *, client: SECClient, now: date,
             if not dry_run:
                 target.write_text(content, encoding="utf-8", newline="\n")
             written.append(str(target))
+    if len(set(failed)) >= max(8, (len(tickers) + 4) // 5):
+        raise RuntimeError(f"SEC unavailable for {len(set(failed))} of {len(tickers)} scanned companies: halt publishing")
     return written
 
 
@@ -376,6 +418,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--lookback-days", type=int, default=5)
     parser.add_argument("--max-new", type=int, default=3)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--registry", type=Path, default=Path("content/earnings-sp500.json"))
+    parser.add_argument("--shard-count", type=int, default=1)
+    parser.add_argument("--shard-index", type=int, default=0)
     args = parser.parse_args(argv)
     if not 1 <= args.lookback_days <= 14 or not 1 <= args.max_new <= 10:
         parser.error("lookback-days must be 1–14 and max-new must be 1–10")
@@ -383,7 +428,8 @@ def main(argv: list[str] | None = None) -> int:
     client = SECClient(os.environ.get("SEC_USER_AGENT", ""))
     created = run(args.watchlist, args.content_dir, client=client,
                   now=datetime.now(timezone.utc).date(), lookback=args.lookback_days,
-                  max_new=args.max_new, dry_run=args.dry_run)
+                  max_new=args.max_new, dry_run=args.dry_run,
+                  registry_path=args.registry, shard_count=args.shard_count, shard_index=args.shard_index)
     for f in created:
         print(f)
     print(f"Earnings checked: {len(created)} new {'candidates' if args.dry_run else 'articles'}")
