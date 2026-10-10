@@ -7,6 +7,8 @@ CIK is the company identity; share classes are consolidated.
 from __future__ import annotations
 
 import argparse
+import csv
+import io
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 import json
@@ -15,6 +17,7 @@ import re
 from urllib.request import Request, urlopen
 
 SOURCE_URL = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+DATASET_URL = "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv"
 SECTORS = {
     "Information Technology", "Financials", "Health Care", "Consumer Discretionary",
     "Communication Services", "Industrials", "Consumer Staples", "Energy",
@@ -103,7 +106,35 @@ def parse_constituents(html: str, *, strict: bool = True) -> list[dict]:
     return securities
 
 
-def build_snapshot(securities: list[dict], previous: dict | None, checked: str) -> dict:
+def parse_dataset_csv(content: str, *, strict: bool = True) -> list[dict]:
+    """Daily public mirror of the Wikipedia constituent table, with CIKs."""
+    reader = csv.DictReader(io.StringIO(content))
+    if not {"Symbol", "Security", "GICS Sector", "CIK"}.issubset(reader.fieldnames or []):
+        raise ValueError("Unexpected public constituent CSV schema")
+    rows = []
+    seen = set()
+    for row in reader:
+        symbol = (row.get("Symbol") or "").upper().strip().replace(".", "-")
+        sector = (row.get("GICS Sector") or "").strip()
+        name = (row.get("Security") or "").strip()
+        raw_cik = (row.get("CIK") or "").strip()
+        if (not re.fullmatch(r"[A-Z0-9-]{1,12}", symbol)
+                or sector not in SECTORS or not name
+                or not re.fullmatch(r"\d{1,10}", raw_cik)
+                or symbol in seen):
+            raise ValueError(f"Invalid public constituent CSV row: {row}")
+        seen.add(symbol)
+        rows.append({"symbol": symbol, "sector": sector, "name": name, "cik": int(raw_cik)})
+    if strict:
+        if not 490 <= len(rows) <= 520 or len({x["cik"] for x in rows}) < 480:
+            raise ValueError(f"Unexpected public CSV constituent count: {len(rows)}")
+        if {x["sector"] for x in rows} != SECTORS:
+            raise ValueError("Missing GICS sectors in public CSV")
+    return rows
+
+
+def build_snapshot(securities: list[dict], previous: dict | None, checked: str,
+                   source: str = SOURCE_URL) -> dict:
     by_cik: dict[int, dict] = {}
     for row in securities:
         cik = row["cik"]
@@ -122,7 +153,7 @@ def build_snapshot(securities: list[dict], previous: dict | None, checked: str) 
     for cik, old in old_by_cik.items():
         if cik not in by_cik:
             by_cik[cik] = {**old, "active": False}
-    return {"source": SOURCE_URL, "source_type": "third-party public reference (not licensed S&P constituents)",
+    return {"source": source, "source_type": "third-party public reference (not licensed S&P constituents)",
             "checked": checked, "security_count": len(securities),
             "company_count": len({x["cik"] for x in securities}),
             "members": sorted(by_cik.values(), key=lambda x: x["symbol"])}
@@ -130,15 +161,27 @@ def build_snapshot(securities: list[dict], previous: dict | None, checked: str) 
 
 def refresh(path: Path, fetch=None, now: str | None = None) -> bool:
     checked = now or datetime.now(timezone.utc).date().isoformat()
+    source = SOURCE_URL
     if fetch is None:
         def fetch(url):
-            req = Request(url, headers={"User-Agent": "Compound.ie Financial Research (david@compound.ie)", "Accept": "text/html"})
+            req = Request(url, headers={"User-Agent": "Compound.ie Financial Research (david@compound.ie)",
+                                        "Accept": "text/csv,text/html"})
             with urlopen(req, timeout=40) as response:
                 return response.read().decode("utf-8")
-    content = fetch(SOURCE_URL)
-    securities = parse_constituents(content)
+        # Mirror is updated regularly and gives a stable machine-readable schema.
+        # If unavailable, attempt the original public HTML reference directly.
+        try:
+            securities = parse_dataset_csv(fetch(DATASET_URL))
+            source = "https://github.com/datasets/s-and-p-500-companies/blob/main/data/constituents.csv"
+        except (OSError, ValueError) as first_exc:
+            try:
+                securities = parse_constituents(fetch(SOURCE_URL))
+            except (OSError, ValueError) as fallback_exc:
+                raise RuntimeError(f"Both public membership sources failed: {first_exc}; {fallback_exc}") from fallback_exc
+    else:
+        securities = parse_constituents(fetch(SOURCE_URL))
     previous = json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
-    updated = build_snapshot(securities, previous, checked)
+    updated = build_snapshot(securities, previous, checked, source=source)
     serialized = json.dumps(updated, indent=2, ensure_ascii=False) + "\n"
     if path.exists() and path.read_text(encoding="utf-8") == serialized:
         return False
