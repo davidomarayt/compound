@@ -24,6 +24,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from compound.config import Settings
 from compound.site.pia import load_pia_tracker
+from compound.site.earnings_view import load_company_report
 
 PILLARS = ["health", "wealth", "happiness"]
 PILLAR_LABELS = {"wealth": "Wealth", "health": "Health", "happiness": "Life"}
@@ -1050,7 +1051,10 @@ def build_site(settings: Settings) -> dict:
     """Render the whole site. Returns a small stats dict. Preview pages are left untouched."""
     env = _env(settings)
     out = settings.public_dir
-    articles = load_articles(settings.content_dir)
+    all_articles = load_articles(settings.content_dir)
+    legacy_earnings_articles = [a for a in all_articles if "automated-earnings" in a.tags]
+    # Consolidated company profiles supersede individual quarterly article URLs.
+    articles = [a for a in all_articles if "automated-earnings" not in a.tags]
     pages = load_pages(settings.content_dir)
     tools = load_tools(settings.content_dir)
     tools_by_slug = tool_catalogue(settings.content_dir, tools)
@@ -1150,7 +1154,7 @@ def build_site(settings: Settings) -> dict:
 
     # Permanent earnings archive: source-linked automated filings are ordinary
     # Wealth articles with stable canonical URLs, not Google News submissions.
-    earnings_articles = [a for a in articles if "automated-earnings" in a.tags]
+    earnings_articles = legacy_earnings_articles
     registry_path = settings.content_dir / "earnings-sp500.json"
     if registry_path.is_file():
         earnings_registry = json.loads(registry_path.read_text(encoding="utf-8"))
@@ -1173,7 +1177,12 @@ def build_site(settings: Settings) -> dict:
         ]
         for c in registry_members
     }
-    report_counts = {cik: len(reports) for cik, reports in company_reports.items()}
+    company_dashboards = {
+        str(c["cik"]): load_company_report(settings.content_dir, c["symbol"], legacy_earnings_articles)
+        for c in registry_members
+    }
+    report_counts = {cik: int(company_dashboards[cik] is not None)
+                     for cik in company_reports}
     # Explicit per-ticker tags connect future analysis and news to the correct
     # company hub. No headline matching or guessed company affiliations.
     company_stories = {
@@ -1187,7 +1196,7 @@ def build_site(settings: Settings) -> dict:
     }
     def stock_coverage(company: dict) -> bool:
         cik = str(company["cik"])
-        return bool(company_reports[cik] or company_stories[cik])
+        return bool(company_dashboards[cik] or company_stories[cik])
 
     # Match ticker tags to the canonical stock hub, including
     # multiple share classes (GOOG / GOOGL share one permanent profile).
@@ -1235,6 +1244,10 @@ def build_site(settings: Settings) -> dict:
             key=lambda a: (a.date, a.slug), reverse=True)
         for c in extra_listed
     }
+    extra_dashboards = {
+        c["slug"]: load_company_report(settings.content_dir, c["ticker"], legacy_earnings_articles)
+        for c in extra_listed
+    }
     listed_stories = {c["slug"]: watchlist_stories(c) for c in extra_listed}
     private_stories = {c["slug"]: watchlist_stories(c, private=True) for c in private_companies}
     for c in extra_listed:
@@ -1243,10 +1256,29 @@ def build_site(settings: Settings) -> dict:
         earnings_profile_by_ticker.setdefault(c["ticker"].lower(), profile)
     for c in private_companies:
         earnings_profile_by_ticker["company-" + c["slug"]] = (f'/companies/{c["slug"]}/', c["name"], "")
+    # Preserve existing quarter URLs with noindex + canonical redirects.
+    for old in legacy_earnings_articles:
+        match = next((earnings_profile_by_ticker[tag] for tag in old.tags
+                      if tag in earnings_profile_by_ticker), None)
+        if match:
+            _write(out / old.url.strip("/") / "index.html",
+                   _redirect_html(match[0], settings.site_base_url))
+    archive_companies = [
+        {"name": c["name"], "symbol": c["symbol"],
+         "url": f'/stocks/{c["symbol"].lower()}/',
+         "report": company_dashboards[str(c["cik"])]}
+        for c in active_earnings_companies
+        if company_dashboards[str(c["cik"])]
+    ] + [
+        {"name": c["name"], "symbol": c["ticker"],
+         "url": f'/stocks/{c["slug"]}/', "report": extra_dashboards[c["slug"]]}
+        for c in extra_listed if extra_dashboards[c["slug"]]
+    ]
+    archive_companies.sort(key=lambda c: c["report"]["latest_end"], reverse=True)
     sector_names = sorted({c["sector"] for c in active_earnings_companies})
     _write(out / "wealth" / "earnings" / "index.html", env.get_template("earnings_hub.html").render(
         title="Company Earnings and Financial Results", pillar="wealth",
-        articles=earnings_articles, ads_allowed=True, registry=earnings_registry,
+        report_cards=archive_companies, ads_allowed=True, registry=earnings_registry,
         companies=active_earnings_companies, sectors=sector_names, report_counts=report_counts))
     # One directory of all public companies; do not visually segregate companies
     # based on which source register they came from.
@@ -1257,7 +1289,7 @@ def build_site(settings: Settings) -> dict:
             for company in active_earnings_companies
         ] + [
             {**company, "symbols": [company["ticker"]],
-             "report_count": len(extra_reports[company["slug"]])}
+             "report_count": int(extra_dashboards[company["slug"]] is not None)}
             for company in extra_listed
         ],
         key=lambda company: (company["name"].casefold(), company["slug"]),
@@ -1278,7 +1310,7 @@ def build_site(settings: Settings) -> dict:
             out / "stocks" / company_symbol / "index.html",
             env.get_template("earnings_company.html").render(
                 title=f'{company["name"]} ({company["symbol"]}) Stock',
-                pillar="wealth", company=company, reports=company_reports[cik],
+                pillar="wealth", company=company, report=company_dashboards[cik], reports=company_reports[cik],
                 news=[a for a in stories if is_news_article(a)],
                 research=[a for a in stories if not is_news_article(a)],
                 has_coverage=is_covered, ads_allowed=is_covered,
@@ -1304,9 +1336,9 @@ def build_site(settings: Settings) -> dict:
                    title=f'{c["name"]} ({c["ticker"]}) Stock Research', pillar="wealth",
                    company=c, news=[a for a in stories if is_news_article(a)],
                    research=[a for a in stories if not is_news_article(a)],
-                   reports=extra_reports[c["slug"]],
-                   has_coverage=bool(stories or extra_reports[c["slug"]]),
-                   ads_allowed=bool(stories or extra_reports[c["slug"]]),
+                   report=extra_dashboards[c["slug"]], reports=extra_reports[c["slug"]],
+                   has_coverage=bool(stories or extra_dashboards[c["slug"]]),
+                   ads_allowed=bool(stories or extra_dashboards[c["slug"]]),
                    tradingview_panel=render_tradingview_panel(c["tv_symbol"], c["name"], "advanced")))
     _write(out / "companies" / "index.html", env.get_template("companies_hub.html").render(
         title="Private Company Research Directory", pillar="wealth",
@@ -1687,8 +1719,11 @@ def build_site(settings: Settings) -> dict:
     sitemap_entries.extend(
         (
             settings.site_base_url + f'/stocks/{company["symbol"].lower()}/',
-            max((a.reviewed or a.date) for a in
-                company_reports[str(company["cik"])] + company_stories[str(company["cik"])]).isoformat(),
+            max([a.reviewed or a.date for a in company_stories[str(company["cik"])]] +
+                ([date.fromisoformat(company_dashboards[str(company["cik"])]["latest_filed"])]
+                 if company_dashboards[str(company["cik"])] and company_dashboards[str(company["cik"])]["latest_filed"] else []) +
+                [a.reviewed or a.date for a in company_reports[str(company["cik"])]]
+                ).isoformat(),
         )
         for company in registry_members
         if stock_coverage(company)
@@ -1697,8 +1732,10 @@ def build_site(settings: Settings) -> dict:
 
     sitemap_entries.extend(
         (settings.site_base_url + f'/stocks/{c["slug"]}/',
-         max((a.reviewed or a.date) for a in listed_stories[c["slug"]]).isoformat())
-        for c in extra_listed if listed_stories[c["slug"]]
+         max([a.reviewed or a.date for a in listed_stories[c["slug"]]] +
+             ([date.fromisoformat(extra_dashboards[c["slug"]]["latest_filed"])]
+              if extra_dashboards[c["slug"]] and extra_dashboards[c["slug"]]["latest_filed"] else [])).isoformat())
+        for c in extra_listed if listed_stories[c["slug"]] or extra_dashboards[c["slug"]]
     )
     sitemap_entries.extend(
         (settings.site_base_url + f'/companies/{c["slug"]}/',
