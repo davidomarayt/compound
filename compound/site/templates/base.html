@@ -41,6 +41,7 @@ if(choice==='granted')window.compoundStartAnalytics();})();
     <a href="/tools/" class="nav-wealth" {% if tools_page is defined and tools_page %}aria-current="page"{% endif %}>Tools</a>
     <a href="/health/" class="nav-health" {% if (pillar is defined and pillar == 'health') or (article is defined and article.pillar == 'health' and 'news' not in article.tags) %}aria-current="page"{% endif %}>Health</a>
     <a href="/wealth/" class="nav-wealth" {% if (pillar is defined and pillar == 'wealth') or (article is defined and article.pillar == 'wealth' and 'news' not in article.tags) %}aria-current="page"{% endif %}>Wealth</a>
+    <a href="/pia/" class="nav-wealth" {% if pia_page is defined and pia_page %}aria-current="page"{% endif %}>PIA</a>
     <a href="/life/" class="nav-life" {% if (page is defined and page.slug == 'life') or (article is defined and article.pillar == 'happiness' and 'news' not in article.tags) %}aria-current="page"{% endif %}>Life</a>
     <a href="/news/" class="nav-news" {% if (news is defined and news) or (article is defined and 'news' in article.tags) %}aria-current="page"{% endif %}>News</a>
   </nav>
