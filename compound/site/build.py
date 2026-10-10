@@ -1140,6 +1140,13 @@ def build_site(settings: Settings) -> dict:
         for c in registry_members
     }
     report_counts = {cik: len(reports) for cik, reports in company_reports.items()}
+    # Match earnings ticker tags to the canonical company profile, including
+    # multiple share classes (GOOG / GOOGL share one permanent profile).
+    earnings_profile_by_ticker = {
+        symbol.lower(): (f'/wealth/earnings/company/{company["symbol"].lower()}/', company["name"])
+        for company in registry_members
+        for symbol in company["symbols"]
+    }
     sector_names = sorted({c["sector"] for c in active_earnings_companies})
     _write(out / "wealth" / "earnings" / "index.html", env.get_template("earnings_hub.html").render(
         title="Company Earnings and Financial Results", pillar="wealth",
@@ -1185,8 +1192,20 @@ def build_site(settings: Settings) -> dict:
 
     tag_map: dict[str, list[Article]] = {}
     for a in articles:
-        linked_tools = [tools_by_slug[s] for s in a.related_tools if s in tools_by_slug]
+        is_automated_earnings = "automated-earnings" in a.tags
+        # A broad investment-fee calculator does not belong in the middle of
+        # a company's earnings figures. Enforce this even for older articles
+        # that still nominate related_tools in YAML front matter.
+        linked_tools = ([] if is_automated_earnings else
+                        [tools_by_slug[s] for s in a.related_tools if s in tools_by_slug])
         context = article_context(env, settings, a, False)
+        if is_automated_earnings:
+            profile = next(
+                (earnings_profile_by_ticker[tag] for tag in a.tags
+                 if tag in earnings_profile_by_ticker), None
+            )
+            context["earnings_company_url"] = profile[0] if profile else ""
+            context["earnings_company_name"] = profile[1] if profile else ""
         if linked_tools:
             context["article_body"] = insert_article_tool_cta(
                 context["article_body"], linked_tools[0], env, a.pillar
