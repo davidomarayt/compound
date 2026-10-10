@@ -23,6 +23,7 @@ from PIL import Image, ImageOps
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from compound.config import Settings
+from compound.site.pia import load_pia_tracker
 
 PILLARS = ["health", "wealth", "happiness"]
 PILLAR_LABELS = {"wealth": "Wealth", "health": "Health", "happiness": "Life"}
@@ -1124,16 +1125,17 @@ def build_site(settings: Settings) -> dict:
 
     # PIA Centre: retain the existing pillar article and tool URLs as canonicals.
     # Static provider facts live in a dated primary-source tracker, not code.
-    pia_tracker_path = settings.content_dir / "pia-providers.yml"
-    pia_tracker = yaml.safe_load(pia_tracker_path.read_text(encoding="utf-8")) or {} if pia_tracker_path.is_file() else {}
-    pia_providers = pia_tracker.get("providers") or []
-    pia_updated = str(pia_tracker.get("updated") or "2026-10-10")
+    pia_tracker = load_pia_tracker(settings.content_dir / "pia-providers.yml")
+    pia_providers = pia_tracker["providers"]
+    pia_updated = pia_tracker["updated"]
     _write(out / "pia" / "index.html", env.get_template("pia_centre.html").render(
         title="Personal Investment Account Ireland", pillar="wealth", pia_page=True,
         providers=pia_providers, pia_updated=pia_updated))
     _write(out / "pia" / "providers" / "index.html", env.get_template("pia_providers.html").render(
         title="PIA Providers Ireland", pillar="wealth", pia_page=True,
-        providers=pia_providers, pia_updated=pia_updated))
+        providers=pia_providers, pia_updated=pia_updated,
+        pia_sponsorships=pia_tracker["sponsorships"],
+        complete_fee_count=pia_tracker["complete_fee_count"]))
 
     tag_map: dict[str, list[Article]] = {}
     for a in articles:
