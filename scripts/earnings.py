@@ -410,7 +410,11 @@ def run(watchlist: Path, content_dir: Path, *, client: SECClient, now: date,
         domestic = [row for row in extras if row.get("slug") == "spcx"
                     and row.get("exchange", "").lower().startswith("nasdaq")]
         if domestic:
-            mapping = resolve_tickers(client.get_json(SEC_TICKERS), [row["ticker"] for row in domestic])
+            try:
+                mapping = resolve_tickers(client.get_json(SEC_TICKERS), [row["ticker"] for row in domestic])
+            except RuntimeError as exc:
+                LOG.warning("Extra SEC identity lookup unavailable; retaining core S&P scan: %s", exc)
+                mapping = {}
             for row in domestic:
                 issuer = mapping.get(row["ticker"])
                 if not issuer or not re.search(r"space\s*(?:exploration|x)", issuer[0], re.I):
