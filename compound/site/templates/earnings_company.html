@@ -2,7 +2,7 @@
 {% block head_title %}{{ company.name }} Stock ({{ company.symbol }}) — Chart, Earnings &amp; News | Compound{% endblock %}
 {% block meta %}<meta name="description" content="{{ company.name }} ({{ company.symbol }}): price chart, SEC financial results, earnings history and related company news and research on Compound."><meta property="og:title" content="{{ company.name }} ({{ company.symbol }}) Stock | Compound"><meta property="og:url" content="{{ site_url }}/stocks/{{ company.symbol|lower }}/">{% endblock %}
 {% block head %}<link rel="canonical" href="{{ site_url }}/stocks/{{ company.symbol|lower }}/">{% if not has_coverage %}<meta name="robots" content="noindex,follow">{% endif %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Compound","item":"{{ site_url }}/"},{"@type":"ListItem","position":2,"name":"Stocks","item":"{{ site_url }}/stocks/"},{"@type":"ListItem","position":3,"name":{{ company.name|tojson }},"item":"{{ site_url }}/stocks/{{ company.symbol|lower }}/"}]}</script>{% endblock %}
-{% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=6"><script src="/static/tradingview-earnings.js?v=2" defer></script>{% endblock %}
+{% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=7"><script src="/static/tradingview-earnings.js?v=3" defer></script>{% endblock %}
 {% block content %}
 <div class="earnings-hub stocks-company">
 <nav class="earnings-crumb" aria-label="Breadcrumb"><a href="/">Compound</a> / <a href="/stocks/">Stocks</a> / {{ company.symbol }}</nav>
