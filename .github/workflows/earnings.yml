@@ -51,7 +51,7 @@ jobs:
           REFRESH_REQUESTED: ${{ inputs.refresh_registry }}
         run: |
           set -euo pipefail
-          if [ ! -s content/earnings-sp500.json ] || [ "$CRON" = '6 7 * * 1' ] || [ "$GITHUB_EVENT_NAME" = 'push' ] || [ "$REFRESH_REQUESTED" = 'true' ]; then
+          if [ ! -s content/earnings-sp500.json ] || [ "$CRON" = '6 7 * * 1' ] || [ "$REFRESH_REQUESTED" = 'true' ]; then
             python scripts/sp500_registry.py --output content/earnings-sp500.json
           else
             echo 'Using the last validated S&P 500 membership snapshot.'
