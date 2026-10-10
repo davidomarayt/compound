@@ -889,6 +889,19 @@ def series_context(article: Article, content_dir: Path) -> dict:
 
 def article_context(env: Environment, settings: Settings, article: Article, preview: bool) -> dict:
     body = article.body_with_charts
+    if "automated-earnings" in article.tags and article.path is not None:
+        # Use SEC-verified dashboard metadata for new reports; older reports
+        # can show only values already published in their SEC-backed table.
+        # No fabricated quarters, images or client-side financial-data APIs.
+        from compound.site.earnings_visuals import (
+            from_existing_markdown, render_earnings_dashboard,
+        )
+        earnings_meta, earnings_markdown = parse_markdown_file(article.path)
+        snapshot = earnings_meta.get("earnings_snapshot")
+        if not snapshot:
+            snapshot = from_existing_markdown(earnings_markdown, earnings_meta)
+        if snapshot:
+            body = render_earnings_dashboard(snapshot) + "\n" + body
     series = series_context(article, settings.content_dir)
     if article.series_id == "live-to-100":
         for block in ("figures", "horizon", "timeline"):
