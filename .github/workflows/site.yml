@@ -337,5 +337,13 @@ jobs:
           ! grep -Fq 'twitter:image' /tmp/earnings-lennar.html
           ! grep -Fq 'Photo: Unsplash' /tmp/earnings-lennar.html
           grep -Fq 'Revenue (US GAAP)' /tmp/earnings-lennar.html
+          # Relevant low-profile links go AFTER the filing data, not
+          # a large investment-fee calculator panel in the middle.
+          ! grep -Fq 'class="article-tool-banner' /tmp/earnings-lennar.html
+          ! grep -Fq 'class="article-tools"' /tmp/earnings-lennar.html
+          grep -Fq 'More Lennar earnings and filings' /tmp/earnings-lennar.html
+          grep -Fq 'href="/wealth/earnings/company/len/"' /tmp/earnings-lennar.html
+          grep -Fq 'href="/pia/"' /tmp/earnings-lennar.html
+          grep -Fq 'href="/pia-calculator/"' /tmp/earnings-lennar.html
 
           echo 'Live verification passed for Compound calculator catalogue, Health and Wealth Hubs, PIA Centre, Earnings, discovery metadata and flagship guides.'
