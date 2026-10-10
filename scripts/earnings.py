@@ -313,7 +313,6 @@ def build_article(ticker: str, company: str, cik: int, filing: dict, metrics: di
         _comparison_note("Revenue", rev["current"], rev["prior"], money), "",
         _comparison_note("Net income", net["current"], net["prior"], money), "",
         _comparison_note("Diluted GAAP EPS", diluted["current"], diluted["prior"], eps), "",
-        chart_svg(rev), "",
         "## How to interpret these results", "",
         "These figures are reported US GAAP results from the SEC's standardised company facts. They do not include management's full commentary, adjusted (non-GAAP) EPS, analyst estimates, guidance or the share-price reaction. Revenue growth does not by itself establish profitability or future returns.", "",
         "The comparison uses the same financial-statement concept and a corresponding period one year earlier; amended disclosures or accounting changes can affect comparability. Consult the source filing before relying on the figures.", "",
