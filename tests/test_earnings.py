@@ -60,6 +60,10 @@ def test_report_text_has_attribution_yoy_sources_and_no_unverified_claims():
     assert 'image:' not in article
     assert 'https://www.sec.gov/Archives/edgar/data/320193/000000000126000123/q3.htm' in article
     assert 'investment recommendation' in article
+    assert 'related_tools:' not in article
+    assert 'Investment Fee Impact Calculator' not in article
+    assert 'For wider Irish investing context' not in article
+
 
 
 def test_10k_is_annual_not_fourth_quarter():
