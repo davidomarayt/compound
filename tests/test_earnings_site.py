@@ -29,6 +29,11 @@ canonical_path: /wealth/earnings/example-earnings-fy2026-q3/
 date: 2026-10-10
 summary: Matched quarterly US GAAP numbers from an official filing.
 tags: [earnings, automated-earnings, stocks]
+image: /static/images/wealth.jpg
+image_alt: 'A kitchen image that should never render'
+image_credit: Unsplash
+image_source: https://images.unsplash.com/example
+social_image: /static/images/wealth.jpg
 sources:
   - title: SEC Filing
     url: https://www.sec.gov/Archives/edgar/data/320193/000000000126000123/q3.htm
@@ -48,5 +53,12 @@ Example results here, matched to [SEC](https://www.sec.gov/).
     assert 'Every article is reviewed and approved before publication' not in article
     assert '"@type": "Organization"' in article
     assert '"name": "Compound Earnings"' in article
+    assert '<div class="article-cover">' not in article
+    assert '<img ' not in article
+    assert 'article-image-credit' not in article
+    assert 'og:image' not in article
+    assert 'twitter:image' not in article
+    assert 'wealth.jpg' not in article
+    assert (public / "static" / "discover" / "example-earnings-fy2026-q3-16x9.webp").exists() is False
     assert 'https://www.sec.gov/Archives/edgar/data/320193/000000000126000123/q3.htm' in article
     assert '<loc>https://example.test/wealth/earnings/example-earnings-fy2026-q3/</loc>' in sitemap
