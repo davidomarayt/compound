@@ -77,3 +77,15 @@ def test_sharded_scan_uses_one_request_per_cik(tmp_path):
     assert not out
     assert len(client.calls)==125
     assert all('/submissions/' in x for x in client.calls)
+
+
+def test_current_constituent_csv_parser():
+    import pytest
+    csv = ('Symbol,Security,GICS Sector,CIK\n'
+           'AAPL,Apple Inc.,Information Technology,320193\n'
+           'BRK.B,Berkshire Hathaway,Financials,1067983\n')
+    result=registry.parse_dataset_csv(csv,strict=False)
+    assert result[0]['cik']==320193
+    assert result[1]['symbol']=='BRK-B'
+    with pytest.raises(ValueError):
+        registry.parse_dataset_csv(csv.replace('AAPL,Apple Inc.', 'AAPL,Apple Inc.').replace('BRK.B,Berkshire Hathaway', 'AAPL,Berkshire Hathaway'),strict=False)
