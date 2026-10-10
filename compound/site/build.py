@@ -1056,13 +1056,13 @@ def build_site(settings: Settings) -> dict:
             unknown = [slug for slug in article.related_tools if slug not in tools_by_slug]
             if unknown:
                 raise ValueError(f"Unknown related_tools on {article.slug}: {unknown}")
-    reserved = {"/", "/search/", "/tools/", "/news/", "/pia/", "/pia/providers/", "/wealth/earnings/", "/stocks/", "/compound-interest-calculator/", "/bmi-calculator/"}
+    reserved = {"/", "/search/", "/tools/", "/news/", "/pia/", "/pia/providers/", "/wealth/earnings/", "/stocks/", "/companies/", "/compound-interest-calculator/", "/bmi-calculator/"}
     reserved.update(tool["url"] for tool in tools)
     reserved.update(f"/{p}/" for p in PILLARS)
     reserved.update(f"/{pg.slug}/" for pg in pages)
     seen_urls = set(reserved)
     for article in articles:
-        if article.url in seen_urls or article.url.startswith(("/preview/", "/static/", "/tag/", "/stocks/")):
+        if article.url in seen_urls or article.url.startswith(("/preview/", "/static/", "/tag/", "/stocks/", "/companies/")):
             raise ValueError(f"Article route conflicts with another page: {article.url}")
         seen_urls.add(article.url)
     image_owners = {}
@@ -1181,6 +1181,44 @@ def build_site(settings: Settings) -> dict:
         for company in registry_members
         for symbol in company["symbols"]
     }
+
+    # Explicit editorial watchlist; never treat global issuers as members of
+    # the monitored S&P 500 or as SEC 10-Q earnings automation candidates.
+    watchlist_path = settings.content_dir / "company-watchlist.json"
+    watchlist = json.loads(watchlist_path.read_text(encoding="utf-8")) if watchlist_path.is_file() else {"listed": [], "private": [], "checked": "not yet"}
+    extra_listed, private_companies = watchlist.get("listed", []), watchlist.get("private", [])
+    if not isinstance(extra_listed, list) or not isinstance(private_companies, list):
+        raise ValueError("Invalid company watchlist")
+    seen_company_slugs = {s.lower() for c in registry_members for s in c["symbols"]}
+    for company in extra_listed + private_companies:
+        slug = company.get("slug", "")
+        if not isinstance(slug, str) or not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", slug):
+            raise ValueError("Invalid watchlist slug")
+        if slug in seen_company_slugs:
+            raise ValueError(f"Duplicate company slug: {slug}")
+        seen_company_slugs.add(slug)
+        if not company.get("name"):
+            raise ValueError(f"Missing company name: {slug}")
+    for c in extra_listed:
+        if not all(c.get(x) for x in ("ticker","exchange","sector","market","summary","source","tv_symbol")) or not c["source"].startswith("https://"):
+            raise ValueError(f"Invalid listed company: {c['slug']}")
+    for c in private_companies:
+        if not all(c.get(x) for x in ("sector","summary","website")) or not c["website"].startswith("https://"):
+            raise ValueError(f"Invalid private company: {c['slug']}")
+    def watchlist_stories(c, private=False):
+        tags = {("company-" if private else "stock-") + c["slug"]}
+        if not private and c["ticker"].lower() not in earnings_profile_by_ticker:
+            tags.add(c["ticker"].lower())
+        return sorted((a for a in articles if "automated-earnings" not in a.tags and any(t in a.tags for t in tags)),
+                      key=lambda a: (a.date, a.slug), reverse=True)
+    listed_stories = {c["slug"]: watchlist_stories(c) for c in extra_listed}
+    private_stories = {c["slug"]: watchlist_stories(c, private=True) for c in private_companies}
+    for c in extra_listed:
+        profile = (f'/stocks/{c["slug"]}/', c["name"], c["tv_symbol"])
+        earnings_profile_by_ticker["stock-" + c["slug"]] = profile
+        earnings_profile_by_ticker.setdefault(c["ticker"].lower(), profile)
+    for c in private_companies:
+        earnings_profile_by_ticker["company-" + c["slug"]] = (f'/companies/{c["slug"]}/', c["name"], "")
     sector_names = sorted({c["sector"] for c in active_earnings_companies})
     _write(out / "wealth" / "earnings" / "index.html", env.get_template("earnings_hub.html").render(
         title="Company Earnings and Financial Results", pillar="wealth",
@@ -1189,6 +1227,7 @@ def build_site(settings: Settings) -> dict:
     _write(out / "stocks" / "index.html", env.get_template("stocks_hub.html").render(
         title="Stock Market Directory and Company Research", pillar="wealth",
         registry=earnings_registry, companies=active_earnings_companies,
+        listed_companies=extra_listed, private_companies=private_companies,
         sectors=sector_names, report_counts=report_counts))
     from compound.site.tradingview import render_tradingview_panel
     for company in registry_members:
@@ -1216,6 +1255,30 @@ def build_site(settings: Settings) -> dict:
             if alias != company_symbol:
                 _write(out / "stocks" / alias / "index.html",
                        _redirect_html(f"/stocks/{company_symbol}/", settings.site_base_url))
+
+
+    # Watchlist public stock hubs and private research hubs.
+    for c in extra_listed:
+        stories = listed_stories[c["slug"]]
+        _write(out / "stocks" / c["slug"] / "index.html",
+               env.get_template("watchlist_stock.html").render(
+                   title=f'{c["name"]} ({c["ticker"]}) Stock Research', pillar="wealth",
+                   company=c, news=[a for a in stories if is_news_article(a)],
+                   research=[a for a in stories if not is_news_article(a)],
+                   has_coverage=bool(stories), ads_allowed=bool(stories),
+                   tradingview_panel=render_tradingview_panel(c["tv_symbol"], c["name"], "advanced")))
+    _write(out / "companies" / "index.html", env.get_template("companies_hub.html").render(
+        title="Private Company Research Directory", pillar="wealth",
+        companies=private_companies, checked=watchlist.get("checked", "not yet"), ads_allowed=False))
+    for c in private_companies:
+        stories = private_stories[c["slug"]]
+        _write(out / "companies" / c["slug"] / "index.html",
+               env.get_template("private_company.html").render(
+                   title=f'{c["name"]} Private Company Research', pillar="wealth",
+                   company=c, news=[a for a in stories if is_news_article(a)],
+                   research=[a for a in stories if not is_news_article(a)],
+                   checked=watchlist.get("checked", "not yet"),
+                   has_coverage=bool(stories), ads_allowed=bool(stories)))
 
     for p in PILLARS:
         if p == "happiness":
@@ -1265,6 +1328,7 @@ def build_site(settings: Settings) -> dict:
         )
         context["stock_company_url"] = profile[0] if profile else ""
         context["stock_company_name"] = profile[1] if profile else ""
+        context["stock_is_private"] = bool(profile and profile[0].startswith("/companies/"))
         if is_automated_earnings:
             context["earnings_company_url"] = profile[0] if profile else ""
             context["earnings_company_name"] = profile[1] if profile else ""
@@ -1409,10 +1473,10 @@ def build_site(settings: Settings) -> dict:
         for a in articles
     ]
     index.insert(0, {
-        "title": "Stocks Directory — S&P 500 Company Profiles",
+        "title": "Stocks Directory — S&P 500 and Global Public Companies",
         "url": "/stocks/", "pillar": "Wealth",
         "date": date.today().isoformat(),
-        "summary": "Browse individual company profiles, TradingView price charts, SEC earnings reports and linked research.",
+        "summary": "Browse S&P 500 and global listed companies, price charts and original research.",
         "tags": ["stocks", "companies", "s&p 500", "stock market", "investing"],
         "description": "Public company stock charts and primary-source earnings profiles.",
         "image": "", "reading_minutes": 3, "date_label": "Stocks",
@@ -1476,6 +1540,38 @@ def build_site(settings: Settings) -> dict:
             "description": f'Stock price context and company-specific research for {company["name"]}.',
             "image": "", "reading_minutes": 3, "date_label": "Company profile",
         })
+
+    index.insert(0, {
+        "title": "Private Companies — Research Directory",
+        "url": "/companies/", "pillar": "Wealth",
+        "date": date.today().isoformat(),
+        "summary": "Profiles for notable privately held businesses including OpenAI, Stripe and Revolut.",
+        "tags": ["private companies", "company research", "wealth"],
+        "description": "Private company news and research hub.",
+        "image": "", "reading_minutes": 3, "date_label": "Company directory",
+    })
+    for c in extra_listed:
+        stories = listed_stories[c["slug"]]
+        if stories:
+            index.append({
+                "title": f'{c["name"]} ({c["ticker"]}) Stock Research',
+                "url": f'/stocks/{c["slug"]}/', "pillar": "Wealth",
+                "date": max(a.date for a in stories).isoformat(),
+                "summary": c["summary"], "tags": ["stocks", c["ticker"].lower()],
+                "description": c["summary"], "image": "", "reading_minutes": 3,
+                "date_label": "Stock profile",
+            })
+    for c in private_companies:
+        stories = private_stories[c["slug"]]
+        if stories:
+            index.append({
+                "title": f'{c["name"]} Company Research',
+                "url": f'/companies/{c["slug"]}/', "pillar": "Wealth",
+                "date": max(a.date for a in stories).isoformat(),
+                "summary": c["summary"], "tags": ["private companies", c["slug"]],
+                "description": c["summary"], "image": "", "reading_minutes": 3,
+                "date_label": "Company profile",
+            })
     _write(out / "search.json", json.dumps(index, ensure_ascii=False))
     _write(out / "search" / "index.html", env.get_template("search.html").render(title="Search", search_index=index, ads_allowed=False))
     _write(out / "feed.xml", env.get_template("feed.xml").render(articles=articles[:30]))
@@ -1520,6 +1616,7 @@ def build_site(settings: Settings) -> dict:
         (settings.site_base_url + "/news/", None),
         (settings.site_base_url + "/wealth/earnings/", None),
         (settings.site_base_url + "/stocks/", None),
+        (settings.site_base_url + "/companies/", None),
     ]
     sitemap_entries.extend([
         (settings.site_base_url + "/pia/", pia_updated),
@@ -1556,6 +1653,17 @@ def build_site(settings: Settings) -> dict:
         if stock_coverage(company)
     )
 
+
+    sitemap_entries.extend(
+        (settings.site_base_url + f'/stocks/{c["slug"]}/',
+         max((a.reviewed or a.date) for a in listed_stories[c["slug"]]).isoformat())
+        for c in extra_listed if listed_stories[c["slug"]]
+    )
+    sitemap_entries.extend(
+        (settings.site_base_url + f'/companies/{c["slug"]}/',
+         max((a.reviewed or a.date) for a in private_stories[c["slug"]]).isoformat())
+        for c in private_companies if private_stories[c["slug"]]
+    )
     sitemap_by_url: dict[str, str | None] = {}
     for url, lastmod in sitemap_entries:
         existing = sitemap_by_url.get(url)
