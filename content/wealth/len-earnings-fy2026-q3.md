@@ -29,7 +29,7 @@ earnings_snapshot:
   report_end: "2026-08-31"
   metrics:
     revenue:
-      current: 8050000000.000001
+      current: 8050000000
       prior: 8810000000
       reported_change: "-8.7%"
     net_income:
