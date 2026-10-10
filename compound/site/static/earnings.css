@@ -101,3 +101,77 @@
 .article-prose .compound-tv-description{font-size:13px!important;line-height:1.6!important;margin:0!important}
 .article-prose .compound-tv-footnote{font-size:11px!important;line-height:1.6!important;margin:11px 0 0!important}
 @media(max-width:700px){.compound-tv-panel{padding:15px;margin:24px 0}.compound-tv-panel .tradingview-widget-container{height:375px}.compound-tv-compact .tradingview-widget-container{height:300px}.compound-tv-heading{gap:10px}.compound-tv-ticker{padding:7px 8px;font-size:11px}}
+
+
+/* Wider, genuinely readable mobile TradingView charts. Keep desktop unchanged. */
+.compound-tv-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.compound-tv-expand{display:none;align-items:center;justify-content:center;min-height:44px;padding:10px 12px;border:1px solid #8c7470;border-radius:7px;background:#fff;color:#4b302d;font:750 12px/1.2 system-ui,sans-serif;cursor:pointer;white-space:nowrap}
+.compound-tv-expand:focus-visible{outline:3px solid #366b91;outline-offset:2px}
+.compound-tv-panel .tradingview-widget-container__widget iframe{display:block;width:100%!important;height:100%!important;min-width:0;border:0}
+@media(max-width:760px){
+  /* Break out of the padded reading column: 100% of the phone, minus a safe gutter. */
+  .earnings-hub > .compound-tv-panel,
+  .article-prose .compound-tv-panel{
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+    width:calc(100vw - 16px);
+    max-width:none;
+    box-sizing:border-box;
+    padding:14px 9px 15px;
+    margin-top:22px;
+    margin-bottom:30px;
+    border-radius:10px;
+  }
+  .compound-tv-panel .tradingview-widget-container{height:570px}
+  .compound-tv-compact .tradingview-widget-container{height:510px}
+  .compound-tv-heading{flex-wrap:wrap;align-items:start;gap:8px 12px;margin-bottom:12px}
+  .compound-tv-heading>div:first-child{min-width:0;flex:1 1 180px}
+  .compound-tv-actions{gap:8px;flex-wrap:wrap;justify-content:flex-end}
+  .compound-tv-ticker{padding:10px 9px;font-size:11px}
+  .compound-tv-ready .compound-tv-expand{display:inline-flex}
+  .compound-tv-heading h2,.article-prose .compound-tv-heading h2{font-size:clamp(22px,5.7vw,29px)!important}
+  .compound-tv-footnote{margin-top:10px;line-height:1.5}
+}
+@media(max-width:390px){
+  .compound-tv-heading{display:block}
+  .compound-tv-actions{justify-content:space-between;margin-top:10px}
+  .compound-tv-heading>div:first-child{max-width:100%}
+}
+/* Full-screen viewing works in portrait or after the phone rotates to landscape. */
+body.compound-tv-scroll-lock{overflow:hidden}
+.compound-tv-panel.tv-expanded{
+  position:fixed!important;
+  inset:0!important;
+  left:0!important;
+  transform:none!important;
+  z-index:3000;
+  display:flex!important;
+  flex-direction:column;
+  box-sizing:border-box;
+  width:100vw!important;
+  max-width:none!important;
+  height:100vh!important;
+  height:100dvh!important;
+  padding:12px 10px 8px!important;
+  margin:0!important;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+  background:#fff;
+}
+.compound-tv-panel.tv-expanded .compound-tv-heading{display:flex;flex-wrap:nowrap;align-items:center;gap:8px;margin:0 0 9px}
+.compound-tv-panel.tv-expanded .compound-tv-heading>div:first-child{flex:1;min-width:0}
+.compound-tv-panel.tv-expanded .compound-tv-heading h2{font-size:clamp(18px,4vw,27px)!important;margin:0!important}
+.compound-tv-panel.tv-expanded .compound-tv-eyebrow,
+.compound-tv-panel.tv-expanded .compound-tv-description,
+.compound-tv-panel.tv-expanded .compound-tv-footnote{display:none}
+.compound-tv-panel.tv-expanded .compound-tv-actions{flex-shrink:0;flex-wrap:nowrap}
+.compound-tv-panel.tv-expanded .compound-tv-expand{display:inline-flex}
+.compound-tv-panel.tv-expanded .tradingview-widget-container{
+  flex:1 1 auto;
+  width:100%;
+  height:auto!important;
+  min-height:0;
+}
+.compound-tv-panel.tv-expanded .tradingview-widget-container__widget{height:calc(100% - 28px)}

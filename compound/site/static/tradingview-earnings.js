@@ -49,6 +49,52 @@
     wrapper.appendChild(script);
   }
 
+  function refreshChartSize() {
+    // TradingView uses an autosized iframe; give it the new viewport dimensions.
+    window.requestAnimationFrame(function () {
+      window.dispatchEvent(new Event("resize"));
+    });
+  }
+
+  function closeExpanded() {
+    var expanded = document.querySelector(".compound-tv-panel.tv-expanded");
+    if (!expanded) return;
+    expanded.classList.remove("tv-expanded");
+    document.body.classList.remove("compound-tv-scroll-lock");
+    var toggle = expanded.querySelector("[data-tv-expand]");
+    if (toggle) {
+      toggle.textContent = "Expand chart";
+      toggle.setAttribute("aria-pressed", "false");
+      toggle.setAttribute("aria-label", "Expand interactive stock chart");
+      toggle.focus();
+    }
+    refreshChartSize();
+  }
+
+  panels.forEach(function (panel) {
+    var toggle = panel.querySelector("[data-tv-expand]");
+    if (!toggle) return;
+    panel.classList.add("compound-tv-ready");
+    toggle.addEventListener("click", function () {
+      if (panel.classList.contains("tv-expanded")) {
+        closeExpanded();
+        return;
+      }
+      closeExpanded();
+      panel.classList.add("tv-expanded");
+      document.body.classList.add("compound-tv-scroll-lock");
+      toggle.textContent = "Close chart";
+      toggle.setAttribute("aria-pressed", "true");
+      toggle.setAttribute("aria-label", "Close enlarged stock chart");
+      // If the user taps expand before reaching the lazy-load threshold.
+      loadChart(panel);
+      refreshChartSize();
+    });
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") closeExpanded();
+  });
+
   if ("IntersectionObserver" in window) {
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
