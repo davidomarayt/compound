@@ -50,7 +50,7 @@ SEC filing results described here.
 """, encoding="utf-8")
     build_site(settings)
     root = settings.public_dir
-    profile = (root / "wealth/earnings/company/aapl/index.html").read_text(encoding="utf-8")
+    profile = (root / "stocks/aapl/index.html").read_text(encoding="utf-8")
     report = (root / "wealth/earnings/aapl-test-earnings/index.html").read_text(encoding="utf-8")
     assert 'data-tv-symbol="AAPL"' in profile
     assert 'data-tv-variant="advanced"' in profile
@@ -61,7 +61,7 @@ SEC filing results described here.
     assert report.index('compound-tv-panel') < report.index('SEC filing results described here.')
     assert '<link rel="canonical" href="https://example.test/wealth/earnings/aapl-test-earnings/">' in report
     assert 'by TradingView' in profile and 'by TradingView' in report
-    assert 'data-tv-symbol="LEN"' in (root / "wealth/earnings/company/len/index.html").read_text(encoding="utf-8")
+    assert 'data-tv-symbol="LEN"' in (root / "stocks/len/index.html").read_text(encoding="utf-8")
     js = (root / "static/tradingview-earnings.js").read_text(encoding="utf-8")
     assert "IntersectionObserver" in js
     assert "embed-widget-advanced-chart.js" in js
