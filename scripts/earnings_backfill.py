@@ -1,8 +1,8 @@
 """Controlled, SEC-verified historical earnings backfill for the existing stock register.
 
-One recent, complete 10-Q or 10-K per eligible SEC issuer; never invent missing
-metrics or Q4, silently revise published results, or backdate the article's
-publication date. Runs once per day with a small site-wide publication cap.
+Only 2026-or-newer reporting periods and SEC filing dates. One recent,
+complete 10-Q or 10-K per eligible issuer, never interpolated or backdated.
+Roll out at most two per day and thirty in total, then stop backfilling.
 """
 from __future__ import annotations
 
@@ -22,6 +22,33 @@ from earnings import (
 from sp500_registry import load_registry
 
 LOG = logging.getLogger("compound.earnings.backfill")
+
+# Historical reports earlier than 2026 do not belong on Compound.
+EARLIEST_REPORT_DATE = date(2026, 1, 1)
+PER_RUN_LIMIT = 2
+TOTAL_BACKFILL_LIMIT = 30
+
+
+def existing_backfill_count(directory: Path) -> int:
+    """Count backfill-marked articles, not routine new SEC filings."""
+    total = 0
+    for article in directory.glob("*-earnings-fy*.md"):
+        with article.open(encoding="utf-8") as handle:
+            front_matter = handle.read(1500).split("---", 2)
+        if len(front_matter) >= 3 and re.search(
+            r"(?m)^historical_backfill:\s*true\s*$", front_matter[1]
+        ):
+            total += 1
+    return total
+
+
+def in_allowed_period(filing: dict, first_date: date = EARLIEST_REPORT_DATE) -> bool:
+    """Require BOTH the underlying financial period and SEC filing in 2026+."""
+    try:
+        return (date.fromisoformat(filing["reportDate"]) >= first_date
+                and date.fromisoformat(filing["filingDate"]) >= first_date)
+    except (KeyError, TypeError, ValueError):
+        return False
 
 
 def extra_sec_companies(client, watchlist_path: Path) -> list[dict]:
@@ -63,12 +90,17 @@ def eligible_universe(registry_path: Path, client, extras_path: Path | None = No
 
 
 def backfill(registry_path: Path, content_dir: Path, *, client, today: date,
-             days: int = 550, max_new: int = 8, dry_run: bool = False,
+             days: int = 365, max_new: int = 2, dry_run: bool = False,
              extras_path: Path | None = None) -> list[str]:
     """Publish at most one historical report per company across the entire library."""
     directory = content_dir / "wealth"
     directory.mkdir(parents=True, exist_ok=True)
     existing = {p.stem for p in directory.glob("*-earnings-fy*.md")}
+    remaining = max(0, TOTAL_BACKFILL_LIMIT - existing_backfill_count(directory))
+    max_new = min(max_new, PER_RUN_LIMIT, remaining)
+    if max_new == 0:
+        LOG.info("Historical earnings backfill reached its limit; publishing nothing.")
+        return []
     universe = eligible_universe(registry_path, client, extras_path)
     LOG.info("Historical backfill: %d distinct issuers, cap=%d", len(universe), max_new)
     written = []
@@ -84,7 +116,8 @@ def backfill(registry_path: Path, content_dir: Path, *, client, today: date,
             continue
         try:
             submissions = client.get_json(f"{SEC_DATA}/submissions/CIK{cik:010d}.json")
-            filings = recent_filings(submissions, today, days)
+            filings = [f for f in recent_filings(submissions, today, days)
+                       if in_allowed_period(f)]
         except RuntimeError as exc:
             unavailable += 1
             LOG.warning("SEC unavailable for %s: %s", ticker, exc)
@@ -98,6 +131,9 @@ def backfill(registry_path: Path, content_dir: Path, *, client, today: date,
             LOG.warning("SEC facts unavailable for %s: %s", ticker, exc)
             continue
         for filing in filings:
+            # Defence in depth: check again immediately before processing.
+            if not in_allowed_period(filing):
+                continue
             metrics = extract_metrics(facts, filing)
             if metrics is None:
                 continue
@@ -143,12 +179,12 @@ def main() -> int:
     parser.add_argument("--registry", type=Path, default=Path("content/earnings-sp500.json"))
     parser.add_argument("--extra-watchlist", type=Path, default=Path("content/company-watchlist.json"))
     parser.add_argument("--content-dir", type=Path, default=Path("content"))
-    parser.add_argument("--lookback-days", type=int, default=550)
-    parser.add_argument("--max-new", type=int, default=8)
+    parser.add_argument("--lookback-days", type=int, default=365)
+    parser.add_argument("--max-new", type=int, default=2)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
-    if not (30 <= args.lookback_days <= 730) or not (1 <= args.max_new <= 12):
-        parser.error("lookback-days must be 30–730 and max-new 1–12")
+    if not (30 <= args.lookback_days <= 365) or not (1 <= args.max_new <= PER_RUN_LIMIT):
+        parser.error("lookback-days must be 30–365 and max-new 1–2")
     logging.basicConfig(level=logging.INFO)
     client = SECClient(os.getenv("SEC_USER_AGENT", ""))
     found = backfill(args.registry, args.content_dir, client=client,
