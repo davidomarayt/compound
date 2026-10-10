@@ -16,10 +16,11 @@ approved_by: "Commissioned in conversation: detailed 2027 merger research analys
 summary: "Could Tesla and SpaceX merge in 2027? An evidence-first analysis with SEC-sourced revenue, profit and segment charts, governance risks and a hypothetical shareholder ownership model."
 meta_description: "Tesla SpaceX merger 2027: evidence, confirmed collaborations, SEC-based revenue and profit charts, shareholder dilution scenarios and what to watch."
 tags: [tesla, tsla, spacex, stock-spcx, company-research, stocks, financial-analysis, merger-2027]
-hero_image_url: "https://www.nasa.gov/wp-content/uploads/2026/10/55563235995-2bae0fafbc-o.jpg"
-hero_image_alt: "SpaceX Falcon 9 rocket carrying NASA's Crew-13 mission lifts off from Cape Canaveral on 1 October 2026."
-hero_image_credit: "NASA / Joel Kowsky (public domain)"
-hero_image_source: "https://www.nasa.gov/image-article/nasas-spacex-crew-13-launches/"
+hero_image_url: "https://upload.wikimedia.org/wikipedia/commons/8/87/Elon_Musk%27s_Tesla_Roadster_%2840143096241%29.jpg"
+hero_image_filename: "tesla-spacex-merger-2027-roadster-20261010.jpg"
+hero_image_alt: "Tesla Roadster with a SpaceX-suited mannequin in orbit, Earth visible behind it, during SpaceX's 2018 Falcon Heavy demonstration."
+hero_image_credit: "SpaceX / Wikimedia Commons (CC0)"
+hero_image_source: "https://commons.wikimedia.org/wiki/File:Elon_Musk%27s_Tesla_Roadster_(40143096241).jpg"
 sources:
   - title: "Tesla — 2025 Form 10-K: annual revenue, business segments, operating income and net income"
     url: https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm
