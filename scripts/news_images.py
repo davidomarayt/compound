@@ -387,9 +387,9 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
             return "pinned-url"
         except Exception as exc:
             print(f"Pinned image URL failed for {path.name}: {exc}")
-            if is_published(meta) and is_stock_editorial(meta):
+            if is_published(meta) and (is_stock_editorial(meta) or meta.get("require_pinned_hero")):
                 raise RuntimeError(
-                    f"Published stock article {slug} needs a downloadable company-specific hero image"
+                    f"Published article {slug} requires its pinned, topic-relevant hero image to be downloadable"
                 ) from exc
             if image_exists(meta):
                 return "skip:pinned-url-fetch-failed-existing"
