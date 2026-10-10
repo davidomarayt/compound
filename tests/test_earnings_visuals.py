@@ -58,7 +58,7 @@ def test_no_8_quarter_claim_from_two_comparable_periods():
 
 def test_eight_sourced_quarters_render_in_order_without_js():
     points = [
-        {"end": f"202{year}-0{month}-30", "value": 1000000000 + i * 1e8}
+        {"end": f"202{year}-{month:02d}-30", "value": 1000000000 + i * 1e8}
         for i, (year, month) in enumerate(
             [(4, 3), (4, 6), (4, 9), (4, 12),
              (5, 3), (5, 6), (5, 9), (5, 12)]
