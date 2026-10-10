@@ -34,6 +34,21 @@ SEC_NAMES = {
 }
 FORMS = {"10-Q", "10-K", "20-F", "6-K"}
 
+# Verified company / exchange pages specialising in financial results.
+# Keep the trading-listing URLs in company-watchlist.json unchanged.
+OFFICIAL_RESULTS_PAGES = {
+    "tsm": "https://investor.tsmc.com/english/financial-calendar",
+    "asml": "https://www.asml.com/en/investors/financial-results",
+    "005930-ks": "https://www.samsung.com/global/ir/financial-information/earnings-release/",
+    "tm": "https://global.toyota/en/ir/library/",
+    "0700-hk": "https://www.tencent.com/investors/results/",
+    "1211-hk": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=2696",
+    "7974-t": "https://www.nintendo.co.jp/ir/en/events/index.html",
+    "nvo": "https://www.novonordisk.com/investors/financial-results.html",
+    "mc-pa": "https://www.lvmh.com/publications",
+}
+
+
 
 class AnchorParser(HTMLParser):
     def __init__(self):
@@ -155,10 +170,11 @@ def run(watchlist: Path, snapshot: Path, *, today: date, client=None,
     added = []
     for row in listed:
         slug = row["slug"]
-        status = {"company": row["name"], "official_source": row["source"],
+        results_page = OFFICIAL_RESULTS_PAGES.get(slug, row["source"])
+        status = {"company": row["name"], "official_source": results_page,
                   "regulatory": sec_status.get(slug, "Local-market / non-SEC disclosures")}
         try:
-            links = financial_links(fetch(row["source"]), row["source"])
+            links = financial_links(fetch(results_page), results_page)
             status["official_source_status"] = f"Checked {len(links)} relevant investor links"
             current = {item["url"]: item for item in links}
             prior = set(old_links.get(slug, []))
