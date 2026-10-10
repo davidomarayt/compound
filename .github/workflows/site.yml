@@ -279,4 +279,24 @@ jobs:
           fetch https://compound.ie/life/pickleball-ireland/ /tmp/pickleball-crosslink.html
           grep -Fq 'href="/life/padel-ireland/"' /tmp/pickleball-crosslink.html
 
-          echo 'Live verification passed for Compound calculator catalogue, Health and Wealth Hubs, discovery metadata and flagship guides.'
+          # PIA Centre launch: explicitly verify the two new public routes,
+          # their search metadata, primary-source tracker and sitemap URLs.
+          fetch https://compound.ie/pia/ /tmp/pia-centre.html
+          grep -Fq 'Personal Investment Accounts in Ireland.' /tmp/pia-centre.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/pia/">' /tmp/pia-centre.html
+          grep -Fq 'href="/pia/providers/"' /tmp/pia-centre.html
+          grep -Fq 'href="/pia-calculator/"' /tmp/pia-centre.html
+          grep -Fq 'AIB' /tmp/pia-centre.html
+          grep -Fq 'Irish Life' /tmp/pia-centre.html
+
+          fetch https://compound.ie/pia/providers/ /tmp/pia-providers.html
+          grep -Fq 'PIA providers in Ireland' /tmp/pia-providers.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/pia/providers/">' /tmp/pia-providers.html
+          grep -Fq 'Not published' /tmp/pia-providers.html
+          grep -Fq 'www.aib.ie/make-a-plan/investments/personal-investment-account' /tmp/pia-providers.html
+          grep -Fq 'www.irishlife.ie/investments/pia/' /tmp/pia-providers.html
+          grep -Fq 'www.zurich.ie/savings-and-investments/savings-options/investment-account/' /tmp/pia-providers.html
+          grep -Fq '<loc>https://compound.ie/pia/</loc>' /tmp/sitemap.xml
+          grep -Fq '<loc>https://compound.ie/pia/providers/</loc>' /tmp/sitemap.xml
+
+          echo 'Live verification passed for Compound calculator catalogue, Health and Wealth Hubs, PIA Centre, discovery metadata and flagship guides.'
