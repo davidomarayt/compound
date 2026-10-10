@@ -37,16 +37,16 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m pip install --disable-pip-version-check PyYAML
-      - name: Publish at most eight historical SEC-verified company reports
+      - name: Publish at most two SEC reports from 2026 onward
         env:
           SEC_USER_AGENT: 'Compound.ie Earnings Research david@compound.ie'
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
         run: |
           set -euo pipefail
           if [ "$DRY_RUN" = 'true' ]; then
-            python scripts/earnings_backfill.py --registry content/earnings-sp500.json --extra-watchlist content/company-watchlist.json --lookback-days 550 --max-new 8 --dry-run
+            python scripts/earnings_backfill.py --registry content/earnings-sp500.json --extra-watchlist content/company-watchlist.json --lookback-days 365 --max-new 2 --dry-run
           else
-            python scripts/earnings_backfill.py --registry content/earnings-sp500.json --extra-watchlist content/company-watchlist.json --lookback-days 550 --max-new 8
+            python scripts/earnings_backfill.py --registry content/earnings-sp500.json --extra-watchlist content/company-watchlist.json --lookback-days 365 --max-new 2
           fi
       - name: Commit new reports and trigger public site build
         if: github.event_name != 'workflow_dispatch' || inputs.dry_run == false
@@ -61,6 +61,6 @@ jobs:
             echo 'No new eligible historical reports. Existing records are unchanged.'
             exit 0
           fi
-          git commit -m 'Backfill verified historic SEC earnings filings (max eight)'
+          git commit -m 'Backfill SEC earnings from 2026 onward (max two)'
           git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push origin HEAD:"$GITHUB_REF_NAME"
           gh workflow run site.yml --ref "$GITHUB_REF_NAME"

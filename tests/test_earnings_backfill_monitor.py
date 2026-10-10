@@ -135,3 +135,68 @@ def test_20f_and_6k_queued_not_published(tmp_path):
     assert state["new_review_candidates"] == 1
     assert state["pending_review"][0]["form"] == "6-K"
     assert "requires review" in state["pending_review"][0]["source"]
+
+
+def test_pre_2026_filings_and_reporting_periods_are_excluded(tmp_path, monkeypatch):
+    monkeypatch.setattr(backfill, "eligible_universe", lambda *args:
+                        [{"symbol": "AAPL", "name": "Apple Inc.", "cik": 320193}])
+
+    class HistoricalSEC(FakeSEC):
+        def __init__(self, filed, reported):
+            self.filed = filed
+            self.reported = reported
+
+        def get_json(self, url):
+            if "/submissions/" in url:
+                prior = {**FILING, "filingDate": self.filed, "reportDate": self.reported}
+                return {"filings": {"recent": {
+                    k: [prior[k]] for k in ("accessionNumber", "form", "filingDate",
+                                           "reportDate", "primaryDocument")
+                }}}
+            if "companyfacts/" in url:
+                raise AssertionError("Disallowed dates must be rejected before requesting SEC XBRL")
+            return super().get_json(url)
+
+    for filing, period in [
+        ("2025-12-31", "2025-09-30"),   # Old filing and old financial period
+        ("2026-02-10", "2025-12-31"),   # New filing but 2025 results
+    ]:
+        root = tmp_path / (filing + "_" + period)
+        result = backfill.backfill(root / "registry", root, client=HistoricalSEC(filing, period),
+                                   today=date(2026, 10, 10), days=365, max_new=2)
+        assert result == []
+        assert not list((root / "wealth").glob("*.md"))
+
+    assert backfill.in_allowed_period({"filingDate": "2026-01-01",
+                                       "reportDate": "2026-01-01"})
+    assert not backfill.in_allowed_period({"filingDate": "2026-01-01",
+                                           "reportDate": "2025-12-31"})
+
+
+def test_two_per_day_and_total_thirty_historical_reports(tmp_path, monkeypatch):
+    monkeypatch.setattr(backfill, "eligible_universe", lambda *args: [
+        {"symbol": "AAPL", "name": "Apple Inc.", "cik": 320193},
+        {"symbol": "MSFT", "name": "Microsoft", "cik": 789019},
+        {"symbol": "NVDA", "name": "Nvidia", "cik": 1045810},
+    ])
+    root = tmp_path / "content"
+    first = backfill.backfill(tmp_path / "registry", root, client=FakeSEC(),
+                              today=date(2026, 10, 10), days=365, max_new=8)
+    assert len(first) == 2   # Hard limit, even if the caller requests eight
+    folder = root / "wealth"
+    assert backfill.existing_backfill_count(folder) == 2
+
+    # Once 29 existing reports are marked as backfilled, only one slot remains.
+    for i in range(27):
+        (folder / f"stub{i}-earnings-fy2026.md").write_text("""---
+historical_backfill: true
+---
+Sample article
+""")
+    assert backfill.existing_backfill_count(folder) == 29
+    final = backfill.backfill(tmp_path / "registry", root, client=FakeSEC(),
+                              today=date(2026, 10, 11), days=365, max_new=8)
+    assert len(final) == 1
+    assert backfill.existing_backfill_count(folder) == 30
+    assert backfill.backfill(tmp_path / "registry", root, client=FakeSEC(),
+                             today=date(2026, 10, 12), days=365, max_new=8) == []
