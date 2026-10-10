@@ -1,3 +1,4 @@
+import pytest
 from pathlib import Path
 
 from scripts import news_images
@@ -165,3 +166,42 @@ Earnings text only.
     assert news_images.process(article, "fake-key", force=False) == "skip:automated-earnings-text-only"
     assert news_images.process(article, "fake-key", force=True) == "skip:automated-earnings-text-only"
     assert article.read_text(encoding="utf-8") == original
+
+
+def test_stock_article_requires_company_photo(tmp_path, monkeypatch):
+    doc = tmp_path / "merger.md"
+    doc.write_text(
+        "---\ntitle: Will Tesla and SpaceX merge?\nslug: merger\n"
+        "pillar: wealth\ntags: [stocks, tesla, spacex]\n"
+        "publication_status: published\n---\nResearch.",
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(news_images, "STATIC", tmp_path / "static")
+    with pytest.raises(ValueError, match="company-specific photograph"):
+        news_images.process(doc, "")
+    assert "image:" not in doc.read_text(encoding="utf-8")
+
+
+def test_stock_article_pinned_image_and_no_inheritance_keyword(tmp_path, monkeypatch):
+    meta = {"title": "Will Tesla and SpaceX Merge in 2027?", "slug": "merger", "pillar": "wealth", "tags": ["stocks"]}
+    assert news_images._local_photo_for(meta)["file"] != "tax-paperwork.jpg"
+    doc = tmp_path / "merger.md"
+    doc.write_text(
+        "---\ntitle: Will Tesla and SpaceX merge?\nslug: merger\n"
+        "pillar: wealth\ntags: [stocks, tesla, spacex]\n"
+        "publication_status: published\n"
+        "hero_image_url: https://www.nasa.gov/test-image.jpg\n"
+        "hero_image_alt: SpaceX rocket photographed in flight\n"
+        "hero_image_credit: NASA photographer\n"
+        "hero_image_source: https://www.nasa.gov/\n"
+        "---\nResearch.",
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(news_images, "STATIC", tmp_path / "static")
+    def stub_download(url, dest):
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(b"sample-jpeg")
+    monkeypatch.setattr(news_images, "download", stub_download)
+    assert news_images.process(doc, "") == "pinned-url"
+    assert "/static/images/evergreen/merger.jpg" in doc.read_text(encoding="utf-8")
+    assert "NASA photographer" in doc.read_text(encoding="utf-8")
