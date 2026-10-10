@@ -18,6 +18,21 @@
  {% if 'news' in article.tags %}{% include "_preferred_source.html" %}{% endif %}
  {% if article.figures %}<details class="figures"><summary>Figures used in this piece</summary><div class="table-scroll"><table><thead><tr><th>Figure</th><th>What it means</th><th>Source</th></tr></thead><tbody>{% for f in article.figures %}<tr><td>{{ f.value }}</td><td>{{ f.label }}</td><td>{% if f.source_url and f.source_url != 'owner' %}<a href="{{ f.source_url }}" rel="noopener">Source ↗</a>{% else %}Author{% endif %}</td></tr>{% endfor %}</tbody></table></div></details>{% endif %}
  {% if article.tags and (not preview or article.slug not in ["saving-for-your-child-ireland", "creatine-benefits-dosage-safety-ireland"]) %}<div class="tags">{% for t in article.tags %}<a href="/tag/{{ t }}/">{{ t|replace('-', ' ') }}</a>{% endfor %}</div>{% endif %}
+ {% if "automated-earnings" in article.tags %}
+ <nav class="earnings-article-next" aria-label="Earnings history and investing in Ireland">
+   <p class="earnings-article-next-kicker">EXPLORE NEXT</p>
+   {% if earnings_company_url %}
+   <p class="earnings-article-history"><a href="{{ earnings_company_url }}">More {{ earnings_company_name }} earnings and filings <span aria-hidden="true">→</span></a></p>
+   {% else %}
+   <p class="earnings-article-history"><a href="/wealth/earnings/">Browse company earnings history <span aria-hidden="true">→</span></a></p>
+   {% endif %}
+   <p class="earnings-article-next-copy">Investing from Ireland? Learn about the planned Personal Investment Account and model hypothetical investment growth and tax. This does not mean the company’s shares will be available in a PIA.</p>
+   <div class="earnings-article-next-links">
+     <a href="/pia/">PIA Centre <span aria-hidden="true">→</span></a>
+     <a href="/pia-calculator/">PIA Calculator <span aria-hidden="true">→</span></a>
+   </div>
+ </nav>
+ {% endif %}
  {% if not preview %}{% with slot=adsense.slots.article_bottom, name="article-bottom" %}{% include "_ad.html" %}{% endwith %}{% endif %}
  </div></div>
 </article>
