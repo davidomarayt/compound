@@ -1033,7 +1033,7 @@ def build_site(settings: Settings) -> dict:
             unknown = [slug for slug in article.related_tools if slug not in tools_by_slug]
             if unknown:
                 raise ValueError(f"Unknown related_tools on {article.slug}: {unknown}")
-    reserved = {"/", "/search/", "/tools/", "/news/", "/pia/", "/pia/providers/", "/compound-interest-calculator/", "/bmi-calculator/"}
+    reserved = {"/", "/search/", "/tools/", "/news/", "/pia/", "/pia/providers/", "/wealth/earnings/", "/compound-interest-calculator/", "/bmi-calculator/"}
     reserved.update(tool["url"] for tool in tools)
     reserved.update(f"/{p}/" for p in PILLARS)
     reserved.update(f"/{pg.slug}/" for pg in pages)
@@ -1109,6 +1109,13 @@ def build_site(settings: Settings) -> dict:
 
     _write(out / "news" / "index.html", env.get_template("news.html").render(
         articles=news_articles, title="Latest News for Ireland", news=True, ads_allowed=False))
+
+    # Permanent earnings archive: source-linked automated filings are ordinary
+    # Wealth articles with stable canonical URLs, not Google News submissions.
+    earnings_articles = [a for a in articles if "automated-earnings" in a.tags]
+    _write(out / "wealth" / "earnings" / "index.html", env.get_template("earnings_hub.html").render(
+        title="Company Earnings and Financial Results", pillar="wealth",
+        articles=earnings_articles, ads_allowed=True))
 
     for p in PILLARS:
         if p == "happiness":
@@ -1283,6 +1290,15 @@ def build_site(settings: Settings) -> dict:
          "image": a.image, "reading_minutes": a.reading_minutes, "date_label": long_date(a.date)}
         for a in articles
     ]
+    index.insert(0, {
+        "title": "Company Earnings Reports and Financial Results",
+        "url": "/wealth/earnings/", "pillar": "Wealth",
+        "date": date.today().isoformat(),
+        "summary": "SEC-verified annual and quarterly company results, revenue, net income, EPS and historical comparisons.",
+        "tags": ["earnings", "stocks", "company results", "wealth"],
+        "description": "Source-verified financial results and earnings history.",
+        "image": "", "reading_minutes": 3, "date_label": "Company earnings",
+    })
     if has_calculator:
         index.insert(0, {"title": "Compound Interest Calculator Ireland", "url": calculator_path,
                         "pillar": "Wealth", "date": "2026-09-15", "summary": "Explore growth, compare plans, set goals and model inflation, fees and supported Irish tax.",
@@ -1360,6 +1376,7 @@ def build_site(settings: Settings) -> dict:
     sitemap_entries: list[tuple[str, str | None]] = [
         (settings.site_base_url + "/", None),
         (settings.site_base_url + "/news/", None),
+        (settings.site_base_url + "/wealth/earnings/", None),
     ]
     sitemap_entries.extend([
         (settings.site_base_url + "/pia/", pia_updated),
