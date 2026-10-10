@@ -54,7 +54,7 @@ SEC filing results described here.
     report = (root / "wealth/earnings/aapl-test-earnings/index.html").read_text(encoding="utf-8")
     assert 'data-tv-symbol="AAPL"' in profile
     assert 'data-tv-variant="advanced"' in profile
-    assert "Quarterly and annual filings" in profile
+    assert "Quarterly and annual earnings" in profile
     assert 'data-tv-symbol="AAPL"' in report
     assert 'data-tv-variant="compact"' in report
     assert 'tradingview-earnings.js?v=2' in report and 'tradingview-earnings.js?v=2' in profile
