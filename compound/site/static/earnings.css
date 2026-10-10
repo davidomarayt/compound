@@ -109,22 +109,22 @@
 .compound-tv-expand:focus-visible{outline:3px solid #366b91;outline-offset:2px}
 .compound-tv-panel .tradingview-widget-container__widget iframe{display:block;width:100%!important;height:100%!important;min-width:0;border:0}
 @media(max-width:760px){
-  /* Break out of the padded reading column: 100% of the phone, minus a safe gutter. */
+  /* Give the actual TradingView iframe nearly all available phone width, not the article column. */
   .earnings-hub > .compound-tv-panel,
   .article-prose .compound-tv-panel{
     position:relative;
     left:50%;
     transform:translateX(-50%);
-    width:calc(100vw - 16px);
+    width:calc(100vw - 8px);
     max-width:none;
     box-sizing:border-box;
-    padding:14px 9px 15px;
+    padding:10px 4px 12px;
     margin-top:22px;
     margin-bottom:30px;
     border-radius:10px;
   }
-  .compound-tv-panel .tradingview-widget-container{height:570px}
-  .compound-tv-compact .tradingview-widget-container{height:510px}
+  .compound-tv-panel .tradingview-widget-container{height:650px}
+  .compound-tv-compact .tradingview-widget-container{height:590px}
   .compound-tv-heading{flex-wrap:wrap;align-items:start;gap:8px 12px;margin-bottom:12px}
   .compound-tv-heading>div:first-child{min-width:0;flex:1 1 180px}
   .compound-tv-actions{gap:8px;flex-wrap:wrap;justify-content:flex-end}

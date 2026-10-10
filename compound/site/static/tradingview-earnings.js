@@ -9,6 +9,7 @@
     if (panel.dataset.tvState) return;
     var symbol = panel.getAttribute("data-tv-symbol") || "";
     var variant = panel.getAttribute("data-tv-variant");
+    var mobile = !!(window.matchMedia && window.matchMedia("(max-width: 760px)").matches);
     if (!/^[A-Z][A-Z0-9.]{0,11}$/.test(symbol) || (variant !== "compact" && variant !== "advanced")) return;
     var wrapper = panel.querySelector(".tradingview-widget-container");
     var target = panel.querySelector(".tradingview-widget-container__widget");
@@ -20,9 +21,9 @@
       config = {
         autosize: true, symbol: symbol, interval: "D", timezone: "Etc/UTC",
         theme: "light", style: "1", locale: "en", hide_side_toolbar: true,
-        hide_top_toolbar: false, hide_legend: false, hide_volume: false,
+        hide_top_toolbar: mobile, hide_legend: mobile, hide_volume: mobile,
         allow_symbol_change: false, withdateranges: true, details: false,
-        calendar: false, save_image: true, backgroundColor: "#ffffff",
+        calendar: false, save_image: !mobile, backgroundColor: "#ffffff",
         gridColor: "rgba(46,46,46,0.06)"
       };
     } else {
@@ -31,8 +32,8 @@
         symbols: [[symbol, symbol + "|1D"]], autosize: true, width: "100%", height: "100%",
         locale: "en", colorTheme: "light", isTransparent: false,
         backgroundColor: "#ffffff", chartType: "area", lineWidth: 2,
-        chartOnly: false, hideDateRanges: false, hideMarketStatus: false,
-        hideSymbolLogo: false, showVolume: false, scalePosition: "right",
+        chartOnly: mobile, hideDateRanges: mobile, hideMarketStatus: mobile,
+        hideSymbolLogo: mobile, showVolume: false, scalePosition: "right",
         dateRanges: ["1m|1D", "6m|1D", "12m|1D", "60m|1W", "all|1M"]
       };
     }

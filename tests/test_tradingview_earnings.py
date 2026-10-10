@@ -57,7 +57,7 @@ SEC filing results described here.
     assert "Quarterly and annual earnings" in profile
     assert 'data-tv-symbol="AAPL"' in report
     assert 'data-tv-variant="compact"' in report
-    assert 'tradingview-earnings.js?v=2' in report and 'tradingview-earnings.js?v=2' in profile
+    assert 'tradingview-earnings.js?v=3' in report and 'tradingview-earnings.js?v=3' in profile
     assert report.index('compound-tv-panel') < report.index('SEC filing results described here.')
     assert '<link rel="canonical" href="https://example.test/wealth/earnings/aapl-test-earnings/">' in report
     assert 'by TradingView' in profile and 'by TradingView' in report
@@ -71,7 +71,9 @@ SEC filing results described here.
     assert "Close enlarged stock chart" in js
     assert "Escape" in js
     assert "refreshChartSize" in js
-    assert 'earnings.css?v=6' in profile and 'earnings.css?v=5' in report
+    assert "hide_top_toolbar: mobile, hide_legend: mobile, hide_volume: mobile" in js
+    assert "chartOnly: mobile" in js
+    assert 'earnings.css?v=7' in profile and 'earnings.css?v=7' in report
 
 
 def test_unverified_report_without_matching_registry_company_has_no_price_widget(settings):
@@ -97,9 +99,9 @@ def test_mobile_charts_break_out_of_narrow_article_columns(settings):
     build_site(settings)
     css = (settings.public_dir / "static/earnings.css").read_text(encoding="utf-8")
     assert "@media(max-width:760px)" in css
-    assert "width:calc(100vw - 16px)" in css
-    assert "height:570px" in css
-    assert "height:510px" in css
+    assert "width:calc(100vw - 8px)" in css
+    assert "height:650px" in css
+    assert "height:590px" in css
     assert ".article-prose .compound-tv-panel" in css
     assert ".earnings-hub > .compound-tv-panel" in css
     assert ".compound-tv-panel.tv-expanded" in css
