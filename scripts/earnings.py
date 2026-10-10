@@ -370,7 +370,8 @@ def build_article(ticker: str, company: str, cik: int, filing: dict, metrics: di
 
 def run(watchlist: Path, content_dir: Path, *, client: SECClient, now: date,
         lookback: int, max_new: int, dry_run: bool,
-        registry_path: Path | None = None, shard_count: int = 1, shard_index: int = 0) -> list[str]:
+        registry_path: Path | None = None, shard_count: int = 1, shard_index: int = 0,
+        extra_watchlist: Path | None = None) -> list[str]:
     if not 1 <= shard_count <= 24 or not 0 <= shard_index < shard_count:
         raise ValueError("Invalid SEC scan shard")
     directory = content_dir / "wealth"
@@ -400,6 +401,25 @@ def run(watchlist: Path, content_dir: Path, *, client: SECClient, now: date,
         missing = sorted(set(tickers) - set(resolved))
         if missing:
             raise RuntimeError("Watchlist symbols not found in SEC ticker list: " + ", ".join(missing))
+    # Add the confirmed US-reporting issuer from the ten extra public stocks.
+    # Most overseas listings file 20-F/6-K or local-market accounts; they are
+    # watched by the international disclosure monitor, NOT passed through the
+    # US 10-Q / 10-K XBRL report generator.
+    if extra_watchlist is not None and extra_watchlist.is_file():
+        extras = json.loads(extra_watchlist.read_text(encoding="utf-8")).get("listed", [])
+        domestic = [row for row in extras if row.get("slug") == "spcx"
+                    and row.get("exchange", "").lower().startswith("nasdaq")]
+        if domestic:
+            mapping = resolve_tickers(client.get_json(SEC_TICKERS), [row["ticker"] for row in domestic])
+            for row in domestic:
+                issuer = mapping.get(row["ticker"])
+                if not issuer or not re.search(r"space\s*(?:exploration|x)", issuer[0], re.I):
+                    LOG.warning("SEC issuer verification missing for %s; skipping 10-Q/10-K monitoring",
+                                row["ticker"])
+                    continue
+                if row["ticker"] not in resolved and issuer[1] not in {v[1] for v in resolved.values()}:
+                    resolved[row["ticker"]] = (row["name"], issuer[1])
+            tickers = sorted(resolved)
     # Every half-hour run examines one stable shard. Four sharded runs scan
     # the complete index in two hours, while remaining SEC-fair and cheap.
     total = len(tickers)
@@ -461,6 +481,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--max-new", type=int, default=3)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--registry", type=Path, default=Path("content/earnings-sp500.json"))
+    parser.add_argument("--extra-watchlist", type=Path, default=Path("content/company-watchlist.json"))
     parser.add_argument("--shard-count", type=int, default=1)
     parser.add_argument("--shard-index", type=int, default=0)
     args = parser.parse_args(argv)
@@ -471,7 +492,8 @@ def main(argv: list[str] | None = None) -> int:
     created = run(args.watchlist, args.content_dir, client=client,
                   now=datetime.now(timezone.utc).date(), lookback=args.lookback_days,
                   max_new=args.max_new, dry_run=args.dry_run,
-                  registry_path=args.registry, shard_count=args.shard_count, shard_index=args.shard_index)
+                  registry_path=args.registry, shard_count=args.shard_count, shard_index=args.shard_index,
+                  extra_watchlist=args.extra_watchlist)
     for f in created:
         print(f)
     print(f"Earnings checked: {len(created)} new {'candidates' if args.dry_run else 'articles'}")
