@@ -336,7 +336,7 @@ jobs:
           ! grep -Fq 'og:image' /tmp/earnings-lennar.html
           ! grep -Fq 'twitter:image' /tmp/earnings-lennar.html
           ! grep -Fq 'Photo: Unsplash' /tmp/earnings-lennar.html
-          grep -Fq 'Revenue (US GAAP)' /tmp/earnings-lennar.html
+          grep -Fq 'US GAAP · matched reporting periods' /tmp/earnings-lennar.html
           # Premium earnings template must show readable source-bound charts,
           # SEO canonical metadata and no mismatched stock-photo hero.
           test "$(grep -o 'class="earnings-kpi earnings-kpi-' /tmp/earnings-lennar.html | wc -l)" -eq 3
