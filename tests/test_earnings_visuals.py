@@ -2,6 +2,7 @@
 from datetime import date
 from pathlib import Path
 import importlib.util
+import json
 
 import pytest
 import yaml
@@ -135,35 +136,45 @@ def test_generator_embeds_validated_snapshot_and_does_not_repeat_dashboard():
     assert render_earnings_dashboard(snap).count("<svg ") == 3
 
 
-def test_earnings_template_has_cards_trends_and_optional_ads(settings):
-    folder = settings.content_dir / "wealth"
-    folder.mkdir(parents=True, exist_ok=True)
-    (settings.content_dir / "site.yml").write_text(
-        """adsense:
-  client: "ca-pub-6115783809711785"
-  slots:
-    article_top: "1111111111"
-    article_bottom: "2222222222"
-    earnings_mid: "3333333333"
-""", encoding="utf-8")
-    metadata = {
-        "title": "TestCo earnings", "slug": "testco-earnings",
-        "pillar": "wealth", "canonical_path": "/wealth/earnings/testco-earnings/",
-        "date": "2026-10-10",
-        "summary": "Official US GAAP data", "tags": ["automated-earnings", "earnings"],
-        "earnings_snapshot": snapshot(),
+def test_canonical_company_report_has_charts_and_source_links(settings):
+    registry={
+        "source":"https://sec.example.test","checked":"2026-10-10",
+        "company_count":1,"security_count":1,
+        "members":[{"name":"TestCo","symbol":"TEST","symbols":["TEST"],"cik":1234,
+                    "active":True,"sector":"Industrials"}]
     }
-    file = folder / "testco-earnings.md"
-    file.write_text("---\n" + yaml.safe_dump(metadata,sort_keys=False) +
-                    "---\n\n## SEC filing and limitations\n\nVerified results.", encoding="utf-8")
+    (settings.content_dir/"earnings-sp500.json").write_text(json.dumps(registry))
+    folder=settings.content_dir/"earnings-profiles"
+    folder.mkdir(parents=True,exist_ok=True)
+    source="https://www.sec.gov/Archives/edgar/data/1234/filing.htm"
+    periods=[]
+    for quarter,end,rev in (("Q1","2026-03-31",100e6),
+                             ("Q2","2026-06-30",120e6),
+                             ("Q3","2026-09-30",150e6)):
+        periods.append({
+            "fy":2026,"fp":quarter,"period_end":end,"filed":"2026-10-09",
+            "form":"10-Q","accession":"accn-"+quarter,"source":source,
+            "metrics":{
+                "revenue":{"current":rev,"prior_year":rev*.9},
+                "net_income":{"current":rev*.1,"prior_year":rev*.09},
+                "diluted_eps":{"current":1.0,"prior_year":0.9}
+            }})
+    (folder/"test.json").write_text(json.dumps({"ticker":"TEST","cik":1234,
+                                                 "company":"TestCo","latest":periods[-1],
+                                                 "periods":periods,"updated":"2026-10-10"}))
+    (settings.content_dir/"site.yml").write_text(
+        "adsense:\n  client: ca-pub-6115783809711785\n", encoding="utf-8")
     build_site(settings)
-    html = (settings.public_dir / "wealth" / "earnings" / "testco-earnings" /
-            "index.html").read_text(encoding="utf-8")
-    assert html.count('class="earnings-kpi ') == 3
-    assert html.count('class="earnings-trend"') == 3
-    assert html.index('class="earnings-dashboard"') < html.index("Verified results.")
-    assert 'data-ad-slot="3333333333"' in html
-    assert 'data-ad-slot="2222222222"' in html
-    assert 'data-ad-slot="1111111111"' not in html
-    assert '<img ' not in html
-    assert '<link rel="canonical" href="https://example.test/wealth/earnings/testco-earnings/">' in html
+    root=settings.public_dir
+    html=(root/"stocks/test/index.html").read_text()
+    hub=(root/"wealth/earnings/index.html").read_text()
+    assert "FY2026 Q3" in html
+    assert "2026-09-30" in html
+    assert "FY2026 revenue" in html
+    assert "25.0%" in html
+    assert html.count("earnings-one-chart-row") >= 9
+    assert source in html
+    assert 'scope="col"' in html
+    assert 'data-ad-client' not in html or "ca-pub-" in html
+    assert "/stocks/test/" in hub
+    assert "/wealth/earnings/test-earnings" not in hub
