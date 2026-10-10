@@ -121,3 +121,63 @@ Legacy article content.
     assert '<loc>https://example.test/wealth/earnings/ctas-earnings-fy2027-q1/</loc>' not in sitemap
     assert '<loc>https://example.test/stocks/ctas/</loc>' in sitemap
     assert "Cintas fiscal FY2027 Q1 results" not in hub
+
+
+def test_q3_sec_trigger_hydrates_q1_and_q2_from_exact_same_fiscal_year():
+    accns = ["0000000001-26-000111", "0000000001-26-000222", "0000000001-26-000333"]
+    ends = ["2026-03-31","2026-06-30","2026-09-30"]
+    starts = ["2026-01-01","2026-04-01","2026-07-01"]
+    pends = ["2025-03-31","2025-06-30","2025-09-30"]
+    pstarts = ["2025-01-01","2025-04-01","2025-07-01"]
+    filed = ["2026-05-10","2026-08-10","2026-10-09"]
+    forms = []
+    for i in range(3):
+        forms.append({"form":"10-Q","filingDate":filed[i],"reportDate":ends[i],
+                      "accessionNumber":accns[i],"primaryDocument":f"q{i+1}.htm"})
+    keys=("accessionNumber","form","filingDate","reportDate","primaryDocument")
+    submissions={"filings":{"recent":{k:[f[k] for f in forms] for k in keys}}}
+    facts={"facts":{"us-gaap":{}}}
+    for tag,unit,multiplier in [
+        ("RevenueFromContractWithCustomerExcludingAssessedTax","USD",1e9),
+        ("NetIncomeLoss","USD",1e8),
+        ("EarningsPerShareDiluted","USD/shares",0.3),
+    ]:
+        rows=[]
+        for i in range(3):
+            base={"form":"10-Q","filed":filed[i],
+                  "fy":2026,"fp":f"Q{i+1}","accn":accns[i]}
+            rows.extend([
+                {**base,"start":starts[i],"end":ends[i],
+                 "val":(10+2*i+(1 if i==2 else 0))*multiplier},
+                {**base,"start":pstarts[i],"end":pends[i],
+                 "val":(9+2*i)*multiplier},
+            ])
+        facts["facts"]["us-gaap"][tag]={"units":{unit:rows}}
+    result=consolidated.dashboard(
+        None,"AAPL","Apple",320193,forms[2],submissions,facts,
+        checked=date(2026,10,10))
+    assert result is not None
+    assert [(p["fy"],p["fp"]) for p in result["periods"]] == [
+        (2026,"Q1"),(2026,"Q2"),(2026,"Q3")]
+    assert [p["period_end"] for p in result["periods"]] == ends
+    view=consolidated.summary(result)
+    assert view["comparisons"]["revenue"] == 25.0
+    assert view["complete_ytd"] is True
+    assert view["totals"]["revenue"] == 37e9
+    assert result["latest"]["period_end"] == "2026-09-30"
+    assert all(p["source"].startswith("https://www.sec.gov") for p in result["periods"])
+
+
+def test_fy2027_q1_filed_2026_remains_fiscal_q1():
+    filing={"form":"10-Q","filingDate":"2026-10-08",
+            "reportDate":"2026-08-31","accessionNumber":"0000723254-26-000047",
+            "primaryDocument":"fy27q1.htm"}
+    metrics={key:{"current":100 if key!="diluted_eps" else 1.0,
+                  "prior":90 if key!="diluted_eps" else 0.9,
+                  "unit":"USD/shares" if key=="diluted_eps" else "USD",
+                  "tag":key,"start":"2026-06-01","end":"2026-08-31",
+                  "fy":2027,"fp":"Q1"} for key in ("revenue","net_income","diluted_eps")}
+    quarter=consolidated.verified_period(filing,metrics,723254)
+    assert quarter["fy"] == 2027
+    assert quarter["fp"] == "Q1"
+    assert quarter["period_end"] == "2026-08-31"
