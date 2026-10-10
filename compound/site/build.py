@@ -889,6 +889,19 @@ def series_context(article: Article, content_dir: Path) -> dict:
 
 def article_context(env: Environment, settings: Settings, article: Article, preview: bool) -> dict:
     body = article.body_with_charts
+    if "automated-earnings" in article.tags and article.path is not None:
+        # Use SEC-verified dashboard metadata for new reports; older reports
+        # can show only values already published in their SEC-backed table.
+        # No fabricated quarters, images or client-side financial-data APIs.
+        from compound.site.earnings_visuals import (
+            from_existing_markdown, render_earnings_dashboard,
+        )
+        earnings_meta, earnings_markdown = parse_markdown_file(article.path)
+        snapshot = earnings_meta.get("earnings_snapshot")
+        if not snapshot:
+            snapshot = from_existing_markdown(earnings_markdown, earnings_meta)
+        if snapshot:
+            body = render_earnings_dashboard(snapshot) + "\n" + body
     series = series_context(article, settings.content_dir)
     if article.series_id == "live-to-100":
         for block in ("figures", "horizon", "timeline"):
@@ -926,7 +939,7 @@ def load_site_config(content_dir: Path) -> dict:
     return {
         "adsense": {
             "client": str(ads.get("client") or "").strip(),
-            "slots": {k: str(slots.get(k) or "").strip() for k in ("article_top", "article_bottom", "feed")},
+            "slots": {k: str(slots.get(k) or "").strip() for k in ("article_top", "article_bottom", "earnings_mid", "feed")},
         },
         "analytics": {"measurement_id": str(analytics.get("measurement_id") or "").strip()},
         "email_form_action": str(data.get("email_form_action") or "").strip(),
@@ -942,7 +955,7 @@ def _env(settings: Settings) -> Environment:
     if audit_mode:
         # Lighthouse should measure Compound's own frontend, not third-party ad cookies/issues.
         # Production builds do not set COMPOUND_AUDIT_MODE, so live AdSense is unchanged.
-        adsense_cfg = {"client": "", "slots": {"article_top": "", "article_bottom": "", "feed": ""}}
+        adsense_cfg = {"client": "", "slots": {"article_top": "", "article_bottom": "", "earnings_mid": "", "feed": ""}}
     env.globals.update(adsense=adsense_cfg)
     env.globals.update(analytics=site_cfg["analytics"])
     env.globals.update(

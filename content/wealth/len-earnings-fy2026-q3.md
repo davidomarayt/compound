@@ -8,10 +8,8 @@ date: '2026-10-10'
 reviewed: '2026-10-10'
 draft: false
 publication_status: published
-summary: Lennar (LEN) reported $8.05bn in revenue and $1.19 diluted GAAP EPS in its FY 2026 Q3 SEC filing. Compare reported
-  results with the year-earlier period.
-meta_description: 'LEN FY 2026 Q3 reported earnings: revenue $8.05bn, diluted EPS $1.19. View verified SEC figures and year-on-year
-  changes.'
+summary: "Lennar (LEN) FY 2026 Q3: revenue $8.05bn (-8.7% YoY), net income $283.88m (-52.0%), diluted EPS $1.19 (-48.0%)."
+meta_description: "LEN FY 2026 Q3 earnings: revenue $8.05bn (-8.7% YoY), GAAP EPS $1.19 (-48.0%). SEC-verified results and trends."
 tags:
 - earnings
 - automated-earnings
@@ -25,37 +23,33 @@ sources:
   url: https://data.sec.gov/api/xbrl/companyfacts/CIK0000920760.json
 filing_accession: 0001628280-26-064557
 automation: SEC-reconciled deterministic financial summary; not AI-generated interpretation
+earnings_snapshot:
+  form: "10-Q"
+  period_label: "FY 2026 Q3"
+  report_end: "2026-08-31"
+  metrics:
+    revenue:
+      current: 8050000000
+      prior: 8810000000
+      reported_change: "-8.7%"
+    net_income:
+      current: 283880000
+      prior: 590970000
+      reported_change: "-52.0%"
+    diluted_eps:
+      current: 1.19
+      prior: 2.29
+      reported_change: "-48.0%"
 ---
 
-**Lennar (LEN)** filed its 10-Q covering the three-month quarter ending **2026-08-31** on **2026-10-02**.
+**Lennar (LEN)** filed its SEC Form 10-Q for the quarter ending **2026-08-31**.
 
-> **Source-verified automated report:** Compound created this article from standardised figures in the cited SEC filing. This is a financial-data summary, not an earnings-call recap, analyst-consensus comparison or investment recommendation. Initial earnings announcements may precede the filing.
+## What stands out
 
-## Earnings at a glance
+Revenue -8.7%; net income -52.0%; diluted GAAP EPS -48.0%. The cards, financial table and source-backed comparisons above show the scale of the changes without inferring their causes.
 
-| Reported metric | Current period | Corresponding prior-year period | Change |
-|:---|---:|---:|---:|
-| Revenue (US GAAP) | $8.05bn | $8.81bn | -8.7% |
-| Net income (US GAAP) | $283.88m | $590.97m | -52.0% |
-| Diluted earnings per share (GAAP) | $1.19 | $2.29 | -48.0% |
+## Filing and limitations
 
-## Revenue and profit: what changed?
+Filed **2026-10-02**. [Read the original SEC filing](https://www.sec.gov/Archives/edgar/data/920760/000162828026064557/len-20260831.htm). These are US GAAP figures, not adjusted earnings, analyst forecasts or stock-price reactions. Older reports may have only a year-on-year comparison rather than a full quarterly trend; no missing periods are estimated.
 
-Revenue fell from $8.81bn to $8.05bn (-8.7% year on year).
-
-Net income fell from $590.97m to $283.88m (-52.0% year on year).
-
-Diluted GAAP EPS fell from $2.29 to $1.19 (-48.0% year on year).
-
-
-## How to interpret these results
-
-These figures are reported US GAAP results from the SEC's standardised company facts. They do not include management's full commentary, adjusted (non-GAAP) EPS, analyst estimates, guidance or the share-price reaction. Revenue growth does not by itself establish profitability or future returns.
-
-The comparison uses the same financial-statement concept and a corresponding period one year earlier; amended disclosures or accounting changes can affect comparability. Consult the source filing before relying on the figures.
-
-## When were the results filed?
-
-The SEC received the **10-Q** on **2026-10-02**, covering a period ending **2026-08-31**. [Read the original filing](https://www.sec.gov/Archives/edgar/data/920760/000162828026064557/len-20260831.htm).
-
-*This report is automated and source-linked. It is not individually reviewed before publication; corrections can be sent to [Compound](mailto:david@compound.ie). It is general financial information, not investment advice.*
+*Automatically generated from SEC financial data; not individually reviewed before publication. General information, not investment advice. Corrections: [Compound](mailto:david@compound.ie).*

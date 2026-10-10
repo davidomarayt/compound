@@ -10,6 +10,7 @@ import argparse
 from datetime import date, datetime, timedelta, timezone
 from html import escape
 import json
+import math
 import logging
 import os
 from pathlib import Path
@@ -236,7 +237,60 @@ def _comparison_note(label: str, now: float, prior: float, formatter) -> str:
     return f"{label} {movement} from {formatter(prior)} to {formatter(now)} ({diff:+.1f}% year on year)."
 
 
-def build_article(ticker: str, company: str, cik: int, filing: dict, metrics: dict, today: date) -> tuple[str, str]:
+
+def metric_history(facts: dict, filing: dict, metric: dict, *, unit: str, limit: int) -> list[dict]:
+    """Use only SEC-reported matching-duration facts available as of this filing.
+
+    Do not derive Q4 from annual/year-to-date values and never interpolate gaps.
+    Quarterly history may therefore have fewer than eight observations.
+    """
+    annual = filing["form"] == "10-K"
+    report_end = _iso(filing["reportDate"])
+    as_of = filing["filingDate"]
+    tagged = _metric_candidates(facts, metric["tag"], unit)
+    selected: dict[str, dict] = {}
+    for row in tagged:
+        try:
+            end = _iso(row["end"])
+            submitted = str(row.get("filed") or "")
+            value = row["val"]
+            if row.get("form") != ("10-K" if annual else "10-Q"):
+                continue
+            if not submitted or submitted > as_of or end > report_end:
+                continue
+            if (report_end - end).days > (2400 if annual else 1150):
+                continue
+            if not _duration_ok(row, end, annual):
+                continue
+            if isinstance(value, bool) or not isinstance(value, (int, float)):
+                continue
+            if not math.isfinite(value):
+                continue
+        except (KeyError, TypeError, ValueError):
+            continue
+        key = end.isoformat()
+        existing = selected.get(key)
+        score = (1 if row.get("accn") == filing["accessionNumber"] else 0,
+                 1 if row.get("frame") else 0,
+                 submitted)
+        if existing is None or score > existing["score"]:
+            selected[key] = {"end": key, "value": value, "score": score}
+    points = sorted(selected.values(), key=lambda r: r["end"])[-limit:]
+    # A final selected fact is sourced from the exact filing accession; always
+    # align the latest chart observation with the verified article headline.
+    verified_end = metric["end"]
+    if verified_end not in {x["end"] for x in points}:
+        points.append({"end": verified_end, "value": metric["current"]})
+        points.sort(key=lambda r: r["end"])
+        points = points[-limit:]
+    else:
+        for point in points:
+            if point["end"] == verified_end:
+                point["value"] = metric["current"]
+    return [{"end": p["end"], "value": p["value"]} for p in points]
+
+
+def build_article(ticker: str, company: str, cik: int, filing: dict, metrics: dict, today: date, facts: dict | None = None) -> tuple[str, str]:
     label, period_slug = period_label(filing, metrics)
     slug = f"{ticker.lower()}-earnings-{period_slug}"
     source = filing_url(cik, filing)
@@ -246,9 +300,27 @@ def build_article(ticker: str, company: str, cik: int, filing: dict, metrics: di
     rev = metrics["revenue"]
     net = metrics["net_income"]
     diluted = metrics["diluted_eps"]
-    summary = (f"{company} ({ticker}) reported {money(rev['current'])} in revenue and "
-               f"{eps(diluted['current'])} diluted GAAP EPS in its {label} SEC filing. "
-               "Compare reported results with the year-earlier period.")
+    def delta(item: dict) -> str:
+        change = change_pct(item["current"], item["prior"])
+        return f"{change:+.1f}%" if change is not None else "not comparable"
+    summary = (
+        f"{company} ({ticker}) {label}: revenue {money(rev['current'])} ({delta(rev)} YoY), "
+        f"net income {money(net['current'])} ({delta(net)}), "
+        f"diluted GAAP EPS {eps(diluted['current'])} ({delta(diluted)})."
+    )
+    financial_snapshot = {
+        "form": filing["form"], "report_end": filing["reportDate"],
+        "period_label": label,
+        "metrics": {
+            key: {
+                "current": item["current"], "prior": item["prior"],
+                "history": metric_history(facts, filing, item,
+                                          unit=item["unit"],
+                                          limit=4 if filing["form"] == "10-K" else 8) if facts else [],
+            }
+            for key, item in metrics.items()
+        },
+    }
     meta = {
         "title": f"{company} ({ticker}) Earnings: {label} Revenue, Profit and EPS",
         "seo_title": f"{ticker} Earnings {label}: Revenue, EPS and Net Income | Compound",
@@ -260,8 +332,9 @@ def build_article(ticker: str, company: str, cik: int, filing: dict, metrics: di
         "draft": False,
         "publication_status": "published",
         "summary": summary,
-        "meta_description": f"{ticker} {label} reported earnings: revenue {money(rev['current'])}, diluted EPS {eps(diluted['current'])}. View verified SEC figures and year-on-year changes.",
+        "meta_description": f"{ticker} {label}: revenue {money(rev['current'])} ({delta(rev)} YoY), net income {money(net['current'])}, diluted EPS {eps(diluted['current'])}. SEC filing data.",
         "tags": ["earnings", "automated-earnings", "stocks", "quarterly-results" if filing["form"] == "10-Q" else "annual-results", ticker.lower()],
+        "earnings_snapshot": financial_snapshot,
         "sources": [
             {"title": f"SEC EDGAR: {company} {filing['form']} filed {filing['filingDate']}", "url": source},
             {"title": "SEC EDGAR XBRL company facts: comparable US GAAP results", "url": f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json"},
@@ -269,36 +342,28 @@ def build_article(ticker: str, company: str, cik: int, filing: dict, metrics: di
         "filing_accession": filing["accessionNumber"],
         "automation": "SEC-reconciled deterministic financial summary; not AI-generated interpretation",
     }
-    metrics_table = [
-        ("Revenue (US GAAP)", rev, money),
-        ("Net income (US GAAP)", net, money),
-        ("Diluted earnings per share (GAAP)", diluted, eps),
-    ]
     lines = [
-        f"**{safe_company} ({safe_ticker})** filed its {escape(filing['form'])} covering the {period} ending **{rev['end']}** on **{filing['filingDate']}**.",
+        f"**{safe_company} ({safe_ticker})** filed its {escape(filing['form'])} for the {period} ending **{rev['end']}**.",
         "",
-        "> **Source-verified automated report:** Compound created this article from standardised figures in the cited SEC filing. This is a financial-data summary, not an earnings-call recap, analyst-consensus comparison or investment recommendation. Initial earnings announcements may precede the filing.",
+        "## What stands out", "",
+        (f"Revenue {('increased' if rev['current'] > rev['prior'] else 'declined' if rev['current'] < rev['prior'] else 'was unchanged')} "
+         f"year on year, while net income "
+         f"{('increased' if net['current'] > net['prior'] else 'declined' if net['current'] < net['prior'] else 'was unchanged')}. "
+         "The data above shows the direction and scale of all three GAAP metrics."),
         "",
-        "## Earnings at a glance", "",
-        "| Reported metric | Current period | Corresponding prior-year period | Change |",
-        "|:---|---:|---:|---:|",
+        "## Filing and limitations", "",
+        f"SEC {filing['form']} filed **{filing['filingDate']}** for the period ending **{filing['reportDate']}**. "
+        f"[Read the original SEC filing]({source}).",
+        "",
+        "These are reported US GAAP figures, not analyst expectations, adjusted results or a share-price reaction. "
+        "Year-on-year comparisons use the same financial-statement concept; missing quarters are omitted, not estimated. "
+        "The report is not an investment recommendation.",
+        "",
+        "*Automated source-verified report, not individually reviewed before publication. "
+        "This is general financial information, not investment advice. "
+        "Corrections: [Compound](mailto:david@compound.ie).*",
+        "",
     ]
-    for caption, item, fmt in metrics_table:
-        pct = change_pct(item["current"], item["prior"])
-        change = f"{pct:+.1f}%" if pct is not None else "Not meaningful"
-        lines.append(f"| {caption} | {fmt(item['current'])} | {fmt(item['prior'])} | {change} |")
-    lines.extend([
-        "", "## Revenue and profit: what changed?", "",
-        _comparison_note("Revenue", rev["current"], rev["prior"], money), "",
-        _comparison_note("Net income", net["current"], net["prior"], money), "",
-        _comparison_note("Diluted GAAP EPS", diluted["current"], diluted["prior"], eps), "",
-        "## How to interpret these results", "",
-        "These figures are reported US GAAP results from the SEC's standardised company facts. They do not include management's full commentary, adjusted (non-GAAP) EPS, analyst estimates, guidance or the share-price reaction. Revenue growth does not by itself establish profitability or future returns.", "",
-        "The comparison uses the same financial-statement concept and a corresponding period one year earlier; amended disclosures or accounting changes can affect comparability. Consult the source filing before relying on the figures.", "",
-        "## When were the results filed?", "",
-        f"The SEC received the **{filing['form']}** on **{filing['filingDate']}**, covering a period ending **{filing['reportDate']}**. [Read the original filing]({source}).", "",
-        "*This report is automated and source-linked. It is not individually reviewed before publication; corrections can be sent to [Compound](mailto:david@compound.ie). It is general financial information, not investment advice.*", "",
-    ])
     body = "---\n" + yaml.safe_dump(meta, allow_unicode=True, sort_keys=False, width=120) + "---\n\n" + "\n".join(lines)
     return slug, body
 
@@ -371,7 +436,7 @@ def run(watchlist: Path, content_dir: Path, *, client: SECClient, now: date,
             if metrics is None:
                 continue
             try:
-                slug, content = build_article(ticker, company, cik, filing, metrics, now)
+                slug, content = build_article(ticker, company, cik, filing, metrics, now, facts=facts)
             except ValueError as exc:
                 LOG.warning("Skipping %s %s: %s", ticker, filing["accessionNumber"], exc)
                 continue

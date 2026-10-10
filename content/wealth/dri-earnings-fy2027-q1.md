@@ -8,10 +8,8 @@ date: '2026-10-10'
 reviewed: '2026-10-10'
 draft: false
 publication_status: published
-summary: Darden Restaurants (DRI) reported $3.20bn in revenue and $2.04 diluted GAAP EPS in its FY 2027 Q1 SEC filing. Compare
-  reported results with the year-earlier period.
-meta_description: 'DRI FY 2027 Q1 reported earnings: revenue $3.20bn, diluted EPS $2.04. View verified SEC figures and year-on-year
-  changes.'
+summary: "Darden Restaurants (DRI) FY 2027 Q1: revenue $3.20bn (+5.1% YoY), net income $233.40m (-9.5%), diluted EPS $2.04 (-6.8%)."
+meta_description: "DRI FY 2027 Q1 earnings: revenue $3.20bn (+5.1% YoY), GAAP EPS $2.04 (-6.8%). SEC-verified results and trends."
 tags:
 - earnings
 - automated-earnings
@@ -25,36 +23,33 @@ sources:
   url: https://data.sec.gov/api/xbrl/companyfacts/CIK0000940944.json
 filing_accession: 0000940944-26-000042
 automation: SEC-reconciled deterministic financial summary; not AI-generated interpretation
+earnings_snapshot:
+  form: "10-Q"
+  period_label: "FY 2027 Q1"
+  report_end: "2026-08-30"
+  metrics:
+    revenue:
+      current: 3200000000
+      prior: 3040000000
+      reported_change: "+5.1%"
+    net_income:
+      current: 233400000
+      prior: 257800000
+      reported_change: "-9.5%"
+    diluted_eps:
+      current: 2.04
+      prior: 2.19
+      reported_change: "-6.8%"
 ---
 
-**Darden Restaurants (DRI)** filed its 10-Q covering the three-month quarter ending **2026-08-30** on **2026-10-02**.
+**Darden Restaurants (DRI)** filed its SEC Form 10-Q for the quarter ending **2026-08-30**.
 
-> **Source-verified automated report:** Compound created this article from standardised figures in the cited SEC filing. This is a financial-data summary, not an earnings-call recap, analyst-consensus comparison or investment recommendation. Initial earnings announcements may precede the filing.
+## What stands out
 
-## Earnings at a glance
+Revenue +5.1%; net income -9.5%; diluted GAAP EPS -6.8%. The cards, financial table and source-backed comparisons above show the scale of the changes without inferring their causes.
 
-| Reported metric | Current period | Corresponding prior-year period | Change |
-|:---|---:|---:|---:|
-| Revenue (US GAAP) | $3.20bn | $3.04bn | +5.1% |
-| Net income (US GAAP) | $233.40m | $257.80m | -9.5% |
-| Diluted earnings per share (GAAP) | $2.04 | $2.19 | -6.8% |
+## Filing and limitations
 
-## Revenue and profit: what changed?
+Filed **2026-10-02**. [Read the original SEC filing](https://www.sec.gov/Archives/edgar/data/940944/000094094426000042/dri-20260830.htm). These are US GAAP figures, not adjusted earnings, analyst forecasts or stock-price reactions. Older reports may have only a year-on-year comparison rather than a full quarterly trend; no missing periods are estimated.
 
-Revenue increased from $3.04bn to $3.20bn (+5.1% year on year).
-
-Net income fell from $257.80m to $233.40m (-9.5% year on year).
-
-Diluted GAAP EPS fell from $2.19 to $2.04 (-6.8% year on year).
-
-## How to interpret these results
-
-These figures are reported US GAAP results from the SEC's standardised company facts. They do not include management's full commentary, adjusted (non-GAAP) EPS, analyst estimates, guidance or the share-price reaction. Revenue growth does not by itself establish profitability or future returns.
-
-The comparison uses the same financial-statement concept and a corresponding period one year earlier; amended disclosures or accounting changes can affect comparability. Consult the source filing before relying on the figures.
-
-## When were the results filed?
-
-The SEC received the **10-Q** on **2026-10-02**, covering a period ending **2026-08-30**. [Read the original filing](https://www.sec.gov/Archives/edgar/data/940944/000094094426000042/dri-20260830.htm).
-
-*This report is automated and source-linked. It is not individually reviewed before publication; corrections can be sent to [Compound](mailto:david@compound.ie). It is general financial information, not investment advice.*
+*Automatically generated from SEC financial data; not individually reviewed before publication. General information, not investment advice. Corrections: [Compound](mailto:david@compound.ie).*
