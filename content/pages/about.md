@@ -5,7 +5,7 @@ Compound is an Irish site about three things that compound over time: your healt
 
 ## Who is behind Compound
 
-Compound was founded and is edited by **David**, an Irish writer with a BSc in Biotechnology and professional experience in biopharmaceutical manufacturing. He is responsible for choosing topics, reviewing the evidence and approving every article before publication.
+Compound was founded and is edited by **David**, an Irish writer with a BSc in Biotechnology and professional experience in biopharmaceutical manufacturing. He is responsible for editorial standards and for reviewing and approving the site's ordinary editorial articles. A clearly labelled automated earnings feed uses verified SEC financial-statement data and is not individually reviewed before publication.
 
 That background helps with reading scientific material, but it does not make Compound a medical, financial, tax or legal adviser. Articles explain published evidence and official Irish guidance; they do not replace advice based on your individual circumstances.
 
@@ -17,7 +17,7 @@ That background helps with reading scientific material, but it does not make Com
 
 Every piece starts with a question people in Ireland actually search for. Before a word is written, we gather the strongest sources we can find for it: official Irish guidance and statistics from bodies such as Revenue, Citizens Information, the HSE and the CSO, and, for health and life pieces, peer-reviewed research, with a preference for systematic reviews, meta-analyses and randomised trials.
 
-AI tools may assist with research organisation and early drafting, but they do not decide what Compound publishes. Every article is reviewed and approved by David. Numbers, dates, thresholds and study results are checked against the cited source before publication. A separate editorial pass checks accuracy, context, usefulness and plain language, and a draft is revised or withheld if it falls short. Every article lists its sources and links readers to the evidence behind its claims.
+AI tools may assist with research organisation and early drafting, but they do not decide what Compound publishes. Ordinary editorial articles are reviewed and approved by David. Numbers, dates, thresholds and study results are checked against the cited source before publication. A separate editorial pass checks accuracy, context, usefulness and plain language, and a draft is revised or withheld if it falls short. Editorial articles list their sources and link readers to the evidence behind their claims. Our separate [Company Earnings](/wealth/earnings/) articles are published automatically from standardised SEC filings only when the financial figures and comparisons pass strict checks; the source filing is linked and the lack of individual human review is disclosed.
 
 We name what a study is and how big it was, we say who a rule does not apply to, and we do not overstate. When a source is weak or sources disagree, the article says so.
 
