@@ -337,6 +337,15 @@ jobs:
           ! grep -Fq 'twitter:image' /tmp/earnings-lennar.html
           ! grep -Fq 'Photo: Unsplash' /tmp/earnings-lennar.html
           grep -Fq 'Revenue (US GAAP)' /tmp/earnings-lennar.html
+          # Premium earnings template must show readable source-bound charts,
+          # SEO canonical metadata and no mismatched stock-photo hero.
+          test "$(grep -o 'class="earnings-kpi earnings-kpi-' /tmp/earnings-lennar.html | wc -l)" -eq 3
+          test "$(grep -o 'class="earnings-trend"' /tmp/earnings-lennar.html | wc -l)" -eq 3
+          grep -Fq 'class="earnings-results-table"' /tmp/earnings-lennar.html
+          grep -Fq 'role="img"' /tmp/earnings-lennar.html
+          grep -Fq '−8.7%' /tmp/earnings-lennar.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/wealth/earnings/len-earnings-fy2026-q3/">' /tmp/earnings-lennar.html
+          ! grep -Fq 'Investment Fee Impact Calculator' /tmp/earnings-lennar.html
           # Relevant low-profile links go AFTER the filing data, not
           # a large investment-fee calculator panel in the middle.
           ! grep -Fq 'class="article-tool-banner' /tmp/earnings-lennar.html
