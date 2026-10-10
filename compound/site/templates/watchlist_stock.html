@@ -6,10 +6,10 @@
 {% block content %}
 <div class="earnings-hub stocks-company">
 <nav class="earnings-crumb" aria-label="Breadcrumb"><a href="/">Compound</a> / <a href="/stocks/">Stocks</a> / {{ company.ticker }}</nav>
-<header class="earnings-hero"><p class="eyebrow">COMPOUND STOCKS / GLOBAL LISTED COMPANY</p><h1>{{ company.name }} ({{ company.ticker }})</h1>
+<header class="earnings-hero"><p class="eyebrow">COMPOUND STOCKS / COMPANY PROFILE</p><h1>{{ company.name }} ({{ company.ticker }})</h1>
 <p class="earnings-lede">{{ company.summary }}</p>
 <div class="company-fact-strip"><span><strong>Ticker:</strong> {{ company.ticker }}</span><span><strong>Listing:</strong> {{ company.exchange }}</span><span><strong>Home market:</strong> {{ company.market }}</span><span><strong>Industry:</strong> {{ company.sector }}</span></div>
-<p class="earnings-directory-source">Primary listing reference: <a href="{{ company.source }}" rel="noopener noreferrer" target="_blank">{{ company.exchange }} ↗</a>. This company is on Compound's expanded watchlist, not the monitored S&amp;P 500 register. For ADRs, prices refer to the named depositary receipt rather than the local ordinary share.</p>
+<p class="earnings-directory-source">Primary listing reference: <a href="{{ company.source }}" rel="noopener noreferrer" target="_blank">{{ company.exchange }} ↗</a>. For ADRs, prices refer to the named depositary receipt rather than the local ordinary share.</p>
 </header>
 {{ tradingview_panel|safe }}
 <section class="earnings-section" id="stocks-company-coverage"><div class="earnings-heading"><p class="eyebrow">ORIGINAL COVERAGE</p><h2>News &amp; analysis</h2><span>{{ news|length + research|length }} linked articles</span></div>
