@@ -10,14 +10,28 @@ def test_pia_centre_and_provider_routes_are_indexable(settings):
         """updated: '2026-10-10'
 providers:
   - name: Example Provider
+    slug: example-provider
+    category: Bank
+    stage: intent
     statement: Example publicly stated interest in launching a PIA.
     status: Plans to offer
     availability: Not open yet
     annual_fee: Not published
     dealing_fee: Not published
+    fund_fee: Not published
+    fx_fee: Not published
+    minimum_investment: Not published
+    transfer_terms: Not published
     investment_range: Not published
+    checked: '2026-10-10'
     source_url: https://example.com/provider
     source_label: Example official source
+    fee_model:
+      verified: false
+    referral:
+      active: false
+      approved: false
+sponsorships: []
 """,
         encoding="utf-8",
     )
@@ -40,6 +54,15 @@ providers:
     assert "Example Provider" in hub and "Example Provider" in compare
     assert "Not published" in compare and "https://example.com/provider" in compare
     assert "not currently available" not in compare  # No invented blanket claims.
+    assert 'data-pia-comparison' in compare
+    assert 'data-pia-provider-list' in compare
+    assert 'data-pia-filter-search' in compare
+    assert 'Awaiting verified fees' in compare
+    assert 'data-fees-verified="false"' in compare
+    assert 'href="/static/pia-centre.css?v=2"' in compare
+    assert '/static/pia-providers.js?v=1' in compare
+    assert 'rel="sponsored' not in compare
+    assert 'Paid referral:' not in compare
     assert "/pia/" in wealth
     assert sitemap.count("<loc>https://example.test/pia/</loc>") == 1
     assert sitemap.count("<loc>https://example.test/pia/providers/</loc>") == 1
