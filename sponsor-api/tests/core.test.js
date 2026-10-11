@@ -73,3 +73,13 @@ test('checkout reuses previously opened sessions, rejects completed sessions and
  for(const key of ["session.status==='complete'","session.status==='open'",'p_previous_session_id:previous'])assert(checkout.includes(key),'checkout missing '+key);
  assert(schema.includes('stripe_checkout_id is not distinct from p_previous_session_id'));
 });
+
+test('PostgreSQL migration is four correctly dollar-quoted functions',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const sql=await readFile(new URL('../schema.sql',import.meta.url),'utf8');
+ const delimiters=(sql.match(/\$\$/g)||[]).length;
+ assert.equal(delimiters,8,'Expected four opening and four closing PostgreSQL dollar quotes');
+ assert(!/\bas \$\s*\n/.test(sql),'Malformed opening SQL quote');
+ assert(!(/\bend; \$;/.test(sql)),'Malformed closing SQL quote');
+ assert.equal((sql.match(/create or replace function public\.solar_/g)||[]).length,4);
+});
