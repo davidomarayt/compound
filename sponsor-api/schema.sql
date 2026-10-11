@@ -67,6 +67,7 @@ create table if not exists public.solar_homeowner_leads (
  electricity_details text not null default '',
  message text not null default '',
  customer_consent boolean not null check(customer_consent),
+ sponsor_name_at_consent text not null,
  submitted_at timestamptz not null default now(),
  delivered_at timestamptz
 );
@@ -202,6 +203,42 @@ begin
  return jsonb_build_object('ok',true,'kind',p_kind,'application_id',a.id);
 end; $$;
 
+-- Customer details may only be shared with the named and ACTIVE county sponsor.
+create or replace function public.solar_submit_homeowner_lead(
+ p_county text,p_sponsor_id uuid,p_named_sponsor text,
+ p_customer_name text,p_customer_email text,p_customer_phone text,
+ p_eircode text,p_electricity text,p_message text,p_consent boolean
+) returns jsonb language plpgsql security invoker set search_path=public as $$
+declare
+ sponsor record;
+ result_id uuid;
+begin
+ if p_consent is distinct from true then raise exception 'Consent is required'; end if;
+ if length(p_customer_name) not between 1 and 100
+  or length(p_customer_email) not between 3 and 160
+  or length(p_customer_phone) not between 1 and 40
+  or length(p_eircode)>20 or length(p_electricity)>200 or length(p_message)>600 then
+   raise exception 'Invalid lead details';
+ end if;
+ select a.id,a.company,a.email into sponsor
+ from solar_county_slots s
+ join solar_sponsor_applications a on a.id=s.application_id
+ where s.county=p_county and s.status='active'
+   and a.status='active' and a.id=p_sponsor_id
+   and a.company=p_named_sponsor
+ for share of s,a;
+ if not found then raise exception 'No matching active sponsored installer'; end if;
+ insert into solar_homeowner_leads(
+ sponsor_application_id,county,customer_name,customer_email,customer_phone,
+ eircode_or_postcode,electricity_details,message,customer_consent,sponsor_name_at_consent
+ ) values (
+ sponsor.id,p_county,p_customer_name,p_customer_email,p_customer_phone,
+ p_eircode,p_electricity,p_message,true,sponsor.company
+ ) returning id into result_id;
+ return jsonb_build_object('lead_id',result_id,'sponsor_email',sponsor.email,
+ 'sponsor_company',sponsor.company,'county',p_county);
+end; $$;
+
 -- Only privileged server functions should invoke these RPCs.
 revoke all on function public.solar_approve_application(uuid,text,timestamptz) from PUBLIC,anon,authenticated;
 revoke all on function public.solar_get_invite(text) from PUBLIC,anon,authenticated;
@@ -211,3 +248,5 @@ grant execute on function public.solar_approve_application(uuid,text,timestamptz
 grant execute on function public.solar_get_invite(text) to service_role;
 grant execute on function public.solar_store_checkout(uuid,text,text) to service_role;
 grant execute on function public.solar_apply_billing_event(text,text,uuid,text,text,text,integer) to service_role;
+revoke all on function public.solar_submit_homeowner_lead(text,uuid,text,text,text,text,text,text,text,boolean) from PUBLIC,anon,authenticated;
+grant execute on function public.solar_submit_homeowner_lead(text,uuid,text,text,text,text,text,text,text,boolean) to service_role;
