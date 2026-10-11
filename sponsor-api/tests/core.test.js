@@ -38,13 +38,10 @@ test('hashing token is deterministic and avoids storing original invitation in d
 
 test('founding trial ends exactly at the start of Q1 2027 UTC',()=>{assert.equal(new Date(FOUNDING_TRIAL_END_UNIX*1000).toISOString(),'2027-01-01T00:00:00.000Z');});
 
-test('quarterly billing offer uses a Jan-1 fixed trial cutover',async()=>{
+test('quarterly billing offer includes fixed January trial and safeguards',async()=>{
  const {readFile}=await import('node:fs/promises');
  const src=await readFile(new URL('../api/checkout.js',import.meta.url),'utf8');
- assert.match(src,/subscription_data\\[trial_end\\]/);
- assert.match(src,/payment_method_collection/);
- assert.match(src,/automatic_tax\\[enabled\\]/);
- assert.match(src,/line_items\\[0\\]\\[quantity\\]/);
- assert.match(src,/SPONSOR_BILLING_READY/);
- assert.match(src,/SPONSOR_TAX_READY/);
+ for(const field of ['subscription_data[trial_end]','payment_method_collection','automatic_tax[enabled]','line_items[0][quantity]','SPONSOR_BILLING_READY','SPONSOR_TAX_READY']){
+   assert(src.includes(field),'checkout missing '+field);
+ }
 });
