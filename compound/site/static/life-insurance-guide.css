@@ -1,0 +1,38 @@
+/* Life insurance 2026 — scoped editorial visuals. */
+.li26{color:#302a33;margin:1.65rem 0;padding:1.45rem;border:1px solid #ddd4d9;border-radius:15px;background:#fbf9f8;box-shadow:0 4px 24px rgba(43,28,43,.035);font-family:inherit}
+.li26 *{box-sizing:border-box}
+.li26 .ey{color:#805267!important;letter-spacing:.13em;font-weight:800;font-size:.69rem!important;text-transform:uppercase;margin:0 0 .55rem!important}
+.li26 h3{color:#312733!important;font-size:1.32rem!important;margin:.15rem 0 .7rem!important;line-height:1.25!important}
+.li26 p{line-height:1.6;margin:.65rem 0!important}
+.li26 .li26-muted{font-size:.82rem!important;color:#635862!important}
+.li26-statgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem}
+.li26-stat{padding:1rem;background:#eee8ec;border-radius:10px}
+.li26-stat span,.li26-stat small{display:block;font-size:.77rem;line-height:1.4;color:#62545f}
+.li26-stat strong{display:block;font-size:1.55rem;letter-spacing:-.04em;line-height:1.4;color:#673954}
+.li26-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1.1rem 0}
+.li26-grid label{display:block;font-size:.82rem;font-weight:700;line-height:1.35;color:#493843}
+.li26-grid input{display:block;width:100%;min-width:0;font:inherit;font-weight:650;font-size:1.01rem;padding:.65rem .75rem;margin:.34rem 0 .16rem;border:1px solid #b7aab2;border-radius:8px;color:#26212a;background:white}
+.li26-grid .li26-hint{display:block;font-size:.7rem;font-weight:400;color:#73636f}
+.li26-heroresult{padding:1.2rem;background:#eae2e8;border-radius:12px;margin:1rem 0}
+.li26-heroresult span{display:block;font-size:.82rem;letter-spacing:.025em;color:#51434e}
+.li26-heroresult strong{display:block;font-size:clamp(1.9rem,5vw,2.8rem);letter-spacing:-.05em;color:#633751;line-height:1.15}
+.li26-breakdown{display:grid;gap:.4rem;margin:.75rem 0}
+.li26-breakdown div{display:flex;justify-content:space-between;gap:1rem;padding:.45rem 0;border-bottom:1px solid #e5dfe3;font-size:.89rem}
+.li26-breakdown strong{white-space:nowrap}
+.li26-track{height:12px;border-radius:999px;background:#e8dfe5;overflow:hidden;margin:.4rem 0 1rem}
+.li26-bar{height:100%;background:#a76e8b;border-radius:999px}
+.li26-bar.alt{background:#537d70}
+.li26-barrow{margin:.75rem 0 1rem}
+.li26-barrow-head{display:flex;justify-content:space-between;gap:.7rem;font-size:.86rem;font-weight:700}
+.li26 table{width:100%;border-collapse:collapse;font-size:.83rem;margin-top:1rem}
+.li26 td,.li26 th{padding:.55rem .4rem;border-bottom:1px solid #ded5dc;text-align:left;vertical-align:top}
+.li26 th{font-weight:750}
+.li26 figcaption{font-size:.78rem;color:#675968;line-height:1.55}
+.li26-legend{display:flex;gap:1rem;flex-wrap:wrap;font-size:.79rem;font-weight:700}
+.li26-legend i{display:inline-block;width:17px;height:4px;margin-right:.35rem;vertical-align:middle;background:#80506d;border-radius:5px}
+.li26-legend i:nth-child(1){background:#80506d}
+.li26 svg{display:block;width:100%;max-width:100%;height:auto;margin:.7rem 0}
+.li26 details summary{cursor:pointer;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.li26-callout{background:#f1e9ed;border-left:4px solid #80506d;border-radius:0 10px 10px 0;padding:1rem 1.2rem;margin:1.3rem 0}
+.li26-callout p{margin:0!important}
+@media(max-width:640px){.li26{padding:1rem}.li26-grid{grid-template-columns:1fr}.li26-statgrid{grid-template-columns:1fr}.li26-stat{padding:.85rem}.li26 td,.li26 th{padding:.45rem .25rem}}
