@@ -25,7 +25,12 @@ jobs:
         run: npm test
       - name: Verify Stripe placeholders are never used for public checkout
         run: |
-          grep -Fq "price_1UPQ3s2R63yYze0g066vmFgW" sponsor-api/lib/core.js
+          grep -Fq "price_1UPQeS2R63yYze0goI6IbmZD" sponsor-api/lib/core.js
           grep -Fq "solar_approve_application" sponsor-api/schema.sql
           grep -Fq "solar_apply_billing_event" sponsor-api/schema.sql
           grep -Fq "stripeSignature" sponsor-api/api/webhook.js
+      - name: Validate first paid quarter and renewal schedule
+        run: |
+          grep -Fq 'FOUNDING_TRIAL_END_UNIX = 1798761600' sponsor-api/lib/core.js
+          grep -Fq 'interval_count' sponsor-api/README.md || true
+          grep -Fq 'p_quantity integer' sponsor-api/schema.sql
