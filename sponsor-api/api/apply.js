@@ -16,10 +16,10 @@ export async function POST(request){
   const list=app.requested_counties.map(htmlSafe).join(', ');
   try{
    await sendEmail({to:process.env.ADMIN_EMAIL,subject:'New solar sponsor application — '+app.company,html:
-     '<h2>New solar sponsor application</h2><p><b>Company:</b> '+htmlSafe(app.company)+'</p><p><b>Contact:</b> '+htmlSafe(app.contact)+' — '+htmlSafe(app.email)+'</p><p><b>Counties:</b> '+list+'</p><p><b>Indicative monthly value:</b> €'+(app.requested_counties.length*250)+'</p><p><b>Application ID:</b> '+saved.id+'</p>'});
+     '<h2>New solar sponsor founders application</h2><p><b>Company:</b> '+htmlSafe(app.company)+'</p><p><b>Contact:</b> '+htmlSafe(app.contact)+' — '+htmlSafe(app.email)+'</p><p><b>Counties:</b> '+list+'</p><p><b>Q1 2027 upfront payment on approval:</b> €'+(app.requested_counties.length*750)+' before applicable VAT</p><p><b>Next quarterly renewal:</b> 1 April 2027 (30-day cancellation notice)</p><p><b>Application ID:</b> '+saved.id+'</p>'});
   }catch(error){console.error('Owner notification failed: '+error.message);}
   try{
-   await sendEmail({to:app.email,subject:'Compound Solar — application received',html:'<p>Thank you, '+htmlSafe(app.contact)+'. We received your request for '+list+'.</p><p>This is an expression of interest. Counties are not reserved and no payment is due until we verify your business and send a sponsorship agreement.</p><p>Compound.ie</p>'});
+   await sendEmail({to:app.email,subject:'Compound Solar — application received',html:'<p>Thank you, '+htmlSafe(app.contact)+'. We received your request for '+list+'.</p><p>This is an expression of interest. Your application is free and no counties are reserved yet. Once verified, approved installers will prepay €750 per county for January–March 2027 at secure Stripe checkout; the rest of 2026 is included without an additional sponsorship fee. Quarterly renewals begin 1 April 2027 with at least 30 days written notice required before a renewal. The service and checkout are not live yet.</p><p>Compound.ie</p>'});
   }catch(error){console.error('Applicant confirmation failed: '+error.message);}
   return json({ok:true,id:saved.id,received:true},201,cors);
  }catch(error){
