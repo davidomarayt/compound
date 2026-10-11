@@ -21,7 +21,7 @@ title: "Health Insurance Cost Comparison Calculator Ireland"
 <div class="it26-result-row"><span>Plan A hospital excess and shortfalls</span><strong data-i-result="acost">—</strong></div>
 <div class="it26-result-row"><span>Plan B hospital excess and shortfalls</span><strong data-i-result="bcost">—</strong></div></div><div class="it26-meter" aria-hidden="true"><i data-i-progress></i></div><p class="it26-note" data-i-note>Planning illustration only.</p></section>
 </div>
-<div class="it26-explanation">
+<div class="it26-explanation" markdown="1">
 
 ## How to compare health insurance plans in Ireland
 
