@@ -155,6 +155,8 @@ Compound's **[Solar Payback Calculator](/solar-payback-calculator/)** lets you m
 
 **[Calculate your solar payback →](/solar-payback-calculator/)**
 
+For a closer look at supplier offers, use the [Compound Solar Export Rate Comparator](/solar/export-rates/), or browse the [Solar Hub](/solar/) for the complete solar buying journey.
+
 ## Why export payments matter when deciding whether to buy a battery
 
 A battery lets a household store some excess daytime solar generation and use it later.

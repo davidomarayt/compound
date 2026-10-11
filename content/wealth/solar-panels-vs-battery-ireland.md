@@ -39,7 +39,7 @@ sources:
   url: https://www.seai.ie/blog/meet-helper-seais-new-tool
 ---
 
-**Use the new [Compound Solar Hub](/solar/)** to compare quotes, grants and installers before deciding whether storage is worthwhile.
+**Use the new [Compound Solar Hub](/solar/)** to compare quotes, grants and installers before deciding whether storage is worthwhile. The [battery payback calculator](/solar/batteries/) isolates the extra value of storage, while the [export-rate tool](/solar/export-rates/) compares import and export offers.
 
 A home battery solves a real solar problem.
 

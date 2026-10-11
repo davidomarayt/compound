@@ -40,7 +40,7 @@ sources:
     url: https://www.gov.ie/en/department-of-climate-energy-and-the-environment/publications/small-scale-renewable-electricity-generation/
 ---
 
-**New: [Explore the Compound Solar Hub](/solar/)** to compare installation quotes, check grant eligibility and find registered installers. For the detailed calculations, use the linked solar tools below.
+**New: [Explore the Compound Solar Hub](/solar/)** to compare installation quotes, check grant eligibility and find registered installers. For the detailed calculations, use the linked solar tools below. For a closer look at two decisions, use the [battery economics calculator](/solar/batteries/) and [export-rate comparator](/solar/export-rates/).
 
 Solar panels are one of the few home upgrades in Ireland that can create value in **two ways at once**:
 

@@ -57,6 +57,8 @@ social:
 
 Heat pumps can be one of the most efficient ways to heat an Irish home.
 
+If you plan to add PV as well, the [Compound Solar Hub](/solar/) connects solar installation costs, grant rules and electricity modelling. Heat-pump consumption and solar generation should be assessed separately before combining savings.
+
 They can also disappoint when the house, radiators, controls or system design are wrong.
 
 That is why the useful question is not simply:

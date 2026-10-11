@@ -50,6 +50,8 @@ sources:
 
 Insulation is usually one of the first places to look when an Irish home is expensive to heat.
 
+Combining insulation and solar? Use the [Compound Solar Hub](/solar/) for PV-specific grants and quotes, and the [Whole-House Retrofit Planner](/whole-house-retrofit-planner/) for the wider upgrade budget.
+
 It is also one of the easiest retrofit areas to misunderstand.
 
 There is not one single **"insulation grant"**. The amount depends on:

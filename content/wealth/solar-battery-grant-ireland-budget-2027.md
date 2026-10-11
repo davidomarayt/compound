@@ -79,6 +79,8 @@ Compound's **[Solar + EV Battery Optimiser](/solar-ev-battery-optimiser/)** lets
 
 **[Test your own battery economics →](/solar-ev-battery-optimiser/)**
 
+The dedicated [Solar Battery Payback Calculator](/solar/batteries/) isolates storage costs, round-trip losses and export income forgone. The [Solar Hub](/solar/) links grant checks and installation comparisons.
+
 ## What is being proposed?
 
 [The Irish Times reported on 25 September](https://www.irishtimes.com/politics/2026/09/25/grant-of-600-for-solar-panel-batteries-set-to-be-announced-in-budget/) that households installing battery storage alongside solar panels are expected to qualify for a new **€600 grant**.

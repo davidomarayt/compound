@@ -68,6 +68,8 @@ A household can now choose between:
 
 The result is that two households using the same number of kilowatt-hours can pay materially different amounts depending on **when** they use them.
 
+For solar homes, the [Compound Solar Hub](/solar/) and its [export-rate comparator](/solar/export-rates/) help compare the whole import-and-export bill, rather than the export payment alone.
+
 <div class="cs-intro">
 <p class="cs-kicker">Quick answer</p>
 <p><strong>The best electricity tariff is the one that matches your actual load profile, not the one with the lowest advertised unit rate.</strong></p>
