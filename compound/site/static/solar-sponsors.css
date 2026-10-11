@@ -256,3 +256,11 @@ body:has(.sol-sponsor-page) .site-footer .footer-bottom{border-top-color:#dedede
   .sol-sponsor-page .sol-sponsor-lead-contrast :is(.sol-sponsor-contrast-basic,.sol-sponsor-contrast-detailed){padding:21px 18px}
   .sol-sponsor-page .sol-sponsor-contrast-detailed dl>div{grid-template-columns:minmax(0,1fr);gap:3px}
 }
+
+/* Restrained founding-partner offer: free 2026, then quarterly billing. */
+.sol-sponsor-page .sol-sponsor-founder-free{display:grid;gap:8px;padding-top:26px;padding-bottom:2px}
+.sol-sponsor-page .sol-sponsor-founder-free strong{font:750 clamp(27px,3.3vw,41px)/1.1 Arial,Helvetica,sans-serif;letter-spacing:-.055em;color:#111}
+.sol-sponsor-page .sol-sponsor-founder-free span{font-size:12px;color:#5d5d5d;line-height:1.5}
+.sol-sponsor-page .sol-sponsor-billing-overline{font:750 10px/1.5 Arial,Helvetica,sans-serif!important;letter-spacing:.08em;color:#555!important;margin:18px 0 0!important}
+.sol-sponsor-page .sol-sponsor-offer .sol-sponsor-cost{font-size:clamp(62px,5.6vw,82px)!important;margin-top:13px!important}
+.sol-sponsor-page .sol-sponsor-price-disclosure strong{color:#111}
