@@ -8,7 +8,8 @@ Stripe LIVE product and 3-month recurring per-county price are configured on Com
 - Product: `prod_VQGaMl7eAUUEry`
 - Current Stripe Price: `price_1UPQeS2R63yYze0goI6IbmZD` (€750 per county per 3 months, VAT-exclusive, interval month ×3).
 - Previous monthly Price `price_1UPQ3s2R63yYze0g066vmFgW` is archived and inactive.
-- Founding offer: complimentary from approved activation through 31 December 2026; card collected at checkout, first charge 1 January 2027 for the initial January–March three-month commitment, auto-renewal on 1 April 2027 and every 3 months thereafter.
+- Founding offer: first payment of **€750 per county at approved Stripe Checkout**, charged immediately to prepay 1 January–31 March 2027. Free promotional 2026 coverage follows approved activation. Subscription trial is through 31 March 2027, with the next recurring charge on **1 April 2027** and every three months thereafter. Separate one-time upfront Stripe price: `price_1UPQu52R63yYze0g7tXqWmi9`.
+- Cancellation policy: at least **30 days written notice before the upcoming quarterly renewal**. For 1 April 2027, the suggested notification date is by 1 March 2027. Application alone does not start a subscription; cancellation and refund terms must be agreed before payment.
 - **No checkout, charges, webhook endpoint, Supabase project, or private admin dashboard is live.**
 - The current published registration page continues using FormSubmit until the API is fully configured.
 
@@ -21,7 +22,7 @@ Stripe LIVE product and 3-month recurring per-county price are configured on Com
 5. Configure a verified Resend sender domain, confirm receipt at david@compound.ie and applicant emails, and provision Cloudflare Turnstile. Update the frontend to use the Vercel API URL and render the public Turnstile widget.
 6. Configure a Stripe **live-mode** webhook to `https://YOUR_BACKEND_DOMAIN/api/webhook` and subscribe to: `checkout.session.completed`, `invoice.paid`, `invoice.payment_failed`, `customer.subscription.updated`, `customer.subscription.deleted`. Add its signing secret to Vercel.
 7. Verify tax registrations and configure Stripe Tax or tax rates **before allowing payment**. The price is tax-exclusive and the code intentionally does NOT assume every buyer has the same VAT treatment.
-8. Verify initial trialing activation, saved card, 2026 zero-charge trial, first 2027 payment, April renewal, payment failure, cancellation and county conflicts in Stripe test mode with a sandbox quarterly price before enabling public live checkout.
+8. Verify immediate one-time Q1 charge, paid invoice verification, saved card, 2026 promotional coverage, April renewal, payment failure, cancellation and county conflicts in Stripe test mode with a sandbox quarterly price before enabling public live checkout.
 9. Update the ad-free installer page to POST JSON to `/api/apply`. Only then remove the temporary hosted FormSubmit integration.
 
 ## Endpoints
@@ -57,7 +58,15 @@ The **published Compound.ie pages must remain ad-free at /solar/for-installers/*
 ## Founding offer safeguards
 
 - The application form does not yet initiate Stripe Checkout. No sponsorship payment has been collected.
-- An approved founding subscription collects a card and starts a free trial ending 1 January 2027 00:00 UTC. The three-month recurring price then bills January–March, April–June, July–September and October–December, with automatic renewal unless cancelled under agreed terms.
+- An approved founding subscription charges the one-time Q1 2027 price immediately and creates a recurring quarterly subscription with trial ending 1 April 2027 00:00 UTC. This covers the free 2026 period plus the already prepaid January–March term. The recurring price then bills April–June, July–September and October–December, with automatic renewal unless cancelled on at least 30 days' notice before renewal.
 - Contract terms must describe the initial paid three-month commitment, renewal/cancellation notice, applicable VAT and no guaranteed enquiry volume.
 - Never set SPONSOR_BILLING_READY=true until homeowner lead delivery, appropriate tax handling, installer approval and all credentials are production-ready. Do not activate a subscription if the service is not operational.
 - The founding checkout expires near the 2027 cutover. Use a separately reviewed post-2026 offer thereafter.
+
+## Immediate prepayment and cancellation implementation notes
+
+- Stripe Checkout uses both `PRICE_ID` (recurring €750/3 months) and `UPFRONT_PRICE_ID` (one-time €750 per county). Stripe bills the one-time item during a trial, so 2026 is free but January–March 2027 is paid in advance when the customer subscribes.
+- Checkout's trial end is **1 April 2027 UTC**. No recurring invoice is due 1 January because Q1 was prepaid. Ensure this is tested with a Stripe test-clock scenario before live activation.
+- The webhook verifies `checkout.session.completed`, the paid initial invoice, the exact one-time price and county quantity before enabling the county sponsorship. Unsuccessful payment means no activation.
+- The contract must state how cancellation notice is delivered and acknowledged (the current manual route is email to Compound), payment timing and the next automatic renewal. Do not assume payment is universally non-refundable; refunds for non-performance, fraud, or other applicable rights remain possible.
+- Customer-facing cancellation automation and notices are not deployed. Do **not** offer a Stripe customer portal with unrestricted self-service cancellation while claiming 30-day notice is automatically enforced. Configure portal behavior consistently with contract before launch.
