@@ -20,70 +20,41 @@ title: "Insurance Premium Savings Calculator Ireland"
 <div class="it26-result-row"><span>Alternative combined annual premiums</span><strong data-i-result="new">—</strong></div>
 <div class="it26-result-row"><span>Simple fee break-even period</span><strong data-i-result="breakEven">—</strong></div></div><p class="it26-note" data-i-note>Planning illustration only.</p></section>
 </div>
-<div class="it26-explanation" markdown="1">
-
-## How much can you save by switching insurance in Ireland?
-
-Insurance shopping is often done one renewal at a time. A household may have car, home, private health and life protection policies with different renewal dates. Reviewing them as a group can make the **total premium commitment** more visible, while each contract still needs to be assessed individually.
-
-This tool compares the **annual premium paid now** with the **annual premium for an alternative** across up to four policy types. It calculates the nominal annual difference and multiplies that by a chosen period, subtracting any one-off switch/cancellation charges you enter.
-
-### Worked example
-
-Suppose home insurance is €480 now versus €415 on an alternative, car is €700 versus €630, health is €1,600 versus €1,530, and life cover is €360 versus €330.
-
-The existing annual total is €3,140 and the alternative is €2,905, an illustrative **€235 annual difference**. Over three unchanged years, that gives €705 before charges. With €60 of one-off charges, the nominal result is **€645**.
-
-These are **made-up example premiums for arithmetic**, not live quotes. Insurance prices commonly change at renewal; this calculator assumes they are unchanged solely to illustrate scale. It does not adjust for inflation, discounting or changes in cover.
-
-### Check home insurance cover and excesses
-
-A lower home premium can come with a higher compulsory excess, reduced accidental damage, lower buildings cover or different flood and subsidence treatment. Make sure the insured rebuilding value is appropriate. Use our [home rebuilding-cost calculator](/home-insurance-rebuild-cost-calculator/) to explore a basic sum insured.
-
-### Car insurance: read the details
-
-Compare the same driver and usage information, driving restrictions, policy excesses, optional breakdown assistance, windscreen cover and no-claims bonus treatment. A cheaper policy can have different exclusions. Do not misstate your driving profile to lower premiums.
-
-### Health insurance: benefits matter as much as price
-
-A new health plan may change approved hospitals, inpatient excesses, outpatient caps or waiting period arrangements. Use the [HIA independent comparison tool](https://www.hia.ie/health-insurance-comparison) to compare actual Irish plans; Compound's [health insurance cost comparison calculator](/health-insurance-cost-comparison-calculator/) can help model user-entered scenarios.
-
-### Life cover: switching can be risky
-
-**Never cancel existing life insurance or mortgage protection until appropriate replacement cover has been fully underwritten, accepted and placed in force.** A lower preliminary online premium may increase after medical underwriting—or the insurer could refuse cover.
-
-Age and health changes, policy term, existing exclusions, joint versus dual cover, critical illness features and lender assignments can make two policies materially different. Read the [Life Insurance Ireland guide](/wealth/life-insurance-ireland/) and [Mortgage Protection Savings tool](/wealth/mortgage-protection-insurance-ireland/#mp26-savings).
-
-### How to use the result
-
-A **positive annual difference** means lower premiums if the replacement policy prices are as entered. A **negative difference** means the new combined premiums are higher. A positive multiyear result can still conceal a worse insurance contract. Treat the output as a shortlist for deeper comparison, not a recommendation to switch.
-
-If an insurer charges a fee to cancel or replace a policy, include it. Some providers offer promotional rates for one year; don't extrapolate a time-limited discount across a five-year horizon without acknowledging the assumption.
-
-## FAQ
-
-### Does a cheaper premium mean I should switch?
-
-No. Equivalent cover and accepted underwriting matter, especially for life insurance.
-
-### Is this a live quote comparison engine?
-
-No. Every premium must be supplied by you from an actual quotation or renewal document.
-
-### Are the savings guaranteed for three or five years?
-
-No. Annual premiums and terms can change and the horizon assumes a fixed figure solely for illustration.
-
-### Are broker fees included?
-
-Only if you add them in the one-off fees field. Verify any cost and commission information separately.
-
-## Useful sources
-
-- [CCPC — Insurance consumer information](https://www.ccpc.ie/manage-your-money/day-to-day-finances/insurance)
-- [HIA — Compare health insurance plans](https://www.hia.ie/health-insurance-comparison)
-- [Compound — Insurance Tools and Guides](/insurance/)
-
+<div class="it26-explanation">
+<h2 id="how-much-can-you-save-by-switching-insurance-in-ireland">How much can you save by switching insurance in Ireland?</h2>
+<p>Insurance shopping is often done one renewal at a time. A household may have car, home, private health and life protection policies with different renewal dates. Reviewing them as a group can make the <strong>total premium commitment</strong> more visible, while each contract still needs to be assessed individually.</p>
+<p>This tool compares the <strong>annual premium paid now</strong> with the <strong>annual premium for an alternative</strong> across up to four policy types. It calculates the nominal annual difference and multiplies that by a chosen period, subtracting any one-off switch/cancellation charges you enter.</p>
+<h3 id="worked-example">Worked example</h3>
+<p>Suppose home insurance is €480 now versus €415 on an alternative, car is €700 versus €630, health is €1,600 versus €1,530, and life cover is €360 versus €330.</p>
+<p>The existing annual total is €3,140 and the alternative is €2,905, an illustrative <strong>€235 annual difference</strong>. Over three unchanged years, that gives €705 before charges. With €60 of one-off charges, the nominal result is <strong>€645</strong>.</p>
+<p>These are <strong>made-up example premiums for arithmetic</strong>, not live quotes. Insurance prices commonly change at renewal; this calculator assumes they are unchanged solely to illustrate scale. It does not adjust for inflation, discounting or changes in cover.</p>
+<h3 id="check-home-insurance-cover-and-excesses">Check home insurance cover and excesses</h3>
+<p>A lower home premium can come with a higher compulsory excess, reduced accidental damage, lower buildings cover or different flood and subsidence treatment. Make sure the insured rebuilding value is appropriate. Use our <a href="/home-insurance-rebuild-cost-calculator/">home rebuilding-cost calculator</a> to explore a basic sum insured.</p>
+<h3 id="car-insurance-read-the-details">Car insurance: read the details</h3>
+<p>Compare the same driver and usage information, driving restrictions, policy excesses, optional breakdown assistance, windscreen cover and no-claims bonus treatment. A cheaper policy can have different exclusions. Do not misstate your driving profile to lower premiums.</p>
+<h3 id="health-insurance-benefits-matter-as-much-as-price">Health insurance: benefits matter as much as price</h3>
+<p>A new health plan may change approved hospitals, inpatient excesses, outpatient caps or waiting period arrangements. Use the <a href="https://www.hia.ie/health-insurance-comparison" rel="noopener">HIA independent comparison tool</a> to compare actual Irish plans; Compound's <a href="/health-insurance-cost-comparison-calculator/">health insurance cost comparison calculator</a> can help model user-entered scenarios.</p>
+<h3 id="life-cover-switching-can-be-risky">Life cover: switching can be risky</h3>
+<p><strong>Never cancel existing life insurance or mortgage protection until appropriate replacement cover has been fully underwritten, accepted and placed in force.</strong> A lower preliminary online premium may increase after medical underwriting—or the insurer could refuse cover.</p>
+<p>Age and health changes, policy term, existing exclusions, joint versus dual cover, critical illness features and lender assignments can make two policies materially different. Read the <a href="/wealth/life-insurance-ireland/">Life Insurance Ireland guide</a> and <a href="/wealth/mortgage-protection-insurance-ireland/#mp26-savings">Mortgage Protection Savings tool</a>.</p>
+<h3 id="how-to-use-the-result">How to use the result</h3>
+<p>A <strong>positive annual difference</strong> means lower premiums if the replacement policy prices are as entered. A <strong>negative difference</strong> means the new combined premiums are higher. A positive multiyear result can still conceal a worse insurance contract. Treat the output as a shortlist for deeper comparison, not a recommendation to switch.</p>
+<p>If an insurer charges a fee to cancel or replace a policy, include it. Some providers offer promotional rates for one year; don't extrapolate a time-limited discount across a five-year horizon without acknowledging the assumption.</p>
+<h2 id="faq">FAQ</h2>
+<h3 id="does-a-cheaper-premium-mean-i-should-switch">Does a cheaper premium mean I should switch?</h3>
+<p>No. Equivalent cover and accepted underwriting matter, especially for life insurance.</p>
+<h3 id="is-this-a-live-quote-comparison-engine">Is this a live quote comparison engine?</h3>
+<p>No. Every premium must be supplied by you from an actual quotation or renewal document.</p>
+<h3 id="are-the-savings-guaranteed-for-three-or-five-years">Are the savings guaranteed for three or five years?</h3>
+<p>No. Annual premiums and terms can change and the horizon assumes a fixed figure solely for illustration.</p>
+<h3 id="are-broker-fees-included">Are broker fees included?</h3>
+<p>Only if you add them in the one-off fees field. Verify any cost and commission information separately.</p>
+<h2 id="useful-sources">Useful sources</h2>
+<ul>
+<li><a href="https://www.ccpc.ie/manage-your-money/day-to-day-finances/insurance" rel="noopener">CCPC — Insurance consumer information</a></li>
+<li><a href="https://www.hia.ie/health-insurance-comparison" rel="noopener">HIA — Compare health insurance plans</a></li>
+<li><a href="/insurance/">Compound — Insurance Tools and Guides</a></li>
+</ul>
 </div>
 <section class="it26-related"><h2>More insurance tools</h2><nav aria-label="Related insurance tools"><a href="/insurance/">Insurance hub ↗</a><a href="/health-insurance-cost-comparison-calculator/">Health Insurance Cost Comparison Calculator Ireland ↗</a><a href="/home-insurance-rebuild-cost-calculator/">Home Insurance Rebuild Cost Calculator Ireland ↗</a><a href="/critical-illness-cover-calculator/">Critical Illness Cover Calculator Ireland ↗</a><a href="/death-in-service-life-insurance-calculator/">Death-in-Service vs Life Insurance Calculator Ireland ↗</a></nav></section>
 </article>
