@@ -6,6 +6,15 @@ export const FOUNDING_TRIAL_END_UNIX = 1806537600; // 1 April 2027, 00:00 UTC: f
 export const UPFRONT_PRICE_ID = 'price_1UPQu52R63yYze0g7tXqWmi9'; // Prepay Jan–Mar 2027 on sign-up
 export const CANCEL_NOTICE_DAYS = 30;
 export function noticeDeadline(renewalUnix){return renewalUnix - CANCEL_NOTICE_DAYS*86400;}
+// Quarter boundaries are fixed (Apr 1, Jul 1, Oct 1, Jan 1). Never cancel
+// prepaid Q1 mid-term; select the first quarterly boundary with >=30 days' notice.
+export function cancellationEffectiveAt(receivedUnix){
+ if(!Number.isFinite(receivedUnix))throw new Error('Invalid notice timestamp');
+ const earliest=receivedUnix+CANCEL_NOTICE_DAYS*86400;
+ let next=FOUNDING_TRIAL_END_UNIX;
+ while(next<earliest){const d=new Date(next*1000);next=Date.UTC(d.getUTCFullYear(),d.getUTCMonth()+3,1)/1000;}
+ return next;
+}
 export const BASE_URL = 'https://compound.ie/solar/for-installers/';
 
 export function json(data, status=200, headers={}) {
