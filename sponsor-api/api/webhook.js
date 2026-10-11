@@ -15,7 +15,7 @@ async function processStripeEvent(event){
    const sub=await subscriptionById(obj.subscription);
    const qty=sub?.items?.data?.[0]?.quantity;
    if(!correctFoundingSubscription(sub,qty)||sub.status!=='trialing'||!sub.default_payment_method)throw new Error('Checkout founding terms/payment method invalid');
-   await rpc('solar_apply_billing_event',{p_event_id:event.id,p_kind:'trialing',p_application_id:obj.client_reference_id,p_subscription_id:sub.id,p_customer_id:sub.customer||'',p_checkout_id:obj.id});
+   await rpc('solar_apply_billing_event',{p_event_id:event.id,p_kind:'trialing',p_application_id:obj.client_reference_id,p_subscription_id:sub.id,p_customer_id:sub.customer||'',p_checkout_id:obj.id,p_quantity:qty});
  }else if(['invoice.paid','invoice.payment_failed'].includes(event.type)){
    const subId=subscriptionIdFromInvoice(obj);if(!subId)return;
    const sub=await subscriptionById(subId);
@@ -24,14 +24,14 @@ async function processStripeEvent(event){
    // A €0 invoice during the complimentary trial must NOT count as the paid Q1 commitment.
    const isFirstPaid=event.type==='invoice.paid'&&sub.status==='active'&&Number(obj.amount_paid)>=75000*Number(sub.items.data[0].quantity);
    const kind=isFirstPaid?'paid':event.type==='invoice.payment_failed'?'failed':'ignored';
-   await rpc('solar_apply_billing_event',{p_event_id:event.id,p_kind:kind,p_application_id:appId,p_subscription_id:sub.id,p_customer_id:sub.customer||'',p_checkout_id:''});
+   await rpc('solar_apply_billing_event',{p_event_id:event.id,p_kind:kind,p_application_id:appId,p_subscription_id:sub.id,p_customer_id:sub.customer||'',p_checkout_id:'',p_quantity:Number(sub.items.data[0].quantity)||0});
  }else if(['customer.subscription.deleted','customer.subscription.updated'].includes(event.type)){
    const appId=obj.metadata?.solar_application_id;if(!appId)return;
    const sub=await subscriptionById(obj.id).catch(()=>obj);
    const kind=sub.status==='canceled'?'cancelled':
      ['past_due','unpaid','paused','incomplete_expired'].includes(sub.status)?'failed':'ignored';
    // Payment, not status=active alone, establishes a paid quarter.
-   await rpc('solar_apply_billing_event',{p_event_id:event.id,p_kind:kind,p_application_id:appId,p_subscription_id:obj.id,p_customer_id:obj.customer||'',p_checkout_id:''});
+   await rpc('solar_apply_billing_event',{p_event_id:event.id,p_kind:kind,p_application_id:appId,p_subscription_id:obj.id,p_customer_id:obj.customer||'',p_checkout_id:'',p_quantity:Number(sub?.items?.data?.[0]?.quantity)||0});
  }
 }
 export async function POST(request){
