@@ -1,100 +1,188 @@
-/* Dedicated ad-free Compound Solar installer recruitment page. */
-.sol-sponsor-page{gap:48px}
-.sol-sponsor-page :is(section,header,form,fieldset,div){min-width:0}
-.sol-sponsor-page .sol-subcrumb{margin-bottom:-26px}
-.sol-sponsor-hero{background:#213d30;color:#f4f8ee;border-radius:10px;padding:clamp(25px,4.5vw,58px);display:grid;grid-template-columns:minmax(0,1.4fr) minmax(275px,.8fr);gap:clamp(24px,4vw,58px);align-items:center;overflow:hidden}
-.sol-sponsor-hero h1{font-size:clamp(42px,5.6vw,78px);line-height:1.02;color:#f9fff6;margin:14px 0 22px;max-width:14ch;overflow-wrap:normal}
-.sol-sponsor-hero h1 em{color:#acd3a9}
-.sol-sponsor-hero-main>p:not(.sol-ey){max-width:60ch;font-size:16px;line-height:1.8;color:#dbe9dc}
-.sol-sponsor-hero-actions{display:flex;flex-wrap:wrap;gap:20px;align-items:center;margin-top:25px}
-.sol-sponsor-textlink{font-size:13px;color:#e0eedf;text-decoration:underline;text-underline-offset:4px}
-.sol-sponsor-hero-foot{display:flex;gap:8px;flex-wrap:wrap;margin-top:35px}
-.sol-sponsor-hero-foot span{font:700 10px/1.4 var(--sans);padding:8px 11px;border-radius:30px;border:1px solid #567961;color:#e0eee0}
-.sol-sponsor-offer{background:#edf1e6;color:#263d2d;border-radius:9px;padding:clamp(25px,3vw,40px);align-self:stretch;display:flex;flex-direction:column;justify-content:center}
-.sol-sponsor-cost{font:400 clamp(48px,5.4vw,72px)/1.05 var(--serif);letter-spacing:-.04em;margin:17px 0 22px;overflow-wrap:normal}
-.sol-sponsor-cost span{display:block;font:700 13px/1.5 var(--sans);letter-spacing:0;margin-top:9px;color:#4a6753}
-.sol-sponsor-rule{height:1px;background:#bed0bc;margin-bottom:20px}
-.sol-sponsor-offer p:not(.sol-ey){font-size:13px;line-height:1.7;color:#4b6150;margin:0 0 12px}
-.sol-sponsor-offer strong{color:#263d2d}
-.sol-sponsor-offer .sol-sponsor-small{font-size:11px!important;color:#607064!important;margin-bottom:0!important}
-.sol-sponsor-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
-.sol-sponsor-benefits>div{background:#f6f8f2;border:1px solid #d7e1d4;padding:26px;border-radius:7px}
-.sol-sponsor-number{font:800 11px var(--sans);color:#65836c;display:block;margin-bottom:20px}
-.sol-sponsor-benefits h2{font-size:clamp(23px,2.5vw,32px);line-height:1.08;margin-bottom:11px}
-.sol-sponsor-benefits p,.sol-sponsor-stepgrid p{font-size:13px;line-height:1.75;color:#5b7060}
-.sol-sponsor-process .sol-sectionhead{margin-bottom:22px}
-.sol-sponsor-stepgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;list-style:none;counter-reset:sponsteps;padding:0;margin:0}
-.sol-sponsor-stepgrid li{counter-increment:sponsteps;border-top:2px solid #698e72;padding:23px 5px 0 0}
-.sol-sponsor-stepgrid li:before{content:"0" counter(sponsteps);font:400 31px/1 var(--serif);color:#7c9d82;display:block;margin-bottom:19px}
-.sol-sponsor-stepgrid strong{font-size:15px;display:block;margin-bottom:9px;color:#294a33}
-.sol-sponsor-application{background:#fcfbf6;border:1px solid #d5dfd1;border-radius:10px;padding:clamp(20px,3.5vw,43px)}
-.sol-sponsor-application-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:26px}
-.sol-sponsor-application-head h2{font-size:clamp(33px,4.5vw,54px);line-height:1.08;margin:7px 0 13px}
-.sol-sponsor-application-head p:not(.sol-ey){font-size:14px;color:#576c5c;line-height:1.7;max-width:67ch}
-.sol-sponsor-prelaunch{border:1px solid #c5d7bd;background:#e6eee1;padding:9px 12px;white-space:normal;text-align:center;border-radius:99px;color:#456c4c;font:800 10px/1.4 var(--sans);letter-spacing:.06em}
-.sol-sponsor-selection{display:grid;gap:24px}
-.sol-sponsor-selection fieldset{padding:0;margin:0;border:0}
-.sol-sponsor-selection legend{font:400 24px/1.25 var(--serif);color:#2a4733;width:100%;margin:0 0 15px;padding-bottom:11px;border-bottom:1px solid #d5ded4}
-.sol-sponsor-selection legend span{font:700 11px var(--sans);color:#65786b;margin-left:8px}
+/* Compound Solar installer partnerships: clinical, editorial-grade monochrome sales page.
+   Deliberately isolated from the green solar consumer hub. No AdSense scripts on this route. */
+.sol-sponsor-page{
+  --s-ink:#141414;--s-muted:#575757;--s-soft:#747474;--s-line:#dedede;
+  --s-faint:#f5f5f5;--s-paper:#fff;--s-black:#111;
+  display:grid;grid-template-columns:minmax(0,1fr);gap:0;
+  width:100%;max-width:1160px;min-width:0;margin:0 auto;padding:18px 0 64px;
+  background:var(--s-paper);color:var(--s-ink);
+  font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;
+}
+.sol-sponsor-page,.sol-sponsor-page *{box-sizing:border-box}
+.sol-sponsor-page *{min-width:0}
+.sol-sponsor-page :is(h1,h2,h3,p,li,small,strong,span,label,a,legend,summary){overflow-wrap:break-word}
+.sol-sponsor-page :is(h1,h2,h3){font-family:Arial,Helvetica,sans-serif!important;letter-spacing:-.046em;font-style:normal;font-weight:650;color:var(--s-ink)}
+.sol-sponsor-page :is(h1,h2,h3) span{color:inherit}
+.sol-sponsor-page p{font-family:inherit}
+.sol-sponsor-page section{scroll-margin-top:95px}
+.sol-sponsor-page [hidden]{display:none!important}
+.sol-sponsor-page :is(a,button,input,textarea,summary):focus-visible{outline:3px solid #555;outline-offset:3px}
+.sol-sponsor-page .sol-sponsor-breadcrumb{display:flex;align-items:center;gap:10px;margin:0 0 24px;padding:0;color:#777;font-size:12px;line-height:1.5}
+.sol-sponsor-page .sol-sponsor-breadcrumb a{color:#5a5a5a;text-decoration:none}
+.sol-sponsor-page .sol-sponsor-breadcrumb a:hover{text-decoration:underline}
+.sol-sponsor-eyebrow{font:750 10px/1.5 Arial,Helvetica,sans-serif!important;letter-spacing:.16em!important;color:#454545!important;text-transform:uppercase;margin:0!important}
+.sol-sponsor-dot{display:inline-block;vertical-align:middle;width:7px;height:7px;border-radius:100%;background:#111;margin:-1px 6px 0 0}
+.sol-sponsor-kicker-divider{padding:0 7px;color:#999}
+.sol-sponsor-hero{display:grid;grid-template-columns:minmax(0,1.27fr) minmax(300px,.73fr);gap:clamp(35px,5vw,78px);align-items:center;padding:clamp(22px,4vw,55px) 0 clamp(56px,5vw,78px);background:#fff!important;color:#111!important;border:0;border-bottom:1px solid var(--s-line);border-radius:0!important;min-height:auto;overflow:visible}
+.sol-sponsor-hero-main h1{font-size:clamp(45px,5.25vw,75px)!important;line-height:1.055;letter-spacing:-.063em!important;margin:21px 0 22px!important;max-width:none!important;font-weight:700!important;color:#111!important}
+.sol-sponsor-hero-main h1 span{color:#111!important}
+.sol-sponsor-intro{font-size:clamp(16px,1.7vw,19px)!important;line-height:1.65!important;color:#494949!important;max-width:560px;margin:0!important}
+.sol-sponsor-intro strong{color:#111;font-weight:700}
+.sol-sponsor-hero-actions{display:flex;gap:23px;flex-wrap:wrap;align-items:center;margin:30px 0 0}
+.sol-sponsor-button{display:inline-flex;align-items:center;justify-content:space-between;gap:22px;min-height:51px;padding:14px 19px;border-radius:3px;border:1px solid #111;background:#111;color:#fff!important;font:700 13px/1.3 Arial,Helvetica,sans-serif;text-decoration:none!important;cursor:pointer;white-space:normal;transition:background .15s}
+.sol-sponsor-button:hover{background:#303030}
+.sol-sponsor-button:disabled{opacity:.65;cursor:not-allowed}
+.sol-sponsor-inline-link{color:#111!important;font-size:13px!important;font-weight:700!important;text-underline-offset:4px;text-decoration:underline!important}
+.sol-sponsor-prelaunch-note{font-size:12px!important;color:#767676!important;margin:17px 0 0!important;line-height:1.5!important}
+.sol-sponsor-offer{background:#fff!important;border:1px solid #d8d8d8;border-radius:5px!important;padding:clamp(25px,3.2vw,38px);color:#111!important;display:block;align-self:stretch}
+.sol-sponsor-offer-heading{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:10px;font-weight:750;letter-spacing:.09em;line-height:1.4}
+.sol-sponsor-outline-label{font-size:9px;border:1px solid #bbb;border-radius:2px;padding:5px 8px;color:#555;letter-spacing:.04em}
+.sol-sponsor-cost{font-family:Arial,Helvetica,sans-serif!important;font-size:clamp(65px,6.3vw,91px)!important;font-weight:700;letter-spacing:-.08em;margin:32px 0 0!important;line-height:1;color:#111}
+.sol-sponsor-currency{font-size:.5em;letter-spacing:-.03em;vertical-align:top;margin:7px 5px 0 0;display:inline-block}
+.sol-sponsor-unit{font-size:15px!important;color:#525252!important;margin:7px 0 0!important}
+.sol-sponsor-rule{height:1px;background:#dedede;margin:25px 0 11px}
+.sol-sponsor-rate-list>div{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid #ebebeb;font-size:13px}
+.sol-sponsor-rate-list strong{color:#111;font-weight:700;white-space:nowrap}
+.sol-sponsor-price-disclosure{margin:20px 0 0!important;color:#6b6b6b!important;font-size:11px!important;line-height:1.75!important}
+.sol-sponsor-proofbar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:25px 0;border-bottom:1px solid var(--s-line);gap:15px}
+.sol-sponsor-proofbar>div{display:flex;align-items:center;gap:14px;border-right:1px solid var(--s-line)}
+.sol-sponsor-proofbar>div:last-child{border-right:0}
+.sol-sponsor-proofbar strong{font-family:Arial,Helvetica,sans-serif;font-size:27px;font-weight:700;letter-spacing:-.05em;line-height:1.2}
+.sol-sponsor-proofbar span{color:#646464;font-size:12px;max-width:145px;line-height:1.45}
+.sol-sponsor-value{padding:85px 0 75px;border-bottom:1px solid var(--s-line)}
+.sol-sponsor-section-intro{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(250px,.7fr);align-items:end;column-gap:55px;margin-bottom:30px}
+.sol-sponsor-section-intro>.sol-sponsor-eyebrow{grid-column:1/-1;margin-bottom:15px!important}
+.sol-sponsor-section-intro h2,.sol-sponsor-funnel-heading h2,.sol-sponsor-process-left h2{font-size:clamp(33px,3.8vw,54px)!important;line-height:1.13!important;max-width:780px}
+.sol-sponsor-section-intro h2 span,.sol-sponsor-funnel-heading h2 span,.sol-sponsor-process-left h2 span{color:#6b6b6b!important}
+.sol-sponsor-section-intro>p:last-child{color:#575757;font-size:14px;line-height:1.75;max-width:365px}
+.sol-sponsor-value-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border:1px solid var(--s-line)}
+.sol-sponsor-value-cards article{padding:25px 20px 26px;border-right:1px solid var(--s-line);background:#fff}
+.sol-sponsor-value-cards article:last-child{border-right:0}
+.sol-sponsor-feature-index{display:block;font-size:10px;letter-spacing:.06em;font-weight:700;color:#666;margin:0 0 24px}
+.sol-sponsor-value-cards h3{font-size:21px!important;line-height:1.2!important;margin:0 0 13px!important;letter-spacing:-.035em!important}
+.sol-sponsor-value-cards p{font-size:13px;line-height:1.7;color:#5d5d5d}
+.sol-sponsor-funnel{padding:80px 0;border-bottom:1px solid var(--s-line)}
+.sol-sponsor-funnel-heading h2{max-width:750px;margin:13px 0 31px!important}
+.sol-sponsor-funnel-steps{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;padding:0;margin:0}
+.sol-sponsor-funnel-steps li{padding:20px;border:1px solid #e2e2e2;background:#fafafa;min-height:166px}
+.sol-sponsor-funnel-steps li>span{display:block;color:#7a7a7a;font:700 11px Arial;margin-bottom:22px}
+.sol-sponsor-funnel-steps strong{display:block;font-size:17px;color:#111;margin-bottom:9px}
+.sol-sponsor-funnel-steps p{color:#626262;font-size:12px;line-height:1.7}
+.sol-sponsor-funnel-foot{font-size:12px!important;line-height:1.7!important;color:#6f6f6f!important;max-width:870px;margin:17px 0 0!important}
+.sol-sponsor-process{display:grid;grid-template-columns:minmax(230px,.9fr) minmax(0,1.1fr);gap:clamp(30px,5vw,80px);padding:83px 0;border-bottom:1px solid var(--s-line)}
+.sol-sponsor-process-left h2{margin:12px 0 18px!important}
+.sol-sponsor-process-left>p:last-child{font-size:14px;color:#666;line-height:1.75;max-width:350px}
+.sol-sponsor-stepgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;list-style:none;counter-reset:step;padding:0;margin:0}
+.sol-sponsor-stepgrid li{counter-increment:step;border-top:1px solid #ccc;padding:18px 0 0;min-height:115px}
+.sol-sponsor-stepgrid li::before{content:"0" counter(step);display:block;font:700 11px Arial;color:#666;margin-bottom:18px}
+.sol-sponsor-stepgrid strong{display:block;color:#111;font-size:15px;margin-bottom:7px}
+.sol-sponsor-stepgrid p{font-size:13px;line-height:1.7;color:#666}
+.sol-sponsor-application{background:#fff!important;border:1px solid var(--s-line)!important;border-radius:5px!important;padding:clamp(19px,3.6vw,46px)!important;margin:78px 0 76px;box-shadow:none}
+.sol-sponsor-application-head{display:flex;gap:25px;justify-content:space-between;align-items:flex-start;padding:0 0 27px;border-bottom:1px solid var(--s-line);margin-bottom:30px}
+.sol-sponsor-application-head h2{font-size:clamp(33px,4vw,49px)!important;margin:10px 0 12px!important}
+.sol-sponsor-application-head p:not(.sol-sponsor-eyebrow){max-width:580px;color:#656565;font-size:14px;line-height:1.65}
+.sol-sponsor-prelaunch{border:1px solid #ccc;background:#fafafa;color:#444;white-space:nowrap;font:bold 10px Arial;letter-spacing:.04em;padding:9px 10px;border-radius:2px}
+.sol-sponsor-selection{display:grid;gap:30px}
+.sol-sponsor-selection fieldset{border:0;margin:0;padding:0}
+.sol-sponsor-selection legend{display:block;width:100%;font:700 17px/1.35 Arial!important;letter-spacing:-.025em;color:#111;padding:0 0 14px;margin:0 0 17px;border-bottom:1px solid var(--s-line)}
+.sol-sponsor-selection legend span{font-size:12px;color:#888;margin-left:10px;font-weight:400;letter-spacing:0}
 .sol-sponsor-countygrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
-.sol-sponsor-county{position:relative;display:block!important;cursor:pointer}
-.sol-sponsor-county input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
-.sol-sponsor-county>span{display:block;border:1px solid #cfdacf;border-radius:6px;background:#fff;padding:12px 13px;color:#2f4837;font-size:13px;font-weight:750;min-height:65px;transition:background .15s,border-color .15s;overflow-wrap:normal}
-.sol-sponsor-county small{display:block;color:#8b9a8c;font-weight:500;font-size:10px;margin-top:4px}
-.sol-sponsor-county input:checked+span{border-color:#3e7551;background:#e3f0e4;box-shadow:inset 0 0 0 1px #3e7551}
-.sol-sponsor-county input:checked+span small{color:#386443}
-.sol-sponsor-county input:checked+span small:before{content:"✓ ";font-weight:900}
-.sol-sponsor-county input:focus-visible+span{outline:3px solid #bb7a4e;outline-offset:2px}
-.sol-sponsor-region-note{font-size:12px;line-height:1.7;color:#6a7b6a;margin-top:14px!important}
-.sol-sponsor-calculator{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;background:#e5eee3;border-radius:8px;padding:23px;margin-top:25px}
+.sol-sponsor-county{display:block!important;position:relative;cursor:pointer}
+.sol-sponsor-county input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
+.sol-sponsor-county>span{display:flex;flex-direction:column;justify-content:center;min-height:67px;padding:11px 12px;border-radius:3px;border:1px solid #d4d4d4;background:#fff;color:#222;font:700 13px/1.25 Arial;transition:background .15s,border-color .15s}
+.sol-sponsor-county small{display:block;font:400 10px/1.35 Arial;color:#888;margin:5px 0 0}
+.sol-sponsor-county input:checked+span{border-color:#111;background:#f0f0f0;box-shadow:inset 0 0 0 1px #111;color:#111}
+.sol-sponsor-county input:checked+span small{color:#333}
+.sol-sponsor-county input:checked+span small::before{content:"✓ ";font-weight:700}
+.sol-sponsor-county input:focus-visible+span{outline:3px solid #777;outline-offset:2px}
+.sol-sponsor-county>span:hover{border-color:#555}
+.sol-sponsor-region-note{color:#747474;font-size:12px;line-height:1.7;margin-top:14px!important}
+.sol-sponsor-calculator{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;padding:22px 25px;border:1px solid #dedede;background:#f7f7f7;border-radius:4px;margin-top:27px}
 .sol-sponsor-calculator>div{display:grid;gap:7px}
-.sol-sponsor-summary-label{font:700 11px/1.4 var(--sans);color:#56735d}
-.sol-sponsor-calculator strong{font:400 clamp(24px,3vw,34px)/1.2 var(--serif);color:#25452e;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
-.sol-sponsor-price-note{font-size:11px;line-height:1.7;color:#6b7a6b;margin:12px 0 0!important}
-.sol-sponsor-contact{margin-top:38px;padding-top:27px;border-top:1px solid #d7e0d3}
-.sol-sponsor-form-head h3{font-size:33px;margin:6px 0 22px}
-.sol-sponsor-contactgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 20px}
-.sol-sponsor-contact label,.sol-sponsor-notes-label{display:block;font:750 12px/1.45 var(--sans);color:#355440}
-.sol-sponsor-contact input,.sol-sponsor-contact textarea{display:block;width:100%;border:1px solid #b9c9bc;background:#fff;border-radius:6px;min-height:45px;padding:11px 13px;margin-top:7px;font:400 15px var(--sans);color:#294333}
+.sol-sponsor-summary-label{font-size:11px;color:#686868;font-weight:600}
+.sol-sponsor-calculator strong{font:700 clamp(23px,2.6vw,31px)/1.2 Arial,Helvetica,sans-serif;color:#111;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.sol-sponsor-price-note{font-size:11px!important;color:#6b6b6b!important;line-height:1.65!important;margin:12px 0 0!important}
+.sol-sponsor-contact{margin:38px 0 0;padding:35px 0 0;border-top:1px solid var(--s-line)}
+.sol-sponsor-form-head h3{font-size:clamp(27px,3vw,37px)!important;margin:8px 0 8px!important}
+.sol-sponsor-form-head>p:last-child{color:#666;font-size:13px;margin-bottom:22px!important}
+.sol-sponsor-contactgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px 23px}
+.sol-sponsor-contact label,.sol-sponsor-notes-label{display:block;color:#222;font:700 12px/1.45 Arial,Helvetica,sans-serif}
+.sol-sponsor-contact label>span{color:#777}
+.sol-sponsor-contact :is(input,textarea){display:block;margin:7px 0 0;width:100%;min-height:47px;background:#fff;border:1px solid #cfcfcf;border-radius:3px;padding:12px 13px;color:#111;font:400 15px Arial,Helvetica,sans-serif}
+.sol-sponsor-contact :is(input,textarea)::placeholder{color:#999}
+.sol-sponsor-contact :is(input,textarea):focus{border-color:#111}
 .sol-sponsor-notes-label{margin-top:20px}
-.sol-sponsor-contact textarea{min-height:95px;resize:vertical}
-.sol-sponsor-disclosures{margin-top:25px;padding:20px;border:1px solid #d9e1d5;background:#f3f6ef;border-radius:6px}
-.sol-sponsor-check{display:flex!important;gap:12px;align-items:flex-start;font:600 12px/1.65 var(--sans)!important;color:#36533e}
-.sol-sponsor-check input{flex:0 0 19px;width:19px;height:19px;accent-color:#2e6f48;margin:1px 0 0}
-.sol-sponsor-disclosures p{font-size:11px;line-height:1.7;color:#627467;margin:14px 0 0!important}
-.sol-sponsor-disclosures a,.sol-sponsor-form-status a{color:#276942;text-decoration:underline}
-.sol-sponsor-submit-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:22px}
-.sol-sponsor-copy{border:0;background:none;padding:12px 3px;cursor:pointer;font:800 13px var(--sans);color:#295e49;text-decoration:underline;text-underline-offset:3px}
-.sol-sponsor-form-status{font-size:12px;line-height:1.6;color:#5c715f;margin:15px 0 0!important}
-.sol-sponsor-faq{display:grid;grid-template-columns:minmax(180px,.55fr) minmax(0,1fr);gap:45px}
-.sol-sponsor-faq h2{font-size:clamp(32px,4vw,47px);margin-top:9px}
-.sol-sponsor-questions details{padding:18px 0;border-bottom:1px solid #d6dfd5}
-.sol-sponsor-questions details:first-child{border-top:1px solid #d6dfd5}
-.sol-sponsor-questions summary{font:800 14px/1.45 var(--sans);color:#2f4e37;cursor:pointer;padding-right:18px}
-.sol-sponsor-questions details p{font-size:13px;line-height:1.8;color:#596e60;margin-top:12px}
-@media(max-width:900px){
- .sol-sponsor-hero{grid-template-columns:minmax(0,1fr)}
- .sol-sponsor-offer{max-width:580px}
- .sol-sponsor-stepgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.sol-sponsor-notes-label textarea{min-height:95px;resize:vertical}
+.sol-sponsor-disclosures{background:#fafafa;border:1px solid #e0e0e0;border-radius:3px;padding:18px 20px;margin-top:25px}
+.sol-sponsor-check{display:flex!important;align-items:flex-start;gap:12px;color:#2d2d2d!important;font:600 12px/1.7 Arial!important}
+.sol-sponsor-check input{flex:0 0 19px;width:19px;height:19px;accent-color:#111;margin:1px 0 0}
+.sol-sponsor-disclosures p{font-size:11px;line-height:1.7;color:#777;margin:12px 0 0!important}
+.sol-sponsor-disclosures a{color:#111;text-decoration:underline;text-underline-offset:3px}
+.sol-sponsor-submit-row{display:flex;align-items:center;gap:17px;flex-wrap:wrap;margin-top:22px}
+.sol-sponsor-submit-row span{font-size:12px;color:#707070}
+.sol-sponsor-submit-row .sol-sponsor-button{border:0;min-width:205px}
+.sol-sponsor-form-status{font-size:12px!important;color:#777!important;line-height:1.6!important;margin:13px 0 0!important}
+.sol-sponsor-confirmation-standalone:not([hidden]){padding:17px 20px;margin-bottom:18px!important;border:1px solid #bbb;color:#111;background:#fafafa;font-size:14px;line-height:1.6}
+.sol-sponsor-faq{display:grid;grid-template-columns:minmax(200px,.65fr) minmax(0,1.35fr);gap:60px;margin:0 0 70px}
+.sol-sponsor-faq h2{font-size:clamp(30px,3.4vw,42px)!important;margin:10px 0 11px!important}
+.sol-sponsor-faq>div:first-child>p:last-child{color:#777;font-size:14px}
+.sol-sponsor-questions details{border-bottom:1px solid var(--s-line);padding:18px 0}
+.sol-sponsor-questions details:first-child{border-top:1px solid var(--s-line)}
+.sol-sponsor-questions summary{font:700 14px/1.45 Arial!important;color:#111;cursor:pointer;padding-right:20px}
+.sol-sponsor-questions details p{color:#626262;font-size:13px;line-height:1.7;margin:13px 0 0!important}
+.sol-sponsor-footer-cta{border-top:1px solid var(--s-line);border-bottom:1px solid var(--s-line);padding:32px 0;display:flex;justify-content:space-between;align-items:center;gap:28px}
+.sol-sponsor-footer-cta h2{font-size:clamp(24px,3vw,36px)!important;margin:8px 0!important}
+.sol-sponsor-footer-cta p:last-child{color:#666;font-size:13px}
+.sol-sponsor-return{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:18px 0 0;margin:0;border:0}
+.sol-sponsor-return a{color:#222!important;font-size:12px;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:1020px){
+ .sol-sponsor-hero{grid-template-columns:minmax(0,1.1fr) minmax(290px,.9fr);gap:30px}
+ .sol-sponsor-value-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .sol-sponsor-value-cards article:nth-child(2){border-right:0}
+ .sol-sponsor-value-cards article:nth-child(-n+2){border-bottom:1px solid var(--s-line)}
+}
+@media(max-width:760px){
+ .sol-sponsor-page{padding:12px 0 45px}
+ .sol-sponsor-hero{grid-template-columns:minmax(0,1fr);gap:32px;padding:24px 0 43px}
+ .sol-sponsor-hero-main h1{font-size:clamp(40px,9vw,62px)!important}
+ .sol-sponsor-offer{max-width:100%}
+ .sol-sponsor-section-intro{grid-template-columns:minmax(0,1fr);row-gap:13px}
+ .sol-sponsor-section-intro>.sol-sponsor-eyebrow{margin-bottom:0!important}
+ .sol-sponsor-section-intro>p:last-child{max-width:100%}
+ .sol-sponsor-process{grid-template-columns:minmax(0,1fr);gap:25px}
+ .sol-sponsor-funnel-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .sol-sponsor-faq{grid-template-columns:minmax(0,1fr);gap:22px}
+ .sol-sponsor-value,.sol-sponsor-funnel,.sol-sponsor-process{padding:55px 0}
+ .sol-sponsor-application{margin:55px 0}
  .sol-sponsor-countygrid{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
-@media(max-width:600px){
- .sol-sponsor-page{gap:35px}
- .sol-sponsor-hero{padding:25px 20px}
- .sol-sponsor-hero h1{font-size:clamp(37px,11vw,55px)}
- .sol-sponsor-hero-main>p:not(.sol-ey){font-size:14px}
- .sol-sponsor-hero-foot{margin-top:22px}
- .sol-sponsor-benefits,.sol-sponsor-contactgrid,.sol-sponsor-faq{grid-template-columns:minmax(0,1fr)}
- .sol-sponsor-benefits>div{padding:21px}
- .sol-sponsor-stepgrid{grid-template-columns:minmax(0,1fr)}
- .sol-sponsor-stepgrid li{padding-top:14px}
- .sol-sponsor-application-head{flex-direction:column}
+@media(max-width:560px){
+ .sol-sponsor-page{font-size:14px}
+ .sol-sponsor-hero-main h1{font-size:clamp(38px,10.4vw,52px)!important}
+ .sol-sponsor-intro{font-size:15px!important}
+ .sol-sponsor-hero-actions{align-items:stretch;flex-direction:column;gap:15px}
+ .sol-sponsor-hero-actions .sol-sponsor-button{width:100%}
+ .sol-sponsor-proofbar{grid-template-columns:minmax(0,1fr);gap:0;padding:4px 0}
+ .sol-sponsor-proofbar>div{border-right:0;border-bottom:1px solid var(--s-line);padding:14px 2px}
+ .sol-sponsor-proofbar>div:last-child{border:0}
+ .sol-sponsor-value-cards{grid-template-columns:minmax(0,1fr)}
+ .sol-sponsor-value-cards article{border-right:0;border-bottom:1px solid var(--s-line)!important;padding:21px}
+ .sol-sponsor-value-cards article:last-child{border-bottom:0!important}
+ .sol-sponsor-funnel-steps{grid-template-columns:minmax(0,1fr);gap:9px}
+ .sol-sponsor-funnel-steps li{min-height:auto}
+ .sol-sponsor-funnel-steps li>span{margin-bottom:10px}
+ .sol-sponsor-stepgrid{grid-template-columns:minmax(0,1fr);gap:19px}
+ .sol-sponsor-application-head{flex-direction:column;gap:15px}
+ .sol-sponsor-prelaunch{align-self:flex-start}
  .sol-sponsor-countygrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
- .sol-sponsor-county>span{font-size:12px;padding:10px;min-height:60px}
- .sol-sponsor-calculator{grid-template-columns:minmax(0,1fr);gap:14px}
- .sol-sponsor-calculator>div:not(:last-child){padding-bottom:12px;border-bottom:1px solid #c9d9ca}
- .sol-sponsor-faq{gap:15px}
- .sol-sponsor-submit-row{align-items:stretch;flex-direction:column;gap:8px}
- .sol-sponsor-submit-row .sol-btn{width:100%}
+ .sol-sponsor-county>span{font-size:12px;min-height:60px;padding:10px}
+ .sol-sponsor-calculator{grid-template-columns:minmax(0,1fr);padding:18px}
+ .sol-sponsor-calculator>div:not(:last-child){padding-bottom:11px;border-bottom:1px solid var(--s-line)}
+ .sol-sponsor-contactgrid{grid-template-columns:minmax(0,1fr)}
+ .sol-sponsor-submit-row{flex-direction:column;align-items:stretch}
+ .sol-sponsor-submit-row .sol-sponsor-button{width:100%}
+ .sol-sponsor-footer-cta{flex-direction:column;align-items:stretch}
+ .sol-sponsor-footer-cta .sol-sponsor-button{width:100%}
 }
-@media(max-width:340px){.sol-sponsor-countygrid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:360px){.sol-sponsor-countygrid{grid-template-columns:minmax(0,1fr)}}
+@media(prefers-reduced-motion:reduce){.sol-sponsor-button,.sol-sponsor-county>span{transition:none}}
