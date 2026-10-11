@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {COUNTIES,PRICE_ID,normalizeApplication,sha256,stripeSignature} from '../lib/core.js';
+import {COUNTIES,PRICE_ID,normalizeApplication,sha256,stripeSignature,FOUNDING_TRIAL_END_UNIX} from '../lib/core.js';
 import {createHmac} from 'node:crypto';
 
 test('includes exactly all 32 counties without duplicate names',()=>{
@@ -8,7 +8,7 @@ test('includes exactly all 32 counties without duplicate names',()=>{
  assert(COUNTIES.includes('Derry / Londonderry'));
 });
 test('references the connected Stripe monthly price',()=>{
- assert.equal(PRICE_ID,'price_1UPQ3s2R63yYze0g066vmFgW');
+ assert.equal(PRICE_ID,'price_1UPQeS2R63yYze0goI6IbmZD');
 });
 const sample={company:'PV Company',contact:'Owner',email:'Sales@pv.ie',counties:['Meath','Dublin'],accepted:true,turnstileToken:'abc'};
 test('normalizes legitimate sponsor data',()=>{
@@ -35,3 +35,5 @@ test('hashing token is deterministic and avoids storing original invitation in d
  assert.equal(sha256('hello').length,64);
  assert.notEqual(sha256('hello'),sha256('hello2'));
 });
+
+test('founding trial ends exactly at the start of Q1 2027 UTC',()=>{assert.equal(new Date(FOUNDING_TRIAL_END_UNIX*1000).toISOString(),'2027-01-01T00:00:00.000Z');});

@@ -1,7 +1,8 @@
 import { createHmac, createHash, timingSafeEqual, randomBytes } from 'node:crypto';
 
 export const COUNTIES = Object.freeze(["Carlow","Cavan","Clare","Cork","Donegal","Dublin","Galway","Kerry","Kildare","Kilkenny","Laois","Leitrim","Limerick","Longford","Louth","Mayo","Meath","Monaghan","Offaly","Roscommon","Sligo","Tipperary","Waterford","Westmeath","Wexford","Wicklow","Antrim","Armagh","Derry / Londonderry","Down","Fermanagh","Tyrone"]);
-export const PRICE_ID = 'price_1UPQ3s2R63yYze0g066vmFgW';
+export const PRICE_ID = 'price_1UPQeS2R63yYze0goI6IbmZD';
+export const FOUNDING_TRIAL_END_UNIX = 1798761600; // 1 January 2027, 00:00 UTC
 export const BASE_URL = 'https://compound.ie/solar/for-installers/';
 
 export function json(data, status=200, headers={}) {
