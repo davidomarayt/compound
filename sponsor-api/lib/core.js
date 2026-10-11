@@ -50,6 +50,23 @@ export function normalizeApplication(v){
   if(!v.turnstileToken||typeof v.turnstileToken!=='string')throw new Error('Spam check required');
   return {company,contact,email,phone,website,accreditation,notes,requested_counties:counties};
 }
+
+export function normalizeHomeownerLead(v){
+ if(!v||typeof v!=='object'||Array.isArray(v))throw new Error('Invalid lead');
+ const trim=(key,max)=>{const x=v[key];if(typeof x!=='string'||x.length>max*2)return '';return x.trim().slice(0,max);};
+ const county=trim('county',35), customer_name=trim('name',100);
+ const customer_email=trim('email',160).toLowerCase(), customer_phone=trim('phone',40);
+ const eircode_or_postcode=trim('eircode',20);
+ const electricity_details=trim('electricity',200), message=trim('message',600);
+ const named_sponsor=trim('namedSponsor',120);
+ const sponsor_application_id=trim('sponsorId',45);
+ if(!COUNTIES.includes(county))throw new Error('Invalid county');
+ if(!customer_name||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(customer_email)||!customer_phone)throw new Error('Contact name, email and phone required');
+ if(!named_sponsor||!/^[0-9a-f]{8}-[0-9a-f-]{27,}$/.test(sponsor_application_id))throw new Error('Named sponsor required');
+ if(v.consent!==true)throw new Error('Explicit sponsor-sharing consent required');
+ if(!v.turnstileToken||typeof v.turnstileToken!=='string')throw new Error('Spam verification required');
+ return {county,customer_name,customer_email,customer_phone,eircode_or_postcode,electricity_details,message,named_sponsor,sponsor_application_id};
+}
 export async function verifyTurnstile(token,request){
   if(!failClosed('TURNSTILE_SECRET'))throw new Error('Spam protection not configured');
   const body=new URLSearchParams({secret:process.env.TURNSTILE_SECRET,response:token});
