@@ -1,0 +1,920 @@
+# Compound.ie — Master Content and Title Register
+
+Snapshot: 2026-10-11 | Source: publishing branch
+
+PURPOSE: Check this register before creating a new article, guide or calculator. Search by exact title, keyword, synonym and reader intent. If the topic is already answered, update its canonical page instead of publishing an SEO duplicate.
+
+Coverage: editorial content, all configured calculators, their embedded explanations, information pages, hubs and generated company profiles. Does not separately list tag pages, share-class redirects or unpublished preview links.
+
+## Summary
+
+- Published editorial articles and guides: 158
+- Existing automated/legacy earnings source files: 11
+- Tools and calculators: 59
+- Embedded tool-guide files: 57
+- Information and policy pages: 7
+- Main hubs: 13
+- Public-company directory profiles: 510
+- Private-company directory profiles: 13
+- Draft or unpublished editorial files: 0
+
+## Health articles and guides — 28
+
+- [Budget 2027 gives health €29.1bn. So why aren’t Mounjaro and Wegovy funded for obesity?](https://compound.ie/news/budget-2027-obesity-mounjaro-wegovy-ireland/)
+- [Creatine in Ireland: what it does, how to take it and what to watch](https://compound.ie/health/creatine-benefits-dosage-safety-ireland/)
+- [GLP-1 side effects: what is common, and when to get help](https://compound.ie/health/glp1-side-effects-when-to-seek-help/)
+- [GLP-1s and pregnancy: Ozempic, Wegovy, Mounjaro and what the evidence says](https://compound.ie/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/)
+- [Health for a 100-Year Life: Staying Capable, Connected and Well](https://compound.ie/health/health-for-a-100-year-life/)
+- [How accurate is a pregnancy due date? LMP vs dating scan explained](https://compound.ie/health/pregnancy-due-date-accuracy-lmp-vs-scan-ireland/)
+- [How long do you stay on Mounjaro or Wegovy?](https://compound.ie/health/how-long-stay-on-mounjaro-wegovy-ireland/)
+- [How much do Wegovy, Mounjaro and Ozempic cost in Ireland?](https://compound.ie/health/wegovy-mounjaro-ozempic-cost-ireland/)
+- [How much protein do you actually need? An Irish evidence-based guide](https://compound.ie/health/how-much-protein-do-you-need-ireland/)
+- [How much sleep do adults need? What the evidence says, by age](https://compound.ie/health/how-much-sleep-do-adults-need/)
+- [How much sleep does a child need? Hours by age, toddler to teen](https://compound.ie/health/how-much-sleep-does-a-child-need/)
+- [How to get Ozempic in Ireland: prescription, eligibility, cost and alternatives](https://compound.ie/health/how-to-get-ozempic-ireland/)
+- [How to lower blood pressure naturally: what works and by how much](https://compound.ie/health/lower-blood-pressure-naturally-what-works/)
+- [How to lower cholesterol: what actually moves LDL, and by how much](https://compound.ie/health/how-to-lower-cholesterol-what-moves-ldl/)
+- [Ireland has a new five-year sepsis strategy — here are the warning signs the HSE wants people to know](https://compound.ie/news/ireland-sepsis-strategy-warning-signs-2026/)
+- [Ireland to Ban Loyalty-Card Alcohol Discounts: What Changes From March 2028](https://compound.ie/news/alcohol-loyalty-card-discounts-ban-ireland-2028/)
+- [Live to 100: What a 100-Year Life Would Really Mean in Ireland](https://compound.ie/live-to-100/)
+- [Looksmaxxing: What the Internet Promises Men — and What the Science Actually Says](https://compound.ie/health/looksmaxxing-science-male-attractiveness/)
+- [Macronutrients and micronutrients: a complete guide for Ireland](https://compound.ie/health/macronutrients-micronutrients-guide-ireland/)
+- [Ozempic, Wegovy & Mounjaro: medical card cover in Ireland](https://compound.ie/health/glp1-hse-medical-card-ireland/)
+- [Pregnancy week by week in Ireland: GP, hospital and scan schedule](https://compound.ie/health/pregnancy-week-by-week-ireland-appointments/)
+- [Prescription opioid use rises more than 10% under Ireland's medical card scheme](https://compound.ie/news/prescription-opioid-use-ireland-gms-2026/)
+- [Retatrutide Ireland: what is it, can you get it, and how does it compare with Mounjaro, Wegovy and Ozempic?](https://compound.ie/health/retatrutide-ireland/)
+- [Standard drinks in Ireland: what a pint, glass of wine and spirit actually count as](https://compound.ie/health/standard-drinks-ireland-pints-wine-spirits/)
+- [The rise of GLP-1 medicines in Ireland: what the evidence says](https://compound.ie/health/glp1-medicines-ireland-rise-evidence/)
+- [Vitamin D in winter: who in Ireland should take a supplement](https://compound.ie/health/vitamin-d-ireland-winter-who-should-take-it/)
+- [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
+- [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
+
+## Wealth articles and guides — 105
+
+- [Attic Conversion & Dormer Planning Permission Ireland](https://compound.ie/wealth/attic-conversion-dormer-planning-permission-ireland/)
+- [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/)
+- [Budget 2027 Ireland: The Key Changes to Tax, Rent, Childcare, Pensions and Energy](https://compound.ie/wealth/budget-2027-what-to-watch/)
+- [Budget 2027: Up to €2bn Reportedly Set Aside for a New Public-Sector Pay Deal](https://compound.ie/news/budget-2027-public-sector-pay-deal-2bn/)
+- [Buying a Home in Ireland 101: A Complete Step-by-Step Guide](https://compound.ie/wealth/buying-a-home-in-ireland/)
+- [Buying a Home in Ireland: Budget, Deposit and Upfront Costs](https://compound.ie/wealth/buying-home-budget-deposit-ireland/)
+- [Capital Gains Tax in Ireland: How Much CGT Do You Pay?](https://compound.ie/wealth/capital-gains-tax-ireland/)
+- [CEG vs SRESS in Ireland: which solar export route fits your project?](https://compound.ie/wealth/ceg-vs-sress-ireland/)
+- [Changing Jobs and Pension Transfers in Ireland](https://compound.ie/wealth/changing-jobs-transfer-pension-ireland/)
+- [Closing on a House in Ireland: Keys, First Payments and What Comes Next](https://compound.ie/wealth/closing-buying-home-ireland/)
+- [Could diesel prices in Ireland fall by 8c a litre? What the G7 oil release means for motorists](https://compound.ie/news/g7-oil-release-diesel-prices-ireland/)
+- [Do you actually need a battery with solar panels in Ireland?](https://compound.ie/wealth/solar-panels-vs-battery-ireland/)
+- [Electricity Tariffs in Ireland: Smart, Day/Night, EV & Dynamic Rates](https://compound.ie/wealth/electricity-tariffs-ireland/)
+- [EV vs Petrol vs Diesel in Ireland: Which Is Cheapest to Own?](https://compound.ie/wealth/ev-vs-petrol-vs-diesel-ireland/)
+- [Executor of a Will in Ireland: Duties & Responsibilities](https://compound.ie/wealth/executor-of-a-will-ireland/)
+- [Extension of farmer fuel supports being considered ahead of Budget 2027](https://compound.ie/news/farmer-fuel-supports-budget-2027/)
+- [First-Time Buyer Supports in Ireland: Help to Buy and First Home Scheme](https://compound.ie/wealth/first-time-buyer-supports-ireland/)
+- [Fixed vs Variable Mortgage in Ireland: How to Choose](https://compound.ie/wealth/fixed-vs-variable-mortgage-ireland/)
+- [Fuel protests return ahead of Budget 2027 — and the next price shock could be bigger](https://compound.ie/news/fuel-protests-budget-2027-ireland/)
+- [Garage Conversion & Change of Use Planning Permission Ireland](https://compound.ie/wealth/garage-conversion-change-of-use-planning-ireland/)
+- [Gift Tax in Ireland 2027: How Much Can You Give Tax-Free?](https://compound.ie/wealth/gift-tax-ireland/)
+- [Government considers extending petrol and diesel excise cuts into spring](https://compound.ie/news/petrol-diesel-excise-cuts-ev-costs-ireland/)
+- [Health Insurance in Ireland: Costs, Cover & How to Choose a Plan](https://compound.ie/wealth/health-insurance-ireland/)
+- [Health insurance prices are rising — but some plan benefits are being cut](https://compound.ie/news/health-insurance-price-rises-benefit-cuts-ireland/)
+- [Heat Pumps in Ireland: Costs, Grants, Running Costs & Suitability](https://compound.ie/wealth/heat-pumps-ireland/)
+- [House Extension Planning Permission Ireland: The 45 m² Rule Explained](https://compound.ie/wealth/house-extension-planning-permission-ireland/)
+- [House Hunting and Bidding in Ireland: How to Stay Disciplined](https://compound.ie/wealth/house-hunting-bidding-ireland/)
+- [How much does your lifestyle actually cost over a lifetime?](https://compound.ie/wealth/lifetime-cost-of-lifestyle-ireland/)
+- [How much electricity does an Irish home use? A practical 2026 guide](https://compound.ie/wealth/average-home-electricity-use-ireland/)
+- [How Much Should I Contribute to My Pension in Ireland?](https://compound.ie/wealth/how-much-pension-contribute-ireland/)
+- [How Much Should You Invest Each Month in Ireland?](https://compound.ie/wealth/how-much-to-invest-per-month-ireland/)
+- [How Pensions Work in Ireland: A Beginner’s Guide](https://compound.ie/wealth/how-pensions-work-ireland/)
+- [How to Choose an Investment Broker in Ireland](https://compound.ie/wealth/choose-investment-broker-ireland/)
+- [How to Diversify an Investment Portfolio in Ireland](https://compound.ie/wealth/diversification-portfolio-ireland/)
+- [How to Maintain an Investment Portfolio in Ireland](https://compound.ie/wealth/maintain-investment-portfolio-ireland/)
+- [How to Start Investing in Ireland: A Beginner’s Guide](https://compound.ie/wealth/how-to-start-investing-in-ireland/)
+- [Income Protection Insurance in Ireland: The Complete 2026 Guide](https://compound.ie/wealth/income-protection-insurance-ireland/)
+- [Inheritance Tax in Ireland: How Much Can You Inherit Tax-Free?](https://compound.ie/wealth/inheritance-tax-ireland/)
+- [Insulation Grants in Ireland: Costs, Grants & What to Upgrade First](https://compound.ie/wealth/insulation-grants-ireland/)
+- [Investment Fees in Ireland: The Cost That Compounds Against You](https://compound.ie/wealth/investment-fees-ireland/)
+- [Investment Tax in Ireland: CGT, ETFs, Dividends and Deemed Disposal](https://compound.ie/wealth/investment-tax-ireland/)
+- [Ireland inflation jumps to 3.9% as energy prices rise 15.3%](https://compound.ie/news/ireland-inflation-september-2026-energy-prices/)
+- [Ireland Plans €682m Cut in Refugee and Asylum Accommodation Spending in Budget 2027](https://compound.ie/news/ireland-migration-accommodation-682m-budget-2027/)
+- [Ireland's 40% tax band starts at €44,000 — how that really compares with Europe](https://compound.ie/news/ireland-40-percent-tax-rate-threshold-europe/)
+- [Ireland's proposed €2,000 boiler scrappage grant: what homeowners need to know](https://compound.ie/news/boiler-scrappage-grant-ireland-2027/)
+- [Irish house prices are estimated to be 17% overvalued — what does that actually mean for buyers?](https://compound.ie/news/irish-house-prices-overvalued-17-percent-2026/)
+- [Irish housing market is cooling — but buyers are not suddenly getting cheap homes](https://compound.ie/news/ireland-house-prices-cooling-daft-dublin-2026/)
+- [Is it financially worth returning to work after having children in Ireland?](https://compound.ie/wealth/returning-to-work-childcare-costs-ireland/)
+- [Is switching your mortgage worth it in Ireland? A worked €250,000 example](https://compound.ie/wealth/is-switching-your-mortgage-worth-it-ireland/)
+- [Local Property Tax Ireland 2026–2030: Bands, Rates & How Much You’ll Pay](https://compound.ie/wealth/local-property-tax-ireland/)
+- [Making a Will in Ireland: Complete Guide & Costs](https://compound.ie/wealth/how-to-make-a-will-ireland/)
+- [Manchester City found guilty on 114 financial-rule charges: what the case was really about](https://compound.ie/news/manchester-city-114-financial-rule-breaches-explained/)
+- [More than 500,000 Irish energy accounts are in arrears — what happens if you can’t pay?](https://compound.ie/news/energy-bill-arrears-ireland-cant-pay/)
+- [Mortgage Approval in Ireland: How Much Can You Borrow?](https://compound.ie/wealth/mortgage-approval-affordability-ireland/)
+- [Mortgage Protection and Drawdown in Ireland: Final Approval Checklist](https://compound.ie/wealth/mortgage-protection-drawdown-ireland/)
+- [Mortgage Protection Insurance in Ireland: The Complete 2026 Guide](https://compound.ie/wealth/mortgage-protection-insurance-ireland/)
+- [MyFutureFund vs a private pension in Ireland: how auto-enrolment compares](https://compound.ie/wealth/myfuturefund-vs-private-pension-ireland/)
+- [New €2 EU parcel handling fee confirmed: what Irish shoppers will pay on non-EU orders](https://compound.ie/news/new-eu-parcel-fee-ireland-2026/)
+- [One in Seven Irish Adults Now Receive Financial Help From Family](https://compound.ie/news/family-financial-support-ireland-2026/)
+- [PCP vs Hire Purchase vs Car Loan in Ireland: the real cost of each](https://compound.ie/wealth/pcp-vs-hp-vs-car-loan-ireland/)
+- [Pension Funds and Fees in Ireland: What to Check](https://compound.ie/wealth/pension-funds-fees-ireland/)
+- [Pension Lump Sum Tax in Ireland: The €200,000 Lifetime Limit Explained](https://compound.ie/wealth/pension-lump-sum-tax-ireland/)
+- [Pension Options in Ireland: Workplace Pension, PRSA or MyFutureFund?](https://compound.ie/wealth/pension-options-ireland/)
+- [Pension tax relief in Ireland: what it's worth, the limits, and how to claim](https://compound.ie/wealth/pension-tax-relief-ireland-how-to-claim/)
+- [Pension vs Investing in Ireland: Which Wrapper Fits the Goal?](https://compound.ie/wealth/pension-vs-investing-ireland/)
+- [Pensions in Ireland 101: A Complete Beginner’s Guide](https://compound.ie/wealth/pensions-in-ireland/)
+- [Personal Investment Account Ireland (PIA): Complete 2027 Guide](https://compound.ie/wealth/personal-investment-account-ireland/)
+- [Planning Appeals Ireland: Deadline, Fees and How the Process Works](https://compound.ie/wealth/planning-appeal-ireland/)
+- [Planning Application Process Ireland: Timeline, Fees and What Happens Next](https://compound.ie/wealth/planning-application-process-ireland/)
+- [Planning Objections & Submissions in Ireland: How to Comment on an Application](https://compound.ie/wealth/planning-objections-submissions-ireland/)
+- [Planning Permission in Ireland: The Complete Guide](https://compound.ie/wealth/planning-permission-ireland/)
+- [Probate Costs & Fees in Ireland: What Does It Actually Cost?](https://compound.ie/wealth/probate-costs-fees-ireland/)
+- [Probate in Ireland: The Complete Guide](https://compound.ie/wealth/probate-ireland/)
+- [Protected Structures & Architectural Conservation Areas: Planning Rules in Ireland](https://compound.ie/wealth/protected-structures-aca-planning-ireland/)
+- [PRSI Rises Today: What the 1 October 2026 Increase Costs You](https://compound.ie/news/prsi-increase-october-2026/)
+- [Redundancy Tax in Ireland: Statutory Pay, Ex-Gratia & SCSB](https://compound.ie/wealth/redundancy-ireland-statutory-ex-gratia-tax/)
+- [Rent Tax Credit Budget 2027: New €1,150 Credit Explained](https://compound.ie/wealth/rent-tax-credit-budget-2027-ireland/)
+- [Rent Tax Credit in Ireland: Who Can Claim It and How](https://compound.ie/wealth/rent-tax-credit-ireland-who-can-claim/)
+- [Rent-a-Room Relief Could Rise to €20,000 in Budget 2027](https://compound.ie/news/rent-a-room-relief-20000-budget-2027/)
+- [Retention Planning Permission Ireland: Costs, Risks and What Happens If It Is Refused](https://compound.ie/wealth/retention-planning-permission-ireland/)
+- [RSUs & Share Options Tax in Ireland: How the Tax Works](https://compound.ie/wealth/rsu-share-options-tax-ireland/)
+- [Rural House Planning Permission Ireland: One-Off Houses & Local Need](https://compound.ie/wealth/rural-one-off-house-planning-ireland/)
+- [Sale Agreed in Ireland: Survey, Valuation and Property Checks](https://compound.ie/wealth/sale-agreed-survey-valuation-ireland/)
+- [Saving for your child in Ireland: tax, ownership and what happens at 18](https://compound.ie/wealth/saving-for-your-child-ireland/)
+- [Section 5 Declaration Ireland: How to Confirm If Planning Permission Is Needed](https://compound.ie/wealth/section-5-declaration-ireland/)
+- [Self-Employed Tax in Ireland 2026: Income Tax, USC, PRSI and What to Set Aside](https://compound.ie/wealth/self-employed-tax-ireland-2026-guide/)
+- [Shares, ETFs and Funds in Ireland: What Is the Difference?](https://compound.ie/wealth/shares-etfs-funds-ireland/)
+- [Sheds, Garden Rooms & Home Offices: Planning Permission in Ireland](https://compound.ie/wealth/sheds-garden-rooms-home-offices-planning-ireland/)
+- [Solar export payments are not being scrapped: what ESB's clarification means](https://compound.ie/news/solar-export-payments-ireland-clean-export-guarantee/)
+- [Solar panel 'dawn raids' in Ireland: what the CCPC investigation means for homeowners](https://compound.ie/news/solar-panel-ccpc-dawn-raids-bid-rigging-ireland/)
+- [Solar Panels in Ireland: Costs, Grants, Payback & Export Payments](https://compound.ie/wealth/solar-panels-ireland/)
+- [Solicitor and Conveyancing in Ireland: Contracts, Title and Stamp Duty](https://compound.ie/wealth/solicitor-conveyancing-stamp-duty-ireland/)
+- [State Pension in Ireland: Rates, PRSI Rules & How to Qualify](https://compound.ie/wealth/state-pension-ireland/)
+- [State Pension set for at least €7.50 Budget 2027 rise: what it would mean](https://compound.ie/news/state-pension-increase-budget-2027-ireland/)
+- [Tax credits in Ireland explained: what they are and how they work](https://compound.ie/wealth/tax-credits-ireland-explained/)
+- [The Fed has raised US interest rates: what could it mean for Ireland?](https://compound.ie/news/fed-rate-hike-ireland-september-2026/)
+- [Wealth for a 100-Year Life: Money, Housing and Choices in Ireland](https://compound.ie/wealth/wealth-for-a-100-year-life/)
+- [What Happens If You Die Without a Will in Ireland?](https://compound.ie/wealth/what-happens-if-you-die-without-a-will-ireland/)
+- [What would an extra €100 a month do to your mortgage?](https://compound.ie/wealth/mortgage-overpayments-100-euro-ireland/)
+- [When Can You Access Your Pension in Ireland? Retirement Options Explained](https://compound.ie/wealth/when-can-i-access-pension-ireland/)
+- [Will Tesla and SpaceX Merge in 2027? The Financial Case, Risks and Shareholder Impact](https://compound.ie/wealth/tesla-spacex-merger-2027/)
+- [Your inflation rate may be higher than 3.4% — who is being hit hardest in Ireland?](https://compound.ie/news/personal-inflation-rate-ireland-households-2026/)
+- [€16 an hour: what Ireland’s new Living Wage benchmark would mean for your pay](https://compound.ie/news/living-wage-16-ireland-2026/)
+- [€400 Energy Credit for Households Under €70,000 Proposed for Budget 2027](https://compound.ie/news/social-democrats-400-energy-credit-budget-2027/)
+- [€600 solar battery grant expected in Budget 2027: is a home battery actually worth it?](https://compound.ie/news/solar-battery-grant-ireland-budget-2027/)
+
+## Life articles and guides — 25
+
+- [7 in 10 young adults are considering leaving Ireland — but the migration data tells a more complicated story](https://compound.ie/news/young-people-considering-emigration-ireland-2026/)
+- [A Buddhist monk has begun 12 years on a mountain. What can it teach us about the modern mind?](https://compound.ie/news/12-year-buddhist-retreat-meditation-mental-wellbeing/)
+- [AI therapy in Ireland: 61% say they use AI for mental health — but what does the evidence actually show?](https://compound.ie/news/ai-therapy-ireland-chatgpt-mental-health/)
+- [Burnout symptoms: how to recognise burnout and what actually helps](https://compound.ie/life/burnout-symptoms-recovery-ireland/)
+- [Dublin Theatre Festival 2026: what’s on, when it runs and how to plan a visit](https://compound.ie/news/dublin-theatre-festival-2026-guide/)
+- [El Niño could be one of the strongest on record — what it actually means for Ireland](https://compound.ie/news/el-nino-2026-ireland-weather-food-transport/)
+- [How Ireland exercises: walking dominates, gyms are second and work gets in the way](https://compound.ie/news/how-ireland-exercises-most-popular-sports-2025/)
+- [How to be happier: what the evidence actually says](https://compound.ie/life/how-to-be-happier-evidence-ireland/)
+- [How to Get Out of a Rut: An Evidence-Based Reset for Your Life](https://compound.ie/life/how-to-get-out-of-a-rut/)
+- [How to improve self-esteem and confidence: what actually helps](https://compound.ie/life/how-to-improve-self-esteem-confidence/)
+- [How to make friends as an adult in Ireland](https://compound.ie/life/how-to-make-friends-as-an-adult-ireland/)
+- [How to stop worrying and overthinking: what the trials actually show](https://compound.ie/life/how-to-stop-worrying-and-overthinking/)
+- [Ireland’s TV Licence Is Dying. The Numbers Show Why.](https://compound.ie/news/ireland-tv-licence-decline-2026/)
+- [Life for a 100-Year Life: Connection, Purpose and Ordinary Days](https://compound.ie/life/happiness-for-a-100-year-life/)
+- [Loneliness in Ireland: how common it is and what actually helps](https://compound.ie/life/loneliness-ireland-how-common-what-helps/)
+- [Padel in Ireland: Rules, Courts, Costs & How to Start Playing](https://compound.ie/life/padel-ireland/)
+- [Pickleball in Ireland: How to Play, Rules, Clubs & Where to Start](https://compound.ie/life/pickleball-ireland/)
+- [Remote Working in Ireland: Your Rights and How to Make a Request](https://compound.ie/life/remote-working-ireland-rights-request/)
+- [Stress symptoms: how to recognise stress and what actually helps](https://compound.ie/life/stress-symptoms-what-helps-ireland/)
+- [The Ploughing: a history of gathering, and why it matters for wellbeing](https://compound.ie/life/ploughing-championships-history-community-mental-health/)
+- [When did you last do something just for fun?](https://compound.ie/life/when-did-you-last-do-something-for-fun/)
+- [Why you feel more tired in autumn: what darker days do to sleep and mood](https://compound.ie/life/why-you-feel-tired-in-autumn-dark-evenings-ireland/)
+- [Why your time off doesn’t always feel like a break](https://compound.ie/life/why-time-off-doesnt-feel-like-a-break/)
+- [Workplace stress in Ireland: new study finds job design matters for wellbeing](https://compound.ie/news/workplace-stress-ireland-job-design-wellbeing-2026/)
+- [Your Commute Could Be Costing You 10 Days a Year](https://compound.ie/life/commute-time-ireland-hidden-cost/)
+
+## Automated / legacy earnings source files — 11
+
+Some old quarterly article routes are now redirects to continuous company profiles. Do not create quarterly article spam; consolidate company results into the single company page.
+
+- [Agilent Technologies (A) Earnings: FY 2026 Q3 Revenue, Profit and EPS](https://compound.ie/wealth/earnings/a-earnings-fy2026-q3/) | source: content/wealth/a-earnings-fy2026-q3.md
+- [Apple Inc. (AAPL) Earnings: FY 2026 Q3 Revenue, Profit and EPS](https://compound.ie/wealth/earnings/aapl-earnings-fy2026-q3/) | source: content/wealth/aapl-earnings-fy2026-q3.md
+- [Cintas (CTAS) Earnings: FY 2027 Q1 Revenue, Profit and EPS](https://compound.ie/wealth/earnings/ctas-earnings-fy2027-q1/) | source: content/wealth/ctas-earnings-fy2027-q1.md
+- [Costco (COST) Earnings: FY 2026 full-year Revenue, Profit and EPS](https://compound.ie/wealth/earnings/cost-earnings-fy2026/) | source: content/wealth/cost-earnings-fy2026.md
+- [Darden Restaurants (DRI) Earnings: FY 2027 Q1 Revenue, Profit and EPS](https://compound.ie/wealth/earnings/dri-earnings-fy2027-q1/) | source: content/wealth/dri-earnings-fy2027-q1.md
+- [Delta Air Lines (DAL) Earnings: FY 2026 Q3 Revenue, Profit and EPS](https://compound.ie/wealth/earnings/dal-earnings-fy2026-q3/) | source: content/wealth/dal-earnings-fy2026-q3.md
+- [Lennar (LEN) Earnings: FY 2026 Q3 Revenue, Profit and EPS](https://compound.ie/wealth/earnings/len-earnings-fy2026-q3/) | source: content/wealth/len-earnings-fy2026-q3.md
+- [McCormick & Company (MKC) Earnings: FY 2026 Q3 Revenue, Profit and EPS](https://compound.ie/wealth/earnings/mkc-earnings-fy2026-q3/) | source: content/wealth/mkc-earnings-fy2026-q3.md
+- [Micron Technology (MU) Earnings: FY 2026 full-year Revenue, Profit and EPS](https://compound.ie/wealth/earnings/mu-earnings-fy2026/) | source: content/wealth/mu-earnings-fy2026.md
+- [Nike, Inc. (NKE) Earnings: FY 2027 Q1 Revenue, Profit and EPS](https://compound.ie/wealth/earnings/nke-earnings-fy2027-q1/) | source: content/wealth/nke-earnings-fy2027-q1.md
+- [PepsiCo (PEP) Earnings: FY 2026 Q3 Revenue, Profit and EPS](https://compound.ie/wealth/earnings/pep-earnings-fy2026-q3/) | source: content/wealth/pep-earnings-fy2026-q3.md
+
+## Interactive calculators and tools — 59
+
+### EV & Motoring — 3
+
+- [Car Finance Calculator Ireland — Loan vs PCP vs Hire Purchase](https://compound.ie/car-finance-calculator/) | includes embedded guide
+- [EV Charging Cost Calculator Ireland](https://compound.ie/ev-charging-cost-calculator/) | includes embedded guide
+- [Fuel Cost Calculator Ireland](https://compound.ie/fuel-cost-calculator/) | includes embedded guide
+
+### Family & Life Planning — 3
+
+- [Childcare Cost vs Returning to Work Calculator Ireland](https://compound.ie/childcare-return-to-work-calculator/) | includes embedded guide
+- [Lifetime Cost Calculator Ireland](https://compound.ie/lifetime-cost-calculator/) | includes embedded guide
+- [Pregnancy Due Date & Timeline Calculator Ireland](https://compound.ie/pregnancy-due-date-calculator/) | includes embedded guide
+
+### Health — 5
+
+- [Alcohol Standard Drinks, Calories & Cost Calculator Ireland](https://compound.ie/alcohol-units-calories-cost-calculator/) | includes embedded guide
+- [BMI Calculator Ireland](https://compound.ie/bmi-calculator/) | includes embedded guide
+- [GLP-1 Cost Calculator Ireland](https://compound.ie/glp1-cost-calculator-ireland/) | includes embedded guide
+- [Nutrition Needs Calculator Ireland — Energy, Protein & Macros](https://compound.ie/nutrition-needs-calculator/) | includes embedded guide
+- [Weight Loss Calculator Ireland](https://compound.ie/weight-loss-calculator/) | includes embedded guide
+
+### Home Energy — 5
+
+- [BER Energy Cost Calculator Ireland](https://compound.ie/ber-energy-cost-calculator/) | includes embedded guide
+- [Electricity Cost Calculator Ireland](https://compound.ie/electricity-cost-calculator/) | includes embedded guide
+- [Solar + EV + Battery Optimiser Ireland](https://compound.ie/solar-ev-battery-optimiser/) | includes embedded guide
+- [Solar PV Payback Calculator Ireland](https://compound.ie/solar-payback-calculator/) | includes embedded guide
+- [Whole-House Retrofit Planner Ireland](https://compound.ie/whole-house-retrofit-planner/) | includes embedded guide
+
+### Loans & Debt — 2
+
+- [Debt Snowball vs Avalanche Calculator Ireland](https://compound.ie/debt-repayment-calculator/) | includes embedded guide
+- [Loan Repayment Calculator Ireland](https://compound.ie/loan-repayment-calculator/) | includes embedded guide
+
+### Mortgages & Home Buying — 12
+
+- [First Home Scheme Calculator Ireland](https://compound.ie/first-home-scheme-calculator/) | includes embedded guide
+- [Help to Buy Calculator Ireland](https://compound.ie/help-to-buy-calculator/) | includes embedded guide
+- [House Buying Costs Calculator Ireland](https://compound.ie/house-buying-costs-calculator/) | includes embedded guide
+- [House Deposit Calculator Ireland](https://compound.ie/house-deposit-calculator/) | includes embedded guide
+- [Local Property Tax Calculator Ireland 2026](https://compound.ie/local-property-tax-calculator/) | includes embedded guide
+- [Mortgage Affordability Calculator Ireland](https://compound.ie/mortgage-affordability-calculator/) | includes embedded guide
+- [Mortgage Borrowing Calculator Ireland](https://compound.ie/mortgage-borrowing-calculator/) | includes embedded guide
+- [Mortgage Calculator Ireland](https://compound.ie/mortgage-calculator/) | includes embedded guide
+- [Mortgage Overpayment Calculator Ireland](https://compound.ie/mortgage-overpayment-calculator/) | includes embedded guide
+- [Mortgage Switch & Rate Change Calculator Ireland](https://compound.ie/mortgage-switch-calculator/) | includes embedded guide
+- [Rent vs Buy Calculator Ireland](https://compound.ie/rent-vs-buy-calculator/) | includes embedded guide
+- [Stamp Duty Calculator Ireland](https://compound.ie/stamp-duty-calculator/) | includes embedded guide
+
+### Pensions & Investing — 14
+
+- [Compound Interest Calculator Ireland](https://compound.ie/compound-interest-calculator/) | includes embedded guide
+- [Emergency Fund Calculator Ireland](https://compound.ie/emergency-fund-calculator/) | includes embedded guide
+- [FIRE Number Calculator Ireland](https://compound.ie/fire-number-calculator/) | includes embedded guide
+- [Inflation Calculator Ireland](https://compound.ie/inflation-calculator/) | includes embedded guide
+- [Investment Fee Impact Calculator](https://compound.ie/investment-fee-calculator/) | includes embedded guide
+- [MyFutureFund Auto-Enrolment Calculator Ireland](https://compound.ie/myfuturefund-calculator/) | includes embedded guide
+- [Net Worth Calculator Ireland](https://compound.ie/net-worth-calculator/) | includes embedded guide
+- [Pension Lump Sum Calculator Ireland](https://compound.ie/pension-lump-sum-calculator-ireland/) | includes embedded guide
+- [Pension Projection Calculator Ireland](https://compound.ie/pension-projection-calculator/) | includes embedded guide
+- [Pension Tax Relief Calculator Ireland 2026](https://compound.ie/pension-tax-relief-calculator/) | includes embedded guide
+- [Personal Investment Account (PIA) Calculator Ireland](https://compound.ie/pia-calculator/) | includes embedded guide
+- [Regular Savings Calculator Ireland](https://compound.ie/regular-savings-calculator/) | includes embedded guide
+- [Retirement Income Calculator Ireland](https://compound.ie/retirement-income-calculator/) | includes embedded guide
+- [Savings Goal Calculator Ireland](https://compound.ie/savings-goal-calculator/) | includes embedded guide
+
+### Tax & Take-Home Pay — 15
+
+- [Budget 2027 Calculator Ireland](https://compound.ie/budget-2027-calculator/) | includes embedded guide
+- [Capital Gains Tax Calculator Ireland](https://compound.ie/capital-gains-tax-calculator/) | includes embedded guide
+- [Contractor Day Rate vs Salary Calculator Ireland 2026](https://compound.ie/contractor-vs-salary-calculator/) | includes embedded guide
+- [DIRT Calculator Ireland](https://compound.ie/dirt-calculator/) | includes embedded guide
+- [Employer Cost Calculator Ireland 2027](https://compound.ie/employer-cost-calculator/) | includes embedded guide
+- [Income Tax Calculator Ireland 2027](https://compound.ie/income-tax-calculator/) | includes embedded guide
+- [Inheritance & Gift Tax Calculator Ireland](https://compound.ie/inheritance-tax-calculator/) | includes embedded guide
+- [PRSI Calculator Ireland 2026](https://compound.ie/prsi-calculator/) | includes embedded guide
+- [Redundancy Calculator Ireland 2026](https://compound.ie/redundancy-calculator-ireland/) | includes embedded guide
+- [Rent Tax Credit Calculator Ireland 2027](https://compound.ie/rent-tax-credit-calculator/) | includes embedded guide
+- [Salary to Hourly Rate Calculator Ireland](https://compound.ie/salary-hourly-rate-calculator/) | includes embedded guide
+- [Self-Employed Tax Calculator Ireland](https://compound.ie/self-employed-tax-calculator-ireland/) | includes embedded guide
+- [Take-Home Pay Calculator Ireland 2027](https://compound.ie/take-home-pay-calculator/) | includes embedded guide
+- [USC Calculator Ireland 2027](https://compound.ie/usc-calculator/) | includes embedded guide
+- [VAT Calculator Ireland 2026](https://compound.ie/vat-calculator/) | includes embedded guide
+
+## Supporting tool explainer files — 57
+
+Each entry lives within its corresponding calculator page; it is not a second standalone article.
+
+- Alcohol Standard Drinks, Calories & Cost Calculator Ireland | source: content/tool-guides/alcohol-units-calories-cost-calculator.md
+- BER Energy Cost Calculator Ireland | source: content/tool-guides/ber-energy-cost-calculator.md
+- Budget 2027 Calculator Ireland | source: content/tool-guides/budget-2027-calculator.md
+- Capital Gains Tax Calculator Ireland | source: content/tool-guides/capital-gains-tax-calculator.md
+- Car Finance Calculator Ireland — Loan vs PCP vs Hire Purchase | source: content/tool-guides/car-finance-calculator.md
+- Childcare Cost vs Returning to Work Calculator Ireland | source: content/tool-guides/childcare-return-to-work-calculator.md
+- Contractor Day Rate vs Salary Calculator Ireland 2026 | source: content/tool-guides/contractor-vs-salary-calculator.md
+- Debt Snowball vs Avalanche Calculator Ireland | source: content/tool-guides/debt-repayment-calculator.md
+- DIRT Calculator Ireland | source: content/tool-guides/dirt-calculator.md
+- Electricity Cost Calculator Ireland | source: content/tool-guides/electricity-cost-calculator.md
+- Emergency Fund Calculator Ireland | source: content/tool-guides/emergency-fund-calculator.md
+- Employer Cost Calculator Ireland 2027 | source: content/tool-guides/employer-cost-calculator.md
+- EV Charging Cost Calculator Ireland | source: content/tool-guides/ev-charging-cost-calculator.md
+- FIRE Number Calculator Ireland | source: content/tool-guides/fire-number-calculator.md
+- First Home Scheme Calculator Ireland | source: content/tool-guides/first-home-scheme-calculator.md
+- Fuel Cost Calculator Ireland | source: content/tool-guides/fuel-cost-calculator.md
+- GLP-1 Cost Calculator Ireland | source: content/tool-guides/glp1-cost-calculator-ireland.md
+- Help to Buy Calculator Ireland | source: content/tool-guides/help-to-buy-calculator.md
+- House Buying Costs Calculator Ireland | source: content/tool-guides/house-buying-costs-calculator.md
+- House Deposit Calculator Ireland | source: content/tool-guides/house-deposit-calculator.md
+- Income Tax Calculator Ireland 2027 | source: content/tool-guides/income-tax-calculator.md
+- Inflation Calculator Ireland | source: content/tool-guides/inflation-calculator.md
+- Inheritance & Gift Tax Calculator Ireland | source: content/tool-guides/inheritance-tax-calculator.md
+- Investment Fee Impact Calculator | source: content/tool-guides/investment-fee-calculator.md
+- Lifetime Cost Calculator Ireland | source: content/tool-guides/lifetime-cost-calculator.md
+- Loan Repayment Calculator Ireland | source: content/tool-guides/loan-repayment-calculator.md
+- Local Property Tax Calculator Ireland 2026 | source: content/tool-guides/local-property-tax-calculator.md
+- Mortgage Affordability Calculator Ireland | source: content/tool-guides/mortgage-affordability-calculator.md
+- Mortgage Borrowing Calculator Ireland | source: content/tool-guides/mortgage-borrowing-calculator.md
+- Mortgage Calculator Ireland | source: content/tool-guides/mortgage-calculator.md
+- Mortgage Overpayment Calculator Ireland | source: content/tool-guides/mortgage-overpayment-calculator.md
+- Mortgage Switch & Rate Change Calculator Ireland | source: content/tool-guides/mortgage-switch-calculator.md
+- MyFutureFund Auto-Enrolment Calculator Ireland | source: content/tool-guides/myfuturefund-calculator.md
+- Net Worth Calculator Ireland | source: content/tool-guides/net-worth-calculator.md
+- Nutrition Needs Calculator Ireland — Energy, Protein & Macros | source: content/tool-guides/nutrition-needs-calculator.md
+- Pension Lump Sum Calculator Ireland | source: content/tool-guides/pension-lump-sum-calculator-ireland.md
+- Pension Projection Calculator Ireland | source: content/tool-guides/pension-projection-calculator.md
+- Pension Tax Relief Calculator Ireland 2026 | source: content/tool-guides/pension-tax-relief-calculator.md
+- Personal Investment Account (PIA) Calculator Ireland | source: content/tool-guides/pia-calculator.md
+- Pregnancy Due Date & Timeline Calculator Ireland | source: content/tool-guides/pregnancy-due-date-calculator.md
+- PRSI Calculator Ireland 2026 | source: content/tool-guides/prsi-calculator.md
+- Redundancy Calculator Ireland 2026 | source: content/tool-guides/redundancy-calculator-ireland.md
+- Regular Savings Calculator Ireland | source: content/tool-guides/regular-savings-calculator.md
+- Rent Tax Credit Calculator Ireland 2027 | source: content/tool-guides/rent-tax-credit-calculator.md
+- Rent vs Buy Calculator Ireland | source: content/tool-guides/rent-vs-buy-calculator.md
+- Retirement Income Calculator Ireland | source: content/tool-guides/retirement-income-calculator.md
+- Salary to Hourly Rate Calculator Ireland | source: content/tool-guides/salary-hourly-rate-calculator.md
+- Savings Goal Calculator Ireland | source: content/tool-guides/savings-goal-calculator.md
+- Self-Employed Tax Calculator Ireland | source: content/tool-guides/self-employed-tax-calculator-ireland.md
+- Solar + EV + Battery Optimiser Ireland | source: content/tool-guides/solar-ev-battery-optimiser.md
+- Solar PV Payback Calculator Ireland | source: content/tool-guides/solar-payback-calculator.md
+- Stamp Duty Calculator Ireland | source: content/tool-guides/stamp-duty-calculator.md
+- Take-Home Pay Calculator Ireland 2027 | source: content/tool-guides/take-home-pay-calculator.md
+- USC Calculator Ireland 2027 | source: content/tool-guides/usc-calculator.md
+- VAT Calculator Ireland 2026 | source: content/tool-guides/vat-calculator.md
+- Weight Loss Calculator Ireland | source: content/tool-guides/weight-loss-calculator.md
+- Whole-House Retrofit Planner Ireland | source: content/tool-guides/whole-house-retrofit-planner.md
+
+## Information and policy pages — 7
+
+- [About](https://compound.ie/about/)
+- [Contact](https://compound.ie/contact/)
+- [Cookie policy](https://compound.ie/cookies/)
+- [Disclaimer](https://compound.ie/disclaimer/)
+- [Editorial and Corrections Policy](https://compound.ie/editorial-policy/)
+- [Life](https://compound.ie/life/)
+- [Privacy policy](https://compound.ie/privacy/)
+
+## Site hubs and directories — 13
+
+- [Company Earnings and Financial Results](https://compound.ie/wealth/earnings/)
+- [Health](https://compound.ie/health/)
+- [Home](https://compound.ie/)
+- [Life](https://compound.ie/life/)
+- [Live to 100 Series](https://compound.ie/live-to-100/)
+- [News](https://compound.ie/news/)
+- [PIA Centre](https://compound.ie/pia/)
+- [PIA Providers](https://compound.ie/pia/providers/)
+- [Private Company Research Directory](https://compound.ie/companies/)
+- [Search](https://compound.ie/search/)
+- [Stocks Directory](https://compound.ie/stocks/)
+- [Tools and Calculators](https://compound.ie/tools/)
+- [Wealth](https://compound.ie/wealth/)
+
+## Listed company stock research profiles — 510
+
+These are generated directory profiles, not individually written evergreen articles.
+
+- [3M (MMM) Stock](https://compound.ie/stocks/mmm/)
+- [A. O. Smith (AOS) Stock](https://compound.ie/stocks/aos/)
+- [Abbott Laboratories (ABT) Stock](https://compound.ie/stocks/abt/)
+- [AbbVie (ABBV) Stock](https://compound.ie/stocks/abbv/)
+- [Accenture (ACN) Stock](https://compound.ie/stocks/acn/)
+- [Adobe Inc. (ADBE) Stock](https://compound.ie/stocks/adbe/)
+- [Advanced Micro Devices (AMD) Stock](https://compound.ie/stocks/amd/)
+- [AES Corporation (AES) Stock](https://compound.ie/stocks/aes/)
+- [Aflac (AFL) Stock](https://compound.ie/stocks/afl/)
+- [Agilent Technologies (A) Stock](https://compound.ie/stocks/a/)
+- [Air Products (APD) Stock](https://compound.ie/stocks/apd/)
+- [Airbnb (ABNB) Stock](https://compound.ie/stocks/abnb/)
+- [Akamai Technologies (AKAM) Stock](https://compound.ie/stocks/akam/)
+- [Albemarle Corporation (ALB) Stock](https://compound.ie/stocks/alb/)
+- [Alexandria Real Estate Equities (ARE) Stock](https://compound.ie/stocks/are/)
+- [Align Technology (ALGN) Stock](https://compound.ie/stocks/algn/)
+- [Allegion (ALLE) Stock](https://compound.ie/stocks/alle/)
+- [Alliant Energy (LNT) Stock](https://compound.ie/stocks/lnt/)
+- [Allstate (ALL) Stock](https://compound.ie/stocks/all/)
+- [Alphabet Inc. (Class A) (GOOGL) Stock](https://compound.ie/stocks/googl/)
+- [Altria (MO) Stock](https://compound.ie/stocks/mo/)
+- [Amazon (AMZN) Stock](https://compound.ie/stocks/amzn/)
+- [Amcor (AMCR) Stock](https://compound.ie/stocks/amcr/)
+- [Ameren (AEE) Stock](https://compound.ie/stocks/aee/)
+- [American Electric Power (AEP) Stock](https://compound.ie/stocks/aep/)
+- [American Express (AXP) Stock](https://compound.ie/stocks/axp/)
+- [American International Group (AIG) Stock](https://compound.ie/stocks/aig/)
+- [American Tower (AMT) Stock](https://compound.ie/stocks/amt/)
+- [American Water Works (AWK) Stock](https://compound.ie/stocks/awk/)
+- [Ameriprise Financial (AMP) Stock](https://compound.ie/stocks/amp/)
+- [Ametek (AME) Stock](https://compound.ie/stocks/ame/)
+- [Amgen (AMGN) Stock](https://compound.ie/stocks/amgn/)
+- [Amphenol (APH) Stock](https://compound.ie/stocks/aph/)
+- [Analog Devices (ADI) Stock](https://compound.ie/stocks/adi/)
+- [Aon plc (AON) Stock](https://compound.ie/stocks/aon/)
+- [APA Corporation (APA) Stock](https://compound.ie/stocks/apa/)
+- [Apollo Global Management (APO) Stock](https://compound.ie/stocks/apo/)
+- [Apple Inc. (AAPL) Stock](https://compound.ie/stocks/aapl/)
+- [Applied Materials (AMAT) Stock](https://compound.ie/stocks/amat/)
+- [AppLovin (APP) Stock](https://compound.ie/stocks/app/)
+- [Aptiv (APTV) Stock](https://compound.ie/stocks/aptv/)
+- [Arch Capital Group (ACGL) Stock](https://compound.ie/stocks/acgl/)
+- [Archer Daniels Midland (ADM) Stock](https://compound.ie/stocks/adm/)
+- [Ares Management (ARES) Stock](https://compound.ie/stocks/ares/)
+- [Arista Networks (ANET) Stock](https://compound.ie/stocks/anet/)
+- [Arthur J. Gallagher & Co. (AJG) Stock](https://compound.ie/stocks/ajg/)
+- [ASML Holding (ASML) Stock Research](https://compound.ie/stocks/asml/)
+- [Assurant (AIZ) Stock](https://compound.ie/stocks/aiz/)
+- [AT&T (T) Stock](https://compound.ie/stocks/t/)
+- [Atmos Energy (ATO) Stock](https://compound.ie/stocks/ato/)
+- [Autodesk (ADSK) Stock](https://compound.ie/stocks/adsk/)
+- [Automatic Data Processing (ADP) Stock](https://compound.ie/stocks/adp/)
+- [AutoZone (AZO) Stock](https://compound.ie/stocks/azo/)
+- [Avery Dennison (AVY) Stock](https://compound.ie/stocks/avy/)
+- [Axon Enterprise (AXON) Stock](https://compound.ie/stocks/axon/)
+- [Baker Hughes (BKR) Stock](https://compound.ie/stocks/bkr/)
+- [Ball Corporation (BALL) Stock](https://compound.ie/stocks/ball/)
+- [Bank of America (BAC) Stock](https://compound.ie/stocks/bac/)
+- [Baxter International (BAX) Stock](https://compound.ie/stocks/bax/)
+- [Becton Dickinson (BDX) Stock](https://compound.ie/stocks/bdx/)
+- [Berkshire Hathaway (BRK-B) Stock](https://compound.ie/stocks/brk-b/)
+- [Best Buy (BBY) Stock](https://compound.ie/stocks/bby/)
+- [Bio-Techne (TECH) Stock](https://compound.ie/stocks/tech/)
+- [Biogen (BIIB) Stock](https://compound.ie/stocks/biib/)
+- [BlackRock (BLK) Stock](https://compound.ie/stocks/blk/)
+- [Blackstone Inc. (BX) Stock](https://compound.ie/stocks/bx/)
+- [Block, Inc. (XYZ) Stock](https://compound.ie/stocks/xyz/)
+- [Bloom Energy (BE) Stock](https://compound.ie/stocks/be/)
+- [BNY Mellon (BNY) Stock](https://compound.ie/stocks/bny/)
+- [Boeing (BA) Stock](https://compound.ie/stocks/ba/)
+- [Booking Holdings (BKNG) Stock](https://compound.ie/stocks/bkng/)
+- [Boston Scientific (BSX) Stock](https://compound.ie/stocks/bsx/)
+- [Bristol Myers Squibb (BMY) Stock](https://compound.ie/stocks/bmy/)
+- [Broadcom (AVGO) Stock](https://compound.ie/stocks/avgo/)
+- [Broadridge Financial Solutions (BR) Stock](https://compound.ie/stocks/br/)
+- [Brown & Brown (BRO) Stock](https://compound.ie/stocks/bro/)
+- [Brown–Forman (BF-B) Stock](https://compound.ie/stocks/bf-b/)
+- [Bunge Global (BG) Stock](https://compound.ie/stocks/bg/)
+- [BXP, Inc. (BXP) Stock](https://compound.ie/stocks/bxp/)
+- [BYD Company (1211) Stock Research](https://compound.ie/stocks/1211-hk/)
+- [C.H. Robinson (CHRW) Stock](https://compound.ie/stocks/chrw/)
+- [Cadence Design Systems (CDNS) Stock](https://compound.ie/stocks/cdns/)
+- [Camden Property Trust (CPT) Stock](https://compound.ie/stocks/cpt/)
+- [Capital One (COF) Stock](https://compound.ie/stocks/cof/)
+- [Cardinal Health (CAH) Stock](https://compound.ie/stocks/cah/)
+- [Carnival Corporation (CCL) Stock](https://compound.ie/stocks/ccl/)
+- [Carrier Global (CARR) Stock](https://compound.ie/stocks/carr/)
+- [Carvana (CVNA) Stock](https://compound.ie/stocks/cvna/)
+- [Casey's (CASY) Stock](https://compound.ie/stocks/casy/)
+- [Caterpillar Inc. (CAT) Stock](https://compound.ie/stocks/cat/)
+- [Cboe Global Markets (CBOE) Stock](https://compound.ie/stocks/cboe/)
+- [CBRE Group (CBRE) Stock](https://compound.ie/stocks/cbre/)
+- [CDW Corporation (CDW) Stock](https://compound.ie/stocks/cdw/)
+- [Cencora (COR) Stock](https://compound.ie/stocks/cor/)
+- [Centene Corporation (CNC) Stock](https://compound.ie/stocks/cnc/)
+- [CenterPoint Energy (CNP) Stock](https://compound.ie/stocks/cnp/)
+- [CF Industries (CF) Stock](https://compound.ie/stocks/cf/)
+- [Charles River Laboratories (CRL) Stock](https://compound.ie/stocks/crl/)
+- [Charles Schwab Corporation (SCHW) Stock](https://compound.ie/stocks/schw/)
+- [Charter Communications (CHTR) Stock](https://compound.ie/stocks/chtr/)
+- [Chevron Corporation (CVX) Stock](https://compound.ie/stocks/cvx/)
+- [Chipotle Mexican Grill (CMG) Stock](https://compound.ie/stocks/cmg/)
+- [Chubb Limited (CB) Stock](https://compound.ie/stocks/cb/)
+- [Church & Dwight (CHD) Stock](https://compound.ie/stocks/chd/)
+- [Ciena (CIEN) Stock](https://compound.ie/stocks/cien/)
+- [Cigna (CI) Stock](https://compound.ie/stocks/ci/)
+- [Cincinnati Financial (CINF) Stock](https://compound.ie/stocks/cinf/)
+- [Cintas (CTAS) Stock](https://compound.ie/stocks/ctas/)
+- [Cisco (CSCO) Stock](https://compound.ie/stocks/csco/)
+- [Citigroup (C) Stock](https://compound.ie/stocks/c/)
+- [Citizens Financial Group (CFG) Stock](https://compound.ie/stocks/cfg/)
+- [Clorox (CLX) Stock](https://compound.ie/stocks/clx/)
+- [CME Group (CME) Stock](https://compound.ie/stocks/cme/)
+- [CMS Energy (CMS) Stock](https://compound.ie/stocks/cms/)
+- [Coca-Cola Company (The) (KO) Stock](https://compound.ie/stocks/ko/)
+- [Cognizant (CTSH) Stock](https://compound.ie/stocks/ctsh/)
+- [Coherent Corp. (COHR) Stock](https://compound.ie/stocks/cohr/)
+- [Coinbase (COIN) Stock](https://compound.ie/stocks/coin/)
+- [Colgate-Palmolive (CL) Stock](https://compound.ie/stocks/cl/)
+- [Comcast (CMCSA) Stock](https://compound.ie/stocks/cmcsa/)
+- [Comfort Systems USA (FIX) Stock](https://compound.ie/stocks/fix/)
+- [ConocoPhillips (COP) Stock](https://compound.ie/stocks/cop/)
+- [Consolidated Edison (ED) Stock](https://compound.ie/stocks/ed/)
+- [Constellation Brands (STZ) Stock](https://compound.ie/stocks/stz/)
+- [Constellation Energy (CEG) Stock](https://compound.ie/stocks/ceg/)
+- [Cooper Companies (The) (COO) Stock](https://compound.ie/stocks/coo/)
+- [Copart (CPRT) Stock](https://compound.ie/stocks/cprt/)
+- [Corning Inc. (GLW) Stock](https://compound.ie/stocks/glw/)
+- [Corpay (CPAY) Stock](https://compound.ie/stocks/cpay/)
+- [CoStar Group (CSGP) Stock](https://compound.ie/stocks/csgp/)
+- [Costco (COST) Stock](https://compound.ie/stocks/cost/)
+- [CRH plc (CRH) Stock](https://compound.ie/stocks/crh/)
+- [CrowdStrike (CRWD) Stock](https://compound.ie/stocks/crwd/)
+- [Crown Castle (CCI) Stock](https://compound.ie/stocks/cci/)
+- [CSX Corporation (CSX) Stock](https://compound.ie/stocks/csx/)
+- [Cummins (CMI) Stock](https://compound.ie/stocks/cmi/)
+- [CVS Health (CVS) Stock](https://compound.ie/stocks/cvs/)
+- [D. R. Horton (DHI) Stock](https://compound.ie/stocks/dhi/)
+- [Danaher Corporation (DHR) Stock](https://compound.ie/stocks/dhr/)
+- [Darden Restaurants (DRI) Stock](https://compound.ie/stocks/dri/)
+- [Datadog (DDOG) Stock](https://compound.ie/stocks/ddog/)
+- [DaVita (DVA) Stock](https://compound.ie/stocks/dva/)
+- [Deckers Brands (DECK) Stock](https://compound.ie/stocks/deck/)
+- [Deere & Company (DE) Stock](https://compound.ie/stocks/de/)
+- [Dell Technologies (DELL) Stock](https://compound.ie/stocks/dell/)
+- [Delta Air Lines (DAL) Stock](https://compound.ie/stocks/dal/)
+- [Devon Energy (DVN) Stock](https://compound.ie/stocks/dvn/)
+- [Dexcom (DXCM) Stock](https://compound.ie/stocks/dxcm/)
+- [Diamondback Energy (FANG) Stock](https://compound.ie/stocks/fang/)
+- [Digital Realty (DLR) Stock](https://compound.ie/stocks/dlr/)
+- [Dollar General (DG) Stock](https://compound.ie/stocks/dg/)
+- [Dollar Tree (DLTR) Stock](https://compound.ie/stocks/dltr/)
+- [Dominion Energy (D) Stock](https://compound.ie/stocks/d/)
+- [Domino's (DPZ) Stock](https://compound.ie/stocks/dpz/)
+- [DoorDash (DASH) Stock](https://compound.ie/stocks/dash/)
+- [Dover Corporation (DOV) Stock](https://compound.ie/stocks/dov/)
+- [Dow Inc. (DOW) Stock](https://compound.ie/stocks/dow/)
+- [DTE Energy (DTE) Stock](https://compound.ie/stocks/dte/)
+- [Duke Energy (DUK) Stock](https://compound.ie/stocks/duk/)
+- [DuPont (DD) Stock](https://compound.ie/stocks/dd/)
+- [Eaton Corporation (ETN) Stock](https://compound.ie/stocks/etn/)
+- [eBay Inc. (EBAY) Stock](https://compound.ie/stocks/ebay/)
+- [EchoStar (ECHO) Stock](https://compound.ie/stocks/echo/)
+- [Ecolab (ECL) Stock](https://compound.ie/stocks/ecl/)
+- [Edison International (EIX) Stock](https://compound.ie/stocks/eix/)
+- [Edwards Lifesciences (EW) Stock](https://compound.ie/stocks/ew/)
+- [Elevance Health (ELV) Stock](https://compound.ie/stocks/elv/)
+- [Emcor (EME) Stock](https://compound.ie/stocks/eme/)
+- [Emerson Electric (EMR) Stock](https://compound.ie/stocks/emr/)
+- [Entergy (ETR) Stock](https://compound.ie/stocks/etr/)
+- [EOG Resources (EOG) Stock](https://compound.ie/stocks/eog/)
+- [EQT Corporation (EQT) Stock](https://compound.ie/stocks/eqt/)
+- [Equifax (EFX) Stock](https://compound.ie/stocks/efx/)
+- [Equinix (EQIX) Stock](https://compound.ie/stocks/eqix/)
+- [Erie Indemnity (ERIE) Stock](https://compound.ie/stocks/erie/)
+- [Essex Property Trust (ESS) Stock](https://compound.ie/stocks/ess/)
+- [Estée Lauder Companies (The) (EL) Stock](https://compound.ie/stocks/el/)
+- [Everest Group (EG) Stock](https://compound.ie/stocks/eg/)
+- [Evergy (EVRG) Stock](https://compound.ie/stocks/evrg/)
+- [Everpure (P) Stock](https://compound.ie/stocks/p/)
+- [Eversource Energy (ES) Stock](https://compound.ie/stocks/es/)
+- [Exelon (EXC) Stock](https://compound.ie/stocks/exc/)
+- [Expand Energy (EXE) Stock](https://compound.ie/stocks/exe/)
+- [Expedia Group (EXPE) Stock](https://compound.ie/stocks/expe/)
+- [Expeditors International (EXPD) Stock](https://compound.ie/stocks/expd/)
+- [Extra Space Storage (EXR) Stock](https://compound.ie/stocks/exr/)
+- [ExxonMobil (XOM) Stock](https://compound.ie/stocks/xom/)
+- [F5, Inc. (FFIV) Stock](https://compound.ie/stocks/ffiv/)
+- [FactSet (FDS) Stock](https://compound.ie/stocks/fds/)
+- [Fair Isaac (FICO) Stock](https://compound.ie/stocks/fico/)
+- [Fastenal (FAST) Stock](https://compound.ie/stocks/fast/)
+- [Federal Realty Investment Trust (FRT) Stock](https://compound.ie/stocks/frt/)
+- [FedEx (FDX) Stock](https://compound.ie/stocks/fdx/)
+- [FedEx Freight (FDXF) Stock](https://compound.ie/stocks/fdxf/)
+- [Ferguson Enterprises (FERG) Stock](https://compound.ie/stocks/ferg/)
+- [Fidelity National Information Services (FIS) Stock](https://compound.ie/stocks/fis/)
+- [Fifth Third Bancorp (FITB) Stock](https://compound.ie/stocks/fitb/)
+- [First Solar (FSLR) Stock](https://compound.ie/stocks/fslr/)
+- [FirstEnergy (FE) Stock](https://compound.ie/stocks/fe/)
+- [Fiserv (FISV) Stock](https://compound.ie/stocks/fisv/)
+- [Flex Ltd. (FLEX) Stock](https://compound.ie/stocks/flex/)
+- [Ford Motor Company (F) Stock](https://compound.ie/stocks/f/)
+- [Fortinet (FTNT) Stock](https://compound.ie/stocks/ftnt/)
+- [Fortive (FTV) Stock](https://compound.ie/stocks/ftv/)
+- [Fox Corporation (Class A) (FOXA) Stock](https://compound.ie/stocks/foxa/)
+- [Franklin Resources (BEN) Stock](https://compound.ie/stocks/ben/)
+- [Freeport-McMoRan (FCX) Stock](https://compound.ie/stocks/fcx/)
+- [Garmin (GRMN) Stock](https://compound.ie/stocks/grmn/)
+- [Gartner (IT) Stock](https://compound.ie/stocks/it/)
+- [GE Aerospace (GE) Stock](https://compound.ie/stocks/ge/)
+- [GE HealthCare (GEHC) Stock](https://compound.ie/stocks/gehc/)
+- [GE Vernova (GEV) Stock](https://compound.ie/stocks/gev/)
+- [Gen Digital (GEN) Stock](https://compound.ie/stocks/gen/)
+- [Generac (GNRC) Stock](https://compound.ie/stocks/gnrc/)
+- [General Dynamics (GD) Stock](https://compound.ie/stocks/gd/)
+- [General Mills (GIS) Stock](https://compound.ie/stocks/gis/)
+- [General Motors (GM) Stock](https://compound.ie/stocks/gm/)
+- [Genuine Parts Company (GPC) Stock](https://compound.ie/stocks/gpc/)
+- [Gilead Sciences (GILD) Stock](https://compound.ie/stocks/gild/)
+- [Global Payments (GPN) Stock](https://compound.ie/stocks/gpn/)
+- [Globe Life (GL) Stock](https://compound.ie/stocks/gl/)
+- [GoDaddy (GDDY) Stock](https://compound.ie/stocks/gddy/)
+- [Goldman Sachs (GS) Stock](https://compound.ie/stocks/gs/)
+- [Halliburton (HAL) Stock](https://compound.ie/stocks/hal/)
+- [Hartford (The) (HIG) Stock](https://compound.ie/stocks/hig/)
+- [Hasbro (HAS) Stock](https://compound.ie/stocks/has/)
+- [HCA Healthcare (HCA) Stock](https://compound.ie/stocks/hca/)
+- [Healthpeak Properties (DOC) Stock](https://compound.ie/stocks/doc/)
+- [Henry Schein (HSIC) Stock](https://compound.ie/stocks/hsic/)
+- [Hershey Company (The) (HSY) Stock](https://compound.ie/stocks/hsy/)
+- [Hewlett Packard Enterprise (HPE) Stock](https://compound.ie/stocks/hpe/)
+- [Hilton Worldwide (HLT) Stock](https://compound.ie/stocks/hlt/)
+- [Home Depot (The) (HD) Stock](https://compound.ie/stocks/hd/)
+- [Honeywell Aerospace (HONA) Stock](https://compound.ie/stocks/hona/)
+- [Honeywell Technologies (HON) Stock](https://compound.ie/stocks/hon/)
+- [Hormel Foods (HRL) Stock](https://compound.ie/stocks/hrl/)
+- [Host Hotels & Resorts (HST) Stock](https://compound.ie/stocks/hst/)
+- [Howmet Aerospace (HWM) Stock](https://compound.ie/stocks/hwm/)
+- [HP Inc. (HPQ) Stock](https://compound.ie/stocks/hpq/)
+- [Hubbell Incorporated (HUBB) Stock](https://compound.ie/stocks/hubb/)
+- [Humana (HUM) Stock](https://compound.ie/stocks/hum/)
+- [Huntington Bancshares (HBAN) Stock](https://compound.ie/stocks/hban/)
+- [Huntington Ingalls Industries (HII) Stock](https://compound.ie/stocks/hii/)
+- [IBM (IBM) Stock](https://compound.ie/stocks/ibm/)
+- [IDEX Corporation (IEX) Stock](https://compound.ie/stocks/iex/)
+- [Idexx Laboratories (IDXX) Stock](https://compound.ie/stocks/idxx/)
+- [Illinois Tool Works (ITW) Stock](https://compound.ie/stocks/itw/)
+- [Illumina, Inc. (ILMN) Stock](https://compound.ie/stocks/ilmn/)
+- [Incyte (INCY) Stock](https://compound.ie/stocks/incy/)
+- [Ingersoll Rand (IR) Stock](https://compound.ie/stocks/ir/)
+- [Insulet Corporation (PODD) Stock](https://compound.ie/stocks/podd/)
+- [Intel (INTC) Stock](https://compound.ie/stocks/intc/)
+- [Interactive Brokers (IBKR) Stock](https://compound.ie/stocks/ibkr/)
+- [Intercontinental Exchange (ICE) Stock](https://compound.ie/stocks/ice/)
+- [International Flavors & Fragrances (IFF) Stock](https://compound.ie/stocks/iff/)
+- [International Paper (IP) Stock](https://compound.ie/stocks/ip/)
+- [Intuit (INTU) Stock](https://compound.ie/stocks/intu/)
+- [Intuitive Surgical (ISRG) Stock](https://compound.ie/stocks/isrg/)
+- [Invesco (IVZ) Stock](https://compound.ie/stocks/ivz/)
+- [Invitation Homes (INVH) Stock](https://compound.ie/stocks/invh/)
+- [IQVIA (IQV) Stock](https://compound.ie/stocks/iqv/)
+- [Iron Mountain (IRM) Stock](https://compound.ie/stocks/irm/)
+- [J.B. Hunt (JBHT) Stock](https://compound.ie/stocks/jbht/)
+- [J.M. Smucker Company (The) (SJM) Stock](https://compound.ie/stocks/sjm/)
+- [Jabil (JBL) Stock](https://compound.ie/stocks/jbl/)
+- [Jack Henry & Associates (JKHY) Stock](https://compound.ie/stocks/jkhy/)
+- [Jacobs Solutions (J) Stock](https://compound.ie/stocks/j/)
+- [Johnson & Johnson (JNJ) Stock](https://compound.ie/stocks/jnj/)
+- [Johnson Controls (JCI) Stock](https://compound.ie/stocks/jci/)
+- [JPMorgan Chase (JPM) Stock](https://compound.ie/stocks/jpm/)
+- [Kenvue (KVUE) Stock](https://compound.ie/stocks/kvue/)
+- [Keurig Dr Pepper (KDP) Stock](https://compound.ie/stocks/kdp/)
+- [KeyCorp (KEY) Stock](https://compound.ie/stocks/key/)
+- [Keysight Technologies (KEYS) Stock](https://compound.ie/stocks/keys/)
+- [Kimberly-Clark (KMB) Stock](https://compound.ie/stocks/kmb/)
+- [Kimco Realty (KIM) Stock](https://compound.ie/stocks/kim/)
+- [Kinder Morgan (KMI) Stock](https://compound.ie/stocks/kmi/)
+- [KKR & Co. (KKR) Stock](https://compound.ie/stocks/kkr/)
+- [KLA Corporation (KLAC) Stock](https://compound.ie/stocks/klac/)
+- [Kraft Heinz (KHC) Stock](https://compound.ie/stocks/khc/)
+- [Kroger (KR) Stock](https://compound.ie/stocks/kr/)
+- [L3Harris (LHX) Stock](https://compound.ie/stocks/lhx/)
+- [Labcorp (LH) Stock](https://compound.ie/stocks/lh/)
+- [Lam Research (LRCX) Stock](https://compound.ie/stocks/lrcx/)
+- [Las Vegas Sands (LVS) Stock](https://compound.ie/stocks/lvs/)
+- [Leidos (LDOS) Stock](https://compound.ie/stocks/ldos/)
+- [Lennar (LEN) Stock](https://compound.ie/stocks/len/)
+- [Lennox International (LII) Stock](https://compound.ie/stocks/lii/)
+- [Lilly (Eli) (LLY) Stock](https://compound.ie/stocks/lly/)
+- [Linde plc (LIN) Stock](https://compound.ie/stocks/lin/)
+- [Live Nation Entertainment (LYV) Stock](https://compound.ie/stocks/lyv/)
+- [Lockheed Martin (LMT) Stock](https://compound.ie/stocks/lmt/)
+- [Loews Corporation (L) Stock](https://compound.ie/stocks/l/)
+- [Lowe's (LOW) Stock](https://compound.ie/stocks/low/)
+- [Lululemon Athletica (LULU) Stock](https://compound.ie/stocks/lulu/)
+- [Lumentum (LITE) Stock](https://compound.ie/stocks/lite/)
+- [LVMH (MC) Stock Research](https://compound.ie/stocks/mc-pa/)
+- [LyondellBasell (LYB) Stock](https://compound.ie/stocks/lyb/)
+- [M&T Bank (MTB) Stock](https://compound.ie/stocks/mtb/)
+- [Marathon Petroleum (MPC) Stock](https://compound.ie/stocks/mpc/)
+- [Marriott International (MAR) Stock](https://compound.ie/stocks/mar/)
+- [Marsh McLennan (MRSH) Stock](https://compound.ie/stocks/mrsh/)
+- [Martin Marietta Materials (MLM) Stock](https://compound.ie/stocks/mlm/)
+- [Marvell Technology (MRVL) Stock](https://compound.ie/stocks/mrvl/)
+- [Masco (MAS) Stock](https://compound.ie/stocks/mas/)
+- [Mastercard (MA) Stock](https://compound.ie/stocks/ma/)
+- [McCormick & Company (MKC) Stock](https://compound.ie/stocks/mkc/)
+- [McDonald's (MCD) Stock](https://compound.ie/stocks/mcd/)
+- [McKesson Corporation (MCK) Stock](https://compound.ie/stocks/mck/)
+- [Medtronic (MDT) Stock](https://compound.ie/stocks/mdt/)
+- [Merck & Co. (MRK) Stock](https://compound.ie/stocks/mrk/)
+- [Meta Platforms (META) Stock](https://compound.ie/stocks/meta/)
+- [MetLife (MET) Stock](https://compound.ie/stocks/met/)
+- [Mettler Toledo (MTD) Stock](https://compound.ie/stocks/mtd/)
+- [MGM Resorts (MGM) Stock](https://compound.ie/stocks/mgm/)
+- [Microchip Technology (MCHP) Stock](https://compound.ie/stocks/mchp/)
+- [Micron Technology (MU) Stock](https://compound.ie/stocks/mu/)
+- [Microsoft (MSFT) Stock](https://compound.ie/stocks/msft/)
+- [Mid-America Apartment Communities (MAA) Stock](https://compound.ie/stocks/maa/)
+- [Moderna (MRNA) Stock](https://compound.ie/stocks/mrna/)
+- [Mondelez International (MDLZ) Stock](https://compound.ie/stocks/mdlz/)
+- [Monolithic Power Systems (MPWR) Stock](https://compound.ie/stocks/mpwr/)
+- [Monster Beverage (MNST) Stock](https://compound.ie/stocks/mnst/)
+- [Moody's Corporation (MCO) Stock](https://compound.ie/stocks/mco/)
+- [Morgan Stanley (MS) Stock](https://compound.ie/stocks/ms/)
+- [Mosaic Company (The) (MOS) Stock](https://compound.ie/stocks/mos/)
+- [Motorola Solutions (MSI) Stock](https://compound.ie/stocks/msi/)
+- [MSCI (MSCI) Stock](https://compound.ie/stocks/msci/)
+- [Nasdaq, Inc. (NDAQ) Stock](https://compound.ie/stocks/ndaq/)
+- [NetApp (NTAP) Stock](https://compound.ie/stocks/ntap/)
+- [Netflix (NFLX) Stock](https://compound.ie/stocks/nflx/)
+- [Newmont (NEM) Stock](https://compound.ie/stocks/nem/)
+- [News Corp (Class A) (NWSA) Stock](https://compound.ie/stocks/nwsa/)
+- [NextEra Energy (NEE) Stock](https://compound.ie/stocks/nee/)
+- [Nike, Inc. (NKE) Stock](https://compound.ie/stocks/nke/)
+- [Nintendo (7974) Stock Research](https://compound.ie/stocks/7974-t/)
+- [NiSource (NI) Stock](https://compound.ie/stocks/ni/)
+- [Nordson Corporation (NDSN) Stock](https://compound.ie/stocks/ndsn/)
+- [Norfolk Southern (NSC) Stock](https://compound.ie/stocks/nsc/)
+- [Northern Trust (NTRS) Stock](https://compound.ie/stocks/ntrs/)
+- [Northrop Grumman (NOC) Stock](https://compound.ie/stocks/noc/)
+- [Norwegian Cruise Line Holdings (NCLH) Stock](https://compound.ie/stocks/nclh/)
+- [Novo Nordisk (NVO) Stock Research](https://compound.ie/stocks/nvo/)
+- [NRG Energy (NRG) Stock](https://compound.ie/stocks/nrg/)
+- [Nucor (NUE) Stock](https://compound.ie/stocks/nue/)
+- [Nvidia (NVDA) Stock](https://compound.ie/stocks/nvda/)
+- [NVR, Inc. (NVR) Stock](https://compound.ie/stocks/nvr/)
+- [NXP Semiconductors (NXPI) Stock](https://compound.ie/stocks/nxpi/)
+- [O'Reilly Automotive (ORLY) Stock](https://compound.ie/stocks/orly/)
+- [Occidental Petroleum (OXY) Stock](https://compound.ie/stocks/oxy/)
+- [Old Dominion (ODFL) Stock](https://compound.ie/stocks/odfl/)
+- [Omnicom Group (OMC) Stock](https://compound.ie/stocks/omc/)
+- [ON Semiconductor (ON) Stock](https://compound.ie/stocks/on/)
+- [Oneok (OKE) Stock](https://compound.ie/stocks/oke/)
+- [Oracle Corporation (ORCL) Stock](https://compound.ie/stocks/orcl/)
+- [Otis Worldwide (OTIS) Stock](https://compound.ie/stocks/otis/)
+- [Paccar (PCAR) Stock](https://compound.ie/stocks/pcar/)
+- [Packaging Corporation of America (PKG) Stock](https://compound.ie/stocks/pkg/)
+- [Palantir Technologies (PLTR) Stock](https://compound.ie/stocks/pltr/)
+- [Palo Alto Networks (PANW) Stock](https://compound.ie/stocks/panw/)
+- [Parker Hannifin (PH) Stock](https://compound.ie/stocks/ph/)
+- [Paychex (PAYX) Stock](https://compound.ie/stocks/payx/)
+- [PayPal (PYPL) Stock](https://compound.ie/stocks/pypl/)
+- [Pentair (PNR) Stock](https://compound.ie/stocks/pnr/)
+- [PepsiCo (PEP) Stock](https://compound.ie/stocks/pep/)
+- [Pfizer (PFE) Stock](https://compound.ie/stocks/pfe/)
+- [PG&E Corporation (PCG) Stock](https://compound.ie/stocks/pcg/)
+- [Philip Morris International (PM) Stock](https://compound.ie/stocks/pm/)
+- [Phillips 66 (PSX) Stock](https://compound.ie/stocks/psx/)
+- [Pinnacle West Capital (PNW) Stock](https://compound.ie/stocks/pnw/)
+- [PNC Financial Services (PNC) Stock](https://compound.ie/stocks/pnc/)
+- [PPG Industries (PPG) Stock](https://compound.ie/stocks/ppg/)
+- [PPL Corporation (PPL) Stock](https://compound.ie/stocks/ppl/)
+- [Principal Financial Group (PFG) Stock](https://compound.ie/stocks/pfg/)
+- [Procter & Gamble (PG) Stock](https://compound.ie/stocks/pg/)
+- [Progressive Corporation (PGR) Stock](https://compound.ie/stocks/pgr/)
+- [Prologis (PLD) Stock](https://compound.ie/stocks/pld/)
+- [Prudential Financial (PRU) Stock](https://compound.ie/stocks/pru/)
+- [PTC Inc. (PTC) Stock](https://compound.ie/stocks/ptc/)
+- [Public Service Enterprise Group (PEG) Stock](https://compound.ie/stocks/peg/)
+- [Public Storage (PSA) Stock](https://compound.ie/stocks/psa/)
+- [PulteGroup (PHM) Stock](https://compound.ie/stocks/phm/)
+- [Qnity Electronics (Q) Stock](https://compound.ie/stocks/q/)
+- [Qualcomm (QCOM) Stock](https://compound.ie/stocks/qcom/)
+- [Quanta Services (PWR) Stock](https://compound.ie/stocks/pwr/)
+- [Quest Diagnostics (DGX) Stock](https://compound.ie/stocks/dgx/)
+- [Ralph Lauren Corporation (RL) Stock](https://compound.ie/stocks/rl/)
+- [Raymond James Financial (RJF) Stock](https://compound.ie/stocks/rjf/)
+- [Realty Income (O) Stock](https://compound.ie/stocks/o/)
+- [Reddit (RDDT) Stock](https://compound.ie/stocks/rddt/)
+- [Regency Centers (REG) Stock](https://compound.ie/stocks/reg/)
+- [Regeneron Pharmaceuticals (REGN) Stock](https://compound.ie/stocks/regn/)
+- [Regions Financial Corporation (RF) Stock](https://compound.ie/stocks/rf/)
+- [Republic Services (RSG) Stock](https://compound.ie/stocks/rsg/)
+- [ResMed| (RMD) Stock](https://compound.ie/stocks/rmd/)
+- [Revvity (RVTY) Stock](https://compound.ie/stocks/rvty/)
+- [Robinhood Markets (HOOD) Stock](https://compound.ie/stocks/hood/)
+- [Rockwell Automation (ROK) Stock](https://compound.ie/stocks/rok/)
+- [Rollins, Inc. (ROL) Stock](https://compound.ie/stocks/rol/)
+- [Roper Technologies (ROP) Stock](https://compound.ie/stocks/rop/)
+- [Ross Stores (ROST) Stock](https://compound.ie/stocks/rost/)
+- [Royal Caribbean Group (RCL) Stock](https://compound.ie/stocks/rcl/)
+- [RTX Corporation (RTX) Stock](https://compound.ie/stocks/rtx/)
+- [S&P Global (SPGI) Stock](https://compound.ie/stocks/spgi/)
+- [Salesforce (CRM) Stock](https://compound.ie/stocks/crm/)
+- [Samsung Electronics (005930) Stock Research](https://compound.ie/stocks/005930-ks/)
+- [Sandisk (SNDK) Stock](https://compound.ie/stocks/sndk/)
+- [SBA Communications (SBAC) Stock](https://compound.ie/stocks/sbac/)
+- [Schlumberger (SLB) Stock](https://compound.ie/stocks/slb/)
+- [Seagate Technology (STX) Stock](https://compound.ie/stocks/stx/)
+- [Sempra (SRE) Stock](https://compound.ie/stocks/sre/)
+- [ServiceNow (NOW) Stock](https://compound.ie/stocks/now/)
+- [Sherwin-Williams (SHW) Stock](https://compound.ie/stocks/shw/)
+- [Simon Property Group (SPG) Stock](https://compound.ie/stocks/spg/)
+- [Skydance Corporation (SKYD) Stock](https://compound.ie/stocks/skyd/)
+- [Skyworks Solutions (SWKS) Stock](https://compound.ie/stocks/swks/)
+- [Smurfit Westrock (SW) Stock](https://compound.ie/stocks/sw/)
+- [Snap-on (SNA) Stock](https://compound.ie/stocks/sna/)
+- [Solventum (SOLV) Stock](https://compound.ie/stocks/solv/)
+- [Southern Company (SO) Stock](https://compound.ie/stocks/so/)
+- [Southwest Airlines (LUV) Stock](https://compound.ie/stocks/luv/)
+- [SpaceX (SPCX) Stock Research](https://compound.ie/stocks/spcx/)
+- [Stanley Black & Decker (SWK) Stock](https://compound.ie/stocks/swk/)
+- [Starbucks (SBUX) Stock](https://compound.ie/stocks/sbux/)
+- [State Street Corporation (STT) Stock](https://compound.ie/stocks/stt/)
+- [Steel Dynamics (STLD) Stock](https://compound.ie/stocks/stld/)
+- [Steris (STE) Stock](https://compound.ie/stocks/ste/)
+- [Stryker Corporation (SYK) Stock](https://compound.ie/stocks/syk/)
+- [Supermicro (SMCI) Stock](https://compound.ie/stocks/smci/)
+- [Synchrony Financial (SYF) Stock](https://compound.ie/stocks/syf/)
+- [Synopsys (SNPS) Stock](https://compound.ie/stocks/snps/)
+- [Sysco (SYY) Stock](https://compound.ie/stocks/syy/)
+- [T-Mobile US (TMUS) Stock](https://compound.ie/stocks/tmus/)
+- [T. Rowe Price (TROW) Stock](https://compound.ie/stocks/trow/)
+- [Taiwan Semiconductor Manufacturing Company (TSMC) (TSM) Stock Research](https://compound.ie/stocks/tsm/)
+- [Take-Two Interactive (TTWO) Stock](https://compound.ie/stocks/ttwo/)
+- [Tapestry, Inc. (TPR) Stock](https://compound.ie/stocks/tpr/)
+- [Targa Resources (TRGP) Stock](https://compound.ie/stocks/trgp/)
+- [Target Corporation (TGT) Stock](https://compound.ie/stocks/tgt/)
+- [TE Connectivity (TEL) Stock](https://compound.ie/stocks/tel/)
+- [Teledyne Technologies (TDY) Stock](https://compound.ie/stocks/tdy/)
+- [Tencent Holdings (0700) Stock Research](https://compound.ie/stocks/0700-hk/)
+- [Teradyne (TER) Stock](https://compound.ie/stocks/ter/)
+- [Tesla, Inc. (TSLA) Stock](https://compound.ie/stocks/tsla/)
+- [Texas Instruments (TXN) Stock](https://compound.ie/stocks/txn/)
+- [Texas Pacific Land Corporation (TPL) Stock](https://compound.ie/stocks/tpl/)
+- [Textron (TXT) Stock](https://compound.ie/stocks/txt/)
+- [Thermo Fisher Scientific (TMO) Stock](https://compound.ie/stocks/tmo/)
+- [TJX Companies (TJX) Stock](https://compound.ie/stocks/tjx/)
+- [TKO Group Holdings (TKO) Stock](https://compound.ie/stocks/tko/)
+- [Toyota Motor Corporation (TM) Stock Research](https://compound.ie/stocks/tm/)
+- [Tractor Supply (TSCO) Stock](https://compound.ie/stocks/tsco/)
+- [Trane Technologies (TT) Stock](https://compound.ie/stocks/tt/)
+- [TransDigm Group (TDG) Stock](https://compound.ie/stocks/tdg/)
+- [Travelers Companies (The) (TRV) Stock](https://compound.ie/stocks/trv/)
+- [Trimble Inc. (TRMB) Stock](https://compound.ie/stocks/trmb/)
+- [Truist Financial (TFC) Stock](https://compound.ie/stocks/tfc/)
+- [Twilio (TWLO) Stock](https://compound.ie/stocks/twlo/)
+- [Tyler Technologies (TYL) Stock](https://compound.ie/stocks/tyl/)
+- [Tyson Foods (TSN) Stock](https://compound.ie/stocks/tsn/)
+- [U.S. Bancorp (USB) Stock](https://compound.ie/stocks/usb/)
+- [Uber (UBER) Stock](https://compound.ie/stocks/uber/)
+- [UDR, Inc. (UDR) Stock](https://compound.ie/stocks/udr/)
+- [Ulta Beauty (ULTA) Stock](https://compound.ie/stocks/ulta/)
+- [Union Pacific Corporation (UNP) Stock](https://compound.ie/stocks/unp/)
+- [United Airlines Holdings (UAL) Stock](https://compound.ie/stocks/ual/)
+- [United Parcel Service (UPS) Stock](https://compound.ie/stocks/ups/)
+- [United Rentals (URI) Stock](https://compound.ie/stocks/uri/)
+- [UnitedHealth Group (UNH) Stock](https://compound.ie/stocks/unh/)
+- [Universal Health Services (UHS) Stock](https://compound.ie/stocks/uhs/)
+- [Valero Energy (VLO) Stock](https://compound.ie/stocks/vlo/)
+- [Veeva Systems (VEEV) Stock](https://compound.ie/stocks/veev/)
+- [Ventas (VTR) Stock](https://compound.ie/stocks/vtr/)
+- [Veralto (VLTO) Stock](https://compound.ie/stocks/vlto/)
+- [Verisign (VRSN) Stock](https://compound.ie/stocks/vrsn/)
+- [Verisk Analytics (VRSK) Stock](https://compound.ie/stocks/vrsk/)
+- [Verizon (VZ) Stock](https://compound.ie/stocks/vz/)
+- [Vertex Pharmaceuticals (VRTX) Stock](https://compound.ie/stocks/vrtx/)
+- [Vertiv (VRT) Stock](https://compound.ie/stocks/vrt/)
+- [Viatris (VTRS) Stock](https://compound.ie/stocks/vtrs/)
+- [Vici Properties (VICI) Stock](https://compound.ie/stocks/vici/)
+- [Visa Inc. (V) Stock](https://compound.ie/stocks/v/)
+- [Vistra Corp. (VST) Stock](https://compound.ie/stocks/vst/)
+- [Vivmark Residential (VMRK) Stock](https://compound.ie/stocks/vmrk/)
+- [Vulcan Materials Company (VMC) Stock](https://compound.ie/stocks/vmc/)
+- [Vylor (VYLR) Stock](https://compound.ie/stocks/vylr/)
+- [W. R. Berkley Corporation (WRB) Stock](https://compound.ie/stocks/wrb/)
+- [W. W. Grainger (GWW) Stock](https://compound.ie/stocks/gww/)
+- [Wabtec (WAB) Stock](https://compound.ie/stocks/wab/)
+- [Walmart (WMT) Stock](https://compound.ie/stocks/wmt/)
+- [Walt Disney Company (The) (DIS) Stock](https://compound.ie/stocks/dis/)
+- [Waste Management (WM) Stock](https://compound.ie/stocks/wm/)
+- [Waters Corporation (WAT) Stock](https://compound.ie/stocks/wat/)
+- [WEC Energy Group (WEC) Stock](https://compound.ie/stocks/wec/)
+- [Wells Fargo (WFC) Stock](https://compound.ie/stocks/wfc/)
+- [Welltower (WELL) Stock](https://compound.ie/stocks/well/)
+- [West Pharmaceutical Services (WST) Stock](https://compound.ie/stocks/wst/)
+- [Western Digital (WDC) Stock](https://compound.ie/stocks/wdc/)
+- [Weyerhaeuser (WY) Stock](https://compound.ie/stocks/wy/)
+- [Williams Companies (WMB) Stock](https://compound.ie/stocks/wmb/)
+- [Williams-Sonoma, Inc. (WSM) Stock](https://compound.ie/stocks/wsm/)
+- [Willis Towers Watson (WTW) Stock](https://compound.ie/stocks/wtw/)
+- [Workday, Inc. (WDAY) Stock](https://compound.ie/stocks/wday/)
+- [Wynn Resorts (WYNN) Stock](https://compound.ie/stocks/wynn/)
+- [Xcel Energy (XEL) Stock](https://compound.ie/stocks/xel/)
+- [Xylem Inc. (XYL) Stock](https://compound.ie/stocks/xyl/)
+- [Yum! Brands (YUM) Stock](https://compound.ie/stocks/yum/)
+- [Zebra Technologies (ZBRA) Stock](https://compound.ie/stocks/zbra/)
+- [Zimmer Biomet (ZBH) Stock](https://compound.ie/stocks/zbh/)
+- [Zoetis (ZTS) Stock](https://compound.ie/stocks/zts/)
+
+## Private-company research profiles — 13
+
+- [Anduril Industries Private Company Research](https://compound.ie/companies/anduril/)
+- [Anthropic Private Company Research](https://compound.ie/companies/anthropic/)
+- [Blue Origin Private Company Research](https://compound.ie/companies/blue-origin/)
+- [ByteDance Private Company Research](https://compound.ie/companies/bytedance/)
+- [Canva Private Company Research](https://compound.ie/companies/canva/)
+- [Databricks Private Company Research](https://compound.ie/companies/databricks/)
+- [Epic Games Private Company Research](https://compound.ie/companies/epic-games/)
+- [LEGO Group Private Company Research](https://compound.ie/companies/lego/)
+- [Neuralink Private Company Research](https://compound.ie/companies/neuralink/)
+- [OpenAI Private Company Research](https://compound.ie/companies/openai/)
+- [Revolut Private Company Research](https://compound.ie/companies/revolut/)
+- [Stripe Private Company Research](https://compound.ie/companies/stripe/)
+- [Valve Private Company Research](https://compound.ie/companies/valve/)
+
+## Inventory warnings
+
+- Repeated canonical routes across groups: /live-to-100/, /life/
+
+## Duplicate-prevention procedure
+
+1. Search article titles for exact keywords and closely related questions.
+2. Search calculators, embedded tool guides and existing series chapters.
+3. For earnings, update the existing company profile rather than creating another quarterly URL.
+4. If existing coverage matches the search intent, refresh it, preserve its URL and add internal links.
+5. Only create a new URL for a genuinely distinct reader question.
+6. Update this register after a publishing batch; the machine-readable JSON is also available in data/content-inventory.json.
+
