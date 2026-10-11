@@ -1,0 +1,29 @@
+import {allowBrowser,originHeaders,readJson,normalizeApplication,verifyTurnstile,db,sendEmail,htmlSafe,json,err,catchError,failClosed} from '../lib/core.js';
+export function OPTIONS(request){return new Response(null,{status:204,headers:originHeaders(request)});}
+export async function POST(request){
+ const cors=originHeaders(request);
+ if(!allowBrowser(request))return err('Not allowed',403);
+ if(!failClosed('SUPABASE_URL','SUPABASE_SERVICE_ROLE_KEY','TURNSTILE_SECRET','RESEND_API_KEY','MAIL_FROM','ADMIN_EMAIL'))return json({ok:false,error:'Applications are not open yet'},503,cors);
+ try{
+  const raw=await readJson(request);
+  // Honeypot is deliberately not enough on its own.
+  if(raw.website_confirm)return json({ok:true,received:true},200,cors);
+  const app=normalizeApplication(raw);
+  if(!await verifyTurnstile(raw.turnstileToken,request))return json({ok:false,error:'Spam check failed'},400,cors);
+  const result=await db('solar_sponsor_applications',{method:'POST',body:app});
+  const saved=result?.[0];
+  if(!saved?.id)throw new Error('Application not saved');
+  const list=app.requested_counties.map(htmlSafe).join(', ');
+  try{
+   await sendEmail({to:process.env.ADMIN_EMAIL,subject:'New solar sponsor application — '+app.company,html:
+     '<h2>New solar sponsor application</h2><p><b>Company:</b> '+htmlSafe(app.company)+'</p><p><b>Contact:</b> '+htmlSafe(app.contact)+' — '+htmlSafe(app.email)+'</p><p><b>Counties:</b> '+list+'</p><p><b>Indicative monthly value:</b> €'+(app.requested_counties.length*250)+'</p><p><b>Application ID:</b> '+saved.id+'</p>'});
+  }catch(error){console.error('Owner notification failed: '+error.message);}
+  try{
+   await sendEmail({to:app.email,subject:'Compound Solar — application received',html:'<p>Thank you, '+htmlSafe(app.contact)+'. We received your request for '+list+'.</p><p>This is an expression of interest. Counties are not reserved and no payment is due until we verify your business and send a sponsorship agreement.</p><p>Compound.ie</p>'});
+  }catch(error){console.error('Applicant confirmation failed: '+error.message);}
+  return json({ok:true,id:saved.id,received:true},201,cors);
+ }catch(error){
+  if(/Invalid|valid counties|required|Spam|application|Payload|Expected/.test(error.message))return json({ok:false,error:error.message},400,cors);
+  const result=catchError(error);return json(await result.json(),503,cors);
+ }
+}
