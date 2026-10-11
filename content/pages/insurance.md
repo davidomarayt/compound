@@ -14,14 +14,6 @@ title: "Insurance Tools & Guides Ireland"
     <div class="ins-art" aria-hidden="true"><div class="ins-shield"><span>✓</span></div></div>
   </header>
 
-  <aside class="ins-partner-strip" aria-label="Insurance partnership opportunities">
-    <div class="ins-partner-strip-copy">
-      <p class="ins-ey">PARTNERSHIP OPPORTUNITY · CURRENTLY UNSPONSORED</p>
-      <h2>Independent insurance guidance. Thoughtful brand partnerships.</h2>
-      <p>Compound welcomes enquiries about clearly labelled insurance category, guide and calculator sponsorships. Editorial content and tool results remain independent.</p>
-    </div>
-    <a href="/insurance-partnerships/" class="ins-partner-strip-link" data-ins-event="partner_interest" data-ins-label="insurance_hub">Explore partnership opportunities ↗</a>
-  </aside>
 
   <section id="insurance-tools" aria-labelledby="ins-tools-heading">
     <div class="ins-section-head">
@@ -201,11 +193,11 @@ title: "Insurance Tools & Guides Ireland"
     </nav>
   </section>
 
-  <section class="ins-independence" id="insurance-partnerships" aria-labelledby="ins-sponsors-heading">
-    <div><p class="ins-ey">EDITORIAL INDEPENDENCE</p><h2 id="ins-sponsors-heading">Useful tools first. Commercial partnerships second.</h2></div>
+  <section class="ins-independence" id="editorial-independence" aria-labelledby="ins-independence-heading">
+    <div><p class="ins-ey">EDITORIAL INDEPENDENCE</p><h2 id="ins-independence-heading">Independent information. Clear assumptions.</h2></div>
     <div>
       <p>Compound may accept appropriately disclosed category sponsorships and advertising. No insurer currently buys a ranking on this page. Sponsorship would never change calculator arithmetic, editorial conclusions, policy eligibility or the order of independently chosen recommendations.</p>
-      <p>Learn about <a href="/insurance-partnerships/" data-ins-event="partner_interest" data-ins-label="footer">insurance partnership opportunities</a> or contact <a href="mailto:david@compound.ie?subject=Compound%20Insurance%20Partnership" data-ins-event="partner_email" data-ins-label="insurance_hub">david@compound.ie</a>. Sponsored placements will be clearly labelled. Compound does not sell insurance, arrange regulated policies or provide personalised financial advice through these tools.</p>
+      <p>For editorial feedback or advertising enquiries, contact <a href="mailto:david@compound.ie?subject=Compound%20Insurance%20Enquiry" data-ins-event="partner_email" data-ins-label="insurance_hub">david@compound.ie</a>. Any advertising is clearly identified. Compound does not sell insurance, arrange regulated policies or provide personalised financial advice through these tools.</p>
     </div>
   </section>
 
