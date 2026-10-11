@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {COUNTIES,PRICE_ID,normalizeApplication,sha256,stripeSignature,FOUNDING_TRIAL_END_UNIX} from '../lib/core.js';
+import {COUNTIES,PRICE_ID,UPFRONT_PRICE_ID,CANCEL_NOTICE_DAYS,noticeDeadline,normalizeApplication,sha256,stripeSignature,FOUNDING_TRIAL_END_UNIX} from '../lib/core.js';
 import {createHmac} from 'node:crypto';
 
 test('includes exactly all 32 counties without duplicate names',()=>{
@@ -36,12 +36,23 @@ test('hashing token is deterministic and avoids storing original invitation in d
  assert.notEqual(sha256('hello'),sha256('hello2'));
 });
 
-test('founding trial ends exactly at the start of Q1 2027 UTC',()=>{assert.equal(new Date(FOUNDING_TRIAL_END_UNIX*1000).toISOString(),'2027-01-01T00:00:00.000Z');});
+test('founding trial ends exactly at the start of Q1 2027 UTC',()=>{assert.equal(new Date(FOUNDING_TRIAL_END_UNIX*1000).toISOString(),'2027-04-01T00:00:00.000Z');});
 
-test('quarterly billing offer includes fixed January trial and safeguards',async()=>{
+test('Q1 prepayment at signup, free 2026, first recurring billing April 1 and safeguards',async()=>{
  const {readFile}=await import('node:fs/promises');
  const src=await readFile(new URL('../api/checkout.js',import.meta.url),'utf8');
- for(const field of ['subscription_data[trial_end]','payment_method_collection','automatic_tax[enabled]','line_items[0][quantity]','SPONSOR_BILLING_READY','SPONSOR_TAX_READY']){
+ for(const field of ['subscription_data[trial_end]','payment_method_collection','automatic_tax[enabled]','line_items[0][quantity]','line_items[1][quantity]','UPFRONT_PRICE_ID','SPONSOR_BILLING_READY','SPONSOR_TAX_READY']){
    assert(src.includes(field),'checkout missing '+field);
  }
+});
+
+test('€750 upfront charge and 30-day cancellation notice calculation',()=>{
+ assert.equal(UPFRONT_PRICE_ID,'price_1UPQu52R63yYze0g7tXqWmi9');
+ assert.equal(CANCEL_NOTICE_DAYS,30);
+ assert.equal(new Date(noticeDeadline(FOUNDING_TRIAL_END_UNIX)*1000).toISOString(),'2027-03-02T00:00:00.000Z');
+});
+test('webhook checks initial paid invoice and exact one-time price before county activation',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const src=await readFile(new URL('../api/webhook.js',import.meta.url),'utf8');
+ for(const item of ['validUpfrontCheckout','UPFRONT_PRICE_ID','invoice?.status','p_kind:\'upfront_paid\'','checkout.session.completed'])assert(src.includes(item),'Missing '+item);
 });
