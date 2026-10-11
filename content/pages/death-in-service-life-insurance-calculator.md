@@ -17,74 +17,48 @@ title: "Death-in-Service vs Life Insurance Calculator Ireland"
 <div class="it26-result-row"><span>Modelled family protection target</span><strong data-i-result="target">—</strong></div>
 <div class="it26-result-row"><span>Total benefits, other cover and cash</span><strong data-i-result="existing">—</strong></div></div><p class="it26-note" data-i-note>Planning illustration only.</p></section>
 </div>
-<div class="it26-explanation" markdown="1">
-
-## What is death-in-service cover in Ireland?
-
-Some Irish employers provide **group life assurance** as part of a pension or employment benefits package. A common way to describe the benefit is a multiple of annual salary payable following an eligible employee death while covered by the scheme.
-
-The actual amount depends on the scheme's own definition of salary, membership rules, eligibility, pension arrangements and benefit structure. It might be two, three or four times salary, or an entirely different amount. **Do not assume four times salary applies to your own employer** simply because this tool starts with that illustration.
-
-### How the salary multiple is calculated
-
-If your qualifying salary is €60,000 and the benefit is four times salary, the potential employer benefit is €240,000, subject to the scheme's contractual and administrative terms.
-
-The calculator then builds a simple family funding target: monthly income shortfall multiplied by 12 and the number of years dependants need support, plus uninsured debts and separate one-off costs. Savings, additional unassigned family life cover and the assumed employer benefit are subtracted.
-
-For example, €2,500 a month for 15 years gives €450,000 in income support. Add €20,000 of uninsured debt and €10,000 of one-off costs for €480,000 total. Subtract €240,000 of assumed employer death cover and €50,000 of available savings: the illustrative remaining need is **€190,000**.
-
-This is **not** an insurer policy recommendation. A financial adviser may use a more detailed inflation, investment-return, beneficiary and tax assessment to establish the appropriate amount and ownership of cover.
-
-### Why changing jobs matters
-
-Workplace death-in-service benefits are often contingent on current employment and scheme membership. If you leave, retire or change employers, protection could stop or change. During unpaid leave, long-term sickness or other special employment statuses, eligibility may have exceptions.
-
-Ask HR or the pension scheme administrator for the **current written benefits statement** and trust/scheme information. Do not rely on a recruitment brochure or old policy booklet alone.
-
-### Who receives the payout?
-
-Depending on the trust and policy arrangements, the payout may be made via pension scheme trustees, your estate or an eligible beneficiary; a nominated recipient might not have an unconditional right to payment. Beneficiary nominations, spouse/partner status and estate-planning structures matter.
-
-Before relying on the amount, check:
-- the covered salary definition;
-- whether the benefit is insured or discretionary;
-- when cover starts and stops;
-- beneficiaries and nomination forms;
-- interaction with pension fund balances;
-- tax treatment of the actual benefit.
-
-A spouse or civil partner can qualify for an Irish inheritance-tax exemption on transfers between spouses/civil partners, but not all beneficiaries receive the same treatment. See [Revenue's CAT guidance](https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/index.aspx) where relevant.
-
-### Death-in-service vs separate term life cover
-
-Personally owned life insurance generally remains separate from your employer's benefit and can give continuity through job changes, provided premiums and contract conditions remain satisfied. You may also need to cover a non-earning spouse's unpaid childcare and family contributions.
-
-Compare the **net shortfall** for the death of each parent separately, and distinguish mortgage protection (normally assigned to the lender) from freely usable family life cover.
-
-## FAQ
-
-### Is death-in-service a pension?
-
-It is often provided through an employer's group pension or life assurance scheme, but it is a death benefit rather than the same thing as your retirement pension fund.
-
-### Does cover continue after I leave my job?
-
-Not necessarily. Ask HR for confirmation before leaving or retiring.
-
-### Is four-times salary guaranteed?
-
-No. The amount and salary definition depend on your employer's specific scheme.
-
-### Should I cancel my private life insurance if I have death-in-service?
-
-Not without checking your dependency needs, portability and replacement underwriting. Coverage can change when employment changes.
-
-## Useful sources
-
-- [CCPC — Life insurance](https://www.ccpc.ie/manage-your-money/day-to-day-finances/insurance/life-insurance)
-- [Citizens Information — Occupational pensions](https://www.citizensinformation.ie/en/money-and-tax/personal-finance/pensions/occupational-pensions/)
-- [Compound — Life Insurance Ireland guide](/wealth/life-insurance-ireland/)
-
+<div class="it26-explanation">
+<h2 id="what-is-deathinservice-cover-in-ireland">What is death-in-service cover in Ireland?</h2>
+<p>Some Irish employers provide <strong>group life assurance</strong> as part of a pension or employment benefits package. A common way to describe the benefit is a multiple of annual salary payable following an eligible employee death while covered by the scheme.</p>
+<p>The actual amount depends on the scheme's own definition of salary, membership rules, eligibility, pension arrangements and benefit structure. It might be two, three or four times salary, or an entirely different amount. <strong>Do not assume four times salary applies to your own employer</strong> simply because this tool starts with that illustration.</p>
+<h3 id="how-the-salary-multiple-is-calculated">How the salary multiple is calculated</h3>
+<p>If your qualifying salary is €60,000 and the benefit is four times salary, the potential employer benefit is €240,000, subject to the scheme's contractual and administrative terms.</p>
+<p>The calculator then builds a simple family funding target: monthly income shortfall multiplied by 12 and the number of years dependants need support, plus uninsured debts and separate one-off costs. Savings, additional unassigned family life cover and the assumed employer benefit are subtracted.</p>
+<p>For example, €2,500 a month for 15 years gives €450,000 in income support. Add €20,000 of uninsured debt and €10,000 of one-off costs for €480,000 total. Subtract €240,000 of assumed employer death cover and €50,000 of available savings: the illustrative remaining need is <strong>€190,000</strong>.</p>
+<p>This is <strong>not</strong> an insurer policy recommendation. A financial adviser may use a more detailed inflation, investment-return, beneficiary and tax assessment to establish the appropriate amount and ownership of cover.</p>
+<h3 id="why-changing-jobs-matters">Why changing jobs matters</h3>
+<p>Workplace death-in-service benefits are often contingent on current employment and scheme membership. If you leave, retire or change employers, protection could stop or change. During unpaid leave, long-term sickness or other special employment statuses, eligibility may have exceptions.</p>
+<p>Ask HR or the pension scheme administrator for the <strong>current written benefits statement</strong> and trust/scheme information. Do not rely on a recruitment brochure or old policy booklet alone.</p>
+<h3 id="who-receives-the-payout">Who receives the payout?</h3>
+<p>Depending on the trust and policy arrangements, the payout may be made via pension scheme trustees, your estate or an eligible beneficiary; a nominated recipient might not have an unconditional right to payment. Beneficiary nominations, spouse/partner status and estate-planning structures matter.</p>
+<p>Before relying on the amount, check:</p>
+<ul>
+<li>the covered salary definition;</li>
+<li>whether the benefit is insured or discretionary;</li>
+<li>when cover starts and stops;</li>
+<li>beneficiaries and nomination forms;</li>
+<li>interaction with pension fund balances;</li>
+<li>tax treatment of the actual benefit.</li>
+</ul>
+<p>A spouse or civil partner can qualify for an Irish inheritance-tax exemption on transfers between spouses/civil partners, but not all beneficiaries receive the same treatment. See <a href="https://www.revenue.ie/en/gains-gifts-and-inheritance/cat-thresholds-rates-and-aggregation-rules/index.aspx" rel="noopener">Revenue's CAT guidance</a> where relevant.</p>
+<h3 id="deathinservice-vs-separate-term-life-cover">Death-in-service vs separate term life cover</h3>
+<p>Personally owned life insurance generally remains separate from your employer's benefit and can give continuity through job changes, provided premiums and contract conditions remain satisfied. You may also need to cover a non-earning spouse's unpaid childcare and family contributions.</p>
+<p>Compare the <strong>net shortfall</strong> for the death of each parent separately, and distinguish mortgage protection (normally assigned to the lender) from freely usable family life cover.</p>
+<h2 id="faq">FAQ</h2>
+<h3 id="is-deathinservice-a-pension">Is death-in-service a pension?</h3>
+<p>It is often provided through an employer's group pension or life assurance scheme, but it is a death benefit rather than the same thing as your retirement pension fund.</p>
+<h3 id="does-cover-continue-after-i-leave-my-job">Does cover continue after I leave my job?</h3>
+<p>Not necessarily. Ask HR for confirmation before leaving or retiring.</p>
+<h3 id="is-fourtimes-salary-guaranteed">Is four-times salary guaranteed?</h3>
+<p>No. The amount and salary definition depend on your employer's specific scheme.</p>
+<h3 id="should-i-cancel-my-private-life-insurance-if-i-have-deathinservice">Should I cancel my private life insurance if I have death-in-service?</h3>
+<p>Not without checking your dependency needs, portability and replacement underwriting. Coverage can change when employment changes.</p>
+<h2 id="useful-sources">Useful sources</h2>
+<ul>
+<li><a href="https://www.ccpc.ie/manage-your-money/day-to-day-finances/insurance/life-insurance" rel="noopener">CCPC — Life insurance</a></li>
+<li><a href="https://www.citizensinformation.ie/en/money-and-tax/personal-finance/pensions/occupational-pensions/" rel="noopener">Citizens Information — Occupational pensions</a></li>
+<li><a href="/wealth/life-insurance-ireland/">Compound — Life Insurance Ireland guide</a></li>
+</ul>
 </div>
 <section class="it26-related"><h2>More insurance tools</h2><nav aria-label="Related insurance tools"><a href="/insurance/">Insurance hub ↗</a><a href="/health-insurance-cost-comparison-calculator/">Health Insurance Cost Comparison Calculator Ireland ↗</a><a href="/home-insurance-rebuild-cost-calculator/">Home Insurance Rebuild Cost Calculator Ireland ↗</a><a href="/critical-illness-cover-calculator/">Critical Illness Cover Calculator Ireland ↗</a><a href="/insurance-premium-savings-calculator/">Insurance Premium Savings Calculator Ireland ↗</a></nav></section>
 </article>
