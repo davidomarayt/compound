@@ -186,3 +186,15 @@
 }
 @media(max-width:360px){.sol-sponsor-countygrid{grid-template-columns:minmax(0,1fr)}}
 @media(prefers-reduced-motion:reduce){.sol-sponsor-button,.sol-sponsor-county>span{transition:none}}
+
+/* Match the global Compound chrome to this page's clinical monochrome theme only. */
+body:has(.sol-sponsor-page){--bg:#fff;--surface:#fff;--paper:#fff;--ink:#171717;--ink-2:#444;--muted:#626262;--line:#dedede;--line-2:#cfcfcf;background:#fff;color:#171717}
+body:has(.sol-sponsor-page) .masthead-note{background:#fff;color:#555;border-bottom-color:#e1e1e1}
+body:has(.sol-sponsor-page) .site-header{background:#fff;color:#111}
+body:has(.sol-sponsor-page) .site-header .brand-dot,
+body:has(.sol-sponsor-page) .site-footer .brand-dot{color:#111}
+body:has(.sol-sponsor-page) .site-header .search-link{border-color:#d2d2d2}
+body:has(.sol-sponsor-page) .site-footer{background:#fff;color:#181818;border-top:1px solid #dedede}
+body:has(.sol-sponsor-page) .site-footer .footer-top>div>p,
+body:has(.sol-sponsor-page) .site-footer .footer-disclaimer{color:#727272}
+body:has(.sol-sponsor-page) .site-footer .footer-bottom{border-top-color:#dedede;color:#555}
