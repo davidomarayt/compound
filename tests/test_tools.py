@@ -69,7 +69,7 @@ def test_solar_payback_has_energy_system_controls():
     assert {"grant", "total_demand", "solar_used", "exported", "battery_arbitrage", "payback"} <= result_ids
     guide = solar["guide"]
     assert "4,200 kWh" in guide
-    assert "built and occupied before 2021" in guide
+    assert "built and occupied before 2025" in guide
     assert "EV" in guide and "battery" in guide.lower() and "night" in guide.lower()
 
 
