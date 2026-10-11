@@ -12,7 +12,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 59
 - Embedded tool-guide files: 57
-- Information and policy pages: 7
+- Information and policy pages: 8
 - Main hubs: 11
 - Public-company directory profiles: 510
 - Private-company directory profiles: 13
@@ -349,13 +349,14 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - Weight Loss Calculator Ireland | source: content/tool-guides/weight-loss-calculator.md
 - Whole-House Retrofit Planner Ireland | source: content/tool-guides/whole-house-retrofit-planner.md
 
-## Information and policy pages — 7
+## Information and policy pages — 8
 
 - [About](https://compound.ie/about/)
 - [Contact](https://compound.ie/contact/)
 - [Cookie policy](https://compound.ie/cookies/)
 - [Disclaimer](https://compound.ie/disclaimer/)
 - [Editorial and Corrections Policy](https://compound.ie/editorial-policy/)
+- [Insurance Tools & Guides Ireland](https://compound.ie/insurance/)
 - [Life](https://compound.ie/life/)
 - [Privacy policy](https://compound.ie/privacy/)
 

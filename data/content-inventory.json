@@ -4287,6 +4287,12 @@
         "kind": "Information / policy page"
       },
       {
+        "title": "Insurance Tools & Guides Ireland",
+        "url": "/insurance/",
+        "source": "content/pages/insurance.md",
+        "kind": "Information / policy page"
+      },
+      {
         "title": "Life",
         "url": "/life/",
         "source": "content/pages/life.md",
