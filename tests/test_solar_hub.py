@@ -98,6 +98,7 @@ def test_mobile_browser_audit_covers_every_solar_route():
     assert "solar-hub.js?v=3" in template
     assert "solar-research.js?v=1" in template
     assert "node --check compound/site/static/solar-research.js" in workflow
+    assert workflow.count("for slug in solar solar/compare-quotes solar/grants solar/costs solar/installers solar/get-quotes solar/batteries solar/export-rates solar/equipment; do") == 2
     assert 'brief.querySelector("[data-sb-output]")' in (ROOT / "compound/site/static/solar-hub.js").read_text(encoding="utf-8")
     for route in ("/solar-payback-calculator/", "/solar-ev-battery-optimiser/", "/wealth/solar-panels-ireland/", "/wealth/solar-panels-vs-battery-ireland/"):
         assert f'"{route}"' in script

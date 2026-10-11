@@ -95,7 +95,7 @@ jobs:
           grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/home.html
 
           # Verify solar hub canonical URLs, on-page tools and AdSense script on the public domain.
-          for slug in solar solar/compare-quotes solar/grants solar/costs solar/installers solar/get-quotes; do
+          for slug in solar solar/compare-quotes solar/grants solar/costs solar/installers solar/get-quotes solar/batteries solar/export-rates solar/equipment; do
             target="/tmp/solar-${slug//\//-}.html"
             fetch "https://compound.ie/${slug}/" "$target"
             grep -Fq 'solar-hub.css' "$target"
