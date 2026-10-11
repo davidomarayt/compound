@@ -243,3 +243,95 @@
  .sol-research-result>strong{font-size:clamp(28px,8vw,50px)}
  .sol-research-result .sol-minirows>div{grid-template-columns:minmax(0,1fr) auto;gap:8px}
 }
+
+/* Export comparison: readable tariff-by-tariff cards instead of shrinking four metrics.
+   Confined to the export tool; grant and battery layouts remain unchanged. */
+[data-solar-export] .sol-export-breakdown{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+  margin-top:24px;
+  padding-top:22px;
+  border-top:1px solid #b8cbbd;
+  min-width:0;
+}
+[data-solar-export] .sol-export-offer{
+  min-width:0;
+  padding:clamp(16px,2.4vw,24px);
+  border:1px solid #ccdccc;
+  border-radius:9px;
+  background:#fbfcf7;
+  color:#213c2e;
+}
+[data-solar-export] .sol-export-offer.is-lower{
+  border-color:#558669;
+  box-shadow:inset 0 3px #558669;
+}
+[data-solar-export] .sol-export-offer-heading{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:14px;
+  min-width:0;
+}
+[data-solar-export] .sol-export-offer-heading h3{
+  margin:0;
+  font:700 15px/1.35 var(--sans);
+  letter-spacing:0;
+  color:#254e37;
+  overflow-wrap:break-word;
+}
+[data-solar-export] .sol-export-badge:not([hidden]){
+  display:inline-block;
+  font:700 10px/1.3 var(--sans);
+  border-radius:99px;
+  padding:5px 9px;
+  background:#dcebe0;
+  color:#28543b;
+}
+[data-solar-export] .sol-export-caption{
+  margin:0 0 6px;
+  color:#536c5e;
+  font:500 12px/1.45 var(--sans);
+}
+[data-solar-export] .sol-export-amount{
+  display:block;
+  margin-bottom:17px;
+  font:700 clamp(25px,3.2vw,37px)/1.15 var(--sans);
+  font-variant-numeric:tabular-nums;
+  color:#1c3526;
+  white-space:nowrap;
+  letter-spacing:-.035em;
+}
+[data-solar-export] .sol-export-credit{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:12px;
+  min-width:0;
+  border-top:1px solid #dbe5dc;
+  padding-top:14px;
+}
+[data-solar-export] .sol-export-credit span{
+  font:500 12px/1.45 var(--sans);
+  color:#536c5e;
+  overflow-wrap:normal;
+}
+[data-solar-export] .sol-export-credit strong{
+  font:700 17px/1.4 var(--sans);
+  color:#1c3526;
+  font-variant-numeric:tabular-nums;
+  white-space:nowrap;
+  flex-shrink:0;
+}
+@media screen and (max-width:730px){
+  [data-solar-export] .sol-export-breakdown{grid-template-columns:minmax(0,1fr);gap:12px}
+  [data-solar-export] .sol-export-offer{padding:18px}
+  [data-solar-export] .sol-export-amount{font-size:clamp(26px,8vw,37px)}
+}
+@media screen and (max-width:360px){
+  [data-solar-export] .sol-export-credit{gap:8px}
+  [data-solar-export] .sol-export-credit strong{font-size:16px}
+}

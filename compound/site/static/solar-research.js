@@ -41,14 +41,19 @@ var used=value(ex,"used","ex",0,1000000),exported=value(ex,"exported","ex",0,100
 var names=["a","b"].map(function(k){return q(ex,k+"-name","ex").value.trim()||"Tariff "+k.toUpperCase();});
 var vals=["a","b"].map(function(k){return [
 value(ex,k+"-import","ex",0,150),value(ex,k+"-export","ex",0,150),value(ex,k+"-standing","ex",0,10),value(ex,k+"-fees","ex",-5000,5000)]});
-output(ex,"a-label","ex",names[0]+" net bill");output(ex,"b-label","ex",names[1]+" net bill");
+output(ex,"a-label","ex",names[0]);output(ex,"b-label","ex",names[1]);
+function setBetter(which){
+["a","b"].forEach(function(k){var card=ex.querySelector('[data-ex-card="'+k+'"]'),badge=ex.querySelector('[data-ex-best="'+k+'"]');if(card)card.classList.toggle("is-lower",which===k);if(badge)badge.hidden=which!==k;});
+}
 if(!ok([used,exported].concat(vals[0],vals[1]))){
+setBetter(null);
 ["difference","a-bill","b-bill","a-credit","b-credit"].forEach(function(k){output(ex,k,"ex","—");});
 output(ex,"winner","ex","Enter complete tariff rates and annual usage.");return;
 }
 var bills=vals.map(function(v){return used*v[0]/100+365*v[2]+v[3]-exported*v[1]/100;});
 var credits=vals.map(function(v){return exported*v[1]/100;});
 var gap=Math.abs(bills[0]-bills[1]);
+setBetter(gap<.005?null:(bills[0]<bills[1]?"a":"b"));
 output(ex,"difference","ex",euro.format(gap));
 output(ex,"a-bill","ex",euro.format(bills[0]));output(ex,"b-bill","ex",euro.format(bills[1]));
 output(ex,"a-credit","ex",euro.format(credits[0]));output(ex,"b-credit","ex",euro.format(credits[1]));

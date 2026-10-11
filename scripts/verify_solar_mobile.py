@@ -129,6 +129,26 @@ def main() -> None:
                                 failures.append(f"{width}px {path}: {json.dumps(result, ensure_ascii=False)}")
                             print(f"{width:4d}px {path:<29} page={result.get('pageWidth')} "
                                   f"tables={result.get('tables')} errors={len(result.get('failures',[]))}", flush=True)
+                            if path == "/solar/export-rates/" and width <= 430:
+                                cards = page.locator("[data-ex-card]")
+                                if cards.count() != 2:
+                                    failures.append(f"{width}px {path}: expected two tariff result cards")
+                                else:
+                                    measurements = page.evaluate("""() => [...document.querySelectorAll('[data-ex-card]')].map(card => {
+                                      const box = card.getBoundingClientRect();
+                                      const amount = card.querySelector('.sol-export-amount');
+                                      const credit = card.querySelector('.sol-export-credit strong');
+                                      return {width: box.width, left: box.left, right: box.right,
+                                        amountWhiteSpace: getComputedStyle(amount).whiteSpace,
+                                        amountWidth: amount.getBoundingClientRect().width,
+                                        creditWhiteSpace: getComputedStyle(credit).whiteSpace};
+                                    })""")
+                                    for item in measurements:
+                                        if (item["width"] < 185 or item["left"] < -2 or
+                                            item["right"] > width + 2 or
+                                            item["amountWhiteSpace"] != "nowrap" or
+                                            item["creditWhiteSpace"] != "nowrap"):
+                                            failures.append(f"{width}px {path}: unreadable result card {item}")
                             if errors:
                                 failures.append(f"{width}px {path}: JS exception: {errors[-1][:180]}")
                                 errors.clear()

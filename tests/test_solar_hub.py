@@ -78,7 +78,7 @@ def test_solar_quote_mobile_containment_rules():
     assert "grid-template-columns:minmax(0,1fr)" in css.split("@media screen and (max-width:730px)")[1]
     assert "sol-scroll-hint" in quote
     assert 'aria-label="Solar quote comparison table;' in quote
-    assert "/static/solar-hub.css?v=4" in page_template
+    assert "/static/solar-hub.css?v=5" in page_template
 
 
 def test_mobile_browser_audit_covers_every_solar_route():
@@ -94,9 +94,9 @@ def test_mobile_browser_audit_covers_every_solar_route():
     assert ".tool-chart-scroll" in script  # charts intentionally scroll within the viewport
     assert "python scripts/verify_solar_mobile.py" in workflow
     assert "overflow-wrap:anywhere" in css
-    assert "solar-hub.css?v=4" in template
+    assert "solar-hub.css?v=5" in template
     assert "solar-hub.js?v=3" in template
-    assert "solar-research.js?v=1" in template
+    assert "solar-research.js?v=2" in template
     assert "node --check compound/site/static/solar-research.js" in workflow
     solar_paths = "solar solar/compare-quotes solar/grants solar/costs solar/installers solar/get-quotes solar/batteries solar/export-rates solar/equipment; do"
     assert "for path in " + solar_paths in workflow  # generated pages
@@ -147,3 +147,18 @@ def test_solar_hub_connects_home_energy_tools_and_guides():
     ):
         body = (ROOT / "content/tool-guides" / f"{slug}.md").read_text(encoding="utf-8")
         assert "](/solar/)" in body
+
+
+def test_tariff_result_cards_are_readable_on_mobile():
+    page = (ROOT / "content/pages/solar-export-rates.md").read_text(encoding="utf-8")
+    css = (ROOT / "compound/site/static/solar-hub.css").read_text(encoding="utf-8")
+    js = (ROOT / "compound/site/static/solar-research.js").read_text(encoding="utf-8")
+    audit = (ROOT / "scripts/verify_solar_mobile.py").read_text(encoding="utf-8")
+    assert 'class="sol-export-breakdown"' in page
+    for key in ('a-bill', 'a-credit', 'b-bill', 'b-credit'):
+        assert f'data-ex-out="{key}"' in page
+    assert 'class="sol-minirows"' not in page  # not a four-column minirow layout
+    assert '[data-solar-export] .sol-export-amount' in css
+    assert "white-space:nowrap;" in css
+    assert 'setBetter(gap<.005?null:' in js
+    assert 'unreadable result card' in audit
