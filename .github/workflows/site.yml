@@ -386,4 +386,33 @@ jobs:
           grep -Fq 'content="0; url=/stocks/len/"' /tmp/legacy-lennar.html
           ! grep -Fq '<loc>https://compound.ie/wealth/earnings/len-earnings-fy2026-q3/</loc>' /tmp/sitemap.xml
 
+          # Insurance hub: indexable dedicated Wealth collection with independent
+          # protection calculators and separated partnership disclosure.
+          fetch https://compound.ie/insurance/ /tmp/insurance-hub.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/insurance/">' /tmp/insurance-hub.html
+          grep -Fq 'Insurance Tools &amp; Guides Ireland' /tmp/insurance-hub.html
+          grep -Fq '<meta name="description" content="Free insurance tools' /tmp/insurance-hub.html
+          grep -Fq 'type="application/ld+json"' /tmp/insurance-hub.html
+          grep -Fq 'data-ins-gap' /tmp/insurance-hub.html
+          grep -Fq 'id="income-gap"' /tmp/insurance-hub.html
+          grep -Fq 'data-ins-field="spending"' /tmp/insurance-hub.html
+          grep -Fq '/wealth/life-insurance-ireland/#li26-calc' /tmp/insurance-hub.html
+          grep -Fq '/wealth/mortgage-protection-insurance-ireland/#mp26-savings' /tmp/insurance-hub.html
+          grep -Fq '/wealth/income-protection-insurance-ireland/' /tmp/insurance-hub.html
+          grep -Fq '/wealth/health-insurance-ireland/' /tmp/insurance-hub.html
+          grep -Fq 'Sponsorship would never change calculator arithmetic' /tmp/insurance-hub.html
+          grep -Fq '/static/insurance-hub.css?v=1' /tmp/insurance-hub.html
+          grep -Fq '/static/insurance-hub.js?v=1' /tmp/insurance-hub.html
+          grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' /tmp/insurance-hub.html
+          fetch https://compound.ie/static/insurance-hub.css /tmp/insurance-hub.css
+          grep -Fq '.ins-calc-inner' /tmp/insurance-hub.css
+          fetch https://compound.ie/static/insurance-hub.js /tmp/insurance-hub.js
+          node scripts/verify_insurance_hub.js /tmp/insurance-hub.js
+          grep -Fq '/insurance/' /tmp/tools.html
+          grep -Fq '/insurance/' /tmp/wealth.html
+          grep -Fq 'https://compound.ie/insurance/' /tmp/sitemap.xml
+          fetch https://compound.ie/search.json /tmp/compound-search.json
+          grep -Fq '"/insurance/"' /tmp/compound-search.json
+          echo 'Insurance hub live URL, metadata, internal links, assets and calculator verified.'
+
           echo 'Live verification passed for Compound calculator catalogue, Health and Wealth Hubs, PIA Centre, Earnings, discovery metadata and flagship guides.'
