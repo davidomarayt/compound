@@ -57,6 +57,12 @@ jobs:
           grep -q '/solar/' public/wealth/index.html
           grep -q 'solar-payback-calculator/' public/solar/index.html
           ! grep -R -F 'built and occupied before 2021' public/solar public/solar-payback-calculator public/wealth/solar-panels-ireland public/wealth/solar-panels-vs-battery-ireland
+      - name: Install browser for Solar Hub mobile audit
+        run: |
+          python -m pip install "playwright==1.55.0"
+          python -m playwright install chromium
+      - name: Audit every solar page at mobile and tablet widths
+        run: python scripts/verify_solar_mobile.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public

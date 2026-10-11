@@ -75,3 +75,18 @@ def test_solar_quote_mobile_containment_rules():
     assert "sol-scroll-hint" in quote
     assert 'aria-label="Solar quote comparison table;' in quote
     assert "/static/solar-hub.css?v=3" in page_template
+
+
+def test_mobile_browser_audit_covers_every_solar_route():
+    script = (ROOT / "scripts/verify_solar_mobile.py").read_text(encoding="utf-8")
+    workflow = (ROOT / ".github/workflows/site.yml").read_text(encoding="utf-8")
+    css = (ROOT / "compound/site/static/solar-hub.css").read_text(encoding="utf-8")
+    template = (ROOT / "compound/site/templates/page.html").read_text(encoding="utf-8")
+    for path in SOLAR_PAGES.values():
+        assert f'"{path}"' in script
+    for width in ("320", "360", "390", "430", "768", "1024"):
+        assert width in script
+    assert "clipped-text" in script and "page-width" in script
+    assert "python scripts/verify_solar_mobile.py" in workflow
+    assert "overflow-wrap:anywhere" in css
+    assert "solar-hub.css?v=4" in template

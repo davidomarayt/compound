@@ -200,3 +200,29 @@
   .sol-bar-row strong{font-size:10px}
 }
 @media print{.sol-scroll-hint{display:none!important}}
+
+/* Solar Hub mobile typography + nested layout: prevent cropped lines across all pages.
+   Comparison tables retain their own horizontal scroll, never the document's. */
+.sol-shell :is(h1,h2,h3,p,li,dt,dd,small,span,strong,label,a){
+  overflow-wrap:anywhere;
+}
+.sol-shell :is(.sol-hero-grid,.sol-hero-grid > div,.sol-sectionhead,
+  .sol-sectionhead > div,.sol-utility,.sol-utility nav,.sol-quotegrid,
+  .sol-fields,.sol-results,.sol-checkgrid,.sol-minirows,.sol-minirows > div,
+  .sol-bottomcta,.sol-article-grid,.sol-article-grid > article,.sol-sourcebox,
+  .sol-footnotes,.sol-subhero,.sol-toolintro,.sol-return,.sol-briefoutput){
+  min-width:0;
+  max-width:100%;
+}
+.sol-shell .sol-table-scroll{overflow-x:auto;max-width:100%}
+.sol-shell .sol-table-scroll table{white-space:normal}
+@media screen and (max-width:730px){
+  .sol-shell .sol-subhero h1{font-size:clamp(35px,9vw,54px);line-height:1.08;max-width:100%}
+  .sol-shell .sol-sectionhead h2{font-size:clamp(30px,8vw,43px);line-height:1.1}
+  .sol-shell .sol-hero h1{font-size:clamp(38px,10vw,61px);line-height:1.04}
+  .sol-shell .sol-article-grid article,
+  .sol-shell .sol-sourcebox,
+  .sol-shell .sol-footnotes{min-width:0;max-width:100%}
+  .sol-shell :is(.sol-btn,.sol-subcrumb a,.sol-return a){white-space:normal}
+  .sol-shell .sol-grant-result :is(strong,span){overflow-wrap:anywhere}
+}
