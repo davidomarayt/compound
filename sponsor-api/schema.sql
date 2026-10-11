@@ -135,7 +135,7 @@ end; $$;
 -- Process Stripe events exactly once, with entitlement status updated in same transaction.
 create or replace function public.solar_apply_billing_event(
  p_event_id text,p_kind text,p_application_id uuid,p_subscription_id text,
- p_customer_id text,p_checkout_id text
+ p_customer_id text,p_checkout_id text,p_quantity integer
 ) returns jsonb language plpgsql security invoker set search_path=public as $$
 declare
  a public.solar_sponsor_applications%rowtype;
@@ -146,19 +146,30 @@ begin
  if not found then return jsonb_build_object('duplicate',true); end if;
  select * into a from solar_sponsor_applications where id=p_application_id for update;
  if not found then raise exception 'Application not found'; end if;
- if p_kind='checkout' then
-   if a.status in ('approved','active','paused') and
-      (a.stripe_subscription_id is null or a.stripe_subscription_id=p_subscription_id) then
-     update solar_sponsor_applications set stripe_checkout_id=p_checkout_id,
+ if p_kind='trialing' then
+   -- Checkout collects a card and activates the free-2026 term.
+   if a.status<>'approved' or a.stripe_checkout_id is distinct from p_checkout_id
+      or a.expires_at<=now() then raise exception 'Founding checkout not approved or expired'; end if;
+   if p_quantity<>cardinality(a.requested_counties) or p_quantity not between 1 and 32 then
+     raise exception 'Subscription county quantity mismatch';
+   end if;
+   select count(*) into own_count from solar_county_slots
+     where application_id=a.id and status='held' and hold_until>now();
+   if own_count<>p_quantity then raise exception 'County reservation no longer available'; end if;
+   update solar_sponsor_applications set status='active',
      stripe_subscription_id=p_subscription_id,stripe_customer_id=p_customer_id,updated_at=now()
      where id=a.id;
-   end if;
+   update solar_county_slots set status='active',hold_until=null,
+     stripe_subscription_id=p_subscription_id,updated_at=now() where application_id=a.id;
  elsif p_kind='paid' then
-   if a.status not in ('approved','active','paused') then
+   if a.status not in ('active','paused') then
      raise exception 'Cannot activate application in state %',a.status;
    end if;
-   if a.stripe_subscription_id is not null and a.stripe_subscription_id<>p_subscription_id then
+   if a.stripe_subscription_id is distinct from p_subscription_id then
      raise exception 'Subscription does not match application';
+   end if;
+   if p_quantity is distinct from cardinality(a.requested_counties) then
+     raise exception 'Paid invoice county quantity mismatch';
    end if;
    select count(*) into own_count from solar_county_slots where application_id=a.id
      and status in ('held','active','paused') and (status<>'held' or hold_until>now());
@@ -189,8 +200,8 @@ end; $$;
 revoke all on function public.solar_approve_application(uuid,text,timestamptz) from PUBLIC,anon,authenticated;
 revoke all on function public.solar_get_invite(text) from PUBLIC,anon,authenticated;
 revoke all on function public.solar_store_checkout(uuid,text) from PUBLIC,anon,authenticated;
-revoke all on function public.solar_apply_billing_event(text,text,uuid,text,text,text) from PUBLIC,anon,authenticated;
+revoke all on function public.solar_apply_billing_event(text,text,uuid,text,text,text,integer) from PUBLIC,anon,authenticated;
 grant execute on function public.solar_approve_application(uuid,text,timestamptz) to service_role;
 grant execute on function public.solar_get_invite(text) to service_role;
 grant execute on function public.solar_store_checkout(uuid,text) to service_role;
-grant execute on function public.solar_apply_billing_event(text,text,uuid,text,text,text) to service_role;
+grant execute on function public.solar_apply_billing_event(text,text,uuid,text,text,text,integer) to service_role;
