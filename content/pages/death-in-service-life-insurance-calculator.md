@@ -17,7 +17,7 @@ title: "Death-in-Service vs Life Insurance Calculator Ireland"
 <div class="it26-result-row"><span>Modelled family protection target</span><strong data-i-result="target">—</strong></div>
 <div class="it26-result-row"><span>Total benefits, other cover and cash</span><strong data-i-result="existing">—</strong></div></div><p class="it26-note" data-i-note>Planning illustration only.</p></section>
 </div>
-<div class="it26-explanation">
+<div class="it26-explanation" markdown="1">
 
 ## What is death-in-service cover in Ireland?
 
