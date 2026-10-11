@@ -16,7 +16,7 @@ title: "Home Insurance Rebuild Cost Calculator Ireland"
 <div class="it26-result-row"><span>Potential cover shortfall</span><strong data-i-result="gap">—</strong></div>
 <div class="it26-result-row"><span>Current cover ÷ modelled cost</span><strong data-i-result="percent">—</strong></div></div><div class="it26-meter" aria-hidden="true"><i data-i-progress></i></div><p class="it26-note" data-i-note>Planning illustration only.</p></section>
 </div>
-<div class="it26-explanation">
+<div class="it26-explanation" markdown="1">
 
 ## How much should you insure your house for in Ireland?
 
