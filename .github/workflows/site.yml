@@ -433,6 +433,38 @@ jobs:
             grep -Fq "href=\"/${slug}/\"" /tmp/insurance-hub.html
             grep -Fq "href=\"/${slug}/\"" /tmp/tools.html
           done
+          # Reject malformed Markdown or one unbroken text blob in any live
+          # insurance guide (the old layout rendered raw ##, ** and [links](...)).
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          slugs = [
+              "health-insurance-cost-comparison-calculator",
+              "home-insurance-rebuild-cost-calculator",
+              "critical-illness-cover-calculator",
+              "death-in-service-life-insurance-calculator",
+              "insurance-premium-savings-calculator",
+          ]
+          for slug in slugs:
+              html = Path(f"/tmp/{slug}.html").read_text(encoding="utf-8")
+              match = re.search(
+                  r'<div class="it26-explanation">(.*?)</div>\\s*<section class="it26-related"',
+                  html, re.DOTALL,
+              )
+              assert match, f"{slug}: no independent formatted explanation section"
+              section = match.group(1)
+              assert len(re.findall(r"<h2\\b", section)) >= 2, f"{slug}: guide headings missing"
+              assert len(re.findall(r"<h3\\b", section)) >= 3, f"{slug}: subsection headings missing"
+              assert len(re.findall(r"<p\\b", section)) >= 5, f"{slug}: paragraphs missing"
+              assert len(re.findall(r"<a\\b", section)) >= 2, f"{slug}: reference links missing"
+              assert not any(s in section for s in ("## ", "**", "](")), (
+                  f"{slug}: raw Markdown leaked into the visible guide"
+              )
+              assert '<meta name="viewport" content="width=device-width, initial-scale=1">' in html, (
+                  f"{slug}: mobile viewport meta missing"
+              )
+          print("All five live insurance explanations have semantic headings, paragraphs and links; no raw Markdown.")
+          PY
           grep -Fq 'How to compare health insurance plans in Ireland</h2>' /tmp/health-insurance-cost-comparison-calculator.html
           fetch https://compound.ie/static/insurance-tools-2026.js /tmp/insurance-tools-2026.js
           node scripts/verify_insurance_tools_2026.js /tmp/insurance-tools-2026.js
