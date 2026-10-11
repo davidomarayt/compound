@@ -7,7 +7,7 @@ test('includes exactly all 32 counties without duplicate names',()=>{
  assert.equal(COUNTIES.length,32);assert.equal(new Set(COUNTIES).size,32);
  assert(COUNTIES.includes('Derry / Londonderry'));
 });
-test('references the connected Stripe monthly price',()=>{
+test('references the connected Stripe quarterly price',()=>{
  assert.equal(PRICE_ID,'price_1UPQeS2R63yYze0goI6IbmZD');
 });
 const sample={company:'PV Company',contact:'Owner',email:'Sales@pv.ie',counties:['Meath','Dublin'],accepted:true,turnstileToken:'abc'};
@@ -37,3 +37,14 @@ test('hashing token is deterministic and avoids storing original invitation in d
 });
 
 test('founding trial ends exactly at the start of Q1 2027 UTC',()=>{assert.equal(new Date(FOUNDING_TRIAL_END_UNIX*1000).toISOString(),'2027-01-01T00:00:00.000Z');});
+
+test('quarterly billing offer uses a Jan-1 fixed trial cutover',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const src=await readFile(new URL('../api/checkout.js',import.meta.url),'utf8');
+ assert.match(src,/subscription_data\\[trial_end\\]/);
+ assert.match(src,/payment_method_collection/);
+ assert.match(src,/automatic_tax\\[enabled\\]/);
+ assert.match(src,/line_items\\[0\\]\\[quantity\\]/);
+ assert.match(src,/SPONSOR_BILLING_READY/);
+ assert.match(src,/SPONSOR_TAX_READY/);
+});
