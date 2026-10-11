@@ -1,0 +1,41 @@
+name: Verify life insurance evergreen
+on:
+  push:
+    branches: ["claude/clever-babbage-uibieq"]
+    paths:
+      - "content/wealth/life-insurance-ireland.md"
+      - "compound/site/static/life-insurance-guide.css"
+      - "compound/site/static/life-insurance-guide.js"
+      - ".github/workflows/verify-life-insurance.yml"
+  workflow_dispatch:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Validate published page, calculator, imagery and ad eligibility
+        shell: bash
+        run: |
+          set -euo pipefail
+          fetch() {
+            curl -fLSs --retry 12 --retry-delay 5 --retry-all-errors --connect-timeout 10 --max-time 30 "$1" -o "$2"
+            test -s "$2"
+          }
+          fetch https://compound.ie/wealth/life-insurance-ireland/ /tmp/life-insurance.html
+          grep -Fq 'Life Insurance Ireland 2026' /tmp/life-insurance.html
+          grep -Fq 'href="https://compound.ie/wealth/life-insurance-ireland/"' /tmp/life-insurance.html
+          grep -Fq 'id="li26-calc"' /tmp/life-insurance.html
+          grep -Fq '/static/life-insurance-guide.css?v=1' /tmp/life-insurance.html
+          grep -Fq '/static/life-insurance-guide.js?v=1' /tmp/life-insurance.html
+          grep -Fq 'pexels-photo-20194638.jpeg' /tmp/life-insurance.html
+          grep -Fq 'Catalina Herrera' /tmp/life-insurance.html
+          grep -Fq 'property="og:image"' /tmp/life-insurance.html
+          grep -Fq '/wealth/mortgage-protection-insurance-ireland/' /tmp/life-insurance.html
+          grep -Fq 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' /tmp/life-insurance.html
+          fetch https://compound.ie/static/life-insurance-guide.js?v=1 /tmp/li.js
+          grep -Fq 'li26-needed' /tmp/li.js
+          fetch https://compound.ie/static/life-insurance-guide.css?v=1 /tmp/li.css
+          grep -Fq '.li26-statgrid' /tmp/li.css
+          fetch 'https://images.pexels.com/photos/20194638/pexels-photo-20194638.jpeg?auto=compress&cs=tinysrgb&w=1600' /tmp/li-hero.jpg
+          file --mime-type /tmp/li-hero.jpg | grep -Fq image/jpeg
+          echo 'Life insurance article, calculator assets, stock hero and AdSense loader verified live.'
