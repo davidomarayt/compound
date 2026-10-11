@@ -15,7 +15,7 @@ function validFoundingSubscription(sub){
    &&Number.isInteger(quantity(sub))&&quantity(sub)>0&&quantity(sub)<=32
    &&Number(sub.trial_end)===FOUNDING_TRIAL_END_UNIX;
 }
-export function validUpfrontCheckout(session,sub){
+export function validUpfrontCheckout(session,sub,invoice){
  const qty=quantity(sub);
  return session?.mode==='subscription'
    &&session?.subscription===sub?.id
@@ -27,14 +27,20 @@ export function validUpfrontCheckout(session,sub){
    &&sub.status==='trialing'
    &&!!sub.default_payment_method
    &&!!session.client_reference_id
-   &&!!session.invoice; // Paid first invoice includes the one-time Q1 price.
+   &&!!session.invoice
+   &&invoice?.id===session.invoice
+   &&invoice?.status==='paid'
+   &&invoice?.paid===true
+   &&Number(invoice?.amount_paid)>=qty*75000
+   &&(invoice?.lines?.data||[]).some(line=>(line?.price?.id===UPFRONT_PRICE_ID || line?.pricing?.price_details?.price===UPFRONT_PRICE_ID) && Number(line.quantity)===qty && Number(line.amount)>=qty*75000);
 }
 async function processStripeEvent(event){
  const obj=event.data?.object||{};
  if(event.type==='checkout.session.completed'&&obj.mode==='subscription'){
    if(!obj.subscription||!obj.client_reference_id)return;
    const sub=await subscriptionById(obj.subscription);
-   if(!validUpfrontCheckout(obj,sub))throw new Error('Initial Q1 prepayment or founding subscription could not be verified');
+   const invoice= obj.invoice ? await stripe('invoices/'+encodeURIComponent(obj.invoice),null,'GET') : null;
+   if(!validUpfrontCheckout(obj,sub,invoice))throw new Error('Initial Q1 prepayment or founding subscription could not be verified');
    await rpc('solar_apply_billing_event',{p_event_id:event.id,p_kind:'upfront_paid',
       p_application_id:obj.client_reference_id,p_subscription_id:sub.id,p_customer_id:sub.customer||'',
       p_checkout_id:obj.id,p_quantity:quantity(sub)});
