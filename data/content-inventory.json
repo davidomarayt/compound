@@ -4297,18 +4297,6 @@
         "kind": "Hub / landing page"
       },
       {
-        "title": "Life",
-        "url": "/life/",
-        "source": "compound/site/build.py",
-        "kind": "Hub / landing page"
-      },
-      {
-        "title": "Live to 100 Series",
-        "url": "/live-to-100/",
-        "source": "compound/site/build.py",
-        "kind": "Hub / landing page"
-      },
-      {
         "title": "News",
         "url": "/news/",
         "source": "compound/site/build.py",
@@ -8521,8 +8509,6 @@
     ],
     "drafts": []
   },
-  "warnings": [
-    "Repeated canonical routes across groups: /live-to-100/, /life/"
-  ],
+  "warnings": [],
   "caveat": "Source inventory, not proof of live HTTP 200 or Google indexation. Legacy earnings URLs may redirect."
 }

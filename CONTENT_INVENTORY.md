@@ -13,7 +13,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - Tools and calculators: 59
 - Embedded tool-guide files: 57
 - Information and policy pages: 7
-- Main hubs: 13
+- Main hubs: 11
 - Public-company directory profiles: 510
 - Private-company directory profiles: 13
 - Draft or unpublished editorial files: 0
@@ -358,13 +358,11 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - [Life](https://compound.ie/life/)
 - [Privacy policy](https://compound.ie/privacy/)
 
-## Site hubs and directories — 13
+## Site hubs and directories — 11
 
 - [Company Earnings and Financial Results](https://compound.ie/wealth/earnings/)
 - [Health](https://compound.ie/health/)
 - [Home](https://compound.ie/)
-- [Life](https://compound.ie/life/)
-- [Live to 100 Series](https://compound.ie/live-to-100/)
 - [News](https://compound.ie/news/)
 - [PIA Centre](https://compound.ie/pia/)
 - [PIA Providers](https://compound.ie/pia/providers/)
@@ -904,10 +902,6 @@ These are generated directory profiles, not individually written evergreen artic
 - [Revolut Private Company Research](https://compound.ie/companies/revolut/)
 - [Stripe Private Company Research](https://compound.ie/companies/stripe/)
 - [Valve Private Company Research](https://compound.ie/companies/valve/)
-
-## Inventory warnings
-
-- Repeated canonical routes across groups: /live-to-100/, /life/
 
 ## Duplicate-prevention procedure
 
