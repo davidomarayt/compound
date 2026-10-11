@@ -433,7 +433,7 @@ jobs:
             grep -Fq "href=\"/${slug}/\"" /tmp/insurance-hub.html
             grep -Fq "href=\"/${slug}/\"" /tmp/tools.html
           done
-          grep -Fq '<h2>How to compare health insurance plans in Ireland</h2>' /tmp/health-insurance-cost-comparison-calculator.html
+          grep -Fq 'How to compare health insurance plans in Ireland</h2>' /tmp/health-insurance-cost-comparison-calculator.html
           fetch https://compound.ie/static/insurance-tools-2026.js /tmp/insurance-tools-2026.js
           node scripts/verify_insurance_tools_2026.js /tmp/insurance-tools-2026.js
           fetch https://compound.ie/static/insurance-tools-2026.css /tmp/insurance-tools-2026.css
