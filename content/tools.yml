@@ -2627,7 +2627,7 @@ tools:
 
       ## Grant eligible or not?
 
-      The calculator now makes the grant optional. For the individual SEAI domestic Solar PV grant, the home needs an MPRN, must have been **built and occupied before 2021**, and cannot previously have received solar-PV funding at that MPRN. SEAI also requires the grant application and approval to be in place before works start.
+      The calculator now makes the grant optional. For the individual SEAI domestic Solar PV grant, the home needs an MPRN, must have been **built and occupied before 2025**, and cannot previously have received solar-PV funding at that MPRN. SEAI also requires the grant application and approval to be in place before works start.
 
       For an eligible installation, the 2026 grant is **€700 per kWp up to 2 kWp, then €200 per additional kWp up to 4 kWp, capped at €1,800**. Untick **“Include the SEAI Solar PV grant”** if any eligibility condition is not met or if you want to see the project on a no-grant basis.
 

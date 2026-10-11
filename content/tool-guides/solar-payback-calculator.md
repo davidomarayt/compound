@@ -26,7 +26,7 @@ A 4 kWp system qualifies for up to €1,800 under the current SEAI domestic gran
 
 ## Irish context
 
-SEAI's 2026 domestic grant is €700 per kWp up to 2 kWp and €200 per additional kWp up to 4 kWp, capped at €1,800. The home must meet current eligibility rules, including being built and occupied before 2021 and having no previous funded solar PV at the MPRN.
+SEAI's 2026 domestic grant is €700 per kWp up to 2 kWp and €200 per additional kWp up to 4 kWp, capped at €1,800. The home must meet current eligibility rules, including being built and occupied before 2025 and having no previous funded solar PV at the MPRN.
 
 ## What can change the answer
 
@@ -68,7 +68,7 @@ Advanced mode is designed to expose those assumptions rather than hide them insi
 
 SEAI's domestic Solar PV grant remains capped at €1,800 in 2026. The published structure is €700 per kWp up to 2 kWp and €200 per additional kWp up to 4 kWp, with the maximum grant reached at 4 kWp.
 
-Eligibility is not automatic. SEAI states that the property needs an MPRN, must have been built and occupied before 2021, and must not previously have received solar PV funding for that MPRN under the scheme. The calculator therefore separates “grant eligible” from system size instead of assuming every installation receives €1,800.
+Eligibility is not automatic. SEAI states that the property needs an MPRN, must have been built and occupied before 2025, and must not previously have received solar PV funding for that MPRN under the scheme. The calculator therefore separates “grant eligible” from system size instead of assuming every installation receives €1,800.
 
 ### Battery payback is a separate investment decision
 
