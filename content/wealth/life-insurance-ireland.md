@@ -219,6 +219,19 @@ For many families with dependent children, it is useful to **compare level-term 
 
 For example, two parents choose what is described as **€300,000 cover**. On a joint first-death contract, the qualifying first death usually produces one €300,000 claim and the contract ends. With suitable dual-life cover, a qualifying death may pay €300,000 and the surviving life can remain insured for another claim under the contract. Dual life may cost more; it is not always better for every household. Read the [CCPC term life guide](https://www.ccpc.ie/manage-your-money/day-to-day-finances/insurance/life-insurance).
 
+### Joint life, dual life or two single policies: a €300,000 example
+
+The crucial question is **whether insurance remains after the first claim**. The following describes the typical structure of three arrangements with €300,000 of death cover **per insured life where applicable**. It is a payout-structure illustration, not a comparison of premiums or a promise that a claim will be accepted.
+
+<div class="cs-table-wrap" role="region" tabindex="0" aria-label="Joint life, dual life and two single policies example">
+<table><thead><tr><th>Arrangement</th><th>If Parent A dies during the term</th><th>If Parent B subsequently dies while cover would otherwise be in force</th></tr></thead><tbody>
+<tr><th scope="row">€300,000 joint first-death policy</th><td>Typically €300,000 is paid; the joint policy ends.</td><td>No second benefit from that same policy.</td></tr>
+<tr><th scope="row">€300,000 dual-life policy on each parent</th><td>Potential €300,000 claim for Parent A; Parent B's benefit generally continues.</td><td>A further €300,000 may be payable under the remaining cover, subject to the policy terms.</td></tr>
+<tr><th scope="row">Two separate €300,000 single-life policies</th><td>Potential €300,000 claim under Parent A's policy.</td><td>Parent B's separate policy can provide its own benefit if still valid and a claim is eligible.</td></tr>
+</tbody></table></div>
+
+**How to use this comparison:** ask every insurer for the premium on the *same* joint-first-death amount, the same dual-life amounts and two equivalent single-life policies. Check whether the survivor can continue cover, who owns each policy and who would actually receive a second payout. Two payouts are only possible when both relevant insured deaths satisfy their respective contracts; a dual-life policy does not mean two guaranteed claims. [CCPC life insurance guidance](https://www.ccpc.ie/manage-your-money/day-to-day-finances/insurance/life-insurance) explains the product distinctions.
+
 ### What about serious illness and terminal illness?
 
 Life-only cover does **not** generally pay merely because you receive a cancer diagnosis or become unable to work. A specified serious illness benefit may pay on diagnosis of a condition **meeting the policy's exact definition and severity rules**. An *accelerated* illness benefit can reduce or exhaust the death benefit; a genuinely additional benefit may have a different structure. Terminal-illness advance payments depend on the precise contract and prognosis criteria.
