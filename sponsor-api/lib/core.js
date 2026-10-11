@@ -2,7 +2,10 @@ import { createHmac, createHash, timingSafeEqual, randomBytes } from 'node:crypt
 
 export const COUNTIES = Object.freeze(["Carlow","Cavan","Clare","Cork","Donegal","Dublin","Galway","Kerry","Kildare","Kilkenny","Laois","Leitrim","Limerick","Longford","Louth","Mayo","Meath","Monaghan","Offaly","Roscommon","Sligo","Tipperary","Waterford","Westmeath","Wexford","Wicklow","Antrim","Armagh","Derry / Londonderry","Down","Fermanagh","Tyrone"]);
 export const PRICE_ID = 'price_1UPQeS2R63yYze0goI6IbmZD';
-export const FOUNDING_TRIAL_END_UNIX = 1798761600; // 1 January 2027, 00:00 UTC
+export const FOUNDING_TRIAL_END_UNIX = 1806537600; // 1 April 2027, 00:00 UTC: first auto-renewal
+export const UPFRONT_PRICE_ID = 'price_1UPQu52R63yYze0g7tXqWmi9'; // Prepay Jan–Mar 2027 on sign-up
+export const CANCEL_NOTICE_DAYS = 30;
+export function noticeDeadline(renewalUnix){return renewalUnix - CANCEL_NOTICE_DAYS*86400;}
 export const BASE_URL = 'https://compound.ie/solar/for-installers/';
 
 export function json(data, status=200, headers={}) {
