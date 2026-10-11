@@ -23,7 +23,7 @@ function calculate(kind,x){
    var base=x.area*x.rate, extras=base*Math.min(200,x.extras)/100;
    var total=base+extras+x.demolition+x.outbuildings;
    z.total=total;z.base=base;z.extras=extras;z.gap=Math.max(0,total-x.current);
-   z.percent=total>0?Math.min(100,x.current/total*100):100;
+   z.percent=total>0?x.current/total*100:0;
    z.text=x.rate===0?"Enter a current €/m² rebuilding rate from SCSI or a professional assessment; zero is not a usable insured-value estimate.":x.current>=total?"Current cover meets this simplified scenario; policy terms and any professional valuation still matter.":"Illustrative rebuilding-cover gap, not a confirmed underinsurance finding.";
  }else if(kind==="critical"){
    var gross=x.once+(x.monthly*Math.min(120,x.months))+x.care+x.debt;
@@ -68,7 +68,7 @@ document.querySelectorAll("[data-i-calculator]").forEach(function(root){
   if(status)status.textContent="Updated estimate";
   if(copy)copy.dataset.text="Compound.ie "+kind+" calculation — "+fields.map(function(el){return el.name+": "+el.value;}).join("; ")+"; "+outputs.map(function(el){return el.getAttribute("data-i-result")+": "+el.textContent;}).join("; ")+". Illustrative only.";
   var bar=root.querySelector("[data-i-progress]");
-  if(bar)bar.style.width=(kind==="home"?result.percent:kind==="health"?(result.a+result.b?100*Math.min(result.a,result.b)/Math.max(result.a,result.b):100):result.gross?Math.min(100,result.resources/result.gross*100):0).toFixed(1)+"%";
+  if(bar)bar.style.width=(kind==="home"?Math.min(100,result.percent):kind==="health"?(result.a+result.b?100*Math.min(result.a,result.b)/Math.max(result.a,result.b):100):result.gross?Math.min(100,result.resources/result.gross*100):0).toFixed(1)+"%";
  }
  fields.forEach(function(el){el.addEventListener("input",recalc);el.addEventListener("change",recalc);});
  var form=root.querySelector("form");
