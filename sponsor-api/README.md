@@ -70,3 +70,10 @@ The **published Compound.ie pages must remain ad-free at /solar/for-installers/*
 - The webhook verifies `checkout.session.completed`, the paid initial invoice, the exact one-time price and county quantity before enabling the county sponsorship. Unsuccessful payment means no activation.
 - The contract must state how cancellation notice is delivered and acknowledged (the current manual route is email to Compound), payment timing and the next automatic renewal. Do not assume payment is universally non-refundable; refunds for non-performance, fraud, or other applicable rights remain possible.
 - Customer-facing cancellation automation and notices are not deployed. Do **not** offer a Stripe customer portal with unrestricted self-service cancellation while claiming 30-day notice is automatically enforced. Configure portal behavior consistently with contract before launch.
+
+## Cancellation request processing (not publicly connected yet)
+
+- The prepared admin-only route `POST /api/admin-cancel` schedules Stripe cancellation at the first 1 April / 1 July / 1 October / 1 January quarterly boundary after **at least 30 days notice**.
+- The customer currently provides **written notice** under the contract; an authorised administrator records the received date and invokes the route. It is not a live self-service cancellation portal.
+- For 1 April 2027 the page advises notifying by 1 March 2027; after that cutoff, a later renewal boundary may apply. Existing Q1 prepayment is not automatically refunded, but refunds can still be legally required for non-delivery, mistake, charge dispute, or other applicable rights.
+- Do not misrepresent cancellation scheduling as a live feature until backend, credentials and database are deployed and verified against Stripe test subscriptions.
