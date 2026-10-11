@@ -126,7 +126,7 @@ meta_description: "Reach informed solar customers through Compound.ie’s energy
       <input type="hidden" name="_subject" value="Compound Solar — New Installer Sponsorship Application">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_next" value="https://compound.ie/solar/for-installers/?submitted=1">
-      <input type="hidden" name="_autoresponse" value="Thank you for your Compound Solar sponsorship application. We have received your enquiry. Counties are not reserved and billing has not begun. We will contact you to discuss verification and availability. — Compound.ie">
+      <input type="hidden" name="_autoresponse" value="Thank you for applying for the Compound Solar 2026 founders offer. No county is reserved and no payment has been taken. Following approval and activation, 2026 is free, with a first paid January–March 2027 term of EUR 750 per county before applicable VAT and automatic quarterly renewal. We will contact you to discuss verification and availability. — Compound.ie">
       <input type="hidden" name="counties_requested" data-sponsor-counties value="">
       <input type="hidden" name="selected_county_count" data-sponsor-total value="0">
       <input type="hidden" name="indicative_quarterly_fee_eur" data-sponsor-fee value="0">
@@ -192,7 +192,7 @@ meta_description: "Reach informed solar customers through Compound.ie’s energy
         <label class="sol-sponsor-notes-label">Anything else we should know?<textarea name="notes" maxlength="450" rows="3" placeholder="Coverage areas, questions or additional details (optional)"></textarea></label>
       </div>
       <div class="sol-sponsor-disclosures">
-        <label class="sol-sponsor-check"><input type="checkbox" required name="acknowledgement" value="yes"><span>I understand that applying does not reserve a county or begin billing. If approved and I accept a founding subscription, the rest of 2026 is free, January–March 2027 costs €750 per county before applicable VAT, and it renews automatically every three months unless cancelled under the agreed terms.</span></label>
+        <label class="sol-sponsor-check"><input type="checkbox" required name="acknowledgement" value="yes"><span>I understand that applying does not reserve a county or begin billing. If approved and I accept a founding subscription, the rest of 2026 is free, the initial January–March 2027 paid commitment costs €750 per county before applicable VAT, and it renews automatically every three months unless cancelled under the agreed terms.</span></label>
         <p>Applications are transmitted via <a href="https://formsubmit.co/privacy.pdf" rel="noopener" target="_blank">FormSubmit</a> to Compound for review. We use your details only to assess and respond to your sponsorship enquiry, not to subscribe you to unrelated marketing. See our <a href="/privacy/">privacy policy</a>.</p>
       </div>
       <div class="sol-sponsor-submit-row"><button class="sol-sponsor-button" type="submit" data-sponsor-submit>Apply for founders offer <span aria-hidden="true">↗</span></button><span>No payment required to apply</span></div>
