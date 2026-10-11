@@ -1547,6 +1547,15 @@ def build_site(settings: Settings) -> dict:
          "image": a.image, "reading_minutes": a.reading_minutes, "date_label": long_date(a.date)}
         for a in articles
     ]
+    if any(pg.slug == "insurance" for pg in pages):
+        index.insert(0, {
+            "title": "Insurance Tools & Guides Ireland — Life, Mortgage, Income & Health",
+            "url": "/insurance/", "pillar": "Wealth", "date": date.today().isoformat(),
+            "summary": "Independent Irish insurance guide hub with life cover needs, mortgage protection savings and income interruption calculators.",
+            "tags": ["insurance", "insurance calculator", "life insurance", "income protection", "health insurance", "mortgage protection", "wealth"],
+            "description": "Free Irish insurance tools and independent life, mortgage protection, income and health insurance guides.",
+            "image": "", "reading_minutes": 5, "date_label": "Insurance hub",
+        })
     index.insert(0, {
         "title": "Stocks Directory — Public Companies and Research",
         "url": "/stocks/", "pillar": "Wealth",
