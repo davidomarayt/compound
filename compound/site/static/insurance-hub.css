@@ -51,13 +51,6 @@
 .ins-meter i{display:block;height:100%;background:#648375;border-radius:99px;width:0;transition:width .15s}
 .ins-disclaimer{color:#61545b;font-size:12px;line-height:1.75;margin-top:16px;max-width:95ch}
 .ins-disclaimer a{text-decoration:underline;text-underline-offset:3px;font-weight:700}
-/* A compact, clearly unsponsored partnership enquiry strip—not a paid placement. */
-.ins-partner-strip{background:#f0ebe9;border:1px solid #ded4d3;border-radius:7px;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(200px,.6fr);gap:28px;padding:clamp(22px,3.5vw,35px);align-items:center}
-.ins-partner-strip .ins-ey{color:#805a6b}
-.ins-partner-strip h2{font-size:clamp(24px,2.6vw,34px);line-height:1.12;margin:9px 0;max-width:32ch}
-.ins-partner-strip p:not(.ins-ey){font-size:13px;line-height:1.75;color:#5f555c;margin:0;max-width:76ch}
-.ins-partner-strip-link{display:inline-flex;align-items:center;justify-content:center;min-height:46px;text-align:center;padding:13px 18px;border-radius:5px;border:1px solid #5e4354;color:#4d3647;background:#fff9f4;font-size:12px;font-weight:800;text-decoration:none}
-.ins-partner-strip-link:hover{background:#f7e7dd}
 .ins-guides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .ins-guide{overflow:hidden;display:flex;flex-direction:column;border:1px solid #dcd1d4;background:#fffefa;border-radius:7px;min-height:0}
 .ins-guide-illustration{height:170px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;color:#5b414f}
@@ -94,6 +87,6 @@
 .ins-faq p{font-size:13px;line-height:1.7;color:#60545d;padding-top:14px}
 .ins-smalllinks{display:flex;flex-wrap:wrap;gap:16px;font-size:12px;color:#66505f}
 .ins-smalllinks a{text-decoration:underline;text-underline-offset:3px}
-@media(max-width:960px){.ins-partner-strip{grid-template-columns:1fr}.ins-hero{grid-template-columns:1fr}.ins-art{display:none}.ins-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ins-calc-inner{grid-template-columns:1fr}}
+@media(max-width:960px){.ins-hero{grid-template-columns:1fr}.ins-art{display:none}.ins-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ins-calc-inner{grid-template-columns:1fr}}
 @media(max-width:650px){.ins-hub{gap:42px}.ins-hero{padding:28px 22px;min-height:0}.ins-hero h1{font-size:clamp(42px,11vw,66px)}.ins-section-head{display:block}.ins-section-head>p{margin-top:13px}.ins-grid,.ins-guides,.ins-faq,.ins-independence,.ins-fields{grid-template-columns:1fr}.ins-tool{min-height:180px;padding:22px}.ins-guide{min-height:0}.ins-guide-illustration{height:155px}.ins-guide-body{padding:21px}.ins-guide-more{grid-template-columns:1fr;padding:22px}.ins-calc{padding:19px}.ins-out{padding:22px}.ins-rows{margin-top:12px}}
 @media(prefers-reduced-motion:reduce){.ins-tool,.ins-meter i{transition:none}}
