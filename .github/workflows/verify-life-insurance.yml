@@ -24,7 +24,7 @@ jobs:
           # Deployment starts in a separate workflow; wait for the actual new hero.
           for attempt in $(seq 1 30); do
             fetch https://compound.ie/wealth/life-insurance-ireland/ /tmp/life-insurance.html
-            if grep -Fq 'alt="Parents and two children embracing together at home' /tmp/life-insurance.html; then
+            if grep -Fq 'alt="Two parents with their baby and older child sitting together on a sofa at home' /tmp/life-insurance.html; then
               echo 'Pinned family photograph is live'
               break
             fi
@@ -44,10 +44,10 @@ jobs:
           echo 'Open Graph image:'
           grep -oE '<meta property="og:image"[^>]*' /tmp/life-insurance.html | head -1 || true
           grep -Fq '<img src="/static/images/evergreen/life-insurance-ireland.jpg"' /tmp/life-insurance.html
-          grep -Fq 'Parents and two children embracing together at home' /tmp/life-insurance.html
+          grep -Fq 'Two parents with their baby and older child sitting together on a sofa at home' /tmp/life-insurance.html
           fetch https://compound.ie/static/images/evergreen/life-insurance-ireland.jpg /tmp/local-family-photo.jpg
           file --mime-type /tmp/local-family-photo.jpg | grep -Fq image/jpeg
-          grep -Fq 'Catalina Herrera' /tmp/life-insurance.html
+          grep -Fq 'Keira Burton' /tmp/life-insurance.html
           grep -Fq 'property="og:image"' /tmp/life-insurance.html
           grep -Fq '/wealth/mortgage-protection-insurance-ireland/' /tmp/life-insurance.html
           grep -Fq 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' /tmp/life-insurance.html
@@ -55,6 +55,6 @@ jobs:
           grep -Fq 'li26-needed' /tmp/li.js
           fetch https://compound.ie/static/life-insurance-guide.css?v=1 /tmp/li.css
           grep -Fq '.li26-statgrid' /tmp/li.css
-          fetch 'https://images.pexels.com/photos/20194638/pexels-photo-20194638.jpeg?auto=compress&cs=tinysrgb&w=1600' /tmp/li-hero.jpg
+          fetch 'https://images.pexels.com/photos/6624373/pexels-photo-6624373.jpeg?auto=compress&cs=tinysrgb&w=1600' /tmp/li-hero.jpg
           file --mime-type /tmp/li-hero.jpg | grep -Fq image/jpeg
           echo 'Life insurance article, calculator assets, stock hero and AdSense loader verified live.'
