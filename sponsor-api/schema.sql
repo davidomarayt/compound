@@ -34,6 +34,9 @@ create table if not exists public.solar_sponsor_applications (
  created_at timestamptz not null default now(),
  updated_at timestamptz not null default now()
 );
+alter table public.solar_sponsor_applications
+ add column if not exists q1_prepaid_at timestamptz,
+ add column if not exists cancellation_requested_at timestamptz;
 create index if not exists idx_solar_sponsor_app_status on public.solar_sponsor_applications(status,created_at desc);
 
 -- PRIMARY KEY county is the final exclusivity guarantee even across concurrent checkouts.
@@ -146,8 +149,8 @@ begin
  if not found then return jsonb_build_object('duplicate',true); end if;
  select * into a from solar_sponsor_applications where id=p_application_id for update;
  if not found then raise exception 'Application not found'; end if;
- if p_kind='trialing' then
-   -- Checkout collects a card and activates the free-2026 term.
+ if p_kind='upfront_paid' then
+   -- Signed paid checkout proves prepaid Jan–Mar 2027, with 2026 free.
    if a.status<>'approved' or a.stripe_checkout_id is distinct from p_checkout_id
       or a.expires_at<=now() then raise exception 'Founding checkout not approved or expired'; end if;
    if p_quantity<>cardinality(a.requested_counties) or p_quantity not between 1 and 32 then
@@ -156,7 +159,7 @@ begin
    select count(*) into own_count from solar_county_slots
      where application_id=a.id and status='held' and hold_until>now();
    if own_count<>p_quantity then raise exception 'County reservation no longer available'; end if;
-   update solar_sponsor_applications set status='active',
+   update solar_sponsor_applications set status='active',q1_prepaid_at=now(),
      stripe_subscription_id=p_subscription_id,stripe_customer_id=p_customer_id,updated_at=now()
      where id=a.id;
    update solar_county_slots set status='active',hold_until=null,
