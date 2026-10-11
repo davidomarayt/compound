@@ -264,3 +264,12 @@ body:has(.sol-sponsor-page) .site-footer .footer-bottom{border-top-color:#dedede
 .sol-sponsor-page .sol-sponsor-billing-overline{font:750 10px/1.5 Arial,Helvetica,sans-serif!important;letter-spacing:.08em;color:#555!important;margin:18px 0 0!important}
 .sol-sponsor-page .sol-sponsor-offer .sol-sponsor-cost{font-size:clamp(62px,5.6vw,82px)!important;margin-top:13px!important}
 .sol-sponsor-page .sol-sponsor-price-disclosure strong{color:#111}
+
+/* Founding prepaid quarterly contract terms — neutral, easy-to-scan, mobile safe. */
+.sol-sponsor-page .sol-sponsor-billing-terms{display:grid;gap:0;margin:19px 0 8px;border-top:1px solid #dedede}
+.sol-sponsor-page .sol-sponsor-billing-terms>div{padding:13px 0 14px;border-bottom:1px solid #e9e9e9;display:grid;gap:4px}
+.sol-sponsor-page .sol-sponsor-billing-terms span{font:700 10px/1.4 Arial,Helvetica,sans-serif;letter-spacing:.075em;color:#757575}
+.sol-sponsor-page .sol-sponsor-billing-terms strong{font:700 14px/1.4 Arial,Helvetica,sans-serif;color:#151515}
+.sol-sponsor-page .sol-sponsor-billing-terms small{font:400 11px/1.55 Arial,Helvetica,sans-serif;color:#6a6a6a}
+.sol-sponsor-page .sol-sponsor-offer .sol-sponsor-price-disclosure{margin-top:14px!important}
+@media(max-width:560px){.sol-sponsor-page .sol-sponsor-billing-terms strong{font-size:13px}}
