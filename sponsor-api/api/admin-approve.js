@@ -1,7 +1,7 @@
 import {authorised,readJson,rpc,makeToken,sha256,sendEmail,htmlSafe,json,err,catchError,failClosed} from '../lib/core.js';
 export async function POST(request){
  if(!authorised(request))return err('Unauthorized',401);
- if(process.env.SPONSOR_BILLING_READY!=='true'||!failClosed('RESEND_API_KEY','MAIL_FROM','API_PUBLIC_URL','STRIPE_SECRET_KEY','STRIPE_WEBHOOK_SECRET'))return err('Invite email is not configured',503);
+ if(process.env.SPONSOR_BILLING_READY!=='true'||process.env.SPONSOR_TAX_READY!=='true'||!failClosed('RESEND_API_KEY','MAIL_FROM','API_PUBLIC_URL','STRIPE_SECRET_KEY','STRIPE_WEBHOOK_SECRET'))return err('Invite email is not configured',503);
  try{
   const {applicationId}=await readJson(request);
   if(!/^[0-9a-f]{8}-[0-9a-f-]{27,}$/.test(applicationId||''))return err('Invalid application ID');
@@ -12,7 +12,7 @@ export async function POST(request){
   const checkout=process.env.API_PUBLIC_URL.replace(/\/$/,'')+'/api/checkout?token='+encodeURIComponent(token);
   // If sending fails, preserve reservation and return an error for manual investigation.
   await sendEmail({to:app.email,subject:'Compound Solar — your sponsorship counties are approved',
-    html:'<p>Hello '+htmlSafe(app.contact)+',</p><p>Your Compound Solar county application has been approved for: <b>'+app.requested_counties.map(htmlSafe).join(', ')+'</b>.</p><p>Founding offer: the rest of 2026 is free. The first paid period, 1 January to 31 March 2027, costs €'+(app.requested_counties.length*750)+' total for your selected counties, before applicable VAT. Your first scheduled charge is 1 January 2027; the quarterly subscription renews automatically on 1 April 2027 and every three months thereafter, unless cancelled under the agreed terms.</p><p><a href="'+checkout+'">Complete secure Stripe subscription checkout</a></p><p>The private checkout invitation expires after 48 hours. County exclusivity begins only after successful payment and verification. No minimum lead volume is guaranteed.</p>'});
+    html:'<p>Hello '+htmlSafe(app.contact)+',</p><p>Your Compound Solar county application has been approved for: <b>'+app.requested_counties.map(htmlSafe).join(', ')+'</b>.</p><p>Founding offer: the rest of 2026 is free. The first paid period, 1 January to 31 March 2027, costs €'+(app.requested_counties.length*750)+' total for your selected counties, before applicable VAT. Your first scheduled charge is 1 January 2027; the quarterly subscription renews automatically on 1 April 2027 and every three months thereafter, unless cancelled under the agreed terms.</p><p><a href="'+checkout+'">Complete secure Stripe subscription checkout</a></p><p>The private checkout invitation expires after 48 hours. County exclusivity can begin during the complimentary 2026 period after Stripe has collected your payment method and Compound has verified and activated your sponsorship. The first scheduled charge is 1 January 2027. The initial January–March 2027 period is a three-month paid commitment under the agreed terms. No minimum lead volume is guaranteed.</p>'});
   return json({ok:true,applicationId:app.id,expires,invitationSent:true});
  }catch(error){
   if(/County unavailable|not pending|not found/.test(error.message))return err(error.message,409);
