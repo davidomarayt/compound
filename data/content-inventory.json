@@ -4356,6 +4356,18 @@
         "kind": "Information / policy page"
       },
       {
+        "title": "Solar Battery Calculator Ireland: Cost, Grant & Payback",
+        "url": "/solar-batteries/",
+        "source": "content/pages/solar-batteries.md",
+        "kind": "Information / policy page"
+      },
+      {
+        "title": "Solar Export Rates Ireland: Compare Electricity Tariffs",
+        "url": "/solar-export-rates/",
+        "source": "content/pages/solar-export-rates.md",
+        "kind": "Information / policy page"
+      },
+      {
         "title": "Solar Panel Grants Ireland 2026: PV & Battery Eligibility",
         "url": "/solar-grants/",
         "source": "content/pages/solar-grants.md",
@@ -4377,6 +4389,12 @@
         "title": "Solar Panels Ireland: Grants, Costs, Calculators & Quotes",
         "url": "/solar/",
         "source": "content/pages/solar.md",
+        "kind": "Information / policy page"
+      },
+      {
+        "title": "Solar Panels, Inverters & Batteries Ireland: Equipment Guide",
+        "url": "/solar-equipment/",
+        "source": "content/pages/solar-equipment.md",
         "kind": "Information / policy page"
       },
       {

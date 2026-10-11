@@ -12,7 +12,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
-- Information and policy pages: 14
+- Information and policy pages: 17
 - Main hubs: 11
 - Public-company directory profiles: 510
 - Private-company directory profiles: 13
@@ -357,7 +357,7 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - Weight Loss Calculator Ireland | source: content/tool-guides/weight-loss-calculator.md
 - Whole-House Retrofit Planner Ireland | source: content/tool-guides/whole-house-retrofit-planner.md
 
-## Information and policy pages — 14
+## Information and policy pages — 17
 
 - [About](https://compound.ie/about/)
 - [Contact](https://compound.ie/contact/)
@@ -368,10 +368,13 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - [Insurance Tools & Guides Ireland](https://compound.ie/insurance/)
 - [Life](https://compound.ie/life/)
 - [Privacy policy](https://compound.ie/privacy/)
+- [Solar Battery Calculator Ireland: Cost, Grant & Payback](https://compound.ie/solar-batteries/)
+- [Solar Export Rates Ireland: Compare Electricity Tariffs](https://compound.ie/solar-export-rates/)
 - [Solar Panel Grants Ireland 2026: PV & Battery Eligibility](https://compound.ie/solar-grants/)
 - [Solar Panel Installation Costs & System Sizes Ireland](https://compound.ie/solar-costs/)
 - [Solar Panel Quote Request Template Ireland](https://compound.ie/solar-get-quotes/)
 - [Solar Panels Ireland: Grants, Costs, Calculators & Quotes](https://compound.ie/solar/)
+- [Solar Panels, Inverters & Batteries Ireland: Equipment Guide](https://compound.ie/solar-equipment/)
 - [Solar Quote Comparison Calculator Ireland](https://compound.ie/solar-compare-quotes/)
 
 ## Site hubs and directories — 11
