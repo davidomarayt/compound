@@ -7,7 +7,7 @@ title: "Insurance Sponsorship & Advertising Ireland"
     <p class="ip-ey">COMPOUND / INSURANCE PARTNERSHIPS</p>
     <h1>Reach readers working through real insurance decisions.</h1>
     <p>Compound connects practical Irish insurance guides with interactive calculators. We are opening conversations about clearly labelled, sponsor-neutral advertising around this educational experience.</p>
-    <div class="ip-actions"><a class="ip-button" href="mailto:david@compound.ie?subject=Insurance%20Partnership%20Enquiry">Discuss a partnership ↗</a><a class="ip-secondary" href="/insurance/">Explore the Insurance hub ↗</a></div>
+    <div class="ip-actions"><a class="ip-button" href="mailto:david@compound.ie?subject=Insurance%20Partnership%20Enquiry" data-ins-event="partner_email" data-ins-label="insurance_partnerships">Discuss a partnership ↗</a><a class="ip-secondary" href="/insurance/">Explore the Insurance hub ↗</a></div>
     <div class="ip-proof"><span><strong>8</strong> interactive insurance tools</span><span><strong>4</strong> published insurance guides</span><span><strong>Independent</strong> editorial and calculations</span></div>
   </header>
 
@@ -39,6 +39,6 @@ title: "Insurance Sponsorship & Advertising Ireland"
     <div><p>Sponsors do not choose calculator formulas, influence estimated results, buy positions in editorial rankings, approve coverage or obtain readers' private calculator entries. Advertisements are labelled and kept distinguishable from independent information.</p><p>Compound does not currently arrange or sell insurance through these calculators. Any future quote referrals, lead generation or insurance distribution activity would require a separate Irish regulatory and privacy review before implementation. Commercial relationships never replace a provider's regulated suitability, disclosure or underwriting obligations.</p><p>Compound does not sell editorial articles or accept payment for favourable coverage. Read the <a href="/editorial-policy/">editorial policy</a> and <a href="/privacy/">privacy policy</a>.</p></div>
   </section>
 
-  <section class="ip-cta" aria-labelledby="ip-next"><p class="ip-ey">LET'S TALK</p><h2 id="ip-next">Discuss an insurance partnership.</h2><p>Tell us your company, product category, ideal placement and campaign dates. We can confirm availability and share verified audience information where available.</p><a class="ip-button" href="mailto:david@compound.ie?subject=Insurance%20Partnership%20Enquiry">Email david@compound.ie ↗</a><span>No rate card or guaranteed results are being advertised here.</span></section>
+  <section class="ip-cta" aria-labelledby="ip-next"><p class="ip-ey">LET'S TALK</p><h2 id="ip-next">Discuss an insurance partnership.</h2><p>Tell us your company, product category, ideal placement and campaign dates. We can confirm availability and share verified audience information where available.</p><a class="ip-button" href="mailto:david@compound.ie?subject=Insurance%20Partnership%20Enquiry" data-ins-event="partner_email" data-ins-label="insurance_partnerships">Email david@compound.ie ↗</a><span>No rate card or guaranteed results are being advertised here.</span></section>
   <nav class="ip-footer" aria-label="Related pages"><a href="/insurance/">← Insurance tools and guides</a><a href="/contact/">Contact Compound ↗</a></nav>
 </div>
