@@ -1,6 +1,30 @@
 {% extends "base.html" %}
-{% block head_title %}{% if page.slug == 'life' %}Compound Life Ireland: Home, Work, Travel & Relationships{% else %}{{ page.title }} · Compound{% endif %}{% endblock %}
-{% block meta %}{% if page.slug == 'life' %}<meta name="description" content="Compound Life brings together practical Irish guides and useful tools across relationships, family, work, travel, home, leisure and community.">{% else %}{{ super() }}{% endif %}{% endblock %}
-{% block head %}<link rel="canonical" href="{{ site_url }}/{{ page.slug }}/">{% endblock %}
-{% block post_styles %}{% if page.slug == 'life' %}<link rel="stylesheet" href="/static/life-hub.css?v=1">{% endif %}{% endblock %}
-{% block content %}{% if page.slug == 'life' %}<div class="life-hub">{{ page.body_html|safe }}</div>{% else %}<article class="info-page"><p class="eyebrow">COMPOUND / THE DETAILS</p><h1>{{ page.title }}</h1><div class="article-prose">{{ page.body_html|safe }}</div></article>{% endif %}{% endblock %}
+{% block head_title %}{% if page.slug == 'life' %}Compound Life Ireland: Home, Work, Travel & Relationships{% elif page.slug == 'insurance' %}Insurance Tools & Guides Ireland | Life, Mortgage, Income & Health | Compound{% else %}{{ page.title }} · Compound{% endif %}{% endblock %}
+{% block meta %}
+{% if page.slug == 'life' %}<meta name="description" content="Compound Life brings together practical Irish guides and useful tools across relationships, family, work, travel, home, leisure and community.">
+{% elif page.slug == 'insurance' %}<meta name="description" content="Free insurance tools and independent guides for Ireland: life insurance, mortgage protection, income protection and health insurance, with practical calculators.">
+{% else %}{{ super() }}{% endif %}
+{% endblock %}
+{% block head %}
+<link rel="canonical" href="{{ site_url }}/{{ page.slug }}/">
+{% if page.slug == 'insurance' %}
+<meta property="og:type" content="website">
+<meta property="og:title" content="Insurance Tools & Guides Ireland | Compound">
+<meta property="og:description" content="Independent Irish insurance guides and free calculators for families, homeowners and workers.">
+<meta property="og:url" content="{{ site_url }}/insurance/">
+<meta property="og:site_name" content="Compound">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Insurance Tools & Guides Ireland","url":"{{ site_url }}/insurance/","description":"Independent life insurance, mortgage protection, income protection and health insurance resources and free calculators for Ireland.","publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}}</script>
+{% endif %}
+{% endblock %}
+{% block post_styles %}
+{% if page.slug == 'life' %}<link rel="stylesheet" href="/static/life-hub.css?v=1">
+{% elif page.slug == 'insurance' %}<link rel="stylesheet" href="/static/insurance-hub.css?v=1"><script src="/static/insurance-hub.js?v=1" defer></script>
+{% endif %}
+{% endblock %}
+{% block content %}
+{% if page.slug == 'life' %}<div class="life-hub">{{ page.body_html|safe }}</div>
+{% elif page.slug == 'insurance' %}{{ page.body_html|safe }}
+{% else %}<article class="info-page"><p class="eyebrow">COMPOUND / THE DETAILS</p><h1>{{ page.title }}</h1><div class="article-prose">{{ page.body_html|safe }}</div></article>
+{% endif %}
+{% endblock %}
