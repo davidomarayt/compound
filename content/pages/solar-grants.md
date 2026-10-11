@@ -1,0 +1,24 @@
+---
+title: "Solar Panel Grants Ireland 2026: PV & Battery Eligibility"
+canonical_path: /solar/grants/
+meta_description: "Check Ireland's SEAI solar PV grants in 2026: up to €1,800 for panels plus €600 for an eligible battery. Interactive eligibility and grant calculator."
+---
+<div class="sol-shell sol-subpage">
+<nav class="sol-subcrumb"><a href="/">Home</a> / <a href="/solar/">Solar</a> / <span aria-current="page">Grants</span></nav>
+<header class="sol-subhero"><p class="sol-ey">SEAI GRANTS / VERIFIED OCTOBER 2026</p><h1>What solar grant <em>could you qualify for?</em></h1><p>The standard domestic solar PV grant is worth up to €1,800. A separate €600 grant is available for qualifying home batteries of at least 5 kWh. Check your circumstances before proceeding.</p></header>
+<section class="sol-toolwrap" data-solar-grants>
+<div class="sol-toolintro"><h2>Solar grant checker</h2><p>Estimates the standard grants, not enhanced means-tested or local-authority schemes. Only SEAI can confirm eligibility and approve the application.</p></div>
+<div class="sol-fields">
+<label>Solar installation size (kWp)<input data-sg="kwp" type="number" min="0" max="100" step=".5" value="4"></label>
+<label>Battery usable capacity (kWh; 0 if none)<input data-sg="battery" type="number" min="0" max="200" step=".5" value="5"></label>
+<label>Was your home built <strong>and occupied</strong> before 2025?<select data-sg="age"><option value="yes">Yes</option><option value="no">No / unsure</option></select></label>
+<label>Does the property have an MPRN?<select data-sg="mprn"><option value="yes">Yes</option><option value="no">No / unsure</option></select></label>
+<label>Have you previously received an SEAI solar PV grant at this MPRN?<select data-sg="priorpv"><option value="no">No</option><option value="yes">Yes / unsure</option></select></label>
+<label>Have you previously received an SEAI battery grant at this MPRN?<select data-sg="priorbattery"><option value="no">No</option><option value="yes">Yes / unsure</option></select></label>
+</div>
+<div class="sol-grant-result" aria-live="polite"><p class="sol-ey">ESTIMATED STANDARD GRANT</p><strong data-sg-total>€2,400</strong><p data-sg-msg>This is an estimate only. Grant approval must be in place before works start.</p><div class="sol-minirows"><div><span>Solar PV</span><strong data-sg-pv>€1,800</strong></div><div><span>Battery</span><strong data-sg-battery>€600</strong></div></div></div>
+<p class="sol-method">Checks only the basic property/MPRN/prior-grant conditions and battery size. It does not determine eligibility under enhanced welfare-payment or Dublin rental pilot programmes, check registered contractors, assess roof/electrical suitability or confirm grant availability. Where uncertainty exists, the tool excludes the relevant grant. Do not start work until you have the SEAI grant offer. Grant rates can change.</p>
+</section>
+<section class="sol-article-grid"><article><h2>How the standard PV grant works</h2><div class="sol-table-scroll"><table><thead><tr><th>PV capacity</th><th>Standard grant</th></tr></thead><tbody><tr><td>2 kWp</td><td>€1,400</td></tr><tr><td>3 kWp</td><td>€1,600</td></tr><tr><td>4 kWp or larger</td><td>€1,800</td></tr></tbody></table></div><p>The grant is pro-rated for fractional kWp sizes. Battery support is separate. Some qualifying homeowners receiving specified welfare payments may access enhanced solar funding; see the <a href="https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant">official SEAI conditions</a>.</p></article><article><h2>Application order matters</h2><ol><li>Select an SEAI-registered solar PV company and obtain written quotes.</li><li>Apply through SEAI and wait for the letter of offer <strong>before work starts</strong>.</li><li>Complete installation with the registered company and installer, including ESB Networks paperwork.</li><li>Arrange the post-works BER and make sure the contractor submits the required documentation.</li><li>SEAI processes the eligible payment after its checks.</li></ol></article></section>
+<div class="sol-sourcebox"><h2>Official 2026 sources</h2><p><a href="https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant">SEAI Solar Electricity Grant ↗</a> · <a href="https://www.seai.ie/grants/home-energy-grants/individual-grants/battery">SEAI Battery Grant ↗</a> · <a href="/wealth/solar-panels-ireland/">Compound full solar guide ↗</a></p><small>Rules and figures checked 11 October 2026. Grants depend on SEAI approval.</small></div><nav class="sol-return"><a href="/solar/">← Solar hub</a><a href="/solar/compare-quotes/">Compare installation quotes ↗</a></nav>
+</div>

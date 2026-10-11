@@ -336,6 +336,12 @@ class Page:
     title: str
     slug: str
     body_html: str
+    canonical_path: str = ""
+    meta_description: str = ""
+
+    @property
+    def url(self) -> str:
+        return self.canonical_path or f"/{self.slug}/"
 
 
 def parse_markdown_file(path: Path) -> tuple[dict, str]:
@@ -592,7 +598,12 @@ def load_pages(content_dir: Path) -> list[Page]:
         return pages
     for p in sorted(d.glob("*.md")):
         meta, body = parse_markdown_file(p)
-        pages.append(Page(title=str(meta.get("title") or p.stem.title()), slug=p.stem, body_html=render_markdown(body)))
+        canonical_path = str(meta.get("canonical_path") or f"/{p.stem}/")
+        if not re.fullmatch(r"/(?:[a-z0-9]+(?:-[a-z0-9]+)*/)+", canonical_path):
+            raise ValueError(f"Invalid page canonical path: {p}")
+        pages.append(Page(title=str(meta.get("title") or p.stem.title()), slug=p.stem,
+                          body_html=render_markdown(body), canonical_path=canonical_path,
+                          meta_description=str(meta.get("meta_description") or "")))
     return pages
 
 
@@ -1068,7 +1079,9 @@ def build_site(settings: Settings) -> dict:
     reserved = {"/", "/search/", "/tools/", "/news/", "/pia/", "/pia/providers/", "/wealth/earnings/", "/stocks/", "/companies/", "/compound-interest-calculator/", "/bmi-calculator/"}
     reserved.update(tool["url"] for tool in tools)
     reserved.update(f"/{p}/" for p in PILLARS)
-    reserved.update(f"/{pg.slug}/" for pg in pages)
+    reserved.update(pg.url for pg in pages)
+    if len({pg.url for pg in pages}) != len(pages):
+        raise ValueError("Duplicate static page canonical routes")
     seen_urls = set(reserved)
     for article in articles:
         if article.url in seen_urls or article.url.startswith(("/preview/", "/static/", "/tag/", "/stocks/", "/companies/")):
@@ -1432,7 +1445,9 @@ def build_site(settings: Settings) -> dict:
         _write(out / "tag" / t / "index.html", env.get_template("tag.html").render(tag=t, articles=arts, title=f"#{t}", ads_allowed=False))
 
     for pg in pages:
-        _write(out / pg.slug / "index.html", env.get_template("page.html").render(page=pg, title=pg.title))
+        _write(out / pg.url.strip("/") / "index.html", env.get_template("page.html").render(
+            page=pg, title=pg.title,
+            ads_configured=bool(load_site_config(settings.content_dir)["adsense"]["client"]) if pg.slug == "solar" or pg.slug.startswith("solar-") else False))
 
     if tools:
         hub_tools = list(tools)
@@ -1547,6 +1562,15 @@ def build_site(settings: Settings) -> dict:
          "image": a.image, "reading_minutes": a.reading_minutes, "date_label": long_date(a.date)}
         for a in articles
     ]
+    for pg in pages:
+        if pg.slug == "solar" or pg.slug.startswith("solar-"):
+            index.insert(0, {
+                "title": pg.title, "url": pg.url, "pillar": "Wealth",
+                "date": "2026-10-11", "summary": pg.meta_description,
+                "tags": ["solar", "solar panels", "solar pv", "solar ireland", "home energy"],
+                "description": pg.meta_description, "image": "", "reading_minutes": 5,
+                "date_label": "Solar hub",
+            })
     if any(pg.slug == "insurance" for pg in pages):
         index.insert(0, {
             "title": "Insurance Tools & Guides Ireland — Life, Mortgage, Income & Health",
@@ -1751,7 +1775,7 @@ def build_site(settings: Settings) -> dict:
         (settings.site_base_url + a.url, (a.reviewed or a.date).isoformat())
         for a in articles
     )
-    sitemap_entries.extend((settings.site_base_url + f"/{pg.slug}/", None) for pg in pages)
+    sitemap_entries.extend((settings.site_base_url + pg.url, "2026-10-11" if pg.slug == "solar" or pg.slug.startswith("solar-") else None) for pg in pages)
 
     # Canonical stock hub URLs only; old earnings-company aliases are noindex.
     sitemap_entries.extend(

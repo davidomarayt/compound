@@ -1,17 +1,22 @@
 {% extends "base.html" %}
 {% set insurance_tools = {"health-insurance-cost-comparison-calculator":"Compare two Irish health insurance plans using premiums, inpatient excesses, shortfalls and outpatient reimbursements. Free 2026 cost calculator.","home-insurance-rebuild-cost-calculator":"Home insurance rebuild cost calculator Ireland: use floor area and a rebuilding rate to estimate buildings cover and potential underinsurance.","critical-illness-cover-calculator":"Critical illness cover calculator Ireland: estimate one-off costs, income interruptions and family care needs, less savings and existing cover.","death-in-service-life-insurance-calculator":"Death-in-service calculator Ireland: translate salary multiples into a lump sum and estimate the family life insurance shortfall.","insurance-premium-savings-calculator":"Insurance savings calculator Ireland: compare annual home, car, health and life insurance premiums and model switching savings after fees."} %}
 {% set is_insurance_calculator = page.slug in insurance_tools %}
-{% block head_title %}{% if page.slug == 'life' %}Compound Life Ireland: Home, Work, Travel & Relationships{% elif page.slug == 'insurance' %}Insurance Tools & Guides Ireland | Life, Mortgage, Income & Health | Compound{% else %}{{ page.title }} | Compound{% endif %}{% endblock %}
+{% set is_solar = page.slug == 'solar' or page.slug.startswith('solar-') %}
+{% block head_title %}{% if page.slug == 'life' %}Compound Life Ireland: Home, Work, Travel & Relationships{% elif page.slug == 'insurance' %}Insurance Tools & Guides Ireland | Life, Mortgage, Income & Health | Compound{% elif is_solar %}{{ page.title }} | Compound{% else %}{{ page.title }} | Compound{% endif %}{% endblock %}
 {% block meta %}
 {% if page.slug == 'life' %}<meta name="description" content="Compound Life brings together practical Irish guides and useful tools across relationships, family, work, travel, home, leisure and community.">
 {% elif page.slug == 'insurance' %}<meta name="description" content="Free insurance tools and independent guides for Ireland: life insurance, mortgage protection, income protection and health insurance, with practical calculators.">
 
+{% elif is_solar %}<meta name="description" content="{{ page.meta_description|e }}">
 {% elif is_insurance_calculator %}<meta name="description" content="{{ insurance_tools[page.slug] }}">
 {% else %}{{ super() }}{% endif %}
 {% endblock %}
 {% block head %}
-<link rel="canonical" href="{{ site_url }}/{{ page.slug }}/">
-{% if page.slug == 'insurance' %}
+<link rel="canonical" href="{{ site_url }}{{ page.url }}">
+{% if is_solar %}
+<meta property="og:type" content="website"><meta property="og:title" content="{{ page.title|e }}"><meta property="og:description" content="{{ page.meta_description|e }}"><meta property="og:url" content="{{ site_url }}{{ page.url }}"><meta property="og:site_name" content="Compound"><meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"{{ 'CollectionPage' if page.slug == 'solar' else 'WebPage' }}","name":{{ page.title|tojson }},"description":{{ page.meta_description|tojson }},"url":{{ (site_url ~ page.url)|tojson }},"inLanguage":"en-IE","publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ site_url }}/"},{"@type":"ListItem","position":2,"name":"Solar","item":"{{ site_url }}/solar/"}{% if page.slug != 'solar' %},{"@type":"ListItem","position":3,"name":{{ page.title|tojson }},"item":{{ (site_url ~ page.url)|tojson }}}{% endif %}]}]}</script>
+{% elif page.slug == 'insurance' %}
 <meta property="og:type" content="website">
 <meta property="og:title" content="Insurance Tools & Guides Ireland | Compound">
 <meta property="og:description" content="Independent Irish insurance guides and free calculators for families, homeowners and workers.">
@@ -26,6 +31,7 @@
 {% endblock %}
 {% block post_styles %}
 {% if page.slug == 'life' %}<link rel="stylesheet" href="/static/life-hub.css?v=1">
+{% elif is_solar %}<link rel="stylesheet" href="/static/solar-hub.css?v=1"><script src="/static/solar-hub.js?v=1" defer></script>
 {% elif page.slug == 'insurance' %}<link rel="stylesheet" href="/static/insurance-hub.css?v=2"><script src="/static/insurance-hub.js?v=2" defer></script>
 
 {% elif is_insurance_calculator %}<link rel="stylesheet" href="/static/insurance-tools-2026.css?v=1"><script src="/static/insurance-tools-2026.js?v=1" defer></script>
@@ -34,6 +40,7 @@
 {% block content %}
 {% if page.slug == 'life' %}<div class="life-hub">{{ page.body_html|safe }}</div>
 {% elif page.slug == 'insurance' %}{{ page.body_html|safe }}
+{% elif is_solar %}{{ page.body_html|safe }}
 
 {% elif is_insurance_calculator %}
 {{ page.body_html|safe }}
