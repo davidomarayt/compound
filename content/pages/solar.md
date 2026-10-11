@@ -41,6 +41,23 @@ meta_description: "Ireland's solar hub: check SEAI grants, compare installation 
       <a class="sol-card" href="/solar/get-quotes/"><span class="sol-cardtop">GET READY TO BUY</span><h3>Prepare your quote request</h3><p>Create a clear, comparable brief you can send to multiple registered companies.</p><strong>Prepare a quote brief ↗</strong></a>
     </div>
   </section>
+
+  <section id="solar-connected-energy" aria-labelledby="solar-connected-heading">
+    <div class="sol-sectionhead"><div><p class="sol-ey">RELATED COMPOUND TOOLS</p><h2 id="solar-connected-heading">Plan the <em>whole home.</em></h2></div><p>Solar is only one part of the energy bill. Compare current usage, home efficiency and retrofit budgets before deciding on a PV system.</p></div>
+    <div class="sol-cardgrid sol-cardgrid-3">
+      <a class="sol-card" href="/electricity-cost-calculator/"><span class="sol-cardtop">HOUSEHOLD USE</span><h3>Electricity cost calculator</h3><p>Estimate the cost of appliances and additional loads when planning solar generation.</p><strong>Open electricity tool ↗</strong></a>
+      <a class="sol-card" href="/ber-energy-cost-calculator/"><span class="sol-cardtop">ENERGY EFFICIENCY</span><h3>BER energy cost calculator</h3><p>Compare building energy intensity and bills separately from rooftop electricity generation.</p><strong>Open BER calculator ↗</strong></a>
+      <a class="sol-card" href="/whole-house-retrofit-planner/"><span class="sol-cardtop">WHOLE-HOME PROJECT</span><h3>Retrofit planner</h3><p>Model insulation, heating and solar in a coordinated upgrade budget.</p><strong>Plan a retrofit ↗</strong></a>
+    </div>
+    <div class="sol-sectionhead"><div><p class="sol-ey">RELATED IRISH GUIDES</p><h2>Start with the <em>energy picture.</em></h2></div><p>Use actual energy needs and tariff information rather than relying on national averages.</p></div>
+    <div class="sol-cardgrid sol-cardgrid-3">
+      <a class="sol-card" href="/wealth/average-home-electricity-use-ireland/"><span class="sol-cardtop">ELECTRICITY DEMAND</span><h3>Electricity use in Irish homes</h3><p>Understand your current kWh demand before estimating a solar system.</p><strong>Read guide ↗</strong></a>
+      <a class="sol-card" href="/wealth/electricity-tariffs-ireland/"><span class="sol-cardtop">SMART TARIFFS</span><h3>Electricity tariffs in Ireland</h3><p>Understand import and export economics, day/night plans and EV charging.</p><strong>Read guide ↗</strong></a>
+      <a class="sol-card" href="/wealth/heat-pumps-ireland/"><span class="sol-cardtop">ELECTRIC HEATING</span><h3>Heat pumps in Ireland</h3><p>A heat pump can change the size and timing of household electricity consumption.</p><strong>Read guide ↗</strong></a>
+      <a class="sol-card" href="/wealth/insulation-grants-ireland/"><span class="sol-cardtop">FABRIC FIRST</span><h3>Insulation grants in Ireland</h3><p>Assess efficiency measures before a larger home-energy investment.</p><strong>Read guide ↗</strong></a>
+    </div>
+    <p class="sol-method">Planning EV charging too? Use the <a href="/ev-charging-cost-calculator/">EV Charging Cost Calculator</a> with the <a href="/solar-ev-battery-optimiser/">solar + EV + battery optimiser</a>. These tools answer related but different questions; avoid double-counting savings.</p>
+  </section>
   <section class="sol-steps" id="solar-journey">
     <div class="sol-sectionhead"><div><p class="sol-ey">FROM IDEA TO INSTALLATION</p><h2>Five steps to a <em>smarter decision.</em></h2></div></div>
     <ol><li><strong>Understand your demand.</strong><p>Use annual kWh and, ideally, smart-meter half-hourly usage to see when you need energy.</p></li><li><strong>Estimate an appropriate system.</strong><p>Consider roof area, orientation, shading, annual generation and future EV or heat-pump demand.</p></li><li><strong>Check the grants.</strong><p>Confirm the correct SEAI scheme and obtain grant approval before starting the work.</p></li><li><strong>Request comparable written quotes.</strong><p>Ask for the same equipment details, yield model, battery capacity, warranties and total price.</p></li><li><strong>Choose and verify.</strong><p>Check registration, references, the written contract, grid paperwork, post-works BER and commissioning documents.</p></li></ol>

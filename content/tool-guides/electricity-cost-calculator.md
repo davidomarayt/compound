@@ -2,6 +2,8 @@
 
 This calculator estimates the **incremental running cost of an appliance** from its power, usage pattern and electricity unit rate. It is useful for understanding what heaters, immersions, dehumidifiers, dryers, EV-related equipment and other loads can add to a bill.
 
+For solar planning, use the **[Compound Solar Hub](/solar/)** to connect appliance demand to solar quotes, grant rules and payback. Compare two import and export offers with the **[Solar Export Rate Comparator](/solar/export-rates/)**.
+
 For whole-house tariff selection, use our **[Electricity Tariffs in Ireland guide](/wealth/electricity-tariffs-ireland/)** to compare 24-hour, day/night, smart, EV and dynamic pricing before entering the relevant unit rate here.
 
 ## How to read the result

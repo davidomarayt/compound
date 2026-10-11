@@ -2,6 +2,8 @@
 
 A whole-house retrofit is a sequence of interacting measures rather than a shopping list. This planner helps assemble costs, grants and estimated energy effects across insulation, heating, ventilation, windows, solar and related upgrades.
 
+For the solar part of a home upgrade, start at the **[Compound Solar Hub](/solar/)**. Compare solar installation quotes separately and avoid double-counting savings between building efficiency and electricity generation.
+
 If a heat pump is part of the plan, read our **[Heat Pumps in Ireland 2026 guide](/wealth/heat-pumps-ireland/)** first. It explains the €12,500 grant bundle, HLI/technical-assessment rules, radiator sizing, SCOP and the running-cost maths behind the calculator assumptions.
 
 ## How to read the result

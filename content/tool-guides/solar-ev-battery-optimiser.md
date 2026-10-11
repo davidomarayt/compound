@@ -2,6 +2,8 @@
 
 This tool compares how solar generation can interact with household demand, EV charging and a battery. Its purpose is not to find a universally 'optimal' system, but to reveal where each generated kWh goes and what value it creates under your tariff assumptions.
 
+Use the **[Compound Solar Hub](/solar/)** to connect this optimisation to quotes, grants, **[battery-only economics](/solar/batteries/)** and **[export tariffs](/solar/export-rates/)**.
+
 Use the optimiser alongside our **[Solar Panels in Ireland guide](/wealth/solar-panels-ireland/)** for grants, CEG and system sizing, and **[Electricity Tariffs in Ireland](/wealth/electricity-tariffs-ireland/)** for the 24-hour, smart, EV and dynamic tariff structures behind the inputs.
 
 ## Basic and Advanced modes

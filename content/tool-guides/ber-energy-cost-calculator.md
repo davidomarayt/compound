@@ -2,6 +2,8 @@
 
 This calculator converts an entered BER-style energy intensity into an annual energy-use and cost illustration. It helps make kWh/m²/year easier to understand in household-euro terms.
 
+If you are considering PV as part of a retrofit, use the **[Compound Solar Hub](/solar/)** for installation quotes and PV-specific grants. Building energy demand and rooftop electricity generation are separate calculations.
+
 ## A worked way to use the comparison
 
 Suppose a 120 m² home is modelled at 180 kWh/m² a year and you want to compare it with a 90 kWh/m² target. The calculator turns those assumptions into 21,600 kWh and 10,800 kWh respectively. At the same blended energy-price assumption, the target scenario therefore uses 50% less modelled energy and produces a 50% lower variable-energy cost.

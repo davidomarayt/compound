@@ -119,3 +119,31 @@ def test_solar_research_calculators_and_sources():
     assert "document.querySelector(\"[data-solar-battery]\")" in js
     for url in ("/solar/batteries/", "/solar/export-rates/", "/solar/equipment/"):
         assert url in (ROOT / "content/pages/solar.md").read_text(encoding="utf-8")
+
+
+def test_solar_hub_connects_home_energy_tools_and_guides():
+    hub = (ROOT / "content/pages/solar.md").read_text(encoding="utf-8")
+    tools_page = (ROOT / "compound/site/templates/tools.html").read_text(encoding="utf-8")
+    for path in (
+        "/solar-payback-calculator/",
+        "/solar-ev-battery-optimiser/",
+        "/electricity-cost-calculator/",
+        "/ber-energy-cost-calculator/",
+        "/whole-house-retrofit-planner/",
+        "/wealth/average-home-electricity-use-ireland/",
+        "/wealth/electricity-tariffs-ireland/",
+        "/wealth/heat-pumps-ireland/",
+        "/wealth/insulation-grants-ireland/",
+    ):
+        assert f'href="{path}"' in hub
+    assert "category == 'Home Energy'" in tools_page
+    assert 'href="/solar/"' in tools_page
+    for slug in (
+        "electricity-cost-calculator",
+        "solar-payback-calculator",
+        "ber-energy-cost-calculator",
+        "solar-ev-battery-optimiser",
+        "whole-house-retrofit-planner",
+    ):
+        body = (ROOT / "content/tool-guides" / f"{slug}.md").read_text(encoding="utf-8")
+        assert "](/solar/)" in body
