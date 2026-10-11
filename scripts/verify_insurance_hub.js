@@ -29,8 +29,32 @@ const root={
     throw new Error("Unexpected selector "+selector);
   }
 };
-const document={querySelector(s){assert.equal(s,"[data-ins-gap]");return root;}};
-vm.runInNewContext(script,{document,Intl,Number,Math}, {filename:"insurance-hub.js",timeout:1000});
+const pageListeners={};
+const document={
+  querySelector(s){assert.equal(s,"[data-ins-gap]");return root;},
+  addEventListener(kind,callback){pageListeners[kind]=callback;}
+};
+const analytics=[];
+let consent="denied";
+const localStorage={getItem(key){assert.equal(key,"compound_analytics_consent");return consent;}};
+const window={gtag(...args){analytics.push(args);}};
+vm.runInNewContext(script,{document,Intl,Number,Math,window,localStorage}, {filename:"insurance-hub.js",timeout:1000});
+function analyticsClick(category,label){
+  const link={getAttribute(name){return name==="data-ins-event"?category:name==="data-ins-label"?label:null;}};
+  pageListeners.click({target:{closest(){return link;}}});
+}
+analyticsClick("partner_interest","insurance_hub");
+assert.equal(analytics.length,0,"no tracking without consent");
+consent="granted";
+analyticsClick("partner_interest","insurance_hub");
+assert.equal(analytics.length,1,"opt-in sponsor interest event");
+assert.equal(analytics[0][0],"event");
+assert.equal(analytics[0][1],"insurance_hub_navigation");
+assert.equal(analytics[0][2].interaction_type,"partner_interest");
+assert.equal(analytics[0][2].content_category,"insurance_hub");
+analyticsClick("partner_email","a-private@email.com");
+assert.equal(analytics.length,1,"reject unsanctioned labels");
+
 assert.equal(out.gap.textContent,"€13,500","default gap");
 assert.equal(out.monthly.textContent,"€2,000","monthly gap");
 assert.equal(out.gross.textContent,"€20,000","gross gap");
@@ -49,4 +73,4 @@ set("spending",1000);
 assert.equal(out.gap.textContent,"€0","continuing income exceeding spending");
 set("spending",-500);
 assert.equal(out.gap.textContent,"€0","negative input clamped to zero");
-console.log("Insurance income-gap calculator: 7 behavioural checks passed");
+console.log("Insurance income-gap calculator and consent-aware navigation tracking passed");
