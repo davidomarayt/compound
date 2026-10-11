@@ -27,7 +27,11 @@ jobs:
           grep -Fq 'id="li26-calc"' /tmp/life-insurance.html
           grep -Fq '/static/life-insurance-guide.css?v=1' /tmp/life-insurance.html
           grep -Fq '/static/life-insurance-guide.js?v=1' /tmp/life-insurance.html
-          grep -Fq 'pexels-photo-20194638.jpeg' /tmp/life-insurance.html
+          echo 'Current rendered hero:'
+          grep -oE '<div class="article-cover".{0,650}' /tmp/life-insurance.html | head -1 || true
+          echo 'Open Graph image:'
+          grep -oE '<meta property="og:image"[^>]*' /tmp/life-insurance.html | head -1 || true
+          grep -Fq 'Parents embracing their two children in a candid family moment' /tmp/life-insurance.html
           grep -Fq 'Catalina Herrera' /tmp/life-insurance.html
           grep -Fq 'property="og:image"' /tmp/life-insurance.html
           grep -Fq '/wealth/mortgage-protection-insurance-ireland/' /tmp/life-insurance.html
