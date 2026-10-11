@@ -370,7 +370,7 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - [Privacy policy](https://compound.ie/privacy/)
 - [Solar Battery Calculator Ireland: Cost, Grant & Payback](https://compound.ie/solar-batteries/)
 - [Solar Export Rates Ireland: Compare Electricity Tariffs](https://compound.ie/solar-export-rates/)
-- [Solar Installer Sponsorships: Reserve Your Irish Counties | Compound](https://compound.ie/solar-for-installers/)
+- [Solar Installer Partnerships Ireland | Exclusive County Sponsorship | Compound](https://compound.ie/solar-for-installers/)
 - [Solar Panel Grants Ireland 2026: PV & Battery Eligibility](https://compound.ie/solar-grants/)
 - [Solar Panel Installation Costs & System Sizes Ireland](https://compound.ie/solar-costs/)
 - [Solar Panel Quote Request Template Ireland](https://compound.ie/solar-get-quotes/)
