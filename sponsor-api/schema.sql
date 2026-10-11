@@ -128,7 +128,7 @@ where a.invite_hash=p_invite_hash and a.status='approved' and a.expires_at>now()
 limit 1; $$;
 
 create or replace function public.solar_store_checkout(p_application_id uuid,p_session_id text,p_previous_session_id text)
-returns void language plpgsql security invoker set search_path=public as $
+returns void language plpgsql security invoker set search_path=public as $$
 begin
  -- Compare-and-swap ensures parallel requests cannot overwrite the live
  -- Checkout session reference, leaving a paid customer without entitlement.
@@ -136,7 +136,7 @@ begin
  where id=p_application_id and status='approved' and expires_at>now()
  and stripe_checkout_id is not distinct from p_previous_session_id;
  if not found then raise exception 'Checkout session changed; retry original invitation'; end if;
-end; $;
+end; $$;
 
 -- Process Stripe events exactly once, with entitlement status updated in same transaction.
 create or replace function public.solar_apply_billing_event(
