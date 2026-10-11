@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {COUNTIES,PRICE_ID,UPFRONT_PRICE_ID,CANCEL_NOTICE_DAYS,noticeDeadline,cancellationEffectiveAt,normalizeApplication,sha256,stripeSignature,FOUNDING_TRIAL_END_UNIX} from '../lib/core.js';
+import {COUNTIES,PRICE_ID,UPFRONT_PRICE_ID,CANCEL_NOTICE_DAYS,noticeDeadline,cancellationEffectiveAt,normalizeApplication,normalizeHomeownerLead,sha256,stripeSignature,FOUNDING_TRIAL_END_UNIX} from '../lib/core.js';
 import {createHmac} from 'node:crypto';
 
 test('includes exactly all 32 counties without duplicate names',()=>{
@@ -78,8 +78,29 @@ test('PostgreSQL migration is four correctly dollar-quoted functions',async()=>{
  const {readFile}=await import('node:fs/promises');
  const sql=await readFile(new URL('../schema.sql',import.meta.url),'utf8');
  const delimiters=(sql.match(/\$\$/g)||[]).length;
- assert.equal(delimiters,8,'Expected four opening and four closing PostgreSQL dollar quotes');
+ assert.equal(delimiters,10,'Expected five opening and five closing PostgreSQL dollar quotes');
  assert(!/\bas \$\s*\n/.test(sql),'Malformed opening SQL quote');
  assert(!(/\bend; \$;/.test(sql)),'Malformed closing SQL quote');
- assert.equal((sql.match(/create or replace function public\.solar_/g)||[]).length,4);
+ assert.equal((sql.match(/create or replace function public\.solar_/g)||[]).length,5);
+});
+
+test('only homeowner sharing with an explicitly named installer can be submitted',()=>{
+ const sample={county:'Meath',name:'Home Owner',email:'h@example.ie',phone:'0870000000',eircode:'A82X123',
+  electricity:'5500 kWh/year',message:'Interested in 6 kWp panels',namedSponsor:'Solar Company',
+  sponsorId:'01234567-89ab-cdef-0123-456789abcdef',consent:true,turnstileToken:'verified'};
+ const valid=normalizeHomeownerLead(sample);
+ assert.equal(valid.named_sponsor,'Solar Company');
+ assert.equal(valid.county,'Meath');
+ for(const field of [{consent:false},{county:'Atlantis'},{namedSponsor:''},{sponsorId:'invalid'}, {turnstileToken:''}]){
+  assert.throws(()=>normalizeHomeownerLead({...sample,...field}));
+ }
+});
+test('lead SQL route only allows ACTIVE paid sponsor at the homeowner-named county',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const sql=await readFile(new URL('../schema.sql',import.meta.url),'utf8');
+ assert(sql.includes("s.status='active'")&&sql.includes("a.status='active'"));
+ assert(sql.includes('a.company=p_named_sponsor'));
+ assert(sql.includes('for share of s,a'));
+ assert(sql.includes('solar_submit_homeowner_lead'));
+ assert(sql.includes('sponsor_name_at_consent'));
 });
