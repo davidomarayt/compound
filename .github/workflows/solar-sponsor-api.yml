@@ -34,5 +34,5 @@ jobs:
           grep -Fq 'FOUNDING_TRIAL_END_UNIX = 1806537600' sponsor-api/lib/core.js
           grep -Fq 'UPFRONT_PRICE_ID' sponsor-api/api/checkout.js
           grep -Fq 'price_1UPQu52R63yYze0g7tXqWmi9' sponsor-api/lib/core.js
-          grep -Fq 'if p_kind=\x27upfront_paid\x27' sponsor-api/schema.sql
+          grep -Fq "p_kind='upfront_paid'" sponsor-api/schema.sql
           grep -Fq 'p_quantity integer' sponsor-api/schema.sql
