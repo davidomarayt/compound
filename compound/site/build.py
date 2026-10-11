@@ -1609,6 +1609,25 @@ def build_site(settings: Settings) -> dict:
         "description": "Ireland's new investment account: official rules, providers and calculator.",
         "image": "", "reading_minutes": 5, "date_label": pia_updated,
     })
+    # Standalone Insurance calculators are authored as rich source-backed pages,
+    # but they must appear in search alongside the original calculator catalogue.
+    insurance_calculator_search = [
+        ("health-insurance-cost-comparison-calculator", "Health Insurance Cost Comparison Calculator Ireland", "Compare two plan scenarios using premiums, inpatient costs and outpatient reimbursements."),
+        ("home-insurance-rebuild-cost-calculator", "Home Insurance Rebuild Cost Calculator Ireland", "Estimate rebuilding value and potential buildings underinsurance using an entered rate."),
+        ("critical-illness-cover-calculator", "Critical Illness Cover Calculator Ireland", "Estimate an illness-related financial contingency using household needs and savings."),
+        ("death-in-service-life-insurance-calculator", "Death-in-Service vs Life Insurance Calculator Ireland", "Compare employer life-cover multiples with family income and debt needs."),
+        ("insurance-premium-savings-calculator", "Insurance Premium Savings Calculator Ireland", "Explore premium savings across home, car, health and life policies."),
+    ]
+    available_page_slugs = {pg.slug for pg in pages}
+    for slug, tool_title, description in reversed(insurance_calculator_search):
+        if slug in available_page_slugs:
+            index.insert(0, {
+                "title": tool_title, "url": f"/{slug}/", "pillar": "Tools",
+                "date": date.today().isoformat(), "summary": description,
+                "tags": ["insurance", "calculator", "insurance tools", slug.replace("-", " ")],
+                "description": description, "image": "",
+                "reading_minutes": 5, "date_label": "Insurance calculator",
+            })
     # Only company profiles with substantive associated reports or editorial
     # coverage are surfaced to search; empty templates remain noindex.
     for company in registry_members:
