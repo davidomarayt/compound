@@ -414,36 +414,19 @@ jobs:
           grep -Fq 'https://compound.ie/insurance/' /tmp/sitemap.xml
           fetch https://compound.ie/search.json /tmp/compound-search.json
           grep -Fq '"/insurance/"' /tmp/compound-search.json
-          # Sponsorship-ready navigation and visually structured insurance guides.
-          grep -Fq 'class="ins-partner-strip"' /tmp/insurance-hub.html
-          grep -Fq 'href="/insurance-partnerships/"' /tmp/insurance-hub.html
+          # Reader-first insurance layout with illustrated, accessible guides.
           grep -Fq 'class="ins-guide ins-guide--life"' /tmp/insurance-hub.html
           grep -Fq 'class="ins-guide ins-guide--health"' /tmp/insurance-hub.html
           grep -Fq 'class="ins-guide-illustration"' /tmp/insurance-hub.html
           grep -Fq 'class="ins-guide-links"' /tmp/insurance-hub.html
           grep -Fq 'href="/critical-illness-cover-calculator/"' /tmp/insurance-hub.html
           grep -Fq 'data-ins-event="guide_open"' /tmp/insurance-hub.html
-          grep -Fq 'data-ins-event="partner_interest"' /tmp/insurance-hub.html
-          grep -Fq '.ins-partner-strip' /tmp/insurance-hub.css
           grep -Fq '.ins-guide-illustration' /tmp/insurance-hub.css
           grep -Fq 'compound_analytics_consent' /tmp/insurance-hub.js
-          fetch https://compound.ie/insurance-partnerships/ /tmp/insurance-partners.html
-          grep -Fq '<link rel="canonical" href="https://compound.ie/insurance-partnerships/">' /tmp/insurance-partners.html
-          grep -Fq 'Insurance Sponsorship' /tmp/insurance-partners.html || grep -Fq 'Insurance Advertising' /tmp/insurance-partners.html
-          grep -Fq 'class="ins-partner"' /tmp/insurance-partners.html
-          grep -Fq 'CATEGORY PARTNER' /tmp/insurance-partners.html
-          grep -Fq 'TOOL PARTNER' /tmp/insurance-partners.html
-          grep -Fq 'GUIDE PARTNER' /tmp/insurance-partners.html
-          grep -Fq '/static/insurance-partnerships.css?v=1' /tmp/insurance-partners.html
-          grep -Fq 'david@compound.ie' /tmp/insurance-partners.html
-          grep -Fq 'No rate card or guaranteed results' /tmp/insurance-partners.html
-          grep -Fq '<loc>https://compound.ie/insurance-partnerships/</loc>' /tmp/sitemap.xml
-          grep -Fq '"/insurance-partnerships/"' /tmp/compound-search.json
-          fetch https://compound.ie/static/insurance-partnerships.css /tmp/insurance-partners.css
-          grep -Fq '.ip-offers' /tmp/insurance-partners.css
-          fetch https://compound.ie/contact/ /tmp/compound-contact.html
-          grep -Fq 'href="/insurance-partnerships/"' /tmp/compound-contact.html
-          echo 'Insurance sponsor prospectus, independent placement policy and illustrated guide cards verified.'
+          ! grep -Fq '/insurance-partnerships/' /tmp/insurance-hub.html
+          ! grep -Fq '<loc>https://compound.ie/insurance-partnerships/</loc>' /tmp/sitemap.xml
+          ! grep -Fq '"/insurance-partnerships/"' /tmp/compound-search.json
+          echo 'Professional Insurance hub guide cards and independent calculator links verified.'
           echo 'Insurance hub live URL, metadata, internal links, assets and calculator verified.'
           # Five distinct indexable insurance calculator pages with substantive
           # source-backed guides, no quote lead capture and the site's AdSense loader.
