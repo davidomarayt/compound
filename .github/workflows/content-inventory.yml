@@ -37,4 +37,16 @@ jobs:
             exit 0
           fi
           git commit -m 'docs: refresh complete Compound content inventory'
-          git push origin HEAD:claude/clever-babbage-uibieq
+          # A content author may commit while this job is running. Rebase the
+          # generated docs on the newest publishing branch before pushing.
+          for attempt in 1 2 3 4 5; do
+            git fetch origin claude/clever-babbage-uibieq
+            git rebase origin/claude/clever-babbage-uibieq
+            if git push origin HEAD:claude/clever-babbage-uibieq; then
+              echo 'Content inventory committed'
+              exit 0
+            fi
+            sleep 3
+          done
+          echo 'Could not push content inventory after five attempts'
+          exit 1
