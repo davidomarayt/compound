@@ -16,70 +16,45 @@ title: "Home Insurance Rebuild Cost Calculator Ireland"
 <div class="it26-result-row"><span>Potential cover shortfall</span><strong data-i-result="gap">—</strong></div>
 <div class="it26-result-row"><span>Current cover ÷ modelled cost</span><strong data-i-result="percent">—</strong></div></div><div class="it26-meter" aria-hidden="true"><i data-i-progress></i></div><p class="it26-note" data-i-note>Planning illustration only.</p></section>
 </div>
-<div class="it26-explanation" markdown="1">
-
-## How much should you insure your house for in Ireland?
-
-Buildings insurance normally protects the cost of rebuilding an insured structure after an eligible event, subject to the insurer's terms. The sale price of a house can reflect land, location, scarcity and market sentiment; those are not the same as construction and reinstatement cost.
-
-The **Society of Chartered Surveyors Ireland (SCSI)** publishes a [House Rebuild Calculator and rate guide](https://scsi.ie/consumer/build/calculator/). Its 2025/26 guidance gives region-specific rates for standard estate-type homes, with important exclusions. The guide was published on 4 November 2025. The rates are not designed for every dwelling.
-
-### How the arithmetic works
-
-The starting point is total floor area across storeys multiplied by a rate per square metre that you have obtained from a suitable published source or professional estimate. You can add a separately assumed percentage for enhanced fixtures, plus separately estimated demolition or clearance expenses and outbuildings.
-
-**Illustration, not SCSI pricing:** At 145 m² and an assumed €2,400/m², the area-based component is €348,000. A 10% specification uplift adds €34,800. If there are €25,000 of **additional** clearance expenses and €5,000 of other buildings not included in the rate, the arithmetic total is €412,800. Compared with €320,000 of existing cover, the difference is €92,800.
-
-This is **not a valuation** and the illustrative rate must be replaced with an appropriate one before acting. Check that your chosen rate does not already include demolition, VAT, professional fees or other items you intend to add—**double counting would overstate the total**.
-
-### Important: SCSI limitations
-
-The SCSI guide explicitly states that its typical rebuilding rates relate to **speculatively built, estate-type homes**. For an individual rural one-off home, a period property, complex extensions, unusual ground conditions, high-specification architecture or a property requiring specialist materials, a chartered surveyor or professional rebuilding assessment may be more appropriate.
-
-For example, unusually deep foundations, drainage difficulties, significant retaining walls, heat pump or solar equipment, bespoke windows and difficult site access can all change the cost profile. This is one reason to avoid an unqualified online estimate for a bespoke house.
-
-### Why underinsurance matters
-
-If the appropriate sum insured is materially below actual rebuilding cost, an insurer's settlement may be reduced under **average clauses** or subject to other contractual limits. Even a partial claim may be affected where the policy contains an average provision. Ask your provider exactly how its policy treats underinsurance and whether index-linking applies.
-
-Review your rebuilding amount annually, after renovations and when construction costs change. A change to the **market price of your house** does not automatically tell you how the cost of rebuilding changed.
-
-### What about contents insurance?
-
-This is **buildings-cover planning only**. Furniture, appliances and other movable contents normally require separate cover. Do not add contents into a buildings sum insured without checking policy definitions. Similarly, landlord insurance, flood restrictions, subsidence, malicious damage and excesses are separate contract issues.
-
-### Next steps
-
-1. Check your policy's existing buildings sum insured and what it includes.
-2. Use the [SCSI House Rebuild Calculator](https://scsi.ie/consumer/build/calculator/) where it is suitable, or arrange a professional assessment.
-3. Adjust the inputs for genuine additional costs not contained in your rebuilding-rate source.
-4. Compare the result with existing cover and discuss discrepancies with your insurer or broker.
-5. Keep supporting calculations and valuations with your documents.
-
-## FAQ
-
-### Is rebuilding cost the same as a property's selling price?
-
-No. The sale price can include land and market demand, whereas buildings insurance focuses on rebuilding an insured structure.
-
-### Can I use SCSI rates for a rural one-off house?
-
-The SCSI standard guide says its figures are for estate-type properties. A professional assessment may be necessary for bespoke or one-off homes.
-
-### Does this calculator include contents?
-
-No. Only buildings and separately entered additions are represented.
-
-### Is the default €2,400/m² an official 2026 rate?
-
-No. It is an **illustrative placeholder** that must be replaced with an appropriate regional or professionally assessed rate.
-
-## Useful sources
-
-- [SCSI — House Rebuild Calculator and 2025/26 guidance](https://scsi.ie/consumer/build/calculator/)
-- [CCPC — Home insurance](https://www.ccpc.ie/manage-your-money/day-to-day-finances/insurance/home-insurance)
-- [Compound — Buying a Home in Ireland](https://compound.ie/wealth/buying-a-home-in-ireland/)
-
+<div class="it26-explanation">
+<h2 id="how-much-should-you-insure-your-house-for-in-ireland">How much should you insure your house for in Ireland?</h2>
+<p>Buildings insurance normally protects the cost of rebuilding an insured structure after an eligible event, subject to the insurer's terms. The sale price of a house can reflect land, location, scarcity and market sentiment; those are not the same as construction and reinstatement cost.</p>
+<p>The <strong>Society of Chartered Surveyors Ireland (SCSI)</strong> publishes a <a href="https://scsi.ie/consumer/build/calculator/" rel="noopener">House Rebuild Calculator and rate guide</a>. Its 2025/26 guidance gives region-specific rates for standard estate-type homes, with important exclusions. The guide was published on 4 November 2025. The rates are not designed for every dwelling.</p>
+<h3 id="how-the-arithmetic-works">How the arithmetic works</h3>
+<p>The starting point is total floor area across storeys multiplied by a rate per square metre that you have obtained from a suitable published source or professional estimate. You can add a separately assumed percentage for enhanced fixtures, plus separately estimated demolition or clearance expenses and outbuildings.</p>
+<p><strong>Illustration, not SCSI pricing:</strong> At 145 m² and an assumed €2,400/m², the area-based component is €348,000. A 10% specification uplift adds €34,800. If there are €25,000 of <strong>additional</strong> clearance expenses and €5,000 of other buildings not included in the rate, the arithmetic total is €412,800. Compared with €320,000 of existing cover, the difference is €92,800.</p>
+<p>This is <strong>not a valuation</strong> and the illustrative rate must be replaced with an appropriate one before acting. Check that your chosen rate does not already include demolition, VAT, professional fees or other items you intend to add—<strong>double counting would overstate the total</strong>.</p>
+<h3 id="important-scsi-limitations">Important: SCSI limitations</h3>
+<p>The SCSI guide explicitly states that its typical rebuilding rates relate to <strong>speculatively built, estate-type homes</strong>. For an individual rural one-off home, a period property, complex extensions, unusual ground conditions, high-specification architecture or a property requiring specialist materials, a chartered surveyor or professional rebuilding assessment may be more appropriate.</p>
+<p>For example, unusually deep foundations, drainage difficulties, significant retaining walls, heat pump or solar equipment, bespoke windows and difficult site access can all change the cost profile. This is one reason to avoid an unqualified online estimate for a bespoke house.</p>
+<h3 id="why-underinsurance-matters">Why underinsurance matters</h3>
+<p>If the appropriate sum insured is materially below actual rebuilding cost, an insurer's settlement may be reduced under <strong>average clauses</strong> or subject to other contractual limits. Even a partial claim may be affected where the policy contains an average provision. Ask your provider exactly how its policy treats underinsurance and whether index-linking applies.</p>
+<p>Review your rebuilding amount annually, after renovations and when construction costs change. A change to the <strong>market price of your house</strong> does not automatically tell you how the cost of rebuilding changed.</p>
+<h3 id="what-about-contents-insurance">What about contents insurance?</h3>
+<p>This is <strong>buildings-cover planning only</strong>. Furniture, appliances and other movable contents normally require separate cover. Do not add contents into a buildings sum insured without checking policy definitions. Similarly, landlord insurance, flood restrictions, subsidence, malicious damage and excesses are separate contract issues.</p>
+<h3 id="next-steps">Next steps</h3>
+<ol>
+<li>Check your policy's existing buildings sum insured and what it includes.</li>
+<li>Use the <a href="https://scsi.ie/consumer/build/calculator/" rel="noopener">SCSI House Rebuild Calculator</a> where it is suitable, or arrange a professional assessment.</li>
+<li>Adjust the inputs for genuine additional costs not contained in your rebuilding-rate source.</li>
+<li>Compare the result with existing cover and discuss discrepancies with your insurer or broker.</li>
+<li>Keep supporting calculations and valuations with your documents.</li>
+</ol>
+<h2 id="faq">FAQ</h2>
+<h3 id="is-rebuilding-cost-the-same-as-a-propertys-selling-price">Is rebuilding cost the same as a property's selling price?</h3>
+<p>No. The sale price can include land and market demand, whereas buildings insurance focuses on rebuilding an insured structure.</p>
+<h3 id="can-i-use-scsi-rates-for-a-rural-oneoff-house">Can I use SCSI rates for a rural one-off house?</h3>
+<p>The SCSI standard guide says its figures are for estate-type properties. A professional assessment may be necessary for bespoke or one-off homes.</p>
+<h3 id="does-this-calculator-include-contents">Does this calculator include contents?</h3>
+<p>No. Only buildings and separately entered additions are represented.</p>
+<h3 id="is-the-default-2400m-an-official-2026-rate">Is the default €2,400/m² an official 2026 rate?</h3>
+<p>No. It is an <strong>illustrative placeholder</strong> that must be replaced with an appropriate regional or professionally assessed rate.</p>
+<h2 id="useful-sources">Useful sources</h2>
+<ul>
+<li><a href="https://scsi.ie/consumer/build/calculator/" rel="noopener">SCSI — House Rebuild Calculator and 2025/26 guidance</a></li>
+<li><a href="https://www.ccpc.ie/manage-your-money/day-to-day-finances/insurance/home-insurance" rel="noopener">CCPC — Home insurance</a></li>
+<li><a href="https://compound.ie/wealth/buying-a-home-in-ireland/" rel="noopener">Compound — Buying a Home in Ireland</a></li>
+</ul>
 </div>
 <section class="it26-related"><h2>More insurance tools</h2><nav aria-label="Related insurance tools"><a href="/insurance/">Insurance hub ↗</a><a href="/health-insurance-cost-comparison-calculator/">Health Insurance Cost Comparison Calculator Ireland ↗</a><a href="/critical-illness-cover-calculator/">Critical Illness Cover Calculator Ireland ↗</a><a href="/death-in-service-life-insurance-calculator/">Death-in-Service vs Life Insurance Calculator Ireland ↗</a><a href="/insurance-premium-savings-calculator/">Insurance Premium Savings Calculator Ireland ↗</a></nav></section>
 </article>
