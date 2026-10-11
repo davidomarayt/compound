@@ -20,7 +20,7 @@ title: "Insurance Premium Savings Calculator Ireland"
 <div class="it26-result-row"><span>Alternative combined annual premiums</span><strong data-i-result="new">—</strong></div>
 <div class="it26-result-row"><span>Simple fee break-even period</span><strong data-i-result="breakEven">—</strong></div></div><p class="it26-note" data-i-note>Planning illustration only.</p></section>
 </div>
-<div class="it26-explanation">
+<div class="it26-explanation" markdown="1">
 
 ## How much can you save by switching insurance in Ireland?
 
