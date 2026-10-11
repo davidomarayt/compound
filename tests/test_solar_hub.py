@@ -47,3 +47,17 @@ def test_solar_canonical_routes_are_indexable_and_interlinked(settings):
         assert sitemap.count(f"<loc>https://example.test{url}</loc>") == 1
     search = json.loads((settings.public_dir / "search.json").read_text(encoding="utf-8"))
     assert urls.issubset({entry["url"] for entry in search})
+
+
+def test_solar_installer_conversion_is_private():
+    installer = (ROOT / "content/pages/solar-installers.md").read_text(encoding="utf-8")
+    comparison = (ROOT / "content/pages/solar-compare-quotes.md").read_text(encoding="utf-8")
+    js = (ROOT / "compound/site/static/solar-hub.js").read_text(encoding="utf-8")
+    assert installer.count('data-sol-check>') == 8
+    assert 'data-sol-check-progress' in installer
+    assert 'There is no active lead marketplace' in installer
+    assert 'mailto:david@compound.ie?subject=Compound%20Solar%20installer%20pilot' in installer
+    assert 'data-sq-print' in comparison
+    assert "compound_analytics_consent" in js and "==='granted'" in js
+    for event in ("quote_comparison_used", "quote_brief_copied", "seai_register_opened", "installer_checklist_completed"):
+        assert event in js

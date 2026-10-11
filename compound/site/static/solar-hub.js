@@ -2,6 +2,11 @@
 /* Compound Solar: client-only calculators; no inputs sent to a server. */
 (function () {
   "use strict";
+  /* Only consented GA4 event names are recorded. No amounts or form entries. */
+  function solarTrack(name){try{
+    if(localStorage.getItem('compound_analytics_consent')==='granted'&&typeof window.gtag==='function')window.gtag('event','solar_'+name);
+  }catch(_){}}
+  function solarTrackOnce(node,flag,name){if(!node.dataset[flag]){node.dataset[flag]='1';solarTrack(name);}}
   var money = new Intl.NumberFormat("en-IE",{style:"currency",currency:"EUR",maximumFractionDigits:0});
   var number = new Intl.NumberFormat("en-IE",{maximumFractionDigits:1});
   function clamp(n,low,high){return Number.isFinite(n)?Math.min(high,Math.max(low,n)):NaN;}
@@ -56,7 +61,11 @@
       else if(validQuotes.length>=2)msg+=" Gross €/kWp is a starting metric, not a quality ranking.";
       setText(root.querySelector("[data-sq-summary]"),msg);
     }
-    root.addEventListener("input",calcQuotes);root.addEventListener("change",calcQuotes);calcQuotes();
+    root.addEventListener("input",function(){solarTrackOnce(root,'solarUsed','quote_comparison_used');calcQuotes();});
+    root.addEventListener("change",calcQuotes);
+    var printer=root.querySelector('[data-sq-print]');
+    if(printer)printer.addEventListener('click',function(){solarTrack('quote_comparison_printed');window.print();});
+    calcQuotes();
   }
 
   var grants=document.querySelector("[data-solar-grants]");
@@ -77,7 +86,9 @@
         "No standard grant is modelled for these inputs. Check with SEAI, particularly for an enhanced scheme.";
       setText(grants.querySelector("[data-sg-msg]"),message);
     }
-    grants.addEventListener("input",calcGrants);grants.addEventListener("change",calcGrants);calcGrants();
+    grants.addEventListener("input",function(){solarTrackOnce(grants,'solarUsed','grant_checker_used');calcGrants();});
+    grants.addEventListener("change",function(){solarTrackOnce(grants,'solarUsed','grant_checker_used');calcGrants();});
+    calcGrants();
   }
   var sizing=document.querySelector("[data-solar-size]");
   if(sizing){
@@ -87,8 +98,23 @@
       setText(sizing.querySelector("[data-ss-size]"),Number.isFinite(estimate)?round(estimate)+" kWp":"—");
       setText(sizing.querySelector("[data-ss-explain]"),Number.isFinite(estimate)?"This produces roughly the same annual energy as you consume, not necessarily the most economical array.":"Enter positive household demand and generation assumptions.");
     }
-    sizing.addEventListener("input",calcSize);calcSize();
+    sizing.addEventListener("input",function(){solarTrackOnce(sizing,'solarUsed','size_estimator_used');calcSize();});calcSize();
   }
+  var checklist=document.querySelector('[data-solar-checklist]');
+  if(checklist){
+    var checks=Array.prototype.slice.call(checklist.querySelectorAll('[data-sol-check]'));
+    function updateChecks(){
+      var n=checks.filter(function(box){return box.checked;}).length;
+      setText(checklist.querySelector('[data-sol-check-count]'),n+' of '+checks.length+' checks complete');
+      var progress=checklist.querySelector('[data-sol-check-progress]');if(progress){progress.max=checks.length;progress.value=n;}
+      if(n===checks.length)solarTrackOnce(checklist,'solarCompleted','installer_checklist_completed');
+    }
+    checks.forEach(function(box){box.addEventListener('change',updateChecks);});
+    checklist.querySelector('[data-sol-check-reset]').addEventListener('click',function(){checks.forEach(function(b){b.checked=false;});checklist.dataset.solarCompleted='';updateChecks();});
+    updateChecks();
+  }
+  document.querySelectorAll('[data-sol-register]').forEach(function(a){a.addEventListener('click',function(){solarTrack('seai_register_opened');});});
+  document.querySelectorAll('[data-sol-partner-email]').forEach(function(a){a.addEventListener('click',function(){solarTrack('installer_pilot_contact');});});
   var county=document.querySelector("[data-solar-county]");
   if(county){var select=county.querySelector("[data-sc-county]");select.addEventListener("change",function(){
     setText(county.querySelector("[data-sc-message]"),select.value?"On SEAI's official register, select "+select.value+" from its county filter. Verify each current company record before requesting a quote.":"Select a county, then search SEAI's live company list.");
@@ -129,7 +155,7 @@
     brief.querySelector("[data-sb-copy]").addEventListener("click",function(){
       var out=bv("output"),status=brief.querySelector("[data-sb-copy-status]");
       if(navigator.clipboard&&navigator.clipboard.writeText){
-        navigator.clipboard.writeText(out.value).then(function(){setText(status,"Copied.");},function(){out.focus();out.select();setText(status,"Select and copy the text manually.");});
+        navigator.clipboard.writeText(out.value).then(function(){setText(status,"Copied.");solarTrack("quote_brief_copied");},function(){out.focus();out.select();setText(status,"Select and copy the text manually.");});
       }else{out.focus();out.select();setText(status,"Select and copy the text manually.");}
     });updateBrief();
   }

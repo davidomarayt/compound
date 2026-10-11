@@ -130,3 +130,30 @@
 @media(max-width:730px){.sol-shell{gap:39px;padding-top:0}.sol-hero{padding:27px 23px}.sol-hero-grid{grid-template-columns:1fr}.sol-hero h1{font-size:clamp(48px,12vw,69px)}.sol-roof-art{min-height:190px}.sol-art-roof{height:120px;margin-top:15px}.sol-art-sun{width:58px;height:58px}.sol-crumb{margin-bottom:24px}.sol-sectionhead{display:block}.sol-sectionhead>p{margin-top:14px}.sol-cardgrid-3{grid-template-columns:1fr}.sol-card{min-height:0;padding:22px}.sol-statband{grid-template-columns:1fr;gap:20px;padding:23px}.sol-statband-action{grid-column:auto}.sol-steps ol{grid-template-columns:1fr 1fr;gap:20px}.sol-bottomcta{display:block}.sol-bottomcta .sol-btn{margin-top:20px}.sol-utility{display:block}.sol-utility nav{gap:13px;margin-top:12px}.sol-subhero{padding:25px 22px}.sol-quotegrid,.sol-fields,.sol-article-grid{grid-template-columns:1fr}.sol-quote:last-child{grid-column:auto}.sol-toolwrap{padding:18px}.sol-results h2{font-size:29px}.sol-bar-row{grid-template-columns:70px 1fr auto}.sol-table-scroll th,.sol-table-scroll td{padding:11px 12px}}
 @media(max-width:420px){.sol-steps ol{grid-template-columns:1fr}.sol-btn{width:100%}.sol-actions{display:grid}.sol-statband strong{font-size:34px}.sol-roof-art{min-height:165px}}
 @media(prefers-reduced-motion:reduce){.sol-card{transition:none}}
+
+/* Solar installation verification and printable comparison */
+.sol-checkstatus{display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin:18px 0}
+.sol-checkstatus strong{font-size:13px;color:var(--sol-green)}
+.sol-checkstatus progress{accent-color:#295e49;flex:1;max-width:360px;min-width:150px;height:12px}
+.sol-checkgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.sol-checkgrid label{display:flex;gap:10px;align-items:start;border:1px solid var(--sol-line);background:#fffdf8;border-radius:6px;padding:15px;font-size:13px;line-height:1.7;color:var(--sol-muted);cursor:pointer}
+.sol-checkgrid label:has(input:checked){background:#e8f0e7;border-color:#9cbea5}
+.sol-checkgrid input{margin-top:5px;width:17px;height:17px;accent-color:#295e49}
+.sol-checkgrid span strong{display:block;color:var(--sol-ink)}
+.sol-reset{background:transparent;border:0;padding:4px 0;cursor:pointer;color:#315a44;text-decoration:underline;text-underline-offset:3px;font-size:13px;justify-self:start}
+.sol-printactions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:22px}
+.sol-printactions small{font-size:12px;color:var(--sol-muted);max-width:380px;line-height:1.6}
+@media(max-width:620px){.sol-checkgrid{grid-template-columns:1fr}}
+@media print{
+  .masthead-note,.site-header,.site-footer,.privacy-banner,.skip-link{display:none!important}
+  .site-main{max-width:none!important;margin:0!important;padding:0!important}
+  .sol-shell{display:block!important;padding:0!important;color:#111!important}
+  .sol-subpage>:not([data-solar-quotes]){display:none!important}
+  [data-solar-quotes]{border:0!important;box-shadow:none!important;padding:0!important;background:#fff!important}
+  [data-solar-quotes]>:not(.sol-results):not(.sol-method){display:none!important}
+  [data-solar-quotes] .sol-printactions{display:none!important}
+  [data-solar-quotes] .sol-table-scroll{overflow:visible!important}
+  [data-solar-quotes] table{width:100%!important;font-size:10px}
+  [data-solar-quotes] .sol-results{break-inside:avoid}
+  [data-solar-quotes] .sol-method{margin-top:20px!important;color:#444!important}
+}
