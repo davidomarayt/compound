@@ -1,0 +1,31 @@
+name: Solar sponsorship API
+on:
+  push:
+    branches: ["claude/clever-babbage-uibieq"]
+    paths:
+      - "sponsor-api/**"
+      - ".github/workflows/solar-sponsor-api.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Syntax check API and library
+        run: |
+          set -e
+          for f in sponsor-api/api/*.js sponsor-api/lib/*.js sponsor-api/tests/*.js; do node --check "$f"; done
+      - name: Run sponsorship integration foundation tests
+        working-directory: sponsor-api
+        run: npm test
+      - name: Verify Stripe placeholders are never used for public checkout
+        run: |
+          grep -Fq "price_1UPQ3s2R63yYze0g066vmFgW" sponsor-api/lib/core.js
+          grep -Fq "solar_approve_application" sponsor-api/schema.sql
+          grep -Fq "solar_apply_billing_event" sponsor-api/schema.sql
+          grep -Fq "stripeSignature" sponsor-api/api/webhook.js
