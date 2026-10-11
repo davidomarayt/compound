@@ -23,6 +23,9 @@ ROUTES = [
     "/solar/costs/",
     "/solar/installers/",
     "/solar/get-quotes/",
+    "/solar/batteries/",
+    "/solar/export-rates/",
+    "/solar/equipment/",
     "/solar-payback-calculator/",
     "/solar-ev-battery-optimiser/",
     "/wealth/solar-panels-ireland/",
@@ -137,9 +140,16 @@ def main() -> None:
                                     "/solar/costs/": "[data-ss-size]",
                                     "/solar/installers/": "[data-sol-check-count]",
                                     "/solar/get-quotes/": "[data-sb-output]",
+                                    "/solar/batteries/": "[data-bat-out=annual]",
+                                    "/solar/export-rates/": "[data-ex-out=difference]",
+                                    "/solar/equipment/": "[data-eq-out=kwp]",
                                 }.get(path)
                                 if selector:
                                     page.wait_for_selector(selector, timeout=5000)
+                                    if path in ("/solar/batteries/", "/solar/export-rates/", "/solar/equipment/"):
+                                        tool_result = page.locator(selector).inner_text()
+                                        if not tool_result or tool_result.strip() == "—":
+                                            failures.append(f"{width}px {path}: calculator did not populate")
                                     if path == "/solar/get-quotes/":
                                         output = page.locator("[data-sb-output]").input_value()
                                         if "itemised domestic solar PV quotation" not in output:

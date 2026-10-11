@@ -48,7 +48,8 @@ jobs:
         run: |
           set -euo pipefail
           node --check compound/site/static/solar-hub.js
-          for path in solar solar/compare-quotes solar/grants solar/costs solar/installers solar/get-quotes; do
+          node --check compound/site/static/solar-research.js
+          for path in solar solar/compare-quotes solar/grants solar/costs solar/installers solar/get-quotes solar/batteries solar/export-rates solar/equipment; do
             test -s "public/$path/index.html"
             grep -q 'rel="canonical"' "public/$path/index.html"
             grep -q 'solar-hub.css' "public/$path/index.html"
@@ -103,6 +104,11 @@ jobs:
           grep -Fq '/solar/compare-quotes/' /tmp/solar-solar.html
           grep -Fq 'data-solar-quotes' /tmp/solar-solar-compare-quotes.html
           grep -Fq 'data-solar-grants' /tmp/solar-solar-grants.html
+          grep -Fq 'data-solar-battery' /tmp/solar-solar-batteries.html
+          grep -Fq 'data-solar-export' /tmp/solar-solar-export-rates.html
+          grep -Fq 'data-solar-equipment' /tmp/solar-solar-equipment.html
+          fetch https://compound.ie/static/solar-research.js /tmp/solar-research.js
+          grep -Fq 'data-solar-battery' /tmp/solar-research.js
           grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/solar-solar.html
           fetch https://compound.ie/static/solar-hub.js /tmp/solar-hub.js
           grep -Fq 'data-solar-quotes' /tmp/solar-hub.js

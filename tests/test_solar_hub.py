@@ -13,6 +13,9 @@ SOLAR_PAGES = {
     "solar-costs": "/solar/costs/",
     "solar-installers": "/solar/installers/",
     "solar-get-quotes": "/solar/get-quotes/",
+    "solar-batteries": "/solar/batteries/",
+    "solar-export-rates": "/solar/export-rates/",
+    "solar-equipment": "/solar/equipment/",
 }
 
 
@@ -30,9 +33,10 @@ def test_solar_canonical_routes_are_indexable_and_interlinked(settings):
         assert 'name="description"' in page
         assert 'solar-hub.css' in page
         assert 'solar-hub.js' in page
+        assert 'solar-research.js' in page
         assert 'application/ld+json' in page
         assert 'pagead2.googlesyndication.com' not in page  # fixture has no AdSense client
-    assert len(urls) == 6
+    assert len(urls) == 9
     hub = (settings.public_dir / "solar" / "index.html").read_text(encoding="utf-8")
     for url in SOLAR_PAGES.values():
         if url != "/solar/":
@@ -92,6 +96,22 @@ def test_mobile_browser_audit_covers_every_solar_route():
     assert "overflow-wrap:anywhere" in css
     assert "solar-hub.css?v=4" in template
     assert "solar-hub.js?v=3" in template
+    assert "solar-research.js?v=1" in template
+    assert "node --check compound/site/static/solar-research.js" in workflow
     assert 'brief.querySelector("[data-sb-output]")' in (ROOT / "compound/site/static/solar-hub.js").read_text(encoding="utf-8")
     for route in ("/solar-payback-calculator/", "/solar-ev-battery-optimiser/", "/wealth/solar-panels-ireland/", "/wealth/solar-panels-vs-battery-ireland/"):
         assert f'"{route}"' in script
+
+def test_solar_research_calculators_and_sources():
+    battery = (ROOT / "content/pages/solar-batteries.md").read_text(encoding="utf-8")
+    export = (ROOT / "content/pages/solar-export-rates.md").read_text(encoding="utf-8")
+    equipment = (ROOT / "content/pages/solar-equipment.md").read_text(encoding="utf-8")
+    js = (ROOT / "compound/site/static/solar-research.js").read_text(encoding="utf-8")
+    assert "data-solar-battery" in battery and "round-trip efficiency" in battery.lower()
+    assert "data-solar-export" in export and "standing charge" in export.lower()
+    assert "data-solar-equipment" in equipment and "nameplate" in equipment.lower()
+    assert "data-bat-out" in js and "data-ex-out" in js and "data-eq-out" in js
+    assert "Number.isFinite" in js
+    assert "document.querySelector(\"[data-solar-battery]\")" in js
+    for url in ("/solar/batteries/", "/solar/export-rates/", "/solar/equipment/"):
+        assert url in (ROOT / "content/pages/solar.md").read_text(encoding="utf-8")
