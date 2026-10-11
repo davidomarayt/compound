@@ -158,3 +158,15 @@
 @media(max-width:800px){.wealth-v2-hero,.wealth-v2-editorial-grid{grid-template-columns:1fr}.wealth-v2-hero-copy{min-height:auto}.wealth-v2-hero-feature{min-height:350px}.wealth-v2-feature-copy{margin:30px 0}.wealth-v2-platform-grid{grid-template-columns:1fr 1fr}.wealth-v2-platform-card{min-height:290px}.wealth-v2-section-head{align-items:start;flex-direction:column}.wealth-v2-section-head>p{max-width:68ch}.wealth-v2-finder-intro{align-items:start;flex-direction:column}}
 @media(max-width:600px){.wealth-hub-v2{gap:44px}.wealth-v2-hero{gap:10px;margin-top:10px}.wealth-v2-hero-copy{padding:38px 25px}.wealth-v2-hero-copy h1{font-size:clamp(46px,10.8vw,66px)}.wealth-v2-hero-feature{min-height:365px;padding:28px 24px}.wealth-v2-feature-copy h2{font-size:50px}.wealth-v2-platform-grid,.wealth-v2-finder-results{grid-template-columns:1fr}.wealth-v2-platform-card{min-height:220px}.wealth-v2-tile-icon{margin:0;position:absolute;right:25px;top:28px}.wealth-v2-platform-card h3{margin-top:42px}.wealth-v2-finder{padding:26px 20px}.wealth-v2-editorial-feature .card-image img{height:220px}.wealth-v2-editorial-reads{padding:14px 22px}.wealth-hub-v2 .wealth-latest .section-heading{align-items:start;flex-direction:column}.wealth-v2-ad{margin-top:-10px}}
 @media(prefers-reduced-motion:reduce){.wealth-v2-platform-card{transition:none}.wealth-v2-platform-card:hover{transform:none}}
+
+
+/* Link the dedicated insurance research/tools hub from Wealth without disrupting the six existing categories. */
+.wealth-v2-insurance{display:grid;grid-template-columns:minmax(0,1fr) minmax(285px,.8fr);align-items:center;gap:30px;background:#ede5e8;border:1px solid #d8c9d1;border-radius:7px;padding:clamp(26px,3.5vw,48px)}
+.wealth-v2-insurance .eyebrow{color:#785065;margin-bottom:9px}
+.wealth-v2-insurance h2{font-size:clamp(35px,4vw,51px);margin-bottom:15px}
+.wealth-v2-insurance p:not(.eyebrow){font-size:14px;max-width:56ch;line-height:1.75;color:#655660}
+.wealth-v2-insurance-links{display:grid;gap:0;border-top:1px solid #ccb9c3}
+.wealth-v2-insurance-links a{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid #ccb9c3;color:#4f3847;font-size:13px}
+.wealth-v2-insurance-links a:first-child{font-size:15px}
+.wealth-v2-insurance-links a:hover{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:700px){.wealth-v2-insurance{grid-template-columns:1fr}}
