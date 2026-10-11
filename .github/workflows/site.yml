@@ -448,15 +448,15 @@ jobs:
           for slug in slugs:
               html = Path(f"/tmp/{slug}.html").read_text(encoding="utf-8")
               match = re.search(
-                  r'<div class="it26-explanation">(.*?)</div>\\s*<section class="it26-related"',
+                  r'<div class="it26-explanation">(.*?)</div>\s*<section class="it26-related"',
                   html, re.DOTALL,
               )
               assert match, f"{slug}: no independent formatted explanation section"
               section = match.group(1)
-              assert len(re.findall(r"<h2\\b", section)) >= 2, f"{slug}: guide headings missing"
-              assert len(re.findall(r"<h3\\b", section)) >= 3, f"{slug}: subsection headings missing"
-              assert len(re.findall(r"<p\\b", section)) >= 5, f"{slug}: paragraphs missing"
-              assert len(re.findall(r"<a\\b", section)) >= 2, f"{slug}: reference links missing"
+              assert len(re.findall(r"<h2\b", section)) >= 2, f"{slug}: guide headings missing"
+              assert len(re.findall(r"<h3\b", section)) >= 3, f"{slug}: subsection headings missing"
+              assert len(re.findall(r"<p\b", section)) >= 5, f"{slug}: paragraphs missing"
+              assert len(re.findall(r"<a\b", section)) >= 2, f"{slug}: reference links missing"
               assert not any(s in section for s in ("## ", "**", "](")), (
                   f"{slug}: raw Markdown leaked into the visible guide"
               )
