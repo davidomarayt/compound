@@ -7,6 +7,6 @@ Email: [david@compound.ie](mailto:david@compound.ie)
 
 **Privacy requests** (access, correction, deletion of any personal data we hold): the same address. See the [privacy policy](/privacy/) for what we hold, which is very little.
 
-**Advertising, partnerships and press**: the same address. We do not publish sponsored content or accept payment for coverage.
+**Advertising, partnerships and press**: the same address. Read about [clearly labelled Insurance category sponsorship opportunities](/insurance-partnerships/). We do not sell sponsored editorial articles or accept payment for favourable coverage.
 
 We aim to reply within a few days.
