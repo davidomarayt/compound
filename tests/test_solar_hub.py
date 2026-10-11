@@ -61,3 +61,17 @@ def test_solar_installer_conversion_is_private():
     assert "compound_analytics_consent" in js and "==='granted'" in js
     for event in ("quote_comparison_used", "quote_brief_copied", "seai_register_opened", "installer_checklist_completed"):
         assert event in js
+
+
+def test_solar_quote_mobile_containment_rules():
+    css = (ROOT / "compound/site/static/solar-hub.css").read_text(encoding="utf-8")
+    quote = (ROOT / "content/pages/solar-compare-quotes.md").read_text(encoding="utf-8")
+    page_template = (ROOT / "compound/site/templates/page.html").read_text(encoding="utf-8")
+    assert "grid-template-columns:minmax(0,1fr)" in css
+    assert ".sol-shell > *," in css
+    assert ".sol-results,.sol-table-scroll" in css
+    assert "overflow-x:auto" in css
+    assert "grid-template-columns:minmax(0,1fr)" in css.split("@media screen and (max-width:730px)")[1]
+    assert "sol-scroll-hint" in quote
+    assert 'aria-label="Solar quote comparison table;' in quote
+    assert "/static/solar-hub.css?v=3" in page_template
