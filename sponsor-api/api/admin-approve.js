@@ -11,8 +11,15 @@ export async function POST(request){
   if(!app?.email)throw new Error('Approval returned no application');
   const checkout=process.env.API_PUBLIC_URL.replace(/\/$/,'')+'/api/checkout?token='+encodeURIComponent(token);
   // If sending fails, preserve reservation and return an error for manual investigation.
-  await sendEmail({to:app.email,subject:'Compound Solar — your sponsorship counties are approved',
-    html:'<p>Hello '+htmlSafe(app.contact)+',</p><p>Your Compound Solar county application has been approved for: <b>'+app.requested_counties.map(htmlSafe).join(', ')+'</b>.</p><p>Founding offer: the rest of 2026 is free. The first paid period, 1 January to 31 March 2027, costs €'+(app.requested_counties.length*750)+' total for your selected counties, before applicable VAT. Your first scheduled charge is 1 January 2027; the quarterly subscription renews automatically on 1 April 2027 and every three months thereafter, unless cancelled under the agreed terms.</p><p><a href="'+checkout+'">Complete secure Stripe subscription checkout</a></p><p>The private checkout invitation expires after 48 hours. County exclusivity can begin during the complimentary 2026 period after Stripe has collected your payment method and Compound has verified and activated your sponsorship. The first scheduled charge is 1 January 2027. The initial January–March 2027 period is a three-month paid commitment under the agreed terms. No minimum lead volume is guaranteed.</p>'});
+  await sendEmail({to:app.email,subject:'Compound Solar — founding county sponsorship approved',
+    html:'<p>Hello '+htmlSafe(app.contact)+',</p>'+
+      '<p>We have verified and approved your requested solar sponsorship counties: <b>'+app.requested_counties.map(htmlSafe).join(', ')+'</b>.</p>'+
+      '<p><b>Payment due now at checkout:</b> €'+(app.requested_counties.length*750)+
+      ' plus applicable VAT. This prepays the January–March 2027 quarter; the rest of 2026 is included free once sponsorship activates.</p>'+
+      '<p><b>Next automatic charge:</b> 1 April 2027 for April–June, then every three months.</p>'+
+      '<p><b>Cancellation:</b> 30 days written notice before renewal; for 1 April, by 1 March 2027. The initial paid Jan–Mar term remains committed, subject to applicable refund rights and agreed service delivery.</p>'+
+      '<p><a href="'+checkout+'">Review terms and pay securely with Stripe</a></p>'+
+      '<p>Invitation expires after 48 hours. No guaranteed enquiry volume. We do not charge until the sponsor matching service and company verification requirements are met.</p>'});
   return json({ok:true,applicationId:app.id,expires,invitationSent:true});
  }catch(error){
   if(/County unavailable|not pending|not found/.test(error.message))return err(error.message,409);
