@@ -1,0 +1,53 @@
+/* Compound Insurance tool collection. Isolated from calculators elsewhere. */
+.it26{max-width:1140px;margin:15px auto 0;display:grid;gap:42px}
+.it26 *{box-sizing:border-box}
+.it26 a:focus-visible,.it26 input:focus-visible,.it26 button:focus-visible{outline:3px solid #b26e4f;outline-offset:3px}
+.it26-head{background:#f0e8e9;border:1px solid #ddd2d5;padding:clamp(25px,4vw,52px);border-radius:7px}
+.it26-crumb{font-size:12px;color:#6d5061;display:flex;gap:9px;flex-wrap:wrap;margin-bottom:26px}
+.it26-crumb a{text-decoration:underline;text-underline-offset:4px}
+.it26-head .eyebrow{color:#75556b;font-size:11px}
+.it26-head h1{font-size:clamp(38px,5vw,67px);max-width:18ch;line-height:1.02;margin:12px 0 20px}
+.it26-lede{font-size:17px;line-height:1.72;max-width:74ch;color:#584f56}
+.it26-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.it26-pills span{font-size:11px;padding:7px 11px;background:#fffaf8;border:1px solid #ddd2d5;border-radius:22px;color:#69525f}
+.it26-workspace{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(285px,.94fr);gap:22px;align-items:start}
+.it26-form,.it26-result{background:#fffdf9;border:1px solid #ded4d8;border-radius:7px;padding:clamp(22px,3vw,34px)}
+.it26-form h2,.it26-result h2{font-size:31px;margin:7px 0 13px}
+.it26-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:22px 0}
+.it26-field{font-size:12px;font-weight:750;line-height:1.45;color:#4f3e48}
+.it26-field input{display:block;width:100%;min-width:0;padding:12px 13px;border:1px solid #c2b2bc;background:white;color:#33252e;font-size:16px;font-weight:700;margin:7px 0 4px;border-radius:5px}
+.it26-field small{display:block;color:#796d73;font-weight:400;line-height:1.55;font-size:11px}
+.it26-form>p{font-size:13px;line-height:1.75;color:#6d5d68}
+.it26-note{font-size:12px;line-height:1.65;color:#665762;margin-top:16px}
+.it26-result{position:sticky;top:18px;background:#f9f4f4}
+.it26-result .primary{padding:14px 0 17px;border-bottom:1px solid #d6c6d0}
+.it26-result .primary>span{display:block;color:#715265;font-size:12px;line-height:1.6}
+.it26-result .primary>strong{display:block;font-family:var(--serif);font-size:clamp(29px,3.5vw,48px);line-height:1.18;letter-spacing:-.03em;color:#643d51;margin-top:5px}
+.it26-result-list{display:grid;gap:0}
+.it26-result-row{display:flex;justify-content:space-between;align-items:baseline;gap:14px;border-bottom:1px solid #e2d9de;padding:13px 0;font-size:12px;color:#534b51}
+.it26-result-row strong{font-size:16px;color:#3b2f37;text-align:right;font-variant-numeric:tabular-nums}
+.it26-meter{height:10px;border-radius:100px;background:#e6dbe0;margin-top:16px;overflow:hidden}
+.it26-meter i{display:block;width:0%;height:100%;background:#728d80;transition:width .2s}
+.it26-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.it26-actions button,.it26-back{display:inline-flex;align-items:center;background:#3f303b;color:#fff;padding:11px 15px;border-radius:5px;font-size:12px;font-weight:750;border:0;cursor:pointer}
+.it26-actions button:last-child{background:#ede4e9;color:#493545}
+.it26-explanation{max-width:960px;margin:0 auto;width:100%}
+.it26-explanation h2{font-size:clamp(29px,3vw,42px);margin:33px 0 15px}
+.it26-explanation h3{font-size:clamp(23px,2.5vw,31px);margin:25px 0 12px}
+.it26-explanation p,.it26-explanation li{line-height:1.8;color:#4c4449;font-size:16px}
+.it26-explanation p{margin:11px 0 18px}
+.it26-explanation ul,.it26-explanation ol{padding-left:24px;margin:15px 0 24px}
+.it26-explanation li{margin:8px 0}
+.it26-explanation a{text-decoration:underline;text-underline-offset:3px;color:#704759}
+.it26-explanation table{width:100%;border-collapse:collapse;margin:16px 0}
+.it26-explanation th,.it26-explanation td{text-align:left;padding:12px 10px;border-bottom:1px solid #ddd4d9;font-size:13px}
+.it26-explanation th{font-weight:750}
+.it26-related{padding:24px;border-top:1px solid #ded6da}
+.it26-related h2{font-size:27px;margin-bottom:16px}
+.it26-related nav{display:flex;flex-wrap:wrap;gap:11px}
+.it26-related a{padding:10px 13px;background:#f2e9ed;border:1px solid #e2d4dc;border-radius:5px;font-size:12px}
+.it26-trust-note{border-left:4px solid #79576b;background:#f2e9ee;border-radius:0 5px 5px 0;padding:15px 20px;color:#544b50;font-size:13px;line-height:1.7}
+.it26-status{font-size:11px;color:#796b74}
+@media(max-width:850px){.it26-workspace{grid-template-columns:1fr}.it26-result{position:static}}
+@media(max-width:540px){.it26{gap:29px}.it26-fields{grid-template-columns:1fr}.it26-head{padding:25px 19px}.it26-result,.it26-form{padding:20px}.it26-result .primary>strong{font-size:39px}}
+@media(prefers-reduced-motion:reduce){.it26-meter i{transition:none}}
