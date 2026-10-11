@@ -1556,8 +1556,7 @@ def build_site(settings: Settings) -> dict:
             "description": "Free Irish insurance tools and independent life, mortgage protection, income and health insurance guides.",
             "image": "", "reading_minutes": 5, "date_label": "Insurance hub",
         })
-    if any(pg.slug == "insurance-partnerships" for pg in pages):
-        index.insert(0, {
+    index.insert(0, {
             "title": "Insurance Advertising & Sponsorship Partnerships Ireland",
             "url": "/insurance-partnerships/", "pillar": "Partnerships",
             "date": date.today().isoformat(),
