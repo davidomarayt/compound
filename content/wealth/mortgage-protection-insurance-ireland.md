@@ -6,11 +6,11 @@ pillar: wealth
 draft: false
 publication_status: published
 date: 2026-10-09
-reviewed: 2026-10-09
+reviewed: 2026-10-11
 approved_by: "Explicit evergreen publish instruction — 9 October 2026"
-summary: "Mortgage protection insurance in Ireland explained: legal requirements, realistic cost comparisons, provider features, joint versus dual life, switching, exclusions and 2026 cancer-survivor protections."
-meta_description: "Mortgage protection Ireland 2026: costs, insurer comparisons, joint vs dual life, legal exemptions, switching, exclusions and how to find cheaper cover."
-tags: [mortgage-protection, mortgage-protection-insurance, life-insurance, first-time-buyer, mortgage, insurance, mortgage-switching, cancer-survivors, ireland]
+summary: "Mortgage protection Ireland: 2026 premium examples, interactive savings calculator, mortgage-cover chart, insurer comparisons and new cancer survivor protections."
+meta_description: "Mortgage protection Ireland 2026: price examples by age, savings calculator, insurers compared, switching, and the October cancer-survivor law."
+tags: [mortgage-protection, mortgage-protection-insurance, life-insurance, first-time-buyer, mortgage, insurance, mortgage-switching, cancer-survivors, right-to-be-forgotten, ireland]
 hero_image_url: "https://images.pexels.com/photos/34135038/pexels-photo-34135038.jpeg?auto=compress&cs=tinysrgb&w=1600"
 hero_image_alt: "House keys resting on real-estate documents next to miniature houses on a desk, representing mortgage protection decisions."
 hero_image_credit: "Jakub Zerdzicki on Pexels"
@@ -31,6 +31,8 @@ sources:
   url: https://production.lawsociety.ie/gazette/top-stories/2026/august/date-set-for-right-to-be-forgotten-law/
 - title: "Department of Finance: Right to be Forgotten — remission period and €650,000 limit."
   url: https://www.gov.ie/en/department-of-finance/press-releases/t%C3%A1naiste-and-minister-troy-provide-update-on-right-to-be-forgotten-legislation/
+- title: "MyLife: April 2026 indicative single-life examples for ages 30, 35 and 40 (commercial broker rates, not guaranteed quotes)."
+  url: https://www.mylife.ie/blog/mortgage-protection-cost-ireland
 - title: "Irish Life: Mortgage Protection — cover, indicative starting price and levy."
   url: https://www.irishlife.ie/life-insurance/mortgage-protection/
 - title: "Zurich Ireland: Mortgage Protection policy options and dual-life cover."
@@ -72,7 +74,7 @@ This guide explains what you are legally required to have, how premiums work, wh
 <a href="#faq">FAQs</a>
 </nav>
 
-<p><strong>Information checked: 9 October 2026.</strong> Premium examples below are arithmetic illustrations, not insurer quotations. This article is independent consumer information, not a personalised insurance recommendation. Check terms, current prices and medical underwriting with the insurer or a regulated intermediary.</p>
+<p><strong>Information checked: 11 October 2026.</strong> Premium examples below are arithmetic illustrations, not insurer quotations. This article is independent consumer information, not a personalised insurance recommendation. Check terms, current prices and medical underwriting with the insurer or a regulated intermediary.</p>
 
 <h2 id="at-a-glance">Mortgage protection Ireland 2026: at a glance</h2>
 
@@ -157,6 +159,37 @@ These figures show the **total paid** if the monthly premium remains unchanged f
 
 But don't compare price in isolation: a €20 policy that protects **two lives independently** may be better value than a €19 policy that terminates on the first claim, depending on the household's needs and actual terms.
 
+<section class="mp26" id="mp26-savings" aria-labelledby="mp26-savings-title">
+<p class="mp26-kicker">INTERACTIVE / COST COMPARISON</p>
+<h3 id="mp26-savings-title">How much does €10 a month really matter?</h3>
+<p>Compare two <strong>like-for-like accepted monthly premiums</strong> over the same term. The calculator only performs arithmetic; it does not obtain insurance prices or determine eligibility.</p>
+<div class="mp26-field-grid">
+<label for="mp26-current">Current quote (€ / month)<input id="mp26-current" type="number" min="0" max="10000" step="0.5" value="35" inputmode="decimal"></label>
+<label for="mp26-alternative">Alternative quote (€ / month)<input id="mp26-alternative" type="number" min="0" max="10000" step="0.5" value="25" inputmode="decimal"></label>
+<label for="mp26-years">Cover term (years)<input id="mp26-years" type="number" min="1" max="60" step="1" value="30" inputmode="numeric"></label>
+</div>
+<div class="mp26-result"><div><span id="mp26-direction">Less paid over the selected term</span><strong id="mp26-difference">€3,600</strong></div><output id="mp26-annual" aria-live="polite">€120 less per year</output></div>
+<div class="mp26-bars" role="group" aria-label="Total premiums under both illustrative monthly amounts">
+<div><div class="mp26-bar-label"><span>Current premium total</span><strong id="mp26-total-a">€12,600</strong></div><div class="mp26-track"><div class="mp26-fill" id="mp26-bar-a" style="width:100%"></div></div></div>
+<div><div class="mp26-bar-label"><span>Alternative premium total</span><strong id="mp26-total-b">€9,000</strong></div><div class="mp26-track"><div class="mp26-fill mp26-alt" id="mp26-bar-b" style="width:71.43%"></div></div></div>
+</div>
+<p class="mp26-note"><strong>Important:</strong> Assumes unchanged monthly premiums for the selected term. Excludes inflation, fees not included in the premium, early cancellation and investment returns. Two quotes are only comparable if cover amount, start date, term, benefits, payout structure and underwriting are equivalent. Never cancel accepted cover until a replacement is in force and meets lender requirements.</p>
+</section>
+
+### How much does mortgage protection cost by age in 2026?
+
+These <strong>commercial broker illustrations</strong> give a sense of possible starting prices, not a verified or comparable market ranking. Each example has a different mortgage amount and term, so differences <strong>cannot be attributed to age alone</strong>.
+
+<div class="cs-table-wrap" tabindex="0" role="region" aria-label="Indicative mortgage protection premiums in 2026">
+<table><thead><tr><th>Applicant profile</th><th>Sum insured / term</th><th>Indicative premium</th></tr></thead>
+<tbody>
+<tr><th scope="row">Age 30, non-smoker</th><td>€250,000 / 25 years</td><td>From €18/month</td></tr>
+<tr><th scope="row">Age 35, non-smoker</th><td>€350,000 / 30 years</td><td>From €28/month</td></tr>
+<tr><th scope="row">Age 40, non-smoker</th><td>€450,000 / 25 years</td><td>From €52/month</td></tr>
+</tbody></table></div>
+
+Source: [MyLife, April 2026, published indicative examples for single-life non-smoker cover](https://www.mylife.ie/blog/mortgage-protection-cost-ireland). MyLife is a commercial broker; these are not underwritten quotations, they may not represent the whole market and exact terms must be checked. **Ages 25 and 50 do not have meaningful universal prices** either: compare several personalised quotes using your own loan balance, term, health and smoker status.
+
 ### Worked example: comparing two like-for-like offers
 
 Imagine a couple needing €300,000 of decreasing-term cover for 30 years. Suppose two insurers offer the **same accepted coverage structure, equivalent benefits and the same start date**, but one final quote is €19 a month and the other is €27.
@@ -191,6 +224,25 @@ Here is an **editorial comparison of publicly described product features**, not 
 Buying through a **regulated broker** may help you compare several insurers and navigate medical underwriting. Ask whether the broker is tied or multi-agency, what providers they compare, whether fees apply and how commission is paid. Buying directly can also be appropriate if you understand the policy terms. The cheapest advertised online starting rate is not necessarily the cheapest accepted policy for you.
 
 <h2 id="types">Reducing-term versus level-term mortgage protection</h2>
+
+<figure class="mp26 mp26-figure" aria-labelledby="mp26-figure-title">
+<p class="mp26-kicker">ILLUSTRATIVE CHART / €300,000 REPAYMENT MORTGAGE</p>
+<h3 id="mp26-figure-title">The mortgage shrinks. Level-term cover does not.</h3>
+<p>Example: €300,000 borrowed for 30 years at a constant 3.5% interest rate, with standard monthly repayments and no overpayments.</p>
+<svg viewBox="0 0 650 305" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="mp26-chart-title mp26-chart-desc">
+<title id="mp26-chart-title">Mortgage repayment balance versus level-term insurance amount over thirty years</title>
+<desc id="mp26-chart-desc">Mortgage debt falls from €300,000 to zero over thirty years in this model, while the example level-term life cover remains €300,000.</desc>
+<line x1="70" x2="610" y1="60" y2="60" class="mp26-svg-grid"/><line x1="70" x2="610" y1="127" y2="127" class="mp26-svg-grid"/><line x1="70" x2="610" y1="193" y2="193" class="mp26-svg-grid"/><line x1="70" x2="610" y1="260" y2="260" class="mp26-svg-grid"/>
+<text x="60" y="64" text-anchor="end" class="mp26-svg-axis">€300k</text><text x="60" y="131" text-anchor="end" class="mp26-svg-axis">€200k</text><text x="60" y="197" text-anchor="end" class="mp26-svg-axis">€100k</text><text x="60" y="264" text-anchor="end" class="mp26-svg-axis">€0</text>
+<text x="70" y="286" text-anchor="middle" class="mp26-svg-axis">Start</text><text x="250" y="286" text-anchor="middle" class="mp26-svg-axis">Year 10</text><text x="430" y="286" text-anchor="middle" class="mp26-svg-axis">Year 20</text><text x="610" y="286" text-anchor="middle" class="mp26-svg-axis">Year 30</text>
+<path d="M70 60H610" class="mp26-svg-level"/><path d="M 70.0 60.0 L 88.0 63.8 L 106.0 67.8 L 124.0 71.9 L 142.0 76.2 L 160.0 80.6 L 178.0 85.2 L 196.0 89.9 L 214.0 94.8 L 232.0 99.9 L 250.0 105.1 L 268.0 110.6 L 286.0 116.2 L 304.0 122.1 L 322.0 128.1 L 340.0 134.4 L 358.0 140.9 L 376.0 147.6 L 394.0 154.5 L 412.0 161.7 L 430.0 169.2 L 448.0 176.9 L 466.0 184.9 L 484.0 193.2 L 502.0 201.8 L 520.0 210.6 L 538.0 219.8 L 556.0 229.4 L 574.0 239.2 L 592.0 249.4 L 610.0 260.0" class="mp26-svg-reducing"/>
+</svg>
+<div class="mp26-legend"><span><i class="mp26-key"></i>Level-term life cover</span><span><i class="mp26-key mp26-reducing"></i>Modelled mortgage debt</span></div>
+<figcaption class="mp26-note">The green line represents <strong>the modelled mortgage balance, not an insurer's decreasing-cover schedule</strong>. Actual decreasing-term benefits depend on the policy formula and can differ from your real mortgage balance.</figcaption>
+<details><summary>Accessible chart figures</summary><table><thead><tr><th>Year</th><th>Modelled debt</th><th>Level cover</th></tr></thead><tbody><tr><th scope="row">0</th><td>€300,000</td><td>€300,000</td></tr><tr><th scope="row">5</th><td>€269,091</td><td>€300,000</td></tr><tr><th scope="row">10</th><td>€232,281</td><td>€300,000</td></tr><tr><th scope="row">15</th><td>€188,441</td><td>€300,000</td></tr><tr><th scope="row">20</th><td>€136,231</td><td>€300,000</td></tr><tr><th scope="row">25</th><td>€74,052</td><td>€300,000</td></tr><tr><th scope="row">30</th><td>€0</td><td>€300,000</td></tr></tbody></table></details>
+</figure>
+
+
 
 ### Decreasing-term cover: the usual mortgage choice
 
@@ -291,9 +343,11 @@ Most new policies involve health and lifestyle questions. Depending on your answ
 
 **Answer every question accurately and fully.** Omissions or misstatements can cause disputes over claims. If you have an existing policy and a new health condition, preserving existing accepted cover can be particularly important.
 
+<div class="mp26-rules"><p><strong>Key date: 15 October 2026.</strong> The Law Society reports that the statutory protections for eligible cancer survivors are scheduled to commence on this date. As of <strong>11 October</strong>, the new rules are not yet in force. <a href="https://production.lawsociety.ie/gazette/top-stories/2026/august/date-set-for-right-to-be-forgotten-law/">Official-sector commencement reporting →</a></p></div>
+
 ### Right to Be Forgotten: new legal rules starting 15 October 2026
 
-Ireland's **Insurance (Disregard of Certain Medical History and Miscellaneous Provisions) Act 2026** introduces statutory protections for eligible cancer survivors in mortgage protection underwriting. As at this article's review date, **9 October 2026, the key provisions are scheduled to commence on 15 October 2026 — they have not yet commenced**.
+Ireland's **Insurance (Disregard of Certain Medical History and Miscellaneous Provisions) Act 2026** introduces statutory protections for eligible cancer survivors in mortgage protection underwriting. As at this article's review date, **11 October 2026, the key provisions are scheduled to commence on 15 October 2026 — they have not yet commenced**.
 
 Under the announced statutory framework, insurers must disregard qualifying cancer-related history for a mortgage protection application where all the relevant conditions are met:
 
@@ -373,6 +427,10 @@ There is no universally cheapest company. The least expensive final quote depend
 ### How much is mortgage protection on a €300,000 mortgage?
 
 It depends heavily on age, smoker status, health, term and single/joint/dual life structure. A mortgage amount alone does not produce a reliable premium. Ask at least two providers or a multi-agency broker for identical €300,000 cover terms. Treat public 'from' prices as marketing entry points, not an estimate for your circumstances.
+
+### How much is mortgage protection at age 25 or 50?
+
+Age is one part of a quote, but the loan size, term, health and smoker status can change prices substantially. The published [2026 age examples above](#cost) illustrate specific profiles, not a price list for all ages. Get several like-for-like final underwritten quotations before making a decision.
 
 ### Is mortgage protection compulsory for first-time buyers?
 
