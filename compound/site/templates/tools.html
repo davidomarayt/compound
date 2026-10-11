@@ -16,6 +16,19 @@
     <label class="tool-search"><span class="sr-only">Search tools</span><input type="search" placeholder="Search mortgage, nutrition, pregnancy, VAT, solar…" data-tool-search></label>
     <p class="tools-insurance-hub-link"><a href="/insurance/">Explore Insurance Tools &amp; Guides: life cover, mortgage protection and income risk ↗</a></p>
   </header>
+  <section class="tool-group" data-tool-group data-sponsorship-category="insurance">
+    <div class="tool-group-heading">
+      <div><p class="eyebrow">PROTECTION &amp; INSURANCE</p><h2>Insurance Calculators</h2><p class="tool-group-blurb">Five dedicated insurance planning tools with clear calculations and Irish consumer guidance. <a href="/insurance/">Explore the Insurance hub ↗</a></p></div>
+      <span class="tool-group-count">5 tools</span>
+    </div>
+    <div class="tool-grid">
+      <a class="tool-card" href="/health-insurance-cost-comparison-calculator/" data-tool-card data-tool-text="health insurance cost comparison plans premiums excess"><span class="tool-category">Insurance</span><h3>Health Insurance Cost Comparison</h3><p>Compare total annual costs of two policies using your own cover details.</p><span>Open tool →</span></a>
+      <a class="tool-card" href="/home-insurance-rebuild-cost-calculator/" data-tool-card data-tool-text="home insurance rebuilding rebuild buildings cover value"><span class="tool-category">Insurance</span><h3>Home Insurance Rebuild Cost</h3><p>Model buildings cover and a potential shortfall using floor area and rebuilding rates.</p><span>Open tool →</span></a>
+      <a class="tool-card" href="/critical-illness-cover-calculator/" data-tool-card data-tool-text="critical serious illness cover calculator protection"><span class="tool-category">Insurance</span><h3>Critical Illness Cover</h3><p>Estimate a family contingency for illness-related financial disruption.</p><span>Open tool →</span></a>
+      <a class="tool-card" href="/death-in-service-life-insurance-calculator/" data-tool-card data-tool-text="death in service life insurance work employer benefit"><span class="tool-category">Insurance</span><h3>Death-in-Service vs Life Insurance</h3><p>Compare workplace protection with ongoing family needs.</p><span>Open tool →</span></a>
+      <a class="tool-card" href="/insurance-premium-savings-calculator/" data-tool-card data-tool-text="insurance switching premium savings home car health life"><span class="tool-category">Insurance</span><h3>Insurance Premium Savings</h3><p>Model premium differences across four insurance categories.</p><span>Open tool →</span></a>
+    </div>
+  </section>
   {% for category, items in grouped_tools.items() %}
   {% if items %}
   <section class="tool-group" data-tool-group data-sponsorship-category="{{ category|lower|replace(' ', '-')|replace('&', 'and') }}">
