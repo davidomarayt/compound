@@ -14,6 +14,15 @@ title: "Insurance Tools & Guides Ireland"
     <div class="ins-art" aria-hidden="true"><div class="ins-shield"><span>✓</span></div></div>
   </header>
 
+  <aside class="ins-partner-strip" aria-label="Insurance partnership opportunities">
+    <div class="ins-partner-strip-copy">
+      <p class="ins-ey">PARTNERSHIP OPPORTUNITY · CURRENTLY UNSPONSORED</p>
+      <h2>Independent insurance guidance. Thoughtful brand partnerships.</h2>
+      <p>Compound welcomes enquiries about clearly labelled insurance category, guide and calculator sponsorships. Editorial content and tool results remain independent.</p>
+    </div>
+    <a href="/insurance-partnerships/" class="ins-partner-strip-link" data-ins-event="partner_interest" data-ins-label="insurance_hub">Explore partnership opportunities ↗</a>
+  </aside>
+
   <section id="insurance-tools" aria-labelledby="ins-tools-heading">
     <div class="ins-section-head">
       <div><p class="ins-ey">FREE INSURANCE TOOLS</p><h2 id="ins-tools-heading">Eight tools for your insurance decisions.</h2></div>
@@ -118,15 +127,48 @@ title: "Insurance Tools & Guides Ireland"
 
   <section id="insurance-guides" aria-labelledby="ins-guides-heading">
     <div class="ins-section-head">
-      <div><p class="ins-ey">COMPLETE IRISH INSURANCE GUIDES</p><h2 id="ins-guides-heading">Choose the protection question.</h2></div>
-      <p>Four focused guides already published. Start with the risk you want to protect against, not an insurer's sales pitch.</p>
+      <div><p class="ins-ey">INDEPENDENT IRISH INSURANCE GUIDES</p><h2 id="ins-guides-heading">A clearer path to the cover that matters.</h2></div>
+      <p>Four detailed Irish guides, each paired with a relevant free tool. Start with your own protection question—not a sales pitch.</p>
     </div>
     <div class="ins-guides">
-      <a class="ins-guide" href="/wealth/life-insurance-ireland/"><small>Family financial protection</small><h3>Life insurance</h3><p>How much cover your family might need, level term versus whole-of-life, joint versus dual life and the tax questions.</p><strong>Read the complete guide ↗</strong></a>
-      <a class="ins-guide" href="/wealth/mortgage-protection-insurance-ireland/"><small>Protect the home loan</small><h3>Mortgage protection</h3><p>The legal requirement, switching safely, declining versus level cover and how to compare premiums.</p><strong>Read the complete guide ↗</strong></a>
-      <a class="ins-guide" href="/wealth/income-protection-insurance-ireland/"><small>Protect household earnings</small><h3>Income protection</h3><p>Deferred periods, cover limits, occupational risk, claims, tax relief and what happens during sick leave.</p><strong>Read the complete guide ↗</strong></a>
-      <a class="ins-guide" href="/wealth/health-insurance-ireland/"><small>Healthcare costs and access</small><h3>Health insurance</h3><p>Health Insurance Authority comparisons, waiting periods, excesses, Lifetime Community Rating and tax relief.</p><strong>Read the complete guide ↗</strong></a>
+      <article class="ins-guide ins-guide--life">
+        <div class="ins-guide-illustration" aria-hidden="true"><span class="ins-guide-symbol"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><circle cx="33" cy="32" r="10"/><circle cx="69" cy="36" r="8"/><path d="M12 74c0-17 10-27 22-27 11 0 20 10 21 27M56 73c1-12 8-19 16-19 9 0 16 8 16 19"/><path d="M50 20c6-10 20-3 12 8L50 41 38 28c-8-11 6-18 12-8z"/></svg></span><span class="ins-guide-art-caption">LIFE & FAMILY</span></div>
+        <div class="ins-guide-body">
+          <p class="ins-guide-topic">Protect the people who rely on you</p>
+          <h3>Life insurance</h3>
+          <p>Choosing the right term, understanding joint versus dual cover and calculating the amount your family could need.</p>
+          <div class="ins-guide-links"><a class="ins-guide-read" href="/wealth/life-insurance-ireland/" data-ins-event="guide_open" data-ins-label="life">Read the guide ↗</a><a class="ins-guide-tool" href="/wealth/life-insurance-ireland/#li26-calc" data-ins-event="tool_open" data-ins-label="life">Calculate life cover ↗</a></div>
+        </div>
+      </article>
+      <article class="ins-guide ins-guide--home">
+        <div class="ins-guide-illustration" aria-hidden="true"><span class="ins-guide-symbol"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 48 50 17l38 31M22 46v37h56V46M42 83V59h16v24"/><path d="M68 27V17h12v20"/></svg></span><span class="ins-guide-art-caption">HOME & MORTGAGE</span></div>
+        <div class="ins-guide-body">
+          <p class="ins-guide-topic">Protect the biggest household commitment</p>
+          <h3>Mortgage protection</h3>
+          <p>Know what lenders normally require, how declining cover works and what to check before switching.</p>
+          <div class="ins-guide-links"><a class="ins-guide-read" href="/wealth/mortgage-protection-insurance-ireland/" data-ins-event="guide_open" data-ins-label="home">Read the guide ↗</a><a class="ins-guide-tool" href="/wealth/mortgage-protection-insurance-ireland/#mp26-savings" data-ins-event="tool_open" data-ins-label="home">Model premium savings ↗</a></div>
+        </div>
+      </article>
+      <article class="ins-guide ins-guide--income">
+        <div class="ins-guide-illustration" aria-hidden="true"><span class="ins-guide-symbol"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="15" width="76" height="70" rx="11"/><path d="M22 55h15l9-19 12 34 8-16h12"/></svg></span><span class="ins-guide-art-caption">WORK & EARNINGS</span></div>
+        <div class="ins-guide-body">
+          <p class="ins-guide-topic">Plan for a disruption to your income</p>
+          <h3>Income protection</h3>
+          <p>Understand deferred periods, employer sick pay, claims conditions and tax treatment before comparing cover.</p>
+          <div class="ins-guide-links"><a class="ins-guide-read" href="/wealth/income-protection-insurance-ireland/" data-ins-event="guide_open" data-ins-label="income">Read the guide ↗</a><a class="ins-guide-tool" href="#income-gap" data-ins-event="tool_open" data-ins-label="income">Estimate the income gap ↗</a></div>
+        </div>
+      </article>
+      <article class="ins-guide ins-guide--health">
+        <div class="ins-guide-illustration" aria-hidden="true"><span class="ins-guide-symbol"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M50 83 16 52c-22-23 7-53 29-30l5 5 5-5c22-23 51 7 29 30L50 83z"/><path d="M50 39v25M37 52h26"/></svg></span><span class="ins-guide-art-caption">HEALTHCARE</span></div>
+        <div class="ins-guide-body">
+          <p class="ins-guide-topic">Compare benefits, not only premiums</p>
+          <h3>Health insurance</h3>
+          <p>Understand hospital access, waiting periods, excesses and the HIA's independent plan comparison service.</p>
+          <div class="ins-guide-links"><a class="ins-guide-read" href="/wealth/health-insurance-ireland/" data-ins-event="guide_open" data-ins-label="health">Read the guide ↗</a><a class="ins-guide-tool" href="/health-insurance-cost-comparison-calculator/" data-ins-event="tool_open" data-ins-label="health">Compare plan costs ↗</a></div>
+        </div>
+      </article>
     </div>
+    <div class="ins-guide-more"><div><p class="ins-ey">ALSO EXPLORE</p><h3>Home rebuilding and serious illness cover</h3><p>Two more useful insurance decisions, with standalone calculators and source-backed explanations.</p></div><div class="ins-guide-more-links"><a href="/home-insurance-rebuild-cost-calculator/">Estimate home rebuilding cover ↗</a><a href="/critical-illness-cover-calculator/">Explore serious illness cover ↗</a></div></div>
   </section>
 
   <section aria-labelledby="ins-compare-heading">
@@ -163,7 +205,7 @@ title: "Insurance Tools & Guides Ireland"
     <div><p class="ins-ey">EDITORIAL INDEPENDENCE</p><h2 id="ins-sponsors-heading">Useful tools first. Commercial partnerships second.</h2></div>
     <div>
       <p>Compound may accept appropriately disclosed category sponsorships and advertising. No insurer currently buys a ranking on this page. Sponsorship would never change calculator arithmetic, editorial conclusions, policy eligibility or the order of independently chosen recommendations.</p>
-      <p>For insurance partnerships, contact <a href="mailto:david@compound.ie?subject=Compound%20Insurance%20Partnership">david@compound.ie</a>. Sponsored placements will be clearly labelled. Compound does not sell insurance, arrange regulated policies or provide personalised financial advice through these tools.</p>
+      <p>Learn about <a href="/insurance-partnerships/" data-ins-event="partner_interest" data-ins-label="footer">insurance partnership opportunities</a> or contact <a href="mailto:david@compound.ie?subject=Compound%20Insurance%20Partnership" data-ins-event="partner_email" data-ins-label="insurance_hub">david@compound.ie</a>. Sponsored placements will be clearly labelled. Compound does not sell insurance, arrange regulated policies or provide personalised financial advice through these tools.</p>
     </div>
   </section>
 
