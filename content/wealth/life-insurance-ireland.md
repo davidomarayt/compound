@@ -11,16 +11,16 @@ approved_by: "User commissioned and authorised full evergreen publication on 11 
 summary: "An independent Irish life insurance guide: work out family cover needs, compare term and whole-of-life policies, understand prices, insurer features, death-in-service and inheritance tax."
 meta_description: "Life insurance Ireland 2026: compare policy types, starting prices and five insurers. Free cover-needs calculator, death-in-service and Section 72 guide."
 tags: [life-insurance, life-assurance, term-life-insurance, family-protection, insurance, whole-of-life, death-in-service, section-72, ireland]
-hero_image_url: "https://images.pexels.com/photos/20194638/pexels-photo-20194638.jpeg?auto=compress&cs=tinysrgb&w=1600"
-hero_image_alt: "Parents and two children embracing together at home, photographed by Catalina Herrera on Pexels."
-hero_image_credit: "Catalina Herrera / Pexels"
-hero_image_source: "https://www.pexels.com/photo/happy-family-with-two-children-20194638/"
+hero_image_url: "https://images.pexels.com/photos/6624373/pexels-photo-6624373.jpeg?auto=compress&cs=tinysrgb&w=1600"
+hero_image_alt: "Two parents with their baby and older child sitting together on a sofa at home, photographed by Keira Burton on Pexels."
+hero_image_credit: "Keira Burton / Pexels"
+hero_image_source: "https://www.pexels.com/photo/family-sitting-on-a-couch-6624373/"
 require_pinned_hero: true
-image: "https://images.pexels.com/photos/20194638/pexels-photo-20194638.jpeg?auto=compress&cs=tinysrgb&w=1600"
-image_alt: "Parents embracing their two children in a candid family moment at home, a photograph representing the people protected by family life cover."
-image_credit: "Catalina Herrera / Pexels"
-image_source: "https://www.pexels.com/photo/happy-family-with-two-children-20194638/"
-social_image: "https://images.pexels.com/photos/20194638/pexels-photo-20194638.jpeg?auto=compress&cs=tinysrgb&w=1600"
+image: "https://images.pexels.com/photos/6624373/pexels-photo-6624373.jpeg?auto=compress&cs=tinysrgb&w=1600"
+image_alt: "Two parents and their young children seated together on a living-room sofa, a family-protection stock photograph."
+image_credit: "Keira Burton / Pexels"
+image_source: "https://www.pexels.com/photo/family-sitting-on-a-couch-6624373/"
+social_image: "https://images.pexels.com/photos/6624373/pexels-photo-6624373.jpeg?auto=compress&cs=tinysrgb&w=1600"
 related_tools:
 - emergency-fund-calculator
 - savings-goal-calculator
