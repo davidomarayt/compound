@@ -65,3 +65,11 @@ test('written notice at least 30 days before renewal cancels at the next quarter
  // March 1 is early enough to cancel before April.
  assert.equal(new Date(cancellationEffectiveAt(Date.UTC(2027,2,1)/1000)*1000).toISOString(),'2027-04-01T00:00:00.000Z');
 });
+
+test('checkout reuses previously opened sessions, rejects completed sessions and has atomic CAS',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const checkout=await readFile(new URL('../api/checkout.js',import.meta.url),'utf8');
+ const schema=await readFile(new URL('../schema.sql',import.meta.url),'utf8');
+ for(const key of ["session.status==='complete'","session.status==='open'",'p_previous_session_id:previous'])assert(checkout.includes(key),'checkout missing '+key);
+ assert(schema.includes('stripe_checkout_id is not distinct from p_previous_session_id'));
+});

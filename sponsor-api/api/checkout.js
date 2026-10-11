@@ -11,6 +11,18 @@ export async function GET(request){
   const result=await rpc('solar_get_invite',{p_invite_hash:sha256(token)});
   const app=Array.isArray(result)?result[0]:result;
   if(!app||!app.id)return err('Invitation expired or county no longer available',409);
+  // Reuse the existing open Checkout rather than creating competing sessions.
+  // A completed Checkout must never be replayed to sell the same county twice.
+  const previous=app.stripe_checkout_id||null;
+  if(previous){
+   const session=await stripe('checkout/sessions/'+encodeURIComponent(previous),null,'GET');
+   if(session.status==='complete')return err('This invitation has already been used',409);
+   if(session.status==='open'&&Number(session.expires_at)>now&&session.client_reference_id===app.id){
+     return Response.redirect(session.url,303);
+   }
+   if(session.status==='open')return err('Existing checkout needs administrator review',409);
+   if(session.status!=='expired')return err('Existing checkout status requires review',409);
+  }
   const qty=app.requested_counties?.length;
   if(!Number.isInteger(qty)||qty<1||qty>32)return err('Invalid county selection',409);
   const form=new URLSearchParams();
@@ -40,7 +52,7 @@ export async function GET(request){
   // terms of service link in the Stripe Dashboard before SPONSOR_TAX_READY=true.
   form.set('expires_at',String(now+1800));
   const checkout=await stripe('checkout/sessions',form);
-  await rpc('solar_store_checkout',{p_application_id:app.id,p_session_id:checkout.id});
+  await rpc('solar_store_checkout',{p_application_id:app.id,p_session_id:checkout.id,p_previous_session_id:previous});
   return Response.redirect(checkout.url,303);
  }catch(error){return catchError(error);}
 }

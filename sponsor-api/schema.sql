@@ -120,20 +120,23 @@ end; $$;
 
 create or replace function public.solar_get_invite(p_invite_hash text)
 returns jsonb language sql stable security invoker set search_path = public as $$
-select jsonb_build_object('id',a.id,'email',a.email,'requested_counties',a.requested_counties)
+select jsonb_build_object('id',a.id,'email',a.email,'requested_counties',a.requested_counties,'stripe_checkout_id',a.stripe_checkout_id)
 from solar_sponsor_applications a
 where a.invite_hash=p_invite_hash and a.status='approved' and a.expires_at>now()
   and (select count(*) from solar_county_slots s where s.application_id=a.id
       and s.status='held' and s.hold_until>now())=cardinality(a.requested_counties)
 limit 1; $$;
 
-create or replace function public.solar_store_checkout(p_application_id uuid,p_session_id text)
-returns void language plpgsql security invoker set search_path=public as $$
+create or replace function public.solar_store_checkout(p_application_id uuid,p_session_id text,p_previous_session_id text)
+returns void language plpgsql security invoker set search_path=public as $
 begin
+ -- Compare-and-swap ensures parallel requests cannot overwrite the live
+ -- Checkout session reference, leaving a paid customer without entitlement.
  update solar_sponsor_applications set stripe_checkout_id=p_session_id,updated_at=now()
- where id=p_application_id and status='approved' and expires_at>now();
- if not found then raise exception 'Checkout invitation expired'; end if;
-end; $$;
+ where id=p_application_id and status='approved' and expires_at>now()
+ and stripe_checkout_id is not distinct from p_previous_session_id;
+ if not found then raise exception 'Checkout session changed; retry original invitation'; end if;
+end; $;
 
 -- Process Stripe events exactly once, with entitlement status updated in same transaction.
 create or replace function public.solar_apply_billing_event(
@@ -202,9 +205,9 @@ end; $$;
 -- Only privileged server functions should invoke these RPCs.
 revoke all on function public.solar_approve_application(uuid,text,timestamptz) from PUBLIC,anon,authenticated;
 revoke all on function public.solar_get_invite(text) from PUBLIC,anon,authenticated;
-revoke all on function public.solar_store_checkout(uuid,text) from PUBLIC,anon,authenticated;
+revoke all on function public.solar_store_checkout(uuid,text,text) from PUBLIC,anon,authenticated;
 revoke all on function public.solar_apply_billing_event(text,text,uuid,text,text,text,integer) from PUBLIC,anon,authenticated;
 grant execute on function public.solar_approve_application(uuid,text,timestamptz) to service_role;
 grant execute on function public.solar_get_invite(text) to service_role;
-grant execute on function public.solar_store_checkout(uuid,text) to service_role;
+grant execute on function public.solar_store_checkout(uuid,text,text) to service_role;
 grant execute on function public.solar_apply_billing_event(text,text,uuid,text,text,text,integer) to service_role;
