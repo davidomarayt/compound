@@ -13,7 +13,7 @@ const capped=compute("health",{ap:100,bp:100,visits:0,outpatient:20,ae:0,be:0,as
 assert.equal(capped.a,100,"reimbursement cannot exceed spending");
 const home=compute("home",{area:145,rate:2400,extras:10,demolition:25000,outbuildings:5000,current:320000});
 assert.equal(home.base,348000);assert.equal(home.extras,34800);assert.equal(home.total,412800);assert.equal(home.gap,92800);
-const overinsured=compute("home",{area:100,rate:2000,extras:0,demolition:0,outbuildings:0,current:400000});assert.equal(overinsured.gap,0);
+const overinsured=compute("home",{area:100,rate:2000,extras:0,demolition:0,outbuildings:0,current:400000});assert.equal(overinsured.gap,0);assert.equal(overinsured.percent,200,"coverage ratio must not be visually capped");
 const critical=compute("critical",{once:10000,monthly:1800,months:12,care:12000,debt:10000,savings:15000,existing:0});
 assert.equal(critical.gross,53600);assert.equal(critical.gap,38600);
 const criticalCovered=compute("critical",{once:0,monthly:100,months:6,care:0,debt:0,savings:10000,existing:0});assert.equal(criticalCovered.gap,0);
