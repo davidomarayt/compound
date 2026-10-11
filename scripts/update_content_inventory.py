@@ -69,6 +69,25 @@ def build():
              "Calculator", category="Health", slug="bmi-calculator",
              embedded_guide="content/bmi-guide.md"),
     ])
+    # Independently published Insurance calculators have their own SEO landing
+    # pages, not entries in the original generic formula catalogue.
+    insurance_calculator_slugs = (
+        "health-insurance-cost-comparison-calculator",
+        "home-insurance-rebuild-cost-calculator",
+        "critical-illness-cover-calculator",
+        "death-in-service-life-insurance-calculator",
+        "insurance-premium-savings-calculator",
+    )
+    for slug in insurance_calculator_slugs:
+        path = ROOT / "content" / "pages" / (slug + ".md")
+        if path.exists():
+            meta = frontmatter(path)
+            if not meta.get("title"):
+                errors.append("Missing insurance calculator title: " + str(path.relative_to(ROOT)))
+            else:
+                tools.append(item(meta["title"], "/" + slug + "/", path.relative_to(ROOT),
+                                  "Calculator", category="Insurance", slug=slug,
+                                  embedded_guide=str(path.relative_to(ROOT))))
     by_slug = {r["slug"]: r for r in tools}
     guide_files = sorted((ROOT / "content" / "tool-guides").glob("*.md"))
     guides = [item(by_slug.get(p.stem, {}).get("title") or p.stem,
@@ -76,6 +95,8 @@ def build():
                    "Embedded calculator guide") for p in guide_files]
     pages = []
     for path in sorted((ROOT / "content" / "pages").glob("*.md")):
+        if path.stem in insurance_calculator_slugs:
+            continue  # counted as a tool instead of a generic information page
         meta = frontmatter(path)
         pages.append(item(meta.get("title") or path.stem.title(), "/" + path.stem + "/",
                           path.relative_to(ROOT), "Information / policy page"))
