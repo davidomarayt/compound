@@ -16,7 +16,7 @@ title: "Insurance Tools & Guides Ireland"
 
   <section id="insurance-tools" aria-labelledby="ins-tools-heading">
     <div class="ins-section-head">
-      <div><p class="ins-ey">FREE INSURANCE TOOLS</p><h2 id="ins-tools-heading">The numbers behind the policy.</h2></div>
+      <div><p class="ins-ey">FREE INSURANCE TOOLS</p><h2 id="ins-tools-heading">Eight tools for your insurance decisions.</h2></div>
       <p>Our calculators estimate financial needs and compare scenarios. They do not quote insurer premiums or decide whether you qualify for cover.</p>
     </div>
     <div class="ins-grid">
@@ -37,6 +37,36 @@ title: "Insurance Tools & Guides Ireland"
         <h3>Income interruption gap</h3>
         <p>Estimate how long your household cash could last if work stopped because of illness or injury.</p>
         <strong>Try the income gap tool ↓</strong>
+      </a>
+      <a class="ins-tool" href="/health-insurance-cost-comparison-calculator/">
+        <span class="ins-tag">Dedicated calculator · Health</span>
+        <h3>Health insurance cost comparison</h3>
+        <p>Compare two policies using your premiums, inpatient excesses, hospital shortfalls and outpatient reimbursements.</p>
+        <strong>Compare health insurance costs ↗</strong>
+      </a>
+      <a class="ins-tool" href="/home-insurance-rebuild-cost-calculator/">
+        <span class="ins-tag">Dedicated calculator · Home</span>
+        <h3>Home insurance rebuilding cover</h3>
+        <p>Estimate a buildings sum insured using an appropriate €/m² rate, area and additional rebuilding costs.</p>
+        <strong>Estimate rebuild cover ↗</strong>
+      </a>
+      <a class="ins-tool" href="/critical-illness-cover-calculator/">
+        <span class="ins-tag">Dedicated calculator · Illness</span>
+        <h3>Critical illness cover needs</h3>
+        <p>Model potential one-off expenses, income disruption, additional care and available savings.</p>
+        <strong>Explore illness-cover needs ↗</strong>
+      </a>
+      <a class="ins-tool" href="/death-in-service-life-insurance-calculator/">
+        <span class="ins-tag">Dedicated calculator · Life</span>
+        <h3>Death-in-service vs life cover</h3>
+        <p>Translate an employer salary multiple into a benefit and assess the potential family shortfall.</p>
+        <strong>Check the family cover gap ↗</strong>
+      </a>
+      <a class="ins-tool" href="/insurance-premium-savings-calculator/">
+        <span class="ins-tag">Dedicated calculator · Savings</span>
+        <h3>Insurance premium savings</h3>
+        <p>Explore annual and multi-year premium differences across home, motor, health and life cover.</p>
+        <strong>Compare insurance premiums ↗</strong>
       </a>
     </div>
   </section>
