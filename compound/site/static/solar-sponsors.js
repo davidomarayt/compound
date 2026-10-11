@@ -17,11 +17,11 @@
   function update(){
     var counties=selected(),qty=counties.length;
     countEl.textContent=qty+" of 32";
-    monthlyEl.textContent=euro.format(qty*250);
+    monthlyEl.textContent=euro.format(qty*750);
     annualEl.textContent=euro.format(qty*3000);
     countyField.value=counties.join(", ");
     totalField.value=String(qty);
-    feeField.value=String(qty*250);
+    feeField.value=String(qty*750);
   }
   boxes.forEach(function(box){
     box.addEventListener("change",function(){
