@@ -74,7 +74,7 @@ def test_solar_quote_mobile_containment_rules():
     assert "grid-template-columns:minmax(0,1fr)" in css.split("@media screen and (max-width:730px)")[1]
     assert "sol-scroll-hint" in quote
     assert 'aria-label="Solar quote comparison table;' in quote
-    assert "/static/solar-hub.css?v=3" in page_template
+    assert "/static/solar-hub.css?v=4" in page_template
 
 
 def test_mobile_browser_audit_covers_every_solar_route():
@@ -90,3 +90,6 @@ def test_mobile_browser_audit_covers_every_solar_route():
     assert "python scripts/verify_solar_mobile.py" in workflow
     assert "overflow-wrap:anywhere" in css
     assert "solar-hub.css?v=4" in template
+    assert 'brief.querySelector("[data-sb-output]")' in (ROOT / "compound/site/static/solar-hub.js").read_text(encoding="utf-8")
+    for route in ("/solar-payback-calculator/", "/solar-ev-battery-optimiser/", "/wealth/solar-panels-ireland/", "/wealth/solar-panels-vs-battery-ireland/"):
+        assert f'"{route}"' in script

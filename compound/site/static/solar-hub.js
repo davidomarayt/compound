@@ -148,12 +148,12 @@
         "",
         "Thank you."
       ].join("\n");
-      bv("output").value=text;
+      brief.querySelector("[data-sb-output]").value=text;
       setText(brief.querySelector("[data-sb-copy-status]"),"");
     }
     ["county","demand","battery","roof"].forEach(function(key){bv(key).addEventListener("input",updateBrief);bv(key).addEventListener("change",updateBrief);});
     brief.querySelector("[data-sb-copy]").addEventListener("click",function(){
-      var out=bv("output"),status=brief.querySelector("[data-sb-copy-status]");
+      var out=brief.querySelector("[data-sb-output]"),status=brief.querySelector("[data-sb-copy-status]");
       if(navigator.clipboard&&navigator.clipboard.writeText){
         navigator.clipboard.writeText(out.value).then(function(){setText(status,"Copied.");solarTrack("quote_brief_copied");},function(){out.focus();out.select();setText(status,"Select and copy the text manually.");});
       }else{out.focus();out.select();setText(status,"Select and copy the text manually.");}

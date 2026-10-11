@@ -23,11 +23,15 @@ ROUTES = [
     "/solar/costs/",
     "/solar/installers/",
     "/solar/get-quotes/",
+    "/solar-payback-calculator/",
+    "/solar-ev-battery-optimiser/",
+    "/wealth/solar-panels-ireland/",
+    "/wealth/solar-panels-vs-battery-ireland/",
 ]
 WIDTHS = (320, 360, 390, 430, 768, 1024)
 SCAN = r"""() => {
-  const shell = document.querySelector('.sol-shell');
-  if (!shell) return {error: 'No solar page container'};
+  const shell = document.querySelector('.sol-shell') || document.querySelector('main');
+  if (!shell) return {error: 'No main page content'};
   const width = document.documentElement.clientWidth;
   const failures = [];
   const margin = 2;
@@ -43,7 +47,7 @@ SCAN = r"""() => {
   while ((text = walker.nextNode())) {
     if (!text.textContent.trim()) continue;
     const parent = text.parentElement;
-    if (!parent || parent.closest('.sol-table-scroll, script, style')) continue;
+    if (!parent || parent.closest('.sol-table-scroll, .table-scroll, .table-responsive, .scroll-table, .responsive-table, script, style')) continue;
     const style = getComputedStyle(parent);
     if (style.display === 'none' || style.visibility === 'hidden') continue;
     const range = document.createRange();
@@ -115,7 +119,7 @@ def main() -> None:
                             if response is None or response.status != 200:
                                 failures.append(f"{width}px {path}: HTTP error")
                                 continue
-                            page.wait_for_selector(".sol-shell", timeout=5000)
+                            page.wait_for_selector("main", timeout=5000)
                             page.wait_for_timeout(70)
                             result = page.evaluate(SCAN)
                             if result.get("error") or result.get("failures"):
@@ -136,6 +140,10 @@ def main() -> None:
                                 }.get(path)
                                 if selector:
                                     page.wait_for_selector(selector, timeout=5000)
+                                    if path == "/solar/get-quotes/":
+                                        output = page.locator("[data-sb-output]").input_value()
+                                        if "itemised domestic solar PV quotation" not in output:
+                                            failures.append(f"{width}px {path}: quote request generator did not populate output")
                     finally:
                         page.close()
                         context.close()
