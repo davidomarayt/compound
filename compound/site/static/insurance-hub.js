@@ -2,6 +2,21 @@
 /* Insurance income interruption arithmetic. No input leaves this browser. */
 (function () {
   "use strict";
+  // Aggregate navigation events only, when a reader has explicitly consented.
+  // No calculator values, identity, email address or full link URL is recorded.
+  document.addEventListener("click",function (ev) {
+    var target = ev.target && ev.target.closest ? ev.target.closest("a[data-ins-event]") : null;
+    if (!target) return;
+    var category = target.getAttribute("data-ins-event");
+    var label = target.getAttribute("data-ins-label");
+    var allowed = ["tool_open","guide_open","partner_interest","partner_email"];
+    if (allowed.indexOf(category) < 0 || !/^[a-z_]{1,40}$/.test(label || "")) return;
+    var consent = false;
+    try { consent = localStorage.getItem("compound_analytics_consent") === "granted"; }
+    catch (err) { consent = false; }
+    if (!consent || typeof window.gtag !== "function") return;
+    window.gtag("event","insurance_hub_navigation",{interaction_type:category,content_category:label});
+  });
   var root = document.querySelector("[data-ins-gap]");
   if (!root) return;
   var ids = ["spending","other","months","sick","savings"];
