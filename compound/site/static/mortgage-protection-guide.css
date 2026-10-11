@@ -1,0 +1,36 @@
+/* Mortgage protection editorial figures and interactive quote comparison. Scoped to mp26. */
+.mp26{box-sizing:border-box;margin:1.8rem 0;padding:1.35rem 1.5rem;border:1px solid #d9d5d1;border-radius:14px;background:#faf8f5;color:#28252c;box-shadow:0 6px 24px rgba(39,30,45,.045)}
+.mp26 *{box-sizing:border-box}
+.mp26-kicker{font-size:.72rem!important;font-weight:800!important;letter-spacing:.125em;text-transform:uppercase;color:#795367!important;margin:0 0 .55rem!important}
+.mp26 h3{font-size:1.35rem!important;line-height:1.25!important;margin:.15rem 0 .55rem!important;color:#2a242c!important}
+.mp26 p{margin:.45rem 0 .85rem!important;line-height:1.55}
+.mp26-field-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem;margin:1.2rem 0}
+.mp26-field-grid label{display:flex;flex-direction:column;gap:.45rem;font-size:.84rem;font-weight:650;color:#433944}
+.mp26-field-grid input{font:inherit;font-weight:700;font-size:1.04rem;color:#26232b;background:white;border:1px solid #bfb9bd;border-radius:7px;padding:.72rem;min-width:0;width:100%;outline-offset:2px}
+.mp26-result{display:grid;grid-template-columns:1fr auto;align-items:end;gap:1rem;padding:1rem 0;border-top:1px solid #e3dde0;border-bottom:1px solid #e3dde0}
+.mp26-result span{font-size:.91rem;color:#584953}
+.mp26-result strong{display:block;font-size:clamp(1.65rem,3.5vw,2.35rem);line-height:1.13;letter-spacing:-.035em;color:#6e3e5c}
+.mp26-result output{display:block;font-size:.9rem;font-weight:700;text-align:right;max-width:15rem}
+.mp26-bars{display:grid;gap:.85rem;margin:1.2rem 0 1rem}
+.mp26-bar-label{display:flex;justify-content:space-between;gap:.8rem;font-size:.84rem;font-weight:700}
+.mp26-track{height:14px;background:#eae2e6;border-radius:999px;overflow:hidden;margin-top:.3rem}
+.mp26-fill{width:100%;height:100%;border-radius:999px;background:#aa758e;transition:width .25s ease}
+.mp26-fill.mp26-alt{background:#527a6b}
+.mp26-note{font-size:.79rem!important;color:#5f5660!important}
+.mp26-figure svg{width:100%;height:auto;display:block;margin:.7rem 0}
+.mp26-figure .mp26-svg-grid{stroke:#e5dee3;stroke-width:1}
+.mp26-figure .mp26-svg-axis{font-size:12px;fill:#625661;font-family:system-ui,sans-serif}
+.mp26-figure .mp26-svg-level{stroke:#86546d;stroke-width:4;fill:none;stroke-linecap:round}
+.mp26-figure .mp26-svg-reducing{stroke:#45836e;stroke-width:4;fill:none;stroke-linecap:round}
+.mp26-legend{display:flex;flex-wrap:wrap;gap:.65rem 1.3rem;font-size:.79rem;font-weight:650;margin:.4rem 0}
+.mp26-legend span{display:flex;align-items:center;gap:.45rem}
+.mp26-key{display:inline-block;width:19px;height:4px;background:#86546d;border-radius:4px}
+.mp26-key.mp26-reducing{background:#45836e}
+.mp26 details{margin-top:.7rem;font-size:.87rem}
+.mp26 details summary{cursor:pointer;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.mp26 table{width:100%;border-collapse:collapse;font-size:.82rem;margin-top:.6rem}
+.mp26 th,.mp26 td{text-align:left;border-bottom:1px solid #ddd6dc;padding:.5rem .65rem}
+.mp26-rules{background:#f5f0f4;border-left:4px solid #86546d;border-radius:0 9px 9px 0;padding:1rem 1.15rem;margin:1.3rem 0}
+.mp26-rules p{margin:0!important;font-size:.96rem}
+@media(max-width:620px){.mp26{padding:1rem}.mp26-field-grid{grid-template-columns:1fr;gap:.8rem}.mp26-result{grid-template-columns:1fr}.mp26-result output{text-align:left}.mp26 th,.mp26 td{padding:.35rem .3rem}}
+@media(prefers-reduced-motion:reduce){.mp26-fill{transition:none}}
