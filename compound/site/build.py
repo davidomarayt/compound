@@ -1557,15 +1557,6 @@ def build_site(settings: Settings) -> dict:
             "image": "", "reading_minutes": 5, "date_label": "Insurance hub",
         })
     index.insert(0, {
-            "title": "Insurance Advertising & Sponsorship Partnerships Ireland",
-            "url": "/insurance-partnerships/", "pillar": "Partnerships",
-            "date": date.today().isoformat(),
-            "summary": "Clearly labelled Irish insurance category, calculator and guide sponsorship opportunities on Compound.",
-            "tags": ["insurance", "sponsorship", "advertising", "partner", "media kit"],
-            "description": "Partner with independent Irish insurance tools and guides, with transparent placements and verified reporting.",
-            "image": "", "reading_minutes": 3, "date_label": "Insurance partnerships",
-        })
-    index.insert(0, {
         "title": "Stocks Directory — Public Companies and Research",
         "url": "/stocks/", "pillar": "Wealth",
         "date": date.today().isoformat(),
