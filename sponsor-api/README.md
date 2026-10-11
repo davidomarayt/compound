@@ -33,6 +33,9 @@ Stripe LIVE product and 3-month recurring per-county price are configured on Com
 - `GET /api/checkout?token=...`: validates invitation, creates short-lived Stripe-hosted subscription checkout with quantity equal to assigned county count.
 - `POST /api/webhook`: verifies Stripe HMAC signature against raw body, reconciles invoice and subscription lifecycle in an atomic database RPC.
 - `GET /api/counties`: public county availability status without company names or applicant information.
+- `GET /api/sponsor?county=Meath`: returns only the business name and record identifier for the active county partner; no contact PII.
+- `POST /api/lead`: verifies a homeowner's named sponsor, explicit consent, valid county and Cloudflare Turnstile, saves the enquiry in a database transaction and emails it to the paying sponsor. Email delivery failures remain in the private lead log for review.
+- `GET /api/admin-leads`: bearer-token-protected lead records, including pending delivery status.
 
 ## Security and reliability
 
@@ -44,7 +47,7 @@ Stripe LIVE product and 3-month recurring per-county price are configured on Com
 - Admin APIs require a random 32+ character bearer token from Vercel secrets and must not be called directly from public browser code.
 - Stripe event deduplication is in the same DB transaction as status changes. Out-of-order events cannot reactivate cancelled counties.
 - A checkout can outlive the reservation only in edge cases; such payments fail closed and require manual settlement/reconciliation; set operational alerts before opening checkout.
-- For homeowner leads, build a separately consented form disclosing the sponsor and route only to `active` county slots.
+- The lead-routing API is implemented but no public homeowner form has been connected. A separately consented form must display the sponsor business name and exact information shared. The database RPC enforces an ACTIVE sponsor and the homeowner's sponsor selection under a row lock.
 
 ## Test commands
 
@@ -77,3 +80,10 @@ The **published Compound.ie pages must remain ad-free at /solar/for-installers/*
 - The customer currently provides **written notice** under the contract; an authorised administrator records the received date and invokes the route. It is not a live self-service cancellation portal.
 - For 1 April 2027 the page advises notifying by 1 March 2027; after that cutoff, a later renewal boundary may apply. Existing Q1 prepayment is not automatically refunded, but refunds can still be legally required for non-delivery, mistake, charge dispute, or other applicable rights.
 - Do not misrepresent cancellation scheduling as a live feature until backend, credentials and database are deployed and verified against Stripe test subscriptions.
+
+## Deployment blocker and external account ownership (11 October 2026)
+
+- Supabase currently exposes only one organisation named MyClinician. Supabase quoted **€0/month** for a new project there; the Compound-owned destination organisation must be selected/authorised before creation. A new project is isolated from MyClinician's existing database even if both share an organisation.
+- The connected Vercel integration lists two existing unrelated projects but **no accessible deployment teams**; a previous team-scoped project creation returned 403. The user must reauthorise the correct Vercel team before deploying `sponsor-api/`.
+- No Supabase migration has been run, no backend API is deployed, and no Stripe webhook signature has been registered. The Stripe product and one-time/quarterly live Prices are ready, but it is **not safe to expose checkout**.
+- CI now validates SQL function dollar quoting and strict consent/paid-partner lead-routing rules, but integration tests with real Stripe test-mode invoices, a database, verified email sender, and webhook secrets are still mandatory.
