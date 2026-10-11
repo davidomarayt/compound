@@ -2,7 +2,7 @@ import {rpc,sha256,stripe,PRICE_ID,BASE_URL,FOUNDING_TRIAL_END_UNIX,err,catchErr
 export async function GET(request){
  // Public paid checkout must never run without the fully operational CRM, county lock,
  // tax configuration and Stripe webhook. The static application form stays separate.
- if(process.env.SPONSOR_BILLING_READY!=='true'||!failClosed('STRIPE_SECRET_KEY','SUPABASE_URL','SUPABASE_SERVICE_ROLE_KEY','STRIPE_WEBHOOK_SECRET'))return err('Checkout not yet available',503);
+ if(process.env.SPONSOR_BILLING_READY!=='true'||process.env.SPONSOR_TAX_READY!=='true'||!failClosed('STRIPE_SECRET_KEY','SUPABASE_URL','SUPABASE_SERVICE_ROLE_KEY','STRIPE_WEBHOOK_SECRET'))return err('Checkout not yet available',503);
  const token=new URL(request.url).searchParams.get('token')||'';
  if(!/^[A-Za-z0-9_-]{40,80}$/.test(token))return err('Invalid or expired invitation',400);
  const now=Math.floor(Date.now()/1000);
@@ -29,9 +29,11 @@ export async function GET(request){
   form.set('success_url',BASE_URL+'?payment=processing');
   form.set('cancel_url',BASE_URL+'?payment=cancelled');
   form.set('billing_address_collection','required');
+  form.set('automatic_tax[enabled]','true');
+  form.set('consent_collection[terms_of_service]','required');
   form.set('tax_id_collection[enabled]','true');
-  // Must be paired with approved Stripe Tax or explicitly specified tax rates before
-  // SPONSOR_BILLING_READY=true. Price is VAT-exclusive; no arbitrary tax rate is assumed here.
+  // Stripe Tax requires verified tax registrations/product tax category and a published
+  // terms of service link in the Stripe Dashboard before SPONSOR_TAX_READY=true.
   form.set('expires_at',String(now+1800));
   const checkout=await stripe('checkout/sessions',form);
   await rpc('solar_store_checkout',{p_application_id:app.id,p_session_id:checkout.id});
