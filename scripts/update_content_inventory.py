@@ -79,7 +79,10 @@ def build():
         meta = frontmatter(path)
         pages.append(item(meta.get("title") or path.stem.title(), "/" + path.stem + "/",
                           path.relative_to(ROOT), "Information / policy page"))
-    hubs = [item(title, url, "compound/site/build.py", "Hub / landing page") for title, url in HUBS]
+    # A Life landing page and the Live to 100 hub already have canonical editorial entries.
+    occupied_urls = {x["url"] for x in [*articles, *earnings, *pages]}
+    hubs = [item(title, url, "compound/site/build.py", "Hub / landing page")
+            for title, url in HUBS if url not in occupied_urls]
     stock = json.loads((ROOT / "content" / "earnings-sp500.json").read_text(encoding="utf-8"))
     watch = json.loads((ROOT / "content" / "company-watchlist.json").read_text(encoding="utf-8"))
     listed = []
