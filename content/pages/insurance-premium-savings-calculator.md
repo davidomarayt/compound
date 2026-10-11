@@ -1,0 +1,89 @@
+---
+title: "Insurance Premium Savings Calculator Ireland"
+---
+<article class="it26" data-i-calculator="savings">
+<header class="it26-head"><nav class="it26-crumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/insurance/">Insurance</a> / <a href="/tools/">Tools</a></nav><p class="eyebrow">FREE IRISH INSURANCE CALCULATOR · UPDATED 11 OCTOBER 2026</p><h1>Insurance Premium Savings Calculator Ireland</h1><p class="it26-lede">Estimate nominal premium savings across home, car, health and life insurance, then test how fees and the number of years alter the result.</p><div class="it26-pills"><span>No account or registration</span><span>Inputs stay in your browser</span><span>Transparent scenario arithmetic</span></div></header>
+<div class="it26-trust-note">Independent educational modelling. <strong>No insurer quotes, personal recommendations or eligibility decisions.</strong> Policies, limits and premium rules vary. For real quotes, underwriting and coverage, verify directly with a regulated provider.</div>
+<div class="it26-workspace" id="calculate">
+<form class="it26-form" data-i-form><p class="eyebrow">YOUR INPUTS</p><h2>Explore the numbers.</h2><p>Switching insurance can cut annual spending, but savings disappear if the new policy removes valuable protection. This calculator totals user-entered premiums across four insurance categories and subtracts one-off charges. It does not recommend switching or compare coverage quality.</p><div class="it26-fields"><label class="it26-field" for="i-homecur">Current home insurance per year (€)<input id="i-homecur" data-i-field="homecur" name="homecur" type="number" min="0" max="1000000000" step="any" inputmode="decimal" value="480" aria-describedby="hint-homecur"><small id="hint-homecur">Buildings, contents or combined—compare like-for-like.</small></label>
+<label class="it26-field" for="i-homenew">Alternative home insurance per year (€)<input id="i-homenew" data-i-field="homenew" name="homenew" type="number" min="0" max="1000000000" step="any" inputmode="decimal" value="415" aria-describedby="hint-homenew"><small id="hint-homenew">Do not accept less cover just to cut the price.</small></label>
+<label class="it26-field" for="i-carcur">Current car insurance per year (€)<input id="i-carcur" data-i-field="carcur" name="carcur" type="number" min="0" max="1000000000" step="any" inputmode="decimal" value="700" aria-describedby="hint-carcur"><small id="hint-carcur">Annual amount actually payable.</small></label>
+<label class="it26-field" for="i-carnew">Alternative car insurance per year (€)<input id="i-carnew" data-i-field="carnew" name="carnew" type="number" min="0" max="1000000000" step="any" inputmode="decimal" value="630" aria-describedby="hint-carnew"><small id="hint-carnew">Include comparable policy excesses and driving restrictions.</small></label>
+<label class="it26-field" for="i-healthcur">Current health insurance per year (€)<input id="i-healthcur" data-i-field="healthcur" name="healthcur" type="number" min="0" max="1000000000" step="any" inputmode="decimal" value="1600" aria-describedby="hint-healthcur"><small id="hint-healthcur">Household or individual consistently across both options.</small></label>
+<label class="it26-field" for="i-healthnew">Alternative health insurance per year (€)<input id="i-healthnew" data-i-field="healthnew" name="healthnew" type="number" min="0" max="1000000000" step="any" inputmode="decimal" value="1530" aria-describedby="hint-healthnew"><small id="hint-healthnew">Compare hospital benefits, outpatient rules and excesses.</small></label>
+<label class="it26-field" for="i-lifecur">Current life cover per year (€)<input id="i-lifecur" data-i-field="lifecur" name="lifecur" type="number" min="0" max="1000000000" step="any" inputmode="decimal" value="360" aria-describedby="hint-lifecur"><small id="hint-lifecur">Only compare with a policy already accepted after underwriting.</small></label>
+<label class="it26-field" for="i-lifenew">Alternative life cover per year (€)<input id="i-lifenew" data-i-field="lifenew" name="lifenew" type="number" min="0" max="1000000000" step="any" inputmode="decimal" value="330" aria-describedby="hint-lifenew"><small id="hint-lifenew">Same cover amount, term, lives insured and benefit definitions.</small></label>
+<label class="it26-field" for="i-years">Years to illustrate<input id="i-years" data-i-field="years" name="years" type="number" min="0" max="1000000000" step="any" inputmode="decimal" value="3" aria-describedby="hint-years"><small id="hint-years">Assumes nominal annual premiums stay unchanged.</small></label>
+<label class="it26-field" for="i-fees">One-off switching / cancellation charges (€)<input id="i-fees" data-i-field="fees" name="fees" type="number" min="0" max="1000000000" step="any" inputmode="decimal" value="60" aria-describedby="hint-fees"><small id="hint-fees">Enter applicable costs; do not assume every policy charges a fee.</small></label></div><p>Change any input to update the scenario instantly. Values are not submitted or stored.</p><div class="it26-actions"><button type="submit">Recalculate estimate</button><button data-i-copy type="button">Copy summary</button></div><p class="it26-status" data-i-status aria-live="polite">Ready</p></form>
+<section class="it26-result" aria-label="Illustrative insurance calculation results" aria-live="polite"><p class="eyebrow">ILLUSTRATIVE RESULT</p><h2>What the figures suggest.</h2><div class="primary"><span>Nominal total premium difference after fees</span><strong data-i-result="horizon">—</strong></div><div class="it26-result-list"><div class="it26-result-row"><span>Annual difference (positive means saving)</span><strong data-i-result="annual">—</strong></div>
+<div class="it26-result-row"><span>Current combined annual premiums</span><strong data-i-result="current">—</strong></div>
+<div class="it26-result-row"><span>Alternative combined annual premiums</span><strong data-i-result="new">—</strong></div>
+<div class="it26-result-row"><span>Simple fee break-even period</span><strong data-i-result="breakEven">—</strong></div></div><p class="it26-note" data-i-note>Planning illustration only.</p></section>
+</div>
+<div class="it26-explanation">
+
+## How much can you save by switching insurance in Ireland?
+
+Insurance shopping is often done one renewal at a time. A household may have car, home, private health and life protection policies with different renewal dates. Reviewing them as a group can make the **total premium commitment** more visible, while each contract still needs to be assessed individually.
+
+This tool compares the **annual premium paid now** with the **annual premium for an alternative** across up to four policy types. It calculates the nominal annual difference and multiplies that by a chosen period, subtracting any one-off switch/cancellation charges you enter.
+
+### Worked example
+
+Suppose home insurance is €480 now versus €415 on an alternative, car is €700 versus €630, health is €1,600 versus €1,530, and life cover is €360 versus €330.
+
+The existing annual total is €3,140 and the alternative is €2,905, an illustrative **€235 annual difference**. Over three unchanged years, that gives €705 before charges. With €60 of one-off charges, the nominal result is **€645**.
+
+These are **made-up example premiums for arithmetic**, not live quotes. Insurance prices commonly change at renewal; this calculator assumes they are unchanged solely to illustrate scale. It does not adjust for inflation, discounting or changes in cover.
+
+### Check home insurance cover and excesses
+
+A lower home premium can come with a higher compulsory excess, reduced accidental damage, lower buildings cover or different flood and subsidence treatment. Make sure the insured rebuilding value is appropriate. Use our [home rebuilding-cost calculator](/home-insurance-rebuild-cost-calculator/) to explore a basic sum insured.
+
+### Car insurance: read the details
+
+Compare the same driver and usage information, driving restrictions, policy excesses, optional breakdown assistance, windscreen cover and no-claims bonus treatment. A cheaper policy can have different exclusions. Do not misstate your driving profile to lower premiums.
+
+### Health insurance: benefits matter as much as price
+
+A new health plan may change approved hospitals, inpatient excesses, outpatient caps or waiting period arrangements. Use the [HIA independent comparison tool](https://www.hia.ie/health-insurance-comparison) to compare actual Irish plans; Compound's [health insurance cost comparison calculator](/health-insurance-cost-comparison-calculator/) can help model user-entered scenarios.
+
+### Life cover: switching can be risky
+
+**Never cancel existing life insurance or mortgage protection until appropriate replacement cover has been fully underwritten, accepted and placed in force.** A lower preliminary online premium may increase after medical underwriting—or the insurer could refuse cover.
+
+Age and health changes, policy term, existing exclusions, joint versus dual cover, critical illness features and lender assignments can make two policies materially different. Read the [Life Insurance Ireland guide](/wealth/life-insurance-ireland/) and [Mortgage Protection Savings tool](/wealth/mortgage-protection-insurance-ireland/#mp26-savings).
+
+### How to use the result
+
+A **positive annual difference** means lower premiums if the replacement policy prices are as entered. A **negative difference** means the new combined premiums are higher. A positive multiyear result can still conceal a worse insurance contract. Treat the output as a shortlist for deeper comparison, not a recommendation to switch.
+
+If an insurer charges a fee to cancel or replace a policy, include it. Some providers offer promotional rates for one year; don't extrapolate a time-limited discount across a five-year horizon without acknowledging the assumption.
+
+## FAQ
+
+### Does a cheaper premium mean I should switch?
+
+No. Equivalent cover and accepted underwriting matter, especially for life insurance.
+
+### Is this a live quote comparison engine?
+
+No. Every premium must be supplied by you from an actual quotation or renewal document.
+
+### Are the savings guaranteed for three or five years?
+
+No. Annual premiums and terms can change and the horizon assumes a fixed figure solely for illustration.
+
+### Are broker fees included?
+
+Only if you add them in the one-off fees field. Verify any cost and commission information separately.
+
+## Useful sources
+
+- [CCPC — Insurance consumer information](https://www.ccpc.ie/manage-your-money/day-to-day-finances/insurance)
+- [HIA — Compare health insurance plans](https://www.hia.ie/health-insurance-comparison)
+- [Compound — Insurance Tools and Guides](/insurance/)
+
+</div>
+<section class="it26-related"><h2>More insurance tools</h2><nav aria-label="Related insurance tools"><a href="/insurance/">Insurance hub ↗</a><a href="/health-insurance-cost-comparison-calculator/">Health Insurance Cost Comparison Calculator Ireland ↗</a><a href="/home-insurance-rebuild-cost-calculator/">Home Insurance Rebuild Cost Calculator Ireland ↗</a><a href="/critical-illness-cover-calculator/">Critical Illness Cover Calculator Ireland ↗</a><a href="/death-in-service-life-insurance-calculator/">Death-in-Service vs Life Insurance Calculator Ireland ↗</a></nav></section>
+</article>
