@@ -51,12 +51,37 @@
 .ins-meter i{display:block;height:100%;background:#648375;border-radius:99px;width:0;transition:width .15s}
 .ins-disclaimer{color:#61545b;font-size:12px;line-height:1.75;margin-top:16px;max-width:95ch}
 .ins-disclaimer a{text-decoration:underline;text-underline-offset:3px;font-weight:700}
-.ins-guides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
-.ins-guide{display:flex;flex-direction:column;gap:10px;padding:28px;border:1px solid #ddd5d3;background:#fffefa;border-radius:6px;min-height:208px}
-.ins-guide small{color:#7b5667;text-transform:uppercase;font-size:10px;letter-spacing:.1em;font-weight:750}
-.ins-guide h3{font-size:29px}
-.ins-guide p{font-size:13px;line-height:1.7;color:#64575e}
-.ins-guide strong{margin-top:auto;color:#64435a;font-size:12px}
+/* A compact, clearly unsponsored partnership enquiry strip—not a paid placement. */
+.ins-partner-strip{background:#f0ebe9;border:1px solid #ded4d3;border-radius:7px;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(200px,.6fr);gap:28px;padding:clamp(22px,3.5vw,35px);align-items:center}
+.ins-partner-strip .ins-ey{color:#805a6b}
+.ins-partner-strip h2{font-size:clamp(24px,2.6vw,34px);line-height:1.12;margin:9px 0;max-width:32ch}
+.ins-partner-strip p:not(.ins-ey){font-size:13px;line-height:1.75;color:#5f555c;margin:0;max-width:76ch}
+.ins-partner-strip-link{display:inline-flex;align-items:center;justify-content:center;min-height:46px;text-align:center;padding:13px 18px;border-radius:5px;border:1px solid #5e4354;color:#4d3647;background:#fff9f4;font-size:12px;font-weight:800;text-decoration:none}
+.ins-partner-strip-link:hover{background:#f7e7dd}
+.ins-guides{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.ins-guide{overflow:hidden;display:flex;flex-direction:column;border:1px solid #dcd1d4;background:#fffefa;border-radius:7px;min-height:0}
+.ins-guide-illustration{height:170px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;color:#5b414f}
+.ins-guide-illustration:before{content:"";position:absolute;width:240px;height:240px;border:1px solid rgba(77,56,69,.12);border-radius:50%;left:-74px;top:-130px;box-shadow:0 0 0 38px rgba(77,56,69,.03),0 0 0 95px rgba(77,56,69,.02)}
+.ins-guide--life .ins-guide-illustration{background:linear-gradient(125deg,#eadbde,#f2e5e3)}
+.ins-guide--home .ins-guide-illustration{background:linear-gradient(125deg,#eee0d3,#f9ebe2)}
+.ins-guide--income .ins-guide-illustration{background:linear-gradient(125deg,#dae7e0,#edf3ed)}
+.ins-guide--health .ins-guide-illustration{background:linear-gradient(125deg,#dce1ef,#ebeef5)}
+.ins-guide-symbol{width:94px;height:94px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.6);border:1px solid rgba(72,49,64,.14);border-radius:24px;transform:rotate(-7deg)}
+.ins-guide-symbol svg{width:63px;height:63px;transform:rotate(7deg)}
+.ins-guide-art-caption{position:absolute;bottom:15px;left:19px;font-size:10px;color:#5d4452;letter-spacing:.13em;font-weight:800}
+.ins-guide-body{padding:25px 26px 27px;display:flex;flex-direction:column;gap:11px;flex:1}
+.ins-guide-topic{font-size:10px!important;color:#78576a!important;text-transform:uppercase;letter-spacing:.1em;font-weight:750;margin:0}
+.ins-guide h3{font-size:clamp(26px,2.8vw,34px);line-height:1.07;margin:0}
+.ins-guide-body>p:not(.ins-guide-topic){font-size:13px;line-height:1.75;color:#5d5159;margin:0;flex:1}
+.ins-guide-links{display:flex;flex-wrap:wrap;gap:13px;align-items:center;margin-top:14px;padding-top:17px;border-top:1px solid #e9dfe1}
+.ins-guide-links a{font-size:12px;line-height:1.6;color:#604154;font-weight:750;text-decoration:underline;text-underline-offset:4px}
+.ins-guide-links .ins-guide-read{background:#46323f;color:#fffaf7;border-radius:4px;text-decoration:none;padding:10px 12px}
+.ins-guide-links .ins-guide-read:hover{background:#704b60}
+.ins-guide-more{margin-top:17px;display:grid;grid-template-columns:1fr 1fr;gap:22px;border:1px solid #e2d8d5;padding:24px 28px;border-radius:7px;background:#f5f0ed;align-items:center}
+.ins-guide-more h3{font-size:24px;margin:6px 0}
+.ins-guide-more p:not(.ins-ey){font-size:13px;line-height:1.6;color:#655861}
+.ins-guide-more-links{display:flex;flex-wrap:wrap;gap:11px}
+.ins-guide-more-links a{font-size:12px;font-weight:750;color:#5c4153;text-decoration:underline;text-underline-offset:4px;line-height:1.6}
 .ins-next{display:flex;flex-wrap:wrap;gap:8px}
 .ins-next a{font-size:12px;font-weight:700;color:#634250;background:#f2e9e8;padding:9px 12px;border-radius:5px}
 .ins-independence{background:#eee8e4;border-radius:7px;padding:clamp(22px,4vw,38px);display:grid;grid-template-columns:1fr 1fr;gap:28px}
@@ -69,6 +94,6 @@
 .ins-faq p{font-size:13px;line-height:1.7;color:#60545d;padding-top:14px}
 .ins-smalllinks{display:flex;flex-wrap:wrap;gap:16px;font-size:12px;color:#66505f}
 .ins-smalllinks a{text-decoration:underline;text-underline-offset:3px}
-@media(max-width:960px){.ins-hero{grid-template-columns:1fr}.ins-art{display:none}.ins-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ins-calc-inner{grid-template-columns:1fr}}
-@media(max-width:650px){.ins-hub{gap:42px}.ins-hero{padding:28px 22px;min-height:0}.ins-hero h1{font-size:clamp(42px,11vw,66px)}.ins-section-head{display:block}.ins-section-head>p{margin-top:13px}.ins-grid,.ins-guides,.ins-faq,.ins-independence,.ins-fields{grid-template-columns:1fr}.ins-tool{min-height:180px;padding:22px}.ins-guide{min-height:175px;padding:21px}.ins-calc{padding:19px}.ins-out{padding:22px}.ins-rows{margin-top:12px}}
+@media(max-width:960px){.ins-partner-strip{grid-template-columns:1fr}.ins-hero{grid-template-columns:1fr}.ins-art{display:none}.ins-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ins-calc-inner{grid-template-columns:1fr}}
+@media(max-width:650px){.ins-hub{gap:42px}.ins-hero{padding:28px 22px;min-height:0}.ins-hero h1{font-size:clamp(42px,11vw,66px)}.ins-section-head{display:block}.ins-section-head>p{margin-top:13px}.ins-grid,.ins-guides,.ins-faq,.ins-independence,.ins-fields{grid-template-columns:1fr}.ins-tool{min-height:180px;padding:22px}.ins-guide{min-height:0}.ins-guide-illustration{height:155px}.ins-guide-body{padding:21px}.ins-guide-more{grid-template-columns:1fr;padding:22px}.ins-calc{padding:19px}.ins-out{padding:22px}.ins-rows{margin-top:12px}}
 @media(prefers-reduced-motion:reduce){.ins-tool,.ins-meter i{transition:none}}
