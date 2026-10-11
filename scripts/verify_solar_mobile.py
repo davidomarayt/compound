@@ -47,7 +47,7 @@ SCAN = r"""() => {
   while ((text = walker.nextNode())) {
     if (!text.textContent.trim()) continue;
     const parent = text.parentElement;
-    if (!parent || parent.closest('.sol-table-scroll, .table-scroll, .table-responsive, .scroll-table, .responsive-table, script, style')) continue;
+    if (!parent || parent.closest('.sol-table-scroll, .tool-chart-scroll, .table-scroll, .table-responsive, .scroll-table, .responsive-table, script, style')) continue;
     const style = getComputedStyle(parent);
     if (style.display === 'none' || style.visibility === 'hidden') continue;
     const range = document.createRange();
@@ -67,7 +67,7 @@ SCAN = r"""() => {
     }
     if (failures.length >= 15) break;
   }
-  const scrollBoxes = [...shell.querySelectorAll('.sol-table-scroll')];
+  const scrollBoxes = [...shell.querySelectorAll('.sol-table-scroll, .tool-chart-scroll')];
   for (const item of scrollBoxes) {
     const rect = item.getBoundingClientRect();
     if (rect.right > width + margin || rect.left < -margin) {

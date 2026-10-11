@@ -87,6 +87,7 @@ def test_mobile_browser_audit_covers_every_solar_route():
     for width in ("320", "360", "390", "430", "768", "1024"):
         assert width in script
     assert "clipped-text" in script and "page-width" in script
+    assert ".tool-chart-scroll" in script  # charts intentionally scroll within the viewport
     assert "python scripts/verify_solar_mobile.py" in workflow
     assert "overflow-wrap:anywhere" in css
     assert "solar-hub.css?v=4" in template
