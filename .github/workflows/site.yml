@@ -48,14 +48,20 @@ jobs:
         run: |
           set -euo pipefail
           node --check compound/site/static/solar-hub.js
+          node --check compound/site/static/solar-sponsors.js
           node --check compound/site/static/solar-research.js
-          for path in solar solar/compare-quotes solar/grants solar/costs solar/installers solar/get-quotes solar/batteries solar/export-rates solar/equipment; do
+          for path in solar solar/compare-quotes solar/grants solar/costs solar/installers solar/get-quotes solar/for-installers solar/batteries solar/export-rates solar/equipment; do
             test -s "public/$path/index.html"
             grep -q 'rel="canonical"' "public/$path/index.html"
             grep -q 'solar-hub.css' "public/$path/index.html"
           done
           grep -q 'https://compound.ie/solar/compare-quotes/' public/solar/compare-quotes/index.html
           grep -q '/solar/' public/wealth/index.html
+          grep -q 'data-solar-sponsor-form' public/solar/for-installers/index.html
+          grep -q 'solar-sponsors.css' public/solar/for-installers/index.html
+          ! grep -q 'pagead2.googlesyndication.com' public/solar/for-installers/index.html
+          ! grep -q '<ins class="adsbygoogle"' public/solar/for-installers/index.html
+          test "$(grep -o 'data-county' content/pages/solar-for-installers.md | wc -l)" -eq 32
           grep -q 'solar-payback-calculator/' public/solar/index.html
           ! grep -R -F 'built and occupied before 2021' public/solar public/solar-payback-calculator public/wealth/solar-panels-ireland public/wealth/solar-panels-vs-battery-ireland
       - name: Install browser for Solar Hub mobile audit
@@ -95,13 +101,15 @@ jobs:
           grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/home.html
 
           # Verify solar hub canonical URLs, on-page tools and AdSense script on the public domain.
-          for slug in solar solar/compare-quotes solar/grants solar/costs solar/installers solar/get-quotes solar/batteries solar/export-rates solar/equipment; do
+          for slug in solar solar/compare-quotes solar/grants solar/costs solar/installers solar/get-quotes solar/for-installers solar/batteries solar/export-rates solar/equipment; do
             target="/tmp/solar-${slug//\//-}.html"
             fetch "https://compound.ie/${slug}/" "$target"
             grep -Fq 'solar-hub.css' "$target"
             grep -Fq "<link rel=\"canonical\" href=\"https://compound.ie/${slug}/\">" "$target"
           done
           grep -Fq '/solar/compare-quotes/' /tmp/solar-solar.html
+          ! grep -Fq 'pagead2.googlesyndication.com' /tmp/solar-solar-for-installers.html
+          grep -Fq 'data-solar-sponsor-form' /tmp/solar-solar-for-installers.html
           grep -Fq 'data-solar-quotes' /tmp/solar-solar-compare-quotes.html
           grep -Fq 'data-solar-grants' /tmp/solar-solar-grants.html
           grep -Fq 'data-solar-battery' /tmp/solar-solar-batteries.html

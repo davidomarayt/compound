@@ -1447,6 +1447,7 @@ def build_site(settings: Settings) -> dict:
     for pg in pages:
         _write(out / pg.url.strip("/") / "index.html", env.get_template("page.html").render(
             page=pg, title=pg.title,
+            ads_allowed=(pg.slug != "solar-for-installers"),  # Never load AdSense/auto ads on sponsor registration.
             ads_configured=bool(load_site_config(settings.content_dir)["adsense"]["client"]) if pg.slug == "solar" or pg.slug.startswith("solar-") else False))
 
     if tools:

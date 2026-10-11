@@ -1,0 +1,100 @@
+/* Dedicated ad-free Compound Solar installer recruitment page. */
+.sol-sponsor-page{gap:48px}
+.sol-sponsor-page :is(section,header,form,fieldset,div){min-width:0}
+.sol-sponsor-page .sol-subcrumb{margin-bottom:-26px}
+.sol-sponsor-hero{background:#213d30;color:#f4f8ee;border-radius:10px;padding:clamp(25px,4.5vw,58px);display:grid;grid-template-columns:minmax(0,1.4fr) minmax(275px,.8fr);gap:clamp(24px,4vw,58px);align-items:center;overflow:hidden}
+.sol-sponsor-hero h1{font-size:clamp(42px,5.6vw,78px);line-height:1.02;color:#f9fff6;margin:14px 0 22px;max-width:14ch;overflow-wrap:normal}
+.sol-sponsor-hero h1 em{color:#acd3a9}
+.sol-sponsor-hero-main>p:not(.sol-ey){max-width:60ch;font-size:16px;line-height:1.8;color:#dbe9dc}
+.sol-sponsor-hero-actions{display:flex;flex-wrap:wrap;gap:20px;align-items:center;margin-top:25px}
+.sol-sponsor-textlink{font-size:13px;color:#e0eedf;text-decoration:underline;text-underline-offset:4px}
+.sol-sponsor-hero-foot{display:flex;gap:8px;flex-wrap:wrap;margin-top:35px}
+.sol-sponsor-hero-foot span{font:700 10px/1.4 var(--sans);padding:8px 11px;border-radius:30px;border:1px solid #567961;color:#e0eee0}
+.sol-sponsor-offer{background:#edf1e6;color:#263d2d;border-radius:9px;padding:clamp(25px,3vw,40px);align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+.sol-sponsor-cost{font:400 clamp(48px,5.4vw,72px)/1.05 var(--serif);letter-spacing:-.04em;margin:17px 0 22px;overflow-wrap:normal}
+.sol-sponsor-cost span{display:block;font:700 13px/1.5 var(--sans);letter-spacing:0;margin-top:9px;color:#4a6753}
+.sol-sponsor-rule{height:1px;background:#bed0bc;margin-bottom:20px}
+.sol-sponsor-offer p:not(.sol-ey){font-size:13px;line-height:1.7;color:#4b6150;margin:0 0 12px}
+.sol-sponsor-offer strong{color:#263d2d}
+.sol-sponsor-offer .sol-sponsor-small{font-size:11px!important;color:#607064!important;margin-bottom:0!important}
+.sol-sponsor-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.sol-sponsor-benefits>div{background:#f6f8f2;border:1px solid #d7e1d4;padding:26px;border-radius:7px}
+.sol-sponsor-number{font:800 11px var(--sans);color:#65836c;display:block;margin-bottom:20px}
+.sol-sponsor-benefits h2{font-size:clamp(23px,2.5vw,32px);line-height:1.08;margin-bottom:11px}
+.sol-sponsor-benefits p,.sol-sponsor-stepgrid p{font-size:13px;line-height:1.75;color:#5b7060}
+.sol-sponsor-process .sol-sectionhead{margin-bottom:22px}
+.sol-sponsor-stepgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;list-style:none;counter-reset:sponsteps;padding:0;margin:0}
+.sol-sponsor-stepgrid li{counter-increment:sponsteps;border-top:2px solid #698e72;padding:23px 5px 0 0}
+.sol-sponsor-stepgrid li:before{content:"0" counter(sponsteps);font:400 31px/1 var(--serif);color:#7c9d82;display:block;margin-bottom:19px}
+.sol-sponsor-stepgrid strong{font-size:15px;display:block;margin-bottom:9px;color:#294a33}
+.sol-sponsor-application{background:#fcfbf6;border:1px solid #d5dfd1;border-radius:10px;padding:clamp(20px,3.5vw,43px)}
+.sol-sponsor-application-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:26px}
+.sol-sponsor-application-head h2{font-size:clamp(33px,4.5vw,54px);line-height:1.08;margin:7px 0 13px}
+.sol-sponsor-application-head p:not(.sol-ey){font-size:14px;color:#576c5c;line-height:1.7;max-width:67ch}
+.sol-sponsor-prelaunch{border:1px solid #c5d7bd;background:#e6eee1;padding:9px 12px;white-space:normal;text-align:center;border-radius:99px;color:#456c4c;font:800 10px/1.4 var(--sans);letter-spacing:.06em}
+.sol-sponsor-selection{display:grid;gap:24px}
+.sol-sponsor-selection fieldset{padding:0;margin:0;border:0}
+.sol-sponsor-selection legend{font:400 24px/1.25 var(--serif);color:#2a4733;width:100%;margin:0 0 15px;padding-bottom:11px;border-bottom:1px solid #d5ded4}
+.sol-sponsor-selection legend span{font:700 11px var(--sans);color:#65786b;margin-left:8px}
+.sol-sponsor-countygrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.sol-sponsor-county{position:relative;display:block!important;cursor:pointer}
+.sol-sponsor-county input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.sol-sponsor-county>span{display:block;border:1px solid #cfdacf;border-radius:6px;background:#fff;padding:12px 13px;color:#2f4837;font-size:13px;font-weight:750;min-height:65px;transition:background .15s,border-color .15s;overflow-wrap:normal}
+.sol-sponsor-county small{display:block;color:#8b9a8c;font-weight:500;font-size:10px;margin-top:4px}
+.sol-sponsor-county input:checked+span{border-color:#3e7551;background:#e3f0e4;box-shadow:inset 0 0 0 1px #3e7551}
+.sol-sponsor-county input:checked+span small{color:#386443}
+.sol-sponsor-county input:checked+span small:before{content:"✓ ";font-weight:900}
+.sol-sponsor-county input:focus-visible+span{outline:3px solid #bb7a4e;outline-offset:2px}
+.sol-sponsor-region-note{font-size:12px;line-height:1.7;color:#6a7b6a;margin-top:14px!important}
+.sol-sponsor-calculator{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;background:#e5eee3;border-radius:8px;padding:23px;margin-top:25px}
+.sol-sponsor-calculator>div{display:grid;gap:7px}
+.sol-sponsor-summary-label{font:700 11px/1.4 var(--sans);color:#56735d}
+.sol-sponsor-calculator strong{font:400 clamp(24px,3vw,34px)/1.2 var(--serif);color:#25452e;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.sol-sponsor-price-note{font-size:11px;line-height:1.7;color:#6b7a6b;margin:12px 0 0!important}
+.sol-sponsor-contact{margin-top:38px;padding-top:27px;border-top:1px solid #d7e0d3}
+.sol-sponsor-form-head h3{font-size:33px;margin:6px 0 22px}
+.sol-sponsor-contactgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 20px}
+.sol-sponsor-contact label,.sol-sponsor-notes-label{display:block;font:750 12px/1.45 var(--sans);color:#355440}
+.sol-sponsor-contact input,.sol-sponsor-contact textarea{display:block;width:100%;border:1px solid #b9c9bc;background:#fff;border-radius:6px;min-height:45px;padding:11px 13px;margin-top:7px;font:400 15px var(--sans);color:#294333}
+.sol-sponsor-notes-label{margin-top:20px}
+.sol-sponsor-contact textarea{min-height:95px;resize:vertical}
+.sol-sponsor-disclosures{margin-top:25px;padding:20px;border:1px solid #d9e1d5;background:#f3f6ef;border-radius:6px}
+.sol-sponsor-check{display:flex!important;gap:12px;align-items:flex-start;font:600 12px/1.65 var(--sans)!important;color:#36533e}
+.sol-sponsor-check input{flex:0 0 19px;width:19px;height:19px;accent-color:#2e6f48;margin:1px 0 0}
+.sol-sponsor-disclosures p{font-size:11px;line-height:1.7;color:#627467;margin:14px 0 0!important}
+.sol-sponsor-disclosures a,.sol-sponsor-form-status a{color:#276942;text-decoration:underline}
+.sol-sponsor-submit-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:22px}
+.sol-sponsor-copy{border:0;background:none;padding:12px 3px;cursor:pointer;font:800 13px var(--sans);color:#295e49;text-decoration:underline;text-underline-offset:3px}
+.sol-sponsor-form-status{font-size:12px;line-height:1.6;color:#5c715f;margin:15px 0 0!important}
+.sol-sponsor-faq{display:grid;grid-template-columns:minmax(180px,.55fr) minmax(0,1fr);gap:45px}
+.sol-sponsor-faq h2{font-size:clamp(32px,4vw,47px);margin-top:9px}
+.sol-sponsor-questions details{padding:18px 0;border-bottom:1px solid #d6dfd5}
+.sol-sponsor-questions details:first-child{border-top:1px solid #d6dfd5}
+.sol-sponsor-questions summary{font:800 14px/1.45 var(--sans);color:#2f4e37;cursor:pointer;padding-right:18px}
+.sol-sponsor-questions details p{font-size:13px;line-height:1.8;color:#596e60;margin-top:12px}
+@media(max-width:900px){
+ .sol-sponsor-hero{grid-template-columns:minmax(0,1fr)}
+ .sol-sponsor-offer{max-width:580px}
+ .sol-sponsor-stepgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .sol-sponsor-countygrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:600px){
+ .sol-sponsor-page{gap:35px}
+ .sol-sponsor-hero{padding:25px 20px}
+ .sol-sponsor-hero h1{font-size:clamp(37px,11vw,55px)}
+ .sol-sponsor-hero-main>p:not(.sol-ey){font-size:14px}
+ .sol-sponsor-hero-foot{margin-top:22px}
+ .sol-sponsor-benefits,.sol-sponsor-contactgrid,.sol-sponsor-faq{grid-template-columns:minmax(0,1fr)}
+ .sol-sponsor-benefits>div{padding:21px}
+ .sol-sponsor-stepgrid{grid-template-columns:minmax(0,1fr)}
+ .sol-sponsor-stepgrid li{padding-top:14px}
+ .sol-sponsor-application-head{flex-direction:column}
+ .sol-sponsor-countygrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .sol-sponsor-county>span{font-size:12px;padding:10px;min-height:60px}
+ .sol-sponsor-calculator{grid-template-columns:minmax(0,1fr);gap:14px}
+ .sol-sponsor-calculator>div:not(:last-child){padding-bottom:12px;border-bottom:1px solid #c9d9ca}
+ .sol-sponsor-faq{gap:15px}
+ .sol-sponsor-submit-row{align-items:stretch;flex-direction:column;gap:8px}
+ .sol-sponsor-submit-row .sol-btn{width:100%}
+}
+@media(max-width:340px){.sol-sponsor-countygrid{grid-template-columns:minmax(0,1fr)}}

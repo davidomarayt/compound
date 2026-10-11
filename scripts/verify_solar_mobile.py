@@ -23,6 +23,7 @@ ROUTES = [
     "/solar/costs/",
     "/solar/installers/",
     "/solar/get-quotes/",
+    "/solar/for-installers/",
     "/solar/batteries/",
     "/solar/export-rates/",
     "/solar/equipment/",
