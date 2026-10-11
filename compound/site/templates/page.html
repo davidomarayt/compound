@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 {% set insurance_tools = {"health-insurance-cost-comparison-calculator":"Compare two Irish health insurance plans using premiums, inpatient excesses, shortfalls and outpatient reimbursements. Free 2026 cost calculator.","home-insurance-rebuild-cost-calculator":"Home insurance rebuild cost calculator Ireland: use floor area and a rebuilding rate to estimate buildings cover and potential underinsurance.","critical-illness-cover-calculator":"Critical illness cover calculator Ireland: estimate one-off costs, income interruptions and family care needs, less savings and existing cover.","death-in-service-life-insurance-calculator":"Death-in-service calculator Ireland: translate salary multiples into a lump sum and estimate the family life insurance shortfall.","insurance-premium-savings-calculator":"Insurance savings calculator Ireland: compare annual home, car, health and life insurance premiums and model switching savings after fees."} %}
 {% set is_insurance_calculator = page.slug in insurance_tools %}
-{% block head_title %}{% if page.slug == 'life' %}Compound Life Ireland: Home, Work, Travel & Relationships{% elif page.slug == 'insurance' %}Insurance Tools & Guides Ireland | Life, Mortgage, Income & Health | Compound{% else %}{{ page.title }} | Compound{% endif %}{% endblock %}
+{% block head_title %}{% if page.slug == 'life' %}Compound Life Ireland: Home, Work, Travel & Relationships{% elif page.slug == 'insurance' %}Insurance Tools & Guides Ireland | Life, Mortgage, Income & Health | Compound{% elif page.slug == 'insurance-partnerships' %}Insurance Advertising & Sponsorship Opportunities Ireland | Compound{% else %}{{ page.title }} | Compound{% endif %}{% endblock %}
 {% block meta %}
 {% if page.slug == 'life' %}<meta name="description" content="Compound Life brings together practical Irish guides and useful tools across relationships, family, work, travel, home, leisure and community.">
 {% elif page.slug == 'insurance' %}<meta name="description" content="Free insurance tools and independent guides for Ireland: life insurance, mortgage protection, income protection and health insurance, with practical calculators.">
+{% elif page.slug == 'insurance-partnerships' %}<meta name="description" content="Discuss Irish insurance category, calculator and guide sponsorship with Compound. Independent editorial, clear advertising disclosure and verified reporting.">
 {% elif is_insurance_calculator %}<meta name="description" content="{{ insurance_tools[page.slug] }}">
 {% else %}{{ super() }}{% endif %}
 {% endblock %}
@@ -18,6 +19,8 @@
 <meta property="og:site_name" content="Compound">
 <meta name="twitter:card" content="summary">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Insurance Tools & Guides Ireland","url":"{{ site_url }}/insurance/","description":"Independent life insurance, mortgage protection, income protection and health insurance resources and free calculators for Ireland.","publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}}</script>
+{% elif page.slug == 'insurance-partnerships' %}
+<meta property="og:type" content="website"><meta property="og:title" content="Insurance Sponsorship & Advertising Ireland | Compound"><meta property="og:description" content="Explore independently labelled sponsorship options alongside Irish insurance tools and guides."><meta property="og:url" content="{{ site_url }}/insurance-partnerships/"><meta property="og:site_name" content="Compound"><meta name="twitter:card" content="summary">
 {% elif is_insurance_calculator %}
 <meta property="og:type" content="website"><meta property="og:title" content="{{ page.title }}"><meta property="og:description" content="{{ insurance_tools[page.slug] }}"><meta property="og:url" content="{{ site_url }}/{{ page.slug }}/"><meta property="og:site_name" content="Compound"><meta name="twitter:card" content="summary">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":{{ page.title|tojson }},"description":{{ insurance_tools[page.slug]|tojson }},"url":{{ (site_url ~ '/' ~ page.slug ~ '/')|tojson }},"applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"inLanguage":"en-IE","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ site_url }}/"},{"@type":"ListItem","position":2,"name":"Insurance","item":"{{ site_url }}/insurance/"},{"@type":"ListItem","position":3,"name":{{ page.title|tojson }},"item":{{ (site_url ~ '/' ~ page.slug ~ '/')|tojson }}}]}]}</script>
@@ -25,13 +28,15 @@
 {% endblock %}
 {% block post_styles %}
 {% if page.slug == 'life' %}<link rel="stylesheet" href="/static/life-hub.css?v=1">
-{% elif page.slug == 'insurance' %}<link rel="stylesheet" href="/static/insurance-hub.css?v=1"><script src="/static/insurance-hub.js?v=1" defer></script>
+{% elif page.slug == 'insurance' %}<link rel="stylesheet" href="/static/insurance-hub.css?v=1"><script src="/static/insurance-hub.js?v=2" defer></script>
+{% elif page.slug == 'insurance-partnerships' %}<link rel="stylesheet" href="/static/insurance-partnerships.css?v=1"><script src="/static/insurance-hub.js?v=2" defer></script>
 {% elif is_insurance_calculator %}<link rel="stylesheet" href="/static/insurance-tools-2026.css?v=1"><script src="/static/insurance-tools-2026.js?v=1" defer></script>
 {% endif %}
 {% endblock %}
 {% block content %}
 {% if page.slug == 'life' %}<div class="life-hub">{{ page.body_html|safe }}</div>
 {% elif page.slug == 'insurance' %}{{ page.body_html|safe }}
+{% elif page.slug == 'insurance-partnerships' %}{{ page.body_html|safe }}
 {% elif is_insurance_calculator %}
 {{ page.body_html|safe }}
 {% else %}<article class="info-page"><p class="eyebrow">COMPOUND / THE DETAILS</p><h1>{{ page.title }}</h1><div class="article-prose">{{ page.body_html|safe }}</div></article>
