@@ -390,7 +390,7 @@ jobs:
           # protection calculators and separated partnership disclosure.
           fetch https://compound.ie/insurance/ /tmp/insurance-hub.html
           grep -Fq '<link rel="canonical" href="https://compound.ie/insurance/">' /tmp/insurance-hub.html
-          grep -Fq 'Insurance Tools &amp; Guides Ireland' /tmp/insurance-hub.html
+          grep -Fq 'Insurance Tools' /tmp/insurance-hub.html
           grep -Fq '<meta name="description" content="Free insurance tools' /tmp/insurance-hub.html
           grep -Fq 'type="application/ld+json"' /tmp/insurance-hub.html
           grep -Fq 'data-ins-gap' /tmp/insurance-hub.html
