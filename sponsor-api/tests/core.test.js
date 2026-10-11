@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {COUNTIES,PRICE_ID,UPFRONT_PRICE_ID,CANCEL_NOTICE_DAYS,noticeDeadline,normalizeApplication,sha256,stripeSignature,FOUNDING_TRIAL_END_UNIX} from '../lib/core.js';
+import {COUNTIES,PRICE_ID,UPFRONT_PRICE_ID,CANCEL_NOTICE_DAYS,noticeDeadline,cancellationEffectiveAt,normalizeApplication,sha256,stripeSignature,FOUNDING_TRIAL_END_UNIX} from '../lib/core.js';
 import {createHmac} from 'node:crypto';
 
 test('includes exactly all 32 counties without duplicate names',()=>{
@@ -55,4 +55,13 @@ test('webhook checks initial paid invoice and exact one-time price before county
  const {readFile}=await import('node:fs/promises');
  const src=await readFile(new URL('../api/webhook.js',import.meta.url),'utf8');
  for(const item of ['validUpfrontCheckout','UPFRONT_PRICE_ID','invoice?.status','p_kind:\'upfront_paid\'','checkout.session.completed'])assert(src.includes(item),'Missing '+item);
+});
+
+test('written notice at least 30 days before renewal cancels at the next quarter boundary',()=>{
+ // Notice from October 2026: initial prepaid term ends on 1 April 2027.
+ assert.equal(new Date(cancellationEffectiveAt(Date.UTC(2026,9,11)/1000)*1000).toISOString(),'2027-04-01T00:00:00.000Z');
+ // March 20 is too late for April: allow the April-June term and cancel on July 1.
+ assert.equal(new Date(cancellationEffectiveAt(Date.UTC(2027,2,20)/1000)*1000).toISOString(),'2027-07-01T00:00:00.000Z');
+ // March 1 is early enough to cancel before April.
+ assert.equal(new Date(cancellationEffectiveAt(Date.UTC(2027,2,1)/1000)*1000).toISOString(),'2027-04-01T00:00:00.000Z');
 });
