@@ -10,7 +10,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 - Published editorial articles and guides: 159
 - Existing automated/legacy earnings source files: 11
-- Tools and calculators: 59
+- Tools and calculators: 64
 - Embedded tool-guide files: 57
 - Information and policy pages: 8
 - Main hubs: 11
@@ -202,7 +202,7 @@ Some old quarterly article routes are now redirects to continuous company profil
 - [Nike, Inc. (NKE) Earnings: FY 2027 Q1 Revenue, Profit and EPS](https://compound.ie/wealth/earnings/nke-earnings-fy2027-q1/) | source: content/wealth/nke-earnings-fy2027-q1.md
 - [PepsiCo (PEP) Earnings: FY 2026 Q3 Revenue, Profit and EPS](https://compound.ie/wealth/earnings/pep-earnings-fy2026-q3/) | source: content/wealth/pep-earnings-fy2026-q3.md
 
-## Interactive calculators and tools — 59
+## Interactive calculators and tools — 64
 
 ### EV & Motoring — 3
 
@@ -231,6 +231,14 @@ Some old quarterly article routes are now redirects to continuous company profil
 - [Solar + EV + Battery Optimiser Ireland](https://compound.ie/solar-ev-battery-optimiser/) | includes embedded guide
 - [Solar PV Payback Calculator Ireland](https://compound.ie/solar-payback-calculator/) | includes embedded guide
 - [Whole-House Retrofit Planner Ireland](https://compound.ie/whole-house-retrofit-planner/) | includes embedded guide
+
+### Insurance — 5
+
+- [Critical Illness Cover Calculator Ireland](https://compound.ie/critical-illness-cover-calculator/) | includes embedded guide
+- [Death-in-Service vs Life Insurance Calculator Ireland](https://compound.ie/death-in-service-life-insurance-calculator/) | includes embedded guide
+- [Health Insurance Cost Comparison Calculator Ireland](https://compound.ie/health-insurance-cost-comparison-calculator/) | includes embedded guide
+- [Home Insurance Rebuild Cost Calculator Ireland](https://compound.ie/home-insurance-rebuild-cost-calculator/) | includes embedded guide
+- [Insurance Premium Savings Calculator Ireland](https://compound.ie/insurance-premium-savings-calculator/) | includes embedded guide
 
 ### Loans & Debt — 2
 

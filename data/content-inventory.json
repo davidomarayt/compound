@@ -3461,6 +3461,24 @@
         "embedded_guide": "content/tool-guides/contractor-vs-salary-calculator.md"
       },
       {
+        "title": "Critical Illness Cover Calculator Ireland",
+        "url": "/critical-illness-cover-calculator/",
+        "source": "content/pages/critical-illness-cover-calculator.md",
+        "kind": "Calculator",
+        "category": "Insurance",
+        "slug": "critical-illness-cover-calculator",
+        "embedded_guide": "content/pages/critical-illness-cover-calculator.md"
+      },
+      {
+        "title": "Death-in-Service vs Life Insurance Calculator Ireland",
+        "url": "/death-in-service-life-insurance-calculator/",
+        "source": "content/pages/death-in-service-life-insurance-calculator.md",
+        "kind": "Calculator",
+        "category": "Insurance",
+        "slug": "death-in-service-life-insurance-calculator",
+        "embedded_guide": "content/pages/death-in-service-life-insurance-calculator.md"
+      },
+      {
         "title": "Debt Snowball vs Avalanche Calculator Ireland",
         "url": "/debt-repayment-calculator/",
         "source": "content/tools.yml",
@@ -3551,6 +3569,15 @@
         "embedded_guide": "content/tool-guides/glp1-cost-calculator-ireland.md"
       },
       {
+        "title": "Health Insurance Cost Comparison Calculator Ireland",
+        "url": "/health-insurance-cost-comparison-calculator/",
+        "source": "content/pages/health-insurance-cost-comparison-calculator.md",
+        "kind": "Calculator",
+        "category": "Insurance",
+        "slug": "health-insurance-cost-comparison-calculator",
+        "embedded_guide": "content/pages/health-insurance-cost-comparison-calculator.md"
+      },
+      {
         "title": "Help to Buy Calculator Ireland",
         "url": "/help-to-buy-calculator/",
         "source": "content/tools.yml",
@@ -3558,6 +3585,15 @@
         "category": "Mortgages & Home Buying",
         "slug": "help-to-buy-calculator",
         "embedded_guide": "content/tool-guides/help-to-buy-calculator.md"
+      },
+      {
+        "title": "Home Insurance Rebuild Cost Calculator Ireland",
+        "url": "/home-insurance-rebuild-cost-calculator/",
+        "source": "content/pages/home-insurance-rebuild-cost-calculator.md",
+        "kind": "Calculator",
+        "category": "Insurance",
+        "slug": "home-insurance-rebuild-cost-calculator",
+        "embedded_guide": "content/pages/home-insurance-rebuild-cost-calculator.md"
       },
       {
         "title": "House Buying Costs Calculator Ireland",
@@ -3603,6 +3639,15 @@
         "category": "Tax & Take-Home Pay",
         "slug": "inheritance-tax-calculator",
         "embedded_guide": "content/tool-guides/inheritance-tax-calculator.md"
+      },
+      {
+        "title": "Insurance Premium Savings Calculator Ireland",
+        "url": "/insurance-premium-savings-calculator/",
+        "source": "content/pages/insurance-premium-savings-calculator.md",
+        "kind": "Calculator",
+        "category": "Insurance",
+        "slug": "insurance-premium-savings-calculator",
+        "embedded_guide": "content/pages/insurance-premium-savings-calculator.md"
       },
       {
         "title": "Investment Fee Impact Calculator",

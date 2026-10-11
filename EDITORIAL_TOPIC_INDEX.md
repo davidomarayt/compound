@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 159 published articles and guides, 59 tools,
+**Included:** 159 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -184,6 +184,8 @@ For the complete register (including 510+ company profiles), open
 - [Childcare Cost vs Returning to Work Calculator Ireland](https://compound.ie/childcare-return-to-work-calculator/) — **Family & Life Planning**
 - [Compound Interest Calculator Ireland](https://compound.ie/compound-interest-calculator/) — **Pensions & Investing**
 - [Contractor Day Rate vs Salary Calculator Ireland 2026](https://compound.ie/contractor-vs-salary-calculator/) — **Tax & Take-Home Pay**
+- [Critical Illness Cover Calculator Ireland](https://compound.ie/critical-illness-cover-calculator/) — **Insurance**
+- [Death-in-Service vs Life Insurance Calculator Ireland](https://compound.ie/death-in-service-life-insurance-calculator/) — **Insurance**
 - [Debt Snowball vs Avalanche Calculator Ireland](https://compound.ie/debt-repayment-calculator/) — **Loans & Debt**
 - [DIRT Calculator Ireland](https://compound.ie/dirt-calculator/) — **Tax & Take-Home Pay**
 - [Electricity Cost Calculator Ireland](https://compound.ie/electricity-cost-calculator/) — **Home Energy**
@@ -194,12 +196,15 @@ For the complete register (including 510+ company profiles), open
 - [First Home Scheme Calculator Ireland](https://compound.ie/first-home-scheme-calculator/) — **Mortgages & Home Buying**
 - [Fuel Cost Calculator Ireland](https://compound.ie/fuel-cost-calculator/) — **EV & Motoring**
 - [GLP-1 Cost Calculator Ireland](https://compound.ie/glp1-cost-calculator-ireland/) — **Health**
+- [Health Insurance Cost Comparison Calculator Ireland](https://compound.ie/health-insurance-cost-comparison-calculator/) — **Insurance**
 - [Help to Buy Calculator Ireland](https://compound.ie/help-to-buy-calculator/) — **Mortgages & Home Buying**
+- [Home Insurance Rebuild Cost Calculator Ireland](https://compound.ie/home-insurance-rebuild-cost-calculator/) — **Insurance**
 - [House Buying Costs Calculator Ireland](https://compound.ie/house-buying-costs-calculator/) — **Mortgages & Home Buying**
 - [House Deposit Calculator Ireland](https://compound.ie/house-deposit-calculator/) — **Mortgages & Home Buying**
 - [Income Tax Calculator Ireland 2027](https://compound.ie/income-tax-calculator/) — **Tax & Take-Home Pay**
 - [Inflation Calculator Ireland](https://compound.ie/inflation-calculator/) — **Pensions & Investing**
 - [Inheritance & Gift Tax Calculator Ireland](https://compound.ie/inheritance-tax-calculator/) — **Tax & Take-Home Pay**
+- [Insurance Premium Savings Calculator Ireland](https://compound.ie/insurance-premium-savings-calculator/) — **Insurance**
 - [Investment Fee Impact Calculator](https://compound.ie/investment-fee-calculator/) — **Pensions & Investing**
 - [Lifetime Cost Calculator Ireland](https://compound.ie/lifetime-cost-calculator/) — **Family & Life Planning**
 - [Loan Repayment Calculator Ireland](https://compound.ie/loan-repayment-calculator/) — **Loans & Debt**
