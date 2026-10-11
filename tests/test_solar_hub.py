@@ -110,7 +110,8 @@ def test_solar_research_calculators_and_sources():
     assert "data-solar-battery" in battery and "round-trip efficiency" in battery.lower()
     assert "data-solar-export" in export and "standing charge" in export.lower()
     assert "data-solar-equipment" in equipment and "nameplate" in equipment.lower()
-    assert "data-bat-out" in js and "data-ex-out" in js and "data-eq-out" in js
+    assert "data-bat-out" in battery and "data-ex-out" in export and "data-eq-out" in equipment
+    assert "data-solar-battery" in js and "data-solar-export" in js and "data-solar-equipment" in js
     assert "Number.isFinite" in js
     assert "document.querySelector(\"[data-solar-battery]\")" in js
     for url in ("/solar/batteries/", "/solar/export-rates/", "/solar/equipment/"):
