@@ -168,6 +168,50 @@ def build():
     (ROOT / "data").mkdir(exist_ok=True)
     (ROOT / "data" / "content-inventory.json").write_text(
         json.dumps(catalogue, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    # Fast editorial lookup: omit hundreds of stock directory profiles to keep
+    # this small enough to scan before proposing a new article.
+    quick = [
+        "# Compound.ie — Quick Editorial Topic Index",
+        "",
+        "Updated: " + catalogue["snapshot_date"] + " | Automatically rebuilt from published source",
+        "",
+        "**Before recommending a new article:** search this page by keyword, synonym,",
+        "and reader question. An existing article or tool may already cover the idea.",
+        "If the search intent matches, expand the original canonical URL instead.",
+        "For the complete register (including 510+ company profiles), open",
+        "[CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).",
+        "",
+        f"**Included:** {len(articles)} published articles and guides, {len(tools)} tools,",
+        f"{len(earnings)} legacy earnings source files listed separately.",
+        "",
+        "## Published articles and guides — alphabetical",
+        "",
+    ]
+    quick += [
+        "- " + link(x) + " — **" + x["category"] + "**"
+        for x in ordered(articles)
+    ]
+    quick += ["", "## Calculators and tools — alphabetical", ""]
+    quick += [
+        "- " + link(x) + " — **" + x["category"] + "**"
+        for x in ordered(tools)
+    ]
+    quick += [
+        "", "## Ongoing and legacy company earnings", "",
+        "Earnings reports are not new standalone topic opportunities. Check",
+        "company stock research profiles and update the existing continuous",
+        "earnings report rather than creating a new article each quarter.",
+        "",
+        "## Editorial decision rule", "",
+        "- Same reader intent: **update the existing page**, keep its URL.",
+        "- Distinct reader intent: **create a new page** with contextual links.",
+        "- Related tool already exists: **link or improve the tool**, do not clone it.",
+        "- New earnings: **update a single company's fiscal-year history**, do not spam quarter URLs.",
+        "",
+    ]
+    (ROOT / "EDITORIAL_TOPIC_INDEX.md").write_text(
+        "\n".join(quick) + "\n", encoding="utf-8")
+
     print("Inventory generated:", ", ".join(k + "=" + str(len(v)) for k, v in sections.items()))
     if errors:
         print("Warnings:", errors)
