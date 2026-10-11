@@ -1,0 +1,40 @@
+name: Maintain content inventory
+on:
+  push:
+    branches: ["claude/clever-babbage-uibieq"]
+    paths:
+      - "content/**"
+      - "scripts/update_content_inventory.py"
+      - ".github/workflows/content-inventory.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: compound-content-inventory
+  cancel-in-progress: true
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install PyYAML
+      - name: Rebuild all titles, URLs, tools and research profiles
+        run: python scripts/update_content_inventory.py
+      - name: Commit updated inventory
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add CONTENT_INVENTORY.md data/content-inventory.json
+          if git diff --cached --quiet; then
+            echo 'Content inventory already current'
+            exit 0
+          fi
+          git commit -m 'docs: refresh complete Compound content inventory'
+          git push origin HEAD:claude/clever-babbage-uibieq
