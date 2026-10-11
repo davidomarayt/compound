@@ -198,3 +198,61 @@ body:has(.sol-sponsor-page) .site-footer{background:#fff;color:#181818;border-to
 body:has(.sol-sponsor-page) .site-footer .footer-top>div>p,
 body:has(.sol-sponsor-page) .site-footer .footer-disclaimer{color:#727272}
 body:has(.sol-sponsor-page) .site-footer .footer-bottom{border-top-color:#dedede;color:#555}
+
+/* Editorial → calculator → consented lead narrative; monochrome sponsor-only styles. */
+.sol-sponsor-page .sol-sponsor-funnel-heading h2{margin-bottom:17px!important}
+.sol-sponsor-page .sol-sponsor-funnel-intro{font-size:15px;line-height:1.75;color:#535353;max-width:790px;margin:0 0 28px!important}
+.sol-sponsor-page .sol-sponsor-funnel-steps{gap:0}
+.sol-sponsor-page .sol-sponsor-funnel-steps li{display:flex;flex-direction:column;min-height:294px;padding:23px 19px;border:1px solid #ddd;border-right:0;background:#fff}
+.sol-sponsor-page .sol-sponsor-funnel-steps li:last-child{border-right:1px solid #ddd}
+.sol-sponsor-page .sol-sponsor-funnel-steps li>span:first-child{font:750 10px/1.4 Arial,Helvetica,sans-serif;color:#777;letter-spacing:.075em;margin:0 0 29px}
+.sol-sponsor-page .sol-sponsor-funnel-steps li strong{font-size:19px;line-height:1.27;letter-spacing:-.035em}
+.sol-sponsor-page .sol-sponsor-funnel-steps li p{font-size:12.5px;line-height:1.75;margin-bottom:15px!important}
+.sol-sponsor-page .sol-sponsor-stage-link{margin-top:auto;display:inline-block;font:700 11px/1.6 Arial,Helvetica,sans-serif;color:#161616;text-decoration:underline;text-underline-offset:3px}
+.sol-sponsor-page .sol-sponsor-stage-status{margin-top:auto;display:block;font:650 11px/1.6 Arial,Helvetica,sans-serif;color:#797979}
+.sol-sponsor-page .sol-sponsor-funnel-foot{display:block;margin-top:0!important;padding:17px 20px;border:1px solid #e0e0e0;border-top:0;background:#f9f9f9;color:#5d5d5d;max-width:none;font-size:12px;line-height:1.8}
+.sol-sponsor-page .sol-sponsor-funnel-foot strong{color:#191919}
+.sol-sponsor-page .sol-sponsor-quality{padding:82px 0;border-bottom:1px solid var(--s-line);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,78px);align-items:center}
+.sol-sponsor-page .sol-sponsor-quality h2{font-size:clamp(34px,3.9vw,53px)!important;line-height:1.11!important;margin:15px 0 24px!important}
+.sol-sponsor-page .sol-sponsor-quality h2 span{color:#656565!important}
+.sol-sponsor-page .sol-sponsor-quality-copy>p:not(.sol-sponsor-eyebrow){font-size:15px;color:#555;line-height:1.8;margin:0 0 17px!important}
+.sol-sponsor-page .sol-sponsor-quality-copy strong{color:#171717}
+.sol-sponsor-page .sol-sponsor-quality-copy .sol-sponsor-quality-caveat{font-size:12px!important;color:#777!important;border-left:2px solid #bdbdbd;padding-left:15px;margin-top:24px!important}
+.sol-sponsor-page .sol-sponsor-lead-contrast{border:1px solid #d6d6d6;background:#fff}
+.sol-sponsor-page .sol-sponsor-contrast-basic{padding:25px 27px;background:#f4f4f4;border-bottom:1px solid #dedede}
+.sol-sponsor-page .sol-sponsor-contrast-basic>span,
+.sol-sponsor-page .sol-sponsor-contrast-detailed>span{display:block;font-size:10px;font-weight:750;letter-spacing:.09em;color:#6c6c6c;margin:0 0 17px}
+.sol-sponsor-page .sol-sponsor-contrast-basic>strong{display:block;font-size:19px;letter-spacing:-.03em;color:#555;margin:0 0 10px}
+.sol-sponsor-page .sol-sponsor-contrast-basic>small{font-size:12px;color:#7c7c7c}
+.sol-sponsor-page .sol-sponsor-contrast-detailed{padding:26px 27px}
+.sol-sponsor-page .sol-sponsor-contrast-detailed>strong{font-size:23px;line-height:1.2;letter-spacing:-.04em;display:block;margin:0 0 17px;color:#111}
+.sol-sponsor-page .sol-sponsor-contrast-detailed dl{margin:0;display:grid;gap:0}
+.sol-sponsor-page .sol-sponsor-contrast-detailed dl>div{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:12px;padding:10px 0;border-top:1px solid #e7e7e7}
+.sol-sponsor-page .sol-sponsor-contrast-detailed dt{font:700 12px/1.5 Arial,Helvetica,sans-serif;color:#262626}
+.sol-sponsor-page .sol-sponsor-contrast-detailed dd{margin:0;font:400 12px/1.5 Arial,Helvetica,sans-serif;color:#686868}
+.sol-sponsor-page .sol-sponsor-contrast-detailed>p{font-size:11px;line-height:1.7;color:#777;padding-top:15px;border-top:1px solid #e7e7e7;margin:0!important}
+.sol-sponsor-page .sol-sponsor-outcomes{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,75px);padding:80px 0;border-bottom:1px solid var(--s-line)}
+.sol-sponsor-page .sol-sponsor-outcomes h2{font-size:clamp(33px,3.75vw,51px)!important;line-height:1.12!important;margin-top:15px!important}
+.sol-sponsor-page .sol-sponsor-outcomes h2 span{color:#666!important}
+.sol-sponsor-page .sol-sponsor-outcomes-copy p{font-size:14px;line-height:1.75;color:#595959;border-bottom:1px solid #e8e8e8;padding:17px 0;margin:0!important}
+.sol-sponsor-page .sol-sponsor-outcomes-copy p:first-child{padding-top:0}
+.sol-sponsor-page .sol-sponsor-outcomes-copy p strong{color:#161616}
+.sol-sponsor-page .sol-sponsor-outcomes-copy .sol-sponsor-outcomes-note{font-size:11px;color:#7a7a7a;border-bottom:0}
+@media(max-width:1040px){
+  .sol-sponsor-page .sol-sponsor-funnel-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sol-sponsor-page .sol-sponsor-funnel-steps li{min-height:245px}
+  .sol-sponsor-page .sol-sponsor-funnel-steps li:nth-child(2){border-right:1px solid #ddd}
+  .sol-sponsor-page .sol-sponsor-funnel-steps li:nth-child(-n+2){border-bottom:0}
+}
+@media(max-width:780px){
+  .sol-sponsor-page .sol-sponsor-quality,.sol-sponsor-page .sol-sponsor-outcomes{grid-template-columns:minmax(0,1fr);gap:30px;padding:58px 0}
+}
+@media(max-width:560px){
+  .sol-sponsor-page .sol-sponsor-funnel-steps{grid-template-columns:minmax(0,1fr)}
+  .sol-sponsor-page .sol-sponsor-funnel-steps li{min-height:0;padding:20px;border:1px solid #ddd!important;border-bottom:0!important}
+  .sol-sponsor-page .sol-sponsor-funnel-steps li:last-child{border-bottom:1px solid #ddd!important}
+  .sol-sponsor-page .sol-sponsor-funnel-steps li>span:first-child{margin-bottom:14px}
+  .sol-sponsor-page .sol-sponsor-funnel-steps li p{margin-bottom:15px!important}
+  .sol-sponsor-page .sol-sponsor-lead-contrast :is(.sol-sponsor-contrast-basic,.sol-sponsor-contrast-detailed){padding:21px 18px}
+  .sol-sponsor-page .sol-sponsor-contrast-detailed dl>div{grid-template-columns:minmax(0,1fr);gap:3px}
+}
