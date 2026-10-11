@@ -6,7 +6,7 @@ pillar: wealth
 draft: false
 publication_status: published
 date: 2026-10-03
-reviewed: 2026-10-03
+reviewed: 2026-10-11
 approved_by: "Explicit publish instruction — 3 October 2026"
 summary: "A complete 2026 guide to solar panels in Ireland: SEAI grants, the new €600 battery grant, 0% VAT, realistic generation, CEG export payments, batteries, grid connection, planning and payback."
 meta_description: "Solar panels Ireland 2026: understand costs, €1,800 SEAI grant, €600 battery grant, 0% VAT, CEG export payments, planning, sizing and payback."
@@ -39,6 +39,8 @@ sources:
   - title: "Department of Climate, Energy and the Environment: Small-Scale Renewable Electricity Generation / SRESS. Checked 3 October 2026."
     url: https://www.gov.ie/en/department-of-climate-energy-and-the-environment/publications/small-scale-renewable-electricity-generation/
 ---
+
+**New: [Explore the Compound Solar Hub](/solar/)** to compare installation quotes, check grant eligibility and find registered installers. For the detailed calculations, use the linked solar tools below.
 
 Solar panels are one of the few home upgrades in Ireland that can create value in **two ways at once**:
 
@@ -204,7 +206,7 @@ SEAI currently lists eligible applicant types including:
 - owner-management companies;
 - approved housing bodies.
 
-For the domestic scheme, the home must have an **MPRN**, must have been built and occupied before **2021**, and must not previously have received solar PV funding at that MPRN.
+For the domestic scheme, the home must have an **MPRN**, must have been built and occupied before **2025**, and must not previously have received solar PV funding at that MPRN.
 
 You must receive the relevant SEAI grant offer before starting the works.
 

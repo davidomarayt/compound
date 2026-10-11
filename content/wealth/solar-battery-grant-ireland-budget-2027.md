@@ -7,7 +7,7 @@ canonical_path: /news/solar-battery-grant-ireland-budget-2027/
 draft: false
 publication_status: published
 date: 2026-09-28
-reviewed: 2026-10-03
+reviewed: 2026-10-11
 summary: "A new €600 grant for home battery storage is expected in Budget 2027. We explain what has been reported, how much it could reduce upfront costs, and when a battery is actually likely to make financial sense for an Irish household."
 meta_description: "A €600 solar battery grant is expected in Budget 2027. See how it could affect payback, who may benefit most, and model your own solar and battery costs."
 tags: [news, solar, battery-storage, budget-2027, seai, electricity, home-energy, ireland]
@@ -397,7 +397,7 @@ SEAI currently offers a maximum domestic solar PV grant of **€1,800**.
 The home must generally:
 
 - have an MPRN;
-- have been built and occupied before 2021;
+- have been built and occupied before 2025;
 - not previously have received solar PV funding at that MPRN;
 - and have grant approval before works begin.
 

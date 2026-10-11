@@ -6,7 +6,7 @@ pillar: wealth
 draft: false
 publication_status: published
 date: 2026-09-21
-reviewed: 2026-10-03
+reviewed: 2026-10-11
 summary: 'A battery can increase how much of your solar you use at home, but that does not automatically mean a faster payback. The answer depends on export rates, night tariffs, when you use electricity and whether you have an EV.'
 meta_description: 'Solar panels vs battery in Ireland: worked 2026 examples on payback, export payments, night-rate charging, EV charging, battery efficiency and the SEAI solar grant.'
 tags: [solar, battery-storage, electricity, ev, home-energy, ireland]
@@ -38,6 +38,8 @@ sources:
 - title: 'SEAI: HELPer smart-energy tool announcement, 7 September 2026.'
   url: https://www.seai.ie/blog/meet-helper-seais-new-tool
 ---
+
+**Use the new [Compound Solar Hub](/solar/)** to compare quotes, grants and installers before deciding whether storage is worthwhile.
 
 A home battery solves a real solar problem.
 
@@ -94,7 +96,7 @@ The current grant structure is:
 
 A 4 kWp or larger eligible installation therefore receives the maximum €1,800 solar grant.
 
-The home must have an MPRN, must have been built and occupied before 2021, must not previously have received solar PV funding at that MPRN, and the SEAI grant application must be approved **before works begin**.
+The home must have an MPRN, must have been built and occupied before 2025, must not previously have received solar PV funding at that MPRN, and the SEAI grant application must be approved **before works begin**.
 
 [SEAI: Solar electricity grant](https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant).
 

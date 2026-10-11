@@ -43,6 +43,20 @@ jobs:
         env:
           SITE_BASE_URL: https://compound.ie
           PREVIEW_BASE_URL: https://compound.ie
+      - name: Verify Solar hub pages and client script
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check compound/site/static/solar-hub.js
+          for path in solar solar/compare-quotes solar/grants solar/costs solar/installers solar/get-quotes; do
+            test -s "public/$path/index.html"
+            grep -q 'rel="canonical"' "public/$path/index.html"
+            grep -q 'solar-hub.css' "public/$path/index.html"
+          done
+          grep -q 'https://compound.ie/solar/compare-quotes/' public/solar/compare-quotes/index.html
+          grep -q '/solar/' public/wealth/index.html
+          grep -q 'solar-payback-calculator/' public/solar/index.html
+          ! grep -R -F 'built and occupied before 2021' public/solar public/solar-payback-calculator public/wealth/solar-panels-ireland public/wealth/solar-panels-vs-battery-ireland
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public

@@ -66,15 +66,15 @@
       var kwp=value(gv("kwp"),0,100),battery=value(gv("battery"),0,200);
       var common=gv("age").value==="yes"&&gv("mprn").value==="yes";
       var pv=common&&gv("priorpv").value==="no"?pvGrant(kwp):0;
-      // Conservative checker: battery-only retrofits without newly-entered PV are referred to SEAI.
-      var bg=common&&gv("priorbattery").value==="no"&&Number.isFinite(battery)&&battery>=5&&Number.isFinite(kwp)&&kwp>0?600:0;
+      // SEAI permits a battery-only application, including a later upgrade after existing solar PV.
+      var bg=common&&gv("priorbattery").value==="no"&&Number.isFinite(battery)&&battery>=5?600:0;
       var total=pv+bg;
       setText(grants.querySelector("[data-sg-total]"),money.format(total));
       setText(grants.querySelector("[data-sg-pv]"),money.format(pv));
       setText(grants.querySelector("[data-sg-battery]"),money.format(bg));
       var message=!common?"Basic property/MPRN conditions are not confirmed; this estimate excludes both grants.":
         total>0?"Potential standard grant under the entries above, subject to SEAI review, registered installation and approval before work begins.":
-        "No standard grant is modelled for these inputs. Check with SEAI, particularly for a battery-only application or an enhanced scheme.";
+        "No standard grant is modelled for these inputs. Check with SEAI, particularly for an enhanced scheme.";
       setText(grants.querySelector("[data-sg-msg]"),message);
     }
     grants.addEventListener("input",calcGrants);grants.addEventListener("change",calcGrants);calcGrants();
