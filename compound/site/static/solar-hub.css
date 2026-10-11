@@ -226,3 +226,20 @@
   .sol-shell :is(.sol-btn,.sol-subcrumb a,.sol-return a){white-space:normal}
   .sol-shell .sol-grant-result :is(strong,span){overflow-wrap:anywhere}
 }
+
+/* New solar research tools: responsive, isolated widgets. */
+.sol-tariffgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;min-width:0}
+.sol-tariff{background:#fcfbf7;border:1px solid var(--sol-line);border-radius:6px;padding:18px;margin:0;min-width:0;display:grid;gap:14px}
+.sol-tariff legend{font:700 16px var(--sans);padding:0 8px;color:var(--sol-ink)}
+.sol-tariff label{display:grid;gap:6px;min-width:0;font-size:13px;font-weight:650;overflow-wrap:anywhere}
+.sol-tariff input{width:100%;min-width:0;max-width:100%;min-height:43px;padding:9px;border:1px solid var(--sol-line);border-radius:5px;background:white;color:#22342e;font:inherit}
+.sol-research-result{min-width:0;max-width:100%;overflow-wrap:anywhere}
+.sol-research-result .sol-minirows>div{min-width:0;gap:12px}
+.sol-research-result .sol-minirows span{min-width:0;overflow-wrap:anywhere}
+.sol-research-result .sol-minirows strong{text-align:right;min-width:0;overflow-wrap:anywhere}
+@media screen and (max-width:730px){
+ .sol-tariffgrid{grid-template-columns:minmax(0,1fr)}
+ .sol-tariff{padding:13px}
+ .sol-research-result>strong{font-size:clamp(28px,8vw,50px)}
+ .sol-research-result .sol-minirows>div{grid-template-columns:minmax(0,1fr) auto;gap:8px}
+}
