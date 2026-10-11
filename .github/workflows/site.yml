@@ -87,6 +87,20 @@ jobs:
           fetch https://compound.ie/ /tmp/home.html
           grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/home.html
 
+          # Verify solar hub canonical URLs, on-page tools and AdSense script on the public domain.
+          for slug in solar solar/compare-quotes solar/grants solar/costs solar/installers solar/get-quotes; do
+            target="/tmp/solar-${slug//\//-}.html"
+            fetch "https://compound.ie/${slug}/" "$target"
+            grep -Fq 'solar-hub.css' "$target"
+            grep -Fq "<link rel=\"canonical\" href=\"https://compound.ie/${slug}/\">" "$target"
+          done
+          grep -Fq '/solar/compare-quotes/' /tmp/solar-solar.html
+          grep -Fq 'data-solar-quotes' /tmp/solar-solar-compare-quotes.html
+          grep -Fq 'data-solar-grants' /tmp/solar-solar-grants.html
+          grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/solar-solar.html
+          fetch https://compound.ie/static/solar-hub.js /tmp/solar-hub.js
+          grep -Fq 'data-solar-quotes' /tmp/solar-hub.js
+
           fetch https://compound.ie/ads.txt /tmp/ads.txt
           grep -Fq 'google.com, pub-6115783809711785, DIRECT, f08c47fec0942fa0' /tmp/ads.txt
 
