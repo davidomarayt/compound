@@ -1,0 +1,67 @@
+{
+  "cik": 320187,
+  "company": "Nike, Inc.",
+  "latest": {
+    "accession": "0000320187-26-000193",
+    "filed": "2026-10-02",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.48,
+        "prior_year": 0.49,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 712000000,
+        "prior_year": 727000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 11213000000,
+        "prior_year": 11720000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000193/nke-20260831.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000320187-26-000193",
+      "filed": "2026-10-02",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.48,
+          "prior_year": 0.49,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 712000000,
+          "prior_year": 727000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 11213000000,
+          "prior_year": 11720000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000193/nke-20260831.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "NKE",
+  "updated": "2026-10-11"
+}

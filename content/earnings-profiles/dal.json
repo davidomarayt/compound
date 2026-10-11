@@ -1,0 +1,125 @@
+{
+  "cik": 27904,
+  "company": "Delta Air Lines",
+  "latest": {
+    "accession": "0000027904-26-000038",
+    "filed": "2026-10-09",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.15,
+        "prior_year": 2.17,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 756000000,
+        "prior_year": 1417000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 20186000000,
+        "prior_year": 16673000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000038/dal-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000027904-26-000022",
+      "filed": "2026-04-08",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.44,
+          "prior_year": 0.37,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -289000000,
+          "prior_year": 240000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 15854000000,
+          "prior_year": 14040000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000022/dal-20260331.htm"
+    },
+    {
+      "accession": "0000027904-26-000031",
+      "filed": "2026-07-10",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.44,
+          "prior_year": 3.27,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1604000000,
+          "prior_year": 2130000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 19757000000,
+          "prior_year": 16648000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000031/dal-20260630.htm"
+    },
+    {
+      "accession": "0000027904-26-000038",
+      "filed": "2026-10-09",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.15,
+          "prior_year": 2.17,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 756000000,
+          "prior_year": 1417000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 20186000000,
+          "prior_year": 16673000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/27904/000002790426000038/dal-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "DAL",
+  "updated": "2026-10-11"
+}

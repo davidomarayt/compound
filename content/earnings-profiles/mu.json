@@ -1,0 +1,125 @@
+{
+  "cik": 723125,
+  "company": "Micron Technology",
+  "latest": {
+    "accession": "0000723125-26-000023",
+    "filed": "2026-10-09",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 74.33,
+        "prior_year": 7.59,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 84969000000,
+        "prior_year": 8539000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 133188000000,
+        "prior_year": 37378000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-03",
+    "source": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000723125-26-000006",
+      "filed": "2026-03-19",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 12.07,
+          "prior_year": 1.41,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 13785000000,
+          "prior_year": 1583000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 23860000000,
+          "prior_year": 8053000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-02-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000006/mu-20260226.htm"
+    },
+    {
+      "accession": "0000723125-26-000015",
+      "filed": "2026-06-25",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 24.67,
+          "prior_year": 1.68,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 28243000000,
+          "prior_year": 1885000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 41456000000,
+          "prior_year": 9301000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm"
+    },
+    {
+      "accession": "0000723125-26-000023",
+      "filed": "2026-10-09",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 74.33,
+          "prior_year": 7.59,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 84969000000,
+          "prior_year": 8539000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 133188000000,
+          "prior_year": 37378000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/723125/000072312526000023/mu-20260903.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "MU",
+  "updated": "2026-10-11"
+}
