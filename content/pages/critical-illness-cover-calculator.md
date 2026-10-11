@@ -16,7 +16,7 @@ title: "Critical Illness Cover Calculator Ireland"
 <div class="it26-result-row"><span>Income-support component</span><strong data-i-result="monthly">—</strong></div>
 <div class="it26-result-row"><span>Savings and qualifying existing cover</span><strong data-i-result="resources">—</strong></div></div><div class="it26-meter" aria-hidden="true"><i data-i-progress></i></div><p class="it26-note" data-i-note>Planning illustration only.</p></section>
 </div>
-<div class="it26-explanation">
+<div class="it26-explanation" markdown="1">
 
 ## Serious illness and critical illness insurance in Ireland
 
