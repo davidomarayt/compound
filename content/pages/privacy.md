@@ -1,7 +1,7 @@
 ---
 title: Privacy policy
 ---
-*Last updated: 14 September 2026*
+*Last updated: 11 October 2026*
 
 This policy explains what personal data Compound (compound.ie) collects, why, and your rights over it. The site is operated from Ireland by its owner, who is the data controller for the purposes of the General Data Protection Regulation (GDPR) and the Data Protection Act 2018. Contact: [david@compound.ie](mailto:david@compound.ie).
 
@@ -15,6 +15,8 @@ Our hosting provider, GitHub Pages, records standard server logs (such as IP add
 
 **Contacting us.** If you email us, we keep the correspondence for as long as needed to deal with it.
 
+**Solar installer sponsorship applications.** Our installer application form collects the company name, contact person, business email, optional phone, website, registration information, requested counties and optional message. We use these details to assess enquiries, check eligibility, respond to applicants and arrange sponsorships only after an agreement. Submitting a form does not reserve a county or create a paid subscription. The form submits over HTTPS to **FormSubmit (formsubmit.co)**, a third-party processor that forwards the submission to Compound by email and may send an automated acknowledgement to the applicant. FormSubmit states that its submission archive is retained for 30 days; email correspondence received by Compound follows our own retention policy below. See [FormSubmit's privacy notice](https://formsubmit.co/privacy.pdf). We do not include submitted details in analytics events.
+
 ## Advertising
 
 Compound may show advertisements served by Google AdSense. Google, as a third-party vendor, uses cookies to serve ads based on your prior visits to this website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to this site and/or other sites on the internet.
@@ -23,7 +25,7 @@ Where advertising is shown to visitors in the European Economic Area or the UK, 
 
 ## Legal basis
 
-We rely on your consent for Google Analytics, email subscriptions and personalised advertising cookies, and on our legitimate interest in running and securing the site for server logs and correspondence.
+We rely on your consent for Google Analytics, email subscriptions and personalised advertising cookies, and on our legitimate interest in running and securing the site for server logs and correspondence. We process requested solar sponsorship applications to take steps at the applicant's request before entering a potential business contract, and where appropriate on our legitimate interest in handling business enquiries. We do not add applicants to unrelated marketing lists.
 
 ## Your rights
 

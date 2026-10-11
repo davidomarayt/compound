@@ -58,6 +58,10 @@ jobs:
           grep -q 'https://compound.ie/solar/compare-quotes/' public/solar/compare-quotes/index.html
           grep -q '/solar/' public/wealth/index.html
           grep -q 'data-solar-sponsor-form' public/solar/for-installers/index.html
+          grep -Fq 'https://formsubmit.co/david@compound.ie' public/solar/for-installers/index.html
+          grep -Fq 'data-sponsor-counties' public/solar/for-installers/index.html
+          ! grep -q 'action="mailto:' public/solar/for-installers/index.html
+          ! grep -q 'Prepare my application email' public/solar/for-installers/index.html
           grep -q 'solar-sponsors.css' public/solar/for-installers/index.html
           ! grep -q 'pagead2.googlesyndication.com' public/solar/for-installers/index.html
           ! grep -q '<ins class="adsbygoogle"' public/solar/for-installers/index.html
@@ -110,6 +114,8 @@ jobs:
           grep -Fq '/solar/compare-quotes/' /tmp/solar-solar.html
           ! grep -Fq 'pagead2.googlesyndication.com' /tmp/solar-solar-for-installers.html
           grep -Fq 'data-solar-sponsor-form' /tmp/solar-solar-for-installers.html
+          grep -Fq 'https://formsubmit.co/david@compound.ie' /tmp/solar-solar-for-installers.html
+          ! grep -Fq 'action="mailto:' /tmp/solar-solar-for-installers.html
           grep -Fq 'data-solar-quotes' /tmp/solar-solar-compare-quotes.html
           grep -Fq 'data-solar-grants' /tmp/solar-solar-grants.html
           grep -Fq 'data-solar-battery' /tmp/solar-solar-batteries.html

@@ -4,6 +4,7 @@ canonical_path: /solar/for-installers/
 meta_description: "Apply to become an exclusive county solar installation sponsor with Compound.ie. Choose from 32 Irish counties, view monthly pricing and register interest before launch."
 ---
 <div class="sol-shell sol-sponsor-page">
+  <p class="sol-sponsor-confirmation-standalone" data-sponsor-confirmation-banner hidden role="status"><strong>Application received.</strong> Your sponsorship enquiry has been submitted for review. We will contact you regarding company verification and county availability. No reservation or charge has been made.</p>
   <nav class="sol-subcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/solar/">Solar</a> / <span aria-current="page">For installers</span></nav>
   <header class="sol-sponsor-hero">
     <div class="sol-sponsor-hero-main">
@@ -40,40 +41,49 @@ meta_description: "Apply to become an exclusive county solar installation sponso
 
   <section class="sol-sponsor-application" id="county-reservation" aria-labelledby="sponsor-application-heading">
     <div class="sol-sponsor-application-head"><div><p class="sol-ey">REGISTER INTEREST</p><h2 id="sponsor-application-heading">Pick your <em>territory.</em></h2><p>Request the counties your company actively serves. All 32 counties can be requested; availability is confirmed individually after review.</p></div><div class="sol-sponsor-prelaunch">PRE-LAUNCH APPLICATIONS OPEN</div></div>
-    <form data-solar-sponsor-form action="mailto:david@compound.ie" method="post" enctype="text/plain">
+    <form data-solar-sponsor-form action="https://formsubmit.co/david@compound.ie" method="POST" accept-charset="UTF-8">
+      <input type="hidden" name="_subject" value="Compound Solar — New Installer Sponsorship Application">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://compound.ie/solar/for-installers/?submitted=1">
+      <input type="hidden" name="_autoresponse" value="Thank you for applying to become a Compound Solar county sponsor. We have received your application for review. Your requested counties are not reserved until we confirm them, and no subscription or payment has started. We will be in touch regarding verification and availability. — Compound.ie">
+      <input type="hidden" name="counties_requested" data-sponsor-counties value="">
+      <input type="hidden" name="selected_county_count" data-sponsor-total value="0">
+      <input type="hidden" name="indicative_monthly_fee_eur" data-sponsor-fee value="0">
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;opacity:0" value="">
+      <div class="sol-sponsor-submitted" data-sponsor-confirmation role="status" hidden><strong>Application submitted</strong><p>Thank you for your interest in Compound Solar. Your application has been passed to our form-processing service for delivery to Compound. We will contact you after reviewing your selected counties and company details. No county reservation or payment has started.</p><a href="/solar/">Return to the solar hub ↗</a></div>
       <div class="sol-sponsor-selection">
-        <fieldset><legend>Republic of Ireland <span>26 counties</span></legend><div class="sol-sponsor-countygrid"><label class="sol-sponsor-county"><input type="checkbox" name="county" value="Carlow" data-county><span>Carlow<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Cavan" data-county><span>Cavan<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Clare" data-county><span>Clare<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Cork" data-county><span>Cork<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Donegal" data-county><span>Donegal<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Dublin" data-county><span>Dublin<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Galway" data-county><span>Galway<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Kerry" data-county><span>Kerry<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Kildare" data-county><span>Kildare<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Kilkenny" data-county><span>Kilkenny<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Laois" data-county><span>Laois<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Leitrim" data-county><span>Leitrim<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Limerick" data-county><span>Limerick<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Longford" data-county><span>Longford<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Louth" data-county><span>Louth<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Mayo" data-county><span>Mayo<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Meath" data-county><span>Meath<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Monaghan" data-county><span>Monaghan<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Offaly" data-county><span>Offaly<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Roscommon" data-county><span>Roscommon<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Sligo" data-county><span>Sligo<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Tipperary" data-county><span>Tipperary<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Waterford" data-county><span>Waterford<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Westmeath" data-county><span>Westmeath<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Wexford" data-county><span>Wexford<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Wicklow" data-county><span>Wicklow<small>Request county</small></span></label></div></fieldset>
-        <fieldset><legend>Northern Ireland <span>6 counties</span></legend><div class="sol-sponsor-countygrid"><label class="sol-sponsor-county"><input type="checkbox" name="county" value="Antrim" data-county><span>Antrim<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Armagh" data-county><span>Armagh<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Derry / Londonderry" data-county><span>Derry / Londonderry<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Down" data-county><span>Down<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Fermanagh" data-county><span>Fermanagh<small>Request county</small></span></label>
-<label class="sol-sponsor-county"><input type="checkbox" name="county" value="Tyrone" data-county><span>Tyrone<small>Request county</small></span></label></div><p class="sol-sponsor-region-note">Northern Ireland applications are subject to verification of relevant UK installation credentials and a separate agreement on currency and tax treatment.</p></fieldset>
+        <fieldset><legend>Republic of Ireland <span>26 counties</span></legend><div class="sol-sponsor-countygrid"><label class="sol-sponsor-county"><input type="checkbox" value="Carlow" data-county><span>Carlow<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Cavan" data-county><span>Cavan<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Clare" data-county><span>Clare<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Cork" data-county><span>Cork<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Donegal" data-county><span>Donegal<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Dublin" data-county><span>Dublin<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Galway" data-county><span>Galway<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Kerry" data-county><span>Kerry<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Kildare" data-county><span>Kildare<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Kilkenny" data-county><span>Kilkenny<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Laois" data-county><span>Laois<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Leitrim" data-county><span>Leitrim<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Limerick" data-county><span>Limerick<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Longford" data-county><span>Longford<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Louth" data-county><span>Louth<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Mayo" data-county><span>Mayo<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Meath" data-county><span>Meath<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Monaghan" data-county><span>Monaghan<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Offaly" data-county><span>Offaly<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Roscommon" data-county><span>Roscommon<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Sligo" data-county><span>Sligo<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Tipperary" data-county><span>Tipperary<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Waterford" data-county><span>Waterford<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Westmeath" data-county><span>Westmeath<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Wexford" data-county><span>Wexford<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Wicklow" data-county><span>Wicklow<small>Request county</small></span></label></div></fieldset>
+        <fieldset><legend>Northern Ireland <span>6 counties</span></legend><div class="sol-sponsor-countygrid"><label class="sol-sponsor-county"><input type="checkbox" value="Antrim" data-county><span>Antrim<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Armagh" data-county><span>Armagh<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Derry / Londonderry" data-county><span>Derry / Londonderry<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Down" data-county><span>Down<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Fermanagh" data-county><span>Fermanagh<small>Request county</small></span></label>
+<label class="sol-sponsor-county"><input type="checkbox" value="Tyrone" data-county><span>Tyrone<small>Request county</small></span></label></div><p class="sol-sponsor-region-note">Northern Ireland applications are subject to verification of relevant UK installation credentials and a separate agreement on currency and tax treatment.</p></fieldset>
       </div>
       <div class="sol-sponsor-calculator" aria-live="polite">
         <div><span class="sol-sponsor-summary-label">Counties selected</span><strong data-sponsor-count>0 of 32</strong></div>
@@ -94,11 +104,11 @@ meta_description: "Apply to become an exclusive county solar installation sponso
         <label class="sol-sponsor-notes-label">Anything else we should know?<textarea name="notes" maxlength="450" rows="3" placeholder="Your current service area or questions about the programme (optional)"></textarea></label>
       </div>
       <div class="sol-sponsor-disclosures">
-        <label class="sol-sponsor-check"><input type="checkbox" required name="acknowledgement" value="yes"><span>I understand this is a non-binding expression of interest, with no automatic county reservation or payment. I will need to send the prepared application email to Compound to complete my enquiry.</span></label>
-        <p>Your details remain in your browser until you choose to send the email from your own email app. Compound will use emailed business contact details to respond to your sponsorship enquiry. See our <a href="/privacy/">privacy policy</a>.</p>
+        <label class="sol-sponsor-check"><input type="checkbox" required name="acknowledgement" value="yes"><span>I understand this is a non-binding expression of interest, with no automatic county reservation or payment. Compound will contact me after reviewing my application, and no payment will be collected at this stage.</span></label>
+        <p>When you submit, your selected counties and business contact information are securely transferred to <a href="https://formsubmit.co/privacy.pdf" rel="noopener" target="_blank">FormSubmit</a>, our third-party form provider, to deliver your application to Compound by email. We use the details to evaluate your sponsorship enquiry, not to automatically reserve counties or take payment. See our <a href="/privacy/">privacy policy</a>.</p>
       </div>
-      <div class="sol-sponsor-submit-row"><button class="sol-btn" type="submit">Prepare my application email <span aria-hidden="true">↗</span></button><button class="sol-sponsor-copy" type="button" data-sponsor-copy>Copy application instead</button></div>
-      <p class="sol-sponsor-form-status" data-sponsor-status role="status" aria-live="polite">Your email app will open with the selected counties and company details. The request is only sent when you send that email.</p>
+      <div class="sol-sponsor-submit-row"><button class="sol-btn" type="submit" data-sponsor-submit>Submit sponsorship application <span aria-hidden="true">↗</span></button></div>
+      <p class="sol-sponsor-form-status" data-sponsor-status role="status" aria-live="polite">Click Submit to send your application directly to Compound. No email app is needed. You may be asked to complete a spam-prevention check.</p>
     </form>
   </section>
 
