@@ -1,0 +1,542 @@
+# Site-wide QA is separate from the article release path.
+# Nightly audits check all historical pages. A solar/UI change triggers a
+# mobile check after its deployed site workflow succeeds.
+name: quality-audit
+on:
+  workflow_run:
+    workflows: ["site"]
+    types: [completed]
+  workflow_dispatch:
+  schedule:
+    - cron: "20 3 * * *"
+permissions:
+  contents: read
+concurrency:
+  group: quality-audit-${{ github.event.workflow_run.head_sha || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  classify:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    outputs:
+      solar_changed: ${{ steps.scope.outputs.solar_changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          fetch-depth: 2
+      - id: scope
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "${{ github.event_name }}" != "workflow_run" ]]; then
+            echo "solar_changed=true" >> "$GITHUB_OUTPUT"
+          elif git diff --name-only HEAD^ HEAD | grep -Eq '^(content/pages/solar|content/wealth/solar-|compound/site/static/(solar-|tools\.)|compound/site/templates/|scripts/verify_solar_mobile.py)'; then
+            echo "solar_changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "solar_changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  mobile-audit:
+    needs: classify
+    if: needs.classify.outputs.solar_changed == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install "playwright==1.55.0"
+      - run: python -m playwright install chromium
+      - name: Audit deployed Solar Hub at six screen widths (no rebuild)
+        env:
+          SOLAR_AUDIT_ORIGIN: https://compound.ie
+        run: python scripts/verify_solar_mobile.py
+
+  lighthouse-audit:
+    needs: classify
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Measure live performance, accessibility, best practices and SEO
+        run: npx --yes @lhci/cli@0.14.0 autorun --config=.lighthouserc.live.json
+
+
+  deep-live-audit:
+    needs: classify
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify public Compound deployment
+        shell: bash
+        run: |
+          set -euxo pipefail
+          fetch() {
+            curl --fail --silent --show-error --location               --retry 12 --retry-delay 5 --retry-all-errors               --connect-timeout 10 --max-time 30               "$1" -o "$2"
+          }
+
+          fetch https://compound.ie/ /tmp/home.html
+          # Catch missing routes and stale corrections immediately after publishing.
+          fetch https://compound.ie/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/ /tmp/heat-pump-grant.html
+          grep -Fq '€14,500' /tmp/heat-pump-grant.html
+          grep -Fq '/solar-payback-calculator/' /tmp/heat-pump-grant.html
+          fetch https://compound.ie/wealth/heat-pumps-ireland/ /tmp/heat-pump-evergreen.html
+          grep -Fq '€14,500' /tmp/heat-pump-evergreen.html
+          fetch https://compound.ie/news/boiler-scrappage-grant-ireland-2027/ /tmp/boiler-scrappage.html
+          grep -Fq 'no longer just a proposal' /tmp/boiler-scrappage.html
+          fetch https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/ /tmp/winter-electricity.html
+          grep -Fq 'What Will Electricity Cost This Winter?' /tmp/winter-electricity.html
+          grep -Fq '/solar-payback-calculator/' /tmp/winter-electricity.html
+          fetch https://compound.ie/news/social-democrats-400-energy-credit-budget-2027/ /tmp/energy-credit-proposal.html
+          grep -Fq 'was NOT included in Budget 2027' /tmp/energy-credit-proposal.html
+          grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/home.html
+
+          # Verify solar hub canonical URLs, on-page tools and AdSense script on the public domain.
+          for slug in solar solar/compare-quotes solar/grants solar/costs solar/installers solar/get-quotes solar/for-installers solar/batteries solar/export-rates solar/equipment; do
+            target="/tmp/solar-${slug//\//-}.html"
+            fetch "https://compound.ie/${slug}/" "$target"
+            grep -Fq 'solar-hub.css' "$target"
+            grep -Fq "<link rel=\"canonical\" href=\"https://compound.ie/${slug}/\">" "$target"
+          done
+          grep -Fq '/solar/compare-quotes/' /tmp/solar-solar.html
+          ! grep -Fq 'pagead2.googlesyndication.com' /tmp/solar-solar-for-installers.html
+          grep -Fq 'data-solar-sponsor-form' /tmp/solar-solar-for-installers.html
+          grep -Fq 'https://formsubmit.co/david@compound.ie' /tmp/solar-solar-for-installers.html
+          ! grep -Fq 'action="mailto:' /tmp/solar-solar-for-installers.html
+          grep -Fq 'data-solar-quotes' /tmp/solar-solar-compare-quotes.html
+          grep -Fq 'data-solar-grants' /tmp/solar-solar-grants.html
+          grep -Fq 'data-solar-battery' /tmp/solar-solar-batteries.html
+          grep -Fq 'data-solar-export' /tmp/solar-solar-export-rates.html
+          grep -Fq 'data-solar-equipment' /tmp/solar-solar-equipment.html
+          fetch https://compound.ie/static/solar-research.js /tmp/solar-research.js
+          grep -Fq 'data-solar-battery' /tmp/solar-research.js
+          grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/solar-solar.html
+          fetch https://compound.ie/static/solar-hub.js /tmp/solar-hub.js
+          grep -Fq 'data-solar-quotes' /tmp/solar-hub.js
+
+          fetch https://compound.ie/ads.txt /tmp/ads.txt
+          grep -Fq 'google.com, pub-6115783809711785, DIRECT, f08c47fec0942fa0' /tmp/ads.txt
+
+          # Budget 2027 is a flagship live article with bespoke artwork. Verify the
+          # exact hero/social asset so an old fallback image cannot silently return.
+          fetch https://compound.ie/wealth/budget-2027-what-to-watch/ /tmp/budget-2027.html
+          grep -Fq '<img src="/static/images/budget-2027-hero.webp"' /tmp/budget-2027.html
+          grep -Fq 'alt="Red Budget 2027 folder surrounded by a payslip, house keys, childcare, energy, pension and household-cost elements."' /tmp/budget-2027.html
+          grep -Fq 'content="https://compound.ie/static/images/budget-2027-hero.webp"' /tmp/budget-2027.html
+          grep -Fq 'Illustration: Compound' /tmp/budget-2027.html
+          ! grep -Fq 'Illustrative retirement photograph' /tmp/budget-2027.html
+          fetch https://compound.ie/static/images/budget-2027-hero.webp /tmp/budget-2027-hero.webp
+          test -s /tmp/budget-2027-hero.webp
+
+          fetch https://compound.ie/tools/ /tmp/tools.html
+          grep -Fq 'Mortgages &amp; Home Buying' /tmp/tools.html || grep -Fq 'Mortgages & Home Buying' /tmp/tools.html
+          grep -Fq 'Pensions &amp; Investing' /tmp/tools.html || grep -Fq 'Pensions & Investing' /tmp/tools.html
+          grep -Fq '/net-worth-calculator/' /tmp/tools.html
+          grep -Fq '/debt-repayment-calculator/' /tmp/tools.html
+          grep -Fq '/solar-payback-calculator/' /tmp/tools.html
+          grep -Fq '/nutrition-needs-calculator/' /tmp/tools.html
+          grep -Fq '/budget-2027-calculator/' /tmp/tools.html
+          grep -Fq '/employer-cost-calculator/' /tmp/tools.html
+
+          fetch https://compound.ie/budget-2027-calculator/ /tmp/budget-calculator.html
+          grep -Fq 'Budget 2027 Calculator Ireland' /tmp/budget-calculator.html
+          grep -Fq 'data-tool-name="budget-2027-calculator"' /tmp/budget-calculator.html
+          grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/budget-calculator.html
+          grep -Fq 'id="tool-interaction-zone"' /tmp/budget-calculator.html
+
+          fetch https://compound.ie/employer-cost-calculator/ /tmp/employer-cost.html
+          grep -Fq 'Employer Cost Calculator Ireland 2027' /tmp/employer-cost.html
+          grep -Fq 'data-tool-name="employer-cost-calculator"' /tmp/employer-cost.html
+          grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/employer-cost.html
+          grep -Fq 'id="tool-interaction-zone"' /tmp/employer-cost.html
+
+          fetch https://compound.ie/take-home-pay-calculator/ /tmp/take-home-2027.html
+          grep -Fq 'Take-Home Pay Calculator Ireland 2027' /tmp/take-home-2027.html
+          grep -Fq '€46,500' /tmp/take-home-2027.html
+
+          fetch https://compound.ie/capital-gains-tax-calculator/ /tmp/cgt-2027.html
+          grep -Fq '31%' /tmp/cgt-2027.html
+
+          fetch https://compound.ie/inheritance-tax-calculator/ /tmp/cat-2027.html
+          grep -Fq '€420,000' /tmp/cat-2027.html
+          grep -Fq '7 October 2026' /tmp/cat-2027.html
+
+          fetch https://compound.ie/wealth/inheritance-tax-ireland/ /tmp/inheritance-tax-2027.html
+          grep -Fq '€420,000' /tmp/inheritance-tax-2027.html
+          grep -Fq '€44,000' /tmp/inheritance-tax-2027.html
+          grep -Fq '€22,000' /tmp/inheritance-tax-2027.html
+          grep -Fq 'What changed in Budget 2027?' /tmp/inheritance-tax-2027.html
+          grep -Fq '€336,000' /tmp/inheritance-tax-2027.html
+
+          fetch https://compound.ie/help-to-buy-calculator/ /tmp/htb-2027.html
+          grep -Fq '€35,000' /tmp/htb-2027.html
+
+          fetch https://compound.ie/rent-tax-credit-calculator/ /tmp/rent-credit-2027.html
+          grep -Fq '€1,150' /tmp/rent-credit-2027.html
+
+          fetch https://compound.ie/compound-interest-calculator/ /tmp/compound-interest.html
+          grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/compound-interest.html
+
+          fetch https://compound.ie/bmi-calculator/ /tmp/bmi.html
+          grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/bmi.html
+
+          fetch https://compound.ie/mortgage-calculator/ /tmp/mortgage.html
+          grep -Fq 'Mortgage Calculator Ireland' /tmp/mortgage.html
+          grep -Fq 'Worked example' /tmp/mortgage.html
+          grep -Fq 'Central Bank' /tmp/mortgage.html
+          grep -Fq '/static/mortgage-calculator.js?v=20260927-performance1' /tmp/mortgage.html
+
+          fetch https://compound.ie/net-worth-calculator/ /tmp/net-worth.html
+          grep -Fq 'data-tool-name="net-worth-calculator"' /tmp/net-worth.html
+          grep -Fq 'What net worth actually measures' /tmp/net-worth.html
+
+          fetch https://compound.ie/debt-repayment-calculator/ /tmp/debt.html
+          grep -Fq 'data-debt-calculator' /tmp/debt.html
+          grep -Fq 'Debt avalanche' /tmp/debt.html
+          grep -Fq 'MABS' /tmp/debt.html
+
+          fetch https://compound.ie/nutrition-needs-calculator/ /tmp/nutrition.html
+          grep -Fq 'Mifflin' /tmp/nutrition.html
+          grep -Fq 'Frequently asked questions' /tmp/nutrition.html
+
+          fetch https://compound.ie/health/ /tmp/health.html
+          grep -Fq 'COMPOUND HEALTH' /tmp/health.html
+          grep -Fq 'Weight &amp; metabolism' /tmp/health.html || grep -Fq 'Weight & metabolism' /tmp/health.html
+          grep -Fq '/weight-loss-calculator/' /tmp/health.html
+          grep -Fq '/health/how-to-get-ozempic-ireland/' /tmp/health.html
+
+          fetch https://compound.ie/news/ireland-tv-licence-decline-2026/ /tmp/tv-licence-story.html
+          grep -Fq 'Ireland’s TV Licence Is Dying' /tmp/tv-licence-story.html
+          grep -Fq '715,401' /tmp/tv-licence-story.html
+          grep -Fq 'chart-svg' /tmp/tv-licence-story.html
+          grep -Fq '/static/images/evergreen/ireland-tv-licence-decline-2026.jpg' /tmp/tv-licence-story.html
+          grep -Fq 'cottonbro studio / Pexels' /tmp/tv-licence-story.html
+          fetch https://compound.ie/static/images/evergreen/ireland-tv-licence-decline-2026.jpg /tmp/tv-licence-stock.jpg
+          test -s /tmp/tv-licence-stock.jpg
+
+          fetch https://compound.ie/wealth/ /tmp/wealth.html
+          grep -Fq 'COMPOUND WEALTH' /tmp/wealth.html
+          grep -Fq 'Mortgages &amp; home' /tmp/wealth.html || grep -Fq 'Mortgages & home' /tmp/wealth.html
+          grep -Fq 'Pensions &amp; retirement' /tmp/wealth.html || grep -Fq 'Pensions & retirement' /tmp/wealth.html
+          grep -Fq '/compound-interest-calculator/' /tmp/wealth.html
+          grep -Fq '/pension-projection-calculator/' /tmp/wealth.html
+          grep -Fq '/take-home-pay-calculator/' /tmp/wealth.html
+          grep -Fq '/debt-repayment-calculator/' /tmp/wealth.html
+          grep -Fq '/inheritance-tax-calculator/' /tmp/wealth.html
+
+          fetch https://compound.ie/static/tools.js /tmp/tools.js
+          grep -Fq 'net_worth' /tmp/tools.js
+          grep -Fq 'solar_payback' /tmp/tools.js
+          grep -Fq 'nutrition_needs' /tmp/tools.js
+          grep -Fq 'budget_2027' /tmp/tools.js
+          grep -Fq 'employer_cost_2027' /tmp/tools.js
+          grep -Fq '?.33:.31' /tmp/tools.js
+
+          fetch https://compound.ie/sitemap.xml /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/mortgage-calculator/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/net-worth-calculator/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/debt-repayment-calculator/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/budget-2027-calculator/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/employer-cost-calculator/' /tmp/sitemap.xml
+
+          fetch https://compound.ie/wealth/how-to-start-investing-in-ireland/ /tmp/investing.html
+          grep -Fq 'A complete beginner course for Irish investors' /tmp/investing.html
+          grep -Fq 'course-grid' /tmp/investing.html
+          grep -Fq '/static/investing-ireland.css?v=6' /tmp/investing.html
+          grep -Fq '/wealth/before-you-invest-ireland/' /tmp/investing.html
+
+          fetch https://compound.ie/static/investing-ireland.css?v=6 /tmp/investing.css
+          grep -Fq 'Mobile-first finishing pass for Investing in Ireland 101' /tmp/investing.css
+          grep -Fq '.investing-course-hub .course-grid' /tmp/investing.css
+
+          fetch https://compound.ie/wealth/pensions-in-ireland/ /tmp/pensions.html
+          grep -Fq 'From your first contribution to retirement income.' /tmp/pensions.html
+          grep -Fq 'pension-course-grid' /tmp/pensions.html
+          grep -Fq '/static/pension-ireland.css?v=2' /tmp/pensions.html
+          grep -Fq '/wealth/how-pensions-work-ireland/' /tmp/pensions.html
+          grep -Fq '/wealth/pension-lump-sum-tax-ireland/' /tmp/pensions.html
+
+          fetch https://compound.ie/static/pension-ireland.css?v=2 /tmp/pension.css
+          grep -Fq '.pension-course-grid' /tmp/pension.css
+          grep -Fq '.pension-chapter-nav' /tmp/pension.css
+
+          grep -Fq 'https://compound.ie/wealth/pensions-in-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/how-pensions-work-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/pension-options-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/how-much-pension-contribute-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/pension-funds-fees-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/changing-jobs-transfer-pension-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/when-can-i-access-pension-ireland/' /tmp/sitemap.xml
+
+          fetch https://compound.ie/wealth/buying-a-home-in-ireland/ /tmp/homebuying.html
+          grep -Fq 'From your first savings target to the day you get the keys.' /tmp/homebuying.html
+          grep -Fq 'home-course-grid' /tmp/homebuying.html
+          grep -Fq '/static/home-buying-ireland.css?v=2' /tmp/homebuying.html
+          grep -Fq '/wealth/buying-home-budget-deposit-ireland/' /tmp/homebuying.html
+          grep -Fq '/wealth/closing-buying-home-ireland/' /tmp/homebuying.html
+
+          fetch https://compound.ie/static/home-buying-ireland.css?v=2 /tmp/homebuying.css
+          grep -Fq '.home-course-grid' /tmp/homebuying.css
+          grep -Fq '.home-chapter-nav' /tmp/homebuying.css
+
+          grep -Fq 'https://compound.ie/wealth/buying-a-home-in-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/buying-home-budget-deposit-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/mortgage-approval-affordability-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/first-time-buyer-supports-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/house-hunting-bidding-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/sale-agreed-survey-valuation-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/solicitor-conveyancing-stamp-duty-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/fixed-vs-variable-mortgage-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/mortgage-protection-drawdown-ireland/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/closing-buying-home-ireland/' /tmp/sitemap.xml
+
+          fetch https://compound.ie/news-sitemap.xml /tmp/news-sitemap.xml
+          grep -Fq 'http://www.google.com/schemas/sitemap-news/0.9' /tmp/news-sitemap.xml
+
+          fetch https://compound.ie/news/rent-a-room-relief-20000-budget-2027/ /tmp/discovery-news.html
+          grep -Fq 'max-image-preview:large' /tmp/discovery-news.html
+          grep -Fq '"@type": "NewsArticle"' /tmp/discovery-news.html
+          grep -Fq '"@type": "BreadcrumbList"' /tmp/discovery-news.html
+          grep -Fq '"@type": "Organization"' /tmp/discovery-news.html
+          grep -Fq '"@type": "WebSite"' /tmp/discovery-news.html
+          grep -Fq 'google-add-preferred-source-btn' /tmp/discovery-news.html
+          grep -Fq '/static/discover/rent-a-room-relief-20000-budget-2027-16x9.webp' /tmp/discovery-news.html
+          ! grep -Fq 'FAQPage' /tmp/discovery-news.html
+
+          fetch https://compound.ie/static/discover/rent-a-room-relief-20000-budget-2027-16x9.webp /tmp/discover-image.webp
+          test -s /tmp/discover-image.webp
+
+          fetch https://compound.ie/news/ /tmp/news-hub.html
+          grep -Fq 'google-add-preferred-source-btn' /tmp/news-hub.html
+
+          grep -Fq 'Sitemap: https://compound.ie/news-sitemap.xml' <(curl --fail --silent --show-error --location https://compound.ie/robots.txt)
+
+          # Income protection evergreen: assert the live page, correct editorial
+          # photograph, social image and sitemap entry all exist after deployment.
+          fetch https://compound.ie/wealth/income-protection-insurance-ireland/ /tmp/income-protection.html
+          grep -Fq 'Income Protection Insurance in Ireland' /tmp/income-protection.html
+          grep -Fq '<img src="/static/images/evergreen/income-protection-insurance-ireland.jpg"' /tmp/income-protection.html
+          grep -Fq 'alt="Man using a calculator while reviewing household financial paperwork beside a laptop."' /tmp/income-protection.html
+          grep -Fq 'Tima Miroshnichenko on Pexels' /tmp/income-protection.html
+          grep -Fq 'content="https://compound.ie/static/discover/income-protection-insurance-ireland-16x9.webp"' /tmp/income-protection.html
+          grep -Fq 'https://compound.ie/wealth/income-protection-insurance-ireland/' /tmp/sitemap.xml
+          fetch https://compound.ie/static/images/evergreen/income-protection-insurance-ireland.jpg /tmp/income-protection-hero.jpg
+          test -s /tmp/income-protection-hero.jpg
+          fetch https://compound.ie/static/discover/income-protection-insurance-ireland-16x9.webp /tmp/income-protection-og.webp
+          test -s /tmp/income-protection-og.webp
+
+          # Padel evergreen: verify a real padel-court photograph, SEO image
+          # derivatives and links between the paired padel/pickleball guides.
+          fetch https://compound.ie/life/padel-ireland/ /tmp/padel-ireland.html
+          grep -Fq 'Padel in Ireland: Rules, Courts, Costs' /tmp/padel-ireland.html
+          grep -Fq '<img src="/static/images/evergreen/padel-ireland.jpg"' /tmp/padel-ireland.html
+          grep -Fq 'Indoor padel court with blue playing surface' /tmp/padel-ireland.html
+          grep -Fq 'Ercan Evcimen on Pexels' /tmp/padel-ireland.html
+          grep -Fq 'https://compound.ie/static/discover/padel-ireland-16x9.webp' /tmp/padel-ireland.html
+          grep -Fq 'href="/life/pickleball-ireland/"' /tmp/padel-ireland.html
+          grep -Fq 'https://compound.ie/life/padel-ireland/' /tmp/sitemap.xml
+          fetch https://compound.ie/static/images/evergreen/padel-ireland.jpg /tmp/padel-hero.jpg
+          test -s /tmp/padel-hero.jpg
+          fetch https://compound.ie/static/discover/padel-ireland-16x9.webp /tmp/padel-social.webp
+          test -s /tmp/padel-social.webp
+          fetch https://compound.ie/life/pickleball-ireland/ /tmp/pickleball-crosslink.html
+          grep -Fq 'href="/life/padel-ireland/"' /tmp/pickleball-crosslink.html
+
+          # PIA Centre launch: explicitly verify the two new public routes,
+          # their search metadata, primary-source tracker and sitemap URLs.
+          fetch https://compound.ie/pia/ /tmp/pia-centre.html
+          grep -Fq 'Personal Investment Accounts in Ireland.' /tmp/pia-centre.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/pia/">' /tmp/pia-centre.html
+          grep -Fq 'href="/pia/providers/"' /tmp/pia-centre.html
+          grep -Fq 'href="/pia-calculator/"' /tmp/pia-centre.html
+          grep -Fq 'AIB' /tmp/pia-centre.html
+          grep -Fq 'Irish Life' /tmp/pia-centre.html
+
+          fetch https://compound.ie/pia/providers/ /tmp/pia-providers.html
+          grep -Fq 'PIA providers in Ireland' /tmp/pia-providers.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/pia/providers/">' /tmp/pia-providers.html
+          grep -Fq 'Not published' /tmp/pia-providers.html
+          grep -Fq 'www.aib.ie/make-a-plan/investments/personal-investment-account' /tmp/pia-providers.html
+          grep -Fq 'www.irishlife.ie/investments/pia/' /tmp/pia-providers.html
+          grep -Fq 'www.zurich.ie/blog/a-guide-to-irelands-new-investment-account/' /tmp/pia-providers.html
+          grep -Fq 'data-pia-comparison' /tmp/pia-providers.html
+          grep -Fq 'data-pia-filter-search' /tmp/pia-providers.html
+          grep -Fq 'data-pia-provider-list' /tmp/pia-providers.html
+          grep -Fq 'Awaiting verified fees' /tmp/pia-providers.html
+          grep -Fq 'pia-providers.js?v=1' /tmp/pia-providers.html
+          ! grep -Fq 'class="pia-referral-link"' /tmp/pia-providers.html
+          fetch https://compound.ie/static/pia-providers.js /tmp/pia-provider-script.js
+          grep -Fq 'estimateAnnualCost' /tmp/pia-provider-script.js
+          grep -Fq '<loc>https://compound.ie/pia/</loc>' /tmp/sitemap.xml
+          grep -Fq '<loc>https://compound.ie/pia/providers/</loc>' /tmp/sitemap.xml
+
+          fetch https://compound.ie/wealth/earnings/ /tmp/earnings-hub.html
+          grep -Fq 'Company earnings. One report per business.' /tmp/earnings-hub.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/wealth/earnings/">' /tmp/earnings-hub.html
+          grep -Fq 'not individually reviewed before publication' /tmp/earnings-hub.html
+          grep -Fq 'earnings-directory.js?v=1' /tmp/earnings-hub.html
+          grep -Fq 'S&amp;P 500 COMPANY DIRECTORY' /tmp/earnings-hub.html
+          # Confirm the directory is populated across the full index rather than
+          # assuming a fixed security count forever (share classes can change).
+          test "$(grep -o 'data-earnings-row' /tmp/earnings-hub.html | wc -l)" -ge 490
+          # The canonical stock directory and company hubs replaced earnings/company.
+          fetch https://compound.ie/stocks/ /tmp/stocks-hub.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/stocks/">' /tmp/stocks-hub.html
+          grep -Fq 'Browse stocks by company or ticker.' /tmp/stocks-hub.html
+          test "$(grep -o 'data-earnings-row' /tmp/stocks-hub.html | wc -l)" -ge 490
+          fetch https://compound.ie/stocks/aapl/ /tmp/aapl-stock-profile.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/stocks/aapl/">' /tmp/aapl-stock-profile.html
+          grep -Fq 'US SEC CIK' /tmp/aapl-stock-profile.html
+          grep -Fq 'id="earnings-company-results"' /tmp/aapl-stock-profile.html
+          grep -Fq 'data-tv-symbol="AAPL"' /tmp/aapl-stock-profile.html
+          ! grep -Fq 'summaryies' /tmp/aapl-stock-profile.html
+          # GitHub Pages lacks native 301s: old URLs must point canonically to Stocks.
+          fetch https://compound.ie/wealth/earnings/company/aapl/ /tmp/aapl-legacy-profile.html
+          grep -Fq 'name="robots" content="noindex,follow"' /tmp/aapl-legacy-profile.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/stocks/aapl/">' /tmp/aapl-legacy-profile.html
+          grep -Fq 'content="0; url=/stocks/aapl/"' /tmp/aapl-legacy-profile.html
+          fetch https://compound.ie/stocks/goog/ /tmp/goog-alias.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/stocks/googl/">' /tmp/goog-alias.html
+          grep -Fq '<loc>https://compound.ie/stocks/</loc>' /tmp/sitemap.xml
+          fetch https://compound.ie/static/earnings-directory.js /tmp/earnings-directory.js
+          grep -Fq 'data-earnings-row' /tmp/earnings-directory.js
+          grep -Fq 'href="/wealth/earnings/"' /tmp/wealth.html
+          grep -Fq '<loc>https://compound.ie/wealth/earnings/</loc>' /tmp/sitemap.xml
+
+          # Tesla/SpaceX hero is an actual NASA photograph, never a finance fallback.
+          fetch https://compound.ie/wealth/tesla-spacex-merger-2027/ /tmp/tesla-spacex.html
+          grep -Fq '<img src="/static/images/evergreen/tesla-spacex-merger-2027.jpg"' /tmp/tesla-spacex.html
+          grep -Fq "SpaceX Falcon 9 rocket carrying NASA" /tmp/tesla-spacex.html
+          grep -Fq "NASA / Joel Kowsky" /tmp/tesla-spacex.html
+          ! grep -Fq "Illustrative legal and estate-planning paperwork" /tmp/tesla-spacex.html
+          fetch https://compound.ie/static/images/evergreen/tesla-spacex-merger-2027.jpg /tmp/tesla-spacex-photo.jpg
+          test -s /tmp/tesla-spacex-photo.jpg
+
+          # One source-backed fiscal earnings dashboard per business.
+          fetch https://compound.ie/stocks/len/ /tmp/earnings-lennar.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/stocks/len/">' /tmp/earnings-lennar.html
+          grep -Fq 'FY2026 Q3' /tmp/earnings-lennar.html
+          grep -Fq '2026-' /tmp/earnings-lennar.html
+          grep -Fq 'class="earnings-one-table"' /tmp/earnings-lennar.html
+          grep -Fq 'Original Q3 filing' /tmp/earnings-lennar.html
+          grep -Fq 'earnings-one-chart-row' /tmp/earnings-lennar.html
+          ! grep -Fq 'article-cover' /tmp/earnings-lennar.html
+          # Every legacy quarter URL redirects to the canonical stock profile.
+          fetch https://compound.ie/wealth/earnings/len-earnings-fy2026-q3/ /tmp/legacy-lennar.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/stocks/len/">' /tmp/legacy-lennar.html
+          grep -Fq 'name="robots" content="noindex,follow"' /tmp/legacy-lennar.html
+          grep -Fq 'content="0; url=/stocks/len/"' /tmp/legacy-lennar.html
+          ! grep -Fq '<loc>https://compound.ie/wealth/earnings/len-earnings-fy2026-q3/</loc>' /tmp/sitemap.xml
+
+          # Insurance hub: indexable dedicated Wealth collection with independent
+          # protection calculators and separated partnership disclosure.
+          fetch https://compound.ie/insurance/ /tmp/insurance-hub.html
+          grep -Fq '<link rel="canonical" href="https://compound.ie/insurance/">' /tmp/insurance-hub.html
+          grep -Fq 'Insurance Tools' /tmp/insurance-hub.html
+          grep -Fq '<meta name="description" content="Free insurance tools' /tmp/insurance-hub.html
+          grep -Fq 'type="application/ld+json"' /tmp/insurance-hub.html
+          grep -Fq 'data-ins-gap' /tmp/insurance-hub.html
+          grep -Fq 'id="income-gap"' /tmp/insurance-hub.html
+          grep -Fq 'data-ins-field="spending"' /tmp/insurance-hub.html
+          grep -Fq '/wealth/life-insurance-ireland/#li26-calc' /tmp/insurance-hub.html
+          grep -Fq '/wealth/mortgage-protection-insurance-ireland/#mp26-savings' /tmp/insurance-hub.html
+          grep -Fq '/wealth/income-protection-insurance-ireland/' /tmp/insurance-hub.html
+          grep -Fq '/wealth/health-insurance-ireland/' /tmp/insurance-hub.html
+          grep -Fq 'Sponsorship would never change calculator arithmetic' /tmp/insurance-hub.html
+          grep -Fq '/static/insurance-hub.css?v=3' /tmp/insurance-hub.html
+          grep -Fq '/static/insurance-hub.js?v=2' /tmp/insurance-hub.html
+          grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' /tmp/insurance-hub.html
+          fetch https://compound.ie/static/insurance-hub.css /tmp/insurance-hub.css
+          grep -Fq '.ins-calc-inner' /tmp/insurance-hub.css
+          fetch https://compound.ie/static/insurance-hub.js /tmp/insurance-hub.js
+          node scripts/verify_insurance_hub.js /tmp/insurance-hub.js
+          grep -Fq '/insurance/' /tmp/tools.html
+          grep -Fq '/insurance/' /tmp/wealth.html
+          grep -Fq 'https://compound.ie/insurance/' /tmp/sitemap.xml
+          fetch https://compound.ie/search.json /tmp/compound-search.json
+          grep -Fq '"/insurance/"' /tmp/compound-search.json
+          # Reader-first insurance layout with illustrated, accessible guides.
+          grep -Fq 'class="ins-guide ins-guide--life"' /tmp/insurance-hub.html
+          grep -Fq 'class="ins-guide ins-guide--health"' /tmp/insurance-hub.html
+          grep -Fq 'class="ins-guide-illustration"' /tmp/insurance-hub.html
+          grep -Fq 'class="ins-guide-links"' /tmp/insurance-hub.html
+          grep -Fq 'href="/critical-illness-cover-calculator/"' /tmp/insurance-hub.html
+          grep -Fq 'data-ins-event="guide_open"' /tmp/insurance-hub.html
+          grep -Fq '.ins-guide-illustration' /tmp/insurance-hub.css
+          grep -Fq 'compound_analytics_consent' /tmp/insurance-hub.js
+          ! grep -Fq '/insurance-partnerships/' /tmp/insurance-hub.html
+          ! grep -Fq '<loc>https://compound.ie/insurance-partnerships/</loc>' /tmp/sitemap.xml
+          ! grep -Fq '"/insurance-partnerships/"' /tmp/compound-search.json
+          echo 'Professional Insurance hub guide cards and independent calculator links verified.'
+          echo 'Insurance hub live URL, metadata, internal links, assets and calculator verified.'
+          # Five distinct indexable insurance calculator pages with substantive
+          # source-backed guides, no quote lead capture and the site's AdSense loader.
+          for slug in health-insurance-cost-comparison-calculator home-insurance-rebuild-cost-calculator critical-illness-cover-calculator death-in-service-life-insurance-calculator insurance-premium-savings-calculator; do
+            fetch "https://compound.ie/${slug}/" "/tmp/${slug}.html"
+            grep -Fq "<link rel=\"canonical\" href=\"https://compound.ie/${slug}/\">" "/tmp/${slug}.html"
+            grep -Fq 'data-i-calculator=' "/tmp/${slug}.html"
+            grep -Fq 'class="it26-form"' "/tmp/${slug}.html"
+            grep -Fq '<meta name="description"' "/tmp/${slug}.html"
+            grep -Fq 'WebApplication' "/tmp/${slug}.html"
+            grep -Fq '/static/insurance-tools-2026.js?v=1' "/tmp/${slug}.html"
+            grep -Fq '/static/insurance-tools-2026.css?v=1' "/tmp/${slug}.html"
+            grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' "/tmp/${slug}.html"
+            grep -Fq 'https://compound.ie/' /tmp/sitemap.xml
+            grep -Fq "<loc>https://compound.ie/${slug}/</loc>" /tmp/sitemap.xml
+            grep -Fq "\"/${slug}/\"" /tmp/compound-search.json
+            grep -Fq "href=\"/${slug}/\"" /tmp/insurance-hub.html
+            grep -Fq "href=\"/${slug}/\"" /tmp/tools.html
+          done
+          # Reject malformed Markdown or one unbroken text blob in any live
+          # insurance guide (the old layout rendered raw ##, ** and [links](...)).
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          slugs = [
+              "health-insurance-cost-comparison-calculator",
+              "home-insurance-rebuild-cost-calculator",
+              "critical-illness-cover-calculator",
+              "death-in-service-life-insurance-calculator",
+              "insurance-premium-savings-calculator",
+          ]
+          for slug in slugs:
+              html = Path(f"/tmp/{slug}.html").read_text(encoding="utf-8")
+              match = re.search(
+                  r'<div class="it26-explanation">(.*?)</div>\s*<section class="it26-related"',
+                  html, re.DOTALL,
+              )
+              assert match, f"{slug}: no independent formatted explanation section"
+              section = match.group(1)
+              assert len(re.findall(r"<h2\b", section)) >= 2, f"{slug}: guide headings missing"
+              assert len(re.findall(r"<h3\b", section)) >= 3, f"{slug}: subsection headings missing"
+              assert len(re.findall(r"<p\b", section)) >= 5, f"{slug}: paragraphs missing"
+              assert len(re.findall(r"<a\b", section)) >= 2, f"{slug}: reference links missing"
+              assert not any(s in section for s in ("## ", "**", "](")), (
+                  f"{slug}: raw Markdown leaked into the visible guide"
+              )
+              assert '<meta name="viewport" content="width=device-width, initial-scale=1">' in html, (
+                  f"{slug}: mobile viewport meta missing"
+              )
+          print("All five live insurance explanations have semantic headings, paragraphs and links; no raw Markdown.")
+          PY
+          grep -Fq 'How to compare health insurance plans in Ireland</h2>' /tmp/health-insurance-cost-comparison-calculator.html
+          fetch https://compound.ie/static/insurance-tools-2026.js /tmp/insurance-tools-2026.js
+          node scripts/verify_insurance_tools_2026.js /tmp/insurance-tools-2026.js
+          fetch https://compound.ie/static/insurance-tools-2026.css /tmp/insurance-tools-2026.css
+          grep -Fq '.it26-workspace' /tmp/insurance-tools-2026.css
+          echo 'All five individual insurance calculator pages, SEO, AdSense loader, hub links and arithmetic verified.'
+
+
+          echo 'Live verification passed for Compound calculator catalogue, Health and Wealth Hubs, PIA Centre, Earnings, discovery metadata and flagship guides.'
+
