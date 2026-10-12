@@ -95,7 +95,7 @@ def test_mobile_browser_audit_covers_every_solar_route():
     assert "python scripts/verify_solar_mobile.py" in workflow
     assert "overflow-wrap:anywhere" in css
     assert "solar-hub.css?v=6" in template
-    assert "solar-hub.js?v=4" in template
+    assert "solar-hub.js?v=5" in template
     assert "solar-research.js?v=2" in template
     assert "node --check compound/site/static/solar-research.js" in workflow
     solar_paths = "solar solar/compare-quotes solar/grants solar/costs solar/installers solar/get-quotes solar/for-installers solar/batteries solar/export-rates solar/equipment; do"

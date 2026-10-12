@@ -3,10 +3,8 @@
   'use strict';
   const events={
     electricity_tool:'energy_electricity_tool_click',
-    solar_payback:'energy_solar_payback_click',
-    quote_brief:'energy_quote_brief_click',
-    winter_article:'energy_winter_article_click',
-    solar_hub:'energy_solar_hub_click'
+    winter_article:'energy_winter_article_click'
+    // Solar destinations are auto-tracked once, sitewide, by solar-funnel.js.
   };
   document.addEventListener('click',function(e){
     const a=e.target.closest('a[data-energy-funnel]');

@@ -11,6 +11,10 @@
     const choice = button.dataset.analyticsConsent;
     analyticsChoice = choice;
     try { localStorage.setItem('compound_analytics_consent', choice); } catch (_) {}
+    if (choice !== 'granted') {
+      // Do not retain the solar attribution origin after analytics consent is declined.
+      try { sessionStorage.removeItem('compound_solar_origin_v1'); } catch (_) {}
+    }
     if (typeof window.gtag === 'function') window.gtag('consent', 'update', {analytics_storage: choice});
     if (choice === 'granted' && typeof window.compoundStartAnalytics === 'function') window.compoundStartAnalytics();
     document.documentElement.classList.add('analytics-consent-set');
