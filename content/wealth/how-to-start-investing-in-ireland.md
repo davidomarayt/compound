@@ -60,6 +60,8 @@ For an Irish investor, that system begins with four questions:
 
 Only after those questions are answered does the product choice become useful.
 
+**Tools to use alongside the course:** The [PIA Centre](/pia/) tracks Ireland's proposed Personal Investment Account, while the [PIA Calculator](/pia-calculator/) and [Investment Fee Calculator](/investment-fee-calculator/) help stress-test a scenario. The PIA is not yet available; these tools illustrate possibilities, not current product terms.
+
 This course takes you through that process in order. It is designed for someone starting from zero, but each chapter also works as a standalone reference.
 
 <div class="investing-hero-note">

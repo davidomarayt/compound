@@ -566,3 +566,13 @@
   text-decoration:underline;
   text-underline-offset:3px;
 }
+
+
+/* 2026-10-12: Long values and explanatory tables must not widen mobile pages. */
+@media screen and (max-width:620px){
+  .tool-page,.tool-page > *, .tool-explainer,.tool-explainer > *, .tool-workspace,.tool-workspace > *, .tool-form,.tool-results,.tool-result,.tool-more{min-width:0;max-width:100%}
+  .tool-page :is(h1,h2,h3,p,a,strong,li){overflow-wrap:break-word}
+  .tool-explainer table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .tool-result strong{overflow-wrap:anywhere}
+  .tool-more-links > a{min-width:0}
+}

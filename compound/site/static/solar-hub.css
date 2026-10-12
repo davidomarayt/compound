@@ -335,3 +335,24 @@
   [data-solar-export] .sol-export-credit{gap:8px}
   [data-solar-export] .sol-export-credit strong{font-size:16px}
 }
+
+
+/* 2026-10-12: Prevent narrow-phone overflow without hiding quote or tariff data. */
+@media screen and (max-width:730px){
+  .sol-shell,.sol-shell > *, .sol-shell :is(.sol-cardgrid,.sol-card,.sol-hero-grid,.sol-article-grid,.sol-utility,.sol-feature,.sol-sectionhead,.sol-statband,.sol-bottomcta,.sol-connected-reading){min-width:0;max-width:100%}
+  .sol-shell :is(h1,h2,h3,p,a,strong,small){overflow-wrap:break-word}
+  .sol-shell .sol-table-scroll{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .sol-shell .sol-actions > a,.sol-shell .sol-btn{max-width:100%;white-space:normal;text-align:center}
+  .sol-shell .sol-connected-reading p{line-height:1.7;max-width:75ch}
+}
+@media screen and (max-width:420px){
+  [data-solar-export] .sol-export-amount{white-space:normal;overflow-wrap:anywhere}
+  [data-solar-export] .sol-export-credit{flex-wrap:wrap;align-items:flex-start}
+  [data-solar-export] .sol-export-credit strong{white-space:normal;overflow-wrap:anywhere}
+}
+
+/* Connected editorial journey: distinct from paid partner programme. */
+.sol-connected-reading{border:1px solid var(--sol-line);border-radius:7px;padding:clamp(20px,3vw,32px);background:#f8faf6;max-width:100%}
+.sol-connected-reading .sol-sectionhead{margin-bottom:14px}
+.sol-connected-reading p{color:var(--sol-muted);font-size:14px;line-height:1.75;max-width:85ch;overflow-wrap:break-word}
+.sol-connected-reading a{color:var(--sol-green);text-decoration:underline;text-underline-offset:3px;font-weight:650}

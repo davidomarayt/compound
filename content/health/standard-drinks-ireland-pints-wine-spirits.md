@@ -1,6 +1,6 @@
 ---
 title: 'Standard drinks in Ireland: what a pint, glass of wine and spirit actually count as'
-seo_title: 'Standard Drinks Ireland: Pints, Wine, Spirits & Units Explained'
+seo_title: 'Standard Drinks Ireland: Pints, Wine & Spirits Calculator'
 slug: standard-drinks-ireland-pints-wine-spirits
 pillar: health
 draft: false
@@ -8,7 +8,7 @@ publication_status: published
 date: 2026-09-21
 reviewed: 2026-09-21
 summary: 'One pint is not one standard drink. Ireland defines a standard drink as 10 g of pure alcohol, so drink size and ABV matter. This guide works through pints, wine, spirits, calories, weekly guidelines and why Irish standard drinks differ from UK units.'
-meta_description: 'Standard drinks in Ireland explained: calculate how many standard drinks are in a pint, wine glass, bottle or spirit measure, plus calories, HSE weekly guidance and Irish alcohol labels.'
+meta_description: 'How many Irish standard drinks are in a pint, wine glass or spirit? See quick examples, the 10g rule, HSE guidance and a free drinks calculator.'
 tags: [alcohol, standard-drinks, health, calories, alcohol-units, ireland]
 related_tools:
 - alcohol-units-calories-cost-calculator
@@ -30,6 +30,12 @@ sources:
 - title: 'Schutz 2000 — alcohol provides approximately 7.1 kcal per gram.'
   url: https://pubmed.ncbi.nlm.nih.gov/11115785/
 ---
+
+<div class="cs-intro" role="note">
+<p class="cs-kicker">Irish standard drinks — quick answer</p>
+<p><strong>One Irish standard drink is 10 grams of pure alcohol.</strong> A 568 mL pint of 4.5% beer contains about <strong>2.0 standard drinks</strong>; a 150 mL glass of 12.5% wine contains about <strong>1.48</strong>; and a 35.5 mL spirit measure at 40% contains about <strong>1.12</strong>.</p>
+<p>Serving sizes and alcohol strength change the answer. Use our <a href="/alcohol-units-calories-cost-calculator/">Irish standard drinks calculator</a> to check your actual drink. This is a quantity calculation, not advice that any level of drinking is risk-free.</p>
+</div>
 
 A pint is one drink.
 

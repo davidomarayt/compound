@@ -44,6 +44,8 @@ sources:
 ---
 <p class="glp-note">Prices and sources checked 14 September 2026. Republic of Ireland; adult treatment. Advertised prices are examples, not guaranteed quotes or a national price survey. This is general information, not a recommendation to start, switch or stop a medicine.</p>
 
+**Calculate the longer-term budget:** Our [GLP-1 Cost Calculator for Ireland](/glp1-cost-calculator-ireland/) lets you compare ongoing medication, consultations and monitoring costs over a period you choose. Check the [GLP-1 HSE and medical card funding guide](/health/glp1-hse-medical-card-ireland/) before assuming any private price will be reimbursed. The examples below are dated observations, not guaranteed current prices.
+
 A price beginning with “from” can answer the wrong question. It tells you what the first purchase might cost. It does not necessarily tell you what you will pay after the dose changes, how much clinical care costs, or whether you can afford treatment over time.
 
 For someone paying privately, those details are not small print. They are the budget.

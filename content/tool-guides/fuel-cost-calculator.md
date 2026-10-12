@@ -1,3 +1,16 @@
+## Fuel cost per kilometre: quick examples
+
+To estimate petrol or diesel running cost, multiply **distance (km) × litres per 100 km ÷ 100 × pump price per litre**. These illustrative examples use €1.80 per litre; enter today's actual fuel price in the calculator above.
+
+| Annual distance | Average consumption | Annual fuel cost |
+| --- | --- | ---: |
+| 10,000 km | 6 L/100 km | €1,080 |
+| 15,000 km | 6.5 L/100 km | €1,755 |
+| 20,000 km | 7 L/100 km | €2,520 |
+| 28,000 km | 7.5 L/100 km | €3,780 |
+
+At 6.5 L/100 km and €1.80/L, petrol alone costs about **11.7 cent per kilometre**, excluding tax, tyres, depreciation, repairs and insurance. If comparing a petrol or diesel car with an electric car, calculate the other side using the [EV Charging Cost Calculator](/ev-charging-cost-calculator/); for home charging with planned solar panels, explore the [Compound Solar Hub](/solar/).
+
 ## What this calculator is for
 
 This calculator converts distance, vehicle fuel consumption and fuel price into trip or annual fuel cost. It is useful for commuting comparisons, mileage budgeting and comparing conventional vehicles.
