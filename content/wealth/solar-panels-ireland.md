@@ -6,7 +6,7 @@ pillar: wealth
 draft: false
 publication_status: published
 date: 2026-10-03
-reviewed: 2026-10-11
+reviewed: 2026-10-12
 approved_by: "Explicit publish instruction — 3 October 2026"
 summary: "A complete 2026 guide to solar panels in Ireland: SEAI grants, the new €600 battery grant, 0% VAT, realistic generation, CEG export payments, batteries, grid connection, planning and payback."
 meta_description: "Solar panels Ireland 2026: understand costs, €1,800 SEAI grant, €600 battery grant, 0% VAT, CEG export payments, planning, sizing and payback."
@@ -40,7 +40,7 @@ sources:
     url: https://www.gov.ie/en/department-of-climate-energy-and-the-environment/publications/small-scale-renewable-electricity-generation/
 ---
 
-**New: [Explore the Compound Solar Hub](/solar/)** to compare installation quotes, check grant eligibility and find registered installers. For the detailed calculations, use the linked solar tools below. For a closer look at two decisions, use the [battery economics calculator](/solar/batteries/) and [export-rate comparator](/solar/export-rates/).
+**New: [Explore the Compound Solar Hub](/solar/)** to compare installation quotes, check grant eligibility and find registered installers. For a focused buying decision, read **[4kWp vs 6kWp vs 8kWp: how many panels do you need?](/wealth/how-many-solar-panels-do-i-need-ireland/)**, which models output, daytime use and the payback on extra panels. For the detailed calculations, use the linked solar tools below. For a closer look at two decisions, use the [battery economics calculator](/solar/batteries/) and [export-rate comparator](/solar/export-rates/).
 
 Solar panels are one of the few home upgrades in Ireland that can create value in **two ways at once**:
 
