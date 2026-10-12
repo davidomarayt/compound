@@ -123,6 +123,8 @@ charts: []
 
 <p>The Fuel Allowance rises by <strong>€5 per week to €43</strong>, alongside a higher income threshold for qualifying single people aged over 66.</p>
 
+<p><strong>No additional electricity credit was announced.</strong> For a practical explanation of the €400 proposal, worked winter bills and decisions about tariffs and solar, see our <a href="/news/no-energy-credit-budget-2027-electricity-bills-winter/">Budget 2027 winter electricity-cost guide</a>, <a href="/electricity-cost-calculator/">Electricity Cost Calculator</a> and <a href="/solar-payback-calculator/">Solar Payback Calculator</a>.</p>
+
 <p>Separately, <strong>€654.5 million</strong> has been allocated to SEAI residential and community energy-upgrade schemes.</p>
 
 <h2>7. Minimum wage rises to €14.94 per hour</h2>
