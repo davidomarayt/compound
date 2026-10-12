@@ -59,8 +59,8 @@ def test_solar_installer_conversion_is_private():
     js = (ROOT / "compound/site/static/solar-hub.js").read_text(encoding="utf-8")
     assert installer.count('data-sol-check>') == 8
     assert 'data-sol-check-progress' in installer
-    assert 'There is no active lead marketplace' in installer
-    assert 'mailto:david@compound.ie?subject=Compound%20Solar%20installer%20pilot' in installer
+    assert 'There is no live paid referral marketplace' in installer
+    assert 'href="/solar/for-installers/"' in installer
     assert 'data-sq-print' in comparison
     assert "compound_analytics_consent" in js and "==='granted'" in js
     for event in ("quote_comparison_used", "quote_brief_copied", "seai_register_opened", "installer_checklist_completed"):
@@ -78,7 +78,7 @@ def test_solar_quote_mobile_containment_rules():
     assert "grid-template-columns:minmax(0,1fr)" in css.split("@media screen and (max-width:730px)")[1]
     assert "sol-scroll-hint" in quote
     assert 'aria-label="Solar quote comparison table;' in quote
-    assert "/static/solar-hub.css?v=5" in page_template
+    assert "/static/solar-hub.css?v=6" in page_template
 
 
 def test_mobile_browser_audit_covers_every_solar_route():
@@ -94,11 +94,11 @@ def test_mobile_browser_audit_covers_every_solar_route():
     assert ".tool-chart-scroll" in script  # charts intentionally scroll within the viewport
     assert "python scripts/verify_solar_mobile.py" in workflow
     assert "overflow-wrap:anywhere" in css
-    assert "solar-hub.css?v=5" in template
+    assert "solar-hub.css?v=6" in template
     assert "solar-hub.js?v=3" in template
     assert "solar-research.js?v=2" in template
     assert "node --check compound/site/static/solar-research.js" in workflow
-    solar_paths = "solar solar/compare-quotes solar/grants solar/costs solar/installers solar/get-quotes solar/batteries solar/export-rates solar/equipment; do"
+    solar_paths = "solar solar/compare-quotes solar/grants solar/costs solar/installers solar/get-quotes solar/for-installers solar/batteries solar/export-rates solar/equipment; do"
     assert "for path in " + solar_paths in workflow  # generated pages
     assert "for slug in " + solar_paths in workflow  # public deployed pages
     assert 'brief.querySelector("[data-sb-output]")' in (ROOT / "compound/site/static/solar-hub.js").read_text(encoding="utf-8")
