@@ -1,6 +1,6 @@
 ---
 title: 'Standard drinks in Ireland: what a pint, glass of wine and spirit actually count as'
-seo_title: 'Standard Drinks Ireland: Pints, Wine, Spirits & Units Explained'
+seo_title: 'Standard Drinks Ireland: Pints, Wine & Spirits Calculator'
 slug: standard-drinks-ireland-pints-wine-spirits
 pillar: health
 draft: false
@@ -8,7 +8,7 @@ publication_status: published
 date: 2026-09-21
 reviewed: 2026-09-21
 summary: 'One pint is not one standard drink. Ireland defines a standard drink as 10 g of pure alcohol, so drink size and ABV matter. This guide works through pints, wine, spirits, calories, weekly guidelines and why Irish standard drinks differ from UK units.'
-meta_description: 'Standard drinks in Ireland explained: calculate how many standard drinks are in a pint, wine glass, bottle or spirit measure, plus calories, HSE weekly guidance and Irish alcohol labels.'
+meta_description: 'How many Irish standard drinks are in a pint, wine glass or spirit? See quick examples, the 10g rule, HSE guidance and a free drinks calculator.'
 tags: [alcohol, standard-drinks, health, calories, alcohol-units, ireland]
 related_tools:
 - alcohol-units-calories-cost-calculator
