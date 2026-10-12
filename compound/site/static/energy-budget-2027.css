@@ -1,0 +1,25 @@
+/* Budget 2027 energy reporting: lightweight, editorial-first funnel styling. */
+.ew27-intro{border:1px solid #cfdad4;border-left:4px solid #365e4f;border-radius:4px;padding:clamp(18px,3vw,27px);margin:24px 0 30px;background:#f3f7f3;color:#263b31}
+.ew27-kicker{font:800 11px/1.5 var(--sans,Arial,sans-serif)!important;letter-spacing:.09em;text-transform:uppercase;color:#365e4f;margin:0 0 12px!important}
+.ew27-intro p{font-size:15px;line-height:1.72;margin:0 0 12px}
+.ew27-intro p:last-child{margin-bottom:0}
+.ew27-intro a{font-weight:750;color:#245a45;text-decoration:underline;text-underline-offset:3px}
+.ew27-route{margin:32px 0;padding:clamp(20px,3vw,30px);border:1px solid #d7dfd8;background:#fafcf8;border-radius:7px;display:grid;gap:12px;min-width:0}
+.ew27-route>span{font:800 11px/1.4 var(--sans,Arial,sans-serif);letter-spacing:.11em;color:#365e4f}
+.ew27-route>strong{font:500 clamp(22px,2.7vw,31px)/1.2 Georgia,serif;color:#223a2e;overflow-wrap:break-word}
+.ew27-route>p{font-size:14px;line-height:1.65;color:#4a6054;margin:0}
+.ew27-route>a{display:inline-flex;align-items:center;justify-content:space-between;gap:16px;width:fit-content;max-width:100%;padding:12px 17px;background:#234f39;color:#fff;border:1px solid #234f39;border-radius:5px;font:750 13px/1.4 var(--sans,Arial,sans-serif);text-decoration:none}
+.ew27-route>a:hover{background:#153b29}
+.ew27-route>a:focus-visible,.ew27-next a:focus-visible{outline:3px solid #b17b48;outline-offset:3px}
+.ew27-route-feature{background:#edf5ed;border-color:#adc6af}
+.ew27-next{margin:37px 0;padding:clamp(19px,3vw,31px);background:#f0f3ef;border:1px solid #d5e0d5;border-radius:8px;min-width:0}
+.ew27-next h2{font:500 clamp(24px,3.2vw,36px)/1.18 Georgia,serif;color:#263a30;margin:8px 0 23px}
+.ew27-next-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.ew27-next-grid a{padding:18px 15px;min-width:0;background:#fff;border:1px solid #d3ddd3;border-radius:5px;text-decoration:none;display:flex;flex-direction:column;gap:8px;color:#263a30;overflow-wrap:anywhere}
+.ew27-next-grid a:hover{border-color:#6e987a;box-shadow:0 2px 10px rgb(12 55 22 / 6%)}
+.ew27-next-grid b{font:800 11px/1.4 var(--sans,Arial,sans-serif);color:#568464}
+.ew27-next-grid strong{font:700 15px/1.35 var(--sans,Arial,sans-serif)}
+.ew27-next-grid span{font:600 12px/1.5 var(--sans,Arial,sans-serif);color:#2e6946}
+.ew27-fine{font-size:12px;line-height:1.6;color:#536b5b;margin:16px 0 0}
+@media(max-width:700px){.ew27-next-grid{grid-template-columns:minmax(0,1fr)}.ew27-next-grid a{padding:16px}.ew27-route>a{width:100%;white-space:normal;text-align:left}.ew27-intro,.ew27-route,.ew27-next{max-width:100%;overflow-wrap:break-word}}
+@media(prefers-reduced-motion:reduce){.ew27-route>a,.ew27-next a{transition:none}}

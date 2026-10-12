@@ -51,6 +51,8 @@ social:
     enabled: false
 ---
 
+**Looking at your winter 2026–27 bill after Budget 2027?** Read our [no-electricity-credit Budget update and winter bill scenarios](/news/no-energy-credit-budget-2027-electricity-bills-winter/), then use the guidance here to compare tariff types. The worked prices in that news article are illustrations, not live supplier offers.
+
 Choosing an electricity tariff in Ireland used to be relatively simple.
 
 You looked at the unit rate, checked the standing charge and compared suppliers.

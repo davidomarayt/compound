@@ -7,6 +7,18 @@
     if(localStorage.getItem('compound_analytics_consent')==='granted'&&typeof window.gtag==='function')window.gtag('event','solar_'+name);
   }catch(_){}}
   function solarTrackOnce(node,flag,name){if(!node.dataset[flag]){node.dataset[flag]='1';solarTrack(name);}}
+  // Count progression through the solar research funnel, not presumed sales leads.
+  document.addEventListener('click',function(event){
+    var link=event.target.closest('a[href]');
+    if(!link || !link.pathname)return;
+    var events={
+      '/solar-payback-calculator/':'payback_page_opened',
+      '/solar/get-quotes/':'quote_brief_page_opened',
+      '/solar/installers/':'installer_directory_page_opened',
+      '/solar/compare-quotes/':'quote_comparator_page_opened'
+    };
+    if(events[link.pathname])solarTrack(events[link.pathname]);
+  });
   var money = new Intl.NumberFormat("en-IE",{style:"currency",currency:"EUR",maximumFractionDigits:0});
   var number = new Intl.NumberFormat("en-IE",{maximumFractionDigits:1});
   function clamp(n,low,high){return Number.isFinite(n)?Math.min(high,Math.max(low,n)):NaN;}
