@@ -48,7 +48,7 @@ sources:
 
 If you are looking at solar in Ireland, **CEG and SRESS can sound like competing export tariffs**.
 
-For a household or ordinary self-consumption installation, start with our **[complete Solar Panels in Ireland guide](/wealth/solar-panels-ireland/)**. This page goes deeper on the point where farm, SME and export-led projects begin to diverge.
+For a household or ordinary self-consumption installation, start with our **[Solar Hub](/solar/)**, its [solar payback calculator](/solar-payback-calculator/) and our **[complete Solar Panels in Ireland guide](/wealth/solar-panels-ireland/)**. Compare export assumptions before you assess [installation quotes](/solar/compare-quotes/). This page goes deeper on the point where farm, SME and export-led projects begin to diverge.
 
 They are not.
 
