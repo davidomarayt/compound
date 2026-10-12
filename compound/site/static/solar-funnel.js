@@ -26,6 +26,14 @@
       '/solar/for-installers/': 'installer_partnership',
       '/solar-payback-calculator/': 'payback_calculator',
       '/solar-ev-battery-optimiser/': 'solar_ev_battery_calculator',
+      // Upstream energy research is included so an article -> electricity tool
+      // -> Solar Hub journey retains the original article. It is not a solar lead.
+      '/electricity-cost-calculator/': 'electricity_cost_calculator',
+      '/ber-energy-cost-calculator/': 'ber_energy_calculator',
+      '/whole-house-retrofit-planner/': 'retrofit_calculator',
+      '/ev-charging-cost-calculator/': 'ev_charging_calculator',
+      '/wealth/electricity-tariffs-ireland/': 'electricity_tariff_guide',
+      '/wealth/average-home-electricity-use-ireland/': 'electricity_usage_guide',
       '/wealth/ceg-vs-sress-ireland/': 'solar_export_guide'
     };
     if (routes[path]) return routes[path];
