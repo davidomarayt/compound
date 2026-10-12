@@ -1,8 +1,7 @@
 {
   "source": "https://github.com/datasets/s-and-p-500-companies/blob/main/data/constituents.csv",
-  "source_type": "Daily third-party public reference derived from Wikipedia (not licensed S&P index data)",
-  "checked": "2026-10-10",
-  "source_last_updated": "2026-10-09",
+  "source_type": "third-party public reference (not licensed S&P constituents)",
+  "checked": "2026-10-12",
   "security_count": 503,
   "company_count": 500,
   "members": [
