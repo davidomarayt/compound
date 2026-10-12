@@ -90,3 +90,13 @@
 @media(max-width:960px){.ins-hero{grid-template-columns:1fr}.ins-art{display:none}.ins-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ins-calc-inner{grid-template-columns:1fr}}
 @media(max-width:650px){.ins-hub{gap:42px}.ins-hero{padding:28px 22px;min-height:0}.ins-hero h1{font-size:clamp(42px,11vw,66px)}.ins-section-head{display:block}.ins-section-head>p{margin-top:13px}.ins-grid,.ins-guides,.ins-faq,.ins-independence,.ins-fields{grid-template-columns:1fr}.ins-tool{min-height:180px;padding:22px}.ins-guide{min-height:0}.ins-guide-illustration{height:155px}.ins-guide-body{padding:21px}.ins-guide-more{grid-template-columns:1fr;padding:22px}.ins-calc{padding:19px}.ins-out{padding:22px}.ins-rows{margin-top:12px}}
 @media(prefers-reduced-motion:reduce){.ins-tool,.ins-meter i{transition:none}}
+
+
+/* 2026-10-12: Keep insurance cards, results and long guide links on-screen. */
+@media screen and (max-width:650px){
+  .ins-hub,.ins-hub > *, .ins-hub :is(.ins-hero,.ins-grid,.ins-guides,.ins-calc,.ins-calc-inner,.ins-out,.ins-row,.ins-tool,.ins-guide,.ins-faq,.ins-guide-more){min-width:0;max-width:100%}
+  .ins-hub :is(h1,h2,h3,p,a,strong,small){overflow-wrap:break-word}
+  .ins-row{flex-wrap:wrap;gap:6px}
+  .ins-row strong{white-space:normal;overflow-wrap:anywhere;text-align:right}
+  .ins-hero-actions > a{max-width:100%;white-space:normal;text-align:center}
+}
