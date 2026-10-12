@@ -350,3 +350,9 @@
   [data-solar-export] .sol-export-credit{flex-wrap:wrap;align-items:flex-start}
   [data-solar-export] .sol-export-credit strong{white-space:normal;overflow-wrap:anywhere}
 }
+
+/* Connected editorial journey: distinct from paid partner programme. */
+.sol-connected-reading{border:1px solid var(--sol-line);border-radius:7px;padding:clamp(20px,3vw,32px);background:#f8faf6;max-width:100%}
+.sol-connected-reading .sol-sectionhead{margin-bottom:14px}
+.sol-connected-reading p{color:var(--sol-muted);font-size:14px;line-height:1.75;max-width:85ch;overflow-wrap:break-word}
+.sol-connected-reading a{color:var(--sol-green);text-decoration:underline;text-underline-offset:3px;font-weight:650}
