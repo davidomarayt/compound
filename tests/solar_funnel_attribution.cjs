@@ -77,6 +77,10 @@ const news='/news/budget-2027-energy-credit/';
   ['/solar/compare-quotes/', 'quote_comparison'],
   ['/solar-payback-calculator/', 'payback_calculator'],
   ['/solar-ev-battery-optimiser/', 'solar_ev_battery_calculator'],
+  ['/electricity-cost-calculator/', 'electricity_cost_calculator'],
+  ['/ber-energy-cost-calculator/', 'ber_energy_calculator'],
+  ['/wealth/electricity-tariffs-ireland/', 'electricity_tariff_guide'],
+  ['/wealth/average-home-electricity-use-ireland/', 'electricity_usage_guide'],
   ['/wealth/solar-panels-ireland/', 'solar_article'],
   ['/news/new-solar-panels-news-2027/', 'solar_article'],
   ['/solar/future-roof-tool/', 'solar_hub_subpage'],
@@ -85,15 +89,15 @@ const news='/news/budget-2027-energy-credit/';
 
 storage.clear();
 const entry=harness('/news/budget-2027-energy-credit/');
-entry.click('/solar/',{area:'article'});
+entry.click('/electricity-cost-calculator/',{area:'article'});
 assert.equal(entry.logs[0][2].audience,'homeowner_research');
 assert.equal(entry.logs[0][2].source_type,'news');
-const next=harness('/solar/');
-next.click('/solar-payback-calculator/',{area:'solar'});
+const next=harness('/electricity-cost-calculator/');
+next.click('/solar/',{area:'article'});
 assert.equal(next.logs.length,1);
-assert.equal(next.logs[0][2].source_path,'/solar/');
+assert.equal(next.logs[0][2].source_path,'/electricity-cost-calculator/');
 assert.equal(next.logs[0][2].journey_origin,'/news/budget-2027-energy-credit/');
-const after=harness('/solar-payback-calculator/');
+const after=harness('/solar/');
 after.click('/solar/get-quotes/');
 assert.equal(after.logs[0][2].journey_origin,'/news/budget-2027-energy-credit/');
 assert.equal(after.logs[0][2].destination_step,'quote_brief');
@@ -117,7 +121,7 @@ assert.equal(without.logs.length,0);
 // Exclusions: external links, same-page anchors, downloadable files, generic non-solar links.
 const exclusions=harness('/solar/');
 for(const href of ['#solar-tools','/solar/#solar-tools','https://other.example/solar/',
-                    '/insurance/','/electricity-cost-calculator/','javascript:alert(1)']) exclusions.click(href);
+                    '/insurance/','/prsi-calculator/','javascript:alert(1)']) exclusions.click(href);
 exclusions.click('/solar/grants/',{download:true});
 assert.equal(exclusions.logs.length,0);
 
