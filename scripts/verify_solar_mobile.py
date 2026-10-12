@@ -1,7 +1,7 @@
-"""Check every public Solar Hub route in a real Chromium mobile viewport.
+"""Audit rendered Solar Hub pages in mobile/tablet Chromium viewports.
 
-Requires: python -m pip install playwright && python -m playwright install chromium
-Run after `compound build`: python scripts/verify_solar_mobile.py
+For local review, build site first and run this script with the local public/ dir.
+For post-deploy QA, set SOLAR_AUDIT_ORIGIN=https://compound.ie and avoid rebuilding.
 """
 from __future__ import annotations
 
@@ -93,14 +93,19 @@ SCAN = r"""() => {
 
 
 def main() -> None:
-    if not (PUBLIC / "solar" / "index.html").exists():
-        raise SystemExit("Build the site before running this browser audit.")
-
-    handler = partial(SimpleHTTPRequestHandler, directory=str(PUBLIC))
-    server = ThreadingHTTPServer(("127.0.0.1", 0), handler)
-    thread = threading.Thread(target=server.serve_forever, daemon=True)
-    thread.start()
-    origin = f"http://127.0.0.1:{server.server_port}"
+    origin = os.getenv("SOLAR_AUDIT_ORIGIN", "").strip().rstrip("/")
+    server = None
+    if origin:
+        if not origin.startswith("https://"):
+            raise SystemExit("SOLAR_AUDIT_ORIGIN must be an https:// URL")
+    else:
+        if not (PUBLIC / "solar" / "index.html").exists():
+            raise SystemExit("Build the site or set SOLAR_AUDIT_ORIGIN before auditing.")
+        handler = partial(SimpleHTTPRequestHandler, directory=str(PUBLIC))
+        server = ThreadingHTTPServer(("127.0.0.1", 0), handler)
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        origin = f"http://127.0.0.1:{server.server_port}"
     failures: list[str] = []
     try:
         with sync_playwright() as playwright:
@@ -181,8 +186,9 @@ def main() -> None:
             finally:
                 browser.close()
     finally:
-        server.shutdown()
-        server.server_close()
+        if server is not None:
+            server.shutdown()
+            server.server_close()
     if failures:
         print("\nFAILURES (" + str(len(failures)) + "):")
         for failure in failures:
