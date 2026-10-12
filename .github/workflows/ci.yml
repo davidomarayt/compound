@@ -1,15 +1,44 @@
+# Fast correctness gate for article and code changes.
+# Run once on a PR, and once on the publishing branch after merge.
+# Expensive image, Lighthouse and browser checks live in site.yml / quality-audit.yml.
 name: ci
-on: [push, pull_request]
+on:
+  pull_request:
+    branches: ["claude/clever-babbage-uibieq"]
+  push:
+    branches: ["claude/clever-babbage-uibieq"]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: pip
+          cache-dependency-path: pyproject.toml
       - run: pip install -e ".[dev]"
+      - name: Fast changed-article editorial preflight
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git rev-parse HEAD^ >/dev/null 2>&1; then
+            git diff --name-only HEAD^ HEAD > "${RUNNER_TEMP}/changed-articles.txt"
+          else
+            # No parent reachable (e.g. a manually dispatched run): review all articles.
+            find content -type f -name '*.md' > "${RUNNER_TEMP}/changed-articles.txt"
+          fi
+          python scripts/article_preflight.py --file-list "${RUNNER_TEMP}/changed-articles.txt"
       - run: pytest -q
+      - run: python -m py_compile scripts/article_preflight.py
       - run: python -m py_compile scripts/news_images.py
       - run: python -m py_compile scripts/earnings.py
       - run: python -m py_compile scripts/earnings_backfill.py
@@ -24,42 +53,3 @@ jobs:
       - run: node tests/solar_funnel_attribution.cjs
       - run: node --check compound/site/static/pia-providers.js
       - run: node tests/pia_provider_fees.cjs
-
-  performance:
-    needs: test
-    timeout-minutes: 15
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-      - run: pip install -e .
-      - name: Attach images to published News stories
-        env:
-          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
-        run: python scripts/news_images.py
-      - run: compound build
-        env:
-          SITE_BASE_URL: https://compound.ie
-          PREVIEW_BASE_URL: https://compound.ie
-          COMPOUND_AUDIT_MODE: "1"
-      - name: Assert published electricity news routes exist
-        run: |
-          test -s public/news/no-energy-credit-budget-2027-electricity-bills-winter/index.html
-          test -s public/news/social-democrats-400-energy-credit-budget-2027/index.html
-          grep -Fq 'https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/' public/news/no-energy-credit-budget-2027-electricity-bills-winter/index.html
-          grep -Fq 'was NOT included in Budget 2027' public/news/social-democrats-400-energy-credit-budget-2027/index.html
-      - name: Run Lighthouse CI against representative mobile pages
-        id: lighthouse
-        continue-on-error: true
-        run: npx --yes @lhci/cli@0.14.0 autorun --config=.lighthouserc.json
-      - name: Print Lighthouse diagnostics
-        if: always()
-        run: python scripts/lighthouse_diagnostics.py .lighthouseci
-      - name: Enforce Lighthouse thresholds
-        if: steps.lighthouse.outcome == 'failure'
-        run: exit 1
