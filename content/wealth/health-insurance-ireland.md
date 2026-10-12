@@ -53,6 +53,8 @@ That matters more in 2026 because prices and benefits are moving at the same tim
 
 The latest Health Insurance Authority (HIA) figures reported for **Q2 2026** put the weighted average adult premium at about **€1,950 a year**, while more than **2.5 million people** continue to hold inpatient health insurance. The HIA's 2025 market report found that **46% of the population** had inpatient cover at the end of 2025.
 
+**Compare your options:** Start with the [Compound Insurance Hub](/insurance/) to understand life, mortgage, income and health cover separately, then use our [Health Insurance Cost Comparison Calculator](/health-insurance-cost-comparison-calculator/) to compare two plans' total expected out-of-pocket costs. For official current plan benefits and prices, use the HIA comparison service linked below. Our calculator does not quote insurer premiums.
+
 But an "average premium" does not tell you whether a plan is good value.
 
 Two plans at similar prices can have very different hospital lists, room entitlements, excesses, orthopaedic or cardiac shortfalls, outpatient benefits and maternity cover. A plan with a lower premium can be the better choice for one household and a false economy for another.
