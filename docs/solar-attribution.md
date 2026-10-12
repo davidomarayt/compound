@@ -22,6 +22,7 @@ Automatically included destinations:
 
 - /solar/ and all existing/future /solar/.../ subpages, including grants, quote comparison, quote preparation and the installer directory.
 - /solar-payback-calculator/ and /solar-ev-battery-optimiser/.
+- Upstream feeder pages such as /electricity-cost-calculator/, /ber-energy-cost-calculator/, /whole-house-retrofit-planner/, /ev-charging-cost-calculator/, /wealth/electricity-tariffs-ireland/ and /wealth/average-home-electricity-use-ireland/. These are energy-research steps, NOT solar purchase-intent events; they retain the original article origin if the reader later visits Solar Hub.
 - Existing and future news/evergreen articles with solar in the slug and the CEG/SRESS guide.
 - /solar/for-installers/ is measured with installer_business; it must never be mixed with homeowner enquiries.
 
