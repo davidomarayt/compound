@@ -1,42 +1,36 @@
 ---
-title: "€400 Energy Credit for Households Under €70,000 Proposed for Budget 2027"
-seo_title: "€400 Energy Credit Ireland: Social Democrats Budget 2027 Proposal"
+title: "€400 Energy Credit Proposal: What Budget 2027 Actually Did"
+seo_title: "€400 Energy Credit Budget 2027: Proposal Not Adopted"
 slug: social-democrats-400-energy-credit-budget-2027
 pillar: wealth
 canonical_path: /news/social-democrats-400-energy-credit-budget-2027/
 draft: false
 publication_status: published
 date: 2026-10-01
-reviewed: 2026-10-01
-summary: "The Social Democrats are proposing a €400 targeted energy credit for low- to middle-income households, with a household-income threshold of under €70,000. Here is what is proposed, how it would be funded and what is not yet confirmed."
-meta_description: "Social Democrats propose a €400 energy credit for households earning under €70,000 in Budget 2027. See eligibility, funding proposal and what remains unconfirmed."
+reviewed: 2026-10-12
+approved_by: "User-requested post-Budget 2027 correction — 12 October 2026"
+summary: "The Social Democrats proposed a €400 electricity credit for households with income under €70,000, but Budget 2027 did not introduce it. What the proposal meant, what changed and how to plan energy costs instead."
+meta_description: "Was the €400 energy credit included in Budget 2027? No. The Social Democrats proposal was not adopted. See confirmed supports and electricity cost tools."
 tags: [news, budget-2027, energy-credit, electricity-bills, cost-of-living, social-democrats, ireland]
 news_image_query: "Irish household electricity bill energy meter kitchen table Ireland"
 related_tools:
   - electricity-cost-calculator
+  - solar-payback-calculator
+  - solar-ev-battery-optimiser
 social:
   enabled: true
   url: https://compound.ie/news/social-democrats-400-energy-credit-budget-2027/
   x:
     enabled: true
     text: >-
-      A €400 energy credit for households with income under €70,000 has been
-      proposed by the Social Democrats ahead of Budget 2027. It is not a
-      confirmed Government measure. Here is what the proposal says, how it
-      would be funded and what remains unclear.
+      Update: the Social Democrats proposed a €400 electricity credit for households under €70,000, but Budget 2027 did not adopt it. See what was announced and estimate your winter bills.
   linkedin:
     enabled: true
     text: >-
-      The Social Democrats have proposed a targeted €400 energy credit for
-      households with annual income below €70,000 ahead of Budget 2027.
-      Compound breaks down the eligibility wording, proposed funding mechanism
-      and the distinction between an opposition proposal and an announced
-      Government measure.
+      The €400 targeted energy-credit plan was an opposition proposal, not a Budget 2027 entitlement. This updated analysis explains the final Government position and links to electricity and solar cost scenarios.
   instagram:
     enabled: false
-    caption: >-
-      €400 energy credit proposed for households under €70,000 — but it is not
-      yet a confirmed Budget 2027 measure.
+
 sources:
   - title: "Social Democrats: Alternative Budget 2027 — A Future You Can Afford"
     url: https://www.socialdemocrats.ie/our-policies/alternative-budget/
@@ -48,167 +42,90 @@ sources:
     url: https://www.rte.ie/news/analysis-and-comment/2026/0927/1593087-budget-analysis-politics/
   - title: "CRU: Opening statement to Joint Oireachtas Committee on Climate, Environment and Energy — 13 May 2026"
     url: https://www.cru.ie/about-us/news/opening-statement-joint-oireachtas-committee-on-climate-environment-and-energy-13th-may-2026/
+  - title: "RTÉ / Deloitte: Budget 2027 Q&A — no additional electricity credit announced on 6 October 2026."
+    url: https://www.rte.ie/news/2026/1006/1594201-your-questions-answered-budget-2027/
+  - title: "Oireachtas: 2027 Budget Statement — Fuel Allowance increase, 6 October 2026."
+    url: https://prelive.oireachtas.ie/ga/debates/debate/dail/2026-10-06/3/
+  - title: "SEAI: enhanced solar and energy-efficiency supports effective from 6 October, subject to arrangements."
+    url: https://www.seai.ie/news-and-events/news/enhanced-grants
 ---
 
-<p><em>News analysis · 1 October 2026. This is an opposition proposal ahead of Budget 2027, not a confirmed Government measure. Budget 2027 is due to be announced on Tuesday, 6 October.</em></p>
-
-The Social Democrats have proposed a **€400 energy credit for low- to middle-income households** ahead of Budget 2027, with the party saying the support should apply to households with annual income of **less than €70,000**.
-
-That would make the payment much more targeted than the broad electricity-credit schemes used in earlier cost-of-living packages.
-
-But the most important point for households is this:
-
-**the €400 credit has not been announced by the Government and is not currently guaranteed to appear in Budget 2027.**
-
-It forms part of the Social Democrats' Alternative Budget 2027, published on 1 October.
-
-<div class="cs-intro">
-<p class="cs-kicker">What is being proposed?</p>
-<p><strong>A €400 targeted energy credit for households with annual income below €70,000.</strong></p>
-<p>The Social Democrats propose funding the measure through a windfall tax on excess energy-company profits. The final Government Budget will be announced on 6 October 2026.</p>
+<div class="ew27-intro" role="note">
+<p class="ew27-kicker">Original report 1 October · Updated after Budget on 12 October 2026</p>
+<p><strong>Outcome: the €400 energy credit proposed by the Social Democrats was NOT included in Budget 2027.</strong> It remains an opposition alternative-budget proposal. There is no entitlement to this €400 payment and no under-€70,000 household-income application scheme arising from the Budget announcement.</p>
+<p><a href="/news/no-energy-credit-budget-2027-electricity-bills-winter/" data-energy-funnel="winter_article">Read the confirmed Budget measures and winter electricity-cost scenarios →</a></p>
 </div>
 
-## Who would qualify for the €400 energy credit?
+On 1 October 2026 the Social Democrats proposed a **€400 targeted electricity credit** for households with annual income below **€70,000**. The idea was to help lower- and middle-income households with high electricity bills by using a tax on extraordinary energy-company profits to fund the payment.
 
-The Social Democrats have described the measure as a targeted credit for **low- to middle-income households**.
+The Government presented Budget 2027 on **6 October 2026**. **It did not adopt the proposal or announce any additional electricity credits.** [RTÉ's Budget 2027 questions and answers](https://www.rte.ie/news/2026/1006/1594201-your-questions-answered-budget-2027/) confirms the decision.
 
-In a separate proposal published ahead of the alternative budget, the party specified **households with incomes of less than €70,000**.
+That distinction matters. The original €400 figure was never a confirmed Government payment, and households should not include it when budgeting for winter 2026–27.
 
-That wording matters.
+## What exactly did the Social Democrats propose?
 
-Some headlines may make the proposal sound as though every individual earning €70,000 or less would automatically receive €400. The party's published material describes the threshold in terms of **household income**, rather than simply an individual's salary.
+The party's [Alternative Budget 2027](https://www.socialdemocrats.ie/our-policies/alternative-budget/) proposed a **one-off €400 credit** for households earning **under €70,000**. This was a household-income threshold, not an individual-salary threshold.
 
-Detailed administrative rules have not yet been set out in the material reviewed by Compound, including questions such as:
+It was intended to be narrower than the earlier, broadly available electricity-bill credits. The Social Democrats also [proposed a windfall tax on energy-company super-profits](https://www.socialdemocrats.ie/soc-dems-motion-seeks-introduction-of-windfall-tax-on-energy-companies-super-profits/) to fund the support.
 
-- whether the threshold would be based on gross or taxable household income;
-- how income would be assessed for couples;
-- how renters or shared households would be treated;
-- whether the payment would be made through electricity accounts or another mechanism;
-- and what reference year would be used to test income.
+The proposal did not progress into an operational scheme. There are **no published Government eligibility, application or payment dates** for the proposed €400 credit, because Budget 2027 did not adopt it.
 
-Those details would matter significantly if any targeted credit were ultimately implemented.
+## Was a €400 energy credit included in Budget 2027?
 
-## Is the €400 energy credit confirmed for Budget 2027?
+**No.** Neither a universal €400 electricity credit nor the Social Democrats' means-tested alternative was included in the announced Budget 2027 package.
 
-No.
+The Government did announce some other measures affecting energy costs and household finances:
 
-The proposal comes from the **Social Democrats**, an opposition party, as part of its alternative budget.
+- **Fuel Allowance** rises by **€5 per week**, to **€43**, for eligible recipients.
+- The Budget announced changes to carbon tax on home-heating oil and gas; these should not be confused with an electricity-bill credit.
+- Previously announced expanded [SEAI solar and retrofit supports](https://www.seai.ie/news-and-events/news/enhanced-grants) are intended to help qualifying households cut future energy costs, subject to scheme criteria.
 
-Budget 2027 will be delivered by the Government on **Tuesday, 6 October 2026**.
+You can read the [Budget Statement](https://prelive.oireachtas.ie/ga/debates/debate/dail/2026-10-06/3/) and our [updated winter electricity article](/news/no-energy-credit-budget-2027-electricity-bills-winter/) for the distinction between direct payments, tax measures and energy upgrades.
 
-Until the Government publishes the final Budget documentation, households should not treat the €400 figure or the €70,000 threshold as an entitlement.
+## What would €400 have meant for a household?
 
-Recent reporting has indicated that the Government has been considering more targeted responses to energy costs rather than simply repeating the universal electricity credits used in previous years. The final shape of those measures remains subject to the Budget announcement.
+For perspective, a hypothetical €400 credit would cover:
 
-For the wider picture, see Compound's **[Budget 2027 tracker](/wealth/budget-2027-what-to-watch/)**.
-
-## How would the Social Democrats fund it?
-
-The party proposes using a **windfall tax on excess profits in the energy sector**.
-
-Its September proposal called for the reintroduction of both a market revenue cap and a temporary solidarity contribution, with proceeds ring-fenced to fund the targeted €400 credit.
-
-The Social Democrats said the measure should apply to households with income below €70,000.
-
-The party has also pointed to the earlier Irish windfall measures introduced during the energy crisis as a precedent. Whether a new version could raise the amount required would depend on the precise design of the tax, energy-company profits and market conditions.
-
-The Government has not adopted the proposal at the time of publication.
-
-## Why is energy support back in the Budget debate?
-
-Household energy affordability remains a significant issue.
-
-In evidence to an Oireachtas committee in May, the Commission for Regulation of Utilities said the latest figures then available showed approximately **316,000 domestic electricity customers in arrears** in February, with an average electricity debt of **€492**.
-
-That does not mean every household in arrears would qualify for the Social Democrats' proposed credit, but it illustrates why energy costs remain part of the Budget 2027 debate.
-
-Separately, the CRU has approved changes to electricity network charges for 2026/27 while the PSO levy has fallen from 1 October. The final amount a household pays still depends heavily on its supplier, tariff, standing charge and electricity use.
-
-<div class="cs-tool">
-<p class="cs-kicker">Check your own numbers</p>
-<h3>Electricity Cost Calculator</h3>
-<p>A €400 credit has a different impact depending on the size of your annual electricity bill. Estimate the cost of your electricity use and compare the credit with your actual household consumption.</p>
-<p><a href="/electricity-cost-calculator/"><strong>Use the Electricity Cost Calculator →</strong></a></p>
-</div>
-
-## What would €400 mean against a household electricity bill?
-
-A €400 credit is a fixed amount, so its percentage impact depends on the household's annual bill.
-
-For example:
-
-| Annual electricity cost | €400 as a share of that cost |
+| Illustrative annual electricity bill | €400 as share of the bill |
 | --- | ---: |
-| €1,200 | **33.3%** |
-| €1,500 | **26.7%** |
-| €1,800 | **22.2%** |
-| €2,000 | **20.0%** |
-| €2,500 | **16.0%** |
+| €1,200 | 33.3% |
+| €1,500 | 26.7% |
+| €1,800 | 22.2% |
+| €2,000 | 20.0% |
+| €2,500 | 16.0% |
 
-These are simple illustrations, not estimates of typical Irish bills.
+These are **mathematical comparisons only**. They do not represent a payment anyone will receive under Budget 2027, nor official average Irish bills.
 
-A household paying €2,000 a year would effectively have one-fifth of that annual electricity cost offset by a €400 credit, assuming the full credit were applied to electricity bills.
+A real electricity bill depends on kWh consumed, the unit rate, standing charges, time-of-use pricing, VAT, levies and discounts. If the cost pressure comes from one device — for example, an immersion, electric heater or dehumidifier — the [Electricity Cost Calculator](/electricity-cost-calculator/) estimates the device's incremental running cost.
 
-If the final scheme used a different payment mechanism, the practical effect could differ.
+<div class="ew27-route" aria-label="Calculate electricity running costs">
+<span>01 · CHECK ACTUAL DEMAND</span>
+<strong>What is driving your electricity bill?</strong>
+<p>Test wattage, hours and the rate you really pay. This calculator models appliances, rather than promising a whole-house energy bill.</p>
+<a href="/electricity-cost-calculator/" data-energy-funnel="electricity_tool">Open the Electricity Cost Calculator <span aria-hidden="true">→</span></a>
+</div>
 
-## What else is in the Social Democrats' Alternative Budget 2027?
+## Can households reduce bills without a €400 credit?
 
-The €400 energy proposal sits within a broader alternative budget.
+Yes, but every option involves different costs and trade-offs. Checking tariffs can deliver savings without installing equipment; reducing waste and targeting high-consumption devices can reduce kWh. Solar panels can cut grid purchases, but their value depends on the roof, installation quote, import/export tariffs, grants and when power is generated.
 
-Among the measures published by the party are proposals to:
+**Solar is not a substitute for short-term energy support** for a household that cannot afford the upfront cost. For households considering installation, the right first step is to **model payback**, then compare equipment and qualified installers.
 
-- cut childcare fees by **€300 per month**;
-- increase the State Pension by **€15 per week**;
-- introduce a second tier of Child Benefit;
-- abolish the means test for Carer's Allowance;
-- introduce a **€40-per-week Cost of Disability payment**;
-- increase income tax credits, described by the party as putting **€350** in workers' pockets;
-- raise the standard-rate income-tax cut-off point by **€1,300**;
-- and invest further in housing, health, disability services and education.
+<div class="ew27-next" aria-label="Explore energy tools">
+<p class="ew27-kicker">FROM THE NEWS TO YOUR NUMBERS</p>
+<h2>Work out your options before requesting a solar quote.</h2>
+<div class="ew27-next-grid">
+<a href="/electricity-cost-calculator/" data-energy-funnel="electricity_tool"><b>01</b><strong>Electricity cost</strong><span>Estimate appliance use →</span></a>
+<a href="/solar-payback-calculator/" data-energy-funnel="solar_payback"><b>02</b><strong>Solar payback</strong><span>Check the economics →</span></a>
+<a href="/solar/get-quotes/" data-energy-funnel="quote_brief"><b>03</b><strong>Installer quote brief</strong><span>Prepare comparable quotes →</span></a>
+</div>
+<p class="ew27-fine">These are free, independent tools; no installer is guaranteed an enquiry and Compound has not launched a paid lead marketplace.</p>
+</div>
 
-These are proposals from the Social Democrats, not measures that have been enacted or confirmed by the Government.
-
-## How does the €70,000 threshold compare with a universal credit?
-
-The distinction is mainly about targeting.
-
-A **universal credit** can be applied broadly to eligible domestic electricity accounts without testing income.
-
-A **targeted credit** restricts eligibility using criteria such as household income.
-
-Targeting can concentrate a fixed amount of public money on a smaller number of households, but it also requires rules for identifying eligible households and dealing with cases where household circumstances are not straightforward.
-
-The Social Democrats' proposal chooses the targeted approach, using the €70,000 household-income threshold.
-
-The Government's final approach may be different.
-
-## What should households watch for on Budget Day?
-
-When Budget 2027 is announced, the headline amount will only be part of the story.
-
-For any energy support, the key details will be:
-
-1. **Is there an energy credit at all?**
-2. **Is it universal or means-tested?**
-3. **What income threshold applies?**
-4. **Is eligibility based on individual or household income?**
-5. **How will Revenue or energy suppliers determine eligibility?**
-6. **Will renters receive the support directly?**
-7. **When will the payment be made?**
-8. **Will it be one €400 payment or divided across several bills?**
-9. **Will Fuel Allowance or other targeted supports change as well?**
-10. **Are there separate measures for electricity, gas and home-heating oil?**
-
-Compound will update its Budget 2027 coverage when the Government publishes the final measures.
+For a broader overview of solar grants, batteries and current installation steps, use the [Compound Solar Hub](/solar/) and [electricity tariff guide](/wealth/electricity-tariffs-ireland/).
 
 ## Bottom line
 
-The Social Democrats are proposing a **€400 targeted energy credit for households with annual income below €70,000**.
+The Social Democrats' proposed €400 targeted electricity credit **was not included in Budget 2027**. The under-€70,000 household-income threshold was part of an opposition proposal, not an enacted eligibility rule.
 
-The party says it would fund the support through a windfall tax on excess energy-company profits.
-
-However, this is an **alternative-budget proposal**, not a confirmed Budget 2027 measure.
-
-The Government's Budget will be announced on **6 October 2026**, when households will know whether an energy credit is included, who qualifies and how any support will be delivered.
-
-Until then, the €400 figure should be treated as a political proposal rather than money households can count on receiving.
+**The useful next step is to look at your own bill**, check current supplier terms and estimate the economics of any efficiency or solar investment before committing. See our [winter electricity-cost guide](/news/no-energy-credit-budget-2027-electricity-bills-winter/), [Electricity Cost Calculator](/electricity-cost-calculator/) and [Solar Payback Calculator](/solar-payback-calculator/).
