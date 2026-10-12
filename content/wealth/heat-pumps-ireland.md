@@ -6,10 +6,10 @@ pillar: wealth
 draft: false
 publication_status: published
 date: 2026-10-03
-reviewed: 2026-10-03
+reviewed: 2026-10-12
 approved_by: "Explicit publish instruction — 3 October 2026"
-summary: "A practical 2026 guide to heat pumps in Ireland: SEAI grants up to €12,500, installation costs, running-cost maths, SCOP, radiators, older homes, technical assessments and how to decide whether your home is actually suitable."
-meta_description: "Heat pumps Ireland 2026: understand SEAI grants up to €12,500, installation costs, running costs, SCOP, radiators, heat loss and home suitability."
+summary: "A practical 2026 guide to heat pumps in Ireland: revised SEAI grants up to €14,500, installation costs, running-cost maths, SCOP, radiators, heat loss and home suitability."
+meta_description: "Heat pumps Ireland 2026: SEAI grants up to €14,500, installation costs, oil versus heat-pump running costs, radiators, heat loss and eligibility."
 tags: [heat-pump, air-to-water, ground-source, seai-grant, retrofit, electricity, heating, home-energy, ireland]
 news_image_query: "air to water heat pump outside modern Irish home radiators renewable heating Ireland"
 related_tools:
@@ -18,8 +18,10 @@ related_tools:
   - electricity-cost-calculator
   - solar-payback-calculator
 sources:
-  - title: "SEAI: Heat Pump System Grant — 2026 grant values, eligibility and technical assessment rules. Checked 3 October 2026."
+  - title: "SEAI: Heat Pump System Grant — revised October 2026 values, boiler scrappage and eligibility. Checked 12 October 2026."
     url: https://www.seai.ie/grants/home-energy-grants/individual-grants/heat-pump-systems
+  - title: "SEAI: Enhanced grants effective October 2026, including boiler-scrappage support. Checked 12 October 2026."
+    url: https://www.seai.ie/news-and-events/news/enhanced-grants
   - title: "SEAI: How heat pumps work — domestic heat-pump types, operation and suitability. Checked 3 October 2026."
     url: https://www.seai.ie/plan-your-energy-journey/for-your-home/guide-to-upgrades/heat-pumps/how-heat-pumps-work
   - title: "SEAI: Installing a heat pump — design, commissioning and grant process. Checked 3 October 2026."
@@ -46,7 +48,7 @@ social:
   x:
     enabled: true
     text: >-
-      Heat pumps can be extremely efficient in Ireland — but only when the house, radiators and controls suit low-temperature heating. The 2026 SEAI grant can now reach €12,500. We break down the costs, running-cost maths and the suitability checks.
+      Heat pumps can be extremely efficient in Ireland — but only when the house, radiators and controls suit low-temperature heating. The revised October 2026 SEAI grant can now reach €14,500 for eligible houses. We break down the costs, running-cost maths and the suitability checks.
   linkedin:
     enabled: true
     text: >-
@@ -71,12 +73,12 @@ It is:
 
 <div class="cs-intro">
 <p class="cs-kicker">Quick answer</p>
-<p><strong>SEAI's 2026 Heat Pump System grant can provide up to €12,500 for qualifying houses, made up of up to €6,500 for the heat pump, up to €2,000 for qualifying central-heating upgrades and a €4,000 Renewable Heat Bonus where an eligible fossil-fuel or storage-heating system is being replaced.</strong></p>
+<p><strong>SEAI's updated October 2026 Heat Pump System grant can provide up to €14,500 for qualifying houses: up to €10,500 for the heat pump, up to €2,000 for qualifying central-heating upgrades and €2,000 for eligible scrappage of an existing fossil-fuel or electric-storage heating system.</strong></p>
 <p>For apartments, the maximum published bundle is lower. Heat-pump grants also have property, technical and application requirements.</p>
 <p>A heat pump works best in a home with low heat loss and a heating system that can keep the house comfortable at relatively low water temperatures.</p>
 </div>
 
-This guide reflects published Irish rules checked on **3 October 2026**.
+This guide reflects [SEAI's updated October 2026 grants](https://www.seai.ie/grants/home-energy-grants/individual-grants/heat-pump-systems), checked on **12 October 2026**. See also our [new €14,500 grant and oil-versus-heat-pump cost comparison](/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/) with two illustrated charts.
 
 Before pricing the heat pump itself, it is worth checking the fabric. Our **[Insulation Grants Ireland 2026 guide](/wealth/insulation-grants-ireland/)** compares current attic, cavity, internal and external wall grants with SEAI's latest median costs.
 
@@ -88,10 +90,10 @@ Before pricing the heat pump itself, it is worth checking the fabric. Our **[Ins
 <tr><th scope="col">Question</th><th scope="col">2026 position</th></tr>
 </thead>
 <tbody>
-<tr><th scope="row">Maximum grant for qualifying houses</th><td><strong>Up to €12,500</strong></td></tr>
-<tr><th scope="row">Heat-pump unit grant</th><td>Up to €6,500 for qualifying house systems</td></tr>
+<tr><th scope="row">Maximum grant for qualifying houses</th><td><strong>Up to €14,500</strong></td></tr>
+<tr><th scope="row">Heat-pump unit grant</th><td>Up to €10,500 for qualifying house systems</td></tr>
 <tr><th scope="row">Central-heating upgrade grant</th><td>Up to €2,000 where required for qualifying house projects</td></tr>
-<tr><th scope="row">Renewable Heat Bonus</th><td>€4,000 where the qualifying project replaces eligible fossil-fuel or storage heating</td></tr>
+<tr><th scope="row">Boiler scrappage grant</th><td>€2,000 for qualifying removal of fossil-fuel or electric-storage heating; SEAI also describes eligible homes without central heating</td></tr>
 <tr><th scope="row">Technical assessment support</th><td>€200 where applicable</td></tr>
 <tr><th scope="row">Home age for individual heat-pump grant</th><td>Home must generally have been built and occupied before 2021</td></tr>
 <tr><th scope="row">Pre-2007 home</th><td>Technical assessment may be required unless valid BER data confirms sufficiently low heat loss</td></tr>
@@ -214,11 +216,11 @@ This is exactly why the central-heating element of the current SEAI grant can ma
 
 ## The 2026 SEAI heat-pump grant
 
-SEAI increased the maximum Heat Pump System grant in February 2026.
+SEAI expanded its Heat Pump System grant bundle again in **October 2026**, including a new €2,000 scrappage component. The previous €12,500 headline amount and €4,000 Renewable Heat Bonus breakdown are superseded for the current grant scheme.
 
 For qualifying houses, the maximum current bundle can reach:
 
-**€12,500**
+**€14,500**
 
 made up of:
 
@@ -228,36 +230,38 @@ made up of:
 <tr><th scope="col">Grant component</th><th scope="col">Maximum support for qualifying house</th></tr>
 </thead>
 <tbody>
-<tr><th scope="row">Heat Pump Unit Grant</th><td><strong>€6,500</strong></td></tr>
+<tr><th scope="row">Heat Pump Unit Grant</th><td><strong>€10,500</strong></td></tr>
 <tr><th scope="row">Central Heating Grant</th><td><strong>€2,000</strong></td></tr>
-<tr><th scope="row">Renewable Heat Bonus</th><td><strong>€4,000</strong></td></tr>
-<tr><th scope="row">Potential combined support</th><td><strong>€12,500</strong></td></tr>
+<tr><th scope="row">Boiler Scrappage Grant</th><td><strong>€2,000</strong></td></tr>
+<tr><th scope="row">Potential combined support</th><td><strong>€14,500</strong></td></tr>
 </tbody>
 </table>
 </div>
 
-The €4,000 Renewable Heat Bonus is linked to replacing qualifying systems such as:
+The €2,000 boiler-scrappage element applies where an eligible heat-pump project replaces existing heating such as:
 
 - oil;
 - gas;
 - solid fuel;
 - or electric storage heating.
 
-The central-heating grant applies where qualifying upgrades such as new radiators or underfloor heating are required as part of the design.
+The central-heating grant applies where qualifying upgrades such as new radiators or underfloor heating are required as part of the design. SEAI also provides for eligible homes without existing central heating installing a heat pump under the scrappage rules.
 
-SEAI also states that a grant cannot exceed the actual cost of the qualifying works.
+**Special case:** Replacement of an existing heat pump that was not previously SEAI grant-aided has a separate maximum unit grant of €6,500 for a house or €4,500 for an apartment; the scrappage and central-heating grants do not apply to that cohort.
+
+SEAI also states that a grant cannot exceed the actual cost of the qualifying works. See our [oil-to-heat-pump financial comparison](/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/) before deciding whether an installation is worthwhile.
 
 ## Apartments have different grant limits
 
 SEAI currently publishes lower maximums for apartments.
 
-For several water-based heat-pump types, the maximum combined support for an apartment is **€9,500** rather than €12,500.
+For several water-based heat-pump types, the maximum combined support for an apartment is **€11,500**, compared with €14,500 for qualifying houses.
 
-Air-to-air systems have a different grant structure again.
+Air-to-air systems have a separate published maximum of **€9,500** for each dwelling type. They do not supply domestic hot water.
 
 The lesson is simple:
 
-> **Do not assume that "€12,500 heat-pump grant" applies identically to every property and every system type.**
+> **Do not assume that the €14,500 maximum applies identically to every property and every system type.**
 
 Use the current SEAI grant table for your exact dwelling and system before building the project budget.
 
@@ -743,7 +747,7 @@ It can still offset:
 - hot-water production;
 - daytime electrical demand.
 
-See our **[Solar Panels in Ireland guide](/wealth/solar-panels-ireland/)** for the solar economics separately.
+See our **[Solar Panels in Ireland guide](/wealth/solar-panels-ireland/)** for solar fundamentals. If you have a specific quote, test it in the **[Solar Payback Calculator](/solar-payback-calculator/)**; then use the **[Solar Hub](/solar/)** to compare installation quotes and prepare an installer brief. These tools assess solar PV, not whether a heat pump itself is a good investment.
 
 ## Heat pump plus battery
 
@@ -868,7 +872,7 @@ Annual performance depends on the whole system.
 
 Higher temperatures can reduce efficiency.
 
-### Assuming the full €12,500 grant applies automatically
+### Assuming the full €14,500 grant applies automatically
 
 Different grant components have different conditions.
 
@@ -888,9 +892,9 @@ A heat pump can substantially change the household's load profile.
 
 ### What is the heat-pump grant in Ireland in 2026?
 
-For qualifying houses, the current SEAI Heat Pump System grant bundle can reach **€12,500**, comprising up to €6,500 for the heat-pump system, up to €2,000 for qualifying central-heating upgrades and a €4,000 Renewable Heat Bonus where applicable.
+For qualifying houses, SEAI's October 2026 Heat Pump System grant bundle can reach **€14,500**, comprising up to €10,500 for the heat-pump system, up to €2,000 for qualifying central-heating upgrades and €2,000 for eligible boiler scrappage. The total depends on property, system, design and qualifying costs.
 
-### Do all homeowners get €12,500?
+### Do all homeowners get €14,500?
 
 No. Eligibility depends on the property, system, works and which grant components apply.
 
@@ -944,7 +948,7 @@ The strongest heat-pump projects combine:
 
 **low enough heat loss + correctly sized emitters + low flow temperatures + good controls + realistic electricity tariffs.**
 
-The 2026 grant increase makes the upfront economics much more attractive for qualifying households.
+The October 2026 grant expansion makes the upfront economics more attractive for qualifying households. Our [oil-versus-heat-pump grant comparison](/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/) shows how outcomes change with actual seasonal efficiency.
 
 But grant size should not be the reason to install one.
 

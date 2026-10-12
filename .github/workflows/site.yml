@@ -48,6 +48,12 @@ jobs:
         run: |
           set -euo pipefail
           test -s public/news/no-energy-credit-budget-2027-electricity-bills-winter/index.html
+          test -s public/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/index.html
+          test -s public/news/boiler-scrappage-grant-ireland-2027/index.html
+          grep -Fq '€14,500' public/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/index.html
+          grep -Fq '/solar-payback-calculator/' public/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/index.html
+          grep -Fq '€14,500' public/wealth/heat-pumps-ireland/index.html
+          grep -Fq 'no longer just a proposal' public/news/boiler-scrappage-grant-ireland-2027/index.html
           test -s public/news/social-democrats-400-energy-credit-budget-2027/index.html
           grep -Fq 'https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/' public/news/no-energy-credit-budget-2027-electricity-bills-winter/index.html
           grep -Fq 'What Will Electricity Cost This Winter?' public/news/no-energy-credit-budget-2027-electricity-bills-winter/index.html
@@ -131,6 +137,13 @@ jobs:
 
           fetch https://compound.ie/ /tmp/home.html
           # Catch missing routes and stale corrections immediately after publishing.
+          fetch https://compound.ie/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/ /tmp/heat-pump-grant.html
+          grep -Fq '€14,500' /tmp/heat-pump-grant.html
+          grep -Fq '/solar-payback-calculator/' /tmp/heat-pump-grant.html
+          fetch https://compound.ie/wealth/heat-pumps-ireland/ /tmp/heat-pump-evergreen.html
+          grep -Fq '€14,500' /tmp/heat-pump-evergreen.html
+          fetch https://compound.ie/news/boiler-scrappage-grant-ireland-2027/ /tmp/boiler-scrappage.html
+          grep -Fq 'no longer just a proposal' /tmp/boiler-scrappage.html
           fetch https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/ /tmp/winter-electricity.html
           grep -Fq 'What Will Electricity Cost This Winter?' /tmp/winter-electricity.html
           grep -Fq '/solar-payback-calculator/' /tmp/winter-electricity.html
