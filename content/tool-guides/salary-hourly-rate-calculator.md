@@ -1,3 +1,19 @@
+## Salary to hourly rate: quick Irish examples
+
+Wondering **how to work out your hourly rate from your annual salary**? Divide annual gross pay by the paid hours in a year. The examples below use 52 paid weeks, before PAYE, USC and PRSI.
+
+| Annual gross salary | 37.5 paid hours/week | 40 paid hours/week |
+| --- | ---: | ---: |
+| €30,000 | €15.38/hour | €14.42/hour |
+| €40,000 | €20.51/hour | €19.23/hour |
+| €50,000 | €25.64/hour | €24.04/hour |
+| €60,000 | €30.77/hour | €28.85/hour |
+| €70,000 | €35.90/hour | €33.65/hour |
+
+For the reverse calculation, **€16 an hour** at 39 paid hours a week across 52 paid weeks is **€32,448 gross a year**. If you work fewer paid hours or weeks, use the calculator above rather than assuming everyone works a 40-hour week.
+
+To see how much of a salary actually reaches your bank account, use the [Irish Take-Home Pay Calculator](/take-home-pay-calculator/). For two differently structured roles, use the [Contractor vs Salary Calculator](/contractor-vs-salary-calculator/).
+
 ## What this calculator is for
 
 This calculator converts annual salary into monthly, weekly, daily and hourly gross equivalents. It helps compare job offers, part-time work and contractor quotes on a common time basis.
