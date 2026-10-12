@@ -747,7 +747,7 @@ It can still offset:
 - hot-water production;
 - daytime electrical demand.
 
-See our **[Solar Panels in Ireland guide](/wealth/solar-panels-ireland/)** for the solar economics separately.
+See our **[Solar Panels in Ireland guide](/wealth/solar-panels-ireland/)** for solar fundamentals. If you have a specific quote, test it in the **[Solar Payback Calculator](/solar-payback-calculator/)**; then use the **[Solar Hub](/solar/)** to compare installation quotes and prepare an installer brief. These tools assess solar PV, not whether a heat pump itself is a good investment.
 
 ## Heat pump plus battery
 
