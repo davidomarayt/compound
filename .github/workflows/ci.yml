@@ -47,6 +47,12 @@ jobs:
           SITE_BASE_URL: https://compound.ie
           PREVIEW_BASE_URL: https://compound.ie
           COMPOUND_AUDIT_MODE: "1"
+      - name: Assert published electricity news routes exist
+        run: |
+          test -s public/news/no-energy-credit-budget-2027-electricity-bills-winter/index.html
+          test -s public/news/social-democrats-400-energy-credit-budget-2027/index.html
+          grep -Fq 'https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/' public/news/no-energy-credit-budget-2027-electricity-bills-winter/index.html
+          grep -Fq 'was NOT included in Budget 2027' public/news/social-democrats-400-energy-credit-budget-2027/index.html
       - name: Run Lighthouse CI against representative mobile pages
         id: lighthouse
         continue-on-error: true
