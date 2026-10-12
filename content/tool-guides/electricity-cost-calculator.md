@@ -1,3 +1,5 @@
+**Checking energy costs after Budget 2027?** Our [winter electricity-bill guide](/news/no-energy-credit-budget-2027-electricity-bills-winter/) explains the absence of a new energy credit, seasonal bill assumptions and ways to compare solar payback. Use the calculator here to estimate **one appliance or load at a time**; it is not a complete supplier bill comparison.
+
 ## What this calculator is for
 
 This calculator estimates the **incremental running cost of an appliance** from its power, usage pattern and electricity unit rate. It is useful for understanding what heaters, immersions, dehumidifiers, dryers, EV-related equipment and other loads can add to a bill.
