@@ -50,7 +50,7 @@ The Commission for Regulation of Utilities uses **4,200 kWh** as the estimated a
 
 That does **not** mean every Irish household should use 4,200 kWh.
 
-**Considering solar?** Start with your actual electricity consumption, then use the [Compound Solar Hub](/solar/) to assess grants, costs and installation quotes.
+**Considering solar?** Start with your actual electricity consumption, then compare **[4kWp vs 6kWp vs 8kWp solar systems](/wealth/how-many-solar-panels-do-i-need-ireland/)** and use the [Compound Solar Hub](/solar/) to assess grants, costs and installation quotes.
 
 A one-bedroom apartment, a four-bedroom detached house, a home with an electric shower, an all-electric home, a heat-pump house and an EV household can have completely different electricity profiles.
 
