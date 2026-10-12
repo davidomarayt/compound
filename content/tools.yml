@@ -345,7 +345,7 @@ tools:
     category: Mortgages & Home Buying
     formula: lpt
     summary: Estimate 2026 Local Property Tax from the 2026–2030 valuation bands and your local authority adjustment.
-    meta_description: "Property tax calculator Ireland 2026: estimate LPT using Revenue's 2026–2030 valuation bands and your council adjustment. See annual and monthly costs."
+    meta_description: "Calculate Local Property Tax in Ireland for 2026. Enter your home's 1 November 2025 value and council to estimate annual and monthly LPT using Revenue bands."
     updated: 2026-10-09
     fields:
       - {id: value, label: Property market value, type: number, prefix: "€", default: 400000, min: 1, step: 1000}
@@ -1249,12 +1249,12 @@ tools:
 
   - slug: salary-hourly-rate-calculator
     title: Salary to Hourly Rate Calculator Ireland
-    seo_title: Salary to Hourly Rate Calculator Ireland 2026
+    seo_title: Annual Salary to Hourly Rate Calculator Ireland 2026
     category: Tax & Take-Home Pay
     formula: salary_hourly
     summary: Convert an annual gross salary into monthly, weekly, daily and hourly gross pay using the working pattern you actually want to compare.
-    meta_description: "Salary to hourly rate calculator Ireland 2026. Convert annual gross pay into hourly, daily, weekly, fortnightly and monthly rates using your paid hours."
-    updated: 2026-09-22
+    meta_description: "Convert annual salary into an hourly rate in Ireland. Free 2026 calculator with €30k–€70k examples, 37.5- or 40-hour weeks, and gross weekly and monthly pay."
+    updated: 2026-10-12
     fields:
       - {id: salary, label: Annual gross salary, type: number, prefix: "€", default: 50000, min: 0, step: 500, section_start: Gross pay}
       - {id: hours, label: Paid working hours per week, type: number, default: 39, min: 1, max: 100, step: 0.5, section_start: Working pattern, help: "Use paid hours for the comparison. Unpaid breaks should normally be excluded."}
@@ -1300,11 +1300,12 @@ tools:
 
   - slug: fuel-cost-calculator
     title: Fuel Cost Calculator Ireland
+    seo_title: Fuel Cost Calculator Ireland | Petrol, Diesel & Cost per Km
     category: EV & Motoring
     formula: fuel
     summary: Estimate litres and fuel cost for a journey, then use Advanced mode to annualise the same real-world consumption and pump-price assumptions.
-    meta_description: Fuel cost calculator Ireland. Estimate petrol or diesel cost per trip, per kilometre and per year from L/100km, distance and fuel price.
-    updated: 2026-09-22
+    meta_description: Fuel cost calculator Ireland. Work out petrol or diesel cost per trip, per kilometre and per year with real-world L/100km and today's pump price.
+    updated: 2026-10-12
     basic_note: "Basic mode prices the trip pattern entered using one fuel-consumption figure and one pump price."
     advanced_note: "Advanced mode adds annual distance so the same consumption and pump-price assumptions can be translated into yearly litres and fuel spend."
     fields:
