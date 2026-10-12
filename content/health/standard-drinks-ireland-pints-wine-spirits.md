@@ -31,6 +31,12 @@ sources:
   url: https://pubmed.ncbi.nlm.nih.gov/11115785/
 ---
 
+<div class="cs-intro" role="note">
+<p class="cs-kicker">Irish standard drinks — quick answer</p>
+<p><strong>One Irish standard drink is 10 grams of pure alcohol.</strong> A 568 mL pint of 4.5% beer contains about <strong>2.0 standard drinks</strong>; a 150 mL glass of 12.5% wine contains about <strong>1.48</strong>; and a 35.5 mL spirit measure at 40% contains about <strong>1.12</strong>.</p>
+<p>Serving sizes and alcohol strength change the answer. Use our <a href="/alcohol-units-calories-cost-calculator/">Irish standard drinks calculator</a> to check your actual drink. This is a quantity calculation, not advice that any level of drinking is risk-free.</p>
+</div>
+
 A pint is one drink.
 
 A glass of wine is one drink.
