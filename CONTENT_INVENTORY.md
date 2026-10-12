@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 159
+- Published editorial articles and guides: 160
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 106
+## Wealth articles and guides — 107
 
 - [Attic Conversion & Dormer Planning Permission Ireland](https://compound.ie/wealth/attic-conversion-dormer-planning-permission-ireland/)
 - [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/)
@@ -110,6 +110,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Mortgage Protection Insurance in Ireland: The Complete 2026 Guide](https://compound.ie/wealth/mortgage-protection-insurance-ireland/)
 - [MyFutureFund vs a private pension in Ireland: how auto-enrolment compares](https://compound.ie/wealth/myfuturefund-vs-private-pension-ireland/)
 - [New €2 EU parcel handling fee confirmed: what Irish shoppers will pay on non-EU orders](https://compound.ie/news/new-eu-parcel-fee-ireland-2026/)
+- [No Energy Credit in Budget 2027: What Will Electricity Cost This Winter?](https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/)
 - [One in Seven Irish Adults Now Receive Financial Help From Family](https://compound.ie/news/family-financial-support-ireland-2026/)
 - [PCP vs Hire Purchase vs Car Loan in Ireland: the real cost of each](https://compound.ie/wealth/pcp-vs-hp-vs-car-loan-ireland/)
 - [Pension Funds and Fees in Ireland: What to Check](https://compound.ie/wealth/pension-funds-fees-ireland/)
@@ -155,7 +156,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Will Tesla and SpaceX Merge in 2027? The Financial Case, Risks and Shareholder Impact](https://compound.ie/wealth/tesla-spacex-merger-2027/)
 - [Your inflation rate may be higher than 3.4% — who is being hit hardest in Ireland?](https://compound.ie/news/personal-inflation-rate-ireland-households-2026/)
 - [€16 an hour: what Ireland’s new Living Wage benchmark would mean for your pay](https://compound.ie/news/living-wage-16-ireland-2026/)
-- [€400 Energy Credit for Households Under €70,000 Proposed for Budget 2027](https://compound.ie/news/social-democrats-400-energy-credit-budget-2027/)
+- [€400 Energy Credit Proposal: What Budget 2027 Actually Did](https://compound.ie/news/social-democrats-400-energy-credit-budget-2027/)
 - [€600 solar battery grant expected in Budget 2027: is a home battery actually worth it?](https://compound.ie/news/solar-battery-grant-ireland-budget-2027/)
 
 ## Life articles and guides — 25

@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 159 published articles and guides, 64 tools,
+**Included:** 160 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -106,6 +106,7 @@ For the complete register (including 510+ company profiles), open
 - [Mortgage Protection Insurance in Ireland: The Complete 2026 Guide](https://compound.ie/wealth/mortgage-protection-insurance-ireland/) — **Wealth**
 - [MyFutureFund vs a private pension in Ireland: how auto-enrolment compares](https://compound.ie/wealth/myfuturefund-vs-private-pension-ireland/) — **Wealth**
 - [New €2 EU parcel handling fee confirmed: what Irish shoppers will pay on non-EU orders](https://compound.ie/news/new-eu-parcel-fee-ireland-2026/) — **Wealth**
+- [No Energy Credit in Budget 2027: What Will Electricity Cost This Winter?](https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/) — **Wealth**
 - [One in Seven Irish Adults Now Receive Financial Help From Family](https://compound.ie/news/family-financial-support-ireland-2026/) — **Wealth**
 - [Ozempic, Wegovy & Mounjaro: medical card cover in Ireland](https://compound.ie/health/glp1-hse-medical-card-ireland/) — **Health**
 - [Padel in Ireland: Rules, Courts, Costs & How to Start Playing](https://compound.ie/life/padel-ireland/) — **Life**
@@ -170,7 +171,7 @@ For the complete register (including 510+ company profiles), open
 - [Your Commute Could Be Costing You 10 Days a Year](https://compound.ie/life/commute-time-ireland-hidden-cost/) — **Life**
 - [Your inflation rate may be higher than 3.4% — who is being hit hardest in Ireland?](https://compound.ie/news/personal-inflation-rate-ireland-households-2026/) — **Wealth**
 - [€16 an hour: what Ireland’s new Living Wage benchmark would mean for your pay](https://compound.ie/news/living-wage-16-ireland-2026/) — **Wealth**
-- [€400 Energy Credit for Households Under €70,000 Proposed for Budget 2027](https://compound.ie/news/social-democrats-400-energy-credit-budget-2027/) — **Wealth**
+- [€400 Energy Credit Proposal: What Budget 2027 Actually Did](https://compound.ie/news/social-democrats-400-energy-credit-budget-2027/) — **Wealth**
 - [€600 solar battery grant expected in Budget 2027: is a home battery actually worth it?](https://compound.ie/news/solar-battery-grant-ireland-budget-2027/) — **Wealth**
 
 ## Calculators and tools — alphabetical
