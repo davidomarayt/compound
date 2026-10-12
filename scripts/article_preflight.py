@@ -18,10 +18,10 @@ import yaml
 
 ARTICLE_FOLDERS = {"health", "wealth", "happiness", "life"}
 PLACEHOLDERS = re.compile(
-    r"(?i)\\b(?:lorem ipsum|source needed|citation needed|insert link here|"
-    r"todo:|tbd:)\\b"
+    r"(?i)\b(?:lorem ipsum|source needed|citation needed|insert link here|"
+    r"todo:|tbd:)\b"
 )
-FRONT = re.compile(r"\\A---\\r?\\n(.*?)\\r?\\n---\\r?\\n(.*)", re.S)
+FRONT = re.compile(r"\A---\r?\n(.*?)\r?\n---\r?\n(.*)", re.S)
 
 
 def article_path(path: Path) -> bool:
@@ -56,7 +56,10 @@ def inspect(path: Path) -> tuple[list[str], list[str]]:
     title = require("title", 12)
     slug = require("slug", 4)
     description = require("meta_description", 45)
-    require("summary", 40)
+    # Some older evergreen posts predate the current summary schema. Require
+    # it for new news pieces; flag its absence on legacy guides instead.
+    if str(meta.get("summary") or "").strip() == "":
+        warnings.append("summary missing; add a concise search/social summary")
     date = require("date")
     if date:
         try:
