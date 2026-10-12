@@ -57,11 +57,17 @@ def test_energy_solar_events_require_analytics_consent():
     template = (ROOT / "compound/site/templates/article.html").read_text(encoding="utf-8")
     assert "compound_analytics_consent" in js
     assert "==='granted'" in js
-    assert "energy_solar_payback_click" in js
+    assert "energy_solar_payback_click" not in js
     assert "energy_electricity_tool_click" in js
-    assert "energy_quote_brief_click" in js
+    assert "energy_quote_brief_click" not in js
     assert "source_page:location.pathname" in js
-    assert "solarTrack(events[link.pathname])" in solar_js
+    assert "solarTrack(events[link.pathname])" not in solar_js
+    sitewide = (ROOT / "compound/site/static/solar-funnel.js").read_text(encoding="utf-8")
+    base = (ROOT / "compound/site/templates/base.html").read_text(encoding="utf-8")
+    assert "solar_journey_click" in sitewide
+    assert "destination_step: step" in sitewide
+    assert "journey_origin: origin" in sitewide
+    assert "solar-funnel.js?v=20261012-1" in base
     assert "energy-budget-2027.css?v=1" in template
     assert "energy-budget-2027.js?v=1" in template
     assert "no-energy-credit-budget-2027-electricity-bills-winter" in template
