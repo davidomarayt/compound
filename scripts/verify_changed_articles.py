@@ -47,6 +47,11 @@ def changed_articles() -> list[tuple[Path, str]]:
             raise RuntimeError(f"Invalid metadata in {line}")
         if meta.get("draft") or meta.get("publication_status") == "draft":
             continue
+        # Automated earnings articles are deliberately consolidated under
+        # /stocks/<ticker>/ and their legacy per-quarter URLs may be redirects.
+        # Their SEC filing and canonical redirect checks run separately.
+        if "automated-earnings" in (meta.get("tags") or []):
+            continue
         slug = str(meta.get("slug") or path.stem)
         pillar = "life" if path.parts[1] == "happiness" else path.parts[1]
         url_path = str(meta.get("canonical_path") or f"/{pillar}/{slug}/")
