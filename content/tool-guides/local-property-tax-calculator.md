@@ -2,6 +2,17 @@
 
 **Important:** Do not automatically use today's asking price or subtract your mortgage balance. Council adjustments can change in later LPT years. For the bands and exemptions, see [Local Property Tax Ireland 2026–2030](/wealth/local-property-tax-ireland/).
 
+## How to calculate Local Property Tax in Ireland
+
+To work out your **Irish property tax**, use the property's **value on the statutory valuation date**, find the applicable Revenue valuation band and adjust the basic charge for the relevant local authority. Enter those details above to estimate your annual and monthly LPT for **2026**.
+
+1. Use the property's value as at **1 November 2025**, rather than a current asking price or your remaining mortgage.
+2. Select the local authority where the property is situated.
+3. Check the resulting annual LPT figure and its monthly budgeting equivalent.
+4. Confirm any liability, exemptions, deferrals or changed local adjustment factors with [Revenue's Local Property Tax guidance](https://www.revenue.ie/en/property/local-property-tax/index.aspx).
+
+**Property tax rates are not the same as mortgage rates or stamp duty.** The 2026–2030 valuation bands are distinct from any local adjustment factors that may be decided for individual years. See our [Local Property Tax Ireland guide](/wealth/local-property-tax-ireland/) for the band framework and exceptions.
+
 ## What this calculator is for
 
 This calculator estimates **2026 Local Property Tax (LPT)** using Revenue's valuation bands for the 2026–2030 valuation period and the 2026 Local Adjustment Factor for the local authority you select.
