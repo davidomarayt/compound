@@ -43,6 +43,17 @@ jobs:
         env:
           SITE_BASE_URL: https://compound.ie
           PREVIEW_BASE_URL: https://compound.ie
+      - name: Ensure Budget 2027 electricity article and corrected proposal are in the publish artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s public/news/no-energy-credit-budget-2027-electricity-bills-winter/index.html
+          test -s public/news/social-democrats-400-energy-credit-budget-2027/index.html
+          grep -Fq 'https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/' public/news/no-energy-credit-budget-2027-electricity-bills-winter/index.html
+          grep -Fq 'What Will Electricity Cost This Winter?' public/news/no-energy-credit-budget-2027-electricity-bills-winter/index.html
+          grep -Fq 'was NOT included in Budget 2027' public/news/social-democrats-400-energy-credit-budget-2027/index.html
+          grep -Fq '/solar-payback-calculator/' public/news/no-energy-credit-budget-2027-electricity-bills-winter/index.html
+          grep -Fq '/electricity-cost-calculator/' public/news/no-energy-credit-budget-2027-electricity-bills-winter/index.html
       - name: Verify Solar hub pages and client script
         shell: bash
         run: |
@@ -68,12 +79,6 @@ jobs:
           test "$(grep -o 'data-county' content/pages/solar-for-installers.md | wc -l)" -eq 32
           grep -q 'solar-payback-calculator/' public/solar/index.html
           ! grep -R -F 'built and occupied before 2021' public/solar public/solar-payback-calculator public/wealth/solar-panels-ireland public/wealth/solar-panels-vs-battery-ireland
-      - name: Install browser for Solar Hub mobile audit
-        run: |
-          python -m pip install "playwright==1.55.0"
-          python -m playwright install chromium
-      - name: Audit every solar page at mobile and tablet widths
-        run: python scripts/verify_solar_mobile.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
@@ -86,6 +91,29 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  mobile-audit:
+    # Independent QA: a Playwright/mobile failure must not leave newly published
+    # articles returning 404. Production itself is gated by the build checks above.
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -e .
+      - run: compound build
+        env:
+          SITE_BASE_URL: https://compound.ie
+          PREVIEW_BASE_URL: https://compound.ie
+      - name: Install browser for Solar Hub mobile audit
+        run: |
+          python -m pip install "playwright==1.55.0"
+          python -m playwright install chromium
+      - name: Audit every solar page at mobile and tablet widths
+        run: python scripts/verify_solar_mobile.py
 
   verify-live:
     needs: deploy
