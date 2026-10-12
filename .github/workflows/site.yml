@@ -110,6 +110,10 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -e .
+      - name: Attach required News photos before the QA rebuild
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: python scripts/news_images.py
       - run: compound build
         env:
           SITE_BASE_URL: https://compound.ie
@@ -503,7 +507,7 @@ jobs:
           grep -Fq '/wealth/income-protection-insurance-ireland/' /tmp/insurance-hub.html
           grep -Fq '/wealth/health-insurance-ireland/' /tmp/insurance-hub.html
           grep -Fq 'Sponsorship would never change calculator arithmetic' /tmp/insurance-hub.html
-          grep -Fq '/static/insurance-hub.css?v=2' /tmp/insurance-hub.html
+          grep -Fq '/static/insurance-hub.css?v=3' /tmp/insurance-hub.html
           grep -Fq '/static/insurance-hub.js?v=2' /tmp/insurance-hub.html
           grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' /tmp/insurance-hub.html
           fetch https://compound.ie/static/insurance-hub.css /tmp/insurance-hub.css
