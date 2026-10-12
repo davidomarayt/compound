@@ -725,7 +725,7 @@
         "category": "Wealth",
         "slug": "heat-pumps-ireland",
         "date": "2026-10-03",
-        "reviewed": "2026-10-03",
+        "reviewed": "2026-10-12",
         "tags": [
           "heat-pump",
           "air-to-water",
@@ -832,6 +832,27 @@
           "obesity",
           "weight-management",
           "medicines",
+          "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "How Many Solar Panels Do You Need in Ireland? 4kW vs 6kW vs 8kW",
+        "url": "/wealth/how-many-solar-panels-do-i-need-ireland/",
+        "source": "content/wealth/how-many-solar-panels-do-i-need-ireland.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "how-many-solar-panels-do-i-need-ireland",
+        "date": "2026-10-12",
+        "reviewed": "2026-10-12",
+        "tags": [
+          "solar",
+          "solar-panels",
+          "solar-sizing",
+          "home-energy",
+          "electricity",
+          "seai-grant",
+          "solar-payback",
           "ireland"
         ],
         "status": "published"
@@ -1450,27 +1471,6 @@
         "status": "published"
       },
       {
-        "title": "Ireland's proposed €2,000 boiler scrappage grant: what homeowners need to know",
-        "url": "/news/boiler-scrappage-grant-ireland-2027/",
-        "source": "content/wealth/boiler-scrappage-grant-ireland-2027.md",
-        "kind": "Editorial article / guide",
-        "category": "Wealth",
-        "slug": "boiler-scrappage-grant-ireland-2027",
-        "date": "2026-09-23",
-        "reviewed": "2026-09-23",
-        "tags": [
-          "news",
-          "boiler-scrappage",
-          "heat-pump",
-          "seai",
-          "home-energy",
-          "retrofit",
-          "grants",
-          "ireland"
-        ],
-        "status": "published"
-      },
-      {
         "title": "Ireland’s TV Licence Is Dying. The Numbers Show Why.",
         "url": "/news/ireland-tv-licence-decline-2026/",
         "source": "content/happiness/ireland-tv-licence-decline-2026.md",
@@ -1844,6 +1844,29 @@
           "prsa",
           "retirement",
           "tax-relief",
+          "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "New €14,500 Heat-Pump Grant: Is Switching From Oil Worth It?",
+        "url": "/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/",
+        "source": "content/wealth/heat-pump-grant-14500-oil-vs-heat-pump-ireland.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "heat-pump-grant-14500-oil-vs-heat-pump-ireland",
+        "date": "2026-10-12",
+        "reviewed": "2026-10-12",
+        "tags": [
+          "news",
+          "heat-pump",
+          "seai-grant",
+          "boiler-scrappage",
+          "heating-oil",
+          "retrofit",
+          "energy-costs",
+          "home-energy",
+          "solar",
           "ireland"
         ],
         "status": "published"
@@ -3152,6 +3175,27 @@
           "pay",
           "wages",
           "cost-of-living",
+          "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "€2,000 Boiler Scrappage Grant Ireland: Now Live Under SEAI Scheme",
+        "url": "/news/boiler-scrappage-grant-ireland-2027/",
+        "source": "content/wealth/boiler-scrappage-grant-ireland-2027.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "boiler-scrappage-grant-ireland-2027",
+        "date": "2026-09-23",
+        "reviewed": "2026-10-12",
+        "tags": [
+          "news",
+          "boiler-scrappage",
+          "heat-pump",
+          "seai",
+          "home-energy",
+          "retrofit",
+          "grants",
           "ireland"
         ],
         "status": "published"

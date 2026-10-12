@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 160 published articles and guides, 64 tools,
+**Included:** 162 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -54,6 +54,7 @@ For the complete register (including 510+ company profiles), open
 - [How accurate is a pregnancy due date? LMP vs dating scan explained](https://compound.ie/health/pregnancy-due-date-accuracy-lmp-vs-scan-ireland/) — **Health**
 - [How Ireland exercises: walking dominates, gyms are second and work gets in the way](https://compound.ie/news/how-ireland-exercises-most-popular-sports-2025/) — **Life**
 - [How long do you stay on Mounjaro or Wegovy?](https://compound.ie/health/how-long-stay-on-mounjaro-wegovy-ireland/) — **Health**
+- [How Many Solar Panels Do You Need in Ireland? 4kW vs 6kW vs 8kW](https://compound.ie/wealth/how-many-solar-panels-do-i-need-ireland/) — **Wealth**
 - [How much do Wegovy, Mounjaro and Ozempic cost in Ireland?](https://compound.ie/health/wegovy-mounjaro-ozempic-cost-ireland/) — **Health**
 - [How much does your lifestyle actually cost over a lifetime?](https://compound.ie/wealth/lifetime-cost-of-lifestyle-ireland/) — **Wealth**
 - [How much electricity does an Irish home use? A practical 2026 guide](https://compound.ie/wealth/average-home-electricity-use-ireland/) — **Wealth**
@@ -85,7 +86,6 @@ For the complete register (including 510+ company profiles), open
 - [Ireland Plans €682m Cut in Refugee and Asylum Accommodation Spending in Budget 2027](https://compound.ie/news/ireland-migration-accommodation-682m-budget-2027/) — **Wealth**
 - [Ireland to Ban Loyalty-Card Alcohol Discounts: What Changes From March 2028](https://compound.ie/news/alcohol-loyalty-card-discounts-ban-ireland-2028/) — **Health**
 - [Ireland's 40% tax band starts at €44,000 — how that really compares with Europe](https://compound.ie/news/ireland-40-percent-tax-rate-threshold-europe/) — **Wealth**
-- [Ireland's proposed €2,000 boiler scrappage grant: what homeowners need to know](https://compound.ie/news/boiler-scrappage-grant-ireland-2027/) — **Wealth**
 - [Ireland’s TV Licence Is Dying. The Numbers Show Why.](https://compound.ie/news/ireland-tv-licence-decline-2026/) — **Life**
 - [Irish house prices are estimated to be 17% overvalued — what does that actually mean for buyers?](https://compound.ie/news/irish-house-prices-overvalued-17-percent-2026/) — **Wealth**
 - [Irish housing market is cooling — but buyers are not suddenly getting cheap homes](https://compound.ie/news/ireland-house-prices-cooling-daft-dublin-2026/) — **Wealth**
@@ -105,6 +105,7 @@ For the complete register (including 510+ company profiles), open
 - [Mortgage Protection and Drawdown in Ireland: Final Approval Checklist](https://compound.ie/wealth/mortgage-protection-drawdown-ireland/) — **Wealth**
 - [Mortgage Protection Insurance in Ireland: The Complete 2026 Guide](https://compound.ie/wealth/mortgage-protection-insurance-ireland/) — **Wealth**
 - [MyFutureFund vs a private pension in Ireland: how auto-enrolment compares](https://compound.ie/wealth/myfuturefund-vs-private-pension-ireland/) — **Wealth**
+- [New €14,500 Heat-Pump Grant: Is Switching From Oil Worth It?](https://compound.ie/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/) — **Wealth**
 - [New €2 EU parcel handling fee confirmed: what Irish shoppers will pay on non-EU orders](https://compound.ie/news/new-eu-parcel-fee-ireland-2026/) — **Wealth**
 - [No Energy Credit in Budget 2027: What Will Electricity Cost This Winter?](https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/) — **Wealth**
 - [One in Seven Irish Adults Now Receive Financial Help From Family](https://compound.ie/news/family-financial-support-ireland-2026/) — **Wealth**
@@ -171,6 +172,7 @@ For the complete register (including 510+ company profiles), open
 - [Your Commute Could Be Costing You 10 Days a Year](https://compound.ie/life/commute-time-ireland-hidden-cost/) — **Life**
 - [Your inflation rate may be higher than 3.4% — who is being hit hardest in Ireland?](https://compound.ie/news/personal-inflation-rate-ireland-households-2026/) — **Wealth**
 - [€16 an hour: what Ireland’s new Living Wage benchmark would mean for your pay](https://compound.ie/news/living-wage-16-ireland-2026/) — **Wealth**
+- [€2,000 Boiler Scrappage Grant Ireland: Now Live Under SEAI Scheme](https://compound.ie/news/boiler-scrappage-grant-ireland-2027/) — **Wealth**
 - [€400 Energy Credit Proposal: What Budget 2027 Actually Did](https://compound.ie/news/social-democrats-400-energy-credit-budget-2027/) — **Wealth**
 - [€600 solar battery grant expected in Budget 2027: is a home battery actually worth it?](https://compound.ie/news/solar-battery-grant-ireland-budget-2027/) — **Wealth**
 
