@@ -346,9 +346,10 @@
   .sol-shell .sol-connected-reading p{line-height:1.7;max-width:75ch}
 }
 @media screen and (max-width:420px){
-  [data-solar-export] .sol-export-amount{white-space:normal;overflow-wrap:anywhere}
+  /* Preserve complete currency figures on narrow phones; allow label, not values, to wrap. */
+  [data-solar-export] .sol-export-amount{white-space:nowrap;font-size:clamp(24px,7.7vw,31px)}
   [data-solar-export] .sol-export-credit{flex-wrap:wrap;align-items:flex-start}
-  [data-solar-export] .sol-export-credit strong{white-space:normal;overflow-wrap:anywhere}
+  [data-solar-export] .sol-export-credit strong{white-space:nowrap;overflow-wrap:normal}
 }
 
 /* Connected editorial journey: distinct from paid partner programme. */
