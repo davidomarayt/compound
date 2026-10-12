@@ -1,3 +1,5 @@
+**From winter bill pressure to a solar decision:** Read the [Budget 2027 electricity-bill update](/news/no-energy-credit-budget-2027-electricity-bills-winter/) for the confirmed policy position and example costs; then enter your *actual quote and tariff* below. If the payback makes sense, the [solar installer checklist](/solar/installers/) and [standard quote request](/solar/get-quotes/) help compare companies on equal terms.
+
 ## What this calculator is for
 
 This tool estimates how long a domestic solar PV system could take to recover its net upfront cost through avoided electricity purchases, export payments and, where selected, battery arbitrage.
