@@ -81,7 +81,9 @@
     var url;
     try { url = new URL(anchor.getAttribute('href'), window.location.href); }
     catch (_) { return; }
-    if (!/^https?:$/.test(url.protocol) || url.origin !== window.location.origin) return;
+    // The canonical domain and its www alias are the same publication.
+    var siteHost = window.location.hostname.replace(/^www\./, '');
+    if (!/^https?:$/.test(url.protocol) || url.hostname.replace(/^www\./, '') !== siteHost) return;
 
     var destination = normalise(url.pathname);
     var step = destinationStep(destination);
