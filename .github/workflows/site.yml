@@ -60,6 +60,19 @@ jobs:
           grep -Fq 'was NOT included in Budget 2027' public/news/social-democrats-400-energy-credit-budget-2027/index.html
           grep -Fq '/solar-payback-calculator/' public/news/no-energy-credit-budget-2027-electricity-bills-winter/index.html
           grep -Fq '/electricity-cost-calculator/' public/news/no-energy-credit-budget-2027-electricity-bills-winter/index.html
+      - name: Verify published 4kW vs 6kW vs 8kW solar guide
+        shell: bash
+        run: |
+          set -euo pipefail
+          page=public/wealth/how-many-solar-panels-do-i-need-ireland/index.html
+          test -s "$page"
+          grep -Fq 'https://compound.ie/wealth/how-many-solar-panels-do-i-need-ireland/' "$page"
+          grep -Fq 'How Many Solar Panels Do You Need in Ireland?' "$page"
+          grep -Fq '/solar-payback-calculator/' "$page"
+          grep -Fq '/solar/compare-quotes/' "$page"
+          grep -Fq 'chart-svg' "$page"
+          grep -Fq '/static/images/evergreen/how-many-solar-panels-do-i-need-ireland.jpg' "$page"
+          test -s public/static/images/evergreen/how-many-solar-panels-do-i-need-ireland.jpg
       - name: Verify Solar hub pages and client script
         shell: bash
         run: |
@@ -140,6 +153,14 @@ jobs:
           }
 
           fetch https://compound.ie/ /tmp/home.html
+          fetch https://compound.ie/wealth/how-many-solar-panels-do-i-need-ireland/ /tmp/solar-sizing-2026.html
+          grep -Fq 'How Many Solar Panels Do You Need in Ireland?' /tmp/solar-sizing-2026.html
+          grep -Fq '/solar-payback-calculator/' /tmp/solar-sizing-2026.html
+          grep -Fq '/solar/compare-quotes/' /tmp/solar-sizing-2026.html
+          grep -Fq 'chart-svg' /tmp/solar-sizing-2026.html
+          grep -Fq 'how-many-solar-panels-do-i-need-ireland.jpg' /tmp/solar-sizing-2026.html
+          fetch https://compound.ie/static/images/evergreen/how-many-solar-panels-do-i-need-ireland.jpg /tmp/solar-sizing-2026.jpg
+          test -s /tmp/solar-sizing-2026.jpg
           # Catch missing routes and stale corrections immediately after publishing.
           fetch https://compound.ie/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/ /tmp/heat-pump-grant.html
           grep -Fq '€14,500' /tmp/heat-pump-grant.html
