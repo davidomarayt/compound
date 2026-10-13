@@ -57,8 +57,8 @@ jobs:
               "new roof direction route": page.is_file() and page.stat().st_size > 0,
               "page canonical": page.is_file() and "https://compound.ie/solar/roof-direction/" in page.read_text(),
               "interactive compass": page.is_file() and "data-solar-orientation" in page.read_text(),
-              "calculator JavaScript": page.is_file() and "/static/solar-orientation.js?v=1" in page.read_text(),
-              "calculator stylesheet": page.is_file() and "/static/solar-orientation.css?v=1" in page.read_text(),
+              "calculator JavaScript": page.is_file() and "/static/solar-orientation.js?v=2" in page.read_text(),
+              "calculator stylesheet": page.is_file() and "/static/solar-orientation.css?v=2" in page.read_text(),
               "solar hub links to tool": hub.is_file() and "/solar/roof-direction/" in hub.read_text(),
               "sitemap indexable entry": sitemap.is_file() and "https://compound.ie/solar/roof-direction/" in sitemap.read_text(),
           }
