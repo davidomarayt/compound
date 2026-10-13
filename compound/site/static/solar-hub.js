@@ -121,7 +121,7 @@
   if(county){var select=county.querySelector("[data-sc-county]");select.addEventListener("change",function(){
     setText(county.querySelector("[data-sc-message]"),select.value?"On SEAI's official register, select "+select.value+" from its county filter. Verify each current company record before requesting a quote.":"Select a county, then search SEAI's live company list.");
   });}
-  var brief=document.querySelector("[data-solar-brief]");
+  var brief=document.querySelector("[data-solar-brief]:not([data-solar-project])");
   if(brief){
     function bv(k){return brief.querySelector('[data-sb="'+k+'"]');}
     function updateBrief(){
