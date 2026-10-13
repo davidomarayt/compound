@@ -1,0 +1,46 @@
+name: solar leads api
+on:
+  push:
+    paths:
+      - 'solar-leads-api/**'
+      - 'docs/sql/solar-installer-portal-schema.sql'
+      - '.github/workflows/solar-leads-api.yml'
+  pull_request:
+    paths:
+      - 'solar-leads-api/**'
+      - 'docs/sql/solar-installer-portal-schema.sql'
+      - '.github/workflows/solar-leads-api.yml'
+permissions:
+  contents: read
+jobs:
+  backend-unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify API source syntax
+        working-directory: solar-leads-api
+        run: |
+          npm run check
+          node --check api/admin-withdraw.js
+      - name: Run tests without external accounts or real data
+        working-directory: solar-leads-api
+        run: npm test
+      - name: SQL safeguard checks
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          schema=Path('docs/sql/solar-installer-portal-schema.sql').read_text()
+          funcs=Path('solar-leads-api/schema-functions.sql').read_text()
+          assert 'enable row level security' in schema
+          assert 'solar_lead_details' in schema
+          assert 'only purchased installer may read private quote brief' in schema
+          assert 'solar_reserve_introduction' in funcs
+          assert 'solar_complete_checkout' in funcs
+          assert 'solar_withdraw_quote' in funcs
+          assert "v_teaser.expires_at<=now()" in funcs
+          assert 'grant execute on function public.solar_complete_checkout' in funcs
+          print('SQL access-control and inventory checks passed.')
+          PY
