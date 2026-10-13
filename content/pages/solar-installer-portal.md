@@ -35,7 +35,7 @@ meta_description: "Secure Compound Solar portal for verified installation busine
       </form>
       <form data-ip-code-form hidden novalidate>
         <label for="sip-code">Six-digit email code</label>
-        <input id="sip-code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" placeholder="000000" required>
+        <input id="sip-code" data-ip-code name="code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" placeholder="000000" required>
         <button class="sip-button sip-button-primary" type="submit">Enter installer dashboard <span>→</span></button>
         <button class="sip-link-button" data-ip-code-back type="button">Use a different email</button>
       </form>
