@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createHmac} from 'node:crypto';
 import {normalizeQuote,CONSENT_VERSION,PRICE_CENTS,COUNTIES,
- stripeSignature,escapeHtml,ready,paymentEnabled,intakeEnabled,digest} from '../lib/core.js';
+ stripeSignature,escapeHtml,ready,paymentEnabled,intakeEnabled,digest,rest,databaseSecretReady} from '../lib/core.js';
 
 const valid=()=>({
  county:'Meath',name:'Test Homeowner',email:'sample@example.invalid',phone:'0871111111',
@@ -62,4 +62,40 @@ test('only authorised quote-ready homeowners create saleable requests',()=>{
  assert.throws(()=>normalizeQuote(a),/owners or authorised/);
  const b=valid();b.timing='Researching options';
  assert.throws(()=>normalizeQuote(b),/quote-ready/);
+});
+
+test('Supabase modern secret is sent in apikey header only, never bearer',async()=>{
+ const prior={url:process.env.SUPABASE_URL,key:process.env.SUPABASE_SECRET_KEY,legacy:process.env.SUPABASE_SERVICE_ROLE_KEY};
+ const originalFetch=globalThis.fetch;
+ try{
+   process.env.SUPABASE_URL='https://test-project.supabase.co';
+   process.env.SUPABASE_SECRET_KEY='sb_secret_test_only_random_x1234';
+   delete process.env.SUPABASE_SERVICE_ROLE_KEY;
+   let captured;
+   globalThis.fetch=async (_url,options)=>{captured=options.headers;return new Response('[]',{status:200,headers:{'Content-Type':'application/json'}});};
+   assert.equal(databaseSecretReady(),true);
+   await rest('solar_lead_teasers?select=id');
+   assert.equal(captured.apikey,process.env.SUPABASE_SECRET_KEY);
+   assert.equal(captured.authorization,undefined);
+ }finally{
+   globalThis.fetch=originalFetch;
+   for(const [key,val] of Object.entries({SUPABASE_URL:prior.url,SUPABASE_SECRET_KEY:prior.key,SUPABASE_SERVICE_ROLE_KEY:prior.legacy})){
+     if(val===undefined)delete process.env[key];else process.env[key]=val;
+   }
+ }
+});
+test('real Stripe charges require a separate explicit approval',()=>{
+ const old={pay:process.env.SOLAR_LEADS_PAYMENTS_ENABLED,key:process.env.STRIPE_SECRET_KEY,live:process.env.SOLAR_LEADS_REAL_CHARGES_APPROVED};
+ try{
+   process.env.SOLAR_LEADS_PAYMENTS_ENABLED='true';
+   process.env.STRIPE_SECRET_KEY='sk_live_inert_for_unit_test';
+   delete process.env.SOLAR_LEADS_REAL_CHARGES_APPROVED;
+   assert.equal(paymentEnabled(),false);
+   process.env.STRIPE_SECRET_KEY='sk_test_inert_for_unit_test';
+   assert.equal(paymentEnabled(),true);
+ }finally{
+   for(const [k,v] of Object.entries({SOLAR_LEADS_PAYMENTS_ENABLED:old.pay,STRIPE_SECRET_KEY:old.key,SOLAR_LEADS_REAL_CHARGES_APPROVED:old.live})){
+     if(v===undefined)delete process.env[k];else process.env[k]=v;
+   }
+ }
 });
