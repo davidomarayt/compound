@@ -54,7 +54,7 @@ social:
     enabled: false
 sources:
   - title: "RTÉ News: PrepayPower winter price freeze announcement, 13 October 2026."
-    url: https://www.rte.ie/news/energy/
+    url: https://www.rte.ie/news/business/2026/1013/1595083-prepaypower-energy-freeze/
   - title: "RTÉ News: PrepayPower electricity +8.8% and gas +10.6% from 1 June 2026, published 1 May 2026."
     url: https://www.rte.ie/news/business/2026/0501/1571309-energy-prices/
   - title: "Electric Ireland: electricity +8% and gas +7.7% from 1 July 2026, 28 May 2026."
@@ -79,7 +79,7 @@ sources:
 
 **PrepayPower has joined the winter price-freeze headlines. The question households should ask is not simply whether prices are staying still, but whether the price being frozen is competitive in the first place.**
 
-The pay-as-you-go supplier's pledge, [reported by RTÉ on 13 October](https://www.rte.ie/news/energy/), covers electricity and gas prices this winter. Its estimated 200,000 customers are being offered certainty against a further announced price rise before March 2027 at the earliest. The pledge does not mean prices will automatically increase in March.
+The pay-as-you-go supplier's pledge, [reported by RTÉ on 13 October](https://www.rte.ie/news/business/2026/1013/1595083-prepaypower-energy-freeze/), covers electricity and gas prices this winter. Its estimated 200,000 customers are being offered certainty against a further announced price rise before March 2027 at the earliest. The pledge does not mean prices will automatically increase in March.
 
 There is a genuine benefit here: during a period of uncertainty in European energy markets, knowing a supplier does not intend to raise rates can make budgeting easier.
 
@@ -94,7 +94,7 @@ But the more important consumer question is **what you will pay for the energy y
 | **11 September 2026** | Electric Ireland | Announced its residential rates and standing charges would stay unchanged for the **rest of 2026**. |
 | **13 October 2026** | PrepayPower | Announced a winter electricity and gas price freeze, with no further increase before **March 2027 at the earliest**. |
 
-Sources: [RTÉ on the PrepayPower June increases](https://www.rte.ie/news/business/2026/0501/1571309-energy-prices/), [Electric Ireland's July price changes](https://www.electricireland.ie/residential/news/detail/electric-ireland-announces-price-change-from-1st-of-july-2026), [Electric Ireland's September freeze announcement](https://www.electricireland.ie/residential/news/detail/keeping-our-prices-steady) and [RTÉ's 13 October energy coverage](https://www.rte.ie/news/energy/).
+Sources: [RTÉ on the PrepayPower June increases](https://www.rte.ie/news/business/2026/0501/1571309-energy-prices/), [Electric Ireland's July price changes](https://www.electricireland.ie/residential/news/detail/electric-ireland-announces-price-change-from-1st-of-july-2026), [Electric Ireland's September freeze announcement](https://www.electricireland.ie/residential/news/detail/keeping-our-prices-steady) and [RTÉ's 13 October energy coverage](https://www.rte.ie/news/business/2026/1013/1595083-prepaypower-energy-freeze/).
 
 **These suppliers have not committed to identical freeze periods.** Electric Ireland's published commitment covers the remainder of 2026; PrepayPower's new announcement extends its no-increase pledge until March 2027 at the earliest.
 
