@@ -181,6 +181,17 @@ meta_description: "Build a detailed solar installation quote brief in Ireland: r
           <label>Your phone (optional) <input data-sp="phone" type="tel" maxlength="35" autocomplete="tel" placeholder="+353…"></label>
           <label>Full Eircode (optional, private) <input data-sp="eircode" type="text" maxlength="12" autocomplete="postal-code" placeholder="Only disclose directly to your chosen installer"></label>
         </div>
+        <div class="sol-project-submit-card" data-sp-prelaunch-request aria-labelledby="solar-submit-heading">
+          <div class="sol-project-submit-intro">
+            <span class="sol-project-submit-eyebrow">INSTALLER QUOTATION REQUESTS — PILOT TESTING</span>
+            <h3 id="solar-submit-heading">Ready to request installer quotations?</h3>
+            <p id="solar-submit-paused">The secure submission system is being tested. You can complete and copy your project brief today, but Compound.ie is <strong>not yet accepting or forwarding quotation requests.</strong></p>
+          </div>
+          <div class="sol-project-submit-actions">
+            <button class="sol-btn" type="button" disabled aria-describedby="solar-submit-paused">Submit for quotations — coming soon</button>
+            <a class="sol-project-submit-alternative" href="#sol-project-output">Copy your quote brief instead →</a>
+          </div>
+        </div>
         <section data-sp-live-request hidden class="sol-project-disclosure" aria-labelledby="solar-quote-request-heading">
           <h3 id="solar-quote-request-heading">Request your solar installation quotes</h3>
           <p>Your name and private project details will only be made available to up to the number of installers you select. Approved installers first see a limited, non-identifying county-level project preview.</p>
