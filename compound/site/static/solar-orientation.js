@@ -18,7 +18,7 @@
   var months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   var southMonthly=[.02,.04,.07,.10,.13,.14,.14,.12,.10,.07,.04,.03];
   var representativeDays=[15,46,74,105,135,166,196,227,258,288,319,349];
-  var angle=180, official=null, busy=false, controller=null;
+  var angle=180, official=null, busy=false;
   function q(k){return root.querySelector('[data-or="'+k+'"]');}
   function val(k){return Number(q(k).value);}
   function normal(a){return ((Math.round(a)%360)+360)%360;}
@@ -108,35 +108,10 @@
     q(key).addEventListener('input',function(){official=null;q('status').textContent='';render();trackUse();});
     q(key).addEventListener('change',function(){official=null;q('status').textContent='';render();});
   });
-  function pvgisUrl(az){
-    var place=places[q('place').value],p=new URLSearchParams({
-      lat:String(place.lat),lon:String(place.lon),peakpower:String(val('size')),
-      loss:'14',angle:String(val('pitch')),aspect:String(az-180),outputformat:'json',
-      pvtechchoice:'crystSi',mountingplace:'building'
-    });
-    return 'https://re.jrc.ec.europa.eu/api/v5_3/PVcalc?'+p.toString();
-  }
-  function parsePV(data,shade){
-    var monthly=data&&data.outputs&&data.outputs.monthly&&data.outputs.monthly.fixed;
-    if(!Array.isArray(monthly)||monthly.length!==12)throw new Error('Unexpected PVGIS result');
-    var arr=monthly.map(function(row){if(!Number.isFinite(Number(row.E_m)))throw new Error('Invalid PVGIS response');return Number(row.E_m)*(1-shade/100);});
-    return {monthly:arr,annual:arr.reduce(function(a,b){return a+b;},0)};
-  }
-  q('request').addEventListener('click',async function(){
-    if(busy)return;
-    busy=true;official=null;render();q('request').textContent='Checking PVGIS…';
-    q('status').textContent='Requesting modelled generation from the European Commission.';
-    var original=[angle,val('pitch'),val('shade'),val('size'),q('place').value].join('|');
-    controller=new AbortController();
-    try{
-      var urls=[pvgisUrl(angle),pvgisUrl(180)],responses=await Promise.all(urls.map(function(u){return fetch(u,{signal:controller.signal}).then(function(r){if(!r.ok)throw new Error('PVGIS '+r.status);return r.json();});}));
-      if(original!==[angle,val('pitch'),val('shade'),val('size'),q('place').value].join('|'))return;
-      var a=parsePV(responses[0],val('shade')),b=parsePV(responses[1],val('shade'));
-      official={annual:a.annual,south:b.annual,months:a.monthly,perKwp:a.annual/val('size')};
-      q('status').textContent='PVGIS calculation loaded for '+places[q('place').value].label+'. This is not a site survey.';
-      trackUse();
-    }catch(e){if(e.name!=='AbortError')q('status').textContent='PVGIS could not be reached from this browser. The indicative estimate is still shown. Try again or use the official PVGIS website.';}
-    finally{busy=false;q('request').textContent='Refine with PVGIS';render();}
+  q('request').addEventListener('click',function(){
+    q('status').textContent='PVGIS opens separately. Enter your location, kWp, pitch and panel direction, checking the azimuth convention in PVGIS.';
+    window.open('https://photovoltaic-geographic-information-system.ec.europa.eu/','_blank','noopener,noreferrer');
+    trackUse();
   });
   q('copy').addEventListener('click',function(){
     var r=official||estimate(),output=String(Math.round(r.perKwp));
