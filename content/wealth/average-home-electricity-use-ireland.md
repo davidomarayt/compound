@@ -645,7 +645,7 @@ Compare:
 - July;
 - October.
 
-If winter consumption is dramatically higher, investigate heating, hot water, drying and dehumidification.
+If winter consumption is dramatically higher, investigate heating, hot water, drying and dehumidification. If you are considering rooftop PV, compare those bills with [actual modelled monthly solar output in Ireland](/wealth/solar-panels-winter-ireland/) before assuming summer generation will offset winter demand.
 
 ### 3. Check the overnight base load
 
