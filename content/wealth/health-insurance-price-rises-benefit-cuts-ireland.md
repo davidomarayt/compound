@@ -61,6 +61,8 @@ The practical lesson is simple:
 
 Health insurance is one of several recurring household costs that can quietly become much larger over time. Compound's [lifetime cost guide](/wealth/lifetime-cost-of-lifestyle-ireland/) shows how repeated annual spending compounds, while the [Budget 2027 tracker](/wealth/budget-2027-what-to-watch/) follows the wider tax and cost-of-living measures affecting household finances.
 
+If your renewal premium has increased, start with the [Compound Insurance Hub](/insurance/) and use the [Health Insurance Cost Comparison Calculator](/health-insurance-cost-comparison-calculator/) to compare total annual costs rather than the headline premium alone.
+
 ## What is changing?
 
 The Health Insurance Authority (HIA), Ireland's independent regulator for private health insurance, publishes regular updates on insurer price and benefit changes.
