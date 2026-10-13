@@ -190,6 +190,17 @@ jobs:
           grep -Fq 'how-many-solar-panels-do-i-need-ireland.jpg' /tmp/solar-sizing-2026.html
           fetch https://compound.ie/static/images/evergreen/how-many-solar-panels-do-i-need-ireland.jpg /tmp/solar-sizing-2026.jpg
           test -s /tmp/solar-sizing-2026.jpg
+
+          # Ensure the new winter solar evergreen is visible to readers, not only in the build artifact.
+          fetch https://compound.ie/wealth/solar-panels-winter-ireland/ /tmp/solar-winter-2026.html
+          grep -Fq 'https://compound.ie/wealth/solar-panels-winter-ireland/' /tmp/solar-winter-2026.html
+          grep -Fq 'Do Solar Panels Work in Winter in Ireland?' /tmp/solar-winter-2026.html
+          test "$(grep -o 'class="chart-svg"' /tmp/solar-winter-2026.html | wc -l)" -ge 2
+          grep -Fq '/solar-payback-calculator/' /tmp/solar-winter-2026.html
+          grep -Fq '/solar/compare-quotes/' /tmp/solar-winter-2026.html
+          grep -Fq 'solar-panels-winter-ireland.jpg' /tmp/solar-winter-2026.html
+          fetch https://compound.ie/static/images/evergreen/solar-panels-winter-ireland.jpg /tmp/solar-winter-2026.jpg
+          test -s /tmp/solar-winter-2026.jpg
           # Catch missing routes and stale corrections immediately after publishing.
           fetch https://compound.ie/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/ /tmp/heat-pump-grant.html
           grep -Fq '€14,500' /tmp/heat-pump-grant.html
@@ -352,6 +363,7 @@ jobs:
           grep -Fq 'https://compound.ie/debt-repayment-calculator/' /tmp/sitemap.xml
           grep -Fq 'https://compound.ie/budget-2027-calculator/' /tmp/sitemap.xml
           grep -Fq 'https://compound.ie/employer-cost-calculator/' /tmp/sitemap.xml
+          grep -Fq 'https://compound.ie/wealth/solar-panels-winter-ireland/' /tmp/sitemap.xml
 
           fetch https://compound.ie/wealth/how-to-start-investing-in-ireland/ /tmp/investing.html
           grep -Fq 'A complete beginner course for Irish investors' /tmp/investing.html
