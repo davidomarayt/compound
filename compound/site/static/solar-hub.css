@@ -357,3 +357,20 @@
 .sol-connected-reading .sol-sectionhead{margin-bottom:14px}
 .sol-connected-reading p{color:var(--sol-muted);font-size:14px;line-height:1.75;max-width:85ch;overflow-wrap:break-word}
 .sol-connected-reading a{color:var(--sol-green);text-decoration:underline;text-underline-offset:3px;font-weight:650}
+
+/* Feature the 360-degree roof compass on the solar hub. */
+.sol-orientation-teaser{display:grid;grid-template-columns:minmax(180px,.65fr) minmax(0,1.35fr);align-items:center;gap:clamp(24px,4vw,56px);padding:clamp(24px,4vw,44px);background:#f2f7f0;border:1px solid #bfd7c4;border-radius:9px;min-width:0}
+.sol-orientation-teaser>div{min-width:0}
+.sol-orientation-teaser h2{font-size:clamp(31px,3.8vw,49px);line-height:1.08;margin:8px 0 13px}
+.sol-orientation-teaser p:not(.sol-ey){font-size:14px;line-height:1.75;color:#526b59;margin-bottom:19px}
+.sol-orientation-teaser .sol-btn{background:#214f3d;color:#fff}
+.sol-orientation-teaser .sol-btn:hover{background:#366c52}
+.sol-orientation-illustration{display:grid;place-items:center;min-height:220px;max-width:100%;background:radial-gradient(circle,#355c4b,#193f35);border-radius:7px}
+.sol-orientation-ring{width:min(75%,210px);aspect-ratio:1;position:relative;border:1px solid #83ad8f;border-radius:50%;box-shadow:0 0 0 12px rgba(200,233,190,.09),inset 0 0 25px #10352d}
+.sol-orientation-ring b{position:absolute;font:750 12px var(--sans);color:#e3f4cd}
+.sol-orientation-ring b:nth-child(1){top:7%;left:50%;transform:translateX(-50%)}
+.sol-orientation-ring b:nth-child(2){right:9%;top:50%;transform:translateY(-50%)}
+.sol-orientation-ring b:nth-child(3){bottom:7%;left:50%;transform:translateX(-50%)}
+.sol-orientation-ring b:nth-child(4){left:9%;top:50%;transform:translateY(-50%)}
+.sol-orientation-ring i{position:absolute;inset:29%;transform:rotate(45deg);border:4px solid #ddf1c5;border-radius:3px;background:repeating-linear-gradient(90deg,#316272 0 12px,#a3cdd5 12px 15px);box-shadow:0 7px 12px rgba(0,0,0,.24)}
+@media(max-width:730px){.sol-orientation-teaser{grid-template-columns:minmax(0,1fr)}.sol-orientation-illustration{min-height:190px}.sol-orientation-ring{width:170px}}
