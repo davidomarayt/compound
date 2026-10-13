@@ -83,7 +83,7 @@
   function update(){
     var second=get('faces').value==='2';
     root.querySelector('[data-sp-second]').hidden=!second;
-    var essential=['county','area','role','building','timing','roof','azimuth','pitch'];
+    var essential=['county','area','role','building','ready','timing','roof','azimuth','pitch'];
     var complete=essential.filter(function(k){return show(k)!==''}).length;
     var energy=show('demand')!==''||show('bill')!=='';
     if(energy)complete++;
@@ -115,6 +115,7 @@
       mark('Authorisation to proceed',answer('role')),
       mark('Building type',answer('building')),
       mark('Project type',answer('project')),
+      mark('Quote request stage',answer('ready')),
       mark('Desired installation',answer('timing')),
       mark('Budget indication',answer('budget')),
       mark('Planning considerations',answer('protected')),
@@ -192,6 +193,51 @@
       'This brief is copied locally by the homeowner; Compound has not transmitted it.'
     );
     root.querySelector('[data-sb-output]').value=out.join('\n');
+    // Installer teasers are made from a strict field allow-list, never by
+    // redacting the full brief. Free-text and contact fields cannot leak into it.
+    var decisionMaker=['Owner','Joint owner','Authorised decision-maker'].indexOf(show('role'))!==-1;
+    var readyNow=show('ready')==='Ready to receive written quotes now';
+    var preview=[
+      'COMPOUND SOLAR — ANONYMOUS PROJECT OUTLINE',
+      'Homeowner-entered draft · not verified · not for resale',
+      '',
+      mark('County',answer('county')),
+      mark('Property type',answer('building')),
+      mark('Project',answer('project')),
+      mark('Quote stage',answer('ready')),
+      mark('Installation timing',answer('timing')),
+      mark('Decision-maker status',decisionMaker?'Homeowner says authorised':'Not confirmed'),
+      mark('Lead status',readyNow&&decisionMaker?'Potential quote enquiry — unverified':'Research / qualification pending'),
+      '',
+      'SITE AND SOLAR REQUIREMENTS',
+      mark('Mounting',answer('roof')),
+      mark('Roof faces',get('faces').value==='unknown'?'To be confirmed':get('faces').value),
+      mark('Primary roof bearing',show('azimuth')?answer('azimuth')+'° clockwise from north':'Unconfirmed'),
+      mark('Primary roof pitch',show('pitch')?answer('pitch')+'°':'Unconfirmed'),
+      mark('Roof material',answer('material')),
+      mark('Shading',answer('shade')),
+      mark('Roof condition',answer('roofCondition')),
+      mark('Access',answer('access'))
+    ];
+    if(second)preview.push(
+      mark('Second roof bearing',show('azimuth2')?answer('azimuth2')+'°':'Unconfirmed'),
+      mark('Second roof pitch',show('pitch2')?answer('pitch2')+'°':'Unconfirmed'));
+    preview.push(
+      '',
+      'ELECTRICITY AND SYSTEM',
+      mark('Annual electricity use',show('demand')?number('demand')+' kWh (homeowner estimate)':'To be confirmed'),
+      mark('Supply',answer('phase')),
+      mark('EV plans',answer('ev')),
+      mark('Heat pump',answer('heatPump')),
+      mark('Preferred PV capacity',show('kwp')?number('kwp')+' kWp':'Installer to advise'),
+      mark('Battery requirement',get('battery').options[get('battery').selectedIndex].text),
+      mark('Grant status',answer('grant')),
+      '',
+      'No personal details are included. No installer has been authorised or granted access.',
+      'All technical details and customer intent must be verified before purchase.'
+    );
+    root.querySelector('[data-sp-installer-preview]').value=preview.join('\n');
+    root.querySelector('[data-sp-preview-status]').textContent='';
     root.querySelector('[data-sb-copy-status]').textContent='';
   }
   fields.forEach(function(f){f.addEventListener('input',update);f.addEventListener('change',update);});
@@ -204,6 +250,15 @@
         status.textContent='Project brief copied. Review it before sending to your chosen installer.';
       },function(){output.focus();output.select();status.textContent='Select and copy your project brief manually.';});
     }else{output.focus();output.select();status.textContent='Select and copy your project brief manually.';}
+  });
+  var previewCopy=root.querySelector('[data-sp-preview-copy]');
+  if(previewCopy)previewCopy.addEventListener('click',function(){
+    var el=root.querySelector('[data-sp-installer-preview]'),status=root.querySelector('[data-sp-preview-status]');
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(el.value).then(function(){
+        status.textContent='Anonymous preview copied. No information was sent by Compound.';
+      },function(){el.focus();el.select();status.textContent='Select and copy the preview manually.';});
+    }else{el.focus();el.select();status.textContent='Select and copy the preview manually.';}
   });
   faceStatus();
   update();
