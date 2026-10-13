@@ -1,15 +1,15 @@
 ---
 title: "Personal Investment Account Ireland (PIA): Complete 2027 Guide"
-seo_title: "Personal Investment Account Ireland (PIA): 2027 Guide"
+seo_title: "PIA Ireland 2027: Tax, €12k Limit & Provider Guide"
 slug: personal-investment-account-ireland
 pillar: wealth
 draft: false
 publication_status: published
 date: 2026-09-25
-reviewed: 2026-10-06
+reviewed: 2026-10-13
 approved_by: "Explicit evergreen upgrade instruction — 6 October 2026"
 summary: "Ireland's new Personal Investment Account (PIA) is planned for 1 July 2027. This complete guide explains the €50,000 threshold, 1% annual tax, €12,000 contribution limit, ETFs, shares, withdrawals, providers and the rules still awaiting legislation."
-meta_description: "Personal Investment Account Ireland (PIA): how the €50,000 threshold, 1% tax, €12,000 annual limit, ETFs, withdrawals and July 2027 launch work."
+meta_description: "PIA Ireland 2027 explained: €12,000 annual contributions, €50,000 threshold, proposed 1% tax, eligible ETFs and shares, provider fees and July launch."
 tags: [personal-investment-account, pia-account, pia-ireland, investment-account, savings-investment-account, investing, etfs, tax, budget-2027, ireland]
 pexels_photo_id: 34016390
 related_tools:
