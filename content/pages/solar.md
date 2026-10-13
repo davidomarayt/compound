@@ -17,7 +17,7 @@ meta_description: "Ireland's solar hub: check SEAI grants, compare installation 
       </div>
     </div>
   </section>
-  <div class="sol-utility"><span>Start here</span><nav aria-label="Solar hub sections"><a href="#solar-tools">Calculators</a><a href="#solar-learn">Guides</a><a href="#solar-journey">How it works</a><a href="#solar-sources">Official sources</a></nav></div>
+  <div class="sol-utility"><span>Start here</span><nav aria-label="Solar hub sections"><a href="#solar-tools">Calculators</a><a href="#sol-orientation-teaser-title">Roof compass</a><a href="#solar-learn">Guides</a><a href="#solar-journey">How it works</a><a href="#solar-sources">Official sources</a></nav></div>
   <section class="sol-feature" id="solar-tools" aria-labelledby="solar-tools-title">
     <div class="sol-sectionhead"><div><p class="sol-ey">INTERACTIVE TOOLS</p><h2 id="solar-tools-title">Three decisions. <em>Better answers.</em></h2></div><p>Compare real quotes and run the economics before signing an installation contract. No registration needed.</p></div>
     <div class="sol-cardgrid sol-cardgrid-3">
@@ -25,6 +25,10 @@ meta_description: "Ireland's solar hub: check SEAI grants, compare installation 
       <a class="sol-card" href="/solar-payback-calculator/"><span class="sol-cardtop">02 / FINANCIAL RETURN</span><h3>Solar payback calculator</h3><p>Model tariffs, self-consumption and grant eligibility. Advanced mode adds EV charging and batteries.</p><strong>Calculate solar payback ↗</strong></a>
       <a class="sol-card" href="/solar-ev-battery-optimiser/"><span class="sol-cardtop">03 / SYSTEM DESIGN</span><h3>Solar + EV + battery</h3><p>Understand how electric vehicles, storage and night-rate charging change the economics.</p><strong>Optimise the system ↗</strong></a>
     </div>
+  </section>
+  <section class="sol-orientation-teaser" aria-labelledby="sol-orientation-teaser-title">
+    <div class="sol-orientation-illustration" aria-hidden="true"><span class="sol-orientation-ring"><b>N</b><b>E</b><b>S</b><b>W</b><i></i></span></div>
+    <div><p class="sol-ey">NEW / INTERACTIVE ROOF COMPASS</p><h2 id="sol-orientation-teaser-title">Does your roof face <em>the right way?</em></h2><p>Turn a full 360° compass and see how your roof direction, tilt and solar array size affect predicted annual electricity generation. Compare north, east, south or any angle in between.</p><a class="sol-btn" href="/solar/roof-direction/">Explore the solar direction calculator ↗</a></div>
   </section>
   <section class="sol-statband" aria-label="Grant values"><div><span>STANDARD SOLAR PV GRANT</span><strong>Up to €1,800</strong><small>Subject to SEAI eligibility</small></div><div><span>SEPARATE BATTERY GRANT</span><strong>€600</strong><small>Qualifying batteries ≥5 kWh</small></div><div class="sol-statband-action"><p>Grants are not automatic. Apply and receive approval before work starts.</p><a href="/solar/grants/">Check current rules ↗</a></div></section>
   <section id="solar-learn">
