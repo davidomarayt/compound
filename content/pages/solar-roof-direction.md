@@ -60,6 +60,7 @@ meta_description: "Turn an interactive 360-degree solar compass to estimate Iris
       <div class="sor-buttons">
         <button type="button" class="sor-action" data-or="request">Open PVGIS calculator ↗</button>
         <button type="button" class="sor-action sor-action-secondary" data-or="copy">Copy yield per kWp</button>
+        <button type="button" class="sor-action sor-action-secondary" data-or="into-project">Use this roof setup in my solar brief ↗</button>
       </div>
       <p role="status" aria-live="polite" class="sor-message" data-or="status"></p>
     </div>
