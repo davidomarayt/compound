@@ -1,115 +1,74 @@
-# Compound Solar — homeowner project intake and installer marketplace specification
+# Compound Solar — lean private lead marketplace (pilot)
 
-Status: product specification / browser-local project brief (not a live lead marketplace).
-**Mandatory GDPR go-live checklist:** [solar-marketplace-gdpr-launch-checklist.md](solar-marketplace-gdpr-launch-checklist.md). Do not activate identifiable-data collection, paid introductions or customer data release until its controls and sign-offs are implemented and independently reviewed.
-The existing canonical quote page is `/solar/get-quotes/`. Do not create SEO-competing pages or imply that a provider can already pay to access homeowners.
+Status: **specification only**. The existing `/solar/get-quotes/` page remains browser-local and does not submit homeowner information or create paid leads. No real submission or paid introduction is authorised until the secure backend and checks below exist.
 
-## Objective
-Let a homeowner explore Compound's solar tools anonymously, optionally build one reusable **Solar Project Brief** and request quotations from up to **three verified installers they approve**. An informed estimate is not an installer quote and no online-only brief guarantees a final installed price.
+## Simple homeowner journey
 
-## Consumer workflow
-1. Research (articles → roof orientation → payback → quote brief). No account required for public tools.
-2. Fill a progressive four-section project brief. Essential fields are clearly labelled; all specialist details are optional with "not sure".
-3. Preview a homeowner-editable technical summary, flag unknowns and estimate readiness. Copy/print locally without transmitting PII.
-4. **Future, not live:** private homeowner account, verified phone/email, verified eligible installers, and explicit homeowner selection of 1, 2 or 3 recipient companies. No photograph collection.
-5. **Future:** record per-provider authorisation; provider pays **only after** matched approval and valid lead verification. Server releases personal contact details to each paid, authorised installer with short-lived access and full audit logs. Provider feedback and homeowner controls complete the loop.
+1. Use the Solar Project Builder with its on-page interactive 360° compass; no photo upload and no account needed for browsing/calculating.
+2. To **request quotes**, explicitly choose **1, 2 or 3 installers** (no preselected choice) and provide required contact details. A separate, unticked acknowledgement explains limited listing previews, paid introductions, full-data disclosure and permission for quote-related contact. Quote-sharing is optional and must not be a condition of using the calculator.
+3. Compound verifies contact and genuine quote intent, securely saves the brief, creates a non-identifying project identifier and human-readable SKU (e.g. `SOL-MH-2026-00421`), and makes an **anonymised teaser** visible only to logged-in, approved installers.
+4. An approved installer purchases one €65 pilot introduction through Stripe. Following verified payment, **only that installer** unlocks the quote brief and contact details. Available slots fall by one; each installer may purchase the SKU once.
+5. After each disclosure, tell the homeowner **which named installer** received their details. A simple email contact is sufficient initially for stopping future introductions and privacy requests—no customer dashboard or per-installer approval screen is planned for the pilot unless legal review identifies a reason.
+6. Expire/close requests promptly. Never disclose more than the selected maximum. Stop future releases immediately after withdrawal; do not claim prior disclosures can be undone.
 
-## Intake schema: field names and qualification
-Required for quote enquiry, not necessarily to use calculator:
-- `project_county` (county) and `area` (town or approximate area). Never expose Eircode or exact address at listing stage.
-- `property_role` (owner / joint owner / authorised decision maker / other). Only decision makers eligible for sale.
-- `building_type` (detached / semi / terrace / bungalow / apartment / commercial / other), `project_type` (new PV / expand existing PV / battery retrofit / ground mount), `planning_constraints` (listed / protected / conservation / none / unsure).
-- `timeframe` (ASAP / 1-3 months / 3-6 / 6-12 / research), `budget` (optional band), and `ready_for_quote` (yes, soliciting prices / research).
-- `contact_name`, `email`, `phone` and `eircode` — **secure private contact step only**, never analytics, unauthenticated public listing, email notifications, URLs, HTML output pages or ad scripts.
-- `chosen_installer_ids`, `share_approval_timestamp`, `privacy_notice_version`, `allowed_channels`, `contact_until` and withdrawn/revoked status, all server-side, recorded individually per recipient.
+## Proposed first-layer quote-request wording (legal review needed)
 
-Roof/siting details (optional unless reliable answer available):
-- `mount_type` (pitched roof/flat roof/ground mount), `roof_material`, `roof_condition`, `roof_age_range`, `storeys`, `roof_obstacles`, `roof_replacement_planned`, `scaffold_or_access`.
-- Up to two or more arrays `roof_faces[]`: `compass_azimuth_deg` (0=N/90=E/180=S/270=W), `tilt_deg`, `usable_area_m2` or rough length×width, expected shade (none/some/heavy/unsure) and `array_kwp` if proposed.
-- Roof angle/output imported from the compass marked as **self-reported approximate** rather than verified system design. Never auto-present preliminary projection as installer-confirmed yield.
+**Quote choice:** "How many solar installation quotes would you like? [1] [2] [3]"
 
-Electricity + grid:
-- `annual_consumption_kwh` (from bill ideally, or "unsure"); monthly average (€ optional); import/export tariffs; smart meter and daytime/overnight occupancy or load profile.
-- `ev_count` and vehicle charging plans, `heat_pump`, electric hot water, electric immersion, future EV or load growth.
-- `supply_type` (single/three phase/unknown), `main_fuse` or board condition if known, `inverter_location`, `cable_route` and `meter_location` (all optional / validated at site survey). Avoid asking homeowners to open consumer units, access roofs or expose MPRNs early.
+**Required, unticked affirmative checkbox only for quote requests:**
 
-Design and preferences:
-- `desired_kwp` (optional), `battery_choice` (none/yes/compare/unsure), `battery_kwh` (optional), `ev_charger`, `diverter`, `backup_power` requirements, warranties/brands (optional).
-- `grant_eligibility` (unknown/eligible/not eligible/previous grant), `finance_preference` (cash/finance/unsure), `existing_quotes` (yes/no, anonymised ranges optional).
-- `time_to_quote` and best method (phone/email) at recipient consent step only.
+> I request up to **[chosen number]** solar installation quotations. I understand that Compound.ie will show approved solar installers a limited project preview, which may include my **county, approximate area and broad installation requirements**, but not my name or contact details. I agree that Compound.ie may share my **name, contact details and completed project brief** with up to **[chosen number]** approved solar installers, who may contact me by **[chosen method]** about my requested quotes. Compound.ie may receive payment from installers for these introductions. I can stop future sharing at **[published privacy email]**. [Privacy notice]
 
-## Disclosure + access classes
-- Third-party ads and analytics must never receive personal form fields, contact details, full URLs containing identifiers, Eircodes, MPRNs, or person-linked project IDs.
-- Anonymous installer teaser: county/approximate area (no pinpointing for sparsely populated districts), dwelling class, approximate PV size, broad roof orientation and shading, intent/timing, safe non-unique project attributes, date qualified. Suppress rare combinations that enable re-identification.
-- Selected paying installer: full homeowner-authorised project brief and contact details strictly for that quote request, released to that named installer only after paid access is approved.
-- Internal Compound: verified access limited to fulfilment and fraud prevention.
-- Homeowner: see chosen recipients, price/terms transparency if relevant, see request states, withdraw future introductions, close enquiry, request deletion.
-- Never sell a bulk export; never reuse address/phone for unrelated marketing or resale.
+The checkbox is not newsletter/marketing consent and is not a substitute for a complete privacy notice. Inform customers of the identities of actual recipients when sharing takes place. Confirm the appropriate GDPR lawful basis and whether partner-controller details need to be given before sharing during prelaunch privacy review; **do not imply a category-only checkbox guarantees compliance in every arrangement**.
 
-## Lead economics and auction rules
-- Default `max_installer_introductions = 3`, configurable by the **homeowner**, not sellers.
-- Test EUR 50, EUR 65, EUR 75 per **nonexclusive**, verified, homeowner-approved introduction; cap one purchase by each installer and one charge per unique installer/project.
-- Model exclusive introductions as a separate homeowner-selected option, with separate higher test prices and an explicit prohibition on further sale.
-- Providers see truthful number of remaining slots and whether other suppliers have already been approved, but **never competing installer quotations or identities** unless clearly agreed.
-- Cash is charged on confirmed introduction; never charge for a speculative, unverified draft. Define refund/replacement policy, duplicate handling, out-of-area, fraudulent, unverifiable, non-consented and nonresponsive leads.
-- No purchase if homeowner no longer wants quotes, permission is withdrawn, 30-day lead freshness expired, duplicate within recent period or an installer is unverified.
-- Do not guarantee quote, survey, installation, savings or conversion. Installer must confirm roof structure, loading, electrical panel, cable routing, grant, planning, scaffolding and final installed cost at site survey.
+## What appears in the private installer listing
 
-## Security / GDPR go-live gates
-- Use authenticated DB with RLS and separate private contact vs anonymised market tables; never static-site storage or FormSubmit for consumer lead personal data.
-- Written privacy notice explaining controller, processing purposes, lawful basis, permitted recipients, retention, exercise of rights and deletion, and separately opt-in marketing (default OFF).
-- Per-installer-specific affirmative consent/other vetted lawful basis for introduction; do not assume generic checkbox is sufficient. Provide an easily accessible withdrawal route; withdrawal must prevent future releases, even though already disclosed data cannot be technically retracted.
-- Data-processing agreements and controller-to-controller sharing terms as applicable; breach detection, rate limits, MFA for installers, payments server-side, idempotent lead releases, audit trail and explicit retention/deletion jobs.
-- Contract review for consumer law, VAT, GDPR/ePrivacy, installer accreditation and advertising before collecting or selling live leads.
+- SKU; county and **only as broad a general area as is safe**; property/project type; approximate PV kWp; broad roof orientation; battery interest; rough installation timeframe; price per introduction; available slots.
+- Suppress town or other combinations that could identify individual rural households.
+- **Never display name, precise address, Eircode, email, phone or free-text details before purchase.**
+- No public feed, web-indexed listings, static JSON or publicly accessible API.
 
-## Measurement
-`solar_project_brief_started`, `solar_project_brief_completed`, `solar_project_quote_intent` (no PII in analytics).
-Server-side `verified_lead`, `opt_in_captured`, `matched`, `installer_authorised`, `lead_purchased`, `details_released`, `installer_contacted`, `survey_booked`, `quote_delivered`, `job_won`, `lead_refunded`, `repeat_installer_purchase`.
-Funnel attribution is permitted only when analytics consent exists and no personal form values are pushed to GA4.
+## After an installer purchases
 
-## Pilot milestones
-- No live marketplace/sales until at least 2-3 verified registered installers, consent architecture and payment release are working.
-- Validate quality on matched homeowner-authorised enquiries, price and repeat buying.
+- Installer is a verified approved business, eligible in area, and not already a purchaser.
+- Server verifies payment and homeowner permission is current; grant access to **that installer account only**; update slot count atomically, without overselling.
+- An installer receives a private dashboard link rather than personal data in a Stripe receipt or email.
+- Record the actual recipient company and notification to the homeowner.
+- If the lead is closed, withdrawn or stale during checkout, **do not release details**; handle refunds safely.
 
-## Approved private SKU inventory and purchase workflow (13 October 2026)
+## Form data kept from the existing project builder
 
-**Product decision:** The customer-facing Solar Project Builder remains at `/solar/get-quotes/`. The lead marketplace is **private to approved installers**, not a public directory. No live submission, Stripe payment, or release of homeowner data is authorised by this specification alone. The existing browser-local builder must not pretend to submit leads until its secure backend is operational.
+The existing fields are valuable for quoting; retain them, but make uncertain specialist answers optional.
+- **Project**: county, approximate area, authorisation to install, property/building type, project type, timing, indicative budget, restrictions.
+- **Roof**: 360° compass readings (azimuth/pitch for up to two roof faces), approximate area, material/condition, shading, obstructions, access.
+- **Usage**: annual kWh/bill, day-night pattern, EV/heat pump, smart meter, electrical supply if known.
+- **Scope**: PV size, battery/charger/diverter, backup, grants, finance, existing quotes.
+- **Private contact**: name, email/phone, selected contact method and optionally Eircode (never teased).
 
-### Creation and qualification
+Any projection made from self-reported roof information remains indicative; an installer must verify site design and final pricing.
 
-1. A homeowner fills out the public Solar Project Builder, including the built-in 360° roof compass. Technical unknowns are allowed; **no photo uploads or photograph checklist**.
-2. Completing the optional quote-request step is a distinct action from completing the calculator. Ask for a clear request to obtain quotations, their preferred maximum of **1, 2, or 3** installers, preferred contact channel, and acknowledgement of the privacy notice. Quote-request submission requires securely collected contact details, an independently verified email or phone, project intent/ownership screening, and a qualifying project brief. Optional fields must not prevent completion.
-3. Store a structured project, private contacts, a versioned consent/authorisation log, expiry and status in an authenticated backend. Create a unique non-guessable internal project identifier and a human-readable display SKU such as `SOL-MH-2026-00421`; do **not** encode personal details in the SKU. Sequential public SKUs must never confer access to any data.
-4. **Only after** the request is verified and classified as quote-ready, create one private listing at the pilot **€65 per verified introduction** price. Default stock is exactly the homeowner-selected maximum (1–3), never an unconditional three. Status begins `pending_review`; only `active` projects show as anonymised inventory. An admin can reject or hold poor-quality/duplicate projects. An optional research-only brief must never create a paid listing.
+## Minimal back-end records
 
-### Private installer browse and purchase
+- `project`: secure ID, display SKU, structured brief, status, expiry, requested_max (1–3), reserved/sold count.
+- `homeowner_private`: contact details and contact preferences, restricted separately from teaser.
+- `permission`: project, chosen maximum, affirmative choice, wording version, privacy notice version, UTC timestamp, permitted contact channels, withdrawal time (if any).
+- `purchase`: unique (project,installer), slot reservation, Stripe Checkout ID, webhook/payment/refund status.
+- `release`: project, purchaser/recipient, UTC release time, proof current permission, homeowner notification status.
+- `installer`: identity/business verification, status, servicing counties, secure login.
 
-- Only authenticated, Compound-approved, currently SEAI-registered solar installation businesses with their service areas configured can browse listings. Enforce permission in server-side API/DB row-level access controls; no public listing page, indexable routes, static JSON, or crawler-accessible previews. Show only matching geographic listings and sanitised structured fields: broad county, dwelling type, project category, general roof orientation, approximate system size/annual kWh, battery preference, broad timeframe, non-identifying readiness status, price, number of introduction slots left, and listing expiry. Suppress any sparse, distinctive combinations with re-identification risk. Do not include exact Eircode, full address, homeowner name, email, phone, property photos or unrestricted free-text notes.
-- A listing displays `SKU`, `€65 introduction price`, `X of N available`, and an action to `Request introduction`. An installer can purchase **at most once per project** and should know that this is a **shared lead** unless the customer explicitly selected exclusive treatment. An installer must never see another installer's identity, customer quote, or purchase history.
-- Before allowing payment/release, obtain and record homeowner approval **for that identified installer**, either by pre-approving a shown set of named eligible businesses or by accepting a pending request. Selecting `up to 3 quotes` alone does not authorise disclosure to arbitrary purchasers. If the homeowner declines or does not respond, do not charge or release details. Homeowner may withdraw permission for *future* introductions, reduce unfilled slots, close the project, and see who was authorised. Previously disclosed data cannot be automatically recalled.
-- On an approved, eligible purchase, reserve one of the listing's remaining slots in a transaction, create a short-lived **server-generated** Stripe Checkout payment for the specified SKU and agreed price, and restore the slot if payment fails or expires. Ensure one purchase per installer/project, no overselling under simultaneous checkouts, no duplicate charging, and no payments on stale, revoked or sold-out projects.
-- Treat a verified Stripe **server-side webhook** as payment authority; do not release on a return URL alone. Idempotently mark the purchase paid, consume its reserved slot, write an immutable release/audit event and unlock the complete approved brief/contact information in **that installer's private dashboard**, visible only to the paid recipient. The receipt/email includes invoice details and a secure link to access the brief — **never** personal homeowner information.
-- Remaining stock displays `3 → 2 → 1 → 0` when three introductions sell, or the corresponding 1/2 maximum. `0` becomes `sold_out` and unavailable; withdrawal/expiry closes the listing and prevents additional charges. A single installer never buys multiple slots to circumvent homeowner contact limits.
+## Must-pass launch checks — lean, but not optional
 
-### Installer and homeowner dashboard minimum viable features
+- Correct information notice including controller, lawful basis, purposes, recipient companies/categories, paid introductions, retention, withdrawal/rights contact and vendor details; retain a record of each affirmative quote-sharing permission. Separate any unrelated marketing permission.
+- Appropriate Article 6 basis documented; necessary processor contracts, privacy risk/DPIA screening and installer terms assessed. Do not collect live identifying data until these are in place.
+- Access enforced **server-side**, not just hidden visually: an unpaid or different installer cannot open full details even with a guessed SKU/URL.
+- Accurate, race-safe capacity: homeowner-selected max 1/2/3, each business once; Stripe signed webhook and idempotent fulfilment; revoked/expired entries blocked.
+- Secure storage, minimal retention and deletion practice, rights-request and incident contact/process. No identifiable data in analytics, ads, receipt, URL, logs or Stripe metadata; no ads on contact/payment dashboards.
+- Test the actual quote opt-in, privacy notice, withdrawal and emails, then seek a proportionate qualified Irish privacy/legal check before live sales.
 
-**Installer:** sign up/log in, business verification and service area, browse filtered anonymised inventory, SKU/price/availability, request access, pay, order history, secure purchased project details, contact/quote/survey status and refund request. The installer must have no access to any unpurchased project's private data and only receive information necessary to prepare the requested quote.
+Reference: [Lean GDPR checklist](solar-marketplace-gdpr-launch-checklist.md).
 
-**Homeowner:** review their brief, request one/two/three quotations, verify contact, see and explicitly approve proposed installers, see number of authorised/released introductions and quote progress, withdraw remaining availability, close project, obtain a copy or request deletion. Approval should use intelligible named recipients, not a generic `we may share your data` checkbox.
+## What we're **not** building in the pilot
 
-**Admin:** approve/reject projects and installers, verify registration and matching area, screen duplicates, see fraud and validity flags, manage expiry, authorisation and payment disputes, apply refunds, audit access, honour deletion/withdrawal requests and monitor lead quality. A fair refund/replacement policy must be published before charging.
+No homeowner privacy portal, no separate approval request for each prospective installer, no auction, no subscriptions, no lead bulk exports, and no photo uploads. These are product choices, not blanket exemptions from GDPR. If legal review identifies a need for narrower recipient approval or further disclosures, adapt before launch.
 
-### Status and invariants
-
-`draft → submitted → verified → pending_review → active → sold_out / closed / expired` for projects. Per-installer requests: `requested → homeowner_approved → reserved → paid → access_granted`, with distinct `declined`, `cancelled`, `expired`, and `refunded` branches.
-
-- `max_slots ∈ {1,2,3}`, `0 ≤ reserved + sold ≤ max_slots`, and `one paid purchase per (project_id, installer_id)`.
-- No marketing consent is inferred from a request for quotes. No personal data in analytics, server logs, email receipts, URLs, public assets or ad tags; no ads or third-party marketing scripts in authenticated workflows.
-- Test price €65 is a commercial hypothesis, not a guaranteed sale price or commitment. A project only earns up to `€65 × actual paid introductions` (maximum €195 with 3), before refunds, VAT where applicable, payment fees and operating costs.
-
-### Implementation phases / go-live gate
-
-1. Keep the browser-local form working and add an optional **simulation** of the private, anonymised installer preview only if clearly labelled as non-live; this never transmits any personal field.
-2. Implement authenticated, access-controlled server-side data storage, private homeowner request/verification, installer vetting, admin review, explicit named-recipient approval and anonymised private listing queries; perform threat modelling and privacy review before collecting live PII.
-3. Add atomic slot reservations, Stripe Checkout/webhooks, private release and audit logs, support/refund/expiry handling; test simultaneous purchases, revoked approval, identity/role isolation, and cancelled checkouts.
-4. Pilot in limited counties with real homeowner-approved requests and 2–3 verified installers. Do not enable paid sales until security, privacy notice, deletion/retention, and end-to-end refund/release tests pass.
+Pilot price **€65 per homeowner-authorised introduction**, with up to **three** purchases. This is a pricing test, not guaranteed revenue or conversion.
