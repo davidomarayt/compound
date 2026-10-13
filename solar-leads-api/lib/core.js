@@ -20,7 +20,12 @@ export function safeHeaders(request) {
 export function options(request){return new Response(null,{status:204,headers:safeHeaders(request)});}
 export function allowedOrigin(request){const origin=request.headers.get('origin');return !!origin && allowedOrigins.has(origin);}
 export function ready(...names){return names.every(x=>typeof process.env[x]==='string' && process.env[x].length>8);}
-export const paymentEnabled=()=>process.env.SOLAR_LEADS_PAYMENTS_ENABLED==='true';
+// Payments require both an explicit launch switch and test credentials.
+ // Live charges need a second independent approval flag to avoid accidental charging.
+ export const paymentEnabled=()=>process.env.SOLAR_LEADS_PAYMENTS_ENABLED==='true' &&
+   ((process.env.STRIPE_SECRET_KEY||'').startsWith('sk_test_') ||
+     (process.env.SOLAR_LEADS_REAL_CHARGES_APPROVED==='true' &&
+       (process.env.STRIPE_SECRET_KEY||'').startsWith('sk_live_')));
 export const intakeEnabled=()=>process.env.SOLAR_LEADS_INTAKE_ENABLED==='true';
 export function digest(str){return createHash('sha256').update(str).digest('hex');}
 export function token(){return randomBytes(32).toString('base64url');}
