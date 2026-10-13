@@ -245,11 +245,19 @@
     requestedEmail=email;
     const {error}=await supabase.auth.signInWithOtp({email,options:{shouldCreateUser:false,emailRedirectTo:window.location.origin+'/solar/installer-portal/'}});
     find('send').disabled=false;
-    if (error) {status(find('message'),'Could not send a code. Please try again or contact Compound Solar.','error');return;}
-    find('email-form').hidden=true;
-    find('code-form').hidden=false;
-    find('code').focus();
-    status(find('message'),'If this email is approved, a secure sign-in email is on its way. Open its link or enter the six-digit code if one is provided.','success');
+    if (error) {status(find('message'),'Could not send a sign-in email. Please try again or contact Compound Solar.','error');return;}
+    if (root.dataset.ipLoginMode==='code') {
+      // Optional future OTP mode after an authorised SMTP/template change.
+      find('email-form').hidden=true;
+      find('code-form').hidden=false;
+      find('code').focus();
+      status(find('message'),'Enter the six-digit code sent to your approved business email.','success');
+    } else {
+      // Supabase's default template sends a Magic Link, not a six-digit code.
+      find('email-form').hidden=false;
+      find('code-form').hidden=true;
+      status(find('message'),'If your email is authorised, check your inbox for a one-time sign-in link. Open it to return here. You can request another link using the form above.','success');
+    }
   });
   find('code-form').addEventListener('submit',async e=>{
     e.preventDefault();
