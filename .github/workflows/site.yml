@@ -73,6 +73,19 @@ jobs:
           grep -Fq 'chart-svg' "$page"
           grep -Fq '/static/images/evergreen/how-many-solar-panels-do-i-need-ireland.jpg' "$page"
           test -s public/static/images/evergreen/how-many-solar-panels-do-i-need-ireland.jpg
+      - name: Verify east-west orientation article and approved rooftop photo
+        shell: bash
+        run: |
+          set -euo pipefail
+          page=public/wealth/east-west-facing-solar-panels-ireland/index.html
+          test -s "$page"
+          grep -Fq 'https://compound.ie/wealth/east-west-facing-solar-panels-ireland/' "$page"
+          grep -Fq 'East- and West-Facing Solar Panels' "$page"
+          grep -Fq 'Same roof pitch. Different sunlight.' "$page"
+          grep -Fq '/solar-payback-calculator/' "$page"
+          grep -Fq '/solar/compare-quotes/' "$page"
+          grep -Fq '/wealth/east-west-facing-solar-panels-ireland/' public/solar/index.html
+          test -s public/static/images/evergreen/east-west-facing-solar-panels-ireland.jpg
       - name: Verify Solar hub pages and client script
         shell: bash
         run: |
