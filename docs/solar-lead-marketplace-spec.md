@@ -10,7 +10,6 @@ Let a homeowner explore Compound's solar tools anonymously, optionally build one
 1. Research (articles → roof orientation → payback → quote brief). No account required for public tools.
 2. Fill a progressive four-section project brief. Essential fields are clearly labelled; all specialist details are optional with "not sure".
 3. Preview a homeowner-editable technical summary, flag unknowns and estimate readiness. Copy/print locally without transmitting PII.
-4. **Future, not live:** private account + secure uploaded photos (EXIF stripped), optional verified phone/email, list of verified eligible providers and explicit homeowner selection of 1, 2 or 3 recipient companies.
 5. **Future:** record per-provider authorisation; provider pays **only after** matched approval and valid lead verification. Server releases personal contact details to each paid, authorised installer with short-lived access and full audit logs. Provider feedback and homeowner controls complete the loop.
 
 ## Intake schema: field names and qualification
@@ -25,7 +24,6 @@ Required for quote enquiry, not necessarily to use calculator:
 Roof/siting details (optional unless reliable answer available):
 - `mount_type` (pitched roof/flat roof/ground mount), `roof_material`, `roof_condition`, `roof_age_range`, `storeys`, `roof_obstacles`, `roof_replacement_planned`, `scaffold_or_access`.
 - Up to two or more arrays `roof_faces[]`: `compass_azimuth_deg` (0=N/90=E/180=S/270=W), `tilt_deg`, `usable_area_m2` or rough length×width, expected shade (none/some/heavy/unsure) and `array_kwp` if proposed.
-- `site_photos[]` **future authenticated secure attachment**: roof from ground, front/back roof faces, skylights/chimneys/shading, internal distribution board *without opening anything*, meter location and cable run; no unnecessary identifying imagery in anonymous listing. Strip EXIF and GPS, malware-check, signed URLs and limited retention.
 - Roof angle/output imported from the compass marked as **self-reported approximate** rather than verified system design. Never auto-present preliminary projection as installer-confirmed yield.
 
 Electricity + grid:
@@ -44,7 +42,6 @@ Design and preferences:
 - Internal Compound: verified access limited to fulfilment and fraud prevention.
 - Homeowner: see chosen recipients, price/terms transparency if relevant, see request states, withdraw future introductions, close enquiry, request deletion.
 - Never sell a bulk export; never reuse address/phone for unrelated marketing or resale.
-- Third-party ads and analytics do not receive the form fields, photos, full URLs, phone, Eircode, MPRN, project IDs linked to a person or other PII.
 
 ## Lead economics and auction rules
 - Default `max_installer_introductions = 3`, configurable by the **homeowner**, not sellers.
@@ -61,7 +58,6 @@ Design and preferences:
 - Per-installer-specific affirmative consent/other vetted lawful basis for introduction; do not assume generic checkbox is sufficient. Provide an easily accessible withdrawal route; withdrawal must prevent future releases, even though already disclosed data cannot be technically retracted.
 - Data-processing agreements and controller-to-controller sharing terms as applicable; breach detection, rate limits, MFA for installers, payments server-side, idempotent lead releases, audit trail and explicit retention/deletion jobs.
 - Contract review for consumer law, VAT, GDPR/ePrivacy, installer accreditation and advertising before collecting or selling live leads.
-- Minimum lawful fields and no MPRN, exact Eircode, installation photos or meter/board serial numbers in pre-purchase listings.
 
 ## Measurement
 `solar_project_brief_started`, `solar_project_brief_completed`, `solar_project_quote_intent` (no PII in analytics).
@@ -71,4 +67,3 @@ Funnel attribution is permitted only when analytics consent exists and no person
 ## Pilot milestones
 - No live marketplace/sales until at least 2-3 verified registered installers, consent architecture and payment release are working.
 - Validate quality on matched homeowner-authorised enquiries, price and repeat buying.
-- Dashboard thereafter: saved multi-property drafts, attachments, provider selection, secure inbox/quotations, history and deletion controls.
