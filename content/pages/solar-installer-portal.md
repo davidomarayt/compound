@@ -3,7 +3,7 @@ title: "Installer Portal | Compound Solar"
 canonical_path: /solar/installer-portal/
 meta_description: "Secure Compound Solar portal for verified installation businesses to access private solar opportunities and purchased introductions."
 ---
-<div class="sip" data-installer-portal data-supabase-url="https://guifxtijipkpvjjyhatq.supabase.co" data-supabase-publishable-key="sb_publishable_ve357dvU1yKXIkMkEz5FTA_bg1BBvjk" data-checkout-api-url="" data-ip-login-mode="magic-link">
+<div class="sip" data-installer-portal data-supabase-url="https://guifxtijipkpvjjyhatq.supabase.co" data-supabase-publishable-key="sb_publishable_ve357dvU1yKXIkMkEz5FTA_bg1BBvjk" data-checkout-api-url="" data-ip-login-mode="magic-link" data-pilot-review-api="https://compound-solar-api.vercel.app/api/pilot-review">
   <div class="sip-head">
     <div>
       <a class="sip-back" href="/solar/">← Compound Solar</a>
@@ -74,6 +74,7 @@ meta_description: "Secure Compound Solar portal for verified installation busine
     <nav class="sip-tabs" aria-label="Installer workspace sections">
       <button type="button" data-ip-tab="available" aria-pressed="true">Available Projects <span data-ip-tab-available>0</span></button>
       <button type="button" data-ip-tab="purchased" aria-pressed="false">Purchased Leads <span data-ip-tab-purchased>0</span></button>
+      <button type="button" data-ip-tab="pilot" aria-pressed="false" hidden>Private pilot requests <span data-ip-pilot-count>0</span></button>
       <button type="button" data-ip-tab="account" aria-pressed="false">My Account</button>
     </nav>
     <div data-ip-tab-panel="available">
@@ -85,6 +86,12 @@ meta_description: "Secure Compound Solar portal for verified installation busine
       <div class="sip-section-heading"><div><h2>Purchased introductions</h2><p>Only homeowner briefs purchased and authorised for your company are accessible here.</p></div></div>
       <div class="sip-project-grid" data-ip-purchased-list></div>
       <div class="sip-empty" data-ip-purchased-empty hidden><span>◇</span><h3>No purchased leads</h3><p>Your secure project briefs and contact details will be shown here after completed purchases.</p></div>
+    </div>
+    <div data-ip-tab-panel="pilot" hidden>
+      <div class="sip-section-head"><h2>Private homeowner submissions</h2><p>Internal Compound review only. None of these projects is visible to installers or available for purchase.</p></div>
+      <button type="button" class="sip-link-button" data-ip-refresh-pilot>Refresh submissions</button>
+      <p data-ip-pilot-message role="status" aria-live="polite"></p>
+      <div class="sip-project-grid" data-ip-pilot-list></div>
     </div>
     <div data-ip-tab-panel="account" hidden>
       <div class="sip-account-card">
