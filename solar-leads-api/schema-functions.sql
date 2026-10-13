@@ -273,7 +273,31 @@ begin
 end
 $$;
 
+-- Simple manual email-request workflow: Compound staff validates the
+-- homeowner's identity, then closes all unsold slots immediately.
+create or replace function public.solar_withdraw_quote(p_project_id uuid)
+returns jsonb language plpgsql security definer set search_path = ''
+as $
+declare v_project public.solar_lead_teasers%rowtype;
+        v_num integer;
+begin
+  select * into v_project from public.solar_lead_teasers
+  where id=p_project_id for update;
+  if not found then raise exception 'Project not found'; end if;
+  update compound_private.solar_homeowner_permissions
+    set withdrawn_at=coalesce(withdrawn_at,now())
+    where project_id=p_project_id;
+  update public.solar_lead_purchases set status='cancelled'
+    where project_id=p_project_id and status='reserved';
+  get diagnostics v_num = row_count;
+  update public.solar_lead_teasers
+    set reserved_count=0,status='closed' where id=p_project_id;
+  return jsonb_build_object('closed',true,'cancelled_reservations',v_num);
+end
+$;
+
 -- Suppress all PUBLIC invoker access to administrative RPC operations.
+revoke all on function public.solar_withdraw_quote(uuid) from public,anon,authenticated;
 revoke all on function public.solar_create_quote(jsonb,jsonb,jsonb,text) from public,anon,authenticated;
 revoke all on function public.solar_confirm_email(uuid,text) from public,anon,authenticated;
 revoke all on function public.solar_reserve_introduction(uuid,uuid) from public,anon,authenticated;
@@ -281,6 +305,7 @@ revoke all on function public.solar_attach_checkout(uuid,text) from public,anon,
 revoke all on function public.solar_cancel_reservation(uuid) from public,anon,authenticated;
 revoke all on function public.solar_complete_checkout(uuid,text,text,integer,text,text) from public,anon,authenticated;
 revoke all on function public.solar_mark_homeowner_notified(uuid) from public,anon,authenticated;
+grant execute on function public.solar_withdraw_quote(uuid) to service_role;
 grant execute on function public.solar_create_quote(jsonb,jsonb,jsonb,text) to service_role;
 grant execute on function public.solar_confirm_email(uuid,text) to service_role;
 grant execute on function public.solar_reserve_introduction(uuid,uuid) to service_role;
