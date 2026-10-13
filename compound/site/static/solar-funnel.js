@@ -20,6 +20,7 @@
       '/solar/batteries/': 'battery_guide',
       '/solar/export-rates/': 'export_rates',
       '/solar/equipment/': 'equipment_guide',
+      '/solar/roof-direction/': 'roof_orientation_explorer',
       '/solar/compare-quotes/': 'quote_comparison',
       '/solar/get-quotes/': 'quote_brief',
       '/solar/installers/': 'installer_directory',
