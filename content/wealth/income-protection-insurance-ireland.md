@@ -90,6 +90,8 @@ The detail matters. The advertised cover percentage is **not automatically the a
 </table>
 </div>
 
+Explore the [Compound Insurance Hub](/insurance/) when comparing income protection with life, mortgage protection and critical illness policies. These cover different risks and should not be treated as interchangeable.
+
 ## What is income protection insurance?
 
 Income protection, sometimes called **income insurance**, **salary protection**, **income continuance** or **permanent health insurance (PHI)**, is intended to help replace earnings when you are medically unable to work due to a covered illness or injury.
