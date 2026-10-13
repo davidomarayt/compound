@@ -202,8 +202,17 @@ def main() -> None:
                                         if not tool_result or tool_result.strip() == "—":
                                             failures.append(f"{width}px {path}: calculator did not populate")
                                     if path == "/solar/get-quotes/":
+                                        profile = page.locator("[data-solar-project]")
+                                        if profile.count() != 1:
+                                            failures.append(f"{width}px {path}: homeowner project form missing")
+                                        if page.locator('[data-sp="eircode"]').count() != 1:
+                                            failures.append(f"{width}px {path}: private homeowner contact step missing")
+                                        page.locator('[data-sp="area"]').fill("Kells")
+                                        page.locator('[data-sp="azimuth"]').fill("225")
+                                        if "225°" not in page.locator("[data-sb-output]").input_value():
+                                            failures.append(f"{width}px {path}: roof orientation not copied into project brief")
                                         output = page.locator("[data-sb-output]").input_value()
-                                        if "itemised domestic solar PV quotation" not in output:
+                                        if "SOLAR INSTALLATION QUOTE REQUEST" not in output:
                                             failures.append(f"{width}px {path}: quote request generator did not populate output")
                     finally:
                         page.close()
