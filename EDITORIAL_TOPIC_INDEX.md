@@ -1,6 +1,6 @@
 # Compound.ie — Quick Editorial Topic Index
 
-Updated: 2026-10-12 | Automatically rebuilt from published source
+Updated: 2026-10-13 | Automatically rebuilt from published source
 
 **Before recommending a new article:** search this page by keyword, synonym,
 and reader question. An existing article or tool may already cover the idea.
@@ -174,7 +174,7 @@ For the complete register (including 510+ company profiles), open
 - [€16 an hour: what Ireland’s new Living Wage benchmark would mean for your pay](https://compound.ie/news/living-wage-16-ireland-2026/) — **Wealth**
 - [€2,000 Boiler Scrappage Grant Ireland: Now Live Under SEAI Scheme](https://compound.ie/news/boiler-scrappage-grant-ireland-2027/) — **Wealth**
 - [€400 Energy Credit Proposal: What Budget 2027 Actually Did](https://compound.ie/news/social-democrats-400-energy-credit-budget-2027/) — **Wealth**
-- [€600 solar battery grant expected in Budget 2027: is a home battery actually worth it?](https://compound.ie/news/solar-battery-grant-ireland-budget-2027/) — **Wealth**
+- [€600 SEAI Home Battery Grant Ireland: Who Qualifies and Is It Worth It?](https://compound.ie/news/solar-battery-grant-ireland-budget-2027/) — **Wealth**
 
 ## Calculators and tools — alphabetical
 

@@ -1,6 +1,6 @@
 # Compound.ie — Master Content and Title Register
 
-Snapshot: 2026-10-12 | Source: publishing branch
+Snapshot: 2026-10-13 | Source: publishing branch
 
 PURPOSE: Check this register before creating a new article, guide or calculator. Search by exact title, keyword, synonym and reader intent. If the topic is already answered, update its canonical page instead of publishing an SEO duplicate.
 
@@ -159,7 +159,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [€16 an hour: what Ireland’s new Living Wage benchmark would mean for your pay](https://compound.ie/news/living-wage-16-ireland-2026/)
 - [€2,000 Boiler Scrappage Grant Ireland: Now Live Under SEAI Scheme](https://compound.ie/news/boiler-scrappage-grant-ireland-2027/)
 - [€400 Energy Credit Proposal: What Budget 2027 Actually Did](https://compound.ie/news/social-democrats-400-energy-credit-budget-2027/)
-- [€600 solar battery grant expected in Budget 2027: is a home battery actually worth it?](https://compound.ie/news/solar-battery-grant-ireland-budget-2027/)
+- [€600 SEAI Home Battery Grant Ireland: Who Qualifies and Is It Worth It?](https://compound.ie/news/solar-battery-grant-ireland-budget-2027/)
 
 ## Life articles and guides — 25
 
