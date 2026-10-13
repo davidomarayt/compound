@@ -49,6 +49,8 @@ That can include:
 
 Missing one item can delay closing.
 
+Before drawdown, use the [Compound Insurance Hub](/insurance/) and our [mortgage protection guide](/wealth/mortgage-protection-insurance-ireland/) to understand cover, exclusions and timing.
+
 ## Approval in Principle is not the Letter of Offer
 
 AIP is preliminary.
