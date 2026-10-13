@@ -14,9 +14,13 @@
   // The web form is deliberately switched OFF until the secure API,
   // privacy notice, verified mail, Stripe testing and deletion flow are ready.
   if(!enabled || !/^https:\/\/[a-z0-9.-]+$/.test(base) || !/^0x[a-z0-9_-]{20,}$/i.test(key)) {
+    // Prelaunch panel stays visible. Nothing is transmitted.
     stage.hidden=true;
     return;
   }
+  // Only replace the prelaunch panel after launch configuration is complete.
+  const prelaunch=root.querySelector('[data-sp-prelaunch-request]');
+  if(prelaunch) prelaunch.hidden=true;
   stage.hidden=false;
   const byName=k=>root.querySelector('[data-sp="'+k+'"]');
   const consent=stage.querySelector('[data-sp-quote-consent]');
