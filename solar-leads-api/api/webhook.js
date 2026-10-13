@@ -49,8 +49,10 @@ export async function POST(request){
        await rpc('solar_cancel_reservation',{p_order_id:orderId});
        return json({received:true,released:false});
      }
-     // Notify on the first release. A notification error returns 500 for Stripe retry.
-     if(!result.already_processed)await notifyHomeowner(orderId,result.project_id);
+     // A failed notification is retried on the next signed Stripe delivery;
+     // no contact information is included in Stripe's receipt itself.
+     const pending=await rpc('solar_release_notification_pending',{p_order_id:orderId});
+     if(pending===true)await notifyHomeowner(orderId,result.project_id);
    } else if(event.type==='checkout.session.expired'&&session?.client_reference_id){
      await rpc('solar_cancel_reservation',{p_order_id:session.client_reference_id});
    }
