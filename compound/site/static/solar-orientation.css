@@ -75,3 +75,39 @@
 @media(max-width:790px){.sor-intro,.sor-board{grid-template-columns:minmax(0,1fr)}.sor-intro{gap:12px}.sor-left{padding:22px 16px}.sor-right{padding:25px 19px}.sor-sidelead{max-width:57ch}.sor-dial{max-width:330px}.sor-kwh strong{font-size:clamp(44px,10vw,68px)}}
 @media(max-width:430px){.sor-intro h1{font-size:clamp(36px,11vw,52px)}.sor-kpis{gap:8px}.sor-kpi{padding:12px}.sor-kpi strong{font-size:25px}.sor-settings{gap:12px}.sor-presets{gap:3px}.sor-presets button{padding:8px 1px;font-size:10px}.sor-month{font-size:9px}.sor-months{gap:4px;height:180px}.sor-lead{font-size:14px}}
 @media(prefers-reduced-motion:reduce){.sor-pointer,.sor-month-fill,.sor-meter span{transition:none}}
+
+/* High contrast, device-dark-mode-proof seasonal chart: render bars/text as Canvas pixels.
+   Samsung Internet's automatic darkening previously turned green CSS bars nearly black. */
+.sor-shell .sor-chart-section{
+  color-scheme:only light;
+  background:#112b28;
+  border:1px solid #557e70;
+  color:#f1fff4;
+}
+.sor-shell .sor-chart-section .sor-ey{color:#c7f7ab}
+.sor-shell .sor-chart-section .sor-chart-header h2{color:#f6fff5}
+.sor-shell .sor-chart-section .sor-chart-header p{color:#d5e9dd}
+.sor-shell .sor-chart-section .sor-disclosure{color:#e0ebe2;line-height:1.85}
+.sor-shell .sor-chart-section .sor-disclosure a{color:#c1f5b3;text-decoration:underline;text-underline-offset:3px}
+.sor-chart-visual{
+  min-width:0;width:100%;margin-top:21px;padding:12px 13px 14px;
+  border:1px solid #507d6e;border-radius:12px;
+  background:#102b29;color:#fff;
+}
+.sor-canvas{
+  display:block;width:100%;max-width:100%;height:225px;
+  background:#102b29;border-radius:7px;cursor:pointer;
+  touch-action:manipulation;
+}
+.sor-canvas:focus-visible{outline:3px solid #fff0aa;outline-offset:3px}
+.sor-chart-readout{
+  display:flex;gap:8px 20px;justify-content:space-between;align-items:center;flex-wrap:wrap;
+  padding:14px 7px 3px;color:#e7f6e8;
+}
+.sor-chart-readout strong{font-size:clamp(17px,2.6vw,23px);font-weight:800;color:#ffeb9c;line-height:1.35}
+.sor-chart-readout span{color:#dcf0e4;font-size:12px;line-height:1.5}
+.sor-chart-hint{font-size:11px;line-height:1.5;margin:8px 7px 0!important;color:#d3ead9}
+@media(max-width:430px){
+  .sor-chart-visual{padding:8px 7px 12px}
+  .sor-chart-readout{padding:13px 6px 4px}
+}
