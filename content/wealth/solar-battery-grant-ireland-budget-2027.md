@@ -23,9 +23,9 @@ social:
   x:
     enabled: true
     text: >-
-      The SEAI €600 battery grant is now open in Ireland. But is a home battery worth it?
-      but does it actually make a battery worth buying? We run the numbers on payback,
-      export rates, night tariffs and the households most likely to benefit.
+      Ireland's SEAI €600 home battery grant is open. Is storage worth the remaining cost?
+      We run the numbers on payback, export rates, night tariffs and the households
+      most likely to benefit.
   linkedin:
     enabled: true
     text: >-
