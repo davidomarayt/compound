@@ -273,6 +273,15 @@ begin
 end
 $$;
 
+create or replace function public.solar_release_notification_pending(p_order_id uuid)
+returns boolean language sql stable security definer set search_path = ''
+as $
+  select exists(
+    select 1 from compound_private.solar_release_events
+     where purchase_id=p_order_id and homeowner_notified_at is null
+  );
+$;
+
 -- Simple manual email-request workflow: Compound staff validates the
 -- homeowner's identity, then closes all unsold slots immediately.
 create or replace function public.solar_withdraw_quote(p_project_id uuid)
@@ -297,6 +306,7 @@ end
 $;
 
 -- Suppress all PUBLIC invoker access to administrative RPC operations.
+revoke all on function public.solar_release_notification_pending(uuid) from public,anon,authenticated;
 revoke all on function public.solar_withdraw_quote(uuid) from public,anon,authenticated;
 revoke all on function public.solar_create_quote(jsonb,jsonb,jsonb,text) from public,anon,authenticated;
 revoke all on function public.solar_confirm_email(uuid,text) from public,anon,authenticated;
@@ -305,6 +315,7 @@ revoke all on function public.solar_attach_checkout(uuid,text) from public,anon,
 revoke all on function public.solar_cancel_reservation(uuid) from public,anon,authenticated;
 revoke all on function public.solar_complete_checkout(uuid,text,text,integer,text,text) from public,anon,authenticated;
 revoke all on function public.solar_mark_homeowner_notified(uuid) from public,anon,authenticated;
+grant execute on function public.solar_release_notification_pending(uuid) to service_role;
 grant execute on function public.solar_withdraw_quote(uuid) to service_role;
 grant execute on function public.solar_create_quote(jsonb,jsonb,jsonb,text) to service_role;
 grant execute on function public.solar_confirm_email(uuid,text) to service_role;
