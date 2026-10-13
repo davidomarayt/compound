@@ -20,6 +20,9 @@ export function safeHeaders(request) {
 export function options(request){return new Response(null,{status:204,headers:safeHeaders(request)});}
 export function allowedOrigin(request){const origin=request.headers.get('origin');return !!origin && allowedOrigins.has(origin);}
 export function ready(...names){return names.every(x=>typeof process.env[x]==='string' && process.env[x].length>8);}
+export const databaseSecretReady=()=>ready('SUPABASE_URL') &&
+  ((process.env.SUPABASE_SECRET_KEY||'').startsWith('sb_secret_') ||
+   ((process.env.SUPABASE_SERVICE_ROLE_KEY||'').startsWith('eyJ')));
 // Payments require both an explicit launch switch and test credentials.
  // Live charges need a second independent approval flag to avoid accidental charging.
  export const paymentEnabled=()=>process.env.SOLAR_LEADS_PAYMENTS_ENABLED==='true' &&
@@ -42,12 +45,14 @@ export async function readJson(request,max=20000){
  return JSON.parse(text);
 }
 export async function rest(path,method='GET',body=undefined){
- if(!ready('SUPABASE_URL','SUPABASE_SERVICE_ROLE_KEY'))throw new Error('Service not configured');
+ if(!databaseSecretReady())throw new Error('Service not configured');
+ const key=(process.env.SUPABASE_SECRET_KEY||process.env.SUPABASE_SERVICE_ROLE_KEY);
+ // Modern sb_secret_* credentials go on the apikey header only.
+ // Legacy service_role JWTs also need an Authorization Bearer JWT.
+ const headers={apikey:key,'Content-Type':'application/json','Prefer':'return=representation'};
+ if(key.startsWith('eyJ'))headers.authorization='Bearer '+key;
  const resp=await fetch(process.env.SUPABASE_URL.replace(/\/$/,'')+'/rest/v1/'+path,{
-   method,
-   headers:{apikey:process.env.SUPABASE_SERVICE_ROLE_KEY,
-     authorization:'Bearer '+process.env.SUPABASE_SERVICE_ROLE_KEY,
-     'Content-Type':'application/json','Prefer':'return=representation'},
+   method,headers,
    body:body===undefined?undefined:JSON.stringify(body)
  });
  const text=await resp.text();
