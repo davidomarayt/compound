@@ -1,6 +1,7 @@
 # Compound Solar — homeowner project intake and installer marketplace specification
 
 Status: product specification / browser-local project brief (not a live lead marketplace).
+**Mandatory GDPR go-live checklist:** [solar-marketplace-gdpr-launch-checklist.md](solar-marketplace-gdpr-launch-checklist.md). Do not activate identifiable-data collection, paid introductions or customer data release until its controls and sign-offs are implemented and independently reviewed.
 The existing canonical quote page is `/solar/get-quotes/`. Do not create SEO-competing pages or imply that a provider can already pay to access homeowners.
 
 ## Objective
