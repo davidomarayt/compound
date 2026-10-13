@@ -200,7 +200,7 @@ A battery shifts generation from midday into the evening; it **does not store su
 
 **Panel count and space.** Using 440W modules, approximately 9 / 14 / 18 panels make 4 / 6 / 8kWp respectively. They will need suitable roof area, access margins and mounting clearances. Exact space depends on the module dimensions and roof shape, not just total area.
 
-**Direction and shading.** A shaded south-facing array can underperform a clear east/west roof. Ask for annual kWh from a roof-specific model with shading and inverter losses, **not just a kWp headline**.
+**Direction and shading.** A shaded south-facing array can underperform a clear east/west roof. Ask for annual kWh from a roof-specific model with shading and inverter losses, **not just a kWp headline**. For the trade-offs, see our [east- vs west- vs south-facing solar roof guide](/wealth/east-west-facing-solar-panels-ireland/).
 
 **Inverter capacity and export.** The peak **DC panel** rating (kWp) is not the same as the inverter's AC capacity or permitted export. The standard ESB Networks microgeneration notification route (NC6) generally covers up to 6kVA single-phase or 11kVA three-phase. An 8kWp DC panel array might be paired with a smaller inverter, but the resulting clipping, approvals and export constraints need assessment. The installer must identify the correct ESB Networks application route before works proceed.
 
