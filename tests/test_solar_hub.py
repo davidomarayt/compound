@@ -175,14 +175,21 @@ def test_solar_quote_project_brief_is_private_and_comprehensive():
                   "shade", "roofCondition", "material", "demand", "phase", "smartMeter",
                   "kwp", "battery", "grant", "installerCount", "email", "phone", "eircode"):
         assert f'data-sp="{field}"' in page
-    assert "Compound does not receive, save, sell or send" in page
-    assert "not consent for data sharing" in page
+    # Project answers remain local unless the homeowner explicitly opts in to
+    # the private pilot. The public installer marketplace must stay disabled.
+    assert 'data-solar-pilot-active="true"' in page
+    assert 'data-solar-leads-active="false"' in page
+    assert 'data-sp-private-pilot-form' in page
+    assert 'data-sp-private-pilot-consent' in page
+    assert 'data-sp-private-pilot-submit' in page
+    assert 'No installer can view these pilot submissions' in page
+    assert 'data-sp-live-request hidden' in page
     assert 'solar-project.css?v=2' in template and 'solar-project.js?v=2' in template
     assert "sessionStorage.getItem('compound_solar_project_compass_v1')" in js
     assert "sessionStorage.setItem('compound_solar_project_compass_v1'" in compass
     # No remote submission or local persistence of contact data.
     assert "fetch(" not in js and "localStorage.setItem" not in js
-    assert '<form' not in page
+    assert '<form data-sp-private-pilot-form' in page
     assert '"solar-get-quotes"}' in (ROOT / "compound/site/build.py").read_text(encoding="utf-8")
     assert '/solar/roof-direction/' in page and '/solar/compare-quotes/' in page
 
