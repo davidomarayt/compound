@@ -69,7 +69,7 @@ meta_description: "Turn an interactive 360-degree solar compass to estimate Iris
     <div class="sor-chart-visual">
       <canvas data-or="chart" class="sor-canvas" role="button" tabindex="0" aria-label="Monthly solar generation chart. Tap or use left and right arrow keys to select a month." width="800" height="258">Monthly solar generation by month, January to December.</canvas>
       <div class="sor-chart-readout"><strong data-or="chart-amount" role="status" aria-live="polite">Select a month</strong><span data-or="chart-peak">Peak production updates with the compass</span></div>
-      <p class="sor-chart-hint">Tap a bar to see monthly kWh. Turn the compass above to compare roof directions.</p>
+      <p class="sor-chart-hint">Tap a bar, or use the chart’s left and right arrow keys, to see the exact monthly kWh. Turn the compass above to compare roof directions.</p>
     </div>
     <p class="sor-disclosure">The instant dial uses a simplified sun-path and diffuse-light model calibrated to broad indicative Irish annual yields. It is not a site-specific forecast. Choose <strong>Open PVGIS calculator</strong> to check the estimate using the <a href="https://photovoltaic-geographic-information-system.ec.europa.eu/" rel="noopener" target="_blank">European Commission's official PVGIS website ↗</a>. PVGIS opens separately: enter your exact location, roof pitch, system size and orientation, checking its azimuth convention. Compound does not send your settings to PVGIS. The simplified model on this page does not measure trees, chimneys, roof obstructions or future weather.</p>
   </section>
