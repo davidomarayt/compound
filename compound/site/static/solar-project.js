@@ -164,11 +164,12 @@
       mark('Other requirements',answer('notes'))
 
     );
-    if(snapshot && show('azimuth')===String(snapshot.azimuth) && show('pitch')===String(snapshot.pitch)){
+    if(get('faces').value!=='2' && snapshot && show('azimuth')===String(snapshot.azimuth) && show('pitch')===String(snapshot.pitch)){
       out.push('Indicative compass model (not installer-certified): '+
         (Number.isFinite(snapshot.annual)?Math.round(snapshot.annual).toLocaleString('en-IE')+' kWh/year':'not available')+
         ' at '+snapshot.azimuth+'° and '+snapshot.pitch+'° pitch.');
     }
+    if(get('faces').value==='2')out.push('Two roof faces selected: individual face yields cannot be added without allocating the total proposed kWp between faces. Installer to model the combined layout.');
     out.push('','HOMEOWNER CONTACT / REQUEST PREFERENCES',
       mark('Number of installers requested',answer('installerCount')),
       mark('Contact method',answer('contactMethod')),
