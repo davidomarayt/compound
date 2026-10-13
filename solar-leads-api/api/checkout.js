@@ -1,10 +1,10 @@
 import {json,ready,safeHeaders,allowedOrigin,paymentEnabled,readJson,
-  authenticatedInstaller,rpc,stripe,options,token} from '../lib/core.js';
+  authenticatedInstaller,rpc,stripe,options,token,databaseSecretReady} from '../lib/core.js';
 export function OPTIONS(request){return options(request);}
 export async function POST(request){
  const headers=safeHeaders(request);
  if(!allowedOrigin(request))return json({ok:false,message:'Not allowed'},403,headers);
- if(!paymentEnabled()||!ready('SUPABASE_URL','SUPABASE_SERVICE_ROLE_KEY',
+ if(!paymentEnabled()||!databaseSecretReady()||!ready(
       'SUPABASE_PUBLISHABLE_KEY','STRIPE_SECRET_KEY','STRIPE_WEBHOOK_SECRET'))
    return json({ok:false,message:'Purchasing has not opened yet'},503,headers);
  let orderId=null;
