@@ -243,13 +243,13 @@
     if (!/^\S+@\S+\.\S+$/.test(email)) {status(find('message'),'Enter a valid company email address.','error');return;}
     find('send').disabled=true;
     requestedEmail=email;
-    const {error}=await supabase.auth.signInWithOtp({email,options:{shouldCreateUser:false}});
+    const {error}=await supabase.auth.signInWithOtp({email,options:{shouldCreateUser:false,emailRedirectTo:window.location.origin+'/solar/installer-portal/'}});
     find('send').disabled=false;
     if (error) {status(find('message'),'Could not send a code. Please try again or contact Compound Solar.','error');return;}
     find('email-form').hidden=true;
     find('code-form').hidden=false;
     find('code').focus();
-    status(find('message'),'If this email has an approved account, a login code is on its way.','success');
+    status(find('message'),'If this email is approved, a secure sign-in email is on its way. Open its link or enter the six-digit code if one is provided.','success');
   });
   find('code-form').addEventListener('submit',async e=>{
     e.preventDefault();
