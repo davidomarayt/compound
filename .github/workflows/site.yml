@@ -86,6 +86,22 @@ jobs:
           grep -Fq '/solar/compare-quotes/' "$page"
           grep -Fq '/wealth/east-west-facing-solar-panels-ireland/' public/solar/index.html
           test -s public/static/images/evergreen/east-west-facing-solar-panels-ireland.jpg
+      - name: Verify winter solar evergreen and pinned cover
+        shell: bash
+        run: |
+          set -euo pipefail
+          page=public/wealth/solar-panels-winter-ireland/index.html
+          test -s "$page"
+          grep -Fq 'https://compound.ie/wealth/solar-panels-winter-ireland/' "$page"
+          grep -Fq 'Do Solar Panels Work in Winter in Ireland?' "$page"
+          grep -Fq 'Electricity produced per month' "$page"
+          test "$(grep -o 'class="chart-svg"' "$page" | wc -l)" -ge 2
+          grep -Fq 'Monthly' "$page"
+          grep -Fq '/solar-payback-calculator/' "$page"
+          grep -Fq '/solar/compare-quotes/' "$page"
+          grep -Fq '/wealth/solar-panels-winter-ireland/' public/solar/index.html
+          grep -Fq 'solar-panels-winter-ireland.jpg' "$page"
+          test -s public/static/images/evergreen/solar-panels-winter-ireland.jpg
       - name: Verify Solar hub pages and client script
         shell: bash
         run: |
