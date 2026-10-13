@@ -1,5 +1,6 @@
 ---
 title: "Insurance Tools & Guides Ireland"
+canonical_path: /insurance/
 ---
 <div class="ins-hub">
   <header class="ins-hero">
