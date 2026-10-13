@@ -36,5 +36,18 @@
 - [ ] Compare 14-day and 28-day post-change query-page CTR, clicks and position against pre-change data once reporting matures.
 - [ ] Research an original, non-overlapping solar roof orientation guide (east/west vs south) with verified SEAI/PVGIS data and a pinned hero image before publishing.
 - [x] Confirm latest GitHub Pages build and deployment succeeded (commit 23a83b377f530308c732bedd0761c39810135cb4); CI regression tests passed.
-- [ ] Confirm completed post-deploy live URL and mobile audit checks for the current build; inspect any failures before treating every page as verified.
+- [x] Verified GitHub Pages build, live URL checks, and solar mobile audit on prior SEO deployment (2a097fed738298c3cbd584caa06ed59953ee5913). Re-check after the new roof-orientation article and updated QA workflow deploy.
 
+
+## New solar orientation evergreen — 13 October 2026
+
+- [x] Check topic index/inventory; an east-versus-west roof-specific guide was not present.
+- [x] Publish SEAI/JRC-grounded east- vs west-facing guide with irradiation visual, example economics, PVGIS instructions, approved Pexels image and canonical internal links.
+- [x] Add specialist guide to Solar Hub and relevant evergreen solar pages.
+- [x] Add automated tests and live build gate for the new guide, graph and pinned roof photo.
+- [ ] Confirm the latest GitHub Pages deployment passes all checks, including the new photo. Check latest run at https://github.com/davidomarayt/compound/actions/workflows/site.yml.
+- [ ] Re-test mobile render and hero/social image on the live specialist page.
+
+## Performance follow-up
+
+- [ ] Lighthouse: mortgage-calculator recorded 940ms TBT versus 350ms threshold in CI (13 Oct). Configuration updated to take three runs without relaxing the 350ms limit; determine whether this is noise or a persistent regression. If persistent, profile main-thread tasks and fix actual bottlenecks.
