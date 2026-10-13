@@ -10,6 +10,7 @@ Let a homeowner explore Compound's solar tools anonymously, optionally build one
 1. Research (articles → roof orientation → payback → quote brief). No account required for public tools.
 2. Fill a progressive four-section project brief. Essential fields are clearly labelled; all specialist details are optional with "not sure".
 3. Preview a homeowner-editable technical summary, flag unknowns and estimate readiness. Copy/print locally without transmitting PII.
+4. **Future, not live:** private homeowner account, verified phone/email, verified eligible installers, and explicit homeowner selection of 1, 2 or 3 recipient companies. No photograph collection.
 5. **Future:** record per-provider authorisation; provider pays **only after** matched approval and valid lead verification. Server releases personal contact details to each paid, authorised installer with short-lived access and full audit logs. Provider feedback and homeowner controls complete the loop.
 
 ## Intake schema: field names and qualification
@@ -37,6 +38,7 @@ Design and preferences:
 - `time_to_quote` and best method (phone/email) at recipient consent step only.
 
 ## Disclosure + access classes
+- Third-party ads and analytics must never receive personal form fields, contact details, full URLs containing identifiers, Eircodes, MPRNs, or person-linked project IDs.
 - Anonymous installer teaser: county/approximate area (no pinpointing for sparsely populated districts), dwelling class, approximate PV size, broad roof orientation and shading, intent/timing, safe non-unique project attributes, date qualified. Suppress rare combinations that enable re-identification.
 - Selected paying installer: full homeowner-authorised project brief and contact details strictly for that quote request, released to that named installer only after paid access is approved.
 - Internal Compound: verified access limited to fulfilment and fraud prevention.
