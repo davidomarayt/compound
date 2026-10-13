@@ -4468,6 +4468,12 @@
         "kind": "Information / policy page"
       },
       {
+        "title": "Installer Portal | Compound Solar",
+        "url": "/solar-installer-portal/",
+        "source": "content/pages/solar-installer-portal.md",
+        "kind": "Information / policy page"
+      },
+      {
         "title": "Insurance Tools & Guides Ireland",
         "url": "/insurance/",
         "source": "content/pages/insurance.md",
