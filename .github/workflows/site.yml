@@ -49,6 +49,7 @@ jobs:
           set -euo pipefail
           node --check compound/site/static/solar-orientation.js
           node --check compound/site/static/solar-project.js
+          node --check compound/site/static/solar-lead-intake.js
           grep -Fq 'data-solar-project' public/solar/get-quotes/index.html
           grep -Fq 'solar-project.js?v=2' public/solar/get-quotes/index.html
           grep -Fq 'solar-project.css?v=2' public/solar/get-quotes/index.html
