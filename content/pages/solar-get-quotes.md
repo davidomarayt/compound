@@ -97,7 +97,7 @@ meta_description: "Build a detailed solar installation quote brief in Ireland: r
         <div class="sol-fields">
           <label>Preferred number of installers <select data-sp="installerCount"><option value="3">Up to 3 separate installers</option><option value="2">Up to 2 separate installers</option><option value="1">One installer only</option></select></label>
           <label>Preferred contact method <select data-sp="contactMethod"><option>Email</option><option>Phone</option><option>Either</option></select></label>
-          <label>Your name (optional, stays in this tab) <input data-sp="name" type="text" maxlength="100" autocomplete="name" placeholder="Included only if you copy the brief"></label>
+          <label>Your name (optional; stays in this browser tab) <input data-sp="name" type="text" maxlength="100" autocomplete="name" placeholder="Included only if you copy the brief"></label>
           <label>Your email (optional) <input data-sp="email" type="email" maxlength="180" autocomplete="email" placeholder="you@example.ie"></label>
           <label>Your phone (optional) <input data-sp="phone" type="tel" maxlength="35" autocomplete="tel" placeholder="+353…"></label>
           <label>Full Eircode (optional, private) <input data-sp="eircode" type="text" maxlength="12" autocomplete="postal-code" placeholder="Only disclose directly to your chosen installer"></label>
@@ -112,7 +112,7 @@ meta_description: "Build a detailed solar installation quote brief in Ireland: r
     </aside>
   </section>
   <section class="sol-project-output" aria-labelledby="sol-project-output-heading">
-    <div class="sol-project-step-head"><span>YOUR REUSABLE QUOTE BRIEF</span><h2 id="sol-project-output-heading">Send the same project to every installer.</h2><p>Review the draft below, copy it and send it yourself to SEAI-registered companies. No form submission or automatic lead sharing takes place.</p></div>
+    <div class="sol-project-step-head"><span>YOUR REUSABLE QUOTE BRIEF</span><h2 id="sol-project-output-heading">Send the same project to every installer.</h2><p>Review the draft below, copy it and send it yourself to SEAI-registered companies. No form submission or automatic lead sharing takes place. This page does not load third-party advertising.</p></div>
     <textarea data-sb-output readonly rows="26" aria-label="Copy-ready solar installation project summary"></textarea>
     <div class="sol-project-output-actions"><button type="button" class="sol-btn" data-sb-copy>Copy my project brief</button><span role="status" aria-live="polite" data-sb-copy-status></span></div>
     <p class="sol-method">Some information might require a site survey or an electrician. Ask for itemised installed prices, panel and inverter models, realistic yield assumptions, battery capacity, scaffolding, grant handling, warranties, payment terms, exclusions and post-installation certification.</p>
