@@ -3,7 +3,7 @@ title: "Installer Portal | Compound Solar"
 canonical_path: /solar/installer-portal/
 meta_description: "Secure Compound Solar portal for verified installation businesses to access private solar opportunities and purchased introductions."
 ---
-<div class="sip" data-installer-portal data-supabase-url="" data-supabase-publishable-key="" data-checkout-api-url="">
+<div class="sip" data-installer-portal data-supabase-url="https://guifxtijipkpvjjyhatq.supabase.co" data-supabase-publishable-key="sb_publishable_ve357dvU1yKXIkMkEz5FTA_bg1BBvjk" data-checkout-api-url="">
   <div class="sip-head">
     <div>
       <a class="sip-back" href="/solar/">← Compound Solar</a>
