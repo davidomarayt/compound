@@ -1,7 +1,7 @@
 {
   "ci": {
     "collect": {
-      "startServerCommand": "python -m http.server 4173 --directory public",
+      "startServerCommand": "python -u -m http.server 4173 --directory public",
       "startServerReadyPattern": "Serving HTTP",
       "url": [
         "http://127.0.0.1:4173/",
@@ -11,7 +11,7 @@
         "http://127.0.0.1:4173/wealth/buying-a-home-in-ireland/",
         "http://127.0.0.1:4173/mortgage-calculator/"
       ],
-      "numberOfRuns": 1,
+      "numberOfRuns": 3,
       "settings": {
         "maxWaitForLoad": 15000
       }
