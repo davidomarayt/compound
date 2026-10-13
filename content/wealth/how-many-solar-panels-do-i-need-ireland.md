@@ -190,7 +190,7 @@ But this stronger case requires a real load that overlaps generation. An EV whic
 
 Annual kWh figures hide a substantial mismatch between production and demand.
 
-SEAI says approximately **75% of annual solar production happens from May to September**. Winter heating and evening lighting demand can be greatest during the months when solar contributes least. More panels help generate more winter units, but **an 8kWp system does not mean you are independent of the grid in December**.
+SEAI says approximately **75% of annual solar production happens from May to September**. Winter heating and evening lighting demand can be greatest during the months when solar contributes least. More panels help generate more winter units, but **an 8kWp system does not mean you are independent of the grid in December**. For monthly output for 4, 6 and 8 kWp, see our [winter solar generation and bills guide](/wealth/solar-panels-winter-ireland/). It keeps the SEAI general rule of thumb separate from a particular PVGIS-derived Dublin model.
 
 This is especially important if someone tells you that a 6kWp array generating 5,100kWh a year will simply cancel a 5,100kWh annual bill. It will not: some generation occurs when you cannot use it, and grid imports remain necessary at other times.
 
