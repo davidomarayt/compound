@@ -135,8 +135,26 @@
     profile=r.months;
     drawChart(profile);
   }
+  function emitToProject(source){
+    if(!root.hasAttribute('data-orientation-embedded'))return;
+    var result=estimate();
+    root.dispatchEvent(new CustomEvent('compound:solar:orientation',{bubbles:true,detail:{
+      azimuth:angle,pitch:val('pitch'),size:val('size'),shade:val('shade'),
+      annual:result.annual,source:source||'direction'
+    }}));
+  }
+  // The project dashboard can swap roof faces without navigating away.
+  root.addEventListener('compound:solar:load',function(event){
+    if(!root.hasAttribute('data-orientation-embedded'))return;
+    var data=event.detail||{};
+    if(Number.isFinite(data.azimuth))angle=normal(data.azimuth);
+    if(Number.isFinite(data.pitch)&&data.pitch>=0&&data.pitch<=90)q('pitch').value=String(data.pitch);
+    if(Number.isFinite(data.size)&&data.size>0&&data.size<=30)q('size').value=String(data.size);
+    official=null;q('status').textContent='';render();
+  });
   function changeAngle(n,track){
     angle=normal(n);official=null; q('status').textContent='';render();
+    emitToProject('direction');
     if(track)trackUse();
   }
   function trackUse(){try{if(localStorage.getItem('compound_analytics_consent')==='granted'&&window.gtag&&!root.dataset.sorTracked){root.dataset.sorTracked='1';window.gtag('event','solar_orientation_explorer_used');}}catch(_){ }}
@@ -152,8 +170,8 @@
   q('slider').addEventListener('input',function(){changeAngle(Number(this.value),true);});
   root.querySelectorAll('[data-or-preset]').forEach(function(b){b.addEventListener('click',function(){changeAngle(Number(b.getAttribute('data-or-preset')),true);});});
   ['place','size','pitch','shade'].forEach(function(key){
-    q(key).addEventListener('input',function(){official=null;q('status').textContent='';render();trackUse();});
-    q(key).addEventListener('change',function(){official=null;q('status').textContent='';render();});
+    q(key).addEventListener('input',function(){official=null;q('status').textContent='';render();emitToProject(key);trackUse();});
+    q(key).addEventListener('change',function(){official=null;q('status').textContent='';render();emitToProject(key);});
   });
   q('request').addEventListener('click',function(){
     q('status').textContent='PVGIS opens separately. Enter your location, kWp, pitch and panel direction, checking the azimuth convention in PVGIS.';
