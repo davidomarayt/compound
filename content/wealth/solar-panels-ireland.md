@@ -385,6 +385,8 @@ That can sometimes align better with household demand:
 
 The financially best orientation therefore depends partly on **when you use electricity**, not just total annual generation.
 
+For a worked SEAI-based comparison and the proper PVGIS azimuth settings, see **[East- and West-Facing Solar Panels in Ireland](/wealth/east-west-facing-solar-panels-ireland/)**. It explains irradiation versus PV generation and what to ask installers to model.
+
 A good installer should model the actual roof rather than relying on a generic rule.
 
 ## Do you need a battery?
