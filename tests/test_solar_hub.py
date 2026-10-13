@@ -162,3 +162,25 @@ def test_tariff_result_cards_are_readable_on_mobile():
     assert "white-space:nowrap;" in css
     assert 'setBetter(gap<.005?null:' in js
     assert 'unreadable result card' in audit
+
+
+def test_solar_quote_project_brief_is_private_and_comprehensive():
+    page = (ROOT / "content/pages/solar-get-quotes.md").read_text(encoding="utf-8")
+    js = (ROOT / "compound/site/static/solar-project.js").read_text(encoding="utf-8")
+    template = (ROOT / "compound/site/templates/page.html").read_text(encoding="utf-8")
+    compass = (ROOT / "compound/site/static/solar-orientation.js").read_text(encoding="utf-8")
+    assert 'data-solar-project' in page and 'data-solar-brief' in page
+    assert 'data-sb-output' in page and 'data-sb-copy' in page
+    for field in ("county", "role", "building", "timing", "azimuth", "pitch", "faces",
+                  "shade", "roofCondition", "material", "demand", "phase", "smartMeter",
+                  "kwp", "battery", "grant", "installerCount", "email", "phone", "eircode"):
+        assert f'data-sp="{field}"' in page
+    assert "Compound does not receive, save, sell or send" in page
+    assert "not consent for data sharing" in page
+    assert 'solar-project.css?v=1' in template and 'solar-project.js?v=1' in template
+    assert "sessionStorage.getItem('compound_solar_project_compass_v1')" in js
+    assert "sessionStorage.setItem('compound_solar_project_compass_v1'" in compass
+    # No remote submission or local persistence of contact data.
+    assert "fetch(" not in js and "localStorage.setItem" not in js
+    assert '<form' not in page
+    assert '/solar/roof-direction/' in page and '/solar/compare-quotes/' in page
