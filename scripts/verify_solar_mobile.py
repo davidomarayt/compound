@@ -160,6 +160,26 @@ def main() -> None:
                                 if before != "100%" or not south_yield.strip() or east_percent == "100%" or east_yield == south_yield:
                                     failures.append(f"{width}px {path}: direction change did not update estimated output")
                                 page.locator('[data-or-preset="180"]').click()
+                                # A Samsung Internet screenshot exposed almost-black bars in night mode.
+                                # The new chart uses a true-color canvas with a readable month readout.
+                                canvas = page.locator('[data-or="chart"]')
+                                month = page.locator('[data-or="chart-amount"]')
+                                if not canvas.is_visible() or "kWh" not in month.inner_text():
+                                    failures.append(f"{width}px {path}: chart canvas or kWh reading missing")
+                                else:
+                                    pixel_test = canvas.evaluate("""el => {
+                                      const c=el.getContext('2d'),w=el.width,h=el.height;
+                                      if(!c || w<200 || h<100)return {error:'canvas not painted'};
+                                      const d=c.getImageData(0,0,w,h).data;let luminous=0,green=0;
+                                      for(let i=0;i<d.length;i+=40){
+                                        const r=d[i],g=d[i+1],b=d[i+2];
+                                        if(g>160 && r>80)luminous++;
+                                        if(g>125 && g>r*1.1 && g>b*.9)green++;
+                                      }
+                                      return {luminous,green};
+                                    }""")
+                                    if pixel_test.get('error') or pixel_test.get('luminous',0)<100 or pixel_test.get('green',0)<100:
+                                        failures.append(f"{width}px {path}: low-contrast or blank canvas {pixel_test}")
                             if errors:
                                 failures.append(f"{width}px {path}: JS exception: {errors[-1][:180]}")
                                 errors.clear()
