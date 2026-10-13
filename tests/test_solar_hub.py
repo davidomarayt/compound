@@ -201,7 +201,7 @@ def test_solar_project_uses_inline_compass_no_photograph_request():
     for banned in ('data-sp="photoRoof"', 'data-sp="photoShade"', 'data-sp="photoBoard"',
                    'data-sp="photoRoute"', 'sol-project-photo-guide', 'upload photos',
                    'external roof photographs'):
-        assert banned not in page.lower()
+        assert banned.lower() not in page.lower()
     assert "AVAILABLE SUPPORTING IMAGES" not in js
     assert "photoRoof" not in js
     assert "compound:solar:orientation" in js and "compound:solar:load" in js
