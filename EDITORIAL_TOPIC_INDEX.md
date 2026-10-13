@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 162 published articles and guides, 64 tools,
+**Included:** 163 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -125,6 +125,7 @@ For the complete register (including 510+ company profiles), open
 - [Planning Objections & Submissions in Ireland: How to Comment on an Application](https://compound.ie/wealth/planning-objections-submissions-ireland/) — **Wealth**
 - [Planning Permission in Ireland: The Complete Guide](https://compound.ie/wealth/planning-permission-ireland/) — **Wealth**
 - [Pregnancy week by week in Ireland: GP, hospital and scan schedule](https://compound.ie/health/pregnancy-week-by-week-ireland-appointments/) — **Health**
+- [PrepayPower Freezes Winter Energy Prices — But Are Customers Getting a Good Deal?](https://compound.ie/news/prepaypower-price-freeze-winter-2026-2027/) — **Wealth**
 - [Prescription opioid use rises more than 10% under Ireland's medical card scheme](https://compound.ie/news/prescription-opioid-use-ireland-gms-2026/) — **Health**
 - [Probate Costs & Fees in Ireland: What Does It Actually Cost?](https://compound.ie/wealth/probate-costs-fees-ireland/) — **Wealth**
 - [Probate in Ireland: The Complete Guide](https://compound.ie/wealth/probate-ireland/) — **Wealth**
