@@ -1,6 +1,6 @@
 # Compound Solar — private lead marketplace backend
 
-**Implementation status (13 October 2026):** Dedicated **Compound Life Ltd / Compound Solar** Supabase project created in Ireland (`guifxtijipkpvjjyhatq`); base schema and transactional SQL functions **applied and permission-checked**. Synthetic SKU/email verification was executed inside a rollback transaction with no records retained. Vercel API functions are **not deployed**, and homeowner intake/Stripe remain OFF; no live PII or payments.\n
+**Implementation status (13 October 2026):** Isolated Compound Life Ltd / Compound Solar Supabase project in Ireland (`guifxtijipkpvjjyhatq`) has the initial secure schema and transactional SKU / payment release functions installed. Vercel **compound-solar-api** project is deployed from `solar-leads-api/` in Dublin, and the installer portal uses Supabase's public publishable key. Homeowner form submission is coded but hidden behind an OFF flag. Both API launch flags remain OFF, and live Stripe charges require a second separate approval switch. **No real customers, installer accounts, payments or homeowner PII are stored.**
 This is a standalone Vercel Functions root, separate from the existing `sponsor-api/` and its abandoned county-sponsorship model.
 
 ## Where everything lives
@@ -19,11 +19,11 @@ This is a standalone Vercel Functions root, separate from the existing `sponsor-
 
 1. **Completed:** Dedicated Compound Solar project in `eu-west-1`, isolated from MyClinician and PlotMap.
 2. **Completed (first pass):** Base SQL and `schema-functions.sql` applied on 13 October 2026; all tables have RLS and no administrative RPC can be executed by `anon` or `authenticated`. All privacy-schema tables have intentionally no client policies. Full two-installer integration testing still required.
-3. Establish a new Vercel project rooted at `solar-leads-api/`, configure all variables in `.env.example` using Vercel secret storage, and choose a trusted API URL. The Vercel team/project must be accessible first.
-4. Set Supabase Auth Site URL and redirect allowlist to Compound and its private installer portal, configure the OTP email template to send `{{ .Token }}` rather than a Magic Link, configure SMTP, then manually approve two test installers with different service counties. Set `shouldCreateUser:false` in the client (already done).
-5. Wire nonsecret `SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY` into the installer portal's `data-` attributes and checkout endpoint URL only after verifying CORS, OTP and RLS. Never paste `service_role`, Stripe secret or webhook secrets into public static files.
-6. Configure Stripe **test** secret and `checkout.session.completed` / `checkout.session.expired` signing secret; simulate successful payment, retry/replay, session expiry, withdrawals and two installers racing for one slot. The attached Stripe account is **live only** at present; do not use it for checkout testing.
-7. Configure a domain-verified Resend sender and Cloudflare Turnstile for homeowner intake; review the exact single unticked consent and link to the privacy notice. Connect the existing browser-local form to the API only after those checks, with intake gate still OFF until ready.
+3. **Completed (deployment only):** Vercel `compound-solar-api` is deployed from `solar-leads-api/`. Public Supabase URL and publishable key are configured as Vercel environment variables. **Pending:** Add the elevated `SUPABASE_SECRET_KEY` (modern `sb_secret_` key) directly through Vercel's secret settings. Never paste it into GitHub, ChatGPT or public HTML.
+4. **Pending UI configuration:** Set Supabase Auth Site URL and redirect allowlist to `https://compound.ie/solar/installer-portal/`; configure the email template to send the six-digit `{{ .Token }}` code (or allow a magic-link fallback), set verified SMTP for reliable sign-ins, then manually approve two test installer accounts with different counties. `shouldCreateUser:false` is already enforced in the portal.
+5. **Partially complete:** Installer portal is now connected to Supabase with the non-secret URL and publishable key; real login requires the Supabase Auth settings and approved test installer accounts. Checkout API URL remains deliberately blank until server-side Stripe test flow has passed.
+6. **Pending:** Configure Stripe *test-mode* `sk_test_...` secret and webhook signing secret directly in Vercel; test payment completion, duplicate/replayed events, expiry, withdrawal and simultaneous buyers. The connected Stripe app currently exposes **live mode only**; no real Stripe charges have been attempted.
+7. **Staged, disabled:** The homeowner form now contains an explicit unticked sharing agreement and opt-in for 1, 2 or 3 installers, and a gated adapter (`solar-lead-intake.js`) for the live API. It does **not send** personal information while `data-solar-leads-active="false"`. Still requires a verified Resend sending domain, Turnstile site key/secret and an accurate final privacy notice.
 8. Document controller roles, installer terms, minimal data retention/erasure process, data processor terms, VAT/tax treatment, incident contact and proportional Irish GDPR review. Test no PII in public assets, analytics, logs, Stripe emails or unpurchased dashboards.
 9. Enable `SOLAR_LEADS_INTAKE_ENABLED=true` only after intake and verification work end-to-end. Enable `SOLAR_LEADS_PAYMENTS_ENABLED=true` only after separately testing RLS, refund, webhook, concurrency, emails and invoicing.
 10. Add secure routine cleanup for unverified and expired homeowner contacts and backups under the agreed retention policy before live collection. Stale listings already fail closed for selling, but **expiration alone does not purge PII**.
@@ -54,7 +54,7 @@ GitHub workflow `solar leads api` runs syntax, unit and SQL presence tests. This
 ## Dependencies / authorisation blockers
 
 - **Resolved:** Compound Life Ltd Supabase organisation and Compound Solar project are connected and initial schema is applied.
-- **Pending:** Vercel integration still lists FairPath and MyClinician but returns no selectable teams. Create/authorise a new Compound Solar API deployment rooted at `solar-leads-api/` before adding its secret configuration.
-- Connected Stripe account is **Compound Life Ltd, live mode**, with no test-mode account visible. No live charges should be attempted.
+- **Resolved:** Vercel project `compound-solar-api` is created and deployed in Dublin with the correct GitHub root. Elevated credentials, Supabase Auth OTP template and Stripe test mode are **not configured yet**.
+- Connected Stripe account is **Compound Life Ltd, live mode**, with no test-mode account visible; use its Dashboard's test environment and a `sk_test_` key, never `sk_live_` for pilot tests.
 
 Everything fails closed until the owner approves the service account/project and the correct deployment and secrets exist.
