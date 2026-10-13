@@ -192,11 +192,12 @@ create or replace function public.solar_cancel_reservation(
 ) returns jsonb language plpgsql security definer set search_path = ''
 as $$
 declare v_order public.solar_lead_purchases%rowtype;
+        v_project_id uuid;
 begin
-  select * into v_order from public.solar_lead_purchases
-     where id=p_order_id for update;
+  select project_id into v_project_id from public.solar_lead_purchases where id=p_order_id;
   if not found then return jsonb_build_object('cancelled',false); end if;
-  perform 1 from public.solar_lead_teasers where id=v_order.project_id for update;
+  perform 1 from public.solar_lead_teasers where id=v_project_id for update;
+  select * into v_order from public.solar_lead_purchases where id=p_order_id for update;
   if v_order.status<>'reserved' then return jsonb_build_object('cancelled',false); end if;
   update public.solar_lead_purchases set status='cancelled' where id=p_order_id;
   update public.solar_lead_teasers set reserved_count=reserved_count-1
@@ -215,14 +216,16 @@ as $$
 declare
   v_order public.solar_lead_purchases%rowtype;
   v_teaser public.solar_lead_teasers%rowtype;
+  v_project_id uuid;
 begin
+  select project_id into v_project_id from public.solar_lead_purchases where id=p_order_id;
+  if not found then return jsonb_build_object('released',false,'reason','order_not_found'); end if;
+  select * into v_teaser from public.solar_lead_teasers
+    where id=v_project_id for update;
   select * into v_order from public.solar_lead_purchases
     where id=p_order_id for update;
   if not found or v_order.stripe_checkout_session_id is distinct from p_checkout_id
-     then return jsonb_build_object('released',false,'reason','order_not_found'); end if;
-
-  select * into v_teaser from public.solar_lead_teasers
-    where id=v_order.project_id for update;
+    then return jsonb_build_object('released',false,'reason','order_not_found'); end if;
 
   if v_order.status='access_granted' then
     return jsonb_build_object('released',true,'already_processed',true,'project_id',v_order.project_id);
