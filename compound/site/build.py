@@ -1447,7 +1447,7 @@ def build_site(settings: Settings) -> dict:
     for pg in pages:
         _write(out / pg.url.strip("/") / "index.html", env.get_template("page.html").render(
             page=pg, title=pg.title,
-            ads_allowed=(pg.slug not in {"solar-for-installers", "solar-get-quotes"}),  # No ads on sponsor registration or homeowner contact-entry form.
+            ads_allowed=(pg.slug not in {"solar-for-installers", "solar-get-quotes", "solar-installer-portal"}),  # No ads on sponsor registration or homeowner contact-entry form.
             ads_configured=bool(load_site_config(settings.content_dir)["adsense"]["client"]) if pg.slug == "solar" or pg.slug.startswith("solar-") else False))
 
     if tools:
@@ -1776,7 +1776,7 @@ def build_site(settings: Settings) -> dict:
         (settings.site_base_url + a.url, (a.reviewed or a.date).isoformat())
         for a in articles
     )
-    sitemap_entries.extend((settings.site_base_url + pg.url, "2026-10-11" if pg.slug == "solar" or pg.slug.startswith("solar-") else None) for pg in pages)
+    sitemap_entries.extend((settings.site_base_url + pg.url, "2026-10-11" if pg.slug == "solar" or pg.slug.startswith("solar-") else None) for pg in pages if pg.slug != "solar-installer-portal")
 
     # Canonical stock hub URLs only; old earnings-company aliases are noindex.
     sitemap_entries.extend(
