@@ -3,7 +3,7 @@ title: "Solar Project Builder Ireland: Your Installation Quote Brief"
 canonical_path: /solar/get-quotes/
 meta_description: "Build a detailed solar installation quote brief in Ireland: roof orientation, pitch, shading, electricity use, battery preferences and budget. Private, free, no account."
 ---
-<div class="sol-shell sol-subpage sol-project" data-solar-brief data-solar-project>
+<div class="sol-shell sol-subpage sol-project" data-solar-brief data-solar-project data-solar-leads-active="false" data-solar-leads-api="https://compound-solar-api.vercel.app" data-turnstile-sitekey="">
   <nav class="sol-subcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/solar/">Solar</a> / <span aria-current="page">Solar project brief</span></nav>
   <header class="sol-project-hero">
     <div><p class="sol-ey">COMPOUND SOLAR / PROJECT BUILDER</p><h1>One solar project. <em>Clearer quotes.</em></h1><p>Build a useful installation brief once, rather than starting again with every provider. Fill in what you know; choose <strong>Not sure</strong> wherever technical details need an installer to check.</p>
@@ -174,13 +174,24 @@ meta_description: "Build a detailed solar installation quote brief in Ireland: r
       <section class="sol-project-step" id="sol-project-contact" aria-labelledby="sol-project-contact-heading">
         <div class="sol-project-step-head"><span>05 / HOMEOWNER CONTACT PREFERENCES</span><h2 id="sol-project-contact-heading">Decide how you'd like quotations.</h2><p>These fields are for your own copy-ready message. Nothing is submitted to Compound and no company is automatically contacted.</p></div>
         <div class="sol-fields">
-          <label>Preferred number of installers <select data-sp="installerCount"><option value="3">Up to 3 separate installers</option><option value="2">Up to 2 separate installers</option><option value="1">One installer only</option></select></label>
+          <label>Preferred number of installers <select data-sp="installerCount"><option value="" selected>Select the number of quotes</option><option value="1">One installer only</option><option value="2">Up to 2 separate installers</option><option value="3">Up to 3 separate installers</option></select></label>
           <label>Preferred contact method <select data-sp="contactMethod"><option>Email</option><option>Phone</option><option>Either</option></select></label>
           <label>Your name (optional; stays in this browser tab) <input data-sp="name" type="text" maxlength="100" autocomplete="name" placeholder="Included only if you copy the brief"></label>
           <label>Your email (optional) <input data-sp="email" type="email" maxlength="180" autocomplete="email" placeholder="you@example.ie"></label>
           <label>Your phone (optional) <input data-sp="phone" type="tel" maxlength="35" autocomplete="tel" placeholder="+353…"></label>
           <label>Full Eircode (optional, private) <input data-sp="eircode" type="text" maxlength="12" autocomplete="postal-code" placeholder="Only disclose directly to your chosen installer"></label>
         </div>
+        <section data-sp-live-request hidden class="sol-project-disclosure" aria-labelledby="solar-quote-request-heading">
+          <h3 id="solar-quote-request-heading">Request your solar installation quotes</h3>
+          <p>Your name and private project details will only be made available to up to the number of installers you select. Approved installers first see a limited, non-identifying county-level project preview.</p>
+          <form data-sp-quote-form>
+            <label class="sol-project-wide-label"><input type="checkbox" data-sp-quote-consent required> I request up to <strong data-sp-sharing-count>the number you choose</strong> solar installation quotations. I understand that a limited project preview may be shown to approved installers, and that my name, contact details and completed project brief may be shared with up to that number of approved installers so they can contact me about my quotes. Installers may pay Compound.ie for an introduction. I can stop future introductions by emailing david@compound.ie. I have read the <a href="/privacy/">privacy notice</a>.</label>
+            <div data-sp-turnstile aria-label="Spam verification"></div>
+            <button class="sol-btn" data-sp-quote-submit type="submit" disabled>Submit secure quote request</button>
+            <p data-sp-quote-status role="status" aria-live="polite"></p>
+          </form>
+          <p>Contact details are never shown in the anonymous listing. This is only for the requested quotes, not newsletter subscriptions or unrelated marketing.</p>
+        </section>
         <p class="sol-project-help"><strong>How future quote requests will work:</strong> You will actively choose 1, 2 or 3 quotes and agree to a clear sharing notice before submitting. A limited preview (such as county, rough area and broad solar requirements) may then be visible to approved installers. Your name and contact details will only be shared with up to your chosen number of participating installers for the quotes you request. We will tell you which companies receive your details, and you can stop further sharing. <strong>This tool does not currently submit or share your details.</strong></p>
       </section>
     </div>
