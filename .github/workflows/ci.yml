@@ -1,5 +1,9 @@
 name: ci
 on: [push, pull_request]
+# Cancel redundant test runs when multiple content improvements land on the same branch.
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   test:
     runs-on: ubuntu-latest
