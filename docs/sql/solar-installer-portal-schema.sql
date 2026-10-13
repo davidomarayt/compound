@@ -101,6 +101,13 @@ revoke all on public.solar_installer_accounts, public.solar_lead_teasers,
   public.solar_lead_purchases, public.solar_lead_details from anon, authenticated;
 grant select on public.solar_installer_accounts, public.solar_lead_teasers,
   public.solar_lead_purchases, public.solar_lead_details to authenticated;
+-- The dedicated Vercel API uses an elevated server-only secret key.
+-- Explicit GRANTs are needed on projects with automatic table exposure disabled.
+-- Browser users retain SELECT-only access filtered through RLS.
+grant select, insert, update, delete
+  on table public.solar_installer_accounts, public.solar_lead_teasers,
+           public.solar_lead_purchases, public.solar_lead_details
+  to service_role;
 
 create policy "installer can read own profile"
   on public.solar_installer_accounts for select to authenticated
