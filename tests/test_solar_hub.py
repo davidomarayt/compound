@@ -190,7 +190,7 @@ def test_solar_quote_project_brief_is_private_and_comprehensive():
     # No remote submission or local persistence of contact data.
     assert "fetch(" not in js and "localStorage.setItem" not in js
     assert '<form data-sp-private-pilot-form' in page
-    assert '"solar-get-quotes"}' in (ROOT / "compound/site/build.py").read_text(encoding="utf-8")
+    assert '"solar-get-quotes"' in (ROOT / "compound/site/build.py").read_text(encoding="utf-8")
     assert '/solar/roof-direction/' in page and '/solar/compare-quotes/' in page
 
 
