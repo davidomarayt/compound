@@ -1,0 +1,8 @@
+{
+  "name": "compound-solar-leads-api",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "engines": {"node": ">=22"},
+  "scripts": {"test": "node --test tests/*.test.js", "check": "node --check lib/core.js && node --check api/intake.js && node --check api/verify.js && node --check api/checkout.js && node --check api/webhook.js"}
+}
