@@ -177,7 +177,7 @@ def test_solar_quote_project_brief_is_private_and_comprehensive():
         assert f'data-sp="{field}"' in page
     assert "Compound does not receive, save, sell or send" in page
     assert "not consent for data sharing" in page
-    assert 'solar-project.css?v=1' in template and 'solar-project.js?v=1' in template
+    assert 'solar-project.css?v=2' in template and 'solar-project.js?v=2' in template
     assert "sessionStorage.getItem('compound_solar_project_compass_v1')" in js
     assert "sessionStorage.setItem('compound_solar_project_compass_v1'" in compass
     # No remote submission or local persistence of contact data.
@@ -185,3 +185,29 @@ def test_solar_quote_project_brief_is_private_and_comprehensive():
     assert '<form' not in page
     assert '"solar-get-quotes"}' in (ROOT / "compound/site/build.py").read_text(encoding="utf-8")
     assert '/solar/roof-direction/' in page and '/solar/compare-quotes/' in page
+
+
+def test_solar_project_uses_inline_compass_no_photograph_request():
+    page = (ROOT / "content/pages/solar-get-quotes.md").read_text(encoding="utf-8")
+    js = (ROOT / "compound/site/static/solar-project.js").read_text(encoding="utf-8")
+    compass = (ROOT / "compound/site/static/solar-orientation.js").read_text(encoding="utf-8")
+    layout = (ROOT / "compound/site/templates/page.html").read_text(encoding="utf-8")
+    hub = (ROOT / "compound/site/static/solar-hub.js").read_text(encoding="utf-8")
+    for attr in ('data-orientation-embedded', 'data-or="dial"', 'data-or="chart"',
+                 'data-or="total"', 'data-or="pitch"', 'data-or="size"',
+                 'data-sp-face-switch', 'data-sp-face-button="2"',
+                 'data-sp-primary-output', 'data-sp-secondary-output'):
+        assert attr in page
+    for banned in ('data-sp="photoRoof"', 'data-sp="photoShade"', 'data-sp="photoBoard"',
+                   'data-sp="photoRoute"', 'sol-project-photo-guide', 'upload photos',
+                   'external roof photographs'):
+        assert banned not in page.lower()
+    assert "AVAILABLE SUPPORTING IMAGES" not in js
+    assert "photoRoof" not in js
+    assert "compound:solar:orientation" in js and "compound:solar:load" in js
+    assert "compound:solar:orientation" in compass and "compound:solar:load" in compass
+    assert "[data-solar-brief]:not([data-solar-project])" in hub
+    assert "/static/solar-orientation.js?v=3" in layout
+    assert "/static/solar-project.js?v=2" in layout
+    assert "/static/solar-orientation.css?v=2" in layout
+    assert "/static/solar-project.css?v=2" in layout
