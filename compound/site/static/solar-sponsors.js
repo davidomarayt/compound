@@ -51,6 +51,16 @@
   update();
   var params=new URLSearchParams(window.location.search);
   if(params.get("submitted")==="1"){
+    // A completed FormSubmit redirect indicates an installer enquiry, not a
+    // homeowner lead, subscription payment, or qualified converted customer.
+    // Consent-gated and deliberately excludes county, email and form fields.
+    try {
+      if(localStorage.getItem("compound_analytics_consent")==="granted" && typeof window.gtag==="function") {
+        window.gtag("event","solar_installer_enquiry_submitted",{
+          audience:"installer_business",source_path:"/solar/for-installers/"
+        });
+      }
+    } catch (_) {}
     var banner=document.querySelector("[data-sponsor-confirmation-banner]");
     if(banner){
       banner.hidden=false;
