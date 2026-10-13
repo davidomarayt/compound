@@ -1,5 +1,5 @@
 import {json,ready,rest,rpc,stripe,stripeSignature,sendEmail,escapeHtml,
- paymentEnabled} from '../lib/core.js';
+ paymentEnabled,databaseSecretReady} from '../lib/core.js';
 
 async function notifyHomeowner(orderId,projectId){
  // An independent receipt email never contains private homeowner information.
@@ -17,8 +17,7 @@ async function notifyHomeowner(orderId,projectId){
  await rpc('solar_mark_homeowner_notified',{p_order_id:orderId});
 }
 export async function POST(request){
- if(!paymentEnabled()||!ready('STRIPE_WEBHOOK_SECRET','STRIPE_SECRET_KEY',
-    'SUPABASE_URL','SUPABASE_SERVICE_ROLE_KEY'))return json({received:false},503);
+ if(!paymentEnabled()||!databaseSecretReady()||!ready('STRIPE_WEBHOOK_SECRET','STRIPE_SECRET_KEY'))return json({received:false},503);
  const raw=await request.text();
  if(raw.length>130000)return json({received:false},413);
  if(!stripeSignature(raw,request.headers.get('stripe-signature'),process.env.STRIPE_WEBHOOK_SECRET))
