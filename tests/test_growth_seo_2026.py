@@ -89,6 +89,31 @@ def test_new_east_west_solar_evergreen_is_original_and_connected():
         assert "/wealth/east-west-facing-solar-panels-ireland/" in read(feeder)
 
 
+def test_winter_solar_article_chart_source_transparency_and_funnel():
+    path = "content/wealth/solar-panels-winter-ireland.md"
+    text = read(path)
+    assert "publication_status: published" in text
+    assert "require_pinned_hero: true" in text
+    assert "images.pexels.com/photos/15922991/" in text
+    assert text.count('class="chart-svg"') >= 2
+    assert "aria-labelledby=" in text
+    assert "Dublin PVGIS-based" in text
+    assert "CC BY 4.0" in text
+    assert "did **not** query the PVGIS API independently" in text
+    assert "12.8%" in text
+    assert "55.8%" in text
+    assert "€873" in text
+    for href in ("/solar/", "/solar/compare-quotes/", "/solar/grants/",
+                 "/solar/batteries/", "/solar-payback-calculator/",
+                 "/wealth/east-west-facing-solar-panels-ireland/"):
+        assert href in text
+    for feeder in ("content/pages/solar.md",
+                   "content/wealth/solar-panels-ireland.md",
+                   "content/wealth/how-many-solar-panels-do-i-need-ireland.md",
+                   "content/wealth/average-home-electricity-use-ireland.md"):
+        assert "/wealth/solar-panels-winter-ireland/" in read(feeder)
+
+
 def test_solar_and_insurance_hubs_have_indexable_canonical_sources():
     for path, canonical in (
         ("content/pages/solar.md", "/solar/"),
