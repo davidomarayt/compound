@@ -40,6 +40,18 @@ jobs:
           print('Approved TV licence image validated')
           PY
       - run: compound build
+      - name: Validate interactive 360-degree solar direction tool
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check compound/site/static/solar-orientation.js
+          test -s public/solar/roof-direction/index.html
+          grep -Fq 'https://compound.ie/solar/roof-direction/' public/solar/roof-direction/index.html
+          grep -Fq 'data-solar-orientation' public/solar/roof-direction/index.html
+          grep -Fq '/static/solar-orientation.js?v=1' public/solar/roof-direction/index.html
+          grep -Fq '/static/solar-orientation.css?v=1' public/solar/roof-direction/index.html
+          grep -Fq '/solar/roof-direction/' public/solar/index.html
+          grep -Fq 'https://compound.ie/solar/roof-direction/' public/sitemap.xml
         env:
           SITE_BASE_URL: https://compound.ie
           PREVIEW_BASE_URL: https://compound.ie
