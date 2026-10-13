@@ -19,6 +19,7 @@ PUBLIC = ROOT / "public"
 ROUTES = [
     "/solar/",
     "/solar/compare-quotes/",
+    "/solar/roof-direction/",
     "/solar/grants/",
     "/solar/costs/",
     "/solar/installers/",
@@ -150,6 +151,15 @@ def main() -> None:
                                             item["amountWhiteSpace"] != "nowrap" or
                                             item["creditWhiteSpace"] != "nowrap"):
                                             failures.append(f"{width}px {path}: unreadable result card {item}")
+                            if path == "/solar/roof-direction/" and width == 390:
+                                before = page.locator('[data-or="percent"]').inner_text()
+                                south_yield = page.locator('[data-or="total"]').inner_text()
+                                page.locator('[data-or-preset="90"]').click()
+                                east_percent = page.locator('[data-or="percent"]').inner_text()
+                                east_yield = page.locator('[data-or="total"]').inner_text()
+                                if before != "100%" or not south_yield.strip() or east_percent == "100%" or east_yield == south_yield:
+                                    failures.append(f"{width}px {path}: direction change did not update estimated output")
+                                page.locator('[data-or-preset="180"]').click()
                             if errors:
                                 failures.append(f"{width}px {path}: JS exception: {errors[-1][:180]}")
                                 errors.clear()
