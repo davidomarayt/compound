@@ -275,18 +275,18 @@ $$;
 
 create or replace function public.solar_release_notification_pending(p_order_id uuid)
 returns boolean language sql stable security definer set search_path = ''
-as $
+as $$
   select exists(
     select 1 from compound_private.solar_release_events
      where purchase_id=p_order_id and homeowner_notified_at is null
   );
-$;
+$$;
 
 -- Simple manual email-request workflow: Compound staff validates the
 -- homeowner's identity, then closes all unsold slots immediately.
 create or replace function public.solar_withdraw_quote(p_project_id uuid)
 returns jsonb language plpgsql security definer set search_path = ''
-as $
+as $$
 declare v_project public.solar_lead_teasers%rowtype;
         v_num integer;
 begin
@@ -303,7 +303,7 @@ begin
     set reserved_count=0,status='closed' where id=p_project_id;
   return jsonb_build_object('closed',true,'cancelled_reservations',v_num);
 end
-$;
+$$;
 
 -- Suppress all PUBLIC invoker access to administrative RPC operations.
 revoke all on function public.solar_release_notification_pending(uuid) from public,anon,authenticated;
