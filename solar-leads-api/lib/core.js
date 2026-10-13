@@ -30,6 +30,8 @@ export const databaseSecretReady=()=>ready('SUPABASE_URL') &&
      (process.env.SOLAR_LEADS_REAL_CHARGES_APPROVED==='true' &&
        (process.env.STRIPE_SECRET_KEY||'').startsWith('sk_live_')));
 export const intakeEnabled=()=>process.env.SOLAR_LEADS_INTAKE_ENABLED==='true';
+export const pilotIntakeEnabled=()=>process.env.SOLAR_PILOT_INTAKE_ENABLED==='true';
+export const PILOT_CONSENT_VERSION='solar-private-pilot-2026-10-13';
 export function digest(str){return createHash('sha256').update(str).digest('hex');}
 export function token(){return randomBytes(32).toString('base64url');}
 export function adminAuthorised(request) {
@@ -167,4 +169,43 @@ export async function stripe(path,form,method='POST',key=null){
  let body;try{body=await resp.json();}catch{body=null;}
  if(!resp.ok)throw new Error('Payment provider request rejected');
  return body;
+}
+
+export function normalizePrivatePilot(payload){
+ if(!payload || typeof payload!=='object' || Array.isArray(payload))throw Error('Invalid request');
+ const field=(name,max)=>{
+   const v=payload[name];
+   if(v==null)return '';
+   if(typeof v!=='string' || v.length>max)throw Error('Invalid '+name);
+   return v.trim();
+ };
+ const name=field('name',100),email=field('email',160).toLowerCase();
+ const county=field('county',35),phone=field('phone',50);
+ const method=field('contactMethod',15);
+ const requestedMax=Number(payload.requestedMax);
+ if(!COUNTIES.includes(county))throw Error('Select a valid county');
+ if(name.length<2 || !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email))throw Error('Name and a valid email are required');
+ if(!['Email','Phone','Either'].includes(method) || (method!=='Email'&&!phone))throw Error('Select a contact method and enter a phone number if required');
+ if(!Number.isInteger(requestedMax)||requestedMax<1||requestedMax>3)throw Error('Select one, two or three quotes');
+ if(payload.privateConsent!==true || field('pilotVersion',64)!==PILOT_CONSENT_VERSION)
+   throw Error('Consent to private review is required');
+ const role=payload.brief?.role;
+ if(!['Owner','Joint owner','Authorised decision-maker'].includes(role))throw Error('Only an owner or authorised decision-maker may request a quotation');
+ const timing=payload.brief?.timing;
+ if(!timing || timing==='Researching options')throw Error('Select an installation timeframe for quotations');
+ const brief={};
+ for(const key of ['area','role','building','project','timing','budget','protected','roof',
+ 'faces','azimuth','pitch','azimuth2','pitch2','areaM2','areaM22','material','shade',
+ 'obstacles','roofCondition','storeys','access','demand','bill','daytime','smartMeter',
+ 'phase','board','ev','heatPump','immersion','existingPV','kwp','battery',
+ 'batteryKwh','evCharger','diverter','backup','grant','finance','existingQuotes','cable','notes']){
+   const value=payload.brief?.[key];
+   if(typeof value==='string' && value.trim() && value.length<=(key==='notes'?900:160))
+      brief[key]=value.trim();
+ }
+ return {
+   county,name,email,phone,eircode:field('eircode',12),
+   requested_max:requestedMax,contact_method:method,
+   brief,consent_version:PILOT_CONSENT_VERSION
+ };
 }
