@@ -189,7 +189,7 @@
       '• SEAI registration, grant/NC6 paperwork, terms, lead time and payment schedule.',
       '',
       'All facts supplied by homeowner. Final quote subject to survey and safety checks.',
-      'This brief is copied locally by the homeowner; Compound has not transmitted it.'
+      'For private Compound review only if you choose to submit; otherwise this brief stays in your browser tab.'
     );
     root.querySelector('[data-sb-output]').value=out.join('\n');
     root.querySelector('[data-sb-copy-status]').textContent='';
