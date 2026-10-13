@@ -3,7 +3,7 @@ title: "Solar Project Builder Ireland: Your Installation Quote Brief"
 canonical_path: /solar/get-quotes/
 meta_description: "Build a detailed solar installation quote brief in Ireland: roof orientation, pitch, shading, electricity use, battery preferences and budget. Private, free, no account."
 ---
-<div class="sol-shell sol-subpage sol-project" data-solar-brief data-solar-project data-solar-leads-active="false" data-solar-pilot-active="false" data-solar-leads-api="https://compound-solar-api.vercel.app" data-turnstile-sitekey="">
+<div class="sol-shell sol-subpage sol-project" data-solar-brief data-solar-project data-solar-leads-active="false" data-solar-pilot-active="true" data-solar-leads-api="https://compound-solar-api.vercel.app" data-turnstile-sitekey="">
   <nav class="sol-subcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/solar/">Solar</a> / <span aria-current="page">Solar project brief</span></nav>
   <header class="sol-project-hero">
     <div><p class="sol-ey">COMPOUND SOLAR / PROJECT BUILDER</p><h1>One solar project. <em>Clearer quotes.</em></h1><p>Build a useful installation brief once, rather than starting again with every provider. Fill in what you know; choose <strong>Not sure</strong> wherever technical details need an installer to check.</p>
