@@ -62,10 +62,10 @@ jobs:
           for label, result in checks.items():
               print(f'{"PASS" if result else "FAIL"}: {label}', flush=True)
           if page.exists():
-              import re
-              tags = re.findall(r'<link[^>]+rel=["\\']canonical["\\'][^>]*>', page.read_text())
-              print("Rendered canonical tag:", tags[:2], flush=True)
-              print("Rendered URL mentions:", [x for x in re.findall(r'https?://[^"\\s<>]+', page.read_text()) if 'roof-direction' in x][:4], flush=True)
+              html = page.read_text()
+              marker = html.find('rel="canonical"')
+              print("Rendered canonical excerpt:", html[max(0, marker - 35):marker + 220] if marker >= 0 else "NO CANONICAL TAG", flush=True)
+              print("Path in rendered HTML:", '/solar/roof-direction/' in html, flush=True)
           if sitemap.exists():
               print("Sitemap roof entries:", [line.strip() for line in sitemap.read_text().splitlines() if 'roof-direction' in line][:3], flush=True)
           required = ("new roof direction route", "interactive compass",
