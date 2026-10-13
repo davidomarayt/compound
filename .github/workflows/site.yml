@@ -172,6 +172,19 @@ jobs:
           test "$(grep -o 'data-county' content/pages/solar-for-installers.md | wc -l)" -eq 32
           grep -q 'solar-payback-calculator/' public/solar/index.html
           ! grep -R -F 'built and occupied before 2021' public/solar public/solar-payback-calculator public/wealth/solar-panels-ireland public/wealth/solar-panels-vs-battery-ireland
+      - name: Check private solar installer portal
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check compound/site/static/solar-installer-portal.js
+          test -s public/solar/installer-portal/index.html
+          grep -Fq 'noindex,nofollow,noarchive' public/solar/installer-portal/index.html
+          grep -Fq 'data-installer-portal' public/solar/installer-portal/index.html
+          grep -Fq 'solar-installer-portal.js?v=1' public/solar/installer-portal/index.html
+          grep -Fq 'solar-installer-portal.css?v=1' public/solar/installer-portal/index.html
+          ! grep -Fq 'pagead2.googlesyndication.com' public/solar/installer-portal/index.html
+          ! grep -Fq 'googletagmanager.com' public/solar/installer-portal/index.html
+          ! grep -Fq '/solar/installer-portal/' public/sitemap.xml
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
