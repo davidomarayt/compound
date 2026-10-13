@@ -190,6 +190,59 @@
     switchTab(activeTab);
   }
 
+  async function loadPrivatePilot(){
+    if(demo || !currentUser || !supabase)return;
+    const endpoint=root.dataset.pilotReviewApi||'';
+    if(!/^https:\/\/[a-z0-9.-]+\/api\/pilot-review$/i.test(endpoint))return;
+    try{
+      const {data:{session},error}=await supabase.auth.getSession();
+      if(error || !session)return;
+      const resp=await fetch(endpoint,{
+        method:'GET',mode:'cors',cache:'no-store',credentials:'omit',
+        headers:{'Authorization':'Bearer '+session.access_token}
+      });
+      if(resp.status===403)return; // Non-admin installers must not see this tab.
+      if(!resp.ok)throw Error('Private projects are temporarily unavailable.');
+      const data=await resp.json();
+      if(!data.ok||!Array.isArray(data.requests))throw Error('Private projects unavailable.');
+      const tab=root.querySelector('[data-ip-tab="pilot"]');
+      tab.hidden=false;
+      setText('pilot-count',data.requests.length);
+      const list=find('pilot-list');
+      list.replaceChildren();
+      if(!data.requests.length){
+        const empty=element('p','sip-empty','No private submissions yet. New homeowner projects will appear here.');
+        list.append(empty);
+      }
+      for(const p of data.requests){
+        const card=element('article','sip-card');
+        card.append(element('p','sip-card-tag','PRIVATE COMPOUND REVIEW — NOT SHARED'));
+        card.append(element('h3','',txt(p.reference)));
+        card.append(element('p','sip-card-location',txt(p.county)+' · '+new Date(p.created_at).toLocaleDateString('en-IE')));
+        const details=element('dl');
+        const pairs=[
+          ['Name',p.homeowner_name],['Email',p.homeowner_email],
+          ['Phone',p.homeowner_phone],['Eircode',p.eircode],
+          ['Preferred contact',p.contact_method],['Quotes requested',p.requested_max],
+          ...Object.entries(p.brief||{}).filter(([,v])=>typeof v==='string'||typeof v==='number')
+            .map(([k,v])=>[k.replace(/([A-Z])/g,' $1').replace(/_/g,' '),v])
+        ];
+        for(const [label,value] of pairs){
+          const line=element('div');line.append(element('dt','',label),element('dd','',txt(value)));
+          details.append(line);
+        }
+        const section=element('section','sip-private-brief');section.append(details);
+        card.append(section);
+        list.append(card);
+      }
+      status(find('pilot-message'),'Private projects are visible only to the authorised Compound reviewer.','success');
+    }catch{
+      if(root.querySelector('[data-ip-tab="pilot"]')?.hidden!==true){
+        status(find('pilot-message'),'Could not refresh private submissions. Try again.','error');
+      }
+    }
+  }
+
   async function loadDashboard() {
     if (!currentUser || !supabase) return;
     status(find('message'),'Checking installer approval…');
@@ -214,6 +267,7 @@
     available=leads.data||[];
     purchases=orders.data||[];
     showDashboard();
+    void loadPrivatePilot();
   }
 
   async function startAuth() {
@@ -286,6 +340,7 @@
     status(find('application-status'),'Your email application has been prepared. Please send it from your email app.','success');
   });
   root.querySelectorAll('[data-ip-tab]').forEach(button=>button.addEventListener('click',()=>switchTab(button.dataset.ipTab)));
+  find('refresh-pilot')?.addEventListener('click',()=>{void loadPrivatePilot();});
   find('county-filter').addEventListener('change',e=>{selectedCounty=e.target.value;render();});
   find('signout').addEventListener('click',async()=>{
     if (demo) {const clean=new URL(window.location);clean.searchParams.delete('preview');window.location.assign(clean.toString());return;}
