@@ -22,6 +22,64 @@
       root.querySelector('[data-sp-compass]').textContent='Compass values imported for this tab. They are estimates, not an installer survey.';
     }
   }catch(_){ }
+  var embedded=root.querySelector('[data-orientation-embedded]');
+  var activeFace=1;
+  var faceKeys=function(f){return f===2?['azimuth2','pitch2']:['azimuth','pitch'];};
+  function faceStatus(){
+    var names=faceKeys(activeFace),az=show(names[0]),pitch=show(names[1]);
+    var status=root.querySelector('[data-sp-face-status]');
+    if(status)status.textContent=az!=='' && pitch!==''?
+      'Roof face '+activeFace+' confirmed: '+az+'° direction, '+pitch+'° pitch. These values are now in your quote brief.':
+      'Roof face '+activeFace+': compass defaults are examples. Tap a bearing or change pitch to confirm this face.';
+    var main=root.querySelector('[data-sp-primary-output]');
+    if(main)main.textContent=show('azimuth')!==''&&show('pitch')!==''?show('azimuth')+'° / '+show('pitch')+'° pitch':'Not yet selected';
+    var second=root.querySelector('[data-sp-secondary-output]');
+    if(second)second.textContent=show('azimuth2')!==''&&show('pitch2')!==''?show('azimuth2')+'° / '+show('pitch2')+'° pitch':'Not yet selected';
+  }
+  function switchFace(n){
+    activeFace=n===2?2:1;
+    root.querySelectorAll('[data-sp-face-button]').forEach(function(btn){
+      btn.setAttribute('aria-pressed',String(Number(btn.getAttribute('data-sp-face-button'))===activeFace));
+    });
+    var keys=faceKeys(activeFace),direction=show(keys[0]),pitch=show(keys[1]);
+    if(embedded)embedded.dispatchEvent(new CustomEvent('compound:solar:load',{detail:{
+      azimuth:direction!==''?Number(direction):180,
+      pitch:pitch!==''?Number(pitch):35,
+      size:show('kwp')!==''?Number(show('kwp')):6
+    }}));
+    faceStatus();
+  }
+  if(embedded){
+    embedded.addEventListener('compound:solar:orientation',function(event){
+      var data=event.detail||{},keys=faceKeys(activeFace);
+      if(!Number.isFinite(data.azimuth)||!Number.isFinite(data.pitch))return;
+      get(keys[0]).value=String(Math.round(data.azimuth));
+      get(keys[1]).value=String(data.pitch);
+      // Array size is an illustrative 6 kWp default. Do not record it as the
+      // homeowner's preference unless the size input itself was changed.
+      if(data.source==='size'&&Number.isFinite(data.size)&&data.size>0){
+        get('kwp').value=String(data.size);
+      }
+      if(activeFace===1)snapshot={azimuth:Number(get('azimuth').value),pitch:Number(get('pitch').value),annual:Number(data.annual),kwp:Number(data.size)};
+      faceStatus();
+      update();
+    });
+    root.querySelectorAll('[data-sp-face-button]').forEach(function(btn){
+      btn.addEventListener('click',function(){switchFace(Number(btn.getAttribute('data-sp-face-button')));});
+    });
+    get('faces').addEventListener('change',function(){
+      var two=this.value==='2',selector=root.querySelector('[data-sp-face-switch]');
+      if(selector)selector.hidden=!two;
+      if(!two||activeFace===2)switchFace(1);
+      update();
+    });
+    get('kwp').addEventListener('change',function(){
+      var size=Number(this.value);
+      if(Number.isFinite(size)&&size>0&&size<=30)embedded.dispatchEvent(new CustomEvent('compound:solar:load',{detail:{size:size}}));
+    });
+    root.querySelector('[data-sp-face-switch]').hidden=get('faces').value!=='2';
+    switchFace(1);
+  }
   function update(){
     var second=get('faces').value==='2';
     root.querySelector('[data-sp-second]').hidden=!second;
@@ -103,13 +161,8 @@
       mark('Payment plan',answer('finance')),
       mark('Existing quotes',answer('quotes')),
       mark('Inverter / cable route',answer('cable')),
-      mark('Other requirements',answer('notes')),
-      '',
-      'AVAILABLE SUPPORTING IMAGES (SHARE PRIVATELY AFTER CHOOSING INSTALLER)',
-      'Roof photographs: '+show('photoRoof'),
-      'Chimneys / shade: '+show('photoShade'),
-      'Closed electrical board / meter area: '+show('photoBoard'),
-      'Proposed equipment location: '+show('photoRoute'),
+      mark('Other requirements',answer('notes'))
+
     );
     if(snapshot && show('azimuth')===String(snapshot.azimuth) && show('pitch')===String(snapshot.pitch)){
       out.push('Indicative compass model (not installer-certified): '+
@@ -142,5 +195,15 @@
   }
   fields.forEach(function(f){f.addEventListener('input',update);f.addEventListener('change',update);});
   // Existing solar-hub.js already owns copy button and respects browser clipboard permissions.
+  var copy=root.querySelector('[data-sb-copy]');
+  if(copy)copy.addEventListener('click',function(){
+    var output=root.querySelector('[data-sb-output]'),status=root.querySelector('[data-sb-copy-status]');
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(output.value).then(function(){
+        status.textContent='Project brief copied. Review it before sending to your chosen installer.';
+      },function(){output.focus();output.select();status.textContent='Select and copy your project brief manually.';});
+    }else{output.focus();output.select();status.textContent='Select and copy your project brief manually.';}
+  });
+  faceStatus();
   update();
 })();
