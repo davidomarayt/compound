@@ -472,6 +472,8 @@ For most private homeowners, ordinary mortgage protection premiums are a persona
 
 Possibly, if the policy has adequate cover and is suitable for assignment to the lender, and if the lender accepts it. Check whether its sum insured, remaining term and ownership meet the relevant requirements.
 
+For related policy comparisons and cost-planning tools, see the [Compound Insurance Hub](/insurance/). Mortgage protection and life insurance serve different needs, so compare their terms rather than the premium alone.
+
 ## The bottom line
 
 For most Irish homebuyers, a mortgage protection policy is necessary. But **the bank's suggested policy is not your only option**, and choosing between joint and dual life can matter as much as choosing the lowest premium.
