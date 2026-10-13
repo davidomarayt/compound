@@ -372,6 +372,8 @@ Compare joint-first-death against dual life and two separate policies. The numbe
 
 Ordinary term cover can often be cancelled, but it usually has no cash value. Obtain and activate suitable replacement cover before stopping an existing policy; later age or changes in health may increase premiums or make acceptance difficult.
 
+Comparing cover? Visit the [Compound Insurance Hub](/insurance/) for an overview of protection types, then test how employer cover affects your needs with the [Death in Service and Life Insurance Calculator](/death-in-service-life-insurance-calculator/).
+
 ## The bottom line
 
 For Irish families, **the amount of cover matters more than the cheapest advertised monthly premium**. Work out the likely surviving household shortfall, subtract benefits and assets that can genuinely be used, and obtain comparable underwritten quotes for an appropriate term and policy structure.
