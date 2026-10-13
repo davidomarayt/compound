@@ -380,9 +380,9 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - [Solar Panel Direction Calculator Ireland: 360° Compass & kWh](https://compound.ie/solar-roof-direction/)
 - [Solar Panel Grants Ireland 2026: PV & Battery Eligibility](https://compound.ie/solar-grants/)
 - [Solar Panel Installation Costs & System Sizes Ireland](https://compound.ie/solar-costs/)
-- [Solar Panel Quote Request Template Ireland](https://compound.ie/solar-get-quotes/)
 - [Solar Panels Ireland: Grants, Costs, Calculators & Quotes](https://compound.ie/solar/)
 - [Solar Panels, Inverters & Batteries Ireland: Equipment Guide](https://compound.ie/solar-equipment/)
+- [Solar Project Builder Ireland: Your Installation Quote Brief](https://compound.ie/solar-get-quotes/)
 - [Solar Quote Comparison Calculator Ireland](https://compound.ie/solar-compare-quotes/)
 
 ## Site hubs and directories — 11

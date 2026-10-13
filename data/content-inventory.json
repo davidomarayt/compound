@@ -4522,12 +4522,6 @@
         "kind": "Information / policy page"
       },
       {
-        "title": "Solar Panel Quote Request Template Ireland",
-        "url": "/solar-get-quotes/",
-        "source": "content/pages/solar-get-quotes.md",
-        "kind": "Information / policy page"
-      },
-      {
         "title": "Solar Panels Ireland: Grants, Costs, Calculators & Quotes",
         "url": "/solar/",
         "source": "content/pages/solar.md",
@@ -4537,6 +4531,12 @@
         "title": "Solar Panels, Inverters & Batteries Ireland: Equipment Guide",
         "url": "/solar-equipment/",
         "source": "content/pages/solar-equipment.md",
+        "kind": "Information / policy page"
+      },
+      {
+        "title": "Solar Project Builder Ireland: Your Installation Quote Brief",
+        "url": "/solar-get-quotes/",
+        "source": "content/pages/solar-get-quotes.md",
         "kind": "Information / policy page"
       },
       {
