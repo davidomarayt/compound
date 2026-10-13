@@ -1,15 +1,15 @@
 ---
 title: "€16 an hour: what Ireland’s new Living Wage benchmark would mean for your pay"
-seo_title: "€16 Living Wage Ireland: What It Means for Your Pay"
+seo_title: "Living Wage Ireland 2026: €16 vs €14.94 Minimum Wage"
 slug: living-wage-16-ireland-2026
 pillar: wealth
 canonical_path: /news/living-wage-16-ireland-2026/
 draft: false
 publication_status: published
 date: 2026-09-29
-reviewed: 2026-09-29
-summary: "Ireland’s Living Wage Technical Group says the Living Wage should rise to €16 an hour. Here is how that compares with the current €14.15 minimum wage and the proposed €14.94 rate for 2027."
-meta_description: "Ireland’s Living Wage benchmark is set to rise to €16 an hour. Compare €14.15, €14.94 and €16 pay, annual earnings and what could change in Budget 2027."
+reviewed: 2026-10-13
+summary: "Ireland’s voluntary €16 Living Wage benchmark compared with the €14.15 legal minimum in 2026 and the confirmed €14.94 adult minimum wage announced for January 2027. See weekly and annual examples."
+meta_description: "Ireland’s €16 Living Wage explained. Compare the 2026 €14.15 minimum wage with the announced €14.94 rate for January 2027, weekly and annual pay."
 tags: [news, living-wage, minimum-wage, budget-2027, pay, wages, cost-of-living, ireland]
 news_image_query: "Irish worker payslip euro calculator wages cost of living Ireland"
 related_tools:
@@ -24,26 +24,28 @@ social:
     enabled: true
     text: >-
       Ireland’s Living Wage benchmark is now €16 an hour. That is not the legal
-      minimum wage: the current statutory rate is €14.15, while €14.94 has been
-      recommended for 2027. On a 39-hour week, €16 is about €3,752 more gross pay
+      minimum wage: the 2026 statutory rate is €14.15, while €14.94 has been
+      confirmed for January 2027. On a 39-hour week, €16 is about €3,752 more gross pay
       per year than €14.15. We break down the numbers.
   linkedin:
     enabled: true
     text: >-
       Ireland’s Living Wage Technical Group says the Living Wage should rise from
       €15.40 to €16 an hour. Compound compares the new benchmark with the current
-      €14.15 statutory minimum wage and the €14.94 rate recommended for 2027,
+      €14.15 statutory minimum wage and the announced €14.94 rate for 2027,
       including weekly, monthly and annual gross-pay differences.
   instagram:
     enabled: false
 sources:
   - title: "RTÉ: Technical group says living wage should rise to €16 an hour — 28 September 2026"
     url: https://www.rte.ie/news/ireland/2026/0928/1593215-living-wage/
+  - title: "National Enterprise Hub: Budget 2027 confirms €14.94 national minimum wage — 7 October 2026"
+    url: https://www.neh.gov.ie/the-source/budget-2027-key-changes
   - title: "Living Wage Ireland: What is a Living Wage?"
     url: https://www.livingwage.ie/about/
   - title: "Living Wage Ireland: Technical Document"
     url: https://www.livingwage.ie/documents/technical-document.html
-  - title: "RTÉ: 5.6% increase in minimum wage to be recommended to Government — 17 July 2026"
+  - title: "RTÉ: 5.6% increase in minimum wage recommended to Government — 17 July 2026"
     url: https://www.rte.ie/news/ireland/2026/0717/1583924-minimum-wage-increase/
   - title: "Department of Enterprise: National Minimum Wage notice for 2026"
     url: https://www.enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/latest-updates/
@@ -55,7 +57,7 @@ sources:
     url: https://www.ibec.ie/sfa/news-insights-and-events/news/2026/09/18/sfa-calls-for-minister-burke-to-reject-proposed-increase-in-national-minimum-wage-in-budget-2027
 ---
 
-<p><em>News analysis · 29 September 2026. The €16 Living Wage discussed below is a voluntary cost-of-living benchmark, not Ireland’s statutory minimum wage. The proposed €14.94 minimum wage for 2027 has not yet been adopted by Government.</em></p>
+<p><em>News analysis · 29 September 2026. The €16 Living Wage discussed below is a voluntary cost-of-living benchmark, not Ireland’s statutory minimum wage. Government confirmed the €14.94 minimum wage for 2027 in Budget 2027; the 2026 statutory rate remains €14.15 until the change takes effect.</em></p>
 
 Ireland’s Living Wage Technical Group says the hourly rate needed for a single full-time worker to afford a minimum acceptable standard of living should rise to:
 
@@ -69,12 +71,12 @@ It is **not a new legal minimum wage**.
 
 Ireland’s statutory National Minimum Wage remains **€14.15 an hour in 2026**.
 
-Separately, the Low Pay Commission has recommended that the minimum wage rise by **79 cent to €14.94 an hour in 2027**. Government will consider that recommendation as part of Budget 2027 and is not legally required to accept it.
+Separately, Budget 2027 confirmed the adult National Minimum Wage will rise by **79 cent to €14.94 an hour from January 2027**, following the Low Pay Commission’s recommendation.
 
-So there are currently three useful numbers to understand:
+There are three useful numbers to distinguish:
 
 - **€14.15** — the legal National Minimum Wage in 2026;
-- **€14.94** — the Low Pay Commission’s recommended 2027 minimum wage;
+- **€14.94** — the Government-announced adult minimum wage for January 2027;
 - **€16.00** — the Living Wage Technical Group’s new cost-of-living benchmark.
 
 For workers, the difference between them is not trivial.
@@ -96,7 +98,7 @@ For a simple like-for-like comparison, the table below uses 39 hours a week and 
 </thead>
 <tbody>
 <tr><td>Current minimum wage: <strong>€14.15</strong></td><td>€551.85</td><td>€2,391.35</td><td><strong>€28,696.20</strong></td></tr>
-<tr><td>Recommended 2027 minimum: <strong>€14.94</strong></td><td>€582.66</td><td>€2,524.86</td><td><strong>€30,298.32</strong></td></tr>
+<tr><td>Announced January 2027 minimum: <strong>€14.94</strong></td><td>€582.66</td><td>€2,524.86</td><td><strong>€30,298.32</strong></td></tr>
 <tr><td>Living Wage benchmark: <strong>€16.00</strong></td><td>€624.00</td><td>€2,704.00</td><td><strong>€32,448.00</strong></td></tr>
 </tbody>
 </table>
@@ -120,7 +122,7 @@ At 39 hours per week, that becomes:
 
 The €16 Living Wage benchmark is therefore about **13.1% above** the current statutory minimum wage.
 
-The comparison with the proposed €14.94 rate is narrower.
+The comparison with the announced January 2027 rate of €14.94 is narrower.
 
 At €16 rather than €14.94, a 39-hour worker would receive:
 
@@ -162,21 +164,11 @@ An employer generally does **not** become legally obliged to pay €16 simply be
 
 The statutory National Minimum Wage remains **€14.15 an hour** for an adult worker in 2026, subject to the separate age-based rates and sector-specific rules that can apply.
 
-The Low Pay Commission has recommended a **5.6% increase** for 2027.
+Budget 2027 confirmed the Low Pay Commission’s recommended **5.6% increase** for 2027. The adult statutory minimum wage is due to rise **from €14.15 to €14.94 an hour from 1 January 2027**. The €16 Living Wage remains a separate, voluntary benchmark.
 
-If Government accepts that recommendation in full, the National Minimum Wage would rise:
+## What will the announced €14.94 minimum wage add to pay?
 
-**from €14.15 to €14.94 an hour.**
-
-That would take effect from 1 January 2027 if adopted in the usual way.
-
-But the Government decision has not yet been made.
-
-RTÉ reports that any minimum-wage change is expected to be announced as part of Budget 2027.
-
-## What would the recommended €14.94 minimum wage add to pay?
-
-The proposed increase is **79 cent an hour**.
+The announced increase is **79 cent an hour**, effective January 2027.
 
 For someone working 39 hours each week, that is:
 
@@ -216,25 +208,25 @@ That distinction becomes especially important when household costs rise rapidly.
 
 A statutory minimum wage can increase while still remaining below the amount the Living Wage methodology estimates is needed to meet its defined standard of living.
 
-## The gap would narrow if €14.94 is adopted
+## How the gap narrows in January 2027
 
 At today’s €14.15 minimum wage, the gap to €16 is:
 
 **€1.85 per hour.**
 
-If the minimum wage rises to €14.94, the gap falls to:
+When the January 2027 adult minimum wage rises to €14.94, the gap falls to:
 
 **€1.06 per hour.**
 
 That would leave the statutory minimum around **6.6% below €16**.
 
-So accepting the Low Pay Commission recommendation would narrow the gap materially, but would not eliminate it.
+The confirmed increase will narrow the gap materially, but will not eliminate it.
 
 ## What about employers?
 
 Higher wages increase payroll costs, particularly for businesses with large numbers of employees at or close to the minimum wage.
 
-The **Small Firms Association** has asked the Government to reject the proposed minimum-wage increase in Budget 2027.
+Ahead of the Budget, the **Small Firms Association** asked the Government to reject the proposed minimum-wage increase. The Government subsequently announced the increase.
 
 It argues that smaller businesses are already facing higher labour-related costs and has called for measures including a temporary PRSI rebate.
 
@@ -244,7 +236,7 @@ That is an important part of the policy debate because the cost to an employer i
 
 Employer PRSI and other employment costs can also rise with payroll.
 
-This does not determine whether the proposed increase should or should not proceed. It explains why the Government decision involves both worker living standards and business costs.
+The debate illustrates why wage policy involves both worker living standards and business costs; the January 2027 rate has now been announced.
 
 ## Do minimum-wage increases push up prices?
 
@@ -315,11 +307,7 @@ Employers that voluntarily use the Living Wage benchmark can take the new figure
 
 ### The 2027 National Minimum Wage
 
-The Government still has to decide whether to accept the Low Pay Commission’s recommendation of **€14.94**.
-
-That decision is expected around **Budget 2027**.
-
-Until a legal change is announced and takes effect, the adult National Minimum Wage remains **€14.15 an hour**.
+Budget 2027 announced that the adult National Minimum Wage will increase to **€14.94** from **1 January 2027**. Until that date, the 2026 adult minimum wage remains **€14.15 an hour**.
 
 ## Check what the different rates mean for you
 
