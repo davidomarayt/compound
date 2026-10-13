@@ -42,14 +42,65 @@
       return sum;
     });
   }
-  var chart= q('chart');
-  months.forEach(function(m){
-    var cell=document.createElement('div');cell.className='sor-month';
-    var bar=document.createElement('div');bar.className='sor-month-track';
-    var fill=document.createElement('div');fill.className='sor-month-fill';fill.setAttribute('data-or-bar',m);bar.appendChild(fill);
-    var label=document.createElement('span');label.textContent=m;cell.appendChild(bar);cell.appendChild(label);chart.appendChild(cell);
+  var chart=q('chart'),ctx=chart.getContext&&chart.getContext('2d'),profile=null,selectedMonth=5;
+  // Draw the chart as pixels, not CSS background bars. Several Android browsers
+  // automatically darken webpage backgrounds and made the original bars invisible.
+  // Canvas pixels retain the intended contrast in both browser appearance modes.
+  function drawChart(values){
+    if(!ctx||!values)return;
+    var width=Math.round(chart.getBoundingClientRect().width);
+    if(width<140)return;
+    var height=width<480?225:258,scale=Math.min(window.devicePixelRatio||1,3);
+    chart.width=Math.ceil(width*scale);chart.height=Math.ceil(height*scale);
+    chart.style.height=height+'px';
+    ctx.setTransform(scale,0,0,scale,0,0);
+    ctx.fillStyle='#102b29';ctx.fillRect(0,0,width,height);
+    var left=22,right=10,top=30,bottom=height-39,plotW=width-left-right,plotH=bottom-top;
+    var vmax=Math.max.apply(null,values.concat([1]));
+    ctx.textAlign='left';ctx.font='600 11px system-ui, sans-serif';ctx.fillStyle='#d4e7d8';
+    ctx.fillText('kWh / month',left,15);
+    for(var tier=0;tier<=3;tier++){
+      var y=bottom-(tier/3)*plotH;
+      ctx.strokeStyle=tier===0?'#73998b':'#3e6259';
+      ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(left,y+.5);ctx.lineTo(width-right,y+.5);ctx.stroke();
+    }
+    var step=plotW/12,barW=Math.max(7,Math.min(33,step*.72));
+    values.forEach(function(energy,i){
+      var barH=Math.max(2,energy/vmax*(plotH-5)),x=left+step*(i+.5)-barW/2,y=bottom-barH;
+      var gradient=ctx.createLinearGradient(0,y,0,bottom);
+      if(i===selectedMonth){gradient.addColorStop(0,'#fff3ae');gradient.addColorStop(1,'#e5b85f');}
+      else{gradient.addColorStop(0,'#b8ff92');gradient.addColorStop(1,'#48d9ab');}
+      ctx.fillStyle=gradient;
+      ctx.beginPath();
+      var radius=Math.min(5,barW/3,barH/3);
+      if(ctx.roundRect)ctx.roundRect(x,y,barW,barH,[radius,radius,2,2]);
+      else ctx.rect(x,y,barW,barH);
+      ctx.fill();
+      if(i===selectedMonth){
+        ctx.strokeStyle='#fff0aa';ctx.lineWidth=1.5;ctx.stroke();
+      }
+      ctx.textAlign='center';ctx.font='600 '+(width<360?'9':'10')+'px system-ui, sans-serif';ctx.fillStyle='#e3f3e8';
+      ctx.fillText(months[i],left+step*(i+.5),height-15);
+    });
+    chart.setAttribute('aria-label','Monthly generation. '+values.map(function(v,i){return months[i]+' '+fmt(v)+' kWh';}).join(', ')+'. Tap or use arrow keys to select a month.');
+    q('chart-amount').textContent=months[selectedMonth]+': '+fmt(values[selectedMonth])+' kWh';
+    var peak=Math.max.apply(null,values),peakAt=values.indexOf(peak);
+    q('chart-peak').textContent='Peak production: '+months[peakAt]+' · '+fmt(peak)+' kWh';
+  }
+  chart.addEventListener('click',function(ev){
+    if(!profile)return;
+    var rect=chart.getBoundingClientRect(),x=ev.clientX-rect.left,left=22,right=10;
+    selectedMonth=clamp(Math.floor((x-left)/(rect.width-left-right)*12),0,11);
+    drawChart(profile);
   });
-  var fills=Array.prototype.slice.call(root.querySelectorAll('.sor-month-fill'));
+  chart.addEventListener('keydown',function(ev){
+    if(!profile)return;
+    if(ev.key==='ArrowRight'||ev.key==='ArrowLeft'){
+      ev.preventDefault();selectedMonth=clamp(selectedMonth+(ev.key==='ArrowRight'?1:-1),0,11);drawChart(profile);
+    }
+  });
+  if(typeof ResizeObserver!=='undefined')new ResizeObserver(function(){if(profile)drawChart(profile);}).observe(chart);
+  else window.addEventListener('resize',function(){if(profile)drawChart(profile);});
   function estimate(){
     var place=places[q('place').value]||places.dublin;
     var size=clamp(val('size')||0,0,30),pitch=clamp(val('pitch'),0,90),shade=clamp(val('shade'),0,50);
@@ -81,12 +132,8 @@
     q('accuracy').textContent=official?'PVGIS result (typical year, assumed 14% system loss)':'Indicative estimate (assumed normal system losses; shading adjustment selected above)';
     q('copy').disabled=false;
     q('grade').style.width=clamp(pct,0,110)+'%';
-    var max=Math.max.apply(null,r.months.concat([1]));
-    fills.forEach(function(bar,i){
-      bar.style.height=(r.months[i]/max*100).toFixed(2)+'%';
-      bar.parentNode.title=months[i]+': '+fmt(r.months[i])+' kWh';
-      bar.parentNode.setAttribute('aria-label',months[i]+': '+fmt(r.months[i])+' kWh');
-    });
+    profile=r.months;
+    drawChart(profile);
   }
   function changeAngle(n,track){
     angle=normal(n);official=null; q('status').textContent='';render();
