@@ -50,8 +50,13 @@ jobs:
           node --check compound/site/static/solar-orientation.js
           node --check compound/site/static/solar-project.js
           grep -Fq 'data-solar-project' public/solar/get-quotes/index.html
-          grep -Fq 'solar-project.js?v=1' public/solar/get-quotes/index.html
-          grep -Fq 'solar-project.css?v=1' public/solar/get-quotes/index.html
+          grep -Fq 'solar-project.js?v=2' public/solar/get-quotes/index.html
+          grep -Fq 'solar-project.css?v=2' public/solar/get-quotes/index.html
+          grep -Fq 'data-orientation-embedded' public/solar/get-quotes/index.html
+          grep -Fq 'data-sp-face-button="2"' public/solar/get-quotes/index.html
+          ! grep -Fq 'sol-project-photo-guide' public/solar/get-quotes/index.html
+          ! grep -Fq 'data-sp="photoRoof"' public/solar/get-quotes/index.html
+
 
           python - <<'PY'
           from pathlib import Path
@@ -273,6 +278,12 @@ jobs:
           grep -Fq 'data-solar-battery' /tmp/solar-solar-batteries.html
           grep -Fq 'data-solar-export' /tmp/solar-solar-export-rates.html
           grep -Fq 'data-solar-equipment' /tmp/solar-solar-equipment.html
+          grep -Fq 'data-orientation-embedded' /tmp/solar-solar-get-quotes.html
+          grep -Fq 'data-sp-face-button="2"' /tmp/solar-solar-get-quotes.html
+          ! grep -Fq 'sol-project-photo-guide' /tmp/solar-solar-get-quotes.html
+          grep -Fq 'solar-orientation.js?v=3' /tmp/solar-solar-get-quotes.html
+          grep -Fq 'solar-project.js?v=2' /tmp/solar-solar-get-quotes.html
+
           fetch https://compound.ie/static/solar-research.js /tmp/solar-research.js
           grep -Fq 'data-solar-battery' /tmp/solar-research.js
           grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/solar-solar.html
