@@ -3,7 +3,7 @@ title: "Installer Portal | Compound Solar"
 canonical_path: /solar/installer-portal/
 meta_description: "Secure Compound Solar portal for verified installation businesses to access private solar opportunities and purchased introductions."
 ---
-<div class="sip" data-installer-portal data-supabase-url="https://guifxtijipkpvjjyhatq.supabase.co" data-supabase-publishable-key="sb_publishable_ve357dvU1yKXIkMkEz5FTA_bg1BBvjk" data-checkout-api-url="">
+<div class="sip" data-installer-portal data-supabase-url="https://guifxtijipkpvjjyhatq.supabase.co" data-supabase-publishable-key="sb_publishable_ve357dvU1yKXIkMkEz5FTA_bg1BBvjk" data-checkout-api-url="" data-ip-login-mode="magic-link">
   <div class="sip-head">
     <div>
       <a class="sip-back" href="/solar/">← Compound Solar</a>
@@ -26,12 +26,12 @@ meta_description: "Secure Compound Solar portal for verified installation busine
     <div class="sip-login-panel">
       <span class="sip-pill">VERIFIED BUSINESSES ONLY</span>
       <h2>Installer sign in</h2>
-      <p>Use the email address registered to your company. We’ll email a one-time verification code — no password needed.</p>
+      <p>Use the email address registered to your company. We’ll email you a secure one-time sign-in link — no password needed.</p>
       <div class="sip-pilot-notice" data-ip-prelaunch>This installer portal is being prepared for its pilot. Real login and purchases are not active yet.</div>
       <form data-ip-email-form novalidate>
         <label for="sip-email">Business email address</label>
         <input id="sip-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="you@solarcompany.ie">
-        <button class="sip-button sip-button-primary" data-ip-send type="submit">Email me a login code <span>→</span></button>
+        <button class="sip-button sip-button-primary" data-ip-send type="submit">Email me a sign-in link <span>→</span></button>
       </form>
       <form data-ip-code-form hidden novalidate>
         <label for="sip-code">Six-digit email code</label>
