@@ -1249,12 +1249,12 @@ tools:
 
   - slug: salary-hourly-rate-calculator
     title: Salary to Hourly Rate Calculator Ireland
-    seo_title: Annual Salary to Hourly Rate Calculator Ireland 2026
+    seo_title: Salary to Hourly Calculator Ireland | Annual to Hourly Pay
     category: Tax & Take-Home Pay
     formula: salary_hourly
     summary: Convert an annual gross salary into monthly, weekly, daily and hourly gross pay using the working pattern you actually want to compare.
-    meta_description: "Convert annual salary into an hourly rate in Ireland. Free 2026 calculator with €30k–€70k examples, 37.5- or 40-hour weeks, and gross weekly and monthly pay."
-    updated: 2026-10-12
+    meta_description: "Convert your annual salary to hourly pay in Ireland. Free gross salary calculator with examples for €30k, €50k and €70k, paid hours, weeks and monthly pay."
+    updated: 2026-10-13
     fields:
       - {id: salary, label: Annual gross salary, type: number, prefix: "€", default: 50000, min: 0, step: 500, section_start: Gross pay}
       - {id: hours, label: Paid working hours per week, type: number, default: 39, min: 1, max: 100, step: 0.5, section_start: Working pattern, help: "Use paid hours for the comparison. Unpaid breaks should normally be excluded."}
@@ -1275,6 +1275,18 @@ tools:
       Annual salary figures can be awkward to compare with contracting, overtime or shift work. This calculator converts the same gross annual salary into monthly, weekly, daily and hourly equivalents using the working pattern you enter.
 
       The key input is the denominator. A €50,000 salary divided by 39 hours × 52 paid weeks represents a different hourly equivalent from the same salary attached to a 35-hour week.
+
+      ## Salary to hourly rate: quick examples
+
+      | Gross salary | 39 paid hours/week, 52 weeks | Gross hourly equivalent |
+      | --- | ---: | ---: |
+      | €30,000 | 2,028 paid hours | €14.79 |
+      | €50,000 | 2,028 paid hours | €24.65 |
+      | €70,000 | 2,028 paid hours | €34.52 |
+
+      **Formula:** annual gross salary ÷ (paid hours per week × paid weeks per year). For €50,000, changing from 39 to 37.5 paid hours per week changes the gross equivalent from approximately €24.65 to €25.64 per hour. These examples do not calculate take-home pay.
+
+      For deductions after you have calculated gross pay, use the [Take-Home Pay Calculator](/take-home-pay-calculator/) and [Income Tax Calculator](/income-tax-calculator/).
 
       ## Paid leave matters
 
@@ -1300,12 +1312,12 @@ tools:
 
   - slug: fuel-cost-calculator
     title: Fuel Cost Calculator Ireland
-    seo_title: Fuel Cost Calculator Ireland | Petrol, Diesel & Cost per Km
+    seo_title: Fuel Cost Calculator Ireland | Cost per KM & Journey
     category: EV & Motoring
     formula: fuel
     summary: Estimate litres and fuel cost for a journey, then use Advanced mode to annualise the same real-world consumption and pump-price assumptions.
-    meta_description: Fuel cost calculator Ireland. Work out petrol or diesel cost per trip, per kilometre and per year with real-world L/100km and today's pump price.
-    updated: 2026-10-12
+    meta_description: Calculate petrol or diesel fuel cost per journey and per km in Ireland. Enter distance, L/100km and pump price to estimate litres, euro cost and annual spending.
+    updated: 2026-10-13
     basic_note: "Basic mode prices the trip pattern entered using one fuel-consumption figure and one pump price."
     advanced_note: "Advanced mode adds annual distance so the same consumption and pump-price assumptions can be translated into yearly litres and fuel spend."
     fields:
@@ -1325,7 +1337,13 @@ tools:
       ## Plan a commute, journey or annual fuel budget
       Fuel consumption is normally quoted in litres per 100 km in Ireland. The calculator converts the entered journey into litres and euro cost, while Advanced mode annualises the same consumption and pump-price assumptions.
 
-      Fuel is only one part of motoring cost. Depreciation, finance, insurance, motor tax, tyres, servicing and repairs are outside this calculator.
+      ## Worked fuel-cost example
+
+      A 100 km journey in a car averaging **6.5 L/100 km**, at an assumed **€1.75 per litre**, uses 6.5 litres and costs about **€11.38** in fuel. That is about **11.4 cent per kilometre**. Covering 15,000 km in a year on the same assumptions uses 975 litres and costs **€1,706.25**.
+
+      These are example prices, **not a live Irish pump-price feed**. Enter the price actually displayed at your filling station and the vehicle's measured consumption.
+
+      Fuel is only one part of motoring cost. Depreciation, finance, insurance, motor tax, tyres, servicing and repairs are outside this calculator. For the full ownership comparison, see [EV vs Petrol vs Diesel in Ireland](/wealth/ev-vs-petrol-vs-diesel-ireland/) or use the [Solar Hub](/solar/) if home EV charging and PV would change the numbers.
     sources:
       - {title: "SEAI — Journey Cost Calculator", url: "https://www.seai.ie/about/tools/journey-calculator/results"}
 
