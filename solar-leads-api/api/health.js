@@ -1,4 +1,4 @@
-import {json,intakeEnabled,paymentEnabled,databaseSecretReady,rest} from '../lib/core.js';
+import {json,intakeEnabled,paymentEnabled,pilotIntakeEnabled,databaseSecretReady,rest} from '../lib/core.js';
 
 // Public readiness probe; deliberately returns no account details, project
 // counts, keys or customer records. A read-only database query validates
@@ -9,6 +9,7 @@ export async function GET(){
     status:'prelaunch',
     intakeEnabled:intakeEnabled(),
     paymentsEnabled:paymentEnabled(),
+    privatePilotEnabled:pilotIntakeEnabled(),
     database:'not_configured'
   };
   if(!databaseSecretReady())return json(safe,503);
