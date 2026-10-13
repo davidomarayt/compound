@@ -184,7 +184,7 @@ export function normalizePrivatePilot(payload){
  const method=field('contactMethod',15);
  const requestedMax=Number(payload.requestedMax);
  if(!COUNTIES.includes(county))throw Error('Select a valid county');
- if(name.length<2 || !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email))throw Error('Name and a valid email are required');
+ if(name.length<2 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))throw Error('Name and a valid email are required');
  if(!['Email','Phone','Either'].includes(method) || (method!=='Email'&&!phone))throw Error('Select a contact method and enter a phone number if required');
  if(!Number.isInteger(requestedMax)||requestedMax<1||requestedMax>3)throw Error('Select one, two or three quotes');
  if(payload.privateConsent!==true || field('pilotVersion',64)!==PILOT_CONSENT_VERSION)
