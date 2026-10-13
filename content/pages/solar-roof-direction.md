@@ -3,7 +3,7 @@ title: "Solar Panel Direction Calculator Ireland: 360° Compass & kWh"
 canonical_path: /solar/roof-direction/
 meta_description: "Turn an interactive 360-degree solar compass to estimate Irish solar panel generation by roof direction, pitch, kWp and location. Compare with south-facing output."
 ---
-<main class="sor-shell" data-solar-orientation>
+<div class="sor-shell" data-solar-orientation>
   <nav aria-label="Breadcrumb"><a class="sor-back" href="/solar/">← Solar Hub</a></nav>
   <header class="sor-intro">
     <div><p class="sor-ey">COMPOUND / FREE SOLAR DESIGN TOOL</p><h1>Which way should your solar panels <em>face?</em></h1><p class="sor-lead">Turn the roof through a full 360°. See how direction, tilt and system size change estimated solar generation in Ireland. No sign-up required.</p></div>
@@ -71,4 +71,4 @@ meta_description: "Turn an interactive 360-degree solar compass to estimate Iris
   </section>
   <section class="sor-next"><div><h2>Now, does it pay back?</h2><p>Take the estimated <strong>kWh per kWp</strong> into our solar payback calculator, then compare installer quotes on the same generation assumptions. Confirm final yield predictions with your installer.</p></div><div class="sor-buttons"><a href="/solar-payback-calculator/" class="sor-action">Calculate solar payback ↗</a><a href="/solar/compare-quotes/" class="sor-action sor-action-secondary">Compare solar quotes ↗</a></div></section>
   <section aria-label="How to read solar panel compass bearings"><h2>How solar panel direction works</h2><p class="sor-disclosure">The compass uses degrees clockwise from north: 0° is north, 90° east, 180° south and 270° west. PVGIS uses a different angle convention internally; Compound converts your compass bearing automatically. For two roof faces, calculate each separately with its own kWp and add the generation estimates. An east-west layout can spread electricity production across the morning and afternoon even where total annual yield is below due south. Read our <a href="/wealth/east-west-facing-solar-panels-ireland/">east-versus-west Irish solar guide</a> for a deeper explanation.</p></section>
-</main>
+</div>
