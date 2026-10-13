@@ -35,5 +35,6 @@
 - [ ] Inspect Solar and Insurance hub URL indexing/canonicals in Google Search Console after connecting an active integration; verify sitemap status. **Blocked:** GSC Wizard subscription expired.
 - [ ] Compare 14-day and 28-day post-change query-page CTR, clicks and position against pre-change data once reporting matures.
 - [ ] Research an original, non-overlapping solar roof orientation guide (east/west vs south) with verified SEAI/PVGIS data and a pinned hero image before publishing.
-- [ ] Verify successful production deployment and public page metadata for this series of GitHub commits (GitHub Pages site workflow).
+- [x] Confirm latest GitHub Pages build and deployment succeeded (commit 23a83b377f530308c732bedd0761c39810135cb4); CI regression tests passed.
+- [ ] Confirm completed post-deploy live URL and mobile audit checks for the current build; inspect any failures before treating every page as verified.
 
