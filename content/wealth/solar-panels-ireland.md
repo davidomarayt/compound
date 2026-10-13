@@ -136,6 +136,8 @@ This has an important implication:
 
 > **A battery can move solar electricity by hours. It cannot move summer electricity into winter.**
 
+For a month-by-month 4, 6 and 8 kWp output chart and electricity-bill scenarios, see **[Solar Panels in Winter in Ireland](/wealth/solar-panels-winter-ireland/)**. It compares a specific PVGIS-derived Dublin model with SEAI’s broader seasonal guidance rather than treating those figures as the same estimate.
+
 SEAI gives an example of a well-located **3kW** domestic solar PV system producing around **2,600 kWh a year**.
 
 That is useful as a benchmark, but it should not be treated as a guaranteed output.
