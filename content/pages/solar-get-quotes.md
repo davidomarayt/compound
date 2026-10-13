@@ -181,7 +181,7 @@ meta_description: "Build a detailed solar installation quote brief in Ireland: r
           <label>Your phone (optional) <input data-sp="phone" type="tel" maxlength="35" autocomplete="tel" placeholder="+353…"></label>
           <label>Full Eircode (optional, private) <input data-sp="eircode" type="text" maxlength="12" autocomplete="postal-code" placeholder="Only disclose directly to your chosen installer"></label>
         </div>
-        <p class="sol-project-help"><strong>Future marketplace:</strong> choosing a number here is a preference, not consent for data sharing. Before any introduction, Compound must show the actual installers, ask you to approve each recipient, record that authorisation and let you stop future introductions. The current site does none of that.</p>
+        <p class="sol-project-help"><strong>How future quote requests will work:</strong> You will actively choose 1, 2 or 3 quotes and agree to a clear sharing notice before submitting. A limited preview (such as county, rough area and broad solar requirements) may then be visible to approved installers. Your name and contact details will only be shared with up to your chosen number of participating installers for the quotes you request. We will tell you which companies receive your details, and you can stop further sharing. <strong>This tool does not currently submit or share your details.</strong></p>
       </section>
     </div>
     <aside class="sol-project-side" aria-label="Your project summary">
