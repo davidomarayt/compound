@@ -1,11 +1,11 @@
 import {json,error,ready,readJson,allowedOrigin,safeHeaders,intakeEnabled,
- normalizeQuote,verifyTurnstile,token,digest,rpc,sendEmail,escapeHtml,options} from '../lib/core.js';
+ normalizeQuote,verifyTurnstile,token,digest,rpc,sendEmail,escapeHtml,options,databaseSecretReady} from '../lib/core.js';
 
 export function OPTIONS(request){return options(request);}
 export async function POST(request){
  const headers=safeHeaders(request);
  if(!allowedOrigin(request))return error('Not allowed',403);
- if(!intakeEnabled()||!ready('SUPABASE_URL','SUPABASE_SERVICE_ROLE_KEY','TURNSTILE_SECRET',
+ if(!intakeEnabled()||!databaseSecretReady()||!ready('TURNSTILE_SECRET',
    'RESEND_API_KEY','MAIL_FROM','PUBLIC_API_URL'))return json({ok:false,message:'Quote requests are not open yet'},503,headers);
  try{
    const form=normalizeQuote(await readJson(request));
