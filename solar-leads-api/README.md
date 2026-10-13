@@ -67,3 +67,16 @@ Everything fails closed until the owner approves the service account/project and
 - Added explicit `service_role` table privileges to the original base SQL and applied them as `compound_solar_server_service_role_privileges`; required for REST access on this Supabase project where new tables are not auto-exposed.
 - Supabase health check does not expose keys, rows, PII or detailed errors.
 - Still pending before pilot access: configure Auth OTP email template and allowed URLs, provision one or two test installer accounts, RLS cross-account tests, a verified email sender, spam checks, Stripe test-mode credentials and signed webhooks.
+
+## Installer login during the free-plan pilot
+
+Supabase's built-in SMTP sender only delivers to email addresses on the project's organisation team. It is restricted and **not for production installer accounts**. Do not upgrade Supabase just to edit the sign-in template; configure custom SMTP with a transactional sender such as Resend when onboarding external businesses.
+
+Until custom SMTP is configured, the installer portal deliberately uses Supabase's default **Magic Link** email rather than asking for a six-digit token that will not arrive. Its `data-ip-login-mode="magic-link"` flag allows a future switch to `code` after a valid `{{ .Token }}` template is configured.
+
+Before testing the link, set **Authentication → URL Configuration**:
+
+- Site URL: `https://compound.ie/solar/installer-portal/`
+- Allowlisted redirect URL: `https://compound.ie/solar/installer-portal/`
+
+The application supplies `emailRedirectTo` and calls `signInWithOtp({shouldCreateUser:false})`; a Supabase Auth user **and** approved installer account are both required. Never bulk-create unauthorised users. Test with an address already on the organisation team; external installer email delivery requires custom SMTP first.
