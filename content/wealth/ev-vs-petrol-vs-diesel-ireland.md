@@ -75,6 +75,8 @@ This guide reflects Irish rules and prices checked on **4 October 2026**.
 
 **Budget 2027 is due on 6 October 2026**, so fuel-tax measures, EV supports or other motoring measures may change shortly after publication. Compound will update the guide when the final measures are known rather than creating a new URL.
 
+**Charging an EV at home with solar?** The [Compound Solar Hub](/solar/) explains PV grants, batteries and export rates, while the [Solar Payback Calculator](/solar-payback-calculator/) tests whether installation cost is justified. Keep solar capital costs separate from the EV-only cost comparison.
+
 ## EV vs petrol vs diesel at a glance
 
 <div class="cs-table-wrap" tabindex="0" role="region" aria-label="EV petrol diesel Ireland comparison">
