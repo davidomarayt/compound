@@ -40,6 +40,9 @@ jobs:
           print('Approved TV licence image validated')
           PY
       - run: compound build
+        env:
+          SITE_BASE_URL: https://compound.ie
+          PREVIEW_BASE_URL: https://compound.ie
       - name: Validate interactive 360-degree solar direction tool
         shell: bash
         run: |
@@ -68,8 +71,9 @@ jobs:
               print("Path in rendered HTML:", '/solar/roof-direction/' in html, flush=True)
           if sitemap.exists():
               print("Sitemap roof entries:", [line.strip() for line in sitemap.read_text().splitlines() if 'roof-direction' in line][:3], flush=True)
-          required = ("new roof direction route", "interactive compass",
-                      "calculator JavaScript", "calculator stylesheet", "solar hub links to tool")
+          required = ("new roof direction route", "page canonical", "interactive compass",
+                      "calculator JavaScript", "calculator stylesheet", "solar hub links to tool",
+                      "sitemap indexable entry")
           missing = [key for key in required if not checks[key]]
           if missing:
               raise SystemExit("Missing critical solar page checks: " + ", ".join(missing))
