@@ -207,10 +207,31 @@ def main() -> None:
                                             failures.append(f"{width}px {path}: homeowner project form missing")
                                         if page.locator('[data-sp="eircode"]').count() != 1:
                                             failures.append(f"{width}px {path}: private homeowner contact step missing")
+                                        if page.locator("[data-orientation-embedded]").count()!=1:
+                                            failures.append(f"{width}px {path}: inline 360 compass missing")
+                                        if page.locator(".sol-project-photo-guide").count()!=0 or page.locator('[data-sp="photoRoof"]').count()!=0:
+                                            failures.append(f"{width}px {path}: removed photo section still present")
                                         page.locator('[data-sp="area"]').fill("Kells")
-                                        page.locator('[data-sp="azimuth"]').fill("225")
+                                        compass = page.locator('[data-orientation-embedded]')
+                                        compass.locator('[data-or-preset="225"]').click()
                                         if "225°" not in page.locator("[data-sb-output]").input_value():
-                                            failures.append(f"{width}px {path}: roof orientation not copied into project brief")
+                                            failures.append(f"{width}px {path}: primary compass direction not copied into project brief")
+                                        page.locator('[data-sp="faces"]').select_option("2")
+                                        face_buttons = page.locator('[data-sp-face-switch]')
+                                        if not face_buttons.is_visible():
+                                            failures.append(f"{width}px {path}: dual roof selector hidden")
+                                        page.locator('[data-sp-face-button="2"]').click()
+                                        compass.locator('[data-or-preset="90"]').click()
+                                        combined = page.locator("[data-sb-output]").input_value()
+                                        if "Primary direction (clockwise from north): 225°" not in combined or "Second direction: 90°" not in combined:
+                                            failures.append(f"{width}px {path}: two independent roof faces not captured")
+                                        page.locator('[data-sp-face-button="1"]').click()
+                                        if compass.locator('[data-or="angle"]').inner_text() != "225°":
+                                            failures.append(f"{width}px {path}: first roof angle not restored")
+                                        canvas = compass.locator('[data-or="chart"]')
+                                        if not canvas.is_visible() or "kWh" not in compass.locator('[data-or="chart-amount"]').inner_text():
+                                            failures.append(f"{width}px {path}: embedded chart not visible")
+                                        page.locator('[data-sp="faces"]').select_option("1")
                                         output = page.locator("[data-sb-output]").input_value()
                                         if "SOLAR INSTALLATION QUOTE REQUEST" not in output:
                                             failures.append(f"{width}px {path}: quote request generator did not populate output")
