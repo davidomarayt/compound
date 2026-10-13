@@ -13,7 +13,8 @@
 {% endblock %}
 {% block head %}
 <link rel="canonical" href="{{ site_url }}{{ page.url }}">
-{% if is_solar %}
+{% if page.slug == 'solar-installer-portal' %}<meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer">
+{% elif is_solar %}
 <meta property="og:type" content="website"><meta property="og:title" content="{{ page.title|e }}"><meta property="og:description" content="{{ page.meta_description|e }}"><meta property="og:url" content="{{ site_url }}{{ page.url }}"><meta property="og:site_name" content="Compound"><meta name="twitter:card" content="summary">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"{{ 'CollectionPage' if page.slug == 'solar' else 'WebPage' }}","name":{{ page.title|tojson }},"description":{{ page.meta_description|tojson }},"url":{{ (site_url ~ page.url)|tojson }},"inLanguage":"en-IE","publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ site_url }}/"},{"@type":"ListItem","position":2,"name":"Solar","item":"{{ site_url }}/solar/"}{% if page.slug != 'solar' %},{"@type":"ListItem","position":3,"name":{{ page.title|tojson }},"item":{{ (site_url ~ page.url)|tojson }}}{% endif %}]}]}</script>
 {% elif page.slug == 'insurance' %}
@@ -31,6 +32,7 @@
 {% endblock %}
 {% block post_styles %}
 {% if page.slug == 'life' %}<link rel="stylesheet" href="/static/life-hub.css?v=1">
+{% elif page.slug == 'solar-installer-portal' %}<link rel="stylesheet" href="/static/solar-installer-portal.css?v=1"><script src="/static/solar-installer-portal.js?v=1" defer></script>
 {% elif page.slug == 'solar-for-installers' %}<link rel="stylesheet" href="/static/solar-hub.css?v=6"><link rel="stylesheet" href="/static/solar-sponsors.css?v=5"><script src="/static/solar-sponsors.js?v=3" defer></script>
 {% elif is_solar %}<link rel="stylesheet" href="/static/solar-hub.css?v=6"><script src="/static/solar-hub.js?v=5" defer></script><script src="/static/solar-research.js?v=2" defer></script>
 {% if page.slug == 'solar-roof-direction' %}<link rel="stylesheet" href="/static/solar-orientation.css?v=2"><script src="/static/solar-orientation.js?v=3" defer></script>{% endif %}
