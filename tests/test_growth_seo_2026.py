@@ -71,6 +71,24 @@ def test_installer_enquiry_is_not_counted_as_homeowner_lead():
     assert "solar-sponsors.js?v=3" in read("compound/site/templates/page.html")
 
 
+def test_new_east_west_solar_evergreen_is_original_and_connected():
+    article = read("content/wealth/east-west-facing-solar-panels-ireland.md")
+    assert "publication_status: published" in article
+    assert "2026-10-13" in article
+    assert "require_pinned_hero: true" in article
+    assert "images.pexels.com/photos/8457868/" in article
+    assert "Stoneybatter" in article and "PVGIS" in article
+    assert "irradiation" in article.lower() and "not" in article.lower()
+    assert "<svg" in article and "aria-labelledby" in article
+    assert "](/solar/)" in article and "](/solar-payback-calculator/)" in article
+    for feeder in (
+        "content/pages/solar.md",
+        "content/wealth/solar-panels-ireland.md",
+        "content/wealth/how-many-solar-panels-do-i-need-ireland.md",
+    ):
+        assert "/wealth/east-west-facing-solar-panels-ireland/" in read(feeder)
+
+
 def test_solar_and_insurance_hubs_have_indexable_canonical_sources():
     for path, canonical in (
         ("content/pages/solar.md", "/solar/"),
