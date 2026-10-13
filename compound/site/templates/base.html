@@ -2,6 +2,7 @@
 <html lang="en-IE">
 <head>
 {% set ads_configured = adsense.client %}
+{% set is_private_installer_portal = page is defined and page.slug == 'solar-installer-portal' %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>try{if(localStorage.getItem('compound_analytics_consent'))document.documentElement.classList.add('analytics-consent-set')}catch(e){}</script>
@@ -12,7 +13,7 @@
 {% block meta %}<meta name="description" content="Thoughtful guides, useful tools and timely news on health, wealth and life in Ireland.">{% endblock %}
 {% block head %}{% endblock %}
 {% if preview is not defined or not preview %}<script type="application/ld+json">{{ site_identity_jsonld | safe }}</script>{% endif %}
-{% if analytics.measurement_id and not preview %}<script>
+{% if analytics.measurement_id and not preview and not is_private_installer_portal %}<script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 (function(){var choice=null;try{choice=localStorage.getItem('compound_analytics_consent')}catch(e){}
 gtag('consent','default',{
@@ -25,13 +26,13 @@ window.compoundStartAnalytics=function(){if(document.querySelector('script[data-
 };
 if(choice==='granted')window.compoundStartAnalytics();})();
 </script>{% endif %}
-{% if ads_configured and not preview and (ads_allowed is not defined or ads_allowed) %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense.client }}" crossorigin="anonymous"></script>{% endif %}
+{% if ads_configured and not preview and not is_private_installer_portal and (ads_allowed is not defined or ads_allowed) %}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense.client }}" crossorigin="anonymous"></script>{% endif %}
 <link rel="stylesheet" href="/static/style.css?v=20260928-contrast1">
 {% block post_styles %}{% endblock %}
 <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="Compound" href="/feed.xml">
 <script src="/static/site.js?v=20261012-solar-attribution" defer></script>
-{% if analytics.measurement_id and not preview %}<script src="/static/solar-funnel.js?v=20261012-1" defer></script>{% endif %}
+{% if analytics.measurement_id and not preview and not is_private_installer_portal %}<script src="/static/solar-funnel.js?v=20261012-1" defer></script>{% endif %}
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -53,10 +54,10 @@ if(choice==='granted')window.compoundStartAnalytics();})();
 </main>
 <footer class="site-footer">
  <div class="footer-top"><div><a class="wordmark" href="/">compound<span class="brand-dot">.</span></a><p>Good things build on each other.</p></div><div class="footer-mission">A little more clarity.<br>A little more possibility.<br>A life that feels like yours.</div><nav aria-label="Footer navigation"><a href="/about/">Our approach</a><a href="/contact/">Get in touch</a><a href="/search/">Explore the journal</a><a href="/news/">Latest news</a><a href="/tools/">Tools & calculators</a><a href="/feed.xml">Follow via RSS ↗</a></nav></div>
- <div class="footer-bottom"><span>© {{ year }} Compound · Made for life in Ireland</span><nav aria-label="Policies"><a href="/editorial-policy/">Editorial policy</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/disclaimer/">Disclaimer</a>{% if analytics.measurement_id and not preview %}<a href="#" data-privacy-settings>Analytics settings</a>{% endif %}{% if ads_configured and not preview and (ads_allowed is not defined or ads_allowed) %}<a href="#" onclick="window.googlefc&&googlefc.callbackQueue.push({CONSENT_DATA_READY:function(){googlefc.showRevocationMessage()}});return false;">Privacy settings</a>{% endif %}</nav></div>
+ <div class="footer-bottom"><span>© {{ year }} Compound · Made for life in Ireland</span><nav aria-label="Policies"><a href="/editorial-policy/">Editorial policy</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/disclaimer/">Disclaimer</a>{% if analytics.measurement_id and not preview and not is_private_installer_portal %}<a href="#" data-privacy-settings>Analytics settings</a>{% endif %}{% if ads_configured and not preview and not is_private_installer_portal and (ads_allowed is not defined or ads_allowed) %}<a href="#" onclick="window.googlefc&&googlefc.callbackQueue.push({CONSENT_DATA_READY:function(){googlefc.showRevocationMessage()}});return false;">Privacy settings</a>{% endif %}</nav></div>
  <p class="footer-disclaimer">For information, not individual medical, financial or tax advice. Check the sources and speak to a qualified professional about your circumstances.</p>
 </footer>
-{% if analytics.measurement_id and not preview %}<section class="privacy-banner" data-privacy-banner aria-labelledby="privacy-banner-title" aria-live="polite">
+{% if analytics.measurement_id and not preview and not is_private_installer_portal %}<section class="privacy-banner" data-privacy-banner aria-labelledby="privacy-banner-title" aria-live="polite">
  <div><p class="eyebrow">YOUR PRIVACY</p><h2 id="privacy-banner-title">Help us understand what gets read.</h2><p>With your permission, anonymous Google Analytics measurements tell us which articles are useful. We do not send calculator entries or form values. You can decline and still read everything.</p><p class="privacy-banner-links"><a href="/privacy/">Privacy policy</a> · <a href="/cookies/">Cookie policy</a></p></div>
  <div class="privacy-banner-actions"><button type="button" class="button button-dark" data-analytics-consent="granted">Allow analytics</button><button type="button" class="button button-light" data-analytics-consent="denied">Decline</button></div>
 </section>{% endif %}
