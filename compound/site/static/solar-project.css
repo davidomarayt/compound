@@ -1,0 +1,59 @@
+/* Solar Project Builder — intentional white-and-black owner dashboard */
+.sol-project{--project-border:#dae2dc;--project-ink:#18271f;--project-muted:#587065;gap:27px}
+.sol-project .sol-project-hero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(240px,.58fr);gap:clamp(18px,3vw,35px);padding:clamp(26px,4vw,45px);border:1px solid #d6dfd8;border-radius:12px;background:#fff;align-items:start}
+.sol-project-hero h1{font-size:clamp(38px,5.2vw,68px);line-height:1.06;color:#172a20;margin:9px 0 19px;max-width:13ch}
+.sol-project-hero h1 em{color:#50735f}
+.sol-project-hero p:not(.sol-ey){font-size:15px;color:#4b6254;line-height:1.8;max-width:60ch}
+.sol-project-status{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.sol-project-status span{border:1px solid #c9d9cc;color:#2f5141;font-size:11px;border-radius:99px;padding:7px 11px}
+.sol-project-progress{border:1px solid #d5e2d5;border-radius:9px;background:#f4f8f3;padding:22px;min-width:0}
+.sol-project-progress-score{font-size:clamp(39px,5vw,60px);font-weight:750;color:#234a37;line-height:1.1;margin:9px 0;font-variant-numeric:tabular-nums}
+.sol-project-track{height:9px;border-radius:50px;background:#dce8d8;overflow:hidden;margin:12px 0}
+.sol-project-track span{display:block;height:100%;background:#2f7552;width:0;transition:width .2s}
+.sol-project-progress p{font-size:12px;line-height:1.6;color:#45634e}
+.sol-project-progress small{display:block;margin-top:9px;color:#657c68;font-size:11px;line-height:1.6}
+.sol-project-disclosure{padding:20px;border:1px solid #c6d8ca;background:#edf5ee;border-radius:8px}
+.sol-project-disclosure strong{color:#274a37;font-size:13px;display:block;margin-bottom:8px}
+.sol-project-disclosure p{line-height:1.7;font-size:12px;color:#50695a}
+.sol-project-navigation{display:flex;flex-wrap:wrap;gap:8px}
+.sol-project-navigation a{display:inline-block;border:1px solid #cbd8cf;border-radius:7px;background:#fff;padding:10px 14px;font-weight:750;color:#355841;font-size:12px;text-decoration:none}
+.sol-project-navigation a:hover{background:#ecf3ec}
+.sol-project-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,.34fr);gap:25px;align-items:start}
+.sol-project-sections{display:grid;gap:23px;min-width:0}
+.sol-project-step,.sol-project-output{padding:clamp(19px,3vw,33px);border:1px solid var(--project-border);background:#fff;border-radius:9px;min-width:0}
+.sol-project-step-head{margin-bottom:25px}
+.sol-project-step-head>span{color:#507158;letter-spacing:.11em;font-size:10px;font-weight:800}
+.sol-project-step-head h2{font-size:clamp(28px,3vw,41px);line-height:1.1;margin:8px 0 8px;color:#24382b}
+.sol-project-step-head p{font-size:13px;line-height:1.75;color:#62756a}
+.sol-project-step-head a,.sol-project-side-links a{color:#255e44;text-decoration:underline;text-underline-offset:3px}
+.sol-project .sol-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 21px}
+.sol-project .sol-fields label{font-weight:750;color:#2e4b3b;font-size:12px;line-height:1.5;display:block}
+.sol-project .sol-fields label small{display:block;color:#75877c;font-weight:400;font-size:11px;margin:1px 0}
+.sol-project .sol-fields :is(input,select,textarea){background:#fff;color:#172a20;border:1px solid #b8cdbf;border-radius:6px;min-height:43px;width:100%;font-size:15px}
+.sol-project .sol-fields :is(input,select,textarea)::placeholder{color:#829489}
+.sol-project .sol-fields label:has(input:focus-visible),.sol-project .sol-fields label:has(select:focus-visible){color:#125b3b}
+.sol-project-secondary-face{background:#f2f7f1;border:1px solid #d5e3d5;padding:20px;border-radius:8px;margin:25px 0}
+.sol-project-secondary-face[hidden]{display:none!important}
+.sol-project-secondary-face h3{font-size:25px;margin:0 0 17px;color:#284936}
+.sol-project-help{font-size:12px;line-height:1.7;color:#5a705f;margin-top:18px!important}
+.sol-project-wide-label{display:block;margin-top:20px;font-size:12px;color:#37523f;font-weight:750}
+.sol-project-wide-label textarea{width:100%;margin-top:7px;padding:12px;border:1px solid #b8cdbf;border-radius:6px;font-size:14px;color:#1b3025;min-height:110px;resize:vertical;background:#fff}
+.sol-project-photo-guide{border:1px solid #d9e2d9;background:#f8faf7;border-radius:8px;padding:20px;margin-top:23px}
+.sol-project-photo-guide h3{font-size:24px;color:#2c4d39;margin-bottom:8px}
+.sol-project-photo-guide p{font-size:12px;color:#5f7566;line-height:1.75}
+.sol-project-photo-check{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:13px}
+.sol-project-photo-check label{font-size:12px;color:#435f4d;display:flex;align-items:center;gap:9px;font-weight:600}
+.sol-project-photo-check input{flex:0 0 18px;width:18px;height:18px;margin:0;accent-color:#285c42;min-height:0}
+.sol-project-side{position:sticky;top:95px;min-width:0}
+.sol-project-summary{border:1px solid #c7d9c9;background:#eef5ef;border-radius:9px;padding:22px;min-width:0}
+.sol-project-summary h2{font-size:clamp(25px,2.5vw,34px);color:#1d3e2a;margin:9px 0}
+.sol-project-summary>p:not(.sol-ey){font-size:12px;line-height:1.75;color:#597061;margin-top:12px}
+.sol-project-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:17px}
+.sol-project-tags span{background:#fff;border:1px solid #c2d7c4;border-radius:99px;padding:5px 9px;font-size:11px;color:#315a41;max-width:100%;overflow-wrap:anywhere}
+.sol-project-side-links{display:grid;gap:10px;border-top:1px solid #ccdecd;margin-top:17px;padding-top:17px;font-size:12px;font-weight:800}
+.sol-project-output{border-color:#aecfb8;background:#f8fbf8}
+.sol-project-output textarea{width:100%;resize:vertical;min-height:420px;max-width:100%;padding:20px;border-radius:8px;font-size:12px;line-height:1.6;color:#1c3826;border:1px solid #bbd2c2;background:#fff;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+.sol-project-output-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:14px 0}
+.sol-project-output-actions span{font-size:12px;color:#45684e}
+@media(max-width:990px){.sol-project-body{grid-template-columns:minmax(0,1fr)}.sol-project-side{position:static;order:-1}.sol-project .sol-fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.sol-project .sol-project-hero,.sol-project .sol-fields,.sol-project-photo-check{grid-template-columns:minmax(0,1fr)}.sol-project-status span{font-size:10px}.sol-project-navigation{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.sol-project-navigation a{padding:9px 6px;text-align:center;font-size:11px}.sol-project-step,.sol-project-output{padding:18px 14px}.sol-project-output textarea{min-height:330px}}
