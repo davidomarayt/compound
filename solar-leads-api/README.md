@@ -1,6 +1,6 @@
 # Compound Solar — private lead marketplace backend
 
-**Implementation status (13 October 2026):** Isolated Compound Life Ltd / Compound Solar Supabase project in Ireland (`guifxtijipkpvjjyhatq`) has the initial secure schema and transactional SKU / payment release functions installed. Vercel **compound-solar-api** project is deployed from `solar-leads-api/` in Dublin, and the installer portal uses Supabase's public publishable key. Homeowner form submission is coded but hidden behind an OFF flag. Both API launch flags remain OFF, and live Stripe charges require a second separate approval switch. **No real customers, installer accounts, payments or homeowner PII are stored.**
+**Implementation status (13 October 2026):** Isolated Compound Life Ltd / Compound Solar Supabase project in Ireland (`guifxtijipkpvjjyhatq`) has the initial secure schema and transactional SKU / payment release functions installed. Vercel **compound-solar-api** project is deployed from `solar-leads-api/` in Dublin, and the installer portal uses Supabase's public publishable key. Vercel's elevated `SUPABASE_SECRET_KEY` has been configured in production, and an authenticated server-only read-only health check returned HTTP 200 with `database: connected`. Homeowner form submission is coded but hidden behind an OFF flag. Both API launch flags remain OFF, and live Stripe charges require a second separate approval switch. **No real customers, installer accounts, payments or homeowner PII are stored.**
 This is a standalone Vercel Functions root, separate from the existing `sponsor-api/` and its abandoned county-sponsorship model.
 
 ## Where everything lives
@@ -19,7 +19,7 @@ This is a standalone Vercel Functions root, separate from the existing `sponsor-
 
 1. **Completed:** Dedicated Compound Solar project in `eu-west-1`, isolated from MyClinician and PlotMap.
 2. **Completed (first pass):** Base SQL and `schema-functions.sql` applied on 13 October 2026; all tables have RLS and no administrative RPC can be executed by `anon` or `authenticated`. All privacy-schema tables have intentionally no client policies. Full two-installer integration testing still required.
-3. **Completed (deployment only):** Vercel `compound-solar-api` is deployed from `solar-leads-api/`. Public Supabase URL and publishable key are configured as Vercel environment variables. **Pending:** Add the elevated `SUPABASE_SECRET_KEY` (modern `sb_secret_` key) directly through Vercel's secret settings. Never paste it into GitHub, ChatGPT or public HTML.
+3. **Completed (deployment only):** Vercel `compound-solar-api` is deployed from `solar-leads-api/`. Public Supabase URL and publishable key are configured as Vercel environment variables. **Completed:** Elevated `SUPABASE_SECRET_KEY` was added to Vercel production settings by the owner, and secure backend database access was verified via `/api/health` (HTTP 200). Never paste this key into GitHub, chat or public HTML.
 4. **Pending UI configuration:** Set Supabase Auth Site URL and redirect allowlist to `https://compound.ie/solar/installer-portal/`; configure the email template to send the six-digit `{{ .Token }}` code (or allow a magic-link fallback), set verified SMTP for reliable sign-ins, then manually approve two test installer accounts with different counties. `shouldCreateUser:false` is already enforced in the portal.
 5. **Partially complete:** Installer portal is now connected to Supabase with the non-secret URL and publishable key; real login requires the Supabase Auth settings and approved test installer accounts. Checkout API URL remains deliberately blank until server-side Stripe test flow has passed.
 6. **Pending:** Configure Stripe *test-mode* `sk_test_...` secret and webhook signing secret directly in Vercel; test payment completion, duplicate/replayed events, expiry, withdrawal and simultaneous buyers. The connected Stripe app currently exposes **live mode only**; no real Stripe charges have been attempted.
@@ -58,3 +58,12 @@ GitHub workflow `solar leads api` runs syntax, unit and SQL presence tests. This
 - Connected Stripe account is **Compound Life Ltd, live mode**, with no test-mode account visible; use its Dashboard's test environment and a `sk_test_` key, never `sk_live_` for pilot tests.
 
 Everything fails closed until the owner approves the service account/project and the correct deployment and secrets exist.
+
+## Deployment verification (13 October 2026)
+
+- Vercel project: `compound-solar-api`, Dublin region; automatic GitHub deployments.
+- Safe status endpoint `https://compound-solar-api.vercel.app/api/health`: HTTP 200, `database: connected`.
+- Public write/checkout features: disabled by separate Vercel environment flags.
+- Added explicit `service_role` table privileges to the original base SQL and applied them as `compound_solar_server_service_role_privileges`; required for REST access on this Supabase project where new tables are not auto-exposed.
+- Supabase health check does not expose keys, rows, PII or detailed errors.
+- Still pending before pilot access: configure Auth OTP email template and allowed URLs, provision one or two test installer accounts, RLS cross-account tests, a verified email sender, spam checks, Stripe test-mode credentials and signed webhooks.
