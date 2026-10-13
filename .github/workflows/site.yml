@@ -279,6 +279,8 @@ jobs:
           grep -Fq 'data-solar-export' /tmp/solar-solar-export-rates.html
           grep -Fq 'data-solar-equipment' /tmp/solar-solar-equipment.html
           grep -Fq 'data-orientation-embedded' /tmp/solar-solar-get-quotes.html
+          grep -Fq 'data-or="chart"' /tmp/solar-solar-get-quotes.html
+          grep -Fq 'data-or="dial"' /tmp/solar-solar-get-quotes.html
           grep -Fq 'data-sp-face-button="2"' /tmp/solar-solar-get-quotes.html
           ! grep -Fq 'sol-project-photo-guide' /tmp/solar-solar-get-quotes.html
           grep -Fq 'solar-orientation.js?v=3' /tmp/solar-solar-get-quotes.html
