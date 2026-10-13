@@ -48,6 +48,11 @@ jobs:
         run: |
           set -euo pipefail
           node --check compound/site/static/solar-orientation.js
+          node --check compound/site/static/solar-project.js
+          grep -Fq 'data-solar-project' public/solar/get-quotes/index.html
+          grep -Fq 'solar-project.js?v=1' public/solar/get-quotes/index.html
+          grep -Fq 'solar-project.css?v=1' public/solar/get-quotes/index.html
+
           python - <<'PY'
           from pathlib import Path
           page = Path("public/solar/roof-direction/index.html")
