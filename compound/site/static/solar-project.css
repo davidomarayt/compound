@@ -91,3 +91,10 @@
   .sol-project .sor-embedded .sor-presets button{min-height:38px}
   .sol-project .sor-embedded .sor-chart-section{padding:15px 11px}
 }
+
+/* Never reveal the quote-sharing form until the secured intake launch flag is on. */
+.sol-project [data-sp-live-request][hidden]{display:none!important}
+.sol-project [data-sp-live-request] form{display:grid;gap:16px;margin-top:16px}
+.sol-project [data-sp-live-request] [data-sp-quote-consent]{width:18px;height:18px;vertical-align:middle;margin-right:10px;accent-color:#0f716e}
+.sol-project [data-sp-live-request] [data-sp-quote-status][data-state="error"]{color:#a33434}
+.sol-project [data-sp-live-request] [data-sp-quote-status][data-state="success"]{color:#136f52}
