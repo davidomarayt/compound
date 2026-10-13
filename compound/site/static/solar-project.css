@@ -57,3 +57,37 @@
 .sol-project-output-actions span{font-size:12px;color:#45684e}
 @media(max-width:990px){.sol-project-body{grid-template-columns:minmax(0,1fr)}.sol-project-side{position:static;order:-1}.sol-project .sol-fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.sol-project .sol-project-hero,.sol-project .sol-fields,.sol-project-photo-check{grid-template-columns:minmax(0,1fr)}.sol-project-status span{font-size:10px}.sol-project-navigation{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.sol-project-navigation a{padding:9px 6px;text-align:center;font-size:11px}.sol-project-step,.sol-project-output{padding:18px 14px}.sol-project-output textarea{min-height:330px}}
+
+/* In-page 360° roof explorer. Reuses the same interactive tool as /solar/roof-direction/.
+   Keep it contained in the narrow project grid, including Samsung dark mode. */
+.sol-project .sor-embedded{width:100%;max-width:100%;min-width:0;padding:0;margin:22px 0 25px;display:block}
+.sol-project .sor-embedded .sor-board{grid-template-columns:minmax(0,1fr);border-radius:10px;box-shadow:none}
+.sol-project .sor-embedded .sor-left{padding:clamp(17px,2.8vw,27px);gap:12px}
+.sol-project .sor-embedded .sor-dial{max-width:285px;margin:4px auto 0}
+.sol-project .sor-embedded .sor-right{padding:clamp(17px,2.8vw,27px)}
+.sol-project .sor-embedded .sor-chart-section{margin-top:13px;padding:clamp(16px,2vw,22px)}
+.sol-project .sor-embedded .sor-chart-header h2{font-size:clamp(26px,3.1vw,37px)}
+.sol-project .sor-embedded .sor-intro{display:none}
+.sol-project .sor-embedded .sor-buttons{gap:8px}
+.sol-project-compass-top{padding:19px 20px;background:#eff5ef;border:1px solid #d3e3d5;border-radius:10px 10px 0 0;color:#244b34}
+.sol-project-compass-top h3{font-size:clamp(25px,3vw,35px);margin:7px 0 9px;line-height:1.1;color:#203f2c}
+.sol-project-compass-top p:not(.sol-ey){font-size:13px;line-height:1.6;color:#4b6754;margin:0}
+.sol-project .sol-project-face-tabs{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}
+.sol-project .sol-project-face-tabs[hidden]{display:none!important}
+.sol-project-face-tabs button{border:1px solid #719d83;border-radius:6px;padding:10px 16px;background:#fff;color:#28523b;font:700 12px var(--sans);cursor:pointer}
+.sol-project-face-tabs button[aria-pressed="true"]{background:#24513b;color:#fff}
+.sol-project-compass-top .sol-project-face-status{margin-top:14px!important;font-size:12px!important;font-weight:650;color:#315e42!important}
+.sol-project .sol-project-roof-readout{align-self:end;min-height:42px;border:1px solid #cce1d2;border-radius:6px;background:#f5faf6;color:#3c5c48;padding:10px 12px;font-size:12px;line-height:1.65}
+.sol-project-roof-readout strong{display:block;color:#214d35;font-size:14px}
+.sol-project .sor-embedded .sor-chart-section .sor-ey{color:#c7f7ab}
+.sol-project .sor-embedded .sor-right .sor-settings label{display:block;font-size:12px}
+.sol-project .sor-embedded :is(.sor-status-chip,.sor-kwh,.sor-kpi){overflow-wrap:anywhere}
+@media(max-width:650px){
+  .sol-project-compass-top{padding:16px 13px}
+  .sol-project .sor-embedded .sor-left{padding:16px 12px}
+  .sol-project .sor-embedded .sor-right{padding:18px 13px}
+  .sol-project .sor-embedded .sor-dial{max-width:290px}
+  .sol-project .sor-embedded .sor-presets{gap:3px}
+  .sol-project .sor-embedded .sor-presets button{min-height:38px}
+  .sol-project .sor-embedded .sor-chart-section{padding:15px 11px}
+}
