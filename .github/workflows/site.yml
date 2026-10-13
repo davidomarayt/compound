@@ -274,6 +274,19 @@ jobs:
           fetch https://compound.ie/static/solar-hub.js /tmp/solar-hub.js
           grep -Fq 'data-solar-quotes' /tmp/solar-hub.js
 
+          # Solar orientation explorer must be visible, legible and have fresh chart assets.
+          fetch https://compound.ie/solar/roof-direction/ /tmp/solar-roof-direction.html
+          grep -Fq 'data-solar-orientation' /tmp/solar-roof-direction.html
+          grep -Fq 'class="sor-canvas"' /tmp/solar-roof-direction.html
+          grep -Fq 'data-or="chart-amount"' /tmp/solar-roof-direction.html
+          grep -Fq 'solar-orientation.js?v=2' /tmp/solar-roof-direction.html
+          grep -Fq 'solar-orientation.css?v=2' /tmp/solar-roof-direction.html
+          grep -Fq '/solar/roof-direction/' /tmp/solar-solar.html
+          fetch https://compound.ie/static/solar-orientation.js?v=2 /tmp/solar-orientation-v2.js
+          fetch https://compound.ie/static/solar-orientation.css?v=2 /tmp/solar-orientation-v2.css
+          grep -Fq 'function drawChart' /tmp/solar-orientation-v2.js
+          grep -Fq 'color-scheme:only light' /tmp/solar-orientation-v2.css
+
           fetch https://compound.ie/ads.txt /tmp/ads.txt
           grep -Fq 'google.com, pub-6115783809711785, DIRECT, f08c47fec0942fa0' /tmp/ads.txt
 
