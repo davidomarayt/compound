@@ -17,7 +17,7 @@ meta_description: "Ireland's solar hub: check SEAI grants, compare installation 
       </div>
     </div>
   </section>
-  <div class="sol-utility"><span>Start here</span><nav aria-label="Solar hub sections"><a href="#solar-tools">Calculators</a><a href="#sol-orientation-teaser-title">Roof compass</a><a href="#solar-learn">Guides</a><a href="#solar-journey">How it works</a><a href="#solar-sources">Official sources</a></nav></div>
+  <div class="sol-utility"><span>Start here</span><nav aria-label="Solar hub sections"><a href="#solar-tools">Calculators</a><a href="#sol-orientation-teaser-title">Roof compass</a><a href="#solar-learn">Guides</a><a href="#solar-journey">How it works</a><a href="#solar-sources">Official sources</a><a href="/solar/installer-portal/">Installer login ↗</a></nav></div>
   <section class="sol-feature" id="solar-tools" aria-labelledby="solar-tools-title">
     <div class="sol-sectionhead"><div><p class="sol-ey">INTERACTIVE TOOLS</p><h2 id="solar-tools-title">Three decisions. <em>Better answers.</em></h2></div><p>Compare real quotes and run the economics before signing an installation contract. No registration needed.</p></div>
     <div class="sol-cardgrid sol-cardgrid-3">
