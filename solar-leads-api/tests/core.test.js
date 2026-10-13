@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createHmac} from 'node:crypto';
 import {normalizeQuote,CONSENT_VERSION,PRICE_CENTS,COUNTIES,
- stripeSignature,escapeHtml,ready,paymentEnabled,intakeEnabled,digest,rest,databaseSecretReady} from '../lib/core.js';
+ stripeSignature,escapeHtml,ready,paymentEnabled,intakeEnabled,digest,rest,databaseSecretReady,normalizePrivatePilot,PILOT_CONSENT_VERSION,pilotIntakeEnabled} from '../lib/core.js';
 
 const valid=()=>({
  county:'Meath',name:'Test Homeowner',email:'sample@example.invalid',phone:'0871111111',
@@ -97,5 +97,38 @@ test('real Stripe charges require a separate explicit approval',()=>{
    for(const [k,v] of Object.entries({SOLAR_LEADS_PAYMENTS_ENABLED:old.pay,STRIPE_SECRET_KEY:old.key,SOLAR_LEADS_REAL_CHARGES_APPROVED:old.live})){
      if(v===undefined)delete process.env[k];else process.env[k]=v;
    }
+ }
+});
+
+const pilotRequest=()=>({
+ county:'Meath',name:'Synthetic Test',email:'test@example.invalid',phone:'',
+ requestedMax:2,contactMethod:'Email',privateConsent:true,pilotVersion:PILOT_CONSENT_VERSION,
+ brief:{role:'Owner',timing:'Within 3 months',area:'Kells',notes:'Roof access issue',
+  unexpectedField:'drop me'}
+});
+test('private pilot request never authorises installer sharing and whitelists the brief',()=>{
+ const result=normalizePrivatePilot(pilotRequest());
+ assert.equal(result.county,'Meath');
+ assert.equal(result.requested_max,2);
+ assert.equal(result.consent_version,PILOT_CONSENT_VERSION);
+ assert.equal(result.brief.notes,'Roof access issue');
+ assert.equal(result.brief.unexpectedField,undefined);
+ assert.equal(result.consent,undefined);
+ assert.equal(result.permission,undefined);
+});
+test('private pilot requires standalone informed consent and quote-ready authorisation',()=>{
+ assert.throws(()=>normalizePrivatePilot({...pilotRequest(),privateConsent:false}),/Consent/);
+ assert.throws(()=>normalizePrivatePilot({...pilotRequest(),brief:{role:'Not yet the decision-maker',timing:'Within 3 months'}}),/Only an owner/);
+ assert.throws(()=>normalizePrivatePilot({...pilotRequest(),requestedMax:4}),/Select one/);
+});
+test('private pilot requires a separate launch switch',()=>{
+ const value=process.env.SOLAR_PILOT_INTAKE_ENABLED;
+ try{
+  delete process.env.SOLAR_PILOT_INTAKE_ENABLED;
+  assert.equal(pilotIntakeEnabled(),false);
+  process.env.SOLAR_PILOT_INTAKE_ENABLED='true';
+  assert.equal(pilotIntakeEnabled(),true);
+ }finally{
+  if(value===undefined)delete process.env.SOLAR_PILOT_INTAKE_ENABLED;else process.env.SOLAR_PILOT_INTAKE_ENABLED=value;
  }
 });
