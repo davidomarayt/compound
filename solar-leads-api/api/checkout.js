@@ -1,5 +1,5 @@
 import {json,ready,safeHeaders,allowedOrigin,paymentEnabled,readJson,
-  authenticatedInstaller,rpc,stripe,options} from '../lib/core.js';
+  authenticatedInstaller,rpc,stripe,options,token} from '../lib/core.js';
 export function OPTIONS(request){return options(request);}
 export async function POST(request){
  const headers=safeHeaders(request);
@@ -33,7 +33,7 @@ export async function POST(request){
      cancel_url:'https://compound.ie/solar/installer-portal/?checkout=cancelled',
      expires_at:String(now+1800)
    });
-   const checkout=await stripe('checkout/sessions',form,'POST','solar-order-'+orderId);
+   const checkout=await stripe('checkout/sessions',form,'POST','solar-order-'+orderId+'-'+token().slice(0,12));
    if(checkout?.status!=='open'||!/^https:\/\/checkout\.stripe\.com\//.test(checkout.url||''))
      throw new Error('Payment provider unavailable');
    await rpc('solar_attach_checkout',{p_order_id:orderId,p_checkout_id:checkout.id});
