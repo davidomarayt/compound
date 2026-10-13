@@ -86,8 +86,12 @@ export function normalizeQuote(payload){
  if(payload.consent!==true||pick('consentVersion',70)!==CONSENT_VERSION)throw new Error('Quote-sharing permission is required');
  const tokenValue=pick('turnstileToken',2000);
  if(tokenValue.length<10)throw new Error('Complete the spam check');
+ const authority=payload.brief?.role;
+ if(!['Owner','Joint owner','Authorised decision-maker'].includes(authority))
+   throw new Error('Only owners or authorised decision-makers can request quotes');
  const area=pick('area',70),property=pick('building',80),project=pick('project',80);
  const timeframe=pick('timing',50),battery=pick('battery',60);
+ if(!timeframe || timeframe==='Researching options')throw new Error('Only quote-ready projects can be introduced');
  const orientation=pick('roofOrientation',40),size=payload.kwp==null||payload.kwp===''?null:Number(payload.kwp);
  if(size!==null&&(!Number.isFinite(size)||size<=0||size>100))throw new Error('Invalid system size');
  // Only whitelisted structured quote fields are accepted. No photos, documents,
