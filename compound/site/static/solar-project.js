@@ -194,7 +194,7 @@
     root.querySelector('[data-sb-copy-status]').textContent='';
   }
   fields.forEach(function(f){f.addEventListener('input',update);f.addEventListener('change',update);});
-  // Existing solar-hub.js already owns copy button and respects browser clipboard permissions.
+  // This expanded project form owns its own copy button; legacy template handler is disabled.
   var copy=root.querySelector('[data-sb-copy]');
   if(copy)copy.addEventListener('click',function(){
     var output=root.querySelector('[data-sb-output]'),status=root.querySelector('[data-sb-copy-status]');
