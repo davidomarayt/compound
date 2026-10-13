@@ -69,3 +69,46 @@ Funnel attribution is permitted only when analytics consent exists and no person
 ## Pilot milestones
 - No live marketplace/sales until at least 2-3 verified registered installers, consent architecture and payment release are working.
 - Validate quality on matched homeowner-authorised enquiries, price and repeat buying.
+
+## Approved private SKU inventory and purchase workflow (13 October 2026)
+
+**Product decision:** The customer-facing Solar Project Builder remains at `/solar/get-quotes/`. The lead marketplace is **private to approved installers**, not a public directory. No live submission, Stripe payment, or release of homeowner data is authorised by this specification alone. The existing browser-local builder must not pretend to submit leads until its secure backend is operational.
+
+### Creation and qualification
+
+1. A homeowner fills out the public Solar Project Builder, including the built-in 360° roof compass. Technical unknowns are allowed; **no photo uploads or photograph checklist**.
+2. Completing the optional quote-request step is a distinct action from completing the calculator. Ask for a clear request to obtain quotations, their preferred maximum of **1, 2, or 3** installers, preferred contact channel, and acknowledgement of the privacy notice. Quote-request submission requires securely collected contact details, an independently verified email or phone, project intent/ownership screening, and a qualifying project brief. Optional fields must not prevent completion.
+3. Store a structured project, private contacts, a versioned consent/authorisation log, expiry and status in an authenticated backend. Create a unique non-guessable internal project identifier and a human-readable display SKU such as `SOL-MH-2026-00421`; do **not** encode personal details in the SKU. Sequential public SKUs must never confer access to any data.
+4. **Only after** the request is verified and classified as quote-ready, create one private listing at the pilot **€65 per verified introduction** price. Default stock is exactly the homeowner-selected maximum (1–3), never an unconditional three. Status begins `pending_review`; only `active` projects show as anonymised inventory. An admin can reject or hold poor-quality/duplicate projects. An optional research-only brief must never create a paid listing.
+
+### Private installer browse and purchase
+
+- Only authenticated, Compound-approved, currently SEAI-registered solar installation businesses with their service areas configured can browse listings. Enforce permission in server-side API/DB row-level access controls; no public listing page, indexable routes, static JSON, or crawler-accessible previews. Show only matching geographic listings and sanitised structured fields: broad county, dwelling type, project category, general roof orientation, approximate system size/annual kWh, battery preference, broad timeframe, non-identifying readiness status, price, number of introduction slots left, and listing expiry. Suppress any sparse, distinctive combinations with re-identification risk. Do not include exact Eircode, full address, homeowner name, email, phone, property photos or unrestricted free-text notes.
+- A listing displays `SKU`, `€65 introduction price`, `X of N available`, and an action to `Request introduction`. An installer can purchase **at most once per project** and should know that this is a **shared lead** unless the customer explicitly selected exclusive treatment. An installer must never see another installer's identity, customer quote, or purchase history.
+- Before allowing payment/release, obtain and record homeowner approval **for that identified installer**, either by pre-approving a shown set of named eligible businesses or by accepting a pending request. Selecting `up to 3 quotes` alone does not authorise disclosure to arbitrary purchasers. If the homeowner declines or does not respond, do not charge or release details. Homeowner may withdraw permission for *future* introductions, reduce unfilled slots, close the project, and see who was authorised. Previously disclosed data cannot be automatically recalled.
+- On an approved, eligible purchase, reserve one of the listing's remaining slots in a transaction, create a short-lived **server-generated** Stripe Checkout payment for the specified SKU and agreed price, and restore the slot if payment fails or expires. Ensure one purchase per installer/project, no overselling under simultaneous checkouts, no duplicate charging, and no payments on stale, revoked or sold-out projects.
+- Treat a verified Stripe **server-side webhook** as payment authority; do not release on a return URL alone. Idempotently mark the purchase paid, consume its reserved slot, write an immutable release/audit event and unlock the complete approved brief/contact information in **that installer's private dashboard**, visible only to the paid recipient. The receipt/email includes invoice details and a secure link to access the brief — **never** personal homeowner information.
+- Remaining stock displays `3 → 2 → 1 → 0` when three introductions sell, or the corresponding 1/2 maximum. `0` becomes `sold_out` and unavailable; withdrawal/expiry closes the listing and prevents additional charges. A single installer never buys multiple slots to circumvent homeowner contact limits.
+
+### Installer and homeowner dashboard minimum viable features
+
+**Installer:** sign up/log in, business verification and service area, browse filtered anonymised inventory, SKU/price/availability, request access, pay, order history, secure purchased project details, contact/quote/survey status and refund request. The installer must have no access to any unpurchased project's private data and only receive information necessary to prepare the requested quote.
+
+**Homeowner:** review their brief, request one/two/three quotations, verify contact, see and explicitly approve proposed installers, see number of authorised/released introductions and quote progress, withdraw remaining availability, close project, obtain a copy or request deletion. Approval should use intelligible named recipients, not a generic `we may share your data` checkbox.
+
+**Admin:** approve/reject projects and installers, verify registration and matching area, screen duplicates, see fraud and validity flags, manage expiry, authorisation and payment disputes, apply refunds, audit access, honour deletion/withdrawal requests and monitor lead quality. A fair refund/replacement policy must be published before charging.
+
+### Status and invariants
+
+`draft → submitted → verified → pending_review → active → sold_out / closed / expired` for projects. Per-installer requests: `requested → homeowner_approved → reserved → paid → access_granted`, with distinct `declined`, `cancelled`, `expired`, and `refunded` branches.
+
+- `max_slots ∈ {1,2,3}`, `0 ≤ reserved + sold ≤ max_slots`, and `one paid purchase per (project_id, installer_id)`.
+- No marketing consent is inferred from a request for quotes. No personal data in analytics, server logs, email receipts, URLs, public assets or ad tags; no ads or third-party marketing scripts in authenticated workflows.
+- Test price €65 is a commercial hypothesis, not a guaranteed sale price or commitment. A project only earns up to `€65 × actual paid introductions` (maximum €195 with 3), before refunds, VAT where applicable, payment fees and operating costs.
+
+### Implementation phases / go-live gate
+
+1. Keep the browser-local form working and add an optional **simulation** of the private, anonymised installer preview only if clearly labelled as non-live; this never transmits any personal field.
+2. Implement authenticated, access-controlled server-side data storage, private homeowner request/verification, installer vetting, admin review, explicit named-recipient approval and anonymised private listing queries; perform threat modelling and privacy review before collecting live PII.
+3. Add atomic slot reservations, Stripe Checkout/webhooks, private release and audit logs, support/refund/expiry handling; test simultaneous purchases, revoked approval, identity/role isolation, and cancelled checkouts.
+4. Pilot in limited counties with real homeowner-approved requests and 2–3 verified installers. Do not enable paid sales until security, privacy notice, deletion/retention, and end-to-end refund/release tests pass.
