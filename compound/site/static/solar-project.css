@@ -98,3 +98,15 @@
 .sol-project [data-sp-live-request] [data-sp-quote-consent]{width:18px;height:18px;vertical-align:middle;margin-right:10px;accent-color:#0f716e}
 .sol-project [data-sp-live-request] [data-sp-quote-status][data-state="error"]{color:#a33434}
 .sol-project [data-sp-live-request] [data-sp-quote-status][data-state="success"]{color:#136f52}
+
+/* Homeowner quote submission: explicit, safe prelaunch affordance. */
+.sol-project .sol-project-submit-card{display:grid;gap:16px;margin-top:24px;padding:clamp(17px,2.5vw,24px);background:#fff;border:1px solid #cfd8d2;border-radius:10px;min-width:0}
+.sol-project .sol-project-submit-card[hidden]{display:none!important}
+.sol-project .sol-project-submit-eyebrow{display:block;font-size:10px;font-weight:800;letter-spacing:.09em;color:#50695a;margin-bottom:6px}
+.sol-project .sol-project-submit-card h3{margin:0 0 8px;font-size:clamp(17px,2.5vw,21px);line-height:1.3;color:#17251c}
+.sol-project .sol-project-submit-card p{margin:0;color:#455b4e;font-size:13px;line-height:1.7;max-width:68ch}
+.sol-project .sol-project-submit-card p strong{color:#1d3526;font-size:inherit;display:inline}
+.sol-project .sol-project-submit-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.sol-project .sol-project-submit-actions .sol-btn:disabled{cursor:not-allowed;opacity:.65;box-shadow:none}
+.sol-project .sol-project-submit-alternative{font-size:13px;font-weight:700;color:#245d47;text-underline-offset:3px}
+@media(max-width:600px){.sol-project .sol-project-submit-actions{align-items:stretch;flex-direction:column}.sol-project .sol-project-submit-actions .sol-btn{width:100%;max-width:100%;white-space:normal}.sol-project .sol-project-submit-alternative{padding:8px 0;text-align:center}}
