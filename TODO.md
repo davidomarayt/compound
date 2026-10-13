@@ -22,3 +22,18 @@
 ## Content roadmap
 
 - [ ] Build a **GLP-1 in Ireland hub** that organises the full cluster: access, cost, HSE/Medical Card coverage, treatment duration, stopping/weight regain, side effects, pregnancy, retatrutide and future GLP-1 articles. Link every GLP-1 article back to the hub and surface the GLP-1 Cost Calculator prominently.
+
+## SEO growth sprint — 13 October 2026
+
+- [x] Correct the €600 SEAI battery grant evergreen/news page to current open scheme and retain canonical URL.
+- [x] Optimise metadata and targeted content for Salary-to-Hourly and Fuel Cost calculators, PIA, Irish standard drinks and Living Wage article.
+- [x] Add relevant links from insurance guides into /insurance/ and from EV guide into /solar/; keep existing solar links in energy articles.
+- [x] Audit sitewide, consent-gated solar_journey_click event; preserve single event per qualifying internal link click.
+- [x] Add separate consented solar_installer_enquiry_submitted event for completed B2B FormSubmit enquiry; do not call this a homeowner lead.
+- [x] Add automated SEO regression tests and document measurement/indexing checklist in docs/seo-growth-sprint-2026-10-13.md.
+- [ ] Verify GA4 registration of source_path, destination_path, destination_step, journey_origin, source_type, link_area, audience; test event delivery/DebugView. **Blocked:** GSC Wizard subscription expired; Supermetrics GA4 not authenticated on 13 Oct 2026.
+- [ ] Inspect Solar and Insurance hub URL indexing/canonicals in Google Search Console after connecting an active integration; verify sitemap status. **Blocked:** GSC Wizard subscription expired.
+- [ ] Compare 14-day and 28-day post-change query-page CTR, clicks and position against pre-change data once reporting matures.
+- [ ] Research an original, non-overlapping solar roof orientation guide (east/west vs south) with verified SEAI/PVGIS data and a pinned hero image before publishing.
+- [ ] Verify successful production deployment and public page metadata for this series of GitHub commits (GitHub Pages site workflow).
+
