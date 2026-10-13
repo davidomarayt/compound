@@ -37,6 +37,8 @@ jobs:
           assert 'enable row level security' in schema
           assert 'solar_lead_details' in schema
           assert 'only purchased installer may read private quote brief' in schema
+          assert 'to service_role;' in schema
+          assert 'on table public.solar_installer_accounts, public.solar_lead_teasers,' in schema
           assert 'solar_reserve_introduction' in funcs
           assert 'solar_complete_checkout' in funcs
           assert 'solar_withdraw_quote' in funcs
