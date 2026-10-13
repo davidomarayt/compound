@@ -1,7 +1,6 @@
 # Compound Solar — private lead marketplace backend
 
-**Implementation status:** GitHub code and automated validation are available, but **the backend is NOT deployed**. There is no dedicated Compound Supabase project in the connected account, and the Vercel integration did not expose a deployable team. **No homeowner PII or real payments are flowing.** Both launch flags default OFF.
-
+**Implementation status (13 October 2026):** Dedicated **Compound Life Ltd / Compound Solar** Supabase project created in Ireland (`guifxtijipkpvjjyhatq`); base schema and transactional SQL functions **applied and permission-checked**. Synthetic SKU/email verification was executed inside a rollback transaction with no records retained. Vercel API functions are **not deployed**, and homeowner intake/Stripe remain OFF; no live PII or payments.\n
 This is a standalone Vercel Functions root, separate from the existing `sponsor-api/` and its abandoned county-sponsorship model.
 
 ## Where everything lives
@@ -18,8 +17,8 @@ This is a standalone Vercel Functions root, separate from the existing `sponsor-
 
 ## Provisioning order
 
-1. Obtain approval for a **new** Compound-owned Supabase project (Ireland closest region `eu-west-1`) in the **chosen** organisation. **Never** use MyClinician or PlotMap databases.
-2. Check Supabase product docs / auth settings; apply base SQL, then `schema-functions.sql`. Review all RLS policies and default grants with the Supabase security advisor. Do not enable API Data API access for private schema; public schema tables use restrictive RLS.
+1. **Completed:** Dedicated Compound Solar project in `eu-west-1`, isolated from MyClinician and PlotMap.
+2. **Completed (first pass):** Base SQL and `schema-functions.sql` applied on 13 October 2026; all tables have RLS and no administrative RPC can be executed by `anon` or `authenticated`. All privacy-schema tables have intentionally no client policies. Full two-installer integration testing still required.
 3. Establish a new Vercel project rooted at `solar-leads-api/`, configure all variables in `.env.example` using Vercel secret storage, and choose a trusted API URL. The Vercel team/project must be accessible first.
 4. Set Supabase Auth Site URL and redirect allowlist to Compound and its private installer portal, configure the OTP email template to send `{{ .Token }}` rather than a Magic Link, configure SMTP, then manually approve two test installers with different service counties. Set `shouldCreateUser:false` in the client (already done).
 5. Wire nonsecret `SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY` into the installer portal's `data-` attributes and checkout endpoint URL only after verifying CORS, OTP and RLS. Never paste `service_role`, Stripe secret or webhook secrets into public static files.
@@ -54,8 +53,8 @@ GitHub workflow `solar leads api` runs syntax, unit and SQL presence tests. This
 
 ## Dependencies / authorisation blockers
 
-- Supabase shows only one organisation, named **MyClinician**. Project creation needs explicit organisation selection and any cost authorisation; no new project has been created.
-- Connected Vercel integration shows no available teams, and existing projects are FairPath and MyClinician. A Compound API deployment cannot be performed from this connection until Vercel access is authorised.
+- **Resolved:** Compound Life Ltd Supabase organisation and Compound Solar project are connected and initial schema is applied.
+- **Pending:** Vercel integration still lists FairPath and MyClinician but returns no selectable teams. Create/authorise a new Compound Solar API deployment rooted at `solar-leads-api/` before adding its secret configuration.
 - Connected Stripe account is **Compound Life Ltd, live mode**, with no test-mode account visible. No live charges should be attempted.
 
 Everything fails closed until the owner approves the service account/project and the correct deployment and secrets exist.
