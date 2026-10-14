@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-13",
+  "checked": "2026-10-14",
   "companies_checked": 10,
   "companies": {
     "spcx": {
@@ -203,6 +203,16 @@
   },
   "new_review_candidates": 1,
   "pending_review": [
+    {
+      "id": "sec:937966:0001628280-26-065813",
+      "company": "ASML Holding",
+      "slug": "asml",
+      "title": "ASML Holding SEC 6-K filed 2026-10-14",
+      "filed": "2026-10-14",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=937966",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
     {
       "id": "sec:353278:0001171843-26-006585",
       "company": "Novo Nordisk",
