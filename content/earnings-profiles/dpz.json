@@ -1,0 +1,125 @@
+{
+  "cik": 1286681,
+  "company": "Domino's",
+  "latest": {
+    "accession": "0001286681-26-000040",
+    "filed": "2026-10-13",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 4.6,
+        "prior_year": 4.08,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 152179000,
+        "prior_year": 139319000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1185598000,
+        "prior_year": 1147054000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-06",
+    "source": "https://www.sec.gov/Archives/edgar/data/1286681/000128668126000040/dpz-20260906.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001286681-26-000025",
+      "filed": "2026-04-27",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.13,
+          "prior_year": 4.33,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 139811000,
+          "prior_year": 149651000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1150594000,
+          "prior_year": 1112056000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-22",
+      "source": "https://www.sec.gov/Archives/edgar/data/1286681/000128668126000025/dpz-20260322.htm"
+    },
+    {
+      "accession": "0001286681-26-000035",
+      "filed": "2026-07-20",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.07,
+          "prior_year": 3.81,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 135750000,
+          "prior_year": 131091000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1194427000,
+          "prior_year": 1145144000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-14",
+      "source": "https://www.sec.gov/Archives/edgar/data/1286681/000128668126000035/dpz-20260614.htm"
+    },
+    {
+      "accession": "0001286681-26-000040",
+      "filed": "2026-10-13",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.6,
+          "prior_year": 4.08,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 152179000,
+          "prior_year": 139319000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1185598000,
+          "prior_year": 1147054000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-06",
+      "source": "https://www.sec.gov/Archives/edgar/data/1286681/000128668126000040/dpz-20260906.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "DPZ",
+  "updated": "2026-10-14"
+}
