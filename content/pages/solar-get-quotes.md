@@ -198,9 +198,9 @@ meta_description: "Submit a free solar installation project in Ireland: property
         </div>
         <section class="sol-project-submit-card" data-sp-prelaunch-request aria-labelledby="solar-submit-heading">
           <span class="sol-project-submit-eyebrow">COMPOUND SOLAR / HOMEOWNER ENQUIRIES OPEN</span>
-          <h3 id="solar-submit-heading">Your solar project is ready to submit.</h3>
-          <p>Submit your project once for secure Compound review. We will keep your requirements ready so that, if suitable installers become available, you can decide whether to request introductions.</p>
-          <p class="sol-project-help"><strong>Current availability:</strong> Installer matching is not active yet. We cannot promise quotations at this stage. Your details remain private to Compound unless you separately agree to an introduction.</p>
+          <h3 id="solar-submit-heading">Send your solar project for secure review.</h3>
+          <p>Fill in your details once and submit a clear project brief to Compound. You can choose whether to request introductions if suitable installers become available.</p>
+          <p class="sol-project-help"><strong>Current availability:</strong> Homeowner submissions are open. Installer matching is not yet active, so quotations cannot be guaranteed. Your details remain private to Compound unless you separately agree to an introduction.</p>
           <form data-sp-private-pilot-form novalidate>
             <label class="sol-project-wide-label sol-project-pilot-consent"><input type="checkbox" data-sp-private-pilot-consent required>
               I ask Compound Solar to securely store and review my project and contact me about my request. I understand that my details are not being shared with installers, and any future introduction requires my separate permission. I have read the <a href="/privacy/">privacy policy</a>.
@@ -212,17 +212,6 @@ meta_description: "Submit a free solar installation project in Ireland: property
             </div>
             <p role="status" aria-live="polite" data-sp-private-pilot-status>Ready to receive your project securely. Nothing is sent until you submit.</p>
           </form>
-        </section>
-        <section data-sp-live-request hidden class="sol-project-disclosure" aria-labelledby="solar-quote-request-heading">
-          <h3 id="solar-quote-request-heading">Request your solar installation quotes</h3>
-          <p>Your name and private project details will only be made available to up to the number of installers you select. Approved installers first see a limited, non-identifying county-level project preview.</p>
-          <form data-sp-quote-form>
-            <label class="sol-project-wide-label"><input type="checkbox" data-sp-quote-consent required> I request up to <strong data-sp-sharing-count>the number you choose</strong> solar installation quotations. I understand that a limited project preview may be shown to approved installers, and that my name, contact details and completed project brief may be shared with up to that number of approved installers so they can contact me about my quotes. Installers may pay Compound.ie for an introduction. I can stop future introductions by emailing david@compound.ie. I have read the <a href="/privacy/">privacy notice</a>.</label>
-            <div data-sp-turnstile aria-label="Spam verification"></div>
-            <button class="sol-btn" data-sp-quote-submit type="submit" disabled>Submit secure quote request</button>
-            <p data-sp-quote-status role="status" aria-live="polite"></p>
-          </form>
-          <p>Contact details are never shown in the anonymous listing. This is only for the requested quotes, not newsletter subscriptions or unrelated marketing.</p>
         </section>
         <p class="sol-project-help">Project submissions are securely stored for Compound review. <a href="/privacy/">Privacy and 90-day retention details</a>.</p>
       </section>
