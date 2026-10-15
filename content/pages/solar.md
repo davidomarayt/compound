@@ -1,7 +1,7 @@
 ---
 title: "Solar Quotes Ireland: Plan Your Installation & Compare Costs"
 canonical_path: /solar/
-meta_description: "Planning solar panels in Ireland? Build a free solar installation project brief, check SEAI grants and understand costs before approaching installers."
+meta_description: "One solar project form, multiple potential installer quotes. Plan your system once and request contact from up to three Irish installers when matching opens."
 ---
 <div class="sol-shell sol-home">
   <header class="solh-hero" aria-labelledby="solar-heading">
@@ -9,10 +9,10 @@ meta_description: "Planning solar panels in Ireland? Build a free solar installa
     <div class="solh-hero-grid">
       <div class="solh-hero-main">
         <p class="solh-eyebrow"><span class="solh-dot" aria-hidden="true"></span> COMPOUND SOLAR / IRELAND</p>
-        <h1 id="solar-heading">Planning solar panels? <span>Start with a better quote request.</span></h1>
-        <p class="solh-lead">Tell us about your property, roof and electricity needs. Submit one detailed solar project securely to Compound today, ready for review ahead of future installer matching.</p>
-        <a href="/solar/get-quotes/" data-solar-cta="hero" class="solh-primary-cta">Build my solar project <span aria-hidden="true">→</span></a>
-        <p class="solh-cta-support">Free homeowner enquiry · No account required · Private review</p>
+        <h1 id="solar-heading">One solar form. <span>Multiple installer quotes.</span></h1>
+        <p class="solh-lead">Complete your solar project details <strong>once</strong>. When installer matching opens, you can choose to have <strong>up to three solar installers</strong> contact you about your installation — without filling out separate forms.</p>
+        <a href="/solar/get-quotes/" data-solar-cta="hero" class="solh-primary-cta">Start my solar quote request <span aria-hidden="true">→</span></a>
+        <p class="solh-cta-support">Free to submit · Installer matching coming soon · We ask your permission before sharing any details</p>
         <div class="solh-hero-checks" aria-label="What you can include in your solar project">
           <span>Property &amp; location</span><span>Roof &amp; electricity needs</span><span>Budget &amp; timeframe</span>
         </div>
@@ -30,23 +30,18 @@ meta_description: "Planning solar panels in Ireland? Build a free solar installa
     </div>
   </header>
 
-  <section class="solh-pilot" aria-label="Current status of solar quote requests">
-    <span class="solh-pilot-mark" aria-hidden="true">i</span>
-    <div><strong>Homeowner project submissions are open.</strong> Compound can receive and review your project today. Our installer network is not yet live, so we cannot promise immediate quotations. No installer sees your details; we will seek separate permission before any future introduction.</div>
-  </section>
-
   <section class="solh-how" id="solar-journey" aria-labelledby="solh-how-title">
-    <div class="solh-section-intro"><div><p class="solh-eyebrow">THE PROCESS</p><h2 id="solh-how-title">One project brief. <span>Less back and forth.</span></h2></div><p>We ask for the details that help an installer understand whether a job suits their area, availability and services.</p></div>
+    <div class="solh-section-intro"><div><p class="solh-eyebrow">THE PROCESS</p><h2 id="solh-how-title">Fill it out once. <span>Let installers come to you.</span></h2></div><p>One clear description of your property and plans could support several competing quotes once the installer network is active.</p></div>
     <ol class="solh-steps">
       <li><span class="solh-step-number">01</span><h3>Describe your home</h3><p>County, property type, installation timeframe and your preferred solar setup.</p></li>
       <li><span class="solh-step-number">02</span><h3>Add the useful details</h3><p>Roof direction, shading and electricity usage if you know them. Our roof compass can help.</p></li>
-      <li><span class="solh-step-number">03</span><h3>Submit for review</h3><p>Review and submit your project to Compound. You receive a reference when your request is recorded; installer matching is not yet active.</p></li>
+      <li><span class="solh-step-number">03</span><h3>Choose who contacts you</h3><p>Submit your project now. Once installer matching opens, we will ask your permission before introducing up to three installers, according to your preference and availability.</p></li>
     </ol>
-    <div class="solh-mid-cta"><div><strong>Don't know your roof pitch or annual kWh?</strong><p>You can still start. Most technical answers can be confirmed after an installer surveys the property.</p></div><a href="/solar/get-quotes/" data-solar-cta="steps" class="solh-primary-cta">Start my project <span aria-hidden="true">→</span></a></div>
+    <div class="solh-mid-cta"><div><strong>Submit one enquiry, not three separate forms.</strong><p>Set your preferred number of installers in the project builder. Detailed technical questions are optional.</p></div><a href="/solar/get-quotes/" data-solar-cta="steps" class="solh-primary-cta">Start my project <span aria-hidden="true">→</span></a></div>
   </section>
 
   <section class="solh-benefits" aria-labelledby="solh-benefits-title">
-    <div class="solh-section-intro"><div><p class="solh-eyebrow">WHY A DETAILED REQUEST MATTERS</p><h2 id="solh-benefits-title">A low price means little <span>without the details.</span></h2></div><p>Comparing solar installations is easier when each company can quote for the same property and expectations.</p></div>
+    <div class="solh-section-intro"><div><p class="solh-eyebrow">WHY A DETAILED REQUEST MATTERS</p><h2 id="solh-benefits-title">Comparable offers <span>start with one clear brief.</span></h2></div><p>When matching becomes available, you can share the same installation requirements with multiple installers instead of starting from scratch each time.</p></div>
     <div class="solh-benefit-grid">
       <article><span class="solh-benefit-icon" aria-hidden="true">01</span><h3>More comparable proposals</h3><p>Ask for a consistent system specification, installed price, grant assumptions and projected annual generation.</p></article>
       <article><span class="solh-benefit-icon" aria-hidden="true">02</span><h3>Fewer missing details</h3><p>Share roof access, battery preferences, EV charging and your installation timeframe from the outset.</p></article>
@@ -94,8 +89,8 @@ meta_description: "Planning solar panels in Ireland? Build a free solar installa
   </section>
 
   <section class="solh-final-cta" aria-labelledby="solh-final-cta-title">
-    <div><p class="solh-eyebrow">YOUR NEXT STEP</p><h2 id="solh-final-cta-title">Ready to plan your solar installation?</h2><p>Start your free homeowner brief. Include as much as you know, then submit it for private review. You can still copy your brief without submitting.</p></div>
-    <div><a href="/solar/get-quotes/" data-solar-cta="bottom" class="solh-primary-cta">Build my solar project <span aria-hidden="true">→</span></a><small>Homeowner submissions open · No obligation · No installer access yet</small></div>
+    <div><p class="solh-eyebrow">YOUR NEXT STEP</p><h2 id="solh-final-cta-title">One form. Up to three potential quotes.</h2><p>Submit your project today for private Compound review. Installer matching has not started; if it becomes available, we will ask for your permission before any installer receives your details.</p></div>
+    <div><a href="/solar/get-quotes/" data-solar-cta="bottom" class="solh-primary-cta">Start my quote request <span aria-hidden="true">→</span></a><small>Homeowner submissions open · No obligation · No installer access yet</small></div>
   </section>
 
   <footer class="solh-footer" id="solar-sources">
