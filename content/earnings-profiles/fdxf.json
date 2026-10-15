@@ -1,0 +1,67 @@
+{
+  "cik": 2082247,
+  "company": "FedEx Freight",
+  "latest": {
+    "accession": "0001628280-26-053359",
+    "filed": "2026-08-05",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 4.38,
+        "prior_year": 9,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 655000000,
+        "prior_year": 1346000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 8795000000,
+        "prior_year": 8892000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-05-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/2082247/000162828026053359/fdxf-20260531.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-053359",
+      "filed": "2026-08-05",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.38,
+          "prior_year": 9,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 655000000,
+          "prior_year": 1346000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 8795000000,
+          "prior_year": 8892000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/2082247/000162828026053359/fdxf-20260531.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "FDXF",
+  "updated": "2026-10-15"
+}

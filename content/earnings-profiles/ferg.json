@@ -1,0 +1,96 @@
+{
+  "cik": 2011641,
+  "company": "Ferguson Enterprises",
+  "latest": {
+    "accession": "0002011641-26-000040",
+    "filed": "2026-08-10",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.43,
+        "prior_year": 3.21,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 666000000,
+        "prior_year": 634000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 8751000000,
+        "prior_year": 8363000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/2011641/000201164126000040/ferg-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0002011641-26-000030",
+      "filed": "2026-05-05",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.13,
+          "prior_year": 1.73,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 414000000,
+          "prior_year": 345000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7472000000,
+          "prior_year": 7213000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/2011641/000201164126000030/ferg-20260331.htm"
+    },
+    {
+      "accession": "0002011641-26-000040",
+      "filed": "2026-08-10",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.43,
+          "prior_year": 3.21,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 666000000,
+          "prior_year": 634000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 8751000000,
+          "prior_year": 8363000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/2011641/000201164126000040/ferg-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "FERG",
+  "updated": "2026-10-15"
+}

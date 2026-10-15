@@ -1,0 +1,96 @@
+{
+  "cik": 40545,
+  "company": "GE Aerospace",
+  "latest": {
+    "accession": "0000040545-26-000049",
+    "filed": "2026-07-16",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.26,
+        "prior_year": 1.89,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 2370000000,
+        "prior_year": 2028000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 13349000000,
+        "prior_year": 11023000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000049/ge-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000040545-26-000027",
+      "filed": "2026-04-21",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.81,
+          "prior_year": 1.83,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1904000000,
+          "prior_year": 1978000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 12392000000,
+          "prior_year": 9935000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000027/ge-20260331.htm"
+    },
+    {
+      "accession": "0000040545-26-000049",
+      "filed": "2026-07-16",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.26,
+          "prior_year": 1.89,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2370000000,
+          "prior_year": 2028000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 13349000000,
+          "prior_year": 11023000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000049/ge-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "GE",
+  "updated": "2026-10-15"
+}

@@ -1,0 +1,67 @@
+{
+  "cik": 40704,
+  "company": "General Mills",
+  "latest": {
+    "accession": "0001628280-26-063201",
+    "filed": "2026-09-23",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.74,
+        "prior_year": 2.22,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 397000000,
+        "prior_year": 1204200000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4389500000,
+        "prior_year": 4517500000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/40704/000162828026063201/gis-20260830.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-063201",
+      "filed": "2026-09-23",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.74,
+          "prior_year": 2.22,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 397000000,
+          "prior_year": 1204200000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4389500000,
+          "prior_year": 4517500000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/40704/000162828026063201/gis-20260830.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "GIS",
+  "updated": "2026-10-15"
+}

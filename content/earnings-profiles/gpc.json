@@ -1,0 +1,96 @@
+{
+  "cik": 40987,
+  "company": "Genuine Parts Company",
+  "latest": {
+    "accession": "0000040987-26-000033",
+    "filed": "2026-07-21",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.65,
+        "prior_year": 1.83,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 227558000,
+        "prior_year": 254880000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 6536951000,
+        "prior_year": 6164425000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/40987/000004098726000033/gpc-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000040987-26-000017",
+      "filed": "2026-04-21",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.37,
+          "prior_year": 1.4,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 188535000,
+          "prior_year": 194392000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6264940000,
+          "prior_year": 5866069000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/40987/000004098726000017/gpc-20260331.htm"
+    },
+    {
+      "accession": "0000040987-26-000033",
+      "filed": "2026-07-21",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.65,
+          "prior_year": 1.83,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 227558000,
+          "prior_year": 254880000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6536951000,
+          "prior_year": 6164425000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/40987/000004098726000033/gpc-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "GPC",
+  "updated": "2026-10-15"
+}

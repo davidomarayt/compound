@@ -1,0 +1,96 @@
+{
+  "cik": 1048911,
+  "company": "FedEx",
+  "latest": {
+    "accession": "0001048911-26-000105",
+    "filed": "2026-07-20",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 18.55,
+        "prior_year": 16.81,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 4433000000,
+        "prior_year": 4092000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 94720000000,
+        "prior_year": 87926000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-05-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000105/fdx-20260531.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001048911-26-000011",
+      "filed": "2026-03-19",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.41,
+          "prior_year": 3.76,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1056000000,
+          "prior_year": 909000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 24000000000,
+          "prior_year": 22160000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-02-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000011/fdx-20260228.htm"
+    },
+    {
+      "accession": "0001048911-26-000105",
+      "filed": "2026-07-20",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 18.55,
+          "prior_year": 16.81,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 4433000000,
+          "prior_year": 4092000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 94720000000,
+          "prior_year": 87926000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000105/fdx-20260531.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "FDX",
+  "updated": "2026-10-15"
+}

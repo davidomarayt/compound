@@ -1,0 +1,67 @@
+{
+  "cik": 1659166,
+  "company": "Fortive",
+  "latest": {
+    "accession": "0001659166-26-000013",
+    "filed": "2026-04-30",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.44,
+        "prior_year": 0.5,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 136400000,
+        "prior_year": 171900000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1069400000,
+        "prior_year": 993100000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-04-03",
+    "source": "https://www.sec.gov/Archives/edgar/data/1659166/000165916626000013/ftv-20260403.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001659166-26-000013",
+      "filed": "2026-04-30",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.44,
+          "prior_year": 0.5,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 136400000,
+          "prior_year": 171900000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1069400000,
+          "prior_year": 993100000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/1659166/000165916626000013/ftv-20260403.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "FTV",
+  "updated": "2026-10-15"
+}

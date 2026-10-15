@@ -1,0 +1,67 @@
+{
+  "cik": 34903,
+  "company": "Federal Realty Investment Trust",
+  "latest": {
+    "accession": "0000034903-26-000026",
+    "filed": "2026-05-01",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.81,
+        "prior_year": 0.72,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 159099000,
+        "prior_year": 63768000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 341084000,
+        "prior_year": 309154000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000026/frt-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000034903-26-000026",
+      "filed": "2026-05-01",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.81,
+          "prior_year": 0.72,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 159099000,
+          "prior_year": 63768000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 341084000,
+          "prior_year": 309154000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000026/frt-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "FRT",
+  "updated": "2026-10-15"
+}

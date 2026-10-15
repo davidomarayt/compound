@@ -1,0 +1,67 @@
+{
+  "cik": 866374,
+  "company": "Flex Ltd.",
+  "latest": {
+    "accession": "0000866374-26-000012",
+    "filed": "2026-05-20",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.33,
+        "prior_year": 2.11,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 880000000,
+        "prior_year": 838000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 27914000000,
+        "prior_year": 25813000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/866374/000086637426000012/flex-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000866374-26-000012",
+      "filed": "2026-05-20",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.33,
+          "prior_year": 2.11,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 880000000,
+          "prior_year": 838000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 27914000000,
+          "prior_year": 25813000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/866374/000086637426000012/flex-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "FLEX",
+  "updated": "2026-10-15"
+}
