@@ -10,9 +10,9 @@ meta_description: "Planning solar panels in Ireland? Build a free solar installa
       <div class="solh-hero-main">
         <p class="solh-eyebrow"><span class="solh-dot" aria-hidden="true"></span> COMPOUND SOLAR / IRELAND</p>
         <h1 id="solar-heading">Planning solar panels? <span>Start with a better quote request.</span></h1>
-        <p class="solh-lead">Tell us about your property, electricity use and what you want to install. Build one clear project brief that makes it easier to assess your options without repeating yourself to every company.</p>
+        <p class="solh-lead">Tell us about your property, roof and electricity needs. Submit one detailed solar project securely to Compound today, ready for review ahead of future installer matching.</p>
         <a href="/solar/get-quotes/" data-solar-cta="hero" class="solh-primary-cta">Build my solar project <span aria-hidden="true">→</span></a>
-        <p class="solh-cta-support">Free to homeowners · No account required · Submit only when you choose</p>
+        <p class="solh-cta-support">Free homeowner enquiry · No account required · Private review</p>
         <div class="solh-hero-checks" aria-label="What you can include in your solar project">
           <span>Property &amp; location</span><span>Roof &amp; electricity needs</span><span>Budget &amp; timeframe</span>
         </div>
@@ -32,7 +32,7 @@ meta_description: "Planning solar panels in Ireland? Build a free solar installa
 
   <section class="solh-pilot" aria-label="Current status of solar quote requests">
     <span class="solh-pilot-mark" aria-hidden="true">i</span>
-    <div><strong>Currently accepting private project requests.</strong> Compound reviews submitted projects during this pilot. We do not share them with installers at this stage; we will request your separate permission before any future introduction. Completing a brief does not guarantee an installer quote.</div>
+    <div><strong>Homeowner project submissions are open.</strong> Compound can receive and review your project today. Our installer network is not yet live, so we cannot promise immediate quotations. No installer sees your details; we will seek separate permission before any future introduction.</div>
   </section>
 
   <section class="solh-how" id="solar-journey" aria-labelledby="solh-how-title">
@@ -40,7 +40,7 @@ meta_description: "Planning solar panels in Ireland? Build a free solar installa
     <ol class="solh-steps">
       <li><span class="solh-step-number">01</span><h3>Describe your home</h3><p>County, property type, installation timeframe and your preferred solar setup.</p></li>
       <li><span class="solh-step-number">02</span><h3>Add the useful details</h3><p>Roof direction, shading and electricity usage if you know them. Our roof compass can help.</p></li>
-      <li><span class="solh-step-number">03</span><h3>Submit for review</h3><p>Review your brief and choose whether to submit it privately to Compound. No installer receives it during the pilot.</p></li>
+      <li><span class="solh-step-number">03</span><h3>Submit for review</h3><p>Review and submit your project to Compound. You receive a reference when your request is recorded; installer matching is not yet active.</p></li>
     </ol>
     <div class="solh-mid-cta"><div><strong>Don't know your roof pitch or annual kWh?</strong><p>You can still start. Most technical answers can be confirmed after an installer surveys the property.</p></div><a href="/solar/get-quotes/" data-solar-cta="steps" class="solh-primary-cta">Start my project <span aria-hidden="true">→</span></a></div>
   </section>
@@ -50,7 +50,7 @@ meta_description: "Planning solar panels in Ireland? Build a free solar installa
     <div class="solh-benefit-grid">
       <article><span class="solh-benefit-icon" aria-hidden="true">01</span><h3>More comparable proposals</h3><p>Ask for a consistent system specification, installed price, grant assumptions and projected annual generation.</p></article>
       <article><span class="solh-benefit-icon" aria-hidden="true">02</span><h3>Fewer missing details</h3><p>Share roof access, battery preferences, EV charging and your installation timeframe from the outset.</p></article>
-      <article><span class="solh-benefit-icon" aria-hidden="true">03</span><h3>Control over your details</h3><p>Your draft stays in the browser until you submit. Pilot submissions are reviewed privately by Compound.</p></article>
+      <article><span class="solh-benefit-icon" aria-hidden="true">03</span><h3>Control over your details</h3><p>Your draft stays in your browser until submission. Only Compound can review your stored project while installer matching remains closed.</p></article>
     </div>
   </section>
 
@@ -88,12 +88,12 @@ meta_description: "Planning solar panels in Ireland? Build a free solar installa
   </section>
 
   <section class="solh-final-cta" aria-labelledby="solh-final-cta-title">
-    <div><p class="solh-eyebrow">YOUR NEXT STEP</p><h2 id="solh-final-cta-title">Ready to plan your solar installation?</h2><p>Start your free homeowner brief. Include as much as you know, then decide whether to submit it privately to Compound for review.</p></div>
-    <div><a href="/solar/get-quotes/" data-solar-cta="bottom" class="solh-primary-cta">Build my solar project <span aria-hidden="true">→</span></a><small>Private pilot · No obligation · No installer access yet</small></div>
+    <div><p class="solh-eyebrow">YOUR NEXT STEP</p><h2 id="solh-final-cta-title">Ready to plan your solar installation?</h2><p>Start your free homeowner brief. Include as much as you know, then submit it for private review. You can still copy your brief without submitting.</p></div>
+    <div><a href="/solar/get-quotes/" data-solar-cta="bottom" class="solh-primary-cta">Build my solar project <span aria-hidden="true">→</span></a><small>Homeowner submissions open · No obligation · No installer access yet</small></div>
   </section>
 
   <footer class="solh-footer" id="solar-sources">
-    <div><strong>About Compound Solar</strong><p>Compound is an independent Irish publisher, not a solar installer or an SEAI agent. Homeowner project submissions are private during the pilot. Installer introductions, if offered later, would require separate permission. Commercial partnerships never alter the arithmetic in our tools or editorial recommendations.</p><p class="solh-sources">Official information: <a href="https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant" rel="noopener">SEAI solar grant</a> · <a href="https://www.seai.ie/grants/home-energy-grants/individual-grants/battery" rel="noopener">SEAI battery grant</a> · <a href="https://www.seai.ie/grants/find-a-registered-professional/solar-pv-companies" rel="noopener">Registered solar PV companies</a>. Grant details last checked 15 October 2026.</p></div>
+    <div><strong>About Compound Solar</strong><p>Compound is an independent Irish publisher, not a solar installer or an SEAI agent. Homeowner project submissions are currently open for private Compound review. Installer introductions, if offered later, require separate permission. Commercial partnerships never alter the arithmetic in our tools or editorial recommendations.</p><p class="solh-sources">Official information: <a href="https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant" rel="noopener">SEAI solar grant</a> · <a href="https://www.seai.ie/grants/home-energy-grants/individual-grants/battery" rel="noopener">SEAI battery grant</a> · <a href="https://www.seai.ie/grants/find-a-registered-professional/solar-pv-companies" rel="noopener">Registered solar PV companies</a>. Grant details last checked 15 October 2026.</p></div>
     <div class="solh-footer-business"><strong>For solar installation businesses</strong><p>Learn how Compound's editorial guides and tools may support future qualified project introductions.</p><a href="/solar/for-installers/">Installer partnerships →</a><a href="/solar/installer-portal/">Installer login →</a></div>
   </footer>
 </div>
