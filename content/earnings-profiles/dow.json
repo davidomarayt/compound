@@ -1,0 +1,67 @@
+{
+  "cik": 1751788,
+  "company": "Dow Inc.",
+  "latest": {
+    "accession": "0001751788-26-000134",
+    "filed": "2026-04-24",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": -0.74,
+        "prior_year": -0.44,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": -533000000,
+        "prior_year": -307000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 9794000000,
+        "prior_year": 10431000000,
+        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1751788/000175178826000134/dow-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001751788-26-000134",
+      "filed": "2026-04-24",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.74,
+          "prior_year": -0.44,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -533000000,
+          "prior_year": -307000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 9794000000,
+          "prior_year": 10431000000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1751788/000175178826000134/dow-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "DOW",
+  "updated": "2026-10-15"
+}

@@ -1,0 +1,67 @@
+{
+  "cik": 1297996,
+  "company": "Digital Realty",
+  "latest": {
+    "accession": "0001104659-26-054255",
+    "filed": "2026-05-01",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.46,
+        "prior_year": 0.27,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 179274000,
+        "prior_year": 109974000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1635173000,
+        "prior_year": 1407637000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926054255/dlr-20260331x10q.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001104659-26-054255",
+      "filed": "2026-05-01",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.46,
+          "prior_year": 0.27,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 179274000,
+          "prior_year": 109974000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1635173000,
+          "prior_year": 1407637000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926054255/dlr-20260331x10q.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "DLR",
+  "updated": "2026-10-15"
+}

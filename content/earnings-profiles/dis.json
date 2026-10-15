@@ -1,0 +1,96 @@
+{
+  "cik": 1744489,
+  "company": "Walt Disney Company (The)",
+  "latest": {
+    "accession": "0001744489-26-000057",
+    "filed": "2026-08-05",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.51,
+        "prior_year": 2.92,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 2638000000,
+        "prior_year": 5262000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 25248000000,
+        "prior_year": 23650000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-27",
+    "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001744489-26-000037",
+      "filed": "2026-05-06",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.27,
+          "prior_year": 1.81,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2247000000,
+          "prior_year": 3275000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 25168000000,
+          "prior_year": 23621000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000037/dis-20260328.htm"
+    },
+    {
+      "accession": "0001744489-26-000057",
+      "filed": "2026-08-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.51,
+          "prior_year": 2.92,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2638000000,
+          "prior_year": 5262000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 25248000000,
+          "prior_year": 23650000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000057/dis-20260627.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "DIS",
+  "updated": "2026-10-15"
+}

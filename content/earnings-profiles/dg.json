@@ -1,0 +1,96 @@
+{
+  "cik": 29534,
+  "company": "Dollar General",
+  "latest": {
+    "accession": "0001104659-26-101932",
+    "filed": "2026-08-27",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.48,
+        "prior_year": 1.86,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 550315000,
+        "prior_year": 411426000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 11290380000,
+        "prior_year": 10727737000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/29534/000110465926101932/dg-20260731x10q.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001104659-26-069205",
+      "filed": "2026-06-02",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2,
+          "prior_year": 1.78,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 444127000,
+          "prior_year": 391928000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 10786965000,
+          "prior_year": 10435979000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-01",
+      "source": "https://www.sec.gov/Archives/edgar/data/29534/000110465926069205/dg-20260501x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-101932",
+      "filed": "2026-08-27",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.48,
+          "prior_year": 1.86,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 550315000,
+          "prior_year": 411426000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 11290380000,
+          "prior_year": 10727737000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/29534/000110465926101932/dg-20260731x10q.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "DG",
+  "updated": "2026-10-15"
+}

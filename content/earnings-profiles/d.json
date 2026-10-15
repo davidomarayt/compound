@@ -1,0 +1,67 @@
+{
+  "cik": 715957,
+  "company": "Dominion Energy",
+  "latest": {
+    "accession": "0001193125-26-200275",
+    "filed": "2026-05-01",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.69,
+        "prior_year": 0.77,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 621000000,
+        "prior_year": 665000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 5091000000,
+        "prior_year": 4085000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/715957/000119312526200275/d-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001193125-26-200275",
+      "filed": "2026-05-01",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.69,
+          "prior_year": 0.77,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 621000000,
+          "prior_year": 665000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5091000000,
+          "prior_year": 4085000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/715957/000119312526200275/d-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "D",
+  "updated": "2026-10-15"
+}

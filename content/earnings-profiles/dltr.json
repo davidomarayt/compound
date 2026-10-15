@@ -1,0 +1,96 @@
+{
+  "cik": 935703,
+  "company": "Dollar Tree",
+  "latest": {
+    "accession": "0000935703-26-000109",
+    "filed": "2026-08-27",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.7,
+        "prior_year": 0.91,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 514500000,
+        "prior_year": 188400000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4886500000,
+        "prior_year": 4566800000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-01",
+    "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000109/dltr-20260801.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000935703-26-000065",
+      "filed": "2026-05-28",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.76,
+          "prior_year": 1.61,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 347300000,
+          "prior_year": 343400000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4970500000,
+          "prior_year": 4636500000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000065/dltr-20260502.htm"
+    },
+    {
+      "accession": "0000935703-26-000109",
+      "filed": "2026-08-27",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.7,
+          "prior_year": 0.91,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 514500000,
+          "prior_year": 188400000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4886500000,
+          "prior_year": 4566800000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-01",
+      "source": "https://www.sec.gov/Archives/edgar/data/935703/000093570326000109/dltr-20260801.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "DLTR",
+  "updated": "2026-10-15"
+}

@@ -1,0 +1,125 @@
+{
+  "cik": 315189,
+  "company": "Deere & Company",
+  "latest": {
+    "accession": "0001104659-26-102213",
+    "filed": "2026-08-27",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 5.1,
+        "prior_year": 4.75,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1379000000,
+        "prior_year": 1289000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 12608000000,
+        "prior_year": 12018000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-02",
+    "source": "https://www.sec.gov/Archives/edgar/data/315189/000110465926102213/de-20260802x10q.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001104659-26-020158",
+      "filed": "2026-02-26",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.42,
+          "prior_year": 3.19,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 656000000,
+          "prior_year": 869000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 9611000000,
+          "prior_year": 8508000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-02-01",
+      "source": "https://www.sec.gov/Archives/edgar/data/315189/000110465926020158/de-20260201x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-067311",
+      "filed": "2026-05-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 6.55,
+          "prior_year": 6.64,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1773000000,
+          "prior_year": 1804000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 13369000000,
+          "prior_year": 12763000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/315189/000110465926067311/de-20260503x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-102213",
+      "filed": "2026-08-27",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 5.1,
+          "prior_year": 4.75,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1379000000,
+          "prior_year": 1289000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 12608000000,
+          "prior_year": 12018000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/315189/000110465926102213/de-20260802x10q.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "DE",
+  "updated": "2026-10-15"
+}
