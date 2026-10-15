@@ -6,10 +6,10 @@ pillar: wealth
 draft: false
 publication_status: published
 date: 2026-10-09
-reviewed: 2026-10-11
+reviewed: 2026-10-15
 approved_by: "Explicit evergreen publish instruction — 9 October 2026"
-summary: "Mortgage protection Ireland: 2026 premium examples, interactive savings calculator, mortgage-cover chart, insurer comparisons and new cancer survivor protections."
-meta_description: "Mortgage protection Ireland 2026: price examples by age, savings calculator, insurers compared, switching, and the October cancer-survivor law."
+summary: "Mortgage protection Ireland: 2026 premium examples, interactive savings calculator, insurer comparisons and cancer-survivor protections in force since 15 October."
+meta_description: "Mortgage protection Ireland 2026: costs, insurers, switching and the cancer-survivor right to be forgotten in force from 15 October."
 tags: [mortgage-protection, mortgage-protection-insurance, life-insurance, first-time-buyer, mortgage, insurance, mortgage-switching, cancer-survivors, right-to-be-forgotten, ireland]
 hero_image_url: "https://images.pexels.com/photos/34135038/pexels-photo-34135038.jpeg?auto=compress&cs=tinysrgb&w=1600"
 hero_image_alt: "House keys resting on real-estate documents next to miniature houses on a desk, representing mortgage protection decisions."
@@ -27,6 +27,14 @@ sources:
   url: https://www.citizensinformation.ie/en/housing/owning-a-home/buying-a-home/insurance-protection-on-mortgages/
 - title: "Consumer Credit Act 1995, section 126 — mortgage protection."
   url: https://www.irishstatutebook.ie/eli/1995/act/24/section/126/enacted/en/html
+- title: "Irish Statute Book: Insurance (Disregard of Certain Medical History and Miscellaneous Provisions) Act 2026 (No. 23), Part 2."
+  url: https://www.irishstatutebook.ie/eli/2026/act/23/enacted/en/html
+- title: "Irish Statute Book: S.I. No. 443/2026, article 4: Part 2 comes into operation on 15 October 2026."
+  url: https://www.irishstatutebook.ie/eli/2026/si/443/made/en/print
+- title: "Department of Finance: Ministers announce the signed commencement order (24 August 2026)."
+  url: https://www.gov.ie/en/department-of-finance/press-releases/t%C3%A1naiste-simon-harris-and-minister-of-state-robert-troy-announce-commencement-of-landmark-right-to-be-forgotten-legislation-for-cancer-survivors/
+- title: "RTÉ News: New cancer-survivor mortgage protection rules in effect on 15 October 2026."
+  url: https://www.rte.ie/news/ireland/2026/1015/1595423-insurance-cancer-survivors/
 - title: "Law Society Gazette: Commencement of 2026 right-to-be-forgotten mortgage protection provisions on 15 October 2026."
   url: https://production.lawsociety.ie/gazette/top-stories/2026/august/date-set-for-right-to-be-forgotten-law/
 - title: "Department of Finance: Right to be Forgotten — remission period and €650,000 limit."
@@ -51,7 +59,7 @@ sources:
 
 Most people in Ireland need mortgage protection before drawing down a mortgage on their own home. But you **do not have to buy it from your bank**. You can compare policies from different insurers, provided the policy satisfies your lender's requirements.
 
-This guide explains what you are legally required to have, how premiums work, which insurers to compare, and where people can accidentally overpay. It also covers an important change in Irish law due to begin on **15 October 2026** for eligible cancer survivors.
+This guide explains what you are legally required to have, how premiums work, which insurers to compare, and where people can accidentally overpay. It also covers an important change in Irish law in force since **15 October 2026** for eligible cancer survivors.
 
 <div class="cs-intro">
 <p class="cs-kicker">The quick answer</p>
@@ -74,7 +82,7 @@ This guide explains what you are legally required to have, how premiums work, wh
 <a href="#faq">FAQs</a>
 </nav>
 
-<p><strong>Information checked: 11 October 2026.</strong> Premium examples below are arithmetic illustrations, not insurer quotations. This article is independent consumer information, not a personalised insurance recommendation. Check terms, current prices and medical underwriting with the insurer or a regulated intermediary.</p>
+<p><strong>Information checked: 15 October 2026.</strong> Premium examples below are arithmetic illustrations, not insurer quotations. This article is independent consumer information, not a personalised insurance recommendation. Check terms, current prices and medical underwriting with the insurer or a regulated intermediary.</p>
 
 <h2 id="at-a-glance">Mortgage protection Ireland 2026: at a glance</h2>
 
@@ -89,7 +97,7 @@ This guide explains what you are legally required to have, how premiums work, wh
 <tr><th scope="row">What affects price?</th><td>Age, mortgage sum, term, smoker status, medical underwriting and policy features.</td></tr>
 <tr><th scope="row">Does it cover job loss?</th><td><strong>No.</strong> Ordinary mortgage protection is not unemployment or income protection.</td></tr>
 <tr><th scope="row">Can I switch policy?</th><td>Often yes, but secure and approve the replacement before cancelling existing cover.</td></tr>
-<tr><th scope="row">2026 legal development?</th><td>New statutory rules for eligible cancer survivors are due to take effect <strong>15 October 2026</strong>.</td></tr>
+<tr><th scope="row">2026 legal development?</th><td>New statutory rules for eligible cancer survivors took effect <strong>15 October 2026</strong>.</td></tr>
 </tbody>
 </table>
 </div>
@@ -343,24 +351,28 @@ Most new policies involve health and lifestyle questions. Depending on your answ
 
 **Answer every question accurately and fully.** Omissions or misstatements can cause disputes over claims. If you have an existing policy and a new health condition, preserving existing accepted cover can be particularly important.
 
-<div class="mp26-rules"><p><strong>Key date: 15 October 2026.</strong> The Law Society reports that the statutory protections for eligible cancer survivors are scheduled to commence on this date. As of <strong>11 October</strong>, the new rules are not yet in force. <a href="https://production.lawsociety.ie/gazette/top-stories/2026/august/date-set-for-right-to-be-forgotten-law/">Official-sector commencement reporting →</a></p></div>
+<div class="mp26-rules"><p><strong>In force since 15 October 2026.</strong> Article 4 of <a href="https://www.irishstatutebook.ie/eli/2026/si/443/made/en/print">S.I. No. 443/2026</a> commenced <strong>Part 2 (sections 3–7)</strong> of the <a href="https://www.irishstatutebook.ie/eli/2026/act/23/enacted/en/html">Insurance (Disregard of Certain Medical History and Miscellaneous Provisions) Act 2026</a> on this date. The cancer-survivor rules are now legally effective, rather than merely scheduled.</p></div>
 
-### Right to Be Forgotten: new legal rules starting 15 October 2026
+### Right to Be Forgotten: mortgage protection law in force from 15 October 2026
 
-Ireland's **Insurance (Disregard of Certain Medical History and Miscellaneous Provisions) Act 2026** introduces statutory protections for eligible cancer survivors in mortgage protection underwriting. As at this article's review date, **11 October 2026, the key provisions are scheduled to commence on 15 October 2026 — they have not yet commenced**.
+Under **section 5 of the 2026 Act**, an insurer assessing an eligible application for mortgage protection must **disregard qualifying cancer-related medical history** where **all** these conditions are satisfied:
 
-Under the announced statutory framework, insurers must disregard qualifying cancer-related history for a mortgage protection application where all the relevant conditions are met:
+- The applicant completed **active cancer treatment at least five years before applying**.
+- The applicant has been in **complete remission for at least five years before applying**. Both five-year conditions are necessary.
+- The mortgage relates to a property that is or will be the applicant's **principal private residence**.
+- The disregard applies to **up to €650,000 of mortgage protection cover** (or a higher threshold prescribed in future). This is **not a €650,000 property-value cap**. An insurer can use ordinary underwriting for any **excess cover** above the statutory threshold.
 
-- The applicant has **completed active cancer treatment at least five years earlier**.
-- The applicant has been in **complete remission for at least five years**.
-- The application relates to a mortgage on the applicant's **principal private residence**.
-- The mortgage protection sum assured is **no more than €650,000** under the threshold rules.
+The law replaces reliance on the former voluntary code, which generally required **seven years** since treatment completion (or five years where the cancer was diagnosed under age 18) and provided for **€500,000** of cover. The new statutory conditions apply regardless of age at diagnosis. Under section 6, the Minister must review the cover threshold at least every five years, taking account of house prices and stakeholder consultation.
 
-The new statutory framework supersedes reliance on the older voluntary approach for applications covered by the law. The **five-year** period is a major change from the standard **seven-year** period in the earlier industry code. It does not remove ordinary underwriting of unrelated medical factors, nor does it mean that every applicant automatically receives insurance.
+**Preventative medication is not automatically disqualifying.** For the purposes of the statutory definition, active cancer treatment excludes anti-hormonal medicines and preventative therapy intended to reduce the chance of cancer returning. Applicants must still meet the remission and other eligibility tests.
 
-If you are a cancer survivor applying around the commencement date, ask the prospective insurer or regulated broker **which rules apply to the timing of your application** and request a written explanation if you believe the criteria have not been followed.
+**Insurers can request evidence.** Section 5(3) permits a written request for information reasonably necessary to consider the application, including the diagnosis date, the date active treatment ended and oncologist confirmation of at least five years' complete remission. Section 5(5) requires the insurer to notify the applicant of the decision **in writing**, giving **written reasons if refusing**.
 
-Read the [Law Society Gazette's commencement explanation](https://production.lawsociety.ie/gazette/top-stories/2026/august/date-set-for-right-to-be-forgotten-law/) and the [Government's policy announcement](https://www.gov.ie/en/department-of-finance/press-releases/t%C3%A1naiste-and-minister-troy-provide-update-on-right-to-be-forgotten-legislation/).
+**Important limitations:** This is a right to have specified cancer history disregarded for qualifying mortgage protection underwriting. It does **not** guarantee an insurance offer or premium, prevent underwriting of unrelated medical conditions, erase medical records, or provide a cancer-diagnosis payout under ordinary life-only cover.
+
+If you qualify, ask the insurer or a regulated broker for assessment under **Part 2 of the 2026 Act**, provide reasonably requested evidence and retain the written outcome. If an application has been refused, consider the insurer's complaints process and the [Financial Services and Pensions Ombudsman](https://www.fspo.ie/make-a-complaint/how-to-make-a-complaint-to-your-provider/financial-services-provider/). For applications submitted before 15 October, ask the insurer which rules it is applying rather than assuming an existing policy automatically changes.
+
+**Primary sources:** [Enacted Act, Part 2](https://www.irishstatutebook.ie/eli/2026/act/23/enacted/en/html) and [S.I. No. 443/2026, article 4](https://www.irishstatutebook.ie/eli/2026/si/443/made/en/print). See also the [Department of Finance's commencement announcement](https://www.gov.ie/en/department-of-finance/press-releases/t%C3%A1naiste-simon-harris-and-minister-of-state-robert-troy-announce-commencement-of-landmark-right-to-be-forgotten-legislation-for-cancer-survivors/) and [RTÉ's 15 October 2026 confirmation](https://www.rte.ie/news/ireland/2026/1015/1595423-insurance-cancer-survivors/).
 
 ### What if you cannot get cover?
 
@@ -458,7 +470,7 @@ An individual policy may be reassigned if the sum and term still fit the mortgag
 
 ### Can I get mortgage protection after cancer?
 
-Depending on medical circumstances and the applicable underwriting rules, yes. New statutory protections for eligible cancer survivors are scheduled to take effect on **15 October 2026**, subject to criteria including two five-year periods, main-home use and a €650,000 threshold.
+Depending on medical circumstances and the applicable underwriting rules, yes. Statutory protections for eligible cancer survivors have been in force since **15 October 2026**, subject to criteria including two five-year periods, main-home use and a €650,000 threshold.
 
 ### Can mortgage protection be cancelled once my loan is repaid?
 
