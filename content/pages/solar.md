@@ -12,7 +12,7 @@ meta_description: "Get your Irish solar installation project quote-ready with on
         <h1 id="solar-heading">One form. <span>Your solar project ready for quotes.</span></h1>
         <p class="solh-lead">Tell us what you want installed <strong>once</strong>. We’ll prepare a clear project request for potential solar installers, so you can choose to hear from <strong>up to three companies</strong> rather than starting from scratch with each one.</p>
         <a href="/solar/get-quotes/" data-solar-cta="hero" class="solh-primary-cta">Submit my solar project <span aria-hidden="true">→</span></a>
-        <p class="solh-cta-support">Free to submit · Projects accepted now · Installer introductions are not yet available; we’ll ask before sharing your details</p>
+        <p class="solh-cta-support">Free to submit · One detailed project brief · You choose whether to share with installers</p>
         <div class="solh-hero-checks" aria-label="What you can include in your solar project">
           <span>Property &amp; location</span><span>Roof &amp; electricity needs</span><span>Budget &amp; timeframe</span>
         </div>
