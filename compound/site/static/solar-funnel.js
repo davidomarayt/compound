@@ -106,6 +106,16 @@
 
     // Only this event represents a click. Other "calculator_used" events represent actual use.
     // Do not send full hrefs, search queries, referrers, form values or visitor identifiers.
+    if (destination === '/solar/get-quotes/' && anchor.hasAttribute('data-solar-cta')) {
+      // Distinguish high-intent form starts from clicks on research tools.
+      // Only an editorial placement name is included, never form contents.
+      window.gtag('event', 'solar_project_cta_click', {
+        source_path: sourcePath,
+        journey_origin: origin,
+        cta_placement: anchor.getAttribute('data-solar-cta') || 'unspecified',
+        transport_type: 'beacon'
+      });
+    }
     window.gtag('event', 'solar_journey_click', {
       source_path: sourcePath,
       destination_path: destination,
