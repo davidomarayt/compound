@@ -1,0 +1,67 @@
+{
+  "cik": 1613103,
+  "company": "Medtronic",
+  "latest": {
+    "accession": "0001628280-26-060473",
+    "filed": "2026-09-03",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.14,
+        "prior_year": 0.81,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1470000000,
+        "prior_year": 1040000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 9756000000,
+        "prior_year": 8578000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1613103/000162828026060473/mdt-20260731.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-060473",
+      "filed": "2026-09-03",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.14,
+          "prior_year": 0.81,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1470000000,
+          "prior_year": 1040000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 9756000000,
+          "prior_year": 8578000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1613103/000162828026060473/mdt-20260731.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "MDT",
+  "updated": "2026-10-15"
+}

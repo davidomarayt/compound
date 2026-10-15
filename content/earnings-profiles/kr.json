@@ -1,0 +1,96 @@
+{
+  "cik": 56873,
+  "company": "Kroger",
+  "latest": {
+    "accession": "0001104659-26-108926",
+    "filed": "2026-09-18",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.05,
+        "prior_year": 0.91,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 641000000,
+        "prior_year": 609000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 34621000000,
+        "prior_year": 33940000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-15",
+    "source": "https://www.sec.gov/Archives/edgar/data/56873/000110465926108926/kr-20260815x10q.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001104659-26-078236",
+      "filed": "2026-06-26",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.46,
+          "prior_year": 1.29,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 903000000,
+          "prior_year": 866000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 46121000000,
+          "prior_year": 45118000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-23",
+      "source": "https://www.sec.gov/Archives/edgar/data/56873/000110465926078236/kr-20260523x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-108926",
+      "filed": "2026-09-18",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.05,
+          "prior_year": 0.91,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 641000000,
+          "prior_year": 609000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 34621000000,
+          "prior_year": 33940000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-15",
+      "source": "https://www.sec.gov/Archives/edgar/data/56873/000110465926108926/kr-20260815x10q.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "KR",
+  "updated": "2026-10-15"
+}

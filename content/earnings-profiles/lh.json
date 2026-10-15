@@ -1,0 +1,96 @@
+{
+  "cik": 920148,
+  "company": "Labcorp",
+  "latest": {
+    "accession": "0000920148-26-000175",
+    "filed": "2026-08-05",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.64,
+        "prior_year": 2.84,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 298700000,
+        "prior_year": 237900000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 3731100000,
+        "prior_year": 3527300000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/920148/000092014826000175/lh-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000920148-26-000139",
+      "filed": "2026-05-04",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.35,
+          "prior_year": 2.52,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 277800000,
+          "prior_year": 212800000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3537600000,
+          "prior_year": 3345100000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/920148/000092014826000139/lh-20260331.htm"
+    },
+    {
+      "accession": "0000920148-26-000175",
+      "filed": "2026-08-05",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.64,
+          "prior_year": 2.84,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 298700000,
+          "prior_year": 237900000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3731100000,
+          "prior_year": 3527300000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/920148/000092014826000175/lh-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "LH",
+  "updated": "2026-10-15"
+}

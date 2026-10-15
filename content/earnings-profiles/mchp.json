@@ -1,0 +1,67 @@
+{
+  "cik": 827054,
+  "company": "Microchip Technology",
+  "latest": {
+    "accession": "0000827054-26-000038",
+    "filed": "2026-08-06",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.37,
+        "prior_year": -0.09,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 229800000,
+        "prior_year": -18600000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1484700000,
+        "prior_year": 1075500000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/827054/000082705426000038/mchp-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000827054-26-000038",
+      "filed": "2026-08-06",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.37,
+          "prior_year": -0.09,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 229800000,
+          "prior_year": -18600000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1484700000,
+          "prior_year": 1075500000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/827054/000082705426000038/mchp-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "MCHP",
+  "updated": "2026-10-15"
+}

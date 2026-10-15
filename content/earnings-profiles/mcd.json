@@ -1,0 +1,96 @@
+{
+  "cik": 63908,
+  "company": "McDonald's",
+  "latest": {
+    "accession": "0000063908-26-000073",
+    "filed": "2026-08-07",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.32,
+        "prior_year": 3.14,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 2362000000,
+        "prior_year": 2253000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 7099000000,
+        "prior_year": 6843000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000073/mcd-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000063908-26-000051",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.78,
+          "prior_year": 2.6,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1983000000,
+          "prior_year": 1868000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6517000000,
+          "prior_year": 5956000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000051/mcd-20260331.htm"
+    },
+    {
+      "accession": "0000063908-26-000073",
+      "filed": "2026-08-07",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.32,
+          "prior_year": 3.14,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2362000000,
+          "prior_year": 2253000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7099000000,
+          "prior_year": 6843000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/63908/000006390826000073/mcd-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "MCD",
+  "updated": "2026-10-15"
+}

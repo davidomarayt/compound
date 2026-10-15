@@ -1,0 +1,96 @@
+{
+  "cik": 1335258,
+  "company": "Live Nation Entertainment",
+  "latest": {
+    "accession": "0001335258-26-000035",
+    "filed": "2026-07-30",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.05,
+        "prior_year": 0.41,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 294446000,
+        "prior_year": 243411000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 7666858000,
+        "prior_year": 7006641000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1335258/000133525826000035/lyv-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001335258-26-000019",
+      "filed": "2026-05-05",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -1.85,
+          "prior_year": -0.32,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -389104000,
+          "prior_year": 23203000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3793029000,
+          "prior_year": 3382117000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1335258/000133525826000019/lyv-20260331.htm"
+    },
+    {
+      "accession": "0001335258-26-000035",
+      "filed": "2026-07-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.05,
+          "prior_year": 0.41,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 294446000,
+          "prior_year": 243411000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7666858000,
+          "prior_year": 7006641000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1335258/000133525826000035/lyv-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "LYV",
+  "updated": "2026-10-15"
+}

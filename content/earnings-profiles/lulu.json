@@ -1,0 +1,96 @@
+{
+  "cik": 1397187,
+  "company": "Lululemon Athletica",
+  "latest": {
+    "accession": "0001397187-26-000127",
+    "filed": "2026-09-03",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.92,
+        "prior_year": 3.1,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 329223000,
+        "prior_year": 370905000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2415631000,
+        "prior_year": 2525219000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-02",
+    "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001397187-26-000078",
+      "filed": "2026-06-04",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.69,
+          "prior_year": 2.6,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 195048000,
+          "prior_year": 314572000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2471603000,
+          "prior_year": 2370660000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000078/lulu-20260503.htm"
+    },
+    {
+      "accession": "0001397187-26-000127",
+      "filed": "2026-09-03",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.92,
+          "prior_year": 3.1,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 329223000,
+          "prior_year": 370905000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2415631000,
+          "prior_year": 2525219000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000127/lulu-20260802.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "LULU",
+  "updated": "2026-10-15"
+}

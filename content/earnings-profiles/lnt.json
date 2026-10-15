@@ -1,0 +1,67 @@
+{
+  "cik": 352541,
+  "company": "Alliant Energy",
+  "latest": {
+    "accession": "0000352541-26-000033",
+    "filed": "2026-05-01",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.87,
+        "prior_year": 0.83,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 224000000,
+        "prior_year": 213000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1184000000,
+        "prior_year": 1128000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/352541/000035254126000033/lnt-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000352541-26-000033",
+      "filed": "2026-05-01",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.87,
+          "prior_year": 0.83,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 224000000,
+          "prior_year": 213000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1184000000,
+          "prior_year": 1128000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/352541/000035254126000033/lnt-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "LNT",
+  "updated": "2026-10-15"
+}

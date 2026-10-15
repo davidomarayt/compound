@@ -1,0 +1,96 @@
+{
+  "cik": 202058,
+  "company": "L3Harris",
+  "latest": {
+    "accession": "0000202058-26-000058",
+    "filed": "2026-07-30",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.13,
+        "prior_year": 2.44,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 600000000,
+        "prior_year": 458000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 5881000000,
+        "prior_year": 5426000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-03",
+    "source": "https://www.sec.gov/Archives/edgar/data/202058/000020205826000058/hrs-20260703.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000202058-26-000035",
+      "filed": "2026-04-30",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.72,
+          "prior_year": 2.04,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 512000000,
+          "prior_year": 386000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5744000000,
+          "prior_year": 5132000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/202058/000020205826000035/hrs-20260403.htm"
+    },
+    {
+      "accession": "0000202058-26-000058",
+      "filed": "2026-07-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.13,
+          "prior_year": 2.44,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 600000000,
+          "prior_year": 458000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5881000000,
+          "prior_year": 5426000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/202058/000020205826000058/hrs-20260703.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "LHX",
+  "updated": "2026-10-15"
+}

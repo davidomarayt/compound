@@ -1,0 +1,96 @@
+{
+  "cik": 1336920,
+  "company": "Leidos",
+  "latest": {
+    "accession": "0001336920-26-000246",
+    "filed": "2026-08-04",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.81,
+        "prior_year": 3.01,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 354000000,
+        "prior_year": 391000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4548000000,
+        "prior_year": 4233000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-03",
+    "source": "https://www.sec.gov/Archives/edgar/data/1336920/000133692026000246/ldos-20260703.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001336920-26-000169",
+      "filed": "2026-05-05",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.56,
+          "prior_year": 2.77,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 328000000,
+          "prior_year": 363000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4383000000,
+          "prior_year": 4228000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/1336920/000133692026000169/ldos-20260403.htm"
+    },
+    {
+      "accession": "0001336920-26-000246",
+      "filed": "2026-08-04",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.81,
+          "prior_year": 3.01,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 354000000,
+          "prior_year": 391000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4548000000,
+          "prior_year": 4233000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/1336920/000133692026000246/ldos-20260703.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "LDOS",
+  "updated": "2026-10-15"
+}

@@ -1,0 +1,96 @@
+{
+  "cik": 1633978,
+  "company": "Lumentum",
+  "latest": {
+    "accession": "0001628280-26-057358",
+    "filed": "2026-08-17",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": -92.96,
+        "prior_year": 0.37,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": -6935100000,
+        "prior_year": 25900000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 3014000000,
+        "prior_year": 1645000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-27",
+    "source": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026057358/lite-20260627.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-030777",
+      "filed": "2026-05-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.5,
+          "prior_year": -0.64,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 144200000,
+          "prior_year": -44100000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 808400000,
+          "prior_year": 425200000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026030777/lite-20260328.htm"
+    },
+    {
+      "accession": "0001628280-26-057358",
+      "filed": "2026-08-17",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -92.96,
+          "prior_year": 0.37,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -6935100000,
+          "prior_year": 25900000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3014000000,
+          "prior_year": 1645000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/1633978/000162828026057358/lite-20260627.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "LITE",
+  "updated": "2026-10-15"
+}

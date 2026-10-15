@@ -1,0 +1,96 @@
+{
+  "cik": 1048286,
+  "company": "Marriott International",
+  "latest": {
+    "accession": "0001048286-26-000035",
+    "filed": "2026-08-03",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.9,
+        "prior_year": 2.78,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 766000000,
+        "prior_year": 763000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 7071000000,
+        "prior_year": 6744000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000035/mar-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001048286-26-000014",
+      "filed": "2026-05-06",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.43,
+          "prior_year": 2.39,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 648000000,
+          "prior_year": 665000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6654000000,
+          "prior_year": 6263000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000014/mar-20260331.htm"
+    },
+    {
+      "accession": "0001048286-26-000035",
+      "filed": "2026-08-03",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.9,
+          "prior_year": 2.78,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 766000000,
+          "prior_year": 763000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7071000000,
+          "prior_year": 6744000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000035/mar-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "MAR",
+  "updated": "2026-10-15"
+}

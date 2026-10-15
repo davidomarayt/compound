@@ -1,0 +1,96 @@
+{
+  "cik": 1944048,
+  "company": "Kenvue",
+  "latest": {
+    "accession": "0001944048-26-000142",
+    "filed": "2026-08-06",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.24,
+        "prior_year": 0.22,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 456000000,
+        "prior_year": 420000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 3955000000,
+        "prior_year": 3839000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-28",
+    "source": "https://www.sec.gov/Archives/edgar/data/1944048/000194404826000142/kvue-20260628.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001944048-26-000098",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.25,
+          "prior_year": 0.17,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 474000000,
+          "prior_year": 322000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3909000000,
+          "prior_year": 3741000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-29",
+      "source": "https://www.sec.gov/Archives/edgar/data/1944048/000194404826000098/kvue-20260329.htm"
+    },
+    {
+      "accession": "0001944048-26-000142",
+      "filed": "2026-08-06",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.24,
+          "prior_year": 0.22,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 456000000,
+          "prior_year": 420000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3955000000,
+          "prior_year": 3839000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/1944048/000194404826000142/kvue-20260628.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "KVUE",
+  "updated": "2026-10-15"
+}

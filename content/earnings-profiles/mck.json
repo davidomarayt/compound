@@ -1,0 +1,67 @@
+{
+  "cik": 927653,
+  "company": "McKesson Corporation",
+  "latest": {
+    "accession": "0000927653-26-000234",
+    "filed": "2026-08-05",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
+    "metrics": {
+      "diluted_eps": {
+        "current": 5.15,
+        "prior_year": 6.25,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 614000000,
+        "prior_year": 784000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 105380000000,
+        "prior_year": 97827000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/927653/000092765326000234/mck-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000927653-26-000234",
+      "filed": "2026-08-05",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 5.15,
+          "prior_year": 6.25,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 614000000,
+          "prior_year": 784000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 105380000000,
+          "prior_year": 97827000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/927653/000092765326000234/mck-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "MCK",
+  "updated": "2026-10-15"
+}

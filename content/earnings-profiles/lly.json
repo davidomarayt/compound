@@ -1,0 +1,96 @@
+{
+  "cik": 59478,
+  "company": "Lilly (Eli)",
+  "latest": {
+    "accession": "0000059478-26-000081",
+    "filed": "2026-08-05",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 7.94,
+        "prior_year": 6.29,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 7095000000,
+        "prior_year": 5661000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 22974000000,
+        "prior_year": 15558000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000059478-26-000045",
+      "filed": "2026-04-30",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 8.26,
+          "prior_year": 3.06,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 7396000000,
+          "prior_year": 2759000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 19799000000,
+          "prior_year": 12729000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000045/lly-20260331.htm"
+    },
+    {
+      "accession": "0000059478-26-000081",
+      "filed": "2026-08-05",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 7.94,
+          "prior_year": 6.29,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 7095000000,
+          "prior_year": 5661000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 22974000000,
+          "prior_year": 15558000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "LLY",
+  "updated": "2026-10-15"
+}
