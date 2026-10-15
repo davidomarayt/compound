@@ -96,7 +96,10 @@ def main():
                                 anchor.click();
                                 return {before,after:data.length,params:data[0]||null};
                             }""")
-                            if tracked["before"] != 0 or tracked["after"] != 1 or tracked["params"][1] != "homepage_hub_click":
+                            # One homepage_hub_click plus a separate sitewide solar_journey_click
+                            # are expected for the same consented solar project link. They are
+                            # different GA4 events, not duplicate homepage tracking.
+                            if tracked["before"] != 0 or tracked["after"] != 2 or tracked["params"][1] != "homepage_hub_click":
                                 failures.append(f"{width}px consent tracking failed: {tracked}")
                             elif tracked["params"][2].get("hub") != "solar":
                                 failures.append(f"{width}px wrong hub attribution: {tracked}")
