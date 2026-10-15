@@ -6,7 +6,8 @@ import {json,intakeEnabled,paymentEnabled,pilotIntakeEnabled,databaseSecretReady
 export async function GET(){
   const safe={
     service:'compound-solar-leads-api',
-    status:'prelaunch',
+    status:pilotIntakeEnabled() ? 'homeowner_intake_open' : 'prelaunch',
+    installerMatchingEnabled:false,
     intakeEnabled:intakeEnabled(),
     paymentsEnabled:paymentEnabled(),
     privatePilotEnabled:pilotIntakeEnabled(),
