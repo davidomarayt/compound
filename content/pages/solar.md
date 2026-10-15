@@ -1,80 +1,99 @@
 ---
-title: "Solar Panels Ireland: Grants, Costs, Calculators & Quotes"
+title: "Solar Quotes Ireland: Plan Your Installation & Compare Costs"
 canonical_path: /solar/
-meta_description: "Ireland's solar hub: check SEAI grants, compare installation quotes, explore batteries and export payments, and estimate payback with free tools."
+meta_description: "Planning solar panels in Ireland? Build a free solar installation project brief, check SEAI grants and understand costs before approaching installers."
 ---
-<div class="sol-shell">
-  <section class="sol-hero" aria-labelledby="solar-heading">
-    <nav class="sol-crumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/wealth/">Wealth</a><span>/</span><span aria-current="page">Solar</span></nav>
-    <div class="sol-hero-grid">
-      <div><p class="sol-ey sol-ey-light">COMPOUND / HOME ENERGY</p><h1 id="solar-heading">Solar, <em>without the guesswork.</em></h1>
-        <p class="sol-lead">From your first electricity bill to your final installer quote. Independent Irish guides, practical calculators and a clear route to finding the right solar system for your home.</p>
-        <div class="sol-actions"><a class="sol-btn" href="/solar/compare-quotes/">Compare solar quotes <span aria-hidden="true">↗</span></a><a class="sol-btn sol-btn-outline" href="/solar/grants/">Check your grants <span aria-hidden="true">↗</span></a></div>
-        <div class="sol-trust"><span>Designed for Ireland</span><span>Free tools</span><span>No paid rankings</span></div>
+<div class="sol-shell sol-home">
+  <header class="solh-hero" aria-labelledby="solar-heading">
+    <nav class="solh-crumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/wealth/">Wealth</a><span aria-hidden="true">/</span><span aria-current="page">Solar</span></nav>
+    <div class="solh-hero-grid">
+      <div class="solh-hero-main">
+        <p class="solh-eyebrow"><span class="solh-dot" aria-hidden="true"></span> COMPOUND SOLAR / IRELAND</p>
+        <h1 id="solar-heading">Planning solar panels? <span>Start with a better quote request.</span></h1>
+        <p class="solh-lead">Tell us about your property, electricity use and what you want to install. Build one clear project brief that makes it easier to assess your options without repeating yourself to every company.</p>
+        <a href="/solar/get-quotes/" data-solar-cta="hero" class="solh-primary-cta">Build my solar project <span aria-hidden="true">→</span></a>
+        <p class="solh-cta-support">Free to homeowners · No account required · Submit only when you choose</p>
+        <div class="solh-hero-checks" aria-label="What you can include in your solar project">
+          <span>Property &amp; location</span><span>Roof &amp; electricity needs</span><span>Budget &amp; timeframe</span>
+        </div>
       </div>
-      <div class="sol-roof-art" aria-label="Illustration of a rooftop solar array">
-        <div class="sol-art-sun"></div><div class="sol-art-roof"><div class="sol-panel-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><p>MAKE THE NUMBERS WORK</p>
-      </div>
+      <aside class="solh-preview" aria-label="Example of a structured solar installation project brief">
+        <div class="solh-preview-header"><span class="solh-preview-kicker">YOUR SOLAR PROJECT BRIEF</span><span class="solh-preview-tag">EXAMPLE</span></div>
+        <h2>Everything in one place.</h2>
+        <div class="solh-preview-row"><span>Property</span><strong>Detached house</strong></div>
+        <div class="solh-preview-row"><span>County</span><strong>Meath</strong></div>
+        <div class="solh-preview-row"><span>System</span><strong>Solar PV + optional battery</strong></div>
+        <div class="solh-preview-row"><span>Timing</span><strong>Within 3 months</strong></div>
+        <div class="solh-preview-note"><strong>Not sure about roof angles or system size?</strong><p>That's fine. Enter what you know and leave technical design to a qualified installer.</p></div>
+        <p class="solh-preview-foot">Illustrative example, not an actual customer enquiry.</p>
+      </aside>
     </div>
+  </header>
+
+  <section class="solh-pilot" aria-label="Current status of solar quote requests">
+    <span class="solh-pilot-mark" aria-hidden="true">i</span>
+    <div><strong>Currently accepting private project requests.</strong> Compound reviews submitted projects during this pilot. We do not share them with installers at this stage; we will request your separate permission before any future introduction. Completing a brief does not guarantee an installer quote.</div>
   </section>
-  <div class="sol-utility"><span>Start here</span><nav aria-label="Solar hub sections"><a href="#solar-tools">Calculators</a><a href="#sol-orientation-teaser-title">Roof compass</a><a href="#solar-learn">Guides</a><a href="#solar-journey">How it works</a><a href="#solar-sources">Official sources</a><a href="/solar/installer-portal/">Installer login ↗</a></nav></div>
-  <section class="sol-feature" id="solar-tools" aria-labelledby="solar-tools-title">
-    <div class="sol-sectionhead"><div><p class="sol-ey">INTERACTIVE TOOLS</p><h2 id="solar-tools-title">Three decisions. <em>Better answers.</em></h2></div><p>Compare real quotes and run the economics before signing an installation contract. No registration needed.</p></div>
-    <div class="sol-cardgrid sol-cardgrid-3">
-      <a class="sol-card sol-card-accent" href="/solar/compare-quotes/"><span class="sol-cardtop">01 / QUOTE ANALYSIS</span><h3>Compare your quotes</h3><p>Enter up to three proposals. See net costs, €/kWp, estimated generation and simple payback side by side.</p><strong>Open comparator ↗</strong></a>
-      <a class="sol-card" href="/solar-payback-calculator/"><span class="sol-cardtop">02 / FINANCIAL RETURN</span><h3>Solar payback calculator</h3><p>Model tariffs, self-consumption and grant eligibility. Advanced mode adds EV charging and batteries.</p><strong>Calculate solar payback ↗</strong></a>
-      <a class="sol-card" href="/solar-ev-battery-optimiser/"><span class="sol-cardtop">03 / SYSTEM DESIGN</span><h3>Solar + EV + battery</h3><p>Understand how electric vehicles, storage and night-rate charging change the economics.</p><strong>Optimise the system ↗</strong></a>
-    </div>
+
+  <section class="solh-how" id="solar-journey" aria-labelledby="solh-how-title">
+    <div class="solh-section-intro"><div><p class="solh-eyebrow">THE PROCESS</p><h2 id="solh-how-title">One project brief. <span>Less back and forth.</span></h2></div><p>We ask for the details that help an installer understand whether a job suits their area, availability and services.</p></div>
+    <ol class="solh-steps">
+      <li><span class="solh-step-number">01</span><h3>Describe your home</h3><p>County, property type, installation timeframe and your preferred solar setup.</p></li>
+      <li><span class="solh-step-number">02</span><h3>Add the useful details</h3><p>Roof direction, shading and electricity usage if you know them. Our roof compass can help.</p></li>
+      <li><span class="solh-step-number">03</span><h3>Submit for review</h3><p>Review your brief and choose whether to submit it privately to Compound. No installer receives it during the pilot.</p></li>
+    </ol>
+    <div class="solh-mid-cta"><div><strong>Don't know your roof pitch or annual kWh?</strong><p>You can still start. Most technical answers can be confirmed after an installer surveys the property.</p></div><a href="/solar/get-quotes/" data-solar-cta="steps" class="solh-primary-cta">Start my project <span aria-hidden="true">→</span></a></div>
   </section>
-  <section class="sol-orientation-teaser" aria-labelledby="sol-orientation-teaser-title">
-    <div class="sol-orientation-illustration" aria-hidden="true"><span class="sol-orientation-ring"><b>N</b><b>E</b><b>S</b><b>W</b><i></i></span></div>
-    <div><p class="sol-ey">NEW / INTERACTIVE ROOF COMPASS</p><h2 id="sol-orientation-teaser-title">Does your roof face <em>the right way?</em></h2><p>Turn a full 360° compass and see how your roof direction, tilt and solar array size affect predicted annual electricity generation. Compare north, east, south or any angle in between.</p><a class="sol-btn" href="/solar/roof-direction/">Explore the solar direction calculator ↗</a></div>
-  </section>
-  <section class="sol-statband" aria-label="Grant values"><div><span>STANDARD SOLAR PV GRANT</span><strong>Up to €1,800</strong><small>Subject to SEAI eligibility</small></div><div><span>SEPARATE BATTERY GRANT</span><strong>€600</strong><small>Qualifying batteries ≥5 kWh</small></div><div class="sol-statband-action"><p>Grants are not automatic. Apply and receive approval before work starts.</p><a href="/solar/grants/">Check current rules ↗</a></div></section>
-  <section id="solar-learn">
-    <div class="sol-sectionhead"><div><p class="sol-ey">SOLAR KNOWLEDGE CENTRE</p><h2>The research before <em>the roof.</em></h2></div><p>Each guide covers a different question, with supporting Irish sources and tools where relevant.</p></div>
-    <p class="sol-method"><strong>How many panels should you buy?</strong> Our new <a href="/wealth/how-many-solar-panels-do-i-need-ireland/">4kWp vs 6kWp vs 8kWp comparison</a> puts estimated generation, annual value and the extra cost of going bigger side by side. Start with the model, then use your real quotes in the calculators below.</p>
-    <div class="sol-cardgrid sol-cardgrid-3">
-      <a class="sol-card" href="/wealth/solar-panels-ireland/"><span class="sol-cardtop">THE COMPLETE GUIDE</span><h3>Solar panels in Ireland</h3><p>Planning, grants, installation, payback, grid connection and what to ask before you buy.</p><strong>Read the guide ↗</strong></a>
-      <a class="sol-card" href="/wealth/compare-solar-panel-quotes-ireland/"><span class="sol-cardtop">NEW / BUYER CHECKLIST</span><h3>Are you paying too much?</h3><p>Compare competing solar installation quotes, hidden costs, warranties and real payback before paying a deposit.</p><strong>Read the 2026 quote guide ↗</strong></a>
-      <a class="sol-card" href="/solar/costs/"><span class="sol-cardtop">BUDGET & SIZING</span><h3>What should it cost?</h3><p>Understand quote components, €/kWp, roof suitability and how to avoid false comparisons.</p><strong>Explore costs ↗</strong></a>
-      <a class="sol-card" href="/solar/grants/"><span class="sol-cardtop">FUNDING & ELIGIBILITY</span><h3>Irish solar grants</h3><p>Check the standard solar PV grant, battery grant and how approval works.</p><strong>Check eligibility ↗</strong></a>
-      <a class="sol-card" href="/solar/batteries/"><span class="sol-cardtop">BATTERY CALCULATOR</span><h3>Will a battery pay back?</h3><p>Estimate battery value after storage losses, grant assumptions and export income forgone.</p><strong>Check battery economics ↗</strong></a>
-      <a class="sol-card" href="/solar/export-rates/"><span class="sol-cardtop">CLEAN EXPORT GUARANTEE</span><h3>Compare export tariffs</h3><p>Compare two electricity offers including import rates, export income and standing charges.</p><strong>Compare tariffs ↗</strong></a>
-      <a class="sol-card" href="/solar/equipment/"><span class="sol-cardtop">PANEL / INVERTER / BATTERY</span><h3>Equipment buyer's guide</h3><p>Check modules, inverter ratings, warranties, monitoring and installation extras.</p><strong>Compare equipment ↗</strong></a>
-      <a class="sol-card" href="/wealth/solar-panels-winter-ireland/"><span class="sol-cardtop">WINTER SOLAR ECONOMICS</span><h3>What happens in winter?</h3><p>See 12-month PV output for 4, 6 and 8 kWp systems, Irish locations and realistic savings.</p><strong>View monthly output ↗</strong></a>
-      <a class="sol-card" href="/wealth/east-west-facing-solar-panels-ireland/"><span class="sol-cardtop">ROOF ORIENTATION</span><h3>East, west or south?</h3><p>Compare SEAI orientation figures and see how electricity-use timing changes the case.</p><strong>Explore roof direction ↗</strong></a>
-      <a class="sol-card" href="/wealth/solar-panels-vs-battery-ireland/"><span class="sol-cardtop">THE DEEP DIVE</span><h3>Solar panels vs storage</h3><p>Read the full comparison before adding a battery to your installation.</p><strong>Read the guide ↗</strong></a>
-      <a class="sol-card" href="/solar/installers/"><span class="sol-cardtop">INSTALLATION</span><h3>Find a solar installer</h3><p>Check SEAI registration, compare offers and use our independent installer checklist.</p><strong>Find a contractor ↗</strong></a>
-      <a class="sol-card" href="/solar/get-quotes/"><span class="sol-cardtop">GET READY TO BUY</span><h3>Prepare your quote request</h3><p>Create a clear, comparable brief you can send to multiple registered companies.</p><strong>Prepare a quote brief ↗</strong></a>
+
+  <section class="solh-benefits" aria-labelledby="solh-benefits-title">
+    <div class="solh-section-intro"><div><p class="solh-eyebrow">WHY A DETAILED REQUEST MATTERS</p><h2 id="solh-benefits-title">A low price means little <span>without the details.</span></h2></div><p>Comparing solar installations is easier when each company can quote for the same property and expectations.</p></div>
+    <div class="solh-benefit-grid">
+      <article><span class="solh-benefit-icon" aria-hidden="true">01</span><h3>More comparable proposals</h3><p>Ask for a consistent system specification, installed price, grant assumptions and projected annual generation.</p></article>
+      <article><span class="solh-benefit-icon" aria-hidden="true">02</span><h3>Fewer missing details</h3><p>Share roof access, battery preferences, EV charging and your installation timeframe from the outset.</p></article>
+      <article><span class="solh-benefit-icon" aria-hidden="true">03</span><h3>Control over your details</h3><p>Your draft stays in the browser until you submit. Pilot submissions are reviewed privately by Compound.</p></article>
     </div>
   </section>
 
-  <section id="solar-connected-energy" aria-labelledby="solar-connected-heading">
-    <div class="sol-sectionhead"><div><p class="sol-ey">RELATED COMPOUND TOOLS</p><h2 id="solar-connected-heading">Plan the <em>whole home.</em></h2></div><p>Solar is only one part of the energy bill. Compare current usage, home efficiency and retrofit budgets before deciding on a PV system.</p></div>
-    <div class="sol-cardgrid sol-cardgrid-3">
-      <a class="sol-card" href="/electricity-cost-calculator/"><span class="sol-cardtop">HOUSEHOLD USE</span><h3>Electricity cost calculator</h3><p>Estimate the cost of appliances and additional loads when planning solar generation.</p><strong>Open electricity tool ↗</strong></a>
-      <a class="sol-card" href="/ber-energy-cost-calculator/"><span class="sol-cardtop">ENERGY EFFICIENCY</span><h3>BER energy cost calculator</h3><p>Compare building energy intensity and bills separately from rooftop electricity generation.</p><strong>Open BER calculator ↗</strong></a>
-      <a class="sol-card" href="/whole-house-retrofit-planner/"><span class="sol-cardtop">WHOLE-HOME PROJECT</span><h3>Retrofit planner</h3><p>Model insulation, heating and solar in a coordinated upgrade budget.</p><strong>Plan a retrofit ↗</strong></a>
+  <section class="solh-grants" aria-labelledby="solh-grants-title">
+    <div><p class="solh-eyebrow">2026 IRISH SOLAR SUPPORTS</p><h2 id="solh-grants-title">Know the grant position <span>before comparing prices.</span></h2><p>Compare the full installed cost before grants, then check which supports you may actually qualify for. Grant approval must be in place before eligible work starts.</p><a href="/solar/grants/" class="solh-textlink">Check SEAI grant rules <span aria-hidden="true">→</span></a></div>
+    <div class="solh-grant-figures"><div><small>STANDARD SOLAR PV GRANT</small><strong>Up to €1,800</strong><span>Subject to SEAI eligibility</span></div><div><small>SEPARATE BATTERY GRANT</small><strong>€600</strong><span>Qualifying batteries of 5kWh or more</span></div></div>
+  </section>
+
+  <section class="solh-resources" id="solar-tools" aria-labelledby="solh-tools-title">
+    <div class="solh-section-intro"><div><p class="solh-eyebrow">RESEARCH FIRST, WHEN YOU NEED IT</p><h2 id="solh-tools-title">Not ready to submit? <span>Run the numbers.</span></h2></div><p>Useful, independent tools for planning your budget and deciding which installation suits your home.</p></div>
+    <div class="solh-resource-grid">
+      <a href="/solar-payback-calculator/" class="solh-resource"><span>01 / FINANCIAL RETURN</span><h3>Solar payback calculator</h3><p>Estimate annual value and simple payback from installed cost, electricity prices and solar output.</p><strong>Calculate my payback →</strong></a>
+      <a href="/solar/compare-quotes/" class="solh-resource"><span>02 / ALREADY HAVE OFFERS?</span><h3>Compare existing quotes</h3><p>Line up up to three installer proposals, grants, equipment and expected generation.</p><strong>Compare my quotations →</strong></a>
+      <a href="/solar/roof-direction/" class="solh-resource"><span>03 / ROOF SUITABILITY</span><h3>Check your roof direction</h3><p>Use the interactive roof compass to explore orientation, tilt and estimated output.</p><strong>Explore the roof calculator →</strong></a>
     </div>
-    <div class="sol-sectionhead"><div><p class="sol-ey">RELATED IRISH GUIDES</p><h2>Start with the <em>energy picture.</em></h2></div><p>Use actual energy needs and tariff information rather than relying on national averages.</p></div>
-    <div class="sol-cardgrid sol-cardgrid-3">
-      <a class="sol-card" href="/wealth/average-home-electricity-use-ireland/"><span class="sol-cardtop">ELECTRICITY DEMAND</span><h3>Electricity use in Irish homes</h3><p>Understand your current kWh demand before estimating a solar system.</p><strong>Read guide ↗</strong></a>
-      <a class="sol-card" href="/wealth/electricity-tariffs-ireland/"><span class="sol-cardtop">SMART TARIFFS</span><h3>Electricity tariffs in Ireland</h3><p>Understand import and export economics, day/night plans and EV charging.</p><strong>Read guide ↗</strong></a>
-      <a class="sol-card" href="/wealth/heat-pumps-ireland/"><span class="sol-cardtop">ELECTRIC HEATING</span><h3>Heat pumps in Ireland</h3><p>A heat pump can change the size and timing of household electricity consumption.</p><strong>Read guide ↗</strong></a>
-      <a class="sol-card" href="/wealth/insulation-grants-ireland/"><span class="sol-cardtop">FABRIC FIRST</span><h3>Insulation grants in Ireland</h3><p>Assess efficiency measures before a larger home-energy investment.</p><strong>Read guide ↗</strong></a>
+    <div class="solh-library" id="solar-learn">
+      <div><h3>Independent solar guides</h3><p>Practical reference articles and specialist tools, grouped here so they don't distract from starting a quote request.</p></div>
+      <div class="solh-library-links">
+        <a href="/wealth/compare-solar-panel-quotes-ireland/">How to compare solar quotes</a>
+        <a href="/wealth/solar-panels-ireland/">Solar panels in Ireland: complete guide</a>
+        <a href="/wealth/how-many-solar-panels-do-i-need-ireland/">4kWp vs 6kWp vs 8kWp</a>
+        <a href="/solar/costs/">Installation costs explained</a>
+        <a href="/wealth/solar-panels-vs-battery-ireland/">Do you need battery storage?</a>
+        <a href="/solar/export-rates/">Compare export payments</a>
+        <a href="/solar/equipment/">Panels, inverters and equipment</a>
+        <a href="/solar/installers/">How to check an installer</a>
+        <a href="/wealth/solar-panels-winter-ireland/">How solar performs in winter</a>
+        <a href="/wealth/east-west-facing-solar-panels-ireland/">East- and west-facing roofs</a>
+        <a href="/solar/batteries/">Battery economics calculator</a>
+        <a href="/solar-ev-battery-optimiser/">Solar, EV and battery optimiser</a>
+        <a href="/wealth/average-home-electricity-use-ireland/">Average household electricity use</a>
+        <a href="/wealth/electricity-tariffs-ireland/">Smart electricity tariff guide</a>
+      </div>
     </div>
-    <p class="sol-method">Planning EV charging too? Use the <a href="/ev-charging-cost-calculator/">EV Charging Cost Calculator</a> with the <a href="/solar-ev-battery-optimiser/">solar + EV + battery optimiser</a>. These tools answer related but different questions; avoid double-counting savings.</p>
   </section>
-  <section class="sol-steps" id="solar-journey">
-    <div class="sol-sectionhead"><div><p class="sol-ey">FROM IDEA TO INSTALLATION</p><h2>Five steps to a <em>smarter decision.</em></h2></div></div>
-    <ol><li><strong>Understand your demand.</strong><p>Use annual kWh and, ideally, smart-meter half-hourly usage to see when you need energy.</p></li><li><strong>Estimate an appropriate system.</strong><p>Consider roof area, orientation, shading, annual generation and future EV or heat-pump demand.</p></li><li><strong>Check the grants.</strong><p>Confirm the correct SEAI scheme and obtain grant approval before starting the work.</p></li><li><strong>Request comparable written quotes.</strong><p>Ask for the same equipment details, yield model, battery capacity, warranties and total price.</p></li><li><strong>Choose and verify.</strong><p>Check registration, references, the written contract, grid paperwork, post-works BER and commissioning documents.</p></li></ol>
+
+  <section class="solh-final-cta" aria-labelledby="solh-final-cta-title">
+    <div><p class="solh-eyebrow">YOUR NEXT STEP</p><h2 id="solh-final-cta-title">Ready to plan your solar installation?</h2><p>Start your free homeowner brief. Include as much as you know, then decide whether to submit it privately to Compound for review.</p></div>
+    <div><a href="/solar/get-quotes/" data-solar-cta="bottom" class="solh-primary-cta">Build my solar project <span aria-hidden="true">→</span></a><small>Private pilot · No obligation · No installer access yet</small></div>
   </section>
-  <section class="sol-bottomcta"><div><p class="sol-ey sol-ey-light">READY TO COMPARE?</p><h2>Already have installation quotes?</h2><p>Use Compound's free comparison tool to see where prices and assumptions differ. Results stay in your browser.</p></div><a class="sol-btn" href="/solar/compare-quotes/">Compare my quotes ↗</a></section>
-  <div class="sol-sourcebox sol-partner-note"><h2>For solar installation companies</h2><p>Interested in exclusive county sponsorship? <a href="/solar/for-installers/">Explore Compound Solar sponsorships and request your counties ↗</a>. This is a pre-launch partner programme; no customer leads are being sold today.</p></div>
-  <section class="sol-connected-reading" aria-labelledby="sol-search-journey-title">
-    <div class="sol-sectionhead"><div><p class="sol-ey">FROM NEWS TO NUMBERS</p><h2 id="sol-search-journey-title">Use the evidence before requesting a quote.</h2></div></div>
-    <p>Following solar news? Read <a href="/news/no-energy-credit-budget-2027-electricity-bills-winter/">what Budget 2027 means for winter electricity bills</a> or start with the <a href="/news/solar-export-payments-ireland-clean-export-guarantee/">Clean Export Guarantee explainer</a> and our <a href="/wealth/electricity-tariffs-ireland/">electricity tariff guide</a>. Then estimate bill savings in the <a href="/solar-payback-calculator/">Solar Payback Calculator</a>, compare equipment and assumptions with the <a href="/solar/compare-quotes/">Solar Quote Comparator</a> and only then <a href="/solar/get-quotes/">prepare a clear installer enquiry</a>. These stages are separate so readers can research without submitting their details.</p>
-  </section>
-  <section class="sol-footnotes" id="solar-sources"><h2>Sources, independence and limitations</h2><p>Compound is an independent publisher, not a solar installer or SEAI agent. We do not sell customer details, and no installer can pay to change the arithmetic or order of independent editorial comparisons. We may accept clearly identified advertising in future. Always confirm grant rules and contractor registrations with the official sources.</p><p><a href="https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant" rel="noopener">SEAI: Solar electricity grants ↗</a> · <a href="https://www.seai.ie/grants/home-energy-grants/individual-grants/battery" rel="noopener">SEAI: Battery grant ↗</a> · <a href="https://www.seai.ie/grants/find-a-registered-professional/solar-pv-companies" rel="noopener">SEAI: Registered PV companies ↗</a> · <a href="https://www.cru.ie/consumer-information/microgeneration/" rel="noopener">CRU: Microgeneration ↗</a></p><small>Grant figures and eligibility checked against SEAI on 11 October 2026. Last reviewed: 11 October 2026.</small></section>
+
+  <footer class="solh-footer" id="solar-sources">
+    <div><strong>About Compound Solar</strong><p>Compound is an independent Irish publisher, not a solar installer or an SEAI agent. Homeowner project submissions are private during the pilot. Installer introductions, if offered later, would require separate permission. Commercial partnerships never alter the arithmetic in our tools or editorial recommendations.</p><p class="solh-sources">Official information: <a href="https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant" rel="noopener">SEAI solar grant</a> · <a href="https://www.seai.ie/grants/home-energy-grants/individual-grants/battery" rel="noopener">SEAI battery grant</a> · <a href="https://www.seai.ie/grants/find-a-registered-professional/solar-pv-companies" rel="noopener">Registered solar PV companies</a>. Grant details last checked 15 October 2026.</p></div>
+    <div class="solh-footer-business"><strong>For solar installation businesses</strong><p>Learn how Compound's editorial guides and tools may support future qualified project introductions.</p><a href="/solar/for-installers/">Installer partnerships →</a><a href="/solar/installer-portal/">Installer login →</a></div>
+  </footer>
 </div>
