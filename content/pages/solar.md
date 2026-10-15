@@ -1,7 +1,7 @@
 ---
 title: "Solar Quotes Ireland: Plan Your Installation & Compare Costs"
 canonical_path: /solar/
-meta_description: "One solar project form, multiple potential installer quotes. Plan your system once and request contact from up to three Irish installers when matching opens."
+meta_description: "Get your Irish solar installation project quote-ready with one free request. Choose up to three potential installers to contact you once introductions become available."
 ---
 <div class="sol-shell sol-home">
   <header class="solh-hero" aria-labelledby="solar-heading">
@@ -9,10 +9,10 @@ meta_description: "One solar project form, multiple potential installer quotes. 
     <div class="solh-hero-grid">
       <div class="solh-hero-main">
         <p class="solh-eyebrow"><span class="solh-dot" aria-hidden="true"></span> COMPOUND SOLAR / IRELAND</p>
-        <h1 id="solar-heading">One solar form. <span>Multiple installer quotes.</span></h1>
-        <p class="solh-lead">Complete your solar project details <strong>once</strong>. When installer matching opens, you can choose to have <strong>up to three solar installers</strong> contact you about your installation — without filling out separate forms.</p>
-        <a href="/solar/get-quotes/" data-solar-cta="hero" class="solh-primary-cta">Start my solar quote request <span aria-hidden="true">→</span></a>
-        <p class="solh-cta-support">Free to submit · Installer matching coming soon · We ask your permission before sharing any details</p>
+        <h1 id="solar-heading">One form. <span>Your solar project ready for quotes.</span></h1>
+        <p class="solh-lead">Tell us what you want installed <strong>once</strong>. We’ll prepare a clear project request for potential solar installers, so you can choose to hear from <strong>up to three companies</strong> rather than starting from scratch with each one.</p>
+        <a href="/solar/get-quotes/" data-solar-cta="hero" class="solh-primary-cta">Submit my solar project <span aria-hidden="true">→</span></a>
+        <p class="solh-cta-support">Free to submit · Projects accepted now · Installer introductions are not yet available; we’ll ask before sharing your details</p>
         <div class="solh-hero-checks" aria-label="What you can include in your solar project">
           <span>Property &amp; location</span><span>Roof &amp; electricity needs</span><span>Budget &amp; timeframe</span>
         </div>
@@ -31,17 +31,17 @@ meta_description: "One solar project form, multiple potential installer quotes. 
   </header>
 
   <section class="solh-how" id="solar-journey" aria-labelledby="solh-how-title">
-    <div class="solh-section-intro"><div><p class="solh-eyebrow">THE PROCESS</p><h2 id="solh-how-title">Fill it out once. <span>Let installers come to you.</span></h2></div><p>One clear description of your property and plans could support several competing quotes once the installer network is active.</p></div>
+    <div class="solh-section-intro"><div><p class="solh-eyebrow">THE PROCESS</p><h2 id="solh-how-title">One project. <span>More than one possible quote.</span></h2></div><p>Tell us about your property once, and we’ll have a consistent brief ready if suitable installers become available.</p></div>
     <ol class="solh-steps">
       <li><span class="solh-step-number">01</span><h3>Describe your home</h3><p>County, property type, installation timeframe and your preferred solar setup.</p></li>
       <li><span class="solh-step-number">02</span><h3>Add the useful details</h3><p>Roof direction, shading and electricity usage if you know them. Our roof compass can help.</p></li>
-      <li><span class="solh-step-number">03</span><h3>Choose who contacts you</h3><p>Submit your project now. Once installer matching opens, we will ask your permission before introducing up to three installers, according to your preference and availability.</p></li>
+      <li><span class="solh-step-number">03</span><h3>Choose potential contacts</h3><p>Select up to three installers as your preference. When suitable installers are available, Compound can ask your permission before any introduction.</p></li>
     </ol>
-    <div class="solh-mid-cta"><div><strong>Submit one enquiry, not three separate forms.</strong><p>Set your preferred number of installers in the project builder. Detailed technical questions are optional.</p></div><a href="/solar/get-quotes/" data-solar-cta="steps" class="solh-primary-cta">Start my project <span aria-hidden="true">→</span></a></div>
+    <div class="solh-mid-cta"><div><strong>One submission can support several offers.</strong><p>Choose your preferred number of installers. We will contact you before sharing anything when matching is available.</p></div><a href="/solar/get-quotes/" data-solar-cta="steps" class="solh-primary-cta">Start my project <span aria-hidden="true">→</span></a></div>
   </section>
 
   <section class="solh-benefits" aria-labelledby="solh-benefits-title">
-    <div class="solh-section-intro"><div><p class="solh-eyebrow">WHY A DETAILED REQUEST MATTERS</p><h2 id="solh-benefits-title">Comparable offers <span>start with one clear brief.</span></h2></div><p>When matching becomes available, you can share the same installation requirements with multiple installers instead of starting from scratch each time.</p></div>
+    <div class="solh-section-intro"><div><p class="solh-eyebrow">WHY A DETAILED REQUEST MATTERS</p><h2 id="solh-benefits-title">Better quotes <span>begin with one clear brief.</span></h2></div><p>The same project information can be used to request comparable offers if suitable solar companies join our network.</p></div>
     <div class="solh-benefit-grid">
       <article><span class="solh-benefit-icon" aria-hidden="true">01</span><h3>More comparable proposals</h3><p>Ask for a consistent system specification, installed price, grant assumptions and projected annual generation.</p></article>
       <article><span class="solh-benefit-icon" aria-hidden="true">02</span><h3>Fewer missing details</h3><p>Share roof access, battery preferences, EV charging and your installation timeframe from the outset.</p></article>
@@ -89,8 +89,8 @@ meta_description: "One solar project form, multiple potential installer quotes. 
   </section>
 
   <section class="solh-final-cta" aria-labelledby="solh-final-cta-title">
-    <div><p class="solh-eyebrow">YOUR NEXT STEP</p><h2 id="solh-final-cta-title">One form. Up to three potential quotes.</h2><p>Submit your project today for private Compound review. Installer matching has not started; if it becomes available, we will ask for your permission before any installer receives your details.</p></div>
-    <div><a href="/solar/get-quotes/" data-solar-cta="bottom" class="solh-primary-cta">Start my quote request <span aria-hidden="true">→</span></a><small>Homeowner submissions open · No obligation · No installer access yet</small></div>
+    <div><p class="solh-eyebrow">YOUR NEXT STEP</p><h2 id="solh-final-cta-title">Get your solar project quote-ready.</h2><p>Send your details once and choose how many installers you may want to hear from. We are accepting projects now; we will ask your permission before sharing with installers when introductions become available.</p></div>
+    <div><a href="/solar/get-quotes/" data-solar-cta="bottom" class="solh-primary-cta">Submit my solar project <span aria-hidden="true">→</span></a><small>Homeowner submissions open · No obligation · No installer access yet</small></div>
   </section>
 
   <footer class="solh-footer" id="solar-sources">
