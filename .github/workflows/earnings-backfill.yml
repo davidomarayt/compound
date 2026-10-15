@@ -39,11 +39,30 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Skip SEC calls after initial historical coverage has finished
+        id: preflight
+        run: |
+          set -euo pipefail
+          if python - <<'PY'
+          from pathlib import Path
+          import json, sys
+          state=Path('content/earnings-backfill-state.json')
+          sys.exit(0 if state.is_file() and json.loads(state.read_text()).get('completed') is True else 1)
+          PY
+          then
+            echo 'needs_run=false' >> "$GITHUB_OUTPUT"
+            echo 'Historical backfill completed; future results are handled by the live earnings monitor.'
+          else
+            echo 'needs_run=true' >> "$GITHUB_OUTPUT"
+          fi
       - name: Install reporting test dependencies
+        if: steps.preflight.outputs.needs_run == 'true'
         run: python -m pip install --disable-pip-version-check -e . pytest
       - name: Verify source reconciliation, duplicate protection and resume safety
+        if: steps.preflight.outputs.needs_run == 'true'
         run: python -m pytest -q tests/test_earnings_historical_profiles.py tests/test_one_company_earnings.py
       - name: Hydrate one controlled historical batch from SEC EDGAR
+        if: steps.preflight.outputs.needs_run == 'true'
         env:
           SEC_USER_AGENT: 'Compound.ie Earnings Research david@compound.ie'
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
@@ -71,7 +90,7 @@ jobs:
                   out.write(f"- Completed: **{d['completed']}**\n")
           PY
       - name: Commit verified stock datasets and resume position
-        if: github.event_name != 'workflow_dispatch' || inputs.dry_run == false
+        if: steps.preflight.outputs.needs_run == 'true' && (github.event_name != 'workflow_dispatch' || inputs.dry_run == false)
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
