@@ -83,6 +83,12 @@ meta_description: "Planning solar panels in Ireland? Build a free solar installa
         <a href="/solar-ev-battery-optimiser/">Solar, EV and battery optimiser</a>
         <a href="/wealth/average-home-electricity-use-ireland/">Average household electricity use</a>
         <a href="/wealth/electricity-tariffs-ireland/">Smart electricity tariff guide</a>
+        <a href="/electricity-cost-calculator/">Electricity cost calculator</a>
+        <a href="/ber-energy-cost-calculator/">BER energy cost calculator</a>
+        <a href="/whole-house-retrofit-planner/">Whole-house retrofit planner</a>
+        <a href="/wealth/heat-pumps-ireland/">Heat pump guide</a>
+        <a href="/wealth/insulation-grants-ireland/">Insulation grant guide</a>
+        <a href="/news/no-energy-credit-budget-2027-electricity-bills-winter/">Budget 2027: electricity bills this winter</a>
       </div>
     </div>
   </section>
