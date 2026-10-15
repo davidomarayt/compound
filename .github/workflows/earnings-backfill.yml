@@ -4,8 +4,8 @@ name: S&P 500 Historical Earnings Coverage
 
 on:
   schedule:
-    # Small SEC-friendly batches. The first full S&P 500 scan takes multiple runs.
-    - cron: '12,42 * * * *'
+    # SEC-friendly batches every 15 minutes until the saved cursor reaches the end.
+    - cron: '12,27,42,57 * * * *'
   push:
     branches: ['claude/clever-babbage-uibieq']
     paths:
@@ -69,9 +69,9 @@ jobs:
         run: |
           set -euo pipefail
           if [ "$DRY_RUN" = "true" ]; then
-            python scripts/earnings_historical_profiles.py --batch-size 20 --dry-run
+            python scripts/earnings_historical_profiles.py --batch-size 30 --dry-run
           else
-            python scripts/earnings_historical_profiles.py --batch-size 20
+            python scripts/earnings_historical_profiles.py --batch-size 30
           fi
           python - <<'PY'
           from pathlib import Path
