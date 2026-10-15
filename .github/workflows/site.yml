@@ -43,6 +43,34 @@ jobs:
         env:
           SITE_BASE_URL: https://compound.ie
           PREVIEW_BASE_URL: https://compound.ie
+      - name: Verify Mag 7 and thirteen additional earnings SEO profiles
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check "pytest>=8,<10"
+          python -m pytest -q tests/test_earnings_seo.py
+          python - <<'PY'
+          from pathlib import Path
+          from compound.site.earnings_seo import ORDER
+          root = Path("public")
+          sitemap = (root / "sitemap.xml").read_text()
+          hub = (root / "wealth/earnings/index.html").read_text()
+          assert 'Explore the latest earnings from leading companies' in hub
+          assert len(ORDER) == 20
+          for ticker in ORDER:
+              path = f"stocks/{ticker.lower()}/index.html"
+              page = (root / path).read_text()
+              assert page.count('<h1>') == 1, ticker
+              assert "Earnings Results</h1>" in page, ticker
+              assert "How much did" in page and "Revenue, earnings and EPS growth" in page, ticker
+              assert 'dateModified' in page and 'citation' in page, ticker
+              assert 'Original SEC report for FY' in page, ticker
+              assert 'rel="canonical"' in page, ticker
+              assert 'name="robots" content="noindex,follow"' not in page, ticker
+              assert f'<loc>https://compound.ie/stocks/{ticker.lower()}/</loc>' in sitemap, ticker
+              assert f'href="/stocks/{ticker.lower()}/"' in hub, ticker
+          print("PASS: All 20 SEO earnings pages indexable, canonical, linked and filing-backed")
+          PY
       - name: Validate interactive 360-degree solar direction tool
         shell: bash
         run: |
