@@ -771,6 +771,18 @@ jobs:
           grep -Fq 'id="earnings-company-results"' /tmp/aapl-stock-profile.html
           grep -Fq 'data-tv-symbol="AAPL"' /tmp/aapl-stock-profile.html
           ! grep -Fq 'summaryies' /tmp/aapl-stock-profile.html
+          # All twenty curated earnings SEO profiles must be available on the public domain.
+          # Keep this separate from the static-build checks to catch partial/stale publication.
+          for ticker in aapl msft amzn googl meta nvda tsla amd pltr nflx orcl crm uber coin hood lly wmt cost adbe dis; do
+            page="/tmp/seo-earnings-$ticker.html"
+            fetch "https://compound.ie/stocks/$ticker/" "$page"
+            grep -Fq 'Earnings Results</h1>' "$page"
+            grep -Fq 'Earnings: Revenue &amp; EPS' "$page"
+            grep -Fq 'Revenue, earnings and EPS growth' "$page"
+            grep -Fq 'Original SEC report for FY' "$page"
+            grep -Fq 'US SEC CIK' "$page"
+            ! grep -Fq 'name="robots" content="noindex,follow"' "$page"
+          done
           # GitHub Pages lacks native 301s: old URLs must point canonically to Stocks.
           fetch https://compound.ie/wealth/earnings/company/aapl/ /tmp/aapl-legacy-profile.html
           grep -Fq 'name="robots" content="noindex,follow"' /tmp/aapl-legacy-profile.html
