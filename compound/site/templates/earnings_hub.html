@@ -11,7 +11,7 @@
   <div class="earnings-heading"><p class="eyebrow">SEC-FILED COMPANY RESULTS</p><h2 id="earnings-popular-heading">Explore the latest earnings from leading companies</h2><span>{{ priority_earnings|length }} company reports</span></div>
   <p>Check each company's latest filed fiscal results, revenue, profit and earnings per share. Links lead to continuously updated company pages, not separate quarterly articles.</p>
   <div class="earnings-directory-scroll" tabindex="0" role="region" aria-label="Curated company earnings links"><table class="earnings-directory"><thead><tr><th scope="col">Company and ticker</th><th scope="col">Latest verified fiscal period</th><th scope="col">Period ended</th></tr></thead><tbody>
-  {% for entry in priority_earnings %}<tr><th scope="row"><a href="{{ entry.url }}">{{ entry.display_name }} ({{ entry.symbol }}) earnings</a></th><td>{{ entry.report.latest_label }}</td><td>{{ entry.report.latest_end }}</td></tr>{% endfor %}
+  {% for entry in priority_earnings %}<tr><th scope="row"><a href="{{ entry.url }}">{{ entry.display_name }} ({{ entry.symbol }}) earnings</a></th><td>{{ entry.period_display }}</td><td>{{ entry.period_end_readable }}</td></tr>{% endfor %}
   </tbody></table></div>
 </section>
 {% endif %}
