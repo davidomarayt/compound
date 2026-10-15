@@ -193,6 +193,13 @@ export function normalizePrivatePilot(payload){
  if(!['Owner','Joint owner','Authorised decision-maker'].includes(role))throw Error('Only an owner or authorised decision-maker may request a quotation');
  const timing=payload.brief?.timing;
  if(!timing || timing==='Researching options')throw Error('Select an installation timeframe for quotations');
+ // Do not allow empty, unpriceable leads simply because someone bypassed browser checks.
+ // Exact address and roof survey are deliberately not prerequisites.
+ const area=payload.brief?.area,building=payload.brief?.building;
+ if(typeof area!=='string' || area.trim().length<2 || area.length>70)
+   throw Error('Enter the nearest town or general area');
+ if(typeof building!=='string' || building.trim().length<3 || building.length>80)
+   throw Error('Select the property type');
  const brief={};
  for(const key of ['area','role','building','project','timing','budget','protected','roof',
  'faces','azimuth','pitch','azimuth2','pitch2','areaM2','areaM22','material','shade',
