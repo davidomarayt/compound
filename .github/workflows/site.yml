@@ -317,10 +317,10 @@ jobs:
         run: |
           python -m pip install "playwright==1.55.0"
           python -m playwright install chromium
-      - name: Audit every solar page at mobile and tablet widths
-        run: python scripts/verify_solar_mobile.py
       - name: Audit homepage specialist hubs at mobile and desktop widths
         run: python scripts/verify_home_hubs_mobile.py
+      - name: Audit every solar page at mobile and tablet widths
+        run: python scripts/verify_solar_mobile.py
 
   verify-live:
     needs: deploy
