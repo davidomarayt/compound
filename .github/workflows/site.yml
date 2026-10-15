@@ -216,6 +216,10 @@ jobs:
           grep -Fq 'quote-ready.' "$hub"
           grep -Fq 'data-solar-leads-active="false"' "$intake"
           grep -Fq 'data-sp-private-pilot-form' "$intake"
+          test "$(grep -o 'data-sp-private-pilot-form' "$intake" | wc -l)" -eq 1
+          ! grep -Fq 'data-sp-live-request' "$intake"
+          ! grep -Fq 'data-sp-quote-form' "$intake"
+          ! grep -Fq 'data-sp-quote-consent' "$intake"
           grep -Fq '/static/solar-private-pilot.js?v=4' "$intake"
           grep -Fq '/static/solar-funnel.js?v=20261015-1' "$hub"
           node --check compound/site/static/solar-private-pilot.js
