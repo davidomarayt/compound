@@ -164,6 +164,30 @@ jobs:
           grep -Fq '/wealth/solar-panels-winter-ireland/' public/solar/index.html
           grep -Fq 'solar-panels-winter-ireland.jpg' "$page"
           test -s public/static/images/evergreen/solar-panels-winter-ireland.jpg
+      - name: Verify homeowner-first Solar Hub conversion funnel
+        shell: bash
+        run: |
+          set -euo pipefail
+          hub=public/solar/index.html
+          intake=public/solar/get-quotes/index.html
+          test -s "$hub"
+          test -s "$intake"
+          test -s public/static/solar-home.css
+          grep -Fq '/static/solar-home.css?v=1' "$hub"
+          grep -Fq 'Planning solar panels?' "$hub"
+          grep -Fq 'Currently accepting private project requests' "$hub"
+          grep -Fq 'data-solar-cta="hero"' "$hub"
+          grep -Fq 'data-solar-cta="steps"' "$hub"
+          grep -Fq 'data-solar-cta="bottom"' "$hub"
+          test "$(grep -o 'href="/solar/get-quotes/"' "$hub" | wc -l)" -ge 3
+          grep -Fq '/wealth/compare-solar-panel-quotes-ireland/' "$hub"
+          grep -Fq 'data-solar-pilot-active="true"' "$intake"
+          grep -Fq 'data-solar-leads-active="false"' "$intake"
+          grep -Fq 'data-sp-private-pilot-form' "$intake"
+          grep -Fq '/static/solar-private-pilot.js?v=2' "$intake"
+          grep -Fq '/static/solar-funnel.js?v=20261015-1' "$hub"
+          node --check compound/site/static/solar-private-pilot.js
+          node --check compound/site/static/solar-funnel.js
       - name: Verify Solar hub pages and client script
         shell: bash
         run: |
@@ -305,6 +329,15 @@ jobs:
             grep -Fq 'solar-hub.css' "$target"
             grep -Fq "<link rel=\"canonical\" href=\"https://compound.ie/${slug}/\">" "$target"
           done
+          # Homeowner intake is the first action on the redesigned landing page.
+          grep -Fq '/static/solar-home.css?v=1' /tmp/solar-solar.html
+          grep -Fq 'data-solar-cta="hero"' /tmp/solar-solar.html
+          grep -Fq 'data-solar-cta="steps"' /tmp/solar-solar.html
+          grep -Fq 'data-solar-cta="bottom"' /tmp/solar-solar.html
+          grep -Fq 'Currently accepting private project requests' /tmp/solar-solar.html
+          grep -Fq 'data-solar-pilot-active="true"' /tmp/solar-solar-get-quotes.html
+          fetch https://compound.ie/static/solar-home.css?v=1 /tmp/solar-home.css
+          grep -Fq '.solh-hero-grid' /tmp/solar-home.css
           grep -Fq '/solar/compare-quotes/' /tmp/solar-solar.html
           ! grep -Fq 'pagead2.googlesyndication.com' /tmp/solar-solar-for-installers.html
           grep -Fq 'data-solar-sponsor-form' /tmp/solar-solar-for-installers.html
