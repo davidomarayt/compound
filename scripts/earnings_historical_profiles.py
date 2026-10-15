@@ -136,7 +136,9 @@ def backfill(registry_path: Path, content_dir: Path, state_path: Path, *,
                            "do not advance progress or publish partial batch")
     result = {**state}
     if retry_phase:
-        result["pending_retry"] = result["pending_retry"][len(selected):]
+        # Registry refreshes can remove an issuer while a batch is in flight.
+        # Advance through the filtered retry queue, not the original stale list.
+        result["pending_retry"] = queue[len(selected):]
         result["permanently_unavailable"] = sorted(set(result["permanently_unavailable"] + failed))
     else:
         result["cursor"] += len(selected)
