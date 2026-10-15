@@ -6,6 +6,15 @@
 {% block content %}<div class="earnings-hub">
 <nav class="earnings-crumb" aria-label="Breadcrumb"><a href="/">Compound</a> / <a href="/wealth/">Wealth</a> / Earnings</nav>
 <header class="earnings-hero"><p class="eyebrow">COMPOUND WEALTH / EARNINGS</p><h1>Company earnings. One report per business.</h1><p class="earnings-lede">Follow company quarterly and full-year results, with revenue, net income and earnings per share checked against US SEC filings. Clear comparisons. Financial tables. Links to the data.</p><div class="earnings-hero-links"><a href="/stocks/">Browse stock profiles →</a><a href="/pia/">Personal Investment Accounts →</a><a href="/wealth/how-to-start-investing-in-ireland/">Investing in Ireland 101 →</a></div></header>
+{% if priority_earnings %}
+<section class="earnings-section" aria-labelledby="earnings-popular-heading">
+  <div class="earnings-heading"><p class="eyebrow">SEC-FILED COMPANY RESULTS</p><h2 id="earnings-popular-heading">Explore the latest earnings from leading companies</h2><span>{{ priority_earnings|length }} company reports</span></div>
+  <p>Check each company's latest filed fiscal results, revenue, profit and earnings per share. Links lead to continuously updated company pages, not separate quarterly articles.</p>
+  <div class="earnings-directory-scroll" tabindex="0" role="region" aria-label="Curated company earnings links"><table class="earnings-directory"><thead><tr><th scope="col">Company and ticker</th><th scope="col">Latest verified fiscal period</th><th scope="col">Period ended</th></tr></thead><tbody>
+  {% for entry in priority_earnings %}<tr><th scope="row"><a href="{{ entry.url }}">{{ entry.display_name }} ({{ entry.symbol }}) earnings</a></th><td>{{ entry.report.latest_label }}</td><td>{{ entry.report.latest_end }}</td></tr>{% endfor %}
+  </tbody></table></div>
+</section>
+{% endif %}
 <section class="earnings-section" aria-labelledby="earnings-latest"><div class="earnings-heading"><p class="eyebrow">ONE LIVE REPORT PER COMPANY</p><h2 id="earnings-latest">Latest company earnings</h2><span>{{ report_cards|length }} company report{{ '' if report_cards|length == 1 else 's' }}</span></div>
 <p class="earnings-lede">Each business has one constantly updated earnings dashboard. Its official fiscal Q1, Q2 and Q3 appear together when source-verified; Q3 versus Q2 and year-to-date progress are calculated only when comparable figures exist. A 2027 fiscal Q1 can end in 2026 — each card shows the actual period end.</p>
 {% if report_cards %}<div class="earnings-cards">
