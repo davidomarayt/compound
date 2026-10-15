@@ -18,7 +18,7 @@
   var months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   var southMonthly=[.02,.04,.07,.10,.13,.14,.14,.12,.10,.07,.04,.03];
   var representativeDays=[15,46,74,105,135,166,196,227,258,288,319,349];
-  var angle=180, official=null, busy=false;
+  var angle=180, official=null;
   function q(k){return root.querySelector('[data-or="'+k+'"]');}
   function val(k){return Number(q(k).value);}
   function normal(a){return ((Math.round(a)%360)+360)%360;}
@@ -119,7 +119,6 @@
     root.querySelectorAll('[data-or-preset]').forEach(function(b){b.setAttribute('aria-pressed',String(Number(b.getAttribute('data-or-preset'))===angle));});
     q('error').hidden=valid;
     q('results').hidden=!valid;
-    q('request').disabled=!valid||busy;
     if(!valid)return;
     var r=estimate();
     if(official){r=official;}
