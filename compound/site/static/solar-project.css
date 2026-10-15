@@ -117,3 +117,19 @@
 .sol-project .sol-project-submit-card [data-sp-private-pilot-status][data-state="success"]{color:#175f40;font-weight:700}
 .sol-project .sol-project-submit-card [data-sp-private-pilot-status][data-state="error"]{color:#aa2734;font-weight:700}
 .sol-project .sol-project-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+
+
+/* Short-first installer enquiry: extra survey inputs only when requested.
+   Native details/summary is keyboard accessible without extra JavaScript. */
+.sol-project .sol-project-optional{margin:20px 0 6px;border:1px solid #d9e4dc;border-radius:9px;background:#f8faf8;min-width:0;overflow:hidden}
+.sol-project .sol-project-optional>summary{list-style:revert;cursor:pointer;padding:15px 19px;font-size:13px;font-weight:800;line-height:1.5;color:#28543a;overflow-wrap:anywhere}
+.sol-project .sol-project-optional>summary::marker{color:#317b53}
+.sol-project .sol-project-optional>summary span{display:inline-block;margin-left:8px;font-size:10px;font-weight:650;color:#698071;letter-spacing:.02em}
+.sol-project .sol-project-optional[open]>summary{border-bottom:1px solid #dbe6de;background:#eff5ef}
+.sol-project .sol-project-optional>.sol-fields{padding:18px;margin:0;min-width:0}
+.sol-project .sol-project-optional>p{padding:13px 18px 0;margin:0;font-size:12px;color:#536f5d;line-height:1.65}
+.sol-project .sol-project-optional :is(input,select,textarea){min-width:0;max-width:100%}
+@media(max-width:650px){
+  .sol-project .sol-project-optional>summary{padding:15px}
+  .sol-project .sol-project-optional>.sol-fields{padding:15px}
+}
