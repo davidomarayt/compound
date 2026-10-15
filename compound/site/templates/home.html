@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block head_title %}Compound · Irish news, practical guides & useful tools{% endblock %}
-{% block head %}<link rel="canonical" href="{{ site_url }}/"><meta property="og:title" content="Compound · Understand what’s changing"><meta property="og:description" content="Independent Irish news, practical guides and useful tools for your health, money and everyday life."><meta property="og:image" content="{{ site_url }}/static/images/landscape.jpg"><meta property="og:type" content="website"><meta property="og:url" content="{{ site_url }}/">{% endblock %}
+{% block head %}<link rel="canonical" href="{{ site_url }}/"><meta property="og:title" content="Compound · Understand what’s changing"><meta property="og:description" content="Independent Irish news, guides, calculators and specialist hubs for health, money and everyday life."><meta property="og:image" content="{{ site_url }}/static/images/landscape.jpg"><meta property="og:type" content="website"><meta property="og:url" content="{{ site_url }}/"><link rel="stylesheet" href="/static/home-hubs.css?v=1"><script src="/static/home-hubs.js?v=1" defer></script>{% endblock %}
 {% block content %}
 <section class="home-hero home-hero-v2 home-hero-text-only">
  <div class="hero-copy hero-copy-v2">
-  <p class="eyebrow hero-kicker">IRISH NEWS. PRACTICAL GUIDES. POWERFUL TOOLS.</p>
+  <p class="eyebrow hero-kicker">IRISH NEWS. INDEPENDENT GUIDES. PRACTICAL TOOLS.</p>
   <h1><span>Understand what’s changing.</span> <em>See what it means for you.</em></h1>
-  <p class="hero-description">Clear, independent information and easy-to-use calculators for your health, money and everyday life in Ireland.</p>
+  <p class="hero-description">Clear Irish news, independent guides and useful calculators — connected to practical hubs for the decisions that matter.</p>
   <div class="hero-actions">
    <a class="button button-green" href="/news/">Read the latest news <span aria-hidden="true">→</span></a>
    <a class="button button-outline" href="/tools/">Explore our tools <span aria-hidden="true">→</span></a>
@@ -56,8 +56,41 @@
 </section>
 {% endif %}
 
+<section class="home-hub-directory" id="explore-compound" aria-labelledby="home-hubs-heading">
+ <div class="home-hubs-heading">
+  <div><p class="eyebrow">GO FURTHER WITH COMPOUND</p><h2 id="home-hubs-heading">From reading to doing.</h2></div>
+  <p>Practical, connected resources for bigger decisions. Explore the numbers, understand your options and find the next step.</p>
+ </div>
+ <div class="home-hub-grid">
+  <article class="home-hub-card">
+   <div class="home-hub-card-top"><span class="home-hub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="4.25"/><path stroke-linecap="round" d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8m10.6 10.6 1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></span><span class="home-hub-label">HOME ENERGY</span></div>
+   <h3>Solar Energy</h3>
+   <p>Explore installation costs, SEAI grants and solar payback — then build a detailed project request in one place.</p>
+   <div class="home-hub-actions"><a class="home-hub-primary-link" href="/solar/" data-home-hub="solar" data-home-action="explore">Explore Solar <span aria-hidden="true">→</span></a><a class="home-hub-secondary-link" href="/solar/get-quotes/" data-home-hub="solar" data-home-action="project">Start a project ↗</a></div>
+  </article>
+  <article class="home-hub-card">
+   <div class="home-hub-card-top"><span class="home-hub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2.6 20 6v5.6c0 5.1-3.1 8.5-8 10.3-4.9-1.8-8-5.2-8-10.3V6l8-3.4Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m8.3 12 2.5 2.5 4.9-5"/></svg></span><span class="home-hub-label">COVER &amp; PROTECTION</span></div>
+   <h3>Insurance</h3>
+   <p>Compare the real cost of cover and understand life, income, mortgage and health insurance in Ireland.</p>
+   <div class="home-hub-actions"><a class="home-hub-primary-link" href="/insurance/" data-home-hub="insurance" data-home-action="explore">Explore Insurance <span aria-hidden="true">→</span></a><a class="home-hub-secondary-link" href="/health-insurance-cost-comparison-calculator/" data-home-hub="insurance" data-home-action="calculator">Compare health costs ↗</a></div>
+  </article>
+  <article class="home-hub-card">
+   <div class="home-hub-card-top"><span class="home-hub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M3 20h18M5 20V10m4 10V10m6 10V10m4 10V10M3 9l9-6 9 6H3Z"/></svg></span><span class="home-hub-label">IRISH INVESTING</span></div>
+   <h3>Investing &amp; PIA</h3>
+   <p>Understand Irish investing, Personal Investment Accounts, provider differences and potential tax implications.</p>
+   <div class="home-hub-actions"><a class="home-hub-primary-link" href="/pia/" data-home-hub="pia" data-home-action="explore">Explore PIA <span aria-hidden="true">→</span></a><a class="home-hub-secondary-link" href="/wealth/how-to-start-investing-in-ireland/" data-home-hub="pia" data-home-action="guide">Investing 101 ↗</a></div>
+  </article>
+  <article class="home-hub-card">
+   <div class="home-hub-card-top"><span class="home-hub-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3v18h18M6.5 16.5l4.5-5 3.8 2.5L20 6.5"/></svg></span><span class="home-hub-label">COMPANY RESEARCH</span></div>
+   <h3>Stocks &amp; Earnings</h3>
+   <p>Go beyond the share price with company profiles, earnings reports and source-linked research.</p>
+   <div class="home-hub-actions"><a class="home-hub-primary-link" href="/stocks/" data-home-hub="stocks" data-home-action="explore">Browse stocks <span aria-hidden="true">→</span></a><a class="home-hub-secondary-link" href="/wealth/earnings/" data-home-hub="stocks" data-home-action="earnings">Company earnings ↗</a></div>
+  </article>
+ </div>
+</section>
+
 <section class="pillar-section home-pillars-v2" aria-labelledby="pillars-title">
- <div class="section-heading"><div><p class="eyebrow">EXPLORE COMPOUND</p><h2 id="pillars-title">Health, Wealth, Life.</h2></div><p>Go deeper into what matters to you.</p></div>
+ <div class="section-heading"><div><p class="eyebrow">THREE AREAS OF LIFE</p><h2 id="pillars-title">Health, Wealth, Life.</h2></div><p>Go deeper into what matters to you.</p></div>
  <div class="pillar-cards">
   <a class="pillar-tile tile-health" href="/health/"><div class="pillar-tile-image"><img src="/static/images/home-health.webp" width="720" height="480" alt="" loading="lazy"></div><div class="pillar-tile-content"><div class="tile-top"><span class="eyebrow">01 / HEALTH</span><span class="tile-arrow" aria-hidden="true">↗</span></div><h3>Health</h3><p>Evidence-based health information and practical tools for life in Ireland.</p><div class="tile-bottom"><span>Explore health</span><span class="pillar-symbol symbol-health" aria-hidden="true"></span></div></div></a>
   <a class="pillar-tile tile-wealth" href="/wealth/"><div class="pillar-tile-image"><img src="/static/images/home-wealth.webp" width="720" height="480" alt="" loading="lazy"></div><div class="pillar-tile-content"><div class="tile-top"><span class="eyebrow">02 / WEALTH</span><span class="tile-arrow" aria-hidden="true">↗</span></div><h3>Wealth</h3><p>Practical financial guides, calculators and Irish money explained clearly.</p><div class="tile-bottom"><span>Explore wealth</span><span class="pillar-symbol symbol-wealth" aria-hidden="true"></span></div></div></a>
