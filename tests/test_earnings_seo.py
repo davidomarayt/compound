@@ -1,7 +1,7 @@
 """Guard the 20-company, one-URL SEO rollout against fiscal-date and data regressions."""
 from pathlib import Path
 
-from compound.site.earnings_seo import ORDER, PRIORITY, build_earnings_seo
+from compound.site.earnings_seo import ORDER, PRIORITY, build_earnings_seo, fiscal_period_display
 from compound.site.earnings_view import load_company_report
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,8 +21,16 @@ def test_exactly_seven_plus_thirteen_source_backed_profiles():
         assert output is not None
         assert output["latest_end"] == report["latest_end"]
         label = report["latest_label"]
-        expected = label.replace(" FY", " Full-Year") if label.endswith(" FY") else label
+        fy, fp = label.split()
+        expected = f"{fp} {fy}" if fp != "FY" else f"{fy} Full-Year"
         assert expected in output["headline"]
+        assert output["period_subtitle"].startswith(("Quarter ended ", "Fiscal year ended "))
+        assert output["readable_end"].endswith(report["latest_end"][:4])
+        if int(fy[2:]) != int(report["latest_end"][:4]):
+            assert f"({output['calendar_period']})" in output["title"], ticker
+            assert f"({output['calendar_period']})" in output["hub_period"], ticker
+        else:
+            assert f"({output['calendar_period']})" not in output["title"], ticker
         assert output["source"] == report["latest_source"]
         assert all(url["ticker"] in PRIORITY for url in output["related"])
 
@@ -41,8 +49,11 @@ def test_fiscal_2027_second_quarter_is_not_claimed_to_be_calendar_2027():
         "latest_qoq": {"revenue": 4.5}, "latest_prev_label": "FY2027 Q1"
     }
     out = build_earnings_seo({"symbol": "NVDA"}, report)
-    assert "FY2027 Q2" in out["title"]
-    assert "2026-07-26" in out["description"]
+    assert "Q2 FY2027 Earnings (July 2026)" in out["title"]
+    assert out["headline"] == "Nvidia Q2 FY2027 Earnings Results"
+    assert "Quarter ended 26 July 2026" in out["period_subtitle"]
+    assert "SEC 10-Q filed 20 August 2026" in out["period_subtitle"]
+    assert "July 2026" in out["description"]
     assert "Revenue rose 12.5%" in out["movements"][0]
     assert any("fell 2.5%" in item for item in out["movements"])
     assert all("2027-07" not in val for val in (out["title"], out["description"]))
@@ -71,5 +82,25 @@ def test_full_year_report_not_turned_into_a_fake_q4():
         "yoy": {}, "latest_qoq": {},
     }
     output = build_earnings_seo({"symbol": "MSFT"}, report)
-    assert "Full-Year" in output["title"]
+    assert "FY2026 Full-Year" in output["title"]
+    assert "Fiscal year ended 30 June 2026" in output["period_subtitle"]
     assert "Q4" not in output["title"]
+
+
+def test_oracle_profile_uses_sec_verified_fy2027_label():
+    report = load_company_report(ROOT / "content", "ORCL")
+    assert report["latest_label"] == "FY2027 Q1"
+    label = fiscal_period_display(report)
+    assert label["display"] == "Q1 FY2027"
+    assert label["title_calendar"] == " (August 2026)"
+    output = build_earnings_seo({"symbol": "ORCL"}, report)
+    assert "Oracle Q1 FY2027 Earnings (August 2026)" in output["title"]
+    assert "Quarter ended 31 August 2026" in output["period_subtitle"]
+
+
+def test_same_calendar_and_fiscal_year_does_not_repeat_year_in_title():
+    report = load_company_report(ROOT / "content", "AMZN")
+    output = build_earnings_seo({"symbol": "AMZN"}, report)
+    assert "Q2 FY2026 Earnings" in output["title"]
+    assert "(June 2026)" not in output["title"]
+    assert "Quarter ended 30 June 2026" in output["period_subtitle"]
