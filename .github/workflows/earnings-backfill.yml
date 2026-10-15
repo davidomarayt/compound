@@ -40,7 +40,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install reporting test dependencies
-        run: python -m pip install --disable-pip-version-check PyYAML pytest
+        run: python -m pip install --disable-pip-version-check -e . pytest
       - name: Verify source reconciliation, duplicate protection and resume safety
         run: python -m pytest -q tests/test_earnings_historical_profiles.py tests/test_one_company_earnings.py
       - name: Hydrate one controlled historical batch from SEC EDGAR
