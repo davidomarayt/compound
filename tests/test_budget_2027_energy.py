@@ -67,7 +67,7 @@ def test_energy_solar_events_require_analytics_consent():
     assert "solar_journey_click" in sitewide
     assert "destination_step: step" in sitewide
     assert "journey_origin: origin" in sitewide
-    assert "solar-funnel.js?v=20261012-1" in base
+    assert "solar-funnel.js?v=20261015-1" in base
     assert "energy-budget-2027.css?v=1" in template
     assert "energy-budget-2027.js?v=2" in template
     assert "no-energy-credit-budget-2027-electricity-bills-winter" in template
