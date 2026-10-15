@@ -37,6 +37,16 @@ def verified_period(filing: dict, metrics: dict, cik: int) -> dict | None:
         return None
     if any(key not in metrics for key in FINANCIAL_KEYS):
         return None
+    # Oracle's fiscal year ends 31 May. SEC XBRL fact rows may carry the
+    # calendar/filing FY rather than the fiscal-year label in the 10-Q.
+    # Oracle's official August 31 2026 10-Q calls that period FY2027 Q1.
+    # Restrict this correction to the verified Oracle issuer CIK; never
+    # infer other companies' accounting calendars from their date alone.
+    if cik == 1341439:
+        expected = ended.year + (1 if ended.month >= 6 else 0)
+        if fy not in {expected, expected - 1}:
+            return None
+        fy = expected
     return {
         "fy": fy, "fp": fp,
         "period_end": ended.isoformat(), "filed": filed.isoformat(),
@@ -81,10 +91,10 @@ def dashboard(existing: dict | None, ticker: str, company: str, cik: int,
         # Only seek the latest fiscal-year's three quarters. The facts API is
         # already fetched once; do not make separate requests per old filing.
         metrics = extract_metrics(facts, filing)
-        if metrics is None or metrics["revenue"]["fy"] != fiscal_year:
+        if metrics is None:
             continue
         period = verified_period(filing, metrics, cik)
-        if period and period["fp"] in {"Q1", "Q2", "Q3"}:
+        if period and period["fy"] == fiscal_year and period["fp"] in {"Q1", "Q2", "Q3"}:
             key = (period["fy"], period["fp"])
             if key not in values or period["filed"] >= values[key]["filed"]:
                 values[key] = period
