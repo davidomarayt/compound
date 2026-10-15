@@ -1,0 +1,96 @@
+{
+  "cik": 66740,
+  "company": "3M",
+  "latest": {
+    "accession": "0000066740-26-000246",
+    "filed": "2026-07-21",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.78,
+        "prior_year": 1.34,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 933000000,
+        "prior_year": 723000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 6500000000,
+        "prior_year": 6344000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/66740/000006674026000246/mmm-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000066740-26-000175",
+      "filed": "2026-04-21",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.23,
+          "prior_year": 2.04,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 653000000,
+          "prior_year": 1116000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6030000000,
+          "prior_year": 5954000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/66740/000006674026000175/mmm-20260331.htm"
+    },
+    {
+      "accession": "0000066740-26-000246",
+      "filed": "2026-07-21",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.78,
+          "prior_year": 1.34,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 933000000,
+          "prior_year": 723000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6500000000,
+          "prior_year": 6344000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/66740/000006674026000246/mmm-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "MMM",
+  "updated": "2026-10-15"
+}

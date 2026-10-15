@@ -1,0 +1,125 @@
+{
+  "cik": 62709,
+  "company": "Marsh McLennan",
+  "latest": {
+    "accession": "0000062709-26-000258",
+    "filed": "2026-10-15",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.69,
+        "prior_year": 1.51,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 808000000,
+        "prior_year": 747000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 6863000000,
+        "prior_year": 6351000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/62709/000006270926000258/mrsh-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000062709-26-000098",
+      "filed": "2026-04-16",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.36,
+          "prior_year": 2.79,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1146000000,
+          "prior_year": 1381000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7597000000,
+          "prior_year": 7061000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/62709/000006270926000098/mrsh-20260331.htm"
+    },
+    {
+      "accession": "0000062709-26-000195",
+      "filed": "2026-07-21",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.63,
+          "prior_year": 2.45,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1266000000,
+          "prior_year": 1211000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7404000000,
+          "prior_year": 6974000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/62709/000006270926000195/mrsh-20260630.htm"
+    },
+    {
+      "accession": "0000062709-26-000258",
+      "filed": "2026-10-15",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.69,
+          "prior_year": 1.51,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 808000000,
+          "prior_year": 747000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6863000000,
+          "prior_year": 6351000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/62709/000006270926000258/mrsh-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "MRSH",
+  "updated": "2026-10-15"
+}

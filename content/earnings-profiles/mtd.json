@@ -1,0 +1,67 @@
+{
+  "cik": 1037646,
+  "company": "Mettler Toledo",
+  "latest": {
+    "accession": "0001037646-26-000021",
+    "filed": "2026-05-08",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 8.33,
+        "prior_year": 7.81,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 169454000,
+        "prior_year": 163587000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 947127000,
+        "prior_year": 883744000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1037646/000103764626000021/mtd-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001037646-26-000021",
+      "filed": "2026-05-08",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 8.33,
+          "prior_year": 7.81,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 169454000,
+          "prior_year": 163587000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 947127000,
+          "prior_year": 883744000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1037646/000103764626000021/mtd-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "MTD",
+  "updated": "2026-10-15"
+}

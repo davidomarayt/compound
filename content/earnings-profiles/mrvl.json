@@ -1,0 +1,96 @@
+{
+  "cik": 1835632,
+  "company": "Marvell Technology",
+  "latest": {
+    "accession": "0001835632-26-000025",
+    "filed": "2026-08-28",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2027,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.33,
+        "prior_year": 0.22,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 308000000,
+        "prior_year": 194800000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2739300000,
+        "prior_year": 2006100000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-01",
+    "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000025/mrvl-20260801.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001835632-26-000019",
+      "filed": "2026-05-28",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.04,
+          "prior_year": 0.2,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 34500000,
+          "prior_year": 177900000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2417800000,
+          "prior_year": 1895300000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000019/mrvl-20260502.htm"
+    },
+    {
+      "accession": "0001835632-26-000025",
+      "filed": "2026-08-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.33,
+          "prior_year": 0.22,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 308000000,
+          "prior_year": 194800000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2739300000,
+          "prior_year": 2006100000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-01",
+      "source": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000025/mrvl-20260801.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "MRVL",
+  "updated": "2026-10-15"
+}

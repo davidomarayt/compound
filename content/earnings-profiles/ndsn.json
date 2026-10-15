@@ -1,0 +1,125 @@
+{
+  "cik": 72331,
+  "company": "Nordson Corporation",
+  "latest": {
+    "accession": "0000072331-26-000054",
+    "filed": "2026-08-20",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.73,
+        "prior_year": 2.22,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 152846000,
+        "prior_year": 125784000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 817667000,
+        "prior_year": 741509000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/72331/000007233126000054/ndsn-20260731.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000072331-26-000014",
+      "filed": "2026-02-19",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.38,
+          "prior_year": 1.65,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 133382000,
+          "prior_year": 94652000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 669461000,
+          "prior_year": 615420000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-01-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/72331/000007233126000014/ndsn-20260131.htm"
+    },
+    {
+      "accession": "0000072331-26-000024",
+      "filed": "2026-05-21",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.09,
+          "prior_year": 1.97,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 117316000,
+          "prior_year": 112404000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 740847000,
+          "prior_year": 682938000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/72331/000007233126000024/ndsn-20260430.htm"
+    },
+    {
+      "accession": "0000072331-26-000054",
+      "filed": "2026-08-20",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.73,
+          "prior_year": 2.22,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 152846000,
+          "prior_year": 125784000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 817667000,
+          "prior_year": 741509000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/72331/000007233126000054/ndsn-20260731.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "NDSN",
+  "updated": "2026-10-15"
+}
