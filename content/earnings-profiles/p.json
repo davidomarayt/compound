@@ -1,0 +1,96 @@
+{
+  "cik": 1474432,
+  "company": "Everpure",
+  "latest": {
+    "accession": "0001474432-26-000088",
+    "filed": "2026-09-04",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2027,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.21,
+        "prior_year": 0.14,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 74149000,
+        "prior_year": 47118000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1185898000,
+        "prior_year": 861002000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-02",
+    "source": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000088/pstg-20260802.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001474432-26-000061",
+      "filed": "2026-06-05",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.07,
+          "prior_year": -0.04,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 24078000,
+          "prior_year": -13995000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1052896000,
+          "prior_year": 778485000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000061/pstg-20260503.htm"
+    },
+    {
+      "accession": "0001474432-26-000088",
+      "filed": "2026-09-04",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.21,
+          "prior_year": 0.14,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 74149000,
+          "prior_year": 47118000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1185898000,
+          "prior_year": 861002000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000088/pstg-20260802.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "P",
+  "updated": "2026-10-15"
+}

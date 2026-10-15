@@ -1,0 +1,96 @@
+{
+  "cik": 80424,
+  "company": "Procter & Gamble",
+  "latest": {
+    "accession": "0000080424-26-000103",
+    "filed": "2026-08-04",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 6.62,
+        "prior_year": 6.51,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 16046000000,
+        "prior_year": 15974000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 87032000000,
+        "prior_year": 84284000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000103/pg-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000080424-26-000060",
+      "filed": "2026-04-24",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.63,
+          "prior_year": 1.54,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 3932000000,
+          "prior_year": 3769000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 21235000000,
+          "prior_year": 19776000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000060/pg-20260331.htm"
+    },
+    {
+      "accession": "0000080424-26-000103",
+      "filed": "2026-08-04",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 6.62,
+          "prior_year": 6.51,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 16046000000,
+          "prior_year": 15974000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 87032000000,
+          "prior_year": 84284000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000103/pg-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "PG",
+  "updated": "2026-10-15"
+}

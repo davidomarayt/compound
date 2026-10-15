@@ -1,0 +1,67 @@
+{
+  "cik": 723531,
+  "company": "Paychex",
+  "latest": {
+    "accession": "0000723531-26-000006",
+    "filed": "2026-09-24",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.21,
+        "prior_year": 1.06,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 429700000,
+        "prior_year": 383800000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1580700000,
+        "prior_year": 1492400000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/723531/000072353126000006/payx-20260831.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000723531-26-000006",
+      "filed": "2026-09-24",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.21,
+          "prior_year": 1.06,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 429700000,
+          "prior_year": 383800000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1580700000,
+          "prior_year": 1492400000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/723531/000072353126000006/payx-20260831.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "PAYX",
+  "updated": "2026-10-15"
+}

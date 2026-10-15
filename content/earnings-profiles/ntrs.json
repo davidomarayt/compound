@@ -1,0 +1,67 @@
+{
+  "cik": 73124,
+  "company": "Northern Trust",
+  "latest": {
+    "accession": "0000073124-26-000035",
+    "filed": "2026-04-30",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.71,
+        "prior_year": 1.9,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 525500000,
+        "prior_year": 392000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1341400000,
+        "prior_year": 1213800000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/73124/000007312426000035/ntrs-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000073124-26-000035",
+      "filed": "2026-04-30",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.71,
+          "prior_year": 1.9,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 525500000,
+          "prior_year": 392000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1341400000,
+          "prior_year": 1213800000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/73124/000007312426000035/ntrs-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "NTRS",
+  "updated": "2026-10-15"
+}

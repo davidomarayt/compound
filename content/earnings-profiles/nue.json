@@ -1,0 +1,96 @@
+{
+  "cik": 73309,
+  "company": "Nucor",
+  "latest": {
+    "accession": "0001193125-26-345891",
+    "filed": "2026-08-12",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 5.04,
+        "prior_year": 2.6,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1156000000,
+        "prior_year": 603000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 10397000000,
+        "prior_year": 8456000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-04",
+    "source": "https://www.sec.gov/Archives/edgar/data/73309/000119312526345891/nue-20260704.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001193125-26-220778",
+      "filed": "2026-05-13",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.23,
+          "prior_year": 0.67,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 743000000,
+          "prior_year": 156000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 9496000000,
+          "prior_year": 7830000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-04",
+      "source": "https://www.sec.gov/Archives/edgar/data/73309/000119312526220778/nue-20260404.htm"
+    },
+    {
+      "accession": "0001193125-26-345891",
+      "filed": "2026-08-12",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 5.04,
+          "prior_year": 2.6,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1156000000,
+          "prior_year": 603000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 10397000000,
+          "prior_year": 8456000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-04",
+      "source": "https://www.sec.gov/Archives/edgar/data/73309/000119312526345891/nue-20260704.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "NUE",
+  "updated": "2026-10-15"
+}

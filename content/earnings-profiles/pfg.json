@@ -1,0 +1,67 @@
+{
+  "cik": 1126328,
+  "company": "Principal Financial Group",
+  "latest": {
+    "accession": "0001104659-26-051384",
+    "filed": "2026-04-29",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.93,
+        "prior_year": 0.21,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 424600000,
+        "prior_year": 48100000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 3529100000,
+        "prior_year": 3695900000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1126328/000110465926051384/pfg-20260331x10q.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001104659-26-051384",
+      "filed": "2026-04-29",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.93,
+          "prior_year": 0.21,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 424600000,
+          "prior_year": 48100000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3529100000,
+          "prior_year": 3695900000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1126328/000110465926051384/pfg-20260331x10q.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "PFG",
+  "updated": "2026-10-15"
+}
