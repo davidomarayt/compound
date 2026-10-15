@@ -1,0 +1,96 @@
+{
+  "cik": 1137774,
+  "company": "Prudential Financial",
+  "latest": {
+    "accession": "0001137774-26-000176",
+    "filed": "2026-08-05",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.8,
+        "prior_year": 1.48,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 985000000,
+        "prior_year": 533000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 15661000000,
+        "prior_year": 13726000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1137774/000113777426000176/pru-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001137774-26-000095",
+      "filed": "2026-05-06",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.68,
+          "prior_year": 1.96,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 597000000,
+          "prior_year": 707000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 15526000000,
+          "prior_year": 13470000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1137774/000113777426000095/pru-20260331.htm"
+    },
+    {
+      "accession": "0001137774-26-000176",
+      "filed": "2026-08-05",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.8,
+          "prior_year": 1.48,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 985000000,
+          "prior_year": 533000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 15661000000,
+          "prior_year": 13726000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1137774/000113777426000176/pru-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "PRU",
+  "updated": "2026-10-15"
+}

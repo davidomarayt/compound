@@ -1,0 +1,96 @@
+{
+  "cik": 872589,
+  "company": "Regeneron Pharmaceuticals",
+  "latest": {
+    "accession": "0000872589-26-000025",
+    "filed": "2026-07-30",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 12.23,
+        "prior_year": 12.81,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1296900000,
+        "prior_year": 1391600000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4290700000,
+        "prior_year": 3675600000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000025/regn-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000872589-26-000016",
+      "filed": "2026-04-29",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 6.75,
+          "prior_year": 7.27,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 727200000,
+          "prior_year": 808700000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3605400000,
+          "prior_year": 3028700000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000016/regn-20260331.htm"
+    },
+    {
+      "accession": "0000872589-26-000025",
+      "filed": "2026-07-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 12.23,
+          "prior_year": 12.81,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1296900000,
+          "prior_year": 1391600000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4290700000,
+          "prior_year": 3675600000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000025/regn-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "REGN",
+  "updated": "2026-10-15"
+}

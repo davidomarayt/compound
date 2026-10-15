@@ -1,0 +1,96 @@
+{
+  "cik": 943819,
+  "company": "ResMed|",
+  "latest": {
+    "accession": "0000943819-26-000047",
+    "filed": "2026-08-13",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 10.43,
+        "prior_year": 9.51,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1523293000,
+        "prior_year": 1400723000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 5653443000,
+        "prior_year": 5146327000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/943819/000094381926000047/rmd-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000943819-26-000025",
+      "filed": "2026-05-01",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.74,
+          "prior_year": 2.48,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 398732000,
+          "prior_year": 365041000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1431406000,
+          "prior_year": 1291736000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/943819/000094381926000025/rmd-20260331.htm"
+    },
+    {
+      "accession": "0000943819-26-000047",
+      "filed": "2026-08-13",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 10.43,
+          "prior_year": 9.51,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1523293000,
+          "prior_year": 1400723000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5653443000,
+          "prior_year": 5146327000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/943819/000094381926000047/rmd-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "RMD",
+  "updated": "2026-10-15"
+}

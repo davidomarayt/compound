@@ -1,0 +1,67 @@
+{
+  "cik": 77360,
+  "company": "Pentair",
+  "latest": {
+    "accession": "0000077360-26-000027",
+    "filed": "2026-04-28",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.05,
+        "prior_year": 0.93,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 172400000,
+        "prior_year": 154900000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1036700000,
+        "prior_year": 1010400000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000027/pnr-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000077360-26-000027",
+      "filed": "2026-04-28",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.05,
+          "prior_year": 0.93,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 172400000,
+          "prior_year": 154900000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1036700000,
+          "prior_year": 1010400000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000027/pnr-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "PNR",
+  "updated": "2026-10-15"
+}

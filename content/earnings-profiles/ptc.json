@@ -1,0 +1,96 @@
+{
+  "cik": 857005,
+  "company": "PTC Inc.",
+  "latest": {
+    "accession": "0001193125-26-328444",
+    "filed": "2026-07-31",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.03,
+        "prior_year": 1.17,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 118780000,
+        "prior_year": 141328000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 600049000,
+        "prior_year": 643937000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/857005/000119312526328444/ptc-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001193125-26-209869",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.98,
+          "prior_year": 1.35,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 590723000,
+          "prior_year": 162644000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 774303000,
+          "prior_year": 636366000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/857005/000119312526209869/ptc-20260331.htm"
+    },
+    {
+      "accession": "0001193125-26-328444",
+      "filed": "2026-07-31",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.03,
+          "prior_year": 1.17,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 118780000,
+          "prior_year": 141328000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 600049000,
+          "prior_year": 643937000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/857005/000119312526328444/ptc-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "PTC",
+  "updated": "2026-10-15"
+}

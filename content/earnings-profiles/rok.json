@@ -1,0 +1,96 @@
+{
+  "cik": 1024478,
+  "company": "Rockwell Automation",
+  "latest": {
+    "accession": "0001024478-26-000030",
+    "filed": "2026-08-04",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.65,
+        "prior_year": 2.6,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 408000000,
+        "prior_year": 295000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2313000000,
+        "prior_year": 2144000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1024478/000102447826000030/rok-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001024478-26-000022",
+      "filed": "2026-05-05",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.1,
+          "prior_year": 2.22,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 350000000,
+          "prior_year": 252000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2239000000,
+          "prior_year": 2001000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1024478/000102447826000022/rok-20260331.htm"
+    },
+    {
+      "accession": "0001024478-26-000030",
+      "filed": "2026-08-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.65,
+          "prior_year": 2.6,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 408000000,
+          "prior_year": 295000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2313000000,
+          "prior_year": 2144000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1024478/000102447826000030/rok-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "ROK",
+  "updated": "2026-10-15"
+}

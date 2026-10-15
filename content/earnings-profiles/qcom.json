@@ -1,0 +1,96 @@
+{
+  "cik": 804328,
+  "company": "Qualcomm",
+  "latest": {
+    "accession": "0000804328-26-000086",
+    "filed": "2026-07-29",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.87,
+        "prior_year": 2.43,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 2002000000,
+        "prior_year": 2666000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 9947000000,
+        "prior_year": 10365000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-28",
+    "source": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000086/qcom-20260628.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000804328-26-000061",
+      "filed": "2026-04-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 6.88,
+          "prior_year": 2.52,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 7370000000,
+          "prior_year": 2812000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 10599000000,
+          "prior_year": 10979000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-29",
+      "source": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000061/qcom-20260329.htm"
+    },
+    {
+      "accession": "0000804328-26-000086",
+      "filed": "2026-07-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.87,
+          "prior_year": 2.43,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2002000000,
+          "prior_year": 2666000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 9947000000,
+          "prior_year": 10365000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000086/qcom-20260628.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "QCOM",
+  "updated": "2026-10-15"
+}

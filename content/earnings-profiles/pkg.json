@@ -1,0 +1,96 @@
+{
+  "cik": 75677,
+  "company": "Packaging Corporation of America",
+  "latest": {
+    "accession": "0001193125-26-339405",
+    "filed": "2026-08-07",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.15,
+        "prior_year": 2.67,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 192100000,
+        "prior_year": 241500000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2489900000,
+        "prior_year": 2171300000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/75677/000119312526339405/pkg-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001193125-26-213675",
+      "filed": "2026-05-08",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.91,
+          "prior_year": 2.26,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 170900000,
+          "prior_year": 203800000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2367800000,
+          "prior_year": 2141000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/75677/000119312526213675/pkg-20260331.htm"
+    },
+    {
+      "accession": "0001193125-26-339405",
+      "filed": "2026-08-07",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.15,
+          "prior_year": 2.67,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 192100000,
+          "prior_year": 241500000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2489900000,
+          "prior_year": 2171300000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/75677/000119312526339405/pkg-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "PKG",
+  "updated": "2026-10-15"
+}

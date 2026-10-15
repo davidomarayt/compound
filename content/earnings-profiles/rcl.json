@@ -1,0 +1,96 @@
+{
+  "cik": 884887,
+  "company": "Royal Caribbean Group",
+  "latest": {
+    "accession": "0000884887-26-000038",
+    "filed": "2026-07-28",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 4.2,
+        "prior_year": 4.41,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1128000000,
+        "prior_year": 1210000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4832000000,
+        "prior_year": 4538000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/884887/000088488726000038/rcl-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000884887-26-000026",
+      "filed": "2026-04-30",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.48,
+          "prior_year": 2.7,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 941000000,
+          "prior_year": 730000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4452000000,
+          "prior_year": 3999000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/884887/000088488726000026/rcl-20260331.htm"
+    },
+    {
+      "accession": "0000884887-26-000038",
+      "filed": "2026-07-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.2,
+          "prior_year": 4.41,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1128000000,
+          "prior_year": 1210000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4832000000,
+          "prior_year": 4538000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/884887/000088488726000038/rcl-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "RCL",
+  "updated": "2026-10-15"
+}

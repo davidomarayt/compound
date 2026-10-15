@@ -1,0 +1,96 @@
+{
+  "cik": 720005,
+  "company": "Raymond James Financial",
+  "latest": {
+    "accession": "0000720005-26-000070",
+    "filed": "2026-08-05",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.01,
+        "prior_year": 2.12,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 595000000,
+        "prior_year": 436000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4362000000,
+        "prior_year": 3842000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/720005/000072000526000070/rjf-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000720005-26-000051",
+      "filed": "2026-05-06",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.72,
+          "prior_year": 2.36,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 544000000,
+          "prior_year": 495000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4262000000,
+          "prior_year": 3845000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/720005/000072000526000051/rjf-20260331.htm"
+    },
+    {
+      "accession": "0000720005-26-000070",
+      "filed": "2026-08-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.01,
+          "prior_year": 2.12,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 595000000,
+          "prior_year": 436000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4362000000,
+          "prior_year": 3842000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/720005/000072000526000070/rjf-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "RJF",
+  "updated": "2026-10-15"
+}
