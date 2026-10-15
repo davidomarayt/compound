@@ -48,10 +48,11 @@ jobs:
         run: |
           set -euo pipefail
           python -m pip install --disable-pip-version-check "pytest>=8,<10"
-          python -m pytest -q tests/test_earnings_seo.py
+          python -m pytest -q tests/test_earnings_seo.py tests/test_one_company_earnings.py
           python - <<'PY'
           from pathlib import Path
-          from compound.site.earnings_seo import ORDER
+          from compound.site.earnings_seo import ORDER, fiscal_period_display
+          from compound.site.earnings_view import load_company_report
           root = Path("public")
           sitemap = (root / "sitemap.xml").read_text()
           hub = (root / "wealth/earnings/index.html").read_text()
@@ -62,16 +63,25 @@ jobs:
               page = (root / path).read_text()
               assert page.count('<h1>') == 1, ticker
               assert "Earnings Results</h1>" in page, ticker
-              assert "Earnings: Revenue &amp; EPS" in page, ticker
+              report = load_company_report(Path("content"), ticker)
+              period = fiscal_period_display(report)
+              assert period["display"] in page, ticker
+              assert period["subtitle"] in page, ticker
+              if period["is_cross_year"]:
+                  assert f'{period["display"]} Earnings ({period["month_year"]})' in page, ticker
+              else:
+                  assert f'{period["display"]} Earnings: Revenue &amp; EPS' in page, ticker
               assert 'name="description"' in page, ticker
               assert "How much did" in page and "Revenue, earnings and EPS growth" in page, ticker
               assert 'dateModified' in page and 'citation' in page, ticker
-              assert 'Original SEC report for FY' in page, ticker
+              assert 'Original SEC report for ' + period["display"] in page, ticker
               assert 'rel="canonical"' in page, ticker
               assert 'name="robots" content="noindex,follow"' not in page, ticker
               assert f'<loc>https://compound.ie/stocks/{ticker.lower()}/</loc>' in sitemap, ticker
               assert f'href="/stocks/{ticker.lower()}/"' in hub, ticker
-          print("PASS: All 20 SEO earnings pages indexable, canonical, linked and filing-backed")
+          assert "Q2 FY2027 (July 2026)" in hub
+          assert "Q1 FY2027 (August 2026)" in hub
+          print("PASS: All 20 SEC-backed earnings profiles have fiscal and calendar year labels")
           PY
       - name: Validate interactive 360-degree solar direction tool
         shell: bash
@@ -777,12 +787,18 @@ jobs:
             page="/tmp/seo-earnings-$ticker.html"
             fetch "https://compound.ie/stocks/$ticker/" "$page"
             grep -Fq 'Earnings Results</h1>' "$page"
-            grep -Fq 'Earnings: Revenue &amp; EPS' "$page"
+            grep -Fq ' Earnings Results</h1>' "$page"
             grep -Fq 'Revenue, earnings and EPS growth' "$page"
-            grep -Fq 'Original SEC report for FY' "$page"
+            grep -Fq 'Original SEC report for ' "$page"
             grep -Fq 'US SEC CIK' "$page"
             ! grep -Fq 'name="robots" content="noindex,follow"' "$page"
           done
+          grep -Fq 'Nvidia Q2 FY2027 Earnings (July 2026)' /tmp/seo-earnings-nvda.html
+          grep -Fq 'Quarter ended 26 July 2026' /tmp/seo-earnings-nvda.html
+          grep -Fq 'SEC 10-Q filed 26 August 2026' /tmp/seo-earnings-nvda.html
+          grep -Fq 'Oracle Q1 FY2027 Earnings (August 2026)' /tmp/seo-earnings-orcl.html
+          grep -Fq 'Quarter ended 31 August 2026' /tmp/seo-earnings-orcl.html
+          grep -Fq 'Q2 FY2027 (July 2026)' /tmp/earnings-hub.html
           # GitHub Pages lacks native 301s: old URLs must point canonically to Stocks.
           fetch https://compound.ie/wealth/earnings/company/aapl/ /tmp/aapl-legacy-profile.html
           grep -Fq 'name="robots" content="noindex,follow"' /tmp/aapl-legacy-profile.html
