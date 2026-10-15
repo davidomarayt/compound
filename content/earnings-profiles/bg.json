@@ -1,0 +1,67 @@
+{
+  "cik": 1996862,
+  "company": "Bunge Global",
+  "latest": {
+    "accession": "0001628280-26-028235",
+    "filed": "2026-04-29",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.35,
+        "prior_year": 1.48,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 68000000,
+        "prior_year": 201000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4660000000,
+        "prior_year": 3663000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1996862/000162828026028235/bg-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-028235",
+      "filed": "2026-04-29",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.35,
+          "prior_year": 1.48,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 68000000,
+          "prior_year": 201000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4660000000,
+          "prior_year": 3663000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1996862/000162828026028235/bg-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "BG",
+  "updated": "2026-10-15"
+}

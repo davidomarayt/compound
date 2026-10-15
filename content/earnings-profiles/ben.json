@@ -1,0 +1,96 @@
+{
+  "cik": 38777,
+  "company": "Franklin Resources",
+  "latest": {
+    "accession": "0000038777-26-000217",
+    "filed": "2026-07-31",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.31,
+        "prior_year": 0.15,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 171500000,
+        "prior_year": 92300000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2358400000,
+        "prior_year": 2064000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/38777/000003877726000217/ben-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000038777-26-000101",
+      "filed": "2026-04-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.49,
+          "prior_year": 0.26,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 268200000,
+          "prior_year": 151400000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2294900000,
+          "prior_year": 2111400000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/38777/000003877726000101/ben-20260331.htm"
+    },
+    {
+      "accession": "0000038777-26-000217",
+      "filed": "2026-07-31",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.31,
+          "prior_year": 0.15,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 171500000,
+          "prior_year": 92300000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2358400000,
+          "prior_year": 2064000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/38777/000003877726000217/ben-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "BEN",
+  "updated": "2026-10-15"
+}

@@ -1,0 +1,96 @@
+{
+  "cik": 731802,
+  "company": "Atmos Energy",
+  "latest": {
+    "accession": "0000731802-26-000102",
+    "filed": "2026-08-05",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.43,
+        "prior_year": 1.16,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 242689000,
+        "prior_year": 186429000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 879059000,
+        "prior_year": 838774000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/731802/000073180226000102/ato-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000731802-26-000089",
+      "filed": "2026-05-06",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.47,
+          "prior_year": 3.03,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 581899000,
+          "prior_year": 485576000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1962402000,
+          "prior_year": 1950502000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/731802/000073180226000089/ato-20260331.htm"
+    },
+    {
+      "accession": "0000731802-26-000102",
+      "filed": "2026-08-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.43,
+          "prior_year": 1.16,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 242689000,
+          "prior_year": 186429000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 879059000,
+          "prior_year": 838774000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/731802/000073180226000102/ato-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "ATO",
+  "updated": "2026-10-15"
+}

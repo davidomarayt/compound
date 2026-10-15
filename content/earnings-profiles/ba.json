@@ -1,0 +1,96 @@
+{
+  "cik": 12927,
+  "company": "Boeing",
+  "latest": {
+    "accession": "0001628280-26-050038",
+    "filed": "2026-07-28",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": -0.67,
+        "prior_year": -0.92,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": -444000000,
+        "prior_year": -611000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 24560000000,
+        "prior_year": 22749000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026050038/ba-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-026458",
+      "filed": "2026-04-22",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.11,
+          "prior_year": -0.16,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -4000000,
+          "prior_year": -37000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 22217000000,
+          "prior_year": 19496000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026026458/ba-20260331.htm"
+    },
+    {
+      "accession": "0001628280-26-050038",
+      "filed": "2026-07-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.67,
+          "prior_year": -0.92,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -444000000,
+          "prior_year": -611000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 24560000000,
+          "prior_year": 22749000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026050038/ba-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "BA",
+  "updated": "2026-10-15"
+}

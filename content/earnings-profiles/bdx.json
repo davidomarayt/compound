@@ -1,0 +1,96 @@
+{
+  "cik": 10795,
+  "company": "Becton Dickinson",
+  "latest": {
+    "accession": "0000010795-26-000035",
+    "filed": "2026-08-06",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.37,
+        "prior_year": 2,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 377000000,
+        "prior_year": 574000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4983000000,
+        "prior_year": 4726000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/10795/000001079526000035/bdx-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000010795-26-000026",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -1.11,
+          "prior_year": 1.07,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -311000000,
+          "prior_year": 308000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4714000000,
+          "prior_year": 4480000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/10795/000001079526000026/bdx-20260331.htm"
+    },
+    {
+      "accession": "0000010795-26-000035",
+      "filed": "2026-08-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.37,
+          "prior_year": 2,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 377000000,
+          "prior_year": 574000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4983000000,
+          "prior_year": 4726000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/10795/000001079526000035/bdx-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "BDX",
+  "updated": "2026-10-15"
+}
