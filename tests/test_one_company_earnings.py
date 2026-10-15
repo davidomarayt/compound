@@ -181,3 +181,25 @@ def test_fy2027_q1_filed_2026_remains_fiscal_q1():
     assert quarter["fy"] == 2027
     assert quarter["fp"] == "Q1"
     assert quarter["period_end"] == "2026-08-31"
+
+
+def test_oracle_may_year_end_corrects_misleading_xbrl_filing_year():
+    """Oracle's 31 Aug 2026 10-Q is officially Q1 FY2027, not FY2026."""
+    filing = {
+        "form": "10-Q", "filingDate": "2026-09-11",
+        "reportDate": "2026-08-31",
+        "accessionNumber": "0001193125-26-389274",
+        "primaryDocument": "orcl-20260831.htm",
+    }
+    metrics = {
+        key: {"fy": 2026, "fp": "Q1", "current": 10.0, "prior": 8.0,
+              "unit": "USD/shares" if key == "diluted_eps" else "USD",
+              "tag": key}
+        for key in ("revenue", "net_income", "diluted_eps")
+    }
+    oracle = consolidated.verified_period(filing, metrics, 1341439)
+    unrelated = consolidated.verified_period(filing, metrics, 1045810)
+    assert oracle["fy"] == 2027
+    assert oracle["fp"] == "Q1"
+    assert oracle["period_end"] == "2026-08-31"
+    assert unrelated["fy"] == 2026  # never apply Oracle fiscal rules to Nvidia
