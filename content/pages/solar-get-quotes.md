@@ -1,15 +1,15 @@
 ---
 title: "Solar Project Builder Ireland: Your Installation Quote Brief"
 canonical_path: /solar/get-quotes/
-meta_description: "Build a detailed solar installation quote brief in Ireland: roof orientation, pitch, shading, electricity use, battery preferences and budget. Private, free, no account."
+meta_description: "Build a useful solar installer brief in Ireland with property details, a quick roof compass, electricity needs and battery preferences. Free and private."
 ---
 <div class="sol-shell sol-subpage sol-project" data-solar-brief data-solar-project data-solar-leads-active="false" data-solar-pilot-active="true" data-solar-leads-api="https://compound-solar-api.vercel.app" data-turnstile-sitekey="">
   <nav class="sol-subcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/solar/">Solar</a> / <span aria-current="page">Solar project brief</span></nav>
   <header class="sol-project-hero">
-    <div><p class="sol-ey">COMPOUND SOLAR / PROJECT BUILDER</p><h1>One solar project. <em>Clearer quotes.</em></h1><p>Build a useful installation brief once, rather than starting again with every provider. Fill in what you know; choose <strong>Not sure</strong> wherever technical details need an installer to check.</p>
+    <div><p class="sol-ey">COMPOUND SOLAR / PROJECT BUILDER</p><h1>One solar project. <em>Clearer quotes.</em></h1><p>Give installers the useful facts: your property, roof direction, electricity needs and installation plans. Most answers are quick selections. Technical details are optional, and you can always choose <strong>Not sure</strong>.</p>
       <div class="sol-project-status"><span><strong>Free</strong> homeowner tool</span><span><strong>No account</strong> required</span><span><strong>Private</strong> until you choose to share</span></div>
     </div>
-    <aside class="sol-project-progress" aria-live="polite"><span class="sol-ey">PROJECT READINESS</span><div class="sol-project-progress-score" data-sp-progress>0%</div><div class="sol-project-track"><span data-sp-progress-bar></span></div><p data-sp-progress-note>Fill in key details to make your project easier to quote.</p><small>Readiness measures completeness, not roof suitability or whether a quotation is guaranteed.</small></aside>
+    <aside class="sol-project-progress" aria-live="polite"><span class="sol-ey">PROJECT READINESS</span><div class="sol-project-progress-score" data-sp-progress>0%</div><div class="sol-project-track"><span data-sp-progress-bar></span></div><p data-sp-progress-note>Complete the key details; advanced questions are optional.</p><small>Readiness measures your key project details, not roof suitability or quote eligibility.</small></aside>
   </header>
   <section class="sol-project-disclosure" aria-label="How this tool handles your information">
     <strong><span aria-hidden="true">ⓘ</span> Private solar project submissions are being opened for the Compound Solar pilot.</strong>
@@ -21,7 +21,7 @@ meta_description: "Build a detailed solar installation quote brief in Ireland: r
   <section class="sol-project-body">
     <div class="sol-project-sections">
       <section class="sol-project-step" id="sol-project-home" aria-labelledby="sol-project-home-heading">
-        <div class="sol-project-step-head"><span>01 / PROPERTY AND TIMING</span><h2 id="sol-project-home-heading">Tell us about the property.</h2><p>These details help an installer establish whether the job fits their service area and availability.</p></div>
+        <div class="sol-project-step-head"><span>01 / PROPERTY AND TIMING</span><h2 id="sol-project-home-heading">Tell us about the property.</h2><p>Start with where the job is, what you want and when you might go ahead.</p></div>
         <div class="sol-fields">
           <label>County <small>Essential for matching providers</small><select data-sb="county" data-sp="county"><option value="">Select county</option><option>Carlow</option><option>Cavan</option><option>Clare</option><option>Cork</option><option>Donegal</option><option>Dublin</option><option>Galway</option><option>Kerry</option><option>Kildare</option><option>Kilkenny</option><option>Laois</option><option>Leitrim</option><option>Limerick</option><option>Longford</option><option>Louth</option><option>Mayo</option><option>Meath</option><option>Monaghan</option><option>Offaly</option><option>Roscommon</option><option>Sligo</option><option>Tipperary</option><option>Waterford</option><option>Westmeath</option><option>Wexford</option><option>Wicklow</option></select></label>
           <label>Nearest town / general area <small>Do not enter your street address</small><input data-sp="area" type="text" maxlength="70" placeholder="e.g. Kells"></label>
@@ -30,18 +30,19 @@ meta_description: "Build a detailed solar installation quote brief in Ireland: r
           <label>Solar project <select data-sp="project"><option>New rooftop solar PV</option><option>Ground-mounted solar PV</option><option>Expand an existing system</option><option>Battery retrofit only</option><option>Not sure</option></select></label>
           <label>When would you like installation? <select data-sp="timing"><option value="">Choose a timeframe</option><option>As soon as practical</option><option>Within 3 months</option><option>3–6 months</option><option>6–12 months</option><option>Researching options</option></select></label>
           <label>Rough installation budget <select data-sp="budget"><option value="">Prefer not to say / unsure</option><option>Under €5,000</option><option>€5,000–€8,000</option><option>€8,000–€12,000</option><option>€12,000–€16,000</option><option>€16,000+</option></select></label>
-          <label>Protected building or conservation area? <select data-sp="protected"><option>Not sure</option><option>No known restrictions</option><option>Protected structure</option><option>Architectural conservation area</option><option>Other possible planning issue</option></select></label>
         </div>
+        <details class="sol-project-optional"><summary>Planning restrictions? <span>Optional</span></summary><div class="sol-fields">
+          <label>Protected building or conservation area? <select data-sp="protected"><option>Not sure</option><option>No known restrictions</option><option>Protected structure</option><option>Architectural conservation area</option><option>Other possible planning issue</option></select></label>
+        </div></details>
       </section>
       <section class="sol-project-step" id="sol-project-roof" aria-labelledby="sol-project-roof-heading">
-        <div class="sol-project-step-head"><span>02 / ROOF AND SITE</span><h2 id="sol-project-roof-heading">Describe where panels might go.</h2><p>Turn the 360° compass below to set the actual direction and pitch for each roof face. A roof survey must still verify the final panel layout and structural suitability.</p></div>
+        <div class="sol-project-step-head"><span>02 / ROOF AND SITE</span><h2 id="sol-project-roof-heading">Describe where panels might go.</h2><p>Use our quick 360° roof compass to describe where your panels could face. You do not need to know technical measurements.</p></div>
         <div class="sol-fields">
           <label>Mounting location <select data-sb="roof" data-sp="roof"><option>Pitched roof</option><option>Flat roof</option><option>Ground mount</option><option>Unsure</option></select></label>
           <label>Roof sections you want to use <select data-sp="faces"><option value="1">One roof face</option><option value="2">Two roof faces</option><option value="unknown">Not sure</option></select></label>
           <input data-sp="azimuth" type="hidden" value="">
           <input data-sp="pitch" type="hidden" value="">
           <p class="sol-project-roof-readout">Primary roof face: <strong data-sp-primary-output>Not yet selected</strong></p>
-          <label>Approximate usable roof area (m²) <input data-sp="areaM2" type="number" min="0" max="1000" step="1" placeholder="Optional, if measured"></label>
           <label>Roof covering <select data-sp="material"><option>Not sure</option><option>Concrete tile</option><option>Clay tile</option><option>Slate / natural slate</option><option>Metal sheet</option><option>Flat membrane / felt</option><option>Other</option></select></label>
         </div>
         <div class="sor-shell sor-embedded" data-solar-orientation data-orientation-embedded>
@@ -126,48 +127,55 @@ meta_description: "Build a detailed solar installation quote brief in Ireland: r
             <input type="hidden" data-sp="azimuth2" value="">
             <input type="hidden" data-sp="pitch2" value="">
             <p class="sol-project-roof-readout">Second roof face: <strong data-sp-secondary-output>Not yet selected</strong></p>
-            <label>Second face usable area (m²) <input data-sp="areaM22" type="number" min="0" max="1000" placeholder="Optional"></label>
           </div>
         </div>
         <div class="sol-fields">
           <label>Visible shading <select data-sp="shade"><option>Not sure</option><option>None / minimal</option><option>Some shade</option><option>Significant shade</option></select></label>
-          <label>Possible obstructions <select data-sp="obstacles"><option>Not sure</option><option>No major obstructions</option><option>Chimney / vents</option><option>Dormer / skylights</option><option>Mixed obstructions</option></select></label>
-          <label>Roof condition <select data-sp="roofCondition"><option>Not sure</option><option>Recently replaced / good</option><option>Appears sound</option><option>Repair / replacement planned</option></select></label>
-          <label>Building height <select data-sp="storeys"><option>Not sure</option><option>One storey</option><option>Two storeys</option><option>Three or more</option></select></label>
-          <label>Site access <select data-sp="access"><option>Not sure</option><option>Normal driveway / scaffold access</option><option>Restricted access</option><option>Long cable run / outbuilding</option></select></label>
         </div>
+        <details class="sol-project-optional"><summary>More roof or access details <span>Optional — if known</span></summary>
+          <p>These details may help an installer price scaffolding and roof work. You can leave them for a site survey.</p>
+          <div class="sol-fields">
+            <label>Approximate usable roof area (m²) <input data-sp="areaM2" type="number" min="0" max="1000" step="1" placeholder="Optional, if measured"></label>
+            <label>Possible obstructions <select data-sp="obstacles"><option>Not sure</option><option>No major obstructions</option><option>Chimney / vents</option><option>Dormer / skylights</option><option>Mixed obstructions</option></select></label>
+            <label>Roof condition <select data-sp="roofCondition"><option>Not sure</option><option>Recently replaced / good</option><option>Appears sound</option><option>Repair / replacement planned</option></select></label>
+            <label>Building height <select data-sp="storeys"><option>Not sure</option><option>One storey</option><option>Two storeys</option><option>Three or more</option></select></label>
+            <label>Site access <select data-sp="access"><option>Not sure</option><option>Normal driveway / scaffold access</option><option>Restricted access</option><option>Long cable run / outbuilding</option></select></label>
+          </div>
+        </details>
         <p class="sol-project-help" data-sp-compass>Your confirmed compass settings appear automatically in the installer brief below. Figures are indicative and should be verified by the installer.</p>
       </section>
       <section class="sol-project-step" id="sol-project-energy" aria-labelledby="sol-project-energy-heading">
-        <div class="sol-project-step-head"><span>03 / ENERGY DEMAND AND ELECTRICAL</span><h2 id="sol-project-energy-heading">How does your home use electricity?</h2><p>Use a recent bill for annual kWh if available. The installer will confirm any electrical details you are unsure about.</p></div>
+        <div class="sol-project-step-head"><span>03 / ENERGY DEMAND AND ELECTRICAL</span><h2 id="sol-project-energy-heading">How does your home use electricity?</h2><p>Annual kWh is ideal, but a rough monthly electricity bill is useful too. You only need to provide one if you know it.</p></div>
         <div class="sol-fields">
           <label>Annual home electricity use (kWh) <input data-sb="demand" data-sp="demand" type="number" min="0" max="100000" step="100" inputmode="numeric" placeholder="e.g. 5,000"></label>
           <label>Average electricity bill (€ per month) <input data-sp="bill" type="number" min="0" max="5000" step="5" placeholder="If annual kWh is unknown"></label>
           <label>Day/night usage pattern <select data-sp="daytime"><option>Not sure</option><option>Someone home most days</option><option>Mainly evenings</option><option>Shift work / variable schedule</option><option>High daytime business use</option></select></label>
-          <label>Electricity meter <select data-sp="smartMeter"><option>Not sure</option><option>Smart meter installed</option><option>Standard meter</option></select></label>
-          <label>Electricity supply <select data-sp="phase"><option>Not sure</option><option>Single-phase</option><option>Three-phase</option></select></label>
-          <label>Electrical distribution board <select data-sp="board"><option>Not sure</option><option>Recently updated</option><option>Older unit / may need inspection</option><option>Space constraints</option></select></label>
           <label>EV charging <select data-sp="ev"><option>No EV planned</option><option>Already own an EV</option><option>Planning an EV</option><option>Multiple EVs</option></select></label>
           <label>Heat pump <select data-sp="heatPump"><option>No heat pump planned</option><option>Already installed</option><option>Planning a heat pump</option></select></label>
-          <label>Hot-water immersion <select data-sp="immersion"><option>Not sure</option><option>Electric immersion present</option><option>No electric immersion</option></select></label>
-          <label>Existing solar PV <select data-sp="existingPV"><option>No</option><option>Yes, extend existing system</option><option>Yes, battery-only upgrade</option><option>Not sure</option></select></label>
         </div>
+        <details class="sol-project-optional"><summary>Know your electrical supply? <span>Optional</span></summary>
+          <div class="sol-fields"><label>Electricity supply <select data-sp="phase"><option>Not sure</option><option>Single-phase</option><option>Three-phase</option></select></label></div>
+        </details>
         <p class="sol-project-help">Do not open electrical covers or climb onto the roof. Do not share meter serial numbers or MPRNs. The installer checks these safely during a survey.</p>
       </section>
       <section class="sol-project-step" id="sol-project-preferences" aria-labelledby="sol-project-preferences-heading">
-        <div class="sol-project-step-head"><span>04 / WHAT YOU WANT QUOTED</span><h2 id="sol-project-preferences-heading">Tell installers how to price it.</h2><p>These preferences help them send comparable proposals, not just a headline installation price.</p></div>
+        <div class="sol-project-step-head"><span>04 / WHAT YOU WANT QUOTED</span><h2 id="sol-project-preferences-heading">Tell installers how to price it.</h2><p>Tell installers what you have in mind. They can recommend the final system size.</p></div>
         <div class="sol-fields">
           <label>Preferred array size (kWp) <input data-sp="kwp" type="number" min="0" max="100" step="0.5" placeholder="If known; installer to recommend"></label>
           <label>Battery preference <select data-sb="battery" data-sp="battery"><option value="quote-both">Quote both with and without battery</option><option value="solar-only">Solar PV only</option><option value="with-battery">Solar PV plus battery</option><option value="unsure">Not sure</option></select></label>
-          <label>Battery size (kWh) <input data-sp="batteryKwh" type="number" min="0" max="200" step="0.5" placeholder="Leave blank to let installer advise"></label>
-          <label>EV charger included? <select data-sp="evCharger"><option>Quote separately</option><option>Yes</option><option>No</option></select></label>
-          <label>Hot water diverter? <select data-sp="diverter"><option>Quote separately</option><option>Yes</option><option>No</option></select></label>
-          <label>Backup power during outages? <select data-sp="backup"><option>Not essential / unsure</option><option>Yes, explore backup</option><option>No</option></select></label>
           <label>Solar grant status <select data-sp="grant"><option>Not sure</option><option>Likely eligible but not applied</option><option>Application underway</option><option>Already approved</option><option>Previously received solar grant</option></select></label>
-          <label>Funding <select data-sp="finance"><option>Not sure</option><option>Pay outright</option><option>Interested in finance</option></select></label>
           <label>Existing solar quotes? <select data-sp="quotes"><option>No</option><option>Yes, one</option><option>Yes, two or more</option></select></label>
-          <label>Install/inverter cable route <select data-sp="cable"><option>Not sure</option><option>Near consumer unit / meter</option><option>Attic / garage / utility space</option><option>Outbuilding / long distance</option></select></label>
         </div>
+        <details class="sol-project-optional"><summary>Additional system preferences <span>Optional</span></summary>
+          <p>Add details only if they matter to your project. Installers can advise on these during design.</p>
+          <div class="sol-fields">
+            <label>Battery size (kWh) <input data-sp="batteryKwh" type="number" min="0" max="200" step="0.5" placeholder="Leave blank to let installer advise"></label>
+            <label>EV charger included? <select data-sp="evCharger"><option>Quote separately</option><option>Yes</option><option>No</option></select></label>
+            <label>Hot water diverter? <select data-sp="diverter"><option>Quote separately</option><option>Yes</option><option>No</option></select></label>
+            <label>Backup power during outages? <select data-sp="backup"><option>Not essential / unsure</option><option>Yes, explore backup</option><option>No</option></select></label>
+            <label>Funding <select data-sp="finance"><option>Not sure</option><option>Pay outright</option><option>Interested in finance</option></select></label>
+          </div>
+        </details>
         <label class="sol-project-wide-label">Anything else the installer should know? <textarea data-sp="notes" rows="3" maxlength="900" placeholder="Roof access, high electricity bills, upcoming renovation, specific equipment or accessibility needs…"></textarea></label>
 
       </section>
@@ -179,7 +187,6 @@ meta_description: "Build a detailed solar installation quote brief in Ireland: r
           <label>Your name (required only to submit) <input data-sp="name" type="text" maxlength="100" autocomplete="name" placeholder="Included only if you copy the brief"></label>
           <label>Your email (required only to submit) <input data-sp="email" type="email" maxlength="180" autocomplete="email" placeholder="you@example.ie"></label>
           <label>Your phone (optional) <input data-sp="phone" type="tel" maxlength="35" autocomplete="tel" placeholder="+353…"></label>
-          <label>Full Eircode (optional, private) <input data-sp="eircode" type="text" maxlength="12" autocomplete="postal-code" placeholder="Only disclose directly to your chosen installer"></label>
         </div>
         <section class="sol-project-submit-card" data-sp-prelaunch-request aria-labelledby="solar-submit-heading">
           <span class="sol-project-submit-eyebrow">COMPOUND SOLAR / PRIVATE PROJECT PILOT</span>
