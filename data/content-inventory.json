@@ -4556,15 +4556,15 @@
         "kind": "Information / policy page"
       },
       {
-        "title": "Solar Project Builder Ireland: Your Installation Quote Brief",
-        "url": "/solar-get-quotes/",
-        "source": "content/pages/solar-get-quotes.md",
-        "kind": "Information / policy page"
-      },
-      {
         "title": "Solar Quote Comparison Calculator Ireland",
         "url": "/solar-compare-quotes/",
         "source": "content/pages/solar-compare-quotes.md",
+        "kind": "Information / policy page"
+      },
+      {
+        "title": "Solar Quote Request Ireland: Build Your Installation Project",
+        "url": "/solar-get-quotes/",
+        "source": "content/pages/solar-get-quotes.md",
         "kind": "Information / policy page"
       },
       {

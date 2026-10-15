@@ -383,8 +383,8 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - [Solar Panel Grants Ireland 2026: PV & Battery Eligibility](https://compound.ie/solar-grants/)
 - [Solar Panel Installation Costs & System Sizes Ireland](https://compound.ie/solar-costs/)
 - [Solar Panels, Inverters & Batteries Ireland: Equipment Guide](https://compound.ie/solar-equipment/)
-- [Solar Project Builder Ireland: Your Installation Quote Brief](https://compound.ie/solar-get-quotes/)
 - [Solar Quote Comparison Calculator Ireland](https://compound.ie/solar-compare-quotes/)
+- [Solar Quote Request Ireland: Build Your Installation Project](https://compound.ie/solar-get-quotes/)
 - [Solar Quotes Ireland: Plan Your Installation & Compare Costs](https://compound.ie/solar/)
 
 ## Site hubs and directories — 11
