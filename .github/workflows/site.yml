@@ -62,6 +62,8 @@ jobs:
               page = (root / path).read_text()
               assert page.count('<h1>') == 1, ticker
               assert "Earnings Results</h1>" in page, ticker
+              assert "Earnings: Revenue &amp; EPS" in page, ticker
+              assert 'name="description"' in page, ticker
               assert "How much did" in page and "Revenue, earnings and EPS growth" in page, ticker
               assert 'dateModified' in page and 'citation' in page, ticker
               assert 'Original SEC report for FY' in page, ticker
