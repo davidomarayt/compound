@@ -1,0 +1,96 @@
+{
+  "cik": 310764,
+  "company": "Stryker Corporation",
+  "latest": {
+    "accession": "0000310764-26-000050",
+    "filed": "2026-07-31",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.3,
+        "prior_year": 2.29,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1276000000,
+        "prior_year": 884000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 6589000000,
+        "prior_year": 6022000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/310764/000031076426000050/syk-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000310764-26-000031",
+      "filed": "2026-05-11",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.93,
+          "prior_year": 1.69,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 745000000,
+          "prior_year": 654000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6020000000,
+          "prior_year": 5866000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/310764/000031076426000031/syk-20260331.htm"
+    },
+    {
+      "accession": "0000310764-26-000050",
+      "filed": "2026-07-31",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.3,
+          "prior_year": 2.29,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1276000000,
+          "prior_year": 884000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6589000000,
+          "prior_year": 6022000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/310764/000031076426000050/syk-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "SYK",
+  "updated": "2026-10-15"
+}

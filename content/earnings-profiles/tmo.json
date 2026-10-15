@@ -1,0 +1,96 @@
+{
+  "cik": 97745,
+  "company": "Thermo Fisher Scientific",
+  "latest": {
+    "accession": "0000097745-26-000144",
+    "filed": "2026-07-31",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 4.68,
+        "prior_year": 4.28,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1736000000,
+        "prior_year": 1617000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 11994000000,
+        "prior_year": 10855000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-27",
+    "source": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000144/tmo-20260627.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000097745-26-000092",
+      "filed": "2026-05-01",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.43,
+          "prior_year": 3.98,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1651000000,
+          "prior_year": 1507000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 11005000000,
+          "prior_year": 10364000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000092/tmo-20260328.htm"
+    },
+    {
+      "accession": "0000097745-26-000144",
+      "filed": "2026-07-31",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.68,
+          "prior_year": 4.28,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1736000000,
+          "prior_year": 1617000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 11994000000,
+          "prior_year": 10855000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000144/tmo-20260627.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TMO",
+  "updated": "2026-10-15"
+}

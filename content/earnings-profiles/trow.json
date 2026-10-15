@@ -1,0 +1,96 @@
+{
+  "cik": 1113169,
+  "company": "T. Rowe Price",
+  "latest": {
+    "accession": "0001628280-26-051335",
+    "filed": "2026-07-31",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.88,
+        "prior_year": 2.24,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 632000000,
+        "prior_year": 505200000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1907400000,
+        "prior_year": 1723300000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026051335/trow-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-028712",
+      "filed": "2026-04-30",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.23,
+          "prior_year": 2.15,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 498200000,
+          "prior_year": 490500000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1857000000,
+          "prior_year": 1763900000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026028712/trow-20260331.htm"
+    },
+    {
+      "accession": "0001628280-26-051335",
+      "filed": "2026-07-31",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.88,
+          "prior_year": 2.24,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 632000000,
+          "prior_year": 505200000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1907400000,
+          "prior_year": 1723300000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026051335/trow-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TROW",
+  "updated": "2026-10-15"
+}

@@ -1,0 +1,96 @@
+{
+  "cik": 1283699,
+  "company": "T-Mobile US",
+  "latest": {
+    "accession": "0001283699-26-000101",
+    "filed": "2026-07-23",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.99,
+        "prior_year": 2.84,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 3239000000,
+        "prior_year": 3222000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 22791000000,
+        "prior_year": 21132000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000101/tmus-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001283699-26-000063",
+      "filed": "2026-04-28",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.27,
+          "prior_year": 2.58,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2504000000,
+          "prior_year": 2953000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 23107000000,
+          "prior_year": 20886000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000063/tmus-20260331.htm"
+    },
+    {
+      "accession": "0001283699-26-000101",
+      "filed": "2026-07-23",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.99,
+          "prior_year": 2.84,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 3239000000,
+          "prior_year": 3222000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 22791000000,
+          "prior_year": 21132000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000101/tmus-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TMUS",
+  "updated": "2026-10-15"
+}

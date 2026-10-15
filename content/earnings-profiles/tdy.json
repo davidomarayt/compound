@@ -1,0 +1,96 @@
+{
+  "cik": 1094285,
+  "company": "Teledyne Technologies",
+  "latest": {
+    "accession": "0001094285-26-000043",
+    "filed": "2026-07-24",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 5.37,
+        "prior_year": 4.43,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 251700000,
+        "prior_year": 209900000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1662500000,
+        "prior_year": 1513700000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-28",
+    "source": "https://www.sec.gov/Archives/edgar/data/1094285/000109428526000043/tdy-20260628.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001094285-26-000030",
+      "filed": "2026-04-24",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.85,
+          "prior_year": 3.99,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 226800000,
+          "prior_year": 188600000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1560100000,
+          "prior_year": 1449900000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-29",
+      "source": "https://www.sec.gov/Archives/edgar/data/1094285/000109428526000030/tdy-20260329.htm"
+    },
+    {
+      "accession": "0001094285-26-000043",
+      "filed": "2026-07-24",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 5.37,
+          "prior_year": 4.43,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 251700000,
+          "prior_year": 209900000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1662500000,
+          "prior_year": 1513700000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/1094285/000109428526000043/tdy-20260628.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TDY",
+  "updated": "2026-10-15"
+}

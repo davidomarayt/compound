@@ -1,0 +1,96 @@
+{
+  "cik": 1973266,
+  "company": "TKO Group Holdings",
+  "latest": {
+    "accession": "0001193125-26-330592",
+    "filed": "2026-08-03",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.34,
+        "prior_year": 1.17,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 101575000,
+        "prior_year": 98365000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1547078000,
+        "prior_year": 1308442000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1973266/000119312526330592/tko-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001193125-26-208992",
+      "filed": "2026-05-06",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.12,
+          "prior_year": 0.69,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 89351000,
+          "prior_year": 58408000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1596876000,
+          "prior_year": 1268800000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1973266/000119312526208992/tko-20260331.htm"
+    },
+    {
+      "accession": "0001193125-26-330592",
+      "filed": "2026-08-03",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.34,
+          "prior_year": 1.17,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 101575000,
+          "prior_year": 98365000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1547078000,
+          "prior_year": 1308442000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1973266/000119312526330592/tko-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TKO",
+  "updated": "2026-10-15"
+}

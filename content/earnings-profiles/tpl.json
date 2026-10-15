@@ -1,0 +1,96 @@
+{
+  "cik": 1811074,
+  "company": "Texas Pacific Land Corporation",
+  "latest": {
+    "accession": "0001811074-26-000058",
+    "filed": "2026-08-05",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.23,
+        "prior_year": 1.68,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 153930000,
+        "prior_year": 116140000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 246059000,
+        "prior_year": 187543000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1811074/000181107426000058/tpl-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001811074-26-000035",
+      "filed": "2026-05-06",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.07,
+          "prior_year": 1.75,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 142902000,
+          "prior_year": 120652000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 236818000,
+          "prior_year": 195983000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1811074/000181107426000035/tpl-20260331.htm"
+    },
+    {
+      "accession": "0001811074-26-000058",
+      "filed": "2026-08-05",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.23,
+          "prior_year": 1.68,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 153930000,
+          "prior_year": 116140000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 246059000,
+          "prior_year": 187543000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1811074/000181107426000058/tpl-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TPL",
+  "updated": "2026-10-15"
+}

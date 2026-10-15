@@ -1,0 +1,96 @@
+{
+  "cik": 864749,
+  "company": "Trimble Inc.",
+  "latest": {
+    "accession": "0000864749-26-000108",
+    "filed": "2026-08-12",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": -2.02,
+        "prior_year": 0.37,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": -471700000,
+        "prior_year": 89200000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 972000000,
+        "prior_year": 875700000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-03",
+    "source": "https://www.sec.gov/Archives/edgar/data/864749/000086474926000108/trmb-20260703.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000864749-26-000063",
+      "filed": "2026-05-06",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.42,
+          "prior_year": 0.27,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 98900000,
+          "prior_year": 66700000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 939900000,
+          "prior_year": 840600000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/864749/000086474926000063/trmb-20260403.htm"
+    },
+    {
+      "accession": "0000864749-26-000108",
+      "filed": "2026-08-12",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -2.02,
+          "prior_year": 0.37,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -471700000,
+          "prior_year": 89200000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 972000000,
+          "prior_year": 875700000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/864749/000086474926000108/trmb-20260703.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TRMB",
+  "updated": "2026-10-15"
+}

@@ -1,0 +1,96 @@
+{
+  "cik": 100493,
+  "company": "Tyson Foods",
+  "latest": {
+    "accession": "0000100493-26-000058",
+    "filed": "2026-08-03",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.52,
+        "prior_year": 0.17,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 182000000,
+        "prior_year": 61000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 13868000000,
+        "prior_year": 13884000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-27",
+    "source": "https://www.sec.gov/Archives/edgar/data/100493/000010049326000058/tsn-20260627.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000100493-26-000020",
+      "filed": "2026-05-04",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.73,
+          "prior_year": 0.02,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 260000000,
+          "prior_year": 7000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 13653000000,
+          "prior_year": 13074000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/100493/000010049326000020/tsn-20260328.htm"
+    },
+    {
+      "accession": "0000100493-26-000058",
+      "filed": "2026-08-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.52,
+          "prior_year": 0.17,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 182000000,
+          "prior_year": 61000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 13868000000,
+          "prior_year": 13884000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/100493/000010049326000058/tsn-20260627.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TSN",
+  "updated": "2026-10-15"
+}

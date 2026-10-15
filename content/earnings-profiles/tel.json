@@ -1,0 +1,96 @@
+{
+  "cik": 1385157,
+  "company": "TE Connectivity",
+  "latest": {
+    "accession": "0001104659-26-086509",
+    "filed": "2026-07-24",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.55,
+        "prior_year": 2.14,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 748000000,
+        "prior_year": 638000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 5160000000,
+        "prior_year": 4534000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-26",
+    "source": "https://www.sec.gov/Archives/edgar/data/1385157/000110465926086509/tel-20260626x10q.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001104659-26-048160",
+      "filed": "2026-04-24",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.9,
+          "prior_year": 0.04,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 855000000,
+          "prior_year": 13000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4744000000,
+          "prior_year": 4143000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/1385157/000110465926048160/tel-20260327x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-086509",
+      "filed": "2026-07-24",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.55,
+          "prior_year": 2.14,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 748000000,
+          "prior_year": 638000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5160000000,
+          "prior_year": 4534000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/1385157/000110465926086509/tel-20260626x10q.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TEL",
+  "updated": "2026-10-15"
+}

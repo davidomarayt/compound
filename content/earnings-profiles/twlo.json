@@ -1,0 +1,96 @@
+{
+  "cik": 1447669,
+  "company": "Twilio",
+  "latest": {
+    "accession": "0001447669-26-000092",
+    "filed": "2026-08-07",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 6.68,
+        "prior_year": 0.14,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1067209000,
+        "prior_year": 22423000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1499089000,
+        "prior_year": 1228425000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1447669/000144766926000092/twlo-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001447669-26-000049",
+      "filed": "2026-05-01",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.57,
+          "prior_year": 0.12,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 90139000,
+          "prior_year": 20017000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1406907000,
+          "prior_year": 1172463000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1447669/000144766926000049/twlo-20260331.htm"
+    },
+    {
+      "accession": "0001447669-26-000092",
+      "filed": "2026-08-07",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 6.68,
+          "prior_year": 0.14,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1067209000,
+          "prior_year": 22423000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1499089000,
+          "prior_year": 1228425000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1447669/000144766926000092/twlo-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TWLO",
+  "updated": "2026-10-15"
+}

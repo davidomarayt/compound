@@ -1,0 +1,96 @@
+{
+  "cik": 27419,
+  "company": "Target Corporation",
+  "latest": {
+    "accession": "0000027419-26-000042",
+    "filed": "2026-08-28",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 4.11,
+        "prior_year": 2.05,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1877000000,
+        "prior_year": 935000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 26539000000,
+        "prior_year": 25211000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-01",
+    "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000042/tgt-20260801.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000027419-26-000022",
+      "filed": "2026-05-29",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.71,
+          "prior_year": 2.27,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 781000000,
+          "prior_year": 1036000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 25443000000,
+          "prior_year": 23846000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000022/tgt-20260502.htm"
+    },
+    {
+      "accession": "0000027419-26-000042",
+      "filed": "2026-08-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.11,
+          "prior_year": 2.05,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1877000000,
+          "prior_year": 935000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 26539000000,
+          "prior_year": 25211000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-01",
+      "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000042/tgt-20260801.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TGT",
+  "updated": "2026-10-15"
+}

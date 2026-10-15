@@ -1,0 +1,96 @@
+{
+  "cik": 1466258,
+  "company": "Trane Technologies",
+  "latest": {
+    "accession": "0001628280-26-051117",
+    "filed": "2026-07-30",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 4.16,
+        "prior_year": 3.89,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 925700000,
+        "prior_year": 874800000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 6353500000,
+        "prior_year": 5746400000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1466258/000162828026051117/tt-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-028743",
+      "filed": "2026-04-30",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.62,
+          "prior_year": 2.67,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 584400000,
+          "prior_year": 604900000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4969400000,
+          "prior_year": 4688500000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1466258/000162828026028743/tt-20260331.htm"
+    },
+    {
+      "accession": "0001628280-26-051117",
+      "filed": "2026-07-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.16,
+          "prior_year": 3.89,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 925700000,
+          "prior_year": 874800000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6353500000,
+          "prior_year": 5746400000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1466258/000162828026051117/tt-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TT",
+  "updated": "2026-10-15"
+}

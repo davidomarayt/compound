@@ -1,0 +1,96 @@
+{
+  "cik": 217346,
+  "company": "Textron",
+  "latest": {
+    "accession": "0000217346-26-000036",
+    "filed": "2026-07-28",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.42,
+        "prior_year": 1.35,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 248000000,
+        "prior_year": 245000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 3827000000,
+        "prior_year": 3716000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-04",
+    "source": "https://www.sec.gov/Archives/edgar/data/217346/000021734626000036/txt-20260704.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000217346-26-000012",
+      "filed": "2026-04-30",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.25,
+          "prior_year": 1.13,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 220000000,
+          "prior_year": 207000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3695000000,
+          "prior_year": 3306000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-04",
+      "source": "https://www.sec.gov/Archives/edgar/data/217346/000021734626000012/txt-20260404.htm"
+    },
+    {
+      "accession": "0000217346-26-000036",
+      "filed": "2026-07-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.42,
+          "prior_year": 1.35,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 248000000,
+          "prior_year": 245000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3827000000,
+          "prior_year": 3716000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-04",
+      "source": "https://www.sec.gov/Archives/edgar/data/217346/000021734626000036/txt-20260704.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TXT",
+  "updated": "2026-10-15"
+}

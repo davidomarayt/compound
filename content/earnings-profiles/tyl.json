@@ -1,0 +1,96 @@
+{
+  "cik": 860731,
+  "company": "Tyler Technologies",
+  "latest": {
+    "accession": "0000860731-26-000050",
+    "filed": "2026-07-29",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.23,
+        "prior_year": 1.93,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 93512000,
+        "prior_year": 84627000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 645096000,
+        "prior_year": 596117000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/860731/000086073126000050/tyl-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000860731-26-000032",
+      "filed": "2026-04-29",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.88,
+          "prior_year": 1.84,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 81180000,
+          "prior_year": 81052000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 613503000,
+          "prior_year": 565165000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/860731/000086073126000032/tyl-20260331.htm"
+    },
+    {
+      "accession": "0000860731-26-000050",
+      "filed": "2026-07-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.23,
+          "prior_year": 1.93,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 93512000,
+          "prior_year": 84627000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 645096000,
+          "prior_year": 596117000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/860731/000086073126000050/tyl-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TYL",
+  "updated": "2026-10-15"
+}

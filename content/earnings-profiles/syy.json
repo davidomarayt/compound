@@ -1,0 +1,96 @@
+{
+  "cik": 96021,
+  "company": "Sysco",
+  "latest": {
+    "accession": "0000096021-26-000033",
+    "filed": "2026-08-21",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.66,
+        "prior_year": 3.73,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1757000000,
+        "prior_year": 1828000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 84553000000,
+        "prior_year": 81370000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-27",
+    "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000033/syy-20260627.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000096021-26-000022",
+      "filed": "2026-04-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.71,
+          "prior_year": 0.82,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 340000000,
+          "prior_year": 401000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 20519000000,
+          "prior_year": 19598000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000022/syy-20260328.htm"
+    },
+    {
+      "accession": "0000096021-26-000033",
+      "filed": "2026-08-21",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.66,
+          "prior_year": 3.73,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1757000000,
+          "prior_year": 1828000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 84553000000,
+          "prior_year": 81370000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/96021/000009602126000033/syy-20260627.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "SYY",
+  "updated": "2026-10-15"
+}

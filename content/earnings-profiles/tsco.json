@@ -1,0 +1,96 @@
+{
+  "cik": 916365,
+  "company": "Tractor Supply",
+  "latest": {
+    "accession": "0000916365-26-000059",
+    "filed": "2026-08-06",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.69,
+        "prior_year": 0.81,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 360715000,
+        "prior_year": 430043000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4541314000,
+        "prior_year": 4439729000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-27",
+    "source": "https://www.sec.gov/Archives/edgar/data/916365/000091636526000059/tsco-20260627.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000916365-26-000024",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.31,
+          "prior_year": 0.34,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 164524000,
+          "prior_year": 179369000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3592046000,
+          "prior_year": 3466952000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/916365/000091636526000024/tsco-20260328.htm"
+    },
+    {
+      "accession": "0000916365-26-000059",
+      "filed": "2026-08-06",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.69,
+          "prior_year": 0.81,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 360715000,
+          "prior_year": 430043000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4541314000,
+          "prior_year": 4439729000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/916365/000091636526000059/tsco-20260627.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TSCO",
+  "updated": "2026-10-15"
+}

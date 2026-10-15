@@ -1,0 +1,96 @@
+{
+  "cik": 86312,
+  "company": "Travelers Companies (The)",
+  "latest": {
+    "accession": "0000086312-26-000145",
+    "filed": "2026-07-17",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 10.26,
+        "prior_year": 6.53,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 2208000000,
+        "prior_year": 1509000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 12153000000,
+        "prior_year": 12116000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/86312/000008631226000145/trv-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000086312-26-000111",
+      "filed": "2026-04-16",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 7.78,
+          "prior_year": 1.7,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1711000000,
+          "prior_year": 395000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 11924000000,
+          "prior_year": 11810000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/86312/000008631226000111/trv-20260331.htm"
+    },
+    {
+      "accession": "0000086312-26-000145",
+      "filed": "2026-07-17",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 10.26,
+          "prior_year": 6.53,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2208000000,
+          "prior_year": 1509000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 12153000000,
+          "prior_year": 12116000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/86312/000008631226000145/trv-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TRV",
+  "updated": "2026-10-15"
+}

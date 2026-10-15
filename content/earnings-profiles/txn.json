@@ -1,0 +1,96 @@
+{
+  "cik": 97476,
+  "company": "Texas Instruments",
+  "latest": {
+    "accession": "0000097476-26-000152",
+    "filed": "2026-07-24",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.14,
+        "prior_year": 1.41,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1980000000,
+        "prior_year": 1295000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 5463000000,
+        "prior_year": 4448000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/97476/000009747626000152/txn-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000097476-26-000101",
+      "filed": "2026-04-24",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.68,
+          "prior_year": 1.28,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1545000000,
+          "prior_year": 1179000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4825000000,
+          "prior_year": 4069000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/97476/000009747626000101/txn-20260331.htm"
+    },
+    {
+      "accession": "0000097476-26-000152",
+      "filed": "2026-07-24",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.14,
+          "prior_year": 1.41,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1980000000,
+          "prior_year": 1295000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5463000000,
+          "prior_year": 4448000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/97476/000009747626000152/txn-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TXN",
+  "updated": "2026-10-15"
+}

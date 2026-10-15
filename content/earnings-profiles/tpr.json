@@ -1,0 +1,96 @@
+{
+  "cik": 1116132,
+  "company": "Tapestry, Inc.",
+  "latest": {
+    "accession": "0001116132-26-000018",
+    "filed": "2026-08-13",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 7.27,
+        "prior_year": 0.82,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1527700000,
+        "prior_year": 183200000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 8004200000,
+        "prior_year": 7010700000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-27",
+    "source": "https://www.sec.gov/Archives/edgar/data/1116132/000111613226000018/tpr-20260627.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001116132-26-000011",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.65,
+          "prior_year": 0.95,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 343800000,
+          "prior_year": 203300000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1920600000,
+          "prior_year": 1584600000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/1116132/000111613226000011/tpr-20260328.htm"
+    },
+    {
+      "accession": "0001116132-26-000018",
+      "filed": "2026-08-13",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 7.27,
+          "prior_year": 0.82,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1527700000,
+          "prior_year": 183200000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 8004200000,
+          "prior_year": 7010700000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/1116132/000111613226000018/tpr-20260627.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TPR",
+  "updated": "2026-10-15"
+}

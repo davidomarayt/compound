@@ -1,0 +1,67 @@
+{
+  "cik": 946581,
+  "company": "Take-Two Interactive",
+  "latest": {
+    "accession": "0001628280-26-054870",
+    "filed": "2026-08-07",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
+    "metrics": {
+      "diluted_eps": {
+        "current": -0.18,
+        "prior_year": -0.07,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": -34100000,
+        "prior_year": -11900000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1533900000,
+        "prior_year": 1503800000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/946581/000162828026054870/ttwo-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-054870",
+      "filed": "2026-08-07",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.18,
+          "prior_year": -0.07,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -34100000,
+          "prior_year": -11900000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1533900000,
+          "prior_year": 1503800000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/946581/000162828026054870/ttwo-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TTWO",
+  "updated": "2026-10-15"
+}

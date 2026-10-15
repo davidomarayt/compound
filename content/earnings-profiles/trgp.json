@@ -1,0 +1,96 @@
+{
+  "cik": 1389170,
+  "company": "Targa Resources",
+  "latest": {
+    "accession": "0001193125-26-337729",
+    "filed": "2026-08-06",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.54,
+        "prior_year": 2.87,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 764600000,
+        "prior_year": 629100000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4440100000,
+        "prior_year": 4260100000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1389170/000119312526337729/trgp-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001193125-26-211698",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.21,
+          "prior_year": 0.91,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 479600000,
+          "prior_year": 270500000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4094700000,
+          "prior_year": 4561500000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1389170/000119312526211698/trgp-20260331.htm"
+    },
+    {
+      "accession": "0001193125-26-337729",
+      "filed": "2026-08-06",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.54,
+          "prior_year": 2.87,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 764600000,
+          "prior_year": 629100000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4440100000,
+          "prior_year": 4260100000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1389170/000119312526337729/trgp-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TRGP",
+  "updated": "2026-10-15"
+}

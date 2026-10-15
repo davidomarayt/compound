@@ -1,0 +1,96 @@
+{
+  "cik": 1260221,
+  "company": "TransDigm Group",
+  "latest": {
+    "accession": "0001260221-26-000053",
+    "filed": "2026-08-04",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 9.39,
+        "prior_year": 8.47,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 539000000,
+        "prior_year": 492000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2741000000,
+        "prior_year": 2237000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-27",
+    "source": "https://www.sec.gov/Archives/edgar/data/1260221/000126022126000053/tdg-20260627.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001260221-26-000040",
+      "filed": "2026-05-05",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 9.2,
+          "prior_year": 8.24,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 535000000,
+          "prior_year": 479000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2544000000,
+          "prior_year": 2150000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/1260221/000126022126000040/tdg-20260328.htm"
+    },
+    {
+      "accession": "0001260221-26-000053",
+      "filed": "2026-08-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 9.39,
+          "prior_year": 8.47,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 539000000,
+          "prior_year": 492000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2741000000,
+          "prior_year": 2237000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/1260221/000126022126000053/tdg-20260627.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "TDG",
+  "updated": "2026-10-15"
+}
