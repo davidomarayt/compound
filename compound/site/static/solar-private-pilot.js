@@ -57,6 +57,17 @@
    const data=await response.json();
    if(!response.ok||!data.ok||!data.reference)throw Error(data.message||'Unable to submit your project right now.');
    submitted=true;
+   // Emit a conversion ONLY after the secure endpoint confirms storage.
+   // This deliberately contains no homeowner details, county or reference.
+   try {
+     if(localStorage.getItem('compound_analytics_consent')==='granted' && typeof window.gtag==='function'){
+       window.gtag('event','solar_project_submitted',{
+         submission_stage:'private_pilot',
+         source_path:'/solar/get-quotes/',
+         transport_type:'beacon'
+       });
+     }
+   }catch(_){}
    report('Project received. Your reference is '+data.reference+'. Compound Solar will review it privately. No installer has access.','success');
    submit.textContent='Project received';
   }catch(err){
