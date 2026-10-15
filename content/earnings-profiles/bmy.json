@@ -1,0 +1,96 @@
+{
+  "cik": 14272,
+  "company": "Bristol Myers Squibb",
+  "latest": {
+    "accession": "0000014272-26-000020",
+    "filed": "2026-07-30",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.62,
+        "prior_year": 0.64,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 3317000000,
+        "prior_year": 1310000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 12973000000,
+        "prior_year": 12269000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000020/bmy-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000014272-26-000010",
+      "filed": "2026-04-30",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.31,
+          "prior_year": 1.2,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2677000000,
+          "prior_year": 2456000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 11489000000,
+          "prior_year": 11201000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000010/bmy-20260331.htm"
+    },
+    {
+      "accession": "0000014272-26-000020",
+      "filed": "2026-07-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.62,
+          "prior_year": 0.64,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 3317000000,
+          "prior_year": 1310000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 12973000000,
+          "prior_year": 12269000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000020/bmy-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "BMY",
+  "updated": "2026-10-15"
+}

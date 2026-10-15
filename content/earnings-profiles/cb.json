@@ -1,0 +1,67 @@
+{
+  "cik": 896159,
+  "company": "Chubb Limited",
+  "latest": {
+    "accession": "0000896159-26-000011",
+    "filed": "2026-04-28",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 5.88,
+        "prior_year": 3.29,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 2320000000,
+        "prior_year": 1331000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 14773000000,
+        "prior_year": 13353000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/896159/000089615926000011/cb-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000896159-26-000011",
+      "filed": "2026-04-28",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 5.88,
+          "prior_year": 3.29,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2320000000,
+          "prior_year": 1331000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 14773000000,
+          "prior_year": 13353000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/896159/000089615926000011/cb-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "CB",
+  "updated": "2026-10-15"
+}

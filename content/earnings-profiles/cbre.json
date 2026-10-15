@@ -1,0 +1,96 @@
+{
+  "cik": 1138118,
+  "company": "CBRE Group",
+  "latest": {
+    "accession": "0001138118-26-000024",
+    "filed": "2026-07-29",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.69,
+        "prior_year": 0.72,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 204000000,
+        "prior_year": 215000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 11114000000,
+        "prior_year": 9596000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1138118/000113811826000024/cbre-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001138118-26-000015",
+      "filed": "2026-04-23",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.07,
+          "prior_year": 0.54,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 318000000,
+          "prior_year": 163000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 10424000000,
+          "prior_year": 8778000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1138118/000113811826000015/cbre-20260331.htm"
+    },
+    {
+      "accession": "0001138118-26-000024",
+      "filed": "2026-07-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.69,
+          "prior_year": 0.72,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 204000000,
+          "prior_year": 215000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 11114000000,
+          "prior_year": 9596000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1138118/000113811826000024/cbre-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "CBRE",
+  "updated": "2026-10-15"
+}

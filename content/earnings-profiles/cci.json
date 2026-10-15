@@ -1,0 +1,96 @@
+{
+  "cik": 1051470,
+  "company": "Crown Castle",
+  "latest": {
+    "accession": "0001051470-26-000074",
+    "filed": "2026-08-05",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.22,
+        "prior_year": 0.67,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 94000000,
+        "prior_year": 291000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 41000000,
+        "prior_year": 52000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1051470/000105147026000074/cci-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001051470-26-000059",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.34,
+          "prior_year": -1.07,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 151000000,
+          "prior_year": -464000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 49000000,
+          "prior_year": 50000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1051470/000105147026000059/cci-20260331.htm"
+    },
+    {
+      "accession": "0001051470-26-000074",
+      "filed": "2026-08-05",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.22,
+          "prior_year": 0.67,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 94000000,
+          "prior_year": 291000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 41000000,
+          "prior_year": 52000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1051470/000105147026000074/cci-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "CCI",
+  "updated": "2026-10-15"
+}

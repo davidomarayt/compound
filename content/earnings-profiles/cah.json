@@ -1,0 +1,67 @@
+{
+  "cik": 721371,
+  "company": "Cardinal Health",
+  "latest": {
+    "accession": "0000721371-26-000038",
+    "filed": "2026-08-11",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 7.23,
+        "prior_year": 6.45,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1714000000,
+        "prior_year": 1561000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 254248000000,
+        "prior_year": 222578000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/721371/000072137126000038/cah-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000721371-26-000038",
+      "filed": "2026-08-11",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 7.23,
+          "prior_year": 6.45,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1714000000,
+          "prior_year": 1561000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 254248000000,
+          "prior_year": 222578000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/721371/000072137126000038/cah-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "CAH",
+  "updated": "2026-10-15"
+}

@@ -1,0 +1,67 @@
+{
+  "cik": 726958,
+  "company": "Casey's",
+  "latest": {
+    "accession": "0000726958-26-000085",
+    "filed": "2026-09-08",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
+    "metrics": {
+      "diluted_eps": {
+        "current": 7.37,
+        "prior_year": 5.77,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 273720000,
+        "prior_year": 215355000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 5678336000,
+        "prior_year": 4567106000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/726958/000072695826000085/casy-20260731.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000726958-26-000085",
+      "filed": "2026-09-08",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 7.37,
+          "prior_year": 5.77,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 273720000,
+          "prior_year": 215355000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5678336000,
+          "prior_year": 4567106000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/726958/000072695826000085/casy-20260731.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "CASY",
+  "updated": "2026-10-15"
+}

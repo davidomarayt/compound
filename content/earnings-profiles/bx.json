@@ -1,0 +1,96 @@
+{
+  "cik": 1393818,
+  "company": "Blackstone Inc.",
+  "latest": {
+    "accession": "0001193125-26-340208",
+    "filed": "2026-08-07",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.54,
+        "prior_year": 0.98,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1229189000,
+        "prior_year": 764244000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 5043978000,
+        "prior_year": 3711900000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526340208/d158269d10q.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001193125-26-214609",
+      "filed": "2026-05-08",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.83,
+          "prior_year": 0.8,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 649729000,
+          "prior_year": 614852000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3617595000,
+          "prior_year": 3289458000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526214609/d60424d10q.htm"
+    },
+    {
+      "accession": "0001193125-26-340208",
+      "filed": "2026-08-07",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.54,
+          "prior_year": 0.98,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1229189000,
+          "prior_year": 764244000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5043978000,
+          "prior_year": 3711900000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526340208/d158269d10q.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "BX",
+  "updated": "2026-10-15"
+}

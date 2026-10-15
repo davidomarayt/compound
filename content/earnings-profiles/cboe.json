@@ -1,0 +1,96 @@
+{
+  "cik": 1374310,
+  "company": "Cboe Global Markets",
+  "latest": {
+    "accession": "0001628280-26-051239",
+    "filed": "2026-07-31",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.35,
+        "prior_year": 2.23,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 353100000,
+        "prior_year": 235100000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1442800000,
+        "prior_year": 1173500000,
+        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1374310/000162828026051239/cboe-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-029112",
+      "filed": "2026-05-01",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.66,
+          "prior_year": 2.37,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 385700000,
+          "prior_year": 250600000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1272800000,
+          "prior_year": 1195000000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1374310/000162828026029112/cboe-20260331.htm"
+    },
+    {
+      "accession": "0001628280-26-051239",
+      "filed": "2026-07-31",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.35,
+          "prior_year": 2.23,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 353100000,
+          "prior_year": 235100000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1442800000,
+          "prior_year": 1173500000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1374310/000162828026051239/cboe-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "CBOE",
+  "updated": "2026-10-15"
+}

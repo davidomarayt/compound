@@ -1,0 +1,67 @@
+{
+  "cik": 813672,
+  "company": "Cadence Design Systems",
+  "latest": {
+    "accession": "0000813672-26-000047",
+    "filed": "2026-05-01",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.23,
+        "prior_year": 1,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 335660000,
+        "prior_year": 273579000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1474220000,
+        "prior_year": 1242366000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/813672/000081367226000047/cdns-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000813672-26-000047",
+      "filed": "2026-05-01",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.23,
+          "prior_year": 1,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 335660000,
+          "prior_year": 273579000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1474220000,
+          "prior_year": 1242366000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/813672/000081367226000047/cdns-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "CDNS",
+  "updated": "2026-10-15"
+}

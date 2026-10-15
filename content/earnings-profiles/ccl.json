@@ -1,0 +1,125 @@
+{
+  "cik": 815097,
+  "company": "Carnival Corporation",
+  "latest": {
+    "accession": "0000815097-26-000107",
+    "filed": "2026-09-29",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.4,
+        "prior_year": 1.33,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1920000000,
+        "prior_year": 1852000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 8435000000,
+        "prior_year": 8153000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/815097/000081509726000107/ccl-20260831.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000815097-26-000037",
+      "filed": "2026-03-27",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.19,
+          "prior_year": -0.06,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 258000000,
+          "prior_year": -78000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6165000000,
+          "prior_year": 5810000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-02-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/815097/000081509726000037/ccl-20260228.htm"
+    },
+    {
+      "accession": "0000815097-26-000096",
+      "filed": "2026-06-26",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.39,
+          "prior_year": 0.42,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 537000000,
+          "prior_year": 565000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6663000000,
+          "prior_year": 6328000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/815097/000081509726000096/ccl-20260531.htm"
+    },
+    {
+      "accession": "0000815097-26-000107",
+      "filed": "2026-09-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.4,
+          "prior_year": 1.33,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1920000000,
+          "prior_year": 1852000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 8435000000,
+          "prior_year": 8153000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/815097/000081509726000107/ccl-20260831.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "CCL",
+  "updated": "2026-10-15"
+}
