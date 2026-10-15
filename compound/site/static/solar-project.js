@@ -83,23 +83,22 @@
   function update(){
     var second=get('faces').value==='2';
     root.querySelector('[data-sp-second]').hidden=!second;
-    var essential=['county','area','role','building','timing','roof','azimuth','pitch'];
+    // Readiness is for the essentials, not technical survey answers. The compass,
+    // electricity usage and installer extras are genuinely optional.
+    var essential=['county','area','role','building','timing','installerCount','name','email'];
     var complete=essential.filter(function(k){return show(k)!==''}).length;
-    var energy=show('demand')!==''||show('bill')!=='';
-    if(energy)complete++;
-    if(show('battery'))complete++;
-    if(show('installerCount'))complete++;
-    var total=essential.length+3,pct=Math.round(100*complete/total);
+    var total=essential.length,pct=Math.round(100*complete/total);
     root.querySelector('[data-sp-progress]').textContent=pct+'%';
     root.querySelector('[data-sp-progress-bar]').style.width=pct+'%';
     root.querySelector('[data-sp-progress-note]').textContent=pct===100?
-      'Your preliminary project profile is well described. A site survey is still required.':
-      (total-complete)+' key answers remaining. Unknown technical details are fine.';
+      'Key details complete. Your roof and energy answers will make this brief even more useful.':
+      (total-complete)+' key detail'+(total-complete===1?'':'s')+' remaining. Technical answers are optional.';
     var tags=[];
     if(show('county'))tags.push(show('county'));
     if(show('building'))tags.push(show('building'));
     if(show('azimuth'))tags.push(show('azimuth')+'° roof bearing');
     if(show('demand'))tags.push(number('demand')+' kWh annual use');
+    if(show('bill')&&!show('demand'))tags.push('€'+number('bill')+' monthly electricity bill');
     if(show('kwp'))tags.push(number('kwp')+' kWp proposed');
     if(show('timing'))tags.push(show('timing'));
     var el=root.querySelector('[data-sp-tags]');
@@ -107,89 +106,78 @@
     (tags.length?tags:['Add your location and solar needs']).forEach(function(t){var span=document.createElement('span');span.textContent=t;el.appendChild(span);});
     var out=[
       'SOLAR INSTALLATION QUOTE REQUEST — COMPOUND PROJECT BRIEF',
-      'Prepared by homeowner. Not a professional solar PV survey.',
+      'Prepared by homeowner; all technical details are provisional until surveyed.',
       '',
-      'PROPERTY',
+      'PROPERTY AND TIMING',
       mark('County',answer('county')),
-      mark('General area',answer('area')),
-      mark('Authorisation to proceed',answer('role')),
-      mark('Building type',answer('building')),
+      mark('Nearest town / area',answer('area')),
+      mark('Owner / authorised decision-maker',answer('role')),
+      mark('Property type',answer('building')),
       mark('Project type',answer('project')),
-      mark('Desired installation',answer('timing')),
-      mark('Budget indication',answer('budget')),
-      mark('Planning considerations',answer('protected')),
-      '',
-      'ROOF AND INSTALLATION SITE',
+      mark('Preferred installation timing',answer('timing')),
+      mark('Indicative budget',answer('budget'))
+    ];
+    if(show('protected') && show('protected')!=='Not sure')out.push(mark('Planning restrictions',show('protected')));
+    out.push('','ROOF AND INSTALLATION SITE',
       mark('Mounting type',answer('roof')),
       mark('Number of roof faces',get('faces').value==='unknown'?'Not sure':get('faces').value),
-      mark('Primary direction (clockwise from north)',show('azimuth')?answer('azimuth')+'°':'To be confirmed'),
-      mark('Primary pitch',show('pitch')?answer('pitch')+'°':'To be confirmed'),
-      mark('Primary usable area',show('areaM2')?number('areaM2')+' m²':'To be confirmed'),
-    ];
-    if(second)out.push(
-      mark('Second direction',show('azimuth2')?answer('azimuth2')+'°':'To be confirmed'),
-      mark('Second pitch',show('pitch2')?answer('pitch2')+'°':'To be confirmed'),
-      mark('Second usable area',show('areaM22')?number('areaM22')+' m²':'To be confirmed'));
-    out.push(
+      mark('Primary direction (clockwise from north)',show('azimuth')?answer('azimuth')+'°':'Not supplied — installer to survey'),
+      mark('Primary roof pitch',show('pitch')?answer('pitch')+'°':'Not supplied — installer to survey'),
       mark('Roof material',answer('material')),
-      mark('Visible shading',answer('shade')),
-      mark('Obstructions',answer('obstacles')),
-      mark('Roof condition',answer('roofCondition')),
-      mark('Storeys',answer('storeys')),
-      mark('Access or scaffolding',answer('access')),
-      '',
-      'ELECTRICITY AND HOUSEHOLD LOADS',
-      mark('Annual electricity demand',show('demand')?number('demand')+' kWh':'Not known'),
-      mark('Monthly bill',show('bill')?'€'+number('bill'):'Not known'),
-      mark('Use pattern',answer('daytime')),
-      mark('Meter',answer('smartMeter')),
-      mark('Phase',answer('phase')),
-      mark('Distribution board',answer('board')),
-      mark('EVs and planned charging',answer('ev')),
-      mark('Heat pump',answer('heatPump')),
-      mark('Immersion',answer('immersion')),
-      mark('Existing PV',answer('existingPV')),
-      '',
-      'QUOTE REQUIREMENTS',
-      mark('Desired PV capacity',show('kwp')?number('kwp')+' kWp':'Request installer recommendation'),
-      mark('Battery',get('battery').options[get('battery').selectedIndex].text),
-      mark('Preferred usable battery size',show('batteryKwh')?number('batteryKwh')+' kWh':'Installer to advise'),
-      mark('EV charger',answer('evCharger')),
-      mark('Immersion diverter',answer('diverter')),
-      mark('Backup capability',answer('backup')),
-      mark('Grant status',answer('grant')),
-      mark('Payment plan',answer('finance')),
-      mark('Existing quotes',answer('quotes')),
-      mark('Inverter / cable route',answer('cable')),
-      mark('Other requirements',answer('notes'))
-
+      mark('Visible shading',answer('shade'))
     );
+    if(second)out.push(
+      mark('Second direction',show('azimuth2')?answer('azimuth2')+'°':'Not supplied'),
+      mark('Second pitch',show('pitch2')?answer('pitch2')+'°':'Not supplied'));
+    if(show('areaM2'))out.push(mark('Approximate primary roof area',number('areaM2')+' m²'));
+    ['obstacles','roofCondition','storeys','access'].forEach(function(k){
+      if(show(k)&&show(k)!=='Not sure'){
+        var labels={obstacles:'Obstructions',roofCondition:'Roof condition',storeys:'Building height',access:'Access/scaffolding'};
+        out.push(mark(labels[k],show(k)));
+      }
+    });
+    out.push('','ELECTRICITY AND HOUSEHOLD LOADS');
+    if(show('demand'))out.push(mark('Annual electricity demand',number('demand')+' kWh'));
+    if(show('bill'))out.push(mark('Monthly electricity bill','€'+number('bill')));
+    if(!show('demand')&&!show('bill'))out.push('Electricity demand: To be confirmed');
+    out.push(mark('Use pattern',answer('daytime')),mark('EV plans',answer('ev')),mark('Heat pump',answer('heatPump')));
+    if(show('phase')&&show('phase')!=='Not sure')out.push(mark('Electricity supply',show('phase')));
+    out.push('','QUOTE REQUIREMENTS',
+      mark('Preferred PV size',show('kwp')?number('kwp')+' kWp':'Installer to recommend'),
+      mark('Battery',get('battery').options[get('battery').selectedIndex].text),
+      mark('Grant status',answer('grant')),
+      mark('Previous solar quotations',answer('quotes'))
+    );
+    if(show('batteryKwh'))out.push(mark('Preferred battery capacity',number('batteryKwh')+' kWh'));
+    ['evCharger','diverter','backup','finance'].forEach(function(k){
+      if(show(k)&&!['Not sure','Quote separately','Not essential / unsure'].includes(show(k))){
+        var labels={evCharger:'EV charger',diverter:'Hot-water diverter',backup:'Backup power',finance:'Funding'};
+        out.push(mark(labels[k],show(k)));
+      }
+    });
+    if(show('notes'))out.push(mark('Other requirements',show('notes')));
     if(get('faces').value!=='2' && snapshot && show('azimuth')===String(snapshot.azimuth) && show('pitch')===String(snapshot.pitch)){
       out.push('Indicative compass model (not installer-certified): '+
         (Number.isFinite(snapshot.annual)?Math.round(snapshot.annual).toLocaleString('en-IE')+' kWh/year':'not available')+
         ' at '+snapshot.azimuth+'° and '+snapshot.pitch+'° pitch.');
     }
-    if(get('faces').value==='2')out.push('Two roof faces selected: individual face yields cannot be added without allocating the total proposed kWp between faces. Installer to model the combined layout.');
+    if(second)out.push('Two roof faces: installer to model production across both slopes; do not double-count full-array output.');
     out.push('','HOMEOWNER CONTACT / REQUEST PREFERENCES',
-      mark('Number of installers requested',answer('installerCount')),
+      mark('Preferred number of installers',answer('installerCount')),
       mark('Contact method',answer('contactMethod')),
       mark('Name',answer('name')),
       mark('Email',answer('email')),
       mark('Phone',answer('phone')),
-      mark('Eircode (only share privately with chosen provider)',answer('eircode')),
       '',
-      'PLEASE QUOTE ON THE SAME ASSUMPTIONS:',
-      '• Panels: proposed quantity, power and model; array size and roof-face layout.',
-      '• Inverter: model, capacity and any generation/export limits.',
-      '• Roof mounting, scaffolding, wiring, meter/consumer-unit work and exclusions.',
-      '• Annual generation projection and assumptions about roof, shade and system loss.',
-      '• Solar-only price and solar-plus-battery price separately (where relevant).',
-      '• Gross installed price before grants, grants assumed, applicable VAT and net price.',
-      '• Warranties, expected maintenance, monitoring, certifications and aftercare.',
-      '• SEAI registration, grant/NC6 paperwork, terms, lead time and payment schedule.',
+      'REQUEST COMPARABLE WRITTEN PROPOSALS INCLUDING:',
+      '• PV panels, inverter, mounting and any battery equipment.',
+      '• Estimated annual production with roof and shading assumptions.',
+      '• Total installed price, scaffolding, electrical work, VAT, grants and exclusions.',
+      '• Workmanship and equipment warranties, monitoring and aftercare.',
+      '• Timelines, SEAI registration, grid paperwork and payment terms.',
       '',
-      'All facts supplied by homeowner. Final quote subject to survey and safety checks.',
-      'For private Compound review only if you choose to submit; otherwise this brief stays in your browser tab.'
+      'Homeowner-supplied details are indicative, not an installation survey.',
+      'Submission goes to Compound for private review; installer sharing requires separate consent.'
     );
     root.querySelector('[data-sb-output]').value=out.join('\n');
     root.querySelector('[data-sb-copy-status]').textContent='';
