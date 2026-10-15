@@ -410,6 +410,10 @@ jobs:
           grep -Fq 'data-solar-cta="bottom"' /tmp/solar-solar.html
           grep -Fq 'quote-ready.' /tmp/solar-solar.html
           grep -Fq 'data-solar-pilot-active="true"' /tmp/solar-solar-get-quotes.html
+          grep -Fq 'Send your solar project for secure review.' /tmp/solar-solar-get-quotes.html
+          test "$(grep -o 'data-sp-private-pilot-form' /tmp/solar-solar-get-quotes.html | wc -l)" -eq 1
+          ! grep -Fq 'data-sp-live-request' /tmp/solar-solar-get-quotes.html
+          ! grep -Fq 'data-sp-quote-form' /tmp/solar-solar-get-quotes.html
           fetch https://compound.ie/static/solar-home.css?v=1 /tmp/solar-home.css
           grep -Fq '.solh-hero-grid' /tmp/solar-home.css
           grep -Fq '/solar/compare-quotes/' /tmp/solar-solar.html
