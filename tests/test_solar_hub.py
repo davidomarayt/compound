@@ -172,19 +172,19 @@ def test_solar_quote_project_brief_is_private_and_comprehensive():
     assert 'data-solar-project' in page and 'data-solar-brief' in page
     assert 'data-sb-output' in page and 'data-sb-copy' in page
     for field in ("county", "role", "building", "timing", "azimuth", "pitch", "faces",
-                  "shade", "roofCondition", "material", "demand", "phase", "smartMeter",
-                  "kwp", "battery", "grant", "installerCount", "email", "phone", "eircode"):
+                  "shade", "roofCondition", "material", "demand", "phase", "area", "notes",
+                  "kwp", "battery", "grant", "installerCount", "email", "phone"):
         assert f'data-sp="{field}"' in page
-    # Project answers remain local unless the homeowner explicitly opts in to
-    # the private pilot. The public installer marketplace must stay disabled.
+    # Project answers remain local unless the homeowner explicitly submits.
+    # Homeowner intake is active but installer introductions and payments remain disabled.
     assert 'data-solar-pilot-active="true"' in page
     assert 'data-solar-leads-active="false"' in page
     assert 'data-sp-private-pilot-form' in page
     assert 'data-sp-private-pilot-consent' in page
     assert 'data-sp-private-pilot-submit' in page
-    assert 'No installer can view these pilot submissions' in page
+    assert 'no installer can view your details' in page
     assert 'data-sp-live-request hidden' in page
-    assert 'solar-project.css?v=2' in template and 'solar-project.js?v=2' in template
+    assert 'solar-project.css?v=3' in template and 'solar-project.js?v=3' in template
     assert "sessionStorage.getItem('compound_solar_project_compass_v1')" in js
     assert "sessionStorage.setItem('compound_solar_project_compass_v1'" in compass
     # No remote submission or local persistence of contact data.
@@ -215,6 +215,6 @@ def test_solar_project_uses_inline_compass_no_photograph_request():
     assert "compound:solar:orientation" in compass and "compound:solar:load" in compass
     assert "[data-solar-brief]:not([data-solar-project])" in hub
     assert "/static/solar-orientation.js?v=3" in layout
-    assert "/static/solar-project.js?v=2" in layout
+    assert "/static/solar-project.js?v=3" in layout
     assert "/static/solar-orientation.css?v=2" in layout
-    assert "/static/solar-project.css?v=2" in layout
+    assert "/static/solar-project.css?v=3" in layout
