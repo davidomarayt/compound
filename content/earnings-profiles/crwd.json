@@ -1,0 +1,96 @@
+{
+  "cik": 1535527,
+  "company": "CrowdStrike",
+  "latest": {
+    "accession": "0001535527-26-000031",
+    "filed": "2026-08-27",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2027,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.01,
+        "prior_year": -0.07,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 5306000,
+        "prior_year": -70153000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1470897000,
+        "prior_year": 1168952000,
+        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000031/crwd-20260731.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001535527-26-000025",
+      "filed": "2026-06-04",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.11,
+          "prior_year": -0.42,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 27774000,
+          "prior_year": -104264000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1385629000,
+          "prior_year": 1103434000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000025/crwd-20260430.htm"
+    },
+    {
+      "accession": "0001535527-26-000031",
+      "filed": "2026-08-27",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.01,
+          "prior_year": -0.07,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 5306000,
+          "prior_year": -70153000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1470897000,
+          "prior_year": 1168952000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1535527/000153552726000031/crwd-20260731.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "CRWD",
+  "updated": "2026-10-15"
+}

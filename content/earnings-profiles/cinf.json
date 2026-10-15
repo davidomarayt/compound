@@ -1,0 +1,96 @@
+{
+  "cik": 20286,
+  "company": "Cincinnati Financial",
+  "latest": {
+    "accession": "0000020286-26-000045",
+    "filed": "2026-07-27",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 8.05,
+        "prior_year": 4.34,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1255000000,
+        "prior_year": 685000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4274000000,
+        "prior_year": 3248000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/20286/000002028626000045/cinf-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000020286-26-000026",
+      "filed": "2026-04-27",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.75,
+          "prior_year": -0.57,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 274000000,
+          "prior_year": -90000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2863000000,
+          "prior_year": 2566000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/20286/000002028626000026/cinf-20260331.htm"
+    },
+    {
+      "accession": "0000020286-26-000045",
+      "filed": "2026-07-27",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 8.05,
+          "prior_year": 4.34,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1255000000,
+          "prior_year": 685000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4274000000,
+          "prior_year": 3248000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/20286/000002028626000045/cinf-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "CINF",
+  "updated": "2026-10-15"
+}

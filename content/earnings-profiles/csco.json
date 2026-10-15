@@ -1,0 +1,125 @@
+{
+  "cik": 858877,
+  "company": "Cisco",
+  "latest": {
+    "accession": "0000858877-26-000132",
+    "filed": "2026-09-02",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.33,
+        "prior_year": 2.55,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 13267000000,
+        "prior_year": 10180000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 63325000000,
+        "prior_year": 56654000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-25",
+    "source": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000858877-26-000021",
+      "filed": "2026-02-17",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.8,
+          "prior_year": 0.61,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 3175000000,
+          "prior_year": 2428000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 15349000000,
+          "prior_year": 13991000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-01-24",
+      "source": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000021/csco-20260124.htm"
+    },
+    {
+      "accession": "0000858877-26-000078",
+      "filed": "2026-05-19",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.85,
+          "prior_year": 0.62,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 3373000000,
+          "prior_year": 2491000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 15841000000,
+          "prior_year": 14149000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-25",
+      "source": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000078/csco-20260425.htm"
+    },
+    {
+      "accession": "0000858877-26-000132",
+      "filed": "2026-09-02",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.33,
+          "prior_year": 2.55,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 13267000000,
+          "prior_year": 10180000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 63325000000,
+          "prior_year": 56654000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-25",
+      "source": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "CSCO",
+  "updated": "2026-10-15"
+}

@@ -1,0 +1,125 @@
+{
+  "cik": 900075,
+  "company": "Copart",
+  "latest": {
+    "accession": "0001193125-26-405731",
+    "filed": "2026-09-29",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.55,
+        "prior_year": 1.59,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1484270000,
+        "prior_year": 1552449000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4666209000,
+        "prior_year": 4646958000,
+        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001193125-26-088593",
+      "filed": "2026-03-03",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.36,
+          "prior_year": 0.4,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 350732000,
+          "prior_year": 387400000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1121674000,
+          "prior_year": 1163316000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-01-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/900075/000119312526088593/cprt-20260131.htm"
+    },
+    {
+      "accession": "0001193125-26-245578",
+      "filed": "2026-05-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.43,
+          "prior_year": 0.42,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 402401000,
+          "prior_year": 406609000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1237066000,
+          "prior_year": 1211716000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/900075/000119312526245578/cprt-20260430.htm"
+    },
+    {
+      "accession": "0001193125-26-405731",
+      "filed": "2026-09-29",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.55,
+          "prior_year": 1.59,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1484270000,
+          "prior_year": 1552449000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4666209000,
+          "prior_year": 4646958000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "CPRT",
+  "updated": "2026-10-15"
+}

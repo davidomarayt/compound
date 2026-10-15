@@ -1,23 +1,23 @@
 {
-  "already_verified": 0,
+  "already_verified": 2,
   "company_count": 500,
   "completed": false,
-  "created": 70,
-  "cursor": 90,
+  "created": 97,
+  "cursor": 120,
   "last_batch": {
-    "already_verified": 0,
+    "already_verified": 2,
     "checked": 30,
-    "created": 21,
-    "ineligible": 9,
+    "created": 27,
+    "ineligible": 1,
     "phase": "scan",
     "temporarily_unavailable": 0,
     "updated": 0
   },
   "last_run": "2026-10-15",
-  "no_eligible_filing": 20,
+  "no_eligible_filing": 21,
   "pending_retry": [],
   "permanently_unavailable": [],
-  "scanned": 90,
+  "scanned": 120,
   "updated": 0,
   "version": 1
 }
