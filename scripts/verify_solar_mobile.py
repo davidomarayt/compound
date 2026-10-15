@@ -203,6 +203,17 @@ def main() -> None:
                                             failures.append(f"{width}px {path}: calculator did not populate")
                                     if path == "/solar/get-quotes/":
                                         profile = page.locator("[data-solar-project]")
+                                        # One submission path: prevent the old hidden installer form returning.
+                                        if page.locator("form[data-sp-private-pilot-form]").count() != 1 or page.locator("[data-sp-live-request], [data-sp-quote-form]").count() != 0:
+                                            failures.append(f"{width}px {path}: duplicate homeowner submission form")
+                                        if not page.locator("[data-sp-private-pilot-form]").is_visible():
+                                            failures.append(f"{width}px {path}: secure homeowner submission is not visible")
+                                        if not page.locator("[data-sp-private-pilot-submit]").is_disabled():
+                                            failures.append(f"{width}px {path}: submission is enabled without consent")
+                                        page.locator("[data-sp-private-pilot-consent]").check()
+                                        if page.locator("[data-sp-private-pilot-submit]").is_disabled():
+                                            failures.append(f"{width}px {path}: consent did not enable submission")
+                                        page.locator("[data-sp-private-pilot-consent]").uncheck()
                                         if profile.count() != 1:
                                             failures.append(f"{width}px {path}: homeowner project form missing")
                                         if page.locator('[data-sp="county"]').count() != 1 or page.locator('[data-sp="email"]').count() != 1:
