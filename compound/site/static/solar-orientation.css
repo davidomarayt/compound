@@ -111,3 +111,85 @@
   .sor-chart-visual{padding:8px 7px 12px}
   .sor-chart-readout{padding:13px 6px 4px}
 }
+
+
+/* Samsung / Android chart resilience: real DOM columns, not a canvas surface.
+   Bars render even without JavaScript, then update when compass settings change. */
+.sor-shell .sor-canvas{
+  display:grid;
+  grid-template-columns:repeat(12,minmax(0,1fr));
+  align-items:stretch;
+  gap:clamp(3px,.8vw,9px);
+  width:100%;
+  height:225px;
+  min-height:185px;
+  padding:21px 5px 7px;
+  border:0;
+  background:#102b29;
+  color-scheme:only light;
+  overflow:hidden;
+}
+.sor-shell .sor-canvas-month{
+  appearance:none;
+  -webkit-appearance:none;
+  display:flex;
+  min-width:0;
+  height:100%;
+  flex-direction:column;
+  justify-content:stretch;
+  align-items:stretch;
+  gap:9px;
+  border:0;
+  border-radius:4px;
+  background:transparent;
+  color:#eaf3e8;
+  cursor:pointer;
+  padding:0;
+  text-align:center;
+}
+.sor-shell .sor-canvas-track{
+  flex:1 1 auto;
+  display:flex;
+  min-width:0;
+  min-height:0;
+  align-items:flex-end;
+  justify-content:center;
+  border-bottom:1px solid #73998b;
+  background:linear-gradient(to top,rgba(68,119,105,.18),transparent 80%);
+}
+.sor-shell .sor-canvas-fill{
+  display:block;
+  width:100%;
+  max-width:33px;
+  min-height:4px;
+  border:1px solid #b8ff92;
+  border-radius:4px 4px 1px 1px;
+  background:linear-gradient(180deg,#b8ff92,#48d9ab);
+  box-shadow:0 0 8px rgba(125,234,156,.12);
+  transition:height .16s ease;
+  flex:none;
+}
+.sor-shell .sor-canvas-month[aria-pressed="true"] .sor-canvas-fill{
+  border-color:#fff2b1;
+  background:linear-gradient(180deg,#fff3ae,#e5b85f);
+  box-shadow:0 0 10px rgba(255,235,161,.3);
+}
+.sor-shell .sor-canvas-month-label{
+  flex:none;
+  min-height:16px;
+  color:#e1f0e8;
+  font:700 10px/16px system-ui,sans-serif;
+  white-space:nowrap;
+  text-align:center;
+}
+.sor-shell .sor-canvas-month:hover .sor-canvas-month-label,
+.sor-shell .sor-canvas-month[aria-pressed="true"] .sor-canvas-month-label{color:#fff2b1}
+.sor-shell .sor-canvas-month:focus-visible{outline:2px solid #fff2b1;outline-offset:1px}
+@media(max-width:430px){
+  .sor-shell .sor-canvas{height:205px;gap:3px;padding:14px 2px 6px}
+  .sor-shell .sor-canvas-month{gap:6px}
+  .sor-shell .sor-canvas-month-label{font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){
+  .sor-shell .sor-canvas-fill{transition:none}
+}
