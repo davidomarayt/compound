@@ -36,10 +36,6 @@
 .solh-preview-note strong{display:block;font-size:12px;margin-bottom:7px}
 .solh-preview-note p{font-size:12px;color:#54665b;line-height:1.6}
 .solh-preview-foot{font-size:10px;color:#687769;margin-top:14px!important}
-.solh-pilot{margin-top:calc(-1 * clamp(30px,4vw,55px));display:flex;gap:13px;align-items:flex-start;padding:17px 21px;background:#f5f8f5;border:1px solid #d8e4da;border-radius:9px}
-.solh-pilot-mark{display:grid;place-items:center;flex:0 0 21px;height:21px;border-radius:50%;background:#dbe8db;font-family:Georgia,serif;font-size:14px;font-weight:700;color:#31583e}
-.solh-pilot>div{font-size:12px;line-height:1.7;color:#526359}
-.solh-pilot strong{color:#263c2d}
 .solh-section-intro{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:25px}
 .solh-section-intro>div{min-width:0}
 .solh-section-intro h2,.solh-grants h2{font-size:clamp(30px,3.45vw,49px);line-height:1.15;margin:7px 0 0}
@@ -112,7 +108,6 @@
  .solh-hero-checks{margin-top:20px}
  .solh-preview{padding:21px}
  .solh-preview h2{font-size:23px}
- .solh-pilot{margin-top:-22px}
  .solh-section-intro{display:block}
  .solh-section-intro>p{margin-top:12px;max-width:100%}
  .solh-steps,.solh-benefit-grid,.solh-resource-grid{grid-template-columns:minmax(0,1fr)}
@@ -135,6 +130,5 @@
  .solh-hero{padding:20px 16px}
  .solh-hero h1{font-size:36px}
  .solh-grant-figures{grid-template-columns:1fr}
- .solh-pilot{padding:14px}
 }
 @media(prefers-reduced-motion:reduce){.solh-primary-cta,.solh-resource{transition:none}}
