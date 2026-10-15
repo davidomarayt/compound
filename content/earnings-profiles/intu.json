@@ -1,0 +1,125 @@
+{
+  "cik": 896878,
+  "company": "Intuit",
+  "latest": {
+    "accession": "0000896878-26-000037",
+    "filed": "2026-09-09",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 16.46,
+        "prior_year": 13.67,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 4566000000,
+        "prior_year": 3869000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 21448000000,
+        "prior_year": 18831000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000037/intu-20260731.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000896878-26-000014",
+      "filed": "2026-02-26",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.48,
+          "prior_year": 1.67,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 693000000,
+          "prior_year": 471000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4651000000,
+          "prior_year": 3963000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-01-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000014/intu-20260131.htm"
+    },
+    {
+      "accession": "0000896878-26-000025",
+      "filed": "2026-05-20",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 11.09,
+          "prior_year": 10.02,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 3064000000,
+          "prior_year": 2820000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 8558000000,
+          "prior_year": 7754000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000025/intu-20260430.htm"
+    },
+    {
+      "accession": "0000896878-26-000037",
+      "filed": "2026-09-09",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 16.46,
+          "prior_year": 13.67,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 4566000000,
+          "prior_year": 3869000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 21448000000,
+          "prior_year": 18831000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000037/intu-20260731.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "INTU",
+  "updated": "2026-10-15"
+}

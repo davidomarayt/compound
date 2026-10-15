@@ -1,0 +1,96 @@
+{
+  "cik": 728535,
+  "company": "J.B. Hunt",
+  "latest": {
+    "accession": "0001437749-26-024397",
+    "filed": "2026-07-24",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.91,
+        "prior_year": 1.31,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 181034000,
+        "prior_year": 128624000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 3495296000,
+        "prior_year": 2928181000,
+        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/728535/000143774926024397/jbht20260630_10q.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001437749-26-013300",
+      "filed": "2026-04-24",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.49,
+          "prior_year": 1.17,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 141553000,
+          "prior_year": 117740000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3056491000,
+          "prior_year": 2921392000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/728535/000143774926013300/jbht20260331_10q.htm"
+    },
+    {
+      "accession": "0001437749-26-024397",
+      "filed": "2026-07-24",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.91,
+          "prior_year": 1.31,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 181034000,
+          "prior_year": 128624000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3495296000,
+          "prior_year": 2928181000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/728535/000143774926024397/jbht20260630_10q.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "JBHT",
+  "updated": "2026-10-15"
+}

@@ -1,0 +1,67 @@
+{
+  "cik": 833444,
+  "company": "Johnson Controls",
+  "latest": {
+    "accession": "0000833444-26-000050",
+    "filed": "2026-05-06",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1,
+        "prior_year": 0.72,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 613000000,
+        "prior_year": 478000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 6142000000,
+        "prior_year": 5676000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/833444/000083344426000050/jci-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000833444-26-000050",
+      "filed": "2026-05-06",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1,
+          "prior_year": 0.72,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 613000000,
+          "prior_year": 478000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6142000000,
+          "prior_year": 5676000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/833444/000083344426000050/jci-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "JCI",
+  "updated": "2026-10-15"
+}

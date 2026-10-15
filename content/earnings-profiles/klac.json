@@ -1,0 +1,96 @@
+{
+  "cik": 319201,
+  "company": "KLA Corporation",
+  "latest": {
+    "accession": "0000319201-26-000027",
+    "filed": "2026-08-06",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.66,
+        "prior_year": 3.04,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 4830771000,
+        "prior_year": 4061643000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 13579476000,
+        "prior_year": 12156162000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000319201-26-000016",
+      "filed": "2026-04-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 9.12,
+          "prior_year": 8.16,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1200990000,
+          "prior_year": 1088416000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3415078000,
+          "prior_year": 3063029000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/319201/000031920126000016/klac-20260331.htm"
+    },
+    {
+      "accession": "0000319201-26-000027",
+      "filed": "2026-08-06",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.66,
+          "prior_year": 3.04,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 4830771000,
+          "prior_year": 4061643000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 13579476000,
+          "prior_year": 12156162000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "KLAC",
+  "updated": "2026-10-15"
+}

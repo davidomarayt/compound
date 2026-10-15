@@ -1,0 +1,96 @@
+{
+  "cik": 898293,
+  "company": "Jabil",
+  "latest": {
+    "accession": "0001628280-26-046138",
+    "filed": "2026-06-30",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.59,
+        "prior_year": 2.03,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 275000000,
+        "prior_year": 222000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 8751000000,
+        "prior_year": 7828000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-05-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/898293/000162828026046138/jbl-20260531.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-024148",
+      "filed": "2026-04-08",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.08,
+          "prior_year": 1.06,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 223000000,
+          "prior_year": 117000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 8282000000,
+          "prior_year": 6728000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-02-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/898293/000162828026024148/jbl-20260228.htm"
+    },
+    {
+      "accession": "0001628280-26-046138",
+      "filed": "2026-06-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.59,
+          "prior_year": 2.03,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 275000000,
+          "prior_year": 222000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 8751000000,
+          "prior_year": 7828000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/898293/000162828026046138/jbl-20260531.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "JBL",
+  "updated": "2026-10-15"
+}

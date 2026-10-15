@@ -1,0 +1,96 @@
+{
+  "cik": 779152,
+  "company": "Jack Henry & Associates",
+  "latest": {
+    "accession": "0000779152-26-000067",
+    "filed": "2026-08-28",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 6.98,
+        "prior_year": 6.24,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 502776000,
+        "prior_year": 455748000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2544339000,
+        "prior_year": 2375288000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/779152/000077915226000067/jkhy-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000779152-26-000025",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.71,
+          "prior_year": 1.52,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 122894000,
+          "prior_year": 111108000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 636245000,
+          "prior_year": 585087000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/779152/000077915226000025/jkhy-20260331.htm"
+    },
+    {
+      "accession": "0000779152-26-000067",
+      "filed": "2026-08-28",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 6.98,
+          "prior_year": 6.24,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 502776000,
+          "prior_year": 455748000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2544339000,
+          "prior_year": 2375288000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/779152/000077915226000067/jkhy-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "JKHY",
+  "updated": "2026-10-15"
+}

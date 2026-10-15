@@ -1,0 +1,67 @@
+{
+  "cik": 21344,
+  "company": "Coca-Cola Company (The)",
+  "latest": {
+    "accession": "0001628280-26-028802",
+    "filed": "2026-04-30",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.91,
+        "prior_year": 0.77,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 3924000000,
+        "prior_year": 3330000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 12472000000,
+        "prior_year": 11129000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-04-03",
+    "source": "https://www.sec.gov/Archives/edgar/data/21344/000162828026028802/ko-20260403.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-028802",
+      "filed": "2026-04-30",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.91,
+          "prior_year": 0.77,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 3924000000,
+          "prior_year": 3330000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 12472000000,
+          "prior_year": 11129000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/21344/000162828026028802/ko-20260403.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "KO",
+  "updated": "2026-10-15"
+}

@@ -1,0 +1,67 @@
+{
+  "cik": 1478242,
+  "company": "IQVIA",
+  "latest": {
+    "accession": "0001628280-26-030675",
+    "filed": "2026-05-05",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.61,
+        "prior_year": 1.4,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 274000000,
+        "prior_year": 249000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4151000000,
+        "prior_year": 3829000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1478242/000162828026030675/iqv-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-030675",
+      "filed": "2026-05-05",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.61,
+          "prior_year": 1.4,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 274000000,
+          "prior_year": 249000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4151000000,
+          "prior_year": 3829000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1478242/000162828026030675/iqv-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "IQV",
+  "updated": "2026-10-15"
+}

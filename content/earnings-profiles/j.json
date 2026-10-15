@@ -1,0 +1,96 @@
+{
+  "cik": 52988,
+  "company": "Jacobs Solutions",
+  "latest": {
+    "accession": "0001628280-26-052573",
+    "filed": "2026-08-04",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.15,
+        "prior_year": 1.55,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 136553000,
+        "prior_year": 179605000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4076410000,
+        "prior_year": 3031768000,
+        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-26",
+    "source": "https://www.sec.gov/Archives/edgar/data/52988/000162828026052573/jec-20260626.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-030528",
+      "filed": "2026-05-05",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.34,
+          "prior_year": 0.06,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -45883000,
+          "prior_year": 5612000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3694881000,
+          "prior_year": 2910415000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/52988/000162828026030528/jec-20260327.htm"
+    },
+    {
+      "accession": "0001628280-26-052573",
+      "filed": "2026-08-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.15,
+          "prior_year": 1.55,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 136553000,
+          "prior_year": 179605000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4076410000,
+          "prior_year": 3031768000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/52988/000162828026052573/jec-20260626.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "J",
+  "updated": "2026-10-15"
+}

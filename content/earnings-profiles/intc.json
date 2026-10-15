@@ -1,0 +1,96 @@
+{
+  "cik": 50863,
+  "company": "Intel",
+  "latest": {
+    "accession": "0000050863-26-000157",
+    "filed": "2026-07-24",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": -2.16,
+        "prior_year": -0.67,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": -11033000000,
+        "prior_year": -2918000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 16128000000,
+        "prior_year": 12859000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-27",
+    "source": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000157/intc-20260627.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000050863-26-000079",
+      "filed": "2026-04-24",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.73,
+          "prior_year": -0.19,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -3728000000,
+          "prior_year": -821000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 13577000000,
+          "prior_year": 12667000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000079/intc-20260328.htm"
+    },
+    {
+      "accession": "0000050863-26-000157",
+      "filed": "2026-07-24",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -2.16,
+          "prior_year": -0.67,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -11033000000,
+          "prior_year": -2918000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 16128000000,
+          "prior_year": 12859000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000157/intc-20260627.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "INTC",
+  "updated": "2026-10-15"
+}

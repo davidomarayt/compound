@@ -1,0 +1,67 @@
+{
+  "cik": 879169,
+  "company": "Incyte",
+  "latest": {
+    "accession": "0000879169-26-000026",
+    "filed": "2026-04-28",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.47,
+        "prior_year": 0.8,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 303330000,
+        "prior_year": 158203000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1272676000,
+        "prior_year": 1052898000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000026/incy-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000879169-26-000026",
+      "filed": "2026-04-28",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.47,
+          "prior_year": 0.8,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 303330000,
+          "prior_year": 158203000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1272676000,
+          "prior_year": 1052898000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000026/incy-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "INCY",
+  "updated": "2026-10-15"
+}

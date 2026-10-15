@@ -1,0 +1,96 @@
+{
+  "cik": 1035267,
+  "company": "Intuitive Surgical",
+  "latest": {
+    "accession": "0001035267-26-000058",
+    "filed": "2026-07-21",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.29,
+        "prior_year": 1.81,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 818100000,
+        "prior_year": 658400000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2892300000,
+        "prior_year": 2440000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000058/isrg-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001035267-26-000032",
+      "filed": "2026-04-22",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.28,
+          "prior_year": 1.92,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 821500000,
+          "prior_year": 698400000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2770800000,
+          "prior_year": 2253400000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000032/isrg-20260331.htm"
+    },
+    {
+      "accession": "0001035267-26-000058",
+      "filed": "2026-07-21",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.29,
+          "prior_year": 1.81,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 818100000,
+          "prior_year": 658400000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2892300000,
+          "prior_year": 2440000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000058/isrg-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "ISRG",
+  "updated": "2026-10-15"
+}

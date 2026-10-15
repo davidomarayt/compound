@@ -1,0 +1,96 @@
+{
+  "cik": 1637459,
+  "company": "Kraft Heinz",
+  "latest": {
+    "accession": "0001637459-26-000054",
+    "filed": "2026-08-05",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": -4.6,
+        "prior_year": -6.6,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": -5460000000,
+        "prior_year": -7824000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 6262000000,
+        "prior_year": 6352000000,
+        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-27",
+    "source": "https://www.sec.gov/Archives/edgar/data/1637459/000163745926000054/khc-20260627.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001637459-26-000022",
+      "filed": "2026-05-06",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.67,
+          "prior_year": 0.59,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 798000000,
+          "prior_year": 712000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6047000000,
+          "prior_year": 5999000000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/1637459/000163745926000022/khc-20260328.htm"
+    },
+    {
+      "accession": "0001637459-26-000054",
+      "filed": "2026-08-05",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -4.6,
+          "prior_year": -6.6,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -5460000000,
+          "prior_year": -7824000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6262000000,
+          "prior_year": 6352000000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/1637459/000163745926000054/khc-20260627.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "KHC",
+  "updated": "2026-10-15"
+}
