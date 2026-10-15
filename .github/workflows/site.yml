@@ -184,7 +184,7 @@ jobs:
           test -s public/static/solar-home.css
           grep -Fq '/static/solar-home.css?v=1' "$hub"
           grep -Fq 'Planning solar panels?' "$hub"
-          grep -Fq 'Currently accepting private project requests' "$hub"
+          grep -Fq 'Homeowner project submissions are open' "$hub"
           grep -Fq 'data-solar-cta="hero"' "$hub"
           grep -Fq 'data-solar-cta="steps"' "$hub"
           grep -Fq 'data-solar-cta="bottom"' "$hub"
@@ -195,7 +195,6 @@ jobs:
           grep -Fq 'Submit my solar project' "$intake"
           grep -Fq 'we will seek your separate permission' "$intake"
           grep -Fq 'Homeowner project submissions are open' "$hub"
-          grep -Fq 'data-solar-leads-active="false"' "$intake"
           grep -Fq 'data-solar-leads-active="false"' "$intake"
           grep -Fq 'data-sp-private-pilot-form' "$intake"
           grep -Fq '/static/solar-private-pilot.js?v=4' "$intake"
@@ -348,7 +347,7 @@ jobs:
           grep -Fq 'data-solar-cta="hero"' /tmp/solar-solar.html
           grep -Fq 'data-solar-cta="steps"' /tmp/solar-solar.html
           grep -Fq 'data-solar-cta="bottom"' /tmp/solar-solar.html
-          grep -Fq 'Currently accepting private project requests' /tmp/solar-solar.html
+          grep -Fq 'Homeowner project submissions are open' /tmp/solar-solar.html
           grep -Fq 'data-solar-pilot-active="true"' /tmp/solar-solar-get-quotes.html
           fetch https://compound.ie/static/solar-home.css?v=1 /tmp/solar-home.css
           grep -Fq '.solh-hero-grid' /tmp/solar-home.css
