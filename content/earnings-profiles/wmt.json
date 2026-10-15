@@ -1,0 +1,96 @@
+{
+  "cik": 104169,
+  "company": "Walmart",
+  "latest": {
+    "accession": "0000104169-26-000154",
+    "filed": "2026-08-28",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2027,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.8,
+        "prior_year": 0.88,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 6366000000,
+        "prior_year": 7026000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 186100000000,
+        "prior_year": 175750000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000154/wmt-20260731.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000104169-26-000102",
+      "filed": "2026-05-29",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.67,
+          "prior_year": 0.56,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 5330000000,
+          "prior_year": 4487000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 175684000000,
+          "prior_year": 163981000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000102/wmt-20260430.htm"
+    },
+    {
+      "accession": "0000104169-26-000154",
+      "filed": "2026-08-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.8,
+          "prior_year": 0.88,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 6366000000,
+          "prior_year": 7026000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 186100000000,
+          "prior_year": 175750000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000154/wmt-20260731.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "WMT",
+  "updated": "2026-10-15"
+}

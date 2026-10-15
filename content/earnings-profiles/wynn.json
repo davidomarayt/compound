@@ -1,0 +1,96 @@
+{
+  "cik": 1174922,
+  "company": "Wynn Resorts",
+  "latest": {
+    "accession": "0001174922-26-000055",
+    "filed": "2026-08-06",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.32,
+        "prior_year": 0.64,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 140062000,
+        "prior_year": 66218000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1856933000,
+        "prior_year": 1737797000,
+        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000055/wynn-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001174922-26-000035",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.04,
+          "prior_year": 0.69,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 120454000,
+          "prior_year": 72747000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1856762000,
+          "prior_year": 1700397000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000035/wynn-20260331.htm"
+    },
+    {
+      "accession": "0001174922-26-000055",
+      "filed": "2026-08-06",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.32,
+          "prior_year": 0.64,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 140062000,
+          "prior_year": 66218000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1856933000,
+          "prior_year": 1737797000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000055/wynn-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "WYNN",
+  "updated": "2026-10-15"
+}

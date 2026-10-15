@@ -1,0 +1,96 @@
+{
+  "cik": 823768,
+  "company": "Waste Management",
+  "latest": {
+    "accession": "0001104659-26-088016",
+    "filed": "2026-07-29",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.95,
+        "prior_year": 1.8,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 785000000,
+        "prior_year": 726000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 6684000000,
+        "prior_year": 6430000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/823768/000110465926088016/wm-20260630x10q.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001104659-26-051283",
+      "filed": "2026-04-29",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.79,
+          "prior_year": 1.58,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 723000000,
+          "prior_year": 637000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6227000000,
+          "prior_year": 6018000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/823768/000110465926051283/wm-20260331x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-088016",
+      "filed": "2026-07-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.95,
+          "prior_year": 1.8,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 785000000,
+          "prior_year": 726000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6684000000,
+          "prior_year": 6430000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/823768/000110465926088016/wm-20260630x10q.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "WM",
+  "updated": "2026-10-15"
+}

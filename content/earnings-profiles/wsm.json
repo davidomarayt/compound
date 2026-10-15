@@ -1,0 +1,96 @@
+{
+  "cik": 719955,
+  "company": "Williams-Sonoma, Inc.",
+  "latest": {
+    "accession": "0000719955-26-000208",
+    "filed": "2026-08-28",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.84,
+        "prior_year": 2,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 338109000,
+        "prior_year": 247562000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1959757000,
+        "prior_year": 1836760000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-02",
+    "source": "https://www.sec.gov/Archives/edgar/data/719955/000071995526000208/wsm-20260802.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000719955-26-000131",
+      "filed": "2026-05-22",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.93,
+          "prior_year": 1.85,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 231362000,
+          "prior_year": 231263000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1805456000,
+          "prior_year": 1730113000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/719955/000071995526000131/wsm-20260503.htm"
+    },
+    {
+      "accession": "0000719955-26-000208",
+      "filed": "2026-08-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.84,
+          "prior_year": 2,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 338109000,
+          "prior_year": 247562000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1959757000,
+          "prior_year": 1836760000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/719955/000071995526000208/wsm-20260802.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "WSM",
+  "updated": "2026-10-15"
+}

@@ -1,0 +1,67 @@
+{
+  "cik": 2115436,
+  "company": "ExxonMobil",
+  "latest": {
+    "accession": "0000034088-26-000093",
+    "filed": "2026-08-03",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.48,
+        "prior_year": 1.64,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 14525000000,
+        "prior_year": 7082000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 116017000000,
+        "prior_year": 81506000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/2115436/000003408826000093/xom-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000034088-26-000093",
+      "filed": "2026-08-03",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.48,
+          "prior_year": 1.64,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 14525000000,
+          "prior_year": 7082000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 116017000000,
+          "prior_year": 81506000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/2115436/000003408826000093/xom-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "XOM",
+  "updated": "2026-10-15"
+}

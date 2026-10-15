@@ -1,0 +1,96 @@
+{
+  "cik": 107263,
+  "company": "Williams Companies",
+  "latest": {
+    "accession": "0000107263-26-000026",
+    "filed": "2026-08-03",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.68,
+        "prior_year": 0.45,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 827000000,
+        "prior_year": 546000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 3379000000,
+        "prior_year": 3378000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/107263/000010726326000026/wmb-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000107263-26-000017",
+      "filed": "2026-05-04",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.7,
+          "prior_year": 0.56,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 865000000,
+          "prior_year": 691000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4718000000,
+          "prior_year": 4187000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/107263/000010726326000017/wmb-20260331.htm"
+    },
+    {
+      "accession": "0000107263-26-000026",
+      "filed": "2026-08-03",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.68,
+          "prior_year": 0.45,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 827000000,
+          "prior_year": 546000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3379000000,
+          "prior_year": 3378000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/107263/000010726326000026/wmb-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "WMB",
+  "updated": "2026-10-15"
+}

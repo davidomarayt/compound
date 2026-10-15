@@ -1,0 +1,96 @@
+{
+  "cik": 877212,
+  "company": "Zebra Technologies",
+  "latest": {
+    "accession": "0001628280-26-052550",
+    "filed": "2026-08-04",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 4.85,
+        "prior_year": 2.19,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 233000000,
+        "prior_year": 112000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1557000000,
+        "prior_year": 1293000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-04",
+    "source": "https://www.sec.gov/Archives/edgar/data/877212/000162828026052550/zbra-20260704.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-034109",
+      "filed": "2026-05-12",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.72,
+          "prior_year": 2.62,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 135000000,
+          "prior_year": 136000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1495000000,
+          "prior_year": 1308000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-04",
+      "source": "https://www.sec.gov/Archives/edgar/data/877212/000162828026034109/zbra-20260404.htm"
+    },
+    {
+      "accession": "0001628280-26-052550",
+      "filed": "2026-08-04",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.85,
+          "prior_year": 2.19,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 233000000,
+          "prior_year": 112000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1557000000,
+          "prior_year": 1293000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-04",
+      "source": "https://www.sec.gov/Archives/edgar/data/877212/000162828026052550/zbra-20260704.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "ZBRA",
+  "updated": "2026-10-15"
+}
