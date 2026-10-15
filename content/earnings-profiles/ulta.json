@@ -1,0 +1,96 @@
+{
+  "cik": 1403568,
+  "company": "Ulta Beauty",
+  "latest": {
+    "accession": "0001104659-26-102442",
+    "filed": "2026-08-27",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 6.55,
+        "prior_year": 5.78,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 282006000,
+        "prior_year": 260875000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 3035676000,
+        "prior_year": 2788469000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-01",
+    "source": "https://www.sec.gov/Archives/edgar/data/1403568/000110465926102442/ulta-20260801x10q.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001104659-26-069491",
+      "filed": "2026-06-02",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 7.74,
+          "prior_year": 6.7,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 340469000,
+          "prior_year": 305052000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3163857000,
+          "prior_year": 2848367000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/1403568/000110465926069491/ulta-20260502x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-102442",
+      "filed": "2026-08-27",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 6.55,
+          "prior_year": 5.78,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 282006000,
+          "prior_year": 260875000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3035676000,
+          "prior_year": 2788469000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-01",
+      "source": "https://www.sec.gov/Archives/edgar/data/1403568/000110465926102442/ulta-20260801x10q.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "ULTA",
+  "updated": "2026-10-15"
+}

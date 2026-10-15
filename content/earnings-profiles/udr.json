@@ -1,0 +1,67 @@
+{
+  "cik": 74208,
+  "company": "UDR, Inc.",
+  "latest": {
+    "accession": "0000074208-26-000049",
+    "filed": "2026-04-30",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.57,
+        "prior_year": 0.23,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 189831000,
+        "prior_year": 76720000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2528000,
+        "prior_year": 2112000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000049/udr-20260331x10q.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000074208-26-000049",
+      "filed": "2026-04-30",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.57,
+          "prior_year": 0.23,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 189831000,
+          "prior_year": 76720000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2528000,
+          "prior_year": 2112000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000049/udr-20260331x10q.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "UDR",
+  "updated": "2026-10-15"
+}

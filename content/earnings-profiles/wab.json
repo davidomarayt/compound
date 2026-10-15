@@ -1,0 +1,96 @@
+{
+  "cik": 943452,
+  "company": "Wabtec",
+  "latest": {
+    "accession": "0001628280-26-049139",
+    "filed": "2026-07-22",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.33,
+        "prior_year": 1.96,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 395000000,
+        "prior_year": 336000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 3179000000,
+        "prior_year": 2706000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828026049139/wab-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-026422",
+      "filed": "2026-04-22",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.12,
+          "prior_year": 1.88,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 362000000,
+          "prior_year": 322000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2950000000,
+          "prior_year": 2610000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828026026422/wab-20260331.htm"
+    },
+    {
+      "accession": "0001628280-26-049139",
+      "filed": "2026-07-22",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.33,
+          "prior_year": 1.96,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 395000000,
+          "prior_year": 336000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3179000000,
+          "prior_year": 2706000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828026049139/wab-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "WAB",
+  "updated": "2026-10-15"
+}

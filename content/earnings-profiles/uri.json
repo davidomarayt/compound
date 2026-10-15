@@ -1,0 +1,67 @@
+{
+  "cik": 1067701,
+  "company": "United Rentals",
+  "latest": {
+    "accession": "0001067701-26-000016",
+    "filed": "2026-04-22",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 8.43,
+        "prior_year": 7.91,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 531000000,
+        "prior_year": 518000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 929000000,
+        "prior_year": 893000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000016/uri-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001067701-26-000016",
+      "filed": "2026-04-22",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 8.43,
+          "prior_year": 7.91,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 531000000,
+          "prior_year": 518000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 929000000,
+          "prior_year": 893000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000016/uri-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "URI",
+  "updated": "2026-10-15"
+}

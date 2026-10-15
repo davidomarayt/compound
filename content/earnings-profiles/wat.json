@@ -1,0 +1,96 @@
+{
+  "cik": 1000697,
+  "company": "Waters Corporation",
+  "latest": {
+    "accession": "0001193125-26-344691",
+    "filed": "2026-08-11",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": -1.39,
+        "prior_year": 2.47,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": -136000000,
+        "prior_year": 147000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1645000000,
+        "prior_year": 771000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-04",
+    "source": "https://www.sec.gov/Archives/edgar/data/1000697/000119312526344691/d170082d10q.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001193125-26-219487",
+      "filed": "2026-05-12",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.87,
+          "prior_year": 2.03,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -72000000,
+          "prior_year": 121000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1267000000,
+          "prior_year": 662000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-04",
+      "source": "https://www.sec.gov/Archives/edgar/data/1000697/000119312526219487/d435723d10q.htm"
+    },
+    {
+      "accession": "0001193125-26-344691",
+      "filed": "2026-08-11",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -1.39,
+          "prior_year": 2.47,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -136000000,
+          "prior_year": 147000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1645000000,
+          "prior_year": 771000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-04",
+      "source": "https://www.sec.gov/Archives/edgar/data/1000697/000119312526344691/d170082d10q.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "WAT",
+  "updated": "2026-10-15"
+}

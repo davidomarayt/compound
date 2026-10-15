@@ -1,0 +1,125 @@
+{
+  "cik": 106040,
+  "company": "Western Digital",
+  "latest": {
+    "accession": "0001628280-26-057139",
+    "filed": "2026-08-14",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 24.28,
+        "prior_year": 5.12,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 9424000000,
+        "prior_year": 1889000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 12919000000,
+        "prior_year": 9520000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-03",
+    "source": "https://www.sec.gov/Archives/edgar/data/106040/000162828026057139/wdc-20260703.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-004207",
+      "filed": "2026-01-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.73,
+          "prior_year": 1.63,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1842000000,
+          "prior_year": 594000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3017000000,
+          "prior_year": 2409000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-01-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/106040/000162828026004207/wdc-20260102.htm"
+    },
+    {
+      "accession": "0001628280-26-029054",
+      "filed": "2026-05-01",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 8.2,
+          "prior_year": 1.42,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 3205000000,
+          "prior_year": 520000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3337000000,
+          "prior_year": 2294000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/106040/000162828026029054/wdc-20260403.htm"
+    },
+    {
+      "accession": "0001628280-26-057139",
+      "filed": "2026-08-14",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 24.28,
+          "prior_year": 5.12,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 9424000000,
+          "prior_year": 1889000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 12919000000,
+          "prior_year": 9520000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/106040/000162828026057139/wdc-20260703.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "WDC",
+  "updated": "2026-10-15"
+}

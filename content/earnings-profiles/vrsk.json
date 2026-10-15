@@ -1,0 +1,67 @@
+{
+  "cik": 1442145,
+  "company": "Verisk Analytics",
+  "latest": {
+    "accession": "0001437749-26-013729",
+    "filed": "2026-04-29",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.73,
+        "prior_year": 1.65,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 234200000,
+        "prior_year": 232300000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 782600000,
+        "prior_year": 753000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926013729/vrsk20260331_10q.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001437749-26-013729",
+      "filed": "2026-04-29",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.73,
+          "prior_year": 1.65,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 234200000,
+          "prior_year": 232300000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 782600000,
+          "prior_year": 753000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926013729/vrsk20260331_10q.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "VRSK",
+  "updated": "2026-10-15"
+}

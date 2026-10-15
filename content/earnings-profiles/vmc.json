@@ -1,0 +1,67 @@
+{
+  "cik": 1396009,
+  "company": "Vulcan Materials Company",
+  "latest": {
+    "accession": "0001628280-26-028318",
+    "filed": "2026-04-29",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.26,
+        "prior_year": 0.97,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 165500000,
+        "prior_year": 128900000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1755900000,
+        "prior_year": 1634600000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1396009/000162828026028318/vmc-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-028318",
+      "filed": "2026-04-29",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.26,
+          "prior_year": 0.97,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 165500000,
+          "prior_year": 128900000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1755900000,
+          "prior_year": 1634600000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1396009/000162828026028318/vmc-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "VMC",
+  "updated": "2026-10-15"
+}
