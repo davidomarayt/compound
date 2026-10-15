@@ -183,11 +183,13 @@ jobs:
           test -s "$intake"
           test -s public/static/solar-home.css
           grep -Fq '/static/solar-home.css?v=1' "$hub"
-          grep -Fq 'One solar form.' "$hub"
-          grep -Fq 'Multiple installer quotes.' "$hub"
+          grep -Fq 'Get your solar project' "$hub"
+          grep -Fq 'quote-ready.' "$hub"
           ! grep -Fq 'class="solh-pilot"' "$hub"
-          grep -Fq 'up to three solar installers' "$hub"
+          grep -Fq 'up to three companies' "$hub"
           grep -Fq 'How many installers would you like to hear from once matching opens?' "$intake"
+          grep -Fq 'Installer introductions are not yet available' "$intake"
+          grep -Fq 'Unmatched submissions are deleted after 90 days' "$intake"
           grep -Fq 'data-solar-cta="hero"' "$hub"
           grep -Fq 'data-solar-cta="steps"' "$hub"
           grep -Fq 'data-solar-cta="bottom"' "$hub"
@@ -197,7 +199,7 @@ jobs:
           grep -Fq 'Homeowner solar project submissions are now open' "$intake"
           grep -Fq 'Submit my solar project' "$intake"
           grep -Fq 'we will seek your separate permission' "$intake"
-          grep -Fq 'Multiple installer quotes.' "$hub"
+          grep -Fq 'quote-ready.' "$hub"
           grep -Fq 'data-solar-leads-active="false"' "$intake"
           grep -Fq 'data-sp-private-pilot-form' "$intake"
           grep -Fq '/static/solar-private-pilot.js?v=4' "$intake"
@@ -348,11 +350,11 @@ jobs:
           # Homeowner intake is the first action on the redesigned landing page.
           grep -Fq '/static/solar-home.css?v=1' /tmp/solar-solar.html
           ! grep -Fq 'class="solh-pilot"' /tmp/solar-solar.html
-          grep -Fq 'up to three solar installers' /tmp/solar-solar.html
+          grep -Fq 'up to three companies' /tmp/solar-solar.html
           grep -Fq 'data-solar-cta="hero"' /tmp/solar-solar.html
           grep -Fq 'data-solar-cta="steps"' /tmp/solar-solar.html
           grep -Fq 'data-solar-cta="bottom"' /tmp/solar-solar.html
-          grep -Fq 'Multiple installer quotes.' /tmp/solar-solar.html
+          grep -Fq 'quote-ready.' /tmp/solar-solar.html
           grep -Fq 'data-solar-pilot-active="true"' /tmp/solar-solar-get-quotes.html
           fetch https://compound.ie/static/solar-home.css?v=1 /tmp/solar-home.css
           grep -Fq '.solh-hero-grid' /tmp/solar-home.css
