@@ -203,7 +203,7 @@ jobs:
           grep -Fq 'How many installers would you like to hear from?' "$intake"
           grep -Fq 'Current availability:' "$intake"
           ! grep -Fq 'Installer introductions are not yet available, and we will seek your separate permission before any future matching' "$intake"
-          grep -Fq 'Unmatched submissions are deleted after 90 days' "$intake"
+          grep -Fq 'Privacy and 90-day retention details' "$intake"
           grep -Fq 'data-solar-cta="hero"' "$hub"
           grep -Fq 'data-solar-cta="steps"' "$hub"
           grep -Fq 'data-solar-cta="bottom"' "$hub"
