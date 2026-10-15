@@ -103,7 +103,7 @@ test('real Stripe charges require a separate explicit approval',()=>{
 const pilotRequest=()=>({
  county:'Meath',name:'Synthetic Test',email:'test@example.invalid',phone:'',
  requestedMax:2,contactMethod:'Email',privateConsent:true,pilotVersion:PILOT_CONSENT_VERSION,
- brief:{role:'Owner',timing:'Within 3 months',area:'Kells',notes:'Roof access issue',
+ brief:{role:'Owner',timing:'Within 3 months',area:'Kells',building:'Detached house',notes:'Roof access issue',
   unexpectedField:'drop me'}
 });
 test('private pilot request never authorises installer sharing and whitelists the brief',()=>{
@@ -120,6 +120,12 @@ test('private pilot requires standalone informed consent and quote-ready authori
  assert.throws(()=>normalizePrivatePilot({...pilotRequest(),privateConsent:false}),/Consent/);
  assert.throws(()=>normalizePrivatePilot({...pilotRequest(),brief:{role:'Not yet the decision-maker',timing:'Within 3 months'}}),/Only an owner/);
  assert.throws(()=>normalizePrivatePilot({...pilotRequest(),requestedMax:4}),/Select one/);
+});
+test('live homeowner intake rejects missing county-local details even if browser validation is bypassed',()=>{
+ const missingArea=pilotRequest(); delete missingArea.brief.area;
+ assert.throws(()=>normalizePrivatePilot(missingArea),/nearest town/);
+ const missingProperty=pilotRequest(); delete missingProperty.brief.building;
+ assert.throws(()=>normalizePrivatePilot(missingProperty),/property type/);
 });
 test('private pilot requires a separate launch switch',()=>{
  const value=process.env.SOLAR_PILOT_INTAKE_ENABLED;
