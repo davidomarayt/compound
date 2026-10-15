@@ -258,6 +258,28 @@ jobs:
           ! grep -Fq 'pagead2.googlesyndication.com' public/solar/installer-portal/index.html
           ! grep -Fq 'googletagmanager.com' public/solar/installer-portal/index.html
           ! grep -Fq '/solar/installer-portal/' public/sitemap.xml
+      - name: Verify homepage specialist hubs and source integrity
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s public/index.html
+          test -s public/static/home-hubs.css
+          test -s public/static/home-hubs.js
+          node --check compound/site/static/home-hubs.js
+          grep -Fq 'id="explore-compound"' public/index.html
+          grep -Fq '/static/home-hubs.css?v=1' public/index.html
+          grep -Fq '/static/home-hubs.js?v=1' public/index.html
+          test "$(grep -o 'class="home-hub-card"' public/index.html | wc -l)" -eq 4
+          test "$(grep -o 'data-home-hub="' public/index.html | wc -l)" -eq 8
+          grep -Fq 'Today’s News' public/index.html
+          grep -Fq 'Health, Wealth, Life.' public/index.html
+          grep -Fq 'Worth your time.' public/index.html
+          for slug in solar solar/get-quotes insurance pia stocks wealth/earnings wealth/how-to-start-investing-in-ireland health-insurance-cost-comparison-calculator; do
+            test -s "public/$slug/index.html"
+            grep -Fq "href=\"/$slug/\"" public/index.html
+          done
+          grep -Fq 'homepage_hub_click' public/static/home-hubs.js
+          grep -Fq 'compound_analytics_consent' public/static/home-hubs.js
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
@@ -297,6 +319,8 @@ jobs:
           python -m playwright install chromium
       - name: Audit every solar page at mobile and tablet widths
         run: python scripts/verify_solar_mobile.py
+      - name: Audit homepage specialist hubs at mobile and desktop widths
+        run: python scripts/verify_home_hubs_mobile.py
 
   verify-live:
     needs: deploy
@@ -354,6 +378,18 @@ jobs:
           grep -Fq 'was NOT included in Budget 2027' /tmp/energy-credit-proposal.html
           grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6115783809711785' /tmp/home.html
 
+          # Verify refreshed homepage and its four new specialist hubs.
+          fetch https://compound.ie/ /tmp/compound-home-hubs.html
+          grep -Fq 'id="explore-compound"' /tmp/compound-home-hubs.html
+          test "$(grep -o 'class="home-hub-card"' /tmp/compound-home-hubs.html | wc -l)" -eq 4
+          grep -Fq '/solar/get-quotes/' /tmp/compound-home-hubs.html
+          grep -Fq '/insurance/' /tmp/compound-home-hubs.html
+          grep -Fq '/pia/' /tmp/compound-home-hubs.html
+          grep -Fq '/wealth/earnings/' /tmp/compound-home-hubs.html
+          fetch https://compound.ie/static/home-hubs.css?v=1 /tmp/home-hubs-styles.css
+          grep -Fq '.home-hub-grid' /tmp/home-hubs-styles.css
+          fetch https://compound.ie/static/home-hubs.js?v=1 /tmp/home-hubs-events.js
+          grep -Fq 'homepage_hub_click' /tmp/home-hubs-events.js
           # Verify solar hub canonical URLs, on-page tools and AdSense script on the public domain.
           for slug in solar solar/compare-quotes solar/grants solar/costs solar/installers solar/get-quotes solar/for-installers solar/batteries solar/export-rates solar/equipment; do
             target="/tmp/solar-${slug//\//-}.html"
