@@ -214,7 +214,7 @@ def test_solar_project_uses_inline_compass_no_photograph_request():
     assert "compound:solar:orientation" in js and "compound:solar:load" in js
     assert "compound:solar:orientation" in compass and "compound:solar:load" in compass
     assert "[data-solar-brief]:not([data-solar-project])" in hub
-    assert "/static/solar-orientation.js?v=4" in layout
+    assert "/static/solar-orientation.js?v=5" in layout
     assert "/static/solar-project.js?v=3" in layout
     assert "/static/solar-orientation.css?v=2" in layout
     assert "/static/solar-project.css?v=3" in layout
@@ -225,3 +225,7 @@ def test_solar_project_uses_inline_compass_no_photograph_request():
         assert 'photovoltaic-geographic-information-system.ec.europa.eu' not in rendered
     assert 'window.open(' not in compass
     assert "q('request')" not in compass
+    assert "q('request').disabled" not in compass
+    assert "drawChart(profile)" in compass
+    mobile_audit = (ROOT / "scripts/verify_solar_mobile.py").read_text(encoding="utf-8")
+    assert "embedded monthly chart canvas is blank" in mobile_audit
