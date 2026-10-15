@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-10-13",
+  "snapshot_date": "2026-10-15",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -1105,6 +1105,28 @@
           "fees",
           "regulation",
           "beginners"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "How to Compare Solar Panel Quotes in Ireland (2026): Are You Paying Too Much?",
+        "url": "/wealth/compare-solar-panel-quotes-ireland/",
+        "source": "content/wealth/compare-solar-panel-quotes-ireland.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "compare-solar-panel-quotes-ireland",
+        "date": "2026-10-15",
+        "reviewed": "2026-10-15",
+        "tags": [
+          "solar",
+          "solar-panels",
+          "solar-pv",
+          "solar-quotes",
+          "solar-installers",
+          "seai-grant",
+          "solar-costs",
+          "home-energy",
+          "ireland"
         ],
         "status": "published"
       },

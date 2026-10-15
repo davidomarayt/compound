@@ -1,6 +1,6 @@
 # Compound.ie — Master Content and Title Register
 
-Snapshot: 2026-10-13 | Source: publishing branch
+Snapshot: 2026-10-15 | Source: publishing branch
 
 PURPOSE: Check this register before creating a new article, guide or calculator. Search by exact title, keyword, synonym and reader intent. If the topic is already answered, update its canonical page instead of publishing an SEO duplicate.
 
@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 165
+- Published editorial articles and guides: 166
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 112
+## Wealth articles and guides — 113
 
 - [Attic Conversion & Dormer Planning Permission Ireland](https://compound.ie/wealth/attic-conversion-dormer-planning-permission-ireland/)
 - [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/)
@@ -87,6 +87,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [How Much Should You Invest Each Month in Ireland?](https://compound.ie/wealth/how-much-to-invest-per-month-ireland/)
 - [How Pensions Work in Ireland: A Beginner’s Guide](https://compound.ie/wealth/how-pensions-work-ireland/)
 - [How to Choose an Investment Broker in Ireland](https://compound.ie/wealth/choose-investment-broker-ireland/)
+- [How to Compare Solar Panel Quotes in Ireland (2026): Are You Paying Too Much?](https://compound.ie/wealth/compare-solar-panel-quotes-ireland/)
 - [How to Diversify an Investment Portfolio in Ireland](https://compound.ie/wealth/diversification-portfolio-ireland/)
 - [How to Maintain an Investment Portfolio in Ireland](https://compound.ie/wealth/maintain-investment-portfolio-ireland/)
 - [How to Start Investing in Ireland: A Beginner’s Guide](https://compound.ie/wealth/how-to-start-investing-in-ireland/)

@@ -1,6 +1,6 @@
 # Compound.ie — Quick Editorial Topic Index
 
-Updated: 2026-10-13 | Automatically rebuilt from published source
+Updated: 2026-10-15 | Automatically rebuilt from published source
 
 **Before recommending a new article:** search this page by keyword, synonym,
 and reader question. An existing article or tool may already cover the idea.
@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 165 published articles and guides, 64 tools,
+**Included:** 166 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -68,6 +68,7 @@ For the complete register (including 510+ company profiles), open
 - [How Pensions Work in Ireland: A Beginner’s Guide](https://compound.ie/wealth/how-pensions-work-ireland/) — **Wealth**
 - [How to be happier: what the evidence actually says](https://compound.ie/life/how-to-be-happier-evidence-ireland/) — **Life**
 - [How to Choose an Investment Broker in Ireland](https://compound.ie/wealth/choose-investment-broker-ireland/) — **Wealth**
+- [How to Compare Solar Panel Quotes in Ireland (2026): Are You Paying Too Much?](https://compound.ie/wealth/compare-solar-panel-quotes-ireland/) — **Wealth**
 - [How to Diversify an Investment Portfolio in Ireland](https://compound.ie/wealth/diversification-portfolio-ireland/) — **Wealth**
 - [How to Get Out of a Rut: An Evidence-Based Reset for Your Life](https://compound.ie/life/how-to-get-out-of-a-rut/) — **Life**
 - [How to get Ozempic in Ireland: prescription, eligibility, cost and alternatives](https://compound.ie/health/how-to-get-ozempic-ireland/) — **Health**
