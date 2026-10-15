@@ -1,0 +1,96 @@
+{
+  "cik": 1086222,
+  "company": "Akamai Technologies",
+  "latest": {
+    "accession": "0001086222-26-000086",
+    "filed": "2026-08-07",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.52,
+        "prior_year": 0.71,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 79404000,
+        "prior_year": 103618000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1099682000,
+        "prior_year": 1043494000,
+        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1086222/000108622226000086/akam-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001086222-26-000058",
+      "filed": "2026-05-08",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.71,
+          "prior_year": 0.82,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 106319000,
+          "prior_year": 123171000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1073610000,
+          "prior_year": 1015139000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1086222/000108622226000058/akam-20260331.htm"
+    },
+    {
+      "accession": "0001086222-26-000086",
+      "filed": "2026-08-07",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.52,
+          "prior_year": 0.71,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 79404000,
+          "prior_year": 103618000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1099682000,
+          "prior_year": 1043494000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1086222/000108622226000086/akam-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "AKAM",
+  "updated": "2026-10-15"
+}

@@ -1,0 +1,125 @@
+{
+  "cik": 1090872,
+  "company": "Agilent Technologies",
+  "latest": {
+    "accession": "0001090872-26-000064",
+    "filed": "2026-09-01",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.28,
+        "prior_year": 1.18,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 362000000,
+        "prior_year": 336000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1878000000,
+        "prior_year": 1738000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1090872/000109087226000064/a-20260731.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001090872-26-000023",
+      "filed": "2026-03-03",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.07,
+          "prior_year": 1.11,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 305000000,
+          "prior_year": 318000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1798000000,
+          "prior_year": 1681000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-01-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1090872/000109087226000023/a-20260131.htm"
+    },
+    {
+      "accession": "0001090872-26-000055",
+      "filed": "2026-06-01",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.2,
+          "prior_year": 0.75,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 339000000,
+          "prior_year": 215000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1835000000,
+          "prior_year": 1668000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1090872/000109087226000055/a-20260430.htm"
+    },
+    {
+      "accession": "0001090872-26-000064",
+      "filed": "2026-09-01",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.28,
+          "prior_year": 1.18,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 362000000,
+          "prior_year": 336000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1878000000,
+          "prior_year": 1738000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1090872/000109087226000064/a-20260731.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "A",
+  "updated": "2026-10-15"
+}

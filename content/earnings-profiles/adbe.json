@@ -1,0 +1,125 @@
+{
+  "cik": 796343,
+  "company": "Adobe Inc.",
+  "latest": {
+    "accession": "0000796343-26-000156",
+    "filed": "2026-09-22",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 4.62,
+        "prior_year": 4.18,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1827000000,
+        "prior_year": 1772000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 6760000000,
+        "prior_year": 5988000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-28",
+    "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000156/adbe-20260828.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000796343-26-000056",
+      "filed": "2026-03-25",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.6,
+          "prior_year": 4.14,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1889000000,
+          "prior_year": 1811000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6398000000,
+          "prior_year": 5714000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-02-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000056/adbe-20260227.htm"
+    },
+    {
+      "accession": "0000796343-26-000112",
+      "filed": "2026-06-15",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.25,
+          "prior_year": 3.94,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1712000000,
+          "prior_year": 1691000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6618000000,
+          "prior_year": 5873000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-29",
+      "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000112/adbe-20260529.htm"
+    },
+    {
+      "accession": "0000796343-26-000156",
+      "filed": "2026-09-22",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.62,
+          "prior_year": 4.18,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1827000000,
+          "prior_year": 1772000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6760000000,
+          "prior_year": 5988000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000156/adbe-20260828.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "ADBE",
+  "updated": "2026-10-15"
+}

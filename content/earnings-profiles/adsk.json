@@ -1,0 +1,96 @@
+{
+  "cik": 769397,
+  "company": "Autodesk",
+  "latest": {
+    "accession": "0000769397-26-000061",
+    "filed": "2026-08-28",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2027,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.33,
+        "prior_year": 1.46,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 492000000,
+        "prior_year": 313000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2046000000,
+        "prior_year": 1763000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939726000061/adsk-20260731.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000769397-26-000044",
+      "filed": "2026-05-29",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.32,
+          "prior_year": 0.7,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 491000000,
+          "prior_year": 152000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1934000000,
+          "prior_year": 1633000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939726000044/adsk-20260430.htm"
+    },
+    {
+      "accession": "0000769397-26-000061",
+      "filed": "2026-08-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.33,
+          "prior_year": 1.46,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 492000000,
+          "prior_year": 313000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2046000000,
+          "prior_year": 1763000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/769397/000076939726000061/adsk-20260731.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "ADSK",
+  "updated": "2026-10-15"
+}

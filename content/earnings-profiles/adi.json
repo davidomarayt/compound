@@ -1,0 +1,125 @@
+{
+  "cik": 6281,
+  "company": "Analog Devices",
+  "latest": {
+    "accession": "0000006281-26-000073",
+    "filed": "2026-08-19",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.74,
+        "prior_year": 1.04,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1340090000,
+        "prior_year": 518518000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4021899000,
+        "prior_year": 2880348000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-01",
+    "source": "https://www.sec.gov/Archives/edgar/data/6281/000000628126000073/adi-20260801.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000006281-26-000016",
+      "filed": "2026-02-18",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.69,
+          "prior_year": 0.78,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 830826000,
+          "prior_year": 391316000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3160263000,
+          "prior_year": 2423174000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-01-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/6281/000000628126000016/adi-20260131.htm"
+    },
+    {
+      "accession": "0000006281-26-000052",
+      "filed": "2026-05-20",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.4,
+          "prior_year": 1.14,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1176350000,
+          "prior_year": 569770000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3623465000,
+          "prior_year": 2640068000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/6281/000000628126000052/adi-20260502.htm"
+    },
+    {
+      "accession": "0000006281-26-000073",
+      "filed": "2026-08-19",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.74,
+          "prior_year": 1.04,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1340090000,
+          "prior_year": 518518000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4021899000,
+          "prior_year": 2880348000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-01",
+      "source": "https://www.sec.gov/Archives/edgar/data/6281/000000628126000073/adi-20260801.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "ADI",
+  "updated": "2026-10-15"
+}
