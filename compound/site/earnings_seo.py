@@ -53,7 +53,7 @@ def build_earnings_seo(company: dict, report: dict | None) -> dict | None:
     latest = report.get("latest_figures") or {}
     if not latest.get("revenue") or not latest.get("diluted_eps") or not report.get("latest_source"):
         return None
-    fiscal = period + (" full-year" if period.endswith(" FY") else "")
+    fiscal = (period.replace(" FY", " Full-Year") if period.endswith(" FY") else period)
     title = f"{name} ({ticker}) {fiscal} Earnings: Revenue & EPS | Compound"
     headline = f"{name} ({ticker}) {fiscal} Earnings Results"
     description = (
