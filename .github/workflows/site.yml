@@ -48,7 +48,7 @@ jobs:
         run: |
           set -euo pipefail
           python -m pip install --disable-pip-version-check "pytest>=8,<10"
-          python -m pytest -q tests/test_earnings_seo.py tests/test_one_company_earnings.py
+          python -m pytest -q tests/test_earnings_seo.py tests/test_one_company_earnings.py tests/test_recent_earnings.py
           python - <<'PY'
           from pathlib import Path
           from compound.site.earnings_seo import ORDER, fiscal_period_display
@@ -57,6 +57,19 @@ jobs:
           sitemap = (root / "sitemap.xml").read_text()
           hub = (root / "wealth/earnings/index.html").read_text()
           assert 'Explore the latest earnings from leading companies' in hub
+          assert hub.count('data-earnings-recent-card') == 10
+          assert 'data-earnings-report-search' in hub
+          assert '/static/earnings-report-search.js?v=1' in hub
+          assert "10 most recently filed reports" in hub
+          import json, re
+          match = re.search(r'<script type="application/json" data-earnings-report-index>(.*?)</script>', hub, re.S)
+          assert match, "Missing searchable verified reports archive"
+          index = json.loads(match.group(1))
+          assert len(index) > 10, "Archive must include reports beyond ten most recent"
+          assert len({entry['url'] for entry in index}) == len(index), "Duplicate company URLs"
+          assert index == sorted(index, key=lambda entry: (
+              entry["filed"], entry["ended"], entry["ticker"]), reverse=True)
+          assert any(entry['ticker'] == 'NVDA' for entry in index)
           assert len(ORDER) == 20
           for ticker in ORDER:
               path = f"stocks/{ticker.lower()}/index.html"
@@ -365,6 +378,8 @@ jobs:
         run: python scripts/verify_home_hubs_mobile.py
       - name: Audit every solar page at mobile and tablet widths
         run: python scripts/verify_solar_mobile.py
+      - name: Audit ten recent earnings and search at mobile and desktop widths
+        run: python scripts/verify_earnings_search_mobile.py
 
   verify-live:
     needs: deploy
@@ -763,6 +778,11 @@ jobs:
 
           fetch https://compound.ie/wealth/earnings/ /tmp/earnings-hub.html
           grep -Fq 'Company earnings. One report per business.' /tmp/earnings-hub.html
+          test "$(grep -o 'data-earnings-recent-card' /tmp/earnings-hub.html | wc -l)" -eq 10
+          grep -Fq 'data-earnings-report-search' /tmp/earnings-hub.html
+          grep -Fq 'data-earnings-report-index' /tmp/earnings-hub.html
+          fetch https://compound.ie/static/earnings-report-search.js?v=1 /tmp/earnings-report-search.js
+          grep -Fq 'data-earnings-report-search' /tmp/earnings-report-search.js
           grep -Fq '<link rel="canonical" href="https://compound.ie/wealth/earnings/">' /tmp/earnings-hub.html
           grep -Fq 'not individually reviewed before publication' /tmp/earnings-hub.html
           grep -Fq 'earnings-directory.js?v=1' /tmp/earnings-hub.html

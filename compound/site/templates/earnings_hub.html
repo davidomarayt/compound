@@ -15,11 +15,29 @@
   </tbody></table></div>
 </section>
 {% endif %}
-<section class="earnings-section" aria-labelledby="earnings-latest"><div class="earnings-heading"><p class="eyebrow">ONE LIVE REPORT PER COMPANY</p><h2 id="earnings-latest">Latest company earnings</h2><span>{{ report_cards|length }} company report{{ '' if report_cards|length == 1 else 's' }}</span></div>
-<p class="earnings-lede">Each business has one constantly updated earnings dashboard. Its official fiscal Q1, Q2 and Q3 appear together when source-verified; Q3 versus Q2 and year-to-date progress are calculated only when comparable figures exist. A 2027 fiscal Q1 can end in 2026 — each card shows the actual period end.</p>
-{% if report_cards %}<div class="earnings-cards">
-{% for company in report_cards %}<article class="earnings-card"><p class="earnings-kicker">SEC-VERIFIED FINANCIAL REPORT · PERIOD ENDED {{ company.report.latest_end }}</p><h3><a href="{{ company.url }}">{{ company.name }} ({{ company.symbol }})</a></h3><p>Latest: <strong>{{ company.report.latest_label }}</strong> · {{ company.report.summary }}. Financial tables, quarter-on-quarter trends and original SEC filings on the same company page.</p><a class="earnings-read" href="{{ company.url }}">Open updating company report →</a></article>{% endfor %}
-</div>{% else %}<div class="earnings-empty"><h3>Awaiting verified company results</h3><p>Companies appear as their SEC 10-Q or 10-K filings pass source checks. No placeholder financial reports are created.</p></div>{% endif %}
+<section class="earnings-section" aria-labelledby="earnings-latest">
+  <div class="earnings-heading"><p class="eyebrow">ONE LIVE REPORT PER COMPANY</p><h2 id="earnings-latest">Latest company earnings</h2><span>10 most recently filed reports</span></div>
+  <p class="earnings-lede">The 10 most recently filed SEC-verified company reports appear below. Search all {{ report_total }} verified reports by company name or ticker; each company keeps one updating report.</p>
+  <div class="earnings-directory-controls earnings-report-controls">
+    <div><label for="earnings-report-search">Search all verified company earnings</label><input id="earnings-report-search" data-earnings-report-search type="search" placeholder="Company or ticker, e.g. Nvidia or NVDA" autocomplete="off" aria-controls="earnings-report-results"></div>
+  </div>
+  <p class="earnings-directory-count" data-earnings-report-status role="status" aria-live="polite">Showing 10 latest filings. Search to find earlier company reports.</p>
+  {% if report_cards %}
+  <div class="earnings-cards" data-earnings-recent>
+    {% for company in report_cards %}
+    <article class="earnings-card" data-earnings-recent-card>
+      <p class="earnings-kicker">SEC-VERIFIED FINANCIAL REPORT · FILED {{ company.report.latest_filed or 'Date unavailable' }}</p>
+      <h3><a href="{{ company.url }}">{{ company.name }} ({{ company.symbol }})</a></h3>
+      <p><strong>{{ company.report.latest_label }}</strong> · Period ended {{ company.report.latest_end }}. {{ company.report.summary }}. Financial tables and official SEC filing on the company page.</p>
+      <a class="earnings-read" href="{{ company.url }}">Open company earnings →</a>
+    </article>
+    {% endfor %}
+  </div>
+  <div class="earnings-cards" id="earnings-report-results" data-earnings-report-results hidden></div>
+  <script type="application/json" data-earnings-report-index>{{ report_search_index|tojson }}</script>
+  {% else %}
+  <div class="earnings-empty"><h3>Awaiting verified company results</h3><p>Companies appear as their SEC filings pass source checks. No placeholder financial reports are created.</p></div>
+  {% endif %}
 </section>
 <section class="earnings-section" aria-labelledby="earnings-sp500-title">
 <div class="earnings-heading"><p class="eyebrow">S&amp;P 500 COMPANY DIRECTORY</p><h2 id="earnings-sp500-title">Track the companies behind the index.</h2><span>{{ registry.company_count }} companies / {{ registry.security_count }} share classes</span></div>
@@ -38,4 +56,4 @@
 {% endif %}
 </section>
 <section class="earnings-section earnings-method" aria-labelledby="earnings-method"><div><p class="eyebrow">HOW IT WORKS</p><h2 id="earnings-method">Original figures. Clear limitations.</h2></div><div><p>These continuously updated company dashboards use SEC XBRL financial-statement data, not analyst forecasts. A quarter is only reported if standalone three-month figures are available. A 10-K is treated as a full-year report, not as a fourth-quarter release.</p><p>Some companies' earnings press releases appear days or weeks before their 10-Q or 10-K filings; this feed is not a real-time earnings-release wire. Financial data updates are deterministic and source-checked, but they are <strong>not individually reviewed before publication</strong>. Corrections: <a href="mailto:david@compound.ie">david@compound.ie</a>.</p><p>These results do not represent personalised investment advice or imply that any shares can be bought in a PIA. Read the official filing before making decisions.</p></div></section>
-</div><script src="/static/earnings-directory.js?v=1" defer></script>{% endblock %}
+</div><script src="/static/earnings-directory.js?v=1" defer></script><script src="/static/earnings-report-search.js?v=1" defer></script>{% endblock %}

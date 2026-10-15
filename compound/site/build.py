@@ -25,6 +25,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from compound.config import Settings
 from compound.site.pia import load_pia_tracker
 from compound.site.earnings_view import load_company_report
+from compound.site.earnings_archive import prepare_recent_earnings
 from compound.site.earnings_seo import PRIORITY as EARNINGS_SEO_PRIORITY, ORDER as EARNINGS_SEO_ORDER, build_earnings_seo, fiscal_period_display
 
 PILLARS = ["health", "wealth", "happiness"]
@@ -1290,7 +1291,7 @@ def build_site(settings: Settings) -> dict:
          "url": f'/stocks/{c["slug"]}/', "report": extra_dashboards[c["slug"]]}
         for c in extra_listed if extra_dashboards[c["slug"]]
     ]
-    archive_companies.sort(key=lambda c: c["report"]["latest_end"], reverse=True)
+    recent_earnings, report_search_index = prepare_recent_earnings(archive_companies, limit=10)
     # Curated internal links lead crawlers to substantive source-verified reports.
     archive_by_ticker = {c["symbol"].upper(): c for c in archive_companies}
     priority_earnings = [
@@ -1305,7 +1306,8 @@ def build_site(settings: Settings) -> dict:
     sector_names = sorted({c["sector"] for c in active_earnings_companies})
     _write(out / "wealth" / "earnings" / "index.html", env.get_template("earnings_hub.html").render(
         title="Company Earnings and Financial Results", pillar="wealth",
-        report_cards=archive_companies, priority_earnings=priority_earnings,
+        report_cards=recent_earnings, report_total=len(report_search_index),
+        report_search_index=report_search_index, priority_earnings=priority_earnings,
         ads_allowed=True, registry=earnings_registry,
         companies=active_earnings_companies, sectors=sector_names, report_counts=report_counts))
     # One directory of all public companies; do not visually segregate companies

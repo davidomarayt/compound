@@ -201,3 +201,7 @@ body.compound-tv-scroll-lock{overflow:hidden}
 .earnings-one-bar-track{height:16px;background:#f1ece6;overflow:hidden;border-radius:3px}
 .earnings-one-bar{height:100%;background:#78583e;border-radius:3px;min-width:0}
 @media(max-width:640px){.earnings-one-summary,.earnings-one-ytd{grid-template-columns:1fr}.earnings-one-chart{padding:14px}.earnings-one-chart-row{grid-template-columns:25px minmax(60px,1fr) 86px;gap:8px}.earnings-one-chart-row>strong{font-size:11px}.earnings-one-table-wrap{margin-inline:-2px}}
+
+/* Keep the latest earnings digest compact, including after dynamic searching. */
+.earnings-hub .earnings-cards[hidden]{display:none}
+.earnings-directory-controls.earnings-report-controls{grid-template-columns:minmax(0,1fr);max-width:700px}
