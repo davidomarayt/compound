@@ -1,0 +1,67 @@
+{
+  "cik": 91419,
+  "company": "J.M. Smucker Company (The)",
+  "latest": {
+    "accession": "0000091419-26-000080",
+    "filed": "2026-08-26",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.03,
+        "prior_year": -0.41,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 324300000,
+        "prior_year": -43900000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2219300000,
+        "prior_year": 2113300000,
+        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/91419/000009141926000080/sjm-20260731.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000091419-26-000080",
+      "filed": "2026-08-26",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.03,
+          "prior_year": -0.41,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 324300000,
+          "prior_year": -43900000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2219300000,
+          "prior_year": 2113300000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/91419/000009141926000080/sjm-20260731.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "SJM",
+  "updated": "2026-10-15"
+}

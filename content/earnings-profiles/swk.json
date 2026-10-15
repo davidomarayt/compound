@@ -1,0 +1,96 @@
+{
+  "cik": 93556,
+  "company": "Stanley Black & Decker",
+  "latest": {
+    "accession": "0000093556-26-000031",
+    "filed": "2026-07-29",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.33,
+        "prior_year": 0.67,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 351300000,
+        "prior_year": 101900000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 3960700000,
+        "prior_year": 3945200000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-04",
+    "source": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000031/swk-20260704.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000093556-26-000015",
+      "filed": "2026-04-29",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.39,
+          "prior_year": 0.6,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 59600000,
+          "prior_year": 90400000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3846400000,
+          "prior_year": 3744600000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-04",
+      "source": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000015/swk-20260404.htm"
+    },
+    {
+      "accession": "0000093556-26-000031",
+      "filed": "2026-07-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.33,
+          "prior_year": 0.67,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 351300000,
+          "prior_year": 101900000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3960700000,
+          "prior_year": 3945200000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-04",
+      "source": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000031/swk-20260704.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "SWK",
+  "updated": "2026-10-15"
+}

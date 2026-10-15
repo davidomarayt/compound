@@ -1,0 +1,96 @@
+{
+  "cik": 91440,
+  "company": "Snap-on",
+  "latest": {
+    "accession": "0000091440-26-000144",
+    "filed": "2026-07-23",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 4.96,
+        "prior_year": 4.72,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 260600000,
+        "prior_year": 250300000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1225800000,
+        "prior_year": 1170900000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-04",
+    "source": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000144/sna-20260704.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000091440-26-000109",
+      "filed": "2026-04-23",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.69,
+          "prior_year": 4.51,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 247000000,
+          "prior_year": 240500000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1198000000,
+          "prior_year": 1133300000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-04",
+      "source": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000109/sna-20260404.htm"
+    },
+    {
+      "accession": "0000091440-26-000144",
+      "filed": "2026-07-23",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.96,
+          "prior_year": 4.72,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 260600000,
+          "prior_year": 250300000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1225800000,
+          "prior_year": 1170900000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-04",
+      "source": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000144/sna-20260704.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "SNA",
+  "updated": "2026-10-15"
+}

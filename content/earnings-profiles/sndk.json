@@ -1,0 +1,125 @@
+{
+  "cik": 2023554,
+  "company": "Sandisk",
+  "latest": {
+    "accession": "0001628280-26-057406",
+    "filed": "2026-08-17",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 73.76,
+        "prior_year": -11.32,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 11433000000,
+        "prior_year": -1641000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 20248000000,
+        "prior_year": 7355000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-03",
+    "source": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026057406/sndk-20260703.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-004407",
+      "filed": "2026-01-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 5.15,
+          "prior_year": 0.72,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 803000000,
+          "prior_year": 104000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3025000000,
+          "prior_year": 1876000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-01-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026004407/sndk-20260102.htm"
+    },
+    {
+      "accession": "0001628280-26-029401",
+      "filed": "2026-05-01",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 23.03,
+          "prior_year": -13.33,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 3615000000,
+          "prior_year": -1933000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5950000000,
+          "prior_year": 1695000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026029401/sndk-20260403.htm"
+    },
+    {
+      "accession": "0001628280-26-057406",
+      "filed": "2026-08-17",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 73.76,
+          "prior_year": -11.32,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 11433000000,
+          "prior_year": -1641000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 20248000000,
+          "prior_year": 7355000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026057406/sndk-20260703.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "SNDK",
+  "updated": "2026-10-15"
+}

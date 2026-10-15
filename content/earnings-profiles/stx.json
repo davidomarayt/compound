@@ -1,0 +1,125 @@
+{
+  "cik": 1137789,
+  "company": "Seagate Technology",
+  "latest": {
+    "accession": "0001137789-26-000159",
+    "filed": "2026-08-04",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 13.9,
+        "prior_year": 6.77,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 3184000000,
+        "prior_year": 1469000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 12195000000,
+        "prior_year": 9097000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-03",
+    "source": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000159/stx-20260703.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001137789-26-000026",
+      "filed": "2026-01-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.6,
+          "prior_year": 1.55,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 593000000,
+          "prior_year": 336000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2825000000,
+          "prior_year": 2325000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-01-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000026/stx-20260102.htm"
+    },
+    {
+      "accession": "0001137789-26-000088",
+      "filed": "2026-04-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.27,
+          "prior_year": 1.57,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 748000000,
+          "prior_year": 340000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3112000000,
+          "prior_year": 2160000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000088/stx-20260403.htm"
+    },
+    {
+      "accession": "0001137789-26-000159",
+      "filed": "2026-08-04",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 13.9,
+          "prior_year": 6.77,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 3184000000,
+          "prior_year": 1469000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 12195000000,
+          "prior_year": 9097000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000159/stx-20260703.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "STX",
+  "updated": "2026-10-15"
+}

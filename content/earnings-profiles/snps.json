@@ -1,0 +1,125 @@
+{
+  "cik": 883241,
+  "company": "Synopsys",
+  "latest": {
+    "accession": "0000883241-26-000025",
+    "filed": "2026-08-26",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.84,
+        "prior_year": 1.5,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 545800000,
+        "prior_year": 242509000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2476822000,
+        "prior_year": 1739737000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/883241/000088324126000025/snps-20260731.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000883241-26-000014",
+      "filed": "2026-02-25",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.34,
+          "prior_year": 1.89,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 64958000,
+          "prior_year": 295683000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2408798000,
+          "prior_year": 1455315000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-01-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/883241/000088324126000014/snps-20260131.htm"
+    },
+    {
+      "accession": "0000883241-26-000018",
+      "filed": "2026-05-27",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.09,
+          "prior_year": 2.21,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 17105000,
+          "prior_year": 345332000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2275985000,
+          "prior_year": 1604266000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/883241/000088324126000018/snps-20260430.htm"
+    },
+    {
+      "accession": "0000883241-26-000025",
+      "filed": "2026-08-26",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.84,
+          "prior_year": 1.5,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 545800000,
+          "prior_year": 242509000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2476822000,
+          "prior_year": 1739737000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/883241/000088324126000025/snps-20260731.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "SNPS",
+  "updated": "2026-10-15"
+}

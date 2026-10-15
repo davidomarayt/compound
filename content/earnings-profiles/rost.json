@@ -1,0 +1,96 @@
+{
+  "cik": 745732,
+  "company": "Ross Stores",
+  "latest": {
+    "accession": "0000745732-26-000041",
+    "filed": "2026-09-01",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.66,
+        "prior_year": 1.56,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 851299000,
+        "prior_year": 507995000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 6264886000,
+        "prior_year": 5529152000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-01",
+    "source": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000041/rost-20260801.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000745732-26-000032",
+      "filed": "2026-06-02",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.02,
+          "prior_year": 1.47,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 649964000,
+          "prior_year": 479249000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6010476000,
+          "prior_year": 4984971000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000032/rost-20260502.htm"
+    },
+    {
+      "accession": "0000745732-26-000041",
+      "filed": "2026-09-01",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.66,
+          "prior_year": 1.56,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 851299000,
+          "prior_year": 507995000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6264886000,
+          "prior_year": 5529152000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-01",
+      "source": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000041/rost-20260801.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "ROST",
+  "updated": "2026-10-15"
+}

@@ -1,0 +1,67 @@
+{
+  "cik": 1757898,
+  "company": "Steris",
+  "latest": {
+    "accession": "0001628280-26-039136",
+    "filed": "2026-05-29",
+    "form": "10-K",
+    "fp": "FY",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 7.93,
+        "prior_year": 6.2,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 782300000,
+        "prior_year": 614600000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 5935900000,
+        "prior_year": 5459500000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1757898/000162828026039136/ste-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-039136",
+      "filed": "2026-05-29",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 7.93,
+          "prior_year": 6.2,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 782300000,
+          "prior_year": 614600000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5935900000,
+          "prior_year": 5459500000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1757898/000162828026039136/ste-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "STE",
+  "updated": "2026-10-15"
+}

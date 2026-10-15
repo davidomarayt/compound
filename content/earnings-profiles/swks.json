@@ -1,0 +1,125 @@
+{
+  "cik": 4127,
+  "company": "Skyworks Solutions",
+  "latest": {
+    "accession": "0000004127-26-000049",
+    "filed": "2026-07-28",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.22,
+        "prior_year": 0.7,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 33900000,
+        "prior_year": 105000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 934800000,
+        "prior_year": 965000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-03",
+    "source": "https://www.sec.gov/Archives/edgar/data/4127/000000412726000049/swks-20260703.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000004127-26-000008",
+      "filed": "2026-02-05",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.53,
+          "prior_year": 1,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 79200000,
+          "prior_year": 162000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1035400000,
+          "prior_year": 1068500000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-01-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/4127/000000412726000008/swks-20260102.htm"
+    },
+    {
+      "accession": "0000004127-26-000015",
+      "filed": "2026-05-05",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.24,
+          "prior_year": 0.43,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 35600000,
+          "prior_year": 68700000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 943700000,
+          "prior_year": 953200000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/4127/000000412726000015/swks-20260403.htm"
+    },
+    {
+      "accession": "0000004127-26-000049",
+      "filed": "2026-07-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.22,
+          "prior_year": 0.7,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 33900000,
+          "prior_year": 105000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 934800000,
+          "prior_year": 965000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/4127/000000412726000049/swks-20260703.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "SWKS",
+  "updated": "2026-10-15"
+}
