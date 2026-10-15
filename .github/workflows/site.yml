@@ -52,10 +52,19 @@ jobs:
           node --check compound/site/static/solar-lead-intake.js
           node --check compound/site/static/solar-private-pilot.js
           grep -Fq 'data-solar-project' public/solar/get-quotes/index.html
-          grep -Fq 'solar-project.js?v=2' public/solar/get-quotes/index.html
-          grep -Fq 'solar-project.css?v=2' public/solar/get-quotes/index.html
+          grep -Fq 'solar-project.js?v=3' public/solar/get-quotes/index.html
+          grep -Fq 'solar-project.css?v=3' public/solar/get-quotes/index.html
           grep -Fq 'data-orientation-embedded' public/solar/get-quotes/index.html
           grep -Fq 'data-sp-face-button="2"' public/solar/get-quotes/index.html
+          grep -Fq 'class="sol-project-optional"' public/solar/get-quotes/index.html
+          grep -Fq 'More roof or access details' public/solar/get-quotes/index.html
+          grep -Fq 'Additional system preferences' public/solar/get-quotes/index.html
+          grep -Fq 'data-sp="material"' public/solar/get-quotes/index.html
+          grep -Fq 'data-sp="demand"' public/solar/get-quotes/index.html
+          grep -Fq 'data-sp="battery"' public/solar/get-quotes/index.html
+          ! grep -Fq 'data-sp="board"' public/solar/get-quotes/index.html
+          ! grep -Fq 'data-sp="eircode"' public/solar/get-quotes/index.html
+          grep -Fq '/static/solar-lead-intake.js?v=2' public/solar/get-quotes/index.html
           ! grep -Fq 'sol-project-photo-guide' public/solar/get-quotes/index.html
           ! grep -Fq 'data-sp="photoRoof"' public/solar/get-quotes/index.html
 
@@ -184,7 +193,7 @@ jobs:
           grep -Fq 'data-solar-pilot-active="true"' "$intake"
           grep -Fq 'data-solar-leads-active="false"' "$intake"
           grep -Fq 'data-sp-private-pilot-form' "$intake"
-          grep -Fq '/static/solar-private-pilot.js?v=2' "$intake"
+          grep -Fq '/static/solar-private-pilot.js?v=3' "$intake"
           grep -Fq '/static/solar-funnel.js?v=20261015-1' "$hub"
           node --check compound/site/static/solar-private-pilot.js
           node --check compound/site/static/solar-funnel.js
@@ -354,7 +363,7 @@ jobs:
           grep -Fq 'data-sp-face-button="2"' /tmp/solar-solar-get-quotes.html
           ! grep -Fq 'sol-project-photo-guide' /tmp/solar-solar-get-quotes.html
           grep -Fq 'solar-orientation.js?v=3' /tmp/solar-solar-get-quotes.html
-          grep -Fq 'solar-project.js?v=2' /tmp/solar-solar-get-quotes.html
+          grep -Fq 'solar-project.js?v=3' /tmp/solar-solar-get-quotes.html
 
           fetch https://compound.ie/static/solar-research.js /tmp/solar-research.js
           grep -Fq 'data-solar-battery' /tmp/solar-research.js
