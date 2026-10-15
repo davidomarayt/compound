@@ -1,19 +1,19 @@
 ---
-title: "Solar Project Builder Ireland: Your Installation Quote Brief"
+title: "Solar Quote Request Ireland: Build Your Installation Project"
 canonical_path: /solar/get-quotes/
-meta_description: "Build a useful solar installer brief in Ireland with property details, a quick roof compass, electricity needs and battery preferences. Free and private."
+meta_description: "Submit a free solar installation project in Ireland: property, roof compass, electricity needs, budget and battery preferences. Secure homeowner enquiries are now open."
 ---
 <div class="sol-shell sol-subpage sol-project" data-solar-brief data-solar-project data-solar-leads-active="false" data-solar-pilot-active="true" data-solar-leads-api="https://compound-solar-api.vercel.app" data-turnstile-sitekey="">
   <nav class="sol-subcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/solar/">Solar</a> / <span aria-current="page">Solar project brief</span></nav>
   <header class="sol-project-hero">
-    <div><p class="sol-ey">COMPOUND SOLAR / PROJECT BUILDER</p><h1>One solar project. <em>Clearer quotes.</em></h1><p>Give installers the useful facts: your property, roof direction, electricity needs and installation plans. Most answers are quick selections. Technical details are optional, and you can always choose <strong>Not sure</strong>.</p>
-      <div class="sol-project-status"><span><strong>Free</strong> homeowner tool</span><span><strong>No account</strong> required</span><span><strong>Private</strong> until you choose to share</span></div>
+    <div><p class="sol-ey">COMPOUND SOLAR / PROJECT BUILDER</p><h1>Plan your solar installation. <em>Submit your project.</em></h1><p>Give installers the useful facts: your property, roof direction, electricity needs and installation plans. Most answers are quick selections. Technical details are optional, and you can always choose <strong>Not sure</strong>.</p>
+      <div class="sol-project-status"><span><strong>Free</strong> homeowner tool</span><span><strong>No account</strong> required</span><span><strong>Private</strong> Compound review</span></div>
     </div>
     <aside class="sol-project-progress" aria-live="polite"><span class="sol-ey">PROJECT READINESS</span><div class="sol-project-progress-score" data-sp-progress>0%</div><div class="sol-project-track"><span data-sp-progress-bar></span></div><p data-sp-progress-note>Complete the key details; advanced questions are optional.</p><small>Readiness measures your key project details, not roof suitability or quote eligibility.</small></aside>
   </header>
   <section class="sol-project-disclosure" aria-label="How this tool handles your information">
-    <strong><span aria-hidden="true">ⓘ</span> Private solar project submissions are being opened for the Compound Solar pilot.</strong>
-    <p>Your answers stay in this browser until you deliberately submit the private project request. If you submit, Compound securely stores your details for internal review. <strong>No installer can view these pilot submissions, and we will ask separately before sharing your project with an installer.</strong> You can still just copy your project brief.</p>
+    <strong><span aria-hidden="true">ⓘ</span> Homeowner solar project submissions are now open.</strong>
+    <p>Complete your project and submit it securely to Compound for review, or simply copy your brief. <strong>Installer introductions have not launched yet: no installer can view your details, and we will seek your separate permission before any future matching.</strong> Submitting does not guarantee an installer quotation. Your request will be removed after 90 days unless you ask us to delete it sooner.</p>
   </section>
   <div class="sol-project-navigation" aria-label="Project sections">
     <a href="#sol-project-home">01 Property</a><a href="#sol-project-roof">02 Roof</a><a href="#sol-project-energy">03 Electricity</a><a href="#sol-project-preferences">04 System</a><a href="#sol-project-contact">05 Sharing</a>
@@ -180,7 +180,7 @@ meta_description: "Build a useful solar installer brief in Ireland with property
 
       </section>
       <section class="sol-project-step" id="sol-project-contact" aria-labelledby="sol-project-contact-heading">
-        <div class="sol-project-step-head"><span>05 / HOMEOWNER CONTACT PREFERENCES</span><h2 id="sol-project-contact-heading">Decide how you'd like quotations.</h2><p>You can copy the brief for yourself or submit it privately to Compound for review. No installer will receive your details at this pilot stage.</p></div>
+        <div class="sol-project-step-head"><span>05 / HOMEOWNER CONTACT PREFERENCES</span><h2 id="sol-project-contact-heading">Submit your project to Compound.</h2><p>We are accepting homeowner enquiries now. Compound will review your request; installer introductions will be offered only after the network opens and you give separate permission.</p></div>
         <div class="sol-fields">
           <label>Preferred number of installers <select data-sp="installerCount"><option value="" selected>Select the number of quotes</option><option value="1">One installer only</option><option value="2">Up to 2 separate installers</option><option value="3">Up to 3 separate installers</option></select></label>
           <label>Preferred contact method <select data-sp="contactMethod"><option>Email</option><option>Phone</option><option>Either</option></select></label>
@@ -189,19 +189,19 @@ meta_description: "Build a useful solar installer brief in Ireland with property
           <label>Your phone (optional) <input data-sp="phone" type="tel" maxlength="35" autocomplete="tel" placeholder="+353…"></label>
         </div>
         <section class="sol-project-submit-card" data-sp-prelaunch-request aria-labelledby="solar-submit-heading">
-          <span class="sol-project-submit-eyebrow">COMPOUND SOLAR / PRIVATE PROJECT PILOT</span>
-          <h3 id="solar-submit-heading">Submit your solar project for quotations</h3>
-          <p>At this stage, your project goes <strong>only to Compound Solar for private review</strong>. We can contact you about next steps, but no installer can view or buy it. We will request separate permission before sharing anything with an installer.</p>
+          <span class="sol-project-submit-eyebrow">COMPOUND SOLAR / HOMEOWNER ENQUIRIES OPEN</span>
+          <h3 id="solar-submit-heading">Submit your solar project</h3>
+          <p>Your project will be securely received and reviewed by <strong>Compound only</strong>. We are not yet introducing homeowners to installers, so no immediate quotes are promised. We can contact you about your project, and will ask for separate consent before sharing anything with an installer.</p>
           <form data-sp-private-pilot-form novalidate>
             <label class="sol-project-wide-label sol-project-pilot-consent"><input type="checkbox" data-sp-private-pilot-consent required>
               I ask Compound Solar to securely store and review my project and contact me about my request. I understand that my details are not being shared with installers, and any future introduction requires my separate permission. I have read the <a href="/privacy/">privacy policy</a>.
             </label>
             <div class="sol-project-honeypot" aria-hidden="true"><label>Leave this blank<input data-sp-pilot-website name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
             <div class="sol-project-submit-actions">
-              <button class="sol-btn" data-sp-private-pilot-submit type="submit" disabled>Submit my project privately</button>
+              <button class="sol-btn" data-sp-private-pilot-submit type="submit" disabled>Submit my solar project</button>
               <a class="sol-project-submit-alternative" href="#sol-project-output">Copy my brief instead →</a>
             </div>
-            <p role="status" aria-live="polite" data-sp-private-pilot-status>Secure submissions are being prepared. Your details have not been sent.</p>
+            <p role="status" aria-live="polite" data-sp-private-pilot-status>Ready to receive your project securely. Nothing is sent until you submit.</p>
           </form>
         </section>
         <section data-sp-live-request hidden class="sol-project-disclosure" aria-labelledby="solar-quote-request-heading">
@@ -215,7 +215,7 @@ meta_description: "Build a useful solar installer brief in Ireland with property
           </form>
           <p>Contact details are never shown in the anonymous listing. This is only for the requested quotes, not newsletter subscriptions or unrelated marketing.</p>
         </section>
-        <p class="sol-project-help"><strong>Private pilot:</strong> When submission opens, only Compound can review your request. The number of installers selected is a preference, not permission to share your contact information. Before any future introduction, Compound will seek your separate permission. You can also use this tool only to copy your brief.</p>
+        <p class="sol-project-help"><strong>How it works today:</strong> Submissions are open for Compound review. Your preferred number of quotations is a preference, not permission to share your contact details. We are not yet matching installers. If matching becomes available, we will ask for separate permission before any introduction. <a href="/privacy/">Privacy and 90-day retention details</a>.</p>
       </section>
     </div>
     <aside class="sol-project-side" aria-label="Your project summary">
@@ -225,7 +225,7 @@ meta_description: "Build a useful solar installer brief in Ireland with property
     </aside>
   </section>
   <section class="sol-project-output" aria-labelledby="sol-project-output-heading">
-    <div class="sol-project-step-head"><span>YOUR REUSABLE QUOTE BRIEF</span><h2 id="sol-project-output-heading">Use one project brief for every quote.</h2><p>Review the draft below. You can copy it and contact SEAI-registered companies yourself, or submit your project privately for Compound to review. Pilot submissions are not shared with installers. This page does not load third-party advertising.</p></div>
+    <div class="sol-project-step-head"><span>YOUR REUSABLE QUOTE BRIEF</span><h2 id="sol-project-output-heading">Use one project brief for every quote.</h2><p>Review and copy this brief for your own records, or submit your project securely to Compound. Installer matching is not yet available and no submissions are shared with installers. This page does not load third-party advertising.</p></div>
     <textarea data-sb-output readonly rows="26" aria-label="Copy-ready solar installation project summary"></textarea>
     <div class="sol-project-output-actions"><button type="button" class="sol-btn" data-sb-copy>Copy my project brief</button><span role="status" aria-live="polite" data-sb-copy-status></span></div>
     <p class="sol-method">Some information might require a site survey or an electrician. Ask for itemised installed prices, panel and inverter models, realistic yield assumptions, battery capacity, scaffolding, grant handling, warranties, payment terms, exclusions and post-installation certification.</p>
