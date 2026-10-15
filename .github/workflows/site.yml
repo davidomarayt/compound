@@ -63,6 +63,12 @@ jobs:
           ! grep -Fq "window.open(" compound/site/static/solar-orientation.js
           ! grep -Fq "q('request')" compound/site/static/solar-orientation.js
           grep -Fq 'data-or="chart-amount"' public/solar/get-quotes/index.html
+          grep -Fq 'data-sor-month="0"' public/solar/get-quotes/index.html
+          grep -Fq 'data-sor-month="11"' public/solar/get-quotes/index.html
+          grep -Fq 'data-sor-month="0"' public/solar/roof-direction/index.html
+          grep -Fq 'data-sor-month="11"' public/solar/roof-direction/index.html
+          ! grep -Fq '<canvas data-or="chart"' public/solar/get-quotes/index.html
+          ! grep -Fq '<canvas data-or="chart"' public/solar/roof-direction/index.html
           grep -Fq 'class="sol-project-optional"' public/solar/get-quotes/index.html
           grep -Fq 'More roof or access details' public/solar/get-quotes/index.html
           grep -Fq 'Additional system preferences' public/solar/get-quotes/index.html
@@ -85,8 +91,8 @@ jobs:
               "new roof direction route": page.is_file() and page.stat().st_size > 0,
               "page canonical": page.is_file() and "https://compound.ie/solar/roof-direction/" in page.read_text(),
               "interactive compass": page.is_file() and "data-solar-orientation" in page.read_text(),
-              "calculator JavaScript": page.is_file() and "/static/solar-orientation.js?v=5" in page.read_text(),
-              "calculator stylesheet": page.is_file() and "/static/solar-orientation.css?v=2" in page.read_text(),
+              "calculator JavaScript": page.is_file() and "/static/solar-orientation.js?v=6" in page.read_text(),
+              "calculator stylesheet": page.is_file() and "/static/solar-orientation.css?v=3" in page.read_text(),
               "solar hub links to tool": hub.is_file() and "/solar/roof-direction/" in hub.read_text(),
               "sitemap indexable entry": sitemap.is_file() and "https://compound.ie/solar/roof-direction/" in sitemap.read_text(),
           }
@@ -380,7 +386,7 @@ jobs:
           grep -Fq 'data-or="dial"' /tmp/solar-solar-get-quotes.html
           grep -Fq 'data-sp-face-button="2"' /tmp/solar-solar-get-quotes.html
           ! grep -Fq 'sol-project-photo-guide' /tmp/solar-solar-get-quotes.html
-          grep -Fq 'solar-orientation.js?v=5' /tmp/solar-solar-get-quotes.html
+          grep -Fq 'solar-orientation.js?v=6' /tmp/solar-solar-get-quotes.html
           grep -Fq 'solar-project.js?v=3' /tmp/solar-solar-get-quotes.html
 
           fetch https://compound.ie/static/solar-research.js /tmp/solar-research.js
@@ -398,12 +404,19 @@ jobs:
           ! grep -Fq 'photovoltaic-geographic-information-system.ec.europa.eu' /tmp/solar-solar-get-quotes.html
           grep -Fq 'class="sor-canvas"' /tmp/solar-roof-direction.html
           grep -Fq 'data-or="chart-amount"' /tmp/solar-roof-direction.html
-          grep -Fq 'solar-orientation.js?v=5' /tmp/solar-roof-direction.html
-          grep -Fq 'solar-orientation.css?v=2' /tmp/solar-roof-direction.html
+          grep -Fq 'data-sor-month="0"' /tmp/solar-roof-direction.html
+          grep -Fq 'data-sor-month="11"' /tmp/solar-roof-direction.html
+          grep -Fq 'data-sor-month="0"' /tmp/solar-solar-get-quotes.html
+          grep -Fq 'data-sor-month="11"' /tmp/solar-solar-get-quotes.html
+          ! grep -Fq '<canvas data-or="chart"' /tmp/solar-solar-get-quotes.html
+          grep -Fq 'solar-orientation.js?v=6' /tmp/solar-roof-direction.html
+          grep -Fq 'solar-orientation.css?v=3' /tmp/solar-roof-direction.html
           grep -Fq '/solar/roof-direction/' /tmp/solar-solar.html
-          fetch https://compound.ie/static/solar-orientation.js?v=5 /tmp/solar-orientation-v2.js
-          fetch https://compound.ie/static/solar-orientation.css?v=2 /tmp/solar-orientation-v2.css
+          fetch https://compound.ie/static/solar-orientation.js?v=6 /tmp/solar-orientation-v2.js
+          fetch https://compound.ie/static/solar-orientation.css?v=3 /tmp/solar-orientation-v2.css
           grep -Fq 'function drawChart' /tmp/solar-orientation-v2.js
+          grep -Fq 'data-sor-month' /tmp/solar-orientation-v2.js
+          ! grep -Fq 'getContext(' /tmp/solar-orientation-v2.js
           grep -Fq 'color-scheme:only light' /tmp/solar-orientation-v2.css
 
           fetch https://compound.ie/ads.txt /tmp/ads.txt
