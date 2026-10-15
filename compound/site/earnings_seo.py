@@ -6,6 +6,9 @@ All quantitative statements come from the verified company dashboard.
 """
 from __future__ import annotations
 
+from datetime import date
+import re
+
 PRIORITY = {
     "AAPL": ("Apple", "iPhone, Services and geographic segment disclosures", ("MSFT", "GOOGL", "NVDA")),
     "MSFT": ("Microsoft", "Azure, productivity software and segment-level margins", ("GOOGL", "AMZN", "ORCL")),
@@ -31,6 +34,37 @@ PRIORITY = {
 
 ORDER = tuple(PRIORITY)
 
+_PERIOD_PATTERN = re.compile(r"^FY(?P<year>\d{4}) (?P<period>Q[123]|FY)$")
+
+
+def fiscal_period_display(report: dict) -> dict:
+    """Keep the fiscal label accurate while supplying the actual calendar end."""
+    match = _PERIOD_PATTERN.fullmatch(report["latest_label"])
+    if not match:
+        raise ValueError("Unrecognised verified fiscal period")
+    end = date.fromisoformat(report["latest_end"])
+    fy = int(match.group("year"))
+    fp = match.group("period")
+    annual = fp == "FY"
+    display = f"FY{fy} Full-Year" if annual else f"{fp} FY{fy}"
+    month_year = end.strftime("%B %Y")
+    is_cross_year = fy != end.year
+    readable_end = f"{end.day} {month_year}"
+    filed = report.get("latest_filed") or ""
+    filing_date = date.fromisoformat(filed) if filed else None
+    filing_readable = f"{filing_date.day} {filing_date.strftime('%B %Y')}" if filing_date else ""
+    filing_form = report.get("latest_form") or ("10-K" if annual else "10-Q")
+    period_type = "Fiscal year" if annual else "Quarter"
+    subtitle = f"{period_type} ended {readable_end}"
+    if filing_readable:
+        subtitle += f" · SEC {filing_form} filed {filing_readable}"
+    return {
+        "display": display, "month_year": month_year, "readable_end": readable_end,
+        "filing_readable": filing_readable, "is_cross_year": is_cross_year,
+        "title_calendar": f" ({month_year})" if is_cross_year else "",
+        "subtitle": subtitle, "annual": annual,
+    }
+
 
 def _move(label: str, value: float | None, kind: str) -> str | None:
     if value is None:
@@ -53,13 +87,17 @@ def build_earnings_seo(company: dict, report: dict | None) -> dict | None:
     latest = report.get("latest_figures") or {}
     if not latest.get("revenue") or not latest.get("diluted_eps") or not report.get("latest_source"):
         return None
-    fiscal = (period.replace(" FY", " Full-Year") if period.endswith(" FY") else period)
-    title = f"{name} ({ticker}) {fiscal} Earnings: Revenue & EPS | Compound"
-    headline = f"{name} ({ticker}) {fiscal} Earnings Results"
+    fiscal = fiscal_period_display(report)
+    label = fiscal["display"]
+    if fiscal["is_cross_year"]:
+        title = f"{name} {label} Earnings{fiscal['title_calendar']} | {ticker} Results"
+    else:
+        title = f"{name} {label} Earnings: Revenue & EPS | {ticker}"
+    headline = f"{name} {label} Earnings Results"
     description = (
-        f"{name} ({ticker}) {fiscal} results, period ended {report['latest_end']}: "
-        f"revenue {latest['revenue']}, diluted EPS {latest['diluted_eps']}. "
-        "SEC filings, year-on-year growth and fiscal-quarter trends."
+        f"{name} ({ticker}) {label} earnings, {fiscal['subtitle']}. "
+        f"Revenue {latest['revenue']}; diluted EPS {latest['diluted_eps']}. "
+        "SEC filings and growth comparisons."
     )
     # Retain precise reporting dates instead of presenting FY2027 as a future event.
     narrative = [
@@ -106,6 +144,10 @@ def build_earnings_seo(company: dict, report: dict | None) -> dict | None:
     return {
         "title": title, "headline": headline, "description": description[:240],
         "name": name, "ticker": ticker, "period": period,
+        "fiscal_display": fiscal["display"], "calendar_period": fiscal["month_year"],
+        "period_subtitle": fiscal["subtitle"], "readable_end": fiscal["readable_end"],
+        "calendar_year_differs": fiscal["is_cross_year"],
+        "hub_period": f"{fiscal['display']}{fiscal['title_calendar']}",
         "latest_end": report["latest_end"], "modified": report.get("updated") or report.get("latest_filed") or report["latest_end"],
         "latest_figures": latest, "movements": movements, "narrative": narrative,
         "caveat": caveat, "related": related_links, "source": report["latest_source"],
