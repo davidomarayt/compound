@@ -4550,12 +4550,6 @@
         "kind": "Information / policy page"
       },
       {
-        "title": "Solar Panels Ireland: Grants, Costs, Calculators & Quotes",
-        "url": "/solar/",
-        "source": "content/pages/solar.md",
-        "kind": "Information / policy page"
-      },
-      {
         "title": "Solar Panels, Inverters & Batteries Ireland: Equipment Guide",
         "url": "/solar-equipment/",
         "source": "content/pages/solar-equipment.md",
@@ -4571,6 +4565,12 @@
         "title": "Solar Quote Comparison Calculator Ireland",
         "url": "/solar-compare-quotes/",
         "source": "content/pages/solar-compare-quotes.md",
+        "kind": "Information / policy page"
+      },
+      {
+        "title": "Solar Quotes Ireland: Plan Your Installation & Compare Costs",
+        "url": "/solar/",
+        "source": "content/pages/solar.md",
         "kind": "Information / policy page"
       }
     ],
