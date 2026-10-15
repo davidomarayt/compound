@@ -6,14 +6,14 @@ meta_description: "Submit a free solar installation project in Ireland: property
 <div class="sol-shell sol-subpage sol-project" data-solar-brief data-solar-project data-solar-leads-active="false" data-solar-pilot-active="true" data-solar-leads-api="https://compound-solar-api.vercel.app" data-turnstile-sitekey="">
   <nav class="sol-subcrumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/solar/">Solar</a> / <span aria-current="page">Solar project brief</span></nav>
   <header class="sol-project-hero">
-    <div><p class="sol-ey">COMPOUND SOLAR / PROJECT BUILDER</p><h1>One project form. <em>More than one potential quote.</em></h1><p>Enter your solar plans once and choose whether you would eventually like <strong>one, two or three installers</strong> to contact you. The interactive roof compass helps describe your project; technical details are optional. <strong>We are collecting projects now, but matching installers has not started.</strong></p>
+    <div><p class="sol-ey">COMPOUND SOLAR / PROJECT BUILDER</p><h1>Tell us once. <em>Make your solar project quote-ready.</em></h1><p>Fill in your home, roof and energy details once, including our quick 360° roof compass. Choose whether you would eventually like <strong>one, two or three solar installers</strong> to contact you. We are taking homeowner project requests now, with technical questions optional.</p>
       <div class="sol-project-status"><span><strong>Free</strong> homeowner tool</span><span><strong>No account</strong> required</span><span><strong>Private</strong> Compound review</span></div>
     </div>
     <aside class="sol-project-progress" aria-live="polite"><span class="sol-ey">PROJECT READINESS</span><div class="sol-project-progress-score" data-sp-progress>0%</div><div class="sol-project-track"><span data-sp-progress-bar></span></div><p data-sp-progress-note>Complete the key details; advanced questions are optional.</p><small>Readiness measures your key project details, not roof suitability or quote eligibility.</small></aside>
   </header>
   <section class="sol-project-disclosure" aria-label="How this tool handles your information">
-    <strong><span aria-hidden="true">ⓘ</span> Homeowner solar project submissions are now open.</strong>
-    <p>Complete your project and submit it securely to Compound for review, or simply copy your brief. <strong>Installer introductions have not launched yet: no installer can view your details, and we will seek your separate permission before any future matching.</strong> Submitting does not guarantee an installer quotation. Your request will be removed after 90 days unless you ask us to delete it sooner.</p>
+    <strong>Homeowner solar project submissions are now open.</strong>
+    <p>Submit your project securely to Compound, or just copy the brief. <strong>Installer introductions are not yet available, and we will seek your separate permission before any future matching.</strong> No installer can view your request today and quotes are not guaranteed. Unmatched submissions are deleted after 90 days unless deleted sooner at your request.</p>
   </section>
   <div class="sol-project-navigation" aria-label="Project sections">
     <a href="#sol-project-home">01 Property</a><a href="#sol-project-roof">02 Roof</a><a href="#sol-project-energy">03 Electricity</a><a href="#sol-project-preferences">04 System</a><a href="#sol-project-contact">05 Sharing</a>
@@ -190,8 +190,8 @@ meta_description: "Submit a free solar installation project in Ireland: property
         </div>
         <section class="sol-project-submit-card" data-sp-prelaunch-request aria-labelledby="solar-submit-heading">
           <span class="sol-project-submit-eyebrow">COMPOUND SOLAR / HOMEOWNER ENQUIRIES OPEN</span>
-          <h3 id="solar-submit-heading">Submit once. Get ready to compare installers.</h3>
-          <p>Complete one detailed project brief rather than contacting several installers individually. <strong>Compound alone receives your submission for now.</strong> When installer matching becomes available, we can ask your permission to share it with up to your chosen number of installers so they may contact you. No quotes or introductions are available yet, and you are not agreeing to share your details today.</p>
+          <h3 id="solar-submit-heading">Your solar project is ready to submit.</h3>
+          <p>Submit your project once for Compound to review. If suitable installers join the network, we can ask your permission to introduce up to your selected number of companies. <strong>Your details are not shared today, and submission does not guarantee any quotation.</strong></p>
           <form data-sp-private-pilot-form novalidate>
             <label class="sol-project-wide-label sol-project-pilot-consent"><input type="checkbox" data-sp-private-pilot-consent required>
               I ask Compound Solar to securely store and review my project and contact me about my request. I understand that my details are not being shared with installers, and any future introduction requires my separate permission. I have read the <a href="/privacy/">privacy policy</a>.
