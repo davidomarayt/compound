@@ -1,0 +1,67 @@
+{
+  "cik": 49071,
+  "company": "Humana",
+  "latest": {
+    "accession": "0000049071-26-000023",
+    "filed": "2026-04-29",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 9.83,
+        "prior_year": 10.3,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1186000000,
+        "prior_year": 1244000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1677000000,
+        "prior_year": 1334000000,
+        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/49071/000004907126000023/hum-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000049071-26-000023",
+      "filed": "2026-04-29",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 9.83,
+          "prior_year": 10.3,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1186000000,
+          "prior_year": 1244000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1677000000,
+          "prior_year": 1334000000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/49071/000004907126000023/hum-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "HUM",
+  "updated": "2026-10-15"
+}

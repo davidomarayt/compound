@@ -1,0 +1,125 @@
+{
+  "cik": 48465,
+  "company": "Hormel Foods",
+  "latest": {
+    "accession": "0000048465-26-000055",
+    "filed": "2026-08-27",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.11,
+        "prior_year": 0.33,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 59573000,
+        "prior_year": 183742000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2961333000,
+        "prior_year": 3032876000,
+        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-26",
+    "source": "https://www.sec.gov/Archives/edgar/data/48465/000004846526000055/hrl-20260726.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000048465-26-000020",
+      "filed": "2026-02-26",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.33,
+          "prior_year": 0.31,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 181801000,
+          "prior_year": 170575000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3027317000,
+          "prior_year": 2988813000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-01-25",
+      "source": "https://www.sec.gov/Archives/edgar/data/48465/000004846526000020/hrl-20260125.htm"
+    },
+    {
+      "accession": "0000048465-26-000026",
+      "filed": "2026-05-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.29,
+          "prior_year": 0.33,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 157474000,
+          "prior_year": 180017000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2972600000,
+          "prior_year": 2898810000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/48465/000004846526000026/hrl-20260426.htm"
+    },
+    {
+      "accession": "0000048465-26-000055",
+      "filed": "2026-08-27",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.11,
+          "prior_year": 0.33,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 59573000,
+          "prior_year": 183742000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2961333000,
+          "prior_year": 3032876000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/48465/000004846526000055/hrl-20260726.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "HRL",
+  "updated": "2026-10-15"
+}

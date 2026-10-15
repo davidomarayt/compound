@@ -1,0 +1,96 @@
+{
+  "cik": 46080,
+  "company": "Hasbro",
+  "latest": {
+    "accession": "0000046080-26-000050",
+    "filed": "2026-07-30",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.12,
+        "prior_year": -6.1,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 160900000,
+        "prior_year": -855800000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1139600000,
+        "prior_year": 980800000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-28",
+    "source": "https://www.sec.gov/Archives/edgar/data/46080/000004608026000050/has-20260628.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000046080-26-000026",
+      "filed": "2026-05-13",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.39,
+          "prior_year": 0.7,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 198400000,
+          "prior_year": 98600000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1000200000,
+          "prior_year": 887100000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-29",
+      "source": "https://www.sec.gov/Archives/edgar/data/46080/000004608026000026/has-20260329.htm"
+    },
+    {
+      "accession": "0000046080-26-000050",
+      "filed": "2026-07-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.12,
+          "prior_year": -6.1,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 160900000,
+          "prior_year": -855800000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1139600000,
+          "prior_year": 980800000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/46080/000004608026000050/has-20260628.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "HAS",
+  "updated": "2026-10-15"
+}

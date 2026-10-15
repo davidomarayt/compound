@@ -1,0 +1,67 @@
+{
+  "cik": 860730,
+  "company": "HCA Healthcare",
+  "latest": {
+    "accession": "0001193125-26-191444",
+    "filed": "2026-04-29",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 7.15,
+        "prior_year": 6.45,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1620000000,
+        "prior_year": 1610000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 19109000000,
+        "prior_year": 18321000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/860730/000119312526191444/hca-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001193125-26-191444",
+      "filed": "2026-04-29",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 7.15,
+          "prior_year": 6.45,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1620000000,
+          "prior_year": 1610000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 19109000000,
+          "prior_year": 18321000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/860730/000119312526191444/hca-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "HCA",
+  "updated": "2026-10-15"
+}
