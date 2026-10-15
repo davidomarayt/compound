@@ -1,0 +1,125 @@
+{
+  "cik": 6951,
+  "company": "Applied Materials",
+  "latest": {
+    "accession": "0001628280-26-058235",
+    "filed": "2026-08-20",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.17,
+        "prior_year": 2.22,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 2538000000,
+        "prior_year": 1779000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 9115000000,
+        "prior_year": 7302000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-07-26",
+    "source": "https://www.sec.gov/Archives/edgar/data/6951/000162828026058235/amat-20260726.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-009694",
+      "filed": "2026-02-19",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.54,
+          "prior_year": 1.45,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2026000000,
+          "prior_year": 1185000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7012000000,
+          "prior_year": 7166000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-01-25",
+      "source": "https://www.sec.gov/Archives/edgar/data/6951/000162828026009694/amat-20260125.htm"
+    },
+    {
+      "accession": "0001628280-26-037227",
+      "filed": "2026-05-21",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.51,
+          "prior_year": 2.63,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2806000000,
+          "prior_year": 2137000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7910000000,
+          "prior_year": 7100000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-04-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/6951/000162828026037227/amat-20260426.htm"
+    },
+    {
+      "accession": "0001628280-26-058235",
+      "filed": "2026-08-20",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.17,
+          "prior_year": 2.22,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2538000000,
+          "prior_year": 1779000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 9115000000,
+          "prior_year": 7302000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/6951/000162828026058235/amat-20260726.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "AMAT",
+  "updated": "2026-10-15"
+}

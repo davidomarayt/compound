@@ -1,0 +1,96 @@
+{
+  "cik": 2969,
+  "company": "Air Products",
+  "latest": {
+    "accession": "0000002969-26-000036",
+    "filed": "2026-07-30",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": -6.47,
+        "prior_year": 3.2,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": -1440800000,
+        "prior_year": 713800000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 3161000000,
+        "prior_year": 3022700000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/2969/000000296926000036/apd-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000002969-26-000020",
+      "filed": "2026-04-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.19,
+          "prior_year": -7.77,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 710400000,
+          "prior_year": -1730600000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3171800000,
+          "prior_year": 2916200000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/2969/000000296926000020/apd-20260331.htm"
+    },
+    {
+      "accession": "0000002969-26-000036",
+      "filed": "2026-07-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -6.47,
+          "prior_year": 3.2,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -1440800000,
+          "prior_year": 713800000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3161000000,
+          "prior_year": 3022700000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/2969/000000296926000036/apd-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "APD",
+  "updated": "2026-10-15"
+}

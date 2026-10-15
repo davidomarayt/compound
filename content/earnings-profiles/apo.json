@@ -1,0 +1,96 @@
+{
+  "cik": 1858681,
+  "company": "Apollo Global Management",
+  "latest": {
+    "accession": "0001858681-26-000040",
+    "filed": "2026-08-10",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.15,
+        "prior_year": 0.99,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1361000000,
+        "prior_year": 630000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 11153000000,
+        "prior_year": 6814000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1858681/000185868126000040/apo-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001858681-26-000026",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -3.27,
+          "prior_year": 0.68,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -1906000000,
+          "prior_year": 442000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5059000000,
+          "prior_year": 5548000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1858681/000185868126000026/apo-20260331.htm"
+    },
+    {
+      "accession": "0001858681-26-000040",
+      "filed": "2026-08-10",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.15,
+          "prior_year": 0.99,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1361000000,
+          "prior_year": 630000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 11153000000,
+          "prior_year": 6814000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1858681/000185868126000040/apo-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "APO",
+  "updated": "2026-10-15"
+}
