@@ -191,9 +191,14 @@ jobs:
           test "$(grep -o 'href="/solar/get-quotes/"' "$hub" | wc -l)" -ge 3
           grep -Fq '/wealth/compare-solar-panel-quotes-ireland/' "$hub"
           grep -Fq 'data-solar-pilot-active="true"' "$intake"
+          grep -Fq 'Homeowner solar project submissions are now open' "$intake"
+          grep -Fq 'Submit my solar project' "$intake"
+          grep -Fq 'we will seek your separate permission' "$intake"
+          grep -Fq 'Homeowner project submissions are open' "$hub"
+          grep -Fq 'data-solar-leads-active="false"' "$intake"
           grep -Fq 'data-solar-leads-active="false"' "$intake"
           grep -Fq 'data-sp-private-pilot-form' "$intake"
-          grep -Fq '/static/solar-private-pilot.js?v=3' "$intake"
+          grep -Fq '/static/solar-private-pilot.js?v=4' "$intake"
           grep -Fq '/static/solar-funnel.js?v=20261015-1' "$hub"
           node --check compound/site/static/solar-private-pilot.js
           node --check compound/site/static/solar-funnel.js
