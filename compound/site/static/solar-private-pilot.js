@@ -28,6 +28,8 @@
         phone=get('phone'),contactMethod=get('contactMethod'),
         count=Number(get('installerCount'));
   if(!county)throw Error('Select your county in the Property section.');
+  if(get('area').length<2)throw Error('Enter the nearest town or general area in the Property section.');
+  if(!get('building'))throw Error('Select the property type in the Property section.');
   if(!['Owner','Joint owner','Authorised decision-maker'].includes(get('role')))throw Error('Confirm that you own or are authorised to make decisions for this property.');
   if(!get('timing')||get('timing')==='Researching options')throw Error('Select your intended installation timeframe in the Property section.');
   if(!name||name.length<2)throw Error('Enter your name in the Sharing section.');
