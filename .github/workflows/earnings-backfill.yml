@@ -35,6 +35,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # Queued cron/dispatch runs must read the latest saved cursor, not an
+          # older trigger commit, or two runs can scan the same issuer twice.
+          ref: claude/clever-babbage-uibieq
           persist-credentials: false
       - uses: actions/setup-python@v5
         with:
@@ -109,4 +112,30 @@ jobs:
             gh workflow run site.yml --ref "$GITHUB_REF_NAME"
           else
             echo 'Only progress metadata changed; no site rebuild necessary.'
+          fi
+      - name: Queue next historical batch after committing verified results
+        if: steps.preflight.outputs.needs_run == 'true' && (github.event_name != 'workflow_dispatch' || inputs.dry_run == false)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if python - <<'PY'
+          from pathlib import Path
+          import json, sys
+          state=Path('content/earnings-backfill-state.json')
+          if not state.is_file():
+              raise SystemExit('Backfill cursor missing after successful publication')
+          progress=json.loads(state.read_text())
+          unfinished=not progress.get('completed',False)
+          print(f"Historical backfill progress: {progress['cursor']}/{progress.get('company_count', 500)}, continue={unfinished}")
+          sys.exit(0 if unfinished else 1)
+          PY
+          then
+            # Controlled pacing and existing concurrency group prevent SEC bursts.
+            # Scheduled cron remains as fallback if this dispatch is delayed.
+            sleep 45
+            gh workflow run earnings-backfill.yml --ref "$GITHUB_REF_NAME" -f dry_run=false
+            echo 'Queued continuation of verified historical SEC coverage.'
+          else
+            echo 'Initial backfill completed; no continuation dispatched.'
           fi
