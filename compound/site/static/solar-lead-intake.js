@@ -72,6 +72,8 @@
     if(!['Owner','Joint owner','Authorised decision-maker'].includes(role)) throw Error('Only an owner or authorised decision-maker can request quotes.');
     if(!timing||timing==='Researching options') throw Error('Choose an installation timeframe when you are ready for quotations.');
     if(!get('county')) throw Error('Select your county.');
+    if(get('area').length<2) throw Error('Enter the nearest town or general area.');
+    if(!get('building')) throw Error('Choose the property type.');
     if(!name||!email||!byName('email').checkValidity()) throw Error('Enter your name and valid email address.');
     if(get('contactMethod')!=='Email'&&!get('phone')) throw Error('Enter your phone number for phone contact.');
     if(![1,2,3].includes(n)||!consent.checked) throw Error('Choose the number of quotes and confirm the sharing notice.');
