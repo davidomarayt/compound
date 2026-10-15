@@ -1,4 +1,4 @@
-/* Compound Solar roof-direction explorer. Fast illustrative model, optional official PVGIS.
+/* Compound Solar roof-direction explorer. Fast illustrative model, no external navigation.
    No geolocation, accounts or inputs transmitted to Compound. */
 (function(){
   'use strict';
@@ -172,11 +172,6 @@
   ['place','size','pitch','shade'].forEach(function(key){
     q(key).addEventListener('input',function(){official=null;q('status').textContent='';render();emitToProject(key);trackUse();});
     q(key).addEventListener('change',function(){official=null;q('status').textContent='';render();emitToProject(key);});
-  });
-  q('request').addEventListener('click',function(){
-    q('status').textContent='PVGIS opens separately. Enter your location, kWp, pitch and panel direction, checking the azimuth convention in PVGIS.';
-    window.open('https://photovoltaic-geographic-information-system.ec.europa.eu/','_blank','noopener,noreferrer');
-    trackUse();
   });
   var intoProject=q('into-project');
   if(intoProject)intoProject.addEventListener('click',function(){
