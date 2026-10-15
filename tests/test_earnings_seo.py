@@ -20,7 +20,9 @@ def test_exactly_seven_plus_thirteen_source_backed_profiles():
         output = build_earnings_seo({"symbol": ticker}, report)
         assert output is not None
         assert output["latest_end"] == report["latest_end"]
-        assert report["latest_label"] in output["headline"]
+        label = report["latest_label"]
+        expected = label.replace(" FY", " Full-Year") if label.endswith(" FY") else label
+        assert expected in output["headline"]
         assert output["source"] == report["latest_source"]
         assert all(url["ticker"] in PRIORITY for url in output["related"])
 
