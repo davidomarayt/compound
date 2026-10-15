@@ -1,0 +1,96 @@
+{
+  "cik": 33213,
+  "company": "EQT Corporation",
+  "latest": {
+    "accession": "0000033213-26-000043",
+    "filed": "2026-07-22",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.34,
+        "prior_year": 1.3,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 211425000,
+        "prior_year": 784147000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1809940000,
+        "prior_year": 2557719000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/33213/000003321326000043/eqt-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000033213-26-000030",
+      "filed": "2026-04-22",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.36,
+          "prior_year": 0.4,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1487229000,
+          "prior_year": 242139000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3378736000,
+          "prior_year": 1739850000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/33213/000003321326000030/eqt-20260331.htm"
+    },
+    {
+      "accession": "0000033213-26-000043",
+      "filed": "2026-07-22",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.34,
+          "prior_year": 1.3,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 211425000,
+          "prior_year": 784147000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1809940000,
+          "prior_year": 2557719000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/33213/000003321326000043/eqt-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "EQT",
+  "updated": "2026-10-15"
+}

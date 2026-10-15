@@ -1,0 +1,67 @@
+{
+  "cik": 1001250,
+  "company": "Estée Lauder Companies (The)",
+  "latest": {
+    "accession": "0001001250-26-000019",
+    "filed": "2026-05-01",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.24,
+        "prior_year": 0.44,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 89000000,
+        "prior_year": 159000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 3712000000,
+        "prior_year": 3550000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-03-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1001250/000100125026000019/el-20260331.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001001250-26-000019",
+      "filed": "2026-05-01",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.24,
+          "prior_year": 0.44,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 89000000,
+          "prior_year": 159000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3712000000,
+          "prior_year": 3550000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1001250/000100125026000019/el-20260331.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "EL",
+  "updated": "2026-10-15"
+}

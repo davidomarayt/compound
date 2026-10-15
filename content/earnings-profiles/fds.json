@@ -1,0 +1,96 @@
+{
+  "cik": 1013237,
+  "company": "FactSet",
+  "latest": {
+    "accession": "0001628280-26-046549",
+    "filed": "2026-07-01",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.5,
+        "prior_year": 3.87,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 126718000,
+        "prior_year": 148542000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 622918000,
+        "prior_year": 585520000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-05-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1013237/000162828026046549/fds-20260531.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-022873",
+      "filed": "2026-04-02",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.59,
+          "prior_year": 3.76,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 133056000,
+          "prior_year": 144860000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 611019000,
+          "prior_year": 570660000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-02-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/1013237/000162828026022873/fds-20260228.htm"
+    },
+    {
+      "accession": "0001628280-26-046549",
+      "filed": "2026-07-01",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.5,
+          "prior_year": 3.87,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 126718000,
+          "prior_year": 148542000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 622918000,
+          "prior_year": 585520000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1013237/000162828026046549/fds-20260531.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "FDS",
+  "updated": "2026-10-15"
+}
