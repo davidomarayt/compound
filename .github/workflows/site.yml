@@ -120,6 +120,21 @@ jobs:
           grep -Fq 'chart-svg' "$page"
           grep -Fq '/static/images/evergreen/how-many-solar-panels-do-i-need-ireland.jpg' "$page"
           test -s public/static/images/evergreen/how-many-solar-panels-do-i-need-ireland.jpg
+      - name: Verify new solar quote buying guide and pinned image
+        shell: bash
+        run: |
+          set -euo pipefail
+          page=public/wealth/compare-solar-panel-quotes-ireland/index.html
+          test -s "$page"
+          grep -Fq 'https://compound.ie/wealth/compare-solar-panel-quotes-ireland/' "$page"
+          grep -Fq 'How to Compare Solar Panel Quotes' "$page"
+          grep -Fq '/solar/compare-quotes/' "$page"
+          grep -Fq '/solar/get-quotes/' "$page"
+          grep -Fq 'chart-svg' "$page"
+          grep -Fq 'compare-solar-panel-quotes-ireland.jpg' "$page"
+          test -s public/static/images/evergreen/compare-solar-panel-quotes-ireland.jpg
+          grep -Fq '/wealth/compare-solar-panel-quotes-ireland/' public/solar/index.html
+          grep -Fq '/wealth/compare-solar-panel-quotes-ireland/' public/solar/compare-quotes/index.html
       - name: Verify east-west orientation article and approved rooftop photo
         shell: bash
         run: |
@@ -242,6 +257,13 @@ jobs:
           }
 
           fetch https://compound.ie/ /tmp/home.html
+          # Verify this new publication itself, not only previously established routes.
+          fetch https://compound.ie/wealth/compare-solar-panel-quotes-ireland/ /tmp/solar-quote-buyer-guide.html
+          grep -Fq 'How to Compare Solar Panel Quotes' /tmp/solar-quote-buyer-guide.html
+          grep -Fq 'https://compound.ie/wealth/compare-solar-panel-quotes-ireland/' /tmp/solar-quote-buyer-guide.html
+          grep -Fq 'compare-solar-panel-quotes-ireland.jpg' /tmp/solar-quote-buyer-guide.html
+          fetch https://compound.ie/static/images/evergreen/compare-solar-panel-quotes-ireland.jpg /tmp/solar-quote-buyer-guide.jpg
+          test -s /tmp/solar-quote-buyer-guide.jpg
           fetch https://compound.ie/wealth/how-many-solar-panels-do-i-need-ireland/ /tmp/solar-sizing-2026.html
           grep -Fq 'How Many Solar Panels Do You Need in Ireland?' /tmp/solar-sizing-2026.html
           grep -Fq '/solar-payback-calculator/' /tmp/solar-sizing-2026.html
