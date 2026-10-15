@@ -105,7 +105,6 @@ meta_description: "Submit a free solar installation project in Ireland: property
       </div>
       <p class="sor-field-note">Choose the nearest representative town, not your exact roof. The shading field is a simple illustrative annual deduction, not a shade survey.</p>
       <div class="sor-buttons">
-        <button type="button" class="sor-action" data-or="request">Open PVGIS calculator ↗</button>
         <button type="button" class="sor-action sor-action-secondary" data-or="copy">Copy yield per kWp</button>
         
       </div>
