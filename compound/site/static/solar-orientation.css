@@ -76,30 +76,48 @@
 @media(max-width:430px){.sor-intro h1{font-size:clamp(36px,11vw,52px)}.sor-kpis{gap:8px}.sor-kpi{padding:12px}.sor-kpi strong{font-size:25px}.sor-settings{gap:12px}.sor-presets{gap:3px}.sor-presets button{padding:8px 1px;font-size:10px}.sor-month{font-size:9px}.sor-months{gap:4px;height:180px}.sor-lead{font-size:14px}}
 @media(prefers-reduced-motion:reduce){.sor-pointer,.sor-month-fill,.sor-meter span{transition:none}}
 
-/* High contrast, device-dark-mode-proof seasonal chart: render bars/text as Canvas pixels.
-   Samsung Internet's automatic darkening previously turned green CSS bars nearly black. */
-.sor-shell .sor-chart-section{
-  color-scheme:only light;
-  background:#112b28;
-  border:1px solid #557e70;
-  color:#f1fff4;
-}
+/* High-contrast, Samsung dark-mode-safe HTML seasonal bars.
+   The bars have static heights in markup, then update from the roof model.
+   Avoid relying on a Canvas/WebGL surface that may render blank on Android. */
+.sor-shell .sor-chart-section{color-scheme:only light;background:#112b28;border:1px solid #557e70;color:#f1fff4}
 .sor-shell .sor-chart-section .sor-ey{color:#c7f7ab}
 .sor-shell .sor-chart-section .sor-chart-header h2{color:#f6fff5}
 .sor-shell .sor-chart-section .sor-chart-header p{color:#d5e9dd}
 .sor-shell .sor-chart-section .sor-disclosure{color:#e0ebe2;line-height:1.85}
 .sor-shell .sor-chart-section .sor-disclosure a{color:#c1f5b3;text-decoration:underline;text-underline-offset:3px}
-.sor-chart-visual{
-  min-width:0;width:100%;margin-top:21px;padding:12px 13px 14px;
-  border:1px solid #507d6e;border-radius:12px;
-  background:#102b29;color:#fff;
+.sor-chart-visual{min-width:0;width:100%;margin-top:21px;padding:12px 13px 14px;border:1px solid #507d6e;border-radius:12px;background:#102b29;color:#fff}
+.sor-shell .sor-canvas{
+  display:grid;grid-template-columns:repeat(12,minmax(0,1fr));align-items:stretch;
+  gap:clamp(3px,.85vw,11px);width:100%;max-width:100%;height:238px;min-height:175px;
+  padding:6px 2px 0;background:#102b29;color:#e6f4eb;min-width:0;
 }
-.sor-canvas{
-  display:block;width:100%;max-width:100%;height:225px;
-  background:#102b29;border-radius:7px;cursor:pointer;
-  touch-action:manipulation;
+.sor-shell .sor-canvas-month{
+  display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
+  gap:9px;width:100%;min-width:0;height:100%;padding:0;border:0;
+  appearance:none;-webkit-appearance:none;
+  background:transparent!important;color:#d9f2de!important;
+  text-align:center;cursor:pointer;border-radius:4px;
 }
-.sor-canvas:focus-visible{outline:3px solid #fff0aa;outline-offset:3px}
+.sor-shell .sor-canvas-track{
+  display:flex;align-items:flex-end;flex:1;width:100%;min-height:0;
+  border:1px solid #4d7667;border-radius:5px 5px 2px 2px;
+  background:#1b3a35!important;overflow:hidden;box-sizing:border-box;
+}
+.sor-shell .sor-canvas-fill{
+  display:block;width:100%;min-height:3px;flex-shrink:0;
+  background:linear-gradient(180deg,#c1ff9e,#4fdfa3)!important;
+  border-radius:4px 4px 0 0;transition:height .18s ease;
+}
+.sor-shell .sor-canvas-month[aria-pressed="true"] .sor-canvas-fill{
+  background:linear-gradient(180deg,#fff1ab,#ecbd60)!important;
+}
+.sor-shell .sor-canvas-month-label{
+  display:block;flex:0 0 auto;line-height:1.5;min-height:18px;
+  font-size:clamp(9px,1.1vw,12px);font-weight:700;
+  color:#e3f6e7!important;white-space:nowrap;
+}
+.sor-shell .sor-canvas-month[aria-pressed="true"] .sor-canvas-month-label{color:#fff0aa!important}
+.sor-shell .sor-canvas-month:focus-visible{outline:2px solid #fff0aa;outline-offset:2px}
 .sor-chart-readout{
   display:flex;gap:8px 20px;justify-content:space-between;align-items:center;flex-wrap:wrap;
   padding:14px 7px 3px;color:#e7f6e8;
