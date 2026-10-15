@@ -123,9 +123,17 @@ def load_company_report(content_dir: Path, ticker: str, legacy_articles=()):
     yoy={k: percent({"metrics":{k:{"current":latest["metrics"][k]["current"]}}},
                     {"metrics":{k:{"current":latest["metrics"][k].get("prior_year")}}},k)
          for k in METRICS}
+    # Summaries for SEO must follow the latest actual filing (including annual FY),
+    # never blindly treat Q3 as the newest report or extrapolate a missing quarter.
+    previous_fp = {"Q2": "Q1", "Q3": "Q2"}.get(latest["fp"])
+    previous = current.get(previous_fp) if previous_fp else None
+    latest_qoq = {k: percent(latest, previous, k) for k in METRICS}
+    latest_figures = {k: money(latest["metrics"][k].get("current"), k) for k in METRICS}
     data_out={"fy":fy,"latest_label":f"FY{fy} {latest['fp']}",
               "latest_end":latest["period_end"],"latest_filed":latest.get("filed",""),
               "latest_source":latest.get("source",""),"latest_form":latest.get("form",""),
+              "latest_figures":latest_figures,"latest_prev_label":f"FY{fy} {previous_fp}" if previous else None,
+              "latest_qoq":latest_qoq,"updated":data.get("updated",""),
               "quarters":display,"q3q2":q3q2,"yoy":yoy,
               "total_revenue":money(totals["revenue"],"revenue") if totals else None,
               "total_net":money(totals["net_income"],"net_income") if totals else None,
