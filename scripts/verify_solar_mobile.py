@@ -52,7 +52,7 @@ SCAN = r"""() => {
   while ((text = walker.nextNode())) {
     if (!text.textContent.trim()) continue;
     const parent = text.parentElement;
-    if (!parent || parent.closest('.sol-table-scroll, .tool-chart-scroll, .table-scroll, .table-responsive, .scroll-table, .responsive-table, script, style')) continue;
+    if (!parent || parent.closest('[aria-hidden="true"], .sol-project-honeypot, .sol-table-scroll, .tool-chart-scroll, .table-scroll, .table-responsive, .scroll-table, .responsive-table, script, style')) continue;
     const style = getComputedStyle(parent);
     if (style.display === 'none' || style.visibility === 'hidden') continue;
     const range = document.createRange();
