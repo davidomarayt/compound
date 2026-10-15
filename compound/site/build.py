@@ -25,7 +25,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from compound.config import Settings
 from compound.site.pia import load_pia_tracker
 from compound.site.earnings_view import load_company_report
-from compound.site.earnings_seo import PRIORITY as EARNINGS_SEO_PRIORITY, ORDER as EARNINGS_SEO_ORDER, build_earnings_seo
+from compound.site.earnings_seo import PRIORITY as EARNINGS_SEO_PRIORITY, ORDER as EARNINGS_SEO_ORDER, build_earnings_seo, fiscal_period_display
 
 PILLARS = ["health", "wealth", "happiness"]
 PILLAR_LABELS = {"wealth": "Wealth", "health": "Health", "happiness": "Life"}
@@ -1294,7 +1294,12 @@ def build_site(settings: Settings) -> dict:
     # Curated internal links lead crawlers to substantive source-verified reports.
     archive_by_ticker = {c["symbol"].upper(): c for c in archive_companies}
     priority_earnings = [
-        {**archive_by_ticker[t], "display_name": EARNINGS_SEO_PRIORITY[t][0]}
+        {**archive_by_ticker[t], "display_name": EARNINGS_SEO_PRIORITY[t][0],
+         "period_display": (
+             fiscal_period_display(archive_by_ticker[t]["report"])["display"]
+             + fiscal_period_display(archive_by_ticker[t]["report"])["title_calendar"]
+         ),
+         "period_end_readable": fiscal_period_display(archive_by_ticker[t]["report"])["readable_end"]}
         for t in EARNINGS_SEO_ORDER if t in archive_by_ticker
     ]
     sector_names = sorted({c["sector"] for c in active_earnings_companies})
