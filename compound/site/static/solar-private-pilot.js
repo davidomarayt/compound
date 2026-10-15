@@ -64,13 +64,13 @@
    try {
      if(localStorage.getItem('compound_analytics_consent')==='granted' && typeof window.gtag==='function'){
        window.gtag('event','solar_project_submitted',{
-         submission_stage:'private_pilot',
+         submission_stage:'homeowner_enquiry',
          source_path:'/solar/get-quotes/',
          transport_type:'beacon'
        });
      }
    }catch(_){}
-   report('Project received. Your reference is '+data.reference+'. Compound Solar will review it privately. No installer has access.','success');
+   report('Project received. Your reference is '+data.reference+'. Please keep this reference. Compound will review your project; we are not yet matching installers. No installer has access.','success');
    submit.textContent='Project received';
   }catch(err){
    report(err?.message||'Unable to submit your project right now. Please try again.','error');
