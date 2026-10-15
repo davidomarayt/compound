@@ -205,8 +205,8 @@ def main() -> None:
                                         profile = page.locator("[data-solar-project]")
                                         if profile.count() != 1:
                                             failures.append(f"{width}px {path}: homeowner project form missing")
-                                        if page.locator('[data-sp="eircode"]').count() != 1:
-                                            failures.append(f"{width}px {path}: private homeowner contact step missing")
+                                        if page.locator('[data-sp="county"]').count() != 1 or page.locator('[data-sp="email"]').count() != 1:
+                                            failures.append(f"{width}px {path}: required homeowner location or contact fields missing")
                                         if page.locator("[data-orientation-embedded]").count()!=1:
                                             failures.append(f"{width}px {path}: inline 360 compass missing")
                                         if page.locator(".sol-project-photo-guide").count()!=0 or page.locator('[data-sp="photoRoof"]').count()!=0:
@@ -230,7 +230,24 @@ def main() -> None:
                                             failures.append(f"{width}px {path}: first roof angle not restored")
                                         canvas = compass.locator('[data-or="chart"]')
                                         if not canvas.is_visible() or "kWh" not in compass.locator('[data-or="chart-amount"]').inner_text():
-                                            failures.append(f"{width}px {path}: embedded chart not visible")
+                                            failures.append(f"{width}px {path}: embedded chart not visible or not calculated")
+                                        else:
+                                            # Verify the actual image backing store contains painted bars.
+                                            # A JavaScript exception can leave an empty canvas in Samsung Internet
+                                            # even if the chart container is visible.
+                                            painted = canvas.evaluate("""el => {
+                                                const ctx=el.getContext('2d');
+                                                if(!ctx || el.width<200 || el.height<100)return false;
+                                                const data=ctx.getImageData(0,0,el.width,el.height).data;
+                                                let bright=0;
+                                                for(let i=0;i<data.length;i+=40){
+                                                    const r=data[i],g=data[i+1],b=data[i+2];
+                                                    if(g>125 && g>r*1.1 && g>b*.9)bright++;
+                                                }
+                                                return bright>=100;
+                                            }""")
+                                            if not painted:
+                                                failures.append(f"{width}px {path}: embedded monthly chart canvas is blank")
                                         page.locator('[data-sp="faces"]').select_option("1")
                                         output = page.locator("[data-sb-output]").input_value()
                                         if "SOLAR INSTALLATION QUOTE REQUEST" not in output:
