@@ -160,26 +160,26 @@ def main() -> None:
                                 if before != "100%" or not south_yield.strip() or east_percent == "100%" or east_yield == south_yield:
                                     failures.append(f"{width}px {path}: direction change did not update estimated output")
                                 page.locator('[data-or-preset="180"]').click()
-                                # A Samsung Internet screenshot exposed almost-black bars in night mode.
-                                # The new chart uses a true-color canvas with a readable month readout.
-                                canvas = page.locator('[data-or="chart"]')
+                                # Native HTML bars must be painted and interactive on mobile;
+                                # no reliance on a browser's Canvas 2D context.
+                                chart = page.locator('[data-or="chart"]')
                                 month = page.locator('[data-or="chart-amount"]')
-                                if not canvas.is_visible() or "kWh" not in month.inner_text():
-                                    failures.append(f"{width}px {path}: chart canvas or kWh reading missing")
+                                if not chart.is_visible() or "kWh" not in month.inner_text():
+                                    failures.append(f"{width}px {path}: chart or kWh reading missing")
                                 else:
-                                    pixel_test = canvas.evaluate("""el => {
-                                      const c=el.getContext('2d'),w=el.width,h=el.height;
-                                      if(!c || w<200 || h<100)return {error:'canvas not painted'};
-                                      const d=c.getImageData(0,0,w,h).data;let luminous=0,green=0;
-                                      for(let i=0;i<d.length;i+=40){
-                                        const r=d[i],g=d[i+1],b=d[i+2];
-                                        if(g>160 && r>80)luminous++;
-                                        if(g>125 && g>r*1.1 && g>b*.9)green++;
-                                      }
-                                      return {luminous,green};
+                                    checks = chart.evaluate("""el => {
+                                        const bars=[...el.querySelectorAll('[data-sor-month]')];
+                                        const drawn=bars.filter(b => {
+                                          const fill=b.querySelector('.sor-canvas-fill');
+                                          if(!fill)return false;
+                                          const r=fill.getBoundingClientRect();
+                                          return r.width>=3 && r.height>=3 && getComputedStyle(fill).visibility!=='hidden';
+                                        });
+                                        return {bars:bars.length,drawn:drawn.length,
+                                          selected:bars.filter(b=>b.getAttribute('aria-pressed')==='true').length};
                                     }""")
-                                    if pixel_test.get('error') or pixel_test.get('luminous',0)<100 or pixel_test.get('green',0)<100:
-                                        failures.append(f"{width}px {path}: low-contrast or blank canvas {pixel_test}")
+                                    if checks["bars"] != 12 or checks["drawn"] != 12 or checks["selected"] != 1:
+                                        failures.append(f"{width}px {path}: monthly HTML bars missing {checks}")
                             if errors:
                                 failures.append(f"{width}px {path}: JS exception: {errors[-1][:180]}")
                                 errors.clear()
@@ -228,26 +228,21 @@ def main() -> None:
                                         page.locator('[data-sp-face-button="1"]').click()
                                         if compass.locator('[data-or="angle"]').inner_text() != "225°":
                                             failures.append(f"{width}px {path}: first roof angle not restored")
-                                        canvas = compass.locator('[data-or="chart"]')
-                                        if not canvas.is_visible() or "kWh" not in compass.locator('[data-or="chart-amount"]').inner_text():
-                                            failures.append(f"{width}px {path}: embedded chart not visible or not calculated")
+                                        chart = compass.locator('[data-or="chart"]')
+                                        if not chart.is_visible() or "kWh" not in compass.locator('[data-or="chart-amount"]').inner_text():
+                                            failures.append(f"{width}px {path}: embedded monthly chart missing or not calculated")
                                         else:
-                                            # Verify the actual image backing store contains painted bars.
-                                            # A JavaScript exception can leave an empty canvas in Samsung Internet
-                                            # even if the chart container is visible.
-                                            painted = canvas.evaluate("""el => {
-                                                const ctx=el.getContext('2d');
-                                                if(!ctx || el.width<200 || el.height<100)return false;
-                                                const data=ctx.getImageData(0,0,el.width,el.height).data;
-                                                let bright=0;
-                                                for(let i=0;i<data.length;i+=40){
-                                                    const r=data[i],g=data[i+1],b=data[i+2];
-                                                    if(g>125 && g>r*1.1 && g>b*.9)bright++;
-                                                }
-                                                return bright>=100;
+                                            painted = chart.evaluate("""el => {
+                                                const bars=[...el.querySelectorAll('[data-sor-month]')];
+                                                return bars.length===12 && bars.every(b => {
+                                                    const fill=b.querySelector('.sor-canvas-fill');
+                                                    if(!fill)return false;
+                                                    const rect=fill.getBoundingClientRect();
+                                                    return rect.width>=3 && rect.height>=3;
+                                                });
                                             }""")
                                             if not painted:
-                                                failures.append(f"{width}px {path}: embedded monthly chart canvas is blank")
+                                                failures.append(f"{width}px {path}: embedded monthly bars are blank")
                                         page.locator('[data-sp="faces"]').select_option("1")
                                         output = page.locator("[data-sb-output]").input_value()
                                         if "SOLAR INSTALLATION QUOTE REQUEST" not in output:
