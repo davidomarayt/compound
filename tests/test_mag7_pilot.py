@@ -50,9 +50,9 @@ def test_tesla_first_article_is_original_source_backed_and_has_a_specific_hero()
     assert "date: 2026-10-16" in body
     assert "draft: false" in body and "publication_status: published" in body
     assert "/static/images/evergreen/tesla-roadster-reveal-2026-investor-economics.jpg" in body
-    assert 'hero_image_url: "https://upload.wikimedia.org/' in body
-    assert "Steve Jurvetson" in body and "CC BY 2.0" in body
-    assert "April 2019" in body and "not a photograph from the 15 October 2026 event" in body
+    assert 'hero_image_url: "https://images.unsplash.com/photo-1622315471002-8f5617067fc4' in body
+    assert "Anthony A" in body and "Unsplash License" in body
+    assert "2021" in body and "not a photograph from the 15 October 2026 event" in body
     assert "require_pinned_hero: true" in body
     assert "2028" in body and "not company guidance" in body.lower()
     assert "Reuters" in body and "www.sec.gov/Archives" in body
