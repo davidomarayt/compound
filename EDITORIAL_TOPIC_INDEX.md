@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 168 published articles and guides, 64 tools,
+**Included:** 169 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -16,6 +16,7 @@ For the complete register (including 510+ company profiles), open
 - [7 in 10 young adults are considering leaving Ireland — but the migration data tells a more complicated story](https://compound.ie/news/young-people-considering-emigration-ireland-2026/) — **Life**
 - [A Buddhist monk has begun 12 years on a mountain. What can it teach us about the modern mind?](https://compound.ie/news/12-year-buddhist-retreat-meditation-mental-wellbeing/) — **Life**
 - [AI therapy in Ireland: 61% say they use AI for mental health — but what does the evidence actually show?](https://compound.ie/news/ai-therapy-ireland-chatgpt-mental-health/) — **Life**
+- [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/) — **Wealth**
 - [Attic Conversion & Dormer Planning Permission Ireland](https://compound.ie/wealth/attic-conversion-dormer-planning-permission-ireland/) — **Wealth**
 - [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/) — **Wealth**
 - [Budget 2027 gives health €29.1bn. So why aren’t Mounjaro and Wegovy funded for obesity?](https://compound.ie/news/budget-2027-obesity-mounjaro-wegovy-ireland/) — **Health**
