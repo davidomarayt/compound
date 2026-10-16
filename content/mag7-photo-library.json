@@ -1,0 +1,97 @@
+{
+  "policy": "Manually researched documentary photographs, free under Unsplash License as reviewed 2026-10-16. Archival; never depict as same-day event. Never use illustrative/generated/renders.",
+  "photos": {
+    "TSLA": [
+      {
+        "source": "https://unsplash.com/photos/red-ferrari-sports-car-in-a-white-room-atIR2-a_wQk",
+        "credit": "Anthony A / Unsplash",
+        "year": "2021",
+        "alt": "Red second-generation Tesla Roadster prototype on display at Petersen Automotive Museum, photographed in 2021."
+      }
+    ],
+    "MSFT": [
+      {
+        "source": "https://unsplash.com/photos/a-building-with-a-microsoft-sign-on-the-side-of-it-7j-PBAMqAtI",
+        "credit": "Sam Torres / Unsplash",
+        "year": "2022",
+        "alt": "Microsoft sign on an office building, photographed by Sam Torres in 2022."
+      },
+      {
+        "source": "https://unsplash.com/photos/microsoft-building-exterior-with-golden-sunset-reflections-KtgNOHPHQfQ",
+        "credit": "zero take / Unsplash",
+        "year": "2026",
+        "alt": "Microsoft office building exterior in evening light, photographed in 2026."
+      }
+    ],
+    "NVDA": [
+      {
+        "source": "https://unsplash.com/photos/nvidia-building-exterior-with-blue-glass-windows-gn2envzmfbg",
+        "credit": "Abhishek Kumar / Unsplash",
+        "year": "2025",
+        "alt": "NVIDIA office building and signage in Pune, photographed in 2025."
+      },
+      {
+        "source": "https://unsplash.com/photos/nvidia-geforce-rtx-graphics-card-with-gold-accents-mEQUQqVk-MU",
+        "credit": "Gavin Phillips / Unsplash",
+        "year": "2025",
+        "alt": "Photograph of an NVIDIA GeForce RTX graphics card."
+      }
+    ],
+    "AAPL": [
+      {
+        "source": "https://unsplash.com/photos/apple-logo-in-front-of-a-building-f-3mUXFLY2o",
+        "credit": "Medhat Dawoud / Unsplash",
+        "year": "2017",
+        "alt": "Apple store sign in Amsterdam, photographed in 2017."
+      },
+      {
+        "source": "https://unsplash.com/photos/an-apple-logo-on-the-side-of-a-building-Mr5UVmVdeKM",
+        "credit": "Declan Sun / Unsplash",
+        "year": "2024",
+        "alt": "Apple Store Pudong architectural storefront in Shanghai, photographed in 2024."
+      }
+    ],
+    "AMZN": [
+      {
+        "source": "https://unsplash.com/photos/modern-glass-spheres-building-with-lush-green-trees-lEpwKNtGG2k",
+        "credit": "Hiroko Nishimura / Unsplash",
+        "year": "2025",
+        "alt": "Amazon headquarters glass spheres in Seattle, photographed in 2025."
+      },
+      {
+        "source": "https://unsplash.com/photos/the-amazon-logo-is-displayed-on-a-building-CLcmKictgSY",
+        "credit": "Daniel Mainye / Unsplash",
+        "year": "2025",
+        "alt": "Amazon logo mounted on an exterior building, photographed in 2025."
+      }
+    ],
+    "GOOGL": [
+      {
+        "source": "https://unsplash.com/photos/a-building-with-a-google-sign-on-the-front-of-it-ozxZtcfi7t0",
+        "credit": "Samuel Regan-Asante / Unsplash",
+        "year": "2024",
+        "alt": "Google offices at King's Cross in London, photographed in 2024."
+      },
+      {
+        "source": "https://unsplash.com/photos/google-sign-fpZZEV0uQwA",
+        "credit": "Pawel Czerwinski / Unsplash",
+        "year": "2018",
+        "alt": "Real Google logo photographed in Wrocław in 2018."
+      }
+    ],
+    "META": [
+      {
+        "source": "https://unsplash.com/photos/a-keyboard-mouse-and-cell-phone-sitting-on-a-desk-jK_oDRU_Iv4",
+        "credit": "Julio Lopez / Unsplash",
+        "year": "2023",
+        "alt": "Real smartphone running Meta's Threads app beside a keyboard and mouse, photographed in 2023."
+      },
+      {
+        "source": "https://unsplash.com/photos/a-person-holding-a-cell-phone-in-front-of-a-computer-hYycxvhw2Wo",
+        "credit": "Julio Lopez / Unsplash",
+        "year": "2023",
+        "alt": "Person holding a smartphone displaying Meta Threads, photographed in 2023."
+      }
+    ]
+  }
+}
