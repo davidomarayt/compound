@@ -106,7 +106,9 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          slug="$(grep -oE 'https://compound.ie/wealth/[a-z0-9-]+/' mag7-review.md | head -1 | sed -E 's@.*/wealth/([a-z0-9-]+)/@\\1@')"
+          article_url="$(grep -oE 'https://compound.ie/wealth/[a-z0-9-]+/' mag7-review.md | head -1)"
+          slug="${article_url#https://compound.ie/wealth/}"
+          slug="${slug%/}"
           test -n "$slug"
           test -s "content/wealth/$slug.md"
           test -s "compound/site/static/images/evergreen/$slug.jpg"
