@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 167 published articles and guides, 64 tools,
+**Included:** 168 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -158,6 +158,7 @@ For the complete register (including 510+ company profiles), open
 - [State Pension set for at least €7.50 Budget 2027 rise: what it would mean](https://compound.ie/news/state-pension-increase-budget-2027-ireland/) — **Wealth**
 - [Stress symptoms: how to recognise stress and what actually helps](https://compound.ie/life/stress-symptoms-what-helps-ireland/) — **Life**
 - [Tax credits in Ireland explained: what they are and how they work](https://compound.ie/wealth/tax-credits-ireland-explained/) — **Wealth**
+- [Tesla's Roadster Flew. Can It Actually Move the Business?](https://compound.ie/news/tesla-roadster-reveal-2026-investor-economics/) — **Wealth**
 - [The Fed has raised US interest rates: what could it mean for Ireland?](https://compound.ie/news/fed-rate-hike-ireland-september-2026/) — **Wealth**
 - [The Ploughing: a history of gathering, and why it matters for wellbeing](https://compound.ie/life/ploughing-championships-history-community-mental-health/) — **Life**
 - [The rise of GLP-1 medicines in Ireland: what the evidence says](https://compound.ie/health/glp1-medicines-ireland-rise-evidence/) — **Health**
