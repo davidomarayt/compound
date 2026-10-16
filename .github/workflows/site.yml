@@ -45,6 +45,25 @@ jobs:
         env:
           SITE_BASE_URL: https://compound.ie
           PREVIEW_BASE_URL: https://compound.ie
+      - name: Verify bespoke household image is the rendered article cover
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          asset = Path("public/static/images/news/one-income-vs-two-incomes-ireland-2027.jpg")
+          assert asset.is_file(), "Missing article-specific hero; generic cover forbidden"
+          with Image.open(asset) as image:
+              assert image.size == (1600, 900), image.size
+              assert image.format == "JPEG"
+          page = Path("public/news/one-income-vs-two-incomes-ireland-2027/index.html").read_text()
+          assert 'src="/static/images/news/one-income-vs-two-incomes-ireland-2027.jpg"' in page
+          assert "Illustration: Compound.ie" in page
+          assert 'property="og:image"' in page and 'name="twitter:image"' in page
+          assert "wealth-household-income-split-2027.svg" in page
+          print("PASS: bespoke cover, comparison graphic and OG/Twitter metadata all rendered")
+          PY
       - name: Verify Mag 7 and thirteen additional earnings SEO profiles
         shell: bash
         run: |
