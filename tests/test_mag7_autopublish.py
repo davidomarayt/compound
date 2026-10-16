@@ -116,6 +116,6 @@ def test_workflow_builds_before_commit_and_dispatches_pages():
     assert "permissions:" in workflow and "contents: write" in workflow
     assert "actions: write" in workflow and "issues: write" in workflow
     assert "mag7_autopublish.py" in workflow and "news_images.py" in workflow
-    assert workflow.index("compound build") < workflow.index("git add -A")
+    assert workflow.index("compound build") < workflow.index("git add --")
     assert "gh workflow run site.yml" in workflow
     assert "gh issue create" in workflow
