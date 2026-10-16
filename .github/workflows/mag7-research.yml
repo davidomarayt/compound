@@ -106,13 +106,28 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A -- content/wealth/ compound/site/static/images/evergreen/
+          slug="$(grep -oE 'https://compound.ie/wealth/[a-z0-9-]+/' mag7-review.md | head -1 | sed -E 's@.*/wealth/([a-z0-9-]+)/@\\1@')"
+          test -n "$slug"
+          test -s "content/wealth/$slug.md"
+          test -s "compound/site/static/images/evergreen/$slug.jpg"
+          git add -- "content/wealth/$slug.md" "compound/site/static/images/evergreen/$slug.jpg"
           if git diff --cached --quiet; then
             echo "Nothing new to publish."
             exit 0
           fi
           git commit -m 'Publish checked Mag7 research with authentic photograph'
-          git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push origin HEAD:"$GITHUB_REF_NAME"
+          for retry in 1 2 3; do
+            git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" fetch origin "$GITHUB_REF_NAME"
+            git rebase "origin/$GITHUB_REF_NAME"
+            if git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push origin HEAD:"$GITHUB_REF_NAME"; then
+              echo "Published article commit to GitHub."
+              break
+            fi
+            if [ "$retry" -eq 3 ]; then
+              echo "Unable to push without conflict; publication blocked." >&2
+              exit 1
+            fi
+          done
           gh workflow run site.yml --ref "$GITHUB_REF_NAME"
           printf '\n**Article committed; Pages deployment dispatched (verify the live URL).**\n' >> mag7-review.md
       - name: Record failed publication gate
