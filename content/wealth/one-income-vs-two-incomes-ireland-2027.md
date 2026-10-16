@@ -11,7 +11,12 @@ reviewed: 2026-10-16
 summary: "Two married Irish households each earn €100,000 gross, but their estimated 2027 take-home pay differs by €9,556. The reason is how income-tax bands, PAYE credits and USC work when one or both partners earn."
 meta_description: "One income vs two incomes in Ireland 2027: see why married couples earning the same €100,000 can take home €9,556 apart after PAYE, USC and PRSI."
 tags: [news, budget-2027, income-tax, married-couples, joint-assessment, paye, usc, prsi, family-finance, ireland]
-news_image_query: "married couple home budget paperwork calculator payslip euro household Ireland"
+image: /static/images/news/one-income-vs-two-incomes-ireland-2027.jpg
+social_image: /static/images/news/one-income-vs-two-incomes-ireland-2027.jpg
+image_alt: "Compound bespoke comparison graphic showing two €50,000 earners take home €80,679 versus one €100,000 earner taking home €71,123."
+image_credit: "Original illustration: Compound.ie"
+image_source: https://compound.ie/news/one-income-vs-two-incomes-ireland-2027/
+require_pinned_hero: true
 related_tools:
   - budget-2027-calculator
   - income-tax-calculator
