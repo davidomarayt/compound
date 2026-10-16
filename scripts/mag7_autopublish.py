@@ -32,7 +32,9 @@ HEADINGS = ["What changed", "What the numbers say", "The investment case",
 
 def photo_for(ticker: str, week: int) -> dict:
     library = json.loads((ROOT / "content/mag7-photo-library.json").read_text("utf-8"))
-    pictures = library["photos"][ticker]
+    pictures = [item for item in library["photos"][ticker] if item.get("cdn_url")]
+    if not pictures:
+        raise ValueError("No verified, directly downloadable licensed photo for this company")
     photo = pictures[(week - 1) % len(pictures)]
     if not photo["source"].startswith("https://unsplash.com/photos/"):
         raise ValueError("Photo not approved from free Unsplash library")
