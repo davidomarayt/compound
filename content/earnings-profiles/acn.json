@@ -2,33 +2,33 @@
   "cik": 1467373,
   "company": "Accenture",
   "latest": {
-    "accession": "0001467373-26-000032",
-    "filed": "2026-06-18",
-    "form": "10-Q",
-    "fp": "Q3",
+    "accession": "0001467373-26-000049",
+    "filed": "2026-10-16",
+    "form": "10-K",
+    "fp": "FY",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 3.8,
-        "prior_year": 3.49,
+        "current": 13.56,
+        "prior_year": 12.15,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 2338989000,
-        "prior_year": 2197501000,
+        "current": 8367056000,
+        "prior_year": 7678433000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 18718144000,
-        "prior_year": 17727871000,
+        "current": 74183445000,
+        "prior_year": 69672977000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-05-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1467373/000146737326000032/acn-20260531.htm"
+    "period_end": "2026-08-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1467373/000146737326000049/acn-20260831.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-05-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1467373/000146737326000032/acn-20260531.htm"
+    },
+    {
+      "accession": "0001467373-26-000049",
+      "filed": "2026-10-16",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 13.56,
+          "prior_year": 12.15,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 8367056000,
+          "prior_year": 7678433000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 74183445000,
+          "prior_year": 69672977000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1467373/000146737326000049/acn-20260831.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "ACN",
-  "updated": "2026-10-15"
+  "updated": "2026-10-16"
 }
