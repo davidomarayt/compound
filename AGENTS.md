@@ -11,6 +11,13 @@ Before proposing, writing or publishing any new article, evergreen guide, calcul
 
 This is a content *title and URL* catalogue, not evidence that all pages rank or have received organic traffic.
 
+## Article cover photography policy (effective 16 October 2026)
+
+- The publisher does **not** want AI-generated, synthetic, drawn or model-rendered article hero and social images. Use genuine, topic-specific photography with a source and permission/licence appropriate for editorial reuse.
+- Preserve the real subject and date. If a newer-event image is unavailable, a relevant licensed archival photograph is acceptable only when explicitly labelled as archival, with its true capture date, and never represented as footage of the new event.
+- Include photographer/publisher credit, original source URL, licence/permission basis, accurate image alt text and corresponding Open Graph/Twitter image. Never scrape or republish unlicensed news-agency images.
+- Fail build rather than substitute a generic calculator, desk, AI art or unrelated stock image. The Mag 7 publishing workflow enforces documentary photograph metadata before publication.
+
 ## Required image QA for manually authored news
 
 - Manually authored news must not silently reuse generic finance photos, calculators, desks, laptops, kitchens or unrelated stock images.
