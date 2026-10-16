@@ -366,6 +366,20 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
     if "automated-earnings" in {str(tag).lower() for tag in meta.get("tags") or []}:
         return "skip:automated-earnings-text-only"
 
+    # Locally produced, editorially approved covers are immutable. A missing
+    # file is a publication error, never a reason to search for generic imagery.
+    if meta.get("require_pinned_hero") and not meta.get("hero_image_url") and not meta.get("pexels_photo_id"):
+        if not is_published(meta):
+            return "skip:draft-pinned-local-hero"
+        if not image_exists(meta) or is_fallback(meta):
+            raise ValueError(
+                f"Published article {slug} requires its approved local hero image; "
+                "refusing a generic finance/photo fallback"
+            )
+        if not all(str(meta.get(k) or "").strip() for k in ("image_alt", "image_credit", "image_source")):
+            raise ValueError(f"Approved local hero {slug} is missing credit, source or alt text")
+        return "skip:approved-custom-editorial-hero"
+
     # Editorially approved stock images can be pinned by their public image URL.
     # This path bypasses search ranking and API-rate limits entirely, while still
     # downloading the asset locally so the site never hotlinks the publisher.
