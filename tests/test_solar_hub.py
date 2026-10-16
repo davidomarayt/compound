@@ -183,7 +183,8 @@ def test_solar_quote_project_brief_is_private_and_comprehensive():
     assert 'data-sp-private-pilot-consent' in page
     assert 'data-sp-private-pilot-submit' in page
     assert 'Your details remain private to Compound unless you separately agree' in page
-    assert 'data-sp-live-request hidden' in page
+    # The original hidden live-request placeholder was retired when homeowner intake opened.
+    assert 'data-sp-private-pilot-form' in page
     assert 'solar-project.css?v=3' in template and 'solar-project.js?v=3' in template
     assert "sessionStorage.getItem('compound_solar_project_compass_v1')" in js
     assert "sessionStorage.setItem('compound_solar_project_compass_v1'" in compass
