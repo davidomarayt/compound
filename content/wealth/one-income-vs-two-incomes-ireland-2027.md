@@ -14,7 +14,7 @@ tags: [news, budget-2027, income-tax, married-couples, joint-assessment, paye, u
 image: /static/images/news/one-income-vs-two-incomes-ireland-2027.jpg
 social_image: /static/images/news/one-income-vs-two-incomes-ireland-2027.jpg
 image_alt: "Compound bespoke comparison graphic showing two €50,000 earners take home €80,679 versus one €100,000 earner taking home €71,123."
-image_credit: "Original illustration: Compound.ie"
+image_credit: "Illustration: Compound.ie"
 image_source: https://compound.ie/news/one-income-vs-two-incomes-ireland-2027/
 require_pinned_hero: true
 related_tools:
