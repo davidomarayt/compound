@@ -19,6 +19,16 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m pip install --disable-pip-version-check -e .
+      - name: Check AI research credentials for scheduled publication
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        shell: bash
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::ANTHROPIC_API_KEY repository secret not configured; tomorrow's automatic research would skip."
+            exit 1
+          fi
+          echo "Anthropic research key configured (value not displayed)."
       - name: Verify genuine licensed Microsoft cover will be retrievable
         run: |
           python - <<'PY'
