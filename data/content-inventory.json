@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-10-15",
+  "snapshot_date": "2026-10-16",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -2974,6 +2974,29 @@
           "diabetes",
           "medicines",
           "irish-healthcare"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Two Irish couples earn €100,000. Why can their take-home pay differ by €9,556?",
+        "url": "/news/one-income-vs-two-incomes-ireland-2027/",
+        "source": "content/wealth/one-income-vs-two-incomes-ireland-2027.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "one-income-vs-two-incomes-ireland-2027",
+        "date": "2026-10-16",
+        "reviewed": "2026-10-16",
+        "tags": [
+          "news",
+          "budget-2027",
+          "income-tax",
+          "married-couples",
+          "joint-assessment",
+          "paye",
+          "usc",
+          "prsi",
+          "family-finance",
+          "ireland"
         ],
         "status": "published"
       },
