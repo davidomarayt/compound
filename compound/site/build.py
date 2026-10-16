@@ -1801,7 +1801,8 @@ def build_site(settings: Settings) -> dict:
             max([a.reviewed or a.date for a in company_stories[str(company["cik"])]] +
                 ([date.fromisoformat(company_dashboards[str(company["cik"])]["latest_filed"])]
                  if company_dashboards[str(company["cik"])] and company_dashboards[str(company["cik"])]["latest_filed"] else []) +
-                [a.reviewed or a.date for a in company_reports[str(company["cik"])]]
+                [a.reviewed or a.date for a in company_reports[str(company["cik"])]] +
+                ([date(2026, 10, 16)] if company["symbol"] in EARNINGS_SEO_PRIORITY else [])
                 ).isoformat(),
         )
         for company in registry_members
