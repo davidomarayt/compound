@@ -183,7 +183,7 @@ def ai_draft(packet: str, ticker: str, day: date) -> str:
         from anthropic import Anthropic
         client = Anthropic(timeout=105.0)
         message = client.messages.create(
-            model=os.getenv("MAG7_MODEL", "claude-sonnet-4-5"),
+            model=os.getenv("MAG7_MODEL", "").strip() or "claude-sonnet-4-5",
             max_tokens=4400,
             temperature=0.25,
             # Server-side web search, when available to this API account.
