@@ -216,7 +216,14 @@ def pexels_photo_by_id(photo_id: str, api_key: str) -> dict[str, Any]:
 
 def download(url: str, destination: Path) -> None:
     destination.parent.mkdir(parents=True, exist_ok=True)
-    with httpx.Client(timeout=60, follow_redirects=True) as client:
+    with httpx.Client(
+        timeout=60,
+        follow_redirects=True,
+        headers={
+            "User-Agent": "CompoundIE-Editorial/1.0 (https://compound.ie; contact via https://compound.ie/contact/)",
+            "Accept": "image/avif,image/webp,image/jpeg,image/png,image/*;q=0.8",
+        },
+    ) as client:
         response = client.get(url)
         response.raise_for_status()
         destination.write_bytes(response.content)
