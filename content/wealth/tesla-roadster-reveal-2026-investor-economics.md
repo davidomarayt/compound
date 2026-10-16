@@ -14,13 +14,13 @@ meta_description: "Tesla Roadster reveal 2026: explore the flying prototype, 202
 tags: [news, wealth, tesla, tsla, mag7-research, roadster, stocks, electric-vehicles, investor-research]
 image: /static/images/evergreen/tesla-roadster-reveal-2026-investor-economics.jpg
 social_image: /static/images/evergreen/tesla-roadster-reveal-2026-investor-economics.jpg
-image_alt: "Real photograph of the red second-generation Tesla Roadster prototype at Tesla HQ in April 2019. Archival image, not footage of the 15 October 2026 unveiling."
-image_credit: "Steve Jurvetson / Wikimedia Commons (CC BY 2.0; photographed 2019)"
-image_source: "https://commons.wikimedia.org/wiki/File:Tesla_Roadster_2.0_(47619421652).jpg"
-hero_image_url: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Tesla_Roadster_2.0_%2847619421652%29.jpg"
-hero_image_alt: "Real photograph of the red second-generation Tesla Roadster prototype at Tesla HQ in April 2019. Archival image, not footage of the 15 October 2026 unveiling."
-hero_image_credit: "Steve Jurvetson / Wikimedia Commons (CC BY 2.0; photographed 2019)"
-hero_image_source: "https://commons.wikimedia.org/wiki/File:Tesla_Roadster_2.0_(47619421652).jpg"
+image_alt: "Real photograph of the red second-generation Tesla Roadster prototype displayed at the Petersen Automotive Museum in 2021. Archival image, not footage of the 15 October 2026 unveiling."
+image_credit: "Anthony A / Unsplash (2021 archive; Unsplash License)"
+image_source: "https://unsplash.com/photos/red-ferrari-sports-car-in-a-white-room-atIR2-a_wQk"
+hero_image_url: "https://images.unsplash.com/photo-1622315471002-8f5617067fc4?auto=format&fit=crop&fm=jpg&q=85&w=1600&h=900"
+hero_image_alt: "Real photograph of the red second-generation Tesla Roadster prototype displayed at the Petersen Automotive Museum in 2021. Archival image, not footage of the 15 October 2026 unveiling."
+hero_image_credit: "Anthony A / Unsplash (2021 archive; Unsplash License)"
+hero_image_source: "https://unsplash.com/photos/red-ferrari-sports-car-in-a-white-room-atIR2-a_wQk"
 require_pinned_hero: true
 sources:
   - title: "Reuters, 15 October 2026 — Roadster demonstration, production target, reservation deposits and unannounced final pricing"
@@ -33,7 +33,7 @@ sources:
     url: https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm
 ---
 
-*Cover photograph: Tesla's second-generation Roadster prototype photographed at Tesla HQ in April 2019 by Steve Jurvetson (CC BY 2.0). This is an archival photo, not a photograph from the 15 October 2026 event. [Original image and licence](https://commons.wikimedia.org/wiki/File:Tesla_Roadster_2.0_(47619421652).jpg).*
+*Cover photograph: A real second-generation Tesla Roadster prototype at the Petersen Automotive Museum in Los Angeles, photographed by Anthony A and published in 2021 under the Unsplash License. This is an archival photo, not a photograph from the 15 October 2026 event. [Photograph and licence](https://unsplash.com/photos/red-ferrari-sports-car-in-a-white-room-atIR2-a_wQk).*
 
 The new Tesla Roadster has finally had its moment. At a **15 October 2026** event at SpaceX's McGregor facility in Texas, a prototype used fans and thrusters to negotiate an inverted ramp, turn in the air and jump past a lineup of Tesla vehicles. The display was extraordinary. It also left the most important investor question unanswered: **how much money can this car realistically make?**
 
