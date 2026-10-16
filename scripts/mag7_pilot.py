@@ -165,7 +165,7 @@ def brief(day: date, ticker: str, week: int, sec: dict, news: list[dict], prior:
         "5. Counter-argument, material risks, catalyst/next disclosure, and implications for long-term investors.",
         "6. Distinct SEO query, meaningful headline/description, no false certainty or price forecasts.",
         f"7. Internal link to https://compound.ie/stocks/{ticker.lower()}/ and https://compound.ie/wealth/earnings/.",
-        "8. Commission unique, relevant, credited hero and social image; never reuse stock desks or a prior cover.",
+        "8. Use an authentic, properly licensed company photograph with photographer, dated context and source. NO AI-generated, synthetic, drawn or render-based hero or social images. Do not present archive photos as footage of current events.",
         "9. Run duplicate, fact, arithmetic, links, image, mobile, AdSense and build QA before publishing.",
         "10. Prepare a substantive X discussion post; article link should be in a reply.",
         "",
@@ -206,6 +206,9 @@ def ai_draft(packet: str, ticker: str, day: date) -> str:
                 " GAAP net income, operating profit, and cash flow. Finish with"
                 " 'Sources checked', 'Claims requiring human confirmation', and"
                 " 'X post / reply link placeholder'. Do not repeat existing content."
+                " No AI-generated, synthetic or illustrated cover images. Request a real"
+                " appropriately licensed photo with attribution, date and original source."
+                " If only an archival image is licensed, caption it as archival."
                 " Never give personalised buy/sell advice. This is NOT permission"
                 " to publish.\n\n" + packet)}],
         )
