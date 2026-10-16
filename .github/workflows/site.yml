@@ -80,8 +80,8 @@ jobs:
           assert page.is_file(), "Tesla Roadster research URL missing"
           html = page.read_text(encoding="utf-8")
           assert '/static/images/evergreen/tesla-roadster-reveal-2026-investor-economics.jpg' in html
-          assert "Steve Jurvetson" in html and "April 2019" in html
-          assert "CC BY 2.0" in html
+          assert "Anthony A" in html and "2021" in html
+          assert "Unsplash License" in html
           assert 'property="og:image"' in html and 'name="twitter:image"' in html
           assert "0.21%" in html and "2.11%" in html
           assert '/stocks/tsla/' in html
@@ -447,7 +447,7 @@ jobs:
           grep -Fq 'Tesla' /tmp/mag7-tesla.html
           grep -Fq '0.21%' /tmp/mag7-tesla.html
           grep -Fq 'tesla-roadster-reveal-2026-investor-economics.jpg' /tmp/mag7-tesla.html
-          grep -Fq 'Steve Jurvetson' /tmp/mag7-tesla.html
+          grep -Fq 'Anthony A' /tmp/mag7-tesla.html
           fetch https://compound.ie/static/images/evergreen/tesla-roadster-reveal-2026-investor-economics.jpg /tmp/mag7-tesla-cover.jpg
           test "$(wc -c </tmp/mag7-tesla-cover.jpg)" -gt 50000
           # Verify this new publication itself, not only previously established routes.
