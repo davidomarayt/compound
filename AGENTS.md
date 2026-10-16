@@ -10,3 +10,10 @@ Before proposing, writing or publishing any new article, evergreen guide, calcul
 6. The inventory is generated from source by `python scripts/update_content_inventory.py`. The GitHub Actions inventory workflow regenerates it when content changes. When accuracy matters, check the live publishing files too: the inventory is a snapshot, not a substitute for validating publication status or factual claims.
 
 This is a content *title and URL* catalogue, not evidence that all pages rank or have received organic traffic.
+
+## Required image QA for manually authored news
+
+- Manually authored news must not silently reuse generic finance photos, calculators, desks, laptops, kitchens or unrelated stock images.
+- Before publishing a new manual article, assign a unique, topic-specific cover and social image. Prefer an original illustration or an approved attributed photograph. For a custom local cover, set `image`, `social_image`, `image_alt`, `image_credit`, `image_source` and `require_pinned_hero: true`; ensure the asset actually exists before the news-image processor runs. Stock photos use the separately supported `hero_image_url` and approved credit fields.
+- The pipeline must fail the build, rather than show a generic placeholder, if a required pinned image is absent or invalid.
+- Verify the rendered article cover AND actual Open Graph/Twitter image after building, not just the markdown image description. These checks are part of publication, not optional polish.
