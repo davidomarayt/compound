@@ -112,7 +112,7 @@ def research(ai, ticker: str, week: int, day: date, sec: dict) -> dict:
         "Decline rather than invent an assertion. Never produce images."
     )
     message = ai.messages.create(
-        model=os.getenv("MAG7_MODEL","claude-sonnet-4-5"),max_tokens=6800,temperature=0.15,
+        model=(os.getenv("MAG7_MODEL") or "claude-sonnet-4-5"),max_tokens=6800,temperature=0.15,
         tools=[{"type":"web_search_20250305","name":"web_search","max_uses":7}],
         system=instructions,
         messages=[{"role":"user","content":
@@ -167,7 +167,7 @@ def independent_review(ai, data: dict, sec: dict) -> None:
         "Review input:\n"+json.dumps({"sec":sec,"article":data},ensure_ascii=False)[:26000]
     )
     response=ai.messages.create(
-        model=os.getenv("MAG7_EDITOR_MODEL",os.getenv("MAG7_MODEL","claude-sonnet-4-5")),
+        model=(os.getenv("MAG7_EDITOR_MODEL") or os.getenv("MAG7_MODEL") or "claude-sonnet-4-5"),
         max_tokens=1300,temperature=0,
         tools=[{"type":"web_search_20250305","name":"web_search","max_uses":4}],
         messages=[{"role":"user","content":prompt}],
@@ -241,7 +241,7 @@ def run(day: date,output: Path) -> int:
                        "","## Approved real photograph",
                        photo["source"],photo["credit"],"",
                        "## X post draft",data.get("x_post","")])
-    except (ValueError,RuntimeError,KeyError,TypeError,json.JSONDecodeError,httpx.HTTPError) as exc:
+    except Exception as exc:  # Every fault fails closed; write audit status instead of an unsafe page.
         report.extend(["**Status: skipped — nothing automatically published**",
                        f"Reason: {type(exc).__name__}: {str(exc)[:500]}",
                        "No filler article and no synthetic image permitted."])
