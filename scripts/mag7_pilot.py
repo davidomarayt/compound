@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""28-day Mag 7 editorial research pilot: one review-only research packet per day.
+"""28-day Mag 7 editorial research context for the gated automated publisher.
 
-The scheduled job NEVER edits content, publishes an article or invents a source.
+This helper produces source briefs; publishing is owned by mag7_autopublish.py.
 With ANTHROPIC_API_KEY it may add an AI draft to the GitHub review issue.
 Without that key, it still creates a useful SEC-backed commissioning brief.
 """
@@ -137,7 +137,7 @@ def brief(day: date, ticker: str, week: int, sec: dict, news: list[dict], prior:
     out = [
         f"# Mag 7 research pilot — {day.isoformat()} — {name} ({ticker})",
         "",
-        f"**Week:** {week} of 4 · **Status:** Review required, not published",
+        f"**Week:** {week} of 4 · **Status:** Evidence packet for automated quality-gated publication",
         f"**Assignment:** One substantial, original article on {name}; target research theme: {focus}.",
         "**Editorial safeguard:** If no distinct, well-supported angle exists, recommend skipping rather than filler.",
         "",
@@ -170,8 +170,8 @@ def brief(day: date, ticker: str, week: int, sec: dict, news: list[dict], prior:
         "10. Prepare a substantive X discussion post; article link should be in a reply.",
         "",
         "## Publication policy",
-        "No auto-publish in the four-week pilot. Editor must approve; only then commit a"
-        " new canonical article and its verified image to the existing publishing pipeline.",
+        "Automatic publication is permitted ONLY after independent fact, source, arithmetic,"
+        " originality, licensed-real-photo and complete-build checks. Otherwise skip.",
     ])
     return "\n".join(out) + "\n"
 
