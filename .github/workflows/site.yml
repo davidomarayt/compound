@@ -5,7 +5,7 @@ name: site
 on:
   push:
     branches: ["claude/clever-babbage-uibieq"]
-    paths: ["content/**", "compound/site/**", "scripts/news_images.py", "scripts/verify_solar_mobile.py", ".github/workflows/site.yml"]
+    paths: ["content/**", "compound/site/**", "scripts/news_images.py", "scripts/render_editorial_heroes.py", "scripts/verify_solar_mobile.py", ".github/workflows/site.yml"]
   workflow_dispatch:
 permissions:
   contents: read
@@ -23,6 +23,8 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -e .
+      - name: Render approved custom editorial covers
+        run: python scripts/render_editorial_heroes.py
       - name: Attach images to published News stories
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
