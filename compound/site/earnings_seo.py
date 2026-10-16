@@ -268,7 +268,7 @@ def build_earnings_seo(company: dict, report: dict | None) -> dict | None:
         "period_subtitle": fiscal["subtitle"], "readable_end": fiscal["readable_end"],
         "calendar_year_differs": fiscal["is_cross_year"],
         "hub_period": f"{fiscal['display']}{fiscal['title_calendar']}",
-        "latest_end": report["latest_end"], "modified": report.get("updated") or report.get("latest_filed") or report["latest_end"],
+        "latest_end": report["latest_end"], "modified": max("2026-10-16", report.get("updated") or report.get("latest_filed") or report["latest_end"]),
         "latest_figures": latest, "movements": movements, "narrative": narrative,
         "caveat": caveat, "related": related_links, "source": report["latest_source"],
         "is_fy": period.endswith(" FY"),
