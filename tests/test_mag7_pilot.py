@@ -40,7 +40,7 @@ def test_packet_is_a_review_artefact_with_explicit_guardrails():
     assert "independent fact, source, arithmetic" in packet
     assert "Revenue" in packet and "Diluted EPS" in packet
     assert "/stocks/msft/" in packet and "/wealth/earnings/" in packet
-    assert "never reuse stock desks" in packet
+    assert "NO AI-generated" in packet and "licensed company photograph" in packet
     assert "If no distinct, well-supported angle exists" in packet
 
 
