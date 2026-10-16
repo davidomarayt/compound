@@ -6,7 +6,8 @@
         "source": "https://unsplash.com/photos/red-ferrari-sports-car-in-a-white-room-atIR2-a_wQk",
         "credit": "Anthony A / Unsplash",
         "year": "2021",
-        "alt": "Red second-generation Tesla Roadster prototype on display at Petersen Automotive Museum, photographed in 2021."
+        "alt": "Red second-generation Tesla Roadster prototype on display at Petersen Automotive Museum, photographed in 2021.",
+        "cdn_url": "https://images.unsplash.com/photo-1622315471002-8f5617067fc4"
       }
     ],
     "MSFT": [
@@ -26,10 +27,11 @@
     ],
     "NVDA": [
       {
-        "source": "https://unsplash.com/photos/nvidia-building-exterior-with-blue-glass-windows-gn2envzmfbg",
-        "credit": "Abhishek Kumar / Unsplash",
-        "year": "2025",
-        "alt": "NVIDIA office building and signage in Pune, photographed in 2025."
+        "source": "https://unsplash.com/photos/a-close-up-of-a-graphics-card-on-a-table-TErYPw4o1KM",
+        "cdn_url": "https://images.unsplash.com/photo-1727176763571-811f1c4ea36c",
+        "credit": "Christian Wiediger / Unsplash",
+        "year": "2019",
+        "alt": "Authentic close-up photograph of an NVIDIA GeForce RTX 2060 graphics card, taken in 2019."
       },
       {
         "source": "https://unsplash.com/photos/nvidia-geforce-rtx-graphics-card-with-gold-accents-mEQUQqVk-MU",
@@ -43,7 +45,8 @@
         "source": "https://unsplash.com/photos/apple-logo-in-front-of-a-building-f-3mUXFLY2o",
         "credit": "Medhat Dawoud / Unsplash",
         "year": "2017",
-        "alt": "Apple store sign in Amsterdam, photographed in 2017."
+        "alt": "Apple store sign in Amsterdam, photographed in 2017.",
+        "cdn_url": "https://images.unsplash.com/photo-1503852460961-aa7ffdd3d64d"
       },
       {
         "source": "https://unsplash.com/photos/an-apple-logo-on-the-side-of-a-building-Mr5UVmVdeKM",
@@ -57,7 +60,8 @@
         "source": "https://unsplash.com/photos/modern-glass-spheres-building-with-lush-green-trees-lEpwKNtGG2k",
         "credit": "Hiroko Nishimura / Unsplash",
         "year": "2025",
-        "alt": "Amazon headquarters glass spheres in Seattle, photographed in 2025."
+        "alt": "Amazon headquarters glass spheres in Seattle, photographed in 2025.",
+        "cdn_url": "https://images.unsplash.com/photo-1579545922550-75e3a190bb9e"
       },
       {
         "source": "https://unsplash.com/photos/the-amazon-logo-is-displayed-on-a-building-CLcmKictgSY",
@@ -68,10 +72,11 @@
     ],
     "GOOGL": [
       {
-        "source": "https://unsplash.com/photos/a-building-with-a-google-sign-on-the-front-of-it-ozxZtcfi7t0",
-        "credit": "Samuel Regan-Asante / Unsplash",
-        "year": "2024",
-        "alt": "Google offices at King's Cross in London, photographed in 2024."
+        "source": "https://unsplash.com/photos/low-angle-photo-of-curtain-wall-building-T9FyciKxlfU",
+        "cdn_url": "https://images.unsplash.com/photo-1488155436641-58ef42fcc44e",
+        "credit": "Stephen Bergin / Unsplash",
+        "year": "2017",
+        "alt": "Real photograph of the Google Dublin headquarters glass sky bridge and office facade in 2017."
       },
       {
         "source": "https://unsplash.com/photos/google-sign-fpZZEV0uQwA",
@@ -85,7 +90,8 @@
         "source": "https://unsplash.com/photos/a-keyboard-mouse-and-cell-phone-sitting-on-a-desk-jK_oDRU_Iv4",
         "credit": "Julio Lopez / Unsplash",
         "year": "2023",
-        "alt": "Real smartphone running Meta's Threads app beside a keyboard and mouse, photographed in 2023."
+        "alt": "Real smartphone running Meta's Threads app beside a keyboard and mouse, photographed in 2023.",
+        "cdn_url": "https://images.unsplash.com/photo-1689439518876-4243a1bb5554"
       },
       {
         "source": "https://unsplash.com/photos/a-person-holding-a-cell-phone-in-front-of-a-computer-hYycxvhw2Wo",
