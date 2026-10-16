@@ -27,7 +27,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m pip install --disable-pip-version-check -e .
+      - run: python -m pip install --disable-pip-version-check -e '.[dev]'
+      - name: Confirm 28-day schedule, sourcing and no-auto-publish safeguards
+        run: python -m pytest -q tests/test_mag7_pilot.py
       - name: Prepare one source-backed company research packet
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
