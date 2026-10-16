@@ -129,10 +129,35 @@ def load_company_report(content_dir: Path, ticker: str, legacy_articles=()):
     previous = current.get(previous_fp) if previous_fp else None
     latest_qoq = {k: percent(latest, previous, k) for k in METRICS}
     latest_figures = {k: money(latest["metrics"][k].get("current"), k) for k in METRICS}
+    # Keep the actual prior-year figures alongside each SEC-verified result.
+    # These support paired comparisons without fabricating an earlier filing.
+    latest_comparison = {}
+    for key in METRICS:
+        datum = latest["metrics"].get(key) or {}
+        current_value = datum.get("current")
+        prior_value = datum.get("prior_year")
+        if isinstance(current_value, (int, float)) and not isinstance(current_value, bool) and \
+                isinstance(prior_value, (int, float)) and not isinstance(prior_value, bool):
+            latest_comparison[key] = {
+                "current": current_value, "prior": prior_value,
+                "current_display": money(current_value, key),
+                "prior_display": money(prior_value, key),
+            }
+    margin_comparison = None
+    rev = latest_comparison.get("revenue")
+    net = latest_comparison.get("net_income")
+    if rev and net and rev["current"] > 0 and rev["prior"] > 0:
+        now_margin = round(net["current"] / rev["current"] * 100, 1)
+        prior_margin = round(net["prior"] / rev["prior"] * 100, 1)
+        margin_comparison = {
+            "current": now_margin, "prior": prior_margin,
+            "change_pp": round(now_margin - prior_margin, 1),
+        }
     data_out={"fy":fy,"latest_label":f"FY{fy} {latest['fp']}",
               "latest_end":latest["period_end"],"latest_filed":latest.get("filed",""),
               "latest_source":latest.get("source",""),"latest_form":latest.get("form",""),
-              "latest_figures":latest_figures,"latest_prev_label":f"FY{fy} {previous_fp}" if previous else None,
+              "latest_figures":latest_figures,"latest_comparison":latest_comparison,
+              "margin_comparison":margin_comparison,"latest_prev_label":f"FY{fy} {previous_fp}" if previous else None,
               "latest_qoq":latest_qoq,"updated":data.get("updated",""),
               "quarters":display,"q3q2":q3q2,"yoy":yoy,
               "total_revenue":money(totals["revenue"],"revenue") if totals else None,
