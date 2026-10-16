@@ -366,6 +366,22 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
     if "automated-earnings" in {str(tag).lower() for tag in meta.get("tags") or []}:
         return "skip:automated-earnings-text-only"
 
+    # The Mag 7 research series uses documentary photography only. A generic
+    # generated, rendered or illustrative cover is a hard publishing error.
+    if "mag7-research" in {str(tag).lower() for tag in meta.get("tags") or []} and is_published(meta):
+        credit = str(meta.get("hero_image_credit") or meta.get("image_credit") or "").strip()
+        source = str(meta.get("hero_image_source") or meta.get("image_source") or "").strip()
+        alt = str(meta.get("hero_image_alt") or meta.get("image_alt") or "").strip()
+        description = f"{credit} {alt}".lower()
+        prohibited = ("ai-generated", "ai generated", "synthetic", "illustration",
+                      "computer generated", "cgi", "rendered", "concept art")
+        if any(term in description for term in prohibited):
+            raise ValueError(f"Mag 7 article {slug} must use an authentic photograph, not synthetic imagery")
+        if not credit or not source.startswith("https://") or not alt:
+            raise ValueError(f"Mag 7 article {slug} lacks photographic credit, source or factual alt text")
+        if not (meta.get("hero_image_url") or meta.get("pexels_photo_id") or image_exists(meta)):
+            raise ValueError(f"Mag 7 article {slug} requires a specifically approved real photograph")
+
     # Locally produced, editorially approved covers are immutable. A missing
     # file is a publication error, never a reason to search for generic imagery.
     if meta.get("require_pinned_hero") and not meta.get("hero_image_url") and not meta.get("pexels_photo_id"):
@@ -390,6 +406,11 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
         try:
             hero_rel = f"/static/images/evergreen/{slug}.jpg"
             download(pinned_image_url, STATIC / hero_rel.removeprefix("/static/"))
+            if "mag7-research" in {str(tag).lower() for tag in meta.get("tags") or []}:
+                with Image.open(STATIC / hero_rel.removeprefix("/static/")) as photo:
+                    if photo.width < 1000 or photo.height < 600:
+                        raise ValueError("Mag 7 approved photo is too small for a quality hero")
+                    photo.verify()
             fields = {
                 "image": hero_rel,
                 "image_alt": str(meta.get("hero_image_alt") or f"Illustrative photo for {meta.get('title', 'Compound')}"),
