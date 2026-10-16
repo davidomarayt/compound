@@ -49,7 +49,10 @@ def test_tesla_first_article_is_original_source_backed_and_has_a_specific_hero()
     body = p.read_text(encoding="utf-8")
     assert "date: 2026-10-16" in body
     assert "draft: false" in body and "publication_status: published" in body
-    assert "/static/images/news/tesla-roadster-reveal-investment-case-2026.jpg" in body
+    assert "/static/images/evergreen/tesla-roadster-reveal-2026-investor-economics.jpg" in body
+    assert 'hero_image_url: "https://upload.wikimedia.org/' in body
+    assert "Steve Jurvetson" in body and "CC BY 2.0" in body
+    assert "April 2019" in body and "not a photograph from the 15 October 2026 event" in body
     assert "require_pinned_hero: true" in body
     assert "2028" in body and "not company guidance" in body.lower()
     assert "Reuters" in body and "www.sec.gov/Archives" in body
@@ -59,8 +62,8 @@ def test_tesla_first_article_is_original_source_backed_and_has_a_specific_hero()
     assert round(5000 * 200_000 / 94_827_000_000 * 100, 2) == 1.05
     assert round(10000 * 200_000 / 94_827_000_000 * 100, 2) == 2.11
     image_renderer = (ROOT / "scripts/render_editorial_heroes.py").read_text()
-    assert "def make_roadster():" in image_renderer
-    assert "make_roadster()" in image_renderer
+    assert "make_roadster" not in image_renderer
+    assert "tesla-roadster-reveal-investment-case-2026.jpg" not in image_renderer
 
 
 def test_workflow_drafts_issues_not_live_site():
