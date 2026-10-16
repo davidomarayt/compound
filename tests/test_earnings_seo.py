@@ -104,3 +104,61 @@ def test_same_calendar_and_fiscal_year_does_not_repeat_year_in_title():
     assert "Q2 FY2026 Earnings" in output["title"]
     assert "(June 2026)" not in output["title"]
     assert "Quarter ended 30 June 2026" in output["period_subtitle"]
+
+
+def test_all_twenty_have_unique_filing_grounded_investor_lenses_and_comparison_bars():
+    from compound.site.earnings_seo import INVESTOR_LENSES
+    assert len(INVESTOR_LENSES) == 20
+    assert set(INVESTOR_LENSES) == set(PRIORITY)
+    all_topics = set()
+    for ticker in ORDER:
+        report = load_company_report(ROOT / "content", ticker)
+        seo = build_earnings_seo({"symbol": ticker}, report)
+        premium = seo["premium"]
+        assert len(premium["lenses"]) == 3, ticker
+        topics = tuple(item["title"] for item in premium["lenses"])
+        assert len(set(topics)) == 3, ticker
+        all_topics.update(topics)
+        assert len(premium["rows"]) == 3, ticker
+        for row in premium["rows"]:
+            assert 0 <= row["current_width"] <= 100, ticker
+            assert 0 <= row["prior_width"] <= 100, ticker
+            assert row["current"] == report["latest_comparison"][row["key"]]["current_display"]
+            assert row["prior"] == report["latest_comparison"][row["key"]]["prior_display"]
+        margin = report["margin_comparison"]
+        if margin:
+            assert round(margin["current"] - margin["prior"], 1) == margin["change_pp"]
+        assert all("why" not in item for item in premium["lenses"])
+    assert len(all_topics) >= 45, "Not enough company-specific differentiation"
+
+
+def test_comparative_card_uses_real_periods_and_handles_losses():
+    from compound.site.earnings_seo import _premium_dashboard
+    report = {
+        "yoy": {"revenue": 5.0, "net_income": None, "diluted_eps": None},
+        "latest_comparison": {
+            "revenue": {"current": 105, "prior": 100,
+                        "current_display": "$105", "prior_display": "$100"},
+            "net_income": {"current": -5, "prior": 10,
+                           "current_display": "−$5", "prior_display": "$10"},
+        },
+        "margin_comparison": {"current": -4.8, "prior": 10, "change_pp": -14.8},
+    }
+    out = _premium_dashboard("TSLA", report)
+    assert out["rows"][0]["current_width"] == 100
+    assert out["rows"][0]["prior_width"] == 95.2
+    assert out["rows"][1]["current_negative"] is True
+    assert out["rows"][1]["prior_negative"] is False
+    assert any("narrowed by 14.8 percentage points" in item for item in out["insights"])
+
+
+def test_premium_sections_are_rendered_before_market_chart_and_are_mobile_styled():
+    template = (ROOT / "compound/site/templates/earnings_company.html").read_text()
+    css = (ROOT / "compound/site/static/earnings.css").read_text()
+    assert 'id="earnings-investor-lens"' in template
+    assert "This period versus a year earlier" in template
+    assert "Company-specific diligence" in template
+    assert template.index('id="earnings-investor-lens"') < template.index("{{ tradingview_panel|safe }}")
+    assert template.count("{{ tradingview_panel|safe }}") == 1
+    assert "earnings-premium-bar-row" in css
+    assert "@media(max-width:420px)" in css
