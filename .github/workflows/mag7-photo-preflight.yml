@@ -1,0 +1,36 @@
+name: Mag7 Approved Photo Preflight
+on:
+  push:
+    branches: ['claude/clever-babbage-uibieq']
+    paths:
+      - 'scripts/mag7_autopublish.py'
+      - 'content/mag7-photo-library.json'
+      - '.github/workflows/mag7-photo-preflight.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-microsoft-photo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check -e .
+      - name: Verify genuine licensed Microsoft cover will be retrievable
+        run: |
+          python - <<'PY'
+          import sys
+          from pathlib import Path
+          sys.path.insert(0,'scripts')
+          from mag7_autopublish import photo_for,fetch_real_photo
+          source=photo_for('MSFT',1)
+          target=Path('/tmp/mag7-microsoft-cover.jpg')
+          fetch_real_photo(source,target)
+          from PIL import Image
+          with Image.open(target) as img:
+              assert img.size==(1600,900)
+          print('PASS real licensed Microsoft photograph:',source['source'],target.stat().st_size,'bytes')
+          PY
