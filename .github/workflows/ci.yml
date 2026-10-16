@@ -42,6 +42,8 @@ jobs:
         with:
           node-version: "22"
       - run: pip install -e .
+      - name: Render approved bespoke covers for the performance audit
+        run: python scripts/render_editorial_heroes.py
       - name: Attach images to published News stories
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
