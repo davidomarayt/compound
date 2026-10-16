@@ -12,11 +12,15 @@ approved_by: "Commissioned in conversation: first Mag 7 company research article
 summary: "Tesla's October 2026 Roadster unveiling was a striking engineering demonstration. But a simple revenue model shows why its significance to shareholders may be more about the brand than sales."
 meta_description: "Tesla Roadster reveal 2026: explore the flying prototype, 2028 production target and original revenue scenarios for TSLA shareholders."
 tags: [news, wealth, tesla, tsla, mag7-research, roadster, stocks, electric-vehicles, investor-research]
-image: /static/images/news/tesla-roadster-reveal-investment-case-2026.jpg
-social_image: /static/images/news/tesla-roadster-reveal-investment-case-2026.jpg
-image_alt: "Original editorial illustration of a futuristic red electric roadster with thruster jets and the question of its financial value; not a photograph of the unveiling."
-image_credit: "Original editorial illustration: Compound.ie"
-image_source: https://compound.ie/news/tesla-roadster-reveal-2026-investor-economics/
+image: /static/images/evergreen/tesla-roadster-reveal-2026-investor-economics.jpg
+social_image: /static/images/evergreen/tesla-roadster-reveal-2026-investor-economics.jpg
+image_alt: "Real photograph of the red second-generation Tesla Roadster prototype at Tesla HQ in April 2019. Archival image, not footage of the 15 October 2026 unveiling."
+image_credit: "Steve Jurvetson / Wikimedia Commons (CC BY 2.0; photographed 2019)"
+image_source: "https://commons.wikimedia.org/wiki/File:Tesla_Roadster_2.0_(47619421652).jpg"
+hero_image_url: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Tesla_Roadster_2.0_%2847619421652%29.jpg"
+hero_image_alt: "Real photograph of the red second-generation Tesla Roadster prototype at Tesla HQ in April 2019. Archival image, not footage of the 15 October 2026 unveiling."
+hero_image_credit: "Steve Jurvetson / Wikimedia Commons (CC BY 2.0; photographed 2019)"
+hero_image_source: "https://commons.wikimedia.org/wiki/File:Tesla_Roadster_2.0_(47619421652).jpg"
 require_pinned_hero: true
 sources:
   - title: "Reuters, 15 October 2026 — Roadster demonstration, production target, reservation deposits and unannounced final pricing"
@@ -28,6 +32,8 @@ sources:
   - title: "Tesla Q2 2026 Form 10-Q — revenue, operating income and earnings per share"
     url: https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm
 ---
+
+*Cover photograph: Tesla's second-generation Roadster prototype photographed at Tesla HQ in April 2019 by Steve Jurvetson (CC BY 2.0). This is an archival photo, not a photograph from the 15 October 2026 event. [Original image and licence](https://commons.wikimedia.org/wiki/File:Tesla_Roadster_2.0_(47619421652).jpg).*
 
 The new Tesla Roadster has finally had its moment. At a **15 October 2026** event at SpaceX's McGregor facility in Texas, a prototype used fans and thrusters to negotiate an inverted ramp, turn in the air and jump past a lineup of Tesla vehicles. The display was extraordinary. It also left the most important investor question unanswered: **how much money can this car realistically make?**
 
