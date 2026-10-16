@@ -46,7 +46,13 @@ def fetch_real_photo(photo: dict, target: Path) -> None:
     page_url = photo["source"].rstrip("/")
     headers = {"User-Agent": "Mozilla/5.0 (Compound.ie documentary photo fetch)", "Accept": "*/*"}
     with httpx.Client(timeout=45, follow_redirects=True, headers=headers) as client:
-        response = client.get(page_url + "/download?force=true&w=1800")
+        cdn_url = photo.get("cdn_url", "")
+        if cdn_url:
+            if not cdn_url.startswith("https://images.unsplash.com/photo-"):
+                raise ValueError("Unapproved photo CDN")
+            response = client.get(cdn_url + "?fit=crop&w=1800&q=85&fm=jpg")
+        else:
+            response = client.get(page_url + "/download?force=true&w=1800")
         if not response.headers.get("content-type", "").lower().startswith("image/"):
             page = client.get(page_url, headers={"User-Agent": headers["User-Agent"], "Accept": "text/html"})
             page.raise_for_status()
