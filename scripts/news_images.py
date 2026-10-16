@@ -221,7 +221,7 @@ def download(url: str, destination: Path) -> None:
         follow_redirects=True,
         headers={
             "User-Agent": "CompoundIE-Editorial/1.0 (https://compound.ie; contact via https://compound.ie/contact/)",
-            "Accept": "image/avif,image/webp,image/jpeg,image/png,image/*;q=0.8",
+            "Accept": "image/jpeg,image/png,image/*;q=0.8",
         },
     ) as client:
         response = client.get(url)
