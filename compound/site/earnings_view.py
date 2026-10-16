@@ -78,7 +78,7 @@ def load_company_report(content_dir: Path, ticker: str, legacy_articles=()):
         if v is None:
             return "—"
         if key == "diluted_eps":
-            return f"${v:,.2f}"
+            return f"−${abs(v):,.2f}" if v < 0 else f"${v:,.2f}"
         val = abs(v)
         sign = "−" if v<0 else ""
         return f"{sign}${val/1e9:,.2f}bn" if val>=1e9 else (
