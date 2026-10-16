@@ -1,0 +1,72 @@
+# Four-week company research pilot: issue review only, no auto-publishing.
+name: Mag 7 Research Desk
+on:
+  schedule:
+    - cron: '17 8 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'YYYY-MM-DD (optional; within the pilot)'
+        type: string
+        required: false
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: compound-mag7-editorial
+  cancel-in-progress: false
+
+jobs:
+  research-and-commission:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check -e .
+      - name: Prepare one source-backed company research packet
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MAG7_MODEL: ${{ vars.MAG7_MODEL }}
+          ASSIGNMENT_DATE: ${{ inputs.date }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=()
+          if [ -n "$ASSIGNMENT_DATE" ]; then
+            args=(--date "$ASSIGNMENT_DATE")
+          fi
+          python scripts/mag7_pilot.py "${args[@]}" --output mag7-review.md || {
+            code=$?
+            if [ "$code" -eq 3 ]; then
+              echo "Outside the four-week pilot: no further drafts."
+              exit 0
+            fi
+            exit "$code"
+          }
+      - name: Create one review issue, never a published article
+        if: hashFiles('mag7-review.md') != ''
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ASSIGNMENT_DATE: ${{ inputs.date }}
+        run: |
+          set -euo pipefail
+          date_key="${ASSIGNMENT_DATE:-$(date -u +%F)}"
+          ticker="$(sed -n '1s/.*(\([A-Z]*\)).*/\1/p' mag7-review.md)"
+          if [ -z "$ticker" ]; then
+            echo "Missing company ticker in research packet" >&2
+            exit 1
+          fi
+          title="[MAG7 $date_key $ticker] Editorial research and draft review"
+          if gh issue list --state all --limit 300 --json title \
+               --jq '.[].title' | grep -Fxq "$title"; then
+            echo "Review issue already exists: $title"
+            exit 0
+          fi
+          gh issue create --title "$title" --body-file mag7-review.md
+          echo "Review issue created; automatic publication is disabled."
