@@ -64,6 +64,27 @@ jobs:
           assert "wealth-household-income-split-2027.svg" in page
           print("PASS: bespoke cover, comparison graphic and OG/Twitter metadata all rendered")
           PY
+      - name: Verify first Mag 7 editorial story, bespoke Roadster cover and social metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          cover = Path("public/static/images/news/tesla-roadster-reveal-investment-case-2026.jpg")
+          page = Path("public/news/tesla-roadster-reveal-2026-investor-economics/index.html")
+          assert cover.is_file() and cover.stat().st_size > 50000, "Original Roadster illustration missing or empty"
+          with Image.open(cover) as im:
+              assert im.format == "JPEG" and im.size == (1600, 900)
+          assert page.is_file(), "Tesla Roadster research URL missing"
+          html = page.read_text(encoding="utf-8")
+          assert '/static/images/news/tesla-roadster-reveal-investment-case-2026.jpg' in html
+          assert "Original editorial illustration" in html
+          assert 'property="og:image"' in html and 'name="twitter:image"' in html
+          assert "0.21%" in html and "2.11%" in html
+          assert '/stocks/tsla/' in html
+          print("PASS: Mag 7 editorial article, independent image, source-backed model and OG/Twitter metadata")
+          PY
       - name: Verify Mag 7 and thirteen additional earnings SEO profiles
         shell: bash
         run: |
