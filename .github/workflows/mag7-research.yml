@@ -1,4 +1,5 @@
-# Four-week company research pilot: issue review only, no auto-publishing.
+# Daily pilot (16 October–12 November 2026); no human pre-approval.
+# Publish only after SEC-backed research, independent fact check, real photo and build QA.
 name: Mag 7 Research Desk
 on:
   schedule:
@@ -6,69 +7,132 @@ on:
   workflow_dispatch:
     inputs:
       date:
-        description: 'YYYY-MM-DD (optional; within the pilot)'
+        description: 'YYYY-MM-DD in the four-week pilot; blank means today'
         type: string
         required: false
 
 permissions:
-  contents: read
+  contents: write
   issues: write
+  actions: write
 
 concurrency:
   group: compound-mag7-editorial
   cancel-in-progress: false
 
 jobs:
-  research-and-commission:
+  research-and-publish:
+    if: github.ref == 'refs/heads/claude/clever-babbage-uibieq'
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 28
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: claude/clever-babbage-uibieq
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - run: python -m pip install --disable-pip-version-check -e '.[dev]'
-      - name: Confirm 28-day schedule, sourcing and no-auto-publish safeguards
-        run: python -m pytest -q tests/test_mag7_pilot.py
-      - name: Prepare one source-backed company research packet
+      - name: Test rotation, financial data, photo and publishing safeguards
+        run: python -m pytest -q tests/test_mag7_pilot.py tests/test_mag7_autopublish.py
+      - name: Research, draft, independently check and prepare a single article
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           MAG7_MODEL: ${{ vars.MAG7_MODEL }}
+          MAG7_EDITOR_MODEL: ${{ vars.MAG7_EDITOR_MODEL }}
           ASSIGNMENT_DATE: ${{ inputs.date }}
         shell: bash
         run: |
           set -euo pipefail
           args=()
-          if [ -n "$ASSIGNMENT_DATE" ]; then
-            args=(--date "$ASSIGNMENT_DATE")
-          fi
-          python scripts/mag7_pilot.py "${args[@]}" --output mag7-review.md || {
+          if [ -n "$ASSIGNMENT_DATE" ]; then args=(--date "$ASSIGNMENT_DATE"); fi
+          python scripts/mag7_autopublish.py "${args[@]}" --output mag7-review.md || {
             code=$?
             if [ "$code" -eq 3 ]; then
-              echo "Outside the four-week pilot: no further drafts."
+              echo "Pilot ended: no new articles."
               exit 0
             fi
             exit "$code"
           }
-      - name: Create one review issue, never a published article
+      - name: Verify licensed cover, SEO and site build before committing
+        id: prepublish
         if: hashFiles('mag7-review.md') != ''
+        env:
+          SITE_BASE_URL: https://compound.ie
+          PREVIEW_BASE_URL: https://compound.ie
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         shell: bash
+        run: |
+          set -euo pipefail
+          if ! grep -Fq '**Status: accepted for automatic publication**' mag7-review.md; then
+            echo "No research passed all publication checks."
+            echo "new_article=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "new_article=true" >> "$GITHUB_OUTPUT"
+          python scripts/render_editorial_heroes.py
+          python scripts/news_images.py
+          compound build
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          from PIL import Image
+          note = Path('mag7-review.md').read_text(encoding='utf-8')
+          match = re.search(r'https://compound.ie/wealth/([a-z0-9-]+)/', note)
+          assert match, 'Missing approved article URL'
+          slug = match.group(1)
+          html = Path('public/wealth') / slug / 'index.html'
+          photo = Path('public/static/images/evergreen') / (slug+'.jpg')
+          assert html.is_file(), 'The page does not exist in the build'
+          assert photo.is_file(), 'The authentic image is missing'
+          with Image.open(photo) as image:
+              assert image.size == (1600, 900)
+              image.verify()
+          page = html.read_text(encoding='utf-8')
+          assert 'property="og:image"' in page and 'name="twitter:image"' in page
+          assert '/static/images/evergreen/'+slug+'.jpg' in page
+          assert 'Unsplash' in page
+          assert 'automatically published' in page.lower()
+          print('PASS: article, licensed photo, social images and site build')
+          PY
+      - name: Commit article and trigger GitHub Pages deployment
+        id: publish
+        if: steps.prepublish.outputs.new_article == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- content/wealth/ compound/site/static/images/evergreen/
+          if git diff --cached --quiet; then
+            echo "Nothing new to publish."
+            exit 0
+          fi
+          git commit -m 'Publish checked Mag7 research with authentic photograph'
+          git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push origin HEAD:"$GITHUB_REF_NAME"
+          gh workflow run site.yml --ref "$GITHUB_REF_NAME"
+          printf '\n**Article committed; Pages deployment dispatched (verify the live URL).**\n' >> mag7-review.md
+      - name: Record failed publication gate
+        if: failure() && hashFiles('mag7-review.md') != ''
+        run: printf '\n**Publication BLOCKED by a check/build/push error. Do not treat this as live.**\n' >> mag7-review.md
+      - name: Create retrospective audit issue for review
+        if: always() && hashFiles('mag7-review.md') != ''
         env:
           GH_TOKEN: ${{ github.token }}
           ASSIGNMENT_DATE: ${{ inputs.date }}
+        shell: bash
         run: |
           set -euo pipefail
-          date_key="${ASSIGNMENT_DATE:-$(date -u +%F)}"
-          ticker="$(sed -n '1s/.*(\([A-Z]*\)).*/\1/p' mag7-review.md)"
-          if [ -z "$ticker" ]; then
-            echo "Missing company ticker in research packet" >&2
-            exit 1
-          fi
-          title="[MAG7 $date_key $ticker] Editorial research and draft review"
+          day="${ASSIGNMENT_DATE:-$(date -u +%F)}"
+          ticker="$(sed -n '1s/.* \([A-Z][A-Z]*\) review record.*/\1/p' mag7-review.md)"
+          test -n "$ticker"
+          title="[MAG7 $day $ticker] Automatic research and publication audit"
           if gh issue list --state all --limit 300 --json title \
                --jq '.[].title' | grep -Fxq "$title"; then
-            echo "Review issue already exists: $title"
+            echo "Audit issue already exists."
             exit 0
           fi
           gh issue create --title "$title" --body-file mag7-review.md
-          echo "Review issue created; automatic publication is disabled."
