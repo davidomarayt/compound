@@ -90,56 +90,6 @@ def make():
     print(f"Approved editorial hero generated: {OUTPUT}")
 
 
-def make_roadster():
-    """Bespoke Roadster investment illustration. No unlicensed reveal photography."""
-    target = ROOT / "compound/site/static/images/news/tesla-roadster-reveal-investment-case-2026.jpg"
-    im = Image.new("RGB", (W, H), "#0c1726")
-    d = ImageDraw.Draw(im)
-    # Night-time editorial backdrop, smoke and launch-trail atmosphere.
-    for y in range(H):
-        t = y / H
-        d.line((0, y, W, y), fill=(int(11+13*t), int(22+7*t), int(40+12*t)))
-    for x in range(0, W, 27):
-        d.line((x, 480, max(0, x - 230), 892), fill="#243143", width=2)
-    d.ellipse((910, 310, 1850, 1300), fill="#203446")
-    d.ellipse((1260, 420, 1970, 1080), fill="#2c3c4d")
-    d.rounded_rectangle((72, 62, 1528, 833), 33, outline="#405167", width=3)
-    d.rounded_rectangle((115, 103, 425, 148), 12, fill="#e8e5de")
-    text(d, (140, 113), "COMPOUND / STOCKS", 22, "#243147", True)
-    text(d, (1485, 118), "16 OCT 2026", 23, "#a8bdcf", True, anchor="ra")
-    text(d, (114, 177), "THE TESLA ROADSTER", 60, "#ffffff", True)
-    text(d, (116, 252), "A spectacular demo.", 54, "#fa796d", True)
-    text(d, (116, 330), "But what is it worth?", 54, "#f2f2f0", True)
-    d.line((116, 425, 860, 425), fill="#71859c", width=3)
-    text(d, (117, 445), "PROTOTYPE  /  2028 PRODUCTION TARGET", 22, "#bcd0db", True)
-    # Artist's stylised EV silhouette and thruster beams, distinct from news footage.
-    d.polygon([(905, 665), (964, 599), (1050, 568), (1185, 559),
-               (1247, 519), (1360, 528), (1433, 585), (1494, 610),
-               (1529, 648), (1514, 703), (882, 703)], fill="#b52c37")
-    d.polygon([(1034, 573), (1169, 570), (1239, 529),
-               (1353, 538), (1408, 584)], fill="#1a2a3b")
-    d.line((900, 662, 1526, 662), fill="#f57973", width=10)
-    d.polygon([(904, 669), (955, 639), (949, 680)], fill="#e8c8ba")
-    for cx in (1035, 1410):
-        d.ellipse((cx-53, 650, cx+53, 758), fill="#0d131c", outline="#718292", width=6)
-        d.ellipse((cx-22, 681, cx+22, 724), fill="#738090", outline="#bdc6cd", width=3)
-    for cx, cy in ((1266, 713), (1324, 714), (1375, 708)):
-        d.polygon([(cx-13, cy), (cx+10, cy), (cx+65, cy+143),
-                   (cx-33, cy+151)], fill="#4e9bb6")
-        d.polygon([(cx-7, cy), (cx+6, cy), (cx+21, cy+112),
-                   (cx-16, cy+117)], fill="#d4e8df")
-    d.line((784, 774, 1524, 774), fill="#668097", width=4)
-    text(d, (114, 747), "2025 TESLA REVENUE", 22, "#a6c0ce", True)
-    text(d, (115, 778), "$94.83bn", 46, "#ffffff", True)
-    text(d, (515, 803), "Roadster revenue scenarios inside", 23, "#e7c7c5")
-    text(d, (1484, 806), "ORIGINAL ILLUSTRATION — NOT EVENT FOOTAGE", 15, "#b4c0c9", True, anchor="ra")
-    target.parent.mkdir(parents=True, exist_ok=True)
-    im.save(target, "JPEG", quality=93, optimize=True, progressive=True, subsampling=0)
-    with Image.open(target) as check:
-        assert check.format == "JPEG" and check.size == (W, H)
-    print(f"Original Roadster investment cover: {target}")
-
 
 if __name__ == "__main__":
     make()
-    make_roadster()
