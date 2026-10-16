@@ -73,7 +73,7 @@ def test_workflow_auto_publishes_only_after_checks_and_records_audit():
     assert "scripts/mag7_autopublish.py" in wf
     assert "tests/test_mag7_autopublish.py" in wf
     assert "scripts/news_images.py" in wf and "compound build" in wf
-    assert wf.index("compound build") < wf.index("git add -A")
+    assert wf.index("compound build") < wf.index("git add --")
     assert "gh workflow run site.yml" in wf
     assert "gh issue create" in wf
     assert "Publication BLOCKED" in wf
