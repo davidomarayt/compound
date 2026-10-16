@@ -1,4 +1,4 @@
-"""Mag 7 pilot safety: four weeks only, no publication without editorial approval."""
+"""Mag 7 pilot safety: four weeks, vetted source data, automatic publication gates."""
 from datetime import date, timedelta
 from pathlib import Path
 import importlib.util
@@ -36,8 +36,8 @@ def test_primary_filing_and_distinct_editorial_themes_for_every_company():
 def test_packet_is_a_review_artefact_with_explicit_guardrails():
     date_key = date(2026, 10, 17)
     packet = module.brief(date_key, "MSFT", 1, module.latest_sec("MSFT"), [], [])
-    assert "Review required, not published" in packet
-    assert "No auto-publish" in packet
+    assert "Evidence packet for automated quality-gated publication" in packet
+    assert "independent fact, source, arithmetic" in packet
     assert "Revenue" in packet and "Diluted EPS" in packet
     assert "/stocks/msft/" in packet and "/wealth/earnings/" in packet
     assert "never reuse stock desks" in packet
@@ -66,11 +66,14 @@ def test_tesla_first_article_is_original_source_backed_and_has_a_specific_hero()
     assert "tesla-roadster-reveal-investment-case-2026.jpg" not in image_renderer
 
 
-def test_workflow_drafts_issues_not_live_site():
+def test_workflow_auto_publishes_only_after_checks_and_records_audit():
     wf = (ROOT / ".github/workflows/mag7-research.yml").read_text()
     assert "cron: '17 8 * * *'" in wf
+    assert "contents: write" in wf and "actions: write" in wf and "issues: write" in wf
+    assert "scripts/mag7_autopublish.py" in wf
+    assert "tests/test_mag7_autopublish.py" in wf
+    assert "scripts/news_images.py" in wf and "compound build" in wf
+    assert wf.index("compound build") < wf.index("git add -A")
+    assert "gh workflow run site.yml" in wf
     assert "gh issue create" in wf
-    assert "--output mag7-review.md" in wf
-    assert "permissions:" in wf and "issues: write" in wf
-    assert "git push" not in wf
-    assert "compound build" not in wf
+    assert "Publication BLOCKED" in wf
