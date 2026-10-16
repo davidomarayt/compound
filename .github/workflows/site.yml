@@ -440,6 +440,12 @@ jobs:
           }
 
           fetch https://compound.ie/ /tmp/home.html
+          fetch https://compound.ie/news/tesla-roadster-reveal-2026-investor-economics/ /tmp/mag7-tesla.html
+          grep -Fq 'Tesla' /tmp/mag7-tesla.html
+          grep -Fq '0.21%' /tmp/mag7-tesla.html
+          grep -Fq 'tesla-roadster-reveal-investment-case-2026.jpg' /tmp/mag7-tesla.html
+          fetch https://compound.ie/static/images/news/tesla-roadster-reveal-investment-case-2026.jpg /tmp/mag7-tesla-cover.jpg
+          test "$(wc -c </tmp/mag7-tesla-cover.jpg)" -gt 50000
           # Verify this new publication itself, not only previously established routes.
           fetch https://compound.ie/wealth/compare-solar-panel-quotes-ireland/ /tmp/solar-quote-buyer-guide.html
           grep -Fq 'How to Compare Solar Panel Quotes' /tmp/solar-quote-buyer-guide.html
