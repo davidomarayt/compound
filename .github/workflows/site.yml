@@ -404,6 +404,8 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -e .
+      - name: Render approved bespoke covers for mobile QA
+        run: python scripts/render_editorial_heroes.py
       - name: Attach required News photos before the QA rebuild
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
