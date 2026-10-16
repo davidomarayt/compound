@@ -72,7 +72,7 @@ SEC filing results described here.
     assert "refreshChartSize" in js
     assert "hide_top_toolbar: mobile, hide_legend: mobile, hide_volume: mobile" in js
     assert "chartOnly: mobile" in js
-    assert 'earnings.css?v=10' in profile
+    assert 'earnings.css?v=11' in profile
     assert 'earnings.css' not in report
 
 
