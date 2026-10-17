@@ -2,33 +2,33 @@
   "cik": 86312,
   "company": "Travelers Companies (The)",
   "latest": {
-    "accession": "0000086312-26-000145",
-    "filed": "2026-07-17",
+    "accession": "0000086312-26-000181",
+    "filed": "2026-10-16",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 10.26,
-        "prior_year": 6.53,
+        "current": 9.04,
+        "prior_year": 8.24,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 2208000000,
-        "prior_year": 1509000000,
+        "current": 1917000000,
+        "prior_year": 1888000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 12153000000,
-        "prior_year": 12116000000,
+        "current": 12412000000,
+        "prior_year": 12470000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/86312/000008631226000145/trv-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/86312/000008631226000181/trv-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/86312/000008631226000145/trv-20260630.htm"
+    },
+    {
+      "accession": "0000086312-26-000181",
+      "filed": "2026-10-16",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 9.04,
+          "prior_year": 8.24,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1917000000,
+          "prior_year": 1888000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 12412000000,
+          "prior_year": 12470000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/86312/000008631226000181/trv-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TRV",
-  "updated": "2026-10-15"
+  "updated": "2026-10-17"
 }
