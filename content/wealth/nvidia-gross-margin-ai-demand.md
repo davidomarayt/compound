@@ -4,11 +4,11 @@ seo_title: 'Nvidia’s 75% Gross Margin: Growth, Pricing and Risk'
 slug: nvidia-gross-margin-ai-demand
 pillar: wealth
 canonical_path: /wealth/nvidia-gross-margin-ai-demand/
-draft: true
-publication_status: draft
+draft: false
+publication_status: published
 date: '2026-10-18'
 reviewed: '2026-10-18'
-editorial_status: Source-checked draft; independent publication review pending
+editorial_status: Source-checked manual article; publisher approved publication on 2026-10-18
 summary: Nvidia’s 75% gross margin makes small changes worth billions. Explore customer concentration, AI demand and a transparent
   margin sensitivity calculation.
 meta_description: Nvidia’s 75% gross margin makes small changes worth billions. Explore customer concentration, AI demand

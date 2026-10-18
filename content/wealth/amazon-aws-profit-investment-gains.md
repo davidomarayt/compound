@@ -4,11 +4,11 @@ seo_title: 'Amazon Profit Quality: AWS vs Investment Gains'
 slug: amazon-aws-profit-investment-gains
 pillar: wealth
 canonical_path: /wealth/amazon-aws-profit-investment-gains/
-draft: true
-publication_status: draft
+draft: false
+publication_status: published
 date: '2026-10-18'
 reviewed: '2026-10-18'
-editorial_status: Source-checked draft; independent publication review pending
+editorial_status: Source-checked manual article; publisher approved publication on 2026-10-18
 summary: Amazon’s profit surge includes investment gains. Separate AWS operating earnings from accounting gains and cash flow
   with clear, sourced calculations.
 meta_description: Amazon’s profit surge includes investment gains. Separate AWS operating earnings from accounting gains and

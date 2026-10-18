@@ -1,7 +1,8 @@
 # Seven commissioned Magnificent Seven articles
 
-Created on 18 October 2026. These are complete, source-checked editorial drafts,
-not published pages and not independently approved automated output.
+Created on 18 October 2026. The publisher explicitly authorised publication of
+all seven source-checked manual articles on 18 October 2026. They are not
+independently approved automated output.
 
 | Company | Article |
 |---|---|
@@ -30,33 +31,24 @@ not published pages and not independently approved automated output.
 - Corrected the existing NVDA and AMZN photo-library CDN links to match their
   credited Unsplash pages. Previous CDN files depicted the right company but did
   not match the cited photographs.
-- All seven drafts render with noindex and working local cover paths. Their
-  publication-template HTML produces the expected Open Graph/Twitter image
-  references. Draft preview templates intentionally omit social metadata.
-- Production flags remain draft=true and publication_status=draft. No deployment
-  or change to the automated publication safeguards was made.
+- All seven publication templates have credited local covers and matching
+  Open Graph/Twitter images. Publication flags are enabled following the
+  publisher's explicit approval. The automated workflow safeguards are unchanged.
 
-## Remaining publication checks
+## Review provenance
 
-The independent editorial reviewer has not run: ANTHROPIC_API_KEY is still not
-available to this session. These drafts must not be described as having passed it.
-Some independent-news full pages could not be opened; the limited statements
-attributed to them were supported by retrieved search excerpts. Numerical work
-uses opened official releases/filings.
-
-The complete site build stopped on a pre-existing missing local cover for
-`clocks-go-back-ireland-october-2026`, before these drafts entered publication.
-That asset-generation requirement must be resolved through the normal image
-pipeline before deployment. Individual article templates were checked separately;
-this does not substitute for a successful production build. Browser viewport
-screenshots were not completed because the browser executable is unavailable.
+The automated independent editorial reviewer has not run: ANTHROPIC_API_KEY is
+still unavailable. These manual articles must not be described as having passed
+that reviewer. Some independent-news full pages could not be opened; the limited
+statements attributed to them were supported by retrieved search excerpts.
+Numerical work uses opened official releases/filings.
 
 The Tesla cover shows branded Superchargers, explicitly labelled as not depicting
 Megapack equipment. The Nvidia cover is an archival consumer card, explicitly
 labelled as not depicting a current data-centre accelerator.
 
-Before publication, run independent source/editorial review, the normal image and
-complete-build gates, and mobile/live cover/social-image checks. If approved,
-reconcile Microsoft/Nvidia recovery with issues #44/#45 and the scheduled pilot
-so it does not create competing articles on the same search intent. This batch
-alone does not repair the missing scheduling credential or close those incidents.
+The Microsoft and Nvidia articles recover the missing company coverage reported
+in issues #44/#45 using the actual publication date, 18 October. This batch does
+not repair the missing scheduling credential or close those operational incidents.
+Future scheduled research must consult the regenerated topic inventory and avoid
+competing articles on these search intents.

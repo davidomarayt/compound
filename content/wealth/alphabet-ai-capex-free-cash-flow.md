@@ -4,11 +4,11 @@ seo_title: 'Alphabet AI Spending: Cloud Growth vs Free Cash Flow'
 slug: alphabet-ai-capex-free-cash-flow
 pillar: wealth
 canonical_path: /wealth/alphabet-ai-capex-free-cash-flow/
-draft: true
-publication_status: draft
+draft: false
+publication_status: published
 date: '2026-10-18'
 reviewed: '2026-10-18'
-editorial_status: Source-checked draft; independent publication review pending
+editorial_status: Source-checked manual article; publisher approved publication on 2026-10-18
 summary: Alphabet’s Cloud business is growing, yet quarterly free cash flow turned negative. Examine the spending bridge,
   investment gains and the key trade-offs.
 meta_description: Alphabet’s Cloud business is growing, yet quarterly free cash flow turned negative. Examine the spending

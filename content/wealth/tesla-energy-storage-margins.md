@@ -4,11 +4,11 @@ seo_title: 'Tesla Energy Storage: Deployments vs Profit Margins'
 slug: tesla-energy-storage-margins
 pillar: wealth
 canonical_path: /wealth/tesla-energy-storage-margins/
-draft: true
-publication_status: draft
+draft: false
+publication_status: published
 date: '2026-10-18'
 reviewed: '2026-10-18'
-editorial_status: Source-checked draft; independent publication review pending
+editorial_status: Source-checked manual article; publisher approved publication on 2026-10-18
 summary: Tesla deployed 13.7 GWh of storage in Q3. Before its October results, examine why deployment growth alone cannot
   establish energy revenue or profitability.
 meta_description: Tesla deployed 13.7 GWh of storage in Q3. Before its October results, examine why deployment growth alone

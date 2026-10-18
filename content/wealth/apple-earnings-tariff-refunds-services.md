@@ -4,11 +4,11 @@ seo_title: 'Apple Earnings Quality: Tariff Refunds and Services'
 slug: apple-earnings-tariff-refunds-services
 pillar: wealth
 canonical_path: /wealth/apple-earnings-tariff-refunds-services/
-draft: true
-publication_status: draft
+draft: false
+publication_status: published
 date: '2026-10-18'
 reviewed: '2026-10-18'
-editorial_status: Source-checked draft; independent publication review pending
+editorial_status: Source-checked manual article; publisher approved publication on 2026-10-18
 summary: Apple’s earnings rose sharply, but tariff refunds helped. We calculate growth without that disclosed benefit and
   examine Services’ share of gross profit.
 meta_description: Apple’s earnings rose sharply, but tariff refunds helped. We calculate growth without that disclosed benefit

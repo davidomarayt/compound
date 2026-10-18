@@ -4,11 +4,11 @@ seo_title: 'Meta Advertising Growth: The AI Cash-Flow Test'
 slug: meta-advertising-growth-ai-cash-flow
 pillar: wealth
 canonical_path: /wealth/meta-advertising-growth-ai-cash-flow/
-draft: true
-publication_status: draft
+draft: false
+publication_status: published
 date: '2026-10-18'
 reviewed: '2026-10-18'
-editorial_status: Source-checked draft; independent publication review pending
+editorial_status: Source-checked manual article; publisher approved publication on 2026-10-18
 summary: Meta’s advertising engine is growing, but infrastructure consumes most operating cash. Examine pricing, impressions
   and the test for lasting AI returns.
 meta_description: Meta’s advertising engine is growing, but infrastructure consumes most operating cash. Examine pricing,

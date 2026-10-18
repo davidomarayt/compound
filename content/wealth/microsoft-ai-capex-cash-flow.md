@@ -4,11 +4,11 @@ seo_title: 'Microsoft AI Spending: Azure Growth vs Cash Flow'
 slug: microsoft-ai-capex-cash-flow
 pillar: wealth
 canonical_path: /wealth/microsoft-ai-capex-cash-flow/
-draft: true
-publication_status: draft
+draft: false
+publication_status: published
 date: '2026-10-18'
 reviewed: '2026-10-18'
-editorial_status: Source-checked draft; independent publication review pending
+editorial_status: Source-checked manual article; publisher approved publication on 2026-10-18
 summary: Microsoft’s AI spending needs a cash-flow test. We examine Azure growth, lease accounting and the figures that reveal
   whether investment is paying off.
 meta_description: Microsoft’s AI spending needs a cash-flow test. We examine Azure growth, lease accounting and the figures
