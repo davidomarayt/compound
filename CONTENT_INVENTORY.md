@@ -1,6 +1,6 @@
 # Compound.ie — Master Content and Title Register
 
-Snapshot: 2026-10-16 | Source: publishing branch
+Snapshot: 2026-10-18 | Source: publishing branch
 
 PURPOSE: Check this register before creating a new article, guide or calculator. Search by exact title, keyword, synonym and reader intent. If the topic is already answered, update its canonical page instead of publishing an SEO duplicate.
 
@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 170
+- Published editorial articles and guides: 171
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -169,12 +169,13 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [€400 Energy Credit Proposal: What Budget 2027 Actually Did](https://compound.ie/news/social-democrats-400-energy-credit-budget-2027/)
 - [€600 SEAI Home Battery Grant Ireland: Who Qualifies and Is It Worth It?](https://compound.ie/news/solar-battery-grant-ireland-budget-2027/)
 
-## Life articles and guides — 25
+## Life articles and guides — 26
 
 - [7 in 10 young adults are considering leaving Ireland — but the migration data tells a more complicated story](https://compound.ie/news/young-people-considering-emigration-ireland-2026/)
 - [A Buddhist monk has begun 12 years on a mountain. What can it teach us about the modern mind?](https://compound.ie/news/12-year-buddhist-retreat-meditation-mental-wellbeing/)
 - [AI therapy in Ireland: 61% say they use AI for mental health — but what does the evidence actually show?](https://compound.ie/news/ai-therapy-ireland-chatgpt-mental-health/)
 - [Burnout symptoms: how to recognise burnout and what actually helps](https://compound.ie/life/burnout-symptoms-recovery-ireland/)
+- [Clocks go back in Ireland next Sunday: what changes, and what to check](https://compound.ie/news/clocks-go-back-ireland-october-2026/)
 - [Dublin Theatre Festival 2026: what’s on, when it runs and how to plan a visit](https://compound.ie/news/dublin-theatre-festival-2026-guide/)
 - [El Niño could be one of the strongest on record — what it actually means for Ireland](https://compound.ie/news/el-nino-2026-ireland-weather-food-transport/)
 - [How Ireland exercises: walking dominates, gyms are second and work gets in the way](https://compound.ie/news/how-ireland-exercises-most-popular-sports-2025/)

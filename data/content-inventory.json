@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-10-16",
+  "snapshot_date": "2026-10-18",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -308,6 +308,26 @@
           "preserved benefits",
           "prsa",
           "retirement"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Clocks go back in Ireland next Sunday: what changes, and what to check",
+        "url": "/news/clocks-go-back-ireland-october-2026/",
+        "source": "content/happiness/clocks-go-back-ireland-october-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Life",
+        "slug": "clocks-go-back-ireland-october-2026",
+        "date": "2026-10-18",
+        "reviewed": "2026-10-18",
+        "tags": [
+          "news",
+          "clocks-change",
+          "winter-time",
+          "autumn",
+          "daylight",
+          "ireland",
+          "life"
         ],
         "status": "published"
       },
