@@ -90,6 +90,60 @@
         "status": "published"
       },
       {
+        "title": "Alphabet's cash-flow squeeze: why strong Cloud growth is not the whole story",
+        "url": "/wealth/alphabet-ai-capex-free-cash-flow/",
+        "source": "content/wealth/alphabet-ai-capex-free-cash-flow.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "alphabet-ai-capex-free-cash-flow",
+        "date": "2026-10-18",
+        "reviewed": "2026-10-18",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "mag7-research",
+          "googl"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Amazon's profit surge: separate AWS earnings from investment gains",
+        "url": "/wealth/amazon-aws-profit-investment-gains/",
+        "source": "content/wealth/amazon-aws-profit-investment-gains.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "amazon-aws-profit-investment-gains",
+        "date": "2026-10-18",
+        "reviewed": "2026-10-18",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "mag7-research",
+          "amzn"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Apple's earnings growth: what remains after the tariff-refund boost?",
+        "url": "/wealth/apple-earnings-tariff-refunds-services/",
+        "source": "content/wealth/apple-earnings-tariff-refunds-services.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "apple-earnings-tariff-refunds-services",
+        "date": "2026-10-18",
+        "reviewed": "2026-10-18",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "mag7-research",
+          "aapl"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Attic Conversion & Dormer Planning Permission Ireland",
         "url": "/wealth/attic-conversion-dormer-planning-permission-ireland/",
         "source": "content/wealth/attic-conversion-dormer-planning-permission-ireland.md",
@@ -1851,6 +1905,42 @@
         "status": "published"
       },
       {
+        "title": "Meta's advertising engine is growing. Is enough cash reaching shareholders?",
+        "url": "/wealth/meta-advertising-growth-ai-cash-flow/",
+        "source": "content/wealth/meta-advertising-growth-ai-cash-flow.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "meta-advertising-growth-ai-cash-flow",
+        "date": "2026-10-18",
+        "reviewed": "2026-10-18",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "mag7-research",
+          "meta"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Microsoft's AI spending: the cash-flow test behind Azure's growth",
+        "url": "/wealth/microsoft-ai-capex-cash-flow/",
+        "source": "content/wealth/microsoft-ai-capex-cash-flow.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "microsoft-ai-capex-cash-flow",
+        "date": "2026-10-18",
+        "reviewed": "2026-10-18",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "mag7-research",
+          "msft"
+        ],
+        "status": "published"
+      },
+      {
         "title": "More than 500,000 Irish energy accounts are in arrears — what happens if you can’t pay?",
         "url": "/news/energy-bill-arrears-ireland-cant-pay/",
         "source": "content/wealth/energy-bill-arrears-ireland-cant-pay.md",
@@ -2018,6 +2108,24 @@
           "home-energy",
           "solar",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Nvidia's 75% gross margin: how much room is there for competition?",
+        "url": "/wealth/nvidia-gross-margin-ai-demand/",
+        "source": "content/wealth/nvidia-gross-margin-ai-demand.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "nvidia-gross-margin-ai-demand",
+        "date": "2026-10-18",
+        "reviewed": "2026-10-18",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "mag7-research",
+          "nvda"
         ],
         "status": "published"
       },
@@ -2960,6 +3068,24 @@
           "myaccount",
           "income-tax",
           "wealth"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Tesla's energy business: why more battery deployments do not guarantee more profit",
+        "url": "/wealth/tesla-energy-storage-margins/",
+        "source": "content/wealth/tesla-energy-storage-margins.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "tesla-energy-storage-margins",
+        "date": "2026-10-18",
+        "reviewed": "2026-10-18",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "mag7-research",
+          "tsla"
         ],
         "status": "published"
       },
