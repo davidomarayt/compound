@@ -1,3 +1,9 @@
+## How much will a return journey cost?
+
+Enter the **one-way distance** and set **Number of trips to 2**. For a 65 km outward journey, the return distance is 130 km. At an illustrative 6.5 L/100 km and €1.80 per litre, that uses 8.45 litres and costs **€15.21** in fuel.
+
+For five return commutes, use 10 one-way trips: **€76.05** on those same assumptions. Do not enter 130 km and also set two trips unless you intend to model 260 km. Fuel prices here are examples, not live quotes.
+
 ## Fuel cost per kilometre: quick examples
 
 To estimate petrol or diesel running cost, multiply **distance (km) × litres per 100 km ÷ 100 × pump price per litre**. These illustrative examples use €1.80 per litre; enter today's actual fuel price in the calculator above.

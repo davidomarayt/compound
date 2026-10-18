@@ -203,3 +203,27 @@ def test_oracle_may_year_end_corrects_misleading_xbrl_filing_year():
     assert oracle["fp"] == "Q1"
     assert oracle["period_end"] == "2026-08-31"
     assert unrelated["fy"] == 2026  # never apply Oracle fiscal rules to Nvidia
+
+
+def test_annual_results_remain_separate_from_partial_quarter_history(tmp_path):
+    """A full-year filing must remain visible even with pre-cutoff quarters absent."""
+    from jinja2 import Environment, FileSystemLoader
+    folder = tmp_path / 'earnings-profiles'
+    folder.mkdir()
+    quarter = record(2026, 'Q3', '2026-03-31', '2026-05-01', 'q3', 30e9, 3e9, 1, '')
+    annual = record(2026, 'FY', '2026-06-30', '2026-07-29', 'fy', 100e9, 10e9, 4, '')
+    annual['form'] = '10-K'
+    (folder / 'example.json').write_text(json.dumps({'periods': [quarter, annual]}))
+    report = load_company_report(tmp_path, 'EXAMPLE')
+    assert report['is_annual'] and report['latest_display'] == 'FY2026 Full-Year'
+    assert report['latest_figures']['revenue'] == '$100.00bn'
+    assert not report['ytd_complete']
+    assert report['quarters'][2]['figures']['revenue'] == '$30.00bn'
+    template_dir = Path(__file__).resolve().parents[1] / 'compound/site/templates'
+    env = Environment(loader=FileSystemLoader(template_dir), autoescape=True)
+    html = env.get_template('_company_quarters.html').render(report=report, company={'name':'Example'}, seo=None)
+    assert 'Full-year results and quarterly history' in html
+    assert '$100.00bn' in html and '$30.00bn' in html
+    assert html.count('aria-label="Latest reported results"') == 1
+    assert '1 January 2026' in html and 'Original Q3 filing' in html
+    assert 'Original Q4 filing' not in html

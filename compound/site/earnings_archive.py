@@ -24,7 +24,7 @@ def prepare_recent_earnings(companies: list[dict], *, limit: int = 10) -> tuple[
             "name": company["name"],
             "ticker": company["symbol"],
             "url": company["url"],
-            "period": company["report"]["latest_label"],
+            "period": company["report"].get("latest_display") or company["report"]["latest_label"],
             "ended": company["report"]["latest_end"],
             "filed": company["report"].get("latest_filed") or "",
         }

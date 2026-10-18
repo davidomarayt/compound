@@ -219,7 +219,7 @@ def build_earnings_seo(company: dict, report: dict | None) -> dict | None:
     )
     # Retain precise reporting dates instead of presenting FY2027 as a future event.
     narrative = [
-        f"In {period}, ending {report['latest_end']}, {name} reported "
+        f"In {label}, ending {report['latest_end']}, {name} reported "
         f"revenue of {latest['revenue']}, net income of {latest['net_income']} "
         f"and diluted earnings per share of {latest['diluted_eps']}. "
         "These are reported financial-statement amounts, not market forecasts."

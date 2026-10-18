@@ -351,3 +351,9 @@ The Department of Finance has indicated an average-value approach, but the Finan
 Once enacted, the legislation and Revenue guidance should take precedence over this calculator.
 
 The calculator runs entirely in your browser. Compound does not receive the figures you enter.
+
+## After you have modelled a PIA
+
+Compare a cautious return assumption with your starting case, then increase the fee assumption to see how sensitive the outcome is. These are scenarios, not promised returns.
+
+Read the [complete Irish PIA guide](/wealth/personal-investment-account-ireland/) for the proposed rules and unresolved details. Use the [PIA provider comparison](/pia/providers/) to distinguish confirmed provider information from terms that have not been announced. If you are researching individual businesses, the [company earnings directory](/wealth/earnings/) links to reported financial results; inclusion is not confirmation that a stock will be eligible for a particular PIA.

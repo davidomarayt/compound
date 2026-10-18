@@ -154,6 +154,8 @@ def load_company_report(content_dir: Path, ticker: str, legacy_articles=()):
             "change_pp": round(now_margin - prior_margin, 1),
         }
     data_out={"fy":fy,"latest_label":f"FY{fy} {latest['fp']}",
+              "latest_display":f"FY{fy} Full-Year" if latest["fp"] == "FY" else f"{latest['fp']} FY{fy}",
+              "is_annual":latest["fp"] == "FY",
               "latest_end":latest["period_end"],"latest_filed":latest.get("filed",""),
               "latest_source":latest.get("source",""),"latest_form":latest.get("form",""),
               "latest_figures":latest_figures,"latest_comparison":latest_comparison,

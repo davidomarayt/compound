@@ -47,7 +47,7 @@ That makes the PIA one of the biggest changes to ordinary investing in Ireland i
 
 But there is an important caveat at the outset: **the Personal Investment Account is not law yet**. Budget 2027 has announced the headline design, while the detailed legal framework is due through the Finance (No. 2) Bill 2026. Some operational rules can still change before accounts become available.
 
-**New from Compound:** Visit our [PIA Centre](/pia/) for the current rules and tools, or go straight to the [independent PIA provider comparison](/pia/providers/) to see verified provider statements and which fees remain unpublished.
+**Explore your own numbers:** Use the [PIA Calculator](/pia-calculator/) to compare contributions, return assumptions and fees. Then check the [PIA Centre](/pia/) for the proposed rules and the [independent provider comparison](/pia/providers/) for verified statements and fees that remain unpublished.
 
 <div class="cs-intro pia-answer">
 <p class="cs-kicker">Quick answer</p>

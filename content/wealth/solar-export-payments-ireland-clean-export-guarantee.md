@@ -296,3 +296,9 @@ For prospective solar buyers, the most useful calculation is not simply how much
 It is how much you will **use yourself**, how much you will **export**, what each exported unit is worth and whether adding a battery improves or weakens the overall return.
 
 **[Model your own system with Compound's Solar Payback Calculator →](/solar-payback-calculator/)**
+
+## Put the calculation into a quote request
+
+Run a lower-export-rate scenario as well as your starting estimate. Then compare installation quotes using the same system size, battery assumptions and expected generation, so differences in price are easier to understand.
+
+Use the [solar quote comparison guide](/solar/compare-quotes/) to check what each offer includes. When you are ready, [submit your solar project details](/solar/get-quotes/) so the roof, electricity use and installation requirements are recorded together.

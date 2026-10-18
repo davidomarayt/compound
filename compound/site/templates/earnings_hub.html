@@ -8,7 +8,7 @@
 <header class="earnings-hero"><p class="eyebrow">COMPOUND WEALTH / EARNINGS</p><h1>Company earnings. One report per business.</h1><p class="earnings-lede">Follow company quarterly and full-year results, with revenue, net income and earnings per share checked against US SEC filings. Clear comparisons. Financial tables. Links to the data.</p><div class="earnings-hero-links"><a href="/stocks/">Browse stock profiles →</a><a href="/pia/">Personal Investment Accounts →</a><a href="/wealth/how-to-start-investing-in-ireland/">Investing in Ireland 101 →</a></div></header>
 {% if priority_earnings %}
 <section class="earnings-section" aria-labelledby="earnings-popular-heading">
-  <div class="earnings-heading"><p class="eyebrow">SEC-FILED COMPANY RESULTS</p><h2 id="earnings-popular-heading">Explore the latest earnings from leading companies</h2><span>{{ priority_earnings|length }} company reports</span></div>
+  <div class="earnings-heading"><p class="eyebrow">SEC-FILED COMPANY RESULTS</p><h2 id="earnings-popular-heading">Explore the latest earnings from leading companies</h2><span>{{ priority_earnings|length }} featured companies · {{ report_total }} reports in the searchable archive</span></div>
   <p>Check each company's latest filed fiscal results, revenue, profit and earnings per share. Links lead to continuously updated company pages, not separate quarterly articles.</p>
   <div class="earnings-directory-scroll" tabindex="0" role="region" aria-label="Curated company earnings links"><table class="earnings-directory"><thead><tr><th scope="col">Company and ticker</th><th scope="col">Latest verified fiscal period</th><th scope="col">Period ended</th></tr></thead><tbody>
   {% for entry in priority_earnings %}<tr><th scope="row"><a href="{{ entry.url }}">{{ entry.display_name }} ({{ entry.symbol }}) earnings</a></th><td>{{ entry.period_display }}</td><td>{{ entry.period_end_readable }}</td></tr>{% endfor %}
@@ -28,7 +28,7 @@
     <article class="earnings-card" data-earnings-recent-card>
       <p class="earnings-kicker">SEC-VERIFIED FINANCIAL REPORT · FILED {{ company.report.latest_filed or 'Date unavailable' }}</p>
       <h3><a href="{{ company.url }}">{{ company.name }} ({{ company.symbol }})</a></h3>
-      <p><strong>{{ company.report.latest_label }}</strong> · Period ended {{ company.report.latest_end }}. {{ company.report.summary }}. Financial tables and official SEC filing on the company page.</p>
+      <p><strong>{{ company.report.latest_display }}</strong> · Period ended {{ company.report.latest_end }}. {{ company.report.summary }}. Financial tables and official SEC filing on the company page.</p>
       <a class="earnings-read" href="{{ company.url }}">Open company earnings →</a>
     </article>
     {% endfor %}
