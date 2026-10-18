@@ -105,7 +105,7 @@ def yaml_header(file):
 def test_missing_credentials_never_yield_an_article(monkeypatch,tmp_path):
     monkeypatch.delenv("ANTHROPIC_API_KEY",raising=False)
     report=tmp_path/"review.md"
-    assert autopub.run(date(2026,10,17),report)==0
+    assert autopub.run(date(2026,10,17),report)==1
     assert "Status: skipped" in report.read_text()
     assert "ANTHROPIC_API_KEY" in report.read_text()
     assert autopub.run(date(2026,11,13),tmp_path/"out.md")==3

@@ -198,7 +198,9 @@ def article(day: date,ticker: str,week: int,data: dict,photo: dict) -> tuple[Pat
         "title":data["title"],"seo_title":data.get("seo_title",data["title"]),
         "slug":slug,"canonical_path":"/wealth/"+slug+"/","pillar":"wealth",
         "draft":False,"publication_status":"published",
-        "date":day.isoformat(),"reviewed":day.isoformat(),
+        "date":datetime.now(timezone.utc).date().isoformat(),
+        "reviewed":datetime.now(timezone.utc).date().isoformat(),
+        "assignment_date":day.isoformat(),
         "approved_by":"Automatic evidence-checked Mag7 research publication",
         "summary":data["summary"],"meta_description":data["meta_description"],
         "tags":["wealth","stocks","company-research","mag7-research",
@@ -228,15 +230,16 @@ def run(day: date,output: Path) -> int:
         return 3
     ticker,week=slot
     report=[f"# Mag 7 {day.isoformat()} {ticker} review record",""]
+    exit_code = 0
     try:
         # The first day was already written and published in the existing workflow.
         if day == pilot.START and ticker == "TSLA":
             raise ValueError("16 October Tesla Roadster article already published")
+        if not os.getenv("ANTHROPIC_API_KEY", "").strip():
+            raise RuntimeError("ANTHROPIC_API_KEY GitHub Actions secret missing")
         sec=pilot.latest_sec(ticker)
         photo=photo_for(ticker,week)
         from anthropic import Anthropic
-        if not os.getenv("ANTHROPIC_API_KEY"):
-            raise RuntimeError("ANTHROPIC_API_KEY GitHub Actions secret missing")
         ai=Anthropic(timeout=140)
         data=research(ai,ticker,week,day,sec)
         validate(data,ticker,sec)
@@ -250,12 +253,13 @@ def run(day: date,output: Path) -> int:
                        photo["source"],photo["credit"],"",
                        "## X post draft",data.get("x_post","")])
     except Exception as exc:  # Every fault fails closed; write audit status instead of an unsafe page.
+        exit_code = 1
         report.extend(["**Status: skipped — nothing automatically published**",
                        f"Reason: {type(exc).__name__}: {str(exc)[:500]}",
                        "No filler article and no synthetic image permitted."])
     output.parent.mkdir(parents=True,exist_ok=True)
     output.write_text("\n".join(report)+"\n",encoding="utf-8")
-    return 0
+    return exit_code
 
 
 def main() -> int:

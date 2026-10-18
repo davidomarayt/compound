@@ -35,7 +35,7 @@ jobs:
           python-version: '3.11'
       - run: python -m pip install --disable-pip-version-check -e '.[dev]'
       - name: Test rotation, financial data, photo and publishing safeguards
-        run: python -m pytest -q tests/test_mag7_pilot.py tests/test_mag7_autopublish.py
+        run: python -m pytest -q tests/test_mag7_pilot.py tests/test_mag7_autopublish.py tests/test_mag7_failure_recovery.py
       - name: Research, draft, independently check and prepare a single article
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -135,6 +135,16 @@ jobs:
       - name: Record failed publication gate
         if: failure() && hashFiles('mag7-review.md') != ''
         run: printf '\n**Publication BLOCKED by a check/build/push error. Do not treat this as live.**\n' >> mag7-review.md
+      - name: Preserve each attempt's audit report
+        if: always() && hashFiles('mag7-review.md') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: mag7-review-${{ github.run_id }}-${{ github.run_attempt }}
+          path: mag7-review.md
+          retention-days: 30
+      - name: Summarise publication outcome
+        if: always() && hashFiles('mag7-review.md') != ''
+        run: cat mag7-review.md >> "$GITHUB_STEP_SUMMARY"
       - name: Create retrospective audit issue for review
         if: always() && hashFiles('mag7-review.md') != ''
         env:
