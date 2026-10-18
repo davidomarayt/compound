@@ -1,0 +1,58 @@
+[
+  {
+    "ticker": "MSFT",
+    "slug": "microsoft-ai-capex-cash-flow",
+    "path": "content/wealth/microsoft-ai-capex-cash-flow.md",
+    "title": "Microsoft's AI spending: the cash-flow test behind Azure's growth",
+    "words": 737,
+    "sources": 3
+  },
+  {
+    "ticker": "NVDA",
+    "slug": "nvidia-gross-margin-ai-demand",
+    "path": "content/wealth/nvidia-gross-margin-ai-demand.md",
+    "title": "Nvidia's 75% gross margin: how much room is there for competition?",
+    "words": 746,
+    "sources": 3
+  },
+  {
+    "ticker": "AAPL",
+    "slug": "apple-earnings-tariff-refunds-services",
+    "path": "content/wealth/apple-earnings-tariff-refunds-services.md",
+    "title": "Apple's earnings growth: what remains after the tariff-refund boost?",
+    "words": 716,
+    "sources": 3
+  },
+  {
+    "ticker": "AMZN",
+    "slug": "amazon-aws-profit-investment-gains",
+    "path": "content/wealth/amazon-aws-profit-investment-gains.md",
+    "title": "Amazon's profit surge: separate AWS earnings from investment gains",
+    "words": 735,
+    "sources": 3
+  },
+  {
+    "ticker": "GOOGL",
+    "slug": "alphabet-ai-capex-free-cash-flow",
+    "path": "content/wealth/alphabet-ai-capex-free-cash-flow.md",
+    "title": "Alphabet's cash-flow squeeze: why strong Cloud growth is not the whole story",
+    "words": 725,
+    "sources": 3
+  },
+  {
+    "ticker": "META",
+    "slug": "meta-advertising-growth-ai-cash-flow",
+    "path": "content/wealth/meta-advertising-growth-ai-cash-flow.md",
+    "title": "Meta's advertising engine is growing. Is enough cash reaching shareholders?",
+    "words": 728,
+    "sources": 3
+  },
+  {
+    "ticker": "TSLA",
+    "slug": "tesla-energy-storage-margins",
+    "path": "content/wealth/tesla-energy-storage-margins.md",
+    "title": "Tesla's energy business: why more battery deployments do not guarantee more profit",
+    "words": 763,
+    "sources": 3
+  }
+]
