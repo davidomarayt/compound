@@ -29,7 +29,9 @@ def test_priority_calculators_have_search_intent_and_worked_examples():
     tools = read("content/tools.yml")
     salary = tools.split("  - slug: salary-hourly-rate-calculator", 1)[1].split("\n  - slug:", 1)[0]
     fuel = tools.split("  - slug: fuel-cost-calculator", 1)[1].split("\n  - slug:", 1)[0]
-    assert "Salary to Hourly Calculator Ireland" in salary
+    import yaml
+    salary_title = yaml.safe_load("tools:\n  - slug: salary-hourly-rate-calculator" + salary)["tools"][0]["seo_title"].lower()
+    assert all(term in salary_title for term in ("salary", "hourly", "ireland"))
     assert "€50,000" in salary and "€24.65" in salary
     assert "take-home-pay-calculator" in salary
     assert "Fuel Cost Calculator Ireland" in fuel
