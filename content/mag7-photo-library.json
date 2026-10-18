@@ -28,7 +28,7 @@
     "NVDA": [
       {
         "source": "https://unsplash.com/photos/a-close-up-of-a-graphics-card-on-a-table-TErYPw4o1KM",
-        "cdn_url": "https://images.unsplash.com/photo-1727176763571-811f1c4ea36c",
+        "cdn_url": "https://images.unsplash.com/photo-1555618565-9f2b0323a10d",
         "credit": "Christian Wiediger / Unsplash",
         "year": "2019",
         "alt": "Authentic close-up photograph of an NVIDIA GeForce RTX 2060 graphics card, taken in 2019."
@@ -61,7 +61,7 @@
         "credit": "Hiroko Nishimura / Unsplash",
         "year": "2025",
         "alt": "Amazon headquarters glass spheres in Seattle, photographed in 2025.",
-        "cdn_url": "https://images.unsplash.com/photo-1579545922550-75e3a190bb9e"
+        "cdn_url": "https://images.unsplash.com/photo-1756314164570-33522825fb4b"
       },
       {
         "source": "https://unsplash.com/photos/the-amazon-logo-is-displayed-on-a-building-CLcmKictgSY",
@@ -82,7 +82,7 @@
         "source": "https://unsplash.com/photos/google-sign-fpZZEV0uQwA",
         "credit": "Pawel Czerwinski / Unsplash",
         "year": "2018",
-        "alt": "Real Google logo photographed in Wrocław in 2018."
+        "alt": "Real Google logo photographed in Wroc\u0142aw in 2018."
       }
     ],
     "META": [
