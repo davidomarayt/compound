@@ -58,6 +58,13 @@ The **Clean Export Guarantee (CEG)** — the system under which eligible microge
 
 That clarification matters for anyone who already has rooftop solar, and for households trying to work out whether a new solar installation or home battery will pay for itself.
 
+<div class="cs-intro" role="note">
+<p class="cs-kicker">Planning solar for your home?</p>
+<p>Check what a system could save using the <a href="/solar-payback-calculator/">Solar Payback Calculator</a>, including a lower export-rate scenario.</p>
+<p><strong><a href="/solar/get-quotes/">Fill out the simple form to request up to 3 solar quotes →</a></strong></p>
+<p>Use the same roof, electricity-use and battery requirements when comparing installation offers.</p>
+</div>
+
 For the full buying and installation picture — grants, 0% VAT, sizing, batteries, planning and payback — see our **[Solar Panels in Ireland 2026 guide](/wealth/solar-panels-ireland/)**.
 
 The most important point is simple:

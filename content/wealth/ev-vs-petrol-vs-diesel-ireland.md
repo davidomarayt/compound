@@ -77,6 +77,8 @@ This guide reflects Irish rules and prices checked on **4 October 2026**.
 
 **Charging an EV at home with solar?** The [Compound Solar Hub](/solar/) explains PV grants, batteries and export rates, while the [Solar Payback Calculator](/solar-payback-calculator/) tests whether installation cost is justified. Keep solar capital costs separate from the EV-only cost comparison.
 
+**Compare your own driving costs:** Enter your annual distance, real-world consumption and pump price in the [Fuel Cost Calculator](/fuel-cost-calculator/), using Advanced mode for annual spending. Then use the same annual distance in the [EV Charging Cost Calculator](/ev-charging-cost-calculator/) to compare energy costs. Keep purchase price and other ownership costs separate.
+
 ## EV vs petrol vs diesel at a glance
 
 <div class="cs-table-wrap" tabindex="0" role="region" aria-label="EV petrol diesel Ireland comparison">

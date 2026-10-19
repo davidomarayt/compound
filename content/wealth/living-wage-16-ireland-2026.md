@@ -83,7 +83,7 @@ For workers, the difference between them is not trivial.
 
 On a 39-hour week, moving from €14.15 to €16 would amount to roughly **€3,752 more gross pay over a 52-week year**.
 
-Compound’s **[Salary to Hourly Rate Calculator](/salary-hourly-rate-calculator/)** lets you convert any hourly rate into weekly, monthly and annual pay, while the **[Take-Home Pay Calculator](/take-home-pay-calculator/)** shows how gross pay translates into net income after tax.
+Compound’s **[Salary to Hourly Rate Calculator](/salary-hourly-rate-calculator/)** converts an annual gross salary into hourly, weekly and monthly pay using your paid hours and weeks, while the **[Take-Home Pay Calculator](/take-home-pay-calculator/)** shows how gross pay translates into net income after tax.
 
 ## What would €16 an hour mean in annual pay?
 
@@ -313,7 +313,7 @@ Budget 2027 announced that the adult National Minimum Wage will increase to **�
 
 Three Compound tools are particularly useful here.
 
-Use the **[Salary to Hourly Rate Calculator](/salary-hourly-rate-calculator/)** to compare different hourly rates or convert your salary into an effective hourly wage.
+Use the **[Salary to Hourly Rate Calculator](/salary-hourly-rate-calculator/)** to convert your annual salary into a gross hourly equivalent using your own working hours.
 
 Use the **[Take-Home Pay Calculator](/take-home-pay-calculator/)** to see what your gross salary may translate to after Irish payroll deductions.
 
