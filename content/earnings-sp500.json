@@ -1,7 +1,7 @@
 {
   "source": "https://github.com/datasets/s-and-p-500-companies/blob/main/data/constituents.csv",
   "source_type": "third-party public reference (not licensed S&P constituents)",
-  "checked": "2026-10-12",
+  "checked": "2026-10-19",
   "security_count": 503,
   "company_count": 500,
   "members": [
@@ -2969,7 +2969,7 @@
     },
     {
       "cik": 927653,
-      "name": "McKesson Corporation",
+      "name": "McKesson",
       "sector": "Health Care",
       "symbol": "MCK",
       "symbols": [
