@@ -382,6 +382,15 @@ jobs:
           done
           grep -Fq 'homepage_hub_click' public/static/home-hubs.js
           grep -Fq 'compound_analytics_consent' public/static/home-hubs.js
+      - name: Verify eight manually committed company articles in site build
+        shell: bash
+        run: |
+          set -euo pipefail
+          for slug in tesla-q3-2026-autonomy-investment-case microsoft-azure-ai-returns-2026 nvidia-ai-gpu-margins-2026 apple-iphone-services-profit-2026 amazon-aws-retail-economics-2026 alphabet-search-ai-economics-2026 meta-ai-advertising-returns-2026 eli-lilly-foundayo-obesity-growth-2026-10-19; do
+            test -s "public/wealth/$slug/index.html" || { echo "::error::Missing built article: $slug"; exit 1; }
+            grep -Fq "/wealth/$slug/" public/sitemap.xml || { echo "::error::Article absent from sitemap: $slug"; exit 1; }
+          done
+          echo "PASS: all eight company articles built and indexed in sitemap"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
@@ -1009,5 +1018,12 @@ jobs:
           grep -Fq '.it26-workspace' /tmp/insurance-tools-2026.css
           echo 'All five individual insurance calculator pages, SEO, AdSense loader, hub links and arithmetic verified.'
 
+
+          # Check every Mag 8 article on the actual production domain.
+          for slug in tesla-q3-2026-autonomy-investment-case microsoft-azure-ai-returns-2026 nvidia-ai-gpu-margins-2026 apple-iphone-services-profit-2026 amazon-aws-retail-economics-2026 alphabet-search-ai-economics-2026 meta-ai-advertising-returns-2026 eli-lilly-foundayo-obesity-growth-2026-10-19; do
+            fetch "https://compound.ie/wealth/$slug/" "/tmp/mag8-$slug.html"
+            grep -Fq '<h1' "/tmp/mag8-$slug.html" || { echo "::error::No article heading: $slug"; exit 1; }
+            echo "LIVE: https://compound.ie/wealth/$slug/"
+          done
 
           echo 'Live verification passed for Compound calculator catalogue, Health and Wealth Hubs, PIA Centre, Earnings, discovery metadata and flagship guides.'
