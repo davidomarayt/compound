@@ -11,6 +11,11 @@ reviewed: "2026-10-19"
 summary: "Alphabet's core economic question is whether generative AI strengthens Search usage or raises the cost of answering queries faster than monetisation improves. Google Cloud offers a second potential profit engine, but should be ana"
 meta_description: "Alphabet Search and Gemini: The Cost of Defending an Advertising Franchise. A filing-led investment analysis of cash flow, competitive advantages, valuation as"
 tags: [wealth, stocks, company-research, googl]
+hero_image_url: "https://images.unsplash.com/photo-1488155436641-58ef42fcc44e?auto=format&fit=crop&fm=jpg&q=85&w=1600&h=900"
+hero_image_alt: "Google Dublin office buildings and glass sky bridge, photographed in 2017; archival company photograph."
+hero_image_credit: "Stephen Bergin / Unsplash (2017; Unsplash License)"
+hero_image_source: "https://unsplash.com/photos/low-angle-photo-of-curtain-wall-building-T9FyciKxlfU"
+require_pinned_hero: true
 sources:
   - title: "Company reporting and filings"
     url: "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
