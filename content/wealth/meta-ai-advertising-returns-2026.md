@@ -11,6 +11,11 @@ reviewed: "2026-10-19"
 summary: "Meta's advertising business can benefit from better recommendation and targeting models. But investors must measure those improvements against the cost of servers, chips, data centres and ongoing development."
 meta_description: "Meta's AI Advertising Returns: How Much Spending Is Too Much?. A filing-led investment analysis of cash flow, competitive advantages, valuation assumptions and"
 tags: [wealth, stocks, company-research, meta]
+hero_image_url: "https://images.unsplash.com/photo-1689439518876-4243a1bb5554?auto=format&fit=crop&fm=jpg&q=85&w=1600&h=900"
+hero_image_alt: "Smartphone displaying Meta's Threads app beside a keyboard and mouse, photographed in 2023."
+hero_image_credit: "Julio Lopez / Unsplash (2023; Unsplash License)"
+hero_image_source: "https://unsplash.com/photos/a-keyboard-mouse-and-cell-phone-sitting-on-a-desk-jK_oDRU_Iv4"
+require_pinned_hero: true
 sources:
   - title: "Company reporting and filings"
     url: "https://investor.atmeta.com/financials/"
