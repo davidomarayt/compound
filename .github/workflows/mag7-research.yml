@@ -42,11 +42,19 @@ jobs:
           MAG7_MODEL: ${{ vars.MAG7_MODEL }}
           MAG7_EDITOR_MODEL: ${{ vars.MAG7_EDITOR_MODEL }}
           ASSIGNMENT_DATE: ${{ inputs.date }}
+          GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           set -euo pipefail
           args=()
-          if [ -n "$ASSIGNMENT_DATE" ]; then args=(--date "$ASSIGNMENT_DATE"); fi
+          if [ -n "$ASSIGNMENT_DATE" ]; then
+            args=(--date "$ASSIGNMENT_DATE")
+          elif [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+            # Reruns use the original scheduled date, never the date of replay.
+            original_date="$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" --jq '.created_at' | cut -dT -f1)"
+            test -n "$original_date"
+            args=(--date "$original_date")
+          fi
           python scripts/mag7_autopublish.py "${args[@]}" --output mag7-review.md || {
             code=$?
             if [ "$code" -eq 3 ]; then
