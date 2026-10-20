@@ -240,7 +240,9 @@ def run(day: date,output: Path) -> int:
         sec=pilot.latest_sec(ticker)
         photo=photo_for(ticker,week)
         from anthropic import Anthropic
-        ai=Anthropic(timeout=140)
+        workspace_id = os.getenv("ANTHROPIC_WORKSPACE_ID", "").strip()
+        options = {"default_headers": {"anthropic-workspace-id": workspace_id}} if workspace_id else {}
+        ai=Anthropic(timeout=140, **options)
         data=research(ai,ticker,week,day,sec)
         validate(data,ticker,sec)
         independent_review(ai,data,sec)
