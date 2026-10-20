@@ -11,6 +11,11 @@ reviewed: "2026-10-19"
 summary: "Amazon combines cloud infrastructure, retail fulfilment, advertising and third-party marketplace services. Consolidated revenue alone can hide meaningful differences in profitability and capital intensity."
 meta_description: "Amazon AWS Versus Retail: Where Does the Next Dollar of Profit Come From?. A filing-led investment analysis of cash flow, competitive advantages, valuation ass"
 tags: [wealth, stocks, company-research, amzn]
+hero_image_url: "https://images.unsplash.com/photo-1756314164570-33522825fb4b?auto=format&fit=crop&fm=jpg&q=85&w=1600&h=900"
+hero_image_alt: "Amazon headquarters glass Spheres in Seattle, photographed in 2025."
+hero_image_credit: "Hiroko Nishimura / Unsplash (2025; Unsplash License)"
+hero_image_source: "https://unsplash.com/photos/modern-glass-spheres-building-with-lush-green-trees-lEpwKNtGG2k"
+require_pinned_hero: true
 sources:
   - title: "Company reporting and filings"
     url: "https://ir.aboutamazon.com/quarterly-results/default.aspx"
