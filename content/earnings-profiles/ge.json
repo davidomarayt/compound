@@ -2,33 +2,33 @@
   "cik": 40545,
   "company": "GE Aerospace",
   "latest": {
-    "accession": "0000040545-26-000049",
-    "filed": "2026-07-16",
+    "accession": "0000040545-26-000064",
+    "filed": "2026-10-20",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.26,
-        "prior_year": 1.89,
+        "current": 2.2,
+        "prior_year": 2.02,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 2370000000,
-        "prior_year": 2028000000,
+        "current": 2288000000,
+        "prior_year": 2157000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 13349000000,
-        "prior_year": 11023000000,
+        "current": 14118000000,
+        "prior_year": 12181000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000049/ge-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000064/ge-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000049/ge-20260630.htm"
+    },
+    {
+      "accession": "0000040545-26-000064",
+      "filed": "2026-10-20",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.2,
+          "prior_year": 2.02,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2288000000,
+          "prior_year": 2157000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 14118000000,
+          "prior_year": 12181000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/40545/000004054526000064/ge-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "GE",
-  "updated": "2026-10-15"
+  "updated": "2026-10-20"
 }
