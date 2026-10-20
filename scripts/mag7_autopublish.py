@@ -120,7 +120,7 @@ def research(ai, ticker: str, week: int, day: date, sec: dict) -> dict:
         "Decline rather than invent an assertion. Never produce images."
     )
     message = ai.messages.create(
-        model=(os.getenv("MAG7_MODEL") or "claude-sonnet-4-5"),max_tokens=6800,temperature=0.15,
+        model=(os.getenv("MAG7_MODEL") or "claude-sonnet-4-5"),max_tokens=6800,
         tools=[{"type":"web_search_20250305","name":"web_search","max_uses":7}],
         system=instructions,
         messages=[{"role":"user","content":
@@ -176,7 +176,7 @@ def independent_review(ai, data: dict, sec: dict) -> None:
     )
     response=ai.messages.create(
         model=(os.getenv("MAG7_EDITOR_MODEL") or os.getenv("MAG7_MODEL") or "claude-sonnet-4-5"),
-        max_tokens=1300,temperature=0,
+        max_tokens=1300,
         tools=[{"type":"web_search_20250305","name":"web_search","max_uses":4}],
         messages=[{"role":"user","content":prompt}],
     )
