@@ -11,6 +11,11 @@ reviewed: "2026-10-19"
 summary: "Eli Lilly's Mounjaro and Zepbound are growing rapidly, but falling realised prices and the early Foundayo launch make the next phase more complicated."
 meta_description: "Eli Lilly stock analysis: Q2 2026 sales, Mounjaro, Zepbound, Foundayo, obesity-drug pricing, retatrutide and the investment risks ahead."
 tags: [wealth, stocks, eli-lilly, lly, obesity, glp-1, mag8-research]
+hero_image_url: "https://upload.wikimedia.org/wikipedia/commons/0/05/Eli_Lilly_Corporate_Center%2C_Indianapolis%2C_Indiana%2C_USA.jpg"
+hero_image_alt: "Exterior and visitor entrance of Eli Lilly Corporate Center in Indianapolis, photographed in August 2019."
+hero_image_credit: "Momoneymoproblemz / Wikimedia Commons (CC BY-SA 4.0)"
+hero_image_source: "https://commons.wikimedia.org/wiki/File:Eli_Lilly_Corporate_Center,_Indianapolis,_Indiana,_USA.jpg"
+require_pinned_hero: true
 sources:
   - title: "Eli Lilly Q2 2026 results"
     url: "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full"
