@@ -1336,12 +1336,15 @@ def build_site(settings: Settings) -> dict:
         cik = str(company["cik"])
         stories = company_stories[cik]
         is_covered = stock_coverage(company)
+        analysis_path = settings.content_dir / "stock-research" / f"{company_symbol}.md"
+        earnings_analysis = render_markdown(analysis_path.read_text(encoding="utf-8")) if analysis_path.is_file() else ""
         _write(
             out / "stocks" / company_symbol / "index.html",
             env.get_template("earnings_company.html").render(
                 title=f'{company["name"]} ({company["symbol"]}) Stock',
                 pillar="wealth", company=company, report=company_dashboards[cik], reports=company_reports[cik],
                 seo=build_earnings_seo(company, company_dashboards[cik]),
+                earnings_analysis=earnings_analysis,
                 news=[a for a in stories if is_news_article(a)],
                 research=[a for a in stories if not is_news_article(a)],
                 has_coverage=is_covered, ads_allowed=is_covered,

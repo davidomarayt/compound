@@ -2,33 +2,33 @@
   "cik": 1065280,
   "company": "Netflix",
   "latest": {
-    "accession": "0001065280-26-000212",
-    "filed": "2026-07-17",
-    "form": "10-Q",
-    "fp": "Q2",
+    "accession": "0001065280-26-000290",
+    "filed": "2026-10-20",
+    "form": "8-K Exhibit 99.1",
+    "fp": "Q3",
     "fy": 2026,
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000290/ex991_q326.htm",
     "metrics": {
-      "diluted_eps": {
-        "current": 0.8,
-        "prior_year": 0.72,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 12874176000,
+        "prior_year": 11510307000,
+        "tag": "Revenues",
+        "unit": "USD"
       },
       "net_income": {
-        "current": 3401414000,
-        "prior_year": 3125413000,
+        "current": 3663927000,
+        "prior_year": 2546916000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
-      "revenue": {
-        "current": 12559938000,
-        "prior_year": 11079166000,
-        "tag": "Revenues",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 0.87,
+        "prior_year": 0.59,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
       }
-    },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm"
+    }
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000212/nflx-20260630.htm"
+    },
+    {
+      "accession": "0001065280-26-000290",
+      "filed": "2026-10-20",
+      "form": "8-K Exhibit 99.1",
+      "fp": "Q3",
+      "fy": 2026,
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000290/ex991_q326.htm",
+      "metrics": {
+        "revenue": {
+          "current": 12874176000,
+          "prior_year": 11510307000,
+          "tag": "Revenues",
+          "unit": "USD"
+        },
+        "net_income": {
+          "current": 3663927000,
+          "prior_year": 2546916000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "diluted_eps": {
+          "current": 0.87,
+          "prior_year": 0.59,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        }
+      }
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC 10-Q filings and manually verified 8-K Exhibit 99.1; no analyst estimates",
   "ticker": "NFLX",
-  "updated": "2026-10-15"
+  "updated": "2026-10-20"
 }

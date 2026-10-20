@@ -15,6 +15,9 @@
 {% if seo %}<p class="earnings-directory-source">US SEC CIK {{ '%010d'|format(company.cik) }} · Fiscal period ended {{ seo.latest_end }} · <a href="{{ seo.source }}" rel="noopener noreferrer">Official reported results ↗</a></p>{% endif %}
 <div class="earnings-hero-links">{% if seo %}<a href="#earnings-investor-lens">Investor lens ↓</a>{% endif %}<a href="#earnings-company-results">Fiscal earnings ↓</a><a href="#stocks-company-coverage">News &amp; research ↓</a></div>
 <p class="earnings-directory-source">Tickers: {{ company.symbols|join(', ') }}. <a href="https://www.sec.gov/edgar/browse/?CIK={{ company.cik }}" rel="noopener">Official SEC filings ↗</a> · <a href="https://data.sec.gov/api/xbrl/companyfacts/CIK{{ '%010d'|format(company.cik) }}.json" rel="noopener">SEC financial facts ↗</a></p></div>
+{% if earnings_analysis %}
+<article class="earnings-section article-body" id="earnings-analysis" aria-label="Latest earnings analysis">{{ earnings_analysis|safe }}</article>
+{% endif %}
 {% if seo %}
 <section class="earnings-section earnings-seo-overview" aria-labelledby="seo-results-heading">
   <div class="earnings-heading"><div><p class="eyebrow">LATEST VERIFIED RESULTS · {{ seo.fiscal_display }}</p><h2 id="seo-results-heading">How much did {{ seo.name }} earn?</h2></div><span>Period ended {{ seo.latest_end }}</span></div>
