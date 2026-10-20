@@ -1,3 +1,14 @@
+## Start with the question you want to answer
+
+| Your question | Where to start |
+| --- | --- |
+| How could contributions and returns change my balance? | Enter your starting balance, annual contribution and time horizon in the calculator above. |
+| How much difference could fees make? | Switch to Advanced mode, save a comparison, then change only the annual fee assumption. |
+| What assumptions sit behind the tax estimate? | Read the tax formula and average-account-value method below, alongside the [PIA rules guide](/wealth/personal-investment-account-ireland/). |
+| Which providers have announced information? | Check the [PIA provider comparison](/pia/providers/), where confirmed information and unpublished terms are distinguished. |
+
+To compare scenarios, select **Save for comparison** before changing one input. Keep the contribution amount and time horizon the same when comparing return or fee assumptions, so you can see what caused the difference. A projection illustrates your assumptions; it does not establish which investment is suitable for you.
+
 ## What the PIA Calculator does
 
 This calculator models Ireland's planned **Personal Investment Account (PIA)** using the headline terms announced in Budget 2027.

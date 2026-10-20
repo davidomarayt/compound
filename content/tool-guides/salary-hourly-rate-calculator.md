@@ -14,6 +14,20 @@ For the reverse calculation, **€16 an hour** at 39 paid hours a week across 52
 
 To see how much of a salary actually reaches your bank account, use the [Irish Take-Home Pay Calculator](/take-home-pay-calculator/). For two differently structured roles, use the [Contractor vs Salary Calculator](/contractor-vs-salary-calculator/).
 
+## What is €16 an hour as an annual salary in Ireland?
+
+At **€16 per hour for 39 paid hours a week**, gross annual pay is **€32,448**, assuming 52 paid weeks. That is **€624 a week** or **€2,704 a month on average**, before tax.
+
+| Paid hours per week | Gross weekly pay | Gross annual pay |
+| --- | ---: | ---: |
+| 20 | €320 | €16,640 |
+| 35 | €560 | €29,120 |
+| 37.5 | €600 | €31,200 |
+| 39 | €624 | €32,448 |
+| 40 | €640 | €33,280 |
+
+For any hourly rate, use **hourly pay × paid hours per week × paid weeks per year**. To explore one of these examples above, enter its annual pay and matching hours into the calculator. Monthly pay here is annual pay divided by 12, not weekly pay multiplied by four.
+
 ## What this calculator is for
 
 This calculator converts annual salary into monthly, weekly, daily and hourly gross equivalents. It helps compare job offers, part-time work and contractor quotes on a common time basis.

@@ -53,8 +53,16 @@ Yes.
 ### Does this include motor tax?
 No.
 
-### Can I use mpg?
-Use the calculator's supported units or convert consistently.
+### Can I use miles per gallon (mpg)?
+The calculator takes **litres per 100 km**. If your dashboard shows UK/imperial mpg, convert it using **282.481 ÷ mpg**. For example, 40 imperial mpg is about **7.06 L/100 km**.
+
+US mpg uses a smaller gallon: use **235.215 ÷ mpg** instead. Check which gallon your source uses before comparing vehicles. For distances in miles, multiply by **1.609344** to get kilometres.
+
+### How do I calculate petrol or diesel cost per kilometre?
+Multiply L/100 km by the price per litre, then divide by 100. At 6.5 L/100 km and €1.80/L, the result is **€0.117 per km**, or **11.7 cent per km**. A 100 km trip costs €11.70 on those illustrative assumptions.
+
+### Can I split fuel cost between passengers?
+Divide the total journey fuel cost by the number of people sharing it, including the driver if they are paying a share. A €24 fuel bill shared equally by three people is €8 each. Add tolls or parking separately if you also intend to split those costs.
 
 ### Why does my real cost differ from the rated consumption?
 Driving conditions and behaviour vary from test cycles.
