@@ -7,6 +7,7 @@
 <div class="earnings-hub stocks-company">
 <nav class="earnings-crumb" aria-label="Breadcrumb"><a href="/">Compound</a> / <a href="/stocks/">Stocks</a> / {{ company.symbol }}</nav>
 <header class="earnings-hero"><p class="eyebrow">COMPOUND STOCKS / COMPANY PROFILE</p><h1>{% if seo %}{{ seo.headline }}{% else %}{{ company.name }} ({{ company.symbol }}){% endif %}</h1></header>
+{# Lead with market context before the detailed fiscal earnings sections. #}
 {{ tradingview_panel|safe }}
 <div class="earnings-profile-context">
 {% if seo %}<p class="earnings-directory-source earnings-report-dates"><strong>{{ seo.period_subtitle }}</strong>{% if seo.calendar_year_differs %} · Fiscal-year labels differ from calendar years.{% endif %}</p>{% endif %}

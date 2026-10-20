@@ -152,13 +152,13 @@ def test_comparative_card_uses_real_periods_and_handles_losses():
     assert any("narrowed by 14.8 percentage points" in item for item in out["insights"])
 
 
-def test_premium_sections_are_rendered_before_market_chart_and_are_mobile_styled():
+def test_market_chart_precedes_premium_sections_and_preserves_mobile_styles():
     template = (ROOT / "compound/site/templates/earnings_company.html").read_text()
     css = (ROOT / "compound/site/static/earnings.css").read_text()
     assert 'id="earnings-investor-lens"' in template
     assert "This period versus a year earlier" in template
     assert "Company-specific diligence" in template
-    assert template.index('id="earnings-investor-lens"') < template.index("{{ tradingview_panel|safe }}")
+    assert template.index("</h1>") < template.index("{{ tradingview_panel|safe }}") < template.index('id="earnings-investor-lens"')
     assert template.count("{{ tradingview_panel|safe }}") == 1
     assert "earnings-premium-bar-row" in css
     assert "@media(max-width:420px)" in css
