@@ -56,6 +56,8 @@ You could gain exposure to warehouses, apartments, shopping centres, hospitals, 
 
 This guide focuses on listed REIT shares, using US companies as examples. REIT regimes differ between countries. The examples are a starting point for research, not a ranked list of shares to buy.
 
+For the wider income strategy, read our [dividend investing guide for Irish investors](/wealth/dividend-investing-ireland/), covering yield, payout safety, reinvestment and living off dividends.
+
 ## How does a REIT work?
 
 An equity REIT raises money from shareholders and lenders, buys or develops properties, and earns rental income. After operating expenses, interest and other costs, it can distribute income to shareholders and invest in its portfolio.

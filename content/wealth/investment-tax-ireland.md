@@ -92,6 +92,8 @@ It does **not** reduce your tax bill by €1,270.
 
 At a 33% rate, fully using a €1,270 exemption is worth up to €419.10 of CGT compared with having no exemption.
 
+For the investment decision behind the tax, see [dividend investing in Ireland](/wealth/dividend-investing-ireland/): how payments work, assessing dividend safety and estimating income.
+
 ## Dividends are not taxed like capital gains
 
 Revenue states that dividend income is added to your other income and can be liable to:
