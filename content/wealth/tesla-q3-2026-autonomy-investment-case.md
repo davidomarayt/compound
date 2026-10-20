@@ -31,8 +31,7 @@ sources:
 editorial_status: Evergreen guide expanded and primary sources checked on 2026-10-20
 image: /static/images/evergreen/tesla-q3-2026-autonomy-investment-case.jpg
 social_image: /static/images/evergreen/tesla-q3-2026-autonomy-investment-case.jpg
-image_alt: Tesla Roadster prototype at the Petersen Automotive Museum, photographed in 2021; archival illustrative
-  company photograph.
+image_alt: Tesla Roadster prototype at the Petersen Automotive Museum, photographed in 2021; archival illustrative company photograph.
 image_credit: Anthony A / Unsplash (2021; Unsplash License)
 image_source: https://unsplash.com/photos/red-ferrari-sports-car-in-a-white-room-atIR2-a_wQk
 ---
