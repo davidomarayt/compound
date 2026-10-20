@@ -11,6 +11,11 @@ reviewed: "2026-10-19"
 summary: "Microsoft reported June-quarter revenue of $90.0bn and operating income of $40.6bn. The operating margin implied by those figures is approximately 45.1%, showing the earnings power that helps fund new AI infrastructure."
 meta_description: "Microsoft Azure and AI: The Returns Investors Need to See. A filing-led investment analysis of cash flow, competitive advantages, valuation assumptions and the"
 tags: [wealth, stocks, company-research, msft]
+hero_image_url: "https://images.unsplash.com/photo-1671944378859-08bcfa15a280?auto=format&fit=crop&fm=jpg&q=85&w=1600&h=900"
+hero_image_alt: "Microsoft signage on an office building, photographed in 2022."
+hero_image_credit: "Sam Torres / Unsplash (2022; Unsplash License)"
+hero_image_source: "https://unsplash.com/photos/a-building-with-a-microsoft-sign-on-the-side-of-it-7j-PBAMqAtI"
+require_pinned_hero: true
 sources:
   - title: "Company reporting and filings"
     url: "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q4/press-release-webcast"
