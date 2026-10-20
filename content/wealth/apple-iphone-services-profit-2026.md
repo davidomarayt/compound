@@ -11,6 +11,11 @@ reviewed: "2026-10-19"
 summary: "Apple's economics combine hardware replacement cycles, an installed device base and recurring services. A rise in services revenue can support margins, but investors should not assume all service categories have identical economic"
 meta_description: "Apple's iPhone and Services Mix: What Actually Drives Profit?. A filing-led investment analysis of cash flow, competitive advantages, valuation assumptions and"
 tags: [wealth, stocks, company-research, aapl]
+hero_image_url: "https://images.unsplash.com/photo-1503852460961-aa7ffdd3d64d?auto=format&fit=crop&fm=jpg&q=85&w=1600&h=900"
+hero_image_alt: "Apple retail store sign in Amsterdam, photographed in 2017."
+hero_image_credit: "Medhat Dawoud / Unsplash (2017; Unsplash License)"
+hero_image_source: "https://unsplash.com/photos/apple-logo-in-front-of-a-building-f-3mUXFLY2o"
+require_pinned_hero: true
 sources:
   - title: "Company reporting and filings"
     url: "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
