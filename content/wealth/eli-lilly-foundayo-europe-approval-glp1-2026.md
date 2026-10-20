@@ -11,6 +11,11 @@ reviewed: "2026-10-19"
 summary: "European regulators have backed Eli Lilly's oral GLP-1 Foundayo. We examine Mounjaro and Zepbound sales, pricing pressure, manufacturing and the investment case."
 meta_description: "Foundayo wins positive European regulatory opinion. Analyse Eli Lilly's 2026 sales, Mounjaro, Zepbound, GLP-1 pricing and risks for LLY investors."
 tags: [wealth, stocks, eli-lilly, lly, obesity, glp-1, company-research]
+hero_image_url: "https://live.staticflickr.com/5259/5470505852_fcafefbd15_o.jpg"
+hero_image_alt: "Eli Lilly headquarters in Indianapolis, photographed in February 2011; archival company photograph."
+hero_image_credit: "Paul Sableman / Wikimedia Commons (CC BY 2.0)"
+hero_image_source: "https://commons.wikimedia.org/wiki/File:Lilly_1.jpg"
+require_pinned_hero: true
 sources:
   - title: "Eli Lilly Q2 2026 earnings"
     url: "https://www.sec.gov/Archives/edgar/data/59478/000005947826000077/q226lillysalesandearningsp.htm"
