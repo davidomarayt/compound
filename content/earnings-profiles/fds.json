@@ -2,33 +2,33 @@
   "cik": 1013237,
   "company": "FactSet",
   "latest": {
-    "accession": "0001628280-26-046549",
-    "filed": "2026-07-01",
-    "form": "10-Q",
-    "fp": "Q3",
+    "accession": "0001628280-26-066391",
+    "filed": "2026-10-20",
+    "form": "10-K",
+    "fp": "FY",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 3.5,
-        "prior_year": 3.87,
+        "current": 14.57,
+        "prior_year": 15.55,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 126718000,
-        "prior_year": 148542000,
+        "current": 533481000,
+        "prior_year": 597040000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 622918000,
-        "prior_year": 585520000,
+        "current": 2476256000,
+        "prior_year": 2321748000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-05-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1013237/000162828026046549/fds-20260531.htm"
+    "period_end": "2026-08-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1013237/000162828026066391/fds-20260831.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-05-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1013237/000162828026046549/fds-20260531.htm"
+    },
+    {
+      "accession": "0001628280-26-066391",
+      "filed": "2026-10-20",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 14.57,
+          "prior_year": 15.55,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 533481000,
+          "prior_year": 597040000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2476256000,
+          "prior_year": 2321748000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1013237/000162828026066391/fds-20260831.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "FDS",
-  "updated": "2026-10-15"
+  "updated": "2026-10-20"
 }
