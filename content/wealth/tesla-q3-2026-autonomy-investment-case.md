@@ -11,6 +11,11 @@ reviewed: "2026-10-19"
 summary: "Tesla's June-quarter filing reported $28.24bn in revenue, but $1.11bn in attributable net income. That contrast is a useful starting point: a growing top line does not automatically prove that autonomous driving will generate high"
 meta_description: "Tesla Q3 2026: The Gap Between Vehicle Sales and the Autonomy Thesis. A filing-led investment analysis of cash flow, competitive advantages, valuation assumpti"
 tags: [wealth, stocks, company-research, tsla]
+hero_image_url: "https://images.unsplash.com/photo-1622315471002-8f5617067fc4?auto=format&fit=crop&fm=jpg&q=85&w=1600&h=900"
+hero_image_alt: "Tesla Roadster prototype at the Petersen Automotive Museum, photographed in 2021; archival illustrative company photograph."
+hero_image_credit: "Anthony A / Unsplash (2021; Unsplash License)"
+hero_image_source: "https://unsplash.com/photos/red-ferrari-sports-car-in-a-white-room-atIR2-a_wQk"
+require_pinned_hero: true
 sources:
   - title: "Company reporting and filings"
     url: "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
