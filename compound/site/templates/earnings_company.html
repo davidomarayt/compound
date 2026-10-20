@@ -6,12 +6,14 @@
 {% block content %}
 <div class="earnings-hub stocks-company">
 <nav class="earnings-crumb" aria-label="Breadcrumb"><a href="/">Compound</a> / <a href="/stocks/">Stocks</a> / {{ company.symbol }}</nav>
-<header class="earnings-hero"><p class="eyebrow">COMPOUND STOCKS / COMPANY PROFILE</p><h1>{% if seo %}{{ seo.headline }}{% else %}{{ company.name }} ({{ company.symbol }}){% endif %}</h1>
+<header class="earnings-hero"><p class="eyebrow">COMPOUND STOCKS / COMPANY PROFILE</p><h1>{% if seo %}{{ seo.headline }}{% else %}{{ company.name }} ({{ company.symbol }}){% endif %}</h1></header>
+{{ tradingview_panel|safe }}
+<div class="earnings-profile-context">
 {% if seo %}<p class="earnings-directory-source earnings-report-dates"><strong>{{ seo.period_subtitle }}</strong>{% if seo.calendar_year_differs %} · Fiscal-year labels differ from calendar years.{% endif %}</p>{% endif %}
 <p class="earnings-lede">{% if seo %}{{ seo.name }} reported {{ seo.fiscal_display }} results for the period ended {{ seo.readable_end }}. Compare SEC-verified revenue, net income and diluted EPS with the prior year and earlier fiscal quarters.{% else %}Stock chart, financial results, filings and related coverage. {{ company.sector }} · US SEC CIK {{ '%010d'|format(company.cik) }}.{% endif %}</p>
 {% if seo %}<p class="earnings-directory-source">US SEC CIK {{ '%010d'|format(company.cik) }} · Fiscal period ended {{ seo.latest_end }} · <a href="{{ seo.source }}" rel="noopener noreferrer">Official reported results ↗</a></p>{% endif %}
 <div class="earnings-hero-links">{% if seo %}<a href="#earnings-investor-lens">Investor lens ↓</a>{% endif %}<a href="#earnings-company-results">Fiscal earnings ↓</a><a href="#stocks-company-coverage">News &amp; research ↓</a></div>
-<p class="earnings-directory-source">Tickers: {{ company.symbols|join(', ') }}. <a href="https://www.sec.gov/edgar/browse/?CIK={{ company.cik }}" rel="noopener">Official SEC filings ↗</a> · <a href="https://data.sec.gov/api/xbrl/companyfacts/CIK{{ '%010d'|format(company.cik) }}.json" rel="noopener">SEC financial facts ↗</a></p></header>
+<p class="earnings-directory-source">Tickers: {{ company.symbols|join(', ') }}. <a href="https://www.sec.gov/edgar/browse/?CIK={{ company.cik }}" rel="noopener">Official SEC filings ↗</a> · <a href="https://data.sec.gov/api/xbrl/companyfacts/CIK{{ '%010d'|format(company.cik) }}.json" rel="noopener">SEC financial facts ↗</a></p></div>
 {% if seo %}
 <section class="earnings-section earnings-seo-overview" aria-labelledby="seo-results-heading">
   <div class="earnings-heading"><div><p class="eyebrow">LATEST VERIFIED RESULTS · {{ seo.fiscal_display }}</p><h2 id="seo-results-heading">How much did {{ seo.name }} earn?</h2></div><span>Period ended {{ seo.latest_end }}</span></div>
@@ -65,7 +67,6 @@
 <div class="earnings-heading"><h2>Fiscal earnings and quarterly growth</h2><span>Awaiting a verified SEC filing</span></div>
 <p>No standalone SEC quarterly results have passed verification yet. Compound will update this page when filing-backed figures become available rather than creating individual quarter articles.</p>
 </section>{% endif %}
-{{ tradingview_panel|safe }}
 <section class="earnings-section" id="stocks-company-coverage" aria-labelledby="stocks-company-coverage-heading">
 <div class="earnings-heading"><p class="eyebrow">COMPOUND RESEARCH DESK</p><h2 id="stocks-company-coverage-heading">Company news &amp; research</h2><span>{{ news|length + research|length }} linked articles</span></div>
 {% if news or research %}

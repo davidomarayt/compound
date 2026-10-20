@@ -6,12 +6,13 @@
 {% block content %}
 <div class="earnings-hub stocks-company">
 <nav class="earnings-crumb" aria-label="Breadcrumb"><a href="/">Compound</a> / <a href="/stocks/">Stocks</a> / {{ company.ticker }}</nav>
-<header class="earnings-hero"><p class="eyebrow">COMPOUND STOCKS / COMPANY PROFILE</p><h1>{{ company.name }} ({{ company.ticker }})</h1>
+<header class="earnings-hero"><p class="eyebrow">COMPOUND STOCKS / COMPANY PROFILE</p><h1>{{ company.name }} ({{ company.ticker }})</h1></header>
+{{ tradingview_panel|safe }}
+<div class="earnings-profile-context">
 <p class="earnings-lede">{{ company.summary }}</p>
 <div class="company-fact-strip"><span><strong>Ticker:</strong> {{ company.ticker }}</span><span><strong>Listing:</strong> {{ company.exchange }}</span><span><strong>Home market:</strong> {{ company.market }}</span><span><strong>Industry:</strong> {{ company.sector }}</span></div>
 <p class="earnings-directory-source">Primary listing reference: <a href="{{ company.source }}" rel="noopener noreferrer" target="_blank">{{ company.exchange }} ↗</a>. For ADRs, prices refer to the named depositary receipt rather than the local ordinary share.</p>
-</header>
-{{ tradingview_panel|safe }}
+</div>
 {% if report %}{% include "_company_quarters.html" %}{% else %}
 <section class="earnings-section" id="earnings-company-results"><div class="earnings-heading"><h2>Fiscal earnings and quarterly growth</h2><span>Awaiting a verified filing</span></div><p>Compound checks this company's official filings. International reporting formats require additional verification; no quarterly figures are invented and no separate quarterly articles are automatically published.</p></section>{% endif %}
 <section class="earnings-section" id="stocks-company-coverage"><div class="earnings-heading"><p class="eyebrow">ORIGINAL COVERAGE</p><h2>News &amp; analysis</h2><span>{{ news|length + research|length }} linked articles</span></div>
