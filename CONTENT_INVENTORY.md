@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 189
+- Published editorial articles and guides: 190
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 135
+## Wealth articles and guides — 136
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
@@ -69,6 +69,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Changing Jobs and Pension Transfers in Ireland](https://compound.ie/wealth/changing-jobs-transfer-pension-ireland/)
 - [Closing on a House in Ireland: Keys, First Payments and What Comes Next](https://compound.ie/wealth/closing-buying-home-ireland/)
 - [Could diesel prices in Ireland fall by 8c a litre? What the G7 oil release means for motorists](https://compound.ie/news/g7-oil-release-diesel-prices-ireland/)
+- [Dividend Investing in Ireland: How Dividend Stocks Work](https://compound.ie/wealth/dividend-investing-ireland/)
 - [Do Solar Panels Work in Winter in Ireland? Monthly Output and Savings](https://compound.ie/wealth/solar-panels-winter-ireland/)
 - [Do you actually need a battery with solar panels in Ireland?](https://compound.ie/wealth/solar-panels-vs-battery-ireland/)
 - [East- and West-Facing Solar Panels in Ireland: Are They Worth It?](https://compound.ie/wealth/east-west-facing-solar-panels-ireland/)
