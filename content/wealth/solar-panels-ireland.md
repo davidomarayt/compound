@@ -42,6 +42,8 @@ sources:
 
 **New: [Explore the Compound Solar Hub](/solar/)** to compare installation quotes, check grant eligibility and find registered installers. For a focused buying decision, read **[4kWp vs 6kWp vs 8kWp: how many panels do you need?](/wealth/how-many-solar-panels-do-i-need-ireland/)**, which models output, daytime use and the payback on extra panels. For the detailed calculations, use the linked solar tools below. For a closer look at two decisions, use the [battery economics calculator](/solar/batteries/) and [export-rate comparator](/solar/export-rates/).
 
+Building a home? Read our [solar panels for new builds guide](/wealth/solar-panels-new-builds-ireland/) for roofing, first-fix, grant eligibility and developer-specification decisions.
+
 Solar panels are one of the few home upgrades in Ireland that can create value in **two ways at once**:
 
 If your home also uses a heat pump, read **[Heat Pumps in Ireland 2026](/wealth/heat-pumps-ireland/)** for the heating-side economics. Solar can offset some electrical demand, but winter heating demand and summer PV output do not perfectly align.
