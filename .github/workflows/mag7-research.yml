@@ -39,6 +39,7 @@ jobs:
       - name: Research, draft, independently check and prepare a single article
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
           MAG7_MODEL: ${{ vars.MAG7_MODEL }}
           MAG7_EDITOR_MODEL: ${{ vars.MAG7_EDITOR_MODEL }}
           ASSIGNMENT_DATE: ${{ inputs.date }}
