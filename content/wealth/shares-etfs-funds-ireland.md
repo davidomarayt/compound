@@ -39,6 +39,8 @@ In Ireland there is another complication: **tax treatment can differ materially 
 
 From 2027, the choice of wrapper may become even more important. The new [Personal Investment Account Ireland (PIA)](/wealth/personal-investment-account-ireland/) is designed to allow eligible shares, funds and ETFs inside a separate account-level tax system, with no deemed disposal inside the wrapper under the published framework.
 
+For property-company shares, read our [REIT guide: income, growth and risks](/wealth/what-is-a-reit/), with links to real company earnings reports.
+
 ## What is a direct share?
 
 A share is a small ownership interest in a company.
