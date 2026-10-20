@@ -1,95 +1,140 @@
 ---
-title: "Eli Lilly's $23 Billion Quarter: Can Foundayo Extend the Obesity Boom?"
-seo_title: "Eli Lilly Stock: Mounjaro, Zepbound and Foundayo in 2026"
-slug: "eli-lilly-foundayo-obesity-growth-2026-10-19"
-canonical_path: "/wealth/eli-lilly-foundayo-obesity-growth-2026-10-19/"
+title: 'Eli Lilly Stock Guide: Medicines, Pipeline, Pricing and Valuation'
+seo_title: 'Eli Lilly Stock Guide: Medicines, Pipeline, Pricing and Valuation'
+slug: eli-lilly-foundayo-obesity-growth-2026-10-19
+canonical_path: /wealth/eli-lilly-foundayo-obesity-growth-2026-10-19/
 pillar: wealth
 draft: false
 publication_status: published
-date: "2026-10-19"
-reviewed: "2026-10-19"
-summary: "Eli Lilly's Mounjaro and Zepbound are growing rapidly, but falling realised prices and the early Foundayo launch make the next phase more complicated."
-meta_description: "Eli Lilly stock analysis: Q2 2026 sales, Mounjaro, Zepbound, Foundayo, obesity-drug pricing, retatrutide and the investment risks ahead."
-tags: [wealth, stocks, eli-lilly, lly, obesity, glp-1, mag8-research]
-hero_image_url: "https://upload.wikimedia.org/wikipedia/commons/0/05/Eli_Lilly_Corporate_Center%2C_Indianapolis%2C_Indiana%2C_USA.jpg"
-hero_image_alt: "Exterior and visitor entrance of Eli Lilly Corporate Center in Indianapolis, photographed in August 2019."
-hero_image_credit: "Momoneymoproblemz / Wikimedia Commons (CC BY-SA 4.0)"
-hero_image_source: "https://commons.wikimedia.org/wiki/File:Eli_Lilly_Corporate_Center,_Indianapolis,_Indiana,_USA.jpg"
+date: '2026-10-19'
+reviewed: '2026-10-20'
+summary: A long-term Eli Lilly stock guide covering medicine sales, obesity treatments, pipeline risk, patents,
+  manufacturing, pricing and valuation scenarios.
+meta_description: A long-term Eli Lilly stock guide covering medicine sales, obesity treatments, pipeline risk,
+  patents, manufacturing, pricing and valuation scenarios.
+tags:
+- wealth
+- stocks
+- eli-lilly
+- lly
+- obesity
+- glp-1
+- mag8-research
+- evergreen
+- investing-guide
+- company-research
+hero_image_url: https://upload.wikimedia.org/wikipedia/commons/0/05/Eli_Lilly_Corporate_Center%2C_Indianapolis%2C_Indiana%2C_USA.jpg
+hero_image_alt: Exterior and visitor entrance of Eli Lilly Corporate Center in Indianapolis, photographed in August
+  2019.
+hero_image_credit: Momoneymoproblemz / Wikimedia Commons (CC BY-SA 4.0)
+hero_image_source: https://commons.wikimedia.org/wiki/File:Eli_Lilly_Corporate_Center,_Indianapolis,_Indiana,_USA.jpg
 require_pinned_hero: true
 sources:
-  - title: "Eli Lilly Q2 2026 results"
-    url: "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full"
-  - title: "Eli Lilly June 2026 Form 10-Q"
-    url: "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm"
-  - title: "Eli Lilly Foundayo FDA approval"
-    url: "https://investor.lilly.com/news-releases/news-release-details/fda-approves-lillys-foundayotm-orforglipron-only-glp-1-pill"
-  - title: "Reuters on European regulatory recommendation"
-    url: "https://www.reuters.com/legal/litigation/eli-lillys-weight-loss-pill-wins-backing-europe-2026-10-16/"
+- title: Company primary reporting — business model and risk disclosures
+  url: https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm
+- title: Lilly clinical development pipeline
+  url: https://www.lilly.com/science/research-development/pipeline
+editorial_status: Evergreen guide expanded and primary sources checked on 2026-10-20
+image: /static/images/evergreen/eli-lilly-foundayo-obesity-growth-2026-10-19.jpg
+social_image: /static/images/evergreen/eli-lilly-foundayo-obesity-growth-2026-10-19.jpg
+image_alt: Exterior and visitor entrance of Eli Lilly Corporate Center in Indianapolis, photographed in August 2019.
+image_credit: Momoneymoproblemz / Wikimedia Commons (CC BY-SA 4.0)
+image_source: https://commons.wikimedia.org/wiki/File:Eli_Lilly_Corporate_Center,_Indianapolis,_Indiana,_USA.jpg
 ---
 
-Eli Lilly's obesity franchise is no longer a speculative pipeline story. It is an enormous commercial business. In the second quarter of 2026, the company generated **$22.97 billion of revenue**, up 48% year on year, while Mounjaro and Zepbound together produced approximately **$14.87 billion**. Yet the most interesting question for investors is not whether obesity treatments are popular. It is whether Lilly can preserve its extraordinary economics as access expands, competition increases and prices come under pressure.
+Eli Lilly should be analysed as a pharmaceutical business with commercial products, research projects and a finite period of protection around individual medicines. Scientific success is essential, but it is not the same as an attractive investment at every share price.
 
-A new catalyst arrived on 16 October: European regulators recommended approval of Lilly's oral GLP-1 drug, **Foundayo (orforglipron)**. A recommendation is not a final European Commission authorisation, and national reimbursement decisions can still determine commercial access. Nevertheless, it strengthens the argument that Lilly may serve several distinct patient groups through injections and pills.
+The long-term question is whether Lilly can convert medical innovation into durable cash returns after research, manufacturing, competition and payer pressure. For current reported figures and the stock chart, use the [Eli Lilly company page](/stocks/lly/).
 
-## What changed
+## How does Lilly make money?
 
-Foundayo already received US FDA approval for weight management in April 2026. Lilly launched it in the United States during the second quarter, recording **$98 million** in quarterly sales. That is small relative to its injectable franchise, but it is a measurable starting point for a product that could appeal to patients who prefer tablets.
+Lilly sells medicines across several therapeutic areas. Its June 2026 filing highlights the significance of Mounjaro and Zepbound and separates sales changes arising from volume and realised prices. It reported that those two products represented 65% of first-half 2026 revenue. This is a dated concentration reference, not a permanent portfolio weight. [Source: Lilly June 2026 filing](https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm).
 
-The European Medicines Agency's positive recommendation, reported on 16 October, creates a possible route to further geographic expansion. It should not be treated as guaranteed revenue: the European Commission must still make its decision, and launch timing, prescribing practices, competition and reimbursement vary between countries.
+The [official development pipeline](https://www.lilly.com/science/research-development/pipeline) distinguishes programmes at different stages. A development listing is not proof of approval or commercial success. Check the current indication, jurisdiction and regulatory status before making assumptions about availability.
 
-Lilly is simultaneously developing **retatrutide**, a next-generation investigational treatment. In August, the company said its phase-three clinical data package was complete to support planned global submissions for several indications, with a US obesity filing planned for the first quarter of 2027. A regulatory filing is not an approval, and the commercial outcome remains uncertain.
+| Stage | What it establishes | What remains uncertain |
+|---|---|---|
+| Clinical evidence | Results in the studied population and trial design | Broader use, approval and commercial demand |
+| Regulatory approval | Permission for a defined use in a jurisdiction | Reimbursement, uptake and profitability |
+| Manufacturing scale | Ability to produce suitable supply | Cost, utilisation and reliable delivery |
+| Commercial adoption | Patients and prescribers are using the product | Persistence, net pricing and competition |
+| Shareholder returns | Cash available after investment and other obligations | Whether the purchase valuation was attractive |
 
-## What the numbers say
+## Volume, price and access must be read together
 
-| Q2 metric | 2026 | Year-on-year change |
-|---|---:|---:|
-| Total revenue | $22.97bn | +48% |
-| Mounjaro revenue | $9.94bn | +91% |
-| Zepbound revenue | $4.93bn | +46% |
-| Foundayo revenue | $98m | Initial launch quarter |
-| Reported net income | $7.10bn | +25% |
-| Reported diluted EPS | $7.94 | +26% |
+More prescriptions can coexist with lower revenue per prescription. Wider coverage may expand access while requiring discounts or rebates. The investment effect depends on the size and profitability of the additional demand.
 
-*Source: [Lilly Q2 2026 earnings release](https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full). Figures rounded.*
+Use realised net prices, where disclosed, rather than assuming published list prices are the company's revenue. Differences in geography, payer mix, discounts and product mix can change the relationship between prescription growth and revenue growth.
 
-Mounjaro and Zepbound represented roughly **64.7% of Lilly's Q2 revenue** (14.871 divided by 22.974). This is evidence of tremendous commercial success and a material concentration risk at the same time. Lilly's [June 2026 Form 10-Q](https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm) says the two products accounted for 65% of first-half revenue.
+A **hypothetical illustration**: 100 units sold at a net price of $100 generate $10,000. If volume grows 50% but net price falls 20%, revenue becomes $12,000, up 20%, not 50%. Manufacturing, research and selling costs then determine how much becomes profit.
 
-One particularly revealing contrast is **volume versus price**. Lilly reported a 60% increase in overall sales volume, partially offset by a 13% decline in realised prices. Outside the US, revenue grew 80%, despite a 36% decline in realised prices. The volume expansion is real, but investors should not extrapolate revenue growth from prescription growth alone.
+## Obesity medicines: evaluate the franchise, not one headline
 
-Gross margin reached 85.8% in Q2, up 1.5 percentage points. This is a very high product-level margin, but it is **not** Lilly's operating or net margin: research, selling expenses, acquired research charges, taxes and other costs still matter. Reported net income was $7.1 billion, implying a quarterly net margin of approximately 30.9%.
+For a treatment franchise, investors should examine clinical differentiation, tolerability, convenience, manufacturing, coverage and patient persistence. A larger eligible population is not the same as a forecast of treated, reimbursed and continuing patients.
 
-Lilly raised its 2026 revenue guidance to **$85 billion–$87 billion** in August. Guidance is a management forecast rather than a realised result.
+Different formulations may attract new users or shift patients between the company's own products. The second outcome can create value, but gross sales of the new product overstate the incremental benefit if existing sales are displaced.
 
-## The investment case
+Do not compare headline trial percentages without checking the population, duration, dose, estimand and treatment discontinuations. A financial article cannot turn non-comparable trials into a reliable clinical ranking. The relevant investor question is what evidence supports a competitive advantage and what remains unproven.
 
-The strongest bullish argument is that Lilly has built a franchise with several reinforcing advantages: established demand, manufacturing investment, prescriber familiarity, commercial distribution and a pipeline spanning injectable and oral treatments. More manufacturing capacity could unlock demand currently constrained by supply, while oral treatment could broaden the addressable population.
+## Pipeline valuation: use probabilities and timing
 
-A simple illustration shows why mix and price matter. If an illustrative obesity franchise sold **100 units at $100** each, it would generate $10,000. If unit demand rose 50% but the average realised price fell 20%, revenue would be **$12,000**, up only 20%. The numbers are hypothetical, not a Lilly forecast. They demonstrate why investors should monitor prescriptions, net pricing and product mix together.
+A pipeline asset has several hurdles: development, approval, manufacturing, market access and commercial execution. Model those steps rather than assigning the full value of a successful launch immediately.
 
-Foundayo offers another potential route to expansion. Lilly says the tablet can be taken without food or water timing restrictions, a convenience distinction that may matter in everyday treatment. Yet convenience alone cannot establish its long-term market share: comparative efficacy, tolerability, coverage and patient persistence also count.
+For example, if a **hypothetical** successful project would be worth $10bn in present-value terms and your assessed probability of that outcome were 40%, its probability-weighted value would be $4bn before any development costs not already included. Neither figure is a Lilly forecast or a general clinical-success rate.
 
-Retatrutide could extend the franchise further, but its value must be probability-weighted. Clinical success, approval, production scale and reimbursement are separate hurdles. It would be a mistake to treat every potential indication as certain future sales.
+The hardest part is choosing defensible assumptions. Test a range and avoid double counting the same patient population across competing products or indications. Include the possibility that a launch happens later than planned.
 
-## Risks and counterarguments
+## Patents and the need to replace earnings
 
-**Pricing is the central near-term economic risk.** Lilly's own Q2 figures demonstrate that sales volume can rise sharply while realised prices fall. Wider access through government programmes and national health systems may increase patient numbers while lowering revenue per prescription. Investors need to understand the trade-off rather than treating either development as automatically positive or negative.
+A medicine's economic protection is not perpetual. Patent rights, regulatory exclusivity, litigation and competing treatments can affect the period of attractive returns. The relevant dates and rights differ by product and country, so avoid using one company-wide expiry date.
 
-**Competition is broadening.** Novo Nordisk is already active in oral obesity treatments, and Roche, Zealand Pharma and other developers are investing in alternatives. New mechanisms and delivery methods could change the market over time. Strong demand for the category does not guarantee Lilly a fixed share of its future profits.
+An evergreen valuation should include what happens after the strongest products mature. Research and acquisitions may replenish earnings, but that replacement is neither free nor certain. A low valuation based on a temporary profit peak can be misleading.
 
-**Product concentration is substantial.** A safety signal, manufacturing interruption, reimbursement change or competitive shift affecting tirzepatide could have an outsized impact on group results. Diversification across oncology, immunology and neuroscience provides some offset, but does not erase this exposure.
+## Manufacturing: capacity is not the same as cash return
 
-**Reported earnings require careful interpretation.** Q2 included approximately $2.8 billion of acquired in-process research and development charges. These are genuine accounting expenses associated with investment and acquisitions, even if investors may separate them when assessing recurring operating performance. An adjusted earnings figure should not simply be substituted for cash generation.
+A successful medicine can still be constrained by production. New facilities require investment, validation, staffing and reliable operation. Capacity announcements do not immediately equal sellable output or revenue.
 
-Finally, **valuation matters**. Even a successful company can be a poor investment if its share price already assumes near-perfect execution. This analysis does not use a live share price or claim a current price-to-earnings multiple. Those should be checked at the time of any investment decision.
+Compare capital expenditure and working capital with the cash the expanded business eventually generates. If demand shifts or prices fall, an otherwise well-executed factory can earn less than expected. Diversifying supply can improve resilience while also adding cost.
 
-## What to watch next
+For investors, quality and continuity of supply belong in the economic analysis, not just in an operational footnote.
 
-The next results should answer five questions. First, is Mounjaro and Zepbound volume growth still outpacing price erosion? Second, does Foundayo accelerate meaningfully beyond its initial $98 million quarter? Third, does management maintain or revise its $85 billion–$87 billion annual revenue outlook? Fourth, is manufacturing expansion translating into product availability and cash returns? Fifth, what does the next retatrutide regulatory update imply for timing and investment requirements?
+## How to approach Lilly's valuation
 
-There is a useful distinction between a **great pharmaceutical business** and a **great stock at today's valuation**. Lilly's latest reported growth is exceptional, but investors ultimately own future cash flows after spending, taxes and competition—not prescriptions or headlines.
+Separate cash generation from approved products, the cost of supporting and replacing them, and the probability-weighted contribution of the pipeline. Review reported earnings alongside any adjusted figures and the reasons for the adjustments.
 
-For continuing company coverage, visit the [Eli Lilly stock page](/stocks/lly/) and Compound's [earnings research hub](/wealth/earnings/). Readers interested in treatment costs can also explore Compound's GLP-1 coverage.
+Acquired research charges can make comparisons difficult. Excluding an item may help understand recurring operating trends, but repeated acquisition and development spending remains economically relevant. Do not remove those costs from every measure while retaining all the benefits of the acquired assets.
 
-## Sources and methodology
+Stress-test lower net pricing, slower uptake, higher manufacturing costs and delayed launches. A strong business can still offer poor returns if its price assumes unusually favourable outcomes on every variable.
 
-This article uses [Lilly's 5 August 2026 earnings release](https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full), its [June 2026 Form 10-Q](https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm), the company's [Foundayo approval announcement](https://investor.lilly.com/news-releases/news-release-details/fda-approves-lillys-foundayotm-orforglipron-only-glp-1-pill), and [Reuters reporting on the European regulatory recommendation](https://www.reuters.com/legal/litigation/eli-lillys-weight-loss-pill-wins-backing-europe-2026-10-16/). Historical figures are separated from company guidance, hypothetical illustrations and forward-looking analysis. This article is informational, not personal investment advice.
+## Lilly investor checklist
+
+- Separate product volume, realised price and geographic mix.
+- Monitor concentration in the largest medicines.
+- Verify each pipeline milestone and regulatory jurisdiction.
+- Model cannibalisation and avoid counting patients twice.
+- Review manufacturing investment, working capital and cash conversion.
+- Test patent, competition and launch-delay scenarios in the valuation.
+
+## Frequently asked questions
+
+### Is a successful trial the same as an approved medicine?
+
+No. Regulatory review, the authorised indication and market access are separate steps. Commercial sales also require supply and adoption.
+
+### Does a large obesity market guarantee Lilly's growth?
+
+No. Treatment access, patient persistence, net pricing, competition and execution determine the outcome.
+
+### Is this a guide to choosing a medicine?
+
+No. It explains the business for investors. Treatment decisions require individual clinical advice and current product information.
+
+## Continue your research
+
+Read the [Eli Lilly chart and financial results](/stocks/lly/), or explore the [related company analysis](/wealth/eli-lilly-foundayo-europe-approval-glp1-2026/). For the wider investing framework, start with [Investing in Ireland](/wealth/how-to-start-investing-in-ireland/).
+
+Compare the other guides: [Tesla](/wealth/tesla-q3-2026-autonomy-investment-case/), [Microsoft](/wealth/microsoft-azure-ai-returns-2026/), [Nvidia](/wealth/nvidia-ai-gpu-margins-2026/), [Apple](/wealth/apple-iphone-services-profit-2026/), [Amazon](/wealth/amazon-aws-retail-economics-2026/), [Alphabet](/wealth/alphabet-search-ai-economics-2026/), [Meta](/wealth/meta-ai-advertising-returns-2026/).
+
+## Sources and review approach
+
+The linked primary reports support the business descriptions. The valuation frameworks, monitoring questions and hypothetical examples are Compound analysis, not company forecasts. This guide was expanded on **20 October 2026**; its original publication date and URL are retained. It does not quote a live valuation or make a buy/sell recommendation. Use the linked company page and current issuer filings for updated figures.
