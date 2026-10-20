@@ -31,8 +31,7 @@ sources:
 editorial_status: Evergreen guide expanded and primary sources checked on 2026-10-20
 image: /static/images/evergreen/nvidia-ai-gpu-margins-2026.jpg
 social_image: /static/images/evergreen/nvidia-ai-gpu-margins-2026.jpg
-image_alt: Nvidia GeForce RTX 2060 graphics card photographed in 2019; archival consumer GPU, not a current data-centre
-  accelerator.
+image_alt: Nvidia GeForce RTX 2060 graphics card photographed in 2019; archival consumer GPU, not a current data-centre accelerator.
 image_credit: Christian Wiediger / Unsplash (2019; Unsplash License)
 image_source: https://unsplash.com/photos/a-close-up-of-a-graphics-card-on-a-table-TErYPw4o1KM
 ---
