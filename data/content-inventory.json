@@ -90,19 +90,21 @@
         "status": "published"
       },
       {
-        "title": "Alphabet Search and Gemini: The Cost of Defending an Advertising Franchise",
+        "title": "Alphabet Stock Guide: Google Search, Cloud, AI and Valuation",
         "url": "/wealth/alphabet-search-ai-economics-2026/",
         "source": "content/wealth/alphabet-search-ai-economics-2026.md",
         "kind": "Editorial article / guide",
         "category": "Wealth",
         "slug": "alphabet-search-ai-economics-2026",
         "date": "2026-10-19",
-        "reviewed": "2026-10-19",
+        "reviewed": "2026-10-20",
         "tags": [
           "wealth",
           "stocks",
           "company-research",
-          "googl"
+          "googl",
+          "evergreen",
+          "investing-guide"
         ],
         "status": "published"
       },
@@ -125,19 +127,21 @@
         "status": "published"
       },
       {
-        "title": "Amazon AWS Versus Retail: Where Does the Next Dollar of Profit Come From?",
+        "title": "Amazon Stock Guide: AWS, Retail, Advertising and Cash Flow",
         "url": "/wealth/amazon-aws-retail-economics-2026/",
         "source": "content/wealth/amazon-aws-retail-economics-2026.md",
         "kind": "Editorial article / guide",
         "category": "Wealth",
         "slug": "amazon-aws-retail-economics-2026",
         "date": "2026-10-19",
-        "reviewed": "2026-10-19",
+        "reviewed": "2026-10-20",
         "tags": [
           "wealth",
           "stocks",
           "company-research",
-          "amzn"
+          "amzn",
+          "evergreen",
+          "investing-guide"
         ],
         "status": "published"
       },
@@ -160,6 +164,25 @@
         "status": "published"
       },
       {
+        "title": "Apple Stock Guide: iPhone, Services, Buybacks and Valuation",
+        "url": "/wealth/apple-iphone-services-profit-2026/",
+        "source": "content/wealth/apple-iphone-services-profit-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "apple-iphone-services-profit-2026",
+        "date": "2026-10-19",
+        "reviewed": "2026-10-20",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "aapl",
+          "evergreen",
+          "investing-guide"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Apple's earnings growth: what remains after the tariff-refund boost?",
         "url": "/wealth/apple-earnings-tariff-refunds-services/",
         "source": "content/wealth/apple-earnings-tariff-refunds-services.md",
@@ -173,23 +196,6 @@
           "stocks",
           "company-research",
           "mag7-research",
-          "aapl"
-        ],
-        "status": "published"
-      },
-      {
-        "title": "Apple's iPhone and Services Mix: What Actually Drives Profit?",
-        "url": "/wealth/apple-iphone-services-profit-2026/",
-        "source": "content/wealth/apple-iphone-services-profit-2026.md",
-        "kind": "Editorial article / guide",
-        "category": "Wealth",
-        "slug": "apple-iphone-services-profit-2026",
-        "date": "2026-10-19",
-        "reviewed": "2026-10-19",
-        "tags": [
-          "wealth",
-          "stocks",
-          "company-research",
           "aapl"
         ],
         "status": "published"
@@ -618,6 +624,29 @@
         "status": "published"
       },
       {
+        "title": "Eli Lilly Stock Guide: Medicines, Pipeline, Pricing and Valuation",
+        "url": "/wealth/eli-lilly-foundayo-obesity-growth-2026-10-19/",
+        "source": "content/wealth/eli-lilly-foundayo-obesity-growth-2026-10-19.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "eli-lilly-foundayo-obesity-growth-2026-10-19",
+        "date": "2026-10-19",
+        "reviewed": "2026-10-20",
+        "tags": [
+          "wealth",
+          "stocks",
+          "eli-lilly",
+          "lly",
+          "obesity",
+          "glp-1",
+          "mag8-research",
+          "evergreen",
+          "investing-guide",
+          "company-research"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Eli Lilly''s Foundayo Wins European Backing: What the Oral GLP-1 Means for LLY Investors",
         "url": "/wealth/eli-lilly-foundayo-europe-approval-glp1-2026/",
         "source": "content/wealth/eli-lilly-foundayo-europe-approval-glp1-2026.md",
@@ -634,26 +663,6 @@
           "obesity",
           "glp-1",
           "company-research"
-        ],
-        "status": "published"
-      },
-      {
-        "title": "Eli Lilly's $23 Billion Quarter: Can Foundayo Extend the Obesity Boom?",
-        "url": "/wealth/eli-lilly-foundayo-obesity-growth-2026-10-19/",
-        "source": "content/wealth/eli-lilly-foundayo-obesity-growth-2026-10-19.md",
-        "kind": "Editorial article / guide",
-        "category": "Wealth",
-        "slug": "eli-lilly-foundayo-obesity-growth-2026-10-19",
-        "date": "2026-10-19",
-        "reviewed": "2026-10-19",
-        "tags": [
-          "wealth",
-          "stocks",
-          "eli-lilly",
-          "lly",
-          "obesity",
-          "glp-1",
-          "mag8-research"
         ],
         "status": "published"
       },
@@ -1996,6 +2005,25 @@
         "status": "published"
       },
       {
+        "title": "Meta Stock Guide: Advertising, AI, Reality Labs and Valuation",
+        "url": "/wealth/meta-ai-advertising-returns-2026/",
+        "source": "content/wealth/meta-ai-advertising-returns-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "meta-ai-advertising-returns-2026",
+        "date": "2026-10-19",
+        "reviewed": "2026-10-20",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "meta",
+          "evergreen",
+          "investing-guide"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Meta's advertising engine is growing. Is enough cash reaching shareholders?",
         "url": "/wealth/meta-advertising-growth-ai-cash-flow/",
         "source": "content/wealth/meta-advertising-growth-ai-cash-flow.md",
@@ -2014,36 +2042,21 @@
         "status": "published"
       },
       {
-        "title": "Meta's AI Advertising Returns: How Much Spending Is Too Much?",
-        "url": "/wealth/meta-ai-advertising-returns-2026/",
-        "source": "content/wealth/meta-ai-advertising-returns-2026.md",
-        "kind": "Editorial article / guide",
-        "category": "Wealth",
-        "slug": "meta-ai-advertising-returns-2026",
-        "date": "2026-10-19",
-        "reviewed": "2026-10-19",
-        "tags": [
-          "wealth",
-          "stocks",
-          "company-research",
-          "meta"
-        ],
-        "status": "published"
-      },
-      {
-        "title": "Microsoft Azure and AI: The Returns Investors Need to See",
+        "title": "Microsoft Stock Guide: Azure, Software, AI and Cash Flow",
         "url": "/wealth/microsoft-azure-ai-returns-2026/",
         "source": "content/wealth/microsoft-azure-ai-returns-2026.md",
         "kind": "Editorial article / guide",
         "category": "Wealth",
         "slug": "microsoft-azure-ai-returns-2026",
         "date": "2026-10-19",
-        "reviewed": "2026-10-19",
+        "reviewed": "2026-10-20",
         "tags": [
           "wealth",
           "stocks",
           "company-research",
-          "msft"
+          "msft",
+          "evergreen",
+          "investing-guide"
         ],
         "status": "published"
       },
@@ -2237,19 +2250,21 @@
         "status": "published"
       },
       {
-        "title": "Nvidia AI Chips: How Durable Are Exceptional GPU Economics?",
+        "title": "Nvidia Stock Guide: AI Chips, CUDA, Margins and Valuation",
         "url": "/wealth/nvidia-ai-gpu-margins-2026/",
         "source": "content/wealth/nvidia-ai-gpu-margins-2026.md",
         "kind": "Editorial article / guide",
         "category": "Wealth",
         "slug": "nvidia-ai-gpu-margins-2026",
         "date": "2026-10-19",
-        "reviewed": "2026-10-19",
+        "reviewed": "2026-10-20",
         "tags": [
           "wealth",
           "stocks",
           "company-research",
-          "nvda"
+          "nvda",
+          "evergreen",
+          "investing-guide"
         ],
         "status": "published"
       },
@@ -3214,19 +3229,21 @@
         "status": "published"
       },
       {
-        "title": "Tesla Q3 2026: The Gap Between Vehicle Sales and the Autonomy Thesis",
+        "title": "Tesla Stock Guide: Cars, Energy, Autonomy and Valuation",
         "url": "/wealth/tesla-q3-2026-autonomy-investment-case/",
         "source": "content/wealth/tesla-q3-2026-autonomy-investment-case.md",
         "kind": "Editorial article / guide",
         "category": "Wealth",
         "slug": "tesla-q3-2026-autonomy-investment-case",
         "date": "2026-10-19",
-        "reviewed": "2026-10-19",
+        "reviewed": "2026-10-20",
         "tags": [
           "wealth",
           "stocks",
           "company-research",
-          "tsla"
+          "tsla",
+          "evergreen",
+          "investing-guide"
         ],
         "status": "published"
       },
