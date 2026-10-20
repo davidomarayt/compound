@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 187 published articles and guides, 64 tools,
+**Included:** 188 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -167,6 +167,7 @@ For the complete register (including 510+ company profiles), open
 - [Sheds, Garden Rooms & Home Offices: Planning Permission in Ireland](https://compound.ie/wealth/sheds-garden-rooms-home-offices-planning-ireland/) — **Wealth**
 - [Solar export payments are not being scrapped: what ESB's clarification means](https://compound.ie/news/solar-export-payments-ireland-clean-export-guarantee/) — **Wealth**
 - [Solar panel 'dawn raids' in Ireland: what the CCPC investigation means for homeowners](https://compound.ie/news/solar-panel-ccpc-dawn-raids-bid-rigging-ireland/) — **Wealth**
+- [Solar Panels for New Builds in Ireland: Costs, Timing, Sizing and Grants](https://compound.ie/wealth/solar-panels-new-builds-ireland/) — **Wealth**
 - [Solar Panels in Ireland: Costs, Grants, Payback & Export Payments](https://compound.ie/wealth/solar-panels-ireland/) — **Wealth**
 - [Solicitor and Conveyancing in Ireland: Contracts, Title and Stamp Duty](https://compound.ie/wealth/solicitor-conveyancing-stamp-duty-ireland/) — **Wealth**
 - [Standard drinks in Ireland: what a pint, glass of wine and spirit actually count as](https://compound.ie/health/standard-drinks-ireland-pints-wine-spirits/) — **Health**
