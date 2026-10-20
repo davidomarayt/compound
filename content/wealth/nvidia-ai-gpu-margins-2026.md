@@ -11,6 +11,11 @@ reviewed: "2026-10-19"
 summary: "Nvidia benefits from demand for accelerated computing, but a semiconductor supplier is not economically identical to the software companies buying its systems. Investors need to distinguish short-term supply scarcity from sustaina"
 meta_description: "Nvidia AI Chips: How Durable Are Exceptional GPU Economics?. A filing-led investment analysis of cash flow, competitive advantages, valuation assumptions and t"
 tags: [wealth, stocks, company-research, nvda]
+hero_image_url: "https://images.unsplash.com/photo-1555618565-9f2b0323a10d?auto=format&fit=crop&fm=jpg&q=85&w=1600&h=900"
+hero_image_alt: "Nvidia GeForce RTX 2060 graphics card photographed in 2019; archival consumer GPU, not a current data-centre accelerator."
+hero_image_credit: "Christian Wiediger / Unsplash (2019; Unsplash License)"
+hero_image_source: "https://unsplash.com/photos/a-close-up-of-a-graphics-card-on-a-table-TErYPw4o1KM"
+require_pinned_hero: true
 sources:
   - title: "Company reporting and filings"
     url: "https://investor.nvidia.com/financial-info/sec-filings/"
