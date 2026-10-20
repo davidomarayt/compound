@@ -262,12 +262,30 @@ def run(day: date,output: Path) -> int:
     return exit_code
 
 
+def original_schedule_date() -> date | None:
+    """Resolve the original GitHub scheduled-run date, including during retries."""
+    if os.getenv("GITHUB_EVENT_NAME") != "schedule":
+        return None
+    repo = os.getenv("GITHUB_REPOSITORY", "").strip()
+    run_id = os.getenv("GITHUB_RUN_ID", "").strip()
+    if not repo or not run_id.isdigit():
+        raise RuntimeError("Scheduled publishing needs a GitHub run ID to preserve its article date")
+    response = httpx.get(
+        f"https://api.github.com/repos/{repo}/actions/runs/{run_id}",
+        headers={"User-Agent": "Compound-Editorial-Research/1.0", "Accept": "application/vnd.github+json"},
+        timeout=20,
+    )
+    response.raise_for_status()
+    return date.fromisoformat(response.json()["created_at"][:10])
+
+
 def main() -> int:
     p=argparse.ArgumentParser()
-    p.add_argument("--date",default=datetime.now(timezone.utc).date().isoformat())
+    p.add_argument("--date")
     p.add_argument("--output",default="mag7-review.md")
     args=p.parse_args()
-    return run(date.fromisoformat(args.date),Path(args.output))
+    day = date.fromisoformat(args.date) if args.date else (original_schedule_date() or datetime.now(timezone.utc).date())
+    return run(day,Path(args.output))
 
 
 if __name__=="__main__":
