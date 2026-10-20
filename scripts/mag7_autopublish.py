@@ -223,6 +223,44 @@ def article(day: date,ticker: str,week: int,data: dict,photo: dict) -> tuple[Pat
     return path,image,slug
 
 
+def discover_workspace_id() -> str:
+    """Use an explicit workspace or safely discover the only available workspace.
+
+    Identity-linked API keys may not be bound to one workspace. The Admin API
+    can list workspaces for an authorised organization member. Never guess
+    which workspace to bill if multiple workspaces exist.
+    """
+    configured = os.getenv("ANTHROPIC_WORKSPACE_ID", "").strip()
+    if configured:
+        return configured
+    api_key = os.getenv("ANTHROPIC_API_KEY", "").strip()
+    if not api_key:
+        return ""
+    try:
+        response = httpx.get(
+            "https://api.anthropic.com/v1/organizations/workspaces",
+            params={"include_default": "true", "limit": 100},
+            headers={
+                "x-api-key": api_key,
+                "anthropic-version": "2023-06-01",
+                "User-Agent": "Compound-Editorial-Research/1.0",
+            },
+            timeout=15,
+        )
+        if response.status_code != 200:
+            return ""
+        result = response.json()
+        if result.get("has_more"):
+            return ""
+        active = [item for item in result.get("data", []) if
+                  item.get("id", "").startswith("wrkspc_") and not item.get("archived_at")]
+        if len(active) == 1:
+            return active[0]["id"]
+    except (httpx.HTTPError, ValueError, TypeError, KeyError):
+        return ""
+    return ""
+
+
 def run(day: date,output: Path) -> int:
     slot=pilot.assignment(day)
     if slot is None:
@@ -240,7 +278,7 @@ def run(day: date,output: Path) -> int:
         sec=pilot.latest_sec(ticker)
         photo=photo_for(ticker,week)
         from anthropic import Anthropic
-        workspace_id = os.getenv("ANTHROPIC_WORKSPACE_ID", "").strip()
+        workspace_id = discover_workspace_id()
         options = {"default_headers": {"anthropic-workspace-id": workspace_id}} if workspace_id else {}
         ai=Anthropic(timeout=140, **options)
         data=research(ai,ticker,week,day,sec)
