@@ -18,18 +18,16 @@ tags:
 - stock-meta
 - meta
 - earnings-analysis
-hero_image_url: https://upload.wikimedia.org/wikipedia/commons/8/86/Head_office_building_of_Meta_in_Ireland.jpg
-hero_image_alt: Meta building in Ireland. Archival photograph, 27 June 2024.
-hero_image_credit: 'Laurel Lodged / Wikimedia Commons / CC BY-SA 4.0. Archival: 27
-  June 2024.'
-hero_image_source: https://commons.wikimedia.org/wiki/File:Head_office_building_of_Meta_in_Ireland.jpg
+hero_image_url: https://images.unsplash.com/photo-1757310998309-87a97e562ee5?w=3600&q=95&fit=max
+hero_image_alt: Meta AI app icon on a smartphone screen. Archival photograph published 8 September 2025; cropped for publication.
+hero_image_credit: Salvador Rios / Unsplash / Unsplash License. Archival photograph published 8 September 2025; cropped.
+hero_image_source: https://unsplash.com/photos/smartphone-screen-displays-ai-app-icons-chatgpt-grok-meta-ai-gemini-tkkOCi1Wgx0
 require_pinned_hero: true
-image: /static/images/evergreen/meta-advertising-ai-spending-earnings.jpg
-social_image: /static/images/evergreen/meta-advertising-ai-spending-earnings.jpg
-image_alt: Meta building in Ireland. Archival photograph, 27 June 2024.
-image_credit: 'Laurel Lodged / Wikimedia Commons / CC BY-SA 4.0. Archival: 27 June
-  2024.'
-image_source: https://commons.wikimedia.org/wiki/File:Head_office_building_of_Meta_in_Ireland.jpg
+image: /static/images/evergreen/meta-ai-app-earnings.jpg
+social_image: /static/images/evergreen/meta-ai-app-earnings.jpg
+image_alt: Meta AI app icon on a smartphone screen. Archival photograph published 8 September 2025; cropped for publication.
+image_credit: Salvador Rios / Unsplash / Unsplash License. Archival photograph published 8 September 2025; cropped.
+image_source: https://unsplash.com/photos/smartphone-screen-displays-ai-app-icons-chatgpt-grok-meta-ai-gemini-tkkOCi1Wgx0
 sources:
 - title: 'Q3 2026 results: SEC Form 8-K, Exhibit 99.1, 21 October 2026'
   url: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm
@@ -88,4 +86,4 @@ Follow the [Meta stock page](/stocks/meta/) for the chart and financial record, 
 
 *Source: [SEC earnings release](https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm). Editorial analysis; reported figures and management forecasts are identified separately.*
 
-*Image: Meta building in Ireland. Archival photograph, 27 June 2024. Credit: Laurel Lodged / Wikimedia Commons / CC BY-SA 4.0. Archival: 27 June 2024.. [Original](https://commons.wikimedia.org/wiki/File:Head_office_building_of_Meta_in_Ireland.jpg); [licence](https://creativecommons.org/licenses/by-sa/4.0/). Resized for publication; image adaptations retain the original licence.*
+*Image: Meta AI app icon on a smartphone screen. Archival photograph published 8 September 2025; cropped for publication. Credit: Salvador Rios / Unsplash. [Original](https://unsplash.com/photos/smartphone-screen-displays-ai-app-icons-chatgpt-grok-meta-ai-gemini-tkkOCi1Wgx0); [Unsplash License](https://unsplash.com/license).*
