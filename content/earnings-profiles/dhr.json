@@ -2,33 +2,33 @@
   "cik": 313616,
   "company": "Danaher Corporation",
   "latest": {
-    "accession": "0000313616-26-000161",
-    "filed": "2026-07-21",
+    "accession": "0000313616-26-000199",
+    "filed": "2026-10-21",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.23,
-        "prior_year": 0.77,
+        "current": 1.75,
+        "prior_year": 1.27,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 870000000,
-        "prior_year": 555000000,
+        "current": 1235000000,
+        "prior_year": 908000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 6265000000,
-        "prior_year": 5936000000,
+        "current": 6554000000,
+        "prior_year": 6053000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-26",
-    "source": "https://www.sec.gov/Archives/edgar/data/313616/000031361626000161/dhr-20260626.htm"
+    "period_end": "2026-09-25",
+    "source": "https://www.sec.gov/Archives/edgar/data/313616/000031361626000199/dhr-20260925.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-26",
       "source": "https://www.sec.gov/Archives/edgar/data/313616/000031361626000161/dhr-20260626.htm"
+    },
+    {
+      "accession": "0000313616-26-000199",
+      "filed": "2026-10-21",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.75,
+          "prior_year": 1.27,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1235000000,
+          "prior_year": 908000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6554000000,
+          "prior_year": 6053000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-25",
+      "source": "https://www.sec.gov/Archives/edgar/data/313616/000031361626000199/dhr-20260925.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "DHR",
-  "updated": "2026-10-15"
+  "updated": "2026-10-21"
 }
