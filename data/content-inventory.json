@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-10-20",
+  "snapshot_date": "2026-10-21",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -160,6 +160,25 @@
           "company-research",
           "mag7-research",
           "amzn"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price",
+        "url": "/wealth/anthropic-loss-ipo-valuation/",
+        "source": "content/wealth/anthropic-loss-ipo-valuation.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "anthropic-loss-ipo-valuation",
+        "date": "2026-10-21",
+        "reviewed": "2026-10-21",
+        "tags": [
+          "stocks",
+          "company-research",
+          "anthropic",
+          "artificial-intelligence",
+          "ipo",
+          "editorial"
         ],
         "status": "published"
       },
