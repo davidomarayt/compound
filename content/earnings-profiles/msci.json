@@ -2,33 +2,33 @@
   "cik": 1408198,
   "company": "MSCI",
   "latest": {
-    "accession": "0001408198-26-000046",
-    "filed": "2026-07-21",
+    "accession": "0001408198-26-000056",
+    "filed": "2026-10-20",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 4.69,
-        "prior_year": 3.92,
+        "current": 4.86,
+        "prior_year": 4.25,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 342000000,
-        "prior_year": 303700000,
+        "current": 351000000,
+        "prior_year": 325300000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 867000000,
-        "prior_year": 772700000,
+        "current": 892000000,
+        "prior_year": 793400000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000046/msci-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000056/msci-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000046/msci-20260630.htm"
+    },
+    {
+      "accession": "0001408198-26-000056",
+      "filed": "2026-10-20",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.86,
+          "prior_year": 4.25,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 351000000,
+          "prior_year": 325300000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 892000000,
+          "prior_year": 793400000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000056/msci-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "MSCI",
-  "updated": "2026-10-15"
+  "updated": "2026-10-21"
 }
