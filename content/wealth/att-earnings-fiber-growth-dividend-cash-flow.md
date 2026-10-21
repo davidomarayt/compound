@@ -7,12 +7,9 @@ date: '2026-10-21'
 reviewed: '2026-10-21'
 draft: false
 publication_status: published
-approved_by: User requested SEC-verified standalone editorial on remaining pre-market
-  results
-summary: AT&T raises its earnings outlook as broadband additions hit a record. Its
-  SEC filing reveals a tighter cash-flow story behind the dividend and buybacks.
-meta_description: 'AT&T Q3 2026 earnings: $32.3bn revenue, $0.65 adjusted EPS and
-  record internet additions. Read the dividend, free-cash-flow and debt analysis.'
+approved_by: User requested SEC-verified standalone editorial on remaining pre-market results
+summary: AT&T raises its earnings outlook as broadband additions hit a record. Its SEC filing reveals a tighter cash-flow story behind the dividend and buybacks.
+meta_description: 'AT&T Q3 2026 earnings: $32.3bn revenue, $0.65 adjusted EPS and record internet additions. Read the dividend, free-cash-flow and debt analysis.'
 tags:
 - stocks
 - company-research
@@ -21,17 +18,15 @@ tags:
 - att
 - earnings-analysis
 hero_image_url: https://upload.wikimedia.org/wikipedia/commons/c/c4/An_AT%26T_wireless_retail_store_in_Asheville%2C_North_Carolina_01.jpg
-hero_image_alt: AT&T wireless store in Asheville, North Carolina; archival photograph
-  taken on 6 May 2025
+hero_image_alt: AT&T wireless store in Asheville, North Carolina; archival photograph taken on 6 May 2025
 hero_image_credit: Harrison Keely / Wikimedia Commons — CC BY 4.0; 6 May 2025; resized
 hero_image_source: https://commons.wikimedia.org/wiki/File:An_AT%26T_wireless_retail_store_in_Asheville,_North_Carolina_01.jpg
 require_pinned_hero: true
-image: /static/images/evergreen/att-earnings-fiber-growth-dividend-cash-flow.jpg
-image_alt: AT&T wireless store in Asheville, North Carolina; archival photograph taken
-  on 6 May 2025
-image_credit: Harrison Keely / Wikimedia Commons — CC BY 4.0; 6 May 2025; resized
-image_source: https://commons.wikimedia.org/wiki/File:An_AT%26T_wireless_retail_store_in_Asheville,_North_Carolina_01.jpg
-social_image: /static/images/evergreen/att-earnings-fiber-growth-dividend-cash-flow.jpg
+image: "/static/images/evergreen/att-earnings-fiber-growth-dividend-cash-flow.jpg"
+image_alt: "AT&T wireless store in Asheville, North Carolina; archival photograph taken on 6 May 2025"
+image_credit: "Harrison Keely / Wikimedia Commons — CC BY 4.0; 6 May 2025; resized"
+image_source: "https://commons.wikimedia.org/wiki/File:An_AT%26T_wireless_retail_store_in_Asheville,_North_Carolina_01.jpg"
+social_image: "/static/images/evergreen/att-earnings-fiber-growth-dividend-cash-flow.jpg"
 sources:
 - title: AT&T SEC 8-K, filed 21 October 2026
   url: https://www.sec.gov/Archives/edgar/data/732717/000073271726000370/t-20261021.htm
@@ -45,8 +40,7 @@ charts:
 - title: 'AT&T free cash flow: quarterly improvement, year-to-date decline'
   kind: bar
   unit: $bn
-  caption: 'Company-defined non-GAAP free cash flow from continuing operations. Compare
-    each period with its year-earlier equivalent. Source: SEC Exhibit 99.3.'
+  caption: 'Company-defined non-GAAP free cash flow from continuing operations. Compare each period with its year-earlier equivalent. Source: SEC Exhibit 99.3.'
   source_url: https://www.sec.gov/Archives/edgar/data/732717/000073271726000370/t-3q2026exhibit993.htm
   items:
   - label: Q3 2025
