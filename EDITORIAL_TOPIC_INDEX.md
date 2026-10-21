@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 201 published articles and guides, 64 tools,
+**Included:** 202 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -27,6 +27,7 @@ For the complete register (including 510+ company profiles), open
 - [Apple Stock Guide: iPhone, Services, Buybacks and Valuation](https://compound.ie/wealth/apple-iphone-services-profit-2026/) — **Wealth**
 - [Apple's earnings growth: what remains after the tariff-refund boost?](https://compound.ie/wealth/apple-earnings-tariff-refunds-services/) — **Wealth**
 - [Apple’s US supplier push: resilience before margin claims](https://compound.ie/wealth/apple-us-iphone-suppliers-manufacturing/) — **Wealth**
+- [AT&T Earnings: Fibre Growth Strengthens the Case, but Cash Still Matters](https://compound.ie/wealth/att-earnings-fiber-growth-dividend-cash-flow/) — **Wealth**
 - [Attic Conversion & Dormer Planning Permission Ireland](https://compound.ie/wealth/attic-conversion-dormer-planning-permission-ireland/) — **Wealth**
 - [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/) — **Wealth**
 - [Budget 2027 gives health €29.1bn. So why aren’t Mounjaro and Wegovy funded for obesity?](https://compound.ie/news/budget-2027-obesity-mounjaro-wegovy-ireland/) — **Health**
