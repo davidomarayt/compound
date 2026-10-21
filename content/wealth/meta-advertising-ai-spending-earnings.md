@@ -1,87 +1,91 @@
 ---
-title: 'Meta earnings preview: can advertising justify the AI bill?'
-seo_title: 'Meta earnings preview: can advertising justify the AI bill?'
+title: 'Meta Earnings: Advertising Surges, but the AI Bill Consumes the Cash'
+seo_title: 'Meta Earnings: Advertising Surges, but the AI Bill Consumes the Cash'
 slug: meta-advertising-ai-spending-earnings
 pillar: wealth
-draft: false
-publication_status: published
 date: '2026-10-21'
 reviewed: '2026-10-21'
-approved_by: User requested seven timely company editorials and publication
-summary: Ahead of Meta’s 21 October results, five tests for advertising performance, investment spending and cash generation.
-meta_description: Ahead of Meta’s 21 October results, five tests for advertising performance, investment spending and cash generation.
+draft: false
+publication_status: published
+approved_by: User requested SEC-verified after-hours earnings editorials and publication
+summary: 'Meta Q3 2026 earnings: 26% revenue growth, negative free cash flow and a
+  new non-voting share class. What the figures mean for shareholders.'
+meta_description: 'Meta Q3 2026 earnings: 26% revenue growth, negative free cash flow
+  and a new non-voting share class. What the figures mean for shareholders.'
 tags:
 - stocks
 - company-research
 - stock-meta
 - meta
-- editorial
+- earnings-analysis
 hero_image_url: https://upload.wikimedia.org/wikipedia/commons/8/86/Head_office_building_of_Meta_in_Ireland.jpg
 hero_image_alt: Meta building in Ireland. Archival photograph, 27 June 2024.
-hero_image_credit: 'Laurel Lodged / Wikimedia Commons / CC BY-SA 4.0. Archival: 27 June 2024.'
+hero_image_credit: 'Laurel Lodged / Wikimedia Commons / CC BY-SA 4.0. Archival: 27
+  June 2024.'
 hero_image_source: https://commons.wikimedia.org/wiki/File:Head_office_building_of_Meta_in_Ireland.jpg
 require_pinned_hero: true
 image: /static/images/evergreen/meta-advertising-ai-spending-earnings.jpg
 social_image: /static/images/evergreen/meta-advertising-ai-spending-earnings.jpg
 image_alt: Meta building in Ireland. Archival photograph, 27 June 2024.
-image_credit: 'Laurel Lodged / Wikimedia Commons / CC BY-SA 4.0. Archival: 27 June 2024.'
+image_credit: 'Laurel Lodged / Wikimedia Commons / CC BY-SA 4.0. Archival: 27 June
+  2024.'
 image_source: https://commons.wikimedia.org/wiki/File:Head_office_building_of_Meta_in_Ireland.jpg
 sources:
-- title: scheduled its third-quarter results
-  url: https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-to-Announce-Third-Quarter-2026-Results/default.aspx
+- title: 'Q3 2026 results: SEC Form 8-K, Exhibit 99.1, 21 October 2026'
+  url: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm
 ---
+**Meta’s advertising engine is growing strongly. The harder question is how much of that success will reach shareholders after the infrastructure bill.**
 
-**Earnings preview, published before the release on 21 October 2026. Meta’s next report should be judged on the relationship between advertising performance and the cash required to support its AI ambitions.**
+Its results, released on 21 October, make the distinction unusually clear. A profitable company can still consume cash after investment. For shareholders, the challenge is to judge whether that investment creates future earning power at an acceptable price.
 
-Meta has [scheduled its third-quarter results](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-to-Announce-Third-Quarter-2026-Results/default.aspx) for after the US market closes on Wednesday, 21 October. Its conference call is set for 4:30pm Eastern time—9:30pm in Ireland on that date.
+*Updated after publication of the SEC earnings release. This replaces our earlier preview at the same URL.*
 
-This article sets out what to examine when the figures arrive. It contains no claimed Q3 results, invented earnings beat or assumed market reaction. The [Meta company page](/stocks/meta/) is the home for the continuing financial record.
+## Meta earnings at a glance
 
-## The question behind the headline earnings number
+| Metric | Q3 2026 |
+|---|---:|
+| Revenue | $64.601bn; +26% annually |
+| GAAP operating income | $12.988bn |
+| GAAP diluted EPS | $3.83 |
+| Operating cash flow | $32.79bn |
+| Capital expenditure, including finance-lease principal | $34.91bn |
+| Free cash flow, non-GAAP | −$2.12bn |
 
-A strong revenue quarter would be useful evidence about demand, but it would not settle the return on all current investment. An increase in earnings can coexist with weaker cash flow when spending on long-lived infrastructure rises.
+*Source: Meta’s SEC 8-K, Exhibit 99.1; quarter ended 30 September 2026. US dollars.*
 
-The analytical task is to understand both the operating engine and what shareholders must reinvest to keep it growing. A company does not become attractive merely by reporting more revenue if the capital needed to produce that revenue rises faster without an adequate future payoff.
+## The earnings headline needs an accounting explanation
 
-Equally, lower current free cash flow does not automatically establish poor capital allocation. Investment can create future earning capacity. Investors need to test that case rather than assume it.
+A $9.89bn litigation charge depressed profit. Meta says excluding it would produce $7.40 EPS. The prior-year comparison also contains an exceptional tax charge.
 
-## Five things to read in the release
+Investors should resist both extremes: treating an unusual charge as proof that the operating business has collapsed, or removing it and behaving as though shareholders never bear its cost. Adjustments can improve comparisons without making the underlying obligation economically irrelevant.
 
-| Area | Question for the results |
-|---|---|
-| Advertising | How much growth comes from impressions versus price? |
-| Operating costs | Are costs growing faster or slower than revenue? |
-| Capital spending | Has management changed the scale or timing of investment? |
-| Cash generation | How much cash remains after investment, using the disclosed definition? |
-| Outlook | What does guidance imply for the next period, and what remains uncertain? |
+That is why the reported result belongs beside any adjusted interpretation. A clean-looking earnings number is useful only if readers understand what has been excluded and why.
 
-This is a reading framework, not a forecast. Where a metric is not disclosed, the honest answer is that the release does not provide it.
+## Advertising growth has two drivers
 
-## Advertising growth needs a quality check
+Ad impressions rose 10% and average ad prices 14%. Meta guides Q4 revenue to $73–76bn and full-year capital expenditure to $135–145bn.
 
-More advertising revenue can reflect several influences: more opportunities to display ads, higher prices, changes in engagement or broader advertiser demand. Those explanations have different implications for durability.
+More impressions and stronger pricing offer different information. The former concerns the volume of advertising delivered; the latter reflects what advertisers pay across the mix of inventory. Neither measure alone isolates the contribution of AI.
 
-Investors should be careful about attributing every improvement to AI. Evidence that a tool helps advertisers is valuable, but a group revenue increase alone does not isolate the contribution of that tool.
+For an investor, the important chain of evidence runs from better advertiser outcomes to repeat spending, then to cash generation after the cost of serving those advertisers. A confident management narrative should be tested against that chain rather than accepted as a substitute for it.
 
-The stronger case would connect better advertiser outcomes to repeat spending and then to cash generation after the costs of delivering the improvement. Any causal claim should be supported by the company’s disclosures and treated with appropriate caution.
+## Why the cash-flow deficit matters
 
-## Capital expenditure and profit arrive on different timetables
+Infrastructure spending generally hits cash before its full cost appears in earnings through depreciation. Rapid expansion can therefore make current accounting profit a poor guide to the amount available for distribution.
 
-A long-lived asset usually affects cash flow when purchased, while its cost is recognised in profit over time through depreciation. That timing difference is why reading only the income statement can miss the scale of an infrastructure buildout.
+A cash deficit during investment is not automatically a failure. It does increase the importance of utilisation, pricing and useful asset lives. The economic question is whether the eventual cash returns compensate for the resources committed and the risk taken now.
 
-Look at the cash-flow statement, the capital-expenditure definition and any financing arrangements discussed in the release. Compare consistent periods and watch for working-capital movements that temporarily flatter or depress cash generation.
+## The new share class adds a governance question
 
-A useful report would explain how new capacity supports demand and when management expects the benefits. A spending increase without that connection leaves shareholders doing more of the forecasting themselves.
+Meta also announced non-voting Class C shares, planned for January 2027, with one new share per existing Class A or B share. Payment dates remain to be set; the distribution itself leaves voting power unchanged.
 
-## How to avoid overreacting to the first headline
+A stock distribution does not mechanically create value. Shareholders should distinguish the division of their existing economic interest from any subsequent issuance to fund investments, compensation or acquisitions. Later issuance can affect ownership economics even when control remains concentrated.
 
-Separate reported figures from guidance, and both from analyst expectations. Check whether an unusually large gain, expense or tax item changes the comparison. A “beat” against a forecast is not the same as improvement in the underlying economics.
+That makes capital allocation and accountability inseparable. Investors need a view on both the prospective returns and who decides how much capital to commit.
 
-Our [Meta stock guide](/wealth/meta-ai-advertising-returns-2026/) provides the broader framework. Tonight’s release will supply the evidence for updating it.
-
-The most useful result would combine resilient demand with a credible account of the resources required to serve it. That is the test to apply once the numbers are public—not a conclusion to announce before they arrive.
+Follow the [Meta stock page](/stocks/meta/) for the chart and financial record, and our [Meta investment guide](/wealth/meta-ai-advertising-returns-2026/) for the broader framework. The quarter’s central issue is how efficiently a growing advertising business can convert its success into durable shareholder returns.
 
 
-*Editorial analysis. Sources checked on 21 October 2026.*
+*Source: [SEC earnings release](https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm). Editorial analysis; reported figures and management forecasts are identified separately.*
 
-*Photograph: Meta building in Ireland, 27 June 2024 (archival). Laurel Lodged, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Head_office_building_of_Meta_in_Ireland.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Resized and cropped for cover and social formats; image adaptations retain the source licence.*
+*Image: Meta building in Ireland. Archival photograph, 27 June 2024. Credit: Laurel Lodged / Wikimedia Commons / CC BY-SA 4.0. Archival: 27 June 2024.. [Original](https://commons.wikimedia.org/wiki/File:Head_office_building_of_Meta_in_Ireland.jpg); [licence](https://creativecommons.org/licenses/by-sa/4.0/). Resized for publication; image adaptations retain the original licence.*
