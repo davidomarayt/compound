@@ -2,33 +2,33 @@
   "cik": 1467858,
   "company": "General Motors",
   "latest": {
-    "accession": "0001467858-26-000051",
-    "filed": "2026-07-21",
+    "accession": "0001467858-26-000059",
+    "filed": "2026-10-20",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.41,
-        "prior_year": 1.91,
+        "current": 3.73,
+        "prior_year": 1.35,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1305000000,
-        "prior_year": 1895000000,
+        "current": 3335000000,
+        "prior_year": 1327000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 43762000000,
-        "prior_year": 42869000000,
+        "current": 45706000000,
+        "prior_year": 44256000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000051/gm-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000059/gm-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000051/gm-20260630.htm"
+    },
+    {
+      "accession": "0001467858-26-000059",
+      "filed": "2026-10-20",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.73,
+          "prior_year": 1.35,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 3335000000,
+          "prior_year": 1327000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 45706000000,
+          "prior_year": 44256000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000059/gm-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "GM",
-  "updated": "2026-10-15"
+  "updated": "2026-10-21"
 }

@@ -2,33 +2,33 @@
   "cik": 1133421,
   "company": "Northrop Grumman",
   "latest": {
-    "accession": "0001133421-26-000034",
-    "filed": "2026-07-21",
+    "accession": "0001133421-26-000038",
+    "filed": "2026-10-20",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 7.68,
-        "prior_year": 8.15,
+        "current": 7.89,
+        "prior_year": 7.67,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1094000000,
-        "prior_year": 1174000000,
+        "current": 1124000000,
+        "prior_year": 1100000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 10876000000,
-        "prior_year": 10351000000,
+        "current": 11122000000,
+        "prior_year": 10423000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1133421/000113342126000034/noc-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1133421/000113342126000038/noc-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1133421/000113342126000034/noc-20260630.htm"
+    },
+    {
+      "accession": "0001133421-26-000038",
+      "filed": "2026-10-20",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 7.89,
+          "prior_year": 7.67,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1124000000,
+          "prior_year": 1100000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 11122000000,
+          "prior_year": 10423000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1133421/000113342126000038/noc-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "NOC",
-  "updated": "2026-10-15"
+  "updated": "2026-10-21"
 }
