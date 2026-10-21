@@ -2,33 +2,33 @@
   "cik": 943452,
   "company": "Wabtec",
   "latest": {
-    "accession": "0001628280-26-049139",
-    "filed": "2026-07-22",
+    "accession": "0001628280-26-066629",
+    "filed": "2026-10-21",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.33,
-        "prior_year": 1.96,
+        "current": 2.42,
+        "prior_year": 1.81,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 395000000,
-        "prior_year": 336000000,
+        "current": 409000000,
+        "prior_year": 310000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3179000000,
-        "prior_year": 2706000000,
+        "current": 3120000000,
+        "prior_year": 2886000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828026049139/wab-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828026066629/wab-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828026049139/wab-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-066629",
+      "filed": "2026-10-21",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.42,
+          "prior_year": 1.81,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 409000000,
+          "prior_year": 310000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3120000000,
+          "prior_year": 2886000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/943452/000162828026066629/wab-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "WAB",
-  "updated": "2026-10-15"
+  "updated": "2026-10-21"
 }

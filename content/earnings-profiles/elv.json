@@ -2,33 +2,33 @@
   "cik": 1156039,
   "company": "Elevance Health",
   "latest": {
-    "accession": "0001156039-26-000060",
-    "filed": "2026-07-15",
+    "accession": "0001156039-26-000071",
+    "filed": "2026-10-21",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 6.71,
-        "prior_year": 7.72,
+        "current": 6.27,
+        "prior_year": 5.32,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1463000000,
-        "prior_year": 1743000000,
+        "current": 1365000000,
+        "prior_year": 1189000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 50474000000,
-        "prior_year": 49776000000,
+        "current": 51429000000,
+        "prior_year": 50711000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1156039/000115603926000060/elv-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1156039/000115603926000071/elv-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1156039/000115603926000060/elv-20260630.htm"
+    },
+    {
+      "accession": "0001156039-26-000071",
+      "filed": "2026-10-21",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 6.27,
+          "prior_year": 5.32,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1365000000,
+          "prior_year": 1189000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 51429000000,
+          "prior_year": 50711000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1156039/000115603926000071/elv-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "ELV",
-  "updated": "2026-10-15"
+  "updated": "2026-10-21"
 }

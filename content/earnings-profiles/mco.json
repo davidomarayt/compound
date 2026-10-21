@@ -2,33 +2,33 @@
   "cik": 1059556,
   "company": "Moody's Corporation",
   "latest": {
-    "accession": "0001628280-26-049398",
-    "filed": "2026-07-23",
+    "accession": "0001628280-26-066731",
+    "filed": "2026-10-21",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 5.03,
-        "prior_year": 3.21,
+        "current": 4.24,
+        "prior_year": 3.6,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 878000000,
-        "prior_year": 578000000,
+        "current": 734000000,
+        "prior_year": 646000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2185000000,
-        "prior_year": 1898000000,
+        "current": 2023000000,
+        "prior_year": 2007000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026049398/mco-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026049398/mco-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-066731",
+      "filed": "2026-10-21",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.24,
+          "prior_year": 3.6,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 734000000,
+          "prior_year": 646000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2023000000,
+          "prior_year": 2007000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "MCO",
-  "updated": "2026-10-15"
+  "updated": "2026-10-21"
 }
