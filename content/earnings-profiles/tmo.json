@@ -2,33 +2,33 @@
   "cik": 97745,
   "company": "Thermo Fisher Scientific",
   "latest": {
-    "accession": "0000097745-26-000144",
-    "filed": "2026-07-31",
-    "form": "10-Q",
-    "fp": "Q2",
+    "accession": "0000097745-26-000173",
+    "filed": "2026-10-21",
+    "form": "8-K Exhibit 99.1",
+    "fp": "Q3",
     "fy": 2026,
+    "period_end": "2026-09-26",
+    "source": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000173/q32026earnings8kex99_1.htm",
     "metrics": {
-      "diluted_eps": {
-        "current": 4.68,
-        "prior_year": 4.28,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 12137000000,
+        "prior_year": 11122000000,
+        "tag": "Revenues",
+        "unit": "USD"
       },
       "net_income": {
-        "current": 1736000000,
-        "prior_year": 1617000000,
-        "tag": "NetIncomeLoss",
+        "current": 1721000000,
+        "prior_year": 1616000000,
+        "tag": "NetIncomeLossAttributableToParent",
         "unit": "USD"
       },
-      "revenue": {
-        "current": 11994000000,
-        "prior_year": 10855000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 4.64,
+        "prior_year": 4.27,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
       }
-    },
-    "period_end": "2026-06-27",
-    "source": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000144/tmo-20260627.htm"
+    }
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-27",
       "source": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000144/tmo-20260627.htm"
+    },
+    {
+      "accession": "0000097745-26-000173",
+      "filed": "2026-10-21",
+      "form": "8-K Exhibit 99.1",
+      "fp": "Q3",
+      "fy": 2026,
+      "period_end": "2026-09-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000173/q32026earnings8kex99_1.htm",
+      "metrics": {
+        "revenue": {
+          "current": 12137000000,
+          "prior_year": 11122000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        },
+        "net_income": {
+          "current": 1721000000,
+          "prior_year": 1616000000,
+          "tag": "NetIncomeLossAttributableToParent",
+          "unit": "USD"
+        },
+        "diluted_eps": {
+          "current": 4.64,
+          "prior_year": 4.27,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        }
+      }
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC 10-Q filings and manually verified 8-K Exhibit 99.1; no analyst estimates",
   "ticker": "TMO",
-  "updated": "2026-10-15"
+  "updated": "2026-10-21"
 }
