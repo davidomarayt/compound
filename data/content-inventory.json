@@ -1635,6 +1635,24 @@
         "status": "published"
       },
       {
+        "title": "IBM Earnings: Stronger Cash Flow, but the Recovery Is Uneven",
+        "url": "/wealth/ibm-earnings-software-growth-cash-flow/",
+        "source": "content/wealth/ibm-earnings-software-growth-cash-flow.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "ibm-earnings-software-growth-cash-flow",
+        "date": "2026-10-21",
+        "reviewed": "2026-10-21",
+        "tags": [
+          "stocks",
+          "company-research",
+          "stock-ibm",
+          "ibm",
+          "earnings-analysis"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Income Protection Insurance in Ireland: The Complete 2026 Guide",
         "url": "/wealth/income-protection-insurance-ireland/",
         "source": "content/wealth/income-protection-insurance-ireland.md",
@@ -2138,7 +2156,7 @@
         "status": "published"
       },
       {
-        "title": "Meta earnings preview: can advertising justify the AI bill?",
+        "title": "Meta Earnings: Advertising Surges, but the AI Bill Consumes the Cash",
         "url": "/wealth/meta-advertising-ai-spending-earnings/",
         "source": "content/wealth/meta-advertising-ai-spending-earnings.md",
         "kind": "Editorial article / guide",
@@ -2151,7 +2169,7 @@
           "company-research",
           "stock-meta",
           "meta",
-          "editorial"
+          "earnings-analysis"
         ],
         "status": "published"
       },
@@ -2244,6 +2262,24 @@
           "stock-msft",
           "msft",
           "editorial"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Molina Earnings: Guidance Holds as Medical Costs Squeeze Margins",
+        "url": "/wealth/molina-healthcare-earnings-medicaid-margins/",
+        "source": "content/wealth/molina-healthcare-earnings-medicaid-margins.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "molina-healthcare-earnings-medicaid-margins",
+        "date": "2026-10-21",
+        "reviewed": "2026-10-21",
+        "tags": [
+          "stocks",
+          "company-research",
+          "stock-moh",
+          "moh",
+          "earnings-analysis"
         ],
         "status": "published"
       },
@@ -3472,6 +3508,24 @@
           "myaccount",
           "income-tax",
           "wealth"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Tesla Earnings: Cash Flow Recovers, but Profit Remains Under Pressure",
+        "url": "/wealth/tesla-earnings-cash-flow-profit-investment/",
+        "source": "content/wealth/tesla-earnings-cash-flow-profit-investment.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "tesla-earnings-cash-flow-profit-investment",
+        "date": "2026-10-21",
+        "reviewed": "2026-10-21",
+        "tags": [
+          "stocks",
+          "company-research",
+          "stock-tsla",
+          "tsla",
+          "earnings-analysis"
         ],
         "status": "published"
       },
