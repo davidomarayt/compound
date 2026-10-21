@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 193 published articles and guides, 64 tools,
+**Included:** 200 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -19,11 +19,14 @@ For the complete register (including 510+ company profiles), open
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/) — **Wealth**
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/) — **Wealth**
 - [Alphabet's cash-flow squeeze: why strong Cloud growth is not the whole story](https://compound.ie/wealth/alphabet-ai-capex-free-cash-flow/) — **Wealth**
+- [Alphabet’s European AI opportunity comes with conditions](https://compound.ie/wealth/alphabet-europe-ai-sovereignty/) — **Wealth**
 - [Amazon Stock Guide: AWS, Retail, Advertising and Cash Flow](https://compound.ie/wealth/amazon-aws-retail-economics-2026/) — **Wealth**
 - [Amazon's profit surge: separate AWS earnings from investment gains](https://compound.ie/wealth/amazon-aws-profit-investment-gains/) — **Wealth**
+- [Amazon’s €16 billion Germany plan needs a return test](https://compound.ie/wealth/amazon-germany-investment-returns/) — **Wealth**
 - [Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price](https://compound.ie/wealth/anthropic-loss-ipo-valuation/) — **Wealth**
 - [Apple Stock Guide: iPhone, Services, Buybacks and Valuation](https://compound.ie/wealth/apple-iphone-services-profit-2026/) — **Wealth**
 - [Apple's earnings growth: what remains after the tariff-refund boost?](https://compound.ie/wealth/apple-earnings-tariff-refunds-services/) — **Wealth**
+- [Apple’s US supplier push: resilience before margin claims](https://compound.ie/wealth/apple-us-iphone-suppliers-manufacturing/) — **Wealth**
 - [Attic Conversion & Dormer Planning Permission Ireland](https://compound.ie/wealth/attic-conversion-dormer-planning-permission-ireland/) — **Wealth**
 - [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/) — **Wealth**
 - [Budget 2027 gives health €29.1bn. So why aren’t Mounjaro and Wegovy funded for obesity?](https://compound.ie/news/budget-2027-obesity-mounjaro-wegovy-ireland/) — **Health**
@@ -108,6 +111,7 @@ For the complete register (including 510+ company profiles), open
 - [Is switching your mortgage worth it in Ireland? A worked €250,000 example](https://compound.ie/wealth/is-switching-your-mortgage-worth-it-ireland/) — **Wealth**
 - [Life for a 100-Year Life: Connection, Purpose and Ordinary Days](https://compound.ie/life/happiness-for-a-100-year-life/) — **Life**
 - [Life Insurance Ireland 2026: Costs, Cover, Policy Types and How Much You Need](https://compound.ie/wealth/life-insurance-ireland/) — **Wealth**
+- [Lilly’s METiS deal: read beyond the $1.1 billion headline](https://compound.ie/wealth/eli-lilly-metis-drug-delivery-deal/) — **Wealth**
 - [Live to 100: What a 100-Year Life Would Really Mean in Ireland](https://compound.ie/live-to-100/) — **Health**
 - [Local Property Tax Ireland 2026–2030: Bands, Rates & How Much You’ll Pay](https://compound.ie/wealth/local-property-tax-ireland/) — **Wealth**
 - [Loneliness in Ireland: how common it is and what actually helps](https://compound.ie/life/loneliness-ireland-how-common-what-helps/) — **Life**
@@ -115,10 +119,12 @@ For the complete register (including 510+ company profiles), open
 - [Macronutrients and micronutrients: a complete guide for Ireland](https://compound.ie/health/macronutrients-micronutrients-guide-ireland/) — **Health**
 - [Making a Will in Ireland: Complete Guide & Costs](https://compound.ie/wealth/how-to-make-a-will-ireland/) — **Wealth**
 - [Manchester City found guilty on 114 financial-rule charges: what the case was really about](https://compound.ie/news/manchester-city-114-financial-rule-breaches-explained/) — **Wealth**
+- [Meta earnings preview: can advertising justify the AI bill?](https://compound.ie/wealth/meta-advertising-ai-spending-earnings/) — **Wealth**
 - [Meta Stock Guide: Advertising, AI, Reality Labs and Valuation](https://compound.ie/wealth/meta-ai-advertising-returns-2026/) — **Wealth**
 - [Meta's advertising engine is growing. Is enough cash reaching shareholders?](https://compound.ie/wealth/meta-advertising-growth-ai-cash-flow/) — **Wealth**
 - [Microsoft Stock Guide: Azure, Software, AI and Cash Flow](https://compound.ie/wealth/microsoft-azure-ai-returns-2026/) — **Wealth**
 - [Microsoft's AI spending: the cash-flow test behind Azure's growth](https://compound.ie/wealth/microsoft-ai-capex-cash-flow/) — **Wealth**
+- [Microsoft’s Essex exit exposes the power constraint on AI](https://compound.ie/wealth/microsoft-nscale-power-grid-delay/) — **Wealth**
 - [More than 500,000 Irish energy accounts are in arrears — what happens if you can’t pay?](https://compound.ie/news/energy-bill-arrears-ireland-cant-pay/) — **Wealth**
 - [Mortgage Approval in Ireland: How Much Can You Borrow?](https://compound.ie/wealth/mortgage-approval-affordability-ireland/) — **Wealth**
 - [Mortgage Protection and Drawdown in Ireland: Final Approval Checklist](https://compound.ie/wealth/mortgage-protection-drawdown-ireland/) — **Wealth**
@@ -130,6 +136,7 @@ For the complete register (including 510+ company profiles), open
 - [No Energy Credit in Budget 2027: What Will Electricity Cost This Winter?](https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/) — **Wealth**
 - [Nvidia Stock Guide: AI Chips, CUDA, Margins and Valuation](https://compound.ie/wealth/nvidia-ai-gpu-margins-2026/) — **Wealth**
 - [Nvidia's 75% gross margin: how much room is there for competition?](https://compound.ie/wealth/nvidia-gross-margin-ai-demand/) — **Wealth**
+- [Nvidia’s next competitive test is software portability](https://compound.ie/wealth/nvidia-torchneuron-software-competition/) — **Wealth**
 - [One in Seven Irish Adults Now Receive Financial Help From Family](https://compound.ie/news/family-financial-support-ireland-2026/) — **Wealth**
 - [Ozempic, Wegovy & Mounjaro: medical card cover in Ireland](https://compound.ie/health/glp1-hse-medical-card-ireland/) — **Health**
 - [Padel in Ireland: Rules, Courts, Costs & How to Start Playing](https://compound.ie/life/padel-ireland/) — **Life**

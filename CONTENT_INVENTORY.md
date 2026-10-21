@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 193
+- Published editorial articles and guides: 200
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,16 +49,19 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 139
+## Wealth articles and guides — 146
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
 - [Alphabet's cash-flow squeeze: why strong Cloud growth is not the whole story](https://compound.ie/wealth/alphabet-ai-capex-free-cash-flow/)
+- [Alphabet’s European AI opportunity comes with conditions](https://compound.ie/wealth/alphabet-europe-ai-sovereignty/)
 - [Amazon Stock Guide: AWS, Retail, Advertising and Cash Flow](https://compound.ie/wealth/amazon-aws-retail-economics-2026/)
 - [Amazon's profit surge: separate AWS earnings from investment gains](https://compound.ie/wealth/amazon-aws-profit-investment-gains/)
+- [Amazon’s €16 billion Germany plan needs a return test](https://compound.ie/wealth/amazon-germany-investment-returns/)
 - [Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price](https://compound.ie/wealth/anthropic-loss-ipo-valuation/)
 - [Apple Stock Guide: iPhone, Services, Buybacks and Valuation](https://compound.ie/wealth/apple-iphone-services-profit-2026/)
 - [Apple's earnings growth: what remains after the tariff-refund boost?](https://compound.ie/wealth/apple-earnings-tariff-refunds-services/)
+- [Apple’s US supplier push: resilience before margin claims](https://compound.ie/wealth/apple-us-iphone-suppliers-manufacturing/)
 - [Attic Conversion & Dormer Planning Permission Ireland](https://compound.ie/wealth/attic-conversion-dormer-planning-permission-ireland/)
 - [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/)
 - [Budget 2027 Ireland: The Key Changes to Tax, Rent, Childcare, Pensions and Energy](https://compound.ie/wealth/budget-2027-what-to-watch/)
@@ -115,13 +118,16 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Is it financially worth returning to work after having children in Ireland?](https://compound.ie/wealth/returning-to-work-childcare-costs-ireland/)
 - [Is switching your mortgage worth it in Ireland? A worked €250,000 example](https://compound.ie/wealth/is-switching-your-mortgage-worth-it-ireland/)
 - [Life Insurance Ireland 2026: Costs, Cover, Policy Types and How Much You Need](https://compound.ie/wealth/life-insurance-ireland/)
+- [Lilly’s METiS deal: read beyond the $1.1 billion headline](https://compound.ie/wealth/eli-lilly-metis-drug-delivery-deal/)
 - [Local Property Tax Ireland 2026–2030: Bands, Rates & How Much You’ll Pay](https://compound.ie/wealth/local-property-tax-ireland/)
 - [Making a Will in Ireland: Complete Guide & Costs](https://compound.ie/wealth/how-to-make-a-will-ireland/)
 - [Manchester City found guilty on 114 financial-rule charges: what the case was really about](https://compound.ie/news/manchester-city-114-financial-rule-breaches-explained/)
+- [Meta earnings preview: can advertising justify the AI bill?](https://compound.ie/wealth/meta-advertising-ai-spending-earnings/)
 - [Meta Stock Guide: Advertising, AI, Reality Labs and Valuation](https://compound.ie/wealth/meta-ai-advertising-returns-2026/)
 - [Meta's advertising engine is growing. Is enough cash reaching shareholders?](https://compound.ie/wealth/meta-advertising-growth-ai-cash-flow/)
 - [Microsoft Stock Guide: Azure, Software, AI and Cash Flow](https://compound.ie/wealth/microsoft-azure-ai-returns-2026/)
 - [Microsoft's AI spending: the cash-flow test behind Azure's growth](https://compound.ie/wealth/microsoft-ai-capex-cash-flow/)
+- [Microsoft’s Essex exit exposes the power constraint on AI](https://compound.ie/wealth/microsoft-nscale-power-grid-delay/)
 - [More than 500,000 Irish energy accounts are in arrears — what happens if you can’t pay?](https://compound.ie/news/energy-bill-arrears-ireland-cant-pay/)
 - [Mortgage Approval in Ireland: How Much Can You Borrow?](https://compound.ie/wealth/mortgage-approval-affordability-ireland/)
 - [Mortgage Protection and Drawdown in Ireland: Final Approval Checklist](https://compound.ie/wealth/mortgage-protection-drawdown-ireland/)
@@ -133,6 +139,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [No Energy Credit in Budget 2027: What Will Electricity Cost This Winter?](https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/)
 - [Nvidia Stock Guide: AI Chips, CUDA, Margins and Valuation](https://compound.ie/wealth/nvidia-ai-gpu-margins-2026/)
 - [Nvidia's 75% gross margin: how much room is there for competition?](https://compound.ie/wealth/nvidia-gross-margin-ai-demand/)
+- [Nvidia’s next competitive test is software portability](https://compound.ie/wealth/nvidia-torchneuron-software-competition/)
 - [One in Seven Irish Adults Now Receive Financial Help From Family](https://compound.ie/news/family-financial-support-ireland-2026/)
 - [PCP vs Hire Purchase vs Car Loan in Ireland: the real cost of each](https://compound.ie/wealth/pcp-vs-hp-vs-car-loan-ireland/)
 - [Pension Funds and Fees in Ireland: What to Check](https://compound.ie/wealth/pension-funds-fees-ireland/)
