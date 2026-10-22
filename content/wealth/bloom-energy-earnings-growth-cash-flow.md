@@ -7,13 +7,9 @@ draft: false
 publication_status: published
 date: '2026-10-22'
 reviewed: '2026-10-22'
-approved_by: User explicitly requested a standalone article matching previous earnings
-  editorials
-summary: Bloom Energy reported $1.236bn in revenue and $250.3m in profit, but cash
-  flow turned negative. We examine the SEC results and the next test for its AI power
-  story.
-meta_description: 'Bloom Energy Q3 2026 earnings: revenue rises 138%, but cash flow
-  turns negative. SEC-sourced analysis of profits, spending and raised guidance.'
+approved_by: User explicitly requested a standalone article matching previous earnings editorials
+summary: Bloom Energy reported $1.236bn in revenue and $250.3m in profit, but cash flow turned negative. We examine the SEC results and the next test for its AI power story.
+meta_description: 'Bloom Energy Q3 2026 earnings: revenue rises 138%, but cash flow turns negative. SEC-sourced analysis of profits, spending and raised guidance.'
 tags:
 - stocks
 - company-research
@@ -23,19 +19,15 @@ tags:
 - earnings-analysis
 - energy
 hero_image_url: https://upload.wikimedia.org/wikipedia/commons/c/cd/Bloom_Energy_Servers.jpg
-hero_image_alt: Bloom Energy fuel-cell servers photographed on 24 February 2010; archival
-  photograph, not the current product generation
-hero_image_credit: Jakub Mosur / Bloom Energy, via Wikimedia Commons — 24 February
-  2010; CC BY 2.0; archival photograph
+hero_image_alt: Bloom Energy fuel-cell servers photographed on 24 February 2010; archival photograph, not the current product generation
+hero_image_credit: Jakub Mosur / Bloom Energy, via Wikimedia Commons — 24 February 2010; CC BY 2.0; archival photograph
 hero_image_source: https://commons.wikimedia.org/wiki/File:Bloom_Energy_Servers.jpg
 require_pinned_hero: true
-image: /static/images/evergreen/bloom-energy-earnings-growth-cash-flow.jpg
-image_alt: Bloom Energy fuel-cell servers photographed on 24 February 2010; archival
-  photograph, not the current product generation
-image_credit: Jakub Mosur / Bloom Energy, via Wikimedia Commons — 24 February 2010;
-  CC BY 2.0; archival photograph
-image_source: https://commons.wikimedia.org/wiki/File:Bloom_Energy_Servers.jpg
-social_image: /static/images/evergreen/bloom-energy-earnings-growth-cash-flow.jpg
+image: "/static/images/evergreen/bloom-energy-earnings-growth-cash-flow.jpg"
+image_alt: "Bloom Energy fuel-cell servers photographed on 24 February 2010; archival photograph, not the current product generation"
+image_credit: "Jakub Mosur / Bloom Energy, via Wikimedia Commons — 24 February 2010; CC BY 2.0; archival photograph"
+image_source: "https://commons.wikimedia.org/wiki/File:Bloom_Energy_Servers.jpg"
+social_image: "/static/images/evergreen/bloom-energy-earnings-growth-cash-flow.jpg"
 sources:
 - title: Bloom Energy Q3 2026 results, SEC 8-K Exhibit 99.1
   url: https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex991_q326financialresults.htm
@@ -45,8 +37,7 @@ charts:
 - title: 'Bloom Energy: quarterly revenue accelerates'
   kind: bar
   unit: $m
-  caption: 'Reported 2026 quarterly revenue. Sources: Q1 SEC 10-Q and Q3 SEC earnings
-    release.'
+  caption: 'Reported 2026 quarterly revenue. Sources: Q1 SEC 10-Q and Q3 SEC earnings release.'
   source_url: https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex991_q326financialresults.htm
   items:
   - label: Q1
@@ -59,7 +50,6 @@ charts:
     value: 1235.837
     text: $1,235.8m
 ---
-
 Bloom Energy’s latest results strengthen its case as a supplier to the AI power build-out. They also expose the question that matters after a spectacular growth quarter: how much of that accounting profit will become cash shareholders can eventually claim?
 
 The company reported **$1.236 billion of Q3 revenue**, up **138.1% year on year** and **16.0% from Q2**. GAAP operating profit reached **$225.4 million**, with an **18.2% operating margin**. Yet operating cash flow was **negative $27.1 million**. Both sides belong in the investment story.
