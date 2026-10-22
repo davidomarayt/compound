@@ -22,13 +22,24 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: pip install -e .
+      - run: pip install -e ".[dev]"
+      - name: Test image cache and metadata processing
+        run: python -m pytest -q tests/test_news_images.py
+      - name: Restore verified editorial image cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/news-images
+          key: editorial-images-v1-${{ runner.os }}-${{ hashFiles('scripts/news_images.py') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            editorial-images-v1-${{ runner.os }}-${{ hashFiles('scripts/news_images.py') }}-
       - name: Render approved custom editorial covers
         run: python scripts/render_editorial_heroes.py
       - name: Attach images to published News stories
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: python scripts/news_images.py
+      - name: Validate all processed article metadata before building
+        run: python -c "from pathlib import Path; from compound.site.build import load_articles; print('Validated', len(load_articles(Path('content'))), 'articles')"
       - name: Verify approved TV licence stock photograph
         run: |
           test -s compound/site/static/images/evergreen/ireland-tv-licence-decline-2026.jpg
@@ -416,6 +427,13 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -e .
+      - name: Restore verified editorial image cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/news-images
+          key: editorial-images-v1-${{ runner.os }}-${{ hashFiles('scripts/news_images.py') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            editorial-images-v1-${{ runner.os }}-${{ hashFiles('scripts/news_images.py') }}-
       - name: Render approved bespoke covers for mobile QA
         run: python scripts/render_editorial_heroes.py
       - name: Attach required News photos before the QA rebuild

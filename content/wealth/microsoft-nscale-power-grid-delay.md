@@ -21,11 +21,11 @@ hero_image_alt: Microsoft Building 17 entrance in Redmond, Washington. Archival 
 hero_image_credit: 'Derrick Coetzee / Wikimedia Commons / Public domain. Archival: April 2005.'
 hero_image_source: https://commons.wikimedia.org/wiki/File:Microsoft_building_17_front_door.jpg
 require_pinned_hero: true
-image: "/static/images/evergreen/microsoft-nscale-power-grid-delay.jpg"
-social_image: "/static/images/evergreen/microsoft-nscale-power-grid-delay.jpg"
-image_alt: "Microsoft Building 17 entrance in Redmond, Washington. Archival photograph, April 2005; not the Loughton project."
-image_credit: "Derrick Coetzee / Wikimedia Commons / Public domain. Archival: April 2005."
-image_source: "https://commons.wikimedia.org/wiki/File:Microsoft_building_17_front_door.jpg"
+image: /static/images/evergreen/microsoft-nscale-power-grid-delay.jpg
+social_image: /static/images/evergreen/microsoft-nscale-power-grid-delay.jpg
+image_alt: Microsoft Building 17 entrance in Redmond, Washington. Archival photograph, April 2005; not the Loughton project.
+image_credit: 'Derrick Coetzee / Wikimedia Commons / Public domain. Archival: April 2005.'
+image_source: https://commons.wikimedia.org/wiki/File:Microsoft_building_17_front_door.jpg
 sources:
 - title: Reuters reporting published on 19 October
   url: https://www.investing.com/news/stock-market-news/microsoft-pulls-out-of-uk-nscale-data-centre-deal-over-power-delay-4957808
@@ -75,5 +75,10 @@ For investors, it would be a mistake to treat every project withdrawal as collap
 
 
 *Editorial analysis. Sources checked on 21 October 2026.*
+
+## Who supplies the power?
+
+Power constraints also create an opportunity for equipment suppliers. Our [Bloom Energy earnings analysis](/wealth/bloom-energy-earnings-growth-cash-flow/) examines how rapid sales growth translates into profit and cash. It is a complementary investor question, not evidence that Bloom supplies the Loughton project. See [Bloom’s company page](/stocks/be/) and [Microsoft’s company page](/stocks/msft/) for the underlying coverage.
+
 
 *Photograph: Microsoft Building 17, Redmond, April 2005 (archival). Derrick Coetzee, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Microsoft_building_17_front_door.jpg), released into the public domain. Resized and cropped for display.*

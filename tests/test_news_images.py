@@ -138,7 +138,7 @@ Body.
 
     assert result == "pexels-pinned-direct:38208389"
     assert "https://images.pexels.com/photos/38208389/pexels-photo-38208389.jpeg" in downloads[0]
-    assert 'image: "/static/images/evergreen/pickleball-ireland.jpg"' in updated
+    assert news_images.parse(article)[0]["image"] == "/static/images/evergreen/pickleball-ireland.jpg"
 
 
 def test_automated_earnings_never_receive_images_even_when_forced(tmp_path, monkeypatch):
@@ -205,3 +205,54 @@ def test_stock_article_pinned_image_and_no_inheritance_keyword(tmp_path, monkeyp
     assert news_images.process(doc, "") == "pinned-url"
     assert "/static/images/evergreen/merger.jpg" in doc.read_text(encoding="utf-8")
     assert "NASA photographer" in doc.read_text(encoding="utf-8")
+
+
+def test_inject_fields_replaces_wrapped_and_block_scalars(tmp_path):
+    p = tmp_path / 'story.md'
+    p.write_text('---\ntitle: Story\nimage_alt: old text\n  continued text\nimage_credit: |\n  Old credit\n  second line\nsources:\n- url: https://example.com\n---\nBody stays exactly.\n')
+    _, raw, match = news_images.parse(p)
+    news_images.inject_fields(p, raw, match, {'image_alt': 'New alt', 'image_credit': 'New credit'})
+    meta, updated, _ = news_images.parse(p)
+    assert meta['image_alt'] == 'New alt'
+    assert meta['image_credit'] == 'New credit'
+    assert meta['sources'] == [{'url': 'https://example.com'}]
+    assert updated.endswith('Body stays exactly.\n')
+
+
+def test_cache_restores_assets_without_network_and_invalidates_source(tmp_path, monkeypatch):
+    from PIL import Image
+    static = tmp_path / 'static'
+    monkeypatch.setattr(news_images, 'STATIC', static)
+    cache = tmp_path / 'cache'
+    p = tmp_path / 'story.md'
+    original = '---\ntitle: Story\nslug: story\nhero_image_url: https://example.com/one.jpg\n---\nBody.\n'
+    p.write_text(original)
+    calls = []
+    def processor(path, api_key, force=False):
+        calls.append(path.read_text())
+        asset = static / 'images/story.jpg'
+        asset.parent.mkdir(parents=True, exist_ok=True)
+        Image.new('RGB', (30, 20), 'blue').save(asset)
+        _, raw, match = news_images.parse(path)
+        news_images.inject_fields(path, raw, match, {'image': '/static/images/story.jpg', 'social_image': '/static/images/story.jpg'})
+        return 'pinned-url'
+    monkeypatch.setattr(news_images, 'process', processor)
+    assert news_images.process_cached(p, '', cache) == 'pinned-url'
+    processed = p.read_text()
+    (static / 'images/story.jpg').unlink()
+    p.write_text(original)
+    assert news_images.process_cached(p, '', cache) == 'skip:cached-images'
+    assert len(calls) == 1 and p.read_text() == processed
+    assert (static / 'images/story.jpg').is_file()
+    p.write_text(original.replace('one.jpg', 'two.jpg'))
+    assert news_images.process_cached(p, '', cache) == 'pinned-url'
+    assert len(calls) == 2
+    # A corrupt cached blob cannot pass as a successfully reused photograph.
+    import json
+    record = json.loads(next(cache.glob('*.json')).read_text())
+    for entry in cache.glob('*.json'):
+        for asset in json.loads(entry.read_text())['assets']:
+            (cache / asset['sha']).write_bytes(b'corrupt')
+    p.write_text(original)
+    assert news_images.process_cached(p, '', cache) == 'pinned-url'
+    assert len(calls) == 3

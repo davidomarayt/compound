@@ -86,6 +86,11 @@ The practical question is: **is Microsoft earning more cash because its AI infra
 
 For the rolling financial record, use [Compound's Microsoft stock page](/stocks/msft/) and [company earnings archive](/wealth/earnings/). This article examines the investment mechanism; it does not replace the continuous earnings report or provide a share-price target.
 
+## Follow the physical infrastructure
+
+AI investment also needs electricity and a viable commissioning timetable. Read our [Microsoft power-grid analysis](/wealth/microsoft-nscale-power-grid-delay/) and [Bloom Energy cash-flow editorial](/wealth/bloom-energy-earnings-growth-cash-flow/) to examine those constraints from the customer and supplier perspectives. The comparison does not establish a commercial relationship between the companies.
+
+
 ## Sources and methodology
 
 - [results announcement](https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast)

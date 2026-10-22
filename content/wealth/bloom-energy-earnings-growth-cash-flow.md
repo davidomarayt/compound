@@ -23,11 +23,11 @@ hero_image_alt: Bloom Energy fuel-cell servers photographed on 24 February 2010;
 hero_image_credit: Jakub Mosur / Bloom Energy, via Wikimedia Commons — 24 February 2010; CC BY 2.0; archival photograph
 hero_image_source: https://commons.wikimedia.org/wiki/File:Bloom_Energy_Servers.jpg
 require_pinned_hero: true
-image: "/static/images/evergreen/bloom-energy-earnings-growth-cash-flow.jpg"
-image_alt: "Bloom Energy fuel-cell servers photographed on 24 February 2010; archival photograph, not the current product generation"
-image_credit: "Jakub Mosur / Bloom Energy, via Wikimedia Commons — 24 February 2010; CC BY 2.0; archival photograph"
-image_source: "https://commons.wikimedia.org/wiki/File:Bloom_Energy_Servers.jpg"
-social_image: "/static/images/evergreen/bloom-energy-earnings-growth-cash-flow.jpg"
+image: /static/images/evergreen/bloom-energy-earnings-growth-cash-flow.jpg
+image_alt: Bloom Energy fuel-cell servers photographed on 24 February 2010; archival photograph, not the current product generation
+image_credit: Jakub Mosur / Bloom Energy, via Wikimedia Commons — 24 February 2010; CC BY 2.0; archival photograph
+image_source: https://commons.wikimedia.org/wiki/File:Bloom_Energy_Servers.jpg
+social_image: /static/images/evergreen/bloom-energy-earnings-growth-cash-flow.jpg
 sources:
 - title: Bloom Energy Q3 2026 results, SEC 8-K Exhibit 99.1
   url: https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex991_q326financialresults.htm
@@ -97,5 +97,10 @@ Bloom’s quarter makes the operating case stronger. The next task is proving th
 Track the figures on [Bloom Energy’s stock and earnings page](/stocks/be/). For more comparisons, visit [Compound’s company earnings hub](/wealth/earnings/) and [stock directory](/stocks/).
 
 *Sources were checked against the SEC documents linked above. Analysis and derived calculations are Compound’s. General information, not a personal investment recommendation.*
+
+## The wider AI-power story
+
+Our [Microsoft power-grid analysis](/wealth/microsoft-nscale-power-grid-delay/) examines the other side of this constraint: data-centre plans depend on securing usable electricity on time. Read it alongside [Microsoft’s AI spending and cash-flow analysis](/wealth/microsoft-ai-capex-cash-flow/) to compare the infrastructure supplier’s economics with those of the customer. Follow the company figures on [Bloom Energy](/stocks/be/) and [Microsoft](/stocks/msft/).
+
 
 *Cover photograph: Jakub Mosur / Bloom Energy, 24 February 2010. [Original image](https://commons.wikimedia.org/wiki/File:Bloom_Energy_Servers.jpg), licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/). Archival photograph; not a current installation or current-generation product. Image unchanged; display cropping may apply.*
