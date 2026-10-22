@@ -2,33 +2,33 @@
   "cik": 936468,
   "company": "Lockheed Martin",
   "latest": {
-    "accession": "0001628280-26-049411",
-    "filed": "2026-07-23",
+    "accession": "0001628280-26-066928",
+    "filed": "2026-10-22",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 7.94,
-        "prior_year": 1.46,
+        "current": 7.97,
+        "prior_year": 6.95,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1836000000,
-        "prior_year": 342000000,
+        "current": 1845000000,
+        "prior_year": 1619000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 20063000000,
-        "prior_year": 18155000000,
+        "current": 20711000000,
+        "prior_year": 18609000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-28",
-    "source": "https://www.sec.gov/Archives/edgar/data/936468/000162828026049411/lmt-20260628.htm"
+    "period_end": "2026-09-27",
+    "source": "https://www.sec.gov/Archives/edgar/data/936468/000162828026066928/lmt-20260927.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-28",
       "source": "https://www.sec.gov/Archives/edgar/data/936468/000162828026049411/lmt-20260628.htm"
+    },
+    {
+      "accession": "0001628280-26-066928",
+      "filed": "2026-10-22",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 7.97,
+          "prior_year": 6.95,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1845000000,
+          "prior_year": 1619000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 20711000000,
+          "prior_year": 18609000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/936468/000162828026066928/lmt-20260927.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "LMT",
-  "updated": "2026-10-15"
+  "updated": "2026-10-22"
 }

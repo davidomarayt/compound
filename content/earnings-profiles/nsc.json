@@ -2,33 +2,33 @@
   "cik": 702165,
   "company": "Norfolk Southern",
   "latest": {
-    "accession": "0001628280-26-049326",
-    "filed": "2026-07-23",
+    "accession": "0001628280-26-066836",
+    "filed": "2026-10-22",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 3.26,
-        "prior_year": 3.41,
+        "current": 3.37,
+        "prior_year": 3.16,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 734000000,
-        "prior_year": 768000000,
+        "current": 759000000,
+        "prior_year": 711000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3465000000,
-        "prior_year": 3110000000,
+        "current": 3526000000,
+        "prior_year": 3103000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/702165/000162828026049326/nsc-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/702165/000162828026066836/nsc-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/702165/000162828026049326/nsc-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-066836",
+      "filed": "2026-10-22",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.37,
+          "prior_year": 3.16,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 759000000,
+          "prior_year": 711000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3526000000,
+          "prior_year": 3103000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/702165/000162828026066836/nsc-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "NSC",
-  "updated": "2026-10-15"
+  "updated": "2026-10-22"
 }
