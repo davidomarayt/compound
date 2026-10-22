@@ -2,33 +2,33 @@
   "cik": 277948,
   "company": "CSX Corporation",
   "latest": {
-    "accession": "0000277948-26-000032",
-    "filed": "2026-07-22",
+    "accession": "0000277948-26-000040",
+    "filed": "2026-10-21",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.54,
-        "prior_year": 0.44,
+        "current": 0.57,
+        "prior_year": 0.37,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1002000000,
-        "prior_year": 829000000,
+        "current": 1052000000,
+        "prior_year": 694000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3935000000,
-        "prior_year": 3574000000,
+        "current": 4017000000,
+        "prior_year": 3587000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/277948/000027794826000032/csx-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/277948/000027794826000040/csx-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/277948/000027794826000032/csx-20260630.htm"
+    },
+    {
+      "accession": "0000277948-26-000040",
+      "filed": "2026-10-21",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.57,
+          "prior_year": 0.37,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1052000000,
+          "prior_year": 694000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4017000000,
+          "prior_year": 3587000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/277948/000027794826000040/csx-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CSX",
-  "updated": "2026-10-15"
+  "updated": "2026-10-22"
 }

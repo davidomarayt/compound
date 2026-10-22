@@ -2,33 +2,33 @@
   "cik": 200406,
   "company": "Johnson & Johnson",
   "latest": {
-    "accession": "0000200406-26-000153",
-    "filed": "2026-07-23",
+    "accession": "0000200406-26-000197",
+    "filed": "2026-10-21",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.27,
-        "prior_year": 2.29,
+        "current": 0.09,
+        "prior_year": 2.12,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 5534000000,
-        "prior_year": 5537000000,
+        "current": 210000000,
+        "prior_year": 5152000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 25310000000,
-        "prior_year": 23743000000,
+        "current": 25399000000,
+        "prior_year": 23993000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-28",
-    "source": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+    "period_end": "2026-09-27",
+    "source": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000197/jnj-20260927.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-28",
       "source": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+    },
+    {
+      "accession": "0000200406-26-000197",
+      "filed": "2026-10-21",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.09,
+          "prior_year": 2.12,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 210000000,
+          "prior_year": 5152000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 25399000000,
+          "prior_year": 23993000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000197/jnj-20260927.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "JNJ",
-  "updated": "2026-10-15"
+  "updated": "2026-10-22"
 }
