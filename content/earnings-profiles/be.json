@@ -1,0 +1,123 @@
+{
+  "cik": 1664703,
+  "company": "Bloom Energy",
+  "ticker": "BE",
+  "periods": [
+    {
+      "fy": 2026,
+      "fp": "Q1",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
+      "accession": "0001628280-26-028021",
+      "source": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026028021/be-20260331.htm",
+      "form": "10-Q",
+      "metrics": {
+        "revenue": {
+          "current": 751054000,
+          "prior_year": 326021000,
+          "unit": "USD",
+          "tag": "SEC reported"
+        },
+        "net_income": {
+          "current": 70653000,
+          "prior_year": -23814000,
+          "unit": "USD",
+          "tag": "SEC reported; common-stockholder income"
+        },
+        "diluted_eps": {
+          "current": 0.23,
+          "prior_year": -0.1,
+          "unit": "USD/shares",
+          "tag": "SEC reported"
+        }
+      }
+    },
+    {
+      "fy": 2026,
+      "fp": "Q2",
+      "period_end": "2026-06-30",
+      "filed": "2026-10-22",
+      "accession": "0001628280-26-066890",
+      "source": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex991_q326financialresults.htm",
+      "form": "8-K",
+      "metrics": {
+        "revenue": {
+          "current": 1065365000,
+          "prior_year": null,
+          "unit": "USD",
+          "tag": "SEC reported"
+        },
+        "net_income": {
+          "current": 196290000,
+          "prior_year": null,
+          "unit": "USD",
+          "tag": "SEC reported; common-stockholder income"
+        },
+        "diluted_eps": {
+          "current": 0.62,
+          "prior_year": null,
+          "unit": "USD/shares",
+          "tag": "SEC reported"
+        }
+      }
+    },
+    {
+      "fy": 2026,
+      "fp": "Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "accession": "0001628280-26-066890",
+      "source": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex991_q326financialresults.htm",
+      "form": "8-K",
+      "metrics": {
+        "revenue": {
+          "current": 1235837000,
+          "prior_year": 519048000,
+          "unit": "USD",
+          "tag": "SEC reported"
+        },
+        "net_income": {
+          "current": 250271000,
+          "prior_year": -23093000,
+          "unit": "USD",
+          "tag": "SEC reported; common-stockholder income"
+        },
+        "diluted_eps": {
+          "current": 0.78,
+          "prior_year": -0.1,
+          "unit": "USD/shares",
+          "tag": "SEC reported"
+        }
+      }
+    }
+  ],
+  "latest": {
+    "fy": 2026,
+    "fp": "Q3",
+    "period_end": "2026-09-30",
+    "filed": "2026-10-22",
+    "accession": "0001628280-26-066890",
+    "source": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex991_q326financialresults.htm",
+    "form": "8-K",
+    "metrics": {
+      "revenue": {
+        "current": 1235837000,
+        "prior_year": 519048000,
+        "unit": "USD",
+        "tag": "SEC reported"
+      },
+      "net_income": {
+        "current": 250271000,
+        "prior_year": -23093000,
+        "unit": "USD",
+        "tag": "SEC reported; common-stockholder income"
+      },
+      "diluted_eps": {
+        "current": 0.78,
+        "prior_year": -0.1,
+        "unit": "USD/shares",
+        "tag": "SEC reported"
+      }
+    }
+  }
+}
