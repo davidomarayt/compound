@@ -1,6 +1,6 @@
 # Compound.ie — Master Content and Title Register
 
-Snapshot: 2026-10-21 | Source: publishing branch
+Snapshot: 2026-10-22 | Source: publishing branch
 
 PURPOSE: Check this register before creating a new article, guide or calculator. Search by exact title, keyword, synonym and reader intent. If the topic is already answered, update its canonical page instead of publishing an SEO duplicate.
 
@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 205
+- Published editorial articles and guides: 206
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 151
+## Wealth articles and guides — 152
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
@@ -140,6 +140,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [New €14,500 Heat-Pump Grant: Is Switching From Oil Worth It?](https://compound.ie/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/)
 - [New €2 EU parcel handling fee confirmed: what Irish shoppers will pay on non-EU orders](https://compound.ie/news/new-eu-parcel-fee-ireland-2026/)
 - [No Energy Credit in Budget 2027: What Will Electricity Cost This Winter?](https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/)
+- [Nokia’s AI Sales Jump 123%—But Turning Growth Into Cash Is the Next Test](https://compound.ie/news/nokia-ai-growth-cash-flow/)
 - [Nvidia Stock Guide: AI Chips, CUDA, Margins and Valuation](https://compound.ie/wealth/nvidia-ai-gpu-margins-2026/)
 - [Nvidia's 75% gross margin: how much room is there for competition?](https://compound.ie/wealth/nvidia-gross-margin-ai-demand/)
 - [Nvidia’s next competitive test is software portability](https://compound.ie/wealth/nvidia-torchneuron-software-competition/)

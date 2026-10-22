@@ -1,6 +1,6 @@
 # Compound.ie — Quick Editorial Topic Index
 
-Updated: 2026-10-21 | Automatically rebuilt from published source
+Updated: 2026-10-22 | Automatically rebuilt from published source
 
 **Before recommending a new article:** search this page by keyword, synonym,
 and reader question. An existing article or tool may already cover the idea.
@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 205 published articles and guides, 64 tools,
+**Included:** 206 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -137,6 +137,7 @@ For the complete register (including 510+ company profiles), open
 - [New €14,500 Heat-Pump Grant: Is Switching From Oil Worth It?](https://compound.ie/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/) — **Wealth**
 - [New €2 EU parcel handling fee confirmed: what Irish shoppers will pay on non-EU orders](https://compound.ie/news/new-eu-parcel-fee-ireland-2026/) — **Wealth**
 - [No Energy Credit in Budget 2027: What Will Electricity Cost This Winter?](https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/) — **Wealth**
+- [Nokia’s AI Sales Jump 123%—But Turning Growth Into Cash Is the Next Test](https://compound.ie/news/nokia-ai-growth-cash-flow/) — **Wealth**
 - [Nvidia Stock Guide: AI Chips, CUDA, Margins and Valuation](https://compound.ie/wealth/nvidia-ai-gpu-margins-2026/) — **Wealth**
 - [Nvidia's 75% gross margin: how much room is there for competition?](https://compound.ie/wealth/nvidia-gross-margin-ai-demand/) — **Wealth**
 - [Nvidia’s next competitive test is software portability](https://compound.ie/wealth/nvidia-torchneuron-software-competition/) — **Wealth**

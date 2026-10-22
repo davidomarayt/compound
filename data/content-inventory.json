@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-10-21",
+  "snapshot_date": "2026-10-22",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -2471,6 +2471,25 @@
           "home-energy",
           "solar",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Nokia’s AI Sales Jump 123%—But Turning Growth Into Cash Is the Next Test",
+        "url": "/news/nokia-ai-growth-cash-flow/",
+        "source": "content/wealth/nokia-ai-growth-cash-flow.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "nokia-ai-growth-cash-flow",
+        "date": "2026-10-22",
+        "reviewed": "2026-10-22",
+        "tags": [
+          "stocks",
+          "company-research",
+          "nok",
+          "earnings-analysis",
+          "ai",
+          "networking"
         ],
         "status": "published"
       },
