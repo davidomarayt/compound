@@ -2,33 +2,33 @@
   "cik": 1120193,
   "company": "Nasdaq, Inc.",
   "latest": {
-    "accession": "0001120193-26-000013",
-    "filed": "2026-07-23",
+    "accession": "0001120193-26-000020",
+    "filed": "2026-10-22",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.89,
-        "prior_year": 0.78,
+        "current": 0.96,
+        "prior_year": 0.73,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 507000000,
-        "prior_year": 452000000,
+        "current": 540000000,
+        "prior_year": 423000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2532000000,
-        "prior_year": 2101000000,
+        "current": 2393000000,
+        "prior_year": 1979000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1120193/000112019326000013/ndaq-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1120193/000112019326000020/ndaq-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1120193/000112019326000013/ndaq-20260630.htm"
+    },
+    {
+      "accession": "0001120193-26-000020",
+      "filed": "2026-10-22",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.96,
+          "prior_year": 0.73,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 540000000,
+          "prior_year": 423000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2393000000,
+          "prior_year": 1979000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1120193/000112019326000020/ndaq-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "NDAQ",
-  "updated": "2026-10-15"
+  "updated": "2026-10-22"
 }
