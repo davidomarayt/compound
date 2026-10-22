@@ -2,33 +2,33 @@
   "cik": 732717,
   "company": "AT&T",
   "latest": {
-    "accession": "0000732717-26-000370",
+    "accession": "0000732717-26-000372",
     "filed": "2026-10-21",
-    "form": "8-K",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
-    "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000370/t-3q2026exhibit992.htm",
     "metrics": {
-      "revenue": {
-        "current": 32322000000,
-        "prior_year": 30709000000,
-        "tag": "Revenues",
-        "unit": "USD"
-      },
-      "net_income": {
-        "current": 1269000000,
-        "prior_year": 9677000000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
-      },
       "diluted_eps": {
         "current": 0.12,
         "prior_year": 1.29,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 891000000,
+        "prior_year": 9314000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 32322000000,
+        "prior_year": 30709000000,
+        "tag": "Revenues",
+        "unit": "USD"
       }
-    }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000372/t-20260930.htm"
   },
   "periods": [
     {
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000297/t-20260630.htm"
     },
     {
-      "accession": "0000732717-26-000370",
+      "accession": "0000732717-26-000372",
       "filed": "2026-10-21",
-      "form": "8-K",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
-      "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000370/t-3q2026exhibit992.htm",
       "metrics": {
-        "revenue": {
-          "current": 32322000000,
-          "prior_year": 30709000000,
-          "tag": "Revenues",
-          "unit": "USD"
-        },
-        "net_income": {
-          "current": 1269000000,
-          "prior_year": 9677000000,
-          "tag": "NetIncomeLoss",
-          "unit": "USD"
-        },
         "diluted_eps": {
           "current": 0.12,
           "prior_year": 1.29,
           "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 891000000,
+          "prior_year": 9314000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 32322000000,
+          "prior_year": 30709000000,
+          "tag": "Revenues",
+          "unit": "USD"
         }
-      }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000372/t-20260930.htm"
     }
   ],
-  "source_type": "US SEC filings; Q3 from 8-K Exhibit 99.2, including discontinued operations; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "T",
-  "updated": "2026-10-21"
+  "updated": "2026-10-22"
 }
