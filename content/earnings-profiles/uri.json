@@ -2,33 +2,33 @@
   "cik": 1067701,
   "company": "United Rentals",
   "latest": {
-    "accession": "0001067701-26-000016",
-    "filed": "2026-04-22",
+    "accession": "0001067701-26-000034",
+    "filed": "2026-10-21",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 8.43,
-        "prior_year": 7.91,
+        "current": 14.77,
+        "prior_year": 10.91,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 531000000,
-        "prior_year": 518000000,
+        "current": 920000000,
+        "prior_year": 701000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 929000000,
-        "prior_year": 893000000,
+        "current": 1068000000,
+        "prior_year": 938000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000016/uri-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000034/uri-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,38 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000016/uri-20260331.htm"
+    },
+    {
+      "accession": "0001067701-26-000034",
+      "filed": "2026-10-21",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 14.77,
+          "prior_year": 10.91,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 920000000,
+          "prior_year": 701000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1068000000,
+          "prior_year": 938000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000034/uri-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "URI",
-  "updated": "2026-10-15"
+  "updated": "2026-10-22"
 }

@@ -2,33 +2,33 @@
   "cik": 51143,
   "company": "IBM",
   "latest": {
-    "accession": "0000051143-26-000078",
-    "filed": "2026-07-23",
+    "accession": "0000051143-26-000095",
+    "filed": "2026-10-22",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.27,
-        "prior_year": 2.31,
+        "current": 2.3,
+        "prior_year": 1.84,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 2165000000,
-        "prior_year": 2194000000,
+        "current": 2190000000,
+        "prior_year": 1744000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 17162000000,
-        "prior_year": 16977000000,
+        "current": 17103000000,
+        "prior_year": 16331000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000078/ibm-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000095/ibm-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000078/ibm-20260630.htm"
+    },
+    {
+      "accession": "0000051143-26-000095",
+      "filed": "2026-10-22",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.3,
+          "prior_year": 1.84,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2190000000,
+          "prior_year": 1744000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 17103000000,
+          "prior_year": 16331000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000095/ibm-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "IBM",
-  "updated": "2026-10-15"
+  "updated": "2026-10-22"
 }

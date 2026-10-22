@@ -2,33 +2,33 @@
   "cik": 100517,
   "company": "United Airlines Holdings",
   "latest": {
-    "accession": "0000100517-26-000139",
-    "filed": "2026-07-16",
+    "accession": "0000100517-26-000186",
+    "filed": "2026-10-21",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.46,
-        "prior_year": 2.97,
+        "current": 3.14,
+        "prior_year": 2.9,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 805000000,
-        "prior_year": 973000000,
+        "current": 1029000000,
+        "prior_year": 949000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 17672000000,
-        "prior_year": 15236000000,
+        "current": 17875000000,
+        "prior_year": 15225000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/100517/000010051726000139/ual-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/100517/000010051726000186/ual-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/100517/000010051726000139/ual-20260630.htm"
+    },
+    {
+      "accession": "0000100517-26-000186",
+      "filed": "2026-10-21",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.14,
+          "prior_year": 2.9,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1029000000,
+          "prior_year": 949000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 17875000000,
+          "prior_year": 15225000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/100517/000010051726000186/ual-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "UAL",
-  "updated": "2026-10-15"
+  "updated": "2026-10-22"
 }
