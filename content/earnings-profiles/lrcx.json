@@ -2,33 +2,33 @@
   "cik": 707549,
   "company": "Lam Research",
   "latest": {
-    "accession": "0000707549-26-000037",
-    "filed": "2026-08-07",
-    "form": "10-K",
-    "fp": "FY",
-    "fy": 2026,
+    "accession": "0000707549-26-000054",
+    "filed": "2026-10-22",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 5.76,
-        "prior_year": 4.15,
+        "current": 2.19,
+        "prior_year": 1.24,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 7265396000,
-        "prior_year": 5358217000,
+        "current": 2753138000,
+        "prior_year": 1568660000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 23232690000,
-        "prior_year": 18435591000,
+        "current": 8219418000,
+        "prior_year": 5324173000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-28",
-    "source": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000037/lrcx-20260628.htm"
+    "period_end": "2026-09-27",
+    "source": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000054/lrcx-20260927.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-28",
       "source": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000037/lrcx-20260628.htm"
+    },
+    {
+      "accession": "0000707549-26-000054",
+      "filed": "2026-10-22",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.19,
+          "prior_year": 1.24,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2753138000,
+          "prior_year": 1568660000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 8219418000,
+          "prior_year": 5324173000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000054/lrcx-20260927.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "LRCX",
-  "updated": "2026-10-15"
+  "updated": "2026-10-23"
 }

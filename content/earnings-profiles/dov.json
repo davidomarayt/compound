@@ -2,33 +2,33 @@
   "cik": 29905,
   "company": "Dover Corporation",
   "latest": {
-    "accession": "0000029905-26-000027",
-    "filed": "2026-07-23",
+    "accession": "0000029905-26-000033",
+    "filed": "2026-10-22",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.3,
-        "prior_year": 2.02,
+        "current": 2.47,
+        "prior_year": 2.19,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 312246000,
-        "prior_year": 279064000,
+        "current": 333331000,
+        "prior_year": 301996000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2190021000,
-        "prior_year": 2049592000,
+        "current": 2233839000,
+        "prior_year": 2077841000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/29905/000002990526000027/dov-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/29905/000002990526000033/dov-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/29905/000002990526000027/dov-20260630.htm"
+    },
+    {
+      "accession": "0000029905-26-000033",
+      "filed": "2026-10-22",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.47,
+          "prior_year": 2.19,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 333331000,
+          "prior_year": 301996000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2233839000,
+          "prior_year": 2077841000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/29905/000002990526000033/dov-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "DOV",
-  "updated": "2026-10-15"
+  "updated": "2026-10-23"
 }

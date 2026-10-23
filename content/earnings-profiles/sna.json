@@ -2,33 +2,33 @@
   "cik": 91440,
   "company": "Snap-on",
   "latest": {
-    "accession": "0000091440-26-000144",
-    "filed": "2026-07-23",
+    "accession": "0000091440-26-000172",
+    "filed": "2026-10-22",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 4.96,
-        "prior_year": 4.72,
+        "current": 4.64,
+        "prior_year": 5.02,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 260600000,
-        "prior_year": 250300000,
+        "current": 243000000,
+        "prior_year": 265400000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1225800000,
-        "prior_year": 1170900000,
+        "current": 1174300000,
+        "prior_year": 1182100000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-04",
-    "source": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000144/sna-20260704.htm"
+    "period_end": "2026-10-03",
+    "source": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000172/sna-20261003.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-07-04",
       "source": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000144/sna-20260704.htm"
+    },
+    {
+      "accession": "0000091440-26-000172",
+      "filed": "2026-10-22",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.64,
+          "prior_year": 5.02,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 243000000,
+          "prior_year": 265400000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1174300000,
+          "prior_year": 1182100000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000172/sna-20261003.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "SNA",
-  "updated": "2026-10-15"
+  "updated": "2026-10-23"
 }

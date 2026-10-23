@@ -2,33 +2,33 @@
   "cik": 106040,
   "company": "Western Digital",
   "latest": {
-    "accession": "0001628280-26-057139",
-    "filed": "2026-08-14",
-    "form": "10-K",
-    "fp": "FY",
-    "fy": 2026,
+    "accession": "0001628280-26-066933",
+    "filed": "2026-10-23",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 24.28,
-        "prior_year": 5.12,
+        "current": 4.63,
+        "prior_year": 3.07,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 9424000000,
-        "prior_year": 1889000000,
+        "current": 1779000000,
+        "prior_year": 1182000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 12919000000,
-        "prior_year": 9520000000,
+        "current": 4381000000,
+        "prior_year": 2818000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-03",
-    "source": "https://www.sec.gov/Archives/edgar/data/106040/000162828026057139/wdc-20260703.htm"
+    "period_end": "2026-10-02",
+    "source": "https://www.sec.gov/Archives/edgar/data/106040/000162828026066933/wdc-20261002.htm"
   },
   "periods": [
     {
@@ -117,9 +117,38 @@
       },
       "period_end": "2026-07-03",
       "source": "https://www.sec.gov/Archives/edgar/data/106040/000162828026057139/wdc-20260703.htm"
+    },
+    {
+      "accession": "0001628280-26-066933",
+      "filed": "2026-10-23",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.63,
+          "prior_year": 3.07,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1779000000,
+          "prior_year": 1182000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4381000000,
+          "prior_year": 2818000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/106040/000162828026066933/wdc-20261002.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "WDC",
-  "updated": "2026-10-15"
+  "updated": "2026-10-23"
 }
