@@ -2,33 +2,33 @@
   "cik": 1022079,
   "company": "Quest Diagnostics",
   "latest": {
-    "accession": "0001022079-26-000070",
-    "filed": "2026-07-23",
+    "accession": "0001022079-26-000108",
+    "filed": "2026-10-23",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.84,
-        "prior_year": 2.47,
+        "current": 2.78,
+        "prior_year": 2.16,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 320000000,
-        "prior_year": 282000000,
+        "current": 312000000,
+        "prior_year": 245000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3043000000,
-        "prior_year": 2761000000,
+        "current": 3097000000,
+        "prior_year": 2816000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1022079/000102207926000070/dgx-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1022079/000102207926000108/dgx-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1022079/000102207926000070/dgx-20260630.htm"
+    },
+    {
+      "accession": "0001022079-26-000108",
+      "filed": "2026-10-23",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.78,
+          "prior_year": 2.16,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 312000000,
+          "prior_year": 245000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3097000000,
+          "prior_year": 2816000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1022079/000102207926000108/dgx-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "DGX",
-  "updated": "2026-10-15"
+  "updated": "2026-10-23"
 }
