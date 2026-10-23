@@ -2,33 +2,33 @@
   "cik": 84839,
   "company": "Rollins, Inc.",
   "latest": {
-    "accession": "0000084839-26-000040",
-    "filed": "2026-07-23",
+    "accession": "0000084839-26-000045",
+    "filed": "2026-10-22",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.3,
-        "prior_year": 0.29,
+        "current": 0.33,
+        "prior_year": 0.34,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 143910000,
-        "prior_year": 141489000,
+        "current": 157927000,
+        "prior_year": 163527000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1078576000,
-        "prior_year": 999527000,
+        "current": 1089670000,
+        "prior_year": 1026106000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/84839/000008483926000040/rol-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/84839/000008483926000045/rol-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/84839/000008483926000040/rol-20260630.htm"
+    },
+    {
+      "accession": "0000084839-26-000045",
+      "filed": "2026-10-22",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.33,
+          "prior_year": 0.34,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 157927000,
+          "prior_year": 163527000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1089670000,
+          "prior_year": 1026106000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/84839/000008483926000045/rol-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "ROL",
-  "updated": "2026-10-15"
+  "updated": "2026-10-23"
 }

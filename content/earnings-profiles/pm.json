@@ -2,33 +2,33 @@
   "cik": 1413329,
   "company": "Philip Morris International",
   "latest": {
-    "accession": "0001628280-26-049493",
-    "filed": "2026-07-24",
+    "accession": "0001628280-26-066976",
+    "filed": "2026-10-23",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.8,
-        "prior_year": 1.95,
+        "current": 2.12,
+        "prior_year": 2.23,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 2817000000,
-        "prior_year": 3039000000,
+        "current": 3313000000,
+        "prior_year": 3478000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 11192000000,
-        "prior_year": 10140000000,
+        "current": 11438000000,
+        "prior_year": 10845000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1413329/000162828026049493/pm-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1413329/000162828026066976/pm-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1413329/000162828026049493/pm-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-066976",
+      "filed": "2026-10-23",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.12,
+          "prior_year": 2.23,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 3313000000,
+          "prior_year": 3478000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 11438000000,
+          "prior_year": 10845000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1413329/000162828026066976/pm-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "PM",
-  "updated": "2026-10-15"
+  "updated": "2026-10-23"
 }

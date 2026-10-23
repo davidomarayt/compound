@@ -2,33 +2,33 @@
   "cik": 92380,
   "company": "Southwest Airlines",
   "latest": {
-    "accession": "0000092380-26-000077",
-    "filed": "2026-07-23",
+    "accession": "0000092380-26-000107",
+    "filed": "2026-10-22",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.47,
-        "prior_year": 0.39,
+        "current": 0.55,
+        "prior_year": 0.1,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 233000000,
-        "prior_year": 213000000,
+        "current": 270000000,
+        "prior_year": 54000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 8432000000,
-        "prior_year": 7244000000,
+        "current": 8422000000,
+        "prior_year": 6949000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/92380/000009238026000077/luv-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/92380/000009238026000107/luv-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/92380/000009238026000077/luv-20260630.htm"
+    },
+    {
+      "accession": "0000092380-26-000107",
+      "filed": "2026-10-22",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.55,
+          "prior_year": 0.1,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 270000000,
+          "prior_year": 54000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 8422000000,
+          "prior_year": 6949000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/92380/000009238026000107/luv-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "LUV",
-  "updated": "2026-10-15"
+  "updated": "2026-10-23"
 }

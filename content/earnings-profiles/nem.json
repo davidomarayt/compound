@@ -2,33 +2,33 @@
   "cik": 1164727,
   "company": "Newmont",
   "latest": {
-    "accession": "0001164727-26-000036",
-    "filed": "2026-07-23",
+    "accession": "0001164727-26-000043",
+    "filed": "2026-10-22",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.06,
-        "prior_year": 1.85,
+        "current": 2.35,
+        "prior_year": 1.67,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 2202000000,
-        "prior_year": 2061000000,
+        "current": 2475000000,
+        "prior_year": 1832000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 6118000000,
-        "prior_year": 5317000000,
+        "current": 6363000000,
+        "prior_year": 5524000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000036/nem-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000043/nem-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000036/nem-20260630.htm"
+    },
+    {
+      "accession": "0001164727-26-000043",
+      "filed": "2026-10-22",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.35,
+          "prior_year": 1.67,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2475000000,
+          "prior_year": 1832000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6363000000,
+          "prior_year": 5524000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1164727/000116472726000043/nem-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "NEM",
-  "updated": "2026-10-15"
+  "updated": "2026-10-23"
 }

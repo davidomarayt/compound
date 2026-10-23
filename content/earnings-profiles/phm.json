@@ -2,33 +2,33 @@
   "cik": 822416,
   "company": "PulteGroup",
   "latest": {
-    "accession": "0000822416-26-000036",
-    "filed": "2026-07-22",
+    "accession": "0000822416-26-000043",
+    "filed": "2026-10-22",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.48,
-        "prior_year": 3.03,
+        "current": 2.53,
+        "prior_year": 2.96,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 472003000,
-        "prior_year": 608483000,
+        "current": 475727000,
+        "prior_year": 585834000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3982957000,
-        "prior_year": 4403755000,
+        "current": 3973846000,
+        "prior_year": 4404799000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/822416/000082241626000036/phm-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/822416/000082241626000043/phm-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/822416/000082241626000036/phm-20260630.htm"
+    },
+    {
+      "accession": "0000822416-26-000043",
+      "filed": "2026-10-22",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.53,
+          "prior_year": 2.96,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 475727000,
+          "prior_year": 585834000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3973846000,
+          "prior_year": 4404799000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/822416/000082241626000043/phm-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "PHM",
-  "updated": "2026-10-15"
+  "updated": "2026-10-23"
 }

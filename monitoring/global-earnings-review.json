@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-22",
+  "checked": "2026-10-23",
   "companies_checked": 10,
   "companies": {
     "spcx": {
@@ -203,6 +203,16 @@
   },
   "new_review_candidates": 1,
   "pending_review": [
+    {
+      "id": "sec:1181412:0001628280-26-066880",
+      "company": "SpaceX",
+      "slug": "spcx",
+      "title": "SpaceX SEC 10-Q filed 2026-10-22",
+      "filed": "2026-10-22",
+      "form": "10-Q",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1181412",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
     {
       "id": "sec:1046179:0001046179-26-000728",
       "company": "Taiwan Semiconductor Manufacturing Company (TSMC)",
