@@ -2,33 +2,33 @@
   "cik": 1138118,
   "company": "CBRE Group",
   "latest": {
-    "accession": "0001138118-26-000024",
-    "filed": "2026-07-29",
+    "accession": "0001138118-26-000031",
+    "filed": "2026-10-22",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.69,
-        "prior_year": 0.72,
+        "current": 1.52,
+        "prior_year": 1.21,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 204000000,
-        "prior_year": 215000000,
+        "current": 443000000,
+        "prior_year": 363000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 11114000000,
-        "prior_year": 9596000000,
+        "current": 11407000000,
+        "prior_year": 10090000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1138118/000113811826000024/cbre-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1138118/000113811826000031/cbre-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1138118/000113811826000024/cbre-20260630.htm"
+    },
+    {
+      "accession": "0001138118-26-000031",
+      "filed": "2026-10-22",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.52,
+          "prior_year": 1.21,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 443000000,
+          "prior_year": 363000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 11407000000,
+          "prior_year": 10090000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1138118/000113811826000031/cbre-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CBRE",
-  "updated": "2026-10-15"
+  "updated": "2026-10-23"
 }
