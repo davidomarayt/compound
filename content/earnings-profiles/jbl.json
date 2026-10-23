@@ -2,33 +2,33 @@
   "cik": 898293,
   "company": "Jabil",
   "latest": {
-    "accession": "0001628280-26-046138",
-    "filed": "2026-06-30",
-    "form": "10-Q",
-    "fp": "Q3",
+    "accession": "0001628280-26-067038",
+    "filed": "2026-10-23",
+    "form": "10-K",
+    "fp": "FY",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.59,
-        "prior_year": 2.03,
+        "current": 9.75,
+        "prior_year": 5.92,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 275000000,
-        "prior_year": 222000000,
+        "current": 1042000000,
+        "prior_year": 657000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 8751000000,
-        "prior_year": 7828000000,
+        "current": 35954000000,
+        "prior_year": 29802000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-05-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/898293/000162828026046138/jbl-20260531.htm"
+    "period_end": "2026-08-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/898293/000162828026067038/jbl-20260831.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-05-31",
       "source": "https://www.sec.gov/Archives/edgar/data/898293/000162828026046138/jbl-20260531.htm"
+    },
+    {
+      "accession": "0001628280-26-067038",
+      "filed": "2026-10-23",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 9.75,
+          "prior_year": 5.92,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1042000000,
+          "prior_year": 657000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 35954000000,
+          "prior_year": 29802000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/898293/000162828026067038/jbl-20260831.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "JBL",
-  "updated": "2026-10-15"
+  "updated": "2026-10-23"
 }
