@@ -2,33 +2,33 @@
   "cik": 1506307,
   "company": "Kinder Morgan",
   "latest": {
-    "accession": "0001506307-26-000085",
-    "filed": "2026-07-24",
+    "accession": "0001506307-26-000132",
+    "filed": "2026-10-23",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.39,
-        "prior_year": 0.32,
+        "current": 0.34,
+        "prior_year": 0.28,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 867000000,
-        "prior_year": 715000000,
+        "current": 764000000,
+        "prior_year": 628000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4098000000,
-        "prior_year": 3606000000,
+        "current": 4185000000,
+        "prior_year": 3723000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1506307/000150630726000085/kmi-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1506307/000150630726000132/kmi-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1506307/000150630726000085/kmi-20260630.htm"
+    },
+    {
+      "accession": "0001506307-26-000132",
+      "filed": "2026-10-23",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.34,
+          "prior_year": 0.28,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 764000000,
+          "prior_year": 628000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4185000000,
+          "prior_year": 3723000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1506307/000150630726000132/kmi-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "KMI",
-  "updated": "2026-10-15"
+  "updated": "2026-10-24"
 }

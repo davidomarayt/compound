@@ -2,33 +2,33 @@
   "cik": 1156375,
   "company": "CME Group",
   "latest": {
-    "accession": "0001156375-26-000047",
-    "filed": "2026-07-24",
+    "accession": "0001156375-26-000068",
+    "filed": "2026-10-23",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.88,
-        "prior_year": 2.81,
+        "current": 2.89,
+        "prior_year": 2.49,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1041800000,
-        "prior_year": 1025100000,
+        "current": 1036900000,
+        "prior_year": 908000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1706200000,
-        "prior_year": 1692000000,
+        "current": 1737300000,
+        "prior_year": 1537600000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1156375/000115637526000047/cme-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1156375/000115637526000068/cme-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1156375/000115637526000047/cme-20260630.htm"
+    },
+    {
+      "accession": "0001156375-26-000068",
+      "filed": "2026-10-23",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.89,
+          "prior_year": 2.49,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1036900000,
+          "prior_year": 908000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1737300000,
+          "prior_year": 1537600000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1156375/000115637526000068/cme-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CME",
-  "updated": "2026-10-15"
+  "updated": "2026-10-24"
 }
