@@ -2,33 +2,33 @@
   "cik": 1094285,
   "company": "Teledyne Technologies",
   "latest": {
-    "accession": "0001094285-26-000043",
-    "filed": "2026-07-24",
+    "accession": "0001094285-26-000059",
+    "filed": "2026-10-23",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 5.37,
-        "prior_year": 4.43,
+        "current": 5.82,
+        "prior_year": 4.65,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 251700000,
-        "prior_year": 209900000,
+        "current": 272800000,
+        "prior_year": 220700000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1662500000,
-        "prior_year": 1513700000,
+        "current": 1684900000,
+        "prior_year": 1539500000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-28",
-    "source": "https://www.sec.gov/Archives/edgar/data/1094285/000109428526000043/tdy-20260628.htm"
+    "period_end": "2026-09-27",
+    "source": "https://www.sec.gov/Archives/edgar/data/1094285/000109428526000059/tdy-20260927.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-28",
       "source": "https://www.sec.gov/Archives/edgar/data/1094285/000109428526000043/tdy-20260628.htm"
+    },
+    {
+      "accession": "0001094285-26-000059",
+      "filed": "2026-10-23",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 5.82,
+          "prior_year": 4.65,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 272800000,
+          "prior_year": 220700000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1684900000,
+          "prior_year": 1539500000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/1094285/000109428526000059/tdy-20260927.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TDY",
-  "updated": "2026-10-15"
+  "updated": "2026-10-24"
 }

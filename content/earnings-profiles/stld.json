@@ -2,33 +2,33 @@
   "cik": 1022671,
   "company": "Steel Dynamics",
   "latest": {
-    "accession": "0001104659-26-087414",
-    "filed": "2026-07-28",
+    "accession": "0001104659-26-118461",
+    "filed": "2026-10-23",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 3.69,
-        "prior_year": 2.01,
+        "current": 5.26,
+        "prior_year": 2.74,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 534087000,
-        "prior_year": 298726000,
+        "current": 756000000,
+        "prior_year": 403685000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 6091557000,
-        "prior_year": 4565123000,
+        "current": 6509419000,
+        "prior_year": 4828215000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1022671/000110465926087414/stld-20260630x10q.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1022671/000110465926118461/stld-20260930x10q.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1022671/000110465926087414/stld-20260630x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-118461",
+      "filed": "2026-10-23",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 5.26,
+          "prior_year": 2.74,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 756000000,
+          "prior_year": 403685000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6509419000,
+          "prior_year": 4828215000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1022671/000110465926118461/stld-20260930x10q.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "STLD",
-  "updated": "2026-10-15"
+  "updated": "2026-10-24"
 }
