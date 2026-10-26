@@ -757,7 +757,7 @@ def generate_discover_images(a: Article, output_dir: Path) -> None:
     target_dir = output_dir / "static" / "discover"
     target_dir.mkdir(parents=True, exist_ok=True)
     with Image.open(source) as image:
-        rgb = image.convert("RGB")
+        rgb = ImageOps.exif_transpose(image).convert("RGB")
         for ratio, size in DISCOVER_IMAGE_SIZES.items():
             rendered = ImageOps.fit(rgb, size, method=Image.Resampling.LANCZOS, centering=(0.5, 0.5))
             rendered.save(target_dir / f"{a.slug}-{ratio}.webp", "WEBP", quality=88, method=6)
