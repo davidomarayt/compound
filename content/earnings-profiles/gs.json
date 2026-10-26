@@ -1,0 +1,125 @@
+{
+  "cik": 886982,
+  "company": "Goldman Sachs",
+  "latest": {
+    "accession": "0000886982-26-000529",
+    "filed": "2026-10-13",
+    "form": "8-K",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 17.01,
+        "prior_year": 12.25,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 5294000000.0,
+        "prior_year": 4098000000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 18679000000.0,
+        "prior_year": 15184000000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/886982/000088698226000529/a3q26gsearningsresults.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000886982-26-000118",
+      "filed": "2026-05-01",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 17.55,
+          "prior_year": 14.12,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 5630000000,
+          "prior_year": 4738000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 17227000000,
+          "prior_year": 15062000000,
+          "tag": "RevenuesNetOfInterestExpense",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/886982/000088698226000118/gs-20260331.htm"
+    },
+    {
+      "accession": "0000886982-26-000297",
+      "filed": "2026-08-03",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 20.98,
+          "prior_year": 10.91,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 6628000000,
+          "prior_year": 3723000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 20338000000,
+          "prior_year": 14583000000,
+          "tag": "RevenuesNetOfInterestExpense",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/886982/000088698226000297/gs-20260630.htm"
+    },
+    {
+      "accession": "0000886982-26-000529",
+      "filed": "2026-10-13",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 17.01,
+          "prior_year": 12.25,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 5294000000.0,
+          "prior_year": 4098000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 18679000000.0,
+          "prior_year": 15184000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/886982/000088698226000529/a3q26gsearningsresults.htm"
+    }
+  ],
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "ticker": "GS",
+  "updated": "2026-10-26"
+}

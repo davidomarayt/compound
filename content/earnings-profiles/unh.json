@@ -2,33 +2,33 @@
   "cik": 731766,
   "company": "UnitedHealth Group",
   "latest": {
-    "accession": "0000731766-26-000197",
-    "filed": "2026-08-10",
-    "form": "10-Q",
-    "fp": "Q2",
+    "accession": "0000731766-26-000255",
+    "filed": "2026-10-13",
+    "form": "8-K",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 6.04,
-        "prior_year": 3.74,
-        "tag": "EarningsPerShareDiluted",
+        "current": 4.56,
+        "prior_year": 2.59,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 5484000000,
-        "prior_year": 3406000000,
-        "tag": "NetIncomeLoss",
+        "current": 4110000000.0,
+        "prior_year": 2348000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       },
       "revenue": {
-        "current": 112032000000,
-        "prior_year": 111616000000,
-        "tag": "Revenues",
+        "current": 112694000000.0,
+        "prior_year": 113161000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000197/unh-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000255/earningsrelease3q26unh.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000197/unh-20260630.htm"
+    },
+    {
+      "accession": "0000731766-26-000255",
+      "filed": "2026-10-13",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.56,
+          "prior_year": 2.59,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 4110000000.0,
+          "prior_year": 2348000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 112694000000.0,
+          "prior_year": 113161000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000255/earningsrelease3q26unh.htm"
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "UNH",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

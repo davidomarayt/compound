@@ -2,33 +2,33 @@
   "cik": 1051470,
   "company": "Crown Castle",
   "latest": {
-    "accession": "0001051470-26-000074",
-    "filed": "2026-08-05",
-    "form": "10-Q",
-    "fp": "Q2",
+    "accession": "0001051470-26-000085",
+    "filed": "2026-10-21",
+    "form": "8-K",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.22,
-        "prior_year": 0.67,
-        "tag": "EarningsPerShareDiluted",
+        "current": 0.67,
+        "prior_year": 0.74,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 94000000,
-        "prior_year": 291000000,
-        "tag": "NetIncomeLoss",
+        "current": 283000000.0,
+        "prior_year": 323000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       },
       "revenue": {
-        "current": 41000000,
-        "prior_year": 52000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 995000000.0,
+        "prior_year": 1072000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1051470/000105147026000074/cci-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1051470/000105147026000085/q32026supplement.htm"
   },
   "periods": [
     {
@@ -51,9 +51,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 49000000,
-          "prior_year": 50000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 1010000000,
+          "prior_year": 1061000000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
@@ -80,17 +80,46 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 41000000,
-          "prior_year": 52000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 1008000000,
+          "prior_year": 1060000000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1051470/000105147026000074/cci-20260630.htm"
+    },
+    {
+      "accession": "0001051470-26-000085",
+      "filed": "2026-10-21",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.67,
+          "prior_year": 0.74,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 283000000.0,
+          "prior_year": 323000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 995000000.0,
+          "prior_year": 1072000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1051470/000105147026000085/q32026supplement.htm"
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "CCI",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

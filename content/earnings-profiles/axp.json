@@ -21,9 +21,9 @@
         "unit": "USD"
       },
       "revenue": {
-        "current": 11232000000,
-        "prior_year": 10415000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 20062000000,
+        "prior_year": 18426000000,
+        "tag": "RevenuesNetOfInterestExpense",
         "unit": "USD"
       }
     },
@@ -51,9 +51,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 10517000000,
-          "prior_year": 9626000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 18907000000,
+          "prior_year": 16967000000,
+          "tag": "RevenuesNetOfInterestExpense",
           "unit": "USD"
         }
       },
@@ -80,9 +80,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 11212000000,
-          "prior_year": 10321000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 19637000000,
+          "prior_year": 17856000000,
+          "tag": "RevenuesNetOfInterestExpense",
           "unit": "USD"
         }
       },
@@ -109,9 +109,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 11232000000,
-          "prior_year": 10415000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 20062000000,
+          "prior_year": 18426000000,
+          "tag": "RevenuesNetOfInterestExpense",
           "unit": "USD"
         }
       },
@@ -121,5 +121,5 @@
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "AXP",
-  "updated": "2026-10-24"
+  "updated": "2026-10-26"
 }

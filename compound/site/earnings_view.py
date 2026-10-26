@@ -158,6 +158,8 @@ def load_company_report(content_dir: Path, ticker: str, legacy_articles=()):
               "is_annual":latest["fp"] == "FY",
               "latest_end":latest["period_end"],"latest_filed":latest.get("filed",""),
               "latest_source":latest.get("source",""),"latest_form":latest.get("form",""),
+              "latest_notes":latest.get("notes", []),
+              "reporting_update":data.get("reporting_update") if data.get("reporting_update", {}).get("date", "") > latest.get("filed", "") else None,
               "latest_figures":latest_figures,"latest_comparison":latest_comparison,
               "margin_comparison":margin_comparison,"latest_prev_label":f"FY{fy} {previous_fp}" if previous else None,
               "latest_qoq":latest_qoq,"updated":data.get("updated",""),

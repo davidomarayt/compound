@@ -2,35 +2,64 @@
   "cik": 713676,
   "company": "PNC Financial Services",
   "latest": {
-    "accession": "0001628280-26-053170",
-    "filed": "2026-08-05",
-    "form": "10-Q",
-    "fp": "Q2",
+    "accession": "0001628280-26-065936",
+    "filed": "2026-10-15",
+    "form": "8-K",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 4.81,
-        "prior_year": 3.85,
-        "tag": "EarningsPerShareDiluted",
+        "current": 4.97,
+        "prior_year": 4.35,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 2040000000,
-        "prior_year": 1627000000,
-        "tag": "NetIncomeLoss",
+        "current": 2081000000.0,
+        "prior_year": 1808000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       },
       "revenue": {
-        "current": 6875000000,
-        "prior_year": 5661000000,
-        "tag": "Revenues",
+        "current": 6562000000.0,
+        "prior_year": 5915000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/713676/000162828026053170/pnc-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/713676/000162828026065936/q32026financialsupplement.htm"
   },
   "periods": [
+    {
+      "accession": "0000713676-26-000038",
+      "filed": "2026-05-05",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.13,
+          "prior_year": 3.51,
+          "tag": "us-gaap:EarningsPerShareDiluted; SEC inline XBRL reviewed",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1760000000.0,
+          "prior_year": 1481000000.0,
+          "tag": "us-gaap:ProfitLoss; SEC inline XBRL reviewed minus noncontrolling interests",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6165000000.0,
+          "prior_year": 5452000000.0,
+          "tag": "us-gaap:Revenues; SEC inline XBRL reviewed",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/713676/000071367626000038/pnc-20260331.htm"
+    },
     {
       "accession": "0001628280-26-053170",
       "filed": "2026-08-05",
@@ -59,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/713676/000162828026053170/pnc-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-065936",
+      "filed": "2026-10-15",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.97,
+          "prior_year": 4.35,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2081000000.0,
+          "prior_year": 1808000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6562000000.0,
+          "prior_year": 5915000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/713676/000162828026065936/q32026financialsupplement.htm"
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "PNC",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

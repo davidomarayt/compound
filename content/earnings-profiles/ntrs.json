@@ -2,33 +2,33 @@
   "cik": 73124,
   "company": "Northern Trust",
   "latest": {
-    "accession": "0000073124-26-000035",
-    "filed": "2026-04-30",
-    "form": "10-Q",
-    "fp": "Q1",
+    "accession": "0000073124-26-000063",
+    "filed": "2026-10-21",
+    "form": "8-K",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.71,
-        "prior_year": 1.9,
-        "tag": "EarningsPerShareDiluted",
+        "current": 3.4,
+        "prior_year": 2.29,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 525500000,
-        "prior_year": 392000000,
-        "tag": "NetIncomeLoss",
+        "current": 642900000.0,
+        "prior_year": 457600000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1341400000,
-        "prior_year": 1213800000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 2294400000.0,
+        "prior_year": 2025400000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/73124/000007312426000035/ntrs-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/73124/000007312426000063/q32026earningsreleaseex991.htm"
   },
   "periods": [
     {
@@ -51,17 +51,75 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 1341400000,
-          "prior_year": 1213800000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 2205600000,
+          "prior_year": 1940000000,
+          "tag": "RevenuesNetOfInterestExpense",
           "unit": "USD"
         }
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/73124/000007312426000035/ntrs-20260331.htm"
+    },
+    {
+      "accession": "0000073124-26-000047",
+      "filed": "2026-07-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.23,
+          "prior_year": 2.13,
+          "tag": "us-gaap:EarningsPerShareDilutedUndistributed; SEC inline XBRL reviewed",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 792200000.0,
+          "prior_year": 421300000.0,
+          "tag": "us-gaap:NetIncomeLoss; SEC inline XBRL reviewed",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2698000000.0,
+          "prior_year": 1997900000.0,
+          "tag": "us-gaap:RevenuesNetOfInterestExpense; SEC inline XBRL reviewed",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/73124/000007312426000047/ntrs-20260630.htm"
+    },
+    {
+      "accession": "0000073124-26-000063",
+      "filed": "2026-10-21",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.4,
+          "prior_year": 2.29,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 642900000.0,
+          "prior_year": 457600000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2294400000.0,
+          "prior_year": 2025400000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/73124/000007312426000063/q32026earningsreleaseex991.htm"
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "NTRS",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

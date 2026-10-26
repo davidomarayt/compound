@@ -21,9 +21,9 @@
         "unit": "USD"
       },
       "revenue": {
-        "current": 1174300000,
-        "prior_year": 1182100000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 1282300000,
+        "prior_year": 1291900000,
+        "tag": "Revenues",
         "unit": "USD"
       }
     },
@@ -51,9 +51,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 1198000000,
-          "prior_year": 1133300000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 1308300000,
+          "prior_year": 1243200000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
@@ -80,9 +80,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 1225800000,
-          "prior_year": 1170900000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 1334800000,
+          "prior_year": 1281100000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
@@ -109,9 +109,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 1174300000,
-          "prior_year": 1182100000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 1282300000,
+          "prior_year": 1291900000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
@@ -121,5 +121,5 @@
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "SNA",
-  "updated": "2026-10-23"
+  "updated": "2026-10-26"
 }

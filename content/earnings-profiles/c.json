@@ -1,0 +1,125 @@
+{
+  "cik": 831001,
+  "company": "Citigroup",
+  "latest": {
+    "accession": "0001104659-26-115323",
+    "filed": "2026-10-13",
+    "form": "8-K",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.85,
+        "prior_year": 1.86,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 5245000000,
+        "prior_year": 3752000000,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 23845000000,
+        "prior_year": 22090000000,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/831001/000110465926115323/c-ex99d1.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000831001-26-000019",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.06,
+          "prior_year": 1.96,
+          "tag": "us-gaap:EarningsPerShareDiluted; SEC inline XBRL reviewed",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 5785000000.0,
+          "prior_year": 4064000000.0,
+          "tag": "us-gaap:NetIncomeLoss; SEC inline XBRL reviewed",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 24633000000.0,
+          "prior_year": 21596000000.0,
+          "tag": "us-gaap:Revenues; SEC inline XBRL reviewed",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/831001/000083100126000019/c-20260331.htm"
+    },
+    {
+      "accession": "0000831001-26-000045",
+      "filed": "2026-08-06",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.15,
+          "prior_year": 1.96,
+          "tag": "us-gaap:EarningsPerShareDiluted; SEC inline XBRL reviewed",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 5831000000.0,
+          "prior_year": 4019000000.0,
+          "tag": "us-gaap:NetIncomeLoss; SEC inline XBRL reviewed",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 24766000000.0,
+          "prior_year": 21668000000.0,
+          "tag": "us-gaap:Revenues; SEC inline XBRL reviewed",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/831001/000083100126000045/c-20260630.htm"
+    },
+    {
+      "accession": "0001104659-26-115323",
+      "filed": "2026-10-13",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.85,
+          "prior_year": 1.86,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 5245000000,
+          "prior_year": 3752000000,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 23845000000,
+          "prior_year": 22090000000,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/831001/000110465926115323/c-ex99d1.htm"
+    }
+  ],
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "ticker": "C",
+  "updated": "2026-10-26"
+}

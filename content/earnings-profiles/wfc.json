@@ -1,0 +1,125 @@
+{
+  "cik": 72971,
+  "company": "Wells Fargo",
+  "latest": {
+    "accession": "0000072971-26-000318",
+    "filed": "2026-10-13",
+    "form": "8-K",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.87,
+        "prior_year": 1.66,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 5951000000.0,
+        "prior_year": 5589000000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 21870000000.0,
+        "prior_year": 21436000000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000318/wfc3qer10-13x26ex991xrelea.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000072971-26-000217",
+      "filed": "2026-04-29",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.6,
+          "prior_year": 1.39,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 5253000000,
+          "prior_year": 4894000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 21446000000,
+          "prior_year": 20149000000,
+          "tag": "RevenuesNetOfInterestExpense",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000217/wfc-20260331.htm"
+    },
+    {
+      "accession": "0000072971-26-000302",
+      "filed": "2026-07-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2,
+          "prior_year": 1.6,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 6407000000,
+          "prior_year": 5494000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 22622000000,
+          "prior_year": 20822000000,
+          "tag": "RevenuesNetOfInterestExpense",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000302/wfc-20260630.htm"
+    },
+    {
+      "accession": "0000072971-26-000318",
+      "filed": "2026-10-13",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.87,
+          "prior_year": 1.66,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 5951000000.0,
+          "prior_year": 5589000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 21870000000.0,
+          "prior_year": 21436000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000318/wfc3qer10-13x26ex991xrelea.htm"
+    }
+  ],
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "ticker": "WFC",
+  "updated": "2026-10-26"
+}

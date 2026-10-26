@@ -1,0 +1,125 @@
+{
+  "cik": 1004980,
+  "company": "PG&E Corporation",
+  "latest": {
+    "accession": "0001004980-26-000055",
+    "filed": "2026-10-22",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.34,
+        "prior_year": 0.37,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 776000000.0,
+        "prior_year": 850000000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 6188000000.0,
+        "prior_year": 6250000000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1004980/000100498026000055/pcg-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001004980-26-000033",
+      "filed": "2026-04-23",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.39,
+          "prior_year": 0.28,
+          "tag": "us-gaap:EarningsPerShareDiluted; SEC inline XBRL reviewed",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 885000000.0,
+          "prior_year": 634000000.0,
+          "tag": "us-gaap:ProfitLoss; SEC inline XBRL reviewed",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6881000000.0,
+          "prior_year": 5983000000.0,
+          "tag": "us-gaap:Revenues; SEC inline XBRL reviewed",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1004980/000100498026000033/pcg-20260331.htm"
+    },
+    {
+      "accession": "0001004980-26-000048",
+      "filed": "2026-07-23",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.33,
+          "prior_year": 0.24,
+          "tag": "us-gaap:EarningsPerShareDiluted; SEC inline XBRL reviewed",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 761000000.0,
+          "prior_year": 549000000.0,
+          "tag": "us-gaap:ProfitLoss; SEC inline XBRL reviewed",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5902000000.0,
+          "prior_year": 5898000000.0,
+          "tag": "us-gaap:Revenues; SEC inline XBRL reviewed",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1004980/000100498026000048/pcg-20260630.htm"
+    },
+    {
+      "accession": "0001004980-26-000055",
+      "filed": "2026-10-22",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.34,
+          "prior_year": 0.37,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 776000000.0,
+          "prior_year": 850000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6188000000.0,
+          "prior_year": 6250000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1004980/000100498026000055/pcg-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "ticker": "PCG",
+  "updated": "2026-10-26"
+}

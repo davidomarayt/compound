@@ -21,9 +21,9 @@
         "unit": "USD"
       },
       "revenue": {
-        "current": 4185000000,
-        "prior_year": 3723000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 4531000000,
+        "prior_year": 4146000000,
+        "tag": "Revenues",
         "unit": "USD"
       }
     },
@@ -51,9 +51,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 4451000000,
-          "prior_year": 3862000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 4828000000,
+          "prior_year": 4241000000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
@@ -80,9 +80,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 4098000000,
-          "prior_year": 3606000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 4477000000,
+          "prior_year": 4042000000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
@@ -109,9 +109,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 4185000000,
-          "prior_year": 3723000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 4531000000,
+          "prior_year": 4146000000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
@@ -121,5 +121,5 @@
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "KMI",
-  "updated": "2026-10-24"
+  "updated": "2026-10-26"
 }

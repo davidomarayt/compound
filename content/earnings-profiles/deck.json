@@ -2,33 +2,33 @@
   "cik": 910521,
   "company": "Deckers Brands",
   "latest": {
-    "accession": "0000910521-26-000022",
-    "filed": "2026-07-30",
-    "form": "10-Q",
-    "fp": "Q1",
+    "accession": "0000910521-26-000028",
+    "filed": "2026-10-22",
+    "form": "8-K",
+    "fp": "Q2",
     "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 0.94,
-        "prior_year": 0.93,
-        "tag": "EarningsPerShareDiluted",
+        "current": 2.31,
+        "prior_year": 1.82,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 129972000,
-        "prior_year": 139203000,
-        "tag": "NetIncomeLoss",
+        "current": 313135000.0,
+        "prior_year": 268152000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1019531000,
-        "prior_year": 964538000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 1480554000.0,
+        "prior_year": 1430840000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/910521/000091052126000022/deck-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/910521/000091052126000028/deckex991pressrelease-9302.htm"
   },
   "periods": [
     {
@@ -59,9 +59,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/910521/000091052126000022/deck-20260630.htm"
+    },
+    {
+      "accession": "0000910521-26-000028",
+      "filed": "2026-10-22",
+      "form": "8-K",
+      "fp": "Q2",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.31,
+          "prior_year": 1.82,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 313135000.0,
+          "prior_year": 268152000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1480554000.0,
+          "prior_year": 1430840000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/910521/000091052126000028/deckex991pressrelease-9302.htm"
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "DECK",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

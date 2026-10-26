@@ -2,33 +2,36 @@
   "cik": 896159,
   "company": "Chubb Limited",
   "latest": {
-    "accession": "0000896159-26-000011",
-    "filed": "2026-04-28",
-    "form": "10-Q",
-    "fp": "Q1",
+    "accession": "0001193125-26-426866",
+    "filed": "2026-10-20",
+    "form": "8-K",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 5.88,
-        "prior_year": 3.29,
-        "tag": "EarningsPerShareDiluted",
+        "current": 7.3,
+        "prior_year": 6.99,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 2320000000,
-        "prior_year": 1331000000,
-        "tag": "NetIncomeLoss",
+        "current": 2844000000.0,
+        "prior_year": 2801000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       },
       "revenue": {
-        "current": 14773000000,
-        "prior_year": 13353000000,
-        "tag": "Revenues",
+        "current": 16195000000.0,
+        "prior_year": 16148000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/896159/000089615926000011/cb-20260331.htm"
+    "notes": [
+      "Revenue is the sum of net premiums earned, net investment income, net realized gains/losses and market risk benefits gains/losses, consistent with the total-revenue definition in the quarterly financial statements."
+    ],
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/896159/000119312526426866/d160822dex991.htm"
   },
   "periods": [
     {
@@ -59,9 +62,70 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/896159/000089615926000011/cb-20260331.htm"
+    },
+    {
+      "accession": "0000896159-26-000017",
+      "filed": "2026-07-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 7.3,
+          "prior_year": 7.35,
+          "tag": "us-gaap:EarningsPerShareDiluted; SEC inline XBRL reviewed",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2854000000.0,
+          "prior_year": 2968000000.0,
+          "tag": "us-gaap:NetIncomeLoss; SEC inline XBRL reviewed",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 15816000000.0,
+          "prior_year": 14836000000.0,
+          "tag": "us-gaap:Revenues; SEC inline XBRL reviewed",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/896159/000089615926000017/cb-20260630.htm"
+    },
+    {
+      "accession": "0001193125-26-426866",
+      "filed": "2026-10-20",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 7.3,
+          "prior_year": 6.99,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2844000000.0,
+          "prior_year": 2801000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 16195000000.0,
+          "prior_year": 16148000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "notes": [
+        "Revenue is the sum of net premiums earned, net investment income, net realized gains/losses and market risk benefits gains/losses, consistent with the total-revenue definition in the quarterly financial statements."
+      ],
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/896159/000119312526426866/d160822dex991.htm"
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "CB",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

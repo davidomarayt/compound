@@ -1,0 +1,125 @@
+{
+  "cik": 895421,
+  "company": "Morgan Stanley",
+  "latest": {
+    "accession": "0000895421-26-000288",
+    "filed": "2026-10-14",
+    "form": "8-K",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.03,
+        "prior_year": 2.8,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 4909000000.0,
+        "prior_year": 4610000000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 20338000000.0,
+        "prior_year": 18224000000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/895421/000089542126000288/a3q26msearningsrelease.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000895421-26-000121",
+      "filed": "2026-05-05",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.43,
+          "prior_year": 2.6,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 5567000000,
+          "prior_year": 4315000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 20580000000,
+          "prior_year": 17739000000,
+          "tag": "RevenuesNetOfInterestExpense",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/895421/000089542126000121/ms-20260331.htm"
+    },
+    {
+      "accession": "0000895421-26-000212",
+      "filed": "2026-08-04",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.46,
+          "prior_year": 2.13,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 5581000000,
+          "prior_year": 3539000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 21348000000,
+          "prior_year": 16792000000,
+          "tag": "RevenuesNetOfInterestExpense",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/895421/000089542126000212/ms-20260630.htm"
+    },
+    {
+      "accession": "0000895421-26-000288",
+      "filed": "2026-10-14",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.03,
+          "prior_year": 2.8,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 4909000000.0,
+          "prior_year": 4610000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 20338000000.0,
+          "prior_year": 18224000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/895421/000089542126000288/a3q26msearningsrelease.htm"
+    }
+  ],
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "ticker": "MS",
+  "updated": "2026-10-26"
+}

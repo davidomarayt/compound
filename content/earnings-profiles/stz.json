@@ -1,0 +1,96 @@
+{
+  "cik": 16918,
+  "company": "Constellation Brands",
+  "latest": {
+    "accession": "0000016918-26-000040",
+    "filed": "2026-10-07",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2027,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.32,
+        "prior_year": 2.65,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 565800000.0,
+        "prior_year": 466000000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2633000000.0,
+        "prior_year": 2481000000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-08-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/16918/000001691826000040/stz-20260831.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000016918-26-000029",
+      "filed": "2026-07-01",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.79,
+          "prior_year": 2.9,
+          "tag": "us-gaap:EarningsPerShareDiluted; SEC inline XBRL reviewed",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 653800000.0,
+          "prior_year": 516100000.0,
+          "tag": "us-gaap:NetIncomeLoss; SEC inline XBRL reviewed",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2432700000.0,
+          "prior_year": 2515000000.0,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; SEC inline XBRL reviewed",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-05-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/16918/000001691826000029/stz-20260531.htm"
+    },
+    {
+      "accession": "0000016918-26-000040",
+      "filed": "2026-10-07",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.32,
+          "prior_year": 2.65,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 565800000.0,
+          "prior_year": 466000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2633000000.0,
+          "prior_year": 2481000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/16918/000001691826000040/stz-20260831.htm"
+    }
+  ],
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "ticker": "STZ",
+  "updated": "2026-10-26"
+}

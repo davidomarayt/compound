@@ -2,33 +2,33 @@
   "cik": 882835,
   "company": "Roper Technologies",
   "latest": {
-    "accession": "0000882835-26-000036",
-    "filed": "2026-07-31",
-    "form": "10-Q",
-    "fp": "Q2",
+    "accession": "0000882835-26-000042",
+    "filed": "2026-10-22",
+    "form": "8-K",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 11.62,
-        "prior_year": 3.49,
-        "tag": "EarningsPerShareDiluted",
+        "current": 4.88,
+        "prior_year": 3.68,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1168500000,
-        "prior_year": 378300000,
-        "tag": "NetIncomeLoss",
+        "current": 484700000.0,
+        "prior_year": 398500000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2108900000,
-        "prior_year": 1943600000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 2171800000.0,
+        "prior_year": 2017500000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000036/rop-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000042/a2026q3earningsrelease.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000036/rop-20260630.htm"
+    },
+    {
+      "accession": "0000882835-26-000042",
+      "filed": "2026-10-22",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.88,
+          "prior_year": 3.68,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 484700000.0,
+          "prior_year": 398500000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2171800000.0,
+          "prior_year": 2017500000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000042/a2026q3earningsrelease.htm"
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "ROP",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

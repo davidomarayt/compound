@@ -1,0 +1,471 @@
+{
+  "checked": "2026-10-26",
+  "scope": "500 active S&P 500 issuer records plus SPCX; SEC periodic filings since 2026-09-30 and Item 2.02 releases since 2026-10-01",
+  "issuers_checked": 501,
+  "changed_pages": 55,
+  "changes": [
+    {
+      "ticker": "ABT",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
+      "source": "https://www.sec.gov/Archives/edgar/data/1800/000162828026066601/abt-2026q3xexhibitx991.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "ALLE",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "source": "https://www.sec.gov/Archives/edgar/data/1579241/000157924126000034/alle-20260930.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "AXP",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
+      "source": "https://www.sec.gov/Archives/edgar/data/4962/000000496226000409/axp-20260930.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "BAC",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-14",
+      "source": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000481/bac-09302026ex993.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "BLK",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-14",
+      "source": "https://www.sec.gov/Archives/edgar/data/2012383/000119312526420979/blk-ex99_1.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "BNY",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-15",
+      "source": "https://www.sec.gov/Archives/edgar/data/1390777/000139077726000104/ex991_earningsreleasex3q26.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "BX",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "source": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526428297/d160590dex991.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "C",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-13",
+      "source": "https://www.sec.gov/Archives/edgar/data/831001/000110465926115323/c-ex99d1.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "CB",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
+      "source": "https://www.sec.gov/Archives/edgar/data/896159/000119312526426866/d160822dex991.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "CBRE",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "source": "https://www.sec.gov/Archives/edgar/data/1138118/000113811826000031/cbre-20260930.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "CCI",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
+      "source": "https://www.sec.gov/Archives/edgar/data/1051470/000105147026000085/q32026supplement.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "CFG",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-16",
+      "source": "https://www.sec.gov/Archives/edgar/data/759944/000075994426000206/a3q26earningsrelease.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "COF",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
+      "source": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000142/ex992q32026earningsrelease.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "DECK",
+      "period": "FY2027 Q2",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "source": "https://www.sec.gov/Archives/edgar/data/910521/000091052126000028/deckex991pressrelease-9302.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "EMR",
+      "period": "FY2026 Q3",
+      "period_end": "2026-06-30",
+      "filed": "2026-10-13",
+      "source": "https://www.sec.gov/Archives/edgar/data/32604/000003260426000047/apensionrestatementxex991.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "FITB",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-19",
+      "source": "https://www.sec.gov/Archives/edgar/data/35527/000003552726000229/q32026earningsrelease.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "GL",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
+      "source": "https://www.sec.gov/Archives/edgar/data/320335/000032033526000224/q3fy2026earningsrelease.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "GM",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
+      "source": "https://www.sec.gov/Archives/edgar/data/1467858/000146785826000059/gm-20260930.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "GS",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-13",
+      "source": "https://www.sec.gov/Archives/edgar/data/886982/000088698226000529/a3q26gsearningsresults.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "HAS",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-27",
+      "filed": "2026-10-20",
+      "source": "https://www.sec.gov/Archives/edgar/data/46080/000004608026000058/exhibit991q32026.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "HBAN",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "source": "https://www.sec.gov/Archives/edgar/data/49196/000004919626000084/hban20260930_8kex991.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "IBKR",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-15",
+      "source": "https://www.sec.gov/Archives/edgar/data/1381197/000138119726000154/ibkr-ex99_1.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "JPM",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-13",
+      "source": "https://www.sec.gov/Archives/edgar/data/19617/000162828026065582/a3q26erfexhibit991narrative.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "KEY",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
+      "source": "https://www.sec.gov/Archives/edgar/data/91576/000009157626000020/a3q26earningsrelease.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "KMB",
+      "period": "FY2026 Q2",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
+      "source": "https://www.sec.gov/Archives/edgar/data/55785/000162828026052348/kmb-20260630.htm",
+      "preliminary_update": true
+    },
+    {
+      "ticker": "KMI",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
+      "source": "https://www.sec.gov/Archives/edgar/data/1506307/000150630726000132/kmi-20260930.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "MS",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-14",
+      "source": "https://www.sec.gov/Archives/edgar/data/895421/000089542126000288/a3q26msearningsrelease.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "MTB",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-16",
+      "source": "https://www.sec.gov/Archives/edgar/data/36270/000003627026000057/ex991release3q26.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "NEE",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
+      "source": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000081/nee-20260930.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "NTRS",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
+      "source": "https://www.sec.gov/Archives/edgar/data/73124/000007312426000063/q32026earningsreleaseex991.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "NVR",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "source": "https://www.sec.gov/Archives/edgar/data/906163/000090616326000099/q32026ex991_earningsrelease.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "PCG",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "source": "https://www.sec.gov/Archives/edgar/data/1004980/000100498026000055/pcg-20260930.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "PGR",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-14",
+      "source": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000367/pgr202609ex99earningsrelea.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "PKG",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "source": "https://www.sec.gov/Archives/edgar/data/75677/000119312526428056/pkg-ex99_1.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "PLD",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-15",
+      "source": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526422375/pld-ex99_1.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "PNC",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-15",
+      "source": "https://www.sec.gov/Archives/edgar/data/713676/000162828026065936/q32026financialsupplement.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "RF",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-16",
+      "source": "https://www.sec.gov/Archives/edgar/data/1281761/000128176126000063/rf-2026930xexhibitx992.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "ROP",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "source": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000042/a2026q3earningsrelease.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "SCHW",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-15",
+      "source": "https://www.sec.gov/Archives/edgar/data/316709/000031670926000035/a3q26exhibit991.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "SLB",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
+      "source": "https://www.sec.gov/Archives/edgar/data/87347/000119312526429435/d151271dex99.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "SMCI",
+      "period": "FY2026 FY",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+      "preliminary_update": true
+    },
+    {
+      "ticker": "SNA",
+      "period": "FY2026 Q3",
+      "period_end": "2026-10-03",
+      "filed": "2026-10-22",
+      "source": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000172/sna-20261003.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "STT",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-14",
+      "source": "https://www.sec.gov/Archives/edgar/data/93751/000009375126000592/a3q26earningspressrelease.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "STZ",
+      "period": "FY2027 Q2",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-07",
+      "source": "https://www.sec.gov/Archives/edgar/data/16918/000001691826000040/stz-20260831.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "SYF",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "source": "https://www.sec.gov/Archives/edgar/data/1601712/000160171226000043/syf-20260930.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "TFC",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-16",
+      "source": "https://www.sec.gov/Archives/edgar/data/92230/000009223026000108/ex992-qpsx3q26.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "TSCO",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-26",
+      "filed": "2026-10-22",
+      "source": "https://www.sec.gov/Archives/edgar/data/916365/000091636526000069/ex991-q32026earningsrelease.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "UDR",
+      "period": "FY2026 Q1",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000049/udr-20260331x10q.htm",
+      "preliminary_update": true
+    },
+    {
+      "ticker": "UNH",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-13",
+      "source": "https://www.sec.gov/Archives/edgar/data/731766/000073176626000255/earningsrelease3q26unh.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "URI",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
+      "source": "https://www.sec.gov/Archives/edgar/data/1067701/000106770126000034/uri-20260930.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "USB",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-15",
+      "source": "https://www.sec.gov/Archives/edgar/data/36104/000003610426000054/a3q26earningsrelease.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "VLO",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "source": "https://www.sec.gov/Archives/edgar/data/1035002/000162828026066795/a9302026exh9901earningsrel.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "VRSN",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "source": "https://www.sec.gov/Archives/edgar/data/1014473/000101447326000039/vrsn-20260930.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "WFC",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-13",
+      "source": "https://www.sec.gov/Archives/edgar/data/72971/000007297126000318/wfc3qer10-13x26ex991xrelea.htm",
+      "preliminary_update": false
+    },
+    {
+      "ticker": "WRB",
+      "period": "FY2026 Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-19",
+      "source": "https://www.sec.gov/Archives/edgar/data/11544/000001154426000046/wrb93020268-kex991.htm",
+      "preliminary_update": false
+    }
+  ],
+  "preliminary_only": [
+    "KMB",
+    "SMCI",
+    "UDR"
+  ],
+  "restatement": "EMR: pension accounting revised FY2026 Q2/Q3 and comparative figures",
+  "other_announcements_not_completed_results": [
+    "ABBV",
+    "APA",
+    "APO",
+    "COR",
+    "EBAY",
+    "EOG",
+    "EQT",
+    "FANG",
+    "FCX",
+    "OXY",
+    "PRU",
+    "REGN"
+  ],
+  "already_current_exception": "BE: Q3 release was already published with the reported common-stockholder income; preserved the reviewed figures.",
+  "foreign_watchlist": "Foreign-company 6-K/20-F and local-market watchlist pages are outside this US GAAP dashboard refresh.",
+  "articles_created": 0
+}

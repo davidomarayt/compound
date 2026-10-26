@@ -2,33 +2,33 @@
   "cik": 916365,
   "company": "Tractor Supply",
   "latest": {
-    "accession": "0000916365-26-000059",
-    "filed": "2026-08-06",
-    "form": "10-Q",
-    "fp": "Q2",
+    "accession": "0000916365-26-000069",
+    "filed": "2026-10-22",
+    "form": "8-K",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.69,
-        "prior_year": 0.81,
-        "tag": "EarningsPerShareDiluted",
+        "current": 0.43,
+        "prior_year": 0.49,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 360715000,
-        "prior_year": 430043000,
-        "tag": "NetIncomeLoss",
+        "current": 224671000.0,
+        "prior_year": 259268000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4541314000,
-        "prior_year": 4439729000,
-        "tag": "Revenues",
+        "current": 3910455000.0,
+        "prior_year": 3719044000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-27",
-    "source": "https://www.sec.gov/Archives/edgar/data/916365/000091636526000059/tsco-20260627.htm"
+    "period_end": "2026-09-26",
+    "source": "https://www.sec.gov/Archives/edgar/data/916365/000091636526000069/ex991-q32026earningsrelease.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-27",
       "source": "https://www.sec.gov/Archives/edgar/data/916365/000091636526000059/tsco-20260627.htm"
+    },
+    {
+      "accession": "0000916365-26-000069",
+      "filed": "2026-10-22",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.43,
+          "prior_year": 0.49,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 224671000.0,
+          "prior_year": 259268000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3910455000.0,
+          "prior_year": 3719044000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/916365/000091636526000069/ex991-q32026earningsrelease.htm"
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "TSCO",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

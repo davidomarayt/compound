@@ -2,33 +2,33 @@
   "cik": 316709,
   "company": "Charles Schwab Corporation",
   "latest": {
-    "accession": "0000316709-26-000031",
-    "filed": "2026-08-07",
-    "form": "10-Q",
-    "fp": "Q2",
+    "accession": "0000316709-26-000035",
+    "filed": "2026-10-15",
+    "form": "8-K",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.54,
-        "prior_year": 1.08,
-        "tag": "EarningsPerShareDiluted",
+        "current": 1.62,
+        "prior_year": 1.26,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 2800000000,
-        "prior_year": 2126000000,
-        "tag": "NetIncomeLoss",
+        "current": 2906000000.0,
+        "prior_year": 2358000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       },
       "revenue": {
-        "current": 7072000000,
-        "prior_year": 5851000000,
-        "tag": "Revenues",
+        "current": 7171000000.0,
+        "prior_year": 6135000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/316709/000031670926000031/schw-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/316709/000031670926000035/a3q26exhibit991.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/316709/000031670926000031/schw-20260630.htm"
+    },
+    {
+      "accession": "0000316709-26-000035",
+      "filed": "2026-10-15",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.62,
+          "prior_year": 1.26,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2906000000.0,
+          "prior_year": 2358000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7171000000.0,
+          "prior_year": 6135000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/316709/000031670926000035/a3q26exhibit991.htm"
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "SCHW",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

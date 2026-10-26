@@ -2,33 +2,36 @@
   "cik": 80661,
   "company": "Progressive Corporation",
   "latest": {
-    "accession": "0000080661-26-000308",
-    "filed": "2026-08-03",
-    "form": "10-Q",
-    "fp": "Q2",
+    "accession": "0000080661-26-000367",
+    "filed": "2026-10-14",
+    "form": "8-K",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 5.67,
-        "prior_year": 5.4,
-        "tag": "EarningsPerShareDiluted",
+        "current": 4.37,
+        "prior_year": 4.45,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 3311000000,
-        "prior_year": 3175000000,
-        "tag": "NetIncomeLoss",
+        "current": 2542000000.0,
+        "prior_year": 2615000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       },
       "revenue": {
-        "current": 23609000000,
-        "prior_year": 22004000000,
-        "tag": "Revenues",
+        "current": 23192000000.0,
+        "prior_year": 22512000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000308/pgr-20260630.htm"
+    "notes": [
+      "Q3 revenue is calculated from reported nine-month revenue less the verified Q1 and Q2 revenue shown below. Q3 net income and diluted EPS are reported directly in the September results release."
+    ],
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000367/pgr202609ex99earningsrelea.htm"
   },
   "periods": [
     {
@@ -88,9 +91,41 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000308/pgr-20260630.htm"
+    },
+    {
+      "accession": "0000080661-26-000367",
+      "filed": "2026-10-14",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.37,
+          "prior_year": 4.45,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2542000000.0,
+          "prior_year": 2615000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 23192000000.0,
+          "prior_year": 22512000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "notes": [
+        "Q3 revenue is calculated from reported nine-month revenue less the verified Q1 and Q2 revenue shown below. Q3 net income and diluted EPS are reported directly in the September results release."
+      ],
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000367/pgr202609ex99earningsrelea.htm"
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "PGR",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

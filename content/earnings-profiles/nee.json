@@ -2,33 +2,33 @@
   "cik": 753308,
   "company": "NextEra Energy",
   "latest": {
-    "accession": "0000753308-26-000031",
-    "filed": "2026-04-23",
+    "accession": "0000753308-26-000081",
+    "filed": "2026-10-21",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.04,
-        "prior_year": 0.4,
-        "tag": "EarningsPerShareDiluted",
+        "current": 2.28,
+        "prior_year": 1.18,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 2182000000,
-        "prior_year": 833000000,
-        "tag": "NetIncomeLoss",
+        "current": 4775000000.0,
+        "prior_year": 2438000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       },
       "revenue": {
-        "current": 6100000000,
-        "prior_year": 6000000000,
-        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+        "current": 8090000000.0,
+        "prior_year": 7966000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000031/nee-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000081/nee-20260930.htm"
   },
   "periods": [
     {
@@ -41,27 +41,85 @@
         "diluted_eps": {
           "current": 1.04,
           "prior_year": 0.4,
-          "tag": "EarningsPerShareDiluted",
+          "tag": "us-gaap:EarningsPerShareDiluted; SEC inline XBRL reviewed",
           "unit": "USD/shares"
         },
         "net_income": {
-          "current": 2182000000,
-          "prior_year": 833000000,
-          "tag": "NetIncomeLoss",
+          "current": 2182000000.0,
+          "prior_year": 833000000.0,
+          "tag": "us-gaap:NetIncomeLoss; SEC inline XBRL reviewed",
           "unit": "USD"
         },
         "revenue": {
-          "current": 6100000000,
-          "prior_year": 6000000000,
-          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "current": 6701000000.0,
+          "prior_year": 6247000000.0,
+          "tag": "us-gaap:RegulatedAndUnregulatedOperatingRevenue; SEC inline XBRL reviewed",
           "unit": "USD"
         }
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000031/nee-20260331.htm"
+    },
+    {
+      "accession": "0000753308-26-000060",
+      "filed": "2026-07-24",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.5,
+          "prior_year": 0.98,
+          "tag": "us-gaap:EarningsPerShareDiluted; SEC inline XBRL reviewed",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 3144000000.0,
+          "prior_year": 2028000000.0,
+          "tag": "us-gaap:NetIncomeLoss; SEC inline XBRL reviewed",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7534000000.0,
+          "prior_year": 6700000000.0,
+          "tag": "us-gaap:RegulatedAndUnregulatedOperatingRevenue; SEC inline XBRL reviewed",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000060/nee-20260630.htm"
+    },
+    {
+      "accession": "0000753308-26-000081",
+      "filed": "2026-10-21",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.28,
+          "prior_year": 1.18,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 4775000000.0,
+          "prior_year": 2438000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 8090000000.0,
+          "prior_year": 7966000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/753308/000075330826000081/nee-20260930.htm"
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "NEE",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

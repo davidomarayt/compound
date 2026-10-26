@@ -1,0 +1,125 @@
+{
+  "cik": 1579241,
+  "company": "Allegion",
+  "latest": {
+    "accession": "0001579241-26-000034",
+    "filed": "2026-10-22",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.59,
+        "prior_year": 2.18,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 220900000.0,
+        "prior_year": 188400000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1172600000.0,
+        "prior_year": 1070200000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1579241/000157924126000034/alle-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001579241-26-000015",
+      "filed": "2026-04-28",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.59,
+          "prior_year": 1.71,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 138100000,
+          "prior_year": 148200000,
+          "tag": "ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1033600000,
+          "prior_year": 941900000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1579241/000157924126000015/alle-20260331.htm"
+    },
+    {
+      "accession": "0001579241-26-000028",
+      "filed": "2026-07-23",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.15,
+          "prior_year": 1.85,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 184600000,
+          "prior_year": 159700000,
+          "tag": "ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1151500000,
+          "prior_year": 1022000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1579241/000157924126000028/alle-20260630.htm"
+    },
+    {
+      "accession": "0001579241-26-000034",
+      "filed": "2026-10-22",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.59,
+          "prior_year": 2.18,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 220900000.0,
+          "prior_year": 188400000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1172600000.0,
+          "prior_year": 1070200000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1579241/000157924126000034/alle-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "ticker": "ALLE",
+  "updated": "2026-10-26"
+}

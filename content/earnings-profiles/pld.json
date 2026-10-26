@@ -2,33 +2,33 @@
   "cik": 1045609,
   "company": "Prologis",
   "latest": {
-    "accession": "0001193125-26-197850",
-    "filed": "2026-04-30",
-    "form": "10-Q",
-    "fp": "Q1",
+    "accession": "0001193125-26-422375",
+    "filed": "2026-10-15",
+    "form": "8-K",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.05,
-        "prior_year": 0.63,
-        "tag": "EarningsPerShareDiluted",
+        "current": 0.86,
+        "prior_year": 0.82,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 981976000,
-        "prior_year": 592953000,
-        "tag": "NetIncomeLoss",
+        "current": 817103000.0,
+        "prior_year": 764266000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2297723000,
-        "prior_year": 2139665000,
-        "tag": "Revenues",
+        "current": 2387518000.0,
+        "prior_year": 2213881000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526197850/pld-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526422375/pld-ex99_1.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526197850/pld-20260331.htm"
+    },
+    {
+      "accession": "0001193125-26-323746",
+      "filed": "2026-07-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.13,
+          "prior_year": 0.61,
+          "tag": "us-gaap:EarningsPerShareDiluted; SEC inline XBRL reviewed",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1062191000.0,
+          "prior_year": 571229000.0,
+          "tag": "us-gaap:NetIncomeLoss; SEC inline XBRL reviewed",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2425452000.0,
+          "prior_year": 2183869000.0,
+          "tag": "us-gaap:Revenues; SEC inline XBRL reviewed",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526323746/pld-20260630.htm"
+    },
+    {
+      "accession": "0001193125-26-422375",
+      "filed": "2026-10-15",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.86,
+          "prior_year": 0.82,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 817103000.0,
+          "prior_year": 764266000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2387518000.0,
+          "prior_year": 2213881000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526422375/pld-ex99_1.htm"
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "PLD",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

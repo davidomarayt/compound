@@ -46,6 +46,29 @@ def test_rejects_only_year_to_date_quarterly_metrics():
     assert earnings.extract_metrics(bad, FILING) is None
 
 
+def test_total_revenue_precedes_contract_component():
+    data = facts()
+    data['cik'] = 1138118
+    data['facts']['us-gaap']['Revenues'] = {'units': {'USD': rows('revenue', 130, 110)}}
+    metrics = earnings.extract_metrics(data, FILING)
+    assert metrics['revenue']['current'] == 130
+    assert metrics['revenue']['tag'] == 'Revenues'
+    data['cik'] = 4962
+    data['facts']['us-gaap']['RevenuesNetOfInterestExpense'] = {
+        'units': {'USD': rows('revenue', 20062, 18426)}}
+    metrics = earnings.extract_metrics(data, FILING)
+    assert metrics['revenue']['current'] == 20062
+    assert metrics['revenue']['prior'] == 18426
+    assert metrics['revenue']['tag'] == 'RevenuesNetOfInterestExpense'
+
+
+def test_total_revenue_requires_exact_accession_and_comparable_period():
+    data = facts()
+    data['facts']['us-gaap']['Revenues'] = {'units': {'USD': rows('revenue', 130, 110, accn='other')}}
+    metrics = earnings.extract_metrics(data, FILING)
+    assert metrics['revenue']['tag'] == 'RevenueFromContractWithCustomerExcludingAssessedTax'
+
+
 def test_report_text_has_attribution_yoy_sources_and_no_unverified_claims():
     slug, article=earnings.build_article('AAPL','Apple Inc.',320193,FILING,earnings.extract_metrics(facts(),FILING),date(2026,10,10))
     assert slug=='aapl-earnings-fy2026-q3'
@@ -129,3 +152,19 @@ def test_change_pct_zero_or_negative_comparison():
     assert earnings.change_pct(30,20)==50.0
     assert earnings.change_pct(5,-10) is None
     assert earnings.change_pct(2,0) is None
+
+
+def test_bank_revenue_uses_aligned_total_components_not_contract_fees():
+    data = facts()
+    data['cik'] = 91576
+    gaap = data['facts']['us-gaap']
+    gaap['InterestIncomeExpenseNet'] = {'units': {'USD': rows('nii', 1300, 1184)}}
+    gaap['NoninterestIncome'] = {'units': {'USD': rows('fees', 744, 702)}}
+    revenue = earnings.extract_metrics(data, FILING)['revenue']
+    assert (revenue['current'], revenue['prior']) == (2044, 1886)
+    # Do not add components with different comparable prior-year periods.
+    gaap['NoninterestIncome']['units']['USD'][1]['start'] = '2025-07-02'
+    assert earnings.extract_metrics(data, FILING)['revenue']['tag'] == 'RevenueFromContractWithCustomerExcludingAssessedTax'
+    data['cik'] = 1601712  # Synchrony has retailer-share deductions.
+    gaap['NoninterestIncome']['units']['USD'][1]['start'] = '2025-07-01'
+    assert earnings.extract_metrics(data, FILING)['revenue']['tag'] == 'RevenueFromContractWithCustomerExcludingAssessedTax'

@@ -21,9 +21,9 @@
         "unit": "USD"
       },
       "revenue": {
-        "current": 45706000000,
-        "prior_year": 44256000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 50015000000,
+        "prior_year": 48591000000,
+        "tag": "Revenues",
         "unit": "USD"
       }
     },
@@ -51,9 +51,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 39349000000,
-          "prior_year": 39861000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 43624000000,
+          "prior_year": 44020000000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
@@ -80,9 +80,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 43762000000,
-          "prior_year": 42869000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 48026000000,
+          "prior_year": 47122000000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
@@ -109,9 +109,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 45706000000,
-          "prior_year": 44256000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 50015000000,
+          "prior_year": 48591000000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
@@ -121,5 +121,5 @@
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "GM",
-  "updated": "2026-10-21"
+  "updated": "2026-10-26"
 }

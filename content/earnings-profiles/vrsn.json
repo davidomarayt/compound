@@ -1,0 +1,125 @@
+{
+  "cik": 1014473,
+  "company": "Verisign",
+  "latest": {
+    "accession": "0001014473-26-000039",
+    "filed": "2026-10-22",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.35,
+        "prior_year": 2.27,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 212600000.0,
+        "prior_year": 212800000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 443000000.0,
+        "prior_year": 419100000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1014473/000101447326000039/vrsn-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001014473-26-000020",
+      "filed": "2026-04-23",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.34,
+          "prior_year": 2.1,
+          "tag": "IncomeLossFromContinuingOperationsPerDilutedShare",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 214500000,
+          "prior_year": 199300000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 428900000,
+          "prior_year": 402300000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1014473/000101447326000020/vrsn-20260331.htm"
+    },
+    {
+      "accession": "0001014473-26-000028",
+      "filed": "2026-07-23",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.38,
+          "prior_year": 2.21,
+          "tag": "IncomeLossFromContinuingOperationsPerDilutedShare",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 216500000,
+          "prior_year": 207400000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 434600000,
+          "prior_year": 409900000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1014473/000101447326000028/vrsn-20260630.htm"
+    },
+    {
+      "accession": "0001014473-26-000039",
+      "filed": "2026-10-22",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.35,
+          "prior_year": 2.27,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 212600000.0,
+          "prior_year": 212800000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 443000000.0,
+          "prior_year": 419100000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1014473/000101447326000039/vrsn-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "ticker": "VRSN",
+  "updated": "2026-10-26"
+}

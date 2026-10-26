@@ -227,3 +227,26 @@ def test_annual_results_remain_separate_from_partial_quarter_history(tmp_path):
     assert html.count('aria-label="Latest reported results"') == 1
     assert '1 January 2026' in html and 'Original Q3 filing' in html
     assert 'Original Q4 filing' not in html
+
+
+def test_preliminary_update_does_not_replace_verified_quarter(tmp_path):
+    from jinja2 import Environment, FileSystemLoader
+    folder = tmp_path / 'earnings-profiles'
+    folder.mkdir()
+    period = record(2026, 'Q2', '2026-06-30', '2026-08-01', 'accn', 10e9, 2e9, 1, '2026-04-01')
+    period['notes'] = ['Revenue combines reported interest and fee income.']
+    data = {'ticker': 'EX', 'periods': [period], 'latest': period,
+            'reporting_update': {'date': '2026-10-20', 'text': 'Preliminary Q3 results; final results pending.',
+                                 'source': 'https://www.sec.gov/Archives/update.htm'}}
+    target = folder / 'ex.json'
+    target.write_text(json.dumps(data))
+    report = load_company_report(tmp_path, 'EX')
+    assert report['latest_label'] == 'FY2026 Q2'
+    assert report['latest_figures']['revenue'] == '$10.00bn'
+    env = Environment(loader=FileSystemLoader(Path(__file__).resolve().parents[1] / 'compound/site/templates'), autoescape=True)
+    html = env.get_template('_company_quarters.html').render(report=report, company={'name': 'Example'}, seo=None)
+    assert 'Preliminary Q3 results; final results pending.' in html
+    assert 'Revenue combines reported interest and fee income.' in html
+    period['filed'] = '2026-10-21'
+    target.write_text(json.dumps(data))
+    assert load_company_report(tmp_path, 'EX')['reporting_update'] is None

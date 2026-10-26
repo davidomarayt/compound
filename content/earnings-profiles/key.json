@@ -2,33 +2,36 @@
   "cik": 91576,
   "company": "KeyCorp",
   "latest": {
-    "accession": "0001628280-26-052671",
-    "filed": "2026-08-04",
-    "form": "10-Q",
-    "fp": "Q2",
+    "accession": "0000091576-26-000020",
+    "filed": "2026-10-20",
+    "form": "8-K",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.44,
-        "prior_year": 0.35,
-        "tag": "EarningsPerShareDiluted",
+        "current": 0.51,
+        "prior_year": 0.41,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 509000000,
-        "prior_year": 425000000,
-        "tag": "NetIncomeLoss",
+        "current": 579000000.0,
+        "prior_year": 489000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       },
       "revenue": {
-        "current": 449000000,
-        "prior_year": 425000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 2044000000.0,
+        "prior_year": 1886000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/91576/000162828026052671/key-20260630.htm"
+    "notes": [
+      "Revenue combines reported net interest income and noninterest income."
+    ],
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/91576/000009157626000020/a3q26earningsrelease.htm"
   },
   "periods": [
     {
@@ -51,9 +54,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 462000000,
-          "prior_year": 411000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 1945000000,
+          "prior_year": 1764000000,
+          "tag": "InterestIncomeExpenseNet + NoninterestIncome",
           "unit": "USD"
         }
       },
@@ -80,17 +83,49 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 449000000,
-          "prior_year": 425000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 1956000000,
+          "prior_year": 1831000000,
+          "tag": "InterestIncomeExpenseNet + NoninterestIncome",
           "unit": "USD"
         }
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/91576/000162828026052671/key-20260630.htm"
+    },
+    {
+      "accession": "0000091576-26-000020",
+      "filed": "2026-10-20",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.51,
+          "prior_year": 0.41,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 579000000.0,
+          "prior_year": 489000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2044000000.0,
+          "prior_year": 1886000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "notes": [
+        "Revenue combines reported net interest income and noninterest income."
+      ],
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/91576/000009157626000020/a3q26earningsrelease.htm"
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "KEY",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

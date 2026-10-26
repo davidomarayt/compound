@@ -90,7 +90,12 @@
       "source": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm"
     }
   ],
+  "reporting_update": {
+    "date": "2026-10-20",
+    "source": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000025/smcifirstquarterfy2027busi.htm",
+    "text": "The company released a preliminary business update for Q1 FY2027. Final quarterly results have not yet been incorporated; the completed results below remain the latest verified financial statements."
+  },
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "SMCI",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

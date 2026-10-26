@@ -2,66 +2,72 @@
   "cik": 32604,
   "company": "Emerson Electric",
   "latest": {
-    "accession": "0000032604-26-000043",
-    "filed": "2026-08-04",
-    "form": "10-Q",
+    "accession": "0000032604-26-000047",
+    "filed": "2026-10-13",
+    "form": "8-K",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 1.28,
         "prior_year": 1.04,
-        "tag": "EarningsPerShareDiluted",
+        "tag": "SEC reported; revised pension accounting",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 718000000,
-        "prior_year": 586000000,
-        "tag": "NetIncomeLoss",
+        "current": 720000000.0,
+        "prior_year": 588000000.0,
+        "tag": "SEC reported; revised pension accounting",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4873000000,
-        "prior_year": 4553000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 4873000000.0,
+        "prior_year": 4553000000.0,
+        "tag": "SEC reported; revised pension accounting",
         "unit": "USD"
       }
     },
+    "notes": [
+      "Figures reflect the 13 October 2026 pension-accounting restatement, including revised prior-year comparisons."
+    ],
     "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/32604/000003260426000043/emr-20260630.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/32604/000003260426000047/apensionrestatementxex991.htm"
   },
   "periods": [
     {
-      "accession": "0000032604-26-000043",
-      "filed": "2026-08-04",
-      "form": "10-Q",
+      "accession": "0000032604-26-000047",
+      "filed": "2026-10-13",
+      "form": "8-K",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 1.28,
           "prior_year": 1.04,
-          "tag": "EarningsPerShareDiluted",
+          "tag": "SEC reported; revised pension accounting",
           "unit": "USD/shares"
         },
         "net_income": {
-          "current": 718000000,
-          "prior_year": 586000000,
-          "tag": "NetIncomeLoss",
+          "current": 720000000.0,
+          "prior_year": 588000000.0,
+          "tag": "SEC reported; revised pension accounting",
           "unit": "USD"
         },
         "revenue": {
-          "current": 4873000000,
-          "prior_year": 4553000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 4873000000.0,
+          "prior_year": 4553000000.0,
+          "tag": "SEC reported; revised pension accounting",
           "unit": "USD"
         }
       },
+      "notes": [
+        "Figures reflect the 13 October 2026 pension-accounting restatement, including revised prior-year comparisons."
+      ],
       "period_end": "2026-06-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/32604/000003260426000043/emr-20260630.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/32604/000003260426000047/apensionrestatementxex991.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "EMR",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

@@ -61,7 +61,12 @@
       "source": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000049/udr-20260331x10q.htm"
     }
   ],
+  "reporting_update": {
+    "date": "2026-10-21",
+    "source": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000081/udr-ex99d1.htm",
+    "text": "The company released preliminary Q3 2026 results and raised full-year guidance. The completed results below remain in place pending the full quarterly financial statements."
+  },
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "UDR",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

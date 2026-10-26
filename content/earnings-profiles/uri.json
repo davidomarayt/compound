@@ -21,9 +21,9 @@
         "unit": "USD"
       },
       "revenue": {
-        "current": 1068000000,
-        "prior_year": 938000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 4893000000,
+        "prior_year": 4229000000,
+        "tag": "Revenues",
         "unit": "USD"
       }
     },
@@ -51,9 +51,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 929000000,
-          "prior_year": 893000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 3985000000,
+          "prior_year": 3719000000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
@@ -80,9 +80,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 1068000000,
-          "prior_year": 938000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 4893000000,
+          "prior_year": 4229000000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
@@ -92,5 +92,5 @@
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "URI",
-  "updated": "2026-10-22"
+  "updated": "2026-10-26"
 }

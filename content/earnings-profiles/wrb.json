@@ -2,33 +2,33 @@
   "cik": 11544,
   "company": "W. R. Berkley Corporation",
   "latest": {
-    "accession": "0000011544-26-000036",
-    "filed": "2026-07-31",
-    "form": "10-Q",
-    "fp": "Q2",
+    "accession": "0000011544-26-000046",
+    "filed": "2026-10-19",
+    "form": "8-K",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.15,
-        "prior_year": 1,
-        "tag": "EarningsPerShareDiluted",
+        "current": 1.14,
+        "prior_year": 1.28,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 452261000,
-        "prior_year": 401288000,
-        "tag": "NetIncomeLoss",
+        "current": 446005000.0,
+        "prior_year": 511032000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3716119000,
-        "prior_year": 3670808000,
-        "tag": "Revenues",
+        "current": 3738811000.0,
+        "prior_year": 3768236000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/11544/000001154426000036/wrb-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/11544/000001154426000046/wrb93020268-kex991.htm"
   },
   "periods": [
     {
@@ -51,9 +51,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 152948000,
-          "prior_year": 139604000,
-          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "current": 3690334000,
+          "prior_year": 3547399000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/11544/000001154426000036/wrb-20260630.htm"
+    },
+    {
+      "accession": "0000011544-26-000046",
+      "filed": "2026-10-19",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.14,
+          "prior_year": 1.28,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 446005000.0,
+          "prior_year": 511032000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3738811000.0,
+          "prior_year": 3768236000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/11544/000001154426000046/wrb93020268-kex991.htm"
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "WRB",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

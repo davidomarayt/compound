@@ -5,6 +5,8 @@
   <span>FY{{ report.fy }} · last reported period ended {{ report.latest_end }}</span>
 </div>
 <p class="earnings-lede">Fiscal quarters follow {{ company.name }}'s official accounting calendar, not calendar-year labels. <strong>{{ report.latest_display }}</strong> ended <strong>{{ report.latest_end }}</strong> and was filed {% if report.latest_filed %}{{ report.latest_filed }}{% else %}on the date shown in its source filing{% endif %}. This report is updated in place, not republished as a new article every quarter.</p>
+{% if report.reporting_update %}<p class="earnings-directory-source"><strong>Reporting update · {{ report.reporting_update.date }}:</strong> {{ report.reporting_update.text }} <a href="{{ report.reporting_update.source }}" rel="noopener">Company announcement ↗</a></p>{% endif %}
+{% for note in report.latest_notes %}<p class="earnings-directory-source">{{ note }}</p>{% endfor %}
 {% if not seo %}
 <div class="earnings-one-summary" aria-label="Latest reported results">
 {% for metric, label in [('revenue','Revenue'),('net_income','Net income'),('diluted_eps','Diluted EPS')] %}

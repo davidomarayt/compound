@@ -1,0 +1,125 @@
+{
+  "cik": 1281761,
+  "company": "Regions Financial Corporation",
+  "latest": {
+    "accession": "0001281761-26-000063",
+    "filed": "2026-10-16",
+    "form": "8-K",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.71,
+        "prior_year": 0.61,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 631000000.0,
+        "prior_year": 569000000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1973000000.0,
+        "prior_year": 1916000000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1281761/000128176126000063/rf-2026930xexhibitx992.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001281761-26-000037",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.62,
+          "prior_year": 0.51,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 559000000,
+          "prior_year": 490000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1873000000,
+          "prior_year": 1784000000,
+          "tag": "InterestIncomeExpenseNet + NoninterestIncome",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1281761/000128176126000037/rf-20260331.htm"
+    },
+    {
+      "accession": "0001281761-26-000055",
+      "filed": "2026-08-06",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.64,
+          "prior_year": 0.59,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 570000000,
+          "prior_year": 563000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1907000000,
+          "prior_year": 1905000000,
+          "tag": "InterestIncomeExpenseNet + NoninterestIncome",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1281761/000128176126000055/rf-20260630.htm"
+    },
+    {
+      "accession": "0001281761-26-000063",
+      "filed": "2026-10-16",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.71,
+          "prior_year": 0.61,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 631000000.0,
+          "prior_year": 569000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1973000000.0,
+          "prior_year": 1916000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1281761/000128176126000063/rf-2026930xexhibitx992.htm"
+    }
+  ],
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "ticker": "RF",
+  "updated": "2026-10-26"
+}

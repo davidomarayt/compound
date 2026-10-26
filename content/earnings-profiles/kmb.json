@@ -90,7 +90,12 @@
       "source": "https://www.sec.gov/Archives/edgar/data/55785/000162828026052348/kmb-20260630.htm"
     }
   ],
+  "reporting_update": {
+    "date": "2026-10-15",
+    "source": "https://www.sec.gov/Archives/edgar/data/55785/000110465926115960/tm2627599d1_ex99-1.htm",
+    "text": "The company released preliminary Q3 2026 figures on 15 October. Final third-quarter and nine-month results are scheduled for 5 November 2026; the completed results below have not been replaced by estimates."
+  },
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "KMB",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

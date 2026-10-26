@@ -2,33 +2,33 @@
   "cik": 46080,
   "company": "Hasbro",
   "latest": {
-    "accession": "0000046080-26-000050",
-    "filed": "2026-07-30",
-    "form": "10-Q",
-    "fp": "Q2",
+    "accession": "0000046080-26-000058",
+    "filed": "2026-10-20",
+    "form": "8-K",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.12,
-        "prior_year": -6.1,
-        "tag": "EarningsPerShareDiluted",
+        "current": 2.77,
+        "prior_year": 1.64,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 160900000,
-        "prior_year": -855800000,
-        "tag": "NetIncomeLoss",
+        "current": 394500000.0,
+        "prior_year": 233200000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1139600000,
-        "prior_year": 980800000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 1595300000.0,
+        "prior_year": 1387500000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-28",
-    "source": "https://www.sec.gov/Archives/edgar/data/46080/000004608026000050/has-20260628.htm"
+    "period_end": "2026-09-27",
+    "source": "https://www.sec.gov/Archives/edgar/data/46080/000004608026000058/exhibit991q32026.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-28",
       "source": "https://www.sec.gov/Archives/edgar/data/46080/000004608026000050/has-20260628.htm"
+    },
+    {
+      "accession": "0000046080-26-000058",
+      "filed": "2026-10-20",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.77,
+          "prior_year": 1.64,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 394500000.0,
+          "prior_year": 233200000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1595300000.0,
+          "prior_year": 1387500000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/46080/000004608026000058/exhibit991q32026.htm"
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "HAS",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }

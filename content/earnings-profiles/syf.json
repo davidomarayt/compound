@@ -1,0 +1,131 @@
+{
+  "cik": 1601712,
+  "company": "Synchrony Financial",
+  "latest": {
+    "accession": "0001601712-26-000043",
+    "filed": "2026-10-22",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.68,
+        "prior_year": 2.86,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 892000000.0,
+        "prior_year": 1077000000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 3818000000.0,
+        "prior_year": 3823000000.0,
+        "tag": "SEC reported; reviewed statement",
+        "unit": "USD"
+      }
+    },
+    "notes": [
+      "Revenue is calculated as net interest income plus other income, less retailer share arrangements, using the reported statement of earnings."
+    ],
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1601712/000160171226000043/syf-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001601712-26-000016",
+      "filed": "2026-04-23",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.27,
+          "prior_year": 1.89,
+          "tag": "us-gaap:EarningsPerShareDiluted; SEC inline XBRL reviewed",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 805000000.0,
+          "prior_year": 757000000.0,
+          "tag": "us-gaap:NetIncomeLoss; SEC inline XBRL reviewed",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3698000000.0,
+          "prior_year": 3718000000.0,
+          "tag": "us-gaap:InterestIncomeExpenseNet + us-gaap:NoninterestIncome; SEC inline XBRL reviewed minus syf:RetailerShareArrangements",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1601712/000160171226000016/syf-20260331.htm"
+    },
+    {
+      "accession": "0001601712-26-000033",
+      "filed": "2026-07-23",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.59,
+          "prior_year": 2.5,
+          "tag": "us-gaap:EarningsPerShareDiluted; SEC inline XBRL reviewed",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 885000000.0,
+          "prior_year": 967000000.0,
+          "tag": "us-gaap:NetIncomeLoss; SEC inline XBRL reviewed",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3718000000.0,
+          "prior_year": 3647000000.0,
+          "tag": "us-gaap:InterestIncomeExpenseNet + us-gaap:NoninterestIncome; SEC inline XBRL reviewed minus syf:RetailerShareArrangements",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1601712/000160171226000033/syf-20260630.htm"
+    },
+    {
+      "accession": "0001601712-26-000043",
+      "filed": "2026-10-22",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.68,
+          "prior_year": 2.86,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 892000000.0,
+          "prior_year": 1077000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3818000000.0,
+          "prior_year": 3823000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "notes": [
+        "Revenue is calculated as net interest income plus other income, less retailer share arrangements, using the reported statement of earnings."
+      ],
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1601712/000160171226000043/syf-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "ticker": "SYF",
+  "updated": "2026-10-26"
+}

@@ -25,6 +25,10 @@ LOG = logging.getLogger("compound.earnings")
 SEC_DATA = "https://data.sec.gov"
 SEC_TICKERS = "https://www.sec.gov/files/company_tickers.json"
 REVENUE_TAGS = (
+    # Prefer issuer-wide totals: contract revenue can exclude interest,
+    # leasing and other revenue (for example American Express and Bloom).
+    "RevenuesNetOfInterestExpense",
+    "RegulatedAndUnregulatedOperatingRevenue",
     "RevenueFromContractWithCustomerExcludingAssessedTax",
     "RevenueFromContractWithCustomerIncludingAssessedTax",
     "Revenues",
@@ -34,6 +38,15 @@ REVENUE_TAGS = (
 NET_TAG = "NetIncomeLoss"
 EPS_TAG = "EarningsPerShareDiluted"
 FORMS = {"10-Q", "10-K"}
+# These issuers report bank revenue as net interest income plus noninterest
+# income. Customer-contract revenue alone is only a component. Keep this
+# reviewed issuer allowlist narrow; e.g. Synchrony needs retailer deductions.
+BANK_REVENUE_SUM_CIKS = {759944, 49196, 73124, 91576, 1390777,
+                         831001, 35527, 1281761, 92230, 36270}
+# Reviewed totals that include revenue outside customer contracts. Do not
+# prefer Revenues universally: some issuers tag gross, rather than net sales.
+TOTAL_REVENUE_CIKS = {1138118, 1467858, 1506307, 91440, 1067701,
+                     11544, 1051470, 1664703, 927628}
 
 
 class SECClient:
@@ -165,12 +178,29 @@ def extract_metrics(facts: dict, filing: dict) -> dict | None:
     end, filed = _iso(filing["reportDate"]), _iso(filing["filingDate"])
     accn = filing["accessionNumber"]
     outputs = {}
+    revenue_tags = REVENUE_TAGS
+    if facts.get("cik") in TOTAL_REVENUE_CIKS:
+        revenue_tags = ("Revenues",) + tuple(t for t in REVENUE_TAGS if t != "Revenues")
+    bank_revenue = None
+    if facts.get("cik") in BANK_REVENUE_SUM_CIKS:
+        parts = [_pick_pair(_metric_candidates(facts, tag, "USD"), accn, end, filed, is_annual)
+                 for tag in ("InterestIncomeExpenseNet", "NoninterestIncome")]
+        if all(parts) and len({tuple((r["start"], r["end"]) for r in pair) for pair in parts}) == 1:
+            now, prior = parts[0]
+            bank_revenue = {"tag": "InterestIncomeExpenseNet + NoninterestIncome", "unit": "USD",
+                            "current": sum(p[0]["val"] for p in parts),
+                            "prior": sum(p[1]["val"] for p in parts),
+                            "start": now["start"], "end": now["end"],
+                            "fy": now.get("fy"), "fp": now.get("fp")}
     for name, options, unit in (
-        ("revenue", REVENUE_TAGS, "USD"),
+        ("revenue", revenue_tags, "USD"),
         ("net_income", (NET_TAG,), "USD"),
         ("diluted_eps", (EPS_TAG,), "USD/shares"),
     ):
         for tag in options:
+            if name == "revenue" and bank_revenue:
+                outputs[name] = bank_revenue
+                break
             pair = _pick_pair(_metric_candidates(facts, tag, unit), accn, end, filed, is_annual)
             if pair:
                 outputs[name] = {"tag": tag, "unit": unit,

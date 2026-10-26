@@ -2,33 +2,33 @@
   "cik": 87347,
   "company": "Schlumberger",
   "latest": {
-    "accession": "0001193125-26-322595",
-    "filed": "2026-07-29",
-    "form": "10-Q",
-    "fp": "Q2",
+    "accession": "0001193125-26-429435",
+    "filed": "2026-10-23",
+    "form": "8-K",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.52,
-        "prior_year": 0.74,
-        "tag": "EarningsPerShareDiluted",
+        "current": 0.49,
+        "prior_year": 0.5,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 786000000,
-        "prior_year": 1014000000,
-        "tag": "NetIncomeLoss",
+        "current": 735000000.0,
+        "prior_year": 739000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       },
       "revenue": {
-        "current": 8972000000,
-        "prior_year": 8546000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 9449000000.0,
+        "prior_year": 8928000000.0,
+        "tag": "SEC reported; reviewed statement",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/87347/000119312526322595/slb-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/87347/000119312526429435/d151271dex99.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/87347/000119312526322595/slb-20260630.htm"
+    },
+    {
+      "accession": "0001193125-26-429435",
+      "filed": "2026-10-23",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.49,
+          "prior_year": 0.5,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 735000000.0,
+          "prior_year": 739000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 9449000000.0,
+          "prior_year": 8928000000.0,
+          "tag": "SEC reported; reviewed statement",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/87347/000119312526429435/d151271dex99.htm"
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "SLB",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }
