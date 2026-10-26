@@ -2,33 +2,33 @@
   "cik": 874766,
   "company": "Hartford (The)",
   "latest": {
-    "accession": "0000874766-26-000060",
-    "filed": "2026-07-23",
+    "accession": "0000874766-26-000078",
+    "filed": "2026-10-26",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 4.68,
-        "prior_year": 3.44,
+        "current": 4.82,
+        "prior_year": 3.77,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1298000000,
-        "prior_year": 995000000,
+        "current": 1323000000,
+        "prior_year": 1080000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
         "current": 111000000,
-        "prior_year": 110000000,
+        "prior_year": 109000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/874766/000087476626000060/hig-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/874766/000087476626000078/hig-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/874766/000087476626000060/hig-20260630.htm"
+    },
+    {
+      "accession": "0000874766-26-000078",
+      "filed": "2026-10-26",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.82,
+          "prior_year": 3.77,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1323000000,
+          "prior_year": 1080000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 111000000,
+          "prior_year": 109000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/874766/000087476626000078/hig-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "HIG",
-  "updated": "2026-10-15"
+  "updated": "2026-10-26"
 }
