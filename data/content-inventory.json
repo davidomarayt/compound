@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-10-22",
+  "snapshot_date": "2026-10-26",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -196,6 +196,24 @@
           "stock-amzn",
           "amzn",
           "editorial"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "American Express Earnings: Spending Holds Up, but Read the Profit Adjustments",
+        "url": "/wealth/american-express-earnings-spending-adjusted-profit/",
+        "source": "content/wealth/american-express-earnings-spending-adjusted-profit.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "american-express-earnings-spending-adjusted-profit",
+        "date": "2026-10-26",
+        "reviewed": "2026-10-26",
+        "tags": [
+          "stocks",
+          "company-research",
+          "stock-axp",
+          "axp",
+          "earnings-analysis"
         ],
         "status": "published"
       },
@@ -1758,6 +1776,24 @@
         "status": "published"
       },
       {
+        "title": "Intuitive Surgical Earnings: Robot Growth Meets a $450m Legal Charge",
+        "url": "/wealth/intuitive-surgical-earnings-growth-legal-charge/",
+        "source": "content/wealth/intuitive-surgical-earnings-growth-legal-charge.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "intuitive-surgical-earnings-growth-legal-charge",
+        "date": "2026-10-26",
+        "reviewed": "2026-10-26",
+        "tags": [
+          "stocks",
+          "company-research",
+          "stock-isrg",
+          "isrg",
+          "earnings-analysis"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Investment Fees in Ireland: The Cost That Compounds Against You",
         "url": "/wealth/investment-fees-ireland/",
         "source": "content/wealth/investment-fees-ireland.md",
@@ -1999,6 +2035,24 @@
           "interest-rates",
           "household-money",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Lam Research Earnings: Strong Growth Meets an Even Higher Bar",
+        "url": "/wealth/lam-research-earnings-growth-expectations/",
+        "source": "content/wealth/lam-research-earnings-growth-expectations.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "lam-research-earnings-growth-expectations",
+        "date": "2026-10-26",
+        "reviewed": "2026-10-26",
+        "tags": [
+          "stocks",
+          "company-research",
+          "stock-lrcx",
+          "lrcx",
+          "earnings-analysis"
         ],
         "status": "published"
       },
@@ -3778,6 +3832,24 @@
           "pensions",
           "financial-planning",
           "retirement"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Western Digital Earnings: The AI Storage Boom Is Turning Into Cash",
+        "url": "/wealth/western-digital-earnings-ai-storage-cash-flow/",
+        "source": "content/wealth/western-digital-earnings-ai-storage-cash-flow.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "western-digital-earnings-ai-storage-cash-flow",
+        "date": "2026-10-26",
+        "reviewed": "2026-10-26",
+        "tags": [
+          "stocks",
+          "company-research",
+          "stock-wdc",
+          "wdc",
+          "earnings-analysis"
         ],
         "status": "published"
       },

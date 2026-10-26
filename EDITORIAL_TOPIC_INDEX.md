@@ -1,6 +1,6 @@
 # Compound.ie — Quick Editorial Topic Index
 
-Updated: 2026-10-22 | Automatically rebuilt from published source
+Updated: 2026-10-26 | Automatically rebuilt from published source
 
 **Before recommending a new article:** search this page by keyword, synonym,
 and reader question. An existing article or tool may already cover the idea.
@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 208 published articles and guides, 64 tools,
+**Included:** 212 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -23,6 +23,7 @@ For the complete register (including 510+ company profiles), open
 - [Amazon Stock Guide: AWS, Retail, Advertising and Cash Flow](https://compound.ie/wealth/amazon-aws-retail-economics-2026/) — **Wealth**
 - [Amazon's profit surge: separate AWS earnings from investment gains](https://compound.ie/wealth/amazon-aws-profit-investment-gains/) — **Wealth**
 - [Amazon’s €16 billion Germany plan needs a return test](https://compound.ie/wealth/amazon-germany-investment-returns/) — **Wealth**
+- [American Express Earnings: Spending Holds Up, but Read the Profit Adjustments](https://compound.ie/wealth/american-express-earnings-spending-adjusted-profit/) — **Wealth**
 - [Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price](https://compound.ie/wealth/anthropic-loss-ipo-valuation/) — **Wealth**
 - [Apple Stock Guide: iPhone, Services, Buybacks and Valuation](https://compound.ie/wealth/apple-iphone-services-profit-2026/) — **Wealth**
 - [Apple's earnings growth: what remains after the tariff-refund boost?](https://compound.ie/wealth/apple-earnings-tariff-refunds-services/) — **Wealth**
@@ -101,6 +102,7 @@ For the complete register (including 510+ company profiles), open
 - [Income Protection Insurance in Ireland: The Complete 2026 Guide](https://compound.ie/wealth/income-protection-insurance-ireland/) — **Wealth**
 - [Inheritance Tax in Ireland: How Much Can You Inherit Tax-Free?](https://compound.ie/wealth/inheritance-tax-ireland/) — **Wealth**
 - [Insulation Grants in Ireland: Costs, Grants & What to Upgrade First](https://compound.ie/wealth/insulation-grants-ireland/) — **Wealth**
+- [Intuitive Surgical Earnings: Robot Growth Meets a $450m Legal Charge](https://compound.ie/wealth/intuitive-surgical-earnings-growth-legal-charge/) — **Wealth**
 - [Investment Fees in Ireland: The Cost That Compounds Against You](https://compound.ie/wealth/investment-fees-ireland/) — **Wealth**
 - [Investment Tax in Ireland: CGT, ETFs, Dividends and Deemed Disposal](https://compound.ie/wealth/investment-tax-ireland/) — **Wealth**
 - [Ireland has a new five-year sepsis strategy — here are the warning signs the HSE wants people to know](https://compound.ie/news/ireland-sepsis-strategy-warning-signs-2026/) — **Health**
@@ -113,6 +115,7 @@ For the complete register (including 510+ company profiles), open
 - [Irish housing market is cooling — but buyers are not suddenly getting cheap homes](https://compound.ie/news/ireland-house-prices-cooling-daft-dublin-2026/) — **Wealth**
 - [Is it financially worth returning to work after having children in Ireland?](https://compound.ie/wealth/returning-to-work-childcare-costs-ireland/) — **Wealth**
 - [Is switching your mortgage worth it in Ireland? A worked €250,000 example](https://compound.ie/wealth/is-switching-your-mortgage-worth-it-ireland/) — **Wealth**
+- [Lam Research Earnings: Strong Growth Meets an Even Higher Bar](https://compound.ie/wealth/lam-research-earnings-growth-expectations/) — **Wealth**
 - [Life for a 100-Year Life: Connection, Purpose and Ordinary Days](https://compound.ie/life/happiness-for-a-100-year-life/) — **Life**
 - [Life Insurance Ireland 2026: Costs, Cover, Policy Types and How Much You Need](https://compound.ie/wealth/life-insurance-ireland/) — **Wealth**
 - [Lilly’s METiS deal: read beyond the $1.1 billion headline](https://compound.ie/wealth/eli-lilly-metis-drug-delivery-deal/) — **Wealth**
@@ -203,6 +206,7 @@ For the complete register (including 510+ company profiles), open
 - [Two Irish couples earn €100,000. Why can their take-home pay differ by €9,556?](https://compound.ie/news/one-income-vs-two-incomes-ireland-2027/) — **Wealth**
 - [Vitamin D in winter: who in Ireland should take a supplement](https://compound.ie/health/vitamin-d-ireland-winter-who-should-take-it/) — **Health**
 - [Wealth for a 100-Year Life: Money, Housing and Choices in Ireland](https://compound.ie/wealth/wealth-for-a-100-year-life/) — **Wealth**
+- [Western Digital Earnings: The AI Storage Boom Is Turning Into Cash](https://compound.ie/wealth/western-digital-earnings-ai-storage-cash-flow/) — **Wealth**
 - [What Happens If You Die Without a Will in Ireland?](https://compound.ie/wealth/what-happens-if-you-die-without-a-will-ireland/) — **Wealth**
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/) — **Health**
 - [What Is a REIT? How Property Investing Can Generate Income and Growth](https://compound.ie/wealth/what-is-a-reit/) — **Wealth**

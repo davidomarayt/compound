@@ -1,6 +1,6 @@
 # Compound.ie — Master Content and Title Register
 
-Snapshot: 2026-10-22 | Source: publishing branch
+Snapshot: 2026-10-26 | Source: publishing branch
 
 PURPOSE: Check this register before creating a new article, guide or calculator. Search by exact title, keyword, synonym and reader intent. If the topic is already answered, update its canonical page instead of publishing an SEO duplicate.
 
@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 208
+- Published editorial articles and guides: 212
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 154
+## Wealth articles and guides — 158
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
@@ -58,6 +58,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Amazon Stock Guide: AWS, Retail, Advertising and Cash Flow](https://compound.ie/wealth/amazon-aws-retail-economics-2026/)
 - [Amazon's profit surge: separate AWS earnings from investment gains](https://compound.ie/wealth/amazon-aws-profit-investment-gains/)
 - [Amazon’s €16 billion Germany plan needs a return test](https://compound.ie/wealth/amazon-germany-investment-returns/)
+- [American Express Earnings: Spending Holds Up, but Read the Profit Adjustments](https://compound.ie/wealth/american-express-earnings-spending-adjusted-profit/)
 - [Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price](https://compound.ie/wealth/anthropic-loss-ipo-valuation/)
 - [Apple Stock Guide: iPhone, Services, Buybacks and Valuation](https://compound.ie/wealth/apple-iphone-services-profit-2026/)
 - [Apple's earnings growth: what remains after the tariff-refund boost?](https://compound.ie/wealth/apple-earnings-tariff-refunds-services/)
@@ -112,6 +113,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Income Protection Insurance in Ireland: The Complete 2026 Guide](https://compound.ie/wealth/income-protection-insurance-ireland/)
 - [Inheritance Tax in Ireland: How Much Can You Inherit Tax-Free?](https://compound.ie/wealth/inheritance-tax-ireland/)
 - [Insulation Grants in Ireland: Costs, Grants & What to Upgrade First](https://compound.ie/wealth/insulation-grants-ireland/)
+- [Intuitive Surgical Earnings: Robot Growth Meets a $450m Legal Charge](https://compound.ie/wealth/intuitive-surgical-earnings-growth-legal-charge/)
 - [Investment Fees in Ireland: The Cost That Compounds Against You](https://compound.ie/wealth/investment-fees-ireland/)
 - [Investment Tax in Ireland: CGT, ETFs, Dividends and Deemed Disposal](https://compound.ie/wealth/investment-tax-ireland/)
 - [Ireland inflation jumps to 3.9% as energy prices rise 15.3%](https://compound.ie/news/ireland-inflation-september-2026-energy-prices/)
@@ -121,6 +123,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Irish housing market is cooling — but buyers are not suddenly getting cheap homes](https://compound.ie/news/ireland-house-prices-cooling-daft-dublin-2026/)
 - [Is it financially worth returning to work after having children in Ireland?](https://compound.ie/wealth/returning-to-work-childcare-costs-ireland/)
 - [Is switching your mortgage worth it in Ireland? A worked €250,000 example](https://compound.ie/wealth/is-switching-your-mortgage-worth-it-ireland/)
+- [Lam Research Earnings: Strong Growth Meets an Even Higher Bar](https://compound.ie/wealth/lam-research-earnings-growth-expectations/)
 - [Life Insurance Ireland 2026: Costs, Cover, Policy Types and How Much You Need](https://compound.ie/wealth/life-insurance-ireland/)
 - [Lilly’s METiS deal: read beyond the $1.1 billion headline](https://compound.ie/wealth/eli-lilly-metis-drug-delivery-deal/)
 - [Local Property Tax Ireland 2026–2030: Bands, Rates & How Much You’ll Pay](https://compound.ie/wealth/local-property-tax-ireland/)
@@ -194,6 +197,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Thermo Fisher Earnings: Stronger Growth, Better Margins—and a Cash-Flow Test](https://compound.ie/wealth/thermo-fisher-earnings-organic-growth-cash-flow/)
 - [Two Irish couples earn €100,000. Why can their take-home pay differ by €9,556?](https://compound.ie/news/one-income-vs-two-incomes-ireland-2027/)
 - [Wealth for a 100-Year Life: Money, Housing and Choices in Ireland](https://compound.ie/wealth/wealth-for-a-100-year-life/)
+- [Western Digital Earnings: The AI Storage Boom Is Turning Into Cash](https://compound.ie/wealth/western-digital-earnings-ai-storage-cash-flow/)
 - [What Happens If You Die Without a Will in Ireland?](https://compound.ie/wealth/what-happens-if-you-die-without-a-will-ireland/)
 - [What Is a REIT? How Property Investing Can Generate Income and Growth](https://compound.ie/wealth/what-is-a-reit/)
 - [What would an extra €100 a month do to your mortgage?](https://compound.ie/wealth/mortgage-overpayments-100-euro-ireland/)
