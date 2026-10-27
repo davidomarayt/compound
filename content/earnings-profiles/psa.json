@@ -2,33 +2,33 @@
   "cik": 1393311,
   "company": "Public Storage",
   "latest": {
-    "accession": "0001628280-26-050612",
-    "filed": "2026-07-29",
+    "accession": "0001628280-26-067286",
+    "filed": "2026-10-26",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.55,
-        "prior_year": 1.76,
+        "current": 1.69,
+        "prior_year": 2.62,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 499960000,
-        "prior_year": 358419000,
+        "current": 366926000,
+        "prior_year": 511063000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1232881000,
-        "prior_year": 1201094000,
+        "current": 1366190000,
+        "prior_year": 1224043000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1393311/000162828026050612/psa-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1393311/000162828026067286/psa-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1393311/000162828026050612/psa-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-067286",
+      "filed": "2026-10-26",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.69,
+          "prior_year": 2.62,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 366926000,
+          "prior_year": 511063000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1366190000,
+          "prior_year": 1224043000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1393311/000162828026067286/psa-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "PSA",
-  "updated": "2026-10-15"
+  "updated": "2026-10-27"
 }
