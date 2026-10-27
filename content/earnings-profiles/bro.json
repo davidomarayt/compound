@@ -2,33 +2,33 @@
   "cik": 79282,
   "company": "Brown & Brown",
   "latest": {
-    "accession": "0001193125-26-318251",
-    "filed": "2026-07-27",
+    "accession": "0001193125-26-432146",
+    "filed": "2026-10-26",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.84,
-        "prior_year": 0.78,
+        "current": 0.67,
+        "prior_year": 0.68,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 288000000,
-        "prior_year": 231000000,
+        "current": 240000000,
+        "prior_year": 227000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1676000000,
-        "prior_year": 1285000000,
+        "current": 1725000000,
+        "prior_year": 1606000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/79282/000119312526318251/bro-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/79282/000119312526432146/bro-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/79282/000119312526318251/bro-20260630.htm"
+    },
+    {
+      "accession": "0001193125-26-432146",
+      "filed": "2026-10-26",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.67,
+          "prior_year": 0.68,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 240000000,
+          "prior_year": 227000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1725000000,
+          "prior_year": 1606000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/79282/000119312526432146/bro-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "BRO",
-  "updated": "2026-10-15"
+  "updated": "2026-10-27"
 }

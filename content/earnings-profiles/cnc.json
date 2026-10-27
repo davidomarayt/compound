@@ -2,33 +2,33 @@
   "cik": 1071739,
   "company": "Centene Corporation",
   "latest": {
-    "accession": "0001071739-26-000153",
-    "filed": "2026-07-28",
+    "accession": "0001071739-26-000192",
+    "filed": "2026-10-27",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.19,
-        "prior_year": -0.51,
+        "current": -0.14,
+        "prior_year": -13.5,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1091000000,
-        "prior_year": -253000000,
+        "current": -71000000,
+        "prior_year": -6631000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 44375000000,
-        "prior_year": 42467000000,
+        "current": 45105000000,
+        "prior_year": 44898000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1071739/000107173926000153/cnc-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1071739/000107173926000192/cnc-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1071739/000107173926000153/cnc-20260630.htm"
+    },
+    {
+      "accession": "0001071739-26-000192",
+      "filed": "2026-10-27",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.14,
+          "prior_year": -13.5,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -71000000,
+          "prior_year": -6631000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 45105000000,
+          "prior_year": 44898000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1071739/000107173926000192/cnc-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CNC",
-  "updated": "2026-10-15"
+  "updated": "2026-10-27"
 }
