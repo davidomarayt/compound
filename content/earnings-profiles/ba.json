@@ -2,33 +2,33 @@
   "cik": 12927,
   "company": "Boeing",
   "latest": {
-    "accession": "0001628280-26-050038",
-    "filed": "2026-07-28",
+    "accession": "0001628280-26-067508",
+    "filed": "2026-10-27",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": -0.67,
-        "prior_year": -0.92,
+        "current": -0.26,
+        "prior_year": -7.14,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": -444000000,
-        "prior_year": -611000000,
+        "current": -116000000,
+        "prior_year": -5337000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 24560000000,
-        "prior_year": 22749000000,
+        "current": 24188000000,
+        "prior_year": 23270000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026050038/ba-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026050038/ba-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-067508",
+      "filed": "2026-10-27",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.26,
+          "prior_year": -7.14,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -116000000,
+          "prior_year": -5337000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 24188000000,
+          "prior_year": 23270000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "BA",
-  "updated": "2026-10-15"
+  "updated": "2026-10-27"
 }
