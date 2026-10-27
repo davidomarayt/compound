@@ -1,6 +1,6 @@
 # Compound.ie — Master Content and Title Register
 
-Snapshot: 2026-10-26 | Source: publishing branch
+Snapshot: 2026-10-27 | Source: publishing branch
 
 PURPOSE: Check this register before creating a new article, guide or calculator. Search by exact title, keyword, synonym and reader intent. If the topic is already answered, update its canonical page instead of publishing an SEO duplicate.
 
@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 212
+- Published editorial articles and guides: 213
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 158
+## Wealth articles and guides — 159
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
@@ -172,6 +172,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Rent Tax Credit in Ireland: Who Can Claim It and How](https://compound.ie/wealth/rent-tax-credit-ireland-who-can-claim/)
 - [Rent-a-Room Relief Could Rise to €20,000 in Budget 2027](https://compound.ie/news/rent-a-room-relief-20000-budget-2027/)
 - [Retention Planning Permission Ireland: Costs, Risks and What Happens If It Is Refused](https://compound.ie/wealth/retention-planning-permission-ireland/)
+- [Robinhood Hits Record Revenue as Prediction Markets Overtake Crypto—but Earnings Fall](https://compound.ie/wealth/robinhood-earnings-prediction-markets-profit/)
 - [RSUs & Share Options Tax in Ireland: How the Tax Works](https://compound.ie/wealth/rsu-share-options-tax-ireland/)
 - [Rural House Planning Permission Ireland: One-Off Houses & Local Need](https://compound.ie/wealth/rural-one-off-house-planning-ireland/)
 - [Sale Agreed in Ireland: Survey, Valuation and Property Checks](https://compound.ie/wealth/sale-agreed-survey-valuation-ireland/)
@@ -845,7 +846,7 @@ These are generated directory profiles, not individually written evergreen artic
 - [Regeneron Pharmaceuticals (REGN) Stock](https://compound.ie/stocks/regn/)
 - [Regions Financial Corporation (RF) Stock](https://compound.ie/stocks/rf/)
 - [Republic Services (RSG) Stock](https://compound.ie/stocks/rsg/)
-- [ResMed| (RMD) Stock](https://compound.ie/stocks/rmd/)
+- [ResMed (RMD) Stock](https://compound.ie/stocks/rmd/)
 - [Revvity (RVTY) Stock](https://compound.ie/stocks/rvty/)
 - [Robinhood Markets (HOOD) Stock](https://compound.ie/stocks/hood/)
 - [Rockwell Automation (ROK) Stock](https://compound.ie/stocks/rok/)
@@ -865,7 +866,7 @@ These are generated directory profiles, not individually written evergreen artic
 - [ServiceNow (NOW) Stock](https://compound.ie/stocks/now/)
 - [Sherwin-Williams (SHW) Stock](https://compound.ie/stocks/shw/)
 - [Simon Property Group (SPG) Stock](https://compound.ie/stocks/spg/)
-- [Skydance Corporation (SKYD) Stock](https://compound.ie/stocks/skyd/)
+- [Skydance (SKYD) Stock](https://compound.ie/stocks/skyd/)
 - [Skyworks Solutions (SWKS) Stock](https://compound.ie/stocks/swks/)
 - [Smurfit Westrock (SW) Stock](https://compound.ie/stocks/sw/)
 - [Snap-on (SNA) Stock](https://compound.ie/stocks/sna/)

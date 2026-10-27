@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-10-26",
+  "snapshot_date": "2026-10-27",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -3240,6 +3240,25 @@
           "unauthorised-development",
           "property",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Robinhood Hits Record Revenue as Prediction Markets Overtake Crypto—but Earnings Fall",
+        "url": "/wealth/robinhood-earnings-prediction-markets-profit/",
+        "source": "content/wealth/robinhood-earnings-prediction-markets-profit.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "robinhood-earnings-prediction-markets-profit",
+        "date": "2026-10-27",
+        "reviewed": "2026-10-27",
+        "tags": [
+          "stocks",
+          "company-research",
+          "stock-hood",
+          "hood",
+          "robinhood",
+          "earnings-analysis"
         ],
         "status": "published"
       },
@@ -8679,7 +8698,7 @@
         "origin": "S&P reference list"
       },
       {
-        "title": "ResMed| (RMD) Stock",
+        "title": "ResMed (RMD) Stock",
         "url": "/stocks/rmd/",
         "source": "content/earnings-sp500.json",
         "kind": "Public-company profile",
@@ -8839,7 +8858,7 @@
         "origin": "S&P reference list"
       },
       {
-        "title": "Skydance Corporation (SKYD) Stock",
+        "title": "Skydance (SKYD) Stock",
         "url": "/stocks/skyd/",
         "source": "content/earnings-sp500.json",
         "kind": "Public-company profile",

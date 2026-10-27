@@ -1,6 +1,6 @@
 # Compound.ie — Quick Editorial Topic Index
 
-Updated: 2026-10-26 | Automatically rebuilt from published source
+Updated: 2026-10-27 | Automatically rebuilt from published source
 
 **Before recommending a new article:** search this page by keyword, synonym,
 and reader question. An existing article or tool may already cover the idea.
@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 212 published articles and guides, 64 tools,
+**Included:** 213 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -176,6 +176,7 @@ For the complete register (including 510+ company profiles), open
 - [Rent-a-Room Relief Could Rise to €20,000 in Budget 2027](https://compound.ie/news/rent-a-room-relief-20000-budget-2027/) — **Wealth**
 - [Retatrutide Ireland: what is it, can you get it, and how does it compare with Mounjaro, Wegovy and Ozempic?](https://compound.ie/health/retatrutide-ireland/) — **Health**
 - [Retention Planning Permission Ireland: Costs, Risks and What Happens If It Is Refused](https://compound.ie/wealth/retention-planning-permission-ireland/) — **Wealth**
+- [Robinhood Hits Record Revenue as Prediction Markets Overtake Crypto—but Earnings Fall](https://compound.ie/wealth/robinhood-earnings-prediction-markets-profit/) — **Wealth**
 - [RSUs & Share Options Tax in Ireland: How the Tax Works](https://compound.ie/wealth/rsu-share-options-tax-ireland/) — **Wealth**
 - [Rural House Planning Permission Ireland: One-Off Houses & Local Need](https://compound.ie/wealth/rural-one-off-house-planning-ireland/) — **Wealth**
 - [Sale Agreed in Ireland: Survey, Valuation and Property Checks](https://compound.ie/wealth/sale-agreed-survey-valuation-ireland/) — **Wealth**
