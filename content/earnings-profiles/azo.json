@@ -2,33 +2,33 @@
   "cik": 866787,
   "company": "AutoZone",
   "latest": {
-    "accession": "0001104659-26-073525",
-    "filed": "2026-06-12",
-    "form": "10-Q",
-    "fp": "Q3",
+    "accession": "0001104659-26-118791",
+    "filed": "2026-10-26",
+    "form": "10-K",
+    "fp": "FY",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 38.07,
-        "prior_year": 35.36,
+        "current": 152.55,
+        "prior_year": 144.87,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 641491000,
-        "prior_year": 608440000,
+        "current": 2572777000,
+        "prior_year": 2498247000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4840950000,
-        "prior_year": 4464339000,
+        "current": 20338555000,
+        "prior_year": 18938717000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-05-09",
-    "source": "https://www.sec.gov/Archives/edgar/data/866787/000110465926073525/azo-20260509x10q.htm"
+    "period_end": "2026-08-29",
+    "source": "https://www.sec.gov/Archives/edgar/data/866787/000110465926118791/azo-20260829x10k.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-05-09",
       "source": "https://www.sec.gov/Archives/edgar/data/866787/000110465926073525/azo-20260509x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-118791",
+      "filed": "2026-10-26",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 152.55,
+          "prior_year": 144.87,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2572777000,
+          "prior_year": 2498247000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 20338555000,
+          "prior_year": 18938717000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-08-29",
+      "source": "https://www.sec.gov/Archives/edgar/data/866787/000110465926118791/azo-20260829x10k.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "AZO",
-  "updated": "2026-10-15"
+  "updated": "2026-10-27"
 }
