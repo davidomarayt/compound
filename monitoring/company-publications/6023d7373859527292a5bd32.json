@@ -1,0 +1,85 @@
+{
+  "story_fingerprint": "6023d7373859527292a5bd32",
+  "company": "TSLA",
+  "date": "2026-10-28",
+  "status": "held",
+  "reason": "Existing energy economics article covers this search intent; correction/addition requires review.",
+  "article_path": "content/wealth/tesla-energy-storage-margins.md",
+  "queue_id": "10bcc2a4eacbc2e8e014fd71",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+    "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments"
+  ],
+  "claim_checks": [
+    {
+      "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+      "locations": [
+        "Note 14",
+        "MD&A energy gross margin",
+        "Note 11 tariff refunds"
+      ],
+      "quoted_evidence": "recognized IEEPA tariff refunds of $526 million",
+      "result": "Added numbers checked in filing; revenue/customer refunds are distinct from cost relief."
+    }
+  ],
+  "arithmetic": {
+    "gross_profit_change_percent": -11.09040074557316,
+    "gross_margin_percent": 33.113502256161055
+  },
+  "duplicate_checks": [
+    "Editorial topic index",
+    "Content inventory including JSON",
+    "Actual Tesla energy and earnings articles",
+    "Live canonical page",
+    "Recent/open PRs: Netflix draft excluded; no Tesla update found"
+  ],
+  "gates": {
+    "new_article": "held_duplicate_intent",
+    "existing_article": "draft_only",
+    "visual_qa": "not_completed",
+    "full_build": "Failed: Missing local cover image for robinhood-earnings-prediction-markets-profit",
+    "offline_tests": "38 passed; numeric recomputation passed"
+  },
+  "image": "Existing credited archival Supercharger photograph unchanged; not represented as battery equipment.",
+  "scope": "Only update section and stale preview metadata revised; original research date and URL retained.",
+  "identity": {
+    "issuer": "Tesla, Inc.",
+    "CIK": "0001318605",
+    "accession": "0001628280-26-066775",
+    "form": "10-Q",
+    "period_end": "2026-09-30",
+    "fiscal_period": "Q3 2026",
+    "units": "USD millions unless stated; reported GAAP segment measures"
+  },
+  "evidence_table": [
+    {
+      "claim": "Revenue 2881; cost 1927; gross profit 954 versus 1073",
+      "source_index": 0,
+      "location": "Note 14, three months ended September 30, 2026 and 2025",
+      "check": "2881-1927=954; 3415-2342=1073"
+    },
+    {
+      "claim": "Margins 33.1% versus 31.4%; profit change -11.1%",
+      "source_index": 0,
+      "location": "MD&A cost of revenues and gross margin",
+      "check": "954/2881; 1073/3415; 954/1073-1"
+    },
+    {
+      "claim": "Energy cost relief 526; customer refunds separately reduce revenue",
+      "source_index": 0,
+      "location": "Note 11; MD&A energy revenue",
+      "check": "Distinct accounting effects; no adjusted margin invented"
+    },
+    {
+      "claim": "Deployment release is operating context, not segment profit evidence",
+      "source_index": 1,
+      "location": "October 2 release; Q3 2026",
+      "check": "Official issuer release inspected"
+    }
+  ],
+  "fact_check_pass": {
+    "date": "2026-10-28",
+    "method": "Separate reread of added material claims against filing tables, Note 11 and MD&A; arithmetic recomputed",
+    "unresolved_new_claims": []
+  }
+}
