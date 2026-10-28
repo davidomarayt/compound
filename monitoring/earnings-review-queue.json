@@ -306,6 +306,8 @@
     },
     "10bcc2a4eacbc2e8e014fd71": {
       "company": "tsla",
+      "decided": "2026-10-28",
+      "decision_note": "Verified Q3 energy results and distinct tariff effects against the SEC filing and official IR release. Canonical update only; fingerprint 6023d7373859527292a5bd32. Build held by unrelated missing Robinhood cover.",
       "evidence": {
         "article_reviewed": "2026-10-18",
         "article_sources": [
@@ -362,9 +364,10 @@
         "content/wealth/tesla-energy-storage-margins.md",
         "content/earnings-profiles/tsla.json"
       ],
+      "pull_request": "https://github.com/davidomarayt/compound/pull/60",
       "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
       "severity": "medium",
-      "status": "pending"
+      "status": "drafted"
     },
     "12374d854994476420edb231": {
       "company": "hon",

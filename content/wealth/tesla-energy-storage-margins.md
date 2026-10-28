@@ -9,10 +9,8 @@ publication_status: published
 date: '2026-10-18'
 reviewed: '2026-10-18'
 editorial_status: Source-checked manual article; publisher approved publication on 2026-10-18
-summary: Tesla deployed 13.7 GWh of storage in Q3. Before its October results, examine why deployment growth alone cannot
-  establish energy revenue or profitability.
-meta_description: Tesla deployed 13.7 GWh of storage in Q3. Before its October results, examine why deployment growth alone
-  cannot establish energy revenue or profitability.
+summary: Tesla’s reported Q3 energy results show why deployment growth, gross margin and gross profit need to be assessed separately.
+meta_description: "Tesla energy results explained: why battery deployments, reported gross margin, tariff refunds and gross profit tell different stories."
 tags:
 - wealth
 - stocks
@@ -26,6 +24,8 @@ image_credit: Trac Vu / Unsplash (Unsplash Licence)
 image_source: https://unsplash.com/photos/a-tesla-charging-station-on-the-side-of-the-road-8tRfaMGLgbQ
 require_pinned_hero: true
 sources:
+- title: September-quarter SEC filing, segment results and tariff refunds
+  url: https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm
 - title: third-quarter production and deployment announcement
   url: https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments
 - title: June-quarter SEC filing
@@ -37,6 +37,16 @@ sources:
 *Archival cover: Trac Vu / Unsplash; published on Unsplash in 2021. [Original photograph](https://unsplash.com/photos/a-tesla-charging-station-on-the-side-of-the-road-8tRfaMGLgbQ) · [Unsplash Licence](https://unsplash.com/license). Capture date not independently verified. The image shows Superchargers, not battery-storage equipment.*
 
 *Research date: 18 October 2026. Reported figures are historical; illustrative calculations are identified below.*
+
+## Q3 results update — 28 October 2026
+
+Tesla’s [September-quarter filing](https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm) now reports energy-generation-and-storage revenue of **$2.881 billion**, gross profit of **$954 million** and gross margin of **33.1%**. A year earlier, gross profit was $1.073 billion and margin was 31.4%: the margin rose while gross profit fell approximately **11.1%**.
+
+The filing also records **$526 million of tariff refunds reducing energy cost of revenues**. Separately, refunds to certain Megapack customers contributed to lower revenue. These effects should not be conflated or treated as recurring operating improvement. The reported margin is not a Megapack-only margin or an energy cash-flow measure.
+
+The original pre-results discussion below is retained as dated context; its hypothetical example is not a reconstruction of these Q3 results.
+
+## Original analysis — 18 October 2026
 
 Tesla's energy-storage business deserves its own investment analysis. It should not be treated as an automatic offset to every risk in the car business, or judged solely by how many gigawatt-hours the company deploys.
 
@@ -84,7 +94,7 @@ The opposing case is that competition or changes in product mix reduce the econo
 
 Leadership and execution also deserve attention. [The Wall Street Journal reported an energy-leadership departure on 16 October](https://www.wsj.com/business/autos/teslas-energy-boss-leaves-the-company-a90d8f2b). Personnel reporting is a reason to watch execution; it is not evidence that future margins must worsen.
 
-## What to check on 21 October
+## The original checklist for 21 October
 
 Read energy revenue and segment gross margin alongside deployments. Look for the explanation of pricing, mix and warranty movements, and keep those observations separate from the automotive and autonomy stories. Compare company cash generation with investment requirements without inventing an energy-only cash-flow figure.
 
