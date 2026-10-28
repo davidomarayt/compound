@@ -2,33 +2,33 @@
   "cik": 1478242,
   "company": "IQVIA",
   "latest": {
-    "accession": "0001628280-26-030675",
-    "filed": "2026-05-05",
+    "accession": "0001628280-26-067646",
+    "filed": "2026-10-27",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.61,
-        "prior_year": 1.4,
+        "current": 2.1,
+        "prior_year": 1.93,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 274000000,
-        "prior_year": 249000000,
+        "current": 350000000,
+        "prior_year": 331000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4151000000,
-        "prior_year": 3829000000,
+        "current": 4428000000,
+        "prior_year": 4100000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1478242/000162828026030675/iqv-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1478242/000162828026067646/iqv-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1478242/000162828026030675/iqv-20260331.htm"
+    },
+    {
+      "accession": "0001628280-26-050211",
+      "filed": "2026-07-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.53,
+          "prior_year": 1.54,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 256000000,
+          "prior_year": 266000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4368000000,
+          "prior_year": 4017000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1478242/000162828026050211/iqv-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-067646",
+      "filed": "2026-10-27",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.1,
+          "prior_year": 1.93,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 350000000,
+          "prior_year": 331000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4428000000,
+          "prior_year": 4100000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1478242/000162828026067646/iqv-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "IQV",
-  "updated": "2026-10-15"
+  "updated": "2026-10-28"
 }
