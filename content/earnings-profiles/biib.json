@@ -2,33 +2,33 @@
   "cik": 875045,
   "company": "Biogen",
   "latest": {
-    "accession": "0000875045-26-000045",
-    "filed": "2026-04-29",
+    "accession": "0000875045-26-000096",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.15,
-        "prior_year": 1.64,
+        "current": -0.14,
+        "prior_year": 3.17,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 319500000,
-        "prior_year": 240500000,
+        "current": -20600000,
+        "prior_year": 466500000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2477800000,
-        "prior_year": 2431000000,
+        "current": 2804100000,
+        "prior_year": 2534700000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/875045/000087504526000045/biib-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/875045/000087504526000096/biib-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/875045/000087504526000045/biib-20260331.htm"
+    },
+    {
+      "accession": "0000875045-26-000075",
+      "filed": "2026-07-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.66,
+          "prior_year": 4.33,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 97500000,
+          "prior_year": 634800000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2736000000,
+          "prior_year": 2645500000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/875045/000087504526000075/biib-20260630.htm"
+    },
+    {
+      "accession": "0000875045-26-000096",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.14,
+          "prior_year": 3.17,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -20600000,
+          "prior_year": 466500000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2804100000,
+          "prior_year": 2534700000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/875045/000087504526000096/biib-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "BIIB",
-  "updated": "2026-10-15"
+  "updated": "2026-10-28"
 }

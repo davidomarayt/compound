@@ -2,33 +2,33 @@
   "cik": 1035002,
   "company": "Valero Energy",
   "latest": {
-    "accession": "0001628280-26-066795",
-    "filed": "2026-10-22",
-    "form": "8-K",
+    "accession": "0001628280-26-067679",
+    "filed": "2026-10-28",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 23.89,
         "prior_year": 3.53,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 6828000000.0,
-        "prior_year": 1095000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 6828000000,
+        "prior_year": 1095000000,
+        "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 46098000000.0,
-        "prior_year": 32168000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 46098000000,
+        "prior_year": 32168000000,
+        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
         "unit": "USD"
       }
     },
     "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1035002/000162828026066795/a9302026exh9901earningsrel.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/1035002/000162828026067679/vlo-20260930.htm"
   },
   "periods": [
     {
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/1035002/000162828026050937/vlo-20260630.htm"
     },
     {
-      "accession": "0001628280-26-066795",
-      "filed": "2026-10-22",
-      "form": "8-K",
+      "accession": "0001628280-26-067679",
+      "filed": "2026-10-28",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 23.89,
           "prior_year": 3.53,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
-          "current": 6828000000.0,
-          "prior_year": 1095000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 6828000000,
+          "prior_year": 1095000000,
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
-          "current": 46098000000.0,
-          "prior_year": 32168000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 46098000000,
+          "prior_year": 32168000000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
           "unit": "USD"
         }
       },
       "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/1035002/000162828026066795/a9302026exh9901earningsrel.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/1035002/000162828026067679/vlo-20260930.htm"
     }
   ],
-  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "VLO",
-  "updated": "2026-10-26"
+  "updated": "2026-10-28"
 }

@@ -2,38 +2,33 @@
   "cik": 1783879,
   "company": "Robinhood Markets",
   "latest": {
-    "accession": "0001783879-26-000164",
-    "filed": "2026-10-27",
-    "form": "8-K",
+    "accession": "0001783879-26-000167",
+    "filed": "2026-10-28",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
-    "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000164/q32026robinhoodexhibit991.htm",
     "metrics": {
-      "revenue": {
-        "current": 1424000000,
-        "prior_year": 1274000000,
-        "tag": "SEC reported total net revenues",
-        "unit": "USD"
-      },
-      "net_income": {
-        "current": 468000000,
-        "prior_year": 556000000,
-        "tag": "NetIncomeLoss; net income attributable to Robinhood",
-        "unit": "USD"
-      },
       "diluted_eps": {
         "current": 0.51,
         "prior_year": 0.61,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 468000000,
+        "prior_year": 556000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1424000000,
+        "prior_year": 1274000000,
+        "tag": "Revenues",
+        "unit": "USD"
       }
     },
-    "notes": [
-      "Q3 results come from the earnings release furnished as Exhibit 99.1 to the 27 October 2026 Form 8-K, not a Q3 Form 10-Q.",
-      "Net income throughout this quarterly comparison is profit attributable to Robinhood: Q3 $468m. Total consolidated Q3 net income was $476m, including $8m attributable to non-controlling interests.",
-      "Q3 GAAP diluted EPS was $0.51; company-adjusted EPS was $0.60. Adjusted EPS is not used in the GAAP comparison."
-    ]
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000167/hood-20260930.htm"
   },
   "periods": [
     {
@@ -52,7 +47,7 @@
         "net_income": {
           "current": 350000000,
           "prior_year": 336000000,
-          "tag": "NetIncomeLoss; net income attributable to Robinhood",
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
@@ -81,7 +76,7 @@
         "net_income": {
           "current": 561000000,
           "prior_year": 386000000,
-          "tag": "NetIncomeLoss; net income attributable to Robinhood",
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
@@ -95,41 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000114/hood-20260630.htm"
     },
     {
-      "accession": "0001783879-26-000164",
-      "filed": "2026-10-27",
-      "form": "8-K",
+      "accession": "0001783879-26-000167",
+      "filed": "2026-10-28",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
-      "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000164/q32026robinhoodexhibit991.htm",
       "metrics": {
-        "revenue": {
-          "current": 1424000000,
-          "prior_year": 1274000000,
-          "tag": "SEC reported total net revenues",
-          "unit": "USD"
-        },
-        "net_income": {
-          "current": 468000000,
-          "prior_year": 556000000,
-          "tag": "NetIncomeLoss; net income attributable to Robinhood",
-          "unit": "USD"
-        },
         "diluted_eps": {
           "current": 0.51,
           "prior_year": 0.61,
           "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 468000000,
+          "prior_year": 556000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1424000000,
+          "prior_year": 1274000000,
+          "tag": "Revenues",
+          "unit": "USD"
         }
       },
-      "notes": [
-        "Q3 results come from the earnings release furnished as Exhibit 99.1 to the 27 October 2026 Form 8-K, not a Q3 Form 10-Q.",
-        "Net income throughout this quarterly comparison is profit attributable to Robinhood: Q3 $468m. Total consolidated Q3 net income was $476m, including $8m attributable to non-controlling interests.",
-        "Q3 GAAP diluted EPS was $0.51; company-adjusted EPS was $0.60. Adjusted EPS is not used in the GAAP comparison."
-      ]
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000167/hood-20260930.htm"
     }
   ],
-  "source_type": "US SEC 10-Q and 8-K Exhibit 99.1; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "HOOD",
-  "updated": "2026-10-27"
+  "updated": "2026-10-28"
 }
