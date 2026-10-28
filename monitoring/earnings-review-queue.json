@@ -1,0 +1,5287 @@
+{
+  "checked": "2026-10-28",
+  "counts": {
+    "active_issuers": 500,
+    "company_articles": 40,
+    "mapped_articles": 39,
+    "profiles_scanned": 447
+  },
+  "history": [],
+  "jobs": {
+    "034e8ea62b8335ecf649b5c8": {
+      "company": "ma",
+      "evidence": {
+        "cik": 1141391
+      },
+      "first_seen": "2026-10-28",
+      "id": "034e8ea62b8335ecf649b5c8",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/ma.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "03dd7f1f8b0dcded3fb44b9b": {
+      "company": "carr",
+      "evidence": {
+        "accession": "0001783180-26-000026",
+        "filed": "2026-04-30",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 0.28,
+            "prior_year": 0.47,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 238000000,
+            "prior_year": 412000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 5341000000,
+            "prior_year": 5218000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1783180/000178318026000026/carr-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "03dd7f1f8b0dcded3fb44b9b",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/carr.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "05d105a4362b2670a5feb656": {
+      "company": "cf",
+      "evidence": {
+        "cik": 1324404
+      },
+      "first_seen": "2026-10-28",
+      "id": "05d105a4362b2670a5feb656",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/cf.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "05d9e53f1fdf6d05053a8d15": {
+      "company": "unmapped",
+      "evidence": {
+        "title": "Molina Earnings: Guidance Holds as Medical Costs Squeeze Margins"
+      },
+      "first_seen": "2026-10-28",
+      "id": "05d9e53f1fdf6d05053a8d15",
+      "kind": "article_mapping",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/molina-healthcare-earnings-medicaid-margins.md"
+      ],
+      "reason": "Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "0612feac945a0f5c6981313e": {
+      "company": "ctsh",
+      "evidence": {
+        "accession": "0001058290-26-000016",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.39,
+            "prior_year": 1.34,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 662000000,
+            "prior_year": 663000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 5413000000,
+            "prior_year": 5115000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1058290/000105829026000016/ctsh-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "0612feac945a0f5c6981313e",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/ctsh.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "069f393c896519e3581d5c49": {
+      "company": "msft",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "Reuters — first-half loss and financing revaluation, 20 October 2026",
+            "url": "https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/"
+          },
+          {
+            "title": "Wall Street Journal — draft IPO disclosures, 20 October 2026",
+            "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1"
+          },
+          {
+            "title": "Bloomberg — third-quarter investor presentation, 15 October 2026",
+            "url": "https://news.bloomberglaw.com/tech-and-telecom-law/anthropic-revenue-hits-16-8-billion-in-quarter-before-ipo-1"
+          },
+          {
+            "title": "Reuters — investor valuation expectations, 15 October 2026",
+            "url": "https://www.reuters.com/business/finance/investors-temper-anthropic-ipo-valuation-expectations-over-revenue-growth-2026-10-15/"
+          },
+          {
+            "title": "Anthropic — Series H funding announcement",
+            "url": "https://www.anthropic.com/news/series-h"
+          },
+          {
+            "title": "Anthropic — confidential draft S-1 announcement",
+            "url": "https://www.anthropic.com/news/confidential-draft-s1-sec"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001193125-26-323660",
+          "filed": "2026-07-29",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 17.95,
+              "prior_year": 13.64,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 133749000000,
+              "prior_year": 101832000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 331839000000,
+              "prior_year": 281724000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "069f393c896519e3581d5c49",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/anthropic-loss-ipo-valuation.md",
+        "content/earnings-profiles/msft.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "0763fcaa03d27186de9f88b9": {
+      "company": "cmi",
+      "evidence": {
+        "cik": 26172
+      },
+      "first_seen": "2026-10-28",
+      "id": "0763fcaa03d27186de9f88b9",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/cmi.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "0cedd0b7965f628ea3a58560": {
+      "company": "irm",
+      "evidence": {
+        "cik": 1020569
+      },
+      "first_seen": "2026-10-28",
+      "id": "0cedd0b7965f628ea3a58560",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/irm.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "0d54457e6033f4543e771a1c": {
+      "company": "kim",
+      "evidence": {
+        "cik": 879101
+      },
+      "first_seen": "2026-10-28",
+      "id": "0d54457e6033f4543e771a1c",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/kim.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "0eb4fa00b03e70bfc551fa56": {
+      "company": "grmn",
+      "evidence": {
+        "accession": "0001193125-26-188908",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 2.09,
+            "prior_year": 1.72,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 405078000,
+            "prior_year": 332769000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 1753489000,
+            "prior_year": 1535099000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-28",
+        "source": "https://www.sec.gov/Archives/edgar/data/1121788/000119312526188908/grmn-20260328.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "0eb4fa00b03e70bfc551fa56",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/grmn.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "10bcc2a4eacbc2e8e014fd71": {
+      "company": "tsla",
+      "evidence": {
+        "article_reviewed": "2026-10-18",
+        "article_sources": [
+          {
+            "title": "third-quarter production and deployment announcement",
+            "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments"
+          },
+          {
+            "title": "June-quarter SEC filing",
+            "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+          },
+          {
+            "title": "The Wall Street Journal reported an energy-leadership departure on 16 October",
+            "url": "https://www.wsj.com/business/autos/teslas-energy-boss-leaves-the-company-a90d8f2b"
+          }
+        ],
+        "canonical_path": "/wealth/tesla-energy-storage-margins/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-066775",
+          "filed": "2026-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 0.22,
+              "prior_year": 0.39,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 787000000,
+              "prior_year": 1373000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 28046000000,
+              "prior_year": 28095000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "10bcc2a4eacbc2e8e014fd71",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/tesla-energy-storage-margins.md",
+        "content/earnings-profiles/tsla.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "12374d854994476420edb231": {
+      "company": "hon",
+      "evidence": {
+        "article_reviewed": "2026-10-22",
+        "article_sources": [
+          {
+            "title": "Honeywell Q3 2026 earnings release, SEC 8-K Exhibit 99",
+            "url": "https://www.sec.gov/Archives/edgar/data/773840/000077384026000141/exhibit99-q32026earningsre.htm"
+          },
+          {
+            "title": "Honeywell Q3 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/773840/000077384026000143/hon-20260930.htm"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000773840-26-000143",
+          "filed": "2026-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.08,
+              "prior_year": 5.71,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 664000000,
+              "prior_year": 1825000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 4994000000,
+              "prior_year": 4929000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/773840/000077384026000143/hon-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "12374d854994476420edb231",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/honeywell-earnings-organic-growth-guidance.md",
+        "content/earnings-profiles/hon.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "127f58e7917e203cefa5806b": {
+      "company": "apa",
+      "evidence": {
+        "cik": 1841666
+      },
+      "first_seen": "2026-10-28",
+      "id": "127f58e7917e203cefa5806b",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/apa.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "12a6d6a63124a189092461bc": {
+      "company": "mdlz",
+      "evidence": {
+        "accession": "0001628280-26-027937",
+        "filed": "2026-04-28",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 0.44,
+            "prior_year": 0.31,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 560000000,
+            "prior_year": 402000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 10080000000,
+            "prior_year": 9313000000,
+            "tag": "Revenues",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026027937/mdlz-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "12a6d6a63124a189092461bc",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/mdlz.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "12f36fc635cb1959556f75f3": {
+      "company": "duk",
+      "evidence": {
+        "accession": "0001326160-26-000026",
+        "filed": "2026-05-05",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.97,
+            "prior_year": 1.76,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 1550000000,
+            "prior_year": 1379000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 8995000000,
+            "prior_year": 8218000000,
+            "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1326160/000132616026000026/duk-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "12f36fc635cb1959556f75f3",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/duk.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "168e3002d1ac452ea67ec087": {
+      "company": "msft",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "Reuters reporting published on 19 October",
+            "url": "https://www.investing.com/news/stock-market-news/microsoft-pulls-out-of-uk-nscale-data-centre-deal-over-power-delay-4957808"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001193125-26-323660",
+          "filed": "2026-07-29",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 17.95,
+              "prior_year": 13.64,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 133749000000,
+              "prior_year": 101832000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 331839000000,
+              "prior_year": 281724000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "168e3002d1ac452ea67ec087",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/microsoft-nscale-power-grid-delay.md",
+        "content/earnings-profiles/msft.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "1756912285ce69e0038e5db8": {
+      "company": "t",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "AT&T SEC 8-K, filed 21 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000370/t-20261021.htm"
+          },
+          {
+            "title": "SEC Exhibit 99.1: earnings release",
+            "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000370/t-3q2026exhibit991.htm"
+          },
+          {
+            "title": "SEC Exhibit 99.2: financial statements and operating data",
+            "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000370/t-3q2026exhibit992.htm"
+          },
+          {
+            "title": "SEC Exhibit 99.3: non-GAAP reconciliations",
+            "url": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000370/t-3q2026exhibit993.htm"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000732717-26-000372",
+          "filed": "2026-10-21",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 0.12,
+              "prior_year": 1.29,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 891000000,
+              "prior_year": 9314000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 32322000000,
+              "prior_year": 30709000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/732717/000073271726000372/t-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "1756912285ce69e0038e5db8",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/att-earnings-fiber-growth-dividend-cash-flow.md",
+        "content/earnings-profiles/t.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "176cc7854482a91ec8d0bcc5": {
+      "company": "invh",
+      "evidence": {
+        "cik": 1687229
+      },
+      "first_seen": "2026-10-28",
+      "id": "176cc7854482a91ec8d0bcc5",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/invh.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "19312f147227c4dd7342ab8a": {
+      "company": "ivz",
+      "evidence": {
+        "cik": 914208
+      },
+      "first_seen": "2026-10-28",
+      "id": "19312f147227c4dd7342ab8a",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/ivz.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "1a9aeef169d8057af6a614e4": {
+      "company": "nvda",
+      "evidence": {
+        "article_reviewed": "2026-10-20",
+        "article_sources": [
+          {
+            "title": "Company primary reporting — business model and risk disclosures",
+            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        ],
+        "canonical_path": "/wealth/nvidia-ai-gpu-margins-2026/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001045810-26-000075",
+          "filed": "2026-08-26",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.46,
+              "prior_year": 1.08,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 59688000000,
+              "prior_year": 26422000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 96221000000,
+              "prior_year": 46743000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-07-26",
+          "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "1a9aeef169d8057af6a614e4",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/nvidia-ai-gpu-margins-2026.md",
+        "content/earnings-profiles/nvda.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "1bea8c821e7c01c617c8d9b1": {
+      "company": "aapl",
+      "evidence": {
+        "article_reviewed": "2026-10-18",
+        "article_sources": [
+          {
+            "title": "fiscal third-quarter release",
+            "url": "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/"
+          },
+          {
+            "title": "quarterly SEC filing",
+            "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+          },
+          {
+            "title": "Reuters' reporting on the results",
+            "url": "https://www.reuters.com/business/retail-consumer/apple-revenue-profits-beat-expectations-iphone-mac-sales-2026-07-30/"
+          }
+        ],
+        "canonical_path": "/wealth/apple-earnings-tariff-refunds-services/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000320193-26-000020",
+          "filed": "2026-07-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.02,
+              "prior_year": 1.57,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 29789000000,
+              "prior_year": 23434000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 109417000000,
+              "prior_year": 94036000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-27",
+          "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "1bea8c821e7c01c617c8d9b1",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/apple-earnings-tariff-refunds-services.md",
+        "content/earnings-profiles/aapl.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "1fb1feeea91edda00d049fe9": {
+      "company": "bkng",
+      "evidence": {
+        "cik": 1075531
+      },
+      "first_seen": "2026-10-28",
+      "id": "1fb1feeea91edda00d049fe9",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/bkng.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "23b8c4c591907be79e321f5d": {
+      "company": "itw",
+      "evidence": {
+        "cik": 49826
+      },
+      "first_seen": "2026-10-28",
+      "id": "23b8c4c591907be79e321f5d",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/itw.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "26e50d3a5616f1480ac3324a": {
+      "company": "lly",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "company statement",
+            "url": "https://metistechbio.com/en/qyxw/253.html"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000059478-26-000081",
+          "filed": "2026-08-05",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 7.94,
+              "prior_year": 6.29,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 7095000000,
+              "prior_year": 5661000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 22974000000,
+              "prior_year": 15558000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "26e50d3a5616f1480ac3324a",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/eli-lilly-metis-drug-delivery-deal.md",
+        "content/earnings-profiles/lly.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "276de968cbd709351f8dd19b": {
+      "company": "well",
+      "evidence": {
+        "cik": 766704
+      },
+      "first_seen": "2026-10-28",
+      "id": "276de968cbd709351f8dd19b",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/well.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "27ee9db14d3fb85915468670": {
+      "company": "lly",
+      "evidence": {
+        "article_reviewed": "2026-10-20",
+        "article_sources": [
+          {
+            "title": "Company primary reporting — business model and risk disclosures",
+            "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm"
+          },
+          {
+            "title": "Lilly clinical development pipeline",
+            "url": "https://www.lilly.com/science/research-development/pipeline"
+          }
+        ],
+        "canonical_path": "/wealth/eli-lilly-foundayo-obesity-growth-2026-10-19/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000059478-26-000081",
+          "filed": "2026-08-05",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 7.94,
+              "prior_year": 6.29,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 7095000000,
+              "prior_year": 5661000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 22974000000,
+              "prior_year": 15558000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "27ee9db14d3fb85915468670",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/eli-lilly-foundayo-obesity-growth-2026-10-19.md",
+        "content/earnings-profiles/lly.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "2818bc70da6bdc7276eeca87": {
+      "company": "ess",
+      "evidence": {
+        "cik": 920522
+      },
+      "first_seen": "2026-10-28",
+      "id": "2818bc70da6bdc7276eeca87",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/ess.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "2abb2849c77d5064c43ad7a5": {
+      "company": "lrcx",
+      "evidence": {
+        "article_reviewed": "2026-10-26",
+        "article_sources": [
+          {
+            "title": "Lam Research September 2026 quarter, SEC Exhibit 99.1",
+            "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000052/lrcx_exhibitx991xq1x2027.htm"
+          },
+          {
+            "title": "Lam Research Q1 FY2027 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000054/lrcx-20260927.htm"
+          },
+          {
+            "title": "Associated Press, market reaction on 22 October 2026",
+            "url": "https://apnews.com/article/33767691a4a0730b96d6f0c5100ea9b2"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000707549-26-000054",
+          "filed": "2026-10-22",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.19,
+              "prior_year": 1.24,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 2753138000,
+              "prior_year": 1568660000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 8219418000,
+              "prior_year": 5324173000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-27",
+          "source": "https://www.sec.gov/Archives/edgar/data/707549/000070754926000054/lrcx-20260927.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "2abb2849c77d5064c43ad7a5",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/lam-research-earnings-growth-expectations.md",
+        "content/earnings-profiles/lrcx.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "2af41703040c47299beb8789": {
+      "company": "isrg",
+      "evidence": {
+        "article_reviewed": "2026-10-26",
+        "article_sources": [
+          {
+            "title": "Intuitive Q3 2026 earnings release, SEC Exhibit 99.1",
+            "url": "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000067/q326ex-991earningsrelease.htm"
+          },
+          {
+            "title": "Intuitive Surgical Q3 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000071/isrg-20260930.htm"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001035267-26-000071",
+          "filed": "2026-10-21",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 1.49,
+              "prior_year": 1.95,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 522800000,
+              "prior_year": 704400000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 3048700000,
+              "prior_year": 2505100000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000071/isrg-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "2af41703040c47299beb8789",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/intuitive-surgical-earnings-growth-legal-charge.md",
+        "content/earnings-profiles/isrg.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "2ccbcc4e597573d843409b86": {
+      "company": "vrsk",
+      "evidence": {
+        "accession": "0001437749-26-013729",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.73,
+            "prior_year": 1.65,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 234200000,
+            "prior_year": 232300000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 782600000,
+            "prior_year": 753000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926013729/vrsk20260331_10q.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "2ccbcc4e597573d843409b86",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/vrsk.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "2cfe18364a8376ef6bc6878d": {
+      "company": "mtd",
+      "evidence": {
+        "accession": "0001037646-26-000021",
+        "filed": "2026-05-08",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 8.33,
+            "prior_year": 7.81,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 169454000,
+            "prior_year": 163587000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 947127000,
+            "prior_year": 883744000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1037646/000103764626000021/mtd-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "2cfe18364a8376ef6bc6878d",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/mtd.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "3003a5e36dce2d61ea794622": {
+      "company": "f",
+      "evidence": {
+        "cik": 37996
+      },
+      "first_seen": "2026-10-28",
+      "id": "3003a5e36dce2d61ea794622",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/f.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "3198df4502b9e7f057e26a1a": {
+      "company": "aee",
+      "evidence": {
+        "cik": 1002910
+      },
+      "first_seen": "2026-10-28",
+      "id": "3198df4502b9e7f057e26a1a",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/aee.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "36c233a93dfb4c4e5014fffe": {
+      "company": "bxp",
+      "evidence": {
+        "cik": 1037540
+      },
+      "first_seen": "2026-10-28",
+      "id": "36c233a93dfb4c4e5014fffe",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/bxp.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "3735c6bf40cb613b709a98ad": {
+      "company": "sre",
+      "evidence": {
+        "accession": "0001032208-26-000030",
+        "filed": "2026-05-07",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.58,
+            "prior_year": 1.39,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 1037000000,
+            "prior_year": 917000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 3428000000,
+            "prior_year": 3681000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1032208/000103220826000030/sre-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "3735c6bf40cb613b709a98ad",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/sre.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "38e08e6600e07cc820474d0c": {
+      "company": "cdns",
+      "evidence": {
+        "accession": "0000813672-26-000047",
+        "filed": "2026-05-01",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.23,
+            "prior_year": 1,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 335660000,
+            "prior_year": 273579000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 1474220000,
+            "prior_year": 1242366000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/813672/000081367226000047/cdns-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "38e08e6600e07cc820474d0c",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/cdns.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "3b0c73428026156e0e51b942": {
+      "company": "nflx",
+      "evidence": {
+        "article_reviewed": "2026-10-20",
+        "article_sources": [
+          {
+            "title": "Netflix Q3 2026 shareholder letter, SEC 8-K Exhibit 99.1",
+            "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000290/ex991_q326.htm"
+          },
+          {
+            "title": "Netflix Q1 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000138/nflx-20260331.htm"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001065280-26-000291",
+          "filed": "2026-10-21",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 0.87,
+              "prior_year": 0.59,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 3663927000,
+              "prior_year": 2546916000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 12874176000,
+              "prior_year": 11510307000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000291/nflx-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "3b0c73428026156e0e51b942",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/netflix-earnings-growth-advertising-outlook.md",
+        "content/earnings-profiles/nflx.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "3cbc5cb6fe9c07d7f5bae717": {
+      "company": "msft",
+      "evidence": {
+        "article_reviewed": "2026-10-18",
+        "article_sources": [
+          {
+            "title": "results announcement",
+            "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast"
+          },
+          {
+            "title": "earnings call",
+            "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+          },
+          {
+            "title": "Reuters independently reported the distinction between spending plans and lease presentation.",
+            "url": "https://www.reuters.com/business/microsoft-tops-quarterly-cloud-growth-estimates-easing-spending-concerns-2026-07-29/"
+          }
+        ],
+        "canonical_path": "/wealth/microsoft-ai-capex-cash-flow/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001193125-26-323660",
+          "filed": "2026-07-29",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 17.95,
+              "prior_year": 13.64,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 133749000000,
+              "prior_year": 101832000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 331839000000,
+              "prior_year": 281724000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "3cbc5cb6fe9c07d7f5bae717",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/microsoft-ai-capex-cash-flow.md",
+        "content/earnings-profiles/msft.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "4169d1b3dd9e75d73bf0e414": {
+      "company": "googl",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "report",
+            "url": "https://www.ft.com/content/2202b6a7-9645-4a0f-995b-40f3e939fbac"
+          },
+          {
+            "title": "Cloud and AI Development Act policy page",
+            "url": "https://digital-strategy.ec.europa.eu/en/policies/cloud-and-ai-development-act"
+          },
+          {
+            "title": "Google Search data-sharing guidance",
+            "url": "https://digital-markets-act.ec.europa.eu/businesses-portal/data-access/alphabet-specification-proceedings-sharing-google-search-data_en"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001652044-26-000071",
+          "filed": "2026-07-23",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 9.11,
+              "prior_year": 2.31,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 112193000000,
+              "prior_year": 28196000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 119796000000,
+              "prior_year": 96428000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "4169d1b3dd9e75d73bf0e414",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/alphabet-europe-ai-sovereignty.md",
+        "content/earnings-profiles/googl.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "4485f8a9baee43c2ece031a0": {
+      "company": "dte",
+      "evidence": {
+        "cik": 936340
+      },
+      "first_seen": "2026-10-28",
+      "id": "4485f8a9baee43c2ece031a0",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/dte.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "44b1c5589b59e6d4651ff139": {
+      "company": "vlto",
+      "evidence": {
+        "accession": "0001967680-26-000024",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.02,
+            "prior_year": 0.9,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 254000000,
+            "prior_year": 225000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 1422000000,
+            "prior_year": 1332000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-04-03",
+        "source": "https://www.sec.gov/Archives/edgar/data/1967680/000196768026000024/vlto-20260403.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "44b1c5589b59e6d4651ff139",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/vlto.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "44f2c04f6bce257c1676378d": {
+      "company": "tsla",
+      "evidence": {
+        "article_reviewed": "2026-10-20",
+        "article_sources": [
+          {
+            "title": "Company primary reporting — business model and risk disclosures",
+            "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm"
+          }
+        ],
+        "canonical_path": "/wealth/tesla-q3-2026-autonomy-investment-case/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-066775",
+          "filed": "2026-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 0.22,
+              "prior_year": 0.39,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 787000000,
+              "prior_year": 1373000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 28046000000,
+              "prior_year": 28095000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "44f2c04f6bce257c1676378d",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/tesla-q3-2026-autonomy-investment-case.md",
+        "content/earnings-profiles/tsla.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "45c2f72bbab36301b2ed4215": {
+      "company": "aep",
+      "evidence": {
+        "cik": 4904
+      },
+      "first_seen": "2026-10-28",
+      "id": "45c2f72bbab36301b2ed4215",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/aep.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "481fac8653f640c2315c504b": {
+      "company": "spcx",
+      "evidence": {
+        "article_reviewed": "2026-10-20",
+        "article_sources": [
+          {
+            "title": "SpaceX: Q3 2026 earnings release, Exhibit 99.1 to the 20 October 2026 Form 8-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spaceexplorationtechnologi.htm"
+          },
+          {
+            "title": "SpaceX: Form 8-K, Item 2.02, filed 20 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spcx-20261020.htm"
+          },
+          {
+            "title": "SEC: Space Exploration Technologies submissions register, CIK 1181412",
+            "url": "https://data.sec.gov/submissions/CIK0001181412.json"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-066880",
+          "filed": "2026-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 0.35,
+              "prior_year": -0.36,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 4404000000,
+              "prior_year": -1054000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 14575000000,
+              "prior_year": 5576000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "481fac8653f640c2315c504b",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/spacex-ai-growth-cash-spending.md",
+        "content/earnings-profiles/spcx.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "496896afd7edeb984a8095ce": {
+      "company": "pfg",
+      "evidence": {
+        "accession": "0001104659-26-051384",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.93,
+            "prior_year": 0.21,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 424600000,
+            "prior_year": 48100000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 3529100000,
+            "prior_year": 3695900000,
+            "tag": "Revenues",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1126328/000110465926051384/pfg-20260331x10q.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "496896afd7edeb984a8095ce",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/pfg.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "4c14aabfbe5b4d0399a8b3a6": {
+      "company": "bkr",
+      "evidence": {
+        "cik": 1701605
+      },
+      "first_seen": "2026-10-28",
+      "id": "4c14aabfbe5b4d0399a8b3a6",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/bkr.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "4d892f5359730c90790f1cba": {
+      "company": "cat",
+      "evidence": {
+        "cik": 18230
+      },
+      "first_seen": "2026-10-28",
+      "id": "4d892f5359730c90790f1cba",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/cat.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "4f830f2bc178b749f0d81cbd": {
+      "company": "nvda",
+      "evidence": {
+        "article_reviewed": "2026-10-22",
+        "article_sources": [
+          {
+            "title": "Nokia Form 6-K, 22 October 2026 — Q3 release and full interim report, accession 0001104659-26-117972",
+            "url": "https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm"
+          }
+        ],
+        "canonical_path": "/news/nokia-ai-growth-cash-flow/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001045810-26-000075",
+          "filed": "2026-08-26",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.46,
+              "prior_year": 1.08,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 59688000000,
+              "prior_year": 26422000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 96221000000,
+              "prior_year": 46743000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-07-26",
+          "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "4f830f2bc178b749f0d81cbd",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/nokia-ai-growth-cash-flow.md",
+        "content/earnings-profiles/nvda.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "54e19ca9ecba81afb950a272": {
+      "company": "msft",
+      "evidence": {
+        "article_reviewed": "2026-10-20",
+        "article_sources": [
+          {
+            "title": "Company primary reporting — business model and risk disclosures",
+            "url": "https://www.microsoft.com/investor/reports/ar25/index.html"
+          }
+        ],
+        "canonical_path": "/wealth/microsoft-azure-ai-returns-2026/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001193125-26-323660",
+          "filed": "2026-07-29",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 17.95,
+              "prior_year": 13.64,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 133749000000,
+              "prior_year": 101832000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 331839000000,
+              "prior_year": 281724000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "54e19ca9ecba81afb950a272",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/microsoft-azure-ai-returns-2026.md",
+        "content/earnings-profiles/msft.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "560a5116aa2a53555764b08c": {
+      "company": "reg",
+      "evidence": {
+        "cik": 910606
+      },
+      "first_seen": "2026-10-28",
+      "id": "560a5116aa2a53555764b08c",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/reg.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "5664b7ea275ad8499552c310": {
+      "company": "biib",
+      "evidence": {
+        "accession": "0000875045-26-000045",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 2.15,
+            "prior_year": 1.64,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 319500000,
+            "prior_year": 240500000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 2477800000,
+            "prior_year": 2431000000,
+            "tag": "Revenues",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/875045/000087504526000045/biib-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "5664b7ea275ad8499552c310",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/biib.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "5755f2d94df54c00a1867192": {
+      "company": "o",
+      "evidence": {
+        "cik": 726728
+      },
+      "first_seen": "2026-10-28",
+      "id": "5755f2d94df54c00a1867192",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/o.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "5dc2d0473aaa75eee5f4a70d": {
+      "company": "el",
+      "evidence": {
+        "accession": "0001001250-26-000019",
+        "filed": "2026-05-01",
+        "form": "10-Q",
+        "fp": "Q3",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 0.24,
+            "prior_year": 0.44,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 89000000,
+            "prior_year": 159000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 3712000000,
+            "prior_year": 3550000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1001250/000100125026000019/el-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "5dc2d0473aaa75eee5f4a70d",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/el.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "5e91449100cc7d350b538cf6": {
+      "company": "ed",
+      "evidence": {
+        "accession": "0001047862-26-000091",
+        "filed": "2026-05-07",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 2.54,
+            "prior_year": 2.25,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 924000000,
+            "prior_year": 791000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 5231000000,
+            "prior_year": 4887000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1047862/000104786226000091/ed-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "5e91449100cc7d350b538cf6",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/ed.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "61a55ef8dafc44099c042de6": {
+      "company": "clx",
+      "evidence": {
+        "accession": "0000021076-26-000019",
+        "filed": "2026-04-30",
+        "form": "10-Q",
+        "fp": "Q3",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.54,
+            "prior_year": 1.5,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 187000000,
+            "prior_year": 186000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 1670000000,
+            "prior_year": 1668000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/21076/000002107626000019/clx-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "61a55ef8dafc44099c042de6",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/clx.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "626b5da9d13cf8a47acb7f8e": {
+      "company": "tsla",
+      "evidence": {
+        "article_reviewed": "2026-10-10",
+        "article_sources": [
+          {
+            "title": "Tesla — 2025 Form 10-K: annual revenue, business segments, operating income and net income",
+            "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm"
+          },
+          {
+            "title": "SpaceX — SEC IPO prospectus: FY2024–25 financial statements and segment breakdown",
+            "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm"
+          },
+          {
+            "title": "Tesla — Q2 2026 Form 10-Q: $2bn SpaceX stake, related-party Megapack revenues and agreements",
+            "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+          },
+          {
+            "title": "SpaceX — Q2 2026 Form 10-Q: revenue by segment and year-on-year comparisons",
+            "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm"
+          },
+          {
+            "title": "SpaceX — Official announcement of completed June 2026 IPO",
+            "url": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/"
+          },
+          {
+            "title": "Tesla Q2 2026 earnings-call transcript: management discussion of a possible combination and governance",
+            "url": "https://stockanalysis.com/stocks/tsla/transcripts/653184-q2-2026/"
+          },
+          {
+            "title": "Reuters, 23 July 2026 — Musk discusses Tesla–SpaceX merger speculation and overlapping operations",
+            "url": "https://www.reuters.com/legal/legalindustry/musk-keeps-tesla-spacex-merger-speculation-alive-cites-growing-overlap-2026-07-23/"
+          },
+          {
+            "title": "Reuters, 7 October 2026 — Terafab ownership and operating responsibilities",
+            "url": "https://www.reuters.com/business/media-telecom/intel-keep-working-musks-terafab-chipmaking-venture-bloomberg-news-reports-2026-10-07/"
+          }
+        ],
+        "canonical_path": "/wealth/tesla-spacex-merger-2027/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-066775",
+          "filed": "2026-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 0.22,
+              "prior_year": 0.39,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 787000000,
+              "prior_year": 1373000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 28046000000,
+              "prior_year": 28095000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "626b5da9d13cf8a47acb7f8e",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/tesla-spacex-merger-2027.md",
+        "content/earnings-profiles/tsla.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "627b35ca35f4999655146e4c": {
+      "company": "meta",
+      "evidence": {
+        "article_reviewed": "2026-10-20",
+        "article_sources": [
+          {
+            "title": "Company primary reporting — business model and risk disclosures",
+            "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx"
+          }
+        ],
+        "canonical_path": "/wealth/meta-ai-advertising-returns-2026/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-066773",
+          "filed": "2026-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 3.83,
+              "prior_year": 1.05,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 9860000000,
+              "prior_year": 2709000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 64601000000,
+              "prior_year": 51242000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "627b35ca35f4999655146e4c",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/meta-ai-advertising-returns-2026.md",
+        "content/earnings-profiles/meta.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "64642727398637aa26545a00": {
+      "company": "googl",
+      "evidence": {
+        "article_reviewed": "2026-10-22",
+        "article_sources": [
+          {
+            "title": "Nokia Form 6-K, 22 October 2026 — Q3 release and full interim report, accession 0001104659-26-117972",
+            "url": "https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm"
+          }
+        ],
+        "canonical_path": "/news/nokia-ai-growth-cash-flow/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001652044-26-000071",
+          "filed": "2026-07-23",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 9.11,
+              "prior_year": 2.31,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 112193000000,
+              "prior_year": 28196000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 119796000000,
+              "prior_year": 96428000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "64642727398637aa26545a00",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/nokia-ai-growth-cash-flow.md",
+        "content/earnings-profiles/googl.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "68a86b1b0041e706c5a9a256": {
+      "company": "tsla",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "Q3 2026 results: SEC Form 8-K, Exhibit 99.1, 21 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/exhibit9914.htm"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-066775",
+          "filed": "2026-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 0.22,
+              "prior_year": 0.39,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 787000000,
+              "prior_year": 1373000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 28046000000,
+              "prior_year": 28095000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "68a86b1b0041e706c5a9a256",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/tesla-earnings-cash-flow-profit-investment.md",
+        "content/earnings-profiles/tsla.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "6b5b9ed4d127e58aecd58899": {
+      "company": "q",
+      "evidence": {
+        "cik": 2058873
+      },
+      "first_seen": "2026-10-28",
+      "id": "6b5b9ed4d127e58aecd58899",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/q.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "6d3fdbb2dfab0d7ced32b48a": {
+      "company": "googl",
+      "evidence": {
+        "article_reviewed": "2026-10-20",
+        "article_sources": [
+          {
+            "title": "Company primary reporting — business model and risk disclosures",
+            "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm"
+          }
+        ],
+        "canonical_path": "/wealth/alphabet-search-ai-economics-2026/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001652044-26-000071",
+          "filed": "2026-07-23",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 9.11,
+              "prior_year": 2.31,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 112193000000,
+              "prior_year": 28196000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 119796000000,
+              "prior_year": 96428000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "6d3fdbb2dfab0d7ced32b48a",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/alphabet-search-ai-economics-2026.md",
+        "content/earnings-profiles/googl.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "6e988c358b412a8ee7008489": {
+      "company": "kkr",
+      "evidence": {
+        "cik": 1404912
+      },
+      "first_seen": "2026-10-28",
+      "id": "6e988c358b412a8ee7008489",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/kkr.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "7050d6b8c33d8838739db4d2": {
+      "company": "spg",
+      "evidence": {
+        "cik": 1063761
+      },
+      "first_seen": "2026-10-28",
+      "id": "7050d6b8c33d8838739db4d2",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/spg.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "71a7f4d71d730d09ff44dde3": {
+      "company": "aapl",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "announcement",
+            "url": "https://www.apple.com/newsroom/2026/10/apple-announces-american-manufacturing-program-partners-for-latest-iphone-lineup/"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000320193-26-000020",
+          "filed": "2026-07-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.02,
+              "prior_year": 1.57,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 29789000000,
+              "prior_year": 23434000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 109417000000,
+              "prior_year": 94036000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-27",
+          "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "71a7f4d71d730d09ff44dde3",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/apple-us-iphone-suppliers-manufacturing.md",
+        "content/earnings-profiles/aapl.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "743c5664b39ca9db6ed08ba6": {
+      "company": "foxa",
+      "evidence": {
+        "cik": 1754301
+      },
+      "first_seen": "2026-10-28",
+      "id": "743c5664b39ca9db6ed08ba6",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/foxa.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "7483cd9cb84aac4a0b0fcbaf": {
+      "company": "spgi",
+      "evidence": {
+        "accession": "0000064040-26-000024",
+        "filed": "2026-04-28",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 4.69,
+            "prior_year": 3.54,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 1395000000,
+            "prior_year": 1090000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 4171000000,
+            "prior_year": 3777000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000024/spgi-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "7483cd9cb84aac4a0b0fcbaf",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/spgi.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "750c7dad402d7497ba7a7eb8": {
+      "company": "ibm",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "Q3 2026 results: SEC Form 8-K, Exhibit 99.1, 21 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000093/ibm-20261021xex991.htm"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000051143-26-000095",
+          "filed": "2026-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.3,
+              "prior_year": 1.84,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 2190000000,
+              "prior_year": 1744000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 17103000000,
+              "prior_year": 16331000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000095/ibm-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "750c7dad402d7497ba7a7eb8",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/ibm-earnings-software-growth-cash-flow.md",
+        "content/earnings-profiles/ibm.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "751c3222c69ba784d7eb60ae": {
+      "company": "aapl",
+      "evidence": {
+        "article_reviewed": "2026-10-20",
+        "article_sources": [
+          {
+            "title": "Company primary reporting — business model and risk disclosures",
+            "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+          }
+        ],
+        "canonical_path": "/wealth/apple-iphone-services-profit-2026/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000320193-26-000020",
+          "filed": "2026-07-31",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.02,
+              "prior_year": 1.57,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 29789000000,
+              "prior_year": 23434000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 109417000000,
+              "prior_year": 94036000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-27",
+          "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "751c3222c69ba784d7eb60ae",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/apple-iphone-services-profit-2026.md",
+        "content/earnings-profiles/aapl.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "78884a6c993a6f4dc2029761": {
+      "company": "gehc",
+      "evidence": {
+        "accession": "0001932393-26-000031",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 0.85,
+            "prior_year": 1.23,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 389000000,
+            "prior_year": 564000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 5131000000,
+            "prior_year": 4777000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1932393/000193239326000031/gehc-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "78884a6c993a6f4dc2029761",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/gehc.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "788e0fa62a048a4d338c1bfb": {
+      "company": "hca",
+      "evidence": {
+        "accession": "0001193125-26-191444",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 7.15,
+            "prior_year": 6.45,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 1620000000,
+            "prior_year": 1610000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 19109000000,
+            "prior_year": 18321000000,
+            "tag": "Revenues",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/860730/000119312526191444/hca-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "788e0fa62a048a4d338c1bfb",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/hca.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "7c24ceb717b8e41ba0fd98ed": {
+      "company": "pnw",
+      "evidence": {
+        "cik": 764622
+      },
+      "first_seen": "2026-10-28",
+      "id": "7c24ceb717b8e41ba0fd98ed",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/pnw.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "7c6a543c4ce76f13f3044fc5": {
+      "company": "mas",
+      "evidence": {
+        "accession": "0000062996-26-000014",
+        "filed": "2026-04-22",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.05,
+            "prior_year": 0.87,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 213000000,
+            "prior_year": 186000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 1918000000,
+            "prior_year": 1801000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/62996/000006299626000014/mas-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "7c6a543c4ce76f13f3044fc5",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/mas.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "823fc439336d5f21e961ce2a": {
+      "company": "fe",
+      "evidence": {
+        "accession": "0001031296-26-000085",
+        "filed": "2026-04-28",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 0.7,
+            "prior_year": 0.62,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 405000000,
+            "prior_year": 360000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 4202000000,
+            "prior_year": 3765000000,
+            "tag": "Revenues",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1031296/000103129626000085/fe-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "823fc439336d5f21e961ce2a",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/fe.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "841f6ad6318dd2a283f0b47a": {
+      "company": "iqv",
+      "evidence": {
+        "accession": "0001628280-26-030675",
+        "filed": "2026-05-05",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.61,
+            "prior_year": 1.4,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 274000000,
+            "prior_year": 249000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 4151000000,
+            "prior_year": 3829000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1478242/000162828026030675/iqv-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "841f6ad6318dd2a283f0b47a",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/iqv.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "860d84f7367308c351552844": {
+      "company": "incy",
+      "evidence": {
+        "accession": "0000879169-26-000026",
+        "filed": "2026-04-28",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.47,
+            "prior_year": 0.8,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 303330000,
+            "prior_year": 158203000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 1272676000,
+            "prior_year": 1052898000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000026/incy-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "860d84f7367308c351552844",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/incy.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "8aacd0869f751514d601a6fb": {
+      "company": "meta",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "Q3 2026 results: SEC Form 8-K, Exhibit 99.1, 21 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-066773",
+          "filed": "2026-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 3.83,
+              "prior_year": 1.05,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 9860000000,
+              "prior_year": 2709000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 64601000000,
+              "prior_year": 51242000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "8aacd0869f751514d601a6fb",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/meta-advertising-ai-spending-earnings.md",
+        "content/earnings-profiles/meta.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "8bc23a24d42c9645056ba004": {
+      "company": "gd",
+      "evidence": {
+        "cik": 40533
+      },
+      "first_seen": "2026-10-28",
+      "id": "8bc23a24d42c9645056ba004",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/gd.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "8c1197cbb2c4b601025dcbbc": {
+      "company": "lly",
+      "evidence": {
+        "article_reviewed": "2026-10-19",
+        "article_sources": [
+          {
+            "title": "Eli Lilly Q2 2026 earnings",
+            "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000077/q226lillysalesandearningsp.htm"
+          },
+          {
+            "title": "Eli Lilly 2026 second-quarter 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm"
+          },
+          {
+            "title": "EMA Foundayo positive opinion",
+            "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/foundayo"
+          },
+          {
+            "title": "FDA approval announcement",
+            "url": "https://investor.lilly.com/news-releases/news-release-details/fda-approves-lillys-foundayotm-orforglipron-only-glp-1-pill"
+          },
+          {
+            "title": "Lilly clinical pipeline",
+            "url": "https://www.lilly.com/science/research-development/pipeline"
+          }
+        ],
+        "canonical_path": "/wealth/eli-lilly-foundayo-europe-approval-glp1-2026/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000059478-26-000081",
+          "filed": "2026-08-05",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 7.94,
+              "prior_year": 6.29,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 7095000000,
+              "prior_year": 5661000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 22974000000,
+              "prior_year": 15558000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "8c1197cbb2c4b601025dcbbc",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/eli-lilly-foundayo-europe-approval-glp1-2026.md",
+        "content/earnings-profiles/lly.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "8c7338eae0cb7909655fc536": {
+      "company": "lyb",
+      "evidence": {
+        "cik": 1489393
+      },
+      "first_seen": "2026-10-28",
+      "id": "8c7338eae0cb7909655fc536",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/lyb.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "91816a29919a86ceb69c4a5c": {
+      "company": "googl",
+      "evidence": {
+        "article_reviewed": "2026-10-18",
+        "article_sources": [
+          {
+            "title": "second-quarter release",
+            "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm"
+          },
+          {
+            "title": "quarterly SEC filing",
+            "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+          },
+          {
+            "title": "Financial Times' reporting on the quarter",
+            "url": "https://www.ft.com/content/b02f972c-c764-4006-9377-42563d9d5530"
+          }
+        ],
+        "canonical_path": "/wealth/alphabet-ai-capex-free-cash-flow/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001652044-26-000071",
+          "filed": "2026-07-23",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 9.11,
+              "prior_year": 2.31,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 112193000000,
+              "prior_year": 28196000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 119796000000,
+              "prior_year": 96428000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "91816a29919a86ceb69c4a5c",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/alphabet-ai-capex-free-cash-flow.md",
+        "content/earnings-profiles/googl.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "91c75542a07a2cab27862172": {
+      "company": "amt",
+      "evidence": {
+        "cik": 1053507
+      },
+      "first_seen": "2026-10-28",
+      "id": "91c75542a07a2cab27862172",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/amt.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "93662e45f0cac489d99cb997": {
+      "company": "cvna",
+      "evidence": {
+        "cik": 1690820
+      },
+      "first_seen": "2026-10-28",
+      "id": "93662e45f0cac489d99cb997",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/cvna.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "937634e5b5975df2cb86b81b": {
+      "company": "bg",
+      "evidence": {
+        "accession": "0001628280-26-028235",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 0.35,
+            "prior_year": 1.48,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 68000000,
+            "prior_year": 201000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 4660000000,
+            "prior_year": 3663000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1996862/000162828026028235/bg-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "937634e5b5975df2cb86b81b",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/bg.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "9dbed2c0342def83fa15a4e0": {
+      "company": "lii",
+      "evidence": {
+        "accession": "0001069202-26-000054",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 3.35,
+            "prior_year": 3.63,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 117200000,
+            "prior_year": 129600000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 1135100000,
+            "prior_year": 1072600000,
+            "tag": "Revenues",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1069202/000106920226000054/lii-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "9dbed2c0342def83fa15a4e0",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/lii.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "a39fce867424eb61d77bbc8b": {
+      "company": "nvda",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "PyTorch announcement",
+            "url": "https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001045810-26-000075",
+          "filed": "2026-08-26",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.46,
+              "prior_year": 1.08,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 59688000000,
+              "prior_year": 26422000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 96221000000,
+              "prior_year": 46743000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-07-26",
+          "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "a39fce867424eb61d77bbc8b",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/nvidia-torchneuron-software-competition.md",
+        "content/earnings-profiles/nvda.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "a8119c1c26b9b1e12490243c": {
+      "company": "amzn",
+      "evidence": {
+        "article_reviewed": "2026-10-18",
+        "article_sources": [
+          {
+            "title": "second-quarter results",
+            "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/"
+          },
+          {
+            "title": "SEC filing's cash-flow statement",
+            "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+          },
+          {
+            "title": "Associated Press reporting",
+            "url": "https://apnews.com/article/b4ce02b4666a35b8975823c5c22072ee"
+          }
+        ],
+        "canonical_path": "/wealth/amazon-aws-profit-investment-gains/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001018724-26-000026",
+          "filed": "2026-07-31",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 5.75,
+              "prior_year": 1.68,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 62647000000,
+              "prior_year": 18164000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 200606000000,
+              "prior_year": 167702000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "a8119c1c26b9b1e12490243c",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/amazon-aws-profit-investment-gains.md",
+        "content/earnings-profiles/amzn.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "a94c01e9d583b02ca83fa6b0": {
+      "company": "ph",
+      "evidence": {
+        "cik": 76334
+      },
+      "first_seen": "2026-10-28",
+      "id": "a94c01e9d583b02ca83fa6b0",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/ph.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "acee5a01c600fe61808885a5": {
+      "company": "hood",
+      "evidence": {
+        "article_reviewed": "2026-10-27",
+        "article_sources": [
+          {
+            "title": "Robinhood Q3 2026 earnings release, SEC Form 8-K Exhibit 99.1, furnished 27 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000164/q32026robinhoodexhibit991.htm"
+          },
+          {
+            "title": "Robinhood Q2 2026 SEC Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000114/hood-20260630.htm"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001783879-26-000164",
+          "filed": "2026-10-27",
+          "form": "8-K",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 0.51,
+              "prior_year": 0.61,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 468000000,
+              "prior_year": 556000000,
+              "tag": "NetIncomeLoss; net income attributable to Robinhood",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 1424000000,
+              "prior_year": 1274000000,
+              "tag": "SEC reported total net revenues",
+              "unit": "USD"
+            }
+          },
+          "notes": [
+            "Q3 results come from the earnings release furnished as Exhibit 99.1 to the 27 October 2026 Form 8-K, not a Q3 Form 10-Q.",
+            "Net income throughout this quarterly comparison is profit attributable to Robinhood: Q3 $468m. Total consolidated Q3 net income was $476m, including $8m attributable to non-controlling interests.",
+            "Q3 GAAP diluted EPS was $0.51; company-adjusted EPS was $0.60. Adjusted EPS is not used in the GAAP comparison."
+          ],
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000164/q32026robinhoodexhibit991.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "acee5a01c600fe61808885a5",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/robinhood-earnings-prediction-markets-profit.md",
+        "content/earnings-profiles/hood.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "aeee6c92ce87c57284ed812f": {
+      "company": "mnst",
+      "evidence": {
+        "cik": 865752
+      },
+      "first_seen": "2026-10-28",
+      "id": "aeee6c92ce87c57284ed812f",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/mnst.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "b02c8dd76df9d424ce467fc8": {
+      "company": "jci",
+      "evidence": {
+        "accession": "0000833444-26-000050",
+        "filed": "2026-05-06",
+        "form": "10-Q",
+        "fp": "Q2",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1,
+            "prior_year": 0.72,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 613000000,
+            "prior_year": 478000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 6142000000,
+            "prior_year": 5676000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/833444/000083344426000050/jci-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "b02c8dd76df9d424ce467fc8",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/jci.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "b55f6bf094c2801c107055bb": {
+      "company": "meta",
+      "evidence": {
+        "article_reviewed": "2026-10-18",
+        "article_sources": [
+          {
+            "title": "second-quarter 2026 release",
+            "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Second-Quarter-2026-Results/default.aspx"
+          },
+          {
+            "title": "SEC filing",
+            "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+          },
+          {
+            "title": "Associated Press reporting",
+            "url": "https://apnews.com/article/bcbc62dde6d2cac724e3b3385fcabeab"
+          }
+        ],
+        "canonical_path": "/wealth/meta-advertising-growth-ai-cash-flow/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-066773",
+          "filed": "2026-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 3.83,
+              "prior_year": 1.05,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 9860000000,
+              "prior_year": 2709000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 64601000000,
+              "prior_year": 51242000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "b55f6bf094c2801c107055bb",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/meta-advertising-growth-ai-cash-flow.md",
+        "content/earnings-profiles/meta.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "b6fe6e0a446227cdd61dcf15": {
+      "company": "hum",
+      "evidence": {
+        "accession": "0000049071-26-000023",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 9.83,
+            "prior_year": 10.3,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 1186000000,
+            "prior_year": 1244000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 1677000000,
+            "prior_year": 1334000000,
+            "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/49071/000004907126000023/hum-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "b6fe6e0a446227cdd61dcf15",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/hum.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "bbdd5b741e9f26dbc90feb1a": {
+      "company": "pypl",
+      "evidence": {
+        "accession": "0001633917-26-000067",
+        "filed": "2026-05-05",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.21,
+            "prior_year": 1.29,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 1113000000,
+            "prior_year": 1287000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 8353000000,
+            "prior_year": 7791000000,
+            "tag": "Revenues",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1633917/000163391726000067/pypl-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "bbdd5b741e9f26dbc90feb1a",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/pypl.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "c05d3ca345a93cf80680273d": {
+      "company": "ppl",
+      "evidence": {
+        "cik": 922224
+      },
+      "first_seen": "2026-10-28",
+      "id": "c05d3ca345a93cf80680273d",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/ppl.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "c0a2f165cbb7e50475d729fe": {
+      "company": "tmo",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "Thermo Fisher Q3 2026 earnings release: SEC 8-K Exhibit 99.1, 21 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000173/q32026earnings8kex99_1.htm"
+          },
+          {
+            "title": "Thermo Fisher Q2 2026 SEC 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000144/tmo-20260627.htm"
+          },
+          {
+            "title": "Thermo Fisher Q1 2026 SEC 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000092/tmo-20260328.htm"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000097745-26-000173",
+          "filed": "2026-10-21",
+          "form": "8-K Exhibit 99.1",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 4.64,
+              "prior_year": 4.27,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 1721000000,
+              "prior_year": 1616000000,
+              "tag": "NetIncomeLossAttributableToParent",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 12137000000,
+              "prior_year": 11122000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-26",
+          "source": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000173/q32026earnings8kex99_1.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "c0a2f165cbb7e50475d729fe",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/thermo-fisher-earnings-organic-growth-cash-flow.md",
+        "content/earnings-profiles/tmo.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "c3cec6e0af87a3e2bfcd2b70": {
+      "company": "vtrs",
+      "evidence": {
+        "cik": 1792044
+      },
+      "first_seen": "2026-10-28",
+      "id": "c3cec6e0af87a3e2bfcd2b70",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/vtrs.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "c8a80c67c30835da0fe85330": {
+      "company": "hsy",
+      "evidence": {
+        "cik": 47111
+      },
+      "first_seen": "2026-10-28",
+      "id": "c8a80c67c30835da0fe85330",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/hsy.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "c8b4e15d74e5225f9ca641f5": {
+      "company": "brk-b",
+      "evidence": {
+        "cik": 1067983
+      },
+      "first_seen": "2026-10-28",
+      "id": "c8b4e15d74e5225f9ca641f5",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/brk-b.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "ca715e1d2f304b929a7414f2": {
+      "company": "xel",
+      "evidence": {
+        "cik": 72903
+      },
+      "first_seen": "2026-10-28",
+      "id": "ca715e1d2f304b929a7414f2",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/xel.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "cb21221cd980f227316bc627": {
+      "company": "amzn",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "Reuters — first-half loss and financing revaluation, 20 October 2026",
+            "url": "https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/"
+          },
+          {
+            "title": "Wall Street Journal — draft IPO disclosures, 20 October 2026",
+            "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1"
+          },
+          {
+            "title": "Bloomberg — third-quarter investor presentation, 15 October 2026",
+            "url": "https://news.bloomberglaw.com/tech-and-telecom-law/anthropic-revenue-hits-16-8-billion-in-quarter-before-ipo-1"
+          },
+          {
+            "title": "Reuters — investor valuation expectations, 15 October 2026",
+            "url": "https://www.reuters.com/business/finance/investors-temper-anthropic-ipo-valuation-expectations-over-revenue-growth-2026-10-15/"
+          },
+          {
+            "title": "Anthropic — Series H funding announcement",
+            "url": "https://www.anthropic.com/news/series-h"
+          },
+          {
+            "title": "Anthropic — confidential draft S-1 announcement",
+            "url": "https://www.anthropic.com/news/confidential-draft-s1-sec"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001018724-26-000026",
+          "filed": "2026-07-31",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 5.75,
+              "prior_year": 1.68,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 62647000000,
+              "prior_year": 18164000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 200606000000,
+              "prior_year": 167702000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "cb21221cd980f227316bc627",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/anthropic-loss-ipo-valuation.md",
+        "content/earnings-profiles/amzn.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "cff5d7c7460258b645ba925f": {
+      "company": "aig",
+      "evidence": {
+        "cik": 5272
+      },
+      "first_seen": "2026-10-28",
+      "id": "cff5d7c7460258b645ba925f",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/aig.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "d005c6d92b781a17937ca487": {
+      "company": "eix",
+      "evidence": {
+        "accession": "0000827052-26-000042",
+        "filed": "2026-04-28",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.37,
+            "prior_year": 3.72,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 531000000,
+            "prior_year": 1436000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 4103000000,
+            "prior_year": 3811000000,
+            "tag": "Revenues",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/827052/000082705226000042/eix-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "d005c6d92b781a17937ca487",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/eix.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "d10e873e298e683e9d2d3e5c": {
+      "company": "wec",
+      "evidence": {
+        "cik": 783325
+      },
+      "first_seen": "2026-10-28",
+      "id": "d10e873e298e683e9d2d3e5c",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/wec.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "d11ed609fcdbb71ff3bf5d73": {
+      "company": "lnt",
+      "evidence": {
+        "accession": "0000352541-26-000033",
+        "filed": "2026-05-01",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 0.87,
+            "prior_year": 0.83,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 224000000,
+            "prior_year": 213000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 1184000000,
+            "prior_year": 1128000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/352541/000035254126000033/lnt-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "d11ed609fcdbb71ff3bf5d73",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/lnt.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "d16f14ca42cb15689e5df255": {
+      "company": "exc",
+      "evidence": {
+        "cik": 1109357
+      },
+      "first_seen": "2026-10-28",
+      "id": "d16f14ca42cb15689e5df255",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/exc.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "d1ed474ed3a3470454f39ae2": {
+      "company": "be",
+      "evidence": {
+        "article_reviewed": "2026-10-22",
+        "article_sources": [
+          {
+            "title": "Bloom Energy Q3 2026 results, SEC 8-K Exhibit 99.1",
+            "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex991_q326financialresults.htm"
+          },
+          {
+            "title": "Bloom Energy Q1 2026 SEC Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026028021/be-20260331.htm"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-066890",
+          "filed": "2026-10-22",
+          "form": "8-K",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 0.78,
+              "prior_year": -0.1,
+              "tag": "SEC reported",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 250271000,
+              "prior_year": -23093000,
+              "tag": "SEC reported; common-stockholder income",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 1235837000,
+              "prior_year": 519048000,
+              "tag": "SEC reported",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex991_q326financialresults.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "d1ed474ed3a3470454f39ae2",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/bloom-energy-earnings-growth-cash-flow.md",
+        "content/earnings-profiles/be.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "d28215254fbd8a6c7977ae71": {
+      "company": "udr",
+      "evidence": {
+        "accession": "0000074208-26-000049",
+        "filed": "2026-04-30",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 0.57,
+            "prior_year": 0.23,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 189831000,
+            "prior_year": 76720000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 2528000,
+            "prior_year": 2112000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000049/udr-20260331x10q.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "d28215254fbd8a6c7977ae71",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/udr.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "d3aab0289868f60a083c6cd5": {
+      "company": "nvda",
+      "evidence": {
+        "article_reviewed": "2026-10-18",
+        "article_sources": [
+          {
+            "title": "second-quarter fiscal 2027 results",
+            "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/"
+          },
+          {
+            "title": "quarterly SEC filing",
+            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          },
+          {
+            "title": "Microsoft's own earnings call",
+            "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+          }
+        ],
+        "canonical_path": "/wealth/nvidia-gross-margin-ai-demand/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001045810-26-000075",
+          "filed": "2026-08-26",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.46,
+              "prior_year": 1.08,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 59688000000,
+              "prior_year": 26422000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 96221000000,
+              "prior_year": 46743000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-07-26",
+          "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "d3aab0289868f60a083c6cd5",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/nvidia-gross-margin-ai-demand.md",
+        "content/earnings-profiles/nvda.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "d3afa4b39cf59aafeddcefd0": {
+      "company": "avgo",
+      "evidence": {
+        "cik": 1730168
+      },
+      "first_seen": "2026-10-28",
+      "id": "d3afa4b39cf59aafeddcefd0",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/avgo.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "d3f3412118257292fcdf0865": {
+      "company": "tech",
+      "evidence": {
+        "accession": "0001104659-26-056302",
+        "filed": "2026-05-06",
+        "form": "10-Q",
+        "fp": "Q3",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 0.32,
+            "prior_year": 0.14,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 51047000,
+            "prior_year": 22588000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 311415000,
+            "prior_year": 316181000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/842023/000110465926056302/tech-20260331x10q.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "d3f3412118257292fcdf0865",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/tech.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "d651786b6943ba04075cfe71": {
+      "company": "bsx",
+      "evidence": {
+        "cik": 885725
+      },
+      "first_seen": "2026-10-28",
+      "id": "d651786b6943ba04075cfe71",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/bsx.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "d67d092b8b58c1f0d2125b09": {
+      "company": "abnb",
+      "evidence": {
+        "cik": 1559720
+      },
+      "first_seen": "2026-10-28",
+      "id": "d67d092b8b58c1f0d2125b09",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/abnb.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "d7725314f0dd61fb0c635f95": {
+      "company": "d",
+      "evidence": {
+        "accession": "0001193125-26-200275",
+        "filed": "2026-05-01",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 0.69,
+            "prior_year": 0.77,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 621000000,
+            "prior_year": 665000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 5091000000,
+            "prior_year": 4085000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/715957/000119312526200275/d-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "d7725314f0dd61fb0c635f95",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/d.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "d78bb5fd65229512af580599": {
+      "company": "amzn",
+      "evidence": {
+        "article_reviewed": "2026-10-20",
+        "article_sources": [
+          {
+            "title": "Company primary reporting — business model and risk disclosures",
+            "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+          }
+        ],
+        "canonical_path": "/wealth/amazon-aws-retail-economics-2026/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001018724-26-000026",
+          "filed": "2026-07-31",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 5.75,
+              "prior_year": 1.68,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 62647000000,
+              "prior_year": 18164000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 200606000000,
+              "prior_year": 167702000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "d78bb5fd65229512af580599",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/amazon-aws-retail-economics-2026.md",
+        "content/earnings-profiles/amzn.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "d8fed5f88a74e359f62edd32": {
+      "company": "ppg",
+      "evidence": {
+        "accession": "0000079879-26-000170",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.7,
+            "prior_year": 1.63,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 382000000,
+            "prior_year": 373000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 3930000000,
+            "prior_year": 3684000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/79879/000007987926000170/ppg-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "d8fed5f88a74e359f62edd32",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/ppg.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "da7b289733bf3c4cc7de361d": {
+      "company": "spcx",
+      "evidence": {
+        "article_reviewed": "2026-10-10",
+        "article_sources": [
+          {
+            "title": "Tesla — 2025 Form 10-K: annual revenue, business segments, operating income and net income",
+            "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm"
+          },
+          {
+            "title": "SpaceX — SEC IPO prospectus: FY2024–25 financial statements and segment breakdown",
+            "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026036936/spaceexplorationtechnologi.htm"
+          },
+          {
+            "title": "Tesla — Q2 2026 Form 10-Q: $2bn SpaceX stake, related-party Megapack revenues and agreements",
+            "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+          },
+          {
+            "title": "SpaceX — Q2 2026 Form 10-Q: revenue by segment and year-on-year comparisons",
+            "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm"
+          },
+          {
+            "title": "SpaceX — Official announcement of completed June 2026 IPO",
+            "url": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/"
+          },
+          {
+            "title": "Tesla Q2 2026 earnings-call transcript: management discussion of a possible combination and governance",
+            "url": "https://stockanalysis.com/stocks/tsla/transcripts/653184-q2-2026/"
+          },
+          {
+            "title": "Reuters, 23 July 2026 — Musk discusses Tesla–SpaceX merger speculation and overlapping operations",
+            "url": "https://www.reuters.com/legal/legalindustry/musk-keeps-tesla-spacex-merger-speculation-alive-cites-growing-overlap-2026-07-23/"
+          },
+          {
+            "title": "Reuters, 7 October 2026 — Terafab ownership and operating responsibilities",
+            "url": "https://www.reuters.com/business/media-telecom/intel-keep-working-musks-terafab-chipmaking-venture-bloomberg-news-reports-2026-10-07/"
+          }
+        ],
+        "canonical_path": "/wealth/tesla-spacex-merger-2027/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-066880",
+          "filed": "2026-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 0.35,
+              "prior_year": -0.36,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 4404000000,
+              "prior_year": -1054000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 14575000000,
+              "prior_year": 5576000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "da7b289733bf3c4cc7de361d",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/tesla-spacex-merger-2027.md",
+        "content/earnings-profiles/spcx.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "dc1fa66ca722491d29c4e988": {
+      "company": "erie",
+      "evidence": {
+        "cik": 922621
+      },
+      "first_seen": "2026-10-28",
+      "id": "dc1fa66ca722491d29c4e988",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/erie.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "ddc59ff7cecd09b7ad89b12b": {
+      "company": "etr",
+      "evidence": {
+        "cik": 65984
+      },
+      "first_seen": "2026-10-28",
+      "id": "ddc59ff7cecd09b7ad89b12b",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/etr.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "ddc803af69e3c48feee944e8": {
+      "company": "evrg",
+      "evidence": {
+        "accession": "0001711269-26-000057",
+        "filed": "2026-05-07",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 0.64,
+            "prior_year": 0.54,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 151500000,
+            "prior_year": 125000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 1350500000,
+            "prior_year": 1294500000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1711269/000171126926000057/evrg-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "ddc803af69e3c48feee944e8",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/evrg.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "df4b9bcd440b628db14e20df": {
+      "company": "cnp",
+      "evidence": {
+        "accession": "0001130310-26-000028",
+        "filed": "2026-04-23",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 0.48,
+            "prior_year": 0.45,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 316000000,
+            "prior_year": 297000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 2975000000,
+            "prior_year": 2956000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1130310/000113031026000028/cnp-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "df4b9bcd440b628db14e20df",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/cnp.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "df6fcf02c9f2f89500c369ed": {
+      "company": "maa",
+      "evidence": {
+        "accession": "0001193125-26-197331",
+        "filed": "2026-04-30",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.06,
+            "prior_year": 1.54,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 124359000,
+            "prior_year": 181673000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 553725000,
+            "prior_year": 549295000,
+            "tag": "Revenues",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/912595/000119312526197331/maa-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "df6fcf02c9f2f89500c369ed",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/maa.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "e1439477f79e3601ba9b5aa7": {
+      "company": "vylr",
+      "evidence": {
+        "cik": 2128626
+      },
+      "first_seen": "2026-10-28",
+      "id": "e1439477f79e3601ba9b5aa7",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/vylr.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "e4f0f82106eee3617cc387c2": {
+      "company": "ares",
+      "evidence": {
+        "cik": 1176948
+      },
+      "first_seen": "2026-10-28",
+      "id": "e4f0f82106eee3617cc387c2",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/ares.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "e724fe6fecf2be63cdf1d2b2": {
+      "company": "dlr",
+      "evidence": {
+        "accession": "0001104659-26-054255",
+        "filed": "2026-05-01",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 0.46,
+            "prior_year": 0.27,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 179274000,
+            "prior_year": 109974000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 1635173000,
+            "prior_year": 1407637000,
+            "tag": "Revenues",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926054255/dlr-20260331x10q.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "e724fe6fecf2be63cdf1d2b2",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/dlr.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "e764f53431ecc27bf16717f5": {
+      "company": "ftv",
+      "evidence": {
+        "accession": "0001659166-26-000013",
+        "filed": "2026-04-30",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 0.44,
+            "prior_year": 0.5,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 136400000,
+            "prior_year": 171900000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 1069400000,
+            "prior_year": 993100000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-04-03",
+        "source": "https://www.sec.gov/Archives/edgar/data/1659166/000165916626000013/ftv-20260403.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "e764f53431ecc27bf16717f5",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/ftv.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "e8f443c404a73802fbd3aead": {
+      "company": "vtr",
+      "evidence": {
+        "cik": 740260
+      },
+      "first_seen": "2026-10-28",
+      "id": "e8f443c404a73802fbd3aead",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/vtr.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "edeb84677b362b4bb3678657": {
+      "company": "vmrk",
+      "evidence": {
+        "cik": 906107
+      },
+      "first_seen": "2026-10-28",
+      "id": "edeb84677b362b4bb3678657",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/vmrk.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "f0daff8ed1323d5f3880e729": {
+      "company": "so",
+      "evidence": {
+        "accession": "0000092122-26-000034",
+        "filed": "2026-04-30",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.2,
+            "prior_year": 1.21,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 1356000000,
+            "prior_year": 1334000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 8040000000,
+            "prior_year": 7591000000,
+            "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/92122/000009212226000034/so-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "f0daff8ed1323d5f3880e729",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/so.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "f2936e953b77c33e2472071c": {
+      "company": "vmc",
+      "evidence": {
+        "accession": "0001628280-26-028318",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.26,
+            "prior_year": 0.97,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 165500000,
+            "prior_year": 128900000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 1755900000,
+            "prior_year": 1634600000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1396009/000162828026028318/vmc-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "f2936e953b77c33e2472071c",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/vmc.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "f38fb832593af42551756fdf": {
+      "company": "frt",
+      "evidence": {
+        "accession": "0000034903-26-000026",
+        "filed": "2026-05-01",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.81,
+            "prior_year": 0.72,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 159099000,
+            "prior_year": 63768000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 341084000,
+            "prior_year": 309154000,
+            "tag": "Revenues",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000026/frt-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "f38fb832593af42551756fdf",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/frt.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "f4938ec19343a379f40cb114": {
+      "company": "wdc",
+      "evidence": {
+        "article_reviewed": "2026-10-26",
+        "article_sources": [
+          {
+            "title": "Western Digital Q1 FY2027 earnings release, SEC Exhibit 99.1",
+            "url": "https://www.sec.gov/Archives/edgar/data/106040/000162828026066882/a4ex991-pressreleaseq127.htm"
+          },
+          {
+            "title": "Western Digital Q1 FY2027 segment disclosure, SEC",
+            "url": "https://www.sec.gov/Archives/edgar/data/106040/000162828026066933/R8.htm"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-066933",
+          "filed": "2026-10-23",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 4.63,
+              "prior_year": 3.07,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 1779000000,
+              "prior_year": 1182000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 4381000000,
+              "prior_year": 2818000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-10-02",
+          "source": "https://www.sec.gov/Archives/edgar/data/106040/000162828026066933/wdc-20261002.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "f4938ec19343a379f40cb114",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/western-digital-earnings-ai-storage-cash-flow.md",
+        "content/earnings-profiles/wdc.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "f4e16d8a65ccc682801e4124": {
+      "company": "v",
+      "evidence": {
+        "cik": 1403161
+      },
+      "first_seen": "2026-10-28",
+      "id": "f4e16d8a65ccc682801e4124",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/v.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "f4f0d8b179ff98893a5fe466": {
+      "company": "ko",
+      "evidence": {
+        "accession": "0001628280-26-028802",
+        "filed": "2026-04-30",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 0.91,
+            "prior_year": 0.77,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 3924000000,
+            "prior_year": 3330000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 12472000000,
+            "prior_year": 11129000000,
+            "tag": "Revenues",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-04-03",
+        "source": "https://www.sec.gov/Archives/edgar/data/21344/000162828026028802/ko-20260403.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "f4f0d8b179ff98893a5fe466",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/ko.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "f61325f5cbcd58e729ee7239": {
+      "company": "amzn",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "company announcement",
+            "url": "https://www.aboutamazon.com/company-news/amazon-germany-investment"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001018724-26-000026",
+          "filed": "2026-07-31",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 5.75,
+              "prior_year": 1.68,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 62647000000,
+              "prior_year": 18164000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 200606000000,
+              "prior_year": 167702000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "f61325f5cbcd58e729ee7239",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/amazon-germany-investment-returns.md",
+        "content/earnings-profiles/amzn.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "f7a4e7a66773c8a1a6865b28": {
+      "company": "es",
+      "evidence": {
+        "cik": 72741
+      },
+      "first_seen": "2026-10-28",
+      "id": "f7a4e7a66773c8a1a6865b28",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/es.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "f7e53aa39b72ccb691cce3e4": {
+      "company": "hona",
+      "evidence": {
+        "cik": 2089271
+      },
+      "first_seen": "2026-10-28",
+      "id": "f7e53aa39b72ccb691cce3e4",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/hona.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "f95a5c551c3d1f0ef39781ae": {
+      "company": "oxy",
+      "evidence": {
+        "cik": 797468
+      },
+      "first_seen": "2026-10-28",
+      "id": "f95a5c551c3d1f0ef39781ae",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/oxy.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "fb87998f103d5b22f3bd277d": {
+      "company": "axp",
+      "evidence": {
+        "article_reviewed": "2026-10-26",
+        "article_sources": [
+          {
+            "title": "American Express Q3 2026 results, SEC Exhibit 99.1",
+            "url": "https://www.sec.gov/Archives/edgar/data/4962/000000496226000405/q326exhibit991.htm"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000004962-26-000409",
+          "filed": "2026-10-23",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 5.42,
+              "prior_year": 4.14,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 3712000000,
+              "prior_year": 2902000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 20062000000,
+              "prior_year": 18426000000,
+              "tag": "RevenuesNetOfInterestExpense",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/4962/000000496226000409/axp-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "fb87998f103d5b22f3bd277d",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/american-express-earnings-spending-adjusted-profit.md",
+        "content/earnings-profiles/axp.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "fd5bebf481732f4ed5c852f9": {
+      "company": "hubb",
+      "evidence": {
+        "accession": "0001628280-26-029110",
+        "filed": "2026-05-01",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 3.41,
+            "prior_year": 3.03,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 181800000,
+            "prior_year": 163200000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 1516700000,
+            "prior_year": 1365200000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/48898/000162828026029110/hubb-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "fd5bebf481732f4ed5c852f9",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/hubb.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "fd6bec1d2d00d480890d6ca7": {
+      "company": "googl",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "Reuters — first-half loss and financing revaluation, 20 October 2026",
+            "url": "https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/"
+          },
+          {
+            "title": "Wall Street Journal — draft IPO disclosures, 20 October 2026",
+            "url": "https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1"
+          },
+          {
+            "title": "Bloomberg — third-quarter investor presentation, 15 October 2026",
+            "url": "https://news.bloomberglaw.com/tech-and-telecom-law/anthropic-revenue-hits-16-8-billion-in-quarter-before-ipo-1"
+          },
+          {
+            "title": "Reuters — investor valuation expectations, 15 October 2026",
+            "url": "https://www.reuters.com/business/finance/investors-temper-anthropic-ipo-valuation-expectations-over-revenue-growth-2026-10-15/"
+          },
+          {
+            "title": "Anthropic — Series H funding announcement",
+            "url": "https://www.anthropic.com/news/series-h"
+          },
+          {
+            "title": "Anthropic — confidential draft S-1 announcement",
+            "url": "https://www.anthropic.com/news/confidential-draft-s1-sec"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001652044-26-000071",
+          "filed": "2026-07-23",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 9.11,
+              "prior_year": 2.31,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 112193000000,
+              "prior_year": 28196000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 119796000000,
+              "prior_year": 96428000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "fd6bec1d2d00d480890d6ca7",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/anthropic-loss-ipo-valuation.md",
+        "content/earnings-profiles/googl.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "fea87230057098e58bbf92b7": {
+      "company": "ball",
+      "evidence": {
+        "cik": 9389
+      },
+      "first_seen": "2026-10-28",
+      "id": "fea87230057098e58bbf92b7",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/ball.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    }
+  },
+  "rules": [],
+  "version": 1
+}
