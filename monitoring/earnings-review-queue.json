@@ -1360,7 +1360,10 @@
       ],
       "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
       "severity": "medium",
-      "status": "pending"
+      "status": "drafted",
+      "decision_note": "Compared Q3 10-Q revenue attribution with the shareholder letter and live article. Additive update prepared; no separate article warranted. See audit 632d651636ddebab9ca5c98e. 38 offline tests passed; full local render blocked by missing existing Robinhood cover.",
+      "decided": "2026-10-28",
+      "pull_request": "https://github.com/davidomarayt/compound/pull/59"
     },
     "3cbc5cb6fe9c07d7f5bae717": {
       "company": "msft",
