@@ -2,33 +2,33 @@
   "cik": 759944,
   "company": "Citizens Financial Group",
   "latest": {
-    "accession": "0000759944-26-000206",
-    "filed": "2026-10-16",
-    "form": "8-K",
+    "accession": "0000759944-26-000213",
+    "filed": "2026-10-28",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 1.41,
         "prior_year": 1.05,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 636000000.0,
-        "prior_year": 494000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 636000000,
+        "prior_year": 494000000,
+        "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2322000000.0,
-        "prior_year": 2118000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 2322000000,
+        "prior_year": 2118000000,
+        "tag": "InterestIncomeExpenseNet + NoninterestIncome",
         "unit": "USD"
       }
     },
     "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/759944/000075994426000206/a3q26earningsrelease.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/759944/000075994426000213/cfg-20260930.htm"
   },
   "periods": [
     {
@@ -53,7 +53,7 @@
         "revenue": {
           "current": 2168000000,
           "prior_year": 1935000000,
-          "tag": "Revenues",
+          "tag": "InterestIncomeExpenseNet + NoninterestIncome",
           "unit": "USD"
         }
       },
@@ -82,7 +82,7 @@
         "revenue": {
           "current": 2283000000,
           "prior_year": 2037000000,
-          "tag": "Revenues",
+          "tag": "InterestIncomeExpenseNet + NoninterestIncome",
           "unit": "USD"
         }
       },
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/759944/000075994426000148/cfg-20260630.htm"
     },
     {
-      "accession": "0000759944-26-000206",
-      "filed": "2026-10-16",
-      "form": "8-K",
+      "accession": "0000759944-26-000213",
+      "filed": "2026-10-28",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 1.41,
           "prior_year": 1.05,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
-          "current": 636000000.0,
-          "prior_year": 494000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 636000000,
+          "prior_year": 494000000,
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
-          "current": 2322000000.0,
-          "prior_year": 2118000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 2322000000,
+          "prior_year": 2118000000,
+          "tag": "InterestIncomeExpenseNet + NoninterestIncome",
           "unit": "USD"
         }
       },
       "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/759944/000075994426000206/a3q26earningsrelease.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/759944/000075994426000213/cfg-20260930.htm"
     }
   ],
-  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CFG",
-  "updated": "2026-10-26"
+  "updated": "2026-10-28"
 }

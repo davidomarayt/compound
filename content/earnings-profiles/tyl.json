@@ -2,33 +2,33 @@
   "cik": 860731,
   "company": "Tyler Technologies",
   "latest": {
-    "accession": "0000860731-26-000050",
-    "filed": "2026-07-29",
+    "accession": "0000860731-26-000058",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.23,
+        "current": 2.33,
         "prior_year": 1.93,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 93512000,
-        "prior_year": 84627000,
+        "current": 95074000,
+        "prior_year": 84393000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 645096000,
-        "prior_year": 596117000,
+        "current": 647566000,
+        "prior_year": 595879000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/860731/000086073126000050/tyl-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/860731/000086073126000058/tyl-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/860731/000086073126000050/tyl-20260630.htm"
+    },
+    {
+      "accession": "0000860731-26-000058",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.33,
+          "prior_year": 1.93,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 95074000,
+          "prior_year": 84393000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 647566000,
+          "prior_year": 595879000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/860731/000086073126000058/tyl-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TYL",
-  "updated": "2026-10-15"
+  "updated": "2026-10-28"
 }

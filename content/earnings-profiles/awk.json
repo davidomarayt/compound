@@ -2,33 +2,33 @@
   "cik": 1410636,
   "company": "American Water Works",
   "latest": {
-    "accession": "0001410636-26-000120",
-    "filed": "2026-07-29",
+    "accession": "0001410636-26-000149",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.61,
-        "prior_year": 1.48,
+        "current": 1.94,
+        "prior_year": 1.94,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 315000000,
-        "prior_year": 289000000,
+        "current": 387000000,
+        "prior_year": 379000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1350000000,
-        "prior_year": 1272000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 1510000000,
+        "prior_year": 1451000000,
+        "tag": "RegulatedAndUnregulatedOperatingRevenue",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1410636/000141063626000120/awk-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1410636/000141063626000149/awk-20260930.htm"
   },
   "periods": [
     {
@@ -51,9 +51,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 1203000000,
-          "prior_year": 1134000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 1207000000,
+          "prior_year": 1142000000,
+          "tag": "RegulatedAndUnregulatedOperatingRevenue",
           "unit": "USD"
         }
       },
@@ -80,17 +80,46 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 1350000000,
-          "prior_year": 1272000000,
-          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "current": 1355000000,
+          "prior_year": 1276000000,
+          "tag": "RegulatedAndUnregulatedOperatingRevenue",
           "unit": "USD"
         }
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1410636/000141063626000120/awk-20260630.htm"
+    },
+    {
+      "accession": "0001410636-26-000149",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.94,
+          "prior_year": 1.94,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 387000000,
+          "prior_year": 379000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1510000000,
+          "prior_year": 1451000000,
+          "tag": "RegulatedAndUnregulatedOperatingRevenue",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1410636/000141063626000149/awk-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "AWK",
-  "updated": "2026-10-15"
+  "updated": "2026-10-28"
 }
