@@ -30,7 +30,10 @@
     "new_story": "failed_duplicate_intent",
     "new_photo": "not_applicable_existing_article",
     "publication": "not_attempted",
-    "source_checks": "passed_for_added_paragraph"
+    "source_checks": "passed_for_added_paragraph",
+    "offline_tests": "38 passed",
+    "build": "blocked: existing Robinhood cover missing from fresh checkout",
+    "render": "not verified"
   },
   "image_provenance": "Existing credited archival Pexels photo unchanged; no new image selected.",
   "scope_limit": "Added paragraph verified; this is not a claim that the entire original article was re-audited.",
@@ -39,5 +42,6 @@
     "earnings_monitor": "success 40620562555",
     "site": "success 40620654882",
     "mag7": "failure 40522298253: API workspace scope error; see issue 56. No API request retried."
-  }
+  },
+  "pull_request": "https://github.com/davidomarayt/compound/pull/59"
 }
