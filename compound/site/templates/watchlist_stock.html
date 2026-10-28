@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block head_title %}{{ company.name }} ({{ company.ticker }}) Stock — Chart, News &amp; Research | Compound{% endblock %}
 {% block meta %}<meta name="description" content="{{ company.name }} ({{ company.ticker }}) on {{ company.exchange }}: share-price chart, listing details, news and research from Compound."><meta property="og:title" content="{{ company.name }} Stock Research | Compound"><meta property="og:url" content="{{ site_url }}/stocks/{{ company.slug }}/">{% endblock %}
-{% block head %}<link rel="canonical" href="{{ site_url }}/stocks/{{ company.slug }}/">{% if not has_coverage %}<meta name="robots" content="noindex,follow">{% endif %}{% endblock %}
+{% block head %}<link rel="canonical" href="{{ site_url }}/stocks/{{ company.slug }}/">{% endblock %}
 {% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=10"><link rel="stylesheet" href="/static/company-watchlist.css?v=1"><script src="/static/tradingview-earnings.js?v=4" defer></script>{% endblock %}
 {% block content %}
 <div class="earnings-hub stocks-company">

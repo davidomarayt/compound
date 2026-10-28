@@ -3,7 +3,7 @@ import json
 from compound.site.build import build_site
 
 
-def test_sp500_directory_profiles_and_nonindexing(settings):
+def test_sp500_directory_profiles_and_indexing(settings):
     registry={
         'source':'https://en.wikipedia.org/wiki/List_of_S%26P_500_companies',
         'checked':'2026-10-10', 'company_count':2, 'security_count':3,
@@ -53,14 +53,14 @@ A sourced report.
     assert 'FY2026 Q3' in apple
     assert '2026-09-30' in apple
     assert 'name="robots" content="noindex,follow"' not in apple
-    assert 'name="robots" content="noindex,follow"' in alphabet
+    assert 'name="robots" content="noindex,follow"' not in alphabet
     assert 'Verified FY2026' not in alphabet
     assert 'Awaiting a verified SEC filing' in alphabet
     assert 'one report per business' in hub.lower() or 'one live report per company' in hub.lower()
     assert 'summaryies' not in apple
     assert 'summaryies' not in alphabet
     assert '<loc>https://example.test/stocks/aapl/</loc>' in sitemap
-    assert '<loc>https://example.test/stocks/googl/</loc>' not in sitemap
+    assert '<loc>https://example.test/stocks/googl/</loc>' in sitemap
     assert '/static/earnings-directory.js?v=1' in hub
     stocks=(p/'stocks'/'index.html').read_text()
     assert '<link rel="canonical" href="https://example.test/stocks/">' in stocks

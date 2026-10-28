@@ -121,7 +121,7 @@ Primary-source analysis of OpenAI.
     assert 'https://example.test/stocks/spcx/' in legacy
     assert 'name="robots" content="noindex,follow"' not in spcx
     assert 'data-tv-symbol="KRX:005930"' in samsung
-    assert 'name="robots" content="noindex,follow"' in samsung
+    assert 'name="robots" content="noindex,follow"' not in samsung
     assert "OpenAI original research" in openai
     assert "Privately held" in openai
     assert "tradingview-widget" not in openai
@@ -132,7 +132,7 @@ Primary-source analysis of OpenAI.
     assert '<loc>https://example.test/stocks/spcx/</loc>' in sitemap
     assert '<loc>https://example.test/companies/openai/</loc>' in sitemap
     assert '<loc>https://example.test/companies/</loc>' in sitemap
-    assert '<loc>https://example.test/stocks/005930-ks/</loc>' not in sitemap
+    assert '<loc>https://example.test/stocks/005930-ks/</loc>' in sitemap
     assert '<loc>https://example.test/companies/canva/</loc>' not in sitemap
     assert any(x["url"] == "/companies/" for x in search)
     assert any(x["url"] == "/stocks/spcx/" for x in search)

@@ -56,14 +56,14 @@ General advice, not about Alphabet or Apple.
     assert 'name="robots" content="noindex,follow"' not in profile
     assert 'href="/stocks/googl/"' in article
     assert "Alphabet Inc." in article
-    assert 'name="robots" content="noindex,follow"' in apple
+    assert 'name="robots" content="noindex,follow"' not in apple
     assert 'Alphabet independent research note' not in apple
     assert 'How to invest in shares' not in profile
     assert 'name="robots" content="noindex,follow"' in alias
     assert 'content="0; url=/stocks/googl/"' in alias
     assert 'href="https://example.test/stocks/googl/"' in old
     assert '<loc>https://example.test/stocks/googl/</loc>' in sitemap
-    assert '<loc>https://example.test/stocks/aapl/</loc>' not in sitemap
+    assert '<loc>https://example.test/stocks/aapl/</loc>' in sitemap
     assert '<loc>https://example.test/stocks/goog/</loc>' not in sitemap
     assert '<loc>https://example.test/wealth/earnings/company/googl/</loc>' not in sitemap
     directory = (root / "stocks/index.html").read_text(encoding="utf-8")

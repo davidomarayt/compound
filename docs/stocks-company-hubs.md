@@ -18,10 +18,10 @@ The generator automatically groups exact matches into earnings reports, latest c
 
 ## Quality, search and advertising
 
-Do not index hundreds of boilerplate profiles. A company profile is noindex and excluded from `sitemap.xml` and `search.json` until at least one SEC-verified earnings report or explicitly ticker-tagged original article is published. Empty profile pages remain accessible from the browseable directory, but are not shown as finished research or given AdSense ads. **Coverage presence is only a minimum indexability gate, not proof of substantive SEO value.** Review thin profile quality, source citations, news relevance, data delays and ad placement before expanding content.
+All canonical public stock profiles are eligible for search indexing and included in `sitemap.xml`, including profiles awaiting earnings or editorial coverage. Do not apply `noindex` based on coverage availability. Profiles without dated coverage omit sitemap `lastmod`. Internal `search.json` continues to highlight profiles with coverage; unfinished research is not presented as complete and existing advertising eligibility rules remain unchanged. Legacy and alternate-ticker redirect URLs retain `noindex` and stay out of the sitemap. Indexability does not guarantee Google indexing or ranking; continue improving source citations and company-specific research.
 
 Market prices are TradingView-provided and may be delayed; SEC accounting statements are not equivalent to share prices. No claims are made that a given security is eligible for a Personal Investment Account.
 
 ## QA
 
-Run `pytest -q`, build the site, and verify `/stocks/`, one covered profile, one noindex profile, alternate-ticker alias, and old earnings-company redirect. Check canonical, HTML title, search and sitemap targets, mobile TradingView sizing, and links from a matching article.
+Run `pytest -q`, build the site, and verify `/stocks/`, one covered profile, one profile awaiting coverage, alternate-ticker alias, and old earnings-company redirect. Check canonical, HTML title, search and sitemap targets, mobile TradingView sizing, and links from a matching article.

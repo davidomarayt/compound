@@ -1672,8 +1672,8 @@ def build_site(settings: Settings) -> dict:
                 "description": description, "image": "",
                 "reading_minutes": 5, "date_label": "Insurance calculator",
             })
-    # Only company profiles with substantive associated reports or editorial
-    # coverage are surfaced to search; empty templates remain noindex.
+    # Internal site search highlights profiles with associated coverage.
+    # All canonical stock profiles remain eligible for external search indexing.
     for company in registry_members:
         if not stock_coverage(company):
             continue
@@ -1819,6 +1819,17 @@ def build_site(settings: Settings) -> dict:
              ([date.fromisoformat(extra_dashboards[c["slug"]]["latest_filed"])]
               if extra_dashboards[c["slug"]] and extra_dashboards[c["slug"]]["latest_filed"] else [])).isoformat())
         for c in extra_listed if listed_stories[c["slug"]] or extra_dashboards[c["slug"]]
+    )
+    # Public stock profiles are indexable even before editorial coverage exists.
+    # Without dated coverage, omit lastmod rather than inventing an update date.
+    sitemap_entries.extend(
+        (settings.site_base_url + f'/stocks/{company["symbol"].lower()}/', None)
+        for company in registry_members if not stock_coverage(company)
+    )
+    sitemap_entries.extend(
+        (settings.site_base_url + f'/stocks/{c["slug"]}/', None)
+        for c in extra_listed
+        if not (listed_stories[c["slug"]] or extra_dashboards[c["slug"]])
     )
     sitemap_entries.extend(
         (settings.site_base_url + f'/companies/{c["slug"]}/',
