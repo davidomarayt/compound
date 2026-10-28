@@ -210,3 +210,9 @@ Subclass `compound.sources.base.Source`, implement `fetch()` returning `SourceIt
 goes live.
 
 <!-- production deploy trigger: Budget 2027 calculators, 2026-10-06 -->
+
+## Automated company review
+
+The company earnings maintenance layer audits saved profiles and existing company articles,
+then tracks evidence-backed review work without creating duplicate quarterly articles.
+Run `python scripts/earnings_review.py`; see [automation and review rules](docs/earnings-review-automation.md).
