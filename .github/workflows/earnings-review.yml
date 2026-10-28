@@ -1,0 +1,65 @@
+name: Company Earnings Review Queue
+
+on:
+  schedule:
+    - cron: '41 6 * * *'
+  push:
+    branches: ['claude/clever-babbage-uibieq']
+    paths:
+      - 'scripts/earnings_review.py'
+      - '.github/workflows/earnings-review.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Share the existing earnings writer lock to avoid stale-data commits.
+concurrency:
+  group: compound-earnings-publisher
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    if: github.ref == 'refs/heads/claude/clever-babbage-uibieq'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/clever-babbage-uibieq
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check -e '.[dev]'
+      - name: Verify queue, fiscal-period and recovery checks offline
+        run: python -m pytest -q tests/test_earnings_review.py
+      - name: Audit company data and existing research articles
+        run: python scripts/earnings_review.py
+      - name: Save durable review queue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- monitoring/earnings-review-queue.json monitoring/earnings-review.md
+          if git diff --cached --quiet; then
+            echo 'Review queue unchanged.'
+            exit 0
+          fi
+          git commit -m 'Refresh company earnings and article review queue'
+          # Explicit scope: only review records are committed; no content publication.
+          git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)" push origin HEAD:"$GITHUB_REF_NAME"
+      - name: Preserve review report
+        if: always() && hashFiles('monitoring/earnings-review.md') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: company-review-${{ github.run_id }}
+          path: |
+            monitoring/earnings-review.md
+            monitoring/earnings-review-queue.json
+          retention-days: 30
+      - name: Summarise review queue
+        if: always() && hashFiles('monitoring/earnings-review.md') != ''
+        run: head -c 40000 monitoring/earnings-review.md >> "$GITHUB_STEP_SUMMARY"
