@@ -2,33 +2,33 @@
   "cik": 77360,
   "company": "Pentair",
   "latest": {
-    "accession": "0000077360-26-000027",
-    "filed": "2026-04-28",
+    "accession": "0000077360-26-000058",
+    "filed": "2026-10-27",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.05,
-        "prior_year": 0.93,
+        "current": 0.91,
+        "prior_year": 1.12,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 172400000,
-        "prior_year": 154900000,
+        "current": 145100000,
+        "prior_year": 184300000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1036700000,
-        "prior_year": 1010400000,
+        "current": 976400000,
+        "prior_year": 1022000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000027/pnr-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000058/pnr-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000027/pnr-20260331.htm"
+    },
+    {
+      "accession": "0000077360-26-000045",
+      "filed": "2026-07-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.8,
+          "prior_year": 0.9,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 128600000,
+          "prior_year": 148500000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 932600000,
+          "prior_year": 1123100000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000045/pnr-20260630.htm"
+    },
+    {
+      "accession": "0000077360-26-000058",
+      "filed": "2026-10-27",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.91,
+          "prior_year": 1.12,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 145100000,
+          "prior_year": 184300000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 976400000,
+          "prior_year": 1022000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000058/pnr-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "PNR",
-  "updated": "2026-10-15"
+  "updated": "2026-10-28"
 }

@@ -2,33 +2,33 @@
   "cik": 49196,
   "company": "Huntington Bancshares",
   "latest": {
-    "accession": "0000049196-26-000084",
-    "filed": "2026-10-22",
-    "form": "8-K",
+    "accession": "0000049196-26-000090",
+    "filed": "2026-10-27",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 0.33,
         "prior_year": 0.41,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
         "current": 721000000,
         "prior_year": 629000000,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
         "current": 2791000000,
         "prior_year": 2134000000,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "InterestIncomeExpenseNet + NoninterestIncome",
         "unit": "USD"
       }
     },
     "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/49196/000004919626000084/hban20260930_8kex991.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/49196/000004919626000090/hban-20260930.htm"
   },
   "periods": [
     {
@@ -70,19 +70,19 @@
         "diluted_eps": {
           "current": 0.33,
           "prior_year": 0.34,
-          "tag": "us-gaap:EarningsPerShareDiluted; SEC inline XBRL reviewed",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
-          "current": 727000000.0,
-          "prior_year": 536000000.0,
-          "tag": "us-gaap:NetIncomeLoss; SEC inline XBRL reviewed",
+          "current": 727000000,
+          "prior_year": 536000000,
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
-          "current": 2837000000.0,
-          "prior_year": 1938000000.0,
-          "tag": "us-gaap:InterestIncomeExpenseNet + us-gaap:NoninterestIncome; SEC inline XBRL reviewed",
+          "current": 2837000000,
+          "prior_year": 1938000000,
+          "tag": "InterestIncomeExpenseNet + NoninterestIncome",
           "unit": "USD"
         }
       },
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/49196/000004919626000066/hban-20260630.htm"
     },
     {
-      "accession": "0000049196-26-000084",
-      "filed": "2026-10-22",
-      "form": "8-K",
+      "accession": "0000049196-26-000090",
+      "filed": "2026-10-27",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 0.33,
           "prior_year": 0.41,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
           "current": 721000000,
           "prior_year": 629000000,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
           "current": 2791000000,
           "prior_year": 2134000000,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "InterestIncomeExpenseNet + NoninterestIncome",
           "unit": "USD"
         }
       },
       "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/49196/000004919626000084/hban20260930_8kex991.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/49196/000004919626000090/hban-20260930.htm"
     }
   ],
-  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "HBAN",
-  "updated": "2026-10-26"
+  "updated": "2026-10-28"
 }
