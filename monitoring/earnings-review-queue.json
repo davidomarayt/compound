@@ -6,7 +6,226 @@
     "mapped_articles": 39,
     "profiles_scanned": 447
   },
-  "history": [],
+  "history": [
+    {
+      "company": "tsla",
+      "decided": "2026-10-28",
+      "decision_note": "Verified Q3 energy results and distinct tariff effects against the SEC filing and official IR release. Canonical update only; fingerprint 6023d7373859527292a5bd32. Build held by unrelated missing Robinhood cover.",
+      "evidence": {
+        "article_reviewed": "2026-10-18",
+        "article_sources": [
+          {
+            "title": "third-quarter production and deployment announcement",
+            "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments"
+          },
+          {
+            "title": "June-quarter SEC filing",
+            "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+          },
+          {
+            "title": "The Wall Street Journal reported an energy-leadership departure on 16 October",
+            "url": "https://www.wsj.com/business/autos/teslas-energy-boss-leaves-the-company-a90d8f2b"
+          }
+        ],
+        "canonical_path": "/wealth/tesla-energy-storage-margins/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-066775",
+          "filed": "2026-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 0.22,
+              "prior_year": 0.39,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 787000000,
+              "prior_year": 1373000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 28046000000,
+              "prior_year": 28095000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "10bcc2a4eacbc2e8e014fd71",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/tesla-energy-storage-margins.md",
+        "content/earnings-profiles/tsla.json"
+      ],
+      "pull_request": "https://github.com/davidomarayt/compound/pull/60",
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "retired": "2026-10-28",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "medium",
+      "status": "drafted"
+    },
+    {
+      "company": "nflx",
+      "decided": "2026-10-28",
+      "decision_note": "Compared Q3 10-Q revenue attribution with the shareholder letter and live article. Additive update prepared; no separate article warranted. See audit 632d651636ddebab9ca5c98e. 38 offline tests passed; full local render blocked by missing existing Robinhood cover.",
+      "evidence": {
+        "article_reviewed": "2026-10-20",
+        "article_sources": [
+          {
+            "title": "Netflix Q3 2026 shareholder letter, SEC 8-K Exhibit 99.1",
+            "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000290/ex991_q326.htm"
+          },
+          {
+            "title": "Netflix Q1 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000138/nflx-20260331.htm"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001065280-26-000291",
+          "filed": "2026-10-21",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 0.87,
+              "prior_year": 0.59,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 3663927000,
+              "prior_year": 2546916000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 12874176000,
+              "prior_year": 11510307000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000291/nflx-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "3b0c73428026156e0e51b942",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/netflix-earnings-growth-advertising-outlook.md",
+        "content/earnings-profiles/nflx.json"
+      ],
+      "pull_request": "https://github.com/davidomarayt/compound/pull/59",
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "retired": "2026-10-28",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "medium",
+      "status": "drafted"
+    },
+    {
+      "company": "iqv",
+      "evidence": {
+        "accession": "0001628280-26-030675",
+        "filed": "2026-05-05",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.61,
+            "prior_year": 1.4,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 274000000,
+            "prior_year": 249000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 4151000000,
+            "prior_year": 3829000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1478242/000162828026030675/iqv-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "841f6ad6318dd2a283f0b47a",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/iqv.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "retired": "2026-10-28",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "medium",
+      "status": "pending"
+    },
+    {
+      "company": "pypl",
+      "evidence": {
+        "accession": "0001633917-26-000067",
+        "filed": "2026-05-05",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.21,
+            "prior_year": 1.29,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 1113000000,
+            "prior_year": 1287000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 8353000000,
+            "prior_year": 7791000000,
+            "tag": "Revenues",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1633917/000163391726000067/pypl-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "bbdd5b741e9f26dbc90feb1a",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/earnings-profiles/pypl.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "retired": "2026-10-28",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "medium",
+      "status": "pending"
+    }
+  ],
   "jobs": {
     "034e8ea62b8335ecf649b5c8": {
       "company": "ma",
@@ -303,71 +522,6 @@
       "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
       "severity": "medium",
       "status": "pending"
-    },
-    "10bcc2a4eacbc2e8e014fd71": {
-      "company": "tsla",
-      "decided": "2026-10-28",
-      "decision_note": "Verified Q3 energy results and distinct tariff effects against the SEC filing and official IR release. Canonical update only; fingerprint 6023d7373859527292a5bd32. Build held by unrelated missing Robinhood cover.",
-      "evidence": {
-        "article_reviewed": "2026-10-18",
-        "article_sources": [
-          {
-            "title": "third-quarter production and deployment announcement",
-            "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments"
-          },
-          {
-            "title": "June-quarter SEC filing",
-            "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
-          },
-          {
-            "title": "The Wall Street Journal reported an energy-leadership departure on 16 October",
-            "url": "https://www.wsj.com/business/autos/teslas-energy-boss-leaves-the-company-a90d8f2b"
-          }
-        ],
-        "canonical_path": "/wealth/tesla-energy-storage-margins/",
-        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
-        "latest_saved_result": {
-          "accession": "0001628280-26-066775",
-          "filed": "2026-10-22",
-          "form": "10-Q",
-          "fp": "Q3",
-          "fy": 2026,
-          "metrics": {
-            "diluted_eps": {
-              "current": 0.22,
-              "prior_year": 0.39,
-              "tag": "EarningsPerShareDiluted",
-              "unit": "USD/shares"
-            },
-            "net_income": {
-              "current": 787000000,
-              "prior_year": 1373000000,
-              "tag": "NetIncomeLoss",
-              "unit": "USD"
-            },
-            "revenue": {
-              "current": 28046000000,
-              "prior_year": 28095000000,
-              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-              "unit": "USD"
-            }
-          },
-          "period_end": "2026-09-30",
-          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
-        }
-      },
-      "first_seen": "2026-10-28",
-      "id": "10bcc2a4eacbc2e8e014fd71",
-      "kind": "article_review",
-      "last_seen": "2026-10-28",
-      "paths": [
-        "content/wealth/tesla-energy-storage-margins.md",
-        "content/earnings-profiles/tsla.json"
-      ],
-      "pull_request": "https://github.com/davidomarayt/compound/pull/60",
-      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
-      "severity": "medium",
-      "status": "drafted"
     },
     "12374d854994476420edb231": {
       "company": "hon",
@@ -1306,67 +1460,6 @@
       "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
       "severity": "medium",
       "status": "pending"
-    },
-    "3b0c73428026156e0e51b942": {
-      "company": "nflx",
-      "evidence": {
-        "article_reviewed": "2026-10-20",
-        "article_sources": [
-          {
-            "title": "Netflix Q3 2026 shareholder letter, SEC 8-K Exhibit 99.1",
-            "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000290/ex991_q326.htm"
-          },
-          {
-            "title": "Netflix Q1 2026 Form 10-Q",
-            "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000138/nflx-20260331.htm"
-          }
-        ],
-        "canonical_path": "",
-        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
-        "latest_saved_result": {
-          "accession": "0001065280-26-000291",
-          "filed": "2026-10-21",
-          "form": "10-Q",
-          "fp": "Q3",
-          "fy": 2026,
-          "metrics": {
-            "diluted_eps": {
-              "current": 0.87,
-              "prior_year": 0.59,
-              "tag": "EarningsPerShareDiluted",
-              "unit": "USD/shares"
-            },
-            "net_income": {
-              "current": 3663927000,
-              "prior_year": 2546916000,
-              "tag": "NetIncomeLoss",
-              "unit": "USD"
-            },
-            "revenue": {
-              "current": 12874176000,
-              "prior_year": 11510307000,
-              "tag": "Revenues",
-              "unit": "USD"
-            }
-          },
-          "period_end": "2026-09-30",
-          "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000291/nflx-20260930.htm"
-        }
-      },
-      "first_seen": "2026-10-28",
-      "id": "3b0c73428026156e0e51b942",
-      "kind": "article_review",
-      "last_seen": "2026-10-28",
-      "paths": [
-        "content/wealth/netflix-earnings-growth-advertising-outlook.md",
-        "content/earnings-profiles/nflx.json"
-      ],
-      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
-      "severity": "medium",
-      "status": "drafted",
-      "decision_note": "Compared Q3 10-Q revenue attribution with the shareholder letter and live article. Additive update prepared; no separate article warranted. See audit 632d651636ddebab9ca5c98e. 38 offline tests passed; full local render blocked by missing existing Robinhood cover.",
-      "decided": "2026-10-28",
-      "pull_request": "https://github.com/davidomarayt/compound/pull/59"
     },
     "3cbc5cb6fe9c07d7f5bae717": {
       "company": "msft",
@@ -2814,45 +2907,65 @@
       "severity": "medium",
       "status": "pending"
     },
-    "841f6ad6318dd2a283f0b47a": {
-      "company": "iqv",
+    "842970af7cead82840200005": {
+      "company": "nflx",
       "evidence": {
-        "accession": "0001628280-26-030675",
-        "filed": "2026-05-05",
-        "form": "10-Q",
-        "fp": "Q1",
-        "fy": 2026,
-        "metrics": {
-          "diluted_eps": {
-            "current": 1.61,
-            "prior_year": 1.4,
-            "tag": "EarningsPerShareDiluted",
-            "unit": "USD/shares"
+        "article_reviewed": "2026-10-20",
+        "article_sources": [
+          {
+            "title": "Netflix Q3 2026 Form 10-Q, revenue growth reconciliation",
+            "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000291/nflx-20260930.htm"
           },
-          "net_income": {
-            "current": 274000000,
-            "prior_year": 249000000,
-            "tag": "NetIncomeLoss",
-            "unit": "USD"
+          {
+            "title": "Netflix Q3 2026 shareholder letter, SEC 8-K Exhibit 99.1",
+            "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000290/ex991_q326.htm"
           },
-          "revenue": {
-            "current": 4151000000,
-            "prior_year": 3829000000,
-            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-            "unit": "USD"
+          {
+            "title": "Netflix Q1 2026 Form 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000138/nflx-20260331.htm"
           }
-        },
-        "period_end": "2026-03-31",
-        "source": "https://www.sec.gov/Archives/edgar/data/1478242/000162828026030675/iqv-20260331.htm"
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001065280-26-000291",
+          "filed": "2026-10-21",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 0.87,
+              "prior_year": 0.59,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 3663927000,
+              "prior_year": 2546916000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 12874176000,
+              "prior_year": 11510307000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000291/nflx-20260930.htm"
+        }
       },
       "first_seen": "2026-10-28",
-      "id": "841f6ad6318dd2a283f0b47a",
-      "kind": "coverage_check",
+      "id": "842970af7cead82840200005",
+      "kind": "article_review",
       "last_seen": "2026-10-28",
       "paths": [
-        "content/earnings-profiles/iqv.json"
+        "content/wealth/netflix-earnings-growth-advertising-outlook.md",
+        "content/earnings-profiles/nflx.json"
       ],
-      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
       "severity": "medium",
       "status": "pending"
     },
@@ -3584,48 +3697,6 @@
       "last_seen": "2026-10-28",
       "paths": [
         "content/earnings-profiles/hum.json"
-      ],
-      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
-      "severity": "medium",
-      "status": "pending"
-    },
-    "bbdd5b741e9f26dbc90feb1a": {
-      "company": "pypl",
-      "evidence": {
-        "accession": "0001633917-26-000067",
-        "filed": "2026-05-05",
-        "form": "10-Q",
-        "fp": "Q1",
-        "fy": 2026,
-        "metrics": {
-          "diluted_eps": {
-            "current": 1.21,
-            "prior_year": 1.29,
-            "tag": "EarningsPerShareDiluted",
-            "unit": "USD/shares"
-          },
-          "net_income": {
-            "current": 1113000000,
-            "prior_year": 1287000000,
-            "tag": "NetIncomeLoss",
-            "unit": "USD"
-          },
-          "revenue": {
-            "current": 8353000000,
-            "prior_year": 7791000000,
-            "tag": "Revenues",
-            "unit": "USD"
-          }
-        },
-        "period_end": "2026-03-31",
-        "source": "https://www.sec.gov/Archives/edgar/data/1633917/000163391726000067/pypl-20260331.htm"
-      },
-      "first_seen": "2026-10-28",
-      "id": "bbdd5b741e9f26dbc90feb1a",
-      "kind": "coverage_check",
-      "last_seen": "2026-10-28",
-      "paths": [
-        "content/earnings-profiles/pypl.json"
       ],
       "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
       "severity": "medium",
@@ -4738,6 +4809,72 @@
         "content/earnings-profiles/vtr.json"
       ],
       "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "ebc2af94dd4d36445aa1a430": {
+      "company": "tsla",
+      "evidence": {
+        "article_reviewed": "2026-10-18",
+        "article_sources": [
+          {
+            "title": "September-quarter SEC filing, segment results and tariff refunds",
+            "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+          },
+          {
+            "title": "third-quarter production and deployment announcement",
+            "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments"
+          },
+          {
+            "title": "June-quarter SEC filing",
+            "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+          },
+          {
+            "title": "The Wall Street Journal reported an energy-leadership departure on 16 October",
+            "url": "https://www.wsj.com/business/autos/teslas-energy-boss-leaves-the-company-a90d8f2b"
+          }
+        ],
+        "canonical_path": "/wealth/tesla-energy-storage-margins/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-066775",
+          "filed": "2026-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 0.22,
+              "prior_year": 0.39,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 787000000,
+              "prior_year": 1373000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 28046000000,
+              "prior_year": 28095000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "ebc2af94dd4d36445aa1a430",
+      "kind": "article_review",
+      "last_seen": "2026-10-28",
+      "paths": [
+        "content/wealth/tesla-energy-storage-margins.md",
+        "content/earnings-profiles/tsla.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
       "severity": "medium",
       "status": "pending"
     },

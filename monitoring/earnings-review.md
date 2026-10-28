@@ -4,7 +4,7 @@ Checked: 2026-10-28
 
 - 447 saved profiles checked against structural and issuer rules.
 - 40 existing company articles; 39 mapped to monitored issuers.
-- 140 pending review items; 1 recorded decisions.
+- 139 pending review items; 0 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -61,7 +61,7 @@ Saved evidence: https://www.sec.gov/Archives/edgar/data/1326801/0001628280260667
 
 ### NFLX · article_review · medium
 
-ID: `3b0c73428026156e0e51b942`
+ID: `842970af7cead82840200005`
 
 Newer filing than the article review date; assess whether claims or outlook need updating.
 
@@ -116,6 +116,16 @@ ID: `68a86b1b0041e706c5a9a256`
 Newer filing than the article review date; assess whether claims or outlook need updating.
 
 Files: `content/wealth/tesla-earnings-cash-flow-profit-investment.md`, `content/earnings-profiles/tsla.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
+
+### TSLA · article_review · medium
+
+ID: `ebc2af94dd4d36445aa1a430`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/tesla-energy-storage-margins.md`, `content/earnings-profiles/tsla.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
 
@@ -589,16 +599,6 @@ No saved profile for an active issuer. Check ingestion and official filings; nev
 
 Files: `content/earnings-profiles/invh.json`
 
-### IQV · coverage_check · medium
-
-ID: `841f6ad6318dd2a283f0b47a`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/iqv.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1478242/000162828026030675/iqv-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-05-05
-
 ### IRM · coverage_check · medium
 
 ID: `0cedd0b7965f628ea3a58560`
@@ -802,16 +802,6 @@ ID: `c05d3ca345a93cf80680273d`
 No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.
 
 Files: `content/earnings-profiles/ppl.json`
-
-### PYPL · coverage_check · medium
-
-ID: `bbdd5b741e9f26dbc90feb1a`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/pypl.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1633917/000163391726000067/pypl-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-05-05
 
 ### Q · coverage_check · medium
 
