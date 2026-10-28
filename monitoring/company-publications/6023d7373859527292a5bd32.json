@@ -81,5 +81,7 @@
     "date": "2026-10-28",
     "method": "Separate reread of added material claims against filing tables, Note 11 and MD&A; arithmetic recomputed",
     "unresolved_new_claims": []
-  }
+  },
+  "pull_request": "https://github.com/davidomarayt/compound/pull/60",
+  "publication_state": "not_published_existing_article_draft"
 }

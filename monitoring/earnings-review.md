@@ -4,7 +4,7 @@ Checked: 2026-10-28
 
 - 447 saved profiles checked against structural and issuer rules.
 - 40 existing company articles; 39 mapped to monitored issuers.
-- 141 pending review items; 0 recorded decisions.
+- 140 pending review items; 1 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -88,16 +88,6 @@ Newer filing than the article review date; assess whether claims or outlook need
 Files: `content/wealth/tesla-spacex-merger-2027.md`, `content/earnings-profiles/spcx.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
-
-### TSLA · article_review · medium
-
-ID: `10bcc2a4eacbc2e8e014fd71`
-
-Newer filing than the article review date; assess whether claims or outlook need updating.
-
-Files: `content/wealth/tesla-energy-storage-margins.md`, `content/earnings-profiles/tsla.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
 
 ### TSLA · article_review · medium
 
