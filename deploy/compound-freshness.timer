@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily Compound editorial freshness pilot
+
+[Timer]
+OnCalendar=*-*-* 06:00:00 Europe/Dublin
+Persistent=true
+RandomizedDelaySec=300
+Unit=compound-freshness.service
+
+[Install]
+WantedBy=timers.target

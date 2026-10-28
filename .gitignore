@@ -8,3 +8,5 @@ public/
 .pytest_cache/
 *.egg-info/
 review/
+
+data/*.sqlite3.lock

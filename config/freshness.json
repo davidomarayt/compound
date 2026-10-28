@@ -1,0 +1,24 @@
+{
+  "sources": {
+    "pv-grant": "https://www.seai.ie/grants/home-energy-grants/individual-grants/solar-electricity-grant",
+    "battery-grant": "https://www.seai.ie/grants/home-energy-grants/individual-grants/battery",
+    "export": "https://www.cru.ie/consumer-information/microgeneration/",
+    "tariffs": "https://www.seai.ie/plan-your-energy-journey/for-your-home/smart-living/smart-meters-and-tariffs"
+  },
+  "pages": {
+    "content/pages/solar-grants.md": ["pv-grant", "battery-grant"],
+    "content/pages/solar-batteries.md": ["battery-grant", "export"],
+    "content/pages/solar-export-rates.md": ["export"],
+    "content/pages/solar-costs.md": ["pv-grant", "battery-grant"],
+    "content/wealth/solar-panels-ireland.md": ["pv-grant", "battery-grant", "export"],
+    "content/wealth/solar-panels-vs-battery-ireland.md": ["pv-grant", "battery-grant", "export"],
+    "content/wealth/solar-export-payments-ireland-clean-export-guarantee.md": ["export"],
+    "content/wealth/electricity-tariffs-ireland.md": ["tariffs"],
+    "content/tool-guides/solar-payback-calculator.md": ["pv-grant", "export"],
+    "content/tool-guides/electricity-cost-calculator.md": ["tariffs"]
+  },
+  "calculator_files": ["content/tools.yml", "compound/site/static/tools.js", "compound/site/static/solar-hub.js"],
+  "max_attempts": 3,
+  "max_jobs_per_run": 4,
+  "daily_reserved_tokens": 200000
+}

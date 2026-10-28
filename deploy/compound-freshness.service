@@ -1,0 +1,17 @@
+[Unit]
+Description=Compound source freshness checks and review drafts
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=compound
+WorkingDirectory=/srv/compound
+EnvironmentFile=/srv/compound/.env
+ExecStart=/srv/compound/.venv/bin/python -m compound.freshness check --ai
+TimeoutStartSec=6min
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/srv/compound/data
+UMask=0077

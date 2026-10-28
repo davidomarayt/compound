@@ -210,3 +210,9 @@ Subclass `compound.sources.base.Source`, implement `fetch()` returning `SourceIt
 goes live.
 
 <!-- production deploy trigger: Budget 2027 calculators, 2026-10-06 -->
+
+## Private content freshness queue
+
+The electricity and solar maintenance pilot captures official evidence and prepares review-only
+updates to existing pages. Start with `python -m compound.freshness check`, then
+`python -m compound.freshness serve`. See [setup, limits and scheduling](docs/freshness-review-queue.md).
