@@ -29,6 +29,8 @@ image_credit: "Muaaz / Pexels — archival photograph, 21 August 2020; Pexels Li
 image_source: "https://www.pexels.com/photo/netflix-logo-on-smartphone-screen-5852135/"
 social_image: "/static/images/evergreen/netflix-earnings-growth-advertising-outlook.jpg"
 sources:
+- title: Netflix Q3 2026 Form 10-Q, revenue growth reconciliation
+  url: https://www.sec.gov/Archives/edgar/data/1065280/000106528026000291/nflx-20260930.htm
 - title: Netflix Q3 2026 shareholder letter, SEC 8-K Exhibit 99.1
   url: https://www.sec.gov/Archives/edgar/data/1065280/000106528026000290/ex991_q326.htm
 - title: Netflix Q1 2026 Form 10-Q
@@ -61,6 +63,10 @@ The figures come from Netflix’s [shareholder letter furnished as Exhibit 99.1 
 Revenue reached **$12.874 billion**, up **11.8% year on year** and **2.5% from Q2**. Operating income rose to **$4.459 billion**, while diluted earnings per share reached **$0.87**, compared with $0.80 in Q2 and $0.59 a year earlier. Net income increased approximately **43.9% year on year**.
 
 Subscription revenue was the main growth driver, supported by membership increases and pricing. Advertising also contributed. Netflix said customer churn improved year on year globally and in the US, and performed better than its forecast. That is encouraging evidence on retention, but it does not establish that viewing growth has accelerated everywhere.
+
+*Source update, 28 October 2026:* The subsequent [Q3 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1065280/000106528026000291/nflx-20260930.htm) quantifies those contributions: subscription revenue increased by **$1.057 billion** year on year, while advertising revenue increased by **$256 million**. These are increases from the prior-year quarter, not the total revenue of either business. Advertising can therefore contribute to reported growth even while management reduces its forecast for the full year.
+
+
 
 ## Q1, Q2 and Q3: growth slows as operating margins expand
 

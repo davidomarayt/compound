@@ -1,0 +1,43 @@
+{
+  "story_fingerprint": "632d651636ddebab9ca5c98e",
+  "company": "NFLX",
+  "date": "2026-10-28",
+  "status": "held",
+  "reason": "Existing canonical article already covers the growth/advertising forecast question; prepare an additive update instead of a new article.",
+  "article_path": "content/wealth/netflix-earnings-growth-advertising-outlook.md",
+  "queue_id": "3b0c73428026156e0e51b942",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000291/nflx-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000290/ex991_q326.htm"
+  ],
+  "claim_checks": [
+    {
+      "claim": "Subscription revenue growth was $1.057 billion and advertising revenue growth $256 million year over year in Q3.",
+      "evidence": "growth in subscription revenue of $1,057 million; increase of $256 million in advertising revenue",
+      "source": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000291/nflx-20260930.htm",
+      "location": "Management discussion, three months ended September 30, 2026",
+      "result": "Amounts and comparative period checked; no claim about absolute advertising revenue."
+    }
+  ],
+  "duplicate_checks": [
+    "EDITORIAL_TOPIC_INDEX.md",
+    "CONTENT_INVENTORY.md",
+    "data/content-inventory.json",
+    "Live canonical Netflix article",
+    "Open/recent PRs: no overlapping Netflix proposal found"
+  ],
+  "gate_results": {
+    "new_story": "failed_duplicate_intent",
+    "new_photo": "not_applicable_existing_article",
+    "publication": "not_attempted",
+    "source_checks": "passed_for_added_paragraph"
+  },
+  "image_provenance": "Existing credited archival Pexels photo unchanged; no new image selected.",
+  "scope_limit": "Added paragraph verified; this is not a claim that the entire original article was re-audited.",
+  "workflow_health": {
+    "review_queue": "success 40641813473",
+    "earnings_monitor": "success 40620562555",
+    "site": "success 40620654882",
+    "mag7": "failure 40522298253: API workspace scope error; see issue 56. No API request retried."
+  }
+}
