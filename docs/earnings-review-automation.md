@@ -11,16 +11,17 @@ replace the monitor, change its publication gates, or create quarterly article d
    links), and commits a durable queue/report under `monitoring/`. It makes no model calls
    and needs no new API secret or server. The workflow uses the existing earnings writer
    concurrency group and always checks out the latest publishing branch.
-2. **ChatGPT: Compound Company Review** runs each morning in Europe/Dublin. It reads the
-   queue and current primary sources, handles a bounded batch, and prepares draft PRs
-   for warranted corrections to existing pages/articles. It checks existing open PRs
-   before creating work. It reports new drafts, meaningful failures or decisions needed;
-   unchanged checks do not need notifications. Its active schedule is managed in ChatGPT,
-   not by this repository file.
+2. **ChatGPT: Compound Company Review** runs each morning in Europe/Dublin. It reviews
+   existing content and can publish one genuinely distinct company analysis per Dublin
+   calendar day under the publication protocol below. Corrections to existing articles
+   remain draft PRs. It checks existing PRs and published work before starting, and reports
+   verified live articles, useful drafts and meaningful failures. Its active schedule is
+   managed in ChatGPT, not by this repository file.
 
 The original SEC ingestion workflow continues refreshing company results automatically.
-The new layer automates auditing, research and preparation. Editorial changes remain draft
-PRs for review; this does not add autonomous publication of financial commentary.
+On 28 October 2026 the publisher authorised automatic publication of new company analysis
+when every publication gate passes. This extends the scheduled ChatGPT agent; the deterministic
+GitHub audit still only writes review records. No new API-based publisher is introduced.
 
 ## Durable review state
 
@@ -87,3 +88,56 @@ inconsistencies, identity mismatches, unsupported periods, malformed metrics, mi
 coverage and articles needing assessment. It does not prove freshness relative to every
 worldwide earnings release, validate sentiment, or automatically fix figures. International
 and private companies without a supported mapping remain explicit review items.
+
+
+## New-article publication protocol (authorised 28 October 2026)
+
+The scheduled agent may create and merge a narrowly scoped publication PR without another
+publisher confirmation only for a genuinely new company-analysis article passing ALL checks.
+Existing-article corrections retain the review-only behaviour. A held article stays a draft.
+
+1. Select a material, source-confirmed change in business economics: margins, guidance,
+   capital spending, cash conversion, segment performance or a comparable distinct story.
+   Explain what the article teaches beyond the company's results announcement. No daily
+   output quota, generic evergreen filler, price prediction or routine quarterly recap.
+2. Read all editorial indexes, actual related articles, open publication PRs and recent
+   Mag 7 publications. If the reader question is already answered, prepare an update to
+   its canonical article instead. Avoid a competing article about the same company and
+   event. Check the latest publishing branch again immediately before merging.
+3. Use at least two directly inspected primary documents where available, including the
+   relevant filing or official results release. Maintain a claim/evidence table with
+   exact URLs, quoted passages, fiscal periods, units and arithmetic. Quotes must follow
+   source copyright limits. Distinguish facts, management guidance and scenario assumptions.
+   A second deliberate fact-checking pass must verify each material assertion against
+   those sources; record unresolved contradictions and hold publication if any remain.
+4. Use authentic, topic-specific licensed photography, with full source, credit, permission
+   basis, accurate alt text and archive date when applicable. Follow AGENTS.md metadata.
+   No generated cover, reused unrelated photo or unlicensed news-agency image.
+5. Give the article a stable canonical URL, clear title/description and links to its
+   company dashboard, earnings hub and relevant existing research. Preserve the original
+   dates and URLs of all existing content.
+6. Save an audit record in monitoring/company-publications/<story-fingerprint>.json with
+   company, story thesis, source documents, duplicate checks, claim checks, image provenance,
+   article path and gate results. Fingerprint company + event + thesis, not the run time.
+   Record proposed/held/published states truthfully. Search PR bodies for that fingerprint
+   so reruns resume the same work. Never treat a failed run as an invitation to republish.
+7. Before merging, run appropriate offline tests, process/validate images, build the site,
+   inspect the rendered article, cover and actual Open Graph/Twitter image, and confirm
+   the checks apply to the exact PR head. Fix failures or leave a draft; do not bypass
+   failing checks, protected-branch rules, permissions or unavailable verification.
+8. Merge only the verified publication PR with an expected-head SHA. The existing site
+   workflow is triggered by content changes to the publishing branch. Observe deployment
+   completion and inspect the live canonical page and social image before reporting it
+   as published. If a merge succeeded but deployment did not, report that precise state
+   and recover the same publication rather than creating another article.
+9. Limit this agent to one new article per Europe/Dublin calendar day, including manual
+   reruns. Check publication records and already-merged PRs before writing or merging.
+   Do not overlap an active publication attempt. Existing independent pipelines keep
+   their own schedules, but their recent articles count for topical duplication checks.
+10. Do not send email/social messages, modify unrelated publishing systems, add paid model
+    dependencies or run live LLM tests. Report the live URL and a concise audit summary
+    after success; report a specific blocker when publication is held.
+
+The agent performs these checks as a workflow; configuring this protocol is not evidence
+that any particular article has passed them. A requested immediate run is also not proof
+that publication has completed.
