@@ -2,33 +2,33 @@
   "cik": 813672,
   "company": "Cadence Design Systems",
   "latest": {
-    "accession": "0000813672-26-000047",
-    "filed": "2026-05-01",
+    "accession": "0000813672-26-000121",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.23,
-        "prior_year": 1,
+        "current": 1.05,
+        "prior_year": 1.05,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 335660000,
-        "prior_year": 273579000,
+        "current": 289747000,
+        "prior_year": 287122000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1474220000,
-        "prior_year": 1242366000,
+        "current": 1633311000,
+        "prior_year": 1338838000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/813672/000081367226000047/cdns-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/813672/000081367226000121/cdns-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/813672/000081367226000047/cdns-20260331.htm"
+    },
+    {
+      "accession": "0000813672-26-000092",
+      "filed": "2026-07-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.33,
+          "prior_year": 0.59,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 367076000,
+          "prior_year": 160051000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1584451000,
+          "prior_year": 1275441000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/813672/000081367226000092/cdns-20260630.htm"
+    },
+    {
+      "accession": "0000813672-26-000121",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.05,
+          "prior_year": 1.05,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 289747000,
+          "prior_year": 287122000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1633311000,
+          "prior_year": 1338838000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/813672/000081367226000121/cdns-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CDNS",
-  "updated": "2026-10-15"
+  "updated": "2026-10-28"
 }
