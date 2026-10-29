@@ -13,8 +13,8 @@ replace the monitor, change its publication gates, or create quarterly article d
    concurrency group and always checks out the latest publishing branch.
 2. **ChatGPT: Compound Company Review** runs each morning in Europe/Dublin. It reviews
    existing content and can publish one genuinely distinct company analysis per Dublin
-   calendar day under the publication protocol below. Corrections to existing articles
-   remain draft PRs. It checks existing PRs and published work before starting, and reports
+   calendar day under the publication protocol below. Verified corrections and updates to
+   existing company pages and articles may also publish automatically under the extension below. It checks existing PRs and published work before starting, and reports
    verified live articles, useful drafts and meaningful failures. Its active schedule is
    managed in ChatGPT, not by this repository file.
 
@@ -93,8 +93,9 @@ and private companies without a supported mapping remain explicit review items.
 ## New-article publication protocol (authorised 28 October 2026)
 
 The scheduled agent may create and merge a narrowly scoped publication PR without another
-publisher confirmation only for a genuinely new company-analysis article passing ALL checks.
-Existing-article corrections retain the review-only behaviour. A held article stays a draft.
+publisher confirmation for a genuinely new company-analysis article passing ALL checks.
+The 29 October extension below also authorises verified existing-content updates. A held
+article stays a draft.
 
 1. Select a material, source-confirmed change in business economics: margins, guidance,
    capital spending, cash conversion, segment performance or a comparable distinct story.
@@ -141,3 +142,31 @@ Existing-article corrections retain the review-only behaviour. A held article st
 The agent performs these checks as a workflow; configuring this protocol is not evidence
 that any particular article has passed them. A requested immediate run is also not proof
 that publication has completed.
+
+## Existing-content automatic publication (authorised 29 October 2026)
+
+The publisher explicitly requested automatic publication of these updates in future.
+This supersedes earlier draft-only restrictions for bounded, source-verified corrections
+and additions to existing company earnings pages and company analysis articles. No further
+publisher review is required when the applicable checks pass.
+
+- Apply the same primary-source verification, separate claim-by-claim fact-check, audit
+  record, offline tests, image validation, full build, rendered-page/social-image inspection,
+  exact-head CI and expected-head-SHA merge requirements as the new-article protocol.
+- Preserve canonical URLs, original publication dates, historical context and valid photo
+  provenance. Add dated updates where appropriate. Existing suitable licensed photographs
+  may remain; a new photograph is not required merely because the text changes.
+- Keep the five-company review budget. The one-new-article-per-Dublin-day limit remains
+  unchanged and applies to new articles, not corrections on existing canonical pages.
+- Resume relevant existing maintenance drafts, including Meta PR #62, after rechecking
+  their current scope, sources and exact head. This does not authorise arbitrary unrelated PRs.
+- Resolve recoverable build and asset-preparation problems within scope; do not repeatedly
+  stop at the same fixable missing-cache issue. Do not bypass failures or substitute
+  generated/unlicensed/unrelated images. Hold with a precise blocker when verification
+  remains unavailable.
+- Merge eligible maintenance PRs without asking for confirmation. Verify successful site
+  deployment and live changed text and social image before reporting an update as live.
+  Record the truthful publication state and notify the publisher with the live link.
+
+No publication quota, paid API dependency, live LLM test, third-party message or social post
+is authorised by this extension. Configuring this permission does not itself publish content.
