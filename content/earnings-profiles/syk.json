@@ -2,33 +2,33 @@
   "cik": 310764,
   "company": "Stryker Corporation",
   "latest": {
-    "accession": "0000310764-26-000050",
-    "filed": "2026-07-31",
-    "form": "10-Q",
-    "fp": "Q2",
     "fy": 2026,
+    "fp": "Q3",
+    "period_end": "2026-09-30",
+    "filed": "2026-10-29",
+    "form": "8-K",
+    "accession": "0000310764-26-000059",
+    "source": "https://www.sec.gov/Archives/edgar/data/310764/000031076426000059/sykex991earningsq32026.htm",
     "metrics": {
-      "diluted_eps": {
-        "current": 3.3,
-        "prior_year": 2.29,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 6520000000.0,
+        "prior_year": 6057000000.0,
+        "unit": "USD",
+        "tag": "SEC earnings release; GAAP; consolidated net earnings"
       },
       "net_income": {
-        "current": 1276000000,
-        "prior_year": 884000000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 753000000.0,
+        "prior_year": 859000000.0,
+        "unit": "USD",
+        "tag": "SEC earnings release; GAAP; consolidated net earnings"
       },
-      "revenue": {
-        "current": 6589000000,
-        "prior_year": 6022000000,
-        "tag": "Revenues",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 1.96,
+        "prior_year": 2.22,
+        "unit": "USD/shares",
+        "tag": "SEC earnings release; GAAP; consolidated net earnings"
       }
-    },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/310764/000031076426000050/syk-20260630.htm"
+    }
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/310764/000031076426000050/syk-20260630.htm"
+    },
+    {
+      "fy": 2026,
+      "fp": "Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-29",
+      "form": "8-K",
+      "accession": "0000310764-26-000059",
+      "source": "https://www.sec.gov/Archives/edgar/data/310764/000031076426000059/sykex991earningsq32026.htm",
+      "metrics": {
+        "revenue": {
+          "current": 6520000000.0,
+          "prior_year": 6057000000.0,
+          "unit": "USD",
+          "tag": "SEC earnings release; GAAP; consolidated net earnings"
+        },
+        "net_income": {
+          "current": 753000000.0,
+          "prior_year": 859000000.0,
+          "unit": "USD",
+          "tag": "SEC earnings release; GAAP; consolidated net earnings"
+        },
+        "diluted_eps": {
+          "current": 1.96,
+          "prior_year": 2.22,
+          "unit": "USD/shares",
+          "tag": "SEC earnings release; GAAP; consolidated net earnings"
+        }
+      }
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and furnished earnings releases; no analyst estimates",
   "ticker": "SYK",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }

@@ -102,9 +102,10 @@ def test_full_loop(pipeline, settings):
     assert db.get_item(item_id)["status"] == "published"
     assert db.get_draft(draft2)["status"] == "approved"
     assert not (settings.public_dir / "preview" / d2["preview_token"]).exists()
-    # homepage lists it in the wealth column; tag page + search index exist
-    home = (settings.public_dir / "index.html").read_text()
-    assert d2["headline"] in home
+    # The curated homepage need not feature every new article; the complete
+    # pillar archive must list it, and tag/search discovery remains available.
+    archive = (settings.public_dir / "wealth" / "index.html").read_text()
+    assert d2["headline"] in archive
     assert (settings.public_dir / "tag" / "revenue" / "index.html").exists()
     assert d2["headline"] in (settings.public_dir / "search.json").read_text()
     assert (settings.public_dir / "about" / "index.html").exists()

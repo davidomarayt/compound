@@ -2,33 +2,33 @@
   "cik": 1060391,
   "company": "Republic Services",
   "latest": {
-    "accession": "0001060391-26-000275",
-    "filed": "2026-08-07",
-    "form": "10-Q",
-    "fp": "Q2",
     "fy": 2026,
+    "fp": "Q3",
+    "period_end": "2026-09-30",
+    "filed": "2026-10-29",
+    "form": "8-K",
+    "accession": "0001060391-26-000326",
+    "source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000326/exhibit991q32026.htm",
     "metrics": {
-      "diluted_eps": {
-        "current": 1.84,
-        "prior_year": 1.75,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 4559000000.0,
+        "prior_year": 4212000000.0,
+        "unit": "USD",
+        "tag": "SEC earnings release; GAAP; consolidated net income"
       },
       "net_income": {
-        "current": 566077000,
-        "prior_year": 549905000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 593000000.0,
+        "prior_year": 550000000.0,
+        "unit": "USD",
+        "tag": "SEC earnings release; GAAP; consolidated net income"
       },
-      "revenue": {
-        "current": 4430000000,
-        "prior_year": 4235000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 1.93,
+        "prior_year": 1.76,
+        "unit": "USD/shares",
+        "tag": "SEC earnings release; GAAP; consolidated net income"
       }
-    },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000275/rsg-20260630.htm"
+    }
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000275/rsg-20260630.htm"
+    },
+    {
+      "fy": 2026,
+      "fp": "Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-29",
+      "form": "8-K",
+      "accession": "0001060391-26-000326",
+      "source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000326/exhibit991q32026.htm",
+      "metrics": {
+        "revenue": {
+          "current": 4559000000.0,
+          "prior_year": 4212000000.0,
+          "unit": "USD",
+          "tag": "SEC earnings release; GAAP; consolidated net income"
+        },
+        "net_income": {
+          "current": 593000000.0,
+          "prior_year": 550000000.0,
+          "unit": "USD",
+          "tag": "SEC earnings release; GAAP; consolidated net income"
+        },
+        "diluted_eps": {
+          "current": 1.93,
+          "prior_year": 1.76,
+          "unit": "USD/shares",
+          "tag": "SEC earnings release; GAAP; consolidated net income"
+        }
+      }
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and furnished earnings releases; no analyst estimates",
   "ticker": "RSG",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }

@@ -1,0 +1,51 @@
+{
+  "fingerprint": "bb10fde8452d7f2b13a2b894",
+  "state": "prepared",
+  "company": "SBUX",
+  "article_path": "content/wealth/starbucks-earnings-turnaround-sales-china.md",
+  "story_thesis": "Starbucks Earnings: The Turnaround Looks Better Than the Revenue Headline",
+  "authorization": "Explicit manual batch publication; scheduled one-article budget does not apply.",
+  "duplicate_checks": "Read EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, content-inventory.json, related Amazon articles and open PRs. Amazon updates existing canonical profit-quality article; other four have no competing editorial.",
+  "sources": [
+    {
+      "title": "SEC-furnished earnings release, 29 October 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/829224/000082922426000154/sbux-09272026xearningsrele.htm"
+    },
+    {
+      "title": "Starbucks official Q4/FY2026 release",
+      "url": "https://investor.starbucks.com/news/financial-releases/news-details/2026/Starbucks-Reports-Q4-and-Full-Fiscal-Year-2026-Results/default.aspx"
+    }
+  ],
+  "source_sha256": "cafe01d04b3519b064856451be55f08e117576dce0198b29b42659f24265c05b",
+  "claim_checks": {
+    "financial_table": [
+      2026,
+      "FY",
+      "2026-09-27",
+      "0000829224-26-000154",
+      37910600000.0,
+      37184400000.0,
+      2526700000.0,
+      1856400000.0,
+      2.21,
+      1.63
+    ],
+    "units": "USD; annual Starbucks figures are directly reported full-year, not inferred Q4",
+    "gaap_adjusted_separate": true,
+    "second_pass": "complete: release tables, reporting periods, units, GAAP/adjusted distinctions, guidance and arithmetic rechecked against source documents"
+  },
+  "image_provenance": {
+    "source": "https://commons.wikimedia.org/wiki/File:Starbucks_Red_Cup.jpg",
+    "author": "Hiro - Kokoro\u2606Photo",
+    "license": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "capture_date": "2015-12-24",
+    "asset": "/static/images/evergreen/starbucks-earnings-turnaround-sales-china.jpg"
+  },
+  "gates": {
+    "build": "passed: full site build, 220 articles",
+    "rendered_hero_and_social": "passed: canonical and hero/OG/Twitter markup checked; actual generated social images visually inspected",
+    "ci": "pending",
+    "deployment": "pending",
+    "targeted_tests": "50 passed; all 14 profile schemas validated"
+  }
+}

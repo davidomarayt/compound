@@ -2,33 +2,33 @@
   "cik": 829224,
   "company": "Starbucks",
   "latest": {
-    "accession": "0000829224-26-000130",
-    "filed": "2026-07-29",
-    "form": "10-Q",
-    "fp": "Q3",
     "fy": 2026,
+    "fp": "FY",
+    "period_end": "2026-09-27",
+    "filed": "2026-10-29",
+    "accession": "0000829224-26-000154",
+    "source": "https://www.sec.gov/Archives/edgar/data/829224/000082922426000154/sbux-09272026xearningsrele.htm",
+    "form": "8-K",
     "metrics": {
-      "diluted_eps": {
-        "current": 0.91,
-        "prior_year": 0.49,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 37910600000.0,
+        "prior_year": 37184400000.0,
+        "unit": "USD",
+        "tag": "SEC earnings release; GAAP"
       },
       "net_income": {
-        "current": 1045300000,
-        "prior_year": 558300000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 2526700000.0,
+        "prior_year": 1856400000.0,
+        "unit": "USD",
+        "tag": "SEC earnings release; GAAP; attributable to Starbucks"
       },
-      "revenue": {
-        "current": 9322700000,
-        "prior_year": 9456000000,
-        "tag": "Revenues",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 2.21,
+        "prior_year": 1.63,
+        "unit": "USD/shares",
+        "tag": "SEC earnings release; GAAP"
       }
-    },
-    "period_end": "2026-06-28",
-    "source": "https://www.sec.gov/Archives/edgar/data/829224/000082922426000130/sbux-20260628.htm"
+    }
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-28",
       "source": "https://www.sec.gov/Archives/edgar/data/829224/000082922426000130/sbux-20260628.htm"
+    },
+    {
+      "fy": 2026,
+      "fp": "FY",
+      "period_end": "2026-09-27",
+      "filed": "2026-10-29",
+      "accession": "0000829224-26-000154",
+      "source": "https://www.sec.gov/Archives/edgar/data/829224/000082922426000154/sbux-09272026xearningsrele.htm",
+      "form": "8-K",
+      "metrics": {
+        "revenue": {
+          "current": 37910600000.0,
+          "prior_year": 37184400000.0,
+          "unit": "USD",
+          "tag": "SEC earnings release; GAAP"
+        },
+        "net_income": {
+          "current": 2526700000.0,
+          "prior_year": 1856400000.0,
+          "unit": "USD",
+          "tag": "SEC earnings release; GAAP; attributable to Starbucks"
+        },
+        "diluted_eps": {
+          "current": 2.21,
+          "prior_year": 1.63,
+          "unit": "USD/shares",
+          "tag": "SEC earnings release; GAAP"
+        }
+      }
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and furnished earnings releases; no analyst estimates",
   "ticker": "SBUX",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }

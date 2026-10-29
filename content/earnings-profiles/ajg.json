@@ -2,33 +2,33 @@
   "cik": 354190,
   "company": "Arthur J. Gallagher & Co.",
   "latest": {
-    "accession": "0001628280-26-053489",
-    "filed": "2026-08-05",
-    "form": "10-Q",
-    "fp": "Q2",
     "fy": 2026,
+    "fp": "Q3",
+    "period_end": "2026-09-30",
+    "filed": "2026-10-29",
+    "form": "8-K",
+    "accession": "0001628280-26-068263",
+    "source": "https://www.sec.gov/Archives/edgar/data/354190/000162828026068263/a3rdquarter2026earningsrel.htm",
     "metrics": {
-      "diluted_eps": {
-        "current": 1.25,
-        "prior_year": 1.4,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 3976000000.0,
+        "prior_year": 3365000000.0,
+        "unit": "USD",
+        "tag": "SEC earnings release; GAAP; consolidated net earnings; revenue includes reimbursements"
       },
       "net_income": {
-        "current": 324000000,
-        "prior_year": 368000000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 406000000.0,
+        "prior_year": 273000000.0,
+        "unit": "USD",
+        "tag": "SEC earnings release; GAAP; consolidated net earnings; revenue includes reimbursements"
       },
-      "revenue": {
-        "current": 4003000000,
-        "prior_year": 3222000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 1.55,
+        "prior_year": 1.04,
+        "unit": "USD/shares",
+        "tag": "SEC earnings release; GAAP; consolidated net earnings; revenue includes reimbursements"
       }
-    },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/354190/000162828026053489/ajg-20260630.htm"
+    }
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/354190/000162828026053489/ajg-20260630.htm"
+    },
+    {
+      "fy": 2026,
+      "fp": "Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-29",
+      "form": "8-K",
+      "accession": "0001628280-26-068263",
+      "source": "https://www.sec.gov/Archives/edgar/data/354190/000162828026068263/a3rdquarter2026earningsrel.htm",
+      "metrics": {
+        "revenue": {
+          "current": 3976000000.0,
+          "prior_year": 3365000000.0,
+          "unit": "USD",
+          "tag": "SEC earnings release; GAAP; consolidated net earnings; revenue includes reimbursements"
+        },
+        "net_income": {
+          "current": 406000000.0,
+          "prior_year": 273000000.0,
+          "unit": "USD",
+          "tag": "SEC earnings release; GAAP; consolidated net earnings; revenue includes reimbursements"
+        },
+        "diluted_eps": {
+          "current": 1.55,
+          "prior_year": 1.04,
+          "unit": "USD/shares",
+          "tag": "SEC earnings release; GAAP; consolidated net earnings; revenue includes reimbursements"
+        }
+      }
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and furnished earnings releases; no analyst estimates",
   "ticker": "AJG",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }
