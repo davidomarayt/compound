@@ -2,33 +2,33 @@
   "cik": 1039684,
   "company": "Oneok",
   "latest": {
-    "accession": "0001039684-26-000029",
-    "filed": "2026-08-04",
+    "accession": "0001039684-26-000039",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.53,
-        "prior_year": 1.34,
+        "current": 2.13,
+        "prior_year": 1.49,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 966000000,
-        "prior_year": 841000000,
+        "current": 1350000000,
+        "prior_year": 939000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 12049000000,
-        "prior_year": 7887000000,
+        "current": 12455000000,
+        "prior_year": 8634000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1039684/000103968426000029/oke-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1039684/000103968426000039/oke-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1039684/000103968426000029/oke-20260630.htm"
+    },
+    {
+      "accession": "0001039684-26-000039",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.13,
+          "prior_year": 1.49,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1350000000,
+          "prior_year": 939000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 12455000000,
+          "prior_year": 8634000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1039684/000103968426000039/oke-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "OKE",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }

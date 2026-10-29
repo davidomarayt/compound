@@ -2,33 +2,33 @@
   "cik": 79879,
   "company": "PPG Industries",
   "latest": {
-    "accession": "0000079879-26-000170",
-    "filed": "2026-04-29",
+    "accession": "0000079879-26-000318",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.7,
-        "prior_year": 1.63,
+        "current": 2.02,
+        "prior_year": 2,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 382000000,
-        "prior_year": 373000000,
+        "current": 451000000,
+        "prior_year": 453000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3930000000,
-        "prior_year": 3684000000,
+        "current": 4353000000,
+        "prior_year": 4082000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/79879/000007987926000170/ppg-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/79879/000007987926000318/ppg-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/79879/000007987926000170/ppg-20260331.htm"
+    },
+    {
+      "accession": "0000079879-26-000252",
+      "filed": "2026-07-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.95,
+          "prior_year": 1.98,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 437000000,
+          "prior_year": 450000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4495000000,
+          "prior_year": 4195000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/79879/000007987926000252/ppg-20260630.htm"
+    },
+    {
+      "accession": "0000079879-26-000318",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.02,
+          "prior_year": 2,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 451000000,
+          "prior_year": 453000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4353000000,
+          "prior_year": 4082000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/79879/000007987926000318/ppg-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "PPG",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }

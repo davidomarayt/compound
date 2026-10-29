@@ -2,33 +2,33 @@
   "cik": 1373715,
   "company": "ServiceNow",
   "latest": {
-    "accession": "0001373715-26-000076",
-    "filed": "2026-07-23",
+    "accession": "0001373715-26-000096",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.29,
-        "prior_year": 0.37,
+        "current": 0.27,
+        "prior_year": 0.48,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 298000000,
-        "prior_year": 385000000,
+        "current": 277000000,
+        "prior_year": 502000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3987000000,
-        "prior_year": 3215000000,
+        "current": 4106000000,
+        "prior_year": 3407000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000076/now-20260630.htm"
+    },
+    {
+      "accession": "0001373715-26-000096",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.27,
+          "prior_year": 0.48,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 277000000,
+          "prior_year": 502000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4106000000,
+          "prior_year": 3407000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000096/now-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "NOW",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }

@@ -2,33 +2,33 @@
   "cik": 89800,
   "company": "Sherwin-Williams",
   "latest": {
-    "accession": "0000089800-26-000049",
-    "filed": "2026-07-28",
+    "accession": "0000089800-26-000056",
+    "filed": "2026-10-27",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 3.43,
-        "prior_year": 3,
+        "current": 3.38,
+        "prior_year": 3.35,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 843600000,
-        "prior_year": 754700000,
+        "current": 821000000,
+        "prior_year": 833100000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 6789300000,
-        "prior_year": 6314500000,
+        "current": 6860000000,
+        "prior_year": 6358200000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000049/shw-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000056/shw-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000049/shw-20260630.htm"
+    },
+    {
+      "accession": "0000089800-26-000056",
+      "filed": "2026-10-27",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.38,
+          "prior_year": 3.35,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 821000000,
+          "prior_year": 833100000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6860000000,
+          "prior_year": 6358200000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000056/shw-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "SHW",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }
