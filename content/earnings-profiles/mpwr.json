@@ -2,33 +2,33 @@
   "cik": 1280452,
   "company": "Monolithic Power Systems",
   "latest": {
-    "accession": "0001628280-26-053275",
-    "filed": "2026-08-05",
-    "form": "10-Q",
-    "fp": "Q2",
     "fy": 2026,
+    "fp": "Q3",
+    "period_end": "2026-09-30",
+    "filed": "2026-10-29",
+    "form": "8-K",
+    "accession": "0001628280-26-068202",
+    "source": "https://www.sec.gov/Archives/edgar/data/1280452/000162828026068202/mpwr-20260930xexx991.htm",
     "metrics": {
-      "diluted_eps": {
-        "current": 5.22,
-        "prior_year": 2.81,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 1202409000.0,
+        "prior_year": 737176000.0,
+        "unit": "USD",
+        "tag": "SEC earnings release; GAAP; consolidated net income"
       },
       "net_income": {
-        "current": 257298000,
-        "prior_year": 135009000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 271067000.0,
+        "prior_year": 179766000.0,
+        "unit": "USD",
+        "tag": "SEC earnings release; GAAP; consolidated net income"
       },
-      "revenue": {
-        "current": 980642000,
-        "prior_year": 664574000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 5.51,
+        "prior_year": 3.74,
+        "unit": "USD/shares",
+        "tag": "SEC earnings release; GAAP; consolidated net income"
       }
-    },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1280452/000162828026053275/mpwr-20260630.htm"
+    }
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1280452/000162828026053275/mpwr-20260630.htm"
+    },
+    {
+      "fy": 2026,
+      "fp": "Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-29",
+      "form": "8-K",
+      "accession": "0001628280-26-068202",
+      "source": "https://www.sec.gov/Archives/edgar/data/1280452/000162828026068202/mpwr-20260930xexx991.htm",
+      "metrics": {
+        "revenue": {
+          "current": 1202409000.0,
+          "prior_year": 737176000.0,
+          "unit": "USD",
+          "tag": "SEC earnings release; GAAP; consolidated net income"
+        },
+        "net_income": {
+          "current": 271067000.0,
+          "prior_year": 179766000.0,
+          "unit": "USD",
+          "tag": "SEC earnings release; GAAP; consolidated net income"
+        },
+        "diluted_eps": {
+          "current": 5.51,
+          "prior_year": 3.74,
+          "unit": "USD/shares",
+          "tag": "SEC earnings release; GAAP; consolidated net income"
+        }
+      }
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and furnished earnings releases; no analyst estimates",
   "ticker": "MPWR",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }

@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-10-29",
+  "snapshot_date": "2026-10-30",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -145,6 +145,24 @@
         "status": "published"
       },
       {
+        "title": "Amazon Earnings: AWS Accelerates, but the Cash Bill Keeps Growing",
+        "url": "/wealth/amazon-aws-profit-investment-gains/",
+        "source": "content/wealth/amazon-aws-profit-investment-gains.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "amazon-aws-profit-investment-gains",
+        "date": "2026-10-18",
+        "reviewed": "2026-10-29",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "mag7-research",
+          "amzn"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Amazon Stock Guide: AWS, Retail, Advertising and Cash Flow",
         "url": "/wealth/amazon-aws-retail-economics-2026/",
         "source": "content/wealth/amazon-aws-retail-economics-2026.md",
@@ -160,24 +178,6 @@
           "amzn",
           "evergreen",
           "investing-guide"
-        ],
-        "status": "published"
-      },
-      {
-        "title": "Amazon's profit surge: separate AWS earnings from investment gains",
-        "url": "/wealth/amazon-aws-profit-investment-gains/",
-        "source": "content/wealth/amazon-aws-profit-investment-gains.md",
-        "kind": "Editorial article / guide",
-        "category": "Wealth",
-        "slug": "amazon-aws-profit-investment-gains",
-        "date": "2026-10-18",
-        "reviewed": "2026-10-18",
-        "tags": [
-          "wealth",
-          "stocks",
-          "company-research",
-          "mag7-research",
-          "amzn"
         ],
         "status": "published"
       },
@@ -1004,6 +1004,23 @@
         "status": "published"
       },
       {
+        "title": "Gilead Earnings: Strong HIV Sales, but Acquisitions Reshape the Profit Story",
+        "url": "/wealth/gilead-earnings-hiv-growth-acquisition-cost/",
+        "source": "content/wealth/gilead-earnings-hiv-growth-acquisition-cost.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "gilead-earnings-hiv-growth-acquisition-cost",
+        "date": "2026-10-29",
+        "reviewed": "2026-10-29",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "gild"
+        ],
+        "status": "published"
+      },
+      {
         "title": "GLP-1 side effects: what is common, and when to get help",
         "url": "/health/glp1-side-effects-when-to-seek-help/",
         "source": "content/health/glp1-side-effects-when-to-seek-help.md",
@@ -1812,6 +1829,23 @@
           "retrofit",
           "home-energy",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Intel Earnings: Data-Centre Growth Meets a Weaker Outlook",
+        "url": "/wealth/intel-earnings-data-centre-growth-guidance/",
+        "source": "content/wealth/intel-earnings-data-centre-growth-guidance.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "intel-earnings-data-centre-growth-guidance",
+        "date": "2026-10-29",
+        "reviewed": "2026-10-29",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "intc"
         ],
         "status": "published"
       },
@@ -3386,6 +3420,23 @@
         "status": "published"
       },
       {
+        "title": "Sandisk Earnings: AI Storage Surges as an Eight-for-One Split Approaches",
+        "url": "/wealth/sandisk-earnings-ai-storage-stock-split/",
+        "source": "content/wealth/sandisk-earnings-ai-storage-stock-split.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "sandisk-earnings-ai-storage-stock-split",
+        "date": "2026-10-29",
+        "reviewed": "2026-10-29",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "sndk"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Saving for your child in Ireland: tax, ownership and what happens at 18",
         "url": "/wealth/saving-for-your-child-ireland/",
         "source": "content/wealth/saving-for-your-child-ireland.md",
@@ -3620,6 +3671,23 @@
           "calories",
           "alcohol-units",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Starbucks Earnings: The Turnaround Looks Better Than the Revenue Headline",
+        "url": "/wealth/starbucks-earnings-turnaround-sales-china/",
+        "source": "content/wealth/starbucks-earnings-turnaround-sales-china.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "starbucks-earnings-turnaround-sales-china",
+        "date": "2026-10-29",
+        "reviewed": "2026-10-29",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "sbux"
         ],
         "status": "published"
       },

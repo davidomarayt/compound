@@ -2,33 +2,33 @@
   "cik": 1679788,
   "company": "Coinbase",
   "latest": {
-    "accession": "0001679788-26-000088",
-    "filed": "2026-07-30",
-    "form": "10-Q",
-    "fp": "Q2",
     "fy": 2026,
+    "fp": "Q3",
+    "period_end": "2026-09-30",
+    "filed": "2026-10-29",
+    "form": "10-Q",
+    "accession": "0001679788-26-000122",
+    "source": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000122/coin-20260930.htm",
     "metrics": {
-      "diluted_eps": {
-        "current": -1.36,
-        "prior_year": 5.14,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 1215582000.0,
+        "prior_year": 1868693000.0,
+        "unit": "USD",
+        "tag": "SEC 10-Q; GAAP consolidated"
       },
       "net_income": {
-        "current": -359468000,
-        "prior_year": 1428900000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 718697000.0,
+        "prior_year": 432552000.0,
+        "unit": "USD",
+        "tag": "SEC 10-Q; GAAP consolidated"
       },
-      "revenue": {
-        "current": 1220068000,
-        "prior_year": 1497208000,
-        "tag": "Revenues",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 2.51,
+        "prior_year": 1.5,
+        "unit": "USD/shares",
+        "tag": "SEC 10-Q; GAAP consolidated"
       }
-    },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000088/coin-20260630.htm"
+    }
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000088/coin-20260630.htm"
+    },
+    {
+      "fy": 2026,
+      "fp": "Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "accession": "0001679788-26-000122",
+      "source": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000122/coin-20260930.htm",
+      "metrics": {
+        "revenue": {
+          "current": 1215582000.0,
+          "prior_year": 1868693000.0,
+          "unit": "USD",
+          "tag": "SEC 10-Q; GAAP consolidated"
+        },
+        "net_income": {
+          "current": 718697000.0,
+          "prior_year": 432552000.0,
+          "unit": "USD",
+          "tag": "SEC 10-Q; GAAP consolidated"
+        },
+        "diluted_eps": {
+          "current": 2.51,
+          "prior_year": 1.5,
+          "unit": "USD/shares",
+          "tag": "SEC 10-Q; GAAP consolidated"
+        }
+      }
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings; no analyst estimates",
   "ticker": "COIN",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }
