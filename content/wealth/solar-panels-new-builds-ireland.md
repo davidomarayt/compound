@@ -141,7 +141,7 @@ Before final payment, request the agreed commissioning evidence, electrical cert
 
 Include your county, build stage, planned completion date, roof drawings, orientation and shading, proposed heat pump, EV plans and estimated annual electricity use. Ask every installer to price the same baseline and optional upgrades.
 
-Use our [solar quote comparison guide](/wealth/compare-solar-panel-quotes-ireland/) to compare equipment and exclusions. You can also **[prepare and submit your new-build solar project to Compound](/solar/get-quotes/)**. Homeowner submissions are open; installer matching is not yet active and quotes cannot be guaranteed. Any future introduction requires your separate permission.
+Use our [solar quote comparison guide](/wealth/compare-solar-panel-quotes-ireland/) to compare equipment and exclusions. Use our [installer checklist](/solar/installers/) before requesting proposals directly from installers. Compound matching is paused.
 
 ## Frequently asked questions
 

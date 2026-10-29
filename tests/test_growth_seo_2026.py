@@ -70,7 +70,7 @@ def test_installer_enquiry_is_not_counted_as_homeowner_lead():
     assert "solar_installer_enquiry_submitted" in sponsor
     assert 'audience:"installer_business"' in sponsor
     assert "form.values" not in sponsor
-    assert "solar-sponsors.js?v=3" in read("compound/site/templates/page.html")
+    assert "solar-sponsors.js?v=3" not in read("compound/site/templates/page.html")
 
 
 def test_new_east_west_solar_evergreen_is_original_and_connected():

@@ -153,17 +153,6 @@
     q(key).addEventListener('input',function(){official=null;q('status').textContent='';render();emitToProject(key);trackUse();});
     q(key).addEventListener('change',function(){official=null;q('status').textContent='';render();emitToProject(key);});
   });
-  var intoProject=q('into-project');
-  if(intoProject)intoProject.addEventListener('click',function(){
-    var valid=val('size')>0&&val('size')<=30&&val('pitch')>=0&&val('pitch')<=90;
-    if(!valid){q('status').textContent='Choose a valid array size and roof pitch first.';return;}
-    var estimateResult=estimate();
-    try{sessionStorage.setItem('compound_solar_project_compass_v1',JSON.stringify({
-      azimuth:angle,pitch:val('pitch'),kwp:val('size'),annual:estimateResult.annual,
-      place:q('place').value,savedAt:Date.now()
-    }));}catch(_){ }
-    window.location.href='/solar/get-quotes/#sol-project-roof';
-  });
   q('copy').addEventListener('click',function(){
     var r=official||estimate(),output=String(Math.round(r.perKwp));
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(output).then(function(){q('status').textContent='Copied '+output+' kWh per kWp. Paste this into the solar payback calculator.';},function(){q('status').textContent='Annual yield per kWp: '+output+' kWh.';});}

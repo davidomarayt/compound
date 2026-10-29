@@ -227,7 +227,7 @@ Ask for the **monthly kWh output, not just annual savings claimed in a brochure*
 - What would adding a battery cost **after the applicable grant**, and what incremental cash benefit does it add beyond solar-only?
 - What happens to estimated payback if the installation quote rises by €1,000 or the export tariff falls?
 
-The [Solar Hub's quote preparation tool](/solar/get-quotes/) generates a consistent brief to send to installers, and the [Solar Quote Comparison](/solar/compare-quotes/) tool makes competing proposals easier to assess.
+Use the [installer checklist](/solar/installers/) when approaching contractors directly, and the [Solar Quote Comparison](/solar/compare-quotes/) tool to assess proposals you have received.
 
 ## Frequently asked questions
 

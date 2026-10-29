@@ -20,6 +20,6 @@ meta_description: "Compare solar PV panel specifications, inverters, battery cap
 <tr><td>Installation</td><td>Mounting, scaffold, consumer unit, electrical certificates</td><td>Unpriced exceptions</td></tr>
 <tr><td>Aftercare</td><td>Installer labour cover, spare parts, software and contacts</td><td>Manufacturer cover only</td></tr>
 </tbody></table></div></div>
-<nav class="sol-return"><a href="/solar/">← Solar hub</a><a href="/solar/get-quotes/">Prepare an itemised quote request ↗</a><a href="/solar/batteries/">Battery calculator ↗</a></nav>
+<nav class="sol-return"><a href="/solar/">← Solar hub</a><a href="/solar/compare-quotes/">Compare existing quotes</a><a href="/solar/batteries/">Battery calculator ↗</a></nav>
 <div class="sol-footnotes"><h2>Official references</h2><p><a href="https://www.seai.ie/renewable-energy/solar-energy/electricity-from-solar">SEAI: Solar electricity equipment ↗</a> · <a href="https://www.seai.ie/grants/find-a-registered-professional/solar-pv-companies">SEAI: Registered PV companies ↗</a></p><small>Reviewed 11 October 2026. Independent technical checklist; no paid product rankings.</small></div>
 </div>

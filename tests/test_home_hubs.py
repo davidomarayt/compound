@@ -12,15 +12,16 @@ def test_homepage_preserves_editorial_identity_and_promotes_four_hubs():
     assert page.index('class="home-command-grid"') < page.index('id="explore-compound"') < page.index('id="pillars-title"')
     assert page.count('class="home-hub-card"') == 4
     assert page.count('data-home-hub=') == 8
-    for route in ("/solar/", "/solar/get-quotes/", "/insurance/",
+    for route in ("/wealth/", "/compound-interest-calculator/", "/insurance/",
                   "/health-insurance-cost-comparison-calculator/", "/pia/",
                   "/wealth/how-to-start-investing-in-ireland/", "/stocks/", "/wealth/earnings/"):
         assert f'href="{route}"' in page
-    for hub in ("solar", "insurance", "pia", "stocks"):
+    for hub in ("wealth", "insurance", "pia", "stocks"):
         assert page.count(f'data-home-hub="{hub}"') == 2
-    assert 'Today’s News' in page
+    assert 'Finance &amp; Investing' in page
+    assert '/solar/get-quotes/' not in page
     assert 'Popular tools' in page
-    assert 'Health, Wealth, Life.' in page
+    assert 'Explore our wider guides.' in page
     assert 'Worth your time.' in page
     assert 'home-hubs.css?v=1' in page and 'home-hubs.js?v=1' in page
     assert 'rel="canonical" href="{{ site_url }}/"' in page

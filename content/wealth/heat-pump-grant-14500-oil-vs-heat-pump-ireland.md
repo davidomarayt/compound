@@ -145,7 +145,7 @@ The sensible order is to establish the house's heat demand, estimate heat-pump e
 <p><strong>01.</strong> <a href="/whole-house-retrofit-planner/">Plan heat-pump and insulation costs</a> — model grants and whole-home work first.</p>
 <p><strong>02.</strong> <a href="/wealth/electricity-tariffs-ireland/">Understand electricity tariffs</a> — match your heat-pump load to the rate you actually pay.</p>
 <p><strong>03.</strong> <a href="/solar-payback-calculator/">Calculate solar payback</a> — only if you're also considering PV.</p>
-<p><strong>04.</strong> <a href="/solar/get-quotes/">Prepare a solar installer quote brief</a> — after the solar economics make sense.</p>
+<p><strong>04.</strong> <a href="/solar/installers/">Check an installer before requesting quotes →</a> — after the solar economics make sense.</p>
 </div>
 
 ## Five checks before applying

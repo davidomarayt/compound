@@ -25,13 +25,13 @@ def test_winter_energy_news_is_sourced_indexable_and_charted():
     assert "not a forecast" in body.lower() or "not a projection" in body.lower()
     assert all(path in rendered for path in (
         "/electricity-cost-calculator/", "/solar-payback-calculator/",
-        "/solar/get-quotes/", "/solar/installers/", "/solar/grants/",
+        "/solar/installers/", "/solar/grants/",
         "/wealth/electricity-tariffs-ireland/",
     ))
     assert all(key in rendered for key in (
         'data-energy-funnel="electricity_tool"',
         'data-energy-funnel="solar_payback"',
-        'data-energy-funnel="quote_brief"',
+        'data-energy-funnel="installer_checklist"',
     ))
     assert len(article.sources) >= 6
     assert not any("https://compound.ie/solar/for-installers/" in s.get("url", "") for s in article.sources)

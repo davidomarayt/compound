@@ -1,7 +1,7 @@
 ---
 title: About
 ---
-Compound is an Irish site about three things that compound over time: your health, your wealth and your life. It is written for the person paying the rent, claiming the credit or trying to sleep better, not for the professional advising them.
+Compound is an independent Irish publication focused on investing and personal finance. We help readers understand businesses, interpret company earnings and explore the decisions that shape long-term wealth.
 
 ## Who is behind Compound
 
@@ -11,7 +11,9 @@ That background helps with reading scientific material, but it does not make Com
 
 ## What we cover
 
-**Wealth** is Irish money in practice: tax credits and reliefs people forget to claim, grants, pensions, renting and buying, bills and benefits. **Health** is sleep, movement, food, alcohol, sunlight, screens and the common conditions, told honestly, including where the evidence is thin. **Life** is relationships, work, money worry, habits, attention, home, culture and the rest of everyday life, grounded in evidence rather than platitudes.
+Our main focus is **investing, company research and Irish personal finance**: company results, business models, investment risks, pensions, tax, savings and mortgages. Free calculators help readers explore assumptions and compare scenarios.
+
+Our existing health, life and home-energy guides remain available as supporting reference material. Compound is not a solar installation or installer-matching business; solar quotation requests and installer sponsorship applications are paused.
 
 ## How articles are made
 

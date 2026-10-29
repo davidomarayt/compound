@@ -155,7 +155,7 @@ For standard homeowners, the ordinary solar PV grant is **up to €1,800**, subj
 2. **Check high-usage appliances.** An electric heater or immersion used for many hours can add materially to consumption; [test it in the calculator](/electricity-cost-calculator/).
 3. **Compare full tariffs, not just one rate.** Read our [smart, day/night and dynamic tariff guide](/wealth/electricity-tariffs-ireland/) and use an approved independent comparison service.
 4. **Check fabric-first measures.** If heat loss is high, [BER and retrofit measures](/ber-energy-cost-calculator/) may be relevant before making a large PV investment.
-5. **Get comparable written solar quotes.** If solar looks worthwhile after the payback calculation, check [registered installers](/solar/installers/), make a [standard quote brief](/solar/get-quotes/) and use the [quote comparison tool](/solar/compare-quotes/). There is no live paid lead marketplace on Compound at this point.
+5. **Get comparable written solar quotes.** If solar looks worthwhile after the payback calculation, check [registered installers](/solar/installers/), prepare a written brief using the [installer checklist](/solar/installers/) and use the [quote comparison tool](/solar/compare-quotes/). There is no live paid lead marketplace on Compound at this point.
 
 <div class="ew27-next" aria-label="From research to a better quote">
 <p class="ew27-kicker">FROM RESEARCH TO QUOTES</p>
@@ -163,7 +163,7 @@ For standard homeowners, the ordinary solar PV grant is **up to €1,800**, subj
 <div class="ew27-next-grid">
 <a href="/electricity-cost-calculator/" data-energy-funnel="electricity_tool"><b>01</b><strong>Electricity calculator</strong><span>Check your appliance cost →</span></a>
 <a href="/solar-payback-calculator/" data-energy-funnel="solar_payback"><b>02</b><strong>Solar payback</strong><span>Test a system's numbers →</span></a>
-<a href="/solar/get-quotes/" data-energy-funnel="quote_brief"><b>03</b><strong>Installer quote brief</strong><span>Prepare a comparable request →</span></a>
+<a href="/solar/installers/" data-energy-funnel="installer_checklist"><b>03</b><strong>Installer checklist</strong><span>Check a contractor before you commit →</span></a>
 </div>
 <p class="ew27-fine">All tools are free. Compound does not rank installers by payment or promise leads. Readers choose whether and when to contact a company.</p>
 </div>
