@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-10-28
+Checked: 2026-10-29
 
 - 447 saved profiles checked against structural and issuer rules.
 - 40 existing company articles; 39 mapped to monitored issuers.
-- 139 pending review items; 0 recorded decisions.
+- 137 pending review items; 0 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -18,6 +18,16 @@ ID: `05d9e53f1fdf6d05053a8d15`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/molina-healthcare-earnings-medicaid-margins.md`
+
+### HOOD · article_review · medium
+
+ID: `1ab9cb4157b58272ba76f023`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/robinhood-earnings-prediction-markets-profit.md`, `content/earnings-profiles/hood.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1783879/000178387926000167/hood-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-28
 
 ### IBM · article_review · medium
 
@@ -211,16 +221,6 @@ Files: `content/earnings-profiles/bg.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1996862/000162828026028235/bg-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-04-29
 
-### BIIB · coverage_check · medium
-
-ID: `5664b7ea275ad8499552c310`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/biib.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/875045/000087504526000045/biib-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-04-29
-
 ### BKNG · coverage_check · medium
 
 ID: `1fb1feeea91edda00d049fe9`
@@ -278,16 +278,6 @@ ID: `4d892f5359730c90790f1cba`
 No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.
 
 Files: `content/earnings-profiles/cat.json`
-
-### CDNS · coverage_check · medium
-
-ID: `38e08e6600e07cc820474d0c`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/cdns.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/813672/000081367226000047/cdns-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-05-01
 
 ### CF · coverage_check · medium
 
@@ -1120,16 +1110,6 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/honeywell-earnings-organic-growth-guidance.md`, `content/earnings-profiles/hon.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/773840/000077384026000143/hon-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
-
-### HOOD · article_review · low
-
-ID: `acee5a01c600fe61808885a5`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/robinhood-earnings-prediction-markets-profit.md`, `content/earnings-profiles/hood.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1783879/000178387926000164/q32026robinhoodexhibit991.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-27
 
 ### ISRG · article_review · low
 
