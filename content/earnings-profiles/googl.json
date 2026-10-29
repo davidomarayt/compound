@@ -2,33 +2,33 @@
   "cik": 1652044,
   "company": "Alphabet Inc. (Class A)",
   "latest": {
-    "accession": "0001652044-26-000071",
-    "filed": "2026-07-23",
+    "accession": "0001652044-26-000084",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 9.11,
-        "prior_year": 2.31,
+        "current": 2.12,
+        "prior_year": 2.87,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 112193000000,
-        "prior_year": 28196000000,
+        "current": 26468000000,
+        "prior_year": 34979000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 119796000000,
-        "prior_year": 96428000000,
+        "current": 127577000000,
+        "prior_year": 102346000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+    },
+    {
+      "accession": "0001652044-26-000084",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.12,
+          "prior_year": 2.87,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 26468000000,
+          "prior_year": 34979000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 127577000000,
+          "prior_year": 102346000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "GOOGL",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }

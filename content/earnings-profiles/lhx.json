@@ -2,33 +2,33 @@
   "cik": 202058,
   "company": "L3Harris",
   "latest": {
-    "accession": "0000202058-26-000058",
-    "filed": "2026-07-30",
+    "accession": "0000202058-26-000087",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 3.13,
-        "prior_year": 2.44,
+        "current": 3.28,
+        "prior_year": 2.46,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 600000000,
-        "prior_year": 458000000,
+        "current": 632000000,
+        "prior_year": 462000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 5881000000,
-        "prior_year": 5426000000,
+        "current": 6060000000,
+        "prior_year": 5659000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-03",
-    "source": "https://www.sec.gov/Archives/edgar/data/202058/000020205826000058/hrs-20260703.htm"
+    "period_end": "2026-10-02",
+    "source": "https://www.sec.gov/Archives/edgar/data/202058/000020205826000087/hrs-20261002.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-07-03",
       "source": "https://www.sec.gov/Archives/edgar/data/202058/000020205826000058/hrs-20260703.htm"
+    },
+    {
+      "accession": "0000202058-26-000087",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.28,
+          "prior_year": 2.46,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 632000000,
+          "prior_year": 462000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6060000000,
+          "prior_year": 5659000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/202058/000020205826000087/hrs-20261002.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "LHX",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }

@@ -2,33 +2,33 @@
   "cik": 732712,
   "company": "Verizon",
   "latest": {
-    "accession": "0000732712-26-000046",
-    "filed": "2026-07-31",
+    "accession": "0000732712-26-000052",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.92,
-        "prior_year": 1.18,
+        "current": 1.25,
+        "prior_year": 1.17,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 3835000000,
-        "prior_year": 5003000000,
+        "current": 5198000000,
+        "prior_year": 4950000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 34253000000,
-        "prior_year": 34504000000,
+        "current": 34313000000,
+        "prior_year": 33821000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/732712/000073271226000046/vz-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/732712/000073271226000052/vz-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/732712/000073271226000046/vz-20260630.htm"
+    },
+    {
+      "accession": "0000732712-26-000052",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.25,
+          "prior_year": 1.17,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 5198000000,
+          "prior_year": 4950000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 34313000000,
+          "prior_year": 33821000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/732712/000073271226000052/vz-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "VZ",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }
