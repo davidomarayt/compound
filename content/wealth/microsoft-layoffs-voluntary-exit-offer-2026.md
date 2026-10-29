@@ -83,7 +83,7 @@ The picture was uneven: Xbox content and services revenue fell **2%**, and Windo
 
 These are company-reported figures. They provide context for the restructuring; they do not prove that any particular role was unnecessary, or that the latest exit offer caused the quarter's performance. The offer was announced after the quarter ended.
 
-For the broader business, see our [Microsoft stock guide](/wealth/microsoft-azure-ai-returns-2026/) and [Microsoft stock page](/stocks/MSFT/).
+For the broader business, see our [Microsoft stock guide](/wealth/microsoft-azure-ai-returns-2026/) and [Microsoft stock page](/stocks/msft/).
 
 ## Is AI replacing these employees?
 
