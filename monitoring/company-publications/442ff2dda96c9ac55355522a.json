@@ -69,5 +69,6 @@
     "site": "40769792484 success",
     "review_queue": "40697381390 success; stale October 28 snapshot refreshed locally",
     "mag7": "40712732387 failed; same workspace-ID error, issue 61; no retry"
-  }
+  },
+  "pull_request": "https://github.com/davidomarayt/compound/pull/62"
 }
