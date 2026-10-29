@@ -1,6 +1,6 @@
 {
   "fingerprint": "e18336759d8ab0a8fa09c337",
-  "state": "prepared",
+  "state": "published",
   "company": "GILD",
   "article_path": "content/wealth/gilead-earnings-hiv-growth-acquisition-cost.md",
   "story_thesis": "Gilead Earnings: Strong HIV Sales, but Acquisitions Reshape the Profit Story",
@@ -40,8 +40,21 @@
   "gates": {
     "build": "passed: full site build, 220 articles",
     "rendered_hero_and_social": "passed: canonical and hero/OG/Twitter markup checked; actual generated social images visually inspected",
-    "ci": "pending",
-    "deployment": "pending",
-    "targeted_tests": "50 passed; all 14 profile schemas validated"
-  }
+    "ci": "passed: test and performance, run 40955433276; local full suite 247 passed",
+    "deployment": "passed: build and deploy jobs, run 40957027858; verify-live job passed",
+    "targeted_tests": "50 passed; all 14 profile schemas validated",
+    "live_verification": "HTTP 200, current canonical content and source filings verified; original hero hashes match; OG/Twitter images fetched and visually inspected; five article pages inspected in browser"
+  },
+  "publication_pr": "https://github.com/davidomarayt/compound/pull/64",
+  "verified_head": "3d4280fd8b3f46185c45a903eee28f1f2a56844b",
+  "merge_commit": "7b81c3e14e97cbb3c79d8baf1ccf3896bbe2dce8",
+  "live_checks": [
+    {
+      "url": "https://compound.ie/wealth/gilead-earnings-hiv-growth-acquisition-cost/",
+      "status": 200,
+      "hero_sha256": "f4d54ff84882fa3271eae46dd066c880b5a2962ffe8e6b901b6a94040b1b9cb6",
+      "social": "https://compound.ie/static/discover/gilead-earnings-hiv-growth-acquisition-cost-16x9.webp",
+      "social_bytes": 70476
+    }
+  ]
 }

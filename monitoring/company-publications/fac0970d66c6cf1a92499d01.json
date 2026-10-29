@@ -1,6 +1,6 @@
 {
   "fingerprint": "fac0970d66c6cf1a92499d01",
-  "state": "prepared",
+  "state": "published",
   "company": "SNDK",
   "article_path": "content/wealth/sandisk-earnings-ai-storage-stock-split.md",
   "story_thesis": "Sandisk Earnings: AI Storage Surges as an Eight-for-One Split Approaches",
@@ -44,8 +44,21 @@
   "gates": {
     "build": "passed: full site build, 220 articles",
     "rendered_hero_and_social": "passed: canonical and hero/OG/Twitter markup checked; actual generated social images visually inspected",
-    "ci": "pending",
-    "deployment": "pending",
-    "targeted_tests": "50 passed; all 14 profile schemas validated"
-  }
+    "ci": "passed: test and performance, run 40955433276; local full suite 247 passed",
+    "deployment": "passed: build and deploy jobs, run 40957027858; verify-live job passed",
+    "targeted_tests": "50 passed; all 14 profile schemas validated",
+    "live_verification": "HTTP 200, current canonical content and source filings verified; original hero hashes match; OG/Twitter images fetched and visually inspected; five article pages inspected in browser"
+  },
+  "publication_pr": "https://github.com/davidomarayt/compound/pull/64",
+  "verified_head": "3d4280fd8b3f46185c45a903eee28f1f2a56844b",
+  "merge_commit": "7b81c3e14e97cbb3c79d8baf1ccf3896bbe2dce8",
+  "live_checks": [
+    {
+      "url": "https://compound.ie/wealth/sandisk-earnings-ai-storage-stock-split/",
+      "status": 200,
+      "hero_sha256": "7e31bde31d4e833dd883157d8d8dffc878b28e9071bb8bb6192459ced058b54c",
+      "social": "https://compound.ie/static/discover/sandisk-earnings-ai-storage-stock-split-16x9.webp",
+      "social_bytes": 48210
+    }
+  ]
 }
