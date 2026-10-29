@@ -2,33 +2,33 @@
   "cik": 1121788,
   "company": "Garmin",
   "latest": {
-    "accession": "0001193125-26-188908",
-    "filed": "2026-04-29",
+    "accession": "0001193125-26-435070",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.09,
-        "prior_year": 1.72,
+        "current": 2.8,
+        "prior_year": 2.08,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 405078000,
-        "prior_year": 332769000,
+        "current": 541661000,
+        "prior_year": 401615000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1753489000,
-        "prior_year": 1535099000,
+        "current": 1986076000,
+        "prior_year": 1770901000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-28",
-    "source": "https://www.sec.gov/Archives/edgar/data/1121788/000119312526188908/grmn-20260328.htm"
+    "period_end": "2026-09-26",
+    "source": "https://www.sec.gov/Archives/edgar/data/1121788/000119312526435070/grmn-20260926.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-28",
       "source": "https://www.sec.gov/Archives/edgar/data/1121788/000119312526188908/grmn-20260328.htm"
+    },
+    {
+      "accession": "0001193125-26-322114",
+      "filed": "2026-07-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.8,
+          "prior_year": 2.07,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 541920000,
+          "prior_year": 400822000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2022092000,
+          "prior_year": 1814564000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/1121788/000119312526322114/grmn-20260627.htm"
+    },
+    {
+      "accession": "0001193125-26-435070",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.8,
+          "prior_year": 2.08,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 541661000,
+          "prior_year": 401615000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1986076000,
+          "prior_year": 1770901000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/1121788/000119312526435070/grmn-20260926.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "GRMN",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }

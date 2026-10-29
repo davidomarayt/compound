@@ -2,33 +2,33 @@
   "cik": 1932393,
   "company": "GE HealthCare",
   "latest": {
-    "accession": "0001932393-26-000031",
-    "filed": "2026-04-29",
+    "accession": "0001932393-26-000059",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.85,
-        "prior_year": 1.23,
+        "current": 1.36,
+        "prior_year": 0.98,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 389000000,
-        "prior_year": 564000000,
+        "current": 615000000,
+        "prior_year": 446000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 5131000000,
-        "prior_year": 4777000000,
+        "current": 5513000000,
+        "prior_year": 5143000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1932393/000193239326000031/gehc-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1932393/000193239326000059/gehc-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1932393/000193239326000031/gehc-20260331.htm"
+    },
+    {
+      "accession": "0001932393-26-000046",
+      "filed": "2026-07-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.24,
+          "prior_year": 1.06,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 561000000,
+          "prior_year": 486000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5295000000,
+          "prior_year": 5007000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1932393/000193239326000046/gehc-20260630.htm"
+    },
+    {
+      "accession": "0001932393-26-000059",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.36,
+          "prior_year": 0.98,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 615000000,
+          "prior_year": 446000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5513000000,
+          "prior_year": 5143000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1932393/000193239326000059/gehc-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "GEHC",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }

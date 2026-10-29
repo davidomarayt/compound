@@ -2,33 +2,33 @@
   "cik": 48898,
   "company": "Hubbell Incorporated",
   "latest": {
-    "accession": "0001628280-26-029110",
-    "filed": "2026-05-01",
+    "accession": "0001628280-26-067729",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 3.41,
-        "prior_year": 3.03,
+        "current": 4.94,
+        "prior_year": 4.77,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 181800000,
-        "prior_year": 163200000,
+        "current": 262500000,
+        "prior_year": 255500000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1516700000,
-        "prior_year": 1365200000,
+        "current": 1872500000,
+        "prior_year": 1502400000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/48898/000162828026029110/hubb-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/48898/000162828026067729/hubb-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/48898/000162828026029110/hubb-20260331.htm"
+    },
+    {
+      "accession": "0001628280-26-050405",
+      "filed": "2026-07-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.52,
+          "prior_year": 4.56,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 240400000,
+          "prior_year": 244200000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1711800000,
+          "prior_year": 1484300000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/48898/000162828026050405/hubb-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-067729",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.94,
+          "prior_year": 4.77,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 262500000,
+          "prior_year": 255500000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1872500000,
+          "prior_year": 1502400000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/48898/000162828026067729/hubb-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "HUBB",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }
