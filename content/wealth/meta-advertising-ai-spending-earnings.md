@@ -29,6 +29,8 @@ image_alt: Meta AI app icon on a smartphone screen. Archival photograph publishe
 image_credit: Salvador Rios / Unsplash / Unsplash License. Archival photograph published 8 September 2025; cropped.
 image_source: https://unsplash.com/photos/smartphone-screen-displays-ai-app-icons-chatgpt-grok-meta-ai-gemini-tkkOCi1Wgx0
 sources:
+- title: Q3 2026 Form 10-Q, future leases and contractual commitments
+  url: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm
 - title: 'Q3 2026 results: SEC Form 8-K, Exhibit 99.1, 21 October 2026'
   url: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm
 ---
@@ -72,6 +74,8 @@ For an investor, the important chain of evidence runs from better advertiser out
 Infrastructure spending generally hits cash before its full cost appears in earnings through depreciation. Rapid expansion can therefore make current accounting profit a poor guide to the amount available for distribution.
 
 A cash deficit during investment is not automatically a failure. It does increase the importance of utilisation, pricing and useful asset lives. The economic question is whether the eventual cash returns compensate for the resources committed and the risk taken now.
+
+*Filing update — 29 October 2026:* Meta’s [Q3 Form 10-Q](https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm) adds a longer-term funding consideration. At 30 September, it reported approximately **$355.73 billion of operating and finance lease obligations for leases that had not yet commenced**. These cover infrastructure including data centres and energy facilities, with commencement dates extending through 2036 and lease terms of more than one year to 30 years. This is a future contractual obligation measure, not expenditure paid in Q3 or an annual spending forecast. It reinforces the need to assess committed capacity alongside current cash flow, without treating the entire amount as immediately payable.
 
 ## The new share class adds a governance question
 

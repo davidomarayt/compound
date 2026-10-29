@@ -1,0 +1,73 @@
+{
+  "story_fingerprint": "442ff2dda96c9ac55355522a",
+  "company": "META",
+  "date": "2026-10-29",
+  "status": "held",
+  "publication_state": "existing_article_update_draft",
+  "reason": "Existing cash-flow analysis is canonical; no competing article warranted.",
+  "article_path": "content/wealth/meta-advertising-ai-spending-earnings.md",
+  "queue_id": "8aacd0869f751514d601a6fb",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm"
+  ],
+  "identity": {
+    "issuer": "Meta Platforms, Inc.",
+    "CIK": 1326801,
+    "accession": "0001628280-26-066773",
+    "period_end": "2026-09-30",
+    "form": "10-Q",
+    "currency": "USD",
+    "period": "Q3 FY2026"
+  },
+  "evidence_table": [
+    {
+      "claim": "355.73 billion: uncommenced operating and finance leases",
+      "source_index": 0,
+      "location": "MD&A, Leases and Contractual Commitments; Note 8",
+      "quote": "lease obligations were approximately $355.73 billion",
+      "result": "Confirmed; not current-quarter cash spending"
+    },
+    {
+      "claim": "Commencements through 2036; terms over one year to 30 years",
+      "source_index": 0,
+      "location": "MD&A, Leases and Contractual Commitments",
+      "result": "Confirmed; no total added to capex"
+    },
+    {
+      "claim": "Existing Q3 free-cash-flow context",
+      "source_index": 1,
+      "location": "GAAP to non-GAAP reconciliation, three months ended September 30",
+      "arithmetic_USD_millions": "32786-33942-964=-2120",
+      "result": "Matches existing article; non-GAAP definition retained"
+    }
+  ],
+  "fact_check_pass": {
+    "method": "Separate reread of added claims against MD&A and reconciliation; quarter distinguished from future obligations",
+    "unresolved_added_claims": []
+  },
+  "duplicate_checks": [
+    "Editorial topic index",
+    "Markdown and JSON inventories",
+    "All three related Meta article texts searched",
+    "Live canonical page inspected",
+    "Open/recent PRs inspected; no overlapping Meta attempt"
+  ],
+  "image": {
+    "action": "Unchanged existing credited archival Meta AI photograph",
+    "new_image": "not_applicable"
+  },
+  "gates": {
+    "new_article": "held_duplicate_intent",
+    "existing_update": "draft_only",
+    "offline_tests": "38 passed; arithmetic passed",
+    "full_build": "Blocked: missing existing Robinhood cover in clean checkout",
+    "render": "Article YAML and Markdown rendered; full page and social QA not completed"
+  },
+  "workflow_health": {
+    "earnings_monitor": "40833932453 success",
+    "site": "40769792484 success",
+    "review_queue": "40697381390 success; stale October 28 snapshot refreshed locally",
+    "mag7": "40712732387 failed; same workspace-ID error, issue 61; no retry"
+  }
+}
