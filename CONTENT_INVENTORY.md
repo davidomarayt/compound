@@ -1,6 +1,6 @@
 # Compound.ie — Master Content and Title Register
 
-Snapshot: 2026-10-28 | Source: publishing branch
+Snapshot: 2026-10-29 | Source: publishing branch
 
 PURPOSE: Check this register before creating a new article, guide or calculator. Search by exact title, keyword, synonym and reader intent. If the topic is already answered, update its canonical page instead of publishing an SEO duplicate.
 
@@ -419,20 +419,20 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - [Disclaimer](https://compound.ie/disclaimer/)
 - [Editorial and Corrections Policy](https://compound.ie/editorial-policy/)
 - [Find Solar Panel Installers in Ireland: SEAI Register & Checklist](https://compound.ie/solar-installers/)
+- [Installer partnerships are paused](https://compound.ie/solar-for-installers/)
 - [Installer Portal | Compound Solar](https://compound.ie/solar-installer-portal/)
 - [Insurance Tools & Guides Ireland](https://compound.ie/insurance/)
 - [Life](https://compound.ie/life/)
 - [Privacy policy](https://compound.ie/privacy/)
 - [Solar Battery Calculator Ireland: Cost, Grant & Payback](https://compound.ie/solar-batteries/)
+- [Solar Costs & Payback: Irish Guides and Calculators](https://compound.ie/solar/)
 - [Solar Export Rates Ireland: Compare Electricity Tariffs](https://compound.ie/solar-export-rates/)
-- [Solar Installer Partnerships Ireland | Exclusive County Sponsorship | Compound](https://compound.ie/solar-for-installers/)
+- [Solar matching is paused](https://compound.ie/solar-get-quotes/)
 - [Solar Panel Direction Calculator Ireland: 360° Compass & kWh](https://compound.ie/solar-roof-direction/)
 - [Solar Panel Grants Ireland 2026: PV & Battery Eligibility](https://compound.ie/solar-grants/)
 - [Solar Panel Installation Costs & System Sizes Ireland](https://compound.ie/solar-costs/)
 - [Solar Panels, Inverters & Batteries Ireland: Equipment Guide](https://compound.ie/solar-equipment/)
 - [Solar Quote Comparison Calculator Ireland](https://compound.ie/solar-compare-quotes/)
-- [Solar Quote Request Ireland: Build Your Installation Project](https://compound.ie/solar-get-quotes/)
-- [Solar Quotes Ireland: Plan Your Installation & Compare Costs](https://compound.ie/solar/)
 
 ## Site hubs and directories — 11
 

@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-10-28",
+  "snapshot_date": "2026-10-29",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -5392,6 +5392,12 @@
         "kind": "Information / policy page"
       },
       {
+        "title": "Installer partnerships are paused",
+        "url": "/solar-for-installers/",
+        "source": "content/pages/solar-for-installers.md",
+        "kind": "Information / policy page"
+      },
+      {
         "title": "Installer Portal | Compound Solar",
         "url": "/solar-installer-portal/",
         "source": "content/pages/solar-installer-portal.md",
@@ -5422,15 +5428,21 @@
         "kind": "Information / policy page"
       },
       {
+        "title": "Solar Costs & Payback: Irish Guides and Calculators",
+        "url": "/solar/",
+        "source": "content/pages/solar.md",
+        "kind": "Information / policy page"
+      },
+      {
         "title": "Solar Export Rates Ireland: Compare Electricity Tariffs",
         "url": "/solar-export-rates/",
         "source": "content/pages/solar-export-rates.md",
         "kind": "Information / policy page"
       },
       {
-        "title": "Solar Installer Partnerships Ireland | Exclusive County Sponsorship | Compound",
-        "url": "/solar-for-installers/",
-        "source": "content/pages/solar-for-installers.md",
+        "title": "Solar matching is paused",
+        "url": "/solar-get-quotes/",
+        "source": "content/pages/solar-get-quotes.md",
         "kind": "Information / policy page"
       },
       {
@@ -5461,18 +5473,6 @@
         "title": "Solar Quote Comparison Calculator Ireland",
         "url": "/solar-compare-quotes/",
         "source": "content/pages/solar-compare-quotes.md",
-        "kind": "Information / policy page"
-      },
-      {
-        "title": "Solar Quote Request Ireland: Build Your Installation Project",
-        "url": "/solar-get-quotes/",
-        "source": "content/pages/solar-get-quotes.md",
-        "kind": "Information / policy page"
-      },
-      {
-        "title": "Solar Quotes Ireland: Plan Your Installation & Compare Costs",
-        "url": "/solar/",
-        "source": "content/pages/solar.md",
         "kind": "Information / policy page"
       }
     ],
