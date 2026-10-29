@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 214
+- Published editorial articles and guides: 215
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 160
+## Wealth articles and guides — 161
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
@@ -135,6 +135,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Meta's advertising engine is growing. Is enough cash reaching shareholders?](https://compound.ie/wealth/meta-advertising-growth-ai-cash-flow/)
 - [Microsoft Stock Guide: Azure, Software, AI and Cash Flow](https://compound.ie/wealth/microsoft-azure-ai-returns-2026/)
 - [Microsoft's AI spending: the cash-flow test behind Azure's growth](https://compound.ie/wealth/microsoft-ai-capex-cash-flow/)
+- [Microsoft's Layoff Wave: What the 60,000-Employee Exit Offer Really Means](https://compound.ie/news/microsoft-layoffs-voluntary-exit-offer-2026/)
 - [Microsoft’s Essex exit exposes the power constraint on AI](https://compound.ie/wealth/microsoft-nscale-power-grid-delay/)
 - [Molina Earnings: Guidance Holds as Medical Costs Squeeze Margins](https://compound.ie/wealth/molina-healthcare-earnings-medicaid-margins/)
 - [More than 500,000 Irish energy accounts are in arrears — what happens if you can’t pay?](https://compound.ie/news/energy-bill-arrears-ireland-cant-pay/)
