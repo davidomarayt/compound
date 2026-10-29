@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 215 published articles and guides, 64 tools,
+**Included:** 216 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -66,6 +66,7 @@ For the complete register (including 510+ company profiles), open
 - [GLP-1 side effects: what is common, and when to get help](https://compound.ie/health/glp1-side-effects-when-to-seek-help/) — **Health**
 - [GLP-1s and pregnancy: Ozempic, Wegovy, Mounjaro and what the evidence says](https://compound.ie/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/) — **Health**
 - [Government considers extending petrol and diesel excise cuts into spring](https://compound.ie/news/petrol-diesel-excise-cuts-ev-costs-ireland/) — **Wealth**
+- [GTA VI and TTWO: The Case for One of Entertainment's Biggest Launches](https://compound.ie/wealth/ttwo-gta-6-entertainment-launch-revenue/) — **Wealth**
 - [Health for a 100-Year Life: Staying Capable, Connected and Well](https://compound.ie/health/health-for-a-100-year-life/) — **Health**
 - [Health Insurance in Ireland: Costs, Cover & How to Choose a Plan](https://compound.ie/wealth/health-insurance-ireland/) — **Wealth**
 - [Health insurance prices are rising — but some plan benefits are being cut](https://compound.ie/news/health-insurance-price-rises-benefit-cuts-ireland/) — **Wealth**

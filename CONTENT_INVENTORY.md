@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 215
+- Published editorial articles and guides: 216
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 161
+## Wealth articles and guides — 162
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
@@ -93,6 +93,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Garage Conversion & Change of Use Planning Permission Ireland](https://compound.ie/wealth/garage-conversion-change-of-use-planning-ireland/)
 - [Gift Tax in Ireland 2027: How Much Can You Give Tax-Free?](https://compound.ie/wealth/gift-tax-ireland/)
 - [Government considers extending petrol and diesel excise cuts into spring](https://compound.ie/news/petrol-diesel-excise-cuts-ev-costs-ireland/)
+- [GTA VI and TTWO: The Case for One of Entertainment's Biggest Launches](https://compound.ie/wealth/ttwo-gta-6-entertainment-launch-revenue/)
 - [Health Insurance in Ireland: Costs, Cover & How to Choose a Plan](https://compound.ie/wealth/health-insurance-ireland/)
 - [Health insurance prices are rising — but some plan benefits are being cut](https://compound.ie/news/health-insurance-price-rises-benefit-cuts-ireland/)
 - [Heat Pumps in Ireland: Costs, Grants, Running Costs & Suitability](https://compound.ie/wealth/heat-pumps-ireland/)
