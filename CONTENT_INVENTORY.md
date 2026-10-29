@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 213
+- Published editorial articles and guides: 214
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 159
+## Wealth articles and guides — 160
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
@@ -80,6 +80,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Do Solar Panels Work in Winter in Ireland? Monthly Output and Savings](https://compound.ie/wealth/solar-panels-winter-ireland/)
 - [Do you actually need a battery with solar panels in Ireland?](https://compound.ie/wealth/solar-panels-vs-battery-ireland/)
 - [East- and West-Facing Solar Panels in Ireland: Are They Worth It?](https://compound.ie/wealth/east-west-facing-solar-panels-ireland/)
+- [ECB Holds Rates as Lagarde Announces Departure: What It Means for Your Money](https://compound.ie/news/ecb-rates-lagarde-departure-ireland-october-2026/)
 - [Electricity Tariffs in Ireland: Smart, Day/Night, EV & Dynamic Rates](https://compound.ie/wealth/electricity-tariffs-ireland/)
 - [Eli Lilly Stock Guide: Medicines, Pipeline, Pricing and Valuation](https://compound.ie/wealth/eli-lilly-foundayo-obesity-growth-2026-10-19/)
 - [Eli Lilly''s Foundayo Wins European Backing: What the Oral GLP-1 Means for LLY Investors](https://compound.ie/wealth/eli-lilly-foundayo-europe-approval-glp1-2026/)

@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 213 published articles and guides, 64 tools,
+**Included:** 214 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -50,6 +50,7 @@ For the complete register (including 510+ company profiles), open
 - [Do you actually need a battery with solar panels in Ireland?](https://compound.ie/wealth/solar-panels-vs-battery-ireland/) — **Wealth**
 - [Dublin Theatre Festival 2026: what’s on, when it runs and how to plan a visit](https://compound.ie/news/dublin-theatre-festival-2026-guide/) — **Life**
 - [East- and West-Facing Solar Panels in Ireland: Are They Worth It?](https://compound.ie/wealth/east-west-facing-solar-panels-ireland/) — **Wealth**
+- [ECB Holds Rates as Lagarde Announces Departure: What It Means for Your Money](https://compound.ie/news/ecb-rates-lagarde-departure-ireland-october-2026/) — **Wealth**
 - [El Niño could be one of the strongest on record — what it actually means for Ireland](https://compound.ie/news/el-nino-2026-ireland-weather-food-transport/) — **Life**
 - [Electricity Tariffs in Ireland: Smart, Day/Night, EV & Dynamic Rates](https://compound.ie/wealth/electricity-tariffs-ireland/) — **Wealth**
 - [Eli Lilly Stock Guide: Medicines, Pipeline, Pricing and Valuation](https://compound.ie/wealth/eli-lilly-foundayo-obesity-growth-2026-10-19/) — **Wealth**
