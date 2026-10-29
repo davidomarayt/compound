@@ -321,8 +321,8 @@ jobs:
           test "$(grep -o 'class="home-hub-card"' public/index.html | wc -l)" -eq 4
           test "$(grep -o 'data-home-hub="' public/index.html | wc -l)" -eq 8
           grep -Fq 'Finance &amp; Investing' public/index.html
-          grep -Fq 'Explore our wider guides.' public/index.html
-          grep -Fq 'Worth your time.' public/index.html
+          grep -Fq 'Research. Invest. Build.' public/index.html
+          grep -Fq 'finance-desk-grid' public/index.html
           for slug in wealth compound-interest-calculator insurance pia stocks wealth/earnings wealth/how-to-start-investing-in-ireland health-insurance-cost-comparison-calculator; do
             test -s "public/$slug/index.html"
             grep -Fq "href=\"/$slug/\"" public/index.html

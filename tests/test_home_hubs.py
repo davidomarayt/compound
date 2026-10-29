@@ -9,7 +9,7 @@ JS = ROOT / "compound/site/static/home-hubs.js"
 
 def test_homepage_preserves_editorial_identity_and_promotes_four_hubs():
     page = HOME.read_text(encoding="utf-8")
-    assert page.index('class="home-command-grid"') < page.index('id="explore-compound"') < page.index('id="pillars-title"')
+    assert page.index('class="home-command-grid"') < page.index('id="explore-compound"') < page.index('id="finance-desk-title"')
     assert page.count('class="home-hub-card"') == 4
     assert page.count('data-home-hub=') == 8
     for route in ("/wealth/", "/compound-interest-calculator/", "/insurance/",
@@ -21,8 +21,10 @@ def test_homepage_preserves_editorial_identity_and_promotes_four_hubs():
     assert 'Finance &amp; Investing' in page
     assert '/solar/get-quotes/' not in page
     assert 'Popular tools' in page
-    assert 'Explore our wider guides.' in page
-    assert 'Worth your time.' in page
+    assert 'Research. Invest. Build.' in page
+    assert 'pillar-tile' not in page
+    assert 'journal-column-happiness' not in page
+    assert all(title in page for title in ('Stock research','Investing in Ireland','Personal finance'))
     assert 'home-hubs.css?v=1' in page and 'home-hubs.js?v=1' in page
     assert 'rel="canonical" href="{{ site_url }}/"' in page
 
