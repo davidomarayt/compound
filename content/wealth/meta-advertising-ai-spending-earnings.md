@@ -18,7 +18,6 @@ tags:
 - stock-meta
 - meta
 - earnings-analysis
-hero_image_url: https://images.unsplash.com/photo-1757310998309-87a97e562ee5?w=3600&q=95&fit=max
 hero_image_alt: Meta AI app icon on a smartphone screen. Archival photograph published 8 September 2025; cropped for publication.
 hero_image_credit: Salvador Rios / Unsplash / Unsplash License. Archival photograph published 8 September 2025; cropped.
 hero_image_source: https://unsplash.com/photos/smartphone-screen-displays-ai-app-icons-chatgpt-grok-meta-ai-gemini-tkkOCi1Wgx0
