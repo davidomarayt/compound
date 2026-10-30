@@ -86,7 +86,8 @@ def main():
                         if width == 390:
                             tracked = page.evaluate("""() => {
                                 const root=document.getElementById('explore-compound');
-                                const anchor=root.querySelector('a[data-home-hub="solar"][data-home-action="project"]');
+                                const anchor=root.querySelector('a[data-home-hub="stocks"][data-home-action="earnings"]');
+                                if(!anchor)throw new Error('Missing company earnings hub link');
                                 root.addEventListener('click',e=>e.preventDefault(),true);
                                 const data=[];window.gtag=(...args)=>data.push(args);
                                 localStorage.setItem('compound_analytics_consent','denied');
@@ -96,12 +97,11 @@ def main():
                                 anchor.click();
                                 return {before,after:data.length,params:data[0]||null};
                             }""")
-                            # One homepage_hub_click plus a separate sitewide solar_journey_click
-                            # are expected for the same consented solar project link. They are
-                            # different GA4 events, not duplicate homepage tracking.
-                            if tracked["before"] != 0 or tracked["after"] != 2 or tracked["params"][1] != "homepage_hub_click":
+                            # The earnings link emits one consented homepage_hub_click event.
+                            # It is not part of the solar journey funnel.
+                            if tracked["before"] != 0 or tracked["after"] != 1 or tracked["params"][1] != "homepage_hub_click":
                                 failures.append(f"{width}px consent tracking failed: {tracked}")
-                            elif tracked["params"][2].get("hub") != "solar":
+                            elif tracked["params"][2].get("hub") != "stocks":
                                 failures.append(f"{width}px wrong hub attribution: {tracked}")
                         print(f"{width}px homepage specialist cards: {result}", flush=True)
                     finally:

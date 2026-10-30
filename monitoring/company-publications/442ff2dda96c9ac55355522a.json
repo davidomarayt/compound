@@ -1,0 +1,146 @@
+{
+  "story_fingerprint": "442ff2dda96c9ac55355522a",
+  "company": "META",
+  "date": "2026-10-29",
+  "status": "proposed",
+  "publication_state": "validated_locally_awaiting_final_head_ci",
+  "reason": "Sources, local build and browser gates passed. Awaiting exact final-head CI and expected-head merge; not yet published.",
+  "article_path": "content/wealth/meta-advertising-ai-spending-earnings.md",
+  "queue_id": "81b3602281d61b8f88fa612d",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm"
+  ],
+  "identity": {
+    "issuer": "Meta Platforms, Inc.",
+    "CIK": 1326801,
+    "accession": "0001628280-26-066773",
+    "period_end": "2026-09-30",
+    "form": "10-Q",
+    "currency": "USD",
+    "period": "Q3 FY2026"
+  },
+  "evidence_table": [
+    {
+      "claim": "355.73 billion: uncommenced operating and finance leases",
+      "source_index": 0,
+      "location": "MD&A, Leases and Contractual Commitments; Note 10",
+      "quote": "lease obligations were approximately $355.73 billion",
+      "result": "Confirmed; not current-quarter cash spending"
+    },
+    {
+      "claim": "Commencements through 2036; terms over one year to 30 years",
+      "source_index": 0,
+      "location": "MD&A, Leases and Contractual Commitments",
+      "result": "Confirmed; no total added to capex"
+    },
+    {
+      "claim": "Existing Q3 free-cash-flow context",
+      "source_index": 1,
+      "location": "GAAP to non-GAAP reconciliation, three months ended September 30",
+      "arithmetic_USD_millions": "32786-33942-964=-2120",
+      "result": "Matches existing article; non-GAAP definition retained"
+    },
+    {
+      "claim": "Infrastructure scope and reporting date",
+      "source_index": 0,
+      "location": "Note 10; MD&A Leases and Contractual Commitments",
+      "result": "Data centres, energy-related infrastructure, colocations and network infrastructure; 30 September 2026. Future obligation, not current cash expenditure."
+    },
+    {
+      "claim": "Unchanged financial table",
+      "source_index": 1,
+      "location": "Third Quarter Financial Highlights and cash-flow reconciliation",
+      "result": "USD millions: revenue 64601, operating income 12988; GAAP EPS USD3.83. Annual revenue growth 26%. Capex including lease principal 33942+964=34906; rounded USD34.91bn."
+    },
+    {
+      "claim": "Unchanged charge, advertising and guidance context",
+      "source_index": 1,
+      "location": "Attorneys General agreement; Operational Highlights; CFO Outlook",
+      "result": "USD9.89bn charge; company exclusion EPS7.40. Impressions +10%, ad prices +14%. Q4 revenue guidance USD73–76bn; FY2026 capex guidance USD135–145bn."
+    },
+    {
+      "claim": "Unchanged Class C terms",
+      "source_index": 1,
+      "location": "Establishment of New Class C Common Stock",
+      "result": "Non-voting, effective January2027; one share per Class A/B share; record/payment dates undetermined; distribution leaves voting power unchanged."
+    },
+    {
+      "claim": "Unchanged prior-year exceptional tax comparison",
+      "source_index": 0,
+      "location": "Note 12 Income Taxes",
+      "result": "Q3 FY2025 included a USD15.93bn discrete tax charge; no invented adjusted comparison added."
+    }
+  ],
+  "fact_check_pass": {
+    "method": "Separate claim-by-claim reread on 30 October retry: Note 10 and MD&A independently agree; release tables, operational metrics, guidance and Class C terms checked; cash-flow arithmetic recomputed.",
+    "unresolved_added_claims": []
+  },
+  "duplicate_checks": [
+    "Editorial topic index",
+    "Markdown and JSON inventories",
+    "All three related Meta article texts searched",
+    "Live canonical page inspected",
+    "Open/recent PRs inspected; no overlapping Meta attempt",
+    "30 October retry: open/recent PRs and current publishing branch checked; resume PR62, no overlapping Meta publication or same-day new article attempt",
+    "Live canonical page still lacked this filing update before merge"
+  ],
+  "image": {
+    "action": "Preserve existing committed Meta crop and all provenance; remove remote hero_image_url override so cache misses cannot replace the approved crop with uncropped source.",
+    "new_image": "not_applicable",
+    "asset": "/static/images/evergreen/meta-ai-app-earnings.jpg",
+    "photographer": "Salvador Rios",
+    "source": "https://unsplash.com/photos/smartphone-screen-displays-ai-app-icons-chatgpt-grok-meta-ai-gemini-tkkOCi1Wgx0",
+    "licence": "Unsplash License",
+    "licence_url": "https://unsplash.com/license",
+    "archive_label": "Archival photograph published 8 September 2025; cropped",
+    "capture_date": "Not asserted; source only establishes publication date",
+    "verified": "Original photo page and licence directly inspected 30 October 2026; existing 1400x788 photograph retained",
+    "sha256": "e17c75b3cc5c24fe4b33fba9737319728a5d7520e474b759c018ba2dc3c51a87",
+    "origin_image_url": "https://images.unsplash.com/photo-1757310998309-87a97e562ee5?w=3600&q=95&fit=max"
+  },
+  "gates": {
+    "new_article": "not_applicable: canonical existing article update",
+    "existing_update": "authorised by 29 October extension",
+    "offline_tests": "49 offline tests passed, including image-cache/metadata tests",
+    "full_build": "Passed: 221 articles, 654 tags, 25 pages, 57 tools; standard image preparation completed",
+    "render": "Passed: Chromium153 screenshots inspected at390px and1440px; dated update, original publication date, canonical, cover and social image verified; no horizontal overflow",
+    "image_assets": "Full news-image preparation completed successfully; Meta uses approved committed crop via pinned local-asset path. 49 offline tests passed.",
+    "homepage_audit": "Passed at320,360,390,430,768,1024,1440px; link destinations and denied/granted consent assertions intact",
+    "exact_head_ci": "Pending final audit and image-pin commit",
+    "deployment": "Not merged or deployed yet"
+  },
+  "workflow_health": {
+    "earnings_monitor": "41011389339 success",
+    "site": "41011475956: build, deploy and verify-live succeeded; mobile-audit failed on removed homepage Solar link",
+    "mag7": "40899610447 failed; no live model retry"
+  },
+  "pull_request": "https://github.com/davidomarayt/compound/pull/62",
+  "last_reviewed": "2026-10-30",
+  "retry_environment": {
+    "image_root_cause": "Missing local socksio dependency for configured HTTP proxy; installed locally only",
+    "browser": "Chromium153 from @sparticuz/chromium153.0.0; local launch succeeds",
+    "repository_runtime_dependencies_changed": false
+  },
+  "visual_qa": [
+    {
+      "width": 390,
+      "http": 200,
+      "canonical": true,
+      "update_text": true,
+      "no_horizontal_overflow": true,
+      "social_image": "https://compound.ie/static/discover/meta-advertising-ai-spending-earnings-16x9.webp",
+      "social_image_sha256": "cda4b3e0aa1608dda0f073a11810dc3e57b7410a37a5241f1abc6e032b501281"
+    },
+    {
+      "width": 1440,
+      "http": 200,
+      "canonical": true,
+      "update_text": true,
+      "no_horizontal_overflow": true,
+      "social_image": "https://compound.ie/static/discover/meta-advertising-ai-spending-earnings-16x9.webp",
+      "social_image_sha256": "cda4b3e0aa1608dda0f073a11810dc3e57b7410a37a5241f1abc6e032b501281"
+    }
+  ],
+  "validated_content_sha256": "5644282c59bb3f61dcc7a6cc2610f1ca7dda323155b3224cc9a73b20c3cd9fa6"
+}

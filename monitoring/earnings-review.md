@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-10-29
+Checked: 2026-10-30
 
-- 447 saved profiles checked against structural and issuer rules.
-- 40 existing company articles; 39 mapped to monitored issuers.
-- 137 pending review items; 0 recorded decisions.
+- 448 saved profiles checked against structural and issuer rules.
+- 45 existing company articles; 44 mapped to monitored issuers.
+- 129 pending review items; 1 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -18,6 +18,86 @@ ID: `05d9e53f1fdf6d05053a8d15`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/molina-healthcare-earnings-medicaid-margins.md`
+
+### AMZN · article_review · medium
+
+ID: `41ba878aab2ed7fa22322144`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/amazon-germany-investment-returns.md`, `content/earnings-profiles/amzn.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
+
+### AMZN · article_review · medium
+
+ID: `65420536c33edba7dd84364f`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/amazon-aws-retail-economics-2026.md`, `content/earnings-profiles/amzn.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
+
+### AMZN · article_review · medium
+
+ID: `7e164d94274037ecfdd76ed7`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/anthropic-loss-ipo-valuation.md`, `content/earnings-profiles/amzn.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
+
+### GOOGL · article_review · medium
+
+ID: `572fa2d4f20a8c799e20bbe5`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/anthropic-loss-ipo-valuation.md`, `content/earnings-profiles/googl.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
+
+### GOOGL · article_review · medium
+
+ID: `5d4baf47ddc4ca5acd475301`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/alphabet-search-ai-economics-2026.md`, `content/earnings-profiles/googl.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
+
+### GOOGL · article_review · medium
+
+ID: `a1f97c61e7dddf2a846b965d`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/alphabet-europe-ai-sovereignty.md`, `content/earnings-profiles/googl.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
+
+### GOOGL · article_review · medium
+
+ID: `e52b44034a293995fc7b9b41`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/nokia-ai-growth-cash-flow.md`, `content/earnings-profiles/googl.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
+
+### GOOGL · article_review · medium
+
+ID: `e82691c591b5c60ecf2792f7`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/alphabet-ai-capex-free-cash-flow.md`, `content/earnings-profiles/googl.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
 
 ### HOOD · article_review · medium
 
@@ -46,16 +126,6 @@ ID: `627b35ca35f4999655146e4c`
 Newer filing than the article review date; assess whether claims or outlook need updating.
 
 Files: `content/wealth/meta-ai-advertising-returns-2026.md`, `content/earnings-profiles/meta.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
-
-### META · article_review · medium
-
-ID: `8aacd0869f751514d601a6fb`
-
-Newer filing than the article review date; assess whether claims or outlook need updating.
-
-Files: `content/wealth/meta-advertising-ai-spending-earnings.md`, `content/earnings-profiles/meta.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
 
@@ -211,16 +281,6 @@ No saved profile for an active issuer. Check ingestion and official filings; nev
 
 Files: `content/earnings-profiles/ball.json`
 
-### BG · coverage_check · medium
-
-ID: `937634e5b5975df2cb86b81b`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/bg.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1996862/000162828026028235/bg-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-04-29
-
 ### BKNG · coverage_check · medium
 
 ID: `1fb1feeea91edda00d049fe9`
@@ -315,16 +375,6 @@ Files: `content/earnings-profiles/cnp.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1130310/000113031026000028/cnp-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-04-23
 
-### CTSH · coverage_check · medium
-
-ID: `0612feac945a0f5c6981313e`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/ctsh.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1058290/000105829026000016/ctsh-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-04-29
-
 ### CVNA · coverage_check · medium
 
 ID: `93662e45f0cac489d99cb997`
@@ -342,16 +392,6 @@ Saved filing is old enough to warrant checking the official source; this does no
 Files: `content/earnings-profiles/d.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/715957/000119312526200275/d-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-05-01
-
-### DLR · coverage_check · medium
-
-ID: `e724fe6fecf2be63cdf1d2b2`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/dlr.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1297996/000110465926054255/dlr-20260331x10q.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-05-01
 
 ### DTE · coverage_check · medium
 
@@ -380,16 +420,6 @@ Saved filing is old enough to warrant checking the official source; this does no
 Files: `content/earnings-profiles/ed.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1047862/000104786226000091/ed-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-05-07
-
-### EIX · coverage_check · medium
-
-ID: `d005c6d92b781a17937ca487`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/eix.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/827052/000082705226000042/eix-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-04-28
 
 ### EL · coverage_check · medium
 
@@ -487,16 +517,6 @@ Files: `content/earnings-profiles/frt.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/34903/000003490326000026/frt-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-05-01
 
-### FTV · coverage_check · medium
-
-ID: `e764f53431ecc27bf16717f5`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/ftv.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1659166/000165916626000013/ftv-20260403.htm · Q1 FY2026 · period end 2026-04-03 · filed 2026-04-30
-
 ### GD · coverage_check · medium
 
 ID: `8bc23a24d42c9645056ba004`
@@ -504,26 +524,6 @@ ID: `8bc23a24d42c9645056ba004`
 No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.
 
 Files: `content/earnings-profiles/gd.json`
-
-### GEHC · coverage_check · medium
-
-ID: `78884a6c993a6f4dc2029761`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/gehc.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1932393/000193239326000031/gehc-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-04-29
-
-### GRMN · coverage_check · medium
-
-ID: `0eb4fa00b03e70bfc551fa56`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/grmn.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1121788/000119312526188908/grmn-20260328.htm · Q1 FY2026 · period end 2026-03-28 · filed 2026-04-29
 
 ### HCA · coverage_check · medium
 
@@ -535,14 +535,6 @@ Files: `content/earnings-profiles/hca.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/860730/000119312526191444/hca-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-04-29
 
-### HONA · coverage_check · medium
-
-ID: `f7e53aa39b72ccb691cce3e4`
-
-No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.
-
-Files: `content/earnings-profiles/hona.json`
-
 ### HSY · coverage_check · medium
 
 ID: `c8a80c67c30835da0fe85330`
@@ -550,16 +542,6 @@ ID: `c8a80c67c30835da0fe85330`
 No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.
 
 Files: `content/earnings-profiles/hsy.json`
-
-### HUBB · coverage_check · medium
-
-ID: `fd5bebf481732f4ed5c852f9`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/hubb.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/48898/000162828026029110/hubb-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-05-01
 
 ### HUM · coverage_check · medium
 
@@ -705,16 +687,6 @@ Files: `content/earnings-profiles/mas.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/62996/000006299626000014/mas-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-04-22
 
-### MDLZ · coverage_check · medium
-
-ID: `12a6d6a63124a189092461bc`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/mdlz.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1103982/000162828026027937/mdlz-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-04-28
-
 ### MNST · coverage_check · medium
 
 ID: `aeee6c92ce87c57284ed812f`
@@ -775,16 +747,6 @@ No saved profile for an active issuer. Check ingestion and official filings; nev
 
 Files: `content/earnings-profiles/pnw.json`
 
-### PPG · coverage_check · medium
-
-ID: `d8fed5f88a74e359f62edd32`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/ppg.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/79879/000007987926000170/ppg-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-04-29
-
 ### PPL · coverage_check · medium
 
 ID: `c05d3ca345a93cf80680273d`
@@ -826,16 +788,6 @@ ID: `7050d6b8c33d8838739db4d2`
 No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.
 
 Files: `content/earnings-profiles/spg.json`
-
-### SPGI · coverage_check · medium
-
-ID: `7483cd9cb84aac4a0b0fcbaf`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/spgi.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/64040/000006404026000024/spgi-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-04-28
 
 ### SRE · coverage_check · medium
 
@@ -993,43 +945,13 @@ Saved evidence: https://www.sec.gov/Archives/edgar/data/320193/00003201932600002
 
 ### AMZN · article_review · low
 
-ID: `a8119c1c26b9b1e12490243c`
+ID: `271cef3736fc4895d5d7982d`
 
 Baseline consistency review of this article against the saved company results and its original sources.
 
 Files: `content/wealth/amazon-aws-profit-investment-gains.md`, `content/earnings-profiles/amzn.json`
 
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-07-31
-
-### AMZN · article_review · low
-
-ID: `cb21221cd980f227316bc627`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/anthropic-loss-ipo-valuation.md`, `content/earnings-profiles/amzn.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-07-31
-
-### AMZN · article_review · low
-
-ID: `d78bb5fd65229512af580599`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/amazon-aws-retail-economics-2026.md`, `content/earnings-profiles/amzn.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-07-31
-
-### AMZN · article_review · low
-
-ID: `f61325f5cbcd58e729ee7239`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/amazon-germany-investment-returns.md`, `content/earnings-profiles/amzn.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-07-31
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
 
 ### AXP · article_review · low
 
@@ -1051,55 +973,15 @@ Files: `content/wealth/bloom-energy-earnings-growth-cash-flow.md`, `content/earn
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex991_q326financialresults.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
 
-### GOOGL · article_review · low
+### GILD · article_review · low
 
-ID: `4169d1b3dd9e75d73bf0e414`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/alphabet-europe-ai-sovereignty.md`, `content/earnings-profiles/googl.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-07-23
-
-### GOOGL · article_review · low
-
-ID: `64642727398637aa26545a00`
+ID: `b435c4b9db06d0d4326a9dc6`
 
 Baseline consistency review of this article against the saved company results and its original sources.
 
-Files: `content/wealth/nokia-ai-growth-cash-flow.md`, `content/earnings-profiles/googl.json`
+Files: `content/wealth/gilead-earnings-hiv-growth-acquisition-cost.md`, `content/earnings-profiles/gild.json`
 
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-07-23
-
-### GOOGL · article_review · low
-
-ID: `6d3fdbb2dfab0d7ced32b48a`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/alphabet-search-ai-economics-2026.md`, `content/earnings-profiles/googl.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-07-23
-
-### GOOGL · article_review · low
-
-ID: `91816a29919a86ceb69c4a5c`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/alphabet-ai-capex-free-cash-flow.md`, `content/earnings-profiles/googl.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-07-23
-
-### GOOGL · article_review · low
-
-ID: `fd6bec1d2d00d480890d6ca7`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/anthropic-loss-ipo-valuation.md`, `content/earnings-profiles/googl.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-07-23
+Saved evidence: https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
 
 ### HON · article_review · low
 
@@ -1110,6 +992,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/honeywell-earnings-organic-growth-guidance.md`, `content/earnings-profiles/hon.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/773840/000077384026000143/hon-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
+
+### INTC · article_review · low
+
+ID: `e14ce27f35a0c37133eb0b1f`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/intel-earnings-data-centre-growth-guidance.md`, `content/earnings-profiles/intc.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm · Q3 FY2026 · period end 2026-09-26 · filed 2026-10-29
 
 ### ISRG · article_review · low
 
@@ -1241,6 +1133,26 @@ Files: `content/wealth/nvidia-gross-margin-ai-demand.md`, `content/earnings-prof
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm · Q2 FY2027 · period end 2026-07-26 · filed 2026-08-26
 
+### SBUX · article_review · low
+
+ID: `cefa2faf3e6ad29a790e6f9c`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/starbucks-earnings-turnaround-sales-china.md`, `content/earnings-profiles/sbux.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/829224/000082922426000154/sbux-09272026xearningsrele.htm · FY FY2026 · period end 2026-09-27 · filed 2026-10-29
+
+### SNDK · article_review · low
+
+ID: `716e5cbc24ef3db6fd3a3376`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/sandisk-earnings-ai-storage-stock-split.md`, `content/earnings-profiles/sndk.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm · Q1 FY2027 · period end 2026-10-02 · filed 2026-10-29
+
 ### T · article_review · low
 
 ID: `1756912285ce69e0038e5db8`
@@ -1260,6 +1172,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/thermo-fisher-earnings-organic-growth-cash-flow.md`, `content/earnings-profiles/tmo.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/97745/000009774526000173/q32026earnings8kex99_1.htm · Q3 FY2026 · period end 2026-09-26 · filed 2026-10-21
+
+### TTWO · article_review · low
+
+ID: `0a8084d2a396a04227fd5490`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/ttwo-gta-6-entertainment-launch-revenue.md`, `content/earnings-profiles/ttwo.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/946581/000162828026054870/ttwo-20260630.htm · Q1 FY2027 · period end 2026-06-30 · filed 2026-08-07
 
 ### WDC · article_review · low
 
