@@ -2,33 +2,33 @@
   "cik": 1274494,
   "company": "First Solar",
   "latest": {
-    "fy": 2026,
-    "fp": "Q3",
-    "period_end": "2026-09-30",
+    "accession": "0001274494-26-000212",
     "filed": "2026-10-29",
-    "form": "8-K",
-    "accession": "0001274494-26-000211",
-    "source": "https://www.sec.gov/Archives/edgar/data/1274494/000127449426000211/ex991pressreleaseq3-2026.htm",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
     "metrics": {
-      "revenue": {
-        "current": 1230936000.0,
-        "prior_year": 1594856000.0,
-        "unit": "USD",
-        "tag": "SEC earnings release; GAAP; consolidated net income"
-      },
-      "net_income": {
-        "current": 571063000.0,
-        "prior_year": 455943000.0,
-        "unit": "USD",
-        "tag": "SEC earnings release; GAAP; consolidated net income"
-      },
       "diluted_eps": {
         "current": 5.3,
         "prior_year": 4.24,
-        "unit": "USD/shares",
-        "tag": "SEC earnings release; GAAP; consolidated net income"
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 571063000,
+        "prior_year": 455943000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1230936000,
+        "prior_year": 1594856000,
+        "tag": "Revenues",
+        "unit": "USD"
       }
-    }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1274494/000127449426000212/fslr-20260930.htm"
   },
   "periods": [
     {
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/1274494/000127449426000170/fslr-20260630.htm"
     },
     {
-      "fy": 2026,
-      "fp": "Q3",
-      "period_end": "2026-09-30",
+      "accession": "0001274494-26-000212",
       "filed": "2026-10-29",
-      "form": "8-K",
-      "accession": "0001274494-26-000211",
-      "source": "https://www.sec.gov/Archives/edgar/data/1274494/000127449426000211/ex991pressreleaseq3-2026.htm",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
       "metrics": {
-        "revenue": {
-          "current": 1230936000.0,
-          "prior_year": 1594856000.0,
-          "unit": "USD",
-          "tag": "SEC earnings release; GAAP; consolidated net income"
-        },
-        "net_income": {
-          "current": 571063000.0,
-          "prior_year": 455943000.0,
-          "unit": "USD",
-          "tag": "SEC earnings release; GAAP; consolidated net income"
-        },
         "diluted_eps": {
           "current": 5.3,
           "prior_year": 4.24,
-          "unit": "USD/shares",
-          "tag": "SEC earnings release; GAAP; consolidated net income"
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 571063000,
+          "prior_year": 455943000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1230936000,
+          "prior_year": 1594856000,
+          "tag": "Revenues",
+          "unit": "USD"
         }
-      }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1274494/000127449426000212/fslr-20260930.htm"
     }
   ],
-  "source_type": "US SEC filings and furnished earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "FSLR",
-  "updated": "2026-10-29"
+  "updated": "2026-10-30"
 }

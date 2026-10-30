@@ -2,33 +2,33 @@
   "cik": 1996810,
   "company": "GE Vernova",
   "latest": {
-    "accession": "0001996810-26-000148",
-    "filed": "2026-07-22",
+    "accession": "0001996810-26-000163",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.47,
-        "prior_year": 1.86,
+        "current": 4.81,
+        "prior_year": 1.64,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 668000000,
-        "prior_year": 514000000,
+        "current": 1291000000,
+        "prior_year": 452000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 11104000000,
-        "prior_year": 9111000000,
+        "current": 12642000000,
+        "prior_year": 9969000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000148/gev-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000148/gev-20260630.htm"
+    },
+    {
+      "accession": "0001996810-26-000163",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.81,
+          "prior_year": 1.64,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1291000000,
+          "prior_year": 452000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 12642000000,
+          "prior_year": 9969000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "GEV",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }

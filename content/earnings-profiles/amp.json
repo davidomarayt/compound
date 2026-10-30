@@ -2,33 +2,33 @@
   "cik": 820027,
   "company": "Ameriprise Financial",
   "latest": {
-    "accession": "0000820027-26-000043",
-    "filed": "2026-08-04",
+    "accession": "0000820027-26-000054",
+    "filed": "2026-10-30",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 11.98,
-        "prior_year": 10.73,
+        "current": 12.32,
+        "prior_year": 9.33,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1113000000,
-        "prior_year": 1060000000,
+        "current": 1126000000,
+        "prior_year": 912000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 5013000000,
-        "prior_year": 4490000000,
-        "tag": "Revenues",
+        "current": 5117000000,
+        "prior_year": 4791000000,
+        "tag": "RevenuesNetOfInterestExpense",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000043/amp-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000054/amp-20260930.htm"
   },
   "periods": [
     {
@@ -51,9 +51,9 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 4886000000,
-          "prior_year": 4481000000,
-          "tag": "Revenues",
+          "current": 4812000000,
+          "prior_year": 4354000000,
+          "tag": "RevenuesNetOfInterestExpense",
           "unit": "USD"
         }
       },
@@ -80,17 +80,46 @@
           "unit": "USD"
         },
         "revenue": {
-          "current": 5013000000,
-          "prior_year": 4490000000,
-          "tag": "Revenues",
+          "current": 4940000000,
+          "prior_year": 4375000000,
+          "tag": "RevenuesNetOfInterestExpense",
           "unit": "USD"
         }
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000043/amp-20260630.htm"
+    },
+    {
+      "accession": "0000820027-26-000054",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 12.32,
+          "prior_year": 9.33,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1126000000,
+          "prior_year": 912000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5117000000,
+          "prior_year": 4791000000,
+          "tag": "RevenuesNetOfInterestExpense",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000054/amp-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "AMP",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }

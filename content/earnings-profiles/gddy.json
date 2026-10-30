@@ -2,33 +2,33 @@
   "cik": 1609711,
   "company": "GoDaddy",
   "latest": {
-    "accession": "0001609711-26-000088",
-    "filed": "2026-07-31",
+    "accession": "0001609711-26-000120",
+    "filed": "2026-10-30",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.83,
-        "prior_year": 1.41,
+        "current": 2.08,
+        "prior_year": 1.51,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 240100000,
-        "prior_year": 199900000,
+        "current": 261800000,
+        "prior_year": 210500000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1298000000,
-        "prior_year": 1217600000,
+        "current": 1341800000,
+        "prior_year": 1265300000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1609711/000160971126000088/gddy-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1609711/000160971126000120/gddy-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1609711/000160971126000088/gddy-20260630.htm"
+    },
+    {
+      "accession": "0001609711-26-000120",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.08,
+          "prior_year": 1.51,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 261800000,
+          "prior_year": 210500000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1341800000,
+          "prior_year": 1265300000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1609711/000160971126000120/gddy-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "GDDY",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }

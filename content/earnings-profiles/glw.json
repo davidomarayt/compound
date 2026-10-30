@@ -2,33 +2,33 @@
   "cik": 24741,
   "company": "Corning Inc.",
   "latest": {
-    "accession": "0000024741-26-000255",
-    "filed": "2026-07-29",
+    "accession": "0000024741-26-000279",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.64,
-        "prior_year": 0.54,
+        "current": 0.78,
+        "prior_year": 0.5,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 559000000,
-        "prior_year": 469000000,
+        "current": 680000000,
+        "prior_year": 430000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4505000000,
-        "prior_year": 3862000000,
+        "current": 4855000000,
+        "prior_year": 4100000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000255/glw-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000279/glw-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000255/glw-20260630.htm"
+    },
+    {
+      "accession": "0000024741-26-000279",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.78,
+          "prior_year": 0.5,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 680000000,
+          "prior_year": 430000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4855000000,
+          "prior_year": 4100000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000279/glw-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "GLW",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }
