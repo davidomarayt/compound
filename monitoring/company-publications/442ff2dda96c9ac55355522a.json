@@ -2,11 +2,11 @@
   "story_fingerprint": "442ff2dda96c9ac55355522a",
   "company": "META",
   "date": "2026-10-29",
-  "status": "proposed",
-  "publication_state": "validated_locally_awaiting_final_head_ci",
-  "reason": "Sources, local build and browser gates passed. Awaiting exact final-head CI and expected-head merge; not yet published.",
+  "status": "published",
+  "publication_state": "live_verified_existing_content_update",
+  "reason": "PR62 merged with expected verified head; deployment and live canonical update/social image verified.",
   "article_path": "content/wealth/meta-advertising-ai-spending-earnings.md",
-  "queue_id": "81b3602281d61b8f88fa612d",
+  "queue_id": "9e4cf1086c8ebb750968a275",
   "sources": [
     "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
     "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm"
@@ -83,7 +83,8 @@
     "Live canonical page inspected",
     "Open/recent PRs inspected; no overlapping Meta attempt",
     "30 October retry: open/recent PRs and current publishing branch checked; resume PR62, no overlapping Meta publication or same-day new article attempt",
-    "Live canonical page still lacked this filing update before merge"
+    "Live canonical page still lacked this filing update before merge",
+    "Immediately before merge: publishing branch still08de2df; PR62 sole fingerprint search result; no active Actions publication; live page lacked added note. No new article created."
   ],
   "image": {
     "action": "Preserve existing committed Meta crop and all provenance; remove remote hero_image_url override so cache misses cannot replace the approved crop with uncropped source.",
@@ -107,13 +108,16 @@
     "render": "Passed: Chromium153 screenshots inspected at390px and1440px; dated update, original publication date, canonical, cover and social image verified; no horizontal overflow",
     "image_assets": "Full news-image preparation completed successfully; Meta uses approved committed crop via pinned local-asset path. 49 offline tests passed.",
     "homepage_audit": "Passed at320,360,390,430,768,1024,1440px; link destinations and denied/granted consent assertions intact",
-    "exact_head_ci": "Pending final audit and image-pin commit",
-    "deployment": "Not merged or deployed yet"
+    "exact_head_ci": "Passed on a4bdbbdd32e212e2f18d37117e615c8af71232b0: both test/performance runs, Vercel Preview Comments and combined Vercel status success. Runs41035654661 and41035646809.",
+    "deployment": "Run41037029106 build, deploy and verify-live succeeded for merge69231dabfcbb5bb9f015bd861ea0ffd737e76270; canonical changed text and actual social image fetched HTTP200 and inspected.",
+    "internal_links": "All27 internal targets on rendered article exist.",
+    "post_deployment_mobile_audit": "Passed in site job124001968345; stale homepage selector repair verified in production workflow."
   },
   "workflow_health": {
     "earnings_monitor": "41011389339 success",
-    "site": "41011475956: build, deploy and verify-live succeeded; mobile-audit failed on removed homepage Solar link",
-    "mag7": "40899610447 failed; no live model retry"
+    "site": "41037029106: build, deploy, verify-live and mobile-audit all succeeded.",
+    "mag7": "40899610447 failed; no live model retry",
+    "previous_site_failure": "41011475956: build, deploy and verify-live succeeded; mobile-audit failed on removed homepage Solar link"
   },
   "pull_request": "https://github.com/davidomarayt/compound/pull/62",
   "last_reviewed": "2026-10-30",
@@ -142,5 +146,25 @@
       "social_image_sha256": "cda4b3e0aa1608dda0f073a11810dc3e57b7410a37a5241f1abc6e032b501281"
     }
   ],
-  "validated_content_sha256": "5644282c59bb3f61dcc7a6cc2610f1ca7dda323155b3224cc9a73b20c3cd9fa6"
+  "validated_content_sha256": "5644282c59bb3f61dcc7a6cc2610f1ca7dda323155b3224cc9a73b20c3cd9fa6",
+  "publication_kind": "existing_content_update",
+  "new_articles_published": 0,
+  "previous_queue_ids": [
+    "8aacd0869f751514d601a6fb",
+    "81b3602281d61b8f88fa612d"
+  ],
+  "live_verified_at": "2026-10-30T10:02:26.141344+00:00",
+  "validated_head_sha": "a4bdbbdd32e212e2f18d37117e615c8af71232b0",
+  "merge_commit_sha": "69231dabfcbb5bb9f015bd861ea0ffd737e76270",
+  "live_verification": {
+    "url": "https://compound.ie/wealth/meta-advertising-ai-spending-earnings/",
+    "page_http": 200,
+    "canonical": "https://compound.ie/wealth/meta-advertising-ai-spending-earnings/",
+    "changed_text_verified": true,
+    "social_url": "https://compound.ie/static/discover/meta-advertising-ai-spending-earnings-16x9.webp",
+    "social_http": 200,
+    "social_sha256": "cda4b3e0aa1608dda0f073a11810dc3e57b7410a37a5241f1abc6e032b501281",
+    "social_visually_inspected": true
+  },
+  "deployment_url": "https://github.com/davidomarayt/compound/actions/runs/41037029106"
 }

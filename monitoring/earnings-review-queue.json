@@ -1506,6 +1506,69 @@
       "retirement_reason": "Evidence/content changed or condition cleared",
       "severity": "low",
       "status": "pending"
+    },
+    {
+      "company": "meta",
+      "decided": "2026-10-30",
+      "decision_note": "Resume PR62 under automatic-update authority. Sources rechecked. 40 tests pass; recovered live image assets. Full build still blocked by image preparation; browser archive corrupt. Homepage audit repair included, not yet browser-verified.",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "Q3 2026 Form 10-Q, future leases and contractual commitments",
+            "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+          },
+          {
+            "title": "Q3 2026 results: SEC Form 8-K, Exhibit 99.1, 21 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-066773",
+          "filed": "2026-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 3.83,
+              "prior_year": 1.05,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 9860000000,
+              "prior_year": 2709000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 64601000000,
+              "prior_year": 51242000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-30",
+      "id": "81b3602281d61b8f88fa612d",
+      "kind": "article_review",
+      "last_seen": "2026-10-30",
+      "paths": [
+        "content/wealth/meta-advertising-ai-spending-earnings.md",
+        "content/earnings-profiles/meta.json"
+      ],
+      "pull_request": "https://github.com/davidomarayt/compound/pull/62",
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "retired": "2026-10-30",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "medium",
+      "status": "drafted"
     }
   ],
   "jobs": {
@@ -4245,67 +4308,6 @@
       "severity": "medium",
       "status": "pending"
     },
-    "81b3602281d61b8f88fa612d": {
-      "company": "meta",
-      "decided": "2026-10-30",
-      "decision_note": "Resume PR62 under automatic-update authority. Sources rechecked. 40 tests pass; recovered live image assets. Full build still blocked by image preparation; browser archive corrupt. Homepage audit repair included, not yet browser-verified.",
-      "evidence": {
-        "article_reviewed": "2026-10-21",
-        "article_sources": [
-          {
-            "title": "Q3 2026 Form 10-Q, future leases and contractual commitments",
-            "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
-          },
-          {
-            "title": "Q3 2026 results: SEC Form 8-K, Exhibit 99.1, 21 October 2026",
-            "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm"
-          }
-        ],
-        "canonical_path": "",
-        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
-        "latest_saved_result": {
-          "accession": "0001628280-26-066773",
-          "filed": "2026-10-22",
-          "form": "10-Q",
-          "fp": "Q3",
-          "fy": 2026,
-          "metrics": {
-            "diluted_eps": {
-              "current": 3.83,
-              "prior_year": 1.05,
-              "tag": "EarningsPerShareDiluted",
-              "unit": "USD/shares"
-            },
-            "net_income": {
-              "current": 9860000000,
-              "prior_year": 2709000000,
-              "tag": "NetIncomeLoss",
-              "unit": "USD"
-            },
-            "revenue": {
-              "current": 64601000000,
-              "prior_year": 51242000000,
-              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-              "unit": "USD"
-            }
-          },
-          "period_end": "2026-09-30",
-          "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
-        }
-      },
-      "first_seen": "2026-10-30",
-      "id": "81b3602281d61b8f88fa612d",
-      "kind": "article_review",
-      "last_seen": "2026-10-30",
-      "paths": [
-        "content/wealth/meta-advertising-ai-spending-earnings.md",
-        "content/earnings-profiles/meta.json"
-      ],
-      "pull_request": "https://github.com/davidomarayt/compound/pull/62",
-      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
-      "severity": "medium",
-      "status": "drafted"
-    },
     "823fc439336d5f21e961ce2a": {
       "company": "fe",
       "evidence": {
@@ -4627,6 +4629,67 @@
       "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
       "severity": "medium",
       "status": "pending"
+    },
+    "9e4cf1086c8ebb750968a275": {
+      "company": "meta",
+      "decided": "2026-10-30",
+      "decision_note": "Published through PR62 and verified live on 30 October 2026: canonical Meta analysis now includes the source-checked uncommenced-lease note. Two SEC documents, separate fact check, 49 offline tests, full build, rendered page/social image and exact-head CI passed. Deployment and live changed text/social image verified. Original URL/date and licensed photo preserved.",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "Q3 2026 Form 10-Q, future leases and contractual commitments",
+            "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+          },
+          {
+            "title": "Q3 2026 results: SEC Form 8-K, Exhibit 99.1, 21 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-066773",
+          "filed": "2026-10-22",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 3.83,
+              "prior_year": 1.05,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 9860000000,
+              "prior_year": 2709000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 64601000000,
+              "prior_year": 51242000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-30",
+      "id": "9e4cf1086c8ebb750968a275",
+      "kind": "article_review",
+      "last_seen": "2026-10-30",
+      "paths": [
+        "content/wealth/meta-advertising-ai-spending-earnings.md",
+        "content/earnings-profiles/meta.json"
+      ],
+      "pull_request": "https://github.com/davidomarayt/compound/pull/62",
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
+      "status": "reviewed"
     },
     "a1f97c61e7dddf2a846b965d": {
       "company": "googl",
