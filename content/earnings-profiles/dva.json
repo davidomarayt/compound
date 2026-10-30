@@ -2,33 +2,33 @@
   "cik": 927066,
   "company": "DaVita",
   "latest": {
-    "accession": "0000927066-26-000108",
-    "filed": "2026-08-04",
+    "accession": "0000927066-26-000134",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 4.02,
-        "prior_year": 2.58,
+        "current": 3.4,
+        "prior_year": 2.04,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 265397000,
-        "prior_year": 199337000,
+        "current": 222931000,
+        "prior_year": 150332000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3554084000,
-        "prior_year": 3379526000,
+        "current": 3578126000,
+        "prior_year": 3420227000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/927066/000092706626000108/dva-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/927066/000092706626000134/dva-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/927066/000092706626000108/dva-20260630.htm"
+    },
+    {
+      "accession": "0000927066-26-000134",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.4,
+          "prior_year": 2.04,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 222931000,
+          "prior_year": 150332000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3578126000,
+          "prior_year": 3420227000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/927066/000092706626000134/dva-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "DVA",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }

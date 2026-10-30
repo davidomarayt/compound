@@ -2,33 +2,33 @@
   "cik": 105634,
   "company": "Emcor",
   "latest": {
-    "accession": "0000105634-26-000110",
-    "filed": "2026-07-30",
+    "accession": "0000105634-26-000130",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 9.06,
-        "prior_year": 6.72,
+        "current": 9.04,
+        "prior_year": 6.57,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 403694000,
-        "prior_year": 302160000,
+        "current": 399930000,
+        "prior_year": 295373000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 5154892000,
-        "prior_year": 4304400000,
+        "current": 5541520000,
+        "prior_year": 4301529000,
         "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000110/eme-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000130/eme-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000110/eme-20260630.htm"
+    },
+    {
+      "accession": "0000105634-26-000130",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 9.04,
+          "prior_year": 6.57,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 399930000,
+          "prior_year": 295373000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5541520000,
+          "prior_year": 4301529000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/105634/000010563426000130/eme-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "EME",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }

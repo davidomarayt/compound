@@ -2,33 +2,33 @@
   "cik": 1783180,
   "company": "Carrier Global",
   "latest": {
-    "accession": "0001783180-26-000026",
-    "filed": "2026-04-30",
+    "accession": "0001783180-26-000037",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.28,
-        "prior_year": 0.47,
+        "current": -3.16,
+        "prior_year": 0.5,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 238000000,
-        "prior_year": 412000000,
+        "current": -2593000000,
+        "prior_year": 428000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 5341000000,
-        "prior_year": 5218000000,
+        "current": 6263000000,
+        "prior_year": 5579000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1783180/000178318026000026/carr-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1783180/000178318026000037/carr-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1783180/000178318026000026/carr-20260331.htm"
+    },
+    {
+      "accession": "0001783180-26-000032",
+      "filed": "2026-07-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.6,
+          "prior_year": 0.68,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 501000000,
+          "prior_year": 591000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6351000000,
+          "prior_year": 6113000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1783180/000178318026000032/carr-20260630.htm"
+    },
+    {
+      "accession": "0001783180-26-000037",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -3.16,
+          "prior_year": 0.5,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -2593000000,
+          "prior_year": 428000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6263000000,
+          "prior_year": 5579000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1783180/000178318026000037/carr-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CARR",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }

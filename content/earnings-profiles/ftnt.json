@@ -2,33 +2,33 @@
   "cik": 1262039,
   "company": "Fortinet",
   "latest": {
-    "accession": "0001262039-26-000021",
-    "filed": "2026-07-30",
+    "accession": "0001262039-26-000027",
+    "filed": "2026-10-30",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.82,
-        "prior_year": 0.57,
+        "current": 0.86,
+        "prior_year": 0.62,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 606300000,
-        "prior_year": 440100000,
+        "current": 635500000,
+        "prior_year": 473900000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2047900000,
-        "prior_year": 1630000000,
+        "current": 2078400000,
+        "prior_year": 1724900000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203926000021/ftnt-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203926000027/ftnt-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203926000021/ftnt-20260630.htm"
+    },
+    {
+      "accession": "0001262039-26-000027",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.86,
+          "prior_year": 0.62,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 635500000,
+          "prior_year": 473900000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2078400000,
+          "prior_year": 1724900000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1262039/000126203926000027/ftnt-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "FTNT",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }
