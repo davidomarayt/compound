@@ -2,33 +2,33 @@
   "cik": 1058090,
   "company": "Chipotle Mexican Grill",
   "latest": {
-    "accession": "0001058090-26-000066",
-    "filed": "2026-07-31",
+    "accession": "0001058090-26-000104",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.32,
-        "prior_year": 0.32,
+        "current": 0.27,
+        "prior_year": 0.29,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 403547000,
-        "prior_year": 436127000,
+        "current": 339874000,
+        "prior_year": 382103000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3348562000,
-        "prior_year": 3063393000,
+        "current": 3293162000,
+        "prior_year": 3003444000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000066/cmg-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000104/cmg-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000066/cmg-20260630.htm"
+    },
+    {
+      "accession": "0001058090-26-000104",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.27,
+          "prior_year": 0.29,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 339874000,
+          "prior_year": 382103000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3293162000,
+          "prior_year": 3003444000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1058090/000105809026000104/cmg-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CMG",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }

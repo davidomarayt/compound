@@ -2,33 +2,33 @@
   "cik": 1057352,
   "company": "CoStar Group",
   "latest": {
-    "accession": "0001057352-26-000066",
-    "filed": "2026-07-29",
+    "accession": "0001057352-26-000083",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.14,
-        "prior_year": 0.01,
+        "current": 0.18,
+        "prior_year": -0.07,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 55000000,
-        "prior_year": 6000000,
+        "current": 74000000,
+        "prior_year": -31000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 925000000,
-        "prior_year": 781000000,
+        "current": 952000000,
+        "prior_year": 834000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1057352/000105735226000066/csgp-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1057352/000105735226000083/csgp-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1057352/000105735226000066/csgp-20260630.htm"
+    },
+    {
+      "accession": "0001057352-26-000083",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.18,
+          "prior_year": -0.07,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 74000000,
+          "prior_year": -31000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 952000000,
+          "prior_year": 834000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1057352/000105735226000083/csgp-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CSGP",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }
