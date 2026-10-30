@@ -2,33 +2,33 @@
   "cik": 1705696,
   "company": "Vici Properties",
   "latest": {
-    "accession": "0001705696-26-000090",
-    "filed": "2026-07-29",
+    "accession": "0001705696-26-000120",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.48,
-        "prior_year": 0.82,
+        "current": 0.31,
+        "prior_year": 0.71,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 526521000,
-        "prior_year": 865079000,
+        "current": 342534000,
+        "prior_year": 762040000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1058505000,
-        "prior_year": 1001334000,
+        "current": 1065484000,
+        "prior_year": 1007488000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1705696/000170569626000090/vici-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1705696/000170569626000120/vici-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1705696/000170569626000090/vici-20260630.htm"
+    },
+    {
+      "accession": "0001705696-26-000120",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.31,
+          "prior_year": 0.71,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 342534000,
+          "prior_year": 762040000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1065484000,
+          "prior_year": 1007488000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1705696/000170569626000120/vici-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "VICI",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }

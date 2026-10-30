@@ -2,33 +2,33 @@
   "cik": 64040,
   "company": "S&P Global",
   "latest": {
-    "accession": "0000064040-26-000024",
-    "filed": "2026-04-28",
+    "accession": "0000064040-26-000058",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 4.69,
-        "prior_year": 3.54,
+        "current": 4.25,
+        "prior_year": 3.86,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1395000000,
-        "prior_year": 1090000000,
+        "current": 1240000000,
+        "prior_year": 1176000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4171000000,
-        "prior_year": 3777000000,
+        "current": 3678000000,
+        "prior_year": 3443000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000024/spgi-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000058/spgi-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000024/spgi-20260331.htm"
+    },
+    {
+      "accession": "0000064040-26-000045",
+      "filed": "2026-07-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.12,
+          "prior_year": 3.5,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1217000000,
+          "prior_year": 1072000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4146000000,
+          "prior_year": 3755000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000045/spgi-20260630.htm"
+    },
+    {
+      "accession": "0000064040-26-000058",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.25,
+          "prior_year": 3.86,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1240000000,
+          "prior_year": 1176000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3678000000,
+          "prior_year": 3443000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000058/spgi-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "SPGI",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }
