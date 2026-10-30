@@ -1569,26 +1569,8 @@
       "retirement_reason": "Evidence/content changed or condition cleared",
       "severity": "medium",
       "status": "drafted"
-    }
-  ],
-  "jobs": {
-    "034e8ea62b8335ecf649b5c8": {
-      "company": "ma",
-      "evidence": {
-        "cik": 1141391
-      },
-      "first_seen": "2026-10-28",
-      "id": "034e8ea62b8335ecf649b5c8",
-      "kind": "coverage_check",
-      "last_seen": "2026-10-30",
-      "paths": [
-        "content/earnings-profiles/ma.json"
-      ],
-      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
-      "severity": "medium",
-      "status": "pending"
     },
-    "03dd7f1f8b0dcded3fb44b9b": {
+    {
       "company": "carr",
       "evidence": {
         "accession": "0001783180-26-000026",
@@ -1627,6 +1609,82 @@
         "content/earnings-profiles/carr.json"
       ],
       "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "retired": "2026-10-30",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "medium",
+      "status": "pending"
+    },
+    {
+      "company": "gild",
+      "evidence": {
+        "article_reviewed": "2026-10-29",
+        "article_sources": [
+          {
+            "title": "SEC-furnished earnings release, 29 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
+          }
+        ],
+        "canonical_path": "/wealth/gilead-earnings-hiv-growth-acquisition-cost/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000882095-26-000037",
+          "filed": "2026-10-29",
+          "form": "8-K",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 1.94,
+              "prior_year": 2.43,
+              "tag": "SEC earnings release; GAAP",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 2429000000.0,
+              "prior_year": 3052000000.0,
+              "tag": "SEC earnings release; GAAP",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 8300000000.0,
+              "prior_year": 7769000000.0,
+              "tag": "SEC earnings release; GAAP",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
+        }
+      },
+      "first_seen": "2026-10-30",
+      "id": "b435c4b9db06d0d4326a9dc6",
+      "kind": "article_review",
+      "last_seen": "2026-10-30",
+      "paths": [
+        "content/wealth/gilead-earnings-hiv-growth-acquisition-cost.md",
+        "content/earnings-profiles/gild.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "retired": "2026-10-30",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "low",
+      "status": "pending"
+    }
+  ],
+  "jobs": {
+    "034e8ea62b8335ecf649b5c8": {
+      "company": "ma",
+      "evidence": {
+        "cik": 1141391
+      },
+      "first_seen": "2026-10-28",
+      "id": "034e8ea62b8335ecf649b5c8",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-30",
+      "paths": [
+        "content/earnings-profiles/ma.json"
+      ],
+      "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
       "severity": "medium",
       "status": "pending"
     },
@@ -3426,6 +3484,60 @@
       "severity": "medium",
       "status": "pending"
     },
+    "5c4100f773508ed49c737c83": {
+      "company": "gild",
+      "evidence": {
+        "article_reviewed": "2026-10-29",
+        "article_sources": [
+          {
+            "title": "SEC-furnished earnings release, 29 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
+          }
+        ],
+        "canonical_path": "/wealth/gilead-earnings-hiv-growth-acquisition-cost/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000882095-26-000039",
+          "filed": "2026-10-30",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 1.94,
+              "prior_year": 2.43,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 2429000000,
+              "prior_year": 3052000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 8300000000,
+              "prior_year": 7769000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000039/gild-20260930.htm"
+        }
+      },
+      "first_seen": "2026-10-30",
+      "id": "5c4100f773508ed49c737c83",
+      "kind": "article_review",
+      "last_seen": "2026-10-30",
+      "paths": [
+        "content/wealth/gilead-earnings-hiv-growth-acquisition-cost.md",
+        "content/earnings-profiles/gild.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
+      "status": "pending"
+    },
     "5d4baf47ddc4ca5acd475301": {
       "company": "googl",
       "evidence": {
@@ -4879,60 +4991,6 @@
       ],
       "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
       "severity": "medium",
-      "status": "pending"
-    },
-    "b435c4b9db06d0d4326a9dc6": {
-      "company": "gild",
-      "evidence": {
-        "article_reviewed": "2026-10-29",
-        "article_sources": [
-          {
-            "title": "SEC-furnished earnings release, 29 October 2026",
-            "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
-          }
-        ],
-        "canonical_path": "/wealth/gilead-earnings-hiv-growth-acquisition-cost/",
-        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
-        "latest_saved_result": {
-          "accession": "0000882095-26-000037",
-          "filed": "2026-10-29",
-          "form": "8-K",
-          "fp": "Q3",
-          "fy": 2026,
-          "metrics": {
-            "diluted_eps": {
-              "current": 1.94,
-              "prior_year": 2.43,
-              "tag": "SEC earnings release; GAAP",
-              "unit": "USD/shares"
-            },
-            "net_income": {
-              "current": 2429000000.0,
-              "prior_year": 3052000000.0,
-              "tag": "SEC earnings release; GAAP",
-              "unit": "USD"
-            },
-            "revenue": {
-              "current": 8300000000.0,
-              "prior_year": 7769000000.0,
-              "tag": "SEC earnings release; GAAP",
-              "unit": "USD"
-            }
-          },
-          "period_end": "2026-09-30",
-          "source": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
-        }
-      },
-      "first_seen": "2026-10-30",
-      "id": "b435c4b9db06d0d4326a9dc6",
-      "kind": "article_review",
-      "last_seen": "2026-10-30",
-      "paths": [
-        "content/wealth/gilead-earnings-hiv-growth-acquisition-cost.md",
-        "content/earnings-profiles/gild.json"
-      ],
-      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
-      "severity": "low",
       "status": "pending"
     },
     "b55f6bf094c2801c107055bb": {

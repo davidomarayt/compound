@@ -4,7 +4,7 @@ Checked: 2026-10-30
 
 - 448 saved profiles checked against structural and issuer rules.
 - 45 existing company articles; 44 mapped to monitored issuers.
-- 129 pending review items; 1 recorded decisions.
+- 128 pending review items; 1 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -48,6 +48,16 @@ Newer filing than the article review date; assess whether claims or outlook need
 Files: `content/wealth/anthropic-loss-ipo-valuation.md`, `content/earnings-profiles/amzn.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
+
+### GILD · article_review · medium
+
+ID: `5c4100f773508ed49c737c83`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/gilead-earnings-hiv-growth-acquisition-cost.md`, `content/earnings-profiles/gild.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/882095/000088209526000039/gild-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-30
 
 ### GOOGL · article_review · medium
 
@@ -320,16 +330,6 @@ ID: `36c233a93dfb4c4e5014fffe`
 No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.
 
 Files: `content/earnings-profiles/bxp.json`
-
-### CARR · coverage_check · medium
-
-ID: `03dd7f1f8b0dcded3fb44b9b`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/carr.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1783180/000178318026000026/carr-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-04-30
 
 ### CAT · coverage_check · medium
 
@@ -972,16 +972,6 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/bloom-energy-earnings-growth-cash-flow.md`, `content/earnings-profiles/be.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex991_q326financialresults.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
-
-### GILD · article_review · low
-
-ID: `b435c4b9db06d0d4326a9dc6`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/gilead-earnings-hiv-growth-acquisition-cost.md`, `content/earnings-profiles/gild.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
 
 ### HON · article_review · low
 
