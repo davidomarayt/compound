@@ -1,6 +1,6 @@
 # Compound.ie — Master Content and Title Register
 
-Snapshot: 2026-10-28 | Source: publishing branch
+Snapshot: 2026-10-30 | Source: publishing branch
 
 PURPOSE: Check this register before creating a new article, guide or calculator. Search by exact title, keyword, synonym and reader intent. If the topic is already answered, update its canonical page instead of publishing an SEO duplicate.
 
@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 213
+- Published editorial articles and guides: 221
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,14 +49,14 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 159
+## Wealth articles and guides — 167
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
 - [Alphabet's cash-flow squeeze: why strong Cloud growth is not the whole story](https://compound.ie/wealth/alphabet-ai-capex-free-cash-flow/)
 - [Alphabet’s European AI opportunity comes with conditions](https://compound.ie/wealth/alphabet-europe-ai-sovereignty/)
+- [Amazon Earnings: AWS Accelerates, but the Cash Bill Keeps Growing](https://compound.ie/wealth/amazon-aws-profit-investment-gains/)
 - [Amazon Stock Guide: AWS, Retail, Advertising and Cash Flow](https://compound.ie/wealth/amazon-aws-retail-economics-2026/)
-- [Amazon's profit surge: separate AWS earnings from investment gains](https://compound.ie/wealth/amazon-aws-profit-investment-gains/)
 - [Amazon’s €16 billion Germany plan needs a return test](https://compound.ie/wealth/amazon-germany-investment-returns/)
 - [American Express Earnings: Spending Holds Up, but Read the Profit Adjustments](https://compound.ie/wealth/american-express-earnings-spending-adjusted-profit/)
 - [Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price](https://compound.ie/wealth/anthropic-loss-ipo-valuation/)
@@ -66,6 +66,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [AT&T Earnings: Fibre Growth Strengthens the Case, but Cash Still Matters](https://compound.ie/wealth/att-earnings-fiber-growth-dividend-cash-flow/)
 - [Attic Conversion & Dormer Planning Permission Ireland](https://compound.ie/wealth/attic-conversion-dormer-planning-permission-ireland/)
 - [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/)
+- [Binance Investigates Suspected Hack as Billions in Crypto Are Frozen](https://compound.ie/news/binance-hack-october-2026/)
 - [Bloom Energy Earnings: Sales Surge, but Cash Flow Tells a Different Story](https://compound.ie/wealth/bloom-energy-earnings-growth-cash-flow/)
 - [Budget 2027 Ireland: The Key Changes to Tax, Rent, Childcare, Pensions and Energy](https://compound.ie/wealth/budget-2027-what-to-watch/)
 - [Budget 2027: Up to €2bn Reportedly Set Aside for a New Public-Sector Pay Deal](https://compound.ie/news/budget-2027-public-sector-pay-deal-2bn/)
@@ -80,6 +81,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Do Solar Panels Work in Winter in Ireland? Monthly Output and Savings](https://compound.ie/wealth/solar-panels-winter-ireland/)
 - [Do you actually need a battery with solar panels in Ireland?](https://compound.ie/wealth/solar-panels-vs-battery-ireland/)
 - [East- and West-Facing Solar Panels in Ireland: Are They Worth It?](https://compound.ie/wealth/east-west-facing-solar-panels-ireland/)
+- [ECB Holds Rates as Lagarde Announces Departure: What It Means for Your Money](https://compound.ie/news/ecb-rates-lagarde-departure-ireland-october-2026/)
 - [Electricity Tariffs in Ireland: Smart, Day/Night, EV & Dynamic Rates](https://compound.ie/wealth/electricity-tariffs-ireland/)
 - [Eli Lilly Stock Guide: Medicines, Pipeline, Pricing and Valuation](https://compound.ie/wealth/eli-lilly-foundayo-obesity-growth-2026-10-19/)
 - [Eli Lilly''s Foundayo Wins European Backing: What the Oral GLP-1 Means for LLY Investors](https://compound.ie/wealth/eli-lilly-foundayo-europe-approval-glp1-2026/)
@@ -91,7 +93,9 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Fuel protests return ahead of Budget 2027 — and the next price shock could be bigger](https://compound.ie/news/fuel-protests-budget-2027-ireland/)
 - [Garage Conversion & Change of Use Planning Permission Ireland](https://compound.ie/wealth/garage-conversion-change-of-use-planning-ireland/)
 - [Gift Tax in Ireland 2027: How Much Can You Give Tax-Free?](https://compound.ie/wealth/gift-tax-ireland/)
+- [Gilead Earnings: Strong HIV Sales, but Acquisitions Reshape the Profit Story](https://compound.ie/wealth/gilead-earnings-hiv-growth-acquisition-cost/)
 - [Government considers extending petrol and diesel excise cuts into spring](https://compound.ie/news/petrol-diesel-excise-cuts-ev-costs-ireland/)
+- [GTA VI and TTWO: The Case for One of Entertainment's Biggest Launches](https://compound.ie/wealth/ttwo-gta-6-entertainment-launch-revenue/)
 - [Health Insurance in Ireland: Costs, Cover & How to Choose a Plan](https://compound.ie/wealth/health-insurance-ireland/)
 - [Health insurance prices are rising — but some plan benefits are being cut](https://compound.ie/news/health-insurance-price-rises-benefit-cuts-ireland/)
 - [Heat Pumps in Ireland: Costs, Grants, Running Costs & Suitability](https://compound.ie/wealth/heat-pumps-ireland/)
@@ -113,6 +117,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Income Protection Insurance in Ireland: The Complete 2026 Guide](https://compound.ie/wealth/income-protection-insurance-ireland/)
 - [Inheritance Tax in Ireland: How Much Can You Inherit Tax-Free?](https://compound.ie/wealth/inheritance-tax-ireland/)
 - [Insulation Grants in Ireland: Costs, Grants & What to Upgrade First](https://compound.ie/wealth/insulation-grants-ireland/)
+- [Intel Earnings: Data-Centre Growth Meets a Weaker Outlook](https://compound.ie/wealth/intel-earnings-data-centre-growth-guidance/)
 - [Intuitive Surgical Earnings: Robot Growth Meets a $450m Legal Charge](https://compound.ie/wealth/intuitive-surgical-earnings-growth-legal-charge/)
 - [Investment Fees in Ireland: The Cost That Compounds Against You](https://compound.ie/wealth/investment-fees-ireland/)
 - [Investment Tax in Ireland: CGT, ETFs, Dividends and Deemed Disposal](https://compound.ie/wealth/investment-tax-ireland/)
@@ -134,6 +139,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Meta's advertising engine is growing. Is enough cash reaching shareholders?](https://compound.ie/wealth/meta-advertising-growth-ai-cash-flow/)
 - [Microsoft Stock Guide: Azure, Software, AI and Cash Flow](https://compound.ie/wealth/microsoft-azure-ai-returns-2026/)
 - [Microsoft's AI spending: the cash-flow test behind Azure's growth](https://compound.ie/wealth/microsoft-ai-capex-cash-flow/)
+- [Microsoft's Layoff Wave: What the 60,000-Employee Exit Offer Really Means](https://compound.ie/news/microsoft-layoffs-voluntary-exit-offer-2026/)
 - [Microsoft’s Essex exit exposes the power constraint on AI](https://compound.ie/wealth/microsoft-nscale-power-grid-delay/)
 - [Molina Earnings: Guidance Holds as Medical Costs Squeeze Margins](https://compound.ie/wealth/molina-healthcare-earnings-medicaid-margins/)
 - [More than 500,000 Irish energy accounts are in arrears — what happens if you can’t pay?](https://compound.ie/news/energy-bill-arrears-ireland-cant-pay/)
@@ -176,6 +182,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [RSUs & Share Options Tax in Ireland: How the Tax Works](https://compound.ie/wealth/rsu-share-options-tax-ireland/)
 - [Rural House Planning Permission Ireland: One-Off Houses & Local Need](https://compound.ie/wealth/rural-one-off-house-planning-ireland/)
 - [Sale Agreed in Ireland: Survey, Valuation and Property Checks](https://compound.ie/wealth/sale-agreed-survey-valuation-ireland/)
+- [Sandisk Earnings: AI Storage Surges as an Eight-for-One Split Approaches](https://compound.ie/wealth/sandisk-earnings-ai-storage-stock-split/)
 - [Saving for your child in Ireland: tax, ownership and what happens at 18](https://compound.ie/wealth/saving-for-your-child-ireland/)
 - [Section 5 Declaration Ireland: How to Confirm If Planning Permission Is Needed](https://compound.ie/wealth/section-5-declaration-ireland/)
 - [Self-Employed Tax in Ireland 2026: Income Tax, USC, PRSI and What to Set Aside](https://compound.ie/wealth/self-employed-tax-ireland-2026-guide/)
@@ -187,6 +194,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Solar Panels in Ireland: Costs, Grants, Payback & Export Payments](https://compound.ie/wealth/solar-panels-ireland/)
 - [Solicitor and Conveyancing in Ireland: Contracts, Title and Stamp Duty](https://compound.ie/wealth/solicitor-conveyancing-stamp-duty-ireland/)
 - [SpaceX Earnings: AI Drives Revenue Surge, but Cash Spending Remains Huge](https://compound.ie/wealth/spacex-ai-growth-cash-spending/)
+- [Starbucks Earnings: The Turnaround Looks Better Than the Revenue Headline](https://compound.ie/wealth/starbucks-earnings-turnaround-sales-china/)
 - [State Pension in Ireland: Rates, PRSI Rules & How to Qualify](https://compound.ie/wealth/state-pension-ireland/)
 - [State Pension set for at least €7.50 Budget 2027 rise: what it would mean](https://compound.ie/news/state-pension-increase-budget-2027-ireland/)
 - [Tax credits in Ireland explained: what they are and how they work](https://compound.ie/wealth/tax-credits-ireland-explained/)
@@ -419,20 +427,20 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - [Disclaimer](https://compound.ie/disclaimer/)
 - [Editorial and Corrections Policy](https://compound.ie/editorial-policy/)
 - [Find Solar Panel Installers in Ireland: SEAI Register & Checklist](https://compound.ie/solar-installers/)
+- [Installer partnerships are paused](https://compound.ie/solar-for-installers/)
 - [Installer Portal | Compound Solar](https://compound.ie/solar-installer-portal/)
 - [Insurance Tools & Guides Ireland](https://compound.ie/insurance/)
 - [Life](https://compound.ie/life/)
 - [Privacy policy](https://compound.ie/privacy/)
 - [Solar Battery Calculator Ireland: Cost, Grant & Payback](https://compound.ie/solar-batteries/)
+- [Solar Costs & Payback: Irish Guides and Calculators](https://compound.ie/solar/)
 - [Solar Export Rates Ireland: Compare Electricity Tariffs](https://compound.ie/solar-export-rates/)
-- [Solar Installer Partnerships Ireland | Exclusive County Sponsorship | Compound](https://compound.ie/solar-for-installers/)
+- [Solar matching is paused](https://compound.ie/solar-get-quotes/)
 - [Solar Panel Direction Calculator Ireland: 360° Compass & kWh](https://compound.ie/solar-roof-direction/)
 - [Solar Panel Grants Ireland 2026: PV & Battery Eligibility](https://compound.ie/solar-grants/)
 - [Solar Panel Installation Costs & System Sizes Ireland](https://compound.ie/solar-costs/)
 - [Solar Panels, Inverters & Batteries Ireland: Equipment Guide](https://compound.ie/solar-equipment/)
 - [Solar Quote Comparison Calculator Ireland](https://compound.ie/solar-compare-quotes/)
-- [Solar Quote Request Ireland: Build Your Installation Project](https://compound.ie/solar-get-quotes/)
-- [Solar Quotes Ireland: Plan Your Installation & Compare Costs](https://compound.ie/solar/)
 
 ## Site hubs and directories — 11
 

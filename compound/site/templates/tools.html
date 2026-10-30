@@ -37,7 +37,7 @@
         <p class="eyebrow">0{{ loop.index }}</p>
         <h2>{{ category }}</h2>
         {% if category_blurbs and category in category_blurbs %}<p class="tool-group-blurb">{{ category_blurbs[category] }}</p>{% endif %}
-        {% if category == 'Home Energy' %}<p class="tool-group-blurb">Planning solar panels? <a href="/solar/">Explore the Compound Solar Hub — grants, costs, batteries and installers ↗</a></p>{% endif %}
+        {% if category == 'Home Energy' %}<p class="tool-group-blurb">Planning solar panels? <a href="/solar/">Solar costs and payback guides ↗</a></p>{% endif %}
       </div>
       <span class="tool-group-count">{{ items|length }} tool{% if items|length != 1 %}s{% endif %}</span>
     </div>

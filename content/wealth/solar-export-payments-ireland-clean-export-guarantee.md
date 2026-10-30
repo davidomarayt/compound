@@ -61,7 +61,7 @@ That clarification matters for anyone who already has rooftop solar, and for hou
 <div class="cs-intro" role="note">
 <p class="cs-kicker">Planning solar for your home?</p>
 <p>Check what a system could save using the <a href="/solar-payback-calculator/">Solar Payback Calculator</a>, including a lower export-rate scenario.</p>
-<p><strong><a href="/solar/get-quotes/" data-solar-cta="export_article_intro">Fill out the simple form to request up to 3 solar quotes →</a></strong></p>
+<p><strong><a href="/solar/installers/">Check an installer before requesting quotes →</a></strong></p>
 <p>Use the same roof, electricity-use and battery requirements when comparing installation offers.</p>
 </div>
 
@@ -308,4 +308,4 @@ It is how much you will **use yourself**, how much you will **export**, what eac
 
 Run a lower-export-rate scenario as well as your starting estimate. Then compare installation quotes using the same system size, battery assumptions and expected generation, so differences in price are easier to understand.
 
-Use the [solar quote comparison guide](/solar/compare-quotes/) to check what each offer includes. When you are ready, <a href="/solar/get-quotes/" data-solar-cta="export_article_end">request up to 3 solar quotes</a> using one form, so the roof, electricity use and installation requirements are recorded together.
+Use the [solar quote comparison guide](/solar/compare-quotes/) to check what each offer includes. When you are ready, <a href="/solar/installers/">Check an installer before requesting quotes →</a> and request proposals directly. Compound matching is paused.

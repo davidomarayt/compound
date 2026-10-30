@@ -2,33 +2,33 @@
   "cik": 882095,
   "company": "Gilead Sciences",
   "latest": {
-    "accession": "0000882095-26-000031",
-    "filed": "2026-08-06",
-    "form": "10-Q",
-    "fp": "Q2",
     "fy": 2026,
+    "fp": "Q3",
+    "period_end": "2026-09-30",
+    "filed": "2026-10-29",
+    "accession": "0000882095-26-000037",
+    "source": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm",
+    "form": "8-K",
     "metrics": {
-      "diluted_eps": {
-        "current": -8.45,
-        "prior_year": 1.56,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 8300000000.0,
+        "prior_year": 7769000000.0,
+        "unit": "USD",
+        "tag": "SEC earnings release; GAAP"
       },
       "net_income": {
-        "current": -10496000000,
-        "prior_year": 1960000000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 2429000000.0,
+        "prior_year": 3052000000.0,
+        "unit": "USD",
+        "tag": "SEC earnings release; GAAP"
       },
-      "revenue": {
-        "current": 7803000000,
-        "prior_year": 7082000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 1.94,
+        "prior_year": 2.43,
+        "unit": "USD/shares",
+        "tag": "SEC earnings release; GAAP"
       }
-    },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000031/gild-20260630.htm"
+    }
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000031/gild-20260630.htm"
+    },
+    {
+      "fy": 2026,
+      "fp": "Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-29",
+      "accession": "0000882095-26-000037",
+      "source": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm",
+      "form": "8-K",
+      "metrics": {
+        "revenue": {
+          "current": 8300000000.0,
+          "prior_year": 7769000000.0,
+          "unit": "USD",
+          "tag": "SEC earnings release; GAAP"
+        },
+        "net_income": {
+          "current": 2429000000.0,
+          "prior_year": 3052000000.0,
+          "unit": "USD",
+          "tag": "SEC earnings release; GAAP"
+        },
+        "diluted_eps": {
+          "current": 1.94,
+          "prior_year": 2.43,
+          "unit": "USD/shares",
+          "tag": "SEC earnings release; GAAP"
+        }
+      }
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and furnished earnings releases; no analyst estimates",
   "ticker": "GILD",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }

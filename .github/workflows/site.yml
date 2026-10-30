@@ -160,35 +160,13 @@ jobs:
           node --check compound/site/static/solar-project.js
           node --check compound/site/static/solar-lead-intake.js
           node --check compound/site/static/solar-private-pilot.js
-          grep -Fq 'data-solar-project' public/solar/get-quotes/index.html
-          grep -Fq 'solar-project.js?v=3' public/solar/get-quotes/index.html
-          grep -Fq 'solar-project.css?v=3' public/solar/get-quotes/index.html
-          grep -Fq 'data-orientation-embedded' public/solar/get-quotes/index.html
-          grep -Fq 'data-sp-face-button="2"' public/solar/get-quotes/index.html
-          ! grep -Fq 'data-or="request"' public/solar/get-quotes/index.html
           ! grep -Fq 'data-or="request"' public/solar/roof-direction/index.html
-          ! grep -Fq 'photovoltaic-geographic-information-system.ec.europa.eu' public/solar/get-quotes/index.html
           ! grep -Fq 'photovoltaic-geographic-information-system.ec.europa.eu' public/solar/roof-direction/index.html
           ! grep -Fq "window.open(" compound/site/static/solar-orientation.js
           ! grep -Fq "q('request')" compound/site/static/solar-orientation.js
-          grep -Fq 'data-or="chart-amount"' public/solar/get-quotes/index.html
-          grep -Fq 'data-sor-month="0"' public/solar/get-quotes/index.html
-          grep -Fq 'data-sor-month="11"' public/solar/get-quotes/index.html
           grep -Fq 'data-sor-month="0"' public/solar/roof-direction/index.html
           grep -Fq 'data-sor-month="11"' public/solar/roof-direction/index.html
-          ! grep -Fq '<canvas data-or="chart"' public/solar/get-quotes/index.html
           ! grep -Fq '<canvas data-or="chart"' public/solar/roof-direction/index.html
-          grep -Fq 'class="sol-project-optional"' public/solar/get-quotes/index.html
-          grep -Fq 'More roof or access details' public/solar/get-quotes/index.html
-          grep -Fq 'Additional system preferences' public/solar/get-quotes/index.html
-          grep -Fq 'data-sp="material"' public/solar/get-quotes/index.html
-          grep -Fq 'data-sp="demand"' public/solar/get-quotes/index.html
-          grep -Fq 'data-sp="battery"' public/solar/get-quotes/index.html
-          ! grep -Fq 'data-sp="board"' public/solar/get-quotes/index.html
-          ! grep -Fq 'data-sp="eircode"' public/solar/get-quotes/index.html
-          grep -Fq '/static/solar-lead-intake.js?v=2' public/solar/get-quotes/index.html
-          ! grep -Fq 'sol-project-photo-guide' public/solar/get-quotes/index.html
-          ! grep -Fq 'data-sp="photoRoof"' public/solar/get-quotes/index.html
 
 
           python - <<'PY'
@@ -260,7 +238,7 @@ jobs:
           grep -Fq 'https://compound.ie/wealth/compare-solar-panel-quotes-ireland/' "$page"
           grep -Fq 'How to Compare Solar Panel Quotes' "$page"
           grep -Fq '/solar/compare-quotes/' "$page"
-          grep -Fq '/solar/get-quotes/' "$page"
+          grep -Fq '/solar/installers/' "$page"
           grep -Fq 'chart-svg' "$page"
           grep -Fq 'compare-solar-panel-quotes-ireland.jpg' "$page"
           test -s public/static/images/evergreen/compare-solar-panel-quotes-ireland.jpg
@@ -295,44 +273,8 @@ jobs:
           grep -Fq '/wealth/solar-panels-winter-ireland/' public/solar/index.html
           grep -Fq 'solar-panels-winter-ireland.jpg' "$page"
           test -s public/static/images/evergreen/solar-panels-winter-ireland.jpg
-      - name: Verify homeowner-first Solar Hub conversion funnel
-        shell: bash
-        run: |
-          set -euo pipefail
-          hub=public/solar/index.html
-          intake=public/solar/get-quotes/index.html
-          test -s "$hub"
-          test -s "$intake"
-          test -s public/static/solar-home.css
-          grep -Fq '/static/solar-home.css?v=1' "$hub"
-          grep -Fq 'Get your solar project' "$hub"
-          grep -Fq 'quote-ready.' "$hub"
-          ! grep -Fq 'class="solh-pilot"' "$hub"
-          grep -Fq 'up to three companies' "$hub"
-          grep -Fq 'How many installers would you like to hear from?' "$intake"
-          grep -Fq 'Current availability:' "$intake"
-          ! grep -Fq 'Installer introductions are not yet available, and we will seek your separate permission before any future matching' "$intake"
-          grep -Fq 'Privacy and 90-day retention details' "$intake"
-          grep -Fq 'data-solar-cta="hero"' "$hub"
-          grep -Fq 'data-solar-cta="steps"' "$hub"
-          grep -Fq 'data-solar-cta="bottom"' "$hub"
-          test "$(grep -o 'href="/solar/get-quotes/"' "$hub" | wc -l)" -ge 3
-          grep -Fq '/wealth/compare-solar-panel-quotes-ireland/' "$hub"
-          grep -Fq 'data-solar-pilot-active="true"' "$intake"
-          grep -Fq 'HOMEOWNER ENQUIRIES OPEN' "$intake"
-          grep -Fq 'Submit my solar project' "$intake"
-          grep -Fq 'Your details remain private to Compound unless you separately agree' "$intake"
-          grep -Fq 'quote-ready.' "$hub"
-          grep -Fq 'data-solar-leads-active="false"' "$intake"
-          grep -Fq 'data-sp-private-pilot-form' "$intake"
-          test "$(grep -o 'data-sp-private-pilot-form' "$intake" | wc -l)" -eq 1
-          ! grep -Fq 'data-sp-live-request' "$intake"
-          ! grep -Fq 'data-sp-quote-form' "$intake"
-          ! grep -Fq 'data-sp-quote-consent' "$intake"
-          grep -Fq '/static/solar-private-pilot.js?v=4' "$intake"
-          grep -Fq '/static/solar-funnel.js?v=20261015-1' "$hub"
-          node --check compound/site/static/solar-private-pilot.js
-          node --check compound/site/static/solar-funnel.js
+      - name: Verify finance focus and paused solar matching
+        run: python -m pytest -q tests/test_home_hubs.py tests/test_solar_hub.py
       - name: Verify Solar hub pages and client script
         shell: bash
         run: |
@@ -346,16 +288,10 @@ jobs:
             grep -q 'solar-hub.css' "public/$path/index.html"
           done
           grep -q 'https://compound.ie/solar/compare-quotes/' public/solar/compare-quotes/index.html
-          grep -q '/solar/' public/wealth/index.html
-          grep -q 'data-solar-sponsor-form' public/solar/for-installers/index.html
-          grep -Fq 'https://formsubmit.co/david@compound.ie' public/solar/for-installers/index.html
-          grep -Fq 'data-sponsor-counties' public/solar/for-installers/index.html
           ! grep -q 'action="mailto:' public/solar/for-installers/index.html
           ! grep -q 'Prepare my application email' public/solar/for-installers/index.html
-          grep -q 'solar-sponsors.css' public/solar/for-installers/index.html
           ! grep -q 'pagead2.googlesyndication.com' public/solar/for-installers/index.html
           ! grep -q '<ins class="adsbygoogle"' public/solar/for-installers/index.html
-          test "$(grep -o 'data-county' content/pages/solar-for-installers.md | wc -l)" -eq 32
           grep -q 'solar-payback-calculator/' public/solar/index.html
           ! grep -R -F 'built and occupied before 2021' public/solar public/solar-payback-calculator public/wealth/solar-panels-ireland public/wealth/solar-panels-vs-battery-ireland
       - name: Check private solar installer portal
@@ -384,10 +320,10 @@ jobs:
           grep -Fq '/static/home-hubs.js?v=1' public/index.html
           test "$(grep -o 'class="home-hub-card"' public/index.html | wc -l)" -eq 4
           test "$(grep -o 'data-home-hub="' public/index.html | wc -l)" -eq 8
-          grep -Fq 'Today’s News' public/index.html
-          grep -Fq 'Health, Wealth, Life.' public/index.html
-          grep -Fq 'Worth your time.' public/index.html
-          for slug in solar solar/get-quotes insurance pia stocks wealth/earnings wealth/how-to-start-investing-in-ireland health-insurance-cost-comparison-calculator; do
+          grep -Fq 'Finance &amp; Investing' public/index.html
+          grep -Fq 'Research. Invest. Build.' public/index.html
+          grep -Fq 'finance-desk-grid' public/index.html
+          for slug in wealth compound-interest-calculator insurance pia stocks wealth/earnings wealth/how-to-start-investing-in-ireland health-insurance-cost-comparison-calculator; do
             test -s "public/$slug/index.html"
             grep -Fq "href=\"/$slug/\"" public/index.html
           done
@@ -522,7 +458,7 @@ jobs:
           fetch https://compound.ie/ /tmp/compound-home-hubs.html
           grep -Fq 'id="explore-compound"' /tmp/compound-home-hubs.html
           test "$(grep -o 'class="home-hub-card"' /tmp/compound-home-hubs.html | wc -l)" -eq 4
-          grep -Fq '/solar/get-quotes/' /tmp/compound-home-hubs.html
+          ! grep -Fq '/solar/get-quotes/' /tmp/compound-home-hubs.html
           grep -Fq '/insurance/' /tmp/compound-home-hubs.html
           grep -Fq '/pia/' /tmp/compound-home-hubs.html
           grep -Fq '/wealth/earnings/' /tmp/compound-home-hubs.html
@@ -537,38 +473,27 @@ jobs:
             grep -Fq 'solar-hub.css' "$target"
             grep -Fq "<link rel=\"canonical\" href=\"https://compound.ie/${slug}/\">" "$target"
           done
-          # Homeowner intake is the first action on the redesigned landing page.
+          # Solar is an informational resource; matching is paused.
+          grep -Fq "Solar matching is paused" /tmp/solar-solar-get-quotes.html
+          grep -Fq "Installer partnerships are paused" /tmp/solar-solar-for-installers.html
           grep -Fq '/static/solar-home.css?v=1' /tmp/solar-solar.html
           ! grep -Fq 'class="solh-pilot"' /tmp/solar-solar.html
-          grep -Fq 'up to three companies' /tmp/solar-solar.html
-          grep -Fq 'data-solar-cta="hero"' /tmp/solar-solar.html
-          grep -Fq 'data-solar-cta="steps"' /tmp/solar-solar.html
-          grep -Fq 'data-solar-cta="bottom"' /tmp/solar-solar.html
-          grep -Fq 'quote-ready.' /tmp/solar-solar.html
-          grep -Fq 'data-solar-pilot-active="true"' /tmp/solar-solar-get-quotes.html
-          grep -Fq 'Send your solar project for secure review.' /tmp/solar-solar-get-quotes.html
-          test "$(grep -o 'data-sp-private-pilot-form' /tmp/solar-solar-get-quotes.html | wc -l)" -eq 1
-          ! grep -Fq 'data-sp-live-request' /tmp/solar-solar-get-quotes.html
-          ! grep -Fq 'data-sp-quote-form' /tmp/solar-solar-get-quotes.html
+          ! grep -Fq 'up to three companies' /tmp/solar-solar.html
+          ! grep -Fq 'data-solar-cta="hero"' /tmp/solar-solar.html
+          ! grep -Fq 'data-solar-cta="steps"' /tmp/solar-solar.html
+          ! grep -Fq 'data-solar-cta="bottom"' /tmp/solar-solar.html
+          ! grep -Fq 'quote-ready.' /tmp/solar-solar.html
           fetch https://compound.ie/static/solar-home.css?v=1 /tmp/solar-home.css
           grep -Fq '.solh-hero-grid' /tmp/solar-home.css
           grep -Fq '/solar/compare-quotes/' /tmp/solar-solar.html
           ! grep -Fq 'pagead2.googlesyndication.com' /tmp/solar-solar-for-installers.html
-          grep -Fq 'data-solar-sponsor-form' /tmp/solar-solar-for-installers.html
-          grep -Fq 'https://formsubmit.co/david@compound.ie' /tmp/solar-solar-for-installers.html
+          ! grep -Fq 'data-solar-sponsor-form' /tmp/solar-solar-for-installers.html
           ! grep -Fq 'action="mailto:' /tmp/solar-solar-for-installers.html
           grep -Fq 'data-solar-quotes' /tmp/solar-solar-compare-quotes.html
           grep -Fq 'data-solar-grants' /tmp/solar-solar-grants.html
           grep -Fq 'data-solar-battery' /tmp/solar-solar-batteries.html
           grep -Fq 'data-solar-export' /tmp/solar-solar-export-rates.html
           grep -Fq 'data-solar-equipment' /tmp/solar-solar-equipment.html
-          grep -Fq 'data-orientation-embedded' /tmp/solar-solar-get-quotes.html
-          grep -Fq 'data-or="chart"' /tmp/solar-solar-get-quotes.html
-          grep -Fq 'data-or="dial"' /tmp/solar-solar-get-quotes.html
-          grep -Fq 'data-sp-face-button="2"' /tmp/solar-solar-get-quotes.html
-          ! grep -Fq 'sol-project-photo-guide' /tmp/solar-solar-get-quotes.html
-          grep -Fq 'solar-orientation.js?v=6' /tmp/solar-solar-get-quotes.html
-          grep -Fq 'solar-project.js?v=3' /tmp/solar-solar-get-quotes.html
 
           fetch https://compound.ie/static/solar-research.js /tmp/solar-research.js
           grep -Fq 'data-solar-battery' /tmp/solar-research.js
@@ -580,16 +505,11 @@ jobs:
           fetch https://compound.ie/solar/roof-direction/ /tmp/solar-roof-direction.html
           grep -Fq 'data-solar-orientation' /tmp/solar-roof-direction.html
           ! grep -Fq 'data-or="request"' /tmp/solar-roof-direction.html
-          ! grep -Fq 'data-or="request"' /tmp/solar-solar-get-quotes.html
           ! grep -Fq 'photovoltaic-geographic-information-system.ec.europa.eu' /tmp/solar-roof-direction.html
-          ! grep -Fq 'photovoltaic-geographic-information-system.ec.europa.eu' /tmp/solar-solar-get-quotes.html
           grep -Fq 'class="sor-canvas"' /tmp/solar-roof-direction.html
           grep -Fq 'data-or="chart-amount"' /tmp/solar-roof-direction.html
           grep -Fq 'data-sor-month="0"' /tmp/solar-roof-direction.html
           grep -Fq 'data-sor-month="11"' /tmp/solar-roof-direction.html
-          grep -Fq 'data-sor-month="0"' /tmp/solar-solar-get-quotes.html
-          grep -Fq 'data-sor-month="11"' /tmp/solar-solar-get-quotes.html
-          ! grep -Fq '<canvas data-or="chart"' /tmp/solar-solar-get-quotes.html
           grep -Fq 'solar-orientation.js?v=6' /tmp/solar-roof-direction.html
           grep -Fq 'solar-orientation.css?v=3' /tmp/solar-roof-direction.html
           grep -Fq '/solar/roof-direction/' /tmp/solar-solar.html

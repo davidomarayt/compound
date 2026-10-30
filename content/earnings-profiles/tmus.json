@@ -2,33 +2,33 @@
   "cik": 1283699,
   "company": "T-Mobile US",
   "latest": {
-    "accession": "0001283699-26-000101",
-    "filed": "2026-07-23",
+    "accession": "0001283699-26-000129",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.99,
-        "prior_year": 2.84,
+        "current": 3.22,
+        "prior_year": 2.41,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 3239000000,
-        "prior_year": 3222000000,
+        "current": 3455000000,
+        "prior_year": 2714000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 22791000000,
-        "prior_year": 21132000000,
+        "current": 23584000000,
+        "prior_year": 21957000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000101/tmus-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000129/tmus-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000101/tmus-20260630.htm"
+    },
+    {
+      "accession": "0001283699-26-000129",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.22,
+          "prior_year": 2.41,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 3455000000,
+          "prior_year": 2714000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 23584000000,
+          "prior_year": 21957000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1283699/000128369926000129/tmus-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TMUS",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }

@@ -232,7 +232,7 @@ Then follow this decision sequence:
 <p class="cs-kicker">From research to an informed quote</p>
 <h3>Already have an installation price?</h3>
 <p>Compare up to three quotes on the same basis, including €/kWp, annual yield and grant treatment. Then create a clear brief for registered installers. Compound is an independent publisher; an enquiry is not a paid ranking or endorsement.</p>
-<p><a href="/solar/compare-quotes/">Compare my solar quotes →</a> &nbsp; <a href="/solar/get-quotes/">Prepare an installer quote brief →</a></p>
+<p><a href="/solar/compare-quotes/">Compare my solar quotes →</a> &nbsp; <a href="/solar/installers/">Check an installer before requesting quotes →</a></p>
 </div>
 
 ## Frequently asked questions

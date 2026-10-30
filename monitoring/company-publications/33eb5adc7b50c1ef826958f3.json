@@ -1,0 +1,64 @@
+{
+  "fingerprint": "33eb5adc7b50c1ef826958f3",
+  "state": "published",
+  "company": "AMZN",
+  "article_path": "content/wealth/amazon-aws-profit-investment-gains.md",
+  "story_thesis": "Amazon Earnings: AWS Accelerates, but the Cash Bill Keeps Growing",
+  "authorization": "Explicit manual batch publication; scheduled one-article budget does not apply.",
+  "duplicate_checks": "Read EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, content-inventory.json, related Amazon articles and open PRs. Amazon updates existing canonical profit-quality article; other four have no competing editorial.",
+  "sources": [
+    {
+      "title": "SEC-furnished earnings release, 29 October 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm"
+    },
+    {
+      "title": "Amazon Q2 2026 release",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q2-2026-report"
+    }
+  ],
+  "source_sha256": "d6ba92bf8b69f831012e46635940d212ad14d5a17b2916c465a164ab9cd33d02",
+  "claim_checks": {
+    "financial_table": [
+      2026,
+      "Q3",
+      "2026-09-30",
+      "0001018724-26-000038",
+      201944000000.0,
+      180169000000.0,
+      20685000000.0,
+      21187000000.0,
+      1.89,
+      1.95
+    ],
+    "units": "USD; annual Starbucks figures are directly reported full-year, not inferred Q4",
+    "gaap_adjusted_separate": true,
+    "second_pass": "complete: release tables, reporting periods, units, GAAP/adjusted distinctions, guidance and arithmetic rechecked against source documents"
+  },
+  "image_provenance": {
+    "source": "https://commons.wikimedia.org/wiki/File:Amazon_delivery_van.jpg",
+    "author": "Thomasfan1916",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "capture_date": "2025-07-28",
+    "asset": "/static/images/evergreen/amazon-aws-profit-investment-gains.jpg"
+  },
+  "gates": {
+    "build": "passed: full site build, 220 articles",
+    "rendered_hero_and_social": "passed: canonical and hero/OG/Twitter markup checked; actual generated social images visually inspected",
+    "ci": "passed: test and performance, run 40955433276; local full suite 247 passed",
+    "deployment": "passed: build and deploy jobs, run 40957027858; verify-live job passed",
+    "targeted_tests": "50 passed; all 14 profile schemas validated",
+    "live_verification": "HTTP 200, current canonical content and source filings verified; original hero hashes match; OG/Twitter images fetched and visually inspected; five article pages inspected in browser"
+  },
+  "publication_pr": "https://github.com/davidomarayt/compound/pull/64",
+  "verified_head": "3d4280fd8b3f46185c45a903eee28f1f2a56844b",
+  "merge_commit": "7b81c3e14e97cbb3c79d8baf1ccf3896bbe2dce8",
+  "live_checks": [
+    {
+      "url": "https://compound.ie/wealth/amazon-aws-profit-investment-gains/",
+      "status": 200,
+      "hero_sha256": "68e73e6d8c085cf840ce0046a82a5c4d5fa9535db4ff6619547cd3954cc5c21e",
+      "social": "https://compound.ie/static/discover/amazon-aws-profit-investment-gains-16x9.webp",
+      "social_bytes": 117184
+    }
+  ]
+}

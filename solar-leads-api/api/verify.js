@@ -1,3 +1,4 @@
+import {SOLAR_MATCHING_PAUSED} from '../lib/service-status.js';
 import {json,error,rpc,digest,escapeHtml} from '../lib/core.js';
 const validId=s=>/^[0-9a-f]{8}-[0-9a-f-]{27,}$/i.test(s||'');
 const validToken=s=>/^[A-Za-z0-9_-]{30,80}$/.test(s||'');
@@ -8,6 +9,7 @@ function html(title,content,status=200){
  {status,headers:{'Cache-Control':'no-store','Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; base-uri 'none'"}});
 }
 export function GET(request){
+ if(SOLAR_MATCHING_PAUSED)return html('Solar matching is paused','<p>We are not accepting new quote requests or confirming new introductions. Contact Compound about an existing enquiry.</p>');
  const url=new URL(request.url),project=url.searchParams.get('project'),token=url.searchParams.get('token');
  if(!validId(project)||!validToken(token))return html('Invalid verification link','<p>This link is invalid.</p>',400);
  return html('Confirm your quote request','<p>Use this confirmation button to verify that you requested solar quotations.</p>'+
@@ -15,6 +17,7 @@ export function GET(request){
   '<input type="hidden" name="token" value="'+escapeHtml(token)+'"><button type="submit">Confirm my solar quote request</button></form>');
 }
 export async function POST(request){
+ if(SOLAR_MATCHING_PAUSED)return html('Solar matching is paused','<p>New quote confirmations are paused. Contact Compound about an existing enquiry.</p>');
  try{
    const body=await request.text();
    if(body.length>500)return html('Unable to verify','<p>The confirmation link was invalid.</p>',400);

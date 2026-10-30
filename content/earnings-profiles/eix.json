@@ -2,33 +2,33 @@
   "cik": 827052,
   "company": "Edison International",
   "latest": {
-    "accession": "0000827052-26-000042",
-    "filed": "2026-04-28",
+    "accession": "0000827052-26-000073",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.37,
-        "prior_year": 3.72,
+        "current": 1.87,
+        "prior_year": 2.16,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 531000000,
-        "prior_year": 1436000000,
+        "current": 724000000,
+        "prior_year": 832000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4103000000,
-        "prior_year": 3811000000,
+        "current": 4886000000,
+        "prior_year": 5750000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/827052/000082705226000042/eix-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/827052/000082705226000073/eix-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,38 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/827052/000082705226000042/eix-20260331.htm"
+    },
+    {
+      "accession": "0000827052-26-000073",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.87,
+          "prior_year": 2.16,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 724000000,
+          "prior_year": 832000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4886000000,
+          "prior_year": 5750000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/827052/000082705226000073/eix-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "EIX",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }

@@ -2,33 +2,33 @@
   "cik": 895126,
   "company": "Expand Energy",
   "latest": {
-    "accession": "0000895126-26-000047",
-    "filed": "2026-07-28",
+    "accession": "0000895126-26-000068",
+    "filed": "2026-10-27",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.19,
-        "prior_year": 4.02,
+        "current": 2.24,
+        "prior_year": 2.28,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 522000000,
-        "prior_year": 968000000,
+        "current": 519000000,
+        "prior_year": 547000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2960000000,
-        "prior_year": 3690000000,
+        "current": 3286000000,
+        "prior_year": 2966000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/895126/000089512626000047/exe-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/895126/000089512626000068/exe-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/895126/000089512626000047/exe-20260630.htm"
+    },
+    {
+      "accession": "0000895126-26-000068",
+      "filed": "2026-10-27",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.24,
+          "prior_year": 2.28,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 519000000,
+          "prior_year": 547000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3286000000,
+          "prior_year": 2966000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/895126/000089512626000068/exe-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "EXE",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }

@@ -1,5 +1,7 @@
+import {SOLAR_MATCHING_PAUSED} from '../lib/service-status.js';
 import {rpc,sha256,stripe,PRICE_ID,UPFRONT_PRICE_ID,BASE_URL,FOUNDING_TRIAL_END_UNIX,err,catchError,failClosed} from '../lib/core.js';
 export async function GET(request){
+ if(SOLAR_MATCHING_PAUSED)return Response.json({ok:false,message:'Solar matching and new applications are paused.'},{status:503,headers:{'Cache-Control':'no-store','Access-Control-Allow-Origin':'https://compound.ie'}});
  // Public paid checkout must never run without the fully operational CRM, county lock,
  // tax configuration and Stripe webhook. The static application form stays separate.
  if(process.env.SPONSOR_BILLING_READY!=='true'||process.env.SPONSOR_TAX_READY!=='true'||!failClosed('STRIPE_SECRET_KEY','SUPABASE_URL','SUPABASE_SERVICE_ROLE_KEY','STRIPE_WEBHOOK_SECRET'))return err('Checkout not yet available',503);

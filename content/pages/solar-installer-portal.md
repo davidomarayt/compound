@@ -4,6 +4,7 @@ canonical_path: /solar/installer-portal/
 meta_description: "Secure Compound Solar portal for verified installation businesses to access private solar opportunities and purchased introductions."
 ---
 <div class="sip" data-installer-portal data-supabase-url="https://guifxtijipkpvjjyhatq.supabase.co" data-supabase-publishable-key="sb_publishable_ve357dvU1yKXIkMkEz5FTA_bg1BBvjk" data-checkout-api-url="" data-ip-login-mode="magic-link" data-pilot-review-api="https://compound-solar-api.vercel.app/api/pilot-review">
+  <p role="status">Solar matching and new purchases are paused. Existing account and enquiry access remains available.</p>
   <div class="sip-head">
     <div>
       <a class="sip-back" href="/solar/">← Compound Solar</a>
@@ -15,13 +16,8 @@ meta_description: "Secure Compound Solar portal for verified installation busine
   <section class="sip-signin" data-ip-screen="signin" aria-labelledby="sip-signin-title">
     <div class="sip-auth-copy">
       <p class="sip-eyebrow">FOR VERIFIED SOLAR INSTALLERS</p>
-      <h1 id="sip-signin-title">Better projects.<br><em>Less chasing.</em></h1>
-      <p>Browse homeowner-approved solar projects, review the scope before committing, and keep every purchased introduction in one place.</p>
-      <div class="sip-auth-benefits">
-        <div><span>01</span><strong>Qualified project briefs</strong><small>Solar requirements, roof settings and customer intent in one overview.</small></div>
-        <div><span>02</span><strong>Pay per introduction</strong><small>See the price and remaining availability before you buy.</small></div>
-        <div><span>03</span><strong>Private purchased leads</strong><small>Homeowner details only unlock for your business after approved payment.</small></div>
-      </div>
+      <h1 id="sip-signin-title">Solar matching<br><em>is paused.</em></h1>
+      <p>Access existing records or contact Compound about an earlier enquiry. New introductions and purchases are paused.</p>
     </div>
     <div class="sip-login-panel">
       <span class="sip-pill">VERIFIED BUSINESSES ONLY</span>

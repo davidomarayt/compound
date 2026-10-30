@@ -1,7 +1,9 @@
+import {SOLAR_MATCHING_PAUSED} from '../lib/service-status.js';
 import {json,ready,safeHeaders,allowedOrigin,paymentEnabled,readJson,
   authenticatedInstaller,rpc,stripe,options,token,databaseSecretReady} from '../lib/core.js';
 export function OPTIONS(request){return options(request);}
 export async function POST(request){
+ if(SOLAR_MATCHING_PAUSED)return Response.json({ok:false,message:'Solar matching and new applications are paused.'},{status:503,headers:{'Cache-Control':'no-store','Access-Control-Allow-Origin':'https://compound.ie'}});
  const headers=safeHeaders(request);
  if(!allowedOrigin(request))return json({ok:false,message:'Not allowed'},403,headers);
  if(!paymentEnabled()||!databaseSecretReady()||!ready(

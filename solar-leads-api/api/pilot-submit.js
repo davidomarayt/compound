@@ -1,8 +1,10 @@
+import {SOLAR_MATCHING_PAUSED} from '../lib/service-status.js';
 import {createHmac} from 'node:crypto';
 import {json,ready,pilotIntakeEnabled,databaseSecretReady,readJson,normalizePrivatePilot,
  allowedOrigin,safeHeaders,options,rpc} from '../lib/core.js';
 export function OPTIONS(request){return options(request);}
 export async function POST(request){
+ if(SOLAR_MATCHING_PAUSED)return Response.json({ok:false,message:'Solar matching and new applications are paused.'},{status:503,headers:{'Cache-Control':'no-store','Access-Control-Allow-Origin':'https://compound.ie'}});
  const headers=safeHeaders(request);
  if(!allowedOrigin(request))return json({ok:false,message:'Not allowed'},403,headers);
  if(!pilotIntakeEnabled()||!databaseSecretReady())return json({ok:false,message:'Private project submissions are temporarily unavailable'},503,headers);

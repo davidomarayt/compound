@@ -2,33 +2,33 @@
   "cik": 849395,
   "company": "CRH plc",
   "latest": {
-    "accession": "0001628280-26-050755",
-    "filed": "2026-07-30",
+    "accession": "0000849395-26-000013",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.21,
-        "prior_year": 1.94,
+        "current": 1.86,
+        "prior_year": 2.21,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1486000000,
-        "prior_year": 1319000000,
+        "current": 1245000000,
+        "prior_year": 1503000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 10777000000,
-        "prior_year": 10206000000,
+        "current": 11396000000,
+        "prior_year": 11069000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/849395/000162828026050755/crh-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/849395/000084939526000013/crh-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/849395/000162828026050755/crh-20260630.htm"
+    },
+    {
+      "accession": "0000849395-26-000013",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.86,
+          "prior_year": 2.21,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1245000000,
+          "prior_year": 1503000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 11396000000,
+          "prior_year": 11069000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/849395/000084939526000013/crh-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CRH",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }

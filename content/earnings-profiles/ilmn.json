@@ -2,33 +2,33 @@
   "cik": 1110803,
   "company": "Illumina, Inc.",
   "latest": {
-    "accession": "0001110803-26-000160",
-    "filed": "2026-07-31",
-    "form": "10-Q",
-    "fp": "Q2",
     "fy": 2026,
+    "fp": "Q3",
+    "period_end": "2026-09-27",
+    "filed": "2026-10-29",
+    "form": "8-K",
+    "accession": "0001110803-26-000202",
+    "source": "https://www.sec.gov/Archives/edgar/data/1110803/000111080326000202/q326earningsrelease.htm",
     "metrics": {
-      "diluted_eps": {
-        "current": 1.35,
-        "prior_year": 1.49,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 1129000000.0,
+        "prior_year": 1084000000.0,
+        "unit": "USD",
+        "tag": "SEC earnings release; GAAP; consolidated net income"
       },
       "net_income": {
-        "current": 207000000,
-        "prior_year": 235000000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 220000000.0,
+        "prior_year": 150000000.0,
+        "unit": "USD",
+        "tag": "SEC earnings release; GAAP; consolidated net income"
       },
-      "revenue": {
-        "current": 1159000000,
-        "prior_year": 1059000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 1.43,
+        "prior_year": 0.98,
+        "unit": "USD/shares",
+        "tag": "SEC earnings release; GAAP; consolidated net income"
       }
-    },
-    "period_end": "2026-06-28",
-    "source": "https://www.sec.gov/Archives/edgar/data/1110803/000111080326000160/ilmn-20260628.htm"
+    }
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-28",
       "source": "https://www.sec.gov/Archives/edgar/data/1110803/000111080326000160/ilmn-20260628.htm"
+    },
+    {
+      "fy": 2026,
+      "fp": "Q3",
+      "period_end": "2026-09-27",
+      "filed": "2026-10-29",
+      "form": "8-K",
+      "accession": "0001110803-26-000202",
+      "source": "https://www.sec.gov/Archives/edgar/data/1110803/000111080326000202/q326earningsrelease.htm",
+      "metrics": {
+        "revenue": {
+          "current": 1129000000.0,
+          "prior_year": 1084000000.0,
+          "unit": "USD",
+          "tag": "SEC earnings release; GAAP; consolidated net income"
+        },
+        "net_income": {
+          "current": 220000000.0,
+          "prior_year": 150000000.0,
+          "unit": "USD",
+          "tag": "SEC earnings release; GAAP; consolidated net income"
+        },
+        "diluted_eps": {
+          "current": 1.43,
+          "prior_year": 0.98,
+          "unit": "USD/shares",
+          "tag": "SEC earnings release; GAAP; consolidated net income"
+        }
+      }
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC filings and furnished earnings releases; no analyst estimates",
   "ticker": "ILMN",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }

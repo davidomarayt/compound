@@ -7,7 +7,7 @@ meta_description: "Turn an interactive 360-degree solar compass to estimate Iris
   <nav aria-label="Breadcrumb"><a class="sor-back" href="/solar/">← Solar Hub</a></nav>
   <header class="sor-intro">
     <div><p class="sor-ey">COMPOUND / FREE SOLAR DESIGN TOOL</p><h1>Which way should your solar panels <em>face?</em></h1><p class="sor-lead">Turn the roof through a full 360°. See how direction, tilt and system size change estimated solar generation in Ireland. No sign-up required.</p></div>
-    <p class="sor-sidelead">A south-facing roof is not your only option. Explore every direction here, then bring your roof setup directly into the Compound solar project builder to help installers understand your plans.</p>
+    <p class="sor-sidelead">A south-facing roof is not your only option. Explore every direction here, then use the generation estimate in our payback calculator.</p>
   </header>
   <section class="sor-board" aria-label="Interactive solar roof direction calculator">
     <div class="sor-left">
@@ -59,7 +59,6 @@ meta_description: "Turn an interactive 360-degree solar compass to estimate Iris
       <p class="sor-field-note">Choose the nearest representative town, not your exact roof. The shading field is a simple illustrative annual deduction, not a shade survey.</p>
       <div class="sor-buttons">
         <button type="button" class="sor-action sor-action-secondary" data-or="copy">Copy yield per kWp</button>
-        <button type="button" class="sor-action sor-action-secondary" data-or="into-project">Use this roof setup in my solar brief ↗</button>
       </div>
       <p role="status" aria-live="polite" class="sor-message" data-or="status"></p>
     </div>
@@ -84,8 +83,8 @@ meta_description: "Turn an interactive 360-degree solar compass to estimate Iris
       <div class="sor-chart-readout"><strong data-or="chart-amount" role="status" aria-live="polite">Select a month</strong><span data-or="chart-peak">Peak production updates with the compass</span></div>
       <p class="sor-chart-hint">Tap a bar, or use the chart’s left and right arrow keys, to see the exact monthly kWh. Turn the compass above to compare roof directions.</p>
     </div>
-    <p class="sor-disclosure">The instant dial uses a simplified sun-path and diffuse-light model calibrated to broad indicative Irish annual yields. This is not a site-specific installation forecast, and it does not measure trees, chimneys, obstructions or future weather. Keep planning on Compound: add your roof setup to <a href="/solar/get-quotes/">your solar project brief</a>, and ask installers for independently checked site-specific generation estimates.</p>
+    <p class="sor-disclosure">The instant dial uses a simplified sun-path and diffuse-light model calibrated to broad indicative Irish annual yields. This is not a site-specific installation forecast, and it does not measure trees, chimneys, obstructions or future weather. Use the estimate in our <a href="/solar-payback-calculator/">payback calculator</a>, and ask installers for independently checked site-specific generation estimates.</p>
   </section>
   <section class="sor-next"><div><h2>Now, does it pay back?</h2><p>Take the estimated <strong>kWh per kWp</strong> into our solar payback calculator, then compare installer quotes on the same generation assumptions. Confirm final yield predictions with your installer.</p></div><div class="sor-buttons"><a href="/solar-payback-calculator/" class="sor-action">Calculate solar payback ↗</a><a href="/solar/compare-quotes/" class="sor-action sor-action-secondary">Compare solar quotes ↗</a></div></section>
-  <section aria-label="How to read solar panel compass bearings"><h2>How solar panel direction works</h2><p class="sor-disclosure">The compass uses degrees clockwise from north: 0° is north, 90° east, 180° south and 270° west. The chosen orientation feeds into the on-page generation estimate and can be transferred to your solar project brief. For two roof faces, calculate each separately with its own kWp and add the generation estimates. An east-west layout can spread electricity production across the morning and afternoon even where total annual yield is below due south. Read our <a href="/wealth/east-west-facing-solar-panels-ireland/">east-versus-west Irish solar guide</a> for a deeper explanation.</p></section>
+  <section aria-label="How to read solar panel compass bearings"><h2>How solar panel direction works</h2><p class="sor-disclosure">The compass uses degrees clockwise from north: 0° is north, 90° east, 180° south and 270° west. The chosen orientation feeds into the on-page generation estimate for use in your own research. For two roof faces, calculate each separately with its own kWp and add the generation estimates. An east-west layout can spread electricity production across the morning and afternoon even where total annual yield is below due south. Read our <a href="/wealth/east-west-facing-solar-panels-ireland/">east-versus-west Irish solar guide</a> for a deeper explanation.</p></section>
 </div>

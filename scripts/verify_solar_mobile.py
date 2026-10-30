@@ -190,7 +190,7 @@ def main() -> None:
                                     "/solar/grants/": "[data-sg-total]",
                                     "/solar/costs/": "[data-ss-size]",
                                     "/solar/installers/": "[data-sol-check-count]",
-                                    "/solar/get-quotes/": "[data-sb-output]",
+                                    "/solar/get-quotes/": ".sol-hero h1",
                                     "/solar/batteries/": "[data-bat-out=annual]",
                                     "/solar/export-rates/": "[data-ex-out=difference]",
                                     "/solar/equipment/": "[data-eq-out=kwp]",
@@ -202,62 +202,10 @@ def main() -> None:
                                         if not tool_result or tool_result.strip() == "—":
                                             failures.append(f"{width}px {path}: calculator did not populate")
                                     if path == "/solar/get-quotes/":
-                                        profile = page.locator("[data-solar-project]")
-                                        # One submission path: prevent the old hidden installer form returning.
-                                        if page.locator("form[data-sp-private-pilot-form]").count() != 1 or page.locator("[data-sp-live-request], [data-sp-quote-form]").count() != 0:
-                                            failures.append(f"{width}px {path}: duplicate homeowner submission form")
-                                        if not page.locator("[data-sp-private-pilot-form]").is_visible():
-                                            failures.append(f"{width}px {path}: secure homeowner submission is not visible")
-                                        if not page.locator("[data-sp-private-pilot-submit]").is_disabled():
-                                            failures.append(f"{width}px {path}: submission is enabled without consent")
-                                        page.locator("[data-sp-private-pilot-consent]").check()
-                                        if page.locator("[data-sp-private-pilot-submit]").is_disabled():
-                                            failures.append(f"{width}px {path}: consent did not enable submission")
-                                        page.locator("[data-sp-private-pilot-consent]").uncheck()
-                                        if profile.count() != 1:
-                                            failures.append(f"{width}px {path}: homeowner project form missing")
-                                        if page.locator('[data-sp="county"]').count() != 1 or page.locator('[data-sp="email"]').count() != 1:
-                                            failures.append(f"{width}px {path}: required homeowner location or contact fields missing")
-                                        if page.locator("[data-orientation-embedded]").count()!=1:
-                                            failures.append(f"{width}px {path}: inline 360 compass missing")
-                                        if page.locator(".sol-project-photo-guide").count()!=0 or page.locator('[data-sp="photoRoof"]').count()!=0:
-                                            failures.append(f"{width}px {path}: removed photo section still present")
-                                        page.locator('[data-sp="area"]').fill("Kells")
-                                        compass = page.locator('[data-orientation-embedded]')
-                                        compass.locator('[data-or-preset="225"]').click()
-                                        if "225°" not in page.locator("[data-sb-output]").input_value():
-                                            failures.append(f"{width}px {path}: primary compass direction not copied into project brief")
-                                        page.locator('[data-sp="faces"]').select_option("2")
-                                        face_buttons = page.locator('[data-sp-face-switch]')
-                                        if not face_buttons.is_visible():
-                                            failures.append(f"{width}px {path}: dual roof selector hidden")
-                                        page.locator('[data-sp-face-button="2"]').click()
-                                        compass.locator('[data-or-preset="90"]').click()
-                                        combined = page.locator("[data-sb-output]").input_value()
-                                        if "Primary direction (clockwise from north): 225°" not in combined or "Second direction: 90°" not in combined:
-                                            failures.append(f"{width}px {path}: two independent roof faces not captured")
-                                        page.locator('[data-sp-face-button="1"]').click()
-                                        if compass.locator('[data-or="angle"]').inner_text() != "225°":
-                                            failures.append(f"{width}px {path}: first roof angle not restored")
-                                        chart = compass.locator('[data-or="chart"]')
-                                        if not chart.is_visible() or "kWh" not in compass.locator('[data-or="chart-amount"]').inner_text():
-                                            failures.append(f"{width}px {path}: embedded monthly chart missing or not calculated")
-                                        else:
-                                            painted = chart.evaluate("""el => {
-                                                const bars=[...el.querySelectorAll('[data-sor-month]')];
-                                                return bars.length===12 && bars.every(b => {
-                                                    const fill=b.querySelector('.sor-canvas-fill');
-                                                    if(!fill)return false;
-                                                    const rect=fill.getBoundingClientRect();
-                                                    return rect.width>=3 && rect.height>=3;
-                                                });
-                                            }""")
-                                            if not painted:
-                                                failures.append(f"{width}px {path}: embedded monthly bars are blank")
-                                        page.locator('[data-sp="faces"]').select_option("1")
-                                        output = page.locator("[data-sb-output]").input_value()
-                                        if "SOLAR INSTALLATION QUOTE REQUEST" not in output:
-                                            failures.append(f"{width}px {path}: quote request generator did not populate output")
+                                        if "paused" not in page.locator(selector).inner_text():
+                                            failures.append(f"{width}px {path}: pause notice missing")
+                                        if page.locator("[data-sp-private-pilot-form], [data-sp-quote-form]").count():
+                                            failures.append(f"{width}px {path}: homeowner form still present")
                     finally:
                         page.close()
                         context.close()

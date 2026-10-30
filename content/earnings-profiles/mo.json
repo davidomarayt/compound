@@ -2,33 +2,33 @@
   "cik": 764180,
   "company": "Altria",
   "latest": {
-    "accession": "0000764180-26-000094",
-    "filed": "2026-07-30",
+    "accession": "0000764180-26-000114",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.37,
+        "current": 1.51,
         "prior_year": 1.41,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 2298000000,
-        "prior_year": 2378000000,
+        "current": 2518000000,
+        "prior_year": 2375000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 6111000000,
-        "prior_year": 6102000000,
+        "current": 6132000000,
+        "prior_year": 6072000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/764180/000076418026000094/mo-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/764180/000076418026000114/mo-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/764180/000076418026000094/mo-20260630.htm"
+    },
+    {
+      "accession": "0000764180-26-000114",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.51,
+          "prior_year": 1.41,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2518000000,
+          "prior_year": 2375000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6132000000,
+          "prior_year": 6072000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/764180/000076418026000114/mo-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "MO",
-  "updated": "2026-10-15"
+  "updated": "2026-10-29"
 }

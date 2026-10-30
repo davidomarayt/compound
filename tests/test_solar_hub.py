@@ -39,7 +39,7 @@ def test_solar_canonical_routes_are_indexable_and_interlinked(settings):
     assert len(urls) == 9
     hub = (settings.public_dir / "solar" / "index.html").read_text(encoding="utf-8")
     for url in SOLAR_PAGES.values():
-        if url != "/solar/":
+        if url not in ("/solar/", "/solar/get-quotes/"):
             assert f'href="{url}"' in hub
     assert '/solar-payback-calculator/' in hub
     assert '/solar-ev-battery-optimiser/' in hub
@@ -59,8 +59,8 @@ def test_solar_installer_conversion_is_private():
     js = (ROOT / "compound/site/static/solar-hub.js").read_text(encoding="utf-8")
     assert installer.count('data-sol-check>') == 8
     assert 'data-sol-check-progress' in installer
-    assert 'There is no live paid referral marketplace' in installer
-    assert 'href="/solar/for-installers/"' in installer
+    assert 'exclusive county sponsorships' not in installer
+    assert 'href="/solar/for-installers/"' not in installer
     assert 'data-sq-print' in comparison
     assert "compound_analytics_consent" in js and "==='granted'" in js
     for event in ("quote_comparison_used", "quote_brief_copied", "seai_register_opened", "installer_checklist_completed"):
@@ -164,82 +164,24 @@ def test_tariff_result_cards_are_readable_on_mobile():
     assert 'unreadable result card' in audit
 
 
-def test_solar_quote_project_brief_is_private_and_comprehensive():
-    page = (ROOT / "content/pages/solar-get-quotes.md").read_text(encoding="utf-8")
-    js = (ROOT / "compound/site/static/solar-project.js").read_text(encoding="utf-8")
-    template = (ROOT / "compound/site/templates/page.html").read_text(encoding="utf-8")
-    compass = (ROOT / "compound/site/static/solar-orientation.js").read_text(encoding="utf-8")
-    assert 'data-solar-project' in page and 'data-solar-brief' in page
-    assert 'data-sb-output' in page and 'data-sb-copy' in page
-    for field in ("county", "role", "building", "timing", "azimuth", "pitch", "faces",
-                  "shade", "roofCondition", "material", "demand", "phase", "area", "notes",
-                  "kwp", "battery", "grant", "installerCount", "email", "phone"):
-        assert f'data-sp="{field}"' in page
-    # Project answers remain local unless the homeowner explicitly submits.
-    # Homeowner intake is active but installer introductions and payments remain disabled.
-    assert 'data-solar-pilot-active="true"' in page
-    assert 'data-solar-leads-active="false"' in page
-    assert 'data-sp-private-pilot-form' in page
-    assert 'data-sp-private-pilot-consent' in page
-    assert 'data-sp-private-pilot-submit' in page
-    assert 'Your details remain private to Compound unless you separately agree' in page
-    # The original hidden live-request placeholder was retired when homeowner intake opened.
-    assert 'data-sp-private-pilot-form' in page
-    assert 'solar-project.css?v=3' in template and 'solar-project.js?v=3' in template
-    assert "sessionStorage.getItem('compound_solar_project_compass_v1')" in js
-    assert "sessionStorage.setItem('compound_solar_project_compass_v1'" in compass
-    # No remote submission or local persistence of contact data.
-    assert "fetch(" not in js and "localStorage.setItem" not in js
-    assert '<form data-sp-private-pilot-form' in page
-    # Only one homeowner submission form should exist in the published page.
-    assert page.count('<form ') == 1
-    assert 'data-sp-live-request' not in page
-    assert 'data-sp-quote-form' not in page
-    assert 'data-sp-quote-consent' not in page
-    assert '"solar-get-quotes"' in (ROOT / "compound/site/build.py").read_text(encoding="utf-8")
-    assert '/solar/roof-direction/' in page and '/solar/compare-quotes/' in page
+def test_paused_matching_has_no_collection_forms(settings):
+    for slug in ('solar-get-quotes', 'solar-for-installers'):
+        copyfile(ROOT / 'content/pages' / f'{slug}.md', settings.content_dir / 'pages' / f'{slug}.md')
+    build_site(settings)
+    for route in ('get-quotes', 'for-installers'):
+        html = (settings.public_dir / 'solar' / route / 'index.html').read_text()
+        assert 'paused' in html
+        assert 'data-sp-private-pilot-form' not in html
+        assert 'data-solar-sponsor-form' not in html
+        assert 'solar-private-pilot.js' not in html
+        assert 'solar-sponsors.js' not in html
+        assert 'formsubmit.co' not in html
+        assert '/solar-payback-calculator/' in html
 
 
-def test_solar_project_uses_inline_compass_no_photograph_request():
-    page = (ROOT / "content/pages/solar-get-quotes.md").read_text(encoding="utf-8")
-    js = (ROOT / "compound/site/static/solar-project.js").read_text(encoding="utf-8")
-    compass = (ROOT / "compound/site/static/solar-orientation.js").read_text(encoding="utf-8")
-    layout = (ROOT / "compound/site/templates/page.html").read_text(encoding="utf-8")
-    hub = (ROOT / "compound/site/static/solar-hub.js").read_text(encoding="utf-8")
-    for attr in ('data-orientation-embedded', 'data-or="dial"', 'data-or="chart"',
-                 'data-or="total"', 'data-or="pitch"', 'data-or="size"',
-                 'data-sp-face-switch', 'data-sp-face-button="2"',
-                 'data-sp-primary-output', 'data-sp-secondary-output'):
-        assert attr in page
-    for banned in ('data-sp="photoRoof"', 'data-sp="photoShade"', 'data-sp="photoBoard"',
-                   'data-sp="photoRoute"', 'sol-project-photo-guide', 'upload photos',
-                   'external roof photographs'):
-        assert banned.lower() not in page.lower()
-    assert "AVAILABLE SUPPORTING IMAGES" not in js
-    assert "photoRoof" not in js
-    assert "compound:solar:orientation" in js and "compound:solar:load" in js
-    assert "compound:solar:orientation" in compass and "compound:solar:load" in compass
-    assert "[data-solar-brief]:not([data-solar-project])" in hub
-    assert "/static/solar-orientation.js?v=6" in layout
-    assert "/static/solar-project.js?v=3" in layout
-    assert "/static/solar-orientation.css?v=3" in layout
-    assert "/static/solar-project.css?v=3" in layout
-    # No PVGIS button or outbound navigation: project funnel stays on Compound.
-    standalone = (ROOT / "content/pages/solar-roof-direction.md").read_text(encoding="utf-8")
-    for rendered in (page, standalone):
-        assert 'data-or="request"' not in rendered
-        assert 'photovoltaic-geographic-information-system.ec.europa.eu' not in rendered
-    assert 'window.open(' not in compass
-    assert "q('request')" not in compass
-    assert "q('request').disabled" not in compass
-    assert "drawChart(profile)" in compass
-    # Twelve visible bars exist in each page even if Canvas graphics are unavailable.
-    assert "getContext(" not in compass
-    assert "new ResizeObserver" not in compass
-    for markup in (page, standalone):
-        assert markup.count('data-sor-month=') == 12
-        assert '<canvas data-or="chart"' not in markup
-    css = (ROOT / "compound/site/static/solar-orientation.css").read_text(encoding="utf-8")
-    assert ".sor-shell .sor-canvas-fill" in css
-    mobile_audit = (ROOT / "scripts/verify_solar_mobile.py").read_text(encoding="utf-8")
-    assert "embedded monthly bars are blank" in mobile_audit
+def test_standalone_roof_tool_remains_available():
+    page = (ROOT / 'content/pages/solar-roof-direction.md').read_text()
+    assert 'data-solar-orientation' in page
+    assert page.count('data-sor-month=') == 12
+    assert 'data-or="into-project"' not in page
+    assert '/solar/get-quotes/' not in page

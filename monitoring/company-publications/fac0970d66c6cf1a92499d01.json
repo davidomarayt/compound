@@ -1,0 +1,64 @@
+{
+  "fingerprint": "fac0970d66c6cf1a92499d01",
+  "state": "published",
+  "company": "SNDK",
+  "article_path": "content/wealth/sandisk-earnings-ai-storage-stock-split.md",
+  "story_thesis": "Sandisk Earnings: AI Storage Surges as an Eight-for-One Split Approaches",
+  "authorization": "Explicit manual batch publication; scheduled one-article budget does not apply.",
+  "duplicate_checks": "Read EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, content-inventory.json, related Amazon articles and open PRs. Amazon updates existing canonical profit-quality article; other four have no competing editorial.",
+  "sources": [
+    {
+      "title": "SEC-furnished earnings release, 29 October 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm"
+    },
+    {
+      "title": "Sandisk Q4 FY2026 results",
+      "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-05-sandisk-reports-fiscal-fourth-quarter-2026-financial-results"
+    }
+  ],
+  "source_sha256": "e5a3fcb730f67b726875ce48eabe5d9294909279c3f6832a44f151cb12a14f2c",
+  "claim_checks": {
+    "financial_table": [
+      2027,
+      "Q1",
+      "2026-10-02",
+      "0001628280-26-068243",
+      11031000000.0,
+      2308000000.0,
+      8101000000.0,
+      112000000.0,
+      52.6,
+      0.75
+    ],
+    "units": "USD; annual Starbucks figures are directly reported full-year, not inferred Q4",
+    "gaap_adjusted_separate": true,
+    "second_pass": "complete: release tables, reporting periods, units, GAAP/adjusted distinctions, guidance and arithmetic rechecked against source documents"
+  },
+  "image_provenance": {
+    "source": "https://commons.wikimedia.org/wiki/File:Sandisk_SSD_and_connectors.jpg",
+    "author": "MichaelOpdenacker",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "capture_date": "2018-11-21",
+    "asset": "/static/images/evergreen/sandisk-earnings-ai-storage-stock-split.jpg"
+  },
+  "gates": {
+    "build": "passed: full site build, 220 articles",
+    "rendered_hero_and_social": "passed: canonical and hero/OG/Twitter markup checked; actual generated social images visually inspected",
+    "ci": "passed: test and performance, run 40955433276; local full suite 247 passed",
+    "deployment": "passed: build and deploy jobs, run 40957027858; verify-live job passed",
+    "targeted_tests": "50 passed; all 14 profile schemas validated",
+    "live_verification": "HTTP 200, current canonical content and source filings verified; original hero hashes match; OG/Twitter images fetched and visually inspected; five article pages inspected in browser"
+  },
+  "publication_pr": "https://github.com/davidomarayt/compound/pull/64",
+  "verified_head": "3d4280fd8b3f46185c45a903eee28f1f2a56844b",
+  "merge_commit": "7b81c3e14e97cbb3c79d8baf1ccf3896bbe2dce8",
+  "live_checks": [
+    {
+      "url": "https://compound.ie/wealth/sandisk-earnings-ai-storage-stock-split/",
+      "status": 200,
+      "hero_sha256": "7e31bde31d4e833dd883157d8d8dffc878b28e9071bb8bb6192459ced058b54c",
+      "social": "https://compound.ie/static/discover/sandisk-earnings-ai-storage-stock-split-16x9.webp",
+      "social_bytes": 48210
+    }
+  ]
+}

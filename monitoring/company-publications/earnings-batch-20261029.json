@@ -1,0 +1,242 @@
+{
+  "state": "published",
+  "date": "2026-10-29",
+  "financial_rows": {
+    "syk": [
+      6520000000.0,
+      6057000000.0,
+      753000000.0,
+      859000000.0,
+      1.96,
+      2.22,
+      "2026-09-30",
+      "consolidated net earnings"
+    ],
+    "mdlz": [
+      9967000000.0,
+      9744000000.0,
+      1308000000.0,
+      746000000.0,
+      1.02,
+      0.57,
+      "2026-09-30",
+      "consolidated net earnings"
+    ],
+    "rsg": [
+      4559000000.0,
+      4212000000.0,
+      593000000.0,
+      550000000.0,
+      1.93,
+      1.76,
+      "2026-09-30",
+      "consolidated net income"
+    ],
+    "ajg": [
+      3976000000.0,
+      3365000000.0,
+      406000000.0,
+      273000000.0,
+      1.55,
+      1.04,
+      "2026-09-30",
+      "consolidated net earnings; revenue includes reimbursements"
+    ],
+    "dlr": [
+      1902418000.0,
+      1577234000.0,
+      195346000.0,
+      67812000.0,
+      0.48,
+      0.15,
+      "2026-09-30",
+      "net income attributable to Digital Realty Trust, consistent with existing profile; revenue includes promote income"
+    ],
+    "mpwr": [
+      1202409000.0,
+      737176000.0,
+      271067000.0,
+      179766000.0,
+      5.51,
+      3.74,
+      "2026-09-30",
+      "consolidated net income"
+    ],
+    "ilmn": [
+      1129000000.0,
+      1084000000.0,
+      220000000.0,
+      150000000.0,
+      1.43,
+      0.98,
+      "2026-09-27",
+      "consolidated net income"
+    ],
+    "fslr": [
+      1230936000.0,
+      1594856000.0,
+      571063000.0,
+      455943000.0,
+      5.3,
+      4.24,
+      "2026-09-30",
+      "consolidated net income"
+    ],
+    "coin": {
+      "fy": 2026,
+      "fp": "Q3",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "accession": "0001679788-26-000122",
+      "source": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000122/coin-20260930.htm",
+      "metrics": {
+        "revenue": {
+          "current": 1215582000.0,
+          "prior_year": 1868693000.0,
+          "unit": "USD",
+          "tag": "SEC 10-Q; GAAP consolidated"
+        },
+        "net_income": {
+          "current": 718697000.0,
+          "prior_year": 432552000.0,
+          "unit": "USD",
+          "tag": "SEC 10-Q; GAAP consolidated"
+        },
+        "diluted_eps": {
+          "current": 2.51,
+          "prior_year": 1.5,
+          "unit": "USD/shares",
+          "tag": "SEC 10-Q; GAAP consolidated"
+        }
+      }
+    }
+  },
+  "verification": "Read directly from SEC-furnished tables. DLR comparison is first versus fifth quarterly column, in thousands. Other tables use Q3 current/prior, not nine-month totals. GAAP EPS only. AJG includes reimbursements; DLR includes promote income; net-income basis explicitly tagged.",
+  "sources": {
+    "syk": "https://www.sec.gov/Archives/edgar/data/310764/000031076426000059/sykex991earningsq32026.htm",
+    "mdlz": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026068233/mdlzearningsreleasecontent.htm",
+    "rsg": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000326/exhibit991q32026.htm",
+    "ajg": "https://www.sec.gov/Archives/edgar/data/354190/000162828026068263/a3rdquarter2026earningsrel.htm",
+    "dlr": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926120212/dlr-ex99d1.htm",
+    "mpwr": "https://www.sec.gov/Archives/edgar/data/1280452/000162828026068202/mpwr-20260930xexx991.htm",
+    "ilmn": "https://www.sec.gov/Archives/edgar/data/1110803/000111080326000202/q326earningsrelease.htm",
+    "fslr": "https://www.sec.gov/Archives/edgar/data/1274494/000127449426000211/ex991pressreleaseq3-2026.htm",
+    "coin": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000122/coin-20260930.htm"
+  },
+  "publication_pr": "https://github.com/davidomarayt/compound/pull/64",
+  "verified_head": "3d4280fd8b3f46185c45a903eee28f1f2a56844b",
+  "merge_commit": "7b81c3e14e97cbb3c79d8baf1ccf3896bbe2dce8",
+  "gates": {
+    "ci": "passed: test and performance, run 40955433276; local full suite 247 passed",
+    "deployment": "passed: build and deploy jobs, run 40957027858; verify-live job passed",
+    "live_verification": "HTTP 200, current canonical content and source filings verified; original hero hashes match; OG/Twitter images fetched and visually inspected; five article pages inspected in browser"
+  },
+  "live_checks": [
+    {
+      "url": "https://compound.ie/wealth/amazon-aws-profit-investment-gains/",
+      "status": 200,
+      "hero_sha256": "68e73e6d8c085cf840ce0046a82a5c4d5fa9535db4ff6619547cd3954cc5c21e",
+      "social": "https://compound.ie/static/discover/amazon-aws-profit-investment-gains-16x9.webp",
+      "social_bytes": 117184
+    },
+    {
+      "url": "https://compound.ie/wealth/intel-earnings-data-centre-growth-guidance/",
+      "status": 200,
+      "hero_sha256": "ea85765589f69a19746fe8df4bbbccd5a7e456c3da232da492e782f2e254cc89",
+      "social": "https://compound.ie/static/discover/intel-earnings-data-centre-growth-guidance-16x9.webp",
+      "social_bytes": 101228
+    },
+    {
+      "url": "https://compound.ie/wealth/gilead-earnings-hiv-growth-acquisition-cost/",
+      "status": 200,
+      "hero_sha256": "f4d54ff84882fa3271eae46dd066c880b5a2962ffe8e6b901b6a94040b1b9cb6",
+      "social": "https://compound.ie/static/discover/gilead-earnings-hiv-growth-acquisition-cost-16x9.webp",
+      "social_bytes": 70476
+    },
+    {
+      "url": "https://compound.ie/wealth/sandisk-earnings-ai-storage-stock-split/",
+      "status": 200,
+      "hero_sha256": "7e31bde31d4e833dd883157d8d8dffc878b28e9071bb8bb6192459ced058b54c",
+      "social": "https://compound.ie/static/discover/sandisk-earnings-ai-storage-stock-split-16x9.webp",
+      "social_bytes": 48210
+    },
+    {
+      "url": "https://compound.ie/wealth/starbucks-earnings-turnaround-sales-china/",
+      "status": 200,
+      "hero_sha256": "d97ef97cd4c823b21232466c200d453866483e48b44740e0b12313de3b791bf0",
+      "social": "https://compound.ie/static/discover/starbucks-earnings-turnaround-sales-china-16x9.webp",
+      "social_bytes": 30648
+    },
+    {
+      "url": "https://compound.ie/stocks/amzn/",
+      "status": 200,
+      "latest_source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm"
+    },
+    {
+      "url": "https://compound.ie/stocks/intc/",
+      "status": 200,
+      "latest_source": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm"
+    },
+    {
+      "url": "https://compound.ie/stocks/gild/",
+      "status": 200,
+      "latest_source": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
+    },
+    {
+      "url": "https://compound.ie/stocks/sndk/",
+      "status": 200,
+      "latest_source": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm"
+    },
+    {
+      "url": "https://compound.ie/stocks/sbux/",
+      "status": 200,
+      "latest_source": "https://www.sec.gov/Archives/edgar/data/829224/000082922426000154/sbux-09272026xearningsrele.htm"
+    },
+    {
+      "url": "https://compound.ie/stocks/syk/",
+      "status": 200,
+      "latest_source": "https://www.sec.gov/Archives/edgar/data/310764/000031076426000059/sykex991earningsq32026.htm"
+    },
+    {
+      "url": "https://compound.ie/stocks/mdlz/",
+      "status": 200,
+      "latest_source": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026068233/mdlzearningsreleasecontent.htm"
+    },
+    {
+      "url": "https://compound.ie/stocks/rsg/",
+      "status": 200,
+      "latest_source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000326/exhibit991q32026.htm"
+    },
+    {
+      "url": "https://compound.ie/stocks/ajg/",
+      "status": 200,
+      "latest_source": "https://www.sec.gov/Archives/edgar/data/354190/000162828026068263/a3rdquarter2026earningsrel.htm"
+    },
+    {
+      "url": "https://compound.ie/stocks/dlr/",
+      "status": 200,
+      "latest_source": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926120212/dlr-ex99d1.htm"
+    },
+    {
+      "url": "https://compound.ie/stocks/mpwr/",
+      "status": 200,
+      "latest_source": "https://www.sec.gov/Archives/edgar/data/1280452/000162828026068202/mpwr-20260930xexx991.htm"
+    },
+    {
+      "url": "https://compound.ie/stocks/ilmn/",
+      "status": 200,
+      "latest_source": "https://www.sec.gov/Archives/edgar/data/1110803/000111080326000202/q326earningsrelease.htm"
+    },
+    {
+      "url": "https://compound.ie/stocks/fslr/",
+      "status": 200,
+      "latest_source": "https://www.sec.gov/Archives/edgar/data/1274494/000127449426000211/ex991pressreleaseq3-2026.htm"
+    },
+    {
+      "url": "https://compound.ie/stocks/coin/",
+      "status": 200,
+      "latest_source": "https://www.sec.gov/Archives/edgar/data/1679788/000167978826000122/coin-20260930.htm"
+    }
+  ]
+}

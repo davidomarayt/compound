@@ -1,0 +1,64 @@
+{
+  "fingerprint": "a190f7d65b020cbdd2948dfe",
+  "state": "published",
+  "company": "INTC",
+  "article_path": "content/wealth/intel-earnings-data-centre-growth-guidance.md",
+  "story_thesis": "Intel Earnings: Data-Centre Growth Meets a Weaker Outlook",
+  "authorization": "Explicit manual batch publication; scheduled one-article budget does not apply.",
+  "duplicate_checks": "Read EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, content-inventory.json, related Amazon articles and open PRs. Amazon updates existing canonical profit-quality article; other four have no competing editorial.",
+  "sources": [
+    {
+      "title": "SEC-furnished earnings release, 29 October 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm"
+    },
+    {
+      "title": "Intel Q2 2026 results",
+      "url": "https://www.intc.com/news-events/press-releases/detail/1776/intel-reports-second-quarter-2026-financial-results"
+    }
+  ],
+  "source_sha256": "e3caefcc216ca9ee38056bc27f8789b08f10e8272ad84db7dc48d90354f29cdc",
+  "claim_checks": {
+    "financial_table": [
+      2026,
+      "Q3",
+      "2026-09-26",
+      "0000050863-26-000188",
+      16513000000.0,
+      13653000000.0,
+      3520000000.0,
+      4270000000.0,
+      0.6,
+      0.9
+    ],
+    "units": "USD; annual Starbucks figures are directly reported full-year, not inferred Q4",
+    "gaap_adjusted_separate": true,
+    "second_pass": "complete: release tables, reporting periods, units, GAAP/adjusted distinctions, guidance and arithmetic rechecked against source documents"
+  },
+  "image_provenance": {
+    "source": "https://commons.wikimedia.org/wiki/File:Intel_Xeon_E5-1650_v3_CPU.jpg",
+    "author": "Dsimic",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "capture_date": "2014-11-29",
+    "asset": "/static/images/evergreen/intel-earnings-data-centre-growth-guidance.jpg"
+  },
+  "gates": {
+    "build": "passed: full site build, 220 articles",
+    "rendered_hero_and_social": "passed: canonical and hero/OG/Twitter markup checked; actual generated social images visually inspected",
+    "ci": "passed: test and performance, run 40955433276; local full suite 247 passed",
+    "deployment": "passed: build and deploy jobs, run 40957027858; verify-live job passed",
+    "targeted_tests": "50 passed; all 14 profile schemas validated",
+    "live_verification": "HTTP 200, current canonical content and source filings verified; original hero hashes match; OG/Twitter images fetched and visually inspected; five article pages inspected in browser"
+  },
+  "publication_pr": "https://github.com/davidomarayt/compound/pull/64",
+  "verified_head": "3d4280fd8b3f46185c45a903eee28f1f2a56844b",
+  "merge_commit": "7b81c3e14e97cbb3c79d8baf1ccf3896bbe2dce8",
+  "live_checks": [
+    {
+      "url": "https://compound.ie/wealth/intel-earnings-data-centre-growth-guidance/",
+      "status": 200,
+      "hero_sha256": "ea85765589f69a19746fe8df4bbbccd5a7e456c3da232da492e782f2e254cc89",
+      "social": "https://compound.ie/static/discover/intel-earnings-data-centre-growth-guidance-16x9.webp",
+      "social_bytes": 101228
+    }
+  ]
+}

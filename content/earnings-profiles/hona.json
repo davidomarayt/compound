@@ -1,0 +1,67 @@
+{
+  "cik": 2089271,
+  "company": "Honeywell Aerospace",
+  "latest": {
+    "accession": "0002089271-26-000032",
+    "filed": "2026-10-28",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.29,
+        "prior_year": 2.03,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 726000000,
+        "prior_year": 644000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4644000000,
+        "prior_year": 4533000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-26",
+    "source": "https://www.sec.gov/Archives/edgar/data/2089271/000208927126000032/hona-20260926.htm"
+  },
+  "periods": [
+    {
+      "accession": "0002089271-26-000032",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.29,
+          "prior_year": 2.03,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 726000000,
+          "prior_year": 644000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4644000000,
+          "prior_year": 4533000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/2089271/000208927126000032/hona-20260926.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "HONA",
+  "updated": "2026-10-29"
+}

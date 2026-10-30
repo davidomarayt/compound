@@ -10,7 +10,7 @@
 <meta name='impact-site-verification' value='ed8874b0-4836-4d6a-b0cc-42104a8a0221'>
 {% if preview is not defined or not preview %}<meta name="robots" content="max-image-preview:large">{% endif %}
 <title>{% block head_title %}{{ title }} · Compound{% endblock %}</title>
-{% block meta %}<meta name="description" content="Thoughtful guides, useful tools and timely news on health, wealth and life in Ireland.">{% endblock %}
+{% block meta %}<meta name="description" content="Independent investing research, company earnings, personal finance guides and financial tools for readers in Ireland.">{% endblock %}
 {% block head %}{% endblock %}
 {% if preview is not defined or not preview %}<script type="application/ld+json">{{ site_identity_jsonld | safe }}</script>{% endif %}
 {% if analytics.measurement_id and not preview and not is_private_installer_portal %}<script>
@@ -36,16 +36,16 @@ if(choice==='granted')window.compoundStartAnalytics();})();
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<div class="masthead-note"><span>Independent information and tools for life in Ireland</span><a href="/about/">Understand. Decide. Compound. <span aria-hidden="true">↗</span></a></div>
+<div class="masthead-note"><span>Independent investing research and personal finance for Ireland</span><a href="/about/">Understand. Decide. Compound. <span aria-hidden="true">↗</span></a></div>
 <header class="site-header">
   <a class="wordmark" href="/" aria-label="Compound home">compound<span class="brand-dot">.</span></a>
   <nav class="pillar-nav" aria-label="Main navigation">
-    <a href="/tools/" class="nav-wealth" {% if tools_page is defined and tools_page %}aria-current="page"{% endif %}>Tools</a>
-    <a href="/health/" class="nav-health" {% if (pillar is defined and pillar == 'health') or (article is defined and article.pillar == 'health' and 'news' not in article.tags) %}aria-current="page"{% endif %}>Health</a>
-    <a href="/wealth/" class="nav-wealth" {% if ((pillar is defined and pillar == 'wealth') or (article is defined and article.pillar == 'wealth' and 'news' not in article.tags)) and (pia_page is not defined or not pia_page) %}aria-current="page"{% endif %}>Wealth</a>
+    <a href="/stocks/" class="nav-wealth">Stocks</a>
+    <a href="/wealth/earnings/" class="nav-wealth">Earnings</a>
+    <a href="/wealth/" class="nav-wealth">Finance</a>
     <a href="/pia/" class="nav-wealth" {% if pia_page is defined and pia_page %}aria-current="page"{% endif %}>PIA</a>
-    <a href="/life/" class="nav-life" {% if (page is defined and page.slug == 'life') or (article is defined and article.pillar == 'happiness' and 'news' not in article.tags) %}aria-current="page"{% endif %}>Life</a>
-    <a href="/news/" class="nav-news" {% if (news is defined and news) or (article is defined and 'news' in article.tags) %}aria-current="page"{% endif %}>News</a>
+    <a href="/tools/" class="nav-wealth" {% if tools_page is defined and tools_page %}aria-current="page"{% endif %}>Tools</a>
+    <a href="/news/" class="nav-news" {% if news is defined and news %}aria-current="page"{% endif %}>News</a>
   </nav>
   <a class="search-link" href="/search/" aria-label="Search Compound"><span>Explore the journal</span><span aria-hidden="true">⌕</span></a>
 </header>
@@ -53,7 +53,7 @@ if(choice==='granted')window.compoundStartAnalytics();})();
 {% block content %}{% endblock %}
 </main>
 <footer class="site-footer">
- <div class="footer-top"><div><a class="wordmark" href="/">compound<span class="brand-dot">.</span></a><p>Good things build on each other.</p></div><div class="footer-mission">A little more clarity.<br>A little more possibility.<br>A life that feels like yours.</div><nav aria-label="Footer navigation"><a href="/about/">Our approach</a><a href="/contact/">Get in touch</a><a href="/search/">Explore the journal</a><a href="/news/">Latest news</a><a href="/tools/">Tools & calculators</a><a href="/feed.xml">Follow via RSS ↗</a></nav></div>
+ <div class="footer-top"><div><a class="wordmark" href="/">compound<span class="brand-dot">.</span></a><p>Good things build on each other.</p></div><div class="footer-mission">Understand businesses.<br>Make informed decisions.<br>Build wealth over time.</div><nav aria-label="Footer navigation"><a href="/about/">Our approach</a><a href="/contact/">Get in touch</a><a href="/search/">Explore the journal</a><a href="/news/">Latest news</a><a href="/tools/">Tools & calculators</a><a href="/health/">Health guides</a><a href="/life/">Life guides</a><a href="/feed.xml">Follow via RSS ↗</a></nav></div>
  <div class="footer-bottom"><span>© {{ year }} Compound · Made for life in Ireland</span><nav aria-label="Policies"><a href="/editorial-policy/">Editorial policy</a><a href="/privacy/">Privacy</a><a href="/cookies/">Cookies</a><a href="/disclaimer/">Disclaimer</a>{% if analytics.measurement_id and not preview and not is_private_installer_portal %}<a href="#" data-privacy-settings>Analytics settings</a>{% endif %}{% if ads_configured and not preview and not is_private_installer_portal and (ads_allowed is not defined or ads_allowed) %}<a href="#" onclick="window.googlefc&&googlefc.callbackQueue.push({CONSENT_DATA_READY:function(){googlefc.showRevocationMessage()}});return false;">Privacy settings</a>{% endif %}</nav></div>
  <p class="footer-disclaimer">For information, not individual medical, financial or tax advice. Check the sources and speak to a qualified professional about your circumstances.</p>
 </footer>

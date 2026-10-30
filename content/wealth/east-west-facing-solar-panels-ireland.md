@@ -175,6 +175,6 @@ A reputable installer should give you a roof-specific yield estimate—not merel
 - **If household consumption peaks before or after noon**, the generation profile matters alongside the yearly kWh total.
 - **If you are comparing different installation prices**, judge the net installed cost and expected value of the electricity—not just the panel count.
 
-The right next step is a **roof-specific estimate and two comparable quotes**. Start with the [Compound Solar Hub](/solar/), see [How Many Solar Panels Do You Need?](/wealth/how-many-solar-panels-do-i-need-ireland/), and use our [installer quote checklist](/solar/get-quotes/) before you commit.
+The right next step is a **roof-specific estimate and two comparable quotes**. Start with the [Compound Solar Hub](/solar/), see [How Many Solar Panels Do You Need?](/wealth/how-many-solar-panels-do-i-need-ireland/), and use our [installer checklist](/solar/installers/) before you commit.
 
 *Method and sources: The irradiation table is reproduced and normalised from Table 8 of the SEAI-hosted Stoneybatter Energy Master Plan. PVGIS methodological descriptions are from the European Commission's Joint Research Centre. Financial examples are clearly labelled assumptions, not current market price quotes or household savings guarantees. This guide was reviewed 13 October 2026.*

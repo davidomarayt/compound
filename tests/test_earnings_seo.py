@@ -101,9 +101,9 @@ def test_oracle_profile_uses_sec_verified_fy2027_label():
 def test_same_calendar_and_fiscal_year_does_not_repeat_year_in_title():
     report = load_company_report(ROOT / "content", "AMZN")
     output = build_earnings_seo({"symbol": "AMZN"}, report)
-    assert "Q2 FY2026 Earnings" in output["title"]
-    assert "(June 2026)" not in output["title"]
-    assert "Quarter ended 30 June 2026" in output["period_subtitle"]
+    assert "Q3 FY2026 Earnings" in output["title"]
+    assert "(September 2026)" not in output["title"]
+    assert "Quarter ended 30 September 2026" in output["period_subtitle"]
 
 
 def test_all_twenty_have_unique_filing_grounded_investor_lenses_and_comparison_bars():

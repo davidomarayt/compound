@@ -1,14 +1,14 @@
 {% if email_form_action %}
 <section class="signup {{ variant or '' }}">
   <h2>{{ heading or 'Get the next piece in your inbox' }}</h2>
-  <p>{{ blurb or 'One email when something worth knowing lands: Irish grants, tax and money first, with health and happiness pieces alongside. No filler.' }}</p>
+  <p>{{ blurb or 'Investing insights, company research and practical Irish money guides. No filler.' }}</p>
   <form method="post" action="{{ email_form_action }}" class="signup-form">
     <label class="sr-only" for="email-{{ variant or 'x' }}">Email address</label>
     <input id="email-{{ variant or 'x' }}" type="email" name="email_address" placeholder="you@example.ie" required autocomplete="email">
     <button type="submit">Subscribe</button>
     <label class="consent">
       <input type="checkbox" name="consent" value="yes" required>
-      <span>I agree to receive Compound emails covering all three pillars (Health, Wealth, Happiness). Unsubscribe any time. See the <a href="/privacy/">privacy policy</a>.</span>
+      <span>I agree to receive Compound emails about investing and personal finance. Unsubscribe any time. See the <a href="/privacy/">privacy policy</a>.</span>
     </label>
   </form>
 </section>

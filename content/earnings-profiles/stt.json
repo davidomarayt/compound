@@ -2,33 +2,33 @@
   "cik": 93751,
   "company": "State Street Corporation",
   "latest": {
-    "accession": "0000093751-26-000592",
-    "filed": "2026-10-14",
-    "form": "8-K",
+    "accession": "0000093751-26-000600",
+    "filed": "2026-10-28",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 3.69,
         "prior_year": 2.78,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1090000000.0,
-        "prior_year": 861000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 1090000000,
+        "prior_year": 861000000,
+        "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4004000000.0,
-        "prior_year": 3545000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 4004000000,
+        "prior_year": 3545000000,
+        "tag": "Revenues",
         "unit": "USD"
       }
     },
     "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/93751/000009375126000592/a3q26earningspressrelease.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/93751/000009375126000600/stt-20260930.htm"
   },
   "periods": [
     {
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/93751/000009375126000397/stt-20260630.htm"
     },
     {
-      "accession": "0000093751-26-000592",
-      "filed": "2026-10-14",
-      "form": "8-K",
+      "accession": "0000093751-26-000600",
+      "filed": "2026-10-28",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 3.69,
           "prior_year": 2.78,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
-          "current": 1090000000.0,
-          "prior_year": 861000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 1090000000,
+          "prior_year": 861000000,
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
-          "current": 4004000000.0,
-          "prior_year": 3545000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 4004000000,
+          "prior_year": 3545000000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
       "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/93751/000009375126000592/a3q26earningspressrelease.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/93751/000009375126000600/stt-20260930.htm"
     }
   ],
-  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "STT",
-  "updated": "2026-10-26"
+  "updated": "2026-10-30"
 }

@@ -1,0 +1,60 @@
+{
+  "fingerprint": "e18336759d8ab0a8fa09c337",
+  "state": "published",
+  "company": "GILD",
+  "article_path": "content/wealth/gilead-earnings-hiv-growth-acquisition-cost.md",
+  "story_thesis": "Gilead Earnings: Strong HIV Sales, but Acquisitions Reshape the Profit Story",
+  "authorization": "Explicit manual batch publication; scheduled one-article budget does not apply.",
+  "duplicate_checks": "Read EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, content-inventory.json, related Amazon articles and open PRs. Amazon updates existing canonical profit-quality article; other four have no competing editorial.",
+  "sources": [
+    {
+      "title": "SEC-furnished earnings release, 29 October 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/exhibit991earningspressrel.htm"
+    }
+  ],
+  "source_sha256": "a51ad08d4d4d06c7bb303ceb072d9d93ab152008e42f3ee07dbe02b37f67134a",
+  "claim_checks": {
+    "financial_table": [
+      2026,
+      "Q3",
+      "2026-09-30",
+      "0000882095-26-000037",
+      8300000000.0,
+      7769000000.0,
+      2429000000.0,
+      3052000000.0,
+      1.94,
+      2.43
+    ],
+    "units": "USD; annual Starbucks figures are directly reported full-year, not inferred Q4",
+    "gaap_adjusted_separate": true,
+    "second_pass": "complete: release tables, reporting periods, units, GAAP/adjusted distinctions, guidance and arithmetic rechecked against source documents"
+  },
+  "image_provenance": {
+    "source": "https://commons.wikimedia.org/wiki/File:Truvada.JPG",
+    "author": "Jeffrey Beall",
+    "license": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "capture_date": "2012-05-26",
+    "asset": "/static/images/evergreen/gilead-earnings-hiv-growth-acquisition-cost.jpg"
+  },
+  "gates": {
+    "build": "passed: full site build, 220 articles",
+    "rendered_hero_and_social": "passed: canonical and hero/OG/Twitter markup checked; actual generated social images visually inspected",
+    "ci": "passed: test and performance, run 40955433276; local full suite 247 passed",
+    "deployment": "passed: build and deploy jobs, run 40957027858; verify-live job passed",
+    "targeted_tests": "50 passed; all 14 profile schemas validated",
+    "live_verification": "HTTP 200, current canonical content and source filings verified; original hero hashes match; OG/Twitter images fetched and visually inspected; five article pages inspected in browser"
+  },
+  "publication_pr": "https://github.com/davidomarayt/compound/pull/64",
+  "verified_head": "3d4280fd8b3f46185c45a903eee28f1f2a56844b",
+  "merge_commit": "7b81c3e14e97cbb3c79d8baf1ccf3896bbe2dce8",
+  "live_checks": [
+    {
+      "url": "https://compound.ie/wealth/gilead-earnings-hiv-growth-acquisition-cost/",
+      "status": 200,
+      "hero_sha256": "f4d54ff84882fa3271eae46dd066c880b5a2962ffe8e6b901b6a94040b1b9cb6",
+      "social": "https://compound.ie/static/discover/gilead-earnings-hiv-growth-acquisition-cost-16x9.webp",
+      "social_bytes": 70476
+    }
+  ]
+}

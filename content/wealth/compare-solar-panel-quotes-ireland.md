@@ -232,7 +232,7 @@ None of these alone proves a business is dishonest. They are reasons to request 
 <p class="cs-kicker">Next step · Compound Solar Hub</p>
 <h3>Compare your solar quote before committing</h3>
 <p>Already have offers? Use the free quote comparison and payback tools. Still collecting prices? Prepare a more consistent project brief so installers can assess the same job rather than send incompatible estimates.</p>
-<p><a href="/solar/compare-quotes/"><strong>Compare existing quotes →</strong></a> &nbsp; <a href="/solar/get-quotes/"><strong>Prepare your installer enquiry →</strong></a></p>
+<p><a href="/solar/compare-quotes/"><strong>Compare existing quotes →</strong></a> &nbsp; <a href="/solar/installers/">Check an installer before requesting quotes →</a></p>
 <p><small>Compound may earn fees from participating installers or commercial partners. Editorial figures and educational comparisons are not provider rankings or endorsements. Installer availability and the handling of enquiries vary by location.</small></p>
 </div>
 

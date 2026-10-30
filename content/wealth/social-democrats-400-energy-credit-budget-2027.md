@@ -117,7 +117,7 @@ Yes, but every option involves different costs and trade-offs. Checking tariffs 
 <div class="ew27-next-grid">
 <a href="/electricity-cost-calculator/" data-energy-funnel="electricity_tool"><b>01</b><strong>Electricity cost</strong><span>Estimate appliance use →</span></a>
 <a href="/solar-payback-calculator/" data-energy-funnel="solar_payback"><b>02</b><strong>Solar payback</strong><span>Check the economics →</span></a>
-<a href="/solar/get-quotes/" data-energy-funnel="quote_brief"><b>03</b><strong>Installer quote brief</strong><span>Prepare comparable quotes →</span></a>
+<a href="/solar/installers/" data-energy-funnel="installer_checklist"><b>03</b><strong>Installer checklist</strong><span>Check a contractor before you commit →</span></a>
 </div>
 <p class="ew27-fine">These are free, independent tools; no installer is guaranteed an enquiry and Compound has not launched a paid lead marketplace.</p>
 </div>

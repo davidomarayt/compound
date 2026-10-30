@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-10-28",
+  "snapshot_date": "2026-10-30",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -145,6 +145,24 @@
         "status": "published"
       },
       {
+        "title": "Amazon Earnings: AWS Accelerates, but the Cash Bill Keeps Growing",
+        "url": "/wealth/amazon-aws-profit-investment-gains/",
+        "source": "content/wealth/amazon-aws-profit-investment-gains.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "amazon-aws-profit-investment-gains",
+        "date": "2026-10-18",
+        "reviewed": "2026-10-29",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "mag7-research",
+          "amzn"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Amazon Stock Guide: AWS, Retail, Advertising and Cash Flow",
         "url": "/wealth/amazon-aws-retail-economics-2026/",
         "source": "content/wealth/amazon-aws-retail-economics-2026.md",
@@ -160,24 +178,6 @@
           "amzn",
           "evergreen",
           "investing-guide"
-        ],
-        "status": "published"
-      },
-      {
-        "title": "Amazon's profit surge: separate AWS earnings from investment gains",
-        "url": "/wealth/amazon-aws-profit-investment-gains/",
-        "source": "content/wealth/amazon-aws-profit-investment-gains.md",
-        "kind": "Editorial article / guide",
-        "category": "Wealth",
-        "slug": "amazon-aws-profit-investment-gains",
-        "date": "2026-10-18",
-        "reviewed": "2026-10-18",
-        "tags": [
-          "wealth",
-          "stocks",
-          "company-research",
-          "mag7-research",
-          "amzn"
         ],
         "status": "published"
       },
@@ -346,6 +346,24 @@
           "debt",
           "time horizon",
           "wealth"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Binance Investigates Suspected Hack as Billions in Crypto Are Frozen",
+        "url": "/news/binance-hack-october-2026/",
+        "source": "content/wealth/binance-hack-october-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "binance-hack-october-2026",
+        "date": "2026-10-29",
+        "reviewed": "2026-10-29",
+        "tags": [
+          "news",
+          "binance",
+          "cryptocurrency",
+          "investing",
+          "security"
         ],
         "status": "published"
       },
@@ -734,6 +752,26 @@
         "status": "published"
       },
       {
+        "title": "ECB Holds Rates as Lagarde Announces Departure: What It Means for Your Money",
+        "url": "/news/ecb-rates-lagarde-departure-ireland-october-2026/",
+        "source": "content/wealth/ecb-rates-lagarde-departure-ireland-october-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "ecb-rates-lagarde-departure-ireland-october-2026",
+        "date": "2026-10-29",
+        "reviewed": "2026-10-29",
+        "tags": [
+          "news",
+          "ecb",
+          "interest-rates",
+          "mortgages",
+          "savings",
+          "investing",
+          "ireland"
+        ],
+        "status": "published"
+      },
+      {
         "title": "El Niño could be one of the strongest on record — what it actually means for Ireland",
         "url": "/news/el-nino-2026-ireland-weather-food-transport/",
         "source": "content/happiness/el-nino-2026-ireland-weather-food-transport.md",
@@ -984,6 +1022,23 @@
         "status": "published"
       },
       {
+        "title": "Gilead Earnings: Strong HIV Sales, but Acquisitions Reshape the Profit Story",
+        "url": "/wealth/gilead-earnings-hiv-growth-acquisition-cost/",
+        "source": "content/wealth/gilead-earnings-hiv-growth-acquisition-cost.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "gilead-earnings-hiv-growth-acquisition-cost",
+        "date": "2026-10-29",
+        "reviewed": "2026-10-29",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "gild"
+        ],
+        "status": "published"
+      },
+      {
         "title": "GLP-1 side effects: what is common, and when to get help",
         "url": "/health/glp1-side-effects-when-to-seek-help/",
         "source": "content/health/glp1-side-effects-when-to-seek-help.md",
@@ -1041,6 +1096,26 @@
           "ev",
           "motoring",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "GTA VI and TTWO: The Case for One of Entertainment's Biggest Launches",
+        "url": "/wealth/ttwo-gta-6-entertainment-launch-revenue/",
+        "source": "content/wealth/ttwo-gta-6-entertainment-launch-revenue.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "ttwo-gta-6-entertainment-launch-revenue",
+        "date": "2026-10-29",
+        "reviewed": "2026-10-29",
+        "tags": [
+          "stocks",
+          "ttwo",
+          "take-two",
+          "gta-6",
+          "gaming",
+          "company-research",
+          "investing"
         ],
         "status": "published"
       },
@@ -1776,6 +1851,23 @@
         "status": "published"
       },
       {
+        "title": "Intel Earnings: Data-Centre Growth Meets a Weaker Outlook",
+        "url": "/wealth/intel-earnings-data-centre-growth-guidance/",
+        "source": "content/wealth/intel-earnings-data-centre-growth-guidance.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "intel-earnings-data-centre-growth-guidance",
+        "date": "2026-10-29",
+        "reviewed": "2026-10-29",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "intc"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Intuitive Surgical Earnings: Robot Growth Meets a $450m Legal Charge",
         "url": "/wealth/intuitive-surgical-earnings-growth-legal-charge/",
         "source": "content/wealth/intuitive-surgical-earnings-growth-legal-charge.md",
@@ -2338,6 +2430,26 @@
           "company-research",
           "mag7-research",
           "msft"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Microsoft's Layoff Wave: What the 60,000-Employee Exit Offer Really Means",
+        "url": "/news/microsoft-layoffs-voluntary-exit-offer-2026/",
+        "source": "content/wealth/microsoft-layoffs-voluntary-exit-offer-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "microsoft-layoffs-voluntary-exit-offer-2026",
+        "date": "2026-10-29",
+        "reviewed": "2026-10-29",
+        "tags": [
+          "news",
+          "microsoft",
+          "msft",
+          "layoffs",
+          "artificial-intelligence",
+          "investing",
+          "ireland"
         ],
         "status": "published"
       },
@@ -3326,6 +3438,23 @@
         "status": "published"
       },
       {
+        "title": "Sandisk Earnings: AI Storage Surges as an Eight-for-One Split Approaches",
+        "url": "/wealth/sandisk-earnings-ai-storage-stock-split/",
+        "source": "content/wealth/sandisk-earnings-ai-storage-stock-split.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "sandisk-earnings-ai-storage-stock-split",
+        "date": "2026-10-29",
+        "reviewed": "2026-10-29",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "sndk"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Saving for your child in Ireland: tax, ownership and what happens at 18",
         "url": "/wealth/saving-for-your-child-ireland/",
         "source": "content/wealth/saving-for-your-child-ireland.md",
@@ -3560,6 +3689,23 @@
           "calories",
           "alcohol-units",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Starbucks Earnings: The Turnaround Looks Better Than the Revenue Headline",
+        "url": "/wealth/starbucks-earnings-turnaround-sales-china/",
+        "source": "content/wealth/starbucks-earnings-turnaround-sales-china.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "starbucks-earnings-turnaround-sales-china",
+        "date": "2026-10-29",
+        "reviewed": "2026-10-29",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "sbux"
         ],
         "status": "published"
       },
@@ -5392,6 +5538,12 @@
         "kind": "Information / policy page"
       },
       {
+        "title": "Installer partnerships are paused",
+        "url": "/solar-for-installers/",
+        "source": "content/pages/solar-for-installers.md",
+        "kind": "Information / policy page"
+      },
+      {
         "title": "Installer Portal | Compound Solar",
         "url": "/solar-installer-portal/",
         "source": "content/pages/solar-installer-portal.md",
@@ -5422,15 +5574,21 @@
         "kind": "Information / policy page"
       },
       {
+        "title": "Solar Costs & Payback: Irish Guides and Calculators",
+        "url": "/solar/",
+        "source": "content/pages/solar.md",
+        "kind": "Information / policy page"
+      },
+      {
         "title": "Solar Export Rates Ireland: Compare Electricity Tariffs",
         "url": "/solar-export-rates/",
         "source": "content/pages/solar-export-rates.md",
         "kind": "Information / policy page"
       },
       {
-        "title": "Solar Installer Partnerships Ireland | Exclusive County Sponsorship | Compound",
-        "url": "/solar-for-installers/",
-        "source": "content/pages/solar-for-installers.md",
+        "title": "Solar matching is paused",
+        "url": "/solar-get-quotes/",
+        "source": "content/pages/solar-get-quotes.md",
         "kind": "Information / policy page"
       },
       {
@@ -5461,18 +5619,6 @@
         "title": "Solar Quote Comparison Calculator Ireland",
         "url": "/solar-compare-quotes/",
         "source": "content/pages/solar-compare-quotes.md",
-        "kind": "Information / policy page"
-      },
-      {
-        "title": "Solar Quote Request Ireland: Build Your Installation Project",
-        "url": "/solar-get-quotes/",
-        "source": "content/pages/solar-get-quotes.md",
-        "kind": "Information / policy page"
-      },
-      {
-        "title": "Solar Quotes Ireland: Plan Your Installation & Compare Costs",
-        "url": "/solar/",
-        "source": "content/pages/solar.md",
         "kind": "Information / policy page"
       }
     ],
