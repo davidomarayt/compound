@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-10-29",
+  "snapshot_date": "2026-10-30",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -346,6 +346,24 @@
           "debt",
           "time horizon",
           "wealth"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Binance Investigates Suspected Hack as Billions in Crypto Are Frozen",
+        "url": "/news/binance-hack-october-2026/",
+        "source": "content/wealth/binance-hack-october-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "binance-hack-october-2026",
+        "date": "2026-10-29",
+        "reviewed": "2026-10-29",
+        "tags": [
+          "news",
+          "binance",
+          "cryptocurrency",
+          "investing",
+          "security"
         ],
         "status": "published"
       },
