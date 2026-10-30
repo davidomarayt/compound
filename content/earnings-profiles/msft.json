@@ -2,33 +2,33 @@
   "cik": 789019,
   "company": "Microsoft",
   "latest": {
-    "accession": "0001193125-26-323660",
-    "filed": "2026-07-29",
-    "form": "10-K",
-    "fp": "FY",
-    "fy": 2026,
+    "accession": "0001193125-26-436133",
+    "filed": "2026-10-28",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 17.95,
-        "prior_year": 13.64,
+        "current": 4.92,
+        "prior_year": 3.72,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 133749000000,
-        "prior_year": 101832000000,
+        "current": 36629000000,
+        "prior_year": 27747000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 331839000000,
-        "prior_year": 281724000000,
+        "current": 92279000000,
+        "prior_year": 77673000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+    },
+    {
+      "accession": "0001193125-26-436133",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.92,
+          "prior_year": 3.72,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 36629000000,
+          "prior_year": 27747000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 92279000000,
+          "prior_year": 77673000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "MSFT",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }

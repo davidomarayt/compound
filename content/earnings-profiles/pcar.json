@@ -2,33 +2,33 @@
   "cik": 75362,
   "company": "Paccar",
   "latest": {
-    "accession": "0001193125-26-323642",
-    "filed": "2026-07-29",
+    "accession": "0001193125-26-436124",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.43,
-        "prior_year": 1.37,
+        "current": 1.61,
+        "prior_year": 1.12,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 752000000,
-        "prior_year": 723800000,
+        "current": 847500000,
+        "prior_year": 590000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 7546700000,
-        "prior_year": 7510500000,
+        "current": 7936500000,
+        "prior_year": 6671800000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/75362/000119312526323642/pcar-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/75362/000119312526436124/pcar-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/75362/000119312526323642/pcar-20260630.htm"
+    },
+    {
+      "accession": "0001193125-26-436124",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.61,
+          "prior_year": 1.12,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 847500000,
+          "prior_year": 590000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7936500000,
+          "prior_year": 6671800000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/75362/000119312526436124/pcar-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "PCAR",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }

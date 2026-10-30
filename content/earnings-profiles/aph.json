@@ -2,33 +2,33 @@
   "cik": 820313,
   "company": "Amphenol",
   "latest": {
-    "accession": "0001104659-26-089194",
-    "filed": "2026-07-31",
+    "accession": "0001104659-26-120646",
+    "filed": "2026-10-30",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.37,
-        "prior_year": 0.86,
+        "current": 0.79,
+        "prior_year": 0.49,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1769200000,
-        "prior_year": 1091300000,
+        "current": 2034300000,
+        "prior_year": 1245700000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 8758100000,
-        "prior_year": 5650300000,
+        "current": 10229700000,
+        "prior_year": 6194400000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/820313/000110465926089194/aph-20260630x10q.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/820313/000110465926120646/aph-20260930x10q.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/820313/000110465926089194/aph-20260630x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-120646",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.79,
+          "prior_year": 0.49,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2034300000,
+          "prior_year": 1245700000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 10229700000,
+          "prior_year": 6194400000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/820313/000110465926120646/aph-20260930x10q.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "APH",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }

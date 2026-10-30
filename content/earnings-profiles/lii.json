@@ -2,33 +2,33 @@
   "cik": 1069202,
   "company": "Lennox International",
   "latest": {
-    "accession": "0001069202-26-000054",
-    "filed": "2026-04-29",
+    "accession": "0001069202-26-000096",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 3.35,
-        "prior_year": 3.63,
+        "current": 6.41,
+        "prior_year": 7.38,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 117200000,
-        "prior_year": 129600000,
+        "current": 221200000,
+        "prior_year": 259900000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1135100000,
-        "prior_year": 1072600000,
+        "current": 1572500000,
+        "prior_year": 1426800000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1069202/000106920226000054/lii-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1069202/000106920226000096/lii-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1069202/000106920226000054/lii-20260331.htm"
+    },
+    {
+      "accession": "0001069202-26-000087",
+      "filed": "2026-07-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 7.72,
+          "prior_year": 7.71,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 269000000,
+          "prior_year": 273900000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1545300000,
+          "prior_year": 1500900000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1069202/000106920226000087/lii-20260630.htm"
+    },
+    {
+      "accession": "0001069202-26-000096",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 6.41,
+          "prior_year": 7.38,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 221200000,
+          "prior_year": 259900000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1572500000,
+          "prior_year": 1426800000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1069202/000106920226000096/lii-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "LII",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }

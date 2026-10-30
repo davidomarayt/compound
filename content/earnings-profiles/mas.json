@@ -2,33 +2,33 @@
   "cik": 62996,
   "company": "Masco",
   "latest": {
-    "accession": "0000062996-26-000014",
-    "filed": "2026-04-22",
+    "accession": "0000062996-26-000033",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.05,
-        "prior_year": 0.87,
+        "current": 1.17,
+        "prior_year": 0.9,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 213000000,
-        "prior_year": 186000000,
+        "current": 230000000,
+        "prior_year": 189000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1918000000,
-        "prior_year": 1801000000,
+        "current": 1966000000,
+        "prior_year": 1917000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/62996/000006299626000014/mas-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/62996/000006299626000033/mas-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/62996/000006299626000014/mas-20260331.htm"
+    },
+    {
+      "accession": "0000062996-26-000027",
+      "filed": "2026-07-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.6,
+          "prior_year": 1.28,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 318000000,
+          "prior_year": 270000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1992000000,
+          "prior_year": 2051000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/62996/000006299626000027/mas-20260630.htm"
+    },
+    {
+      "accession": "0000062996-26-000033",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.17,
+          "prior_year": 0.9,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 230000000,
+          "prior_year": 189000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1966000000,
+          "prior_year": 1917000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/62996/000006299626000033/mas-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "MAS",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }

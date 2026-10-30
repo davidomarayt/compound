@@ -2,33 +2,33 @@
   "cik": 879169,
   "company": "Incyte",
   "latest": {
-    "accession": "0000879169-26-000026",
-    "filed": "2026-04-28",
+    "accession": "0000879169-26-000066",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.47,
-        "prior_year": 0.8,
+        "current": -3.86,
+        "prior_year": 2.11,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 303330000,
-        "prior_year": 158203000,
+        "current": -784803000,
+        "prior_year": 424169000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1272676000,
-        "prior_year": 1052898000,
+        "current": 1557204000,
+        "prior_year": 1365980000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000026/incy-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000066/incy-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000026/incy-20260331.htm"
+    },
+    {
+      "accession": "0000879169-26-000056",
+      "filed": "2026-07-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.81,
+          "prior_year": 2.04,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 585605000,
+          "prior_year": 404999000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1674039000,
+          "prior_year": 1215529000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000056/incy-20260630.htm"
+    },
+    {
+      "accession": "0000879169-26-000066",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -3.86,
+          "prior_year": 2.11,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -784803000,
+          "prior_year": 424169000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1557204000,
+          "prior_year": 1365980000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000066/incy-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "INCY",
-  "updated": "2026-10-15"
+  "updated": "2026-10-30"
 }
