@@ -3,12 +3,13 @@
   "company": "MSFT",
   "date": "2026-10-31",
   "status": "proposed",
-  "publication_state": "existing_content_update_pre_merge",
+  "publication_state": "existing_content_update_exact_head_ci_pending",
   "reason": "Microsoft FY2027 Q1 filing and call materially update the canonical AI-capex and cash-conversion analysis.",
   "publication_kind": "existing_content_update",
   "new_articles_published": 0,
   "article_path": "content/wealth/microsoft-ai-capex-cash-flow.md",
   "queue_id": "2138ef3f428526be309185ec",
+  "queue_state": "The source/content fingerprint retired automatically after the substantive article update; this audit and PR preserve the publication decision.",
   "sources": [
     "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
     "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
@@ -133,7 +134,7 @@
     "site": "Latest inspected run 41157451910 succeeded, including build, deploy, live verification and mobile audit.",
     "mag7": "Run 41077232742 failed because ANTHROPIC_WORKSPACE_ID was empty; safeguard tests passed. This unchanged model-call configuration failure was not retried."
   },
-  "pull_request": null,
+  "pull_request": "https://github.com/davidomarayt/compound/pull/66",
   "validated_content_sha256": "5f15519df1c97bb9953b930222d1eac9eb3fc691d8ca083f4316b92b1876b77e",
   "validated_image_sha256": "9756c234ef8bc5990c7a0e308d19a2cf1a8e6031efd2665b7605a9a79ffea2c6",
   "validated_social_image_sha256": "8eabcd3d558da5cac47af2b335c24c36fc43ae59f4d58678e9a58b37e1f4fda2",
