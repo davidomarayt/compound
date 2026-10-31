@@ -1,6 +1,6 @@
 # Compound.ie — Quick Editorial Topic Index
 
-Updated: 2026-10-30 | Automatically rebuilt from published source
+Updated: 2026-10-31 | Automatically rebuilt from published source
 
 **Before recommending a new article:** search this page by keyword, synonym,
 and reader question. An existing article or tool may already cover the idea.
