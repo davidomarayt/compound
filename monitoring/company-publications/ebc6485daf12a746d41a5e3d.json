@@ -2,9 +2,9 @@
   "story_fingerprint": "ebc6485daf12a746d41a5e3d",
   "company": "MSFT",
   "date": "2026-10-31",
-  "status": "proposed",
-  "publication_state": "existing_content_update_exact_head_ci_pending",
-  "reason": "Microsoft FY2027 Q1 filing and call materially update the canonical AI-capex and cash-conversion analysis.",
+  "status": "published",
+  "publication_state": "live_verified_existing_content_update",
+  "reason": "PR66 merged with its expected verified head; the site deployment, live canonical update and actual social image were verified.",
   "publication_kind": "existing_content_update",
   "new_articles_published": 0,
   "article_path": "content/wealth/microsoft-ai-capex-cash-flow.md",
@@ -80,7 +80,8 @@
     "Editorial topic index, Markdown inventory and JSON inventory inspected.",
     "Existing Microsoft articles searched; the reader question already has this canonical article, so no new article was created.",
     "Open and recently merged PRs inspected; no overlapping Microsoft publication attempt was active.",
-    "Publication records and live canonical content checked before drafting."
+    "Publication records and live canonical content checked before drafting.",
+    "Immediately before merge: publishing branch dff76eb, PR66 was the sole fingerprint/Microsoft publication attempt, and the live page still lacked the added FY2027 Q1 text."
   ],
   "image": {
     "action": "Preserve the existing Microsoft-specific licensed photograph and provenance; pin its original Unsplash image URL so a clean build can reproduce the approved crop.",
@@ -125,16 +126,34 @@
     "render": "Passed in Chromium 140 at 390px and 1440px: changed text, canonical and social metadata present; no horizontal overflow.",
     "image_assets": "Passed: existing Microsoft photograph reproduced from its pinned licensed original; 1600x900 JPEG and actual 1200x675 Open Graph/Twitter WebP visually inspected.",
     "internal_links": "Passed: every local link target on the rendered article exists.",
-    "exact_head_ci": "pending",
-    "deployment": "pending"
+    "exact_head_ci": "Run 41185269272 passed on ba1aef701397a320d58bdd006337d047a36620f2: test and performance jobs succeeded, including image preparation, production build and Lighthouse. One unrelated Wikimedia HTTP 429 failed the first performance attempt; the failed job was rerun unchanged and passed. Vercel status also succeeded.",
+    "deployment": "Run 41185984108 succeeded for merge 400cb118b2473417da6f58048abcc484f3d9fa6d: build, deploy, verify-live and mobile-audit jobs all passed."
   },
   "workflow_health": {
     "earnings_review_queue": "Run 41064489195 succeeded; local queue refreshed for 2026-10-31.",
     "earnings_monitor": "Latest inspected run 41157379179 succeeded.",
-    "site": "Latest inspected run 41157451910 succeeded, including build, deploy, live verification and mobile audit.",
+    "site": "Publication run 41185984108 succeeded, including build, deploy, live verification and mobile audit.",
     "mag7": "Run 41077232742 failed because ANTHROPIC_WORKSPACE_ID was empty; safeguard tests passed. This unchanged model-call configuration failure was not retried."
   },
   "pull_request": "https://github.com/davidomarayt/compound/pull/66",
+  "validated_head_sha": "ba1aef701397a320d58bdd006337d047a36620f2",
+  "merge_commit_sha": "400cb118b2473417da6f58048abcc484f3d9fa6d",
+  "deployment_url": "https://github.com/davidomarayt/compound/actions/runs/41185984108",
+  "live_verified_at": "2026-10-31T08:55:30Z",
+  "live_verification": {
+    "url": "https://compound.ie/wealth/microsoft-ai-capex-cash-flow/",
+    "page_http": 200,
+    "canonical": "https://compound.ie/wealth/microsoft-ai-capex-cash-flow/",
+    "changed_text_verified": true,
+    "verified_claim_markers": [
+      "USD92.279 billion revenue",
+      "USD364.6 billion additional uncommenced leases"
+    ],
+    "social_url": "https://compound.ie/static/discover/microsoft-ai-capex-cash-flow-16x9.webp",
+    "social_http": 200,
+    "social_sha256": "8eabcd3d558da5cac47af2b335c24c36fc43ae59f4d58678e9a58b37e1f4fda2",
+    "social_visually_inspected": true
+  },
   "validated_content_sha256": "5f15519df1c97bb9953b930222d1eac9eb3fc691d8ca083f4316b92b1876b77e",
   "validated_image_sha256": "9756c234ef8bc5990c7a0e308d19a2cf1a8e6031efd2665b7605a9a79ffea2c6",
   "validated_social_image_sha256": "8eabcd3d558da5cac47af2b335c24c36fc43ae59f4d58678e9a58b37e1f4fda2",
