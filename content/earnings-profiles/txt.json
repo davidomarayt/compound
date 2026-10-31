@@ -2,33 +2,33 @@
   "cik": 217346,
   "company": "Textron",
   "latest": {
-    "accession": "0000217346-26-000036",
-    "filed": "2026-07-28",
+    "accession": "0000217346-26-000044",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.42,
-        "prior_year": 1.35,
+        "current": 1.56,
+        "prior_year": 1.31,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 248000000,
-        "prior_year": 245000000,
+        "current": 270000000,
+        "prior_year": 234000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3827000000,
-        "prior_year": 3716000000,
+        "current": 3751000000,
+        "prior_year": 3602000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-04",
-    "source": "https://www.sec.gov/Archives/edgar/data/217346/000021734626000036/txt-20260704.htm"
+    "period_end": "2026-10-03",
+    "source": "https://www.sec.gov/Archives/edgar/data/217346/000021734626000044/txt-20261003.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-07-04",
       "source": "https://www.sec.gov/Archives/edgar/data/217346/000021734626000036/txt-20260704.htm"
+    },
+    {
+      "accession": "0000217346-26-000044",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.56,
+          "prior_year": 1.31,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 270000000,
+          "prior_year": 234000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3751000000,
+          "prior_year": 3602000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/217346/000021734626000044/txt-20261003.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TXT",
-  "updated": "2026-10-15"
+  "updated": "2026-10-31"
 }

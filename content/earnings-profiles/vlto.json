@@ -2,33 +2,33 @@
   "cik": 1967680,
   "company": "Veralto",
   "latest": {
-    "accession": "0001967680-26-000024",
-    "filed": "2026-04-29",
+    "accession": "0001967680-26-000048",
+    "filed": "2026-10-30",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.02,
-        "prior_year": 0.9,
+        "current": 1.03,
+        "prior_year": 0.95,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 254000000,
-        "prior_year": 225000000,
+        "current": 253000000,
+        "prior_year": 239000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1422000000,
-        "prior_year": 1332000000,
+        "current": 1509000000,
+        "prior_year": 1404000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-04-03",
-    "source": "https://www.sec.gov/Archives/edgar/data/1967680/000196768026000024/vlto-20260403.htm"
+    "period_end": "2026-10-02",
+    "source": "https://www.sec.gov/Archives/edgar/data/1967680/000196768026000048/vlto-20261002.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-04-03",
       "source": "https://www.sec.gov/Archives/edgar/data/1967680/000196768026000024/vlto-20260403.htm"
+    },
+    {
+      "accession": "0001967680-26-000044",
+      "filed": "2026-07-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.98,
+          "prior_year": 0.89,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 241000000,
+          "prior_year": 222000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1474000000,
+          "prior_year": 1371000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-07-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/1967680/000196768026000044/vlto-20260703.htm"
+    },
+    {
+      "accession": "0001967680-26-000048",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.03,
+          "prior_year": 0.95,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 253000000,
+          "prior_year": 239000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1509000000,
+          "prior_year": 1404000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/1967680/000196768026000048/vlto-20261002.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "VLTO",
-  "updated": "2026-10-15"
+  "updated": "2026-10-31"
 }

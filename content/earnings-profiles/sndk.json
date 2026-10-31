@@ -2,33 +2,33 @@
   "cik": 2023554,
   "company": "Sandisk",
   "latest": {
-    "fy": 2027,
+    "accession": "0001628280-26-068601",
+    "filed": "2026-10-30",
+    "form": "10-Q",
     "fp": "Q1",
-    "period_end": "2026-10-02",
-    "filed": "2026-10-29",
-    "accession": "0001628280-26-068243",
-    "source": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm",
-    "form": "8-K",
+    "fy": 2027,
     "metrics": {
-      "revenue": {
-        "current": 11031000000.0,
-        "prior_year": 2308000000.0,
-        "unit": "USD",
-        "tag": "SEC earnings release; GAAP"
-      },
-      "net_income": {
-        "current": 8101000000.0,
-        "prior_year": 112000000.0,
-        "unit": "USD",
-        "tag": "SEC earnings release; GAAP"
-      },
       "diluted_eps": {
         "current": 52.6,
         "prior_year": 0.75,
-        "unit": "USD/shares",
-        "tag": "SEC earnings release; GAAP"
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 8101000000,
+        "prior_year": 112000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 11031000000,
+        "prior_year": 2308000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
       }
-    }
+    },
+    "period_end": "2026-10-02",
+    "source": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068601/sndk-20261002.htm"
   },
   "periods": [
     {
@@ -119,36 +119,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026057406/sndk-20260703.htm"
     },
     {
-      "fy": 2027,
+      "accession": "0001628280-26-068601",
+      "filed": "2026-10-30",
+      "form": "10-Q",
       "fp": "Q1",
-      "period_end": "2026-10-02",
-      "filed": "2026-10-29",
-      "accession": "0001628280-26-068243",
-      "source": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm",
-      "form": "8-K",
+      "fy": 2027,
       "metrics": {
-        "revenue": {
-          "current": 11031000000.0,
-          "prior_year": 2308000000.0,
-          "unit": "USD",
-          "tag": "SEC earnings release; GAAP"
-        },
-        "net_income": {
-          "current": 8101000000.0,
-          "prior_year": 112000000.0,
-          "unit": "USD",
-          "tag": "SEC earnings release; GAAP"
-        },
         "diluted_eps": {
           "current": 52.6,
           "prior_year": 0.75,
-          "unit": "USD/shares",
-          "tag": "SEC earnings release; GAAP"
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 8101000000,
+          "prior_year": 112000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 11031000000,
+          "prior_year": 2308000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
         }
-      }
+      },
+      "period_end": "2026-10-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068601/sndk-20261002.htm"
     }
   ],
-  "source_type": "US SEC filings and furnished earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "SNDK",
-  "updated": "2026-10-29"
+  "updated": "2026-10-31"
 }

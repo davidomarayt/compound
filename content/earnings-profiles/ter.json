@@ -2,33 +2,33 @@
   "cik": 97210,
   "company": "Teradyne",
   "latest": {
-    "accession": "0001193125-26-327715",
-    "filed": "2026-07-31",
+    "accession": "0001193125-26-441091",
+    "filed": "2026-10-30",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.38,
-        "prior_year": 0.49,
+        "current": 2.17,
+        "prior_year": 0.75,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 374533000,
-        "prior_year": 78372000,
+        "current": 342407000,
+        "prior_year": 119558000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1328990000,
-        "prior_year": 651797000,
+        "current": 1305950000,
+        "prior_year": 769210000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-28",
-    "source": "https://www.sec.gov/Archives/edgar/data/97210/000119312526327715/ter-20260628.htm"
+    "period_end": "2026-09-27",
+    "source": "https://www.sec.gov/Archives/edgar/data/97210/000119312526441091/ter-20260927.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-28",
       "source": "https://www.sec.gov/Archives/edgar/data/97210/000119312526327715/ter-20260628.htm"
+    },
+    {
+      "accession": "0001193125-26-441091",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.17,
+          "prior_year": 0.75,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 342407000,
+          "prior_year": 119558000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1305950000,
+          "prior_year": 769210000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/97210/000119312526441091/ter-20260927.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TER",
-  "updated": "2026-10-15"
+  "updated": "2026-10-31"
 }
