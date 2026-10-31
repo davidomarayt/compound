@@ -7,12 +7,10 @@ canonical_path: /wealth/microsoft-ai-capex-cash-flow/
 draft: false
 publication_status: published
 date: '2026-10-18'
-reviewed: '2026-10-18'
-editorial_status: Source-checked manual article; publisher approved publication on 2026-10-18
-summary: Microsoft’s AI spending needs a cash-flow test. We examine Azure growth, lease accounting and the figures that reveal
-  whether investment is paying off.
-meta_description: Microsoft’s AI spending needs a cash-flow test. We examine Azure growth, lease accounting and the figures
-  that reveal whether investment is paying off.
+reviewed: '2026-10-31'
+editorial_status: Source-checked manual article; publisher approved publication on 2026-10-18; updated from Microsoft FY2027 Q1 primary sources on 2026-10-31
+summary: Microsoft’s AI spending needs a cash-flow test. We examine Azure growth, lease accounting and the figures that reveal whether investment is paying off.
+meta_description: Microsoft’s AI spending needs a cash-flow test. We examine Azure growth, lease accounting and the figures that reveal whether investment is paying off.
 tags:
 - wealth
 - stocks
@@ -21,38 +19,43 @@ tags:
 - msft
 image: /static/images/evergreen/microsoft-ai-capex-cash-flow.jpg
 social_image: /static/images/evergreen/microsoft-ai-capex-cash-flow.jpg
-image_alt: Microsoft sign on an office building.
-image_credit: Sam Torres / Unsplash (Unsplash Licence)
+image_alt: Microsoft sign on an office building, photographed in 2022.
+image_credit: Sam Torres / Unsplash (2022; Unsplash License)
 image_source: https://unsplash.com/photos/a-building-with-a-microsoft-sign-on-the-side-of-it-7j-PBAMqAtI
+hero_image_url: https://images.unsplash.com/photo-1671944378859-08bcfa15a280?auto=format&fit=crop&fm=jpg&q=85&w=1600&h=900
+hero_image_alt: Microsoft sign on an office building, photographed in 2022.
+hero_image_credit: Sam Torres / Unsplash (2022; Unsplash License)
+hero_image_source: https://unsplash.com/photos/a-building-with-a-microsoft-sign-on-the-side-of-it-7j-PBAMqAtI
 require_pinned_hero: true
 sources:
-- title: results announcement
-  url: https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast
-- title: earnings call
-  url: https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4
-- title: Reuters independently reported the distinction between spending plans and lease presentation.
-  url: https://www.reuters.com/business/microsoft-tops-quarterly-cloud-growth-estimates-easing-spending-concerns-2026-07-29/
+- title: Microsoft FY2027 Q1 Form 10-Q
+  url: https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm
+- title: Microsoft FY2027 Q1 results announcement
+  url: https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast
+- title: Microsoft FY2027 Q1 earnings call
+  url: https://www.microsoft.com/en-us/Investor/events/fy-2027/earnings-fy-2027-q1
 ---
-
 *Archival cover: Sam Torres / Unsplash; published on Unsplash in 2022. [Original photograph](https://unsplash.com/photos/a-building-with-a-microsoft-sign-on-the-side-of-it-7j-PBAMqAtI) · [Unsplash Licence](https://unsplash.com/license). Capture date not independently verified.*
 
-*Research date: 18 October 2026. Reported figures are historical; illustrative calculations are identified below.*
+*Updated 31 October 2026 with Microsoft's fiscal 2027 first-quarter filing, results announcement and earnings call. Reported figures are historical; management guidance and Compound's illustrative calculations are identified below.*
 
 Microsoft's AI business can be growing quickly while becoming more expensive to operate. That is the distinction investors should carry into the next earnings report: stronger demand is valuable, but the return on the infrastructure serving that demand is what ultimately matters to shareholders.
 
 The most useful test combines revenue growth, cash capital spending and the commitments that sit outside a single headline capex number. A lower spending forecast can reflect a change in accounting presentation without signalling a cheaper investment programme.
 
-## What the latest reported quarter establishes
+## What the September quarter establishes
 
-For the quarter ended 30 June 2026, Microsoft's [results announcement](https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast) reported $90.007 billion of revenue and $40.603 billion of operating income. Azure and other cloud services revenue grew 43%; Microsoft Cloud revenue reached $59.3 billion, up 27%. These are different measures: neither Microsoft Cloud nor the Intelligent Cloud reporting segment should be described as Azure alone.
+For the three months ended 30 September 2026, Microsoft's [Form 10-Q](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm) reported $92.279 billion of revenue and $45.915 billion of operating income. Azure revenue was $33.165 billion, up 48% from $22.384 billion a year earlier. Microsoft Cloud revenue was $63.9 billion, compared with $49.1 billion. These are different measures: Microsoft Cloud includes Azure, Microsoft 365 commercial cloud and Industry solutions cloud, so it should not be described as Azure alone.
 
-Company-wide operating margin was approximately **45.1%**, calculated as $40.603 billion divided by $90.007 billion. That demonstrates substantial current profitability. It does not isolate the profitability of AI workloads, or establish what return Microsoft will earn on its newest capacity.
+Company-wide operating margin was approximately **49.8%**, calculated as $45.915 billion divided by $92.279 billion. That demonstrates substantial current profitability. It does not isolate the profitability of AI workloads, or establish what return Microsoft will earn on its newest capacity.
 
 ## Follow the cash, then read the lease explanation
 
-On the [earnings call](https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4), management reported $55.4 billion of operating cash flow, $35.8 billion of cash payments for property and equipment, and $19.6 billion of free cash flow. Capex including finance leases was $41 billion. The cash-payment measure and the broader capex measure are not interchangeable.
+On the [earnings call](https://www.microsoft.com/en-us/Investor/events/fy-2027/earnings-fy-2027-q1), management reported $58.0 billion of operating cash flow, $39.4 billion of cash paid for property and equipment, and $18.6 billion of company-defined free cash flow. Capex was $45.2 billion, including $7.4 billion of finance leases recognised at commencement. The cash-payment measure and the broader capex measure are not interchangeable.
 
-Management also explained that extending the estimated useful lives of data centres and office buildings from 15 to 25 years would move more future leases into the operating-lease category. It said underlying calendar-year investment expectations were unchanged, while the reported capex expectation became approximately $175 billion. [Reuters independently reported the distinction between spending plans and lease presentation.](https://www.reuters.com/business/microsoft-tops-quarterly-cloud-growth-estimates-easing-spending-concerns-2026-07-29/)
+The 10-Q adds a longer-term commitment that the quarterly capex headline does not capture: at 30 September, Microsoft had **$364.6 billion of additional leases, primarily for data centres, that had not yet commenced**. Microsoft said those leases were scheduled to commence from fiscal 2027 through fiscal 2034, with terms ranging from one to 20 years; some arrangements remained subject to contractual conditions.
+
+Management guided to more than $50 billion of capex in the December quarter and approximately $170 billion for calendar 2026. It attributed the calendar-year figure to delays in third-party capacity deliveries and said spending should accelerate in the fiscal second half as those deliveries shift later. Those are forward-looking management expectations, not completed investment or Compound forecasts.
 
 The investor question is therefore whether the full cost of serving customers is earning an adequate return, regardless of which accounting line records it.
 
@@ -62,11 +65,11 @@ The following is Compound's illustration, using rounded reported quarterly cash 
 
 | Scenario | Operating cash flow | Cash property/equipment spending | Cash remaining after that spending |
 |---|---:|---:|---:|
-| Reported rounded baseline | $55.40bn | $35.80bn | $19.60bn |
-| Cash spending rises 10%; operating cash unchanged | $55.40bn | $39.38bn | $16.02bn |
-| Both figures rise 10% | $60.94bn | $39.38bn | $21.56bn |
+| Reported rounded baseline | $58.00bn | $39.40bn | $18.60bn |
+| Cash spending rises 10%; operating cash unchanged | $58.00bn | $43.34bn | $14.66bn |
+| Both figures rise 10% | $63.80bn | $43.34bn | $20.46bn |
 
-In the second scenario, just a 10% increase in cash investment reduces the remainder by approximately 18.3%. In the third, matching operating cash growth more than offsets the extra spending in dollars. The point is not to choose a forecast. It is to identify the variable that must improve for heavier investment to remain comfortable.
+In the second scenario, a 10% increase in cash investment reduces the remainder by approximately 21.2%. In the third, matching operating cash growth more than offsets the extra spending in dollars. The point is not to choose a forecast. It is to identify the variable that must improve for heavier investment to remain comfortable.
 
 This subtraction also is not a complete measure of shareholder return. Acquisitions, financing commitments and dilution can matter even when the conventional free-cash-flow number is positive.
 
@@ -93,8 +96,8 @@ AI investment also needs electricity and a viable commissioning timetable. Read 
 
 ## Sources and methodology
 
-- [results announcement](https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q4/press-release-webcast)
-- [earnings call](https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4)
-- [Reuters independently reported the distinction between spending plans and lease presentation.](https://www.reuters.com/business/microsoft-tops-quarterly-cloud-growth-estimates-easing-spending-concerns-2026-07-29/)
+- [Microsoft FY2027 Q1 Form 10-Q](https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm)
+- [Microsoft FY2027 Q1 results announcement](https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast)
+- [Microsoft FY2027 Q1 earnings call](https://www.microsoft.com/en-us/Investor/events/fy-2027/earnings-fy-2027-q1)
 
 Calculations are Compound’s own, using the stated reported figures and rounded inputs where identified. These articles are general investment research, not personal financial advice.
