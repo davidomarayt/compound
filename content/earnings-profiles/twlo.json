@@ -2,33 +2,33 @@
   "cik": 1447669,
   "company": "Twilio",
   "latest": {
-    "accession": "0001447669-26-000092",
-    "filed": "2026-08-07",
+    "accession": "0001447669-26-000110",
+    "filed": "2026-10-30",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 6.68,
-        "prior_year": 0.14,
+        "current": 1,
+        "prior_year": 0.23,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1067209000,
-        "prior_year": 22423000,
+        "current": 161157000,
+        "prior_year": 37248000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1499089000,
-        "prior_year": 1228425000,
+        "current": 1559536000,
+        "prior_year": 1300402000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1447669/000144766926000092/twlo-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1447669/000144766926000110/twlo-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1447669/000144766926000092/twlo-20260630.htm"
+    },
+    {
+      "accession": "0001447669-26-000110",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1,
+          "prior_year": 0.23,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 161157000,
+          "prior_year": 37248000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1559536000,
+          "prior_year": 1300402000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1447669/000144766926000110/twlo-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TWLO",
-  "updated": "2026-10-15"
+  "updated": "2026-10-31"
 }

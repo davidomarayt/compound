@@ -2,33 +2,33 @@
   "cik": 1944048,
   "company": "Kenvue",
   "latest": {
-    "accession": "0001944048-26-000142",
-    "filed": "2026-08-06",
+    "accession": "0001944048-26-000168",
+    "filed": "2026-10-30",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.24,
-        "prior_year": 0.22,
+        "current": 0.22,
+        "prior_year": 0.21,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 456000000,
-        "prior_year": 420000000,
+        "current": 430000000,
+        "prior_year": 398000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3955000000,
-        "prior_year": 3839000000,
+        "current": 3886000000,
+        "prior_year": 3764000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-28",
-    "source": "https://www.sec.gov/Archives/edgar/data/1944048/000194404826000142/kvue-20260628.htm"
+    "period_end": "2026-09-27",
+    "source": "https://www.sec.gov/Archives/edgar/data/1944048/000194404826000168/kvue-20260927.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-28",
       "source": "https://www.sec.gov/Archives/edgar/data/1944048/000194404826000142/kvue-20260628.htm"
+    },
+    {
+      "accession": "0001944048-26-000168",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.22,
+          "prior_year": 0.21,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 430000000,
+          "prior_year": 398000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3886000000,
+          "prior_year": 3764000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-27",
+      "source": "https://www.sec.gov/Archives/edgar/data/1944048/000194404826000168/kvue-20260927.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "KVUE",
-  "updated": "2026-10-15"
+  "updated": "2026-10-31"
 }

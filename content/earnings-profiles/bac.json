@@ -2,33 +2,33 @@
   "cik": 70858,
   "company": "Bank of America",
   "latest": {
-    "accession": "0000070858-26-000481",
-    "filed": "2026-10-14",
-    "form": "8-K",
+    "accession": "0000070858-26-000548",
+    "filed": "2026-10-30",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 0.91,
         "prior_year": 1.04,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 6933000000.0,
-        "prior_year": 8332000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 6933000000,
+        "prior_year": 8332000000,
+        "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 29958000000.0,
-        "prior_year": 29040000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 29958000000,
+        "prior_year": 29040000000,
+        "tag": "Revenues",
         "unit": "USD"
       }
     },
     "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000481/bac-09302026ex993.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000548/bac-20260930.htm"
   },
   "periods": [
     {
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000394/bac-20260630.htm"
     },
     {
-      "accession": "0000070858-26-000481",
-      "filed": "2026-10-14",
-      "form": "8-K",
+      "accession": "0000070858-26-000548",
+      "filed": "2026-10-30",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 0.91,
           "prior_year": 1.04,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
-          "current": 6933000000.0,
-          "prior_year": 8332000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 6933000000,
+          "prior_year": 8332000000,
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
-          "current": 29958000000.0,
-          "prior_year": 29040000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 29958000000,
+          "prior_year": 29040000000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
       "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000481/bac-09302026ex993.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/70858/000007085826000548/bac-20260930.htm"
     }
   ],
-  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "BAC",
-  "updated": "2026-10-26"
+  "updated": "2026-10-31"
 }

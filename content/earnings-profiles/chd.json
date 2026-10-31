@@ -2,33 +2,33 @@
   "cik": 313927,
   "company": "Church & Dwight",
   "latest": {
-    "accession": "0001193125-26-327567",
-    "filed": "2026-07-31",
+    "accession": "0001193125-26-441040",
+    "filed": "2026-10-30",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.85,
-        "prior_year": 0.78,
+        "current": 0.89,
+        "prior_year": 0.75,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 202800000,
-        "prior_year": 191000000,
+        "current": 212200000,
+        "prior_year": 182200000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1530000000,
-        "prior_year": 1506300000,
+        "current": 1602100000,
+        "prior_year": 1585600000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/313927/000119312526327567/chd-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/313927/000119312526441040/chd-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/313927/000119312526327567/chd-20260630.htm"
+    },
+    {
+      "accession": "0001193125-26-441040",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.89,
+          "prior_year": 0.75,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 212200000,
+          "prior_year": 182200000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1602100000,
+          "prior_year": 1585600000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/313927/000119312526441040/chd-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CHD",
-  "updated": "2026-10-15"
+  "updated": "2026-10-31"
 }

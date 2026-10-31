@@ -2,33 +2,33 @@
   "cik": 106535,
   "company": "Weyerhaeuser",
   "latest": {
-    "accession": "0001193125-26-328606",
-    "filed": "2026-07-31",
+    "accession": "0001193125-26-441693",
+    "filed": "2026-10-30",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.23,
-        "prior_year": 0.12,
+        "current": 0.08,
+        "prior_year": 0.11,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 162000000,
-        "prior_year": 87000000,
+        "current": 61000000,
+        "prior_year": 80000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1867000000,
-        "prior_year": 1884000000,
+        "current": 1862000000,
+        "prior_year": 1717000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/106535/000119312526328606/wy-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/106535/000119312526441693/wy-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/106535/000119312526328606/wy-20260630.htm"
+    },
+    {
+      "accession": "0001193125-26-441693",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.08,
+          "prior_year": 0.11,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 61000000,
+          "prior_year": 80000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1862000000,
+          "prior_year": 1717000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/106535/000119312526441693/wy-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "WY",
-  "updated": "2026-10-15"
+  "updated": "2026-10-31"
 }

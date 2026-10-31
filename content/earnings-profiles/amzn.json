@@ -2,33 +2,33 @@
   "cik": 1018724,
   "company": "Amazon",
   "latest": {
-    "fy": 2026,
+    "accession": "0001018724-26-000040",
+    "filed": "2026-10-30",
+    "form": "10-Q",
     "fp": "Q3",
-    "period_end": "2026-09-30",
-    "filed": "2026-10-29",
-    "accession": "0001018724-26-000038",
-    "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm",
-    "form": "8-K",
+    "fy": 2026,
     "metrics": {
-      "revenue": {
-        "current": 201944000000.0,
-        "prior_year": 180169000000.0,
-        "unit": "USD",
-        "tag": "SEC earnings release; GAAP"
-      },
-      "net_income": {
-        "current": 20685000000.0,
-        "prior_year": 21187000000.0,
-        "unit": "USD",
-        "tag": "SEC earnings release; GAAP"
-      },
       "diluted_eps": {
         "current": 1.89,
         "prior_year": 1.95,
-        "unit": "USD/shares",
-        "tag": "SEC earnings release; GAAP"
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 20685000000,
+        "prior_year": 21187000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 201944000000,
+        "prior_year": 180169000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
       }
-    }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
   },
   "periods": [
     {
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
     },
     {
-      "fy": 2026,
+      "accession": "0001018724-26-000040",
+      "filed": "2026-10-30",
+      "form": "10-Q",
       "fp": "Q3",
-      "period_end": "2026-09-30",
-      "filed": "2026-10-29",
-      "accession": "0001018724-26-000038",
-      "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm",
-      "form": "8-K",
+      "fy": 2026,
       "metrics": {
-        "revenue": {
-          "current": 201944000000.0,
-          "prior_year": 180169000000.0,
-          "unit": "USD",
-          "tag": "SEC earnings release; GAAP"
-        },
-        "net_income": {
-          "current": 20685000000.0,
-          "prior_year": 21187000000.0,
-          "unit": "USD",
-          "tag": "SEC earnings release; GAAP"
-        },
         "diluted_eps": {
           "current": 1.89,
           "prior_year": 1.95,
-          "unit": "USD/shares",
-          "tag": "SEC earnings release; GAAP"
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 20685000000,
+          "prior_year": 21187000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 201944000000,
+          "prior_year": 180169000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
         }
-      }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
     }
   ],
-  "source_type": "US SEC filings and furnished earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "AMZN",
-  "updated": "2026-10-29"
+  "updated": "2026-10-31"
 }
