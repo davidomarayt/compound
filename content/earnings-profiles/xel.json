@@ -1,0 +1,125 @@
+{
+  "cik": 72903,
+  "company": "Xcel Energy",
+  "latest": {
+    "accession": "0000072903-26-000181",
+    "filed": "2026-10-29",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.52,
+        "prior_year": 0.88,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 960000000,
+        "prior_year": 524000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4172000000,
+        "prior_year": 3915000000,
+        "tag": "RegulatedAndUnregulatedOperatingRevenue",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/72903/000007290326000181/xel-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000072903-26-000073",
+      "filed": "2026-04-30",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.89,
+          "prior_year": 0.84,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 556000000,
+          "prior_year": 483000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4021000000,
+          "prior_year": 3906000000,
+          "tag": "RegulatedAndUnregulatedOperatingRevenue",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/72903/000007290326000073/xel-20260331.htm"
+    },
+    {
+      "accession": "0000072903-26-000154",
+      "filed": "2026-07-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.93,
+          "prior_year": 0.75,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 586000000,
+          "prior_year": 444000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3119000000,
+          "prior_year": 3287000000,
+          "tag": "RegulatedAndUnregulatedOperatingRevenue",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/72903/000007290326000154/xel-20260630.htm"
+    },
+    {
+      "accession": "0000072903-26-000181",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.52,
+          "prior_year": 0.88,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 960000000,
+          "prior_year": 524000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4172000000,
+          "prior_year": 3915000000,
+          "tag": "RegulatedAndUnregulatedOperatingRevenue",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/72903/000007290326000181/xel-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "XEL",
+  "updated": "2026-10-31"
+}
