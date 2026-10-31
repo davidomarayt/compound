@@ -1,0 +1,158 @@
+{
+  "story_fingerprint": "ebc6485daf12a746d41a5e3d",
+  "company": "MSFT",
+  "date": "2026-10-31",
+  "status": "proposed",
+  "publication_state": "existing_content_update_pre_merge",
+  "reason": "Microsoft FY2027 Q1 filing and call materially update the canonical AI-capex and cash-conversion analysis.",
+  "publication_kind": "existing_content_update",
+  "new_articles_published": 0,
+  "article_path": "content/wealth/microsoft-ai-capex-cash-flow.md",
+  "queue_id": "2138ef3f428526be309185ec",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
+    "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
+    "https://www.microsoft.com/en-us/Investor/events/fy-2027/earnings-fy-2027-q1"
+  ],
+  "identity": {
+    "issuer": "Microsoft Corporation",
+    "CIK": 789019,
+    "accession": "0001193125-26-436133",
+    "period_end": "2026-09-30",
+    "form": "10-Q",
+    "currency": "USD",
+    "units": "USD millions except per-share data",
+    "period": "Q1 FY2027"
+  },
+  "evidence_table": [
+    {
+      "claim": "Q1 revenue USD92.279bn and operating income USD45.915bn",
+      "source_index": 0,
+      "location": "Consolidated statements of income and reportable-segment table",
+      "arithmetic": "45.915 / 92.279 = 49.7567% consolidated operating margin",
+      "result": "Confirmed as GAAP consolidated figures for the three months ended 30 September 2026."
+    },
+    {
+      "claim": "Azure revenue USD33.165bn, up 48% from USD22.384bn; Microsoft Cloud revenue USD63.9bn",
+      "source_index": 0,
+      "location": "Revenue by significant product and service offering; MD&A",
+      "result": "Confirmed. Article explicitly distinguishes Azure from the broader Microsoft Cloud measure."
+    },
+    {
+      "claim": "Operating cash flow USD58.0bn, cash paid for property and equipment USD39.4bn, company-defined free cash flow USD18.6bn",
+      "source_index": 2,
+      "location": "CFO remarks, fiscal 2027 first-quarter earnings call",
+      "arithmetic": "58.0 - 39.4 = 18.6",
+      "result": "Confirmed; free cash flow labelled as the company's definition."
+    },
+    {
+      "claim": "Capex USD45.2bn, including USD7.4bn of finance leases recognised at commencement",
+      "source_index": 2,
+      "location": "CFO remarks, fiscal 2027 first-quarter earnings call",
+      "result": "Confirmed; kept distinct from cash paid for property and equipment."
+    },
+    {
+      "claim": "USD364.6bn of additional, primarily data-centre leases had not commenced at 30 September",
+      "source_index": 0,
+      "location": "Form 10-Q, Note 12 — Leases",
+      "result": "Confirmed; commencements FY2027–FY2034, terms 1–20 years, some subject to contractual conditions. Not described as current-quarter cash spending."
+    },
+    {
+      "claim": "December-quarter capex guidance above USD50bn and calendar-2026 guidance approximately USD170bn",
+      "source_index": 2,
+      "location": "CFO outlook, fiscal 2027 first-quarter earnings call",
+      "result": "Confirmed as forward-looking management guidance tied to third-party capacity delays, not completed spending or Compound forecasts."
+    },
+    {
+      "claim": "Illustrative 10% cash-spending sensitivity",
+      "source_index": 2,
+      "location": "Compound calculation from reported rounded cash figures",
+      "arithmetic": "39.40*1.10=43.34; 58.00-43.34=14.66; (18.60-14.66)/18.60=21.1828%; 58.00*1.10-43.34=20.46",
+      "result": "Recomputed independently; clearly labelled illustration, not guidance."
+    }
+  ],
+  "fact_check_pass": {
+    "method": "Separate claim-by-claim reread of the SEC 10-Q and Microsoft earnings call after drafting; fiscal period, issuer identity, units, GAAP/non-GAAP labels, guidance status and arithmetic checked independently.",
+    "unresolved_added_claims": []
+  },
+  "duplicate_checks": [
+    "Editorial topic index, Markdown inventory and JSON inventory inspected.",
+    "Existing Microsoft articles searched; the reader question already has this canonical article, so no new article was created.",
+    "Open and recently merged PRs inspected; no overlapping Microsoft publication attempt was active.",
+    "Publication records and live canonical content checked before drafting."
+  ],
+  "image": {
+    "action": "Preserve the existing Microsoft-specific licensed photograph and provenance; pin its original Unsplash image URL so a clean build can reproduce the approved crop.",
+    "new_image": "not_applicable",
+    "asset": "/static/images/evergreen/microsoft-ai-capex-cash-flow.jpg",
+    "photographer": "Sam Torres",
+    "source": "https://unsplash.com/photos/a-building-with-a-microsoft-sign-on-the-side-of-it-7j-PBAMqAtI",
+    "licence": "Unsplash License",
+    "licence_url": "https://unsplash.com/license",
+    "archive_label": "Archival photograph published 25 December 2022; capture date not independently verified",
+    "alt": "Microsoft sign on an office building.",
+    "origin_image_url": "https://images.unsplash.com/photo-1671944378859-08bcfa15a280?auto=format&fit=crop&fm=jpg&q=85&w=1600&h=900",
+    "verified": "Original photo page identifies Sam Torres, Microsoft and office subject matter, free use under the Unsplash License; licence page inspected 31 October 2026."
+  },
+  "review_budget": [
+    {
+      "company": "META",
+      "decision": "No additional update: live canonical Q3 article and audit already contain the later 10-Q lease disclosure; the separate evergreen guide remains historical."
+    },
+    {
+      "company": "MSFT",
+      "decision": "Update canonical AI-capex/cash-flow article from FY2027 Q1 primary documents."
+    },
+    {
+      "company": "AMZN",
+      "decision": "No additional update: Q3 release analysis already carries the reported economics and the later 10-Q confirms the core figures; no separate quarterly story."
+    },
+    {
+      "company": "HOOD",
+      "decision": "No additional update: Q3 Form 10-Q confirms the release-based article's material figures and measure labels."
+    },
+    {
+      "company": "GILD",
+      "decision": "No additional update: Q3 Form 10-Q identity and headline figures align with the canonical release-based article."
+    }
+  ],
+  "gates": {
+    "new_article": "not_applicable: canonical existing article update",
+    "existing_update": "authorised by 29 October extension",
+    "offline_tests": "61 tests passed: news image, earnings review, earnings SEO, one-company earnings, recent earnings, home-hub and solar-hub suites.",
+    "full_build": "Passed after clean image preparation: 222 articles, 655 tags, 25 pages and 57 tools.",
+    "render": "Passed in Chromium 140 at 390px and 1440px: changed text, canonical and social metadata present; no horizontal overflow.",
+    "image_assets": "Passed: existing Microsoft photograph reproduced from its pinned licensed original; 1600x900 JPEG and actual 1200x675 Open Graph/Twitter WebP visually inspected.",
+    "internal_links": "Passed: every local link target on the rendered article exists.",
+    "exact_head_ci": "pending",
+    "deployment": "pending"
+  },
+  "workflow_health": {
+    "earnings_review_queue": "Run 41064489195 succeeded; local queue refreshed for 2026-10-31.",
+    "earnings_monitor": "Latest inspected run 41157379179 succeeded.",
+    "site": "Latest inspected run 41157451910 succeeded, including build, deploy, live verification and mobile audit.",
+    "mag7": "Run 41077232742 failed because ANTHROPIC_WORKSPACE_ID was empty; safeguard tests passed. This unchanged model-call configuration failure was not retried."
+  },
+  "pull_request": null,
+  "validated_content_sha256": "5f15519df1c97bb9953b930222d1eac9eb3fc691d8ca083f4316b92b1876b77e",
+  "validated_image_sha256": "9756c234ef8bc5990c7a0e308d19a2cf1a8e6031efd2665b7605a9a79ffea2c6",
+  "validated_social_image_sha256": "8eabcd3d558da5cac47af2b335c24c36fc43ae59f4d58678e9a58b37e1f4fda2",
+  "visual_qa": [
+    {
+      "width": 390,
+      "http": 200,
+      "changed_text": true,
+      "canonical": true,
+      "social_metadata": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "width": 1440,
+      "http": 200,
+      "changed_text": true,
+      "canonical": true,
+      "social_metadata": true,
+      "no_horizontal_overflow": true
+    }
+  ]
+}
