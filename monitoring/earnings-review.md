@@ -4,7 +4,7 @@ Checked: 2026-10-31
 
 - 448 saved profiles checked against structural and issuer rules.
 - 45 existing company articles; 44 mapped to monitored issuers.
-- 119 pending review items; 5 recorded decisions.
+- 118 pending review items; 5 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -158,6 +158,16 @@ Newer filing than the article review date; assess whether claims or outlook need
 Files: `content/wealth/netflix-earnings-growth-advertising-outlook.md`, `content/earnings-profiles/nflx.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1065280/000106528026000291/nflx-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-21
+
+### SNDK · article_review · medium
+
+ID: `94a65c4d562492d2d7dabfbc`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/sandisk-earnings-ai-storage-stock-split.md`, `content/earnings-profiles/sndk.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/2023554/000162828026068601/sndk-20261002.htm · Q1 FY2027 · period end 2026-10-02 · filed 2026-10-30
 
 ### SPCX · article_review · medium
 
@@ -777,16 +787,6 @@ No saved profile for an active issuer. Check ingestion and official filings; nev
 
 Files: `content/earnings-profiles/v.json`
 
-### VLTO · coverage_check · medium
-
-ID: `44b1c5589b59e6d4651ff139`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/vlto.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1967680/000196768026000024/vlto-20260403.htm · Q1 FY2026 · period end 2026-04-03 · filed 2026-04-29
-
 ### VMC · coverage_check · medium
 
 ID: `f2936e953b77c33e2472071c`
@@ -1042,16 +1042,6 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/starbucks-earnings-turnaround-sales-china.md`, `content/earnings-profiles/sbux.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/829224/000082922426000154/sbux-09272026xearningsrele.htm · FY FY2026 · period end 2026-09-27 · filed 2026-10-29
-
-### SNDK · article_review · low
-
-ID: `716e5cbc24ef3db6fd3a3376`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/sandisk-earnings-ai-storage-stock-split.md`, `content/earnings-profiles/sndk.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm · Q1 FY2027 · period end 2026-10-02 · filed 2026-10-29
 
 ### T · article_review · low
 

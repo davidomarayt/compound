@@ -2453,6 +2453,110 @@
       "retirement_reason": "Evidence/content changed or condition cleared",
       "severity": "medium",
       "status": "pending"
+    },
+    {
+      "company": "vlto",
+      "evidence": {
+        "accession": "0001967680-26-000024",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.02,
+            "prior_year": 0.9,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 254000000,
+            "prior_year": 225000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 1422000000,
+            "prior_year": 1332000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-04-03",
+        "source": "https://www.sec.gov/Archives/edgar/data/1967680/000196768026000024/vlto-20260403.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "44b1c5589b59e6d4651ff139",
+      "kind": "coverage_check",
+      "last_seen": "2026-10-31",
+      "paths": [
+        "content/earnings-profiles/vlto.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "retired": "2026-10-31",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "medium",
+      "status": "pending"
+    },
+    {
+      "company": "sndk",
+      "evidence": {
+        "article_reviewed": "2026-10-29",
+        "article_sources": [
+          {
+            "title": "SEC-furnished earnings release, 29 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm"
+          },
+          {
+            "title": "Sandisk Q4 FY2026 results",
+            "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-05-sandisk-reports-fiscal-fourth-quarter-2026-financial-results"
+          }
+        ],
+        "canonical_path": "/wealth/sandisk-earnings-ai-storage-stock-split/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-068243",
+          "filed": "2026-10-29",
+          "form": "8-K",
+          "fp": "Q1",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 52.6,
+              "prior_year": 0.75,
+              "tag": "SEC earnings release; GAAP",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 8101000000.0,
+              "prior_year": 112000000.0,
+              "tag": "SEC earnings release; GAAP",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 11031000000.0,
+              "prior_year": 2308000000.0,
+              "tag": "SEC earnings release; GAAP",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-10-02",
+          "source": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm"
+        }
+      },
+      "first_seen": "2026-10-30",
+      "id": "716e5cbc24ef3db6fd3a3376",
+      "kind": "article_review",
+      "last_seen": "2026-10-31",
+      "paths": [
+        "content/wealth/sandisk-earnings-ai-storage-stock-split.md",
+        "content/earnings-profiles/sndk.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "retired": "2026-10-31",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "low",
+      "status": "pending"
     }
   ],
   "jobs": {
@@ -3562,48 +3666,6 @@
       "severity": "medium",
       "status": "pending"
     },
-    "44b1c5589b59e6d4651ff139": {
-      "company": "vlto",
-      "evidence": {
-        "accession": "0001967680-26-000024",
-        "filed": "2026-04-29",
-        "form": "10-Q",
-        "fp": "Q1",
-        "fy": 2026,
-        "metrics": {
-          "diluted_eps": {
-            "current": 1.02,
-            "prior_year": 0.9,
-            "tag": "EarningsPerShareDiluted",
-            "unit": "USD/shares"
-          },
-          "net_income": {
-            "current": 254000000,
-            "prior_year": 225000000,
-            "tag": "NetIncomeLoss",
-            "unit": "USD"
-          },
-          "revenue": {
-            "current": 1422000000,
-            "prior_year": 1332000000,
-            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-            "unit": "USD"
-          }
-        },
-        "period_end": "2026-04-03",
-        "source": "https://www.sec.gov/Archives/edgar/data/1967680/000196768026000024/vlto-20260403.htm"
-      },
-      "first_seen": "2026-10-28",
-      "id": "44b1c5589b59e6d4651ff139",
-      "kind": "coverage_check",
-      "last_seen": "2026-10-31",
-      "paths": [
-        "content/earnings-profiles/vlto.json"
-      ],
-      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
-      "severity": "medium",
-      "status": "pending"
-    },
     "44f2c04f6bce257c1676378d": {
       "company": "tsla",
       "evidence": {
@@ -4640,64 +4702,6 @@
       "severity": "medium",
       "status": "pending"
     },
-    "716e5cbc24ef3db6fd3a3376": {
-      "company": "sndk",
-      "evidence": {
-        "article_reviewed": "2026-10-29",
-        "article_sources": [
-          {
-            "title": "SEC-furnished earnings release, 29 October 2026",
-            "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm"
-          },
-          {
-            "title": "Sandisk Q4 FY2026 results",
-            "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-05-sandisk-reports-fiscal-fourth-quarter-2026-financial-results"
-          }
-        ],
-        "canonical_path": "/wealth/sandisk-earnings-ai-storage-stock-split/",
-        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
-        "latest_saved_result": {
-          "accession": "0001628280-26-068243",
-          "filed": "2026-10-29",
-          "form": "8-K",
-          "fp": "Q1",
-          "fy": 2027,
-          "metrics": {
-            "diluted_eps": {
-              "current": 52.6,
-              "prior_year": 0.75,
-              "tag": "SEC earnings release; GAAP",
-              "unit": "USD/shares"
-            },
-            "net_income": {
-              "current": 8101000000.0,
-              "prior_year": 112000000.0,
-              "tag": "SEC earnings release; GAAP",
-              "unit": "USD"
-            },
-            "revenue": {
-              "current": 11031000000.0,
-              "prior_year": 2308000000.0,
-              "tag": "SEC earnings release; GAAP",
-              "unit": "USD"
-            }
-          },
-          "period_end": "2026-10-02",
-          "source": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm"
-        }
-      },
-      "first_seen": "2026-10-30",
-      "id": "716e5cbc24ef3db6fd3a3376",
-      "kind": "article_review",
-      "last_seen": "2026-10-31",
-      "paths": [
-        "content/wealth/sandisk-earnings-ai-storage-stock-split.md",
-        "content/earnings-profiles/sndk.json"
-      ],
-      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
-      "severity": "low",
-      "status": "pending"
-    },
     "71a7f4d71d730d09ff44dde3": {
       "company": "aapl",
       "evidence": {
@@ -5127,6 +5131,64 @@
         "content/earnings-profiles/cvna.json"
       ],
       "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "94a65c4d562492d2d7dabfbc": {
+      "company": "sndk",
+      "evidence": {
+        "article_reviewed": "2026-10-29",
+        "article_sources": [
+          {
+            "title": "SEC-furnished earnings release, 29 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068243/sndkq1-27ex991xpressrelease.htm"
+          },
+          {
+            "title": "Sandisk Q4 FY2026 results",
+            "url": "https://www.sandisk.com/company/newsroom/press-releases/2026/2026-08-05-sandisk-reports-fiscal-fourth-quarter-2026-financial-results"
+          }
+        ],
+        "canonical_path": "/wealth/sandisk-earnings-ai-storage-stock-split/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-068601",
+          "filed": "2026-10-30",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 52.6,
+              "prior_year": 0.75,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 8101000000,
+              "prior_year": 112000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 11031000000,
+              "prior_year": 2308000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-10-02",
+          "source": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026068601/sndk-20261002.htm"
+        }
+      },
+      "first_seen": "2026-10-31",
+      "id": "94a65c4d562492d2d7dabfbc",
+      "kind": "article_review",
+      "last_seen": "2026-10-31",
+      "paths": [
+        "content/wealth/sandisk-earnings-ai-storage-stock-split.md",
+        "content/earnings-profiles/sndk.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
       "severity": "medium",
       "status": "pending"
     },
