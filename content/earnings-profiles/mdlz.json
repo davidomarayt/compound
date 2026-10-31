@@ -2,33 +2,33 @@
   "cik": 1103982,
   "company": "Mondelez International",
   "latest": {
-    "fy": 2026,
-    "fp": "Q3",
-    "period_end": "2026-09-30",
+    "accession": "0001628280-26-068256",
     "filed": "2026-10-29",
-    "form": "8-K",
-    "accession": "0001628280-26-068233",
-    "source": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026068233/mdlzearningsreleasecontent.htm",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
     "metrics": {
-      "revenue": {
-        "current": 9967000000.0,
-        "prior_year": 9744000000.0,
-        "unit": "USD",
-        "tag": "SEC earnings release; GAAP; consolidated net earnings"
-      },
-      "net_income": {
-        "current": 1308000000.0,
-        "prior_year": 746000000.0,
-        "unit": "USD",
-        "tag": "SEC earnings release; GAAP; consolidated net earnings"
-      },
       "diluted_eps": {
         "current": 1.02,
         "prior_year": 0.57,
-        "unit": "USD/shares",
-        "tag": "SEC earnings release; GAAP; consolidated net earnings"
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1305000000,
+        "prior_year": 743000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 9967000000,
+        "prior_year": 9744000000,
+        "tag": "Revenues",
+        "unit": "USD"
       }
-    }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026068256/mdlz-20260930.htm"
   },
   "periods": [
     {
@@ -61,36 +61,65 @@
       "source": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026027937/mdlz-20260331.htm"
     },
     {
+      "accession": "0001628280-26-050179",
+      "filed": "2026-07-28",
+      "form": "10-Q",
+      "fp": "Q2",
       "fy": 2026,
-      "fp": "Q3",
-      "period_end": "2026-09-30",
-      "filed": "2026-10-29",
-      "form": "8-K",
-      "accession": "0001628280-26-068233",
-      "source": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026068233/mdlzearningsreleasecontent.htm",
       "metrics": {
-        "revenue": {
-          "current": 9967000000.0,
-          "prior_year": 9744000000.0,
-          "unit": "USD",
-          "tag": "SEC earnings release; GAAP; consolidated net earnings"
+        "diluted_eps": {
+          "current": 1.2,
+          "prior_year": 0.49,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
         },
         "net_income": {
-          "current": 1308000000.0,
-          "prior_year": 746000000.0,
-          "unit": "USD",
-          "tag": "SEC earnings release; GAAP; consolidated net earnings"
+          "current": 1548000000,
+          "prior_year": 641000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
         },
+        "revenue": {
+          "current": 9355000000,
+          "prior_year": 8984000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026050179/mdlz-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-068256",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
         "diluted_eps": {
           "current": 1.02,
           "prior_year": 0.57,
-          "unit": "USD/shares",
-          "tag": "SEC earnings release; GAAP; consolidated net earnings"
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1305000000,
+          "prior_year": 743000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 9967000000,
+          "prior_year": 9744000000,
+          "tag": "Revenues",
+          "unit": "USD"
         }
-      }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026068256/mdlz-20260930.htm"
     }
   ],
-  "source_type": "US SEC filings and furnished earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "MDLZ",
-  "updated": "2026-10-29"
+  "updated": "2026-10-31"
 }

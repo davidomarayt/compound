@@ -2,33 +2,33 @@
   "cik": 1792789,
   "company": "DoorDash",
   "latest": {
-    "accession": "0001792789-26-000050",
-    "filed": "2026-08-05",
+    "accession": "0001792789-26-000070",
+    "filed": "2026-10-30",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.46,
-        "prior_year": 0.65,
+        "current": 1.06,
+        "prior_year": 0.55,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 200000000,
-        "prior_year": 285000000,
+        "current": 466000000,
+        "prior_year": 244000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4454000000,
-        "prior_year": 3284000000,
+        "current": 4616000000,
+        "prior_year": 3446000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1792789/000179278926000050/dash-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1792789/000179278926000070/dash-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1792789/000179278926000050/dash-20260630.htm"
+    },
+    {
+      "accession": "0001792789-26-000070",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.06,
+          "prior_year": 0.55,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 466000000,
+          "prior_year": 244000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4616000000,
+          "prior_year": 3446000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1792789/000179278926000070/dash-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "DASH",
-  "updated": "2026-10-15"
+  "updated": "2026-10-31"
 }

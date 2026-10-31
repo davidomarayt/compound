@@ -2,33 +2,33 @@
   "cik": 1707925,
   "company": "Linde plc",
   "latest": {
-    "accession": "0001628280-26-051289",
-    "filed": "2026-07-31",
+    "accession": "0001628280-26-068079",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 4.15,
-        "prior_year": 3.73,
+        "current": 3.66,
+        "prior_year": 4.09,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1928000000,
-        "prior_year": 1766000000,
+        "current": 1692000000,
+        "prior_year": 1929000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 9289000000,
-        "prior_year": 8495000000,
+        "current": 9404000000,
+        "prior_year": 8615000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1707925/000162828026051289/lin-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1707925/000162828026068079/lin-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1707925/000162828026051289/lin-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-068079",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.66,
+          "prior_year": 4.09,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1692000000,
+          "prior_year": 1929000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 9404000000,
+          "prior_year": 8615000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1707925/000162828026068079/lin-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "LIN",
-  "updated": "2026-10-15"
+  "updated": "2026-10-31"
 }

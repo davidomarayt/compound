@@ -2,33 +2,33 @@
   "cik": 50863,
   "company": "Intel",
   "latest": {
-    "fy": 2026,
+    "accession": "0000050863-26-000191",
+    "filed": "2026-10-30",
+    "form": "10-Q",
     "fp": "Q3",
-    "period_end": "2026-09-26",
-    "filed": "2026-10-29",
-    "accession": "0000050863-26-000188",
-    "source": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm",
-    "form": "8-K",
+    "fy": 2026,
     "metrics": {
-      "revenue": {
-        "current": 16513000000.0,
-        "prior_year": 13653000000.0,
-        "unit": "USD",
-        "tag": "SEC earnings release; GAAP"
-      },
-      "net_income": {
-        "current": 3520000000.0,
-        "prior_year": 4270000000.0,
-        "unit": "USD",
-        "tag": "SEC earnings release; GAAP; consolidated net income"
-      },
       "diluted_eps": {
         "current": 0.6,
         "prior_year": 0.9,
-        "unit": "USD/shares",
-        "tag": "SEC earnings release; GAAP"
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 3320000000,
+        "prior_year": 4063000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 16513000000,
+        "prior_year": 13653000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
       }
-    }
+    },
+    "period_end": "2026-09-26",
+    "source": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm"
   },
   "periods": [
     {
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000157/intc-20260627.htm"
     },
     {
-      "fy": 2026,
+      "accession": "0000050863-26-000191",
+      "filed": "2026-10-30",
+      "form": "10-Q",
       "fp": "Q3",
-      "period_end": "2026-09-26",
-      "filed": "2026-10-29",
-      "accession": "0000050863-26-000188",
-      "source": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm",
-      "form": "8-K",
+      "fy": 2026,
       "metrics": {
-        "revenue": {
-          "current": 16513000000.0,
-          "prior_year": 13653000000.0,
-          "unit": "USD",
-          "tag": "SEC earnings release; GAAP"
-        },
-        "net_income": {
-          "current": 3520000000.0,
-          "prior_year": 4270000000.0,
-          "unit": "USD",
-          "tag": "SEC earnings release; GAAP; consolidated net income"
-        },
         "diluted_eps": {
           "current": 0.6,
           "prior_year": 0.9,
-          "unit": "USD/shares",
-          "tag": "SEC earnings release; GAAP"
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 3320000000,
+          "prior_year": 4063000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 16513000000,
+          "prior_year": 13653000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
         }
-      }
+      },
+      "period_end": "2026-09-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000191/intc-20260926.htm"
     }
   ],
-  "source_type": "US SEC filings and furnished earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "INTC",
-  "updated": "2026-10-29"
+  "updated": "2026-10-31"
 }

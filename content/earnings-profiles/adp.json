@@ -2,33 +2,33 @@
   "cik": 8670,
   "company": "Automatic Data Processing",
   "latest": {
-    "accession": "0000008670-26-000030",
-    "filed": "2026-08-05",
-    "form": "10-K",
-    "fp": "FY",
-    "fy": 2026,
+    "accession": "0000008670-26-000044",
+    "filed": "2026-10-30",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 10.94,
-        "prior_year": 9.98,
+        "current": 2.83,
+        "prior_year": 2.49,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 4413500000,
-        "prior_year": 4079700000,
+        "current": 1125200000,
+        "prior_year": 1013000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 21947400000,
-        "prior_year": 20560900000,
+        "current": 5490700000,
+        "prior_year": 5175200000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/8670/000000867026000030/adp-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/8670/000000867026000044/adp-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/8670/000000867026000030/adp-20260630.htm"
+    },
+    {
+      "accession": "0000008670-26-000044",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.83,
+          "prior_year": 2.49,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1125200000,
+          "prior_year": 1013000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5490700000,
+          "prior_year": 5175200000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/8670/000000867026000044/adp-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "ADP",
-  "updated": "2026-10-15"
+  "updated": "2026-10-31"
 }

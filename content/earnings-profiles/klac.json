@@ -2,33 +2,33 @@
   "cik": 319201,
   "company": "KLA Corporation",
   "latest": {
-    "accession": "0000319201-26-000027",
-    "filed": "2026-08-06",
-    "form": "10-K",
-    "fp": "FY",
-    "fy": 2026,
+    "accession": "0000319201-26-000034",
+    "filed": "2026-10-29",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 3.66,
-        "prior_year": 3.04,
+        "current": 1.18,
+        "prior_year": 0.85,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 4830771000,
-        "prior_year": 4061643000,
+        "current": 1548588000,
+        "prior_year": 1121040000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 13579476000,
-        "prior_year": 12156162000,
+        "current": 4136015000,
+        "prior_year": 3209696000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/319201/000031920126000034/klac-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/319201/000031920126000027/klac-20260630.htm"
+    },
+    {
+      "accession": "0000319201-26-000034",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.18,
+          "prior_year": 0.85,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1548588000,
+          "prior_year": 1121040000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4136015000,
+          "prior_year": 3209696000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/319201/000031920126000034/klac-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "KLAC",
-  "updated": "2026-10-15"
+  "updated": "2026-10-31"
 }

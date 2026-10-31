@@ -2,33 +2,33 @@
   "cik": 1095073,
   "company": "Everest Group",
   "latest": {
-    "accession": "0001095073-26-000032",
-    "filed": "2026-08-03",
+    "accession": "0001095073-26-000043",
+    "filed": "2026-10-30",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 14.22,
-        "prior_year": 16.1,
+        "current": 6.12,
+        "prior_year": 6.09,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 559000000,
-        "prior_year": 680000000,
+        "current": 233000000,
+        "prior_year": 255000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3961000000,
-        "prior_year": 4491000000,
+        "current": 3713000000,
+        "prior_year": 4319000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1095073/000109507326000032/eg-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1095073/000109507326000043/eg-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1095073/000109507326000032/eg-20260630.htm"
+    },
+    {
+      "accession": "0001095073-26-000043",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 6.12,
+          "prior_year": 6.09,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 233000000,
+          "prior_year": 255000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3713000000,
+          "prior_year": 4319000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1095073/000109507326000043/eg-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "EG",
-  "updated": "2026-10-15"
+  "updated": "2026-10-31"
 }
