@@ -2,33 +2,33 @@
   "cik": 105770,
   "company": "West Pharmaceutical Services",
   "latest": {
-    "accession": "0000105770-26-000099",
-    "filed": "2026-07-23",
+    "accession": "0000105770-26-000121",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.15,
-        "prior_year": 1.82,
+        "current": 3.02,
+        "prior_year": 1.92,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 154000000,
-        "prior_year": 131800000,
+        "current": 214000000,
+        "prior_year": 140000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 872300000,
-        "prior_year": 766500000,
+        "current": 874500000,
+        "prior_year": 804600000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/105770/000010577026000099/wst-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/105770/000010577026000121/wst-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/105770/000010577026000099/wst-20260630.htm"
+    },
+    {
+      "accession": "0000105770-26-000121",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.02,
+          "prior_year": 1.92,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 214000000,
+          "prior_year": 140000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 874500000,
+          "prior_year": 804600000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/105770/000010577026000121/wst-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "WST",
-  "updated": "2026-10-15"
+  "updated": "2026-10-31"
 }
