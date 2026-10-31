@@ -2,33 +2,33 @@
   "cik": 849399,
   "company": "Gen Digital",
   "latest": {
-    "accession": "0000849399-26-000031",
-    "filed": "2026-08-07",
+    "accession": "0000849399-26-000083",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q2",
     "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 0.36,
-        "prior_year": 0.22,
+        "current": 0.48,
+        "prior_year": 0.21,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 215000000,
-        "prior_year": 135000000,
+        "current": 287000000,
+        "prior_year": 134000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1336000000,
-        "prior_year": 1257000000,
+        "current": 1369000000,
+        "prior_year": 1220000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-03",
-    "source": "https://www.sec.gov/Archives/edgar/data/849399/000084939926000031/gen-20260703.htm"
+    "period_end": "2026-10-02",
+    "source": "https://www.sec.gov/Archives/edgar/data/849399/000084939926000083/gen-20261002.htm"
   },
   "periods": [
     {
@@ -59,9 +59,38 @@
       },
       "period_end": "2026-07-03",
       "source": "https://www.sec.gov/Archives/edgar/data/849399/000084939926000031/gen-20260703.htm"
+    },
+    {
+      "accession": "0000849399-26-000083",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.48,
+          "prior_year": 0.21,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 287000000,
+          "prior_year": 134000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1369000000,
+          "prior_year": 1220000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/849399/000084939926000083/gen-20261002.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "GEN",
-  "updated": "2026-10-15"
+  "updated": "2026-10-31"
 }

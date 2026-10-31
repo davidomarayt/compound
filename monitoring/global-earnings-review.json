@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-30",
+  "checked": "2026-10-31",
   "companies_checked": 10,
   "companies": {
     "spcx": {
@@ -202,7 +202,7 @@
       "https://investor.tsmc.com/english/quarterly-results/2026/q2"
     ]
   },
-  "new_review_candidates": 1,
+  "new_review_candidates": 0,
   "pending_review": [
     {
       "id": "ir:1211-hk:https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1029/2026102900816.pdf",

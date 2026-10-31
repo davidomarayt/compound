@@ -2,33 +2,33 @@
   "cik": 14272,
   "company": "Bristol Myers Squibb",
   "latest": {
-    "accession": "0000014272-26-000020",
-    "filed": "2026-07-30",
+    "accession": "0000014272-26-000024",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.62,
-        "prior_year": 0.64,
+        "current": 1.05,
+        "prior_year": 1.08,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 3317000000,
-        "prior_year": 1310000000,
+        "current": 2162000000,
+        "prior_year": 2201000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 12973000000,
-        "prior_year": 12269000000,
+        "current": 13069000000,
+        "prior_year": 12222000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000020/bmy-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000024/bmy-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000020/bmy-20260630.htm"
+    },
+    {
+      "accession": "0000014272-26-000024",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.05,
+          "prior_year": 1.08,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2162000000,
+          "prior_year": 2201000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 13069000000,
+          "prior_year": 12222000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000024/bmy-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "BMY",
-  "updated": "2026-10-15"
+  "updated": "2026-10-31"
 }
