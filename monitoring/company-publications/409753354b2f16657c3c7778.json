@@ -1,0 +1,131 @@
+{
+  "story_fingerprint": "409753354b2f16657c3c7778",
+  "company": "RDDT",
+  "date": "2026-11-01",
+  "status": "prepared",
+  "publication_kind": "new_analysis",
+  "authorization": "Explicit user request to publish this additional Reddit article; this is not a scheduled run and does not alter the scheduled daily limit.",
+  "story_thesis": "Monetisation is growing faster than the audience; assess durability through search dependence, advertiser value and per-share cash economics.",
+  "article_path": "content/wealth/reddit-revenue-user-growth.md",
+  "canonical_url": "https://compound.ie/wealth/reddit-revenue-user-growth/",
+  "sources": [
+    "https://investor.redditinc.com/news-events/news-releases/news-details/2026/Reddit-Reports-Third-Quarter-2026-Results/default.aspx",
+    "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000116/rddt-20260930.htm"
+  ],
+  "identity": {
+    "issuer": "Reddit, Inc.",
+    "CIK": 1713445,
+    "accession": "0001713445-26-000116",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30",
+    "filing_date": "2026-10-30",
+    "currency": "USD"
+  },
+  "duplicate_check": "Checked editorial index, content inventory, JSON inventory and actual wealth sources; Reddit stock profile exists but no dedicated monetisation analysis. Open PRs 57 and 43 are unrelated. Stable analytical URL; no separate quarterly recap.",
+  "claim_checks": [
+    {
+      "claim": "Revenue $895m +53%, DAUq 130.3m +12%, global ARPU $6.87 +36%",
+      "source_indexes": [
+        0,
+        1
+      ],
+      "location_or_arithmetic": "Release key metrics; 10-Q MD&A Overview and Trends in Monetization",
+      "result": "verified in separate second pass"
+    },
+    {
+      "claim": "Growth bridge approximately 52%",
+      "source_indexes": [],
+      "location_or_arithmetic": "(1.12 * 1.36 - 1) * 100 = 52.32%; rounded inputs, not an exact reconciliation",
+      "result": "verified in separate second pass"
+    },
+    {
+      "claim": "Ad prices approximately +34%, impressions approximately +15%",
+      "source_indexes": [
+        1
+      ],
+      "location_or_arithmetic": "10-Q MD&A Trends in Monetization Metrics; attribution to improved outcomes/demand is management explanation",
+      "result": "verified in separate second pass"
+    },
+    {
+      "claim": "Global DAUq flat sequentially, search changes offset other gains",
+      "source_indexes": [
+        1
+      ],
+      "location_or_arithmetic": "10-Q Quarterly Average DAUq discussion",
+      "result": "verified in separate second pass"
+    },
+    {
+      "claim": "AI search summaries can reduce referrals and advertising reach",
+      "source_indexes": [
+        1
+      ],
+      "location_or_arithmetic": "10-Q Risk Factors: search traffic and AI-generated summaries; risk, not quantified forecast",
+      "result": "verified in separate second pass"
+    },
+    {
+      "claim": "Advertising $847m and other revenue $48m",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Release Strong Growth and Fundamentals; 847 / 895 * 100 = 94.64% using rounded figures",
+      "result": "verified in separate second pass"
+    },
+    {
+      "claim": "Operating cash flow $364m and non-GAAP FCF $363m",
+      "source_indexes": [
+        0,
+        1
+      ],
+      "location_or_arithmetic": "Release and 10-Q cash-flow statements: 363.797 - 1.229 = 362.568 USD millions; rounds to 363",
+      "result": "verified in separate second pass"
+    },
+    {
+      "claim": "Stock-based compensation $131.3m added back",
+      "source_indexes": [
+        1
+      ],
+      "location_or_arithmetic": "Cash-flow statement: 131306 USD thousands = 131.306 USD millions; excludes related payroll taxes",
+      "result": "verified in separate second pass"
+    },
+    {
+      "claim": "Third-party hosting explains low owned-infrastructure capex",
+      "source_indexes": [
+        0
+      ],
+      "location_or_arithmetic": "Release non-GAAP discussion; operating-cost implication is analysis",
+      "result": "verified in separate second pass"
+    },
+    {
+      "claim": "DAUq is not a count of distinct people; ARPU definition",
+      "source_indexes": [
+        0,
+        1
+      ],
+      "location_or_arithmetic": "Metric definitions and limitations; quarterly revenue divided by average DAUq",
+      "result": "verified in separate second pass"
+    }
+  ],
+  "fact_check_notes": [
+    "Reported global ARPU uses global revenue; geographic revenue and ARPU use different attribution bases as explained in the 10-Q; no inconsistent geographic ratio is used.",
+    "No current share price, valuation multiple, forecast return or claim of Google indexing is included.",
+    "Management explanations are attributed; investment tests are explicitly analytical. No direct quotations from financial sources."
+  ],
+  "unresolved_material_claims": [],
+  "image": {
+    "source": "https://unsplash.com/photos/red-and-white-8-logo-0FytazjHhxs",
+    "photographer": "Brett Jordan",
+    "license": "Unsplash Licence",
+    "published": "2021-03-23",
+    "capture_date": "unknown; explicitly not equated with publication date",
+    "description": "Archival close-up photograph of Reddit app icon on smartphone screen",
+    "unique_asset": true
+  },
+  "gates": {
+    "offline_tests": "46 passed: news images, finance discovery, earnings review and earnings SEO",
+    "build": "pending",
+    "render": "pending",
+    "ci": "pending",
+    "deployment": "pending"
+  }
+}
