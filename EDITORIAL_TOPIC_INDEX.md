@@ -18,7 +18,7 @@ For the complete register (including 510+ company profiles), open
 - [AI therapy in Ireland: 61% say they use AI for mental health — but what does the evidence actually show?](https://compound.ie/news/ai-therapy-ireland-chatgpt-mental-health/) — **Life**
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/) — **Wealth**
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/) — **Wealth**
-- [Alphabet's cash-flow squeeze: why strong Cloud growth is not the whole story](https://compound.ie/wealth/alphabet-ai-capex-free-cash-flow/) — **Wealth**
+- [Alphabet's cash-flow squeeze deepens as Cloud doubles](https://compound.ie/wealth/alphabet-ai-capex-free-cash-flow/) — **Wealth**
 - [Alphabet’s European AI opportunity comes with conditions](https://compound.ie/wealth/alphabet-europe-ai-sovereignty/) — **Wealth**
 - [Amazon Earnings: AWS Accelerates, but the Cash Bill Keeps Growing](https://compound.ie/wealth/amazon-aws-profit-investment-gains/) — **Wealth**
 - [Amazon Stock Guide: AWS, Retail, Advertising and Cash Flow](https://compound.ie/wealth/amazon-aws-retail-economics-2026/) — **Wealth**
