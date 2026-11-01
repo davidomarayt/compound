@@ -2,33 +2,33 @@
   "cik": 1396009,
   "company": "Vulcan Materials Company",
   "latest": {
-    "accession": "0001628280-26-028318",
-    "filed": "2026-04-29",
+    "accession": "0001628280-26-068102",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.26,
-        "prior_year": 0.97,
+        "current": 2.8,
+        "prior_year": 2.82,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 165500000,
-        "prior_year": 128900000,
+        "current": 362300000,
+        "prior_year": 374900000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1755900000,
-        "prior_year": 1634600000,
+        "current": 2184600000,
+        "prior_year": 2291500000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1396009/000162828026028318/vmc-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1396009/000162828026068102/vmc-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1396009/000162828026028318/vmc-20260331.htm"
+    },
+    {
+      "accession": "0001628280-26-050486",
+      "filed": "2026-07-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.48,
+          "prior_year": 2.42,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 323400000,
+          "prior_year": 320900000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2155800000,
+          "prior_year": 2102400000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1396009/000162828026050486/vmc-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-068102",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.8,
+          "prior_year": 2.82,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 362300000,
+          "prior_year": 374900000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2184600000,
+          "prior_year": 2291500000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1396009/000162828026068102/vmc-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "VMC",
-  "updated": "2026-10-15"
+  "updated": "2026-11-01"
 }
