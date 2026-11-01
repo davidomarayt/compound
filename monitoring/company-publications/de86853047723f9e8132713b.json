@@ -2,9 +2,9 @@
   "story_fingerprint": "de86853047723f9e8132713b",
   "company": "GOOGL",
   "date": "2026-11-01",
-  "status": "proposed",
-  "publication_state": "proposed_existing_content_update",
-  "reason": "Alphabet's Q3 primary documents materially update the canonical AI-capex and cash-conversion analysis; publication remains pending all repository, CI, merge, deployment and live-verification gates.",
+  "status": "published",
+  "publication_state": "live_verified_existing_content_update",
+  "reason": "Alphabet's Q3 primary documents materially updated the canonical AI-capex and cash-conversion analysis. The verified existing-content update passed its applicable gates, merged at the expected head and is live at the stable canonical URL.",
   "publication_kind": "existing_content_update",
   "new_articles_published": 0,
   "story_thesis": "Google Cloud's operating growth strengthened while Alphabet's quarterly free-cash-flow deficit widened because property-and-equipment purchases rose faster than operating cash flow.",
@@ -147,22 +147,37 @@
     "render": "Passed in Chromium 153 at 390px and 1440px: title, dated update, changed claim markers, production canonical and social metadata present; cover loaded, no JavaScript errors and no horizontal overflow.",
     "image_assets": "Passed: existing 1600x900 licensed Google Dublin JPEG retained; actual generated 1200x675 Open Graph/Twitter WebP visually inspected and hashed f664c1849746688fb27733893a863759882e75150ec310a9a2807d7fb4328872.",
     "internal_links": "Passed: all 47 root-relative links in the rendered article shell and body resolved in the production build.",
-    "exact_head_ci": "pending",
-    "deployment": "pending"
+    "exact_head_ci": "Passed on exact PR head c8b68da37ef2d8c585bd13a2e803972794f81356 in CI run 41289285215: repository tests and production build passed; an initial homepage Total Blocking Time variance failed at 531 ms against 350 ms, and one unmodified-head retry passed the full performance job without weakening or bypassing the gate.",
+    "deployment": "Passed in site workflow run 41290703291 for merge commit 9295c26f1aefba66eb093ea0e2543d090f315618: build, deploy, verify-live and mobile-audit all succeeded."
   },
   "workflow_health": {
     "earnings_review_queue": "Run 41203931884 succeeded on 31 October; the local queue was stale and refreshed on 1 November before review.",
     "earnings_monitor": "Run 41264653769 succeeded on 1 November.",
-    "site": "Run 41264721125 succeeded for current branch head ee6893f9, including build, deploy, verify-live and mobile-audit jobs.",
+    "site": "Run 41290703291 succeeded for merge commit 9295c26f1aefba66eb093ea0e2543d090f315618, including build, deploy, verify-live and mobile-audit jobs.",
     "mag7": "Run 41210677852 failed on 31 October in the research-and-publish step; no live-model retry was attempted.",
     "publication_protocol_incident": "Commit e426db069e59fe768559ebe052728616ac963665 published three new articles directly to the publishing branch at 01:30 UTC on 1 November. The three live pages and social-image metadata were verified, but no publication PR or company-publication audit record exists and the one-new-article Dublin-day limit was exceeded. This run therefore creates no new article."
   },
   "pull_request": "https://github.com/davidomarayt/compound/pull/68",
-  "validated_head_sha": null,
-  "merge_commit_sha": null,
-  "deployment_url": null,
-  "live_verified_at": null,
-  "live_verification": null,
+  "validated_head_sha": "c8b68da37ef2d8c585bd13a2e803972794f81356",
+  "merge_commit_sha": "9295c26f1aefba66eb093ea0e2543d090f315618",
+  "deployment_url": "https://github.com/davidomarayt/compound/actions/runs/41290703291",
+  "live_verified_at": "2026-11-01T09:02:43.484Z",
+  "live_verification": {
+    "http_status": 200,
+    "canonical_url": "https://compound.ie/wealth/alphabet-ai-capex-free-cash-flow/",
+    "title_present": true,
+    "dated_update_present": true,
+    "changed_claims_present": [
+      "Q3 revenue USD127.577bn",
+      "Q3 free cash flow negative USD9.065bn"
+    ],
+    "canonical_present": true,
+    "social_image_url": "https://compound.ie/static/discover/alphabet-ai-capex-free-cash-flow-16x9.webp",
+    "social_image_http_status": 200,
+    "social_image_dimensions": "1200x675",
+    "social_image_sha256": "f664c1849746688fb27733893a863759882e75150ec310a9a2807d7fb4328872",
+    "social_image_visually_inspected": true
+  },
   "visual_qa": [
     {
       "width": 390,
