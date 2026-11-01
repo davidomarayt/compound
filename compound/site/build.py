@@ -23,6 +23,7 @@ from PIL import Image, ImageOps
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from compound.config import Settings
+from compound.site.finance_discovery import catalogue, source_links, write_discovery
 from compound.site.pia import load_pia_tracker
 from compound.site.earnings_view import load_company_report
 from compound.site.earnings_archive import prepare_recent_earnings
@@ -1078,7 +1079,7 @@ def build_site(settings: Settings) -> dict:
             unknown = [slug for slug in article.related_tools if slug not in tools_by_slug]
             if unknown:
                 raise ValueError(f"Unknown related_tools on {article.slug}: {unknown}")
-    reserved = {"/", "/search/", "/tools/", "/news/", "/pia/", "/pia/providers/", "/wealth/earnings/", "/stocks/", "/companies/", "/compound-interest-calculator/", "/bmi-calculator/"}
+    reserved = {"/finance/", "/", "/search/", "/tools/", "/news/", "/pia/", "/pia/providers/", "/wealth/earnings/", "/stocks/", "/companies/", "/compound-interest-calculator/", "/bmi-calculator/"}
     reserved.update(tool["url"] for tool in tools)
     reserved.update(f"/{p}/" for p in PILLARS)
     reserved.update(pg.url for pg in pages)
@@ -1754,6 +1755,8 @@ def build_site(settings: Settings) -> dict:
     )
     _write(
         out / "robots.txt",
+        f"# Public pages are available to search and AI crawlers.\n"
+        f"# Optional discovery catalogue: {settings.site_base_url}/llms.txt\n"
         f"User-agent: *\nDisallow: /preview/\n"
         f"Sitemap: {settings.site_base_url}/sitemap.xml\n"
         f"Sitemap: {settings.site_base_url}/news-sitemap.xml\n",
@@ -1768,6 +1771,7 @@ def build_site(settings: Settings) -> dict:
         _write(out / "ads.txt", f"google.com, {client.removeprefix('ca-')}, DIRECT, f08c47fec0942fa0\n")
     sitemap_entries: list[tuple[str, str | None]] = [
         (settings.site_base_url + "/", None),
+        (settings.site_base_url + "/finance/", None),
         (settings.site_base_url + "/news/", None),
         (settings.site_base_url + "/wealth/earnings/", None),
         (settings.site_base_url + "/stocks/", None),
@@ -1841,6 +1845,23 @@ def build_site(settings: Settings) -> dict:
         existing = sitemap_by_url.get(url)
         if url not in sitemap_by_url or (lastmod and (not existing or lastmod > existing)):
             sitemap_by_url[url] = lastmod
+
+    # Select source-backed profiles; the complete stock register stays in the sitemap.
+    discovery_stocks = []
+    for company in registry_members:
+        report = company_dashboards.get(str(company["cik"]))
+        if company["symbol"] not in EARNINGS_SEO_PRIORITY or not report:
+            continue
+        discovery_stocks.append({
+            "title": f'{company["name"]} ({company["symbol"]})',
+            "url": f'/stocks/{company["symbol"].lower()}/',
+            "description": "Company profile with reported financial results, filings and related analysis.",
+            "ticker": company["symbol"], "fiscal_period": report["latest_label"],
+            "period_end": report["latest_end"], "filed": report["latest_filed"],
+            "sources": source_links([{"url": report["latest_source"], "title": "Original SEC filing"}]),
+        })
+    finance = catalogue(settings.site_base_url, articles, tools, discovery_stocks, has_calculator)
+    write_discovery(settings.site_base_url, out, env, finance, sitemap_by_url)
 
     sitemap_rows = []
     for url, lastmod in sitemap_by_url.items():

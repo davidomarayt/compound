@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block meta %}<meta name="description" content="Find Compound's investing guides, company earnings analysis and financial calculators, with canonical links, coverage dates and original sources.">{% endblock %}
+{% block head %}
+<link rel="canonical" href="{{ catalogue.url }}">
+<link rel="alternate" type="application/json" href="{{ site_url }}/finance/index.json" title="Finance index JSON">
+<script type="application/ld+json">{{ schema|tojson }}</script>
+{% endblock %}
+{% block content %}
+<article class="info-page"><div class="article-prose">
+<header><p class="eyebrow">COMPOUND / FINANCE</p><h1>Finance directory</h1>
+<p>Start with an investing guide, explore company results, or model a financial decision.</p></header>
+<p>{{ catalogue.guidance }}</p>
+<p><a href="/finance/index.json">Download the source-linked JSON index</a> · <a href="/stocks/">All stock profiles</a> · <a href="/tools/">All calculators</a> · <a href="/editorial-policy/">Editorial policy</a></p>
+<nav aria-label="Finance directory sections">{% for group in groups %}<a href="#section-{{ loop.index }}">{{ group }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</nav>
+{% for group in groups %}
+<section id="section-{{ loop.index }}"><h2>{{ group }}</h2>
+<ul>{% for entry in catalogue.entries if entry.kind == group %}
+<li><h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3><p>{{ entry.description }}</p>
+{% if entry.published %}<p>Published: {{ entry.published }}{% if entry.modified %} · Updated: {{ entry.modified }}{% endif %}</p>{% elif entry.modified %}<p>Updated: {{ entry.modified }}</p>{% endif %}
+{% if entry.fiscal_period %}<p>Fiscal period: {{ entry.fiscal_period }} · Period ended: {{ entry.period_end }} · Filed: {{ entry.filed }}</p>{% endif %}
+{% if entry.requires_javascript_for_calculation %}<p>Calculation requires JavaScript; read the page for inputs, assumptions and limitations.</p>{% endif %}
+{% if entry.sources %}<details><summary>Sources linked by this content</summary><ul>{% for source in entry.sources %}<li><a href="{{ source.url }}" rel="noopener">{{ source.title }}</a></li>{% endfor %}</ul></details>{% else %}<p>See the page for methodology and coverage limitations.</p>{% endif %}</li>
+{% endfor %}</ul></section>
+{% endfor %}
+</div></article>
+{% endblock %}
