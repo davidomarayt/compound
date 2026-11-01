@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-10-31",
+  "snapshot_date": "2026-11-01",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -530,6 +530,23 @@
         "status": "published"
       },
       {
+        "title": "Caterpillar Earnings: Why the Margin Matters More Than the Sales Headline",
+        "url": "/wealth/caterpillar-margin-growth/",
+        "source": "content/wealth/caterpillar-margin-growth.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "caterpillar-margin-growth",
+        "date": "2026-11-01",
+        "reviewed": "2026-11-01",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "cat"
+        ],
+        "status": "published"
+      },
+      {
         "title": "CEG vs SRESS in Ireland: which solar export route fits your project?",
         "url": "/wealth/ceg-vs-sress-ireland/",
         "source": "content/wealth/ceg-vs-sress-ireland.md",
@@ -997,6 +1014,23 @@
           "home-business",
           "exempted-development",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "GE Vernova: The $197 Billion Backlog Still Has to Become Profit",
+        "url": "/wealth/ge-vernova-backlog-cash-flow/",
+        "source": "content/wealth/ge-vernova-backlog-cash-flow.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "ge-vernova-backlog-cash-flow",
+        "date": "2026-11-01",
+        "reviewed": "2026-11-01",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "gev"
         ],
         "status": "published"
       },
@@ -3980,6 +4014,23 @@
           "prsi",
           "family-finance",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Visa Earnings: Strong Payment Growth, but Watch the Incentives",
+        "url": "/wealth/visa-payments-growth-incentives/",
+        "source": "content/wealth/visa-payments-growth-incentives.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "visa-payments-growth-incentives",
+        "date": "2026-11-01",
+        "reviewed": "2026-11-01",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "v"
         ],
         "status": "published"
       },
