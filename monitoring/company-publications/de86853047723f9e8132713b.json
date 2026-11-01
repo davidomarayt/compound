@@ -144,7 +144,7 @@
     "existing_update": "authorised by the 29 October extension",
     "offline_tests": "Passed: 61 offline tests covering earnings review, image metadata/cache handling, earnings SEO, one-company earnings, recent earnings, home hubs and solar hub.",
     "full_build": "Passed after standard image preparation: 225 articles, 657 tags, 25 pages and 57 tools; production canonical base URL used.",
-    "render": "Rendered production HTML passed structural inspection for title, update note, claim markers, canonical and social metadata. Responsive browser inspection remains pending the exact-head preview because a local Chromium binary was unavailable.",
+    "render": "Passed in Chromium 153 at 390px and 1440px: title, dated update, changed claim markers, production canonical and social metadata present; cover loaded, no JavaScript errors and no horizontal overflow.",
     "image_assets": "Passed: existing 1600x900 licensed Google Dublin JPEG retained; actual generated 1200x675 Open Graph/Twitter WebP visually inspected and hashed f664c1849746688fb27733893a863759882e75150ec310a9a2807d7fb4328872.",
     "internal_links": "Passed: all 47 root-relative links in the rendered article shell and body resolved in the production build.",
     "exact_head_ci": "pending",
@@ -157,11 +157,35 @@
     "mag7": "Run 41210677852 failed on 31 October in the research-and-publish step; no live-model retry was attempted.",
     "publication_protocol_incident": "Commit e426db069e59fe768559ebe052728616ac963665 published three new articles directly to the publishing branch at 01:30 UTC on 1 November. The three live pages and social-image metadata were verified, but no publication PR or company-publication audit record exists and the one-new-article Dublin-day limit was exceeded. This run therefore creates no new article."
   },
-  "pull_request": null,
+  "pull_request": "https://github.com/davidomarayt/compound/pull/68",
   "validated_head_sha": null,
   "merge_commit_sha": null,
   "deployment_url": null,
   "live_verified_at": null,
   "live_verification": null,
+  "visual_qa": [
+    {
+      "width": 390,
+      "http": 200,
+      "changed_text": true,
+      "update_note": true,
+      "canonical": true,
+      "social_metadata": true,
+      "cover_loaded": true,
+      "no_horizontal_overflow": true,
+      "javascript_errors": []
+    },
+    {
+      "width": 1440,
+      "http": 200,
+      "changed_text": true,
+      "update_note": true,
+      "canonical": true,
+      "social_metadata": true,
+      "cover_loaded": true,
+      "no_horizontal_overflow": true,
+      "javascript_errors": []
+    }
+  ],
   "validated_content_sha256": "12382898c5696df3da1120a6f470094b817863145db8084427ab969e9a6d1030"
 }
