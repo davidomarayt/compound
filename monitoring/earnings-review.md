@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-10-31
+Checked: 2026-11-01
 
-- 448 saved profiles checked against structural and issuer rules.
-- 45 existing company articles; 44 mapped to monitored issuers.
-- 118 pending review items; 5 recorded decisions.
+- 449 saved profiles checked against structural and issuer rules.
+- 48 existing company articles; 47 mapped to monitored issuers.
+- 107 pending review items; 18 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -18,86 +18,6 @@ ID: `05d9e53f1fdf6d05053a8d15`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/molina-healthcare-earnings-medicaid-margins.md`
-
-### AMZN · article_review · medium
-
-ID: `4d9a2674d220577acda117ba`
-
-Newer filing than the article review date; assess whether claims or outlook need updating.
-
-Files: `content/wealth/amazon-aws-profit-investment-gains.md`, `content/earnings-profiles/amzn.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-30
-
-### AMZN · article_review · medium
-
-ID: `b50ca524c1c6a7e8f4d50678`
-
-Newer filing than the article review date; assess whether claims or outlook need updating.
-
-Files: `content/wealth/amazon-germany-investment-returns.md`, `content/earnings-profiles/amzn.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-30
-
-### AMZN · article_review · medium
-
-ID: `f999a9c496888e1764fcaa15`
-
-Newer filing than the article review date; assess whether claims or outlook need updating.
-
-Files: `content/wealth/anthropic-loss-ipo-valuation.md`, `content/earnings-profiles/amzn.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-30
-
-### GOOGL · article_review · medium
-
-ID: `572fa2d4f20a8c799e20bbe5`
-
-Newer filing than the article review date; assess whether claims or outlook need updating.
-
-Files: `content/wealth/anthropic-loss-ipo-valuation.md`, `content/earnings-profiles/googl.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
-
-### GOOGL · article_review · medium
-
-ID: `5d4baf47ddc4ca5acd475301`
-
-Newer filing than the article review date; assess whether claims or outlook need updating.
-
-Files: `content/wealth/alphabet-search-ai-economics-2026.md`, `content/earnings-profiles/googl.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
-
-### GOOGL · article_review · medium
-
-ID: `a1f97c61e7dddf2a846b965d`
-
-Newer filing than the article review date; assess whether claims or outlook need updating.
-
-Files: `content/wealth/alphabet-europe-ai-sovereignty.md`, `content/earnings-profiles/googl.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
-
-### GOOGL · article_review · medium
-
-ID: `e52b44034a293995fc7b9b41`
-
-Newer filing than the article review date; assess whether claims or outlook need updating.
-
-Files: `content/wealth/nokia-ai-growth-cash-flow.md`, `content/earnings-profiles/googl.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
-
-### GOOGL · article_review · medium
-
-ID: `e82691c591b5c60ecf2792f7`
-
-Newer filing than the article review date; assess whether claims or outlook need updating.
-
-Files: `content/wealth/alphabet-ai-capex-free-cash-flow.md`, `content/earnings-profiles/googl.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
 
 ### IBM · article_review · medium
 
@@ -158,16 +78,6 @@ Newer filing than the article review date; assess whether claims or outlook need
 Files: `content/wealth/netflix-earnings-growth-advertising-outlook.md`, `content/earnings-profiles/nflx.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1065280/000106528026000291/nflx-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-21
-
-### SNDK · article_review · medium
-
-ID: `94a65c4d562492d2d7dabfbc`
-
-Newer filing than the article review date; assess whether claims or outlook need updating.
-
-Files: `content/wealth/sandisk-earnings-ai-storage-stock-split.md`, `content/earnings-profiles/sndk.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/2023554/000162828026068601/sndk-20261002.htm · Q1 FY2027 · period end 2026-10-02 · filed 2026-10-30
 
 ### SPCX · article_review · medium
 
@@ -855,14 +765,6 @@ No saved profile for an active issuer. Check ingestion and official filings; nev
 
 Files: `content/earnings-profiles/well.json`
 
-### XEL · coverage_check · medium
-
-ID: `ca715e1d2f304b929a7414f2`
-
-No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.
-
-Files: `content/earnings-profiles/xel.json`
-
 ### AAPL · article_review · low
 
 ID: `1bea8c821e7c01c617c8d9b1`
@@ -913,6 +815,24 @@ Files: `content/wealth/bloom-energy-earnings-growth-cash-flow.md`, `content/earn
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1664703/000162828026066890/ex991_q326financialresults.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
 
+### CAT · article_review · low
+
+ID: `b36ec9d95333287b314877a8`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/caterpillar-margin-growth.md`, `content/earnings-profiles/cat.json`
+
+### GEV · article_review · low
+
+ID: `d68353ecb0ad4d7f0cc36d05`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/ge-vernova-backlog-cash-flow.md`, `content/earnings-profiles/gev.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-28
+
 ### HON · article_review · low
 
 ID: `12374d854994476420edb231`
@@ -923,16 +843,6 @@ Files: `content/wealth/honeywell-earnings-organic-growth-guidance.md`, `content/
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/773840/000077384026000143/hon-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
 
-### INTC · article_review · low
-
-ID: `e14ce27f35a0c37133eb0b1f`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/intel-earnings-data-centre-growth-guidance.md`, `content/earnings-profiles/intc.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/50863/000005086326000188/q326earningsrelease.htm · Q3 FY2026 · period end 2026-09-26 · filed 2026-10-29
-
 ### ISRG · article_review · low
 
 ID: `2af41703040c47299beb8789`
@@ -942,36 +852,6 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/intuitive-surgical-earnings-growth-legal-charge.md`, `content/earnings-profiles/isrg.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1035267/000103526726000071/isrg-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-21
-
-### LLY · article_review · low
-
-ID: `26e50d3a5616f1480ac3324a`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/eli-lilly-metis-drug-delivery-deal.md`, `content/earnings-profiles/lly.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-08-05
-
-### LLY · article_review · low
-
-ID: `27ee9db14d3fb85915468670`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/eli-lilly-foundayo-obesity-growth-2026-10-19.md`, `content/earnings-profiles/lly.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-08-05
-
-### LLY · article_review · low
-
-ID: `8c1197cbb2c4b601025dcbbc`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/eli-lilly-foundayo-europe-approval-glp1-2026.md`, `content/earnings-profiles/lly.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/59478/000005947826000081/lly-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-08-05
 
 ### LRCX · article_review · low
 
@@ -1072,6 +952,14 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/ttwo-gta-6-entertainment-launch-revenue.md`, `content/earnings-profiles/ttwo.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/946581/000162828026054870/ttwo-20260630.htm · Q1 FY2027 · period end 2026-06-30 · filed 2026-08-07
+
+### V · article_review · low
+
+ID: `462fc19807716278c57ba8aa`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/visa-payments-growth-incentives.md`, `content/earnings-profiles/v.json`
 
 ### WDC · article_review · low
 

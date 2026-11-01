@@ -1,0 +1,191 @@
+{
+  "story_fingerprint": "de86853047723f9e8132713b",
+  "company": "GOOGL",
+  "date": "2026-11-01",
+  "status": "proposed",
+  "publication_state": "proposed_existing_content_update",
+  "reason": "Alphabet's Q3 primary documents materially update the canonical AI-capex and cash-conversion analysis; publication remains pending all repository, CI, merge, deployment and live-verification gates.",
+  "publication_kind": "existing_content_update",
+  "new_articles_published": 0,
+  "story_thesis": "Google Cloud's operating growth strengthened while Alphabet's quarterly free-cash-flow deficit widened because property-and-equipment purchases rose faster than operating cash flow.",
+  "article_path": "content/wealth/alphabet-ai-capex-free-cash-flow.md",
+  "canonical_url": "https://compound.ie/wealth/alphabet-ai-capex-free-cash-flow/",
+  "queue_ids": [
+    "f73b4125bac52f62c81f9bc3",
+    "5d4baf47ddc4ca5acd475301",
+    "a1f97c61e7dddf2a846b965d"
+  ],
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+    "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+  ],
+  "identity": {
+    "issuer": "Alphabet Inc.",
+    "CIK": 1652044,
+    "accession": "0001652044-26-000084",
+    "period_end": "2026-09-30",
+    "form": "10-Q",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "currency": "USD",
+    "units": "USD millions except per-share data"
+  },
+  "evidence_table": [
+    {
+      "claim": "Q3 revenue was USD127.577bn and operating income was USD40.576bn.",
+      "source_index": 0,
+      "location": "Q3 2026 financial highlights and consolidated results",
+      "result": "Confirmed as GAAP consolidated figures for the three months ended 30 September 2026."
+    },
+    {
+      "claim": "Google Cloud revenue was USD30.709bn, up 103%, and segment operating income was USD11.121bn versus USD3.594bn.",
+      "source_index": 0,
+      "location": "Segment revenues and operating results",
+      "arithmetic": "11.121 / 30.709 = 36.2141% Q3 Cloud operating margin; 3.594 / 15.157 = 23.7118% prior-year margin.",
+      "result": "Confirmed; segment profit is not described as standalone free cash flow."
+    },
+    {
+      "claim": "Quarterly operating cash flow was USD42.290bn, property-and-equipment purchases were USD51.355bn and company-defined free cash flow was negative USD9.065bn.",
+      "source_index": 0,
+      "location": "Reconciliation from GAAP net cash provided by operating activities to non-GAAP free cash flow",
+      "arithmetic": "42.290 - 51.355 = -9.065",
+      "result": "Confirmed; the article labels free cash flow as Alphabet's definition."
+    },
+    {
+      "claim": "Q2 free cash flow was negative USD5.855bn and the Q3 deficit widened by USD3.210bn.",
+      "source_index": 0,
+      "location": "Quarterly free-cash-flow reconciliation",
+      "arithmetic": "(-9.065) - (-5.855) = -3.210",
+      "result": "Confirmed as a sequential comparison, not an annual cash-flow claim."
+    },
+    {
+      "claim": "Trailing-twelve-month free cash flow remained positive at USD19.747bn.",
+      "source_index": 0,
+      "location": "Trailing-twelve-month free-cash-flow reconciliation",
+      "result": "Confirmed; explicitly kept distinct from the negative quarter."
+    },
+    {
+      "claim": "Nine-month operating cash flow was USD127.149bn and property-and-equipment purchases were USD131.953bn, implying negative USD4.804bn after the same subtraction.",
+      "source_index": 1,
+      "location": "Consolidated statements of cash flows",
+      "arithmetic": "127.149 - 131.953 = -4.804",
+      "result": "Confirmed as Compound arithmetic using GAAP cash-flow lines, not a separately reported nine-month non-GAAP figure."
+    },
+    {
+      "claim": "Nine-month capital expenditure more than doubled from USD63.596bn; assets not yet in service were USD145.270bn versus USD78.592bn at year-end 2025 and may take months to years to enter service.",
+      "source_index": 1,
+      "location": "Cash-flow statement; property-and-equipment note; capital-expenditure MD&A",
+      "arithmetic": "131.953 / 63.596 - 1 = 107.4863% increase",
+      "result": "Confirmed; assets not yet in service are primarily technical infrastructure."
+    },
+    {
+      "claim": "At unchanged Q3 operating cash flow, purchases would need to fall 17.7% for free cash flow to reach zero; at unchanged purchases, operating cash flow would need to rise 21.4%.",
+      "source_index": 0,
+      "location": "Compound sensitivity using the reported Q3 cash-flow reconciliation",
+      "arithmetic": "9.065 / 51.355 = 17.6516%; 9.065 / 42.290 = 21.4353%",
+      "result": "Recomputed independently and labelled as sensitivity, not guidance."
+    },
+    {
+      "claim": "Alphabet expects 2026 technical-infrastructure investment to increase significantly from 2025; Cloud profit growth was partly offset by TPU-system inventory costs and technical-infrastructure usage costs.",
+      "source_index": 1,
+      "location": "Capital Expenditures and Leases; Google Cloud MD&A",
+      "result": "Confirmed as management commentary and cost attribution, not Compound guidance."
+    }
+  ],
+  "fact_check_pass": {
+    "method": "After drafting, every material number, period label, GAAP/non-GAAP description, management statement and derived percentage was reread against the SEC-furnished release and Form 10-Q; all arithmetic was recomputed separately with decimal inputs.",
+    "unresolved_added_claims": []
+  },
+  "duplicate_checks": [
+    "Editorial topic index, Markdown inventory, JSON inventory and related Alphabet articles inspected.",
+    "The reader question already has this canonical article, so no new article was created.",
+    "Open and recently merged pull requests inspected; no active Alphabet publication attempt or matching fingerprint was found.",
+    "Current live canonical content was checked before drafting and still contained the Q2 version.",
+    "Three unrelated new articles were already published directly on the Dublin calendar date; this update is an existing-content correction and records zero new articles."
+  ],
+  "image": {
+    "action": "Preserve the existing topic-specific Google Dublin photograph and provenance.",
+    "new_image": "not_applicable",
+    "asset": "/static/images/evergreen/alphabet-ai-capex-free-cash-flow.jpg",
+    "dimensions": "1600x900",
+    "sha256": "f8f01b0cc25e2b038d5fb8730e17fb079c0b9ac1fd7d5008d32ab37202627085",
+    "photographer": "Stephen Bergin",
+    "source": "https://unsplash.com/photos/low-angle-photo-of-curtain-wall-building-T9FyciKxlfU",
+    "licence": "Unsplash License",
+    "licence_url": "https://unsplash.com/license",
+    "archive_label": "Published 27 February 2017; capture date not independently verified",
+    "alt": "Google office buildings and sky bridge in Dublin; archival company photograph.",
+    "verified": "The source page identifies Stephen Bergin, Google's Dublin headquarters, a 27 February 2017 publication date and free use under the Unsplash License; the licence page was directly inspected on 1 November 2026."
+  },
+  "review_budget": [
+    {
+      "company": "GOOGL",
+      "decision": "Update the canonical AI-capex/cash-flow article from the Q3 release and Form 10-Q; do not create a duplicate article."
+    },
+    {
+      "company": "AMZN",
+      "decision": "No correction: the Q3 Form 10-Q confirms the canonical release-based article's revenue, AWS segment and trailing cash-flow figures; unrelated contextual articles remain historical."
+    },
+    {
+      "company": "INTC",
+      "decision": "No correction: the Q3 Form 10-Q confirms the canonical article's revenue, DCAI, intersegment eliminations and release guidance."
+    },
+    {
+      "company": "SNDK",
+      "decision": "No correction: the Q1 FY2027 Form 10-Q confirms the release-based article's revenue, segment mix, GAAP EPS and pre-split basis."
+    },
+    {
+      "company": "LLY",
+      "decision": "No correction: the Q3 release and Form 10-Q do not change the dated regulatory, collaboration or evergreen questions in the three reviewed articles; routine results remain on the maintained company page."
+    }
+  ],
+  "gates": {
+    "new_article": "not_applicable: canonical existing-content update; today's new-article allowance is already exhausted",
+    "existing_update": "authorised by the 29 October extension",
+    "offline_tests": "Passed: 61 offline tests covering earnings review, image metadata/cache handling, earnings SEO, one-company earnings, recent earnings, home hubs and solar hub.",
+    "full_build": "Passed after standard image preparation: 225 articles, 657 tags, 25 pages and 57 tools; production canonical base URL used.",
+    "render": "Passed in Chromium 153 at 390px and 1440px: title, dated update, changed claim markers, production canonical and social metadata present; cover loaded, no JavaScript errors and no horizontal overflow.",
+    "image_assets": "Passed: existing 1600x900 licensed Google Dublin JPEG retained; actual generated 1200x675 Open Graph/Twitter WebP visually inspected and hashed f664c1849746688fb27733893a863759882e75150ec310a9a2807d7fb4328872.",
+    "internal_links": "Passed: all 47 root-relative links in the rendered article shell and body resolved in the production build.",
+    "exact_head_ci": "pending",
+    "deployment": "pending"
+  },
+  "workflow_health": {
+    "earnings_review_queue": "Run 41203931884 succeeded on 31 October; the local queue was stale and refreshed on 1 November before review.",
+    "earnings_monitor": "Run 41264653769 succeeded on 1 November.",
+    "site": "Run 41264721125 succeeded for current branch head ee6893f9, including build, deploy, verify-live and mobile-audit jobs.",
+    "mag7": "Run 41210677852 failed on 31 October in the research-and-publish step; no live-model retry was attempted.",
+    "publication_protocol_incident": "Commit e426db069e59fe768559ebe052728616ac963665 published three new articles directly to the publishing branch at 01:30 UTC on 1 November. The three live pages and social-image metadata were verified, but no publication PR or company-publication audit record exists and the one-new-article Dublin-day limit was exceeded. This run therefore creates no new article."
+  },
+  "pull_request": "https://github.com/davidomarayt/compound/pull/68",
+  "validated_head_sha": null,
+  "merge_commit_sha": null,
+  "deployment_url": null,
+  "live_verified_at": null,
+  "live_verification": null,
+  "visual_qa": [
+    {
+      "width": 390,
+      "http": 200,
+      "changed_text": true,
+      "update_note": true,
+      "canonical": true,
+      "social_metadata": true,
+      "cover_loaded": true,
+      "no_horizontal_overflow": true,
+      "javascript_errors": []
+    },
+    {
+      "width": 1440,
+      "http": 200,
+      "changed_text": true,
+      "update_note": true,
+      "canonical": true,
+      "social_metadata": true,
+      "cover_loaded": true,
+      "no_horizontal_overflow": true,
+      "javascript_errors": []
+    }
+  ],
+  "validated_content_sha256": "12382898c5696df3da1120a6f470094b817863145db8084427ab969e9a6d1030"
+}
