@@ -2,33 +2,33 @@
   "cik": 1113169,
   "company": "T. Rowe Price",
   "latest": {
-    "accession": "0001628280-26-051335",
-    "filed": "2026-07-31",
+    "accession": "0001113169-26-000005",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.88,
-        "prior_year": 2.24,
+        "current": 2.79,
+        "prior_year": 2.87,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 632000000,
-        "prior_year": 505200000,
+        "current": 612300000,
+        "prior_year": 646100000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1907400000,
-        "prior_year": 1723300000,
+        "current": 2004900000,
+        "prior_year": 1893500000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026051335/trow-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1113169/000111316926000005/trow-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1113169/000162828026051335/trow-20260630.htm"
+    },
+    {
+      "accession": "0001113169-26-000005",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.79,
+          "prior_year": 2.87,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 612300000,
+          "prior_year": 646100000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2004900000,
+          "prior_year": 1893500000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1113169/000111316926000005/trow-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TROW",
-  "updated": "2026-10-15"
+  "updated": "2026-11-01"
 }

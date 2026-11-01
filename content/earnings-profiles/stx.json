@@ -2,33 +2,33 @@
   "cik": 1137789,
   "company": "Seagate Technology",
   "latest": {
-    "accession": "0001137789-26-000159",
-    "filed": "2026-08-04",
-    "form": "10-K",
-    "fp": "FY",
-    "fy": 2026,
+    "accession": "0001137789-26-000309",
+    "filed": "2026-10-29",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 13.9,
-        "prior_year": 6.77,
+        "current": 7.59,
+        "prior_year": 2.43,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 3184000000,
-        "prior_year": 1469000000,
+        "current": 1761000000,
+        "prior_year": 549000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 12195000000,
-        "prior_year": 9097000000,
+        "current": 4233000000,
+        "prior_year": 2629000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-03",
-    "source": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000159/stx-20260703.htm"
+    "period_end": "2026-10-02",
+    "source": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000309/stx-20261002.htm"
   },
   "periods": [
     {
@@ -117,9 +117,38 @@
       },
       "period_end": "2026-07-03",
       "source": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000159/stx-20260703.htm"
+    },
+    {
+      "accession": "0001137789-26-000309",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 7.59,
+          "prior_year": 2.43,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1761000000,
+          "prior_year": 549000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4233000000,
+          "prior_year": 2629000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000309/stx-20261002.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "STX",
-  "updated": "2026-10-15"
+  "updated": "2026-11-01"
 }

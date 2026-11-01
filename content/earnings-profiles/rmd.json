@@ -1,34 +1,34 @@
 {
   "cik": 943819,
-  "company": "ResMed|",
+  "company": "ResMed",
   "latest": {
-    "accession": "0000943819-26-000047",
-    "filed": "2026-08-13",
-    "form": "10-K",
-    "fp": "FY",
-    "fy": 2026,
+    "accession": "0000943819-26-000089",
+    "filed": "2026-10-30",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 10.43,
-        "prior_year": 9.51,
+        "current": 2.92,
+        "prior_year": 2.37,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1523293000,
-        "prior_year": 1400723000,
+        "current": 418413000,
+        "prior_year": 348536000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 5653443000,
-        "prior_year": 5146327000,
+        "current": 1414814000,
+        "prior_year": 1335582000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/943819/000094381926000047/rmd-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/943819/000094381926000089/rmd-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/943819/000094381926000047/rmd-20260630.htm"
+    },
+    {
+      "accession": "0000943819-26-000089",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.92,
+          "prior_year": 2.37,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 418413000,
+          "prior_year": 348536000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1414814000,
+          "prior_year": 1335582000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/943819/000094381926000089/rmd-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "RMD",
-  "updated": "2026-10-15"
+  "updated": "2026-11-01"
 }
