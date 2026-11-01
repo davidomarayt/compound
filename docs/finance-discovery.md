@@ -31,3 +31,25 @@ Reference guidance:
 - https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler
 - https://schema.org/CollectionPage
 - https://schema.org/ItemList
+
+## Automated production verification
+
+The publishing workflow now runs an independent `verify-finance-discovery` job after
+successful deployment. `python scripts/verify_finance_discovery.py` checks the three
+public discovery endpoints, the homepage discovery link, robots.txt, the XML sitemap,
+all catalogue URLs' sitemap membership and Googlebot permissions, and two live HTML
+targets from each of the four catalogue groups. It rejects unexpected redirects,
+wrong content types, blocking response headers/meta directives, mismatched canonicals,
+malformed/missing JSON-LD and disagreement between the directory's visible links,
+ItemList and JSON catalogue. Network requests have bounded retries and timeouts.
+It also probes the three endpoints with a Googlebot user agent; this is not evidence
+of a request from Google's infrastructure. Run with `--all-targets` for a full live
+catalogue audit. Counts are derived from the catalogue rather than fixed at 107.
+
+These checks verify technical discovery and indexing prerequisites, not Google's
+index. JSON and llms.txt intentionally are not sitemap entries or HTML pages with
+canonical tags. The JSON's `url` identifies its HTML directory; it is not an HTTP
+canonical instruction. Google does not need llms.txt or a custom JSON catalogue for
+Search/AI placement. Use Search Console URL Inspection for indexed status and Google's
+selected canonical; generic web search results do not independently establish Google
+indexing. Neither valid JSON-LD nor sitemap inclusion guarantees indexing or ranking.
