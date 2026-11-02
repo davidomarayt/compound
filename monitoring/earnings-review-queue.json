@@ -1,9 +1,9 @@
 {
-  "checked": "2026-11-01",
+  "checked": "2026-11-02",
   "counts": {
     "active_issuers": 500,
-    "company_articles": 48,
-    "mapped_articles": 47,
+    "company_articles": 52,
+    "mapped_articles": 51,
     "profiles_scanned": 449
   },
   "history": [
@@ -2887,6 +2887,158 @@
       "retirement_reason": "Evidence/content changed or condition cleared",
       "severity": "medium",
       "status": "pending"
+    },
+    {
+      "company": "pfg",
+      "evidence": {
+        "accession": "0001104659-26-051384",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.93,
+            "prior_year": 0.21,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 424600000,
+            "prior_year": 48100000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 3529100000,
+            "prior_year": 3695900000,
+            "tag": "Revenues",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1126328/000110465926051384/pfg-20260331x10q.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "496896afd7edeb984a8095ce",
+      "kind": "coverage_check",
+      "last_seen": "2026-11-01",
+      "paths": [
+        "content/earnings-profiles/pfg.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "retired": "2026-11-02",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "medium",
+      "status": "pending"
+    },
+    {
+      "company": "tmo",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "Thermo Fisher Q3 2026 earnings release: SEC 8-K Exhibit 99.1, 21 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000173/q32026earnings8kex99_1.htm"
+          },
+          {
+            "title": "Thermo Fisher Q2 2026 SEC 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000144/tmo-20260627.htm"
+          },
+          {
+            "title": "Thermo Fisher Q1 2026 SEC 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000092/tmo-20260328.htm"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000097745-26-000173",
+          "filed": "2026-10-21",
+          "form": "8-K Exhibit 99.1",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 4.64,
+              "prior_year": 4.27,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 1721000000,
+              "prior_year": 1616000000,
+              "tag": "NetIncomeLossAttributableToParent",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 12137000000,
+              "prior_year": 11122000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-26",
+          "source": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000173/q32026earnings8kex99_1.htm"
+        }
+      },
+      "first_seen": "2026-10-28",
+      "id": "c0a2f165cbb7e50475d729fe",
+      "kind": "article_review",
+      "last_seen": "2026-11-01",
+      "paths": [
+        "content/wealth/thermo-fisher-earnings-organic-growth-cash-flow.md",
+        "content/earnings-profiles/tmo.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "retired": "2026-11-02",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "low",
+      "status": "pending"
+    },
+    {
+      "company": "vmc",
+      "evidence": {
+        "accession": "0001628280-26-028318",
+        "filed": "2026-04-29",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 1.26,
+            "prior_year": 0.97,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 165500000,
+            "prior_year": 128900000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 1755900000,
+            "prior_year": 1634600000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-03-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1396009/000162828026028318/vmc-20260331.htm"
+      },
+      "first_seen": "2026-10-28",
+      "id": "f2936e953b77c33e2472071c",
+      "kind": "coverage_check",
+      "last_seen": "2026-11-01",
+      "paths": [
+        "content/earnings-profiles/vmc.json"
+      ],
+      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
+      "retired": "2026-11-02",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "medium",
+      "status": "pending"
     }
   ],
   "jobs": {
@@ -2898,7 +3050,7 @@
       "first_seen": "2026-10-28",
       "id": "034e8ea62b8335ecf649b5c8",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/ma.json"
       ],
@@ -2914,7 +3066,7 @@
       "first_seen": "2026-10-28",
       "id": "05d105a4362b2670a5feb656",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/cf.json"
       ],
@@ -2930,7 +3082,7 @@
       "first_seen": "2026-10-28",
       "id": "05d9e53f1fdf6d05053a8d15",
       "kind": "article_mapping",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/molina-healthcare-earnings-medicaid-margins.md"
       ],
@@ -2946,7 +3098,7 @@
       "first_seen": "2026-10-28",
       "id": "0763fcaa03d27186de9f88b9",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/cmi.json"
       ],
@@ -3023,7 +3175,7 @@
       "first_seen": "2026-10-30",
       "id": "0a8084d2a396a04227fd5490",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/ttwo-gta-6-entertainment-launch-revenue.md",
         "content/earnings-profiles/ttwo.json"
@@ -3040,7 +3192,7 @@
       "first_seen": "2026-10-28",
       "id": "0cedd0b7965f628ea3a58560",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/irm.json"
       ],
@@ -3056,11 +3208,73 @@
       "first_seen": "2026-10-28",
       "id": "0d54457e6033f4543e771a1c",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/kim.json"
       ],
       "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "10b556298dd35663fc4ed8ee": {
+      "company": "tmo",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "Thermo Fisher Q3 2026 earnings release: SEC 8-K Exhibit 99.1, 21 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000173/q32026earnings8kex99_1.htm"
+          },
+          {
+            "title": "Thermo Fisher Q2 2026 SEC 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000144/tmo-20260627.htm"
+          },
+          {
+            "title": "Thermo Fisher Q1 2026 SEC 10-Q",
+            "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000092/tmo-20260328.htm"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000097745-26-000179",
+          "filed": "2026-10-30",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 4.64,
+              "prior_year": 4.27,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 1721000000,
+              "prior_year": 1616000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 12137000000,
+              "prior_year": 11122000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-26",
+          "source": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000179/tmo-20260926.htm"
+        }
+      },
+      "first_seen": "2026-11-02",
+      "id": "10b556298dd35663fc4ed8ee",
+      "kind": "article_review",
+      "last_seen": "2026-11-02",
+      "paths": [
+        "content/wealth/thermo-fisher-earnings-organic-growth-cash-flow.md",
+        "content/earnings-profiles/tmo.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
       "severity": "medium",
       "status": "pending"
     },
@@ -3113,7 +3327,7 @@
       "first_seen": "2026-10-28",
       "id": "12374d854994476420edb231",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/honeywell-earnings-organic-growth-guidance.md",
         "content/earnings-profiles/hon.json"
@@ -3130,7 +3344,7 @@
       "first_seen": "2026-10-28",
       "id": "127f58e7917e203cefa5806b",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/apa.json"
       ],
@@ -3172,7 +3386,7 @@
       "first_seen": "2026-10-28",
       "id": "12f36fc635cb1959556f75f3",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/duk.json"
       ],
@@ -3237,7 +3451,7 @@
       "first_seen": "2026-10-28",
       "id": "1756912285ce69e0038e5db8",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/att-earnings-fiber-growth-dividend-cash-flow.md",
         "content/earnings-profiles/t.json"
@@ -3254,7 +3468,7 @@
       "first_seen": "2026-10-28",
       "id": "176cc7854482a91ec8d0bcc5",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/invh.json"
       ],
@@ -3270,7 +3484,7 @@
       "first_seen": "2026-10-28",
       "id": "19312f147227c4dd7342ab8a",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/ivz.json"
       ],
@@ -3323,7 +3537,7 @@
       "first_seen": "2026-10-28",
       "id": "1a9aeef169d8057af6a614e4",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/nvidia-ai-gpu-margins-2026.md",
         "content/earnings-profiles/nvda.json"
@@ -3383,7 +3597,7 @@
       "first_seen": "2026-10-29",
       "id": "1ab9cb4157b58272ba76f023",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/robinhood-earnings-prediction-markets-profit.md",
         "content/earnings-profiles/hood.json"
@@ -3445,7 +3659,7 @@
       "first_seen": "2026-10-28",
       "id": "1bea8c821e7c01c617c8d9b1",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/apple-earnings-tariff-refunds-services.md",
         "content/earnings-profiles/aapl.json"
@@ -3462,7 +3676,7 @@
       "first_seen": "2026-10-28",
       "id": "1fb1feeea91edda00d049fe9",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/bkng.json"
       ],
@@ -3517,7 +3731,7 @@
       "first_seen": "2026-10-31",
       "id": "2285a8cc2074cd2b9fa9ff05",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/amazon-aws-retail-economics-2026.md",
         "content/earnings-profiles/amzn.json"
@@ -3534,7 +3748,7 @@
       "first_seen": "2026-10-28",
       "id": "23b8c4c591907be79e321f5d",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/itw.json"
       ],
@@ -3550,7 +3764,7 @@
       "first_seen": "2026-10-28",
       "id": "276de968cbd709351f8dd19b",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/well.json"
       ],
@@ -3566,7 +3780,7 @@
       "first_seen": "2026-10-28",
       "id": "2818bc70da6bdc7276eeca87",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/ess.json"
       ],
@@ -3627,7 +3841,7 @@
       "first_seen": "2026-10-28",
       "id": "2abb2849c77d5064c43ad7a5",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/lam-research-earnings-growth-expectations.md",
         "content/earnings-profiles/lrcx.json"
@@ -3685,7 +3899,7 @@
       "first_seen": "2026-10-28",
       "id": "2af41703040c47299beb8789",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/intuitive-surgical-earnings-growth-legal-charge.md",
         "content/earnings-profiles/isrg.json"
@@ -3728,7 +3942,7 @@
       "first_seen": "2026-10-28",
       "id": "2ccbcc4e597573d843409b86",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/vrsk.json"
       ],
@@ -3770,7 +3984,7 @@
       "first_seen": "2026-10-28",
       "id": "2cfe18364a8376ef6bc6878d",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/mtd.json"
       ],
@@ -3786,7 +4000,7 @@
       "first_seen": "2026-10-28",
       "id": "3003a5e36dce2d61ea794622",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/f.json"
       ],
@@ -3857,7 +4071,7 @@
       "first_seen": "2026-11-01",
       "id": "3107d879ec828a0110ff6e09",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/eli-lilly-foundayo-europe-approval-glp1-2026.md",
         "content/earnings-profiles/lly.json"
@@ -3874,7 +4088,7 @@
       "first_seen": "2026-10-28",
       "id": "3198df4502b9e7f057e26a1a",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/aee.json"
       ],
@@ -3890,7 +4104,7 @@
       "first_seen": "2026-10-28",
       "id": "36c233a93dfb4c4e5014fffe",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/bxp.json"
       ],
@@ -3932,7 +4146,7 @@
       "first_seen": "2026-10-28",
       "id": "3735c6bf40cb613b709a98ad",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/sre.json"
       ],
@@ -3948,7 +4162,7 @@
       "first_seen": "2026-10-28",
       "id": "4485f8a9baee43c2ece031a0",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/dte.json"
       ],
@@ -4001,7 +4215,7 @@
       "first_seen": "2026-10-28",
       "id": "44f2c04f6bce257c1676378d",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/tesla-q3-2026-autonomy-investment-case.md",
         "content/earnings-profiles/tsla.json"
@@ -4018,7 +4232,7 @@
       "first_seen": "2026-10-28",
       "id": "45c2f72bbab36301b2ed4215",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/aep.json"
       ],
@@ -4043,7 +4257,7 @@
       "first_seen": "2026-11-01",
       "id": "462fc19807716278c57ba8aa",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/visa-payments-growth-incentives.md",
         "content/earnings-profiles/v.json"
@@ -4105,7 +4319,7 @@
       "first_seen": "2026-10-31",
       "id": "48104abec897073954b6b863",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/microsoft-ai-capex-cash-flow.md",
         "content/earnings-profiles/msft.json"
@@ -4167,54 +4381,12 @@
       "first_seen": "2026-10-28",
       "id": "481fac8653f640c2315c504b",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/spacex-ai-growth-cash-spending.md",
         "content/earnings-profiles/spcx.json"
       ],
       "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
-      "severity": "medium",
-      "status": "pending"
-    },
-    "496896afd7edeb984a8095ce": {
-      "company": "pfg",
-      "evidence": {
-        "accession": "0001104659-26-051384",
-        "filed": "2026-04-29",
-        "form": "10-Q",
-        "fp": "Q1",
-        "fy": 2026,
-        "metrics": {
-          "diluted_eps": {
-            "current": 1.93,
-            "prior_year": 0.21,
-            "tag": "EarningsPerShareDiluted",
-            "unit": "USD/shares"
-          },
-          "net_income": {
-            "current": 424600000,
-            "prior_year": 48100000,
-            "tag": "NetIncomeLoss",
-            "unit": "USD"
-          },
-          "revenue": {
-            "current": 3529100000,
-            "prior_year": 3695900000,
-            "tag": "Revenues",
-            "unit": "USD"
-          }
-        },
-        "period_end": "2026-03-31",
-        "source": "https://www.sec.gov/Archives/edgar/data/1126328/000110465926051384/pfg-20260331x10q.htm"
-      },
-      "first_seen": "2026-10-28",
-      "id": "496896afd7edeb984a8095ce",
-      "kind": "coverage_check",
-      "last_seen": "2026-11-01",
-      "paths": [
-        "content/earnings-profiles/pfg.json"
-      ],
-      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
       "severity": "medium",
       "status": "pending"
     },
@@ -4226,7 +4398,7 @@
       "first_seen": "2026-10-28",
       "id": "4c14aabfbe5b4d0399a8b3a6",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/bkr.json"
       ],
@@ -4242,7 +4414,7 @@
       "first_seen": "2026-10-28",
       "id": "4d892f5359730c90790f1cba",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/cat.json"
       ],
@@ -4301,7 +4473,7 @@
       "first_seen": "2026-10-31",
       "id": "4d9a2674d220577acda117ba",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/amazon-aws-profit-investment-gains.md",
         "content/earnings-profiles/amzn.json"
@@ -4355,7 +4527,7 @@
       "first_seen": "2026-10-28",
       "id": "4f830f2bc178b749f0d81cbd",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/nokia-ai-growth-cash-flow.md",
         "content/earnings-profiles/nvda.json"
@@ -4429,7 +4601,7 @@
       "first_seen": "2026-10-31",
       "id": "4fbb6c06312949b560dbfdf7",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/anthropic-loss-ipo-valuation.md",
         "content/earnings-profiles/msft.json"
@@ -4485,7 +4657,7 @@
       "first_seen": "2026-11-01",
       "id": "50ffb6ec6246cdaa6bc850e5",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/eli-lilly-metis-drug-delivery-deal.md",
         "content/earnings-profiles/lly.json"
@@ -4502,7 +4674,7 @@
       "first_seen": "2026-10-28",
       "id": "560a5116aa2a53555764b08c",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/reg.json"
       ],
@@ -4577,7 +4749,7 @@
       "first_seen": "2026-10-30",
       "id": "572fa2d4f20a8c799e20bbe5",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/anthropic-loss-ipo-valuation.md",
         "content/earnings-profiles/googl.json"
@@ -4594,12 +4766,70 @@
       "first_seen": "2026-10-28",
       "id": "5755f2d94df54c00a1867192",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/o.json"
       ],
       "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
       "severity": "medium",
+      "status": "pending"
+    },
+    "5c19dedad246065c859c0288": {
+      "company": "rddt",
+      "evidence": {
+        "article_reviewed": "2026-11-01",
+        "article_sources": [
+          {
+            "title": "Reddit Q3 2026 results release, 29 October 2026",
+            "url": "https://investor.redditinc.com/news-events/news-releases/news-details/2026/Reddit-Reports-Third-Quarter-2026-Results/default.aspx"
+          },
+          {
+            "title": "Reddit Form 10-Q, quarter ended 30 September 2026, filed 30 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000116/rddt-20260930.htm"
+          }
+        ],
+        "canonical_path": "/wealth/reddit-revenue-user-growth/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001713445-26-000116",
+          "filed": "2026-10-30",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 1.4,
+              "prior_year": 0.8,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 283264000,
+              "prior_year": 162663000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 894957000,
+              "prior_year": 584911000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000116/rddt-20260930.htm"
+        }
+      },
+      "first_seen": "2026-11-02",
+      "id": "5c19dedad246065c859c0288",
+      "kind": "article_review",
+      "last_seen": "2026-11-02",
+      "paths": [
+        "content/wealth/reddit-revenue-user-growth.md",
+        "content/earnings-profiles/rddt.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
       "status": "pending"
     },
     "5c4100f773508ed49c737c83": {
@@ -4649,7 +4879,7 @@
       "first_seen": "2026-10-30",
       "id": "5c4100f773508ed49c737c83",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/gilead-earnings-hiv-growth-acquisition-cost.md",
         "content/earnings-profiles/gild.json"
@@ -4705,7 +4935,7 @@
       "first_seen": "2026-10-30",
       "id": "5d4baf47ddc4ca5acd475301",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/alphabet-search-ai-economics-2026.md",
         "content/earnings-profiles/googl.json"
@@ -4748,7 +4978,7 @@
       "first_seen": "2026-10-28",
       "id": "5dc2d0473aaa75eee5f4a70d",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/el.json"
       ],
@@ -4790,7 +5020,7 @@
       "first_seen": "2026-10-28",
       "id": "5e91449100cc7d350b538cf6",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/ed.json"
       ],
@@ -4832,7 +5062,7 @@
       "first_seen": "2026-10-28",
       "id": "61a55ef8dafc44099c042de6",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/clx.json"
       ],
@@ -4913,7 +5143,7 @@
       "first_seen": "2026-10-28",
       "id": "626b5da9d13cf8a47acb7f8e",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/tesla-spacex-merger-2027.md",
         "content/earnings-profiles/tsla.json"
@@ -4969,7 +5199,7 @@
       "first_seen": "2026-10-28",
       "id": "627b35ca35f4999655146e4c",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/meta-ai-advertising-returns-2026.md",
         "content/earnings-profiles/meta.json"
@@ -5023,7 +5253,7 @@
       "first_seen": "2026-10-28",
       "id": "68a86b1b0041e706c5a9a256",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/tesla-earnings-cash-flow-profit-investment.md",
         "content/earnings-profiles/tsla.json"
@@ -5040,7 +5270,7 @@
       "first_seen": "2026-10-28",
       "id": "6b5b9ed4d127e58aecd58899",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/q.json"
       ],
@@ -5099,7 +5329,7 @@
       "first_seen": "2026-11-01",
       "id": "6dfd2fc40939592f17c46ef1",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/intel-earnings-data-centre-growth-guidance.md",
         "content/earnings-profiles/intc.json"
@@ -5116,7 +5346,7 @@
       "first_seen": "2026-10-28",
       "id": "6e988c358b412a8ee7008489",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/kkr.json"
       ],
@@ -5132,7 +5362,7 @@
       "first_seen": "2026-10-28",
       "id": "7050d6b8c33d8838739db4d2",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/spg.json"
       ],
@@ -5185,7 +5415,7 @@
       "first_seen": "2026-10-28",
       "id": "71a7f4d71d730d09ff44dde3",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/apple-us-iphone-suppliers-manufacturing.md",
         "content/earnings-profiles/aapl.json"
@@ -5202,7 +5432,7 @@
       "first_seen": "2026-10-28",
       "id": "743c5664b39ca9db6ed08ba6",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/foxa.json"
       ],
@@ -5255,7 +5485,7 @@
       "first_seen": "2026-10-28",
       "id": "750c7dad402d7497ba7a7eb8",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/ibm-earnings-software-growth-cash-flow.md",
         "content/earnings-profiles/ibm.json"
@@ -5309,7 +5539,7 @@
       "first_seen": "2026-10-28",
       "id": "751c3222c69ba784d7eb60ae",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/apple-iphone-services-profit-2026.md",
         "content/earnings-profiles/aapl.json"
@@ -5326,7 +5556,7 @@
       "first_seen": "2026-10-28",
       "id": "7c24ceb717b8e41ba0fd98ed",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/pnw.json"
       ],
@@ -5368,7 +5598,7 @@
       "first_seen": "2026-10-28",
       "id": "823fc439336d5f21e961ce2a",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/fe.json"
       ],
@@ -5429,7 +5659,7 @@
       "first_seen": "2026-10-28",
       "id": "842970af7cead82840200005",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/netflix-earnings-growth-advertising-outlook.md",
         "content/earnings-profiles/nflx.json"
@@ -5446,7 +5676,7 @@
       "first_seen": "2026-10-28",
       "id": "8bc23a24d42c9645056ba004",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/gd.json"
       ],
@@ -5462,7 +5692,7 @@
       "first_seen": "2026-10-28",
       "id": "8c7338eae0cb7909655fc536",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/lyb.json"
       ],
@@ -5478,7 +5708,7 @@
       "first_seen": "2026-10-28",
       "id": "91c75542a07a2cab27862172",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/amt.json"
       ],
@@ -5494,7 +5724,7 @@
       "first_seen": "2026-10-28",
       "id": "93662e45f0cac489d99cb997",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/cvna.json"
       ],
@@ -5553,7 +5783,7 @@
       "first_seen": "2026-10-31",
       "id": "94a65c4d562492d2d7dabfbc",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/sandisk-earnings-ai-storage-stock-split.md",
         "content/earnings-profiles/sndk.json"
@@ -5613,7 +5843,7 @@
       "first_seen": "2026-10-30",
       "id": "9e4cf1086c8ebb750968a275",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/meta-advertising-ai-spending-earnings.md",
         "content/earnings-profiles/meta.json"
@@ -5678,7 +5908,7 @@
       "first_seen": "2026-10-30",
       "id": "a1f97c61e7dddf2a846b965d",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/alphabet-europe-ai-sovereignty.md",
         "content/earnings-profiles/googl.json"
@@ -5732,10 +5962,68 @@
       "first_seen": "2026-10-28",
       "id": "a39fce867424eb61d77bbc8b",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/nvidia-torchneuron-software-competition.md",
         "content/earnings-profiles/nvda.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "a4be7bf8f09e94fb04d16bee": {
+      "company": "nke",
+      "evidence": {
+        "article_reviewed": "2026-11-02",
+        "article_sources": [
+          {
+            "title": "Nike fiscal Q1 2027 results release, 1 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000184/q1fy27exhibit991er.htm"
+          },
+          {
+            "title": "Nike Form 10-Q, quarter ended 31 August 2026, filed 2 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000193/nke-20260831.htm"
+          }
+        ],
+        "canonical_path": "/wealth/nike-margin-demand-turnaround/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000320187-26-000193",
+          "filed": "2026-10-02",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 0.48,
+              "prior_year": 0.49,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 712000000,
+              "prior_year": 727000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 11213000000,
+              "prior_year": 11720000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-08-31",
+          "source": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000193/nke-20260831.htm"
+        }
+      },
+      "first_seen": "2026-11-02",
+      "id": "a4be7bf8f09e94fb04d16bee",
+      "kind": "article_review",
+      "last_seen": "2026-11-02",
+      "paths": [
+        "content/wealth/nike-margin-demand-turnaround.md",
+        "content/earnings-profiles/nke.json"
       ],
       "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
       "severity": "low",
@@ -5749,7 +6037,7 @@
       "first_seen": "2026-10-28",
       "id": "a94c01e9d583b02ca83fa6b0",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/ph.json"
       ],
@@ -5802,7 +6090,7 @@
       "first_seen": "2026-10-31",
       "id": "adedb4f6805da4a9e98c854c",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/microsoft-nscale-power-grid-delay.md",
         "content/earnings-profiles/msft.json"
@@ -5819,7 +6107,7 @@
       "first_seen": "2026-10-28",
       "id": "aeee6c92ce87c57284ed812f",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/mnst.json"
       ],
@@ -5861,7 +6149,7 @@
       "first_seen": "2026-10-28",
       "id": "b02c8dd76df9d424ce467fc8",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/jci.json"
       ],
@@ -5886,7 +6174,7 @@
       "first_seen": "2026-11-01",
       "id": "b36ec9d95333287b314877a8",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/caterpillar-margin-growth.md",
         "content/earnings-profiles/cat.json"
@@ -5942,7 +6230,7 @@
       "first_seen": "2026-10-31",
       "id": "b50ca524c1c6a7e8f4d50678",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/amazon-germany-investment-returns.md",
         "content/earnings-profiles/amzn.json"
@@ -6004,7 +6292,7 @@
       "first_seen": "2026-10-28",
       "id": "b55f6bf094c2801c107055bb",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/meta-advertising-growth-ai-cash-flow.md",
         "content/earnings-profiles/meta.json"
@@ -6047,12 +6335,70 @@
       "first_seen": "2026-10-28",
       "id": "b6fe6e0a446227cdd61dcf15",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/hum.json"
       ],
       "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
       "severity": "medium",
+      "status": "pending"
+    },
+    "bb7481a03c832f07bc0a6b22": {
+      "company": "ba",
+      "evidence": {
+        "article_reviewed": "2026-11-02",
+        "article_sources": [
+          {
+            "title": "Boeing Q3 2026 results release, 27 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067411/a202609sep308kprex991.htm"
+          },
+          {
+            "title": "Boeing Form 10-Q, quarter ended 30 September 2026, filed 28 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm"
+          }
+        ],
+        "canonical_path": "/wealth/boeing-cash-flow-commercial-airplanes-losses/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-067508",
+          "filed": "2026-10-27",
+          "form": "10-Q",
+          "fp": "Q3",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": -0.26,
+              "prior_year": -7.14,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": -116000000,
+              "prior_year": -5337000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 24188000000,
+              "prior_year": 23270000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm"
+        }
+      },
+      "first_seen": "2026-11-02",
+      "id": "bb7481a03c832f07bc0a6b22",
+      "kind": "article_review",
+      "last_seen": "2026-11-02",
+      "paths": [
+        "content/wealth/boeing-cash-flow-commercial-airplanes-losses.md",
+        "content/earnings-profiles/ba.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
       "status": "pending"
     },
     "c05d3ca345a93cf80680273d": {
@@ -6063,74 +6409,12 @@
       "first_seen": "2026-10-28",
       "id": "c05d3ca345a93cf80680273d",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/ppl.json"
       ],
       "reason": "No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.",
       "severity": "medium",
-      "status": "pending"
-    },
-    "c0a2f165cbb7e50475d729fe": {
-      "company": "tmo",
-      "evidence": {
-        "article_reviewed": "2026-10-21",
-        "article_sources": [
-          {
-            "title": "Thermo Fisher Q3 2026 earnings release: SEC 8-K Exhibit 99.1, 21 October 2026",
-            "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000173/q32026earnings8kex99_1.htm"
-          },
-          {
-            "title": "Thermo Fisher Q2 2026 SEC 10-Q",
-            "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000144/tmo-20260627.htm"
-          },
-          {
-            "title": "Thermo Fisher Q1 2026 SEC 10-Q",
-            "url": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000092/tmo-20260328.htm"
-          }
-        ],
-        "canonical_path": "",
-        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
-        "latest_saved_result": {
-          "accession": "0000097745-26-000173",
-          "filed": "2026-10-21",
-          "form": "8-K Exhibit 99.1",
-          "fp": "Q3",
-          "fy": 2026,
-          "metrics": {
-            "diluted_eps": {
-              "current": 4.64,
-              "prior_year": 4.27,
-              "tag": "EarningsPerShareDiluted",
-              "unit": "USD/shares"
-            },
-            "net_income": {
-              "current": 1721000000,
-              "prior_year": 1616000000,
-              "tag": "NetIncomeLossAttributableToParent",
-              "unit": "USD"
-            },
-            "revenue": {
-              "current": 12137000000,
-              "prior_year": 11122000000,
-              "tag": "Revenues",
-              "unit": "USD"
-            }
-          },
-          "period_end": "2026-09-26",
-          "source": "https://www.sec.gov/Archives/edgar/data/97745/000009774526000173/q32026earnings8kex99_1.htm"
-        }
-      },
-      "first_seen": "2026-10-28",
-      "id": "c0a2f165cbb7e50475d729fe",
-      "kind": "article_review",
-      "last_seen": "2026-11-01",
-      "paths": [
-        "content/wealth/thermo-fisher-earnings-organic-growth-cash-flow.md",
-        "content/earnings-profiles/tmo.json"
-      ],
-      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
-      "severity": "low",
       "status": "pending"
     },
     "c3cec6e0af87a3e2bfcd2b70": {
@@ -6141,7 +6425,7 @@
       "first_seen": "2026-10-28",
       "id": "c3cec6e0af87a3e2bfcd2b70",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/vtrs.json"
       ],
@@ -6157,7 +6441,7 @@
       "first_seen": "2026-10-28",
       "id": "c8a80c67c30835da0fe85330",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/hsy.json"
       ],
@@ -6173,7 +6457,7 @@
       "first_seen": "2026-10-28",
       "id": "c8b4e15d74e5225f9ca641f5",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/brk-b.json"
       ],
@@ -6230,7 +6514,7 @@
       "first_seen": "2026-10-30",
       "id": "cefa2faf3e6ad29a790e6f9c",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/starbucks-earnings-turnaround-sales-china.md",
         "content/earnings-profiles/sbux.json"
@@ -6247,7 +6531,7 @@
       "first_seen": "2026-10-28",
       "id": "cff5d7c7460258b645ba925f",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/aig.json"
       ],
@@ -6263,7 +6547,7 @@
       "first_seen": "2026-10-28",
       "id": "d10e873e298e683e9d2d3e5c",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/wec.json"
       ],
@@ -6305,7 +6589,7 @@
       "first_seen": "2026-10-28",
       "id": "d11ed609fcdbb71ff3bf5d73",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/lnt.json"
       ],
@@ -6321,7 +6605,7 @@
       "first_seen": "2026-10-28",
       "id": "d16f14ca42cb15689e5df255",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/exc.json"
       ],
@@ -6378,7 +6662,7 @@
       "first_seen": "2026-10-28",
       "id": "d1ed474ed3a3470454f39ae2",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/bloom-energy-earnings-growth-cash-flow.md",
         "content/earnings-profiles/be.json"
@@ -6421,7 +6705,7 @@
       "first_seen": "2026-10-28",
       "id": "d28215254fbd8a6c7977ae71",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/udr.json"
       ],
@@ -6482,7 +6766,7 @@
       "first_seen": "2026-10-28",
       "id": "d3aab0289868f60a083c6cd5",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/nvidia-gross-margin-ai-demand.md",
         "content/earnings-profiles/nvda.json"
@@ -6499,7 +6783,7 @@
       "first_seen": "2026-10-28",
       "id": "d3afa4b39cf59aafeddcefd0",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/avgo.json"
       ],
@@ -6541,7 +6825,7 @@
       "first_seen": "2026-10-28",
       "id": "d3f3412118257292fcdf0865",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/tech.json"
       ],
@@ -6594,7 +6878,7 @@
       "first_seen": "2026-10-31",
       "id": "d62a64f807d253018619e9e5",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/microsoft-azure-ai-returns-2026.md",
         "content/earnings-profiles/msft.json"
@@ -6611,7 +6895,7 @@
       "first_seen": "2026-10-28",
       "id": "d651786b6943ba04075cfe71",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/bsx.json"
       ],
@@ -6627,7 +6911,7 @@
       "first_seen": "2026-10-28",
       "id": "d67d092b8b58c1f0d2125b09",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/abnb.json"
       ],
@@ -6684,7 +6968,7 @@
       "first_seen": "2026-11-01",
       "id": "d68353ecb0ad4d7f0cc36d05",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/ge-vernova-backlog-cash-flow.md",
         "content/earnings-profiles/gev.json"
@@ -6727,7 +7011,7 @@
       "first_seen": "2026-10-28",
       "id": "d7725314f0dd61fb0c635f95",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/d.json"
       ],
@@ -6808,7 +7092,7 @@
       "first_seen": "2026-10-28",
       "id": "da7b289733bf3c4cc7de361d",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/tesla-spacex-merger-2027.md",
         "content/earnings-profiles/spcx.json"
@@ -6825,7 +7109,7 @@
       "first_seen": "2026-10-28",
       "id": "dc1fa66ca722491d29c4e988",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/erie.json"
       ],
@@ -6841,7 +7125,7 @@
       "first_seen": "2026-10-28",
       "id": "ddc59ff7cecd09b7ad89b12b",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/etr.json"
       ],
@@ -6883,7 +7167,7 @@
       "first_seen": "2026-10-28",
       "id": "ddc803af69e3c48feee944e8",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/evrg.json"
       ],
@@ -6925,7 +7209,7 @@
       "first_seen": "2026-10-28",
       "id": "df4b9bcd440b628db14e20df",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/cnp.json"
       ],
@@ -6967,12 +7251,70 @@
       "first_seen": "2026-10-28",
       "id": "df6fcf02c9f2f89500c369ed",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/maa.json"
       ],
       "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
       "severity": "medium",
+      "status": "pending"
+    },
+    "e0662d1d29dd7b6adc2ef409": {
+      "company": "ups",
+      "evidence": {
+        "article_reviewed": "2026-11-02",
+        "article_sources": [
+          {
+            "title": "UPS Q3 2026 results release, 27 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/1090727/000162828026067381/exhibit991-earningspressre.htm"
+          },
+          {
+            "title": "UPS Form 10-Q, quarter ended 30 June 2026, filed 29 July 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/1090727/000162828026053249/ups-20260630.htm"
+          }
+        ],
+        "canonical_path": "/wealth/ups-package-volume-pricing-automation/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-053249",
+          "filed": "2026-08-05",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 0.71,
+              "prior_year": 1.51,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 604000000,
+              "prior_year": 1283000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 22834000000,
+              "prior_year": 21221000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-06-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/1090727/000162828026053249/ups-20260630.htm"
+        }
+      },
+      "first_seen": "2026-11-02",
+      "id": "e0662d1d29dd7b6adc2ef409",
+      "kind": "article_review",
+      "last_seen": "2026-11-02",
+      "paths": [
+        "content/wealth/ups-package-volume-pricing-automation.md",
+        "content/earnings-profiles/ups.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
       "status": "pending"
     },
     "e1439477f79e3601ba9b5aa7": {
@@ -6983,7 +7325,7 @@
       "first_seen": "2026-10-28",
       "id": "e1439477f79e3601ba9b5aa7",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/vylr.json"
       ],
@@ -7042,7 +7384,7 @@
       "first_seen": "2026-11-01",
       "id": "e2ff9639cd5188f2222df837",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/eli-lilly-foundayo-obesity-growth-2026-10-19.md",
         "content/earnings-profiles/lly.json"
@@ -7059,7 +7401,7 @@
       "first_seen": "2026-10-28",
       "id": "e4f0f82106eee3617cc387c2",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/ares.json"
       ],
@@ -7114,7 +7456,7 @@
       "first_seen": "2026-10-30",
       "id": "e52b44034a293995fc7b9b41",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/nokia-ai-growth-cash-flow.md",
         "content/earnings-profiles/googl.json"
@@ -7131,7 +7473,7 @@
       "first_seen": "2026-10-28",
       "id": "e8f443c404a73802fbd3aead",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/vtr.json"
       ],
@@ -7196,7 +7538,7 @@
       "first_seen": "2026-10-28",
       "id": "ebc2af94dd4d36445aa1a430",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/tesla-energy-storage-margins.md",
         "content/earnings-profiles/tsla.json"
@@ -7213,7 +7555,7 @@
       "first_seen": "2026-10-28",
       "id": "edeb84677b362b4bb3678657",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/vmrk.json"
       ],
@@ -7255,51 +7597,9 @@
       "first_seen": "2026-10-28",
       "id": "f0daff8ed1323d5f3880e729",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/so.json"
-      ],
-      "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
-      "severity": "medium",
-      "status": "pending"
-    },
-    "f2936e953b77c33e2472071c": {
-      "company": "vmc",
-      "evidence": {
-        "accession": "0001628280-26-028318",
-        "filed": "2026-04-29",
-        "form": "10-Q",
-        "fp": "Q1",
-        "fy": 2026,
-        "metrics": {
-          "diluted_eps": {
-            "current": 1.26,
-            "prior_year": 0.97,
-            "tag": "EarningsPerShareDiluted",
-            "unit": "USD/shares"
-          },
-          "net_income": {
-            "current": 165500000,
-            "prior_year": 128900000,
-            "tag": "NetIncomeLoss",
-            "unit": "USD"
-          },
-          "revenue": {
-            "current": 1755900000,
-            "prior_year": 1634600000,
-            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-            "unit": "USD"
-          }
-        },
-        "period_end": "2026-03-31",
-        "source": "https://www.sec.gov/Archives/edgar/data/1396009/000162828026028318/vmc-20260331.htm"
-      },
-      "first_seen": "2026-10-28",
-      "id": "f2936e953b77c33e2472071c",
-      "kind": "coverage_check",
-      "last_seen": "2026-11-01",
-      "paths": [
-        "content/earnings-profiles/vmc.json"
       ],
       "reason": "Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.",
       "severity": "medium",
@@ -7339,7 +7639,7 @@
       "first_seen": "2026-10-28",
       "id": "f38fb832593af42551756fdf",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/frt.json"
       ],
@@ -7396,7 +7696,7 @@
       "first_seen": "2026-10-28",
       "id": "f4938ec19343a379f40cb114",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/western-digital-earnings-ai-storage-cash-flow.md",
         "content/earnings-profiles/wdc.json"
@@ -7413,7 +7713,7 @@
       "first_seen": "2026-10-28",
       "id": "f4e16d8a65ccc682801e4124",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/v.json"
       ],
@@ -7472,7 +7772,7 @@
       "first_seen": "2026-11-01",
       "id": "f73b4125bac52f62c81f9bc3",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/alphabet-ai-capex-free-cash-flow.md",
         "content/earnings-profiles/googl.json"
@@ -7489,7 +7789,7 @@
       "first_seen": "2026-10-28",
       "id": "f7a4e7a66773c8a1a6865b28",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/es.json"
       ],
@@ -7505,7 +7805,7 @@
       "first_seen": "2026-10-28",
       "id": "f95a5c551c3d1f0ef39781ae",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/oxy.json"
       ],
@@ -7580,7 +7880,7 @@
       "first_seen": "2026-10-31",
       "id": "f999a9c496888e1764fcaa15",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/anthropic-loss-ipo-valuation.md",
         "content/earnings-profiles/amzn.json"
@@ -7634,7 +7934,7 @@
       "first_seen": "2026-10-28",
       "id": "fb87998f103d5b22f3bd277d",
       "kind": "article_review",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/wealth/american-express-earnings-spending-adjusted-profit.md",
         "content/earnings-profiles/axp.json"
@@ -7651,7 +7951,7 @@
       "first_seen": "2026-10-28",
       "id": "fea87230057098e58bbf92b7",
       "kind": "coverage_check",
-      "last_seen": "2026-11-01",
+      "last_seen": "2026-11-02",
       "paths": [
         "content/earnings-profiles/ball.json"
       ],

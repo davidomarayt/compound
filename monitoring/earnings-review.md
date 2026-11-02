@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-01
+Checked: 2026-11-02
 
 - 449 saved profiles checked against structural and issuer rules.
-- 48 existing company articles; 47 mapped to monitored issuers.
-- 107 pending review items; 18 recorded decisions.
+- 52 existing company articles; 51 mapped to monitored issuers.
+- 109 pending review items; 18 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -98,6 +98,16 @@ Newer filing than the article review date; assess whether claims or outlook need
 Files: `content/wealth/tesla-spacex-merger-2027.md`, `content/earnings-profiles/spcx.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
+
+### TMO · article_review · medium
+
+ID: `10b556298dd35663fc4ed8ee`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/thermo-fisher-earnings-organic-growth-cash-flow.md`, `content/earnings-profiles/tmo.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/97745/000009774526000179/tmo-20260926.htm · Q3 FY2026 · period end 2026-09-26 · filed 2026-10-30
 
 ### TSLA · article_review · medium
 
@@ -591,16 +601,6 @@ No saved profile for an active issuer. Check ingestion and official filings; nev
 
 Files: `content/earnings-profiles/oxy.json`
 
-### PFG · coverage_check · medium
-
-ID: `496896afd7edeb984a8095ce`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/pfg.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1126328/000110465926051384/pfg-20260331x10q.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-04-29
-
 ### PH · coverage_check · medium
 
 ID: `a94c01e9d583b02ca83fa6b0`
@@ -696,16 +696,6 @@ ID: `f4e16d8a65ccc682801e4124`
 No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.
 
 Files: `content/earnings-profiles/v.json`
-
-### VMC · coverage_check · medium
-
-ID: `f2936e953b77c33e2472071c`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/vmc.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1396009/000162828026028318/vmc-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-04-29
 
 ### VMRK · coverage_check · medium
 
@@ -805,6 +795,16 @@ Files: `content/wealth/american-express-earnings-spending-adjusted-profit.md`, `
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/4962/000000496226000409/axp-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-23
 
+### BA · article_review · low
+
+ID: `bb7481a03c832f07bc0a6b22`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/boeing-cash-flow-commercial-airplanes-losses.md`, `content/earnings-profiles/ba.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-27
+
 ### BE · article_review · low
 
 ID: `d1ed474ed3a3470454f39ae2`
@@ -873,6 +873,16 @@ Files: `content/wealth/microsoft-ai-capex-cash-flow.md`, `content/earnings-profi
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm · Q1 FY2027 · period end 2026-09-30 · filed 2026-10-28
 
+### NKE · article_review · low
+
+ID: `a4be7bf8f09e94fb04d16bee`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/nike-margin-demand-turnaround.md`, `content/earnings-profiles/nke.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/320187/000032018726000193/nke-20260831.htm · Q1 FY2027 · period end 2026-08-31 · filed 2026-10-02
+
 ### NVDA · article_review · low
 
 ID: `1a9aeef169d8057af6a614e4`
@@ -913,6 +923,16 @@ Files: `content/wealth/nvidia-gross-margin-ai-demand.md`, `content/earnings-prof
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm · Q2 FY2027 · period end 2026-07-26 · filed 2026-08-26
 
+### RDDT · article_review · low
+
+ID: `5c19dedad246065c859c0288`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/reddit-revenue-user-growth.md`, `content/earnings-profiles/rddt.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1713445/000171344526000116/rddt-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-30
+
 ### SBUX · article_review · low
 
 ID: `cefa2faf3e6ad29a790e6f9c`
@@ -933,16 +953,6 @@ Files: `content/wealth/att-earnings-fiber-growth-dividend-cash-flow.md`, `conten
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/732717/000073271726000372/t-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-21
 
-### TMO · article_review · low
-
-ID: `c0a2f165cbb7e50475d729fe`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/thermo-fisher-earnings-organic-growth-cash-flow.md`, `content/earnings-profiles/tmo.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/97745/000009774526000173/q32026earnings8kex99_1.htm · Q3 FY2026 · period end 2026-09-26 · filed 2026-10-21
-
 ### TTWO · article_review · low
 
 ID: `0a8084d2a396a04227fd5490`
@@ -952,6 +962,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/ttwo-gta-6-entertainment-launch-revenue.md`, `content/earnings-profiles/ttwo.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/946581/000162828026054870/ttwo-20260630.htm · Q1 FY2027 · period end 2026-06-30 · filed 2026-08-07
+
+### UPS · article_review · low
+
+ID: `e0662d1d29dd7b6adc2ef409`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/ups-package-volume-pricing-automation.md`, `content/earnings-profiles/ups.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1090727/000162828026053249/ups-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-08-05
 
 ### V · article_review · low
 
