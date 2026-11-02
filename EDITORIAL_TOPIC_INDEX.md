@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 230 published articles and guides, 64 tools,
+**Included:** 231 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -139,6 +139,7 @@ For the complete register (including 510+ company profiles), open
 - [Meta Earnings: Advertising Surges, but the AI Bill Consumes the Cash](https://compound.ie/wealth/meta-advertising-ai-spending-earnings/) — **Wealth**
 - [Meta Stock Guide: Advertising, AI, Reality Labs and Valuation](https://compound.ie/wealth/meta-ai-advertising-returns-2026/) — **Wealth**
 - [Meta's advertising engine is growing. Is enough cash reaching shareholders?](https://compound.ie/wealth/meta-advertising-growth-ai-cash-flow/) — **Wealth**
+- [Meta's Reality Labs lost less. What did the Quest business contribute?](https://compound.ie/wealth/meta-reality-labs-loss-bridge/) — **Wealth**
 - [Microsoft Stock Guide: Azure, Software, AI and Cash Flow](https://compound.ie/wealth/microsoft-azure-ai-returns-2026/) — **Wealth**
 - [Microsoft's AI spending: the cash-flow test behind Azure's growth](https://compound.ie/wealth/microsoft-ai-capex-cash-flow/) — **Wealth**
 - [Microsoft's Layoff Wave: What the 60,000-Employee Exit Offer Really Means](https://compound.ie/news/microsoft-layoffs-voluntary-exit-offer-2026/) — **Wealth**

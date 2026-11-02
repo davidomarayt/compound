@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 230
+- Published editorial articles and guides: 231
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 176
+## Wealth articles and guides — 177
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
@@ -142,6 +142,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Meta Earnings: Advertising Surges, but the AI Bill Consumes the Cash](https://compound.ie/wealth/meta-advertising-ai-spending-earnings/)
 - [Meta Stock Guide: Advertising, AI, Reality Labs and Valuation](https://compound.ie/wealth/meta-ai-advertising-returns-2026/)
 - [Meta's advertising engine is growing. Is enough cash reaching shareholders?](https://compound.ie/wealth/meta-advertising-growth-ai-cash-flow/)
+- [Meta's Reality Labs lost less. What did the Quest business contribute?](https://compound.ie/wealth/meta-reality-labs-loss-bridge/)
 - [Microsoft Stock Guide: Azure, Software, AI and Cash Flow](https://compound.ie/wealth/microsoft-azure-ai-returns-2026/)
 - [Microsoft's AI spending: the cash-flow test behind Azure's growth](https://compound.ie/wealth/microsoft-ai-capex-cash-flow/)
 - [Microsoft's Layoff Wave: What the 60,000-Employee Exit Offer Really Means](https://compound.ie/news/microsoft-layoffs-voluntary-exit-offer-2026/)
