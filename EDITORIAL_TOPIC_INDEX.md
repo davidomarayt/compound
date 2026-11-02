@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 229 published articles and guides, 64 tools,
+**Included:** 230 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -118,6 +118,7 @@ For the complete register (including 510+ company profiles), open
 - [Ireland Plans €682m Cut in Refugee and Asylum Accommodation Spending in Budget 2027](https://compound.ie/news/ireland-migration-accommodation-682m-budget-2027/) — **Wealth**
 - [Ireland to Ban Loyalty-Card Alcohol Discounts: What Changes From March 2028](https://compound.ie/news/alcohol-loyalty-card-discounts-ban-ireland-2028/) — **Health**
 - [Ireland's 40% tax band starts at €44,000 — how that really compares with Europe](https://compound.ie/news/ireland-40-percent-tax-rate-threshold-europe/) — **Wealth**
+- [Ireland’s public sector strike and the €1.2 billion pay question](https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/) — **Wealth**
 - [Ireland’s TV Licence Is Dying. The Numbers Show Why.](https://compound.ie/news/ireland-tv-licence-decline-2026/) — **Life**
 - [Irish house prices are estimated to be 17% overvalued — what does that actually mean for buyers?](https://compound.ie/news/irish-house-prices-overvalued-17-percent-2026/) — **Wealth**
 - [Irish housing market is cooling — but buyers are not suddenly getting cheap homes](https://compound.ie/news/ireland-house-prices-cooling-daft-dublin-2026/) — **Wealth**

@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 229
+- Published editorial articles and guides: 230
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 175
+## Wealth articles and guides — 176
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
@@ -127,6 +127,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Ireland inflation jumps to 3.9% as energy prices rise 15.3%](https://compound.ie/news/ireland-inflation-september-2026-energy-prices/)
 - [Ireland Plans €682m Cut in Refugee and Asylum Accommodation Spending in Budget 2027](https://compound.ie/news/ireland-migration-accommodation-682m-budget-2027/)
 - [Ireland's 40% tax band starts at €44,000 — how that really compares with Europe](https://compound.ie/news/ireland-40-percent-tax-rate-threshold-europe/)
+- [Ireland’s public sector strike and the €1.2 billion pay question](https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/)
 - [Irish house prices are estimated to be 17% overvalued — what does that actually mean for buyers?](https://compound.ie/news/irish-house-prices-overvalued-17-percent-2026/)
 - [Irish housing market is cooling — but buyers are not suddenly getting cheap homes](https://compound.ie/news/ireland-house-prices-cooling-daft-dublin-2026/)
 - [Irish Tolls Rise in January 2027: M50 Up, Port Tunnel €15, M3 Cars Spared](https://compound.ie/news/ireland-toll-increases-2027/)
