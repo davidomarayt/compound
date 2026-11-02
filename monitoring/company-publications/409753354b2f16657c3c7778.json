@@ -2,7 +2,7 @@
   "story_fingerprint": "409753354b2f16657c3c7778",
   "company": "RDDT",
   "date": "2026-11-01",
-  "status": "prepared",
+  "status": "published",
   "publication_kind": "new_analysis",
   "authorization": "Explicit user request to publish this additional Reddit article; this is not a scheduled run and does not alter the scheduled daily limit.",
   "story_thesis": "Monetisation is growing faster than the audience; assess durability through search dependence, advertiser value and per-share cash economics.",
@@ -123,9 +123,34 @@
   },
   "gates": {
     "offline_tests": "46 passed: news images, finance discovery, earnings review and earnings SEO",
-    "build": "pending",
-    "render": "pending",
-    "ci": "pending",
-    "deployment": "pending"
+    "build": "Passed full production build: 226 articles, 658 tags, 25 pages, 57 tools. Existing approved assets prepared with the normal image processor.",
+    "render": "Rendered production HTML inspected: correct canonical, one H1, indexable, valid JSON-LD, source credit and internal links. Sitemap and finance catalogue contain canonical URL. Cover and actual 1200x675 OG/Twitter WebP visually inspected. No browser layout test claimed.",
+    "ci": "Passed exact head 8ce3ed67b512a381d7ce11ee8e45d77805cb1ddf in run 41364115966: all tests and mobile Lighthouse thresholds. Initial image preparation failed on Wikimedia 429 for an existing Lam Research image; unchanged-head retry passed.",
+    "deployment": "Build and deploy succeeded in site run 41364961093; verify-finance-discovery also passed. Direct article and social image HTTP checks passed."
+  },
+  "article_sha256": "b0c5f7c0e1c71652d16bb450a86ccfd4a29a90d647ba21fd76015fd60e0c6d20",
+  "social_image_sha256": "f314c7f826dc3239cd01485c5bbef2a6e846c7a3b9f4b6d2e991fa752424c0ed",
+  "pull_request": "https://github.com/davidomarayt/compound/pull/72",
+  "validated_head": "8ce3ed67b512a381d7ce11ee8e45d77805cb1ddf",
+  "publication_state": "live_verified",
+  "new_articles_published": 1,
+  "merge_commit": "9df85800df9c091bff4cd1f8bacd78e5db4e481d",
+  "deployment_url": "https://github.com/davidomarayt/compound/actions/runs/41364961093",
+  "live_verified_at": "2026-11-02T00:07:07.355057+00:00",
+  "live_verification": {
+    "http_status": 200,
+    "canonical": "https://compound.ie/wealth/reddit-revenue-user-growth/",
+    "social_image": "https://compound.ie/static/discover/reddit-revenue-user-growth-16x9.webp",
+    "social_image_http_status": 200,
+    "social_image_dimensions": [
+      1200,
+      675
+    ],
+    "sitemap": true,
+    "finance_catalogue": true,
+    "source_credit": true,
+    "stock_profile_link": true,
+    "social_sha256": "f314c7f826dc3239cd01485c5bbef2a6e846c7a3b9f4b6d2e991fa752424c0ed",
+    "social_image_visually_inspected": true
   }
 }
