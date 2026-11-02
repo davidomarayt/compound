@@ -68,7 +68,8 @@ def test_tesla_first_article_is_original_source_backed_and_has_a_specific_hero()
 
 def test_workflow_auto_publishes_only_after_checks_and_records_audit():
     wf = (ROOT / ".github/workflows/mag7-research.yml").read_text()
-    assert "cron: '17 8 * * *'" in wf
+    assert "workflow_dispatch:" in wf
+    assert "schedule:" not in wf
     assert "contents: write" in wf and "actions: write" in wf and "issues: write" in wf
     assert "scripts/mag7_autopublish.py" in wf
     assert "tests/test_mag7_autopublish.py" in wf
