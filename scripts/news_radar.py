@@ -35,22 +35,27 @@ def clean(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
-def parse_date(entry: Any, now: dt.datetime) -> dt.datetime:
-    for attr in ("published_parsed", "updated_parsed"):
-        value = getattr(entry, attr, None)
-        if value:
-            return dt.datetime(*value[:6], tzinfo=dt.timezone.utc)
-    for attr in ("published", "updated"):
-        value = getattr(entry, attr, None)
-        if value:
-            try:
-                parsed = parsedate_to_datetime(value)
-                if parsed.tzinfo is None:
-                    parsed = parsed.replace(tzinfo=dt.timezone.utc)
-                return parsed.astimezone(dt.timezone.utc)
-            except Exception:
-                pass
-    return now
+def parse_date(entry: Any) -> dt.datetime | None:
+    # Read the original field. Feedparser can normalise incomplete dates and
+    # an Atom "updated" value can refer to a revision of an old article.
+    raw = (entry.get("published") or "").strip()
+    try:
+        if re.fullmatch(
+            r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})",
+            raw, re.IGNORECASE,
+        ):
+            parsed = dt.datetime.fromisoformat(raw.upper())
+        elif re.fullmatch(
+            r"(?:(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun),\s+)?\d{1,2}\s+[A-Za-z]{3}\s+\d{4}\s+"
+            r"\d{2}:\d{2}(?::\d{2})?\s+(?:[+-](?:[01]\d|2[0-3])[0-5]\d|UT|UTC|GMT|[ECMP][SD]T)",
+            raw, re.IGNORECASE,
+        ):
+            parsed = parsedate_to_datetime(raw)
+        else:
+            return None
+        return parsed.astimezone(dt.timezone.utc) if parsed.tzinfo is not None else None
+    except (ValueError, OverflowError):
+        return None
 
 
 def contains(text: str, term: str) -> bool:
@@ -107,13 +112,8 @@ def fetch(config_path: Path, hours: int, limit: int) -> list[Item]:
             if not title or not link:
                 continue
 
-            published = parse_date(entry, now)
-            # Some feeds occasionally expose malformed/future publication dates.
-            # Ignore anything materially in the future rather than letting it
-            # dominate the freshness score.
-            if published > now + dt.timedelta(hours=6):
-                continue
-            if published < cutoff:
+            published = parse_date(entry)
+            if published is None or not cutoff <= published <= now:
                 continue
 
             key = item_key(title)
