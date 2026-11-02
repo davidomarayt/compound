@@ -2,8 +2,7 @@
 # Publish only after SEC-backed research, independent fact check, real photo and build QA.
 name: Mag 7 Research Desk
 on:
-  schedule:
-    - cron: '17 8 * * *'
+  # Daily coverage moved to the Compound daily Mag 8 automation on 2 November 2026.
   workflow_dispatch:
     inputs:
       date:
