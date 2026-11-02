@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 226
+- Published editorial articles and guides: 229
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 172
+## Wealth articles and guides — 175
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
@@ -68,6 +68,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/)
 - [Binance Investigates Suspected Hack as Billions in Crypto Are Frozen](https://compound.ie/news/binance-hack-october-2026/)
 - [Bloom Energy Earnings: Sales Surge, but Cash Flow Tells a Different Story](https://compound.ie/wealth/bloom-energy-earnings-growth-cash-flow/)
+- [Boeing Is Generating Cash Again. Is the Recovery Durable?](https://compound.ie/wealth/boeing-cash-flow-commercial-airplanes-losses/)
 - [Budget 2027 Ireland: The Key Changes to Tax, Rent, Childcare, Pensions and Energy](https://compound.ie/wealth/budget-2027-what-to-watch/)
 - [Budget 2027: Up to €2bn Reportedly Set Aside for a New Public-Sector Pay Deal](https://compound.ie/news/budget-2027-public-sector-pay-deal-2bn/)
 - [Buying a Home in Ireland 101: A Complete Step-by-Step Guide](https://compound.ie/wealth/buying-a-home-in-ireland/)
@@ -153,6 +154,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Netflix Earnings: Profit Rises, but the Growth Story Gets Harder](https://compound.ie/wealth/netflix-earnings-growth-advertising-outlook/)
 - [New €14,500 Heat-Pump Grant: Is Switching From Oil Worth It?](https://compound.ie/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/)
 - [New €2 EU parcel handling fee confirmed: what Irish shoppers will pay on non-EU orders](https://compound.ie/news/new-eu-parcel-fee-ireland-2026/)
+- [Nike's Margin Is Improving. The Demand Turnaround Hasn't Arrived](https://compound.ie/wealth/nike-margin-demand-turnaround/)
 - [No Energy Credit in Budget 2027: What Will Electricity Cost This Winter?](https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/)
 - [Nokia’s AI Sales Jump 123%—But Turning Growth Into Cash Is the Next Test](https://compound.ie/news/nokia-ai-growth-cash-flow/)
 - [Nvidia Stock Guide: AI Chips, CUDA, Margins and Valuation](https://compound.ie/wealth/nvidia-ai-gpu-margins-2026/)
@@ -209,6 +211,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [The Fed has raised US interest rates: what could it mean for Ireland?](https://compound.ie/news/fed-rate-hike-ireland-september-2026/)
 - [Thermo Fisher Earnings: Stronger Growth, Better Margins—and a Cash-Flow Test](https://compound.ie/wealth/thermo-fisher-earnings-organic-growth-cash-flow/)
 - [Two Irish couples earn €100,000. Why can their take-home pay differ by €9,556?](https://compound.ie/news/one-income-vs-two-incomes-ireland-2027/)
+- [UPS Is Delivering Fewer US Packages. Can Price and Automation Do the Rest?](https://compound.ie/wealth/ups-package-volume-pricing-automation/)
 - [Visa Earnings: Strong Payment Growth, but Watch the Incentives](https://compound.ie/wealth/visa-payments-growth-incentives/)
 - [Wealth for a 100-Year Life: Money, Housing and Choices in Ireland](https://compound.ie/wealth/wealth-for-a-100-year-life/)
 - [Western Digital Earnings: The AI Storage Boom Is Turning Into Cash](https://compound.ie/wealth/western-digital-earnings-ai-storage-cash-flow/)

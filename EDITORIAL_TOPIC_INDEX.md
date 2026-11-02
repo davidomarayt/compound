@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 226 published articles and guides, 64 tools,
+**Included:** 229 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -33,6 +33,7 @@ For the complete register (including 510+ company profiles), open
 - [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/) — **Wealth**
 - [Binance Investigates Suspected Hack as Billions in Crypto Are Frozen](https://compound.ie/news/binance-hack-october-2026/) — **Wealth**
 - [Bloom Energy Earnings: Sales Surge, but Cash Flow Tells a Different Story](https://compound.ie/wealth/bloom-energy-earnings-growth-cash-flow/) — **Wealth**
+- [Boeing Is Generating Cash Again. Is the Recovery Durable?](https://compound.ie/wealth/boeing-cash-flow-commercial-airplanes-losses/) — **Wealth**
 - [Budget 2027 gives health €29.1bn. So why aren’t Mounjaro and Wegovy funded for obesity?](https://compound.ie/news/budget-2027-obesity-mounjaro-wegovy-ireland/) — **Health**
 - [Budget 2027 Ireland: The Key Changes to Tax, Rent, Childcare, Pensions and Energy](https://compound.ie/wealth/budget-2027-what-to-watch/) — **Wealth**
 - [Budget 2027: Up to €2bn Reportedly Set Aside for a New Public-Sector Pay Deal](https://compound.ie/news/budget-2027-public-sector-pay-deal-2bn/) — **Wealth**
@@ -150,6 +151,7 @@ For the complete register (including 510+ company profiles), open
 - [Netflix Earnings: Profit Rises, but the Growth Story Gets Harder](https://compound.ie/wealth/netflix-earnings-growth-advertising-outlook/) — **Wealth**
 - [New €14,500 Heat-Pump Grant: Is Switching From Oil Worth It?](https://compound.ie/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/) — **Wealth**
 - [New €2 EU parcel handling fee confirmed: what Irish shoppers will pay on non-EU orders](https://compound.ie/news/new-eu-parcel-fee-ireland-2026/) — **Wealth**
+- [Nike's Margin Is Improving. The Demand Turnaround Hasn't Arrived](https://compound.ie/wealth/nike-margin-demand-turnaround/) — **Wealth**
 - [No Energy Credit in Budget 2027: What Will Electricity Cost This Winter?](https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/) — **Wealth**
 - [Nokia’s AI Sales Jump 123%—But Turning Growth Into Cash Is the Next Test](https://compound.ie/news/nokia-ai-growth-cash-flow/) — **Wealth**
 - [Nvidia Stock Guide: AI Chips, CUDA, Margins and Valuation](https://compound.ie/wealth/nvidia-ai-gpu-margins-2026/) — **Wealth**
@@ -217,6 +219,7 @@ For the complete register (including 510+ company profiles), open
 - [The rise of GLP-1 medicines in Ireland: what the evidence says](https://compound.ie/health/glp1-medicines-ireland-rise-evidence/) — **Health**
 - [Thermo Fisher Earnings: Stronger Growth, Better Margins—and a Cash-Flow Test](https://compound.ie/wealth/thermo-fisher-earnings-organic-growth-cash-flow/) — **Wealth**
 - [Two Irish couples earn €100,000. Why can their take-home pay differ by €9,556?](https://compound.ie/news/one-income-vs-two-incomes-ireland-2027/) — **Wealth**
+- [UPS Is Delivering Fewer US Packages. Can Price and Automation Do the Rest?](https://compound.ie/wealth/ups-package-volume-pricing-automation/) — **Wealth**
 - [Visa Earnings: Strong Payment Growth, but Watch the Incentives](https://compound.ie/wealth/visa-payments-growth-incentives/) — **Wealth**
 - [Vitamin D in winter: who in Ireland should take a supplement](https://compound.ie/health/vitamin-d-ireland-winter-who-should-take-it/) — **Health**
 - [Wealth for a 100-Year Life: Money, Housing and Choices in Ireland](https://compound.ie/wealth/wealth-for-a-100-year-life/) — **Wealth**
