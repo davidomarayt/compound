@@ -1,0 +1,126 @@
+{
+  "story_fingerprint": "d36aeaef0585105d9f62ff14",
+  "fingerprint_input": "BA|2026-Q3|cash-flow-vs-commercial-airplanes-losses",
+  "company": "The Boeing Company",
+  "ticker": "BA",
+  "date": "2026-11-02",
+  "status": "prepared",
+  "publication_state": "prepared_unpublished",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Positive quarterly cash flow is encouraging, but a durable recovery requires Commercial Airplanes to become profitable, inventory to convert into deliveries and debt to keep falling.",
+  "article_path": "content/wealth/boeing-cash-flow-commercial-airplanes-losses.md",
+  "canonical_url": "https://compound.ie/wealth/boeing-cash-flow-commercial-airplanes-losses/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/12927/000162828026067411/a202609sep308kprex991.htm",
+    "https://www.sec.gov/Archives/edgar/data/12927/000162828026067508/ba-20260930.htm"
+  ],
+  "identity": {
+    "issuer": "The Boeing Company",
+    "CIK": 12927,
+    "release_accession": "0001628280-26-067411",
+    "filing_accession": "0001628280-26-067508",
+    "form": "10-Q",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30",
+    "currency": "USD",
+    "units": "USD millions except per-share and aircraft data"
+  },
+  "duplicate_checks": [
+    "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json and actual wealth Markdown; Boeing has a stock profile but no dedicated cash-flow or Commercial Airplanes analysis.",
+    "Checked open pull requests 57 and 43 and recently merged publication pull requests; no Boeing article or matching fingerprint was active.",
+    "Checked recent company-publication records and live site content before drafting; no 2 November scheduled article slot had been used.",
+    "This is a business-economics question, not a routine quarter-by-quarter recap; routine figures remain linked through /stocks/ba/."
+  ],
+  "evidence_table": [
+    {
+      "claim": "Q3 revenue was USD24.188bn, operating cash flow USD1.496bn and Boeing-defined free cash flow USD464m.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release tables 1 and 2; 1,496 - 1,032 = 464.",
+      "result": "verified in separate fact-check pass; free cash flow labelled non-GAAP"
+    },
+    {
+      "claim": "Nine-month operating cash flow was USD2.681bn, capex USD3.040bn and free cash flow negative USD359m, versus negative USD2.252bn a year earlier.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release table 2; 2,681 - 3,040 = -359 and -266 - 1,986 = -2,252.",
+      "result": "verified in separate fact-check pass"
+    },
+    {
+      "claim": "Commercial Airplanes delivered 161 aircraft, recorded USD10.720bn revenue, a USD697m operating loss and negative 6.5% margin.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Commercial Airplanes segment table and MD&A.",
+      "result": "verified; delivery mix and production/supply-chain costs attributed to management"
+    },
+    {
+      "claim": "Commercial Airplanes' nine-month operating loss narrowed to USD1.582bn from USD6.447bn.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Commercial Airplanes segment table.",
+      "result": "verified in separate fact-check pass"
+    },
+    {
+      "claim": "Inventory was USD90.948bn, up USD6.269bn or about 7.4% from USD84.679bn at 2025 year end.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q balance sheet and inventory note; 90.948 - 84.679 = 6.269; 6.269 / 84.679 = 7.40%.",
+      "result": "verified; article rounds percentage to about 7%"
+    },
+    {
+      "claim": "Backlog was USD745.431bn, including USD611.833bn Commercial Airplanes backlog and more than 6,300 commercial aircraft.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release highlights and backlog table.",
+      "result": "verified; article rounds monetary figures"
+    },
+    {
+      "claim": "Cash and marketable securities were USD20.7bn and debt USD45.9bn, down from USD54.1bn at 2025 year end.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release liquidity paragraph and 10-Q debt note.",
+      "result": "verified; no unsupported net-debt measure used"
+    }
+  ],
+  "fact_check_pass": {
+    "method": "After drafting, every material number, period, segment label, accounting measure, management explanation and calculation was reread against the SEC-furnished release and Form 10-Q; arithmetic was recomputed independently.",
+    "unresolved_material_claims": []
+  },
+  "image": {
+    "asset": "/static/images/evergreen/boeing-cash-flow-commercial-airplanes-losses.jpg",
+    "dimensions": [1280, 853],
+    "source": "https://commons.wikimedia.org/wiki/File:Boeing_737-8_MAX_N8704Q_rotated.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Boeing_737-8_MAX_N8704Q_rotated.jpg",
+    "photographer": "pjs2005",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "capture_date": "2016-07-07",
+    "archive_label": "Archival Farnborough Airshow photograph; not a 2026 delivery image",
+    "transform": "Rotated by Commons uploader; Wikimedia 1280px derivative pinned for publication; display and social-image cropping may apply; adapted image remains CC BY-SA 2.0",
+    "alt": "Boeing 737-8 MAX aircraft at the Farnborough Airshow in July 2016; archival photograph, not an image of a 2026 delivery.",
+    "verified": true
+  },
+  "candidate_review": [
+    "Boeing: selected for cash conversion versus Commercial Airplanes losses.",
+    "UPS: selected separately for pricing and network economics.",
+    "Nike: selected separately for margin versus demand.",
+    "AbbVie: not selected; less distinct from existing healthcare coverage.",
+    "Exxon Mobil: not selected; recent filing/reorganisation context created a less clean current question.",
+    "Chevron: not selected; no stronger non-overlapping thesis than selected batch.",
+    "Booking Holdings: not selected; next results had not been released.",
+    "Airbnb: not selected; next results had not been released.",
+    "Regeneron: not selected; collaboration/product accounting required more evidence than the run allowed.",
+    "Mastercard: not selected to avoid overlap with the newly published Visa payments analysis."
+  ],
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_check": "passed",
+    "claim_fact_check": "passed",
+    "image_provenance": "passed",
+    "offline_tests": "passed: 46 tests covering news images, finance discovery, earnings review and earnings SEO",
+    "build": "passed production-canonical build: 229 articles, 661 tags, 25 pages and 57 tools; existing approved image cache prepared after restoring one already-live bespoke asset",
+    "render": "passed: canonical, one H1, indexable production metadata, source credit and internal links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
+    "exact_head_ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "article_sha256": "137207c7c031738fcb7d997cf9ec4271d6448587757037bc13ee92228bbbc2a5",
+  "local_image_sha256": "891767b0c8abd55610962cd4c554882e93e0f78cad943bd14cc47f2bc1aee2f2",
+  "social_image_sha256": "8a4b4630db9e55e059ab8a7b4317c138c0d61f93591b15035b2b3c842e822d6e",
+  "new_articles_published": 0
+}
