@@ -1,0 +1,40 @@
+{
+  "series": "mag8",
+  "date": "2026-11-02",
+  "ticker": "META",
+  "company": "Meta Platforms",
+  "story_fingerprint": "7fb633693d3fc10218d53ad5",
+  "fingerprint_input": "META|2026-Q3|reality-labs-cost-and-product-mix",
+  "publication_kind": "new_analysis",
+  "publication_state": "prepared",
+  "authorization": "Publisher authorised daily Mag 8 analysis.",
+  "story_thesis": "Lower spending explains the entire improvement in Reality Labs\u2019 quarterly operating loss. Meta\u2019s full-year outlook implies a more expensive December quarter.",
+  "article_path": "content/wealth/meta-reality-labs-loss-bridge.md",
+  "canonical_url": "https://compound.ie/wealth/meta-reality-labs-loss-bridge/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+    "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/"
+  ],
+  "identity": {
+    "CIK": 1326801,
+    "form": "10-Q",
+    "accession": "0001628280-26-066773",
+    "period_end": "2026-09-30",
+    "fiscal_period": "Q3",
+    "currency": "USD"
+  },
+  "duplicate_checks": [
+    "First evening slot; no same-date legacy Mag7 article, ledger entry or open PR. Morning batch BA, UPS, NKE. Existing Meta coverage addresses advertising and AI capex or general segment economics."
+  ],
+  "evidence_table": [
+    "10-Q segment results and IR table: operating loss 4432 to 4129, revenue 470 to 443; expense saving 330 less revenue decline 27 = improvement 303 ($m).",
+    "10-Q segment note: employee compensation 2594 to 1970; other costs rose 294 by subtraction. MD&A identifies Quest and glasses offsets in both periods.",
+    "IR nine-month loss $12.775bn; annual 10-Q outlook $18\u201319bn less reported loss implies $5.225\u20136.225bn."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Meta_Quest_3_front_View.jpg",
+    "credit": "Roy.wonder.cohen via Wikimedia Commons, 25 October 2023 (archival). Resized and cropped under CC BY-SA 4.0.",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "article_sha256": "021c0514dc5c0a777dae9fc2dc1ff985bddc25be67083dd55567d4a94023dc81"
+}
