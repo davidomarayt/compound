@@ -6,9 +6,9 @@
   "story_fingerprint": "7fb633693d3fc10218d53ad5",
   "fingerprint_input": "META|2026-Q3|reality-labs-cost-and-product-mix",
   "publication_kind": "new_analysis",
-  "publication_state": "prepared",
+  "publication_state": "live_verified",
   "authorization": "Publisher authorised daily Mag 8 analysis.",
-  "story_thesis": "Lower spending explains the entire improvement in Reality Labs\u2019 quarterly operating loss. Meta\u2019s full-year outlook implies a more expensive December quarter.",
+  "story_thesis": "Lower spending explains the entire improvement in Reality Labs’ quarterly operating loss. Meta’s full-year outlook implies a more expensive December quarter.",
   "article_path": "content/wealth/meta-reality-labs-loss-bridge.md",
   "canonical_url": "https://compound.ie/wealth/meta-reality-labs-loss-bridge/",
   "sources": [
@@ -29,12 +29,39 @@
   "evidence_table": [
     "10-Q segment results and IR table: operating loss 4432 to 4129, revenue 470 to 443; expense saving 330 less revenue decline 27 = improvement 303 ($m).",
     "10-Q segment note: employee compensation 2594 to 1970; other costs rose 294 by subtraction. MD&A identifies Quest and glasses offsets in both periods.",
-    "IR nine-month loss $12.775bn; annual 10-Q outlook $18\u201319bn less reported loss implies $5.225\u20136.225bn."
+    "IR nine-month loss $12.775bn; annual 10-Q outlook $18–19bn less reported loss implies $5.225–6.225bn."
   ],
   "image": {
     "source": "https://commons.wikimedia.org/wiki/File:Meta_Quest_3_front_View.jpg",
     "credit": "Roy.wonder.cohen via Wikimedia Commons, 25 October 2023 (archival). Resized and cropped under CC BY-SA 4.0.",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
   },
-  "article_sha256": "021c0514dc5c0a777dae9fc2dc1ff985bddc25be67083dd55567d4a94023dc81"
+  "article_sha256": "021c0514dc5c0a777dae9fc2dc1ff985bddc25be67083dd55567d4a94023dc81",
+  "status": "published",
+  "new_articles_published": 1,
+  "pull_request": "https://github.com/davidomarayt/compound/pull/75",
+  "validated_head": "62945850fe6187a8de0c3880b3d67a6b292d1129",
+  "merge_commit": "7c37e52b9094343f2c99b6a5d51ee3c4150faff4",
+  "ci_run": 41497386373,
+  "deployment_run": 41498998832,
+  "deployment_checks": {
+    "build": "success",
+    "deploy": "success",
+    "mobile-audit": "success",
+    "verify-finance-discovery": "success",
+    "verify-live": "success"
+  },
+  "live_verification": {
+    "verified_at": "2026-11-02T18:27:19.670Z",
+    "canonical": true,
+    "sitemap": true,
+    "finance_directory": true,
+    "finance_catalogue": true,
+    "social_image_dimensions": [
+      1200,
+      675
+    ],
+    "social_image_sha256": "015c1472ff45eb37dbe1072ed9facb9e745a753cf583eae30b4c06d8c8d86774",
+    "visual_review": "Landscape, square and 4:3 crops inspected. Live social asset matches inspected build."
+  }
 }
