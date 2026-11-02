@@ -4,8 +4,8 @@
   "company": "NIKE, Inc.",
   "ticker": "NKE",
   "date": "2026-11-02",
-  "status": "prepared",
-  "publication_state": "prepared_unpublished",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
   "story_thesis": "Nike's margin improvement is currently cost-led; a durable turnaround requires footwear, direct-channel and Greater China demand to recover without heavy promotion.",
@@ -116,12 +116,33 @@
     "offline_tests": "passed: 46 tests covering news images, finance discovery, earnings review and earnings SEO",
     "build": "passed production-canonical build: 229 articles, 661 tags, 25 pages and 57 tools; existing approved image cache prepared after restoring one already-live bespoke asset",
     "render": "passed: canonical, one H1, indexable production metadata, source credit and internal links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
-    "exact_head_ci": "pending",
-    "deployment": "pending",
-    "live_verification": "pending"
+    "exact_head_ci": "passed on exact PR head ef1708af61f4aba2d7c80d8e2f7f8d6e54f806be in run 41418611003: full tests, production build and Lighthouse performance job succeeded",
+    "deployment": "passed in site workflow run 41420122557 for merge commit 390d237cfd13c3df556a14c432591b82e00bbd00: build, deploy, verify-live, mobile-audit and verify-finance-discovery all succeeded",
+    "live_verification": "passed: live canonical, title, indexability, source credit, stock-profile link, sitemap, finance catalogue and actual 1200x675 social image independently fetched and verified"
   },
   "article_sha256": "8c5c712724e0e9e6a82adbf17336095d124ae8b16578b8c53c407ae90724dac8",
   "local_image_sha256": "0bf2ee85cdda0fcf1f4c0201a1fa8f1a25091378613762a81221974b50df8b08",
   "social_image_sha256": "3608293f7af953aec80ffd7bbbf2d44a839d13ba0ff0e5ab91173816e24f2377",
-  "new_articles_published": 0
+  "pull_request": "https://github.com/davidomarayt/compound/pull/73",
+  "validated_head": "ef1708af61f4aba2d7c80d8e2f7f8d6e54f806be",
+  "merge_commit": "390d237cfd13c3df556a14c432591b82e00bbd00",
+  "deployment_url": "https://github.com/davidomarayt/compound/actions/runs/41420122557",
+  "live_verified_at": "2026-11-02T09:31:26Z",
+  "live_verification": {
+    "http_status": 200,
+    "canonical": "https://compound.ie/wealth/nike-margin-demand-turnaround/",
+    "indexable": true,
+    "title_present": true,
+    "source_credit_present": true,
+    "stock_profile_link": true,
+    "sitemap": true,
+    "finance_catalogue": true,
+    "social_image": "https://compound.ie/static/discover/nike-margin-demand-turnaround-16x9.webp",
+    "social_image_http_status": 200,
+    "social_image_dimensions": [1200, 675],
+    "social_sha256": "3608293f7af953aec80ffd7bbbf2d44a839d13ba0ff0e5ab91173816e24f2377",
+    "social_image_visually_inspected": true
+  },
+  "scheduled_batch_new_articles_published": 3,
+  "new_articles_published": 1
 }
