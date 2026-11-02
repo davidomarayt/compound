@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-01",
+  "snapshot_date": "2026-11-02",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -3268,6 +3268,23 @@
           "take-home-pay",
           "ireland",
           2026
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Reddit’s Revenue Is Outrunning User Growth. Can It Last?",
+        "url": "/wealth/reddit-revenue-user-growth/",
+        "source": "content/wealth/reddit-revenue-user-growth.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "reddit-revenue-user-growth",
+        "date": "2026-11-01",
+        "reviewed": "2026-11-01",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "rddt"
         ],
         "status": "published"
       },

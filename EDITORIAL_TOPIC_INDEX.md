@@ -1,6 +1,6 @@
 # Compound.ie — Quick Editorial Topic Index
 
-Updated: 2026-11-01 | Automatically rebuilt from published source
+Updated: 2026-11-02 | Automatically rebuilt from published source
 
 **Before recommending a new article:** search this page by keyword, synonym,
 and reader question. An existing article or tool may already cover the idea.
@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 225 published articles and guides, 64 tools,
+**Included:** 226 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -178,6 +178,7 @@ For the complete register (including 510+ company profiles), open
 - [Probate in Ireland: The Complete Guide](https://compound.ie/wealth/probate-ireland/) — **Wealth**
 - [Protected Structures & Architectural Conservation Areas: Planning Rules in Ireland](https://compound.ie/wealth/protected-structures-aca-planning-ireland/) — **Wealth**
 - [PRSI Rises Today: What the 1 October 2026 Increase Costs You](https://compound.ie/news/prsi-increase-october-2026/) — **Wealth**
+- [Reddit’s Revenue Is Outrunning User Growth. Can It Last?](https://compound.ie/wealth/reddit-revenue-user-growth/) — **Wealth**
 - [Redundancy Tax in Ireland: Statutory Pay, Ex-Gratia & SCSB](https://compound.ie/wealth/redundancy-ireland-statutory-ex-gratia-tax/) — **Wealth**
 - [Remote Working in Ireland: Your Rights and How to Make a Request](https://compound.ie/life/remote-working-ireland-rights-request/) — **Life**
 - [Rent Tax Credit Budget 2027: New €1,150 Credit Explained](https://compound.ie/wealth/rent-tax-credit-budget-2027-ireland/) — **Wealth**
