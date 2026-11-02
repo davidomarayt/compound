@@ -1,0 +1,127 @@
+{
+  "story_fingerprint": "9d17f331a07675b53f222dd0",
+  "fingerprint_input": "NKE|2027-Q1|margin-vs-demand-turnaround",
+  "company": "NIKE, Inc.",
+  "ticker": "NKE",
+  "date": "2026-11-02",
+  "status": "prepared",
+  "publication_state": "prepared_unpublished",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Nike's margin improvement is currently cost-led; a durable turnaround requires footwear, direct-channel and Greater China demand to recover without heavy promotion.",
+  "article_path": "content/wealth/nike-margin-demand-turnaround.md",
+  "canonical_url": "https://compound.ie/wealth/nike-margin-demand-turnaround/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/320187/000032018726000184/q1fy27exhibit991er.htm",
+    "https://www.sec.gov/Archives/edgar/data/320187/000032018726000193/nke-20260831.htm"
+  ],
+  "identity": {
+    "issuer": "NIKE, Inc.",
+    "CIK": 320187,
+    "release_accession": "0000320187-26-000184",
+    "filing_accession": "0000320187-26-000193",
+    "form": "10-Q",
+    "fiscal_year": 2027,
+    "fiscal_period": "Q1",
+    "period_end": "2026-08-31",
+    "filing_date": "2026-10-02",
+    "currency": "USD",
+    "units": "USD millions except per-share and percentage data"
+  },
+  "duplicate_checks": [
+    "Checked editorial index, Markdown and JSON inventories and actual wealth sources; Nike has a stock profile but no dedicated margin-versus-demand analysis.",
+    "Checked open and recently merged pull requests and recent company-publication records; no Nike publication attempt or matching fingerprint was active.",
+    "Checked live site content before drafting; no canonical article answers this question.",
+    "The article focuses on direct-channel and product economics rather than publishing a routine quarterly recap."
+  ],
+  "evidence_table": [
+    {
+      "claim": "Revenue was USD11.213bn, down 4%, and gross margin was 42.8%, up 60 basis points.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results release financial highlights and 10-Q MD&A.",
+      "result": "verified in separate fact-check pass; fiscal Q1 2027 correctly distinguished from calendar 2027"
+    },
+    {
+      "claim": "Gross profit fell to USD4.798bn from USD4.943bn, approximately 2.9%, while operating profit was USD907m versus USD904m.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Consolidated statements; 4.798 / 4.943 - 1 = -2.93%.",
+      "result": "verified; article rounds gross-profit decline to about 3%"
+    },
+    {
+      "claim": "Overhead fell 6% to USD2.658bn while demand creation rose 5% to USD1.252bn.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Selling and administrative expense table and MD&A.",
+      "result": "verified in separate fact-check pass"
+    },
+    {
+      "claim": "Nike Direct revenue fell 8% to USD4.142bn; Digital fell 13%, stores 5%, while wholesale revenue was USD6.804bn, down 1%.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Channel revenue tables; reported-currency percentages used unless the article explicitly states constant currency.",
+      "result": "verified in separate fact-check pass"
+    },
+    {
+      "claim": "Footwear revenue fell 6% to USD6.951bn; unit sales fell 5% and average selling price reduced growth by one percentage point.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "NIKE Brand product revenues and 10-Q footwear analysis.",
+      "result": "verified in separate fact-check pass"
+    },
+    {
+      "claim": "Greater China revenue fell 22% to USD1.180bn, 26% in constant currency, and EBIT fell 34% to USD248m.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Geographic operating segment tables.",
+      "result": "verified; reported and constant-currency measures kept separate"
+    },
+    {
+      "claim": "Inventory was USD7.846bn, down 3% year on year but up 5% from 31 May due to product mix.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release balance-sheet highlights and 10-Q inventory MD&A.",
+      "result": "verified; article explicitly says the comparisons use different starting points"
+    },
+    {
+      "claim": "Pace targets USD2.5bn cumulative savings through fiscal 2031 with about USD1bn programme charges, plus USD300m of fiscal 2026 severance; about USD300m programme charges expected in fiscal 2027.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release outlook and 10-Q transformation programme note.",
+      "result": "verified; savings stated before charges and reinvestment"
+    },
+    {
+      "claim": "Fiscal 2027 guidance calls for a high-single-digit revenue decline and adjusted EPS of USD1.15-1.35 excluding about USD0.15 of restructuring charges.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Results release fiscal 2027 outlook.",
+      "result": "verified and labelled management guidance, not a guaranteed result"
+    }
+  ],
+  "fact_check_pass": {
+    "method": "After drafting, material figures, fiscal-period labels, currencies, reported and constant-currency measures, transformation charges, guidance and calculations were reread against both SEC primary documents.",
+    "unresolved_material_claims": []
+  },
+  "image": {
+    "asset": "/static/images/evergreen/nike-margin-demand-turnaround.jpg",
+    "dimensions": [1280, 787],
+    "source": "https://commons.wikimedia.org/wiki/File:Nike_ready_to_ball_(Unsplash).jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Nike_ready_to_ball_%28Unsplash%29.jpg",
+    "photographer": "Hermes Rivera",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "capture_date": "2017-05-23",
+    "archive_label": "Archival Nike product photograph from Windsor, Canada",
+    "transform": "Wikimedia 1280px derivative pinned for publication; display and social-image cropping may apply",
+    "alt": "Black Nike trainers reflected beneath fluorescent lights in Windsor, Canada, in May 2017; archival product photograph.",
+    "verified": true
+  },
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_check": "passed",
+    "claim_fact_check": "passed",
+    "image_provenance": "passed",
+    "offline_tests": "passed: 46 tests covering news images, finance discovery, earnings review and earnings SEO",
+    "build": "passed production-canonical build: 229 articles, 661 tags, 25 pages and 57 tools; existing approved image cache prepared after restoring one already-live bespoke asset",
+    "render": "passed: canonical, one H1, indexable production metadata, source credit and internal links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
+    "exact_head_ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "article_sha256": "8c5c712724e0e9e6a82adbf17336095d124ae8b16578b8c53c407ae90724dac8",
+  "local_image_sha256": "0bf2ee85cdda0fcf1f4c0201a1fa8f1a25091378613762a81221974b50df8b08",
+  "social_image_sha256": "3608293f7af953aec80ffd7bbbf2d44a839d13ba0ff0e5ab91173816e24f2377",
+  "new_articles_published": 0
+}

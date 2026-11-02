@@ -1,0 +1,120 @@
+{
+  "story_fingerprint": "c3d4647f3f756a29413db97c",
+  "fingerprint_input": "UPS|2026-Q3|price-automation-vs-domestic-volume",
+  "company": "United Parcel Service, Inc.",
+  "ticker": "UPS",
+  "date": "2026-11-02",
+  "status": "prepared",
+  "publication_state": "prepared_unpublished",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "UPS is earning more per US package while handling fewer packages; the durability test is whether network productivity can outrun rising cost per piece rather than relying on price alone.",
+  "article_path": "content/wealth/ups-package-volume-pricing-automation.md",
+  "canonical_url": "https://compound.ie/wealth/ups-package-volume-pricing-automation/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1090727/000162828026067381/exhibit991-earningspressre.htm",
+    "https://www.sec.gov/Archives/edgar/data/1090727/000162828026053249/ups-20260630.htm"
+  ],
+  "identity": {
+    "issuer": "United Parcel Service, Inc.",
+    "CIK": 1090727,
+    "release_accession": "0001628280-26-067381",
+    "filing_accession": "0001628280-26-053249",
+    "release_period_end": "2026-09-30",
+    "filing_period_end": "2026-06-30",
+    "currency": "USD",
+    "units": "USD millions except per-share, per-piece and volume data",
+    "filing_scope_note": "The Q3 earnings release is the current primary results document; the latest available Form 10-Q is the Q2 filing and is used only for programme and capital-spending context."
+  },
+  "duplicate_checks": [
+    "Checked editorial index, both inventories and actual wealth Markdown; UPS has a stock profile but no dedicated pricing, volume or automation analysis.",
+    "Checked open and recently merged pull requests and all recent company-publication records; no UPS publication attempt or matching fingerprint was active.",
+    "Checked live site content before drafting; no canonical article answers this question.",
+    "The article links the maintained /stocks/ups/ page and does not reproduce a routine quarterly table."
+  ],
+  "evidence_table": [
+    {
+      "claim": "US Domestic revenue was USD14.865bn, up 4.5%, with revenue per piece up 6.1%.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Q3 release US Domestic segment table and bullets.",
+      "result": "verified in separate fact-check pass"
+    },
+    {
+      "claim": "Average daily US package volume fell to 15.621m from 16.150m, approximately 3.3%.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Q3 release operating statistics; 15.621 / 16.150 - 1 = -3.28%.",
+      "result": "verified; article labels arithmetic as approximate"
+    },
+    {
+      "claim": "Domestic GAAP operating profit was USD906m versus USD603m and adjusted profit USD1.034bn versus USD905m; margins were 6.1% GAAP and 7.0% adjusted.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Q3 release US Domestic table.",
+      "result": "verified; GAAP and adjusted figures remain separate"
+    },
+    {
+      "claim": "Adjusted cost per piece was USD13.32 versus USD12.63, up 5.5%.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Q3 release US Domestic operating statistics.",
+      "result": "verified in separate fact-check pass"
+    },
+    {
+      "claim": "Network and efficiency initiatives produced about USD1.8bn of benefits in nine months; UPS expects nearly USD3bn for 2026 and recorded USD1.4bn of 2026 costs and USD1.9bn cumulatively.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release strategy section and latest 10-Q transformation discussion.",
+      "result": "verified as management statements; benefits are not presented as audited segment profit"
+    },
+    {
+      "claim": "Nine-month operating cash flow was USD5.986bn, capex USD2.221bn and company-defined adjusted free cash flow USD4.220bn versus USD2.744bn.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Q3 release cash-flow table; definition also includes disposal proceeds and other investing activities.",
+      "result": "verified; article states the company definition"
+    },
+    {
+      "claim": "Full-year guidance includes adjusted free cash flow around USD6.1bn, capex USD3bn, dividends around USD5.4bn and pension contributions USD1.3bn.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Q3 release 2026 outlook.",
+      "result": "verified and labelled management guidance"
+    },
+    {
+      "claim": "Group adjusted operating profit fell to USD2.054bn from USD2.132bn and adjusted margin to 9.0% from 10.0%.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Q3 release consolidated results and non-GAAP reconciliation.",
+      "result": "verified in separate fact-check pass"
+    }
+  ],
+  "fact_check_pass": {
+    "method": "After drafting, material results, periods, segment labels, adjusted measures, guidance and arithmetic were reread against the SEC-furnished Q3 release; the Q2 Form 10-Q was used only where the article explicitly describes it as the latest available filing.",
+    "unresolved_material_claims": [],
+    "important_limit": "The release describes a planned reduction from UPS's largest customer but does not identify that customer; the article deliberately does not name one."
+  },
+  "image": {
+    "asset": "/static/images/evergreen/ups-package-volume-pricing-automation.jpg",
+    "dimensions": [1280, 910],
+    "source": "https://commons.wikimedia.org/wiki/File:UPS_Truck_Delivering_Package_(17710458768).jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/UPS_Truck_Delivering_Package_%2817710458768%29.jpg",
+    "photographer": "Tony Webster",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "capture_date": "2015-05-14",
+    "archive_label": "Archival UPS delivery photograph from Portland, Oregon",
+    "transform": "Wikimedia 1280px derivative pinned for publication; display and social-image cropping may apply",
+    "alt": "UPS delivery truck beside a parcel in Portland, Oregon, in May 2015; archival photograph.",
+    "verified": true
+  },
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_check": "passed",
+    "claim_fact_check": "passed",
+    "image_provenance": "passed",
+    "offline_tests": "passed: 46 tests covering news images, finance discovery, earnings review and earnings SEO",
+    "build": "passed production-canonical build: 229 articles, 661 tags, 25 pages and 57 tools; existing approved image cache prepared after restoring one already-live bespoke asset",
+    "render": "passed: canonical, one H1, indexable production metadata, source credit and internal links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
+    "exact_head_ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "article_sha256": "bfb3b077da6994198323fb99f67ee57689da3df02355af9559a2f0b803466d22",
+  "local_image_sha256": "9e2411f6d62be362ead4808e4d660d6335a86ba1bbe098051545a68cf44d381a",
+  "social_image_sha256": "a7bdde4d6f468fa100976a7661d5e1f6890721ad06eba378b7b59af47ee10571",
+  "new_articles_published": 0
+}
