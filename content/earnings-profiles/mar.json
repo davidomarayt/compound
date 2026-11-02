@@ -2,33 +2,33 @@
   "cik": 1048286,
   "company": "Marriott International",
   "latest": {
-    "accession": "0001048286-26-000035",
-    "filed": "2026-08-03",
+    "accession": "0001048286-26-000043",
+    "filed": "2026-11-02",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.9,
-        "prior_year": 2.78,
+        "current": 3.04,
+        "prior_year": 2.67,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 766000000,
-        "prior_year": 763000000,
+        "current": 794000000,
+        "prior_year": 728000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 7071000000,
-        "prior_year": 6744000000,
+        "current": 7005000000,
+        "prior_year": 6489000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000035/mar-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000043/mar-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000035/mar-20260630.htm"
+    },
+    {
+      "accession": "0001048286-26-000043",
+      "filed": "2026-11-02",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.04,
+          "prior_year": 2.67,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 794000000,
+          "prior_year": 728000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7005000000,
+          "prior_year": 6489000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000043/mar-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "MAR",
-  "updated": "2026-10-15"
+  "updated": "2026-11-02"
 }

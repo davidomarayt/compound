@@ -2,33 +2,33 @@
   "cik": 60086,
   "company": "Loews Corporation",
   "latest": {
-    "accession": "0000060086-26-000047",
-    "filed": "2026-08-03",
+    "accession": "0000060086-26-000056",
+    "filed": "2026-11-02",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.16,
-        "prior_year": 1.87,
+        "current": 1.5,
+        "prior_year": 2.43,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 444000000,
-        "prior_year": 391000000,
+        "current": 306000000,
+        "prior_year": 504000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 828000000,
-        "prior_year": 769000000,
+        "current": 843000000,
+        "prior_year": 732000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/60086/000006008626000047/l-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/60086/000006008626000056/l-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/60086/000006008626000047/l-20260630.htm"
+    },
+    {
+      "accession": "0000060086-26-000056",
+      "filed": "2026-11-02",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.5,
+          "prior_year": 2.43,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 306000000,
+          "prior_year": 504000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 843000000,
+          "prior_year": 732000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/60086/000006008626000056/l-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "L",
-  "updated": "2026-10-15"
+  "updated": "2026-11-02"
 }
