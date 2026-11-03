@@ -1,0 +1,42 @@
+{
+  "series": "mag8",
+  "date": "2026-11-03",
+  "company": "Eli Lilly and Company",
+  "ticker": "LLY",
+  "story_fingerprint": "e2f174409abb91239f9d7681",
+  "fingerprint_input": "LLY|2026-Q3|china-reimbursement-unit-economics",
+  "publication_kind": "new_analysis",
+  "publication_state": "prepared",
+  "authorization": "Publisher authorised daily Mag 8 analysis.",
+  "story_thesis": "China\u2019s reimbursement list opened a wider market for Mounjaro. Lilly\u2019s filings show how much revenue grew and where the evidence stops on profitability.",
+  "article_path": "content/wealth/lilly-mounjaro-china-reimbursement.md",
+  "article_sha256": "5a37d01d8211dc0a7781a83996490288c6c4da231915cef9eb8a24c90750d075",
+  "canonical_url": "https://compound.ie/wealth/lilly-mounjaro-china-reimbursement/",
+  "sources": [
+    "https://investor.lilly.com/static-files/4413f2f3-6625-42b5-851e-ae9201e3bb95",
+    "https://investor.lilly.com/static-files/4580c401-611c-406b-8964-88cb8d887bd4",
+    "https://www.sec.gov/Archives/edgar/data/59478/000005947826000104/q326lillysalesandearningsp.htm"
+  ],
+  "identity": {
+    "CIK": 59478,
+    "form": "10-Q",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30",
+    "currency": "USD"
+  },
+  "duplicate_checks": [
+    "Only 2 November META in Mag 8 ledger; no 3 November legacy publication or prior Mag 8 PR/branch. Today\u2019s morning articles IDXX, MAR and ON. Indices, actual content and open PRs checked. Older Lilly coverage deals with oral EU approval, general valuation and METiS, not country-specific unit economics."
+  ],
+  "evidence_table": [
+    "Q3 slides p. price/rate/volume table, China: 947m, +69%, currency +7, CER +62, price and volume NM. Footnote specifies type 2 diabetes. SEC release identifies Q1 listing.",
+    "10-Q geography table: outside US 9,261m vs 6,301m, +47%, volume +76pp, prices -29pp. China share=947/9261=10.23%.",
+    "SEC earnings exhibit: international Mounjaro $5.7bn up 93%; group reported GM 83.9% up 1.0pp; product mix and production costs offset lower prices.",
+    "Hypothetical $100/$80 net price, $30 variable cost: equal revenue 100x100=125x80; equal contribution 100x70=140x50. All historical figures separated from illustration; no drug-specific margins or management guidance inferred."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Lilly_mounjaro_KwikPen_Tirzepatid_5_mg_per_dose_rate-9442.jpg",
+    "credit": "\u00a9 Raimond Spekking / CC BY-SA 4.0 (via Wikimedia Commons). Archival photograph, 16 January 2025. Resized and cropped.",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}
