@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-02
+Checked: 2026-11-03
 
 - 449 saved profiles checked against structural and issuer rules.
-- 52 existing company articles; 51 mapped to monitored issuers.
-- 109 pending review items; 18 recorded decisions.
+- 56 existing company articles; 55 mapped to monitored issuers.
+- 112 pending review items; 18 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -350,16 +350,6 @@ Saved filing is old enough to warrant checking the official source; this does no
 Files: `content/earnings-profiles/ed.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1047862/000104786226000091/ed-20260331.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-05-07
-
-### EL · coverage_check · medium
-
-ID: `5dc2d0473aaa75eee5f4a70d`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/el.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1001250/000100125026000019/el-20260331.htm · Q3 FY2026 · period end 2026-03-31 · filed 2026-05-01
 
 ### ERIE · coverage_check · medium
 
@@ -843,6 +833,16 @@ Files: `content/wealth/honeywell-earnings-organic-growth-guidance.md`, `content/
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/773840/000077384026000143/hon-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
 
+### IDXX · article_review · low
+
+ID: `8259959f5084152072e90e42`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/idexx-recurring-diagnostics-growth-margin.md`, `content/earnings-profiles/idxx.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/874716/000087471626000135/idxx-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-02
+
 ### ISRG · article_review · low
 
 ID: `2af41703040c47299beb8789`
@@ -862,6 +862,26 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/lam-research-earnings-growth-expectations.md`, `content/earnings-profiles/lrcx.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/707549/000070754926000054/lrcx-20260927.htm · Q1 FY2027 · period end 2026-09-27 · filed 2026-10-22
+
+### MAR · article_review · low
+
+ID: `94c07432c919c5b7e9c51f52`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/marriott-fees-growth-buybacks-debt.md`, `content/earnings-profiles/mar.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1048286/000104828626000043/mar-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-02
+
+### META · article_review · low
+
+ID: `4be0728fb31a1a0fd93916c6`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/meta-reality-labs-loss-bridge.md`, `content/earnings-profiles/meta.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
 
 ### MSFT · article_review · low
 
@@ -922,6 +942,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/nvidia-gross-margin-ai-demand.md`, `content/earnings-profiles/nvda.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm · Q2 FY2027 · period end 2026-07-26 · filed 2026-08-26
+
+### ON · article_review · low
+
+ID: `986e05340377875bf2d8a324`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/onsemi-margin-recovery-ai-data-centre.md`, `content/earnings-profiles/on.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1097864/000109786426000021/on-20261002.htm · Q3 FY2026 · period end 2026-10-02 · filed 2026-11-02
 
 ### RDDT · article_review · low
 
