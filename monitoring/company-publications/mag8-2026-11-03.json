@@ -6,9 +6,9 @@
   "story_fingerprint": "e2f174409abb91239f9d7681",
   "fingerprint_input": "LLY|2026-Q3|china-reimbursement-unit-economics",
   "publication_kind": "new_analysis",
-  "publication_state": "prepared",
+  "publication_state": "live_verified",
   "authorization": "Publisher authorised daily Mag 8 analysis.",
-  "story_thesis": "China\u2019s reimbursement list opened a wider market for Mounjaro. Lilly\u2019s filings show how much revenue grew and where the evidence stops on profitability.",
+  "story_thesis": "China’s reimbursement list opened a wider market for Mounjaro. Lilly’s filings show how much revenue grew and where the evidence stops on profitability.",
   "article_path": "content/wealth/lilly-mounjaro-china-reimbursement.md",
   "article_sha256": "5a37d01d8211dc0a7781a83996490288c6c4da231915cef9eb8a24c90750d075",
   "canonical_url": "https://compound.ie/wealth/lilly-mounjaro-china-reimbursement/",
@@ -26,7 +26,7 @@
     "currency": "USD"
   },
   "duplicate_checks": [
-    "Only 2 November META in Mag 8 ledger; no 3 November legacy publication or prior Mag 8 PR/branch. Today\u2019s morning articles IDXX, MAR and ON. Indices, actual content and open PRs checked. Older Lilly coverage deals with oral EU approval, general valuation and METiS, not country-specific unit economics."
+    "Only 2 November META in Mag 8 ledger; no 3 November legacy publication or prior Mag 8 PR/branch. Today’s morning articles IDXX, MAR and ON. Indices, actual content and open PRs checked. Older Lilly coverage deals with oral EU approval, general valuation and METiS, not country-specific unit economics."
   ],
   "evidence_table": [
     "Q3 slides p. price/rate/volume table, China: 947m, +69%, currency +7, CER +62, price and volume NM. Footnote specifies type 2 diabetes. SEC release identifies Q1 listing.",
@@ -36,7 +36,36 @@
   ],
   "image": {
     "source": "https://commons.wikimedia.org/wiki/File:Lilly_mounjaro_KwikPen_Tirzepatid_5_mg_per_dose_rate-9442.jpg",
-    "credit": "\u00a9 Raimond Spekking / CC BY-SA 4.0 (via Wikimedia Commons). Archival photograph, 16 January 2025. Resized and cropped.",
+    "credit": "© Raimond Spekking / CC BY-SA 4.0 (via Wikimedia Commons). Archival photograph, 16 January 2025. Resized and cropped.",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "status": "published",
+  "new_articles_published": 1,
+  "pull_request": "https://github.com/davidomarayt/compound/pull/77",
+  "validated_head": "f7ef480aaad4d99f0d72cf22e87cab27809e262d",
+  "merge_commit": "57619f4fab0a05193fa1218fb14f5d8e0743bab4",
+  "ci_run": 41690142066,
+  "deployment_run": 41691768762,
+  "deployment_checks": {
+    "build": "success",
+    "deploy": "success",
+    "mobile-audit": "success",
+    "verify-live": "success",
+    "verify-finance-discovery": "success"
+  },
+  "live_verification": {
+    "canonical": "https://compound.ie/wealth/lilly-mounjaro-china-reimbursement/",
+    "sitemap": true,
+    "finance_directory": true,
+    "finance_catalogue": true,
+    "hero_matches_source": true,
+    "social_image": "https://compound.ie/static/discover/lilly-mounjaro-china-reimbursement-16x9.webp",
+    "social_image_dimensions": [
+      1200,
+      675
+    ],
+    "social_sha256": "56d5f78f55db5787d183e80b24dc1ec613cbf4157fe7bae42e0ebdeb032d12b8",
+    "verified_at": "2026-11-03T18:22:43.981Z",
+    "visual_review": "Inspected square, 4:3 and landscape crops; live landscape image matches pre-release derivative."
   }
 }
