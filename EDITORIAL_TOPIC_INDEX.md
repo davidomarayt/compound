@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 235 published articles and guides, 64 tools,
+**Included:** 236 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -237,6 +237,7 @@ For the complete register (including 510+ company profiles), open
 - [What would an extra €100 a month do to your mortgage?](https://compound.ie/wealth/mortgage-overpayments-100-euro-ireland/) — **Wealth**
 - [When Can You Access Your Pension in Ireland? Retirement Options Explained](https://compound.ie/wealth/when-can-i-access-pension-ireland/) — **Wealth**
 - [When did you last do something just for fun?](https://compound.ie/life/when-did-you-last-do-something-for-fun/) — **Life**
+- [Who keeps the profit on an AI rack? AMD, Arista and Supermicro report](https://compound.ie/wealth/ai-infrastructure-earnings/) — **Wealth**
 - [Why you feel more tired in autumn: what darker days do to sleep and mood](https://compound.ie/life/why-you-feel-tired-in-autumn-dark-evenings-ireland/) — **Life**
 - [Why your time off doesn’t always feel like a break](https://compound.ie/life/why-time-off-doesnt-feel-like-a-break/) — **Life**
 - [Will Tesla and SpaceX Merge in 2027? The Financial Case, Risks and Shareholder Impact](https://compound.ie/wealth/tesla-spacex-merger-2027/) — **Wealth**

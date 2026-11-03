@@ -263,7 +263,7 @@
         "category": "Wealth",
         "slug": "apple-earnings-tariff-refunds-services",
         "date": "2026-10-18",
-        "reviewed": "2026-10-18",
+        "reviewed": "2026-11-03",
         "tags": [
           "wealth",
           "stocks",
@@ -4389,6 +4389,25 @@
           "hobbies",
           "everyday-happiness",
           "creativity"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Who keeps the profit on an AI rack? AMD, Arista and Supermicro report",
+        "url": "/wealth/ai-infrastructure-earnings/",
+        "source": "content/wealth/ai-infrastructure-earnings.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "ai-infrastructure-earnings",
+        "date": "2026-11-03",
+        "reviewed": "2026-11-03",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "amd",
+          "anet",
+          "smci"
         ],
         "status": "published"
       },

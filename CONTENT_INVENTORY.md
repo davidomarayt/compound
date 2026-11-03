@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 235
+- Published editorial articles and guides: 236
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 181
+## Wealth articles and guides — 182
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
@@ -225,6 +225,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What Is a REIT? How Property Investing Can Generate Income and Growth](https://compound.ie/wealth/what-is-a-reit/)
 - [What would an extra €100 a month do to your mortgage?](https://compound.ie/wealth/mortgage-overpayments-100-euro-ireland/)
 - [When Can You Access Your Pension in Ireland? Retirement Options Explained](https://compound.ie/wealth/when-can-i-access-pension-ireland/)
+- [Who keeps the profit on an AI rack? AMD, Arista and Supermicro report](https://compound.ie/wealth/ai-infrastructure-earnings/)
 - [Will Tesla and SpaceX Merge in 2027? The Financial Case, Risks and Shareholder Impact](https://compound.ie/wealth/tesla-spacex-merger-2027/)
 - [Your inflation rate may be higher than 3.4% — who is being hit hardest in Ireland?](https://compound.ie/news/personal-inflation-rate-ireland-households-2026/)
 - [Yuno Energy Freezes Winter Prices for 100,000 Customers — But Bills Have Already Risen](https://compound.ie/news/yuno-energy-price-freeze-winter-2026-2027/)
