@@ -1,0 +1,109 @@
+{
+  "story_fingerprint": "b73ecb6702fc3e5c119680af",
+  "fingerprint_input": "MAR|2026-Q3|fee-growth-buybacks-vs-debt",
+  "company": "Marriott International, Inc.",
+  "ticker": "MAR",
+  "date": "2026-11-03",
+  "status": "prepared",
+  "publication_state": "pre_publication_checks",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Fee revenue is compounding faster than rooms through RevPAR and card economics, while repurchases exceed cash after capital spending and make rising debt part of the per-share story.",
+  "article_path": "content/wealth/marriott-fees-growth-buybacks-debt.md",
+  "canonical_url": "https://compound.ie/wealth/marriott-fees-growth-buybacks-debt/",
+  "sources": [
+    "https://marriott.gcs-web.com/news-releases/news-release-details/marriott-international-reports-third-quarter-2026-results",
+    "https://www.sec.gov/Archives/edgar/data/1048286/000104828626000043/mar-20260930.htm"
+  ],
+  "identity": {
+    "issuer": "Marriott International, Inc.",
+    "CIK": 1048286,
+    "release_accession": "0001048286-26-000040",
+    "filing_accession": "0001048286-26-000043",
+    "form": "10-Q",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30",
+    "currency": "USD",
+    "units": "USD millions except per-share, percentage, property and room data"
+  },
+  "duplicate_checks": [
+    "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json and actual wealth Markdown; Marriott has a stock profile but no dedicated fee-growth/capital-return analysis.",
+    "Checked recent company-publication records, merged and open pull requests, and live site content; no matching Marriott story or fingerprint was active or published.",
+    "Routine results remain on /stocks/mar/; this article addresses asset-light fee compounding and capital allocation."
+  ],
+  "evidence_table": [
+    {
+      "claim": "Q3 franchise and base-management fees were USD1.341bn, up 13%, and incentive-management fees USD181m, up 22%.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release Q3 results and 10-Q fee-revenue MD&A.",
+      "result": "verified in separate fact-check pass"
+    },
+    {
+      "claim": "Worldwide RevPAR grew 6.5%, comprising 4.8% ADR growth and 1.1 percentage points of occupancy improvement.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release and 10-Q business trends.",
+      "result": "verified; RevPAR identified as a company performance measure"
+    },
+    {
+      "claim": "Quarter-end system had 1,833,801 rooms, up about 4.6% from 1,753,722 a year earlier; pipeline exceeded 634,000 rooms with 44% under construction.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "10-Q system growth and pipeline; 1,833,801 / 1,753,722 - 1 = 4.566%.",
+      "result": "verified; more than 37,000 approved pipeline rooms lacked signed contracts"
+    },
+    {
+      "claim": "Higher co-branded card fees added USD68m to quarterly franchise-fee growth, while RevPAR and room growth added USD36m.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release and 10-Q franchise-fee discussion.",
+      "result": "verified; drivers are management attribution"
+    },
+    {
+      "claim": "Nine-month operating cash flow was USD3.239bn, capital and technology expenditure USD411m, share repurchases USD3.081bn and dividends USD559m.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q sources and uses of cash; 3,239 - 411 = 2,828, below 3,081 + 559 = 3,640.",
+      "result": "verified; broader investment spending distinguished from capex"
+    },
+    {
+      "claim": "Total debt was USD16.8bn versus USD16.2bn at 2025 year end; cash was about USD0.4bn and net long-term debt issuance/repayment provided USD1.451bn year to date.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release liquidity paragraph and 10-Q cash-flow/debt notes.",
+      "result": "verified; no unsupported net-debt measure used"
+    }
+  ],
+  "fact_check_pass": {
+    "method": "After drafting, every material number, period, fee category, performance measure, management explanation and calculation was reread against the official release and Form 10-Q; arithmetic was independently recomputed.",
+    "unresolved_material_claims": []
+  },
+  "image": {
+    "asset": "/static/images/evergreen/marriott-fees-growth-buybacks-debt.jpg",
+    "dimensions": [1280, 1259],
+    "source": "https://commons.wikimedia.org/wiki/File:Cardiff_Marriott_Hotel.jpg",
+    "pinned_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Cardiff_Marriott_Hotel.jpg/1280px-Cardiff_Marriott_Hotel.jpg",
+    "photographer": "Mx. Granger",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "capture_date": "2022-03-05",
+    "archive_label": "Archival Cardiff Marriott Hotel exterior; not an image of the 2026 results",
+    "transform": "Wikimedia 1280px derivative pinned; resized for publication; display and social-image cropping may apply",
+    "alt": "Exterior of the Cardiff Marriott Hotel photographed from Custom House Street in March 2022; archival photograph.",
+    "verified": true
+  },
+  "candidate_review_reference": "See the seven-company candidate review in monitoring/company-publications/065fad33eb2a9577dbc55578.json.",
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_check": "passed",
+    "claim_fact_check": "passed",
+    "image_provenance": "passed",
+    "offline_tests": "passed: 55 tests covering news images, finance discovery, live finance verification, earnings review and earnings SEO",
+    "build": "passed production-canonical build: 234 articles, 668 tags, 25 pages and 57 tools; full verified editorial image cache prepared",
+    "render": "passed: canonical, one H1, indexable metadata, source credit and required internal links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
+    "exact_head_ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "article_sha256": "70872f224f39104d44e9b5635b982d1e50cf399701c0b26f2f6a06c9baa9ebf1",
+  "local_image_sha256": "ce90b845ba969f7da97cf93f5efd3c69bb3d0fc95009c7166d964313c9e5a945",
+  "social_image_sha256": "d61b5c22cb2a9fe99c02ae32c37e4e802179aec9963e8a6795b41bf77843e603",
+  "social_image_dimensions": [1200, 675],
+  "social_image_visually_inspected": true
+}
