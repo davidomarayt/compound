@@ -7,7 +7,7 @@ canonical_path: /wealth/apple-earnings-tariff-refunds-services/
 draft: false
 publication_status: published
 date: '2026-10-18'
-reviewed: '2026-10-18'
+reviewed: '2026-11-03'
 editorial_status: Source-checked manual article; publisher approved publication on 2026-10-18
 summary: Apple’s earnings rose sharply, but tariff refunds helped. We calculate growth without that disclosed benefit and
   examine Services’ share of gross profit.
@@ -26,6 +26,8 @@ image_credit: Medhat Dawoud / Unsplash (Unsplash Licence)
 image_source: https://unsplash.com/photos/apple-logo-in-front-of-a-building-f-3mUXFLY2o
 require_pinned_hero: true
 sources:
+- title: fiscal fourth-quarter release
+  url: https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/
 - title: fiscal third-quarter release
   url: https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/
 - title: quarterly SEC filing
@@ -36,9 +38,17 @@ sources:
 
 *Archival cover: Medhat Dawoud / Unsplash; published on Unsplash in 2017. [Original photograph](https://unsplash.com/photos/apple-logo-in-front-of-a-building-f-3mUXFLY2o) · [Unsplash Licence](https://unsplash.com/license). Capture date not independently verified.*
 
-*Research date: 18 October 2026. Reported figures are historical; illustrative calculations are identified below.*
+## September quarter update · 2 November 2026
 
-Apple's latest reported June quarter was strong. The more useful investor question is how much of that strength reflects repeatable business performance and how much came from a separately disclosed benefit.
+Apple reported fiscal Q4 revenue of **$114.5 billion**, up 12% year on year. Diluted EPS reached **$2.10**, up 14%. Apple quantified the tariff-refund benefit at five cents per share, so subtracting that item gives **$2.05**. Against the prior-year reported $1.85, that implies about **11% growth**. This is a one-item sensitivity calculation using the prior year as reported.
+
+The same calculation changes how we read margins. Apple reported a 47.9% gross margin and attributed roughly one percentage point to refunds. Removing that benefit puts the quarter near **46.9%**. Services set a revenue record and iPhone sales set a September-quarter record. Together those figures show genuine sales momentum alongside a temporary lift to profit.
+
+Apple also reported $28 billion in operating cash flow and $28 billion returned to shareholders in the quarter. The next earnings test is whether product and Services growth can sustain the margin as the refund benefit fades. [Apple’s fiscal Q4 release](https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/)
+
+## How the June quarter compares
+
+Apple's June quarter was strong. The more useful investor question is how much of that strength reflects repeatable business performance and how much came from a separately disclosed benefit.
 
 That distinction avoids two mistakes: extrapolating the entire headline growth rate, or dismissing the underlying business because one favourable item helped the result. A careful earnings analysis should do neither.
 
