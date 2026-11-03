@@ -2,33 +2,33 @@
   "cik": 874761,
   "company": "AES Corporation",
   "latest": {
-    "accession": "0000874761-26-000144",
-    "filed": "2026-08-04",
+    "accession": "0000874761-26-000156",
+    "filed": "2026-11-03",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.6,
-        "prior_year": -0.15,
+        "current": 0.76,
+        "prior_year": 0.89,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 426000000,
-        "prior_year": -95000000,
+        "current": 553000000,
+        "prior_year": 639000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3422000000,
-        "prior_year": 2855000000,
+        "current": 3872000000,
+        "prior_year": 3351000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000144/aes-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000156/aes-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000144/aes-20260630.htm"
+    },
+    {
+      "accession": "0000874761-26-000156",
+      "filed": "2026-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.76,
+          "prior_year": 0.89,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 553000000,
+          "prior_year": 639000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3872000000,
+          "prior_year": 3351000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/874761/000087476126000156/aes-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "AES",
-  "updated": "2026-10-15"
+  "updated": "2026-11-03"
 }

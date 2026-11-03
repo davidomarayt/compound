@@ -2,33 +2,33 @@
   "cik": 1551182,
   "company": "Eaton Corporation",
   "latest": {
-    "accession": "0001551182-26-000030",
-    "filed": "2026-07-31",
+    "accession": "0001551182-26-000040",
+    "filed": "2026-11-03",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.11,
-        "prior_year": 2.51,
+        "current": 2.77,
+        "prior_year": 2.59,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 821000000,
-        "prior_year": 982000000,
+        "current": 1078000000,
+        "prior_year": 1010000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 8531000000,
-        "prior_year": 7028000000,
+        "current": 8947000000,
+        "prior_year": 6988000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000030/etn-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000040/etn-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000030/etn-20260630.htm"
+    },
+    {
+      "accession": "0001551182-26-000040",
+      "filed": "2026-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.77,
+          "prior_year": 2.59,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1078000000,
+          "prior_year": 1010000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 8947000000,
+          "prior_year": 6988000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1551182/000155118226000040/etn-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "ETN",
-  "updated": "2026-10-15"
+  "updated": "2026-11-03"
 }

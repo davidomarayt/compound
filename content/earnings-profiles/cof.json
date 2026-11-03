@@ -2,33 +2,33 @@
   "cik": 927628,
   "company": "Capital One",
   "latest": {
-    "accession": "0000927628-26-000142",
-    "filed": "2026-10-20",
-    "form": "8-K",
+    "accession": "0000927628-26-000152",
+    "filed": "2026-11-03",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 5.61,
         "prior_year": 4.83,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 3539000000.0,
-        "prior_year": 3192000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 3539000000,
+        "prior_year": 3192000000,
+        "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 16344000000.0,
-        "prior_year": 15359000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 16344000000,
+        "prior_year": 15359000000,
+        "tag": "Revenues",
         "unit": "USD"
       }
     },
     "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000142/ex992q32026earningsrelease.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000152/cof-20260930.htm"
   },
   "periods": [
     {
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000089/cof-20260630.htm"
     },
     {
-      "accession": "0000927628-26-000142",
-      "filed": "2026-10-20",
-      "form": "8-K",
+      "accession": "0000927628-26-000152",
+      "filed": "2026-11-03",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 5.61,
           "prior_year": 4.83,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
-          "current": 3539000000.0,
-          "prior_year": 3192000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 3539000000,
+          "prior_year": 3192000000,
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
-          "current": 16344000000.0,
-          "prior_year": 15359000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 16344000000,
+          "prior_year": 15359000000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
       "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000142/ex992q32026earningsrelease.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/927628/000092762826000152/cof-20260930.htm"
     }
   ],
-  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "COF",
-  "updated": "2026-10-26"
+  "updated": "2026-11-03"
 }
