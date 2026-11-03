@@ -2,33 +2,33 @@
   "cik": 1097864,
   "company": "ON Semiconductor",
   "latest": {
-    "accession": "0001097864-26-000017",
-    "filed": "2026-08-03",
+    "accession": "0001097864-26-000021",
+    "filed": "2026-11-02",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.56,
-        "prior_year": 0.41,
+        "current": 0.79,
+        "prior_year": 0.63,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 226800000,
-        "prior_year": 170300000,
+        "current": 313900000,
+        "prior_year": 255000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1603500000,
-        "prior_year": 1468700000,
+        "current": 1722300000,
+        "prior_year": 1550900000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-03",
-    "source": "https://www.sec.gov/Archives/edgar/data/1097864/000109786426000017/on-20260703.htm"
+    "period_end": "2026-10-02",
+    "source": "https://www.sec.gov/Archives/edgar/data/1097864/000109786426000021/on-20261002.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-07-03",
       "source": "https://www.sec.gov/Archives/edgar/data/1097864/000109786426000017/on-20260703.htm"
+    },
+    {
+      "accession": "0001097864-26-000021",
+      "filed": "2026-11-02",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.79,
+          "prior_year": 0.63,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 313900000,
+          "prior_year": 255000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1722300000,
+          "prior_year": 1550900000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/1097864/000109786426000021/on-20261002.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "ON",
-  "updated": "2026-10-15"
+  "updated": "2026-11-03"
 }

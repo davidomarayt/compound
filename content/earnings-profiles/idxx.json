@@ -2,33 +2,33 @@
   "cik": 874716,
   "company": "Idexx Laboratories",
   "latest": {
-    "accession": "0000874716-26-000123",
-    "filed": "2026-08-04",
+    "accession": "0000874716-26-000135",
+    "filed": "2026-11-02",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 4.27,
-        "prior_year": 3.63,
+        "current": 4.01,
+        "prior_year": 3.4,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 338412000,
-        "prior_year": 293989000,
+        "current": 317145000,
+        "prior_year": 274610000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1216585000,
-        "prior_year": 1109457000,
+        "current": 1214237000,
+        "prior_year": 1105239000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/874716/000087471626000123/idxx-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/874716/000087471626000135/idxx-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/874716/000087471626000123/idxx-20260630.htm"
+    },
+    {
+      "accession": "0000874716-26-000135",
+      "filed": "2026-11-02",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.01,
+          "prior_year": 3.4,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 317145000,
+          "prior_year": 274610000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1214237000,
+          "prior_year": 1105239000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/874716/000087471626000135/idxx-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "IDXX",
-  "updated": "2026-10-15"
+  "updated": "2026-11-03"
 }
