@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-02",
+  "snapshot_date": "2026-11-03",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -1837,6 +1837,23 @@
         "status": "published"
       },
       {
+        "title": "IDEXX's Recurring Diagnostics Engine Is Expanding. How Durable Is It?",
+        "url": "/wealth/idexx-recurring-diagnostics-growth-margin/",
+        "source": "content/wealth/idexx-recurring-diagnostics-growth-margin.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "idexx-recurring-diagnostics-growth-margin",
+        "date": "2026-11-03",
+        "reviewed": "2026-11-03",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "idxx"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Income Protection Insurance in Ireland: The Complete 2026 Guide",
         "url": "/wealth/income-protection-insurance-ireland/",
         "source": "content/wealth/income-protection-insurance-ireland.md",
@@ -2428,6 +2445,23 @@
         "status": "published"
       },
       {
+        "title": "Marriott's Fees Are Outrunning Room Growth. What Is Funding the Buybacks?",
+        "url": "/wealth/marriott-fees-growth-buybacks-debt/",
+        "source": "content/wealth/marriott-fees-growth-buybacks-debt.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "marriott-fees-growth-buybacks-debt",
+        "date": "2026-11-03",
+        "reviewed": "2026-11-03",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "mar"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Meta Earnings: Advertising Surges, but the AI Bill Consumes the Cash",
         "url": "/wealth/meta-advertising-ai-spending-earnings/",
         "source": "content/wealth/meta-advertising-ai-spending-earnings.md",
@@ -2893,6 +2927,23 @@
           "gifts",
           "cat",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "onsemi's Margins Are Recovering. How Much Is AI Doing?",
+        "url": "/wealth/onsemi-margin-recovery-ai-data-centre/",
+        "source": "content/wealth/onsemi-margin-recovery-ai-data-centre.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "onsemi-margin-recovery-ai-data-centre",
+        "date": "2026-11-03",
+        "reviewed": "2026-11-03",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "on"
         ],
         "status": "published"
       },
