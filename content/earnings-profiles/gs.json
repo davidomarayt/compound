@@ -2,33 +2,33 @@
   "cik": 886982,
   "company": "Goldman Sachs",
   "latest": {
-    "accession": "0000886982-26-000529",
-    "filed": "2026-10-13",
-    "form": "8-K",
+    "accession": "0000886982-26-000532",
+    "filed": "2026-11-02",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 17.01,
         "prior_year": 12.25,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 5294000000.0,
-        "prior_year": 4098000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 5294000000,
+        "prior_year": 4098000000,
+        "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 18679000000.0,
-        "prior_year": 15184000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 18679000000,
+        "prior_year": 15184000000,
+        "tag": "RevenuesNetOfInterestExpense",
         "unit": "USD"
       }
     },
     "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/886982/000088698226000529/a3q26gsearningsresults.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/886982/000088698226000532/gs-20260930.htm"
   },
   "periods": [
     {
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/886982/000088698226000297/gs-20260630.htm"
     },
     {
-      "accession": "0000886982-26-000529",
-      "filed": "2026-10-13",
-      "form": "8-K",
+      "accession": "0000886982-26-000532",
+      "filed": "2026-11-02",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 17.01,
           "prior_year": 12.25,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
-          "current": 5294000000.0,
-          "prior_year": 4098000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 5294000000,
+          "prior_year": 4098000000,
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
-          "current": 18679000000.0,
-          "prior_year": 15184000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 18679000000,
+          "prior_year": 15184000000,
+          "tag": "RevenuesNetOfInterestExpense",
           "unit": "USD"
         }
       },
       "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/886982/000088698226000529/a3q26gsearningsresults.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/886982/000088698226000532/gs-20260930.htm"
     }
   ],
-  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "GS",
-  "updated": "2026-10-26"
+  "updated": "2026-11-03"
 }
