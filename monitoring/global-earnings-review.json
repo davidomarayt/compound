@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-02",
+  "checked": "2026-11-03",
   "companies_checked": 10,
   "companies": {
     "spcx": {
@@ -12,7 +12,7 @@
       "company": "Taiwan Semiconductor Manufacturing Company (TSMC)",
       "official_source": "https://investor.tsmc.com/english/financial-calendar",
       "regulatory": "SEC verified issuer: TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD (1046179)",
-      "official_source_status": "Unavailable; retry next run: HTTP Error 403: Forbidden"
+      "official_source_status": "Checked 52 relevant investor links"
     },
     "asml": {
       "company": "ASML Holding",
@@ -199,11 +199,31 @@
       "https://investor.tsmc.com/english/quarterly-results/2025/q3",
       "https://investor.tsmc.com/english/quarterly-results/2025/q4",
       "https://investor.tsmc.com/english/quarterly-results/2026/q1",
-      "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+      "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+      "https://investor.tsmc.com/english/quarterly-results/2026/q3"
     ]
   },
-  "new_review_candidates": 0,
+  "new_review_candidates": 2,
   "pending_review": [
+    {
+      "id": "ir:tsm:https://investor.tsmc.com/english/quarterly-results/2026/q3",
+      "company": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "slug": "tsm",
+      "title": "/english/quarterly-results/2026/q3",
+      "url": "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+      "source": "Official investor page (review before publication)",
+      "discovered": "2026-11-03"
+    },
+    {
+      "id": "sec:353278:0001171843-26-007060",
+      "company": "Novo Nordisk",
+      "slug": "nvo",
+      "title": "Novo Nordisk SEC 6-K filed 2026-11-03",
+      "filed": "2026-11-03",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=353278",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
     {
       "id": "ir:1211-hk:https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1029/2026102900816.pdf",
       "company": "BYD Company",
