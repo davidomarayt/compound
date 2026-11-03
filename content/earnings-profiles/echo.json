@@ -2,33 +2,33 @@
   "cik": 1415404,
   "company": "EchoStar",
   "latest": {
-    "accession": "0001104659-26-089370",
-    "filed": "2026-08-03",
+    "accession": "0001104659-26-121675",
+    "filed": "2026-11-03",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 24.12,
-        "prior_year": -1.06,
+        "current": 7.97,
+        "prior_year": -44.37,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 8462372000,
-        "prior_year": -306132000,
+        "current": 2782249000,
+        "prior_year": -12781196000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3576164000,
-        "prior_year": 3724959000,
+        "current": 1127611000,
+        "prior_year": 3614258000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1415404/000110465926089370/sats-20260630x10q.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1415404/000110465926121675/sats-20260930x10q.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1415404/000110465926089370/sats-20260630x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-121675",
+      "filed": "2026-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 7.97,
+          "prior_year": -44.37,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2782249000,
+          "prior_year": -12781196000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1127611000,
+          "prior_year": 3614258000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1415404/000110465926121675/sats-20260930x10q.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "ECHO",
-  "updated": "2026-10-15"
+  "updated": "2026-11-03"
 }

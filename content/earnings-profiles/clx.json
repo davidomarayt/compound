@@ -2,33 +2,33 @@
   "cik": 21076,
   "company": "Clorox",
   "latest": {
-    "accession": "0000021076-26-000019",
-    "filed": "2026-04-30",
+    "accession": "0000021076-26-000046",
+    "filed": "2026-11-02",
     "form": "10-Q",
-    "fp": "Q3",
-    "fy": 2026,
+    "fp": "Q1",
+    "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 1.54,
-        "prior_year": 1.5,
+        "current": 1.39,
+        "prior_year": 0.65,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 187000000,
-        "prior_year": 186000000,
+        "current": 170000000,
+        "prior_year": 80000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1670000000,
-        "prior_year": 1668000000,
+        "current": 1905000000,
+        "prior_year": 1429000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/21076/000002107626000019/clx-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/21076/000002107626000046/clx-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,38 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/21076/000002107626000019/clx-20260331.htm"
+    },
+    {
+      "accession": "0000021076-26-000046",
+      "filed": "2026-11-02",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.39,
+          "prior_year": 0.65,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 170000000,
+          "prior_year": 80000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1905000000,
+          "prior_year": 1429000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/21076/000002107626000046/clx-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CLX",
-  "updated": "2026-10-15"
+  "updated": "2026-11-03"
 }

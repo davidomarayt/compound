@@ -2,33 +2,33 @@
   "cik": 2115436,
   "company": "ExxonMobil",
   "latest": {
-    "accession": "0000034088-26-000093",
-    "filed": "2026-08-03",
+    "accession": "0002115436-26-000020",
+    "filed": "2026-11-02",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 3.48,
-        "prior_year": 1.64,
+        "current": 3.72,
+        "prior_year": 1.76,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 14525000000,
-        "prior_year": 7082000000,
+        "current": 15413000000,
+        "prior_year": 7548000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 116017000000,
-        "prior_year": 81506000000,
+        "current": 113164000000,
+        "prior_year": 85294000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/2115436/000003408826000093/xom-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/2115436/000211543626000020/xom-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/2115436/000003408826000093/xom-20260630.htm"
+    },
+    {
+      "accession": "0002115436-26-000020",
+      "filed": "2026-11-02",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.72,
+          "prior_year": 1.76,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 15413000000,
+          "prior_year": 7548000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 113164000000,
+          "prior_year": 85294000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/2115436/000211543626000020/xom-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "XOM",
-  "updated": "2026-10-15"
+  "updated": "2026-11-03"
 }
