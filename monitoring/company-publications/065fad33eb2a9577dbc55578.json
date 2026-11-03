@@ -1,0 +1,117 @@
+{
+  "story_fingerprint": "065fad33eb2a9577dbc55578",
+  "fingerprint_input": "IDXX|2026-Q3|recurring-diagnostics-growth-vs-margin",
+  "company": "IDEXX Laboratories, Inc.",
+  "ticker": "IDXX",
+  "date": "2026-11-03",
+  "status": "prepared",
+  "publication_state": "pre_publication_checks",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Recurring diagnostics revenue is compounding through instrument placements, consumable use and reference-lab volumes, but durability depends on utilisation and cash conversion rather than placements alone.",
+  "article_path": "content/wealth/idexx-recurring-diagnostics-growth-margin.md",
+  "canonical_url": "https://compound.ie/wealth/idexx-recurring-diagnostics-growth-margin/",
+  "sources": [
+    "https://ir.idexx.com/sec-filings/all-sec-filings/content/0001104659-26-120892/tm2628647d1_ex99-1.htm",
+    "https://www.sec.gov/Archives/edgar/data/874716/000087471626000135/idxx-20260930.htm"
+  ],
+  "identity": {
+    "issuer": "IDEXX Laboratories, Inc.",
+    "CIK": 874716,
+    "release_accession": "0001104659-26-120892",
+    "filing_accession": "0000874716-26-000135",
+    "form": "10-Q",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30",
+    "currency": "USD",
+    "units": "USD millions except per-share, percentage and instrument data"
+  },
+  "duplicate_checks": [
+    "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json and actual wealth Markdown; IDEXX has a stock profile but no dedicated recurring-diagnostics analysis.",
+    "Checked recent company-publication records, merged and open pull requests, and live site content; no matching IDEXX story or fingerprint was active or published.",
+    "Routine results remain on /stocks/idxx/; this article addresses the installed-base and recurring-revenue economics."
+  ],
+  "evidence_table": [
+    {
+      "claim": "Q3 revenue was USD1.214237bn, up 10% rounded, while diluted EPS was USD4.01 and net income USD317.145m.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release headline and consolidated tables; 1,214.237 / 1,105.239 - 1 = 9.862%, rounded to 10%.",
+      "result": "verified in separate fact-check pass"
+    },
+    {
+      "claim": "CAG diagnostics recurring revenue grew 11%; VetLab consumables grew 14% reported and 15% organic; reference-lab revenue grew 10%.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release CAG highlights and 10-Q CAG revenue discussion.",
+      "result": "verified; reported and organic measures distinguished"
+    },
+    {
+      "claim": "More than 1,900 inVue Dx analysers were placed and its installed base approached 11,000; the global premium instrument installed base grew 11%.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release CAG highlights and 10-Q MD&A.",
+      "result": "verified; instrument revenue was flat and lower price realisation is stated"
+    },
+    {
+      "claim": "Gross margin was 62.9%, up 110 basis points, and operating margin 33.1%, up 100 basis points.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release gross-profit and operating-profit section and 10-Q consolidated MD&A.",
+      "result": "verified as GAAP; comparable measures not substituted"
+    },
+    {
+      "claim": "Nine-month operating cash flow was USD1.063127bn versus USD826.045m; full-year capex plan was about USD160m.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "10-Q sources and uses of cash; increase recomputed as USD237.082m.",
+      "result": "verified; acquisition spending not treated as capex"
+    },
+    {
+      "claim": "Updated revenue guidance was USD4.741bn-USD4.767bn, EPS USD14.96-USD15.16 and operating margin 32.1%-32.3%.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Release updated outlook table.",
+      "result": "verified; operating-margin range is lower than prior 32.3%-32.5%"
+    }
+  ],
+  "fact_check_pass": {
+    "method": "After drafting, every material number, period, accounting label, management explanation and calculation was reread against the SEC-furnished release and Form 10-Q; arithmetic was independently recomputed.",
+    "unresolved_material_claims": []
+  },
+  "image": {
+    "asset": "/static/images/evergreen/idexx-recurring-diagnostics-growth-margin.jpg",
+    "dimensions": [1280, 960],
+    "source": "https://commons.wikimedia.org/wiki/File:Laboratory_analyzers_at_a_veterinary_clinic_in_Newark,_New_Jersey.jpg",
+    "pinned_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Laboratory_analyzers_at_a_veterinary_clinic_in_Newark%2C_New_Jersey.jpg/1280px-Laboratory_analyzers_at_a_veterinary_clinic_in_Newark%2C_New_Jersey.jpg",
+    "photographer": "Ali Merchant / Veterinarian Pet Alliance",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "capture_date": "2026-06-02",
+    "archive_label": "Archival veterinary-clinic laboratory photograph with visibly IDEXX-branded analysers",
+    "transform": "Wikimedia 1280px derivative pinned; resized for publication; display and social-image cropping may apply",
+    "alt": "IDEXX-branded veterinary laboratory analysers and a computer at a clinic in Newark, New Jersey; archival photograph from June 2026.",
+    "verified": true
+  },
+  "candidate_review": [
+    "IDEXX: selected for recurring diagnostics and installed-base economics.",
+    "ON Semiconductor: selected separately for cyclical margin recovery and AI data-centre mix.",
+    "Marriott: selected separately for fee economics, buybacks and debt.",
+    "Estée Lauder: verified recent filing but not selected because current turnaround coverage was less distinct than the selected theses.",
+    "Progressive: verified recent filing but not selected to preserve sector rotation and avoid another cash-return story.",
+    "Goldman Sachs: verified recent filing but not selected because the refreshed filing did not provide as clean a new operating question.",
+    "Loews: verified recent filing but not selected because conglomerate segment attribution was less focused for this batch."
+  ],
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_check": "passed",
+    "claim_fact_check": "passed",
+    "image_provenance": "passed",
+    "offline_tests": "passed: 55 tests covering news images, finance discovery, live finance verification, earnings review and earnings SEO",
+    "build": "passed production-canonical build: 234 articles, 668 tags, 25 pages and 57 tools; full verified editorial image cache prepared",
+    "render": "passed: canonical, one H1, indexable metadata, source credit and required internal links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
+    "exact_head_ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "article_sha256": "1256ab3bd859bc0d1e3c0990ec2589cd60f7896cc626bb45c6f163d2c7c91f3d",
+  "local_image_sha256": "ac498426091127822d8c8ea81f88b07e42c125628b215fb22ee270fe9a027970",
+  "social_image_sha256": "e4ecccfc9dbca8cbf8d4ccbe6059e7935a30fc32975fb61fed740a28599cd289",
+  "social_image_dimensions": [1200, 675],
+  "social_image_visually_inspected": true
+}

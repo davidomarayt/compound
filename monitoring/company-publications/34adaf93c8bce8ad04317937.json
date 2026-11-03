@@ -1,0 +1,108 @@
+{
+  "story_fingerprint": "34adaf93c8bce8ad04317937",
+  "fingerprint_input": "ON|2026-Q3|margin-recovery-ai-data-centre-vs-acquisition",
+  "company": "ON Semiconductor Corporation",
+  "ticker": "ON",
+  "date": "2026-11-03",
+  "status": "prepared",
+  "publication_state": "pre_publication_checks",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Power-product utilisation and AI data-centre demand are lifting margins and cash flow, while a large cash acquisition makes durability and capital allocation the next tests.",
+  "article_path": "content/wealth/onsemi-margin-recovery-ai-data-centre.md",
+  "canonical_url": "https://compound.ie/wealth/onsemi-margin-recovery-ai-data-centre/",
+  "sources": [
+    "https://investor.onsemi.com/news-releases/news-release-details/onsemi-reports-third-quarter-2026-results",
+    "https://www.sec.gov/Archives/edgar/data/1097864/000109786426000021/on-20261002.htm"
+  ],
+  "identity": {
+    "issuer": "ON Semiconductor Corporation",
+    "CIK": 1097864,
+    "filing_accession": "0001097864-26-000021",
+    "form": "10-Q",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-10-02",
+    "currency": "USD",
+    "units": "USD millions except per-share and percentage data"
+  },
+  "duplicate_checks": [
+    "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json and actual wealth Markdown; onsemi has a stock profile but no dedicated margin/AI analysis.",
+    "Checked recent company-publication records, merged and open pull requests, and live site content; no matching onsemi story or fingerprint was active or published.",
+    "Routine results remain on /stocks/on/; this article addresses segment margin, manufacturing and acquisition economics."
+  ],
+  "evidence_table": [
+    {
+      "claim": "Q3 revenue was USD1.7223bn, up 11%, GAAP gross margin was 41.4%, operating income USD378.3m and diluted EPS USD0.79.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release highlights and 10-Q consolidated MD&A; revenue growth recomputed as 11.052%.",
+      "result": "verified in separate fact-check pass"
+    },
+    {
+      "claim": "Power Solutions revenue grew 21% and gross margin rose 9.7 percentage points to 38.2%; Analog and Mixed-Signal and Intelligent Sensing margins declined.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q segment MD&A.",
+      "result": "verified; segment concentration explicitly retained"
+    },
+    {
+      "claim": "AI data-centre revenue grew 39% sequentially and 175% year on year; PSG and AMG AI data-centre revenue gains were USD71.3m and USD43.3m respectively.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release highlights and 10-Q end-market discussion.",
+      "result": "verified; company growth rates attributed to management"
+    },
+    {
+      "claim": "Quarterly operating cash flow was USD516m and company-defined free cash flow USD488.6m, implying about USD27.4m of capex.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Release free-cash-flow reconciliation; 516.0 - 488.6 = 27.4.",
+      "result": "verified; free cash flow labelled non-GAAP"
+    },
+    {
+      "claim": "Nine-month free cash flow was USD1.1312bn versus USD933.2m and capex was about 2% of revenue, with 2%-3% expected for 2026.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release reconciliation and 10-Q investing activities.",
+      "result": "verified"
+    },
+    {
+      "claim": "The revised Synaptics transaction is approximately USD5.7bn cash; quarter-end cash and short-term investments were about USD4.4bn and funding includes committed borrowing.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release business highlights and 10-Q liquidity/acquisition discussion.",
+      "result": "verified; non-GAAP EPS accretion is presented only as management's expectation"
+    }
+  ],
+  "fact_check_pass": {
+    "method": "After drafting, every material number, period, segment label, end-market claim, accounting measure and calculation was reread against the official results release and Form 10-Q; arithmetic was independently recomputed.",
+    "unresolved_material_claims": []
+  },
+  "image": {
+    "asset": "/static/images/evergreen/onsemi-margin-recovery-ai-data-centre.jpg",
+    "dimensions": [1280, 960],
+    "source": "https://commons.wikimedia.org/wiki/File:Silicon_wafer_close_view.jpg",
+    "pinned_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Silicon_wafer_close_view.jpg/1280px-Silicon_wafer_close_view.jpg",
+    "photographer": "Le hollandais volant",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "capture_date": "2017-10-21",
+    "archive_label": "Archival silicon-wafer photograph; not identified as an onsemi product",
+    "transform": "Wikimedia 1280px derivative pinned; resized for publication; display and social-image cropping may apply",
+    "alt": "Close view of a patterned silicon wafer; archival photograph from October 2017, not an onsemi product.",
+    "verified": true
+  },
+  "candidate_review_reference": "See the seven-company candidate review in monitoring/company-publications/065fad33eb2a9577dbc55578.json.",
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_check": "passed",
+    "claim_fact_check": "passed",
+    "image_provenance": "passed",
+    "offline_tests": "passed: 55 tests covering news images, finance discovery, live finance verification, earnings review and earnings SEO",
+    "build": "passed production-canonical build: 234 articles, 668 tags, 25 pages and 57 tools; full verified editorial image cache prepared",
+    "render": "passed: canonical, one H1, indexable metadata, source credit and required internal links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
+    "exact_head_ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "article_sha256": "3c2f3ce94db148756e80e87840397b0e049ad8c9b12a7de3178db912573843bb",
+  "local_image_sha256": "f2dba8265d67983a34d47ea2bf4e7d1255c259cc04e37d19e0d395720c762cb5",
+  "social_image_sha256": "4058d20391712a681658479ddaf811e0d1b731918bed0c05740a47df3becf5c5",
+  "social_image_dimensions": [1200, 675],
+  "social_image_visually_inspected": true
+}
