@@ -4,8 +4,8 @@
   "company": "Marriott International, Inc.",
   "ticker": "MAR",
   "date": "2026-11-03",
-  "status": "prepared",
-  "publication_state": "pre_publication_checks",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
   "story_thesis": "Fee revenue is compounding faster than rooms through RevPAR and card economics, while repurchases exceed cash after capital spending and make rising debt part of the per-share story.",
@@ -97,13 +97,30 @@
     "offline_tests": "passed: 55 tests covering news images, finance discovery, live finance verification, earnings review and earnings SEO",
     "build": "passed production-canonical build: 234 articles, 668 tags, 25 pages and 57 tools; full verified editorial image cache prepared",
     "render": "passed: canonical, one H1, indexable metadata, source credit and required internal links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
-    "exact_head_ci": "pending",
-    "deployment": "pending",
-    "live_verification": "pending"
+    "exact_head_ci": "passed on f2ac98f08f77900ab095128d7e4598b3901c88f1 in CI run 41608115436",
+    "deployment": "passed for merge commit 2eb7bb6358029007bfd691c0d5bab622b398bfce in site run 41609908036",
+    "live_verification": "passed: HTTP 200, expected H1 and canonical, indexable robots metadata, source credit and stock/earnings links; sitemap and finance catalogue inclusion; Open Graph image HTTP 200 at 1200x675"
   },
   "article_sha256": "70872f224f39104d44e9b5635b982d1e50cf399701c0b26f2f6a06c9baa9ebf1",
   "local_image_sha256": "ce90b845ba969f7da97cf93f5efd3c69bb3d0fc95009c7166d964313c9e5a945",
   "social_image_sha256": "d61b5c22cb2a9fe99c02ae32c37e4e802179aec9963e8a6795b41bf77843e603",
   "social_image_dimensions": [1200, 675],
-  "social_image_visually_inspected": true
+  "social_image_visually_inspected": true,
+  "publication": {
+    "pull_request": "https://github.com/davidomarayt/compound/pull/76",
+    "validated_head_sha": "f2ac98f08f77900ab095128d7e4598b3901c88f1",
+    "merge_commit_sha": "2eb7bb6358029007bfd691c0d5bab622b398bfce",
+    "ci_run": "https://github.com/davidomarayt/compound/actions/runs/41608115436",
+    "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/41609908036",
+    "live_verified_at": "2026-11-03T09:25:20Z",
+    "live_url": "https://compound.ie/wealth/marriott-fees-growth-buybacks-debt/",
+    "live_social_image_url": "https://compound.ie/static/discover/marriott-fees-growth-buybacks-debt-16x9.webp",
+    "live_social_image_sha256": "5bd389e958a63f5fd2abbfa5f9a0f8f3da5acbc9c2eef2ad9ce9405063f33ec1",
+    "live_social_image_dimensions": [
+      1200,
+      675
+    ],
+    "scheduled_batch_new_articles_published": 3,
+    "new_articles_published_for_fingerprint": 1
+  }
 }

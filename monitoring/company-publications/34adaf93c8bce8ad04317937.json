@@ -4,8 +4,8 @@
   "company": "ON Semiconductor Corporation",
   "ticker": "ON",
   "date": "2026-11-03",
-  "status": "prepared",
-  "publication_state": "pre_publication_checks",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
   "story_thesis": "Power-product utilisation and AI data-centre demand are lifting margins and cash flow, while a large cash acquisition makes durability and capital allocation the next tests.",
@@ -96,13 +96,30 @@
     "offline_tests": "passed: 55 tests covering news images, finance discovery, live finance verification, earnings review and earnings SEO",
     "build": "passed production-canonical build: 234 articles, 668 tags, 25 pages and 57 tools; full verified editorial image cache prepared",
     "render": "passed: canonical, one H1, indexable metadata, source credit and required internal links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
-    "exact_head_ci": "pending",
-    "deployment": "pending",
-    "live_verification": "pending"
+    "exact_head_ci": "passed on f2ac98f08f77900ab095128d7e4598b3901c88f1 in CI run 41608115436",
+    "deployment": "passed for merge commit 2eb7bb6358029007bfd691c0d5bab622b398bfce in site run 41609908036",
+    "live_verification": "passed: HTTP 200, expected H1 and canonical, indexable robots metadata, source credit and stock/earnings links; sitemap and finance catalogue inclusion; Open Graph image HTTP 200 at 1200x675"
   },
   "article_sha256": "3c2f3ce94db148756e80e87840397b0e049ad8c9b12a7de3178db912573843bb",
   "local_image_sha256": "f2dba8265d67983a34d47ea2bf4e7d1255c259cc04e37d19e0d395720c762cb5",
   "social_image_sha256": "4058d20391712a681658479ddaf811e0d1b731918bed0c05740a47df3becf5c5",
   "social_image_dimensions": [1200, 675],
-  "social_image_visually_inspected": true
+  "social_image_visually_inspected": true,
+  "publication": {
+    "pull_request": "https://github.com/davidomarayt/compound/pull/76",
+    "validated_head_sha": "f2ac98f08f77900ab095128d7e4598b3901c88f1",
+    "merge_commit_sha": "2eb7bb6358029007bfd691c0d5bab622b398bfce",
+    "ci_run": "https://github.com/davidomarayt/compound/actions/runs/41608115436",
+    "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/41609908036",
+    "live_verified_at": "2026-11-03T09:25:20Z",
+    "live_url": "https://compound.ie/wealth/onsemi-margin-recovery-ai-data-centre/",
+    "live_social_image_url": "https://compound.ie/static/discover/onsemi-margin-recovery-ai-data-centre-16x9.webp",
+    "live_social_image_sha256": "7634c20cc460163d08f0ff5a20d1d6b1180a15be8406a7996ca977ec46a8e9e8",
+    "live_social_image_dimensions": [
+      1200,
+      675
+    ],
+    "scheduled_batch_new_articles_published": 3,
+    "new_articles_published_for_fingerprint": 1
+  }
 }
