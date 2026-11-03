@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 236
+- Published editorial articles and guides: 237
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 182
+## Wealth articles and guides — 183
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
@@ -199,6 +199,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Self-Employed Tax in Ireland 2026: Income Tax, USC, PRSI and What to Set Aside](https://compound.ie/wealth/self-employed-tax-ireland-2026-guide/)
 - [Shares, ETFs and Funds in Ireland: What Is the Difference?](https://compound.ie/wealth/shares-etfs-funds-ireland/)
 - [Sheds, Garden Rooms & Home Offices: Planning Permission in Ireland](https://compound.ie/wealth/sheds-garden-rooms-home-offices-planning-ireland/)
+- [Shopify merchants sold $119 billion. How much cash reached Shopify?](https://compound.ie/wealth/shopify-merchant-sales-cash-flow/)
 - [Solar export payments are not being scrapped: what ESB's clarification means](https://compound.ie/news/solar-export-payments-ireland-clean-export-guarantee/)
 - [Solar panel 'dawn raids' in Ireland: what the CCPC investigation means for homeowners](https://compound.ie/news/solar-panel-ccpc-dawn-raids-bid-rigging-ireland/)
 - [Solar Panels for New Builds in Ireland: Costs, Timing, Sizing and Grants](https://compound.ie/wealth/solar-panels-new-builds-ireland/)
