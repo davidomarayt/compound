@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-03",
+  "checked": "2026-11-04",
   "companies_checked": 10,
   "companies": {
     "spcx": {
@@ -12,7 +12,7 @@
       "company": "Taiwan Semiconductor Manufacturing Company (TSMC)",
       "official_source": "https://investor.tsmc.com/english/financial-calendar",
       "regulatory": "SEC verified issuer: TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD (1046179)",
-      "official_source_status": "Checked 52 relevant investor links"
+      "official_source_status": "Unavailable; retry next run: HTTP Error 403: Forbidden"
     },
     "asml": {
       "company": "ASML Holding",
@@ -54,7 +54,7 @@
       "company": "Novo Nordisk",
       "official_source": "https://www.novonordisk.com/investors/financial-results.html",
       "regulatory": "SEC verified issuer: NOVO NORDISK A S (353278)",
-      "official_source_status": "Checked 57 relevant investor links"
+      "official_source_status": "Checked 58 relevant investor links"
     },
     "mc-pa": {
       "company": "LVMH",
@@ -138,6 +138,7 @@
       "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q1-2026-financial-workbook.xlsx",
       "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q1-2026-investor-presentation.pdf",
       "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q2-2026-Full%20presentation.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q3-2026-Full-presentation.pdf",
       "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q4-2025-investor-presentation-4Feb.pdf",
       "https://www.novonordisk.com/investors/agm-divider.html",
       "https://www.novonordisk.com/investors/annual-general-meeting.html",
@@ -203,8 +204,37 @@
       "https://investor.tsmc.com/english/quarterly-results/2026/q3"
     ]
   },
-  "new_review_candidates": 2,
+  "new_review_candidates": 3,
   "pending_review": [
+    {
+      "id": "sec:1094517:0001193125-26-446018",
+      "company": "Toyota Motor Corporation",
+      "slug": "tm",
+      "title": "Toyota Motor Corporation SEC 6-K filed 2026-11-04",
+      "filed": "2026-11-04",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1094517",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
+    {
+      "id": "ir:nvo:https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q3-2026-Full-presentation.pdf",
+      "company": "Novo Nordisk",
+      "slug": "nvo",
+      "title": "Investor presentation (pdf)",
+      "url": "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q3-2026-Full-presentation.pdf",
+      "source": "Official investor page (review before publication)",
+      "discovered": "2026-11-04"
+    },
+    {
+      "id": "sec:353278:0001628280-26-069805",
+      "company": "Novo Nordisk",
+      "slug": "nvo",
+      "title": "Novo Nordisk SEC 6-K filed 2026-11-04",
+      "filed": "2026-11-04",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=353278",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
     {
       "id": "ir:tsm:https://investor.tsmc.com/english/quarterly-results/2026/q3",
       "company": "Taiwan Semiconductor Manufacturing Company (TSMC)",
