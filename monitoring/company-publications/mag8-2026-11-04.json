@@ -1,0 +1,50 @@
+{
+  "series": "mag8",
+  "date": "2026-11-04",
+  "company": "Apple Inc.",
+  "ticker": "AAPL",
+  "story_fingerprint": "23b20e3b1bd436258c04c4fe",
+  "fingerprint_input": "AAPL|2026-Q4|manufacturing-commitments-cash-conversion",
+  "publication_kind": "new_analysis",
+  "publication_state": "prepared",
+  "authorization": "Publisher authorised daily Mag 8 analysis.",
+  "article_path": "content/wealth/apple-manufacturing-purchase-commitments.md",
+  "canonical_url": "https://compound.ie/wealth/apple-manufacturing-purchase-commitments/",
+  "story_thesis": "Apple\u2019s manufacturing purchase obligations rose sharply in the September quarter. The investment question is whether secured supply becomes profitable sales before cash commitments become a constraint.",
+  "article_sha256": "ac00dcc63525137f5535ace3f545ee9909e6b416a49db3a248aaa92718c6a08b",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+    "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+    "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm",
+    "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/"
+  ],
+  "identity": {
+    "CIK": 320193,
+    "form": "10-K",
+    "accession": "0000320193-26-000026",
+    "fiscal_year": 2026,
+    "fiscal_period": "FY",
+    "period_end": "2026-09-26"
+  },
+  "duplicate_checks": [
+    "Day ledger and legacy articles absent for 4 November; only META and LLY previously featured in this series. Morning batch IT, XYZ and APTV checked. Open PRs 57 and 43 unrelated. Editorial index, inventories and actual Apple pages checked. New angle concerns aggregate purchase commitments and cash conversion, distinct from supplier geography, earnings tariff adjustment and morning buyback stories."
+  ],
+  "evidence_table": [
+    "2026 10-K liquidity section: manufacturing obligations 89.7bn, 82.7bn within 12 months, date 26 Sep 2026. No allocation by component/device inferred.",
+    "June 2026 10-Q liquidity section: 57.0bn total and 56.2bn within 12 months. Differences 32.7bn and 26.5bn; 89.7/57-1=57.37%. Net balance change explicitly distinguished from gross contracts.",
+    "2025 10-K liquidity section: 56.2bn total and 55.4bn within 12 months. Year-on-year difference 33.5bn, 59.61%.",
+    "2 November release: fiscal Q4 revenue 114.5bn, OCF about 28bn. Results distinguished from future payment obligations.",
+    "Economic interpretation and monitoring conditions labelled as analysis; no current price, buy recommendation, unsupported supplier attribution or management guidance included."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Patrick-Hendry-403027_Inside_the_iPhone_6.jpg",
+    "credit": "Patrick Hendry / Wikimedia Commons, CC BY-SA 4.0. Archival photograph, 5 October 2017. Resized and cropped.",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "capture_date": "2017-10-05",
+    "permission": "Wikimedia VRT ticket 2018112910011041"
+  },
+  "fact_check_pass": {
+    "method": "Separate reread of four primary documents and programmatic arithmetic check after drafting",
+    "unresolved_material_claims": []
+  }
+}
