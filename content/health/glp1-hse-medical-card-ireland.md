@@ -17,7 +17,7 @@ related_tools:
 - bmi-calculator
 
 sources:
-- title: 'HSE: medicines to treat obesity. Funding status checked 14 September 2026.'
+- title: 'HSE: medicines to treat obesity. Funding status checked 4 November 2026.'
   url: https://www2.hse.ie/conditions/obesity/medicines/
 - title: 'HSE: Drugs Payment Scheme card; approved medicines and the monthly family threshold.'
   url: https://www2.hse.ie/services/schemes-allowances/drugs-payment-scheme/card/
@@ -31,13 +31,13 @@ sources:
   url: https://www.ncpe.ie/submission-process/overview-of-the-drug-reimbursement-process/
 - title: 'NCPE: tirzepatide for weight management, HTA 24024; assessment completed 3 December 2025.'
   url: https://www.ncpe.ie/tirzepatide-mounjaro-hta-id-24024/
-- title: 'NCPE: Wegovy application; four-pack presentation withdrawal recorded March 2025.'
-  url: https://www.ncpe.ie/semaglutide-wegovy/
+- title: 'NCPE: semaglutide (Wegovy), HTA 25024; assessment completed 13 October 2026.'
+  url: https://www.ncpe.ie/semaglutide-wegovy-hta-id-25024/
 - title: 'EMA: Ozempic authorised indication.'
   url: https://www.ema.europa.eu/en/medicines/human/EPAR/ozempic
 ---
 
-<p class="glp-note">Republic of Ireland · Adult treatment · Funding information checked 14 September 2026. Individual eligibility must be confirmed by your prescriber and pharmacist.</p>
+<p class="glp-note">Republic of Ireland · Adult treatment · Originally checked 14 September 2026; Wegovy assessment and HSE medicines funding guidance rechecked 4 November 2026. Individual eligibility must be confirmed by your prescriber and pharmacist.</p>
 
 You can leave a consultation with a prescription and still have no clear answer to the next question: who pays for it?
 
@@ -48,7 +48,7 @@ For adults seeking weight-management treatment, the current position is specific
 ## The position at a glance
 
 <table class="glp-table">
-<caption>Adult funding position on 14 September 2026. This is a scheme guide, not a prescribing recommendation.</caption>
+<caption>Adult funding summary; HSE medicines guidance rechecked 4 November 2026. This is a scheme guide, not a prescribing recommendation.</caption>
 <thead><tr><th scope="col">Medicine</th><th scope="col">What the funding rules mean</th></tr></thead>
 <tbody>
 <tr><th scope="row">Wegovy<br><small>Semaglutide</small></th><td>The HSE lists no coverage through the medical card, Long-Term Illness Scheme or Drugs Payment Scheme.</td></tr>
@@ -93,13 +93,15 @@ Ask who will organise the continuation review and when it needs to happen. Put t
 
 There is a separate adolescent Saxenda pathway, introduced in February 2026 and involving approved specialist consultants. The adult criteria above should not be applied to a child. [HSE: adolescent managed access](https://healthservice.hse.ie/staff/information-healthcare-workers/medicines-management-programme-mmp/managed-access-protocols/)
 
-## Does a positive assessment mean Mounjaro will be funded soon?
+## Do positive assessments mean Wegovy or Mounjaro are funded?
 
 Not necessarily. Ireland's NCPE assesses clinical and economic evidence to advise the HSE. The HSE makes the reimbursement decision. A regulatory licence, a value-for-money assessment and individual patient approval are different decisions. [NCPE: reimbursement process](https://www.ncpe.ie/submission-process/overview-of-the-drug-reimbursement-process/)
 
 For tirzepatide's weight-management application, the NCPE completed its assessment on 3 December 2025. Its recommendation was conditional: consider reimbursement if cost-effectiveness improves relative to existing treatments. That is not an announcement that prescriptions are now covered, nor does it provide a reliable start date. [NCPE: tirzepatide assessment](https://www.ncpe.ie/tirzepatide-mounjaro-hta-id-24024/)
 
-The Wegovy record also needs careful reading. The NCPE records withdrawal in March 2025 of the application for the four-pack pre-filled-pen presentation. That entry should not be stretched into a prediction about every future presentation or funding decision. [NCPE: Wegovy](https://www.ncpe.ie/semaglutide-wegovy/)
+For **Wegovy, the NCPE completed its adult weight-management assessment on 13 October 2026 (HTA 25024)**. It recommended consideration for reimbursement, while warning that the projected budget impact is substantial and affordability must be considered. This is advice to the HSE, not a decision to fund prescriptions. [NCPE: Wegovy assessment](https://www.ncpe.ie/semaglutide-wegovy-hta-id-25024/)
+
+**As checked on 4 November 2026, the HSE medicines guidance still lists Wegovy as not covered by the medical card, Long-Term Illness Scheme or Drugs Payment Scheme.** The assessment does not establish a funded start date or individual eligibility. Check the HSE's published funding arrangements with your pharmacist before assuming a prescription will be covered. [HSE: medicines to treat obesity](https://www2.hse.ie/conditions/obesity/medicines/)
 
 For a household budget, count funding when eligibility and availability are confirmed. A promising headline is not a payment arrangement.
 
