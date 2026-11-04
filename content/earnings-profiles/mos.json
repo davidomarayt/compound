@@ -2,33 +2,33 @@
   "cik": 1285785,
   "company": "Mosaic Company (The)",
   "latest": {
-    "accession": "0001285785-26-000112",
-    "filed": "2026-08-05",
+    "accession": "0001285785-26-000147",
+    "filed": "2026-11-04",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": -0.86,
+        "current": -0.23,
         "prior_year": 1.29,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": -272800000,
-        "prior_year": 410700000,
+        "current": -72100000,
+        "prior_year": 411400000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2824100000,
-        "prior_year": 3005700000,
+        "current": 3100600000,
+        "prior_year": 3452100000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1285785/000128578526000112/mos-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1285785/000128578526000147/mos-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1285785/000128578526000112/mos-20260630.htm"
+    },
+    {
+      "accession": "0001285785-26-000147",
+      "filed": "2026-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.23,
+          "prior_year": 1.29,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -72100000,
+          "prior_year": 411400000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3100600000,
+          "prior_year": 3452100000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1285785/000128578526000147/mos-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "MOS",
-  "updated": "2026-10-15"
+  "updated": "2026-11-04"
 }

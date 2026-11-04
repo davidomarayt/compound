@@ -2,33 +2,33 @@
   "cik": 320335,
   "company": "Globe Life",
   "latest": {
-    "accession": "0000320335-26-000224",
-    "filed": "2026-10-21",
-    "form": "8-K",
+    "accession": "0000320335-26-000231",
+    "filed": "2026-11-04",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 4.62,
         "prior_year": 4.73,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 361107000.0,
-        "prior_year": 387843000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 361107000,
+        "prior_year": 387843000,
+        "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1595937000.0,
-        "prior_year": 1512988000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 1595937000,
+        "prior_year": 1512988000,
+        "tag": "Revenues",
         "unit": "USD"
       }
     },
     "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/320335/000032033526000224/q3fy2026earningsrelease.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/320335/000032033526000231/gl-20260930.htm"
   },
   "periods": [
     {
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/320335/000032033526000216/gl-20260630.htm"
     },
     {
-      "accession": "0000320335-26-000224",
-      "filed": "2026-10-21",
-      "form": "8-K",
+      "accession": "0000320335-26-000231",
+      "filed": "2026-11-04",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 4.62,
           "prior_year": 4.73,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
-          "current": 361107000.0,
-          "prior_year": 387843000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 361107000,
+          "prior_year": 387843000,
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
-          "current": 1595937000.0,
-          "prior_year": 1512988000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 1595937000,
+          "prior_year": 1512988000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
       "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/320335/000032033526000224/q3fy2026earningsrelease.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/320335/000032033526000231/gl-20260930.htm"
     }
   ],
-  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "GL",
-  "updated": "2026-10-26"
+  "updated": "2026-11-04"
 }

@@ -2,33 +2,33 @@
   "cik": 1800,
   "company": "Abbott Laboratories",
   "latest": {
-    "accession": "0001628280-26-066601",
-    "filed": "2026-10-21",
-    "form": "8-K",
+    "accession": "0001628280-26-070154",
+    "filed": "2026-11-04",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 0.53,
         "prior_year": 0.94,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
         "current": 920000000,
         "prior_year": 1644000000,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
         "current": 13013000000,
         "prior_year": 11369000000,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
     "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1800/000162828026066601/abt-2026q3xexhibitx991.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/1800/000162828026070154/abt-20260930.htm"
   },
   "periods": [
     {
@@ -70,19 +70,19 @@
         "diluted_eps": {
           "current": 0.53,
           "prior_year": 1.01,
-          "tag": "us-gaap:EarningsPerShareDiluted; SEC inline XBRL reviewed",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
-          "current": 928000000.0,
-          "prior_year": 1779000000.0,
-          "tag": "us-gaap:NetIncomeLoss; SEC inline XBRL reviewed",
+          "current": 928000000,
+          "prior_year": 1779000000,
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
-          "current": 12593000000.0,
-          "prior_year": 11142000000.0,
-          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax; SEC inline XBRL reviewed",
+          "current": 12593000000,
+          "prior_year": 11142000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
           "unit": "USD"
         }
       },
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/1800/000162828026050134/abt-20260630.htm"
     },
     {
-      "accession": "0001628280-26-066601",
-      "filed": "2026-10-21",
-      "form": "8-K",
+      "accession": "0001628280-26-070154",
+      "filed": "2026-11-04",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 0.53,
           "prior_year": 0.94,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
           "current": 920000000,
           "prior_year": 1644000000,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
           "current": 13013000000,
           "prior_year": 11369000000,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
           "unit": "USD"
         }
       },
       "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/1800/000162828026066601/abt-2026q3xexhibitx991.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/1800/000162828026070154/abt-20260930.htm"
     }
   ],
-  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "ABT",
-  "updated": "2026-10-26"
+  "updated": "2026-11-04"
 }

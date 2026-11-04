@@ -2,33 +2,33 @@
   "cik": 915913,
   "company": "Albemarle Corporation",
   "latest": {
-    "accession": "0000915913-26-000102",
-    "filed": "2026-08-05",
+    "accession": "0000915913-26-000129",
+    "filed": "2026-11-04",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 3.52,
-        "prior_year": -0.16,
+        "current": 2.15,
+        "prior_year": -1.72,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 479959000,
-        "prior_year": 22897000,
+        "current": 296755000,
+        "prior_year": -160694000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1743313000,
-        "prior_year": 1329992000,
+        "current": 1553097000,
+        "prior_year": 1307829000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000102/alb-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000129/alb-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000102/alb-20260630.htm"
+    },
+    {
+      "accession": "0000915913-26-000129",
+      "filed": "2026-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.15,
+          "prior_year": -1.72,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 296755000,
+          "prior_year": -160694000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1553097000,
+          "prior_year": 1307829000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000129/alb-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "ALB",
-  "updated": "2026-10-15"
+  "updated": "2026-11-04"
 }
