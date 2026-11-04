@@ -4,13 +4,18 @@
   "company": "Block, Inc.",
   "ticker": "XYZ",
   "date": "2026-11-04",
-  "status": "prepared",
-  "publication_state": "prepared_not_published",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
   "story_thesis": "Cash App lending is accelerating gross profit and retained credit exposure; the test is whether stable loss rates and attractive returns survive further scale.",
   "article_path": "content/wealth/block-cash-app-lending-credit-losses.md",
   "canonical_url": "https://compound.ie/wealth/block-cash-app-lending-credit-losses/",
+  "pull_request": "https://github.com/davidomarayt/compound/pull/78",
+  "validated_head": "944ddee1c30fc1c2dbb2cf10829189276daba86f",
+  "merge_commit": "64d8b87bb797bbbfb939fddec9721c475bcc4e4d",
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/41803464105",
+  "live_verified_at": "2026-11-04T09:03:35Z",
   "sources": [
     "https://www.sec.gov/Archives/edgar/data/1512673/000162828026069513/q32026shareholderletter.htm",
     "https://www.sec.gov/Archives/edgar/data/1512673/000162828026069524/xyz-20260930.htm"
@@ -100,11 +105,30 @@
     "offline_tests": "passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO",
     "build": "passed production-canonical build: 240 published articles, 675 tags, 25 pages and 57 tools; metadata loader validated 251 content records",
     "render": "passed: canonical, one H1, indexable robots metadata, source credit, stock-profile and earnings links inspected; sitemap and finance catalogue contain the URL; 1600x1067 cover and generated 1200x675 Open Graph/Twitter image visually inspected",
-    "exact_head_ci": "pending",
-    "deployment": "not_started",
-    "live_verification": "not_started"
+    "exact_head_ci": "passed on PR head 944ddee1c30fc1c2dbb2cf10829189276daba86f in workflow run 41802055898",
+    "deployment": "passed: build, deploy, verify-live and verify-finance-discovery succeeded in site workflow run 41803464105",
+    "live_verification": "passed"
+  },
+  "live_verification": {
+    "verified_at": "2026-11-04T09:03:35Z",
+    "page_http_status": 200,
+    "canonical": "https://compound.ie/wealth/block-cash-app-lending-credit-losses/",
+    "canonical_matches": true,
+    "indexing_directive": "max-image-preview:large",
+    "title": "Block Cash App Lending: Growth Versus Credit Costs · Compound",
+    "company_text_present": true,
+    "stock_profile_link_present": true,
+    "image_credit_present": true,
+    "sitemap_present": true,
+    "finance_catalogue_present": true,
+    "social_image_url": "https://compound.ie/static/discover/block-cash-app-lending-credit-losses-16x9.webp",
+    "social_image_http_status": 200,
+    "social_image_dimensions": [1200, 675],
+    "social_image_sha256": "d15367d40272778f72f1fa679d4fed9b1f7ea192ef698ec2141ba6d35ec03e64",
+    "social_image_visual_inspection": "passed"
   },
   "article_sha256": "0fb0f7394e3725827a6a30f37e4c0ab68ac918c552514923e18ebe1afe460645",
   "social_image_sha256": "d15367d40272778f72f1fa679d4fed9b1f7ea192ef698ec2141ba6d35ec03e64",
-  "new_articles_published": 0
+  "new_articles_published": 1,
+  "scheduled_batch_new_articles_published": 3
 }
