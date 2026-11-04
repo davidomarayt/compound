@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 237
+- Published editorial articles and guides: 240
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 183
+## Wealth articles and guides — 186
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
@@ -63,10 +63,12 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Apple Stock Guide: iPhone, Services, Buybacks and Valuation](https://compound.ie/wealth/apple-iphone-services-profit-2026/)
 - [Apple's earnings growth: what remains after the tariff-refund boost?](https://compound.ie/wealth/apple-earnings-tariff-refunds-services/)
 - [Apple’s US supplier push: resilience before margin claims](https://compound.ie/wealth/apple-us-iphone-suppliers-manufacturing/)
+- [Aptiv Spun Off Its Wiring Business. Did the Remaining Company Get Better?](https://compound.ie/wealth/aptiv-post-spin-segment-quality/)
 - [AT&T Earnings: Fibre Growth Strengthens the Case, but Cash Still Matters](https://compound.ie/wealth/att-earnings-fiber-growth-dividend-cash-flow/)
 - [Attic Conversion & Dormer Planning Permission Ireland](https://compound.ie/wealth/attic-conversion-dormer-planning-permission-ireland/)
 - [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/)
 - [Binance Investigates Suspected Hack as Billions in Crypto Are Frozen](https://compound.ie/news/binance-hack-october-2026/)
+- [Block’s Lending Engine Is Growing Fast. Are Credit Costs Keeping Up?](https://compound.ie/wealth/block-cash-app-lending-credit-losses/)
 - [Bloom Energy Earnings: Sales Surge, but Cash Flow Tells a Different Story](https://compound.ie/wealth/bloom-energy-earnings-growth-cash-flow/)
 - [Boeing Is Generating Cash Again. Is the Recovery Durable?](https://compound.ie/wealth/boeing-cash-flow-commercial-airplanes-losses/)
 - [Budget 2027 Ireland: The Key Changes to Tax, Rent, Childcare, Pensions and Energy](https://compound.ie/wealth/budget-2027-what-to-watch/)
@@ -94,6 +96,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Fixed vs Variable Mortgage in Ireland: How to Choose](https://compound.ie/wealth/fixed-vs-variable-mortgage-ireland/)
 - [Fuel protests return ahead of Budget 2027 — and the next price shock could be bigger](https://compound.ie/news/fuel-protests-budget-2027-ireland/)
 - [Garage Conversion & Change of Use Planning Permission Ireland](https://compound.ie/wealth/garage-conversion-change-of-use-planning-ireland/)
+- [Gartner’s Contract Value Is Growing Slowly. Are Buybacks Doing Too Much Work?](https://compound.ie/wealth/gartner-contract-value-buybacks/)
 - [GE Vernova: The $197 Billion Backlog Still Has to Become Profit](https://compound.ie/wealth/ge-vernova-backlog-cash-flow/)
 - [Gift Tax in Ireland 2027: How Much Can You Give Tax-Free?](https://compound.ie/wealth/gift-tax-ireland/)
 - [Gilead Earnings: Strong HIV Sales, but Acquisitions Reshape the Profit Story](https://compound.ie/wealth/gilead-earnings-hiv-growth-acquisition-cost/)

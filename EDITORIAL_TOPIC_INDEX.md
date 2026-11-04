@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 237 published articles and guides, 64 tools,
+**Included:** 240 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -28,10 +28,12 @@ For the complete register (including 510+ company profiles), open
 - [Apple Stock Guide: iPhone, Services, Buybacks and Valuation](https://compound.ie/wealth/apple-iphone-services-profit-2026/) — **Wealth**
 - [Apple's earnings growth: what remains after the tariff-refund boost?](https://compound.ie/wealth/apple-earnings-tariff-refunds-services/) — **Wealth**
 - [Apple’s US supplier push: resilience before margin claims](https://compound.ie/wealth/apple-us-iphone-suppliers-manufacturing/) — **Wealth**
+- [Aptiv Spun Off Its Wiring Business. Did the Remaining Company Get Better?](https://compound.ie/wealth/aptiv-post-spin-segment-quality/) — **Wealth**
 - [AT&T Earnings: Fibre Growth Strengthens the Case, but Cash Still Matters](https://compound.ie/wealth/att-earnings-fiber-growth-dividend-cash-flow/) — **Wealth**
 - [Attic Conversion & Dormer Planning Permission Ireland](https://compound.ie/wealth/attic-conversion-dormer-planning-permission-ireland/) — **Wealth**
 - [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/) — **Wealth**
 - [Binance Investigates Suspected Hack as Billions in Crypto Are Frozen](https://compound.ie/news/binance-hack-october-2026/) — **Wealth**
+- [Block’s Lending Engine Is Growing Fast. Are Credit Costs Keeping Up?](https://compound.ie/wealth/block-cash-app-lending-credit-losses/) — **Wealth**
 - [Bloom Energy Earnings: Sales Surge, but Cash Flow Tells a Different Story](https://compound.ie/wealth/bloom-energy-earnings-growth-cash-flow/) — **Wealth**
 - [Boeing Is Generating Cash Again. Is the Recovery Durable?](https://compound.ie/wealth/boeing-cash-flow-commercial-airplanes-losses/) — **Wealth**
 - [Budget 2027 gives health €29.1bn. So why aren’t Mounjaro and Wegovy funded for obesity?](https://compound.ie/news/budget-2027-obesity-mounjaro-wegovy-ireland/) — **Health**
@@ -65,6 +67,7 @@ For the complete register (including 510+ company profiles), open
 - [Fixed vs Variable Mortgage in Ireland: How to Choose](https://compound.ie/wealth/fixed-vs-variable-mortgage-ireland/) — **Wealth**
 - [Fuel protests return ahead of Budget 2027 — and the next price shock could be bigger](https://compound.ie/news/fuel-protests-budget-2027-ireland/) — **Wealth**
 - [Garage Conversion & Change of Use Planning Permission Ireland](https://compound.ie/wealth/garage-conversion-change-of-use-planning-ireland/) — **Wealth**
+- [Gartner’s Contract Value Is Growing Slowly. Are Buybacks Doing Too Much Work?](https://compound.ie/wealth/gartner-contract-value-buybacks/) — **Wealth**
 - [GE Vernova: The $197 Billion Backlog Still Has to Become Profit](https://compound.ie/wealth/ge-vernova-backlog-cash-flow/) — **Wealth**
 - [Gift Tax in Ireland 2027: How Much Can You Give Tax-Free?](https://compound.ie/wealth/gift-tax-ireland/) — **Wealth**
 - [Gilead Earnings: Strong HIV Sales, but Acquisitions Reshape the Profit Story](https://compound.ie/wealth/gilead-earnings-hiv-growth-acquisition-cost/) — **Wealth**
