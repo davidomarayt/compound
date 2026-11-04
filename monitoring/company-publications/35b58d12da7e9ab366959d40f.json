@@ -1,0 +1,109 @@
+{
+  "story_fingerprint": "35b58d12da7e9ab366959d40f",
+  "fingerprint_input": "IT|gartner-contract-value-buybacks|2026-11-04",
+  "company": "Gartner, Inc.",
+  "ticker": "IT",
+  "date": "2026-11-04",
+  "status": "prepared",
+  "publication_state": "prepared_not_published",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Contract value grew only 2.5% while a sharply lower share count amplified EPS; durable per-share growth needs subscription demand and free cash flow to reaccelerate.",
+  "article_path": "content/wealth/gartner-contract-value-buybacks.md",
+  "canonical_url": "https://compound.ie/wealth/gartner-contract-value-buybacks/",
+  "sources": [
+    "https://investor.gartner.com/news-releases/news-release-details/gartner-reports-third-quarter-2026-financial-results",
+    "https://www.sec.gov/Archives/edgar/data/749251/000074925126000307/it-20260930.htm"
+  ],
+  "identity": {
+    "issuer": "Gartner, Inc.",
+    "CIK": 749251,
+    "release_accession": "0000749251-26-000305",
+    "filing_accession": "0000749251-26-000307",
+    "form": "10-Q",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30",
+    "filing_date": "2026-11-03",
+    "currency": "USD",
+    "units": "USD thousands except per-share and contract-value data"
+  },
+  "duplicate_checks": [
+    "Checked editorial index, both inventories and actual wealth Markdown; Gartner had a maintained /stocks/it/ profile but no contract-value or buyback analysis.",
+    "Checked open PRs 57 and 43, recent merged publication PRs, company-publication records and live content; no matching Gartner story or fingerprint was active.",
+    "Checked the 4 November Europe/Dublin scheduled publication count before drafting; no scheduled new company-analysis article had been published.",
+    "This analyses subscription economics and capital allocation; routine figures remain on /stocks/it/."
+  ],
+  "candidate_review_reference": "See a5b5496690fd217fbefcd647.json for the eight-company batch screen; Gartner was selected independently.",
+  "evidence_table": [
+    {
+      "claim": "Contract value was USD5.3bn, up 2.5% year on year FX-neutral; GTS grew 2% and GBS 4%.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release highlights and 10-Q Insights MD&A.",
+      "result": "verified in separate fact-check pass"
+    },
+    {
+      "claim": "GTS retention was 85% and wallet retention 98%; GBS retention 87% and wallet retention 99% versus 102%.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q contract-value and retention discussion.",
+      "result": "verified; wallet-retention interpretation is Compound analysis"
+    },
+    {
+      "claim": "Insights revenue was USD1.292bn, up 2%, and gross-contribution margin improved to 78% from 77% with an USD8m personnel-cost reduction.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release segment table and 10-Q Insights MD&A.",
+      "result": "verified; lower-headcount explanation attributed to management"
+    },
+    {
+      "claim": "Gartner repurchased 886,818 shares for USD138.223m in Q3 and 7.827m shares for USD1.220bn over nine months.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q share-repurchase note.",
+      "result": "verified in separate fact-check pass"
+    },
+    {
+      "claim": "Diluted weighted-average shares fell to 63.9m from 75.0m, a 14.8% decline; same-income EPS uplift would be about 17%.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release EPS table; (63.9 / 75.0 - 1) = -14.8%; 75.0 / 63.9 - 1 = 17.37%.",
+      "result": "verified; explicitly presented as a counterfactual calculation, not reported growth"
+    },
+    {
+      "claim": "Nine-month OCF was USD1.084bn; cash USD1.633bn; long-term debt USD2.981bn; Q3 non-GAAP FCF USD275m, up 2.2%.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release cash-flow table and 10-Q balance sheet/cash-flow statement.",
+      "result": "verified; non-GAAP FCF labelled"
+    }
+  ],
+  "fact_check_pass": {
+    "method": "Every material number, period, retention and contract-value definition, GAAP/non-GAAP measure and calculation was reread against Gartner's official release and Form 10-Q; prior-period impairment and share-count effects were checked separately.",
+    "unresolved_material_claims": []
+  },
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Gartner_Benjamin_Arnulf_Data_and_Analytics_Summit.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Gartner_Benjamin_Arnulf_Data_and_Analytics_Summit.jpg",
+    "photographer": "GeneralAB13",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "capture_date": "2019-03-20",
+    "subject": "Presentation at Gartner Data and Analytics Summit in Orlando",
+    "archive_label": "Archival photograph; not the 2026 results event",
+    "transform": "Cropped and resized for publication; adaptation remains CC BY-SA 4.0",
+    "source_dimensions": [1832, 1031],
+    "local_image_sha256": "0bb0c71244855554ecfe7d38d4607b7c115aafe553059e708f9b68a14abe35aa",
+    "verified": true
+  },
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_check": "passed",
+    "claim_fact_check": "passed",
+    "image_provenance": "passed",
+    "offline_tests": "passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO",
+    "build": "passed production-canonical build: 240 published articles, 675 tags, 25 pages and 57 tools; metadata loader validated 251 content records",
+    "render": "passed: canonical, one H1, indexable robots metadata, source credit, stock-profile and earnings links inspected; sitemap and finance catalogue contain the URL; 1832x1031 cover and generated 1200x675 Open Graph/Twitter image visually inspected",
+    "exact_head_ci": "pending",
+    "deployment": "not_started",
+    "live_verification": "not_started"
+  },
+  "article_sha256": "bc0e68b97c992967d42962996157f09a7487c78c625a00909bcd9fa5ff2da78f",
+  "social_image_sha256": "89ccbfbe10c16e3fa456b858cac0375168b1a3371957322e2e9d3f54b172264e",
+  "new_articles_published": 0
+}

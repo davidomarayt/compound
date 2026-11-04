@@ -1,0 +1,110 @@
+{
+  "story_fingerprint": "edd078a5dbab529908dafe4c",
+  "fingerprint_input": "XYZ|block-cash-app-lending-credit-losses|2026-11-04",
+  "company": "Block, Inc.",
+  "ticker": "XYZ",
+  "date": "2026-11-04",
+  "status": "prepared",
+  "publication_state": "prepared_not_published",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Cash App lending is accelerating gross profit and retained credit exposure; the test is whether stable loss rates and attractive returns survive further scale.",
+  "article_path": "content/wealth/block-cash-app-lending-credit-losses.md",
+  "canonical_url": "https://compound.ie/wealth/block-cash-app-lending-credit-losses/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1512673/000162828026069513/q32026shareholderletter.htm",
+    "https://www.sec.gov/Archives/edgar/data/1512673/000162828026069524/xyz-20260930.htm"
+  ],
+  "identity": {
+    "issuer": "Block, Inc.",
+    "CIK": 1512673,
+    "release_accession": "0001628280-26-069513",
+    "filing_accession": "0001628280-26-069524",
+    "form": "10-Q",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30",
+    "filing_date": "2026-11-03",
+    "currency": "USD",
+    "units": "USD thousands unless stated otherwise"
+  },
+  "duplicate_checks": [
+    "Checked editorial index, both inventories and actual wealth Markdown; Block had a maintained /stocks/xyz/ profile but no dedicated lending-and-credit analysis.",
+    "Checked open PRs 57 and 43, recent merged publication PRs, company-publication records and live content; no matching Block story or fingerprint was active.",
+    "Checked the 4 November Europe/Dublin scheduled publication count before drafting; no scheduled new company-analysis article had been published.",
+    "The article analyses lending economics rather than recapping the quarter; routine figures remain on /stocks/xyz/."
+  ],
+  "candidate_review_reference": "See a5b5496690fd217fbefcd647.json for the eight-company batch screen; Block was selected independently.",
+  "evidence_table": [
+    {
+      "claim": "Gross profit was USD3.235bn, up 22%; Cash App gross profit grew 27% and Financial Solutions gross profit 32%.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Shareholder letter performance discussion and 10-Q revenue/cost tables.",
+      "result": "verified in separate fact-check pass"
+    },
+    {
+      "claim": "Consumer-lending originations were USD19.0bn, up 40%.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Shareholder letter lending KPI; consumer lending defined as Cash App Borrow and BNPL products.",
+      "result": "verified and management metric labelled"
+    },
+    {
+      "claim": "Q3 transaction, loan and consumer-receivable losses were USD601.706m, up 66%, including USD439.008m loan losses.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q MD&A loss table: 601.706 - 363.455 = 238.251; 238.251 / 363.455 = 65.55%.",
+      "result": "verified; management says underlying loss rates and portfolio credit performance remained stable"
+    },
+    {
+      "claim": "Loans held for investment net were USD4.401bn and allowance USD640.566m at September, versus USD3.383bn and USD382.861m at December.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q balance sheet and loan tables; 640.566 / 5,041.567 = 12.71%, 382.861 / 3,765.818 = 10.17%.",
+      "result": "verified; ratio caveat includes mix and origination timing"
+    },
+    {
+      "claim": "GAAP operating income was USD428.491m; adjusted operating income was USD923m and adjusted margin 29%.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "10-Q income statement and shareholder-letter non-GAAP tables.",
+      "result": "verified; GAAP and adjusted measures not mixed"
+    },
+    {
+      "claim": "Nine-month operating cash flow was USD3.002bn and investing outflows included USD1.9bn mainly for retained Cash App Borrow and Afterpay Post-Purchase loans.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q cash-flow statement and MD&A; accrued legal contingencies identified as a working-capital contributor.",
+      "result": "verified in separate fact-check pass"
+    }
+  ],
+  "fact_check_pass": {
+    "method": "Every material number, period, loan classification, accounting measure, management explanation and calculation was reread against the SEC-furnished shareholder letter and Form 10-Q; arithmetic was recomputed independently.",
+    "unresolved_material_claims": []
+  },
+  "image": {
+    "source": "https://unsplash.com/photos/a-laptop-computer-sitting-on-top-of-a-desk-RlxhUyJ1ubE",
+    "original_url": "https://images.unsplash.com/photo-1732258357023-fa3a47533cf3",
+    "photographer": "Julio Lopez",
+    "license": "Unsplash Licence",
+    "license_url": "https://unsplash.com/license",
+    "published_date": "2024-11-22",
+    "capture_date": "unconfirmed",
+    "subject": "Cash App displayed on a smartphone beside a laptop",
+    "archive_label": "Archival photograph; not the current app interface",
+    "transform": "Resized and cropped for publication",
+    "source_dimensions": [1600, 1067],
+    "local_image_sha256": "be36503e7287f5f1beaeb47a8b5a5053f95efa0ec7a4fd7abdf6d5880334a340",
+    "verified": true
+  },
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_check": "passed",
+    "claim_fact_check": "passed",
+    "image_provenance": "passed",
+    "offline_tests": "passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO",
+    "build": "passed production-canonical build: 240 published articles, 675 tags, 25 pages and 57 tools; metadata loader validated 251 content records",
+    "render": "passed: canonical, one H1, indexable robots metadata, source credit, stock-profile and earnings links inspected; sitemap and finance catalogue contain the URL; 1600x1067 cover and generated 1200x675 Open Graph/Twitter image visually inspected",
+    "exact_head_ci": "pending",
+    "deployment": "not_started",
+    "live_verification": "not_started"
+  },
+  "article_sha256": "0fb0f7394e3725827a6a30f37e4c0ab68ac918c552514923e18ebe1afe460645",
+  "social_image_sha256": "d15367d40272778f72f1fa679d4fed9b1f7ea192ef698ec2141ba6d35ec03e64",
+  "new_articles_published": 0
+}

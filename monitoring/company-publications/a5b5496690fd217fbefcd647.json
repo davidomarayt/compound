@@ -1,0 +1,118 @@
+{
+  "story_fingerprint": "a5b5496690fd217fbefcd647",
+  "fingerprint_input": "APTV|aptiv-post-spin-segment-quality|2026-11-04",
+  "company": "Aptiv PLC",
+  "ticker": "APTV",
+  "date": "2026-11-04",
+  "status": "prepared",
+  "publication_state": "prepared_not_published",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "After the Versigent spin-off, segment margins and ordinary cash conversion—not portfolio labels or separation financing—must prove that the remaining Aptiv is a better business.",
+  "article_path": "content/wealth/aptiv-post-spin-segment-quality.md",
+  "canonical_url": "https://compound.ie/wealth/aptiv-post-spin-segment-quality/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1521332/000152133226000071/aptvq32026ex991.htm",
+    "https://www.sec.gov/Archives/edgar/data/1521332/000152133226000075/aptv-20260930.htm"
+  ],
+  "identity": {
+    "issuer": "Aptiv PLC",
+    "CIK": 1521332,
+    "release_accession": "0001521332-26-000071",
+    "filing_accession": "0001521332-26-000075",
+    "form": "10-Q",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30",
+    "filing_date": "2026-11-03",
+    "currency": "USD",
+    "units": "USD millions except per-share data"
+  },
+  "duplicate_checks": [
+    "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json and actual wealth Markdown; Aptiv had a maintained stock profile but no dedicated post-spin segment-quality analysis.",
+    "Checked open PRs 57 and 43, recent merged publication PRs, company-publication records and actual live content; no matching Aptiv story or fingerprint was active.",
+    "Checked the 4 November Europe/Dublin scheduled publication count before drafting; no scheduled new company-analysis article had been published.",
+    "This asks a durable portfolio-quality question; routine quarterly figures remain on /stocks/aptv/."
+  ],
+  "candidate_review": [
+    "Aptiv: selected for post-spin segment quality and cash conversion.",
+    "Block: selected separately for lending growth and credit economics.",
+    "Gartner: selected separately for contract value and buyback dependence.",
+    "AbbVie: screened but not selected; less distinct from recent pharmaceutical coverage.",
+    "Capital One: screened but not selected to avoid two credit-led pieces in one batch.",
+    "Eaton: screened but not selected; data-centre angle overlapped recent AI-infrastructure analysis.",
+    "Clorox: screened but not selected; turnaround question was less current and distinct.",
+    "Exxon Mobil: screened but not selected; no cleaner non-overlapping question than the selected batch."
+  ],
+  "evidence_table": [
+    {
+      "claim": "Engineered Components sales were USD1.835bn and segment adjusted operating income USD303m, versus USD1.710bn and USD267m.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q segment tables; 303 / 1,835 = 16.51%, 267 / 1,710 = 15.61%.",
+      "result": "verified in separate fact-check pass"
+    },
+    {
+      "claim": "Intelligent Systems sales were USD1.402bn and segment adjusted operating income USD124m, versus USD1.442bn and USD137m.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q segment tables; 124 / 1,402 = 8.84%, 137 / 1,442 = 9.50%.",
+      "result": "verified in separate fact-check pass"
+    },
+    {
+      "claim": "Sensors and Compute revenue fell to USD1.299bn from USD1.325bn and Software and Services to USD119m from USD134m.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q disaggregated Intelligent Systems revenue table.",
+      "result": "verified in separate fact-check pass"
+    },
+    {
+      "claim": "Versigent began trading on 1 April 2026 and historical EDS results are discontinued operations.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q separation and discontinued-operations notes.",
+      "result": "verified; no discontinued revenue is mixed into continuing segment comparisons"
+    },
+    {
+      "claim": "Cash fell to USD670m, long-term debt to USD5.332bn, and spin-related cash flows included a USD1.893bn distribution, USD2.054bn note repayment and USD282m cash transfer.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q balance sheet, debt note and discontinued-operations cash-flow note.",
+      "result": "verified; explicitly distinguished from ordinary operating cash"
+    },
+    {
+      "claim": "Q3 continuing operating cash flow was USD320m and company-defined free cash flow USD194m; nine-month continuing OCF was USD402m and GAAP capex USD404m.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release cash-flow table and 10-Q cash-flow statement; non-GAAP measure labelled.",
+      "result": "verified in separate fact-check pass"
+    }
+  ],
+  "fact_check_pass": {
+    "method": "Every material number, period, segment label, continuing/discontinued classification, accounting measure, management outlook and calculation was reread against the SEC-furnished release and Form 10-Q; arithmetic was recomputed independently.",
+    "unresolved_material_claims": []
+  },
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Wuppertal_Lise-Meitner-Str_0015.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Wuppertal_Lise-Meitner-Str_0015.jpg",
+    "photographer": "Atamari",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "capture_date": "2009-01-06",
+    "subject": "Aptiv industrial building in Wuppertal",
+    "archive_label": "Archival photograph; not a current operating image",
+    "transform": "Cropped and resized for publication; adaptation remains CC BY-SA 3.0",
+    "source_dimensions": [2560, 1920],
+    "local_image_sha256": "f60ebb77f0972ea9d8a89d056a2f8c62789bd4bd31c8b99d348623313f8f5aeb",
+    "verified": true
+  },
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_check": "passed",
+    "claim_fact_check": "passed",
+    "image_provenance": "passed",
+    "offline_tests": "passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO",
+    "build": "passed production-canonical build: 240 published articles, 675 tags, 25 pages and 57 tools; metadata loader validated 251 content records",
+    "render": "passed: canonical, one H1, indexable robots metadata, source credit, stock-profile and earnings links inspected; sitemap and finance catalogue contain the URL; 2560x1920 cover and generated 1200x675 Open Graph/Twitter image visually inspected",
+    "exact_head_ci": "pending",
+    "deployment": "not_started",
+    "live_verification": "not_started"
+  },
+  "article_sha256": "c984126f86edcaa77bd17e85aa74cdb70395c98818234678b3f78fd624083f33",
+  "social_image_sha256": "8809fb3d91c87f66cf10b78225ada297a5b1231838d21dd73c79fdc605616c97",
+  "new_articles_published": 0
+}
