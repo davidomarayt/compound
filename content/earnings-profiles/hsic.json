@@ -2,33 +2,33 @@
   "cik": 1000228,
   "company": "Henry Schein",
   "latest": {
-    "accession": "0001000228-26-000045",
-    "filed": "2026-08-04",
+    "accession": "0001000228-26-000062",
+    "filed": "2026-11-03",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.82,
-        "prior_year": 0.7,
+        "current": 1.06,
+        "prior_year": 0.84,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 94000000,
-        "prior_year": 86000000,
+        "current": 119000000,
+        "prior_year": 101000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3458000000,
-        "prior_year": 3240000000,
+        "current": 3471000000,
+        "prior_year": 3339000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-27",
-    "source": "https://www.sec.gov/Archives/edgar/data/1000228/000100022826000045/hsic-20260627.htm"
+    "period_end": "2026-09-26",
+    "source": "https://www.sec.gov/Archives/edgar/data/1000228/000100022826000062/hsic-20260926.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-27",
       "source": "https://www.sec.gov/Archives/edgar/data/1000228/000100022826000045/hsic-20260627.htm"
+    },
+    {
+      "accession": "0001000228-26-000062",
+      "filed": "2026-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.06,
+          "prior_year": 0.84,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 119000000,
+          "prior_year": 101000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3471000000,
+          "prior_year": 3339000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/1000228/000100022826000062/hsic-20260926.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "HSIC",
-  "updated": "2026-10-15"
+  "updated": "2026-11-04"
 }

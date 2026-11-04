@@ -2,36 +2,33 @@
   "cik": 35527,
   "company": "Fifth Third Bancorp",
   "latest": {
-    "accession": "0000035527-26-000229",
-    "filed": "2026-10-19",
-    "form": "8-K",
+    "accession": "0000035527-26-000243",
+    "filed": "2026-11-03",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 0.9,
         "prior_year": 0.91,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 866000000.0,
-        "prior_year": 649000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 866000000,
+        "prior_year": 649000000,
+        "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3279000000.0,
-        "prior_year": 2301000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 3279000000,
+        "prior_year": 2301000000,
+        "tag": "InterestIncomeExpenseNet + NoninterestIncome",
         "unit": "USD"
       }
     },
-    "notes": [
-      "Revenue combines reported net interest income and noninterest income; taxable-equivalent adjustments are excluded."
-    ],
     "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/35527/000003552726000229/q32026earningsrelease.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/35527/000003552726000243/fitb-20260930.htm"
   },
   "periods": [
     {
@@ -93,39 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/35527/000003552726000202/fitb-20260630.htm"
     },
     {
-      "accession": "0000035527-26-000229",
-      "filed": "2026-10-19",
-      "form": "8-K",
+      "accession": "0000035527-26-000243",
+      "filed": "2026-11-03",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 0.9,
           "prior_year": 0.91,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
-          "current": 866000000.0,
-          "prior_year": 649000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 866000000,
+          "prior_year": 649000000,
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
-          "current": 3279000000.0,
-          "prior_year": 2301000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 3279000000,
+          "prior_year": 2301000000,
+          "tag": "InterestIncomeExpenseNet + NoninterestIncome",
           "unit": "USD"
         }
       },
-      "notes": [
-        "Revenue combines reported net interest income and noninterest income; taxable-equivalent adjustments are excluded."
-      ],
       "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/35527/000003552726000229/q32026earningsrelease.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/35527/000003552726000243/fitb-20260930.htm"
     }
   ],
-  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "FITB",
-  "updated": "2026-10-26"
+  "updated": "2026-11-04"
 }

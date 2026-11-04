@@ -2,33 +2,33 @@
   "cik": 1512673,
   "company": "Block, Inc.",
   "latest": {
-    "accession": "0001628280-26-053368",
-    "filed": "2026-08-05",
+    "accession": "0001628280-26-069524",
+    "filed": "2026-11-03",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.15,
-        "prior_year": 0.87,
+        "current": 0.92,
+        "prior_year": 0.74,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 88517000,
-        "prior_year": 538458000,
+        "current": 565551000,
+        "prior_year": 461544000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 6617687000,
-        "prior_year": 6054457000,
+        "current": 6719359000,
+        "prior_year": 6114952000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1512673/000162828026053368/xyz-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1512673/000162828026069524/xyz-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1512673/000162828026053368/xyz-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-069524",
+      "filed": "2026-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.92,
+          "prior_year": 0.74,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 565551000,
+          "prior_year": 461544000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6719359000,
+          "prior_year": 6114952000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1512673/000162828026069524/xyz-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "XYZ",
-  "updated": "2026-10-15"
+  "updated": "2026-11-04"
 }
