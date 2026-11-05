@@ -6,7 +6,7 @@
   "story_fingerprint": "e52f7baebb37245a7236f561",
   "fingerprint_input": "GOOGL|2026-Q3|waymo-loan-recourse-and-interest",
   "publication_kind": "new_analysis",
-  "publication_state": "prepared",
+  "publication_state": "live_verified",
   "authorization": "Publisher authorised daily Mag 8 analysis.",
   "article_path": "content/wealth/alphabet-waymo-term-loan.md",
   "canonical_url": "https://compound.ie/wealth/alphabet-waymo-term-loan/",
@@ -44,5 +44,34 @@
   "fact_check_pass": {
     "method": "Primary filings, release and issuer financing announcement cross-checked; arithmetic asserted separately.",
     "unresolved_material_claims": []
+  },
+  "status": "published",
+  "new_articles_published": 1,
+  "pull_request": "https://github.com/davidomarayt/compound/pull/81",
+  "validated_head": "7bf4542e05575c70be5553cc6a6320f00e628902",
+  "merge_commit": "643570511f21c490304ccd61f522e7bb0f9608ba",
+  "ci_run": 42079898249,
+  "deployment_run": 42081750849,
+  "deployment_checks": {
+    "build": "success",
+    "deploy": "success",
+    "verify-finance-discovery": "success",
+    "verify-live": "success",
+    "mobile-audit": "success"
+  },
+  "live_verification": {
+    "canonical": "https://compound.ie/wealth/alphabet-waymo-term-loan/",
+    "sitemap": true,
+    "finance_directory": true,
+    "finance_catalogue": true,
+    "hero_matches_source": true,
+    "social_image": "https://compound.ie/static/discover/alphabet-waymo-term-loan-16x9.webp",
+    "social_image_dimensions": [
+      1200,
+      675
+    ],
+    "social_sha256": "e310d99a467054388e63a11230c9b8fa5b333425e566a34745cc7adf86b34100",
+    "verified_at": "2026-11-05T18:19:58.890Z",
+    "visual_review": "Inspected square, 4:3 and landscape crops. Live social image identical to inspected production derivative."
   }
 }
