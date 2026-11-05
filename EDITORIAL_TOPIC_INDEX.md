@@ -1,6 +1,6 @@
 # Compound.ie — Quick Editorial Topic Index
 
-Updated: 2026-11-04 | Automatically rebuilt from published source
+Updated: 2026-11-05 | Automatically rebuilt from published source
 
 **Before recommending a new article:** search this page by keyword, synonym,
 and reader question. An existing article or tool may already cover the idea.
@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 241 published articles and guides, 64 tools,
+**Included:** 244 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -51,6 +51,7 @@ For the complete register (including 510+ company profiles), open
 - [Closing on a House in Ireland: Keys, First Payments and What Comes Next](https://compound.ie/wealth/closing-buying-home-ireland/) — **Wealth**
 - [Could diesel prices in Ireland fall by 8c a litre? What the G7 oil release means for motorists](https://compound.ie/news/g7-oil-release-diesel-prices-ireland/) — **Wealth**
 - [Creatine in Ireland: what it does, how to take it and what to watch](https://compound.ie/health/creatine-benefits-dosage-safety-ireland/) — **Health**
+- [CVS Plans to Split in Two. Do the Segment Economics Support the Separation?](https://compound.ie/wealth/cvs-separation-segment-economics/) — **Wealth**
 - [Dividend Investing in Ireland: How Dividend Stocks Work](https://compound.ie/wealth/dividend-investing-ireland/) — **Wealth**
 - [Do Solar Panels Work in Winter in Ireland? Monthly Output and Savings](https://compound.ie/wealth/solar-panels-winter-ireland/) — **Wealth**
 - [Do you actually need a battery with solar panels in Ireland?](https://compound.ie/wealth/solar-panels-vs-battery-ireland/) — **Wealth**
@@ -142,6 +143,7 @@ For the complete register (including 510+ company profiles), open
 - [Making a Will in Ireland: Complete Guide & Costs](https://compound.ie/wealth/how-to-make-a-will-ireland/) — **Wealth**
 - [Manchester City found guilty on 114 financial-rule charges: what the case was really about](https://compound.ie/news/manchester-city-114-financial-rule-breaches-explained/) — **Wealth**
 - [Marriott's Fees Are Outrunning Room Growth. What Is Funding the Buybacks?](https://compound.ie/wealth/marriott-fees-growth-buybacks-debt/) — **Wealth**
+- [McDonald’s Profit Grew While US Guest Counts Fell. How Much Protection Does Franchising Provide?](https://compound.ie/wealth/mcdonalds-guest-counts-franchise-margins/) — **Wealth**
 - [Meta Earnings: Advertising Surges, but the AI Bill Consumes the Cash](https://compound.ie/wealth/meta-advertising-ai-spending-earnings/) — **Wealth**
 - [Meta Stock Guide: Advertising, AI, Reality Labs and Valuation](https://compound.ie/wealth/meta-ai-advertising-returns-2026/) — **Wealth**
 - [Meta's advertising engine is growing. Is enough cash reaching shareholders?](https://compound.ie/wealth/meta-advertising-growth-ai-cash-flow/) — **Wealth**
@@ -229,6 +231,7 @@ For the complete register (including 510+ company profiles), open
 - [The rise of GLP-1 medicines in Ireland: what the evidence says](https://compound.ie/health/glp1-medicines-ireland-rise-evidence/) — **Health**
 - [Thermo Fisher Earnings: Stronger Growth, Better Margins—and a Cash-Flow Test](https://compound.ie/wealth/thermo-fisher-earnings-organic-growth-cash-flow/) — **Wealth**
 - [Two Irish couples earn €100,000. Why can their take-home pay differ by €9,556?](https://compound.ie/news/one-income-vs-two-incomes-ireland-2027/) — **Wealth**
+- [Uber’s Audience Is Growing. Is the Platform Finally Showing Operating Leverage?](https://compound.ie/wealth/uber-audience-growth-operating-leverage/) — **Wealth**
 - [UPS Is Delivering Fewer US Packages. Can Price and Automation Do the Rest?](https://compound.ie/wealth/ups-package-volume-pricing-automation/) — **Wealth**
 - [Visa Earnings: Strong Payment Growth, but Watch the Incentives](https://compound.ie/wealth/visa-payments-growth-incentives/) — **Wealth**
 - [Vitamin D in winter: who in Ireland should take a supplement](https://compound.ie/health/vitamin-d-ireland-winter-who-should-take-it/) — **Health**

@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-04",
+  "snapshot_date": "2026-11-05",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -731,6 +731,23 @@
           "strength-training",
           "nutrition",
           "irish-health"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "CVS Plans to Split in Two. Do the Segment Economics Support the Separation?",
+        "url": "/wealth/cvs-separation-segment-economics/",
+        "source": "content/wealth/cvs-separation-segment-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "cvs-separation-segment-economics",
+        "date": "2026-11-05",
+        "reviewed": "2026-11-05",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "cvs"
         ],
         "status": "published"
       },
@@ -2531,6 +2548,23 @@
         "status": "published"
       },
       {
+        "title": "McDonald’s Profit Grew While US Guest Counts Fell. How Much Protection Does Franchising Provide?",
+        "url": "/wealth/mcdonalds-guest-counts-franchise-margins/",
+        "source": "content/wealth/mcdonalds-guest-counts-franchise-margins.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "mcdonalds-guest-counts-franchise-margins",
+        "date": "2026-11-05",
+        "reviewed": "2026-11-05",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "mcd"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Meta Earnings: Advertising Surges, but the AI Bill Consumes the Cash",
         "url": "/wealth/meta-advertising-ai-spending-earnings/",
         "source": "content/wealth/meta-advertising-ai-spending-earnings.md",
@@ -4236,6 +4270,23 @@
           "prsi",
           "family-finance",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Uber’s Audience Is Growing. Is the Platform Finally Showing Operating Leverage?",
+        "url": "/wealth/uber-audience-growth-operating-leverage/",
+        "source": "content/wealth/uber-audience-growth-operating-leverage.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "uber-audience-growth-operating-leverage",
+        "date": "2026-11-05",
+        "reviewed": "2026-11-05",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "uber"
         ],
         "status": "published"
       },
