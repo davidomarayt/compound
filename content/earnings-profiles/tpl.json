@@ -2,33 +2,33 @@
   "cik": 1811074,
   "company": "Texas Pacific Land Corporation",
   "latest": {
-    "accession": "0001811074-26-000058",
-    "filed": "2026-08-05",
+    "accession": "0001811074-26-000077",
+    "filed": "2026-11-04",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.23,
-        "prior_year": 1.68,
+        "current": 2.42,
+        "prior_year": 1.76,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 153930000,
-        "prior_year": 116140000,
+        "current": 167368000,
+        "prior_year": 121238000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 246059000,
-        "prior_year": 187543000,
+        "current": 273390000,
+        "prior_year": 203085000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1811074/000181107426000058/tpl-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1811074/000181107426000077/tpl-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1811074/000181107426000058/tpl-20260630.htm"
+    },
+    {
+      "accession": "0001811074-26-000077",
+      "filed": "2026-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.42,
+          "prior_year": 1.76,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 167368000,
+          "prior_year": 121238000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 273390000,
+          "prior_year": 203085000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1811074/000181107426000077/tpl-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TPL",
-  "updated": "2026-10-15"
+  "updated": "2026-11-05"
 }

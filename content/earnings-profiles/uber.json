@@ -2,33 +2,33 @@
   "cik": 1543151,
   "company": "Uber",
   "latest": {
-    "accession": "0001543151-26-000032",
-    "filed": "2026-08-05",
+    "accession": "0001543151-26-000041",
+    "filed": "2026-11-04",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.17,
-        "prior_year": 0.63,
+        "current": 0.25,
+        "prior_year": 3.11,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 2394000000,
-        "prior_year": 1355000000,
+        "current": 512000000,
+        "prior_year": 6626000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 14191000000,
-        "prior_year": 12651000000,
+        "current": 14766000000,
+        "prior_year": 13467000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000041/uber-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm"
+    },
+    {
+      "accession": "0001543151-26-000041",
+      "filed": "2026-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.25,
+          "prior_year": 3.11,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 512000000,
+          "prior_year": 6626000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 14766000000,
+          "prior_year": 13467000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000041/uber-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "UBER",
-  "updated": "2026-10-15"
+  "updated": "2026-11-05"
 }

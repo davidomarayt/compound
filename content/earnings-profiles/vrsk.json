@@ -2,33 +2,33 @@
   "cik": 1442145,
   "company": "Verisk Analytics",
   "latest": {
-    "accession": "0001437749-26-013729",
-    "filed": "2026-04-29",
+    "accession": "0001437749-26-035083",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.73,
-        "prior_year": 1.65,
+        "current": 1.7,
+        "prior_year": 1.61,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 234200000,
-        "prior_year": 232300000,
+        "current": 219200000,
+        "prior_year": 225500000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 782600000,
-        "prior_year": 753000000,
+        "current": 809000000,
+        "prior_year": 768300000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926013729/vrsk20260331_10q.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926035083/vrsk20260820_10q.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926013729/vrsk20260331_10q.htm"
+    },
+    {
+      "accession": "0001437749-26-024749",
+      "filed": "2026-07-29",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.75,
+          "prior_year": 1.81,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 228600000,
+          "prior_year": 253300000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 806300000,
+          "prior_year": 772600000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm"
+    },
+    {
+      "accession": "0001437749-26-035083",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.7,
+          "prior_year": 1.61,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 219200000,
+          "prior_year": 225500000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 809000000,
+          "prior_year": 768300000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926035083/vrsk20260820_10q.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "VRSK",
-  "updated": "2026-10-15"
+  "updated": "2026-11-05"
 }
