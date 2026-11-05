@@ -4,13 +4,18 @@
   "company": "Uber Technologies, Inc.",
   "ticker": "UBER",
   "date": "2026-11-05",
-  "status": "prepared",
-  "publication_state": "local_gates_passed_pr_pending",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
   "story_thesis": "Audience and bookings growth are producing higher Mobility and Delivery profit, but autonomy spending, stock compensation, debt and investment activity determine whether scale improves value per share.",
   "article_path": "content/wealth/uber-audience-growth-operating-leverage.md",
   "canonical_url": "https://compound.ie/wealth/uber-audience-growth-operating-leverage/",
+  "pull_request": "https://github.com/davidomarayt/compound/pull/80",
+  "validated_head": "61bc11f6a82e28d7e44300d05b0a4a27ce10ca14",
+  "merge_commit": "6eae6575d25849988d8c126afec866f7cd94bc33",
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/41997414500",
+  "live_verified_at": "2026-11-05T08:57:00Z",
   "sources": [
     "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000039/uberq326earningspressrelea.htm",
     "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000041/uber-20260930.htm"
@@ -60,9 +65,10 @@
     "archive_label":"Archival photograph; not a current operating image",
     "transform":"Cropped and resized for publication", "source_dimensions":[7354,4912], "local_image_sha256":"afaf96e5115c93135d4de42d76500b30ef3c4aebb66aa7c2d9c59be33a8b26c7", "verified":true
   },
-  "gates": {"source_verification":"passed","duplicate_check":"passed","claim_fact_check":"passed","image_provenance":"passed","offline_tests":"passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO","build":"passed production-canonical build: 244 published articles, 678 tags, 25 pages and 57 tools","render":"passed: canonical, one H1, indexable robots metadata, source credit, stock-profile and earnings links inspected; sitemap and finance catalogue contain the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected","exact_head_ci":"pending","deployment":"pending","live_verification":"pending"},
+  "gates": {"source_verification":"passed","duplicate_check":"passed","claim_fact_check":"passed","image_provenance":"passed","offline_tests":"passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO","build":"passed production-canonical build: 244 published articles, 678 tags, 25 pages and 57 tools","render":"passed: canonical, one H1, indexable robots metadata, source credit, stock-profile and earnings links inspected; sitemap and finance catalogue contain the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected","exact_head_ci":"passed on PR head 61bc11f6a82e28d7e44300d05b0a4a27ce10ca14 in workflow run 41995802452","deployment":"passed: build, deploy, verify-live, verify-finance-discovery and mobile-audit succeeded in site workflow run 41997414500","live_verification":"passed"},
+  "live_verification": {"verified_at":"2026-11-05T08:57:00Z","page_http_status":200,"canonical":"https://compound.ie/wealth/uber-audience-growth-operating-leverage/","canonical_matches":true,"indexing_directive":"max-image-preview:large","company_text_present":true,"stock_profile_link_present":true,"image_credit_present":true,"sitemap_present":true,"finance_catalogue_present":true,"social_image_url":"https://compound.ie/static/discover/uber-audience-growth-operating-leverage-16x9.webp","social_image_http_status":200,"social_image_dimensions":[1200,675],"social_image_sha256":"1bc23726da897a0afb89b1e2f232a428398897f39ee210b79ccb7ffffe68da53","social_image_visual_inspection":"passed"},
   "article_sha256": "8a1c17f1c4f4c489a699cde7ced857871e3f26076ba6cbf232bd5f77f29037ce",
   "social_image_sha256": "1bc23726da897a0afb89b1e2f232a428398897f39ee210b79ccb7ffffe68da53",
-  "new_articles_published": 0,
-  "scheduled_batch_new_articles_published": 0
+  "new_articles_published": 1,
+  "scheduled_batch_new_articles_published": 3
 }

@@ -2,11 +2,16 @@
   "story_fingerprint": "0b54b54ecfbac8227ac4fd680",
   "fingerprint_input": "CVS|cvs-separation-segment-economics|2026-11-05",
   "company": "CVS Health Corporation", "ticker": "CVS", "date": "2026-11-05",
-  "status": "prepared", "publication_state": "local_gates_passed_pr_pending", "publication_kind": "new_analysis",
+  "status": "published", "publication_state": "live_verified", "publication_kind": "new_analysis",
   "authorization": "Publisher authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
   "story_thesis": "CVS's segments have distinct economic profiles, but the proposed separation only creates value if standalone margins, cash generation and debt allocation remain sound.",
   "article_path": "content/wealth/cvs-separation-segment-economics.md",
   "canonical_url": "https://compound.ie/wealth/cvs-separation-segment-economics/",
+  "pull_request": "https://github.com/davidomarayt/compound/pull/80",
+  "validated_head": "61bc11f6a82e28d7e44300d05b0a4a27ce10ca14",
+  "merge_commit": "6eae6575d25849988d8c126afec866f7cd94bc33",
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/41997414500",
+  "live_verified_at": "2026-11-05T08:57:00Z",
   "sources": [
     "https://www.sec.gov/Archives/edgar/data/64803/000006480326000107/cvs_ex99x1q3-26.htm",
     "https://www.sec.gov/Archives/edgar/data/64803/000006480326000108/cvs-20260930.htm"
@@ -42,8 +47,9 @@
     "archive_label":"Archival photograph; not a current operating image",
     "transform":"Cropped and resized for publication", "source_dimensions":[3817,2147], "local_image_sha256":"d0633c9ef9b16b00db15dc6b3957080f8d36aee8ffc15eb445c7bff6dac65d24", "verified":true
   },
-  "gates": {"source_verification":"passed","duplicate_check":"passed","claim_fact_check":"passed","image_provenance":"passed","offline_tests":"passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO","build":"passed production-canonical build: 244 published articles, 678 tags, 25 pages and 57 tools","render":"passed: canonical, one H1, indexable robots metadata, source credit, stock-profile and earnings links inspected; sitemap and finance catalogue contain the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected","exact_head_ci":"pending","deployment":"pending","live_verification":"pending"},
+  "gates": {"source_verification":"passed","duplicate_check":"passed","claim_fact_check":"passed","image_provenance":"passed","offline_tests":"passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO","build":"passed production-canonical build: 244 published articles, 678 tags, 25 pages and 57 tools","render":"passed: canonical, one H1, indexable robots metadata, source credit, stock-profile and earnings links inspected; sitemap and finance catalogue contain the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected","exact_head_ci":"passed on PR head 61bc11f6a82e28d7e44300d05b0a4a27ce10ca14 in workflow run 41995802452","deployment":"passed: build, deploy, verify-live, verify-finance-discovery and mobile-audit succeeded in site workflow run 41997414500","live_verification":"passed"},
+  "live_verification": {"verified_at":"2026-11-05T08:57:00Z","page_http_status":200,"canonical":"https://compound.ie/wealth/cvs-separation-segment-economics/","canonical_matches":true,"indexing_directive":"max-image-preview:large","company_text_present":true,"stock_profile_link_present":true,"image_credit_present":true,"sitemap_present":true,"finance_catalogue_present":true,"social_image_url":"https://compound.ie/static/discover/cvs-separation-segment-economics-16x9.webp","social_image_http_status":200,"social_image_dimensions":[1200,675],"social_image_sha256":"66d3b0f34beb32d2f76d00b6486b5ec258069661d79d35bc8db2d7b1e6e6feb3","social_image_visual_inspection":"passed"},
   "article_sha256": "eea2b5d9e509ccde4d7fdad06eec5aa085f836cf9c1736b868a051c64c82003c",
   "social_image_sha256": "66d3b0f34beb32d2f76d00b6486b5ec258069661d79d35bc8db2d7b1e6e6feb3",
-  "new_articles_published": 0, "scheduled_batch_new_articles_published": 0
+  "new_articles_published": 1, "scheduled_batch_new_articles_published": 3
 }
