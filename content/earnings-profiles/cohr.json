@@ -2,33 +2,33 @@
   "cik": 820318,
   "company": "Coherent Corp.",
   "latest": {
-    "accession": "0000820318-26-000020",
-    "filed": "2026-08-14",
-    "form": "10-K",
-    "fp": "FY",
+    "accession": "0000820318-26-000023",
+    "filed": "2026-11-04",
+    "form": "10-Q",
+    "fp": "Q1",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 4.12,
-        "prior_year": -0.52,
+        "current": 1.9,
+        "prior_year": 1.19,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 804998000,
-        "prior_year": 49364000,
+        "current": 384673000,
+        "prior_year": 226349000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 7118181000,
-        "prior_year": 5810115000,
+        "current": 2370324000,
+        "prior_year": 1581378000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/820318/000082031826000020/iivi-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/820318/000082031826000023/iivi-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/820318/000082031826000020/iivi-20260630.htm"
+    },
+    {
+      "accession": "0000820318-26-000023",
+      "filed": "2026-11-04",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.9,
+          "prior_year": 1.19,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 384673000,
+          "prior_year": 226349000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2370324000,
+          "prior_year": 1581378000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/820318/000082031826000023/iivi-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "COHR",
-  "updated": "2026-10-15"
+  "updated": "2026-11-05"
 }

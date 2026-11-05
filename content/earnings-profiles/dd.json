@@ -2,33 +2,33 @@
   "cik": 1666700,
   "company": "DuPont",
   "latest": {
-    "accession": "0001666700-26-000053",
-    "filed": "2026-08-04",
+    "accession": "0001666700-26-000060",
+    "filed": "2026-11-03",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.05,
-        "prior_year": 0.42,
+        "current": 0.91,
+        "prior_year": -0.88,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 143000000,
-        "prior_year": 59000000,
+        "current": 123000000,
+        "prior_year": -123000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1819000000,
-        "prior_year": 1749000000,
+        "current": 1868000000,
+        "prior_year": 1795000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1666700/000166670026000053/dd-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1666700/000166670026000060/dd-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1666700/000166670026000053/dd-20260630.htm"
+    },
+    {
+      "accession": "0001666700-26-000060",
+      "filed": "2026-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.91,
+          "prior_year": -0.88,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 123000000,
+          "prior_year": -123000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1868000000,
+          "prior_year": 1795000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1666700/000166670026000060/dd-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "DD",
-  "updated": "2026-10-15"
+  "updated": "2026-11-05"
 }

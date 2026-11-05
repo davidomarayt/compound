@@ -2,33 +2,33 @@
   "cik": 765880,
   "company": "Healthpeak Properties",
   "latest": {
-    "accession": "0001628280-26-053373",
-    "filed": "2026-08-05",
+    "accession": "0001628280-26-069522",
+    "filed": "2026-11-03",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.08,
-        "prior_year": 0.05,
+        "current": 0.02,
+        "prior_year": -0.17,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 52818000,
-        "prior_year": 31673000,
+        "current": 17263000,
+        "prior_year": -117122000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 216456000,
-        "prior_year": 148855000,
+        "current": 268300000,
+        "prior_year": 150458000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/765880/000162828026053373/peak-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/765880/000162828026069522/peak-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/765880/000162828026053373/peak-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-069522",
+      "filed": "2026-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.02,
+          "prior_year": -0.17,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 17263000,
+          "prior_year": -117122000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 268300000,
+          "prior_year": 150458000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/765880/000162828026069522/peak-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "DOC",
-  "updated": "2026-10-15"
+  "updated": "2026-11-05"
 }

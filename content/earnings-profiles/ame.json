@@ -2,33 +2,33 @@
   "cik": 1037868,
   "company": "Ametek",
   "latest": {
-    "accession": "0001037868-26-000175",
-    "filed": "2026-08-04",
+    "accession": "0001037868-26-000196",
+    "filed": "2026-11-03",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.77,
-        "prior_year": 1.55,
+        "current": 1.85,
+        "prior_year": 1.6,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 406896000,
-        "prior_year": 358367000,
+        "current": 426300000,
+        "prior_year": 371416000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2044397000,
-        "prior_year": 1778056000,
+        "current": 2220306000,
+        "prior_year": 1892641000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000175/ame-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000175/ame-20260630.htm"
+    },
+    {
+      "accession": "0001037868-26-000196",
+      "filed": "2026-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.85,
+          "prior_year": 1.6,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 426300000,
+          "prior_year": 371416000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2220306000,
+          "prior_year": 1892641000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "AME",
-  "updated": "2026-10-15"
+  "updated": "2026-11-05"
 }
