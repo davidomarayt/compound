@@ -1,0 +1,68 @@
+{
+  "story_fingerprint": "3ae41b5b0decee371a9e8bfc",
+  "fingerprint_input": "UBER|uber-audience-growth-operating-leverage|2026-11-05",
+  "company": "Uber Technologies, Inc.",
+  "ticker": "UBER",
+  "date": "2026-11-05",
+  "status": "prepared",
+  "publication_state": "local_gates_passed_pr_pending",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Audience and bookings growth are producing higher Mobility and Delivery profit, but autonomy spending, stock compensation, debt and investment activity determine whether scale improves value per share.",
+  "article_path": "content/wealth/uber-audience-growth-operating-leverage.md",
+  "canonical_url": "https://compound.ie/wealth/uber-audience-growth-operating-leverage/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000039/uberq326earningspressrelea.htm",
+    "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000041/uber-20260930.htm"
+  ],
+  "source_sha256": [
+    "b904b68bae6134ad0a5ebbac19cf5424961d7b43b6afc31269ce25c71a7865fd",
+    "4b49d084740ea0fba9bb24b140c3f19c54e0e9a08a55c91259372ffae337ded9"
+  ],
+  "identity": {
+    "issuer": "Uber Technologies, Inc.", "CIK": 1543151,
+    "release_accession": "0001543151-26-000039", "filing_accession": "0001543151-26-000041",
+    "form": "10-Q", "fiscal_year": 2026, "fiscal_period": "Q3",
+    "period_end": "2026-09-30", "filing_date": "2026-11-04",
+    "currency": "USD", "units": "USD millions except users, trips and per-share data"
+  },
+  "duplicate_checks": [
+    "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json and actual wealth Markdown; Uber had a maintained stock profile but no dedicated audience-growth and operating-leverage analysis.",
+    "Checked open PRs 57 and 43, recent merged publication PRs, company-publication records and live content; no matching Uber story or fingerprint was active.",
+    "Checked the 5 November Europe/Dublin scheduled publication count before drafting; no scheduled company-analysis article had been published.",
+    "The article tests durable platform economics; routine quarterly figures remain on /stocks/uber/."
+  ],
+  "candidate_review": [
+    "Uber: selected for bookings growth, segment leverage and autonomy/platform spending.",
+    "McDonald's: selected separately for guest counts and franchise economics.",
+    "CVS Health: selected separately for separation and segment economics.",
+    "AppLovin: screened but not selected because advertising-platform coverage risked overlapping recent monetisation analysis.",
+    "Qualcomm: screened but not selected because AI-device and data-centre questions overlapped existing AI infrastructure coverage.",
+    "Datadog: screened but not selected because a cleaner non-overlapping cash-conversion question was not established.",
+    "Allstate: screened but not selected to rotate away from another insurance-led article alongside CVS.",
+    "Arista Networks, AMD and Super Micro Computer: screened but not selected because the canonical AI-infrastructure earnings article already addresses the core question."
+  ],
+  "evidence_table": [
+    {"claim":"MAPCs were 215m, trips 4.061bn and gross bookings USD59.819bn, up 14%, 16% and 20%.","source_indexes":[0,1],"location_or_arithmetic":"Release KPI and segment tables; periods and reported growth rechecked.","result":"verified in separate fact-check pass"},
+    {"claim":"Mobility segment income was USD2.362bn on USD29.512bn bookings; Delivery USD1.057bn on USD28.539bn.","source_indexes":[0,1],"location_or_arithmetic":"2,362 / 29,512 = 8.00% versus 1,864 / 25,111 = 7.42%; 1,057 / 28,539 = 3.70% versus 811 / 23,322 = 3.48%.","result":"verified; calculated margins labelled as Compound calculations"},
+    {"claim":"Revenue grew 10%, with business-model changes reducing growth by eight percentage points.","source_indexes":[0,1],"location_or_arithmetic":"Release revenue table and explanation; gross bookings are not described as revenue.","result":"verified"},
+    {"claim":"R&D expense was USD1.273bn, up 48%; management targets about 700 driverless vehicles at year end and more than 2,000 during 2027.","source_indexes":[0,1],"location_or_arithmetic":"10-Q operating-expense table and release management commentary; vehicle numbers labelled targets and R&D not wholly attributed to autonomy.","result":"verified with attribution caveat"},
+    {"claim":"Q3 OCF was USD2.639bn, capex USD104m and company-defined FCF USD2.535bn; nine-month SBC was USD1.614bn and repurchases USD4.279bn.","source_indexes":[0,1],"location_or_arithmetic":"Release reconciliation and 10-Q cash-flow/equity tables; 2,639 - 104 = 2,535.","result":"verified; GAAP and non-GAAP measures separated"},
+    {"claim":"Long-term debt rose to USD15.664bn from USD10.521bn while cash and short-term investments were about USD10.1bn.","source_indexes":[1],"location_or_arithmetic":"10-Q balance sheet and financing cash-flow lines; borrowing, repayment and investment activity rechecked.","result":"verified"}
+  ],
+  "fact_check_pass": {"method":"Every material number, period, segment label, accounting measure, management target and calculation was reread against the SEC-furnished release and Form 10-Q; arithmetic was recomputed independently.","unresolved_material_claims":[]},
+  "image": {
+    "source":"https://commons.wikimedia.org/wiki/File:Uber_Eats.jpg",
+    "original_url":"https://upload.wikimedia.org/wikipedia/commons/8/8e/Uber_Eats.jpg",
+    "photographer":"conceptphoto.info", "license":"CC BY 2.0",
+    "license_url":"https://creativecommons.org/licenses/by/2.0/",
+    "capture_date":"2023-09-22", "subject":"Uber Eats storefront at Frankfurt Hauptwache",
+    "archive_label":"Archival photograph; not a current operating image",
+    "transform":"Cropped and resized for publication", "source_dimensions":[7354,4912], "local_image_sha256":"afaf96e5115c93135d4de42d76500b30ef3c4aebb66aa7c2d9c59be33a8b26c7", "verified":true
+  },
+  "gates": {"source_verification":"passed","duplicate_check":"passed","claim_fact_check":"passed","image_provenance":"passed","offline_tests":"passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO","build":"passed production-canonical build: 244 published articles, 678 tags, 25 pages and 57 tools","render":"passed: canonical, one H1, indexable robots metadata, source credit, stock-profile and earnings links inspected; sitemap and finance catalogue contain the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected","exact_head_ci":"pending","deployment":"pending","live_verification":"pending"},
+  "article_sha256": "8a1c17f1c4f4c489a699cde7ced857871e3f26076ba6cbf232bd5f77f29037ce",
+  "social_image_sha256": "1bc23726da897a0afb89b1e2f232a428398897f39ee210b79ccb7ffffe68da53",
+  "new_articles_published": 0,
+  "scheduled_batch_new_articles_published": 0
+}

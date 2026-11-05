@@ -1,0 +1,49 @@
+{
+  "story_fingerprint": "0b54b54ecfbac8227ac4fd680",
+  "fingerprint_input": "CVS|cvs-separation-segment-economics|2026-11-05",
+  "company": "CVS Health Corporation", "ticker": "CVS", "date": "2026-11-05",
+  "status": "prepared", "publication_state": "local_gates_passed_pr_pending", "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "CVS's segments have distinct economic profiles, but the proposed separation only creates value if standalone margins, cash generation and debt allocation remain sound.",
+  "article_path": "content/wealth/cvs-separation-segment-economics.md",
+  "canonical_url": "https://compound.ie/wealth/cvs-separation-segment-economics/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/64803/000006480326000107/cvs_ex99x1q3-26.htm",
+    "https://www.sec.gov/Archives/edgar/data/64803/000006480326000108/cvs-20260930.htm"
+  ],
+  "source_sha256": ["bcd3518aa0bd402c8b133ac980d36d25ff863b62b999c6ee79320c1d3a67a7df","3566a51d4d3dbb84c37714abccc498650d5faa6b7cfc863f864e1a94b40e69d5"],
+  "identity": {
+    "issuer":"CVS Health Corporation", "CIK":64803, "release_accession":"0000064803-26-000107", "filing_accession":"0000064803-26-000108",
+    "form":"10-Q", "fiscal_year":2026, "fiscal_period":"Q3", "period_end":"2026-09-30", "filing_date":"2026-11-04",
+    "currency":"USD", "units":"USD millions except membership, claims, prescriptions and per-share data"
+  },
+  "duplicate_checks": [
+    "Checked both editorial inventories and actual wealth content; CVS had a maintained stock profile but no separation-and-segment-economics analysis.",
+    "Checked open PRs, recent merged publication PRs, company-publication records and live content; no matching CVS story or fingerprint was active.",
+    "Checked the 5 November Europe/Dublin scheduled publication count before drafting; no scheduled company-analysis article had been published.",
+    "The article assesses the proposed structure rather than recapping the quarter; routine figures remain on /stocks/cvs/."
+  ],
+  "candidate_review_reference": "See 3ae41b5b0decee371a9e8bfc.json for the ten-company screen; CVS was selected independently.",
+  "evidence_table": [
+    {"claim":"CVS intends a tax-free separation into healthcare-solutions and retail/community-health companies in H1 2028, subject to conditions.","source_indexes":[0,1],"location_or_arithmetic":"Release strategic announcement and 10-Q subsequent-events disclosure; transaction consistently described as proposed.","result":"verified; completion and debt allocation not assumed"},
+    {"claim":"Total revenue was USD108.399bn and adjusted operating income USD4.194bn, up 5.4% and 21.2%.","source_indexes":[0,1],"location_or_arithmetic":"Release consolidated table and 10-Q segment reconciliation.","result":"verified; adjusted measure labelled"},
+    {"claim":"Health Care Benefits revenue was USD36.855bn, adjusted operating income USD912m and MBR 91.3%.","source_indexes":[0,1],"location_or_arithmetic":"Segment tables; prior USD314m income and 92.8% MBR independently rechecked.","result":"verified"},
+    {"claim":"Health Services revenue rose 9.5% to USD53.964bn while adjusted operating income rose 2.7% to USD2.106bn.","source_indexes":[0,1],"location_or_arithmetic":"2,106 / 53,964 = 3.90% versus 2,050 / 49,266 = 4.16%.","result":"verified; calculated margin labelled"},
+    {"claim":"Pharmacy & Consumer Wellness revenue fell 2.0% to USD35.498bn while adjusted operating income rose 10.6% to USD1.635bn.","source_indexes":[0,1],"location_or_arithmetic":"1,635 / 35,498 = 4.61% versus 1,478 / 36,214 = 4.08%.","result":"verified; calculated margin labelled"},
+    {"claim":"Nine-month OCF was USD15.318bn, capex USD2.357bn, debt repayment USD4.057bn, cash USD11.738bn and long-term debt USD57.223bn.","source_indexes":[1],"location_or_arithmetic":"10-Q cash-flow statement and balance sheet.","result":"verified"},
+    {"claim":"Prior-year GAAP operating loss included a USD5.725bn goodwill impairment.","source_indexes":[0,1],"location_or_arithmetic":"Release reconciliation and 10-Q goodwill note; excluded from like-for-like operating interpretation.","result":"verified"}
+  ],
+  "fact_check_pass": {"method":"Every material number, period, segment classification, separation condition, GAAP/non-GAAP measure, management explanation and calculation was reread against the SEC-furnished release and Form 10-Q; arithmetic was recomputed independently.","unresolved_material_claims":[]},
+  "image": {
+    "source":"https://commons.wikimedia.org/wiki/File:CVS_Pharmacy_-_Storefront_%2850836368758%29.jpg",
+    "original_url":"https://upload.wikimedia.org/wikipedia/commons/c/cc/CVS_Pharmacy_-_Storefront_%2850836368758%29.jpg",
+    "photographer":"ajay_suresh", "license":"CC BY 2.0", "license_url":"https://creativecommons.org/licenses/by/2.0/",
+    "capture_date":"2020-12-24", "subject":"CVS Pharmacy storefront",
+    "archive_label":"Archival photograph; not a current operating image",
+    "transform":"Cropped and resized for publication", "source_dimensions":[3817,2147], "local_image_sha256":"d0633c9ef9b16b00db15dc6b3957080f8d36aee8ffc15eb445c7bff6dac65d24", "verified":true
+  },
+  "gates": {"source_verification":"passed","duplicate_check":"passed","claim_fact_check":"passed","image_provenance":"passed","offline_tests":"passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO","build":"passed production-canonical build: 244 published articles, 678 tags, 25 pages and 57 tools","render":"passed: canonical, one H1, indexable robots metadata, source credit, stock-profile and earnings links inspected; sitemap and finance catalogue contain the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected","exact_head_ci":"pending","deployment":"pending","live_verification":"pending"},
+  "article_sha256": "eea2b5d9e509ccde4d7fdad06eec5aa085f836cf9c1736b868a051c64c82003c",
+  "social_image_sha256": "66d3b0f34beb32d2f76d00b6486b5ec258069661d79d35bc8db2d7b1e6e6feb3",
+  "new_articles_published": 0, "scheduled_batch_new_articles_published": 0
+}
