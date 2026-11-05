@@ -1,0 +1,48 @@
+{
+  "series": "mag8",
+  "date": "2026-11-05",
+  "company": "Alphabet Inc.",
+  "ticker": "GOOGL",
+  "story_fingerprint": "e52f7baebb37245a7236f561",
+  "fingerprint_input": "GOOGL|2026-Q3|waymo-loan-recourse-and-interest",
+  "publication_kind": "new_analysis",
+  "publication_state": "prepared",
+  "authorization": "Publisher authorised daily Mag 8 analysis.",
+  "article_path": "content/wealth/alphabet-waymo-term-loan.md",
+  "canonical_url": "https://compound.ie/wealth/alphabet-waymo-term-loan/",
+  "story_thesis": "Waymo can borrow against its own assets without an Alphabet guarantee. The terms reveal the price of that independence, while the segment accounts leave its ability to pay from ride revenue unresolved.",
+  "article_sha256": "0d178fca7fc8e8400edc59fe86052af42b4b71df003a4723f75ca785bf3d38f4",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+    "https://waymo.com/blog/2026/10/waymo-closes-5-billion-debt-financing/",
+    "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm"
+  ],
+  "identity": {
+    "CIK": 1652044,
+    "form": "10-Q",
+    "accession": "0001652044-26-000084",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30",
+    "subsequent_event_date": "2026-10-08"
+  },
+  "duplicate_checks": [
+    "Only META, LLY and AAPL in prior Mag 8 ledger. No Nov 5 Mag 8 ledger, legacy publication, evening branch or pending PR. Morning CVS, MCD and UBER angles checked. Uber audience/operating leverage distinct from Waymo secured debt. Topic index, Markdown/JSON catalogues and Alphabet stories checked."
+  ],
+  "evidence_table": [
+    "Waymo October 8 announcement confirms first debt financing, $5bn term loan and prior $16bn equity round.",
+    "Alphabet 10-Q Note 6 confirms maturity October 2032, certain Waymo assets/subsidiaries secure loan with carve-outs; no Alphabet or other subsidiary guarantee. October event after quarter end.",
+    "Term SOFR plus 5.25pp; annual spread $262.5m, 100bp sensitivity $50m. 2/3/4% illustrations produce $362.5m/$412.5m/$462.5m annualised, with constant balance and no fees; not guidance.",
+    "October 28 Q3 release and 10-Q: Other Bets revenues $372m/$344m, operating loss $2047m/$1426m; $28m revenue and $621m loss increases year over year, multiple businesses combined. No Waymo cash flow inferred."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Waymo_Jaguar_I-Pace_in_San_Francisco_January_2026.jpg",
+    "credit": "4300streetcar via Wikimedia Commons, CC BY 4.0. Archival photograph, 29 January 2026. Resized and cropped.",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "capture_date": "2026-01-29"
+  },
+  "fact_check_pass": {
+    "method": "Primary filings, release and issuer financing announcement cross-checked; arithmetic asserted separately.",
+    "unresolved_material_claims": []
+  }
+}
