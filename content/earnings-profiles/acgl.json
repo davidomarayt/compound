@@ -2,33 +2,33 @@
   "cik": 947484,
   "company": "Arch Capital Group",
   "latest": {
-    "accession": "0000947484-26-000124",
-    "filed": "2026-08-04",
+    "accession": "0000947484-26-000152",
+    "filed": "2026-11-04",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 3,
-        "prior_year": 3.23,
+        "prior_year": 3.56,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1057000000,
-        "prior_year": 1237000000,
+        "current": 1035000000,
+        "prior_year": 1350000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4668000000,
-        "prior_year": 5213000000,
+        "current": 4655000000,
+        "prior_year": 5109000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/947484/000094748426000124/acgl-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/947484/000094748426000152/acgl-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/947484/000094748426000124/acgl-20260630.htm"
+    },
+    {
+      "accession": "0000947484-26-000152",
+      "filed": "2026-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3,
+          "prior_year": 3.56,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1035000000,
+          "prior_year": 1350000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4655000000,
+          "prior_year": 5109000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/947484/000094748426000152/acgl-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "ACGL",
-  "updated": "2026-10-15"
+  "updated": "2026-11-05"
 }

@@ -2,33 +2,33 @@
   "cik": 1100682,
   "company": "Charles River Laboratories",
   "latest": {
-    "accession": "0001100682-26-000118",
-    "filed": "2026-08-05",
+    "accession": "0001100682-26-000157",
+    "filed": "2026-11-04",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": -0.03,
-        "prior_year": 1.06,
+        "current": 6.86,
+        "prior_year": 1.1,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": -1482000,
-        "prior_year": 52326000,
+        "current": 333067000,
+        "prior_year": 54422000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1004078000,
-        "prior_year": 1032135000,
+        "current": 982732000,
+        "prior_year": 1004852000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-27",
-    "source": "https://www.sec.gov/Archives/edgar/data/1100682/000110068226000118/crl-20260627.htm"
+    "period_end": "2026-09-26",
+    "source": "https://www.sec.gov/Archives/edgar/data/1100682/000110068226000157/crl-20260926.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-27",
       "source": "https://www.sec.gov/Archives/edgar/data/1100682/000110068226000118/crl-20260627.htm"
+    },
+    {
+      "accession": "0001100682-26-000157",
+      "filed": "2026-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 6.86,
+          "prior_year": 1.1,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 333067000,
+          "prior_year": 54422000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 982732000,
+          "prior_year": 1004852000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/1100682/000110068226000157/crl-20260926.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CRL",
-  "updated": "2026-10-15"
+  "updated": "2026-11-05"
 }

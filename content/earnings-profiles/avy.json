@@ -2,33 +2,33 @@
   "cik": 8818,
   "company": "Avery Dennison",
   "latest": {
-    "accession": "0000008818-26-000131",
-    "filed": "2026-08-04",
+    "accession": "0000008818-26-000166",
+    "filed": "2026-11-03",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.67,
-        "prior_year": 2.41,
+        "current": 2.24,
+        "prior_year": 2.13,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 204100000,
-        "prior_year": 189000000,
+        "current": 169700000,
+        "prior_year": 166300000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2462900000,
-        "prior_year": 2220500000,
+        "current": 2331500000,
+        "prior_year": 2215500000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/8818/000000881826000131/avy-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/8818/000000881826000166/avy-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/8818/000000881826000131/avy-20260630.htm"
+    },
+    {
+      "accession": "0000008818-26-000166",
+      "filed": "2026-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.24,
+          "prior_year": 2.13,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 169700000,
+          "prior_year": 166300000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2331500000,
+          "prior_year": 2215500000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/8818/000000881826000166/avy-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "AVY",
-  "updated": "2026-10-15"
+  "updated": "2026-11-05"
 }

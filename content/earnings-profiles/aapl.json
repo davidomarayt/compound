@@ -2,33 +2,33 @@
   "cik": 320193,
   "company": "Apple Inc.",
   "latest": {
-    "accession": "0000320193-26-000020",
-    "filed": "2026-07-31",
-    "form": "10-Q",
-    "fp": "Q3",
+    "accession": "0000320193-26-000026",
+    "filed": "2026-11-03",
+    "form": "10-K",
+    "fp": "FY",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.02,
-        "prior_year": 1.57,
+        "current": 8.98,
+        "prior_year": 7.46,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 29789000000,
-        "prior_year": 23434000000,
+        "current": 132175000000,
+        "prior_year": 112010000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 109417000000,
-        "prior_year": 94036000000,
+        "current": 478834000000,
+        "prior_year": 416161000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-27",
-    "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    "period_end": "2026-09-26",
+    "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-27",
       "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
+    },
+    {
+      "accession": "0000320193-26-000026",
+      "filed": "2026-11-03",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 8.98,
+          "prior_year": 7.46,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 132175000000,
+          "prior_year": 112010000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 478834000000,
+          "prior_year": 416161000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "AAPL",
-  "updated": "2026-10-15"
+  "updated": "2026-11-05"
 }
