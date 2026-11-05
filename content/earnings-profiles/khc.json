@@ -2,33 +2,33 @@
   "cik": 1637459,
   "company": "Kraft Heinz",
   "latest": {
-    "accession": "0001637459-26-000054",
-    "filed": "2026-08-05",
+    "accession": "0001637459-26-000081",
+    "filed": "2026-11-04",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": -4.6,
-        "prior_year": -6.6,
+        "current": 0.46,
+        "prior_year": 0.52,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": -5460000000,
-        "prior_year": -7824000000,
+        "current": 544000000,
+        "prior_year": 615000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 6262000000,
-        "prior_year": 6352000000,
+        "current": 6115000000,
+        "prior_year": 6237000000,
         "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-27",
-    "source": "https://www.sec.gov/Archives/edgar/data/1637459/000163745926000054/khc-20260627.htm"
+    "period_end": "2026-09-26",
+    "source": "https://www.sec.gov/Archives/edgar/data/1637459/000163745926000081/khc-20260926.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-27",
       "source": "https://www.sec.gov/Archives/edgar/data/1637459/000163745926000054/khc-20260627.htm"
+    },
+    {
+      "accession": "0001637459-26-000081",
+      "filed": "2026-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.46,
+          "prior_year": 0.52,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 544000000,
+          "prior_year": 615000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6115000000,
+          "prior_year": 6237000000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/1637459/000163745926000081/khc-20260926.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "KHC",
-  "updated": "2026-10-15"
+  "updated": "2026-11-05"
 }

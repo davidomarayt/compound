@@ -2,33 +2,33 @@
   "cik": 19617,
   "company": "JPMorgan Chase",
   "latest": {
-    "accession": "0001628280-26-065582",
-    "filed": "2026-10-13",
-    "form": "8-K",
+    "accession": "0001628280-26-069523",
+    "filed": "2026-11-03",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 5.57,
         "prior_year": 5.07,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
         "current": 15305000000,
         "prior_year": 14393000000,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
         "current": 50172000000,
         "prior_year": 46427000000,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "RevenuesNetOfInterestExpense",
         "unit": "USD"
       }
     },
     "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/19617/000162828026065582/a3q26erfexhibit991narrative.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/19617/000162828026069523/jpm-20260930.htm"
   },
   "periods": [
     {
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/19617/000162828026054343/jpm-20260630.htm"
     },
     {
-      "accession": "0001628280-26-065582",
-      "filed": "2026-10-13",
-      "form": "8-K",
+      "accession": "0001628280-26-069523",
+      "filed": "2026-11-03",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 5.57,
           "prior_year": 5.07,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
           "current": 15305000000,
           "prior_year": 14393000000,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
           "current": 50172000000,
           "prior_year": 46427000000,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "RevenuesNetOfInterestExpense",
           "unit": "USD"
         }
       },
       "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/19617/000162828026065582/a3q26erfexhibit991narrative.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/19617/000162828026069523/jpm-20260930.htm"
     }
   ],
-  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "JPM",
-  "updated": "2026-10-26"
+  "updated": "2026-11-05"
 }

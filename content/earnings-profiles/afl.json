@@ -2,33 +2,33 @@
   "cik": 4977,
   "company": "Aflac",
   "latest": {
-    "accession": "0001628280-26-054618",
-    "filed": "2026-08-07",
+    "accession": "0001628280-26-070776",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.63,
-        "prior_year": 1.11,
+        "current": 0.61,
+        "prior_year": 3.08,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 825000000,
-        "prior_year": 599000000,
+        "current": 303000000,
+        "prior_year": 1639000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4117000000,
-        "prior_year": 4160000000,
+        "current": 3271000000,
+        "prior_year": 4740000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/4977/000162828026054618/afl-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/4977/000162828026070776/afl-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/4977/000162828026054618/afl-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-070776",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.61,
+          "prior_year": 3.08,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 303000000,
+          "prior_year": 1639000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3271000000,
+          "prior_year": 4740000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/4977/000162828026070776/afl-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "AFL",
-  "updated": "2026-10-15"
+  "updated": "2026-11-05"
 }

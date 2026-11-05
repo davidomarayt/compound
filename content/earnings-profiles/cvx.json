@@ -2,33 +2,33 @@
   "cik": 93410,
   "company": "Chevron Corporation",
   "latest": {
-    "accession": "0000093410-26-000167",
-    "filed": "2026-08-06",
+    "accession": "0000093410-26-000200",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 6.11,
-        "prior_year": 1.45,
+        "current": 5.06,
+        "prior_year": 1.82,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 12072000000,
-        "prior_year": 2490000000,
+        "current": 9924000000,
+        "prior_year": 3539000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 67199000000,
-        "prior_year": 44375000000,
+        "current": 65237000000,
+        "prior_year": 48169000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000167/cvx-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000200/cvx-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000167/cvx-20260630.htm"
+    },
+    {
+      "accession": "0000093410-26-000200",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 5.06,
+          "prior_year": 1.82,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 9924000000,
+          "prior_year": 3539000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 65237000000,
+          "prior_year": 48169000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000200/cvx-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CVX",
-  "updated": "2026-10-15"
+  "updated": "2026-11-05"
 }

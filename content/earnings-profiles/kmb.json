@@ -2,33 +2,33 @@
   "cik": 55785,
   "company": "Kimberly-Clark",
   "latest": {
-    "accession": "0001628280-26-052348",
-    "filed": "2026-08-04",
+    "accession": "0001628280-26-070754",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.04,
-        "prior_year": 1.53,
+        "current": 5.37,
+        "prior_year": 1.34,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 345000000,
-        "prior_year": 509000000,
+        "current": 1793000000,
+        "prior_year": 446000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4189000000,
-        "prior_year": 4163000000,
+        "current": 4134000000,
+        "prior_year": 4150000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/55785/000162828026052348/kmb-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/55785/000162828026070754/kmb-20260930.htm"
   },
   "periods": [
     {
@@ -88,14 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/55785/000162828026052348/kmb-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-070754",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 5.37,
+          "prior_year": 1.34,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1793000000,
+          "prior_year": 446000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4134000000,
+          "prior_year": 4150000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/55785/000162828026070754/kmb-20260930.htm"
     }
   ],
-  "reporting_update": {
-    "date": "2026-10-15",
-    "source": "https://www.sec.gov/Archives/edgar/data/55785/000110465926115960/tm2627599d1_ex99-1.htm",
-    "text": "The company released preliminary Q3 2026 figures on 15 October. Final third-quarter and nine-month results are scheduled for 5 November 2026; the completed results below have not been replaced by estimates."
-  },
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "KMB",
-  "updated": "2026-10-26"
+  "updated": "2026-11-05"
 }
