@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-04
+Checked: 2026-11-05
 
 - 449 saved profiles checked against structural and issuer rules.
-- 62 existing company articles; 60 mapped to monitored issuers.
-- 119 pending review items; 18 recorded decisions.
+- 66 existing company articles; 64 mapped to monitored issuers.
+- 123 pending review items; 18 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -26,6 +26,36 @@ ID: `202a13db7e6f8053b4b68322`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/shopify-merchant-sales-cash-flow.md`
+
+### AAPL · article_review · medium
+
+ID: `0308286ff9e20f6c516815e6`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/apple-iphone-services-profit-2026.md`, `content/earnings-profiles/aapl.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm · FY FY2026 · period end 2026-09-26 · filed 2026-11-03
+
+### AAPL · article_review · medium
+
+ID: `074cc4d1aba1c3f0974087fb`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/apple-us-iphone-suppliers-manufacturing.md`, `content/earnings-profiles/aapl.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm · FY FY2026 · period end 2026-09-26 · filed 2026-11-03
+
+### ANET · article_review · medium
+
+ID: `5bd7ec60dbd46b7fa55c0f96`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/ai-infrastructure-earnings.md`, `content/earnings-profiles/anet.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1596532/000159653226000254/anet-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-04
 
 ### IBM · article_review · medium
 
@@ -745,33 +775,23 @@ Files: `content/earnings-profiles/well.json`
 
 ### AAPL · article_review · low
 
-ID: `71a7f4d71d730d09ff44dde3`
+ID: `088b0142c253598afb4baa82`
 
 Baseline consistency review of this article against the saved company results and its original sources.
 
-Files: `content/wealth/apple-us-iphone-suppliers-manufacturing.md`, `content/earnings-profiles/aapl.json`
+Files: `content/wealth/apple-manufacturing-purchase-commitments.md`, `content/earnings-profiles/aapl.json`
 
-Saved evidence: https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm · Q3 FY2026 · period end 2026-06-27 · filed 2026-07-31
-
-### AAPL · article_review · low
-
-ID: `751c3222c69ba784d7eb60ae`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/apple-iphone-services-profit-2026.md`, `content/earnings-profiles/aapl.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm · Q3 FY2026 · period end 2026-06-27 · filed 2026-07-31
+Saved evidence: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm · FY FY2026 · period end 2026-09-26 · filed 2026-11-03
 
 ### AAPL · article_review · low
 
-ID: `a8f68a05ad98be912457a547`
+ID: `5197010853c73e31326a7baa`
 
 Baseline consistency review of this article against the saved company results and its original sources.
 
 Files: `content/wealth/apple-earnings-tariff-refunds-services.md`, `content/earnings-profiles/aapl.json`
 
-Saved evidence: https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm · Q3 FY2026 · period end 2026-06-27 · filed 2026-07-31
+Saved evidence: https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm · FY FY2026 · period end 2026-09-26 · filed 2026-11-03
 
 ### AMD · article_review · low
 
@@ -782,16 +802,6 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/ai-infrastructure-earnings.md`, `content/earnings-profiles/amd.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm · Q2 FY2026 · period end 2026-06-27 · filed 2026-08-05
-
-### ANET · article_review · low
-
-ID: `8c812b99a8e0cfc02e3393a6`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/ai-infrastructure-earnings.md`, `content/earnings-profiles/anet.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1596532/000159653226000175/anet-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-08-05
 
 ### APTV · article_review · low
 
@@ -840,6 +850,16 @@ ID: `b36ec9d95333287b314877a8`
 Baseline consistency review of this article against the saved company results and its original sources.
 
 Files: `content/wealth/caterpillar-margin-growth.md`, `content/earnings-profiles/cat.json`
+
+### CVS · article_review · low
+
+ID: `70911eb3514268aae1c0572b`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/cvs-separation-segment-economics.md`, `content/earnings-profiles/cvs.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/64803/000006480326000098/cvs-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-08-05
 
 ### GEV · article_review · low
 
@@ -920,6 +940,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/marriott-fees-growth-buybacks-debt.md`, `content/earnings-profiles/mar.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1048286/000104828626000043/mar-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-02
+
+### MCD · article_review · low
+
+ID: `baf28aef39ba356eb960634e`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/mcdonalds-guest-counts-franchise-margins.md`, `content/earnings-profiles/mcd.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/63908/000006390826000073/mcd-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-08-07
 
 ### META · article_review · low
 
@@ -1050,6 +1080,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/ttwo-gta-6-entertainment-launch-revenue.md`, `content/earnings-profiles/ttwo.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/946581/000162828026054870/ttwo-20260630.htm · Q1 FY2027 · period end 2026-06-30 · filed 2026-08-07
+
+### UBER · article_review · low
+
+ID: `71fd21135f6857c14c2c5443`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/uber-audience-growth-operating-leverage.md`, `content/earnings-profiles/uber.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-08-05
 
 ### UPS · article_review · low
 
