@@ -1,0 +1,48 @@
+{
+  "story_fingerprint": "80095d29b4cb9a87457689c2",
+  "fingerprint_input": "MCD|mcdonalds-guest-counts-franchise-margins|2026-11-05",
+  "company": "McDonald's Corporation", "ticker": "MCD", "date": "2026-11-05",
+  "status": "prepared", "publication_state": "local_gates_passed_pr_pending", "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Franchise margins and international growth protected profit while US guest counts fell; durable growth still requires value initiatives to restore traffic and preserve franchisee economics.",
+  "article_path": "content/wealth/mcdonalds-guest-counts-franchise-margins.md",
+  "canonical_url": "https://compound.ie/wealth/mcdonalds-guest-counts-franchise-margins/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/63908/000006390826000080/exhibit991-9302026.htm",
+    "https://www.sec.gov/Archives/edgar/data/63908/000006390826000080/exhibit992-9302026.htm"
+  ],
+  "source_sha256": ["7763a97beab1333c535c672d6558b32279644017f06c77355e0320af0949d4af","98146cdeb9bf4b291fa4f940cb193e9ddc00a68c9967d0d50c61d29508e91653"],
+  "identity": {
+    "issuer":"McDonald's Corporation", "CIK":63908, "release_accession":"0000063908-26-000080",
+    "filing_form":"8-K with Exhibits 99.1 and 99.2", "fiscal_year":2026, "fiscal_period":"Q3",
+    "period_end":"2026-09-30", "filing_date":"2026-11-04", "currency":"USD", "units":"USD millions except per-share and restaurant data"
+  },
+  "duplicate_checks": [
+    "Checked both editorial inventories and actual wealth content; McDonald's had a maintained stock profile but no guest-count and franchise-margin analysis.",
+    "Checked open PRs, recent merged publication PRs, all company-publication records and live content; no matching McDonald's story or fingerprint was active.",
+    "Checked the 5 November Europe/Dublin scheduled count before drafting; no scheduled company-analysis article had been published.",
+    "The article examines the structural franchise cushion and traffic risk; routine quarterly figures remain on /stocks/mcd/."
+  ],
+  "candidate_review_reference": "See 3ae41b5b0decee371a9e8bfc.json for the ten-company screen; McDonald's was selected independently.",
+  "evidence_table": [
+    {"claim":"US comparable sales fell 0.2%, with negative guest counts largely offset by positive average cheque; global comps rose 1.5%.","source_indexes":[0,1],"location_or_arithmetic":"Release segment highlights and supplemental comparable-sales discussion.","result":"verified; traffic and average cheque kept distinct"},
+    {"claim":"Revenue was USD7.157bn and operating income USD3.595bn, up 1% and 7%.","source_indexes":[0,1],"location_or_arithmetic":"Release consolidated results and supplemental income statement.","result":"verified"},
+    {"claim":"Franchised margins were USD3.800bn and company-operated margins USD392m; franchised share was about 91%.","source_indexes":[1],"location_or_arithmetic":"3,800 / (3,800 + 392) = 90.65%.","result":"verified; calculated share labelled"},
+    {"claim":"US franchised margin rose 2% to USD1.619bn while US company-operated margin fell 16% to USD75m.","source_indexes":[1],"location_or_arithmetic":"Supplemental restaurant-margin tables and inflation discussion.","result":"verified"},
+    {"claim":"2026 capex is expected around USD3.7bn, with roughly 2,500 gross and 2,100 net openings.","source_indexes":[1],"location_or_arithmetic":"Supplemental full-year outlook; target and franchisee funding labelled.","result":"verified as management outlook"},
+    {"claim":"Q3 repurchases were USD519m and the quarterly dividend was raised 4% to USD1.93.","source_indexes":[0,1],"location_or_arithmetic":"Release capital-return discussion and supplemental share tables.","result":"verified"}
+  ],
+  "fact_check_pass": {"method":"Every material number, geography, demand driver, restaurant ownership classification, accounting measure and calculation was reread against the SEC-furnished release and supplemental tables; arithmetic was recomputed independently.","unresolved_material_claims":[]},
+  "image": {
+    "source":"https://commons.wikimedia.org/wiki/File:McDonald%E2%80%99s_Big_Mac_%2811_May_2025%29.png",
+    "original_url":"https://upload.wikimedia.org/wikipedia/commons/1/12/McDonald%E2%80%99s_Big_Mac_%2811_May_2025%29.png",
+    "photographer":"Filippos Fragkogiannis", "license":"CC BY-SA 4.0", "license_url":"https://creativecommons.org/licenses/by-sa/4.0/",
+    "capture_date":"2025-05-11", "subject":"McDonald's Big Mac product",
+    "archive_label":"Archival product photograph; not the current reporting period",
+    "transform":"Cropped and resized for publication; adaptation remains CC BY-SA 4.0", "source_dimensions":[3024,3024], "local_image_sha256":"f3aeecfd031e4bfb4562a116313a05799a0b2277542b5b2ad192f19af26ba151", "verified":true
+  },
+  "gates": {"source_verification":"passed","duplicate_check":"passed","claim_fact_check":"passed","image_provenance":"passed","offline_tests":"passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO","build":"passed production-canonical build: 244 published articles, 678 tags, 25 pages and 57 tools","render":"passed: canonical, one H1, indexable robots metadata, source credit, stock-profile and earnings links inspected; sitemap and finance catalogue contain the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected","exact_head_ci":"pending","deployment":"pending","live_verification":"pending"},
+  "article_sha256": "430e638c62022b663b76ec39203c73fcde4b49ac83748d9145dd0648a9fd36f5",
+  "social_image_sha256": "8b0b6acecbb6d8aece8f225c411b0cd60569ad5e0c697e5047d9388e4f88a44b",
+  "new_articles_published": 0, "scheduled_batch_new_articles_published": 0
+}
