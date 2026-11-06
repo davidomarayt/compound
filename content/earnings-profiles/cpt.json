@@ -2,33 +2,33 @@
   "cik": 906345,
   "company": "Camden Property Trust",
   "latest": {
-    "accession": "0001628280-26-051327",
-    "filed": "2026-07-31",
+    "accession": "0001628280-26-071470",
+    "filed": "2026-11-06",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.18,
-        "prior_year": 0.74,
+        "current": 8.71,
+        "prior_year": 1,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 18790000,
-        "prior_year": 80670000,
+        "current": 900391000,
+        "prior_year": 108934000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3131000,
-        "prior_year": 2633000,
+        "current": 4377000,
+        "prior_year": 2565000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/906345/000162828026051327/cpt-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/906345/000162828026071470/cpt-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/906345/000162828026051327/cpt-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-071470",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 8.71,
+          "prior_year": 1,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 900391000,
+          "prior_year": 108934000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4377000,
+          "prior_year": 2565000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/906345/000162828026071470/cpt-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CPT",
-  "updated": "2026-10-15"
+  "updated": "2026-11-06"
 }

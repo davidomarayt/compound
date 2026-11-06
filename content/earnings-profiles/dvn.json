@@ -2,33 +2,33 @@
   "cik": 1090012,
   "company": "Devon Energy",
   "latest": {
-    "accession": "0001193125-26-334340",
-    "filed": "2026-08-05",
+    "accession": "0001193125-26-451216",
+    "filed": "2026-11-06",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.03,
-        "prior_year": 1.41,
+        "current": 0.88,
+        "prior_year": 1.09,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1911000000,
-        "prior_year": 899000000,
+        "current": 1008000000,
+        "prior_year": 687000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 7003000000,
-        "prior_year": 4048000000,
+        "current": 7774000000,
+        "prior_year": 4251000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1090012/000119312526334340/dvn-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1090012/000119312526451216/dvn-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1090012/000119312526334340/dvn-20260630.htm"
+    },
+    {
+      "accession": "0001193125-26-451216",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.88,
+          "prior_year": 1.09,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1008000000,
+          "prior_year": 687000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7774000000,
+          "prior_year": 4251000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1090012/000119312526451216/dvn-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "DVN",
-  "updated": "2026-10-15"
+  "updated": "2026-11-06"
 }

@@ -2,33 +2,33 @@
   "cik": 898173,
   "company": "O'Reilly Automotive",
   "latest": {
-    "accession": "0000898173-26-000045",
-    "filed": "2026-08-07",
+    "accession": "0000898173-26-000053",
+    "filed": "2026-11-06",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.86,
-        "prior_year": 0.78,
+        "current": 0.97,
+        "prior_year": 0.85,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 715064000,
-        "prior_year": 668595000,
+        "current": 785621000,
+        "prior_year": 725896000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4892013000,
-        "prior_year": 4525058000,
+        "current": 5121290000,
+        "prior_year": 4705696000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000045/orly-20260630x10q.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000045/orly-20260630x10q.htm"
+    },
+    {
+      "accession": "0000898173-26-000053",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.97,
+          "prior_year": 0.85,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 785621000,
+          "prior_year": 725896000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5121290000,
+          "prior_year": 4705696000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "ORLY",
-  "updated": "2026-10-15"
+  "updated": "2026-11-06"
 }

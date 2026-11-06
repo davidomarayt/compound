@@ -2,33 +2,33 @@
   "cik": 842023,
   "company": "Bio-Techne",
   "latest": {
-    "accession": "0001104659-26-056302",
-    "filed": "2026-05-06",
+    "accession": "0001104659-26-123907",
+    "filed": "2026-11-06",
     "form": "10-Q",
-    "fp": "Q3",
-    "fy": 2026,
+    "fp": "Q1",
+    "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 0.32,
-        "prior_year": 0.14,
+        "current": 0.18,
+        "prior_year": 0.24,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 51047000,
-        "prior_year": 22588000,
+        "current": 28293000,
+        "prior_year": 38185000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 311415000,
-        "prior_year": 316181000,
+        "current": 299712000,
+        "prior_year": 286555000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/842023/000110465926056302/tech-20260331x10q.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/842023/000110465926123907/tech-20260930x10q.htm"
   },
   "periods": [
     {
@@ -59,9 +59,38 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/842023/000110465926056302/tech-20260331x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-123907",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.18,
+          "prior_year": 0.24,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 28293000,
+          "prior_year": 38185000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 299712000,
+          "prior_year": 286555000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/842023/000110465926123907/tech-20260930x10q.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TECH",
-  "updated": "2026-10-15"
+  "updated": "2026-11-06"
 }

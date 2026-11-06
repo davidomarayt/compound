@@ -2,33 +2,33 @@
   "cik": 877212,
   "company": "Zebra Technologies",
   "latest": {
-    "accession": "0001628280-26-052550",
-    "filed": "2026-08-04",
+    "accession": "0001628280-26-069444",
+    "filed": "2026-11-03",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 4.85,
-        "prior_year": 2.19,
+        "current": 3.43,
+        "prior_year": 1.97,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 233000000,
-        "prior_year": 112000000,
+        "current": 164000000,
+        "prior_year": 101000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1557000000,
-        "prior_year": 1293000000,
+        "current": 1614000000,
+        "prior_year": 1320000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-04",
-    "source": "https://www.sec.gov/Archives/edgar/data/877212/000162828026052550/zbra-20260704.htm"
+    "period_end": "2026-10-03",
+    "source": "https://www.sec.gov/Archives/edgar/data/877212/000162828026069444/zbra-20261003.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-07-04",
       "source": "https://www.sec.gov/Archives/edgar/data/877212/000162828026052550/zbra-20260704.htm"
+    },
+    {
+      "accession": "0001628280-26-069444",
+      "filed": "2026-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.43,
+          "prior_year": 1.97,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 164000000,
+          "prior_year": 101000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1614000000,
+          "prior_year": 1320000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/877212/000162828026069444/zbra-20261003.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "ZBRA",
-  "updated": "2026-10-15"
+  "updated": "2026-11-06"
 }
