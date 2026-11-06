@@ -70,12 +70,27 @@
       675
     ],
     "social_sha256": "f146ca6fbcef24adeb49fa0c08f7ebd5dea77d894ef30d8d65423365f73bbca9",
-    "verified_at": "2026-11-06 18:29:50 UTC",
-    "visual_review": "Generated 16:9, square and 4:3 crops inspected. Live hero and social image bytes match inspected assets."
+    "verified_at": "2026-11-06 19:11:45 UTC",
+    "visual_review": "Generated 16:9, square and 4:3 crops inspected. Live hero and social image bytes match inspected assets.",
+    "reverified_after_repair": true
   },
   "followup": {
-    "pull_request": "https://github.com/davidomarayt/compound/pull/84",
-    "status": "in_progress",
-    "reason": "Post-deployment mobile browser installation failed because Playwright 1.55 does not support Ubuntu 26.04. Pinning only mobile-audit to supported Ubuntu 24.04."
+    "status": "resolved",
+    "pull_requests": [
+      84,
+      85
+    ],
+    "repair_commit": "28405562cdd1e46b53ab5ef63bcdf3d01f1f4dc0",
+    "validated_head": "4fa0d3bf299f6ec50cc6dd1ce0e2f79f22a19a24",
+    "ci_run": 42274759339,
+    "deployment_run": 42275960353,
+    "checks": {
+      "build": "success",
+      "deploy": "success",
+      "verify-finance-discovery": "success",
+      "verify-live": "success",
+      "mobile-audit": "success"
+    },
+    "resolution": "Pinned mobile audit to Ubuntu 24.04 supported by Playwright 1.55, restored complete workflow after a truncated transfer, and reused the existing verified editorial-image cache in CI after external image HTTP 429 failures. No audit or performance thresholds weakened."
   }
 }
