@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 249 published articles and guides, 64 tools,
+**Included:** 250 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -22,6 +22,7 @@ For the complete register (including 510+ company profiles), open
 - [Alphabet’s European AI opportunity comes with conditions](https://compound.ie/wealth/alphabet-europe-ai-sovereignty/) — **Wealth**
 - [Amazon Earnings: AWS Accelerates, but the Cash Bill Keeps Growing](https://compound.ie/wealth/amazon-aws-profit-investment-gains/) — **Wealth**
 - [Amazon Stock Guide: AWS, Retail, Advertising and Cash Flow](https://compound.ie/wealth/amazon-aws-retail-economics-2026/) — **Wealth**
+- [Amazon’s advertising growth slowed. How much can Prime Day explain?](https://compound.ie/wealth/amazon-advertising-prime-day-timing/) — **Wealth**
 - [Amazon’s €16 billion Germany plan needs a return test](https://compound.ie/wealth/amazon-germany-investment-returns/) — **Wealth**
 - [American Express Earnings: Spending Holds Up, but Read the Profit Adjustments](https://compound.ie/wealth/american-express-earnings-spending-adjusted-profit/) — **Wealth**
 - [Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price](https://compound.ie/wealth/anthropic-loss-ipo-valuation/) — **Wealth**

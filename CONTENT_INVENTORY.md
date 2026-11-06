@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 249
+- Published editorial articles and guides: 250
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 195
+## Wealth articles and guides — 196
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
@@ -57,6 +57,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Alphabet’s European AI opportunity comes with conditions](https://compound.ie/wealth/alphabet-europe-ai-sovereignty/)
 - [Amazon Earnings: AWS Accelerates, but the Cash Bill Keeps Growing](https://compound.ie/wealth/amazon-aws-profit-investment-gains/)
 - [Amazon Stock Guide: AWS, Retail, Advertising and Cash Flow](https://compound.ie/wealth/amazon-aws-retail-economics-2026/)
+- [Amazon’s advertising growth slowed. How much can Prime Day explain?](https://compound.ie/wealth/amazon-advertising-prime-day-timing/)
 - [Amazon’s €16 billion Germany plan needs a return test](https://compound.ie/wealth/amazon-germany-investment-returns/)
 - [American Express Earnings: Spending Holds Up, but Read the Profit Adjustments](https://compound.ie/wealth/american-express-earnings-spending-adjusted-profit/)
 - [Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price](https://compound.ie/wealth/anthropic-loss-ipo-valuation/)
