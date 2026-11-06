@@ -1,0 +1,47 @@
+{
+  "series": "mag8",
+  "date": "2026-11-06",
+  "company": "Amazon.com Inc.",
+  "ticker": "AMZN",
+  "story_fingerprint": "28e1eab96fa6e70a719133d2",
+  "fingerprint_input": "AMZN|2026-Q3|advertising-prime-day-comparison",
+  "publication_kind": "new_analysis",
+  "publication_state": "prepared",
+  "authorization": "Publisher authorised daily Mag 8 analysis.",
+  "article_path": "content/wealth/amazon-advertising-prime-day-timing.md",
+  "canonical_url": "https://compound.ie/wealth/amazon-advertising-prime-day-timing/",
+  "story_thesis": "Amazon\u2019s advertising growth fell to 12% excluding currency effects. A nine-month comparison offers a better starting point than extrapolating a quarter distorted by Prime Day.",
+  "article_sha256": "42fedb972f024c16f1c86bb72941bd09d6acf6f62e3a90abc957d925aea89c51",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm",
+    "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Second-Quarter-Results/default.aspx"
+  ],
+  "identity": {
+    "CIK": 1018724,
+    "form": "10-Q",
+    "accession": "0001018724-26-000040",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30"
+  },
+  "duplicate_checks": [
+    "META LLY AAPL GOOGL already featured; AMZN not yet covered. No Nov 6 Mag 8 ledger or legacy article or branch. Open PRs 43/57 unrelated. Morning MNST AXON LYV and separate TSLA Cybertruck story checked. Index and inventories and actual Amazon coverage checked; existing AWS/cash story has one general Prime Day note but no advertising period reconciliation."
+  ],
+  "evidence_table": [
+    "10-Q revenue disaggregation: Q3 ads 19637/17703m, 9m 56689/47318m. Subtraction yields 1H 37052/29615m and growth 25.1%; quarter 10.9%, 9m 19.8%; increase 9371m. Arithmetic asserted.",
+    "Q2 release: ads excluding FX growth 26%; most large-market Prime Day in Q2 2026 versus entirely Q3 2025.",
+    "Q3 SEC release: ads excluding FX growth 12%; primarily Prime Day and other timing factors; Q4 high-teens forecast separated from actuals and currency basis left unspecified.",
+    "No standalone ad margin inferred; nine-month figures explicitly retain FX and mixed ad formats. Economic interpretation and valuation framework distinguished from reported results."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Amazon_Box_(Picture_1).JPG",
+    "credit": "Matthew Paul Argall via Wikimedia Commons, CC BY-SA 3.0. Archival photograph, 15 February 2012. Resized and cropped.",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "capture_date": "2012-02-15"
+  },
+  "fact_check_pass": {
+    "method": "Separate source reread and arithmetic verification after drafting",
+    "unresolved_material_claims": []
+  }
+}
