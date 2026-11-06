@@ -2,33 +2,33 @@
   "cik": 1375365,
   "company": "Supermicro",
   "latest": {
-    "accession": "0001375365-26-000022",
-    "filed": "2026-08-31",
-    "form": "10-K",
-    "fp": "FY",
-    "fy": 2026,
+    "accession": "0001375365-26-000027",
+    "filed": "2026-11-06",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 3.26,
-        "prior_year": 1.68,
+        "current": 1.75,
+        "prior_year": 0.26,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 2230453000,
-        "prior_year": 1048854000,
+        "current": 1594205000,
+        "prior_year": 168285000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 39063072000,
-        "prior_year": 21972042000,
+        "current": 19945832000,
+        "prior_year": 5017790000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000027/smci-20260930.htm"
   },
   "periods": [
     {
@@ -88,14 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm"
+    },
+    {
+      "accession": "0001375365-26-000027",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.75,
+          "prior_year": 0.26,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1594205000,
+          "prior_year": 168285000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 19945832000,
+          "prior_year": 5017790000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000027/smci-20260930.htm"
     }
   ],
-  "reporting_update": {
-    "date": "2026-10-20",
-    "source": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000025/smcifirstquarterfy2027busi.htm",
-    "text": "The company released a preliminary business update for Q1 FY2027. Final quarterly results have not yet been incorporated; the completed results below remain the latest verified financial statements."
-  },
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "SMCI",
-  "updated": "2026-10-26"
+  "updated": "2026-11-06"
 }

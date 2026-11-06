@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-05",
+  "checked": "2026-11-06",
   "companies_checked": 10,
   "companies": {
     "spcx": {
@@ -54,7 +54,7 @@
       "company": "Novo Nordisk",
       "official_source": "https://www.novonordisk.com/investors/financial-results.html",
       "regulatory": "SEC verified issuer: NOVO NORDISK A S (353278)",
-      "official_source_status": "Checked 58 relevant investor links"
+      "official_source_status": "Checked 59 relevant investor links"
     },
     "mc-pa": {
       "company": "LVMH",
@@ -138,7 +138,8 @@
       "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q1-2026-financial-workbook.xlsx",
       "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q1-2026-investor-presentation.pdf",
       "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q2-2026-Full%20presentation.pdf",
-      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q3-2026-Full-presentation.pdf",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q3-2026-financial-workbook.xlsx",
+      "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q3-2026-full-presentation.pdf",
       "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q4-2025-investor-presentation-4Feb.pdf",
       "https://www.novonordisk.com/investors/agm-divider.html",
       "https://www.novonordisk.com/investors/annual-general-meeting.html",
@@ -204,8 +205,36 @@
       "https://investor.tsmc.com/english/quarterly-results/2026/q3"
     ]
   },
-  "new_review_candidates": 1,
+  "new_review_candidates": 3,
   "pending_review": [
+    {
+      "id": "ir:nvo:https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q3-2026-financial-workbook.xlsx",
+      "company": "Novo Nordisk",
+      "slug": "nvo",
+      "title": "Financial workbook (xlsx)",
+      "url": "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q3-2026-financial-workbook.xlsx",
+      "source": "Official investor page (review before publication)",
+      "discovered": "2026-11-06"
+    },
+    {
+      "id": "ir:nvo:https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q3-2026-full-presentation.pdf",
+      "company": "Novo Nordisk",
+      "slug": "nvo",
+      "title": "Investor presentation (pdf)",
+      "url": "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q3-2026-full-presentation.pdf",
+      "source": "Official investor page (review before publication)",
+      "discovered": "2026-11-06"
+    },
+    {
+      "id": "sec:353278:0001171843-26-007156",
+      "company": "Novo Nordisk",
+      "slug": "nvo",
+      "title": "Novo Nordisk SEC 6-K filed 2026-11-05",
+      "filed": "2026-11-05",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=353278",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
     {
       "id": "sec:1094517:0001193125-26-448368",
       "company": "Toyota Motor Corporation",

@@ -2,33 +2,33 @@
   "cik": 93556,
   "company": "Stanley Black & Decker",
   "latest": {
-    "accession": "0000093556-26-000031",
-    "filed": "2026-07-29",
+    "accession": "0000093556-26-000039",
+    "filed": "2026-11-04",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.33,
-        "prior_year": 0.67,
+        "current": 1.83,
+        "prior_year": 0.34,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 351300000,
-        "prior_year": 101900000,
+        "current": 272100000,
+        "prior_year": 51400000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3960700000,
-        "prior_year": 3945200000,
+        "current": 3731600000,
+        "prior_year": 3756000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-04",
-    "source": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000031/swk-20260704.htm"
+    "period_end": "2026-10-03",
+    "source": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000039/swk-20261003.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-07-04",
       "source": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000031/swk-20260704.htm"
+    },
+    {
+      "accession": "0000093556-26-000039",
+      "filed": "2026-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.83,
+          "prior_year": 0.34,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 272100000,
+          "prior_year": 51400000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3731600000,
+          "prior_year": 3756000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000039/swk-20261003.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "SWK",
-  "updated": "2026-10-15"
+  "updated": "2026-11-06"
 }

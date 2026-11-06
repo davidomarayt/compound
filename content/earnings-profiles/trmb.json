@@ -2,33 +2,33 @@
   "cik": 864749,
   "company": "Trimble Inc.",
   "latest": {
-    "accession": "0000864749-26-000108",
-    "filed": "2026-08-12",
+    "accession": "0000864749-26-000121",
+    "filed": "2026-11-04",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": -2.02,
-        "prior_year": 0.37,
+        "current": 0.25,
+        "prior_year": 0.46,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": -471700000,
-        "prior_year": 89200000,
+        "current": 59100000,
+        "prior_year": 111500000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 972000000,
-        "prior_year": 875700000,
+        "current": 966800000,
+        "prior_year": 901200000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-03",
-    "source": "https://www.sec.gov/Archives/edgar/data/864749/000086474926000108/trmb-20260703.htm"
+    "period_end": "2026-10-02",
+    "source": "https://www.sec.gov/Archives/edgar/data/864749/000086474926000121/trmb-20261002.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-07-03",
       "source": "https://www.sec.gov/Archives/edgar/data/864749/000086474926000108/trmb-20260703.htm"
+    },
+    {
+      "accession": "0000864749-26-000121",
+      "filed": "2026-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.25,
+          "prior_year": 0.46,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 59100000,
+          "prior_year": 111500000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 966800000,
+          "prior_year": 901200000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/864749/000086474926000121/trmb-20261002.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TRMB",
-  "updated": "2026-10-15"
+  "updated": "2026-11-06"
 }
