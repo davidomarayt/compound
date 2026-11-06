@@ -6,11 +6,11 @@
   "story_fingerprint": "28e1eab96fa6e70a719133d2",
   "fingerprint_input": "AMZN|2026-Q3|advertising-prime-day-comparison",
   "publication_kind": "new_analysis",
-  "publication_state": "prepared",
+  "publication_state": "live_verified",
   "authorization": "Publisher authorised daily Mag 8 analysis.",
   "article_path": "content/wealth/amazon-advertising-prime-day-timing.md",
   "canonical_url": "https://compound.ie/wealth/amazon-advertising-prime-day-timing/",
-  "story_thesis": "Amazon\u2019s advertising growth fell to 12% excluding currency effects. A nine-month comparison offers a better starting point than extrapolating a quarter distorted by Prime Day.",
+  "story_thesis": "Amazon’s advertising growth fell to 12% excluding currency effects. A nine-month comparison offers a better starting point than extrapolating a quarter distorted by Prime Day.",
   "article_sha256": "42fedb972f024c16f1c86bb72941bd09d6acf6f62e3a90abc957d925aea89c51",
   "sources": [
     "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
@@ -43,5 +43,39 @@
   "fact_check_pass": {
     "method": "Separate source reread and arithmetic verification after drafting",
     "unresolved_material_claims": []
+  },
+  "status": "published",
+  "new_articles_published": 1,
+  "pull_request": "https://github.com/davidomarayt/compound/pull/83",
+  "validated_head": "92c2e928d65be890beaaba1374dc48226992dd0c",
+  "merge_commit": "fd00fc578f911fedda042fd3cefd24b2aecffc5e",
+  "ci_run": 42267862442,
+  "deployment_run": 42269305034,
+  "deployment_checks": {
+    "build": "success",
+    "deploy": "success",
+    "verify-finance-discovery": "success",
+    "verify-live": "success",
+    "mobile-audit": "failure"
+  },
+  "live_verification": {
+    "canonical": "https://compound.ie/wealth/amazon-advertising-prime-day-timing/",
+    "sitemap": true,
+    "finance_directory": true,
+    "finance_catalogue": true,
+    "hero_matches_source": true,
+    "social_image": "https://compound.ie/static/discover/amazon-advertising-prime-day-timing-16x9.webp",
+    "social_dimensions": [
+      1200,
+      675
+    ],
+    "social_sha256": "f146ca6fbcef24adeb49fa0c08f7ebd5dea77d894ef30d8d65423365f73bbca9",
+    "verified_at": "2026-11-06 18:29:50 UTC",
+    "visual_review": "Generated 16:9, square and 4:3 crops inspected. Live hero and social image bytes match inspected assets."
+  },
+  "followup": {
+    "pull_request": "https://github.com/davidomarayt/compound/pull/84",
+    "status": "in_progress",
+    "reason": "Post-deployment mobile browser installation failed because Playwright 1.55 does not support Ubuntu 26.04. Pinning only mobile-audit to supported Ubuntu 24.04."
   }
 }
