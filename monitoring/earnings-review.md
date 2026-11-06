@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-05
+Checked: 2026-11-06
 
 - 449 saved profiles checked against structural and issuer rules.
-- 66 existing company articles; 64 mapped to monitored issuers.
-- 123 pending review items; 18 recorded decisions.
+- 71 existing company articles; 69 mapped to monitored issuers.
+- 127 pending review items; 18 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -723,16 +723,6 @@ No saved profile for an active issuer. Check ingestion and official filings; nev
 
 Files: `content/earnings-profiles/vmrk.json`
 
-### VRSK · coverage_check · medium
-
-ID: `2ccbcc4e597573d843409b86`
-
-Saved filing is old enough to warrant checking the official source; this does not prove newer results exist.
-
-Files: `content/earnings-profiles/vrsk.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1442145/000143774926013729/vrsk20260331_10q.htm · Q1 FY2026 · period end 2026-03-31 · filed 2026-04-29
-
 ### VTR · coverage_check · medium
 
 ID: `e8f443c404a73802fbd3aead`
@@ -813,6 +803,16 @@ Files: `content/wealth/aptiv-post-spin-segment-quality.md`, `content/earnings-pr
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1521332/000152133226000075/aptv-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-03
 
+### AXON · article_review · low
+
+ID: `480671f259a5f23c3324aba5`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/axon-software-growth-skydio-capital-risk.md`, `content/earnings-profiles/axon.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1069183/000162828026071242/axon-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-06
+
 ### AXP · article_review · low
 
 ID: `fb87998f103d5b22f3bd277d`
@@ -870,6 +870,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/ge-vernova-backlog-cash-flow.md`, `content/earnings-profiles/gev.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1996810/000199681026000163/gev-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-28
+
+### GOOGL · article_review · low
+
+ID: `5b5d9082f207d4dd8475dd99`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/alphabet-waymo-term-loan.md`, `content/earnings-profiles/googl.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-29
 
 ### HON · article_review · low
 
@@ -931,6 +941,16 @@ Files: `content/wealth/lam-research-earnings-growth-expectations.md`, `content/e
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/707549/000070754926000054/lrcx-20260927.htm · Q1 FY2027 · period end 2026-09-27 · filed 2026-10-22
 
+### LYV · article_review · low
+
+ID: `207e9a48a57234b1d23d5df3`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/live-nation-attendance-segment-economics.md`, `content/earnings-profiles/lyv.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1335258/000133525826000035/lyv-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-07-30
+
 ### MAR · article_review · low
 
 ID: `94c07432c919c5b7e9c51f52`
@@ -960,6 +980,14 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/meta-reality-labs-loss-bridge.md`, `content/earnings-profiles/meta.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
+
+### MNST · article_review · low
+
+ID: `bb19915a215680de9d9f6038`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/monster-case-volume-margin-pressure.md`, `content/earnings-profiles/mnst.json`
 
 ### MSFT · article_review · low
 
@@ -1071,6 +1099,16 @@ Files: `content/wealth/att-earnings-fiber-growth-dividend-cash-flow.md`, `conten
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/732717/000073271726000372/t-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-21
 
+### TSLA · article_review · low
+
+ID: `1f3f08a56c742076304e3561`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/tesla-cybertruck-success-failure-numbers.md`, `content/earnings-profiles/tsla.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
+
 ### TTWO · article_review · low
 
 ID: `0a8084d2a396a04227fd5490`
@@ -1083,13 +1121,13 @@ Saved evidence: https://www.sec.gov/Archives/edgar/data/946581/00016282802605487
 
 ### UBER · article_review · low
 
-ID: `71fd21135f6857c14c2c5443`
+ID: `48532b335422ee71e2a645e2`
 
 Baseline consistency review of this article against the saved company results and its original sources.
 
 Files: `content/wealth/uber-audience-growth-operating-leverage.md`, `content/earnings-profiles/uber.json`
 
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1543151/000154315126000032/uber-20260630.htm · Q2 FY2026 · period end 2026-06-30 · filed 2026-08-05
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1543151/000154315126000041/uber-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-04
 
 ### UPS · article_review · low
 
