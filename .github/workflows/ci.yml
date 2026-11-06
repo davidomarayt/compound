@@ -42,6 +42,13 @@ jobs:
         with:
           node-version: "22"
       - run: pip install -e .
+      - name: Restore verified editorial image cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/news-images
+          key: editorial-images-v1-${{ runner.os }}-${{ hashFiles('scripts/news_images.py') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            editorial-images-v1-${{ runner.os }}-${{ hashFiles('scripts/news_images.py') }}-
       - name: Render approved bespoke covers for the performance audit
         run: python scripts/render_editorial_heroes.py
       - name: Attach images to published News stories
