@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-05",
+  "snapshot_date": "2026-11-06",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -361,6 +361,23 @@
           "rooflight",
           "home-improvement",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Axon’s Software Is Accelerating. Is Hardware and Drone Investment Changing the Risk?",
+        "url": "/wealth/axon-software-growth-skydio-capital-risk/",
+        "source": "content/wealth/axon-software-growth-skydio-capital-risk.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "axon-software-growth-skydio-capital-risk",
+        "date": "2026-11-06",
+        "reviewed": "2026-11-06",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "axon"
         ],
         "status": "published"
       },
@@ -2395,6 +2412,23 @@
         "status": "published"
       },
       {
+        "title": "Live Nation’s Crowds Are Growing. Which Segment Carries the Economics?",
+        "url": "/wealth/live-nation-attendance-segment-economics/",
+        "source": "content/wealth/live-nation-attendance-segment-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "live-nation-attendance-segment-economics",
+        "date": "2026-11-06",
+        "reviewed": "2026-11-06",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "lyv"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Live to 100: What a 100-Year Life Would Really Mean in Ireland",
         "url": "/live-to-100/",
         "source": "content/health/live-to-100.md",
@@ -2727,6 +2761,23 @@
           "stock-moh",
           "moh",
           "earnings-analysis"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Monster Sold More Cases but Earned Less per Case. Can Volume Carry the Margin?",
+        "url": "/wealth/monster-case-volume-margin-pressure/",
+        "source": "content/wealth/monster-case-volume-margin-pressure.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "monster-case-volume-margin-pressure",
+        "date": "2026-11-06",
+        "reviewed": "2026-11-06",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "mnst"
         ],
         "status": "published"
       },
