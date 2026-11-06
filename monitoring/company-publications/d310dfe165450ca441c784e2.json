@@ -1,0 +1,116 @@
+{
+  "story_fingerprint": "d310dfe165450ca441c784e2",
+  "fingerprint_input": "LYV|2026-Q3|attendance-growth-vs-segment-economics",
+  "company": "Live Nation Entertainment, Inc.",
+  "ticker": "LYV",
+  "date": "2026-11-06",
+  "status": "validated",
+  "publication_state": "validated_pending_exact_head_ci",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Audience growth expands Live Nation's platform, but Concerts, Ticketing and Sponsorship produce radically different margins, while customer cash, venue investment, debt and legal costs determine owner economics.",
+  "article_path": "content/wealth/live-nation-attendance-segment-economics.md",
+  "canonical_url": "https://compound.ie/wealth/live-nation-attendance-segment-economics/",
+  "sources": [
+    "https://news.livenationentertainment.com/news/live-nation-entertainment-reports-third-quarter-2026-results",
+    "https://investors.livenationentertainment.com/sec-filings/all-sec-filings/content/0001335258-26-000053/0001335258-26-000053.pdf"
+  ],
+  "source_sha256": [
+    "4040eb61574cad686c1d37ba2c9c0ade64c703af125e1ba47dc2554c353e7d15",
+    "c0308f0b1452bc2866c182d169a7d494ab368add63ee90c6b0177096254d706a"
+  ],
+  "identity": {
+    "issuer": "Live Nation Entertainment, Inc.",
+    "CIK": 1335258,
+    "accession": "0001335258-26-000053",
+    "form": "10-Q",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30",
+    "filing_date": "2026-11-05",
+    "currency": "USD",
+    "units": "USD millions except attendance, ticket-volume and per-share data"
+  },
+  "duplicate_checks": [
+    "Checked both editorial inventories, the JSON content inventory and actual wealth content; Live Nation has a maintained stock profile but no dedicated segment-economics analysis.",
+    "Checked recent publication records, open and merged pull requests, and live site content; no matching Live Nation story or fingerprint was active or published.",
+    "Checked the 6 November Europe/Dublin scheduled ledger before drafting; all three daily slots were open and no active publication attempt existed.",
+    "Routine results remain on /stocks/lyv/; this article addresses how audience growth moves through Concerts, Ticketing, Sponsorship and owner cash."
+  ],
+  "candidate_review_reference": "See caa343971a2ce75a4e5c2d2a.json for the ten-company screen; Live Nation was selected independently.",
+  "evidence_table": [
+    {
+      "claim": "Q3 attendance was 61m, revenue USD10.105bn, operating income USD891.953m and AOI USD1.179312bn.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release highlights and 10-Q segment/consolidated tables.",
+      "result": "verified; GAAP operating income and non-GAAP AOI kept distinct"
+    },
+    {
+      "claim": "Concerts AOI margin was about 6.9%, Ticketing 36.3% and Sponsorship 69.3%.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "602.9 / 8,746.446 = 6.893%; 315.7 / 870.273 = 36.276%; 350.2 / 505.667 = 69.255%.",
+      "result": "verified; calculated margins explicitly labelled and AOI caveats retained"
+    },
+    {
+      "claim": "Fee-bearing ticket volume was 98m and GTV USD11.2bn, while international attendance rose 29%.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release operating metrics and segment discussion.",
+      "result": "verified; GTV distinguished from company revenue"
+    },
+    {
+      "claim": "Nine-month operating cash flow was USD2.1004bn, adjusted free cash flow USD1.625bn, deferred event revenue USD3.818bn, and company-defined free cash USD2.3066bn versus cash of USD8.257bn.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "10-Q cash-flow statement, deferred-revenue note and release liquidity reconciliation.",
+      "result": "verified; company-defined measures and client obligations identified"
+    },
+    {
+      "claim": "Nine-month capex was USD722.389m, including USD628.126m revenue-generating and USD94.263m maintenance; full-year capex is expected near USD1.1bn.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "10-Q capex table and release outlook.",
+      "result": "verified; full-year figure labelled as management expectation"
+    },
+    {
+      "claim": "Debt principal was USD9.827bn and the nine-month GAAP result included a USD450m governmental-investigation and litigation reserve excluded from AOI.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release liquidity and 10-Q litigation/segment discussion.",
+      "result": "verified"
+    }
+  ],
+  "fact_check_pass": {
+    "method": "After drafting, every material number, period, segment, cash classification, accounting measure, management explanation and calculation was reread against the official release and Form 10-Q; arithmetic was independently recomputed.",
+    "unresolved_material_claims": []
+  },
+  "image": {
+    "source": "https://unsplash.com/photos/crowd-with-hands-up-at-a-bright-concert-stage-z0R4XB25ozI",
+    "original_url": "https://images.unsplash.com/photo-1778011390422-a4d4bd8936a7?auto=format&fit=max&w=1600&q=85&fm=jpg",
+    "photographer": "Jonathan Ikemura",
+    "license": "Unsplash Licence",
+    "license_url": "https://unsplash.com/license",
+    "publication_date": "2026-05-05",
+    "capture_date": "unconfirmed",
+    "subject": "Concert audience facing a brightly lit stage",
+    "archive_label": "Archival concert photograph; not presented as a specific Live Nation event",
+    "transform": "Unsplash 1600px delivery cropped and resized for publication",
+    "source_dimensions": [1600, 1067],
+    "source_sha256": "fda2a91568066e86426f0fc6ab6114716fcc1cce538bcc2aa531290e75153613",
+    "visual_inspection": "passed: authentic topic-specific concert audience and stage; no event identity claim",
+    "verified": true
+  },
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_check": "passed",
+    "claim_fact_check": "passed",
+    "image_provenance": "passed",
+    "offline_tests": "passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO",
+    "build": "passed production-canonical build: 248 published articles, 681 tags, 25 pages and 57 tools; complete verified editorial image cache prepared",
+    "render": "passed: canonical, one H1, indexable robots metadata, source credit and required stock-profile/earnings links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
+    "exact_head_ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "article_sha256": "0fabc87c978515d050a746258c184ba016ed523700c314bcd3217e8772e98e96",
+  "local_image_sha256": "fda2a91568066e86426f0fc6ab6114716fcc1cce538bcc2aa531290e75153613",
+  "social_image_sha256": "64c56ca7063e7cf746ebeaf8e3a2cc806fe77531561220b73009336d3ee08a54",
+  "social_image_dimensions": [1200, 675],
+  "social_image_visually_inspected": true
+}
