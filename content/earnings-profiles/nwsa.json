@@ -2,33 +2,33 @@
   "cik": 1564708,
   "company": "News Corp (Class A)",
   "latest": {
-    "accession": "0001564708-26-000175",
-    "filed": "2026-08-07",
-    "form": "10-K",
-    "fp": "FY",
-    "fy": 2026,
+    "accession": "0001564708-26-000250",
+    "filed": "2026-11-05",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 1.03,
-        "prior_year": 2.07,
+        "current": 0.29,
+        "prior_year": 0.2,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 573000000,
-        "prior_year": 1180000000,
+        "current": 159000000,
+        "prior_year": 112000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 9028000000,
-        "prior_year": 8452000000,
+        "current": 2281000000,
+        "prior_year": 2144000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1564708/000156470826000175/nws-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1564708/000156470826000250/nws-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1564708/000156470826000175/nws-20260630.htm"
+    },
+    {
+      "accession": "0001564708-26-000250",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.29,
+          "prior_year": 0.2,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 159000000,
+          "prior_year": 112000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2281000000,
+          "prior_year": 2144000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1564708/000156470826000250/nws-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "NWSA",
-  "updated": "2026-10-15"
+  "updated": "2026-11-06"
 }

@@ -2,36 +2,33 @@
   "cik": 36270,
   "company": "M&T Bank",
   "latest": {
-    "accession": "0000036270-26-000057",
-    "filed": "2026-10-16",
-    "form": "8-K",
+    "accession": "0000036270-26-000060",
+    "filed": "2026-11-05",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 5.04,
         "prior_year": 4.82,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 775000000.0,
-        "prior_year": 792000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 775000000,
+        "prior_year": 792000000,
+        "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2536000000.0,
-        "prior_year": 2513000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 2536000000,
+        "prior_year": 2513000000,
+        "tag": "InterestIncomeExpenseNet + NoninterestIncome",
         "unit": "USD"
       }
     },
-    "notes": [
-      "Revenue combines reported net interest income and noninterest income; taxable-equivalent adjustments are excluded."
-    ],
     "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/36270/000003627026000057/ex991release3q26.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/36270/000003627026000060/mtb-20260930.htm"
   },
   "periods": [
     {
@@ -93,39 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/36270/000003627026000050/mtb-20260630.htm"
     },
     {
-      "accession": "0000036270-26-000057",
-      "filed": "2026-10-16",
-      "form": "8-K",
+      "accession": "0000036270-26-000060",
+      "filed": "2026-11-05",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 5.04,
           "prior_year": 4.82,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
-          "current": 775000000.0,
-          "prior_year": 792000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 775000000,
+          "prior_year": 792000000,
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
-          "current": 2536000000.0,
-          "prior_year": 2513000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 2536000000,
+          "prior_year": 2513000000,
+          "tag": "InterestIncomeExpenseNet + NoninterestIncome",
           "unit": "USD"
         }
       },
-      "notes": [
-        "Revenue combines reported net interest income and noninterest income; taxable-equivalent adjustments are excluded."
-      ],
       "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/36270/000003627026000057/ex991release3q26.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/36270/000003627026000060/mtb-20260930.htm"
     }
   ],
-  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "MTB",
-  "updated": "2026-10-26"
+  "updated": "2026-11-06"
 }

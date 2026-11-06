@@ -2,33 +2,33 @@
   "cik": 75677,
   "company": "Packaging Corporation of America",
   "latest": {
-    "accession": "0001193125-26-428056",
-    "filed": "2026-10-22",
-    "form": "8-K",
+    "accession": "0001193125-26-449161",
+    "filed": "2026-11-05",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 2.93,
         "prior_year": 2.51,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 262300000.0,
-        "prior_year": 226900000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 262300000,
+        "prior_year": 226900000,
+        "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2601700000.0,
-        "prior_year": 2313400000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 2601700000,
+        "prior_year": 2313400000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
     "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/75677/000119312526428056/pkg-ex99_1.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/75677/000119312526449161/pkg-20260930.htm"
   },
   "periods": [
     {
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/75677/000119312526339405/pkg-20260630.htm"
     },
     {
-      "accession": "0001193125-26-428056",
-      "filed": "2026-10-22",
-      "form": "8-K",
+      "accession": "0001193125-26-449161",
+      "filed": "2026-11-05",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 2.93,
           "prior_year": 2.51,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
-          "current": 262300000.0,
-          "prior_year": 226900000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 262300000,
+          "prior_year": 226900000,
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
-          "current": 2601700000.0,
-          "prior_year": 2313400000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 2601700000,
+          "prior_year": 2313400000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
           "unit": "USD"
         }
       },
       "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/75677/000119312526428056/pkg-ex99_1.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/75677/000119312526449161/pkg-20260930.htm"
     }
   ],
-  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "PKG",
-  "updated": "2026-10-26"
+  "updated": "2026-11-06"
 }

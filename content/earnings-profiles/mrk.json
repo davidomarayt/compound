@@ -2,33 +2,33 @@
   "cik": 310158,
   "company": "Merck & Co.",
   "latest": {
-    "accession": "0000310158-26-000212",
-    "filed": "2026-08-07",
+    "accession": "0000310158-26-000248",
+    "filed": "2026-11-04",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": -0.54,
-        "prior_year": 1.76,
+        "current": 2.04,
+        "prior_year": 2.32,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": -1335000000,
-        "prior_year": 4427000000,
+        "current": 5065000000,
+        "prior_year": 5785000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 16607000000,
-        "prior_year": 15806000000,
+        "current": 18085000000,
+        "prior_year": 17276000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/310158/000031015826000212/mrk-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/310158/000031015826000248/mrk-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/310158/000031015826000212/mrk-20260630.htm"
+    },
+    {
+      "accession": "0000310158-26-000248",
+      "filed": "2026-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.04,
+          "prior_year": 2.32,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 5065000000,
+          "prior_year": 5785000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 18085000000,
+          "prior_year": 17276000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/310158/000031015826000248/mrk-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "MRK",
-  "updated": "2026-10-15"
+  "updated": "2026-11-06"
 }
