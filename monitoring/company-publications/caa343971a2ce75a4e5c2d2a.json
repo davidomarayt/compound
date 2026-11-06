@@ -1,0 +1,131 @@
+{
+  "story_fingerprint": "caa343971a2ce75a4e5c2d2a",
+  "fingerprint_input": "AXON|2026-Q3-and-Skydio|software-growth-vs-capital-and-hardware-risk",
+  "company": "Axon Enterprise, Inc.",
+  "ticker": "AXON",
+  "date": "2026-11-06",
+  "status": "validated",
+  "publication_state": "validated_pending_exact_head_ci",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Axon's software engine is accelerating, but lower device margins, inventory cash use and the additional Skydio investment make the capital and execution test more demanding.",
+  "article_path": "content/wealth/axon-software-growth-skydio-capital-risk.md",
+  "canonical_url": "https://compound.ie/wealth/axon-software-growth-skydio-capital-risk/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1069183/000162828026071086/axon-20261105xex991.htm",
+    "https://www.sec.gov/Archives/edgar/data/1069183/000162828026071150/axon-20261105xex991xprojec.htm"
+  ],
+  "source_sha256": [
+    "2258ee648cec6613932a96926eb8d21afee180bd97b44a63dd852b8ffbaba0a1",
+    "ebc9c045caa9e0b2c42729c64f9fb5e8e6de239058af8565ca9e8fd336b5c13e"
+  ],
+  "identity": {
+    "issuer": "Axon Enterprise, Inc.",
+    "CIK": 1069183,
+    "results_accession": "0001628280-26-071086",
+    "skydio_accession": "0001628280-26-071150",
+    "form": "Form 8-K exhibits",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30",
+    "filing_date": "2026-11-05",
+    "currency": "USD",
+    "units": "USD millions except percentages, retention and per-share data"
+  },
+  "duplicate_checks": [
+    "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json and actual wealth content; Axon has a maintained stock profile but no dedicated software-versus-hardware-and-Skydio analysis.",
+    "Checked recent company-publication records, open and merged pull requests, and live site content; no matching Axon story or fingerprint was active or published.",
+    "Checked the 6 November Europe/Dublin scheduled ledger before drafting; all three daily slots were open and no active publication attempt existed.",
+    "Routine results remain on /stocks/axon/; this article addresses platform mix, capital intensity and the Skydio commitment."
+  ],
+  "candidate_review": {
+    "budget": 10,
+    "screened": [
+      "Axon Enterprise (selected: software growth versus hardware margin and drone capital risk)",
+      "Live Nation Entertainment (selected: audience growth versus segment economics)",
+      "Monster Beverage (selected: volume growth versus unit monetisation and margin)",
+      "Carlyle Group (not selected: weaker fit with available topic-specific image and article rotation)",
+      "Airbnb (not selected: overlap risk with existing platform-economics coverage)",
+      "Cardinal Health (not selected: healthcare rotation followed CVS coverage on 5 November)",
+      "The Cigna Group (not selected: healthcare rotation followed CVS coverage on 5 November)",
+      "Becton Dickinson (not selected: healthcare rotation and separation complexity)",
+      "Cloudflare (not selected: source depth available but less distinct from existing software themes)",
+      "DraftKings (not selected: regulatory and promotional economics required a broader evidence set)"
+    ],
+    "rotation_check": "Selected public-safety technology, live entertainment and beverages; none appeared in the 2-5 November completed scheduled batches."
+  },
+  "evidence_table": [
+    {
+      "claim": "Q3 revenue was USD909m, with Software & Services USD437.030m and Connected Devices USD471.524m.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Q3 shareholder-letter consolidated and segment tables; 437.030 / 908.554 = 48.10% software mix.",
+      "result": "verified in separate fact-check pass"
+    },
+    {
+      "claim": "Software revenue grew 43%, ARR was USD1.750bn, NRR was 126%, and future contracted bookings were USD15.8bn.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Shareholder-letter operating metrics; ARR, NRR and bookings are kept distinct from recognised revenue.",
+      "result": "verified; company-defined measures and fulfilment caveats retained"
+    },
+    {
+      "claim": "Software gross margin was 71.4% versus 73.8%, device margin 43.0% versus 49.9%, and total margin 56.7% versus 60.1%.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Segment and consolidated gross-margin tables.",
+      "result": "verified; GAAP figures used"
+    },
+    {
+      "claim": "Axon removed about USD130m of expected 2026 federal Dedrone revenue and guided Q4 to USD990m-USD1.01bn and the year to about USD3.61bn-USD3.63bn.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Outlook section; USD30m delayed from Q3 plus USD100m from Q4.",
+      "result": "verified and labelled as management guidance"
+    },
+    {
+      "claim": "The additional Skydio investment is USD1.2bn in cash and Axon shares, adds about 20 percentage points of fully diluted ownership at a USD5.2bn pre-money valuation and would lift the stake to about 37%.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "Skydio transaction announcement; closing conditions and Q4 2026/Q1 2027 timing retained.",
+      "result": "verified as expected transaction terms, not completed investment"
+    },
+    {
+      "claim": "Operating cash flow was USD20m, non-GAAP free cash flow was negative USD19m, and strategic inventory used about USD100m of cash.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Cash-flow table and management discussion.",
+      "result": "verified; non-GAAP measure identified"
+    }
+  ],
+  "fact_check_pass": {
+    "method": "After drafting, every material number, period, segment, accounting measure, management explanation, guidance item and calculation was reread against both SEC-furnished exhibits; arithmetic was independently recomputed.",
+    "unresolved_material_claims": []
+  },
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Axon_Body_Camera_on_Laramie_SRT_Police_Officer.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Axon_Body_Camera_on_Laramie_SRT_Police_Officer.jpg",
+    "photographer": "Tony Webster",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "capture_date": "2023-07-08",
+    "subject": "Axon body camera on a Laramie police officer",
+    "archive_label": "Archival photograph; not a current product or reporting-period image",
+    "transform": "Cropped and resized for publication",
+    "source_dimensions": [2449, 1782],
+    "source_sha256": "01e4053cdcbf250adcc48e434116c4016c4580b812e5e3178e7995cd5a6acdfa",
+    "visual_inspection": "passed: authentic topic-specific body-camera photograph; product and AXON mark are visible",
+    "verified": true
+  },
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_check": "passed",
+    "claim_fact_check": "passed",
+    "image_provenance": "passed",
+    "offline_tests": "passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO",
+    "build": "passed production-canonical build: 248 published articles, 681 tags, 25 pages and 57 tools; complete verified editorial image cache prepared",
+    "render": "passed: canonical, one H1, indexable robots metadata, source credit and required stock-profile/earnings links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
+    "exact_head_ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "article_sha256": "1b84fefcdc25b748e2b5af28f7e94750fb60e8539c7776de08041e5a669efc2e",
+  "local_image_sha256": "01e4053cdcbf250adcc48e434116c4016c4580b812e5e3178e7995cd5a6acdfa",
+  "social_image_sha256": "4831718acacc9d74ef52871f5f5b0492b1e2190411e4292516d9b6fa7c000bdd",
+  "social_image_dimensions": [1200, 675],
+  "social_image_visually_inspected": true
+}

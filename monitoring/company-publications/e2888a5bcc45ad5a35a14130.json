@@ -1,0 +1,117 @@
+{
+  "story_fingerprint": "e2888a5bcc45ad5a35a14130",
+  "fingerprint_input": "MNST|2026-Q3|case-volume-vs-price-and-margin",
+  "company": "Monster Beverage Corporation",
+  "ticker": "MNST",
+  "date": "2026-11-06",
+  "status": "validated",
+  "publication_state": "validated_pending_exact_head_ci",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Monster's case volume is growing faster than revenue, while lower sales per equivalent case, international mix, freight, input and marketing costs are compressing margins.",
+  "article_path": "content/wealth/monster-case-volume-margin-pressure.md",
+  "canonical_url": "https://compound.ie/wealth/monster-case-volume-margin-pressure/",
+  "sources": [
+    "https://www.globenewswire.com/news-release/2026/11/05/3397113/10193/en/monster-beverage-reports-2026-third-quarter-financial-results.html",
+    "https://www.sec.gov/Archives/edgar/data/865752/000110465926123387/0001104659-26-123387-index.htm",
+    "https://www.sec.gov/Archives/edgar/data/865752/000110465926092193/mnst-20260630x10q.htm"
+  ],
+  "source_sha256": [
+    "c1329ce88837e651d17fe3c26bdcda496d9ba262f51b7ac00defaf268f3c09dc",
+    "b1bc3c54b14601932a6f9ac3330592fb063b168b3fbf8be8b5a2da8a0814a730",
+    "a8dc5b42b18c9594b7709c42eed778ea484b19b18cb4023353d367db1ff8e923"
+  ],
+  "identity": {
+    "issuer": "Monster Beverage Corporation",
+    "CIK": 865752,
+    "results_accession": "0001104659-26-123387",
+    "form": "8-K with results release; Q2 Form 10-Q for independent business and accounting context",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30",
+    "filing_date": "2026-11-05",
+    "currency": "USD",
+    "units": "USD thousands or millions as stated; case volume in 192-ounce equivalents"
+  },
+  "duplicate_checks": [
+    "Checked both editorial inventories, the JSON content inventory and actual wealth content; Monster has a maintained stock profile but no dedicated case-volume-versus-unit-economics analysis.",
+    "Checked recent publication records, open and merged pull requests, and live site content; no matching Monster story or fingerprint was active or published.",
+    "Checked the 6 November Europe/Dublin scheduled ledger before drafting; all three daily slots were open and no active publication attempt existed.",
+    "Routine results remain on /stocks/mnst/; this article addresses unit monetisation, international mix and margin conversion."
+  ],
+  "candidate_review_reference": "See caa343971a2ce75a4e5c2d2a.json for the ten-company screen; Monster was selected independently.",
+  "evidence_table": [
+    {
+      "claim": "Q3 sales were USD2.563053bn, up 16.7%, while energy-drink case volume rose from 258.387m to 304.902m 192-ounce equivalents, about 18.0%.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results release tables; 304.902 / 258.387 - 1 = 18.002%.",
+      "result": "verified; case-equivalent definition retained"
+    },
+    {
+      "claim": "Average net sales per case fell to USD8.30 from USD8.35, about 0.6%, excluding Alcohol Brands and Other.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release case-volume discussion; 8.30 / 8.35 - 1 = -0.599%.",
+      "result": "verified; scope caveat retained"
+    },
+    {
+      "claim": "Foreign sales were USD1.199984bn, up 28.1%, and about 47% of total; FX contributed USD8.116m and FX-neutral growth was 16.3%.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release geographic discussion; 1,199.984 / 2,563.053 = 46.82%.",
+      "result": "verified; reported and currency-adjusted growth kept distinct"
+    },
+    {
+      "claim": "Gross profit was USD1.400735bn, gross margin 54.7% versus 55.7%, operating income USD718.7m, and calculated operating margin about 28.0% versus 30.7%.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results release statements; 718.7 / 2,563.053 = 28.04%; prior 675.5 / 2,195.538 = 30.77% using reported rounded figures.",
+      "result": "verified; GAAP measures used"
+    },
+    {
+      "claim": "Distribution expense rose to USD116.3m, selling expense to USD260.1m, and total operating expense to USD682.018m, which included USD19.9m impairment and USD14.7m digital-transformation costs.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results release expense tables and management discussion.",
+      "result": "verified; management cost explanations attributed"
+    },
+    {
+      "claim": "Cash plus short-term investments totalled USD3.704252bn; Q3 repurchases were about USD100m, while diluted weighted-average shares rose year over year.",
+      "source_indexes": [0, 1, 2],
+      "location_or_arithmetic": "2,148.401 + 1,555.851 = 3,704.252; release repurchase and share tables; Q2 10-Q used for programme context.",
+      "result": "verified; balance-sheet capacity not treated as operating proof"
+    }
+  ],
+  "fact_check_pass": {
+    "method": "After drafting, every material number, period, unit, segment, GAAP/non-GAAP distinction, management explanation and calculation was reread against the official company-released results, SEC 8-K index and recent Form 10-Q; arithmetic was independently recomputed.",
+    "unresolved_material_claims": []
+  },
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Monster_Energy_drinks_01.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Monster_Energy_drinks_01.jpg",
+    "photographer": "Oto Zapletal",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "capture_date": "2023-05-08",
+    "subject": "Multiple Monster Energy drink cans",
+    "archive_label": "Archival product photograph; not a current range, package or reporting-period claim",
+    "transform": "Cropped and resized for publication; adaptation remains CC BY-SA 4.0",
+    "source_dimensions": [4000, 3000],
+    "source_sha256": "7859b24392bc74e190ec85c8e3982a22049a514e5b290868a385248c53a05208",
+    "visual_inspection": "passed: authentic topic-specific product photograph showing Monster cans",
+    "verified": true
+  },
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_check": "passed",
+    "claim_fact_check": "passed",
+    "image_provenance": "passed",
+    "offline_tests": "passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO",
+    "build": "passed production-canonical build: 248 published articles, 681 tags, 25 pages and 57 tools; complete verified editorial image cache prepared",
+    "render": "passed: canonical, one H1, indexable robots metadata, source credit and required stock-profile/earnings links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
+    "exact_head_ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "article_sha256": "5d0aecd6e2cc727d6a926b72db464377c024b281034703e58168f68a4c1a865a",
+  "local_image_sha256": "7859b24392bc74e190ec85c8e3982a22049a514e5b290868a385248c53a05208",
+  "social_image_sha256": "2ca57e2d5c0aba26d7a1d598bc79f99be3d95324491ffc3de4d38651846488ca",
+  "social_image_dimensions": [1200, 675],
+  "social_image_visually_inspected": true
+}
