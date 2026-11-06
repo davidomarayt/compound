@@ -2,33 +2,33 @@
   "cik": 1324424,
   "company": "Expedia Group",
   "latest": {
-    "accession": "0001324424-26-000053",
-    "filed": "2026-08-06",
+    "accession": "0001324424-26-000062",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 7.16,
-        "prior_year": 2.48,
+        "current": 8.42,
+        "prior_year": 7.33,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 878000000,
-        "prior_year": 330000000,
+        "current": 1030000000,
+        "prior_year": 959000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4315000000,
-        "prior_year": 3786000000,
+        "current": 4938000000,
+        "prior_year": 4412000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000053/expe-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000062/expe-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000053/expe-20260630.htm"
+    },
+    {
+      "accession": "0001324424-26-000062",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 8.42,
+          "prior_year": 7.33,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1030000000,
+          "prior_year": 959000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4938000000,
+          "prior_year": 4412000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000062/expe-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "EXPE",
-  "updated": "2026-10-15"
+  "updated": "2026-11-06"
 }

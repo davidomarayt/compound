@@ -2,33 +2,33 @@
   "cik": 1091667,
   "company": "Charter Communications",
   "latest": {
-    "accession": "0001091667-26-000052",
-    "filed": "2026-07-24",
+    "accession": "0001091667-26-000073",
+    "filed": "2026-11-06",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 10.66,
-        "prior_year": 9.18,
+        "current": -20.5,
+        "prior_year": 8.34,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1292000000,
-        "prior_year": 1301000000,
+        "current": -2397000000,
+        "prior_year": 1137000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 13526000000,
-        "prior_year": 13766000000,
+        "current": 14922000000,
+        "prior_year": 13672000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1091667/000109166726000052/chtr-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1091667/000109166726000073/chtr-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1091667/000109166726000052/chtr-20260630.htm"
+    },
+    {
+      "accession": "0001091667-26-000073",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -20.5,
+          "prior_year": 8.34,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -2397000000,
+          "prior_year": 1137000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 14922000000,
+          "prior_year": 13672000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1091667/000109166726000073/chtr-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CHTR",
-  "updated": "2026-10-15"
+  "updated": "2026-11-06"
 }

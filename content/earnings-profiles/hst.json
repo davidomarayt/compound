@@ -2,33 +2,33 @@
   "cik": 1070750,
   "company": "Host Hotels & Resorts",
   "latest": {
-    "accession": "0001070750-26-000126",
-    "filed": "2026-08-07",
+    "accession": "0001070750-26-000156",
+    "filed": "2026-11-06",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.35,
-        "prior_year": 0.32,
+        "current": 0.1,
+        "prior_year": 0.23,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 237000000,
-        "prior_year": 221000000,
+        "current": 70000000,
+        "prior_year": 161000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1640000000,
-        "prior_year": 1586000000,
+        "current": 1347000000,
+        "prior_year": 1331000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000126/hst-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000156/hst-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000126/hst-20260630.htm"
+    },
+    {
+      "accession": "0001070750-26-000156",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.1,
+          "prior_year": 0.23,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 70000000,
+          "prior_year": 161000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1347000000,
+          "prior_year": 1331000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000156/hst-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "HST",
-  "updated": "2026-10-15"
+  "updated": "2026-11-06"
 }

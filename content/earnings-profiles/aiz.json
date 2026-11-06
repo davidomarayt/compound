@@ -2,33 +2,33 @@
   "cik": 1267238,
   "company": "Assurant",
   "latest": {
-    "accession": "0001267238-26-000041",
-    "filed": "2026-08-06",
+    "accession": "0001267238-26-000046",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 5.95,
-        "prior_year": 4.56,
+        "current": 5.49,
+        "prior_year": 5.17,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 298600000,
-        "prior_year": 235300000,
+        "current": 275200000,
+        "prior_year": 265600000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3454200000,
-        "prior_year": 3158400000,
+        "current": 3529500000,
+        "prior_year": 3231500000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1267238/000126723826000041/aiz-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1267238/000126723826000046/aiz-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1267238/000126723826000041/aiz-20260630.htm"
+    },
+    {
+      "accession": "0001267238-26-000046",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 5.49,
+          "prior_year": 5.17,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 275200000,
+          "prior_year": 265600000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3529500000,
+          "prior_year": 3231500000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1267238/000126723826000046/aiz-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "AIZ",
-  "updated": "2026-10-15"
+  "updated": "2026-11-06"
 }
