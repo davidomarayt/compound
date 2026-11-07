@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 257 published articles and guides, 64 tools,
+**Included:** 258 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -45,6 +45,7 @@ For the complete register (including 510+ company profiles), open
 - [Burnout symptoms: how to recognise burnout and what actually helps](https://compound.ie/life/burnout-symptoms-recovery-ireland/) — **Life**
 - [Buying a Home in Ireland 101: A Complete Step-by-Step Guide](https://compound.ie/wealth/buying-a-home-in-ireland/) — **Wealth**
 - [Buying a Home in Ireland: Budget, Deposit and Upfront Costs](https://compound.ie/wealth/buying-home-budget-deposit-ireland/) — **Wealth**
+- [Can Xbox grow again while Microsoft sells fewer consoles?](https://compound.ie/wealth/microsoft-xbox-content-recovery/) — **Wealth**
 - [Capital Gains Tax in Ireland: How Much CGT Do You Pay?](https://compound.ie/wealth/capital-gains-tax-ireland/) — **Wealth**
 - [Caterpillar Earnings: Why the Margin Matters More Than the Sales Headline](https://compound.ie/wealth/caterpillar-margin-growth/) — **Wealth**
 - [CEG vs SRESS in Ireland: which solar export route fits your project?](https://compound.ie/wealth/ceg-vs-sress-ireland/) — **Wealth**

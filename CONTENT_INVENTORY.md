@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 257
+- Published editorial articles and guides: 258
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 203
+## Wealth articles and guides — 204
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
@@ -78,6 +78,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Budget 2027: Up to €2bn Reportedly Set Aside for a New Public-Sector Pay Deal](https://compound.ie/news/budget-2027-public-sector-pay-deal-2bn/)
 - [Buying a Home in Ireland 101: A Complete Step-by-Step Guide](https://compound.ie/wealth/buying-a-home-in-ireland/)
 - [Buying a Home in Ireland: Budget, Deposit and Upfront Costs](https://compound.ie/wealth/buying-home-budget-deposit-ireland/)
+- [Can Xbox grow again while Microsoft sells fewer consoles?](https://compound.ie/wealth/microsoft-xbox-content-recovery/)
 - [Capital Gains Tax in Ireland: How Much CGT Do You Pay?](https://compound.ie/wealth/capital-gains-tax-ireland/)
 - [Caterpillar Earnings: Why the Margin Matters More Than the Sales Headline](https://compound.ie/wealth/caterpillar-margin-growth/)
 - [CEG vs SRESS in Ireland: which solar export route fits your project?](https://compound.ie/wealth/ceg-vs-sress-ireland/)
