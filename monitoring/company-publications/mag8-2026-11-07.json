@@ -1,0 +1,53 @@
+{
+  "series": "mag8",
+  "date": "2026-11-07",
+  "company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "story_fingerprint": "09f7e77671a9c2a812f529d5",
+  "fingerprint_input": "MSFT|FY2027-Q1|xbox-content-hardware-holiday-recovery",
+  "publication_kind": "new_analysis",
+  "publication_state": "prepared",
+  "new_articles_published": 0,
+  "authorization": "Publisher authorised daily Mag 8 analysis.",
+  "article_path": "content/wealth/microsoft-xbox-content-recovery.md",
+  "canonical_url": "https://compound.ie/wealth/microsoft-xbox-content-recovery/",
+  "story_thesis": "Microsoft expects holiday growth in Xbox games and services even as hardware revenue falls. Game Pass and third-party spending will help show whether a rebound can last.",
+  "article_sha256": "5f751e7915af42659b1e0d6e1dae03a1fa2dd778cae0fda1ac466e3906f0eaaf",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
+    "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
+    "https://www.microsoft.com/en-us/investor/events/fy-2027/earnings-fy-2027-q1"
+  ],
+  "identity": {
+    "CIK": 789019,
+    "form": "10-Q",
+    "accession": "0001193125-26-436133",
+    "fiscal_year": 2027,
+    "fiscal_period": "Q1",
+    "period_end": "2026-09-30"
+  },
+  "duplicate_checks": [
+    "Prior series META LLY AAPL GOOGL AMZN. MSFT unfeatured. No 7 November series ledger, Mag 7 article or matching remote branch. Checked actual current content, topic index, inventories, finance catalogue, morning CI/COP/ZBRA, Irish coverage, and open PRs 43/57/88. Exit offer story mentions content decline once. Other MSFT stories concern AI spending, capacity or Azure."
+  ],
+  "evidence_table": [
+    "10-Q and press release corroborate comparable Xbox revenue of 5379m and 5508m, company revenue of 92279m and 77673m. Recast prior-year data. Difference 129m. Share calculations 5.8% and 7.1%. Flat-Xbox sensitivity 129/77673*100=0.166 percentage points.",
+    "10-Q attributes hardware decline of 14% to lower console volumes. Revenue growth is distinct from unit growth. Content/services down 2% reported and 1% constant currency. Third party and Game Pass down, first party up. No dollars allocated by rounded rates.",
+    "Call separates Q1 actuals from Q2 outlook of mid to high single digit content/services growth and hardware revenue decline. Slower growth expected in Q3/Q4. Segment profit includes other product groups. Interpretive tests conditional."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Xbox-console.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/4/43/Xbox-console.jpg",
+    "credit": "Evan-Amos via Wikimedia Commons, public domain. Original Xbox photographed on 20 August 2014.",
+    "capture_date": "2014-08-20",
+    "license": "Public-domain dedication by photographer",
+    "changes": "Resized and white-padded for generated crops.",
+    "sha256": "2cf841a7103b3d3a0e7d3d0a9d76a6204b6b34d679253f2e678b5635f3429498"
+  },
+  "fact_check_pass": {
+    "method": "Separate source and arithmetic comparison. Inspected generated 16:9, 4:3 and square crops.",
+    "unresolved_material_claims": []
+  },
+  "validation": [
+    "27 image/discovery tests passed"
+  ]
+}
