@@ -1,0 +1,141 @@
+{
+  "story_fingerprint": "67607c816998b12215ddbd27",
+  "fingerprint_input": "ZBRA|2026-Q3|automation-growth-vs-memory-margin",
+  "company": "Zebra Technologies Corporation",
+  "ticker": "ZBRA",
+  "date": "2026-11-07",
+  "status": "publication_candidate",
+  "publication_state": "preflight",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Zebra has strong organic automation demand, but memory costs and mix reduced gross margin; durable value requires margin recovery and cash conversion after working capital and buybacks.",
+  "article_path": "content/wealth/zebra-automation-growth-memory-margin.md",
+  "canonical_url": "https://compound.ie/wealth/zebra-automation-growth-memory-margin/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/877212/000162828026069148/zbraex99120261003.htm",
+    "https://www.sec.gov/Archives/edgar/data/877212/000162828026069444/zbra-20261003.htm"
+  ],
+  "source_sha256": [
+    "4aed4aef75266cd1e4364fc8dd4a05b87d084974c8c2d4c766d01ed017346fd4",
+    "c745bd1e0c5e17983a7561c6e746e74f555596c649065da0368f4035c419995f"
+  ],
+  "identity": {
+    "issuer": "Zebra Technologies Corporation",
+    "CIK": 877212,
+    "release_accession": "0001628280-26-069148",
+    "form_10q_accession": "0001628280-26-069444",
+    "form": "Form 8-K exhibit and Form 10-Q",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-10-03",
+    "filing_date": "2026-11-03",
+    "currency": "USD",
+    "units": "USD millions except percentages and per-share data"
+  },
+  "duplicate_checks": [
+    "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json and actual wealth content; Zebra has a maintained stock profile but no automation-growth-versus-memory-margin analysis.",
+    "Checked recent company-publication records, live site content, and open and merged pull requests; no matching Zebra story or fingerprint was active or published.",
+    "Checked the 7 November Europe/Dublin publication ledger before drafting; all three scheduled slots were open and no active company-publication attempt existed.",
+    "Routine quarterly results remain on /stocks/zbra/; this article addresses organic demand, unit economics and cash conversion."
+  ],
+  "candidate_review": {
+    "budget": 10,
+    "screened": [
+      "The Cigna Group (selected: pharmacy growth versus margin and modernization)",
+      "ConocoPhillips (selected: cash returns versus price-driven cash flow)",
+      "Zebra Technologies (selected: automation growth versus component-cost margin pressure)",
+      "Advanced Micro Devices (not selected: latest margin and cash question already has canonical AI-infrastructure coverage)",
+      "Apollo Global Management (not selected: reporting complexity offered a less clean distinct question)",
+      "Allstate (not selected: sector rotation would overlap the selected health-services financial story)",
+      "Blackstone (not selected: overlap with alternative-asset economics and less distinct near-term question)",
+      "Arthur J. Gallagher (not selected: acquisition-led story was less differentiated)",
+      "Akamai Technologies (not selected: sector rotation favoured industrial automation)",
+      "O'Reilly Automotive (not selected: fewer timely verified developments than the selected three)"
+    ],
+    "rotation_check": "Selected health services, upstream energy and industrial automation; none of the companies appeared in the previous completed daily batch."
+  },
+  "evidence_table": [
+    {
+      "claim": "Q3 sales were USD1.614bn, up 22.3%, with 11.3% organic growth; GAAP net income was USD164m versus USD101m.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Results-release consolidated table and sales bridge.",
+      "result": "verified; organic measure identified"
+    },
+    {
+      "claim": "Connected Frontline sales were USD949m versus USD705m with 15% organic growth; Asset Intelligence & Tracking sales were USD665m versus USD615m with 7% organic growth.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Results-release segment tables.",
+      "result": "verified"
+    },
+    {
+      "claim": "GAAP gross margin fell 230 basis points to 45.7%; adjusted gross margin fell 220 basis points to 46.0%, with memory costs and mix cited by management.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Results-release margin discussion and reconciliation.",
+      "result": "verified; management explanation labelled"
+    },
+    {
+      "claim": "Adjusted EBITDA was USD349m versus USD285m with margin unchanged at 21.6%.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Results-release non-GAAP table.",
+      "result": "verified; non-GAAP measure identified"
+    },
+    {
+      "claim": "Nine-month operating cash was USD711m, capex USD50m, company free cash USD661m and repurchases USD643m.",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results release and Form 10-Q cash-flow/equity disclosures.",
+      "result": "verified"
+    },
+    {
+      "claim": "Receivables used USD229m, inventory used USD125m and payables provided USD194m; inventory was USD851m, receivables USD1.025bn, cash USD182m and debt USD2.578bn.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "Form 10-Q balance sheet and cash-flow working-capital disclosures.",
+      "result": "verified"
+    },
+    {
+      "claim": "Management guided Q4 sales growth to 10%-14%, adjusted EBITDA margin to about 22%, adjusted EPS to USD5.00-USD5.40 and full-year free cash flow to at least USD1bn.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Results-release outlook section.",
+      "result": "verified and labelled as management guidance"
+    }
+  ],
+  "fact_check_pass": {
+    "method": "After drafting, every material number, fiscal date, segment, accounting measure, management explanation, guidance item and calculation was reread against the release and filing; arithmetic was independently recomputed.",
+    "unresolved_material_claims": []
+  },
+  "image": {
+    "source": "https://unsplash.com/photos/barcode-scanner-device-in-charging-dock-on-table-UnAB9U3D4rA",
+    "original_url": "https://images.unsplash.com/photo-1758543102397-e14b5dfdd8bd?auto=format&fit=max&w=2000&q=90&fm=jpg",
+    "photographer": "Bluestonex",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "published_date": "2025-09-22",
+    "subject": "Zebra-branded enterprise mobile computer in a charging dock",
+    "archive_label": "Archival product photograph; not a current reporting-period image",
+    "transform": "Cropped and resized for publication",
+    "source_dimensions": [2000, 3000],
+    "source_sha256": "dd1f65563952b0f33f9ec75815d535f3977e95b810e498e9a5b6e6a39d1febe0",
+    "visual_inspection": "passed: authentic topic-specific Zebra product photograph with visible Zebra branding",
+    "verified": true
+  },
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_check": "passed",
+    "claim_fact_check": "passed",
+    "image_provenance": "passed",
+    "offline_tests": "passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO; 18 finance discovery tests rerun after the build",
+    "build": "passed production-canonical build: 253 published articles, 685 tags, 25 pages and 57 tools; complete verified editorial image cache prepared",
+    "render": "passed: canonical, one H1, indexable robots metadata, source credit and required stock-profile/earnings links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
+    "exact_head_ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "publication": {
+    "scheduled_daily_slot": 3,
+    "scheduled_daily_count": 3
+  },
+  "article_sha256": "a1875e0866366563c7884e043473596789634409004ecbbbedf45ed1bd92f7f4",
+  "local_image_sha256": "dd1f65563952b0f33f9ec75815d535f3977e95b810e498e9a5b6e6a39d1febe0",
+  "social_image_sha256": "396b50ff6cd7f432c580db696b96ab7997997150ef73bc7e05cf35bbaaa04ae0",
+  "social_image_dimensions": [1200, 675],
+  "social_image_visually_inspected": true
+}

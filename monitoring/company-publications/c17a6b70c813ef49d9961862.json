@@ -1,0 +1,135 @@
+{
+  "story_fingerprint": "c17a6b70c813ef49d9961862",
+  "fingerprint_input": "COP|2026-Q3|cash-flow-shareholder-returns-vs-price",
+  "company": "ConocoPhillips",
+  "ticker": "COP",
+  "date": "2026-11-07",
+  "status": "publication_candidate",
+  "publication_state": "preflight",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "ConocoPhillips is returning about 45% of operating cash flow, but higher realised prices rather than production growth drove the quarter, making through-cycle discipline the key test.",
+  "article_path": "content/wealth/conocophillips-cash-flow-shareholder-returns.md",
+  "canonical_url": "https://compound.ie/wealth/conocophillips-cash-flow-shareholder-returns/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000043/cop-20261105x8kexx991.htm",
+    "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000045/cop-20260930.htm"
+  ],
+  "source_sha256": [
+    "415ca942264bc0ac00384912572aba0e8a922724dee4cd16d509a50c4a6cde92",
+    "68904b0e548e23bed579a1e70c7afb294dde0c8164eb976e920b87fdc853b25c"
+  ],
+  "identity": {
+    "issuer": "ConocoPhillips",
+    "CIK": 1163165,
+    "release_accession": "0001163165-26-000043",
+    "form_10q_accession": "0001163165-26-000045",
+    "form": "Form 8-K exhibit and Form 10-Q",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30",
+    "filing_date": "2026-11-05",
+    "currency": "USD",
+    "units": "USD billions except per-share, realised-price and production data"
+  },
+  "duplicate_checks": [
+    "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json and actual wealth content; ConocoPhillips has a maintained stock profile but no price-versus-cash-return analysis.",
+    "Checked recent company-publication records, live site content, and open and merged pull requests; no matching ConocoPhillips story or fingerprint was active or published.",
+    "Checked the 7 November Europe/Dublin publication ledger before drafting; all three scheduled slots were open and no active company-publication attempt existed.",
+    "Routine quarterly results remain on /stocks/cop/; this article addresses the durability of capital returns across the commodity cycle."
+  ],
+  "candidate_review": {
+    "budget": 10,
+    "screened": [
+      "The Cigna Group (selected: pharmacy growth versus margin and modernization)",
+      "ConocoPhillips (selected: cash returns versus price-driven cash flow)",
+      "Zebra Technologies (selected: automation growth versus component-cost margin pressure)",
+      "Advanced Micro Devices (not selected: latest margin and cash question already has canonical AI-infrastructure coverage)",
+      "Apollo Global Management (not selected: reporting complexity offered a less clean distinct question)",
+      "Allstate (not selected: sector rotation would overlap the selected health-services financial story)",
+      "Blackstone (not selected: overlap with alternative-asset economics and less distinct near-term question)",
+      "Arthur J. Gallagher (not selected: acquisition-led story was less differentiated)",
+      "Akamai Technologies (not selected: sector rotation favoured industrial automation)",
+      "O'Reilly Automotive (not selected: fewer timely verified developments than the selected three)"
+    ],
+    "rotation_check": "Selected health services, upstream energy and industrial automation; none of the companies appeared in the previous completed daily batch."
+  },
+  "evidence_table": [
+    {
+      "claim": "Q3 net income was USD4.0bn, adjusted earnings USD3.9bn, and the realised price was USD61.40/BOE, up 32% from USD46.44.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Results-release earnings and operational highlights.",
+      "result": "verified; adjusted earnings identified"
+    },
+    {
+      "claim": "Production was 2.302m BOE/day, down 97,000 reported and 40,000 or 2% after acquisitions and dispositions.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Results-release production discussion.",
+      "result": "verified"
+    },
+    {
+      "claim": "Q3 operating cash was USD7.2bn, capex/investments USD3.1bn and distributions USD3.4bn; 3.4/7.2=47.2%.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Results-release cash and distributions section; percentage independently computed.",
+      "result": "verified"
+    },
+    {
+      "claim": "Nine-month operating cash was USD18.924bn, capex/investments USD9.105bn, buybacks USD5.407bn and dividends USD3.064bn; distributions were 44.8% of operating cash and simple cash less capex was USD9.819bn.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "Form 10-Q cash-flow and equity tables; calculations independently recomputed and not labelled company free cash flow.",
+      "result": "verified"
+    },
+    {
+      "claim": "Total debt was USD23.262bn, debt/capital 26%, total liquidity about USD15.4bn and disposition proceeds USD1.756bn.",
+      "source_indexes": [1],
+      "location_or_arithmetic": "Form 10-Q liquidity, debt and cash-flow disclosures.",
+      "result": "verified; disposition cash kept distinct from operating cash"
+    },
+    {
+      "claim": "The company guided Q4 production to 2.32m-2.36m BOE/day, retained full-year capex guidance and said Willow module fabrication exceeded 75% with first oil targeted for early 2029.",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Results-release outlook and project updates.",
+      "result": "verified and labelled as management guidance/plan"
+    }
+  ],
+  "fact_check_pass": {
+    "method": "After drafting, every material number, period, production unit, accounting measure, management explanation, guidance item and calculation was reread against the release and filing; arithmetic was independently recomputed.",
+    "unresolved_material_claims": []
+  },
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:ConocoPhillips_Viking_BA_offshore_installation.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/ConocoPhillips_Viking_BA_offshore_installation.jpg",
+    "photographer": "Alnitak3",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "capture_date": "2009-03-10",
+    "subject": "ConocoPhillips Viking BA offshore installation in the North Sea",
+    "archive_label": "Archival company installation photograph; not a current production image",
+    "transform": "Cropped and resized for publication",
+    "source_dimensions": [1704, 2272],
+    "source_sha256": "236a817ad19f301af36dd35365e719b861599088a3dd368ed331fc2fd03dc611",
+    "visual_inspection": "passed: authentic, identified ConocoPhillips offshore installation",
+    "verified": true
+  },
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_check": "passed",
+    "claim_fact_check": "passed",
+    "image_provenance": "passed",
+    "offline_tests": "passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO; 18 finance discovery tests rerun after the build",
+    "build": "passed production-canonical build: 253 published articles, 685 tags, 25 pages and 57 tools; complete verified editorial image cache prepared",
+    "render": "passed: canonical, one H1, indexable robots metadata, source credit and required stock-profile/earnings links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
+    "exact_head_ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "publication": {
+    "scheduled_daily_slot": 2,
+    "scheduled_daily_count": 3
+  },
+  "article_sha256": "64330ccfccb1471056f9d9f71fb541cf4288abe7355fceb6609cc8e5a9121072",
+  "local_image_sha256": "236a817ad19f301af36dd35365e719b861599088a3dd368ed331fc2fd03dc611",
+  "social_image_sha256": "24a81e8bf6f97320ab449ad11326bef553c5f657e508266c3322794bdd3f3893",
+  "social_image_dimensions": [1200, 675],
+  "social_image_visually_inspected": true
+}
