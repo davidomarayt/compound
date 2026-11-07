@@ -815,6 +815,8 @@ A tax-neutral route for moving pre-existing investments from an ordinary account
 
 Not automatically. A pension can provide valuable tax relief and employer contributions but normally restricts access until retirement. A PIA is designed to be more flexible but does not have the same announced upfront tax relief.
 
+[Compare the same €500 of take-home pay in a PIA and a pension](/pia/vs-pension/), including employer matching, retirement taxes and access before retirement.
+
 ### Is a PIA the same as an Irish ISA?
 
 No. “Irish ISA” is an informal comparison. The Irish PIA has its own contribution limit and an annual 1% charge above a €50,000 threshold.
