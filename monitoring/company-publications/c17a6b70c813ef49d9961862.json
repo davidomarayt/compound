@@ -4,8 +4,8 @@
   "company": "ConocoPhillips",
   "ticker": "COP",
   "date": "2026-11-07",
-  "status": "publication_candidate",
-  "publication_state": "preflight",
+  "status": "merged_not_live",
+  "publication_state": "deployment_failed",
   "publication_kind": "new_analysis",
   "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
   "story_thesis": "ConocoPhillips is returning about 45% of operating cash flow, but higher realised prices rather than production growth drove the quarter, making through-cycle discipline the key test.",
@@ -57,37 +57,49 @@
   "evidence_table": [
     {
       "claim": "Q3 net income was USD4.0bn, adjusted earnings USD3.9bn, and the realised price was USD61.40/BOE, up 32% from USD46.44.",
-      "source_indexes": [0],
+      "source_indexes": [
+        0
+      ],
       "location_or_arithmetic": "Results-release earnings and operational highlights.",
       "result": "verified; adjusted earnings identified"
     },
     {
       "claim": "Production was 2.302m BOE/day, down 97,000 reported and 40,000 or 2% after acquisitions and dispositions.",
-      "source_indexes": [0],
+      "source_indexes": [
+        0
+      ],
       "location_or_arithmetic": "Results-release production discussion.",
       "result": "verified"
     },
     {
       "claim": "Q3 operating cash was USD7.2bn, capex/investments USD3.1bn and distributions USD3.4bn; 3.4/7.2=47.2%.",
-      "source_indexes": [0],
+      "source_indexes": [
+        0
+      ],
       "location_or_arithmetic": "Results-release cash and distributions section; percentage independently computed.",
       "result": "verified"
     },
     {
       "claim": "Nine-month operating cash was USD18.924bn, capex/investments USD9.105bn, buybacks USD5.407bn and dividends USD3.064bn; distributions were 44.8% of operating cash and simple cash less capex was USD9.819bn.",
-      "source_indexes": [1],
+      "source_indexes": [
+        1
+      ],
       "location_or_arithmetic": "Form 10-Q cash-flow and equity tables; calculations independently recomputed and not labelled company free cash flow.",
       "result": "verified"
     },
     {
       "claim": "Total debt was USD23.262bn, debt/capital 26%, total liquidity about USD15.4bn and disposition proceeds USD1.756bn.",
-      "source_indexes": [1],
+      "source_indexes": [
+        1
+      ],
       "location_or_arithmetic": "Form 10-Q liquidity, debt and cash-flow disclosures.",
       "result": "verified; disposition cash kept distinct from operating cash"
     },
     {
       "claim": "The company guided Q4 production to 2.32m-2.36m BOE/day, retained full-year capex guidance and said Willow module fabrication exceeded 75% with first oil targeted for early 2029.",
-      "source_indexes": [0],
+      "source_indexes": [
+        0
+      ],
       "location_or_arithmetic": "Results-release outlook and project updates.",
       "result": "verified and labelled as management guidance/plan"
     }
@@ -106,7 +118,10 @@
     "subject": "ConocoPhillips Viking BA offshore installation in the North Sea",
     "archive_label": "Archival company installation photograph; not a current production image",
     "transform": "Cropped and resized for publication",
-    "source_dimensions": [1704, 2272],
+    "source_dimensions": [
+      1704,
+      2272
+    ],
     "source_sha256": "236a817ad19f301af36dd35365e719b861599088a3dd368ed331fc2fd03dc611",
     "visual_inspection": "passed: authentic, identified ConocoPhillips offshore installation",
     "verified": true
@@ -119,17 +134,26 @@
     "offline_tests": "passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO; 18 finance discovery tests rerun after the build",
     "build": "passed production-canonical build: 253 published articles, 685 tags, 25 pages and 57 tools; complete verified editorial image cache prepared",
     "render": "passed: canonical, one H1, indexable robots metadata, source credit and required stock-profile/earnings links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
-    "exact_head_ci": "pending",
-    "deployment": "pending",
-    "live_verification": "pending"
+    "exact_head_ci": "passed on PR head 460c680fe762d1b27fdda4ebaf1e6d7321caf203 in run 42357453261, including tests, production build and Lighthouse",
+    "deployment": "failed in site run 42358259312 after the GitHub Pages deploy action remained in syncing_files until timeout; one bounded failed-job retry ended with the same timeout",
+    "live_verification": "blocked: canonical URL returned HTTP 404 after both deployment attempts on 2026-11-07"
   },
   "publication": {
     "scheduled_daily_slot": 2,
-    "scheduled_daily_count": 3
+    "scheduled_daily_count": 3,
+    "pull_request": "https://github.com/davidomarayt/compound/pull/86",
+    "validated_head_sha": "460c680fe762d1b27fdda4ebaf1e6d7321caf203",
+    "merge_commit": "fd456fffa19d33e0a58d36b13796ae4ca70fb6a3",
+    "site_run": "https://github.com/davidomarayt/compound/actions/runs/42358259312",
+    "live_url": null,
+    "publication_note": "The article is merged but is not a completed publication. Resume this same attempt after deployment recovery; do not create a duplicate or consume an additional daily slot."
   },
   "article_sha256": "64330ccfccb1471056f9d9f71fb541cf4288abe7355fceb6609cc8e5a9121072",
   "local_image_sha256": "236a817ad19f301af36dd35365e719b861599088a3dd368ed331fc2fd03dc611",
   "social_image_sha256": "24a81e8bf6f97320ab449ad11326bef553c5f657e508266c3322794bdd3f3893",
-  "social_image_dimensions": [1200, 675],
+  "social_image_dimensions": [
+    1200,
+    675
+  ],
   "social_image_visually_inspected": true
 }

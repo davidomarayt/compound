@@ -4,8 +4,8 @@
   "company": "The Cigna Group",
   "ticker": "CI",
   "date": "2026-11-07",
-  "status": "publication_candidate",
-  "publication_state": "preflight",
+  "status": "merged_not_live",
+  "publication_state": "deployment_failed",
   "publication_kind": "new_analysis",
   "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
   "story_thesis": "Cigna's pharmacy-benefit revenue is growing while adjusted profit falls; the USD3bn modernization programme must repair segment economics and cash conversion to create owner value.",
@@ -57,37 +57,49 @@
   "evidence_table": [
     {
       "claim": "Q3 total revenue was USD73.683bn, up 6%, while adjusted income from operations was USD2.104bn versus USD2.096bn.",
-      "source_indexes": [0],
+      "source_indexes": [
+        0
+      ],
       "location_or_arithmetic": "Results-release consolidated highlights and adjusted results table.",
       "result": "verified in separate fact-check pass"
     },
     {
       "claim": "Evernorth adjusted revenue was USD63.774bn, adjusted pretax income USD1.829bn versus USD1.903bn, and margin 2.9% versus 3.2%.",
-      "source_indexes": [0],
+      "source_indexes": [
+        0
+      ],
       "location_or_arithmetic": "Evernorth segment table.",
       "result": "verified; adjusted measures identified"
     },
     {
       "claim": "Pharmacy Benefit Services revenue rose 9% to USD37.276bn while adjusted pretax income fell 22% to USD765m; simple margins were 765/37,276=2.05% and 975/34,091=2.86%.",
-      "source_indexes": [0],
+      "source_indexes": [
+        0
+      ],
       "location_or_arithmetic": "Evernorth component table; arithmetic independently recomputed.",
       "result": "verified; management explanation for renewals and investment labelled"
     },
     {
       "claim": "Specialty and Care Services adjusted income rose 15% and Cigna Healthcare adjusted income rose 15% with a 10.2% margin and 85.0% medical-care ratio.",
-      "source_indexes": [0],
+      "source_indexes": [
+        0
+      ],
       "location_or_arithmetic": "Evernorth component and Cigna Healthcare segment tables.",
       "result": "verified"
     },
     {
       "claim": "Accelerate to One targets USD3bn of savings/productivity, 10%-14% adjusted EPS CAGR and about USD50bn of operating cash through 2030; 2026 adjusted EPS guidance rose to at least USD30.60.",
-      "source_indexes": [0],
+      "source_indexes": [
+        0
+      ],
       "location_or_arithmetic": "Results-release strategy and outlook sections.",
       "result": "verified and labelled as management targets/guidance"
     },
     {
       "claim": "Nine-month operating cash flow was USD3.281bn, capex USD0.8bn, repurchases about USD0.5bn, and debt-to-capital 41.8%.",
-      "source_indexes": [1],
+      "source_indexes": [
+        1
+      ],
       "location_or_arithmetic": "Form 10-Q cash-flow, liquidity and capitalisation disclosures.",
       "result": "verified"
     }
@@ -106,7 +118,10 @@
     "subject": "Prescription bottle and capsules",
     "archive_label": "Archival illustrative photograph; not a Cigna facility or current event",
     "transform": "Cropped and resized for publication",
-    "source_dimensions": [2000, 3000],
+    "source_dimensions": [
+      2000,
+      3000
+    ],
     "source_sha256": "5d4986c4ddf3fd448c76073d067157d0aea4bef4c6c98d504e29387dcab5cc40",
     "visual_inspection": "passed: authentic, topic-specific prescription-medicine photograph with no patient implication",
     "verified": true
@@ -119,17 +134,26 @@
     "offline_tests": "passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO; 18 finance discovery tests rerun after the build",
     "build": "passed production-canonical build: 253 published articles, 685 tags, 25 pages and 57 tools; complete verified editorial image cache prepared",
     "render": "passed: canonical, one H1, indexable robots metadata, source credit and required stock-profile/earnings links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
-    "exact_head_ci": "pending",
-    "deployment": "pending",
-    "live_verification": "pending"
+    "exact_head_ci": "passed on PR head 460c680fe762d1b27fdda4ebaf1e6d7321caf203 in run 42357453261, including tests, production build and Lighthouse",
+    "deployment": "failed in site run 42358259312 after the GitHub Pages deploy action remained in syncing_files until timeout; one bounded failed-job retry ended with the same timeout",
+    "live_verification": "blocked: canonical URL returned HTTP 404 after both deployment attempts on 2026-11-07"
   },
   "publication": {
     "scheduled_daily_slot": 1,
-    "scheduled_daily_count": 3
+    "scheduled_daily_count": 3,
+    "pull_request": "https://github.com/davidomarayt/compound/pull/86",
+    "validated_head_sha": "460c680fe762d1b27fdda4ebaf1e6d7321caf203",
+    "merge_commit": "fd456fffa19d33e0a58d36b13796ae4ca70fb6a3",
+    "site_run": "https://github.com/davidomarayt/compound/actions/runs/42358259312",
+    "live_url": null,
+    "publication_note": "The article is merged but is not a completed publication. Resume this same attempt after deployment recovery; do not create a duplicate or consume an additional daily slot."
   },
   "article_sha256": "ea1edce40a25114d80f83c2ba9dd75bee60dc70529013b289f2a90bef9783227",
   "local_image_sha256": "5d4986c4ddf3fd448c76073d067157d0aea4bef4c6c98d504e29387dcab5cc40",
   "social_image_sha256": "410a9ac8f009f6d11e8ff51af950b868cab3137691bb8ab1f4f2dbe509247b16",
-  "social_image_dimensions": [1200, 675],
+  "social_image_dimensions": [
+    1200,
+    675
+  ],
   "social_image_visually_inspected": true
 }
