@@ -2,33 +2,33 @@
   "cik": 1510295,
   "company": "Marathon Petroleum",
   "latest": {
-    "accession": "0001510295-26-000061",
-    "filed": "2026-08-04",
+    "accession": "0001510295-26-000071",
+    "filed": "2026-11-03",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 17.73,
-        "prior_year": 3.96,
+        "current": 26.59,
+        "prior_year": 4.51,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 5138000000,
-        "prior_year": 1216000000,
+        "current": 7447000000,
+        "prior_year": 1370000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 51994000000,
-        "prior_year": 33799000000,
+        "current": 56032000000,
+        "prior_year": 34809000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1510295/000151029526000061/mpc-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1510295/000151029526000071/mpc-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1510295/000151029526000061/mpc-20260630.htm"
+    },
+    {
+      "accession": "0001510295-26-000071",
+      "filed": "2026-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 26.59,
+          "prior_year": 4.51,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 7447000000,
+          "prior_year": 1370000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 56032000000,
+          "prior_year": 34809000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1510295/000151029526000071/mpc-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "MPC",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

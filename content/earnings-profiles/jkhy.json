@@ -2,33 +2,33 @@
   "cik": 779152,
   "company": "Jack Henry & Associates",
   "latest": {
-    "accession": "0000779152-26-000067",
-    "filed": "2026-08-28",
-    "form": "10-K",
-    "fp": "FY",
-    "fy": 2026,
+    "accession": "0000779152-26-000098",
+    "filed": "2026-11-06",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 6.98,
-        "prior_year": 6.24,
+        "current": 2.28,
+        "prior_year": 1.97,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 502776000,
-        "prior_year": 455748000,
+        "current": 160412000,
+        "prior_year": 143986000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2544339000,
-        "prior_year": 2375288000,
+        "current": 701547000,
+        "prior_year": 644738000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/779152/000077915226000067/jkhy-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/779152/000077915226000098/jkhy-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/779152/000077915226000067/jkhy-20260630.htm"
+    },
+    {
+      "accession": "0000779152-26-000098",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.28,
+          "prior_year": 1.97,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 160412000,
+          "prior_year": 143986000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 701547000,
+          "prior_year": 644738000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/779152/000077915226000098/jkhy-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "JKHY",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

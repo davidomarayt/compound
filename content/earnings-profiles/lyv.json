@@ -2,33 +2,33 @@
   "cik": 1335258,
   "company": "Live Nation Entertainment",
   "latest": {
-    "accession": "0001335258-26-000035",
-    "filed": "2026-07-30",
+    "accession": "0001335258-26-000053",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.05,
-        "prior_year": 0.41,
+        "current": 1.69,
+        "prior_year": 0.73,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 294446000,
-        "prior_year": 243411000,
+        "current": 447835000,
+        "prior_year": 431458000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 7666858000,
-        "prior_year": 7006641000,
+        "current": 10105035000,
+        "prior_year": 8499143000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1335258/000133525826000035/lyv-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1335258/000133525826000053/lyv-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1335258/000133525826000035/lyv-20260630.htm"
+    },
+    {
+      "accession": "0001335258-26-000053",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.69,
+          "prior_year": 0.73,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 447835000,
+          "prior_year": 431458000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 10105035000,
+          "prior_year": 8499143000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1335258/000133525826000053/lyv-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "LYV",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-06",
+  "checked": "2026-11-07",
   "companies_checked": 10,
   "companies": {
     "spcx": {
@@ -12,7 +12,7 @@
       "company": "Taiwan Semiconductor Manufacturing Company (TSMC)",
       "official_source": "https://investor.tsmc.com/english/financial-calendar",
       "regulatory": "SEC verified issuer: TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD (1046179)",
-      "official_source_status": "Unavailable; retry next run: HTTP Error 403: Forbidden"
+      "official_source_status": "Checked 52 relevant investor links"
     },
     "asml": {
       "company": "ASML Holding",
@@ -205,7 +205,7 @@
       "https://investor.tsmc.com/english/quarterly-results/2026/q3"
     ]
   },
-  "new_review_candidates": 3,
+  "new_review_candidates": 0,
   "pending_review": [
     {
       "id": "ir:nvo:https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q3-2026-financial-workbook.xlsx",

@@ -2,33 +2,33 @@
   "cik": 1336920,
   "company": "Leidos",
   "latest": {
-    "accession": "0001336920-26-000246",
-    "filed": "2026-08-04",
+    "accession": "0001336920-26-000293",
+    "filed": "2026-11-03",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.81,
-        "prior_year": 3.01,
+        "current": 3.28,
+        "prior_year": 2.82,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 354000000,
-        "prior_year": 391000000,
+        "current": 410000000,
+        "prior_year": 367000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4548000000,
-        "prior_year": 4233000000,
+        "current": 4617000000,
+        "prior_year": 4449000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-03",
-    "source": "https://www.sec.gov/Archives/edgar/data/1336920/000133692026000246/ldos-20260703.htm"
+    "period_end": "2026-10-02",
+    "source": "https://www.sec.gov/Archives/edgar/data/1336920/000133692026000293/ldos-20261002.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-07-03",
       "source": "https://www.sec.gov/Archives/edgar/data/1336920/000133692026000246/ldos-20260703.htm"
+    },
+    {
+      "accession": "0001336920-26-000293",
+      "filed": "2026-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.28,
+          "prior_year": 2.82,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 410000000,
+          "prior_year": 367000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4617000000,
+          "prior_year": 4449000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/1336920/000133692026000293/ldos-20261002.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "LDOS",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }
