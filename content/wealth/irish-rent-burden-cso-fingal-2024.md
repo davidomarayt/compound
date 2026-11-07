@@ -8,8 +8,8 @@ draft: false
 publication_status: published
 date: '2026-11-07'
 reviewed: '2026-11-07'
-summary: New CSO figures put Fingal’s rent burden at 28.5% and Leitrim’s at 18.4%. See how the figures were calculated and how to compare your own rent with take-home pay.
-meta_description: New CSO figures put Fingal’s rent burden at 28.5% and Leitrim’s at 18.4%. See how the figures were calculated and how to compare your own rent with take-home pay.
+summary: CSO figures put Fingal’s rent burden at 28.5% and Leitrim’s at 18.4%. See how the figures were calculated and compare your rent with your take-home pay.
+meta_description: CSO figures put Fingal’s rent burden at 28.5% and Leitrim’s at 18.4%. See how the figures were calculated and compare your rent with your take-home pay.
 tags:
 - news
 - ireland
@@ -52,4 +52,4 @@ Use your own share of the rent and your income after tax and social insurance, o
 
 For a house share, use the amount you actually transfer each month. For a joint household budget, use the full rent and both incomes. If you pay Irish income tax, check [who can claim the Rent Tax Credit](/wealth/rent-tax-credit-ireland-who-can-claim/) and use the [rent credit calculator](/rent-tax-credit-calculator/) separately when planning your annual budget.
 
-*Archive photograph: [Eric Jones, Smithfield Square, 25 July 2012, via Geograph / Wikimedia Commons, CC BY-SA 2.0](https://commons.wikimedia.org/wiki/File:Apartments_and_shops_to_let_in_Smithfield_Square_-_geograph.org.uk_-_3149702.jpg). [Licence](https://creativecommons.org/licenses/by-sa/2.0/).*
+*Archive photograph: [Eric Jones, Smithfield Square, 25 July 2012, via Geograph / Wikimedia Commons, CC BY-SA 2.0](https://commons.wikimedia.org/wiki/File:Apartments_and_shops_to_let_in_Smithfield_Square_-_geograph.org.uk_-_3149702.jpg). [Licence](https://creativecommons.org/licenses/by-sa/2.0/). Social previews crop this photograph to fit.*

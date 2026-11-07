@@ -53,4 +53,4 @@ Farm profit also depends on quantities, the mix of enterprises and other income.
 
 For a household drawing money from the business, start with the next milk receipts and the dates the farm’s input bills fall due. Then separate the amount available for household essentials. The [emergency fund calculator](/emergency-fund-calculator/) can help size that personal cash reserve using monthly spending.
 
-*Archive photograph: [Tim Sheerman-Chase, Milking parlour, Carrigcleena, 28 June 2024, via Wikimedia Commons, CC BY 2.0](https://commons.wikimedia.org/wiki/File:Milking_parlour%2C_Carrigcleena_3.jpg). [Licence](https://creativecommons.org/licenses/by/2.0/).*
+*Archive photograph: [Tim Sheerman-Chase, Milking parlour, Carrigcleena, 28 June 2024, via Wikimedia Commons, CC BY 2.0](https://commons.wikimedia.org/wiki/File:Milking_parlour%2C_Carrigcleena_3.jpg). [Licence](https://creativecommons.org/licenses/by/2.0/). Social previews crop this photograph to fit.*

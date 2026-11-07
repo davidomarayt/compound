@@ -64,4 +64,4 @@ Pay-related benefit requires full unemployment and a qualifying PRSI record, inc
 
 If you are receiving a redundancy lump sum, keep it separate from weekly income when planning how long your savings will last. Compound’s [Irish redundancy guide](/wealth/redundancy-ireland-statutory-ex-gratia-tax/) covers termination payments. The [emergency fund calculator](/emergency-fund-calculator/) can help you estimate the cash needed for essential bills.
 
-*Archive photograph: [Ridiculopathy, The Quality Phree by Vivienne Roche, Tallaght, 19 October 2026, via Wikimedia Commons, CC0 1.0](https://commons.wikimedia.org/wiki/File:Oct2026._The_Quality_Phree_by_Vivienne_Roche%2C_Tallaght%2C_Dublin_01.jpg). [Licence](https://creativecommons.org/publicdomain/zero/1.0/).*
+*Archive photograph: [Ridiculopathy, The Quality Phree by Vivienne Roche, Tallaght, 19 October 2026, via Wikimedia Commons, CC0 1.0](https://commons.wikimedia.org/wiki/File:Oct2026._The_Quality_Phree_by_Vivienne_Roche%2C_Tallaght%2C_Dublin_01.jpg). [Licence](https://creativecommons.org/publicdomain/zero/1.0/). Social previews crop this photograph to fit.*
