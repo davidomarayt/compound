@@ -10,6 +10,10 @@
     "https://www.revenue.ie/en/jobs-and-pensions/end-of-year-process/need-to-submit-a-tax-return.aspx",
     "https://www.revenue.ie/en/jobs-and-pensions/end-of-year-process/paye-income-tax-return.aspx"
   ],
-  "publication_commit": null,
-  "deployment_status": "pending"
+  "publication_commit": "38d74363f6da412d852fa0aae95e27fa5addb602",
+  "deployment_status": "deployed_verified_live",
+  "verified_at_utc": "2026-11-07T12:12:50Z",
+  "pull_request": "https://github.com/davidomarayt/compound/pull/89",
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/42371017284",
+  "verification": "Production canonical, title, description, credited cover and Open Graph/Twitter image fetched and checked."
 }
