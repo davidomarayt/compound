@@ -7,7 +7,7 @@
 {% if page.slug == 'life' %}<meta name="description" content="Compound Life brings together practical Irish guides and useful tools across relationships, family, work, travel, home, leisure and community.">
 {% elif page.slug == 'insurance' %}<meta name="description" content="Free insurance tools and independent guides for Ireland: life insurance, mortgage protection, income protection and health insurance, with practical calculators.">
 
-{% elif is_solar %}<meta name="description" content="{{ page.meta_description|e }}">
+{% elif is_solar or page.url.startswith('/pia/') %}<meta name="description" content="{{ page.meta_description|e }}">
 {% elif is_insurance_calculator %}<meta name="description" content="{{ insurance_tools[page.slug] }}">
 {% else %}{{ super() }}{% endif %}
 {% endblock %}
