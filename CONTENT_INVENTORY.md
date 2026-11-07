@@ -12,7 +12,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
-- Information and policy pages: 20
+- Information and policy pages: 23
 - Main hubs: 11
 - Public-company directory profiles: 510
 - Private-company directory profiles: 13
@@ -456,14 +456,17 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - Weight Loss Calculator Ireland | source: content/tool-guides/weight-loss-calculator.md
 - Whole-House Retrofit Planner Ireland | source: content/tool-guides/whole-house-retrofit-planner.md
 
-## Information and policy pages — 20
+## Information and policy pages — 23
 
 - [About](https://compound.ie/about/)
+- [Can I hold this share, bond or ETF in an Irish PIA?](https://compound.ie/pia-investment-eligibility/)
 - [Contact](https://compound.ie/contact/)
 - [Cookie policy](https://compound.ie/cookies/)
 - [Disclaimer](https://compound.ie/disclaimer/)
 - [Editorial and Corrections Policy](https://compound.ie/editorial-policy/)
 - [Find Solar Panel Installers in Ireland: SEAI Register & Checklist](https://compound.ie/solar-installers/)
+- [How Ireland’s proposed PIA tax uses daily account values](https://compound.ie/pia-daily-valuation/)
+- [How to compare two Irish PIA fee quotes](https://compound.ie/pia-compare-fee-quotes/)
 - [Installer partnerships are paused](https://compound.ie/solar-for-installers/)
 - [Installer Portal | Compound Solar](https://compound.ie/solar-installer-portal/)
 - [Insurance Tools & Guides Ireland](https://compound.ie/insurance/)

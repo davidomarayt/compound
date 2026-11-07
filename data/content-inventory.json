@@ -3408,7 +3408,7 @@
         "category": "Wealth",
         "slug": "personal-investment-account-ireland",
         "date": "2026-09-25",
-        "reviewed": "2026-10-13",
+        "reviewed": "2026-11-07",
         "tags": [
           "personal-investment-account",
           "pia-account",
@@ -6153,6 +6153,12 @@
         "kind": "Information / policy page"
       },
       {
+        "title": "Can I hold this share, bond or ETF in an Irish PIA?",
+        "url": "/pia-investment-eligibility/",
+        "source": "content/pages/pia-investment-eligibility.md",
+        "kind": "Information / policy page"
+      },
+      {
         "title": "Contact",
         "url": "/contact/",
         "source": "content/pages/contact.md",
@@ -6180,6 +6186,18 @@
         "title": "Find Solar Panel Installers in Ireland: SEAI Register & Checklist",
         "url": "/solar-installers/",
         "source": "content/pages/solar-installers.md",
+        "kind": "Information / policy page"
+      },
+      {
+        "title": "How Ireland’s proposed PIA tax uses daily account values",
+        "url": "/pia-daily-valuation/",
+        "source": "content/pages/pia-daily-valuation.md",
+        "kind": "Information / policy page"
+      },
+      {
+        "title": "How to compare two Irish PIA fee quotes",
+        "url": "/pia-compare-fee-quotes/",
+        "source": "content/pages/pia-compare-fee-quotes.md",
         "kind": "Information / policy page"
       },
       {
