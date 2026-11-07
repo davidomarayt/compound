@@ -12,8 +12,9 @@
         "https://www.cso.ie/en/releasesandpublications/fp/fp-trsi/therentalsectorinireland2024/tenants/",
         "https://www.cso.ie/en/releasesandpublications/fp/fp-trsi/therentalsectorinireland2024/keyfindings/"
       ],
-      "deployment_status": "pending",
-      "publication_commit": null
+      "deployment_status": "deployed_verified_live",
+      "publication_commit": "5fa46fe9701a1d61aab8628d0dd4634b417727b1",
+      "verified_at_utc": "2026-11-07T09:54:22Z"
     },
     {
       "topic": "Pay-related jobseeker claims rose by 5,077. What would the payment cover?",
@@ -25,8 +26,9 @@
         "https://www.irishstatutebook.ie/eli/2024/si/635/made/en/",
         "https://services.mywelfare.ie/en/topics/out-of-work-payments/apply-for-jobseekers-payment/"
       ],
-      "deployment_status": "pending",
-      "publication_commit": null
+      "deployment_status": "deployed_verified_live",
+      "publication_commit": "5fa46fe9701a1d61aab8628d0dd4634b417727b1",
+      "verified_at_utc": "2026-11-07T09:54:22Z"
     },
     {
       "topic": "Irish milk prices set to fall 18.1% as fertiliser costs rise, CSO estimates",
@@ -36,8 +38,13 @@
         "https://www.cso.ie/en/releasesandpublications/ep/p-apipe/agriculturalpriceindices-preliminaryestimates2026/",
         "https://www.cso.ie/en/releasesandpublications/ep/p-apipe/agriculturalpriceindices-preliminaryestimates2026/backgroundnotes/"
       ],
-      "deployment_status": "pending",
-      "publication_commit": null
+      "deployment_status": "deployed_verified_live",
+      "publication_commit": "5fa46fe9701a1d61aab8628d0dd4634b417727b1",
+      "verified_at_utc": "2026-11-07T09:54:22Z"
     }
-  ]
+  ],
+  "pull_request": "https://github.com/davidomarayt/compound/pull/87",
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/42361272622",
+  "confirmed_publications": 3,
+  "verification": "GitHub Pages deployment job succeeded. Fetched the three production canonicals, original covers and Open Graph/Twitter crops and verified the page metadata and photo matches."
 }
