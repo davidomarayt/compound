@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-06",
+  "snapshot_date": "2026-11-07",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -692,6 +692,23 @@
         "status": "published"
       },
       {
+        "title": "Cigna’s Pharmacy Revenue Rose 9% While Profit Fell 22%. Can $3 Billion Fix the Margin?",
+        "url": "/wealth/cigna-pharmacy-margin-modernization/",
+        "source": "content/wealth/cigna-pharmacy-margin-modernization.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "cigna-pharmacy-margin-modernization",
+        "date": "2026-11-07",
+        "reviewed": "2026-11-07",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "ci"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Clocks go back in Ireland next Sunday: what changes, and what to check",
         "url": "/news/clocks-go-back-ireland-october-2026/",
         "source": "content/happiness/clocks-go-back-ireland-october-2026.md",
@@ -727,6 +744,23 @@
           "local property tax",
           "mortgage",
           "home ownership"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "ConocoPhillips Returned 45% of Cash Flow. How Durable Is It When Price Does the Work?",
+        "url": "/wealth/conocophillips-cash-flow-shareholder-returns/",
+        "source": "content/wealth/conocophillips-cash-flow-shareholder-returns.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "conocophillips-cash-flow-shareholder-returns",
+        "date": "2026-11-07",
+        "reviewed": "2026-11-07",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "cop"
         ],
         "status": "published"
       },
@@ -4794,6 +4828,23 @@
           "winter-2026",
           "ireland",
           "price-freeze"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Zebra’s Sales Jumped 22%, but Gross Margin Fell. Can Automation Growth Absorb Memory Costs?",
+        "url": "/wealth/zebra-automation-growth-memory-margin/",
+        "source": "content/wealth/zebra-automation-growth-memory-margin.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "zebra-automation-growth-memory-margin",
+        "date": "2026-11-07",
+        "reviewed": "2026-11-07",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "zbra"
         ],
         "status": "published"
       },
