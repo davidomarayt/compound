@@ -1,0 +1,43 @@
+{
+  "run_date": "2026-11-07",
+  "timezone": "Europe/Dublin",
+  "target": 3,
+  "publishing_branch": "claude/clever-babbage-uibieq",
+  "articles": [
+    {
+      "topic": "Rent took 28.5% of disposable income in Fingal on the CSO’s 2024 measure",
+      "content_type": "news",
+      "canonical_url": "https://compound.ie/news/irish-rent-burden-cso-fingal-2024/",
+      "primary_sources": [
+        "https://www.cso.ie/en/releasesandpublications/fp/fp-trsi/therentalsectorinireland2024/tenants/",
+        "https://www.cso.ie/en/releasesandpublications/fp/fp-trsi/therentalsectorinireland2024/keyfindings/"
+      ],
+      "deployment_status": "pending",
+      "publication_commit": null
+    },
+    {
+      "topic": "Pay-related jobseeker claims rose by 5,077. What would the payment cover?",
+      "content_type": "news",
+      "canonical_url": "https://compound.ie/news/october-live-register-jobseekers-pay-related-benefit/",
+      "primary_sources": [
+        "https://www.cso.ie/en/releasesandpublications/ep/p-lr/liveregisteroctober2026/",
+        "https://www.gov.ie/en/department-of-social-protection/services/jobseekers-pay-related-benefit/",
+        "https://www.irishstatutebook.ie/eli/2024/si/635/made/en/",
+        "https://services.mywelfare.ie/en/topics/out-of-work-payments/apply-for-jobseekers-payment/"
+      ],
+      "deployment_status": "pending",
+      "publication_commit": null
+    },
+    {
+      "topic": "Irish milk prices set to fall 18.1% as fertiliser costs rise, CSO estimates",
+      "content_type": "news",
+      "canonical_url": "https://compound.ie/news/irish-farm-prices-2026-milk-fertiliser-cso/",
+      "primary_sources": [
+        "https://www.cso.ie/en/releasesandpublications/ep/p-apipe/agriculturalpriceindices-preliminaryestimates2026/",
+        "https://www.cso.ie/en/releasesandpublications/ep/p-apipe/agriculturalpriceindices-preliminaryestimates2026/backgroundnotes/"
+      ],
+      "deployment_status": "pending",
+      "publication_commit": null
+    }
+  ]
+}
