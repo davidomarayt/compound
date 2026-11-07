@@ -2,33 +2,33 @@
   "cik": 899051,
   "company": "Allstate",
   "latest": {
-    "accession": "0000899051-26-000118",
-    "filed": "2026-08-05",
+    "accession": "0000899051-26-000157",
+    "filed": "2026-11-04",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 12.51,
-        "prior_year": 7.76,
+        "current": 8.03,
+        "prior_year": 13.95,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 3271000000,
-        "prior_year": 2109000000,
+        "current": 2079000000,
+        "prior_year": 3746000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 18596000000,
-        "prior_year": 16633000000,
+        "current": 17348000000,
+        "prior_year": 17255000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000118/all-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000157/all-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000118/all-20260630.htm"
+    },
+    {
+      "accession": "0000899051-26-000157",
+      "filed": "2026-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 8.03,
+          "prior_year": 13.95,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2079000000,
+          "prior_year": 3746000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 17348000000,
+          "prior_year": 17255000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000157/all-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "ALL",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

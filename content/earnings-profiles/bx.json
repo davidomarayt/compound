@@ -2,33 +2,33 @@
   "cik": 1393818,
   "company": "Blackstone Inc.",
   "latest": {
-    "accession": "0001193125-26-428297",
-    "filed": "2026-10-22",
-    "form": "8-K",
+    "accession": "0001193125-26-451802",
+    "filed": "2026-11-06",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 0.83,
         "prior_year": 0.8,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 662372000.0,
-        "prior_year": 624917000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 662372000,
+        "prior_year": 624917000,
+        "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3062888000.0,
-        "prior_year": 3088635000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 3062888000,
+        "prior_year": 3088635000,
+        "tag": "Revenues",
         "unit": "USD"
       }
     },
     "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526428297/d160590dex991.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526451802/d179995d10q.htm"
   },
   "periods": [
     {
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526340208/d158269d10q.htm"
     },
     {
-      "accession": "0001193125-26-428297",
-      "filed": "2026-10-22",
-      "form": "8-K",
+      "accession": "0001193125-26-451802",
+      "filed": "2026-11-06",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 0.83,
           "prior_year": 0.8,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
-          "current": 662372000.0,
-          "prior_year": 624917000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 662372000,
+          "prior_year": 624917000,
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
-          "current": 3062888000.0,
-          "prior_year": 3088635000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 3062888000,
+          "prior_year": 3088635000,
+          "tag": "Revenues",
           "unit": "USD"
         }
       },
       "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526428297/d160590dex991.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/1393818/000119312526451802/d179995d10q.htm"
     }
   ],
-  "source_type": "US SEC filings and company earnings releases; no analyst estimates",
+  "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "BX",
-  "updated": "2026-10-26"
+  "updated": "2026-11-07"
 }

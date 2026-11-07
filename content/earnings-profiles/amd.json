@@ -2,33 +2,33 @@
   "cik": 2488,
   "company": "Advanced Micro Devices",
   "latest": {
-    "accession": "0000002488-26-000123",
-    "filed": "2026-08-05",
+    "accession": "0000002488-26-000191",
+    "filed": "2026-11-04",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.38,
-        "prior_year": 0.54,
+        "current": 1.46,
+        "prior_year": 0.75,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 2297000000,
-        "prior_year": 872000000,
+        "current": 2428000000,
+        "prior_year": 1243000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 11536000000,
-        "prior_year": 7685000000,
+        "current": 13377000000,
+        "prior_year": 9246000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-27",
-    "source": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm"
+    "period_end": "2026-09-26",
+    "source": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-27",
       "source": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm"
+    },
+    {
+      "accession": "0000002488-26-000191",
+      "filed": "2026-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.46,
+          "prior_year": 0.75,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2428000000,
+          "prior_year": 1243000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 13377000000,
+          "prior_year": 9246000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/amd-20260926.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "AMD",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

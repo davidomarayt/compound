@@ -2,33 +2,33 @@
   "cik": 1163165,
   "company": "ConocoPhillips",
   "latest": {
-    "accession": "0001163165-26-000032",
-    "filed": "2026-08-06",
+    "accession": "0001163165-26-000045",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 3.23,
-        "prior_year": 1.56,
+        "current": 3.34,
+        "prior_year": 1.38,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 3931000000,
-        "prior_year": 1971000000,
+        "current": 4001000000,
+        "prior_year": 1726000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 18088000000,
-        "prior_year": 12621000000,
+        "current": 17201000000,
+        "prior_year": 13337000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000032/cop-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000045/cop-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000032/cop-20260630.htm"
+    },
+    {
+      "accession": "0001163165-26-000045",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.34,
+          "prior_year": 1.38,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 4001000000,
+          "prior_year": 1726000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 17201000000,
+          "prior_year": 13337000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1163165/000116316526000045/cop-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "COP",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

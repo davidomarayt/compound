@@ -2,33 +2,33 @@
   "cik": 1739940,
   "company": "Cigna",
   "latest": {
-    "accession": "0001739940-26-000065",
-    "filed": "2026-07-30",
+    "accession": "0001739940-26-000071",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 6.29,
-        "prior_year": 5.71,
+        "current": 5.47,
+        "prior_year": 6.98,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1660000000,
-        "prior_year": 1532000000,
+        "current": 1442000000,
+        "prior_year": 1868000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 71668000000,
-        "prior_year": 67178000000,
+        "current": 73683000000,
+        "prior_year": 69748000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1739940/000173994026000065/ci-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1739940/000173994026000071/ci-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1739940/000173994026000065/ci-20260630.htm"
+    },
+    {
+      "accession": "0001739940-26-000071",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 5.47,
+          "prior_year": 6.98,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1442000000,
+          "prior_year": 1868000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 73683000000,
+          "prior_year": 69748000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1739940/000173994026000071/ci-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CI",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

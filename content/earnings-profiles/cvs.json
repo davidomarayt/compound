@@ -2,33 +2,33 @@
   "cik": 64803,
   "company": "CVS Health",
   "latest": {
-    "accession": "0000064803-26-000098",
-    "filed": "2026-08-05",
+    "accession": "0000064803-26-000108",
+    "filed": "2026-11-04",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.31,
-        "prior_year": 0.8,
+        "current": 1.68,
+        "prior_year": -3.13,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 2979000000,
-        "prior_year": 1021000000,
+        "current": 2172000000,
+        "prior_year": -3975000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 106096000000,
-        "prior_year": 98915000000,
+        "current": 108399000000,
+        "prior_year": 102871000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/64803/000006480326000098/cvs-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/64803/000006480326000108/cvs-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/64803/000006480326000098/cvs-20260630.htm"
+    },
+    {
+      "accession": "0000064803-26-000108",
+      "filed": "2026-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.68,
+          "prior_year": -3.13,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2172000000,
+          "prior_year": -3975000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 108399000000,
+          "prior_year": 102871000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/64803/000006480326000108/cvs-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CVS",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }
