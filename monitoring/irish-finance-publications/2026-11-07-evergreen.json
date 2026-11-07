@@ -1,0 +1,15 @@
+{
+  "run_date": "2026-11-07",
+  "programme": "Irish evergreen guides",
+  "content_type": "new evergreen guide",
+  "topic": "Do I pay tax on solar export payments in Ireland?",
+  "canonical_url": "https://compound.ie/wealth/tax-on-solar-export-payments-ireland/",
+  "primary_sources": [
+    "https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-07/07-01-44.pdf",
+    "https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0202026.aspx",
+    "https://www.revenue.ie/en/jobs-and-pensions/end-of-year-process/need-to-submit-a-tax-return.aspx",
+    "https://www.revenue.ie/en/jobs-and-pensions/end-of-year-process/paye-income-tax-return.aspx"
+  ],
+  "publication_commit": null,
+  "deployment_status": "pending"
+}
