@@ -9,6 +9,8 @@
 
 To compare scenarios, select **Save for comparison** before changing one input. Keep the contribution amount and time horizon the same when comparing return or fee assumptions, so you can see what caused the difference. A projection illustrates your assumptions; it does not establish which investment is suitable for you.
 
+For the proposed daily method, see [two €60,000 closing balances with different tax outcomes](/pia/daily-valuation/). For fee inputs, [compare a flat monthly charge with a percentage fee](/pia/compare-fee-quotes/).
+
 ## What the PIA Calculator does
 
 This calculator models Ireland's planned **Personal Investment Account (PIA)** using the headline terms announced in Budget 2027.

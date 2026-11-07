@@ -6,7 +6,7 @@ pillar: wealth
 draft: false
 publication_status: published
 date: 2026-09-25
-reviewed: 2026-10-13
+reviewed: 2026-11-07
 approved_by: "Explicit evergreen upgrade instruction — 6 October 2026"
 summary: "Ireland's new Personal Investment Account (PIA) is planned for 1 July 2027. This complete guide explains the €50,000 threshold, 1% annual tax, €12,000 contribution limit, ETFs, shares, withdrawals, providers and the rules still awaiting legislation."
 meta_description: "PIA Ireland 2027 explained: €12,000 annual contributions, €50,000 threshold, proposed 1% tax, eligible ETFs and shares, provider fees and July launch."
@@ -88,7 +88,7 @@ But there is an important caveat at the outset: **the Personal Investment Accoun
 <tr><th scope="row">Minimum contribution</th><td><strong>None</strong></td></tr>
 <tr><th scope="row">PIA tax threshold</th><td><strong>€50,000</strong> of relevant account value</td></tr>
 <tr><th scope="row">PIA tax above threshold</th><td><strong>1% a year</strong> on the excess above €50,000</td></tr>
-<tr><th scope="row">Tax basis</th><td>Average account valuation over the taxable period; detailed valuation intervals still to be legislated</td></tr>
+<tr><th scope="row">Tax basis</th><td>Average of daily closing values on days the account was open, under the October Bill as introduced</td></tr>
 <tr><th scope="row">Number of accounts</th><td>One PIA per person in the initial design</td></tr>
 <tr><th scope="row">Who can open one?</th><td>Irish tax-resident individuals aged 18+ with a PPSN</td></tr>
 <tr><th scope="row">Minimum holding period</th><td>None proposed</td></tr>
@@ -216,7 +216,7 @@ This is the most important part of the PIA.
 
 The new account is **not taxed like a normal capital gain**.
 
-Under the Department of Finance design, the provider calculates the account's value over the taxable period and uses those valuations to arrive at an **average account value**. The precise valuation intervals still have to be settled.
+Under the Department of Finance design, the provider calculates the account's value over the taxable period and uses those valuations to arrive at an **average account value**. Section 26 of the [Finance (No. 2) Bill as introduced](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf#page=53) proposes daily closing valuations. [See two accounts ending at €60,000 with different tax estimates](/pia/daily-valuation/).
 
 The Budget 2027 numbers then work like this:
 
@@ -721,7 +721,7 @@ Budget 2027 filled in the biggest missing numbers, but several practical details
 
 As of 6 October 2026, watch for clarification on:
 
-* the exact intervals used to calculate average account value;
+* final regulations on valuation, including foreign-currency holdings;
 * how contribution limits operate when money is withdrawn;
 * whether any unused annual contribution allowance can carry forward;
 * the detailed treatment of existing investments moved into a PIA;
