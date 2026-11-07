@@ -2,33 +2,33 @@
   "cik": 1964738,
   "company": "Solventum",
   "latest": {
-    "accession": "0001964738-26-000047",
-    "filed": "2026-08-05",
+    "accession": "0001964738-26-000056",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.53,
-        "prior_year": 0.51,
+        "current": -0.07,
+        "prior_year": 7.22,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 92000000,
-        "prior_year": 90000000,
+        "current": -12000000,
+        "prior_year": 1266000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2209000000,
-        "prior_year": 2161000000,
+        "current": 1949000000,
+        "prior_year": 2096000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1964738/000196473826000047/solv-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1964738/000196473826000056/solv-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1964738/000196473826000047/solv-20260630.htm"
+    },
+    {
+      "accession": "0001964738-26-000056",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.07,
+          "prior_year": 7.22,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -12000000,
+          "prior_year": 1266000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1949000000,
+          "prior_year": 2096000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1964738/000196473826000056/solv-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "SOLV",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

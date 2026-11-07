@@ -2,33 +2,33 @@
   "cik": 1174922,
   "company": "Wynn Resorts",
   "latest": {
-    "accession": "0001174922-26-000055",
-    "filed": "2026-08-06",
+    "accession": "0001174922-26-000079",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.32,
-        "prior_year": 0.64,
+        "current": 0.17,
+        "prior_year": 0.85,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 140062000,
-        "prior_year": 66218000,
+        "current": 17321000,
+        "prior_year": 88341000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1856933000,
-        "prior_year": 1737797000,
+        "current": 1689053000,
+        "prior_year": 1833747000,
         "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000055/wynn-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000079/wynn-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000055/wynn-20260630.htm"
+    },
+    {
+      "accession": "0001174922-26-000079",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.17,
+          "prior_year": 0.85,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 17321000,
+          "prior_year": 88341000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1689053000,
+          "prior_year": 1833747000,
+          "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1174922/000117492226000079/wynn-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "WYNN",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

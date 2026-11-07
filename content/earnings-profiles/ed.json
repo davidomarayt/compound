@@ -2,33 +2,33 @@
   "cik": 1047862,
   "company": "Consolidated Edison",
   "latest": {
-    "accession": "0001047862-26-000091",
-    "filed": "2026-05-07",
+    "accession": "0001047862-26-000155",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.54,
-        "prior_year": 2.25,
+        "current": 2.06,
+        "prior_year": 1.9,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 924000000,
-        "prior_year": 791000000,
+        "current": 766000000,
+        "prior_year": 688000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 5231000000,
-        "prior_year": 4887000000,
+        "current": 4864000000,
+        "prior_year": 4568000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1047862/000104786226000091/ed-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1047862/000104786226000155/ed-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,38 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1047862/000104786226000091/ed-20260331.htm"
+    },
+    {
+      "accession": "0001047862-26-000155",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.06,
+          "prior_year": 1.9,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 766000000,
+          "prior_year": 688000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4864000000,
+          "prior_year": 4568000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1047862/000104786226000155/ed-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "ED",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

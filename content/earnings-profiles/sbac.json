@@ -2,33 +2,33 @@
   "cik": 1034054,
   "company": "SBA Communications",
   "latest": {
-    "accession": "0001034054-26-000011",
-    "filed": "2026-08-06",
+    "accession": "0001034054-26-000013",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.87,
-        "prior_year": 2.09,
+        "current": 2.19,
+        "prior_year": 2.2,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 198777000,
-        "prior_year": 225794000,
+        "current": 231306000,
+        "prior_year": 236816000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 51389000,
-        "prior_year": 67193000,
+        "current": 48570000,
+        "prior_year": 75900000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1034054/000103405426000011/sbac-20260630x10q.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1034054/000103405426000013/sbac-20260930x10q.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1034054/000103405426000011/sbac-20260630x10q.htm"
+    },
+    {
+      "accession": "0001034054-26-000013",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.19,
+          "prior_year": 2.2,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 231306000,
+          "prior_year": 236816000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 48570000,
+          "prior_year": 75900000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1034054/000103405426000013/sbac-20260930x10q.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "SBAC",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

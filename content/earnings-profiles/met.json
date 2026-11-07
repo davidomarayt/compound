@@ -2,33 +2,33 @@
   "cik": 1099219,
   "company": "MetLife",
   "latest": {
-    "accession": "0001099219-26-000050",
-    "filed": "2026-08-06",
+    "accession": "0001099219-26-000062",
+    "filed": "2026-11-06",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.09,
-        "prior_year": 1.03,
+        "current": 3.67,
+        "prior_year": 1.22,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 736000000,
-        "prior_year": 729000000,
+        "current": 2397000000,
+        "prior_year": 896000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 724000000,
-        "prior_year": 604000000,
+        "current": 728000000,
+        "prior_year": 621000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1099219/000109921926000050/met-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1099219/000109921926000062/met-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1099219/000109921926000050/met-20260630.htm"
+    },
+    {
+      "accession": "0001099219-26-000062",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.67,
+          "prior_year": 1.22,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2397000000,
+          "prior_year": 896000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 728000000,
+          "prior_year": 621000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1099219/000109921926000062/met-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "MET",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }
