@@ -1,0 +1,125 @@
+{
+  "cik": 764622,
+  "company": "Pinnacle West Capital",
+  "latest": {
+    "accession": "0000764622-26-000050",
+    "filed": "2026-11-03",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.49,
+        "prior_year": 3.39,
+        "tag": "us-gaap:EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 436434000,
+        "prior_year": 417514000,
+        "tag": "us-gaap:ProfitLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1972746000,
+        "prior_year": 1820741000,
+        "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/764622/000076462226000050/pnw-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000764622-26-000025",
+      "filed": "2026-05-04",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.27,
+          "prior_year": -0.04,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 35114000,
+          "prior_year": -338000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1149597000,
+          "prior_year": 1032280000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/764622/000076462226000025/pnw-20260331.htm"
+    },
+    {
+      "accession": "0000764622-26-000041",
+      "filed": "2026-08-04",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.43,
+          "prior_year": 1.58,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 180767000,
+          "prior_year": 196870000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1455749000,
+          "prior_year": 1358751000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/764622/000076462226000041/pnw-20260630.htm"
+    },
+    {
+      "accession": "0000764622-26-000050",
+      "filed": "2026-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.49,
+          "prior_year": 3.39,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 436434000,
+          "prior_year": 417514000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1972746000,
+          "prior_year": 1820741000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/764622/000076462226000050/pnw-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "PNW",
+  "updated": "2026-11-07"
+}

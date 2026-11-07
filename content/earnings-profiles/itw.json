@@ -1,0 +1,125 @@
+{
+  "cik": 49826,
+  "company": "Illinois Tool Works",
+  "latest": {
+    "accession": "0000049826-26-000060",
+    "filed": "2026-10-28",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.0,
+        "prior_year": 2.81,
+        "tag": "us-gaap:EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 855000000,
+        "prior_year": 821000000,
+        "tag": "us-gaap:ProfitLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4236000000,
+        "prior_year": 4059000000,
+        "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000060/itw-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000049826-26-000028",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.66,
+          "prior_year": 2.38,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 768000000,
+          "prior_year": 700000000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4016000000,
+          "prior_year": 3839000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000028/itw-20260331.htm"
+    },
+    {
+      "accession": "0000049826-26-000049",
+      "filed": "2026-08-06",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.84,
+          "prior_year": 2.58,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 815000000,
+          "prior_year": 755000000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4301000000,
+          "prior_year": 4053000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000049/itw-20260630.htm"
+    },
+    {
+      "accession": "0000049826-26-000060",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.0,
+          "prior_year": 2.81,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 855000000,
+          "prior_year": 821000000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4236000000,
+          "prior_year": 4059000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000060/itw-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "ITW",
+  "updated": "2026-11-07"
+}

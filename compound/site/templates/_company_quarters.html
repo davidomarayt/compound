@@ -1,8 +1,8 @@
 <section class="earnings-section compound-quarter-report" id="earnings-company-results" aria-labelledby="company-quarters-heading">
 <div class="earnings-heading">
-  <div><p class="eyebrow">VERIFIED SEC RESULTS / ONE UPDATING COMPANY REPORT</p>
+  <div><p class="eyebrow">{% if release %}EARLIER FINANCIAL STATEMENTS{% else %}VERIFIED SEC RESULTS / ONE UPDATING COMPANY REPORT{% endif %}</p>
   <h2 id="company-quarters-heading">{% if report.is_annual %}Full-year results and quarterly history{% else %}Fiscal earnings through {{ report.through or report.latest_label }}{% endif %}</h2></div>
-  <span>FY{{ report.fy }} · last reported period ended {{ report.latest_end }}</span>
+  <span>FY{{ report.fy }} · {% if release %}statement period ended{% else %}last reported period ended{% endif %} {{ report.latest_end }}</span>
 </div>
 <p class="earnings-lede">Fiscal quarters follow {{ company.name }}'s official accounting calendar, not calendar-year labels. <strong>{{ report.latest_display }}</strong> ended <strong>{{ report.latest_end }}</strong> and was filed {% if report.latest_filed %}{{ report.latest_filed }}{% else %}on the date shown in its source filing{% endif %}. This report is updated in place, not republished as a new article every quarter.</p>
 {% if report.reporting_update %}<p class="earnings-directory-source"><strong>Reporting update · {{ report.reporting_update.date }}:</strong> {{ report.reporting_update.text }} <a href="{{ report.reporting_update.source }}" rel="noopener">Company announcement ↗</a></p>{% endif %}

@@ -1,0 +1,125 @@
+{
+  "cik": 26172,
+  "company": "Cummins",
+  "latest": {
+    "accession": "0000026172-26-000037",
+    "filed": "2026-11-05",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 8.25,
+        "prior_year": 3.86,
+        "tag": "us-gaap:EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1169000000,
+        "prior_year": 559000000,
+        "tag": "us-gaap:ProfitLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 9438000000,
+        "prior_year": 8317000000,
+        "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/26172/000002617226000037/cmi-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000026172-26-000016",
+      "filed": "2026-05-05",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.71,
+          "prior_year": 5.96,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 680000000,
+          "prior_year": 850000000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 8398000000,
+          "prior_year": 8174000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/26172/000002617226000016/cmi-20260331.htm"
+    },
+    {
+      "accession": "0000026172-26-000029",
+      "filed": "2026-08-04",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 6.73,
+          "prior_year": 6.43,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 968000000,
+          "prior_year": 928000000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 9457000000,
+          "prior_year": 8643000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/26172/000002617226000029/cmi-20260630.htm"
+    },
+    {
+      "accession": "0000026172-26-000037",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 8.25,
+          "prior_year": 3.86,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1169000000,
+          "prior_year": 559000000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 9438000000,
+          "prior_year": 8317000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/26172/000002617226000037/cmi-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "CMI",
+  "updated": "2026-11-07"
+}

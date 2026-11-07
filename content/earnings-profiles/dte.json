@@ -1,0 +1,125 @@
+{
+  "cik": 936340,
+  "company": "DTE Energy",
+  "latest": {
+    "accession": "0000936340-26-000169",
+    "filed": "2026-11-05",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.25,
+        "prior_year": 2.01,
+        "tag": "us-gaap:EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 470000000,
+        "prior_year": 419000000,
+        "tag": "us-gaap:NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 3727000000,
+        "prior_year": 3527000000,
+        "tag": "us-gaap:RegulatedAndUnregulatedOperatingRevenue",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/936340/000093634026000169/dte-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000936340-26-000081",
+      "filed": "2026-04-30",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.19,
+          "prior_year": 2.14,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 247000000,
+          "prior_year": 445000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5141000000,
+          "prior_year": 4440000000,
+          "tag": "us-gaap:RegulatedAndUnregulatedOperatingRevenue",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/936340/000093634026000081/dte-20260331.htm"
+    },
+    {
+      "accession": "0000936340-26-000146",
+      "filed": "2026-07-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.35,
+          "prior_year": 1.1,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 282000000,
+          "prior_year": 229000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3369000000,
+          "prior_year": 3419000000,
+          "tag": "us-gaap:RegulatedAndUnregulatedOperatingRevenue",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/936340/000093634026000146/dte-20260630.htm"
+    },
+    {
+      "accession": "0000936340-26-000169",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.25,
+          "prior_year": 2.01,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 470000000,
+          "prior_year": 419000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3727000000,
+          "prior_year": 3527000000,
+          "tag": "us-gaap:RegulatedAndUnregulatedOperatingRevenue",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/936340/000093634026000169/dte-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "DTE",
+  "updated": "2026-11-07"
+}

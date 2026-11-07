@@ -1,0 +1,125 @@
+{
+  "cik": 1754301,
+  "company": "Fox Corporation (Class A)",
+  "latest": {
+    "accession": "0001628280-26-068670",
+    "filed": "2026-11-02",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.2,
+        "prior_year": 1.32,
+        "tag": "us-gaap:EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 957000000,
+        "prior_year": 609000000,
+        "tag": "us-gaap:ProfitLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4571000000,
+        "prior_year": 3738000000,
+        "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1754301/000162828026068670/fox-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-033172",
+      "filed": "2026-05-11",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.38,
+          "prior_year": 0.75,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 175000000,
+          "prior_year": 354000000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3994000000,
+          "prior_year": 4371000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1754301/000162828026033172/fox-20260331.htm"
+    },
+    {
+      "accession": "0001628280-26-053960",
+      "filed": "2026-08-06",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.84,
+          "prior_year": 4.91,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1727000000,
+          "prior_year": 2293000000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 17126000000,
+          "prior_year": 16300000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1754301/000162828026053960/fox-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-068670",
+      "filed": "2026-11-02",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.2,
+          "prior_year": 1.32,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 957000000,
+          "prior_year": 609000000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4571000000,
+          "prior_year": 3738000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1754301/000162828026068670/fox-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "FOXA",
+  "updated": "2026-11-07"
+}

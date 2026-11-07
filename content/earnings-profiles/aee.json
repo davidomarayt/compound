@@ -1,0 +1,125 @@
+{
+  "cik": 1002910,
+  "company": "Ameren",
+  "latest": {
+    "accession": "0001002910-26-000032",
+    "filed": "2026-11-06",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.42,
+        "prior_year": 2.35,
+        "tag": "us-gaap:EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 677000000,
+        "prior_year": 641000000,
+        "tag": "us-gaap:ProfitLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2882000000,
+        "prior_year": 2699000000,
+        "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1002910/000100291026000032/aee-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001002910-26-000015",
+      "filed": "2026-05-08",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.28,
+          "prior_year": 1.07,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 358000000,
+          "prior_year": 290000000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2176000000,
+          "prior_year": 2097000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1002910/000100291026000015/aee-20260331.htm"
+    },
+    {
+      "accession": "0001002910-26-000023",
+      "filed": "2026-08-03",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.13,
+          "prior_year": 1.01,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 316000000,
+          "prior_year": 277000000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2092000000,
+          "prior_year": 2221000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1002910/000100291026000023/aee-20260630.htm"
+    },
+    {
+      "accession": "0001002910-26-000032",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.42,
+          "prior_year": 2.35,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 677000000,
+          "prior_year": 641000000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2882000000,
+          "prior_year": 2699000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1002910/000100291026000032/aee-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "AEE",
+  "updated": "2026-11-07"
+}

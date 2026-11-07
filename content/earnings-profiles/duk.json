@@ -2,33 +2,33 @@
   "cik": 1326160,
   "company": "Duke Energy",
   "latest": {
-    "accession": "0001326160-26-000026",
-    "filed": "2026-05-05",
+    "accession": "0001326160-26-000051",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.97,
-        "prior_year": 1.76,
-        "tag": "EarningsPerShareDiluted",
+        "current": 1.99,
+        "prior_year": 1.81,
+        "tag": "us-gaap:EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1550000000,
-        "prior_year": 1379000000,
-        "tag": "NetIncomeLoss",
+        "current": 1565000000,
+        "prior_year": 1421000000,
+        "tag": "us-gaap:NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 8995000000,
-        "prior_year": 8218000000,
-        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+        "current": 9104000000,
+        "prior_year": 8542000000,
+        "tag": "us-gaap:RegulatedAndUnregulatedOperatingRevenue",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1326160/000132616026000026/duk-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1326160/000132616026000051/duk-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1326160/000132616026000026/duk-20260331.htm"
+    },
+    {
+      "accession": "0001326160-26-000040",
+      "filed": "2026-08-04",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.38,
+          "prior_year": 1.25,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1092000000,
+          "prior_year": 984000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7592000000,
+          "prior_year": 7508000000,
+          "tag": "us-gaap:RegulatedAndUnregulatedOperatingRevenue",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1326160/000132616026000040/duk-20260630.htm"
+    },
+    {
+      "accession": "0001326160-26-000051",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.99,
+          "prior_year": 1.81,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1565000000,
+          "prior_year": 1421000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 9104000000,
+          "prior_year": 8542000000,
+          "tag": "us-gaap:RegulatedAndUnregulatedOperatingRevenue",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1326160/000132616026000051/duk-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "DUK",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

@@ -2,33 +2,33 @@
   "cik": 92230,
   "company": "Truist Financial",
   "latest": {
-    "accession": "0000092230-26-000108",
-    "filed": "2026-10-16",
-    "form": "8-K",
+    "accession": "0000092230-26-000129",
+    "filed": "2026-10-28",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 0.56,
         "prior_year": 1.04,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "us-gaap:EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 799000000.0,
-        "prior_year": 1452000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 799000000,
+        "prior_year": 1452000000,
+        "tag": "us-gaap:ProfitLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3747000000.0,
-        "prior_year": 5187000000.0,
-        "tag": "SEC reported; reviewed statement",
+        "current": 3747000000,
+        "prior_year": 5187000000,
+        "tag": "us-gaap:InterestIncomeExpenseNet + us-gaap:NoninterestIncome",
         "unit": "USD"
       }
     },
     "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/92230/000009223026000108/ex992-qpsx3q26.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/92230/000009223026000129/tfc-20260930.htm"
   },
   "periods": [
     {
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/92230/000009223026000099/tfc-20260630.htm"
     },
     {
-      "accession": "0000092230-26-000108",
-      "filed": "2026-10-16",
-      "form": "8-K",
+      "accession": "0000092230-26-000129",
+      "filed": "2026-10-28",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 0.56,
           "prior_year": 1.04,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "us-gaap:EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
-          "current": 799000000.0,
-          "prior_year": 1452000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 799000000,
+          "prior_year": 1452000000,
+          "tag": "us-gaap:ProfitLoss",
           "unit": "USD"
         },
         "revenue": {
-          "current": 3747000000.0,
-          "prior_year": 5187000000.0,
-          "tag": "SEC reported; reviewed statement",
+          "current": 3747000000,
+          "prior_year": 5187000000,
+          "tag": "us-gaap:InterestIncomeExpenseNet + us-gaap:NoninterestIncome",
           "unit": "USD"
         }
       },
       "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/92230/000009223026000108/ex992-qpsx3q26.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/92230/000009223026000129/tfc-20260930.htm"
     }
   ],
   "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "TFC",
-  "updated": "2026-10-26"
+  "updated": "2026-11-07"
 }

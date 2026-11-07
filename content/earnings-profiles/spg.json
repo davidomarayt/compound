@@ -1,0 +1,125 @@
+{
+  "cik": 1063761,
+  "company": "Simon Property Group",
+  "latest": {
+    "accession": "0001104659-26-123591",
+    "filed": "2026-11-06",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.54,
+        "prior_year": 1.86,
+        "tag": "us-gaap:EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 565294000,
+        "prior_year": 702696000,
+        "tag": "us-gaap:ProfitLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1814556000,
+        "prior_year": 1601572000,
+        "tag": "us-gaap:Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926123591/spg-20260930x10q.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001104659-26-058640",
+      "filed": "2026-05-11",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.48,
+          "prior_year": 1.27,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 568535000,
+          "prior_year": 477860000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1757093000,
+          "prior_year": 1473012000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926058640/spg-20260331x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-093360",
+      "filed": "2026-08-10",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.49,
+          "prior_year": 1.7,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 574130000,
+          "prior_year": 643681000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1790598000,
+          "prior_year": 1498459000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926093360/spg-20260630x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-123591",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.54,
+          "prior_year": 1.86,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 565294000,
+          "prior_year": 702696000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1814556000,
+          "prior_year": 1601572000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926123591/spg-20260930x10q.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "SPG",
+  "updated": "2026-11-07"
+}

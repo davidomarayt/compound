@@ -1,0 +1,125 @@
+{
+  "cik": 879101,
+  "company": "Kimco Realty",
+  "latest": {
+    "accession": "0001193125-26-437341",
+    "filed": "2026-10-29",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.41,
+        "prior_year": 0.19,
+        "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 279074000,
+        "prior_year": 137775000,
+        "tag": "us-gaap:NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 546147000,
+        "prior_year": 535861000,
+        "tag": "us-gaap:Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/879101/000119312526437341/kim-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001193125-26-195304",
+      "filed": "2026-04-30",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.23,
+          "prior_year": 0.18,
+          "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 164898000,
+          "prior_year": 132817000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 558016000,
+          "prior_year": 536624000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/879101/000119312526195304/kim-20260331.htm"
+    },
+    {
+      "accession": "0001193125-26-331817",
+      "filed": "2026-08-04",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.22,
+          "prior_year": 0.23,
+          "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 153294000,
+          "prior_year": 162986000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 550801000,
+          "prior_year": 525175000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/879101/000119312526331817/kim-20260630.htm"
+    },
+    {
+      "accession": "0001193125-26-437341",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.41,
+          "prior_year": 0.19,
+          "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 279074000,
+          "prior_year": 137775000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 546147000,
+          "prior_year": 535861000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/879101/000119312526437341/kim-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "KIM",
+  "updated": "2026-11-07"
+}

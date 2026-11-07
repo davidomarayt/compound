@@ -2,33 +2,33 @@
   "cik": 92122,
   "company": "Southern Company",
   "latest": {
-    "accession": "0000092122-26-000034",
-    "filed": "2026-04-30",
+    "accession": "0000092122-26-000069",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.2,
-        "prior_year": 1.21,
-        "tag": "EarningsPerShareDiluted",
+        "current": 1.76,
+        "prior_year": 1.54,
+        "tag": "us-gaap:EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1356000000,
-        "prior_year": 1334000000,
-        "tag": "NetIncomeLoss",
+        "current": 2046000000,
+        "prior_year": 1711000000,
+        "tag": "us-gaap:NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 8040000000,
-        "prior_year": 7591000000,
-        "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+        "current": 8843000000,
+        "prior_year": 7823000000,
+        "tag": "us-gaap:Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/92122/000009212226000034/so-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/92122/000009212226000069/so-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/92122/000009212226000034/so-20260331.htm"
+    },
+    {
+      "accession": "0000092122-26-000054",
+      "filed": "2026-07-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.03,
+          "prior_year": 0.79,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1174000000,
+          "prior_year": 880000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6977000000,
+          "prior_year": 6973000000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/92122/000009212226000054/so-20260630.htm"
+    },
+    {
+      "accession": "0000092122-26-000069",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.76,
+          "prior_year": 1.54,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2046000000,
+          "prior_year": 1711000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 8843000000,
+          "prior_year": 7823000000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/92122/000009212226000069/so-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "SO",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

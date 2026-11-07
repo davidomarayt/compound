@@ -1,0 +1,96 @@
+{
+  "cik": 1404912,
+  "company": "KKR & Co.",
+  "latest": {
+    "accession": "0001404912-26-000027",
+    "filed": "2026-08-06",
+    "form": "10-Q",
+    "fp": "Q2",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.7,
+        "prior_year": 0.5,
+        "tag": "us-gaap:EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 700482000,
+        "prior_year": 510123000,
+        "tag": "us-gaap:NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 5725891000,
+        "prior_year": 5088843000,
+        "tag": "us-gaap:Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-06-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1404912/000140491226000027/kkr-20260630.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001404912-26-000017",
+      "filed": "2026-05-08",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.38,
+          "prior_year": -0.22,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 405229000,
+          "prior_year": -185924000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4317983000,
+          "prior_year": 3110183000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1404912/000140491226000017/kkr-20260331.htm"
+    },
+    {
+      "accession": "0001404912-26-000027",
+      "filed": "2026-08-06",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.7,
+          "prior_year": 0.5,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 700482000,
+          "prior_year": 510123000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5725891000,
+          "prior_year": 5088843000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1404912/000140491226000027/kkr-20260630.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "KKR",
+  "updated": "2026-11-07"
+}

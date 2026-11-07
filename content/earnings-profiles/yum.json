@@ -2,33 +2,33 @@
   "cik": 1041061,
   "company": "Yum! Brands",
   "latest": {
-    "accession": "0001041061-26-000160",
-    "filed": "2026-08-05",
+    "accession": "0001041061-26-000210",
+    "filed": "2026-11-06",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 3.08,
-        "prior_year": 1.33,
+        "current": 5.92,
+        "prior_year": 1.41,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 853000000,
-        "prior_year": 374000000,
+        "current": 1623000000,
+        "prior_year": 397000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2169000000,
-        "prior_year": 1933000000,
+        "current": 2054000000,
+        "prior_year": 1979000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1041061/000104106126000160/yum-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1041061/000104106126000210/yum-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1041061/000104106126000160/yum-20260630.htm"
+    },
+    {
+      "accession": "0001041061-26-000210",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 5.92,
+          "prior_year": 1.41,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1623000000,
+          "prior_year": 397000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2054000000,
+          "prior_year": 1979000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1041061/000104106126000210/yum-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "YUM",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

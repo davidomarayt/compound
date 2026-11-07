@@ -1,0 +1,125 @@
+{
+  "cik": 1559720,
+  "company": "Airbnb",
+  "latest": {
+    "accession": "0001559720-26-000032",
+    "filed": "2026-11-05",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.16,
+        "prior_year": 2.21,
+        "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 1890000000,
+        "prior_year": 1374000000,
+        "tag": "us-gaap:NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4869000000,
+        "prior_year": 4095000000,
+        "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000032/abnb-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001559720-26-000014",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.26,
+          "prior_year": 0.24,
+          "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 160000000,
+          "prior_year": 154000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2678000000,
+          "prior_year": 2272000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000014/abnb-20260331.htm"
+    },
+    {
+      "accession": "0001559720-26-000027",
+      "filed": "2026-08-06",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.37,
+          "prior_year": 1.03,
+          "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 816000000,
+          "prior_year": 642000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3608000000,
+          "prior_year": 3096000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000027/abnb-20260630.htm"
+    },
+    {
+      "accession": "0001559720-26-000032",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.16,
+          "prior_year": 2.21,
+          "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1890000000,
+          "prior_year": 1374000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4869000000,
+          "prior_year": 4095000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000032/abnb-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "ABNB",
+  "updated": "2026-11-07"
+}

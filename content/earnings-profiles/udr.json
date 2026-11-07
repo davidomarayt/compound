@@ -2,33 +2,33 @@
   "cik": 74208,
   "company": "UDR, Inc.",
   "latest": {
-    "accession": "0000074208-26-000049",
-    "filed": "2026-04-30",
+    "accession": "0000074208-26-000087",
+    "filed": "2026-11-03",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.57,
-        "prior_year": 0.23,
+        "current": 0.67,
+        "prior_year": 0.12,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 189831000,
-        "prior_year": 76720000,
+        "current": 216094000,
+        "prior_year": 40409000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2528000,
-        "prior_year": 2112000,
+        "current": 3500000,
+        "prior_year": 2570000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000049/udr-20260331x10q.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000087/udr-20260930x10q.htm"
   },
   "periods": [
     {
@@ -59,14 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000049/udr-20260331x10q.htm"
+    },
+    {
+      "accession": "0000074208-26-000073",
+      "filed": "2026-07-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.21,
+          "prior_year": 0.11,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 69035000,
+          "prior_year": 37673000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2466000,
+          "prior_year": 2398000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000073/udr-20260630x10q.htm"
+    },
+    {
+      "accession": "0000074208-26-000087",
+      "filed": "2026-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.67,
+          "prior_year": 0.12,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 216094000,
+          "prior_year": 40409000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3500000,
+          "prior_year": 2570000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000087/udr-20260930x10q.htm"
     }
   ],
-  "reporting_update": {
-    "date": "2026-10-21",
-    "source": "https://www.sec.gov/Archives/edgar/data/74208/000007420826000081/udr-ex99d1.htm",
-    "text": "The company released preliminary Q3 2026 results and raised full-year guidance. The completed results below remain in place pending the full quarterly financial statements."
-  },
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "UDR",
-  "updated": "2026-10-26"
+  "updated": "2026-11-07"
 }

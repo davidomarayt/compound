@@ -2,33 +2,33 @@
   "cik": 1031296,
   "company": "FirstEnergy",
   "latest": {
-    "accession": "0001031296-26-000085",
-    "filed": "2026-04-28",
+    "accession": "0001031296-26-000144",
+    "filed": "2026-10-28",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.7,
-        "prior_year": 0.62,
-        "tag": "EarningsPerShareDiluted",
+        "current": 0.96,
+        "prior_year": 0.76,
+        "tag": "us-gaap:EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 405000000,
-        "prior_year": 360000000,
-        "tag": "NetIncomeLoss",
+        "current": 557000000,
+        "prior_year": 441000000,
+        "tag": "us-gaap:NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4202000000,
-        "prior_year": 3765000000,
-        "tag": "Revenues",
+        "current": 4557000000,
+        "prior_year": 4148000000,
+        "tag": "us-gaap:Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1031296/000103129626000085/fe-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1031296/000103129626000144/fe-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1031296/000103129626000085/fe-20260331.htm"
+    },
+    {
+      "accession": "0001031296-26-000123",
+      "filed": "2026-07-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.5,
+          "prior_year": 0.46,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 288000000,
+          "prior_year": 268000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3678000000,
+          "prior_year": 3380000000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1031296/000103129626000123/fe-20260630.htm"
+    },
+    {
+      "accession": "0001031296-26-000144",
+      "filed": "2026-10-28",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.96,
+          "prior_year": 0.76,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 557000000,
+          "prior_year": 441000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4557000000,
+          "prior_year": 4148000000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1031296/000103129626000144/fe-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "FE",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

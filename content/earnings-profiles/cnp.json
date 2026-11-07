@@ -2,33 +2,33 @@
   "cik": 1130310,
   "company": "CenterPoint Energy",
   "latest": {
-    "accession": "0001130310-26-000028",
-    "filed": "2026-04-23",
+    "accession": "0001130310-26-000048",
+    "filed": "2026-10-27",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.48,
+        "current": 0.5,
         "prior_year": 0.45,
-        "tag": "EarningsPerShareDiluted",
+        "tag": "us-gaap:EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 316000000,
-        "prior_year": 297000000,
-        "tag": "NetIncomeLoss",
+        "current": 331000000,
+        "prior_year": 293000000,
+        "tag": "us-gaap:NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2975000000,
-        "prior_year": 2956000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 2191000000,
+        "prior_year": 1988000000,
+        "tag": "us-gaap:Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1130310/000113031026000028/cnp-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1130310/000113031026000048/cnp-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1130310/000113031026000028/cnp-20260331.htm"
+    },
+    {
+      "accession": "0001130310-26-000041",
+      "filed": "2026-07-28",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.37,
+          "prior_year": 0.3,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 244000000,
+          "prior_year": 198000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2152000000,
+          "prior_year": 1944000000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1130310/000113031026000041/cnp-20260630.htm"
+    },
+    {
+      "accession": "0001130310-26-000048",
+      "filed": "2026-10-27",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.5,
+          "prior_year": 0.45,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 331000000,
+          "prior_year": 293000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2191000000,
+          "prior_year": 1988000000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1130310/000113031026000048/cnp-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CNP",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

@@ -1,0 +1,125 @@
+{
+  "cik": 9389,
+  "company": "Ball Corporation",
+  "latest": {
+    "accession": "0001104659-26-121838",
+    "filed": "2026-11-03",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": -0.36,
+        "prior_year": 1.18,
+        "tag": "us-gaap:EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": -94000000,
+        "prior_year": 321000000,
+        "tag": "us-gaap:ProfitLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 4188000000,
+        "prior_year": 3379000000,
+        "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/9389/000110465926121838/ball-20260930x10q.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001104659-26-055460",
+      "filed": "2026-05-05",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.77,
+          "prior_year": 0.63,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 205000000,
+          "prior_year": 179000000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3603000000,
+          "prior_year": 3097000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/9389/000110465926055460/ball-20260331x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-090226",
+      "filed": "2026-08-04",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.83,
+          "prior_year": 0.76,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 223000000,
+          "prior_year": 215000000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3997000000,
+          "prior_year": 3338000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/9389/000110465926090226/ball-20260630x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-121838",
+      "filed": "2026-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.36,
+          "prior_year": 1.18,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -94000000,
+          "prior_year": 321000000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4188000000,
+          "prior_year": 3379000000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerIncludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/9389/000110465926121838/ball-20260930x10q.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "BALL",
+  "updated": "2026-11-07"
+}

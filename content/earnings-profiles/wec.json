@@ -1,0 +1,125 @@
+{
+  "cik": 783325,
+  "company": "WEC Energy Group",
+  "latest": {
+    "accession": "0000783325-26-000107",
+    "filed": "2026-10-30",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 1.18,
+        "prior_year": 0.83,
+        "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 390300000,
+        "prior_year": 270200000,
+        "tag": "us-gaap:ProfitLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2290600000,
+        "prior_year": 2104000000,
+        "tag": "us-gaap:Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/783325/000078332526000107/wec-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0000783325-26-000052",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.45,
+          "prior_year": 2.27,
+          "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 806100000,
+          "prior_year": 725500000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3434200000,
+          "prior_year": 3149500000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/783325/000078332526000052/wec-20260331.htm"
+    },
+    {
+      "accession": "0000783325-26-000087",
+      "filed": "2026-08-04",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.91,
+          "prior_year": 0.76,
+          "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 301000000,
+          "prior_year": 243000000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2062100000,
+          "prior_year": 2009500000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/783325/000078332526000087/wec-20260630.htm"
+    },
+    {
+      "accession": "0000783325-26-000107",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.18,
+          "prior_year": 0.83,
+          "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 390300000,
+          "prior_year": 270200000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2290600000,
+          "prior_year": 2104000000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/783325/000078332526000107/wec-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "WEC",
+  "updated": "2026-11-07"
+}

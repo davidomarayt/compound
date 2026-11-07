@@ -2,33 +2,33 @@
   "cik": 1973266,
   "company": "TKO Group Holdings",
   "latest": {
-    "accession": "0001193125-26-330592",
-    "filed": "2026-08-03",
+    "accession": "0001193125-26-447266",
+    "filed": "2026-11-04",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.34,
-        "prior_year": 1.17,
+        "current": 1.33,
+        "prior_year": 0.47,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 101575000,
-        "prior_year": 98365000,
+        "current": 98692000,
+        "prior_year": 41005000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1547078000,
-        "prior_year": 1308442000,
+        "current": 1360155000,
+        "prior_year": 1119914000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1973266/000119312526330592/tko-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1973266/000119312526447266/tko-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1973266/000119312526330592/tko-20260630.htm"
+    },
+    {
+      "accession": "0001193125-26-447266",
+      "filed": "2026-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.33,
+          "prior_year": 0.47,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 98692000,
+          "prior_year": 41005000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1360155000,
+          "prior_year": 1119914000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1973266/000119312526447266/tko-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TKO",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

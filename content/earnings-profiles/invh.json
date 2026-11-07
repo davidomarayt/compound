@@ -1,0 +1,125 @@
+{
+  "cik": 1687229,
+  "company": "Invitation Homes",
+  "latest": {
+    "accession": "0001687229-26-000056",
+    "filed": "2026-10-29",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.27,
+        "prior_year": 0.22,
+        "tag": "us-gaap:EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 158487000,
+        "prior_year": 136738000,
+        "tag": "us-gaap:NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 731278000,
+        "prior_year": 688166000,
+        "tag": "us-gaap:Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1687229/000168722926000056/invh-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001687229-26-000032",
+      "filed": "2026-04-30",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.26,
+          "prior_year": 0.27,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 160508000,
+          "prior_year": 165745000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 734112000,
+          "prior_year": 674479000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1687229/000168722926000032/invh-20260331.htm"
+    },
+    {
+      "accession": "0001687229-26-000045",
+      "filed": "2026-07-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.37,
+          "prior_year": 0.23,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 218847000,
+          "prior_year": 140887000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 747550000,
+          "prior_year": 681401000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1687229/000168722926000045/invh-20260630.htm"
+    },
+    {
+      "accession": "0001687229-26-000056",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.27,
+          "prior_year": 0.22,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 158487000,
+          "prior_year": 136738000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 731278000,
+          "prior_year": 688166000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1687229/000168722926000056/invh-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "INVH",
+  "updated": "2026-11-07"
+}

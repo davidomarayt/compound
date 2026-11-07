@@ -2,33 +2,33 @@
   "cik": 831259,
   "company": "Freeport-McMoRan",
   "latest": {
-    "accession": "0000831259-26-000036",
-    "filed": "2026-08-06",
+    "accession": "0000831259-26-000051",
+    "filed": "2026-11-06",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.68,
-        "prior_year": 0.53,
+        "current": 0.81,
+        "prior_year": 0.46,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 984000000,
-        "prior_year": 772000000,
+        "current": 1174000000,
+        "prior_year": 674000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 6917000000,
-        "prior_year": 7526000000,
+        "current": 7425000000,
+        "prior_year": 6819000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/831259/000083125926000036/fcx-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/831259/000083125926000051/fcx-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/831259/000083125926000036/fcx-20260630.htm"
+    },
+    {
+      "accession": "0000831259-26-000051",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.81,
+          "prior_year": 0.46,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1174000000,
+          "prior_year": 674000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7425000000,
+          "prior_year": 6819000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/831259/000083125926000051/fcx-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "FCX",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

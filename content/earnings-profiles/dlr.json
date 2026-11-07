@@ -2,33 +2,33 @@
   "cik": 1297996,
   "company": "Digital Realty",
   "latest": {
-    "fy": 2026,
+    "accession": "0001104659-26-120710",
+    "filed": "2026-10-30",
+    "form": "10-Q",
     "fp": "Q3",
-    "period_end": "2026-09-30",
-    "filed": "2026-10-29",
-    "form": "8-K",
-    "accession": "0001104659-26-120212",
-    "source": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926120212/dlr-ex99d1.htm",
+    "fy": 2026,
     "metrics": {
-      "revenue": {
-        "current": 1902418000.0,
-        "prior_year": 1577234000.0,
-        "unit": "USD",
-        "tag": "SEC earnings release; GAAP; net income attributable to Digital Realty Trust, consistent with existing profile; revenue includes promote income"
-      },
-      "net_income": {
-        "current": 195346000.0,
-        "prior_year": 67812000.0,
-        "unit": "USD",
-        "tag": "SEC earnings release; GAAP; net income attributable to Digital Realty Trust, consistent with existing profile; revenue includes promote income"
-      },
       "diluted_eps": {
         "current": 0.48,
         "prior_year": 0.15,
-        "unit": "USD/shares",
-        "tag": "SEC earnings release; GAAP; net income attributable to Digital Realty Trust, consistent with existing profile; revenue includes promote income"
+        "tag": "us-gaap:EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 195346000,
+        "prior_year": 67812000,
+        "tag": "us-gaap:NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1902418000,
+        "prior_year": 1577234000,
+        "tag": "us-gaap:Revenues",
+        "unit": "USD"
       }
-    }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926120710/dlr-20260930x10q.htm"
   },
   "periods": [
     {
@@ -61,36 +61,65 @@
       "source": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926054255/dlr-20260331x10q.htm"
     },
     {
+      "accession": "0001104659-26-089296",
+      "filed": "2026-07-31",
+      "form": "10-Q",
+      "fp": "Q2",
       "fy": 2026,
-      "fp": "Q3",
-      "period_end": "2026-09-30",
-      "filed": "2026-10-29",
-      "form": "8-K",
-      "accession": "0001104659-26-120212",
-      "source": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926120212/dlr-ex99d1.htm",
       "metrics": {
-        "revenue": {
-          "current": 1902418000.0,
-          "prior_year": 1577234000.0,
-          "unit": "USD",
-          "tag": "SEC earnings release; GAAP; net income attributable to Digital Realty Trust, consistent with existing profile; revenue includes promote income"
+        "diluted_eps": {
+          "current": 1.21,
+          "prior_year": 2.94,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
         },
         "net_income": {
-          "current": 195346000.0,
-          "prior_year": 67812000.0,
-          "unit": "USD",
-          "tag": "SEC earnings release; GAAP; net income attributable to Digital Realty Trust, consistent with existing profile; revenue includes promote income"
+          "current": 453289000,
+          "prior_year": 1032156000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
         },
+        "revenue": {
+          "current": 1924040000,
+          "prior_year": 1493150000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926089296/dlr-20260630x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-120710",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
         "diluted_eps": {
           "current": 0.48,
           "prior_year": 0.15,
-          "unit": "USD/shares",
-          "tag": "SEC earnings release; GAAP; net income attributable to Digital Realty Trust, consistent with existing profile; revenue includes promote income"
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 195346000,
+          "prior_year": 67812000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1902418000,
+          "prior_year": 1577234000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
         }
-      }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926120710/dlr-20260930x10q.htm"
     }
   ],
   "source_type": "US SEC filings and furnished earnings releases; no analyst estimates",
   "ticker": "DLR",
-  "updated": "2026-10-29"
+  "updated": "2026-11-07"
 }

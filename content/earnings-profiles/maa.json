@@ -2,33 +2,33 @@
   "cik": 912595,
   "company": "Mid-America Apartment Communities",
   "latest": {
-    "accession": "0001193125-26-197331",
-    "filed": "2026-04-30",
+    "accession": "0001193125-26-437813",
+    "filed": "2026-10-29",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.06,
-        "prior_year": 1.54,
-        "tag": "EarningsPerShareDiluted",
+        "current": 0.72,
+        "prior_year": 0.84,
+        "tag": "us-gaap:EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 124359000,
-        "prior_year": 181673000,
-        "tag": "NetIncomeLoss",
+        "current": 83998000,
+        "prior_year": 99538000,
+        "tag": "us-gaap:NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 553725000,
-        "prior_year": 549295000,
-        "tag": "Revenues",
+        "current": 560130000,
+        "prior_year": 554373000,
+        "tag": "us-gaap:Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/912595/000119312526197331/maa-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/912595/000119312526437813/maa-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/912595/000119312526197331/maa-20260331.htm"
+    },
+    {
+      "accession": "0001193125-26-326153",
+      "filed": "2026-07-30",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.04,
+          "prior_year": 0.92,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 121750000,
+          "prior_year": 108127000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 555127000,
+          "prior_year": 549902000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/912595/000119312526326153/maa-20260630.htm"
+    },
+    {
+      "accession": "0001193125-26-437813",
+      "filed": "2026-10-29",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.72,
+          "prior_year": 0.84,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 83998000,
+          "prior_year": 99538000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 560130000,
+          "prior_year": 554373000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/912595/000119312526437813/maa-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "MAA",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

@@ -1,0 +1,125 @@
+{
+  "cik": 1075531,
+  "company": "Booking Holdings",
+  "latest": {
+    "accession": "0001075531-26-000045",
+    "filed": "2026-11-03",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 3.61,
+        "prior_year": 3.38,
+        "tag": "us-gaap:EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 2717000000,
+        "prior_year": 2748000000,
+        "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 8893000000,
+        "prior_year": 9008000000,
+        "tag": "us-gaap:Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000045/bkng-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001075531-26-000025",
+      "filed": "2026-04-28",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.36,
+          "prior_year": 0.4,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1083000000,
+          "prior_year": 333000000,
+          "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5532000000,
+          "prior_year": 4762000000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000025/bkng-20260331.htm"
+    },
+    {
+      "accession": "0001075531-26-000037",
+      "filed": "2026-08-04",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.53,
+          "prior_year": 1.1,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1950000000,
+          "prior_year": 895000000,
+          "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7352000000,
+          "prior_year": 6798000000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000037/bkng-20260630.htm"
+    },
+    {
+      "accession": "0001075531-26-000045",
+      "filed": "2026-11-03",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.61,
+          "prior_year": 3.38,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2717000000,
+          "prior_year": 2748000000,
+          "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 8893000000,
+          "prior_year": 9008000000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1075531/000107553126000045/bkng-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "BKNG",
+  "updated": "2026-11-07"
+}

@@ -2,33 +2,33 @@
   "cik": 34903,
   "company": "Federal Realty Investment Trust",
   "latest": {
-    "accession": "0000034903-26-000026",
-    "filed": "2026-05-01",
+    "accession": "0000034903-26-000056",
+    "filed": "2026-10-30",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.81,
-        "prior_year": 0.72,
-        "tag": "EarningsPerShareDiluted",
+        "current": 0.74,
+        "prior_year": 0.69,
+        "tag": "us-gaap:EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 159099000,
-        "prior_year": 63768000,
-        "tag": "NetIncomeLoss",
+        "current": 66169000,
+        "prior_year": 61649000,
+        "tag": "us-gaap:NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 341084000,
-        "prior_year": 309154000,
-        "tag": "Revenues",
+        "current": 339024000,
+        "prior_year": 322253000,
+        "tag": "us-gaap:Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000026/frt-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000056/frt-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000026/frt-20260331.htm"
+    },
+    {
+      "accession": "0000034903-26-000042",
+      "filed": "2026-07-31",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.97,
+          "prior_year": 1.78,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 85702000,
+          "prior_year": 155916000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 335706000,
+          "prior_year": 311523000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000042/frt-20260630.htm"
+    },
+    {
+      "accession": "0000034903-26-000056",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.74,
+          "prior_year": 0.69,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 66169000,
+          "prior_year": 61649000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 339024000,
+          "prior_year": 322253000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/34903/000003490326000056/frt-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "FRT",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

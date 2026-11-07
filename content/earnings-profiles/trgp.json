@@ -2,33 +2,33 @@
   "cik": 1389170,
   "company": "Targa Resources",
   "latest": {
-    "accession": "0001193125-26-337729",
-    "filed": "2026-08-06",
+    "accession": "0001193125-26-449541",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 3.54,
-        "prior_year": 2.87,
+        "current": 3.04,
+        "prior_year": 2.2,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 764600000,
-        "prior_year": 629100000,
+        "current": 658200000,
+        "prior_year": 478400000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4440100000,
-        "prior_year": 4260100000,
+        "current": 5598600000,
+        "prior_year": 4151200000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1389170/000119312526337729/trgp-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1389170/000119312526449541/trgp-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1389170/000119312526337729/trgp-20260630.htm"
+    },
+    {
+      "accession": "0001193125-26-449541",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.04,
+          "prior_year": 2.2,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 658200000,
+          "prior_year": 478400000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5598600000,
+          "prior_year": 4151200000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1389170/000119312526449541/trgp-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TRGP",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

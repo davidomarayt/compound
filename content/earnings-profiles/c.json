@@ -2,33 +2,33 @@
   "cik": 831001,
   "company": "Citigroup",
   "latest": {
-    "accession": "0001104659-26-115323",
-    "filed": "2026-10-13",
-    "form": "8-K",
+    "accession": "0000831001-26-000056",
+    "filed": "2026-11-05",
+    "form": "10-Q",
     "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
         "current": 2.85,
         "prior_year": 1.86,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "us-gaap:EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
         "current": 5245000000,
         "prior_year": 3752000000,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "us-gaap:NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
         "current": 23845000000,
         "prior_year": 22090000000,
-        "tag": "SEC reported; reviewed statement",
+        "tag": "us-gaap:InterestIncomeExpenseNet + us-gaap:NoninterestIncome",
         "unit": "USD"
       }
     },
     "period_end": "2026-09-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/831001/000110465926115323/c-ex99d1.htm"
+    "source": "https://www.sec.gov/Archives/edgar/data/831001/000083100126000056/c-20260930.htm"
   },
   "periods": [
     {
@@ -90,36 +90,36 @@
       "source": "https://www.sec.gov/Archives/edgar/data/831001/000083100126000045/c-20260630.htm"
     },
     {
-      "accession": "0001104659-26-115323",
-      "filed": "2026-10-13",
-      "form": "8-K",
+      "accession": "0000831001-26-000056",
+      "filed": "2026-11-05",
+      "form": "10-Q",
       "fp": "Q3",
       "fy": 2026,
       "metrics": {
         "diluted_eps": {
           "current": 2.85,
           "prior_year": 1.86,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "us-gaap:EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
           "current": 5245000000,
           "prior_year": 3752000000,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "us-gaap:NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
           "current": 23845000000,
           "prior_year": 22090000000,
-          "tag": "SEC reported; reviewed statement",
+          "tag": "us-gaap:InterestIncomeExpenseNet + us-gaap:NoninterestIncome",
           "unit": "USD"
         }
       },
       "period_end": "2026-09-30",
-      "source": "https://www.sec.gov/Archives/edgar/data/831001/000110465926115323/c-ex99d1.htm"
+      "source": "https://www.sec.gov/Archives/edgar/data/831001/000083100126000056/c-20260930.htm"
     }
   ],
   "source_type": "US SEC filings and company earnings releases; no analyst estimates",
   "ticker": "C",
-  "updated": "2026-10-26"
+  "updated": "2026-11-07"
 }

@@ -1,0 +1,125 @@
+{
+  "cik": 1176948,
+  "company": "Ares Management",
+  "latest": {
+    "accession": "0001628280-26-071628",
+    "filed": "2026-11-06",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.21,
+        "prior_year": 1.15,
+        "tag": "us-gaap:NetIncomeLossNetOfTaxPerOutstandingLimitedPartnershipUnitDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 85330000,
+        "prior_year": 288882000,
+        "tag": "us-gaap:NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 1433399000,
+        "prior_year": 1657628000,
+        "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1176948/000162828026071628/ares-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-032990",
+      "filed": "2026-05-08",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.46,
+          "prior_year": 0.0,
+          "tag": "us-gaap:NetIncomeLossNetOfTaxPerOutstandingLimitedPartnershipUnitDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 142589000,
+          "prior_year": 47170000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1396436000,
+          "prior_year": 1088805000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1176948/000162828026032990/ares-20260331.htm"
+    },
+    {
+      "accession": "0001628280-26-054538",
+      "filed": "2026-08-07",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.49,
+          "prior_year": 0.46,
+          "tag": "us-gaap:NetIncomeLossNetOfTaxPerOutstandingLimitedPartnershipUnitDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 150635000,
+          "prior_year": 137062000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1428610000,
+          "prior_year": 1350128000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1176948/000162828026054538/ares-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-071628",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.21,
+          "prior_year": 1.15,
+          "tag": "us-gaap:NetIncomeLossNetOfTaxPerOutstandingLimitedPartnershipUnitDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 85330000,
+          "prior_year": 288882000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1433399000,
+          "prior_year": 1657628000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1176948/000162828026071628/ares-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "ARES",
+  "updated": "2026-11-07"
+}

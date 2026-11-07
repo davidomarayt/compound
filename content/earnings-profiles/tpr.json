@@ -2,33 +2,33 @@
   "cik": 1116132,
   "company": "Tapestry, Inc.",
   "latest": {
-    "accession": "0001116132-26-000018",
-    "filed": "2026-08-13",
-    "form": "10-K",
-    "fp": "FY",
-    "fy": 2026,
+    "accession": "0001116132-26-000031",
+    "filed": "2026-11-05",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 7.27,
-        "prior_year": 0.82,
+        "current": 1.76,
+        "prior_year": 1.28,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1527700000,
-        "prior_year": 183200000,
+        "current": 360000000,
+        "prior_year": 275000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 8004200000,
-        "prior_year": 7010700000,
+        "current": 1894000000,
+        "prior_year": 1705000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-27",
-    "source": "https://www.sec.gov/Archives/edgar/data/1116132/000111613226000018/tpr-20260627.htm"
+    "period_end": "2026-09-26",
+    "source": "https://www.sec.gov/Archives/edgar/data/1116132/000111613226000031/tpr-20260926.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-27",
       "source": "https://www.sec.gov/Archives/edgar/data/1116132/000111613226000018/tpr-20260627.htm"
+    },
+    {
+      "accession": "0001116132-26-000031",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.76,
+          "prior_year": 1.28,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 360000000,
+          "prior_year": 275000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1894000000,
+          "prior_year": 1705000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-26",
+      "source": "https://www.sec.gov/Archives/edgar/data/1116132/000111613226000031/tpr-20260926.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TPR",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

@@ -1,0 +1,125 @@
+{
+  "cik": 865752,
+  "company": "Monster Beverage",
+  "latest": {
+    "accession": "0001104659-26-123503",
+    "filed": "2026-11-06",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.29,
+        "prior_year": 0.27,
+        "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 568427000,
+        "prior_year": 524455000,
+        "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2563053000,
+        "prior_year": 2197139000,
+        "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/865752/000110465926123503/mnst-20260930x10q.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001104659-26-057398",
+      "filed": "2026-05-08",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.58,
+          "prior_year": 0.45,
+          "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 569485000,
+          "prior_year": 442993000,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2353291000,
+          "prior_year": 1854558000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/865752/000110465926057398/mnst-20260331x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-092193",
+      "filed": "2026-08-07",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.59,
+          "prior_year": 0.5,
+          "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 584540000,
+          "prior_year": 488794000,
+          "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2537473000,
+          "prior_year": 2111593000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/865752/000110465926092193/mnst-20260630x10q.htm"
+    },
+    {
+      "accession": "0001104659-26-123503",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.29,
+          "prior_year": 0.27,
+          "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 568427000,
+          "prior_year": 524455000,
+          "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2563053000,
+          "prior_year": 2197139000,
+          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/865752/000110465926123503/mnst-20260930x10q.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "MNST",
+  "updated": "2026-11-07"
+}

@@ -2,33 +2,33 @@
   "cik": 1123360,
   "company": "Global Payments",
   "latest": {
-    "accession": "0001123360-26-000084",
-    "filed": "2026-08-05",
+    "accession": "0001123360-26-000093",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.05,
-        "prior_year": 0.99,
+        "current": 1.06,
+        "prior_year": 2.64,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 12971000,
-        "prior_year": 241640000,
+        "current": 280888000,
+        "prior_year": 635209000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3320791000,
-        "prior_year": 1969287000,
+        "current": 3306284000,
+        "prior_year": 2019509000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1123360/000112336026000084/gpn-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1123360/000112336026000093/gpn-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1123360/000112336026000084/gpn-20260630.htm"
+    },
+    {
+      "accession": "0001123360-26-000093",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.06,
+          "prior_year": 2.64,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 280888000,
+          "prior_year": 635209000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3306284000,
+          "prior_year": 2019509000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1123360/000112336026000093/gpn-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "GPN",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

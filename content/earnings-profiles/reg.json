@@ -1,0 +1,125 @@
+{
+  "cik": 910606,
+  "company": "Regency Centers",
+  "latest": {
+    "accession": "0001193125-26-451423",
+    "filed": "2026-11-06",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.41,
+        "prior_year": 0.58,
+        "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 78538000,
+        "prior_year": 109373000,
+        "tag": "us-gaap:NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 419058000,
+        "prior_year": 387570000,
+        "tag": "us-gaap:Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/910606/000119312526451423/reg-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001193125-26-203537",
+      "filed": "2026-05-04",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.68,
+          "prior_year": 0.58,
+          "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 128549000,
+          "prior_year": 109587000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 412453000,
+          "prior_year": 380912000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/910606/000119312526203537/reg-20260331.htm"
+    },
+    {
+      "accession": "0001193125-26-330021",
+      "filed": "2026-08-03",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.61,
+          "prior_year": 0.56,
+          "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 115764000,
+          "prior_year": 106021000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 413510000,
+          "prior_year": 380848000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/910606/000119312526330021/reg-20260630.htm"
+    },
+    {
+      "accession": "0001193125-26-451423",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.41,
+          "prior_year": 0.58,
+          "tag": "us-gaap:IncomeLossFromContinuingOperationsPerDilutedShare",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 78538000,
+          "prior_year": 109373000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 419058000,
+          "prior_year": 387570000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/910606/000119312526451423/reg-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "REG",
+  "updated": "2026-11-07"
+}

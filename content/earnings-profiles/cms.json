@@ -2,33 +2,33 @@
   "cik": 811156,
   "company": "CMS Energy",
   "latest": {
-    "accession": "0000811156-26-000028",
-    "filed": "2026-07-28",
+    "accession": "0000811156-26-000032",
+    "filed": "2026-10-27",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.37,
-        "prior_year": 0.66,
-        "tag": "EarningsPerShareDiluted",
+        "current": 0.39,
+        "prior_year": 0.92,
+        "tag": "us-gaap:EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 120000000,
-        "prior_year": 201000000,
-        "tag": "NetIncomeLoss",
+        "current": 123000000,
+        "prior_year": 277000000,
+        "tag": "us-gaap:NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1808000000,
-        "prior_year": 1798000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 2183000000,
+        "prior_year": 2021000000,
+        "tag": "us-gaap:Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/811156/000081115626000028/cms-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/811156/000081115626000032/cms-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/811156/000081115626000028/cms-20260630.htm"
+    },
+    {
+      "accession": "0000811156-26-000032",
+      "filed": "2026-10-27",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.39,
+          "prior_year": 0.92,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 123000000,
+          "prior_year": 277000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2183000000,
+          "prior_year": 2021000000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/811156/000081115626000032/cms-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CMS",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

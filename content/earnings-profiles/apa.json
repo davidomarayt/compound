@@ -1,0 +1,125 @@
+{
+  "cik": 1841666,
+  "company": "APA Corporation",
+  "latest": {
+    "accession": "0001841666-26-000071",
+    "filed": "2026-11-05",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 2.0,
+        "prior_year": 0.57,
+        "tag": "us-gaap:EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 698000000,
+        "prior_year": 205000000,
+        "tag": "us-gaap:NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2812000000,
+        "prior_year": 2018000000,
+        "tag": "apa:RevenuesAndOther",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1841666/000184166626000071/apa-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001841666-26-000034",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.26,
+          "prior_year": 0.96,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 446000000,
+          "prior_year": 347000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2215000000,
+          "prior_year": 2612000000,
+          "tag": "apa:RevenuesAndOther",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1841666/000184166626000034/apa-20260331.htm"
+    },
+    {
+      "accession": "0001841666-26-000053",
+      "filed": "2026-08-06",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.11,
+          "prior_year": 1.67,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 747000000,
+          "prior_year": 603000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2399000000,
+          "prior_year": 2612000000,
+          "tag": "apa:RevenuesAndOther",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1841666/000184166626000053/apa-20260630.htm"
+    },
+    {
+      "accession": "0001841666-26-000071",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.0,
+          "prior_year": 0.57,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 698000000,
+          "prior_year": 205000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2812000000,
+          "prior_year": 2018000000,
+          "tag": "apa:RevenuesAndOther",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1841666/000184166626000071/apa-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "APA",
+  "updated": "2026-11-07"
+}

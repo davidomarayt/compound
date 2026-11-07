@@ -2,33 +2,33 @@
   "cik": 715957,
   "company": "Dominion Energy",
   "latest": {
-    "accession": "0001193125-26-200275",
-    "filed": "2026-05-01",
+    "accession": "0001193125-26-440697",
+    "filed": "2026-10-30",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.69,
-        "prior_year": 0.77,
-        "tag": "EarningsPerShareDiluted",
+        "current": 1.3,
+        "prior_year": 1.16,
+        "tag": "us-gaap:EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 621000000,
-        "prior_year": 665000000,
-        "tag": "NetIncomeLoss",
+        "current": 1160000000,
+        "prior_year": 1006000000,
+        "tag": "us-gaap:NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 5091000000,
-        "prior_year": 4085000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 5617000000,
+        "prior_year": 4527000000,
+        "tag": "us-gaap:Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/715957/000119312526200275/d-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/715957/000119312526440697/d-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/715957/000119312526200275/d-20260331.htm"
+    },
+    {
+      "accession": "0001193125-26-327487",
+      "filed": "2026-07-31",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.37,
+          "prior_year": 0.88,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 340000000,
+          "prior_year": 760000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4480000000,
+          "prior_year": 3810000000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/715957/000119312526327487/d-20260630.htm"
+    },
+    {
+      "accession": "0001193125-26-440697",
+      "filed": "2026-10-30",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.3,
+          "prior_year": 1.16,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1160000000,
+          "prior_year": 1006000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5617000000,
+          "prior_year": 4527000000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/715957/000119312526440697/d-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "D",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

@@ -17,7 +17,7 @@
 {% endif %}
 <section class="earnings-section" aria-labelledby="earnings-latest">
   <div class="earnings-heading"><p class="eyebrow">ONE LIVE REPORT PER COMPANY</p><h2 id="earnings-latest">Latest company earnings</h2><span>10 most recently filed reports</span></div>
-  <p class="earnings-lede">Each business has one constantly updated earnings dashboard. The 10 most recently filed SEC-verified reports appear below. Search all {{ report_total }} verified reports by company name or ticker.</p>
+  <p class="earnings-lede">Each business has one constantly updated earnings dashboard. The ten most recent company releases and filings appear below. Search all {{ report_total }} verified reports by company name or ticker.</p>
   <div class="earnings-directory-controls earnings-report-controls">
     <div><label for="earnings-report-search">Search all verified company earnings</label><input id="earnings-report-search" data-earnings-report-search type="search" placeholder="Company or ticker, e.g. Nvidia or NVDA" autocomplete="off" aria-controls="earnings-report-results"></div>
   </div>
@@ -26,9 +26,9 @@
   <div class="earnings-cards" data-earnings-recent>
     {% for company in report_cards %}
     <article class="earnings-card" data-earnings-recent-card>
-      <p class="earnings-kicker">SEC-VERIFIED FINANCIAL REPORT · FILED {{ company.report.latest_filed or 'Date unavailable' }}</p>
+      <p class="earnings-kicker">{% if company.from_release %}COMPANY RESULTS · PUBLISHED{% else %}SEC-VERIFIED FINANCIAL REPORT · FILED{% endif %} {{ company.report.latest_filed or 'Date unavailable' }}</p>
       <h3><a href="{{ company.url }}">{{ company.name }} ({{ company.symbol }})</a></h3>
-      <p><strong>{{ company.report.latest_display }}</strong> · Period ended {{ company.report.latest_end }}. {{ company.report.summary }}. Financial tables and official SEC filing on the company page.</p>
+      <p><strong>{{ company.report.latest_display }}</strong> · Period ended {{ company.report.latest_end }}. {% if company.from_release %}{{ company.report.summary }}{% else %}{{ company.report.summary }}. Financial tables and official SEC filing on the company page.{% endif %}</p>
       <a class="earnings-read" href="{{ company.url }}">Open company earnings →</a>
     </article>
     {% endfor %}
@@ -47,7 +47,7 @@
 <p class="earnings-directory-count" data-earnings-count aria-live="polite">Showing {{ registry.company_count }} active companies</p>
 <div class="earnings-directory-scroll" tabindex="0" role="region" aria-label="S&amp;P 500 listed companies">
 <table class="earnings-directory"><thead><tr><th scope="col">Company</th><th scope="col">Ticker(s)</th><th scope="col">Sector</th><th scope="col">Earnings</th></tr></thead><tbody>
-{% for company in companies %}<tr data-earnings-row data-name="{{ company.name|lower }}" data-symbols="{{ company.symbols|join(' ')|lower }}" data-sector="{{ company.sector }}"><th scope="row"><a href="/stocks/{{ company.symbol|lower }}/">{{ company.name }}</a></th><td>{{ company.symbols|join(', ') }}</td><td>{{ company.sector }}</td><td>{% if report_counts.get(company.cik|string, 0) %}{{ report_counts[company.cik|string] }} verified{% else %}Awaiting filing{% endif %}</td></tr>{% endfor %}
+{% for company in companies %}<tr data-earnings-row data-name="{{ company.name|lower }}" data-symbols="{{ company.symbols|join(' ')|lower }}" data-sector="{{ company.sector }}"><th scope="row"><a href="/stocks/{{ company.symbol|lower }}/">{{ company.name }}</a></th><td>{{ company.symbols|join(', ') }}</td><td>{{ company.sector }}</td><td>{% if releases and company.symbol|lower in releases %}Company results{% elif report_counts.get(company.cik|string, 0) %}{{ report_counts[company.cik|string] }} verified{% else %}Awaiting filing{% endif %}</td></tr>{% endfor %}
 </tbody></table></div>
 <p class="earnings-directory-empty" data-earnings-empty hidden>No companies match the search.</p>
 <p class="earnings-directory-source">Membership reference: <a href="{{ registry.source }}" rel="noopener">public constituent table</a>. Company filing links point directly to the SEC. Company profiles are excluded from search indexing until a verified earnings report or relevant original coverage is published.</p>

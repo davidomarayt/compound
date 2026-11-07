@@ -1264,6 +1264,19 @@ def build_site(settings: Settings) -> dict:
         c["slug"]: load_company_report(settings.content_dir, c["ticker"], legacy_earnings_articles)
         for c in extra_listed
     }
+    releases_path = settings.content_dir / "earnings-releases.json"
+    published_releases = json.loads(releases_path.read_text()) if releases_path.exists() else {}
+    releases = dict(published_releases)
+    for company in registry_members + extra_listed:
+        if "cik" in company:
+            slug = company["symbol"].lower()
+            dashboard = company_dashboards[str(company["cik"])]
+        else:
+            slug = company["slug"]
+            dashboard = extra_dashboards[slug]
+        if slug in releases and dashboard and dashboard["latest_end"] >= releases[slug]["ended"]:
+            del releases[slug]
+
     listed_stories = {c["slug"]: watchlist_stories(c) for c in extra_listed}
     private_stories = {c["slug"]: watchlist_stories(c, private=True) for c in private_companies}
     for c in extra_listed:
@@ -1292,7 +1305,23 @@ def build_site(settings: Settings) -> dict:
          "url": f'/stocks/{c["slug"]}/', "report": extra_dashboards[c["slug"]]}
         for c in extra_listed if extra_dashboards[c["slug"]]
     ]
-    recent_earnings, report_search_index = prepare_recent_earnings(archive_companies, limit=10)
+    def archive_result(entry):
+        slug = entry["url"].strip("/").split("/")[-1]
+        release = releases.get(slug)
+        if release:
+            return {**entry, "report": {"latest_display": release["period"],
+                    "latest_end": release["ended"], "latest_filed": release["published"],
+                    "summary": release["summary"]}, "from_release": True}
+        return entry
+
+    archive_entries = {entry["url"]: archive_result(entry) for entry in archive_companies}
+    for c in active_earnings_companies + extra_listed:
+        symbol = c.get("symbol") or c["ticker"]
+        slug = c.get("slug") or symbol.lower()
+        url = f"/stocks/{slug}/"
+        if slug in releases and url not in archive_entries:
+            archive_entries[url] = archive_result({"name": c["name"], "symbol": symbol, "url": url})
+    recent_earnings, report_search_index = prepare_recent_earnings(list(archive_entries.values()), limit=10)
     # Curated internal links lead crawlers to substantive source-verified reports.
     archive_by_ticker = {c["symbol"].upper(): c for c in archive_companies}
     priority_earnings = [
@@ -1309,18 +1338,18 @@ def build_site(settings: Settings) -> dict:
         title="Company Earnings and Financial Results", pillar="wealth",
         report_cards=recent_earnings, report_total=len(report_search_index),
         report_search_index=report_search_index, priority_earnings=priority_earnings,
-        ads_allowed=True, registry=earnings_registry,
+        ads_allowed=True, registry=earnings_registry, releases=releases,
         companies=active_earnings_companies, sectors=sector_names, report_counts=report_counts))
     # One directory of all public companies; do not visually segregate companies
     # based on which source register they came from.
     stock_directory_companies = sorted(
         [
             {**company, "slug": company["symbol"].lower(),
-             "report_count": report_counts.get(str(company["cik"]), 0)}
+             "report_count": int(bool(report_counts.get(str(company["cik"]), 0) or company["symbol"].lower() in releases))}
             for company in active_earnings_companies
         ] + [
             {**company, "symbols": [company["ticker"]],
-             "report_count": int(extra_dashboards[company["slug"]] is not None)}
+             "report_count": int(bool(extra_dashboards[company["slug"]] or company["slug"] in releases))}
             for company in extra_listed
         ],
         key=lambda company: (company["name"].casefold(), company["slug"]),
@@ -1336,7 +1365,7 @@ def build_site(settings: Settings) -> dict:
         company_symbol = company["symbol"].lower()
         cik = str(company["cik"])
         stories = company_stories[cik]
-        is_covered = stock_coverage(company)
+        is_covered = stock_coverage(company) or company_symbol in releases
         analysis_path = settings.content_dir / "stock-research" / f"{company_symbol}.md"
         earnings_analysis = render_markdown(analysis_path.read_text(encoding="utf-8")) if analysis_path.is_file() else ""
         _write(
@@ -1344,7 +1373,8 @@ def build_site(settings: Settings) -> dict:
             env.get_template("earnings_company.html").render(
                 title=f'{company["name"]} ({company["symbol"]}) Stock',
                 pillar="wealth", company=company, report=company_dashboards[cik], reports=company_reports[cik],
-                seo=build_earnings_seo(company, company_dashboards[cik]),
+                release=releases.get(company_symbol),
+                seo=None if company_symbol in releases else build_earnings_seo(company, company_dashboards[cik]),
                 earnings_analysis=earnings_analysis,
                 news=[a for a in stories if is_news_article(a)],
                 research=[a for a in stories if not is_news_article(a)],
@@ -1369,11 +1399,11 @@ def build_site(settings: Settings) -> dict:
         _write(out / "stocks" / c["slug"] / "index.html",
                env.get_template("watchlist_stock.html").render(
                    title=f'{c["name"]} ({c["ticker"]}) Stock Research', pillar="wealth",
-                   company=c, news=[a for a in stories if is_news_article(a)],
+                   company=c, release=releases.get(c["slug"]), news=[a for a in stories if is_news_article(a)],
                    research=[a for a in stories if not is_news_article(a)],
                    report=extra_dashboards[c["slug"]], reports=extra_reports[c["slug"]],
-                   has_coverage=bool(stories or extra_dashboards[c["slug"]]),
-                   ads_allowed=bool(stories or extra_dashboards[c["slug"]]),
+                   has_coverage=bool(stories or extra_dashboards[c["slug"]] or c["slug"] in releases),
+                   ads_allowed=bool(stories or extra_dashboards[c["slug"]] or c["slug"] in releases),
                    tradingview_panel=render_tradingview_panel(c["tv_symbol"], c["name"], "advanced")))
     _write(out / "companies" / "index.html", env.get_template("companies_hub.html").render(
         title="Private Company Research Directory", pillar="wealth",

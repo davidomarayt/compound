@@ -2,33 +2,33 @@
   "cik": 1137774,
   "company": "Prudential Financial",
   "latest": {
-    "accession": "0001137774-26-000176",
-    "filed": "2026-08-05",
+    "accession": "0001137774-26-000221",
+    "filed": "2026-11-04",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.8,
-        "prior_year": 1.48,
+        "current": 3.96,
+        "prior_year": 4.01,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 985000000,
-        "prior_year": 533000000,
+        "current": 1388000000,
+        "prior_year": 1431000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 15661000000,
-        "prior_year": 13726000000,
+        "current": 14449000000,
+        "prior_year": 17888000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1137774/000113777426000176/pru-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1137774/000113777426000221/pru-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1137774/000113777426000176/pru-20260630.htm"
+    },
+    {
+      "accession": "0001137774-26-000221",
+      "filed": "2026-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.96,
+          "prior_year": 4.01,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1388000000,
+          "prior_year": 1431000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 14449000000,
+          "prior_year": 17888000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1137774/000113777426000221/pru-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "PRU",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

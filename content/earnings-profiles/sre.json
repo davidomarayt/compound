@@ -2,33 +2,33 @@
   "cik": 1032208,
   "company": "Sempra",
   "latest": {
-    "accession": "0001032208-26-000030",
-    "filed": "2026-05-07",
+    "accession": "0001032208-26-000054",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.58,
-        "prior_year": 1.39,
-        "tag": "EarningsPerShareDiluted",
+        "current": 1.34,
+        "prior_year": 0.12,
+        "tag": "us-gaap:EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1037000000,
-        "prior_year": 917000000,
-        "tag": "NetIncomeLoss",
+        "current": 883000000,
+        "prior_year": 95000000,
+        "tag": "us-gaap:NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3428000000,
-        "prior_year": 3681000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 3191000000,
+        "prior_year": 3151000000,
+        "tag": "us-gaap:RegulatedAndUnregulatedOperatingRevenue",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1032208/000103220826000030/sre-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1032208/000103220826000054/sre-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1032208/000103220826000030/sre-20260331.htm"
+    },
+    {
+      "accession": "0001032208-26-000045",
+      "filed": "2026-08-06",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.21,
+          "prior_year": 0.71,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 797000000,
+          "prior_year": 473000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2997000000,
+          "prior_year": 3000000000,
+          "tag": "us-gaap:RegulatedAndUnregulatedOperatingRevenue",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1032208/000103220826000045/sre-20260630.htm"
+    },
+    {
+      "accession": "0001032208-26-000054",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.34,
+          "prior_year": 0.12,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 883000000,
+          "prior_year": 95000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3191000000,
+          "prior_year": 3151000000,
+          "tag": "us-gaap:RegulatedAndUnregulatedOperatingRevenue",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1032208/000103220826000054/sre-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "SRE",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

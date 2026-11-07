@@ -2,33 +2,33 @@
   "cik": 1136893,
   "company": "Fidelity National Information Services",
   "latest": {
-    "accession": "0001136893-26-000050",
-    "filed": "2026-08-04",
+    "accession": "0001136893-26-000063",
+    "filed": "2026-11-04",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.45,
-        "prior_year": -0.9,
+        "current": 0.69,
+        "prior_year": 0.5,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 231000000,
-        "prior_year": -470000000,
+        "current": 356000000,
+        "prior_year": 264000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3377000000,
-        "prior_year": 2616000000,
+        "current": 3454000000,
+        "prior_year": 2717000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689326000050/fis-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689326000063/fis-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689326000050/fis-20260630.htm"
+    },
+    {
+      "accession": "0001136893-26-000063",
+      "filed": "2026-11-04",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.69,
+          "prior_year": 0.5,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 356000000,
+          "prior_year": 264000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3454000000,
+          "prior_year": 2717000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1136893/000113689326000063/fis-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "FIS",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

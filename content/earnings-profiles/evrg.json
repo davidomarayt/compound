@@ -2,33 +2,33 @@
   "cik": 1711269,
   "company": "Evergy",
   "latest": {
-    "accession": "0001711269-26-000057",
-    "filed": "2026-05-07",
+    "accession": "0001711269-26-000117",
+    "filed": "2026-11-05",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.64,
-        "prior_year": 0.54,
-        "tag": "EarningsPerShareDiluted",
+        "current": 2.59,
+        "prior_year": 2.03,
+        "tag": "us-gaap:EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 151500000,
-        "prior_year": 125000000,
-        "tag": "NetIncomeLoss",
+        "current": 612900000,
+        "prior_year": 475000000,
+        "tag": "us-gaap:NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1350500000,
-        "prior_year": 1294500000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 2096600000,
+        "prior_year": 1809900000,
+        "tag": "us-gaap:Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1711269/000171126926000057/evrg-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1711269/000171126926000117/evrg-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1711269/000171126926000057/evrg-20260331.htm"
+    },
+    {
+      "accession": "0001711269-26-000100",
+      "filed": "2026-08-06",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.91,
+          "prior_year": 0.74,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 215000000,
+          "prior_year": 171300000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1500100000,
+          "prior_year": 1437000000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1711269/000171126926000100/evrg-20260630.htm"
+    },
+    {
+      "accession": "0001711269-26-000117",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.59,
+          "prior_year": 2.03,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 612900000,
+          "prior_year": 475000000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2096600000,
+          "prior_year": 1809900000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1711269/000171126926000117/evrg-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "EVRG",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

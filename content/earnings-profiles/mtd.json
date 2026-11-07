@@ -2,33 +2,33 @@
   "cik": 1037646,
   "company": "Mettler Toledo",
   "latest": {
-    "accession": "0001037646-26-000021",
-    "filed": "2026-05-08",
+    "accession": "0001037646-26-000074",
+    "filed": "2026-11-06",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 8.33,
-        "prior_year": 7.81,
-        "tag": "EarningsPerShareDiluted",
+        "current": 12.29,
+        "prior_year": 10.57,
+        "tag": "us-gaap:EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 169454000,
-        "prior_year": 163587000,
-        "tag": "NetIncomeLoss",
+        "current": 245953000,
+        "prior_year": 217493000,
+        "tag": "us-gaap:NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 947127000,
-        "prior_year": 883744000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 1094294000,
+        "prior_year": 1029699000,
+        "tag": "us-gaap:Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-03-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1037646/000103764626000021/mtd-20260331.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1037646/000103764626000074/mtd-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,67 @@
       },
       "period_end": "2026-03-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1037646/000103764626000021/mtd-20260331.htm"
+    },
+    {
+      "accession": "0001037646-26-000051",
+      "filed": "2026-07-31",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 11.55,
+          "prior_year": 9.76,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 232899000,
+          "prior_year": 202348000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1027314000,
+          "prior_year": 983221000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1037646/000103764626000051/mtd-20260630.htm"
+    },
+    {
+      "accession": "0001037646-26-000074",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 12.29,
+          "prior_year": 10.57,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 245953000,
+          "prior_year": 217493000,
+          "tag": "us-gaap:NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1094294000,
+          "prior_year": 1029699000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1037646/000103764626000074/mtd-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "MTD",
-  "updated": "2026-10-15"
+  "updated": "2026-11-07"
 }

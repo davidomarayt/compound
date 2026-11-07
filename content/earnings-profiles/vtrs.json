@@ -1,0 +1,125 @@
+{
+  "cik": 1792044,
+  "company": "Viatris",
+  "latest": {
+    "accession": "0001792044-26-000057",
+    "filed": "2026-11-05",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": -0.28,
+        "prior_year": -0.11,
+        "tag": "us-gaap:EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": -325300000,
+        "prior_year": -128200000,
+        "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 3749500000,
+        "prior_year": 3759900000,
+        "tag": "us-gaap:Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1792044/000179204426000057/vtrs-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001792044-26-000029",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.15,
+          "prior_year": -2.55,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 176400000,
+          "prior_year": -3042000000,
+          "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3517000000,
+          "prior_year": 3254300000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1792044/000179204426000029/vtrs-20260331.htm"
+    },
+    {
+      "accession": "0001792044-26-000041",
+      "filed": "2026-08-06",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.1,
+          "prior_year": 0.0,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -118800000,
+          "prior_year": -4600000,
+          "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3756800000,
+          "prior_year": 3582100000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-06-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1792044/000179204426000041/vtrs-20260630.htm"
+    },
+    {
+      "accession": "0001792044-26-000057",
+      "filed": "2026-11-05",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.28,
+          "prior_year": -0.11,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -325300000,
+          "prior_year": -128200000,
+          "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3749500000,
+          "prior_year": 3759900000,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1792044/000179204426000057/vtrs-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "VTRS",
+  "updated": "2026-11-07"
+}

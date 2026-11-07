@@ -1,0 +1,96 @@
+{
+  "cik": 72741,
+  "company": "Eversource Energy",
+  "latest": {
+    "accession": "0001628280-26-071541",
+    "filed": "2026-11-06",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": 0.92,
+        "prior_year": 0.99,
+        "tag": "us-gaap:EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": 346014000.0,
+        "prior_year": 367549000.0,
+        "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 2978890000.0,
+        "prior_year": 3220625000.0,
+        "tag": "us-gaap:Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/72741/000162828026071541/es-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0001628280-26-032278",
+      "filed": "2026-05-07",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.61,
+          "prior_year": 1.5,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 606841000.0,
+          "prior_year": 550788000.0,
+          "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4504363000.0,
+          "prior_year": 4118355000.0,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-03-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/72741/000162828026032278/es-20260331.htm"
+    },
+    {
+      "accession": "0001628280-26-071541",
+      "filed": "2026-11-06",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.92,
+          "prior_year": 0.99,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 346014000.0,
+          "prior_year": 367549000.0,
+          "tag": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 2978890000.0,
+          "prior_year": 3220625000.0,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/72741/000162828026071541/es-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "ES",
+  "updated": "2026-11-07"
+}
