@@ -4,8 +4,8 @@
   "company": "Zebra Technologies Corporation",
   "ticker": "ZBRA",
   "date": "2026-11-07",
-  "status": "publication_candidate",
-  "publication_state": "preflight",
+  "status": "merged_not_live",
+  "publication_state": "deployment_failed",
   "publication_kind": "new_analysis",
   "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
   "story_thesis": "Zebra has strong organic automation demand, but memory costs and mix reduced gross margin; durable value requires margin recovery and cash conversion after working capital and buybacks.",
@@ -57,43 +57,58 @@
   "evidence_table": [
     {
       "claim": "Q3 sales were USD1.614bn, up 22.3%, with 11.3% organic growth; GAAP net income was USD164m versus USD101m.",
-      "source_indexes": [0],
+      "source_indexes": [
+        0
+      ],
       "location_or_arithmetic": "Results-release consolidated table and sales bridge.",
       "result": "verified; organic measure identified"
     },
     {
       "claim": "Connected Frontline sales were USD949m versus USD705m with 15% organic growth; Asset Intelligence & Tracking sales were USD665m versus USD615m with 7% organic growth.",
-      "source_indexes": [0],
+      "source_indexes": [
+        0
+      ],
       "location_or_arithmetic": "Results-release segment tables.",
       "result": "verified"
     },
     {
       "claim": "GAAP gross margin fell 230 basis points to 45.7%; adjusted gross margin fell 220 basis points to 46.0%, with memory costs and mix cited by management.",
-      "source_indexes": [0],
+      "source_indexes": [
+        0
+      ],
       "location_or_arithmetic": "Results-release margin discussion and reconciliation.",
       "result": "verified; management explanation labelled"
     },
     {
       "claim": "Adjusted EBITDA was USD349m versus USD285m with margin unchanged at 21.6%.",
-      "source_indexes": [0],
+      "source_indexes": [
+        0
+      ],
       "location_or_arithmetic": "Results-release non-GAAP table.",
       "result": "verified; non-GAAP measure identified"
     },
     {
       "claim": "Nine-month operating cash was USD711m, capex USD50m, company free cash USD661m and repurchases USD643m.",
-      "source_indexes": [0, 1],
+      "source_indexes": [
+        0,
+        1
+      ],
       "location_or_arithmetic": "Results release and Form 10-Q cash-flow/equity disclosures.",
       "result": "verified"
     },
     {
       "claim": "Receivables used USD229m, inventory used USD125m and payables provided USD194m; inventory was USD851m, receivables USD1.025bn, cash USD182m and debt USD2.578bn.",
-      "source_indexes": [1],
+      "source_indexes": [
+        1
+      ],
       "location_or_arithmetic": "Form 10-Q balance sheet and cash-flow working-capital disclosures.",
       "result": "verified"
     },
     {
       "claim": "Management guided Q4 sales growth to 10%-14%, adjusted EBITDA margin to about 22%, adjusted EPS to USD5.00-USD5.40 and full-year free cash flow to at least USD1bn.",
-      "source_indexes": [0],
+      "source_indexes": [
+        0
+      ],
       "location_or_arithmetic": "Results-release outlook section.",
       "result": "verified and labelled as management guidance"
     }
@@ -112,7 +127,10 @@
     "subject": "Zebra-branded enterprise mobile computer in a charging dock",
     "archive_label": "Archival product photograph; not a current reporting-period image",
     "transform": "Cropped and resized for publication",
-    "source_dimensions": [2000, 3000],
+    "source_dimensions": [
+      2000,
+      3000
+    ],
     "source_sha256": "dd1f65563952b0f33f9ec75815d535f3977e95b810e498e9a5b6e6a39d1febe0",
     "visual_inspection": "passed: authentic topic-specific Zebra product photograph with visible Zebra branding",
     "verified": true
@@ -125,17 +143,26 @@
     "offline_tests": "passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO; 18 finance discovery tests rerun after the build",
     "build": "passed production-canonical build: 253 published articles, 685 tags, 25 pages and 57 tools; complete verified editorial image cache prepared",
     "render": "passed: canonical, one H1, indexable robots metadata, source credit and required stock-profile/earnings links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
-    "exact_head_ci": "pending",
-    "deployment": "pending",
-    "live_verification": "pending"
+    "exact_head_ci": "passed on PR head 460c680fe762d1b27fdda4ebaf1e6d7321caf203 in run 42357453261, including tests, production build and Lighthouse",
+    "deployment": "failed in site run 42358259312 after the GitHub Pages deploy action remained in syncing_files until timeout; one bounded failed-job retry ended with the same timeout",
+    "live_verification": "blocked: canonical URL returned HTTP 404 after both deployment attempts on 2026-11-07"
   },
   "publication": {
     "scheduled_daily_slot": 3,
-    "scheduled_daily_count": 3
+    "scheduled_daily_count": 3,
+    "pull_request": "https://github.com/davidomarayt/compound/pull/86",
+    "validated_head_sha": "460c680fe762d1b27fdda4ebaf1e6d7321caf203",
+    "merge_commit": "fd456fffa19d33e0a58d36b13796ae4ca70fb6a3",
+    "site_run": "https://github.com/davidomarayt/compound/actions/runs/42358259312",
+    "live_url": null,
+    "publication_note": "The article is merged but is not a completed publication. Resume this same attempt after deployment recovery; do not create a duplicate or consume an additional daily slot."
   },
   "article_sha256": "a1875e0866366563c7884e043473596789634409004ecbbbedf45ed1bd92f7f4",
   "local_image_sha256": "dd1f65563952b0f33f9ec75815d535f3977e95b810e498e9a5b6e6a39d1febe0",
   "social_image_sha256": "396b50ff6cd7f432c580db696b96ab7997997150ef73bc7e05cf35bbaaa04ae0",
-  "social_image_dimensions": [1200, 675],
+  "social_image_dimensions": [
+    1200,
+    675
+  ],
   "social_image_visually_inspected": true
 }
