@@ -6,8 +6,8 @@
   "story_fingerprint": "09f7e77671a9c2a812f529d5",
   "fingerprint_input": "MSFT|FY2027-Q1|xbox-content-hardware-holiday-recovery",
   "publication_kind": "new_analysis",
-  "publication_state": "prepared",
-  "new_articles_published": 0,
+  "publication_state": "live_verified",
+  "new_articles_published": 1,
   "authorization": "Publisher authorised daily Mag 8 analysis.",
   "article_path": "content/wealth/microsoft-xbox-content-recovery.md",
   "canonical_url": "https://compound.ie/wealth/microsoft-xbox-content-recovery/",
@@ -49,5 +49,32 @@
   },
   "validation": [
     "27 image/discovery tests passed"
-  ]
+  ],
+  "status": "published",
+  "pull_request": "https://github.com/davidomarayt/compound/pull/90",
+  "validated_head": "b6789ae2d58d5113840b11eb1aeb5cbb74a6522f",
+  "merge_commit": "864d26dc4a4f5e880e0d8acb066bcf7869022e2b",
+  "ci_run": 42399552036,
+  "deployment_run": 42400392812,
+  "deployment_checks": {
+    "build": "success",
+    "deploy": "success",
+    "verify-live": "success",
+    "verify-finance-discovery": "success",
+    "mobile-audit": "success"
+  },
+  "live_verification": {
+    "canonical": "https://compound.ie/wealth/microsoft-xbox-content-recovery/",
+    "sitemap": true,
+    "finance_catalogue": true,
+    "finance_directory": true,
+    "social_image": "https://compound.ie/static/discover/microsoft-xbox-content-recovery-16x9.webp",
+    "social_dimensions": [
+      1200,
+      675
+    ],
+    "social_sha256": "5e280b9d5383003226dbcc835c0b8ef5b00fa27dc3880a3353de65d0b0a93ce8",
+    "hero_matches_source": true,
+    "verified_at": "2026-11-07 18:24:52 UTC"
+  }
 }
