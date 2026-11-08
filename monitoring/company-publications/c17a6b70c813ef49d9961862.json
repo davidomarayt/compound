@@ -4,8 +4,8 @@
   "company": "ConocoPhillips",
   "ticker": "COP",
   "date": "2026-11-07",
-  "status": "publication_candidate",
-  "publication_state": "preflight",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
   "story_thesis": "ConocoPhillips is returning about 45% of operating cash flow, but higher realised prices rather than production growth drove the quarter, making through-cycle discipline the key test.",
@@ -119,9 +119,9 @@
     "offline_tests": "passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO; 18 finance discovery tests rerun after the build",
     "build": "passed production-canonical build: 253 published articles, 685 tags, 25 pages and 57 tools; complete verified editorial image cache prepared",
     "render": "passed: canonical, one H1, indexable robots metadata, source credit and required stock-profile/earnings links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
-    "exact_head_ci": "pending",
-    "deployment": "pending",
-    "live_verification": "pending"
+    "exact_head_ci": "passed on PR #86 head 460c680fe762d1b27fdda4ebaf1e6d7321caf203 in workflow run 42357453261",
+    "deployment": "recovered through later successful publishing-branch site workflow run 42364146735 after the original deployment failure",
+    "live_verification": "passed on 8 November 2026: canonical page and 1200x675 social image returned HTTP 200; canonical, indexability, credit, sitemap and finance catalogue were verified"
   },
   "publication": {
     "scheduled_daily_slot": 2,
@@ -131,5 +131,24 @@
   "local_image_sha256": "236a817ad19f301af36dd35365e719b861599088a3dd368ed331fc2fd03dc611",
   "social_image_sha256": "24a81e8bf6f97320ab449ad11326bef553c5f657e508266c3322794bdd3f3893",
   "social_image_dimensions": [1200, 675],
-  "social_image_visually_inspected": true
+  "social_image_visually_inspected": true,
+  "pull_request": "https://github.com/davidomarayt/compound/pull/86",
+  "validated_head": "460c680fe762d1b27fdda4ebaf1e6d7321caf203",
+  "merge_commit": "fd456ff7a1d81dd4b9d16e7b154d4068f113e83b",
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/42364146735",
+  "live_verified_at": "2026-11-08T09:04:00Z",
+  "live_verification": {
+    "page_http_status": 200,
+    "canonical": "https://compound.ie/wealth/conocophillips-cash-flow-shareholder-returns/",
+    "canonical_matches": true,
+    "indexable": true,
+    "image_credit_present": true,
+    "sitemap_present": true,
+    "finance_catalogue_present": true,
+    "social_image_url": "https://compound.ie/static/discover/conocophillips-cash-flow-shareholder-returns-16x9.webp",
+    "social_image_http_status": 200,
+    "social_image_dimensions": [1200, 675],
+    "social_image_visual_inspection": "passed"
+  },
+  "recovery_note": "This audit corrects the stale preflight state after confirming that the merged article was deployed by a later successful site workflow. No duplicate article was created."
 }

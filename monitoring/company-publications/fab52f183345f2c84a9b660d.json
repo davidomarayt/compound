@@ -4,8 +4,8 @@
   "company": "The Cigna Group",
   "ticker": "CI",
   "date": "2026-11-07",
-  "status": "publication_candidate",
-  "publication_state": "preflight",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
   "story_thesis": "Cigna's pharmacy-benefit revenue is growing while adjusted profit falls; the USD3bn modernization programme must repair segment economics and cash conversion to create owner value.",
@@ -119,9 +119,9 @@
     "offline_tests": "passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO; 18 finance discovery tests rerun after the build",
     "build": "passed production-canonical build: 253 published articles, 685 tags, 25 pages and 57 tools; complete verified editorial image cache prepared",
     "render": "passed: canonical, one H1, indexable robots metadata, source credit and required stock-profile/earnings links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
-    "exact_head_ci": "pending",
-    "deployment": "pending",
-    "live_verification": "pending"
+    "exact_head_ci": "passed on PR #86 head 460c680fe762d1b27fdda4ebaf1e6d7321caf203 in workflow run 42357453261",
+    "deployment": "recovered through later successful publishing-branch site workflow run 42364146735 after the original deployment failure",
+    "live_verification": "passed on 8 November 2026: canonical page and 1200x675 social image returned HTTP 200; canonical, indexability, credit, sitemap and finance catalogue were verified"
   },
   "publication": {
     "scheduled_daily_slot": 1,
@@ -131,5 +131,24 @@
   "local_image_sha256": "5d4986c4ddf3fd448c76073d067157d0aea4bef4c6c98d504e29387dcab5cc40",
   "social_image_sha256": "410a9ac8f009f6d11e8ff51af950b868cab3137691bb8ab1f4f2dbe509247b16",
   "social_image_dimensions": [1200, 675],
-  "social_image_visually_inspected": true
+  "social_image_visually_inspected": true,
+  "pull_request": "https://github.com/davidomarayt/compound/pull/86",
+  "validated_head": "460c680fe762d1b27fdda4ebaf1e6d7321caf203",
+  "merge_commit": "fd456ff7a1d81dd4b9d16e7b154d4068f113e83b",
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/42364146735",
+  "live_verified_at": "2026-11-08T09:04:00Z",
+  "live_verification": {
+    "page_http_status": 200,
+    "canonical": "https://compound.ie/wealth/cigna-pharmacy-margin-modernization/",
+    "canonical_matches": true,
+    "indexable": true,
+    "image_credit_present": true,
+    "sitemap_present": true,
+    "finance_catalogue_present": true,
+    "social_image_url": "https://compound.ie/static/discover/cigna-pharmacy-margin-modernization-16x9.webp",
+    "social_image_http_status": 200,
+    "social_image_dimensions": [1200, 675],
+    "social_image_visual_inspection": "passed"
+  },
+  "recovery_note": "This audit corrects the stale preflight state after confirming that the merged article was deployed by a later successful site workflow. No duplicate article was created."
 }

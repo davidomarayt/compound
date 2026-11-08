@@ -1,0 +1,40 @@
+{
+  "story_fingerprint": "c9ed8cc95ee4afde2f8f9a2",
+  "fingerprint_input": "TPR|tapestry-coach-kate-spade-capital-returns|2026-11-08",
+  "company": "Tapestry, Inc.", "ticker": "TPR", "date": "2026-11-08",
+  "status": "publication_candidate", "publication_state": "preflight", "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Coach is driving growth and margin while Kate Spade loses money; the USD2bn return plan depends on Coach sustaining full-year cash generation without sacrificing flexibility.",
+  "article_path": "content/wealth/tapestry-coach-kate-spade-capital-returns.md",
+  "canonical_url": "https://compound.ie/wealth/tapestry-coach-kate-spade-capital-returns/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1116132/000114036126042034/ef20084882_ex99-1.htm",
+    "https://www.sec.gov/Archives/edgar/data/1116132/000111613226000031/tpr-20260926.htm"
+  ],
+  "source_sha256": ["69f5ba3d24e06cb2a11b06c11797ed5a8977a4a039f3faba875dc8b0d8ea7024","04d56e11e1892cbf798fb6141582822773b12e296b96c4f9effe4157b9c0266e"],
+  "identity": {"issuer":"Tapestry, Inc.","CIK":1116132,"release_accession":"0001140361-26-042034","form_10q_accession":"0001116132-26-000031","fiscal_year":2027,"fiscal_period":"Q1","period_end":"2026-09-26","filing_date":"2026-11-05","currency":"USD","units":"USD millions except per-share and percentages"},
+  "duplicate_checks": [
+    "Checked both editorial inventories, the JSON inventory and actual wealth content; Tapestry has a maintained stock profile but no Coach-versus-Kate-Spade capital-allocation analysis.",
+    "Checked recent publication records, live content, and open and merged PRs; no matching Tapestry story or fingerprint was active or published.",
+    "Checked the 8 November Europe/Dublin publication ledger before drafting; all three scheduled slots were open and no active company-publication attempt existed.",
+    "Routine quarterly figures remain on /stocks/tpr/; the article addresses brand concentration, turnaround economics and capital returns."
+  ],
+  "candidate_review_reference": "See b891b944ced9fbc6d64ed364.json for the ten-company screen; Tapestry was selected independently.",
+  "evidence_table": [
+    {"claim":"Q1 sales were USD1.894bn, up 11%; pro-forma growth excluding prior-year Stuart Weitzman was 12%.","source_indexes":[0,1],"location_or_arithmetic":"Release overview and Form 10-Q net-sales discussion.","result":"verified; reported and pro-forma measures separated"},
+    {"claim":"Coach sales were USD1.661bn, up 16.1%, and operating income USD590m with 35.5% margin.","source_indexes":[1],"location_or_arithmetic":"Form 10-Q brand tables; 1,661 / 1,894 = 87.7% of group sales.","result":"verified and calculated share independently recomputed"},
+    {"claim":"Kate Spade sales were USD233m, down 10.4%, and GAAP operating loss was USD20m with negative 8.7% margin; non-GAAP loss was USD6m.","source_indexes":[1],"location_or_arithmetic":"Form 10-Q brand tables and comparability discussion.","result":"verified; GAAP and non-GAAP losses separated"},
+    {"claim":"Non-GAAP gross margin was 78.7%, up 220 basis points, including about 130 operational, 70 tariff/duty and 20 FX basis points.","source_indexes":[0,1],"location_or_arithmetic":"Release gross-margin bridge and Form 10-Q MD&A.","result":"verified; management bridge labelled"},
+    {"claim":"First-quarter operating cash was USD197m and adjusted free cash flow USD56m; cash and short-term investments were USD782m and borrowings USD2.56bn.","source_indexes":[0,1],"location_or_arithmetic":"Release balance-sheet and cash-flow highlights; free cash flow identified as adjusted.","result":"verified"},
+    {"claim":"Management targets about USD2.0bn of fiscal-year capital returns, including USD1.7bn of buybacks, and adjusted free cash flow approaching USD1.7bn.","source_indexes":[0],"location_or_arithmetic":"Release shareholder-return and outlook sections.","result":"verified and labelled as management guidance"}
+  ],
+  "fact_check_pass": {"method":"Every material number, fiscal date, brand, accounting measure, management explanation, guidance item and calculation was reread against the release and Form 10-Q; seasonal first-quarter cash was not presented as full-year funding.","unresolved_material_claims":[]},
+  "image": {"source":"https://unsplash.com/photos/white-leather-handbag-on-white-surface-Zha2jqwxzMY","original_url":"https://images.unsplash.com/photo-1604176424472-17cd740f74e9?auto=format&fit=max&fm=jpg&q=90&w=2000","photographer":"Maude Frédérique Lavoie","license":"Unsplash License","license_url":"https://unsplash.com/license","published_date":"2020-10-31","subject":"White Coach leather handbag","archive_label":"Archival product photograph; not a current reporting-period image","transform":"Cropped and resized for publication","source_dimensions":[2000,3000],"source_sha256":"102bdf129040bb4f6ace7f06a59e73b2749d8b83083ebd19df83a3732f1e5562","visual_inspection":"passed: authentic topic-specific Coach product photograph with visible Coach tag","verified":true},
+  "gates": {"source_verification":"passed","duplicate_check":"passed","claim_fact_check":"passed","image_provenance":"passed","offline_tests":"passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO; 18 finance discovery tests rerun after the build","build":"passed production-canonical build: 261 published articles, 692 tags, 29 pages and 57 tools; complete verified editorial image cache prepared","render":"passed: canonical, one H1, indexable robots metadata, source credit and required stock-profile/earnings links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected","exact_head_ci":"pending","deployment":"pending","live_verification":"pending"},
+  "publication": {"scheduled_daily_slot":3,"scheduled_daily_count":3},
+  "article_sha256":"756e6727daee76ac9aa81b3b26593476981284724c42a81fd7077d4e6ddc65b2",
+  "local_image_sha256":"102bdf129040bb4f6ace7f06a59e73b2749d8b83083ebd19df83a3732f1e5562",
+  "social_image_sha256":"2ecfde7d4134b2cbde27fadb7b25c11a84f2bd1877e5a1ac952e831938620b7e",
+  "social_image_dimensions":[1200,675],
+  "social_image_visually_inspected":true
+}

@@ -1,0 +1,75 @@
+{
+  "story_fingerprint": "b891b944ced9fbc6d64ed364",
+  "fingerprint_input": "ABNB|airbnb-bookings-free-cash-flow|2026-11-08",
+  "company": "Airbnb, Inc.",
+  "ticker": "ABNB",
+  "date": "2026-11-08",
+  "status": "publication_candidate",
+  "publication_state": "preflight",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Airbnb's booking and revenue growth accelerated, but free-cash-flow growth lagged; durable per-share value depends on better cash conversion after stock compensation and repurchases.",
+  "article_path": "content/wealth/airbnb-bookings-free-cash-flow.md",
+  "canonical_url": "https://compound.ie/wealth/airbnb-bookings-free-cash-flow/",
+  "sources": [
+    "https://s26.q4cdn.com/656283129/files/content_files/Airbnb-Q3-2026-Shareholder-Letter.pdf",
+    "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000032/abnb-20260930.htm"
+  ],
+  "source_sha256": [
+    "9824f9818c184057138fc8ff1ce16d6f7ae3995cc2eb1a64bf8d204134c9e112",
+    "073df04aea069c95cf13a70941039fcb7124b6b4078fdb3f52226a76a1b5b365"
+  ],
+  "identity": {
+    "issuer": "Airbnb, Inc.", "CIK": 1559720, "form_10q_accession": "0001559720-26-000032",
+    "fiscal_year": 2026, "fiscal_period": "Q3", "period_end": "2026-09-30", "filing_date": "2026-11-05",
+    "currency": "USD", "units": "USD millions except per-share and operating metrics"
+  },
+  "duplicate_checks": [
+    "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json and actual wealth content; Airbnb has a maintained stock profile but no booking-growth-versus-cash-conversion analysis.",
+    "Checked recent company-publication records, live site content, and open and merged pull requests; no matching Airbnb story or fingerprint was active or published.",
+    "Checked the 8 November Europe/Dublin publication ledger before drafting; all three scheduled slots were open and no active company-publication attempt existed.",
+    "Routine quarterly figures remain on /stocks/abnb/; this article addresses cash conversion, dilution and buyback economics."
+  ],
+  "candidate_review": {
+    "budget": 10,
+    "screened": [
+      "Airbnb (selected: booking acceleration versus cash conversion and buyback economics)",
+      "Hershey (selected: price-led margin recovery versus volume elasticity)",
+      "Tapestry (selected: Coach economics versus Kate Spade losses and capital returns)",
+      "Booking Holdings (not selected: less differentiated near-term business question)",
+      "American International Group (not selected: accounting complexity reduced clarity)",
+      "KKR (not selected: insurance and asset-management complexity reduced clarity)",
+      "Carvana (not selected: turnaround and debt angle less distinct from recent coverage themes)",
+      "Caterpillar (not selected: canonical margin-and-growth article already exists)",
+      "Parker-Hannifin (not selected: less timely distinct question than the selected industrial alternatives)",
+      "Mastercard (not selected: current filing offered a less differentiated story)"
+    ],
+    "rotation_check": "Selected travel marketplace, consumer staples and luxury accessories; none appeared in the previous completed daily batch."
+  },
+  "evidence_table": [
+    {"claim":"Gross booking value was USD27.7bn, up 21%; nights and seats were 155.0m, up 16%; ADR was USD178.83, up 4%.","source_indexes":[0,1],"location_or_arithmetic":"Shareholder-letter key metrics and Form 10-Q operating metrics.","result":"verified in separate fact-check pass"},
+    {"claim":"Revenue was USD4.869bn, up 19%; net income was USD1.890bn and adjusted EBITDA USD2.509bn.","source_indexes":[0,1],"location_or_arithmetic":"Shareholder-letter financial highlights and Form 10-Q statements; adjusted EBITDA identified as non-GAAP.","result":"verified"},
+    {"claim":"Q3 free cash flow was USD1.426bn versus USD1.349bn, about 5.7% growth, and margin was 29% versus 33%.","source_indexes":[0],"location_or_arithmetic":"(1,426 / 1,349 - 1) x 100 = 5.71%; company-defined free cash flow.","result":"verified and independently recomputed"},
+    {"claim":"Trailing-twelve-month free cash flow was USD4.904bn versus USD4.550bn, about 7.8% growth, with margin 35% versus 36%.","source_indexes":[0],"location_or_arithmetic":"(4,904 / 4,550 - 1) x 100 = 7.78%.","result":"verified and independently recomputed"},
+    {"claim":"Stock compensation was USD462m in Q3 and USD1.359bn for nine months; Q3 repurchases were USD700m and the additional authorization was USD12bn.","source_indexes":[0,1],"location_or_arithmetic":"Shareholder letter and Form 10-Q cash-flow/equity disclosures.","result":"verified; compensation and repurchases kept distinct"},
+    {"claim":"Cash and other liquid assets were USD12.649bn; Q4 revenue guidance was USD3.22bn-USD3.28bn with 16%-18% growth and about two points of FX benefit.","source_indexes":[0],"location_or_arithmetic":"Shareholder-letter balance-sheet metric and outlook.","result":"verified and guidance labelled"}
+  ],
+  "fact_check_pass": {"method":"Every material number, period, accounting measure, management explanation, guidance item and calculation was reread against the shareholder letter and Form 10-Q; arithmetic was independently recomputed.","unresolved_material_claims":[]},
+  "image": {
+    "source":"https://unsplash.com/photos/a-person-taking-a-picture-of-a-living-room-Sj2Z2WVhhfc",
+    "original_url":"https://images.unsplash.com/photo-1737442724990-af0fa0885312?auto=format&fit=max&fm=jpg&q=90&w=2000",
+    "photographer":"Jakub Żerdzicki", "license":"Unsplash License", "license_url":"https://unsplash.com/license",
+    "published_date":"2025-01-21", "subject":"Person photographing a furnished home's kitchen",
+    "archive_label":"Archival illustrative photograph; not an Airbnb listing or current reporting-period image",
+    "transform":"Cropped and resized for publication", "source_dimensions":[2000,1334],
+    "source_sha256":"c331ea42058bb095df73079800bdbb016aeecb6201e0b52b39a512f63f5ab1ff",
+    "visual_inspection":"passed: authentic topic-specific home-listing photography context", "verified":true
+  },
+  "gates": {"source_verification":"passed","duplicate_check":"passed","claim_fact_check":"passed","image_provenance":"passed","offline_tests":"passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO; 18 finance discovery tests rerun after the build","build":"passed production-canonical build: 261 published articles, 692 tags, 29 pages and 57 tools; complete verified editorial image cache prepared","render":"passed: canonical, one H1, indexable robots metadata, source credit and required stock-profile/earnings links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected","exact_head_ci":"pending","deployment":"pending","live_verification":"pending"},
+  "publication": {"scheduled_daily_slot":1,"scheduled_daily_count":3},
+  "article_sha256":"5acba6f285536b30b2c331db9a2a281234400d0f5864605e4d9e795e32341f1d",
+  "local_image_sha256":"c331ea42058bb095df73079800bdbb016aeecb6201e0b52b39a512f63f5ab1ff",
+  "social_image_sha256":"5c5248361c6b45342c576497d86066d8c7b9027c4ee5ae860bbe9ef6528a951a",
+  "social_image_dimensions":[1200,675],
+  "social_image_visually_inspected":true
+}

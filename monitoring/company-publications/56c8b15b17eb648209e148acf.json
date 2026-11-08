@@ -1,0 +1,40 @@
+{
+  "story_fingerprint": "56c8b15b17eb648209e148acf",
+  "fingerprint_input": "HSY|hershey-pricing-volume-margin|2026-11-08",
+  "company": "The Hershey Company", "ticker": "HSY", "date": "2026-11-08",
+  "status": "publication_candidate", "publication_state": "preflight", "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Pricing and lower commodity costs restored Hershey's margins while volume fell; durability depends on volume stabilisation after temporary benefits fade.",
+  "article_path": "content/wealth/hershey-pricing-volume-margin.md",
+  "canonical_url": "https://compound.ie/wealth/hershey-pricing-volume-margin/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/47111/000162828026068046/exhibit991_2026xq3.htm",
+    "https://www.sec.gov/Archives/edgar/data/47111/000162828026068136/hsy-20260927.htm"
+  ],
+  "source_sha256": ["2454a46df78ae2e2d2848bcb5e15e046815e203723fb147ac7ae84eb22a9acc0","b9f83a7198fa71d00064e10319036dac76c035b1f2703751ab8c5b4c63dd4205"],
+  "identity": {"issuer":"The Hershey Company","CIK":47111,"release_accession":"0001628280-26-068046","form_10q_accession":"0001628280-26-068136","fiscal_year":2026,"fiscal_period":"Q3","period_end":"2026-09-27","filing_date":"2026-10-29","currency":"USD","units":"USD millions except per-share and percentages"},
+  "duplicate_checks": [
+    "Checked both editorial inventories, the JSON inventory and actual wealth content; Hershey has a maintained stock profile but no pricing-versus-volume margin analysis.",
+    "Checked recent publication records, live content, and open and merged PRs; no matching Hershey story or fingerprint was active or published.",
+    "Checked the 8 November Europe/Dublin publication ledger before drafting; all three scheduled slots were open and no active company-publication attempt existed.",
+    "Routine quarterly figures remain on /stocks/hsy/; the article addresses pricing power, elasticity and margin quality."
+  ],
+  "candidate_review_reference": "See b891b944ced9fbc6d64ed364.json for the ten-company screen; Hershey was selected independently.",
+  "evidence_table": [
+    {"claim":"Q3 sales were USD3.2755bn, up 3.0%; organic constant-currency sales rose 0.8%, with about 11 points of price and a 10-point volume decline.","source_indexes":[0,1],"location_or_arithmetic":"Release consolidated discussion and Form 10-Q MD&A.","result":"verified; price and volume kept distinct"},
+    {"claim":"Reported gross margin was 46.1% versus 32.6%; adjusted gross margin was 42.7% versus 31.8%.","source_indexes":[0],"location_or_arithmetic":"Release consolidated margin discussion and reconciliation.","result":"verified; reported and adjusted measures kept distinct"},
+    {"claim":"North America Confectionery sales were USD2.6565bn, with about 13 points of price and an 11-point volume decline; segment margin was 35.8%.","source_indexes":[0,1],"location_or_arithmetic":"Release segment results and filing MD&A.","result":"verified"},
+    {"claim":"Salty Snacks sales rose 22.3%, about 20 points from LesserEvil, while segment profit fell 17.9% and margin fell 590 basis points to 12.1%.","source_indexes":[0],"location_or_arithmetic":"Release segment results.","result":"verified; acquired and organic growth separated"},
+    {"claim":"Nine-month operating cash flow was USD1.6388bn and capital additions USD305m; simple cash less capital additions was USD1.3338bn.","source_indexes":[1],"location_or_arithmetic":"1,638.8 - 305.0 = 1,333.8; not labelled company free cash flow.","result":"verified and independently recomputed"},
+    {"claim":"Full-year guidance includes USD0.22 of Q3 and USD0.03 of Q2 tariff refunds and excludes potential future refunds.","source_indexes":[0],"location_or_arithmetic":"Release outlook footnotes.","result":"verified and labelled as management guidance"}
+  ],
+  "fact_check_pass": {"method":"Every material number, fiscal date, segment, accounting measure, management explanation and calculation was reread against the release and Form 10-Q; adjusted, reported and calculated values were kept distinct.","unresolved_material_claims":[]},
+  "image": {"source":"https://unsplash.com/photos/hersheys-chocolate-bar-on-gray-wooden-table-CywV3XjPTzM","original_url":"https://images.unsplash.com/photo-1612547945519-215715c19336?auto=format&fit=max&fm=jpg&q=90&w=2000","photographer":"logan jeffrey","license":"Unsplash License","license_url":"https://unsplash.com/license","published_date":"2021-02-05","subject":"Wrapped Hershey's milk-chocolate bar","archive_label":"Archival product photograph; not a current reporting-period image","transform":"Cropped and resized for publication","source_dimensions":[2000,1333],"source_sha256":"baf316f8309ba7048e36a3eda832ca7c9106b5d6cc16d5c7918bb728d164794a","visual_inspection":"passed: authentic topic-specific Hershey product photograph","verified":true},
+  "gates": {"source_verification":"passed","duplicate_check":"passed","claim_fact_check":"passed","image_provenance":"passed","offline_tests":"passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO; 18 finance discovery tests rerun after the build","build":"passed production-canonical build: 261 published articles, 692 tags, 29 pages and 57 tools; complete verified editorial image cache prepared","render":"passed: canonical, one H1, indexable robots metadata, source credit and required stock-profile/earnings links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected","exact_head_ci":"pending","deployment":"pending","live_verification":"pending"},
+  "publication": {"scheduled_daily_slot":2,"scheduled_daily_count":3},
+  "article_sha256":"f9a51430b759f13539539ff44a2d56e694bdded3778ea78cbbe8eba9c8920000",
+  "local_image_sha256":"baf316f8309ba7048e36a3eda832ca7c9106b5d6cc16d5c7918bb728d164794a",
+  "social_image_sha256":"3994412cf00455263ccbc6165744b9e93f1e1e46b8349b8e6457805562b37e63",
+  "social_image_dimensions":[1200,675],
+  "social_image_visually_inspected":true
+}
