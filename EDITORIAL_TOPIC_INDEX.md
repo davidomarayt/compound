@@ -1,6 +1,6 @@
 # Compound.ie — Quick Editorial Topic Index
 
-Updated: 2026-11-07 | Automatically rebuilt from published source
+Updated: 2026-11-08 | Automatically rebuilt from published source
 
 **Before recommending a new article:** search this page by keyword, synonym,
 and reader question. An existing article or tool may already cover the idea.
@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 258 published articles and guides, 64 tools,
+**Included:** 261 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -17,6 +17,7 @@ For the complete register (including 510+ company profiles), open
 - [A Buddhist monk has begun 12 years on a mountain. What can it teach us about the modern mind?](https://compound.ie/news/12-year-buddhist-retreat-meditation-mental-wellbeing/) — **Life**
 - [AI therapy in Ireland: 61% say they use AI for mental health — but what does the evidence actually show?](https://compound.ie/news/ai-therapy-ireland-chatgpt-mental-health/) — **Life**
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/) — **Wealth**
+- [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/) — **Wealth**
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/) — **Wealth**
 - [Alphabet's cash-flow squeeze deepens as Cloud doubles](https://compound.ie/wealth/alphabet-ai-capex-free-cash-flow/) — **Wealth**
 - [Alphabet’s European AI opportunity comes with conditions](https://compound.ie/wealth/alphabet-europe-ai-sovereignty/) — **Wealth**
@@ -87,6 +88,7 @@ For the complete register (including 510+ company profiles), open
 - [Health Insurance in Ireland: Costs, Cover & How to Choose a Plan](https://compound.ie/wealth/health-insurance-ireland/) — **Wealth**
 - [Health insurance prices are rising — but some plan benefits are being cut](https://compound.ie/news/health-insurance-price-rises-benefit-cuts-ireland/) — **Wealth**
 - [Heat Pumps in Ireland: Costs, Grants, Running Costs & Suitability](https://compound.ie/wealth/heat-pumps-ireland/) — **Wealth**
+- [Hershey Raised Prices 11% and Volume Fell 10%. How Durable Is the Margin Recovery?](https://compound.ie/wealth/hershey-pricing-volume-margin/) — **Wealth**
 - [Honeywell Raises Guidance: What the Headline Growth Number Misses](https://compound.ie/wealth/honeywell-earnings-organic-growth-guidance/) — **Wealth**
 - [House Extension Planning Permission Ireland: The 45 m² Rule Explained](https://compound.ie/wealth/house-extension-planning-permission-ireland/) — **Wealth**
 - [House Hunting and Bidding in Ireland: How to Stay Disciplined](https://compound.ie/wealth/house-hunting-bidding-ireland/) — **Wealth**
@@ -232,6 +234,7 @@ For the complete register (including 510+ company profiles), open
 - [State Pension in Ireland: Rates, PRSI Rules & How to Qualify](https://compound.ie/wealth/state-pension-ireland/) — **Wealth**
 - [State Pension set for at least €7.50 Budget 2027 rise: what it would mean](https://compound.ie/news/state-pension-increase-budget-2027-ireland/) — **Wealth**
 - [Stress symptoms: how to recognise stress and what actually helps](https://compound.ie/life/stress-symptoms-what-helps-ireland/) — **Life**
+- [Tapestry Is Returning $2 Billion While Kate Spade Loses Money. Can Coach Carry Both?](https://compound.ie/wealth/tapestry-coach-kate-spade-capital-returns/) — **Wealth**
 - [Tax credits in Ireland explained: what they are and how they work](https://compound.ie/wealth/tax-credits-ireland-explained/) — **Wealth**
 - [Tesla Earnings: Cash Flow Recovers, but Profit Remains Under Pressure](https://compound.ie/wealth/tesla-earnings-cash-flow-profit-investment/) — **Wealth**
 - [Tesla Stock Guide: Cars, Energy, Autonomy and Valuation](https://compound.ie/wealth/tesla-q3-2026-autonomy-investment-case/) — **Wealth**

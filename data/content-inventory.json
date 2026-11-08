@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-07",
+  "snapshot_date": "2026-11-08",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -86,6 +86,23 @@
           "mortgage-switching",
           "ireland",
           "homeowners"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?",
+        "url": "/wealth/airbnb-bookings-free-cash-flow/",
+        "source": "content/wealth/airbnb-bookings-free-cash-flow.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "airbnb-bookings-free-cash-flow",
+        "date": "2026-11-08",
+        "reviewed": "2026-11-08",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "abnb"
         ],
         "status": "published"
       },
@@ -1441,6 +1458,23 @@
           "heating",
           "home-energy",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Hershey Raised Prices 11% and Volume Fell 10%. How Durable Is the Margin Recovery?",
+        "url": "/wealth/hershey-pricing-volume-margin/",
+        "source": "content/wealth/hershey-pricing-volume-margin.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "hershey-pricing-volume-margin",
+        "date": "2026-11-08",
+        "reviewed": "2026-11-08",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "hsy"
         ],
         "status": "published"
       },
@@ -4268,6 +4302,23 @@
           "wellbeing",
           "work-life",
           "hse"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Tapestry Is Returning $2 Billion While Kate Spade Loses Money. Can Coach Carry Both?",
+        "url": "/wealth/tapestry-coach-kate-spade-capital-returns/",
+        "source": "content/wealth/tapestry-coach-kate-spade-capital-returns.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "tapestry-coach-kate-spade-capital-returns",
+        "date": "2026-11-08",
+        "reviewed": "2026-11-08",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "tpr"
         ],
         "status": "published"
       },

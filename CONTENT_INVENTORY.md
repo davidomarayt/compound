@@ -1,6 +1,6 @@
 # Compound.ie — Master Content and Title Register
 
-Snapshot: 2026-11-07 | Source: publishing branch
+Snapshot: 2026-11-08 | Source: publishing branch
 
 PURPOSE: Check this register before creating a new article, guide or calculator. Search by exact title, keyword, synonym and reader intent. If the topic is already answered, update its canonical page instead of publishing an SEO duplicate.
 
@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 258
+- Published editorial articles and guides: 261
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,9 +49,10 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 204
+## Wealth articles and guides — 207
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
+- [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/)
 - [Alphabet's cash-flow squeeze deepens as Cloud doubles](https://compound.ie/wealth/alphabet-ai-capex-free-cash-flow/)
 - [Alphabet’s European AI opportunity comes with conditions](https://compound.ie/wealth/alphabet-europe-ai-sovereignty/)
@@ -113,6 +114,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Health Insurance in Ireland: Costs, Cover & How to Choose a Plan](https://compound.ie/wealth/health-insurance-ireland/)
 - [Health insurance prices are rising — but some plan benefits are being cut](https://compound.ie/news/health-insurance-price-rises-benefit-cuts-ireland/)
 - [Heat Pumps in Ireland: Costs, Grants, Running Costs & Suitability](https://compound.ie/wealth/heat-pumps-ireland/)
+- [Hershey Raised Prices 11% and Volume Fell 10%. How Durable Is the Margin Recovery?](https://compound.ie/wealth/hershey-pricing-volume-margin/)
 - [Honeywell Raises Guidance: What the Headline Growth Number Misses](https://compound.ie/wealth/honeywell-earnings-organic-growth-guidance/)
 - [House Extension Planning Permission Ireland: The 45 m² Rule Explained](https://compound.ie/wealth/house-extension-planning-permission-ireland/)
 - [House Hunting and Bidding in Ireland: How to Stay Disciplined](https://compound.ie/wealth/house-hunting-bidding-ireland/)
@@ -226,6 +228,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Starbucks Earnings: The Turnaround Looks Better Than the Revenue Headline](https://compound.ie/wealth/starbucks-earnings-turnaround-sales-china/)
 - [State Pension in Ireland: Rates, PRSI Rules & How to Qualify](https://compound.ie/wealth/state-pension-ireland/)
 - [State Pension set for at least €7.50 Budget 2027 rise: what it would mean](https://compound.ie/news/state-pension-increase-budget-2027-ireland/)
+- [Tapestry Is Returning $2 Billion While Kate Spade Loses Money. Can Coach Carry Both?](https://compound.ie/wealth/tapestry-coach-kate-spade-capital-returns/)
 - [Tax credits in Ireland explained: what they are and how they work](https://compound.ie/wealth/tax-credits-ireland-explained/)
 - [Tesla Earnings: Cash Flow Recovers, but Profit Remains Under Pressure](https://compound.ie/wealth/tesla-earnings-cash-flow-profit-investment/)
 - [Tesla Stock Guide: Cars, Energy, Autonomy and Valuation](https://compound.ie/wealth/tesla-q3-2026-autonomy-investment-case/)
