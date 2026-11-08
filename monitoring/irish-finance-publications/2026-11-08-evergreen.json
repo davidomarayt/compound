@@ -1,0 +1,16 @@
+{
+  "run_date": "2026-11-08",
+  "programme": "Irish evergreen guides",
+  "content_type": "new evergreen guide",
+  "topic": "How much extra should I get for working a Sunday in Ireland?",
+  "canonical_url": "https://compound.ie/wealth/sunday-premium-pay-ireland/",
+  "primary_sources": [
+    "https://revisedacts.lawreform.ie/eli/1997/act/20/section/14/revised/en/html",
+    "https://www.workplacerelations.ie/en/what_you_should_know/codes_practice/cop9/",
+    "https://www.workplacerelations.ie/en/what_you_should_know/employer-obligations/terms-of-employment/",
+    "https://www.workplacerelations.ie/en/Publications_Forms/WRC-Quick-Guide-Booklet-Eng-.pdf"
+  ],
+  "publication_commit": null,
+  "deployment_status": "pending",
+  "selection_evidence": "8 November Search Console export, Web, last three months: salary-to-hourly calculator 29 clicks / 13,413 impressions. Adjacent query “16 euro an hour salary ireland” 1 click / 31 impressions. These figures measure the existing topic, not Sunday-specific demand."
+}
