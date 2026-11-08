@@ -4,8 +4,8 @@
   "company": "Zebra Technologies Corporation",
   "ticker": "ZBRA",
   "date": "2026-11-07",
-  "status": "publication_candidate",
-  "publication_state": "preflight",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher explicitly authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
   "story_thesis": "Zebra has strong organic automation demand, but memory costs and mix reduced gross margin; durable value requires margin recovery and cash conversion after working capital and buybacks.",
@@ -125,9 +125,9 @@
     "offline_tests": "passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO; 18 finance discovery tests rerun after the build",
     "build": "passed production-canonical build: 253 published articles, 685 tags, 25 pages and 57 tools; complete verified editorial image cache prepared",
     "render": "passed: canonical, one H1, indexable robots metadata, source credit and required stock-profile/earnings links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected",
-    "exact_head_ci": "pending",
-    "deployment": "pending",
-    "live_verification": "pending"
+    "exact_head_ci": "passed on PR #86 head 460c680fe762d1b27fdda4ebaf1e6d7321caf203 in workflow run 42357453261",
+    "deployment": "recovered through later successful publishing-branch site workflow run 42364146735 after the original deployment failure",
+    "live_verification": "passed on 8 November 2026: canonical page and 1200x675 social image returned HTTP 200; canonical, indexability, credit, sitemap and finance catalogue were verified"
   },
   "publication": {
     "scheduled_daily_slot": 3,
@@ -137,5 +137,24 @@
   "local_image_sha256": "dd1f65563952b0f33f9ec75815d535f3977e95b810e498e9a5b6e6a39d1febe0",
   "social_image_sha256": "396b50ff6cd7f432c580db696b96ab7997997150ef73bc7e05cf35bbaaa04ae0",
   "social_image_dimensions": [1200, 675],
-  "social_image_visually_inspected": true
+  "social_image_visually_inspected": true,
+  "pull_request": "https://github.com/davidomarayt/compound/pull/86",
+  "validated_head": "460c680fe762d1b27fdda4ebaf1e6d7321caf203",
+  "merge_commit": "fd456ff7a1d81dd4b9d16e7b154d4068f113e83b",
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/42364146735",
+  "live_verified_at": "2026-11-08T09:04:00Z",
+  "live_verification": {
+    "page_http_status": 200,
+    "canonical": "https://compound.ie/wealth/zebra-automation-growth-memory-margin/",
+    "canonical_matches": true,
+    "indexable": true,
+    "image_credit_present": true,
+    "sitemap_present": true,
+    "finance_catalogue_present": true,
+    "social_image_url": "https://compound.ie/static/discover/zebra-automation-growth-memory-margin-16x9.webp",
+    "social_image_http_status": 200,
+    "social_image_dimensions": [1200, 675],
+    "social_image_visual_inspection": "passed"
+  },
+  "recovery_note": "This audit corrects the stale preflight state after confirming that the merged article was deployed by a later successful site workflow. No duplicate article was created."
 }
