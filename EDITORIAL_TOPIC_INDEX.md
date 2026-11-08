@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 264 published articles and guides, 64 tools,
+**Included:** 265 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -256,6 +256,7 @@ For the complete register (including 510+ company profiles), open
 - [Wealth for a 100-Year Life: Money, Housing and Choices in Ireland](https://compound.ie/wealth/wealth-for-a-100-year-life/) — **Wealth**
 - [Western Digital Earnings: The AI Storage Boom Is Turning Into Cash](https://compound.ie/wealth/western-digital-earnings-ai-storage-cash-flow/) — **Wealth**
 - [What did Lilly gain by accepting a lower Mounjaro price in China?](https://compound.ie/wealth/lilly-mounjaro-china-reimbursement/) — **Wealth**
+- [What does Nvidia’s $2.94 billion warranty reserve tell investors?](https://compound.ie/wealth/nvidia-warranty-reserve/) — **Wealth**
 - [What Happens If You Die Without a Will in Ireland?](https://compound.ie/wealth/what-happens-if-you-die-without-a-will-ireland/) — **Wealth**
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/) — **Health**
 - [What Is a REIT? How Property Investing Can Generate Income and Growth](https://compound.ie/wealth/what-is-a-reit/) — **Wealth**
