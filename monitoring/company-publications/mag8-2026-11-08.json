@@ -1,0 +1,53 @@
+{
+  "series": "mag8",
+  "date": "2026-11-08",
+  "company": "NVIDIA Corporation",
+  "ticker": "NVDA",
+  "story_fingerprint": "f5935ea4777fac1c9b74f8eb",
+  "fingerprint_input": "NVDA|FY2027-Q2|product-warranty-additions-utilisation",
+  "publication_kind": "new_analysis",
+  "publication_state": "prepared",
+  "new_articles_published": 0,
+  "authorization": "Publisher authorised daily Mag 8 analysis.",
+  "article_path": "content/wealth/nvidia-warranty-reserve.md",
+  "canonical_url": "https://compound.ie/wealth/nvidia-warranty-reserve/",
+  "story_thesis": "Nvidia used $401 million of its returns and warranty reserve in the July quarter. Its two latest filings show why the balance barely moved and which figures to watch next.",
+  "article_sha256": "855d55e0d98d83cc1e00a07fa8ab963188522e1d8b4dc5945a0635f45507908a",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+    "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm",
+    "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027/"
+  ],
+  "identity": {
+    "CIK": 1045810,
+    "form": "10-Q",
+    "accession": "0001045810-26-000075",
+    "fiscal_year": 2027,
+    "fiscal_period": "Q2",
+    "period_end": "2026-07-26"
+  },
+  "duplicate_checks": [
+    "Reviewed current publishing branch and daily ledgers, editorial legacy Mag7 files, dated remote branches, content inventory, topic index, live finance catalogue, morning ABNB/HSY/TPR and other November 8 coverage. Open PRs 43/57 unrelated. NVDA and TSLA unfeatured in new series. TSLA had separate recent Cybertruck coverage. NVDA stories cover competitive position, margin and customer concentration without reconciling warranty activity."
+  ],
+  "evidence_table": [
+    "Q1 10-Q: April 26 FY27, USD millions, opening 2807 + 330 additions - 189 utilisation = 2948. Q2 10-Q: July 26 FY27, 2948 + 391 - 401 = 2938; prior July additions 220. Rounded filing figures used by quarter. Utilisation increased 212m sequentially.",
+    "Quarterly results sales 81615m, 96221m and 46743m in Q1 FY27, Q2 FY27 and Q2 FY26. Additions per $100 sales: 0.4043, 0.4064, 0.4707. Hypothetical 10 basis points x 96221m = 96.221m.",
+    "10-Q combines estimated returns and warranty activity. Mainly Compute & Networking additions. No count of units serviced or product-level failure rates inferred. Q2 GAAP margin 75.0% actual, August Q3 outlook 74.0% +/- 0.5 percentage points, scenario separate."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:NvidiaTesla.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/3/32/NvidiaTesla.jpg",
+    "credit": "Mahogny via Wikimedia Commons, public domain. Nvidia Tesla accelerator photographed on 19 February 2008.",
+    "capture_date": "2008-02-19",
+    "license": "Public-domain release by Mahogny",
+    "changes": "Resized and padded. Checked final 16:9, square and 4:3 crops.",
+    "sha256": "b55f6797abf9c6874c088867b8dcca5bb31e36baa9f3663c7271a32b65553a0b"
+  },
+  "fact_check_pass": {
+    "method": "Separate Q1 and Q2 filing reconciliations; checked issuer release and independently recalculated ratios.",
+    "unresolved_material_claims": []
+  },
+  "validation": [
+    "27 image and discovery tests passed."
+  ]
+}
