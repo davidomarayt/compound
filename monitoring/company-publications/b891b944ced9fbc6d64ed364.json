@@ -4,8 +4,8 @@
   "company": "Airbnb, Inc.",
   "ticker": "ABNB",
   "date": "2026-11-08",
-  "status": "publication_candidate",
-  "publication_state": "preflight",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
   "story_thesis": "Airbnb's booking and revenue growth accelerated, but free-cash-flow growth lagged; durable per-share value depends on better cash conversion after stock compensation and repurchases.",
@@ -65,11 +65,19 @@
     "source_sha256":"c331ea42058bb095df73079800bdbb016aeecb6201e0b52b39a512f63f5ab1ff",
     "visual_inspection":"passed: authentic topic-specific home-listing photography context", "verified":true
   },
-  "gates": {"source_verification":"passed","duplicate_check":"passed","claim_fact_check":"passed","image_provenance":"passed","offline_tests":"passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO; 18 finance discovery tests rerun after the build","build":"passed production-canonical build: 261 published articles, 692 tags, 29 pages and 57 tools; complete verified editorial image cache prepared","render":"passed: canonical, one H1, indexable robots metadata, source credit and required stock-profile/earnings links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected","exact_head_ci":"pending","deployment":"pending","live_verification":"pending"},
+  "gates": {"source_verification":"passed","duplicate_check":"passed","claim_fact_check":"passed","image_provenance":"passed","offline_tests":"passed: 55 offline tests covering news images, finance discovery, live-discovery verification, earnings review and earnings SEO; 18 finance discovery tests rerun after the build","build":"passed production-canonical build: 261 published articles, 692 tags, 29 pages and 57 tools; complete verified editorial image cache prepared","render":"passed: canonical, one H1, indexable robots metadata, source credit and required stock-profile/earnings links inspected; sitemap and finance catalogue include the URL; source cover and generated 1200x675 Open Graph/Twitter image visually inspected","exact_head_ci":"passed on PR head 0dcb04672f89341fe3c41578fa0320eb568b1b67 in workflow run 42466810905: full tests, production build and Lighthouse thresholds","deployment":"passed in site workflow run 42467586139: build, deploy, finance discovery and public live verification succeeded","live_verification":"passed: canonical page and 1200x675 social image returned HTTP 200; text, canonical, indexing, stock link, credit, sitemap and finance catalogue verified"},
   "publication": {"scheduled_daily_slot":1,"scheduled_daily_count":3},
   "article_sha256":"5acba6f285536b30b2c331db9a2a281234400d0f5864605e4d9e795e32341f1d",
   "local_image_sha256":"c331ea42058bb095df73079800bdbb016aeecb6201e0b52b39a512f63f5ab1ff",
   "social_image_sha256":"5c5248361c6b45342c576497d86066d8c7b9027c4ee5ae860bbe9ef6528a951a",
   "social_image_dimensions":[1200,675],
-  "social_image_visually_inspected":true
+  "social_image_visually_inspected":true,
+  "pull_request":"https://github.com/davidomarayt/compound/pull/93",
+  "validated_head":"0dcb04672f89341fe3c41578fa0320eb568b1b67",
+  "merge_commit":"4052bf38c90008c6132ca8baf7b8162912b0a424",
+  "deployment_run":"https://github.com/davidomarayt/compound/actions/runs/42467586139",
+  "live_verified_at":"2026-11-08T09:38:00Z",
+  "live_verification":{"page_http_status":200,"canonical":"https://compound.ie/wealth/airbnb-bookings-free-cash-flow/","canonical_matches":true,"indexing_directive":"max-image-preview:large","company_text_present":true,"stock_profile_link_present":true,"image_credit_present":true,"sitemap_present":true,"finance_catalogue_present":true,"social_image_url":"https://compound.ie/static/discover/airbnb-bookings-free-cash-flow-16x9.webp","social_image_http_status":200,"social_image_dimensions":[1200,675],"social_image_sha256":"5c5248361c6b45342c576497d86066d8c7b9027c4ee5ae860bbe9ef6528a951a","social_image_visual_inspection":"passed"},
+  "new_articles_published":1,
+  "scheduled_batch_new_articles_published":3
 }
