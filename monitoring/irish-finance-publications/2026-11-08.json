@@ -1,0 +1,52 @@
+{
+  "run_date": "2026-11-08",
+  "timezone": "Europe/Dublin",
+  "edition": "morning",
+  "morning_search_cutoff": "2026-11-08T09:40:40+00:00",
+  "target": 3,
+  "edition_key": "2026-11-08/morning",
+  "publishing_branch": "claude/clever-babbage-uibieq",
+  "articles": [
+    {
+      "topic": "Public sector pay dispute: what the rejected offer meant for a €45,000 salary",
+      "edition": "morning",
+      "content_type": "news",
+      "action": "canonical_update",
+      "canonical_url": "https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/",
+      "primary_sources": [
+        "https://www.forsa.ie/faqs-strike-rallies-2026/",
+        "https://www.asti.ie/industrial-action-2026/"
+      ],
+      "publication_commit": null,
+      "deployment_status": "pending"
+    },
+    {
+      "topic": "Maternity and paternity benefits would rise to €309 a week under new Bill",
+      "edition": "morning",
+      "content_type": "news",
+      "action": "new_article",
+      "canonical_url": "https://compound.ie/news/social-welfare-bill-maternity-paternity-benefit-january-2027/",
+      "primary_sources": [
+        "https://www.oireachtas.ie/en/bills/bill/2026/105/",
+        "https://data.oireachtas.ie/ie/oireachtas/bill/2026/105/eng/memo/b10526d-memo.pdf",
+        "https://www.gov.ie/en/department-of-social-protection/services/maternity-benefit/"
+      ],
+      "publication_commit": null,
+      "deployment_status": "pending"
+    },
+    {
+      "topic": "R132 traffic changes due as €15m Julianstown and Stamullen water project starts",
+      "edition": "morning",
+      "content_type": "news",
+      "action": "new_article",
+      "canonical_url": "https://compound.ie/news/julianstown-stamullen-water-main-r132-works/",
+      "primary_sources": [
+        "https://www.water.ie/news/strengthening-julianstown-and-stamullen-water-supply-support-growth"
+      ],
+      "publication_commit": null,
+      "deployment_status": "pending"
+    }
+  ],
+  "confirmed_publications": 0,
+  "afternoon_handoff": "Check for material developments first made public after the morning cutoff. Count each morning canonical once."
+}
