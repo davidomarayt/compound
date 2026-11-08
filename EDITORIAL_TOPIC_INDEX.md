@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 261 published articles and guides, 64 tools,
+**Included:** 263 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -132,7 +132,6 @@ For the complete register (including 510+ company profiles), open
 - [Ireland Plans €682m Cut in Refugee and Asylum Accommodation Spending in Budget 2027](https://compound.ie/news/ireland-migration-accommodation-682m-budget-2027/) — **Wealth**
 - [Ireland to Ban Loyalty-Card Alcohol Discounts: What Changes From March 2028](https://compound.ie/news/alcohol-loyalty-card-discounts-ban-ireland-2028/) — **Health**
 - [Ireland's 40% tax band starts at €44,000 — how that really compares with Europe](https://compound.ie/news/ireland-40-percent-tax-rate-threshold-europe/) — **Wealth**
-- [Ireland’s public sector strike and the €1.2 billion pay question](https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/) — **Wealth**
 - [Ireland’s TV Licence Is Dying. The Numbers Show Why.](https://compound.ie/news/ireland-tv-licence-decline-2026/) — **Life**
 - [Irish house prices are estimated to be 17% overvalued — what does that actually mean for buyers?](https://compound.ie/news/irish-house-prices-overvalued-17-percent-2026/) — **Wealth**
 - [Irish housing market is cooling — but buyers are not suddenly getting cheap homes](https://compound.ie/news/ireland-house-prices-cooling-daft-dublin-2026/) — **Wealth**
@@ -153,6 +152,7 @@ For the complete register (including 510+ company profiles), open
 - [Making a Will in Ireland: Complete Guide & Costs](https://compound.ie/wealth/how-to-make-a-will-ireland/) — **Wealth**
 - [Manchester City found guilty on 114 financial-rule charges: what the case was really about](https://compound.ie/news/manchester-city-114-financial-rule-breaches-explained/) — **Wealth**
 - [Marriott's Fees Are Outrunning Room Growth. What Is Funding the Buybacks?](https://compound.ie/wealth/marriott-fees-growth-buybacks-debt/) — **Wealth**
+- [Maternity and paternity benefits would rise to €309 a week under new Bill](https://compound.ie/news/social-welfare-bill-maternity-paternity-benefit-january-2027/) — **Wealth**
 - [McDonald’s Profit Grew While US Guest Counts Fell. How Much Protection Does Franchising Provide?](https://compound.ie/wealth/mcdonalds-guest-counts-franchise-margins/) — **Wealth**
 - [Meta Earnings: Advertising Surges, but the AI Bill Consumes the Cash](https://compound.ie/wealth/meta-advertising-ai-spending-earnings/) — **Wealth**
 - [Meta Stock Guide: Advertising, AI, Reality Labs and Valuation](https://compound.ie/wealth/meta-ai-advertising-returns-2026/) — **Wealth**
@@ -203,6 +203,8 @@ For the complete register (including 510+ company profiles), open
 - [Probate in Ireland: The Complete Guide](https://compound.ie/wealth/probate-ireland/) — **Wealth**
 - [Protected Structures & Architectural Conservation Areas: Planning Rules in Ireland](https://compound.ie/wealth/protected-structures-aca-planning-ireland/) — **Wealth**
 - [PRSI Rises Today: What the 1 October 2026 Increase Costs You](https://compound.ie/news/prsi-increase-october-2026/) — **Wealth**
+- [Public sector pay dispute: what the rejected offer meant for a €45,000 salary](https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/) — **Wealth**
+- [R132 traffic changes due as €15m Julianstown and Stamullen water project starts](https://compound.ie/news/julianstown-stamullen-water-main-r132-works/) — **Wealth**
 - [Reddit’s Revenue Is Outrunning User Growth. Can It Last?](https://compound.ie/wealth/reddit-revenue-user-growth/) — **Wealth**
 - [Redundancy Tax in Ireland: Statutory Pay, Ex-Gratia & SCSB](https://compound.ie/wealth/redundancy-ireland-statutory-ex-gratia-tax/) — **Wealth**
 - [Remote Working in Ireland: Your Rights and How to Make a Request](https://compound.ie/life/remote-working-ireland-rights-request/) — **Life**

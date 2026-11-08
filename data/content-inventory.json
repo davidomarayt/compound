@@ -2322,22 +2322,6 @@
         "status": "published"
       },
       {
-        "title": "Ireland’s public sector strike and the €1.2 billion pay question",
-        "url": "/wealth/ireland-public-sector-strike-pay-deal-budget-2027/",
-        "source": "content/wealth/ireland-public-sector-strike-pay-deal-budget-2027.md",
-        "kind": "Editorial article / guide",
-        "category": "Wealth",
-        "slug": "ireland-public-sector-strike-pay-deal-budget-2027",
-        "date": "2026-11-02",
-        "reviewed": "",
-        "tags": [
-          "Ireland",
-          "public sector pay",
-          "Budget 2027"
-        ],
-        "status": "published"
-      },
-      {
         "title": "Ireland’s TV Licence Is Dying. The Numbers Show Why.",
         "url": "/news/ireland-tv-licence-decline-2026/",
         "source": "content/happiness/ireland-tv-licence-decline-2026.md",
@@ -2717,6 +2701,23 @@
           "stocks",
           "company-research",
           "mar"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Maternity and paternity benefits would rise to €309 a week under new Bill",
+        "url": "/news/social-welfare-bill-maternity-paternity-benefit-january-2027/",
+        "source": "content/wealth/social-welfare-bill-maternity-paternity-benefit-january-2027.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "social-welfare-bill-maternity-paternity-benefit-january-2027",
+        "date": "2026-11-08",
+        "reviewed": "2026-11-08",
+        "tags": [
+          "news",
+          "ireland",
+          "parental-leave",
+          "social-welfare"
         ],
         "status": "published"
       },
@@ -3698,6 +3699,40 @@
           "take-home-pay",
           "ireland",
           2026
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Public sector pay dispute: what the rejected offer meant for a €45,000 salary",
+        "url": "/wealth/ireland-public-sector-strike-pay-deal-budget-2027/",
+        "source": "content/wealth/ireland-public-sector-strike-pay-deal-budget-2027.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "ireland-public-sector-strike-pay-deal-budget-2027",
+        "date": "2026-11-02",
+        "reviewed": "2026-11-08",
+        "tags": [
+          "Ireland",
+          "public sector pay",
+          "Budget 2027"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "R132 traffic changes due as €15m Julianstown and Stamullen water project starts",
+        "url": "/news/julianstown-stamullen-water-main-r132-works/",
+        "source": "content/wealth/julianstown-stamullen-water-main-r132-works.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "julianstown-stamullen-water-main-r132-works",
+        "date": "2026-11-08",
+        "reviewed": "2026-11-08",
+        "tags": [
+          "news",
+          "ireland",
+          "housing",
+          "commuting",
+          "meath"
         ],
         "status": "published"
       },

@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 261
+- Published editorial articles and guides: 263
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 207
+## Wealth articles and guides — 209
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -141,7 +141,6 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Ireland inflation jumps to 3.9% as energy prices rise 15.3%](https://compound.ie/news/ireland-inflation-september-2026-energy-prices/)
 - [Ireland Plans €682m Cut in Refugee and Asylum Accommodation Spending in Budget 2027](https://compound.ie/news/ireland-migration-accommodation-682m-budget-2027/)
 - [Ireland's 40% tax band starts at €44,000 — how that really compares with Europe](https://compound.ie/news/ireland-40-percent-tax-rate-threshold-europe/)
-- [Ireland’s public sector strike and the €1.2 billion pay question](https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/)
 - [Irish house prices are estimated to be 17% overvalued — what does that actually mean for buyers?](https://compound.ie/news/irish-house-prices-overvalued-17-percent-2026/)
 - [Irish housing market is cooling — but buyers are not suddenly getting cheap homes](https://compound.ie/news/ireland-house-prices-cooling-daft-dublin-2026/)
 - [Irish milk prices set to fall 18.1% as fertiliser costs rise, CSO estimates](https://compound.ie/news/irish-farm-prices-2026-milk-fertiliser-cso/)
@@ -156,6 +155,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Making a Will in Ireland: Complete Guide & Costs](https://compound.ie/wealth/how-to-make-a-will-ireland/)
 - [Manchester City found guilty on 114 financial-rule charges: what the case was really about](https://compound.ie/news/manchester-city-114-financial-rule-breaches-explained/)
 - [Marriott's Fees Are Outrunning Room Growth. What Is Funding the Buybacks?](https://compound.ie/wealth/marriott-fees-growth-buybacks-debt/)
+- [Maternity and paternity benefits would rise to €309 a week under new Bill](https://compound.ie/news/social-welfare-bill-maternity-paternity-benefit-january-2027/)
 - [McDonald’s Profit Grew While US Guest Counts Fell. How Much Protection Does Franchising Provide?](https://compound.ie/wealth/mcdonalds-guest-counts-franchise-margins/)
 - [Meta Earnings: Advertising Surges, but the AI Bill Consumes the Cash](https://compound.ie/wealth/meta-advertising-ai-spending-earnings/)
 - [Meta Stock Guide: Advertising, AI, Reality Labs and Valuation](https://compound.ie/wealth/meta-ai-advertising-returns-2026/)
@@ -201,6 +201,8 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Probate in Ireland: The Complete Guide](https://compound.ie/wealth/probate-ireland/)
 - [Protected Structures & Architectural Conservation Areas: Planning Rules in Ireland](https://compound.ie/wealth/protected-structures-aca-planning-ireland/)
 - [PRSI Rises Today: What the 1 October 2026 Increase Costs You](https://compound.ie/news/prsi-increase-october-2026/)
+- [Public sector pay dispute: what the rejected offer meant for a €45,000 salary](https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/)
+- [R132 traffic changes due as €15m Julianstown and Stamullen water project starts](https://compound.ie/news/julianstown-stamullen-water-main-r132-works/)
 - [Reddit’s Revenue Is Outrunning User Growth. Can It Last?](https://compound.ie/wealth/reddit-revenue-user-growth/)
 - [Redundancy Tax in Ireland: Statutory Pay, Ex-Gratia & SCSB](https://compound.ie/wealth/redundancy-ireland-statutory-ex-gratia-tax/)
 - [Rent Tax Credit Budget 2027: New €1,150 Credit Explained](https://compound.ie/wealth/rent-tax-credit-budget-2027-ireland/)
