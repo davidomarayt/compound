@@ -6,8 +6,8 @@
   "story_fingerprint": "f5935ea4777fac1c9b74f8eb",
   "fingerprint_input": "NVDA|FY2027-Q2|product-warranty-additions-utilisation",
   "publication_kind": "new_analysis",
-  "publication_state": "prepared",
-  "new_articles_published": 0,
+  "publication_state": "live_verified",
+  "new_articles_published": 1,
   "authorization": "Publisher authorised daily Mag 8 analysis.",
   "article_path": "content/wealth/nvidia-warranty-reserve.md",
   "canonical_url": "https://compound.ie/wealth/nvidia-warranty-reserve/",
@@ -49,5 +49,32 @@
   },
   "validation": [
     "27 image and discovery tests passed."
-  ]
+  ],
+  "status": "published",
+  "pull_request": "https://github.com/davidomarayt/compound/pull/97",
+  "validated_head": "35ae6630cab6163e828eaaffb3ac9ebfd18786b9",
+  "merge_commit": "261db35cff4bfff82d0a61fd9ada0c7adb625ea1",
+  "ci_run": 42508246986,
+  "deployment_run": 42509156882,
+  "deployment_checks": {
+    "build": "success",
+    "deploy": "success",
+    "verify-live": "success",
+    "verify-finance-discovery": "success",
+    "mobile-audit": "success"
+  },
+  "live_verification": {
+    "canonical": "https://compound.ie/wealth/nvidia-warranty-reserve/",
+    "sitemap": true,
+    "finance_directory": true,
+    "finance_catalogue": true,
+    "hero_matches_source": true,
+    "social_image": "https://compound.ie/static/discover/nvidia-warranty-reserve-16x9.webp",
+    "social_dimensions": [
+      1200,
+      675
+    ],
+    "social_sha256": "396a97190ba2a96b11a7e9063261f3aa15023c65270c43a7154c54177d34994a",
+    "verified_at": "2026-11-08 18:25:12 UTC"
+  }
 }
