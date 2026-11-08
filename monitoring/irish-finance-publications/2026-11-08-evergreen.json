@@ -10,7 +10,11 @@
     "https://www.workplacerelations.ie/en/what_you_should_know/employer-obligations/terms-of-employment/",
     "https://www.workplacerelations.ie/en/Publications_Forms/WRC-Quick-Guide-Booklet-Eng-.pdf"
   ],
-  "publication_commit": null,
-  "deployment_status": "pending",
-  "selection_evidence": "8 November Search Console export, Web, last three months: salary-to-hourly calculator 29 clicks / 13,413 impressions. Adjacent query “16 euro an hour salary ireland” 1 click / 31 impressions. These figures measure the existing topic, not Sunday-specific demand."
+  "publication_commit": "98a3513494a8227912a0c1ed51e5a483eb79a45e",
+  "deployment_status": "deployed_verified_live",
+  "selection_evidence": "8 November Search Console export, Web, last three months: salary-to-hourly calculator 29 clicks / 13,413 impressions. Adjacent query “16 euro an hour salary ireland” 1 click / 31 impressions. These figures measure the existing topic, not Sunday-specific demand.",
+  "verified_at_utc": "2026-11-08T12:08:32Z",
+  "pull_request": "https://github.com/davidomarayt/compound/pull/96",
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/42478395690",
+  "verification": "Production page, canonical, metadata, licensed cover, social crop and calculator backlink verified."
 }
