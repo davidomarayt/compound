@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 263 published articles and guides, 64 tools,
+**Included:** 264 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -99,6 +99,7 @@ For the complete register (including 510+ company profiles), open
 - [How much do Wegovy, Mounjaro and Ozempic cost in Ireland?](https://compound.ie/health/wegovy-mounjaro-ozempic-cost-ireland/) — **Health**
 - [How much does your lifestyle actually cost over a lifetime?](https://compound.ie/wealth/lifetime-cost-of-lifestyle-ireland/) — **Wealth**
 - [How much electricity does an Irish home use? A practical 2026 guide](https://compound.ie/wealth/average-home-electricity-use-ireland/) — **Wealth**
+- [How much extra should I get for working a Sunday in Ireland?](https://compound.ie/wealth/sunday-premium-pay-ireland/) — **Wealth**
 - [How much protein do you actually need? An Irish evidence-based guide](https://compound.ie/health/how-much-protein-do-you-need-ireland/) — **Health**
 - [How Much Should I Contribute to My Pension in Ireland?](https://compound.ie/wealth/how-much-pension-contribute-ireland/) — **Wealth**
 - [How Much Should You Invest Each Month in Ireland?](https://compound.ie/wealth/how-much-to-invest-per-month-ireland/) — **Wealth**

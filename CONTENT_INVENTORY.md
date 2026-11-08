@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 263
+- Published editorial articles and guides: 264
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 209
+## Wealth articles and guides — 210
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -121,6 +121,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [How Many Solar Panels Do You Need in Ireland? 4kW vs 6kW vs 8kW](https://compound.ie/wealth/how-many-solar-panels-do-i-need-ireland/)
 - [How much does your lifestyle actually cost over a lifetime?](https://compound.ie/wealth/lifetime-cost-of-lifestyle-ireland/)
 - [How much electricity does an Irish home use? A practical 2026 guide](https://compound.ie/wealth/average-home-electricity-use-ireland/)
+- [How much extra should I get for working a Sunday in Ireland?](https://compound.ie/wealth/sunday-premium-pay-ireland/)
 - [How Much Should I Contribute to My Pension in Ireland?](https://compound.ie/wealth/how-much-pension-contribute-ireland/)
 - [How Much Should You Invest Each Month in Ireland?](https://compound.ie/wealth/how-much-to-invest-per-month-ireland/)
 - [How Pensions Work in Ireland: A Beginner’s Guide](https://compound.ie/wealth/how-pensions-work-ireland/)
