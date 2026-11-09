@@ -1,0 +1,87 @@
+{
+  "story_fingerprint": "17d1defdcc75fcb3507af7df",
+  "fingerprint_input": "RL|ralph-lauren-full-price-margin|2026-11-09",
+  "company": "Ralph Lauren Corporation",
+  "ticker": "RL",
+  "date": "2026-11-09",
+  "status": "preflight_passed",
+  "publication_state": "awaiting_exact_head_ci",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Ralph Lauren's reported margin included a tariff refund, but adjusted margin, AUR and Asia growth indicate broader full-price strength that now faces a slower holiday test.",
+  "article_path": "content/wealth/ralph-lauren-full-price-margin.md",
+  "article_sha256": "598bfe83bad2e8bd519c7aa6b47371b8884aabedb4874f08e55450a5b61adf27",
+  "canonical_url": "https://compound.ie/wealth/ralph-lauren-full-price-margin/",
+  "sources": [
+    "https://corporate.ralphlauren.com/pr_261105_Q2FY27-EarningsResults.html",
+    "https://www.sec.gov/Archives/edgar/data/1037038/000162828026070697/rl-20260926.htm"
+  ],
+  "source_sha256": [
+    "ae087df017954f7fe84d6cb8c60d903108a18f9cae9c3693d56aa5b9bf1c22dc",
+    "7c8b62923a108aa8a49aaadcca6f2164077f0bf7c69e68f1a023264130c5b7c5"
+  ],
+  "identity": {
+    "issuer": "Ralph Lauren Corporation",
+    "CIK": 1037038,
+    "release_date": "2026-11-05",
+    "form_10q_accession": "0001628280-26-070697",
+    "fiscal_year": 2027,
+    "fiscal_period": "Q2",
+    "period_end": "2026-09-26",
+    "filing_date": "2026-11-05",
+    "currency": "USD",
+    "units": "USD millions except per-share data and basis points"
+  },
+  "duplicate_checks": [
+    "Checked both editorial inventories, the JSON inventory and actual wealth content; Ralph Lauren has a maintained profile but no full-price-demand-versus-refund margin analysis.",
+    "Checked recent publication records, live content and open and merged PRs; no matching Ralph Lauren story, fingerprint or active attempt was found.",
+    "Checked the 9 November Europe/Dublin scheduled ledger before drafting; all three slots were open.",
+    "Routine quarterly results remain on /stocks/rl/; this article addresses pricing, regional mix and margin quality."
+  ],
+  "candidate_review_reference": "See 3ee0584d66321731ed50b722.json for the ten-company screen; Ralph Lauren was selected independently.",
+  "evidence_table": [
+    {"claim": "Fiscal Q2 revenue was USD2.1933bn, up 9%; reported gross margin was 74.2%, up 620 basis points; adjusted gross margin was 70.5%, up 250 basis points.", "source_indexes": [0, 1], "location_or_arithmetic": "Release income-statement review and Form 10-Q statements/reconciliation.", "result": "verified; reported and adjusted measures separated"},
+    {"claim": "DTC comparable sales rose 10% and AUR rose 9%; adjusted operating margin was 15.7%, up 160 basis points.", "source_indexes": [0], "location_or_arithmetic": "Release strategic highlights and income-statement review.", "result": "verified; AUR described as mix-sensitive operating metric"},
+    {"claim": "Asia revenue was USD571m, up 28%, and Asia operating margin was 27.4%, up 240 basis points; North America and Europe figures were kept separate.", "source_indexes": [0, 1], "location_or_arithmetic": "Release regional review and Form 10-Q segment disclosures.", "result": "verified"},
+    {"claim": "The filing recorded an USD82.3m tariff-refund benefit in cost of goods sold and USD33.2m of related charitable donations in restructuring and other charges.", "source_indexes": [1], "location_or_arithmetic": "Form 10-Q Note 7.", "result": "verified and treated as non-recurring"},
+    {"claim": "Cash and short-term investments were USD1.822bn, debt about USD1.2bn, inventory USD1.151bn, and first-half buybacks USD500m; operating cash was USD172.3m and capex USD114.2m.", "source_indexes": [0, 1], "location_or_arithmetic": "Release balance-sheet review and filing balance sheet/cash-flow/equity notes.", "result": "verified"},
+    {"claim": "Management guides to 6%-7% comparable constant-currency annual growth and 80-100 basis points of operating-margin expansion; Q3 guidance is 3%-4% and 50-70 basis points.", "source_indexes": [0], "location_or_arithmetic": "Release outlook.", "result": "verified and labelled management guidance"}
+  ],
+  "fact_check_pass": {
+    "method": "Every material number, fiscal period, region, accounting measure, management explanation and guidance item was reread against the release and Form 10-Q; reported, adjusted and constant-currency measures were kept distinct.",
+    "unresolved_material_claims": []
+  },
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Ralph_Lauren_Classic_Factory_Store.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ralph_Lauren_Classic_Factory_Store.jpg",
+    "photographer": "Deerpeter",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "capture_date": "2024-12-29",
+    "subject": "Polo Ralph Lauren outlet with shoppers in Batavia Stad, Netherlands",
+    "archive_label": "Archival identified-retail photograph; not a current reporting-period image",
+    "transform": "Cropped and resized for publication",
+    "source_dimensions": [7952, 5304],
+    "source_sha256": "503ee9e6bd122d751390f9e250e7597cd6556e59a2330265b1de7a1486dd4bee",
+    "local_image_sha256": "2dccbd151d26a7b019552b4e322cc93ec2e6c12dd20fa2a50008d82cab8d032b",
+    "local_image_dimensions": [2400, 1601],
+    "social_image_path": "/static/discover/ralph-lauren-full-price-margin-16x9.webp",
+    "social_image_dimensions": [1200, 675],
+    "social_image_sha256": "b0df7c184eb9ec46254354b06f970122b00845e2aa4d7000befca12a9d30e657",
+    "visual_inspection": "passed: authentic topic-specific Ralph Lauren retail photograph",
+    "verified": true
+  },
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_check": "passed",
+    "claim_fact_check": "passed",
+    "image_provenance": "passed",
+    "offline_tests": "passed: 55 focused tests plus 18 post-build finance-discovery tests",
+    "build": "passed: production canonical build generated 268 articles, 698 tags, 29 pages and 57 tools",
+    "render": "passed: canonical, title, H1, robots, stock and earnings links, visible image credit, sitemap, finance catalogue and 1200x675 social image inspected",
+    "exact_head_ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "publication": {"scheduled_daily_slot": 3, "scheduled_daily_count": 3}
+}
