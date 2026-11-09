@@ -6,9 +6,9 @@
   "publication_kind": "new_analysis",
   "story_fingerprint": "739267c2ba00372f2daeec06",
   "fingerprint_input": "TSLA|FY2026-Q3|services-and-other-gross-profit-contribution",
-  "status": "prepared",
-  "publication_state": "prepared",
-  "new_articles_published": 0,
+  "status": "published",
+  "publication_state": "live_verified",
+  "new_articles_published": 1,
   "authorization": "Publisher authorised daily Mag 8 analysis.",
   "article_path": "content/wealth/tesla-services-gross-profit.md",
   "article_sha256": "1e6acc79fa1fc9d6908283c80b1fd4e11bb20789334200085989085ac1824a7e",
@@ -81,6 +81,36 @@
     "45 offline earnings review, image and finance-discovery tests passed.",
     "Production article template rendered and inspected. Canonical, one H1, table, internal links, JPEG hero, matching OG/Twitter and all three discover crops checked.",
     "All three internal links returned HTTP 200 at their exact live URLs. The production image processor accepted the pinned JPEG.",
-    "Initial push CI #42670863478 passed. PR CI #42670873957 passed tests and build but exceeded the homepage LCP threshold. Retry failed before job allocation with GitHub internal error 9816d35e-20ab-4694-a191-559cae380133. Retesting the scoped PR."
-  ]
+    "Initial push CI #42670863478 passed. PR CI #42670873957 passed tests and build but exceeded the homepage LCP threshold. Retry failed before job allocation with GitHub internal error 9816d35e-20ab-4694-a191-559cae380133. Retesting the scoped PR.",
+    "Reopened the same PR after a GitHub internal error blocked runner allocation; CI tests, full build and Lighthouse passed on the validated PR head. Post-merge CI also passed.",
+    "Initial deployment went live and passed live and discovery checks. A subsequent stock-profile deployment interrupted its mobile job. Confirmed article and assets were identical in successor commit a17acd7a39b70d50f2b50feeaef39862e30c41d3. All five successor jobs passed and public endpoints were independently rechecked."
+  ],
+  "pull_request": "https://github.com/davidomarayt/compound/pull/102",
+  "validated_head": "d33849da861def0ab6302987d2c92b5ab1b60a1a",
+  "merge_commit": "8afb5fe31659c706cc7aed533818a7e9e6147959",
+  "ci_run": 42673718464,
+  "post_merge_ci": 42675288396,
+  "deployment_run": 42675287454,
+  "successor_deployment_run": 42676327622,
+  "deployment_checks": {
+    "build": "success",
+    "deploy": "success",
+    "verify-live": "success",
+    "verify-finance-discovery": "success",
+    "mobile-audit": "success on successor deployment"
+  },
+  "live_verification": {
+    "canonical": "https://compound.ie/wealth/tesla-services-gross-profit/",
+    "sitemap": true,
+    "finance_directory": true,
+    "finance_catalogue": true,
+    "hero_matches_source": true,
+    "social_image": "https://compound.ie/static/discover/tesla-services-gross-profit-16x9.webp",
+    "social_dimensions": [
+      1200,
+      675
+    ],
+    "social_sha256": "da826ca596839bb6c81a8fcff057102beb12cbcdba3a7896bf935b1b6af6d24f",
+    "verified_at": "2026-11-09T18:49:32.757897+00:00"
+  }
 }
