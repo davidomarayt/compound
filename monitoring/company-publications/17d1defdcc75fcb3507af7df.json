@@ -4,8 +4,8 @@
   "company": "Ralph Lauren Corporation",
   "ticker": "RL",
   "date": "2026-11-09",
-  "status": "preflight_passed",
-  "publication_state": "awaiting_exact_head_ci",
+  "status": "published",
+  "publication_state": "live_verified",
   "publication_kind": "new_analysis",
   "authorization": "Publisher authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
   "story_thesis": "Ralph Lauren's reported margin included a tariff refund, but adjusted margin, AUR and Asia growth indicate broader full-price strength that now faces a slower holiday test.",
@@ -79,9 +79,21 @@
     "offline_tests": "passed: 55 focused tests plus 18 post-build finance-discovery tests",
     "build": "passed: production canonical build generated 268 articles, 698 tags, 29 pages and 57 tools",
     "render": "passed: canonical, title, H1, robots, stock and earnings links, visible image credit, sitemap, finance catalogue and 1200x675 social image inspected",
-    "exact_head_ci": "pending",
-    "deployment": "pending",
-    "live_verification": "pending"
+    "exact_head_ci": "passed: CI run 42593629413 on head 3f39e8f676befb2c79e83562e6d81af190a180f1",
+    "deployment": "passed: site run 42594933166 built and deployed merge commit c99a08f8fb715a930748b02ca3d3f235aa6a932d",
+    "live_verification": "passed: HTTP 200; canonical, title, article text, indexing, photo credit, internal links, sitemap, finance catalogue and actual social image independently checked"
   },
-  "publication": {"scheduled_daily_slot": 3, "scheduled_daily_count": 3}
+  "publication": {
+    "scheduled_daily_slot": 3,
+    "scheduled_daily_count": 3,
+    "pull_request": "https://github.com/davidomarayt/compound/pull/98",
+    "pull_request_head_sha": "3f39e8f676befb2c79e83562e6d81af190a180f1",
+    "merge_sha": "c99a08f8fb715a930748b02ca3d3f235aa6a932d",
+    "ci_run_id": 42593629413,
+    "site_run_id": 42594933166,
+    "live_verified_at": "2026-11-09T09:46:29+00:00",
+    "live_http_status": 200,
+    "live_social_image_sha256": "b735fc635e7425581d244eab29f07b84dfeb711eebbcbf6de953eb6ba0b7a207",
+    "live_social_image_dimensions": [1200, 675]
+  }
 }
