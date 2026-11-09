@@ -1,0 +1,97 @@
+{
+  "story_fingerprint": "3ee0584d66321731ed50b722",
+  "fingerprint_input": "DUK|duke-energy-capital-spending-load-growth|2026-11-09",
+  "company": "Duke Energy Corporation",
+  "ticker": "DUK",
+  "date": "2026-11-09",
+  "status": "preflight_passed",
+  "publication_state": "awaiting_exact_head_ci",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Duke Energy is funding a record generation build before much of the expected load arrives; per-share returns depend on contracted demand, regulatory recovery and financing discipline.",
+  "article_path": "content/wealth/duke-energy-capital-spending-load-growth.md",
+  "article_sha256": "2a8ad07a87fa1cdbcb3eb993d57c09d020ebcb97bc5e16e36d57485a46708610",
+  "canonical_url": "https://compound.ie/wealth/duke-energy-capital-spending-load-growth/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1326160/000132616026000048/er-20260930xearningsreleas.htm",
+    "https://www.sec.gov/Archives/edgar/data/1326160/000132616026000051/duk-20260930.htm"
+  ],
+  "source_sha256": [
+    "e825bea162075cc57f4d8edf980b4413a0aca94bc752350c526e04d4d4476105",
+    "a535357dac86d8e606b32854a0faa1ef67f23481b96279aca6fa0d6db1d7025b"
+  ],
+  "identity": {
+    "issuer": "Duke Energy Corporation",
+    "CIK": 1326160,
+    "release_accession": "0001326160-26-000048",
+    "form_10q_accession": "0001326160-26-000051",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30",
+    "filing_date": "2026-11-05",
+    "currency": "USD",
+    "units": "USD millions except per-share data"
+  },
+  "duplicate_checks": [
+    "Checked EDITORIAL_TOPIC_INDEX.md, CONTENT_INVENTORY.md, data/content-inventory.json and actual wealth content; Duke has a maintained profile but no capital-spending-versus-load-growth analysis.",
+    "Checked recent company-publication records, live site content and open and merged pull requests; no matching Duke story, fingerprint or active attempt was found.",
+    "Checked the 9 November Europe/Dublin scheduled ledger before drafting; all three slots were open.",
+    "Routine quarterly results remain on /stocks/duk/; this article addresses funding, regulation and load-conversion economics."
+  ],
+  "candidate_review": {
+    "budget_used": 10,
+    "selected": ["Duke Energy", "Mattel", "Ralph Lauren"],
+    "screened_not_selected": [
+      "DraftKings: regulatory and promotional economics required a broader evidence set",
+      "Humana: image provenance for the specific service angle was not strong enough",
+      "Solventum: ERP timing made the quarter less clean for a standalone thesis",
+      "Fluor: backlog quality was promising but a company-specific licensed image was less suitable",
+      "Cloudflare: overlapped recent software and AI-infrastructure themes",
+      "Expedia: valid B2B angle, but less sector rotation than the selected utility story",
+      "Curtiss-Wright: source quality passed, but company-profile and image fit were weaker"
+    ]
+  },
+  "evidence_table": [
+    {"claim": "Q3 reported and adjusted EPS was USD1.99 versus USD1.81; Electric Utilities and Infrastructure segment income was USD1.817bn versus USD1.658bn.", "source_indexes": [0], "location_or_arithmetic": "Results release headline and segment discussion.", "result": "verified; reported and adjusted labels retained"},
+    {"claim": "Nine-month operating cash was USD7.889bn and capital expenditure USD12.566bn versus USD8.672bn and USD9.881bn.", "source_indexes": [1], "location_or_arithmetic": "Form 10-Q cash-flow statement; 12.566 - 7.889 = USD4.677bn funding gap, not labelled company free cash flow.", "result": "verified and independently recomputed"},
+    {"claim": "Debt categories totalled about USD92.789bn at 30 September.", "source_indexes": [1], "location_or_arithmetic": "USD84.332bn long-term debt + USD6.116bn current maturities + USD2.341bn notes payable/commercial paper.", "result": "verified and independently recomputed"},
+    {"claim": "The Piedmont Tennessee sale generated USD2.501bn of proceeds.", "source_indexes": [1], "location_or_arithmetic": "Form 10-Q investing cash flows.", "result": "verified and identified as non-recurring sale proceeds"},
+    {"claim": "Management plans 16GW of capacity by 2031 and guides to USD6.70-USD6.80 adjusted EPS for 2026 and 5%-7% adjusted EPS growth through 2030.", "source_indexes": [0], "location_or_arithmetic": "Results release headline and outlook.", "result": "verified and labelled management guidance"}
+  ],
+  "fact_check_pass": {
+    "method": "Every material number, period, accounting measure, management explanation, guidance item and calculation was reread against the release and Form 10-Q; cash-minus-capex was not presented as reported free cash flow.",
+    "unresolved_material_claims": []
+  },
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Duke_Energy_P6180437.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Duke_Energy_P6180437.jpg",
+    "photographer": "Chris Light",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "capture_date": "2008-06-18",
+    "subject": "Duke Energy Ohio Miami Fort power station and transmission lines",
+    "archive_label": "Archival identified-facility photograph; not a current reporting-period image",
+    "transform": "Cropped and resized for publication",
+    "source_dimensions": [2048, 1536],
+    "source_sha256": "d6a3895bce667767ed043d07282ef6f9b3433ee38399e9eafb9ea0c3ab9a1a4b",
+    "local_image_sha256": "d6a3895bce667767ed043d07282ef6f9b3433ee38399e9eafb9ea0c3ab9a1a4b",
+    "social_image_path": "/static/discover/duke-energy-capital-spending-load-growth-16x9.webp",
+    "social_image_dimensions": [1200, 675],
+    "social_image_sha256": "b03accd9544bdd9b0d018e0077661be5126a25afb58e8eed8b67b9d3b1bdabc8",
+    "visual_inspection": "passed: authentic topic-specific identified Duke Energy facility",
+    "verified": true
+  },
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_check": "passed",
+    "claim_fact_check": "passed",
+    "image_provenance": "passed",
+    "offline_tests": "passed: 55 focused tests plus 18 post-build finance-discovery tests",
+    "build": "passed: production canonical build generated 268 articles, 698 tags, 29 pages and 57 tools",
+    "render": "passed: canonical, title, H1, robots, stock and earnings links, visible image credit, sitemap, finance catalogue and 1200x675 social image inspected",
+    "exact_head_ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "publication": {"scheduled_daily_slot": 1, "scheduled_daily_count": 3}
+}

@@ -1,0 +1,85 @@
+{
+  "story_fingerprint": "35f87aedb4b8002c036197db",
+  "fingerprint_input": "MAT|mattel-tariff-refund-margin|2026-11-09",
+  "company": "Mattel, Inc.",
+  "ticker": "MAT",
+  "date": "2026-11-09",
+  "status": "preflight_passed",
+  "publication_state": "awaiting_exact_head_ci",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised three verified daily company-analysis articles on 2 November 2026, superseding the repository's one-new-article daily cap.",
+  "story_thesis": "Mattel's 480-basis-point gross-margin improvement was slightly smaller than the tariff-refund contribution; durability depends on brand mix, costs and seasonal cash generation after the refund.",
+  "article_path": "content/wealth/mattel-tariff-refund-margin.md",
+  "article_sha256": "1b68e44d764fa7d652a591ad0ff1f09abdd42170a81503136852cb96bb58de1e",
+  "canonical_url": "https://compound.ie/wealth/mattel-tariff-refund-margin/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/63276/000006327626000014/exhibit991.htm",
+    "https://www.sec.gov/Archives/edgar/data/63276/000162828026071218/mat-20260930.htm"
+  ],
+  "source_sha256": [
+    "bad31475c3ba9a4b5a4a38dd4469d8074e0ffcc879f7729a6b4ab29ce471ffe0",
+    "3667d6f14a0ad72a2f2b89b4950a6aaa49e39f0787f56a641f07e51397cc4372"
+  ],
+  "identity": {
+    "issuer": "Mattel, Inc.",
+    "CIK": 63276,
+    "release_accession": "0000063276-26-000014",
+    "form_10q_accession": "0001628280-26-071218",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30",
+    "filing_date": "2026-11-05",
+    "currency": "USD",
+    "units": "USD millions except per-share data and basis points"
+  },
+  "duplicate_checks": [
+    "Checked both editorial inventories, the JSON inventory and actual wealth content; Mattel has a maintained profile but no analysis separating the tariff refund from brand and margin economics.",
+    "Checked recent publication records, live content and open and merged PRs; no matching Mattel story, fingerprint or active attempt was found.",
+    "Checked the 9 November Europe/Dublin scheduled ledger before drafting; all three slots were open.",
+    "Routine quarterly results remain on /stocks/mat/; this article addresses margin quality, brand mix and cash allocation."
+  ],
+  "candidate_review_reference": "See 3ee0584d66321731ed50b722.json for the ten-company screen; Mattel was selected independently.",
+  "evidence_table": [
+    {"claim": "Q3 net sales were USD1.8067bn, up 4%, and gross margin was 54.8% versus 50.0%.", "source_indexes": [0, 1], "location_or_arithmetic": "Release overview and Form 10-Q income statement/MD&A.", "result": "verified"},
+    {"claim": "The USD88.4m IEEPA tariff refund contributed 490 basis points to gross margin, slightly more than the 480-basis-point reported increase.", "source_indexes": [1], "location_or_arithmetic": "Form 10-Q cost-of-sales and gross-margin bridge.", "result": "verified; refund and underlying economics separated"},
+    {"claim": "Vehicles gross billings were USD679.8m, up 9%; Hot Wheels was USD585.5m, up 7%; Barbie billings declined 6%.", "source_indexes": [0, 1], "location_or_arithmetic": "Release category table and filing MD&A; gross billings explicitly distinguished from net sales.", "result": "verified"},
+    {"claim": "Nine-month operating cash use was USD113.5m, capex USD186.3m, share repurchases USD308.4m and Mattel163 cash acquisition cost USD74.8m net of cash acquired.", "source_indexes": [0, 1], "location_or_arithmetic": "Release cash-flow section and Form 10-Q liquidity discussion.", "result": "verified; seasonal context retained"},
+    {"claim": "Full-year guidance was 1%-4% constant-currency sales growth, about 48% adjusted gross margin and USD500m-USD570m adjusted operating income, excluding tariff-refund benefits.", "source_indexes": [0], "location_or_arithmetic": "Release outlook and footnotes.", "result": "verified and labelled management guidance"}
+  ],
+  "fact_check_pass": {
+    "method": "Every material number, fiscal date, category, accounting measure, management explanation and calculation was reread against the release and Form 10-Q; gross billings, GAAP and adjusted measures were kept distinct.",
+    "unresolved_material_claims": []
+  },
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Mattel_HOT_WHEELS_Chevrolet_Camaro_Concept.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Mattel_HOT_WHEELS_Chevrolet_Camaro_Concept.jpg",
+    "photographer": "puuikibeach",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "capture_date": "2012-04-01",
+    "subject": "Mattel Hot Wheels Chevrolet Camaro product",
+    "archive_label": "Archival product photograph; not a current product launch or reporting-period image",
+    "transform": "Cropped and resized for publication",
+    "source_dimensions": [2709, 1806],
+    "source_sha256": "2f1182d50b997448cb2c2282cd9924283b59c2ecc956df116936b7f4404652c4",
+    "local_image_sha256": "2f1182d50b997448cb2c2282cd9924283b59c2ecc956df116936b7f4404652c4",
+    "social_image_path": "/static/discover/mattel-tariff-refund-margin-16x9.webp",
+    "social_image_dimensions": [1200, 675],
+    "social_image_sha256": "b084c156a9cd4e40f2719557017a5b8c27a17084df9d3a386e2cc861bcbe9b39",
+    "visual_inspection": "passed: authentic topic-specific Mattel Hot Wheels product photograph",
+    "verified": true
+  },
+  "gates": {
+    "source_verification": "passed",
+    "duplicate_check": "passed",
+    "claim_fact_check": "passed",
+    "image_provenance": "passed",
+    "offline_tests": "passed: 55 focused tests plus 18 post-build finance-discovery tests",
+    "build": "passed: production canonical build generated 268 articles, 698 tags, 29 pages and 57 tools",
+    "render": "passed: canonical, title, H1, robots, stock and earnings links, visible image credit, sitemap, finance catalogue and 1200x675 social image inspected",
+    "exact_head_ci": "pending",
+    "deployment": "pending",
+    "live_verification": "pending"
+  },
+  "publication": {"scheduled_daily_slot": 2, "scheduled_daily_count": 3}
+}
