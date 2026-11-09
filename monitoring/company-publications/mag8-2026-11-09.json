@@ -79,6 +79,8 @@
   },
   "validation": [
     "45 offline earnings review, image and finance-discovery tests passed.",
-    "Production article template rendered and inspected. Canonical, one H1, table, internal links, JPEG hero, matching OG/Twitter and all three discover crops checked."
+    "Production article template rendered and inspected. Canonical, one H1, table, internal links, JPEG hero, matching OG/Twitter and all three discover crops checked.",
+    "All three internal links returned HTTP 200 at their exact live URLs. The production image processor accepted the pinned JPEG.",
+    "Initial push CI #42670863478 passed. PR CI #42670873957 passed tests and build but exceeded the homepage LCP threshold. Retry failed before job allocation with GitHub internal error 9816d35e-20ab-4694-a191-559cae380133. Retesting the scoped PR."
   ]
 }
