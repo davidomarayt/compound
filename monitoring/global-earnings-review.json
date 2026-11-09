@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-08",
+  "checked": "2026-11-09",
   "companies_checked": 10,
   "companies": {
     "spcx": {
@@ -205,8 +205,18 @@
       "https://investor.tsmc.com/english/quarterly-results/2026/q3"
     ]
   },
-  "new_review_candidates": 0,
+  "new_review_candidates": 1,
   "pending_review": [
+    {
+      "id": "sec:353278:0001171843-26-007260",
+      "company": "Novo Nordisk",
+      "slug": "nvo",
+      "title": "Novo Nordisk SEC 6-K filed 2026-11-09",
+      "filed": "2026-11-09",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=353278",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
     {
       "id": "ir:nvo:https://www.novonordisk.com/content/dam/nncorp/global/en/investors/pdfs/financial-results/2026/Q3-2026-financial-workbook.xlsx",
       "company": "Novo Nordisk",
