@@ -2,33 +2,33 @@
   "cik": 797468,
   "company": "Occidental Petroleum",
   "latest": {
-    "accession": "0001628280-26-053388",
-    "filed": "2026-08-05",
+    "accession": "0001628280-26-072198",
+    "filed": "2026-11-09",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 2.75,
-        "prior_year": 0.26,
+        "current": 1.61,
+        "prior_year": 0.65,
         "tag": "us-gaap:EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 2996000000,
-        "prior_year": 468000000,
+        "current": 1821000000.0,
+        "prior_year": 842000000.0,
         "tag": "us-gaap:ProfitLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 8065000000,
-        "prior_year": 5258000000,
+        "current": 6567000000.0,
+        "prior_year": 5519000000.0,
         "tag": "us-gaap:Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/797468/000162828026053388/oxy-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/797468/000162828026072198/oxy-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/797468/000162828026053388/oxy-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-072198",
+      "filed": "2026-11-09",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.61,
+          "prior_year": 0.65,
+          "tag": "us-gaap:EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1821000000.0,
+          "prior_year": 842000000.0,
+          "tag": "us-gaap:ProfitLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 6567000000.0,
+          "prior_year": 5519000000.0,
+          "tag": "us-gaap:Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/797468/000162828026072198/oxy-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "OXY",
-  "updated": "2026-11-07"
+  "updated": "2026-11-09"
 }

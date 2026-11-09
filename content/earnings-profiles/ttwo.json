@@ -2,33 +2,33 @@
   "cik": 946581,
   "company": "Take-Two Interactive",
   "latest": {
-    "accession": "0001628280-26-054870",
-    "filed": "2026-08-07",
+    "accession": "0001628280-26-072254",
+    "filed": "2026-11-09",
     "form": "10-Q",
-    "fp": "Q1",
+    "fp": "Q2",
     "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": -0.18,
-        "prior_year": -0.07,
+        "current": -0.29,
+        "prior_year": -0.73,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": -34100000,
-        "prior_year": -11900000,
+        "current": -54000000,
+        "prior_year": -133900000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 1533900000,
-        "prior_year": 1503800000,
+        "current": 1497000000,
+        "prior_year": 1773800000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/946581/000162828026054870/ttwo-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/946581/000162828026072254/ttwo-20260930.htm"
   },
   "periods": [
     {
@@ -59,9 +59,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/946581/000162828026054870/ttwo-20260630.htm"
+    },
+    {
+      "accession": "0001628280-26-072254",
+      "filed": "2026-11-09",
+      "form": "10-Q",
+      "fp": "Q2",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.29,
+          "prior_year": -0.73,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -54000000,
+          "prior_year": -133900000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 1497000000,
+          "prior_year": 1773800000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/946581/000162828026072254/ttwo-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TTWO",
-  "updated": "2026-10-15"
+  "updated": "2026-11-09"
 }
