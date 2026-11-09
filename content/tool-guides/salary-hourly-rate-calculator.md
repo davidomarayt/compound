@@ -46,7 +46,7 @@ The calculator now also shows a **fortnightly gross figure**, the average number
 
 These are conversion tools, not measures of workload or quality of life. Two jobs with the same gross hourly equivalent can still be very different once commuting, unpaid overtime, shift patterns, annual leave, employer pension contributions and other benefits are considered.
 
-If your roster includes weekends, see [how to check Sunday premium pay on an Irish payslip](/wealth/sunday-premium-pay-ireland/) before adding allowances to your basic salary.
+If your roster includes weekends, see [how to check Sunday premium pay on an Irish payslip](/wealth/sunday-premium-pay-ireland/) before adding allowances to your basic salary. If a holiday falls outside your roster, see [how to calculate public holiday pay on a usual day off](/wealth/public-holiday-pay-ireland-part-time/).
 
 ## How to read the result
 

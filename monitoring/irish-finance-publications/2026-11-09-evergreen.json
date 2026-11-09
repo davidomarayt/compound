@@ -1,0 +1,14 @@
+{
+  "run_date": "2026-11-09",
+  "programme": "Irish evergreen guides",
+  "content_type": "new evergreen guide",
+  "topic": "Do I get public holiday pay if I don’t normally work that day?",
+  "canonical_url": "https://compound.ie/wealth/public-holiday-pay-ireland-part-time/",
+  "primary_sources": [
+    "https://www.workplacerelations.ie/en/what_you_should_know/public-holidays/public_hols.html",
+    "https://revisedacts.lawreform.ie/eli/1997/act/20/section/21/revised/en/html"
+  ],
+  "publication_commit": null,
+  "deployment_status": "awaiting_deployment",
+  "selection_evidence": "8 November Search Console export documented in the prior evergreen ledger: salary-to-hourly calculator, 29 clicks and 13,413 impressions in three months. Adjacent hourly-pay demand only; no fresh property connection or holiday-specific figures."
+}
