@@ -1,0 +1,42 @@
+{
+  "run_date": "2026-11-09",
+  "timezone": "Europe/Dublin",
+  "edition": "afternoon",
+  "edition_key": "2026-11-09/afternoon",
+  "morning_search_cutoff": "2026-11-09T10:02:27+00:00",
+  "morning_ledger": "2026-11-09.json",
+  "publishing_branch": "claude/clever-babbage-uibieq",
+  "reviewed_source_commit": "ab6f55a0672b0e25a4f637c8d5b5115fafaa1b3d",
+  "outcome": "skipped",
+  "articles": [],
+  "confirmed_publications": 0,
+  "new_articles": 0,
+  "canonical_updates": 0,
+  "deployment_status": "not_applicable",
+  "reviewed": [
+    {
+      "topic": "CCPC stop-use notice for 8-litre ISD20-D10A portable gas water heater",
+      "primary_source": "https://www.ccpc.ie/consumer-advice/product-safety/product-safety-notifications/details/product-safety-information-notice-on-an-8-litre-instant-gas-water-isd20-d10a",
+      "primary_publication_timestamp": "2026-11-09T11:22:48Z",
+      "reason": "Post-cutoff regulator notice. Product photograph excluded from the regulator's reuse licence. No suitable licensed cover verified.",
+      "licensing_source": "https://www.ccpc.ie/legal"
+    },
+    {
+      "topic": "CCPC enforcement against traders",
+      "primary_source": "https://www.ccpc.ie/news-and-media/news/article/2026/11/09/pharmacies--retailers-and-pubs-breach-consumer-laws--details-of-new-ccpc-enforcement-actions",
+      "reason": "Already public by 09:47 Dublin.",
+      "timing_evidence": "https://www.c103.ie/news/c103-news-and-sport/two-cork-businesses-face-enforcement-action/"
+    },
+    {
+      "topic": "Central Dublin public transport diversions",
+      "primary_source": "https://www.transportforireland.ie/news/significant-disruption-to-public-transport-anticipated-in-central-dublin-on-10th-to-13th-november-around-eu-presidency-meetings/",
+      "reason": "Announced on 4 November."
+    },
+    {
+      "topic": "AliExpress model 2430 adaptor recall",
+      "primary_source": "https://www.ccpc.ie/consumer-advice/product-safety/product-safety-notifications/details/aliexpress-recalls-ac-dc-adaptor-sold-on-aliexpress",
+      "primary_publication_timestamp": "2026-11-09T11:13:43Z",
+      "reason": "Around three affected units in Ireland. Timing of the underlying marketplace recall unverified."
+    }
+  ]
+}
