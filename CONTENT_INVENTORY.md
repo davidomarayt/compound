@@ -8,13 +8,13 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 271
+- Published editorial articles and guides: 272
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
 - Information and policy pages: 24
 - Main hubs: 11
-- Public-company directory profiles: 510
+- Public-company directory profiles: 511
 - Private-company directory profiles: 13
 - Draft or unpublished editorial files: 0
 
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 217
+## Wealth articles and guides — 218
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -258,6 +258,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What Is a REIT? How Property Investing Can Generate Income and Growth](https://compound.ie/wealth/what-is-a-reit/)
 - [What would an extra €100 a month do to your mortgage?](https://compound.ie/wealth/mortgage-overpayments-100-euro-ireland/)
 - [When Can You Access Your Pension in Ireland? Retirement Options Explained](https://compound.ie/wealth/when-can-i-access-pension-ireland/)
+- [Where did Tesla’s gross-profit growth come from? Start with services](https://compound.ie/wealth/tesla-services-gross-profit/)
 - [Who carries the risk on Waymo’s $5 billion loan?](https://compound.ie/wealth/alphabet-waymo-term-loan/)
 - [Who keeps the profit on an AI rack? AMD, Arista and Supermicro report](https://compound.ie/wealth/ai-infrastructure-earnings/)
 - [Will Tesla and SpaceX Merge in 2027? The Financial Case, Risks and Shareholder Impact](https://compound.ie/wealth/tesla-spacex-merger-2027/)
@@ -510,7 +511,7 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - [Tools and Calculators](https://compound.ie/tools/)
 - [Wealth](https://compound.ie/wealth/)
 
-## Listed company stock research profiles — 510
+## Listed company stock research profiles — 511
 
 These are generated directory profiles, not individually written evergreen articles.
 
@@ -864,6 +865,7 @@ These are generated directory profiles, not individually written evergreen artic
 - [NXP Semiconductors (NXPI) Stock](https://compound.ie/stocks/nxpi/)
 - [O'Reilly Automotive (ORLY) Stock](https://compound.ie/stocks/orly/)
 - [Occidental Petroleum (OXY) Stock](https://compound.ie/stocks/oxy/)
+- [Okta, Inc. (OKTA) Stock](https://compound.ie/stocks/okta/)
 - [Old Dominion (ODFL) Stock](https://compound.ie/stocks/odfl/)
 - [Omnicom Group (OMC) Stock](https://compound.ie/stocks/omc/)
 - [ON Semiconductor (ON) Stock](https://compound.ie/stocks/on/)

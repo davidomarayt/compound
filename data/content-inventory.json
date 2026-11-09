@@ -4966,6 +4966,24 @@
         "status": "published"
       },
       {
+        "title": "Where did Tesla’s gross-profit growth come from? Start with services",
+        "url": "/wealth/tesla-services-gross-profit/",
+        "source": "content/wealth/tesla-services-gross-profit.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "tesla-services-gross-profit",
+        "date": "2026-11-09",
+        "reviewed": "2026-11-09",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "tsla",
+          "mag8-analysis"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Who carries the risk on Waymo’s $5 billion loan?",
         "url": "/wealth/alphabet-waymo-term-loan/",
         "source": "content/wealth/alphabet-waymo-term-loan.md",
@@ -9381,6 +9399,14 @@
         "source": "content/earnings-sp500.json",
         "kind": "Public-company profile",
         "ticker": "OXY",
+        "origin": "S&P reference list"
+      },
+      {
+        "title": "Okta, Inc. (OKTA) Stock",
+        "url": "/stocks/okta/",
+        "source": "content/earnings-sp500.json",
+        "kind": "Public-company profile",
+        "ticker": "OKTA",
         "origin": "S&P reference list"
       },
       {
