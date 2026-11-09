@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-09",
+  "scope": "Existing stock earnings tables",
+  "status": "proposed",
+  "companies": {
+    "ttwo": {
+      "url": "https://compound.ie/stocks/ttwo/",
+      "period": "Q2 FY2027",
+      "filing": "https://www.sec.gov/Archives/edgar/data/946581/000162828026072254/ttwo-20260930.htm",
+      "previous_period": "2026-06-30",
+      "checked_figures": {
+        "revenue": 1497000000,
+        "net_income": -54000000,
+        "diluted_eps": -0.29
+      },
+      "basis": "Quarterly US GAAP in USD and USD per diluted share. Compared reported financial statement with SEC filing.",
+      "earlier_filings_checked": []
+    },
+    "ferg": {
+      "url": "https://compound.ie/stocks/ferg/",
+      "period": "Q3 FY2026",
+      "filing": "https://www.sec.gov/Archives/edgar/data/2011641/000201164126000044/ferg-20260930.htm",
+      "previous_period": "2026-06-30",
+      "checked_figures": {
+        "revenue": 9026000000,
+        "net_income": 598000000,
+        "diluted_eps": 3.08
+      },
+      "basis": "Quarterly US GAAP in USD and USD per diluted share. Compared reported financial statement with SEC filing.",
+      "earlier_filings_checked": []
+    },
+    "ceg": {
+      "url": "https://compound.ie/stocks/ceg/",
+      "period": "Q3 FY2026",
+      "filing": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000119/ceg-20260930.htm",
+      "previous_period": "2026-06-30",
+      "checked_figures": {
+        "revenue": 9550000000.0,
+        "net_income": 1835000000.0,
+        "diluted_eps": 5.19
+      },
+      "basis": "Quarterly US GAAP in USD and USD per diluted share. Compared reported financial statement with SEC filing.",
+      "earlier_filings_checked": [
+        "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000067/ceg-20260331.htm",
+        "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000104/ceg-20260630.htm"
+      ]
+    },
+    "nrg": {
+      "url": "https://compound.ie/stocks/nrg/",
+      "period": "Q3 FY2026",
+      "filing": "https://www.sec.gov/Archives/edgar/data/1013871/000101387126000025/nrg-20260930.htm",
+      "previous_period": "2026-06-30",
+      "checked_figures": {
+        "revenue": 9466000000.0,
+        "net_income": 561000000.0,
+        "diluted_eps": 2.59
+      },
+      "basis": "Quarterly US GAAP in USD and USD per diluted share. Compared reported financial statement with SEC filing.",
+      "earlier_filings_checked": [
+        "https://www.sec.gov/Archives/edgar/data/1013871/000101387126000012/nrg-20260331.htm",
+        "https://www.sec.gov/Archives/edgar/data/1013871/000101387126000020/nrg-20260630.htm"
+      ]
+    },
+    "oxy": {
+      "url": "https://compound.ie/stocks/oxy/",
+      "period": "Q3 FY2026",
+      "filing": "https://www.sec.gov/Archives/edgar/data/797468/000162828026072198/oxy-20260930.htm",
+      "previous_period": "2026-06-30",
+      "checked_figures": {
+        "revenue": 6567000000.0,
+        "net_income": 1821000000.0,
+        "diluted_eps": 1.61
+      },
+      "basis": "Quarterly US GAAP in USD and USD per diluted share. Compared reported financial statement with SEC filing.",
+      "earlier_filings_checked": []
+    }
+  }
+}
