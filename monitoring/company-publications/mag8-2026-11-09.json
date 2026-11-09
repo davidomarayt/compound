@@ -1,0 +1,86 @@
+{
+  "series": "mag8",
+  "date": "2026-11-09",
+  "company": "Tesla, Inc.",
+  "ticker": "TSLA",
+  "publication_kind": "new_analysis",
+  "story_fingerprint": "739267c2ba00372f2daeec06",
+  "fingerprint_input": "TSLA|FY2026-Q3|services-and-other-gross-profit-contribution",
+  "status": "prepared",
+  "publication_state": "prepared",
+  "new_articles_published": 0,
+  "authorization": "Publisher authorised daily Mag 8 analysis.",
+  "article_path": "content/wealth/tesla-services-gross-profit.md",
+  "article_sha256": "1e6acc79fa1fc9d6908283c80b1fd4e11bb20789334200085989085ac1824a7e",
+  "story_thesis": "Used cars, paid charging and repairs share a line in Tesla’s accounts. That line contributed $368 million of the company’s $440 million year-on-year increase in third-quarter gross profit.",
+  "canonical_url": "https://compound.ie/wealth/tesla-services-gross-profit/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045968/tsla-20250930.htm",
+    "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+  ],
+  "identity": {
+    "CIK": "0001318605",
+    "form": "10-Q",
+    "fiscal_year": 2026,
+    "fiscal_period": "Q3",
+    "period_end": "2026-09-30",
+    "accession": "0001628280-26-066775",
+    "comparison_accessions": [
+      "0001628280-25-045968",
+      "0001628280-26-049270"
+    ],
+    "currency_units": "USD millions, three months"
+  },
+  "duplicate_checks": [
+    "Checked AGENTS.md, three editorial indexes, source pages, date-specific branches, current and legacy Mag7/8 records, live finance catalogue, open PRs #43 and #57 and merged PRs #98–101. Morning batch DUK, MAT and RL. Prior Mag8 featured META, LLY, AAPL, GOOGL, AMZN, MSFT and NVDA. No 9 November Mag7 or Mag8 article. Tesla coverage on cash flow, valuation/autonomy, energy, Roadster, Cybertruck and SpaceX serves different questions."
+  ],
+  "evidence_table": [
+    {
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045968/tsla-20250930.htm"
+      ],
+      "locator": "Statements of operations, p. 5; cost of revenues and gross margin table in Item 2. Three months ended September 30.",
+      "claim": "Services gross profit and contribution",
+      "evidence": "“Services and other” revenue/cost: 2026 4605/3871; 2025 3475/3109. Cross-check combined less automotive gross profit: 4540−3806=734; 3981−3615=366. Increase 368; total increase 5494−5054=440. 368/440=83.64%; 734/5494=13.36%. Automotive +191, energy −119, net +72. Category gross profit precedes operating expenses."
+    },
+    {
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm",
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
+      ],
+      "locator": "Statements of operations, p. 5 in each, three-month columns.",
+      "claim": "Gross profit per $100 and sequential bridge",
+      "evidence": "3475−3109=366; 4581−3933=648; 4605−3871=734. Gross margin 10.53%, 14.15%, 15.94% respectively. September vs June: $24m more revenue and $62m lower cost = $86m more gross profit."
+    },
+    {
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm"
+      ],
+      "locator": "Item 2, Results of Operations, Services and other revenue discussion, p. 34",
+      "claim": "Disclosed drivers and limits",
+      "evidence": "“used vehicle sales volume and average selling price” and “paid Supercharging sessions”; management also identifies non-warranty maintenance and collision revenue. Source describes sales drivers; no subcategory profitability breakdown. Charging fixed-cost example and next-quarter tests are analysis, not guidance."
+    }
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Tesla_superchargers_in_Fort_William,_Scotland.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/0/07/Tesla_superchargers_in_Fort_William%2C_Scotland.jpg",
+    "credit": "Lucas Kendall via Wikimedia Commons, CC BY-SA 4.0. Archival photograph taken on 18 April 2026. Resized and cropped.",
+    "capture_date": "2026-04-18",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Resized JPEG, centred derivatives. Original visible in archival context; all three final crops retain recognisable charging stalls. Same licence for derivatives.",
+    "sha256": "97018ce86bb70b5e2cb47060ef08a7aa14096fce892fd7117f945a51c14c9df9"
+  },
+  "fact_check_pass": {
+    "method": "Re-read comparative and current tables, independently recomputed revenue-minus-cost, checked combined segment less automotive, recomputed all ratios and sequential effects. Past figures are reported results. Future conditions are explicitly hypothetical.",
+    "unresolved_material_claims": []
+  },
+  "validation": [
+    "45 offline earnings review, image and finance-discovery tests passed.",
+    "Production article template rendered and inspected. Canonical, one H1, table, internal links, JPEG hero, matching OG/Twitter and all three discover crops checked.",
+    "All three internal links returned HTTP 200 at their exact live URLs. The production image processor accepted the pinned JPEG.",
+    "Initial push CI #42670863478 passed. PR CI #42670873957 passed tests and build but exceeded the homepage LCP threshold. Retry failed before job allocation with GitHub internal error 9816d35e-20ab-4694-a191-559cae380133. Retesting the scoped PR."
+  ]
+}
