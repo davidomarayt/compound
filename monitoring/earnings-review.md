@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-08
+Checked: 2026-11-09
 
 - 498 saved profiles checked against structural and issuer rules.
-- 79 existing company articles; 77 mapped to monitored issuers.
-- 70 pending review items; 18 recorded decisions.
+- 83 existing company articles; 80 mapped to monitored issuers.
+- 74 pending review items; 18 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -18,6 +18,14 @@ ID: `05d9e53f1fdf6d05053a8d15`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/molina-healthcare-earnings-medicaid-margins.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `15bd78b122116bf855e5118c`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/mattel-tariff-refund-margin.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -391,6 +399,16 @@ Files: `content/wealth/cvs-separation-segment-economics.md`, `content/earnings-p
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/64803/000006480326000108/cvs-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-04
 
+### DUK · article_review · low
+
+ID: `a4511d86dfc33951d02fc0cd`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/duke-energy-capital-spending-load-growth.md`, `content/earnings-profiles/duk.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1326160/000132616026000051/duk-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-05
+
 ### GEV · article_review · low
 
 ID: `d68353ecb0ad4d7f0cc36d05`
@@ -583,6 +601,16 @@ Saved evidence: https://www.sec.gov/Archives/edgar/data/1045810/0001045810260000
 
 ### NVDA · article_review · low
 
+ID: `d079e8ae9d0216000899a4c9`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/nvidia-warranty-reserve.md`, `content/earnings-profiles/nvda.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm · Q2 FY2027 · period end 2026-07-26 · filed 2026-08-26
+
+### NVDA · article_review · low
+
 ID: `d3aab0289868f60a083c6cd5`
 
 Baseline consistency review of this article against the saved company results and its original sources.
@@ -610,6 +638,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/reddit-revenue-user-growth.md`, `content/earnings-profiles/rddt.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1713445/000171344526000116/rddt-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-30
+
+### RL · article_review · low
+
+ID: `55c456c841ddb5619be9ead4`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/ralph-lauren-full-price-margin.md`, `content/earnings-profiles/rl.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1037038/000162828026070697/rl-20260926.htm · Q2 FY2027 · period end 2026-09-26 · filed 2026-11-05
 
 ### SBUX · article_review · low
 
