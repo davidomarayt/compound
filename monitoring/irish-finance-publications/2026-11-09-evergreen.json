@@ -8,7 +8,11 @@
     "https://www.workplacerelations.ie/en/what_you_should_know/public-holidays/public_hols.html",
     "https://revisedacts.lawreform.ie/eli/1997/act/20/section/21/revised/en/html"
   ],
-  "publication_commit": null,
-  "deployment_status": "awaiting_deployment",
-  "selection_evidence": "8 November Search Console export documented in the prior evergreen ledger: salary-to-hourly calculator, 29 clicks and 13,413 impressions in three months. Adjacent hourly-pay demand only; no fresh property connection or holiday-specific figures."
+  "publication_commit": "f4a6ceb7b20c59dd082d16c5a7e24fa04b089543",
+  "deployment_status": "deployed_verified_live",
+  "selection_evidence": "8 November Search Console export documented in the prior evergreen ledger: salary-to-hourly calculator, 29 clicks and 13,413 impressions in three months. Adjacent hourly-pay demand only; no fresh property connection or holiday-specific figures.",
+  "pull_request": "https://github.com/davidomarayt/compound/pull/101",
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/42610280370",
+  "verified_at_utc": "2026-11-09T11:41:51Z",
+  "verification": "HTTP 200 for canonical guide and calculator, reciprocal link, headline and description, sourced figures, credited original JPEG and 1200×675 Open Graph/Twitter WebP verified."
 }
