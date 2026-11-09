@@ -1,7 +1,7 @@
 {
   "source": "https://github.com/datasets/s-and-p-500-companies/blob/main/data/constituents.csv",
   "source_type": "third-party public reference (not licensed S&P constituents)",
-  "checked": "2026-11-02",
+  "checked": "2026-11-09",
   "security_count": 503,
   "company_count": 500,
   "members": [
@@ -2725,7 +2725,7 @@
       "symbols": [
         "KVUE"
       ],
-      "active": true
+      "active": false
     },
     {
       "cik": 60086,
@@ -3445,6 +3445,16 @@
       "symbol": "OKE",
       "symbols": [
         "OKE"
+      ],
+      "active": true
+    },
+    {
+      "cik": 1660134,
+      "name": "Okta, Inc.",
+      "sector": "Information Technology",
+      "symbol": "OKTA",
+      "symbols": [
+        "OKTA"
       ],
       "active": true
     },
