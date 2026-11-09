@@ -1,7 +1,7 @@
 {
   "date": "2026-11-09",
   "scope": "Existing stock earnings tables",
-  "status": "proposed",
+  "status": "deployed_verified_live",
   "companies": {
     "ttwo": {
       "url": "https://compound.ie/stocks/ttwo/",
@@ -35,8 +35,8 @@
       "filing": "https://www.sec.gov/Archives/edgar/data/1868275/000186827526000119/ceg-20260930.htm",
       "previous_period": "2026-06-30",
       "checked_figures": {
-        "revenue": 9550000000.0,
-        "net_income": 1835000000.0,
+        "revenue": 9550000000,
+        "net_income": 1835000000,
         "diluted_eps": 5.19
       },
       "basis": "Quarterly US GAAP in USD and USD per diluted share. Compared reported financial statement with SEC filing.",
@@ -51,8 +51,8 @@
       "filing": "https://www.sec.gov/Archives/edgar/data/1013871/000101387126000025/nrg-20260930.htm",
       "previous_period": "2026-06-30",
       "checked_figures": {
-        "revenue": 9466000000.0,
-        "net_income": 561000000.0,
+        "revenue": 9466000000,
+        "net_income": 561000000,
         "diluted_eps": 2.59
       },
       "basis": "Quarterly US GAAP in USD and USD per diluted share. Compared reported financial statement with SEC filing.",
@@ -67,12 +67,32 @@
       "filing": "https://www.sec.gov/Archives/edgar/data/797468/000162828026072198/oxy-20260930.htm",
       "previous_period": "2026-06-30",
       "checked_figures": {
-        "revenue": 6567000000.0,
-        "net_income": 1821000000.0,
+        "revenue": 6567000000,
+        "net_income": 1821000000,
         "diluted_eps": 1.61
       },
       "basis": "Quarterly US GAAP in USD and USD per diluted share. Compared reported financial statement with SEC filing.",
       "earlier_filings_checked": []
     }
+  },
+  "merge_commit": "c440719c9cfce7ef9b825c86430efa4b25a4c687",
+  "pull_request": 103,
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/42723831929",
+  "verification": "GitHub Pages deployment succeeded. All five live canonical pages matched fiscal periods, SEC filing URLs and formatted revenue, net income and diluted EPS. Local build and 41 targeted tests passed; both exact-head CI runs passed.",
+  "pending": {
+    "missing_latest_quarter": [
+      "KKR",
+      "SKYD"
+    ],
+    "current_release_summary_but_table_not_reconciled": [
+      "BEN",
+      "BRK-B",
+      "EMR",
+      "KDP",
+      "TEL",
+      "VMRK",
+      "VST"
+    ],
+    "reason": "Reached the five-company manual review limit. Revisit outstanding tables against issuer filings, including SKYD predecessor/successor periods."
   }
 }
