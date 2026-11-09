@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-08",
+  "snapshot_date": "2026-11-09",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -952,6 +952,23 @@
           "dublin",
           "things-to-do",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Duke Energy Is Spending $12.6 Billion Before the New Load Arrives. Who Funds the Gap?",
+        "url": "/wealth/duke-energy-capital-spending-load-growth/",
+        "source": "content/wealth/duke-energy-capital-spending-load-growth.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "duke-energy-capital-spending-load-growth",
+        "date": "2026-11-09",
+        "reviewed": "2026-11-09",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "duk"
         ],
         "status": "published"
       },
@@ -2739,6 +2756,23 @@
         "status": "published"
       },
       {
+        "title": "Mattel’s Gross Margin Jumped 4.8 Points. How Much Survives the Tariff Refund?",
+        "url": "/wealth/mattel-tariff-refund-margin/",
+        "source": "content/wealth/mattel-tariff-refund-margin.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "mattel-tariff-refund-margin",
+        "date": "2026-11-09",
+        "reviewed": "2026-11-09",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "mat"
+        ],
+        "status": "published"
+      },
+      {
         "title": "McDonald’s Profit Grew While US Guest Counts Fell. How Much Protection Does Franchising Provide?",
         "url": "/wealth/mcdonalds-guest-counts-franchise-margins/",
         "source": "content/wealth/mcdonalds-guest-counts-franchise-margins.md",
@@ -3750,6 +3784,23 @@
           "housing",
           "commuting",
           "meath"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Ralph Lauren’s Gross Margin Rose 6.2 Points. Is Full-Price Demand Doing the Work?",
+        "url": "/wealth/ralph-lauren-full-price-margin/",
+        "source": "content/wealth/ralph-lauren-full-price-margin.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "ralph-lauren-full-price-margin",
+        "date": "2026-11-09",
+        "reviewed": "2026-11-09",
+        "tags": [
+          "wealth",
+          "stocks",
+          "company-research",
+          "rl"
         ],
         "status": "published"
       },

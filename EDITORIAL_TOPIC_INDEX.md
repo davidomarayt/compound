@@ -1,6 +1,6 @@
 # Compound.ie — Quick Editorial Topic Index
 
-Updated: 2026-11-08 | Automatically rebuilt from published source
+Updated: 2026-11-09 | Automatically rebuilt from published source
 
 **Before recommending a new article:** search this page by keyword, synonym,
 and reader question. An existing article or tool may already cover the idea.
@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 265 published articles and guides, 64 tools,
+**Included:** 268 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -63,6 +63,7 @@ For the complete register (including 510+ company profiles), open
 - [Do Solar Panels Work in Winter in Ireland? Monthly Output and Savings](https://compound.ie/wealth/solar-panels-winter-ireland/) — **Wealth**
 - [Do you actually need a battery with solar panels in Ireland?](https://compound.ie/wealth/solar-panels-vs-battery-ireland/) — **Wealth**
 - [Dublin Theatre Festival 2026: what’s on, when it runs and how to plan a visit](https://compound.ie/news/dublin-theatre-festival-2026-guide/) — **Life**
+- [Duke Energy Is Spending $12.6 Billion Before the New Load Arrives. Who Funds the Gap?](https://compound.ie/wealth/duke-energy-capital-spending-load-growth/) — **Wealth**
 - [East- and West-Facing Solar Panels in Ireland: Are They Worth It?](https://compound.ie/wealth/east-west-facing-solar-panels-ireland/) — **Wealth**
 - [ECB Holds Rates as Lagarde Announces Departure: What It Means for Your Money](https://compound.ie/news/ecb-rates-lagarde-departure-ireland-october-2026/) — **Wealth**
 - [El Niño could be one of the strongest on record — what it actually means for Ireland](https://compound.ie/news/el-nino-2026-ireland-weather-food-transport/) — **Life**
@@ -154,6 +155,7 @@ For the complete register (including 510+ company profiles), open
 - [Manchester City found guilty on 114 financial-rule charges: what the case was really about](https://compound.ie/news/manchester-city-114-financial-rule-breaches-explained/) — **Wealth**
 - [Marriott's Fees Are Outrunning Room Growth. What Is Funding the Buybacks?](https://compound.ie/wealth/marriott-fees-growth-buybacks-debt/) — **Wealth**
 - [Maternity and paternity benefits would rise to €309 a week under new Bill](https://compound.ie/news/social-welfare-bill-maternity-paternity-benefit-january-2027/) — **Wealth**
+- [Mattel’s Gross Margin Jumped 4.8 Points. How Much Survives the Tariff Refund?](https://compound.ie/wealth/mattel-tariff-refund-margin/) — **Wealth**
 - [McDonald’s Profit Grew While US Guest Counts Fell. How Much Protection Does Franchising Provide?](https://compound.ie/wealth/mcdonalds-guest-counts-franchise-margins/) — **Wealth**
 - [Meta Earnings: Advertising Surges, but the AI Bill Consumes the Cash](https://compound.ie/wealth/meta-advertising-ai-spending-earnings/) — **Wealth**
 - [Meta Stock Guide: Advertising, AI, Reality Labs and Valuation](https://compound.ie/wealth/meta-ai-advertising-returns-2026/) — **Wealth**
@@ -206,6 +208,7 @@ For the complete register (including 510+ company profiles), open
 - [PRSI Rises Today: What the 1 October 2026 Increase Costs You](https://compound.ie/news/prsi-increase-october-2026/) — **Wealth**
 - [Public sector pay dispute: what the rejected offer meant for a €45,000 salary](https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/) — **Wealth**
 - [R132 traffic changes due as €15m Julianstown and Stamullen water project starts](https://compound.ie/news/julianstown-stamullen-water-main-r132-works/) — **Wealth**
+- [Ralph Lauren’s Gross Margin Rose 6.2 Points. Is Full-Price Demand Doing the Work?](https://compound.ie/wealth/ralph-lauren-full-price-margin/) — **Wealth**
 - [Reddit’s Revenue Is Outrunning User Growth. Can It Last?](https://compound.ie/wealth/reddit-revenue-user-growth/) — **Wealth**
 - [Redundancy Tax in Ireland: Statutory Pay, Ex-Gratia & SCSB](https://compound.ie/wealth/redundancy-ireland-statutory-ex-gratia-tax/) — **Wealth**
 - [Remote Working in Ireland: Your Rights and How to Make a Request](https://compound.ie/life/remote-working-ireland-rights-request/) — **Life**
