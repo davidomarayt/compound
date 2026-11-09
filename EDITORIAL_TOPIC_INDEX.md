@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 268 published articles and guides, 64 tools,
+**Included:** 270 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -84,6 +84,7 @@ For the complete register (including 510+ company profiles), open
 - [GLP-1 side effects: what is common, and when to get help](https://compound.ie/health/glp1-side-effects-when-to-seek-help/) — **Health**
 - [GLP-1s and pregnancy: Ozempic, Wegovy, Mounjaro and what the evidence says](https://compound.ie/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/) — **Health**
 - [Government considers extending petrol and diesel excise cuts into spring](https://compound.ie/news/petrol-diesel-excise-cuts-ev-costs-ireland/) — **Wealth**
+- [Government revises public sector pay offer ahead of 12 November strike](https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/) — **Wealth**
 - [GTA VI and TTWO: The Case for One of Entertainment's Biggest Launches](https://compound.ie/wealth/ttwo-gta-6-entertainment-launch-revenue/) — **Wealth**
 - [Health for a 100-Year Life: Staying Capable, Connected and Well](https://compound.ie/health/health-for-a-100-year-life/) — **Health**
 - [Health Insurance in Ireland: Costs, Cover & How to Choose a Plan](https://compound.ie/wealth/health-insurance-ireland/) — **Wealth**
@@ -141,6 +142,7 @@ For the complete register (including 510+ company profiles), open
 - [Irish Tolls Rise in January 2027: M50 Up, Port Tunnel €15, M3 Cars Spared](https://compound.ie/news/ireland-toll-increases-2027/) — **Wealth**
 - [Is it financially worth returning to work after having children in Ireland?](https://compound.ie/wealth/returning-to-work-childcare-costs-ireland/) — **Wealth**
 - [Is switching your mortgage worth it in Ireland? A worked €250,000 example](https://compound.ie/wealth/is-switching-your-mortgage-worth-it-ireland/) — **Wealth**
+- [Jobseeker penalty would rise from €90 to €100 under Social Welfare Bill](https://compound.ie/news/jobseeker-penalty-social-welfare-bill-2026/) — **Wealth**
 - [Lam Research Earnings: Strong Growth Meets an Even Higher Bar](https://compound.ie/wealth/lam-research-earnings-growth-expectations/) — **Wealth**
 - [Life for a 100-Year Life: Connection, Purpose and Ordinary Days](https://compound.ie/life/happiness-for-a-100-year-life/) — **Life**
 - [Life Insurance Ireland 2026: Costs, Cover, Policy Types and How Much You Need](https://compound.ie/wealth/life-insurance-ireland/) — **Wealth**
@@ -206,7 +208,6 @@ For the complete register (including 510+ company profiles), open
 - [Probate in Ireland: The Complete Guide](https://compound.ie/wealth/probate-ireland/) — **Wealth**
 - [Protected Structures & Architectural Conservation Areas: Planning Rules in Ireland](https://compound.ie/wealth/protected-structures-aca-planning-ireland/) — **Wealth**
 - [PRSI Rises Today: What the 1 October 2026 Increase Costs You](https://compound.ie/news/prsi-increase-october-2026/) — **Wealth**
-- [Public sector pay dispute: what the rejected offer meant for a €45,000 salary](https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/) — **Wealth**
 - [R132 traffic changes due as €15m Julianstown and Stamullen water project starts](https://compound.ie/news/julianstown-stamullen-water-main-r132-works/) — **Wealth**
 - [Ralph Lauren’s Gross Margin Rose 6.2 Points. Is Full-Price Demand Doing the Work?](https://compound.ie/wealth/ralph-lauren-full-price-margin/) — **Wealth**
 - [Reddit’s Revenue Is Outrunning User Growth. Can It Last?](https://compound.ie/wealth/reddit-revenue-user-growth/) — **Wealth**
@@ -218,6 +219,7 @@ For the complete register (including 510+ company profiles), open
 - [Rent-a-Room Relief Could Rise to €20,000 in Budget 2027](https://compound.ie/news/rent-a-room-relief-20000-budget-2027/) — **Wealth**
 - [Retatrutide Ireland: what is it, can you get it, and how does it compare with Mounjaro, Wegovy and Ozempic?](https://compound.ie/health/retatrutide-ireland/) — **Health**
 - [Retention Planning Permission Ireland: Costs, Risks and What Happens If It Is Refused](https://compound.ie/wealth/retention-planning-permission-ireland/) — **Wealth**
+- [Revolut Mobile launches in Ireland at €9.99. What would switching save?](https://compound.ie/news/revolut-mobile-ireland-launch-price-esim/) — **Wealth**
 - [Robinhood Hits Record Revenue as Prediction Markets Overtake Crypto—but Earnings Fall](https://compound.ie/wealth/robinhood-earnings-prediction-markets-profit/) — **Wealth**
 - [RSUs & Share Options Tax in Ireland: How the Tax Works](https://compound.ie/wealth/rsu-share-options-tax-ireland/) — **Wealth**
 - [Rural House Planning Permission Ireland: One-Off Houses & Local Need](https://compound.ie/wealth/rural-one-off-house-planning-ireland/) — **Wealth**

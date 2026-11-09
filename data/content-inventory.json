@@ -1375,6 +1375,22 @@
         "status": "published"
       },
       {
+        "title": "Government revises public sector pay offer ahead of 12 November strike",
+        "url": "/wealth/ireland-public-sector-strike-pay-deal-budget-2027/",
+        "source": "content/wealth/ireland-public-sector-strike-pay-deal-budget-2027.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "ireland-public-sector-strike-pay-deal-budget-2027",
+        "date": "2026-11-02",
+        "reviewed": "2026-11-09",
+        "tags": [
+          "Ireland",
+          "public sector pay",
+          "Budget 2027"
+        ],
+        "status": "published"
+      },
+      {
         "title": "GTA VI and TTWO: The Case for One of Entertainment's Biggest Launches",
         "url": "/wealth/ttwo-gta-6-entertainment-launch-revenue/",
         "source": "content/wealth/ttwo-gta-6-entertainment-launch-revenue.md",
@@ -2490,6 +2506,23 @@
           "interest-rates",
           "household-money",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Jobseeker penalty would rise from €90 to €100 under Social Welfare Bill",
+        "url": "/news/jobseeker-penalty-social-welfare-bill-2026/",
+        "source": "content/wealth/jobseeker-penalty-social-welfare-bill-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "jobseeker-penalty-social-welfare-bill-2026",
+        "date": "2026-11-09",
+        "reviewed": "2026-11-09",
+        "tags": [
+          "news",
+          "ireland",
+          "jobseekers",
+          "social-welfare"
         ],
         "status": "published"
       },
@@ -3754,22 +3787,6 @@
         "status": "published"
       },
       {
-        "title": "Public sector pay dispute: what the rejected offer meant for a €45,000 salary",
-        "url": "/wealth/ireland-public-sector-strike-pay-deal-budget-2027/",
-        "source": "content/wealth/ireland-public-sector-strike-pay-deal-budget-2027.md",
-        "kind": "Editorial article / guide",
-        "category": "Wealth",
-        "slug": "ireland-public-sector-strike-pay-deal-budget-2027",
-        "date": "2026-11-02",
-        "reviewed": "2026-11-08",
-        "tags": [
-          "Ireland",
-          "public sector pay",
-          "Budget 2027"
-        ],
-        "status": "published"
-      },
-      {
         "title": "R132 traffic changes due as €15m Julianstown and Stamullen water project starts",
         "url": "/news/julianstown-stamullen-water-main-r132-works/",
         "source": "content/wealth/julianstown-stamullen-water-main-r132-works.md",
@@ -3973,6 +3990,23 @@
           "unauthorised-development",
           "property",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Revolut Mobile launches in Ireland at €9.99. What would switching save?",
+        "url": "/news/revolut-mobile-ireland-launch-price-esim/",
+        "source": "content/wealth/revolut-mobile-ireland-launch-price-esim.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "revolut-mobile-ireland-launch-price-esim",
+        "date": "2026-11-09",
+        "reviewed": "2026-11-09",
+        "tags": [
+          "news",
+          "ireland",
+          "mobile-plans",
+          "household-bills"
         ],
         "status": "published"
       },

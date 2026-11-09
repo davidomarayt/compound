@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 268
+- Published editorial articles and guides: 270
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 214
+## Wealth articles and guides — 216
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -111,6 +111,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Gift Tax in Ireland 2027: How Much Can You Give Tax-Free?](https://compound.ie/wealth/gift-tax-ireland/)
 - [Gilead Earnings: Strong HIV Sales, but Acquisitions Reshape the Profit Story](https://compound.ie/wealth/gilead-earnings-hiv-growth-acquisition-cost/)
 - [Government considers extending petrol and diesel excise cuts into spring](https://compound.ie/news/petrol-diesel-excise-cuts-ev-costs-ireland/)
+- [Government revises public sector pay offer ahead of 12 November strike](https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/)
 - [GTA VI and TTWO: The Case for One of Entertainment's Biggest Launches](https://compound.ie/wealth/ttwo-gta-6-entertainment-launch-revenue/)
 - [Health Insurance in Ireland: Costs, Cover & How to Choose a Plan](https://compound.ie/wealth/health-insurance-ireland/)
 - [Health insurance prices are rising — but some plan benefits are being cut](https://compound.ie/news/health-insurance-price-rises-benefit-cuts-ireland/)
@@ -149,6 +150,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Irish Tolls Rise in January 2027: M50 Up, Port Tunnel €15, M3 Cars Spared](https://compound.ie/news/ireland-toll-increases-2027/)
 - [Is it financially worth returning to work after having children in Ireland?](https://compound.ie/wealth/returning-to-work-childcare-costs-ireland/)
 - [Is switching your mortgage worth it in Ireland? A worked €250,000 example](https://compound.ie/wealth/is-switching-your-mortgage-worth-it-ireland/)
+- [Jobseeker penalty would rise from €90 to €100 under Social Welfare Bill](https://compound.ie/news/jobseeker-penalty-social-welfare-bill-2026/)
 - [Lam Research Earnings: Strong Growth Meets an Even Higher Bar](https://compound.ie/wealth/lam-research-earnings-growth-expectations/)
 - [Life Insurance Ireland 2026: Costs, Cover, Policy Types and How Much You Need](https://compound.ie/wealth/life-insurance-ireland/)
 - [Lilly’s METiS deal: read beyond the $1.1 billion headline](https://compound.ie/wealth/eli-lilly-metis-drug-delivery-deal/)
@@ -204,7 +206,6 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Probate in Ireland: The Complete Guide](https://compound.ie/wealth/probate-ireland/)
 - [Protected Structures & Architectural Conservation Areas: Planning Rules in Ireland](https://compound.ie/wealth/protected-structures-aca-planning-ireland/)
 - [PRSI Rises Today: What the 1 October 2026 Increase Costs You](https://compound.ie/news/prsi-increase-october-2026/)
-- [Public sector pay dispute: what the rejected offer meant for a €45,000 salary](https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/)
 - [R132 traffic changes due as €15m Julianstown and Stamullen water project starts](https://compound.ie/news/julianstown-stamullen-water-main-r132-works/)
 - [Ralph Lauren’s Gross Margin Rose 6.2 Points. Is Full-Price Demand Doing the Work?](https://compound.ie/wealth/ralph-lauren-full-price-margin/)
 - [Reddit’s Revenue Is Outrunning User Growth. Can It Last?](https://compound.ie/wealth/reddit-revenue-user-growth/)
@@ -214,6 +215,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Rent took 28.5% of disposable income in Fingal on the CSO’s 2024 measure](https://compound.ie/news/irish-rent-burden-cso-fingal-2024/)
 - [Rent-a-Room Relief Could Rise to €20,000 in Budget 2027](https://compound.ie/news/rent-a-room-relief-20000-budget-2027/)
 - [Retention Planning Permission Ireland: Costs, Risks and What Happens If It Is Refused](https://compound.ie/wealth/retention-planning-permission-ireland/)
+- [Revolut Mobile launches in Ireland at €9.99. What would switching save?](https://compound.ie/news/revolut-mobile-ireland-launch-price-esim/)
 - [Robinhood Hits Record Revenue as Prediction Markets Overtake Crypto—but Earnings Fall](https://compound.ie/wealth/robinhood-earnings-prediction-markets-profit/)
 - [RSUs & Share Options Tax in Ireland: How the Tax Works](https://compound.ie/wealth/rsu-share-options-tax-ireland/)
 - [Rural House Planning Permission Ireland: One-Off Houses & Local Need](https://compound.ie/wealth/rural-one-off-house-planning-ireland/)
