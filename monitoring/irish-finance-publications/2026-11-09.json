@@ -1,0 +1,56 @@
+{
+  "run_date": "2026-11-09",
+  "timezone": "Europe/Dublin",
+  "edition": "morning",
+  "edition_key": "2026-11-09/morning",
+  "morning_search_cutoff": "2026-11-09T10:02:27+00:00",
+  "target": 3,
+  "publishing_branch": "claude/clever-babbage-uibieq",
+  "articles": [
+    {
+      "topic": "Revolut Mobile launches in Ireland at €9.99. What would switching save?",
+      "edition": "morning",
+      "content_type": "news",
+      "action": "new_article",
+      "canonical_url": "https://compound.ie/news/revolut-mobile-ireland-launch-price-esim/",
+      "primary_sources": [
+        "https://www.revolut.com/en-IE/legal/revolut-mobile-terms-and-condition-gigs/",
+        "https://gigs.com/legal/ie-end-user-terms/ie-end-user-service-agreement-appendix-1-gigs-acceptable-use-policy"
+      ],
+      "publication_commit": null,
+      "deployment_status": "awaiting_deployment"
+    },
+    {
+      "topic": "Jobseeker penalty would rise from €90 to €100 under Social Welfare Bill",
+      "edition": "morning",
+      "content_type": "news",
+      "action": "new_article",
+      "canonical_url": "https://compound.ie/news/jobseeker-penalty-social-welfare-bill-2026/",
+      "primary_sources": [
+        "https://www.finegael.ie/creating-an-ireland-alive-with-possibilities/",
+        "https://data.oireachtas.ie/ie/oireachtas/bill/2026/105/eng/initiated/b10526d.pdf",
+        "https://data.oireachtas.ie/ie/oireachtas/bill/2026/105/eng/memo/b10526d-memo.pdf",
+        "https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-jobseekers-allowance/",
+        "https://www.gov.ie/en/department-of-social-protection/services/jobseekers-allowance/"
+      ],
+      "publication_commit": null,
+      "deployment_status": "awaiting_deployment"
+    },
+    {
+      "topic": "Government revises public sector pay offer ahead of 12 November strike",
+      "edition": "morning",
+      "content_type": "news",
+      "action": "canonical_update",
+      "canonical_url": "https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/",
+      "primary_sources": [
+        "https://highlandradio.com/wp-content/uploads/2026/11/15harrispaytalksclipsd.mp3",
+        "https://www.forsa.ie/faqs-strike-rallies-2026/",
+        "https://www.asti.ie/industrial-action-2026/"
+      ],
+      "publication_commit": null,
+      "deployment_status": "awaiting_deployment"
+    }
+  ],
+  "confirmed_publications": 0,
+  "afternoon_handoff": "Use the morning cutoff for first-publication comparisons. Reconcile the three canonical URLs and deployment before counting a rerun; count each once."
+}
