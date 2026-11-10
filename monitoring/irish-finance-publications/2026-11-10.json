@@ -18,8 +18,10 @@
         "https://www.theaa.ie/blog/fuel-prices-ireland-november-2026/",
         "https://www.theaa.ie/aa-membership/fuel-prices/"
       ],
-      "publication_commit": "5be944b10368c9a67c9e3e5992e77077cb017e7a",
-      "deployment_status": "pending_ci_and_live_verification"
+      "publication_commit": "602788649af5ce2aa608d88f8484c2df371dfdbd",
+      "deployment_status": "deployed_verified_live",
+      "source_commit": "5be944b10368c9a67c9e3e5992e77077cb017e7a",
+      "verified_at_utc": "2026-11-10T13:18:03Z"
     },
     {
       "topic": "An Post launches prepaid tracked Postbox Drop-off at 2,600 boxes",
@@ -31,8 +33,10 @@
       "primary_sources": [
         "https://www.anpost.com/Post-Parcels/Sending/Postbox-Drop-Off"
       ],
-      "publication_commit": "fba6686a6aadc2f71fe728ea3a67f400968683d8",
-      "deployment_status": "pending_ci_and_live_verification"
+      "publication_commit": "602788649af5ce2aa608d88f8484c2df371dfdbd",
+      "deployment_status": "deployed_verified_live",
+      "source_commit": "fba6686a6aadc2f71fe728ea3a67f400968683d8",
+      "verified_at_utc": "2026-11-10T13:18:03Z"
     },
     {
       "topic": "New reporting on unclaimed PAYE refunds, and verified 2022 claim deadline",
@@ -49,14 +53,21 @@
       "secondary_sources": [
         "https://www.joe.ie/business/more-than-375000-paye-workers-could-be-due-tax-rebate-ahead-of-christmas-888898"
       ],
-      "publication_commit": "29c2c9af8d2898b6a00a0b772368c59db21b2dd5",
-      "deployment_status": "pending_ci_and_live_verification",
-      "editorial_caveat": "Reported provisional parliamentary aggregate could not be independently verified from original response; explicitly qualified in article."
+      "publication_commit": "602788649af5ce2aa608d88f8484c2df371dfdbd",
+      "deployment_status": "deployed_verified_live",
+      "editorial_caveat": "Reported provisional parliamentary aggregate could not be independently verified from original response; explicitly qualified in article.",
+      "source_commit": "29c2c9af8d2898b6a00a0b772368c59db21b2dd5",
+      "verified_at_utc": "2026-11-10T13:18:03Z"
     }
   ],
   "intended_publications": 3,
-  "confirmed_publications": 0,
-  "afternoon_handoff": "Today's morning cutoff is 13:01:28 GMT, including the recovery rerun. Reconcile and update this file after live verification. Afternoon only covers material announcements first public after that cutoff. Do not duplicate these topics or pad slots.",
+  "confirmed_publications": 3,
+  "afternoon_handoff": "All three morning slots filled by verified publications at 13:18:03 GMT. Morning original/recovery search cutoff 13:01:28 GMT. Afternoon covers only material original developments first public after that cutoff, at most one additional item, and must deduplicate against these three.",
   "first_run_status": "scheduled automation at 09:20 recorded no update; manual recovery started 12:49.",
-  "verified_at_utc": null
+  "verified_at_utc": "2026-11-10T13:18:03Z",
+  "new_articles": 3,
+  "canonical_updates": 0,
+  "pull_request": "https://github.com/davidomarayt/compound/pull/104",
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/42821583845",
+  "verification_run": "https://github.com/davidomarayt/compound/actions/runs/42823193396"
 }
