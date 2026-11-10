@@ -2,33 +2,33 @@
   "cik": 1692819,
   "company": "Vistra Corp.",
   "latest": {
-    "accession": "0001692819-26-000019",
-    "filed": "2026-08-10",
+    "accession": "0001692819-26-000025",
+    "filed": "2026-11-09",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.76,
-        "prior_year": 0.81,
+        "current": 3.23,
+        "prior_year": 1.75,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 305000000,
-        "prior_year": 327000000,
+        "current": 1140000000,
+        "prior_year": 652000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 4401000000,
-        "prior_year": 3753000000,
+        "current": 5992000000,
+        "prior_year": 4778000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000019/vistra-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000025/vistra-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000019/vistra-20260630.htm"
+    },
+    {
+      "accession": "0001692819-26-000025",
+      "filed": "2026-11-09",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.23,
+          "prior_year": 1.75,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1140000000,
+          "prior_year": 652000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 5992000000,
+          "prior_year": 4778000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000025/vistra-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "VST",
-  "updated": "2026-10-15"
+  "updated": "2026-11-10"
 }

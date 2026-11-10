@@ -2,33 +2,33 @@
   "cik": 1418135,
   "company": "Keurig Dr Pepper",
   "latest": {
-    "accession": "0001418135-26-000051",
-    "filed": "2026-08-10",
+    "accession": "0001418135-26-000066",
+    "filed": "2026-11-09",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.04,
-        "prior_year": 0.4,
+        "current": 0.59,
+        "prior_year": 0.49,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 142000000,
-        "prior_year": 547000000,
+        "current": 882000000,
+        "prior_year": 662000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 7309000000,
-        "prior_year": 4163000000,
+        "current": 7344000000,
+        "prior_year": 4306000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1418135/000141813526000051/kdp-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1418135/000141813526000066/kdp-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1418135/000141813526000051/kdp-20260630.htm"
+    },
+    {
+      "accession": "0001418135-26-000066",
+      "filed": "2026-11-09",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.59,
+          "prior_year": 0.49,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 882000000,
+          "prior_year": 662000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7344000000,
+          "prior_year": 4306000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1418135/000141813526000066/kdp-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "KDP",
-  "updated": "2026-10-15"
+  "updated": "2026-11-10"
 }
