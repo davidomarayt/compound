@@ -2,33 +2,33 @@
   "cik": 73309,
   "company": "Nucor",
   "latest": {
-    "accession": "0001193125-26-345891",
-    "filed": "2026-08-12",
+    "accession": "0001193125-26-454565",
+    "filed": "2026-11-10",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 5.04,
-        "prior_year": 2.6,
+        "current": 5.8,
+        "prior_year": 2.63,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1156000000,
-        "prior_year": 603000000,
+        "current": 1319000000,
+        "prior_year": 607000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 10397000000,
-        "prior_year": 8456000000,
+        "current": 11249000000,
+        "prior_year": 8521000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-04",
-    "source": "https://www.sec.gov/Archives/edgar/data/73309/000119312526345891/nue-20260704.htm"
+    "period_end": "2026-10-03",
+    "source": "https://www.sec.gov/Archives/edgar/data/73309/000119312526454565/nue-20261003.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-07-04",
       "source": "https://www.sec.gov/Archives/edgar/data/73309/000119312526345891/nue-20260704.htm"
+    },
+    {
+      "accession": "0001193125-26-454565",
+      "filed": "2026-11-10",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 5.8,
+          "prior_year": 2.63,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1319000000,
+          "prior_year": 607000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 11249000000,
+          "prior_year": 8521000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/73309/000119312526454565/nue-20261003.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "NUE",
-  "updated": "2026-10-15"
+  "updated": "2026-11-10"
 }
