@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-09
+Checked: 2026-11-10
 
 - 498 saved profiles checked against structural and issuer rules.
-- 83 existing company articles; 80 mapped to monitored issuers.
-- 74 pending review items; 18 recorded decisions.
+- 84 existing company articles; 81 mapped to monitored issuers.
+- 76 pending review items; 18 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -235,6 +235,16 @@ Files: `content/wealth/tesla-energy-storage-margins.md`, `content/earnings-profi
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
 
+### TTWO · article_review · medium
+
+ID: `a7e650e6db0e43210bdb80f8`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/ttwo-gta-6-entertainment-launch-revenue.md`, `content/earnings-profiles/ttwo.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/946581/000162828026072254/ttwo-20260930.htm · Q2 FY2027 · period end 2026-09-30 · filed 2026-11-09
+
 ### UPS · article_review · medium
 
 ID: `47451eea92a91e3680e71bbd`
@@ -262,6 +272,14 @@ ID: `c8b4e15d74e5225f9ca641f5`
 No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.
 
 Files: `content/earnings-profiles/brk-b.json`
+
+### OKTA · coverage_check · medium
+
+ID: `9034773fe06dfad8bfbf7aba`
+
+No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.
+
+Files: `content/earnings-profiles/okta.json`
 
 ### VMRK · coverage_check · medium
 
@@ -689,15 +707,15 @@ Files: `content/wealth/tesla-cybertruck-success-failure-numbers.md`, `content/ea
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
 
-### TTWO · article_review · low
+### TSLA · article_review · low
 
-ID: `0a8084d2a396a04227fd5490`
+ID: `fd7669fa178da22fa21fe43a`
 
 Baseline consistency review of this article against the saved company results and its original sources.
 
-Files: `content/wealth/ttwo-gta-6-entertainment-launch-revenue.md`, `content/earnings-profiles/ttwo.json`
+Files: `content/wealth/tesla-services-gross-profit.md`, `content/earnings-profiles/tsla.json`
 
-Saved evidence: https://www.sec.gov/Archives/edgar/data/946581/000162828026054870/ttwo-20260630.htm · Q1 FY2027 · period end 2026-06-30 · filed 2026-08-07
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
 
 ### UBER · article_review · low
 
