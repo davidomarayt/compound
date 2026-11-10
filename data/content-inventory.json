@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-09",
+  "snapshot_date": "2026-11-10",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -249,6 +249,24 @@
           "stock-axp",
           "axp",
           "earnings-analysis"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "An Post now lets you send small tracked parcels from 2,600 postboxes",
+        "url": "/news/an-post-postbox-drop-off-small-parcels-2026/",
+        "source": "content/wealth/an-post-postbox-drop-off-small-parcels-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "an-post-postbox-drop-off-small-parcels-2026",
+        "date": "2026-11-10",
+        "reviewed": "2026-11-10",
+        "tags": [
+          "news",
+          "ireland",
+          "an-post",
+          "parcels",
+          "consumer-services"
         ],
         "status": "published"
       },
@@ -3250,6 +3268,25 @@
         "status": "published"
       },
       {
+        "title": "November fuel prices fall slightly, but Irish public EV charging rises sharply",
+        "url": "/news/irish-fuel-prices-november-2026-ev-charging/",
+        "source": "content/wealth/irish-fuel-prices-november-2026-ev-charging.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "irish-fuel-prices-november-2026-ev-charging",
+        "date": "2026-11-10",
+        "reviewed": "2026-11-10",
+        "tags": [
+          "news",
+          "ireland",
+          "petrol",
+          "diesel",
+          "ev-charging",
+          "household-bills"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Nvidia Stock Guide: AI Chips, CUDA, Margins and Valuation",
         "url": "/wealth/nvidia-ai-gpu-margins-2026/",
         "source": "content/wealth/nvidia-ai-gpu-margins-2026.md",
@@ -4644,6 +4681,25 @@
           "thermo-fisher",
           "earnings-analysis",
           "biopharma"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Thousands may be due PAYE refunds — but 2022 claims expire this December",
+        "url": "/news/paye-tax-refunds-2025-unclaimed-november-2026/",
+        "source": "content/wealth/paye-tax-refunds-2025-unclaimed-november-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "paye-tax-refunds-2025-unclaimed-november-2026",
+        "date": "2026-11-10",
+        "reviewed": "2026-11-10",
+        "tags": [
+          "news",
+          "ireland",
+          "paye",
+          "income-tax",
+          "tax-refunds",
+          "revenue"
         ],
         "status": "published"
       },

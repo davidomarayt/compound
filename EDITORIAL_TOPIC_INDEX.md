@@ -1,6 +1,6 @@
 # Compound.ie — Quick Editorial Topic Index
 
-Updated: 2026-11-09 | Automatically rebuilt from published source
+Updated: 2026-11-10 | Automatically rebuilt from published source
 
 **Before recommending a new article:** search this page by keyword, synonym,
 and reader question. An existing article or tool may already cover the idea.
@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 272 published articles and guides, 64 tools,
+**Included:** 275 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -26,6 +26,7 @@ For the complete register (including 510+ company profiles), open
 - [Amazon’s advertising growth slowed. How much can Prime Day explain?](https://compound.ie/wealth/amazon-advertising-prime-day-timing/) — **Wealth**
 - [Amazon’s €16 billion Germany plan needs a return test](https://compound.ie/wealth/amazon-germany-investment-returns/) — **Wealth**
 - [American Express Earnings: Spending Holds Up, but Read the Profit Adjustments](https://compound.ie/wealth/american-express-earnings-spending-adjusted-profit/) — **Wealth**
+- [An Post now lets you send small tracked parcels from 2,600 postboxes](https://compound.ie/news/an-post-postbox-drop-off-small-parcels-2026/) — **Wealth**
 - [Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price](https://compound.ie/wealth/anthropic-loss-ipo-valuation/) — **Wealth**
 - [Apple Stock Guide: iPhone, Services, Buybacks and Valuation](https://compound.ie/wealth/apple-iphone-services-profit-2026/) — **Wealth**
 - [Apple's earnings growth: what remains after the tariff-refund boost?](https://compound.ie/wealth/apple-earnings-tariff-refunds-services/) — **Wealth**
@@ -181,6 +182,7 @@ For the complete register (including 510+ company profiles), open
 - [Nike's Margin Is Improving. The Demand Turnaround Hasn't Arrived](https://compound.ie/wealth/nike-margin-demand-turnaround/) — **Wealth**
 - [No Energy Credit in Budget 2027: What Will Electricity Cost This Winter?](https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/) — **Wealth**
 - [Nokia’s AI Sales Jump 123%—But Turning Growth Into Cash Is the Next Test](https://compound.ie/news/nokia-ai-growth-cash-flow/) — **Wealth**
+- [November fuel prices fall slightly, but Irish public EV charging rises sharply](https://compound.ie/news/irish-fuel-prices-november-2026-ev-charging/) — **Wealth**
 - [Nvidia Stock Guide: AI Chips, CUDA, Margins and Valuation](https://compound.ie/wealth/nvidia-ai-gpu-margins-2026/) — **Wealth**
 - [Nvidia's 75% gross margin: how much room is there for competition?](https://compound.ie/wealth/nvidia-gross-margin-ai-demand/) — **Wealth**
 - [Nvidia’s next competitive test is software portability](https://compound.ie/wealth/nvidia-torchneuron-software-competition/) — **Wealth**
@@ -253,6 +255,7 @@ For the complete register (including 510+ company profiles), open
 - [The Ploughing: a history of gathering, and why it matters for wellbeing](https://compound.ie/life/ploughing-championships-history-community-mental-health/) — **Life**
 - [The rise of GLP-1 medicines in Ireland: what the evidence says](https://compound.ie/health/glp1-medicines-ireland-rise-evidence/) — **Health**
 - [Thermo Fisher Earnings: Stronger Growth, Better Margins—and a Cash-Flow Test](https://compound.ie/wealth/thermo-fisher-earnings-organic-growth-cash-flow/) — **Wealth**
+- [Thousands may be due PAYE refunds — but 2022 claims expire this December](https://compound.ie/news/paye-tax-refunds-2025-unclaimed-november-2026/) — **Wealth**
 - [Two Irish couples earn €100,000. Why can their take-home pay differ by €9,556?](https://compound.ie/news/one-income-vs-two-incomes-ireland-2027/) — **Wealth**
 - [Uber’s Audience Is Growing. Is the Platform Finally Showing Operating Leverage?](https://compound.ie/wealth/uber-audience-growth-operating-leverage/) — **Wealth**
 - [UPS Is Delivering Fewer US Packages. Can Price and Automation Do the Rest?](https://compound.ie/wealth/ups-package-volume-pricing-automation/) — **Wealth**
