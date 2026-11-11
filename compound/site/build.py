@@ -940,6 +940,8 @@ def article_context(env: Environment, settings: Settings, article: Article, prev
     return dict(
         article=article,
         preview=preview,
+        # Unreviewed automated research must never load Google ads.
+        ads_allowed=("unreviewed-ai" not in article.tags),
         series=series,
         article_body=body,
         article_toc=toc,
@@ -1416,7 +1418,8 @@ def build_site(settings: Settings) -> dict:
                    company=c, news=[a for a in stories if is_news_article(a)],
                    research=[a for a in stories if not is_news_article(a)],
                    checked=watchlist.get("checked", "not yet"),
-                   has_coverage=bool(stories), ads_allowed=bool(stories)))
+                   has_coverage=bool(stories),
+                   ads_allowed=bool(stories) and not any("unreviewed-ai" in a.tags for a in stories)))
 
     for p in PILLARS:
         if p == "happiness":
