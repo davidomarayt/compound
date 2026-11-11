@@ -529,7 +529,7 @@ def test_calculator_sitemap_tracks_review_dates():
     build_py = (Path(__file__).parents[1] / "compound" / "site" / "build.py").read_text()
     assert "<lastmod>" in build_py
     assert 'str(tool.get("updated") or "")' in build_py
-    assert '(a.reviewed or a.date).isoformat()' in build_py
+    assert '(a.research_checked or a.reviewed or a.date).isoformat()' in build_py
 
 
 def test_2026_statutory_calculator_parameters_are_regression_locked():
