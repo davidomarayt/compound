@@ -965,7 +965,7 @@ def load_site_config(content_dir: Path) -> dict:
     return {
         "adsense": {
             "client": str(ads.get("client") or "").strip(),
-            "slots": {k: str(slots.get(k) or "").strip() for k in ("article_top", "article_bottom", "earnings_mid", "feed")},
+            "slots": {k: str(slots.get(k) or "").strip() for k in ("article_top", "article_bottom", "earnings_mid", "feed", "stock_mid", "stock_lower")},
         },
         "analytics": {"measurement_id": str(analytics.get("measurement_id") or "").strip()},
         "email_form_action": str(data.get("email_form_action") or "").strip(),
@@ -981,7 +981,7 @@ def _env(settings: Settings) -> Environment:
     if audit_mode:
         # Lighthouse should measure Compound's own frontend, not third-party ad cookies/issues.
         # Production builds do not set COMPOUND_AUDIT_MODE, so live AdSense is unchanged.
-        adsense_cfg = {"client": "", "slots": {"article_top": "", "article_bottom": "", "earnings_mid": "", "feed": ""}}
+        adsense_cfg = {"client": "", "slots": {"article_top": "", "article_bottom": "", "earnings_mid": "", "feed": "", "stock_mid": "", "stock_lower": ""}}
     env.globals.update(adsense=adsense_cfg)
     env.globals.update(analytics=site_cfg["analytics"])
     env.globals.update(
