@@ -1,7 +1,8 @@
 """Unreviewed private-company research must not monetise or misstate human approval."""
+import json
 from pathlib import Path
 
-from compound.site.build import _env, article_context, article_from_file
+from compound.site.build import _env, article_context, article_from_file, article_jsonld
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -40,7 +41,16 @@ adsense:
         assert "Every article is reviewed and approved before publication" not in html
         assert f'href="/companies/{company}/"' in html
         assert f'<link rel="canonical" href="https://example.test/wealth/{slug}/">' in html
-        assert "og:image" in html and "twitter:image" in html
+        social_url = f"https://example.test/static/discover/{slug}-16x9.webp"
+        assert f'property="og:image" content="{social_url}"' in html
+        assert f'name="twitter:image" content="{social_url}"' in html
+        schema = json.loads(article_jsonld(article, "https://compound.ie"))
+        assert schema["author"] == {
+            "@type": "Organization",
+            "name": "Compound Research",
+            "url": "https://compound.ie/editorial-policy/",
+        }
+        assert schema["image"][-1] == f"https://compound.ie/static/discover/{slug}-16x9.webp"
 
 
 def test_ads_default_unchanged_for_preexisting_reviewed_articles(settings, monkeypatch):
