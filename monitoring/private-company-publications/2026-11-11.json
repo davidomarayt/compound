@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-11",
+  "timezone": "Europe/Dublin",
+  "run_type": "private_company_daily",
+  "target_new_articles": 3,
+  "confirmed_live_new_articles": 0,
+  "editorial_requirement": "Quality over quota; unreviewed AI research must render without Google-served ads",
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "automation/private-company-2026-11-11",
+  "status": "prepared_pending_ci_photo_and_ads_verification",
+  "manual_review_status": "not_human_reviewed",
+  "publication_cutoff": "08:00 Europe/Dublin target; never imply completion without live fetch",
+  "duplication_checks": {
+    "editorial_index_last_updated": "2026-11-10",
+    "november_2026_recent_company_ledgers": "reviewed",
+    "existing_anthropic_story": "anthropic-loss-ipo-valuation has separate accounting and IPO angle",
+    "existing_databricks_story": "none found in content inventory",
+    "existing_openai_story": "none found in content inventory"
+  },
+  "ad_suppression": "Per-article unreviewed-ai tag blocks ad JS, article ad slots and private-profile ads; pending tested build and live HTML confirmation",
+  "articles": [
+    {
+      "company": "OpenAI",
+      "slug": "openai",
+      "story_fingerprint": "openai-2026-11-10-businesses-in-chatgpt-commerce-trust",
+      "article_path": "content/wealth/openai-businesses-chatgpt-agent-commerce-trust-2026.md",
+      "canonical_url": "https://compound.ie/wealth/openai-businesses-chatgpt-agent-commerce-trust-2026/",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "event_date": "2026-11-10",
+      "primary_source_urls": [
+        "https://openai.com/index/introducing-businesses-chatgpt/"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Sam_Altman_speaking_at_TED.jpg",
+      "photo_license": "CC BY 2.0",
+      "angle": "Verified merchant listings, attributed discovery and the trust boundary of sponsored agents",
+      "status": "prepared_not_live",
+      "live_http_verified": false,
+      "profile_backlink_expected_via_tag": "company-openai",
+      "claim_verification": "Primary company release checked; precise numbers qualified as company reported",
+      "original_analysis": "Distinct business thesis and calculation or procurement framework",
+      "photo_provenance_verified": true,
+      "local_image_verified": false,
+      "ci_passed": false,
+      "ads_absence_verified": false,
+      "human_reviewed": false
+    },
+    {
+      "company": "Anthropic",
+      "slug": "anthropic",
+      "story_fingerprint": "anthropic-2026-11-09-fable-mythos-52-token-routing-economics",
+      "article_path": "content/wealth/anthropic-fable-mythos-52-pricing-routing-economics.md",
+      "canonical_url": "https://compound.ie/wealth/anthropic-fable-mythos-52-pricing-routing-economics/",
+      "profile_url": "https://compound.ie/companies/anthropic/",
+      "event_date": "2026-11-09",
+      "primary_source_urls": [
+        "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_04.jpg",
+      "photo_license": "CC BY 2.0",
+      "angle": "Premium token prices, model routing and cost per successful technical task",
+      "status": "prepared_not_live",
+      "live_http_verified": false,
+      "profile_backlink_expected_via_tag": "company-anthropic",
+      "claim_verification": "Primary company release checked; precise numbers qualified as company reported",
+      "original_analysis": "Distinct business thesis and calculation or procurement framework",
+      "photo_provenance_verified": true,
+      "local_image_verified": false,
+      "ci_passed": false,
+      "ads_absence_verified": false,
+      "human_reviewed": false
+    },
+    {
+      "company": "Databricks",
+      "slug": "databricks",
+      "story_fingerprint": "databricks-2026-11-09-european-sovereign-cloud-expansion",
+      "article_path": "content/wealth/databricks-european-sovereign-cloud-expansion-economics.md",
+      "canonical_url": "https://compound.ie/wealth/databricks-european-sovereign-cloud-expansion-economics/",
+      "profile_url": "https://compound.ie/companies/databricks/",
+      "event_date": "2026-11-09",
+      "primary_source_urls": [
+        "https://www.databricks.com/blog/databricks-commitment-european-sovereignty",
+        "https://digital-strategy.ec.europa.eu/en/policies/cloud-and-ai-development-act"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Databricks_CEO_and_co-founder_Ali_Ghodsi_presents_the_keynote_at_the_2026_Data_%2B_AI_Summit.jpg",
+      "photo_license": "CC BY-SA 4.0",
+      "angle": "Azure and AWS EU sovereign delivery, regulated customer demand and integration costs",
+      "status": "prepared_not_live",
+      "live_http_verified": false,
+      "profile_backlink_expected_via_tag": "company-databricks",
+      "claim_verification": "Primary company release checked; precise numbers qualified as company reported",
+      "original_analysis": "Distinct business thesis and calculation or procurement framework",
+      "photo_provenance_verified": true,
+      "local_image_verified": false,
+      "ci_passed": false,
+      "ads_absence_verified": false,
+      "human_reviewed": false
+    }
+  ],
+  "updated_at_utc": "2026-11-11T07:00:00Z"
+}
