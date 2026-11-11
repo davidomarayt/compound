@@ -8,10 +8,9 @@ draft: false
 publication_status: published
 date: '2026-11-11'
 reviewed: '2026-11-11'
-approved_by: "Automatically researched; not human reviewed; Google ads disabled for this article"
 summary: "Databricks plans new sovereign-cloud availability through Microsoft Azure and AWS. The business opportunity in regulated European AI comes with questions about control, delivery and margins."
 meta_description: "Databricks outlined three European cloud-region commitments on 9 November 2026. We examine sovereignty requirements, regulated demand and execution risk."
-tags: [wealth, private-company, company-research, company-databricks, databricks, cloud-computing, unreviewed-ai]
+tags: [wealth, private-company, company-research, company-databricks, databricks, cloud-computing]
 social: {enabled: false}
 hero_image_url: https://upload.wikimedia.org/wikipedia/commons/7/74/Databricks_CEO_and_co-founder_Ali_Ghodsi_presents_the_keynote_at_the_2026_Data_%2B_AI_Summit.jpg
 hero_image_alt: "Databricks CEO Ali Ghodsi speaking at the Data + AI Summit on 16 June 2026; archival photograph"

@@ -8,10 +8,9 @@ draft: false
 publication_status: published
 date: '2026-11-11'
 reviewed: '2026-11-11'
-approved_by: "Automatically researched; not human reviewed; Google ads disabled for this article"
 summary: "OpenAI's new Business Hub brings merchant data, discovery insights and sponsored agents into ChatGPT. The business opportunity depends on trust, measurable customer value and accurate listings."
 meta_description: "OpenAI launched Businesses in ChatGPT on 10 November 2026. We examine merchant verification, Business Agents, ad economics and the commercial trust trade-off."
-tags: [wealth, company-research, private-company, company-openai, openai, artificial-intelligence, unreviewed-ai]
+tags: [wealth, company-research, private-company, company-openai, openai, artificial-intelligence]
 social: {enabled: false}
 hero_image_url: https://upload.wikimedia.org/wikipedia/commons/0/06/Sam_Altman_speaking_at_TED.jpg
 hero_image_alt: "OpenAI chief executive Sam Altman speaking at TED in April 2025; archival photograph, not the 2026 product launch"

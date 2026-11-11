@@ -42,7 +42,7 @@ def normalise_private_company_batch() -> None:
     for story in ledger["articles"]:
         source = ROOT / story["article_path"]
         article = source.read_text(encoding="utf-8")
-        assert "unreviewed-ai" in article and "require_pinned_hero: true" in article, source
+        assert "private-company" in article and "company-research" in article and "require_pinned_hero: true" in article, source
         cover = STATIC / (source.stem + ".jpg")
         assert cover.is_file(), f"Missing pinned approved cover: {cover}"
         normalise_pinned_photo(cover)

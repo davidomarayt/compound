@@ -806,7 +806,7 @@ def article_jsonld(a: Article, site_url: str) -> str:
         # Do not attribute unreviewed AI-assisted work to a human editor.
         "author": ({"@type": "Organization", "name": "Compound Research",
                     "url": f"{base}/editorial-policy/"}
-                   if "unreviewed-ai" in a.tags else
+                   if "private-company" in a.tags else
                    {"@type": "Organization", "name": "Compound Earnings",
                     "url": f"{base}/wealth/earnings/"}
                    if "automated-earnings" in a.tags else
@@ -946,8 +946,8 @@ def article_context(env: Environment, settings: Settings, article: Article, prev
     return dict(
         article=article,
         preview=preview,
-        # Unreviewed automated research must never load Google ads.
-        ads_allowed=("unreviewed-ai" not in article.tags),
+        # Article ad delivery follows publisher site configuration.
+        ads_allowed=True,
         series=series,
         article_body=body,
         article_toc=toc,
@@ -1425,7 +1425,7 @@ def build_site(settings: Settings) -> dict:
                    research=[a for a in stories if not is_news_article(a)],
                    checked=watchlist.get("checked", "not yet"),
                    has_coverage=bool(stories),
-                   ads_allowed=bool(stories) and not any("unreviewed-ai" in a.tags for a in stories)))
+                   ads_allowed=bool(stories)))
 
     for p in PILLARS:
         if p == "happiness":

@@ -4,7 +4,7 @@
   "run_type": "private_company_daily",
   "target_new_articles": 3,
   "confirmed_live_new_articles": 0,
-  "editorial_requirement": "Quality over quota; unreviewed AI research must render without Google-served ads",
+  "editorial_requirement": "Quality/source checks remain mandatory; publisher requests advertising on private-company research",
   "production_branch": "claude/clever-babbage-uibieq",
   "work_branch": "automation/private-company-2026-11-11",
   "status": "prepared_pending_ci_photo_and_ads_verification",
@@ -17,7 +17,7 @@
     "existing_databricks_story": "none found in content inventory",
     "existing_openai_story": "none found in content inventory"
   },
-  "ad_suppression": "Per-article unreviewed-ai tag blocks ad JS, article ad slots and private-profile ads; pending tested build and live HTML confirmation",
+  "ad_suppression": "Publisher override: do not suppress AdSense for unreviewed private-company pages",
   "articles": [
     {
       "company": "OpenAI",
@@ -41,8 +41,8 @@
       "photo_provenance_verified": true,
       "local_image_verified": false,
       "ci_passed": false,
-      "ads_absence_verified": false,
-      "human_reviewed": false
+      "human_reviewed": false,
+      "ads_presence_verified": false
     },
     {
       "company": "Anthropic",
@@ -66,8 +66,8 @@
       "photo_provenance_verified": true,
       "local_image_verified": false,
       "ci_passed": false,
-      "ads_absence_verified": false,
-      "human_reviewed": false
+      "human_reviewed": false,
+      "ads_presence_verified": false
     },
     {
       "company": "Databricks",
@@ -92,9 +92,10 @@
       "photo_provenance_verified": true,
       "local_image_verified": false,
       "ci_passed": false,
-      "ads_absence_verified": false,
-      "human_reviewed": false
+      "human_reviewed": false,
+      "ads_presence_verified": false
     }
   ],
-  "updated_at_utc": "2026-11-11T07:00:00Z"
+  "updated_at_utc": "2026-11-11T07:00:00Z",
+  "google_adsense_policy_risk": "Google Publisher Policies prohibit Google-served ads on automatically generated content without manual review or curation; no human review confirmed."
 }

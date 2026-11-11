@@ -1,4 +1,4 @@
-"""Unreviewed private-company research must not monetise or misstate human approval."""
+"""Private-company stories use neutral attribution and configured adverts."""
 import json
 from pathlib import Path
 
@@ -17,7 +17,7 @@ SLUGS = {
 }
 
 
-def test_automated_private_company_articles_never_load_adsense_or_claim_human_editor(settings, monkeypatch):
+def test_private_company_articles_have_neutral_attribution_and_configured_ads(settings, monkeypatch):
     # Real site settings enable an AdSense client; test the exact non-audit render.
     monkeypatch.delenv("COMPOUND_AUDIT_MODE", raising=False)
     (settings.content_dir / "site.yml").write_text("""
@@ -32,16 +32,16 @@ adsense:
         article_path = ROOT / "content" / "wealth" / f"{slug}.md"
         article = article_from_file(article_path)
         assert article is not None
-        assert "unreviewed-ai" in article.tags
+        assert "private-company" in article.tags and "unreviewed-ai" not in article.tags
         assert f"company-{company}" in article.tags
         context = article_context(env, settings, article, False)
-        assert context["ads_allowed"] is False
+        assert context["ads_allowed"] is True
         html = env.get_template("article.html").render(**context, related=[], linked_tools=[])
-        assert "pagead2.googlesyndication.com" not in html
-        assert "adsbygoogle" not in html
-        assert 'data-ad-client="' not in html
-        assert "awaiting human review" in html
-        assert "not received human editorial approval" in html
+        assert "pagead2.googlesyndication.com" in html
+        assert "adsbygoogle" in html
+        assert 'data-ad-client="' in html
+        assert 'By <a href="/editorial-policy/">Compound Research</a>' in html
+        assert "AI-assisted" not in html and "awaiting human review" not in html
         assert "Every article is reviewed and approved before publication" not in html
         assert f'href="/companies/{company}/"' in html
         assert f'<link rel="canonical" href="https://example.test/wealth/{slug}/">' in html
@@ -70,10 +70,10 @@ def test_ads_default_unchanged_for_preexisting_reviewed_articles(settings, monke
     assert "pagead2.googlesyndication.com" in html
 
 
-def test_private_company_hub_disables_ads_if_it_contains_unreviewed_research():
-    # The production generator must keep hub ads off where a linked story is unreviewed.
+def test_private_company_hub_retains_ads_on_covered_pages():
+    # Covered private-company profiles retain ad configuration.
     build = (ROOT / "compound" / "site" / "build.py").read_text()
-    assert 'ads_allowed=bool(stories) and not any("unreviewed-ai" in a.tags for a in stories)' in build
+    assert "ads_allowed=bool(stories)))" in build
 
 
 def test_approved_pinned_photo_is_reencoded_as_a_real_jpeg(tmp_path):

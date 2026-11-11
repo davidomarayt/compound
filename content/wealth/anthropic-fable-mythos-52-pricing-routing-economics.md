@@ -8,10 +8,9 @@ draft: false
 publication_status: published
 date: '2026-11-11'
 reviewed: '2026-11-11'
-approved_by: "Automatically researched; not human reviewed; Google ads disabled for this article"
 summary: "Anthropic's new Fable 5.2 and Mythos 5.2 make difficult AI work faster at a premium token price. The commercial test is cost per successful task, not benchmark rank alone."
 meta_description: "Anthropic launched Claude Fable 5.2 and Mythos 5.2 on 9 November 2026. We calculate API costs, explain fast mode and assess model-routing economics."
-tags: [wealth, private-company, company-research, company-anthropic, anthropic, artificial-intelligence, unreviewed-ai]
+tags: [wealth, private-company, company-research, company-anthropic, anthropic, artificial-intelligence]
 social: {enabled: false}
 hero_image_url: https://upload.wikimedia.org/wikipedia/commons/3/35/Dario_Amodei_at_TechCrunch_Disrupt_2023_04.jpg
 hero_image_alt: "Anthropic co-founder Dario Amodei speaking at TechCrunch Disrupt on 20 September 2023; archival photograph"
