@@ -11,7 +11,7 @@ adsense:
     article_bottom: ""   # after the article body
     earnings_mid: ""    # optional AdSense display-unit ID: after earnings charts; blank = no fixed ad
     feed: ""             # on the pillar listing pages, after the list
-    stock_mid: ""        # after company overview / investor analysis on substantial stock profiles
+    stock_mid: "2138650464"        # after company overview / investor analysis on substantial stock profiles
     stock_lower: ""      # after quarterly figures, only when additional company research exists
 
 # Google Analytics 4. The measurement ID is public by design. Analytics storage defaults to
