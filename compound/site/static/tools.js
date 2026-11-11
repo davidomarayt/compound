@@ -2288,13 +2288,44 @@
       if(note) note.textContent=advanced?(note.dataset.advancedNote||'Advanced mode: add optional detail for a more complete scenario.'):(note.dataset.basicNote||'Start with the core figures. Switch to Advanced for optional detail.');
       syncVisibility();run();
     }));
+    // The PIA quick starts reuse the normal calculator path; no second tax model.
+    const piaPresetButtons=root.dataset.toolName==='pia-calculator'?[...root.querySelectorAll('[data-pia-preset]')]:[];
+    const piaPresetStatus=root.querySelector('[data-pia-preset-status]');
+    const selectPiaPreset=(selected=null)=>{
+      piaPresetButtons.forEach(button=>{
+        const active=button===selected;
+        button.classList.toggle('is-active',active);
+        button.setAttribute('aria-pressed',active?'true':'false');
+      });
+    };
+    piaPresetButtons.forEach(button=>button.addEventListener('click',()=>{
+      const presetValues={
+        current_balance:0,
+        annual_contribution:Number(button.dataset.contribution),
+        years:Number(button.dataset.years),
+        return_rate:6
+      };
+      Object.entries(presetValues).forEach(([id,value])=>{
+        const field=root.querySelector('[data-field="'+id+'"]');
+        if(field) field.value=String(value);
+      });
+      selectPiaPreset(button);
+      syncVisibility();
+      run(false);
+      if(piaPresetStatus) piaPresetStatus.textContent='Example loaded. Results updated; edit any number to personalise it.';
+    }));
+    const clearPiaPreset=()=>{
+      selectPiaPreset();
+      if(piaPresetStatus) piaPresetStatus.textContent='';
+    };
     if(form){
       let inputTimer=null;
       form.addEventListener('submit',e=>{e.preventDefault();run(true);});
-      form.addEventListener('change',()=>{syncVisibility();run(false);});
-      form.addEventListener('input',()=>{clearTimeout(inputTimer);inputTimer=setTimeout(()=>{syncVisibility();run(false);},180);});
+      form.addEventListener('change',()=>{clearPiaPreset();syncVisibility();run(false);});
+      form.addEventListener('input',()=>{clearPiaPreset();clearTimeout(inputTimer);inputTimer=setTimeout(()=>{syncVisibility();run(false);},180);});
       form.addEventListener('reset',()=>setTimeout(()=>{
         root.dataset.advancedMode='false';
+        clearPiaPreset();
         modeButtons.forEach(b=>{const active=b.dataset.toolMode==='basic';b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',active?'true':'false');});
         const note=root.querySelector('[data-tool-mode-note]'); if(note) note.textContent=note.dataset.basicNote||'Start with the core figures. Switch to Advanced for optional detail.';
         syncVisibility();run();

@@ -36,7 +36,7 @@ The right comparison is therefore not “pension or stock market?”. Pensions u
 
 The useful comparison has historically been **pension wrapper versus taxable investing wrapper**.
 
-From 2027 there is a third route to understand: Ireland's planned [Personal Investment Account (PIA)](/wealth/personal-investment-account-ireland/). It is designed to sit between a pension and ordinary taxable investing: flexible access, no pension-style contribution relief, and a separate annual PIA tax framework.
+From 2027 there is a third route to understand: Ireland's planned [Personal Investment Account (PIA)](/wealth/personal-investment-account-ireland/). It is designed to sit between a pension and ordinary taxable investing: flexible access, no pension-style contribution relief, and a separate annual PIA tax framework. You can [model annual contributions, account growth and the proposed PIA charge](/pia-calculator/) before comparing it with a pension.
 
 ## The short version
 
