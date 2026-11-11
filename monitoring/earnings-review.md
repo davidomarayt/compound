@@ -1,6 +1,6 @@
 # Compound company review queue
 
-Checked: 2026-11-10
+Checked: 2026-11-11
 
 - 498 saved profiles checked against structural and issuer rules.
 - 84 existing company articles; 81 mapped to monitored issuers.
