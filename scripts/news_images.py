@@ -231,34 +231,6 @@ def download(url: str, destination: Path) -> None:
         destination.write_bytes(response.content)
 
 
-
-def normalise_pinned_photo(path: Path) -> None:
-    """Preserve the approved photograph while standardising browser JPEG delivery.
-
-    Some real Wikimedia JPEG uploads have an MPF segment and Pillow identifies
-    them as MPO. For a pinned '.jpg' cover, extract the primary frame as a
-    standard JPEG instead of weakening the publication image-format gate.
-    """
-    with Image.open(path) as original:
-        original_format = original.format
-        width, height = original.size
-        if width < 1000 or height < 600:
-            raise ValueError(
-                f"Pinned photograph too small: {width}x{height} ({path})"
-            )
-        if original_format == "JPEG":
-            original.verify()
-            return
-        if original_format not in {"MPO", "PNG", "WEBP"}:
-            raise ValueError(f"Unsupported pinned photograph format: {original_format} ({path})")
-        photo = ImageOps.exif_transpose(original).convert("RGB")
-
-    photo.save(path, format="JPEG", quality=92, optimize=True)
-    with Image.open(path) as final:
-        assert final.format == "JPEG" and final.size == (width, height), path
-        final.verify()
-
-
 def wrap(text: str, width: int = 33, max_lines: int = 4) -> list[str]:
     words = text.split()
     lines: list[str] = []
@@ -432,12 +404,7 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
             return "skip:has-pinned-url-image"
         try:
             hero_rel = f"/static/images/evergreen/{slug}.jpg"
-            photo_path = STATIC / hero_rel.removeprefix("/static/")
-            download(pinned_image_url, photo_path)
-            # Only this new, explicitly pinned unreviewed research batch requires
-            # canonical JPEG re-encoding; avoid changing older cover assets.
-            if "unreviewed-ai" in {str(tag).lower() for tag in meta.get("tags") or []}:
-                normalise_pinned_photo(photo_path)
+            download(pinned_image_url, STATIC / hero_rel.removeprefix("/static/"))
             if "mag7-research" in {str(tag).lower() for tag in meta.get("tags") or []}:
                 with Image.open(STATIC / hero_rel.removeprefix("/static/")) as photo:
                     if photo.width < 1000 or photo.height < 600:
