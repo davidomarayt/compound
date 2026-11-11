@@ -6,10 +6,10 @@
   "story_fingerprint": "efc5fb5c2f293a240af295df",
   "fingerprint_input": "META|FY2026-Q3|restricted-cash-infrastructure-escrow",
   "publication_kind": "canonical_update",
-  "status": "prepared",
-  "publication_state": "prepared",
+  "status": "updated",
+  "publication_state": "live_verified",
   "new_articles_published": 0,
-  "canonical_updates_published": 0,
+  "canonical_updates_published": 1,
   "article_path": "content/wealth/meta-advertising-ai-spending-earnings.md",
   "canonical_url": "https://compound.ie/wealth/meta-advertising-ai-spending-earnings/",
   "article_sha256": "778b18ffaf14e01c36eaea8235ecbac8a30a678456f293d21ba0acf76d2dbcdc",
@@ -44,7 +44,7 @@
   ],
   "duplicate_checks": [
     "Read AGENTS, editorial index, content inventory and JSON, Meta source articles and past 14 days of dated content, Mag8 ledgers and legacy files. No November 11 Mag8 or legacy Mag7 publication. Latest eight series records cover all eight names, META least recently featured (Nov 2). No Nov 10 Mag8 ledger present.",
-    "Open PRs 43/57 unrelated infrastructure; PR107 OpenAI/Anthropic/Databricks model-commerce/sovereignty questions differ. Current Irish morning/afternoon ledgers hold pay and inflation updates. Evergreen publication is Irish personal finance. No current three-company morning publication found. Automation peek returned no detailed run state; repository PRs, branches, ledgers and live catalogue are available overlap evidence.",
+    "Open PRs 43/57 unrelated infrastructure; PR107 OpenAI/Anthropic/Databricks model-commerce/sovereignty questions differ. Current Irish morning/afternoon ledgers hold pay and inflation updates; evergreen publication is Irish personal finance. Daily Company Analysis automation last run 11 November 08:06 returned no_update. FairPath published a nursing-home hearing-aid guide, unrelated to listed-company liquidity. Private-company workflow has three prepared and zero live articles; it reports PR107 pending and paused. Repository PRs, branches, ledgers, automation histories and live catalogue were checked.",
     "Existing Meta cash-flow article already owns the funding-flexibility question. Substantial canonical update chosen under November 11 gate. New-article target skipped to avoid a competing page. FairPath consumer nursing-home guides do not overlap this listed-company liquidity question."
   ],
   "evidence_table": [
@@ -71,6 +71,91 @@
   },
   "validation": [
     "45 offline financial/image/discovery tests passed.",
-    "New regression builds article plus linked company profile with configured ads and verifies Google ad script/slots absent, neutral attribution and no fabricated review note. Passed."
-  ]
+    "New regression builds article plus linked company profile with configured ads and verifies Google ad script/slots absent, neutral attribution and no fabricated review note. Passed.",
+    "PR110, PR111 and PR112 CI passed on their final heads. Rendered regression verifies separate original and research dates in JSON-LD, finance catalogue and social metadata, alongside ad-free article and linked META profile.",
+    "Live canonical, update text, original/publication dates, neutral byline, article/profile ad absence, sitemap, finance catalogue and directory, and byte-identical cover and social image verified.",
+    "Final site workflow 43080746160: build, deploy, verify-live, verify-finance-discovery and mobile-audit all passed."
+  ],
+  "pull_requests": [
+    {
+      "number": 110,
+      "url": "https://github.com/davidomarayt/compound/pull/110",
+      "head": "30a4c5bea5575cc70cfa83615db51fd4d429a7ce",
+      "merge": "6aeda55908a8efdeb4041335e2911037f44e4dc6",
+      "ci_run": 43074094684,
+      "ci": "success",
+      "site_run": 43075573494,
+      "site": "success"
+    },
+    {
+      "number": 111,
+      "url": "https://github.com/davidomarayt/compound/pull/111",
+      "head": "0501b205c539f3571d868f9daf48d76c7c82d64f",
+      "merge": "34e8d7ebc86c0fa4640c3d227b32c4e0d398296b",
+      "ci_run": 43077101925,
+      "ci": "success",
+      "site_run": 43078751959,
+      "site": "success"
+    },
+    {
+      "number": 112,
+      "url": "https://github.com/davidomarayt/compound/pull/112",
+      "head": "45a88b264f833932834c99331e708cdf1be2571b",
+      "ci_run": 43079130986,
+      "merge": "4300cb94309e5a645555937973b1f52c526306f1",
+      "ci": "success",
+      "site_run": 43080746160,
+      "site": "success"
+    }
+  ],
+  "recoverable_failures": [
+    "Live verification after PR110 found canonical update absent from limited finance catalogue; PR111 ranks verified research dates while preserving publication dates.",
+    "Initial PR111 CI failed an obsolete source-text assertion; expectation updated and full CI passed on final head.",
+    "Final metadata inspection found social article:modified_time used original date; PR112 aligns it with JSON-LD, sitemap and catalogue and adds rendered assertions."
+  ],
+  "outcome_notes": "New standalone article skipped for overlap. Substantial canonical update counts separately; no new article or social post. Human review is still pending; no approval or reviewer timestamp was created. Ads remain absent on the updated article and linked META stock profile. Google-served ads before actual human review or curation remain the explicit publisher-policy risk; no AdSense compliance is claimed.",
+  "live_verification": {
+    "canonical": "https://compound.ie/wealth/meta-advertising-ai-spending-earnings/",
+    "live_updated_text": true,
+    "neutral_byline": true,
+    "article_ads_absent": true,
+    "linked_profile_ads_absent": true,
+    "social_image": "https://compound.ie/static/discover/meta-advertising-ai-spending-earnings-16x9.webp",
+    "social_sha256": "cda4b3e0aa1608dda0f073a11810dc3e57b7410a37a5241f1abc6e032b501281",
+    "sitemap": true,
+    "finance_catalogue": true,
+    "finance_directory": true,
+    "hero_sha256": "e17c75b3cc5c24fe4b33fba9737319728a5d7520e474b759c018ba2dc3c51a87",
+    "original_publication_date": "2026-10-21",
+    "research_modification_date": "2026-11-11",
+    "verified_at": "2026-11-11T18:51:44.522897+00:00"
+  },
+  "deployment_jobs": [
+    {
+      "name": "build",
+      "id": 130732330666,
+      "conclusion": "success"
+    },
+    {
+      "name": "deploy",
+      "id": 130735203139,
+      "conclusion": "success"
+    },
+    {
+      "name": "verify-live",
+      "id": 130735406262,
+      "conclusion": "success"
+    },
+    {
+      "name": "verify-finance-discovery",
+      "id": 130735406279,
+      "conclusion": "success"
+    },
+    {
+      "name": "mobile-audit",
+      "id": 130735406291,
+      "conclusion": "success"
+    }
+  ],
+  "completed_at": "2026-11-11 18:56:26 UTC"
 }
