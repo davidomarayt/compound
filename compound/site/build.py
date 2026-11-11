@@ -302,6 +302,7 @@ class Article:
     seo_title: str = ""
     reviewed: date | None = None
     related_tools: list[str] = field(default_factory=list)
+    research_review_pending: bool = False
 
     @property
     def body_with_charts(self) -> str:
@@ -573,6 +574,7 @@ def article_from_file(path: Path, *, include_drafts: bool = False) -> Article | 
         series_id=str(meta.get("series_id") or ""),
         series_order=int(meta.get("series_order") or 0),
         publication_status=status,
+        research_review_pending=meta.get("editorial_review_status") == "pending",
         canonical_path=canonical_path,
         seo_title=str(meta.get("seo_title") or ""),
         reviewed=_as_date(meta["reviewed"]) if meta.get("reviewed") else None,
@@ -802,7 +804,8 @@ def article_jsonld(a: Article, site_url: str) -> str:
         "description": a.description,
         "datePublished": a.date.isoformat(),
         "dateModified": (a.reviewed or a.date).isoformat(),
-        "author": ({"@type": "Organization", "name": "Compound Earnings", "url": f"{base}/wealth/earnings/"}
+        "author": ({"@type": "Organization", "name": "Compound Research", "url": f"{base}/about/"}
+                   if a.research_review_pending else {"@type": "Organization", "name": "Compound Earnings", "url": f"{base}/wealth/earnings/"}
                    if "automated-earnings" in a.tags else
                    {"@type": "Person", "name": "David", "url": f"{base}/about/"}),
         "publisher": {"@id": f"{base}/#organization"},
@@ -939,6 +942,7 @@ def article_context(env: Environment, settings: Settings, article: Article, prev
     images = discover_image_urls(article, settings.site_base_url)
     return dict(
         article=article,
+        ads_allowed=not article.research_review_pending,
         preview=preview,
         series=series,
         article_body=body,
@@ -1378,7 +1382,8 @@ def build_site(settings: Settings) -> dict:
                 earnings_analysis=earnings_analysis,
                 news=[a for a in stories if is_news_article(a)],
                 research=[a for a in stories if not is_news_article(a)],
-                has_coverage=is_covered, ads_allowed=is_covered,
+                has_coverage=is_covered,
+                ads_allowed=is_covered and not any(a.research_review_pending for a in stories),
                 tradingview_panel=render_tradingview_panel(company["symbol"], company["name"], "advanced")),
         )
         # GitHub Pages cannot emit true 301s; a noindex canonical + instant
