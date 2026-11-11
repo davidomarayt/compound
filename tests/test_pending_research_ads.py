@@ -4,7 +4,7 @@ from pathlib import Path
 from compound.site.build import build_site
 
 
-def test_pending_research_is_ad_free_on_article_and_company(settings):
+def test_pending_research_keeps_ads_and_truthful_attribution(settings):
     wealth = settings.content_dir / "wealth"
     wealth.mkdir()
     (wealth / "pending.md").write_text(
@@ -27,8 +27,10 @@ def test_pending_research_is_ad_free_on_article_and_company(settings):
     article = (settings.public_dir / "wealth/pending/index.html").read_text()
     company = (settings.public_dir / "stocks/meta/index.html").read_text()
     for html in [article, company]:
-        assert "adsbygoogle" not in html
-        assert "pagead2.googlesyndication.com" not in html
+        assert "adsbygoogle" in html
+        assert "pagead2.googlesyndication.com" in html
+    assert 'data-ad-slot="1"' in article
+    assert 'data-ad-slot="2"' in article
     assert '"datePublished": "2026-10-21"' in article
     assert '"dateModified": "2026-11-11"' in article
     assert '<meta property="article:published_time" content="2026-10-21">' in article
