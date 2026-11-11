@@ -41,8 +41,24 @@ def verify() -> None:
             assert image.format == "JPEG" and image.width >= 1000 and image.height >= 600
             image.verify()
         assert f'src="{photo_rel}"' in html, f"Wrong cover: {url}"
-        assert f'property="og:image" content="https://compound.ie{photo_rel}"' in html, url
-        assert f'name="twitter:image" content="https://compound.ie{photo_rel}"' in html, url
+        # The visible JPEG is not the social image: site/build.py generates
+        # a 1200x675 WebP for Open Graph and Twitter from the pinned photo.
+        social_rel = f"/static/discover/{slug}-16x9.webp"
+        social = PUBLIC / social_rel.lstrip("/")
+        assert social.is_file() and social.stat().st_size > 20000, (
+            f"Missing generated social image: {social}"
+        )
+        with Image.open(social) as image:
+            assert image.format == "WEBP" and image.size == (1200, 675), (
+                f"Wrong social image format/dimensions: {social}"
+            )
+            image.verify()
+        assert f'property="og:image" content="https://compound.ie{social_rel}"' in html, (
+            f"Wrong Open Graph image: {url}"
+        )
+        assert f'name="twitter:image" content="https://compound.ie{social_rel}"' in html, (
+            f"Wrong Twitter image: {url}"
+        )
         assert story["image_source"] in html, f"Image source missing: {url}"
 
         hub_path = PUBLIC / "companies" / story["slug"] / "index.html"
