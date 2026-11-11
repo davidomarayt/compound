@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 from PIL import Image
-from scripts.news_images import normalise_pinned_photo
+from scripts.normalise_private_company_images import normalise_pinned_photo
 
 from compound.site.build import _env, article_context, article_from_file, article_jsonld
 
