@@ -31,6 +31,8 @@ def test_pending_research_is_ad_free_on_article_and_company(settings):
         assert "pagead2.googlesyndication.com" not in html
     assert '"datePublished": "2026-10-21"' in article
     assert '"dateModified": "2026-11-11"' in article
+    assert '<meta property="article:published_time" content="2026-10-21">' in article
+    assert '<meta property="article:modified_time" content="2026-11-11">' in article
     catalogue = json.loads((settings.public_dir / "finance/index.json").read_text())
     entry = next(e for e in catalogue["entries"] if e["url"].endswith("/wealth/pending/"))
     assert entry["published"] == "2026-10-21"
