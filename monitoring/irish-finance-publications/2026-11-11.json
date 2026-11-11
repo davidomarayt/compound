@@ -1,0 +1,103 @@
+{
+  "run_date": "2026-11-11",
+  "timezone": "Europe/Dublin",
+  "edition": "morning",
+  "edition_key": "2026-11-11/morning",
+  "morning_search_cutoff": "2026-11-11T09:41:03+00:00",
+  "target": 3,
+  "publishing_branch": "claude/clever-babbage-uibieq",
+  "verified_base_commit": "7b4afb5",
+  "confirmed_publications": 0,
+  "new_articles": 0,
+  "canonical_updates": 0,
+  "held_for_review": 2,
+  "skipped": 1,
+  "failed": 0,
+  "publication_gate": {
+    "status": "blocked",
+    "reason": "No evidence of real human review for these drafts. Production article renderer enables AdSense and lacks a verified per-article pending-review control. PR #107 proposes controls but remains unmerged. Existing canonical page fetched and confirmed to load AdSense.",
+    "related_pr": "https://github.com/davidomarayt/compound/pull/107",
+    "human_review": false,
+    "automated_checks_are_human_review": false
+  },
+  "checks": {
+    "repository": "Fresh isolated checkout of named publishing branch; AGENTS, topic index, markdown/JSON inventories and live canonical source checked. No 11 November morning ledger found.",
+    "overlap": "Public-service pay has an established canonical URL. EnergyCloud Camac Crescent absent from inventory and source search. Recent 10 November fuel, An Post and tax-refund stories excluded.",
+    "concurrency": "Open Compound/FairPath PR query inspected; #107 concerns private-company articles and ad controls. Compound Actions recent runs checked. Public FairPath Actions API returned Not Found; concurrent private workflow state could not be verified.",
+    "tests": "JSON and calculations validated. No site-source mutation, deployment or full build attempted because publication gate fails. Rendered cover/social-image and independent editorial review remain release gates."
+  },
+  "articles": [
+    {
+      "topic": "Public-sector strike suspended after draft pay deal; what September backdating means",
+      "content_type": "news",
+      "action": "canonical_update",
+      "status": "held_for_review",
+      "canonical_url": "https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/",
+      "publication_commit": null,
+      "deployment_status": "not_deployed",
+      "primary_sources": [],
+      "original_reporting": [
+        "https://www.the-independent.com/news/uk/home-news/irish-trade-unions-government-press-association-b3082887.html",
+        "https://www.irishtimes.com/ireland/2026/11/11/public-sector-strike-set-to-be-called-off-after-pay-deal-agreed-with-unions/",
+        "https://www.lmfm.ie/news/lmfm-news/public-sector-strike-planned-for-tomorrow-suspended-amid-pay-agreement/"
+      ],
+      "claim_checks": [
+        {
+          "claim": "Draft agreement reached overnight; 12 November strike suspended; union ballots still needed",
+          "basis": "PA original report of 11 November, with quoted ICTU statement; Irish Times original reporting and LMFM corroboration",
+          "status": "verified_original_reporting"
+        },
+        {
+          "claim": "First adjustment 2% or €1,200, whichever greater, effective 1 September 2026",
+          "basis": "PA published schedule and LMFM schedule. Direct signed agreement not retrieved.",
+          "status": "verified_reported_terms"
+        },
+        {
+          "claim": "€45,000 salary example produces €1,200 annual adjustment, €100 per month and illustrative €400 across September–December",
+          "basis": "max(45000*0.02,1200)=1200;1200/12=100;100*4=400. Assumes full-time service throughout and equal monthly accrual; gross illustration only.",
+          "status": "calculation_verified"
+        }
+      ],
+      "photo": "Retain existing licensed William Murphy 6 December 2008 archival teachers demonstration, pinned source and metadata. Recheck rendered assets before release.",
+      "draft_title": "Public-sector strike suspended after draft deal: what September backdating would mean",
+      "draft_description": "The proposed pay agreement moves to union ballots. A €45,000 salary example shows the difference between an annual pay rise and arrears paid for part of a year.",
+      "draft_body": "The public-sector strike planned for Thursday 12 November has been suspended following overnight agreement on a draft pay deal, according to PA's reporting of the ICTU statement. Members still need to vote on the proposal. Families should check their school or appointment provider's latest notice before changing arrangements.\n\nThe first reported pay adjustment is 2% or €1,200, whichever is greater, effective from 1 September 2026. For someone on €45,000 basic annual pay, 2% is €900, so the €1,200 minimum is larger. That would lift the annual rate to €46,200, subject to the final agreement and the employee's circumstances.\n\nThe annual increase and the arrears cheque are different amounts. With full-time eligible service and equal monthly accrual, €1,200 a year is €100 gross a month. Four months from September through December would therefore represent €400 gross. This is a transparent budgeting illustration, not confirmation of a payroll date or a guaranteed cheque. Part-time service, changes in grade and payroll rules need individual checking.\n\nThe reported 10.75% headline spans the agreement through March 2029 and includes local bargaining. Applying the whole figure to November pay would overstate the immediate change. Before budgeting, check the final salary schedule, ballot result and your employer's implementation notice. The existing take-home-pay calculator can illustrate deductions from a changed annual salary, but cannot determine your arrears entitlement.\n\nThis update should replace the current article's 9 November account of the negotiating offer. Preserve the canonical URL and distinguish the older €1,200 negotiating report from the new effective-date schedule."
+    },
+    {
+      "topic": "Camac Crescent storage-heater project and what households need to establish about savings",
+      "content_type": "news",
+      "action": "new_article_candidate",
+      "status": "held_for_review",
+      "canonical_url": null,
+      "publication_commit": null,
+      "deployment_status": "not_deployed",
+      "primary_sources": [
+        "https://www.cooperativehousing.ie/news/innovative-smart-storage-heater-project"
+      ],
+      "claim_checks": [
+        {
+          "claim": "Project announced 10 November; 20 social and affordable homes at Camac Crescent, Inchicore; upgraded Elnur HHR PLUS storage heaters connected to EnergyCloud",
+          "basis": "Co-operative Housing Ireland original announcement",
+          "status": "verified"
+        },
+        {
+          "claim": "No independently measured per-household euro saving or public application route established",
+          "basis": "Announcement contains testimony and project description but no controlled savings data or general eligibility terms",
+          "status": "limitation"
+        }
+      ],
+      "photo": "Announcement credits Julien Behal and says images available on request. No reuse licence verified; photo gate fails. No permission request sent.",
+      "draft_title": "Dublin storage-heater project targets 20 homes: how to judge the savings",
+      "draft_body": "A project launched at Camac Crescent in Inchicore connects upgraded storage heaters in 20 homes to surplus renewable electricity. Co-operative Housing Ireland says older heaters have been replaced with Elnur HHR PLUS units linked to EnergyCloud. Heat can be stored when surplus electricity is available and used later.\n\nFor households, the financial question is how much purchased electricity the system displaces. An illustrative 100 kWh avoided at a hypothetical 25 cent unit rate would reduce energy charges by €25. If the system instead delivers 100 kWh of extra warmth while paid consumption stays the same, that is a comfort improvement with no corresponding €25 reduction. Neither example estimates this project's results.\n\nA useful assessment would compare metered purchased electricity before and after installation, the tariffs applied and heating comfort, while accounting for weather and household use. The announcement gives no measured saving per home. Residents considering a similar arrangement should ask their housing provider who pays for installation and maintenance, how ordinary paid charging works, and whether the controls preserve their preferred heating schedule.\n\nThe launch describes a specific group of homes. A general application route or entitlement to free electricity has not been verified. The project merits follow-up when measured bills, access terms and usable licensed photography are available.",
+      "additional_hold_reason": "Needs independent performance/access evidence and a licensed relevant photograph to meet the full editorial gate; avoid a press-release-only publication."
+    }
+  ],
+  "skipped_items": [
+    {
+      "topic": "Third article slot / inflation and other household developments",
+      "status": "skipped",
+      "reason": "No third distinct story with a sufficiently verified current development and complete evidence was established by the search cutoff. No release date or result inferred from an expected statistics release."
+    }
+  ],
+  "afternoon_handoff": "Zero morning publications. Two held candidates are not quota completions. Check events first public after 09:41:03 GMT, and recheck publication gate, canonical pay page and PR #107. Reuse the existing pay URL; do not count this research or reruns as publication."
+}
