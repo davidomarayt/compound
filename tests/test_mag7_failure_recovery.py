@@ -25,6 +25,8 @@ def test_missing_key_fails_before_research(monkeypatch, tmp_path, key):
 
 def test_editor_rejection_never_reaches_article(monkeypatch, tmp_path):
     monkeypatch.setenv("ANTHROPIC_API_KEY", "test-placeholder-not-a-credential")
+    # This unit test must not discover a real account through the paid API.
+    monkeypatch.setattr(publisher, "discover_workspace_id", lambda: None)
     monkeypatch.setattr(publisher.pilot, "latest_sec", lambda *args: {})
     monkeypatch.setattr(publisher, "photo_for", lambda *args: {})
     monkeypatch.setattr(publisher, "research", lambda *args: {})

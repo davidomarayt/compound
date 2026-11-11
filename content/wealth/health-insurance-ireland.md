@@ -1,57 +1,82 @@
 ---
-title: "Health Insurance in Ireland: Costs, Cover & How to Choose a Plan"
-seo_title: "Health Insurance Ireland: 2026 Costs & Plans"
+title: 'Health Insurance in Ireland: Costs, Cover & How to Choose a Plan'
+seo_title: 'Health Insurance Ireland: Compare Costs, Cover & Excesses'
 slug: health-insurance-ireland
 pillar: wealth
 draft: false
 publication_status: published
 date: 2026-10-07
-reviewed: 2026-10-07
-approved_by: "Explicit evergreen publish instruction — 7 October 2026"
-summary: "A complete guide to private health insurance in Ireland: current costs, Vhi, Laya, Irish Life Health and Level Health, waiting periods, Lifetime Community Rating, tax relief, switching and how to compare plans properly."
-meta_description: "Health insurance Ireland 2026 guide: average costs, Vhi, Laya, Irish Life Health, Level Health, waiting periods, tax relief, LCR and how to compare plans."
-tags: [health-insurance, private-health-insurance, insurance, vhi, laya-healthcare, irish-life-health, level-health, tax-relief, household-costs, ireland]
-hero_image_url: "https://images.pexels.com/photos/7088483/pexels-photo-7088483.jpeg?cs=srgb&dl=pexels-mart-production-7088483.jpg&fm=jpg"
-hero_image_alt: "A medical professional reviewing patient paperwork with a pen."
-hero_image_credit: "MART PRODUCTION on Pexels"
-hero_image_source: "https://www.pexels.com/photo/photo-of-person-holding-paper-and-pen-7088483/"
-news_image_query: "Irish family reviewing health insurance paperwork kitchen table stethoscope euro bills natural light"
+reviewed: 2026-11-11
+approved_by: David O’Mara — approved the linked renewal-comparison draft on 11 November 2026
+summary: 'A complete guide to private health insurance in Ireland: current costs, Vhi, Laya, Irish Life Health and Level Health, waiting periods, Lifetime Community Rating, tax relief, switching and how to compare plans properly.'
+meta_description: Compare Irish health insurance at renewal with worked euro examples, hospital excesses, outpatient refunds and checks before changing plans.
+tags:
+- health-insurance
+- private-health-insurance
+- insurance
+- vhi
+- laya-healthcare
+- irish-life-health
+- level-health
+- tax-relief
+- household-costs
+- ireland
+hero_image_url: https://images.pexels.com/photos/7088483/pexels-photo-7088483.jpeg?cs=srgb&dl=pexels-mart-production-7088483.jpg&fm=jpg
+hero_image_alt: A medical professional reviewing patient paperwork with a pen.
+hero_image_credit: MART PRODUCTION / Pexels — Pexels licence
+hero_image_source: https://www.pexels.com/photo/photo-of-person-holding-paper-and-pen-7088483/
+require_pinned_hero: true
+image_license: Pexels licence — https://www.pexels.com/license/
+social:
+  enabled: false
 sources:
-- title: "Health Insurance Authority: Health insurance comparison tool. Checked 7 October 2026."
+- title: 'HIA: Claims and excesses. Checked 11 November 2026.'
+  url: https://www.hia.ie/information/claims-and-excesses
+- title: 'HIA: Cancelling and switching. Checked 11 November 2026.'
+  url: https://www.hia.ie/information/cancelling-and-switching
+- title: 'CCPC: Health insurance. Checked 11 November 2026.'
+  url: https://www.ccpc.ie/manage-your-money/day-to-day-finances/insurance/health-insurance
+- title: 'Health Insurance Authority: Health insurance comparison tool. Checked 7 October 2026.'
   url: https://www.hia.ie/health-insurance-comparison
-- title: "Health Insurance Authority: Register of health benefits undertakings. List current at 1 September 2026."
+- title: 'Health Insurance Authority: Register of health benefits undertakings. List current at 1 September 2026.'
   url: https://www.hia.ie/about-us/regulations/register-of-health-benefits-undertakings
-- title: "Health Insurance Authority: Waiting periods. Checked 7 October 2026."
+- title: 'Health Insurance Authority: Waiting periods. Checked 11 November 2026.'
   url: https://www.hia.ie/information/waiting-periods
-- title: "Health Insurance Authority: Lifetime Community Rating. Checked 7 October 2026."
+- title: 'Health Insurance Authority: Lifetime Community Rating. Checked 11 November 2026.'
   url: https://www.hia.ie/information/lifetime-community-rating-lcr
-- title: "Health Insurance Authority: Consumer FAQ — switching, renewal, maternity and corporate plans. Checked 7 October 2026."
+- title: 'Health Insurance Authority: Consumer FAQ — switching, renewal, maternity and corporate plans. Checked 11 November 2026.'
   url: https://www.hia.ie/consumer-information/faq
-- title: "Health Insurance Authority: Health Insurance Explained."
+- title: 'Health Insurance Authority: Health Insurance Explained.'
   url: https://www.hia.ie/sites/default/files/2026-01/hia-health-insurance-explained.pdf
-- title: "Health Insurance Authority: Health Insurance in Ireland — Market Report 2025. Published June 2026."
+- title: 'Health Insurance Authority: Health Insurance in Ireland — Market Report 2025. Published June 2026.'
   url: https://www.hia.ie/sites/default/files/2026-06/hia-market-report-2025.pdf
-- title: "Health Insurance Authority: Market reports and bulletins, including Q2 2026. Checked 7 October 2026."
+- title: 'Health Insurance Authority: Market reports and bulletins, including Q2 2026. Checked 7 October 2026.'
   url: https://www.hia.ie/news-and-research/market-reports-and-bulletins
-- title: "Health Insurance Authority: Health insurance plan updates from 1 October 2026."
+- title: 'Health Insurance Authority: Health insurance plan updates from 1 October 2026.'
   url: https://www.hia.ie/news/health-insurance-plan-updates-new-and-updated-plans-from-1-october-2026
-- title: "Revenue: Tax Relief at Source from 1 January 2026."
+- title: 'Revenue: Tax Relief at Source from 1 January 2026.'
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/health-and-age/medical-insurance-premiums/trs-from-010126.aspx
-- title: "Revenue: If you pay your medical insurance premium."
+- title: 'Revenue: If you pay your medical insurance premium.'
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/health-and-age/medical-insurance-premiums/if-you-pay.aspx
-- title: "Revenue: If your employer pays your medical insurance premium."
+- title: 'Revenue: If your employer pays your medical insurance premium.'
   url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/health-and-age/medical-insurance-premiums/if-employer-pays.aspx
-- title: "Revenue: Medical insurance plans and check-ups — Benefit in Kind rules. Updated September 2026."
+- title: 'Revenue: Medical insurance plans and check-ups — Benefit in Kind rules. Checked 11 November 2026.'
   url: https://www.revenue.ie/en/employing-people/benefit-in-kind-for-employers/other-benefits/medical-insurance-plans-check-ups.aspx
-- title: "RTÉ: First decrease in people with health insurance since 2020 — HIA Q2 2026 figures. 8 September 2026."
-  url: https://www.rte.ie/news/business/2026/0908/1590694-health-insurance-authority-figures/
+- title: 'HIA: Quarter 2 2026 Market Bulletin press release. Checked 11 November 2026.'
+  url: https://www.hia.ie/sites/default/files/2026-09/Quarter%202%202026%20Market%20Bulletin%20PR.pdf
+- title: 'Revenue: Tax Relief at Source and under-21 definition. Checked 11 November 2026.'
+  url: https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/health-and-age/medical-insurance-premiums/trs.aspx
+image: /static/images/evergreen/health-insurance-ireland.jpg
+image_alt: A medical professional reviewing patient paperwork with a pen.
+image_credit: MART PRODUCTION / Pexels — Pexels licence
+image_source: https://www.pexels.com/photo/photo-of-person-holding-paper-and-pen-7088483/
+social_image: /static/images/evergreen/health-insurance-ireland.jpg
 ---
-
 Private health insurance is one of the biggest recurring household bills in Ireland — and one of the easiest to renew without checking whether the cover still suits you.
 
 That matters more in 2026 because prices and benefits are moving at the same time.
 
-The latest Health Insurance Authority (HIA) figures reported for **Q2 2026** put the weighted average adult premium at about **€1,950 a year**, while more than **2.5 million people** continue to hold inpatient health insurance. The HIA's 2025 market report found that **46% of the population** had inpatient cover at the end of 2025.
+The Health Insurance Authority (HIA) figures reported for **Q2 2026** put the weighted average adult premium at about **€1,950 a year**, when more than **2.5 million people** held inpatient health insurance. The HIA's 2025 market report found that **46% of the population** had inpatient cover at the end of 2025.
 
 **Compare your options:** Start with the [Compound Insurance Hub](/insurance/) to understand life, mortgage, income and health cover separately, then use our [Health Insurance Cost Comparison Calculator](/health-insurance-cost-comparison-calculator/) to compare two plans' total expected out-of-pocket costs. For official current plan benefits and prices, use the HIA comparison service linked below. Our calculator does not quote insurer premiums.
 
@@ -62,7 +87,7 @@ Two plans at similar prices can have very different hospital lists, room entitle
 <div class="cs-intro">
 <p class="cs-kicker">Quick answer</p>
 <p><strong>Ireland has four open-market providers of inpatient private health insurance: Vhi Healthcare, Laya Healthcare, Irish Life Health and Level Health.</strong></p>
-<p>The latest reported weighted average adult premium was about <strong>€1,950 a year</strong> in Q2 2026. There is no single "best health insurance plan in Ireland": the right plan depends on the hospitals and treatments you want access to, the excess you can afford, your family circumstances, your waiting-period history and your budget.</p>
+<p>The reported weighted average adult premium was about <strong>€1,950 a year</strong> in Q2 2026. There is no single "best health insurance plan in Ireland": the right plan depends on the hospitals and treatments you want access to, the excess you can afford, your family circumstances, your waiting-period history and your budget.</p>
 <p>Before renewing, compare the exact plan — not just the insurer — using the independent <a href="https://www.hia.ie/health-insurance-comparison">HIA comparison tool</a>.</p>
 </div>
 
@@ -81,7 +106,7 @@ Two plans at similar prices can have very different hospital lists, room entitle
 <a href="#faq">FAQ</a>
 </nav>
 
-<p><strong>Last checked: 7 October 2026.</strong> Health-insurance prices and plan benefits change frequently. This guide explains the Irish rules and comparison process; always verify the current price, hospital list, excesses and benefit schedule for the exact plan before buying or renewing.</p>
+<p><strong>Rules and renewal comparison checked: 11 November 2026.</strong> Market figures below retain their stated reporting periods. Health-insurance prices and plan benefits change frequently. This guide explains the Irish rules and comparison process; always verify the current price, hospital list, excesses and benefit schedule for the exact plan before buying or renewing.</p>
 
 <h2 id="health-insurance-at-a-glance">Health insurance in Ireland at a glance</h2>
 
@@ -92,7 +117,7 @@ Two plans at similar prices can have very different hospital lists, room entitle
 </thead>
 <tbody>
 <tr><th scope="row">Open-market inpatient insurers</th><td><strong>Vhi Healthcare, Laya Healthcare, Irish Life Health and Level Health</strong></td></tr>
-<tr><th scope="row">Latest reported weighted average adult premium</th><td><strong>About €1,950 a year</strong> in Q2 2026</td></tr>
+<tr><th scope="row">Weighted average adult premium (Q2 2026)</th><td><strong>About €1,950 a year</strong> in Q2 2026</td></tr>
 <tr><th scope="row">People with inpatient health insurance</th><td>More than <strong>2.5 million</strong>; 46% of the population at end-2025</td></tr>
 <tr><th scope="row">Tax relief from 1 January 2026</th><td>20% on the lesser of the premium or €1,000 per adult; maximum <strong>€200</strong></td></tr>
 <tr><th scope="row">Child tax-relief cap</th><td>20% on the lesser of the premium or €500; maximum <strong>€100</strong></td></tr>
@@ -164,7 +189,7 @@ A plan that costs €15 less per month but has a materially higher excess, narro
 
 A useful comparison is:
 
-**Annual premium + realistic excesses and shortfalls − benefits you are likely to claim**
+**Annual premium + hospital excesses and shortfalls + outpatient bills − actual outpatient refunds**
 
 That is not a perfect forecast, because nobody knows what healthcare they will need next year. It does force you to look beyond the headline premium.
 
@@ -222,122 +247,146 @@ Someone in their sixties may care more about private-hospital access, cardiac or
 
 None of those priorities makes one insurer universally "best".
 
-<h2 id="compare">How to compare health insurance plans in Ireland</h2>
+<h2 id="compare">How to compare health insurance at renewal</h2>
 
-The HIA comparison tool is the best neutral starting point because it is independent and includes the plans available across the market.
+Start with two questions: does each plan cover the hospitals and treatment you need, and what would you pay in a quiet year or a year with claims? A cheaper premium can still leave you with a higher bill.
 
-Before opening it, write down what actually matters to you.
+Collect your renewal quote, current Table of Benefits, proposed plan documents and last year's claims statement. Compare the same people over the same twelve months. For personally paid premiums, use the amount payable after Tax Relief at Source; [Revenue explains that this relief is already reflected in the price](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/health-and-age/medical-insurance-premiums/if-you-pay.aspx). Do not subtract it twice. Employer-paid cover needs a separate payroll and tax comparison.
 
-### 1. Start with your current plan name and renewal price
+### First rule out cover you would not accept
 
-Do not compare from memory.
+Use the [HIA comparison service](https://www.hia.ie/health-insurance-comparison) to shortlist exact plans. Then ask each insurer to confirm the hospital, consultant and procedure cover that matters to you, including any need for advance approval. Keep the reply with the quote.
 
-Find your renewal notice and note:
+Write down three things you would be unwilling to lose, such as access to a named hospital, a particular treatment benefit or an affordable excess. Compare the annual cost only among plans that meet those needs. A saving does not compensate for a benefit you regard as essential.
 
-- exact plan name;
-- annual renewal premium;
-- current excess;
-- hospital list;
-- outpatient benefits;
-- any plan changes taking effect at renewal.
+Check corporate-labelled plans too: the [CCPC identifies these as an option available to ordinary consumers](https://www.ccpc.ie/manage-your-money/day-to-day-finances/insurance/health-insurance). Family members may also be better served by different plans, so compare the total household price and administration involved.
 
-If your insurer is retiring your plan, read the replacement-plan documents carefully. The HIA says consumers are free to compare the replacement with other plans on the market.
+### A €300 premium saving can disappear after one admission
 
-### 2. Decide which hospitals matter to you
+The following figures are invented illustrations, not insurer quotations, market averages or forecasts. They assume one adult, the same covered treatment and hospitals, no waiting periods, and an excess charged on every admission with no annual cap.
 
-Hospital access is one of the most important differences between plans.
+<div class="cs-table-wrap" tabindex="0" role="region" aria-label="Illustrative health insurance plan inputs">
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th style="text-align: right;">Plan A</th>
+<th style="text-align: right;">Plan B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Annual premium actually payable</td>
+<td style="text-align: right;">€1,800</td>
+<td style="text-align: right;">€1,500</td>
+</tr>
+<tr>
+<td>Hospital excess per admission</td>
+<td style="text-align: right;">€150</td>
+<td style="text-align: right;">€400</td>
+</tr>
+<tr>
+<td>Outpatient bills paid during the year</td>
+<td style="text-align: right;">€600</td>
+<td style="text-align: right;">€600</td>
+</tr>
+<tr>
+<td>Outpatient refund after all limits and excesses</td>
+<td style="text-align: right;">€200</td>
+<td style="text-align: right;">€100</td>
+</tr>
+<tr>
+<td>Other hospital shortfalls</td>
+<td style="text-align: right;">€0</td>
+<td style="text-align: right;">€0</td>
+</tr>
+</tbody>
+</table>
+</div>
 
-Ask:
+For these assumptions, annual household cost is **premium + hospital excesses + outpatient bills − actual outpatient refund**.
 
-- Do you want private-hospital cover?
-- Is a particular hospital important because of where you live?
-- Do you want access to high-tech hospitals?
-- Are you comfortable relying mainly on public-hospital cover?
+<div class="cs-table-wrap" tabindex="0" role="region" aria-label="Health insurance costs by number of admissions">
+<table>
+<thead>
+<tr>
+<th>Admissions in the year</th>
+<th style="text-align: right;">Plan A annual cost</th>
+<th style="text-align: right;">Plan B annual cost</th>
+<th>Lower cost in this scenario</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>None</td>
+<td style="text-align: right;">€2,200</td>
+<td style="text-align: right;">€2,000</td>
+<td>B by €200</td>
+</tr>
+<tr>
+<td>One</td>
+<td style="text-align: right;">€2,350</td>
+<td style="text-align: right;">€2,400</td>
+<td>A by €50</td>
+</tr>
+<tr>
+<td>Two</td>
+<td style="text-align: right;">€2,500</td>
+<td style="text-align: right;">€2,800</td>
+<td>A by €300</td>
+</tr>
+</tbody>
+</table>
+</div>
 
-Do not assume that because a hospital appears on an insurer's website every treatment there is covered under your plan. Check the **exact plan and procedure**.
+For example, Plan A with one admission costs €1,800 + €150 + €600 − €200 = **€2,350**.
 
-### 3. Compare inpatient and day-case excesses
+Plan B saves €300 on the premium but gives €100 less back on outpatient bills. That leaves a €200 advantage before hospital claims. Each admission adds €250 more excess under B, so one admission reverses that advantage.
 
-An excess is the amount you may have to pay yourself before or alongside the insurer's benefit.
+This does not predict your medical needs or establish which plan is best. It shows what you are accepting in exchange for the lower premium. Also consider whether you could pay the €400 excess when a bill arrives, even if the annual premium is easier to afford.
 
-You may see:
+Enter your own figures in our [Health Insurance Cost Comparison Calculator](/health-insurance-cost-comparison-calculator/) and run zero, one and two admission scenarios. The calculator uses the policy details you supply; it cannot check whether treatment is covered.
 
-- an inpatient excess per admission;
-- a day-case excess;
-- treatment-specific excesses;
-- co-payments or percentage shortfalls.
+### Add shortfalls separately
 
-A €300 cheaper annual premium is not automatically a saving if the new plan exposes you to much larger out-of-pocket costs that you are uncomfortable carrying.
+An excess is not necessarily the full amount you pay. The [HIA distinguishes excesses from costs your policy does not cover](https://www.hia.ie/information/claims-and-excesses), including room shortfalls that can apply for each night.
 
-### 4. Look for treatment shortfalls, not just "covered"
+Suppose Plan B in the example also leaves a €150 nightly room shortfall for a three-night stay, while A has none. That adds €150 × 3 = **€450**. B's one-admission cost becomes €2,850, compared with €2,350 for A: a **€500 difference**.
 
-A policy can technically include a treatment without paying 100% of every related charge.
+That is another illustration, not a typical hospital charge. Obtain the actual rule for the room, hospital and procedure. In the calculator, a nightly charge needs converting to the total per stay. If your plan caps an excess annually or applies different rules to different admissions, calculate those charges separately instead of multiplying a single figure blindly.
 
-Pay particular attention to areas such as:
+### Work out the refund before valuing outpatient extras
 
-- orthopaedic procedures;
-- cardiac treatment;
-- high-tech hospitals;
-- consultant fees;
-- scans and diagnostics;
-- mental-health treatment;
-- maternity;
-- fertility;
-- oncology or specialist services where relevant.
+A headline such as “50% back” is not enough. The policy may limit each visit, deduct an outpatient excess and impose an annual ceiling.
 
-If a benefit is especially important to you, check the plan's Table of Benefits and ask the insurer to explain any shortfall.
+Consider a hypothetical benefit with 50% reimbursement, a €25 per-visit limit, an annual €75 excess deducted from eligible benefits, and a €300 annual reimbursement ceiling. You make eight qualifying visits costing €60 each:
 
-### 5. Compare outpatient benefits after the outpatient excess
+1. Actual spending is 8 × €60 = **€480**.
+2. Half of each bill is €30, but the €25 limit reduces eligible benefits to 8 × €25 = **€200**.
+3. Deduct the assumed €75 excess: the refund is **€125**, below the €300 ceiling.
+4. Your remaining outpatient cost is €480 − €125 = **€355**.
 
-A plan may advertise money back on GP visits, consultants, physiotherapy and other day-to-day expenses.
+The policy's own calculation order controls. Confirm whether its excess applies to eligible expenses or benefits, whether family claims share an excess, and which visits qualify. The example is not a universal insurer formula.
 
-Check:
+If another plan charges €120 extra annually but increases your refund from €125 to €170, you gain €45 in refunds for €120 in premium: **€75 more overall**, assuming everything else is equal. Other benefits could justify that difference, but the outpatient refund alone would not.
 
-- the amount reimbursed per visit;
-- the annual limit;
-- whether an outpatient excess must be reached first;
-- which practitioners qualify;
-- whether claims are percentage-based or fixed amounts.
+### Check timing before changing cover
 
-High outpatient benefits can be useful, but they are not free. Sometimes you are paying a higher premium to receive reimbursements on routine expenses you could comfortably pay yourself.
+The [HIA's waiting-period guidance](https://www.hia.ie/information/waiting-periods) says completed new-customer waiting periods generally carry across when switching without a break exceeding 13 weeks. Higher benefits can have upgrade waits of up to two years, or 52 weeks for maternity benefits. A lower premium does not itself prove that every benefit is a downgrade; compare each relevant benefit.
 
-### 6. Check waiting periods before upgrading
+The [HIA's cancellation guidance](https://www.hia.ie/information/cancelling-and-switching) explains the usual twelve-month contract and cooling-off arrangements. Mid-contract cancellation can carry charges, and cancellation during cooling-off can affect claims. Get the insurer's dates, cancellation amount and claims consequences in writing before acting.
 
-If you are moving to **higher cover**, the extra benefits may not be available immediately for pre-existing conditions.
+Before confirming the switch, retain:
 
-This is one of the biggest reasons not to compare on price alone.
+- both exact plan names and dated annual quotes;
+- the hospital and treatment confirmation, excesses and shortfalls;
+- confirmation of any waiting periods and what is covered meanwhile;
+- the new start date and the old policy's confirmed end date;
+- a record of cancellation and any refund or charge.
 
-### 7. Compare the whole family separately
+Arrange the handover without an uninsured gap. Cancelling a direct debit alone is not a substitute for confirming cancellation with the insurer.
 
-The cheapest insurer for one adult is not necessarily the cheapest structure for the household.
-
-Children and young adults can have different pricing rules. In some cases it can make sense for family members to be on different plans or even with different insurers.
-
-The HIA comparison tool allows you to look beyond the assumption that one family must all use the same plan.
-
-### 8. Check corporate plans even if you are not in that company
-
-This is an underused feature of the Irish market.
-
-The HIA states that consumers have the right to buy any health-insurance policy on the open market, including plans marketed as **corporate or company plans**.
-
-A plan being called "Company Plan" does not necessarily mean it is restricted to employees of a particular company.
-
-Restricted membership undertakings are different; those are genuinely limited to qualifying members.
-
-### 9. Compare the annual price, not just the monthly direct debit
-
-Monthly instalments make a premium easier to budget, but the comparison should be based on the **total annual cost**.
-
-Check whether paying monthly changes the total amount charged.
-
-### 10. Recheck at every renewal
-
-Health insurance is not a "set and forget" product.
-
-Plans are introduced, retired and amended. Premiums change. Your needs also change.
-
-The HIA reported that 71% of the consumer queries it received in 2025 were comparison-related. That is a strong sign of how difficult this market is to navigate — and why renewal is worth reviewing rather than automatically accepting.
+Return to the comparison at each renewal. Our [coverage of price and benefit changes](/news/health-insurance-price-rises-benefit-cuts-ireland/) explains why an unchanged plan name is not enough. Use this exercise to understand the cover and costs you are choosing; it is educational guidance, not a personalised recommendation to buy or cancel insurance.
 
 <h2 id="waiting-periods">Health insurance waiting periods in Ireland</h2>
 
@@ -468,7 +517,7 @@ Yes.
 
 In general, health-insurance policies are 12-month contracts and the natural time to switch is at renewal.
 
-The HIA says insurers must provide a **14-day cooling-off period from the renewal date**, during which you can cancel and receive a full refund.
+The HIA describes a **14-day cooling-off period** and insurer-specific renewal cancellation rules. Check when the period starts and how cancellation affects any claims: cancelling the contract from its start can leave treatment costs payable by you.
 
 Switching mid-contract can be possible, but cancellation fees may apply and insurer rules differ.
 
