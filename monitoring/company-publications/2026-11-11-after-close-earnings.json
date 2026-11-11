@@ -1,7 +1,7 @@
 {
   "date": "2026-11-11",
   "scope": "Existing earnings pages only",
-  "status": "proposed",
+  "status": "merged_pending_deployment",
   "previous_check": "2026-11-09-after-close-earnings.json",
   "scan_since": "2026-11-09",
   "companies": {
@@ -65,7 +65,13 @@
       "canonical_url": "https://compound.ie/stocks/vylr/",
       "source": "https://s25.q4cdn.com/906589015/files/content_files/3Q_2026_Earnings_News_Release_Vylor_FINAL-with-schedules.pdf",
       "period": "Q3 FY2026 pro forma",
-      "verification": "Issuer results PDF inspected. Preserve explicit pro forma and non-GAAP distinctions; no historical GAAP table fabricated."
+      "verification": "Issuer results PDF inspected. Preserve explicit pro forma and non-GAAP distinctions; no historical GAAP table fabricated.",
+      "checked_figures": {
+        "pro_forma_net_sales_usd": 938000000,
+        "pro_forma_loss_continuing_operations_after_tax_usd": -480000000,
+        "pro_forma_eps_usd": -0.72,
+        "adjusted_pro_forma_operating_eps_non_gaap_usd": -0.42
+      }
     },
     "rvty": {
       "canonical_url": "https://compound.ie/stocks/rvty/",
@@ -98,10 +104,15 @@
   "checks": {
     "advertising": "Preserve standard ads and consent following PR 113. No human approval fabricated. Verify live loader after deployment.",
     "history": "Prior fiscal rows preserved.",
-    "concurrency": "No active ingestion or production deployment at initial read. Recheck before merge.",
-    "tests": "46 targeted offline tests passed",
-    "build": "Full local site build passed before RVTY addition; repeat pending",
-    "scope": "Four earnings datasets, stale Vylor calendar conditional, audit only"
+    "concurrency": "Before merge, no active ingestion or queued run, unrelated prior site run completed successfully, and no overlapping open PR. Publishing branch changes comprised an unrelated article and inventory only. Live pages still lacked the intended sources.",
+    "tests": "46 targeted offline tests passed after all four updates",
+    "build": "Full local site build passed after all four updates (275 articles, 29 pages, 57 tools)",
+    "scope": "Four earnings datasets, stale Vylor calendar conditional, audit only",
+    "render": "All four local canonical pages matched intended period, values and original source links; standard ad loader and privacy controls present. Existing conditional inline slots absent on these profiles.",
+    "exact_head_ci": [
+      "https://github.com/davidomarayt/compound/actions/runs/43121883759",
+      "https://github.com/davidomarayt/compound/actions/runs/43121878259"
+    ]
   },
   "coverage": {
     "sec_issuers_checked": 505,
@@ -116,6 +127,11 @@
       "VMRK": "Current release summary exists. Supported dashboard rejects comparable revenue; detailed table left pending."
     },
     "queue_items": 76,
-    "limitations": "SEC scan covers registered universe; pending review and foreign discovery items are not all independently financially reconciled."
-  }
+    "limitations": "SEC scan covers registered universe; pending review and foreign discovery items are not all independently financially reconciled.",
+    "sec_scan_completed_at": "2026-11-11T23:35:21.257815+00:00"
+  },
+  "pull_request": 114,
+  "validated_pr_head": "c01ebeb616e9cf59579ca0370041a0edca9e161e",
+  "merge_commit": "50d420833b40905831cdc680fba0be603bb3fa26",
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/43123171532"
 }
