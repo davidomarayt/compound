@@ -4,14 +4,12 @@ Status: approved by publisher 11 November 2026. Use the repository's current def
 
 ## Objective and schedule
 
-Ten distinct agents collaborate overnight in six scheduled runs, using `Europe/Dublin` local civil time (including daylight-saving changes). Scheduling is external to GitHub and lives in ChatGPT Automations.
+Ten distinct agents collaborate overnight in four scheduled runs (two multi-agent specialist runs, one independent QA run and one report), using `Europe/Dublin` local civil time (including daylight-saving changes). Scheduling is external to GitHub and lives in ChatGPT Automations. Four runs are used to stay within the account's 15-active-automation limit without pausing unrelated existing tasks.
 
 | Dublin time | Scheduled group | Agent ownership |
 | --- | --- | --- |
-| 00:15 | Discovery | Search Console Growth; Content Gap |
-| 01:30 | Existing-content upgrades | Internal Linking; Content Freshness |
-| 03:00 | Research | Original Research; Private Company Intelligence |
-| 04:30 | Engineering and monetisation | Technical SEO; UX & Conversion; Revenue Optimisation |
+| 00:15 | Discovery + existing-content upgrades | Search Console Growth; Content Gap; Internal Linking; Content Freshness |
+| 03:00 | Research + engineering | Original Research; Private Company Intelligence; Technical SEO; UX & Conversion; Revenue Optimisation |
 | 06:30 | Final editorial gate | Editor-in-Chief QA |
 | 08:00 | Morning report | Aggregate verified overnight outcomes only |
 
@@ -57,7 +55,7 @@ Scheduling does not imply completion by a clock time. Every group independently 
 ## Conflict handling
 
 - Group stage records are distinct files: `discovery.md`, `content.md`, `research.md`, `engineering.md`; QA writes `qa.md`. Report reads only.
-- Each stage checks for an existing PR for the same canonical URL and run date; if another worker owns it, annotate or defer instead of writing over it.
+- Each stage checks for an existing PR for the same canonical URL and run date; if another worker owns it, annotate or defer instead of writing over it. The 00:15 combined run must write both discovery.md and content.md; the 03:00 combined run must write research.md and engineering.md. Neither specialist run may merge.
 - Do not modify the existing news/company publishing schedules and don't reuse their quota.
 - If any stage is late or does not finish, QA and the report explicitly list it as pending.
-- Target throughput is zero-to-four quality PRs per night, not mandatory publishing. No-results nights are valid.
+- Target throughput is zero-to-two quality specialist PRs per night, not mandatory publishing. No-results nights are valid.
