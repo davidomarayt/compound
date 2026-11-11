@@ -38,7 +38,9 @@ def verify() -> None:
         photo = PUBLIC / photo_rel.lstrip("/")
         assert photo.is_file() and photo.stat().st_size > 50000, f"Missing approved photograph: {photo}"
         with Image.open(photo) as image:
-            assert image.format == "JPEG" and image.width >= 1000 and image.height >= 600
+            assert image.format == "JPEG" and image.width >= 1000 and image.height >= 600, (
+                f"Invalid pinned cover ({image.format}, {image.width}x{image.height}): {photo}"
+            )
             image.verify()
         assert f'src="{photo_rel}"' in html, f"Wrong cover: {url}"
         # The visible JPEG is not the social image: site/build.py generates
