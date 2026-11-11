@@ -2,7 +2,7 @@
 {% block head_title %}{{ company.name }} ({{ company.ticker }}) Stock — Chart, News &amp; Research | Compound{% endblock %}
 {% block meta %}<meta name="description" content="{{ company.name }} ({{ company.ticker }}) on {{ company.exchange }}: share-price chart, listing details, news and research from Compound."><meta property="og:title" content="{{ company.name }} Stock Research | Compound"><meta property="og:url" content="{{ site_url }}/stocks/{{ company.slug }}/">{% endblock %}
 {% block head %}<link rel="canonical" href="{{ site_url }}/stocks/{{ company.slug }}/">{% endblock %}
-{% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=10"><link rel="stylesheet" href="/static/company-watchlist.css?v=1"><script src="/static/tradingview-earnings.js?v=4" defer></script>{% endblock %}
+{% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=12"><link rel="stylesheet" href="/static/company-watchlist.css?v=1"><script src="/static/tradingview-earnings.js?v=4" defer></script>{% endblock %}
 {% block content %}
 <div class="earnings-hub stocks-company">
 <nav class="earnings-crumb" aria-label="Breadcrumb"><a href="/">Compound</a> / <a href="/stocks/">Stocks</a> / {{ company.ticker }}</nav>
@@ -16,6 +16,10 @@
 </div>
 {% if report %}{% include "_company_quarters.html" %}{% elif not release %}
 <section class="earnings-section" id="earnings-company-results"><div class="earnings-heading"><h2>Fiscal earnings and quarterly growth</h2><span>Awaiting a verified filing</span></div><p>Compound checks this company's official filings. International reporting formats require additional verification; no quarterly figures are invented and no separate quarterly articles are automatically published.</p></section>{% endif %}
+{# Watchlist pages get at most one slot after a verified report plus related coverage. #}
+{% if ads_allowed and report and (news or research) %}
+{% with slot=adsense.slots.stock_mid, name="stock-mid" %}{% include "_stock_inline_ad.html" %}{% endwith %}
+{% endif %}
 <section class="earnings-section" id="stocks-company-coverage"><div class="earnings-heading"><p class="eyebrow">ORIGINAL COVERAGE</p><h2>News &amp; analysis</h2><span>{{ news|length + research|length }} linked articles</span></div>
 {% if news or research %}<div class="earnings-cards">
 {% for article in news %}<article class="earnings-card"><p class="earnings-kicker">NEWS · <time datetime="{{ article.date.isoformat() }}">{{ article.date|long_date }}</time></p><h3><a href="{{ article.url }}">{{ article.title }}</a></h3><p>{{ article.summary }}</p><a class="earnings-read" href="{{ article.url }}">Read article →</a></article>{% endfor %}
