@@ -5,7 +5,7 @@
   "programme": "Irish evergreen guides",
   "edition": "evergreen",
   "idempotency_key": "2026-11-11:evergreen:health-insurance-ireland:renewal-comparison-update",
-  "status": "approved_pending_publication",
+  "status": "deployed_verified_live",
   "content_type": "substantial canonical evergreen update",
   "topic": "When does a cheaper health-insurance renewal actually save money?",
   "canonical_url": "https://compound.ie/wealth/health-insurance-ireland/",
@@ -13,10 +13,10 @@
   "draft_path": "monitoring/irish-finance-publications/2026-11-11-evergreen-review.md",
   "counts": {
     "new_guides_published": 0,
-    "existing_guides_updated_live": 0,
+    "existing_guides_updated_live": 1,
     "held_for_review": 0,
     "failed_deployments": 0,
-    "approved_pending_publication": 1
+    "approved_pending_publication": 0
   },
   "primary_sources": [
     "https://www.hia.ie/information/claims-and-excesses",
@@ -96,12 +96,21 @@
       {
         "sha": "0ed0601bfa9ecd2d101d2a580e46eb44c91f9648",
         "kind": "held draft and claim-check record; not publication"
+      },
+      {
+        "sha": "c8a9dcf59fe969108e0629cc97edae0e8e7a419e",
+        "kind": "approved guide update and scoped offline test fix; PR 109 head"
+      },
+      {
+        "sha": "129773cdc8114c4ca354e85157f19f16e48298fb",
+        "kind": "publication merge commit"
       }
     ],
-    "publication_commit": null,
+    "publication_commit": "129773cdc8114c4ca354e85157f19f16e48298fb",
     "unrelated_changes_published": false,
     "approval_resume_base": "d635cd9eea4a781730f32d4938650563e44f1148",
-    "topic_branch": "publish/health-insurance-approved-20261111"
+    "topic_branch": "publish/health-insurance-approved-20261111",
+    "publication_pr": "https://github.com/davidomarayt/compound/pull/109"
   },
   "publisher_policy": {
     "human_review_confirmed": true,
@@ -113,20 +122,27 @@
   "validation": {
     "claim_checks": "Detailed source-by-claim notes and worked arithmetic in draft record.",
     "arithmetic": "All three annual scenarios, three-night shortfall, capped outpatient reimbursement and incremental-benefit calculation passed standalone offline assertions.",
-    "canonical_and_links": "Existing guide, related calculator and related news URL each fetched HTTP 200 with correct canonical; confirms existing pages only.",
-    "photo": "Existing illustrative MART PRODUCTION/Pexels 7088483 source and Pexels licence checked; live social WebP fetched and visually inspected. Pinning and licence text proposed for eventual release.",
-    "independent_editorial_qa": "pending",
+    "canonical_and_links": "All six contextual internal URLs returned HTTP 200. Generated HTML has one H1, unchanged canonical, no duplicate IDs and no broken section anchors.",
+    "photo": "Pinned MART PRODUCTION/Pexels photo 7088483; attribution, original source and Pexels licence included. Built cover exists; actual 1200x675 OG/Twitter WebP visually inspected and both social tags point to it. No generated or fallback photo used.",
+    "independent_editorial_qa": "Publisher approval of submitted draft plus a separate post-implementation audit of evidence, calculations, redundancy, caveats, headings, metadata, primary links and source dates. Automated technical checks are not represented as human review; no independent second-agent or independent human fact-check is claimed.",
     "human_editorial_qa": "Publisher approved linked submitted draft; technical/source verification remains separate.",
-    "build": "not run: no content/template/asset changes are being published",
-    "changed_page_render_and_live_verification": "not applicable yet; held text is not served",
-    "ci": "Awaiting publication PR checks; no skip-ci on publication changes.",
+    "build": "Full local build passed: 275 articles, 704 tags, 29 pages, 57 tools. Image pipeline passed. Unrelated generated image metadata was excluded from the 3-file PR.",
+    "changed_page_render_and_live_verification": "PASS: production URL fetched HTTP 200 and contains approved renewal section, 11 November review date and worked figures. Live browser showed updated title, correctly laid-out comparison tables and loaded 3936px cover; page width equals viewport width at 1348px. OG and Twitter point to matching licensed 1200x675 WebP, fetched HTTP 200. Canonical and sitemap verified. Specific guide mobile screenshot not captured; representative CI mobile thresholds and production mobile-audit job passed.",
+    "ci": "Exact PR head c8a9dcf59fe969108e0629cc97edae0e8e7a419e passed test and performance jobs in run 43027670668, including existing representative mobile Lighthouse thresholds.",
     "external_paid_model_apis_invoked": false,
     "offline_tests": "274 passed and 2 subtests passed; entire pytest suite run with a temporary socket guard denying external connections. Targeted image/discovery/failure-recovery suite also passed 31 tests. Node calculator arithmetic regressions passed.",
-    "source_recheck": "HIA Q2 2026 primary release, 2025 market report, insurer register, waiting periods, LCR, cancellation and claims guidance; Revenue TRS caps/under-21 definition/employer BIK; CCPC comparison advice verified. Historical statistics retain their stated periods."
+    "source_recheck": "HIA Q2 2026 primary release, 2025 market report, insurer register, waiting periods, LCR, cancellation and claims guidance; Revenue TRS caps/under-21 definition/employer BIK; CCPC comparison advice verified. Historical statistics retain their stated periods.",
+    "local_browser_preview": "Unavailable: local browser launch failed under sandbox restrictions and shared browser could not reach the isolated localhost server. File URL access was rejected by browser policy; no bypass attempted. Generated HTML and assets were inspected offline; live-browser validation recorded separately.",
+    "disclosures_and_ads": "Hypothetical figures identified explicitly; personal-finance/medical disclaimer and source section preserved. Existing AdSense loader, GA4 consent mechanism and original publication date retained; social.enabled false.",
+    "production_workflow": "All five jobs passed: build, deploy, verify-live, verify-finance-discovery and mobile-audit."
   },
-  "deployment_status": "not_yet_deployed",
-  "updated_existing_pages": [],
-  "published_links": [],
+  "deployment_status": "confirmed_success",
+  "updated_existing_pages": [
+    "https://compound.ie/wealth/health-insurance-ireland/"
+  ],
+  "published_links": [
+    "https://compound.ie/wealth/health-insurance-ireland/"
+  ],
   "skipped": [
     {
       "item": "New standalone health-insurance renewal article",
@@ -134,10 +150,7 @@
     }
   ],
   "failures": [],
-  "resume_requirements": [
-    "Verify exact publication PR head, build, licensed image and local render.",
-    "Confirm deployment and fetch changed canonical and OG/Twitter assets before incrementing live update count."
-  ],
+  "resume_requirements": [],
   "pilot_final_run": false,
   "automation_schedule_changed": false,
   "approval": {
@@ -159,6 +172,93 @@
       "status": "approved_pending_publication",
       "date": "2026-11-11",
       "evidence": "User: Approved"
+    },
+    {
+      "status": "deployed_verified_live",
+      "at": "2026-11-11T13:34:43.977883+00:00",
+      "publication_commit": "129773cdc8114c4ca354e85157f19f16e48298fb",
+      "canonical_url": "https://compound.ie/wealth/health-insurance-ireland/",
+      "counts_as": "one existing-guide update; zero new guides"
     }
-  ]
+  ],
+  "warnings": [
+    {
+      "kind": "unrelated_workflow_failure",
+      "run_url": "https://github.com/davidomarayt/compound/actions/runs/43029358833",
+      "detail": "Morning-news live-URL verifier iterates held items from 2026-11-11.json and fails its URL assertion on a null canonical URL. The health-insurance guide is not in that morning ledger. No held morning item was published or counted, and verifier was not weakened."
+    },
+    {
+      "kind": "existing_auto_ads_ux",
+      "detail": "Live browser displayed a dismissible Google vignette when following an in-page section link and an anchor advert alongside the analytics-consent banner. Underlying guide and tables rendered correctly after dismissal. Existing ad configuration preserved; no claim that ad placement or revenue was optimised."
+    }
+  ],
+  "deployment": {
+    "run_id": 43029358914,
+    "url": "https://github.com/davidomarayt/compound/actions/runs/43029358914",
+    "head_sha": "129773cdc8114c4ca354e85157f19f16e48298fb",
+    "jobs": [
+      {
+        "name": "build",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "deploy",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "verify-live",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "verify-finance-discovery",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "mobile-audit",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ],
+    "confirmed_at": "2026-11-11T13:38:18.020Z"
+  },
+  "live_verification": {
+    "verified_at": "2026-11-11T13:34:43.977883+00:00",
+    "canonical_url": "https://compound.ie/wealth/health-insurance-ireland/",
+    "fetched_url": "https://compound.ie/wealth/health-insurance-ireland/",
+    "http_status": 200,
+    "html_sha256": "bf67577fb7ab4cb9a84db018b69b9c49ed55d11b3ffc8b72a89a3c2859886a7e",
+    "approved_text_live": true,
+    "single_h1": true,
+    "sitemap_present": true,
+    "images": [
+      {
+        "url": "https://compound.ie/static/discover/health-insurance-ireland-16x9.webp",
+        "http_status": 200,
+        "bytes": 39992,
+        "dimensions": [
+          1200,
+          675
+        ],
+        "sha256": "a79343e22b5f553be9fb6de493fe1689de3cf82967cc32240bb0569f047487a4"
+      },
+      {
+        "url": "https://compound.ie/static/images/evergreen/health-insurance-ireland.jpg",
+        "http_status": 200,
+        "bytes": 823210,
+        "dimensions": [
+          3936,
+          2624
+        ],
+        "sha256": "a3e7fb30e9146244eb7971571b2a79c33f188682ba9f79bf831af74acba3f49e"
+      }
+    ],
+    "og_twitter_match": true,
+    "ads_loader_preserved": true,
+    "analytics_consent_preserved": true,
+    "publication_commit": "129773cdc8114c4ca354e85157f19f16e48298fb"
+  }
 }
