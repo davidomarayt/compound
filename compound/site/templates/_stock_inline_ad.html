@@ -1,0 +1,7 @@
+{# Keep stock units opt-in, unambiguous, and restricted to already-ad-eligible pages. #}
+{% if ads_allowed and adsense.client and slot %}
+<aside class="stock-inline-ad" aria-label="Advertisement">
+  <p class="stock-inline-ad-label">Advertisement</p>
+  {% include "_ad.html" %}
+</aside>
+{% endif %}
