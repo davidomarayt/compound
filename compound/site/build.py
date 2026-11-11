@@ -301,6 +301,10 @@ class Article:
     canonical_path: str = ""
     seo_title: str = ""
     reviewed: date | None = None
+    # A dated human-editor approval is separate from the research-update date.
+    # Automated jobs must never populate these fields on the editor's behalf.
+    human_reviewed_by: str = ""
+    human_reviewed_at: str = ""
     related_tools: list[str] = field(default_factory=list)
 
     @property
@@ -576,6 +580,8 @@ def article_from_file(path: Path, *, include_drafts: bool = False) -> Article | 
         canonical_path=canonical_path,
         seo_title=str(meta.get("seo_title") or ""),
         reviewed=_as_date(meta["reviewed"]) if meta.get("reviewed") else None,
+        human_reviewed_by=str(meta.get("human_reviewed_by") or "").strip(),
+        human_reviewed_at=str(meta.get("human_reviewed_at") or "").strip(),
         related_tools=[str(t) for t in (meta.get("related_tools") or [])],
     )
 
@@ -946,8 +952,11 @@ def article_context(env: Environment, settings: Settings, article: Article, prev
     return dict(
         article=article,
         preview=preview,
-        # Article ad delivery follows publisher site configuration.
-        ads_allowed=True,
+        # Publisher approval must be real, not anticipated. Keep private-company
+        # automation unmonetized until a named editor records a completed review.
+        ads_allowed=("private-company" not in article.tags or bool(
+            article.human_reviewed_by and article.human_reviewed_at
+        )),
         series=series,
         article_body=body,
         article_toc=toc,
@@ -1425,7 +1434,7 @@ def build_site(settings: Settings) -> dict:
                    research=[a for a in stories if not is_news_article(a)],
                    checked=watchlist.get("checked", "not yet"),
                    has_coverage=bool(stories),
-                   ads_allowed=bool(stories)))
+                   ads_allowed=bool(stories) and all(a.human_reviewed_by and a.human_reviewed_at for a in stories)))
 
     for p in PILLARS:
         if p == "happiness":

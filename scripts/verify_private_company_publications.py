@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Verify private-company photo, source-link, byline and advert configuration."""
+"""Verify private-company covers, neutral bylines and real approval-based ad control."""
 from __future__ import annotations
 
 import json
-import os
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -18,7 +17,6 @@ PUBLIC = ROOT / "public"
 def verify() -> None:
     data = json.loads(LEDGER.read_text(encoding="utf-8"))
     sitemap = (PUBLIC / "sitemap.xml").read_text(encoding="utf-8")
-    audit_mode = os.environ.get("COMPOUND_AUDIT_MODE", "").lower() in {"1", "true", "yes"}
 
     for story in data["articles"]:
         url = story["canonical_url"]
@@ -32,11 +30,10 @@ def verify() -> None:
         assert 'By <a href="/editorial-policy/">Compound Research</a>' in html, url
         assert "AI-assisted" not in html and "awaiting human review" not in html, url
         assert "Every article is reviewed and approved before publication" not in html, url
-        if audit_mode:
-            assert "pagead2.googlesyndication.com" not in html, url
-        else:
-            assert "pagead2.googlesyndication.com" in html, f"Missing AdSense script: {url}"
-            assert "adsbygoogle" in html, f"Missing ad slot: {url}"
+        # This batch has no editor attestation; it must remain ad-free.
+        assert story["human_reviewed"] is False, url
+        assert "pagead2.googlesyndication.com" not in html, url
+        assert "adsbygoogle" not in html and "data-ad-client" not in html, url
 
         slug = Path(story["article_path"]).stem
         photo_rel = f"/static/images/evergreen/{slug}.jpg"
@@ -73,14 +70,12 @@ def verify() -> None:
         hub = hub_path.read_text(encoding="utf-8")
         assert f'href="{parsed.path}"' in hub, f"Company hub does not link article: {url}"
         assert f'href="/companies/{story["slug"]}/"' in html, f"Article lacks hub link: {url}"
-        if audit_mode:
-            assert "pagead2.googlesyndication.com" not in hub
-        else:
-            assert "pagead2.googlesyndication.com" in hub, f"Missing AdSense on covered hub: {story['slug']}"
+        assert "pagead2.googlesyndication.com" not in hub
+        assert "adsbygoogle" not in hub and "data-ad-client" not in hub
         assert story["profile_url"] in sitemap
-        print(f"PASS: {story['company']} covers, profile and adverts (audit mode: {audit_mode})")
+        print(f"PASS: {story['company']} cover, profile and no ads before human review")
 
-    print("PASS: all three private-company stories meet media and ad-configuration checks")
+    print("PASS: all three private-company stories meet image, neutral-byline and editorial-approval gates")
 
 
 if __name__ == "__main__":

@@ -4,11 +4,11 @@
   "run_type": "private_company_daily",
   "target_new_articles": 3,
   "confirmed_live_new_articles": 0,
-  "editorial_requirement": "Quality/source checks remain mandatory; publisher requests advertising on private-company research",
+  "editorial_requirement": "Human editor must review actual article content and record per-article approval before that page carries Google-served ads",
   "production_branch": "claude/clever-babbage-uibieq",
   "work_branch": "automation/private-company-2026-11-11",
   "status": "prepared_pending_ci_photo_and_ads_verification",
-  "manual_review_status": "not_human_reviewed",
+  "manual_review_status": "awaiting_actual_editor_review",
   "publication_cutoff": "08:00 Europe/Dublin target; never imply completion without live fetch",
   "duplication_checks": {
     "editorial_index_last_updated": "2026-11-10",
@@ -17,7 +17,7 @@
     "existing_databricks_story": "none found in content inventory",
     "existing_openai_story": "none found in content inventory"
   },
-  "ad_suppression": "Publisher override: do not suppress AdSense for unreviewed private-company pages",
+  "ad_suppression": "Private-company article and linked hub remain ad-free until editor approval is recorded with editor identity and date; neutral public byline is Compound Research",
   "articles": [
     {
       "company": "OpenAI",
@@ -42,7 +42,10 @@
       "local_image_verified": false,
       "ci_passed": false,
       "human_reviewed": false,
-      "ads_presence_verified": false
+      "ads_presence_verified": false,
+      "human_reviewed_by": null,
+      "human_reviewed_at": null,
+      "ads_suppression_required": true
     },
     {
       "company": "Anthropic",
@@ -67,7 +70,10 @@
       "local_image_verified": false,
       "ci_passed": false,
       "human_reviewed": false,
-      "ads_presence_verified": false
+      "ads_presence_verified": false,
+      "human_reviewed_by": null,
+      "human_reviewed_at": null,
+      "ads_suppression_required": true
     },
     {
       "company": "Databricks",
@@ -93,9 +99,12 @@
       "local_image_verified": false,
       "ci_passed": false,
       "human_reviewed": false,
-      "ads_presence_verified": false
+      "ads_presence_verified": false,
+      "human_reviewed_by": null,
+      "human_reviewed_at": null,
+      "ads_suppression_required": true
     }
   ],
   "updated_at_utc": "2026-11-11T07:00:00Z",
-  "google_adsense_policy_risk": "Google Publisher Policies prohibit Google-served ads on automatically generated content without manual review or curation; no human review confirmed."
+  "google_adsense_policy_risk": "Automated articles are not eligible for Google-served ads until genuine manual editorial review or curation; intention to review after publication does not equal completed review."
 }

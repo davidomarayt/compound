@@ -1,4 +1,4 @@
-"""Private-company stories use neutral attribution and configured adverts."""
+"""Private-company monetization requires genuine recorded human editorial approval."""
 import json
 from pathlib import Path
 
@@ -17,7 +17,7 @@ SLUGS = {
 }
 
 
-def test_private_company_articles_have_neutral_attribution_and_configured_ads(settings, monkeypatch):
+def test_private_company_articles_have_neutral_attribution_and_no_unreviewed_ads(settings, monkeypatch):
     # Real site settings enable an AdSense client; test the exact non-audit render.
     monkeypatch.delenv("COMPOUND_AUDIT_MODE", raising=False)
     (settings.content_dir / "site.yml").write_text("""
@@ -35,11 +35,11 @@ adsense:
         assert "private-company" in article.tags and "unreviewed-ai" not in article.tags
         assert f"company-{company}" in article.tags
         context = article_context(env, settings, article, False)
-        assert context["ads_allowed"] is True
+        assert context["ads_allowed"] is False
         html = env.get_template("article.html").render(**context, related=[], linked_tools=[])
-        assert "pagead2.googlesyndication.com" in html
-        assert "adsbygoogle" in html
-        assert 'data-ad-client="' in html
+        assert "pagead2.googlesyndication.com" not in html
+        assert "adsbygoogle" not in html
+        assert 'data-ad-client="' not in html
         assert 'By <a href="/editorial-policy/">Compound Research</a>' in html
         assert "AI-assisted" not in html and "awaiting human review" not in html
         assert "Every article is reviewed and approved before publication" not in html
@@ -70,10 +70,10 @@ def test_ads_default_unchanged_for_preexisting_reviewed_articles(settings, monke
     assert "pagead2.googlesyndication.com" in html
 
 
-def test_private_company_hub_retains_ads_on_covered_pages():
-    # Covered private-company profiles retain ad configuration.
+def test_private_company_hub_gates_ads_on_human_review():
+    # Linked unreviewed articles must not silently monetize the hub.
     build = (ROOT / "compound" / "site" / "build.py").read_text()
-    assert "ads_allowed=bool(stories)))" in build
+    assert "ads_allowed=bool(stories) and all(a.human_reviewed_by and a.human_reviewed_at for a in stories)))" in build
 
 
 def test_approved_pinned_photo_is_reencoded_as_a_real_jpeg(tmp_path):
@@ -93,3 +93,23 @@ def test_pinned_photo_rejects_small_source_instead_of_upscaling(tmp_path):
     Image.new("RGB", (500, 400), "white").save(cover, format="PNG")
     with pytest.raises(ValueError, match="too small"):
         normalise_pinned_photo(cover)
+
+
+def test_verified_manual_review_enables_private_company_ads(settings, monkeypatch):
+    """A dated, named editorial approval enables ad serving after an actual review."""
+    from dataclasses import replace
+
+    monkeypatch.delenv("COMPOUND_AUDIT_MODE", raising=False)
+    (settings.content_dir / "site.yml").write_text(
+        "adsense:\n  client: ca-pub-test-123\n  slots:\n    article_top: 111\n"
+    )
+    env = _env(settings)
+    source = article_from_file(ROOT / "content" / "wealth" /
+                               "openai-businesses-chatgpt-agent-commerce-trust-2026.md")
+    assert source is not None
+    reviewed = replace(source, human_reviewed_by="Editor", human_reviewed_at="2026-11-11T14:00:00Z")
+    context = article_context(env, settings, reviewed, False)
+    assert context["ads_allowed"] is True
+    html = env.get_template("article.html").render(**context, related=[], linked_tools=[])
+    assert "pagead2.googlesyndication.com" in html
+    assert "adsbygoogle" in html
