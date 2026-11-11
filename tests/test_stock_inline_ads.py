@@ -3,6 +3,8 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
 
+from compound.site.build import load_site_config
+
 TEMPLATES = Path(__file__).resolve().parents[1] / "compound" / "site" / "templates"
 
 
@@ -40,3 +42,11 @@ def test_stock_ads_stay_below_chart_and_require_substantive_coverage():
     assert watchlist.index("{{ tradingview_panel|safe }}") < watchlist.index('name="stock-mid"')
     assert "ads_allowed and report and (news or research)" in watchlist
     assert 'name="stock-lower"' not in watchlist
+
+
+def test_configured_stock_slot_uses_existing_adsense_client():
+    config = load_site_config(Path(__file__).resolve().parents[1] / "content")
+    assert config["adsense"]["client"] == "ca-pub-6115783809711785"
+    assert config["adsense"]["slots"]["stock_mid"] == "2138650464"
+    assert config["adsense"]["slots"]["stock_lower"] == ""
+    assert "pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" not in (TEMPLATES / "_stock_inline_ad.html").read_text()
