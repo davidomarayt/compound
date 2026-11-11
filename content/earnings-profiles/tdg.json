@@ -2,33 +2,33 @@
   "cik": 1260221,
   "company": "TransDigm Group",
   "latest": {
-    "accession": "0001260221-26-000053",
-    "filed": "2026-08-04",
-    "form": "10-Q",
-    "fp": "Q3",
+    "accession": "0001260221-26-000077",
+    "filed": "2026-11-10",
+    "form": "10-K",
+    "fp": "FY",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 9.39,
-        "prior_year": 8.47,
+        "current": 35.51,
+        "prior_year": 32.08,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 539000000,
-        "prior_year": 492000000,
+        "current": 2107000000,
+        "prior_year": 2074000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 2741000000,
-        "prior_year": 2237000000,
+        "current": 10557000000,
+        "prior_year": 8831000000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-27",
-    "source": "https://www.sec.gov/Archives/edgar/data/1260221/000126022126000053/tdg-20260627.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1260221/000126022126000077/tdg-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-27",
       "source": "https://www.sec.gov/Archives/edgar/data/1260221/000126022126000053/tdg-20260627.htm"
+    },
+    {
+      "accession": "0001260221-26-000077",
+      "filed": "2026-11-10",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 35.51,
+          "prior_year": 32.08,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2107000000,
+          "prior_year": 2074000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 10557000000,
+          "prior_year": 8831000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1260221/000126022126000077/tdg-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TDG",
-  "updated": "2026-10-15"
+  "updated": "2026-11-11"
 }
