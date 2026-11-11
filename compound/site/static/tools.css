@@ -576,3 +576,22 @@
   .tool-result strong{overflow-wrap:anywhere}
   .tool-more-links > a{min-width:0}
 }
+
+/* PIA calculator quick starts: restrained, accessible and scoped to the existing tool. */
+.tool-page[data-tool-name="pia-calculator"] .pia-quickstarts{margin:24px 0 4px;padding:17px 0 3px;border-top:1px solid var(--line)}
+.tool-page[data-tool-name="pia-calculator"] .pia-quickstarts-heading{margin:0 0 11px;font-size:.78rem;font-weight:750;letter-spacing:.04em;color:var(--ink)}
+.tool-page[data-tool-name="pia-calculator"] .pia-quickstarts-buttons{display:flex;gap:8px;flex-wrap:wrap}
+.tool-page[data-tool-name="pia-calculator"] .pia-quickstart{padding:9px 11px;border:1px solid var(--line-2);border-radius:5px;background:var(--paper);color:var(--ink);font-size:.78rem;line-height:1.4;text-align:left;font-weight:650}
+.tool-page[data-tool-name="pia-calculator"] .pia-quickstart:hover{background:var(--wealth-soft);border-color:var(--wealth)}
+.tool-page[data-tool-name="pia-calculator"] .pia-quickstart.is-active{background:var(--wealth-soft);border-color:var(--wealth);box-shadow:inset 0 0 0 1px var(--wealth)}
+.tool-page[data-tool-name="pia-calculator"] .pia-quickstart:focus-visible{outline:3px solid var(--wealth);outline-offset:3px}
+.tool-page[data-tool-name="pia-calculator"] .pia-quickstarts-note{margin:11px 0 0;font-size:.76rem;line-height:1.55;color:var(--ink-2)}
+.tool-page[data-tool-name="pia-calculator"] .pia-quickstarts-note a{text-decoration:underline;text-underline-offset:3px}
+.tool-page[data-tool-name="pia-calculator"] .pia-quickstarts-status{margin:6px 0 0;color:var(--wealth);font-size:.76rem}
+.tool-page[data-tool-name="pia-calculator"] .pia-quickstarts-status:empty{display:none}
+.tool-page[data-tool-name="pia-calculator"] #pia-calculator-estimate{scroll-margin-top:110px}
+.tool-page[data-tool-name="pia-calculator"] .pia-result-next{margin-top:24px;padding:20px 0 0;border-top:1px solid color-mix(in srgb,var(--wealth) 22%,var(--line))}
+.tool-page[data-tool-name="pia-calculator"] .pia-result-next p{margin:0 0 10px;font-size:.84rem;line-height:1.6}
+.tool-page[data-tool-name="pia-calculator"] .pia-result-next a{display:inline-block;margin:0 14px 8px 0;font-size:.82rem;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:620px){.tool-page[data-tool-name="pia-calculator"] .pia-quickstart{flex:1 1 calc(50% - 8px)}}
+@media print{.tool-page[data-tool-name="pia-calculator"] .pia-result-next,.tool-page[data-tool-name="pia-calculator"] .pia-quickstarts{display:none!important}}
