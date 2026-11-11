@@ -237,3 +237,9 @@ body.compound-tv-scroll-lock{overflow:hidden}
 .earnings-lens-card p{font:400 13px/1.6 system-ui,sans-serif;margin:0;color:#62575d;overflow-wrap:anywhere}
 @media(max-width:800px){.earnings-lens-grid{grid-template-columns:1fr}.earnings-lens-card{padding:17px}.earnings-lens-number{margin-bottom:7px}}
 @media(max-width:420px){.earnings-premium-compare{padding:14px 10px}.earnings-premium-bar-row{grid-template-columns:52px minmax(0,1fr) 70px;gap:7px}.earnings-premium-bar-row>strong{font-size:11px}.earnings-premium-metric-title{flex-wrap:wrap}.earnings-premium-analysis{padding:13px 12px}}
+
+/* Optional stock-profile ads: unobtrusive section dividers, never beside charts or controls. */
+.stocks-company .stock-inline-ad{margin:14px 0 8px;padding:22px 0 26px;border-top:1px solid #e3dadd;border-bottom:1px solid #e3dadd}
+.stocks-company .stock-inline-ad-label{margin:0 0 13px;font-size:10px;line-height:1.4;letter-spacing:.12em;text-transform:uppercase;color:#76696f}
+.stocks-company .stock-inline-ad .ad{margin:0;max-width:100%;overflow:hidden}
+@media(max-width:700px){.stocks-company .stock-inline-ad{margin:10px 0 4px;padding:18px 0 22px}}
