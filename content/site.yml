@@ -7,8 +7,8 @@
 adsense:
   client: "ca-pub-6115783809711785"
   slots:
-    article_top: ""      # under the standfirst, above the article body
-    article_bottom: ""   # after the article body
+    article_top: "2138650464"      # responsive display slot under article standfirst
+    article_bottom: "8512487125"   # responsive display slot after article body
     earnings_mid: ""    # optional AdSense display-unit ID: after earnings charts; blank = no fixed ad
     feed: ""             # on the pillar listing pages, after the list
     stock_mid: "2138650464"        # after company overview / investor analysis on substantial stock profiles
