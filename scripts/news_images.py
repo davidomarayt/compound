@@ -434,7 +434,10 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
             hero_rel = f"/static/images/evergreen/{slug}.jpg"
             photo_path = STATIC / hero_rel.removeprefix("/static/")
             download(pinned_image_url, photo_path)
-            normalise_pinned_photo(photo_path)
+            # Only this new, explicitly pinned unreviewed research batch requires
+            # canonical JPEG re-encoding; avoid changing older cover assets.
+            if "unreviewed-ai" in {str(tag).lower() for tag in meta.get("tags") or []}:
+                normalise_pinned_photo(photo_path)
             if "mag7-research" in {str(tag).lower() for tag in meta.get("tags") or []}:
                 with Image.open(STATIC / hero_rel.removeprefix("/static/")) as photo:
                     if photo.width < 1000 or photo.height < 600:
