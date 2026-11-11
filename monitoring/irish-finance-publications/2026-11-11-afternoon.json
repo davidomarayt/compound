@@ -1,0 +1,63 @@
+{
+  "run_date": "2026-11-11",
+  "timezone": "Europe/Dublin",
+  "edition": "afternoon",
+  "edition_key": "2026-11-11/afternoon",
+  "morning_search_cutoff": "2026-11-11T09:41:03+00:00",
+  "morning_ledger": "2026-11-11.json",
+  "publishing_branch": "claude/clever-babbage-uibieq",
+  "confirmed_publications": 0,
+  "new_articles": 0,
+  "canonical_updates": 0,
+  "held_for_review": 1,
+  "failed": 0,
+  "status": "held_for_review",
+  "articles": [
+    {
+      "topic": "October CPI at 4.3% and household housing-cost exposure",
+      "content_type": "news",
+      "action": "canonical_update",
+      "canonical_url": "https://compound.ie/news/personal-inflation-rate-ireland-households-2026/",
+      "primary_sources": [
+        "https://www.cso.ie/en/releasesandpublications/ep/p-cpi/consumerpriceindexoctober2026/",
+        "https://www.cso.ie/en/releasesandpublications/is/is-frmic/focusonrentandmortgageinterestcostsoctober2026/"
+      ],
+      "original_announcement_time": "2026-11-11T11:00:00+00:00",
+      "timestamp_evidence": "Both original CSO releases identify 11 November 2026 at 11am / 11:00 AM. Read original pages; searched for earlier release coverage.",
+      "distinct_thesis": "Update established household-inflation analysis with October results and explicit euro-budget calculations, preserving dated June household estimates.",
+      "draft_path": "monitoring/irish-finance-publications/2026-11-11-afternoon-review.md",
+      "draft_commit": "0049057b2ffb71a3a8ed7f0b2b031676d7557aa4",
+      "publication_commit": null,
+      "deployment_status": "not_deployed",
+      "human_reviewed_by": null,
+      "human_reviewed_at": null,
+      "claim_checks": {
+        "cpi": "4.3% annual, 0.7% monthly; September 4.1%; housing division 10.7%, transport 9.0% verified against CPI release.",
+        "housing": "Annual rents 7%, private 5.5%, local authority 12.7%, mortgage interest 10.8%; five-year 36% and 98.3%; contributions 0.44 and 0.32pp verified against original insight release.",
+        "calculations": "2500*.043=107.50; 107.50*12=1290;1500*.055=82.50;400*.108=43.20;0.44+0.32=0.76. Illustrative amounts, no rent entitlement or mortgage forecast inferred."
+      },
+      "release_gates": {
+        "sources": "passed",
+        "timing": "passed",
+        "duplication": "passed for canonical update",
+        "human_approval": "pending",
+        "ad_suppression": "Production canonical fetched HTTP 200, adsbygoogle present; article template contains blanket approval statement. Open PR #107 controls remain unmerged.",
+        "photography": "Existing banknote cover is generic. Licensed housing-specific cover and social verification pending.",
+        "build_and_render": "Not run for a site change; draft stored under monitoring only.",
+        "independent_editorial_release_qa": "pending"
+      }
+    }
+  ],
+  "overlap_checks": "Read AGENTS, both indexes, JSON inventory, existing inflation articles and past-14-day relevant posts. Checked Compound open PRs #107/#57/#43 and FairPath #4. Latest Compound site workflow 43054668009 succeeded. Rechecked shared ledger, open PRs and recent commits immediately before writing; no existing afternoon attempt.",
+  "skipped_candidates": [
+    {
+      "topic": "Public-sector strike suspension",
+      "reason": "Already known before today's morning cutoff and held in morning ledger; no verified materially new post-cutoff development selected."
+    },
+    {
+      "topic": "Child and family homelessness action plan",
+      "reason": "RTÉ 13:17 update is a lead. Original official announcement timestamp was not established, so no freshness claim or publication."
+    }
+  ],
+  "publication_policy": "No ads activated or review approval fabricated. Draft available for actual editor review. Release remains subject to licensed image, rendering and final quality checks."
+}
