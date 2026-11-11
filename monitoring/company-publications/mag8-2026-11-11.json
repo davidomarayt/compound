@@ -1,0 +1,76 @@
+{
+  "series": "mag8",
+  "date": "2026-11-11",
+  "company": "Meta Platforms, Inc.",
+  "ticker": "META",
+  "story_fingerprint": "efc5fb5c2f293a240af295df",
+  "fingerprint_input": "META|FY2026-Q3|restricted-cash-infrastructure-escrow",
+  "publication_kind": "canonical_update",
+  "status": "prepared",
+  "publication_state": "prepared",
+  "new_articles_published": 0,
+  "canonical_updates_published": 0,
+  "article_path": "content/wealth/meta-advertising-ai-spending-earnings.md",
+  "canonical_url": "https://compound.ie/wealth/meta-advertising-ai-spending-earnings/",
+  "article_sha256": "778b18ffaf14e01c36eaea8235ecbac8a30a678456f293d21ba0acf76d2dbcdc",
+  "story_thesis": "Reconcile available liquidity and restricted infrastructure escrow to explain funding flexibility without double-counting the $10.80bn escrow.",
+  "identity": {
+    "CIK": 1326801,
+    "form": "10-Q",
+    "accessions": [
+      "0001628280-26-066773",
+      "0001628280-26-050705"
+    ],
+    "fiscal_year": 2026,
+    "period_ends": [
+      "2026-09-30",
+      "2026-06-30"
+    ],
+    "units": "USD millions, point-in-time balances"
+  },
+  "sources": [
+    {
+      "title": "Q2 2026 Form 10-Q, restricted cash and balance-sheet reconciliation",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+    },
+    {
+      "title": "Q3 2026 Form 10-Q, future leases and contractual commitments",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm"
+    },
+    {
+      "title": "Q3 2026 results: SEC Form 8-K, Exhibit 99.1, 21 October 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066700/meta-09302026xexhibit991.htm"
+    }
+  ],
+  "duplicate_checks": [
+    "Read AGENTS, editorial index, content inventory and JSON, Meta source articles and past 14 days of dated content, Mag8 ledgers and legacy files. No November 11 Mag8 or legacy Mag7 publication. Latest eight series records cover all eight names, META least recently featured (Nov 2). No Nov 10 Mag8 ledger present.",
+    "Open PRs 43/57 unrelated infrastructure; PR107 OpenAI/Anthropic/Databricks model-commerce/sovereignty questions differ. Current Irish morning/afternoon ledgers hold pay and inflation updates. Evergreen publication is Irish personal finance. No current three-company morning publication found. Automation peek returned no detailed run state; repository PRs, branches, ledgers and live catalogue are available overlap evidence.",
+    "Existing Meta cash-flow article already owns the funding-flexibility question. Substantial canonical update chosen under November 11 gate. New-article target skipped to avoid a competing page. FairPath consumer nursing-home guides do not overlap this listed-company liquidity question."
+  ],
+  "evidence_table": [
+    "Q3 balance sheet: cash 11222 + securities 71227 = 82449; Q2 15462 + 74798 = 90260. Decline 7811/90260 = 8.6538%.",
+    "Q2 cash reconciliation: restricted current 702 + noncurrent 13107 =13809. Q3 597 +12535 =13132. Decline 677. Distinct from restricted CASH EQUIVALENTS alone, which total 12826 in Q3 Note 4.",
+    "Both Note 4 disclosures identify 10800 escrow, expected release 2028–2030 conditional on purchases. Kept point-in-time dates, no fresh event claim, no double subtraction from 82449.",
+    "Rechecked unchanged results against SEC earnings exhibit: sales 64601, operating income 12988, EPS 3.83, OCF 32.79bn, capex incl finance leases 34.91bn, non-GAAP FCF −2.12bn; legal charge 9.89bn and adjusted EPS 7.40. Impressions +10%, prices +14%. October guidance Q4 sales 73–76bn, annual capex 135–145bn. Class C planned January 2027 per October announcement, dates explicitly historical.",
+    "Q3 Note 10 supports previously published 355.73bn uncommenced lease obligations; start dates through 2036, terms >1 to 30 years."
+  ],
+  "image": {
+    "source": "https://unsplash.com/photos/smartphone-screen-displays-ai-app-icons-chatgpt-grok-meta-ai-gemini-tkkOCi1Wgx0",
+    "credit": "Salvador Rios / Unsplash / Unsplash License. Archival photograph published 8 September 2025; cropped.",
+    "license": "Unsplash License",
+    "changes": "Existing canonical photograph preserved; inspected 16:9, square and 4:3 crops. Published date is labelled as publication date; exact capture date is not claimed.",
+    "sha256": "e17c75b3cc5c24fe4b33fba9737319728a5d7520e474b759c018ba2dc3c51a87"
+  },
+  "editorial_qa": {
+    "automated_second_pass": "Recomputed all sums, compared filing balance-sheet and cash-flow tables, checked unchanged historical release claims, image licence/provenance, canonical intent, reading flow, links, SEO metadata and ad-free article rendering.",
+    "unresolved_material_claims": [],
+    "human_reviewed_by": null,
+    "human_reviewed_at": null,
+    "status": "pending_human_review",
+    "ads": "Must remain disabled on article and linked META profile pending actual editor approval. This is not a claim of AdSense compliance."
+  },
+  "validation": [
+    "45 offline financial/image/discovery tests passed.",
+    "New regression builds article plus linked company profile with configured ads and verifies Google ad script/slots absent, neutral attribution and no fabricated review note. Passed."
+  ]
+}
