@@ -2,7 +2,7 @@
 {% block head_title %}{% if release %}{{ company.name }} {{ release.period }} earnings | {{ company.symbol }}{% elif seo %}{{ seo.title }}{% else %}{% if report %}{{ company.name }} {{ report.latest_display }} Earnings | {{ company.symbol }}{% else %}{{ company.name }} Stock ({{ company.symbol }}) — Chart, Earnings &amp; News | Compound{% endif %}{% endif %}{% endblock %}
 {% block meta %}{% if release %}<meta name="description" content="{{ release.summary }}"><meta property="og:title" content="{{ company.name }} {{ release.period }} results">{% elif seo %}<meta name="description" content="{{ seo.description|e }}"><meta property="og:type" content="website"><meta property="og:title" content="{{ seo.headline|e }}"><meta property="og:description" content="{{ seo.description|e }}">{% else %}<meta name="description" content="{{ company.name }} ({{ company.symbol }}): price chart, SEC financial results, earnings history and related company news and research on Compound."><meta property="og:title" content="{{ company.name }} ({{ company.symbol }}) Stock | Compound">{% endif %}<meta property="og:url" content="{{ site_url }}/stocks/{{ company.symbol|lower }}/">{% endblock %}
 {% block head %}<link rel="canonical" href="{{ site_url }}/stocks/{{ company.symbol|lower }}/"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Compound","item":"{{ site_url }}/"},{"@type":"ListItem","position":2,"name":"Stocks","item":"{{ site_url }}/stocks/"},{"@type":"ListItem","position":3,"name":{{ company.name|tojson }},"item":"{{ site_url }}/stocks/{{ company.symbol|lower }}/"}]}</script>{% if seo %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":{{ seo.headline|tojson }},"description":{{ seo.description|tojson }},"url":"{{ site_url }}/stocks/{{ company.symbol|lower }}/","dateModified":{{ seo.modified|tojson }},"about":{"@type":"Corporation","name":{{ seo.name|tojson }},"tickerSymbol":{{ company.symbol|tojson }}},"citation":{{ seo.source|tojson }},"isPartOf":{"@type":"WebSite","name":"Compound","url":"{{ site_url }}/"}}</script>{% endif %}{% endblock %}
-{% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=11"><script src="/static/tradingview-earnings.js?v=3" defer></script>{% endblock %}
+{% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=12"><script src="/static/tradingview-earnings.js?v=3" defer></script>{% endblock %}
 {% block content %}
 <div class="earnings-hub stocks-company">
 <nav class="earnings-crumb" aria-label="Breadcrumb"><a href="/">Compound</a> / <a href="/stocks/">Stocks</a> / {{ company.symbol }}</nav>
@@ -67,11 +67,19 @@
   {% endfor %}</div>
 </section>
 {% endif %}
+{# Optional first in-content ad: after investor context, away from TradingView and navigation. #}
+{% if ads_allowed and report and (seo or earnings_analysis) %}
+{% with slot=adsense.slots.stock_mid, name="stock-mid" %}{% include "_stock_inline_ad.html" %}{% endwith %}
+{% endif %}
 {% if report %}{% include "_company_quarters.html" %}{% elif company.symbol == "VYLR" %}<section class="earnings-section" id="earnings-company-results"><h2>Company reporting calendar</h2><p>Vylor scheduled its third-quarter 2026 earnings release for 11 November 2026 after the US market close. <a href="https://www.vylor.com/en/investors/">Investor relations</a></p></section>{% elif not release %}
 <section class="earnings-section" id="earnings-company-results">
 <div class="earnings-heading"><h2>Fiscal earnings and quarterly growth</h2><span>Awaiting a verified SEC filing</span></div>
 <p>No standalone SEC quarterly results have passed verification yet. Compound will update this page when filing-backed figures become available rather than creating individual quarter articles.</p>
 </section>{% endif %}
+{# Optional second slot only on research-rich company profiles; no ad on thin entries. #}
+{% if ads_allowed and report and seo and (news or research) %}
+{% with slot=adsense.slots.stock_lower, name="stock-lower" %}{% include "_stock_inline_ad.html" %}{% endwith %}
+{% endif %}
 <section class="earnings-section" id="stocks-company-coverage" aria-labelledby="stocks-company-coverage-heading">
 <div class="earnings-heading"><p class="eyebrow">COMPOUND RESEARCH DESK</p><h2 id="stocks-company-coverage-heading">Company news &amp; research</h2><span>{{ news|length + research|length }} linked articles</span></div>
 {% if news or research %}
