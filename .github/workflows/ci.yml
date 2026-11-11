@@ -60,6 +60,8 @@ jobs:
           SITE_BASE_URL: https://compound.ie
           PREVIEW_BASE_URL: https://compound.ie
           COMPOUND_AUDIT_MODE: "1"
+      - name: Validate private-company article covers, social WebP metadata and unreviewed ad suppression
+        run: python scripts/verify_private_company_publications.py
       - name: Assert published electricity news routes exist
         run: |
           test -s public/news/no-energy-credit-budget-2027-electricity-bills-winter/index.html
