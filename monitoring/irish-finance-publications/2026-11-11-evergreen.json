@@ -5,8 +5,8 @@
   "programme": "Irish evergreen guides",
   "edition": "evergreen",
   "idempotency_key": "2026-11-11:evergreen:health-insurance-ireland:renewal-comparison-update",
-  "status": "held-for-review",
-  "content_type": "proposed substantial canonical evergreen update",
+  "status": "approved_pending_publication",
+  "content_type": "substantial canonical evergreen update",
   "topic": "When does a cheaper health-insurance renewal actually save money?",
   "canonical_url": "https://compound.ie/wealth/health-insurance-ireland/",
   "source_path": "content/wealth/health-insurance-ireland.md",
@@ -14,15 +14,19 @@
   "counts": {
     "new_guides_published": 0,
     "existing_guides_updated_live": 0,
-    "held_for_review": 1,
-    "failed_deployments": 0
+    "held_for_review": 0,
+    "failed_deployments": 0,
+    "approved_pending_publication": 1
   },
   "primary_sources": [
     "https://www.hia.ie/information/claims-and-excesses",
     "https://www.hia.ie/information/waiting-periods",
     "https://www.hia.ie/information/cancelling-and-switching",
     "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/health-and-age/medical-insurance-premiums/if-you-pay.aspx",
-    "https://www.ccpc.ie/manage-your-money/day-to-day-finances/insurance/health-insurance"
+    "https://www.ccpc.ie/manage-your-money/day-to-day-finances/insurance/health-insurance",
+    "https://www.hia.ie/sites/default/files/2026-09/Quarter%202%202026%20Market%20Bulletin%20PR.pdf",
+    "https://www.hia.ie/sites/default/files/2026-06/hia-market-report-2025.pdf",
+    "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/health-and-age/medical-insurance-premiums/trs.aspx"
   ],
   "sources_checked_date": "2026-11-11",
   "research_recorded_at": "2026-11-11T11:25:35+00:00",
@@ -95,13 +99,16 @@
       }
     ],
     "publication_commit": null,
-    "unrelated_changes_published": false
+    "unrelated_changes_published": false,
+    "approval_resume_base": "d635cd9eea4a781730f32d4938650563e44f1148",
+    "topic_branch": "publish/health-insurance-approved-20261111"
   },
   "publisher_policy": {
-    "human_review_confirmed": false,
+    "human_review_confirmed": true,
     "established_no_ads_route_verified": false,
     "evidence": "Live canonical HTTP 200 contains pagead2.googlesyndication.com/pagead/js/adsbygoogle.js; article render does not set a per-article ads_allowed flag. Proposed unreviewed-ai controls are in open PR #107, not on audited publishing head.",
-    "decision": "Hold substantial new copy outside content/. Automated arithmetic/source checks do not constitute manual review. Existing approved_by publish instruction is not proof of human review of this update."
+    "decision": "Specific submitted update approved by the human publisher. Existing ads preserved. No ad-free mechanism claimed or unrelated PR merged.",
+    "approval_evidence": "User replied Approved to linked held health-insurance update."
   },
   "validation": {
     "claim_checks": "Detailed source-by-claim notes and worked arithmetic in draft record.",
@@ -109,13 +116,15 @@
     "canonical_and_links": "Existing guide, related calculator and related news URL each fetched HTTP 200 with correct canonical; confirms existing pages only.",
     "photo": "Existing illustrative MART PRODUCTION/Pexels 7088483 source and Pexels licence checked; live social WebP fetched and visually inspected. Pinning and licence text proposed for eventual release.",
     "independent_editorial_qa": "pending",
-    "human_editorial_qa": "pending",
+    "human_editorial_qa": "Publisher approved linked submitted draft; technical/source verification remains separate.",
     "build": "not run: no content/template/asset changes are being published",
     "changed_page_render_and_live_verification": "not applicable yet; held text is not served",
-    "ci": "Monitoring-only record commits use skip-ci to avoid invoking the repository's broad suite or network/image build for non-publishing documentation; no publishing checks were weakened or declared passed.",
-    "external_paid_model_apis_invoked": false
+    "ci": "Awaiting publication PR checks; no skip-ci on publication changes.",
+    "external_paid_model_apis_invoked": false,
+    "offline_tests": "274 passed and 2 subtests passed; entire pytest suite run with a temporary socket guard denying external connections. Targeted image/discovery/failure-recovery suite also passed 31 tests. Node calculator arithmetic regressions passed.",
+    "source_recheck": "HIA Q2 2026 primary release, 2025 market report, insurer register, waiting periods, LCR, cancellation and claims guidance; Revenue TRS caps/under-21 definition/employer BIK; CCPC comparison advice verified. Historical statistics retain their stated periods."
   },
-  "deployment_status": "not_attempted_held_for_review",
+  "deployment_status": "not_yet_deployed",
   "updated_existing_pages": [],
   "published_links": [],
   "skipped": [
@@ -126,12 +135,30 @@
   ],
   "failures": [],
   "resume_requirements": [
-    "Resume this same ledger and draft; do not count it again or create another instalment for this date.",
-    "Obtain actual human curation or verify an established no-ads pending-review process.",
-    "Recheck unchanged time-sensitive guide claims before refreshing whole-guide review date.",
-    "Run independent editorial QA and relevant offline/site build, image and rendering checks.",
+    "Verify exact publication PR head, build, licensed image and local render.",
     "Confirm deployment and fetch changed canonical and OG/Twitter assets before incrementing live update count."
   ],
   "pilot_final_run": false,
-  "automation_schedule_changed": false
+  "automation_schedule_changed": false,
+  "approval": {
+    "received_on": "2026-11-11",
+    "timezone": "Europe/Dublin",
+    "approver": "David O’Mara",
+    "user_message": "Approved",
+    "scope": "Health-insurance renewal-comparison draft linked in the immediately preceding response. No approval inferred for other held articles.",
+    "interpretation": "Publisher editorial approval/curation of submitted draft; no claim that the publisher independently verified each source or calculation."
+  },
+  "history": [
+    {
+      "status": "held-for-review",
+      "date": "2026-11-11",
+      "draft_commit": "0ed0601bfa9ecd2d101d2a580e46eb44c91f9648",
+      "ledger_commit": "d635cd9eea4a781730f32d4938650563e44f1148"
+    },
+    {
+      "status": "approved_pending_publication",
+      "date": "2026-11-11",
+      "evidence": "User: Approved"
+    }
+  ]
 }
