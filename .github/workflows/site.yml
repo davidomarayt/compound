@@ -5,7 +5,7 @@ name: site
 on:
   push:
     branches: ["claude/clever-babbage-uibieq"]
-    paths: ["content/**", "compound/site/**", "scripts/news_images.py", "scripts/render_editorial_heroes.py", "scripts/verify_solar_mobile.py", "scripts/verify_finance_discovery.py", "tests/test_verify_finance_discovery.py", ".github/workflows/site.yml"]
+    paths: ["content/**", "compound/site/**", "scripts/news_images.py", "scripts/normalise_private_company_images.py", "scripts/render_editorial_heroes.py", "scripts/verify_solar_mobile.py", "scripts/verify_finance_discovery.py", "tests/test_verify_finance_discovery.py", ".github/workflows/site.yml"]
   workflow_dispatch:
 permissions:
   contents: read
@@ -38,6 +38,8 @@ jobs:
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: python scripts/news_images.py
+      - name: Standardise approved private-company archival covers
+        run: python scripts/normalise_private_company_images.py
       - name: Validate all processed article metadata before building
         run: python -c "from pathlib import Path; from compound.site.build import load_articles; print('Validated', len(load_articles(Path('content'))), 'articles')"
       - name: Verify approved TV licence stock photograph
