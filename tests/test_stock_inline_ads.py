@@ -48,5 +48,5 @@ def test_configured_stock_slot_uses_existing_adsense_client():
     config = load_site_config(Path(__file__).resolve().parents[1] / "content")
     assert config["adsense"]["client"] == "ca-pub-6115783809711785"
     assert config["adsense"]["slots"]["stock_mid"] == "2138650464"
-    assert config["adsense"]["slots"]["stock_lower"] == ""
+    assert config["adsense"]["slots"]["stock_lower"] == "8512487125"
     assert "pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" not in (TEMPLATES / "_stock_inline_ad.html").read_text()
