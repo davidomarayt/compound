@@ -4,7 +4,7 @@
 {% block head %}
 <link rel="canonical" href="{{ site_url }}{{ tool.url }}">
 <meta property="og:type" content="website"><meta property="og:title" content="{{ tool.seo_title or tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="/static/tools.css?v=20261012-mobile">{% if tool.slug == "mortgage-calculator" %}<script defer src="/static/mortgage-calculator.js?v=20260927-performance1"></script>{% else %}<script defer src="/static/tools.js?v=20260928-glp1"></script>{% endif %}
+<link rel="stylesheet" href="/static/tools.css?v=20261111-pia-quickstart">{% if tool.slug == "mortgage-calculator" %}<script defer src="/static/mortgage-calculator.js?v=20260927-performance1"></script>{% else %}<script defer src="/static/tools.js?v=20261111-pia-quickstart"></script>{% endif %}
 <script type="application/ld+json">{{ tool_jsonld|safe }}</script>
 {% endblock %}
 {% block content %}
@@ -32,6 +32,18 @@
       </div>
       <p class="tool-mode-note" data-tool-mode-note data-basic-note="{{ tool.basic_note or 'Start with the core figures. Switch to Advanced for optional detail.' }}" data-advanced-note="{{ tool.advanced_note or 'Advanced mode: add optional detail for a more complete scenario.' }}">{{ tool.basic_note or 'Start with the core figures. Switch to Advanced for optional detail.' }}</p>
       {% endif %}
+      {% if tool.slug == "pia-calculator" %}
+      <div class="pia-quickstarts" aria-label="PIA example contribution plans">
+        <p class="pia-quickstarts-heading">Try an example plan</p>
+        <div class="pia-quickstarts-buttons" role="group" aria-label="Illustrative PIA contribution scenarios">
+          <button type="button" class="pia-quickstart" data-pia-preset="6k-10y" data-contribution="6000" data-years="10" aria-pressed="false">€6,000/year · 10 years</button>
+          <button type="button" class="pia-quickstart" data-pia-preset="12k-10y" data-contribution="12000" data-years="10" aria-pressed="false">€12,000/year · 10 years</button>
+          <button type="button" class="pia-quickstart" data-pia-preset="12k-20y" data-contribution="12000" data-years="20" aria-pressed="false">€12,000/year · 20 years</button>
+        </div>
+        <p class="pia-quickstarts-note">Examples start at €0 and assume 6% annual returns, not a forecast. Advanced fee and inflation settings stay as entered. <a href="#pia-calculator-estimate">See results ↓</a></p>
+        <p class="pia-quickstarts-status" data-pia-preset-status role="status" aria-live="polite"></p>
+      </div>
+      {% endif %}
       <div class="tool-fields">
       {% for field in tool.fields %}
         {% if field.section_start %}<div class="tool-field-section" data-section-for="{{ field.id }}"{% if field.show_if or field.advanced %} hidden{% endif %}><span>{{ field.section_start }}</span></div>{% endif %}
@@ -57,7 +69,7 @@
       <p class="tool-error" data-tool-error role="status"></p>
       <div class="tool-actions"><button class="button button-dark" type="submit">Calculate</button><button type="reset" class="button button-light">Reset</button></div>
     </form>
-    <section class="tool-results" aria-live="polite">
+    <section class="tool-results"{% if tool.slug == "pia-calculator" %} id="pia-calculator-estimate"{% endif %} aria-live="polite">
       <p class="eyebrow">YOUR ESTIMATE</p><h2>At a glance</h2>
       <div class="tool-result-grid">
         {% for result in tool.results %}{% if result.id == tool.primary_result %}<div class="tool-result tool-result-primary"{% if result.advanced %} data-advanced-result hidden{% endif %}><span>{{ result.label }}</span><strong data-result="{{ result.id }}">—</strong></div>{% endif %}{% endfor %}
@@ -87,6 +99,13 @@
         </div>
         <div class="tool-compare-table" data-tool-compare-table></div>
       </section>
+      {% if tool.slug == "pia-calculator" %}
+      <aside class="pia-result-next" aria-label="What to do after modelling a PIA">
+        <p><strong>Considering a PIA for 2027?</strong> This is a planning illustration, not a live account quote. Compare provider announcements and learn what costs are still unknown.</p>
+        <a href="/pia/providers/">Compare announced PIA providers →</a>
+        <a href="/pia/vs-pension/">PIA versus pension →</a>
+      </aside>
+      {% endif %}
     </section>
   </section>
   <section class="tool-chart-panel" data-tool-chart hidden aria-live="polite">
