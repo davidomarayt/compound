@@ -2,33 +2,33 @@
   "cik": 1404912,
   "company": "KKR & Co.",
   "latest": {
-    "accession": "0001404912-26-000027",
-    "filed": "2026-08-06",
+    "accession": "0001404912-26-000034",
+    "filed": "2026-11-09",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.7,
-        "prior_year": 0.5,
-        "tag": "us-gaap:EarningsPerShareDiluted",
+        "current": 1.19,
+        "prior_year": 0.9,
+        "tag": "SEC reported; reviewed statement diluted_eps",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 700482000,
-        "prior_year": 510123000,
-        "tag": "us-gaap:NetIncomeLoss",
+        "current": 1161606000,
+        "prior_year": 900357000,
+        "tag": "SEC reported; reviewed statement income attributable to parent",
         "unit": "USD"
       },
       "revenue": {
-        "current": 5725891000,
-        "prior_year": 5088843000,
-        "tag": "us-gaap:Revenues",
+        "current": 4563679000,
+        "prior_year": 5525975000,
+        "tag": "SEC reported; reviewed statement revenue",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1404912/000140491226000027/kkr-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1404912/000140491226000034/kkr-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1404912/000140491226000027/kkr-20260630.htm"
+    },
+    {
+      "accession": "0001404912-26-000034",
+      "filed": "2026-11-09",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.19,
+          "prior_year": 0.9,
+          "tag": "SEC reported; reviewed statement diluted_eps",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1161606000,
+          "prior_year": 900357000,
+          "tag": "SEC reported; reviewed statement income attributable to parent",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 4563679000,
+          "prior_year": 5525975000,
+          "tag": "SEC reported; reviewed statement revenue",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1404912/000140491226000034/kkr-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "KKR",
-  "updated": "2026-11-07"
+  "updated": "2026-11-11"
 }

@@ -2,33 +2,33 @@
   "cik": 2041610,
   "company": "Skydance Corporation",
   "latest": {
-    "accession": "0002041610-26-000054",
-    "filed": "2026-08-04",
+    "accession": "0002041610-26-000067",
+    "filed": "2026-11-09",
     "form": "10-Q",
-    "fp": "Q2",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.04,
-        "prior_year": 0.08,
-        "tag": "EarningsPerShareDiluted",
+        "current": 0.06,
+        "prior_year": null,
+        "tag": "SEC reported; reviewed statement diluted_eps",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 41000000,
-        "prior_year": 57000000,
-        "tag": "NetIncomeLoss",
+        "current": 73000000,
+        "prior_year": null,
+        "tag": "SEC reported; reviewed statement income attributable to parent",
         "unit": "USD"
       },
       "revenue": {
-        "current": 6913000000,
-        "prior_year": 6849000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 7025000000,
+        "prior_year": null,
+        "tag": "SEC reported; reviewed statement revenue",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/2041610/000204161026000054/psky-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/2041610/000204161026000067/skyd-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/2041610/000204161026000054/psky-20260630.htm"
+    },
+    {
+      "accession": "0002041610-26-000067",
+      "filed": "2026-11-09",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.06,
+          "prior_year": null,
+          "tag": "SEC reported; reviewed statement diluted_eps",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 73000000,
+          "prior_year": null,
+          "tag": "SEC reported; reviewed statement income attributable to parent",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 7025000000,
+          "prior_year": null,
+          "tag": "SEC reported; reviewed statement revenue",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/2041610/000204161026000067/skyd-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "SKYD",
-  "updated": "2026-10-15"
+  "updated": "2026-11-11"
 }

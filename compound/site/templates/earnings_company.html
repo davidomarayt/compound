@@ -71,7 +71,7 @@
 {% if ads_allowed and report and (seo or earnings_analysis) %}
 {% with slot=adsense.slots.stock_mid, name="stock-mid" %}{% include "_stock_inline_ad.html" %}{% endwith %}
 {% endif %}
-{% if report %}{% include "_company_quarters.html" %}{% elif company.symbol == "VYLR" %}<section class="earnings-section" id="earnings-company-results"><h2>Company reporting calendar</h2><p>Vylor scheduled its third-quarter 2026 earnings release for 11 November 2026 after the US market close. <a href="https://www.vylor.com/en/investors/">Investor relations</a></p></section>{% elif not release %}
+{% if report %}{% include "_company_quarters.html" %}{% elif company.symbol == "VYLR" and not release %}<section class="earnings-section" id="earnings-company-results"><h2>Company reporting calendar</h2><p>Vylor scheduled its third-quarter 2026 earnings release for 11 November 2026 after the US market close. <a href="https://www.vylor.com/en/investors/">Investor relations</a></p></section>{% elif not release %}
 <section class="earnings-section" id="earnings-company-results">
 <div class="earnings-heading"><h2>Fiscal earnings and quarterly growth</h2><span>Awaiting a verified SEC filing</span></div>
 <p>No standalone SEC quarterly results have passed verification yet. Compound will update this page when filing-backed figures become available rather than creating individual quarter articles.</p>
