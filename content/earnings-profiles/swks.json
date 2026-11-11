@@ -2,33 +2,33 @@
   "cik": 4127,
   "company": "Skyworks Solutions",
   "latest": {
-    "accession": "0000004127-26-000049",
-    "filed": "2026-07-28",
-    "form": "10-Q",
-    "fp": "Q3",
+    "accession": "0000004127-26-000055",
+    "filed": "2026-11-10",
+    "form": "10-K",
+    "fp": "FY",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.22,
-        "prior_year": 0.7,
+        "current": 1.14,
+        "prior_year": 3.08,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 33900000,
-        "prior_year": 105000000,
+        "current": 172100000,
+        "prior_year": 477100000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 934800000,
-        "prior_year": 965000000,
+        "current": 3959600000,
+        "prior_year": 4086900000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-03",
-    "source": "https://www.sec.gov/Archives/edgar/data/4127/000000412726000049/swks-20260703.htm"
+    "period_end": "2026-10-02",
+    "source": "https://www.sec.gov/Archives/edgar/data/4127/000000412726000055/swks-20261002.htm"
   },
   "periods": [
     {
@@ -117,9 +117,38 @@
       },
       "period_end": "2026-07-03",
       "source": "https://www.sec.gov/Archives/edgar/data/4127/000000412726000049/swks-20260703.htm"
+    },
+    {
+      "accession": "0000004127-26-000055",
+      "filed": "2026-11-10",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.14,
+          "prior_year": 3.08,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 172100000,
+          "prior_year": 477100000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3959600000,
+          "prior_year": 4086900000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-02",
+      "source": "https://www.sec.gov/Archives/edgar/data/4127/000000412726000055/swks-20261002.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "SWKS",
-  "updated": "2026-10-15"
+  "updated": "2026-11-11"
 }

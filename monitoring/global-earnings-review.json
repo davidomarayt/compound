@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-10",
+  "checked": "2026-11-11",
   "companies_checked": 10,
   "companies": {
     "spcx": {
@@ -205,7 +205,7 @@
       "https://investor.tsmc.com/english/quarterly-results/2026/q3"
     ]
   },
-  "new_review_candidates": 2,
+  "new_review_candidates": 0,
   "pending_review": [
     {
       "id": "sec:1046179:0001046179-26-000797",
