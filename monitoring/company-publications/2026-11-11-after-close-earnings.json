@@ -66,6 +66,33 @@
       "source": "https://s25.q4cdn.com/906589015/files/content_files/3Q_2026_Earnings_News_Release_Vylor_FINAL-with-schedules.pdf",
       "period": "Q3 FY2026 pro forma",
       "verification": "Issuer results PDF inspected. Preserve explicit pro forma and non-GAAP distinctions; no historical GAAP table fabricated."
+    },
+    "rvty": {
+      "canonical_url": "https://compound.ie/stocks/rvty/",
+      "source": "https://www.sec.gov/Archives/edgar/data/31791/000003179126000034/revv-20261004.htm",
+      "period": "Q3 FY2026",
+      "metrics": {
+        "revenue": {
+          "current": 728899000,
+          "prior_year": 698949000,
+          "unit": "USD",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax"
+        },
+        "net_income": {
+          "current": 62299000,
+          "prior_year": 46652000,
+          "unit": "USD",
+          "tag": "NetIncomeLoss"
+        },
+        "diluted_eps": {
+          "current": 0.56,
+          "prior_year": 0.4,
+          "unit": "USD/shares",
+          "tag": "EarningsPerShareDiluted"
+        }
+      },
+      "basis": "US GAAP. Net income includes discontinued operations; diluted EPS uses net income.",
+      "verification": "SEC consolidated income statement inspected. Three months ended 4 October 2026 compared with 28 September 2025. Amounts in thousands converted to dollars, EPS USD/share."
     }
   },
   "checks": {
@@ -73,7 +100,22 @@
     "history": "Prior fiscal rows preserved.",
     "concurrency": "No active ingestion or production deployment at initial read. Recheck before merge.",
     "tests": "46 targeted offline tests passed",
-    "build": "pending",
-    "scope": "Three datasets, stale Vylor calendar conditional, audit only"
+    "build": "Full local site build passed before RVTY addition; repeat pending",
+    "scope": "Four earnings datasets, stale Vylor calendar conditional, audit only"
+  },
+  "coverage": {
+    "sec_issuers_checked": 505,
+    "scan_since_inclusive": "2026-11-09",
+    "sec_fetch_failures": 0,
+    "live_pages_fetched": 505,
+    "manual_companies_reviewed": 4,
+    "foreign_monitor": "10 issuers checked in dry run; 0 new discovery items; 32 discovery items remain pending",
+    "amendments": "FOXA 8-K/A inspected; acquisition pro forma financials, no correction to standalone quarterly earnings",
+    "unresolved": {
+      "BRK-B": "Current release summary exists. Supported dashboard rejects comparable diluted EPS; detailed table left pending.",
+      "VMRK": "Current release summary exists. Supported dashboard rejects comparable revenue; detailed table left pending."
+    },
+    "queue_items": 76,
+    "limitations": "SEC scan covers registered universe; pending review and foreign discovery items are not all independently financially reconciled."
   }
 }
