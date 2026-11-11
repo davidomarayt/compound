@@ -8,6 +8,8 @@ from urllib.parse import urlparse
 
 from PIL import Image
 
+from compound.site.build import article_from_file
+
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "monitoring/private-company-publications/2026-11-11.json"
@@ -30,10 +32,20 @@ def verify() -> None:
         assert 'By <a href="/editorial-policy/">Compound Research</a>' in html, url
         assert "AI-assisted" not in html and "awaiting human review" not in html, url
         assert "Every article is reviewed and approved before publication" not in html, url
-        # This batch has no editor attestation; it must remain ad-free.
-        assert story["human_reviewed"] is False, url
-        assert "pagead2.googlesyndication.com" not in html, url
-        assert "adsbygoogle" not in html and "data-ad-client" not in html, url
+        # A future real editorial approval must be reflected in BOTH the
+        # article's front matter and the idempotent audit ledger before ads load.
+        article = article_from_file(ROOT / story["article_path"])
+        assert article is not None, story["article_path"]
+        approved = bool(article.human_reviewed_by and article.human_reviewed_at)
+        assert story["human_reviewed"] is approved, f"Review ledger mismatch: {url}"
+        if approved:
+            assert story.get("human_reviewed_by") == article.human_reviewed_by, url
+            assert story.get("human_reviewed_at") == article.human_reviewed_at, url
+            assert "pagead2.googlesyndication.com" in html, f"Expected approved ads: {url}"
+            assert "adsbygoogle" in html, f"Expected approved ad slots: {url}"
+        else:
+            assert "pagead2.googlesyndication.com" not in html, url
+            assert "adsbygoogle" not in html and "data-ad-client" not in html, url
 
         slug = Path(story["article_path"]).stem
         photo_rel = f"/static/images/evergreen/{slug}.jpg"
@@ -70,10 +82,11 @@ def verify() -> None:
         hub = hub_path.read_text(encoding="utf-8")
         assert f'href="{parsed.path}"' in hub, f"Company hub does not link article: {url}"
         assert f'href="/companies/{story["slug"]}/"' in html, f"Article lacks hub link: {url}"
-        assert "pagead2.googlesyndication.com" not in hub
-        assert "adsbygoogle" not in hub and "data-ad-client" not in hub
+        if not approved:
+            assert "pagead2.googlesyndication.com" not in hub, url
+            assert "adsbygoogle" not in hub and "data-ad-client" not in hub, url
         assert story["profile_url"] in sitemap
-        print(f"PASS: {story['company']} cover, profile and no ads before human review")
+        print(f"PASS: {story['company']} cover, profile and ads after human review only (approved={approved})")
 
     print("PASS: all three private-company stories meet image, neutral-byline and editorial-approval gates")
 
