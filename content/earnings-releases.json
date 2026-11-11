@@ -208,5 +208,12 @@
     "published": "2026-11-03",
     "source": "https://www.sec.gov/Archives/edgar/data/1000697/000119312526444400/d22941dex991.htm",
     "summary": "Third-quarter revenue reached $1.767 billion. Diluted EPS was $0.82."
+  },
+  "vylr": {
+    "ended": "2026-09-30",
+    "period": "Q3 FY2026 pro forma results",
+    "published": "2026-11-11",
+    "source": "https://s25.q4cdn.com/906589015/files/content_files/3Q_2026_Earnings_News_Release_Vylor_FINAL-with-schedules.pdf",
+    "summary": "Vylor reported pro forma third-quarter net sales of $938 million and a pro forma loss from continuing operations after tax of $480 million, or $0.72 per share. The company presents these on a pro forma basis following its separation. Adjusted pro forma operating EPS was a loss of $0.42, a separate non-GAAP measure. These pro forma figures are not included as historical GAAP quarterly table entries."
   }
 }
