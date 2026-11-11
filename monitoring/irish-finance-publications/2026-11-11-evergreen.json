@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "run_date": "2026-11-11",
+  "timezone": "Europe/Dublin",
+  "programme": "Irish evergreen guides",
+  "edition": "evergreen",
+  "idempotency_key": "2026-11-11:evergreen:health-insurance-ireland:renewal-comparison-update",
+  "status": "held-for-review",
+  "content_type": "proposed substantial canonical evergreen update",
+  "topic": "When does a cheaper health-insurance renewal actually save money?",
+  "canonical_url": "https://compound.ie/wealth/health-insurance-ireland/",
+  "source_path": "content/wealth/health-insurance-ireland.md",
+  "draft_path": "monitoring/irish-finance-publications/2026-11-11-evergreen-review.md",
+  "counts": {
+    "new_guides_published": 0,
+    "existing_guides_updated_live": 0,
+    "held_for_review": 1,
+    "failed_deployments": 0
+  },
+  "primary_sources": [
+    "https://www.hia.ie/information/claims-and-excesses",
+    "https://www.hia.ie/information/waiting-periods",
+    "https://www.hia.ie/information/cancelling-and-switching",
+    "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/health-and-age/medical-insurance-premiums/if-you-pay.aspx",
+    "https://www.ccpc.ie/manage-your-money/day-to-day-finances/insurance/health-insurance"
+  ],
+  "sources_checked_date": "2026-11-11",
+  "research_recorded_at": "2026-11-11T11:25:35+00:00",
+  "selection_evidence": {
+    "source": "User-supplied Search Console exports created 10 November 2026, 02:40 UTC",
+    "files": [
+      "Pages(20261110-024045).csv",
+      "Queries(20261110-024045).csv",
+      "Filters(20261110-024045).csv"
+    ],
+    "filter": "Web (text-based), Last 3 months; exact start/end dates not provided by filter file",
+    "page": {
+      "url": "https://compound.ie/wealth/health-insurance-ireland/",
+      "clicks": 9,
+      "impressions": 4563,
+      "ctr": "0.2%",
+      "average_position": 28.85
+    },
+    "related_calculator": {
+      "clicks": 1,
+      "impressions": 985
+    },
+    "property_query_examples": [
+      {
+        "query": "health insurance comparison ireland",
+        "clicks": 0,
+        "impressions": 160
+      },
+      {
+        "query": "compare health insurance ireland",
+        "clicks": 0,
+        "impressions": 112
+      }
+    ],
+    "limitations": "Uploaded historical export, not a fresh direct Search Console query. Query examples are property-level and are not attributed to the canonical page. No GA4 or revenue data retrieved; Google Web clicks are not social referrals. No claim of ranking improvement, conversion or revenue."
+  },
+  "duplication_audit": {
+    "required_files": [
+      "AGENTS.md",
+      "EDITORIAL_TOPIC_INDEX.md",
+      "CONTENT_INVENTORY.md",
+      "data/content-inventory.json"
+    ],
+    "existing_sources_read": [
+      "content/wealth/health-insurance-ireland.md",
+      "content/wealth/health-insurance-price-rises-benefit-cuts-ireland.md",
+      "content/pages/health-insurance-cost-comparison-calculator.md"
+    ],
+    "decision": "Update original #compare section; do not create a new competing renewal page. Preserve calculator and news canonical URLs.",
+    "ledgers": "No 11 November evergreen ledger existed at start. Prior confirmed guides: solar export tax (7 Nov), Sunday premium (8 Nov), public holiday pay (9 Nov). Today's morning-news ledger contains held pay/energy work, not this question.",
+    "open_prs_checked": [
+      107,
+      57,
+      43
+    ],
+    "health_insurance_pr_search": "Compound/FairPath search returned historical Compound #37; no new health-insurance PR identified.",
+    "concurrent_workflows": "Compound schedules and repository earnings/news/image/inventory/social workflows inspected. FairPath 11 November evergreen recorded completed: nursing-home hearing-aid routines, distinct from insurance renewal. Overnight programmes start 12 November. No outbound posting performed.",
+    "past_14_days": "Inventory checked for publication or review dates from 28 October: 67 articles, no new health-insurance match. Git history deepened by 150 commits and canonical guide/calculator history inspected."
+  },
+  "repository": {
+    "full_name": "davidomarayt/compound",
+    "publishing_branch": "claude/clever-babbage-uibieq",
+    "isolated_checkout": true,
+    "audited_head": "dea1c485f37131fedd9fcb4f94bb777f31495dd1",
+    "deployment_configuration": ".github/workflows/site.yml: GitHub Pages; publishing branch push restricted to content/site/image-related paths. Monitoring-only files do not trigger site deployment.",
+    "commits": [
+      {
+        "sha": "0ed0601bfa9ecd2d101d2a580e46eb44c91f9648",
+        "kind": "held draft and claim-check record; not publication"
+      }
+    ],
+    "publication_commit": null,
+    "unrelated_changes_published": false
+  },
+  "publisher_policy": {
+    "human_review_confirmed": false,
+    "established_no_ads_route_verified": false,
+    "evidence": "Live canonical HTTP 200 contains pagead2.googlesyndication.com/pagead/js/adsbygoogle.js; article render does not set a per-article ads_allowed flag. Proposed unreviewed-ai controls are in open PR #107, not on audited publishing head.",
+    "decision": "Hold substantial new copy outside content/. Automated arithmetic/source checks do not constitute manual review. Existing approved_by publish instruction is not proof of human review of this update."
+  },
+  "validation": {
+    "claim_checks": "Detailed source-by-claim notes and worked arithmetic in draft record.",
+    "arithmetic": "All three annual scenarios, three-night shortfall, capped outpatient reimbursement and incremental-benefit calculation passed standalone offline assertions.",
+    "canonical_and_links": "Existing guide, related calculator and related news URL each fetched HTTP 200 with correct canonical; confirms existing pages only.",
+    "photo": "Existing illustrative MART PRODUCTION/Pexels 7088483 source and Pexels licence checked; live social WebP fetched and visually inspected. Pinning and licence text proposed for eventual release.",
+    "independent_editorial_qa": "pending",
+    "human_editorial_qa": "pending",
+    "build": "not run: no content/template/asset changes are being published",
+    "changed_page_render_and_live_verification": "not applicable yet; held text is not served",
+    "ci": "Monitoring-only record commits use skip-ci to avoid invoking the repository's broad suite or network/image build for non-publishing documentation; no publishing checks were weakened or declared passed.",
+    "external_paid_model_apis_invoked": false
+  },
+  "deployment_status": "not_attempted_held_for_review",
+  "updated_existing_pages": [],
+  "published_links": [],
+  "skipped": [
+    {
+      "item": "New standalone health-insurance renewal article",
+      "reason": "Same reader question and search intent already have a canonical guide and calculator."
+    }
+  ],
+  "failures": [],
+  "resume_requirements": [
+    "Resume this same ledger and draft; do not count it again or create another instalment for this date.",
+    "Obtain actual human curation or verify an established no-ads pending-review process.",
+    "Recheck unchanged time-sensitive guide claims before refreshing whole-guide review date.",
+    "Run independent editorial QA and relevant offline/site build, image and rendering checks.",
+    "Confirm deployment and fetch changed canonical and OG/Twitter assets before incrementing live update count."
+  ],
+  "pilot_final_run": false,
+  "automation_schedule_changed": false
+}
