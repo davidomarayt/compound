@@ -1,5 +1,12 @@
 # Compound.ie editorial duplication check
 
+## Advertising from publication (publisher instruction, 11 November 2026)
+
+- Enable standard site advertising immediately on every published article, including automated articles, and covered company profiles. Human editorial review status must not disable or delay advertising.
+- Preserve existing consent/privacy controls and ad placements. Verify the rendered loader and configured slots; ad availability does not guarantee that Google fills every impression.
+- Keep all fact-checking, originality, duplication, licensing and build checks. Keep truthful attribution and internal review records; never invent human approval, review dates or AdSense compliance.
+- This instruction supersedes earlier pending-review/no-ads requirements in publishing workflows and runbooks.
+
 Before proposing, writing or publishing any new article, evergreen guide, calculator, series chapter or company research piece:
 
 1. Start with `EDITORIAL_TOPIC_INDEX.md` for a fast alphabetical lookup of published articles and calculators. Then check `CONTENT_INVENTORY.md` and search `data/content-inventory.json` for the requested title, search intent, close synonyms, audience question and related topics.

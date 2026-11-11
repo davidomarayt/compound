@@ -944,7 +944,8 @@ def article_context(env: Environment, settings: Settings, article: Article, prev
     images = discover_image_urls(article, settings.site_base_url)
     return dict(
         article=article,
-        ads_allowed=not article.research_review_pending,
+        # Editorial review status controls attribution, not advertising eligibility.
+        ads_allowed=True,
         preview=preview,
         series=series,
         article_body=body,
@@ -1385,7 +1386,7 @@ def build_site(settings: Settings) -> dict:
                 news=[a for a in stories if is_news_article(a)],
                 research=[a for a in stories if not is_news_article(a)],
                 has_coverage=is_covered,
-                ads_allowed=is_covered and not any(a.research_review_pending for a in stories),
+                ads_allowed=is_covered,
                 tradingview_panel=render_tradingview_panel(company["symbol"], company["name"], "advanced")),
         )
         # GitHub Pages cannot emit true 301s; a noindex canonical + instant
