@@ -303,6 +303,7 @@ class Article:
     reviewed: date | None = None
     related_tools: list[str] = field(default_factory=list)
     research_review_pending: bool = False
+    research_checked: date | None = None
 
     @property
     def body_with_charts(self) -> str:
@@ -575,6 +576,7 @@ def article_from_file(path: Path, *, include_drafts: bool = False) -> Article | 
         series_order=int(meta.get("series_order") or 0),
         publication_status=status,
         research_review_pending=meta.get("editorial_review_status") == "pending",
+        research_checked=_as_date(meta["research_checked"]) if meta.get("research_checked") else None,
         canonical_path=canonical_path,
         seo_title=str(meta.get("seo_title") or ""),
         reviewed=_as_date(meta["reviewed"]) if meta.get("reviewed") else None,
@@ -803,7 +805,7 @@ def article_jsonld(a: Article, site_url: str) -> str:
         "headline": a.title,
         "description": a.description,
         "datePublished": a.date.isoformat(),
-        "dateModified": (a.reviewed or a.date).isoformat(),
+        "dateModified": (a.research_checked or a.reviewed or a.date).isoformat(),
         "author": ({"@type": "Organization", "name": "Compound Research", "url": f"{base}/about/"}
                    if a.research_review_pending else {"@type": "Organization", "name": "Compound Earnings", "url": f"{base}/wealth/earnings/"}
                    if "automated-earnings" in a.tags else
@@ -1831,7 +1833,7 @@ def build_site(settings: Settings) -> dict:
         for p in PILLARS
     )
     sitemap_entries.extend(
-        (settings.site_base_url + a.url, (a.reviewed or a.date).isoformat())
+        (settings.site_base_url + a.url, (a.research_checked or a.reviewed or a.date).isoformat())
         for a in articles
     )
     sitemap_entries.extend((settings.site_base_url + pg.url, "2026-10-11" if pg.slug == "solar" or pg.slug.startswith("solar-") else None) for pg in pages if pg.slug != "solar-installer-portal")
@@ -1840,10 +1842,10 @@ def build_site(settings: Settings) -> dict:
     sitemap_entries.extend(
         (
             settings.site_base_url + f'/stocks/{company["symbol"].lower()}/',
-            max([a.reviewed or a.date for a in company_stories[str(company["cik"])]] +
+            max([a.research_checked or a.reviewed or a.date for a in company_stories[str(company["cik"])]] +
                 ([date.fromisoformat(company_dashboards[str(company["cik"])]["latest_filed"])]
                  if company_dashboards[str(company["cik"])] and company_dashboards[str(company["cik"])]["latest_filed"] else []) +
-                [a.reviewed or a.date for a in company_reports[str(company["cik"])]] +
+                [a.research_checked or a.reviewed or a.date for a in company_reports[str(company["cik"])]] +
                 ([date(2026, 10, 16)] if company["symbol"] in EARNINGS_SEO_PRIORITY else [])
                 ).isoformat(),
         )
@@ -1854,7 +1856,7 @@ def build_site(settings: Settings) -> dict:
 
     sitemap_entries.extend(
         (settings.site_base_url + f'/stocks/{c["slug"]}/',
-         max([a.reviewed or a.date for a in listed_stories[c["slug"]]] +
+         max([a.research_checked or a.reviewed or a.date for a in listed_stories[c["slug"]]] +
              ([date.fromisoformat(extra_dashboards[c["slug"]]["latest_filed"])]
               if extra_dashboards[c["slug"]] and extra_dashboards[c["slug"]]["latest_filed"] else [])).isoformat())
         for c in extra_listed if listed_stories[c["slug"]] or extra_dashboards[c["slug"]]
@@ -1872,7 +1874,7 @@ def build_site(settings: Settings) -> dict:
     )
     sitemap_entries.extend(
         (settings.site_base_url + f'/companies/{c["slug"]}/',
-         max((a.reviewed or a.date) for a in private_stories[c["slug"]]).isoformat())
+         max((a.research_checked or a.reviewed or a.date) for a in private_stories[c["slug"]]).isoformat())
         for c in private_companies if private_stories[c["slug"]]
     )
     sitemap_by_url: dict[str, str | None] = {}

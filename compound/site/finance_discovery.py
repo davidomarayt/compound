@@ -54,7 +54,7 @@ def catalogue(base, articles, tools, stocks, has_calculator):
     def add_article(a, group):
         entries.append({'kind': group, 'title': a.title, 'url': base + a.url,
                         'description': a.description, 'published': a.date.isoformat(),
-                        'modified': (a.reviewed or a.date).isoformat(),
+                        'modified': (getattr(a, "research_checked", None) or a.reviewed or a.date).isoformat(),
                         'sources': source_links(a.sources)})
     for slug in GUIDES:
         if slug in by_slug:
@@ -63,7 +63,7 @@ def catalogue(base, articles, tools, stocks, has_calculator):
         entries.append({'kind': GROUPS[1], **stock, 'url': base + stock['url']})
     stories = [a for a in published if a.slug not in GUIDES and
                {'stocks', 'company-research', 'stock-analysis', 'earnings'} & set(a.tags)]
-    for a in sorted(stories, key=lambda a: (a.reviewed or a.date, a.slug), reverse=True)[:30]:
+    for a in sorted(stories, key=lambda a: (getattr(a, "research_checked", None) or a.reviewed or a.date, a.slug), reverse=True)[:30]:
         add_article(a, GROUPS[2])
     for tool in tools:
         if tool.get('category') not in FINANCE_CATEGORIES and tool['slug'] != 'car-finance-calculator':
