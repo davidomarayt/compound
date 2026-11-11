@@ -2,6 +2,10 @@
 import json
 from pathlib import Path
 
+import pytest
+from PIL import Image
+from scripts.news_images import normalise_pinned_photo
+
 from compound.site.build import _env, article_context, article_from_file, article_jsonld
 
 
@@ -70,3 +74,22 @@ def test_private_company_hub_disables_ads_if_it_contains_unreviewed_research():
     # The production generator must keep hub ads off where a linked story is unreviewed.
     build = (ROOT / "compound" / "site" / "build.py").read_text()
     assert 'ads_allowed=bool(stories) and not any("unreviewed-ai" in a.tags for a in stories)' in build
+
+
+def test_approved_pinned_photo_is_reencoded_as_a_real_jpeg(tmp_path):
+    # Wikimedia JPEGs with an MPF segment may be detected as MPO.
+    # A non-JPEG raster container must not be served unchanged with .jpg.
+    cover = tmp_path / "licensed-cover.jpg"
+    Image.new("RGB", (1200, 800), "white").save(cover, format="PNG")
+    normalise_pinned_photo(cover)
+    with Image.open(cover) as converted:
+        assert converted.format == "JPEG"
+        assert converted.size == (1200, 800)
+        converted.verify()
+
+
+def test_pinned_photo_rejects_small_source_instead_of_upscaling(tmp_path):
+    cover = tmp_path / "tiny.jpg"
+    Image.new("RGB", (500, 400), "white").save(cover, format="PNG")
+    with pytest.raises(ValueError, match="too small"):
+        normalise_pinned_photo(cover)
