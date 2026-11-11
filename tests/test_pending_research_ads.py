@@ -9,7 +9,7 @@ def test_pending_research_is_ad_free_on_article_and_company(settings):
     wealth.mkdir()
     (wealth / "pending.md").write_text(
         "---\ntitle: Pending research\nslug: pending\npillar: wealth\n"
-        "date: '2026-11-11'\neditorial_review_status: pending\n"
+        "date: '2026-10-21'\nresearch_checked: '2026-11-11'\neditorial_review_status: pending\n"
         "image: /static/images/evergreen/meta-ai-app-earnings.jpg\n"
         "image_alt: Meta AI app\nimage_credit: Salvador Rios / Unsplash\n"
         "image_source: https://unsplash.com/photos/tkkOCi1Wgx0\n"
@@ -29,6 +29,12 @@ def test_pending_research_is_ad_free_on_article_and_company(settings):
     for html in [article, company]:
         assert "adsbygoogle" not in html
         assert "pagead2.googlesyndication.com" not in html
+    assert '"datePublished": "2026-10-21"' in article
+    assert '"dateModified": "2026-11-11"' in article
+    catalogue = json.loads((settings.public_dir / "finance/index.json").read_text())
+    entry = next(e for e in catalogue["entries"] if e["url"].endswith("/wealth/pending/"))
+    assert entry["published"] == "2026-10-21"
+    assert entry["modified"] == "2026-11-11"
     assert "Compound Research" in article
     assert '"name": "David"' not in article
     assert "Every article is reviewed and approved" not in article
