@@ -802,7 +802,13 @@ def article_jsonld(a: Article, site_url: str) -> str:
         "description": a.description,
         "datePublished": a.date.isoformat(),
         "dateModified": (a.reviewed or a.date).isoformat(),
-        "author": ({"@type": "Organization", "name": "Compound Earnings", "url": f"{base}/wealth/earnings/"}
+        # The structured byline must match the visible editorial disclosure.
+        # Do not attribute unreviewed AI-assisted work to a human editor.
+        "author": ({"@type": "Organization", "name": "Compound Research",
+                    "url": f"{base}/editorial-policy/"}
+                   if "unreviewed-ai" in a.tags else
+                   {"@type": "Organization", "name": "Compound Earnings",
+                    "url": f"{base}/wealth/earnings/"}
                    if "automated-earnings" in a.tags else
                    {"@type": "Person", "name": "David", "url": f"{base}/about/"}),
         "publisher": {"@id": f"{base}/#organization"},
