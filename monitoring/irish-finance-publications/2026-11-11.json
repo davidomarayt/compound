@@ -99,5 +99,6 @@
       "reason": "No third distinct story with a sufficiently verified current development and complete evidence was established by the search cutoff. No release date or result inferred from an expected statistics release."
     }
   ],
-  "afternoon_handoff": "Zero morning publications. Two held candidates are not quota completions. Check events first public after 09:41:03 GMT, and recheck publication gate, canonical pay page and PR #107. Reuse the existing pay URL; do not count this research or reruns as publication."
+  "afternoon_handoff": "Zero morning publications. Two held candidates are not quota completions. Check events first public after 09:41:03 GMT, and recheck publication gate, canonical pay page and PR #107. Reuse the existing pay URL; do not count this research or reruns as publication.",
+  "automation_status": "paused_due_to_unresolved_human_review_or_verified_ad_suppression_gate"
 }
