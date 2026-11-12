@@ -5,8 +5,8 @@
   "production_branch": "claude/clever-babbage-uibieq",
   "work_branch": "automation/private-company-2026-11-12",
   "target_new_articles": 3,
-  "status": "prepared_pending_ci",
-  "confirmed_live_new_articles": 0,
+  "status": "published_live_html_verified_social_pending",
+  "confirmed_live_new_articles": 3,
   "editorial_quality_gate": "Primary sources dated; distinct theses and arithmetic; neutral site attribution; all documentary licensed archival images; independent QA and deployment pending",
   "human_editorial_status": "not_reviewed_by_human",
   "ads_policy": "Publisher requests standard site ads from publication; verify loader and configured placement, no claim of AdSense approval",
@@ -30,8 +30,8 @@
         "https://openai.com/index/chatgpt-enterprise-aws-marketplace/",
         "https://docs.aws.amazon.com/bedrock/latest/userguide/amazon-bedrock-marketplace.html"
       ],
-      "status": "prepared_not_live",
-      "live_http_verified": false,
+      "status": "published_live_html_verified",
+      "live_http_verified": true,
       "image_source": "https://commons.wikimedia.org/wiki/File:Sam_Altman_speaking_at_TED.jpg",
       "image_license": "CC BY 2.0",
       "photo_provenance": "Steve Jurvetson TED April 2025, labelled archival",
@@ -41,7 +41,9 @@
         "1.2bn weekly users are company-reported broader platform metric, not buyer seats"
       ],
       "human_reviewed": false,
-      "ads_presence_verified": false
+      "ads_presence_verified": false,
+      "social_image_live_verified": false,
+      "social_image_url": "https://compound.ie/static/discover/openai-aws-marketplace-enterprise-procurement-economics-16x9.webp"
     },
     {
       "company": "Anthropic",
@@ -55,8 +57,8 @@
         "https://www.anthropic.com/claude-fable-and-mythos-5-2",
         "https://www.anthropic.com/news/roadshow-launch"
       ],
-      "status": "prepared_not_live",
-      "live_http_verified": false,
+      "status": "published_live_html_verified",
+      "live_http_verified": true,
       "image_source": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_04.jpg",
       "image_license": "CC BY 2.0",
       "photo_provenance": "TechCrunch September 2023, labelled archival",
@@ -66,7 +68,9 @@
         "IPO roadshow is a proposal; no publicly traded ANT price claimed"
       ],
       "human_reviewed": false,
-      "ads_presence_verified": false
+      "ads_presence_verified": false,
+      "social_image_live_verified": false,
+      "social_image_url": "https://compound.ie/static/discover/anthropic-fable-mythos-52-pricing-routing-economics-16x9.webp"
     },
     {
       "company": "Revolut",
@@ -80,8 +84,8 @@
         "https://www.revolut.com/sv-SE/news/uber_and_revolut_pay_partnership_expansion_delivers_rewarding_payments/",
         "https://www.revolut.com/en-SG/news/revolut_completes_fundraising_process_establishing_115_billion_valuation/"
       ],
-      "status": "prepared_not_live",
-      "live_http_verified": false,
+      "status": "published_live_html_verified",
+      "live_http_verified": true,
       "image_source": "https://commons.wikimedia.org/wiki/File:Revolut_CEO_Nikolay_Storonsky.jpg",
       "image_license": "CC BY 2.0",
       "photo_provenance": "TechCrunch September 2018, labelled archival",
@@ -91,7 +95,9 @@
         "98.5% authorisation rate vendor claim, $115bn financing valuation dated 4 Nov"
       ],
       "human_reviewed": false,
-      "ads_presence_verified": false
+      "ads_presence_verified": false,
+      "social_image_live_verified": false,
+      "social_image_url": "https://compound.ie/static/discover/revolut-pay-uber-rewards-payment-economics-2026-16x9.webp"
     }
   ],
   "profile_updates": [
@@ -112,8 +118,12 @@
     }
   ],
   "production_deployment": {
-    "status": "not_attempted",
-    "url_verified": false,
-    "social_images_verified": false
-  }
+    "status": "success",
+    "workflow_run_id": 43175004433,
+    "merge_commit": "b7fc1eb4999cc6e7b6c566ff2832026d3d3be3a6",
+    "url_verified": true,
+    "social_images_verified": false,
+    "ads_loader_live_verified": false
+  },
+  "verification_note": "GitHub Pages deploy and build, verify-live and mobile audit all passed for release commit b7fc1e. The three canonical public HTML articles and their linked company hubs were independently opened; external HTTP checks of image binary and ad loader follow in a separate audited job. No editor approval claimed."
 }
