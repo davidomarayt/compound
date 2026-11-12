@@ -118,14 +118,24 @@
       "name": "OpenAI",
       "sector": "Artificial intelligence",
       "summary": "AI models, products, infrastructure and governance.",
-      "website": "https://openai.com/"
+      "website": "https://openai.com/",
+      "latest_development": {
+        "date": "2026-11-09",
+        "text": "ChatGPT Enterprise became available through AWS Marketplace, allowing eligible buyers to consolidate purchasing and apply eligible spend towards AWS commitments; this does not establish a changed product price or reported profitability.",
+        "source": "https://openai.com/index/chatgpt-enterprise-aws-marketplace/"
+      }
     },
     {
       "slug": "anthropic",
       "name": "Anthropic",
       "sector": "Artificial intelligence",
       "summary": "Claude AI models, research and enterprise deployments.",
-      "website": "https://www.anthropic.com/"
+      "website": "https://www.anthropic.com/",
+      "latest_development": {
+        "date": "2026-11-10",
+        "text": "Anthropic announced a proposed Nasdaq IPO roadshow at an indicated $70–$78 offer range; the registration statement was not yet effective. Claude Fable and Mythos 5.2 were announced on 9 November.",
+        "source": "https://www.anthropic.com/news/roadshow-launch"
+      }
     },
     {
       "slug": "bytedance",
@@ -153,7 +163,12 @@
       "name": "Revolut",
       "sector": "Financial technology",
       "summary": "Consumer and business financial services.",
-      "website": "https://www.revolut.com/"
+      "website": "https://www.revolut.com/",
+      "latest_development": {
+        "date": "2026-11-11",
+        "text": "Revolut announced an expanded Uber and Uber Eats payment partnership for the UK and Europe, with conditional promotional RevPoints rewards; individual market eligibility must be checked.",
+        "source": "https://www.revolut.com/sv-SE/news/uber_and_revolut_pay_partnership_expansion_delivers_rewarding_payments/"
+      }
     },
     {
       "slug": "blue-origin",

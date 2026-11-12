@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-12",
+  "timezone": "Europe/Dublin",
+  "run_type": "private_company_daily",
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "automation/private-company-2026-11-12",
+  "target_new_articles": 3,
+  "status": "prepared_pending_ci",
+  "confirmed_live_new_articles": 0,
+  "editorial_quality_gate": "Primary sources dated; distinct theses and arithmetic; neutral site attribution; all documentary licensed archival images; independent QA and deployment pending",
+  "human_editorial_status": "not_reviewed_by_human",
+  "ads_policy": "Publisher requests standard site ads from publication; verify loader and configured placement, no claim of AdSense approval",
+  "duplication_checks": {
+    "index_snapshot": "2026-11-12",
+    "recent_articles": "Existing Anthropic IPO cash-loss analysis 21 Oct; this batch's Anthropic article addresses model-routing economics",
+    "prior_open_pr": "PR #107 remains unmerged; do not merge it after this run without rechecking overlap",
+    "other_workflows": "Daily Company Analysis and Mag 8 operate on listed companies; no matching source title identified in published index",
+    "new_page_count_cap": 3
+  },
+  "articles": [
+    {
+      "company": "OpenAI",
+      "slug": "openai",
+      "story_fingerprint": "openai-2026-11-09-aws-marketplace-procurement-economics",
+      "article_path": "content/wealth/openai-aws-marketplace-enterprise-procurement-economics.md",
+      "canonical_url": "https://compound.ie/wealth/openai-aws-marketplace-enterprise-procurement-economics/",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "event_date": "2026-11-09",
+      "primary_source_urls": [
+        "https://openai.com/index/chatgpt-enterprise-aws-marketplace/",
+        "https://docs.aws.amazon.com/bedrock/latest/userguide/amazon-bedrock-marketplace.html"
+      ],
+      "status": "prepared_not_live",
+      "live_http_verified": false,
+      "image_source": "https://commons.wikimedia.org/wiki/File:Sam_Altman_speaking_at_TED.jpg",
+      "image_license": "CC BY 2.0",
+      "photo_provenance": "Steve Jurvetson TED April 2025, labelled archival",
+      "claim_checks": [
+        "Marketplace billing and qualifying AWS commitments not equated to a discount",
+        "Bedrock model APIs distinguished from ChatGPT Enterprise seats",
+        "1.2bn weekly users are company-reported broader platform metric, not buyer seats"
+      ],
+      "human_reviewed": false,
+      "ads_presence_verified": false
+    },
+    {
+      "company": "Anthropic",
+      "slug": "anthropic",
+      "story_fingerprint": "anthropic-2026-11-09-fable-mythos-52-cost-per-solved-task",
+      "article_path": "content/wealth/anthropic-fable-mythos-52-pricing-routing-economics.md",
+      "canonical_url": "https://compound.ie/wealth/anthropic-fable-mythos-52-pricing-routing-economics/",
+      "profile_url": "https://compound.ie/companies/anthropic/",
+      "event_date": "2026-11-09",
+      "primary_source_urls": [
+        "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+        "https://www.anthropic.com/news/roadshow-launch"
+      ],
+      "status": "prepared_not_live",
+      "live_http_verified": false,
+      "image_source": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_04.jpg",
+      "image_license": "CC BY 2.0",
+      "photo_provenance": "TechCrunch September 2023, labelled archival",
+      "claim_checks": [
+        "$8/$40 million-token API rates and $16/$80 fast rates verified",
+        "100k input/20k output arithmetic gives $1.60/$3.20",
+        "IPO roadshow is a proposal; no publicly traded ANT price claimed"
+      ],
+      "human_reviewed": false,
+      "ads_presence_verified": false
+    },
+    {
+      "company": "Revolut",
+      "slug": "revolut",
+      "story_fingerprint": "revolut-2026-11-11-uber-checkout-revpoints-network-economics",
+      "article_path": "content/wealth/revolut-pay-uber-rewards-payment-economics-2026.md",
+      "canonical_url": "https://compound.ie/wealth/revolut-pay-uber-rewards-payment-economics-2026/",
+      "profile_url": "https://compound.ie/companies/revolut/",
+      "event_date": "2026-11-11",
+      "primary_source_urls": [
+        "https://www.revolut.com/sv-SE/news/uber_and_revolut_pay_partnership_expansion_delivers_rewarding_payments/",
+        "https://www.revolut.com/en-SG/news/revolut_completes_fundraising_process_establishing_115_billion_valuation/"
+      ],
+      "status": "prepared_not_live",
+      "live_http_verified": false,
+      "image_source": "https://commons.wikimedia.org/wiki/File:Revolut_CEO_Nikolay_Storonsky.jpg",
+      "image_license": "CC BY 2.0",
+      "photo_provenance": "TechCrunch September 2018, labelled archival",
+      "claim_checks": [
+        "UK and Europe availability; no unsupported Ireland-wide rollout claim",
+        "5x boost conditional and up-to-15x not 15x cashback",
+        "98.5% authorisation rate vendor claim, $115bn financing valuation dated 4 Nov"
+      ],
+      "human_reviewed": false,
+      "ads_presence_verified": false
+    }
+  ],
+  "profile_updates": [
+    {
+      "slug": "openai",
+      "source": "https://openai.com/index/chatgpt-enterprise-aws-marketplace/",
+      "dated": "2026-11-09"
+    },
+    {
+      "slug": "anthropic",
+      "source": "https://www.anthropic.com/news/roadshow-launch",
+      "dated": "2026-11-10"
+    },
+    {
+      "slug": "revolut",
+      "source": "https://www.revolut.com/sv-SE/news/uber_and_revolut_pay_partnership_expansion_delivers_rewarding_payments/",
+      "dated": "2026-11-11"
+    }
+  ],
+  "production_deployment": {
+    "status": "not_attempted",
+    "url_verified": false,
+    "social_images_verified": false
+  }
+}

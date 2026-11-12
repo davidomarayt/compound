@@ -38,6 +38,8 @@ jobs:
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: python scripts/news_images.py
+      - name: Normalise approved private-company archival photos
+        run: python scripts/normalise_private_company_images.py
       - name: Validate all processed article metadata before building
         run: python -c "from pathlib import Path; from compound.site.build import load_articles; print('Validated', len(load_articles(Path('content'))), 'articles')"
       - name: Verify approved TV licence stock photograph
@@ -56,6 +58,8 @@ jobs:
         env:
           SITE_BASE_URL: https://compound.ie
           PREVIEW_BASE_URL: https://compound.ie
+      - name: Verify private-company launch, ads, documentary photos and social metadata
+        run: python scripts/verify_private_company_publications.py
       - name: Validate finance discovery and crawler access
         run: python -m pytest -q tests/test_finance_discovery.py tests/test_verify_finance_discovery.py
       - name: Verify bespoke household image is the rendered article cover
@@ -379,6 +383,8 @@ jobs:
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: python scripts/news_images.py
+      - name: Normalise approved private-company archival photos
+        run: python scripts/normalise_private_company_images.py
       - run: compound build
         env:
           SITE_BASE_URL: https://compound.ie
