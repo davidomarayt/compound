@@ -1,7 +1,7 @@
 {
   "date": "2026-11-11",
   "scope": "Existing earnings pages only",
-  "status": "merged_pending_deployment",
+  "status": "deployed_verified_live",
   "previous_check": "2026-11-09-after-close-earnings.json",
   "scan_since": "2026-11-09",
   "companies": {
@@ -102,7 +102,7 @@
     }
   },
   "checks": {
-    "advertising": "Preserve standard ads and consent following PR 113. No human approval fabricated. Verify live loader after deployment.",
+    "advertising": "Live standard AdSense loader with configured publisher ID verified on all four profiles, plus privacy controls. Existing conditional inline slots absent on these four profiles. Ad fill is not inferred.",
     "history": "Prior fiscal rows preserved.",
     "concurrency": "Before merge, no active ingestion or queued run, unrelated prior site run completed successfully, and no overlapping open PR. Publishing branch changes comprised an unrelated article and inventory only. Live pages still lacked the intended sources.",
     "tests": "46 targeted offline tests passed after all four updates",
@@ -112,7 +112,8 @@
     "exact_head_ci": [
       "https://github.com/davidomarayt/compound/actions/runs/43121883759",
       "https://github.com/davidomarayt/compound/actions/runs/43121878259"
-    ]
+    ],
+    "production": "Site workflow 43123171532 completed successfully, including build, deployment, verify-live, finance-discovery and mobile-audit jobs."
   },
   "coverage": {
     "sec_issuers_checked": 505,
@@ -133,5 +134,17 @@
   "pull_request": 114,
   "validated_pr_head": "c01ebeb616e9cf59579ca0370041a0edca9e161e",
   "merge_commit": "50d420833b40905831cdc680fba0be603bb3fa26",
-  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/43123171532"
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/43123171532",
+  "verified_at": "2026-11-12T00:01:08Z",
+  "live_verification": {
+    "canonical_urls": [
+      "https://compound.ie/stocks/kkr/",
+      "https://compound.ie/stocks/skyd/",
+      "https://compound.ie/stocks/vylr/",
+      "https://compound.ie/stocks/rvty/"
+    ],
+    "figures_period_source": "All four live pages fetched successfully and matched the changed fiscal period, rendered figures or labelled pro forma summary, and original source URL.",
+    "history": "All original stored fiscal rows preserved for KKR, SKYD and RVTY."
+  },
+  "deployment_status": "success"
 }
