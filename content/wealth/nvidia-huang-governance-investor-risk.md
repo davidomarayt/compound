@@ -36,6 +36,9 @@ sources:
   url: https://investor.nvidia.com/news/press-release-details/2026/Statement-from-the-Independent-Members-of-the-NVIDIA-Board/default.aspx
 ---
 
+**Update (12 November 2026):** Nvidia has [confirmed Jensen Huang's immediate resignation as CEO and board director](/news/jensen-huang-resigns-nvidia-ceo/) and named Colette Kress interim CEO. The analysis below preserves what was known on 11 November; see the new report for the confirmed leadership change and current implications for NVDA shareholders.
+
+
 Nvidia shareholders face a fresh question about the company’s leadership after Reuters relayed a New York Times report alleging that Jensen Huang had a relationship with Kimberly Powell, Nvidia’s vice president of healthcare, who reported to him. The Times cited five people who had worked at the company. Nvidia had not immediately responded to Reuters’ request for comment. **The allegation has not been independently verified by Compound.** [Reuters report](https://www.reuters.com/business/nvidia-ceo-huang-had-relationship-with-executive-who-reported-him-nyt-reports-2026-11-11/)
 
 For investors, the issue is how the board handles possible conflicts, leadership continuity and accountability. Those questions can affect the price shareholders will pay for future profits, even before there is evidence of a change in chip demand.
