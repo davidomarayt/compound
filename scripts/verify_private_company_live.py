@@ -65,7 +65,7 @@ def verify() -> None:
         cover = f"{SITE}/static/images/evergreen/{slug}.jpg"
         assert f'src="/static/images/evergreen/{slug}.jpg"' in html, url
         photo_bytes = fetch(cover, binary=True)
-        assert len(photo_bytes) > 50000 and photo_bytes[:3] == b"\\xff\\xd8\\xff", cover
+        assert len(photo_bytes) > 50000 and photo_bytes[:3] == b"\xff\xd8\xff", cover
 
         profile = f"{SITE}/companies/{story['slug']}/"
         hub = fetch(profile).decode("utf-8")
