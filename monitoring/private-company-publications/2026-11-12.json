@@ -5,15 +5,15 @@
   "production_branch": "claude/clever-babbage-uibieq",
   "work_branch": "automation/private-company-2026-11-12",
   "target_new_articles": 3,
-  "status": "published_live_html_verified_social_pending",
+  "status": "published_live_qa_verified",
   "confirmed_live_new_articles": 3,
-  "editorial_quality_gate": "Primary sources dated; distinct theses and arithmetic; neutral site attribution; all documentary licensed archival images; independent QA and deployment pending",
+  "editorial_quality_gate": "Source, originality, photo-licence, rendering and metadata checks passed; GitHub Actions verified public canonical HTML, company profile links, pinned JPG covers, OG/Twitter WebP images and ad loaders.",
   "human_editorial_status": "not_reviewed_by_human",
-  "ads_policy": "Publisher requests standard site ads from publication; verify loader and configured placement, no claim of AdSense approval",
+  "ads_policy": "Standard site advertising enabled and live ad loader verified on articles and company hubs. Human editor approval remains unrecorded; no claim about AdSense policy compliance or ad fill.",
   "duplication_checks": {
     "index_snapshot": "2026-11-12",
     "recent_articles": "Existing Anthropic IPO cash-loss analysis 21 Oct; this batch's Anthropic article addresses model-routing economics",
-    "prior_open_pr": "PR #107 remains unmerged; do not merge it after this run without rechecking overlap",
+    "prior_open_pr": "Prior 11 November PR #107 superseded; this day's three articles already deployed with b7fc1eb. Do not duplicate on reruns.",
     "other_workflows": "Daily Company Analysis and Mag 8 operate on listed companies; no matching source title identified in published index",
     "new_page_count_cap": 3
   },
@@ -30,7 +30,7 @@
         "https://openai.com/index/chatgpt-enterprise-aws-marketplace/",
         "https://docs.aws.amazon.com/bedrock/latest/userguide/amazon-bedrock-marketplace.html"
       ],
-      "status": "published_live_html_verified",
+      "status": "published_live_verified",
       "live_http_verified": true,
       "image_source": "https://commons.wikimedia.org/wiki/File:Sam_Altman_speaking_at_TED.jpg",
       "image_license": "CC BY 2.0",
@@ -41,9 +41,11 @@
         "1.2bn weekly users are company-reported broader platform metric, not buyer seats"
       ],
       "human_reviewed": false,
-      "ads_presence_verified": false,
-      "social_image_live_verified": false,
-      "social_image_url": "https://compound.ie/static/discover/openai-aws-marketplace-enterprise-procurement-economics-16x9.webp"
+      "ads_presence_verified": true,
+      "social_image_live_verified": true,
+      "social_image_url": "https://compound.ie/static/discover/openai-aws-marketplace-enterprise-procurement-economics-16x9.webp",
+      "pinned_cover_live_verified": true,
+      "company_profile_backlink_live_verified": true
     },
     {
       "company": "Anthropic",
@@ -57,7 +59,7 @@
         "https://www.anthropic.com/claude-fable-and-mythos-5-2",
         "https://www.anthropic.com/news/roadshow-launch"
       ],
-      "status": "published_live_html_verified",
+      "status": "published_live_verified",
       "live_http_verified": true,
       "image_source": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_04.jpg",
       "image_license": "CC BY 2.0",
@@ -68,9 +70,11 @@
         "IPO roadshow is a proposal; no publicly traded ANT price claimed"
       ],
       "human_reviewed": false,
-      "ads_presence_verified": false,
-      "social_image_live_verified": false,
-      "social_image_url": "https://compound.ie/static/discover/anthropic-fable-mythos-52-pricing-routing-economics-16x9.webp"
+      "ads_presence_verified": true,
+      "social_image_live_verified": true,
+      "social_image_url": "https://compound.ie/static/discover/anthropic-fable-mythos-52-pricing-routing-economics-16x9.webp",
+      "pinned_cover_live_verified": true,
+      "company_profile_backlink_live_verified": true
     },
     {
       "company": "Revolut",
@@ -84,7 +88,7 @@
         "https://www.revolut.com/sv-SE/news/uber_and_revolut_pay_partnership_expansion_delivers_rewarding_payments/",
         "https://www.revolut.com/en-SG/news/revolut_completes_fundraising_process_establishing_115_billion_valuation/"
       ],
-      "status": "published_live_html_verified",
+      "status": "published_live_verified",
       "live_http_verified": true,
       "image_source": "https://commons.wikimedia.org/wiki/File:Revolut_CEO_Nikolay_Storonsky.jpg",
       "image_license": "CC BY 2.0",
@@ -95,9 +99,11 @@
         "98.5% authorisation rate vendor claim, $115bn financing valuation dated 4 Nov"
       ],
       "human_reviewed": false,
-      "ads_presence_verified": false,
-      "social_image_live_verified": false,
-      "social_image_url": "https://compound.ie/static/discover/revolut-pay-uber-rewards-payment-economics-2026-16x9.webp"
+      "ads_presence_verified": true,
+      "social_image_live_verified": true,
+      "social_image_url": "https://compound.ie/static/discover/revolut-pay-uber-rewards-payment-economics-2026-16x9.webp",
+      "pinned_cover_live_verified": true,
+      "company_profile_backlink_live_verified": true
     }
   ],
   "profile_updates": [
@@ -118,12 +124,17 @@
     }
   ],
   "production_deployment": {
-    "status": "success",
-    "workflow_run_id": 43175004433,
-    "merge_commit": "b7fc1eb4999cc6e7b6c566ff2832026d3d3be3a6",
+    "status": "success_live_verified",
+    "workflow_run_id": 43177552289,
+    "first_publication_workflow_run_id": 43175004433,
+    "first_publication_commit": "b7fc1eb4999cc6e7b6c566ff2832026d3d3be3a6",
+    "post_deployment_verifier_commit": "573fb9d5ae4eff8f11aa3653cd9a0b4df57b4522",
     "url_verified": true,
-    "social_images_verified": false,
-    "ads_loader_live_verified": false
+    "social_images_verified": true,
+    "pinned_covers_verified": true,
+    "ads_loader_live_verified": true,
+    "company_profile_links_verified": true,
+    "evidence": "GitHub Pages site run 43177552289 passed all jobs. Its post-deployment live private-company verifier fetched canonical production pages, profile backlinks, pinned JPG covers and OG/Twitter WebP images, and confirmed configured ad loaders."
   },
-  "verification_note": "GitHub Pages deploy and build, verify-live and mobile audit all passed for release commit b7fc1e. The three canonical public HTML articles and their linked company hubs were independently opened; external HTTP checks of image binary and ad loader follow in a separate audited job. No editor approval claimed."
+  "verification_note": "Production fetch checks passed for the three distinct 12 November articles. Idempotent rerun: no additional articles created. Human review remains unrecorded."
 }
