@@ -2,33 +2,33 @@
   "cik": 833444,
   "company": "Johnson Controls",
   "latest": {
-    "accession": "0000833444-26-000087",
-    "filed": "2026-07-29",
-    "form": "10-Q",
-    "fp": "Q3",
+    "accession": "0000833444-26-000108",
+    "filed": "2026-11-12",
+    "form": "10-K",
+    "fp": "FY",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 1.23,
-        "prior_year": 1.07,
-        "tag": "us-gaap:EarningsPerShareDiluted",
+        "current": 4.68,
+        "prior_year": 5.03,
+        "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 749000000,
-        "prior_year": 701000000,
-        "tag": "us-gaap:NetIncomeLoss",
+        "current": 2853000000,
+        "prior_year": 3291000000,
+        "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 6614000000,
-        "prior_year": 6052000000,
-        "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 25666000000,
+        "prior_year": 23596000000,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/833444/000083344426000087/jci-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/833444/000083344426000108/jci-20260930.htm"
   },
   "periods": [
     {
@@ -70,27 +70,56 @@
         "diluted_eps": {
           "current": 1.23,
           "prior_year": 1.07,
-          "tag": "us-gaap:EarningsPerShareDiluted",
+          "tag": "EarningsPerShareDiluted",
           "unit": "USD/shares"
         },
         "net_income": {
           "current": 749000000,
           "prior_year": 701000000,
-          "tag": "us-gaap:NetIncomeLoss",
+          "tag": "NetIncomeLoss",
           "unit": "USD"
         },
         "revenue": {
           "current": 6614000000,
           "prior_year": 6052000000,
-          "tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
           "unit": "USD"
         }
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/833444/000083344426000087/jci-20260630.htm"
+    },
+    {
+      "accession": "0000833444-26-000108",
+      "filed": "2026-11-12",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 4.68,
+          "prior_year": 5.03,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2853000000,
+          "prior_year": 3291000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 25666000000,
+          "prior_year": 23596000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/833444/000083344426000108/jci-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "JCI",
-  "updated": "2026-11-07"
+  "updated": "2026-11-12"
 }
