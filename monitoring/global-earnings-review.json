@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-11",
+  "checked": "2026-11-12",
   "companies_checked": 10,
   "companies": {
     "spcx": {
@@ -205,8 +205,18 @@
       "https://investor.tsmc.com/english/quarterly-results/2026/q3"
     ]
   },
-  "new_review_candidates": 0,
+  "new_review_candidates": 1,
   "pending_review": [
+    {
+      "id": "sec:1046179:0001046179-26-000800",
+      "company": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "slug": "tsm",
+      "title": "Taiwan Semiconductor Manufacturing Company (TSMC) SEC 6-K filed 2026-11-12",
+      "filed": "2026-11-12",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
     {
       "id": "sec:1046179:0001046179-26-000797",
       "company": "Taiwan Semiconductor Manufacturing Company (TSMC)",
