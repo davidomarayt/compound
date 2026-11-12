@@ -110,6 +110,13 @@ Primary-source analysis of OpenAI.
     assert 'href="/stocks/005930-ks/"' in stocks
     assert 'href="/companies/"' in stocks
     assert 'href="/companies/openai/"' in companies
+    # Private-company hub should have shareable metadata and an accessible breadcrumb.
+    assert '<link rel="canonical" href="https://example.test/companies/">' in companies
+    assert '<meta property="og:type" content="website">' in companies
+    assert '<meta property="og:title" content="Private Companies — Research Directory | Compound">' in companies
+    assert '<meta property="og:url" content="https://example.test/companies/">' in companies
+    assert 'property="og:description"' in companies
+    assert '<nav class="earnings-crumb" aria-label="Breadcrumb">' in companies
     assert 'href="/companies/canva/"' in companies
     assert 'data-tv-symbol="NASDAQ:SPCX"' in spcx
     assert "SpaceX original research" in spcx
