@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 280 published articles and guides, 64 tools,
+**Included:** 281 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -146,6 +146,7 @@ For the complete register (including 510+ company profiles), open
 - [Irish Tolls Rise in January 2027: M50 Up, Port Tunnel €15, M3 Cars Spared](https://compound.ie/news/ireland-toll-increases-2027/) — **Wealth**
 - [Is it financially worth returning to work after having children in Ireland?](https://compound.ie/wealth/returning-to-work-childcare-costs-ireland/) — **Wealth**
 - [Is switching your mortgage worth it in Ireland? A worked €250,000 example](https://compound.ie/wealth/is-switching-your-mortgage-worth-it-ireland/) — **Wealth**
+- [Jensen Huang Resigns as Nvidia CEO: Who Replaces Him and What It Means for NVDA Stock](https://compound.ie/news/jensen-huang-resigns-nvidia-ceo/) — **Wealth**
 - [Jobseeker penalty would rise from €90 to €100 under Social Welfare Bill](https://compound.ie/news/jobseeker-penalty-social-welfare-bill-2026/) — **Wealth**
 - [Lam Research Earnings: Strong Growth Meets an Even Higher Bar](https://compound.ie/wealth/lam-research-earnings-growth-expectations/) — **Wealth**
 - [Life for a 100-Year Life: Connection, Purpose and Ordinary Days](https://compound.ie/life/happiness-for-a-100-year-life/) — **Life**
