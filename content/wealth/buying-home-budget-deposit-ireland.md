@@ -68,6 +68,8 @@ That is only the **minimum mortgage deposit**.
 
 It is not the total cash requirement.
 
+To test the standard 10% or 30% deposit rule against a particular property price and the cash you have available, use the [House Deposit Calculator](/house-deposit-calculator/). Keep stamp duty, legal costs and an emergency reserve separate; the calculator checks the loan-to-value rule, not whether a lender will approve the loan.
+
 ## Build the budget in layers
 
 A useful home-buying budget has four layers.
