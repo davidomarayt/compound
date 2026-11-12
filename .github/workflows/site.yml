@@ -400,6 +400,9 @@ jobs:
       - name: Audit ten recent earnings and search at mobile and desktop widths
         run: python scripts/verify_earnings_search_mobile.py
 
+      - name: Verify live private-company pages, social images and site ads
+        run: python scripts/verify_private_company_live.py
+
   verify-finance-discovery:
     needs: deploy
     runs-on: ubuntu-latest
