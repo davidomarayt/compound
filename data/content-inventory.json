@@ -271,6 +271,25 @@
         "status": "published"
       },
       {
+        "title": "Anthropic's Fable and Mythos 5.2: The Expensive Model Is Not Always the Best Deal",
+        "url": "/wealth/anthropic-fable-mythos-52-pricing-routing-economics/",
+        "source": "content/wealth/anthropic-fable-mythos-52-pricing-routing-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "anthropic-fable-mythos-52-pricing-routing-economics",
+        "date": "2026-11-12",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-anthropic",
+          "anthropic",
+          "artificial-intelligence"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price",
         "url": "/wealth/anthropic-loss-ipo-valuation/",
         "source": "content/wealth/anthropic-loss-ipo-valuation.md",
@@ -741,6 +760,26 @@
           "preserved benefits",
           "prsa",
           "retirement"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "ChatGPT Enterprise Is on AWS Marketplace. Will Easier Buying Make OpenAI Stickier?",
+        "url": "/wealth/openai-aws-marketplace-enterprise-procurement-economics/",
+        "source": "content/wealth/openai-aws-marketplace-enterprise-procurement-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-aws-marketplace-enterprise-procurement-economics",
+        "date": "2026-11-12",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "artificial-intelligence",
+          "enterprise-software"
         ],
         "status": "published"
       },
@@ -4079,6 +4118,26 @@
           "ireland",
           "mobile-plans",
           "household-bills"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Revolut Pay Enters Uber Checkout. Can Rewards Turn Payments Into a Habit?",
+        "url": "/wealth/revolut-pay-uber-rewards-payment-economics-2026/",
+        "source": "content/wealth/revolut-pay-uber-rewards-payment-economics-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "revolut-pay-uber-rewards-payment-economics-2026",
+        "date": "2026-11-12",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-revolut",
+          "revolut",
+          "payments",
+          "fintech"
         ],
         "status": "published"
       },
