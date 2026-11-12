@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-11
+Checked: 2026-11-12
 
 - 498 saved profiles checked against structural and issuer rules.
-- 84 existing company articles; 81 mapped to monitored issuers.
-- 76 pending review items; 18 recorded decisions.
+- 88 existing company articles; 83 mapped to monitored issuers.
+- 82 pending review items; 17 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -34,6 +34,22 @@ ID: `202a13db7e6f8053b4b68322`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/shopify-merchant-sales-cash-flow.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `b08ae5372476782fde9168cc`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/anthropic-fable-mythos-52-pricing-routing-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `e8a450658190ddaca84a3d55`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/michael-carrick-sacked-manchester-united-manu-stock.md`
 
 ### AAPL · article_review · medium
 
@@ -104,6 +120,16 @@ Newer filing than the article review date; assess whether claims or outlook need
 Files: `content/wealth/mcdonalds-guest-counts-franchise-margins.md`, `content/earnings-profiles/mcd.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/63908/000006390826000083/mcd-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-06
+
+### META · article_review · medium
+
+ID: `7f433838584c7ef75021b0b5`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/meta-advertising-ai-spending-earnings.md`, `content/earnings-profiles/meta.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
 
 ### META · article_review · medium
 
@@ -334,6 +360,16 @@ ID: `2130e79722eb732f70551388`
 Baseline consistency review of this article against the saved company results and its original sources.
 
 Files: `content/wealth/amazon-advertising-prime-day-timing.md`, `content/earnings-profiles/amzn.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-30
+
+### AMZN · article_review · low
+
+ID: `ad2ec106c4a862d1f8b6f98d`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/openai-aws-marketplace-enterprise-procurement-economics.md`, `content/earnings-profiles/amzn.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-30
 
@@ -569,6 +605,16 @@ Saved evidence: https://www.sec.gov/Archives/edgar/data/789019/00011931252643613
 
 ### MSFT · article_review · low
 
+ID: `b0a5fb3306c0f912d75b0503`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/openai-aws-marketplace-enterprise-procurement-economics.md`, `content/earnings-profiles/msft.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm · Q1 FY2027 · period end 2026-09-30 · filed 2026-10-28
+
+### MSFT · article_review · low
+
 ID: `d4bb6d909284a1efd3cf98bf`
 
 Baseline consistency review of this article against the saved company results and its original sources.
@@ -716,6 +762,16 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/tesla-services-gross-profit.md`, `content/earnings-profiles/tsla.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-22
+
+### UBER · article_review · low
+
+ID: `2c62ab7337de0efc0ab61352`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/revolut-pay-uber-rewards-payment-economics-2026.md`, `content/earnings-profiles/uber.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/1543151/000154315126000041/uber-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-11-04
 
 ### UBER · article_review · low
 
