@@ -1081,6 +1081,9 @@ def build_site(settings: Settings) -> dict:
     tools_by_slug = tool_catalogue(settings.content_dir, tools)
     # A source-backed snapshot; never manufacture programme-level allocations.
     spending_path = settings.content_dir / "public-spending-2026.json"
+    if not spending_path.is_file():
+        # Test fixture content trees omit site-wide data: use the checked-in snapshot.
+        spending_path = Path(__file__).resolve().parents[2] / "content" / "public-spending-2026.json"
     spending = json.loads(spending_path.read_text(encoding="utf-8"))
     if spending.get("year") != 2026 or not spending.get("categories"):
         raise ValueError("Where's My Money spending snapshot is missing or invalid")
