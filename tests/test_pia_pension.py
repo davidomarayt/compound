@@ -31,3 +31,21 @@ def test_javascript_arithmetic():
     if not shutil.which("node"):
         pytest.skip("Node.js unavailable")
     subprocess.run(["node",str(ROOT/"tests/pia_pension.cjs")],check=True,cwd=ROOT)
+
+def test_static_ai_comparison_is_indexable_and_grounded():
+    html=render_markdown(PAGE.split("---",2)[-1])
+    assert "Should I put money into a PIA or a pension in Ireland?" in html
+    assert '<!-- pia-pension-examples:start -->' in PAGE
+    assert "€412,420" in html
+    assert "€598,914" in html
+    assert "How Compound prepared and checks this comparison" in html
+    assert "https://www.revenue.ie/en/jobs-and-pensions/pension/relief/index.aspx" in html
+    original_models=html.split("Original PIA vs pension modelling",1)[1].split("What does the same €500 buy?",1)[0]
+    assert '<table>' in original_models, "Static model comparison must render as semantic HTML table"
+
+def test_comparison_has_webpage_and_free_webapp_metadata():
+    assert '"@type":"WebApplication"' in TEMPLATE
+    assert '"@type":"WebPage"' in TEMPLATE
+    assert 'dateModified":"2026-11-13"' in TEMPLATE
+    assert '"isAccessibleForFree":true' in TEMPLATE
+    assert "'pia-vs-pension'" in TEMPLATE
