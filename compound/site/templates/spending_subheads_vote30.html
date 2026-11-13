@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block head_title %}Agriculture Vote 30: 2026 Expenditure Subheads A, B and C | Compound{% endblock %}
+{% block meta %}<meta name="description" content="Explore Ireland's Agriculture Vote 30 spending line by line: 34 coded subheads, 2025 vs 2026 charts, and verified gross €2.317bn to net €1.818bn reconciliation.">{% endblock %}
+{% block head %}
+<link rel="canonical" href="{{ site_url }}{{ account.url }}">
+<link rel="stylesheet" href="/static/spending-explorer.css?v=20261113-subheads1">
+<script type="application/ld+json">{{ schema|tojson }}</script>
+{% endblock %}
+{% block content %}
+<article class="wmex wmex-subheads">
+<header class="wmex-hero wmex-detail-hero">
+<nav class="wmex-breadcrumb" aria-label="Breadcrumb"><a href="/">Compound</a><span>/</span><a href="/wheres-my-money/">Where's My Money?</a><span>/</span><a href="/wheres-my-money/spending/">Spending</a><span>/</span><a href="/wheres-my-money/spending/votes/">Dáil Votes</a><span>/</span><a href="{{ account.vote_url }}">Vote 30</a><span>/</span><span>Subheads</span></nav>
+<p class="wmex-eyebrow">WHERE'S MY MONEY? · DEEP ACCOUNTING</p><h1>Vote 30: Agriculture spending, down to the subhead.</h1>
+<p class="wmex-lead">An original 2026 breakdown of all four Agriculture Vote programme totals and {{ account.subhead_count }} identifiable expenditure subheads across programmes A, B and C. The numbers below reconcile with the official Revised Estimates, rather than adding overlapping Budget announcements.</p>
+<div class="wmex-hero-metrics">
+<div><span>2026 gross Vote</span><strong>€2.317bn</strong></div>
+<div><span>Appropriations-in-Aid</span><strong>€499.131m</strong></div>
+<div><span>2026 net Vote</span><strong>€1.818bn</strong></div>
+</div>
+<p class="wmex-hero-foot">2026 Revised Estimate and 2025 Supplementary Estimate. Planned budgets, not audited final outturns. Published source: Oireachtas, 25 February 2026.</p>
+</header>
+<nav class="wmex-page-nav" aria-label="Programme breakdown">{% for p in account.programmes %}<a href="#programme-{{ p.code|lower }}">Programme {{ p.code }}</a>{% endfor %}<a href="#gross-net">Gross to net</a><a href="#method">Methodology</a></nav>
+<section class="wmex-section" id="summary">
+<div class="wmex-section-heading"><p class="wmex-eyebrow">01 / THE FOUR OFFICIAL PROGRAMMES</p><h2>Four programmes. One reconciled total.</h2><p>Each amount is a 2026 gross programme allocation (before Appropriations-in-Aid). The figures below are mutually exclusive programme totals.</p></div>
+<div class="wmex-programme-grid">
+{% for p in account.programmes %}
+<a class="wmex-programme-card" href="#programme-{{ p.code|lower }}"><span class="wmex-prog-type">Programme {{ p.code }}</span><strong>{{ p.title }}</strong><span class="wmex-prog-amount">{{ p.amount_label }}</span><span class="wmex-programme-more">{% if p.rows %}Explore {{ p.rows|length }} actual subheads{% else %}Programme total only{% endif %} &rarr;</span></a>
+{% endfor %}
+</div>
+</section>
+{% for p in account.programmes %}
+<section class="wmex-section {% if loop.index is even %}wmex-warm{% endif %}" id="programme-{{ p.code|lower }}">
+<div class="wmex-section-heading"><p class="wmex-eyebrow">{{ "%02d"|format(loop.index + 1) }} / PROGRAMME {{ p.code }}</p><h2>{{ p.title }}</h2><p>2025 supplementary estimate: €{{ "%.3f"|format(p.total_2025/1000) }}m. 2026 revised estimate: {{ p.amount_label }}. Change: €{{ "%+.3f"|format(p.difference_000/1000) }}m.</p></div>
+{% if p.rows %}
+<div class="wmex-programme-chart" role="list" aria-label="Vote 30 programme {{ p.code }} coded subheads">
+{% for v in p.rows %}
+<a class="wmex-programme-chart-row" role="listitem" href="{{ v.url }}">
+<span class="wmex-programme-chart-head"><strong>{{ v.code }} · {{ v.title }}</strong><span>{{ v.amount_label }}</span></span>
+<span class="wmex-programme-chart-track" aria-hidden="true"><span style="width:{{ "%.2f"|format(v.bar_width) }}%"></span></span>
+<span class="wmex-programme-chart-foot">2026 Revised Estimate; change from 2025: €{{ "%+.3f"|format(v.delta_000/1000) }}m <span>View subhead &rarr;</span></span>
+</a>
+{% endfor %}
+</div>
+<div class="wmex-table-wrap wmex-subhead-table"><table class="wmex-table"><thead><tr><th>Subhead</th><th>2025 supplementary</th><th>2026 revised</th><th>Difference</th></tr></thead><tbody>
+{% for v in p.rows %}
+<tr><th scope="row"><a href="{{ v.url }}">{{ v.code }} {{ v.title }}</a></th><td>€{{ "%.3f"|format(v.amount_2025/1000) }}m</td><td>€{{ "%.3f"|format(v.amount_2026/1000) }}m</td><td>€{{ "%+.3f"|format(v.delta_000/1000) }}m</td></tr>
+{% endfor %}</tbody><tfoot><tr><th scope="row">Programme {{ p.code }} total</th><td>€{{ "%.3f"|format(p.total_2025/1000) }}m</td><td>€{{ "%.3f"|format(p.total_2026/1000) }}m</td><td>€{{ "%+.3f"|format(p.difference_000/1000) }}m</td></tr></tfoot></table></div>
+{% else %}
+<div class="wmex-evidence"><h3>Programme total, not an invented breakdown</h3><p>The committee source supplies a Programme D gross total but does not provide its underlying subhead table in this extract. We publish only the programme-level amount until a compatible official detail table is verified.</p></div>
+{% endif %}
+</section>
+{% endfor %}
+<section class="wmex-section" id="gross-net">
+<div class="wmex-section-heading"><p class="wmex-eyebrow">06 / WHY THE NUMBERS RECONCILE</p><h2>Gross allocations minus receipts equals the net Vote.</h2><p>The agriculture department's Vote is not simply the sum of Government support payments. Its gross programmes are partly financed by Appropriations-in-Aid, which reduce the supply requested from the Exchequer.</p></div>
+<div class="wmex-table-wrap"><table class="wmex-table"><thead><tr><th>Measure (€m)</th><th>2025 supplementary</th><th>2026 revised</th></tr></thead><tbody>
+<tr><th>Programmes A + B + C + D</th><td>€{{ "%.3f"|format(account.totals.gross_2025/1000) }}m</td><td>€{{ "%.3f"|format(account.totals.gross_2026/1000) }}m</td></tr>
+<tr><th>Less: Appropriations-in-Aid</th><td>−€{{ "%.3f"|format(account.totals.appropriations_2025/1000) }}m</td><td>−€{{ "%.3f"|format(account.totals.appropriations_2026/1000) }}m</td></tr></tbody><tfoot><tr><th>Net Exchequer supply grant</th><td>€{{ "%.3f"|format(account.totals.net_2025/1000) }}m</td><td>€{{ "%.3f"|format(account.totals.net_2026/1000) }}m</td></tr></tfoot></table></div>
+<p class="wmex-chart-note">Net 2026 supply matches the adopted Dáil Vote 30 figure in the <a href="{{ account.vote_url }}">Vote explorer</a>. Gross programme values are not the same as grants drawn from the Exchequer.</p>
+</section>
+<section class="wmex-section wmex-warm" id="method">
+<div class="wmex-section-heading"><p class="wmex-eyebrow">07 / SOURCE AND LIMITATIONS</p><h2>A traceable accounting hierarchy.</h2><p>This is an original Compound visualisation of official Oireachtas tables. Source documents remain available for verification, not as a replacement for the local charts and pages.</p></div>
+<div class="wmex-method-grid"><article><h3>Financial definitions</h3><p>2025 is the Supplementary Estimate; 2026 is the Revised Estimate. The comparison is not a measure of final spending or service outcomes.</p></article><article><h3>Coverage</h3><p>Programme D has a published total but its subheads are not present in the selected committee tables. We have not fabricated values or redistributed its total.</p></article><article><h3>Correct aggregation</h3><p>Programmes A to D sum to gross; Appropriations-in-Aid reduce gross to the net grant. Parent totals must not be added to their child subheads again.</p></article><article><h3>Original source</h3><p><a href="{{ account.source }}" target="_blank" rel="noopener noreferrer">{{ account.source_description }} &rarr;</a></p></article></div>
+<div class="wmex-links"><a href="{{ account.vote_url }}">Back to Vote 30 &rarr;</a><a href="/wheres-my-money/spending/votes/">All 2026 votes &rarr;</a><a href="/wheres-my-money/spending/programmes/">Programme announcements &rarr;</a><a href="/wheres-my-money/">My tax receipt &rarr;</a></div>
+</section>
+</article>
+{% endblock %}

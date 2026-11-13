@@ -1,0 +1,289 @@
+{
+  "year": 2026,
+  "vote": 30,
+  "updated": "2026-11-13",
+  "source": "https://data.oireachtas.ie/ie/oireachtas/committee/dail/34/select_committee_on_agriculture_and_food/submissions/2026/2026-02-25_opening-statement-minister-martin-heydon-t-d-department-of-agriculture-food-and-the-marine_en.pdf",
+  "source_description": "2026 Revised Estimates, Minister for Agriculture opening statement to Oireachtas Select Committee on 25 February 2026, tables 1–4",
+  "unit": "EUR thousands",
+  "comparison": "2025 Supplementary Estimate vs 2026 Revised Estimate",
+  "notes": "Full 2026 Vote 30 programme totals A–D reconcile to gross €2.316966bn. Only Programmes A, B and C have itemised subhead tables in this source; D is deliberately not presented as itemised. Appropriations-in-aid are receipts deducted from gross to calculate the net Vote.",
+  "totals": {
+    "gross_2025": 2237921,
+    "gross_2026": 2316966,
+    "appropriations_2025": 406516,
+    "appropriations_2026": 499131,
+    "net_2025": 1831405,
+    "net_2026": 1817835
+  },
+  "programmes": [
+    {
+      "code": "A",
+      "title": "Food Safety, Animal and Plant Health and Animal Welfare",
+      "total_2025": 495695,
+      "total_2026": 513929,
+      "rows": [
+        {
+          "code": "A.1",
+          "title": "Administration — Pay",
+          "amount_2025": 157074,
+          "amount_2026": 166419,
+          "explanation": "Pay funding supports staff involved in the department's food safety, animal health, plant health and animal welfare programme. It is administrative pay, not the direct cost of one disease-eradication scheme."
+        },
+        {
+          "code": "A.2",
+          "title": "Administration — Non-Pay",
+          "amount_2025": 83717,
+          "amount_2026": 71521,
+          "explanation": "Non-pay administration covers running costs assigned to this programme outside the direct pay line. Comparing it with A.1 gives a clearer picture of programme overheads, but not a full staffing-cost analysis."
+        },
+        {
+          "code": "A.3",
+          "title": "Food Safety, Animal and Plant Health and Animal Welfare",
+          "amount_2025": 97870,
+          "amount_2026": 95007,
+          "explanation": "This line supports programme activity around food safety, animal and plant health and animal welfare. It is separate from the dedicated bovine TB and brucellosis eradication line and the programme laboratory line."
+        },
+        {
+          "code": "A.4",
+          "title": "Bovine TB and Brucellosis Eradication",
+          "amount_2025": 136500,
+          "amount_2026": 158349,
+          "explanation": "This is the specifically identified budget line for bovine TB and brucellosis eradication. Readers can distinguish this programme expenditure from farming support payments, while recognising that actual eradication outcomes require separate disease surveillance data."
+        },
+        {
+          "code": "A.5",
+          "title": "Laboratories",
+          "amount_2025": 20534,
+          "amount_2026": 22633,
+          "explanation": "The laboratories subhead funds laboratory activity within the food safety and animal- and plant-health programme. Laboratory processing and diagnostics are not equivalent to the cost of one farm's individual tests."
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Farm and Sector Supports and Controls",
+      "total_2025": 1132652,
+      "total_2026": 1152675,
+      "rows": [
+        {
+          "code": "B.1",
+          "title": "Administration — Pay",
+          "amount_2025": 76861,
+          "amount_2026": 81433,
+          "explanation": "Pay expenditure supports the administration and oversight of farm-sector supports and controls. This is not money transferred directly to scheme participants."
+        },
+        {
+          "code": "B.2",
+          "title": "Administration — Non-Pay",
+          "amount_2025": 36665,
+          "amount_2026": 37853,
+          "explanation": "This administration non-pay line supports the operating activities associated with farm supports and controls. It should not be merged into any individual grant scheme."
+        },
+        {
+          "code": "B.3",
+          "title": "Agri-Environmental Schemes",
+          "amount_2025": 63723,
+          "amount_2026": 49598,
+          "explanation": "The broad agri-environmental schemes entry is a distinct subhead from the ACRES line also listed in Programme B. Their individual values should not be casually combined or conflated."
+        },
+        {
+          "code": "B.4",
+          "title": "Areas of Natural Constraint",
+          "amount_2025": 249000,
+          "amount_2026": 247000,
+          "explanation": "Areas of Natural Constraint funding addresses eligible agricultural land in designated areas and can form an important element of farm support. The figure is a budget allocation, not the amount received by any one farm."
+        },
+        {
+          "code": "B.5",
+          "title": "Development of Agriculture and Food — Farm",
+          "amount_2025": 62950,
+          "amount_2026": 99500,
+          "explanation": "This line covers development activity related to agriculture and food at farm level. It is separate from the non-farm development and promotion subhead under Programme C."
+        },
+        {
+          "code": "B.6",
+          "title": "Beef Sustainability Schemes",
+          "amount_2025": 94761,
+          "amount_2026": 94761,
+          "explanation": "The Beef Sustainability Schemes subhead provides a clearly identified farm programme budget line. Determining farm-level entitlements requires the scheme's own application and payment conditions."
+        },
+        {
+          "code": "B.7",
+          "title": "Knowledge Transfer",
+          "amount_2025": 7532,
+          "amount_2026": 8250,
+          "explanation": "Knowledge transfer spending supports learning, training and information exchange in the agri-food sector. The number alone does not show the number or outcomes of participants supported."
+        },
+        {
+          "code": "B.8",
+          "title": "Sheep Improvement Scheme",
+          "amount_2025": 20000,
+          "amount_2026": 42000,
+          "explanation": "The Sheep Improvement Scheme line is labelled separately from other livestock and welfare programmes. This is the vote's 2026 allocation under that subhead, not a prediction of actual sheep payments."
+        },
+        {
+          "code": "B.10",
+          "title": "Forestry and Bioenergy",
+          "amount_2025": 91007,
+          "amount_2026": 96590,
+          "explanation": "Forestry and bioenergy activity is included within farm and sector supports and controls. The allocation is not interchangeable with all climate funding or spending on individual woodland projects."
+        },
+        {
+          "code": "B.11",
+          "title": "Control and Other Support Scheme Costs",
+          "amount_2025": 14567,
+          "amount_2026": 23808,
+          "explanation": "Control and other support scheme costs relate to the management and delivery of programmes. This entry should not be treated as a farm payment in itself."
+        },
+        {
+          "code": "B.12",
+          "title": "Other Schemes",
+          "amount_2025": 22138,
+          "amount_2026": 282,
+          "explanation": "The 2026 estimate for the Other Schemes line is much lower than the 2025 supplementary estimate. That difference may involve classification or timing; the table alone does not establish a cut to every beneficiary."
+        },
+        {
+          "code": "B.13",
+          "title": "Carbon Tax Measures and Just Transition Fund",
+          "amount_2025": 3000,
+          "amount_2026": 3000,
+          "explanation": "Carbon-tax measures and just-transition funding appear as a distinct agriculture subhead. This should not be read as the total State budget for climate action or the Just Transition Fund."
+        },
+        {
+          "code": "B.14",
+          "title": "Agri-Climate Rural Environment Scheme (ACRES)",
+          "amount_2025": 295000,
+          "amount_2026": 280000,
+          "explanation": "ACRES is Ireland's agri-climate rural environment scheme. The 2026 revised estimate is a distinct B.14 subhead and should not be added to an earlier departmental announcement about the same scheme."
+        },
+        {
+          "code": "B.15",
+          "title": "Organic Farming Scheme",
+          "amount_2025": 60798,
+          "amount_2026": 58600,
+          "explanation": "The Organic Farming Scheme has a dedicated Programme B subhead. Its allocation is a programme envelope rather than a payment rate or guaranteed entitlement for an individual applicant."
+        },
+        {
+          "code": "B.16",
+          "title": "Tillage and Horticulture Scheme",
+          "amount_2025": 32400,
+          "amount_2026": 30000,
+          "explanation": "The Tillage and Horticulture Scheme is a separately identified spending line. Changes in its budget do not necessarily imply the same proportional change for every participant."
+        },
+        {
+          "code": "B.17",
+          "title": "Long Established Young Farmer",
+          "amount_2025": 2250,
+          "amount_2026": 0,
+          "explanation": "The 2026 revised estimate shows a zero allocation to this specific Long Established Young Farmer subhead, compared with a non-zero 2025 supplementary estimate. That is not evidence that all young-farmer support has ended."
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Policy and Strategy",
+      "total_2025": 436004,
+      "total_2026": 470272,
+      "rows": [
+        {
+          "code": "C.1",
+          "title": "Administration — Pay",
+          "amount_2025": 21904,
+          "amount_2026": 23207,
+          "explanation": "Programme C administration pay supports the policy and strategy functions of the agriculture department. It is separate from the pay lines in Programmes A and B."
+        },
+        {
+          "code": "C.2",
+          "title": "Administration — Non-Pay",
+          "amount_2025": 7659,
+          "amount_2026": 9742,
+          "explanation": "Non-pay administration includes running costs of the policy and strategy programme. It does not directly measure the volume or effectiveness of policy decisions."
+        },
+        {
+          "code": "C.3",
+          "title": "Research, Quality and Certification",
+          "amount_2025": 39895,
+          "amount_2026": 28910,
+          "explanation": "Research, quality and certification spending is separately identifiable here, distinct from programme laboratory funding and grants to Teagasc."
+        },
+        {
+          "code": "C.4",
+          "title": "Development and Promotion of Agriculture and Food — Non-Farm",
+          "amount_2025": 11727,
+          "amount_2026": 6837,
+          "explanation": "This entry supports development and promotion of agriculture and food outside the farm-level measures presented under Programme B."
+        },
+        {
+          "code": "C.5",
+          "title": "Teagasc Grant",
+          "amount_2025": 175437,
+          "amount_2026": 175622,
+          "explanation": "Teagasc receives its own grant allocation within the policy and strategy programme. It should not be combined with generic research expenditure without matching the accounting boundaries."
+        },
+        {
+          "code": "C.6",
+          "title": "Bord Bia Grant",
+          "amount_2025": 59048,
+          "amount_2026": 60280,
+          "explanation": "The Bord Bia grant is separately budgeted within the agriculture Vote. It supports the organisation's mandate and is not the full value of Irish food exports or private industry marketing."
+        },
+        {
+          "code": "C.7",
+          "title": "Horse and Greyhound Racing Fund",
+          "amount_2025": 99103,
+          "amount_2026": 99103,
+          "explanation": "The Horse and Greyhound Racing Fund is a dedicated expenditure line. Its exact statutory objectives and beneficiaries require reference to the fund's financial reporting."
+        },
+        {
+          "code": "C.8",
+          "title": "CEDRA Rural Innovation and Development Fund",
+          "amount_2025": 1760,
+          "amount_2026": 2000,
+          "explanation": "The CEDRA Rural Innovation and Development Fund appears as a specific policy-and-strategy subhead. Its value does not represent total rural-development expenditure across government."
+        },
+        {
+          "code": "C.9",
+          "title": "Food Aid Donations — World Food Programme",
+          "amount_2025": 0,
+          "amount_2026": 35000,
+          "explanation": "The 2026 revised estimate introduces a separately listed World Food Programme food-aid donation allocation after a zero 2025 supplementary estimate in this subhead."
+        },
+        {
+          "code": "C.10",
+          "title": "SBCI Loan Scheme",
+          "amount_2025": 300,
+          "amount_2026": 6400,
+          "explanation": "A dedicated SBCI Loan Scheme line is reported within Programme C. The allocated amount should not be treated as the entire value of loans issued to businesses."
+        },
+        {
+          "code": "C.11",
+          "title": "Other Services",
+          "amount_2025": 12044,
+          "amount_2026": 14243,
+          "explanation": "Other Services is an administrative subhead within Programme C. Its total should not be interpreted as unidentified national expenditure; further appropriation-account detail may be available."
+        },
+        {
+          "code": "C.12",
+          "title": "Other Equine Supports",
+          "amount_2025": 5200,
+          "amount_2026": 5729,
+          "explanation": "Other Equine Supports are separate from the Horse and Greyhound Racing Fund. Their different statutory and programme purposes need to remain distinct."
+        },
+        {
+          "code": "C.13",
+          "title": "Agri-Food Regulator",
+          "amount_2025": 1927,
+          "amount_2026": 3199,
+          "explanation": "The Agri-Food Regulator has its own 2026 subhead. This funding relates to the regulator's activities, not the value of transactions it oversees."
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Seafood Sector",
+      "total_2025": 173570,
+      "total_2026": 180090,
+      "rows": []
+    }
+  ]
+}

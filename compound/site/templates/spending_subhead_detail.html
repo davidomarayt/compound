@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block head_title %}2026 Agriculture Subhead {{ item.code }}: {{ item.title }} Budget | Compound{% endblock %}
+{% block meta %}<meta name="description" content="Vote 30 {{ item.code }}: {{ item.title }} 2026 Irish Revised Estimate {{ item.amount_label }}. Compare 2025, see change and official Oireachtas source.">{% endblock %}
+{% block head %}
+<link rel="canonical" href="{{ site_url }}{{ item.url }}">
+<meta property="og:type" content="article"><meta property="og:title" content="Vote 30 {{ item.code }}: {{ item.title }} — 2026 spending"><meta property="og:description" content="{{ item.amount_label }} in 2026 Revised Estimates. Full breakdown and primary source."><meta property="og:url" content="{{ site_url }}{{ item.url }}">
+<link rel="stylesheet" href="/static/spending-explorer.css?v=20261113-subheads1">
+<script type="application/ld+json">{{ schema|tojson }}</script>
+{% endblock %}
+{% block content %}
+<article class="wmex wmex-subhead-detail">
+<header class="wmex-hero wmex-detail-hero">
+<nav class="wmex-breadcrumb" aria-label="Breadcrumb"><a href="/">Compound</a><span>/</span><a href="/wheres-my-money/spending/">Spending</a><span>/</span><a href="/wheres-my-money/spending/votes/">Votes</a><span>/</span><a href="{{ account.vote_url }}">Vote 30</a><span>/</span><a href="{{ account.url }}">Subheads</a><span>/</span><span>{{ item.code }}</span></nav>
+<p class="wmex-eyebrow">AGRICULTURE VOTE 30 · SUBHEAD {{ item.code }} · REV 2026</p>
+<h1>{{ item.title }}: Ireland's 2026 spending allocation</h1>
+<p class="wmex-lead">{{ item.explanation }}</p>
+<div class="wmex-hero-metrics"><div><span>2026 Revised Estimate</span><strong>{{ item.amount_label }}</strong></div><div><span>2025 Supplementary Estimate</span><strong>€{{ "%.3f"|format(item.amount_2025/1000) }}m</strong></div><div><span>Difference</span><strong>€{{ "%+.3f"|format(item.delta_000/1000) }}m</strong></div></div>
+<p class="wmex-hero-foot">Vote 30 · Programme {{ item.programme_code }}. Amounts are official €000 estimates converted to millions and are not final outturns.</p>
+</header>
+<section class="wmex-section"><div class="wmex-section-heading"><p class="wmex-eyebrow">01 / WHAT THIS BUDGET MEANS</p><h2>The official {{ item.code }} subhead.</h2><p>{{ item.explanation }}</p></div>
+<div class="wmex-programme-analysis"><div class="wmex-programme-main"><p class="wmex-analysis-label">2026 public funding estimate</p><p class="wmex-analysis-amount">{{ item.amount_label }}</p><p><strong>Accounting home:</strong> Vote 30 Agriculture, Food and the Marine → Programme {{ item.programme_code }} ({{ item.programme_title }}) → Subhead {{ item.code }}.</p><p>Unlike a broad departmental Budget announcement, this amount appears as a coded subhead in the official Revised Estimates table. The figure is part of the programme total, not an extra amount to add above it.</p></div><aside class="wmex-interpretation"><h3>What to understand</h3><p>The 2025 comparator is a supplementary estimate, not an audited full-year outturn. The 2026 amount is a revised budget estimate. A difference between these two does not by itself establish a change in eligibility or the outcome of services.</p><p>The original source does not establish a payment to an individual farmer, organisation or household.</p></aside></div></section>
+<section class="wmex-section wmex-warm"><div class="wmex-section-heading"><p class="wmex-eyebrow">02 / YEAR-ON-YEAR COMPARISON</p><h2>What changed in the official estimates?</h2><p>This comparison is directly from the Department's 2026 Oireachtas committee tables, preserving the different accounting status of the two years.</p></div>
+<div class="wmex-table-wrap"><table class="wmex-table"><thead><tr><th>Period</th><th>Official amount</th><th>Basis</th></tr></thead><tbody><tr><th>2025</th><td>€{{ "%.3f"|format(item.amount_2025/1000) }}m</td><td>Supplementary Estimate</td></tr><tr><th>2026</th><td>{{ item.amount_label }}</td><td>Revised Estimate</td></tr></tbody><tfoot><tr><th>Change</th><td>€{{ "%+.3f"|format(item.delta_000/1000) }}m</td><td>Comparison of Estimates</td></tr></tfoot></table></div>
+{% if item.delta_pct is not none %}<p class="wmex-chart-note">Percentage change from the 2025 supplementary estimate: {{ "%+.2f"|format(item.delta_pct) }}%. {% else %}<p class="wmex-chart-note">The 2025 amount is zero, so a percentage change would be undefined. {% endif %}The data does not establish the same percentage change in actual expenditure.</p></section>
+<section class="wmex-section"><div class="wmex-section-heading"><p class="wmex-eyebrow">03 / FOLLOW THE FUNDING</p><h2>Explore the parent programme and other subheads.</h2><p>All line items are included once in their programme totals. View the whole table to compare staff costs, schemes and grants without double-counting.</p></div>
+<div class="wmex-links"><a href="{{ account.url }}#programme-{{ item.programme_code|lower }}">Programme {{ item.programme_code }}: {{ item.programme_title }} &rarr;</a><a href="{{ account.vote_url }}">Vote 30 total &rarr;</a><a href="/wheres-my-money/spending/votes/">All Dáil Votes &rarr;</a><a href="/wheres-my-money/">Personal tax receipt &rarr;</a></div>
+<div class="wmex-source-note"><h3>Original source and provenance</h3><p>{{ account.source_description }}. The source provides this subhead's code and the 2025 and 2026 line amounts in €000.</p><p><a href="{{ account.source }}" target="_blank" rel="noopener noreferrer">View the Oireachtas source document &rarr;</a>. Last verified {{ account.updated }}. Compound reproduces the figures as its own accessible charts and tables; the document is supplied for verification.</p></div></section>
+</article>
+{% endblock %}

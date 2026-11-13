@@ -28,6 +28,7 @@ from compound.site.pia import load_pia_tracker
 from compound.site.spending_explorer import prepare_spending_explorer
 from compound.site.spending_programmes import prepare_programmes
 from compound.site.spending_votes import prepare_votes
+from compound.site.spending_vote30 import prepare_vote30_subheads
 from compound.site.earnings_view import load_company_report
 from compound.site.earnings_archive import prepare_recent_earnings
 from compound.site.earnings_seo import PRIORITY as EARNINGS_SEO_PRIORITY, ORDER as EARNINGS_SEO_ORDER, build_earnings_seo, fiscal_period_display
@@ -1113,6 +1114,10 @@ def build_site(settings: Settings) -> dict:
     spending = prepare_votes(
         spending, json.loads(vote_path.read_text(encoding="utf-8"))
     )
+    vote30_path = settings.content_dir / "public-spending-vote30-subheads-2026.json"
+    if not vote30_path.is_file():
+        vote30_path = Path(__file__).resolve().parents[2] / "content" / "public-spending-vote30-subheads-2026.json"
+    spending = prepare_vote30_subheads(spending, json.loads(vote30_path.read_text(encoding="utf-8")))
     for article in articles:
         if len(article.related_tools) > 4:
             raise ValueError(f"Keep related_tools to four or fewer on {article.slug}")
@@ -1124,6 +1129,8 @@ def build_site(settings: Settings) -> dict:
     reserved.add("/wheres-my-money/spending/")
     reserved.add("/wheres-my-money/spending/programmes/")
     reserved.add("/wheres-my-money/spending/votes/")
+    reserved.add(spending["vote30_account"]["url"])
+    reserved.update(item["url"] for item in spending["vote30_account"]["subheads"])
     reserved.update(vote["url"] for vote in spending["vote_details"])
     reserved.update(category["url"] for category in spending["categories"])
     reserved.update(programme["url"] for programme in spending["programmes"])
@@ -1305,6 +1312,45 @@ def build_site(settings: Settings) -> dict:
                     "url": settings.site_base_url + v["url"] if v["detail"] else None}
                    for v in spending["votes"]
                ],
+           }, ensure_ascii=False, indent=2))
+    vote30 = spending["vote30_account"]
+    subhead_hub_schema = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "2026 Agriculture Vote 30 Revised Estimates: 34 Expenditure Subheads",
+        "url": settings.site_base_url + vote30["url"],
+        "dateModified": vote30["updated"],
+        "citation": [vote30["source"]],
+    }
+    _write(out / vote30["url"].strip("/") / "index.html",
+           env.get_template("spending_subheads_vote30.html").render(
+               title="Agriculture Vote 30 — 2026 Revised Estimates Subheads",
+               pillar="wealth", wmm_page=True,
+               account=vote30, spending=spending, schema=subhead_hub_schema))
+    for item in vote30["subheads"]:
+        subhead_schema = {
+            "@context": "https://schema.org", "@type": "WebPage",
+            "name": "Agriculture Vote 30 Subhead " + item["code"] + " — " + item["title"],
+            "url": settings.site_base_url + item["url"],
+            "dateModified": vote30["updated"],
+            "citation": [vote30["source"]],
+            "isPartOf": settings.site_base_url + vote30["url"],
+        }
+        _write(out / item["url"].strip("/") / "index.html",
+               env.get_template("spending_subhead_detail.html").render(
+                   title=item["title"] + " — Agriculture Vote 30 2026",
+                   pillar="wealth", wmm_page=True, account=vote30,
+                   item=item, spending=spending, schema=subhead_schema))
+    _write(out / vote30["url"].strip("/") / "index.json",
+           json.dumps({
+               "year": 2026, "vote": 30, "source": vote30["source"],
+               "unit": vote30["unit"], "comparison": vote30["comparison"],
+               "totals": vote30["totals"],
+               "subheads": [{"code": item["code"], "name": item["title"],
+                   "amount_2025_eur_thousands": item["amount_2025"],
+                   "amount_2026_eur_thousands": item["amount_2026"],
+                   "url": settings.site_base_url + item["url"]}
+                   for item in vote30["subheads"]],
            }, ensure_ascii=False, indent=2))
     for vote in spending["vote_details"]:
         vote_schema = {
@@ -1988,6 +2034,7 @@ def build_site(settings: Settings) -> dict:
         (settings.site_base_url + "/wheres-my-money/spending/", spending["updated"]),
         (settings.site_base_url + "/wheres-my-money/spending/programmes/", spending["programme_updated"]),
         (settings.site_base_url + "/wheres-my-money/spending/votes/", spending["vote_date"]),
+        (settings.site_base_url + spending["vote30_account"]["url"], spending["vote30_account"]["updated"]),
         (settings.site_base_url + "/news/", None),
         (settings.site_base_url + "/wealth/earnings/", None),
         (settings.site_base_url + "/stocks/", None),
@@ -2004,6 +2051,10 @@ def build_site(settings: Settings) -> dict:
     sitemap_entries.extend(
         (settings.site_base_url + vote["url"], spending["vote_date"])
         for vote in spending["vote_details"]
+    )
+    sitemap_entries.extend(
+        (settings.site_base_url + item["url"], spending["vote30_account"]["updated"])
+        for item in spending["vote30_account"]["subheads"]
     )
     sitemap_entries.extend([
         (settings.site_base_url + "/pia/", pia_updated),
