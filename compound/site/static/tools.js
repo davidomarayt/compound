@@ -394,18 +394,24 @@
       case 'pia': {
         const annual=Math.max(0,Math.min(12000,v.annual_contribution)), years=Math.max(1,Math.round(v.years));
         items.push(annual>=12000?'The projection uses the full announced €12,000 annual PIA contribution limit.':'The projection uses '+money(annual)+' a year, below the announced €12,000 maximum.');
-        const grossAnnual=Math.max(-.99,v.return_rate/100), monthlyContribution=annual/12, r=Math.pow(1+grossAnnual,1/12)-1;
-        const fee=Boolean(v.__advanced)?Math.max(0,v.annual_fee/100):0, feeMonthFactor=Math.pow(Math.max(.000001,1-fee),1/12);
+        const grossAnnual=Math.max(-.99,v.return_rate/100), monthlyContribution=annual/12;
+        const fee=Boolean(v.__advanced)?Math.max(0,v.annual_fee/100):0;
+        const dailyFactor=Math.pow((1+grossAnnual)*Math.max(.000001,1-fee),1/365);
+        const monthEnds=[31,59,90,120,151,181,212,243,273,304,334,365];
         let bal=Math.max(0,v.current_balance), first=null;
         for(let year=1;year<=years;year++){
-          const vals=[];
-          for(let m=0;m<12;m++){bal=bal*(1+r)*feeMonthFactor+monthlyContribution;vals.push(bal);}
-          const avg=vals.reduce((a,b)=>a+b,0)/12, tax=Math.max(0,avg-50000)*.01;
+          let sumDailyValues=0, monthIndex=0;
+          for(let day=1;day<=365;day++){
+            bal=Math.max(0,bal*dailyFactor);
+            if(day===monthEnds[monthIndex]){bal+=monthlyContribution;monthIndex++;}
+            sumDailyValues+=bal;
+          }
+          const avg=sumDailyValues/365, tax=Math.max(0,avg-50000)*.01;
           if(tax>0&&first===null) first=year;
           bal=Math.max(0,bal-tax);
         }
         items.push(first===null?'The modelled average account value does not cross the €50,000 tax threshold within the selected period.':'The first modelled PIA charge appears in Year '+first+' under these smooth-return assumptions.');
-        items.push('The Finance Bill still has to finalise the official valuation mechanics, so treat this as a planning estimate rather than a Revenue calculation.');
+        items.push('The model averages 365 estimated daily closing values per full year; actual tax uses the applicable statutory period and daily records. This remains a planning estimate, not a Revenue calculation.');
         break;
       }
       case 'regular_savings': {
@@ -952,23 +958,32 @@
       const years=Math.max(1,Math.round(v.years)), annualContribution=Math.max(0,Math.min(12000,v.annual_contribution));
       const monthlyContribution=annualContribution/12, grossAnnual=Math.max(-.99,v.return_rate/100);
       const annualFee=advanced?Math.max(0,v.annual_fee/100):0;
-      const grossMonthly=Math.pow(1+grossAnnual,1/12)-1;
-      const feeMonthFactor=Math.pow(Math.max(.000001,1-annualFee),1/12);
+      // A 365-day illustrative year: daily closing values, with contributions at month end.
+      // Calendar-month contribution dates are those of a non-leap year. Actual providers
+      // will use the real days and balances for the relevant tax period.
+      const monthEnds=[31,59,90,120,151,181,212,243,273,304,334,365];
+      const grossDaily=Math.pow(1+grossAnnual,1/365);
+      const feeDaily=Math.pow(Math.max(.000001,1-annualFee),1/365);
       const simulate=applyTax=>{
         let bal=Math.max(0,v.current_balance), contributed=bal, totalTax=0, totalFees=0, firstTaxYear=null, finalYearTax=0, finalYearAverage=bal;
         const labels=['Start'], balances=[bal], contributions=[contributed], thresholds=[threshold];
         for(let year=1;year<=years;year++){
-          const monthEnds=[];
-          for(let month=1;month<=12;month++){
-            const beforeFee=bal*(1+grossMonthly);
-            const afterFee=beforeFee*feeMonthFactor;
-            const feeCharge=Math.max(0,beforeFee-afterFee);
-            totalFees+=feeCharge;
-            bal=Math.max(0,afterFee)+monthlyContribution;
-            contributed+=monthlyContribution;
-            monthEnds.push(bal);
+          let sumDailyValues=0, monthIndex=0;
+          for(let day=1;day<=365;day++){
+            const beforeFee=bal*grossDaily;
+            const afterFee=beforeFee*feeDaily;
+            totalFees+=Math.max(0,beforeFee-afterFee);
+            bal=Math.max(0,afterFee);
+            // Monthly contributions enter at the end of each modelled month.
+            if(day===monthEnds[monthIndex]){
+              bal+=monthlyContribution;
+              contributed+=monthlyContribution;
+              monthIndex++;
+            }
+            // Includes investments and cash in the modelled closing balance.
+            sumDailyValues+=bal;
           }
-          const avg=monthEnds.reduce((a,b)=>a+b,0)/monthEnds.length;
+          const avg=sumDailyValues/365;
           const piaTax=applyTax?Math.max(0,avg-threshold)*taxRate:0;
           if(piaTax>0&&firstTaxYear===null) firstTaxYear=year;
           totalTax+=piaTax;
@@ -1002,7 +1017,7 @@
         __chart:{
           type:'line',
           title:'Projected PIA value and the €50,000 threshold',
-          caption:advanced?'Contributions are spread evenly through each year. The projection applies the return and fee assumptions, then deducts the modelled annual PIA charge using the average of month-end values.':'Contributions are spread evenly through each year. The projection applies the entered return and deducts the modelled annual PIA charge using the average of month-end values.',
+          caption:advanced?'Contributions are spread evenly through each year. The projection applies the return and fee assumptions, then deducts the modelled annual PIA charge using the average of modelled daily closing values.':'Contributions are spread evenly through each year. The projection applies the entered return and deducts the modelled annual PIA charge using the average of modelled daily closing values.',
           labels:main.labels,
           series:[
             {label:'Projected PIA value',values:main.balances},
