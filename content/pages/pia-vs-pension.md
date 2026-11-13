@@ -1,9 +1,17 @@
 ---
 title: "PIA vs Pension Calculator Ireland: Tax Relief, Fees & Growth"
 canonical_path: /pia/vs-pension/
-meta_description: "Interactive PIA vs pension calculator for Ireland: compare the same take-home cost, pension tax relief, employer contributions, fees and retirement deductions. See the effect of 20% and 40% tax relief, employer matching and access before retirement."
+meta_description: "PIA vs pension Ireland: should you invest in a PIA or PRSA? Compare €250, €500 and €1,000 monthly examples, 20%/40% tax relief, employer match, fees and retirement access."
 ---
-[PIA Centre](/pia/) · Calculator added 13 November 2026; article reviewed 7 November 2026. The PIA examples use the Finance Bill as introduced on 19 October 2026. The planned opening is 1 July 2027, subject to the final rules and provider readiness.
+[PIA Centre](/pia/) · Calculator and original scenario table updated 13 November 2026; source material reviewed 13 November 2026. The PIA examples use the Finance Bill as introduced on 19 October 2026. The planned opening is 1 July 2027, subject to the final rules and provider readiness.
+
+## Should I put money into a PIA or a pension in Ireland?
+
+**Short answer (13 November 2026):** A pension often has an advantage for money earmarked for retirement, because qualifying personal contributions can receive Income Tax relief and some employers add contributions. The proposed **Personal Investment Account (PIA)** is designed for more flexible access before retirement but has **no announced upfront pension-style tax relief**. The right place for your next euro depends on your remaining relief allowance, any *additional* employer match, when you will need the money, fees, and the tax due when pension benefits are eventually drawn.
+
+For example, **€500 of take-home pay each month** could fund **€625/month into a pension at 20% relief** or **€833.33/month at 40% relief**, if the *entire* contribution qualifies. The same €500/month could go into a PIA under the announced €12,000 annual cap. **This is not a guaranteed winner:** pension money is normally subject to access restrictions and later tax; the PIA carries market risk, provider charges and a proposed annual account-value charge above €50,000.
+
+**Use the free [PIA vs pension calculator](#pia-pension-calc-title)** for your own assumptions, or see the [source-linked worked comparisons](#pia-pension-evidence) below. This is general educational information, not individual financial advice.
 
 **If you can spare €500 a month until retirement, that can put €625 into a pension at 20% Income Tax relief, or about €833 at 40%, before any employer match.** The same €500 of take-home pay puts €500 into the proposed Irish Personal Investment Account (PIA). If you expect to spend the money before you can draw your pension, the PIA’s proposed access rules may matter more than the pension’s larger starting amount.
 
@@ -92,6 +100,33 @@ meta_description: "Interactive PIA vs pension calculator for Ireland: compare th
 </section>
 
 
+## Original PIA vs pension modelling: 30-year scenarios {#pia-pension-evidence}
+
+These are **Compound's original calculated illustrations**, not provider quotations, government forecasts or historical performance. Unlike a calculator requiring JavaScript, this comparison table is included directly in the page's HTML so readers and crawlers can inspect it. It is generated from [the same published calculator model](#pia-pension-calc-title), with a regression test that fails if the figures stop matching.
+
+**Common assumptions (held constant across all 12 scenarios):** €0 starting balance; 30 complete modelled years from age 35 to 65; 6% hypothetical annual gross return; 0.25% annual PIA investment/provider fee; 0.75% pension fee; and 12 end-of-month payments per year. A pension contribution is grossed up for the stated Income Tax relief **only up to an assumed €23,000 remaining qualifying annual contribution allowance**. The €0/€100 employer figures are *incremental monthly employer payments*, not a match already earned. Each PIA projection applies the **proposed 1% charge** to the part of its modelled **average daily account value above €50,000**, deducted annually. The pension's after-deductions illustration assumes a **25% pension lump sum capped at €200,000** and an **illustrative 20% effective deduction on the remainder**; real retirement and lump-sum taxation may be substantially different.
+
+<!-- pia-pension-examples:start -->
+| Take-home budget | Pension relief | Extra employer contribution | PIA after PIA charge | Pension before retirement tax | Pension after illustrative retirement deductions |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| €250/month | 20% | €0/month | €214,589 | €264,227 | €224,593 |
+| €250/month | 20% | €100/month | €214,589 | €348,779 | €296,462 |
+| €250/month | 40% | €0/month | €214,589 | €352,302 | €299,457 |
+| €250/month | 40% | €100/month | €214,589 | €436,855 | €371,327 |
+| €500/month | 20% | €0/month | €412,420 | €528,454 | €449,186 |
+| €500/month | 20% | €100/month | €412,420 | €613,006 | €521,055 |
+| €500/month | 40% | €0/month | €412,420 | €704,605 | €598,914 |
+| €500/month | 40% | €100/month | €412,420 | €789,157 | €670,784 |
+| €1,000/month | 20% | €0/month | €802,470 | €1,056,907 | €885,526 |
+| €1,000/month | 20% | €100/month | €802,470 | €1,141,460 | €953,168 |
+| €1,000/month | 40% | €0/month | €802,470 | €1,409,210 | €1,167,368 |
+| €1,000/month | 40% | €100/month | €802,470 | €1,493,762 | €1,235,010 |
+<!-- pia-pension-examples:end -->
+
+**How to interpret the comparison:** The PIA column represents a projected account balance *after* the modelled yearly PIA charge and fees. The pension's middle column represents the **gross invested pension**, not money that can necessarily be spent. Its final column is a simplified illustrative after-deductions amount, **not a lump-sum entitlement, tax forecast, or accessible balance before permitted retirement age**. A different pension exit-tax assumption, drawdown path, contribution allowance, provider fee or market return can materially change the comparison. These scenarios assume full modelled years and **do not model the partial launch year in 2027**.
+
+**Why this matters:** For €500/month with 40% qualifying relief and no extra employer contribution, the model projects a PIA of **€412,420** and a gross pension of **€704,605** after 30 years, or **€598,914** under the *illustrative* pension deduction assumption. These values demonstrate how different contribution tax treatment and fees compound; they are not a recommendation to prefer either account.
+
 ## What does the same €500 buy?
 
 These examples assume an employee making a qualifying personal contribution to a defined contribution workplace pension or PRSA. The whole contribution qualifies for the relief shown. Each row reduces spendable income by €6,000 a year. Employer contributions, fees, investment returns and retirement taxes are excluded from this first comparison.
@@ -129,6 +164,30 @@ The €10,000 in the pension row is a **gross pension contribution**. As a simpl
 Consider someone with €500 available each month, 20% relief, and the €100 employer match above. They want retirement savings and a fund they could use in their fifties. A €100 gross pension contribution costs €80 of take-home pay and attracts €100 from the employer. That leaves **€420 for the proposed PIA**. The monthly result is €200 in the pension and €420 earmarked for earlier access. This split assumes those are the scheme’s actual matching terms. Money needed on a fixed date can lose value in either account if invested in markets.
 
 For your own comparison, start with the date you need the money, the employer match still available, and the tax relief you can actually claim. Then compare fees on similar investments. These examples concern voluntary employee pension contributions. Auto-enrolment has a different contribution and top-up structure.
+
+## Quick answers to common PIA-versus-pension questions
+
+### Is a PIA better than a pension if I pay 40% Income Tax?
+
+Not necessarily. If your *next* qualifying pension contribution genuinely obtains 40% Income Tax relief, €500 of take-home cost can buy about €833 of gross pension contributions before any employer payment. The PIA would receive €500. But retirement taxation, limited access, fees and investment choices also matter. If your annual tax-relief limit is used up, the 40% gross-up assumption is not valid.
+
+### Should I contribute to my pension before opening a PIA?
+
+Check any employer matching on **additional** pension contributions and the relief still available on those contributions first. Pension benefits may be especially compelling for retirement, whereas a proposed PIA may better suit investments that must be accessible before retirement. Money needed soon may belong in cash rather than either market-invested account.
+
+### Do pensions and PIAs have the same tax rules?
+
+No. The proposed PIA involves a 1% annual charge on the relevant average account value **above €50,000**, rather than a pension-style Income Tax deduction on the way in. Approved pensions have different contribution relief, investment growth, retirement access and withdrawal-tax rules. The PIA framework is still proposed, so the enacted law should take precedence.
+
+### Are the table figures guaranteed returns or investment advice?
+
+No. The results use a fixed 6% annual investment return and other explicit assumptions. Markets can fall, fees can change, pension withdrawal taxation is individual, and the PIA legislation and product terms remain unfinished. The table is designed to make assumptions testable, not to prescribe a financial product.
+
+## How Compound prepared and checks this comparison
+
+**Publisher:** Compound.ie. **Page and calculations updated:** 13 November 2026. The worked examples and interactive tool are calculated with the same browser-based mathematical model. Automated tests verify tax-relief arithmetic, fee sensitivity, the proposed daily PIA-charge calculation and that the non-JavaScript examples match the calculator's outputs. [Our editorial policy](/editorial-policy/) explains how we handle sources and updates.
+
+The **PIA** statements reflect the proposed framework, including [the Finance (No. 2) Bill 2026 as introduced](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf#page=37), and are **not a claim that accounts are currently open**. For pension treatment, refer to [Revenue's pension relief guide](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/index.aspx), [Revenue's age-related limits](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx), [Revenue's retirement lump-sum guidance](https://www.revenue.ie/en/jobs-and-pensions/pension/private/retirement-lump-sums.aspx) and the [Pensions Authority on retirement benefits](https://pensionsauthority.ie/scheme-members-and-prsa-contributors/understanding-pensions/benefits_payable_on_retirement/normal_retirement/).
 
 **Keep exploring:** [Model a PIA scenario](/pia-calculator/) · [Understand the proposed daily-value tax](/pia/daily-valuation/) · [Compare PIA provider announcements](/pia/providers/) · [Read the pensions guide](/wealth/pensions-in-ireland/) · [Return to the PIA Centre](/pia/).
 

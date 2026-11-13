@@ -35,3 +35,18 @@ assert.ok(capped.freeLump<=10000,"lifetime free cap enforced");
 assert.ok(capped.illustrativeNetPension<capped.pension,"pension net less than gross");
 assert.equal(calculate({...base,current_age:35,years:10}).pensionAccessWarning,true);
 console.log("PIA vs pension arithmetic checks passed"); 
+
+
+/* Keep search-readable static examples identical to the interactive calculator model. */
+const fs=require("node:fs");
+const {renderTable,assumptions}=require("../scripts/pia_pension_static_examples.cjs");
+const markdown=fs.readFileSync(require("node:path").join(__dirname,"../content/pages/pia-vs-pension.md"),"utf8");
+const match=markdown.match(/<!-- pia-pension-examples:start -->([\s\S]*?)<!-- pia-pension-examples:end -->/);
+assert.ok(match,"Public static comparison table missing");
+assert.equal(match[1].trim(),renderTable().trim(),"Static table must match the calculator exactly");
+assert.equal(assumptions.years,30);
+assert.equal(assumptions.relief_headroom,23000);
+const example=calculate({...assumptions,monthly_net:500,relief_rate:40,extra_employer:0});
+assert.equal(Math.round(example.pia),412420,"30-year original PIA example");
+assert.equal(Math.round(example.illustrativeNetPension),598914,"30-year original after-deductions pension example");
+assert.ok(example.illustrativeNetPension<example.pension,"Illustrative pension net below gross");
