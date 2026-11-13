@@ -23,6 +23,9 @@ def test_route_and_readable_original_scenarios(settings):
     segment=html.split("Worked example: how the tax differences compound",1)[1].split("Which investments are being compared?",1)[0]
     assert "<table>" in segment, "Published scenarios must be accessible without JavaScript"
     assert "<h2" in html
+    temp_page=settings.content_dir/"pages"/"pia-vs-ordinary-investing.md"
+    temp_page.parent.mkdir(parents=True,exist_ok=True)
+    temp_page.write_text(PAGE,encoding="utf-8")
     build_site(settings)
     generated=(settings.public_dir/"pia"/"vs-ordinary-investing"/"index.html").read_text(encoding="utf-8")
     assert '<link rel="canonical" href="https://example.test/pia/vs-ordinary-investing/">' in generated
