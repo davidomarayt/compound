@@ -42,7 +42,7 @@ def test_pia_provider_next_step_links_and_seo_title_stay_intact():
     pia = tools["pia-calculator"]
     assert pia["url"] == "/pia-calculator/"
     assert pia["seo_title"] == "PIA Calculator Ireland – Tax, Growth & €50k Threshold"
-    assert str(pia["updated"]) == "2026-10-06"
+    assert str(pia["updated"]) == "2026-11-13"
     assert 'href="/pia/providers/"' in TEMPLATE
     assert 'href="/pia/vs-pension/"' in TEMPLATE
     assert "[model annual contributions, account growth and the proposed PIA charge](/pia-calculator/)" in (ROOT / "content/wealth/pension-vs-investing-ireland.md").read_text()
