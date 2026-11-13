@@ -25,6 +25,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from compound.config import Settings
 from compound.site.finance_discovery import catalogue, source_links, write_discovery
 from compound.site.pia import load_pia_tracker
+from compound.site.spending_explorer import prepare_spending_explorer
 from compound.site.earnings_view import load_company_report
 from compound.site.earnings_archive import prepare_recent_earnings
 from compound.site.earnings_seo import PRIORITY as EARNINGS_SEO_PRIORITY, ORDER as EARNINGS_SEO_ORDER, build_earnings_seo, fiscal_period_display
@@ -1089,6 +1090,13 @@ def build_site(settings: Settings) -> dict:
         raise ValueError("Where's My Money spending snapshot is missing or invalid")
     if abs(sum(float(c["billion"]) for c in spending["categories"]) - float(spending["total_billion"])) > 0.051:
         raise ValueError("Where's My Money spending categories do not reconcile")
+    spending_pages_path = settings.content_dir / "public-spending-sector-pages.json"
+    if not spending_pages_path.is_file():
+        # Some existing tests construct an isolated temporary content directory.
+        spending_pages_path = Path(__file__).resolve().parents[2] / "content" / "public-spending-sector-pages.json"
+    spending = prepare_spending_explorer(
+        spending, json.loads(spending_pages_path.read_text(encoding="utf-8"))
+    )
     for article in articles:
         if len(article.related_tools) > 4:
             raise ValueError(f"Keep related_tools to four or fewer on {article.slug}")
@@ -1097,6 +1105,8 @@ def build_site(settings: Settings) -> dict:
             if unknown:
                 raise ValueError(f"Unknown related_tools on {article.slug}: {unknown}")
     reserved = {"/finance/", "/", "/search/", "/tools/", "/news/", "/pia/", "/pia/providers/", "/wealth/earnings/", "/stocks/", "/companies/", "/compound-interest-calculator/", "/bmi-calculator/", "/wheres-my-money/"}
+    reserved.add("/wheres-my-money/spending/")
+    reserved.update(category["url"] for category in spending["categories"])
     reserved.update(tool["url"] for tool in tools)
     reserved.update(f"/{p}/" for p in PILLARS)
     reserved.update(pg.url for pg in pages)
@@ -1185,6 +1195,37 @@ def build_site(settings: Settings) -> dict:
            env.get_template("wheres_my_money.html").render(
                title="Where's My Money? Irish Tax Receipt", pillar="wealth",
                wmm_page=True, spending=spending))
+    spending_hub_schema = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Irish Government Spending 2026–2027 by Sector",
+        "url": settings.site_base_url + "/wheres-my-money/spending/",
+        "description": "Official Irish spending sector estimates visualised in original Compound charts.",
+        "isPartOf": settings.site_base_url + "/wheres-my-money/",
+        "citation": [spending["source"], spending["comparison_source"], spending["methodology"]],
+    }
+    _write(out / "wheres-my-money" / "spending" / "index.html",
+           env.get_template("spending_hub.html").render(
+               title="Irish Government Spending by Sector 2026–2027",
+               pillar="wealth", wmm_page=True, spending=spending,
+               max_billion=max(c["billion"] for c in spending["categories"]),
+               schema=spending_hub_schema))
+    for index, sector in enumerate(spending["categories"], start=1):
+        sector_schema = {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": f'{sector["name"]} Spending in Ireland: 2026–2027',
+            "url": settings.site_base_url + sector["url"],
+            "description": sector["intro"],
+            "isPartOf": settings.site_base_url + "/wheres-my-money/spending/",
+            "citation": [sector["source"], spending["comparison_source"], spending["methodology"]],
+            "dateModified": spending["updated"],
+        }
+        _write(out / sector["url"].strip("/") / "index.html",
+               env.get_template("spending_sector.html").render(
+                   title=sector["name"] + " Spending in Ireland",
+                   pillar="wealth", wmm_page=True, sector=sector,
+                   sector_index=index, spending=spending, schema=sector_schema))
 
     _write(out / "news" / "index.html", env.get_template("news.html").render(
         articles=news_articles, title="Latest News for Ireland", news=True, ads_allowed=False))
@@ -1832,11 +1873,16 @@ def build_site(settings: Settings) -> dict:
         (settings.site_base_url + "/", None),
         (settings.site_base_url + "/finance/", None),
         (settings.site_base_url + "/wheres-my-money/", spending["updated"]),
+        (settings.site_base_url + "/wheres-my-money/spending/", spending["updated"]),
         (settings.site_base_url + "/news/", None),
         (settings.site_base_url + "/wealth/earnings/", None),
         (settings.site_base_url + "/stocks/", None),
         (settings.site_base_url + "/companies/", None),
     ]
+    sitemap_entries.extend(
+        (settings.site_base_url + category["url"], spending["updated"])
+        for category in spending["categories"]
+    )
     sitemap_entries.extend([
         (settings.site_base_url + "/pia/", pia_updated),
         (settings.site_base_url + "/pia/providers/", pia_updated),
