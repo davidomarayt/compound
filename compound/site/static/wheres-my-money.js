@@ -139,7 +139,7 @@
     showText('#wmm-sector-summary',c.summary);
     var themes=q('#wmm-sector-themes'); themes.replaceChildren();
     c.themes.forEach(function (item) {var li=document.createElement('li');li.textContent=item;themes.append(li);});
-    q('#wmm-sector-source').href=c.source;
+    q('#wmm-sector-source').href=c.url || '/wheres-my-money/spending/';
   }
   function drawWhatIf() {
     if (!result) return;

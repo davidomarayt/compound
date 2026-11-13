@@ -1,0 +1,348 @@
+{
+  "updated": "2026-11-13",
+  "comparison_source": "https://www.whereyourmoneygoes.gov.ie/en/",
+  "comparison_year": 2027,
+  "comparison_total_billion": 143,
+  "comparison_kind": "Budget 2027 estimate; not expenditure incurred",
+  "past_kind": "2025 provisional outturn; not final audited spending",
+  "sectors": [
+    {
+      "id": "social",
+      "slug": "social-protection",
+      "short": "Pensions, payments and household support",
+      "next_billion": 31,
+      "past_billion": 27.4,
+      "intro": "Social protection connects pension payments, supports during illness or unemployment, family payments and other income supports. It is one of Ireland's largest spending sectors because cash transfers reach households at different stages of life.",
+      "interpretation": "A large figure here does not mean everyone receives an equal cash transfer. Eligibility and payment rates differ, and some services are administered rather than paid directly to households.",
+      "context": "The useful distinction is between pensions, payments for working-age people, supports for families and administrative services. The programme-level split has to be taken from departmental Estimates before assigning euro amounts to any of these headings.",
+      "questions": [
+        [
+          "Does my PRSI pay for my own State Pension?",
+          "PRSI contributes to social insurance funding, but you do not hold a personal fund representing the PRSI you paid. State Pension eligibility depends on contribution records and the rules in force."
+        ],
+        [
+          "Can I treat all social protection spending as welfare for unemployed people?",
+          "No. The sector also includes pensions, disability and illness supports, family payments and other programmes."
+        ],
+        [
+          "Does Child Benefit count as a service or a cash payment?",
+          "Child Benefit is a cash transfer. It should be reported separately from the estimated cost of public services used."
+        ]
+      ],
+      "related": [
+        [
+          "Child benefit and family planning",
+          "/pregnancy-due-date-calculator/"
+        ],
+        [
+          "Tax and take-home pay tools",
+          "/tools/"
+        ]
+      ],
+      "theme_notes": [
+        "State Pension payments support eligible people in retirement; contributory and non-contributory routes have different rules.",
+        "Payments during illness or disability relate to different eligibility conditions and can address short- or long-term needs.",
+        "Jobseeker schemes provide qualifying working-age people with income support and employment-related assistance.",
+        "Carers and family payments address caring responsibilities, maternity, parents and differing household circumstances.",
+        "Child Benefit is a monthly cash payment with its own age and eligibility conditions, not a school expenditure.",
+        "Supports for eligible working families can depend on income, family composition and hours worked.",
+        "Fuel and household supports aim to help eligible households with particular living expenses."
+      ]
+    },
+    {
+      "id": "health",
+      "slug": "health",
+      "short": "Hospitals, medicines and community care",
+      "next_billion": 29.1,
+      "past_billion": 26,
+      "intro": "Health expenditure supports the public system's capacity to deliver hospital treatment, primary care, community services, medicines and other services. It includes much more than the cost of visits a household happens to make this year.",
+      "interpretation": "National health expenditure cannot be divided by population and described as the actual medical benefit received by each person. Shared capacity, access rules and individual needs all matter.",
+      "context": "An authoritative deeper split would distinguish hospital services, primary and community care, mental health, care for older people and medicines. Those programme-level financial amounts are not implied by the sector total.",
+      "questions": [
+        [
+          "Is €27.4bn what the HSE spent in 2026?",
+          "It is the published 2026 sector estimate in this snapshot, not a confirmed year-end HSE outturn. The sector and the HSE are not necessarily identical accounting boundaries."
+        ],
+        [
+          "Do people with private health insurance receive no health benefit?",
+          "No. Emergency capacity, public health functions and many services remain relevant; private insurance does not remove the public system from an individual's life."
+        ],
+        [
+          "Why can health spending rise without waiting lists falling?",
+          "Costs, population needs, staffing, capacity and service performance can change separately. An expenditure increase is not itself an outcome measure."
+        ]
+      ],
+      "related": [
+        [
+          "Compare health insurance costs",
+          "/health-insurance-cost-comparison-calculator/"
+        ],
+        [
+          "Health guides",
+          "/health/"
+        ]
+      ],
+      "theme_notes": [
+        "Acute hospitals provide inpatient, outpatient and specialist care; their service costs are not one uniform per-patient amount.",
+        "Emergency and ambulance services maintain capacity even for people who never call an ambulance or attend an emergency department.",
+        "Primary and community services encompass care delivered outside large acute hospitals.",
+        "Mental health spending can involve community teams, specialist services and child and adolescent mental health care.",
+        "Older-person and disability supports can include community services and residential settings, depending on programme definitions.",
+        "Medical-card schemes and medicine reimbursements require separate utilisation and eligibility data to evaluate accurately.",
+        "Public health work includes population-wide prevention and monitoring, whose benefits are shared rather than individually invoiced."
+      ]
+    },
+    {
+      "id": "education",
+      "slug": "education",
+      "short": "Schools, teachers and pupil supports",
+      "next_billion": 14.4,
+      "past_billion": 12.7,
+      "intro": "Education spending includes primary and post-primary education, teaching, school supports, school buildings and services for pupils with additional needs. The sector's financial scope should not be confused with the entire higher-education system.",
+      "interpretation": "An education figure is a budget allocation, not a cash payment to a parent. Per-pupil costs are a separate analysis requiring consistent enrolment and expenditure definitions.",
+      "context": "Further and higher education sits within a separate department after the 2020 transfer of functions, so readers should not assume the headline school-sector amount includes every university and apprenticeship programme.",
+      "questions": [
+        [
+          "Does the education sector total include university spending?",
+          "Not all of it. Further and higher education was transferred to a distinct department in 2020; check programme boundaries when comparing years."
+        ],
+        [
+          "Can school spending be calculated for an individual child?",
+          "Average expenditure per pupil may be estimated with suitable official figures, but it is not the same as the services that child actually received."
+        ],
+        [
+          "Are school building projects included in the total?",
+          "Capital expenditure can be included in departmental estimates, but named projects need separate verified allocations and should not be counted twice."
+        ]
+      ],
+      "related": [
+        [
+          "Starting a family",
+          "/life/"
+        ],
+        [
+          "Family and household calculators",
+          "/tools/"
+        ]
+      ],
+      "theme_notes": [
+        "Primary education funding includes classroom provision and related supports, not only the salaries of teaching staff.",
+        "Post-primary schools serve pupils at second level; school-type differences matter when comparing costs.",
+        "Teachers and special needs assistants carry distinct duties; staffing figures must use correct payroll and headcount definitions.",
+        "Special education supports may be delivered in mainstream or specialised settings and have different funding routes.",
+        "Construction, maintenance and refurbishment are capital or operational expenses depending on the source classification.",
+        "School transport funding is a separate function from classroom teaching and may serve eligible pupils across areas.",
+        "DEIS and additional pupil supports target specific needs and should not be conflated with general school grants."
+      ]
+    },
+    {
+      "id": "housing",
+      "slug": "housing",
+      "short": "Homes, local services and accommodation",
+      "next_billion": 11.9,
+      "past_billion": 9.7,
+      "intro": "Housing expenditure is connected with the supply of social and affordable housing, support for eligible renters, homelessness responses and related public programmes. The headline sector also interacts with local government responsibilities.",
+      "interpretation": "Housing funding, new-home completions and tenancy supports are different measurements. Funding commitments cannot simply be read as the number of new homes delivered.",
+      "context": "Housing was previously presented within Additional Departments before 2020 on the official site. A ten-year trend that ignores this classification change would be misleading.",
+      "questions": [
+        [
+          "Does the housing total mean that amount was spent building new houses?",
+          "No. A broad housing allocation is not identical to direct construction spending. It can also include rental supports and other programmes."
+        ],
+        [
+          "Can spending explain the number of completed social homes?",
+          "Only when the underlying expenditure scope and completion measure are matched; acquisition, construction, leasing and supports differ."
+        ],
+        [
+          "Can pre-2020 numbers be compared directly?",
+          "Use caution. The source amalgamated housing spending into Additional Departments before 2020."
+        ]
+      ],
+      "related": [
+        [
+          "Buying a home in Ireland",
+          "/wealth/buying-a-home-in-ireland/"
+        ],
+        [
+          "Mortgage calculator",
+          "/mortgage-calculator/"
+        ]
+      ],
+      "theme_notes": [
+        "Social housing delivery can involve construction, acquisitions and other routes; each requires separate completion measures.",
+        "HAP helps eligible households with rent under conditions that are not identical to social-home construction.",
+        "Emergency accommodation and longer-term homelessness prevention are different service and spending categories.",
+        "Local authorities operate many services; funding sources and accounting categories need to be identified.",
+        "Water and community infrastructure responsibilities may sit across public bodies and should be mapped before allocating amounts.",
+        "Regeneration and other housing schemes have distinct aims, timeframes and funding arrangements."
+      ]
+    },
+    {
+      "id": "justice",
+      "slug": "justice",
+      "short": "Policing, courts and criminal justice",
+      "next_billion": 5.9,
+      "past_billion": 6.2,
+      "intro": "Justice spending covers policing, courts, prisons and other parts of the justice system. Some services are preventative or protective rather than a benefit that a household actively claims.",
+      "interpretation": "The difference between this broad sector estimate and a single agency's operational budget matters. Costs at department, programme and agency level must be mapped before making fine-grained claims.",
+      "context": "A rise or fall in the published total does not by itself measure crime, safety or the quality of public services. Staffing, service volumes and outcomes need separate official evidence.",
+      "questions": [
+        [
+          "Is justice spending just Garda salaries?",
+          "No. Policing is one element alongside courts, prisons, administration and associated services."
+        ],
+        [
+          "Does lower expenditure mean less safety?",
+          "Not necessarily. Outcomes depend on service demand, delivery and capacity, not solely the budget amount."
+        ],
+        [
+          "Where can I find particular agency payments?",
+          "Agency accounts, departmental Estimates, procurement records and audit reports can provide additional detail when published."
+        ]
+      ],
+      "related": [
+        [
+          "Understand Irish taxes",
+          "/wheres-my-money/"
+        ],
+        [
+          "Compound research",
+          "/finance/"
+        ]
+      ],
+      "theme_notes": [
+        "Policing involves personnel, stations, vehicles, technology and operational services beyond any one budget line.",
+        "Court operations and legal-aid schemes support access to justice through different institutions and legal frameworks.",
+        "Prisons and probation serve different stages of the justice system and have distinct service measures.",
+        "Migration and international protection programmes involve processing, accommodation and administration across relevant bodies.",
+        "Justice administration covers departmental and agency functions that cannot be inferred from Garda expenditure alone.",
+        "Forensic services and victim supports address specialised needs and do not necessarily share one financial programme."
+      ]
+    },
+    {
+      "id": "transport",
+      "slug": "transport",
+      "short": "Roads, rail and public transport",
+      "next_billion": 5.6,
+      "past_billion": 4.1,
+      "intro": "Transport expenditure helps fund public transport services, major infrastructure, roads and active travel. New construction, ongoing maintenance and subsidised services are different spending types.",
+      "interpretation": "A project announcement is not the same as expenditure actually incurred. For major transport schemes, follow estimates, approvals, contracts and delivery updates separately.",
+      "context": "The cost of a motorway or rail scheme cannot be attributed to one year's sector budget without verified year-by-year allocations. Infrastructure creates services over many years, not just in the construction year.",
+      "questions": [
+        [
+          "Is transport spending only road construction?",
+          "No. The sector also covers public transport, rail investment, active travel and other responsibilities."
+        ],
+        [
+          "Does higher transport funding mean fares will fall?",
+          "No. Fares, subsidies and infrastructure budgets are different choices."
+        ],
+        [
+          "How can a project cost be tracked?",
+          "Compare the same project's authorised scope, dated cost estimates, contracts and reported delivery progress."
+        ]
+      ],
+      "related": [
+        [
+          "Compare EV and driving costs",
+          "/tools/"
+        ],
+        [
+          "Home energy tools",
+          "/solar/"
+        ]
+      ],
+      "theme_notes": [
+        "National road expenditure can combine construction and upkeep, which should be tracked independently.",
+        "Regional and local roads have different responsible bodies and maintenance needs from major national routes.",
+        "Public transport operating supports are different from buying or building new transport infrastructure.",
+        "Rail and light-rail programmes include long-lived assets with multi-year delivery and operating costs.",
+        "Active travel investment may fund walking, cycling and greenway infrastructure.",
+        "Safety and accessibility programmes can be delivered through agencies with their own reporting arrangements."
+      ]
+    },
+    {
+      "id": "debt",
+      "slug": "debt-and-eu-payments",
+      "short": "Debt, EU contributions and other central charges",
+      "next_billion": 19.1,
+      "past_billion": null,
+      "intro": "Non-voted expenditure is incurred directly from the Exchequer and sits outside the ordinary voted departmental allocations. The site's headline combines debt servicing and EU payments with other central obligations.",
+      "interpretation": "It would be incorrect to label the entire €15.6bn as interest on the national debt or as EU membership fees. The category contains distinct non-voted items; look to the Department of Finance for verified components.",
+      "context": "Comparisons across years can be affected by the fiscal projections and by the classification of central-fund spending. A detailed breakdown should reconcile against the official non-voted total.",
+      "questions": [
+        [
+          "Is all this money interest on government debt?",
+          "No. The headline includes EU payments and other non-voted Exchequer items as well as debt-related spending."
+        ],
+        [
+          "What does non-voted expenditure mean?",
+          "It refers to spending directly from the central fund under standing authorisations, rather than the usual annual departmental votes."
+        ],
+        [
+          "Does my tax payment go directly to debt interest?",
+          "No. Taxes and other revenues are pooled in public funds; the calculator is a proportional illustration, not transaction tracing."
+        ]
+      ],
+      "related": [
+        [
+          "Public spending home",
+          "/wheres-my-money/"
+        ],
+        [
+          "Finance directory",
+          "/finance/"
+        ]
+      ],
+      "theme_notes": [
+        "Interest is the cost of servicing outstanding debt, not the same thing as repayment of the principal.",
+        "Ireland's EU contributions are distinct from debt-interest charges and should be analysed separately.",
+        "Other central Exchequer charges require careful classification; this headline is broader than its short label suggests."
+      ]
+    },
+    {
+      "id": "other",
+      "slug": "additional-departments",
+      "short": "Agriculture, enterprise, defence, higher education and more",
+      "next_billion": 26,
+      "past_billion": null,
+      "intro": "Additional Departments is a collection of multiple public bodies and functions, not one service. It includes activities such as agriculture, enterprise, defence, culture and further and higher education.",
+      "interpretation": "The sector's size should not be attributed to any one included department. The official source needs to be mapped at department and programme level before assigning amounts to its constituent themes.",
+      "context": "Departmental functions change over time. Housing is presented as a separate sector from 2020, and further and higher education moved away from the schools department in 2020.",
+      "questions": [
+        [
+          "Is this a miscellaneous or unexplained spending fund?",
+          "No. It is a grouping of identifiable departments and functions, although the headline combines them for presentation."
+        ],
+        [
+          "Why is higher education not simply in Education?",
+          "The departments were reorganised in 2020, and the headline categories reflect those accounting boundaries."
+        ],
+        [
+          "Can the themes be assigned euro values?",
+          "Only using validated departmental or programme-level source figures. We do not divide the broad total arbitrarily."
+        ]
+      ],
+      "related": [
+        [
+          "Investing and economy guides",
+          "/wealth/"
+        ],
+        [
+          "Compound finance tools",
+          "/tools/"
+        ]
+      ],
+      "theme_notes": [
+        "Agriculture and marine programmes can support farming, fisheries, food systems and sector regulation.",
+        "Further and higher education is managed through different departmental structures from primary and post-primary schools.",
+        "Defence includes personnel, equipment and military operations rather than one single procurement budget.",
+        "Climate and environmental programmes can span departments and may overlap topical descriptions without double-counting expenditure.",
+        "Enterprise and tourism activity can include business development, promotion and associated public agencies.",
+        "Culture and sport spending may support organisations, facilities, heritage and public programmes.",
+        "Foreign affairs includes diplomacy and international development functions with different objectives.",
+        "Public administration services and regulators underpin many functions but do not form one homogeneous programme."
+      ]
+    }
+  ]
+}
