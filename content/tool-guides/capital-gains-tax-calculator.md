@@ -88,7 +88,7 @@ When considering whether to sell, test a range of plausible sale prices rather t
 
 Also keep reliefs outside the simple model unless you have verified eligibility. Reliefs can be valuable, but they often depend on factual conditions that a generic form cannot establish. The safest sequence is: calculate the unrelieved gain, verify the relief independently, then adjust the tax analysis.
 
-Revenue states that the standard CGT rate is 33% for most gains and that individuals have a €1,270 annual personal exemption. See [Revenue's CGT calculation guidance](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx). For broader long-term planning, the [Investment Fee Calculator](/investment-fee-calculator/) can show how costs affect compounding before any disposal tax is considered.
+Revenue confirms that the standard CGT rate is 31% for most disposals made on or after 7 October 2026 (33% for earlier standard disposals); development land continues to have a 33% rate. Individuals have a €1,270 annual personal exemption. See [Revenue's CGT calculation guidance](https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx). For broader long-term planning, the [Investment Fee Calculator](/investment-fee-calculator/) can show how costs affect compounding before any disposal tax is considered.
 
 ## Method and limitations
 

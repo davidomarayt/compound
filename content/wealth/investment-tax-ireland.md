@@ -6,14 +6,16 @@ pillar: wealth
 date: 2026-09-23
 reviewed: 2026-10-06
 summary: 'A practical map of Irish investment taxation for individuals, covering direct shares, Capital Gains Tax, dividends, DWT, DIRT, fund exit tax and eight-year deemed disposal.'
-meta_description: 'Investment tax in Ireland explained: 33% CGT, €1,270 exemption, dividends, 38% fund tax, DIRT and 8-year deemed disposal, with worked examples.'
+meta_description: 'Investment tax in Ireland explained: 31% CGT for standard disposals from 7 October 2026, €1,270 exemption, dividends, 38% fund tax, DIRT and 8-year deemed disposal, with worked examples.'
 tags: [investment tax, ireland, cgt, etf tax, deemed disposal, dividends, dirt]
 related_tools:
 - capital-gains-tax-calculator
 - investment-fee-calculator
 sources:
-- title: 'Revenue: How to calculate CGT'
+- title: 'Revenue: How to calculate CGT (rate checked 13 November 2026)'
   url: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx
+- title: 'Revenue eBrief 142/26: standard CGT rate from 7 October 2026'
+  url: https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-1422026.aspx
 - title: 'Revenue: What is exempt from CGT?'
   url: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-is-exempt-from-cgt.aspx
 - title: 'Revenue: Dividend income'
@@ -44,7 +46,7 @@ This guide covers the main regimes an Irish-resident individual is likely to enc
 
 | Investment type | Typical tax route for an Irish-resident individual | Key point |
 |---|---|---|
-| Direct shares | CGT on most gains; dividend income taxed separately | CGT generally 33%; €1,270 annual individual exemption |
+| Direct shares | CGT on most gains; dividend income taxed separately | Standard CGT 31% from 7 Oct 2026; 33% for earlier disposals; €1,270 annual individual exemption |
 | Irish company dividends | Income Tax + USC + PRSI on gross dividend | 25% DWT generally withheld first |
 | Many Irish/equivalent investment funds | Exit-tax regime | 38% individual rate from 1 Jan 2026; deemed disposal may apply |
 | Deposit interest | DIRT | 33% for Irish-resident individuals |
@@ -58,7 +60,7 @@ For a planning illustration, [estimate when a PIA might cross the €50,000 thre
 
 ## Capital Gains Tax on direct shares
 
-Revenue states that the standard CGT rate is **33% for most gains**.
+Revenue confirms the standard CGT rate is **31% for most disposals made on or after 7 October 2026**; it was **33% for standard disposals before that date**. Development land has a separate 33% rate. The following illustration assumes a standard disposal on or after 7 October 2026.
 
 Individuals also have an annual personal exemption of **€1,270**.
 
@@ -76,7 +78,7 @@ Ignoring transaction costs and previous losses:
 
 **Chargeable amount:** €4,730
 
-**CGT at 33%:** €1,560.90
+**CGT at 31%:** €1,466.30
 
 That is a simplified example. Allowable acquisition/disposal costs and losses can change the answer.
 
@@ -92,7 +94,7 @@ It exempts the first €1,270 of qualifying annual net gains for an individual.
 
 It does **not** reduce your tax bill by €1,270.
 
-At a 33% rate, fully using a €1,270 exemption is worth up to €419.10 of CGT compared with having no exemption.
+At a 31% standard rate, fully using a €1,270 exemption is worth up to €393.70 of CGT compared with having no exemption.
 
 For the investment decision behind the tax, see [dividend investing in Ireland](/wealth/dividend-investing-ireland/): how payments work, assessing dividend safety and estimating income.
 
@@ -200,7 +202,7 @@ Under ordinary CGT rules, allowable capital losses can generally be relevant whe
 
 The investment-fund exit-tax regime works differently.
 
-This means “38% versus 33%” is not the entire comparison. The timing of tax, loss treatment and administrative burden can all affect the after-tax result.
+This means “38% fund tax versus 31% standard CGT (for disposals from 7 October 2026)” is not the entire comparison. The timing of tax, loss treatment and administrative burden can all affect the after-tax result.
 
 ## Tax should be modelled after fees, not instead of them
 
@@ -285,7 +287,7 @@ Tax rules do not.
 
 ### What is the Capital Gains Tax rate in Ireland?
 
-Revenue states that CGT is 33% for most gains. Individuals have a €1,270 annual personal exemption.
+Revenue states that standard CGT is 31% for most disposals from 7 October 2026 (33% for earlier standard disposals). Individuals have a €1,270 annual personal exemption.
 
 ### What is the ETF tax rate in Ireland in 2026?
 

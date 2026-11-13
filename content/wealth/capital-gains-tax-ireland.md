@@ -9,16 +9,18 @@ publication_status: published
 date: '2026-09-30'
 approved_by: 'Explicit build instruction — 30 September 2026'
 reviewed: '2026-09-30'
-summary: "A practical guide to Capital Gains Tax in Ireland: the 33% standard rate, €1,270 annual exemption, allowable costs and losses, shares, property, crypto, gifts, reliefs and payment deadlines."
-meta_description: "Capital Gains Tax Ireland guide: 33% CGT rate, €1,270 exemption, allowable costs and losses, shares, property, crypto, payment deadlines and examples."
+summary: "A practical guide to Capital Gains Tax in Ireland: the 31% standard rate from 7 October 2026, €1,270 annual exemption, allowable costs and losses, shares, property, crypto, gifts, reliefs and payment deadlines."
+meta_description: "Capital Gains Tax Ireland guide: 31% standard CGT from 7 October 2026, €1,270 exemption, allowable costs and losses, shares, property, crypto, payment deadlines and examples."
 tags: [capital-gains-tax, cgt, tax, shares, property, crypto, investing, ireland]
 related_tools:
 - capital-gains-tax-calculator
 - investment-fee-calculator
 - compound-interest-calculator
 sources:
-- title: 'Revenue: How to calculate CGT. Checked 30 September 2026.'
+- title: 'Revenue: How to calculate CGT. Rate provisions rechecked 13 November 2026.'
   url: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/how-to-calculate-cgt.aspx
+- title: 'Revenue eBrief 142/26: 31% standard CGT from 7 October 2026.'
+  url: https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-1422026.aspx
 - title: 'Revenue: What do you pay CGT on? Checked 30 September 2026.'
   url: https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/what-do-you-pay-cgt-on.aspx
 - title: 'Revenue: What is exempt from CGT? Checked 30 September 2026.'
@@ -41,19 +43,19 @@ sources:
 
 If you sell shares, an investment property, cryptocurrency, land or another asset for more than it cost you, **Capital Gains Tax (CGT)** may apply to the profit.
 
-For most gains in Ireland, the current CGT rate is **33%**.
+For most gains, the standard CGT rate is **31% for disposals made on or after 7 October 2026**. It was **33% for standard disposals up to and including 6 October 2026**. Development land continues to have a separate 33% rate.
 
-But you do not simply pay 33% of the sale price.
+But you do not simply pay the applicable rate on the sale price.
 
 CGT is generally calculated on the **chargeable gain** after allowable acquisition costs, disposal costs, enhancement expenditure, allowable losses, exemptions and reliefs. Individuals also have a **€1,270 annual personal exemption**.
 
 <div class="cs-intro">
 <p class="cs-kicker">Quick answer</p>
-<p><strong>The standard Irish CGT rate is 33% for most gains. An individual can currently exempt the first €1,270 of annual net chargeable gains.</strong></p>
+<p><strong>The standard Irish CGT rate is 31% for most disposals on or after 7 October 2026 (33% for earlier standard disposals). Individuals can currently exempt the first €1,270 of annual net chargeable gains.</strong></p>
 <p>For a straightforward disposal, start with the sale proceeds, deduct the asset's allowable cost and qualifying expenses, deduct allowable losses, then apply any remaining annual exemption before calculating CGT.</p>
 </div>
 
-This guide reflects Revenue rules checked on **30 September 2026**. Some assets — especially investment funds, development land, businesses and property qualifying for relief — can have different rules, so use this as a general guide rather than a substitute for advice on a large or unusual transaction.
+The CGT rate provisions and worked calculations below were rechecked against Revenue on **13 November 2026**. Unless explicitly dated otherwise, the worked examples assume a standard disposal on or after **7 October 2026**. Other sections retain their earlier source-check dates. Some assets — especially investment funds, development land, businesses and property qualifying for relief — can have different rules, so use this as a general guide rather than a substitute for advice on a large or unusual transaction.
 
 ## Capital Gains Tax in Ireland at a glance
 
@@ -64,7 +66,7 @@ This guide reflects Revenue rules checked on **30 September 2026**. Some assets 
 <tr><th scope="col">Rule</th><th scope="col">Current position</th></tr>
 </thead>
 <tbody>
-<tr><th scope="row">Standard CGT rate</th><td><strong>33%</strong> for most gains</td></tr>
+<tr><th scope="row">Standard CGT rate</th><td><strong>31%</strong> for most disposals from 7 October 2026; <strong>33%</strong> for earlier standard disposals (development land remains 33%)</td></tr>
 <tr><th scope="row">Annual personal exemption</th><td><strong>€1,270</strong> for individuals</td></tr>
 <tr><th scope="row">1 Jan–30 Nov disposal payment deadline</th><td><strong>15 December</strong> of the same year</td></tr>
 <tr><th scope="row">1–31 Dec disposal payment deadline</th><td><strong>31 January</strong> of the following year</td></tr>
@@ -82,7 +84,7 @@ That is one of the most important practical points in Irish CGT: **you can have 
 <h3>Capital Gains Tax Calculator Ireland</h3>
 <p>Enter your sale proceeds, original purchase cost, allowable acquisition/disposal or enhancement costs, capital losses and the amount of your €1,270 annual exemption already used.</p>
 <p><a href="/capital-gains-tax-calculator/"><strong>Use the Capital Gains Tax Calculator →</strong></a></p>
-<p class="cs-small">The calculator models a straightforward disposal at the standard 33% rate. It does not decide whether a special relief or investment-fund regime applies.</p>
+<p class="cs-small">The calculator asks whether the standard 31% rate from 7 October 2026 or an earlier/special 33% rate applies. It does not decide whether a special relief or investment-fund regime applies.</p>
 </div>
 
 ## What is Capital Gains Tax?
@@ -123,7 +125,7 @@ Crypto-assets can also create CGT disposals for individuals in many ordinary inv
 
 The classification matters because not every investment or asset is taxed under the standard CGT system.
 
-For example, many investment funds and ETFs can fall under a separate Irish fund-tax regime rather than ordinary 33% CGT. Our broader [Investment Tax in Ireland](/wealth/investment-tax-ireland/) guide explains the difference.
+For example, many investment funds and ETFs can fall under a separate Irish fund-tax regime rather than ordinary 31% CGT. Our broader [Investment Tax in Ireland](/wealth/investment-tax-ireland/) guide explains the difference.
 
 ## How is CGT calculated?
 
@@ -174,7 +176,7 @@ It is **not €1,270 per transaction**, and it is **not a €1,270 tax credit**.
 
 ### Step 7: Apply the CGT rate
 
-For most gains, the standard rate is **33%**.
+For most gains, the standard rate is **31%**.
 
 There are other rates for particular types of gains, so do not force every investment into the standard calculation.
 
@@ -189,7 +191,7 @@ Assume:
 - no other gains;
 - no allowable losses;
 - full €1,270 annual exemption available;
-- standard 33% CGT treatment applies.
+- standard 31% CGT treatment applies.
 
 The calculation is:
 
@@ -199,7 +201,7 @@ The calculation is:
 - chargeable gain: €7,700
 - annual exemption: €1,270
 - taxable gain: €6,430
-- CGT at 33%: **€2,121.90**
+- CGT at 31%: **€1,993.30**
 
 The tax is on the gain after allowable deductions, not on the €18,000 sale proceeds.
 
@@ -217,7 +219,7 @@ If one disposal has already used the full exemption, there is no second €1,270
 
 The exemption also cannot simply be transferred to a spouse or civil partner.
 
-At a 33% CGT rate, fully using the €1,270 exemption reduces CGT by up to **€419.10** compared with having no exemption.
+At a 31% CGT rate, fully using the €1,270 exemption reduces CGT by up to **€393.70** compared with having no exemption.
 
 ## How capital losses work
 
@@ -243,7 +245,7 @@ The simplified calculation is:
 - net gain: €8,000
 - less annual exemption: €1,270
 - taxable gain: €6,730
-- CGT at 33%: **€2,220.90**
+- CGT at 31%: **€2,086.30**
 
 Loss rules can become more complicated for certain assets, including development land and connected-party transactions, so a loss should not automatically be assumed to be usable.
 
@@ -294,7 +296,7 @@ Ignoring indexation and any other relief:
 - chargeable gain: €79,000
 - less annual exemption: €1,270
 - taxable gain: €77,730
-- CGT at 33%: **€25,650.90**
+- CGT at 31%: **€24,096.30**
 
 The important distinction is between **capital costs that Revenue allows in the CGT computation** and ordinary running expenses, which can belong to a different tax calculation.
 
@@ -371,11 +373,11 @@ Assuming a straightforward CGT case, no other gains/losses and the full annual e
 - gain: €12,000
 - less annual exemption: €1,270
 - taxable gain: €10,730
-- CGT at 33%: **€3,540.90**
+- CGT at 31%: **€3,326.30**
 
 Crypto record keeping can be difficult because frequent transactions can create many individual acquisition and disposal records.
 
-## Are ETFs taxed at 33% CGT?
+## Are ETFs taxed at 31% CGT?
 
 Do not assume so.
 
@@ -387,7 +389,7 @@ Many Irish and equivalent offshore investment funds can fall under the separate 
 
 That is why the Compound CGT calculator is deliberately labelled for straightforward CGT disposals.
 
-Use [Investment Tax in Ireland](/wealth/investment-tax-ireland/) before applying ordinary 33% CGT arithmetic to an ETF or fund.
+Use [Investment Tax in Ireland](/wealth/investment-tax-ireland/) before applying ordinary 31% CGT arithmetic to an ETF or fund.
 
 ## What is exempt from CGT?
 
@@ -424,7 +426,7 @@ Revenue's current CGT relief guidance includes areas such as:
 
 These reliefs have detailed conditions.
 
-For a business, farm or valuable property disposal, the relief conditions can matter more than the headline 33% rate.
+For a business, farm or valuable property disposal, the relief conditions can matter more than the headline 31% rate.
 
 ## Indexation relief for older assets
 
@@ -512,7 +514,7 @@ For property, invoices from years earlier can become important evidence of allow
 
 ## Common CGT mistakes
 
-### 1. Applying 33% to the sale price
+### 1. Applying 31% to the sale price
 
 CGT is generally charged on the taxable **gain**, not the gross proceeds.
 
@@ -565,7 +567,7 @@ Then use the [Capital Gains Tax Calculator](/capital-gains-tax-calculator/) for 
 
 ### What is the Capital Gains Tax rate in Ireland in 2026?
 
-The standard CGT rate is **33% for most gains**. Other rates and tax regimes apply to certain types of gains and investments.
+For most disposals made **from 7 October 2026**, the standard CGT rate is **31%**. For most standard disposals made **up to 6 October 2026**, it was **33%**. Other rates and tax regimes apply to certain types of gains and investments.
 
 ### How much can I make before paying CGT?
 
@@ -581,7 +583,7 @@ Gains on ordinary direct company shares can generally fall within CGT. The exact
 
 ### Do I pay CGT on ETFs?
 
-Not necessarily under the ordinary 33% CGT regime. Many ETFs and investment funds can fall under separate Irish fund-tax rules depending on their legal structure and domicile.
+Not necessarily under the ordinary 31% CGT regime. Many ETFs and investment funds can fall under separate Irish fund-tax rules depending on their legal structure and domicile.
 
 ### Do I pay CGT on cryptocurrency?
 
@@ -617,7 +619,7 @@ For a straightforward Irish CGT calculation, the core sequence is:
 
 **sale proceeds → deduct allowable cost and expenses → deduct allowable losses → apply the remaining annual exemption → apply the CGT rate.**
 
-For most gains, that rate is currently **33%**, and an individual has a **€1,270 annual exemption**.
+For most gains, that rate is currently **31%**, and an individual has a **€1,270 annual exemption**.
 
 But the most expensive mistakes often happen outside that simple formula: using the wrong tax regime for an ETF, missing an allowable loss, misunderstanding PPR Relief, gifting an asset without considering market value, or waiting until the following October to think about a tax payment that was actually due months earlier.
 
