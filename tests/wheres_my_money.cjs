@@ -1,0 +1,26 @@
+'use strict';
+const assert = require('node:assert/strict');
+const {incomeTax2026,usc2026,prsi2026,calcHousehold} = require('../compound/site/static/wheres-my-money.js');
+const near = (actual,expected,tolerance=0.02) => assert.ok(Math.abs(actual-expected) <= tolerance, actual+' != '+expected);
+near(incomeTax2026(103000,44000,4000),28400);
+near(usc2026(103000),4270.62);
+near(prsi2026(103000),4364.625);
+const example = calcHousehold({status:'single',salary:103000,second:0,pension:0,pensionSecond:0,vatSpend:0});
+near(example.payroll,37035.245);
+near(example.net,65964.755);
+near(example.vat,0);
+near(calcHousehold({status:'single',salary:0}).payroll,0);
+near(usc2026(13000),0);
+near(usc2026(13001),12012*.005+989*.02);
+near(prsi2026(52*352),0);
+const joint = calcHousehold({status:'joint_two',salary:60000,second:40000,pension:0,pensionSecond:0,vatSpend:0});
+assert.equal(joint.band,88000);
+near(joint.tax,40000*.20+48000*.20+12000*.40-8000); // actual band 88k, taxable 100k
+const pension = calcHousehold({status:'single',salary:103000,pension:5000,vatSpend:0});
+near(example.tax-pension.tax,2000);
+near(example.usc,pension.usc);
+near(example.prsi,pension.prsi);
+const vat = calcHousehold({status:'single',salary:103000,vatSpend:123});
+near(vat.vat,276);
+near(vat.payroll,example.payroll);
+console.log('Where\'s My Money: arithmetic checks passed');
