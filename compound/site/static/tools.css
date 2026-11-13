@@ -595,3 +595,11 @@
 .tool-page[data-tool-name="pia-calculator"] .pia-result-next a{display:inline-block;margin:0 14px 8px 0;font-size:.82rem;font-weight:700;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:620px){.tool-page[data-tool-name="pia-calculator"] .pia-quickstart{flex:1 1 calc(50% - 8px)}}
 @media print{.tool-page[data-tool-name="pia-calculator"] .pia-result-next,.tool-page[data-tool-name="pia-calculator"] .pia-quickstarts{display:none!important}}
+
+/* Flagship public-money tool in the tools directory. */
+.tools-flagship{display:flex;flex-direction:column;gap:8px;background:#33252e;color:#fff9ef;padding:25px 30px;border-radius:4px;margin:22px 0 8px;max-width:850px}
+.tools-flagship-label{font-size:10px;font-weight:700;letter-spacing:.16em;color:#e1b77e}
+.tools-flagship strong{font:400 clamp(27px,4vw,42px)/1.13 Georgia,serif}
+.tools-flagship>span:nth-child(3){font-size:14px;line-height:1.55;color:#e3d7d0;max-width:65ch}
+.tools-flagship-arrow{font-size:13px;font-weight:700;color:#f1cb98;margin-top:9px}
+.tools-flagship:hover{background:#493645}
