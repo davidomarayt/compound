@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-10",
+  "checked": "2026-11-13",
   "listed": [
     {
       "slug": "spcx",
@@ -120,9 +120,9 @@
       "summary": "AI models, products, infrastructure and governance.",
       "website": "https://openai.com/",
       "latest_development": {
-        "date": "2026-11-09",
-        "text": "ChatGPT Enterprise became available through AWS Marketplace, allowing eligible buyers to consolidate purchasing and apply eligible spend towards AWS commitments; this does not establish a changed product price or reported profitability.",
-        "source": "https://openai.com/index/chatgpt-enterprise-aws-marketplace/"
+        "date": "2026-11-10",
+        "text": "OpenAI introduced Businesses in ChatGPT beta: eligible organisations may verify profiles and product feeds; separate labelled Business Agents and sponsored destinations initially target eligible US ecommerce and online-services firms. Commercial uptake and ad returns are not disclosed.",
+        "source": "https://openai.com/index/introducing-businesses-chatgpt/"
       }
     },
     {
@@ -132,9 +132,9 @@
       "summary": "Claude AI models, research and enterprise deployments.",
       "website": "https://www.anthropic.com/",
       "latest_development": {
-        "date": "2026-11-10",
-        "text": "Anthropic announced a proposed Nasdaq IPO roadshow at an indicated $70–$78 offer range; the registration statement was not yet effective. Claude Fable and Mythos 5.2 were announced on 9 November.",
-        "source": "https://www.anthropic.com/news/roadshow-launch"
+        "date": "2026-11-12",
+        "text": "Anthropic published internally evaluated results for Anvil automated red-teaming, reporting stronger findings than human testers on 23 of 24 bio classifier-question comparisons. These are company-run benchmarks, not universal independent safety certification.",
+        "source": "https://safeguards.anthropic.com/2026/automated-red-teaming/"
       }
     },
     {
@@ -175,7 +175,12 @@
       "name": "Blue Origin",
       "sector": "Space technology",
       "summary": "Launch vehicles, engines and space infrastructure.",
-      "website": "https://www.blueorigin.com/"
+      "website": "https://www.blueorigin.com/",
+      "latest_development": {
+        "date": "2026-11-10",
+        "text": "Blue Origin reported that its modified BE-4 main oxygen valve passed qualification tests following the May hotfire anomaly; fleet retrofit is underway and investigation closure was anticipated later in November. No new flight date was confirmed.",
+        "source": "https://www.blueorigin.com/news/gs1-3-hotfire-updates"
+      }
     },
     {
       "slug": "anduril",

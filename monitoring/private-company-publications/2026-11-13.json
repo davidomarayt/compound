@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-13",
+  "timezone": "Europe/Dublin",
+  "run_type": "private_company_daily",
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "automation/private-company-2026-11-13",
+  "target_new_articles": 3,
+  "status": "prepared_pending_ci",
+  "confirmed_live_new_articles": 0,
+  "human_editorial_status": "not_reviewed_by_human",
+  "ads_policy": "Standard site AdSense loader on public articles and covered profiles; no invented human-review or ad-fill claims",
+  "editorial_quality_gate": "Distinct business theses; 10/12 November primary-source dates verified; historical photo licensing reviewed; CI build, images and public deployment still pending",
+  "duplication_checks": {
+    "editorial_index_snapshot": "2026-11-13",
+    "recent_overlap": "12 November OpenAI AWS procurement and Anthropic Fable/Mythos token costs are separate; 12 November Revolut Pay avoided; no existing Blue Origin article identified",
+    "competing_workflows": "Daily Company Analysis and Mag 8 cover listed tickers; new articles concern private-company business models and infrastructure only",
+    "new_page_count_cap": 3
+  },
+  "articles": [
+    {
+      "company": "OpenAI",
+      "slug": "openai",
+      "story_fingerprint": "2026-11-10-openai-business-hub-business-agents-sponsored-conversion-economics",
+      "article_path": "content/wealth/openai-business-agents-chatgpt-merchant-economics-2026.md",
+      "canonical_url": "https://compound.ie/wealth/openai-business-agents-chatgpt-merchant-economics-2026/",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "event_date": "2026-11-10",
+      "primary_source_urls": [
+        "https://openai.com/index/introducing-businesses-chatgpt/"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:%E2%80%9CSam_Altman%E2%80%9D_by_Village_Global.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/%E2%80%9CSam_Altman%E2%80%9D_by_Village_Global.jpg",
+      "photo_focal_y": 0.27,
+      "image_license": "CC BY 2.0",
+      "photo_provenance": "Village Global, 17 November 2022, archival photo, reused with attribution and crop notice",
+      "status": "prepared_not_live",
+      "live_http_verified": false,
+      "ads_presence_verified": false,
+      "human_reviewed": false,
+      "claim_checks": [
+        "Beta business profiles and product feeds not equivalent to a commercial agreement",
+        "Business Agents currently limited to eligible US ecommerce and online services; claiming coverage broader",
+        "User data aggregated and privacy-thresholded; mentions and clicks are not purchases",
+        "1.2 billion weekly ChatGPT users is a platform claim, not Business Agents users",
+        "Hypothetical 10000 x 6% x 3% x €40 = €720 gross profit before costs"
+      ]
+    },
+    {
+      "company": "Anthropic",
+      "slug": "anthropic",
+      "story_fingerprint": "2026-11-12-anvil-automated-red-team-bio-classifier-tests-safety-economics",
+      "article_path": "content/wealth/anthropic-anvil-automated-red-teaming-safety-economics.md",
+      "canonical_url": "https://compound.ie/wealth/anthropic-anvil-automated-red-teaming-safety-economics/",
+      "profile_url": "https://compound.ie/companies/anthropic/",
+      "event_date": "2026-11-12",
+      "primary_source_urls": [
+        "https://safeguards.anthropic.com/2026/automated-red-teaming/"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg",
+      "photo_focal_y": 0.4,
+      "image_license": "CC BY 2.0",
+      "photo_provenance": "TechCrunch, 20 September 2023, archival frame 01 distinct from prior 12 Nov cover frame 04",
+      "status": "prepared_not_live",
+      "live_http_verified": false,
+      "ads_presence_verified": false,
+      "human_reviewed": false,
+      "claim_checks": [
+        "23 of 24 question-classifier pairs stronger, remaining tied, from vendor tests",
+        "Anvil 24–48 hours vs human weeks is an internal comparison, not cost audited",
+        "31.5 to 0.4% equals -31.1 percentage points on a specific anti-distillation eval",
+        "33.8 to zero observed attempts for Fable 5.1 category, not general safety assurance",
+        "Internal frontier and classifier access limits replication"
+      ]
+    },
+    {
+      "company": "Blue Origin",
+      "slug": "blue-origin",
+      "story_fingerprint": "2026-11-10-be4-main-oxygen-valve-qualified-new-glenn-return-to-flight-economics",
+      "article_path": "content/wealth/blue-origin-new-glenn-valve-fix-launch-economics.md",
+      "canonical_url": "https://compound.ie/wealth/blue-origin-new-glenn-valve-fix-launch-economics/",
+      "profile_url": "https://compound.ie/companies/blue-origin/",
+      "event_date": "2026-11-10",
+      "primary_source_urls": [
+        "https://www.blueorigin.com/news/gs1-3-hotfire-updates",
+        "https://www.blueorigin.com/news/introducing-northstar-new-booster-engine",
+        "https://www.blueorigin.com/news/new-glenn-expands-reach-with-gs3"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:New_Glenn_launch_signals_new_era_for_Space_Launch_Complex_36_(8832113).jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/New_Glenn_launch_signals_new_era_for_Space_Launch_Complex_36_%288832113%29.jpg",
+      "photo_focal_y": 0.5,
+      "image_license": "US Government public domain",
+      "photo_provenance": "Senior Airman Samuel Becker/U.S. Space Force, 16 January 2025 New Glenn launch, clearly archival",
+      "status": "prepared_not_live",
+      "live_http_verified": false,
+      "ads_presence_verified": false,
+      "human_reviewed": false,
+      "claim_checks": [
+        "10 Nov valve qualification does not establish return-to-flight date",
+        "Northstar 715k vs BE4 640k lbf means 11.71875% increase, claims 30% less mass",
+        "GS3 figures are 9x4 configuration, 14t GEO 20t TLI; distinct 7x2 values",
+        "Hypothetical $900m / 6 = $150m, / 12 = $75m; not actual Blue Origin costs"
+      ]
+    }
+  ],
+  "profile_updates": [
+    {
+      "slug": "openai",
+      "date": "2026-11-10",
+      "source": "https://openai.com/index/introducing-businesses-chatgpt/"
+    },
+    {
+      "slug": "anthropic",
+      "date": "2026-11-12",
+      "source": "https://safeguards.anthropic.com/2026/automated-red-teaming/"
+    },
+    {
+      "slug": "blue-origin",
+      "date": "2026-11-10",
+      "source": "https://www.blueorigin.com/news/gs1-3-hotfire-updates"
+    }
+  ],
+  "production_deployment": {
+    "status": "not_attempted",
+    "url_verified": false,
+    "social_images_verified": false
+  },
+  "updated_at_utc": "2026-11-13T07:00:00Z"
+}
