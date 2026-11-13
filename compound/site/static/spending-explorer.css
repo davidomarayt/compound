@@ -112,3 +112,49 @@
 @media(max-width:900px){.wmex-personal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.wmex-topic-grid,.wmex-next-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.wmex-sector-head{font-size:14px}}
 @media(max-width:650px){.wmex-hero{margin:0;padding:20px 19px 37px}.wmex-breadcrumb{margin-bottom:36px}.wmex-hero h1{font-size:49px}.wmex-hero-metrics{grid-template-columns:1fr;gap:14px;margin-top:29px}.wmex-hero-metrics>div{padding-top:12px}.wmex-hero-metrics strong{font-size:32px;margin-top:3px}.wmex-page-nav{margin:0 12px;gap:20px}.wmex-section{padding:54px 17px}.wmex-section-heading h2{font-size:38px}.wmex-list,.wmex-method-grid,.wmex-topic-grid,.wmex-next-grid{grid-template-columns:1fr}.wmex-sector-row{padding:16px 17px}.wmex-sector-amount{font-size:17px}.wmex-personal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.wmex-personal-grid strong{font-size:21px}.wmex-history-row{grid-template-columns:42px minmax(95px,1fr) 76px;gap:9px}.wmex-history-row strong{font-size:13px}.wmex-personal-result,.wmex-trend-notes{grid-template-columns:1fr}.wmex-table{font-size:13px}.wmex-table th,.wmex-table td{padding:11px}}
 @media(prefers-reduced-motion:reduce){.wmex-sector-row{transition:none}}
+
+/* 2026 programme atlas: original mobile-first funding charts, visible source semantics. */
+.wmex-programme-chart,.wmex-programme-grid{display:grid;gap:12px}
+.wmex-programme-chart{grid-template-columns:repeat(2,minmax(0,1fr))}
+.wmex-programme-chart-row{background:#fffefa;padding:18px 20px;border:1px solid #ddd5cc;border-radius:4px;display:block;transition:border-color .2s}
+.wmex-programme-chart-row:hover{border-color:#9d7255}
+.wmex-programme-chart-head{display:flex;justify-content:space-between;align-items:start;gap:14px;font-size:14px}
+.wmex-programme-chart-head span{font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+.wmex-programme-chart-track,.wmex-prog-track{display:block;height:9px;background:#ebe3d7;margin:14px 0 11px;border-radius:8px;overflow:hidden}
+.wmex-programme-chart-track>span,.wmex-prog-track>span{display:block;height:100%;background:#8b8064;border-radius:8px}
+.wmex-programme-chart-foot{display:flex;gap:10px;justify-content:space-between;align-items:start;color:#75676c;font-size:11px;line-height:1.5}
+.wmex-programme-chart-foot span{color:#926443;font-weight:700;white-space:nowrap}
+.wmex-programme-group{margin-top:42px}
+.wmex-programme-group-title{display:flex;justify-content:space-between;align-items:baseline;gap:15px;border-bottom:1px solid #ddd0c1;margin-bottom:18px;padding-bottom:10px}
+.wmex-programme-group-title h3{font:400 clamp(26px,3vw,38px) Georgia,serif}
+.wmex-programme-group-title a{font-size:13px;font-weight:700;color:#8d6248}
+.wmex-programme-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.wmex-programme-card{background:#fffefa;border:1px solid #dcd3c9;padding:22px;display:flex;flex-direction:column;gap:10px;border-radius:3px;min-width:0}
+.wmex-programme-card:hover{border-color:#9f7658}
+.wmex-prog-type{font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:#81674f;font-weight:700}
+.wmex-programme-card>strong{font:400 23px/1.15 Georgia,serif;min-height:54px}
+.wmex-prog-amount{font:400 30px/1.1 Georgia,serif;letter-spacing:-.035em}
+.wmex-prog-track{margin:6px 0;max-width:100%}
+.wmex-prog-desc{font-size:13px;color:#63585f;line-height:1.7;flex:1}
+.wmex-prog-relation{font-size:12px;color:#695c59;border-top:1px solid #e1d7ce;padding-top:10px}
+.wmex-programme-more{font-size:12px;color:#926443;font-weight:700;margin-top:5px}
+.wmex-search-label{display:block;font-weight:700;font-size:13px;margin-bottom:8px}
+.wmex-search-input{display:block;width:100%;max-width:710px;padding:15px 18px;border:1px solid #99877a;border-radius:4px;background:#fffefa;color:#33252e;font-size:16px}
+.wmex-programme-hero-metrics{grid-template-columns:1.1fr 1.3fr .6fr}
+.wmex-hero-metrics .wmex-hero-type{font:700 clamp(15px,2vw,22px)/1.35 Arial,sans-serif;letter-spacing:0;margin-top:11px;text-transform:none}
+.wmex-programme-analysis{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;max-width:1080px}
+.wmex-programme-main{background:#fffefa;border:1px solid #dcd3c9;border-radius:4px;padding:clamp(20px,3vw,35px)}
+.wmex-analysis-label{font-size:12px;color:#71646a;text-transform:uppercase;letter-spacing:.08em}
+.wmex-analysis-amount{font:400 clamp(44px,6vw,80px)/1 Georgia,serif;letter-spacing:-.055em;margin:16px 0 25px}
+.wmex-programme-main>p:not(.wmex-analysis-amount):not(.wmex-analysis-label){font-size:15px;line-height:1.75;color:#61565b;margin-top:12px}
+.wmex-programme-main a{color:#8f5f3f;text-decoration:underline}
+.wmex-programme-parent{border-left:3px solid #bd956c;padding-left:14px}
+.wmex-interpretation{background:#ede5d8;border-top:4px solid #a77e5b;padding:25px}
+.wmex-interpretation h3{font:400 28px Georgia,serif;margin-bottom:16px}
+.wmex-interpretation p{color:#5d5058;font-size:15px;line-height:1.75}
+.wmex-interpretation p+p{margin-top:11px}
+.wmex-programme-related>strong{min-height:0}
+.wmex-programme-links{margin-top:24px}
+.wmex-programme-source{max-width:970px;margin-top:0}
+@media(max-width:980px){.wmex-programme-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.wmex-programme-chart,.wmex-programme-grid,.wmex-programme-analysis,.wmex-programme-hero-metrics{grid-template-columns:1fr}.wmex-programme-chart-row{padding:15px}.wmex-programme-card>strong{min-height:0}.wmex-programme-group-title{align-items:start;flex-direction:column}.wmex-programme-chart-foot span{white-space:normal}}
