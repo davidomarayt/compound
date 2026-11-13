@@ -1,0 +1,122 @@
+<section class="pia-pension-tool" data-pia-pension-tool aria-labelledby="pia-pension-tool-title">
+  <header class="pia-pension-tool__intro">
+    <p class="pia-pension-tool__eyebrow">COMPOUND INTERACTIVE • FREE PLANNING TOOL</p>
+    <h2 id="pia-pension-tool-title">Compare the same take-home budget</h2>
+    <p>See how a proposed Personal Investment Account could grow alongside a tax-relieved pension. Use identical monthly out-of-pocket costs, then change the assumptions that actually matter.</p>
+    <p class="pia-pension-tool__notice"><strong>Important:</strong> Ireland's PIA rules are proposed, not final. A pension is generally inaccessible until eligible retirement; the values below are <strong>not</strong> equally spendable on the same date.</p>
+  </header>
+  <div class="pia-pension-tool__presets" role="group" aria-label="Quick comparison examples">
+    <button type="button" data-pia-example="basic20" aria-pressed="false">€500 / 20% relief</button>
+    <button type="button" data-pia-example="basic40" aria-pressed="true">€500 / 40% relief</button>
+    <button type="button" data-pia-example="match" aria-pressed="false">€500 / match example</button>
+  </div>
+  <form data-pia-form novalidate>
+    <fieldset class="pia-pension-tool__fieldset">
+      <legend>Your investment plan</legend>
+      <div class="pia-pension-tool__inputs">
+        <div class="pia-pension-tool__field">
+          <label for="pp-budget">Take-home budget per month (€)</label>
+          <input id="pp-budget" name="monthlyBudget" type="number" min="25" max="1000" step="25" value="500" inputmode="decimal" required aria-describedby="pp-budget-help">
+          <small id="pp-budget-help">Same spending reduction for both routes; €1,000 a month is the proposed €12,000 PIA annual cap.</small>
+        </div>
+        <div class="pia-pension-tool__field">
+          <label for="pp-years">Years invested</label>
+          <input id="pp-years" name="years" type="number" min="1" max="40" step="1" value="20" inputmode="numeric" required aria-describedby="pp-years-help">
+          <small id="pp-years-help">Full 365-day model years; excludes the partial 2027 launch year.</small>
+        </div>
+        <div class="pia-pension-tool__field">
+          <label for="pp-relief">Assumed pension Income Tax relief</label>
+          <select id="pp-relief" name="relief" required aria-describedby="pp-relief-help">
+            <option value="0">0% — no relief assumed</option>
+            <option value="20">20% — fully qualifying</option>
+            <option value="40" selected>40% — fully qualifying</option>
+          </select>
+          <small id="pp-relief-help">Only use 40% if the entire extra contribution qualifies at that rate. Revenue age/earnings and existing contributions limits apply.</small>
+        </div>
+        <div class="pia-pension-tool__field">
+          <label for="pp-employer">Extra employer contribution (€ / month)</label>
+          <input id="pp-employer" name="employerMonthly" type="number" min="0" max="2000" step="25" value="0" inputmode="decimal" required aria-describedby="pp-employer-help">
+          <small id="pp-employer-help">Include only a <em>genuine additional</em> employer match earned by this extra pension contribution; not existing contributions.</small>
+        </div>
+      </div>
+    </fieldset>
+    <details class="pia-pension-tool__advanced">
+      <summary>Advanced assumptions <span>Return, fees and withdrawal tax</span></summary>
+      <fieldset class="pia-pension-tool__fieldset">
+        <legend>Illustrative assumptions, not forecasts</legend>
+        <div class="pia-pension-tool__inputs">
+          <div class="pia-pension-tool__field">
+            <label for="pp-return">Annual return before fees (%)</label>
+            <input id="pp-return" name="annualReturn" type="number" min="-20" max="20" step=".5" value="6" inputmode="decimal" required>
+          </div>
+          <div class="pia-pension-tool__field">
+            <label for="pp-pia-fee">PIA annual investment and platform fees (%)</label>
+            <input id="pp-pia-fee" name="piaFee" type="number" min="0" max="5" step=".05" value=".5" inputmode="decimal" required>
+          </div>
+          <div class="pia-pension-tool__field">
+            <label for="pp-pension-fee">Pension annual investment and platform fees (%)</label>
+            <input id="pp-pension-fee" name="pensionFee" type="number" min="0" max="5" step=".05" value=".75" inputmode="decimal" required>
+          </div>
+          <div class="pia-pension-tool__field">
+            <label for="pp-withdrawal-tax">Illustrative effective pension withdrawal tax (%)</label>
+            <input id="pp-withdrawal-tax" name="withdrawalTax" type="number" min="0" max="60" step="5" value="20" inputmode="decimal" required aria-describedby="pp-tax-help">
+            <small id="pp-tax-help">A flat what-if deduction from the <em>whole</em> pension balance, not an Irish retirement-tax assessment. Tax-free lump sums, bands, USC, PRSI and timing are not calculated.</small>
+          </div>
+        </div>
+      </fieldset>
+    </details>
+    <div class="pia-pension-tool__controls">
+      <button type="submit" class="pia-pension-tool__button">Compare my scenarios</button>
+      <button type="reset" class="pia-pension-tool__reset">Restore example</button>
+      <span data-pia-tool-error role="alert" class="pia-pension-tool__error" hidden></span>
+    </div>
+  </form>
+  <div class="pia-pension-tool__results" data-pia-results hidden>
+    <div class="pia-pension-tool__results-head">
+      <h3>Illustrative result after <span data-pia-out="years">20</span> years</h3>
+      <p data-pia-out="assumptions">Same take-home cost, different account rules.</p>
+    </div>
+    <div class="pia-pension-tool__cards">
+      <div class="pia-pension-tool__card pia-pension-tool__card--pia">
+        <span class="pia-pension-tool__card-label">Proposed PIA • modelled balance</span>
+        <strong data-pia-out="piaValue">—</strong>
+        <span>Potentially accessible before retirement, subject to proposed rules and investment risk.</span>
+      </div>
+      <div class="pia-pension-tool__card pia-pension-tool__card--pension">
+        <span class="pia-pension-tool__card-label">Pension • gross fund value</span>
+        <strong data-pia-out="pensionGross">—</strong>
+        <span>Subject to pension access restrictions and tax when benefits are taken.</span>
+      </div>
+      <div class="pia-pension-tool__card pia-pension-tool__card--sensitivity">
+        <span class="pia-pension-tool__card-label">Pension • withdrawal-tax sensitivity</span>
+        <strong data-pia-out="pensionIllustrativeNet">—</strong>
+        <span>Hypothetical balance after your flat <span data-pia-out="withdrawalRate">20%</span> deduction. Not an actual net retirement entitlement.</span>
+      </div>
+    </div>
+    <div class="pia-pension-tool__bar-chart" role="img" aria-label="Comparison of projected PIA value, gross pension value and illustrative pension value after the chosen flat withdrawal-tax assumption">
+      <div class="pia-pension-tool__bar-row"><span>PIA</span><div class="pia-pension-tool__track"><div class="pia-pension-tool__bar pia-pension-tool__bar--pia" data-pia-bar="piaValue"></div></div><strong data-pia-out="piaBar">—</strong></div>
+      <div class="pia-pension-tool__bar-row"><span>Pension gross</span><div class="pia-pension-tool__track"><div class="pia-pension-tool__bar pia-pension-tool__bar--pension" data-pia-bar="pensionGross"></div></div><strong data-pia-out="grossBar">—</strong></div>
+      <div class="pia-pension-tool__bar-row"><span>Pension what-if</span><div class="pia-pension-tool__track"><div class="pia-pension-tool__bar pia-pension-tool__bar--net" data-pia-bar="pensionIllustrativeNet"></div></div><strong data-pia-out="netBar">—</strong></div>
+    </div>
+    <div class="pia-pension-tool__metrics" aria-label="Calculation breakdown">
+      <dl><div><dt>Your monthly gross pension contribution</dt><dd data-pia-out="grossMonthly">—</dd></div><div><dt>Extra employer money over the period</dt><dd data-pia-out="employerTotal">—</dd></div><div><dt>PIA contribution total</dt><dd data-pia-out="piaContributions">—</dd></div><div><dt>PIA modelled tax over the period</dt><dd data-pia-out="piaTaxTotal">—</dd></div><div><dt>PIA modelled fees over the period</dt><dd data-pia-out="piaFeesTotal">—</dd></div><div><dt>Pension modelled fees over the period</dt><dd data-pia-out="pensionFeesTotal">—</dd></div></dl>
+    </div>
+    <details class="pia-pension-tool__timeline" open>
+      <summary>See the balances over time</summary>
+      <div class="pia-pension-tool__table-wrap">
+        <table>
+          <caption>Illustrative end-of-year balances. All values rounded to the nearest euro.</caption>
+          <thead><tr><th scope="col">Year</th><th scope="col">PIA</th><th scope="col">Pension gross</th><th scope="col">Pension after hypothetical tax</th></tr></thead>
+          <tbody data-pia-milestones></tbody>
+        </table>
+      </div>
+    </details>
+    <p class="pia-pension-tool__caution"><strong>Do not read the highest number as “best”.</strong> Pension tax relief may be restricted or partially available; a PIA can be accessed earlier under the proposed design. Your PIA tax uses estimated <em>daily</em> closing values, while the retirement-tax deduction is only a sensitivity test.</p>
+    <p class="pia-pension-tool__privacy">This calculator runs in your browser. Inputs are not stored, saved to a link, or sent to Google Analytics. No personalised recommendation is made.</p>
+  </div>
+  <noscript><p class="pia-pension-tool__notice">Enable JavaScript to use the interactive comparison. The worked examples and source explanations below remain available without JavaScript.</p></noscript>
+  <div class="pia-pension-tool__sources">
+    <p><strong>Method:</strong> Contributions are modelled at 12 evenly spaced month-ends. Each full year uses 365 simulated closing values, smooth returns and daily percentage-fee deductions. The proposed PIA tax is 1% of the excess of the average closing value over €50,000, deducted at each modelled year end. No opening balance, withdrawals, inflation, fund-specific dealing fees or partial first tax year are modelled.</p>
+    <p><strong>Check the source rules:</strong> <a href="https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx">Revenue pension relief limits</a>, <a href="https://www.revenue.ie/en/jobs-and-pensions/pension/private/index.aspx">Revenue pension taxation</a>, and <a href="/pia/daily-valuation/">Compound's source-linked PIA daily valuation explainer</a>. PIA legislation and provider terms may change.</p>
+  </div>
+</section>
