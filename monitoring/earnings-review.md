@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-12
+Checked: 2026-11-13
 
 - 498 saved profiles checked against structural and issuer rules.
-- 88 existing company articles; 83 mapped to monitored issuers.
-- 82 pending review items; 17 recorded decisions.
+- 91 existing company articles; 83 mapped to monitored issuers.
+- 85 pending review items; 17 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -29,11 +29,35 @@ Files: `content/wealth/mattel-tariff-refund-margin.md`
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `1f1daebf430dd70026388e47`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/openai-business-agents-chatgpt-merchant-economics-2026.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `202a13db7e6f8053b4b68322`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/shopify-merchant-sales-cash-flow.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `6605e416085729d965f45d56`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/anthropic-anvil-automated-red-teaming-safety-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `7272bceb0b72fa8cc9dc9b67`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/blue-origin-new-glenn-valve-fix-launch-economics.md`
 
 ### UNMAPPED · article_mapping · medium
 
