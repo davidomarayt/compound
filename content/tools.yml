@@ -823,12 +823,12 @@ tools:
     seo_title: PIA Calculator Ireland – Tax, Growth & €50k Threshold
     category: Pensions & Investing
     formula: pia
-    summary: Project Ireland's new Personal Investment Account, estimate when the €50,000 threshold may be crossed and model the 1% annual PIA charge above it.
-    meta_description: PIA calculator Ireland. Project your Personal Investment Account, estimate annual PIA tax above €50,000, contributions, growth, fees and threshold timing.
-    updated: 2026-10-06
-    basic_note: "Basic mode applies the Budget 2027 headline design: up to €12,000 annual contributions, a €50,000 threshold and a 1% annual PIA charge on the modelled average account value above that threshold."
-    advanced_note: "Advanced mode adds an annual investment/provider fee, inflation-adjusted value and the long-run balance drag from the PIA charge. The final Finance Bill may change valuation or payment mechanics."
-    result_note: "Planning illustration based on the Budget 2027 PIA design. The account is not yet available and detailed Finance Bill rules may change the final calculation."
+    summary: Ireland's proposed PIA launches from July 2027. Estimate how contributions and returns could grow your account, and how a 1% annual charge on the average daily value above €50,000 could affect it. Illustrative results, not an official tax calculation.
+    meta_description: Free Irish PIA calculator for 2027. Model contributions, growth, fees and the proposed 1% charge above €50,000 using projected daily account values.
+    updated: 2026-11-13
+    basic_note: "Basic mode applies the Budget 2027 headline design: up to €12,000 annual contributions, a €50,000 threshold and a 1% annual PIA charge on the projected average of daily closing account values above that threshold."
+    advanced_note: "Advanced mode adds an annual investment/provider fee, inflation-adjusted value and the long-run balance drag from the PIA charge. The Finance Bill as introduced specifies a daily closing-value average; the final law and provider calculations may differ."
+    result_note: "Planning illustration based on the proposed PIA framework. It estimates daily balances using smooth returns and monthly contributions, rather than actual daily market data. The account is not yet available and the final law may change."
     fields:
       - {id: current_balance, label: Starting PIA balance, type: number, prefix: "€", default: 0, min: 0, step: 500, section_start: Your PIA}
       - {id: annual_contribution, label: Annual contribution, type: number, prefix: "€", default: 12000, min: 0, max: 12000, step: 100, help: "Budget 2027 announced a €12,000 annual contribution cap. The calculator spreads this amount evenly across the year for projection purposes."}
