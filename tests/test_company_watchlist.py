@@ -86,6 +86,10 @@ tags: [company-openai, company-research]
 ---
 Primary-source analysis of OpenAI.
 """, encoding="utf-8")
+    # Test publisher advertising for covered profiles independently of editorial review.
+    (settings.content_dir / "site.yml").write_text(
+        "adsense:\n  client: ca-pub-1234567890123456\n", encoding="utf-8"
+    )
     build_site(settings)
     root = settings.public_dir
     stocks = (root / "stocks/index.html").read_text(encoding="utf-8")
@@ -132,7 +136,23 @@ Primary-source analysis of OpenAI.
     assert "OpenAI original research" in openai
     assert "Privately held" in openai
     assert "tradingview-widget" not in openai
+    # Profile-level metadata matches each canonical URL and the profile's own summary.
+    for slug, html, name, summary in (
+        ("openai", openai, "OpenAI", "AI research and products."),
+        ("canva", canva, "Canva", "Visual design tools."),
+    ):
+        assert f'<link rel="canonical" href="https://example.test/companies/{slug}/">' in html
+        assert '<meta property="og:type" content="website">' in html
+        assert f'<meta property="og:title" content="{name} — Private Company Research | Compound">' in html
+        assert f'<meta property="og:description" content="{summary}">' in html
+        assert f'<meta property="og:url" content="https://example.test/companies/{slug}/">' in html
+        assert '<nav class="earnings-crumb" aria-label="Breadcrumb">' in html
+    # Existing indexed/unindexed status and standard ads are controlled by genuine coverage,
+    # not a fabricated human-review flag. These are rendered HTML assertions.
+    assert 'name="robots" content="noindex,follow"' not in openai
+    assert "pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" in openai
     assert 'name="robots" content="noindex,follow"' in canva
+    assert "pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" not in canva
     assert 'href="/stocks/spcx/"' in stock_article
     assert 'href="/companies/openai/"' in private_article
     assert "OpenAI company news and research" in private_article
