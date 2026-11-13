@@ -498,7 +498,7 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - [Installer Portal | Compound Solar](https://compound.ie/solar-installer-portal/)
 - [Insurance Tools & Guides Ireland](https://compound.ie/insurance/)
 - [Life](https://compound.ie/life/)
-- [PIA vs pension in Ireland: where should your next €500 go?](https://compound.ie/pia-vs-pension/)
+- [PIA vs Pension Calculator Ireland: Tax Relief, Fees & Growth](https://compound.ie/pia-vs-pension/)
 - [Privacy policy](https://compound.ie/privacy/)
 - [Solar Battery Calculator Ireland: Cost, Grant & Payback](https://compound.ie/solar-batteries/)
 - [Solar Costs & Payback: Irish Guides and Calculators](https://compound.ie/solar/)
