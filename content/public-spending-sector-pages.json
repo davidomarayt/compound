@@ -38,6 +38,15 @@
           "Tax and take-home pay tools",
           "/tools/"
         ]
+      ],
+      "theme_notes": [
+        "State Pension payments support eligible people in retirement; contributory and non-contributory routes have different rules.",
+        "Payments during illness or disability relate to different eligibility conditions and can address short- or long-term needs.",
+        "Jobseeker schemes provide qualifying working-age people with income support and employment-related assistance.",
+        "Carers and family payments address caring responsibilities, maternity, parents and differing household circumstances.",
+        "Child Benefit is a monthly cash payment with its own age and eligibility conditions, not a school expenditure.",
+        "Supports for eligible working families can depend on income, family composition and hours worked.",
+        "Fuel and household supports aim to help eligible households with particular living expenses."
       ]
     },
     {
@@ -72,6 +81,15 @@
           "Health guides",
           "/health/"
         ]
+      ],
+      "theme_notes": [
+        "Acute hospitals provide inpatient, outpatient and specialist care; their service costs are not one uniform per-patient amount.",
+        "Emergency and ambulance services maintain capacity even for people who never call an ambulance or attend an emergency department.",
+        "Primary and community services encompass care delivered outside large acute hospitals.",
+        "Mental health spending can involve community teams, specialist services and child and adolescent mental health care.",
+        "Older-person and disability supports can include community services and residential settings, depending on programme definitions.",
+        "Medical-card schemes and medicine reimbursements require separate utilisation and eligibility data to evaluate accurately.",
+        "Public health work includes population-wide prevention and monitoring, whose benefits are shared rather than individually invoiced."
       ]
     },
     {
@@ -106,6 +124,15 @@
           "Family and household calculators",
           "/tools/"
         ]
+      ],
+      "theme_notes": [
+        "Primary education funding includes classroom provision and related supports, not only the salaries of teaching staff.",
+        "Post-primary schools serve pupils at second level; school-type differences matter when comparing costs.",
+        "Teachers and special needs assistants carry distinct duties; staffing figures must use correct payroll and headcount definitions.",
+        "Special education supports may be delivered in mainstream or specialised settings and have different funding routes.",
+        "Construction, maintenance and refurbishment are capital or operational expenses depending on the source classification.",
+        "School transport funding is a separate function from classroom teaching and may serve eligible pupils across areas.",
+        "DEIS and additional pupil supports target specific needs and should not be conflated with general school grants."
       ]
     },
     {
@@ -140,6 +167,14 @@
           "Mortgage calculator",
           "/mortgage-calculator/"
         ]
+      ],
+      "theme_notes": [
+        "Social housing delivery can involve construction, acquisitions and other routes; each requires separate completion measures.",
+        "HAP helps eligible households with rent under conditions that are not identical to social-home construction.",
+        "Emergency accommodation and longer-term homelessness prevention are different service and spending categories.",
+        "Local authorities operate many services; funding sources and accounting categories need to be identified.",
+        "Water and community infrastructure responsibilities may sit across public bodies and should be mapped before allocating amounts.",
+        "Regeneration and other housing schemes have distinct aims, timeframes and funding arrangements."
       ]
     },
     {
@@ -174,6 +209,14 @@
           "Compound research",
           "/finance/"
         ]
+      ],
+      "theme_notes": [
+        "Policing involves personnel, stations, vehicles, technology and operational services beyond any one budget line.",
+        "Court operations and legal-aid schemes support access to justice through different institutions and legal frameworks.",
+        "Prisons and probation serve different stages of the justice system and have distinct service measures.",
+        "Migration and international protection programmes involve processing, accommodation and administration across relevant bodies.",
+        "Justice administration covers departmental and agency functions that cannot be inferred from Garda expenditure alone.",
+        "Forensic services and victim supports address specialised needs and do not necessarily share one financial programme."
       ]
     },
     {
@@ -208,6 +251,14 @@
           "Home energy tools",
           "/solar/"
         ]
+      ],
+      "theme_notes": [
+        "National road expenditure can combine construction and upkeep, which should be tracked independently.",
+        "Regional and local roads have different responsible bodies and maintenance needs from major national routes.",
+        "Public transport operating supports are different from buying or building new transport infrastructure.",
+        "Rail and light-rail programmes include long-lived assets with multi-year delivery and operating costs.",
+        "Active travel investment may fund walking, cycling and greenway infrastructure.",
+        "Safety and accessibility programmes can be delivered through agencies with their own reporting arrangements."
       ]
     },
     {
@@ -242,6 +293,11 @@
           "Finance directory",
           "/finance/"
         ]
+      ],
+      "theme_notes": [
+        "Interest is the cost of servicing outstanding debt, not the same thing as repayment of the principal.",
+        "Ireland's EU contributions are distinct from debt-interest charges and should be analysed separately.",
+        "Other central Exchequer charges require careful classification; this headline is broader than its short label suggests."
       ]
     },
     {
@@ -276,6 +332,16 @@
           "Compound finance tools",
           "/tools/"
         ]
+      ],
+      "theme_notes": [
+        "Agriculture and marine programmes can support farming, fisheries, food systems and sector regulation.",
+        "Further and higher education is managed through different departmental structures from primary and post-primary schools.",
+        "Defence includes personnel, equipment and military operations rather than one single procurement budget.",
+        "Climate and environmental programmes can span departments and may overlap topical descriptions without double-counting expenditure.",
+        "Enterprise and tourism activity can include business development, promotion and associated public agencies.",
+        "Culture and sport spending may support organisations, facilities, heritage and public programmes.",
+        "Foreign affairs includes diplomacy and international development functions with different objectives.",
+        "Public administration services and regulators underpin many functions but do not form one homogeneous programme."
       ]
     }
   ]
