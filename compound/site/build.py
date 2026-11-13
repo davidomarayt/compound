@@ -26,6 +26,7 @@ from compound.config import Settings
 from compound.site.finance_discovery import catalogue, source_links, write_discovery
 from compound.site.pia import load_pia_tracker
 from compound.site.spending_explorer import prepare_spending_explorer
+from compound.site.spending_programmes import prepare_programmes
 from compound.site.earnings_view import load_company_report
 from compound.site.earnings_archive import prepare_recent_earnings
 from compound.site.earnings_seo import PRIORITY as EARNINGS_SEO_PRIORITY, ORDER as EARNINGS_SEO_ORDER, build_earnings_seo, fiscal_period_display
@@ -1097,6 +1098,13 @@ def build_site(settings: Settings) -> dict:
     spending = prepare_spending_explorer(
         spending, json.loads(spending_pages_path.read_text(encoding="utf-8"))
     )
+    programme_path = settings.content_dir / "public-spending-programmes-2026.json"
+    if not programme_path.is_file():
+        # Publishing tests use temporary article-only content trees.
+        programme_path = Path(__file__).resolve().parents[2] / "content" / "public-spending-programmes-2026.json"
+    spending = prepare_programmes(
+        spending, json.loads(programme_path.read_text(encoding="utf-8"))
+    )
     for article in articles:
         if len(article.related_tools) > 4:
             raise ValueError(f"Keep related_tools to four or fewer on {article.slug}")
@@ -1106,7 +1114,9 @@ def build_site(settings: Settings) -> dict:
                 raise ValueError(f"Unknown related_tools on {article.slug}: {unknown}")
     reserved = {"/finance/", "/", "/search/", "/tools/", "/news/", "/pia/", "/pia/providers/", "/wealth/earnings/", "/stocks/", "/companies/", "/compound-interest-calculator/", "/bmi-calculator/", "/wheres-my-money/"}
     reserved.add("/wheres-my-money/spending/")
+    reserved.add("/wheres-my-money/spending/programmes/")
     reserved.update(category["url"] for category in spending["categories"])
+    reserved.update(programme["url"] for programme in spending["programmes"])
     reserved.update(tool["url"] for tool in tools)
     reserved.update(f"/{p}/" for p in PILLARS)
     reserved.update(pg.url for pg in pages)
@@ -1210,6 +1220,35 @@ def build_site(settings: Settings) -> dict:
                pillar="wealth", wmm_page=True, spending=spending,
                max_billion=max(c["billion"] for c in spending["categories"]),
                schema=spending_hub_schema))
+    programme_hub_schema = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Irish Government Programme Spending 2026",
+        "url": settings.site_base_url + "/wheres-my-money/spending/programmes/",
+        "description": "Source-linked published allocations grouped by government spending sector.",
+        "dateModified": spending["programme_updated"],
+        "hasPart": [settings.site_base_url + p["url"] for p in spending["programmes"]],
+    }
+    _write(out / "wheres-my-money" / "spending" / "programmes" / "index.html",
+           env.get_template("spending_programmes_hub.html").render(
+               title="Irish Government Programme Spending 2026", pillar="wealth",
+               wmm_page=True, spending=spending, schema=programme_hub_schema))
+    for programme in spending["programmes"]:
+        programme_schema = {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": programme["title"] + " — Irish Funding 2026",
+            "url": settings.site_base_url + programme["url"],
+            "description": programme["description"],
+            "dateModified": spending["programme_updated"],
+            "isPartOf": settings.site_base_url + programme["sector_url"],
+            "citation": [programme["source"]],
+        }
+        _write(out / programme["url"].strip("/") / "index.html",
+               env.get_template("spending_programme.html").render(
+                   title=programme["title"] + " — Irish Funding 2026",
+                   pillar="wealth", wmm_page=True,
+                   programme=programme, spending=spending, schema=programme_schema))
     for index, sector in enumerate(spending["categories"], start=1):
         sector_schema = {
             "@context": "https://schema.org",
@@ -1874,6 +1913,7 @@ def build_site(settings: Settings) -> dict:
         (settings.site_base_url + "/finance/", None),
         (settings.site_base_url + "/wheres-my-money/", spending["updated"]),
         (settings.site_base_url + "/wheres-my-money/spending/", spending["updated"]),
+        (settings.site_base_url + "/wheres-my-money/spending/programmes/", spending["programme_updated"]),
         (settings.site_base_url + "/news/", None),
         (settings.site_base_url + "/wealth/earnings/", None),
         (settings.site_base_url + "/stocks/", None),
@@ -1882,6 +1922,10 @@ def build_site(settings: Settings) -> dict:
     sitemap_entries.extend(
         (settings.site_base_url + category["url"], spending["updated"])
         for category in spending["categories"]
+    )
+    sitemap_entries.extend(
+        (settings.site_base_url + programme["url"], spending["programme_updated"])
+        for programme in spending["programmes"]
     )
     sitemap_entries.extend([
         (settings.site_base_url + "/pia/", pia_updated),
