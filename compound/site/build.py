@@ -27,6 +27,7 @@ from compound.site.finance_discovery import catalogue, source_links, write_disco
 from compound.site.pia import load_pia_tracker
 from compound.site.spending_explorer import prepare_spending_explorer
 from compound.site.spending_programmes import prepare_programmes
+from compound.site.spending_votes import prepare_votes
 from compound.site.earnings_view import load_company_report
 from compound.site.earnings_archive import prepare_recent_earnings
 from compound.site.earnings_seo import PRIORITY as EARNINGS_SEO_PRIORITY, ORDER as EARNINGS_SEO_ORDER, build_earnings_seo, fiscal_period_display
@@ -1105,6 +1106,13 @@ def build_site(settings: Settings) -> dict:
     spending = prepare_programmes(
         spending, json.loads(programme_path.read_text(encoding="utf-8"))
     )
+    vote_path = settings.content_dir / "public-spending-votes-2026.json"
+    if not vote_path.is_file():
+        # Older publishing tests assemble isolated temporary content fixtures.
+        vote_path = Path(__file__).resolve().parents[2] / "content" / "public-spending-votes-2026.json"
+    spending = prepare_votes(
+        spending, json.loads(vote_path.read_text(encoding="utf-8"))
+    )
     for article in articles:
         if len(article.related_tools) > 4:
             raise ValueError(f"Keep related_tools to four or fewer on {article.slug}")
@@ -1115,6 +1123,8 @@ def build_site(settings: Settings) -> dict:
     reserved = {"/finance/", "/", "/search/", "/tools/", "/news/", "/pia/", "/pia/providers/", "/wealth/earnings/", "/stocks/", "/companies/", "/compound-interest-calculator/", "/bmi-calculator/", "/wheres-my-money/"}
     reserved.add("/wheres-my-money/spending/")
     reserved.add("/wheres-my-money/spending/programmes/")
+    reserved.add("/wheres-my-money/spending/votes/")
+    reserved.update(vote["url"] for vote in spending["vote_details"])
     reserved.update(category["url"] for category in spending["categories"])
     reserved.update(programme["url"] for programme in spending["programmes"])
     reserved.update(tool["url"] for tool in tools)
@@ -1267,6 +1277,51 @@ def build_site(settings: Settings) -> dict:
                    title=programme["title"] + " — Irish Funding 2026",
                    pillar="wealth", wmm_page=True,
                    programme=programme, spending=spending, schema=programme_schema))
+    vote_hub_schema = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "2026 Irish Dáil Voted Estimates: Net Supply Grants",
+        "url": settings.site_base_url + "/wheres-my-money/spending/votes/",
+        "description": "The exact net Exchequer supply grants approved for 37 numbered Votes in the 2026 Dáil resolution.",
+        "dateModified": spending["vote_date"],
+        "citation": [spending["vote_source"]],
+        "hasPart": [settings.site_base_url + v["url"] for v in spending["vote_details"]],
+    }
+    _write(out / "wheres-my-money" / "spending" / "votes" / "index.html",
+           env.get_template("spending_votes_hub.html").render(
+               title="Irish Voted Estimates 2026: Net Supply Grants",
+               pillar="wealth", wmm_page=True, spending=spending, schema=vote_hub_schema))
+    _write(out / "wheres-my-money" / "spending" / "votes" / "index.json",
+           json.dumps({
+               "version": 1, "year": 2026,
+               "source": spending["vote_source"],
+               "approved_date": "2026-03-25",
+               "definition": spending["vote_statistic"],
+               "scope": spending["vote_scope"],
+               "records": [
+                   {"number": v["number"], "title": v["title"],
+                    "net_supply_eur": v["net_supply_eur"],
+                    "sector_navigation": v["sector_record"]["name"],
+                    "url": settings.site_base_url + v["url"] if v["detail"] else None}
+                   for v in spending["votes"]
+               ],
+           }, ensure_ascii=False, indent=2))
+    for vote in spending["vote_details"]:
+        vote_schema = {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Vote " + str(vote["number"]) + " — " + vote["title"] + " 2026",
+            "url": settings.site_base_url + vote["url"],
+            "dateModified": spending["vote_date"],
+            "description": vote["description"],
+            "isPartOf": settings.site_base_url + "/wheres-my-money/spending/votes/",
+            "citation": [spending["vote_source"]],
+        }
+        _write(out / vote["url"].strip("/") / "index.html",
+               env.get_template("spending_vote_detail.html").render(
+                   title=vote["title"] + " — 2026 Net Supply Grant",
+                   pillar="wealth", wmm_page=True, spending=spending,
+                   vote=vote, schema=vote_schema))
     for index, sector in enumerate(spending["categories"], start=1):
         sector_schema = {
             "@context": "https://schema.org",
@@ -1932,6 +1987,7 @@ def build_site(settings: Settings) -> dict:
         (settings.site_base_url + "/wheres-my-money/", spending["updated"]),
         (settings.site_base_url + "/wheres-my-money/spending/", spending["updated"]),
         (settings.site_base_url + "/wheres-my-money/spending/programmes/", spending["programme_updated"]),
+        (settings.site_base_url + "/wheres-my-money/spending/votes/", spending["vote_date"]),
         (settings.site_base_url + "/news/", None),
         (settings.site_base_url + "/wealth/earnings/", None),
         (settings.site_base_url + "/stocks/", None),
@@ -1944,6 +2000,10 @@ def build_site(settings: Settings) -> dict:
     sitemap_entries.extend(
         (settings.site_base_url + programme["url"], spending["programme_updated"])
         for programme in spending["programmes"]
+    )
+    sitemap_entries.extend(
+        (settings.site_base_url + vote["url"], spending["vote_date"])
+        for vote in spending["vote_details"]
     )
     sitemap_entries.extend([
         (settings.site_base_url + "/pia/", pia_updated),
