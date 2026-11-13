@@ -25,4 +25,31 @@
     input.addEventListener('input', render);
     render();
   });
+
+  /* Client-side finding only; all canonical programme links are server-rendered. */
+  var search = document.querySelector('[data-programme-search]');
+  if (search) {
+    var cards = Array.prototype.slice.call(document.querySelectorAll('[data-programme-card]'));
+    var groups = Array.prototype.slice.call(document.querySelectorAll('[data-programme-group]'));
+    var counter = document.querySelector('[data-programme-count]');
+    var empty = document.querySelector('[data-programme-empty]');
+    function filterProgrammes() {
+      var query = search.value.trim().toLocaleLowerCase('en-IE');
+      var visible = 0;
+      cards.forEach(function (card) {
+        var match = !query || (card.dataset.programmeText || '').indexOf(query) !== -1;
+        card.hidden = !match;
+        if (match) visible++;
+      });
+      groups.forEach(function (group) {
+        group.hidden = !Array.prototype.some.call(group.querySelectorAll('[data-programme-card]'), function (card) {
+          return !card.hidden;
+        });
+      });
+      if (counter) counter.textContent = visible + ' of ' + cards.length + ' published programme allocations shown';
+      if (empty) empty.hidden = visible !== 0;
+    }
+    search.addEventListener('input', filterProgrammes);
+    filterProgrammes();
+  }
 })();
