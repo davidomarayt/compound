@@ -1,0 +1,42 @@
+# Compound overnight technical SEO, UX and revenue — 2026-11-13 (Europe/Dublin)
+
+**Owning worker:** 03:00 Research + Engineering: **role 7 Technical SEO**, **role 8 UX & Conversion**, **role 9 Revenue Optimisation**. **Active production/default branch verified before work:** `claude/clever-babbage-uibieq`; `.github/workflows/site.yml` triggers GitHub Pages build/deploy only on permitted source/site paths pushed to that branch. **One substantive worker PR:** [#123](https://github.com/davidomarayt/compound/pull/123) (OPEN, DRAFT, UNMERGED), exact head `0acdf3bb42884152944941bbdcc625c0bf0069bf` as staged. **Worker merged/deployed/live changes: zero.** 06:30 independent QA, not this worker, owns review/merge.
+
+## 7. Technical SEO Agent — private-profile Open Graph omission; bounded source fix
+
+**Pre-change evidence inspected 13 November:** 
+- Existing live [OpenAI](https://compound.ie/companies/openai/) and [Anthropic](https://compound.ie/companies/anthropic/) canonical profile URLs resolve and show source-linked original company research. The live [private directory](https://compound.ie/companies/) links to canonical profiles. Stock directory `/stocks/` remains a separate public-listing intent.
+- Repository template `compound/site/templates/private_company.html` already emitted a per-company canonical link and `noindex,follow` **only for profiles lacking substantive research**. Unlike `companies_hub.html` (improved in earlier PR #116), individual profiles lacked `og:type`, `og:title`, `og:description` and `og:url`. This is a source-code-confirmed metadata gap, **not a measured Search Console ranking or CTR problem**.
+- Source render logic in `compound/site/build.py` gates index inclusion by actual original coverage, and has a distinct public-stock route for SpaceX. Existing `tests/test_company_watchlist.py` checks sitemap inclusion for covered OpenAI and omission of uncovered Canva. No large crawl or mass robots/sitemap audit was performed; `https://compound.ie/sitemap.xml` could not be parsed using the public-page extractor, so the source/build fixture was used for sitemap logic instead.
+- Inventory checked: `EDITORIAL_TOPIC_INDEX.md`, `CONTENT_INVENTORY.md` and `data/content-inventory.json` (13 Nov snapshot; 13 private-company profiles). No new page, competing intent, redirection, robots or sitemap changes made.
+
+**Single narrow PR [#123](https://github.com/davidomarayt/compound/pull/123):**
+- Modified **only two files**: `compound/site/templates/private_company.html` and `tests/test_company_watchlist.py`.
+- Adds profile-specific Open Graph website/title/summary/canonical URL metadata to the HTML head, using already-existing company name, summary and slug (no unverified valuation or investment claim); the original `rel=canonical` and conditional `noindex` remain unchanged.
+- Builds a covered/indexable **OpenAI** fixture and an uncovered/noindex **Canva** fixture. Regression assertions check each canonical URL, OG values, breadcrumb accessibility, and unchanged index/sitemap behavior.
+- Adds a synthetic test client to verify **standard AdSense loader on the covered private profile** and no ad loader on the uncovered noindex fixture; this does not change production ad settings or impose human-review gating.
+
+**Tests / exact state at worker checkpoint:** [GitHub CI run 43356412000](https://github.com/davidomarayt/compound/actions/runs/43356412000) on exact PR head `0acdf3bb42884152944941bbdcc625c0bf0069bf`: **test job SUCCESS**, which includes `pytest -q` and configured Python/Node checks. **Performance job still IN PROGRESS**, including `compound build`; its full outcome must be rechecked by independent QA. Commit's Vercel status is a *separate solar API deployment* and is **not** GitHub Pages evidence. GitHub PR check confirms #123 **OPEN/DRAFT/UNMERGED**, no production deploy or newly live metadata asserted. Branch temporarily behind production by a separate `research.md` report commit; compare showed two proposal files only and PR mergeability was true when refreshed; QA must re-evaluate latest head/base.
+
+**Risk and rollback:** low static metadata/accessibility risk. Rollback by reverting those two files. No ad slots, payer fields, auth, robots, sitemap, secrets, privacy, consent, articles, source dates, images, image credits or workflows changed. Any future live claim requires actual post-merge/deploy source fetch.
+
+## 8. UX & Conversion Agent — accessible profile breadcrumbs
+
+- Inspected [private directory](https://compound.ie/companies/), [OpenAI](https://compound.ie/companies/openai/) and [Anthropic](https://compound.ie/companies/anthropic/) profiles. Existing breadcrumb on profile visually reads **Compound / Private companies / Company**, but `private_company.html` used `<nav class="earnings-crumb">` without a named navigation landmark. The directory's corresponding nav already had `aria-label="Breadcrumb"`.
+- The same PR #123 adds `aria-label="Breadcrumb"` to the **existing profile breadcrumb**. Navigational links, reading order, displayed text, headings, mobile CSS, content and article pathways are unchanged; no manipulative CTA or tracking added.
+- Build regression checks the rendered landmark for both covered and uncovered profiles. **No screen-reader session, mobile visual screenshot or measured conversion uplift** was performed/claimed. A separate mobile/performance CI job is still processing.
+- Source transparency is preserved: OpenAI/Anthropic latest development links point to their issuer announcements; private profiles expressly warn that valuations must be dated and sourced.
+
+## 9. Revenue Optimisation Agent — verified access, failed data query; safe hypotheses
+
+**Authorised Supermetrics check on 13 November 2026:** 
+- **Google AdSense source `ADM`: `AUTHENTICATED`** for the configured public `ca-pub-6115783809711785`; account discovery succeeded. However **domain-level earnings EUR, page views, individual ad impressions and ad requests for 6–12 November (seven completed Dublin days) failed** with `TRIAL_EXPIRED`, saying the reporting trial expired **19 October 2026**. **No usable figures obtained**, so income, fill, RPM, growth or visibility/attribution changes **cannot** be measured or inferred. No subscription, reconnect, ad-console or account action undertaken.
+- **GA4 `GAWA`: `NOT_AUTHENTICATED`** and **GSC `GW`: `NOT_AUTHENTICATED`**. No authorised site engagement, query-page CTR or conversions retrieved.
+- `content/site.yml` has public publisher client plus populated `stock_mid` and `stock_lower` display slots; explicit `article_top`, `article_bottom`, `earnings_mid` and `feed` slot values are blank. `compound/site/templates/base.html` provides the ordinary AdSense loader in nonpreview, nonexcluded, ad-eligible pages; `compound/site/build.py` sets `ads_allowed=True` for every standard article irrespective of editorial-review state and enables ads for genuinely covered private-company profiles. Existing privacy/consent logic unchanged.
+- **Hypotheses only:** with reporting restored, compare verified revenue/1,000 page views by content type and device before considering placement changes; monitor mobile CLS/performance around fixed stock ads; preserve legibility, consent and policy constraints. Do not encourage ad clicks, simulate impressions, change an account setting or imply Google actually filled ad placements.
+
+## Conflict / review handoff
+
+- Existing open [#119](https://github.com/davidomarayt/compound/pull/119) is a `site.yml` production verification check for the **directory**, [#120](https://github.com/davidomarayt/compound/pull/120) updates a **publication ledger**, [#121](https://github.com/davidomarayt/compound/pull/121) corrects **CGT**; #57 and #43 separately touch solar/electricity and publishing pipeline. None has an overlapping change to `private_company.html` or `tests/test_company_watchlist.py` in the inspected PR state. Recheck before QA.
+- **QA priorities:** confirm exact-head CI performance job finishes successfully, compare fresh PR head/base and changed files, inspect generated HTML for covered/uncovered profiles including ad loader and noindex, verify privacy/consent unchanged, and only then consider merge. If merged/deployed by QA, check raw production Open Graph tags and labelled breadcrumb at actual canonical URLs. **Nothing published or merged by this worker.**
+- Research roles 5/6 are independently documented in [research.md](research.md). All ten agents are **not** claimed complete by this stage.
