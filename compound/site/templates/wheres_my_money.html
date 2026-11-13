@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+{% block head_title %}Where's My Money? Irish Tax Receipt & Government Spending Explorer | Compound{% endblock %}
+{% block meta %}<meta name="description" content="Where does your tax go in Ireland? Calculate 2026 PAYE, USC and PRSI, explore public spending, compare pay scenarios and check possible tax reliefs. Free and private.">{% endblock %}
+{% block head %}
+<link rel="canonical" href="{{ site_url }}/wheres-my-money/">
+<meta property="og:type" content="website"><meta property="og:title" content="Where's My Money? Your Irish tax receipt"><meta property="og:description" content="Understand what you pay, what it could fund, and what might change for you."><meta property="og:url" content="{{ site_url }}/wheres-my-money/"><meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/static/wheres-my-money.css?v=20261113-1">
+<script defer src="/static/wheres-my-money.js?v=20261113-1"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Where's My Money?","description":"2026 Irish personal tax receipt and public spending explorer","url":"{{ site_url }}/wheres-my-money/","applicationCategory":"FinanceApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}}</script>
+{% endblock %}
+{% block content %}
+<div class="wmm" data-wmm>
+  <header class="wmm-hero">
+    <nav class="wmm-crumb" aria-label="Breadcrumb"><a href="/">Compound</a><span>/</span><a href="/tools/">Tools</a><span>/</span><strong>Where's My Money?</strong></nav>
+    <div class="wmm-hero-grid">
+      <div>
+        <p class="wmm-kicker">COMPOUND'S PUBLIC MONEY EXPLORER · IRELAND</p>
+        <h1>Where's <em>my</em> money?</h1>
+        <p class="wmm-lead">See how much tax you pay. Explore the public spending behind it. Find out what could change for you.</p>
+        <div class="wmm-hero-actions">
+          <a class="wmm-button wmm-button-primary" href="#your-receipt">Create my tax receipt <span aria-hidden="true">↗</span></a>
+          <a class="wmm-button wmm-button-ghost" href="#spending">Explore government spending</a>
+        </div>
+        <p class="wmm-trust">Free to use · No account · Calculations stay on your device</p>
+      </div>
+      <div class="wmm-hero-graphic" aria-label="2026 Irish government spending overview">
+        <span class="wmm-mini-kicker">IRELAND'S 2026 SPENDING ESTIMATE</span>
+        <strong>€{{ "%.1f"|format(spending.total_billion) }}bn</strong>
+        <div class="wmm-stripes" aria-hidden="true">
+          {% for c in spending.categories %}<span style="flex:{{ c.billion }}" class="wmm-stripe-{{ loop.index }}"></span>{% endfor %}
+        </div>
+        <div class="wmm-hero-caption"><span>8 published spending sectors</span><span>Official source linked</span></div>
+        <a href="{{ spending.source }}" target="_blank" rel="noopener noreferrer">View the source data ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="wmm-subnav" aria-label="Where's My Money sections">
+    <a href="#your-receipt">Tax receipt</a><a href="#spending">Spending explorer</a><a href="#what-if">What-if</a><a href="#budget">Build a budget</a><a href="#reliefs">Money to check</a><a href="#method">Methodology</a>
+  </nav>
+
+  <section id="your-receipt" class="wmm-section" aria-labelledby="wmm-receipt-heading">
+    <div class="wmm-section-intro"><p class="wmm-kicker">01 · PERSONAL TAX RECEIPT</p><h2 id="wmm-receipt-heading">Start with what you pay.</h2><p>Get an annual estimate using published 2026 Irish tax rules. Adjust your inputs to see the result change instantly.</p></div>
+    <div class="wmm-workspace">
+      <form id="wmm-tax-form" class="wmm-input-card" autocomplete="off">
+        <h3>Your circumstances</h3>
+        <label for="wmm-status">Tax assessment</label>
+        <select id="wmm-status" name="status">
+          <option value="single">Single PAYE employee</option>
+          <option value="joint_one">Married / civil partners — one income, joint assessment</option>
+          <option value="joint_two">Married / civil partners — two incomes, joint assessment</option>
+        </select>
+        <label for="wmm-salary">Your gross annual PAYE salary (€)</label>
+        <input id="wmm-salary" name="salary" type="number" inputmode="decimal" min="0" max="10000000" step="1000" value="60000" required>
+        <div data-wmm-second hidden>
+          <label for="wmm-second">Partner's annual PAYE salary (€)</label>
+          <input id="wmm-second" name="second" type="number" inputmode="decimal" min="0" max="10000000" step="1000" value="40000">
+        </div>
+        <details class="wmm-advanced">
+          <summary>Optional pension and VAT estimates</summary>
+          <label for="wmm-pension">Your tax-relievable pension contributions (€ per year)</label>
+          <input id="wmm-pension" name="pension" type="number" inputmode="decimal" min="0" step="100" value="0">
+          <div data-wmm-second hidden>
+            <label for="wmm-pension-second">Partner's tax-relievable pension contributions (€ per year)</label>
+            <input id="wmm-pension-second" name="pension_second" type="number" inputmode="decimal" min="0" step="100" value="0">
+          </div>
+          <label for="wmm-vat-spend">Household purchases per month <em>including</em> 23% VAT (€)</label>
+          <input id="wmm-vat-spend" name="vat_spend" type="number" inputmode="decimal" min="0" step="50" value="0">
+          <p class="wmm-help">Optional rough VAT estimate for purchases charged at 23% only. Excludes reduced-rate, zero-rated and excise-tax purchases. Pension inputs assume they fully qualify for relief; legal limits are not checked.</p>
+        </details>
+        <p id="wmm-error" class="wmm-error" role="alert" hidden></p>
+        <p class="wmm-help">2026 tax year. Ordinary PAYE / Class A PRSI. No additional reliefs, BIK or unusual income. Partner amounts are included only for jointly assessed couples.</p>
+      </form>
+      <div class="wmm-results" aria-live="polite" aria-atomic="true">
+        <div class="wmm-results-top"><span>YOUR ESTIMATED 2026 RECEIPT</span><span>Annual</span></div>
+        <p class="wmm-total-label">Payroll taxes and employee PRSI</p>
+        <div class="wmm-total" id="wmm-total">—</div>
+        <div class="wmm-ratio"><span id="wmm-percent">— of gross pay</span><span id="wmm-net">— take-home</span></div>
+        <div class="wmm-meter" role="img" aria-label="Share of gross salary paid in payroll taxes"><span id="wmm-meter-fill"></span></div>
+        <dl class="wmm-breakdown">
+          <div><dt>Income tax after standard credits</dt><dd id="wmm-income-tax">—</dd></div>
+          <div><dt>Universal Social Charge</dt><dd id="wmm-usc">—</dd></div>
+          <div><dt>Employee PRSI</dt><dd id="wmm-prsi">—</dd></div>
+          <div class="wmm-optional" data-wmm-pension-row hidden><dt>Pension contributions (not a tax)</dt><dd id="wmm-pension-total">—</dd></div>
+          <div class="wmm-optional" data-wmm-vat-row hidden><dt>Optional estimated VAT (separate)</dt><dd id="wmm-vat">—</dd></div>
+        </dl>
+        <p class="wmm-results-foot">The tax allocation below uses payroll contributions only. VAT is shown separately and is not included twice.</p>
+        <button type="button" class="wmm-button wmm-share" id="wmm-share">Copy receipt summary</button>
+        <p class="wmm-share-status" id="wmm-share-status" role="status"></p>
+      </div>
+    </div>
+    <p class="wmm-notice">This is an educational estimate, not a payslip or tax assessment. It does not trace your particular tax payments to government programmes. See <a href="#method">assumptions and sources</a>.</p>
+  </section>
+
+  <section id="spending" class="wmm-section wmm-section-cream" aria-labelledby="wmm-spending-heading">
+    <div class="wmm-section-intro"><p class="wmm-kicker">02 · FOLLOW THE MONEY</p><h2 id="wmm-spending-heading">The €133bn spending picture.</h2><p>Explore Ireland's published 2026 estimated expenditure. Your personal amounts illustrate each sector's share of the whole — they are not earmarked payments.</p></div>
+    <div class="wmm-spending-layout">
+      <div class="wmm-spending-list" id="wmm-spending-list" aria-live="polite">
+        {% for c in spending.categories %}
+        <div class="wmm-spend-row"><span class="wmm-spend-row-head"><strong>{{ c.name }}</strong><strong>€{{ "%.1f"|format(c.billion) }}bn</strong></span><span class="wmm-spend-row-foot">2026 published estimate · <a href="{{ c.source }}">Source ↗</a></span></div>
+        {% endfor %}
+      </div>
+      <aside class="wmm-spending-detail" id="wmm-spending-detail" aria-live="polite">
+        <p class="wmm-kicker">SELECT A SECTOR</p><h3 id="wmm-sector-name">Healthcare</h3>
+        <div class="wmm-sector-metrics"><div><span>National estimate</span><strong id="wmm-sector-national">—</strong></div><div><span>Your proportional equivalent</span><strong id="wmm-sector-personal">—</strong></div></div>
+        <p id="wmm-sector-summary"></p>
+        <p class="wmm-detail-label">Services you can investigate</p>
+        <ul id="wmm-sector-themes"></ul>
+        <p class="wmm-notice">These are navigation themes, not independently priced subcategories. Deeper amounts will appear only when validated official programme data is available.</p>
+        <a id="wmm-sector-source" href="{{ spending.source }}" target="_blank" rel="noopener noreferrer">Read official sector figures ↗</a>
+      </aside>
+    </div>
+  </section>
+
+  <section id="what-if" class="wmm-section" aria-labelledby="wmm-whatif-heading">
+    <div class="wmm-section-intro"><p class="wmm-kicker">03 · PERSONAL DECISIONS</p><h2 id="wmm-whatif-heading">What if your pay changed?</h2><p>Compare an annual salary increase with your current household scenario. See the extra take-home pay, not just the headline rise.</p></div>
+    <div class="wmm-feature-panel">
+      <label for="wmm-raise">Increase your annual gross salary by</label>
+      <div class="wmm-whatif-controls"><input type="range" id="wmm-raise" min="0" max="20000" step="500" value="5000"><output for="wmm-raise" id="wmm-raise-label">€5,000</output></div>
+      <div class="wmm-whatif-result"><div><span>Extra take-home per year</span><strong id="wmm-extra-net">—</strong></div><div><span>Extra payroll taxes and PRSI</span><strong id="wmm-extra-tax">—</strong></div><div><span>Extra take-home per month</span><strong id="wmm-extra-month">—</strong></div></div>
+      <p class="wmm-help">Same 2026 tax rules and household settings; this does not forecast future tax changes, benefits, pension relief limits or employment terms.</p>
+    </div>
+  </section>
+
+  <section id="budget" class="wmm-section wmm-section-cream" aria-labelledby="wmm-budget-heading">
+    <div class="wmm-section-intro"><p class="wmm-kicker">04 · THE TRADE-OFFS</p><h2 id="wmm-budget-heading">Build your own budget.</h2><p>Move money between two sectors and see what a fixed spending total means. This is a thought experiment, not a forecast of service outcomes.</p></div>
+    <div class="wmm-feature-panel">
+      <div class="wmm-budget-inputs">
+        <div><label for="wmm-from">Reduce funding for</label><select id="wmm-from"></select></div>
+        <div><label for="wmm-to">Increase funding for</label><select id="wmm-to"></select></div>
+        <div><label for="wmm-transfer">Transfer (€ billion)</label><input id="wmm-transfer" type="number" min="0.1" max="10" step="0.1" value="1"></div>
+      </div>
+      <p id="wmm-budget-error" class="wmm-error" role="alert" hidden></p>
+      <div id="wmm-budget-result" class="wmm-budget-result" aria-live="polite"></div>
+      <p class="wmm-help">Transfers hold the headline total constant. They do not alter actual budgets, create automatic savings or predict delivery outcomes.</p>
+    </div>
+  </section>
+
+  <section id="reliefs" class="wmm-section" aria-labelledby="wmm-reliefs-heading">
+    <div class="wmm-section-intro"><p class="wmm-kicker">05 · MONEY TO CHECK</p><h2 id="wmm-reliefs-heading">Could you be missing a relief?</h2><p>Select circumstances that apply. We'll point you towards official guidance — never claim an entitlement without checking eligibility.</p></div>
+    <div class="wmm-relief-grid">
+      <label><input type="checkbox" data-wmm-relief="health"><span><strong>Paid qualifying health expenses</strong><small>Doctor visits and eligible treatment not reimbursed elsewhere.</small></span></label>
+      <label><input type="checkbox" data-wmm-relief="rent"><span><strong>Rent your home</strong><small>You may want to check the Rent Tax Credit conditions.</small></span></label>
+      <label><input type="checkbox" data-wmm-relief="remote"><span><strong>Worked from home</strong><small>Check remote working relief and employer reimbursements.</small></span></label>
+      <label><input type="checkbox" data-wmm-relief="pension"><span><strong>Made pension contributions</strong><small>Check how eligible tax relief is applied to contributions.</small></span></label>
+    </div>
+    <div class="wmm-relief-output" id="wmm-relief-results" aria-live="polite"><p>Select an item to see the relevant official information.</p></div>
+    <p class="wmm-notice">A reminder, not a tax refund estimate. Reliefs are conditional, may already be included in payroll, and may be subject to deadlines.</p>
+  </section>
+
+  <section class="wmm-section wmm-section-cream" aria-labelledby="wmm-projects-heading">
+    <div class="wmm-section-intro"><p class="wmm-kicker">06 · BEYOND THE NUMBERS</p><h2 id="wmm-projects-heading">What actually gets delivered?</h2><p>Spending is an input, not an outcome. Follow publicly reported projects and performance evidence rather than assuming a larger budget guarantees better services.</p></div>
+    <div class="wmm-link-grid">
+      <a href="https://www.gov.ie/en/department-of-public-expenditure-infrastructure-public-service-reform-and-digitalisation/collections/myprojectireland-interactive-map-and-tracker/" target="_blank" rel="noopener noreferrer"><strong>Public project tracking ↗</strong><span>Project Ireland 2040's government capital-project map and tracker</span></a>
+      <a href="https://www.gov.ie/en/department-of-public-expenditure-infrastructure-public-service-reform-and-digitalisation/collections/performance-budgeting/" target="_blank" rel="noopener noreferrer"><strong>Programme performance ↗</strong><span>Evidence on public-service outputs and results</span></a>
+      <a href="https://www.audit.gov.ie/en/" target="_blank" rel="noopener noreferrer"><strong>Independent public audit ↗</strong><span>Comptroller and Auditor General reports and findings</span></a>
+    </div>
+  </section>
+
+  <section id="method" class="wmm-section wmm-method" aria-labelledby="wmm-method-heading">
+    <div class="wmm-section-intro"><p class="wmm-kicker">07 · TRUST AND METHODOLOGY</p><h2 id="wmm-method-heading">Know which numbers are certain.</h2><p>We separate exact formula calculations, rounded public spending estimates, and exploratory topics that cannot yet be reliably priced.</p></div>
+    <div class="wmm-method-grid">
+      <div><strong>Calculated</strong><p>PAYE income tax, USC and employee Class A PRSI use the displayed 2026 assumptions. Results are rounded for presentation, not within each formula.</p></div>
+      <div><strong>Estimated</strong><p>Sector totals are the government's 2026 published estimates, rounded to €0.1bn. Personal sector amounts are illustrative: your payroll taxes × sector spending ÷ total spending.</p></div>
+      <div><strong>Not a net-benefit score</strong><p>Public goods, healthcare protection, education and government services do not all have a defensible household cash value. We do not invent one.</p></div>
+      <div><strong>Limitations</strong><p>No self-employment, non-PAYE income, age-specific credits, home-carer credit, unusual PRSI classes, BIK, capital taxes, full indirect taxes or pension-relief limit validation. Individual circumstances differ.</p></div>
+    </div>
+    <h3>Primary sources</h3>
+    <ul class="wmm-sources">
+      <li><a href="https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx?year=2026" target="_blank" rel="noopener noreferrer">Revenue — 2026 tax rates, bands and credits ↗</a></li>
+      <li><a href="https://www.revenue.ie/en/jobs-and-pensions/usc/" target="_blank" rel="noopener noreferrer">Revenue — Universal Social Charge ↗</a></li>
+      <li><a href="https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-a-rates/" target="_blank" rel="noopener noreferrer">Department of Social Protection — PRSI Class A ↗</a></li>
+      <li><a href="{{ spending.source }}" target="_blank" rel="noopener noreferrer">Where Your Money Goes — 2026 public expenditure ↗</a></li>
+      <li><a href="{{ spending.methodology }}" target="_blank" rel="noopener noreferrer">Where Your Money Goes — reporting basis and source methodology ↗</a></li>
+    </ul>
+    <p class="wmm-updated">Spending snapshot checked {{ spending.updated }} · Tax rules: 2026 · Spending status: estimate, not outturn</p>
+  </section>
+  <script type="application/json" id="wmm-spending-data">{{ spending|tojson }}</script>
+  <noscript><p class="wmm-notice">Enable JavaScript for personalised calculations. The sourced spending overview, project links and methodology remain available above.</p></noscript>
+</div>
+{% endblock %}
