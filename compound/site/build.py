@@ -1233,6 +1233,24 @@ def build_site(settings: Settings) -> dict:
            env.get_template("spending_programmes_hub.html").render(
                title="Irish Government Programme Spending 2026", pillar="wealth",
                wmm_page=True, spending=spending, schema=programme_hub_schema))
+    # Machine-readable public catalogue mirrors the same validated records as the pages.
+    # Never imply records are exhaustive or additive, and retain the original source URLs.
+    _write(out / "wheres-my-money" / "spending" / "programmes" / "index.json",
+           json.dumps({
+               "version": 1,
+               "year": 2026,
+               "updated": spending["programme_updated"],
+               "scope": "Selected published allocations; not an exhaustive or additive sector breakdown.",
+               "sector_count": len(spending["categories"]),
+               "programme_count": spending["programme_count"],
+               "programmes": [{
+                   "title": p["title"], "url": settings.site_base_url + p["url"],
+                   "sector": p["sector_name"], "year": p["year"],
+                   "amount_eur_million": p["amount_m"], "qualifier": p["qualifier"],
+                   "basis": p["kind"], "source": p["source"],
+                   "parent": p.get("parent"),
+               } for p in spending["programmes"]],
+           }, ensure_ascii=False, indent=2))
     for programme in spending["programmes"]:
         programme_schema = {
             "@context": "https://schema.org",
