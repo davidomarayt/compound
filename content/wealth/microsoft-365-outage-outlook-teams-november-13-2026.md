@@ -32,9 +32,15 @@ sources:
     url: "https://apnews.com/article/d92547a821930290db2964388016979a"
   - title: "Reuters reporting on worldwide Outlook and Teams disruptions"
     url: "https://live.euronext.com/en/financial-news/microsoft-outage-drags-hours-disrupting-outlook-teams-businesses-and-governments"
+  - title: "Microsoft incident log, latest Exchange Online infrastructure recovery update"
+    url: "https://mailservices.isc.upenn.edu/computing/email/penno365/alerts/ms-incidents.html?q=MO1550821"
+  - title: "Microsoft 365 MO1550821 service updates, 13 November"
+    url: "https://thersac.icts.thers.ac.jp/hc/en-us/articles/64262985209881-November-13-2026-Microsoft-365-Outage-MO1550821"
   - title: "Microsoft fiscal first-quarter FY2027 earnings announcement"
     url: "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast"
 ---
+**Latest verified update — 13 November 2026, approximately 10:30 a.m. Irish time:** Microsoft continued to report *service degradation*, not a confirmed global resolution. Under incident **MO1550821**, its recovery work included rebuilding affected infrastructure, controlling traffic in selected regions, reversing suspected configuration changes and restoring capacity gradually. In the Exchange Online incident **EX1550543**, Microsoft reported improved stability after applying an authentication/routing component patch to some servers, with an expansion to additional regions. These are signs of progress, **not confirmation that all Outlook, Teams and Microsoft 365 services are working normally**. Check the [live Microsoft service status](https://sdf.status.cloud.microsoft/) and your organisation's tenant dashboard for more current conditions. [Source: Microsoft incident updates published through the University of Pennsylvania's PennO365 feed](https://mailservices.isc.upenn.edu/computing/email/penno365/alerts/ms-incidents.html).
+
 *Status checked 13 November 2026. This is a developing incident. Microsoft had reported partial signs of stabilisation, but a complete worldwide restoration was not confirmed in the official status updates available when this article was checked. The archive cover is a photograph from April 2005, not an image of the outage.*
 
 **Microsoft 365 users around the world faced a major service disruption extending into Friday, 13 November 2026, after problems began on Thursday.** Outlook and Exchange Online were at the centre of the disruption, with effects reaching parts of Microsoft Teams, Copilot, administration and other workplace tools. People searching for **“Microsoft down today”** should distinguish between a broad Microsoft 365 incident and an outage of every Microsoft product: [Microsoft's public service-health page](https://sdf.status.cloud.microsoft/) identifies the services with confirmed degradation.
