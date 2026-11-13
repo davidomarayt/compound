@@ -1,5 +1,5 @@
 ---
-title: "PIA vs pension in Ireland: where should your next €500 go?"
+title: "PIA vs Pension Calculator Ireland: Tax Relief, Fees & Growth"
 canonical_path: /pia/vs-pension/
 meta_description: "Interactive PIA vs pension calculator for Ireland: compare the same take-home cost, pension tax relief, employer contributions, fees and retirement deductions. See the effect of 20% and 40% tax relief, employer matching and access before retirement."
 ---
