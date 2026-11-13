@@ -23,7 +23,7 @@
     <p class="wmex-hero-foot">Expenditure estimates — not confirmed final outturn. Source checked {{ spending.updated }}.</p>
   </header>
 
-  <nav class="wmex-page-nav" aria-label="Explore {{ sector.name }}"><a href="#trend">Spending chart</a><a href="#explained">What it covers</a><a href="#receipt">Your tax allocation</a><a href="#questions">FAQs</a><a href="#other-sectors">Other sectors</a></nav>
+  <nav class="wmex-page-nav" aria-label="Explore {{ sector.name }}"><a href="#trend">Spending chart</a><a href="#explained">What it covers</a><a href="#programmes">Verified allocations</a><a href="#receipt">Your tax allocation</a><a href="#questions">FAQs</a><a href="#other-sectors">Other sectors</a></nav>
 
   <section class="wmex-section" id="trend" aria-labelledby="wmex-trend-title">
     <div class="wmex-section-heading"><p class="wmex-eyebrow">01 / FIGURES IN CONTEXT</p><h2 id="wmex-trend-title">{{ sector.name }}: spending over time</h2><p>{{ sector.intro }}</p></div>
@@ -62,6 +62,25 @@
       {% endfor %}
     </div>
     <div class="wmex-evidence"><h3>Why this distinction matters</h3><p>{{ sector.interpretation }}</p><p>Amounts for individual programmes would need to reconcile to the department and sector totals before appearing in these charts. We do not divide the sector figure evenly among the topics above.</p></div>
+  </section>
+
+  <section class="wmex-section" id="programmes" aria-labelledby="wmex-programme-list-heading">
+    <div class="wmex-section-heading">
+      <p class="wmex-eyebrow">03 / IDENTIFIED PROGRAMME ALLOCATIONS</p>
+      <h2 id="wmex-programme-list-heading">Explore {{ sector.programmes|length }} published funding amounts in {{ sector.name|lower }}.</h2>
+      <p>These are official 2026 estimates, allocations and selected measures. Some are parts of others, or cover a different reporting boundary. <strong>Do not add the bars together or subtract them from the sector total.</strong></p>
+    </div>
+    <div class="wmex-programme-chart" role="list" aria-label="Selected 2026 programme allocations, non-additive">
+      {% for p in sector.programmes %}
+      <a href="{{ p.url }}" class="wmex-programme-chart-row" role="listitem">
+        <span class="wmex-programme-chart-head"><strong>{{ p.title }}</strong><span>{{ p.amount_label }}</span></span>
+        <span class="wmex-programme-chart-track" aria-hidden="true"><span style="width:{{ "%.3f"|format(p.bar_width) }}%"></span></span>
+        <span class="wmex-programme-chart-foot">{{ p.kind }} {% if p.parent_record %} · Part of {{ p.parent_record.title }}{% endif %}<span>Explore details &rarr;</span></span>
+      </a>
+      {% endfor %}
+    </div>
+    <p class="wmex-chart-note">Bar lengths indicate the relative size of the amounts <em>in this selected set only</em>. They do not represent a complete or mutually exclusive spending breakdown. Each linked programme page identifies the source, status and any overlap.</p>
+    <a class="wmex-primary-link" href="/wheres-my-money/spending/programmes/">Browse all {{ spending.programme_count }} verified allocations &rarr;</a>
   </section>
 
   <section class="wmex-section" id="receipt" aria-labelledby="wmex-receipt-title">
