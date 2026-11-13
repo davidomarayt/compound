@@ -38,8 +38,8 @@ def test_jsonld_and_privacy():
     assert '"isAccessibleForFree":true' in TEMPLATE
     assert "compound_analytics_consent" in SCRIPT
     assert 'pia_investing_compare' in SCRIPT
-    assert "window.gtag(\\"event\\",\\"pia_investing_compare\\",{tool_name:\\"pia-vs-ordinary-investing\\"})" in SCRIPT
-    assert "window.gtag(\\"event\\",\\"pia_investing_compare\\",inputs()" not in SCRIPT
+    assert 'window.gtag("event","pia_investing_compare",{tool_name:"pia-vs-ordinary-investing"})' in SCRIPT
+    assert 'window.gtag("event","pia_investing_compare",inputs()' not in SCRIPT
 
 def test_scenario_engine_and_static_table():
     if not shutil.which("node"):
