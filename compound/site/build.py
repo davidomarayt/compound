@@ -1079,6 +1079,13 @@ def build_site(settings: Settings) -> dict:
     pages = load_pages(settings.content_dir)
     tools = load_tools(settings.content_dir)
     tools_by_slug = tool_catalogue(settings.content_dir, tools)
+    # A source-backed snapshot; never manufacture programme-level allocations.
+    spending_path = settings.content_dir / "public-spending-2026.json"
+    spending = json.loads(spending_path.read_text(encoding="utf-8"))
+    if spending.get("year") != 2026 or not spending.get("categories"):
+        raise ValueError("Where's My Money spending snapshot is missing or invalid")
+    if abs(sum(float(c["billion"]) for c in spending["categories"]) - float(spending["total_billion"])) > 0.051:
+        raise ValueError("Where's My Money spending categories do not reconcile")
     for article in articles:
         if len(article.related_tools) > 4:
             raise ValueError(f"Keep related_tools to four or fewer on {article.slug}")
@@ -1086,7 +1093,7 @@ def build_site(settings: Settings) -> dict:
             unknown = [slug for slug in article.related_tools if slug not in tools_by_slug]
             if unknown:
                 raise ValueError(f"Unknown related_tools on {article.slug}: {unknown}")
-    reserved = {"/finance/", "/", "/search/", "/tools/", "/news/", "/pia/", "/pia/providers/", "/wealth/earnings/", "/stocks/", "/companies/", "/compound-interest-calculator/", "/bmi-calculator/"}
+    reserved = {"/finance/", "/", "/search/", "/tools/", "/news/", "/pia/", "/pia/providers/", "/wealth/earnings/", "/stocks/", "/companies/", "/compound-interest-calculator/", "/bmi-calculator/", "/wheres-my-money/"}
     reserved.update(tool["url"] for tool in tools)
     reserved.update(f"/{p}/" for p in PILLARS)
     reserved.update(pg.url for pg in pages)
@@ -1171,6 +1178,10 @@ def build_site(settings: Settings) -> dict:
     _write(out / "index.html", env.get_template("home.html").render(
         columns=columns, articles=articles, home_articles=home_articles,
         news_articles=[a for a in news_articles if a.pillar == "wealth"][:4], home_tools=home_tools, title="Compound"))
+    _write(out / "wheres-my-money" / "index.html",
+           env.get_template("wheres_my_money.html").render(
+               title="Where's My Money? Irish Tax Receipt", pillar="wealth",
+               tools_page=True, spending=spending))
 
     _write(out / "news" / "index.html", env.get_template("news.html").render(
         articles=news_articles, title="Latest News for Ireland", news=True, ads_allowed=False))
@@ -1510,6 +1521,13 @@ def build_site(settings: Settings) -> dict:
 
     if tools:
         hub_tools = list(tools)
+        hub_tools.insert(0, {
+            "slug": "wheres-my-money",
+            "title": "Where's My Money? — Irish Tax Receipt",
+            "url": "/wheres-my-money/",
+            "category": "Tax & Take-Home Pay",
+            "summary": "Calculate what you pay, explore 2026 public spending and compare budget choices.",
+        })
         if (settings.content_dir / "compound-calculator-guide.md").is_file():
             hub_tools.append({
                 "slug": "compound-interest-calculator",
@@ -1810,6 +1828,7 @@ def build_site(settings: Settings) -> dict:
     sitemap_entries: list[tuple[str, str | None]] = [
         (settings.site_base_url + "/", None),
         (settings.site_base_url + "/finance/", None),
+        (settings.site_base_url + "/wheres-my-money/", spending["updated"]),
         (settings.site_base_url + "/news/", None),
         (settings.site_base_url + "/wealth/earnings/", None),
         (settings.site_base_url + "/stocks/", None),
