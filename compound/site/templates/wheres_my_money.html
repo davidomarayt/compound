@@ -107,10 +107,11 @@
 
   <section id="spending" class="wmm-section wmm-section-cream" aria-labelledby="wmm-spending-heading">
     <div class="wmm-section-intro"><p class="wmm-kicker">02 · FOLLOW THE MONEY</p><h2 id="wmm-spending-heading">The €133bn spending picture.</h2><p>Explore Ireland's published 2026 estimated expenditure. Your personal amounts illustrate each sector's share of the whole — they are not earmarked payments.</p></div>
+    <p class="wmm-explore-sectors"><a class="wmm-button wmm-button-primary" href="/wheres-my-money/spending/">View every sector, chart and year-on-year comparison &rarr;</a></p>
     <div class="wmm-spending-layout">
       <div class="wmm-spending-list" id="wmm-spending-list" aria-live="polite">
         {% for c in spending.categories %}
-        <div class="wmm-spend-row"><span class="wmm-spend-row-head"><strong>{{ c.name }}</strong><strong>€{{ "%.1f"|format(c.billion) }}bn</strong></span><span class="wmm-spend-row-foot">2026 published estimate · <a href="{{ c.source }}">Source ↗</a></span></div>
+        <div class="wmm-spend-row"><span class="wmm-spend-row-head"><strong>{{ c.name }}</strong><strong>€{{ "%.1f"|format(c.billion) }}bn</strong></span><span class="wmm-spend-row-foot">2026 estimate · <a href="{{ c.get('url', c.source) }}">Detailed charts on Compound &rarr;</a></span></div>
         {% endfor %}
       </div>
       <aside class="wmm-spending-detail" id="wmm-spending-detail" aria-live="polite">
@@ -120,7 +121,7 @@
         <p class="wmm-detail-label">Services you can investigate</p>
         <ul id="wmm-sector-themes"></ul>
         <p class="wmm-notice">These are navigation themes, not independently priced subcategories. Deeper amounts will appear only when validated official programme data is available.</p>
-        <a id="wmm-sector-source" href="{{ spending.source }}" target="_blank" rel="noopener noreferrer">Read official sector figures ↗</a>
+        <a id="wmm-sector-source" href="/wheres-my-money/spending/">Open the in-house sector charts &rarr;</a>
       </aside>
     </div>
   </section>
