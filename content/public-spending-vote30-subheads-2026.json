@@ -1,0 +1,255 @@
+{
+  "year": 2026,
+  "vote": 30,
+  "updated": "2026-11-13",
+  "source": "https://data.oireachtas.ie/ie/oireachtas/committee/dail/34/select_committee_on_agriculture_and_food/submissions/2026/2026-02-25_opening-statement-minister-martin-heydon-t-d-department-of-agriculture-food-and-the-marine_en.pdf",
+  "source_description": "2026 Revised Estimates, Minister for Agriculture opening statement to Oireachtas Select Committee on 25 February 2026, tables 1–4",
+  "unit": "EUR thousands",
+  "comparison": "2025 Supplementary Estimate vs 2026 Revised Estimate",
+  "notes": "Full 2026 Vote 30 programme totals A–D reconcile to gross €2.316966bn. Only Programmes A, B and C have itemised subhead tables in this source; D is deliberately not presented as itemised. Appropriations-in-aid are receipts deducted from gross to calculate the net Vote.",
+  "totals": {
+    "gross_2025": 2237921,
+    "gross_2026": 2316966,
+    "appropriations_2025": 406516,
+    "appropriations_2026": 499131,
+    "net_2025": 1831405,
+    "net_2026": 1817835
+  },
+  "programmes": [
+    {
+      "code": "A",
+      "title": "Food Safety, Animal and Plant Health and Animal Welfare",
+      "total_2025": 495695,
+      "total_2026": 513929,
+      "rows": [
+        {
+          "code": "A.1",
+          "title": "Administration — Pay",
+          "amount_2025": 157074,
+          "amount_2026": 166419
+        },
+        {
+          "code": "A.2",
+          "title": "Administration — Non-Pay",
+          "amount_2025": 83717,
+          "amount_2026": 71521
+        },
+        {
+          "code": "A.3",
+          "title": "Food Safety, Animal and Plant Health and Animal Welfare",
+          "amount_2025": 97870,
+          "amount_2026": 95007
+        },
+        {
+          "code": "A.4",
+          "title": "Bovine TB and Brucellosis Eradication",
+          "amount_2025": 136500,
+          "amount_2026": 158349
+        },
+        {
+          "code": "A.5",
+          "title": "Laboratories",
+          "amount_2025": 20534,
+          "amount_2026": 22633
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "title": "Farm and Sector Supports and Controls",
+      "total_2025": 1132652,
+      "total_2026": 1152675,
+      "rows": [
+        {
+          "code": "B.1",
+          "title": "Administration — Pay",
+          "amount_2025": 76861,
+          "amount_2026": 81433
+        },
+        {
+          "code": "B.2",
+          "title": "Administration — Non-Pay",
+          "amount_2025": 36665,
+          "amount_2026": 37853
+        },
+        {
+          "code": "B.3",
+          "title": "Agri-Environmental Schemes",
+          "amount_2025": 63723,
+          "amount_2026": 49598
+        },
+        {
+          "code": "B.4",
+          "title": "Areas of Natural Constraint",
+          "amount_2025": 249000,
+          "amount_2026": 247000
+        },
+        {
+          "code": "B.5",
+          "title": "Development of Agriculture and Food — Farm",
+          "amount_2025": 62950,
+          "amount_2026": 99500
+        },
+        {
+          "code": "B.6",
+          "title": "Beef Sustainability Schemes",
+          "amount_2025": 94761,
+          "amount_2026": 94761
+        },
+        {
+          "code": "B.7",
+          "title": "Knowledge Transfer",
+          "amount_2025": 7532,
+          "amount_2026": 8250
+        },
+        {
+          "code": "B.8",
+          "title": "Sheep Improvement Scheme",
+          "amount_2025": 20000,
+          "amount_2026": 42000
+        },
+        {
+          "code": "B.10",
+          "title": "Forestry and Bioenergy",
+          "amount_2025": 91007,
+          "amount_2026": 96590
+        },
+        {
+          "code": "B.11",
+          "title": "Control and Other Support Scheme Costs",
+          "amount_2025": 14567,
+          "amount_2026": 23808
+        },
+        {
+          "code": "B.12",
+          "title": "Other Schemes",
+          "amount_2025": 22138,
+          "amount_2026": 282
+        },
+        {
+          "code": "B.13",
+          "title": "Carbon Tax Measures and Just Transition Fund",
+          "amount_2025": 3000,
+          "amount_2026": 3000
+        },
+        {
+          "code": "B.14",
+          "title": "Agri-Climate Rural Environment Scheme (ACRES)",
+          "amount_2025": 295000,
+          "amount_2026": 280000
+        },
+        {
+          "code": "B.15",
+          "title": "Organic Farming Scheme",
+          "amount_2025": 60798,
+          "amount_2026": 58600
+        },
+        {
+          "code": "B.16",
+          "title": "Tillage and Horticulture Scheme",
+          "amount_2025": 32400,
+          "amount_2026": 30000
+        },
+        {
+          "code": "B.17",
+          "title": "Long Established Young Farmer",
+          "amount_2025": 2250,
+          "amount_2026": 0
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "title": "Policy and Strategy",
+      "total_2025": 436004,
+      "total_2026": 470272,
+      "rows": [
+        {
+          "code": "C.1",
+          "title": "Administration — Pay",
+          "amount_2025": 21904,
+          "amount_2026": 23207
+        },
+        {
+          "code": "C.2",
+          "title": "Administration — Non-Pay",
+          "amount_2025": 7659,
+          "amount_2026": 9742
+        },
+        {
+          "code": "C.3",
+          "title": "Research, Quality and Certification",
+          "amount_2025": 39895,
+          "amount_2026": 28910
+        },
+        {
+          "code": "C.4",
+          "title": "Development and Promotion of Agriculture and Food — Non-Farm",
+          "amount_2025": 11727,
+          "amount_2026": 6837
+        },
+        {
+          "code": "C.5",
+          "title": "Teagasc Grant",
+          "amount_2025": 175437,
+          "amount_2026": 175622
+        },
+        {
+          "code": "C.6",
+          "title": "Bord Bia Grant",
+          "amount_2025": 59048,
+          "amount_2026": 60280
+        },
+        {
+          "code": "C.7",
+          "title": "Horse and Greyhound Racing Fund",
+          "amount_2025": 99103,
+          "amount_2026": 99103
+        },
+        {
+          "code": "C.8",
+          "title": "CEDRA Rural Innovation and Development Fund",
+          "amount_2025": 1760,
+          "amount_2026": 2000
+        },
+        {
+          "code": "C.9",
+          "title": "Food Aid Donations — World Food Programme",
+          "amount_2025": 0,
+          "amount_2026": 35000
+        },
+        {
+          "code": "C.10",
+          "title": "SBCI Loan Scheme",
+          "amount_2025": 300,
+          "amount_2026": 6400
+        },
+        {
+          "code": "C.11",
+          "title": "Other Services",
+          "amount_2025": 12044,
+          "amount_2026": 14243
+        },
+        {
+          "code": "C.12",
+          "title": "Other Equine Supports",
+          "amount_2025": 5200,
+          "amount_2026": 5729
+        },
+        {
+          "code": "C.13",
+          "title": "Agri-Food Regulator",
+          "amount_2025": 1927,
+          "amount_2026": 3199
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "title": "Seafood Sector",
+      "total_2025": 173570,
+      "total_2026": 180090,
+      "rows": []
+    }
+  ]
+}
