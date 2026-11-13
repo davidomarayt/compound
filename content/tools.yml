@@ -824,7 +824,7 @@ tools:
     category: Pensions & Investing
     formula: pia
     summary: Ireland's proposed PIA launches from July 2027. Estimate how contributions and returns could grow your account, and how a 1% annual charge on the average daily value above €50,000 could affect it. Illustrative results, not an official tax calculation.
-    meta_description: Free Irish PIA calculator for 2027. Model contributions, growth, fees and the proposed 1% charge above €50,000 using projected daily account values.
+    meta_description: PIA calculator Ireland 2027. Model contributions, growth, fees and the proposed 1% charge above €50,000 using projected daily account values.
     updated: 2026-11-13
     basic_note: "Basic mode applies the Budget 2027 headline design: up to €12,000 annual contributions, a €50,000 threshold and a 1% annual PIA charge on the projected average of daily closing account values above that threshold."
     advanced_note: "Advanced mode adds an annual investment/provider fee, inflation-adjusted value and the long-run balance drag from the PIA charge. The Finance Bill as introduced specifies a daily closing-value average; the final law and provider calculations may differ."
