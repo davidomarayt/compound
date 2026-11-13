@@ -6,6 +6,7 @@ from pathlib import Path
 
 import pytest
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from markupsafe import escape
 
 from compound.site.spending_explorer import prepare_spending_explorer
 from compound.site.spending_programmes import prepare_programmes, amount_display
@@ -106,10 +107,10 @@ def test_49_programme_pages_render_unique_canonicals_sources_and_related_links()
     for p in d["programmes"]:
         html = template.render(**context(), programme=p, spending=d, schema={"@type":"WebPage"})
         assert f'<link rel="canonical" href="https://compound.ie{p["url"]}">' in html
-        assert p["title"] in html
+        assert str(escape(p["title"])) in html
         assert p["amount_label"] in html
-        assert p["description"] in html
-        assert p["limitation"] in html
+        assert str(escape(p["description"])) in html
+        assert str(escape(p["limitation"])) in html
         assert p["source"] in html
         assert f'href="{p["sector_url"]}"' in html
         assert f'href="/wheres-my-money/spending/programmes/"' in html
