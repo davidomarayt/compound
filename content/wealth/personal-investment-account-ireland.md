@@ -251,6 +251,8 @@ These are illustrations using the announced rate and threshold. They are **not**
 
 <h2 id="pia-tax-calculator">Personal Investment Account tax calculator</h2>
 
+For a separate comparison with investing **outside** the wrapper, use our [PIA vs ETF vs direct shares calculator](/pia/vs-ordinary-investing/), which models the proposed PIA tax, relevant ETF deemed disposal and direct-share CGT side by side.
+
 For a full projection including contributions, investment growth, the year you may first cross the €50,000 threshold, cumulative PIA tax, provider fees and the long-run balance impact, use Compound's standalone **[PIA Calculator Ireland](/pia-calculator/)**.
 
 The quick calculator below estimates the annual PIA charge under the **Budget 2027 headline formula** from a single illustrative average account value.

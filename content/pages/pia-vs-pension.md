@@ -191,6 +191,8 @@ No. The results use a fixed 6% annual investment return and other explicit assum
 
 The **PIA** statements reflect the proposed framework, including [the Finance (No. 2) Bill 2026 as introduced](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf#page=37), and are **not a claim that accounts are currently open**. For pension treatment, refer to [Revenue's pension relief guide](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/index.aspx), [Revenue's age-related limits](https://www.revenue.ie/en/jobs-and-pensions/pension/relief/tax-relief-limits.aspx), [Revenue's retirement lump-sum guidance](https://www.revenue.ie/en/jobs-and-pensions/pension/private/retirement-lump-sums.aspx) and the [Pensions Authority on retirement benefits](https://pensionsauthority.ie/scheme-members-and-prsa-contributors/understanding-pensions/benefits_payable_on_retirement/normal_retirement/).
 
+For a different question—whether an ETF or individual shares should sit **inside the proposed PIA or in a regular brokerage account**—use our [PIA vs ETF vs shares after-tax calculator](/pia/vs-ordinary-investing/). It compares investment wrappers without assuming pension contribution relief.
+
 **Keep exploring:** [Model a PIA scenario](/pia-calculator/) · [Understand the proposed daily-value tax](/pia/daily-valuation/) · [Compare PIA provider announcements](/pia/providers/) · [Read the pensions guide](/wealth/pensions-in-ireland/) · [Return to the PIA Centre](/pia/).
 
 **Legislative source:** [Finance (No. 2) Bill 2026 as introduced, section 26, proposed Part 27A](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf#page=37).

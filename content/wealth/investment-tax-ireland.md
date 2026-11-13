@@ -56,6 +56,8 @@ The word **typical** matters. Product structure, domicile, residency and persona
 
 > **Budget 2027 update:** Ireland's new [Personal Investment Account (PIA)](/wealth/personal-investment-account-ireland/) is planned for 1 July 2027. The announced design has a €50,000 threshold, a 1% annual charge on the relevant account value above it and a €12,000 annual contribution limit. The existing retail-investment tax regime, including deemed disposal, is not intended to apply inside the PIA. The Finance Bill still has to enact the detailed rules.
 
+For a like-for-like planning exercise, use our [PIA vs ETF vs direct shares after-tax calculator](/pia/vs-ordinary-investing/) and see how the proposed PIA account charge differs from eight-year deemed disposal and CGT. The example also distinguishes the current 38% relevant fund rate from the 35% rate **proposed** from January 2027 in the [Finance (No. 2) Bill 2026](https://assets.gov.ie/static/documents/89edf30b/Finance_No._2_Bill_2026.pdf).
+
 For a planning illustration, [estimate when a PIA might cross the €50,000 threshold and what the annual charge could be](/pia-calculator/). It is not a like-for-like comparison with CGT or the ETF exit-tax regime.
 
 ## Capital Gains Tax on direct shares

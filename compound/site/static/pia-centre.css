@@ -50,3 +50,7 @@ a.pia-link-card:hover{border-color:#b88976;box-shadow:0 7px 20px rgba(32,18,23,.
 @media(max-width:980px){.pia-filter-panel{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:750px){.pia-comparison-grid{grid-template-columns:1fr}.pia-provider-summary{min-height:0}}
 @media(max-width:500px){.pia-filter-panel,.pia-scenario-tools{grid-template-columns:1fr;padding:15px}.pia-scenario-tools>.pia-small{grid-column:1}.pia-comparison-card{padding:20px 17px}.pia-card-top{flex-direction:column;gap:9px}.pia-card-top .pia-status-tag{max-width:none}.pia-fee-facts dt{flex-basis:46%}}
+
+/* Four question-led PIA centre decisions, two wide cards per row. */
+.pia-link-grid-four{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:620px){.pia-link-grid-four{grid-template-columns:1fr}}
