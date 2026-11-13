@@ -1,0 +1,31 @@
+name: WMM public source evidence
+on:
+  push:
+    branches: ["feat/wmm-native-explorer-20261113"]
+    paths: ["scripts/capture_public_spending.py", ".github/workflows/wmm-source-capture.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install playwright==1.56.0
+      - run: python -m playwright install --with-deps chromium
+      - name: Capture public chart data and source provenance
+        run: python scripts/capture_public_spending.py
+      - name: Retain research evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wmm-public-source-evidence
+          path: wmm-source-evidence/
+          retention-days: 7
+          if-no-files-found: error
