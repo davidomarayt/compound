@@ -1,0 +1,563 @@
+{
+  "url": "https://www.whereyourmoneygoes.gov.ie/en/transport/2026/",
+  "title": "Where Your Money Goes",
+  "charts": [
+    {
+      "title": "Transport - Expenditure Over Time (10 Years)",
+      "subtitle": "",
+      "type": "line",
+      "xAxes": [
+        {
+          "categories": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026,
+            2027
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Amount in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Total",
+          "type": "line",
+          "data": [
+            1836107000,
+            1819108000,
+            2062925000,
+            2299717000,
+            2679587000,
+            3460152000,
+            3531090000,
+            3564612000,
+            3703080000,
+            4149625000,
+            4761367000,
+            5551000000
+          ]
+        },
+        {
+          "name": "Capital",
+          "type": "line",
+          "data": [
+            1175389000,
+            1138836000,
+            1324136000,
+            1535686000,
+            1786515000,
+            2460560000,
+            2564961000,
+            2613662000,
+            2675405000,
+            2924999000,
+            3439967000,
+            4175000000
+          ]
+        },
+        {
+          "name": "Current",
+          "type": "line",
+          "data": [
+            660718000,
+            680272000,
+            738789000,
+            764031000,
+            893072000,
+            999592000,
+            966129000,
+            950950000,
+            1027675000,
+            1224626000,
+            1321400000,
+            1376000000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Transport - Expenditure (Drilldown)",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Sectors",
+          "type": "column",
+          "data": [
+            {
+              "name": "Information Technology, Engagement And Research Delivery",
+              "y": 76185000,
+              "drilldown": "Information Technology, Engagement And Research Delivery"
+            },
+            {
+              "name": "Sustainable Mobility - Public Transport",
+              "y": 2386074000,
+              "drilldown": "Sustainable Mobility - Public Transport"
+            },
+            {
+              "name": "Road Networks And Road Safety",
+              "y": 1731564000,
+              "drilldown": "Road Networks And Road Safety"
+            },
+            {
+              "name": "Civil Aviation",
+              "y": 41618000,
+              "drilldown": "Civil Aviation"
+            },
+            {
+              "name": "Sustainable Mobility - Active Travel And Greenways",
+              "y": 363413000,
+              "drilldown": "Sustainable Mobility - Active Travel And Greenways"
+            },
+            {
+              "name": "Maritime Transport And Safety",
+              "y": 162513000,
+              "drilldown": "Maritime Transport And Safety"
+            }
+          ]
+        }
+      ],
+      "drilldown": [
+        {
+          "name": "Information Technology, Engagement And Research Delivery",
+          "id": "Information Technology, Engagement And Research Delivery",
+          "data": [
+            [
+              "Administration - Pay",
+              23045000
+            ],
+            [
+              "Administration - Non Pay",
+              7804000
+            ],
+            [
+              "Digital Hub",
+              42703000
+            ],
+            [
+              "Climate Engagement",
+              1533000
+            ],
+            [
+              "Research Programmes",
+              1100000
+            ]
+          ]
+        },
+        {
+          "name": "Sustainable Mobility - Public Transport",
+          "id": "Sustainable Mobility - Public Transport",
+          "data": [
+            [
+              "Administration - Pay",
+              4364000
+            ],
+            [
+              "Administration - Non Pay",
+              580000
+            ],
+            [
+              "Public Transport Services",
+              945613000
+            ],
+            [
+              "Public Transport Investment",
+              1384240000
+            ],
+            [
+              "Public Transport Agencies and Expenses",
+              51230000
+            ],
+            [
+              "Miscellaneous Services",
+              47000
+            ]
+          ]
+        },
+        {
+          "name": "Road Networks And Road Safety",
+          "id": "Road Networks And Road Safety",
+          "data": [
+            [
+              "Administration - Pay",
+              5707000
+            ],
+            [
+              "Administration - Non Pay",
+              802000
+            ],
+            [
+              "National Roads Investment",
+              824750000
+            ],
+            [
+              "Regional And Local Roads Investment",
+              718667000
+            ],
+            [
+              "Transport Infrastructure Ireland Operational Costs",
+              40625000
+            ],
+            [
+              "Road Safety Agencies and Expenses",
+              8891000
+            ],
+            [
+              "Ev Grants And Infrastructure",
+              132122000
+            ]
+          ]
+        },
+        {
+          "name": "Civil Aviation",
+          "id": "Civil Aviation",
+          "data": [
+            [
+              "Administration - Pay",
+              6511000
+            ],
+            [
+              "Administration - Non Pay",
+              1075000
+            ],
+            [
+              "Regional Airports",
+              19092000
+            ],
+            [
+              "Miscellaneous Services",
+              14940000
+            ]
+          ]
+        },
+        {
+          "name": "Sustainable Mobility - Active Travel And Greenways",
+          "id": "Sustainable Mobility - Active Travel And Greenways",
+          "data": [
+            [
+              "Administration - Pay",
+              827000
+            ],
+            [
+              "Administration - Non Pay",
+              136000
+            ],
+            [
+              "Active Travel Infrastructure",
+              299650000
+            ],
+            [
+              "Greenways",
+              62800000
+            ]
+          ]
+        },
+        {
+          "name": "Maritime Transport And Safety",
+          "id": "Maritime Transport And Safety",
+          "data": [
+            [
+              "Administration - Pay",
+              18322000
+            ],
+            [
+              "Administration - Non Pay",
+              3002000
+            ],
+            [
+              "Ircg",
+              134780000
+            ],
+            [
+              "Commissioner Of Irish Lights",
+              5659000
+            ],
+            [
+              "Marine Accident Investigation",
+              598000
+            ],
+            [
+              "Marine Survey Office And Maritime Transport",
+              47000
+            ],
+            [
+              "Miscellaneous Services",
+              105000
+            ]
+          ]
+        }
+      ],
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Transport - Expenditure - 3 Year Comparison",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [
+            "Information Technology, Engagement And Research Delivery",
+            "Sustainable Mobility - Public Transport",
+            "Road Networks And Road Safety",
+            "Civil Aviation",
+            "Sustainable Mobility - Active Travel And Greenways",
+            "Maritime Transport And Safety"
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "2024",
+          "type": "column",
+          "data": [
+            47817000,
+            1737451000,
+            1372248000,
+            32454000,
+            402172000,
+            110938000
+          ]
+        },
+        {
+          "name": "2025",
+          "type": "column",
+          "data": [
+            63378000,
+            1994142000,
+            1560447000,
+            35459000,
+            340735000,
+            155464000
+          ]
+        },
+        {
+          "name": "2026",
+          "type": "column",
+          "data": [
+            76185000,
+            2386074000,
+            1731564000,
+            41618000,
+            363413000,
+            162513000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Transport - Expenditure by Type",
+      "subtitle": "",
+      "type": "pie",
+      "xAxes": [
+        {
+          "categories": null,
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Values",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Type",
+          "type": "pie",
+          "data": [
+            {
+              "name": "Capital",
+              "y": 3439967000
+            },
+            {
+              "name": "Current",
+              "y": 1321400000
+            }
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    }
+  ],
+  "headings": [
+    "2026 Transport Expenditure:",
+    "Transport - Expenditure (Drilldown)",
+    "Transport - Expenditure - 3 Year Comparison",
+    "Transport - Expenditure by Type",
+    "Transport - Expenditure Over Time (10 Years)"
+  ],
+  "tables": []
+}

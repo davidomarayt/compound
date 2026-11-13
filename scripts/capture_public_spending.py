@@ -5,8 +5,6 @@ from __future__ import annotations
 import asyncio
 import json
 import re
-import subprocess
-import tarfile
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -85,16 +83,6 @@ async def main():
         await browser.close()
     (OUT / 'manifest.json').write_text(json.dumps(manifest, indent=2), encoding='utf-8')
     print(json.dumps(manifest, indent=2))
-    # Public committed application files only. Never include .git, .env or runner credentials.
-    tracked = subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
-    with tarfile.open(OUT / 'repository-context.tar.gz', 'w:gz') as archive:
-        for name in tracked:
-            path = Path(name)
-            if not name or not path.is_file() or path.is_symlink(): continue
-            allowed = (name.startswith(('compound/','content/','tests/','scripts/','.github/workflows/'))
-                       or name in ('AGENTS.md','EDITORIAL_TOPIC_INDEX.md','CONTENT_INVENTORY.md','pyproject.toml','README.md','data/content-inventory.json'))
-            if allowed and path.suffix in ('.py','.js','.cjs','.html','.css','.yml','.yaml','.json','.md','.toml','.svg'):
-                archive.add(path, arcname=name, recursive=False)
 
 if __name__ == '__main__':
     asyncio.run(main())

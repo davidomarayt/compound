@@ -1,0 +1,482 @@
+{
+  "url": "https://www.whereyourmoneygoes.gov.ie/en/justice/2026/",
+  "title": "Where Your Money Goes",
+  "charts": [
+    {
+      "title": "Justice - Expenditure Over Time (10 Years)",
+      "subtitle": "",
+      "type": "line",
+      "xAxes": [
+        {
+          "categories": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026,
+            2027
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Amount in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Total",
+          "type": "line",
+          "data": [
+            2443052000,
+            2595461000,
+            2681023000,
+            2833311000,
+            2897562000,
+            3032122000,
+            3251504000,
+            3503206000,
+            3784981000,
+            6212672000,
+            6337948000,
+            5890743000
+          ]
+        },
+        {
+          "name": "Capital",
+          "type": "line",
+          "data": [
+            152013000,
+            170127000,
+            146805000,
+            161630000,
+            239755000,
+            271171000,
+            300386000,
+            300924000,
+            281297000,
+            472271000,
+            390000000,
+            430000000
+          ]
+        },
+        {
+          "name": "Current",
+          "type": "line",
+          "data": [
+            2291039000,
+            2425334000,
+            2534218000,
+            2671681000,
+            2657807000,
+            2760951000,
+            2951118000,
+            3202282000,
+            3503684000,
+            5740401000,
+            5947948000,
+            5460743000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Justice - Expenditure (Drilldown)",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Sectors",
+          "type": "column",
+          "data": [
+            {
+              "name": "Garda Síochána (Gross)",
+              "y": 2741171000,
+              "drilldown": "Garda Síochána (Gross)"
+            },
+            {
+              "name": "Prisons (Gross)",
+              "y": 581114000,
+              "drilldown": "Prisons (Gross)"
+            },
+            {
+              "name": "Courts Service (Gross)",
+              "y": 216662000,
+              "drilldown": "Courts Service (Gross)"
+            },
+            {
+              "name": "Justice, Home Affairs And Migration (Gross)",
+              "y": 2734482000,
+              "drilldown": "Justice, Home Affairs And Migration (Gross)"
+            },
+            {
+              "name": "An Túdarás Póilíneachta Agus Sábháilteachta Pobail (Gross)",
+              "y": 6672000,
+              "drilldown": "An Túdarás Póilíneachta Agus Sábháilteachta Pobail (Gross)"
+            },
+            {
+              "name": "Data Protection Commission (Gross)",
+              "y": 33187000,
+              "drilldown": "Data Protection Commission (Gross)"
+            },
+            {
+              "name": "Fiosrú (Gross)",
+              "y": 24660000,
+              "drilldown": "Fiosrú (Gross)"
+            }
+          ]
+        }
+      ],
+      "drilldown": [
+        {
+          "name": "Garda Síochána (Gross)",
+          "id": "Garda Síochána (Gross)",
+          "data": [
+            [
+              "Working With Communities To Protect And Serve",
+              2741171000
+            ]
+          ]
+        },
+        {
+          "name": "Prisons (Gross)",
+          "id": "Prisons (Gross)",
+          "data": [
+            [
+              "Administration And Provision Of Safe, Secure And Humane Rehabilitative Custody For People Who Are Sent To Prison",
+              581114000
+            ]
+          ]
+        },
+        {
+          "name": "Courts Service (Gross)",
+          "id": "Courts Service (Gross)",
+          "data": [
+            [
+              "Manage The Courts And Support The Judiciary",
+              216662000
+            ]
+          ]
+        },
+        {
+          "name": "Justice, Home Affairs And Migration (Gross)",
+          "id": "Justice, Home Affairs And Migration (Gross)",
+          "data": [
+            [
+              "Criminal Justice Pillar",
+              482741000
+            ],
+            [
+              "Civil Justice Pillar",
+              121373000
+            ],
+            [
+              "Migration",
+              2130368000
+            ]
+          ]
+        },
+        {
+          "name": "An Túdarás Póilíneachta Agus Sábháilteachta Pobail (Gross)",
+          "id": "An Túdarás Póilíneachta Agus Sábháilteachta Pobail (Gross)",
+          "data": [
+            [
+              "Provision Of Independent Oversight And Inspection Of The Policing Functions Of An Garda Síochána",
+              6672000
+            ]
+          ]
+        },
+        {
+          "name": "Data Protection Commission (Gross)",
+          "id": "Data Protection Commission (Gross)",
+          "data": [
+            [
+              "Data Protection Regulation",
+              33187000
+            ]
+          ]
+        },
+        {
+          "name": "Fiosrú (Gross)",
+          "id": "Fiosrú (Gross)",
+          "data": [
+            [
+              "Fiosrú - Office Of The Police Ombudsman",
+              24660000
+            ]
+          ]
+        }
+      ],
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Justice - Expenditure - 3 Year Comparison",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [
+            "Garda Síochána (Gross)",
+            "Prisons (Gross)",
+            "Courts Service (Gross)",
+            "Justice, Home Affairs And Migration (Gross)",
+            "An Túdarás Póilíneachta Agus Sábháilteachta Pobail (Gross)",
+            "Data Protection Commission (Gross)",
+            "Fiosrú (Gross)"
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "2024",
+          "type": "column",
+          "data": [
+            2411240000,
+            500692000,
+            188773000,
+            0,
+            0,
+            19722000,
+            0
+          ]
+        },
+        {
+          "name": "2025",
+          "type": "column",
+          "data": [
+            2519174000,
+            554829000,
+            193844000,
+            2893929000,
+            4572000,
+            27062000,
+            19262000
+          ]
+        },
+        {
+          "name": "2026",
+          "type": "column",
+          "data": [
+            2741171000,
+            581114000,
+            216662000,
+            2734482000,
+            6672000,
+            33187000,
+            24660000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Justice - Expenditure by Type",
+      "subtitle": "",
+      "type": "pie",
+      "xAxes": [
+        {
+          "categories": null,
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Values",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Type",
+          "type": "pie",
+          "data": [
+            {
+              "name": "Capital",
+              "y": 390000000
+            },
+            {
+              "name": "Current",
+              "y": 5947948000
+            }
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    }
+  ],
+  "headings": [
+    "2026 Justice Expenditure:",
+    "Justice - Expenditure (Drilldown)",
+    "Justice - Expenditure - 3 Year Comparison",
+    "Justice - Expenditure by Type",
+    "Justice - Expenditure Over Time (10 Years)"
+  ],
+  "tables": []
+}

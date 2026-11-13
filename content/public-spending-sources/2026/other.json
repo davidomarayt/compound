@@ -1,0 +1,745 @@
+{
+  "url": "https://www.whereyourmoneygoes.gov.ie/en/other/2026/",
+  "title": "Where Your Money Goes",
+  "charts": [
+    {
+      "title": "Additional Departments - Expenditure Over Time (10 Years)",
+      "subtitle": "",
+      "type": "line",
+      "xAxes": [
+        {
+          "categories": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026,
+            2027
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Amount in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Total",
+          "type": "line",
+          "data": [
+            7383509000,
+            8446315000,
+            10250553000,
+            11372950000,
+            13931317000,
+            14254379000,
+            17931610000,
+            23000667000,
+            24490871000,
+            22941427000,
+            25142674000,
+            25992005000
+          ]
+        },
+        {
+          "name": "Capital",
+          "type": "line",
+          "data": [
+            1590905000,
+            1919119000,
+            2987631000,
+            3533772000,
+            2930636000,
+            2673038000,
+            2789640000,
+            3705364000,
+            4129576000,
+            3927045000,
+            4688801000,
+            4689341000
+          ]
+        },
+        {
+          "name": "Current",
+          "type": "line",
+          "data": [
+            5792604000,
+            6527196000,
+            7262922000,
+            7839178000,
+            11000681000,
+            11581341000,
+            15141970000,
+            19295303000,
+            20361295000,
+            19014382000,
+            20453873000,
+            21302664000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Additional Departments - Expenditure (Drilldown)",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Sectors",
+          "type": "column",
+          "data": [
+            {
+              "name": "Taoiseach",
+              "y": 338256000,
+              "drilldown": "Taoiseach"
+            },
+            {
+              "name": "Finance",
+              "y": 757761000,
+              "drilldown": "Finance"
+            },
+            {
+              "name": "Public Expenditure, Infrastructure, Public Service Reform And Digitalisation",
+              "y": 2150201000,
+              "drilldown": "Public Expenditure, Infrastructure, Public Service Reform And Digitalisation"
+            },
+            {
+              "name": "Children, Disability And Equality",
+              "y": 7068603000,
+              "drilldown": "Children, Disability And Equality"
+            },
+            {
+              "name": "Foreign Affairs And Trade",
+              "y": 1350426000,
+              "drilldown": "Foreign Affairs And Trade"
+            },
+            {
+              "name": "Climate, Energy And The Environment",
+              "y": 1067874000,
+              "drilldown": "Climate, Energy And The Environment"
+            },
+            {
+              "name": "Agriculture, Food And The Marine",
+              "y": 2316966000,
+              "drilldown": "Agriculture, Food And The Marine"
+            },
+            {
+              "name": "Enterprise, Tourism And Employment",
+              "y": 1391265000,
+              "drilldown": "Enterprise, Tourism And Employment"
+            },
+            {
+              "name": "Culture, Communications And Sport",
+              "y": 1550775000,
+              "drilldown": "Culture, Communications And Sport"
+            },
+            {
+              "name": "Defence",
+              "y": 1491735000,
+              "drilldown": "Defence"
+            },
+            {
+              "name": "Rural And Community Development And The Gaeltacht",
+              "y": 613350000,
+              "drilldown": "Rural And Community Development And The Gaeltacht"
+            },
+            {
+              "name": "Further and Higher Education, Research, Innovation and Science",
+              "y": 5045462000,
+              "drilldown": "Further and Higher Education, Research, Innovation and Science"
+            }
+          ]
+        }
+      ],
+      "drilldown": [
+        {
+          "name": "Taoiseach",
+          "id": "Taoiseach",
+          "data": [
+            [
+              "Centenarians' Bounty",
+              1776000
+            ],
+            [
+              "President's Establishment",
+              4548000
+            ],
+            [
+              "Supporting The Work Of The Taoiseach And Government",
+              37190000
+            ],
+            [
+              "Delivery Of Professional Legal Services To Government Departments And Offices",
+              31505000
+            ],
+            [
+              "Delivery Of Annual Statistical Programme",
+              118853000
+            ],
+            [
+              "Provision Of Prosecution Service",
+              83253000
+            ],
+            [
+              "Provision Of Legal Services",
+              61131000
+            ]
+          ]
+        },
+        {
+          "name": "Finance",
+          "id": "Finance",
+          "data": [
+            [
+              "Economic, Fiscal, Banking And Financial Services Policy",
+              59475000
+            ],
+            [
+              "Audit And Reporting",
+              20363000
+            ],
+            [
+              "Administration And Collection Of Taxes And Duties And Frontier Management",
+              673728000
+            ],
+            [
+              "Facilitation Of Hearing Of Tax Appeals",
+              4195000
+            ]
+          ]
+        },
+        {
+          "name": "Public Expenditure, Infrastructure, Public Service Reform And Digitalisation",
+          "id": "Public Expenditure, Infrastructure, Public Service Reform And Digitalisation",
+          "data": [
+            [
+              "Public Expenditure Management And Reform",
+              155876000
+            ],
+            [
+              "Superannuation And Retired Allowances",
+              1010778000
+            ],
+            [
+              "Estate Management",
+              642116000
+            ],
+            [
+              "Climate Responsive Flood Risk Management",
+              183350000
+            ],
+            [
+              "Government Analytical Laboratory And Advisory Service",
+              17670000
+            ],
+            [
+              "V15 .15 Programme Expenditure",
+              2000000
+            ],
+            [
+              "Civil And Public Service - Redeployment / Recruitment / Selection",
+              27000000
+            ],
+            [
+              "Employee Services",
+              29940000
+            ],
+            [
+              "Finance Shared Services",
+              9025000
+            ],
+            [
+              "Nsso Function",
+              53567000
+            ],
+            [
+              "Ombudsman Function/office Of The Commission For Public Service Appointments/office Of The Protected Disclosures Commissioner/standards In Public Office Commission/office Of The Information Commissione",
+              134000
+            ],
+            [
+              "Ombudsman Function/office Of The Commission For Public Service Appointments/office Of The Protected Disclosures Commissioner/standards In Public Office Commission/office Of The Information Commissione",
+              14860000
+            ],
+            [
+              "Ombudsman Function/office Of The Commission For Public Service Appointments/office Of The Protected Disclosures Commissioner/standards In Public Office Commission/office Of The Information Commissione",
+              3885000
+            ]
+          ]
+        },
+        {
+          "name": "Children, Disability And Equality",
+          "id": "Children, Disability And Equality",
+          "data": [
+            [
+              "Irish Human Rights And Equality Commission Function",
+              10584000
+            ],
+            [
+              "Children And Family Support Programme",
+              1434343000
+            ],
+            [
+              "Sectoral Programmes For Children And Young People",
+              1548343000
+            ],
+            [
+              "Policy And Legislation Programme",
+              125185000
+            ],
+            [
+              "An Equal And Inclusive Society",
+              3950148000
+            ]
+          ]
+        },
+        {
+          "name": "Foreign Affairs And Trade",
+          "id": "Foreign Affairs And Trade",
+          "data": [
+            [
+              "Work On Poverty And Hunger Reduction",
+              866399000
+            ],
+            [
+              "Advancing Ireland’s Foreign Policy Goals",
+              412419000
+            ],
+            [
+              "Passport Service",
+              71608000
+            ]
+          ]
+        },
+        {
+          "name": "Climate, Energy And The Environment",
+          "id": "Climate, Energy And The Environment",
+          "data": [
+            [
+              "Climate Action And Environment Leadership",
+              154474000
+            ],
+            [
+              "Energy Transformation",
+              757103000
+            ],
+            [
+              "Circular Economy Development",
+              156297000
+            ]
+          ]
+        },
+        {
+          "name": "Agriculture, Food And The Marine",
+          "id": "Agriculture, Food And The Marine",
+          "data": [
+            [
+              "Farm / Sector Supports and Controls",
+              1152675000
+            ],
+            [
+              "Food Safety, Animal and Plant Health and Animal Welfare",
+              513929000
+            ],
+            [
+              "Seafood Sector",
+              180090000
+            ],
+            [
+              "Policy And Strategy",
+              470272000
+            ]
+          ]
+        },
+        {
+          "name": "Enterprise, Tourism And Employment",
+          "id": "Enterprise, Tourism And Employment",
+          "data": [
+            [
+              "Tourism",
+              276121000
+            ],
+            [
+              "Jobs And Enterprise Development",
+              762665000
+            ],
+            [
+              "Enterprise Innovation and Commercialisation",
+              200335000
+            ],
+            [
+              "Regulation",
+              152144000
+            ]
+          ]
+        },
+        {
+          "name": "Culture, Communications And Sport",
+          "id": "Culture, Communications And Sport",
+          "data": [
+            [
+              "Arts and Culture",
+              402310000
+            ],
+            [
+              "Communications",
+              484643000
+            ],
+            [
+              "Media And Broadcasting",
+              362074000
+            ],
+            [
+              "Sports and Recreation Services",
+              301748000
+            ]
+          ]
+        },
+        {
+          "name": "Defence",
+          "id": "Defence",
+          "data": [
+            [
+              "Provision For Defence Forces' Pension Benefits",
+              317327000
+            ],
+            [
+              "Defence Policy And Support,  Military Capabilities And Operational Outputs",
+              1174408000
+            ]
+          ]
+        },
+        {
+          "name": "Rural And Community Development And The Gaeltacht",
+          "id": "Rural And Community Development And The Gaeltacht",
+          "data": [
+            [
+              "Rural Development And  Regional Affairs",
+              192904000
+            ],
+            [
+              "Community Development",
+              260428000
+            ],
+            [
+              "Gaeltacht And The Islands",
+              160018000
+            ]
+          ]
+        },
+        {
+          "name": "Further and Higher Education, Research, Innovation and Science",
+          "id": "Further and Higher Education, Research, Innovation and Science",
+          "data": [
+            [
+              "V44a. Expenditure:",
+              1153627000
+            ],
+            [
+              "Skills Development",
+              666656000
+            ],
+            [
+              "Higher Education",
+              2680895000
+            ],
+            [
+              "Research, Innovation and Science",
+              544284000
+            ]
+          ]
+        }
+      ],
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Additional Departments - Expenditure - 3 Year Comparison",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [
+            "Taoiseach",
+            "Finance",
+            "Public Expenditure, Infrastructure, Public Service Reform And Digitalisation",
+            "Children, Disability And Equality",
+            "Foreign Affairs And Trade",
+            "Climate, Energy And The Environment",
+            "Agriculture, Food And The Marine",
+            "Enterprise, Tourism And Employment",
+            "Culture, Communications And Sport",
+            "Defence",
+            "Rural And Community Development And The Gaeltacht",
+            "Further and Higher Education, Research, Innovation and Science"
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "2024",
+          "type": "column",
+          "data": [
+            263614000,
+            645943000,
+            1817383000,
+            7875097000,
+            1203065000,
+            1733812000,
+            2123848000,
+            1397483000,
+            1165541000,
+            1236248000,
+            458925000,
+            4569912000
+          ]
+        },
+        {
+          "name": "2025",
+          "type": "column",
+          "data": [
+            290313000,
+            695731000,
+            1927104000,
+            6306471000,
+            1460388000,
+            831875000,
+            2188824000,
+            1243232000,
+            1418019000,
+            1347105000,
+            545846000,
+            4686519000
+          ]
+        },
+        {
+          "name": "2026",
+          "type": "column",
+          "data": [
+            338256000,
+            757761000,
+            2150201000,
+            7068603000,
+            1350426000,
+            1067874000,
+            2316966000,
+            1391265000,
+            1550775000,
+            1491735000,
+            613350000,
+            5045462000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Additional Departments - Expenditure by Type",
+      "subtitle": "",
+      "type": "pie",
+      "xAxes": [
+        {
+          "categories": null,
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Values",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Type",
+          "type": "pie",
+          "data": [
+            {
+              "name": "Capital",
+              "y": 4688801000
+            },
+            {
+              "name": "Current",
+              "y": 20453873000
+            }
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    }
+  ],
+  "headings": [
+    "2026 Additional Departments Expenditure:",
+    "Additional Departments - Expenditure (Drilldown)",
+    "Additional Departments - Expenditure - 3 Year Comparison",
+    "Additional Departments - Expenditure by Type",
+    "Additional Departments - Expenditure Over Time (10 Years)"
+  ],
+  "tables": []
+}

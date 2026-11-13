@@ -20,6 +20,46 @@
         "Child Benefit",
         "Working family supports",
         "Fuel and household supports"
+      ],
+      "url": "/wheres-my-money/spending/social-protection/",
+      "exact_eur": 28943947000,
+      "detail_links": [
+        {
+          "name": "Working-age income supports",
+          "url": "/wheres-my-money/spending/social-protection/working-age-income-supports/"
+        },
+        {
+          "name": "Employment supports",
+          "url": "/wheres-my-money/spending/social-protection/employment-supports/"
+        },
+        {
+          "name": "Children and family payments",
+          "url": "/wheres-my-money/spending/social-protection/children-and-family-payments/"
+        },
+        {
+          "name": "Supplementary payments and agencies",
+          "url": "/wheres-my-money/spending/social-protection/supplementary-payments-and-agencies/"
+        },
+        {
+          "name": "Social Protection administration",
+          "url": "/wheres-my-money/spending/social-protection/social-protection-administration/"
+        },
+        {
+          "name": "Non-contributory State Pension",
+          "url": "/wheres-my-money/spending/social-protection/#non-contributory-state-pension"
+        },
+        {
+          "name": "Illness, disability and carers",
+          "url": "/wheres-my-money/spending/social-protection/illness-disability-and-carers/"
+        },
+        {
+          "name": "Pension auto-enrolment",
+          "url": "/wheres-my-money/spending/social-protection/pension-auto-enrolment/"
+        },
+        {
+          "name": "Contributory and related pensions",
+          "url": "/wheres-my-money/spending/social-protection/contributory-and-related-pensions/"
+        }
       ]
     },
     {
@@ -36,6 +76,70 @@
         "Disability and older-person care",
         "Medical cards and medicines",
         "Public health and prevention"
+      ],
+      "url": "/wheres-my-money/spending/health/",
+      "exact_eur": 27350013000,
+      "detail_links": [
+        {
+          "name": "Department of Health administration",
+          "url": "/wheres-my-money/spending/health/department-of-health-administration/"
+        },
+        {
+          "name": "Health Care Reform",
+          "url": "/wheres-my-money/spending/health/#health-care-reform"
+        },
+        {
+          "name": "Health capital services",
+          "url": "/wheres-my-money/spending/health/health-capital-services/"
+        },
+        {
+          "name": "Health grants",
+          "url": "/wheres-my-money/spending/health/health-grants/"
+        },
+        {
+          "name": "Other health services",
+          "url": "/wheres-my-money/spending/health/other-health-services/"
+        },
+        {
+          "name": "Corporate Administration",
+          "url": "/wheres-my-money/spending/health/#corporate-administration"
+        },
+        {
+          "name": "HSE Core Services - National",
+          "url": "/wheres-my-money/spending/health/#hse-core-services-national"
+        },
+        {
+          "name": "Other HSE services",
+          "url": "/wheres-my-money/spending/health/other-hse-services/"
+        },
+        {
+          "name": "Care programme",
+          "url": "/wheres-my-money/spending/health/care-programme/"
+        },
+        {
+          "name": "HSE Core Services – RHA 1 Dublin and North East",
+          "url": "/wheres-my-money/spending/health/#hse-core-services-rha-1-dublin-and-north-east"
+        },
+        {
+          "name": "HSE Core Services – RHA 2 Dublin and Midlands",
+          "url": "/wheres-my-money/spending/health/#hse-core-services-rha-2-dublin-and-midlands"
+        },
+        {
+          "name": "HSE Core Services – RHA 3 Dublin and South East",
+          "url": "/wheres-my-money/spending/health/#hse-core-services-rha-3-dublin-and-south-east"
+        },
+        {
+          "name": "HSE Core Services – RHA 4 Mid West",
+          "url": "/wheres-my-money/spending/health/#hse-core-services-rha-4-mid-west"
+        },
+        {
+          "name": "HSE Core Services – RHA 5 South West",
+          "url": "/wheres-my-money/spending/health/#hse-core-services-rha-5-south-west"
+        },
+        {
+          "name": "HSE Core Services – RHA 6 West and North West",
+          "url": "/wheres-my-money/spending/health/#hse-core-services-rha-6-west-and-north-west"
+        }
       ]
     },
     {
@@ -52,6 +156,14 @@
         "School buildings and maintenance",
         "School transport",
         "DEIS and pupil supports"
+      ],
+      "url": "/wheres-my-money/spending/education/",
+      "exact_eur": 13455252000,
+      "detail_links": [
+        {
+          "name": "First, Second and Early Years' Education",
+          "url": "/wheres-my-money/spending/education/#first-second-and-early-years-education"
+        }
       ]
     },
     {
@@ -67,6 +179,26 @@
         "Local authority services",
         "Water and community infrastructure",
         "Housing schemes and regeneration"
+      ],
+      "url": "/wheres-my-money/spending/housing/",
+      "exact_eur": 11393991000,
+      "detail_links": [
+        {
+          "name": "Tailte Éireann",
+          "url": "/wheres-my-money/spending/housing/#tailte-eireann"
+        },
+        {
+          "name": "An Coimisiún Toghcháin",
+          "url": "/wheres-my-money/spending/housing/#an-coimisiun-toghchain"
+        },
+        {
+          "name": "Housing, Local Government and Heritage",
+          "url": "/wheres-my-money/spending/housing/housing-local-government-and-heritage/"
+        },
+        {
+          "name": "Uisce Éireann",
+          "url": "/wheres-my-money/spending/housing/#uisce-eireann"
+        }
       ]
     },
     {
@@ -82,6 +214,38 @@
         "Migration and protection services",
         "Justice administration",
         "Forensic and victim services"
+      ],
+      "url": "/wheres-my-money/spending/justice/",
+      "exact_eur": 6337948000,
+      "detail_links": [
+        {
+          "name": "Garda Síochána",
+          "url": "/wheres-my-money/spending/justice/#garda-siochana"
+        },
+        {
+          "name": "Prisons",
+          "url": "/wheres-my-money/spending/justice/#prisons"
+        },
+        {
+          "name": "Courts Service",
+          "url": "/wheres-my-money/spending/justice/#courts-service"
+        },
+        {
+          "name": "Justice, Home Affairs and Migration",
+          "url": "/wheres-my-money/spending/justice/justice-home-affairs-and-migration/"
+        },
+        {
+          "name": "An Túdarás Póilíneachta Agus Sábháilteachta Pobail",
+          "url": "/wheres-my-money/spending/justice/#an-tudaras-poilineachta-agus-sabhailteachta-pobail"
+        },
+        {
+          "name": "Data Protection Commission",
+          "url": "/wheres-my-money/spending/justice/#data-protection-commission"
+        },
+        {
+          "name": "Fiosrú",
+          "url": "/wheres-my-money/spending/justice/#fiosru"
+        }
       ]
     },
     {
@@ -97,6 +261,34 @@
         "Rail and light rail",
         "Active travel and greenways",
         "Transport safety and accessibility"
+      ],
+      "url": "/wheres-my-money/spending/transport/",
+      "exact_eur": 4761367000,
+      "detail_links": [
+        {
+          "name": "IT, engagement and research",
+          "url": "/wheres-my-money/spending/transport/it-engagement-and-research/"
+        },
+        {
+          "name": "Public transport",
+          "url": "/wheres-my-money/spending/transport/public-transport/"
+        },
+        {
+          "name": "Road networks and road safety",
+          "url": "/wheres-my-money/spending/transport/road-networks-and-road-safety/"
+        },
+        {
+          "name": "Civil aviation",
+          "url": "/wheres-my-money/spending/transport/civil-aviation/"
+        },
+        {
+          "name": "Active travel and greenways",
+          "url": "/wheres-my-money/spending/transport/active-travel-and-greenways/"
+        },
+        {
+          "name": "Maritime transport and safety",
+          "url": "/wheres-my-money/spending/transport/maritime-transport-and-safety/"
+        }
       ]
     },
     {
@@ -109,6 +301,22 @@
         "National debt interest",
         "EU Budget contributions",
         "Other non-voted Exchequer items"
+      ],
+      "url": "/wheres-my-money/spending/debt-and-eu/",
+      "exact_eur": 15611523000,
+      "detail_links": [
+        {
+          "name": "Service of National Debt",
+          "url": "/wheres-my-money/spending/debt-and-eu/#service-of-national-debt"
+        },
+        {
+          "name": "EU Budget Contribution",
+          "url": "/wheres-my-money/spending/debt-and-eu/#eu-budget-contribution"
+        },
+        {
+          "name": "Other Non Voted Expenditure",
+          "url": "/wheres-my-money/spending/debt-and-eu/#other-non-voted-expenditure"
+        }
       ]
     },
     {
@@ -126,7 +334,60 @@
         "Arts, culture and sport",
         "Foreign affairs and overseas development",
         "Public administration"
+      ],
+      "url": "/wheres-my-money/spending/other-departments/",
+      "exact_eur": 25142674000,
+      "detail_links": [
+        {
+          "name": "Taoiseach’s department group",
+          "url": "/wheres-my-money/spending/other-departments/taoiseach/"
+        },
+        {
+          "name": "Finance",
+          "url": "/wheres-my-money/spending/other-departments/finance/"
+        },
+        {
+          "name": "Public expenditure and reform",
+          "url": "/wheres-my-money/spending/other-departments/public-expenditure-and-reform/"
+        },
+        {
+          "name": "Children, disability and equality",
+          "url": "/wheres-my-money/spending/other-departments/children-disability-and-equality/"
+        },
+        {
+          "name": "Foreign affairs and trade",
+          "url": "/wheres-my-money/spending/other-departments/foreign-affairs-and-trade/"
+        },
+        {
+          "name": "Climate, energy and environment",
+          "url": "/wheres-my-money/spending/other-departments/climate-energy-and-environment/"
+        },
+        {
+          "name": "Agriculture, food and marine",
+          "url": "/wheres-my-money/spending/other-departments/agriculture-food-and-marine/"
+        },
+        {
+          "name": "Enterprise, tourism and employment",
+          "url": "/wheres-my-money/spending/other-departments/enterprise-tourism-and-employment/"
+        },
+        {
+          "name": "Culture, communications and sport",
+          "url": "/wheres-my-money/spending/other-departments/culture-communications-and-sport/"
+        },
+        {
+          "name": "Defence",
+          "url": "/wheres-my-money/spending/other-departments/defence/"
+        },
+        {
+          "name": "Rural, community and Gaeltacht",
+          "url": "/wheres-my-money/spending/other-departments/rural-community-and-gaeltacht/"
+        },
+        {
+          "name": "Further and higher education and research",
+          "url": "/wheres-my-money/spending/other-departments/further-higher-education-and-research/"
+        }
       ]
     }
-  ]
+  ],
+  "exact_total_eur": 132996715000
 }

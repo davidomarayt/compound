@@ -1,0 +1,995 @@
+{
+  "url": "https://www.whereyourmoneygoes.gov.ie/en/2026/",
+  "title": "Where Your Money Goes",
+  "charts": [
+    {
+      "title": "Total Expenditure Over Time (10 Years)",
+      "subtitle": "",
+      "type": "line",
+      "xAxes": [
+        {
+          "categories": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026,
+            2027
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Amount in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Spend",
+          "type": "line",
+          "data": [
+            68076461000,
+            68944656000,
+            72912003000,
+            76990323000,
+            94179572000,
+            105249344000,
+            101813080000,
+            107495320000,
+            116745840000,
+            126002060000,
+            132996715000,
+            142976744000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Sectoral Expenditure Over Time (10 Years)<sup>*</sup>",
+      "subtitle": "",
+      "type": "area",
+      "xAxes": [
+        {
+          "categories": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026,
+            2027
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            },
+            "enabled": false
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Percent",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Social Protection",
+          "type": "area",
+          "data": [
+            19802144000,
+            20119549000,
+            20406378000,
+            20887708000,
+            30456905000,
+            30271386000,
+            24629385000,
+            24922008000,
+            26985134000,
+            27393801000,
+            28943947000,
+            30965749000
+          ]
+        },
+        {
+          "name": "Health",
+          "type": "area",
+          "data": [
+            14107220000,
+            14798316000,
+            15974789000,
+            17459336000,
+            20809989000,
+            21748684000,
+            23664752000,
+            22319348000,
+            24644419000,
+            26034232000,
+            27350013000,
+            29110000000
+          ]
+        },
+        {
+          "name": "Housing",
+          "type": "area",
+          "data": [
+            0,
+            0,
+            0,
+            0,
+            5313943000,
+            5186262000,
+            5679739000,
+            6743260000,
+            8442593000,
+            9683577000,
+            11393991000,
+            11888901000
+          ]
+        },
+        {
+          "name": "Education",
+          "type": "area",
+          "data": [
+            9157853000,
+            9598577000,
+            10226020000,
+            10880746000,
+            8595589000,
+            9263008000,
+            10176293000,
+            10808822000,
+            11907788000,
+            12732349000,
+            13455252000,
+            14435293000
+          ]
+        },
+        {
+          "name": "Agriculture",
+          "type": "area",
+          "data": [
+            1257012000,
+            1387756000,
+            1546253000,
+            1619654000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "Transport",
+          "type": "area",
+          "data": [
+            1836107000,
+            1819108000,
+            2062925000,
+            2299717000,
+            2679587000,
+            3460152000,
+            3531090000,
+            3564612000,
+            3703080000,
+            4149625000,
+            4761367000,
+            5551000000
+          ]
+        },
+        {
+          "name": "Justice",
+          "type": "area",
+          "data": [
+            2443052000,
+            2595461000,
+            2681023000,
+            2833311000,
+            2897562000,
+            3032122000,
+            3251504000,
+            3503206000,
+            3784981000,
+            6212672000,
+            6337948000,
+            5890743000
+          ]
+        },
+        {
+          "name": "Debt Servicing, EU Payments",
+          "type": "area",
+          "data": [
+            12089564000,
+            10179574000,
+            9764062000,
+            9636901000,
+            9494680000,
+            18033351000,
+            12948707000,
+            12633397000,
+            12786974000,
+            16854377000,
+            15611523000,
+            19143053000
+          ]
+        },
+        {
+          "name": "Additional Departments",
+          "type": "area",
+          "data": [
+            7383509000,
+            8446315000,
+            10250553000,
+            11372950000,
+            13931317000,
+            14254379000,
+            17931610000,
+            23000667000,
+            24490871000,
+            22941427000,
+            25142674000,
+            25992005000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Sectoral Expenditure (Drilldown)",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Sectors",
+          "type": "column",
+          "data": [
+            {
+              "name": "Social Protection",
+              "y": 28943947000,
+              "drilldown": "Social Protection"
+            },
+            {
+              "name": "Health",
+              "y": 27350013000,
+              "drilldown": "Health"
+            },
+            {
+              "name": "Housing",
+              "y": 11393991000,
+              "drilldown": "Housing"
+            },
+            {
+              "name": "Education",
+              "y": 13455252000,
+              "drilldown": "Education"
+            },
+            {
+              "name": "Transport",
+              "y": 4761367000,
+              "drilldown": "Transport"
+            },
+            {
+              "name": "Justice",
+              "y": 6337948000,
+              "drilldown": "Justice"
+            },
+            {
+              "name": "Debt Servicing, EU Payments",
+              "y": 15611523000,
+              "drilldown": "Debt Servicing, EU Payments"
+            },
+            {
+              "name": "Additional Departments",
+              "y": 25142674000,
+              "drilldown": "Additional Departments"
+            }
+          ]
+        }
+      ],
+      "drilldown": [
+        {
+          "name": "Social Protection",
+          "id": "Social Protection",
+          "data": [
+            [
+              "Working Age - Income Supports",
+              4456182000
+            ],
+            [
+              "Working Age - Employment Supports",
+              734171000
+            ],
+            [
+              "Children",
+              3147880000
+            ],
+            [
+              "Supplementary Payments, Agencies And Miscellaneous Services",
+              1063849000
+            ],
+            [
+              "Administration",
+              825419000
+            ],
+            [
+              "Pensions",
+              1327579000
+            ],
+            [
+              "Illness, Disability And Carers",
+              6510335000
+            ],
+            [
+              "Auto-enrolment",
+              177700000
+            ],
+            [
+              "Pension",
+              10700832000
+            ]
+          ]
+        },
+        {
+          "name": "Health",
+          "id": "Health",
+          "data": [
+            [
+              "Health (Admin)",
+              69459000
+            ],
+            [
+              "Health Care Reform",
+              8300000
+            ],
+            [
+              "Capital Services",
+              1970245000
+            ],
+            [
+              "Grants",
+              87043000
+            ],
+            [
+              "Other Services",
+              408413000
+            ],
+            [
+              "Corporate Administration",
+              942627000
+            ],
+            [
+              "Hse Core Services - National",
+              1900293000
+            ],
+            [
+              "Other Hse Services",
+              408959000
+            ],
+            [
+              "Care Programme",
+              6159405000
+            ],
+            [
+              "Hse Core Services – Rha 1 Dublin And North East",
+              3389501000
+            ],
+            [
+              "Hse Core Services – Rha 2 Dublin And Midlands",
+              3663804000
+            ],
+            [
+              "Hse Core Services – Rha 3 Dublin And South East",
+              2654920000
+            ],
+            [
+              "Hse Core Services – Rha 4 Mid West",
+              1180427000
+            ],
+            [
+              "Hse Core Services – Rha 5 South West",
+              1998855000
+            ],
+            [
+              "Hse Core Services – Rha 6 West And North West",
+              2507762000
+            ]
+          ]
+        },
+        {
+          "name": "Housing",
+          "id": "Housing",
+          "data": [
+            [
+              "Tailte Éireann (Gross)",
+              103072000
+            ],
+            [
+              "An Coimisiún Toghcháin (Gross)",
+              12150000
+            ],
+            [
+              "Housing, Local Government and Heritage (Gross)",
+              9028769000
+            ],
+            [
+              "Uisce Éireann (Gross)",
+              2250000000
+            ]
+          ]
+        },
+        {
+          "name": "Education",
+          "id": "Education",
+          "data": [
+            [
+              "First, Second And Early Years' Education",
+              13455252000
+            ]
+          ]
+        },
+        {
+          "name": "Agriculture",
+          "id": "Agriculture",
+          "data": []
+        },
+        {
+          "name": "Transport",
+          "id": "Transport",
+          "data": [
+            [
+              "Information Technology, Engagement And Research Delivery",
+              76185000
+            ],
+            [
+              "Sustainable Mobility - Public Transport",
+              2386074000
+            ],
+            [
+              "Road Networks And Road Safety",
+              1731564000
+            ],
+            [
+              "Civil Aviation",
+              41618000
+            ],
+            [
+              "Sustainable Mobility - Active Travel And Greenways",
+              363413000
+            ],
+            [
+              "Maritime Transport And Safety",
+              162513000
+            ]
+          ]
+        },
+        {
+          "name": "Justice",
+          "id": "Justice",
+          "data": [
+            [
+              "Garda Síochána (Gross)",
+              2741171000
+            ],
+            [
+              "Prisons (Gross)",
+              581114000
+            ],
+            [
+              "Courts Service (Gross)",
+              216662000
+            ],
+            [
+              "Justice, Home Affairs And Migration (Gross)",
+              2734482000
+            ],
+            [
+              "An Túdarás Póilíneachta Agus Sábháilteachta Pobail (Gross)",
+              6672000
+            ],
+            [
+              "Data Protection Commission (Gross)",
+              33187000
+            ],
+            [
+              "Fiosrú (Gross)",
+              24660000
+            ]
+          ]
+        },
+        {
+          "name": "Debt Servicing, EU Payments",
+          "id": "Debt Servicing, EU Payments",
+          "data": [
+            [
+              "Service of National Debt",
+              2744961000
+            ],
+            [
+              "EU Budget Contribution",
+              4363000000
+            ],
+            [
+              "Other Non Voted Expenditure",
+              8503563000
+            ]
+          ]
+        },
+        {
+          "name": "Additional Departments",
+          "id": "Additional Departments",
+          "data": [
+            [
+              "Taoiseach",
+              338256000
+            ],
+            [
+              "Finance",
+              757761000
+            ],
+            [
+              "Public Expenditure, Infrastructure, Public Service Reform And Digitalisation",
+              2150201000
+            ],
+            [
+              "Children, Disability And Equality",
+              7068603000
+            ],
+            [
+              "Foreign Affairs And Trade",
+              1350426000
+            ],
+            [
+              "Climate, Energy And The Environment",
+              1067874000
+            ],
+            [
+              "Agriculture, Food And The Marine",
+              2316966000
+            ],
+            [
+              "Enterprise, Tourism And Employment",
+              1391265000
+            ],
+            [
+              "Culture, Communications And Sport",
+              1550775000
+            ],
+            [
+              "Defence",
+              1491735000
+            ],
+            [
+              "Rural And Community Development And The Gaeltacht",
+              613350000
+            ],
+            [
+              "Further and Higher Education, Research, Innovation and Science",
+              5045462000
+            ]
+          ]
+        }
+      ],
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Sectoral Expenditure - 3 Year Comparison",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [
+            "Social Protection",
+            "Health",
+            "Housing",
+            "Education",
+            "Transport",
+            "Justice",
+            "Debt Servicing, EU Payments",
+            "Additional Departments"
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "2024",
+          "type": "column",
+          "data": [
+            26985134000,
+            24644419000,
+            8442593000,
+            11907788000,
+            3703080000,
+            3784981000,
+            12786974000,
+            24490871000
+          ]
+        },
+        {
+          "name": "2025",
+          "type": "column",
+          "data": [
+            27393801000,
+            26034232000,
+            9683577000,
+            12732349000,
+            4149625000,
+            6212672000,
+            16854377000,
+            22941427000
+          ]
+        },
+        {
+          "name": "2026",
+          "type": "column",
+          "data": [
+            28943947000,
+            27350013000,
+            11393991000,
+            13455252000,
+            4761367000,
+            6337948000,
+            15611523000,
+            25142674000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Expenditure by Type (Drilldown)",
+      "subtitle": "",
+      "type": "pie",
+      "xAxes": [
+        {
+          "categories": null,
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Values",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Type",
+          "type": "pie",
+          "data": [
+            {
+              "name": "Capital",
+              "y": 19106025000
+            },
+            {
+              "name": "Current",
+              "y": 98279167000
+            }
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Expenditure Over Time by Type (10 Years)",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026,
+            2027
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Current",
+          "type": "column",
+          "data": [
+            51774604000,
+            54163999000,
+            57152373000,
+            60224755000,
+            75583302000,
+            77549511000,
+            77922804000,
+            82170133000,
+            89041165000,
+            92855376000,
+            98279167000,
+            103772350000
+          ]
+        },
+        {
+          "name": "Capital",
+          "type": "column",
+          "data": [
+            4212293000,
+            4601083000,
+            5995568000,
+            7128667000,
+            9101590000,
+            9666482000,
+            10941569000,
+            12691790000,
+            14917701000,
+            16292307000,
+            19106025000,
+            20061341000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    }
+  ],
+  "headings": [
+    "2026 Total Expenditure: ",
+    "Sectoral Expenditure (Drilldown)",
+    "Sectoral Expenditure - 3 Year Comparison",
+    "Sectoral Expenditure Over Time (10 Years)*",
+    "Expenditure by Type (Drilldown)",
+    "Total Expenditure Over Time (10 Years)",
+    "Expenditure Over Time by Type (10 Years)"
+  ],
+  "tables": []
+}

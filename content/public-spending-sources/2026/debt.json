@@ -1,0 +1,358 @@
+{
+  "url": "https://www.whereyourmoneygoes.gov.ie/en/debt/2026/",
+  "title": "Where Your Money Goes",
+  "charts": [
+    {
+      "title": "Debt Servicing, EU Payments - Expenditure Over Time (10 Years)",
+      "subtitle": "",
+      "type": "line",
+      "xAxes": [
+        {
+          "categories": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026,
+            2027
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Amount in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Total",
+          "type": "line",
+          "data": [
+            12089564000,
+            10179574000,
+            9764062000,
+            9636901000,
+            9494680000,
+            18033351000,
+            12948707000,
+            12633397000,
+            12786974000,
+            16854377000,
+            15611523000,
+            19143053000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Debt Servicing, EU Payments - Expenditure (Drilldown)",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Sectors",
+          "type": "column",
+          "data": [
+            {
+              "name": "Service of National Debt",
+              "y": 2744961000,
+              "drilldown": "Service of National Debt"
+            },
+            {
+              "name": "EU Budget Contribution",
+              "y": 4363000000,
+              "drilldown": "EU Budget Contribution"
+            },
+            {
+              "name": "Other Non Voted Expenditure",
+              "y": 8503563000,
+              "drilldown": "Other Non Voted Expenditure"
+            }
+          ]
+        }
+      ],
+      "drilldown": [
+        {
+          "name": "Service of National Debt",
+          "id": "Service of National Debt",
+          "data": [
+            [
+              "Service of National Debt",
+              2744961000
+            ]
+          ]
+        },
+        {
+          "name": "EU Budget Contribution",
+          "id": "EU Budget Contribution",
+          "data": [
+            [
+              "EU Budget Contribution",
+              4363000000
+            ]
+          ]
+        },
+        {
+          "name": "Other Non Voted Expenditure",
+          "id": "Other Non Voted Expenditure",
+          "data": [
+            [
+              "Other Non Voted Expenditure",
+              8503563000
+            ]
+          ]
+        }
+      ],
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Debt Servicing, EU Payments - Expenditure - 3 Year Comparison",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [
+            "Service of National Debt",
+            "EU Budget Contribution",
+            "Other Non Voted Expenditure"
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "2024",
+          "type": "column",
+          "data": [
+            3137511000,
+            3369342000,
+            6280121000
+          ]
+        },
+        {
+          "name": "2025",
+          "type": "column",
+          "data": [
+            3123017000,
+            3453765000,
+            10277595000
+          ]
+        },
+        {
+          "name": "2026",
+          "type": "column",
+          "data": [
+            2744961000,
+            4363000000,
+            8503563000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Debt Servicing, EU Payments - Expenditure by Type",
+      "subtitle": "",
+      "type": "pie",
+      "xAxes": [
+        {
+          "categories": null,
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Values",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Type",
+          "type": "pie",
+          "data": [
+            {
+              "name": "Total",
+              "y": 15611523000
+            }
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    }
+  ],
+  "headings": [
+    "2026 Debt Servicing, EU Payments Expenditure:",
+    "Debt Servicing, EU Payments - Expenditure (Drilldown)",
+    "Debt Servicing, EU Payments - Expenditure - 3 Year Comparison",
+    "Debt Servicing, EU Payments - Expenditure by Type",
+    "Debt Servicing, EU Payments - Expenditure Over Time (10 Years)"
+  ],
+  "tables": []
+}

@@ -1,0 +1,724 @@
+{
+  "url": "https://www.whereyourmoneygoes.gov.ie/en/socialprotection/2026/",
+  "title": "Where Your Money Goes",
+  "charts": [
+    {
+      "title": "Social Protection - Expenditure Over Time (10 Years)",
+      "subtitle": "",
+      "type": "line",
+      "xAxes": [
+        {
+          "categories": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026,
+            2027
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Amount in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Total",
+          "type": "line",
+          "data": [
+            19802144000,
+            20119549000,
+            20406378000,
+            20887708000,
+            30456905000,
+            30271386000,
+            24629385000,
+            24922008000,
+            26985134000,
+            27393801000,
+            28943947000,
+            30965749000
+          ]
+        },
+        {
+          "name": "Capital",
+          "type": "line",
+          "data": [
+            13591000,
+            8146000,
+            8311000,
+            7349000,
+            9238000,
+            14664000,
+            14511000,
+            13208000,
+            12276000,
+            15681000,
+            17000000,
+            26000000
+          ]
+        },
+        {
+          "name": "Current",
+          "type": "line",
+          "data": [
+            19788553000,
+            20111403000,
+            20398067000,
+            20880359000,
+            30447667000,
+            30256722000,
+            24614874000,
+            24908800000,
+            26972858000,
+            27378120000,
+            28926947000,
+            30939749000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Social Protection - Expenditure (Drilldown)",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Sectors",
+          "type": "column",
+          "data": [
+            {
+              "name": "Working Age - Income Supports",
+              "y": 4456182000,
+              "drilldown": "Working Age - Income Supports"
+            },
+            {
+              "name": "Working Age - Employment Supports",
+              "y": 734171000,
+              "drilldown": "Working Age - Employment Supports"
+            },
+            {
+              "name": "Children",
+              "y": 3147880000,
+              "drilldown": "Children"
+            },
+            {
+              "name": "Supplementary Payments, Agencies And Miscellaneous Services",
+              "y": 1063849000,
+              "drilldown": "Supplementary Payments, Agencies And Miscellaneous Services"
+            },
+            {
+              "name": "Administration",
+              "y": 825419000,
+              "drilldown": "Administration"
+            },
+            {
+              "name": "Pensions",
+              "y": 1327579000,
+              "drilldown": "Pensions"
+            },
+            {
+              "name": "Illness, Disability And Carers",
+              "y": 6510335000,
+              "drilldown": "Illness, Disability And Carers"
+            },
+            {
+              "name": "Auto-enrolment",
+              "y": 177700000,
+              "drilldown": "Auto-enrolment"
+            },
+            {
+              "name": "Pension",
+              "y": 10700832000,
+              "drilldown": "Pension"
+            }
+          ]
+        }
+      ],
+      "drilldown": [
+        {
+          "name": "Working Age - Income Supports",
+          "id": "Working Age - Income Supports",
+          "data": [
+            [
+              "Beneficiaries Of Temporary Protection Payment",
+              18925000
+            ],
+            [
+              "Jobseeker's Allowance",
+              1825518000
+            ],
+            [
+              "Farm Assist",
+              43787000
+            ],
+            [
+              "One Parent Family Payment",
+              815089000
+            ],
+            [
+              "Bereaved Partner's (Non-contributory) Pension",
+              11720000
+            ],
+            [
+              "Deserted Wife's Allowance",
+              216000
+            ],
+            [
+              "Basic Supplementary Welfare Allowance Payments",
+              118629000
+            ],
+            [
+              "Other Working Age - Income Supports",
+              39518000
+            ],
+            [
+              "Additional Needs Payments",
+              58134000
+            ],
+            [
+              "Jobseeker's Pay Related Benefit",
+              560256000
+            ],
+            [
+              "Parent's Benefit",
+              123037000
+            ],
+            [
+              "Maternity Benefit",
+              301348000
+            ],
+            [
+              "Health And Safety Benefit",
+              514000
+            ],
+            [
+              "Adoptive Benefit",
+              219000
+            ],
+            [
+              "Jobseeker's Benefit",
+              234714000
+            ],
+            [
+              "Deserted Wife's Benefit",
+              54796000
+            ],
+            [
+              "Paternity Benefit",
+              17350000
+            ],
+            [
+              "Jobseeker's Benefit (Self Employed)",
+              10603000
+            ]
+          ]
+        },
+        {
+          "name": "Working Age - Employment Supports",
+          "id": "Working Age - Employment Supports",
+          "data": [
+            [
+              "Contracted Public Employment Service (Pes) Schemes",
+              83000000
+            ],
+            [
+              "Jobsplus",
+              2522000
+            ],
+            [
+              "Other Working Age - Employment Supports",
+              5621000
+            ],
+            [
+              "Rural Social Scheme",
+              55734000
+            ],
+            [
+              "Community Employment Programme",
+              415027000
+            ],
+            [
+              "Tús",
+              94544000
+            ],
+            [
+              "Job Initiative",
+              7738000
+            ],
+            [
+              "Back To Work Enterprise Allowance",
+              30944000
+            ],
+            [
+              "Back To Education Allowance",
+              33261000
+            ],
+            [
+              "- Covid-19 Temporary Wage Subsidy Scheme (Twss)",
+              100000
+            ],
+            [
+              "Work Placement Experience Programme",
+              5380000
+            ],
+            [
+              "- Covid-19 Employment Wage Subsidy Scheme (Ewss)",
+              300000
+            ]
+          ]
+        },
+        {
+          "name": "Children",
+          "id": "Children",
+          "data": [
+            [
+              "Child Benefit",
+              2213654000
+            ],
+            [
+              "Working Family Payment",
+              531947000
+            ],
+            [
+              "School Meals",
+              286026000
+            ],
+            [
+              "Back To School Clothing And Footwear Allowance",
+              60446000
+            ],
+            [
+              "Other Child Related Payments",
+              10982000
+            ],
+            [
+              "Back To Work Family Dividend",
+              11366000
+            ]
+          ]
+        },
+        {
+          "name": "Supplementary Payments, Agencies And Miscellaneous Services",
+          "id": "Supplementary Payments, Agencies And Miscellaneous Services",
+          "data": [
+            [
+              "Telephone Support Allowance",
+              8945000
+            ],
+            [
+              "Household Benefits Package",
+              108509000
+            ],
+            [
+              "Grant To The Citizens Information Board",
+              69432000
+            ],
+            [
+              "Miscellaneous Services",
+              13024000
+            ],
+            [
+              "Rent Supplement",
+              43101000
+            ],
+            [
+              "Free Travel",
+              113730000
+            ],
+            [
+              "Fuel Allowance",
+              277315000
+            ]
+          ]
+        },
+        {
+          "name": "Administration",
+          "id": "Administration",
+          "data": [
+            [
+              "Administration - Pay",
+              419130000
+            ],
+            [
+              "Administration - Non Pay",
+              295650000
+            ],
+            [
+              "Premises Expenses",
+              4000000
+            ],
+            [
+              "Bank Charges",
+              3000000
+            ],
+            [
+              "Transfer To Other Votes",
+              75792000
+            ],
+            [
+              "Cash Service Fee",
+              27847000
+            ]
+          ]
+        },
+        {
+          "name": "Pensions",
+          "id": "Pensions",
+          "data": [
+            [
+              "State Pension - (Non-contributory)",
+              1327579000
+            ]
+          ]
+        },
+        {
+          "name": "Illness, Disability And Carers",
+          "id": "Illness, Disability And Carers",
+          "data": [
+            [
+              "Blind Pension",
+              12100000
+            ],
+            [
+              "Carer's Allowance",
+              1404624000
+            ],
+            [
+              "Disability Allowance",
+              2571375000
+            ],
+            [
+              "Carer's Support Grant",
+              364158000
+            ],
+            [
+              "Domiciliary Care Allowance",
+              358730000
+            ],
+            [
+              "Wage Subsidy Scheme",
+              25723000
+            ],
+            [
+              "Disability Activation Supports",
+              25990000
+            ]
+          ]
+        },
+        {
+          "name": "Auto-enrolment",
+          "id": "Auto-enrolment",
+          "data": [
+            [
+              "State Contributions To My Future Fund",
+              154000000
+            ],
+            [
+              "Grant Funding To Naersa",
+              23700000
+            ]
+          ]
+        },
+        {
+          "name": "Pension",
+          "id": "Pension",
+          "data": [
+            [
+              "State Pension (Contributory)",
+              8652155000
+            ],
+            [
+              "Bereaved Partner's (Contributory) Pension",
+              2037360000
+            ],
+            [
+              "Widows', Widowers' / Surviving Civil Partners' (Death Benefit)",
+              11317000
+            ]
+          ]
+        }
+      ],
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Social Protection - Expenditure - 3 Year Comparison",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [
+            "Working Age - Income Supports",
+            "Working Age - Employment Supports",
+            "Children",
+            "Supplementary Payments, Agencies And Miscellaneous Services",
+            "Administration",
+            "Pensions",
+            "Illness, Disability And Carers",
+            "Auto-enrolment",
+            "Pension"
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "2024",
+          "type": "column",
+          "data": [
+            4099323000,
+            660620000,
+            3264069000,
+            1049426000,
+            731381000,
+            1335726000,
+            6020826000,
+            0,
+            9823763000
+          ]
+        },
+        {
+          "name": "2025",
+          "type": "column",
+          "data": [
+            4202185000,
+            684832000,
+            3035046000,
+            977163000,
+            762312000,
+            1335821000,
+            6224548000,
+            0,
+            10171894000
+          ]
+        },
+        {
+          "name": "2026",
+          "type": "column",
+          "data": [
+            4456182000,
+            734171000,
+            3147880000,
+            1063849000,
+            825419000,
+            1327579000,
+            6510335000,
+            177700000,
+            10700832000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Social Protection - Expenditure by Type",
+      "subtitle": "",
+      "type": "pie",
+      "xAxes": [
+        {
+          "categories": null,
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Values",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Type",
+          "type": "pie",
+          "data": [
+            {
+              "name": "Capital",
+              "y": 17000000
+            },
+            {
+              "name": "Current",
+              "y": 28926947000
+            }
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    }
+  ],
+  "headings": [
+    "2026 Social Protection Expenditure:",
+    "Social Protection - Expenditure (Drilldown)",
+    "Social Protection - Expenditure - 3 Year Comparison",
+    "Social Protection - Expenditure by Type",
+    "Social Protection - Expenditure Over Time (10 Years)"
+  ],
+  "tables": []
+}

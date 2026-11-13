@@ -1,0 +1,420 @@
+{
+  "url": "https://www.whereyourmoneygoes.gov.ie/en/education/2026/",
+  "title": "Where Your Money Goes",
+  "charts": [
+    {
+      "title": "Education - Expenditure Over Time (10 Years)",
+      "subtitle": "",
+      "type": "line",
+      "xAxes": [
+        {
+          "categories": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026,
+            2027
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Amount in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Total",
+          "type": "line",
+          "data": [
+            9157853000,
+            9598577000,
+            10226020000,
+            10880746000,
+            8595589000,
+            9263008000,
+            10176293000,
+            10808822000,
+            11907788000,
+            12732349000,
+            13455252000,
+            14435293000
+          ]
+        },
+        {
+          "name": "Capital",
+          "type": "line",
+          "data": [
+            692192000,
+            691862000,
+            741455000,
+            940607000,
+            900838000,
+            989214000,
+            1119945000,
+            1263522000,
+            1456781000,
+            1592169000,
+            1659491000,
+            1600000000
+          ]
+        },
+        {
+          "name": "Current",
+          "type": "line",
+          "data": [
+            8465661000,
+            8906715000,
+            9484565000,
+            9940139000,
+            7694751000,
+            8273794000,
+            9056348000,
+            9545300000,
+            10451007000,
+            11140180000,
+            11795761000,
+            12835293000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Education - Expenditure (Drilldown)",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Sectors",
+          "type": "column",
+          "data": [
+            {
+              "name": "First, Second And Early Years' Education",
+              "y": 13455252000,
+              "drilldown": "First, Second And Early Years' Education"
+            }
+          ]
+        }
+      ],
+      "drilldown": [
+        {
+          "name": "First, Second And Early Years' Education",
+          "id": "First, Second And Early Years' Education",
+          "data": [
+            [
+              "Administration - Pay",
+              168833000
+            ],
+            [
+              "Administration - Non Pay",
+              69529000
+            ],
+            [
+              "Primary Teachers' Salaries",
+              3752187000
+            ],
+            [
+              "Secondary, Comp and Comm. Schools - Salaries",
+              1949779000
+            ],
+            [
+              "Etb Teacher Salaries",
+              990007000
+            ],
+            [
+              "Salaries Of Snas In Primary and Post Primary Schools",
+              1148251000
+            ],
+            [
+              "Salaries Of Non-teaching Staff (Excl Snas)",
+              236544000
+            ],
+            [
+              "Superannuation Of Teaching and Non-teaching Staff",
+              1747379000
+            ],
+            [
+              "School Transport Services",
+              479089000
+            ],
+            [
+              "Grants To Primary, Post Primary Schools, Etbs Etc",
+              842898000
+            ],
+            [
+              "Grants To Primary and Post Primary Education Bodies",
+              266248000
+            ],
+            [
+              "Teacher Education",
+              60406000
+            ],
+            [
+              "Redress and Child Abuse Commission",
+              15724000
+            ],
+            [
+              "Miscellaneous Grants And Services",
+              112443000
+            ],
+            [
+              "Primary and Post Primary Infrastructure",
+              1547935000
+            ],
+            [
+              "Public Private Partnership Costs",
+              68000000
+            ]
+          ]
+        }
+      ],
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Education - Expenditure - 3 Year Comparison",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [
+            "First, Second And Early Years' Education"
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "2024",
+          "type": "column",
+          "data": [
+            11907788000
+          ]
+        },
+        {
+          "name": "2025",
+          "type": "column",
+          "data": [
+            12732349000
+          ]
+        },
+        {
+          "name": "2026",
+          "type": "column",
+          "data": [
+            13455252000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Education - Expenditure by Type",
+      "subtitle": "",
+      "type": "pie",
+      "xAxes": [
+        {
+          "categories": null,
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Values",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Type",
+          "type": "pie",
+          "data": [
+            {
+              "name": "Capital",
+              "y": 1659491000
+            },
+            {
+              "name": "Current",
+              "y": 11795761000
+            }
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    }
+  ],
+  "headings": [
+    "2026 Education Expenditure:",
+    "Education - Expenditure (Drilldown)",
+    "Education - Expenditure - 3 Year Comparison",
+    "Education - Expenditure by Type",
+    "Education - Expenditure Over Time (10 Years)"
+  ],
+  "tables": []
+}
