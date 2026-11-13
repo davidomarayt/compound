@@ -17,7 +17,7 @@ This calculator models Ireland's planned **Personal Investment Account (PIA)** u
 
 It projects a starting PIA balance and annual contributions forward using the investment-return assumption you enter. It then estimates when the account may move above the **€50,000 PIA tax threshold** and calculates the proposed **1% annual charge on the portion of the modelled average account value above €50,000**.
 
-The calculator is designed to answer practical questions such as:
+The calculator uses **illustrative daily closing values** to estimate the proposed annual account charge. It assumes 365 days in each projected full year, even monthly contributions and a smooth daily return. Actual providers will use real dated account values and the statutory rules. The calculator is designed to answer practical questions such as:
 
 - How large could my PIA become after 5, 10 or 20 years?
 - When might I first cross the €50,000 threshold?
@@ -29,7 +29,7 @@ The calculator is designed to answer practical questions such as:
 
 The full background, eligible investments, withdrawals, providers and outstanding legislative questions are covered in Compound's [Personal Investment Account Ireland guide](/wealth/personal-investment-account-ireland/).
 
-The calculator is a planning tool. It is not an official Revenue calculator and it does not claim that the final legislation will use exactly the same valuation method.
+The calculator is a planning tool. It is not an official Revenue calculator and the Bill may change before enactment and a projection cannot reproduce real daily market prices.
 
 ## Budget 2027 assumptions used
 
@@ -47,24 +47,22 @@ The headline assumptions are:
 - eligible investments are expected to include listed shares, listed bonds, suitable retail funds and ETFs;
 - crypto-assets and derivatives are excluded under the proposed framework.
 
-The account is not yet available. The Finance Bill still has to convert the announced framework into detailed law.
-
-That distinction is important because a calculator can model the announced rate and threshold today, but it cannot know a valuation rule that has not yet been enacted.
+The account is not yet available. The Finance (No. 2) Bill 2026, as introduced, proposes averaging the daily closing values over the days the account is open. The legislation may change before enactment, and the calculator does not have real historical daily account records.
 
 When the final legislation and Revenue guidance are published, Compound will update this tool where necessary.
 
 ## How the projection works
 
-The calculator works month by month so that contributions and investment growth are not treated as though they all happened on the final day of the year.
+The calculator simulates each day of an illustrative 365-day year so it can estimate the daily-value average proposed in the Finance Bill. It assumes 12 monthly contributions, applied at the end of each modelled month.
 
 For each projection year, it:
 
 1. starts with the balance carried forward from the previous year;
 2. spreads the annual contribution evenly over 12 months;
-3. applies the annual investment-return assumption through monthly compounding;
-4. applies the annual percentage fee monthly in Advanced mode;
-5. records the account value at each month end;
-6. calculates the average of those 12 month-end values;
+3. converts the assumed annual return into a smooth daily growth factor;
+4. applies the assumed annual percentage fee daily in Advanced mode;
+5. records the estimated closing balance on each of 365 modelled days;
+6. calculates the arithmetic average of those 365 closing values;
 7. applies the proposed PIA charge to the portion of that average above €50,000;
 8. deducts the estimated PIA charge at the end of the modelled year;
 9. carries the remaining balance into the next year.
@@ -77,21 +75,13 @@ For broader long-term growth modelling outside the PIA-specific tax system, use 
 
 ## How the calculator estimates average account value
 
-The Department of Finance design uses an **average account valuation over the taxable period**.
+The Finance (No. 2) Bill 2026, as introduced, specifies a **daily closing-value average** over the relevant days the account was open. Cash and investments held inside the PIA count towards the valuation. See [how daily valuation changes the charge](/pia/daily-valuation/) and the [Bill as introduced, section 26](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf#page=53).
 
-The detailed legislation still has to determine exactly how that average will be calculated.
+For a future projection, real daily balances do not exist. Compound therefore models a **365-day full year**, smooth daily investment returns and provider fees, and equal contributions at 12 modelled month ends. It averages all 365 modelled daily closing balances rather than just 12 snapshots. The displayed tax is 1% of the excess of this average over €50,000.
 
-For a clear and reproducible estimate, this calculator uses the average of the 12 month-end account values in each modelled full year.
+Actual tax calculations may differ due to changing market prices, contribution timing, leap years, account opening dates, withdrawals, fees, and any legislative amendments. In particular, a part-year account should use only the days it was open, not 365 days with pre-opening zero balances.
 
-That means the calculation is sensitive to when contributions enter the account.
-
-For example, €12,000 contributed as €1,000 each month will normally produce a lower average account value during that year than €12,000 contributed on the first day of the year.
-
-The final statutory rules may use different valuation dates or a different averaging convention.
-
-The monthly-average approach used here is therefore a **modelling assumption**, clearly separated from the rules that have already been announced.
-
-This is also why the result is described as an estimated PIA charge rather than an official tax liability.
+This is an **illustrative projection**, not an official tax assessment or provider statement.
 
 ## The PIA tax formula used
 
@@ -359,7 +349,7 @@ It does not model irregular market returns, intra-year withdrawals, contribution
 
 The most important limitation is the **average account valuation method**.
 
-The Department of Finance has indicated an average-value approach, but the Finance Bill still has to finalise the legal mechanics. Compound uses the average of 12 modelled month-end balances because it is transparent and easy to reproduce.
+The Finance (No. 2) Bill 2026, as introduced, sets out daily closing values. Compound projects 365 illustrative daily balances per full year; real daily market movements and the applicable statutory period can produce a different result.
 
 Once enacted, the legislation and Revenue guidance should take precedence over this calculator.
 
