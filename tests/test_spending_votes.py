@@ -65,7 +65,7 @@ def test_invalid_or_truncated_vote_register_rejected():
         ("short",lambda r:r["votes"].pop(), "Incomplete or out-of-order"),
         ("wrong grant",lambda r:r["votes"][0].update({"net_supply_eur":0}), "Invalid exact net grant"),
         ("untrusted source",lambda r:r.update({"source":"https://example.com/false.pdf"}), "official Oireachtas"),
-        ("year",lambda r:r.update({"year":2027}), "Expected 2026"),
+        ("year",lambda r:r.update({"year":2027}), "must match 25 March 2026"),
         ("wrong numbering",lambda r:r["votes"][10].update({"number":11}), "Incomplete or out-of-order"),
     ]
     for label,mutate,error in cases:
