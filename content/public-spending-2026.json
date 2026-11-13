@@ -1,0 +1,132 @@
+{
+  "year": 2026,
+  "updated": "2026-11-13",
+  "kind": "estimated expenditure",
+  "source": "https://www.whereyourmoneygoes.gov.ie/en/2026/",
+  "methodology": "https://www.whereyourmoneygoes.gov.ie/en/about/",
+  "total_billion": 133,
+  "categories": [
+    {
+      "id": "social",
+      "name": "Social protection",
+      "billion": 28.9,
+      "source": "https://www.whereyourmoneygoes.gov.ie/en/socialprotection/2026/",
+      "summary": "Pensions, income supports, carers and family payments.",
+      "themes": [
+        "State pensions",
+        "Disability and illness payments",
+        "Jobseeker supports",
+        "Carers and family payments",
+        "Child Benefit",
+        "Working family supports",
+        "Fuel and household supports"
+      ]
+    },
+    {
+      "id": "health",
+      "name": "Health",
+      "billion": 27.4,
+      "source": "https://www.whereyourmoneygoes.gov.ie/en/health/2026/",
+      "summary": "Hospital and community healthcare, medicines and support services.",
+      "themes": [
+        "Acute and specialist hospitals",
+        "Emergency and ambulance services",
+        "Primary and community care",
+        "Mental health and CAMHS",
+        "Disability and older-person care",
+        "Medical cards and medicines",
+        "Public health and prevention"
+      ]
+    },
+    {
+      "id": "education",
+      "name": "Education",
+      "billion": 13.5,
+      "source": "https://www.whereyourmoneygoes.gov.ie/en/education/2026/",
+      "summary": "Schools, teaching, educational supports and facilities.",
+      "themes": [
+        "Primary schools",
+        "Post-primary schools",
+        "Teachers and SNAs",
+        "Special education",
+        "School buildings and maintenance",
+        "School transport",
+        "DEIS and pupil supports"
+      ]
+    },
+    {
+      "id": "housing",
+      "name": "Housing",
+      "billion": 11.4,
+      "source": "https://www.whereyourmoneygoes.gov.ie/en/2026/",
+      "summary": "Housing-related and local government spending grouped in the official sector.",
+      "themes": [
+        "Social housing delivery",
+        "Housing Assistance Payment",
+        "Homelessness services",
+        "Local authority services",
+        "Water and community infrastructure",
+        "Housing schemes and regeneration"
+      ]
+    },
+    {
+      "id": "justice",
+      "name": "Justice",
+      "billion": 6.3,
+      "source": "https://www.whereyourmoneygoes.gov.ie/en/2026/",
+      "summary": "Justice, policing, courts, prisons and associated services.",
+      "themes": [
+        "Garda policing",
+        "Courts and legal aid",
+        "Prisons and probation",
+        "Migration and protection services",
+        "Justice administration",
+        "Forensic and victim services"
+      ]
+    },
+    {
+      "id": "transport",
+      "name": "Transport",
+      "billion": 4.8,
+      "source": "https://www.whereyourmoneygoes.gov.ie/en/2026/",
+      "summary": "Roads, public transport, infrastructure and active travel.",
+      "themes": [
+        "National road network",
+        "Regional and local roads",
+        "Public transport services",
+        "Rail and light rail",
+        "Active travel and greenways",
+        "Transport safety and accessibility"
+      ]
+    },
+    {
+      "id": "debt",
+      "name": "Debt servicing and EU payments",
+      "billion": 15.6,
+      "source": "https://www.whereyourmoneygoes.gov.ie/en/2026/",
+      "summary": "Non-voted expenditure including debt servicing and EU payments.",
+      "themes": [
+        "National debt interest",
+        "EU Budget contributions",
+        "Other non-voted Exchequer items"
+      ]
+    },
+    {
+      "id": "other",
+      "name": "Additional departments",
+      "billion": 25.1,
+      "source": "https://www.whereyourmoneygoes.gov.ie/en/other/2026/",
+      "summary": "Other departments including agriculture, enterprise, defence and higher education.",
+      "themes": [
+        "Agriculture and fisheries",
+        "Further and higher education",
+        "Defence",
+        "Climate and environment",
+        "Enterprise and tourism",
+        "Arts, culture and sport",
+        "Foreign affairs and overseas development",
+        "Public administration"
+      ]
+    }
+  ]
+}
