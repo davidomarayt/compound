@@ -1181,7 +1181,7 @@ def build_site(settings: Settings) -> dict:
     _write(out / "wheres-my-money" / "index.html",
            env.get_template("wheres_my_money.html").render(
                title="Where's My Money? Irish Tax Receipt", pillar="wealth",
-               tools_page=True, spending=spending))
+               wmm_page=True, spending=spending))
 
     _write(out / "news" / "index.html", env.get_template("news.html").render(
         articles=news_articles, title="Latest News for Ireland", news=True, ads_allowed=False))
