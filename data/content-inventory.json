@@ -271,6 +271,27 @@
         "status": "published"
       },
       {
+        "title": "Anthropic's Anvil Found AI Safeguard Gaps Faster Than Human Testers. What Is That Worth?",
+        "url": "/wealth/anthropic-anvil-automated-red-teaming-safety-economics/",
+        "source": "content/wealth/anthropic-anvil-automated-red-teaming-safety-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "anthropic-anvil-automated-red-teaming-safety-economics",
+        "date": "2026-11-13",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-anthropic",
+          "anthropic",
+          "artificial-intelligence",
+          "enterprise-security",
+          "ai-safety"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Anthropic's Fable and Mythos 5.2: The Expensive Model Is Not Always the Best Deal",
         "url": "/wealth/anthropic-fable-mythos-52-pricing-routing-economics/",
         "source": "content/wealth/anthropic-fable-mythos-52-pricing-routing-economics.md",
@@ -525,6 +546,26 @@
           "bloom-energy",
           "earnings-analysis",
           "energy"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Blue Origin Has Qualified a New Glenn Valve Fix. The Hard Part Is Returning to Flight.",
+        "url": "/wealth/blue-origin-new-glenn-valve-fix-launch-economics/",
+        "source": "content/wealth/blue-origin-new-glenn-valve-fix-launch-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "blue-origin-new-glenn-valve-fix-launch-economics",
+        "date": "2026-11-13",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-blue-origin",
+          "blue-origin",
+          "launch",
+          "aerospace"
         ],
         "status": "published"
       },
@@ -3477,6 +3518,27 @@
           "stocks",
           "company-research",
           "on"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "OpenAI Is Building a Business Channel Inside ChatGPT. Who Captures the Value?",
+        "url": "/wealth/openai-business-agents-chatgpt-merchant-economics-2026/",
+        "source": "content/wealth/openai-business-agents-chatgpt-merchant-economics-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-business-agents-chatgpt-merchant-economics-2026",
+        "date": "2026-11-13",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "artificial-intelligence",
+          "commerce",
+          "advertising"
         ],
         "status": "published"
       },
