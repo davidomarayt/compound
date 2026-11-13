@@ -31,7 +31,7 @@ def test_pia_presets_use_existing_calculator_and_allow_manual_changes():
     assert "annual_contribution:Number(button.dataset.contribution)" in SCRIPT
     assert "return_rate:6" in SCRIPT
     assert "selectPiaPreset(button);" in SCRIPT
-    assert "syncVisibility();\n      run(false);" in SCRIPT
+    assert "syncVisibility();\n      run(false,true);" in SCRIPT
     assert "form.addEventListener('change',()=>{clearPiaPreset();" in SCRIPT
     assert "form.addEventListener('input',()=>{clearPiaPreset();" in SCRIPT
     assert 'data-tool-name="pia-calculator"' in CSS
