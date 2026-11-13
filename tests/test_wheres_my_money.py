@@ -42,3 +42,57 @@ def test_flagship_template_renders_with_privacy_and_sources():
     assert "not earmarked payments" in html
     assert "https://www.whereyourmoneygoes.gov.ie/en/2026/" in html
     assert "chatbot" not in html.lower()
+
+
+
+def test_flagship_ads_have_three_desktop_slots_and_two_mobile_slots():
+    data = json.loads(SPENDING.read_text(encoding="utf-8"))
+    env = Environment(loader=FileSystemLoader(str(TEMPLATES)), autoescape=select_autoescape(["html"]))
+    slots = {
+        "wmm_receipt": "2138650464",
+        "wmm_spending": "8512487125",
+        "wmm_budget": "2138650464",
+    }
+    html = env.get_template("wheres_my_money.html").render(
+        title="Where's My Money?",
+        site_url="https://compound.ie",
+        spending=data,
+        adsense={"client":"ca-pub-6115783809711785", "slots":slots},
+        analytics={"measurement_id":""},
+        site_identity_jsonld="{}",
+        year=2026,
+    )
+    assert html.count('class="wmm-ad') == 3
+    assert html.count('aria-label="Advertisement"') == 3
+    assert html.count('data-wmm-ad-slot="2138650464"') == 2
+    assert html.count('data-wmm-ad-slot="8512487125"') == 1
+    assert html.count("wmm-ad-desktop-only") == 1
+    assert html.count("wheres-my-money-ads.js") == 1
+    assert html.count("pagead2.googlesyndication.com/pagead/js/adsbygoogle.js") == 1
+    assert html.index('id="your-receipt"') < html.index('data-wmm-ad-position="after-receipt"') < html.index('id="spending"')
+    assert html.index('id="spending"') < html.index('data-wmm-ad-position="after-spending"') < html.index('id="what-if"')
+    assert html.index('id="budget"') < html.index('data-wmm-ad-position="after-budget"') < html.index('id="reliefs"')
+    css = (ROOT / "compound/site/static/wheres-my-money.css").read_text(encoding="utf-8")
+    script = (ROOT / "compound/site/static/wheres-my-money-ads.js").read_text(encoding="utf-8")
+    assert ".wmm-ad-desktop-only{display:none!important}" in css
+    assert "matchMedia('(min-width: 761px)')" in script
+    assert "IntersectionObserver" in script
+    assert "data-ad-full-width-responsive" not in script  # use Google's full-width-responsive key
+    assert "data-full-width-responsive" in script
+    assert "wmm-salary" not in script and "wmm-pension" not in script
+
+
+def test_flagship_ads_respect_disabled_site_config():
+    data = json.loads(SPENDING.read_text(encoding="utf-8"))
+    env = Environment(loader=FileSystemLoader(str(TEMPLATES)), autoescape=select_autoescape(["html"]))
+    html = env.get_template("wheres_my_money.html").render(
+        title="Where's My Money?",
+        site_url="https://compound.ie",
+        spending=data,
+        adsense={"client":"", "slots":{"wmm_receipt":"2138650464"}},
+        analytics={"measurement_id":""},
+        site_identity_jsonld="{}",
+        year=2026,
+    )
+    assert 'data-wmm-ad-position="' not in html
+    assert 'class="wmm-ad' not in html
