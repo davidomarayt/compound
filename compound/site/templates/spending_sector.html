@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block head_title %}{{ sector.name }} Spending in Ireland: 2026–2027 Figures & Charts | Compound{% endblock %}
+{% block meta %}<meta name="description" content="Ireland's {{ sector.name|lower }} spending: €{{ "%.1f"|format(sector.billion) }}bn in 2026, €{{ "%.1f"|format(sector.next_billion) }}bn in Budget 2027. Charts, service areas, official sources and comparisons.">{% endblock %}
+{% block head %}
+<link rel="canonical" href="{{ site_url }}{{ sector.url }}">
+<meta property="og:type" content="article"><meta property="og:title" content="{{ sector.name }} spending Ireland 2026–2027 | Compound"><meta property="og:description" content="{{ sector.short }}"><meta property="og:url" content="{{ site_url }}{{ sector.url }}">
+<link rel="stylesheet" href="/static/spending-explorer.css?v=20261113a">
+<script defer src="/static/spending-explorer.js?v=20261113a"></script>
+<script type="application/ld+json">{{ schema|tojson }}</script>
+{% endblock %}
+{% block content %}
+<article class="wmex wmex-detail" id="spending-sector-{{ sector.id }}">
+  <header class="wmex-hero wmex-detail-hero">
+    <nav class="wmex-breadcrumb" aria-label="Breadcrumb"><a href="/">Compound</a><span>/</span><a href="/wheres-my-money/">Where's My Money?</a><span>/</span><a href="/wheres-my-money/spending/">Government spending</a><span>/</span><span aria-current="page">{{ sector.name }}</span></nav>
+    <p class="wmex-eyebrow">WHERE'S MY MONEY? · SECTOR {{ "%02d"|format(sector_index) }} OF 08</p>
+    <h1>{{ sector.name }} spending in Ireland</h1>
+    <p class="wmex-lead">{{ sector.short }}. Compare the 2026 estimate with the published Budget 2027 allocation, and see what this sector covers.</p>
+    <div class="wmex-hero-metrics">
+      <div><span>2026 estimated expenditure</span><strong>€{{ "%.1f"|format(sector.billion) }}bn</strong></div>
+      <div><span>Budget 2027 estimate</span><strong>€{{ "%.1f"|format(sector.next_billion) }}bn</strong></div>
+      <div><span>Share of 2026 public spending</span><strong>{{ "%.1f"|format(sector.share_2026) }}%</strong></div>
+    </div>
+    <p class="wmex-hero-foot">Expenditure estimates — not confirmed final outturn. Source checked {{ spending.updated }}.</p>
+  </header>
+
+  <nav class="wmex-page-nav" aria-label="Explore {{ sector.name }}"><a href="#trend">Spending chart</a><a href="#explained">What it covers</a><a href="#receipt">Your tax allocation</a><a href="#questions">FAQs</a><a href="#other-sectors">Other sectors</a></nav>
+
+  <section class="wmex-section" id="trend" aria-labelledby="wmex-trend-title">
+    <div class="wmex-section-heading"><p class="wmex-eyebrow">01 / FIGURES IN CONTEXT</p><h2 id="wmex-trend-title">{{ sector.name }}: spending over time</h2><p>{{ sector.intro }}</p></div>
+    <figure class="wmex-chart" aria-labelledby="wmex-chart-title">
+      <h3 id="wmex-chart-title">Spending estimate by year (billion euro)</h3>
+      <div class="wmex-history">
+      {% for year in sector.series %}
+        <div class="wmex-history-row">
+          <span class="wmex-history-year">{{ year.year }}</span>
+          <span class="wmex-history-bar" aria-hidden="true"><span class="{% if year.year == 2027 %}wmex-history-forecast{% endif %}" style="width:{{ "%.4f"|format(year.bar_pct) }}%"></span></span>
+          <strong>€{{ "%.1f"|format(year.value) }}bn</strong>
+        </div>
+      {% endfor %}
+      </div>
+      <figcaption>2025, where shown, is a provisional outturn; 2026 and 2027 are expenditure estimates. The bars are built by Compound from the published headline figures.</figcaption>
+      <div class="wmex-table-wrap"><table class="wmex-table"><thead><tr><th scope="col">Year</th><th scope="col">Amount</th><th scope="col">Status</th></tr></thead><tbody>
+      {% for year in sector.series %}<tr><th scope="row">{{ year.year }}</th><td>€{{ "%.1f"|format(year.value) }}bn</td><td>{{ year.status }}</td></tr>{% endfor %}
+      </tbody></table></div>
+    </figure>
+    <div class="wmex-trend-notes">
+      <div><span>Change from 2026 estimate to Budget 2027</span><strong>{{ "%+.1f"|format(sector.increase_billion) }}bn</strong></div>
+      <div><span>Change in published headline amount</span><strong>{{ "%+.1f"|format(sector.increase_pct) }}%</strong></div>
+    </div>
+    <p class="wmex-chart-note">Changes between estimates may reflect inflation, new allocations and/or transfers of departmental functions. They should not be presented automatically as a like-for-like increase in services.</p>
+  </section>
+
+  <section class="wmex-section wmex-warm" id="explained" aria-labelledby="wmex-explained-title">
+    <div class="wmex-section-heading"><p class="wmex-eyebrow">02 / FOLLOW THE CATEGORY</p><h2 id="wmex-explained-title">What does this sector include?</h2><p>{{ sector.context }}</p></div>
+    <div class="wmex-topic-grid">
+      {% for theme in sector.themes %}
+      <div class="wmex-topic">
+        <span class="wmex-topic-number">{{ "%02d"|format(loop.index) }}</span>
+        <h3>{{ theme }}</h3>
+        <p>An area to investigate within this broad sector. No unverified programme allocation is assigned to it.</p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="wmex-evidence"><h3>Why this distinction matters</h3><p>{{ sector.interpretation }}</p><p>Amounts for individual programmes would need to reconcile to the department and sector totals before appearing in these charts. We do not divide the sector figure evenly among the topics above.</p></div>
+  </section>
+
+  <section class="wmex-section" id="receipt" aria-labelledby="wmex-receipt-title">
+    <div class="wmex-section-heading"><p class="wmex-eyebrow">03 / YOUR PERSONAL CONTEXT</p><h2 id="wmex-receipt-title">A proportional tax receipt, not a traced payment.</h2><p>If you paid a particular amount in PAYE, USC and employee PRSI, what would {{ sector.name|lower }} represent if that money were distributed using the national 2026 spending mix?</p></div>
+    <div class="wmex-personal wmex-personal-single" data-spending-personal>
+      <label for="wmex-contribution">Your annual PAYE, USC and employee PRSI (€)</label>
+      <input id="wmex-contribution" data-contribution type="number" min="0" max="10000000" value="37035" step="100" inputmode="decimal">
+      <p class="wmex-validation" data-validation role="alert" hidden></p>
+      <div class="wmex-personal-result">
+        <div><span>Illustrative {{ sector.name|lower }} equivalent</span><strong data-equivalent data-share="{{ "%.9f"|format(sector.share_2026 / 100) }}">—</strong></div>
+        <div><span>Published spending share (2026)</span><strong>{{ "%.1f"|format(sector.share_2026) }}%</strong></div>
+      </div>
+      <p class="wmex-chart-note">This multiplies the figure you enter by {{ "%.1f"|format(sector.share_2026) }}%. Public finances pool revenues; this is not a payment receipt or the monetary value of services you personally receive.</p>
+      <a class="wmex-primary-link" href="/wheres-my-money/#your-receipt">Calculate my full Irish tax receipt &rarr;</a>
+    </div>
+  </section>
+
+  <section class="wmex-section wmex-warm" id="questions" aria-labelledby="wmex-questions-title">
+    <div class="wmex-section-heading"><p class="wmex-eyebrow">04 / COMMON QUESTIONS</p><h2 id="wmex-questions-title">Understanding {{ sector.name|lower }} spending.</h2></div>
+    <div class="wmex-faq">
+    {% for q in sector.questions %}
+      <details {% if loop.first %}open{% endif %}><summary>{{ q[0] }}</summary><p>{{ q[1] }}</p></details>
+    {% endfor %}
+    </div>
+    <h3 class="wmex-more-title">Related Compound resources</h3>
+    <div class="wmex-links">
+      {% for link in sector.related %}<a href="{{ link[1] }}">{{ link[0] }} &rarr;</a>{% endfor %}
+      <a href="/wheres-my-money/spending/">Explore all spending sectors &rarr;</a>
+    </div>
+  </section>
+
+  <section class="wmex-section" id="other-sectors" aria-labelledby="wmex-other-title">
+    <div class="wmex-section-heading"><p class="wmex-eyebrow">05 / CONTINUE EXPLORING</p><h2 id="wmex-other-title">Explore the rest of the public budget.</h2><p>Every sector links back to the complete directory and to related categories, so you can follow the spending picture without leaving Compound.</p></div>
+    <div class="wmex-next-grid">
+    {% for c in spending.categories if c.id != sector.id %}
+      <a href="{{ c.url }}"><span>{{ c.name }}</span><strong>€{{ "%.1f"|format(c.billion) }}bn <small>(2026)</small></strong><span class="wmex-next-arrow">Explore &rarr;</span></a>
+    {% endfor %}
+    </div>
+    <div class="wmex-source-note">
+      <h3>Sources and limitations</h3>
+      <p>All figures on this page come from the published government <a href="{{ sector.source }}" rel="noopener noreferrer">2026 {{ sector.name }} sector estimate</a> and <a href="{{ spending.comparison_source }}" rel="noopener noreferrer">Budget 2027 expenditure summary</a>. <a href="{{ spending.methodology }}" rel="noopener noreferrer">Official methodology</a> describes voted and non-voted totals, provisional outturns and historical classification changes.</p>
+      <p>Figures are rounded to €0.1bn. Departmental accounting categories are not always the same as everyday descriptions of a service. No supplier or programme allocation is inferred from this headline figure.</p>
+    </div>
+  </section>
+</article>
+{% endblock %}
