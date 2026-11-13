@@ -25,13 +25,13 @@
     <p class="wmex-hero-foot">Both years are estimates, not completed spending. Changes in department responsibilities can affect comparisons.</p>
   </header>
 
-  <nav class="wmex-page-nav" aria-label="Explore spending"><a href="#sectors">All eight sectors</a><a href="#comparison">2026 vs 2027</a><a href="#personal">Your tax contribution</a><a href="#method">Sources and definitions</a></nav>
+  <nav class="wmex-page-nav" aria-label="Explore spending"><a href="#sectors">All eight sectors</a><a href="/wheres-my-money/spending/programmes/">49 programme allocations</a><a href="#comparison">2026 vs 2027</a><a href="#personal">Your tax contribution</a><a href="#method">Sources and definitions</a></nav>
 
   <section class="wmex-section" id="sectors" aria-labelledby="wmex-sectors-heading">
     <div class="wmex-section-heading">
       <p class="wmex-eyebrow">01 / EXPENDITURE BY SECTOR</p>
       <h2 id="wmex-sectors-heading">Follow the money, one sector at a time.</h2>
-      <p>The bars compare the eight published sector totals for 2026. Select any category for its own explanation, year-on-year chart, service areas and related Compound pages.</p>
+      <p>The bars compare the eight published sector totals for 2026. Select any category for its own explanation, year-on-year chart, service areas and related Compound pages. <a href="/wheres-my-money/spending/programmes/">Explore 49 separately sourced 2026 programme allocations &rarr;</a></p>
     </div>
     <div class="wmex-list" role="list" aria-label="2026 sector totals">
     {% for c in spending.categories %}
@@ -90,7 +90,7 @@
       <article><h3>2026 estimates</h3><p>Gross voted and non-voted expenditure as published for 2026. These are estimates rather than fully audited 2026 actual spending figures.</p></article>
       <article><h3>Budget 2027</h3><p>Proposed spending in the Budget 2027 dataset. They must not be described as money already spent in 2027.</p></article>
       <article><h3>Different accounting boundaries</h3><p>Housing was previously grouped with Additional Departments, and transfers of responsibilities can disrupt historical sector comparisons.</p></article>
-      <article><h3>No invented subcategory amounts</h3><p>Individual programme topics on sector pages describe relevant services; no euro allocations are shown until a compatible published programme-level dataset is verified.</p></article>
+      <article><h3>Sourced programme allocations</h3><p>Compound has a separate register of 49 officially published allocations. Some are overlapping or incremental Budget measures, so they are displayed individually and never summed into a fabricated sector breakdown. <a href="/wheres-my-money/spending/programmes/">Explore the programme register &rarr;</a></p></article>
     </div>
     <p class="wmex-chart-note">Sources used to build the charts: <a href="{{ spending.source }}" rel="noopener noreferrer">2026 official sector totals</a>, <a href="{{ spending.comparison_source }}" rel="noopener noreferrer">Budget 2027 totals</a>, and <a href="{{ spending.methodology }}" rel="noopener noreferrer">official scope and methodology</a>. Data checked {{ spending.updated }}. Links are for provenance; all displayed charts are built and hosted by Compound.</p>
     <a class="wmex-primary-link" href="/wheres-my-money/">Back to your personal tax receipt &rarr;</a>
