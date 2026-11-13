@@ -95,7 +95,11 @@
   <section id="spending" class="wmm-section wmm-section-cream" aria-labelledby="wmm-spending-heading">
     <div class="wmm-section-intro"><p class="wmm-kicker">02 · FOLLOW THE MONEY</p><h2 id="wmm-spending-heading">The €133bn spending picture.</h2><p>Explore Ireland's published 2026 estimated expenditure. Your personal amounts illustrate each sector's share of the whole — they are not earmarked payments.</p></div>
     <div class="wmm-spending-layout">
-      <div class="wmm-spending-list" id="wmm-spending-list" aria-live="polite"></div>
+      <div class="wmm-spending-list" id="wmm-spending-list" aria-live="polite">
+        {% for c in spending.categories %}
+        <div class="wmm-spend-row"><span class="wmm-spend-row-head"><strong>{{ c.name }}</strong><strong>€{{ "%.1f"|format(c.billion) }}bn</strong></span><span class="wmm-spend-row-foot">2026 published estimate · <a href="{{ c.source }}">Source ↗</a></span></div>
+        {% endfor %}
+      </div>
       <aside class="wmm-spending-detail" id="wmm-spending-detail" aria-live="polite">
         <p class="wmm-kicker">SELECT A SECTOR</p><h3 id="wmm-sector-name">Healthcare</h3>
         <div class="wmm-sector-metrics"><div><span>National estimate</span><strong id="wmm-sector-national">—</strong></div><div><span>Your proportional equivalent</span><strong id="wmm-sector-personal">—</strong></div></div>
