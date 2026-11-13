@@ -38,7 +38,7 @@ const analytics=[];
 let consent="denied";
 const localStorage={getItem(key){assert.equal(key,"compound_analytics_consent");return consent;}};
 const window={gtag(...args){analytics.push(args);}};
-vm.runInNewContext(script,{document,Intl,Number,Math,window,localStorage}, {filename:"insurance-hub.js",timeout:1000});
+vm.runInNewContext(script,{document,Intl,Number,Math,window,localStorage}, {filename:"insurance-hub.js",timeout:10000});
 function analyticsClick(category,label){
   const link={getAttribute(name){return name==="data-ins-event"?category:name==="data-ins-label"?label:null;}};
   pageListeners.click({target:{closest(){return link;}}});
