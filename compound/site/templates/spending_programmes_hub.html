@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block head_title %}Irish Government Programme Spending 2026: 49 Allocations Explained | Compound{% endblock %}
+{% block meta %}<meta name="description" content="Explore 49 verified 2026 Irish budget programmes and allocations, with in-house spending charts across health, housing, education, social protection and more.">{% endblock %}
+{% block head %}
+<link rel="canonical" href="{{ site_url }}/wheres-my-money/spending/programmes/">
+<link rel="alternate" type="application/json" href="{{ site_url }}/wheres-my-money/spending/programmes/index.json">
+<meta property="og:type" content="website"><meta property="og:title" content="Irish Government Programme Spending 2026 | Compound"><meta property="og:description" content="Search source-linked 2026 public programme allocations and explore every one on Compound.">
+<link rel="stylesheet" href="/static/spending-explorer.css?v=20261113-programmes1">
+<script defer src="/static/spending-explorer.js?v=20261113-programmes1"></script>
+<script type="application/ld+json">{{ schema|tojson }}</script>
+{% endblock %}
+{% block content %}
+<div class="wmex wmex-programmes">
+<header class="wmex-hero">
+  <nav class="wmex-breadcrumb" aria-label="Breadcrumb"><a href="/">Compound</a><span>/</span><a href="/wheres-my-money/">Where's My Money?</a><span>/</span><a href="/wheres-my-money/spending/">Spending atlas</a><span>/</span><span>Programmes</span></nav>
+  <p class="wmex-eyebrow">IN-HOUSE SPENDING EXPLORER · 2026</p>
+  <h1>What are individual public programmes funded to do?</h1>
+  <p class="wmex-lead">Start with {{ spending.programme_count }} published funding figures. Compare identified allocations across government, open a dedicated explanation of every programme, and trace each figure to an original public document.</p>
+  <div class="wmex-hero-metrics">
+    <div><span>Individual records</span><strong>{{ spending.programme_count }}</strong></div>
+    <div><span>Spending sectors</span><strong>8</strong></div>
+    <div><span>Reporting year</span><strong>2026</strong></div>
+  </div>
+  <p class="wmex-hero-foot">Some records are nested within others, or are additional Budget measures. They must not be added together or compared directly with whole-sector budgets.</p>
+</header>
+<nav class="wmex-page-nav" aria-label="Spending navigation">
+  <a href="/wheres-my-money/spending/">All sectors</a>
+  <a href="/wheres-my-money/">Personal tax receipt</a>
+  <a href="#programme-search">Search programmes</a>
+  <a href="#programme-method">Method and sources</a>
+</nav>
+<section class="wmex-section" aria-labelledby="wmex-programme-head" id="programme-search">
+  <div class="wmex-section-heading"><p class="wmex-eyebrow">01 / PROGRAMME FINDER</p><h2 id="wmex-programme-head">Explore allocations by purpose.</h2>
+    <p>These figures are drawn from official department announcements, approved Estimates, budget plans and forecasts. Different funding boundaries are labelled rather than combined.</p>
+  </div>
+  <label class="wmex-search-label" for="wmex-programme-query">Find a government programme</label>
+  <input class="wmex-search-input" type="search" id="wmex-programme-query" data-programme-search placeholder="Try pensions, Garda, childcare, roads, mental health..." autocomplete="off">
+  <p class="wmex-chart-note" data-programme-count role="status" aria-live="polite">{{ spending.programme_count }} identified allocations across eight sectors</p>
+  {% for c in spending.categories %}
+  <section class="wmex-programme-group" data-programme-group id="programmes-{{ c.id }}">
+    <div class="wmex-programme-group-title"><h3>{{ c.name }}</h3><a href="{{ c.url }}">Sector overview &rarr;</a></div>
+    <div class="wmex-programme-grid">
+    {% for p in c.programmes %}
+      <a class="wmex-programme-card" href="{{ p.url }}" data-programme-card data-programme-text="{{ (p.title ~ ' ' ~ p.description ~ ' ' ~ c.name)|lower }}">
+        <span class="wmex-prog-type">{{ p.kind }}</span>
+        <strong>{{ p.title }}</strong>
+        <span class="wmex-prog-amount">{{ p.amount_label }}</span>
+        <span class="wmex-prog-track" aria-hidden="true"><span style="width:{{ "%.3f"|format(p.bar_width) }}%"></span></span>
+        <span class="wmex-prog-desc">{{ p.description }}</span>
+        {% if p.parent_record %}<span class="wmex-prog-relation">Part of: {{ p.parent_record.title }}</span>{% endif %}
+        <span class="wmex-programme-more">View the source and calculation boundary &rarr;</span>
+      </a>
+    {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+  <p class="wmex-validation" data-programme-empty hidden>No matching programmes. Try another keyword or browse the sectors above.</p>
+</section>
+<section class="wmex-section wmex-warm" id="programme-method">
+  <div class="wmex-section-heading"><p class="wmex-eyebrow">02 / HOW TO READ THIS DATABASE</p><h2>Only count what can be counted once.</h2></div>
+  <div class="wmex-method-grid">
+    <article><h3>Different financial scopes</h3><p>A sector-wide estimate may include many departmental programmes. A programme amount can in turn contain smaller sub-programmes. The entries above are not an additive breakdown of all government spending.</p></article>
+    <article><h3>Budgets versus spending</h3><p>Most entries are 2026 estimates or allocations, not audited spending. Some represent additional Budget measures, and central charges are projections. Each page identifies its own basis.</p></article>
+    <article><h3>Why amounts may overlap</h3><p>Housing current and capital envelopes are parts of its programme total, while Child Benefit is included within broader family payments. For these cases, individual pages explain the connection.</p></article>
+    <article><h3>Original charts and sources</h3><p>Compound builds the charts locally from the source-linked data. Official websites are cited for verification, rather than being used as the destination for an interactive chart.</p></article>
+  </div>
+  <a class="wmex-primary-link" href="/wheres-my-money/spending/">See the complete eight-sector spending picture &rarr;</a>
+</section>
+</div>
+{% endblock %}

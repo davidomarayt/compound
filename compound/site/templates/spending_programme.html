@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block head_title %}{{ programme.title }}: 2026 Irish Funding Explained | Compound{% endblock %}
+{% block meta %}<meta name="description" content="{{ programme.title }} funding in Ireland 2026: {{ programme.amount_label }}. Understand the allocation, what it supports, its limits and the official source.">{% endblock %}
+{% block head %}
+<link rel="canonical" href="{{ site_url }}{{ programme.url }}">
+<meta property="og:type" content="article"><meta property="og:title" content="{{ programme.title }} | Ireland 2026 funding"><meta property="og:description" content="{{ programme.amount_label }} — {{ programme.kind }}. Explained with official sources on Compound."><meta property="og:url" content="{{ site_url }}{{ programme.url }}">
+<link rel="stylesheet" href="/static/spending-explorer.css?v=20261113-programmes1">
+<script type="application/ld+json">{{ schema|tojson }}</script>
+{% endblock %}
+{% block content %}
+<article class="wmex wmex-programme-detail">
+  <header class="wmex-hero wmex-detail-hero">
+    <nav class="wmex-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Compound</a><span>/</span><a href="/wheres-my-money/">Where's My Money?</a><span>/</span>
+      <a href="/wheres-my-money/spending/">Spending</a><span>/</span>
+      <a href="{{ programme.sector_url }}">{{ programme.sector_name }}</a><span>/</span>
+      <span aria-current="page">{{ programme.title }}</span>
+    </nav>
+    <p class="wmex-eyebrow">2026 FUNDING EXPLAINED · {{ programme.sector_name|upper }}</p>
+    <h1>{{ programme.title }}: where the money goes</h1>
+    <p class="wmex-lead">{{ programme.description }}</p>
+    <div class="wmex-hero-metrics wmex-programme-hero-metrics">
+      <div><span>Published 2026 amount</span><strong>{{ programme.amount_label }}</strong></div>
+      <div><span>Reporting basis</span><strong class="wmex-hero-type">{{ programme.kind }}</strong></div>
+      <div><span>Budget year</span><strong>2026</strong></div>
+    </div>
+    <p class="wmex-hero-foot">{{ programme.reporting_basis_note }}</p>
+  </header>
+  <nav class="wmex-page-nav" aria-label="Programme sections">
+    <a href="#what-it-funds">What it funds</a><a href="#how-to-read">Interpretation</a><a href="#comparisons">Other allocations</a><a href="#programme-sources">Original source</a>
+  </nav>
+
+  <section class="wmex-section" id="what-it-funds" aria-labelledby="wmex-what-heading">
+    <div class="wmex-section-heading"><p class="wmex-eyebrow">01 / UNDERSTAND THE ALLOCATION</p><h2 id="wmex-what-heading">What does this amount cover?</h2>
+      <p>{{ programme.description }}</p>
+    </div>
+    <div class="wmex-programme-analysis">
+      <div class="wmex-programme-main">
+        <p class="wmex-analysis-label">2026 published amount</p>
+        <p class="wmex-analysis-amount">{{ programme.amount_label }}</p>
+        <p><strong>Basis:</strong> {{ programme.kind }}. This is recorded under {{ programme.sector_name|lower }} for navigation, but the programme's accounting scope may be narrower than the complete sector shown elsewhere.</p>
+        {% if programme.parent_record %}
+        <p class="wmex-programme-parent">Contained within <a href="{{ programme.parent_record.url }}">{{ programme.parent_record.title }}</a>. The two figures must not be added together as separate costs.</p>
+        {% else %}
+        <p>Related allocations can share funding sources or be calculated using different accounting definitions. The presence of another number on this site does not make the pair additive.</p>
+        {% endif %}
+      </div>
+      <aside class="wmex-interpretation">
+        <h3>What not to conclude</h3>
+        <p>{{ programme.limitation }}</p>
+        <p>Budget statements describe planned provision. Actual delivery and final expenditure need separate dated evidence.</p>
+      </aside>
+    </div>
+  </section>
+  <section class="wmex-section wmex-warm" id="how-to-read" aria-labelledby="wmex-read-heading">
+    <div class="wmex-section-heading"><p class="wmex-eyebrow">02 / DEFINITIONS MATTER</p><h2 id="wmex-read-heading">Is this really what the State spent?</h2></div>
+    <div class="wmex-method-grid">
+      <article><h3>An allocation, not a receipt</h3><p>{{ programme.reporting_basis_note }} A funding announcement does not confirm every euro was spent or that every announced measure was delivered.</p></article>
+      <article><h3>Scope and overlap</h3><p>{{ programme.limitation }} To construct a fully reconciled spending tree we would need the compatible underlying voted and non-voted expenditure returns.</p></article>
+      <article><h3>Why this sits in {{ programme.sector_name }}</h3><p>The programme is mapped to this sector so visitors can explore it alongside related public services, regardless of which government department currently administers it.</p></article>
+      <article><h3>Getting to an outcome</h3><p>Money allocated to a service should be considered alongside reported activity, eligibility, capacity and delivery targets. A larger budget alone cannot establish better results.</p></article>
+    </div>
+    <a class="wmex-primary-link" href="{{ programme.sector_url }}">Explore {{ programme.sector_name|lower }} spending &rarr;</a>
+  </section>
+  <section class="wmex-section" id="comparisons" aria-labelledby="wmex-compare-heading">
+    <div class="wmex-section-heading"><p class="wmex-eyebrow">03 / KEEP EXPLORING</p><h2 id="wmex-compare-heading">Related published funding amounts.</h2>
+      <p>These are selected allocations connected by purpose, <strong>not an additive breakdown</strong>. Some are parts of others, and some are current, capital or additional Budget measures. Open each page to check the exact boundary.</p></div>
+    <div class="wmex-programme-grid">
+    {% for item in programme.siblings %}
+      <a class="wmex-programme-card wmex-programme-related" href="{{ item.url }}"><span>2026 programme</span><strong>{{ item.title }}</strong><span class="wmex-prog-amount">{{ item.amount_label }}</span><span class="wmex-programme-more">Explore this amount &rarr;</span></a>
+    {% endfor %}
+    </div>
+    <div class="wmex-links wmex-programme-links">
+      <a href="/wheres-my-money/spending/programmes/">Search all {{ spending.programme_count }} allocations &rarr;</a>
+      <a href="/wheres-my-money/spending/">Browse all eight sectors &rarr;</a>
+      <a href="/wheres-my-money/#your-receipt">Calculate your annual tax receipt &rarr;</a>
+    </div>
+  </section>
+  <section class="wmex-section wmex-warm" id="programme-sources" aria-labelledby="wmex-source-heading">
+    <div class="wmex-section-heading"><p class="wmex-eyebrow">04 / TRACE THE FIGURE</p><h2 id="wmex-source-heading">Official source and methodological limits.</h2></div>
+    <div class="wmex-source-note wmex-programme-source">
+      <h3>Source document</h3>
+      <p><a href="{{ programme.source }}" target="_blank" rel="noopener noreferrer">{{ programme.source_label }} &rarr;</a>. The amount is shown in the underlying document; Compound hosts its own explanation and navigation rather than embedding the source's charts.</p>
+      <p><strong>Year:</strong> {{ programme.year }}. <strong>Basis:</strong> {{ programme.kind }}. <strong>Displayed amount:</strong> {{ programme.amount_label }}. <strong>Last verified:</strong> {{ spending.programme_updated }}.</p>
+      <p>{{ programme.limitation }} Published programme funding may differ from the sector total because of timing, accounting scope or transfers of functions. The selected amounts are not summed or subtracted to invent a remainder.</p>
+    </div>
+  </section>
+</article>
+{% endblock %}
