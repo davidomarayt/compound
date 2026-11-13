@@ -1,4 +1,14 @@
 {% extends "base.html" %}
+{# One site-wide AdSense loader is already supplied by base.html.
+   Placeholders are populated only while visible; the third is desktop-only. #}
+{% macro wmm_ad(position, slot, desktop_only=false) %}
+{% if adsense.client and slot and (ads_allowed is not defined or ads_allowed) %}
+<aside class="wmm-ad{% if desktop_only %} wmm-ad-desktop-only{% endif %}" aria-label="Advertisement" data-wmm-ad-slot="{{ slot }}" data-wmm-ad-client="{{ adsense.client }}" data-wmm-ad-position="{{ position }}">
+  <span class="wmm-ad-label">Advertisement</span>
+  <div class="wmm-ad-container"></div>
+</aside>
+{% endif %}
+{% endmacro %}
 {% block head_title %}Where's My Money? Irish Tax Receipt & Government Spending Explorer | Compound{% endblock %}
 {% block meta %}<meta name="description" content="Where does your tax go in Ireland? Calculate 2026 PAYE, USC and PRSI, explore public spending, compare pay scenarios and check possible tax reliefs. Free and private.">{% endblock %}
 {% block head %}
@@ -6,6 +16,7 @@
 <meta property="og:type" content="website"><meta property="og:title" content="Where's My Money? Your Irish tax receipt"><meta property="og:description" content="Understand what you pay, what it could fund, and what might change for you."><meta property="og:url" content="{{ site_url }}/wheres-my-money/"><meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="/static/wheres-my-money.css?v=20261113-1">
 <script defer src="/static/wheres-my-money.js?v=20261113-1"></script>
+<script defer src="/static/wheres-my-money-ads.js?v=20261113-1"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Where's My Money?","description":"2026 Irish personal tax receipt and public spending explorer","url":"{{ site_url }}/wheres-my-money/","applicationCategory":"FinanceApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}}</script>
 {% endblock %}
 {% block content %}
@@ -92,6 +103,8 @@
     <p class="wmm-notice">This is an educational estimate, not a payslip or tax assessment. It does not trace your particular tax payments to government programmes. See <a href="#method">assumptions and sources</a>.</p>
   </section>
 
+  {{ wmm_ad("after-receipt", adsense.slots.wmm_receipt) }}
+
   <section id="spending" class="wmm-section wmm-section-cream" aria-labelledby="wmm-spending-heading">
     <div class="wmm-section-intro"><p class="wmm-kicker">02 · FOLLOW THE MONEY</p><h2 id="wmm-spending-heading">The €133bn spending picture.</h2><p>Explore Ireland's published 2026 estimated expenditure. Your personal amounts illustrate each sector's share of the whole — they are not earmarked payments.</p></div>
     <div class="wmm-spending-layout">
@@ -111,6 +124,8 @@
       </aside>
     </div>
   </section>
+
+  {{ wmm_ad("after-spending", adsense.slots.wmm_spending) }}
 
   <section id="what-if" class="wmm-section" aria-labelledby="wmm-whatif-heading">
     <div class="wmm-section-intro"><p class="wmm-kicker">03 · PERSONAL DECISIONS</p><h2 id="wmm-whatif-heading">What if your pay changed?</h2><p>Compare an annual salary increase with your current household scenario. See the extra take-home pay, not just the headline rise.</p></div>
@@ -135,6 +150,8 @@
       <p class="wmm-help">Transfers hold the headline total constant. They do not alter actual budgets, create automatic savings or predict delivery outcomes.</p>
     </div>
   </section>
+
+  {{ wmm_ad("after-budget", adsense.slots.wmm_budget, true) }}
 
   <section id="reliefs" class="wmm-section" aria-labelledby="wmm-reliefs-heading">
     <div class="wmm-section-intro"><p class="wmm-kicker">05 · MONEY TO CHECK</p><h2 id="wmm-reliefs-heading">Could you be missing a relief?</h2><p>Select circumstances that apply. We'll point you towards official guidance — never claim an entitlement without checking eligibility.</p></div>
