@@ -23,7 +23,7 @@
     <p class="wmex-hero-foot">Expenditure estimates — not confirmed final outturn. Source checked {{ spending.updated }}.</p>
   </header>
 
-  <nav class="wmex-page-nav" aria-label="Explore {{ sector.name }}"><a href="#trend">Spending chart</a><a href="#explained">What it covers</a><a href="#programmes">Verified allocations</a><a href="#receipt">Your tax allocation</a><a href="#questions">FAQs</a><a href="#other-sectors">Other sectors</a></nav>
+  <nav class="wmex-page-nav" aria-label="Explore {{ sector.name }}"><a href="#trend">Spending chart</a><a href="#explained">What it covers</a><a href="#programmes">Verified allocations</a><a href="#votes">Departmental Votes</a><a href="#receipt">Your tax allocation</a><a href="#questions">FAQs</a><a href="#other-sectors">Other sectors</a></nav>
 
   <section class="wmex-section" id="trend" aria-labelledby="wmex-trend-title">
     <div class="wmex-section-heading"><p class="wmex-eyebrow">01 / FIGURES IN CONTEXT</p><h2 id="wmex-trend-title">{{ sector.name }}: spending over time</h2><p>{{ sector.intro }}</p></div>
@@ -81,6 +81,21 @@
     </div>
     <p class="wmex-chart-note">Bar lengths indicate the relative size of the amounts <em>in this selected set only</em>. They do not represent a complete or mutually exclusive spending breakdown. Each linked programme page identifies the source, status and any overlap.</p>
     <a class="wmex-primary-link" href="/wheres-my-money/spending/programmes/">Browse all {{ spending.programme_count }} verified allocations &rarr;</a>
+  </section>
+
+  <section class="wmex-section wmex-warm" id="votes" aria-labelledby="wmex-votes-sector-heading">
+    <div class="wmex-section-heading">
+      <p class="wmex-eyebrow">DEPARTMENTAL ACCOUNTING · 2026</p>
+      <h2 id="wmex-votes-sector-heading">What were the 2026 net supply grants?</h2>
+      <p>For this sector, the following Dáil Vote authorisations are listed separately from the gross €{{ "%.1f"|format(sector.billion) }}bn sector estimate. Net grants are not extra money to add to the figure above, and a Vote may span several public services.</p>
+    </div>
+    <div class="wmex-links">
+    {% for vote in spending.votes if vote.sector == sector.id and vote.detail %}
+      <a href="{{ vote.url }}">Vote {{ vote.number }}: {{ vote.title }} · {{ vote.amount_display }} &rarr;</a>
+    {% endfor %}
+      <a href="/wheres-my-money/spending/votes/">Explore all {{ spending.vote_count }} Dáil Votes and definitions &rarr;</a>
+    </div>
+    <p class="wmex-chart-note">Exact net voted supply grants from 25 March 2026 are a different accounting basis from gross spending and are not a reconciled sector subhead split.</p>
   </section>
 
   <section class="wmex-section" id="receipt" aria-labelledby="wmex-receipt-title">
