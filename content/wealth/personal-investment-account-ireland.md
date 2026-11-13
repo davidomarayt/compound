@@ -73,6 +73,8 @@ But there is an important caveat at the outset: **the Personal Investment Accoun
 <a href="#pia-faq">FAQ</a>
 </nav>
 
+<p><strong>Choose your next PIA step:</strong> <a href="/pia/">start at the PIA Centre</a>, <a href="/pia-calculator/">model growth and the proposed charge</a>, <a href="/pia/vs-pension/">compare PIA with a pension</a>, <a href="/pia/investment-eligibility/">check an ETF or share</a>, or <a href="/pia/providers/">check verified provider announcements</a>. Provider fees and final product details may still change.</p>
+
 <p class="pia-status"><strong>Last checked: 6 October 2026.</strong> This page separates what Budget 2027 has announced from details that still depend on the Finance Bill. We will update it as the legislation and provider terms are published.</p>
 
 <h2 id="pia-at-a-glance">Personal Investment Account Ireland: the rules at a glance</h2>

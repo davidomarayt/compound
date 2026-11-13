@@ -20,6 +20,6 @@ Start with the **ISIN**, the identifier for the precise share class. Two funds t
 
 For a US share, give the provider the company name, exchange and share class. Ask for written confirmation of availability inside its Irish investment account and the cost of trading in dollars. An announcement that a provider intends to launch gives no assurance about an individual ticker.
 
-[Compare provider announcements](/pia/providers/) and [work out the euro cost of fees](/pia/compare-fee-quotes/).
+[Compare provider announcements](/pia/providers/), [work out the euro cost of fees](/pia/compare-fee-quotes/) or [model long-term PIA growth](/pia-calculator/). For the wider rules, start at the [PIA Centre](/pia/).
 
 [Source: Finance (No. 2) Bill 2026 as introduced, section 26, proposed section 747H, definition of eligible investment](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf#page=38).

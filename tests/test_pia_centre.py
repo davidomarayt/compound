@@ -50,6 +50,13 @@ sponsorships: []
     assert "Personal Investment Accounts in Ireland" in hub
     assert "/wealth/personal-investment-account-ireland/" in hub
     assert "/pia-calculator/" in hub
+    assert 'href="/pia/vs-pension/"' in hub
+    assert 'href="/pia/daily-valuation/"' in hub
+    assert 'href="/pia/investment-eligibility/"' in hub
+    assert 'href="/pia/compare-fee-quotes/"' in hub
+    assert 'href="/pia/investment-eligibility/"' in compare
+    assert 'href="/pia/compare-fee-quotes/"' in compare
+    assert 'href="/pia/vs-pension/"' in compare
     assert 'aria-current="page">PIA</a>' in hub
     assert "Example Provider" in hub and "Example Provider" in compare
     assert "Not published" in compare and "https://example.com/provider" in compare

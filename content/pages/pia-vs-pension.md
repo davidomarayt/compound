@@ -5,7 +5,7 @@ meta_description: "Compare €500 a month of take-home pay in an Irish pension o
 ---
 [PIA Centre](/pia/) · Reviewed 7 November 2026. The PIA examples use the Finance Bill as introduced on 19 October 2026. The planned opening is 1 July 2027, subject to the final rules and provider readiness.
 
-**If you can spare €500 a month until retirement, that can put €625 into a pension at 20% Income Tax relief, or about €833 at 40%, before any employer match.** The same €500 of take-home pay puts €500 into the proposed Irish Individual Investment Account, often called a PIA. If you expect to spend the money before you can draw your pension, the PIA’s proposed access rules may matter more than the pension’s larger starting amount.
+**If you can spare €500 a month until retirement, that can put €625 into a pension at 20% Income Tax relief, or about €833 at 40%, before any employer match.** The same €500 of take-home pay puts €500 into the proposed Irish Personal Investment Account (PIA). If you expect to spend the money before you can draw your pension, the PIA’s proposed access rules may matter more than the pension’s larger starting amount.
 
 ## What does the same €500 buy?
 
@@ -45,6 +45,6 @@ Consider someone with €500 available each month, 20% relief, and the €100 em
 
 For your own comparison, start with the date you need the money, the employer match still available, and the tax relief you can actually claim. Then compare fees on similar investments. These examples concern voluntary employee pension contributions. Auto-enrolment has a different contribution and top-up structure.
 
-[Model your contributions in the PIA calculator](/pia-calculator/) · [See the daily valuation calculation](/pia/daily-valuation/) · [Read the pensions guide](/wealth/pensions-in-ireland/).
+**Keep exploring:** [Model a PIA scenario](/pia-calculator/) · [Understand the proposed daily-value tax](/pia/daily-valuation/) · [Compare PIA provider announcements](/pia/providers/) · [Read the pensions guide](/wealth/pensions-in-ireland/) · [Return to the PIA Centre](/pia/).
 
 **Legislative source:** [Finance (No. 2) Bill 2026 as introduced, section 26, proposed Part 27A](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf#page=37).
