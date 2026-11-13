@@ -96,7 +96,7 @@ def prepare_votes(spending: dict, register: dict) -> dict:
             {"title": other["title"], "number": other["number"],
              "url": other["url"] if other["detail"] else "/wheres-my-money/spending/votes/",
              "amount_display": other["amount_display"],
-             "detail": other["detail"], "bar_percent": other["bar_percent"]}
+             "detail": other["detail"], "bar_percent": other["net_supply_eur"] / max_amount * 100}
             for other in by_amount if other["number"] != v["number"]
             and (other["sector"] == v["sector"] or other["number"] in (37,38,31))
         ][:8]
