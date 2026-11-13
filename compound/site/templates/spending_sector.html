@@ -57,7 +57,7 @@
       <div class="wmex-topic">
         <span class="wmex-topic-number">{{ "%02d"|format(loop.index) }}</span>
         <h3>{{ theme }}</h3>
-        <p>An area to investigate within this broad sector. No unverified programme allocation is assigned to it.</p>
+        <p>{{ sector.theme_notes[loop.index0] }}</p>
       </div>
       {% endfor %}
     </div>
