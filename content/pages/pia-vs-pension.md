@@ -107,6 +107,7 @@ These are **Compound's original calculated illustrations**, not provider quotati
 **Common assumptions (held constant across all 12 scenarios):** €0 starting balance; 30 complete modelled years from age 35 to 65; 6% hypothetical annual gross return; 0.25% annual PIA investment/provider fee; 0.75% pension fee; and 12 end-of-month payments per year. A pension contribution is grossed up for the stated Income Tax relief **only up to an assumed €23,000 remaining qualifying annual contribution allowance**. The €0/€100 employer figures are *incremental monthly employer payments*, not a match already earned. Each PIA projection applies the **proposed 1% charge** to the part of its modelled **average daily account value above €50,000**, deducted annually. The pension's after-deductions illustration assumes a **25% pension lump sum capped at €200,000** and an **illustrative 20% effective deduction on the remainder**; real retirement and lump-sum taxation may be substantially different.
 
 <!-- pia-pension-examples:start -->
+
 | Take-home budget | Pension relief | Extra employer contribution | PIA after PIA charge | Pension before retirement tax | Pension after illustrative retirement deductions |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | €250/month | 20% | €0/month | €214,589 | €264,227 | €224,593 |
@@ -121,6 +122,7 @@ These are **Compound's original calculated illustrations**, not provider quotati
 | €1,000/month | 20% | €100/month | €802,470 | €1,141,460 | €953,168 |
 | €1,000/month | 40% | €0/month | €802,470 | €1,409,210 | €1,167,368 |
 | €1,000/month | 40% | €100/month | €802,470 | €1,493,762 | €1,235,010 |
+
 <!-- pia-pension-examples:end -->
 
 **How to interpret the comparison:** The PIA column represents a projected account balance *after* the modelled yearly PIA charge and fees. The pension's middle column represents the **gross invested pension**, not money that can necessarily be spent. Its final column is a simplified illustrative after-deductions amount, **not a lump-sum entitlement, tax forecast, or accessible balance before permitted retirement age**. A different pension exit-tax assumption, drawdown path, contribution allowance, provider fee or market return can materially change the comparison. These scenarios assume full modelled years and **do not model the partial launch year in 2027**.
