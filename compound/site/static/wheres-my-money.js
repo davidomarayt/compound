@@ -221,7 +221,7 @@
       ' on '+money(result.gross)+' gross PAYE pay. This is an estimate, not money traced to services. https://compound.ie/wheres-my-money/';
     var feedback=q('#wmm-share-status');
     if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(function(){feedback.textContent='Anonymous receipt copied.';})
+      navigator.clipboard.writeText(text).then(function(){feedback.textContent='Receipt summary copied (includes your entered amounts).';})
         .catch(function(){feedback.textContent='Unable to copy on this device.';});
     } else { feedback.textContent='Copying is unavailable in this browser.'; }
   });
