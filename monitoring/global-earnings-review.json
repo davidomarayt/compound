@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-12",
+  "checked": "2026-11-13",
   "companies_checked": 10,
   "companies": {
     "spcx": {
@@ -207,6 +207,16 @@
   },
   "new_review_candidates": 1,
   "pending_review": [
+    {
+      "id": "sec:1046179:0001046179-26-000801",
+      "company": "Taiwan Semiconductor Manufacturing Company (TSMC)",
+      "slug": "tsm",
+      "title": "Taiwan Semiconductor Manufacturing Company (TSMC) SEC 6-K filed 2026-11-13",
+      "filed": "2026-11-13",
+      "form": "6-K",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=1046179",
+      "source": "SEC EDGAR (requires review; not a verified earnings article)"
+    },
     {
       "id": "sec:1046179:0001046179-26-000800",
       "company": "Taiwan Semiconductor Manufacturing Company (TSMC)",
