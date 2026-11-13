@@ -1,11 +1,96 @@
 ---
 title: "PIA vs pension in Ireland: where should your next €500 go?"
 canonical_path: /pia/vs-pension/
-meta_description: "Compare €500 a month of take-home pay in an Irish pension or proposed PIA. See the effect of 20% and 40% tax relief, employer matching and access before retirement."
+meta_description: "Interactive PIA vs pension calculator for Ireland: compare the same take-home cost, pension tax relief, employer contributions, fees and retirement deductions. See the effect of 20% and 40% tax relief, employer matching and access before retirement."
 ---
-[PIA Centre](/pia/) · Reviewed 7 November 2026. The PIA examples use the Finance Bill as introduced on 19 October 2026. The planned opening is 1 July 2027, subject to the final rules and provider readiness.
+[PIA Centre](/pia/) · Calculator added 13 November 2026; article reviewed 7 November 2026. The PIA examples use the Finance Bill as introduced on 19 October 2026. The planned opening is 1 July 2027, subject to the final rules and provider readiness.
 
 **If you can spare €500 a month until retirement, that can put €625 into a pension at 20% Income Tax relief, or about €833 at 40%, before any employer match.** The same €500 of take-home pay puts €500 into the proposed Irish Personal Investment Account (PIA). If you expect to spend the money before you can draw your pension, the PIA’s proposed access rules may matter more than the pension’s larger starting amount.
+
+<section id="pia-pension-comparison" data-pia-pension-tool aria-labelledby="pia-pension-calc-title">
+<p class="pp-kicker">FREE IRELAND CALCULATOR · 2027 PROPOSAL</p>
+<h2 id="pia-pension-calc-title">PIA vs pension calculator</h2>
+<p class="pp-sub">Compare investing the <strong>same amount of take-home pay</strong> in a proposed Personal Investment Account or a pension. Explore qualifying pension tax relief, extra employer contributions, fees and illustrative retirement deductions. All figures stay in your browser.</p>
+<noscript><p>This calculator requires JavaScript. The worked examples and source links below remain available.</p></noscript>
+<div class="pp-layout">
+<form class="pp-form" data-pp-form>
+<fieldset>
+<legend>Start with your money</legend>
+<label>Monthly take-home budget (€)
+<input name="monthly_net" type="number" min="0" max="1000" step="10" value="500" required>
+<small>€1,000/month maximum reflects the proposed €12,000 annual PIA contribution limit.</small></label>
+<label>Years to invest
+<input name="years" type="number" min="1" max="40" step="1" value="30" required></label>
+<label>Your current age
+<input name="current_age" type="number" min="18" max="75" step="1" value="35" required></label>
+<label>Income Tax relief on qualifying pension contributions
+<select name="relief_rate"><option value="0">0% — none available</option><option value="20">20%</option><option value="40" selected>40%</option></select>
+<small>Choose the rate genuinely available on your next contribution, not automatically your highest tax bracket.</small></label>
+<label>Remaining qualifying pension contribution allowance per year (€)
+<input name="relief_headroom" type="number" min="0" max="100000" step="500" value="10000" required>
+<small>Enter the contribution headroom left after any existing personal/employee contributions. Assumed unchanged each year. <a href="/pension-tax-relief-calculator/">Check Revenue age-related limits</a>.</small></label>
+<label>Extra employer pension contribution per month (€)
+<input name="extra_employer" type="number" min="0" max="10000" step="10" value="0" required>
+<small>Include only an additional employer contribution actually triggered by this choice, not employer payments you already receive.</small></label>
+</fieldset>
+<details class="pp-advanced">
+<summary>Advanced: returns, fees &amp; retirement tax assumptions</summary>
+<div class="pp-extra">
+<label>Annual investment return before fees (%)
+<input name="return_rate" type="number" min="-20" max="30" step="0.5" value="6" required></label>
+<label>PIA annual investment/provider fee (%)
+<input name="pia_fee" type="number" min="0" max="5" step="0.05" value="0.25" required></label>
+<label>Pension annual investment/provider fee (%)
+<input name="pension_fee" type="number" min="0" max="5" step="0.05" value="0.75" required></label>
+<label>Illustrative pension tax-free lump sum (%)
+<input name="tax_free_lump_pct" type="number" min="0" max="25" step="5" value="25" required>
+<small>Not every pension is entitled to 25% of its fund. Scheme rules apply.</small></label>
+<label>Remaining lifetime tax-free retirement lump-sum allowance (€)
+<input name="tax_free_cap" type="number" min="0" max="200000" step="5000" value="200000" required>
+<small>€200,000 is the general current lifetime maximum across relevant pension lump sums; reduce for previous use.</small></label>
+<label>Assumed effective deduction from the rest of the pension (%)
+<input name="retirement_tax_rate" type="number" min="0" max="60" step="5" value="20" required>
+<small>Illustrative flat exit deduction, <strong>not</strong> the statutory calculation of drawdowns, ARF withdrawals, lump sums or PAYE/USC.</small></label>
+</div>
+</details>
+<p class="pp-error" role="alert" data-pp-error></p>
+<button type="submit">Update comparison</button>
+</form>
+<div class="pp-right">
+<div class="pp-results" aria-live="polite">
+<div class="pp-tile pp-primary"><span>Projected PIA balance</span><strong data-pp-result="pia">—</strong></div>
+<div class="pp-tile pp-primary"><span>Projected pension before retirement tax</span><strong data-pp-result="pension">—</strong></div>
+<div class="pp-tile"><span>Pension after illustrative retirement deductions</span><strong data-pp-result="pension-net">—</strong></div>
+<div class="pp-tile"><span>PIA tax modelled over the period</span><strong data-pp-result="pia-tax">—</strong></div>
+</div>
+<p class="pp-explainer" data-pp-explanation aria-live="polite"></p>
+<div class="pp-chart-box">
+<h3>Balance growth over time</h3>
+<div class="pp-chart" data-pp-chart></div>
+<p class="pp-legend"><span>PIA after annual PIA charge</span><span>Pension before retirement tax</span></p>
+</div>
+<div class="pp-breakdown">
+<h3>Where the same take-home budget goes</h3>
+<dl>
+<dt>Your annual take-home cost</dt><dd data-pp-result="cost">—</dd>
+<dt>Annual employee pension contribution</dt><dd data-pp-result="employee-pension">—</dd>
+<dt>Annual Income Tax relief assumed</dt><dd data-pp-result="relief">—</dd>
+<dt>Extra annual employer contribution</dt><dd data-pp-result="employer">—</dd>
+<dt>Your total take-home cost over period</dt><dd data-pp-result="total-cost">—</dd>
+<dt>Modelled tax-free pension lump sum</dt><dd data-pp-result="exit-lump">—</dd>
+<dt>Your age at comparison date</dt><dd data-pp-result="year-age">—</dd>
+</dl>
+</div>
+<p class="pp-warning" data-pp-access aria-live="polite"></p>
+<div class="pp-breakdown pp-year-table">
+<h3>Year-by-year reference values</h3>
+<table><thead><tr><th scope="col">Period</th><th scope="col">PIA balance</th><th scope="col">Gross pension</th></tr></thead><tbody data-pp-year-rows></tbody></table>
+</div>
+</div>
+</div>
+<p class="pp-disclaimer"><strong>Method:</strong> Illustrative 365-day years, 12 end-of-month contributions, identical smooth investment returns, separate annual fees applied daily, and a 1% proposed PIA charge on each year's average daily closing value above €50,000, deducted at year-end. Pension tax relief is limited by the headroom entered; no employer contribution is assumed unless entered. The pension withdrawal illustration uses the entered free-lump assumption and one effective deduction on the remainder; it does not model the actual tax timing or drawdown sequence. Existing balances, market volatility, annual contribution-limit changes, inflation, eligibility nuances, and the PIA's partial launch year are excluded. The PIA remains proposed, not a live product. These are scenarios, not advice or guaranteed returns. <a href="/pia/daily-valuation/">How the proposed PIA tax works</a> · <a href="/pia/providers/">Provider tracker</a>.</p>
+</section>
+
 
 ## What does the same €500 buy?
 
