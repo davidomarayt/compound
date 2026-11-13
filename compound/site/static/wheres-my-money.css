@@ -114,3 +114,38 @@
 @media(max-width:880px){.wmm-hero-grid,.wmm-workspace,.wmm-spending-layout{grid-template-columns:1fr}.wmm-hero{padding-bottom:43px}.wmm-hero-graphic{max-width:none}.wmm-spending-detail{position:static}.wmm-budget-inputs{grid-template-columns:1fr 1fr}.wmm-budget-inputs>div:last-child{grid-column:1/-1}.wmm-link-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.wmm-hero{margin:0;border-radius:0;padding:18px 20px 40px}.wmm-crumb{margin-bottom:43px}.wmm h1{font-size:60px}.wmm-hero-graphic strong{font-size:60px}.wmm-subnav{margin:0 16px;gap:21px}.wmm-section{padding:56px 18px}.wmm-section-intro h2{font-size:39px}.wmm-input-card,.wmm-results,.wmm-feature-panel,.wmm-spending-detail{padding:22px 18px}.wmm-results-top{margin-bottom:25px}.wmm-total{font-size:59px}.wmm-whatif-controls{gap:12px}.wmm-whatif-controls output{font-size:23px}.wmm-whatif-result,.wmm-relief-grid,.wmm-method-grid,.wmm-link-grid{grid-template-columns:1fr}.wmm-whatif-result{gap:7px}.wmm-whatif-result div{padding-top:11px}.wmm-budget-inputs,.wmm-budget-result{grid-template-columns:1fr}.wmm-budget-total{grid-column:1}.wmm-sector-metrics{grid-template-columns:1fr 1fr}.wmm-spend-row-head{font-size:13px}.wmm-hero-actions{flex-direction:column;align-items:stretch}}
 @media(prefers-reduced-motion:reduce){.wmm *{scroll-behavior:auto!important;transition:none!important}}
+
+/* Display ads live between sections only, never alongside inputs or results.
+   Space is reserved for the ad creative to minimise layout shift. */
+.wmm-ad{
+  margin:0 3.5vw;
+  padding:24px clamp(18px,4vw,48px) 26px;
+  border-top:1px solid #e1d9cf;
+  border-bottom:1px solid #e1d9cf;
+  background:#f8f6f1;
+  text-align:center;
+  min-height:304px;
+}
+.wmm-ad-label{
+  display:block;
+  font-size:10px;
+  line-height:18px;
+  font-weight:500;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:#736b6c;
+  margin-bottom:14px;
+}
+.wmm-ad-container{
+  margin-inline:auto;
+  width:100%;
+  max-width:970px;
+  min-height:244px;
+}
+.wmm-ad-container .adsbygoogle{display:block;max-width:100%}
+@media(max-width:760px){
+  .wmm-ad{margin:0 16px;padding:20px 12px 24px;min-height:244px}
+  .wmm-ad-container{min-height:196px}
+  .wmm-ad-desktop-only{display:none!important}
+}
+@media(max-width:440px){.wmm-ad{margin:0 8px;padding-inline:10px}}
