@@ -63,13 +63,40 @@ def prepare_votes(spending: dict, register: dict) -> dict:
         raise ValueError("Not enough useful detailed vote pages")
     by_amount = sorted(raw, key=lambda x: x["net_supply_eur"], reverse=True)
     max_amount = max(v["net_supply_eur"] for v in raw)
+    # These cross-links are topical pointers, NOT formal REV subhead assignments.
+    links = {
+        20: ["garda-pay", "garda-pensions-gratuities", "garda-non-pay-operations", "garda-capital"],
+        21: ["prisons-capital"],
+        22: ["courts-capital"],
+        24: ["justice-capital-plan"],
+        29: [],
+        30: ["agriculture-budget", "acres-farm-environment", "sheep-welfare-scheme"],
+        31: ["transport-capital", "transport-current", "public-transport-pso",
+             "roads-road-safety", "active-travel-greenways"],
+        34: ["housing-programme", "housing-programme-capital", "housing-programme-current",
+             "homeless-services", "residential-tenancies-board-services"],
+        37: ["state-pension-payments", "working-age-income-supports", "children-family-payments",
+             "child-benefit", "illness-disability-carers-payments"],
+        38: ["mental-health-services", "hse-buildings-equipment",
+             "hse-digital-health-capital"],
+        40: ["disability-services", "early-learning-childcare", "tusla-child-welfare"],
+        44: ["school-building-capital"],
+    }
+    programme_by_slug = {p["slug"]: p for p in spending.get("programmes", [])}
+    for v in raw:
+        v["related_programmes"] = [
+            programme_by_slug[k] for k in links.get(v["number"], [])
+            if k in programme_by_slug
+        ]
+        if len(v["related_programmes"]) > 6:
+            raise ValueError("Too many unrelated programme links")
     for v in raw:
         v["bar_percent"] = v["net_supply_eur"] / max_amount * 100
         v["other_votes"] = [
             {"title": other["title"], "number": other["number"],
              "url": other["url"] if other["detail"] else "/wheres-my-money/spending/votes/",
              "amount_display": other["amount_display"],
-             "detail": other["detail"]}
+             "detail": other["detail"], "bar_percent": other["bar_percent"]}
             for other in by_amount if other["number"] != v["number"]
             and (other["sector"] == v["sector"] or other["number"] in (37,38,31))
         ][:8]
