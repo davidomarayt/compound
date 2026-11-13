@@ -90,7 +90,7 @@
     var v = values(), issue = validate(v);
     error.hidden = !issue;
     error.textContent = issue;
-    if (issue) return;
+    if (issue) { result = null; showText('#wmm-total','—'); q('#wmm-share').disabled = true; return; }\n    q('#wmm-share').disabled = false;
     result = calcHousehold(v);
     showText('#wmm-total',money(result.payroll));
     showText('#wmm-percent',(result.rate*100).toFixed(1)+'% of gross pay');
