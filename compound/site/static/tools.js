@@ -2181,7 +2181,16 @@
 
   document.querySelectorAll('[data-calculator]').forEach(root => {
     const form=root.querySelector('[data-tool-form]'), error=root.querySelector('[data-tool-error]');
-    const run=(showErrors=true)=>{
+    const isPia=root.dataset.toolName==='pia-calculator';
+    // Only aggregate event names and a fixed tool identifier are sent; no amounts or scenario URLs.
+    const trackPia=(eventName)=>{
+      if(!isPia || typeof window.gtag!=='function') return;
+      try{
+        if(localStorage.getItem('compound_analytics_consent')!=='granted') return;
+      }catch(err){return;}
+      window.gtag('event',eventName,{tool_name:'pia-calculator'});
+    };
+    const run=(showErrors=true,trackInteraction=false)=>{
       const values={}; let invalid=false, invalidField=null, invalidMessage='';
       root.querySelectorAll('[data-field]').forEach(el=>el.removeAttribute('aria-invalid'));
       root.querySelectorAll('[data-field]').forEach(el=>{
@@ -2227,7 +2236,23 @@
         renderInsights(root,buildInsights(root.dataset.calculator,values));
         renderScenarioSummary(values);
         renderSavedComparison();
-        if(window.gtag) window.gtag('event','tool_calculate',{tool_name:root.dataset.toolName});
+        if(isPia){
+          if(trackInteraction){
+            trackPia('pia_calculate');
+            // A comparison is counted only once per distinct changed scenario after saving.
+            if(savedScenario){
+              const signature=JSON.stringify(Object.assign(
+                Object.fromEntries([...root.querySelectorAll('[data-field]')].map(el=>[
+                  el.dataset.field,el.type==='checkbox'?el.checked:el.value
+                ])),{__advanced:root.dataset.advancedMode==='true'}
+              ));
+              if(signature!==savedScenario.signature && signature!==lastComparedSignature){
+                lastComparedSignature=signature;
+                trackPia('pia_compare');
+              }
+            }
+          }
+        }else if(window.gtag) window.gtag('event','tool_calculate',{tool_name:root.dataset.toolName});
       }catch(e){ if(showErrors) error.textContent='This combination could not be calculated. Check the values and try again.'; }
     };
     const decodeScenario = () => {
@@ -2326,7 +2351,7 @@
       });
       selectPiaPreset(button);
       syncVisibility();
-      run(false);
+      run(false,true);
       if(piaPresetStatus) piaPresetStatus.textContent='Example loaded. Results updated; edit any number to personalise it.';
     }));
     const clearPiaPreset=()=>{
@@ -2335,8 +2360,8 @@
     };
     if(form){
       let inputTimer=null;
-      form.addEventListener('submit',e=>{e.preventDefault();run(true);});
-      form.addEventListener('change',()=>{clearPiaPreset();syncVisibility();run(false);});
+      form.addEventListener('submit',e=>{e.preventDefault();run(true,isPia);});
+      form.addEventListener('change',()=>{clearPiaPreset();syncVisibility();run(false,isPia);});
       form.addEventListener('input',()=>{clearPiaPreset();clearTimeout(inputTimer);inputTimer=setTimeout(()=>{syncVisibility();run(false);},180);});
       form.addEventListener('reset',()=>setTimeout(()=>{
         root.dataset.advancedMode='false';
@@ -2351,6 +2376,7 @@
     const comparePanel=root.querySelector('[data-tool-compare-panel]');
     const compareTable=root.querySelector('[data-tool-compare-table]');
     let savedScenario=null;
+    let lastComparedSignature=null;
 
     const snapshotResults=()=>[...root.querySelectorAll('.tool-result')].filter(card=>!card.hidden).map(card=>({
       label:card.querySelector('span')?.textContent?.trim()||'Result',
@@ -2377,11 +2403,18 @@
     };
 
     if(saveScenarioButton) saveScenarioButton.addEventListener('click',()=>{
-      savedScenario={results:snapshotResults()};
+      const values={};
+      root.querySelectorAll('[data-field]').forEach(el=>{
+        values[el.dataset.field]=el.type==='checkbox'?el.checked:el.value;
+      });
+      values.__advanced=root.dataset.advancedMode==='true';
+      savedScenario={results:snapshotResults(),signature:JSON.stringify(values)};
+      lastComparedSignature=null;
       saveScenarioButton.textContent='Replace saved scenario';
       renderSavedComparison();
       if(actionStatus) actionStatus.textContent='Scenario saved on this page for comparison.';
-      if(window.gtag) window.gtag('event','tool_save_comparison',{tool_name:root.dataset.toolName});
+      if(isPia) trackPia('pia_save_comparison');
+      else if(window.gtag) window.gtag('event','tool_save_comparison',{tool_name:root.dataset.toolName});
     });
     if(clearScenarioButton) clearScenarioButton.addEventListener('click',()=>{
       savedScenario=null;
