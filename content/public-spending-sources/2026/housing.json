@@ -1,0 +1,421 @@
+{
+  "url": "https://www.whereyourmoneygoes.gov.ie/en/housing/2026/",
+  "title": "Where Your Money Goes",
+  "charts": [
+    {
+      "title": "Housing - Expenditure Over Time (10 Years)",
+      "subtitle": "",
+      "type": "line",
+      "xAxes": [
+        {
+          "categories": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026,
+            2027
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Amount in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Total",
+          "type": "line",
+          "data": [
+            5313943000,
+            5186262000,
+            5679739000,
+            6743260000,
+            8442593000,
+            9683577000,
+            11393991000,
+            11888901000
+          ]
+        },
+        {
+          "name": "Capital",
+          "type": "line",
+          "data": [
+            2198777000,
+            2254115000,
+            2888183000,
+            3682258000,
+            5053132000,
+            5944545000,
+            7350766000,
+            7421000000
+          ]
+        },
+        {
+          "name": "Current",
+          "type": "line",
+          "data": [
+            3115166000,
+            2932147000,
+            2791556000,
+            3061002000,
+            3389461000,
+            3739032000,
+            4043225000,
+            4467901000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Housing - Expenditure (Drilldown)",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Sectors",
+          "type": "column",
+          "data": [
+            {
+              "name": "Tailte Éireann (Gross)",
+              "y": 103072000,
+              "drilldown": "Tailte Éireann (Gross)"
+            },
+            {
+              "name": "An Coimisiún Toghcháin (Gross)",
+              "y": 12150000,
+              "drilldown": "An Coimisiún Toghcháin (Gross)"
+            },
+            {
+              "name": "Housing, Local Government and Heritage (Gross)",
+              "y": 9028769000,
+              "drilldown": "Housing, Local Government and Heritage (Gross)"
+            },
+            {
+              "name": "Uisce Éireann (Gross)",
+              "y": 2250000000,
+              "drilldown": "Uisce Éireann (Gross)"
+            }
+          ]
+        }
+      ],
+      "drilldown": [
+        {
+          "name": "Tailte Éireann (Gross)",
+          "id": "Tailte Éireann (Gross)",
+          "data": [
+            [
+              "Provision Of Surveying, Property Registration And Valuation Services Within The State",
+              103072000
+            ]
+          ]
+        },
+        {
+          "name": "An Coimisiún Toghcháin (Gross)",
+          "id": "An Coimisiún Toghcháin (Gross)",
+          "data": [
+            [
+              "Manage The Functions Of The Electoral Commission",
+              12150000
+            ]
+          ]
+        },
+        {
+          "name": "Housing, Local Government and Heritage (Gross)",
+          "id": "Housing, Local Government and Heritage (Gross)",
+          "data": [
+            [
+              "Water And Marine",
+              204716000
+            ],
+            [
+              "Planning",
+              419113000
+            ],
+            [
+              "Heritage",
+              338249000
+            ],
+            [
+              "Housing",
+              7154605000
+            ],
+            [
+              "Local Government",
+              833518000
+            ],
+            [
+              "Met Éireann",
+              78568000
+            ]
+          ]
+        },
+        {
+          "name": "Uisce Éireann (Gross)",
+          "id": "Uisce Éireann (Gross)",
+          "data": [
+            [
+              "Uisce Eireann",
+              2250000000
+            ]
+          ]
+        }
+      ],
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Housing - Expenditure - 3 Year Comparison",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [
+            "Tailte Éireann (Gross)",
+            "An Coimisiún Toghcháin (Gross)",
+            "Housing, Local Government and Heritage (Gross)",
+            "Uisce Éireann (Gross)"
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "2024",
+          "type": "column",
+          "data": [
+            79289000,
+            0,
+            8353058000,
+            0
+          ]
+        },
+        {
+          "name": "2025",
+          "type": "column",
+          "data": [
+            86568000,
+            7535000,
+            9589474000,
+            0
+          ]
+        },
+        {
+          "name": "2026",
+          "type": "column",
+          "data": [
+            103072000,
+            12150000,
+            9028769000,
+            2250000000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Housing - Expenditure by Type",
+      "subtitle": "",
+      "type": "pie",
+      "xAxes": [
+        {
+          "categories": null,
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Values",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Type",
+          "type": "pie",
+          "data": [
+            {
+              "name": "Capital",
+              "y": 7350766000
+            },
+            {
+              "name": "Current",
+              "y": 4043225000
+            }
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    }
+  ],
+  "headings": [
+    "2026 Housing Expenditure:",
+    "Housing - Expenditure (Drilldown)",
+    "Housing - Expenditure - 3 Year Comparison",
+    "Housing - Expenditure by Type",
+    "Housing - Expenditure Over Time (10 Years)"
+  ],
+  "tables": []
+}

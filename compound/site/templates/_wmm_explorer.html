@@ -1,0 +1,113 @@
+{% from '_wmm_explorer_context.html' import wmm_data, sector, programme, node, node_name, years, rows, is_method with context %}
+{% from '_wmm_explorer_macros.html' import money, bar, trend, ad with context %}
+<div class="wmm wx" data-wx-root data-wx-national="{{ wmm_data.total }}" data-wx-total="{{ node.total }}">
+ <header class="wx-hero">
+  <nav class="wx-crumbs" aria-label="Breadcrumb"><a href="/">Compound</a><span>/</span><a href="/wheres-my-money/">Where’s My Money?</a><span>/</span><a href="/wheres-my-money/spending/">Public spending</a>{% if sector %}<span>/</span><a href="{{ sector.url }}">{{ sector.name }}</a>{% endif %}{% if programme %}<span>/</span><span>{{ programme.name }}</span>{% endif %}{% if is_method %}<span>/</span><span>Methodology</span>{% endif %}</nav>
+  <p class="wx-kicker">WHERE’S MY MONEY? / {{ 'THE METHOD' if is_method else 'PUBLISHED 2026 ESTIMATES' }}</p>
+  <h1>{% if is_method %}Understand the numbers.{% elif programme %}{{ programme.name }}{% elif sector %}{{ sector.name }} spending.{% else %}Follow the money.<br><em>All the way through.</em>{% endif %}</h1>
+  <div class="wx-intro">{{ page.body_html|safe }}</div>
+  <div class="wx-hero-links"><a class="wx-button" href="{{ '/wheres-my-money/spending/' if is_method else '#breakdown' }}">{{ 'Explore the figures' if is_method else 'Explore the breakdown' }} ↓</a><a href="/wheres-my-money/#your-receipt">Create your personal tax receipt ↗</a></div>
+  <div class="wx-badges"><span>No account required</span><span>Native charts and tables</span><span>Source snapshot: {{ wmm_data.source_updated }}</span></div>
+ </header>
+ <nav class="wx-sector-nav" aria-label="Explore spending sectors"><a href="/wheres-my-money/spending/"{% if not sector and not is_method %} aria-current="page"{% endif %}>Overview</a>{% for s in wmm_data.sectors %}<a href="{{ s.url }}"{% if sector and s.slug == sector.slug %} aria-current="{{ 'true' if programme else 'page' }}"{% endif %}>{{ 'Debt & EU' if s.key=='debt' else 'Other departments' if s.key=='other' else s.name }}</a>{% endfor %}</nav>
+ {% if is_method %}
+ {% include '_wmm_methodology.html' %}
+ {% else %}
+ <section class="wx-stats" aria-label="Key figures">
+  <div><span>2026 published estimate</span><strong>{{ money(node.total) }}</strong><small>{{ money(node.total, true) }} before display rounding</small></div>
+  <div><span>{{ 'Share of sector' if programme else 'Share of national total' }}</span><strong>{{ '%.2f'|format(node.total / (sector.total if programme else wmm_data.total) * 100) }}%</strong><small>On the scope shown here</small></div>
+  <div><span>{{ 'Component lines' if programme or rows else 'Published programme groups' if sector else 'Spending sectors' }}</span><strong>{{ rows|length if rows else sector.programmes|length if sector else wmm_data.sectors|length }}</strong><small>{{ 'Open source lines below' if programme or rows else 'Follow the links to go deeper' }}</small></div>
+ </section>
+ <nav class="wx-jump" aria-label="On this page"><a href="#breakdown">Breakdown</a><a href="#history">History</a>{% if not programme %}<a href="#spending-type">Spending type</a>{% endif %}<a href="#data-table">Data table</a><a href="#reporting-notes">Reading the figures</a><a href="#sources">Sources</a></nav>
+ <section id="breakdown" class="wx-section">
+  <div class="wx-section-title"><div><p class="wx-kicker">EXPLORE THE ALLOCATION</p><h2>{{ 'Inside the programme' if programme else 'Where the money goes' }}</h2></div><a href="#data-table">View exact figures ↓</a></div>
+  <div class="wx-display-controls" data-wx-controls hidden>
+   <label for="wx-mode">Display amounts as<select id="wx-mode"><option value="national">Published allocation</option><option value="share">Share of this parent budget</option><option value="personal">Personal spending illustration</option></select></label>
+   <label for="wx-contribution" data-wx-personal hidden>Your annual payroll contribution (€)<input id="wx-contribution" type="number" inputmode="decimal" min="0" max="10000000" value="10000" step="100"></label>
+   <p id="wx-mode-note" role="status">Bars are scaled to the largest item. Percentages use the parent total, not the largest bar.</p>
+  </div>
+  <div class="wx-breakdown-grid">
+   <div class="wx-bars">
+   {% if rows %}{% set maximum = rows|map(attribute=1)|max %}
+    {% for row in rows %}{{ bar(row[0],row[1],maximum,node.total,id='line-'~loop.index) }}{% endfor %}
+    {% set gap=programme.gap if programme else sector.programmes[0].gap %}
+    {% if gap > 1000 %}<div class="wx-gap"><strong>{{ money(gap) }} is not itemised in these source lines.</strong><p>This is the parent total minus the displayed detail. It is not an additional programme or a claim of missing money.</p></div>{% endif %}
+   {% else %}{% set items=sector.programmes if sector else wmm_data.sectors %}{% set maximum=items|map(attribute='total')|max %}
+    {% for item in items|sort(attribute='total',reverse=true) %}{{ bar(item.name,item.total,maximum,node.total,item.url) }}{% endfor %}
+   {% endif %}
+   </div>
+   <aside class="wx-readout">
+    <p class="wx-kicker">READ THE CHART</p><h3>{{ 'A part of the bigger picture.' if programme else 'One euro. Different purposes.' }}</h3>
+    <p>{% if programme %}This programme sits inside <a href="{{ sector.url }}">{{ sector.name|lower }}</a>. Its allocation is already included in the sector total. Do not add parent and child rows together.{% else %}The chart shows published allocations, not an assessment of service quality. A higher amount does not by itself mean better outcomes, and a lower amount does not automatically mean savings.{% endif %}</p>
+    <div class="wx-equivalent"><span>Of every €100 in the national spending total</span><strong>€{{ '%.2f'|format(node.total / wmm_data.total * 100) }}</strong><small>{{ '%.2f'|format(node.total / wmm_data.total * 100) }} euro on an unrounded proportional basis</small></div>
+    <p class="wx-small">This is an illustrative spending share. It does not trace your tax payment or establish what services you personally receive.</p>
+    <a class="wx-text-link" href="/wheres-my-money/methodology/#personal-allocation">How personal allocations work →</a>
+   </aside>
+  </div>
+ </section>
+ {{ ad(adsense.get('slots',{}).get('wmm_spending',''),'native-after-breakdown') }}
+ <section id="history" class="wx-section wx-paper">
+  <div class="wx-section-title"><div><p class="wx-kicker">PUT THE YEAR IN CONTEXT</p><h2>{{ 'The three-year comparison.' if programme else 'The longer view.' }}</h2></div><span class="wx-tag">{{ years[0] }}–2026</span></div>
+  {{ trend(node.history,years,node_name) }}
+  <div class="wx-change-cards">
+   <div><span>2024 reported figure</span><strong>{{ money(node.history[years.index(2024)]) }}</strong></div>
+   <div><span>2025 {% if sector and sector.key == 'debt' %}latest outturn{% else %}provisional / estimated{% endif %}</span><strong>{{ money(node.history[years.index(2025)]) }}</strong></div>
+   <div><span>2026 estimate</span><strong>{{ money(node.total) }}</strong></div>
+  </div>
+  <p class="wx-notice">These are nominal amounts, not inflation-adjusted or per-person spending. Departmental transfers and new classifications can affect comparability. A zero against an earlier programme name can mean that no amount was recorded under that classification, not that its services received no funding.</p>
+  <details class="wx-table-details"><summary>Read the historical data table</summary><div class="wx-table-scroll"><table><caption>{{ node_name }} — published historical series</caption><thead><tr><th scope="col">Year</th><th scope="col">Euro</th><th scope="col">Reporting basis</th></tr></thead><tbody>{% for value in node.history %}<tr><th scope="row">{{ years[loop.index0] }}</th><td>{{ money(value,true) }}</td><td>{{ '2026 estimate' if years[loop.index0] == 2026 else ('Latest non-voted outturn' if sector and sector.key=='debt' else 'Provisional outturn estimate' if sector else 'Provisional voted / latest non-voted outturn') if years[loop.index0] == 2025 else 'Reported expenditure' }}</td></tr>{% endfor %}</tbody></table></div></details>
+ </section>
+ {% if not programme %}
+ <section id="spending-type" class="wx-section">
+  <div class="wx-section-title"><div><p class="wx-kicker">HOW SPENDING IS CLASSIFIED</p><h2>Current, capital and scope.</h2></div></div>
+  {% if sector and sector.key=='debt' %}<p class="wx-notice">The source provides a non-voted total, not a current/capital breakdown for this sector. We do not invent one. Explore the three published central-fund categories below.</p>
+  {% else %}
+  <div class="wx-type-grid">
+   <div><span class="wx-type-dot"></span><h3>Current</h3><strong>{{ money(node.current) }}</strong><p>Day-to-day expenditure, including operating costs, wages, pensions and transfers where classified here.</p></div>
+   <div><span class="wx-type-dot wx-dot-capital"></span><h3>Capital</h3><strong>{{ money(node.capital) }}</strong><p>Investment in long-term assets. An annual provision is not a project’s lifetime cost or proof of completed delivery.</p></div>
+   {% if not sector %}{% set nonvoted=wmm_data.sectors|selectattr('key','equalto','debt')|first %}<div><span class="wx-type-dot wx-dot-nonvoted"></span><h3>Non-voted</h3><strong>{{ money(nonvoted.total) }}</strong><p>Shown separately because the source’s current/capital chart covers voted spending only. <a href="{{ nonvoted.url }}">Explore the central items →</a></p></div>{% endif %}
+  </div>
+  <p class="wx-small">{{ 'Current + capital + non-voted' if not sector else 'Current + capital' }} reconciles to the published total shown above.</p>
+  {% endif %}
+ </section>
+ {% endif %}
+ <section id="data-table" class="wx-section wx-paper">
+  <div class="wx-section-title"><div><p class="wx-kicker">THE UNDERLYING NUMBERS</p><h2>Every displayed figure.</h2></div><a href="/static/wmm/public-spending-2026.csv" download>Download the full 2026 CSV ↧</a></div>
+  <p class="wx-small">Euro amounts below preserve source precision. The CSV contains different levels: filter to one level before adding amounts. Parent and child rows are not separate expenditure.</p>
+  <div class="wx-table-scroll"><table>
+   <caption>{{ node_name }} — 2026 published allocation details</caption><thead><tr><th scope="col">{{ 'Source line' if rows else 'Programme' if sector else 'Sector' }}</th><th scope="col">2026 (€)</th><th scope="col">Share of parent</th>{% if not rows %}<th scope="col">Explore</th>{% endif %}</tr></thead>
+   <tbody>{% if rows %}{% for row in rows %}<tr><th scope="row"><span class="wx-row-number">{{ loop.index }}.</span> {{ row[0] }}</th><td>{{ money(row[1],true) }}</td><td>{{ '%.2f'|format(row[1]/node.total*100) }}%</td></tr>{% endfor %}
+    {% else %}{% for item in (sector.programmes if sector else wmm_data.sectors) %}<tr><th scope="row"><a href="{{ item.url }}">{{ item.name }}</a></th><td>{{ money(item.total,true) }}</td><td>{{ '%.2f'|format(item.total/node.total*100) }}%</td><td><a href="{{ item.url }}">Open detail →</a></td></tr>{% endfor %}{% endif %}
+   </tbody><tfoot><tr><th scope="row">Published parent total</th><td>{{ money(node.total,true) }}</td><td>100%</td>{% if not rows %}<td></td>{% endif %}</tr></tfoot>
+  </table></div>
+  {% set balance=programme.gap if programme else sector.programmes[0].gap if rows else sector.gap if sector else wmm_data.sector_gap %}
+  {% if balance %}<p class="wx-notice">{% if balance|abs <= 1000 %}Source rounding difference: the displayed components differ from the parent total by {{ money(balance|abs,true) }}. Both are retained as published.{% else %}Unitemised balance: {{ money(balance,true) }}. The detail is incomplete in the source; it is not allocated to a guessed programme.{% endif %}</p>{% else %}<p class="wx-reconciled">The displayed amounts reconcile to the parent total.</p>{% endif %}
+ </section>
+ {% if sector and not programme %}
+ <section class="wx-section" aria-labelledby="wx-programme-directory"><div class="wx-section-title"><div><p class="wx-kicker">GO DEEPER</p><h2 id="wx-programme-directory">Inside each programme.</h2></div></div>
+  {% for p in sector.programmes %}<article id="{{ p.slug }}" class="wx-programme-card"><div><h3>{% if p.detail %}<a href="{{ p.url }}">{{ p.name }} →</a>{% else %}{{ p.name }}{% endif %}</h3><p>{{ p.note or 'This is the source-defined allocation shown within the sector total. It is not additional expenditure to add to that total.' }}</p><p class="wx-small">Source label: {{ p.original }}</p></div><div class="wx-programme-amount">{{ money(p.total) }}<small>2026 estimate</small></div>
+  {% if p.detail %}<a class="wx-text-link" href="{{ p.url }}">Open {{ p.lines|length }} published component lines →</a>{% else %}<details><summary>{{ 'View the detailed school spending lines' if sector.key=='education' else 'View the allocation and comparison' }}</summary>{% if sector.key=='education' %}<p>The full 16-line school breakdown is already shown in the <a href="#breakdown">chart</a> and <a href="#data-table">data table</a> on this page.</p>{% else %}<p class="wx-small">The source provides one component: {{ p.lines[0][0] }} — {{ money(p.lines[0][1],true) }}. No more granular split is available in this dataset.</p>{% endif %}<div class="wx-mini-compare">{% for v in p.history %}<span><small>{{ wmm_data.comparison_years[loop.index0] }}{{ ' estimate' if loop.last else ' outturn' if sector.key=='debt' else ' provisional' if loop.index0==1 else '' }}</small><strong>{{ money(v) }}</strong></span>{% endfor %}</div></details>{% endif %}</article>{% endfor %}
+ </section>
+ {% elif not sector %}
+ <section class="wx-section" aria-labelledby="wx-directory-title"><div class="wx-section-title"><div><p class="wx-kicker">FIND A PROGRAMME</p><h2 id="wx-directory-title">An interconnected spending library.</h2></div></div><label class="wx-search" data-wx-search-wrap hidden>Search sectors and programmes<input type="search" id="wx-search" placeholder="Try pensions, schools, roads or defence…"></label><p id="wx-search-status" class="wx-small" role="status"></p>
+ <div class="wx-directory">{% for s in wmm_data.sectors %}<div class="wx-directory-sector" data-wx-search-group><h3><a href="{{ s.url }}">{{ s.name }} →</a></h3><p>{{ s.tagline }}</p><ul>{% for p in s.programmes %}<li data-wx-search-item data-wx-search-text="{{ (s.name ~ ' ' ~ p.name ~ ' ' ~ p.original)|lower }}"><a href="{{ p.url }}">{{ p.name }} <span>→</span></a></li>{% endfor %}</ul></div>{% endfor %}</div>
+ </section>
+ {% endif %}
+ {{ ad(adsense.get('slots',{}).get('wmm_receipt',''),'native-before-context') }}
+ <section id="reporting-notes" class="wx-section wx-paper">
+  <div class="wx-section-title"><div><p class="wx-kicker">READ IT CORRECTLY</p><h2>What this does — and doesn’t — tell you.</h2></div></div>
+  {% if sector %}<p class="wx-context-note">{{ sector.note }}</p>{% endif %}
+  {% if programme %}<p class="wx-small">Official programme heading: <strong>{{ programme.original }}</strong>. Friendly page labels are editorial navigation aids; the underlying amounts are unchanged.</p>{% endif %}
+  <div class="wx-explain-grid"><div><h3>An estimate, not an outturn.</h3><p>The 2026 voted figures use Revised Estimates; non-voted amounts use fiscal projections. Do not describe them as final money spent. The source snapshot was updated in October 2026.</p></div><div><h3>A budget is not an outcome.</h3><p>This dataset does not prove what was delivered, assess value for money or measure service quality. It is the funding side of that investigation.</p></div><div><h3>Shares are illustrative.</h3><p>Applying the national spending mix to your payroll contribution is a comparison, not tracing. It is not a statement that PRSI is earmarked across these programmes.</p></div></div>
+  <a class="wx-text-link" href="/wheres-my-money/methodology/">Read the full methodology and limitations →</a>
+ </section>
+ <section class="wx-section" aria-labelledby="wx-related-heading"><div class="wx-section-title"><div><p class="wx-kicker">KEEP EXPLORING</p><h2 id="wx-related-heading">Connected, not isolated.</h2></div></div><div class="wx-related">
+ {% if programme %}<a href="{{ sector.url }}"><span>Parent sector</span><strong>{{ sector.name }} →</strong></a>{% for p in sector.programmes if p.slug!=programme.slug %}{% if loop.index<=3 %}<a href="{{ p.url }}"><span>In the same sector</span><strong>{{ p.name }} →</strong></a>{% endif %}{% endfor %}{% endif %}
+ {% if sector %}{% for item in sector.related %}<a href="{{ item.url }}"><span>Related Compound tool or guide</span><strong>{{ item.name }} →</strong></a>{% endfor %}{% endif %}
+ <a href="/wheres-my-money/#budget"><span>Interactive tool</span><strong>Build your own budget →</strong></a><a href="/wheres-my-money/spending/"><span>Whole spending picture</span><strong>All sectors and programmes →</strong></a>
+ {% if sector and sector.key in ['education','socialprotection','other'] %}<a href="/wheres-my-money/spending/social-protection/children-and-family-payments/"><span>Cross-sector connection</span><strong>Child Benefit and school meals →</strong></a><a href="/wheres-my-money/spending/other-departments/further-higher-education-and-research/"><span>Cross-sector connection</span><strong>Further and higher education →</strong></a>{% endif %}
+ </div></section>
+ <section id="sources" class="wx-section wx-sources"><h2>Sources and provenance.</h2><p>Figures transcribed from the Government of Ireland’s public expenditure charts. Chart design, navigation and explanations are Compound’s own. This is an independent product, not a government service.</p><ul><li><a href="{{ sector.source if sector else wmm_data.source }}" target="_blank" rel="noopener noreferrer">Official source data — {{ sector.name if sector else 'national spending' }} (2026)</a></li><li><a href="{{ wmm_data.method_source }}" target="_blank" rel="noopener noreferrer">Official reporting methodology</a></li><li><a href="https://data.gov.ie/en_GB/dataset/voted-public-expenditure" target="_blank" rel="noopener noreferrer">Voted expenditure dataset and CC BY 4.0 attribution information</a></li></ul><p class="wx-small">Captured {{ wmm_data.updated }} · Source vintage: {{ wmm_data.source_updated }} · Currency: nominal euro · 2026 status: estimate. <a href="/wheres-my-money/methodology/#corrections">Corrections and data checks</a>.</p></section>
+ {% endif %}
+ <nav class="wx-bottom-nav" aria-label="Related product pages"><a href="/wheres-my-money/">← Your tax receipt</a><a href="/wheres-my-money/spending/">Spending library</a><a href="/wheres-my-money/methodology/">Methodology</a></nav>
+</div>

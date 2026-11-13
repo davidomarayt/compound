@@ -1,0 +1,8 @@
+---
+title: Health grants Spending — Ireland 2026
+canonical_path: /wheres-my-money/spending/health/health-grants/
+meta_description: Explore the 2026 health grants allocation, its published component
+  lines and 2024–2026 comparison. Part of Compound’s Irish public spending explorer.
+---
+
+These are the grant lines explicitly itemised in the health source. They are a subset of the wider health budget, not all grants or purchased services across the HSE.

@@ -1,0 +1,35 @@
+{% macro money(value, exact=false) -%}
+{%- if exact %}€{{ '{:,.0f}'.format(value) }}{% elif value|abs >= 1000000000 %}€{{ '%.3f'|format(value / 1000000000) }}bn{% elif value|abs >= 1000000 %}€{{ '%.3f'|format(value / 1000000) }}m{% else %}€{{ '{:,.0f}'.format(value) }}{% endif -%}
+{%- endmacro %}
+{% macro ad(slot, position) %}
+{% if adsense.client and slot and not preview and (ads_allowed is not defined or ads_allowed) %}
+<aside class="wmm-ad wx-ad" aria-label="Advertisement" data-wmm-ad-slot="{{ slot }}" data-wmm-ad-client="{{ adsense.client }}" data-wmm-ad-position="{{ position }}"><span class="wmm-ad-label">Advertisement</span><div class="wmm-ad-container"></div></aside>
+{% endif %}
+{% endmacro %}
+{% macro bar(name, value, maximum, denominator, url='', id='') %}
+<div class="wx-bar-row"{% if id %} id="{{ id }}"{% endif %} data-wx-row>
+ <div class="wx-bar-heading">{% if url %}<a href="{{ url }}">{{ name }} <span aria-hidden="true">↗</span></a>{% else %}<span>{{ name }}</span>{% endif %}<strong data-wx-value="{{ value }}" title="{{ money(value, true) }}">{{ money(value) }}</strong></div>
+ <div class="wx-track" aria-hidden="true"><span style="width:{{ '%.5f'|format(value / maximum * 100 if maximum else 0) }}%"></span></div>
+ <span class="wx-bar-share">{{ '%.2f'|format(value / denominator * 100 if denominator else 0) }}% of this breakdown’s parent total</span>
+</div>
+{% endmacro %}
+{% macro trend(values, years, name) %}
+{% set maximum = (values|max) * 1.12 %}
+{% set axis_scale = 1000000000 if maximum >= 1000000000 else 1000000 %}
+{% set axis_unit = 'bn' if maximum >= 1000000000 else 'm' %}
+<figure class="wx-history" aria-labelledby="wx-history-caption">
+ <figcaption id="wx-history-caption"><strong>{{ name }} over time</strong><span>Nominal euro · no inflation adjustment · {{ years[0] }}–2026</span></figcaption>
+ <svg viewBox="0 0 780 280" role="img" aria-label="{{ name }} historical spending chart. Exact values are in the table below.">
+  {% for fraction in [0,0.25,0.5,0.75,1] %}{% set y = 230 - fraction * 190 %}<line x1="76" y1="{{ y }}" x2="746" y2="{{ y }}" class="wx-gridline"/><text x="68" y="{{ y + 4 }}" text-anchor="end" class="wx-axis">{{ '%.1f'|format(maximum * fraction / axis_scale) }}{{ axis_unit }}</text>{% endfor %}
+  {% set points=namespace(actual=[],estimated=[]) %}
+  {% for value in values %}{% set year = years[loop.index0] %}{% set x = 76 + loop.index0 / (values|length - 1) * 670 %}{% set y = 230 - value / maximum * 190 %}
+   {% if year <= 2024 %}{% set points.actual = points.actual + ['%.2f,%.2f'|format(x,y)] %}{% endif %}
+   {% if year >= 2024 %}{% set points.estimated = points.estimated + ['%.2f,%.2f'|format(x,y)] %}{% endif %}
+   <circle cx="{{ x }}" cy="{{ y }}" r="4" class="wx-point"><title>{{ year }}: {{ money(value, true) }}{% if year >= 2025 %} — estimated/provisional; see basis{% else %} — reported expenditure{% endif %}</title></circle>
+   {% if loop.first or loop.last or year in [2020,2024] %}<text x="{{ x }}" y="258" text-anchor="middle" class="wx-axis">{{ year }}</text>{% endif %}
+  {% endfor %}
+  <polyline points="{{ points.actual|join(' ') }}" class="wx-line"/><polyline points="{{ points.estimated|join(' ') }}" class="wx-line wx-line-estimate"/>
+ </svg>
+ <p class="wx-caption">Solid: reported expenditure to 2024. Dashed: provisional/estimated series from 2025. Non-voted 2025 data is latest outturn; see reporting basis. Changes can reflect transfers of functions.</p>
+</figure>
+{% endmacro %}

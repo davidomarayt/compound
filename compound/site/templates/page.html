@@ -1,18 +1,23 @@
 {% extends "base.html" %}
+{% set is_wmm = page.slug.startswith("wmm-") %}
+{% if is_wmm %}{% set wmm_page = true %}{% endif %}
 {% set insurance_tools = {"health-insurance-cost-comparison-calculator":"Compare two Irish health insurance plans using premiums, inpatient excesses, shortfalls and outpatient reimbursements. Free 2026 cost calculator.","home-insurance-rebuild-cost-calculator":"Home insurance rebuild cost calculator Ireland: use floor area and a rebuilding rate to estimate buildings cover and potential underinsurance.","critical-illness-cover-calculator":"Critical illness cover calculator Ireland: estimate one-off costs, income interruptions and family care needs, less savings and existing cover.","death-in-service-life-insurance-calculator":"Death-in-service calculator Ireland: translate salary multiples into a lump sum and estimate the family life insurance shortfall.","insurance-premium-savings-calculator":"Insurance savings calculator Ireland: compare annual home, car, health and life insurance premiums and model switching savings after fees."} %}
 {% set is_insurance_calculator = page.slug in insurance_tools %}
 {% set is_solar = page.slug == 'solar' or page.slug.startswith('solar-') %}
 {% block head_title %}{% if page.slug == 'life' %}Compound Life Ireland: Home, Work, Travel & Relationships{% elif page.slug == 'insurance' %}Insurance Tools & Guides Ireland | Life, Mortgage, Income & Health | Compound{% elif is_solar %}{{ page.title }} | Compound{% else %}{{ page.title }} | Compound{% endif %}{% endblock %}
 {% block meta %}
+{% if is_wmm %}<meta name="description" content="{{ page.meta_description }}">{% else %}
 {% if page.slug == 'life' %}<meta name="description" content="Compound Life brings together practical Irish guides and useful tools across relationships, family, work, travel, home, leisure and community.">
 {% elif page.slug == 'insurance' %}<meta name="description" content="Free insurance tools and independent guides for Ireland: life insurance, mortgage protection, income protection and health insurance, with practical calculators.">
 
 {% elif is_solar or page.url.startswith('/pia/') %}<meta name="description" content="{{ page.meta_description|e }}">
 {% elif is_insurance_calculator %}<meta name="description" content="{{ insurance_tools[page.slug] }}">
 {% else %}{{ super() }}{% endif %}
+{% endif %}
 {% endblock %}
 {% block head %}
 <link rel="canonical" href="{{ site_url }}{{ page.url }}">
+{% if is_wmm %}{% include "_wmm_explorer_head.html" %}{% endif %}
 {% if page.slug == 'solar-installer-portal' %}<meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer">
 {% elif is_solar %}
 <meta property="og:type" content="website"><meta property="og:title" content="{{ page.title|e }}"><meta property="og:description" content="{{ page.meta_description|e }}"><meta property="og:url" content="{{ site_url }}{{ page.url }}"><meta property="og:site_name" content="Compound"><meta name="twitter:card" content="summary">
@@ -31,6 +36,7 @@
 {% endif %}
 {% endblock %}
 {% block post_styles %}
+{% if is_wmm %}<link rel="stylesheet" href="/static/wheres-my-money.css?v=20261113-ads1"><link rel="stylesheet" href="/static/wmm-explorer.css?v=20261113-native1"><script defer src="/static/wmm-explorer.js?v=20261113-native1"></script><script defer src="/static/wheres-my-money-ads.js?v=20261113-1"></script>{% endif %}
 {% if page.slug == 'life' %}<link rel="stylesheet" href="/static/life-hub.css?v=1">
 {% elif page.slug == 'solar-installer-portal' %}<link rel="stylesheet" href="/static/solar-installer-portal.css?v=1"><script src="/static/solar-installer-portal.js?v=1" defer></script>
 {% elif page.slug == 'solar' %}<link rel="stylesheet" href="/static/solar-hub.css?v=6"><link rel="stylesheet" href="/static/solar-home.css?v=1"><script src="/static/solar-hub.js?v=5" defer></script><script src="/static/solar-research.js?v=2" defer></script>
@@ -43,6 +49,7 @@
 {% endif %}
 {% endblock %}
 {% block content %}
+{% if is_wmm %}{% include "_wmm_explorer.html" %}{% else %}
 {% if page.slug == 'life' %}<div class="life-hub">{{ page.body_html|safe }}</div>
 {% elif page.slug == 'insurance' %}{{ page.body_html|safe }}
 {% elif is_solar %}{{ page.body_html|safe }}
@@ -50,5 +57,6 @@
 {% elif is_insurance_calculator %}
 {{ page.body_html|safe }}
 {% else %}<article class="info-page"><p class="eyebrow">COMPOUND / THE DETAILS</p><h1>{{ page.title }}</h1><div class="article-prose">{{ page.body_html|safe }}</div></article>
+{% endif %}
 {% endif %}
 {% endblock %}

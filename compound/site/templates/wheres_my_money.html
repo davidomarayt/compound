@@ -15,7 +15,7 @@
 <link rel="canonical" href="{{ site_url }}/wheres-my-money/">
 <meta property="og:type" content="website"><meta property="og:title" content="Where's My Money? Your Irish tax receipt"><meta property="og:description" content="Understand what you pay, what it could fund, and what might change for you."><meta property="og:url" content="{{ site_url }}/wheres-my-money/"><meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="/static/wheres-my-money.css?v=20261113-ads1">
-<script defer src="/static/wheres-my-money.js?v=20261113-1"></script>
+<script defer src="/static/wheres-my-money.js?v=20261113-native1"></script>
 <script defer src="/static/wheres-my-money-ads.js?v=20261113-1"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Where's My Money?","description":"2026 Irish personal tax receipt and public spending explorer","url":"{{ site_url }}/wheres-my-money/","applicationCategory":"FinanceApplication","operatingSystem":"Any","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}}</script>
 {% endblock %}
@@ -40,14 +40,14 @@
         <div class="wmm-stripes" aria-hidden="true">
           {% for c in spending.categories %}<span style="flex:{{ c.billion }}" class="wmm-stripe-{{ loop.index }}"></span>{% endfor %}
         </div>
-        <div class="wmm-hero-caption"><span>8 published spending sectors</span><span>Official source linked</span></div>
-        <a href="{{ spending.source }}" target="_blank" rel="noopener noreferrer">View the source data ↗</a>
+        <div class="wmm-hero-caption"><span>8 published spending sectors</span><span>Native programme detail</span></div>
+        <a href="/wheres-my-money/spending/">Explore the full spending library →</a>
       </div>
     </div>
   </header>
 
   <nav class="wmm-subnav" aria-label="Where's My Money sections">
-    <a href="#your-receipt">Tax receipt</a><a href="#spending">Spending explorer</a><a href="#what-if">What-if</a><a href="#budget">Build a budget</a><a href="#reliefs">Money to check</a><a href="#method">Methodology</a>
+    <a href="#your-receipt">Tax receipt</a><a href="#spending">Spending explorer</a><a href="/wheres-my-money/spending/">Spending library</a><a href="#what-if">What-if</a><a href="#budget">Build a budget</a><a href="#reliefs">Money to check</a><a href="#method">Methodology</a>
   </nav>
 
   <section id="your-receipt" class="wmm-section" aria-labelledby="wmm-receipt-heading">
@@ -110,17 +110,17 @@
     <div class="wmm-spending-layout">
       <div class="wmm-spending-list" id="wmm-spending-list" aria-live="polite">
         {% for c in spending.categories %}
-        <div class="wmm-spend-row"><span class="wmm-spend-row-head"><strong>{{ c.name }}</strong><strong>€{{ "%.1f"|format(c.billion) }}bn</strong></span><span class="wmm-spend-row-foot">2026 published estimate · <a href="{{ c.source }}">Source ↗</a></span></div>
+        <div class="wmm-spend-row"><span class="wmm-spend-row-head"><strong>{{ c.name }}</strong><strong>€{{ "%.1f"|format(c.billion) }}bn</strong></span><span class="wmm-spend-row-foot">2026 published estimate · <a href="{{ c.url or '/wheres-my-money/spending/' }}">Explore the breakdown →</a></span></div>
         {% endfor %}
       </div>
       <aside class="wmm-spending-detail" id="wmm-spending-detail" aria-live="polite">
         <p class="wmm-kicker">SELECT A SECTOR</p><h3 id="wmm-sector-name">Healthcare</h3>
         <div class="wmm-sector-metrics"><div><span>National estimate</span><strong id="wmm-sector-national">—</strong></div><div><span>Your proportional equivalent</span><strong id="wmm-sector-personal">—</strong></div></div>
         <p id="wmm-sector-summary"></p>
-        <p class="wmm-detail-label">Services you can investigate</p>
+        <p class="wmm-detail-label">Published programmes · open the detail</p>
         <ul id="wmm-sector-themes"></ul>
-        <p class="wmm-notice">These are navigation themes, not independently priced subcategories. Deeper amounts will appear only when validated official programme data is available.</p>
-        <a id="wmm-sector-source" href="{{ spending.source }}" target="_blank" rel="noopener noreferrer">Read official sector figures ↗</a>
+        <p class="wmm-notice">Open a programme to explore its published allocations, history and source notes on Compound. Not every service has a separately published budget.</p>
+        <a id="wmm-sector-source" href="/wheres-my-money/spending/health/">Explore this sector on Compound →</a>
       </aside>
     </div>
   </section>
@@ -178,7 +178,7 @@
     <div class="wmm-section-intro"><p class="wmm-kicker">07 · TRUST AND METHODOLOGY</p><h2 id="wmm-method-heading">Know which numbers are certain.</h2><p>We separate exact formula calculations, rounded public spending estimates, and exploratory topics that cannot yet be reliably priced.</p></div>
     <div class="wmm-method-grid">
       <div><strong>Calculated</strong><p>PAYE income tax, USC and employee Class A PRSI use the displayed 2026 assumptions. Results are rounded for presentation, not within each formula.</p></div>
-      <div><strong>Estimated</strong><p>Sector totals are the government's 2026 published estimates, rounded to €0.1bn. Personal sector amounts are illustrative: your payroll taxes × sector spending ÷ total spending.</p></div>
+      <div><strong>Estimated</strong><p>Headline sector totals are rounded to €0.1bn. Personal shares use the underlying published euro amounts: your payroll taxes × sector spending ÷ total spending. <a href="/wheres-my-money/methodology/">Read the full methodology</a>.</p></div>
       <div><strong>Not a net-benefit score</strong><p>Public goods, healthcare protection, education and government services do not all have a defensible household cash value. We do not invent one.</p></div>
       <div><strong>Limitations</strong><p>No self-employment, non-PAYE income, age-specific credits, home-carer credit, unusual PRSI classes, BIK, capital taxes, full indirect taxes or pension-relief limit validation. Individual circumstances differ.</p></div>
     </div>

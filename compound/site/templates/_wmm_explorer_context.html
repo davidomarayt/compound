@@ -1,0 +1,11 @@
+{# Resolve only canonical public spending page paths. #}
+{% import "_wmm_spending_data.html" as snapshot %}
+{% set wmm_data = snapshot.wmm_data %}
+{% set parts = page.url.strip('/').split('/') %}
+{% set is_method = page.slug == 'wmm-methodology' %}
+{% set sector = (wmm_data.sectors|selectattr('slug', 'equalto', parts[2])|first) if parts|length > 2 else none %}
+{% set programme = (sector.programmes|selectattr('slug', 'equalto', parts[3])|first) if sector and parts|length > 3 else none %}
+{% set node = programme if programme else sector if sector else wmm_data %}
+{% set node_name = programme.name if programme else sector.name if sector else 'All government spending' %}
+{% set years = wmm_data.comparison_years if programme else sector.years if sector else wmm_data.years %}
+{% set rows = programme.lines if programme else sector.programmes[0].lines if sector and sector.key == 'education' else [] %}

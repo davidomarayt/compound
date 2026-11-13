@@ -1,0 +1,726 @@
+{
+  "url": "https://www.whereyourmoneygoes.gov.ie/en/health/2026/",
+  "title": "Where Your Money Goes",
+  "charts": [
+    {
+      "title": "Health - Expenditure Over Time (10 Years)",
+      "subtitle": "",
+      "type": "line",
+      "xAxes": [
+        {
+          "categories": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026,
+            2027
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Amount in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Total",
+          "type": "line",
+          "data": [
+            14107220000,
+            14798316000,
+            15974789000,
+            17459336000,
+            20809989000,
+            21748684000,
+            23664752000,
+            22319348000,
+            24644419000,
+            26034232000,
+            27350013000,
+            29110000000
+          ]
+        },
+        {
+          "name": "Capital",
+          "type": "line",
+          "data": [
+            417642000,
+            453683000,
+            513170000,
+            689384000,
+            1035831000,
+            1003720000,
+            1263943000,
+            1112852000,
+            1309234000,
+            1415597000,
+            1560000000,
+            1720000000
+          ]
+        },
+        {
+          "name": "Current",
+          "type": "line",
+          "data": [
+            13689578000,
+            14344633000,
+            15461619000,
+            16769952000,
+            19774158000,
+            20744964000,
+            22400809000,
+            21206496000,
+            23335185000,
+            24618635000,
+            25790013000,
+            27390000000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Health - Expenditure (Drilldown)",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Sectors",
+          "type": "column",
+          "data": [
+            {
+              "name": "Health (Admin)",
+              "y": 69459000,
+              "drilldown": "Health (Admin)"
+            },
+            {
+              "name": "Health Care Reform",
+              "y": 8300000,
+              "drilldown": "Health Care Reform"
+            },
+            {
+              "name": "Capital Services",
+              "y": 1970245000,
+              "drilldown": "Capital Services"
+            },
+            {
+              "name": "Grants",
+              "y": 87043000,
+              "drilldown": "Grants"
+            },
+            {
+              "name": "Other Services",
+              "y": 408413000,
+              "drilldown": "Other Services"
+            },
+            {
+              "name": "Corporate Administration",
+              "y": 942627000,
+              "drilldown": "Corporate Administration"
+            },
+            {
+              "name": "Hse Core Services - National",
+              "y": 1900293000,
+              "drilldown": "Hse Core Services - National"
+            },
+            {
+              "name": "Other Hse Services",
+              "y": 408959000,
+              "drilldown": "Other Hse Services"
+            },
+            {
+              "name": "Care Programme",
+              "y": 6159405000,
+              "drilldown": "Care Programme"
+            },
+            {
+              "name": "Hse Core Services – Rha 1 Dublin And North East",
+              "y": 3389501000,
+              "drilldown": "Hse Core Services – Rha 1 Dublin And North East"
+            },
+            {
+              "name": "Hse Core Services – Rha 2 Dublin And Midlands",
+              "y": 3663804000,
+              "drilldown": "Hse Core Services – Rha 2 Dublin And Midlands"
+            },
+            {
+              "name": "Hse Core Services – Rha 3 Dublin And South East",
+              "y": 2654920000,
+              "drilldown": "Hse Core Services – Rha 3 Dublin And South East"
+            },
+            {
+              "name": "Hse Core Services – Rha 4 Mid West",
+              "y": 1180427000,
+              "drilldown": "Hse Core Services – Rha 4 Mid West"
+            },
+            {
+              "name": "Hse Core Services – Rha 5 South West",
+              "y": 1998855000,
+              "drilldown": "Hse Core Services – Rha 5 South West"
+            },
+            {
+              "name": "Hse Core Services – Rha 6 West And North West",
+              "y": 2507762000,
+              "drilldown": "Hse Core Services – Rha 6 West And North West"
+            }
+          ]
+        }
+      ],
+      "drilldown": [
+        {
+          "name": "Health (Admin)",
+          "id": "Health (Admin)",
+          "data": [
+            [
+              "Salaries, Wages And Allowances",
+              58944000
+            ],
+            [
+              "Travel And Subsistence",
+              650000
+            ],
+            [
+              "Training And Development",
+              870000
+            ],
+            [
+              "Operational Services, Supplies And Sundry Equipment",
+              1500000
+            ],
+            [
+              "Digital Capital Investment And It Expenses",
+              2560000
+            ],
+            [
+              "Premises Expenses",
+              1339000
+            ],
+            [
+              "Policy Reviews, Consultancy Services And Research",
+              1534000
+            ],
+            [
+              "Eu Presidency",
+              2062000
+            ]
+          ]
+        },
+        {
+          "name": "Health Care Reform",
+          "id": "Health Care Reform",
+          "data": [
+            [
+              "Sláintecare",
+              8300000
+            ]
+          ]
+        },
+        {
+          "name": "Capital Services",
+          "id": "Capital Services",
+          "data": [
+            [
+              "Grants In Respect Of Building Equipment (Including Ict)",
+              19927000
+            ],
+            [
+              "Buildings and Equipment (Health Facilities)",
+              1277000000
+            ],
+            [
+              "Info Systems For Health Agencies",
+              673318000
+            ]
+          ]
+        },
+        {
+          "name": "Grants",
+          "id": "Grants",
+          "data": [
+            [
+              "Grants To Research Bodies:",
+              59894000
+            ],
+            [
+              "Health Ireland Fund",
+              18387000
+            ],
+            [
+              "Drugs Initiative",
+              8762000
+            ]
+          ]
+        },
+        {
+          "name": "Other Services",
+          "id": "Other Services",
+          "data": [
+            [
+              "Exps Re W.H.O. and Other International Bodies",
+              4690000
+            ],
+            [
+              "Statutory and Non-stat Inquiries and Misc Legal Fees and Settlements",
+              14073000
+            ],
+            [
+              "Developmental, Consultative, Supervisory and Advisory Bodies",
+              158062000
+            ],
+            [
+              "The Food Safety Promotion Board",
+              6933000
+            ],
+            [
+              "The National Treatment Purchase Fund",
+              200022000
+            ],
+            [
+              "Ireland/northern Ireland Interreg",
+              3370000
+            ],
+            [
+              "Payments To A Special A/c - S10 Hep C Comp Trib Acts 1997 and 2002",
+              15500000
+            ],
+            [
+              "Payments To Rep Fund - S11 Hep C Comp Trib Act 1997 and 2002",
+              2500000
+            ],
+            [
+              "Info, Conferences and Publications For Health and Health Services",
+              3263000
+            ]
+          ]
+        },
+        {
+          "name": "Corporate Administration",
+          "id": "Corporate Administration",
+          "data": [
+            [
+              "Net Pension Costs",
+              942627000
+            ]
+          ]
+        },
+        {
+          "name": "Hse Core Services - National",
+          "id": "Hse Core Services - National",
+          "data": [
+            [
+              "Hse Core Services - National",
+              1900293000
+            ]
+          ]
+        },
+        {
+          "name": "Other Hse Services",
+          "id": "Other Hse Services",
+          "data": [
+            [
+              "Health Agencies and Similar Orgs (Nat Lottery)",
+              4513000
+            ],
+            [
+              "Payments To Special A/c - Hepatitis C Scheme",
+              1000000
+            ],
+            [
+              "Economic and Soc Disadv (Dormant Ac Funding)",
+              1985000
+            ],
+            [
+              "Payments To Special A/c - S13 Health (Repayt Scheme) Act 2006",
+              1700000
+            ],
+            [
+              "Paymts To State Claims Agency Re Clinical Negligence",
+              399761000
+            ]
+          ]
+        },
+        {
+          "name": "Care Programme",
+          "id": "Care Programme",
+          "data": [
+            [
+              "Primary Care Reimbursement Services",
+              4398494000
+            ],
+            [
+              "Long Term Residential Care",
+              1362786000
+            ],
+            [
+              "Local Demand Led Schemes",
+              398125000
+            ]
+          ]
+        },
+        {
+          "name": "Hse Core Services – Rha 1 Dublin And North East",
+          "id": "Hse Core Services – Rha 1 Dublin And North East",
+          "data": [
+            [
+              "Hse Core Services - Rha 1 Dublin And North East",
+              3389501000
+            ]
+          ]
+        },
+        {
+          "name": "Hse Core Services – Rha 2 Dublin And Midlands",
+          "id": "Hse Core Services – Rha 2 Dublin And Midlands",
+          "data": [
+            [
+              "Hse Core Services - Rha 2 Dublin And Midlands",
+              3663804000
+            ]
+          ]
+        },
+        {
+          "name": "Hse Core Services – Rha 3 Dublin And South East",
+          "id": "Hse Core Services – Rha 3 Dublin And South East",
+          "data": [
+            [
+              "Hse Core Services - Rha 3 Dublin And South East",
+              2654920000
+            ]
+          ]
+        },
+        {
+          "name": "Hse Core Services – Rha 4 Mid West",
+          "id": "Hse Core Services – Rha 4 Mid West",
+          "data": [
+            [
+              "Hse Core Services - Rha 4 Mid West",
+              1180427000
+            ]
+          ]
+        },
+        {
+          "name": "Hse Core Services – Rha 5 South West",
+          "id": "Hse Core Services – Rha 5 South West",
+          "data": [
+            [
+              "Hse Core Services - Rha 5 South West",
+              1998855000
+            ]
+          ]
+        },
+        {
+          "name": "Hse Core Services – Rha 6 West And North West",
+          "id": "Hse Core Services – Rha 6 West And North West",
+          "data": [
+            [
+              "Hse Core Services - Rha 6 West And North West",
+              2507762000
+            ]
+          ]
+        }
+      ],
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Health - Expenditure - 3 Year Comparison",
+      "subtitle": "",
+      "type": "column",
+      "xAxes": [
+        {
+          "categories": [
+            "Health (Admin)",
+            "Health Care Reform",
+            "Capital Services",
+            "Grants",
+            "Other Services",
+            "Corporate Administration",
+            "Hse Core Services - National",
+            "Other Hse Services",
+            "Care Programme",
+            "Hse Core Services – Rha 1 Dublin And North East",
+            "Hse Core Services – Rha 2 Dublin And Midlands",
+            "Hse Core Services – Rha 3 Dublin And South East",
+            "Hse Core Services – Rha 4 Mid West",
+            "Hse Core Services – Rha 5 South West",
+            "Hse Core Services – Rha 6 West And North West"
+          ],
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Expenditure in €",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "2024",
+          "type": "column",
+          "data": [
+            56326000,
+            5945000,
+            1579356000,
+            73092000,
+            383499000,
+            833091000,
+            0,
+            418799000,
+            5386003000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "2025",
+          "type": "column",
+          "data": [
+            61050000,
+            5548000,
+            1837937000,
+            80254000,
+            388289000,
+            881027000,
+            0,
+            406015000,
+            5819270000,
+            3113924000,
+            3374207000,
+            2447242000,
+            1101179000,
+            1841546000,
+            2306642000
+          ]
+        },
+        {
+          "name": "2026",
+          "type": "column",
+          "data": [
+            69459000,
+            8300000,
+            1970245000,
+            87043000,
+            408413000,
+            942627000,
+            1900293000,
+            408959000,
+            6159405000,
+            3389501000,
+            3663804000,
+            2654920000,
+            1180427000,
+            1998855000,
+            2507762000
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    },
+    {
+      "title": "Health - Expenditure by Type",
+      "subtitle": "",
+      "type": "pie",
+      "xAxes": [
+        {
+          "categories": null,
+          "title": {
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "title": {
+            "rotation": 270,
+            "text": "Values",
+            "align": "middle",
+            "useHTML": false,
+            "x": 0,
+            "y": 0,
+            "style": {
+              "color": "#666666",
+              "fontSize": "0.8em"
+            }
+          }
+        }
+      ],
+      "series": [
+        {
+          "name": "Type",
+          "type": "pie",
+          "data": [
+            {
+              "name": "Capital",
+              "y": 1560000000
+            },
+            {
+              "name": "Current",
+              "y": 25790013000
+            }
+          ]
+        }
+      ],
+      "drilldown": null,
+      "credits": {
+        "enabled": false,
+        "href": "https://www.highcharts.com?credits",
+        "position": {
+          "align": "right",
+          "x": -10,
+          "verticalAlign": "bottom",
+          "y": -5
+        },
+        "style": {
+          "cursor": "pointer",
+          "color": "#999999",
+          "fontSize": "0.6em"
+        },
+        "text": "Highcharts.com"
+      }
+    }
+  ],
+  "headings": [
+    "2026 Health Expenditure:",
+    "Health - Expenditure (Drilldown)",
+    "Health - Expenditure - 3 Year Comparison",
+    "Health - Expenditure by Type",
+    "Health - Expenditure Over Time (10 Years)"
+  ],
+  "tables": []
+}

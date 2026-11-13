@@ -1,0 +1,37 @@
+name: WMM native explorer quality
+on:
+  pull_request:
+    paths: ['compound/site/templates/*wmm*', 'compound/site/templates/wheres_my_money.html', 'compound/site/templates/page.html', 'compound/site/static/*wmm*', 'compound/site/static/wheres-my-money*', 'content/pages/wmm-*', 'content/public-spending*', 'tests/test_wmm_explorer.py', 'scripts/*wmm*', '.github/workflows/wmm-quality.yml']
+  push:
+    branches: ['claude/clever-babbage-uibieq']
+    paths: ['compound/site/templates/*wmm*', 'compound/site/templates/wheres_my_money.html', 'compound/site/templates/page.html', 'compound/site/static/*wmm*', 'compound/site/static/wheres-my-money*', 'content/pages/wmm-*', 'content/public-spending*', 'tests/test_wmm_explorer.py', 'scripts/*wmm*', '.github/workflows/wmm-quality.yml']
+permissions:
+  contents: read
+concurrency:
+  group: wmm-qa-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install jinja2 pyyaml pytest playwright==1.56.0
+      - run: python -m playwright install --with-deps chromium
+      - run: python scripts/sync_wmm_views.py --check
+      - run: python -m pytest -q tests/test_wmm_explorer.py tests/test_wheres_my_money.py
+      - run: node --check compound/site/static/wmm-explorer.js
+      - run: node tests/wheres_my_money.cjs
+      - run: python scripts/render_wmm_preview.py
+      - run: python scripts/verify_wmm_explorer.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: wmm-browser-quality
+          path: wmm-qa/
+          retention-days: 7

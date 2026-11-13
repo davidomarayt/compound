@@ -112,7 +112,7 @@
     var list = q('#wmm-spending-list');
     list.replaceChildren();
     data.categories.forEach(function (category) {
-      var share = category.billion/data.total_billion;
+      var share = category.exact_eur && data.exact_total_eur ? category.exact_eur/data.exact_total_eur : category.billion/data.total_billion;
       var button = document.createElement('button');
       button.type='button';
       button.className='wmm-spend-row'+(activeSector===category.id?' is-current':'');
@@ -135,11 +135,17 @@
     var c = data.categories.find(function (item) { return item.id===activeSector; }) || data.categories[0];
     showText('#wmm-sector-name',c.name);
     showText('#wmm-sector-national','€'+c.billion.toFixed(1)+'bn');
-    showText('#wmm-sector-personal',result ? money(result.payroll*c.billion/data.total_billion) : '—');
+    showText('#wmm-sector-personal',result ? money(result.payroll*(c.exact_eur && data.exact_total_eur ? c.exact_eur/data.exact_total_eur : c.billion/data.total_billion)) : '—');
     showText('#wmm-sector-summary',c.summary);
     var themes=q('#wmm-sector-themes'); themes.replaceChildren();
-    c.themes.forEach(function (item) {var li=document.createElement('li');li.textContent=item;themes.append(li);});
-    q('#wmm-sector-source').href=c.source;
+    (c.detail_links || c.themes).forEach(function (item) {
+      var li=document.createElement('li');
+      if (typeof item === 'object' && item.url && item.url.indexOf('/wheres-my-money/')===0) {
+        var link=document.createElement('a');link.href=item.url;link.textContent=item.name;li.append(link);
+      } else {li.textContent=typeof item==='string'?item:item.name;}
+      themes.append(li);
+    });
+    q('#wmm-sector-source').href=c.url || '/wheres-my-money/spending/';
   }
   function drawWhatIf() {
     if (!result) return;

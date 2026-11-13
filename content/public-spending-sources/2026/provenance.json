@@ -1,0 +1,15 @@
+{
+  "captured_at": "2026-11-13T07:53:20.567443+00:00",
+  "source_vintage": "October 2026",
+  "capture_run": 43388890985,
+  "source": "https://www.whereyourmoneygoes.gov.ie/en/2026/",
+  "methodology_url": "https://www.whereyourmoneygoes.gov.ie/en/about/",
+  "scope": "Gross voted and non-voted expenditure. Voted data excludes centrally held unallocated funding.",
+  "basis": {
+    "2016-2024": "Voted actual expenditure returns / latest non-voted outturn.",
+    "2025": "Voted provisional outturn estimates / latest non-voted Exchequer outturn.",
+    "2026": "Revised Estimates for voted expenditure / fiscal forecast projections for non-voted.",
+    "2027": "Present in source capture but not used in published 2026 library."
+  },
+  "note": "Raw public chart series preserved for provenance. Website styling and scripts are not reused."
+}
