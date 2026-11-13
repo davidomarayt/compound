@@ -20,6 +20,8 @@ sources:
   url: https://www.centralbank.ie/consumer-hub/explainers/what-compensation-schemes-protect-consumers-of-authorised-firms
 - title: 'CCPC: Taxes and charges on investments'
   url: https://www.ccpc.ie/manage-your-money/saving-and-investments/investments/taxes-and-charges
+- title: 'Central Bank of Ireland: Deposit Guarantee Scheme'
+  url: https://www.centralbank.ie/consumer-hub/deposit-guarantee-scheme
 ---
 
 **Investing in Ireland 101 · Chapter 6 of 9**
@@ -70,6 +72,16 @@ For eligible clients of covered Irish-authorised investment firms, the Investor 
 The Central Bank is explicit that this does not compensate ordinary market losses or poor investment performance.
 
 If you use a provider authorised elsewhere in the EEA, check which compensation scheme and legal protections apply to that entity.
+
+### Investor compensation versus bank deposit protection
+
+The **Investor Compensation Scheme (ICS)** and the **Deposit Guarantee Scheme (DGS)** serve different purposes. For eligible depositors, the Irish DGS generally covers up to **€100,000 per person per institution** if a covered bank, building society or credit union cannot repay deposits. That limit is **not** a €100,000 guarantee for investments held with a stockbroker.
+
+By contrast, the Irish ICS is designed for eligible claims when a covered investment firm cannot return client money or financial instruments. Its compensation limit is **90% of net loss, capped at €20,000**; it does **not** reimburse an investment that falls in market value. For firms authorised in another EU country, the applicable scheme may be in that country.
+
+A broker app showing an **uninvested cash balance** does not, by itself, establish whether that money is an eligible DGS deposit or is held under investment-firm client-money arrangements. Check the legal entity, where the cash is actually held, and the specific protection described in the provider's terms. The Central Bank's [comparison of financial-firm compensation schemes](https://www.centralbank.ie/consumer-hub/explainers/what-compensation-schemes-protect-consumers-of-authorised-firms) and its [DGS guidance](https://www.centralbank.ie/consumer-hub/deposit-guarantee-scheme) explain the scope of each.
+
+If the cash is earmarked for an emergency or a near-term purchase, first consider the [cash-reserve and time-horizon checklist](/wealth/before-you-invest-ireland/) rather than treating investor compensation as protection against market volatility.
 
 ## Custody: where are the investments actually held?
 
@@ -279,6 +291,10 @@ Not necessarily. EEA firms may provide services cross-border, but you should und
 ### Does the Investor Compensation Scheme cover stock-market losses?
 
 No. The Central Bank states that the scheme is for eligible situations where an investment firm cannot return client money or instruments, not for ordinary market losses.
+
+### Is €100,000 of my stockbroker account protected by the Irish DGS?
+
+Not automatically. The €100,000 DGS limit applies to eligible deposits at covered credit institutions, not to the market value of shares or ETFs. An eligible investment-firm failure claim may instead fall under the ICS, with different limits. Ask the provider which legal entity holds cash and securities and which compensation regime, if any, applies.
 
 ### Are zero-commission brokers actually free?
 
