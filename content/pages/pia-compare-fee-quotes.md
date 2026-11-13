@@ -27,4 +27,4 @@ Suppose A also charges €2 per purchase and B includes purchases. Twelve trades
 
 Record the effective date, platform minimum, fund charge for your share class, dealing fee, currency conversion charge and any advice or exit fee. Check whether a quoted all-in price already includes the fund charge before adding it. Where a price is missing, mark it unknown. A blank field can materially change a comparison.
 
-[Check published provider terms](/pia/providers/) or [model a longer investment period](/pia-calculator/). The proposed investment account tax has a separate calculation. [See the worked daily valuation example](/pia/daily-valuation/).
+[Check published provider terms](/pia/providers/), [check whether your investment may be eligible](/pia/investment-eligibility/) or [model a longer investment period](/pia-calculator/). The proposed investment account tax has a separate calculation: [see the daily valuation example](/pia/daily-valuation/), or [return to the PIA Centre](/pia/).
