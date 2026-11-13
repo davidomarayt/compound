@@ -1,0 +1,41 @@
+/* Self-contained mobile responsive PIA/ETF/shares comparison */
+#pia-investing-tool{margin:28px 0 38px;padding:clamp(17px,3.6vw,32px);border:1px solid #dfd6d0;background:#faf7f4;border-radius:17px;color:#252129}
+#pia-investing-tool *{box-sizing:border-box}
+#pia-investing-tool .pit-eyebrow{font-size:.77rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:#91573d;margin:0 0 8px}
+#pia-investing-tool h2{font-family:Georgia,serif;font-size:clamp(1.8rem,3.5vw,2.6rem);letter-spacing:-.03em;margin:5px 0 12px}
+#pia-investing-tool .pit-lede,#pia-investing-tool .pit-notes{line-height:1.55;color:#50464c;max-width:760px;font-size:.93rem}
+#pia-investing-tool .pit-layout{display:grid;grid-template-columns:minmax(260px,.88fr) minmax(0,1.4fr);gap:20px;align-items:start}
+#pia-investing-tool .pit-form{border:1px solid #e2d8d2;border-radius:12px;background:white;padding:17px;display:grid;gap:13px}
+#pia-investing-tool .pit-form label{display:grid;gap:6px;font-size:.85rem;font-weight:750}
+#pia-investing-tool .pit-form input,#pia-investing-tool .pit-form select{width:100%;padding:9px 10px;font:inherit;min-height:42px;border:1px solid #b9b1ad;border-radius:7px;background:white;color:#211c22}
+#pia-investing-tool small{font-weight:400;font-size:.77rem;line-height:1.4;color:#60535b}
+#pia-investing-tool .pit-advanced{border-top:1px solid #e8dfdc;padding-top:14px}
+#pia-investing-tool .pit-advanced summary{font-weight:800;cursor:pointer}
+#pia-investing-tool .pit-fields{display:grid;gap:14px;margin-top:14px}
+#pia-investing-tool button{padding:13px;background:#2b2633;border:0;border-radius:7px;color:white;font:inherit;font-weight:750;cursor:pointer}
+#pia-investing-tool input:focus-visible,#pia-investing-tool select:focus-visible,#pia-investing-tool button:focus-visible{outline:3px solid #a66242;outline-offset:2px}
+#pia-investing-tool .pit-results{min-width:0;display:grid;gap:13px}
+#pia-investing-tool .pit-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+#pia-investing-tool .pit-card{border-radius:11px;border:1px solid #e2d8d2;background:white;padding:13px;min-width:0}
+#pia-investing-tool .pit-card.pit-card-pia{background:#2b2633;border-color:#2b2633;color:#fff}
+#pia-investing-tool .pit-card>span{display:block;font-size:.77rem;line-height:1.4}
+#pia-investing-tool .pit-card>strong{display:block;margin-top:9px;font-size:clamp(1.16rem,2.3vw,1.6rem);overflow-wrap:anywhere}
+#pia-investing-tool .pit-breakdown,#pia-investing-tool .pit-chart-wrap{border:1px solid #e2d8d2;border-radius:11px;background:white;padding:14px;min-width:0}
+#pia-investing-tool h3{font-size:1rem;margin:0 0 10px}
+#pia-investing-tool dl{display:grid;grid-template-columns:1fr auto;gap:6px 15px;margin:0}
+#pia-investing-tool dt{font-size:.83rem;color:#51464d}
+#pia-investing-tool dd{margin:0;text-align:right;font-weight:800;font-size:.85rem}
+#pia-investing-tool .pit-chart{overflow-x:auto}
+#pia-investing-tool .pit-chart svg{display:block;width:100%;min-width:350px;height:auto}
+#pia-investing-tool .pit-legend{font-size:.78rem;display:flex;gap:14px;flex-wrap:wrap;margin:7px 0;color:#51464d}
+#pia-investing-tool .pit-legend b:before{content:"";display:inline-block;width:12px;height:3px;vertical-align:middle;margin-right:5px;background:#a2573a}
+#pia-investing-tool .pit-legend b:nth-child(2):before{background:#343f70}
+#pia-investing-tool .pit-legend b:nth-child(3):before{background:#366b60}
+#pia-investing-tool .pit-warning{font-size:.85rem;padding:12px 14px;background:#f3e9dc;border-radius:7px;line-height:1.55;margin:0}
+#pia-investing-tool .pit-table-wrap{overflow-x:auto}
+#pia-investing-tool table{margin:0;border-collapse:collapse;width:100%;font-size:.78rem}
+#pia-investing-tool th,#pia-investing-tool td{padding:9px 8px;border-bottom:1px solid #e6ddd9;text-align:right;white-space:nowrap}
+#pia-investing-tool th:first-child,#pia-investing-tool td:first-child{text-align:left}
+#pia-investing-tool .pit-notes{font-size:.78rem;margin:16px 0 0}
+@media(max-width:900px){#pia-investing-tool .pit-layout{grid-template-columns:1fr}}
+@media(max-width:480px){#pia-investing-tool{padding:12px;margin-left:-7px;margin-right:-7px}#pia-investing-tool .pit-cards{grid-template-columns:1fr}#pia-investing-tool .pit-card>strong{font-size:1.48rem}}

@@ -17,6 +17,13 @@
 {% elif is_solar %}
 <meta property="og:type" content="website"><meta property="og:title" content="{{ page.title|e }}"><meta property="og:description" content="{{ page.meta_description|e }}"><meta property="og:url" content="{{ site_url }}{{ page.url }}"><meta property="og:site_name" content="Compound"><meta name="twitter:card" content="summary">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"{{ 'CollectionPage' if page.slug == 'solar' else 'WebPage' }}","name":{{ page.title|tojson }},"description":{{ page.meta_description|tojson }},"url":{{ (site_url ~ page.url)|tojson }},"inLanguage":"en-IE","publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ site_url }}/"},{"@type":"ListItem","position":2,"name":"Solar","item":"{{ site_url }}/solar/"}{% if page.slug != 'solar' %},{"@type":"ListItem","position":3,"name":{{ page.title|tojson }},"item":{{ (site_url ~ page.url)|tojson }}}{% endif %}]}]}</script>
+{% elif page.slug == 'pia-vs-ordinary-investing' %}
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ page.title|e }}">
+<meta property="og:description" content="{{ page.meta_description|e }}">
+<meta property="og:url" content="{{ site_url }}{{ page.url }}">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":{{ (site_url ~ page.url ~ "#webpage")|tojson }},"url":{{ (site_url ~ page.url)|tojson }},"name":{{ page.title|tojson }},"description":{{ page.meta_description|tojson }},"inLanguage":"en-IE","dateModified":"2026-11-13","publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}},{"@type":"WebApplication","@id":{{ (site_url ~ page.url ~ "#tool")|tojson }},"name":"PIA vs ETF vs Shares Calculator Ireland","url":{{ (site_url ~ page.url ~ "#pia-investing-tool")|tojson }},"applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"JavaScript required for interactive scenario modelling","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ site_url }}/"},{"@type":"ListItem","position":2,"name":"PIA Centre","item":"{{ site_url }}/pia/"},{"@type":"ListItem","position":3,"name":"PIA versus investing outside","item":{{ (site_url ~ page.url)|tojson }}}]}]}</script>
 {% elif page.slug == 'pia-vs-pension' %}
 <meta property="og:type" content="article">
 <meta property="og:title" content="{{ page.title|e }}">
@@ -44,7 +51,8 @@
 {% endif %}
 {% endblock %}
 {% block post_styles %}
-{% if page.slug == 'pia-vs-pension' %}<link rel="stylesheet" href="/static/pia-pension.css?v=20261113-1"><script src="/static/pia-pension.js?v=20261113-1" defer></script>
+{% if page.slug == 'pia-vs-ordinary-investing' %}<link rel="stylesheet" href="/static/pia-investing.css?v=20261113-1"><script src="/static/pia-investing.js?v=20261113-1" defer></script>
+{% elif page.slug == 'pia-vs-pension' %}<link rel="stylesheet" href="/static/pia-pension.css?v=20261113-1"><script src="/static/pia-pension.js?v=20261113-1" defer></script>
 {% elif page.slug == 'life' %}<link rel="stylesheet" href="/static/life-hub.css?v=1">
 {% elif page.slug == 'solar-installer-portal' %}<link rel="stylesheet" href="/static/solar-installer-portal.css?v=1"><script src="/static/solar-installer-portal.js?v=1" defer></script>
 {% elif page.slug == 'solar' %}<link rel="stylesheet" href="/static/solar-hub.css?v=6"><link rel="stylesheet" href="/static/solar-home.css?v=1"><script src="/static/solar-hub.js?v=5" defer></script><script src="/static/solar-research.js?v=2" defer></script>
