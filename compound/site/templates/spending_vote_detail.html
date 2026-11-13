@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block head_title %}Vote {{ vote.number }}: {{ vote.title }} Budget 2026 Net Grant | Compound{% endblock %}
+{% block meta %}<meta name="description" content="2026 Vote {{ vote.number }} for {{ vote.title }}: exact approved net Exchequer supply grant {{ vote.amount_display }}. See what it covers, linked programme funding and gross-versus-net caveats.">{% endblock %}
+{% block head %}
+<link rel="canonical" href="{{ site_url }}{{ vote.url }}">
+<meta property="og:type" content="article"><meta property="og:title" content="Vote {{ vote.number }} {{ vote.title }}: 2026 Approved Supply Grant"><meta property="og:description" content="{{ vote.amount_display }} net Exchequer supply grant in the Dáil's 2026 Revised Estimates."><meta property="og:url" content="{{ site_url }}{{ vote.url }}">
+<link rel="stylesheet" href="/static/spending-explorer.css?v=20261113-votes1">
+<script type="application/ld+json">{{ schema|tojson }}</script>
+{% endblock %}
+{% block content %}
+<article class="wmex wmex-vote-detail">
+<header class="wmex-hero wmex-detail-hero">
+  <nav class="wmex-breadcrumb" aria-label="Breadcrumb"><a href="/">Compound</a><span>/</span><a href="/wheres-my-money/">Where's My Money?</a><span>/</span><a href="/wheres-my-money/spending/">Public spending</a><span>/</span><a href="/wheres-my-money/spending/votes/">Dáil Votes</a><span>/</span><span aria-current="page">Vote {{ vote.number }}</span></nav>
+  <p class="wmex-eyebrow">2026 REVISED ESTIMATES · NET SUPPLY GRANT</p>
+  <h1>Vote {{ vote.number }}: {{ vote.title }}</h1>
+  <p class="wmex-lead">{{ vote.description }}</p>
+  <div class="wmex-hero-metrics">
+    <div><span>Approved net grant ceiling</span><strong>{{ vote.amount_display }}</strong></div>
+    <div><span>Accounting year</span><strong>2026</strong></div>
+    <div><span>Approval date</span><strong class="wmex-hero-type">25 March 2026</strong></div>
+  </div>
+  <p class="wmex-hero-foot">Exact legal authorisation in the Dáil resolution; not the same as money actually spent by the body in 2026.</p>
+</header>
+<nav class="wmex-page-nav" aria-label="Vote detail"><a href="#vote-purpose">What it funds</a><a href="#vote-accounting">Gross versus net</a><a href="#related-votes">Other Votes</a><a href="#programme-bridge">Programmes</a><a href="#vote-source">Primary source</a></nav>
+
+<section class="wmex-section" id="vote-purpose">
+  <div class="wmex-section-heading"><p class="wmex-eyebrow">01 / WHAT THE GRANT COVERS</p><h2>The financial authority behind Vote {{ vote.number }}.</h2><p>{{ vote.description }}</p></div>
+  <div class="wmex-programme-analysis">
+    <div class="wmex-programme-main">
+      <p class="wmex-analysis-label">Approved net Exchequer supply grant</p>
+      <p class="wmex-analysis-amount">{{ vote.amount_display }}</p>
+      <p>This amount represents the net funding authorised in the Dáil's Revised Estimates resolution for Vote {{ vote.number }} for the year ending 31 December 2026. It is a ceiling on supply from the Exchequer, rather than a record of payments to final recipients.</p>
+      <p>Vote {{ vote.number }} is associated here with the <a href="{{ vote.sector_record.url }}">{{ vote.sector_record.name }}</a> spending sector as a navigation aid. Departmental Votes and user-facing sectors do not necessarily have identical accounting boundaries.</p>
+    </div>
+    <aside class="wmex-interpretation">
+      <h3>What this amount does not mean</h3>
+      <p>{{ vote.limit }}</p>
+      <p>Net grant ceilings and gross voted expenditure may differ because of appropriations-in-aid and fund-accounting arrangements. Additional in-year Estimates and capital carryovers may also change the final position.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="wmex-section wmex-warm" id="vote-accounting">
+  <div class="wmex-section-heading"><p class="wmex-eyebrow">02 / READ THE RIGHT NUMBER</p><h2>Why the figure may differ from the sector total.</h2><p>The <a href="/wheres-my-money/spending/">spending atlas</a> is based on gross public expenditure. The amount above is a net voted Exchequer supply grant. They describe different things and cannot be interchanged.</p></div>
+  <div class="wmex-method-grid">
+    <article><h3>This Vote: {{ vote.amount_display }}</h3><p>The 2026 Dáil-approved net supply-grant ceiling for this specified department or agency, under the 25 March resolution.</p></article>
+    <article><h3>Sector: €{{ "%.1f"|format(vote.sector_record.billion) }}bn</h3><p>The rounded <a href="{{ vote.sector_record.url }}">{{ vote.sector_record.name|lower }} sector</a> gross expenditure estimate in the separate official sector dataset. It is not an amount paid from this Vote alone.</p></article>
+    <article><h3>Current and capital</h3><p>Operational costs and longer-lived investment can both be included in voted expenditure. This resolution provides the net grant, not an itemised, reconciled current/capital subhead table for this individual Vote.</p></article>
+    <article><h3>Social insurance and non-voted items</h3><p>Government expenditure can include spending from the Social Insurance Fund, the National Training Fund and direct Central Fund charges. Their treatment differs from ordinary annual Vote supply grants.</p></article>
+  </div>
+</section>
+
+<section class="wmex-section" id="related-votes">
+  <div class="wmex-section-heading"><p class="wmex-eyebrow">03 / THE OTHER VOTES</p><h2>Compare net grant ceilings on the same basis.</h2><p>The bars below use the same 2026 Dáil resolution, so they are a meaningful comparison of net grant authorisations. They are not comparisons of audited actual expenditure or an allocation of your tax.</p></div>
+  <div class="wmex-vote-bars">
+    {% for other in vote.other_votes %}
+    <div class="wmex-vote-bar">
+      <span class="wmex-vote-line">
+        <strong>{% if other.detail %}<a href="{{ other.url }}">Vote {{ other.number }} · {{ other.title }} &rarr;</a>{% else %}Vote {{ other.number }} · {{ other.title }}{% endif %}</strong>
+        <strong>{{ other.amount_display }}</strong>
+      </span>
+      <span class="wmex-vote-track" aria-hidden="true"><span style="width:{{ "%.4f"|format(other.bar_percent) }}%"></span></span>
+    </div>
+    {% endfor %}
+  </div>
+  <a class="wmex-primary-link" href="/wheres-my-money/spending/votes/">Explore all {{ spending.vote_count }} Vote grants &rarr;</a>
+</section>
+
+<section class="wmex-section wmex-warm" id="programme-bridge">
+  <div class="wmex-section-heading"><p class="wmex-eyebrow">04 / SEE PROGRAMME-LEVEL REPORTING</p><h2>What do more granular allocations tell us?</h2><p>Our programme register identifies independently sourced 2026 funding announcements in related service areas. These figures <strong>are not automatically formal subheads of Vote {{ vote.number }}</strong>, and may overlap with one another.</p></div>
+  {% if vote.related_programmes %}
+    <div class="wmex-programme-grid">
+    {% for p in vote.related_programmes %}
+      <a class="wmex-programme-card" href="{{ p.url }}">
+        <span class="wmex-prog-type">{{ p.kind }}</span>
+        <strong>{{ p.title }}</strong>
+        <span class="wmex-prog-amount">{{ p.amount_label }}</span>
+        <span class="wmex-prog-desc">{{ p.description }}</span>
+        <span class="wmex-programme-more">Read the accounting caveat &rarr;</span>
+      </a>
+    {% endfor %}
+    </div>
+  {% else %}
+    <p>No programme figure has been linked directly to this Vote at the same accounting scope. It would be misleading to infer one from the sector total.</p>
+  {% endif %}
+  <div class="wmex-links"><a href="/wheres-my-money/spending/programmes/">Browse all {{ spending.programme_count }} sourced allocations &rarr;</a><a href="{{ vote.sector_record.url }}">Explore {{ vote.sector_record.name|lower }} &rarr;</a></div>
+</section>
+
+<section class="wmex-section" id="vote-source">
+  <div class="wmex-section-heading"><p class="wmex-eyebrow">05 / CHECK THE DOCUMENT</p><h2>Exact source, exact definition.</h2></div>
+  <div class="wmex-source-note wmex-programme-source">
+    <p><strong>Approval:</strong> Dáil Éireann Revised Estimates for Public Services 2026, resolution passed 25 March 2026; Vote {{ vote.number }}.</p>
+    <p><strong>Authorised net supply grant:</strong> {{ vote.amount_display }}. The original figure is €{{ "{:,.0f}".format(vote.net_supply_eur) }}; no estimate has been created by Compound.</p>
+    <p><a href="{{ spending.vote_source }}" target="_blank" rel="noopener noreferrer">Read the official Dáil resolution (Vote {{ vote.number }}) &rarr;</a>. Publication checked {{ spending.vote_date }}.</p>
+    <p>The source supplies net grants and may separately authorise the application of unused capital appropriation. It does not establish all final outturns, all Vote subheads or a department-wide reconciled allocation hierarchy. See the <a href="/wheres-my-money/spending/votes/">Vote register's gross-versus-net explanation</a>.</p>
+  </div>
+</section>
+</article>
+{% endblock %}

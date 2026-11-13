@@ -24,6 +24,7 @@ jobs:
       - run: node --check compound/site/static/tools.js
       - run: node --check compound/site/static/wheres-my-money.js
       - run: node --check compound/site/static/spending-explorer.js
+      - run: pytest -q tests/test_spending_votes.py
       - run: node --check compound/site/static/wheres-my-money-ads.js
       - run: node tests/wheres_my_money.cjs
       - run: node --check compound/site/static/mortgage-calculator.js

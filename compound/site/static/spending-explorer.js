@@ -52,4 +52,23 @@
     search.addEventListener('input', filterProgrammes);
     filterProgrammes();
   }
+
+  /* All Vote rows remain server-rendered and indexable. Filter only the view. */
+  var voteSearch = document.querySelector('[data-vote-search]');
+  if (voteSearch) {
+    var votes = Array.prototype.slice.call(document.querySelectorAll('[data-vote-row]'));
+    var voteCount = document.querySelector('[data-vote-count]');
+    function filterVotes() {
+      var query = voteSearch.value.trim().toLocaleLowerCase('en-IE');
+      var visible = 0;
+      votes.forEach(function (vote) {
+        var match = !query || (vote.dataset.voteText || '').indexOf(query) !== -1;
+        vote.hidden = !match;
+        if (match) visible++;
+      });
+      if (voteCount) voteCount.textContent = visible + ' of ' + votes.length + ' Dáil Votes shown';
+    }
+    voteSearch.addEventListener('input', filterVotes);
+    filterVotes();
+  }
 })();
