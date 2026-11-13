@@ -62,7 +62,7 @@ def test_flagship_ads_have_three_desktop_slots_and_two_mobile_slots():
         site_identity_jsonld="{}",
         year=2026,
     )
-    assert html.count('class="wmm-ad') == 3
+    assert html.count('data-wmm-ad-position="') == 3
     assert html.count('aria-label="Advertisement"') == 3
     assert html.count('data-wmm-ad-slot="2138650464"') == 2
     assert html.count('data-wmm-ad-slot="8512487125"') == 1
@@ -95,4 +95,4 @@ def test_flagship_ads_respect_disabled_site_config():
         year=2026,
     )
     assert 'data-wmm-ad-position="' not in html
-    assert 'class="wmm-ad' not in html
+    assert 'data-wmm-ad-slot="' not in html
