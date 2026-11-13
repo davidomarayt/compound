@@ -1,8 +1,5 @@
 name: WMM public source evidence
 on:
-  push:
-    branches: ["feat/wmm-native-explorer-20261113"]
-    paths: ["scripts/capture_public_spending.py", ".github/workflows/wmm-source-capture.yml"]
   workflow_dispatch:
 permissions:
   contents: read
@@ -14,13 +11,9 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: false
-      - name: Retain committed application context without credentials
-        run: |
-          mkdir -p wmm-source-evidence
-          git archive --format=tar.gz --output=wmm-source-evidence/repository-context.tar.gz HEAD compound content tests scripts .github/workflows AGENTS.md EDITORIAL_TOPIC_INDEX.md CONTENT_INVENTORY.md pyproject.toml README.md data/content-inventory.json
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
       - run: pip install playwright==1.56.0
       - run: python -m playwright install --with-deps chromium
       - name: Capture public chart data and source provenance
