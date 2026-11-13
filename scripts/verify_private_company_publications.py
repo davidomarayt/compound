@@ -8,7 +8,8 @@ from urllib.parse import urlparse
 from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "public"
-LEDGER = ROOT / "monitoring/private-company-publications/2026-11-12.json"
+LEDGER_DIR = ROOT / "monitoring/private-company-publications"
+LEDGER = sorted(LEDGER_DIR.glob("20??-??-??.json"))[-1]
 def check() -> None:
     data = json.loads(LEDGER.read_text(encoding="utf-8"))
     assert len(data["articles"]) == 3 and len({x["slug"] for x in data["articles"]}) == 3
