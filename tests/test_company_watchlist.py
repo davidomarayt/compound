@@ -11,7 +11,7 @@ from compound.site.tradingview import render_tradingview_panel
 def _breadcrumb_items(html):
     """Extract and parse the JSON-LD BreadcrumbList from built production-style HTML."""
     scripts = re.findall(
-        r'<script type="application/ld\\+json">(.*?)</script>', html, flags=re.DOTALL
+        r'<script type="application/ld[+]json">(.*?)</script>', html, flags=re.DOTALL
     )
     matches = [json.loads(script) for script in scripts if '"BreadcrumbList"' in script]
     assert len(matches) == 1, "Exactly one BreadcrumbList is required per directory/profile"
