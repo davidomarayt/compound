@@ -429,6 +429,27 @@ jobs:
             curl --fail --silent --show-error --location               --retry 12 --retry-delay 5 --retry-all-errors               --connect-timeout 10 --max-time 30               "$1" -o "$2"
           }
 
+          # Verify the live directory includes the exact metadata and breadcrumb added by PR #116.
+          # A cache-busting query and short bounded retries tolerate CDN propagation after deployment.
+          for attempt in 1 2 3 4 5 6; do
+            fetch "https://compound.ie/companies/?deployment=${GITHUB_SHA}-${attempt}" /tmp/companies-live.html
+            if grep -Fq '<meta property="og:type" content="website">' /tmp/companies-live.html &&
+               grep -Fq '<meta property="og:title" content="Private Companies — Research Directory | Compound">' /tmp/companies-live.html &&
+               grep -Fq '<meta property="og:url" content="https://compound.ie/companies/">' /tmp/companies-live.html &&
+               grep -Fq 'property="og:description"' /tmp/companies-live.html &&
+               grep -Fq '<nav class="earnings-crumb" aria-label="Breadcrumb">' /tmp/companies-live.html; then
+              break
+            fi
+            if [ "$attempt" -lt 6 ]; then sleep 10; fi
+          done
+          grep -Fq '<link rel="canonical" href="https://compound.ie/companies/">' /tmp/companies-live.html
+          grep -Fq '<meta property="og:type" content="website">' /tmp/companies-live.html
+          grep -Fq '<meta property="og:title" content="Private Companies — Research Directory | Compound">' /tmp/companies-live.html
+          grep -Fq '<meta property="og:url" content="https://compound.ie/companies/">' /tmp/companies-live.html
+          grep -Fq 'property="og:description"' /tmp/companies-live.html
+          grep -Fq '<nav class="earnings-crumb" aria-label="Breadcrumb">' /tmp/companies-live.html
+          echo "Verified public private-company directory Open Graph and breadcrumb after deploy."
+
           fetch https://compound.ie/ /tmp/home.html
           fetch https://compound.ie/news/tesla-roadster-reveal-2026-investor-economics/ /tmp/mag7-tesla.html
           grep -Fq 'Tesla' /tmp/mag7-tesla.html
