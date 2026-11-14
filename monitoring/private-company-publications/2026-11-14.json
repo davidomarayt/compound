@@ -1,0 +1,154 @@
+{
+  "date": "2026-11-14",
+  "timezone": "Europe/Dublin",
+  "run_type": "private_company_daily",
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "automation/private-company-2026-11-14",
+  "target_new_articles": 3,
+  "status": "drafts_prepared_pending_ci_and_deployment",
+  "confirmed_live_new_articles": 0,
+  "human_editorial_status": "not_reviewed_by_human",
+  "ads_policy": "Site-standard AdSense loader on publication, no gating by human review; keep consent and privacy settings",
+  "editorial_quality_gate": "First-party primary sources checked 14 November, 14-day topic-index and other PR duplication audit; real archival Commons originals with explicit licences; awaiting independent PR CI, image processor, production build and live URL/image/ads verification",
+  "duplication_checks": {
+    "editorial_index_snapshot": "2026-11-14",
+    "recent_overlap": "OpenAI Wallet payment authorisation distinct from Nov13 Business Agents merchant discovery and Nov12 AWS procurement. Anthropic outage operations distinct from Nov13 Anvil safety and Nov12 Fable pricing; Microsoft upstream connector separately attributed. Databricks first deep-dive, no same search intent found in index.",
+    "competing_workflows": "Daily Company Analysis and Mag 8 analyse listed public shares, private-company article scope reviewed; no duplicate new company research detected",
+    "new_page_count_cap": 3
+  },
+  "articles": [
+    {
+      "company": "OpenAI",
+      "slug": "openai",
+      "story_fingerprint": "2026-11-13-openai-openai-chatgpt-wallet-agentic-checkout-economics",
+      "article_path": "content/wealth/openai-chatgpt-wallet-agentic-checkout-economics.md",
+      "canonical_url": "https://compound.ie/wealth/openai-chatgpt-wallet-agentic-checkout-economics/",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "event_date": "2026-11-13",
+      "primary_source_urls": [
+        "https://openai.com/index/introducing-chatgpt-wallet/",
+        "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Sam_Altman_speaking_at_TED.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Sam_Altman_speaking_at_TED.jpg",
+      "photo_focal_y": 0.3,
+      "image_license": "CC BY 2.0",
+      "photo_provenance": "Steve Jurvetson, April 2025, genuine TED archival portrait, adapted crop under CC BY 2.0",
+      "claim_checks": [
+        "Wallet announced 13 November 2026; US eligible Pro adults only, with eligible US-issued cards",
+        "User must authorise each checkout; future broad delegation remains prospective",
+        "Card-network token is not disclosure of the original card number",
+        "Merchant remains seller and owns returns/fulfilment; platform's wallet transaction fees are undisclosed",
+        "Hypothetical 1000 attempts at 8% vs 3% declines, half convert, €25 contribution = €625"
+      ],
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "pending",
+      "status": "prepared_pending_ci"
+    },
+    {
+      "company": "Anthropic",
+      "slug": "anthropic",
+      "story_fingerprint": "2026-11-13-anthropic-anthropic-claude-outage-enterprise-agent-reliability-november-2026",
+      "article_path": "content/wealth/anthropic-claude-outage-enterprise-agent-reliability-november-2026.md",
+      "canonical_url": "https://compound.ie/wealth/anthropic-claude-outage-enterprise-agent-reliability-november-2026/",
+      "profile_url": "https://compound.ie/companies/anthropic/",
+      "event_date": "2026-11-13",
+      "primary_source_urls": [
+        "https://status.claude.com/",
+        "https://anthropic.statuspage.io/history",
+        "https://status.cloud.microsoft/"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_in_2023.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Dario_Amodei_in_2023.jpg",
+      "photo_focal_y": 0.46,
+      "image_license": "CC BY 2.0",
+      "photo_provenance": "Simon Walker/UK Prime Minister, 24 May 2023, archival portrait, CC BY 2.0 adapted crop",
+      "claim_checks": [
+        "Nov 13 09:58 to 11:58 UTC incident = 120-minute window; not 100% downtime",
+        "Nov 13 13:09 to 15:38 UTC multi-surface incident = 149-minute window; scheduled jobs could skip",
+        "Microsoft connector Nov 12 16:03 to Nov 13 16:40 attributed to upstream Microsoft; distinct incident",
+        "Nov 14 02:34 to 04:03 UTC checkout/plan changes only; core not affected",
+        "Illustrative 30-day 99.9% full availability allowance 43.2 minutes; incident durations not contractual SLA breaches"
+      ],
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "pending",
+      "status": "prepared_pending_ci"
+    },
+    {
+      "company": "Databricks",
+      "slug": "databricks",
+      "story_fingerprint": "2026-11-11-databricks-databricks-always-on-genie-enterprise-agent-economics",
+      "article_path": "content/wealth/databricks-always-on-genie-enterprise-agent-economics.md",
+      "canonical_url": "https://compound.ie/wealth/databricks-always-on-genie-enterprise-agent-economics/",
+      "profile_url": "https://compound.ie/companies/databricks/",
+      "event_date": "2026-11-11",
+      "primary_source_urls": [
+        "https://www.databricks.com/company/newsroom/press-releases/databricks-launches-new-always-genie-autonomous-ai-complex",
+        "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+        "https://www.databricks.com/company/newsroom/press-releases/databricks-invest-3-billion-across-europe-and-middle-east"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Data_and_AI_Summit_2026_Ali_Ghodsi.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Data_and_AI_Summit_2026_Ali_Ghodsi.jpg",
+      "photo_focal_y": 0.46,
+      "image_license": "CC BY-SA 4.0",
+      "photo_provenance": "Databricks Comms, 15 June 2026, Ali Ghodsi Data+AI Summit archival presentation, crop CC BY-SA 4.0",
+      "claim_checks": [
+        "11 Nov Genie and Ontology GA, but always-on Genie/Search/manager coming to preview or beta",
+        "100+ data sources connect via multiple strategies, not all direct-live or fully available",
+        "August company-reported >$7B annualised revenue run rate; $5B financing at $190B valuation, not listed-stock price",
+        "11 November ~$3B EMEA spending is a forward-looking three-year plan, not spent cash",
+        "Hypothetical 500 tasks * 12 minutes =100h; two-thirds released =66.7h; minus 15h supervision"
+      ],
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "pending",
+      "status": "prepared_pending_ci"
+    }
+  ],
+  "profile_updates": [
+    {
+      "slug": "openai",
+      "date": "2026-11-13",
+      "source": "https://openai.com/index/introducing-chatgpt-wallet/",
+      "verified_live": false
+    },
+    {
+      "slug": "anthropic",
+      "date": "2026-11-13",
+      "source": "https://status.claude.com/",
+      "verified_live": false
+    },
+    {
+      "slug": "databricks",
+      "date": "2026-11-11",
+      "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-launches-new-always-genie-autonomous-ai-complex",
+      "verified_live": false
+    }
+  ],
+  "production_deployment": {
+    "status": "pending",
+    "url_verified": false,
+    "profile_backlinks_verified": false,
+    "social_images_verified": false,
+    "real_licensed_covers_verified": false,
+    "standard_ad_loader_verified": false
+  },
+  "updated_at_utc": "2026-11-14T07:02:46Z"
+}

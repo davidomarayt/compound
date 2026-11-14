@@ -4,6 +4,29 @@ from pathlib import Path
 import yaml
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "monitoring/private-company-publications/2026-11-12.json"
+
+def all_publication_records():
+    """Preserve historical assertions while allowing newer source-backed profile facts."""
+    ledgers = sorted((ROOT / "monitoring/private-company-publications").glob("20??-??-??.json"))
+    by_slug = {}
+    for path in ledgers:
+        daily = json.loads(path.read_text())
+        assert daily["date"] == path.stem
+        assert len({a["slug"] for a in daily["articles"]}) == len(daily["articles"])
+        for record in daily["articles"]:
+            assert record["primary_source_urls"]
+            assert record["event_date"] <= daily["date"]
+            by_slug.setdefault(record["slug"], []).append(record)
+    return by_slug
+
+
+def assert_current_profile_uses_latest_sourced_disclosure(profile, slug, records):
+    """Current profile disclosure must have a sourced dated publication trail."""
+    assert records, f"No publication evidence for {slug}"
+    development = profile["latest_development"]
+    allowed = {url for record in records for url in record["primary_source_urls"]}
+    assert development["source"] in allowed, f"Unsourced latest profile: {slug}"
+    assert development["date"] >= max(record["event_date"] for record in records), f"Profile regressed: {slug}"
 def test_daily_private_company_unique_sourced_real_photos():
     d = json.loads(LEDGER.read_text())
     assert d["date"] == "2026-11-12"
@@ -25,19 +48,12 @@ def test_daily_private_company_unique_sourced_real_photos():
         assert len(raw.split()) > 680
     watchlist = json.loads((ROOT / "content/company-watchlist.json").read_text())
     profiles = {p["slug"]: p for p in watchlist["private"]}
-    # The evergreen profile is a living hub: its latest dated development may
-    # advance beyond the 12 November article when new independently sourced
-    # daily coverage is added. Preserve old article source validation while
-    # checking the latest profile update against the newest publication ledger.
-    recent = json.loads((ROOT / "monitoring/private-company-publications/2026-11-13.json").read_text())
-    recent_by_slug = {x["slug"]: x for x in recent["articles"]}
+    records = all_publication_records()
     for prior in d["articles"]:
         latest = profiles[prior["slug"]]["latest_development"]
-        source_urls = list(prior["primary_source_urls"])
-        if prior["slug"] in recent_by_slug:
-            source_urls += recent_by_slug[prior["slug"]]["primary_source_urls"]
-        assert latest["source"] in source_urls, f"Unsourced latest profile: {prior['slug']}"
+        assert_current_profile_uses_latest_sourced_disclosure(profiles[prior["slug"]], prior["slug"], records[prior["slug"]])
         assert latest["date"] >= prior["event_date"], f"Profile regressed: {prior['slug']}"
+
 
 
 def test_daily_private_company_13_nov_stories_are_distinct_and_photo_sourced():
@@ -48,6 +64,7 @@ def test_daily_private_company_13_nov_stories_are_distinct_and_photo_sourced():
     assert len({r["image_source"] for r in latest["articles"]}) == 3
     watchlist = json.loads((ROOT / "content/company-watchlist.json").read_text())
     profiles = {p["slug"]: p for p in watchlist["private"]}
+    records = all_publication_records()
     for record in latest["articles"]:
         article = (ROOT / record["article_path"]).read_text()
         meta = yaml.safe_load(article.split("---", 2)[1])
@@ -63,6 +80,6 @@ def test_daily_private_company_13_nov_stories_are_distinct_and_photo_sourced():
         assert record["profile_url"].removeprefix("https://compound.ie") in article
         assert record["primary_source_urls"][0] in article
         assert len(article.split()) >= 900
-        assert profiles[record["slug"]]["latest_development"]["source"] in record["primary_source_urls"]
-        assert profiles[record["slug"]]["latest_development"]["date"] == record["event_date"]
+        assert_current_profile_uses_latest_sourced_disclosure(profiles[record["slug"]], record["slug"], records[record["slug"]])
+        assert profiles[record["slug"]]["latest_development"]["date"] >= record["event_date"]
 

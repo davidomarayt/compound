@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-13",
+  "checked": "2026-11-14",
   "listed": [
     {
       "slug": "spcx",
@@ -120,9 +120,9 @@
       "summary": "AI models, products, infrastructure and governance.",
       "website": "https://openai.com/",
       "latest_development": {
-        "date": "2026-11-10",
-        "text": "OpenAI introduced Businesses in ChatGPT beta: eligible organisations may verify profiles and product feeds; separate labelled Business Agents and sponsored destinations initially target eligible US ecommerce and online-services firms. Commercial uptake and ad returns are not disclosed.",
-        "source": "https://openai.com/index/introducing-businesses-chatgpt/"
+        "date": "2026-11-13",
+        "text": "OpenAI introduced ChatGPT Wallet for user-authorised agent purchases, initially limited to eligible US ChatGPT Pro adults and US-issued cards; payment networks provide substitute card tokens and users approve each checkout. No wallet transaction volumes or fee income have been reported.",
+        "source": "https://openai.com/index/introducing-chatgpt-wallet/"
       }
     },
     {
@@ -132,9 +132,9 @@
       "summary": "Claude AI models, research and enterprise deployments.",
       "website": "https://www.anthropic.com/",
       "latest_development": {
-        "date": "2026-11-12",
-        "text": "Anthropic published internally evaluated results for Anvil automated red-teaming, reporting stronger findings than human testers on 23 of 24 bio classifier-question comparisons. These are company-run benchmarks, not universal independent safety certification.",
-        "source": "https://safeguards.anthropic.com/2026/automated-red-teaming/"
+        "date": "2026-11-14",
+        "text": "Anthropic's official incident log documents distinct Claude authentication, API and connector disruptions on 13 November, including delayed/skipped scheduled routines, followed by 14 November payment-plan errors that were resolved. The Microsoft connector incident was attributed to its upstream provider; no financial damage or blanket SLA breach is established.",
+        "source": "https://status.claude.com/"
       }
     },
     {
@@ -149,7 +149,12 @@
       "name": "Databricks",
       "sector": "Data & AI software",
       "summary": "Enterprise data platforms, analytics and AI tooling.",
-      "website": "https://www.databricks.com/"
+      "website": "https://www.databricks.com/",
+      "latest_development": {
+        "date": "2026-11-11",
+        "text": "Databricks announced a second-generation Genie, with always-on agents, governed search and expanded ontology. Genie and Genie Ontology are generally available, but the new always-on Genie, Genie Search and Ontology Manager are coming to preview/beta; no separate product revenue figures were disclosed.",
+        "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-launches-new-always-genie-autonomous-ai-complex"
+      }
     },
     {
       "slug": "stripe",
