@@ -5,11 +5,11 @@
   "production_branch": "claude/clever-babbage-uibieq",
   "work_branch": "automation/private-company-2026-11-14",
   "target_new_articles": 3,
-  "status": "drafts_prepared_pending_ci_and_deployment",
-  "confirmed_live_new_articles": 0,
+  "status": "published_verified",
+  "confirmed_live_new_articles": 3,
   "human_editorial_status": "not_reviewed_by_human",
   "ads_policy": "Site-standard AdSense loader on publication, no gating by human review; keep consent and privacy settings",
-  "editorial_quality_gate": "First-party primary sources checked 14 November, 14-day topic-index and other PR duplication audit; real archival Commons originals with explicit licences; awaiting independent PR CI, image processor, production build and live URL/image/ads verification",
+  "editorial_quality_gate": "PR #140 exact head CI succeeded; documentary image licences independently checked; production build/deploy plus post-deployment live canonical, cover, social image, reciprocal profile backlinks and standard AdSense loader verified 14 Nov 2026 at 07:35 UTC; no human review claimed.",
   "duplication_checks": {
     "editorial_index_snapshot": "2026-11-14",
     "recent_overlap": "OpenAI Wallet payment authorisation distinct from Nov13 Business Agents merchant discovery and Nov12 AWS procurement. Anthropic outage operations distinct from Nov13 Anvil safety and Nov12 Fable pricing; Microsoft upstream connector separately attributed. Databricks first deep-dive, no same search intent found in index.",
@@ -43,13 +43,25 @@
       ],
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": null,
-      "deployment_status": "pending",
-      "status": "prepared_pending_ci"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": {
+        "canonical_url": "https://compound.ie/wealth/openai-chatgpt-wallet-agentic-checkout-economics/",
+        "url_fetched": true,
+        "canonical_html_verified": true,
+        "company_profile_link_verified": true,
+        "profile_backlink_verified": true,
+        "licensed_cover_image_fetched": true,
+        "open_graph_webp_fetched": true,
+        "twitter_webp_fetched": true,
+        "ad_loader_verified": true,
+        "verified_at_utc": "2026-11-14T07:35:30Z",
+        "source_run": 43571018805
+      },
+      "deployment_status": "verified_production",
+      "status": "published_verified"
     },
     {
       "company": "Anthropic",
@@ -78,13 +90,25 @@
       ],
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": null,
-      "deployment_status": "pending",
-      "status": "prepared_pending_ci"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": {
+        "canonical_url": "https://compound.ie/wealth/anthropic-claude-outage-enterprise-agent-reliability-november-2026/",
+        "url_fetched": true,
+        "canonical_html_verified": true,
+        "company_profile_link_verified": true,
+        "profile_backlink_verified": true,
+        "licensed_cover_image_fetched": true,
+        "open_graph_webp_fetched": true,
+        "twitter_webp_fetched": true,
+        "ad_loader_verified": true,
+        "verified_at_utc": "2026-11-14T07:35:30Z",
+        "source_run": 43571018805
+      },
+      "deployment_status": "verified_production",
+      "status": "published_verified"
     },
     {
       "company": "Databricks",
@@ -113,13 +137,25 @@
       ],
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": null,
-      "deployment_status": "pending",
-      "status": "prepared_pending_ci"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": {
+        "canonical_url": "https://compound.ie/wealth/databricks-always-on-genie-enterprise-agent-economics/",
+        "url_fetched": true,
+        "canonical_html_verified": true,
+        "company_profile_link_verified": true,
+        "profile_backlink_verified": true,
+        "licensed_cover_image_fetched": true,
+        "open_graph_webp_fetched": true,
+        "twitter_webp_fetched": true,
+        "ad_loader_verified": true,
+        "verified_at_utc": "2026-11-14T07:35:30Z",
+        "source_run": 43571018805
+      },
+      "deployment_status": "verified_production",
+      "status": "published_verified"
     }
   ],
   "profile_updates": [
@@ -127,28 +163,43 @@
       "slug": "openai",
       "date": "2026-11-13",
       "source": "https://openai.com/index/introducing-chatgpt-wallet/",
-      "verified_live": false
+      "verified_live": true,
+      "verified_at_utc": "2026-11-14T07:35:30Z"
     },
     {
       "slug": "anthropic",
       "date": "2026-11-13",
       "source": "https://status.claude.com/",
-      "verified_live": false
+      "verified_live": true,
+      "verified_at_utc": "2026-11-14T07:35:30Z"
     },
     {
       "slug": "databricks",
       "date": "2026-11-11",
       "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-launches-new-always-genie-autonomous-ai-complex",
-      "verified_live": false
+      "verified_live": true,
+      "verified_at_utc": "2026-11-14T07:35:30Z"
     }
   ],
   "production_deployment": {
-    "status": "pending",
-    "url_verified": false,
-    "profile_backlinks_verified": false,
-    "social_images_verified": false,
-    "real_licensed_covers_verified": false,
-    "standard_ad_loader_verified": false
+    "status": "success",
+    "merge_pr": 140,
+    "publication_commit": "1c0288d9a64d18792fe55048a277fad65112be30",
+    "latest_verified_site_commit": "1c0288d9a64d18792fe55048a277fad65112be30",
+    "github_pages_workflow_run": 43571018805,
+    "verification_job": "mobile-audit / Verify live private-company pages, social images and site ads",
+    "verified_at_utc": "2026-11-14T07:35:30Z",
+    "url_verified": true,
+    "profile_backlinks_verified": true,
+    "social_images_verified": true,
+    "real_licensed_covers_verified": true,
+    "standard_ad_loader_verified": true,
+    "consent_and_ads_slots": "Existing consent/privacy controls and ad placement configuration unchanged; live standard ad loader present, fill not asserted",
+    "verification_log_url": "https://github.com/davidomarayt/compound/actions/runs/43571018805"
   },
-  "updated_at_utc": "2026-11-14T07:02:46Z"
+  "updated_at_utc": "2026-11-14T07:35:30Z",
+  "repository_safeguard_audit": {
+    "branch_protection_enabled_at_check": false,
+    "comment": "Default publishing branch protection was not enabled at check; publication PR CI passed, but required protection is not enforced by GitHub. Follow-up configuration is needed."
+  }
 }
