@@ -842,6 +842,27 @@
         "status": "published"
       },
       {
+        "title": "Claude's November Outages Exposed a Hidden Cost of AI Agents: Missed Work",
+        "url": "/wealth/anthropic-claude-outage-enterprise-agent-reliability-november-2026/",
+        "source": "content/wealth/anthropic-claude-outage-enterprise-agent-reliability-november-2026.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "anthropic-claude-outage-enterprise-agent-reliability-november-2026",
+        "date": "2026-11-14",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-anthropic",
+          "anthropic",
+          "cloud-reliability",
+          "enterprise-ai",
+          "agent-operations"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Clocks go back in Ireland next Sunday: what changes, and what to check",
         "url": "/news/clocks-go-back-ireland-october-2026/",
         "source": "content/happiness/clocks-go-back-ireland-october-2026.md",
@@ -950,6 +971,27 @@
           "stocks",
           "company-research",
           "cvs"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Databricks Wants Genie to Work Without Being Asked. Who Pays for the Always-On Agent?",
+        "url": "/wealth/databricks-always-on-genie-enterprise-agent-economics/",
+        "source": "content/wealth/databricks-always-on-genie-enterprise-agent-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "databricks-always-on-genie-enterprise-agent-economics",
+        "date": "2026-11-14",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-databricks",
+          "databricks",
+          "enterprise-ai",
+          "agent-economics",
+          "data-platform"
         ],
         "status": "published"
       },
@@ -3562,6 +3604,27 @@
           "artificial-intelligence",
           "commerce",
           "advertising"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "OpenAI's ChatGPT Wallet Can Complete a Purchase. Can Merchants Trust the Checkout?",
+        "url": "/wealth/openai-chatgpt-wallet-agentic-checkout-economics/",
+        "source": "content/wealth/openai-chatgpt-wallet-agentic-checkout-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-chatgpt-wallet-agentic-checkout-economics",
+        "date": "2026-11-14",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "agentic-payments",
+          "commerce",
+          "fintech"
         ],
         "status": "published"
       },
