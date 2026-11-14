@@ -1,10 +1,23 @@
 """Global stocks and private research watchlist: page types, links and SEO."""
 import json
+import re
 from pathlib import Path
 import pytest
 
 from compound.site.build import build_site
 from compound.site.tradingview import render_tradingview_panel
+
+
+def _breadcrumb_items(html):
+    """Extract and parse the JSON-LD BreadcrumbList from built production-style HTML."""
+    scripts = re.findall(
+        r'<script type="application/ld\\+json">(.*?)</script>', html, flags=re.DOTALL
+    )
+    matches = [json.loads(script) for script in scripts if '"BreadcrumbList"' in script]
+    assert len(matches) == 1, "Exactly one BreadcrumbList is required per directory/profile"
+    assert matches[0]["@context"] == "https://schema.org"
+    assert matches[0]["@type"] == "BreadcrumbList"
+    return matches[0]["itemListElement"]
 
 
 def test_watchlist_registry_covers_requested_companies():
@@ -121,6 +134,12 @@ Primary-source analysis of OpenAI.
     assert '<meta property="og:url" content="https://example.test/companies/">' in companies
     assert 'property="og:description"' in companies
     assert '<nav class="earnings-crumb" aria-label="Breadcrumb">' in companies
+    assert '<span aria-current="page">Private companies</span>' in companies
+    assert _breadcrumb_items(companies) == [
+        {"@type": "ListItem", "position": 1, "name": "Compound", "item": "https://example.test/"},
+        {"@type": "ListItem", "position": 2, "name": "Stocks", "item": "https://example.test/stocks/"},
+        {"@type": "ListItem", "position": 3, "name": "Private companies", "item": "https://example.test/companies/"},
+    ]
     assert 'href="/companies/canva/"' in companies
     assert 'data-tv-symbol="NASDAQ:SPCX"' in spcx
     assert "SpaceX original research" in spcx
@@ -147,6 +166,12 @@ Primary-source analysis of OpenAI.
         assert f'<meta property="og:description" content="{summary}">' in html
         assert f'<meta property="og:url" content="https://example.test/companies/{slug}/">' in html
         assert '<nav class="earnings-crumb" aria-label="Breadcrumb">' in html
+        assert f'<span aria-current="page">{name}</span>' in html
+        assert _breadcrumb_items(html) == [
+            {"@type": "ListItem", "position": 1, "name": "Compound", "item": "https://example.test/"},
+            {"@type": "ListItem", "position": 2, "name": "Private companies", "item": "https://example.test/companies/"},
+            {"@type": "ListItem", "position": 3, "name": name, "item": f"https://example.test/companies/{slug}/"},
+        ]
     # Existing indexed/unindexed status and standard ads are controlled by genuine coverage,
     # not a fabricated human-review flag. These are rendered HTML assertions.
     assert 'name="robots" content="noindex,follow"' not in openai
