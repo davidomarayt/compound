@@ -1,0 +1,67 @@
+{
+  "cik": 2128626,
+  "company": "Vylor",
+  "latest": {
+    "accession": "0002128626-26-000012",
+    "filed": "2026-11-12",
+    "form": "10-Q",
+    "fp": "Q3",
+    "fy": 2026,
+    "metrics": {
+      "diluted_eps": {
+        "current": -0.85,
+        "prior_year": -0.47,
+        "tag": "EarningsPerShareDiluted",
+        "unit": "USD/shares"
+      },
+      "net_income": {
+        "current": -475000000,
+        "prior_year": -368000000,
+        "tag": "NetIncomeLoss",
+        "unit": "USD"
+      },
+      "revenue": {
+        "current": 905000000,
+        "prior_year": 917000000,
+        "tag": "Revenues",
+        "unit": "USD"
+      }
+    },
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/2128626/000212862626000012/vylr-20260930.htm"
+  },
+  "periods": [
+    {
+      "accession": "0002128626-26-000012",
+      "filed": "2026-11-12",
+      "form": "10-Q",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": -0.85,
+          "prior_year": -0.47,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": -475000000,
+          "prior_year": -368000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 905000000,
+          "prior_year": 917000000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/2128626/000212862626000012/vylr-20260930.htm"
+    }
+  ],
+  "source_type": "US SEC XBRL; no analyst estimates",
+  "ticker": "VYLR",
+  "updated": "2026-11-14"
+}
