@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-13
+Checked: 2026-11-14
 
-- 498 saved profiles checked against structural and issuer rules.
-- 91 existing company articles; 83 mapped to monitored issuers.
-- 85 pending review items; 17 recorded decisions.
+- 499 saved profiles checked against structural and issuer rules.
+- 94 existing company articles; 83 mapped to monitored issuers.
+- 87 pending review items; 17 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -18,6 +18,14 @@ ID: `05d9e53f1fdf6d05053a8d15`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/molina-healthcare-earnings-medicaid-margins.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `12c9af68758b858e87028ca9`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/anthropic-claude-outage-enterprise-agent-reliability-november-2026.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -53,6 +61,14 @@ Files: `content/wealth/anthropic-anvil-automated-red-teaming-safety-economics.md
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `6846a74417c329fc63f7faf5`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/databricks-always-on-genie-enterprise-agent-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `7272bceb0b72fa8cc9dc9b67`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
@@ -66,6 +82,14 @@ ID: `b08ae5372476782fde9168cc`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/anthropic-fable-mythos-52-pricing-routing-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `db2f004713638d126726a1ff`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/openai-chatgpt-wallet-agentic-checkout-economics.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -205,6 +229,16 @@ Files: `content/wealth/netflix-earnings-growth-advertising-outlook.md`, `content
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1065280/000106528026000291/nflx-20260930.htm · Q3 FY2026 · period end 2026-09-30 · filed 2026-10-21
 
+### SBUX · article_review · medium
+
+ID: `edde20dd7e920d9bbd392f80`
+
+Newer filing than the article review date; assess whether claims or outlook need updating.
+
+Files: `content/wealth/starbucks-earnings-turnaround-sales-china.md`, `content/earnings-profiles/sbux.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/829224/000082922426000162/sbux-20260927.htm · FY FY2026 · period end 2026-09-27 · filed 2026-11-12
+
 ### SMCI · article_review · medium
 
 ID: `ab776339c96d4026d9b3f214`
@@ -338,14 +372,6 @@ ID: `edeb84677b362b4bb3678657`
 No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.
 
 Files: `content/earnings-profiles/vmrk.json`
-
-### VYLR · coverage_check · medium
-
-ID: `e1439477f79e3601ba9b5aa7`
-
-No saved profile for an active issuer. Check ingestion and official filings; never fill gaps with estimates.
-
-Files: `content/earnings-profiles/vylr.json`
 
 ### AAPL · article_review · low
 
@@ -736,16 +762,6 @@ Baseline consistency review of this article against the saved company results an
 Files: `content/wealth/ralph-lauren-full-price-margin.md`, `content/earnings-profiles/rl.json`
 
 Saved evidence: https://www.sec.gov/Archives/edgar/data/1037038/000162828026070697/rl-20260926.htm · Q2 FY2027 · period end 2026-09-26 · filed 2026-11-05
-
-### SBUX · article_review · low
-
-ID: `cefa2faf3e6ad29a790e6f9c`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/starbucks-earnings-turnaround-sales-china.md`, `content/earnings-profiles/sbux.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/829224/000082922426000154/sbux-09272026xearningsrele.htm · FY FY2026 · period end 2026-09-27 · filed 2026-10-29
 
 ### T · article_review · low
 
