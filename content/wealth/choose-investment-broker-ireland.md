@@ -20,6 +20,10 @@ sources:
   url: https://www.centralbank.ie/consumer-hub/explainers/what-compensation-schemes-protect-consumers-of-authorised-firms
 - title: 'CCPC: Taxes and charges on investments'
   url: https://www.ccpc.ie/manage-your-money/saving-and-investments/investments/taxes-and-charges
+- title: 'CCPC: How the Investor Compensation Scheme protects you (verified 14 November 2026)'
+  url: https://www.ccpc.ie/manage-your-money/saving-and-investments/types-of-investment/ics-protection
+- title: 'Central Bank of Ireland: Deposit Guarantee Scheme (verified 14 November 2026)'
+  url: https://www.centralbank.ie/consumer-hub/deposit-guarantee-scheme
 ---
 
 **Investing in Ireland 101 · Chapter 6 of 9**
@@ -65,11 +69,23 @@ Regulation is an important layer of protection. It is not a guarantee of investm
 
 ## Investor compensation is not market-loss insurance
 
-For eligible clients of covered Irish-authorised investment firms, the Investor Compensation Scheme can compensate **90% of the net loss up to a maximum of €20,000** when a firm is unable to return money or investment instruments owed to the client.
+For eligible clients of covered Irish-authorised investment firms, the Investor Compensation Scheme (ICS) can compensate **90% of the eligible net loss, up to a maximum payout of €20,000**, if a firm cannot return money or investment instruments owed to the client. The [Central Bank explains the conditions for a claim](https://www.centralbank.ie/consumer-hub/explainers/what-compensation-schemes-protect-consumers-of-authorised-firms); the [CCPC cautions that authorisation alone does not guarantee eligibility](https://www.ccpc.ie/manage-your-money/saving-and-investments/types-of-investment/ics-protection). Coverage depends on the firm, the client, the investment and the circumstances of its failure.
 
-The Central Bank is explicit that this does not compensate ordinary market losses or poor investment performance.
+Neither ICS nor other investor-compensation arrangements insure you against ordinary stock-market losses, poor performance or unsuitable investment decisions. If you use a provider authorised elsewhere in the EEA, check the **specific legal entity** and its home-country investor-compensation scheme rather than assuming the Irish ICS applies.
 
-If you use a provider authorised elsewhere in the EEA, check which compensation scheme and legal protections apply to that entity.
+## Is cash at a broker protected like a bank deposit?
+
+**Not necessarily.** The Irish **Deposit Guarantee Scheme (DGS)** protects eligible current-account and savings deposits at covered banks, building societies and credit unions up to **€100,000 per person per institution**. It is not a guarantee of shares, ETFs or other market investments. See the [Central Bank's DGS explanation](https://www.centralbank.ie/consumer-hub/deposit-guarantee-scheme).
+
+Cash appearing as an "available balance" inside a brokerage app is **not automatically** an eligible bank deposit. Before relying on a protection limit, ask what the account agreement says about that cash: is it a deposit with a named credit institution, or client money held by an investment firm? Which **legal entity**, country and scheme apply, and what happens if that entity cannot return the money? A platform brand or app screen cannot answer those questions.
+
+| What can go wrong? | Protection to investigate | Important limit |
+| --- | --- | --- |
+| A covered Irish investment firm cannot return eligible client money or instruments | Investor Compensation Scheme | 90% of eligible net loss, capped at €20,000 |
+| A covered deposit-taking institution cannot repay eligible deposits | Deposit Guarantee Scheme | Up to €100,000 per person per institution |
+| Shares or funds lose market value | Neither scheme protects normal market losses | Investment risk remains with the investor |
+
+These are **different legal protections**, not two automatic layers of cover for one account. The Central Bank decides which scheme compensates where an investment is eligible under both. For savings that must remain readily available, compare the account's actual deposit eligibility and your time horizon before investing; the [before-you-invest cash and emergency-fund checklist](/wealth/before-you-invest-ireland/) explains that decision.
 
 ## Custody: where are the investments actually held?
 
@@ -279,6 +295,10 @@ Not necessarily. EEA firms may provide services cross-border, but you should und
 ### Does the Investor Compensation Scheme cover stock-market losses?
 
 No. The Central Bank states that the scheme is for eligible situations where an investment firm cannot return client money or instruments, not for ordinary market losses.
+
+### Is uninvested cash in a broker account covered by the €100,000 deposit guarantee?
+
+Do not assume so. The Deposit Guarantee Scheme covers **eligible deposits** at covered deposit-taking institutions; broker-held client money and investments can have different protections. Verify the named legal entity, how the cash is legally held, the applicable country and scheme, and the provider's client-money terms before relying on a headline guarantee.
 
 ### Are zero-commission brokers actually free?
 
