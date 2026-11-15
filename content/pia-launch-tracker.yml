@@ -1,0 +1,58 @@
+# Source-checked PIA / draft IIA launch milestones.
+# Update only after verifying a dated original source, never as an elapsed-time tick.
+# State "confirmed" = this HISTORICAL EVENT occurred; does not imply final law.
+# State "unverified" = no final supporting evidence at this checkpoint.
+# State "target" = stated future objective, not a guaranteed product release.
+checked: '2026-11-15'
+target_date: '2027-07-01'
+headline: 'Legislation proposed; provider launch details still to be confirmed'
+next_checkpoint: 'Verify the Finance Bill’s final text, commencement arrangements and Revenue operating guidance.'
+milestones:
+  - id: budget-2027
+    title: 'Investment account design announced'
+    state: confirmed
+    date: '2026-10-06'
+    date_label: '6 October 2026'
+    summary: 'Budget 2027 set the proposed €12,000 annual contribution cap and 1% charge above €50,000. These are announced policy terms, not an available account.'
+    source_label: 'Budget 2027 announcement'
+    source_url: 'https://www.rte.ie/news/business/2026/1006/1594235-investment-accounts-budget-2027/'
+  - id: revenue-forum
+    title: 'Revenue begins provider technical preparations'
+    state: confirmed
+    date: '2026-10-07'
+    date_label: '7 October 2026'
+    summary: 'Revenue invited providers and software partners to its technical forum covering account opening, eligibility and tax-reporting infrastructure.'
+    source_label: 'Revenue technical forum notice'
+    source_url: 'https://www.revenue.ie/ga/corporate/press-office/press-releases/2026/pr-100726-irish-investment-account.aspx'
+  - id: bill-introduced
+    title: 'Finance Bill introduces draft IIA rules'
+    state: confirmed
+    date: '2026-10-19'
+    date_label: '19 October 2026'
+    summary: 'Finance (No. 2) Bill 2026 was introduced. The draft calls the product an Individual Investment Account (IIA); introduction does not mean enactment.'
+    source_label: 'Oireachtas Bill 98/2026'
+    source_url: 'https://www.oireachtas.ie/en/bills/bill/2026/98/'
+  - id: enacted-law
+    title: 'Final law and commencement'
+    state: unverified
+    date_label: 'Not independently confirmed'
+    summary: 'The final enacted wording, any amendments and the relevant commencement order still require source verification. The introduced Bill is not treated as final law.'
+    source_label: 'Oireachtas legislation record'
+    source_url: 'https://www.oireachtas.ie/en/bills/bill/2026/98/'
+  - id: provider-terms
+    title: 'Provider fees and account opening'
+    state: unverified
+    date_label: 'Not yet verified'
+    summary: 'Providers have published pre-launch plans, but a complete verified PIA fee schedule and open application process have not been established in our tracker.'
+    source_label: 'Revenue implementation notice'
+    source_url: 'https://www.revenue.ie/ga/corporate/press-office/press-releases/2026/pr-100726-irish-investment-account.aspx'
+    internal_url: '/pia/providers/'
+    internal_label: 'View provider announcements'
+  - id: launch-target
+    title: 'Government’s planned opening date'
+    state: target
+    date: '2027-07-01'
+    date_label: '1 July 2027'
+    summary: 'This is the Government’s target for accounts to begin opening, subject to enacted legislation and individual providers being operationally ready. It is not a confirmed start date for any firm.'
+    source_label: 'Revenue: subject to enactment'
+    source_url: 'https://www.revenue.ie/ga/corporate/press-office/press-releases/2026/pr-100726-irish-investment-account.aspx'

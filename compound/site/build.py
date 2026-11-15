@@ -24,7 +24,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from compound.config import Settings
 from compound.site.finance_discovery import catalogue, source_links, write_discovery
-from compound.site.pia import load_pia_tracker
+from compound.site.pia import load_pia_tracker, load_pia_launch_tracker
 from compound.site.spending_explorer import prepare_spending_explorer
 from compound.site.spending_programmes import prepare_programmes
 from compound.site.spending_votes import prepare_votes
@@ -1655,13 +1655,14 @@ def build_site(settings: Settings) -> dict:
     # PIA Centre: retain the existing pillar article and tool URLs as canonicals.
     # Static provider facts live in a dated primary-source tracker, not code.
     pia_tracker = load_pia_tracker(settings.content_dir / "pia-providers.yml")
+    pia_launch = load_pia_launch_tracker(settings.content_dir / "pia-launch-tracker.yml")
     pia_providers = pia_tracker["providers"]
     pia_updated = pia_tracker["updated"]
     pia_referrals_active = any(p["referral"].get("active") for p in pia_providers)
     _write(out / "pia" / "index.html", env.get_template("pia_centre.html").render(
         title="Personal Investment Account Ireland", pillar="wealth", pia_page=True,
         providers=pia_providers, pia_updated=pia_updated,
-        pia_referrals_active=pia_referrals_active))
+        pia_referrals_active=pia_referrals_active, pia_launch=pia_launch))
     _write(out / "pia" / "providers" / "index.html", env.get_template("pia_providers.html").render(
         title="PIA Providers Ireland", pillar="wealth", pia_page=True,
         providers=pia_providers, pia_updated=pia_updated,

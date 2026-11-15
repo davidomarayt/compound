@@ -11,7 +11,7 @@
 <link rel="canonical" href="{{ site_url }}/pia/">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Compound","item":"{{ site_url }}/"},{"@type":"ListItem","position":2,"name":"Wealth","item":"{{ site_url }}/wealth/"},{"@type":"ListItem","position":3,"name":"Personal Investment Accounts","item":"{{ site_url }}/pia/"}]}</script>
 {% endblock %}
-{% block post_styles %}<link rel="stylesheet" href="/static/pia-centre.css?v=1">{% endblock %}
+{% block post_styles %}<link rel="stylesheet" href="/static/pia-centre.css?v=3">{% endblock %}
 {% block content %}
 <div class="pia-centre">
   <nav class="pia-crumbs" aria-label="Breadcrumb"><a href="/">Compound</a><span>/</span><a href="/wealth/">Wealth</a><span>/</span><span aria-current="page">PIA Centre</span></nav>
@@ -20,7 +20,7 @@
       <p class="eyebrow">COMPOUND WEALTH · PIA CENTRE</p>
       <h1>PIA Ireland: Personal Investment Account explained.</h1>
       <p class="pia-lede">A <strong>PIA (Personal Investment Account)</strong> is Ireland's proposed investment account for individuals. The planned 2027 scheme would allow eligible shares, funds and ETFs to be held under a simpler tax framework, with a proposed annual charge of 1% on average account value above €50,000.</p>
-      <div class="pia-actions"><a class="pia-button pia-button-primary" href="/wealth/personal-investment-account-ireland/">Start with the PIA guide <span aria-hidden="true">→</span></a><a class="pia-button" href="/pia-calculator/">Open PIA calculator <span aria-hidden="true">→</span></a><a class="pia-button" href="/pia/providers/">Compare providers <span aria-hidden="true">→</span></a></div>
+      <div class="pia-actions"><a class="pia-button pia-button-primary" href="#pia-launch-tracker">Track the PIA launch <span aria-hidden="true">↓</span></a><a class="pia-button" href="/wealth/personal-investment-account-ireland/">Read PIA guide <span aria-hidden="true">→</span></a><a class="pia-button" href="/pia-calculator/">PIA calculator <span aria-hidden="true">→</span></a><a class="pia-button" href="/pia/providers/">Compare providers <span aria-hidden="true">→</span></a></div>
       <p class="pia-note"><strong>Important:</strong> The scheme is not law yet. The announced 1 July 2027 opening is subject to legislation and provider readiness. Investments can lose value.</p>
     </div>
     <div class="pia-hero-aside" aria-label="Budget 2027 announced PIA features">
@@ -33,6 +33,54 @@
       <p>These are announced scheme features, not currently available provider products. <a href="/wealth/personal-investment-account-ireland/">Read the sources and outstanding questions →</a></p>
     </div>
   </header>
+  {% if pia_launch %}
+  <section class="pia-section pia-launch-section" id="pia-launch-tracker" aria-labelledby="pia-launch-heading">
+    <div class="pia-launch-topline">
+      <span class="pia-launch-kicker">2027 PIA LAUNCH WATCH</span>
+      <span class="pia-launch-checked">Sources checked <time datetime="{{ pia_launch.checked }}">{{ pia_launch.checked }}</time></span>
+    </div>
+    <div class="pia-launch-intro">
+      <div>
+        <h2 id="pia-launch-heading">PIA Ireland launch tracker</h2>
+        <p>Follow the milestones between the Government’s proposal and actual account availability. Every entry links to the evidence behind it. A published Bill is <strong>not</strong> the same as enacted legislation, and a provider’s intention is <strong>not</strong> an open account.</p>
+      </div>
+      <div class="pia-launch-date" role="note" aria-label="Government target launch date">
+        <span class="pia-launch-date-label">GOVERNMENT TARGET</span>
+        <strong><time datetime="{{ pia_launch.target_date }}">{{ pia_launch.milestones[-1].date_label }}</time></strong>
+        <span>Subject to legislation and provider readiness</span>
+      </div>
+    </div>
+    <div class="pia-launch-current">
+      <div><span class="pia-launch-current-label">CURRENT POSITION</span><p>{{ pia_launch.headline }}</p></div>
+      <a href="/pia/providers/">See provider announcements <span aria-hidden="true">→</span></a>
+    </div>
+    <ol class="pia-launch-list" aria-label="PIA launch milestones">
+    {% for milestone in pia_launch.milestones %}
+      <li class="pia-launch-item pia-launch-{{ milestone.state }}">
+        <span class="pia-launch-node" aria-hidden="true">{{ "%02d" | format(loop.index) }}</span>
+        <div class="pia-launch-item-body">
+          <div class="pia-launch-item-heading">
+            <h3>{{ milestone.title }}</h3>
+            <span class="pia-launch-state">
+              {% if milestone.state == "confirmed" %}Event verified{% elif milestone.state == "target" %}Target only{% else %}Not yet verified{% endif %}
+            </span>
+          </div>
+          <p class="pia-launch-milestone-date">{{ milestone.date_label }}</p>
+          <p class="pia-launch-summary">{{ milestone.summary }}</p>
+          <p class="pia-launch-sources">
+            <a href="{{ milestone.source_url }}" target="_blank" rel="noopener noreferrer">{{ milestone.source_label }} <span aria-hidden="true">↗</span></a>
+            {% if milestone.internal_url %}<a href="{{ milestone.internal_url }}">{{ milestone.internal_label }} <span aria-hidden="true">→</span></a>{% endif %}
+          </p>
+        </div>
+      </li>
+    {% endfor %}
+    </ol>
+    <div class="pia-launch-next">
+      <div><span class="pia-launch-current-label">NEXT EVIDENCE TO WATCH</span><p>{{ pia_launch.next_checkpoint }}</p></div>
+      <p>This is a <strong>dated editorial tracker, not real-time government data</strong>. An unchanged entry means no newer verified evidence has been added, not that nothing has happened. <a href="/wealth/personal-investment-account-ireland/">Read the full proposed rules</a>.</p>
+    </div>
+  </section>
+  {% endif %}
   <section class="pia-section pia-explainer" aria-labelledby="pia-explainer-title">
     <div class="pia-heading"><p class="eyebrow">PIA EXPLAINED</p><h2 id="pia-explainer-title">What is a PIA in Ireland?</h2></div>
     <p class="pia-answer">A <strong>Personal Investment Account (PIA)</strong> is a proposed Irish investment account for adults. You could contribute up to <strong>€12,000 each year</strong> and invest in eligible shares, bonds, funds and ETFs. Under the proposed rules, the provider would calculate an annual <strong>1% charge only on the average account value above €50,000</strong>. The account is not available yet and investment values can fall.</p>
