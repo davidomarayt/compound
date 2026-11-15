@@ -209,17 +209,13 @@ If you contribute €12,000 and the investments grow, the account can be worth m
 
 ### Do unused PIA allowances carry forward?
 
-That has not yet been clearly settled in the published high-level design.
-
-Do not assume that an unused €5,000 of one year's allowance automatically becomes extra contribution room in the next year unless the Finance Bill or subsequent guidance says so.
+Section 747H of the [Finance (No. 2) Bill 2026 as introduced](https://assets.gov.ie/static/documents/89edf30b/Finance_No._2_Bill_2026.pdf) defines a **€12,000 contribution limit for each year of assessment**. It does not set out a carry-forward allowance for unused room. **Do not assume unused contribution capacity can be carried into a later year.** Check the enacted legislation and Revenue guidance before relying on an allowance.
 
 ### Do withdrawals restore your contribution allowance?
 
-This also needs final legislative detail.
+**No, under the Bill as introduced.** Section 747L(2)(d) counts annual contributions **without reducing them for withdrawals**. For example, if you contribute €12,000 and withdraw €5,000 in the same tax year, the withdrawal does not create another €5,000 of normal contribution room that year.
 
-The roadmap confirms flexible withdrawals, but it does not establish that withdrawing €5,000 automatically gives you another €5,000 of contribution room in the same tax period.
-
-That distinction matters and will be updated here when the legislation provides the answer.
+These are proposed rules, not currently available account terms. The final enacted legislation may differ.
 
 <h2 id="how-pia-tax-works">How does the 1% Personal Investment Account tax work?</h2>
 
