@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-14",
+  "checked": "2026-11-15",
   "companies_checked": 10,
   "companies": {
     "spcx": {
@@ -18,7 +18,7 @@
       "company": "ASML Holding",
       "official_source": "https://www.asml.com/en/investors/financial-results",
       "regulatory": "SEC verified issuer: ASML HOLDING NV (937966)",
-      "official_source_status": "Unavailable; retry next run: HTTP Error 403: Forbidden"
+      "official_source_status": "Checked 36 relevant investor links"
     },
     "005930-ks": {
       "company": "Samsung Electronics",
@@ -203,6 +203,44 @@
       "https://investor.tsmc.com/english/quarterly-results/2026/q1",
       "https://investor.tsmc.com/english/quarterly-results/2026/q2",
       "https://investor.tsmc.com/english/quarterly-results/2026/q3"
+    ],
+    "asml": [
+      "https://www.asml.com/annual-reports",
+      "https://www.asml.com/en/investors/financial-results",
+      "https://www.asml.com/news-releases/news-release-details/q1-2025-financial-results",
+      "https://www.asml.com/news-releases/news-release-details/q1-2026-financial-results",
+      "https://www.asml.com/news-releases/news-release-details/q2-2025-financial-results",
+      "https://www.asml.com/news-releases/news-release-details/q2-2026-financial-results",
+      "https://www.asml.com/news-releases/news-release-details/q3-2025-financial-results",
+      "https://www.asml.com/news-releases/news-release-details/q4-2024-financial-results",
+      "https://www.asml.com/news-releases/news-release-details/q4-2025-financial-results",
+      "https://www.asml.com/quarterly-results",
+      "https://www.asml.com/static-files/02de5de4-f5ac-42f9-8bb1-29d8e12d31a4",
+      "https://www.asml.com/static-files/15940dc0-3caa-4d58-b7ef-40ec877a81ac",
+      "https://www.asml.com/static-files/1b28fd8d-b513-476a-85a3-58f046d8a1df",
+      "https://www.asml.com/static-files/27fd78c4-46f7-4165-ab63-b2b5dadf8de4",
+      "https://www.asml.com/static-files/4c406bf0-dcb6-4d60-ae04-55889e9f456b",
+      "https://www.asml.com/static-files/4fe3450c-f56c-473d-809a-3a7ae2b7fab3",
+      "https://www.asml.com/static-files/527ca72b-0950-4b3f-ad3e-4e41c66a0c34",
+      "https://www.asml.com/static-files/5d72946c-27e5-4b66-9c5a-b7e72a1286a5",
+      "https://www.asml.com/static-files/714e6b2c-37b2-462d-be28-b6ef8534017b",
+      "https://www.asml.com/static-files/7820a017-4c64-4f2e-9913-bd0145f3c06d",
+      "https://www.asml.com/static-files/78b1af6f-9c6e-4e5c-b229-a418251687ff",
+      "https://www.asml.com/static-files/8fd6dc1a-4981-4d42-a379-c881d81c44fd",
+      "https://www.asml.com/static-files/9211a754-65b9-42c5-8a88-a729603b0ee7",
+      "https://www.asml.com/static-files/928c4fda-b334-43e2-a5f0-b3c8413255c4",
+      "https://www.asml.com/static-files/971e7321-e687-48a3-88e0-c7de7af81243",
+      "https://www.asml.com/static-files/9cc85e13-83a9-4827-b635-9e090d00e1a6",
+      "https://www.asml.com/static-files/ac9c2486-9fbd-43ba-90ea-87a731488396",
+      "https://www.asml.com/static-files/bf399427-5ab8-495f-852c-407d771752bc",
+      "https://www.asml.com/static-files/ca792be8-ce2f-42f2-9b9a-97ae0d164814",
+      "https://www.asml.com/static-files/cb0839f6-8180-4c98-ba1a-a43348c3421d",
+      "https://www.asml.com/static-files/cf4f68b8-4c94-4467-bcda-7c4cf3978337",
+      "https://www.asml.com/static-files/d310262b-d037-485d-83b5-92c93cc462f0",
+      "https://www.asml.com/static-files/e145f386-45da-4965-b155-8984d1c22db5",
+      "https://www.asml.com/static-files/e1cd57c6-c048-4dcc-993e-25902d6b3f8f",
+      "https://www.asml.com/static-files/e299eae5-77b7-4d90-849d-ea372b94f509",
+      "https://www.asml.com/static-files/f1e1b6be-fdcf-478b-99f7-24d416548ff5"
     ]
   },
   "new_review_candidates": 0,
