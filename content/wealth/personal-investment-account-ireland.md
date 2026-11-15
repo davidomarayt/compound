@@ -21,6 +21,14 @@ news_image_query: "Irish person investing at home laptop investment portfolio eu
 sources:
   - title: "Department of Finance: Taxation of Retail Investment — A New Path Forward for Ireland. Roadmap published 31 August 2026; checked 6 October 2026."
     url: https://assets.gov.ie/static/documents/a5d640c2/Roadmap_for_the_Taxation_of_Retail_Investment.pdf
+  - title: "Houses of the Oireachtas: Finance (No. 2) Bill 2026, No. 98; introduced 19 October 2026. Legislative source checked 15 November 2026; latest completion stage not independently confirmed."
+    url: https://www.oireachtas.ie/en/bills/bill/2026/98/
+  - title: "Government of Ireland: Finance (No. 2) Bill 2026, as initiated; section 26 uses the statutory term individual investment account. Checked 15 November 2026."
+    url: https://assets.gov.ie/static/documents/89edf30b/Finance_No._2_Bill_2026.pdf
+  - title: "Revenue: Irish Investment Account Technical Group Forum, published 7 October 2026; target launch subject to enactment."
+    url: https://www.revenue.ie/ga/corporate/press-office/press-releases/2026/pr-100726-irish-investment-account.aspx
+  - title: "Houses of the Oireachtas: Finance (No. 2) Bill 2026 committee amendments, dated 3 November 2026; proposals, not enacted text."
+    url: https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/dail/3/amendment/numberedList/eng/b9826d-dcnl.pdf
   - title: "RTÉ: Irish Investment Account to open on 1 July 2027 — Budget 2027 announcement. 6 October 2026."
     url: https://www.rte.ie/news/business/2026/1006/1594235-investment-accounts-budget-2027/
   - title: "RTÉ: At a glance — key points from Budget 2027. 6 October 2026."
@@ -45,7 +53,7 @@ The account is intended to hold investments such as **shares, bonds, investment 
 
 That makes the PIA one of the biggest changes to ordinary investing in Ireland in years.
 
-But there is an important caveat at the outset: **the Personal Investment Account is not law yet**. Budget 2027 has announced the headline design, while the detailed legal framework is due through the Finance (No. 2) Bill 2026. Some operational rules can still change before accounts become available.
+But there is an important caveat: **this is a proposed account, not an account you can open today**. The [Finance (No. 2) Bill 2026, introduced on 19 October](https://www.oireachtas.ie/en/bills/bill/2026/98/), already contains the draft legal framework under the name **Individual Investment Account (IIA)**. The Bill as introduced is not the final law; committee amendments and commencement arrangements can change the rules. The planned 1 July 2027 opening remains subject to enactment and provider readiness.
 
 <div class="cs-intro" role="note">
 <p class="cs-kicker">What could a PIA mean for your savings?</p>
@@ -75,7 +83,7 @@ But there is an important caveat at the outset: **the Personal Investment Accoun
 
 <p><strong>Choose your next PIA step:</strong> <a href="/pia/">start at the PIA Centre</a>, <a href="/pia-calculator/">model growth and the proposed charge</a>, <a href="/pia/vs-pension/">compare PIA with a pension</a>, <a href="/pia/investment-eligibility/">check an ETF or share</a>, or <a href="/pia/providers/">check verified provider announcements</a>. Provider fees and final product details may still change.</p>
 
-<p class="pia-status"><strong>Last checked: 6 October 2026.</strong> This page separates what Budget 2027 has announced from details that still depend on the Finance Bill. We will update it as the legislation and provider terms are published.</p>
+<p class="pia-status"><strong>Legislative sources checked: 15 November 2026.</strong> Finance (No. 2) Bill 2026 was introduced on 19 October and names the proposed scheme the <em>Individual Investment Account (IIA)</em>. The 3 November committee amendments show that proposed terms can still change; the current final parliamentary stage was not independently verified. The 1 July 2027 launch remains subject to enactment and provider readiness. Provider references elsewhere retain their original source-check dates; this is not a whole-article editorial re-review.</p>
 
 <h2 id="pia-at-a-glance">Personal Investment Account Ireland: the rules at a glance</h2>
 
@@ -98,12 +106,12 @@ But there is an important caveat at the outset: **the Personal Investment Accoun
 <tr><th scope="row">Eligible investments</th><td>Listed shares, listed bonds, regulated-market instruments, retail funds including ETFs, and eligible insurance-based investment products</td></tr>
 <tr><th scope="row">Crypto and derivatives</th><td><strong>Excluded</strong></td></tr>
 <tr><th scope="row">Tax administration</th><td>Provider calculates, reports and pays PIA tax to Revenue</td></tr>
-<tr><th scope="row">Legislative status</th><td><strong>Announced, but not yet enacted</strong></td></tr>
+<tr><th scope="row">Legislative status</th><td><strong>Bill introduced 19 October 2026; final law and commencement not confirmed</strong>. Statutory draft calls it an Individual Investment Account (IIA).</td></tr>
 </tbody>
 </table>
 </div>
 
-The distinction between **announced** and **enacted** matters. The €50,000 threshold, 1% rate, €12,000 annual maximum and 1 July 2027 launch were announced in Budget 2027. The underlying account design comes from the Department of Finance roadmap. The Finance Bill still has to turn that policy into law.
+The distinction between **announced, proposed in legislation and enacted** matters. The €50,000 threshold, 1% rate, €12,000 annual maximum and 1 July 2027 target were announced in Budget 2027. The [Finance (No. 2) Bill as initiated](https://assets.gov.ie/static/documents/89edf30b/Finance_No._2_Bill_2026.pdf) contains detailed draft rules, including daily valuations, but its wording and commencement may change before the final legal framework applies.
 
 <h2 id="what-is-a-personal-investment-account">What is a Personal Investment Account (PIA)?</h2>
 
@@ -119,22 +127,23 @@ The Government's stated aim is to make investing **simpler, clearer and more acc
 
 This matters because the existing Irish system can treat direct shares, domestic funds, offshore funds, ETFs and life assurance products differently. If you are new to those distinctions, read our [Investment Tax in Ireland guide](/wealth/investment-tax-ireland/) and [Shares vs ETFs vs Funds guide](/wealth/shares-etfs-funds-ireland/) alongside this page.
 
-<h2 id="pia-name">PIA, Investment Account, SIA or Irish ISA: are they the same thing?</h2>
+<h2 id="pia-name">PIA or IIA in Ireland: what does the new investment account mean?</h2>
 
 You may see several names used for the new account:
 
-* **Personal Investment Account (PIA)**
-* **Investment Account**
-* **Savings and Investment Account (SIA)**
-* **Irish ISA**
+* **Individual Investment Account (IIA)** — the legal term used in section 26 of the proposed Finance (No. 2) Bill 2026
+* **Personal Investment Account (PIA)** — widely used in guides and by providers
+* **Investment Account** — broader policy shorthand
+* **Savings and Investment Account (SIA)** — wider European policy label
+* **Irish ISA** — an informal UK comparison, not the statutory Irish name
 
-The Department of Finance roadmap itself generally uses **Investment Account**, while Personal Investment Account has become widely used in industry and media coverage. Savings and Investment Account is another label used in the broader European policy discussion.
+The Department of Finance roadmap generally used **Investment Account**, while industry and media frequently use **Personal Investment Account**. However, [section 26 of the Bill as introduced](https://assets.gov.ie/static/documents/89edf30b/Finance_No._2_Bill_2026.pdf) calls the proposed scheme an **Individual Investment Account (IIA)**. This is the key official-name distinction: PIA is common shorthand, not the name used in that draft statute. The final enacted terminology must still be checked.
 
 “**Irish ISA**” is an informal comparison with the UK's Individual Savings Account. It is useful shorthand for the idea of a dedicated retail investment wrapper, but it is **not an accurate description of the tax design**.
 
 The Irish PIA is not simply a copy of a UK ISA. Under the Budget 2027 design, the Irish account has a 1% annual charge on account value above €50,000.
 
-For clarity, this guide uses **Personal Investment Account (PIA)** throughout.
+To preserve the established search terms and links, this guide keeps using **Personal Investment Account (PIA)** as familiar shorthand while identifying **Individual Investment Account (IIA)** as the Bill\'s draft legal term.
 
 <h2 id="when-does-pia-launch">When will the Personal Investment Account launch in Ireland?</h2>
 
@@ -715,7 +724,7 @@ If you are starting from scratch, the [Investing in Ireland 101 guide](/wealth/h
 <div role="listitem"><span>31 March 2026</span><p>The Government announces its intention to introduce an investment account at the Savings and Investment Forum.</p></div>
 <div role="listitem"><span>31 August 2026</span><p>The Department of Finance publishes its retail-investment roadmap and the high-level PIA design.</p></div>
 <div role="listitem"><span>6 October 2026</span><p>Budget 2027 sets the headline figures: €50,000 threshold, 1% annual charge above it, €12,000 maximum annual contribution and no minimum.</p></div>
-<div role="listitem"><span>Late 2026</span><p>Finance (No. 2) Bill 2026 is expected to provide the legislative framework and settle detailed rules.</p></div>
+<div role="listitem"><span>19 October 2026</span><p>Finance (No. 2) Bill 2026 was introduced with draft Individual Investment Account rules in section 26. Dáil committee amendments were published on 3 November; the final rules and commencement still require verification.</p></div>
 <div role="listitem"><span>1 July 2027</span><p>Government's planned launch date for the new Investment Account, subject to legislation and operational readiness.</p></div>
 </div>
 
@@ -849,7 +858,7 @@ Its headline design is easy to remember:
 
 **Planned launch: 1 July 2027.**
 
-The most important fact for now is that **Budget 2027 is not the final legal text**. The Finance Bill and provider terms will determine how the account works in practice.
+The most important fact for now is that **Budget 2027 is not the final legal text**. Finance (No. 2) Bill 2026 was introduced in October under the official draft name **Individual Investment Account**; the final enacted text, commencement arrangements and individual provider terms will determine how the account works in practice.
 
 Compound will keep this page as a living evergreen guide and update it when the legislation, Revenue guidance and actual PIA products are published.
 
