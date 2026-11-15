@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-14",
+  "checked": "2026-11-15",
   "listed": [
     {
       "slug": "spcx",
@@ -117,7 +117,7 @@
       "slug": "openai",
       "name": "OpenAI",
       "sector": "Artificial intelligence",
-      "summary": "AI models, products, infrastructure and governance.",
+      "summary": "AI models, products, infrastructure, governance, agent integrations and independent cross-system security testing.",
       "website": "https://openai.com/",
       "latest_development": {
         "date": "2026-11-13",
@@ -129,7 +129,7 @@
       "slug": "anthropic",
       "name": "Anthropic",
       "sector": "Artificial intelligence",
-      "summary": "Claude AI models, research and enterprise deployments.",
+      "summary": "Claude AI models, research, enterprise deployments and beta collaborative meeting workflows.",
       "website": "https://www.anthropic.com/",
       "latest_development": {
         "date": "2026-11-14",
@@ -160,8 +160,13 @@
       "slug": "stripe",
       "name": "Stripe",
       "sector": "Payments infrastructure",
-      "summary": "Payment processing and financial software infrastructure.",
-      "website": "https://stripe.com/"
+      "summary": "Payments infrastructure, bank-embedded merchant acceptance, financial services and software tooling.",
+      "website": "https://stripe.com/",
+      "latest_development": {
+        "date": "2026-11-10",
+        "text": "Stripe announced that eligible HSBC UK small-business customers can activate smartphone Tap to Pay in the HSBC Business Banking app. The partnership offers contactless acceptance without an extra card reader but discloses no merchant adoption, contract economics or separate revenue figures.",
+        "source": "https://stripe.com/newsroom/news/stripehsbc-power-tap-to-pay-for-uk-small-businesses"
+      }
     },
     {
       "slug": "revolut",
