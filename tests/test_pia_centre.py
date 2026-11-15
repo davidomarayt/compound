@@ -47,7 +47,7 @@ sponsorships: []
     assert '<link rel="canonical" href="https://example.test/pia/providers/">' in compare
     assert 'name="description"' in hub and 'name="description"' in compare
     assert '"@type":"BreadcrumbList"' in hub
-    assert "Personal Investment Accounts in Ireland" in hub
+    assert "PIA Ireland: Personal Investment Account explained." in hub
     assert "/wealth/personal-investment-account-ireland/" in hub
     assert "/pia-calculator/" in hub
     assert 'href="/pia/vs-pension/"' in hub
