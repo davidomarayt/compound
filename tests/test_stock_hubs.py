@@ -1,5 +1,6 @@
 """Stock hub URL, indexing, cross-linking and share-class regression coverage."""
 import json
+import re
 from compound.site.build import build_site
 
 
@@ -68,6 +69,25 @@ General advice, not about Alphabet or Apple.
     assert '<loc>https://example.test/wealth/earnings/company/googl/</loc>' not in sitemap
     directory = (root / "stocks/index.html").read_text(encoding="utf-8")
     assert "Showing 2 of 2 companies" in directory
+    assert '<nav class="earnings-crumb" aria-label="Breadcrumb">' in directory
+    assert '<a href="/wealth/">Wealth</a>' in directory
+    assert '<span aria-current="page">Stocks</span>' in directory
+    # Structured data must mirror the visible three-level breadcrumb hierarchy.
+    scripts = re.findall(
+        r'<script type="application/ld[+]json">(.*?)</script>',
+        directory, flags=re.DOTALL,
+    )
+    crumbs = [json.loads(s) for s in scripts if '"BreadcrumbList"' in s]
+    assert len(crumbs) == 1
+    assert crumbs[0] == {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Compound", "item": "https://example.test/"},
+            {"@type": "ListItem", "position": 2, "name": "Wealth", "item": "https://example.test/wealth/"},
+            {"@type": "ListItem", "position": 3, "name": "Stocks", "item": "https://example.test/stocks/"},
+        ],
+    }
     assert directory.index('href="/stocks/googl/"') < directory.index('href="/stocks/aapl/"')
     assert "S&amp;P 500" not in directory
     assert any(x["url"] == "/stocks/" for x in search)
