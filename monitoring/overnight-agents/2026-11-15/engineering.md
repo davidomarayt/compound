@@ -1,0 +1,37 @@
+# Compound overnight engineering and revenue — 2026-11-15 (Europe/Dublin)
+
+**Stage:** Research + Engineering; **7 Technical SEO**, **8 UX & Conversion**, **9 Revenue Optimisation**. Publishing/default branch verified against live GitHub metadata and the `.github/workflows/site.yml` Pages push trigger as `claude/clever-babbage-uibieq` before source edits. Read `AGENTS.md`, current runbook including 14 Nov efficiency gates, editorial index/inventory, 12–14 Nov specialist records, 15 Nov discovery/content records, recent private-company publication ledgers, the live public [Stocks directory](https://compound.ie/stocks/) and source templates/tests. **One substantive group PR, DRAFT and unmerged:** [#143](https://github.com/davidomarayt/compound/pull/143). Zero production merges/deployments/publications by this worker. Research and private-company roles are separately recorded in [research.md](research.md).
+
+## 7. Technical SEO — MEASURABLE SOURCE FIX STAGED, NOT LIVE
+
+**Pre-change confirmed discrepancy on 15 Nov:**
+- The publicly readable `/stocks/` directory visibly has **Compound / Wealth / Stocks** with the intermediary link `/wealth/`. Source file `compound/site/templates/stocks_hub.html` instead described a **two-item** `BreadcrumbList` JSON-LD of **Compound / Stocks**, omitting the visible Wealth intermediate step. The public `/wealth/` route is the actual linked site hierarchy. This is a source-backed semantic/canonical consistency issue, **not** a claim of ranking impact.
+- The private-company directory and profiles had their own distinct breadcrumb semantics improved in 12–14 Nov PRs; this specific `stocks_hub.html` file remained unchanged. Open PR audit includes draft PIA #142, site verification #119, publication ledger #120, spending proposal #127, #57 and #43, none of which changes `stocks_hub.html` or `tests/test_stock_hubs.py` in the checked state. No duplicate news or article URL was created.
+
+**Single staged [draft PR #143](https://github.com/davidomarayt/compound/pull/143)**, head `a66906e8e3b2a347c384cb92fc2f34213edc60e5`:
+- `compound/site/templates/stocks_hub.html`: aligns JSON-LD `BreadcrumbList` item order and canonical targets with the **visible** `/` → `/wealth/` → `/stocks/` route. Generates JSON-safe URLs with Jinja `tojson`, not hand-built unescaped string interpolation.
+- `tests/test_stock_hubs.py`: adds deterministic assertions on **built** directory HTML for one and only one BreadcrumbList and exact three-node context/type/names/positions/absolute canonical URLs, plus visible Wealth link and current-page semantics. Existing stock profile, sitemap, search-index and index-flag regression checks remain in place.
+- No new pages, rankings or performance claims; no changes to public/private security classifications, robots, sitemap, redirect behavior, article publishing, ads, consent, secrets, sources, finance calculations, marketing copy or image assets.
+
+**CI / review state captured at 03:xx UTC:** [GitHub Actions PR run 43670543875](https://github.com/davidomarayt/compound/actions/runs/43670543875) is tied to exact proposed head `a66906e8e3b2a347c384cb92fc2f34213edc60e5`. The **test** job was **IN PROGRESS** when checked; **performance + `compound build` not yet completed/verified**. The local execution container cannot resolve github.com for a full repository clone, so no full-suite local-test claim. A GitHub combined commit status for an unrelated `compound-solar-api` Vercel deployment returned success, which **is not** this site's GitHub Pages CI or deployment evidence. Any later CI result must be checked against the **current head** before QA; pass/failure not predicted here.
+- Worker verified via PR source diff that the proposal changes **only these two files** and did not merge. PR remained **OPEN / DRAFT / UNMERGED** at last GitHub inspection; no public newly rendered schema or production ad presence has been claimed from it.
+- **Risk:** low, additive three-level schema and current-page annotation. **Rollback:** revert precisely these two files if tests or eventual public HTML reveal a regression. Independent 06:30 QA must confirm exact-head full CI, changed files, generated HTML JSON-LD/Wealth link, head/base mergeability, standard AdSense/consent/index safety and current public routes before deciding on any expected-head merge. Only after a genuine Pages deploy and raw public HTML check can this be counted live.
+
+## 8. UX & Conversion — ACCESSIBILITY IMPROVEMENT STAGED WITH SAME PR
+
+- The `stocks_hub.html` breadcrumb's final **Stocks** label was plain text; [PR #143](https://github.com/davidomarayt/compound/pull/143) wraps **only** that final label in `<span aria-current="page">Stocks</span>`, consistently identifying the current location for assistive technology. Earlier **Compound** and **Wealth** links remain unchanged.
+- Stock name/ticker search, sector filter, table semantics, table counts, existing scripts, visible wording, CSS and navigation links remain intact. The fixture adds a rendered-HTML assertion. **No mobile device or screen-reader session and no conversion/uplift measurement were performed**; this is a source-level accessibility improvement pending full CI and production verification. No manipulative funnel or tracking change.
+
+## 9. Revenue Optimisation — BLOCKED_DATA_ACCESS, seven-day backoff respected
+
+- **Most recent verified connection check: 14 Nov 2026, not rerun today**. The [14 Nov engineering report](../2026-11-14/engineering.md) documents Supermetrics AdSense `ADM` account authentication but actual aggregate reporting returned `TRIAL_EXPIRED` (trial expired **19 Oct 2026**). GSC `GW` and GA4 `GAWA` were `NOT_AUTHENTICATED`. In accordance with the newly approved seven-day backoff, no retry or fresh paid data-source integration was attempted. Resume reporting if access changes, else no sooner than the permitted weekly recheck; **no verified current earnings, page RPM, CTR, fill, user conversions or revenue attribution** exist for this run.
+- Inspected existing `compound/site/templates/base.html`: the public site has a standard AdSense loader for eligible nonpreview pages independent of human-review state, with distinct GA consent/privacy controls. PR #143 does **not touch** the template, ads, slots, tracking, CMP or data flows. **No actual post-change ad loader/fill has been observed**, so none is claimed.
+- No speculative ad layout/placement or account-setting change. **Disposition:** blocked pending authorised GA4/AdSense reporting access. This is not a production ad hold.
+
+## QA handoff and overall state
+
+- **Technical SEO:** 1 validated source discrepancy, 1 draft PR, test/build CI **pending**, 0 merged or verified live.
+- **UX & Conversion:** 1 accessible navigation improvement in same draft, no separate PR, no claimed conversion effect.
+- **Revenue Optimisation:** `BLOCKED_DATA_ACCESS` (last checked 14 Nov), no metrics or ad changes.
+- **Original Research and Private Company Intelligence:** distinct statuses in `research.md`, both `NO_ACTION` after source/ledger dedup; no fabricated nightly briefs or competing articles.
+- **06:30 Editor QA:** review [#143](https://github.com/davidomarayt/compound/pull/143) on its **actual** head after CI completion and current base/conflict checks. Do not infer publication from the GitHub PR or separate Vercel success; preserve normal ads on genuinely published articles, truthful internal review and consent controls.
