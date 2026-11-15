@@ -143,7 +143,7 @@ The Department of Finance roadmap generally used **Investment Account**, while i
 
 The Irish PIA is not simply a copy of a UK ISA. Under the Budget 2027 design, the Irish account has a 1% annual charge on account value above €50,000.
 
-To preserve the established search terms and links, this guide keeps using **Personal Investment Account (PIA)** as familiar shorthand while identifying **Individual Investment Account (IIA)** as the Bill\'s draft legal term.
+To preserve the established search terms and links, this guide keeps using **Personal Investment Account (PIA)** as familiar shorthand while identifying **Individual Investment Account (IIA)** as the Bill’s draft legal term.
 
 <h2 id="when-does-pia-launch">When will the Personal Investment Account launch in Ireland?</h2>
 
