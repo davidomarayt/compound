@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-14
+Checked: 2026-11-15
 
 - 499 saved profiles checked against structural and issuer rules.
-- 94 existing company articles; 83 mapped to monitored issuers.
-- 87 pending review items; 17 recorded decisions.
+- 97 existing company articles; 83 mapped to monitored issuers.
+- 90 pending review items; 17 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -53,6 +53,22 @@ Files: `content/wealth/shopify-merchant-sales-cash-flow.md`
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `22f61eb2c07d128d93b56315`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/stripe-hsbc-tap-to-pay-bank-distribution-small-business.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `29d13142a8df3da39e83060c`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/anthropic-claude-meetings-live-work-enterprise-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `6605e416085729d965f45d56`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
@@ -98,6 +114,14 @@ ID: `e8a450658190ddaca84a3d55`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/michael-carrick-sacked-manchester-united-manu-stock.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `ff3f2904626f84a5a47a2857`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/openai-hacktron-agent-security-third-party-risk.md`
 
 ### AAPL · article_review · medium
 
