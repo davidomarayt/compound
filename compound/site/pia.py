@@ -6,6 +6,7 @@ after an explicit approved partner configuration. No unknown fee is ever treated
 from __future__ import annotations
 
 import math
+from datetime import date
 import re
 from pathlib import Path
 from urllib.parse import urlparse
@@ -114,3 +115,74 @@ def load_pia_tracker(path: Path) -> dict:
         "sponsorships": [s for s in sponsors if s.get("active")],
         "complete_fee_count": sum(p["fee_model"]["verified"] for p in providers),
     }
+
+
+LAUNCH_MILESTONE_STATES = {"confirmed", "unverified", "target"}
+
+
+def load_pia_launch_tracker(path: Path) -> dict | None:
+    """Load a dated, cited editorial launch tracker. Missing test fixtures omit it.
+
+    Confirmed milestones describe *past events*, never enactment by implication.
+    Future target dates remain conditional on law and provider readiness.
+    """
+    if not path.is_file():
+        return None
+    data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict):
+        raise ValueError("PIA launch tracker must be a mapping")
+    try:
+        checked = date.fromisoformat(str(data["checked"]))
+        target = date.fromisoformat(str(data["target_date"]))
+    except (KeyError, ValueError, TypeError) as exc:
+        raise ValueError("PIA tracker requires valid checked and target_date") from exc
+    if target <= checked:
+        raise ValueError("PIA planned launch must follow source-check date")
+    for key in ("headline", "next_checkpoint"):
+        if not str(data.get(key) or "").strip():
+            raise ValueError(f"PIA tracker missing {key}")
+    milestones = data.get("milestones")
+    if not isinstance(milestones, list) or len(milestones) < 4:
+        raise ValueError("PIA tracker requires at least four sourced milestones")
+    seen = set()
+    states = set()
+    for item in milestones:
+        if not isinstance(item, dict):
+            raise ValueError("PIA launch milestone must be a mapping")
+        ident = str(item.get("id") or "")
+        if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", ident) or ident in seen:
+            raise ValueError(f"Duplicate or invalid PIA milestone id: {ident}")
+        seen.add(ident)
+        state = item.get("state")
+        if state not in LAUNCH_MILESTONE_STATES:
+            raise ValueError(f"PIA milestone {ident} has unsupported state")
+        states.add(state)
+        for key in ("title", "date_label", "summary", "source_label"):
+            if not str(item.get(key) or "").strip():
+                raise ValueError(f"PIA milestone {ident} missing {key}")
+        _https_url(item.get("source_url"), f"{ident} milestone source")
+        raw_date = item.get("date")
+        if state in {"confirmed", "target"}:
+            if not raw_date:
+                raise ValueError(f"PIA milestone {ident} requires a specific source-backed date")
+            try:
+                event_day = date.fromisoformat(str(raw_date))
+            except (ValueError, TypeError) as exc:
+                raise ValueError(f"PIA milestone {ident} date is invalid") from exc
+            if state == "confirmed" and event_day > checked:
+                raise ValueError(f"Future PIA event {ident} cannot be marked confirmed")
+            if state == "target" and event_day != target:
+                raise ValueError(f"PIA target milestone {ident} must match published target date")
+        elif raw_date:
+            raise ValueError(f"Unverified milestone {ident} cannot present a dated event")
+        if item.get("internal_url") and item["internal_url"] != "/pia/providers/":
+            raise ValueError(f"PIA milestone {ident} uses an unapproved internal URL")
+        if item.get("internal_url") and not str(item.get("internal_label") or "").strip():
+            raise ValueError(f"PIA milestone {ident} needs an internal link label")
+    if not {"confirmed", "unverified", "target"}.issubset(states):
+        raise ValueError("PIA tracker must distinguish verified, unverified and target statuses")
+    if milestones[-1]["state"] != "target" or sum(m["state"] == "target" for m in milestones) != 1:
+        raise ValueError("PIA tracker must finish with exactly one proposed launch target")
+    return {"checked": checked.isoformat(), "target_date": target.isoformat(),
+            "headline": str(data["headline"]), "next_checkpoint": str(data["next_checkpoint"]),
+            "milestones": milestones}
