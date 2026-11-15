@@ -94,3 +94,12 @@ def test_pia_short_head_search_landing_and_intent_separation(settings):
     assert 'href="/pia/vs-pension/"' in hub
     assert 'href="/pia/"' in wealth
     assert '<link rel="canonical" href="https://example.test/pia/">' in hub
+
+
+def test_pia_source_dataset_download_is_linked(settings):
+    build_site(settings)
+    hub = (settings.public_dir / "pia" / "index.html").read_text(encoding="utf-8")
+    providers = (settings.public_dir / "pia" / "providers" / "index.html").read_text(encoding="utf-8")
+    assert '/static/pia-provider-sources.csv' in hub
+    assert '/static/pia-provider-sources.csv' in providers
+    assert (settings.public_dir / "static" / "pia-provider-sources.csv").exists()
