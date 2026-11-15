@@ -27,6 +27,7 @@
       <span class="pia-small">Checked {{ pia_updated }}</span>
     </div>
     <p class="pia-small">Published intentions are not live products. The government scheme is pending legislation and all PIA-specific provider fees shown as <strong>Not published</strong> are unknown — not zero.</p>
+    <p class="pia-small"><strong>{{ providers | length }} official-source provider statements</strong> checked as of {{ pia_updated }}. <a href="/static/pia-provider-sources.csv" download>Download the source list (CSV)</a> for research and citation. This dataset is not a list of live accounts or confirmed fees.</p>
     <div class="pia-filter-panel" aria-label="Filter PIA providers">
       <div class="pia-control">
         <label for="pia-provider-search">Search providers</label>
@@ -153,6 +154,7 @@
   </section>
   <section class="pia-section pia-transparency">
     <h2>How this comparison is compiled</h2>
+    <p><strong>Citable evidence:</strong> <a href="/static/pia-provider-sources.csv" download>Download the PIA provider statement data (CSV)</a>, with provider status, date checked and the organisation's own source URL. Cite this original compilation as “Compound.ie PIA provider tracker, checked {{ pia_updated }}”, linking to <a href="/pia/providers/">the current tracker</a>. Always verify current provider information; external source material belongs to its respective publisher.</p>
     <p>We include providers with a directly attributable public statement about Ireland's planned scheme. All entries have a link to the organisation's own published information and are listed alphabetically. We do not rank or recommend providers while fees and product documents are unavailable. Changes must be verified against an official provider source before the tracker is updated.</p>
     <p>Any paid referral or sponsorship is separately labelled and requires an approved partner agreement. Unpaid provider source links are not affiliate links. If sponsorship or affiliate relationships are added, they will be visibly labelled and editorial criteria will remain independent. Investment values can fall and returns are not guaranteed. This is general information, not personal investment advice.</p>
     <p><a href="/pia/">← Return to the PIA Centre</a> · <a href="/wealth/personal-investment-account-ireland/">Read the full PIA guide</a>.</p>

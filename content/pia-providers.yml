@@ -1,7 +1,7 @@
 # Compound PIA comparison — official-provider statements only.
 # PIA-specific fees and referral contracts are NOT yet verified.
 # Future sponsored/referral placements require approval and a disclosed paid relationship.
-updated: '2026-10-10'
+updated: '2026-11-15'
 providers:
   - name: AIB
     slug: aib
@@ -17,9 +17,31 @@ providers:
     minimum_investment: 'Not published'
     transfer_terms: 'Not published'
     investment_range: 'Not published'
-    checked: '2026-10-10'
+    checked: '2026-11-15'
     source_url: 'https://www.aib.ie/make-a-plan/investments/personal-investment-account'
     source_label: 'AIB — Personal Investment Account'
+    fee_model:
+      verified: false
+    referral:
+      active: false
+      approved: false
+  - name: Bank of Ireland
+    slug: bank-of-ireland
+    category: Bank
+    stage: intent
+    status: 'PIA information published; product launch pending'
+    statement: 'Bank of Ireland has published a Personal Investment Account information page and says it will publish application details when the product launches. Specific account terms remain unconfirmed.'
+    availability: 'Not open yet'
+    annual_fee: 'Not published'
+    dealing_fee: 'Not published'
+    fund_fee: 'Not published'
+    fx_fee: 'Not published'
+    minimum_investment: 'Not published'
+    transfer_terms: 'Not published'
+    investment_range: 'Full PIA product range not published'
+    checked: '2026-11-15'
+    source_url: 'https://personalbanking.bankofireland.com/save-and-invest/investments/personal-investment-account/'
+    source_label: 'Bank of Ireland — Personal Investment Account'
     fee_model:
       verified: false
     referral:
@@ -39,9 +61,31 @@ providers:
     minimum_investment: 'Not published'
     transfer_terms: 'Not published'
     investment_range: 'Full PIA product range not published'
-    checked: '2026-10-10'
+    checked: '2026-11-15'
     source_url: 'https://www.irishlife.ie/investments/pia/'
     source_label: 'Irish Life — Personal Investment Accounts'
+    fee_model:
+      verified: false
+    referral:
+      active: false
+      approved: false
+  - name: PTSB
+    slug: ptsb
+    category: Bank
+    stage: launch-planned
+    status: 'Plans to offer from July 2027'
+    statement: 'PTSB says it will offer its Personal Investment Account from 1 July 2027, subject to implementation. No PIA-specific fee schedule is published.'
+    availability: 'Not open yet'
+    annual_fee: 'Not published'
+    dealing_fee: 'Not published'
+    fund_fee: 'Not published'
+    fx_fee: 'Not published'
+    minimum_investment: 'Not published'
+    transfer_terms: 'Not published'
+    investment_range: 'Full PIA product range not published'
+    checked: '2026-11-15'
+    source_url: 'https://www.ptsb.ie/saving-and-investing/investments/state-investment-account/'
+    source_label: 'PTSB — Personal Investment Account'
     fee_model:
       verified: false
     referral:
@@ -61,7 +105,7 @@ providers:
     minimum_investment: 'Not published'
     transfer_terms: 'Not published'
     investment_range: 'Funds discussed; individual options not published'
-    checked: '2026-10-10'
+    checked: '2026-11-15'
     source_url: 'https://www.zurich.ie/blog/a-guide-to-irelands-new-investment-account/'
     source_label: 'Zurich — Guide to Ireland’s new Investment Account'
     fee_model:
