@@ -54,3 +54,14 @@ a.pia-link-card:hover{border-color:#b88976;box-shadow:0 7px 20px rgba(32,18,23,.
 /* Four question-led PIA centre decisions, two wide cards per row. */
 .pia-link-grid-four{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:620px){.pia-link-grid-four{grid-template-columns:1fr}}
+
+/* Concise, source-linked explanations for PIA short-head search intent. */
+.pia-explainer>p:not(.pia-small),.pia-faq-item p{font-size:16px;line-height:1.7;color:var(--pia-muted);max-width:900px}
+.pia-explainer .pia-answer{font-size:19px!important;color:var(--pia-ink)!important;line-height:1.65!important;font-weight:450}
+.pia-explainer a,.pia-faq-item a{color:var(--pia-accent);text-decoration:underline;text-underline-offset:3px}
+.pia-example{max-width:920px;background:var(--pia-soft);border-left:4px solid var(--pia-accent);padding:22px 26px;margin:25px 0;border-radius:0 9px 9px 0}
+.pia-example h3{font-family:Georgia,serif;font-size:25px;margin:0 0 8px}.pia-example p{font-size:15px;line-height:1.65;margin:9px 0}
+.pia-faq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px}
+.pia-faq-item{border-top:1px solid var(--pia-line);padding:23px 0 18px}.pia-faq-item h3{font-family:Georgia,serif;font-size:21px;line-height:1.25;margin:0 0 10px}
+.pia-faq-item p{font-size:15px;margin:0}
+@media(max-width:620px){.pia-faq-grid{grid-template-columns:1fr}.pia-example{padding:18px 17px}.pia-explainer .pia-answer{font-size:17px!important}}
