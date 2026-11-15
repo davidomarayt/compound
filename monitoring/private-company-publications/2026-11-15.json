@@ -1,0 +1,144 @@
+{
+  "date": "2026-11-15",
+  "timezone": "Europe/Dublin",
+  "run_type": "private_company_daily",
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "automation/private-company-2026-11-15",
+  "target_new_articles": 3,
+  "status": "prepared_pending_pr_validation",
+  "confirmed_live_new_articles": 0,
+  "human_editorial_status": "not_reviewed_by_human",
+  "ads_policy": "Require standard site advertising on every released article and company hub, independent of human review; preserve existing CMP/privacy controls",
+  "editorial_quality_gate": "Original evidence-led theses; 6/10/12 November primary source dates checked on 15 November. Photo provenance checked at Commons. Not published until CI, branch protection and production canonical/cover/social/ad verification pass.",
+  "duplication_checks": {
+    "editorial_index_snapshot": "2026-11-14",
+    "recent_overlap": "OpenAI security across connected services distinct from Wallet payment, Business Agents merchant discovery and AWS enterprise procurement; Anthropic in-meeting artefact completion distinct from outages, pricing and Anvil safety; Stripe bank-embedded UK card acceptance distinct from Revolut-Uber consumer rewards and OpenAI Wallet.",
+    "competing_workflows": "Last 14 days editorial index and latest PRs checked; Daily Company Analysis and Mag 8 remain separate, topical overlap avoided",
+    "new_page_count_cap": 3
+  },
+  "articles": [
+    {
+      "company": "OpenAI",
+      "slug": "openai",
+      "event_date": "2026-11-06",
+      "article_path": "content/wealth/openai-hacktron-agent-security-third-party-risk.md",
+      "story_fingerprint": "2026-11-06-openai-hacktron-cross-service-agent-security-risk",
+      "primary_source_urls": [
+        "https://openai.com/index/partnering-with-hacktron/",
+        "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai/"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:V20230504LJ-0199-2.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/V20230504LJ-0199-2.jpg",
+      "photo_focal_y": 0.5,
+      "image_license": "US federal government work (public domain)",
+      "photo_provenance": "Lawrence Jackson / The White House, May 4 2023, documentary group archival photograph, cropped",
+      "claim_checks": [
+        "OpenAI announced Hacktron partnership 6 Nov; joint tests focus on third-party integrations, access via Daybreak Red",
+        "No disclosed contract value, audited benefit or claim of complete security",
+        "White House May 2023 photograph of AI executives is clearly marked archival, not 2026 event",
+        "Illustrative coverage 10/40 leaves 75% untested; 15/20 remediations=75%; not vendor results"
+      ],
+      "canonical_url": "https://compound.ie/wealth/openai-hacktron-agent-security-third-party-risk/",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "not_deployed",
+      "status": "prepared_pending_ci"
+    },
+    {
+      "company": "Anthropic",
+      "slug": "anthropic",
+      "event_date": "2026-11-12",
+      "article_path": "content/wealth/anthropic-claude-meetings-live-work-enterprise-economics.md",
+      "story_fingerprint": "2026-11-12-anthropic-claude-meetings-live-collaboration-roi-privacy",
+      "primary_source_urls": [
+        "https://claude.com/resources/articles/claude-meetings",
+        "https://support.claude.com/en/articles/18325154-use-claude-meetings"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:The_Prime_Minister_meets_with_AI_developers_-_52923196475.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/The_Prime_Minister_meets_with_AI_developers_-_52923196475.jpg",
+      "photo_focal_y": 0.5,
+      "image_license": "CC BY 2.0",
+      "photo_provenance": "Simon Walker / UK Prime Minister, 24 May 2023, 10 Downing Street executives in discussion, archival cropped",
+      "claim_checks": [
+        "Official 12 Nov article confirms Claude Meetings beta rollout Team and Enterprise, Google Meet initially",
+        "Default external-attendee restrictions, transcript not audio, connected-tool permission confirmed from primary",
+        "Free notes/answers in beta subject to usage exceptions; generated artefacts free through Feb 10 2027, not forever",
+        "Illustrative follow-up 135/2-20=47.5 minutes; €50 per hour gives €39.58 not company savings"
+      ],
+      "canonical_url": "https://compound.ie/wealth/anthropic-claude-meetings-live-work-enterprise-economics/",
+      "profile_url": "https://compound.ie/companies/anthropic/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "not_deployed",
+      "status": "prepared_pending_ci"
+    },
+    {
+      "company": "Stripe",
+      "slug": "stripe",
+      "event_date": "2026-11-10",
+      "article_path": "content/wealth/stripe-hsbc-tap-to-pay-bank-distribution-small-business.md",
+      "story_fingerprint": "2026-11-10-stripe-hsbc-uk-embedded-tap-to-pay-distribution",
+      "primary_source_urls": [
+        "https://stripe.com/newsroom/news/stripehsbc-power-tap-to-pay-for-uk-small-businesses",
+        "https://www.lloydsbankinggroup.com/media/press-releases/2026/lloyds/lloyds-and-stripe.html"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Patrick_Collison.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Patrick_Collison.jpg",
+      "photo_focal_y": 0.44,
+      "image_license": "CC BY 2.0",
+      "photo_provenance": "JD Lasica, 10 February 2015, Patrick Collison archival portrait, cropped",
+      "claim_checks": [
+        "10 November release describes eligible HSBC UK SMBs accepting supported contactless on compatible phones via app",
+        "No HSBC contract price, merchant activation, transaction fees or Stripe deal revenue disclosed",
+        "Lloyds collaboration dated 9 June 2026, separate bank partnership",
+        "Hypothetical £15 reader rental and 5p marginal fee breaks even at 300 transactions/month"
+      ],
+      "canonical_url": "https://compound.ie/wealth/stripe-hsbc-tap-to-pay-bank-distribution-small-business/",
+      "profile_url": "https://compound.ie/companies/stripe/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "not_deployed",
+      "status": "prepared_pending_ci"
+    }
+  ],
+  "profile_updates": [
+    {
+      "slug": "openai",
+      "status": "updated_summary_preserved_latest",
+      "description": "Summary now notes independent cross-system security testing; retained later 13 Nov Wallet as latest development."
+    },
+    {
+      "slug": "anthropic",
+      "status": "updated_summary_preserved_latest",
+      "description": "Summary now includes collaborative meeting beta; retained later 14 Nov outage as latest."
+    },
+    {
+      "slug": "stripe",
+      "status": "updated_sourced_latest",
+      "date": "2026-11-10",
+      "source": "https://stripe.com/newsroom/news/stripehsbc-power-tap-to-pay-for-uk-small-businesses"
+    }
+  ],
+  "production_deployment": {
+    "status": "not_started",
+    "confirmed_live_urls": 0,
+    "branch_protection": "previously reported disabled; must recheck before merge"
+  },
+  "updated_at_utc": "2026-11-15"
+}
