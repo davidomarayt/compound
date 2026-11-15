@@ -25,7 +25,7 @@ sources:
 - title: "OpenAI — Partnering with Hacktron, 6 November 2026"
   url: https://openai.com/index/partnering-with-hacktron/
 - title: "OpenAI — Preparing our next security sprint, 2 November 2026"
-  url: https://openai.com/index/preparing-our-next-security-sprint/
+  url: https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai/
 - title: "OpenAI — Introducing ChatGPT Wallet, 13 November 2026"
   url: https://openai.com/index/introducing-chatgpt-wallet/
 - title: "Wikimedia Commons — Lawrence Jackson White House photograph, US public domain"
