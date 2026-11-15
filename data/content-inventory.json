@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-14",
+  "snapshot_date": "2026-11-15",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -267,6 +267,28 @@
           "an-post",
           "parcels",
           "consumer-services"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Anthropic Wants Claude to Work During Meetings. Will That Reduce the Follow-Up?",
+        "url": "/wealth/anthropic-claude-meetings-live-work-enterprise-economics/",
+        "source": "content/wealth/anthropic-claude-meetings-live-work-enterprise-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "anthropic-claude-meetings-live-work-enterprise-economics",
+        "date": "2026-11-15",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-anthropic",
+          "anthropic",
+          "enterprise-ai",
+          "meetings",
+          "productivity",
+          "ai-agents"
         ],
         "status": "published"
       },
@@ -3629,6 +3651,27 @@
         "status": "published"
       },
       {
+        "title": "OpenAI's Hacktron Partnership Puts Agent Security at the Integration Layer",
+        "url": "/wealth/openai-hacktron-agent-security-third-party-risk/",
+        "source": "content/wealth/openai-hacktron-agent-security-third-party-risk.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-hacktron-agent-security-third-party-risk",
+        "date": "2026-11-15",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "cybersecurity",
+          "agent-security",
+          "enterprise-risk"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Ozempic, Wegovy & Mounjaro: medical card cover in Ireland",
         "url": "/health/glp1-hse-medical-card-ireland/",
         "source": "content/health/glp1-hse-medical-card-ireland.md",
@@ -4762,6 +4805,28 @@
           "wellbeing",
           "work-life",
           "hse"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Stripe Is Going Through HSBC's Banking App. Can That Change Small-Business Payments?",
+        "url": "/wealth/stripe-hsbc-tap-to-pay-bank-distribution-small-business/",
+        "source": "content/wealth/stripe-hsbc-tap-to-pay-bank-distribution-small-business.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "stripe-hsbc-tap-to-pay-bank-distribution-small-business",
+        "date": "2026-11-15",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-stripe",
+          "stripe",
+          "payments",
+          "hsbc",
+          "tap-to-pay",
+          "small-business"
         ],
         "status": "published"
       },
