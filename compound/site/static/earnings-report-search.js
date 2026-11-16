@@ -26,7 +26,9 @@
     article.className = 'earnings-card';
     const kicker = document.createElement('p');
     kicker.className = 'earnings-kicker';
-    kicker.textContent = 'SEC-VERIFIED FINANCIAL REPORT · FILED ' + (entry.filed || 'Date unavailable');
+    kicker.textContent = (entry.from_release
+      ? 'COMPANY RESULTS · PUBLISHED '
+      : 'SEC-VERIFIED FINANCIAL REPORT · FILED ') + (entry.filed || 'Date unavailable');
     const heading = document.createElement('h3');
     const headingLink = document.createElement('a');
     headingLink.href = entry.url;
@@ -50,7 +52,7 @@
     results.replaceChildren();
     if (!searching) {
       status.textContent = 'Showing ' + recent.querySelectorAll('[data-earnings-recent-card]').length +
-        ' latest filings. Search to find earlier company reports.';
+        ' recent company results. Search to find earlier reports and releases.';
       return;
     }
     const matches = archive.filter(entry =>
