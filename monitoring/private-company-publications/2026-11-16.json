@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-16",
+  "timezone": "Europe/Dublin",
+  "run_type": "private_company_daily",
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "automation/private-company-2026-11-16",
+  "target_new_articles": 3,
+  "status": "prepared_pending_ci",
+  "confirmed_live_new_articles": 0,
+  "human_editorial_status": "not_reviewed_by_human",
+  "ads_policy": "Standard site ads required from publication independent of review status; preserve existing CMP/privacy",
+  "editorial_quality_gate": "Three distinctive 1000-word analyses, original risk and numeric synthesis, precise dated source attribution, documentary licensed photos. CI and production canonical, cover, social, profile-backlink and ad verification required.",
+  "duplication_checks": {
+    "editorial_index_snapshot": "2026-11-16",
+    "recent_overlap": "BioBasicsBench differs from OpenAI agent security and wallet; Anthropic always-on agent engineering differs from Meetings and outage; ByteDance buyback has no recent existing coverage in current inventory",
+    "competing_workflows": "Checked latest editorial index, previous private-company ledgers and current Compound PRs",
+    "new_page_count_cap": 3
+  },
+  "articles": [
+    {
+      "company": "OpenAI",
+      "slug": "openai",
+      "event_date": "2026-11-06",
+      "article_path": "content/wealth/openai-biobasicsbench-wet-lab-ai-evidence-reliability.md",
+      "story_fingerprint": "2026-11-06-openai-biobasicsbench-wetlab-evidence-reliability",
+      "primary_source_urls": [
+        "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Laboratory_microcentrifuge_tubes_and_pipette_tips_01.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Laboratory_microcentrifuge_tubes_and_pipette_tips_01.jpg",
+      "photo_focal_y": 0.5,
+      "image_license": "CC BY-SA 4.0",
+      "photo_provenance": "Gannu03, 11 December 2025, Wikimedia Commons original laboratory photo, archival and adapted crop",
+      "claim_checks": [
+        "6 November release covers 100 lab interpretation tasks, seven evaluated models and 37 configurations at five attempts = 18,500 responses, not independent experiments",
+        "66.7% vs 43.8% mean rubric credit is a 22.9 percentage-point change, not complete task success",
+        "Not regulatory validation or a commercial deployment; scenario savings clearly hypothetical"
+      ],
+      "canonical_url": "https://compound.ie/wealth/openai-biobasicsbench-wet-lab-ai-evidence-reliability/",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "not_deployed",
+      "status": "prepared_pending_ci"
+    },
+    {
+      "company": "Anthropic",
+      "slug": "anthropic",
+      "event_date": "2026-11-13",
+      "article_path": "content/wealth/anthropic-always-on-agents-business-case-permissions-cost.md",
+      "story_fingerprint": "2026-11-13-anthropic-always-on-agent-event-inbox-permissions-economics",
+      "primary_source_urls": [
+        "https://claude.com/resources/articles/building-always-on-agents"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_04.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Dario_Amodei_at_TechCrunch_Disrupt_2023_04.jpg",
+      "photo_focal_y": 0.5,
+      "image_license": "CC BY 2.0",
+      "photo_provenance": "TechCrunch / Kimberly White, 20 September 2023, Wikimedia Commons licensed archival Dario Amodei photo",
+      "claim_checks": [
+        "13 November engineering guide by William Hu describes inbox, timers, memory, permissions and outbox",
+        "No Anthropic revenue product or uptime guarantee is claimed",
+        "Illustrative model costs $360 plus 450 human escalations x 3min x $40/hr = $900, total $1260"
+      ],
+      "canonical_url": "https://compound.ie/wealth/anthropic-always-on-agents-business-case-permissions-cost/",
+      "profile_url": "https://compound.ie/companies/anthropic/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "not_deployed",
+      "status": "prepared_pending_ci"
+    },
+    {
+      "company": "ByteDance",
+      "slug": "bytedance",
+      "event_date": "2026-11-13",
+      "article_path": "content/wealth/bytedance-400-billion-buyback-private-ipo-liquidity.md",
+      "story_fingerprint": "2026-11-12-13-bytedance-reported-6b-400b-private-buyback-2030-liquidity",
+      "primary_source_urls": [
+        "https://www.reuters.com/legal/transactional/tiktok-owner-bytedance-plans-buyback-400-billion-valuation-information-reports-2026-11-13/",
+        "https://theedgemalaysia.com/node/825623"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Douyin_Group_and_Feishu_logos_on_Fashion_Vanke_Center_20260620143040.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Douyin_Group_and_Feishu_logos_on_Fashion_Vanke_Center_20260620143040.jpg",
+      "photo_focal_y": 0.5,
+      "image_license": "CC BY-SA 4.0",
+      "photo_provenance": "TurnOnTheNight, 20 June 2026, Wikimedia Commons authentic Douyin and Feishu signage, archival adapted crop",
+      "claim_checks": [
+        "Reuters 13 November explicitly could not independently confirm The Information's 12 November reported $6bn tender at $400bn valuation",
+        "Bloomberg reported $241.35 price and proposed move of deadline to 11 December 2030; neither is a confirmed listing date",
+        "$6bn/$400bn=1.5%; 24.9m shares is a mathematical conditional, not verified share structure",
+        "No publicly traded stock price or unverified financial figure presented as fact"
+      ],
+      "canonical_url": "https://compound.ie/wealth/bytedance-400-billion-buyback-private-ipo-liquidity/",
+      "profile_url": "https://compound.ie/companies/bytedance/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "not_deployed",
+      "status": "prepared_pending_ci"
+    }
+  ],
+  "profile_updates": [
+    {
+      "slug": "openai",
+      "status": "updated_summary_preserved_latest",
+      "description": "Summary includes lab evidence benchmarks; later 13 Nov Wallet remains latest reported development."
+    },
+    {
+      "slug": "anthropic",
+      "status": "updated_summary_preserved_latest",
+      "description": "Summary includes always-on engineering and permissions; later 14 Nov outage remains latest development."
+    },
+    {
+      "slug": "bytedance",
+      "status": "updated_attributed_latest",
+      "date": "2026-11-13",
+      "description": "Reported $6bn/$400bn buyback, no completed transaction or IPO date represented as confirmed",
+      "source": "https://www.reuters.com/legal/transactional/tiktok-owner-bytedance-plans-buyback-400-billion-valuation-information-reports-2026-11-13/"
+    }
+  ],
+  "production_deployment": {
+    "status": "not_started",
+    "confirmed_live_urls": 0,
+    "branch_protection": "Not configured; exact PR-head CI gate required"
+  },
+  "updated_at_utc": "2026-11-16"
+}
