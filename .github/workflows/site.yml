@@ -777,7 +777,7 @@ jobs:
           # PIA Centre launch: explicitly verify the two new public routes,
           # their search metadata, primary-source tracker and sitemap URLs.
           fetch https://compound.ie/pia/ /tmp/pia-centre.html
-          grep -Fq 'Personal Investment Accounts in Ireland.' /tmp/pia-centre.html
+          grep -Fq 'PIA Ireland: Personal Investment Account explained.' /tmp/pia-centre.html
           grep -Fq '<link rel="canonical" href="https://compound.ie/pia/">' /tmp/pia-centre.html
           grep -Fq 'href="/pia/providers/"' /tmp/pia-centre.html
           grep -Fq 'href="/pia-calculator/"' /tmp/pia-centre.html
