@@ -117,7 +117,7 @@
       "slug": "openai",
       "name": "OpenAI",
       "sector": "Artificial intelligence",
-      "summary": "AI models, products, infrastructure, governance, agent integrations and independent cross-system security testing.",
+      "summary": "AI models, products, infrastructure, governance, agent integrations, independent cross-system security testing and scientific evidence interpretation benchmarks.",
       "website": "https://openai.com/",
       "latest_development": {
         "date": "2026-11-13",
@@ -129,7 +129,7 @@
       "slug": "anthropic",
       "name": "Anthropic",
       "sector": "Artificial intelligence",
-      "summary": "Claude AI models, research, enterprise deployments and beta collaborative meeting workflows.",
+      "summary": "Claude AI models, research, enterprise deployments, beta collaborative meeting workflows, and guidance for durable always-on agent orchestration and permissions.",
       "website": "https://www.anthropic.com/",
       "latest_development": {
         "date": "2026-11-14",
@@ -141,8 +141,13 @@
       "slug": "bytedance",
       "name": "ByteDance",
       "sector": "Social media & AI",
-      "summary": "TikTok, digital content distribution and AI systems.",
-      "website": "https://www.bytedance.com/en/"
+      "summary": "TikTok, Douyin, digital content distribution, AI systems, and proposed private-shareholder liquidity arrangements.",
+      "website": "https://www.bytedance.com/en/",
+      "latest_development": {
+        "date": "2026-11-13",
+        "text": "Reuters on 13 November reported The Information's unverified proposal for a ByteDance repurchase of up to $6 billion of shares at a reported $400 billion private valuation; Bloomberg separately reported a proposed $241.35 per-share price and extension of an IPO-or-liquidity deadline to December 2030. These are attributed press accounts of proposed terms, not a confirmed completed buyback or IPO date.",
+        "source": "https://www.reuters.com/legal/transactional/tiktok-owner-bytedance-plans-buyback-400-billion-valuation-information-reports-2026-11-13/"
+      }
     },
     {
       "slug": "databricks",
