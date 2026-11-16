@@ -239,3 +239,8 @@ Receiving a payment does not require you to work for the company. However, selec
 ### Are dividend stocks better than growth stocks?
 
 Neither category is automatically superior. Compare expected total return, valuation, risk and tax against your goal. A business can grow while paying dividends, and a business that pays none can still create shareholder value.
+
+
+## Dividend shares inside Ireland's proposed PIA
+
+The proposed Personal Investment Account may change how Irish investors compare dividend income and capital appreciation. It would generally remove separate Irish investment-income and capital-gains taxes on qualifying account holdings, while foreign dividend withholding may remain. Try our [interactive PIA dividend-versus-growth comparison](/wealth/pia-dividend-vs-growth-portfolio/) to model equal pre-tax returns, withholding, reinvestment, fees and the proposed annual account charge.
