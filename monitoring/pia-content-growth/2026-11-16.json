@@ -3,7 +3,7 @@
   "timezone": "Europe/Dublin",
   "run_type": "pia_content_growth",
   "topic_fingerprint": "2026-11-05-pia-fee-disclosure-proposal-committee-vote-cost-comparison",
-  "status": "prepared_pending_pr_ci",
+  "status": "merged_pending_production_verification",
   "action": "substantive_update_existing_canonical",
   "new_articles": 0,
   "canonical_url": "https://compound.ie/pia/compare-fee-quotes/",
@@ -54,10 +54,29 @@
     "arithmetic": "checked",
     "links": "source_and_canonical_checked",
     "editorial": "no invented provider fees or enacted claims",
-    "whole_tests": "pending_ci",
-    "production_html": "pending",
-    "ads": "pending"
+    "whole_tests": "passed_exact_pr_head",
+    "production_html": "older_page_still_seen_after_merge",
+    "ads": "not_verified"
   },
   "production_verified": false,
-  "verified_live_result": null
+  "verified_live_result": null,
+  "pr_url": "https://github.com/davidomarayt/compound/pull/153",
+  "pr_number": 153,
+  "ci": {
+    "head_sha": "233dea2ba10f7b8300fce995a8bea6cf1e895016",
+    "workflow_run_id": 43842906048,
+    "test": "success",
+    "performance": "success"
+  },
+  "merge": {
+    "merged": true,
+    "commit_sha": "df1a578b86b0c72222b693936a9a2a5f3c3fe79b",
+    "production_branch": "claude/clever-babbage-uibieq"
+  },
+  "remaining_steps": [
+    "verify GitHub Pages deploy completed",
+    "fetch https://compound.ie/pia/compare-fee-quotes/ and confirm added Nov 5 committee vote + ten/twenty year examples",
+    "inspect canonical, social metadata and standard ad loader/CMP on actual HTML",
+    "mark ledger live only after that evidence"
+  ]
 }
