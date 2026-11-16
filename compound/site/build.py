@@ -1072,6 +1072,19 @@ def related(article: Article, all_articles: list[Article], n: int = 3) -> list[A
     return selected
 
 
+def select_latest_finance_articles(articles: list, limit: int = 3) -> list:
+    """Display the newest Wealth articles, regardless of their publishing workflow.
+
+    Include news and company research; exclude archived per-quarter earnings pages.
+    The incoming collection contains published articles loaded for the live site.
+    """
+    eligible = (
+        article for article in articles
+        if article.pillar == "wealth" and "automated-earnings" not in article.tags
+    )
+    return sorted(eligible, key=lambda article: (article.date, article.slug), reverse=True)[:limit]
+
+
 def build_site(settings: Settings) -> dict:
     """Render the whole site. Returns a small stats dict. Preview pages are left untouched."""
     env = _env(settings)
@@ -1217,7 +1230,7 @@ def build_site(settings: Settings) -> dict:
     home_tools = [tools_by_slug[s] for s in preferred_home_tools if s in tools_by_slug]
     _write(out / "index.html", env.get_template("home.html").render(
         columns=columns, articles=articles, home_articles=home_articles,
-        news_articles=[a for a in news_articles if a.pillar == "wealth"][:4], home_tools=home_tools, title="Compound"))
+        home_finance_articles=select_latest_finance_articles(articles), home_tools=home_tools, title="Compound"))
     _write(out / "wheres-my-money" / "index.html",
            env.get_template("wheres_my_money.html").render(
                title="Where's My Money? Irish Tax Receipt", pillar="wealth",

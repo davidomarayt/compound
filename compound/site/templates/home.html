@@ -14,12 +14,12 @@
  </div>
 </section>
 
-{% if news_articles or home_tools %}
+{% if home_finance_articles or home_tools %}
 <section class="home-command-grid" aria-label="Finance &amp; Investing">
  <div class="home-today-panel">
-  <div class="home-panel-heading"><h2><span aria-hidden="true">●</span> Finance &amp; Investing</h2><a href="/news/">View all news →</a></div>
+  <div class="home-panel-heading"><h2><span aria-hidden="true">●</span> Finance &amp; Investing</h2><a href="/finance/">Explore finance →</a></div>
   <div class="home-today-list">
-   {% for a in news_articles[:3] %}
+   {% for a in home_finance_articles %}
    <a class="home-today-story" href="{{ a.url }}">
     {% if a.image %}<img src="{{ a.image }}" width="210" height="120" alt="" loading="lazy" decoding="async">{% endif %}
     <span class="home-today-copy"><strong>{{ a.title }}</strong><small>{{ a.pillar_label }} · {{ a.date | long_date }}</small></span>
