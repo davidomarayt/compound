@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 291
+- Published editorial articles and guides: 294
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 237
+## Wealth articles and guides — 240
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -63,6 +63,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [American Express Earnings: Spending Holds Up, but Read the Profit Adjustments](https://compound.ie/wealth/american-express-earnings-spending-adjusted-profit/)
 - [An Post now lets you send small tracked parcels from 2,600 postboxes](https://compound.ie/news/an-post-postbox-drop-off-small-parcels-2026/)
 - [Anthropic Wants Claude to Work During Meetings. Will That Reduce the Follow-Up?](https://compound.ie/wealth/anthropic-claude-meetings-live-work-enterprise-economics/)
+- [Anthropic's Always-On Agent Blueprint: The Hidden Costs Are Permissions and Recovery](https://compound.ie/wealth/anthropic-always-on-agents-business-case-permissions-cost/)
 - [Anthropic's Anvil Found AI Safeguard Gaps Faster Than Human Testers. What Is That Worth?](https://compound.ie/wealth/anthropic-anvil-automated-red-teaming-safety-economics/)
 - [Anthropic's Fable and Mythos 5.2: The Expensive Model Is Not Always the Best Deal](https://compound.ie/wealth/anthropic-fable-mythos-52-pricing-routing-economics/)
 - [Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price](https://compound.ie/wealth/anthropic-loss-ipo-valuation/)
@@ -84,6 +85,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Budget 2027: Up to €2bn Reportedly Set Aside for a New Public-Sector Pay Deal](https://compound.ie/news/budget-2027-public-sector-pay-deal-2bn/)
 - [Buying a Home in Ireland 101: A Complete Step-by-Step Guide](https://compound.ie/wealth/buying-a-home-in-ireland/)
 - [Buying a Home in Ireland: Budget, Deposit and Upfront Costs](https://compound.ie/wealth/buying-home-budget-deposit-ireland/)
+- [ByteDance's Reported $400 Billion Buyback Is a Liquidity Deal, Not an IPO](https://compound.ie/wealth/bytedance-400-billion-buyback-private-ipo-liquidity/)
 - [Can Xbox grow again while Microsoft sells fewer consoles?](https://compound.ie/wealth/microsoft-xbox-content-recovery/)
 - [Capital Gains Tax in Ireland: How Much CGT Do You Pay?](https://compound.ie/wealth/capital-gains-tax-ireland/)
 - [Caterpillar Earnings: Why the Margin Matters More Than the Sales Headline](https://compound.ie/wealth/caterpillar-margin-growth/)
@@ -203,6 +205,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [One in Seven Irish Adults Now Receive Financial Help From Family](https://compound.ie/news/family-financial-support-ireland-2026/)
 - [onsemi's Margins Are Recovering. How Much Is AI Doing?](https://compound.ie/wealth/onsemi-margin-recovery-ai-data-centre/)
 - [OpenAI Is Building a Business Channel Inside ChatGPT. Who Captures the Value?](https://compound.ie/wealth/openai-business-agents-chatgpt-merchant-economics-2026/)
+- [OpenAI Tested AI on 100 Real Lab Tasks. The Hard Problem Is Knowing When Not to Trust It](https://compound.ie/wealth/openai-biobasicsbench-wet-lab-ai-evidence-reliability/)
 - [OpenAI's ChatGPT Wallet Can Complete a Purchase. Can Merchants Trust the Checkout?](https://compound.ie/wealth/openai-chatgpt-wallet-agentic-checkout-economics/)
 - [OpenAI's Hacktron Partnership Puts Agent Security at the Integration Layer](https://compound.ie/wealth/openai-hacktron-agent-security-third-party-risk/)
 - [Pay-related jobseeker claims rose by 5,077. What would the payment cover?](https://compound.ie/news/october-live-register-jobseekers-pay-related-benefit/)

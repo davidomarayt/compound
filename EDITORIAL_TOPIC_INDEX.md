@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 291 published articles and guides, 64 tools,
+**Included:** 294 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -28,6 +28,7 @@ For the complete register (including 510+ company profiles), open
 - [American Express Earnings: Spending Holds Up, but Read the Profit Adjustments](https://compound.ie/wealth/american-express-earnings-spending-adjusted-profit/) — **Wealth**
 - [An Post now lets you send small tracked parcels from 2,600 postboxes](https://compound.ie/news/an-post-postbox-drop-off-small-parcels-2026/) — **Wealth**
 - [Anthropic Wants Claude to Work During Meetings. Will That Reduce the Follow-Up?](https://compound.ie/wealth/anthropic-claude-meetings-live-work-enterprise-economics/) — **Wealth**
+- [Anthropic's Always-On Agent Blueprint: The Hidden Costs Are Permissions and Recovery](https://compound.ie/wealth/anthropic-always-on-agents-business-case-permissions-cost/) — **Wealth**
 - [Anthropic's Anvil Found AI Safeguard Gaps Faster Than Human Testers. What Is That Worth?](https://compound.ie/wealth/anthropic-anvil-automated-red-teaming-safety-economics/) — **Wealth**
 - [Anthropic's Fable and Mythos 5.2: The Expensive Model Is Not Always the Best Deal](https://compound.ie/wealth/anthropic-fable-mythos-52-pricing-routing-economics/) — **Wealth**
 - [Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price](https://compound.ie/wealth/anthropic-loss-ipo-valuation/) — **Wealth**
@@ -51,6 +52,7 @@ For the complete register (including 510+ company profiles), open
 - [Burnout symptoms: how to recognise burnout and what actually helps](https://compound.ie/life/burnout-symptoms-recovery-ireland/) — **Life**
 - [Buying a Home in Ireland 101: A Complete Step-by-Step Guide](https://compound.ie/wealth/buying-a-home-in-ireland/) — **Wealth**
 - [Buying a Home in Ireland: Budget, Deposit and Upfront Costs](https://compound.ie/wealth/buying-home-budget-deposit-ireland/) — **Wealth**
+- [ByteDance's Reported $400 Billion Buyback Is a Liquidity Deal, Not an IPO](https://compound.ie/wealth/bytedance-400-billion-buyback-private-ipo-liquidity/) — **Wealth**
 - [Can Xbox grow again while Microsoft sells fewer consoles?](https://compound.ie/wealth/microsoft-xbox-content-recovery/) — **Wealth**
 - [Capital Gains Tax in Ireland: How Much CGT Do You Pay?](https://compound.ie/wealth/capital-gains-tax-ireland/) — **Wealth**
 - [Caterpillar Earnings: Why the Margin Matters More Than the Sales Headline](https://compound.ie/wealth/caterpillar-margin-growth/) — **Wealth**
@@ -200,6 +202,7 @@ For the complete register (including 510+ company profiles), open
 - [One in Seven Irish Adults Now Receive Financial Help From Family](https://compound.ie/news/family-financial-support-ireland-2026/) — **Wealth**
 - [onsemi's Margins Are Recovering. How Much Is AI Doing?](https://compound.ie/wealth/onsemi-margin-recovery-ai-data-centre/) — **Wealth**
 - [OpenAI Is Building a Business Channel Inside ChatGPT. Who Captures the Value?](https://compound.ie/wealth/openai-business-agents-chatgpt-merchant-economics-2026/) — **Wealth**
+- [OpenAI Tested AI on 100 Real Lab Tasks. The Hard Problem Is Knowing When Not to Trust It](https://compound.ie/wealth/openai-biobasicsbench-wet-lab-ai-evidence-reliability/) — **Wealth**
 - [OpenAI's ChatGPT Wallet Can Complete a Purchase. Can Merchants Trust the Checkout?](https://compound.ie/wealth/openai-chatgpt-wallet-agentic-checkout-economics/) — **Wealth**
 - [OpenAI's Hacktron Partnership Puts Agent Security at the Integration Layer](https://compound.ie/wealth/openai-hacktron-agent-security-third-party-risk/) — **Wealth**
 - [Ozempic, Wegovy & Mounjaro: medical card cover in Ireland](https://compound.ie/health/glp1-hse-medical-card-ireland/) — **Health**

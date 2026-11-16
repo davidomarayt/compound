@@ -293,6 +293,28 @@
         "status": "published"
       },
       {
+        "title": "Anthropic's Always-On Agent Blueprint: The Hidden Costs Are Permissions and Recovery",
+        "url": "/wealth/anthropic-always-on-agents-business-case-permissions-cost/",
+        "source": "content/wealth/anthropic-always-on-agents-business-case-permissions-cost.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "anthropic-always-on-agents-business-case-permissions-cost",
+        "date": "2026-11-16",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-anthropic",
+          "anthropic",
+          "ai-agents",
+          "enterprise-ai",
+          "infrastructure",
+          "reliability"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Anthropic's Anvil Found AI Safeguard Gaps Faster Than Human Testers. What Is That Worth?",
         "url": "/wealth/anthropic-anvil-automated-red-teaming-safety-economics/",
         "source": "content/wealth/anthropic-anvil-automated-red-teaming-safety-economics.md",
@@ -726,6 +748,28 @@
           "first-time buyer",
           "mortgage",
           "home buying costs"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "ByteDance's Reported $400 Billion Buyback Is a Liquidity Deal, Not an IPO",
+        "url": "/wealth/bytedance-400-billion-buyback-private-ipo-liquidity/",
+        "source": "content/wealth/bytedance-400-billion-buyback-private-ipo-liquidity.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "bytedance-400-billion-buyback-private-ipo-liquidity",
+        "date": "2026-11-16",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-bytedance",
+          "bytedance",
+          "tiktok",
+          "private-valuation",
+          "buyback",
+          "ipo"
         ],
         "status": "published"
       },
@@ -3626,6 +3670,28 @@
           "artificial-intelligence",
           "commerce",
           "advertising"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "OpenAI Tested AI on 100 Real Lab Tasks. The Hard Problem Is Knowing When Not to Trust It",
+        "url": "/wealth/openai-biobasicsbench-wet-lab-ai-evidence-reliability/",
+        "source": "content/wealth/openai-biobasicsbench-wet-lab-ai-evidence-reliability.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-biobasicsbench-wet-lab-ai-evidence-reliability",
+        "date": "2026-11-16",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "biotech",
+          "lab-ai",
+          "ai-benchmarks",
+          "science"
         ],
         "status": "published"
       },
