@@ -30,4 +30,4 @@ def test_pia_calculator_keeps_canonical_context_and_comparison_links():
     assert "/wealth/personal-investment-account-ireland/" in text
     assert "/pia/vs-pension/" in text
     assert "365" in text and "€50,000" in text and "€12,000" in text
-    assert "This calculator runs entirely in your browser." in text
+    assert "The calculator runs entirely in your browser." in text
