@@ -11,16 +11,14 @@ editorial_review_status: pending
 summary: "Anthropic's IPO prospectus reveals a $70–$78 price range, a $61bn public share sale at the midpoint, $33.2bn in nine-month sales, almost $901bn in compute commitments, and a difficult valuation equation."
 meta_description: "Anthropic IPO explained with November 2026 S-1 figures: $70–$78 IPO price, 825m shares, $33.2bn revenue, $104bn net loss, compute commitments and valuation scenarios."
 tags: [wealth, company-research, company-anthropic, anthropic, ipo, ai, valuation, investing, stock-market, prospectus]
-hero_image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Claude_AI_logo.svg/1280px-Claude_AI_logo.svg.png
 hero_image_alt: "Official Claude AI wordmark with coral-orange starburst symbol and black Claude lettering, shown on a neutral background"
-hero_image_credit: "Claude logo: Anthropic, via Wikimedia Commons (PD-textlogo; trademarked). Used for independent editorial identification; no endorsement implied."
+hero_image_credit: "Claude logo by Anthropic; authentic symbol and wordmark assets distributed through Lobe Icons; PD-textlogo and trademarked. Independent editorial use; no endorsement implied."
 hero_image_source: https://commons.wikimedia.org/wiki/File:Claude_AI_logo.svg
 require_pinned_hero: true
-hero_image_presentation: centered-logo
 image: /static/images/evergreen/anthropic-ipo-2026-prospectus-numbers-valuation.jpg
 social_image: /static/images/evergreen/anthropic-ipo-2026-prospectus-numbers-valuation.jpg
 image_alt: "Official Claude AI logo: coral-orange starburst and black Claude wordmark"
-image_credit: "Claude logo ©/™ Anthropic, via Wikimedia Commons; PD-textlogo; used for independent editorial identification"
+image_credit: "Claude brand logo by Anthropic; self-hosted original-shape artwork via Lobe Icons, also documented on Wikimedia Commons (PD-textlogo; trademarked)"
 image_source: https://commons.wikimedia.org/wiki/File:Claude_AI_logo.svg
 sources:
 - title: "SEC — Anthropic Form S-1/A Amendment No. 2, filed 10 November 2026"
@@ -220,4 +218,4 @@ Continue with the [Anthropic private-company research profile](/companies/anthro
 
 *Research checked 16 November 2026, Europe/Dublin. US-dollar amounts, period definitions, source dates and proposed share terms are preserved. SEC figures include unaudited 2026 interim data. Market-sensitive terms can change before pricing. Forecast tables are explicitly illustrative and are not statements of Anthropic management guidance.*
 
-*Cover: Claude wordmark by Anthropic, reproduced from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Claude_AI_logo.svg) (PD-textlogo; trademark rights remain with Anthropic). The logo is shown in its original colours and proportions on a neutral canvas for independent editorial identification. Compound.ie is not affiliated with or endorsed by Anthropic.*
+*Cover: authentic Claude symbol and wordmark by Anthropic, with artwork sourced from [Lobe Icons](https://github.com/lobehub/lobe-icons/tree/master/packages/static-png/light) and independently documented on [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Claude_AI_logo.svg) (PD-textlogo; trademark rights remain with Anthropic). Artwork colours and proportions are unchanged; the neutral background is editorial layout. Compound.ie is not affiliated with or endorsed by Anthropic.*
