@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 295
+- Published editorial articles and guides: 296
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 241
+## Wealth articles and guides — 242
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -218,6 +218,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Pension vs Investing in Ireland: Which Wrapper Fits the Goal?](https://compound.ie/wealth/pension-vs-investing-ireland/)
 - [Pensions in Ireland 101: A Complete Beginner’s Guide](https://compound.ie/wealth/pensions-in-ireland/)
 - [Personal Investment Account Ireland (PIA): Complete 2027 Guide](https://compound.ie/wealth/personal-investment-account-ireland/)
+- [PIA Dividend vs Growth Portfolio: Which Builds More Wealth?](https://compound.ie/wealth/pia-dividend-vs-growth-portfolio/)
 - [Planning Appeals Ireland: Deadline, Fees and How the Process Works](https://compound.ie/wealth/planning-appeal-ireland/)
 - [Planning Application Process Ireland: Timeline, Fees and What Happens Next](https://compound.ie/wealth/planning-application-process-ireland/)
 - [Planning Objections & Submissions in Ireland: How to Comment on an Application](https://compound.ie/wealth/planning-objections-submissions-ireland/)
