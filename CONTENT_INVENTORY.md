@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 294
+- Published editorial articles and guides: 295
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 240
+## Wealth articles and guides — 241
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -62,6 +62,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Amazon’s €16 billion Germany plan needs a return test](https://compound.ie/wealth/amazon-germany-investment-returns/)
 - [American Express Earnings: Spending Holds Up, but Read the Profit Adjustments](https://compound.ie/wealth/american-express-earnings-spending-adjusted-profit/)
 - [An Post now lets you send small tracked parcels from 2,600 postboxes](https://compound.ie/news/an-post-postbox-drop-off-small-parcels-2026/)
+- [Anthropic IPO by the Numbers: The $61 Billion Share Sale, $900 Billion Compute Bet and Valuation Test](https://compound.ie/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/)
 - [Anthropic Wants Claude to Work During Meetings. Will That Reduce the Follow-Up?](https://compound.ie/wealth/anthropic-claude-meetings-live-work-enterprise-economics/)
 - [Anthropic's Always-On Agent Blueprint: The Hidden Costs Are Permissions and Recovery](https://compound.ie/wealth/anthropic-always-on-agents-business-case-permissions-cost/)
 - [Anthropic's Anvil Found AI Safeguard Gaps Faster Than Human Testers. What Is That Worth?](https://compound.ie/wealth/anthropic-anvil-automated-red-teaming-safety-economics/)
