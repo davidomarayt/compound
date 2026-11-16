@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-16",
+  "timezone": "Europe/Dublin",
+  "run_type": "pia_content_growth",
+  "topic_fingerprint": "2026-11-05-pia-fee-disclosure-proposal-committee-vote-cost-comparison",
+  "status": "prepared_pending_pr_ci",
+  "action": "substantive_update_existing_canonical",
+  "new_articles": 0,
+  "canonical_url": "https://compound.ie/pia/compare-fee-quotes/",
+  "path": "content/pages/pia-compare-fee-quotes.md",
+  "work_branch": "automation/pia-fee-disclosure-2026-11-16",
+  "base_branch": "claude/clever-babbage-uibieq",
+  "evidence_dates": [
+    "2026-10-19",
+    "2026-11-03",
+    "2026-11-05"
+  ],
+  "source_urls": [
+    "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/dail/3/amendment/numberedList/eng/b9826d-dcnl.pdf",
+    "https://voterconnect.ie/proceedings/select_committee_on_finance_public_expenditure_public_service_reform_and_digitalisation_and_taoiseach/2026-11-05/dbsect_2/part-2",
+    "https://www.revenue.ie/ga/corporate/press-office/press-releases/2026/pr-100726-irish-investment-account.aspx",
+    "https://www.aib.ie/make-a-plan/investments/personal-investment-account",
+    "https://personalbanking.bankofireland.com/save-and-invest/investments/personal-investment-account/",
+    "https://www.irishlife.ie/investments/pia/",
+    "https://www.ptsb.ie/saving-and-investing/investments/state-investment-account/",
+    "https://www.zurich.ie/blog/a-guide-to-irelands-new-investment-account/"
+  ],
+  "claim_checks": [
+    "Finance Bill as introduced 19 Oct is not enacted; IIA statutory draft name",
+    "3 Nov amendment 25 proposed standardised pre-opening and annual fee statement with 10/20-year effect",
+    "5 Nov committee record reports amendment 25 lost 4-6, Minister did not propose acceptance; no claim other amendments ultimately passed or failed",
+    "Illustrative 10k at 6% gross, 0.25% versus 1.00% annual deductions yields 20-year outcomes 30505 versus 26231; neither crosses proposed 50k threshold",
+    "No provider fee quoted or presented as verified"
+  ],
+  "tracker": {
+    "file": "content/pia-launch-tracker.yml",
+    "changed": false,
+    "reason": "No independently verified new legal commencement/operational milestone after 15 Nov checkpoint; 5 Nov fee debate concerns committee proposal, not enactment",
+    "last_global_checked": "2026-11-15",
+    "verified_revenue_notice": true,
+    "official_oireachtas_bill_current_stage": "blocked_403",
+    "committee_amendment_pdf": "verified_2026-11-03",
+    "provider_sources": {
+      "AIB": "verified_no_fee",
+      "BankOfIreland": "verified_no_fee",
+      "IrishLife": "verified_additional_provider_charges_may_apply_no_numeric",
+      "PTSB": "only_cached_search_result_direct_open_failed",
+      "Zurich": "verified_no_fee"
+    }
+  },
+  "provider_dataset_changed": false,
+  "advertising_policy": "Preserve standard advertising/CMP; needs live verification after deployment",
+  "qa": {
+    "arithmetic": "checked",
+    "links": "source_and_canonical_checked",
+    "editorial": "no invented provider fees or enacted claims",
+    "whole_tests": "pending_ci",
+    "production_html": "pending",
+    "ads": "pending"
+  },
+  "production_verified": false,
+  "verified_live_result": null
+}
