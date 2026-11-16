@@ -122,13 +122,14 @@ jobs:
           assert hub.count('data-earnings-recent-card') == 10
           assert 'data-earnings-report-search' in hub
           assert '/static/earnings-report-search.js?v=1' in hub
-          assert "10 most recently filed reports" in hub
+          assert "recent filings and company releases" in hub
           import json, re
           match = re.search(r'<script type="application/json" data-earnings-report-index>(.*?)</script>', hub, re.S)
           assert match, "Missing searchable verified reports archive"
           index = json.loads(match.group(1))
           assert len(index) > 10, "Archive must include reports beyond ten most recent"
           assert len({entry['url'] for entry in index}) == len(index), "Duplicate company URLs"
+          assert all(isinstance(entry.get("from_release"), bool) for entry in index), "Missing release-vs-filing provenance"
           assert index == sorted(index, key=lambda entry: (
               entry["filed"], entry["ended"], entry["ticker"]), reverse=True)
           assert any(entry['ticker'] == 'NVDA' for entry in index)
@@ -776,7 +777,7 @@ jobs:
           # PIA Centre launch: explicitly verify the two new public routes,
           # their search metadata, primary-source tracker and sitemap URLs.
           fetch https://compound.ie/pia/ /tmp/pia-centre.html
-          grep -Fq 'Personal Investment Accounts in Ireland.' /tmp/pia-centre.html
+          grep -Fq 'PIA Ireland: Personal Investment Account explained.' /tmp/pia-centre.html
           grep -Fq '<link rel="canonical" href="https://compound.ie/pia/">' /tmp/pia-centre.html
           grep -Fq 'href="/pia/providers/"' /tmp/pia-centre.html
           grep -Fq 'href="/pia-calculator/"' /tmp/pia-centre.html
@@ -800,6 +801,19 @@ jobs:
           grep -Fq 'estimateAnnualCost' /tmp/pia-provider-script.js
           grep -Fq '<loc>https://compound.ie/pia/</loc>' /tmp/sitemap.xml
           grep -Fq '<loc>https://compound.ie/pia/providers/</loc>' /tmp/sitemap.xml
+          # Check the current PIA calculator's dated CGT correction after publication.
+          # Retry briefly for Pages edge-cache propagation without weakening the final assertion.
+          for attempt in 1 2 3 4 5; do
+            fetch https://compound.ie/pia-calculator/ /tmp/pia-cgt-calculator.html
+            if grep -Fq 'proposed 1% annual PIA account-value charge versus 31% standard CGT' /tmp/pia-cgt-calculator.html; then
+              break
+            fi
+            sleep 8
+          done
+          grep -Fq '<link rel="canonical" href="https://compound.ie/pia-calculator/">' /tmp/pia-cgt-calculator.html
+          grep -Fq 'proposed 1% annual PIA account-value charge versus 31% standard CGT' /tmp/pia-cgt-calculator.html
+          grep -Fq 'href="/wealth/capital-gains-tax-ireland/"' /tmp/pia-cgt-calculator.html
+          grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' /tmp/pia-cgt-calculator.html
 
           fetch https://compound.ie/wealth/earnings/ /tmp/earnings-hub.html
           grep -Fq 'Company earnings. One report per business.' /tmp/earnings-hub.html
