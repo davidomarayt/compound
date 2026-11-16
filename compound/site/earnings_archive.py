@@ -27,6 +27,8 @@ def prepare_recent_earnings(companies: list[dict], *, limit: int = 10) -> tuple[
             "period": company["report"].get("latest_display") or company["report"]["latest_label"],
             "ended": company["report"]["latest_end"],
             "filed": company["report"].get("latest_filed") or "",
+            # Issuer announcements are source-checked but are not necessarily SEC filings.
+            "from_release": bool(company.get("from_release", False)),
         }
         for company in ordered
     ]
