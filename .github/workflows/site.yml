@@ -122,13 +122,14 @@ jobs:
           assert hub.count('data-earnings-recent-card') == 10
           assert 'data-earnings-report-search' in hub
           assert '/static/earnings-report-search.js?v=1' in hub
-          assert "10 most recently filed reports" in hub
+          assert "recent filings and company releases" in hub
           import json, re
           match = re.search(r'<script type="application/json" data-earnings-report-index>(.*?)</script>', hub, re.S)
           assert match, "Missing searchable verified reports archive"
           index = json.loads(match.group(1))
           assert len(index) > 10, "Archive must include reports beyond ten most recent"
           assert len({entry['url'] for entry in index}) == len(index), "Duplicate company URLs"
+          assert all(isinstance(entry.get("from_release"), bool) for entry in index), "Missing release-vs-filing provenance"
           assert index == sorted(index, key=lambda entry: (
               entry["filed"], entry["ended"], entry["ticker"]), reverse=True)
           assert any(entry['ticker'] == 'NVDA' for entry in index)
