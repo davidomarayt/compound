@@ -91,5 +91,41 @@ def make():
 
 
 
+def render_claude_logo_cover(output: Path, mark_path: Path, wordmark_path: Path) -> None:
+    """Set two authentic self-hosted logo assets on a neutral 16:9 JPEG canvas.
+
+    The official marks retain their original colours and aspect ratios; only
+    the surrounding canvas is editorial layout. No remote asset fetch occurs.
+    """
+    with Image.open(mark_path) as source:
+        mark = source.convert("RGBA")
+    with Image.open(wordmark_path) as source:
+        wordmark = source.convert("RGBA")
+    mark.thumbnail((250, 250), Image.Resampling.LANCZOS)
+    wordmark.thumbnail((1060, 250), Image.Resampling.LANCZOS)
+    gap = 36
+    group_width = mark.width + gap + wordmark.width
+    group_height = max(mark.height, wordmark.height)
+    x = (W - group_width) // 2
+    y = (H - group_height) // 2
+    canvas = Image.new("RGB", (W, H), (250, 249, 245))
+    canvas.paste(mark, (x, y + (group_height - mark.height) // 2), mark)
+    canvas.paste(wordmark, (x + mark.width + gap,
+                            y + (group_height - wordmark.height) // 2), wordmark)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    canvas.save(output, "JPEG", quality=94, optimize=True, progressive=True)
+    with Image.open(output) as check:
+        assert check.format == "JPEG" and check.size == (W, H)
+    print(f"Authentic Claude IPO wordmark hero generated: {output}")
+
+
+def make_claude_ipo_cover() -> None:
+    brand = ROOT / "compound/site/static/images/brand"
+    target = ROOT / "compound/site/static/images/evergreen/anthropic-ipo-2026-prospectus-numbers-valuation.jpg"
+    render_claude_logo_cover(target, brand / "claude-mark.png",
+                             brand / "claude-wordmark.png")
+
+
 if __name__ == "__main__":
     make()
+    make_claude_ipo_cover()

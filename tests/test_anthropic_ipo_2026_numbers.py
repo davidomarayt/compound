@@ -14,7 +14,7 @@ def test_prospectus_offering_arithmetic_and_source_provenance():
     assert "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm" in text
     assert "https://www.anthropic.com/news/roadshow-launch" in text
     assert "require_pinned_hero: true" in text
-    assert "CC BY 2.0" in text
+    assert "PD-textlogo" in text and "File:Claude_AI_logo.svg" in text
 
     primary = 801_351_354
     secondary = 23_648_646
