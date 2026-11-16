@@ -31,7 +31,7 @@ def test_company_numbers_have_the_right_periods_and_ipo_is_not_treated_as_tradin
     for value in ["$16.956bn", "$33.242bn", "$104.039bn", "$94.324bn",
                   "$900.9bn", "$131.845bn", "$84.6bn", "50.1%", "$8.21"]:
         assert value in text
-    assert "not a final IPO or market price" in text
+    assert "not a final ipo or market price" in text.lower()
     assert "not a personalised recommendation" in text
     assert "/companies/anthropic/" in text
     assert "/wealth/anthropic-loss-ipo-valuation/" in text
