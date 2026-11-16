@@ -11,16 +11,17 @@ editorial_review_status: pending
 summary: "Anthropic's IPO prospectus reveals a $70–$78 price range, a $61bn public share sale at the midpoint, $33.2bn in nine-month sales, almost $901bn in compute commitments, and a difficult valuation equation."
 meta_description: "Anthropic IPO explained with November 2026 S-1 figures: $70–$78 IPO price, 825m shares, $33.2bn revenue, $104bn net loss, compute commitments and valuation scenarios."
 tags: [wealth, company-research, company-anthropic, anthropic, ipo, ai, valuation, investing, stock-market, prospectus]
-hero_image_url: https://upload.wikimedia.org/wikipedia/commons/d/d8/Dario_Amodei_at_TechCrunch_Disrupt_2023_02.jpg
-hero_image_alt: "Anthropic chief executive Dario Amodei speaking at TechCrunch Disrupt in San Francisco on 20 September 2023; an archival photograph, not an image of the November 2026 IPO roadshow"
-hero_image_credit: "TechCrunch / Kimberly White (Getty Images for TechCrunch), via Wikimedia Commons; CC BY 2.0; photographed 20 September 2023, editorially cropped"
-hero_image_source: https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_02.jpg
+hero_image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Claude_AI_logo.svg/1280px-Claude_AI_logo.svg.png
+hero_image_alt: "Official Claude AI wordmark with coral-orange starburst symbol and black Claude lettering, shown on a neutral background"
+hero_image_credit: "Claude logo: Anthropic, via Wikimedia Commons (PD-textlogo; trademarked). Used for independent editorial identification; no endorsement implied."
+hero_image_source: https://commons.wikimedia.org/wiki/File:Claude_AI_logo.svg
 require_pinned_hero: true
+hero_image_presentation: centered-logo
 image: /static/images/evergreen/anthropic-ipo-2026-prospectus-numbers-valuation.jpg
 social_image: /static/images/evergreen/anthropic-ipo-2026-prospectus-numbers-valuation.jpg
-image_alt: "Archival 2023 photograph of Anthropic CEO Dario Amodei addressing TechCrunch Disrupt; this is not a picture of the November 2026 IPO"
-image_credit: "TechCrunch / Kimberly White (Getty Images for TechCrunch), Wikimedia Commons CC BY 2.0, archival adapted crop"
-image_source: https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_02.jpg
+image_alt: "Official Claude AI logo: coral-orange starburst and black Claude wordmark"
+image_credit: "Claude logo ©/™ Anthropic, via Wikimedia Commons; PD-textlogo; used for independent editorial identification"
+image_source: https://commons.wikimedia.org/wiki/File:Claude_AI_logo.svg
 sources:
 - title: "SEC — Anthropic Form S-1/A Amendment No. 2, filed 10 November 2026"
   url: https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm
@@ -219,4 +220,4 @@ Continue with the [Anthropic private-company research profile](/companies/anthro
 
 *Research checked 16 November 2026, Europe/Dublin. US-dollar amounts, period definitions, source dates and proposed share terms are preserved. SEC figures include unaudited 2026 interim data. Market-sensitive terms can change before pricing. Forecast tables are explicitly illustrative and are not statements of Anthropic management guidance.*
 
-*Cover: authentic archival photograph of CEO Dario Amodei at TechCrunch Disrupt on 20 September 2023; TechCrunch/Kimberly White, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_02.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/), cropped for layout. Not a photograph of the 2026 IPO roadshow.*
+*Cover: Claude wordmark by Anthropic, reproduced from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Claude_AI_logo.svg) (PD-textlogo; trademark rights remain with Anthropic). The logo is shown in its original colours and proportions on a neutral canvas for independent editorial identification. Compound.ie is not affiliated with or endorsed by Anthropic.*
