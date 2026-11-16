@@ -801,6 +801,19 @@ jobs:
           grep -Fq 'estimateAnnualCost' /tmp/pia-provider-script.js
           grep -Fq '<loc>https://compound.ie/pia/</loc>' /tmp/sitemap.xml
           grep -Fq '<loc>https://compound.ie/pia/providers/</loc>' /tmp/sitemap.xml
+          # Check the current PIA calculator's dated CGT correction after publication.
+          # Retry briefly for Pages edge-cache propagation without weakening the final assertion.
+          for attempt in 1 2 3 4 5; do
+            fetch https://compound.ie/pia-calculator/ /tmp/pia-cgt-calculator.html
+            if grep -Fq 'proposed 1% annual PIA account-value charge versus 31% standard CGT' /tmp/pia-cgt-calculator.html; then
+              break
+            fi
+            sleep 8
+          done
+          grep -Fq '<link rel="canonical" href="https://compound.ie/pia-calculator/">' /tmp/pia-cgt-calculator.html
+          grep -Fq 'proposed 1% annual PIA account-value charge versus 31% standard CGT' /tmp/pia-cgt-calculator.html
+          grep -Fq 'href="/wealth/capital-gains-tax-ireland/"' /tmp/pia-cgt-calculator.html
+          grep -Fq 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' /tmp/pia-cgt-calculator.html
 
           fetch https://compound.ie/wealth/earnings/ /tmp/earnings-hub.html
           grep -Fq 'Company earnings. One report per business.' /tmp/earnings-hub.html
