@@ -23,10 +23,8 @@ sources:
     url: https://assets.gov.ie/static/documents/89edf30b/Finance_No._2_Bill_2026.pdf
   - title: "Department of Finance: Finance (No. 2) Bill 2026 Explanatory Memorandum"
     url: https://assets.gov.ie/static/documents/8ee6faff/Finance_No._2_Bill_2026_Explanatory_Memorandum.pdf
-  - title: "KPMG Ireland: new Individual Investment Account under Finance Bill 2026"
-    url: https://kpmg.com/ie/en/insights/tax/finance-bill-2026/investment-account.html
-  - title: "PwC Ireland: Finance Bill 2026 and investment accounts"
-    url: https://www.pwc.ie/issues/finance-act/investment-account.html
+  - title: "Revenue: Irish Investment Account Technical Group Forum, 7 October 2026"
+    url: https://www.revenue.ie/ga/corporate/press-office/press-releases/2026/pr-100726-irish-investment-account.aspx
   - title: "Revenue: Taxation of dividend income outside tax-advantaged investment accounts"
     url: https://www.revenue.ie/en/additional-incomes/dividend-income/index.aspx
   - title: "US Internal Revenue Service: Tax treaty tables for treaty withholding rates"
