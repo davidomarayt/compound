@@ -43,3 +43,31 @@ def test_hub_tracking_is_opt_in_and_does_not_log_user_data():
     assert "grid-template-columns:minmax(0,1fr)" in css
     assert "min-height:44px" in css
     assert "prefers-reduced-motion" in css
+
+
+def test_home_finance_panel_shows_newest_wealth_articles_from_every_publisher():
+    from datetime import date
+    from types import SimpleNamespace
+
+    from compound.site.build import select_latest_finance_articles
+
+    def article(slug, day, pillar="wealth", tags=()):
+        return SimpleNamespace(slug=slug, date=date(2026, 11, day), pillar=pillar, tags=tags)
+
+    articles = [
+        article("old-news", 13, tags=("news",)),
+        article("health-news", 16, pillar="health", tags=("news",)),
+        article("private-company", 16, tags=("private-company",)),
+        article("stock-analysis", 15, tags=("company-research",)),
+        article("personal-finance", 14, tags=("investing",)),
+        article("obsolete-quarter", 16, tags=("automated-earnings",)),
+    ]
+    selected = select_latest_finance_articles(articles)
+    assert [item.slug for item in selected] == [
+        "private-company", "stock-analysis", "personal-finance"
+    ]
+
+    page = HOME.read_text(encoding="utf-8")
+    assert "for a in home_finance_articles" in page
+    assert "for a in news_articles[:3]" not in page
+    assert 'href="/finance/">Explore finance' in page
