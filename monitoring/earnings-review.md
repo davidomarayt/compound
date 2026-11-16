@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-15
+Checked: 2026-11-16
 
 - 499 saved profiles checked against structural and issuer rules.
-- 97 existing company articles; 83 mapped to monitored issuers.
-- 90 pending review items; 17 recorded decisions.
+- 101 existing company articles; 83 mapped to monitored issuers.
+- 94 pending review items; 17 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -93,11 +93,27 @@ Files: `content/wealth/blue-origin-new-glenn-valve-fix-launch-economics.md`
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `7931946505c67c66d039478e`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/bytedance-400-billion-buyback-private-ipo-liquidity.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `b08ae5372476782fde9168cc`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/anthropic-fable-mythos-52-pricing-routing-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `d8cd404b933af68d51e04381`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/anthropic-always-on-agents-business-case-permissions-cost.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -114,6 +130,22 @@ ID: `e8a450658190ddaca84a3d55`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/michael-carrick-sacked-manchester-united-manu-stock.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `ef0eea7b0dda3c7b7e4b2082`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/openai-biobasicsbench-wet-lab-ai-evidence-reliability.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `facdcccedde7c19d5764eeaa`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/anthropic-ipo-2026-prospectus-numbers-valuation.md`
 
 ### UNMAPPED · article_mapping · medium
 
