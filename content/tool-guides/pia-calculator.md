@@ -233,11 +233,13 @@ The PIA is intended to create a dedicated wrapper with its own account-level ann
 
 That means the correct comparison is not simply:
 
-> 1% PIA tax versus 33% CGT.
+> A proposed 1% annual PIA account-value charge versus 31% standard CGT on a chargeable gain.
 
-Those percentages can apply to different tax bases and at different times.
+For standard CGT disposals made **on or after 7 October 2026**, the rate is **31%**; it was **33%** for standard disposals up to and including **6 October 2026**. The **33% development-land rate** remains a separate exception. Revenue confirms the effective date and exception in [eBrief 142/26, published 6 October 2026](https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-1422026.aspx).
 
-Read Compound's [Investment Tax in Ireland guide](/wealth/investment-tax-ireland/) before making an after-tax comparison.
+The proposed PIA charge is based on account value above its threshold, whereas standard CGT generally applies to a chargeable gain when an asset is disposed of. The bases, timing and applicable investment types differ; **31% is not a universal tax rate for all investments outside a PIA**, particularly investment funds and ETFs.
+
+For direct-share disposal examples and exemptions, see the [Capital Gains Tax in Ireland guide](/wealth/capital-gains-tax-ireland/). Read the broader [Investment Tax in Ireland guide](/wealth/investment-tax-ireland/) before making an after-tax comparison.
 
 ## PIA versus pension
 
