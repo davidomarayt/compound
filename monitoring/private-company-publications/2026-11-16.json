@@ -5,11 +5,11 @@
   "production_branch": "claude/clever-babbage-uibieq",
   "work_branch": "automation/private-company-2026-11-16",
   "target_new_articles": 3,
-  "status": "prepared_pending_ci",
+  "status": "merged_pending_production_verification",
   "confirmed_live_new_articles": 0,
   "human_editorial_status": "not_reviewed_by_human",
   "ads_policy": "Standard site ads required from publication independent of review status; preserve existing CMP/privacy",
-  "editorial_quality_gate": "Three distinctive 1000-word analyses, original risk and numeric synthesis, precise dated source attribution, documentary licensed photos. CI and production canonical, cover, social, profile-backlink and ad verification required.",
+  "editorial_quality_gate": "Three distinctive 1000-word analyses, original risk and numeric synthesis, precise dated source attribution, documentary licensed photos. CI and production canonical, cover, social, profile-backlink and ad verification required. Both CI test and performance jobs on tested PR head completed successfully.",
   "duplication_checks": {
     "editorial_index_snapshot": "2026-11-16",
     "recent_overlap": "BioBasicsBench differs from OpenAI agent security and wallet; Anthropic always-on agent engineering differs from Meetings and outage; ByteDance buyback has no recent existing coverage in current inventory",
@@ -45,8 +45,8 @@
       "ads_presence_verified": false,
       "live_http_verified": false,
       "verified_live_result": null,
-      "deployment_status": "not_deployed",
-      "status": "prepared_pending_ci"
+      "deployment_status": "merged_deployment_unverified",
+      "status": "merged_pending_live_verification"
     },
     {
       "company": "Anthropic",
@@ -76,8 +76,8 @@
       "ads_presence_verified": false,
       "live_http_verified": false,
       "verified_live_result": null,
-      "deployment_status": "not_deployed",
-      "status": "prepared_pending_ci"
+      "deployment_status": "merged_deployment_unverified",
+      "status": "merged_pending_live_verification"
     },
     {
       "company": "ByteDance",
@@ -109,8 +109,8 @@
       "ads_presence_verified": false,
       "live_http_verified": false,
       "verified_live_result": null,
-      "deployment_status": "not_deployed",
-      "status": "prepared_pending_ci"
+      "deployment_status": "merged_deployment_unverified",
+      "status": "merged_pending_live_verification"
     }
   ],
   "profile_updates": [
@@ -133,9 +133,16 @@
     }
   ],
   "production_deployment": {
-    "status": "not_started",
+    "status": "merged_pending_site_deployment_verification",
+    "merge_pr": 151,
+    "publication_commit": "8d4b5f8f494cad053155dd767cdd328a1d7d8c2d",
+    "ci_run": 43821960539,
+    "ci_head": "2a65feb42fe5c8c21920aafbe4ec1d4a2c9e7b33",
+    "ci_test": "success",
+    "ci_performance": "success",
     "confirmed_live_urls": 0,
-    "branch_protection": "Not configured; exact PR-head CI gate required"
+    "branch_protection": "Not configured; exact PR-head equivalent CI release gate passed",
+    "verification_note": "Public article canonical URLs were not accessible to the available web fetcher; GitHub Pages deployment/live canonical, cover, OG/Twitter and ads remain unverified. Do not count as published until fetched and checked."
   },
   "updated_at_utc": "2026-11-16"
 }
