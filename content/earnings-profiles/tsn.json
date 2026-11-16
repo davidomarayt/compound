@@ -2,33 +2,33 @@
   "cik": 100493,
   "company": "Tyson Foods",
   "latest": {
-    "accession": "0000100493-26-000058",
-    "filed": "2026-08-03",
-    "form": "10-Q",
-    "fp": "Q3",
+    "accession": "0000100493-26-000079",
+    "filed": "2026-11-16",
+    "form": "10-K",
+    "fp": "FY",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 0.52,
-        "prior_year": 0.17,
+        "current": 1.28,
+        "prior_year": 1.33,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 182000000,
-        "prior_year": 61000000,
+        "current": 453000000,
+        "prior_year": 474000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 13868000000,
-        "prior_year": 13884000000,
+        "current": 56419000000,
+        "prior_year": 54441000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-27",
-    "source": "https://www.sec.gov/Archives/edgar/data/100493/000010049326000058/tsn-20260627.htm"
+    "period_end": "2026-10-03",
+    "source": "https://www.sec.gov/Archives/edgar/data/100493/000010049326000079/tsn-20261003.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-27",
       "source": "https://www.sec.gov/Archives/edgar/data/100493/000010049326000058/tsn-20260627.htm"
+    },
+    {
+      "accession": "0000100493-26-000079",
+      "filed": "2026-11-16",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.28,
+          "prior_year": 1.33,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 453000000,
+          "prior_year": 474000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 56419000000,
+          "prior_year": 54441000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/100493/000010049326000079/tsn-20261003.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TSN",
-  "updated": "2026-10-15"
+  "updated": "2026-11-16"
 }
