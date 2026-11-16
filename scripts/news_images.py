@@ -231,6 +231,23 @@ def download(url: str, destination: Path) -> None:
         destination.write_bytes(response.content)
 
 
+def render_centered_logo_jpeg(destination: Path) -> None:
+    """Preserve a source logo's artwork while placing it on a neutral 16:9 canvas.
+
+    This is only used when an editor explicitly sets
+    hero_image_presentation: centered-logo. It ensures that a raster PNG logo
+    becomes a correctly encoded JPEG for the site's .jpg hero and OG URLs.
+    """
+    with Image.open(destination) as source:
+        logo = source.convert("RGBA")
+    logo.thumbnail((1344, 420), Image.Resampling.LANCZOS)
+    cover = Image.new("RGB", (1600, 900), (250, 249, 245))
+    x = (cover.width - logo.width) // 2
+    y = (cover.height - logo.height) // 2
+    cover.paste(logo, (x, y), logo)
+    cover.save(destination, format="JPEG", quality=94, optimize=True)
+
+
 def wrap(text: str, width: int = 33, max_lines: int = 4) -> list[str]:
     words = text.split()
     lines: list[str] = []
@@ -404,7 +421,10 @@ def process(path: Path, api_key: str, force: bool = False) -> str:
             return "skip:has-pinned-url-image"
         try:
             hero_rel = f"/static/images/evergreen/{slug}.jpg"
-            download(pinned_image_url, STATIC / hero_rel.removeprefix("/static/"))
+            hero_path = STATIC / hero_rel.removeprefix("/static/")
+            download(pinned_image_url, hero_path)
+            if meta.get("hero_image_presentation") == "centered-logo":
+                render_centered_logo_jpeg(hero_path)
             if "mag7-research" in {str(tag).lower() for tag in meta.get("tags") or []}:
                 with Image.open(STATIC / hero_rel.removeprefix("/static/")) as photo:
                     if photo.width < 1000 or photo.height < 600:
