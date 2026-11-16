@@ -81,6 +81,8 @@ But there is an important caveat: **this is a proposed account, not an account y
 <a href="#pia-faq">FAQ</a>
 </nav>
 
+<p><strong>Choosing investments within a PIA?</strong> Our new <a href="/wealth/pia-dividend-vs-growth-portfolio/">PIA dividend-versus-growth portfolio comparison</a> includes an interactive model for foreign withholding, reinvestment and the proposed account charge.</p>
+
 <p><strong>Choose your next PIA step:</strong> <a href="/pia/">start at the PIA Centre</a>, <a href="/pia-calculator/">model growth and the proposed charge</a>, <a href="/pia/vs-pension/">compare PIA with a pension</a>, <a href="/pia/investment-eligibility/">check an ETF or share</a>, or <a href="/pia/providers/">check verified provider announcements</a>. Provider fees and final product details may still change.</p>
 
 <p class="pia-status"><strong>Legislative sources checked: 15 November 2026.</strong> Finance (No. 2) Bill 2026 was introduced on 19 October and names the proposed scheme the <em>Individual Investment Account (IIA)</em>. The 3 November committee amendments show that proposed terms can still change; the current final parliamentary stage was not independently verified. The 1 July 2027 launch remains subject to enactment and provider readiness. Provider references elsewhere retain their original source-check dates; this is not a whole-article editorial re-review.</p>
