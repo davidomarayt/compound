@@ -5,7 +5,7 @@
   "production_branch": "claude/clever-babbage-uibieq",
   "work_branch": "automation/private-company-2026-11-17",
   "target_new_articles": 3,
-  "status": "prepared_pending_pr_validation",
+  "status": "merged_pending_production_verification",
   "confirmed_live_new_articles": 0,
   "human_editorial_status": "not_reviewed_by_human",
   "ads_policy": "Standard site ads required from publication independent of review; CMP preserved",
@@ -47,8 +47,8 @@
       "ads_presence_verified": false,
       "live_http_verified": false,
       "verified_live_result": null,
-      "deployment_status": "not_deployed",
-      "status": "prepared_pending_ci"
+      "deployment_status": "merged_site_deployment_pending",
+      "status": "merged_pending_live_verification"
     },
     {
       "company": "Anthropic",
@@ -80,8 +80,8 @@
       "ads_presence_verified": false,
       "live_http_verified": false,
       "verified_live_result": null,
-      "deployment_status": "not_deployed",
-      "status": "prepared_pending_ci"
+      "deployment_status": "merged_site_deployment_pending",
+      "status": "merged_pending_live_verification"
     },
     {
       "company": "Databricks",
@@ -115,8 +115,8 @@
       "ads_presence_verified": false,
       "live_http_verified": false,
       "verified_live_result": null,
-      "deployment_status": "not_deployed",
-      "status": "prepared_pending_ci"
+      "deployment_status": "merged_site_deployment_pending",
+      "status": "merged_pending_live_verification"
     }
   ],
   "profile_updates": [
@@ -141,9 +141,17 @@
     }
   ],
   "production_deployment": {
-    "status": "not_started",
+    "status": "site_workflow_in_progress",
+    "merge_pr": 158,
+    "publication_commit": "bc47bfcd94195d21e51c186afb55bd092766048e",
+    "ci_run": 44035520107,
+    "ci_head": "82ba2438a8a6ddcc0c14bfe780f491a3c7035d0c",
+    "ci_test": "success",
+    "ci_performance": "success",
+    "site_run": 44036731059,
     "confirmed_live_urls": 0,
-    "branch_protection": "not configured; exact-head equivalent CI gate required"
+    "branch_protection": "Not configured; exact PR-head equivalent gate succeeded",
+    "verification_note": "GitHub Pages site deployment and publicly fetched canonical, cover, OG/Twitter and ads not yet independently verified. Do not count published until successful."
   },
   "updated_at_utc": "2026-11-17"
 }
