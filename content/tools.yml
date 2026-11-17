@@ -1254,22 +1254,36 @@ tools:
 
 
   - slug: salary-hourly-rate-calculator
-    title: Salary to Hourly Rate Calculator Ireland
-    seo_title: Salary to Hourly Rate Calculator Ireland | Hourly Wage
+    title: Salary to Hourly Calculator Ireland
+    seo_title: Salary to Hourly Calculator Ireland | Gross Pay Converter
     category: Tax & Take-Home Pay
     formula: salary_hourly
-    summary: Work out your gross hourly wage from your annual salary, paid hours and weeks. See hourly, daily, weekly, fortnightly and monthly pay before tax.
-    meta_description: "Convert an annual salary into hourly, weekly and monthly gross pay in Ireland. Enter paid hours and weeks to compare wages, shift patterns and job offers."
-    quick_answer: "Gross hourly pay = annual salary ÷ (paid hours per week × paid weeks per year). A €50,000 salary over 39 paid hours weekly and 52 paid weeks equals €24.65 an hour, before tax."
+    summary: Convert annual salary to an hourly wage, or hourly pay into yearly earnings. Compare gross pay across Irish 37.5, 39 and 40-hour working weeks.
+    meta_description: "Free salary to hourly calculator Ireland. €50,000 at 39 hours/week = €24.65/hour. Convert hourly wages to annual, monthly and weekly gross pay too."
+    quick_answer: "Gross hourly pay = annual salary ÷ (paid hours per week × paid weeks per year). €50,000 over 39 hours × 52 paid weeks equals €24.65/hour. In reverse, €20/hour is €40,560/year on the same basis, before tax."
     quick_link_label: "Calculate your take-home pay"
     quick_link_url: /take-home-pay-calculator/
     updated: 2026-11-17
+    basic_note: "Convert salary to hourly pay, or switch direction to work from an hourly wage. Use your paid hours and weeks."
+    advanced_note: "Add expected unpaid extra working hours to compare your contracted rate with the gross pay per hour actually committed."
+    result_note: "Gross equivalents only, before Irish PAYE, USC, PRSI or pension deductions. Advanced effective rates are for personal job comparisons, not statutory minimum-wage checks."
     fields:
-      - {id: salary, label: Annual gross salary, type: number, prefix: "€", default: 50000, min: 0, step: 500, section_start: Gross pay}
+      - id: direction
+        label: I want to convert
+        type: select
+        default: annual
+        section_start: Choose the pay basis
+        help: "Switch direction to convert hourly pay back into an annual salary. Your current figure is converted when you switch."
+        options:
+          - {value: annual, label: "Annual salary → hourly pay"}
+          - {value: hourly, label: "Hourly pay → annual salary"}
+      - {id: salary, label: Annual gross salary, type: number, prefix: "€", default: 50000, min: 0, step: 0.01, section_start: Gross pay, help: "Your annual gross salary before PAYE, USC, PRSI and other deductions."}
       - {id: hours, label: Paid working hours per week, type: number, default: 39, min: 1, max: 100, step: 0.5, section_start: Working pattern, help: "Use paid hours for the comparison. Unpaid breaks should normally be excluded."}
       - {id: weeks, label: Paid weeks per year, type: number, default: 52, min: 1, max: 53, step: 1, help: "For a normal salaried job with paid annual leave, 52 is usually the appropriate denominator. Reducing this to 48 would overstate the hourly equivalent if the annual salary continues during leave."}
       - {id: days, label: Working days per week, type: number, default: 5, min: 1, max: 7, step: 1}
+      - {id: unpaid_extra_hours, label: Additional unpaid working hours per week, type: number, default: 0, min: 0, max: 100, step: 0.5, advanced: true, section_start: Real-world comparison, help: "Optional: hours you regularly work above the paid hours entered. This is not a legal hourly-rate calculation."}
     results:
+      - {id: annual, label: Gross per year}
       - {id: monthly, label: Gross per month}
       - {id: weekly, label: Gross per paid week}
       - {id: daily, label: Gross per working day}
@@ -1278,6 +1292,7 @@ tools:
       - {id: fortnightly, label: Gross per fortnight}
       - {id: workday_hours, label: Average paid hours per working day}
       - {id: weekly_hours_share, label: Share of a 168-hour week spent in paid work}
+      - {id: effective_hourly, label: Gross equivalent including unpaid hours, advanced: true}
     guide: |
       ## Put an annual salary on the same basis as hourly work
 

@@ -276,8 +276,12 @@
         return {type:'line',title:'Cumulative running cost over a year',caption:'Assumes the same monthly usage pattern, duty cycle and tariff split continue for 12 months.',labels,series:[{label:'Cumulative cost',values:vals}]};
       }
       case 'salary_hourly': {
-        const base=Math.max(1,v.hours), hours=[Math.max(20,base-5),base,base+5], vals=hours.map(h=>v.salary/(Math.max(1,v.weeks)*h));
-        return {type:'bar',title:'Hourly equivalent versus weekly hours',caption:'Same annual salary spread across fewer or more paid working hours.',labels:hours.map(h=>h+' hrs/wk'),series:[{label:'Gross hourly equivalent',values:vals}]};
+        const paidHours=Math.max(1,v.hours),weeks=Math.max(1,v.weeks);
+        const choices=[Math.max(20,paidHours-5),paidHours,paidHours+5];
+        if(v.direction==='hourly'){
+          return {type:'bar',title:'Annual salary by weekly hours',caption:'Keep the entered hourly wage and paid weeks fixed; annual pay rises with paid hours worked.',labels:choices.map(h=>h+' hrs/wk'),series:[{label:'Annual gross pay',values:choices.map(h=>Math.max(0,v.salary)*h*weeks)}]};
+        }
+        return {type:'bar',title:'Hourly equivalent versus weekly hours',caption:'Keep annual gross salary fixed; more paid hours lower the gross hourly equivalent.',labels:choices.map(h=>h+' hrs/wk'),series:[{label:'Gross hourly equivalent',values:choices.map(h=>Math.max(0,v.salary)/(weeks*h))}]};
       }
       case 'fuel': {
         const distance=v.distance*v.trips, litres=distance*v.consumption/100, prices=[v.price*.8,v.price,v.price*1.2], vals=prices.map(p=>litres*p);
@@ -449,10 +453,13 @@
         items.push(gap===0?'The entered reserve already meets the target.':'The remaining gap equals about '+number.format(v.expenses>0?gap/v.expenses:0)+' months of the essential spending entered.');
         break;
       }
-      case 'salary_hourly':
-        items.push('The hourly equivalent depends on '+v.hours+' paid hours a week across '+v.weeks+' paid weeks.');
-        items.push('Compare contractor rates only after allowing for unpaid leave, downtime, pension and other employment benefits.');
+      case 'salary_hourly': {
+        if(v.direction==='hourly') items.push('The annual equivalent uses '+v.hours+' paid hours each week across '+v.weeks+' paid weeks at your gross hourly rate.');
+        else items.push('The hourly equivalent uses '+v.hours+' paid hours each week across '+v.weeks+' paid weeks at your gross annual salary.');
+        if(Boolean(v.__advanced)&&v.unpaid_extra_hours>0) items.push('The effective hourly comparison spreads the same gross pay across an extra '+v.unpaid_extra_hours+' unpaid work hours per week; it is not a legal wage-rate test.');
+        items.push('These figures are before PAYE, USC, PRSI and pension deductions. Contractor rates also need to cover unpaid leave and business costs.');
         break;
+      }
       case 'fuel': {
         const distance=v.distance*v.trips, cost=distance*v.consumption/100*v.price;
         if(distance>0) items.push('Fuel alone costs about '+money(cost/distance)+' per kilometre under these assumptions.');
@@ -1141,12 +1148,17 @@
       };
     },
     salary_hourly(v){
-      const salary=Math.max(0,v.salary),hours=Math.max(0,v.hours),weeks=Math.max(0,v.weeks),days=Math.max(0,v.days);
-      const annualHours=hours*weeks,weekly=weeks?salary/weeks:0,monthly=salary/12,daily=days?weekly/days:0,hourly=annualHours?salary/annualHours:0;
+      const input=Math.max(0,Number(v.salary)||0),hours=Math.max(0,Number(v.hours)||0),weeks=Math.max(0,Number(v.weeks)||0),days=Math.max(0,Number(v.days)||0);
+      const annualHours=hours*weeks;
+      const annual=v.direction==='hourly'?input*annualHours:input;
+      const weekly=weeks?annual/weeks:0,monthly=annual/12,daily=days?weekly/days:0,hourly=annualHours?annual/annualHours:0;
       const workdayHours=days?hours/days:0,weeklyShare=hours/168*100;
+      const extraHours=Boolean(v.__advanced)?Math.max(0,Number(v.unpaid_extra_hours)||0):0;
+      const effectiveHours=(hours+extraHours)*weeks;
       return {
-        monthly:money(monthly),weekly:money(weekly),daily:money(daily),hourly:money(hourly),annual_hours:num(annualHours)+' hours',
-        fortnightly:money(weekly*2),workday_hours:num(workdayHours)+' hours',weekly_hours_share:pct(weeklyShare)
+        annual:money(annual),monthly:money(monthly),weekly:money(weekly),daily:money(daily),hourly:money(hourly),
+        annual_hours:num(annualHours)+' hours',fortnightly:money(weekly*2),workday_hours:num(workdayHours)+' hours',
+        weekly_hours_share:pct(weeklyShare),effective_hourly:money(effectiveHours?annual/effectiveHours:0)
       };
     },
     fuel(v){
@@ -2358,6 +2370,42 @@
       selectPiaPreset();
       if(piaPresetStatus) piaPresetStatus.textContent='';
     };
+    // This page uses a single monetary input. Switching direction keeps the same
+    // underlying pay scenario instead of accidentally treating €50,000 as €50,000/hour.
+    const salaryBasis=root.dataset.toolName==='salary-hourly-rate-calculator'?root.querySelector('[data-field="direction"]'):null;
+    const salaryAmount=salaryBasis?root.querySelector('[data-field="salary"]'):null;
+    let salaryLastBasis=salaryBasis?.value||'annual';
+    const syncSalaryBasis=(convert=false)=>{
+      if(!salaryBasis||!salaryAmount) return;
+      const basis=salaryBasis.value==='hourly'?'hourly':'annual';
+      if(convert&&basis!==salaryLastBasis){
+        const hours=Number(root.querySelector('[data-field="hours"]')?.value);
+        const weeks=Number(root.querySelector('[data-field="weeks"]')?.value);
+        const value=Number(salaryAmount.value);
+        const factor=hours*weeks;
+        if(Number.isFinite(value)&&Number.isFinite(factor)&&factor>0){
+          const converted=basis==='hourly'?value/factor:value*factor;
+          salaryAmount.value=String(Number(converted.toFixed(basis==='hourly'?4:2)));
+        }
+      }
+      salaryLastBasis=basis;
+      const wrapper=salaryAmount.closest('.tool-field');
+      const label=wrapper?.querySelector('label');
+      const help=wrapper?.querySelector('.tool-field-help');
+      if(label) label.textContent=basis==='hourly'?'Gross hourly wage':'Annual gross salary';
+      if(help) help.textContent=basis==='hourly'
+        ?'Gross euro per hour before tax. Enter your actual hourly pay, including cents if applicable.'
+        :'Gross annual pay before PAYE, USC, PRSI and any pension deductions.';
+      salaryAmount.setAttribute('aria-label',basis==='hourly'?'Gross hourly wage in euro':'Annual gross salary in euro');
+      const primaryKey=basis==='hourly'?'annual':'hourly';
+      const grid=root.querySelector('.tool-result-grid');
+      grid?.querySelectorAll('.tool-result').forEach(card=>card.classList.remove('tool-result-primary'));
+      const primary=root.querySelector('[data-result="'+primaryKey+'"]')?.closest('.tool-result');
+      if(primary&&grid){primary.classList.add('tool-result-primary');grid.prepend(primary);}
+    };
+    salaryBasis?.addEventListener('change',()=>syncSalaryBasis(true));
+    if(salaryBasis&&form)form.addEventListener('reset',()=>setTimeout(()=>syncSalaryBasis(false),0));
+
     if(form){
       let inputTimer=null;
       form.addEventListener('submit',e=>{e.preventDefault();run(true,isPia);});
@@ -2463,6 +2511,7 @@
       if(window.gtag) window.gtag('event','tool_copy_results',{tool_name:root.dataset.toolName});
     });
     if(printButton) printButton.addEventListener('click',()=>window.print());
+    syncSalaryBasis(false);
     syncVisibility();
     run(false);
   });

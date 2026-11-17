@@ -4,7 +4,8 @@
 {% block head %}
 <link rel="canonical" href="{{ site_url }}{{ tool.url }}">
 <meta property="og:type" content="website"><meta property="og:title" content="{{ tool.seo_title or tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="/static/tools.css?v=20261117-gsc-quick-answer">{% if tool.slug == "mortgage-calculator" %}<script defer src="/static/mortgage-calculator.js?v=20260927-performance1"></script>{% else %}<script defer src="/static/tools.js?v=20261113-pia-events"></script>{% endif %}
+{% if tool.slug == "salary-hourly-rate-calculator" %}<link rel="stylesheet" href="/static/tools.css?v=20261117-salary-upgrade">{% else %}<link rel="stylesheet" href="/static/tools.css?v=20261117-gsc-quick-answer">{% endif %}
+{% if tool.slug == "mortgage-calculator" %}<script defer src="/static/mortgage-calculator.js?v=20260927-performance1"></script>{% elif tool.slug == "salary-hourly-rate-calculator" %}<script defer src="/static/tools.js?v=20261117-salary-upgrade"></script>{% else %}<script defer src="/static/tools.js?v=20261113-pia-events"></script>{% endif %}
 <script type="application/ld+json">{{ tool_jsonld|safe }}</script>
 {% endblock %}
 {% block content %}
