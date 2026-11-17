@@ -30,6 +30,7 @@
 <section class="sr-section" id="sr-featured" aria-labelledby="sr-featured-heading">
   <div class="sr-section-heading"><div><p class="sr-kicker">A PLACE TO BEGIN</p><h2 id="sr-featured-heading">Companies worth <em>understanding.</em></h2></div><p>Starting points from our research coverage, not buy recommendations. Select a company to see its available reports and source documents.</p></div>
   <div class="sr-featured-grid">
+    {% if companies|length >= 8 %}
     {% set featured_symbols = ['nvda', 'aapl', 'msft', 'amzn', 'googl', 'meta', 'tsla', 'lly'] %}
     {% for symbol in featured_symbols %}
       {% for company in companies if company.slug == symbol %}
@@ -40,6 +41,9 @@
       </a>
       {% endfor %}
     {% endfor %}
+    {% else %}
+    <p>Company highlights will be shown here as the research register grows. Browse the directory below for currently available company profiles.</p>
+    {% endif %}
   </div>
   <p class="sr-disclosure">Featured for ease of navigation, not ranked by expected returns. Coverage and reporting dates differ by company.</p>
 </section>
