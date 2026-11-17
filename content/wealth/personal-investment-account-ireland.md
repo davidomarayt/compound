@@ -19,6 +19,8 @@ related_tools:
   - regular-savings-calculator
 news_image_query: "Irish person investing at home laptop investment portfolio euro financial planning natural light"
 sources:
+  - title: "Department of Finance: Individual Investment Account — Economic Impact Assessment, November 2026. Model scenarios and distributional/fiscal sensitivities; checked 17 November 2026."
+    url: https://assets.gov.ie/static/documents/4c3e3964/Individual_Investment_Account_Economic_Impact_Assessment_-_November_2026.pdf
   - title: "Department of Finance: Taxation of Retail Investment — A New Path Forward for Ireland. Roadmap published 31 August 2026; checked 6 October 2026."
     url: https://assets.gov.ie/static/documents/a5d640c2/Roadmap_for_the_Taxation_of_Retail_Investment.pdf
   - title: "Houses of the Oireachtas: Finance (No. 2) Bill 2026, No. 98; introduced 19 October 2026. Legislative source checked 15 November 2026; latest completion stage not independently confirmed."
@@ -77,6 +79,7 @@ But there is an important caveat: **this is a proposed account, not an account y
 <a href="#what-can-you-invest-in">ETFs and shares</a>
 <a href="#pia-vs-normal-investing">PIA vs normal investing</a>
 <a href="#pia-vs-pension">PIA vs pension</a>
+<a href="#pia-economic-assessment-2026">Government economic assessment</a>
 <a href="#pia-providers">Providers</a>
 <a href="#pia-faq">FAQ</a>
 </nav>
@@ -146,6 +149,36 @@ The Department of Finance roadmap generally used **Investment Account**, while i
 The Irish PIA is not simply a copy of a UK ISA. Under the Budget 2027 design, the Irish account has a 1% annual charge on account value above €50,000.
 
 To preserve the established search terms and links, this guide keeps using **Personal Investment Account (PIA)** as familiar shorthand while identifying **Individual Investment Account (IIA)** as the Bill’s draft legal term.
+
+<h2 id="pia-economic-assessment-2026">What does the Government expect Ireland's PIA to achieve?</h2>
+
+**New evidence examined 17 November 2026:** The Department of Finance's [*Individual Investment Account: Economic Impact Assessment* (November 2026)](https://assets.gov.ie/static/documents/4c3e3964/Individual_Investment_Account_Economic_Impact_Assessment_-_November_2026.pdf) provides something more useful than another prediction about an opening date: an official, explicitly assumption-dependent estimate of how the proposed account could affect household investment and public finances. The Department calls the scheme the **Individual Investment Account (IIA)**, the term used in the draft Finance Bill; PIA remains the familiar shorthand throughout this guide.
+
+### How large could the investment accounts become?
+
+In the report's **central model scenario**, assets held in IIAs rise from approximately **€850 million in 2027** to around **€110 billion by the mid-2040s**. These are *simulated total account holdings across participating households*, not €110 billion of new investment guaranteed to flow into Irish companies, a Government spending commitment, a deposit guarantee or the predicted return on one person's savings.
+
+The model starts from an assumption of approximately **2.5% take-up among adults in the first year**, then increases participation over time at different rates across wealth groups. Accumulated contributions, investment performance and new entrants all influence the long-run total. A large headline asset figure therefore does not mean a €12,000 contribution can somehow turn into €110 billion, nor does it establish how many banks will actually launch accounts.
+
+### What is the projected cost to the taxpayer?
+
+The report's central **annual net fiscal estimate** starts as a cost: it projects a peak annual Exchequer cost of roughly **€37 million in 2032**, a move into annual net revenue **from 2037**, and approximately **€441 million of annual net revenue in 2046**. This is a modelled *annual* fiscal effect in those years, **not** the cumulative cost or total tax collected from investors since launch.
+
+Importantly, the fiscal estimate reflects more than the proposed 1% account-value charge. It compares foregone investment taxes with account-tax receipts and estimates additional Income Tax and VAT from second-round economic effects. The report separately estimates around **€387 million of account-tax receipts in 2046**. Adding €387 million to the €441 million net figure would double-count a component of the wider fiscal model. Actual outcomes could differ substantially: the Department's alternative assumptions produce a range of approximately **€120 million to €425 million of annual net revenue in 2046**.
+
+### Who might own the balances?
+
+One of the report's most important findings is distributional. In the central model, the **wealthiest 10% of households hold 54.5%** of all IIA assets by 2046, while the **wealthiest 20% together hold 72.9%**. The bottom half of the wealth distribution holds just **6.5%**. On an approximate €110 billion total, those percentages imply around **€80 billion** held by the top fifth versus around **€7 billion** held by the bottom half. This is a calculation from the report's rounded shares, **not an additional independent forecast**.
+
+For the 1% charge itself, the same simulation places roughly **95% of the €387 million 2046 account-tax yield** with the wealthiest tenth, because most lower-wealth cohorts' modelled account values never exceed the proposed €50,000 threshold. That does not mean high earners always pay the charge, or that every smaller investor pays none: the actual design is based on each account's relevant average daily value, not its owner's national wealth ranking.
+
+### What the projections leave out
+
+The model makes simplifying assumptions about investment and other income taxes outside the IIA, changes in participation, how additional wealth becomes spending, and subsequent Income Tax and VAT receipts. The Department expressly warns that treating asset returns as disposable income can **overstate second-round effects**. It also does not fully model investment-driven changes in employment, production, business financing costs or Government spending. All figures above are *scenarios*, not audited programme outcomes, approved provider terms or a prediction that the account will be successful.
+
+**What should an individual investor do with these figures?** Use them to understand the policy's ambition and possible distributional trade-offs, not as a return assumption in a personal calculator. Your decision still turns on whether a future product is actually available, its complete all-in fees, your need for access to the money, pension tax relief and employer matching, and the risks of the assets selected. Start with the [PIA calculator](/pia-calculator/), compare [PIA versus pension](/pia/vs-pension/) on equal take-home cost, and check [provider statements and unknown fees](/pia/providers/).
+
+**Legislative status is separate from this economic paper.** Publication of the November assessment does **not** enact the Finance (No. 2) Bill, confirm a commencement order, announce a new provider fee or guarantee the **1 July 2027 target**. Continue following the [source-linked PIA launch tracker](/pia/#pia-launch-tracker). The tracker must move only when a separate legal or operational event is independently verified.
 
 <h2 id="when-does-pia-launch">When will the Personal Investment Account launch in Ireland?</h2>
 
