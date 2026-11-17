@@ -61,6 +61,22 @@ def test_built_discovery_and_crawler_access(settings):
     assert '/finance/' in (out / 'index.html').read_text()
     assert data['url'] in (out / 'sitemap.xml').read_text()
     assert '/finance/index.json' in (out / 'llms.txt').read_text()
+    # The reader-facing landing page is a curated hub, not a long ungrouped list.
+    assert 'Make the numbers' in page and 'make sense.' in page
+    assert 'id="finance-pathways"' in page
+    assert 'id="finance-tools"' in page
+    assert 'id="finance-research"' in page
+    assert 'id="finance-library"' in page
+    assert 'data-finance-search' in page
+    assert page.count('data-finance-group') == 4
+    assert page.count('data-finance-item') == len(data['entries'])
+    assert '/static/finance-hub.css?v=1' in page
+    assert '/static/finance-hub.js?v=1' in page
+    assert (out / 'static/finance-hub.css').is_file()
+    assert (out / 'static/finance-hub.js').is_file()
+    assert '/pia/' in page and '/stocks/' in page and '/tools/' in page
+    # The complete source-linked catalogue must remain unchanged and crawlable.
+    assert all(f'href="{entry["url"]}"' in page for entry in data['entries'])
     robots = RobotFileParser(); robots.parse((out / 'robots.txt').read_text().splitlines())
     for bot in ('OAI-SearchBot', 'ChatGPT-User', 'Claude-SearchBot', 'Claude-User', 'Googlebot', 'Google-Extended', 'bingbot', 'GPTBot', '*'):
         for path in ('/finance/', '/finance/index.json', '/llms.txt', '/stocks/aapl/', '/compound-interest-calculator/'):
@@ -96,3 +112,6 @@ def test_populated_render_matches_schema_and_escapes_text(tmp_path):
     assert collection['mainEntity']['itemListElement'][0]['url'] == data['entries'][0]['url']
     assert 'Safe </script>' not in page
     assert 'https://www.revenue.ie/' in page
+    assert 'id="finance-library"' in page and 'data-finance-search' in page
+    assert 'Safe &lt;/script&gt; &amp; title' in page
+    assert (tmp_path / 'finance/index.json').is_file()
