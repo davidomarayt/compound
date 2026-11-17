@@ -6563,7 +6563,7 @@
         "embedded_guide": "content/tool-guides/retirement-income-calculator.md"
       },
       {
-        "title": "Salary to Hourly Rate Calculator Ireland",
+        "title": "Salary to Hourly Calculator Ireland",
         "url": "/salary-hourly-rate-calculator/",
         "source": "content/tools.yml",
         "kind": "Calculator",
@@ -6940,7 +6940,7 @@
         "kind": "Embedded calculator guide"
       },
       {
-        "title": "Salary to Hourly Rate Calculator Ireland",
+        "title": "Salary to Hourly Calculator Ireland",
         "url": "/salary-hourly-rate-calculator/",
         "source": "content/tool-guides/salary-hourly-rate-calculator.md",
         "kind": "Embedded calculator guide"

@@ -431,7 +431,7 @@ Some old quarterly article routes are now redirects to continuous company profil
 - [PRSI Calculator Ireland 2026](https://compound.ie/prsi-calculator/) | includes embedded guide
 - [Redundancy Calculator Ireland 2026](https://compound.ie/redundancy-calculator-ireland/) | includes embedded guide
 - [Rent Tax Credit Calculator Ireland 2027](https://compound.ie/rent-tax-credit-calculator/) | includes embedded guide
-- [Salary to Hourly Rate Calculator Ireland](https://compound.ie/salary-hourly-rate-calculator/) | includes embedded guide
+- [Salary to Hourly Calculator Ireland](https://compound.ie/salary-hourly-rate-calculator/) | includes embedded guide
 - [Self-Employed Tax Calculator Ireland](https://compound.ie/self-employed-tax-calculator-ireland/) | includes embedded guide
 - [Take-Home Pay Calculator Ireland 2027](https://compound.ie/take-home-pay-calculator/) | includes embedded guide
 - [USC Calculator Ireland 2027](https://compound.ie/usc-calculator/) | includes embedded guide
@@ -487,7 +487,7 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - Rent Tax Credit Calculator Ireland 2027 | source: content/tool-guides/rent-tax-credit-calculator.md
 - Rent vs Buy Calculator Ireland | source: content/tool-guides/rent-vs-buy-calculator.md
 - Retirement Income Calculator Ireland | source: content/tool-guides/retirement-income-calculator.md
-- Salary to Hourly Rate Calculator Ireland | source: content/tool-guides/salary-hourly-rate-calculator.md
+- Salary to Hourly Calculator Ireland | source: content/tool-guides/salary-hourly-rate-calculator.md
 - Savings Goal Calculator Ireland | source: content/tool-guides/savings-goal-calculator.md
 - Self-Employed Tax Calculator Ireland | source: content/tool-guides/self-employed-tax-calculator-ireland.md
 - Solar + EV + Battery Optimiser Ireland | source: content/tool-guides/solar-ev-battery-optimiser.md

@@ -370,7 +370,7 @@ For the complete register (including 510+ company profiles), open
 - [Rent Tax Credit Calculator Ireland 2027](https://compound.ie/rent-tax-credit-calculator/) — **Tax & Take-Home Pay**
 - [Rent vs Buy Calculator Ireland](https://compound.ie/rent-vs-buy-calculator/) — **Mortgages & Home Buying**
 - [Retirement Income Calculator Ireland](https://compound.ie/retirement-income-calculator/) — **Pensions & Investing**
-- [Salary to Hourly Rate Calculator Ireland](https://compound.ie/salary-hourly-rate-calculator/) — **Tax & Take-Home Pay**
+- [Salary to Hourly Calculator Ireland](https://compound.ie/salary-hourly-rate-calculator/) — **Tax & Take-Home Pay**
 - [Savings Goal Calculator Ireland](https://compound.ie/savings-goal-calculator/) — **Pensions & Investing**
 - [Self-Employed Tax Calculator Ireland](https://compound.ie/self-employed-tax-calculator-ireland/) — **Tax & Take-Home Pay**
 - [Solar + EV + Battery Optimiser Ireland](https://compound.ie/solar-ev-battery-optimiser/) — **Home Energy**
