@@ -825,6 +825,9 @@ tools:
     formula: pia
     summary: Ireland's proposed PIA launches from July 2027. Estimate how contributions and returns could grow your account, and how a 1% annual charge on the average daily value above €50,000 could affect it. Illustrative results, not an official tax calculation.
     meta_description: PIA calculator Ireland 2027. Model contributions, growth, fees and the proposed 1% charge above €50,000 using projected daily account values.
+    quick_answer: "Model Ireland’s proposed PIA contribution limit of €12,000 per year and the proposed 1% annual charge on the portion of average daily account value above €50,000. Accounts are not yet open; projections are illustrative."
+    quick_link_label: "Read the PIA Ireland guide and launch tracker"
+    quick_link_url: /pia/
     updated: 2026-11-13
     basic_note: "Basic mode applies the Budget 2027 headline design: up to €12,000 annual contributions, a €50,000 threshold and a 1% annual PIA charge on the projected average of daily closing account values above that threshold."
     advanced_note: "Advanced mode adds an annual investment/provider fee, inflation-adjusted value and the long-run balance drag from the PIA charge. The Finance Bill as introduced specifies a daily closing-value average; the final law and provider calculations may differ."
@@ -1174,12 +1177,15 @@ tools:
 
   - slug: inflation-calculator
     title: Inflation Calculator Ireland
-    seo_title: Inflation Calculator Ireland – Purchasing Power
+    seo_title: Inflation Calculator Ireland | Future Cost & Buying Power
     category: Pensions & Investing
     formula: inflation
     summary: See how inflation compounds future prices, erodes a fixed amount of cash and changes the real return on savings or investments.
-    meta_description: "Model how inflation changes future prices and purchasing power in Ireland. Compare nominal and real returns using your own inflation and investment assumptions."
-    updated: 2026-09-22
+    meta_description: "See how an assumed inflation rate changes future prices and purchasing power in Ireland. Calculate euro values over time and compare nominal versus real returns."
+    quick_answer: "Future cost = amount today × (1 + yearly inflation rate)^years. At 3% assumed annual inflation, €1,000 today becomes about €1,344 after 10 years. This is not a live CPI reading."
+    quick_link_label: "Model savings and investment growth"
+    quick_link_url: /compound-interest-calculator/
+    updated: 2026-11-17
     basic_note: "Basic mode compares the future cost of today's basket with the purchasing power of holding the same nominal euro amount."
     advanced_note: "Advanced mode adds a nominal investment/savings return and converts it to a real return using the compounding relationship between growth and inflation."
     fields:
@@ -1249,12 +1255,15 @@ tools:
 
   - slug: salary-hourly-rate-calculator
     title: Salary to Hourly Rate Calculator Ireland
-    seo_title: Hourly Wage Calculator Ireland | Salary to Hourly Pay
+    seo_title: Salary to Hourly Rate Calculator Ireland | Hourly Wage
     category: Tax & Take-Home Pay
     formula: salary_hourly
     summary: Work out your gross hourly wage from your annual salary, paid hours and weeks. See hourly, daily, weekly, fortnightly and monthly pay before tax.
-    meta_description: "Work out your hourly wage from annual salary in Ireland. Enter your paid hours and weeks to see gross hourly, weekly, fortnightly and monthly pay."
-    updated: 2026-10-18
+    meta_description: "Convert an annual salary into hourly, weekly and monthly gross pay in Ireland. Enter paid hours and weeks to compare wages, shift patterns and job offers."
+    quick_answer: "Gross hourly pay = annual salary ÷ (paid hours per week × paid weeks per year). A €50,000 salary over 39 paid hours weekly and 52 paid weeks equals €24.65 an hour, before tax."
+    quick_link_label: "Calculate your take-home pay"
+    quick_link_url: /take-home-pay-calculator/
+    updated: 2026-11-17
     fields:
       - {id: salary, label: Annual gross salary, type: number, prefix: "€", default: 50000, min: 0, step: 500, section_start: Gross pay}
       - {id: hours, label: Paid working hours per week, type: number, default: 39, min: 1, max: 100, step: 0.5, section_start: Working pattern, help: "Use paid hours for the comparison. Unpaid breaks should normally be excluded."}
@@ -1312,12 +1321,15 @@ tools:
 
   - slug: fuel-cost-calculator
     title: Fuel Cost Calculator Ireland
-    seo_title: Fuel Cost Calculator Ireland | Petrol & Diesel Trip Cost
+    seo_title: Fuel Cost Calculator Ireland | Petrol & Diesel Journey Cost
     category: EV & Motoring
     formula: fuel
     summary: Calculate petrol or diesel cost for a trip, return journey or commute. Enter kilometres, fuel consumption and your pump price; use Advanced mode for yearly spending.
-    meta_description: "Calculate petrol or diesel cost for a trip or commute in Ireland. Enter km, L/100km and price per litre for journey cost, cost per km and annual fuel spend."
-    updated: 2026-10-18
+    meta_description: "Calculate petrol or diesel fuel costs in Ireland. Enter km, L/100km and price per litre to estimate a trip, return commute, cost per km and annual spending."
+    quick_answer: "Fuel cost = distance (km) × consumption (L/100km) ÷ 100 × price per litre. At 6.5 L/100km and €1.75/L, a 100 km trip costs about €11.38 in fuel alone."
+    quick_link_label: "Compare electric-car charging costs"
+    quick_link_url: /ev-charging-cost-calculator/
+    updated: 2026-11-17
     basic_note: "Basic mode prices the trip pattern entered using one fuel-consumption figure and one pump price."
     advanced_note: "Advanced mode adds annual distance so the same consumption and pump-price assumptions can be translated into yearly litres and fuel spend."
     fields:
@@ -1387,11 +1399,15 @@ tools:
 
   - slug: electricity-cost-calculator
     title: Electricity Cost Calculator Ireland
+    seo_title: Electricity Cost Calculator Ireland | kWh & Appliance Costs
     category: Home Energy
     formula: electricity
     summary: Estimate an appliance's incremental electricity use and running cost, with Advanced controls for cycling/duty cycle and off-peak usage.
-    meta_description: Electricity cost calculator Ireland. Estimate appliance kWh and running cost from watts, usage, duty cycle and day/off-peak electricity rates.
-    updated: 2026-09-22
+    meta_description: "Calculate electricity running costs in Ireland using appliance watts, hours and your €/kWh unit rate. Estimate monthly use and compare day and off-peak tariffs."
+    quick_answer: "Appliance cost = (watts ÷ 1,000) × hours used × electricity rate (€/kWh). A 2,000 W heater used for one hour at €0.30/kWh costs €0.60 in energy charges."
+    quick_link_label: "Understand Irish electricity tariffs"
+    quick_link_url: /wealth/electricity-tariffs-ireland/
+    updated: 2026-11-17
     basic_note: "Basic mode assumes the appliance draws the entered wattage for every hour entered and all energy is charged at one unit rate."
     advanced_note: "Advanced mode can reduce nameplate power with a duty-cycle assumption and split the appliance's energy between the main and off-peak rates. Fixed standing charges are excluded because they are not caused by running one appliance."
     fields:
