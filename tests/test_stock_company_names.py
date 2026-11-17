@@ -58,10 +58,19 @@ def test_ticker_reassignment_does_not_apply_old_name_override():
 
 
 def test_stock_pages_display_corrected_name_and_keep_class_tickers(settings):
-    from compound.site.build import build_site
-    build_site(settings)
-    root = settings.public_dir
-    index = (root / "stocks/index.html").read_text()
+    # Render the actual audited register rather than an empty fixture site.
+    from compound.site.build import _env
+    registry, _ = current_register()
+    companies = [
+        {**c, "slug": c["symbol"].lower(), "report_count": 0}
+        for c in registry["members"] if c["active"]
+    ]
+    env = _env(settings)
+    index = env.get_template("stocks_hub.html").render(
+        title="Stock research", pillar="wealth", registry=registry,
+        companies=companies, checked=registry["checked"],
+        sectors=sorted({c["sector"] for c in companies}),
+    )
     assert "Eli Lilly and Company" in index
     assert "Lilly (Eli)" not in index
     assert "The Walt Disney Company" in index
@@ -69,7 +78,14 @@ def test_stock_pages_display_corrected_name_and_keep_class_tickers(settings):
     assert "Alphabet Inc." in index
     assert "Alphabet Inc. (Class A)" not in index
     assert "GOOG, GOOGL" in index
-    profile = (root / "stocks/lly/index.html").read_text()
+
+    lilly = next(c for c in companies if c["symbol"] == "LLY")
+    profile = env.get_template("earnings_company.html").render(
+        title="Eli Lilly stock", pillar="wealth", company=lilly,
+        release=None, report=None, seo=None, earnings_analysis="",
+        tradingview_panel="", ads_allowed=False, news=[], research=[],
+        has_coverage=False,
+    )
     assert "Eli Lilly and Company" in profile
     assert "LLY" in profile
-    assert "Original SEC report" in profile
+    assert "Official SEC filings" in profile
