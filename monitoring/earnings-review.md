@@ -1,10 +1,10 @@
 # Compound company review queue
 
-Checked: 2026-11-16
+Checked: 2026-11-17
 
 - 499 saved profiles checked against structural and issuer rules.
-- 101 existing company articles; 83 mapped to monitored issuers.
-- 94 pending review items; 17 recorded decisions.
+- 104 existing company articles; 83 mapped to monitored issuers.
+- 97 pending review items; 17 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
@@ -85,6 +85,14 @@ Files: `content/wealth/databricks-always-on-genie-enterprise-agent-economics.md`
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `6f2d2888bf902298066ee2f3`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/openai-lvmh-media-chatgpt-news-distribution-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `7272bceb0b72fa8cc9dc9b67`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
@@ -101,6 +109,14 @@ Files: `content/wealth/bytedance-400-billion-buyback-private-ipo-liquidity.md`
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `917d8a920f4985a8f7625a86`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/databricks-three-billion-emea-investment-agent-platform-distribution.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `b08ae5372476782fde9168cc`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
@@ -114,6 +130,14 @@ ID: `d8cd404b933af68d51e04381`
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/anthropic-always-on-agents-business-case-permissions-cost.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `da843b900adfb5e6fff8e433`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/anthropic-self-hosted-managed-agents-enterprise-control-economics.md`
 
 ### UNMAPPED · article_mapping · medium
 
