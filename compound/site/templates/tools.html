@@ -45,9 +45,12 @@
         {% if category_blurbs and category in category_blurbs %}<p class="tool-group-blurb">{{ category_blurbs[category] }}</p>{% endif %}
         {% if category == 'Home Energy' %}<p class="tool-group-blurb">Planning solar panels? <a href="/solar/">Solar costs and payback guides ↗</a></p>{% endif %}
       </div>
-      <span class="tool-group-count">{{ items|length }} tool{% if items|length != 1 %}s{% endif %}</span>
+      <span class="tool-group-count">{{ items|length + (1 if category == 'Health' else 0) }} tool{% if items|length + (1 if category == 'Health' else 0) != 1 %}s{% endif %}</span>
     </div>
     <div class="tool-grid">
+      {% if category == 'Health' %}
+      <a class="tool-card" href="/caffeine-calculator/" data-tool-card data-tool-text="caffeine calculator coffee tea half life mg energy drinks sleep bedtime caffeine in your system"><span class="tool-category">Health · Interactive</span><h3>Caffeine &amp; Sleep Calculator</h3><p>See how much caffeine might be left at bedtime using a draggable, interactive chart.</p><span>Explore chart →</span></a>
+      {% endif %}
       {% for tool in items %}
       <a class="tool-card" href="{{ tool.url }}" data-tool-card data-tool-text="{{ tool.title|lower }} {{ tool.summary|lower }} {{ tool.category|lower }}">
         <span class="tool-category">{{ tool.category }}</span><h3>{{ tool.title }}</h3><p>{{ tool.summary }}</p><span>Open tool →</span>

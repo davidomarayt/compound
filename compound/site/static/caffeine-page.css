@@ -1,0 +1,25 @@
+/* Caffeine calculator landing page; respects the Compound site shell. */
+.caf-page{max-width:1180px;margin:0 auto;padding:clamp(26px,4vw,60px) clamp(16px,3vw,38px) 80px;font-family:var(--sans,Arial,sans-serif);color:var(--ink,#25232a)}
+.caf-breadcrumbs{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--ink-2,#655e62);margin-bottom:27px}
+.caf-breadcrumbs a{color:inherit;text-decoration:none}.caf-breadcrumbs a:hover{text-decoration:underline}
+.caf-hero{max-width:870px;margin-bottom:36px}.caf-hero .eyebrow{letter-spacing:.12em}
+.caf-hero h1{font:400 clamp(38px,5.8vw,72px)/1.05 var(--serif,Georgia,serif);letter-spacing:-.035em;max-width:900px;margin:13px 0 17px}
+.caf-lede{font-size:clamp(17px,1.8vw,20px);line-height:1.6;max-width:780px;color:var(--ink-2,#5e575c);margin:0}
+.caf-trust{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.caf-trust span{padding:8px 11px;border:1px solid var(--line,#ddd7d8);border-radius:30px;font-size:12px;color:var(--ink-2,#5e575c)}
+.caf-interactive{margin:0 0 55px}.caf-interactive-heading{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:0 0 10px}.caf-interactive-heading h2{font:400 clamp(27px,3vw,37px)/1.15 var(--serif,Georgia,serif);margin:5px 0 0}
+.caf-interactive-tag{font-size:10px;letter-spacing:.13em;color:var(--ink-2,#5e575c);border:1px solid var(--line,#ddd);padding:8px 12px;border-radius:20px}
+.caf-instructions{margin:0 0 18px;color:var(--ink-2,#625b60);font-size:15px;line-height:1.65;max-width:850px}
+.caf-chart-shell{height:690px;background:#0e0e0e;border:1px solid #292929;border-radius:17px;overflow:hidden;box-shadow:0 24px 60px rgba(35,28,31,.09)}
+#caffeine-day-app{height:100%;width:100%;min-height:0}#caffeine-day-app .cd{height:100%}
+.caf-chart-note{font:400 13px/1.65 var(--sans,Arial,sans-serif);color:var(--ink-2,#625b60);margin:14px 0 0;max-width:960px}
+.caf-chart-note strong{color:var(--ink,#242029)}
+.caf-reading{display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:clamp(28px,5vw,80px);align-items:start}
+.caf-main-copy{max-width:720px;min-width:0}.caf-main-copy.article-prose{width:auto;margin:0}
+.caf-main-copy h2{font:400 clamp(26px,3vw,35px)/1.2 var(--serif,Georgia,serif);letter-spacing:-.02em;margin:45px 0 16px}.caf-main-copy h2:first-child{margin-top:0}
+.caf-main-copy h3{font-size:20px;line-height:1.3;margin:26px 0 10px}.caf-main-copy p,.caf-main-copy li{font-size:16px;line-height:1.78}
+.caf-main-copy table{display:block;overflow-x:auto;width:100%;border-collapse:collapse;font-size:14px}.caf-main-copy th,.caf-main-copy td{padding:11px 10px;border-bottom:1px solid var(--line,#ddd);text-align:left;white-space:nowrap}.caf-main-copy td:last-child,.caf-main-copy th:last-child{text-align:right}
+.caf-side{display:grid;gap:16px;position:sticky;top:24px}.caf-side-card{background:var(--surface,#faf8f8);border:1px solid var(--line,#e3dddd);padding:25px}.caf-side-card h2{font:400 25px/1.25 var(--serif,Georgia,serif);margin:10px 0}.caf-side-card p:not(.eyebrow){font-size:14px;line-height:1.7;color:var(--ink-2,#625b60)}.caf-side-card>a{display:block;padding:11px 0;border-bottom:1px solid var(--line,#ddd);font-size:14px;color:var(--ink,#242029);text-decoration:none}.caf-side-card>a:hover{text-decoration:underline}
+.caf-credit{border-top:1px solid var(--line,#ddd);margin-top:55px;padding-top:22px;font:400 12px/1.7 var(--sans,Arial,sans-serif);color:var(--ink-2,#625b60)}.caf-credit a{color:inherit}
+@media(max-width:850px){.caf-reading{grid-template-columns:1fr}.caf-side{position:static;grid-template-columns:repeat(2,minmax(0,1fr))}.caf-chart-shell{height:630px}}
+@media(max-width:600px){.caf-page{padding:25px 12px 60px}.caf-hero{margin-bottom:28px}.caf-hero h1{font-size:clamp(35px,9vw,52px)}.caf-chart-shell{height:590px;border-radius:11px}.caf-interactive{margin-bottom:38px}.caf-interactive-tag{display:none}.caf-side{grid-template-columns:1fr}.caf-trust span{font-size:11px}.caf-main-copy p,.caf-main-copy li{font-size:15px}.caf-main-copy h2{margin-top:30px}}
+@media(prefers-reduced-motion:reduce){.caf-chart-shell{scroll-behavior:auto}}
