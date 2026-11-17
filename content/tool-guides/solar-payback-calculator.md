@@ -22,6 +22,12 @@ The Advanced results now show the battery's **incremental annual value and batte
 
 Payback is not a guarantee. The result is only as strong as the assumptions for generation, self-consumption, import tariff, export rate, battery efficiency and system cost. Compare the solar-only and solar-plus-battery cases separately.
 
+
+### Are export payments after tax?
+
+**No.** This calculator values solar export credits at the full supplier rate and **does not deduct Income Tax, USC or PRSI** on any taxable export profit. Under [Revenue's January 2026 microgeneration manual](https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-07/07-01-44.pdf), qualifying individuals named on the electricity bill can each have up to **€400 of annual qualifying export profit exempt**; [Revenue's 28 January 2026 notice](https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0202026.aspx) confirms these rules extend to **31 December 2028**. For example, one qualifying individual with €550 of annual export credits and no deductible export expenses would have €150 above that person's exemption; that €150 is **potentially taxable profit, not the amount of tax**. Eligibility and any profit allocation depend on the actual circumstances. Savings from consuming your own solar electricity are distinct from export payments. See [our Irish solar export tax guide](/wealth/tax-on-solar-export-payments-ireland/) for conditions, calculations and filing routes; do not assume this calculator's gross export value is the amount you keep after tax.
+
+
 ## Worked example
 
 The calculator's default household-demand assumption is **4,200 kWh a year**. Replace it with your own annual usage from bills where possible.
