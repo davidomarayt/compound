@@ -4,7 +4,7 @@
   "run_type": "pia_content_growth",
   "topic_fingerprint": "2026-11-department-finance-individual-investment-account-economic-impact-assessment-simulation-distribution-fiscal",
   "action": "substantive_update_existing_canonical",
-  "status": "prepared_pending_pr_ci",
+  "status": "merged_pending_production_verification",
   "new_articles": 0,
   "canonical_url": "https://compound.ie/wealth/personal-investment-account-ireland/",
   "path": "content/wealth/personal-investment-account-ireland.md",
@@ -39,9 +39,32 @@
   "qa": {
     "editorial": "new official research distinct from existing mechanics/fee/pension intent; source dates and assumptions disclosed",
     "publication": "pending exact PR head CI and production verification",
-    "hero": "existing published guide cover retained unchanged; no new photo"
+    "hero": "existing published guide cover retained unchanged; no new photo",
+    "public_canonical": "old text still fetched after merge; no new economics section independently verified",
+    "ad_loader": "not yet checked on new rendered version",
+    "cover_and_social": "existing editorial image retained; new deployed metadata not yet verified"
   },
   "live_http_verified": false,
   "verified_live_result": null,
-  "production_verified": false
+  "production_verified": false,
+  "pr_number": 159,
+  "pr_url": "https://github.com/davidomarayt/compound/pull/159",
+  "ci": {
+    "head_sha": "90cf64049d1cdc9a9810508657e70945b827f7e3",
+    "run_id": 44052103652,
+    "test": "success",
+    "performance": "success",
+    "exact_commit": true
+  },
+  "merge": {
+    "merged": true,
+    "commit_sha": "04b4976f57dbd71d8fd4bd6e9dcc61d0eec7df2d",
+    "production_branch": "claude/clever-babbage-uibieq"
+  },
+  "remaining_steps": [
+    "confirm GitHub Pages build/deploy for merge 04b4976f",
+    "fetch https://compound.ie/wealth/personal-investment-account-ireland/ and confirm November Government economic section",
+    "validate public canonical, hero, Open Graph/Twitter image and standard ad/CMP",
+    "change ledger to live only on evidence"
+  ]
 }
