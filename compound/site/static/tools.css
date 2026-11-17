@@ -603,3 +603,8 @@
 .tools-flagship>span:nth-child(3){font-size:14px;line-height:1.55;color:#e3d7d0;max-width:65ch}
 .tools-flagship-arrow{font-size:13px;font-weight:700;color:#f1cb98;margin-top:9px}
 .tools-flagship:hover{background:#493645}
+
+/* Search-intent quick answers: visible before calculator interaction. */
+.tool-quick-answer{border-left:3px solid var(--wealth);background:var(--wealth-soft);padding:14px 18px;margin:20px 0;max-width:760px}
+.tool-quick-answer p{margin:0;color:var(--ink);font-size:1rem;line-height:1.6}
+.tool-quick-answer a{display:inline-block;margin-top:9px;font-size:.9rem;font-weight:700;color:var(--wealth);text-underline-offset:3px}
