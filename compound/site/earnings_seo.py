@@ -220,8 +220,8 @@ def build_earnings_seo(company: dict, report: dict | None) -> dict | None:
     description = (
         f"{name} ({ticker}) {label} earnings, {fiscal['subtitle']}. "
         f"Revenue {latest['revenue']}; diluted EPS {latest['diluted_eps']}. "
-        ("SEC filing and growth comparisons." if source_is_sec else
-         "Official issuer results release and growth comparisons.")
+        + ("SEC filing and growth comparisons." if source_is_sec else
+           "Official issuer results release and growth comparisons.")
     )
     # Retain precise reporting dates instead of presenting FY2027 as a future event.
     narrative = [
