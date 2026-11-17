@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 302
+- Published editorial articles and guides: 303
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 248
+## Wealth articles and guides — 249
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -242,6 +242,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Rent took 28.5% of disposable income in Fingal on the CSO’s 2024 measure](https://compound.ie/news/irish-rent-burden-cso-fingal-2024/)
 - [Rent-a-Room Relief Could Rise to €20,000 in Budget 2027](https://compound.ie/news/rent-a-room-relief-20000-budget-2027/)
 - [Retention Planning Permission Ireland: Costs, Risks and What Happens If It Is Refused](https://compound.ie/wealth/retention-planning-permission-ireland/)
+- [Revolut Launches Joint Investment Accounts in Ireland: What Couples Need to Know](https://compound.ie/news/revolut-joint-investment-accounts-ireland-2026/)
 - [Revolut Mobile launches in Ireland at €9.99. What would switching save?](https://compound.ie/news/revolut-mobile-ireland-launch-price-esim/)
 - [Revolut Pay Enters Uber Checkout. Can Rewards Turn Payments Into a Habit?](https://compound.ie/wealth/revolut-pay-uber-rewards-payment-economics-2026/)
 - [Robinhood Hits Record Revenue as Prediction Markets Overtake Crypto—but Earnings Fall](https://compound.ie/wealth/robinhood-earnings-prediction-markets-profit/)

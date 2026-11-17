@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 302 published articles and guides, 64 tools,
+**Included:** 303 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -246,6 +246,7 @@ For the complete register (including 510+ company profiles), open
 - [Rent-a-Room Relief Could Rise to €20,000 in Budget 2027](https://compound.ie/news/rent-a-room-relief-20000-budget-2027/) — **Wealth**
 - [Retatrutide Ireland: what is it, can you get it, and how does it compare with Mounjaro, Wegovy and Ozempic?](https://compound.ie/health/retatrutide-ireland/) — **Health**
 - [Retention Planning Permission Ireland: Costs, Risks and What Happens If It Is Refused](https://compound.ie/wealth/retention-planning-permission-ireland/) — **Wealth**
+- [Revolut Launches Joint Investment Accounts in Ireland: What Couples Need to Know](https://compound.ie/news/revolut-joint-investment-accounts-ireland-2026/) — **Wealth**
 - [Revolut Mobile launches in Ireland at €9.99. What would switching save?](https://compound.ie/news/revolut-mobile-ireland-launch-price-esim/) — **Wealth**
 - [Revolut Pay Enters Uber Checkout. Can Rewards Turn Payments Into a Habit?](https://compound.ie/wealth/revolut-pay-uber-rewards-payment-economics-2026/) — **Wealth**
 - [Robinhood Hits Record Revenue as Prediction Markets Overtake Crypto—but Earnings Fall](https://compound.ie/wealth/robinhood-earnings-prediction-markets-profit/) — **Wealth**
