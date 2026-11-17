@@ -20,6 +20,9 @@ EXPORT_TAX_GUIDE = ROOT / "content/wealth/tax-on-solar-export-payments-ireland.m
 REVENUE_NOTICE = (
     "https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0202026.aspx"
 )
+REVENUE_MANUAL = (
+    "https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-07/07-01-44.pdf"
+)
 TAX_GUIDE_URL = "/wealth/tax-on-solar-export-payments-ireland/"
 
 
@@ -32,6 +35,7 @@ def test_solar_payback_explains_gross_export_tax_limit():
     assert "potentially taxable profit, not the amount of tax" in text
     assert TAX_GUIDE_URL in text
     assert REVENUE_NOTICE in text
+    assert REVENUE_MANUAL in text
     assert "Compare the solar-only and solar-plus-battery cases separately." in text
 
 
