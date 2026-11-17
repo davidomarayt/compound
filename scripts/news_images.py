@@ -228,18 +228,7 @@ def download(url: str, destination: Path) -> None:
     ) as client:
         response = client.get(url)
         response.raise_for_status()
-        # Source publishers sometimes serve WebP even when the local hero filename
-        # ends in .jpg. Convert those assets so browser MIME types and social
-        # previews agree with the actual file, while preserving the real photo.
-        if destination.suffix.lower() in {".jpg", ".jpeg"} and (
-            "webp" in response.headers.get("content-type", "").lower()
-            or url.split("?", 1)[0].lower().endswith(".webp")
-        ):
-            from io import BytesIO
-            with Image.open(BytesIO(response.content)) as source:
-                source.convert("RGB").save(destination, format="JPEG", quality=90, optimize=True)
-        else:
-            destination.write_bytes(response.content)
+        destination.write_bytes(response.content)
 
 
 def wrap(text: str, width: int = 33, max_lines: int = 4) -> list[str]:
