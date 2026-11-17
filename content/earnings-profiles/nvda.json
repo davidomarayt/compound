@@ -2,33 +2,38 @@
   "cik": 1045810,
   "company": "Nvidia",
   "latest": {
-    "accession": "0001045810-26-000075",
-    "filed": "2026-08-26",
-    "form": "10-Q",
-    "fp": "Q2",
+    "accession": "",
+    "filed": "",
+    "published": "2026-11-17",
+    "form": "Issuer earnings release (SEC filing pending)",
+    "fp": "Q3",
     "fy": 2027,
+    "period_end": "2026-10-25",
+    "source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
     "metrics": {
-      "diluted_eps": {
-        "current": 2.46,
-        "prior_year": 1.08,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 115844000000,
+        "prior_year": 57006000000,
+        "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
+        "unit": "USD"
       },
       "net_income": {
-        "current": 59688000000,
-        "prior_year": 26422000000,
-        "tag": "NetIncomeLoss",
+        "current": 65287000000,
+        "prior_year": 31910000000,
+        "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
         "unit": "USD"
       },
-      "revenue": {
-        "current": 96221000000,
-        "prior_year": 46743000000,
-        "tag": "Revenues",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 2.7,
+        "prior_year": 1.3,
+        "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
+        "unit": "USD/shares"
       }
     },
-    "period_end": "2026-07-26",
-    "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    "notes": [
+      "Q3 FY2027 numbers are from NVIDIA's official unaudited earnings announcement dated 17 November 2026. The SEC earnings 8-K was not yet indexed at preparation; no SEC accession or filing date is asserted.",
+      "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
+    ]
   },
   "periods": [
     {
@@ -88,9 +93,43 @@
       },
       "period_end": "2026-07-26",
       "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    {
+      "accession": "",
+      "filed": "",
+      "published": "2026-11-17",
+      "form": "Issuer earnings release (SEC filing pending)",
+      "fp": "Q3",
+      "fy": 2027,
+      "period_end": "2026-10-25",
+      "source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+      "metrics": {
+        "revenue": {
+          "current": 115844000000,
+          "prior_year": 57006000000,
+          "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
+          "unit": "USD"
+        },
+        "net_income": {
+          "current": 65287000000,
+          "prior_year": 31910000000,
+          "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
+          "unit": "USD"
+        },
+        "diluted_eps": {
+          "current": 2.7,
+          "prior_year": 1.3,
+          "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        }
+      },
+      "notes": [
+        "Q3 FY2027 numbers are from NVIDIA's official unaudited earnings announcement dated 17 November 2026. The SEC earnings 8-K was not yet indexed at preparation; no SEC accession or filing date is asserted.",
+        "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
+      ]
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC XBRL for Q1/Q2; NVIDIA official investor earnings release for Q3, pending SEC 8-K accession; no analyst estimates",
   "ticker": "NVDA",
-  "updated": "2026-10-15"
+  "updated": "2026-11-17"
 }
