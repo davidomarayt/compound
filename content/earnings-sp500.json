@@ -947,13 +947,14 @@
     },
     {
       "cik": 21076,
-      "name": "Clorox",
+      "name": "The Clorox Company",
       "sector": "Consumer Staples",
       "symbol": "CLX",
       "symbols": [
         "CLX"
       ],
-      "active": true
+      "active": true,
+      "source_name": "Clorox"
     },
     {
       "cik": 1166691,
@@ -1057,13 +1058,14 @@
     },
     {
       "cik": 711404,
-      "name": "Cooper Companies (The)",
+      "name": "The Cooper Companies",
       "sector": "Health Care",
       "symbol": "COO",
       "symbols": [
         "COO"
       ],
-      "active": true
+      "active": true,
+      "source_name": "Cooper Companies (The)"
     },
     {
       "cik": 1163165,
@@ -1367,13 +1369,14 @@
     },
     {
       "cik": 1744489,
-      "name": "Walt Disney Company (The)",
+      "name": "The Walt Disney Company",
       "sector": "Communication Services",
       "symbol": "DIS",
       "symbols": [
         "DIS"
       ],
-      "active": true
+      "active": true,
+      "source_name": "Walt Disney Company (The)"
     },
     {
       "cik": 1297996,
@@ -1567,13 +1570,14 @@
     },
     {
       "cik": 1001250,
-      "name": "Estée Lauder Companies (The)",
+      "name": "The Estée Lauder Companies Inc.",
       "sector": "Consumer Staples",
       "symbol": "EL",
       "symbols": [
         "EL"
       ],
-      "active": true
+      "active": true,
+      "source_name": "Estée Lauder Companies (The)"
     },
     {
       "cik": 1156039,
@@ -1917,14 +1921,15 @@
     },
     {
       "cik": 1754301,
-      "name": "Fox Corporation (Class A)",
+      "name": "Fox Corporation",
       "sector": "Communication Services",
       "symbol": "FOXA",
       "symbols": [
         "FOX",
         "FOXA"
       ],
-      "active": true
+      "active": true,
+      "source_name": "Fox Corporation (Class A)"
     },
     {
       "cik": 34903,
@@ -2088,14 +2093,15 @@
     },
     {
       "cik": 1652044,
-      "name": "Alphabet Inc. (Class A)",
+      "name": "Alphabet Inc.",
       "sector": "Communication Services",
       "symbol": "GOOGL",
       "symbols": [
         "GOOG",
         "GOOGL"
       ],
-      "active": true
+      "active": true,
+      "source_name": "Alphabet Inc. (Class A)"
     },
     {
       "cik": 40987,
@@ -2189,23 +2195,25 @@
     },
     {
       "cik": 354950,
-      "name": "Home Depot (The)",
+      "name": "The Home Depot",
       "sector": "Consumer Discretionary",
       "symbol": "HD",
       "symbols": [
         "HD"
       ],
-      "active": true
+      "active": true,
+      "source_name": "Home Depot (The)"
     },
     {
       "cik": 874766,
-      "name": "Hartford (The)",
+      "name": "The Hartford",
       "sector": "Financials",
       "symbol": "HIG",
       "symbols": [
         "HIG"
       ],
-      "active": true
+      "active": true,
+      "source_name": "Hartford (The)"
     },
     {
       "cik": 1501585,
@@ -2309,13 +2317,14 @@
     },
     {
       "cik": 47111,
-      "name": "Hershey Company (The)",
+      "name": "The Hershey Company",
       "sector": "Consumer Staples",
       "symbol": "HSY",
       "symbols": [
         "HSY"
       ],
-      "active": true
+      "active": true,
+      "source_name": "Hershey Company (The)"
     },
     {
       "cik": 48898,
@@ -2699,13 +2708,14 @@
     },
     {
       "cik": 21344,
-      "name": "Coca-Cola Company (The)",
+      "name": "The Coca-Cola Company",
       "sector": "Consumer Staples",
       "symbol": "KO",
       "symbols": [
         "KO"
       ],
-      "active": true
+      "active": true,
+      "source_name": "Coca-Cola Company (The)"
     },
     {
       "cik": 56873,
@@ -2809,13 +2819,14 @@
     },
     {
       "cik": 59478,
-      "name": "Lilly (Eli)",
+      "name": "Eli Lilly and Company",
       "sector": "Health Care",
       "symbol": "LLY",
       "symbols": [
         "LLY"
       ],
-      "active": true
+      "active": true,
+      "source_name": "Lilly (Eli)"
     },
     {
       "cik": 936468,
@@ -3089,13 +3100,14 @@
     },
     {
       "cik": 1285785,
-      "name": "Mosaic Company (The)",
+      "name": "The Mosaic Company",
       "sector": "Materials",
       "symbol": "MOS",
       "symbols": [
         "MOS"
       ],
-      "active": true
+      "active": true,
+      "source_name": "Mosaic Company (The)"
     },
     {
       "cik": 1510295,
@@ -3399,14 +3411,15 @@
     },
     {
       "cik": 1564708,
-      "name": "News Corp (Class A)",
+      "name": "News Corp",
       "sector": "Communication Services",
       "symbol": "NWSA",
       "symbols": [
         "NWS",
         "NWSA"
       ],
-      "active": true
+      "active": true,
+      "source_name": "News Corp (Class A)"
     },
     {
       "cik": 1413447,
@@ -4020,13 +4033,14 @@
     },
     {
       "cik": 91419,
-      "name": "J.M. Smucker Company (The)",
+      "name": "The J.M. Smucker Company",
       "sector": "Consumer Staples",
       "symbol": "SJM",
       "symbols": [
         "SJM"
       ],
-      "active": true
+      "active": true,
+      "source_name": "J.M. Smucker Company (The)"
     },
     {
       "cik": 2041610,
@@ -4420,13 +4434,14 @@
     },
     {
       "cik": 86312,
-      "name": "Travelers Companies (The)",
+      "name": "The Travelers Companies",
       "sector": "Financials",
       "symbol": "TRV",
       "symbols": [
         "TRV"
       ],
-      "active": true
+      "active": true,
+      "source_name": "Travelers Companies (The)"
     },
     {
       "cik": 916365,

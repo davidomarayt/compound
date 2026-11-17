@@ -16,6 +16,8 @@ from pathlib import Path
 import re
 from urllib.request import Request, urlopen
 
+from compound.site.stock_names import normalise_company_names
+
 SOURCE_URL = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
 DATASET_URL = "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv"
 SECTORS = {
@@ -156,7 +158,7 @@ def build_snapshot(securities: list[dict], previous: dict | None, checked: str,
     return {"source": source, "source_type": "third-party public reference (not licensed S&P constituents)",
             "checked": checked, "security_count": len(securities),
             "company_count": len({x["cik"] for x in securities}),
-            "members": sorted(by_cik.values(), key=lambda x: x["symbol"])}
+            "members": normalise_company_names(sorted(by_cik.values(), key=lambda x: x["symbol"]))}
 
 
 def refresh(path: Path, fetch=None, now: str | None = None) -> bool:

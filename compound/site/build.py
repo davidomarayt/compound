@@ -24,6 +24,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from compound.config import Settings
 from compound.site.finance_discovery import catalogue, source_links, write_discovery
+from compound.site.stock_names import normalise_company_names
 from compound.site.pia import load_pia_tracker, load_pia_launch_tracker
 from compound.site.spending_explorer import prepare_spending_explorer
 from compound.site.spending_programmes import prepare_programmes
@@ -1414,7 +1415,9 @@ def build_site(settings: Settings) -> dict:
             "members": [], "company_count": 0, "security_count": 0, "checked": None,
             "source": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
         }
-    registry_members = earnings_registry["members"]
+    # Apply reviewed company names at display time, even when a third-party
+    # constituent feed has supplied reversed names or share-class suffixes.
+    registry_members = normalise_company_names(earnings_registry["members"])
     active_earnings_companies = sorted(
         (c for c in registry_members if c.get("active")),
         key=lambda c: (c["name"].casefold(), c["symbol"]),
