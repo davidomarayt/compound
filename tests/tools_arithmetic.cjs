@@ -813,3 +813,31 @@ assert.equal(glp1CostDirect.extra_spend, '€370.00');
 assert.equal(glp1CostDirect.average_monthly, '€318.33');
 assert.equal(glp1CostDirect.annualised_cost, '€3,820.00');
 assert.equal(glp1CostDirect.four_week_equivalent, '€293.85');
+
+
+// Two-way salary conversion regression: annual and hourly use the same paid-hours basis.
+const salaryAnnual = calculators.salary_hourly({
+  direction:'annual',salary:50000,hours:39,weeks:52,days:5,unpaid_extra_hours:0,__advanced:false
+});
+assert.equal(salaryAnnual.hourly, '€24.65');
+assert.equal(salaryAnnual.annual, '€50,000.00');
+assert.equal(salaryAnnual.monthly, '€4,166.67');
+assert.equal(salaryAnnual.annual_hours, '2,028 hours');
+const salaryHourly = calculators.salary_hourly({
+  direction:'hourly',salary:20,hours:39,weeks:52,days:5,unpaid_extra_hours:0,__advanced:false
+});
+assert.equal(salaryHourly.hourly, '€20.00');
+assert.equal(salaryHourly.annual, '€40,560.00');
+assert.equal(salaryHourly.monthly, '€3,380.00');
+assert.equal(salaryHourly.weekly, '€780.00');
+assert.equal(salaryHourly.daily, '€156.00');
+const salaryRealWorld = calculators.salary_hourly({
+  direction:'annual',salary:50000,hours:39,weeks:52,days:5,unpaid_extra_hours:6,__advanced:true
+});
+assert.equal(salaryRealWorld.effective_hourly, '€21.37');
+assert.equal(salaryRealWorld.hourly, '€24.65');
+assert.equal(
+  calculators.salary_hourly({salary:50000,hours:39,weeks:52,days:5,__advanced:false}).hourly,
+  '€24.65',
+  'legacy annual-only scenarios remain valid'
+);
