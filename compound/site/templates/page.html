@@ -6,6 +6,7 @@
 {% block meta %}
 {% if page.slug == 'life' %}<meta name="description" content="Compound Life brings together practical Irish guides and useful tools across relationships, family, work, travel, home, leisure and community.">
 {% elif page.slug == 'insurance' %}<meta name="description" content="Free insurance tools and independent guides for Ireland: life insurance, mortgage protection, income protection and health insurance, with practical calculators.">
+{% elif page.slug == 'caffeine-calculator' %}<meta name="description" content="{{ page.meta_description|e }}">
 
 {% elif is_solar or page.url.startswith('/pia/') %}<meta name="description" content="{{ page.meta_description|e }}">
 {% elif is_insurance_calculator %}<meta name="description" content="{{ insurance_tools[page.slug] }}">
@@ -14,6 +15,18 @@
 {% block head %}
 <link rel="canonical" href="{{ site_url }}{{ page.url }}">
 {% if page.slug == 'solar-installer-portal' %}<meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer">
+{% elif page.slug == 'caffeine-calculator' %}
+<meta property="og:type" content="website">
+<meta property="og:title" content="Caffeine Calculator: How Much Is Left at Bedtime? | Compound">
+<meta property="og:description" content="{{ page.meta_description|e }}">
+<meta property="og:url" content="{{ site_url }}/caffeine-calculator/">
+<meta property="og:site_name" content="Compound">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[
+{"@type":"WebPage","name":{{ page.title|tojson }},"description":{{ page.meta_description|tojson }},"url":{{ (site_url ~ page.url)|tojson }},"inLanguage":"en-IE","dateModified":"2026-11-17","publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}},
+{"@type":"WebApplication","name":"Caffeine Half-Life & Bedtime Calculator","url":"{{ site_url }}/caffeine-calculator/#caffeine-chart","applicationCategory":"HealthApplication","operatingSystem":"Any","browserRequirements":"JavaScript required for interactive chart","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"creator":{"@type":"Person","name":"Charles Postiaux"},"publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}},
+{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ site_url }}/"},{"@type":"ListItem","position":2,"name":"Health","item":"{{ site_url }}/health/"},{"@type":"ListItem","position":3,"name":"Caffeine Calculator","item":"{{ site_url }}/caffeine-calculator/"}]}
+]}</script>
 {% elif is_solar %}
 <meta property="og:type" content="website"><meta property="og:title" content="{{ page.title|e }}"><meta property="og:description" content="{{ page.meta_description|e }}"><meta property="og:url" content="{{ site_url }}{{ page.url }}"><meta property="og:site_name" content="Compound"><meta name="twitter:card" content="summary">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"{{ 'CollectionPage' if page.slug == 'solar' else 'WebPage' }}","name":{{ page.title|tojson }},"description":{{ page.meta_description|tojson }},"url":{{ (site_url ~ page.url)|tojson }},"inLanguage":"en-IE","publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ site_url }}/"},{"@type":"ListItem","position":2,"name":"Solar","item":"{{ site_url }}/solar/"}{% if page.slug != 'solar' %},{"@type":"ListItem","position":3,"name":{{ page.title|tojson }},"item":{{ (site_url ~ page.url)|tojson }}}{% endif %}]}]}</script>
@@ -59,7 +72,8 @@
 {% endif %}
 {% endblock %}
 {% block post_styles %}
-{% if page.slug == 'pia-invest-now-or-wait' %}<link rel="stylesheet" href="/static/pia-wait.css?v=20261117-1"><script src="/static/pia-wait.js?v=20261117-1" defer></script>
+{% if page.slug == 'caffeine-calculator' %}<link rel="stylesheet" href="/static/caffeine-page.css?v=1"><script type="module" src="/static/caffeine-page.js?v=1"></script>
+{% elif page.slug == 'pia-invest-now-or-wait' %}<link rel="stylesheet" href="/static/pia-wait.css?v=20261117-1"><script src="/static/pia-wait.js?v=20261117-1" defer></script>
 {% elif page.slug == 'pia-vs-ordinary-investing' %}<link rel="stylesheet" href="/static/pia-investing.css?v=20261113-1"><script src="/static/pia-investing.js?v=20261113-1" defer></script>
 {% elif page.slug == 'pia-vs-pension' %}<link rel="stylesheet" href="/static/pia-pension.css?v=20261113-1"><script src="/static/pia-pension.js?v=20261113-1" defer></script>
 {% elif page.slug == 'life' %}<link rel="stylesheet" href="/static/life-hub.css?v=1">
@@ -74,7 +88,34 @@
 {% endif %}
 {% endblock %}
 {% block content %}
-{% if page.slug == 'life' %}<div class="life-hub">{{ page.body_html|safe }}</div>
+{% if page.slug == 'caffeine-calculator' %}
+<div class="caf-page">
+  <nav class="caf-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/health/">Health</a><span aria-hidden="true">/</span><span>Caffeine calculator</span></nav>
+  <header class="caf-hero">
+    <p class="eyebrow">COMPOUND HEALTH / SLEEP &amp; RECOVERY</p>
+    <h1>Caffeine calculator: how much is left at bedtime?</h1>
+    <p class="caf-lede">See how coffee, tea and energy drinks can add up throughout your day. Move each drink on the interactive chart, change your bedtime and watch the estimated caffeine level change.</p>
+    <div class="caf-trust"><span>Free interactive chart</span><span>Runs in your browser</span><span>Five-hour model half-life</span></div>
+  </header>
+  <section class="caf-interactive" aria-labelledby="caf-chart-heading">
+    <div class="caf-interactive-heading"><div><p class="eyebrow">EXPLORE YOUR DAY</p><h2 id="caf-chart-heading">Caffeine across 24 hours</h2></div><span class="caf-interactive-tag">INTERACTIVE</span></div>
+    <p class="caf-instructions">Drag a drink to change its time, tap an empty spot to add one, or drag the bedtime marker. Select a drink below the chart to change its type and size.</p>
+    <div class="caf-chart-shell" id="caffeine-chart">
+      <div id="caffeine-day-app" data-caffeine-chart role="region" aria-label="Interactive chart of caffeine remaining across the day"></div>
+    </div>
+    <noscript><p class="caf-chart-note">The interactive chart requires JavaScript. The caffeine amounts, calculation method and source references below remain available.</p></noscript>
+    <p class="caf-chart-note"><strong>How to read it:</strong> the dotted curve is an estimate, not a measurement. The 50 mg bedtime marker is a visual guide chosen by the chart author, <strong>not</strong> a proven sleep-safe threshold. Keyboard users can focus the chart and use arrow keys to move a selected drink.</p>
+  </section>
+  <div class="caf-reading">
+    <div class="caf-main-copy article-prose">{{ page.body_html|safe }}</div>
+    <aside class="caf-side" aria-label="Related guides and context">
+      <div class="caf-side-card"><p class="eyebrow">HEALTH CONTEXT</p><h2>One number cannot predict your sleep.</h2><p>Caffeine sensitivity, timing, medicines, pregnancy and sleep habits all matter. Use the chart to explore scenarios, not to decide what dose is medically safe.</p></div>
+      <div class="caf-side-card"><p class="eyebrow">KEEP READING</p><a href="/health/how-much-sleep-do-adults-need/">How much sleep do adults need? <span aria-hidden="true">↗</span></a><a href="/health/how-much-sleep-does-a-child-need/">Sleep needs by age <span aria-hidden="true">↗</span></a><a href="/nutrition-needs-calculator/">Nutrition needs calculator <span aria-hidden="true">↗</span></a></div>
+    </aside>
+  </div>
+  <footer class="caf-credit"><p>Interactive chart: <a href="https://github.com/charles-postiaux/caffeine-day" rel="noopener noreferrer">Caffeine Day</a> by <a href="https://baobun.studio" rel="noopener noreferrer">Charles Postiaux / Baobun Studio</a>, reused under the <a href="/static/caffeine-day-LICENSE.txt">MIT licence</a>. Health explanation and page layout by Compound.</p></footer>
+</div>
+{% elif page.slug == 'life' %}<div class="life-hub">{{ page.body_html|safe }}</div>
 {% elif page.slug == 'insurance' %}{{ page.body_html|safe }}
 {% elif is_solar %}{{ page.body_html|safe }}
 
