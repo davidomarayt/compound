@@ -14,7 +14,15 @@ from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
+import sys
 from urllib.request import Request, urlopen
+
+# The earnings workflow runs scripts directly and installs only PyYAML.
+# Include this checkout so its reviewed name normaliser resolves without an
+# editable package install (including when loaded via importlib from earnings.py).
+REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
 from compound.site.stock_names import normalise_company_names
 
