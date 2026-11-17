@@ -15,7 +15,10 @@ def test_exactly_seven_plus_thirteen_source_backed_profiles():
     for ticker in ORDER:
         report = load_company_report(ROOT / "content", ticker)
         assert report is not None, ticker
-        assert report["latest_source"].startswith("https://www.sec.gov/Archives/"), ticker
+        assert report["latest_source"].startswith(("https://www.sec.gov/Archives/",
+                "https://nvidianews.nvidia.com/news/", "https://investor.nvidia.com/")), ticker
+        if report["latest_source"].startswith("https://nvidianews.nvidia.com/"):
+            assert ticker == "NVDA" and report["latest_published"], ticker
         assert report["latest_figures"]["revenue"].startswith("$"), ticker
         output = build_earnings_seo({"symbol": ticker}, report)
         assert output is not None

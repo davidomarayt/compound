@@ -119,6 +119,7 @@ def load_company_report(content_dir: Path, ticker: str, legacy_articles=()):
               if chart_max[key] else 0 for key in METRICS}
         display.append({"label":f"Q{i+1}","available":True,"period_end":r["period_end"],
                         "filed":r.get("filed",""),"source":r.get("source",""),
+                        "from_release":not r.get("source", "").startswith("https://www.sec.gov/Archives/"),
                         "figures":vals,"bars":bars,"fiscal_year":r["fy"]})
     yoy={k: percent({"metrics":{k:{"current":latest["metrics"][k]["current"]}}},
                     {"metrics":{k:{"current":latest["metrics"][k].get("prior_year")}}},k)
@@ -153,7 +154,9 @@ def load_company_report(content_dir: Path, ticker: str, legacy_articles=()):
             "current": now_margin, "prior": prior_margin,
             "change_pp": round(now_margin - prior_margin, 1),
         }
-    data_out={"fy":fy,"latest_label":f"FY{fy} {latest['fp']}",
+    data_out={"fy":fy,"latest_published":latest.get("published", ""),
+              "source_is_sec":latest.get("source", "").startswith("https://www.sec.gov/Archives/"),
+              "latest_label":f"FY{fy} {latest['fp']}",
               "latest_display":f"FY{fy} Full-Year" if latest["fp"] == "FY" else f"{latest['fp']} FY{fy}",
               "is_annual":latest["fp"] == "FY",
               "latest_end":latest["period_end"],"latest_filed":latest.get("filed",""),

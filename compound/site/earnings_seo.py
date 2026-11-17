@@ -169,13 +169,17 @@ def fiscal_period_display(report: dict) -> dict:
     is_cross_year = fy != end.year
     readable_end = f"{end.day} {month_year}"
     filed = report.get("latest_filed") or ""
+    source_is_sec = report.get("latest_source", "").startswith("https://www.sec.gov/Archives/")
     filing_date = date.fromisoformat(filed) if filed else None
     filing_readable = f"{filing_date.day} {filing_date.strftime('%B %Y')}" if filing_date else ""
     filing_form = report.get("latest_form") or ("10-K" if annual else "10-Q")
     period_type = "Fiscal year" if annual else "Quarter"
     subtitle = f"{period_type} ended {readable_end}"
-    if filing_readable:
+    if filing_readable and source_is_sec:
         subtitle += f" · SEC {filing_form} filed {filing_readable}"
+    elif not source_is_sec and report.get("latest_published"):
+        released = date.fromisoformat(report["latest_published"])
+        subtitle += f" · Company results published {released.day} {released.strftime('%B %Y')}"
     return {
         "display": display, "month_year": month_year, "readable_end": readable_end,
         "filing_readable": filing_readable, "is_cross_year": is_cross_year,
@@ -206,6 +210,7 @@ def build_earnings_seo(company: dict, report: dict | None) -> dict | None:
     if not latest.get("revenue") or not latest.get("diluted_eps") or not report.get("latest_source"):
         return None
     fiscal = fiscal_period_display(report)
+    source_is_sec = report["latest_source"].startswith("https://www.sec.gov/Archives/")
     label = fiscal["display"]
     if fiscal["is_cross_year"]:
         title = f"{name} {label} Earnings{fiscal['title_calendar']} | {ticker} Results"
@@ -215,7 +220,8 @@ def build_earnings_seo(company: dict, report: dict | None) -> dict | None:
     description = (
         f"{name} ({ticker}) {label} earnings, {fiscal['subtitle']}. "
         f"Revenue {latest['revenue']}; diluted EPS {latest['diluted_eps']}. "
-        "SEC filings and growth comparisons."
+        ("SEC filing and growth comparisons." if source_is_sec else
+         "Official issuer results release and growth comparisons.")
     )
     # Retain precise reporting dates instead of presenting FY2027 as a future event.
     narrative = [
@@ -242,9 +248,10 @@ def build_earnings_seo(company: dict, report: dict | None) -> dict | None:
                 movements.append(m)
     if not movements:
         movements.append("Some growth comparisons are unavailable because matching verified periods are missing.")
+    evidence_name = "linked original filing" if source_is_sec else "linked official company results release"
     caveat = (
         f"To understand what drove these consolidated results, examine {focus} in the "
-        "linked original filing; the summary figures alone cannot establish which business "
+        f"{evidence_name}; the summary figures alone cannot establish which business "
         "segments or one-off items caused a change."
     )
     # Filing-specific editorial qualification; never carry this forward to a future quarter.
@@ -261,7 +268,7 @@ def build_earnings_seo(company: dict, report: dict | None) -> dict | None:
     ]
     premium = _premium_dashboard(ticker, report)
     return {
-        "premium": premium,
+        "premium": premium, "source_is_sec": source_is_sec,
         "title": title, "headline": headline, "description": description[:240],
         "name": name, "ticker": ticker, "period": period,
         "fiscal_display": fiscal["display"], "calendar_period": fiscal["month_year"],

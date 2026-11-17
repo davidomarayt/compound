@@ -1,10 +1,11 @@
+{% set source_is_sec = report.latest_source.startswith("https://www.sec.gov/Archives/") %}
 <section class="earnings-section compound-quarter-report" id="earnings-company-results" aria-labelledby="company-quarters-heading">
 <div class="earnings-heading">
-  <div><p class="eyebrow">{% if release %}EARLIER FINANCIAL STATEMENTS{% else %}VERIFIED SEC RESULTS / ONE UPDATING COMPANY REPORT{% endif %}</p>
+  <div><p class="eyebrow">{% if release %}EARLIER FINANCIAL STATEMENTS{% elif source_is_sec %}VERIFIED SEC RESULTS / ONE UPDATING COMPANY REPORT{% else %}OFFICIAL ISSUER EARNINGS RELEASE / SEC FILING PENDING{% endif %}</p>
   <h2 id="company-quarters-heading">{% if report.is_annual %}Full-year results and quarterly history{% else %}Fiscal earnings through {{ report.through or report.latest_label }}{% endif %}</h2></div>
   <span>FY{{ report.fy }} · {% if release %}statement period ended{% else %}last reported period ended{% endif %} {{ report.latest_end }}</span>
 </div>
-<p class="earnings-lede">Fiscal quarters follow {{ company.name }}'s official accounting calendar, not calendar-year labels. <strong>{{ report.latest_display }}</strong> ended <strong>{{ report.latest_end }}</strong> and was filed {% if report.latest_filed %}{{ report.latest_filed }}{% else %}on the date shown in its source filing{% endif %}. This report is updated in place, not republished as a new article every quarter.</p>
+<p class="earnings-lede">Fiscal quarters follow {{ company.name }}'s official accounting calendar, not calendar-year labels. <strong>{{ report.latest_display }}</strong> ended <strong>{{ report.latest_end }}</strong> {% if source_is_sec %}and was filed {% if report.latest_filed %}{{ report.latest_filed }}{% else %}on the date shown in its SEC filing{% endif %}{% else %}and was publicly announced {% if report.latest_published %}{{ report.latest_published }}{% else %}in the linked issuer results release{% endif %}; its current-quarter SEC filing is not yet linked{% endif %}. This report is updated in place, not republished as a new article every quarter.</p>
 {% if report.reporting_update %}<p class="earnings-directory-source"><strong>Reporting update · {{ report.reporting_update.date }}:</strong> {{ report.reporting_update.text }} <a href="{{ report.reporting_update.source }}" rel="noopener">Company announcement ↗</a></p>{% endif %}
 {% for note in report.latest_notes %}<p class="earnings-directory-source">{{ note }}</p>{% endfor %}
 {% if not seo %}
@@ -12,7 +13,7 @@
 {% for metric, label in [('revenue','Revenue'),('net_income','Net income'),('diluted_eps','Diluted EPS')] %}
 <div><span>{{ report.latest_display }} · {{ label }}</span><strong>{{ report.latest_figures[metric] }}</strong><small>{% if report.yoy[metric] is not none %}{{ '%+.1f'|format(report.yoy[metric]) }}% versus the comparable prior-year period{% else %}Prior-year growth unavailable{% endif %}</small></div>
 {% endfor %}
-</div><p><a href="{{ report.latest_source }}" rel="noopener">Read the original {{ report.latest_form }} filing →</a></p>
+</div><p><a href="{{ report.latest_source }}" rel="noopener">{% if source_is_sec %}Read the original {{ report.latest_form }} filing{% else %}Read the official company earnings release{% endif %} →</a></p>
 {% endif %}
 <p class="earnings-directory-source">Coverage starts with periods ending on or after 1 January 2026. A fiscal year can begin in 2025, so its earlier quarters may be outside this archive. Blank rows mean a quarter is outside coverage, not yet verified or not yet filed; they do not represent zero earnings. Annual results cover the full fiscal year and are shown separately from standalone quarters.</p>
 {% if report.q3q2.revenue is not none or report.q3q2.net_income is not none or report.q3q2.diluted_eps is not none %}
@@ -28,14 +29,14 @@
   <div><span>Verified FY{{ report.fy }} net income · Q1–{{ report.through }}</span><strong>{{ report.total_net }}</strong><small>{% if report.ytd_yoy.net_income is not none %}{{ '%+.1f'|format(report.ytd_yoy.net_income) }}% versus matching previous-year quarters{% else %}Prior-year YTD growth unavailable{% endif %}</small></div>
 </div>
 {% else %}<p class="earnings-directory-source">Year-to-date totals are withheld until all preceding standalone quarters in this fiscal year have verified values. Previous-year figures may be used only for valid same-quarter comparisons.</p>{% endif %}
-<div class="earnings-one-table-wrap" role="region" tabindex="0" aria-label="Quarterly filing results table">
+<div class="earnings-one-table-wrap" role="region" tabindex="0" aria-label="Quarterly reported results table">
   <table class="earnings-one-table">
   <caption>Reported US GAAP standalone quarters for fiscal year {{ report.fy }}. — means outside coverage or not yet verified/filed.</caption>
-  <thead><tr><th scope="col">Fiscal quarter</th><th scope="col">Period ended</th><th scope="col">Revenue (USD)</th><th scope="col">Net income (USD)</th><th scope="col">Diluted EPS</th><th scope="col">SEC source</th></tr></thead>
+  <thead><tr><th scope="col">Fiscal quarter</th><th scope="col">Period ended</th><th scope="col">Revenue (USD)</th><th scope="col">Net income (USD)</th><th scope="col">Diluted EPS</th><th scope="col">Original source</th></tr></thead>
   <tbody>
   {% for q in report.quarters %}
   <tr><th scope="row">FY{{ report.fy }} {{ q.label }}</th>
-    {% if q.available %}<td>{{ q.period_end }}</td><td>{{ q.figures.revenue }}</td><td>{{ q.figures.net_income }}</td><td>{{ q.figures.diluted_eps }}</td><td>{% if q.source %}<a href="{{ q.source }}" rel="noopener">Original {{ q.label }} filing ↗</a>{% else %}Source unavailable{% endif %}</td>
+    {% if q.available %}<td>{{ q.period_end }}</td><td>{{ q.figures.revenue }}</td><td>{{ q.figures.net_income }}</td><td>{{ q.figures.diluted_eps }}</td><td>{% if q.source %}<a href="{{ q.source }}" rel="noopener">{% if q.from_release %}Official {{ q.label }} earnings release{% else %}Original {{ q.label }} SEC filing{% endif %} ↗</a>{% else %}Source unavailable{% endif %}</td>
     {% else %}<td colspan="5">Outside coverage or not yet verified/filed</td>{% endif %}
   </tr>{% endfor %}
   </tbody></table>
@@ -51,5 +52,5 @@
 </div>{% endfor %}
 </div>{% endfor %}
 </div>
-<p class="earnings-directory-source">These are standalone quarterly US GAAP values sourced from original SEC filings. Net income and diluted EPS may be negative; bars show absolute magnitudes, not direction. Quarterly growth is omitted when the comparison base is zero or negative. Annual 10-K figures are not mislabelled as Q4. Financial data is not personalised investment advice.</p>
+<p class="earnings-directory-source">These are standalone quarterly US GAAP values sourced from original SEC filings or official company results announcements, as identified in each row. Net income and diluted EPS may be negative; bars show absolute magnitudes, not direction. Quarterly growth is omitted when the comparison base is zero or negative. Annual 10-K figures are not mislabelled as Q4. Financial data is not personalised investment advice.</p>
 </section>

@@ -150,14 +150,17 @@ jobs:
               assert 'name="description"' in page, ticker
               assert "How much did" in page and "Revenue, earnings and EPS growth" in page, ticker
               assert 'dateModified' in page and 'citation' in page, ticker
-              assert 'Original SEC report for ' + period["display"] in page, ticker
+              expected_source_label = ("Original SEC report for " if
+                  report["latest_source"].startswith("https://www.sec.gov/Archives/") else
+                  "Original company results release for ")
+              assert expected_source_label + period["display"] in page, ticker
               assert 'rel="canonical"' in page, ticker
               assert 'name="robots" content="noindex,follow"' not in page, ticker
               assert f'<loc>https://compound.ie/stocks/{ticker.lower()}/</loc>' in sitemap, ticker
               assert f'href="/stocks/{ticker.lower()}/"' in hub, ticker
-          assert "Q2 FY2027 (July 2026)" in hub
+          assert "Q3 FY2027 (October 2026)" in hub
           assert "Q1 FY2027 (August 2026)" in hub
-          print("PASS: All 20 SEC-backed earnings profiles have fiscal and calendar year labels")
+          print("PASS: All 20 primary-source earnings profiles have fiscal and calendar year labels")
           PY
       - name: Validate interactive 360-degree solar direction tool
         shell: bash
@@ -848,16 +851,16 @@ jobs:
             grep -Fq 'Earnings Results</h1>' "$page"
             grep -Fq ' Earnings Results</h1>' "$page"
             grep -Fq 'Revenue, earnings and EPS growth' "$page"
-            grep -Fq 'Original SEC report for ' "$page"
+            grep -Eq 'Original (SEC report|company results release) for ' "$page"
             grep -Fq 'US SEC CIK' "$page"
             ! grep -Fq 'name="robots" content="noindex,follow"' "$page"
           done
-          grep -Fq 'Nvidia Q2 FY2027 Earnings (July 2026)' /tmp/seo-earnings-nvda.html
-          grep -Fq 'Quarter ended 26 July 2026' /tmp/seo-earnings-nvda.html
-          grep -Fq 'SEC 10-Q filed 26 August 2026' /tmp/seo-earnings-nvda.html
+          grep -Fq 'Nvidia Q3 FY2027 Earnings (October 2026)' /tmp/seo-earnings-nvda.html
+          grep -Fq 'Quarter ended 25 October 2026' /tmp/seo-earnings-nvda.html
+          grep -Fq 'Company results published 17 November 2026' /tmp/seo-earnings-nvda.html
           grep -Fq 'Oracle Q1 FY2027 Earnings (August 2026)' /tmp/seo-earnings-orcl.html
           grep -Fq 'Quarter ended 31 August 2026' /tmp/seo-earnings-orcl.html
-          grep -Fq 'Q2 FY2027 (July 2026)' /tmp/earnings-hub.html
+          grep -Fq 'Q3 FY2027 (October 2026)' /tmp/earnings-hub.html
           # GitHub Pages lacks native 301s: old URLs must point canonically to Stocks.
           fetch https://compound.ie/wealth/earnings/company/aapl/ /tmp/aapl-legacy-profile.html
           grep -Fq 'name="robots" content="noindex,follow"' /tmp/aapl-legacy-profile.html

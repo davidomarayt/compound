@@ -42,7 +42,7 @@
 {{ tradingview_panel|safe }}
 <div class="earnings-profile-context">
 {% if seo %}<p class="earnings-directory-source earnings-report-dates"><strong>{{ seo.period_subtitle }}</strong>{% if seo.calendar_year_differs %} · Fiscal-year labels differ from calendar years.{% endif %}</p>{% endif %}
-<p class="earnings-lede">{% if seo %}{{ seo.name }} reported {{ seo.fiscal_display }} results for the period ended {{ seo.readable_end }}. Compare SEC-verified revenue, net income and diluted EPS with the prior year and earlier fiscal quarters.{% else %}Stock chart, financial results, filings and related coverage. {{ company.sector }} · US SEC CIK {{ '%010d'|format(company.cik) }}.{% endif %}</p>
+<p class="earnings-lede">{% if seo %}{{ seo.name }} reported {{ seo.fiscal_display }} results for the period ended {{ seo.readable_end }}. Compare {% if seo.source_is_sec %}SEC-filed{% else %}official company-reported{% endif %} revenue, net income and diluted EPS with the prior year and earlier fiscal quarters.{% else %}Stock chart, financial results, filings and related coverage. {{ company.sector }} · US SEC CIK {{ '%010d'|format(company.cik) }}.{% endif %}</p>
 {% if seo %}<p class="earnings-directory-source">US SEC CIK {{ '%010d'|format(company.cik) }} · Fiscal period ended {{ seo.latest_end }} · <a href="{{ seo.source }}" rel="noopener noreferrer">Official reported results ↗</a></p>{% endif %}
 <div class="earnings-hero-links">{% if seo %}<a href="#earnings-investor-lens">Investor lens ↓</a>{% endif %}<a href="{% if release %}#earnings-latest-release{% else %}#earnings-company-results{% endif %}">Fiscal earnings ↓</a><a href="#stocks-company-coverage">News &amp; research ↓</a></div>
 <p class="earnings-directory-source">Tickers: {{ company.symbols|join(', ') }}. <a href="https://www.sec.gov/edgar/browse/?CIK={{ company.cik }}" rel="noopener">Official SEC filings ↗</a> · <a href="https://data.sec.gov/api/xbrl/companyfacts/CIK{{ '%010d'|format(company.cik) }}.json" rel="noopener">SEC financial facts ↗</a></p></div>
@@ -74,7 +74,7 @@
       </div>
     </div>
     {% endfor %}
-    <p class="earnings-directory-source">Paired comparisons use the current and matching prior-year figures reported in the latest SEC filing. Bar lengths show magnitude; negative values are identified by a loss-coloured bar and a minus sign. The earnings-per-share comparison is per diluted share, not an absolute profit amount.</p>
+    <p class="earnings-directory-source">Paired comparisons use the current and matching prior-year figures reported in the {% if seo.source_is_sec %}latest SEC filing{% else %}official company earnings release{% endif %}. Bar lengths show magnitude; negative values are identified by a loss-coloured bar and a minus sign. The earnings-per-share comparison is per diluted share, not an absolute profit amount.</p>
   </div>
   {% endif %}
   {% if seo.premium.insights %}
@@ -83,8 +83,8 @@
     <ul>{% for insight in seo.premium.insights %}<li>{{ insight }}</li>{% endfor %}</ul>
   </div>
   {% endif %}
-  <p><strong>What to check in the filing:</strong> {{ seo.caveat }}</p>
-  <p class="earnings-directory-source">Source: <a href="{{ seo.source }}" rel="noopener noreferrer">Original SEC report for {{ seo.fiscal_display }} ↗</a>. Dates refer to the issuer's fiscal calendar, not the publication date of this page. These comparisons use reported results, not analyst forecasts.</p>
+  <p><strong>What to check in the source:</strong> {{ seo.caveat }}</p>
+  <p class="earnings-directory-source">Source: <a href="{{ seo.source }}" rel="noopener noreferrer">{% if seo.source_is_sec %}Original SEC report{% else %}Original company results release{% endif %} for {{ seo.fiscal_display }} ↗</a>. Dates refer to the issuer's fiscal calendar, not the publication date of this page. These comparisons use reported results, not analyst forecasts.</p>
   <p class="earnings-hero-links"><a href="#earnings-company-results">See all fiscal-quarter tables and charts ↓</a></p>
 </section>
 {% endif %}
@@ -120,8 +120,8 @@
 </section>
 {% if seo %}<section class="earnings-section" aria-labelledby="related-earnings-heading">
   <div class="earnings-heading"><h2 id="related-earnings-heading">Compare related company earnings</h2></div>
-  <p>Compare SEC-reported fiscal results on permanent company pages. Each business can have different fiscal-year end dates.</p>
+  <p>Compare source-reported fiscal results on permanent company pages. Each business can have different fiscal-year end dates.</p>
   <div class="earnings-hero-links">{% for item in seo.related %}<a href="{{ item.url }}">{{ item.name }} ({{ item.ticker }}) earnings →</a>{% endfor %}<a href="/wealth/earnings/">All company earnings →</a></div>
 </section>{% endif %}
-<section class="earnings-section earnings-method"><div><p class="eyebrow">SOURCES &amp; LIMITATIONS</p><h2>How to read this profile</h2></div><div><p>Listing information and sectors follow dated public market sources and may change. Share prices come from TradingView, may be delayed and should not be confused with verified SEC accounting results.</p><p>Automated reports are checked against 10-Q and 10-K filings but are <strong>not individually reviewed before publication</strong>. Reporting standards vary. This material is for information only, not a personal recommendation. <a href="/editorial-policy/">Editorial policy</a>.</p></div></section>
+<section class="earnings-section earnings-method"><div><p class="eyebrow">SOURCES &amp; LIMITATIONS</p><h2>How to read this profile</h2></div><div><p>Listing information and sectors follow dated public market sources and may change. Share prices come from TradingView, may be delayed and should not be confused with the company-reported financial statements.</p><p>Reported earnings data is sourced from SEC filings and, when a new filing is not yet available, an official issuer earnings release explicitly identified on the page. Automated summaries are <strong>not individually reviewed before publication</strong>. Reporting standards vary. This material is for information only, not a personal recommendation. <a href="/editorial-policy/">Editorial policy</a>.</p></div></section>
 </div>{% endblock %}

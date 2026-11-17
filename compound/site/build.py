@@ -1530,15 +1530,23 @@ def build_site(settings: Settings) -> dict:
         canonical = match[0] if match else "/wealth/earnings/"
         _write(out / old.url.strip("/") / "index.html",
                _redirect_html(canonical, settings.site_base_url))
+    def archived_report_view(report):
+        if not report.get("source_is_sec", report["latest_source"].startswith("https://www.sec.gov/Archives/")):
+            return {**report, "latest_filed": report.get("latest_published") or report.get("latest_filed") or ""}
+        return report
+
     archive_companies = [
         {"name": c["name"], "symbol": c["symbol"],
          "url": f'/stocks/{c["symbol"].lower()}/',
-         "report": company_dashboards[str(c["cik"])]}
+         "report": archived_report_view(company_dashboards[str(c["cik"])]),
+         "from_release": not company_dashboards[str(c["cik"])]["latest_source"].startswith("https://www.sec.gov/Archives/")}
         for c in active_earnings_companies
         if company_dashboards[str(c["cik"])]
     ] + [
         {"name": c["name"], "symbol": c["ticker"],
-         "url": f'/stocks/{c["slug"]}/', "report": extra_dashboards[c["slug"]]}
+         "url": f'/stocks/{c["slug"]}/',
+         "report": archived_report_view(extra_dashboards[c["slug"]]),
+         "from_release": not extra_dashboards[c["slug"]]["latest_source"].startswith("https://www.sec.gov/Archives/")}
         for c in extra_listed if extra_dashboards[c["slug"]]
     ]
     def archive_result(entry):
@@ -2154,7 +2162,9 @@ def build_site(settings: Settings) -> dict:
             "description": "Company profile with reported financial results, filings and related analysis.",
             "ticker": company["symbol"], "fiscal_period": report["latest_label"],
             "period_end": report["latest_end"], "filed": report["latest_filed"],
-            "sources": source_links([{"url": report["latest_source"], "title": "Original SEC filing"}]),
+            "sources": source_links([{"url": report["latest_source"], "title":
+                ("Original SEC filing" if report["latest_source"].startswith("https://www.sec.gov/Archives/")
+                 else "Official issuer earnings release")}]),
         })
     finance = catalogue(settings.site_base_url, articles, tools, discovery_stocks, has_calculator)
     write_discovery(settings.site_base_url, out, env, finance, sitemap_by_url)
