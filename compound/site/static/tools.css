@@ -608,3 +608,24 @@
 .tool-quick-answer{border-left:3px solid var(--wealth);background:var(--wealth-soft);padding:14px 18px;margin:20px 0;max-width:760px}
 .tool-quick-answer p{margin:0;color:var(--ink);font-size:1rem;line-height:1.6}
 .tool-quick-answer a{display:inline-block;margin-top:9px;font-size:.9rem;font-weight:700;color:var(--wealth);text-underline-offset:3px}
+
+
+/* Bidirectional salary converter: keep the key gross result prominent on all screens. */
+.tool-page[data-tool-name="salary-hourly-rate-calculator"] .tool-fields>.tool-field:first-child{grid-column:1/-1}
+.tool-page[data-tool-name="salary-hourly-rate-calculator"] .tool-result-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.tool-page[data-tool-name="salary-hourly-rate-calculator"] .tool-result-primary{
+  grid-column:1/-1;
+  background:var(--wealth);
+  color:#fff;
+  padding:25px 23px;
+}
+.tool-page[data-tool-name="salary-hourly-rate-calculator"] .tool-result-primary span{color:rgba(255,255,255,.83);font-weight:600}
+.tool-page[data-tool-name="salary-hourly-rate-calculator"] .tool-result-primary strong{
+  color:#fff;
+  font-size:clamp(2.3rem,12cqw,3.5rem);
+}
+.tool-page[data-tool-name="salary-hourly-rate-calculator"] .tool-field select{min-height:51px}
+@media(max-width:620px){
+  .tool-page[data-tool-name="salary-hourly-rate-calculator"] .tool-result-grid{grid-template-columns:1fr}
+  .tool-page[data-tool-name="salary-hourly-rate-calculator"] .tool-result-primary{grid-column:auto}
+}
