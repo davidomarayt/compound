@@ -1,0 +1,58 @@
+/* The invest-now / wait-for-PIA decision tool uses the site's existing design language. */
+#pia-wait-tool { box-sizing:border-box; margin:1.7rem 0 2.2rem; padding:clamp(1rem,3.2vw,1.9rem); border:1px solid #e2d7cf; border-radius:18px; background:#faf7f2; color:#2b2530 }
+#pia-wait-tool * { box-sizing:border-box }
+#pia-wait-tool .piw-eyebrow { margin:0 0 .5rem; font-size:.75rem; letter-spacing:.14em; text-transform:uppercase; font-weight:800; color:#88533d }
+#pia-wait-tool h2 { font-family:Georgia,serif; font-size:clamp(1.65rem,3.3vw,2.4rem); margin:.2rem 0 .6rem; letter-spacing:-.025em }
+#pia-wait-tool h3 { font-size:1rem; margin:0 0 .9rem }
+#pia-wait-tool p { line-height:1.6 }
+#pia-wait-tool .piw-intro { max-width:72ch; color:#544b50; margin:.5rem 0 1.2rem; font-size:.94rem }
+#pia-wait-tool .piw-toolbar { display:flex; align-items:center; gap:.55rem; flex-wrap:wrap; margin:0 0 1.2rem }
+#pia-wait-tool .piw-toolbar span { font-size:.82rem; color:#5e5154; font-weight:750; margin-right:.25rem }
+#pia-wait-tool .piw-preset { font:inherit; font-size:.78rem; font-weight:750; padding:.5rem .8rem; border:1px solid #b9aaa2; border-radius:999px; color:#47323b; background:white; cursor:pointer }
+#pia-wait-tool .piw-preset:hover { background:#f4e8df }
+#pia-wait-tool .piw-layout { display:grid; grid-template-columns:minmax(235px,.88fr) minmax(0,1.22fr); gap:18px; align-items:start }
+#pia-wait-tool .piw-form,#pia-wait-tool .piw-results { min-width:0; display:grid; gap:1rem }
+#pia-wait-tool .piw-form { padding:1rem; background:white; border:1px solid #e1d8d2; border-radius:13px }
+#pia-wait-tool label { display:grid; gap:.35rem; font-size:.85rem; font-weight:760; line-height:1.45 }
+#pia-wait-tool label small { font-size:.76rem; color:#665b60; font-weight:400; line-height:1.4 }
+#pia-wait-tool input,#pia-wait-tool select { width:100%; min-height:44px; border-radius:8px; border:1px solid #bcb3b2; background:white; color:#28202a; font:inherit; padding:.65rem .72rem }
+#pia-wait-tool .piw-advanced { border-top:1px solid #e4dcd7; padding-top:.85rem }
+#pia-wait-tool .piw-advanced summary { font-size:.86rem; font-weight:800; cursor:pointer }
+#pia-wait-tool .piw-advanced-fields { display:grid; gap:1rem; margin-top:.9rem }
+#pia-wait-tool .piw-button { padding:.75rem 1rem; border:0; border-radius:9px; color:#fff; background:#312730; cursor:pointer; font:inherit; font-weight:760; min-height:44px }
+#pia-wait-tool :is(input,select,button,summary):focus-visible { outline:3px solid #a86f46; outline-offset:3px }
+#pia-wait-tool .piw-day-note { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.8rem 1rem; background:#302832; color:white; border-radius:11px; font-size:.85rem }
+#pia-wait-tool .piw-day-note strong { font-size:1.12rem; font-variant-numeric:tabular-nums }
+#pia-wait-tool .piw-comparison { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.75rem }
+#pia-wait-tool .piw-result-card { padding:1rem; min-width:0; border:1px solid #ddd2cc; background:white; border-radius:11px }
+#pia-wait-tool .piw-result-card p { margin:0; color:#554c53; font-size:.8rem; line-height:1.45 }
+#pia-wait-tool .piw-result-card strong { display:block; font-size:clamp(1.35rem,2.6vw,1.9rem); margin:.55rem 0 0; overflow-wrap:anywhere; font-variant-numeric:tabular-nums }
+#pia-wait-tool .piw-result-card span { display:block; font-size:.75rem; color:#675b61; margin-top:.35rem }
+#pia-wait-tool .piw-summary { padding:.9rem 1rem; border-left:3px solid #ad7252; background:#f5ebe1; font-size:.91rem; margin:0 }
+#pia-wait-tool .piw-panel { padding:1rem; border:1px solid #e2d9d2; background:white; border-radius:11px; min-width:0 }
+#pia-wait-tool .piw-bar-row { display:grid; grid-template-columns:1fr auto; gap:.35rem .6rem; margin:.8rem 0; font-size:.8rem }
+#pia-wait-tool .piw-bar-row strong { font-size:.85rem; font-variant-numeric:tabular-nums }
+#pia-wait-tool .piw-track { grid-column:1 / -1; background:#eee6e3; height:11px; border-radius:100px; overflow:hidden }
+#pia-wait-tool .piw-track > span { display:block; height:100%; width:0; border-radius:100px; background:#a36042; transition:width .2s ease-out }
+#pia-wait-tool .piw-bar-row.piw-wait .piw-track > span { background:#404b73 }
+#pia-wait-tool dl { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:.6rem .9rem; margin:0 }
+#pia-wait-tool dt { color:#574f53; font-size:.8rem; line-height:1.4 }
+#pia-wait-tool dd { margin:0; text-align:right; font-size:.84rem; font-weight:750; font-variant-numeric:tabular-nums }
+#pia-wait-tool .piw-cap-note,#pia-wait-tool .piw-explainer { color:#51474f; font-size:.82rem; line-height:1.6; margin:.8rem 0 0 }
+#pia-wait-tool .piw-explainer { margin:1rem 0 0 }
+#pia-wait-tool .piw-warning { margin:.8rem 0 0; padding:.8rem .9rem; background:#f2ede7; border-radius:9px; font-size:.82rem; line-height:1.55 }
+#pia-wait-tool [hidden] { display:none!important }
+@media (max-width:800px) {
+  #pia-wait-tool .piw-layout { grid-template-columns:1fr }
+  #pia-wait-tool .piw-comparison { grid-template-columns:repeat(2,minmax(0,1fr)) }
+}
+@media (max-width:430px) {
+  #pia-wait-tool { padding:1rem .72rem }
+  #pia-wait-tool .piw-comparison { grid-template-columns:1fr }
+  #pia-wait-tool .piw-result-card strong { font-size:1.65rem }
+  #pia-wait-tool .piw-day-note { flex-direction:column; align-items:flex-start; gap:.25rem }
+  #pia-wait-tool dl { grid-template-columns:1fr auto }
+}
+@media (prefers-reduced-motion:reduce) {
+  #pia-wait-tool .piw-track > span { transition:none }
+}
