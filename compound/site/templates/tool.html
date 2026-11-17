@@ -13,6 +13,12 @@
   <header class="tool-page-header">
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/tools/">Tools</a></nav>
     <p class="eyebrow">{{ tool.category|upper }}</p><h1>{{ tool.title }}</h1><p class="tool-standfirst">{{ tool.summary }}</p>
+    {% if tool.quick_answer %}
+    <div class="tool-quick-answer" aria-label="Quick calculator answer">
+      <p><strong>Quick answer:</strong> {{ tool.quick_answer }}</p>
+      {% if tool.quick_link_url and tool.quick_link_label %}<a href="{{ tool.quick_link_url }}">{{ tool.quick_link_label }} <span aria-hidden="true">→</span></a>{% endif %}
+    </div>
+    {% endif %}
     <p class="tool-updated">Updated {{ tool.updated|long_date }}</p>
     <div class="tool-trust-row" aria-label="Calculator quality information">
       <span>Runs in your browser</span>
