@@ -2,13 +2,43 @@
 {% block head_title %}{% if release %}{{ company.name }} {{ release.period }} earnings | {{ company.symbol }}{% elif seo %}{{ seo.title }}{% else %}{% if report %}{{ company.name }} {{ report.latest_display }} Earnings | {{ company.symbol }}{% else %}{{ company.name }} Stock ({{ company.symbol }}) — Chart, Earnings &amp; News | Compound{% endif %}{% endif %}{% endblock %}
 {% block meta %}{% if release %}<meta name="description" content="{{ release.summary }}"><meta property="og:title" content="{{ company.name }} {{ release.period }} results">{% elif seo %}<meta name="description" content="{{ seo.description|e }}"><meta property="og:type" content="website"><meta property="og:title" content="{{ seo.headline|e }}"><meta property="og:description" content="{{ seo.description|e }}">{% else %}<meta name="description" content="{{ company.name }} ({{ company.symbol }}): price chart, SEC financial results, earnings history and related company news and research on Compound."><meta property="og:title" content="{{ company.name }} ({{ company.symbol }}) Stock | Compound">{% endif %}<meta property="og:url" content="{{ site_url }}/stocks/{{ company.symbol|lower }}/">{% endblock %}
 {% block head %}<link rel="canonical" href="{{ site_url }}/stocks/{{ company.symbol|lower }}/"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Compound","item":"{{ site_url }}/"},{"@type":"ListItem","position":2,"name":"Stocks","item":"{{ site_url }}/stocks/"},{"@type":"ListItem","position":3,"name":{{ company.name|tojson }},"item":"{{ site_url }}/stocks/{{ company.symbol|lower }}/"}]}</script>{% if seo %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":{{ seo.headline|tojson }},"description":{{ seo.description|tojson }},"url":"{{ site_url }}/stocks/{{ company.symbol|lower }}/","dateModified":{{ seo.modified|tojson }},"about":{"@type":"Corporation","name":{{ seo.name|tojson }},"tickerSymbol":{{ company.symbol|tojson }}},"citation":{{ seo.source|tojson }},"isPartOf":{"@type":"WebSite","name":"Compound","url":"{{ site_url }}/"}}</script>{% endif %}{% endblock %}
-{% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=12"><script src="/static/tradingview-earnings.js?v=3" defer></script>{% endblock %}
+{% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=12"><link rel="stylesheet" href="/static/stocks-research.css?v=1"><script src="/static/tradingview-earnings.js?v=3" defer></script>{% endblock %}
 {% block content %}
 <div class="earnings-hub stocks-company">
 <nav class="earnings-crumb" aria-label="Breadcrumb"><a href="/">Compound</a> / <a href="/stocks/">Stocks</a> / {{ company.symbol }}</nav>
-<header class="earnings-hero"><p class="eyebrow">COMPOUND STOCKS / COMPANY PROFILE</p><h1>{% if seo %}{{ seo.headline }}{% else %}{{ company.name }} ({{ company.symbol }}){% endif %}</h1></header>
+<header class="earnings-hero sr-company-header">
+  <div class="sr-company-overline"><p class="eyebrow">COMPOUND STOCKS / COMPANY RESEARCH</p><span class="sr-company-symbol">{{ company.symbol }} · {{ company.sector }}</span></div>
+  <h1>{% if seo %}{{ seo.headline }}{% else %}{{ company.name }} ({{ company.symbol }}){% endif %}</h1>
+  <p class="sr-company-header-intro">A continuously updated company research page bringing together verified earnings, the market chart and relevant Compound coverage.</p>
+  <nav class="sr-company-tabs" aria-label="On this company page">
+    <a href="#sr-company-overview">Overview</a>
+    <a href="#earnings-company-results">Financial reports</a>
+    {% if seo %}<a href="#earnings-investor-lens">Investor questions</a>{% endif %}
+    <a href="#stocks-company-coverage">Related research</a>
+  </nav>
+</header>
+<section class="sr-company-overview" id="sr-company-overview" aria-label="Company research overview">
+  <div class="sr-company-summary">
+    <p class="sr-kicker">THE RESEARCH SNAPSHOT</p>
+    <h2>{{ company.name }}</h2>
+    <p>{{ company.sector }}{% if seo %} · {{ seo.fiscal_display }} results{% elif report %} · Filing-linked earnings history{% else %} · Market profile{% endif %}</p>
+    <div class="sr-company-summary-links"><a href="https://www.sec.gov/edgar/browse/?CIK={{ company.cik }}" rel="noopener noreferrer">Official SEC filings ↗</a><a href="/stocks/">All stocks ↗</a></div>
+  </div>
+  {% if seo %}
+  <div class="sr-company-metrics" aria-label="Latest reported company figures; not live prices">
+    <div><span>Reported revenue</span><strong>{{ seo.latest_figures.revenue }}</strong><small>{{ seo.fiscal_display }}</small></div>
+    <div><span>Reported net income</span><strong>{{ seo.latest_figures.net_income }}</strong><small>{{ seo.fiscal_display }}</small></div>
+    <div><span>Diluted EPS</span><strong>{{ seo.latest_figures.diluted_eps }}</strong><small>{{ seo.fiscal_display }}</small></div>
+  </div>
+  {% elif report %}
+  <div class="sr-company-research-note"><strong>Filing-backed earnings are available.</strong><p>Explore results and the associated reporting dates below.</p></div>
+  {% else %}
+  <div class="sr-company-research-note"><strong>Research coverage is developing.</strong><p>Financial statements will appear once suitable source data passes verification.</p></div>
+  {% endif %}
+</section>
 {# Lead with market context before the detailed fiscal earnings sections. #}
 {% if release %}{% include "_earnings_release.html" %}{% endif %}
+<div class="sr-chart-heading"><div><p class="sr-kicker">MARKET CONTEXT</p><h2>Share-price chart</h2></div><p>Third-party market data may be delayed. Chart movements are not the same as reported business performance.</p></div>
 {{ tradingview_panel|safe }}
 <div class="earnings-profile-context">
 {% if seo %}<p class="earnings-directory-source earnings-report-dates"><strong>{{ seo.period_subtitle }}</strong>{% if seo.calendar_year_differs %} · Fiscal-year labels differ from calendar years.{% endif %}</p>{% endif %}
