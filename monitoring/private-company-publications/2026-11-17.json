@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-17",
+  "timezone": "Europe/Dublin",
+  "run_type": "private_company_daily",
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "automation/private-company-2026-11-17",
+  "target_new_articles": 3,
+  "status": "prepared_pending_pr_validation",
+  "confirmed_live_new_articles": 0,
+  "human_editorial_status": "not_reviewed_by_human",
+  "ads_policy": "Standard site ads required from publication independent of review; CMP preserved",
+  "editorial_quality_gate": "Independent primary-source checks 10/11/12/16 Nov; authentic separately licensed real archival photos. PR exact-head CI and production canonical/cover/social/profile/ad verification required.",
+  "duplication_checks": {
+    "editorial_index_snapshot": "2026-11-17",
+    "recent_overlap": "LVMH media adoption distinct from Wallet and merchant agents; self-hosted Managed Agents platform ownership distinct from always-on architecture; Databricks regional investment and skills distribution distinct from Genie always-on usage economics.",
+    "competing_workflows": "Checked editorial index, 16 Nov private company ledger, #154 IPO, #155 logo and #156/#157 overnight PR; no overlapping topics",
+    "new_page_count_cap": 3
+  },
+  "articles": [
+    {
+      "company": "OpenAI",
+      "slug": "openai",
+      "event_date": "2026-11-16",
+      "story_fingerprint": "2026-11-16-openai-lvmh-media-newsroom-ai-chatgpt-cited-distribution",
+      "primary_source_urls": [
+        "https://openai.com/index/lvmh-media-division-partnership/",
+        "https://lesechosleparisien.fr/actualites/le-groupe/le-pole-medias-de-lvmh-annonce-un-partenariat-strategique-avec-openai/"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:LeParisien_1_jnl.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/LeParisien_1_jnl.jpg",
+      "photo_focal_y": 0.55,
+      "image_license": "Free Art License (FAL)",
+      "photo_provenance": "Jean-noël Lafargue, 23 March 2007, Le Parisien historic Saint-Ouen premises (archival adapted crop)",
+      "claim_checks": [
+        "OpenAI and LVMH media original announcement 16 November, 17 brands, 1800 employees, nearly 700 journalists, >27m monthly reach",
+        "No verified licence compensation, paid seats, ChatGPT click through, contract value or incremental subscription outcomes",
+        "Hypothetical 200 staff x one hour x 45 weeks = 9000 hours; 9000 x €55 = €495000 potential capacity, not cash earnings",
+        "Le Parisien archival 2007 newspaper building is genuine Wikimedia photograph with Free Art License; not a 2026 event photo"
+      ],
+      "article_path": "content/wealth/openai-lvmh-media-chatgpt-news-distribution-economics.md",
+      "canonical_url": "https://compound.ie/wealth/openai-lvmh-media-chatgpt-news-distribution-economics/",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "not_deployed",
+      "status": "prepared_pending_ci"
+    },
+    {
+      "company": "Anthropic",
+      "slug": "anthropic",
+      "event_date": "2026-11-12",
+      "story_fingerprint": "2026-11-12-anthropic-self-hosted-managed-agents-controlplane-security-cost",
+      "primary_source_urls": [
+        "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+        "https://claude.com/resources/articles/building-always-on-agents"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_03.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Dario_Amodei_at_TechCrunch_Disrupt_2023_03.jpg",
+      "photo_focal_y": 0.49,
+      "image_license": "CC BY 2.0",
+      "photo_provenance": "TechCrunch / Kimberly White, 20 Sep 2023, Dario Amodei archival original licensed via Wikimedia Commons",
+      "claim_checks": [
+        "12 Nov Anthropic private beta places agent server/database/workers/credentials/session histories in customer-operated environment",
+        "Model requests can still go to Anthropic or supported providers: on-premises harness is NOT on-premises model inference",
+        "ZDR applies only if existing customer-specific arrangement is in place, same as Messages API",
+        "12000 tasks/week x 52 = 624000/year; 1% x 6min = 624 hours, at €65 = €40560 hypothetical support capacity"
+      ],
+      "article_path": "content/wealth/anthropic-self-hosted-managed-agents-enterprise-control-economics.md",
+      "canonical_url": "https://compound.ie/wealth/anthropic-self-hosted-managed-agents-enterprise-control-economics/",
+      "profile_url": "https://compound.ie/companies/anthropic/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "not_deployed",
+      "status": "prepared_pending_ci"
+    },
+    {
+      "company": "Databricks",
+      "slug": "databricks",
+      "event_date": "2026-11-16",
+      "story_fingerprint": "2026-11-10-11-databricks-emea-3b-netherlands-500m-nov16-agent-skill-sharing-beta",
+      "primary_source_urls": [
+        "https://www.databricks.com/company/newsroom/press-releases/databricks-invest-3-billion-across-europe-and-middle-east",
+        "https://www.databricks.com/company/newsroom/press-releases/databricks-invest-more-500m-netherlands-accelerate-enterprise-data",
+        "https://docs.databricks.com/aws/en/release-notes/product/2026/november"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Amsterdam_-_The_Rock_(29669411284).jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Amsterdam_-_The_Rock_%2829669411284%29.jpg",
+      "photo_focal_y": 0.48,
+      "image_license": "CC BY 2.0",
+      "photo_provenance": "Fred Romero, 7 May 2016, The Rock office tower Amsterdam, archival photo before Databricks 2026 move",
+      "claim_checks": [
+        "11 Nov Databricks approximately $3bn EMEA over three years: planned investment not sales or audited capital spending",
+        "10 Nov more than $500m Netherlands expansion and The Rock 13000 sqm; overlapping budget not addable without reconciliation",
+        "16 Nov Databricks release notes agent skills OpenSharing/Marketplace beta; staged rollout, no marketplace revenue claimed",
+        "2000 employees illustrative baseline x50% =1000 hires; company reports more than 2000, so non-exact",
+        "Model topic differs from 11 Nov existing Genie always-on analysis"
+      ],
+      "article_path": "content/wealth/databricks-three-billion-emea-investment-agent-platform-distribution.md",
+      "canonical_url": "https://compound.ie/wealth/databricks-three-billion-emea-investment-agent-platform-distribution/",
+      "profile_url": "https://compound.ie/companies/databricks/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "not_deployed",
+      "status": "prepared_pending_ci"
+    }
+  ],
+  "profile_updates": [
+    {
+      "slug": "openai",
+      "status": "updated_attributed_latest",
+      "date": "2026-11-16",
+      "description": "17 brand LVMH division deal with attributed journalism, no economics claimed",
+      "source": "https://openai.com/index/lvmh-media-division-partnership/"
+    },
+    {
+      "slug": "anthropic",
+      "status": "updated_summary_preserved_latest",
+      "description": "Summary notes 12 Nov beta self-hosted agents, later Nov 14 outage retained as latest"
+    },
+    {
+      "slug": "databricks",
+      "status": "updated_attributed_latest",
+      "date": "2026-11-16",
+      "description": "Regional $3bn plan and governed agent skill sharing beta, no new revenue claimed",
+      "source": "https://docs.databricks.com/aws/en/release-notes/product/2026/november"
+    }
+  ],
+  "production_deployment": {
+    "status": "not_started",
+    "confirmed_live_urls": 0,
+    "branch_protection": "not configured; exact-head equivalent CI gate required"
+  },
+  "updated_at_utc": "2026-11-17"
+}

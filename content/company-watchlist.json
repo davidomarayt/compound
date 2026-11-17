@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-15",
+  "checked": "2026-11-17",
   "listed": [
     {
       "slug": "spcx",
@@ -117,19 +117,19 @@
       "slug": "openai",
       "name": "OpenAI",
       "sector": "Artificial intelligence",
-      "summary": "AI models, products, infrastructure, governance, agent integrations, independent cross-system security testing and scientific evidence interpretation benchmarks.",
+      "summary": "AI models, enterprise integrations, research and a 16 November partnership with LVMH media combining newsroom tools and attributed ChatGPT journalism discovery.",
       "website": "https://openai.com/",
       "latest_development": {
-        "date": "2026-11-13",
-        "text": "OpenAI introduced ChatGPT Wallet for user-authorised agent purchases, initially limited to eligible US ChatGPT Pro adults and US-issued cards; payment networks provide substitute card tokens and users approve each checkout. No wallet transaction volumes or fee income have been reported.",
-        "source": "https://openai.com/index/introducing-chatgpt-wallet/"
+        "date": "2026-11-16",
+        "text": "OpenAI and LVMH Group's media division announced a partnership covering ChatGPT Enterprise deployment and citation/linking of journalism from the division's 17 brands in ChatGPT. No contract value, referral volumes or licence economics were disclosed.",
+        "source": "https://openai.com/index/lvmh-media-division-partnership/"
       }
     },
     {
       "slug": "anthropic",
       "name": "Anthropic",
       "sector": "Artificial intelligence",
-      "summary": "Claude AI models, research, enterprise deployments, beta collaborative meeting workflows, and guidance for durable always-on agent orchestration and permissions.",
+      "summary": "Claude models and enterprise agents, including a 12 November private beta for self-hosted Managed Agents with customer-operated control plane and session history. Also covers enterprise meetings and safety research.",
       "website": "https://www.anthropic.com/",
       "latest_development": {
         "date": "2026-11-14",
@@ -153,12 +153,12 @@
       "slug": "databricks",
       "name": "Databricks",
       "sector": "Data & AI software",
-      "summary": "Enterprise data platforms, analytics and AI tooling.",
+      "summary": "Enterprise data, analytics and AI platforms; announced an approximately $3 billion three-year EMEA expansion and 16 November beta for governed sharing of agent skills.",
       "website": "https://www.databricks.com/",
       "latest_development": {
-        "date": "2026-11-11",
-        "text": "Databricks announced a second-generation Genie, with always-on agents, governed search and expanded ontology. Genie and Genie Ontology are generally available, but the new always-on Genie, Genie Search and Ontology Manager are coming to preview/beta; no separate product revenue figures were disclosed.",
-        "source": "https://www.databricks.com/company/newsroom/press-releases/databricks-launches-new-always-genie-autonomous-ai-complex"
+        "date": "2026-11-16",
+        "text": "Databricks' 16 November product release notes describe beta sharing of Unity Catalog agent skills through OpenSharing and Marketplace. This follows its 11 November planned approximately $3bn EMEA investment and 10 November Netherlands expansion; no new revenue from these developments was reported.",
+        "source": "https://docs.databricks.com/aws/en/release-notes/product/2026/november"
       }
     },
     {
