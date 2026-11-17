@@ -18,6 +18,10 @@ The results now expose the **20-year net benefit of each configuration**, not ju
 
 Look at **direct self-consumption**, **EV charging**, **battery-delivered energy**, **night-rate arbitrage** and **exports** separately. These flows have different economics.
 
+
+**Export-income tax limitation:** The annual-value and 20-year net-benefit comparisons use supplier export payments **before any tax on taxable export profit**. They do not calculate personal Income Tax, USC or PRSI, or forecast the tax rules over 20 years. Revenue's exemption is currently confirmed through **31 December 2028** for up to **€400 of qualifying annual profit per eligible individual**, with excess potentially taxable. Solar electricity used inside the home reduces purchases rather than generating export receipts. Consult the [Irish solar export tax guide](/wealth/tax-on-solar-export-payments-ireland/) and [Revenue's 28 January 2026 extension notice](https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0202026.aspx) before treating gross export revenue as after-tax household savings.
+
+
 ## Worked example
 
 A solar kWh used directly in the home may avoid a €0.30 import. The same kWh exported might earn a lower export rate. Sending it through a battery can improve timing but incurs round-trip losses and requires the battery capital cost.
