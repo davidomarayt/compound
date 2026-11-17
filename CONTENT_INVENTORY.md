@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 303
+- Published editorial articles and guides: 304
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 249
+## Wealth articles and guides — 250
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -166,6 +166,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Is it financially worth returning to work after having children in Ireland?](https://compound.ie/wealth/returning-to-work-childcare-costs-ireland/)
 - [Is switching your mortgage worth it in Ireland? A worked €250,000 example](https://compound.ie/wealth/is-switching-your-mortgage-worth-it-ireland/)
 - [Jensen Huang Resigns as Nvidia CEO: Who Replaces Him and What It Means for NVDA Stock](https://compound.ie/news/jensen-huang-resigns-nvidia-ceo/)
+- [Jensen Huang Says He Would Return as Nvidia CEO: What It Means for NVDA Stock](https://compound.ie/news/jensen-huang-willing-return-nvidia-ceo-nvda-2026/)
 - [Jobseeker penalty would rise from €90 to €100 under Social Welfare Bill](https://compound.ie/news/jobseeker-penalty-social-welfare-bill-2026/)
 - [Lam Research Earnings: Strong Growth Meets an Even Higher Bar](https://compound.ie/wealth/lam-research-earnings-growth-expectations/)
 - [Life Insurance Ireland 2026: Costs, Cover, Policy Types and How Much You Need](https://compound.ie/wealth/life-insurance-ireland/)
