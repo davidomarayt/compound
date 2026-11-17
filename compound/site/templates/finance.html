@@ -1,26 +1,188 @@
 {% extends "base.html" %}
-{% block meta %}<meta name="description" content="Find Compound's investing guides, company earnings analysis and financial calculators, with canonical links, coverage dates and original sources.">{% endblock %}
+{% block head_title %}Finance & Investing in Ireland | Guides, Stocks & Calculators · Compound{% endblock %}
+{% block meta %}<meta name="description" content="Make better-informed money decisions with Irish investing guides, PIA and pension explainers, stock research and free financial calculators from Compound.">{% endblock %}
 {% block head %}
 <link rel="canonical" href="{{ catalogue.url }}">
-<link rel="alternate" type="application/json" href="{{ site_url }}/finance/index.json" title="Finance index JSON">
+<link rel="alternate" type="application/json" href="{{ site_url }}/finance/index.json" title="Source-linked finance catalogue JSON">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Finance & Investing in Ireland · Compound">
+<meta property="og:description" content="Investing guides, company research and free financial calculators for decisions that matter.">
+<meta property="og:url" content="{{ catalogue.url }}">
 <script type="application/ld+json">{{ schema|tojson }}</script>
+<link rel="stylesheet" href="/static/finance-hub.css?v=1">
+<script src="/static/finance-hub.js?v=1" defer></script>
 {% endblock %}
 {% block content %}
-<article class="info-page"><div class="article-prose">
-<header><p class="eyebrow">COMPOUND / FINANCE</p><h1>Finance directory</h1>
-<p>Start with an investing guide, explore company results, or model a financial decision.</p></header>
-<p>{{ catalogue.guidance }}</p>
-<p><a href="/finance/index.json">Download the source-linked JSON index</a> · <a href="/stocks/">All stock profiles</a> · <a href="/tools/">All calculators</a> · <a href="/editorial-policy/">Editorial policy</a></p>
-<nav aria-label="Finance directory sections">{% for group in groups %}<a href="#section-{{ loop.index }}">{{ group }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</nav>
-{% for group in groups %}
-<section id="section-{{ loop.index }}"><h2>{{ group }}</h2>
-<ul>{% for entry in catalogue.entries if entry.kind == group %}
-<li><h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3><p>{{ entry.description }}</p>
-{% if entry.published %}<p>Published: {{ entry.published }}{% if entry.modified %} · Updated: {{ entry.modified }}{% endif %}</p>{% elif entry.modified %}<p>Updated: {{ entry.modified }}</p>{% endif %}
-{% if entry.fiscal_period %}<p>Fiscal period: {{ entry.fiscal_period }} · Period ended: {{ entry.period_end }} · Filed: {{ entry.filed }}</p>{% endif %}
-{% if entry.requires_javascript_for_calculation %}<p>Calculation requires JavaScript; read the page for inputs, assumptions and limitations.</p>{% endif %}
-{% if entry.sources %}<details><summary>Sources linked by this content</summary><ul>{% for source in entry.sources %}<li><a href="{{ source.url }}" rel="noopener">{{ source.title }}</a></li>{% endfor %}</ul></details>{% else %}<p>See the page for methodology and coverage limitations.</p>{% endif %}</li>
-{% endfor %}</ul></section>
-{% endfor %}
-</div></article>
+<div class="finance-hub">
+
+  <section class="finance-hero" aria-labelledby="finance-hero-title">
+    <div class="finance-hero-copy">
+      <p class="finance-eyebrow">COMPOUND / FINANCE &amp; INVESTING</p>
+      <h1 id="finance-hero-title">Make the numbers <em>make sense.</em></h1>
+      <p class="finance-hero-description">Money decisions are easier when you can see the bigger picture. Understand investing in Ireland, research businesses and put real numbers behind your next move.</p>
+      <div class="finance-hero-actions">
+        <a class="finance-action finance-action-primary" href="/wealth/how-to-start-investing-in-ireland/">Start investing <span aria-hidden="true">↗</span></a>
+        <a class="finance-action finance-action-secondary" href="/tools/">Explore calculators <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="finance-hero-footnote"><span aria-hidden="true" class="finance-hero-signal"></span> Independent research. Irish context. Clear assumptions.</p>
+    </div>
+    <aside class="finance-hero-panel" aria-label="Popular starting points">
+      <div class="finance-panel-heading"><span>YOUR STARTING POINT</span><span aria-hidden="true">01 / 03</span></div>
+      <p class="finance-panel-title">What would you like to understand?</p>
+      <a class="finance-panel-link" href="/pia/">
+        <span class="finance-panel-index">01</span>
+        <span><strong>PIA &amp; pensions</strong><small>Understand the proposed account and retirement choices</small></span>
+        <span class="finance-panel-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="finance-panel-link" href="/stocks/">
+        <span class="finance-panel-index">02</span>
+        <span><strong>Companies &amp; stocks</strong><small>Explore the businesses behind the tickers</small></span>
+        <span class="finance-panel-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="finance-panel-link" href="/wheres-my-money/">
+        <span class="finance-panel-index">03</span>
+        <span><strong>Where your money goes</strong><small>Explore taxes, public spending and trade-offs</small></span>
+        <span class="finance-panel-arrow" aria-hidden="true">↗</span>
+      </a>
+      <div class="finance-panel-base"><span>Research-led, not personal financial advice</span><span aria-hidden="true">✳</span></div>
+    </aside>
+  </section>
+
+  <nav class="finance-jump" aria-label="Explore this finance page">
+    <span class="finance-jump-label">EXPLORE THE HUB</span>
+    <a href="#finance-pathways">Guides <span aria-hidden="true">↘</span></a>
+    <a href="#finance-tools">Calculators <span aria-hidden="true">↘</span></a>
+    <a href="#finance-research">Company research <span aria-hidden="true">↘</span></a>
+    <a href="#finance-library">Full library <span aria-hidden="true">↘</span></a>
+  </nav>
+
+  <section class="finance-section" id="finance-pathways" aria-labelledby="finance-pathways-title">
+    <div class="finance-section-head">
+      <div><p class="finance-section-kicker">FIND YOUR WAY IN</p><h2 id="finance-pathways-title">Start with the question, <em>not the jargon.</em></h2></div>
+      <p>Follow a practical route through the decisions people in Ireland face most often.</p>
+    </div>
+    <div class="finance-pathway-grid">
+      <a class="finance-pathway finance-pathway-feature" href="/wealth/how-to-start-investing-in-ireland/">
+        <div class="finance-pathway-top"><span>01 / THE FOUNDATIONS</span><span aria-hidden="true" class="finance-pathway-icon">↗</span></div>
+        <h3>New to investing?</h3>
+        <p>Learn the basics of shares, funds, risk and costs before you put money to work.</p>
+        <span class="finance-pathway-cta">Explore Investing in Ireland 101 <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="finance-pathway" href="/pia/">
+        <div class="finance-pathway-top"><span>02 / IRISH INVESTING</span><span aria-hidden="true" class="finance-pathway-icon">↗</span></div>
+        <h3>PIA or pension?</h3>
+        <p>Follow Ireland's investment-account developments, compare options and understand the rules.</p>
+        <span class="finance-pathway-cta">Explore the PIA centre <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="finance-pathway" href="/wealth/buying-a-home-in-ireland/">
+        <div class="finance-pathway-top"><span>03 / BIG LIFE DECISIONS</span><span aria-hidden="true" class="finance-pathway-icon">↗</span></div>
+        <h3>Buying a home?</h3>
+        <p>Work through deposits, mortgages, affordability and the real cost of home ownership.</p>
+        <span class="finance-pathway-cta">Read the home-buying guide <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="finance-pathway" href="/wealth/earnings/">
+        <div class="finance-pathway-top"><span>04 / COMPANY RESEARCH</span><span aria-hidden="true" class="finance-pathway-icon">↗</span></div>
+        <h3>Researching a stock?</h3>
+        <p>Go beyond headlines with company profiles, reported earnings and source-linked analysis.</p>
+        <span class="finance-pathway-cta">Explore company earnings <span aria-hidden="true">→</span></span>
+      </a>
+    </div>
+  </section>
+
+  <section class="finance-section finance-tools-section" id="finance-tools" aria-labelledby="finance-tools-title">
+    <div class="finance-section-head">
+      <div><p class="finance-section-kicker">PUT NUMBERS BEHIND IT</p><h2 id="finance-tools-title">Useful tools for <em>real decisions.</em></h2></div>
+      <a class="finance-text-link" href="/tools/">See all calculators <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="finance-tool-grid">
+      {% for tool in featured_tools %}
+      <a class="finance-tool" href="{{ tool.url }}">
+        <div class="finance-tool-top"><span class="finance-tool-number">{{ '%02d'|format(loop.index) }}</span><span aria-hidden="true">↗</span></div>
+        <h3>{{ tool.title }}</h3>
+        <p>{{ tool.description|truncate(125, true, '…') }}</p>
+        <span class="finance-tool-bottom">Open calculator <span aria-hidden="true">→</span></span>
+      </a>
+      {% endfor %}
+    </div>
+    <p class="finance-tools-note">Calculators model scenarios, not guaranteed returns, quotes or individual tax advice. Check the assumptions shown with each tool.</p>
+  </section>
+
+  <section class="finance-section finance-research-section" id="finance-research" aria-labelledby="finance-research-title">
+    <div class="finance-section-head">
+      <div><p class="finance-section-kicker">BUSINESSES BEHIND THE NUMBERS</p><h2 id="finance-research-title">Look beyond <em>the headline.</em></h2></div>
+      <a class="finance-text-link" href="/stocks/">Explore stock profiles <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="finance-research-grid">
+      <div class="finance-research-feature">
+        <p class="finance-research-label">COMPOUND RESEARCH DESK</p>
+        <h3>Understand the business.<br>Then consider the investment.</h3>
+        <p>We connect company developments, business models and financial results so you can judge what matters.</p>
+        <a href="/wealth/earnings/">Browse earnings reports <span aria-hidden="true">↗</span></a>
+        <span class="finance-research-decoration" aria-hidden="true">C.</span>
+      </div>
+      <div class="finance-research-latest">
+        <div class="finance-research-latest-head"><span>RECENT COMPANY ANALYSIS</span><span>COMPOUND / WEALTH</span></div>
+        {% for article in recent_analysis %}
+        <a href="{{ article.url }}" class="finance-research-story">
+          <span class="finance-story-number">{{ '%02d'|format(loop.index) }}</span>
+          <span class="finance-story-content"><strong>{{ article.title }}</strong><small>{{ article.description|truncate(126, true, '…') }}</small>{% if article.published %}<time datetime="{{ article.published }}">{{ article.published }}</time>{% endif %}</span>
+          <span class="finance-story-arrow" aria-hidden="true">↗</span>
+        </a>
+        {% endfor %}
+        <a class="finance-research-all" href="#finance-library">Browse more analysis in the library <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="finance-section finance-library-section" id="finance-library" aria-labelledby="finance-library-title">
+    <div class="finance-library-intro">
+      <div><p class="finance-section-kicker">EVERY RESOURCE, ONE PLACE</p><h2 id="finance-library-title">The finance <em>library.</em></h2><p>Prefer to browse everything? Search the full, source-linked catalogue below, organised by resource type.</p></div>
+      <div class="finance-library-count"><strong>{{ catalogue.entries|length }}</strong><span>curated resources<br>in this index</span></div>
+    </div>
+    <div class="finance-library-toolbar">
+      <label class="finance-library-search" for="finance-library-search"><span aria-hidden="true">⌕</span><span class="sr-only">Search the finance library</span><input id="finance-library-search" type="search" placeholder="Find a guide, stock, company or calculator…" autocomplete="off" aria-controls="finance-library-groups" data-finance-search></label>
+      <p aria-live="polite" aria-atomic="true" data-finance-results>{{ catalogue.entries|length }} resources in the catalogue</p>
+    </div>
+    <div class="finance-library-groups" id="finance-library-groups">
+      {% for group in groups %}
+      {% set entries = by_group[group] %}
+      <details class="finance-library-group" data-finance-group>
+        <summary><span class="finance-library-group-title"><strong>{{ group }}</strong><small>{{ entries|length }} resources</small></span><span class="finance-library-toggle" aria-hidden="true">+</span></summary>
+        <ul class="finance-library-items">
+          {% for entry in entries %}
+          <li class="finance-library-item" data-finance-item>
+            <div class="finance-library-item-main"><h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3><span aria-hidden="true">↗</span></div>
+            {% if entry.description %}<p>{{ entry.description|truncate(190, true, '…') }}</p>{% endif %}
+            {% if entry.published or entry.modified or entry.fiscal_period %}
+              <div class="finance-library-item-meta">
+                {% if entry.published %}<span>Published {{ entry.published }}</span>{% endif %}
+                {% if entry.modified %}<span>Updated {{ entry.modified }}</span>{% endif %}
+                {% if entry.fiscal_period %}<span>{{ entry.fiscal_period }} · Filed {{ entry.filed }}</span>{% endif %}
+              </div>
+            {% endif %}
+            {% if entry.sources %}
+            <details class="finance-library-sources"><summary>Original sources ({{ entry.sources|length }})</summary>
+              <ul>{% for source in entry.sources %}<li><a href="{{ source.url }}" rel="noopener noreferrer">{{ source.title }}</a></li>{% endfor %}</ul>
+            </details>
+            {% elif entry.requires_javascript_for_calculation %}
+              <small class="finance-library-sources-note">Interactive model; assumptions are explained in the tool.</small>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </details>
+      {% endfor %}
+    </div>
+    <p class="finance-library-empty" hidden data-finance-empty>No matching resources. Try another company, topic or calculator name.</p>
+    <div class="finance-library-footer"><span>Want to work with the complete catalogue?</span><a href="/finance/index.json">Source-linked JSON index <span aria-hidden="true">↗</span></a><a href="/editorial-policy/">How we research <span aria-hidden="true">↗</span></a></div>
+  </section>
+
+  <aside class="finance-method" aria-labelledby="finance-method-title">
+    <div><p class="finance-section-kicker">HOW TO USE THIS RESEARCH</p><h2 id="finance-method-title">The source matters.</h2></div>
+    <div><p>Our guides aim to explain decisions, not give personal financial advice. Research dates and financial reporting periods are distinct. For an investment or tax decision, check the latest original sources and your own circumstances.</p>
+      <details><summary>Read the catalogue notes</summary><p>{{ catalogue.guidance }}</p></details>
+    </div>
+  </aside>
+
+</div>
 {% endblock %}
