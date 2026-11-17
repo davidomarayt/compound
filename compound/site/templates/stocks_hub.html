@@ -1,22 +1,71 @@
 {% extends "base.html" %}
-{% block head_title %}Stocks Directory: Company Profiles, Charts &amp; Research | Compound{% endblock %}
-{% block meta %}<meta name="description" content="Browse the Compound Stocks directory. Search publicly traded companies and tickers, explore share-price charts, earnings and original research."><meta property="og:title" content="Compound Stocks: Company Research &amp; Earnings"><meta property="og:description" content="Explore public companies, share-price charts, earnings and research."><meta property="og:url" content="{{ site_url }}/stocks/">{% endblock %}
-{% block head %}<link rel="canonical" href="{{ site_url }}/stocks/"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Compound","item":{{ (site_url ~ '/')|tojson }}},{"@type":"ListItem","position":2,"name":"Wealth","item":{{ (site_url ~ '/wealth/')|tojson }}},{"@type":"ListItem","position":3,"name":"Stocks","item":{{ (site_url ~ '/stocks/')|tojson }}}]}</script>{% endblock %}
-{% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=8">{% endblock %}
-{% block content %}<div class="earnings-hub stocks-directory">
+{% block head_title %}Stocks Directory & Company Research in Ireland | Compound{% endblock %}
+{% block meta %}<meta name="description" content="Explore stocks and businesses with SEC-backed earnings research, sector browsing and searchable company profiles. Independent analysis from Compound Ireland."><meta property="og:title" content="Stocks &amp; Company Research | Compound"><meta property="og:description" content="Understand the companies behind the ticker. Browse sourced earnings, charts and research."><meta property="og:url" content="{{ site_url }}/stocks/">{% endblock %}
+{% block head %}
+<link rel="canonical" href="{{ site_url }}/stocks/">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Compound","item":{{ (site_url ~ '/')|tojson }}},{"@type":"ListItem","position":2,"name":"Wealth","item":{{ (site_url ~ '/wealth/')|tojson }}},{"@type":"ListItem","position":3,"name":"Stocks","item":{{ (site_url ~ '/stocks/')|tojson }}}]}</script>
+{% endblock %}
+{% block post_styles %}<link rel="stylesheet" href="/static/earnings.css?v=8"><link rel="stylesheet" href="/static/stocks-research.css?v=1">{% endblock %}
+{% block content %}
+<div class="earnings-hub stocks-directory stocks-research-hub">
 <nav class="earnings-crumb" aria-label="Breadcrumb"><a href="/">Compound</a> / <a href="/wealth/">Wealth</a> / <span aria-current="page">Stocks</span></nav>
-<header class="earnings-hero"><p class="eyebrow">COMPOUND WEALTH / STOCKS</p><h1>Follow the companies, not just the headlines.</h1><p class="earnings-lede">Explore listed companies from around the world with interactive share-price charts, financial results and independent analysis. One searchable directory. One permanent page per company.</p><div class="earnings-hero-links"><a href="/wealth/earnings/">Latest earnings →</a><a href="/companies/">Private company research →</a><a href="/pia/">Irish investment accounts →</a></div></header>
-<section class="earnings-section" aria-labelledby="stocks-companies">
-<div class="earnings-heading"><p class="eyebrow">STOCK DIRECTORY</p><h2 id="stocks-companies">Browse stocks by company or ticker.</h2><span>{{ companies|length }} companies</span></div>
-<p>Search the full public-company register below. TradingView market data may be delayed, and original earnings analysis is added when verified. Profiles without substantive original coverage remain available here but excluded from Google indexing.</p>
-{% if companies %}
-<div class="earnings-directory-controls"><div><label for="earnings-search">Search company or stock ticker</label><input id="earnings-search" type="search" placeholder="e.g. Apple, SpaceX, ASML" data-earnings-search></div><div><label for="earnings-sector">Filter by sector</label><select id="earnings-sector" data-earnings-sector><option value="">All sectors</option>{% for sector in sectors %}<option value="{{ sector }}">{{ sector }}</option>{% endfor %}</select></div></div>
-<p class="earnings-directory-count" data-earnings-count aria-live="polite">Showing {{ companies|length }} of {{ companies|length }} companies</p>
-<div class="earnings-directory-scroll" tabindex="0" role="region" aria-label="Public company stock directory"><table class="earnings-directory"><thead><tr><th scope="col">Company</th><th scope="col">Ticker(s)</th><th scope="col">Sector</th><th scope="col">Reports</th></tr></thead><tbody>
-{% for company in companies %}<tr data-earnings-row data-name="{{ company.name|lower }}" data-symbols="{{ company.symbols|join(' ')|lower }}" data-sector="{{ company.sector }}"><th scope="row"><a href="/stocks/{{ company.slug }}/">{{ company.name }}</a></th><td>{{ company.symbols|join(', ') }}</td><td>{{ company.sector }}</td><td>{{ company.report_count }}</td></tr>{% endfor %}
-</tbody></table></div><p class="earnings-directory-empty" data-earnings-empty hidden>No matching companies found.</p>
-<p class="earnings-directory-source">Data sources: <a href="{{ registry.source }}" rel="noopener">public company dataset</a> and official exchange and investor-relations records. Register checked {{ checked or 'not yet' }}. Financial results link to the relevant primary filings.</p>
-{% else %}<div class="earnings-empty"><h3>Company register being prepared</h3><p>Company profiles will appear here as listing details are confirmed.</p></div>{% endif %}
+<section class="sr-hero" aria-labelledby="sr-title">
+  <div class="sr-hero-copy">
+    <p class="sr-eyebrow">COMPOUND / COMPANY RESEARCH</p>
+    <h1 id="sr-title">Understand the business <em>behind the ticker.</em></h1>
+    <p class="sr-hero-lede">Explore company results, filings and research in one place. Start with a business you know, discover a sector, or look beneath the share-price chart.</p>
+    <div class="sr-hero-actions"><a class="sr-primary" href="#stocks-companies">Find a company <span aria-hidden="true">↗</span></a><a class="sr-secondary" href="/wealth/earnings/">Explore earnings <span aria-hidden="true">↗</span></a></div>
+    <p class="sr-hero-small">Independent analysis · Filing-linked figures · No price predictions</p>
+  </div>
+  <aside class="sr-hero-aside" aria-label="Research pathways">
+    <div class="sr-aside-head"><span>GO DEEPER</span><span>COMPOUND RESEARCH DESK</span></div>
+    <a href="/wealth/earnings/"><span class="sr-aside-no">01</span><span><strong>Latest earnings</strong><small>Reported revenue, profitability and quarterly comparisons</small></span><span aria-hidden="true">↗</span></a>
+    <a href="/companies/"><span class="sr-aside-no">02</span><span><strong>Private companies</strong><small>Research businesses that do not trade publicly</small></span><span aria-hidden="true">↗</span></a>
+    <a href="/wealth/how-to-start-investing-in-ireland/"><span class="sr-aside-no">03</span><span><strong>Investing in Ireland</strong><small>Understand risk, fees, tax and diversification</small></span><span aria-hidden="true">↗</span></a>
+    <div class="sr-aside-footer">Research first. Decisions second.</div>
+  </aside>
 </section>
-<section class="earnings-section earnings-method"><div><p class="eyebrow">READING THE DATA</p><h2>Price is not performance.</h2></div><div><p>Price charts use TradingView data and may be delayed. Company reports reference primary filings, with accounting periods and source links shown. Share prices and financial results are different measures.</p><p>Information only, not individual investment advice. <a href="/editorial-policy/">Editorial policy</a> · <a href="/wealth/earnings/">Earnings reports</a> · <a href="/pia/">Personal Investment Accounts</a>.</p></div></section>
-</div><script src="/static/earnings-directory.js?v=1" defer></script>{% endblock %}
+<nav class="sr-jump" aria-label="Stocks page sections"><span>EXPLORE STOCKS</span><a href="#sr-featured">Research highlights ↘</a><a href="#stocks-companies">Full directory ↘</a><a href="#sr-method">How to use the data ↘</a></nav>
+<section class="sr-section" id="sr-featured" aria-labelledby="sr-featured-heading">
+  <div class="sr-section-heading"><div><p class="sr-kicker">A PLACE TO BEGIN</p><h2 id="sr-featured-heading">Companies worth <em>understanding.</em></h2></div><p>Starting points from our research coverage, not buy recommendations. Select a company to see its available reports and source documents.</p></div>
+  <div class="sr-featured-grid">
+    {% set featured_symbols = ['nvda', 'aapl', 'msft', 'amzn', 'googl', 'meta', 'tsla', 'lly'] %}
+    {% for symbol in featured_symbols %}
+      {% for company in companies if company.slug == symbol %}
+      <a class="sr-featured-card" href="/stocks/{{ company.slug }}/">
+        <div class="sr-featured-top"><span class="sr-ticker">{{ company.symbol }}</span><span aria-hidden="true">↗</span></div>
+        <h3>{{ company.name }}</h3><p>{{ company.sector }}</p>
+        <div class="sr-featured-bottom">{% if company.report_count %}SEC-backed earnings available{% else %}Browse company profile{% endif %}<span aria-hidden="true">→</span></div>
+      </a>
+      {% endfor %}
+    {% endfor %}
+  </div>
+  <p class="sr-disclosure">Featured for ease of navigation, not ranked by expected returns. Coverage and reporting dates differ by company.</p>
+</section>
+<section class="sr-section sr-directory-section" aria-labelledby="stocks-companies" id="sr-directory">
+  <div class="sr-section-heading"><div><p class="sr-kicker">THE COMPANY LIBRARY</p><h2 id="stocks-companies">Explore <em>every company.</em></h2></div><div class="sr-dir-size"><strong>{{ companies|length }}</strong><span>public company<br>profiles</span></div></div>
+  <p class="sr-directory-lede">Search by company or ticker, then narrow results by sector. The full register remains accessible below; profiles without substantive original coverage are excluded from search indexing.</p>
+  {% if companies %}
+  <div class="earnings-directory-controls sr-directory-controls">
+    <div><label for="earnings-search">Find a company or ticker</label><input id="earnings-search" type="search" placeholder="e.g. Apple, AAPL, Nvidia" data-earnings-search autocomplete="off"></div>
+    <div><label for="earnings-sector">Explore by sector</label><select id="earnings-sector" data-earnings-sector><option value="">All sectors</option>{% for sector in sectors %}<option value="{{ sector }}">{{ sector }}</option>{% endfor %}</select></div>
+  </div>
+  <div class="sr-sector-shortcuts" aria-label="Quick sector filters">
+    {% for sector in sectors[:8] %}<button type="button" class="sr-sector-chip" data-stock-sector="{{ sector }}" aria-pressed="false">{{ sector }}</button>{% endfor %}
+    <button type="button" class="sr-sector-chip sr-sector-clear" data-stock-sector="" aria-pressed="true">All companies</button>
+  </div>
+  <p class="earnings-directory-count" data-earnings-count aria-live="polite">Showing {{ companies|length }} of {{ companies|length }} companies</p>
+  <div class="earnings-directory-scroll sr-directory-table" tabindex="0" role="region" aria-label="Public company stock directory">
+    <table class="earnings-directory"><thead><tr><th scope="col">Company</th><th scope="col">Ticker(s)</th><th scope="col">Sector</th><th scope="col">Reports</th></tr></thead>
+    <tbody>
+    {% for company in companies %}<tr data-earnings-row data-name="{{ company.name|lower }}" data-symbols="{{ company.symbols|join(' ')|lower }}" data-sector="{{ company.sector }}"><th scope="row"><a href="/stocks/{{ company.slug }}/">{{ company.name }}</a></th><td><span class="sr-row-ticker">{{ company.symbols|join(', ') }}</span></td><td>{{ company.sector }}</td><td>{% if company.report_count %}<span class="sr-report-available">Available</span>{% else %}<span class="sr-report-unavailable">—</span>{% endif %}</td></tr>{% endfor %}
+    </tbody></table>
+  </div><p class="earnings-directory-empty" data-earnings-empty hidden>No matching companies found. Try another ticker or sector.</p>
+  <p class="earnings-directory-source">Data sources: <a href="{{ registry.source }}" rel="noopener">public company dataset</a> and official exchange and investor-relations records. Register checked {{ checked or 'not yet' }}. Financial results link to the relevant primary filings.</p>
+  {% else %}<div class="earnings-empty"><h3>Company register being prepared</h3><p>Company profiles will appear here as listing details are confirmed.</p></div>{% endif %}
+</section>
+<section class="sr-method" id="sr-method" aria-labelledby="sr-method-heading"><div><p class="sr-kicker">RESEARCH NOTES</p><h2 id="sr-method-heading">Price is not <em>performance.</em></h2></div><div><p>Share-price charts use TradingView data and may be delayed. Earnings numbers come from dated primary reports and company filings. Fiscal periods, reporting standards and accounting estimates vary, so comparisons require context.</p><p>Compound provides information and research, not personalised investment advice. Read the <a href="/editorial-policy/">editorial policy</a> and explore <a href="/wealth/earnings/">earnings reports</a> or <a href="/pia/">Irish investment accounts</a>.</p></div></section>
+</div>
+<script src="/static/earnings-directory.js?v=2" defer></script>
+{% endblock %}
