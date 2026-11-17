@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 296 published articles and guides, 64 tools,
+**Included:** 299 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -32,6 +32,7 @@ For the complete register (including 510+ company profiles), open
 - [Anthropic's Always-On Agent Blueprint: The Hidden Costs Are Permissions and Recovery](https://compound.ie/wealth/anthropic-always-on-agents-business-case-permissions-cost/) — **Wealth**
 - [Anthropic's Anvil Found AI Safeguard Gaps Faster Than Human Testers. What Is That Worth?](https://compound.ie/wealth/anthropic-anvil-automated-red-teaming-safety-economics/) — **Wealth**
 - [Anthropic's Fable and Mythos 5.2: The Expensive Model Is Not Always the Best Deal](https://compound.ie/wealth/anthropic-fable-mythos-52-pricing-routing-economics/) — **Wealth**
+- [Anthropic's Self-Hosted Agents Shift the Security Boundary—and the Operating Bill](https://compound.ie/wealth/anthropic-self-hosted-managed-agents-enterprise-control-economics/) — **Wealth**
 - [Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price](https://compound.ie/wealth/anthropic-loss-ipo-valuation/) — **Wealth**
 - [Apple Stock Guide: iPhone, Services, Buybacks and Valuation](https://compound.ie/wealth/apple-iphone-services-profit-2026/) — **Wealth**
 - [Apple's earnings growth: what remains after the tariff-refund boost?](https://compound.ie/wealth/apple-earnings-tariff-refunds-services/) — **Wealth**
@@ -69,6 +70,7 @@ For the complete register (including 510+ company profiles), open
 - [Creatine in Ireland: what it does, how to take it and what to watch](https://compound.ie/health/creatine-benefits-dosage-safety-ireland/) — **Health**
 - [CVS Plans to Split in Two. Do the Segment Economics Support the Separation?](https://compound.ie/wealth/cvs-separation-segment-economics/) — **Wealth**
 - [Databricks Wants Genie to Work Without Being Asked. Who Pays for the Always-On Agent?](https://compound.ie/wealth/databricks-always-on-genie-enterprise-agent-economics/) — **Wealth**
+- [Databricks' $3 Billion EMEA Plan Is a Distribution Bet, Not a Revenue Forecast](https://compound.ie/wealth/databricks-three-billion-emea-investment-agent-platform-distribution/) — **Wealth**
 - [Dividend Investing in Ireland: How Dividend Stocks Work](https://compound.ie/wealth/dividend-investing-ireland/) — **Wealth**
 - [Do I get public holiday pay if I don’t normally work that day?](https://compound.ie/wealth/public-holiday-pay-ireland-part-time/) — **Wealth**
 - [Do I pay tax on solar export payments in Ireland?](https://compound.ie/wealth/tax-on-solar-export-payments-ireland/) — **Wealth**
@@ -206,6 +208,7 @@ For the complete register (including 510+ company profiles), open
 - [OpenAI Tested AI on 100 Real Lab Tasks. The Hard Problem Is Knowing When Not to Trust It](https://compound.ie/wealth/openai-biobasicsbench-wet-lab-ai-evidence-reliability/) — **Wealth**
 - [OpenAI's ChatGPT Wallet Can Complete a Purchase. Can Merchants Trust the Checkout?](https://compound.ie/wealth/openai-chatgpt-wallet-agentic-checkout-economics/) — **Wealth**
 - [OpenAI's Hacktron Partnership Puts Agent Security at the Integration Layer](https://compound.ie/wealth/openai-hacktron-agent-security-third-party-risk/) — **Wealth**
+- [OpenAI's LVMH Media Deal Has Two Business Models: Newsroom AI and Reader Distribution](https://compound.ie/wealth/openai-lvmh-media-chatgpt-news-distribution-economics/) — **Wealth**
 - [Ozempic, Wegovy & Mounjaro: medical card cover in Ireland](https://compound.ie/health/glp1-hse-medical-card-ireland/) — **Health**
 - [Padel in Ireland: Rules, Courts, Costs & How to Start Playing](https://compound.ie/life/padel-ireland/) — **Life**
 - [Pay-related jobseeker claims rose by 5,077. What would the payment cover?](https://compound.ie/news/october-live-register-jobseekers-pay-related-benefit/) — **Wealth**

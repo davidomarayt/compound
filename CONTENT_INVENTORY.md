@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 296
+- Published editorial articles and guides: 299
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 242
+## Wealth articles and guides — 245
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -67,6 +67,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Anthropic's Always-On Agent Blueprint: The Hidden Costs Are Permissions and Recovery](https://compound.ie/wealth/anthropic-always-on-agents-business-case-permissions-cost/)
 - [Anthropic's Anvil Found AI Safeguard Gaps Faster Than Human Testers. What Is That Worth?](https://compound.ie/wealth/anthropic-anvil-automated-red-teaming-safety-economics/)
 - [Anthropic's Fable and Mythos 5.2: The Expensive Model Is Not Always the Best Deal](https://compound.ie/wealth/anthropic-fable-mythos-52-pricing-routing-economics/)
+- [Anthropic's Self-Hosted Agents Shift the Security Boundary—and the Operating Bill](https://compound.ie/wealth/anthropic-self-hosted-managed-agents-enterprise-control-economics/)
 - [Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price](https://compound.ie/wealth/anthropic-loss-ipo-valuation/)
 - [Apple Stock Guide: iPhone, Services, Buybacks and Valuation](https://compound.ie/wealth/apple-iphone-services-profit-2026/)
 - [Apple's earnings growth: what remains after the tariff-refund boost?](https://compound.ie/wealth/apple-earnings-tariff-refunds-services/)
@@ -100,6 +101,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Could diesel prices in Ireland fall by 8c a litre? What the G7 oil release means for motorists](https://compound.ie/news/g7-oil-release-diesel-prices-ireland/)
 - [CVS Plans to Split in Two. Do the Segment Economics Support the Separation?](https://compound.ie/wealth/cvs-separation-segment-economics/)
 - [Databricks Wants Genie to Work Without Being Asked. Who Pays for the Always-On Agent?](https://compound.ie/wealth/databricks-always-on-genie-enterprise-agent-economics/)
+- [Databricks' $3 Billion EMEA Plan Is a Distribution Bet, Not a Revenue Forecast](https://compound.ie/wealth/databricks-three-billion-emea-investment-agent-platform-distribution/)
 - [Dividend Investing in Ireland: How Dividend Stocks Work](https://compound.ie/wealth/dividend-investing-ireland/)
 - [Do I get public holiday pay if I don’t normally work that day?](https://compound.ie/wealth/public-holiday-pay-ireland-part-time/)
 - [Do I pay tax on solar export payments in Ireland?](https://compound.ie/wealth/tax-on-solar-export-payments-ireland/)
@@ -209,6 +211,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [OpenAI Tested AI on 100 Real Lab Tasks. The Hard Problem Is Knowing When Not to Trust It](https://compound.ie/wealth/openai-biobasicsbench-wet-lab-ai-evidence-reliability/)
 - [OpenAI's ChatGPT Wallet Can Complete a Purchase. Can Merchants Trust the Checkout?](https://compound.ie/wealth/openai-chatgpt-wallet-agentic-checkout-economics/)
 - [OpenAI's Hacktron Partnership Puts Agent Security at the Integration Layer](https://compound.ie/wealth/openai-hacktron-agent-security-third-party-risk/)
+- [OpenAI's LVMH Media Deal Has Two Business Models: Newsroom AI and Reader Distribution](https://compound.ie/wealth/openai-lvmh-media-chatgpt-news-distribution-economics/)
 - [Pay-related jobseeker claims rose by 5,077. What would the payment cover?](https://compound.ie/news/october-live-register-jobseekers-pay-related-benefit/)
 - [PCP vs Hire Purchase vs Car Loan in Ireland: the real cost of each](https://compound.ie/wealth/pcp-vs-hp-vs-car-loan-ireland/)
 - [Pension Funds and Fees in Ireland: What to Check](https://compound.ie/wealth/pension-funds-fees-ireland/)

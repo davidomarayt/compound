@@ -378,6 +378,28 @@
         "status": "published"
       },
       {
+        "title": "Anthropic's Self-Hosted Agents Shift the Security Boundary—and the Operating Bill",
+        "url": "/wealth/anthropic-self-hosted-managed-agents-enterprise-control-economics/",
+        "source": "content/wealth/anthropic-self-hosted-managed-agents-enterprise-control-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "anthropic-self-hosted-managed-agents-enterprise-control-economics",
+        "date": "2026-11-17",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-anthropic",
+          "anthropic",
+          "enterprise-ai",
+          "agent-security",
+          "self-hosted",
+          "cloud"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price",
         "url": "/wealth/anthropic-loss-ipo-valuation/",
         "source": "content/wealth/anthropic-loss-ipo-valuation.md",
@@ -1081,6 +1103,28 @@
           "enterprise-ai",
           "agent-economics",
           "data-platform"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Databricks' $3 Billion EMEA Plan Is a Distribution Bet, Not a Revenue Forecast",
+        "url": "/wealth/databricks-three-billion-emea-investment-agent-platform-distribution/",
+        "source": "content/wealth/databricks-three-billion-emea-investment-agent-platform-distribution.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "databricks-three-billion-emea-investment-agent-platform-distribution",
+        "date": "2026-11-17",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-databricks",
+          "databricks",
+          "european-ai",
+          "enterprise-software",
+          "cloud",
+          "investment"
         ],
         "status": "published"
       },
@@ -3757,6 +3801,28 @@
           "cybersecurity",
           "agent-security",
           "enterprise-risk"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "OpenAI's LVMH Media Deal Has Two Business Models: Newsroom AI and Reader Distribution",
+        "url": "/wealth/openai-lvmh-media-chatgpt-news-distribution-economics/",
+        "source": "content/wealth/openai-lvmh-media-chatgpt-news-distribution-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-lvmh-media-chatgpt-news-distribution-economics",
+        "date": "2026-11-17",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "journalism",
+          "media-business",
+          "enterprise-ai",
+          "distribution"
         ],
         "status": "published"
       },
