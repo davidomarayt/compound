@@ -132,8 +132,25 @@ def write_discovery(base, out, env, data, sitemap_urls):
                                  for i, e in enumerate(data['entries'], 1)]}}
     (out / 'finance').mkdir(parents=True, exist_ok=True)
     (out / 'finance/index.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    # The public landing page is curated; the JSON API and structured ItemList
+    # remain complete and unchanged. Only offer tools confirmed in the catalogue.
+    by_group = {group: [e for e in data['entries'] if e['kind'] == group] for group in GROUPS}
+    priority = (
+        'pia-calculator', 'compound-interest-calculator', 'budget-calculator',
+        'mortgage-repayment-calculator', 'mortgage-overpayment-calculator',
+        'salary-hourly-calculator', 'net-worth-calculator', 'car-finance-calculator',
+    )
+    all_tools = by_group['Financial calculators']
+    featured_tools = []
+    for slug in priority:
+        found = next((e for e in all_tools if e['url'].endswith('/' + slug + '/')), None)
+        if found is not None and found not in featured_tools:
+            featured_tools.append(found)
+    featured_tools += [e for e in all_tools if e not in featured_tools][:max(0, 6 - len(featured_tools))]
     (out / 'finance/index.html').write_text(env.get_template('finance.html').render(
-        title='Finance directory', catalogue=data, groups=GROUPS, schema=schema,
+        title='Finance & Investing in Ireland', catalogue=data, groups=GROUPS, schema=schema,
+        by_group=by_group, featured_tools=featured_tools[:6],
+        recent_analysis=by_group['Company analysis'][:3],
         pillar='wealth'), encoding='utf-8')
     lines = ['# Compound.ie', '', '> Independent investing guides, company earnings analysis and financial calculators for readers in Ireland.',
              '', GUIDANCE, '', '## Navigation',
