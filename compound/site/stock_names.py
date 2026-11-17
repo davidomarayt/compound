@@ -26,6 +26,27 @@ DISPLAY_NAMES = {
 }
 
 
+# Exact mirror spellings reviewed on 17 November 2026. Do not overwrite
+# unexpected new names from the feed or test fixtures simply because a CIK matches.
+SOURCE_LABELS = {
+    "CLX": "Clorox",
+    "COO": "Cooper Companies (The)",
+    "DIS": "Walt Disney Company (The)",
+    "EL": "Estée Lauder Companies (The)",
+    "FOXA": "Fox Corporation (Class A)",
+    "GOOGL": "Alphabet Inc. (Class A)",
+    "HD": "Home Depot (The)",
+    "HIG": "Hartford (The)",
+    "HSY": "Hershey Company (The)",
+    "KO": "Coca-Cola Company (The)",
+    "LLY": "Lilly (Eli)",
+    "MOS": "Mosaic Company (The)",
+    "NWSA": "News Corp (Class A)",
+    "SJM": "J.M. Smucker Company (The)",
+    "TRV": "Travelers Companies (The)",
+}
+
+
 def normalise_company_names(members: list[dict]) -> list[dict]:
     """Correct known labels; retain source wording and original identifiers."""
     result = []
@@ -34,7 +55,7 @@ def normalise_company_names(members: list[dict]) -> list[dict]:
         target = DISPLAY_NAMES.get(entry.get("symbol"))
         if target and str(entry.get("cik")) == str(target[0]):
             name = entry.get("name")
-            if name and name != target[1]:
+            if name == SOURCE_LABELS[entry["symbol"]]:
                 entry.setdefault("source_name", name)
                 entry["name"] = target[1]
         result.append(entry)
