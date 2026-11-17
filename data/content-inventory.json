@@ -7353,7 +7353,7 @@
         "origin": "S&P reference list"
       },
       {
-        "title": "Alphabet Inc. (Class A) (GOOGL) Stock",
+        "title": "Alphabet Inc. (GOOGL) Stock",
         "url": "/stocks/googl/",
         "source": "content/earnings-sp500.json",
         "kind": "Public-company profile",
@@ -8089,14 +8089,6 @@
         "origin": "S&P reference list"
       },
       {
-        "title": "Clorox (CLX) Stock",
-        "url": "/stocks/clx/",
-        "source": "content/earnings-sp500.json",
-        "kind": "Public-company profile",
-        "ticker": "CLX",
-        "origin": "S&P reference list"
-      },
-      {
         "title": "CME Group (CME) Stock",
         "url": "/stocks/cme/",
         "source": "content/earnings-sp500.json",
@@ -8110,14 +8102,6 @@
         "source": "content/earnings-sp500.json",
         "kind": "Public-company profile",
         "ticker": "CMS",
-        "origin": "S&P reference list"
-      },
-      {
-        "title": "Coca-Cola Company (The) (KO) Stock",
-        "url": "/stocks/ko/",
-        "source": "content/earnings-sp500.json",
-        "kind": "Public-company profile",
-        "ticker": "KO",
         "origin": "S&P reference list"
       },
       {
@@ -8198,14 +8182,6 @@
         "source": "content/earnings-sp500.json",
         "kind": "Public-company profile",
         "ticker": "CEG",
-        "origin": "S&P reference list"
-      },
-      {
-        "title": "Cooper Companies (The) (COO) Stock",
-        "url": "/stocks/coo/",
-        "source": "content/earnings-sp500.json",
-        "kind": "Public-company profile",
-        "ticker": "COO",
         "origin": "S&P reference list"
       },
       {
@@ -8537,6 +8513,14 @@
         "origin": "S&P reference list"
       },
       {
+        "title": "Eli Lilly and Company (LLY) Stock",
+        "url": "/stocks/lly/",
+        "source": "content/earnings-sp500.json",
+        "kind": "Public-company profile",
+        "ticker": "LLY",
+        "origin": "S&P reference list"
+      },
+      {
         "title": "Emcor (EME) Stock",
         "url": "/stocks/eme/",
         "source": "content/earnings-sp500.json",
@@ -8606,14 +8590,6 @@
         "source": "content/earnings-sp500.json",
         "kind": "Public-company profile",
         "ticker": "ESS",
-        "origin": "S&P reference list"
-      },
-      {
-        "title": "Estée Lauder Companies (The) (EL) Stock",
-        "url": "/stocks/el/",
-        "source": "content/earnings-sp500.json",
-        "kind": "Public-company profile",
-        "ticker": "EL",
         "origin": "S&P reference list"
       },
       {
@@ -8833,7 +8809,7 @@
         "origin": "S&P reference list"
       },
       {
-        "title": "Fox Corporation (Class A) (FOXA) Stock",
+        "title": "Fox Corporation (FOXA) Stock",
         "url": "/stocks/foxa/",
         "source": "content/earnings-sp500.json",
         "kind": "Public-company profile",
@@ -8993,14 +8969,6 @@
         "origin": "S&P reference list"
       },
       {
-        "title": "Hartford (The) (HIG) Stock",
-        "url": "/stocks/hig/",
-        "source": "content/earnings-sp500.json",
-        "kind": "Public-company profile",
-        "ticker": "HIG",
-        "origin": "S&P reference list"
-      },
-      {
         "title": "Hasbro (HAS) Stock",
         "url": "/stocks/has/",
         "source": "content/earnings-sp500.json",
@@ -9033,14 +9001,6 @@
         "origin": "S&P reference list"
       },
       {
-        "title": "Hershey Company (The) (HSY) Stock",
-        "url": "/stocks/hsy/",
-        "source": "content/earnings-sp500.json",
-        "kind": "Public-company profile",
-        "ticker": "HSY",
-        "origin": "S&P reference list"
-      },
-      {
         "title": "Hewlett Packard Enterprise (HPE) Stock",
         "url": "/stocks/hpe/",
         "source": "content/earnings-sp500.json",
@@ -9054,14 +9014,6 @@
         "source": "content/earnings-sp500.json",
         "kind": "Public-company profile",
         "ticker": "HLT",
-        "origin": "S&P reference list"
-      },
-      {
-        "title": "Home Depot (The) (HD) Stock",
-        "url": "/stocks/hd/",
-        "source": "content/earnings-sp500.json",
-        "kind": "Public-company profile",
-        "ticker": "HD",
         "origin": "S&P reference list"
       },
       {
@@ -9305,14 +9257,6 @@
         "origin": "S&P reference list"
       },
       {
-        "title": "J.M. Smucker Company (The) (SJM) Stock",
-        "url": "/stocks/sjm/",
-        "source": "content/earnings-sp500.json",
-        "kind": "Public-company profile",
-        "ticker": "SJM",
-        "origin": "S&P reference list"
-      },
-      {
         "title": "Jabil (JBL) Stock",
         "url": "/stocks/jbl/",
         "source": "content/earnings-sp500.json",
@@ -9502,14 +9446,6 @@
         "source": "content/earnings-sp500.json",
         "kind": "Public-company profile",
         "ticker": "LII",
-        "origin": "S&P reference list"
-      },
-      {
-        "title": "Lilly (Eli) (LLY) Stock",
-        "url": "/stocks/lly/",
-        "source": "content/earnings-sp500.json",
-        "kind": "Public-company profile",
-        "ticker": "LLY",
         "origin": "S&P reference list"
       },
       {
@@ -9801,14 +9737,6 @@
         "origin": "S&P reference list"
       },
       {
-        "title": "Mosaic Company (The) (MOS) Stock",
-        "url": "/stocks/mos/",
-        "source": "content/earnings-sp500.json",
-        "kind": "Public-company profile",
-        "ticker": "MOS",
-        "origin": "S&P reference list"
-      },
-      {
         "title": "Motorola Solutions (MSI) Stock",
         "url": "/stocks/msi/",
         "source": "content/earnings-sp500.json",
@@ -9857,7 +9785,7 @@
         "origin": "S&P reference list"
       },
       {
-        "title": "News Corp (Class A) (NWSA) Stock",
+        "title": "News Corp (NWSA) Stock",
         "url": "/stocks/nwsa/",
         "source": "content/earnings-sp500.json",
         "kind": "Public-company profile",
@@ -10785,6 +10713,94 @@
         "origin": "S&P reference list"
       },
       {
+        "title": "The Clorox Company (CLX) Stock",
+        "url": "/stocks/clx/",
+        "source": "content/earnings-sp500.json",
+        "kind": "Public-company profile",
+        "ticker": "CLX",
+        "origin": "S&P reference list"
+      },
+      {
+        "title": "The Coca-Cola Company (KO) Stock",
+        "url": "/stocks/ko/",
+        "source": "content/earnings-sp500.json",
+        "kind": "Public-company profile",
+        "ticker": "KO",
+        "origin": "S&P reference list"
+      },
+      {
+        "title": "The Cooper Companies (COO) Stock",
+        "url": "/stocks/coo/",
+        "source": "content/earnings-sp500.json",
+        "kind": "Public-company profile",
+        "ticker": "COO",
+        "origin": "S&P reference list"
+      },
+      {
+        "title": "The Estée Lauder Companies Inc. (EL) Stock",
+        "url": "/stocks/el/",
+        "source": "content/earnings-sp500.json",
+        "kind": "Public-company profile",
+        "ticker": "EL",
+        "origin": "S&P reference list"
+      },
+      {
+        "title": "The Hartford (HIG) Stock",
+        "url": "/stocks/hig/",
+        "source": "content/earnings-sp500.json",
+        "kind": "Public-company profile",
+        "ticker": "HIG",
+        "origin": "S&P reference list"
+      },
+      {
+        "title": "The Hershey Company (HSY) Stock",
+        "url": "/stocks/hsy/",
+        "source": "content/earnings-sp500.json",
+        "kind": "Public-company profile",
+        "ticker": "HSY",
+        "origin": "S&P reference list"
+      },
+      {
+        "title": "The Home Depot (HD) Stock",
+        "url": "/stocks/hd/",
+        "source": "content/earnings-sp500.json",
+        "kind": "Public-company profile",
+        "ticker": "HD",
+        "origin": "S&P reference list"
+      },
+      {
+        "title": "The J.M. Smucker Company (SJM) Stock",
+        "url": "/stocks/sjm/",
+        "source": "content/earnings-sp500.json",
+        "kind": "Public-company profile",
+        "ticker": "SJM",
+        "origin": "S&P reference list"
+      },
+      {
+        "title": "The Mosaic Company (MOS) Stock",
+        "url": "/stocks/mos/",
+        "source": "content/earnings-sp500.json",
+        "kind": "Public-company profile",
+        "ticker": "MOS",
+        "origin": "S&P reference list"
+      },
+      {
+        "title": "The Travelers Companies (TRV) Stock",
+        "url": "/stocks/trv/",
+        "source": "content/earnings-sp500.json",
+        "kind": "Public-company profile",
+        "ticker": "TRV",
+        "origin": "S&P reference list"
+      },
+      {
+        "title": "The Walt Disney Company (DIS) Stock",
+        "url": "/stocks/dis/",
+        "source": "content/earnings-sp500.json",
+        "kind": "Public-company profile",
+        "ticker": "DIS",
+        "origin": "S&P reference list"
+      },
+      {
         "title": "Thermo Fisher Scientific (TMO) Stock",
         "url": "/stocks/tmo/",
         "source": "content/earnings-sp500.json",
@@ -10838,14 +10854,6 @@
         "source": "content/earnings-sp500.json",
         "kind": "Public-company profile",
         "ticker": "TDG",
-        "origin": "S&P reference list"
-      },
-      {
-        "title": "Travelers Companies (The) (TRV) Stock",
-        "url": "/stocks/trv/",
-        "source": "content/earnings-sp500.json",
-        "kind": "Public-company profile",
-        "ticker": "TRV",
         "origin": "S&P reference list"
       },
       {
@@ -11126,14 +11134,6 @@
         "source": "content/earnings-sp500.json",
         "kind": "Public-company profile",
         "ticker": "WMT",
-        "origin": "S&P reference list"
-      },
-      {
-        "title": "Walt Disney Company (The) (DIS) Stock",
-        "url": "/stocks/dis/",
-        "source": "content/earnings-sp500.json",
-        "kind": "Public-company profile",
-        "ticker": "DIS",
         "origin": "S&P reference list"
       },
       {
