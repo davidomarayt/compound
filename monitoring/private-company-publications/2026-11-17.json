@@ -5,7 +5,7 @@
   "production_branch": "claude/clever-babbage-uibieq",
   "work_branch": "automation/private-company-2026-11-17",
   "target_new_articles": 3,
-  "status": "merged_pending_production_verification",
+  "status": "deployed_individual_live_urls_unverified",
   "confirmed_live_new_articles": 0,
   "human_editorial_status": "not_reviewed_by_human",
   "ads_policy": "Standard site ads required from publication independent of review; CMP preserved",
@@ -47,8 +47,8 @@
       "ads_presence_verified": false,
       "live_http_verified": false,
       "verified_live_result": null,
-      "deployment_status": "merged_site_deployment_pending",
-      "status": "merged_pending_live_verification"
+      "deployment_status": "github_pages_deployed_site_checks_passed_individual_unverified",
+      "status": "deployed_pending_individual_live_verification"
     },
     {
       "company": "Anthropic",
@@ -80,8 +80,8 @@
       "ads_presence_verified": false,
       "live_http_verified": false,
       "verified_live_result": null,
-      "deployment_status": "merged_site_deployment_pending",
-      "status": "merged_pending_live_verification"
+      "deployment_status": "github_pages_deployed_site_checks_passed_individual_unverified",
+      "status": "deployed_pending_individual_live_verification"
     },
     {
       "company": "Databricks",
@@ -115,8 +115,8 @@
       "ads_presence_verified": false,
       "live_http_verified": false,
       "verified_live_result": null,
-      "deployment_status": "merged_site_deployment_pending",
-      "status": "merged_pending_live_verification"
+      "deployment_status": "github_pages_deployed_site_checks_passed_individual_unverified",
+      "status": "deployed_pending_individual_live_verification"
     }
   ],
   "profile_updates": [
@@ -141,7 +141,7 @@
     }
   ],
   "production_deployment": {
-    "status": "site_workflow_in_progress",
+    "status": "github_pages_deploy_success_site_live_generic_check_success_individual_pages_unverified",
     "merge_pr": 158,
     "publication_commit": "bc47bfcd94195d21e51c186afb55bd092766048e",
     "ci_run": 44035520107,
@@ -151,7 +151,11 @@
     "site_run": 44036731059,
     "confirmed_live_urls": 0,
     "branch_protection": "Not configured; exact PR-head equivalent gate succeeded",
-    "verification_note": "GitHub Pages site deployment and publicly fetched canonical, cover, OG/Twitter and ads not yet independently verified. Do not count published until successful."
+    "verification_note": "GitHub Pages build/deploy and public generic-site verification succeeded for commit bc47bfcd...; build verified pinned licensed photos, canonical/social tags, ads and company backlinks in generated static files. However, web fetch for each of the three NEW canonical article URLs returned inaccessible; their individual live HTML, actual image URLs and ads have NOT been independently fetched. Count 0 confirmed per policy.",
+    "github_pages_site_run": 44036731059,
+    "github_pages_build": "success",
+    "github_pages_deploy": "success",
+    "generic_live_checks": "success"
   },
   "updated_at_utc": "2026-11-17"
 }
