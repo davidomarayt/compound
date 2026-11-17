@@ -172,7 +172,7 @@ Each serves different needs. Pensions may provide valuable upfront income-tax re
 
 This page was researched against publicly available material on **17 November 2026**. Compound is an independent publisher, not a PIA account provider or personalised investment adviser. Legislative and provider details are provisional until legally and operationally final.
 
-- [CCPC — Investment Account explainer and planned 1 July 2027 availability](https://www.ccpc.ie/manage-your-money/saving-and-investments/compare-savings-accounts).
+- [Revenue — Irish Investment Account technical forum, confirming the conditional 1 July 2027 launch date](https://www.revenue.ie/ga/corporate/press-office/press-releases/2026/pr-100726-irish-investment-account.aspx).
 - [Finance (No. 2) Bill 2026 as introduced, section 26 — proposed Individual Investment Account rules](https://assets.gov.ie/static/documents/89edf30b/Finance_No._2_Bill_2026.pdf).
 - [KPMG — 2026 Finance Bill Individual Investment Account commentary, including cash contributions](https://kpmg.com/ie/en/insights/tax/finance-bill-2026/investment-account.html).
 - [Revenue eBrief 142/26 — standard CGT reduced to 31% from 7 October 2026](https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-1422026.aspx).
