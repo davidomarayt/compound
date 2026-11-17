@@ -14,7 +14,7 @@ news_image_query: "SpaceX official November 2026 Starlink Mini 2 terminal remova
 hero_image_url: "https://static.itavisen.no/wp-content/uploads/2026/11/Screenshot-2026-11-10-at-21.49.00_result-961x720.webp"
 hero_image_alt: "Starlink Mini 2 portable satellite-internet terminal pictured in launch coverage on 10 November 2026, rather than the first-generation Starlink Mini"
 hero_image_credit: "Starlink / SpaceX launch imagery, reproduced in ITavisen (10 November 2026)"
-hero_image_source: "https://www.itavisen.no/2026/11/10/dette-er-starlink-2-mini/"
+hero_image_source: "https://itavisen.no/2026/11/10/starlink-mini-2-batteri/"
 require_pinned_hero: true
 social:
   enabled: false
@@ -32,7 +32,7 @@ sources:
   - title: "Tesla: Q3 2026 Form 10-Q Note 13, SpaceX Megapack transactions and equity investment"
     url: https://www.sec.gov/Archives/edgar/data/1318605/000162828026066775/tsla-20260930.htm
   - title: "ITavisen: photo of Starlink Mini 2 in November 2026 launch coverage"
-    url: https://www.itavisen.no/2026/11/10/dette-er-starlink-2-mini/
+    url: https://itavisen.no/2026/11/10/starlink-mini-2-batteri/
 ---
 
 *Technology and financial analysis | 17 November 2026. Lead image: Starlink Mini 2 launch imagery via ITavisen, not a photo of the original Starlink Mini.*
