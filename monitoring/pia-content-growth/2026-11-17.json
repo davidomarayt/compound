@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-17",
+  "timezone": "Europe/Dublin",
+  "run_type": "pia_content_growth",
+  "topic_fingerprint": "2026-11-department-finance-individual-investment-account-economic-impact-assessment-simulation-distribution-fiscal",
+  "action": "substantive_update_existing_canonical",
+  "status": "prepared_pending_pr_ci",
+  "new_articles": 0,
+  "canonical_url": "https://compound.ie/wealth/personal-investment-account-ireland/",
+  "path": "content/wealth/personal-investment-account-ireland.md",
+  "work_branch": "automation/pia-finance-impact-assessment-2026-11-17",
+  "base_branch": "claude/clever-babbage-uibieq",
+  "source_urls": [
+    "https://assets.gov.ie/static/documents/4c3e3964/Individual_Investment_Account_Economic_Impact_Assessment_-_November_2026.pdf",
+    "https://www.revenue.ie/ga/corporate/press-office/press-releases/2026/pr-100726-irish-investment-account.aspx",
+    "https://www.oireachtas.ie/en/bills/bill/2026/98/",
+    "https://www.aib.ie/make-a-plan/investments/personal-investment-account",
+    "https://personalbanking.bankofireland.com/save-and-invest/investments/personal-investment-account/",
+    "https://www.irishlife.ie/investments/pia/",
+    "https://www.ptsb.ie/saving-and-investing/investments/state-investment-account/",
+    "https://www.zurich.ie/blog/a-guide-to-irelands-new-investment-account/"
+  ],
+  "claim_checks": [
+    "Department of Finance November 2026 report: central simulation approx €850m IIA assets 2027, €110bn by mid-2040s; not individual returns or certain adoption",
+    "Central annual fiscal cost peaks €37m 2032; annual net yield from 2037; €441m 2046; alternative 2046 annual net yield €120m-€425m",
+    "Distribution 2046: top decile 54.5% of holdings, top two 72.9%, bottom half 6.5%; approx €80bn vs €7bn computed with rounded €110bn total",
+    "Modelled annual charge yield €387m 2046, approx 95% from top wealth decile; distinct from broader net fiscal yield",
+    "Model uses approx 2.5% first-year adult take-up and second-round tax assumptions; not a law or fee disclosure"
+  ],
+  "tracker": {
+    "changed": false,
+    "checked_value_retained": "2026-11-15",
+    "revenue_oct_7_notice": "verified; launch contingent on legislation",
+    "oireachtas_current_bill_stage": "direct official page 403; no new stage independently verified",
+    "providers": "AIB, Bank of Ireland, Irish Life, PTSB and Zurich pages inspected; no verified complete numerical PIA-specific fee schedule or open applications",
+    "change_reason": "New economic model is not a commencement, provider-opening or fee milestone"
+  },
+  "provider_dataset_changed": false,
+  "qa": {
+    "editorial": "new official research distinct from existing mechanics/fee/pension intent; source dates and assumptions disclosed",
+    "publication": "pending exact PR head CI and production verification",
+    "hero": "existing published guide cover retained unchanged; no new photo"
+  },
+  "live_http_verified": false,
+  "verified_live_result": null,
+  "production_verified": false
+}
