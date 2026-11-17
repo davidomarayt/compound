@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 301 published articles and guides, 64 tools,
+**Included:** 302 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -199,6 +199,7 @@ For the complete register (including 510+ company profiles), open
 - [No Energy Credit in Budget 2027: What Will Electricity Cost This Winter?](https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/) — **Wealth**
 - [Nokia’s AI Sales Jump 123%—But Turning Growth Into Cash Is the Next Test](https://compound.ie/news/nokia-ai-growth-cash-flow/) — **Wealth**
 - [November fuel prices fall slightly, but Irish public EV charging rises sharply](https://compound.ie/news/irish-fuel-prices-november-2026-ev-charging/) — **Wealth**
+- [Nvidia Creates National Security Committee: What It Means for NVDA Stock](https://compound.ie/news/nvidia-national-security-export-control-committee-2026/) — **Wealth**
 - [Nvidia Faces Fresh Huang Allegation: What the Governance Risk Means for Investors](https://compound.ie/news/nvidia-huang-governance-investor-risk/) — **Wealth**
 - [Nvidia Stock Guide: AI Chips, CUDA, Margins and Valuation](https://compound.ie/wealth/nvidia-ai-gpu-margins-2026/) — **Wealth**
 - [Nvidia's 75% gross margin: how much room is there for competition?](https://compound.ie/wealth/nvidia-gross-margin-ai-demand/) — **Wealth**
