@@ -28,7 +28,7 @@ def test_all_510_company_directory_entries_have_unique_valid_identity_and_readab
         assert isinstance(item["cik"], int) and item["cik"] > 0
         assert item["symbol"] in item["symbols"]
         assert item["sector"] and item["name"] and item["name"].strip() == item["name"]
-        assert not re.search(r"\\((?:The|Eli|Class [A-Z])\\)$", item["name"]), item
+        assert not re.search(r"\((?:The|Eli|Class [A-Z])\)$", item["name"]), item
     for item in extra:
         assert item["name"] and item["ticker"] and item["slug"] and item["source"].startswith("https://")
         assert item["name"].strip() == item["name"]
