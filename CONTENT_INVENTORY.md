@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 300
+- Published editorial articles and guides: 301
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 246
+## Wealth articles and guides — 247
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -261,6 +261,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Solicitor and Conveyancing in Ireland: Contracts, Title and Stamp Duty](https://compound.ie/wealth/solicitor-conveyancing-stamp-duty-ireland/)
 - [SpaceX Earnings: AI Drives Revenue Surge, but Cash Spending Remains Huge](https://compound.ie/wealth/spacex-ai-growth-cash-spending/)
 - [Starbucks Earnings: The Turnaround Looks Better Than the Revenue Headline](https://compound.ie/wealth/starbucks-earnings-turnaround-sales-china/)
+- [Starlink Mini 2: Price, Battery and What It Means for SpaceX and Tesla](https://compound.ie/news/starlink-mini-2-spacex-tesla-cost-stock-2026/)
 - [State Pension in Ireland: Rates, PRSI Rules & How to Qualify](https://compound.ie/wealth/state-pension-ireland/)
 - [State Pension set for at least €7.50 Budget 2027 rise: what it would mean](https://compound.ie/news/state-pension-increase-budget-2027-ireland/)
 - [Stripe Is Going Through HSBC's Banking App. Can That Change Small-Business Payments?](https://compound.ie/wealth/stripe-hsbc-tap-to-pay-bank-distribution-small-business/)

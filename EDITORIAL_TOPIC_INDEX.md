@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 300 published articles and guides, 64 tools,
+**Included:** 301 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -266,6 +266,7 @@ For the complete register (including 510+ company profiles), open
 - [SpaceX Earnings: AI Drives Revenue Surge, but Cash Spending Remains Huge](https://compound.ie/wealth/spacex-ai-growth-cash-spending/) — **Wealth**
 - [Standard drinks in Ireland: what a pint, glass of wine and spirit actually count as](https://compound.ie/health/standard-drinks-ireland-pints-wine-spirits/) — **Health**
 - [Starbucks Earnings: The Turnaround Looks Better Than the Revenue Headline](https://compound.ie/wealth/starbucks-earnings-turnaround-sales-china/) — **Wealth**
+- [Starlink Mini 2: Price, Battery and What It Means for SpaceX and Tesla](https://compound.ie/news/starlink-mini-2-spacex-tesla-cost-stock-2026/) — **Wealth**
 - [State Pension in Ireland: Rates, PRSI Rules & How to Qualify](https://compound.ie/wealth/state-pension-ireland/) — **Wealth**
 - [State Pension set for at least €7.50 Budget 2027 rise: what it would mean](https://compound.ie/news/state-pension-increase-budget-2027-ireland/) — **Wealth**
 - [Stress symptoms: how to recognise stress and what actually helps](https://compound.ie/life/stress-symptoms-what-helps-ireland/) — **Life**
