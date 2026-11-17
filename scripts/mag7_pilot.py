@@ -55,10 +55,17 @@ def clean(value: object) -> str:
 def latest_sec(ticker: str) -> dict:
     path = ROOT / "content" / "earnings-profiles" / (ticker.lower() + ".json")
     data = json.loads(path.read_text(encoding="utf-8"))
-    latest = data["latest"]
-    source = str(latest.get("source") or "")
-    if not source.startswith("https://www.sec.gov/Archives/"):
-        raise ValueError(f"Missing verified source for {ticker}")
+    # The newest reported quarter may be available only from an issuer press
+    # release. This research helper specifically requests the latest *SEC*
+    # baseline: use the newest actual SEC filing, never recast a release as one.
+    filed_periods = [p for p in (data.get("periods") or [])
+                     if str(p.get("source") or "").startswith("https://www.sec.gov/Archives/")]
+    latest = max(filed_periods,
+                 key=lambda p: (p.get("period_end", ""), p.get("filed", "")),
+                 default=None)
+    if latest is None:
+        raise ValueError(f"Missing verified SEC source for {ticker}")
+    source = str(latest["source"])
     metrics = latest["metrics"]
     lines = []
     for key, name, fmt in [
