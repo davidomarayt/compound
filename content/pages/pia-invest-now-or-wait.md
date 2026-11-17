@@ -75,7 +75,7 @@ The Government has announced a **€12,000 annual contribution limit**, a **€5
 <dt>Investment value before sale and exit tax</dt><dd data-piw-out="before-sale">€5,170</dd>
 <dt data-piw-out="asset-tax">Estimated CGT if sold</dt><dd data-piw-out="disposal-tax">€0</dd>
 <dt>Fixed purchase and sale fees</dt><dd data-piw-out="fees">€10</dd>
-<dt>Savings value before DIRT</dt><dd data-piw-out="cash-before">€5,061</dd>
+<dt>Savings value before DIRT</dt><dd data-piw-out="cash-before">€5,062</dd>
 <dt>Estimated DIRT (33% of gross interest)</dt><dd data-piw-out="dirt">€20</dd>
 <dt>Annual investment return needed to match cash</dt><dd data-piw-out="break-even">—</dd>
 </dl>
