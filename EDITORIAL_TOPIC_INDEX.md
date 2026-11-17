@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 305 published articles and guides, 64 tools,
+**Included:** 306 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -202,6 +202,7 @@ For the complete register (including 510+ company profiles), open
 - [November fuel prices fall slightly, but Irish public EV charging rises sharply](https://compound.ie/news/irish-fuel-prices-november-2026-ev-charging/) — **Wealth**
 - [Nvidia Creates National Security Committee: What It Means for NVDA Stock](https://compound.ie/news/nvidia-national-security-export-control-committee-2026/) — **Wealth**
 - [Nvidia Faces Fresh Huang Allegation: What the Governance Risk Means for Investors](https://compound.ie/news/nvidia-huang-governance-investor-risk/) — **Wealth**
+- [Nvidia Q3 Earnings: $115.8bn Sales, but Lower Q4 Margins Ahead](https://compound.ie/news/nvidia-q3-fy2027-earnings-numbers/) — **Wealth**
 - [Nvidia Stock Guide: AI Chips, CUDA, Margins and Valuation](https://compound.ie/wealth/nvidia-ai-gpu-margins-2026/) — **Wealth**
 - [Nvidia's 75% gross margin: how much room is there for competition?](https://compound.ie/wealth/nvidia-gross-margin-ai-demand/) — **Wealth**
 - [Nvidia’s next competitive test is software portability](https://compound.ie/wealth/nvidia-torchneuron-software-competition/) — **Wealth**

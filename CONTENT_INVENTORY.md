@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 305
+- Published editorial articles and guides: 306
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 251
+## Wealth articles and guides — 252
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -205,6 +205,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [November fuel prices fall slightly, but Irish public EV charging rises sharply](https://compound.ie/news/irish-fuel-prices-november-2026-ev-charging/)
 - [Nvidia Creates National Security Committee: What It Means for NVDA Stock](https://compound.ie/news/nvidia-national-security-export-control-committee-2026/)
 - [Nvidia Faces Fresh Huang Allegation: What the Governance Risk Means for Investors](https://compound.ie/news/nvidia-huang-governance-investor-risk/)
+- [Nvidia Q3 Earnings: $115.8bn Sales, but Lower Q4 Margins Ahead](https://compound.ie/news/nvidia-q3-fy2027-earnings-numbers/)
 - [Nvidia Stock Guide: AI Chips, CUDA, Margins and Valuation](https://compound.ie/wealth/nvidia-ai-gpu-margins-2026/)
 - [Nvidia's 75% gross margin: how much room is there for competition?](https://compound.ie/wealth/nvidia-gross-margin-ai-demand/)
 - [Nvidia’s next competitive test is software portability](https://compound.ie/wealth/nvidia-torchneuron-software-competition/)
