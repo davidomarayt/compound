@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-18",
+  "status": "proposed",
+  "scan_since": "2026-11-11",
+  "scope": "Existing earnings pages; owner-authorised NVIDIA one-off article already published, updated at same URL",
+  "companies": {
+    "NVDA": {
+      "canonical_urls": [
+        "https://compound.ie/stocks/nvda/",
+        "https://compound.ie/news/nvidia-q3-fy2027-earnings-numbers/"
+      ],
+      "period": "Q3 FY2027 ended 2026-10-25",
+      "primary_sources": [
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/nvda-20261117.htm",
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm",
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm",
+        "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+      ],
+      "verified_gaap": {
+        "revenue_usd": 115844000000,
+        "net_income_usd": 65287000000,
+        "diluted_eps_usd": 2.7
+      },
+      "claim_checks": "8-K identity, reporting period and Exhibit 99.1 verified. SEC exhibit agrees with issuer release. Income statement amounts in millions converted to USD. Net margins independently calculated 56.4%,62.0%,56.0% for Q3,Q2 and prior-year Q3. Equity securities gains 1.767bn versus7.771bn verified. Previous108bn guidance verified against Q2 SEC exhibit. Data Center is a market platform, distinct from reportable segments.",
+      "image": "Existing archival Gavin Phillips NVIDIA graphics-card photo under Unsplash License, pinned metadata retained. Live social image fetched HTTP200 image/webp."
+    }
+  },
+  "checks": {
+    "offline_tests": "32 passed",
+    "build": "pending",
+    "duplicate": "Existing published article found in index, inventory and source. Update original URL. No overlapping open PR.",
+    "concurrency": "No running workflow at pre-write read. Existing compound-earnings-publisher controls retained.",
+    "human_review": "No human approval asserted."
+  },
+  "coverage": "Universe scan in progress; previous unresolved BRK-B/VMRK retained pending reconciliation."
+}
