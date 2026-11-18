@@ -29,7 +29,7 @@ For the complete register (including 510+ company profiles), open
 - [An Post now lets you send small tracked parcels from 2,600 postboxes](https://compound.ie/news/an-post-postbox-drop-off-small-parcels-2026/) — **Wealth**
 - [Anthropic IPO by the Numbers: The $61 Billion Share Sale, $900 Billion Compute Bet and Valuation Test](https://compound.ie/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/) — **Wealth**
 - [Anthropic Lets Customers Pay for Claude Usage Inside Other Apps. Who Keeps the Margin?](https://compound.ie/wealth/anthropic-linked-billing-api-customer-pays-agent-economics/) — **Wealth**
-- [Anthropic Prices IPO at $83 a Share Ahead of Nasdaq Debut, Bloomberg Reports](https://compound.ie/news/anthropic-ipo-pricing-nasdaq/) — **Wealth**
+- [Anthropic Prices IPO at $83 a Share Ahead of Nasdaq Debut](https://compound.ie/news/anthropic-ipo-pricing-nasdaq/) — **Wealth**
 - [Anthropic Wants Claude to Work During Meetings. Will That Reduce the Follow-Up?](https://compound.ie/wealth/anthropic-claude-meetings-live-work-enterprise-economics/) — **Wealth**
 - [Anthropic's Always-On Agent Blueprint: The Hidden Costs Are Permissions and Recovery](https://compound.ie/wealth/anthropic-always-on-agents-business-case-permissions-cost/) — **Wealth**
 - [Anthropic's Anvil Found AI Safeguard Gaps Faster Than Human Testers. What Is That Worth?](https://compound.ie/wealth/anthropic-anvil-automated-red-teaming-safety-economics/) — **Wealth**
