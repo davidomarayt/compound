@@ -101,7 +101,7 @@ For the complete register (including 510+ company profiles), open
 - [GLP-1s and pregnancy: Ozempic, Wegovy, Mounjaro and what the evidence says](https://compound.ie/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/) — **Health**
 - [Government considers extending petrol and diesel excise cuts into spring](https://compound.ie/news/petrol-diesel-excise-cuts-ev-costs-ireland/) — **Wealth**
 - [Government revises public sector pay offer ahead of 12 November strike](https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/) — **Wealth**
-- [GTA VI and TTWO: The Case for One of Entertainment's Biggest Launches](https://compound.ie/wealth/ttwo-gta-6-entertainment-launch-revenue/) — **Wealth**
+- [GTA 6 Release: How Many Copies Could It Sell and What Does It Mean for TTWO?](https://compound.ie/wealth/ttwo-gta-6-entertainment-launch-revenue/) — **Wealth**
 - [Health for a 100-Year Life: Staying Capable, Connected and Well](https://compound.ie/health/health-for-a-100-year-life/) — **Health**
 - [Health Insurance in Ireland: Costs, Cover & How to Choose a Plan](https://compound.ie/wealth/health-insurance-ireland/) — **Wealth**
 - [Health insurance prices are rising — but some plan benefits are being cut](https://compound.ie/news/health-insurance-price-rises-benefit-cuts-ireland/) — **Wealth**

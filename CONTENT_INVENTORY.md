@@ -128,7 +128,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Gilead Earnings: Strong HIV Sales, but Acquisitions Reshape the Profit Story](https://compound.ie/wealth/gilead-earnings-hiv-growth-acquisition-cost/)
 - [Government considers extending petrol and diesel excise cuts into spring](https://compound.ie/news/petrol-diesel-excise-cuts-ev-costs-ireland/)
 - [Government revises public sector pay offer ahead of 12 November strike](https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/)
-- [GTA VI and TTWO: The Case for One of Entertainment's Biggest Launches](https://compound.ie/wealth/ttwo-gta-6-entertainment-launch-revenue/)
+- [GTA 6 Release: How Many Copies Could It Sell and What Does It Mean for TTWO?](https://compound.ie/wealth/ttwo-gta-6-entertainment-launch-revenue/)
 - [Health Insurance in Ireland: Costs, Cover & How to Choose a Plan](https://compound.ie/wealth/health-insurance-ireland/)
 - [Health insurance prices are rising — but some plan benefits are being cut](https://compound.ie/news/health-insurance-price-rises-benefit-cuts-ireland/)
 - [Heat Pumps in Ireland: Costs, Grants, Running Costs & Suitability](https://compound.ie/wealth/heat-pumps-ireland/)
