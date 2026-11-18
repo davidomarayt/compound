@@ -5,7 +5,7 @@
   "production_branch": "claude/clever-babbage-uibieq",
   "work_branch": "automation/private-company-2026-11-18",
   "target_new_articles": 3,
-  "status": "prepared_pending_pr_ci",
+  "status": "merged_pending_production_live_verification",
   "confirmed_live_new_articles": 0,
   "human_editorial_status": "not_reviewed_by_human",
   "ads_policy": "Standard AdSense ads from publication irrespective of review, preserve CMP; verify production loader",
@@ -46,8 +46,8 @@
       "ads_presence_verified": false,
       "live_http_verified": false,
       "verified_live_result": null,
-      "deployment_status": "not_deployed",
-      "status": "prepared_pending_ci"
+      "deployment_status": "merged_site_verification_pending",
+      "status": "merged_pending_live_verification"
     },
     {
       "company": "Anthropic",
@@ -78,8 +78,8 @@
       "ads_presence_verified": false,
       "live_http_verified": false,
       "verified_live_result": null,
-      "deployment_status": "not_deployed",
-      "status": "prepared_pending_ci"
+      "deployment_status": "merged_site_verification_pending",
+      "status": "merged_pending_live_verification"
     },
     {
       "company": "Revolut",
@@ -111,8 +111,8 @@
       "ads_presence_verified": false,
       "live_http_verified": false,
       "verified_live_result": null,
-      "deployment_status": "not_deployed",
-      "status": "prepared_pending_ci"
+      "deployment_status": "merged_site_verification_pending",
+      "status": "merged_pending_live_verification"
     }
   ],
   "profile_updates": [
@@ -139,9 +139,16 @@
     }
   ],
   "production_deployment": {
-    "status": "not_started",
+    "status": "merge_completed_github_pages_live_verification_pending",
+    "merge_pr": 170,
+    "publication_commit": "939421d4038b7d5fa9929743938d40f03cf5ce53",
+    "ci_head": "ee2c87a7ee63d72f3fc4f1ff6d08d08a2f721d5f",
+    "ci_run": 44256323638,
+    "ci_test": "success",
+    "ci_performance": "success",
     "confirmed_live_urls": 0,
-    "branch_protection": "Not configured on recent runs; exact-head CI gate required before any merge"
+    "branch_protection": "Not configured; equivalent exact-head release checks passed",
+    "verification_note": "Do not infer deployment or article public accessibility from PR merge and CI. Await actual GitHub Pages site build/deploy and per-canonical curl verification of HTML, cover, OG/Twitter, profile backlink and ad loader."
   },
   "updated_at_utc": "2026-11-18"
 }
