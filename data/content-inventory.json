@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-11-17",
+  "snapshot_date": "2026-11-18",
   "source": "Compound.ie GitHub publishing files",
   "sections": {
     "articles": [
@@ -290,6 +290,29 @@
           "investing",
           "stock-market",
           "prospectus"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Anthropic Lets Customers Pay for Claude Usage Inside Other Apps. Who Keeps the Margin?",
+        "url": "/wealth/anthropic-linked-billing-api-customer-pays-agent-economics/",
+        "source": "content/wealth/anthropic-linked-billing-api-customer-pays-agent-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "anthropic-linked-billing-api-customer-pays-agent-economics",
+        "date": "2026-11-18",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-anthropic",
+          "anthropic",
+          "claude",
+          "api-billing",
+          "saas",
+          "enterprise-ai",
+          "developer-economics"
         ],
         "status": "published"
       },
@@ -3863,6 +3886,28 @@
         "status": "published"
       },
       {
+        "title": "OpenAI Says NATO Used Up to 300 Billion Tokens a Month. What Does That Prove?",
+        "url": "/wealth/openai-nato-cybersecurity-300-billion-tokens-economics/",
+        "source": "content/wealth/openai-nato-cybersecurity-300-billion-tokens-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-nato-cybersecurity-300-billion-tokens-economics",
+        "date": "2026-11-18",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "cybersecurity",
+          "nato",
+          "enterprise-ai",
+          "government-procurement"
+        ],
+        "status": "published"
+      },
+      {
         "title": "OpenAI Tested AI on 100 Real Lab Tasks. The Hard Problem Is Knowing When Not to Trust It",
         "url": "/wealth/openai-biobasicsbench-wet-lab-ai-evidence-reliability/",
         "source": "content/wealth/openai-biobasicsbench-wet-lab-ai-evidence-reliability.md",
@@ -4632,6 +4677,29 @@
           "unauthorised-development",
           "property",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Revolut Faces a Year of Italian Supervision. What Does That Mean for Its Growth?",
+        "url": "/wealth/revolut-italy-judicial-supervision-aml-growth-costs/",
+        "source": "content/wealth/revolut-italy-judicial-supervision-aml-growth-costs.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "revolut-italy-judicial-supervision-aml-growth-costs",
+        "date": "2026-11-18",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-revolut",
+          "revolut",
+          "italian-banking",
+          "regulation",
+          "aml",
+          "fintech",
+          "compliance"
         ],
         "status": "published"
       },
