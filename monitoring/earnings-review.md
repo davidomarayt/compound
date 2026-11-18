@@ -1,15 +1,23 @@
 # Compound company review queue
 
-Checked: 2026-11-17
+Checked: 2026-11-18
 
 - 499 saved profiles checked against structural and issuer rules.
-- 104 existing company articles; 83 mapped to monitored issuers.
-- 97 pending review items; 17 recorded decisions.
+- 109 existing company articles; 85 mapped to monitored issuers.
+- 103 pending review items; 17 recorded decisions.
 
 This is a review queue, not a claim that every figure or source has been independently verified.
 The existing SEC monitor updates company datasets. This job never edits or publishes articles.
 
 ## Pending work
+
+### NVDA · profile_integrity · high
+
+ID: `e685379f084f8bb52b4579d6`
+
+Missing or invalid report/end dates; Source URL does not match the issuer and filing accession; Unsupported filing form in SEC quarterly dataset
+
+Files: `content/earnings-profiles/nvda.json`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -69,6 +77,14 @@ Files: `content/wealth/anthropic-claude-meetings-live-work-enterprise-economics.
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `599619534c0f5ef04be07509`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/openai-nato-cybersecurity-300-billion-tokens-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `6605e416085729d965f45d56`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
@@ -109,11 +125,27 @@ Files: `content/wealth/bytedance-400-billion-buyback-private-ipo-liquidity.md`
 
 ### UNMAPPED · article_mapping · medium
 
+ID: `88b03a85f03510b3801dd389`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/anthropic-linked-billing-api-customer-pays-agent-economics.md`
+
+### UNMAPPED · article_mapping · medium
+
 ID: `917d8a920f4985a8f7625a86`
 
 Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
 
 Files: `content/wealth/databricks-three-billion-emea-investment-agent-platform-distribution.md`
+
+### UNMAPPED · article_mapping · medium
+
+ID: `ab7973030276f5a820000905`
+
+Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.
+
+Files: `content/wealth/revolut-italy-judicial-supervision-aml-growth-costs.md`
 
 ### UNMAPPED · article_mapping · medium
 
@@ -401,7 +433,7 @@ Saved evidence: https://www.sec.gov/Archives/edgar/data/1318605/0001628280260667
 
 ### TTWO · article_review · medium
 
-ID: `a7e650e6db0e43210bdb80f8`
+ID: `885f85e4ab706761f113daba`
 
 Newer filing than the article review date; assess whether claims or outlook need updating.
 
@@ -725,6 +757,16 @@ Saved evidence: https://www.sec.gov/Archives/edgar/data/865752/00011046592612350
 
 ### MSFT · article_review · low
 
+ID: `3e6c282c0fd85b798a7b29ab`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/openai-gpt-6-2-astra-sol-pricing-performance-2026.md`, `content/earnings-profiles/msft.json`
+
+Saved evidence: https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm · Q1 FY2027 · period end 2026-09-30 · filed 2026-10-28
+
+### MSFT · article_review · low
+
 ID: `48104abec897073954b6b863`
 
 Baseline consistency review of this article against the saved company results and its original sources.
@@ -765,53 +807,63 @@ Saved evidence: https://www.sec.gov/Archives/edgar/data/320187/00003201872600019
 
 ### NVDA · article_review · low
 
-ID: `1a9aeef169d8057af6a614e4`
+ID: `45304ab81e3874b63a6e2125`
 
 Baseline consistency review of this article against the saved company results and its original sources.
 
-Files: `content/wealth/nvidia-ai-gpu-margins-2026.md`, `content/earnings-profiles/nvda.json`
+Files: `content/wealth/nvidia-q3-fy2027-earnings-numbers.md`, `content/earnings-profiles/nvda.json`
 
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm · Q2 FY2027 · period end 2026-07-26 · filed 2026-08-26
-
-### NVDA · article_review · low
-
-ID: `4f830f2bc178b749f0d81cbd`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/nokia-ai-growth-cash-flow.md`, `content/earnings-profiles/nvda.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm · Q2 FY2027 · period end 2026-07-26 · filed 2026-08-26
+Saved evidence: https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027 · Q3 FY2027 · period end 2026-10-25 · filed 
 
 ### NVDA · article_review · low
 
-ID: `a39fce867424eb61d77bbc8b`
-
-Baseline consistency review of this article against the saved company results and its original sources.
-
-Files: `content/wealth/nvidia-torchneuron-software-competition.md`, `content/earnings-profiles/nvda.json`
-
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm · Q2 FY2027 · period end 2026-07-26 · filed 2026-08-26
-
-### NVDA · article_review · low
-
-ID: `d079e8ae9d0216000899a4c9`
+ID: `4c1c58c7e945862f524a6f50`
 
 Baseline consistency review of this article against the saved company results and its original sources.
 
 Files: `content/wealth/nvidia-warranty-reserve.md`, `content/earnings-profiles/nvda.json`
 
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm · Q2 FY2027 · period end 2026-07-26 · filed 2026-08-26
+Saved evidence: https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027 · Q3 FY2027 · period end 2026-10-25 · filed 
 
 ### NVDA · article_review · low
 
-ID: `d3aab0289868f60a083c6cd5`
+ID: `b3e4675e8399f19637974d47`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/nvidia-ai-gpu-margins-2026.md`, `content/earnings-profiles/nvda.json`
+
+Saved evidence: https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027 · Q3 FY2027 · period end 2026-10-25 · filed 
+
+### NVDA · article_review · low
+
+ID: `d3431fdf18f144486c1f9172`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/nvidia-torchneuron-software-competition.md`, `content/earnings-profiles/nvda.json`
+
+Saved evidence: https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027 · Q3 FY2027 · period end 2026-10-25 · filed 
+
+### NVDA · article_review · low
+
+ID: `dba421ee79cc2034986d76b4`
 
 Baseline consistency review of this article against the saved company results and its original sources.
 
 Files: `content/wealth/nvidia-gross-margin-ai-demand.md`, `content/earnings-profiles/nvda.json`
 
-Saved evidence: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm · Q2 FY2027 · period end 2026-07-26 · filed 2026-08-26
+Saved evidence: https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027 · Q3 FY2027 · period end 2026-10-25 · filed 
+
+### NVDA · article_review · low
+
+ID: `fd770fcb9cf63dc1e49cd4e4`
+
+Baseline consistency review of this article against the saved company results and its original sources.
+
+Files: `content/wealth/nokia-ai-growth-cash-flow.md`, `content/earnings-profiles/nvda.json`
+
+Saved evidence: https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027 · Q3 FY2027 · period end 2026-10-25 · filed 
 
 ### ON · article_review · low
 
