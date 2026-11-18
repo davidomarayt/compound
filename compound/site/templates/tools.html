@@ -4,7 +4,7 @@
 {% block head %}
 <link rel="canonical" href="{{ site_url }}/tools/">
 <meta property="og:type" content="website"><meta property="og:title" content="Compound Tools — Free Calculators for Ireland"><meta property="og:description" content="Practical calculators built for everyday decisions in Ireland."><meta property="og:url" content="{{ site_url }}/tools/">
-<link rel="stylesheet" href="/static/tools.css?v=20260922-gold2"><script defer src="/static/tools.js?v=20260922-gold2"></script>
+<link rel="stylesheet" href="/static/tools.css?v=20261118-search-feedback"><script defer src="/static/tools.js?v=20261118-search-feedback"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Compound Tools","url":"{{ site_url }}/tools/","description":"Free calculators and planning tools for Ireland.","publisher":{"@type":"Organization","name":"Compound","url":"{{ site_url }}"}}</script>
 {% endblock %}
 {% block content %}
@@ -13,7 +13,8 @@
     <p class="eyebrow">COMPOUND TOOLS</p>
     <h1>Useful numbers, without the spreadsheet.</h1>
     <p>Free calculators for money, property, home energy and everyday health decisions in Ireland. No account. No form submission. Your entries stay in your browser.</p>
-    <label class="tool-search"><span class="sr-only">Search tools</span><input type="search" placeholder="Search mortgage, nutrition, pregnancy, VAT, solar…" data-tool-search></label>
+    <label class="tool-search" for="tool-directory-search"><span class="sr-only">Search calculators and tools</span><input id="tool-directory-search" type="search" placeholder="Search mortgage, nutrition, pregnancy, VAT, solar…" aria-describedby="tool-search-feedback" data-tool-search></label>
+    <p id="tool-search-feedback" class="tool-search-feedback" data-tool-search-status role="status" aria-live="polite" aria-atomic="true">Search by name or topic to narrow the calculator directory.</p>
     <a href="/wheres-my-money/" class="tools-flagship" data-tool-card data-tool-text="where does my tax go public spending ireland tax receipt government budget salary">
       <span class="tools-flagship-label">FLAGSHIP INTERACTIVE · NEW</span>
       <strong>Where's My Money?</strong>
