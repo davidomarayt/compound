@@ -3,9 +3,9 @@
   "date": "2026-11-18",
   "company": "Eli Lilly and Company",
   "ticker": "LLY",
-  "status": "prepared",
-  "publication_state": "not_live",
-  "new_articles_published": 0,
+  "status": "published",
+  "publication_state": "live_verified",
+  "new_articles_published": 1,
   "canonical_updates_published": 0,
   "article_path": "content/wealth/lilly-jardiance-milestone-revenue.md",
   "canonical_url": "https://compound.ie/wealth/lilly-jardiance-milestone-revenue/",
@@ -19,7 +19,8 @@
   "duplicate_checks": [
     "Read AGENTS.md, editorial index, CONTENT_INVENTORY and JSON; searched Lilly source articles, recent content and company publication ledgers; no 18 November Mag8 or legacy Mag7 publication found.",
     "Morning batch OpenAI NATO, Anthropic linked billing and Revolut Italy; recent manual GTA6 and SLAB content unrelated. Open PRs checked: no Lilly or Jardiance work.",
-    "Live LLY profile, Mounjaro China and METiS articles fetched; new angle is incoming exhausted milestones, not outgoing contingent research payments, China access or earnings recap."
+    "Live LLY profile, Mounjaro China and METiS articles fetched; new angle is incoming exhausted milestones, not outgoing contingent research payments, China access or earnings recap.",
+    "FairPath recent PRs 18-20 cover care-report catalogue, mealtime choices and operator health check; no same audience question or financial thesis."
   ],
   "claim_checks": [
     "10-Q Note 3: Q3 Jardiance 1578/959 USD million; milestones 410/200; residual 1168/759. Reported 619/959=64.5464%; residual 409/759=53.8867%; milestone delta 210/619=33.9257%.",
@@ -40,11 +41,73 @@
     "human_reviewed_at": null,
     "ads": "Standard ads from publication; preserve consent.",
     "accuracy": "Second arithmetic pass; source vs calculation vs hypothetical explicitly distinguished; current period and filing dates checked.",
-    "release_gates_pending": [
-      "rendered crop inspection",
-      "CI",
-      "deployment",
-      "live page, social image, ads, sitemap, discovery verification"
+    "release_gates_pending": [],
+    "validation": [
+      "10 focused tests passed; exact-head full test/performance CI passed.",
+      "Production build, deploy, verify-live, finance discovery and mobile audit all passed.",
+      "Wide and square generated crops inspected; fetched live social image inspected; product identification readable.",
+      "Fetched canonical, story text, neutral attribution, article Auto Ads loader, LLY profile loader and configured slots, profile backlink, sitemap, finance JSON and directory verified."
     ]
-  }
+  },
+  "live_verification": {
+    "verified_at": "2026-11-18T18:24:10.535885+00:00",
+    "url": "https://compound.ie/wealth/lilly-jardiance-milestone-revenue/",
+    "canonical": true,
+    "article_text": true,
+    "neutral_attribution": true,
+    "article_ad_loader": true,
+    "article_slots": "No manual article slots configured; standard Auto Ads loader present.",
+    "profile_ad_loader": true,
+    "profile_slots": [
+      "2138650464",
+      "8512487125"
+    ],
+    "stock_backlink": true,
+    "social_image": "https://compound.ie/static/discover/lilly-jardiance-milestone-revenue-16x9.webp",
+    "social_sha256": "9a3ce6ad8db14a74f3b238fcc02981485da228eaf2c381540fae6429aa1b5836",
+    "hero_sha256": "383a75d6f65357cc110ef04c40e40da65d8d0d687c4d70905771e8956b295b44",
+    "sitemap": true,
+    "finance_catalogue": true,
+    "finance_directory": true
+  },
+  "pull_requests": [
+    {
+      "number": 173,
+      "url": "https://github.com/davidomarayt/compound/pull/173",
+      "head": "f4612428148911e0863e1baf7c9b0baeb652ecf2",
+      "merge": "79c2ae08b461c391c04b001243ce59af66549f06",
+      "ci_run": 44366073719,
+      "ci": "success",
+      "site_run": 44368184513,
+      "site": "success"
+    }
+  ],
+  "deployment_jobs": [
+    {
+      "id": 135027550073,
+      "name": "build",
+      "conclusion": "success"
+    },
+    {
+      "id": 135030888373,
+      "name": "deploy",
+      "conclusion": "success"
+    },
+    {
+      "id": 135031157002,
+      "name": "verify-finance-discovery",
+      "conclusion": "success"
+    },
+    {
+      "id": 135031157043,
+      "name": "verify-live",
+      "conclusion": "success"
+    },
+    {
+      "id": 135031157049,
+      "name": "mobile-audit",
+      "conclusion": "success"
+    }
+  ],
+  "outcome_notes": "Exactly one new Mag8 article for 18 November 2026. No paid LLM API or social posting; no schedule changes. Actual human review not claimed. Standard ads enabled from publication; no impression-fill claim."
 }
