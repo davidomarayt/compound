@@ -5,8 +5,8 @@
   "production_branch": "claude/clever-babbage-uibieq",
   "work_branch": "automation/private-company-2026-11-17",
   "target_new_articles": 3,
-  "status": "deployed_individual_live_urls_unverified",
-  "confirmed_live_new_articles": 0,
+  "status": "published_verified_live_via_github_runner",
+  "confirmed_live_new_articles": 3,
   "human_editorial_status": "not_reviewed_by_human",
   "ads_policy": "Standard site ads required from publication independent of review; CMP preserved",
   "editorial_quality_gate": "Independent primary-source checks 10/11/12/16 Nov; authentic separately licensed real archival photos. PR exact-head CI and production canonical/cover/social/profile/ad verification required.",
@@ -42,13 +42,13 @@
       "profile_url": "https://compound.ie/companies/openai/",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": null,
-      "deployment_status": "github_pages_deployed_site_checks_passed_individual_unverified",
-      "status": "deployed_pending_individual_live_verification"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS via GitHub runner live-curl; job 133884020718 2026-11-17T07:21:46Z",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "status": "published_verified_live"
     },
     {
       "company": "Anthropic",
@@ -75,13 +75,13 @@
       "profile_url": "https://compound.ie/companies/anthropic/",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": null,
-      "deployment_status": "github_pages_deployed_site_checks_passed_individual_unverified",
-      "status": "deployed_pending_individual_live_verification"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS via GitHub runner live-curl; job 133884020718 2026-11-17T07:21:46Z",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "status": "published_verified_live"
     },
     {
       "company": "Databricks",
@@ -110,13 +110,13 @@
       "profile_url": "https://compound.ie/companies/databricks/",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": null,
-      "deployment_status": "github_pages_deployed_site_checks_passed_individual_unverified",
-      "status": "deployed_pending_individual_live_verification"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS via GitHub runner live-curl; job 133884020718 2026-11-17T07:21:46Z",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "status": "published_verified_live"
     }
   ],
   "profile_updates": [
@@ -141,7 +141,7 @@
     }
   ],
   "production_deployment": {
-    "status": "github_pages_deploy_success_site_live_generic_check_success_individual_pages_unverified",
+    "status": "github_pages_deployed_three_canonical_articles_verified",
     "merge_pr": 158,
     "publication_commit": "bc47bfcd94195d21e51c186afb55bd092766048e",
     "ci_run": 44035520107,
@@ -149,13 +149,16 @@
     "ci_test": "success",
     "ci_performance": "success",
     "site_run": 44036731059,
-    "confirmed_live_urls": 0,
+    "confirmed_live_urls": 3,
     "branch_protection": "Not configured; exact PR-head equivalent gate succeeded",
-    "verification_note": "GitHub Pages build/deploy and public generic-site verification succeeded for commit bc47bfcd...; build verified pinned licensed photos, canonical/social tags, ads and company backlinks in generated static files. However, web fetch for each of the three NEW canonical article URLs returned inaccessible; their individual live HTML, actual image URLs and ads have NOT been independently fetched. Count 0 confirmed per policy.",
+    "verification_note": "GitHub Pages mobile-audit job 133884020718, site workflow run 44036731059, at 2026-11-17T07:21:46Z ran scripts/verify_private_company_live.py against actual https://compound.ie and logged PASS for each of the three exact canonical URLs, photo JPEG, OG/Twitter WebP, company backlink and Adsense loader. General deployment job 133883868779 succeeded for merge bc47bfcd94195d21e51c186afb55bd092766048e.",
     "github_pages_site_run": 44036731059,
     "github_pages_build": "success",
     "github_pages_deploy": "success",
-    "generic_live_checks": "success"
+    "generic_live_checks": "success",
+    "independent_live_verification_job_id": 133884020718,
+    "independent_live_verification_run_id": 44036731059
   },
-  "updated_at_utc": "2026-11-17"
+  "updated_at_utc": "2026-11-18",
+  "verified_live_at_utc": "2026-11-17T07:21:46Z"
 }
