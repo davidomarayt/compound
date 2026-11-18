@@ -2,33 +2,33 @@
   "cik": 1048695,
   "company": "F5, Inc.",
   "latest": {
-    "accession": "0001048695-26-000067",
-    "filed": "2026-08-06",
-    "form": "10-Q",
-    "fp": "Q3",
+    "accession": "0001048695-26-000077",
+    "filed": "2026-11-17",
+    "form": "10-K",
+    "fp": "FY",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 3.62,
-        "prior_year": 3.25,
+        "current": 12.52,
+        "prior_year": 11.8,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 208208000,
-        "prior_year": 189912000,
+        "current": 722149000,
+        "prior_year": 692380000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 865077000,
-        "prior_year": 780370000,
+        "current": 3416669000,
+        "prior_year": 3088072000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/1048695/000104869526000067/ffiv-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/1048695/000104869526000077/ffiv-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/1048695/000104869526000067/ffiv-20260630.htm"
+    },
+    {
+      "accession": "0001048695-26-000077",
+      "filed": "2026-11-17",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 12.52,
+          "prior_year": 11.8,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 722149000,
+          "prior_year": 692380000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3416669000,
+          "prior_year": 3088072000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/1048695/000104869526000077/ffiv-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "FFIV",
-  "updated": "2026-10-15"
+  "updated": "2026-11-18"
 }

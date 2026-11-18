@@ -2,33 +2,33 @@
   "cik": 858877,
   "company": "Cisco",
   "latest": {
-    "accession": "0000858877-26-000132",
-    "filed": "2026-09-02",
-    "form": "10-K",
-    "fp": "FY",
-    "fy": 2026,
+    "accession": "0000858877-26-000185",
+    "filed": "2026-11-17",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 3.33,
-        "prior_year": 2.55,
+        "current": 1.14,
+        "prior_year": 0.72,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 13267000000,
-        "prior_year": 10180000000,
+        "current": 4552000000,
+        "prior_year": 2860000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 63325000000,
-        "prior_year": 56654000000,
+        "current": 18517000000,
+        "prior_year": 14883000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-25",
-    "source": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm"
+    "period_end": "2026-10-24",
+    "source": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000185/csco-20261024.htm"
   },
   "periods": [
     {
@@ -117,9 +117,38 @@
       },
       "period_end": "2026-07-25",
       "source": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm"
+    },
+    {
+      "accession": "0000858877-26-000185",
+      "filed": "2026-11-17",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 1.14,
+          "prior_year": 0.72,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 4552000000,
+          "prior_year": 2860000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 18517000000,
+          "prior_year": 14883000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-24",
+      "source": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000185/csco-20261024.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "CSCO",
-  "updated": "2026-10-15"
+  "updated": "2026-11-18"
 }
