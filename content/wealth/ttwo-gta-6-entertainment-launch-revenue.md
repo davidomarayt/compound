@@ -97,4 +97,6 @@ Take-Two’s net bookings track commercial activity, including digital sales and
 
 The longer-term question is how well sales hold after the holidays and whether Rockstar can turn that audience into recurring spending. Recurrent consumer spending accounted for **81% of group bookings in the September quarter**, which shows how much ongoing engagement already matters to Take-Two across its portfolio. A future online offering could expand GTA 6’s financial contribution. This model assigns it no value until Rockstar provides enough detail on timing and monetisation. [Take-Two’s November results](https://ir.take2games.com/node/32676/pdf)
 
+For a longer-term scenario, use the [GTA 6 100-million-copy valuation calculator](/wealth/gta-6-100-million-ttwo-valuation/) to see how different sales assumptions could affect Take-Two earnings and the value per share.
+
 Follow the latest company results on Compound’s [Take-Two Interactive stock page](/stocks/ttwo/).

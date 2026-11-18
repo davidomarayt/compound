@@ -1,0 +1,129 @@
+.article-prose .ttwo-model {
+  --ttwo-line: #cedbd3;
+  --ttwo-ink: #17372c;
+  --ttwo-muted: #476158;
+  --ttwo-ground: #f2f7f2;
+  color: var(--ttwo-ink);
+  background: var(--ttwo-ground);
+  border: 1px solid var(--ttwo-line);
+  border-radius: 1rem;
+  margin: 1rem 0 2rem;
+  padding: clamp(1rem, 3vw, 1.6rem);
+}
+
+.ttwo-model fieldset {
+  border: 0;
+  min-width: 0;
+  margin: 0 0 1.2rem;
+  padding: 0;
+}
+
+.ttwo-model legend {
+  font-weight: 750;
+  margin-bottom: .55rem;
+}
+
+.ttwo-model-grid,
+.ttwo-model-results {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .75rem;
+}
+
+.ttwo-model label {
+  display: block;
+  color: var(--ttwo-muted);
+  font-size: .89rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.ttwo-model input {
+  display: block;
+  box-sizing: border-box;
+  background: #fff;
+  color: var(--ttwo-ink);
+  border: 1px solid #8da69a;
+  border-radius: .45rem;
+  width: 100%;
+  margin-top: .25rem;
+  padding: .45rem .6rem;
+  min-height: 2.6rem;
+  font: inherit;
+  font-size: 1rem;
+}
+
+.ttwo-model details {
+  border-top: 1px solid var(--ttwo-line);
+  padding-top: .6rem;
+  margin: 0 0 1rem;
+}
+
+.ttwo-model summary {
+  cursor: pointer;
+  font-weight: 700;
+  margin-bottom: .6rem;
+}
+
+.ttwo-model button {
+  background: #fff;
+  color: var(--ttwo-ink);
+  border: 1px solid #8da69a;
+  border-radius: .45rem;
+  padding: .45rem .7rem;
+  min-height: 2.5rem;
+  font: inherit;
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+.ttwo-model :is(input, button, summary):focus-visible {
+  outline: 3px solid #406d59;
+  outline-offset: 2px;
+}
+
+.ttwo-model-results {
+  margin: 1rem 0 0;
+}
+
+.ttwo-model-results[hidden],
+.ttwo-model-status:empty {
+  display: none;
+}
+
+.ttwo-model-results > div {
+  padding: .65rem .75rem;
+  border-radius: .45rem;
+  border: 1px solid var(--ttwo-line);
+  background: #fff;
+}
+
+.ttwo-model-results > div:first-child {
+  background: #17372c;
+  color: #fff;
+}
+
+.ttwo-model-results dt {
+  font-size: .84rem;
+  line-height: 1.35;
+}
+
+.ttwo-model-results dd {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+
+.ttwo-model-status {
+  margin: .6rem 0 0;
+  color: var(--ttwo-muted);
+  font-size: .87rem;
+}
+
+@media (max-width: 460px) {
+  .ttwo-model-grid,
+  .ttwo-model-results {
+    grid-template-columns: 1fr;
+  }
+}
