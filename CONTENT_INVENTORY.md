@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 310
+- Published editorial articles and guides: 311
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 64
 - Embedded tool-guide files: 57
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 256
+## Wealth articles and guides — 257
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -293,6 +293,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What did Lilly gain by accepting a lower Mounjaro price in China?](https://compound.ie/wealth/lilly-mounjaro-china-reimbursement/)
 - [What does Nvidia’s $2.94 billion warranty reserve tell investors?](https://compound.ie/wealth/nvidia-warranty-reserve/)
 - [What Happens If You Die Without a Will in Ireland?](https://compound.ie/wealth/what-happens-if-you-die-without-a-will-ireland/)
+- [What if GTA 6 sells 100 million copies? A Take-Two stock valuation](https://compound.ie/wealth/gta-6-100-million-ttwo-valuation/)
 - [What Is a REIT? How Property Investing Can Generate Income and Growth](https://compound.ie/wealth/what-is-a-reit/)
 - [What would an extra €100 a month do to your mortgage?](https://compound.ie/wealth/mortgage-overpayments-100-euro-ireland/)
 - [When Can You Access Your Pension in Ireland? Retirement Options Explained](https://compound.ie/wealth/when-can-i-access-pension-ireland/)
