@@ -3,7 +3,7 @@
   "timezone": "Europe/Dublin",
   "run_type": "pia_content_growth",
   "topic_fingerprint": "2026-11-05-pia-fee-disclosure-proposal-committee-vote-cost-comparison",
-  "status": "merged_pending_production_verification",
+  "status": "public_canonical_updated_content_verified_full_asset_ad_audit_pending",
   "action": "substantive_update_existing_canonical",
   "new_articles": 0,
   "canonical_url": "https://compound.ie/pia/compare-fee-quotes/",
@@ -59,7 +59,16 @@
     "ads": "not_verified"
   },
   "production_verified": false,
-  "verified_live_result": null,
+  "verified_live_result": {
+    "verification_date": "2026-11-18",
+    "method": "independent live canonical HTML fetch via web reader",
+    "canonical_url": "https://compound.ie/pia/compare-fee-quotes/",
+    "updated_content_verified": true,
+    "unique_content_evidence": "5 November committee amendment 25 vote (4-6) and 20-year €30,505 versus €26,231 comparison visible in public page",
+    "cited_public_url": "https://compound.ie/pia/compare-fee-quotes/",
+    "complete_production_release_verified": false,
+    "pending": "Rendered OG/Twitter asset fetch, live ad-loader and CMP inspection are not independently verified; don't mark full release complete"
+  },
   "pr_url": "https://github.com/davidomarayt/compound/pull/153",
   "pr_number": 153,
   "ci": {
@@ -74,9 +83,10 @@
     "production_branch": "claude/clever-babbage-uibieq"
   },
   "remaining_steps": [
-    "verify GitHub Pages deploy completed",
-    "fetch https://compound.ie/pia/compare-fee-quotes/ and confirm added Nov 5 committee vote + ten/twenty year examples",
-    "inspect canonical, social metadata and standard ad loader/CMP on actual HTML",
-    "mark ledger live only after that evidence"
-  ]
+    "Inspect raw production HTML and fetch actual OG/Twitter image asset, checking response and original licence/credit preserved",
+    "Inspect production ad script/slots and consent/CMP; do not infer filled ads",
+    "After passing outstanding independent checks, mark full production_verified true"
+  ],
+  "live_http_verified": true,
+  "recovery_checked": "2026-11-18"
 }
