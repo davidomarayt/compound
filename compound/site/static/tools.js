@@ -2518,13 +2518,36 @@
 
   const search=document.querySelector('[data-tool-search]');
   if(search){
-    const cards=[...document.querySelectorAll('[data-tool-card]')], groups=[...document.querySelectorAll('[data-tool-group]')], none=document.querySelector('[data-tool-no-results]');
+    const cards=[...document.querySelectorAll('[data-tool-card]')];
+    const groups=[...document.querySelectorAll('[data-tool-group]')];
+    const none=document.querySelector('[data-tool-no-results]');
+    const feedback=document.querySelector('[data-tool-search-status]');
     const filter=()=>{
-      const q=search.value.trim().toLowerCase(); let shown=0;
-      cards.forEach(card=>{const hit=!q||(card.dataset.toolText||card.textContent).toLowerCase().includes(q);card.hidden=!hit;if(hit)shown++;});
-      groups.forEach(group=>{group.hidden=![...group.querySelectorAll('[data-tool-card]')].some(c=>!c.hidden);});
-      none.hidden=shown>0;
+      const q=search.value.trim().toLocaleLowerCase('en-IE');
+      let shown=0;
+      cards.forEach(card=>{
+        const text=(card.dataset.toolText||card.textContent||'').toLocaleLowerCase('en-IE');
+        const hit=!q||text.includes(q);
+        card.hidden=!hit;
+        if(hit)shown++;
+      });
+      groups.forEach(group=>{group.hidden=![...group.querySelectorAll('[data-tool-card]')].some(card=>!card.hidden);});
+      if(none)none.hidden=shown>0;
+      if(feedback){
+        feedback.textContent=!q
+          ? 'Showing all '+cards.length+' tools.'
+          : shown ? 'Showing '+shown+' matching tool'+(shown===1?'':'s')+'.'
+                  : 'No matching tools. Try a broader search.';
+      }
     };
     search.addEventListener('input',filter);
+    search.addEventListener('keydown',event=>{
+      if(event.key==='Escape'&&search.value){
+        search.value='';
+        filter();
+        event.preventDefault();
+      }
+    });
+    filter();
   }
 })();
