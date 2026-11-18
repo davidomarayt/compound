@@ -19,16 +19,16 @@ tags:
 - ipo
 - nasdaq
 - investing
-hero_image_url: https://upload.wikimedia.org/wikipedia/commons/1/1b/Dario_Amodei_at_TechCrunch_Disrupt_2023_07.jpg
-hero_image_alt: Anthropic co-founder and CEO Dario Amodei speaking at TechCrunch Disrupt in San Francisco on 20 September 2023, archival photograph
-hero_image_credit: Kimberly White/Getty Images for TechCrunch via Wikimedia Commons, CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/). Archival photograph, 20 September 2023.
-hero_image_source: https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_07.jpg
+hero_image_url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Nasdaq_MarketSite_%2851494550508%29.jpg/1280px-Nasdaq_MarketSite_%2851494550508%29.jpg
+hero_image_alt: Nasdaq MarketSite in Times Square, New York, with the Nasdaq logo visible. Archival photograph from 19 September 2021.
+hero_image_credit: Ajay Suresh via Wikimedia Commons, CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/). Archival photograph from 19 September 2021, resized with a crop for social previews.
+hero_image_source: https://commons.wikimedia.org/wiki/File:Nasdaq_MarketSite_(51494550508).jpg
 require_pinned_hero: true
 image: /static/images/evergreen/anthropic-ipo-pricing-nasdaq.jpg
 social_image: /static/images/evergreen/anthropic-ipo-pricing-nasdaq.jpg
-image_alt: Anthropic co-founder and CEO Dario Amodei speaking at TechCrunch Disrupt in San Francisco on 20 September 2023, archival photograph
-image_credit: Kimberly White/Getty Images for TechCrunch via Wikimedia Commons, CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/). Archival photograph, 20 September 2023.
-image_source: https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_07.jpg
+image_alt: Nasdaq MarketSite in Times Square, New York, with the Nasdaq logo visible. Archival photograph from 19 September 2021.
+image_credit: Ajay Suresh via Wikimedia Commons, CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/). Archival photograph from 19 September 2021, resized with a crop for social previews.
+image_source: https://commons.wikimedia.org/wiki/File:Nasdaq_MarketSite_(51494550508).jpg
 sources:
 - title: The Wall Street Journal — $83 IPO price and increased share sale, 18 November 2026
   url: https://www.wsj.com/finance/stocks/anthropic-prices-ipo-at-83-a-share-0290494c

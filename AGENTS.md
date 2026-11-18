@@ -25,6 +25,11 @@ This is a content *title and URL* catalogue, not evidence that all pages rank or
 - Include photographer/publisher credit, original source URL, licence/permission basis, accurate image alt text and corresponding Open Graph/Twitter image. Never scrape or republish unlicensed news-agency images.
 - Fail build rather than substitute a generic calculator, desk, AI art or unrelated stock image. The Mag 7 publishing workflow enforces documentary photograph metadata before publication.
 
+## Anthropic article imagery
+
+- Apply this rule to manually written and scheduled Anthropic coverage. Exclude photographs depicting Dario Amodei from covers, in-article imagery and social previews, including archival and group photographs.
+- Choose a distinct, licensed visual that directly relates to the story, such as a documentary photo of the listing venue, an Anthropic location or the infrastructure discussed. Verify the rendered cover and social crop before calling the article live.
+
 ## Required image QA for manually authored news
 
 - Manually authored news must not silently reuse generic finance photos, calculators, desks, laptops, kitchens or unrelated stock images.
