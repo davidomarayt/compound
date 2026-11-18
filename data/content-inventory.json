@@ -294,26 +294,6 @@
         "status": "published"
       },
       {
-        "title": "Anthropic IPO pricing: What $83 a share would mean for the Nasdaq debut",
-        "url": "/news/anthropic-ipo-pricing-nasdaq/",
-        "source": "content/wealth/anthropic-ipo-pricing-nasdaq.md",
-        "kind": "Editorial article / guide",
-        "category": "Wealth",
-        "slug": "anthropic-ipo-pricing-nasdaq",
-        "date": "2026-11-18",
-        "reviewed": "",
-        "tags": [
-          "news",
-          "finance",
-          "anthropic",
-          "company-anthropic",
-          "ipo",
-          "nasdaq",
-          "investing"
-        ],
-        "status": "published"
-      },
-      {
         "title": "Anthropic Lets Customers Pay for Claude Usage Inside Other Apps. Who Keeps the Margin?",
         "url": "/wealth/anthropic-linked-billing-api-customer-pays-agent-economics/",
         "source": "content/wealth/anthropic-linked-billing-api-customer-pays-agent-economics.md",
@@ -333,6 +313,26 @@
           "saas",
           "enterprise-ai",
           "developer-economics"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Anthropic Prices IPO at $83 a Share Ahead of Nasdaq Debut, Bloomberg Reports",
+        "url": "/news/anthropic-ipo-pricing-nasdaq/",
+        "source": "content/wealth/anthropic-ipo-pricing-nasdaq.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "anthropic-ipo-pricing-nasdaq",
+        "date": "2026-11-18",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "finance",
+          "anthropic",
+          "company-anthropic",
+          "ipo",
+          "nasdaq",
+          "investing"
         ],
         "status": "published"
       },
