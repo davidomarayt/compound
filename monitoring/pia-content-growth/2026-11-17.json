@@ -4,7 +4,7 @@
   "run_type": "pia_content_growth",
   "topic_fingerprint": "2026-11-department-finance-individual-investment-account-economic-impact-assessment-simulation-distribution-fiscal",
   "action": "substantive_update_existing_canonical",
-  "status": "merged_pending_production_verification",
+  "status": "public_canonical_updated_content_verified_full_asset_ad_audit_pending",
   "new_articles": 0,
   "canonical_url": "https://compound.ie/wealth/personal-investment-account-ireland/",
   "path": "content/wealth/personal-investment-account-ireland.md",
@@ -44,8 +44,17 @@
     "ad_loader": "not yet checked on new rendered version",
     "cover_and_social": "existing editorial image retained; new deployed metadata not yet verified"
   },
-  "live_http_verified": false,
-  "verified_live_result": null,
+  "live_http_verified": true,
+  "verified_live_result": {
+    "verification_date": "2026-11-18",
+    "method": "independent live canonical HTML fetch via web reader",
+    "canonical_url": "https://compound.ie/wealth/personal-investment-account-ireland/",
+    "updated_content_verified": true,
+    "unique_content_evidence": "November 2026 Department of Finance economic assessment: €850m assets 2027, €110bn mid-2040s, €441m 2046 model net revenue and 72.9% top-fifth share visible in public page",
+    "cited_public_url": "https://compound.ie/wealth/personal-investment-account-ireland/",
+    "complete_production_release_verified": false,
+    "pending": "Rendered OG/Twitter asset fetch, live ad-loader and CMP inspection are not independently verified; don't mark full release complete"
+  },
   "production_verified": false,
   "pr_number": 159,
   "pr_url": "https://github.com/davidomarayt/compound/pull/159",
@@ -62,9 +71,9 @@
     "production_branch": "claude/clever-babbage-uibieq"
   },
   "remaining_steps": [
-    "confirm GitHub Pages build/deploy for merge 04b4976f",
-    "fetch https://compound.ie/wealth/personal-investment-account-ireland/ and confirm November Government economic section",
-    "validate public canonical, hero, Open Graph/Twitter image and standard ad/CMP",
-    "change ledger to live only on evidence"
-  ]
+    "Inspect raw production HTML and fetch actual OG/Twitter image asset, checking response and original licence/credit preserved",
+    "Inspect production ad script/slots and consent/CMP; do not infer filled ads",
+    "After passing outstanding independent checks, mark full production_verified true"
+  ],
+  "recovery_checked": "2026-11-18"
 }

@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-18",
+  "timezone": "Europe/Dublin",
+  "run_type": "pia_content_growth",
+  "status": "verified_existing_updates_no_new_qualified_publication",
+  "action": "prior_release_recovery_and_launch_tracker_source_review",
+  "new_articles": 0,
+  "existing_guide_content_changes": 0,
+  "recovery": [
+    {
+      "original_date": "2026-11-16",
+      "url": "https://compound.ie/pia/compare-fee-quotes/",
+      "result": "updated_source_backed_text_verified_public_on_2026-11-18",
+      "evidence": "5 Nov committee rejection of amendment 25 and 20-year fee compounding illustration",
+      "outstanding": "OG/Twitter asset fetch, ad-loader/CMP raw HTML"
+    },
+    {
+      "original_date": "2026-11-17",
+      "url": "https://compound.ie/wealth/personal-investment-account-ireland/",
+      "result": "updated_source_backed_text_verified_public_on_2026-11-18",
+      "evidence": "November Department of Finance central 2027/2046 projections and distribution breakdown",
+      "outstanding": "OG/Twitter asset fetch, ad-loader/CMP raw HTML"
+    }
+  ],
+  "qa_previous_change": "16 and 17 Nov PRs already merged with test/performance passing; public reader verified source-backed additions; no duplicate article or deploy retry needed",
+  "tracker": {
+    "path": "content/pia-launch-tracker.yml",
+    "changed": false,
+    "retained_checked_date": "2026-11-15",
+    "reason": "No material commencement/fee/opening/legal status update established by original public sources. Official Oireachtas Bill landing returned 403, prelive copy stale at 19 October. No advancing checked date.",
+    "official_bill_stage": "unverified_due_to_403",
+    "finance_bill_name": "Individual Investment Account (IIA) in introduced draft; PIA is widely used shorthand",
+    "tax_rules": "Proposals only, €12k annual contribution, 1% on relevant average account value above €50k, conditional 1 July 2027 opening",
+    "providers": "Official AIB, Bank of Ireland, Irish Life, PTSB, Zurich webpages reviewed; planned products, not open; no complete verified account-specific numerical fees",
+    "outside_attributed_report": "Acorn Life statement to PIA.ie dated 16 Nov mentions Ask Acorn planned July 2027; not added to official-source-only provider dataset without corroborating provider publication",
+    "provider_dataset_changed": false,
+    "provider_csv_regeneration_required": false
+  },
+  "source_urls": [
+    "https://www.revenue.ie/ga/corporate/press-office/press-releases/2026/pr-100726-irish-investment-account.aspx",
+    "https://www.oireachtas.ie/en/bills/bill/2026/98/",
+    "https://www.aib.ie/make-a-plan/investments/personal-investment-account",
+    "https://personalbanking.bankofireland.com/save-and-invest/investments/personal-investment-account/",
+    "https://www.irishlife.ie/investments/pia/",
+    "https://www.ptsb.ie/saving-and-investing/investments/state-investment-account/",
+    "https://www.zurich.ie/blog/a-guide-to-irelands-new-investment-account/",
+    "https://assets.gov.ie/static/documents/4c3e3964/Individual_Investment_Account_Economic_Impact_Assessment_-_November_2026.pdf"
+  ],
+  "duplication_checks": {
+    "examined": "2026-11-18 editorial index (310 published articles, 64 tools), content inventory, private PIA guides and recent PRs #153, #159, #165",
+    "reason_no_new_article": "Recent fee transparency, Government economic modelling and invest-now-versus-wait calculator already cover qualified recent questions; no additional confirmed primary-source development worth duplicating."
+  },
+  "claims_and_limits": "Do not claim final legislative status, operational accounts, guaranteed launch, real provider fees, production ad delivery or image verification without independent primary evidence.",
+  "ads": "No site template or consent changes made; public raw HTML ads not verified",
+  "human_review": "not asserted",
+  "work_branch": "automation/pia-content-audit-2026-11-18",
+  "canonical_urls": [
+    "https://compound.ie/pia/",
+    "https://compound.ie/pia-calculator/"
+  ],
+  "next_steps": [
+    "Obtain official fresh Oireachtas status when accessible",
+    "Check whether any provider publishes complete fees or opens registrations",
+    "Independently inspect live OG/Twitter image assets and ad/CMP markup on recovered pages before marking full publication QA passed"
+  ]
+}
