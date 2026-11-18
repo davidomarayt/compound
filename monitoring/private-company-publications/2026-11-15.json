@@ -5,8 +5,8 @@
   "production_branch": "claude/clever-babbage-uibieq",
   "work_branch": "automation/private-company-2026-11-15",
   "target_new_articles": 3,
-  "status": "prepared_pending_pr_validation",
-  "confirmed_live_new_articles": 0,
+  "status": "published_verified_live_via_github_runner",
+  "confirmed_live_new_articles": 3,
   "human_editorial_status": "not_reviewed_by_human",
   "ads_policy": "Require standard site advertising on every released article and company hub, independent of human review; preserve existing CMP/privacy controls",
   "editorial_quality_gate": "Original evidence-led theses; 6/10/12 November primary source dates checked on 15 November. Photo provenance checked at Commons. Not published until CI, branch protection and production canonical/cover/social/ad verification pass.",
@@ -42,13 +42,14 @@
       "profile_url": "https://compound.ie/companies/openai/",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": null,
-      "deployment_status": "not_deployed",
-      "status": "prepared_pending_ci"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS via GitHub runner live-curl; job 132749131928 2026-11-15T08:20:00Z",
+      "deployment_status": "live_verified",
+      "status": "published_verified_live",
+      "live_verified_at_utc": "2026-11-15T08:20:00Z"
     },
     {
       "company": "Anthropic",
@@ -75,13 +76,14 @@
       "profile_url": "https://compound.ie/companies/anthropic/",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": null,
-      "deployment_status": "not_deployed",
-      "status": "prepared_pending_ci"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS via GitHub runner live-curl; job 132749131928 2026-11-15T08:20:00Z",
+      "deployment_status": "live_verified",
+      "status": "published_verified_live",
+      "live_verified_at_utc": "2026-11-15T08:20:00Z"
     },
     {
       "company": "Stripe",
@@ -108,13 +110,14 @@
       "profile_url": "https://compound.ie/companies/stripe/",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": null,
-      "deployment_status": "not_deployed",
-      "status": "prepared_pending_ci"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS via GitHub runner live-curl; job 132749131928 2026-11-15T08:20:00Z",
+      "deployment_status": "live_verified",
+      "status": "published_verified_live",
+      "live_verified_at_utc": "2026-11-15T08:20:00Z"
     }
   ],
   "profile_updates": [
@@ -136,9 +139,17 @@
     }
   ],
   "production_deployment": {
-    "status": "not_started",
-    "confirmed_live_urls": 0,
-    "branch_protection": "previously reported disabled; must recheck before merge"
+    "status": "github_pages_deployed_three_canonical_articles_verified",
+    "confirmed_live_urls": 3,
+    "branch_protection": "previously reported disabled; must recheck before merge",
+    "github_pages_site_run": 43693116352,
+    "independent_live_verification_job_id": 132749131928,
+    "independent_live_verification_run_id": 43693116352,
+    "github_pages_build": "success",
+    "github_pages_deploy": "success",
+    "generic_live_checks": "success",
+    "verification_note": "GitHub Pages mobile-audit job 132749131928, workflow run 43693116352, on 2026-11-15T08:20:00Z, independently fetched each exact live Compound.ie canonical article, ad loader, reciprocal company-profile backlink, licensed JPEG cover and OG/Twitter WebP; all three passed. Historical confirmation at noted verification time, not a claim of continuous later availability."
   },
-  "updated_at_utc": "2026-11-15"
+  "updated_at_utc": "2026-11-15",
+  "live_verification_reconciled_on": "2026-11-18"
 }
