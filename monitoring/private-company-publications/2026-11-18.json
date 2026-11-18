@@ -1,0 +1,147 @@
+{
+  "date": "2026-11-18",
+  "timezone": "Europe/Dublin",
+  "run_type": "private_company_daily",
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "automation/private-company-2026-11-18",
+  "target_new_articles": 3,
+  "status": "prepared_pending_pr_ci",
+  "confirmed_live_new_articles": 0,
+  "human_editorial_status": "not_reviewed_by_human",
+  "ads_policy": "Standard AdSense ads from publication irrespective of review, preserve CMP; verify production loader",
+  "editorial_quality_gate": "Primary original news 16-17 Nov; separate evidence-led theses; authentic licensed archival photography; no publication or success claim until exact SHA CI and independent production page/photo/social/ads checks",
+  "duplication_checks": {
+    "editorial_index_snapshot": "2026-11-17",
+    "recent_overlap": "NATO cyber usage differs from 15 Nov Hacktron security partnership and 17 Nov media; Anthropic linked billing differs from self-hosted/always-on/IPO; Revolut Italian AML judicial oversight differs from 17 Nov joint investment accounts and earlier Uber payment article",
+    "competing_workflows": "Checked 306-article 17 Nov editorial topic index, inventory, PRs 150-169, 16-17 Nov ledgers and overnight publishing; no identical story",
+    "new_page_count_cap": 3
+  },
+  "articles": [
+    {
+      "company": "OpenAI",
+      "slug": "openai",
+      "event_date": "2026-11-17",
+      "story_fingerprint": "2026-11-17-openai-nato-ncia-300b-tokens-cyber-operational-vs-commercial",
+      "primary_source_urls": [
+        "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai/",
+        "https://openai.com/index/partnering-with-hacktron/"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Brussels-NATO_headquarters.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Brussels-NATO_headquarters.jpg",
+      "photo_focal_y": 0.5,
+      "image_license": "CC0 1.0",
+      "photo_provenance": "Romaine, 16 February 2018, Brussels NATO headquarters, archival adaptation; not a November 2026 event photo",
+      "claim_checks": [
+        "17 Nov official announcement says NATO used UP TO 300bn combined raw input and output tokens per month; not stated annual run rate, paid contract or measured risk reduction",
+        "300bn / 1m=300,000 units; hypothetical $1–$10/million gives $300k–$3m; no real OpenAI NATO billing inferred",
+        "Cost scenario 10k findings x 5% x 20/60 hours=166.67 staff-hours; x €80 = €13,333 hypothetical"
+      ],
+      "article_path": "content/wealth/openai-nato-cybersecurity-300-billion-tokens-economics.md",
+      "canonical_url": "https://compound.ie/wealth/openai-nato-cybersecurity-300-billion-tokens-economics/",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "not_deployed",
+      "status": "prepared_pending_ci"
+    },
+    {
+      "company": "Anthropic",
+      "slug": "anthropic",
+      "event_date": "2026-11-17",
+      "story_fingerprint": "2026-11-17-anthropic-linked-billing-api-customer-paid-usage-economics",
+      "primary_source_urls": [
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://platform.claude.com/docs/en/manage-claude/oauth-apps/organization-billing-connections"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_05.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Dario_Amodei_at_TechCrunch_Disrupt_2023_05.jpg",
+      "photo_focal_y": 0.5,
+      "image_license": "CC BY 2.0",
+      "photo_provenance": "TechCrunch / Kimberly White, 20 September 2023, Dario Amodei archival interview, adapted crop, not a 2026 product image",
+      "claim_checks": [
+        "17 Nov release notes confirm beta linked billing for directly-paying Claude API organisations; excludes marketplace-only and subscription-only customers",
+        "Requests run in APP operator organisation; customer ZDR/BAA/CMEK do not transfer; customer-designated unbillable calls refused, not charged to app",
+        "Hypothetical €150x100=€15k; €40x100=€4k; after switching €120x100=€12k vs prior €11k contribution, before overhead"
+      ],
+      "article_path": "content/wealth/anthropic-linked-billing-api-customer-pays-agent-economics.md",
+      "canonical_url": "https://compound.ie/wealth/anthropic-linked-billing-api-customer-pays-agent-economics/",
+      "profile_url": "https://compound.ie/companies/anthropic/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "not_deployed",
+      "status": "prepared_pending_ci"
+    },
+    {
+      "company": "Revolut",
+      "slug": "revolut",
+      "event_date": "2026-11-16",
+      "story_fingerprint": "2026-11-16-italy-revolut-bank-uab-court-supervision-aml-controls-remediation-economics",
+      "primary_source_urls": [
+        "https://www.reuters.com/business/finance/italian-court-places-revolut-unit-under-supervision-over-money-laundering-2026-11-16/",
+        "https://www.revolut.com/en-ES/news/revolut_completes_fundraising_process_establishing_115_billion_valuation/"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:London_Revolut.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/London_Revolut.jpg",
+      "photo_focal_y": 0.5,
+      "image_license": "CC0 1.0",
+      "photo_provenance": "Boubloub, 19 June 2025, Revolut London Canary Wharf head office, archival; not Italian court proceedings",
+      "claim_checks": [
+        "Reuters 16 Nov reviewed 39-page court ruling: 1-year Italian branch oversight, 24 people, €41.9m flows, 265 reports by other banks and no Revolut reports for cohort; allegations attributed",
+        "Reuters: Revolut is NOT criminally investigated; services continue; action confined to Italy. Ruling itself not independently obtained",
+        "Revolut 4 Nov release claims $115bn private transaction valuation; neither price nor stock listing implied. €41.9m flows NOT fine or loss",
+        "Illustrative additional 30k alerts x 12min /60 =6000 hours x €50 = €300k; not Revolut actual cost"
+      ],
+      "article_path": "content/wealth/revolut-italy-judicial-supervision-aml-growth-costs.md",
+      "canonical_url": "https://compound.ie/wealth/revolut-italy-judicial-supervision-aml-growth-costs/",
+      "profile_url": "https://compound.ie/companies/revolut/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "not_deployed",
+      "status": "prepared_pending_ci"
+    }
+  ],
+  "profile_updates": [
+    {
+      "slug": "openai",
+      "status": "sourced_17_nov",
+      "date": "2026-11-17",
+      "description": "NCIA NATO reported up to 300bn monthly raw tokens, no contract values",
+      "source": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai/"
+    },
+    {
+      "slug": "anthropic",
+      "status": "sourced_17_nov",
+      "date": "2026-11-17",
+      "description": "Beta Linked Billing, direct Claude Platform organisation charges and restrictions",
+      "source": "https://platform.claude.com/docs/en/release-notes/overview"
+    },
+    {
+      "slug": "revolut",
+      "status": "attributed_16_nov",
+      "date": "2026-11-16",
+      "description": "Reuters reports Italian branch one-year preventive supervision, no criminal investigation or service halt",
+      "source": "https://www.reuters.com/business/finance/italian-court-places-revolut-unit-under-supervision-over-money-laundering-2026-11-16/"
+    }
+  ],
+  "production_deployment": {
+    "status": "not_started",
+    "confirmed_live_urls": 0,
+    "branch_protection": "Not configured on recent runs; exact-head CI gate required before any merge"
+  },
+  "updated_at_utc": "2026-11-18"
+}

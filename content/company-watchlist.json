@@ -117,24 +117,24 @@
       "slug": "openai",
       "name": "OpenAI",
       "sector": "Artificial intelligence",
-      "summary": "AI models, enterprise integrations, research and a 16 November partnership with LVMH media combining newsroom tools and attributed ChatGPT journalism discovery.",
+      "summary": "AI models, enterprise adoption, research and security, including NATO's disclosed large-scale defensive model usage.",
       "website": "https://openai.com/",
       "latest_development": {
-        "date": "2026-11-16",
-        "text": "OpenAI and LVMH Group's media division announced a partnership covering ChatGPT Enterprise deployment and citation/linking of journalism from the division's 17 brands in ChatGPT. No contract value, referral volumes or licence economics were disclosed.",
-        "source": "https://openai.com/index/lvmh-media-division-partnership/"
+        "date": "2026-11-17",
+        "text": "OpenAI said its work with NATO's Communications and Information Agency included up to 300 billion combined input/output tokens per month for authorised cybersecurity work. It gave no contract value, recurring revenue or independently audited defensive outcomes.",
+        "source": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai/"
       }
     },
     {
       "slug": "anthropic",
       "name": "Anthropic",
       "sector": "Artificial intelligence",
-      "summary": "Claude models and enterprise agents, including a 12 November private beta for self-hosted Managed Agents with customer-operated control plane and session history. Also covers enterprise meetings and safety research.",
+      "summary": "Claude AI models, developer APIs, enterprise agents, and a 17 November linked-billing beta that lets eligible enterprise customers pay for their Claude API use inside apps.",
       "website": "https://www.anthropic.com/",
       "latest_development": {
-        "date": "2026-11-14",
-        "text": "Anthropic's official incident log documents distinct Claude authentication, API and connector disruptions on 13 November, including delayed/skipped scheduled routines, followed by 14 November payment-plan errors that were resolved. The Microsoft connector incident was attributed to its upstream provider; no financial damage or blanket SLA breach is established.",
-        "source": "https://status.claude.com/"
+        "date": "2026-11-17",
+        "text": "Anthropic's 17 November platform release notes introduced Linked Billing in beta for directly-billed Claude Platform organisations; marketplace-only and subscription-only users are excluded. Inference runs under the app operator's settings and no adoption or revenue was disclosed.",
+        "source": "https://platform.claude.com/docs/en/release-notes/overview"
       }
     },
     {
@@ -177,12 +177,12 @@
       "slug": "revolut",
       "name": "Revolut",
       "sector": "Financial technology",
-      "summary": "Consumer and business financial services.",
+      "summary": "Private financial technology company offering consumer and business banking and payments; Italian branch subject to a preventive court-supervised AML remediation order reported 16 November.",
       "website": "https://www.revolut.com/",
       "latest_development": {
-        "date": "2026-11-11",
-        "text": "Revolut announced an expanded Uber and Uber Eats payment partnership for the UK and Europe, with conditional promotional RevPoints rewards; individual market eligibility must be checked.",
-        "source": "https://www.revolut.com/sv-SE/news/uber_and_revolut_pay_partnership_expansion_delivers_rewarding_payments/"
+        "date": "2026-11-16",
+        "text": "Reuters, citing a 39-page Milan court ruling, reported that Revolut Bank UAB's Italian operation was put under one-year judicial administration concerning AML controls. Reuters said Revolut itself was not under criminal investigation, services were uninterrupted and oversight applied only in Italy.",
+        "source": "https://www.reuters.com/business/finance/italian-court-places-revolut-unit-under-supervision-over-money-laundering-2026-11-16/"
       }
     },
     {
