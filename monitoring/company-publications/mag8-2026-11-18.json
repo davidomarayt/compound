@@ -1,0 +1,50 @@
+{
+  "series": "mag8",
+  "date": "2026-11-18",
+  "company": "Eli Lilly and Company",
+  "ticker": "LLY",
+  "status": "prepared",
+  "publication_state": "not_live",
+  "new_articles_published": 0,
+  "canonical_updates_published": 0,
+  "article_path": "content/wealth/lilly-jardiance-milestone-revenue.md",
+  "canonical_url": "https://compound.ie/wealth/lilly-jardiance-milestone-revenue/",
+  "story_fingerprint": "LLY-Q32026-Jardiance-exhausted-sales-milestones-revenue-repeatability",
+  "article_sha256": "b327c53fbe56c7ef2f2df2f2c70334ddd0c3cdd99603d31d8bb9afb721860126",
+  "story_thesis": "Separate the final Jardiance sales milestones from continuing collaboration revenue: reported Q3 growth 64.5%, growth excluding identified milestones 53.9%.",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/59478/000005947826000108/lly-20260930.htm",
+    "https://www.sec.gov/Archives/edgar/data/59478/000005947826000104/q326lillysalesandearningsp.htm"
+  ],
+  "duplicate_checks": [
+    "Read AGENTS.md, editorial index, CONTENT_INVENTORY and JSON; searched Lilly source articles, recent content and company publication ledgers; no 18 November Mag8 or legacy Mag7 publication found.",
+    "Morning batch OpenAI NATO, Anthropic linked billing and Revolut Italy; recent manual GTA6 and SLAB content unrelated. Open PRs checked: no Lilly or Jardiance work.",
+    "Live LLY profile, Mounjaro China and METiS articles fetched; new angle is incoming exhausted milestones, not outgoing contingent research payments, China access or earnings recap."
+  ],
+  "claim_checks": [
+    "10-Q Note 3: Q3 Jardiance 1578/959 USD million; milestones 410/200; residual 1168/759. Reported 619/959=64.5464%; residual 409/759=53.8867%; milestone delta 210/619=33.9257%.",
+    "Hypothetical 10% growth: 1168*1.1=1284.8; 1284.8/1578-1=-18.5805%. Not guidance, not volume or prescription growth.",
+    "10-Q Note 3: ongoing collaboration through 2028-12-31 in most significant markets; no remaining sales milestones; family includes Glyxambi/Synjardy/Trijardy XR.",
+    "29 October earnings exhibit directly read: approximately 900m Q3 benefits include 410m milestones. No double subtraction; no EPS or share-price estimate."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Jardiance_10mg_box,_front_view.jpg",
+    "credit": "Grendelkhan",
+    "license": "CC BY-SA 4.0",
+    "capture_date": "2024-01-10",
+    "archival": true,
+    "new_unique_photo": true
+  },
+  "editorial_qa": {
+    "human_reviewed_by": null,
+    "human_reviewed_at": null,
+    "ads": "Standard ads from publication; preserve consent.",
+    "accuracy": "Second arithmetic pass; source vs calculation vs hypothetical explicitly distinguished; current period and filing dates checked.",
+    "release_gates_pending": [
+      "rendered crop inspection",
+      "CI",
+      "deployment",
+      "live page, social image, ads, sitemap, discovery verification"
+    ]
+  }
+}
