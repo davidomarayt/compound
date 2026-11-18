@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 312 published articles and guides, 64 tools,
+**Included:** 313 published articles and guides, 64 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -28,6 +28,7 @@ For the complete register (including 510+ company profiles), open
 - [American Express Earnings: Spending Holds Up, but Read the Profit Adjustments](https://compound.ie/wealth/american-express-earnings-spending-adjusted-profit/) — **Wealth**
 - [An Post now lets you send small tracked parcels from 2,600 postboxes](https://compound.ie/news/an-post-postbox-drop-off-small-parcels-2026/) — **Wealth**
 - [Anthropic IPO by the Numbers: The $61 Billion Share Sale, $900 Billion Compute Bet and Valuation Test](https://compound.ie/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/) — **Wealth**
+- [Anthropic IPO pricing: What $83 a share would mean for the Nasdaq debut](https://compound.ie/news/anthropic-ipo-pricing-nasdaq/) — **Wealth**
 - [Anthropic Lets Customers Pay for Claude Usage Inside Other Apps. Who Keeps the Margin?](https://compound.ie/wealth/anthropic-linked-billing-api-customer-pays-agent-economics/) — **Wealth**
 - [Anthropic Wants Claude to Work During Meetings. Will That Reduce the Follow-Up?](https://compound.ie/wealth/anthropic-claude-meetings-live-work-enterprise-economics/) — **Wealth**
 - [Anthropic's Always-On Agent Blueprint: The Hidden Costs Are Permissions and Recovery](https://compound.ie/wealth/anthropic-always-on-agents-business-case-permissions-cost/) — **Wealth**
