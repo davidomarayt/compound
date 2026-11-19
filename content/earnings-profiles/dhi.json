@@ -2,33 +2,33 @@
   "cik": 882184,
   "company": "D. R. Horton",
   "latest": {
-    "accession": "0000882184-26-000096",
-    "filed": "2026-07-23",
-    "form": "10-Q",
-    "fp": "Q3",
+    "accession": "0000882184-26-000157",
+    "filed": "2026-11-18",
+    "form": "10-K",
+    "fp": "FY",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 3.2,
-        "prior_year": 3.36,
+        "current": 10.11,
+        "prior_year": 11.57,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 904900000,
-        "prior_year": 1024600000,
+        "current": 2889400000,
+        "prior_year": 3585200000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 9227100000,
-        "prior_year": 9225700000,
+        "current": 33043400000,
+        "prior_year": 34250400000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000096/dhi-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000157/dhi-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000096/dhi-20260630.htm"
+    },
+    {
+      "accession": "0000882184-26-000157",
+      "filed": "2026-11-18",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 10.11,
+          "prior_year": 11.57,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 2889400000,
+          "prior_year": 3585200000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 33043400000,
+          "prior_year": 34250400000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/882184/000088218426000157/dhi-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "DHI",
-  "updated": "2026-10-15"
+  "updated": "2026-11-19"
 }
