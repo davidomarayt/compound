@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 316
+- Published editorial articles and guides: 319
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 262
+## Wealth articles and guides — 265
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -162,6 +162,8 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Ireland inflation jumps to 3.9% as energy prices rise 15.3%](https://compound.ie/news/ireland-inflation-september-2026-energy-prices/)
 - [Ireland Plans €682m Cut in Refugee and Asylum Accommodation Spending in Budget 2027](https://compound.ie/news/ireland-migration-accommodation-682m-budget-2027/)
 - [Ireland's 40% tax band starts at €44,000 — how that really compares with Europe](https://compound.ie/news/ireland-40-percent-tax-rate-threshold-europe/)
+- [Ireland's Typical First-Time Buyer Now Has €82,600 Income and Is 36](https://compound.ie/news/first-time-buyers-ireland-income-age-help-to-buy-2024/)
+- [Ireland's Wage Bill Reached €165.2bn — but That Is Not a 4.4% Pay Rise](https://compound.ie/news/ireland-wage-bill-2025-pay-rise-meaning/)
 - [Irish house prices are estimated to be 17% overvalued — what does that actually mean for buyers?](https://compound.ie/news/irish-house-prices-overvalued-17-percent-2026/)
 - [Irish housing market is cooling — but buyers are not suddenly getting cheap homes](https://compound.ie/news/ireland-house-prices-cooling-daft-dublin-2026/)
 - [Irish milk prices set to fall 18.1% as fertiliser costs rise, CSO estimates](https://compound.ie/news/irish-farm-prices-2026-milk-fertiliser-cso/)
@@ -201,6 +203,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Mortgage Protection Insurance in Ireland: The Complete 2026 Guide](https://compound.ie/wealth/mortgage-protection-insurance-ireland/)
 - [MyFutureFund vs a private pension in Ireland: how auto-enrolment compares](https://compound.ie/wealth/myfuturefund-vs-private-pension-ireland/)
 - [Netflix Earnings: Profit Rises, but the Growth Story Gets Harder](https://compound.ie/wealth/netflix-earnings-growth-advertising-outlook/)
+- [New Irish Credit Rules Start 20 November: What Changes for BNPL and Loans](https://compound.ie/news/ireland-consumer-credit-bnpl-rules-november-2026/)
 - [New €14,500 Heat-Pump Grant: Is Switching From Oil Worth It?](https://compound.ie/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/)
 - [New €2 EU parcel handling fee confirmed: what Irish shoppers will pay on non-EU orders](https://compound.ie/news/new-eu-parcel-fee-ireland-2026/)
 - [Nike's Margin Is Improving. The Demand Turnaround Hasn't Arrived](https://compound.ie/wealth/nike-margin-demand-turnaround/)

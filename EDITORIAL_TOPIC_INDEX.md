@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 316 published articles and guides, 69 tools,
+**Included:** 319 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -153,6 +153,8 @@ For the complete register (including 510+ company profiles), open
 - [Ireland Plans €682m Cut in Refugee and Asylum Accommodation Spending in Budget 2027](https://compound.ie/news/ireland-migration-accommodation-682m-budget-2027/) — **Wealth**
 - [Ireland to Ban Loyalty-Card Alcohol Discounts: What Changes From March 2028](https://compound.ie/news/alcohol-loyalty-card-discounts-ban-ireland-2028/) — **Health**
 - [Ireland's 40% tax band starts at €44,000 — how that really compares with Europe](https://compound.ie/news/ireland-40-percent-tax-rate-threshold-europe/) — **Wealth**
+- [Ireland's Typical First-Time Buyer Now Has €82,600 Income and Is 36](https://compound.ie/news/first-time-buyers-ireland-income-age-help-to-buy-2024/) — **Wealth**
+- [Ireland's Wage Bill Reached €165.2bn — but That Is Not a 4.4% Pay Rise](https://compound.ie/news/ireland-wage-bill-2025-pay-rise-meaning/) — **Wealth**
 - [Ireland’s TV Licence Is Dying. The Numbers Show Why.](https://compound.ie/news/ireland-tv-licence-decline-2026/) — **Life**
 - [Irish house prices are estimated to be 17% overvalued — what does that actually mean for buyers?](https://compound.ie/news/irish-house-prices-overvalued-17-percent-2026/) — **Wealth**
 - [Irish housing market is cooling — but buyers are not suddenly getting cheap homes](https://compound.ie/news/ireland-house-prices-cooling-daft-dublin-2026/) — **Wealth**
@@ -198,6 +200,7 @@ For the complete register (including 510+ company profiles), open
 - [Mortgage Protection Insurance in Ireland: The Complete 2026 Guide](https://compound.ie/wealth/mortgage-protection-insurance-ireland/) — **Wealth**
 - [MyFutureFund vs a private pension in Ireland: how auto-enrolment compares](https://compound.ie/wealth/myfuturefund-vs-private-pension-ireland/) — **Wealth**
 - [Netflix Earnings: Profit Rises, but the Growth Story Gets Harder](https://compound.ie/wealth/netflix-earnings-growth-advertising-outlook/) — **Wealth**
+- [New Irish Credit Rules Start 20 November: What Changes for BNPL and Loans](https://compound.ie/news/ireland-consumer-credit-bnpl-rules-november-2026/) — **Wealth**
 - [New €14,500 Heat-Pump Grant: Is Switching From Oil Worth It?](https://compound.ie/news/heat-pump-grant-14500-oil-vs-heat-pump-ireland/) — **Wealth**
 - [New €2 EU parcel handling fee confirmed: what Irish shoppers will pay on non-EU orders](https://compound.ie/news/new-eu-parcel-fee-ireland-2026/) — **Wealth**
 - [Nike's Margin Is Improving. The Demand Turnaround Hasn't Arrived](https://compound.ie/wealth/nike-margin-demand-turnaround/) — **Wealth**
