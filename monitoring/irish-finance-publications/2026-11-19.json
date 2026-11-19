@@ -8,8 +8,8 @@
   "slots_already_filled_at_start": 0,
   "publishing_branch": "claude/clever-babbage-uibieq",
   "verified_base_commit": "76f62bef054547ceca33315c2fa3761137333f2c",
-  "programme_status": "prepared_for_exact_head_ci",
-  "confirmed_publications": 0,
+  "programme_status": "published_live_verified",
+  "confirmed_publications": 3,
   "new_articles": 3,
   "canonical_updates": 0,
   "held_for_review": 0,
@@ -21,7 +21,7 @@
       "edition": "morning",
       "content_type": "news_analysis",
       "action": "new_article",
-      "status": "prepared_for_exact_head_ci",
+      "status": "published_live_verified",
       "source_path": "content/wealth/first-time-buyers-ireland-income-age-help-to-buy-2024.md",
       "canonical_url": "https://compound.ie/news/first-time-buyers-ireland-income-age-help-to-buy-2024/",
       "primary_sources": [
@@ -63,15 +63,15 @@
         "source": "https://commons.wikimedia.org/wiki/File:New_housing_estate,_Navan_-_geograph.org.uk_-_8417157.jpg",
         "processing": "Cropped to 1600 × 900; modification disclosed in credit"
       },
-      "publication_commit": null,
-      "deployment_status": "not_deployed"
+      "publication_commit": "f8750329ea8a12926f9f57128e17bfc377f01b1f",
+      "deployment_status": "live_html_image_ads_and_consent_verified"
     },
     {
       "topic": "CSO 2025 Compensation of Employees and why national wage-bill growth is not an individual pay rise",
       "edition": "morning",
       "content_type": "news_analysis",
       "action": "new_article",
-      "status": "prepared_for_exact_head_ci",
+      "status": "published_live_verified",
       "source_path": "content/wealth/ireland-wage-bill-2025-pay-rise-meaning.md",
       "canonical_url": "https://compound.ie/news/ireland-wage-bill-2025-pay-rise-meaning/",
       "primary_sources": [
@@ -111,15 +111,15 @@
         "source": "https://commons.wikimedia.org/wiki/File:Oct2026._Se%C3%A1n_Heuston_Bridge_at_rush-hour,_Dublin,_Ireland.jpg",
         "processing": "Cropped to 1600 × 900"
       },
-      "publication_commit": null,
-      "deployment_status": "not_deployed"
+      "publication_commit": "f8750329ea8a12926f9f57128e17bfc377f01b1f",
+      "deployment_status": "live_html_image_ads_and_consent_verified"
     },
     {
       "topic": "Consumer Credit Directive protections applying from 20 November to BNPL, sub-€200 credit and agreements up to €100,000",
       "edition": "morning",
       "content_type": "news_service",
       "action": "new_article",
-      "status": "prepared_for_exact_head_ci",
+      "status": "published_live_verified",
       "source_path": "content/wealth/ireland-consumer-credit-bnpl-rules-november-2026.md",
       "canonical_url": "https://compound.ie/news/ireland-consumer-credit-bnpl-rules-november-2026/",
       "primary_sources": [
@@ -161,8 +161,8 @@
         "source": "https://www.pexels.com/photo/a-man-in-glasses-holding-a-credit-card-and-looking-at-his-phone-23496925/",
         "processing": "Pinned Pexels photo ID 23496925; 1600 × 900 local copy"
       },
-      "publication_commit": null,
-      "deployment_status": "not_deployed"
+      "publication_commit": "f8750329ea8a12926f9f57128e17bfc377f01b1f",
+      "deployment_status": "live_html_image_ads_and_consent_verified"
     }
   ],
   "deduplication": {
@@ -180,14 +180,16 @@
     "publication_totals": "No morning-programme ledger files exist for 12–18 November; absence of a ledger is not treated as proof that no other Compound workflow published Irish coverage. A comparable weekly programme total cannot be claimed from the available records."
   },
   "checks": {
-    "editorial": "Automated source, arithmetic, duplication, originality, readability and policy QA prepared; no human approval claimed.",
-    "advertising": "Standard article advertising and consent configuration must remain unchanged and be verified in generated and live HTML; no ad fill promised.",
-    "images": "Three distinct, topic-specific, licensed photographs pinned locally with complete attribution; rendered cover and OG/Twitter verification pending.",
-    "tests": "Pending exact-head targeted tests, full pytest, production build, rendered article assertions and GitHub PR CI.",
-    "deployment": "Pending PR merge, successful site workflow and public fetch of each canonical and image."
+    "editorial": "Source, arithmetic, duplication, originality, readability and policy QA passed; no human approval claimed.",
+    "advertising": "The standard AdSense loader and existing consent controls were present in generated HTML and all three fetched live articles. Ad fill was not asserted.",
+    "images": "All three distinct licensed 1600 × 900 covers loaded on their live articles with attribution; pinned 16:9 OG and Twitter derivatives were present.",
+    "tests": "Focused news-image and pending-research ad tests passed; exact-head full pytest passed with 376 tests and 2 subtests; production build and rendered assertions passed; PR CI test and performance/Lighthouse jobs succeeded.",
+    "deployment": "PR #186 merged after CI. GitHub Pages site run #1756 deployed commit f875032 successfully, and each canonical plus cover and social metadata was fetched from the public site."
   },
-  "pull_request": null,
-  "publication_commit": null,
-  "deployment_run": null,
-  "verified_at_utc": null
+  "pull_request": "https://github.com/davidomarayt/compound/pull/186",
+  "pull_request_head_commit": "ffe0974fab047199f1a22d2ae8bbee794639986d",
+  "publication_commit": "f8750329ea8a12926f9f57128e17bfc377f01b1f",
+  "pr_ci_run": "https://github.com/davidomarayt/compound/actions/runs/44501068082",
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/44502660724",
+  "verified_at_utc": "2026-11-19T10:14:08+00:00"
 }
