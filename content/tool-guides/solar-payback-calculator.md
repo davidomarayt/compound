@@ -125,3 +125,5 @@ Solar also has a different risk profile from a financial investment. Much of the
 
 A robust decision should still look attractive when you lower generation slightly, reduce export payments and avoid assuming unusually high future electricity prices.
 
+
+Use the [Irish sun path explorer](/sun-path-explorer/) to compare seasonal daylight, bearings and shadows at your home.
