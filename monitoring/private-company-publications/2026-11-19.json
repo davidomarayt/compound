@@ -7,8 +7,8 @@
   "target_new_articles": 3,
   "new_article_count_prepared": 2,
   "canonical_updates_prepared": 1,
-  "confirmed_live_new_articles": 0,
-  "status": "prepared_pending_pr_ci",
+  "confirmed_live_new_articles": 2,
+  "status": "published_verified_live_two_new_one_canonical_update",
   "ads_policy": "Standard ad loader and CMP required at release for every published article and profile; no review-status based ad suppression",
   "editorial_quality_gate": "Search intent deduplicated against 313 article index, recent IPO and GPT-6.2 general launch; new Astra legal benchmark analysis and 12 Nov ASV Alpha shipyard economics, plus update rather than duplicate Anthropic priced IPO story",
   "prior_publication_recovery": {
@@ -58,13 +58,14 @@
       "profile_url": "https://compound.ie/companies/openai/",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": null,
-      "deployment_status": "not_deployed",
-      "status": "prepared_pending_ci"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS via GitHub Pages mobile-audit live curl, job 135418814332, run 44482187061, 2026-11-19T07:56:06Z",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "status": "published_verified_live",
+      "live_verified_at_utc": "2026-11-19T07:56:06Z"
     },
     {
       "company": "Anthropic",
@@ -92,14 +93,15 @@
       "profile_url": "https://compound.ie/companies/anthropic/",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": null,
-      "deployment_status": "not_deployed",
-      "status": "prepared_pending_ci",
-      "live_required_fingerprint": "980 million-share base offering"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS via GitHub Pages mobile-audit live curl, job 135418814332, run 44482187061, 2026-11-19T07:56:06Z",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "status": "updated_canonical_verified_live",
+      "live_required_fingerprint": "980 million-share base offering",
+      "live_verified_at_utc": "2026-11-19T07:56:06Z"
     },
     {
       "company": "Anduril Industries",
@@ -129,13 +131,14 @@
       "profile_url": "https://compound.ie/companies/anduril/",
       "editorial_review_status": "pending",
       "human_reviewed": false,
-      "cover_image_verified": false,
-      "social_image_verified": false,
-      "ads_presence_verified": false,
-      "live_http_verified": false,
-      "verified_live_result": null,
-      "deployment_status": "not_deployed",
-      "status": "prepared_pending_ci"
+      "cover_image_verified": true,
+      "social_image_verified": true,
+      "ads_presence_verified": true,
+      "live_http_verified": true,
+      "verified_live_result": "PASS via GitHub Pages mobile-audit live curl, job 135418814332, run 44482187061, 2026-11-19T07:56:06Z",
+      "deployment_status": "github_pages_deployed_independently_verified",
+      "status": "published_verified_live",
+      "live_verified_at_utc": "2026-11-19T07:56:06Z"
     }
   ],
   "profile_updates": [
@@ -153,10 +156,25 @@
     }
   ],
   "production_deployment": {
-    "status": "not_started",
-    "confirmed_live_urls": 0,
-    "branch_protection": "historically unprotected; enforce exact-head test and performance CI; native branch rules recommended"
+    "status": "github_pages_deployed_three_distinct_canonicals_verified",
+    "confirmed_live_urls": 3,
+    "branch_protection": "Unprotected; exact-head PR test and performance checks passed in both PR #179 and recovery PR #180",
+    "confirmed_live_new_articles": 2,
+    "confirmed_updated_canonicals": 1,
+    "merge_pr": 179,
+    "recovery_pr": 180,
+    "publication_commit": "1850c8564247a0b6c27c53ab5146c22069e920fc",
+    "repair_commit": "b5171702a4c457370978022acdcabf6010c6a140",
+    "site_run": 44482187061,
+    "site_build": "success",
+    "site_deploy": "success",
+    "live_audit_job": 135418814332,
+    "live_audit_status": "success",
+    "live_verified_at_utc": "2026-11-19T07:56:06Z",
+    "verification_note": "GitHub Pages site workflow run 44482187061 mobile-audit job 135418814332 at 2026-11-19T07:56:06Z logged PASS for OpenAI /wealth/ legal benchmark, Anthropic existing /news/ IPO pricing canonical (new fingerprint after 18 Nov source update), and Anduril /wealth/ ASV Alpha analysis; each passed live canonical HTML, company profile/backlink, licensed cover, OG/Twitter WebP and AdSense loader. These are 2 new articles plus 1 substantive existing-canonical update, not 3 new articles."
   },
   "updated_at_utc": "2026-11-19",
-  "live_verification_reconciled_on": null
+  "live_verification_reconciled_on": "2026-11-19",
+  "confirmed_live_updated_canonicals": 1,
+  "quality_gate_notes": "Source, originality, photo and CI validations completed in PR #179; initial verifier failed because it assumed /wealth/ for the established Anthropic /news/ canonical; PR #180 fixed this without weakening checks; independent live verification then passed on actual production deployment."
 }
