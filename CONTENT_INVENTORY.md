@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 316
+- Published editorial articles and guides: 319
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -49,7 +49,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 262
+## Wealth articles and guides — 265
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -98,6 +98,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Changing Jobs and Pension Transfers in Ireland](https://compound.ie/wealth/changing-jobs-transfer-pension-ireland/)
 - [ChatGPT Enterprise Is on AWS Marketplace. Will Easier Buying Make OpenAI Stickier?](https://compound.ie/wealth/openai-aws-marketplace-enterprise-procurement-economics/)
 - [Cigna’s Pharmacy Revenue Rose 9% While Profit Fell 22%. Can $3 Billion Fix the Margin?](https://compound.ie/wealth/cigna-pharmacy-margin-modernization/)
+- [Cisco’s AI Growth Comes With a $21.9 Billion Supply Commitment. Is the Risk Worth It?](https://compound.ie/wealth/cisco-ai-network-supply-commitments/)
 - [Claude's November Outages Exposed a Hidden Cost of AI Agents: Missed Work](https://compound.ie/wealth/anthropic-claude-outage-enterprise-agent-reliability-november-2026/)
 - [Closing on a House in Ireland: Keys, First Payments and What Comes Next](https://compound.ie/wealth/closing-buying-home-ireland/)
 - [ConocoPhillips Returned 45% of Cash Flow. How Durable Is It When Price Does the Work?](https://compound.ie/wealth/conocophillips-cash-flow-shareholder-returns/)
@@ -105,6 +106,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [CVS Plans to Split in Two. Do the Segment Economics Support the Separation?](https://compound.ie/wealth/cvs-separation-segment-economics/)
 - [Databricks Wants Genie to Work Without Being Asked. Who Pays for the Always-On Agent?](https://compound.ie/wealth/databricks-always-on-genie-enterprise-agent-economics/)
 - [Databricks' $3 Billion EMEA Plan Is a Distribution Bet, Not a Revenue Forecast](https://compound.ie/wealth/databricks-three-billion-emea-investment-agent-platform-distribution/)
+- [Disney Is Spending $9 Billion on Experiences. Can Parks and Cruises Earn the Return?](https://compound.ie/wealth/disney-experiences-capital-spending-returns/)
 - [Dividend Investing in Ireland: How Dividend Stocks Work](https://compound.ie/wealth/dividend-investing-ireland/)
 - [Do I get public holiday pay if I don’t normally work that day?](https://compound.ie/wealth/public-holiday-pay-ireland-part-time/)
 - [Do I pay tax on solar export payments in Ireland?](https://compound.ie/wealth/tax-on-solar-export-payments-ireland/)
@@ -288,6 +290,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Thermo Fisher Earnings: Stronger Growth, Better Margins—and a Cash-Flow Test](https://compound.ie/wealth/thermo-fisher-earnings-organic-growth-cash-flow/)
 - [Thousands may be due PAYE refunds — but 2022 claims expire this December](https://compound.ie/news/paye-tax-refunds-2025-unclaimed-november-2026/)
 - [Two Irish couples earn €100,000. Why can their take-home pay differ by €9,556?](https://compound.ie/news/one-income-vs-two-incomes-ireland-2027/)
+- [Tyson’s Chicken Earned $1.75 Billion. Can It Carry Beef’s $1.22 Billion Loss?](https://compound.ie/wealth/tyson-chicken-beef-segment-profit/)
 - [Uber’s Audience Is Growing. Is the Platform Finally Showing Operating Leverage?](https://compound.ie/wealth/uber-audience-growth-operating-leverage/)
 - [UPS Is Delivering Fewer US Packages. Can Price and Automation Do the Rest?](https://compound.ie/wealth/ups-package-volume-pricing-automation/)
 - [Visa Earnings: Strong Payment Growth, but Watch the Incentives](https://compound.ie/wealth/visa-payments-growth-incentives/)

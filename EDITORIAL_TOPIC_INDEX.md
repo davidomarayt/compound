@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 316 published articles and guides, 69 tools,
+**Included:** 319 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -65,6 +65,7 @@ For the complete register (including 510+ company profiles), open
 - [Changing Jobs and Pension Transfers in Ireland](https://compound.ie/wealth/changing-jobs-transfer-pension-ireland/) — **Wealth**
 - [ChatGPT Enterprise Is on AWS Marketplace. Will Easier Buying Make OpenAI Stickier?](https://compound.ie/wealth/openai-aws-marketplace-enterprise-procurement-economics/) — **Wealth**
 - [Cigna’s Pharmacy Revenue Rose 9% While Profit Fell 22%. Can $3 Billion Fix the Margin?](https://compound.ie/wealth/cigna-pharmacy-margin-modernization/) — **Wealth**
+- [Cisco’s AI Growth Comes With a $21.9 Billion Supply Commitment. Is the Risk Worth It?](https://compound.ie/wealth/cisco-ai-network-supply-commitments/) — **Wealth**
 - [Claude's November Outages Exposed a Hidden Cost of AI Agents: Missed Work](https://compound.ie/wealth/anthropic-claude-outage-enterprise-agent-reliability-november-2026/) — **Wealth**
 - [Clocks go back in Ireland next Sunday: what changes, and what to check](https://compound.ie/news/clocks-go-back-ireland-october-2026/) — **Life**
 - [Closing on a House in Ireland: Keys, First Payments and What Comes Next](https://compound.ie/wealth/closing-buying-home-ireland/) — **Wealth**
@@ -74,6 +75,7 @@ For the complete register (including 510+ company profiles), open
 - [CVS Plans to Split in Two. Do the Segment Economics Support the Separation?](https://compound.ie/wealth/cvs-separation-segment-economics/) — **Wealth**
 - [Databricks Wants Genie to Work Without Being Asked. Who Pays for the Always-On Agent?](https://compound.ie/wealth/databricks-always-on-genie-enterprise-agent-economics/) — **Wealth**
 - [Databricks' $3 Billion EMEA Plan Is a Distribution Bet, Not a Revenue Forecast](https://compound.ie/wealth/databricks-three-billion-emea-investment-agent-platform-distribution/) — **Wealth**
+- [Disney Is Spending $9 Billion on Experiences. Can Parks and Cruises Earn the Return?](https://compound.ie/wealth/disney-experiences-capital-spending-returns/) — **Wealth**
 - [Dividend Investing in Ireland: How Dividend Stocks Work](https://compound.ie/wealth/dividend-investing-ireland/) — **Wealth**
 - [Do I get public holiday pay if I don’t normally work that day?](https://compound.ie/wealth/public-holiday-pay-ireland-part-time/) — **Wealth**
 - [Do I pay tax on solar export payments in Ireland?](https://compound.ie/wealth/tax-on-solar-export-payments-ireland/) — **Wealth**
@@ -296,6 +298,7 @@ For the complete register (including 510+ company profiles), open
 - [Thermo Fisher Earnings: Stronger Growth, Better Margins—and a Cash-Flow Test](https://compound.ie/wealth/thermo-fisher-earnings-organic-growth-cash-flow/) — **Wealth**
 - [Thousands may be due PAYE refunds — but 2022 claims expire this December](https://compound.ie/news/paye-tax-refunds-2025-unclaimed-november-2026/) — **Wealth**
 - [Two Irish couples earn €100,000. Why can their take-home pay differ by €9,556?](https://compound.ie/news/one-income-vs-two-incomes-ireland-2027/) — **Wealth**
+- [Tyson’s Chicken Earned $1.75 Billion. Can It Carry Beef’s $1.22 Billion Loss?](https://compound.ie/wealth/tyson-chicken-beef-segment-profit/) — **Wealth**
 - [Uber’s Audience Is Growing. Is the Platform Finally Showing Operating Leverage?](https://compound.ie/wealth/uber-audience-growth-operating-leverage/) — **Wealth**
 - [UPS Is Delivering Fewer US Packages. Can Price and Automation Do the Rest?](https://compound.ie/wealth/ups-package-volume-pricing-automation/) — **Wealth**
 - [Visa Earnings: Strong Payment Growth, but Watch the Incentives](https://compound.ie/wealth/visa-payments-growth-incentives/) — **Wealth**
