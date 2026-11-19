@@ -4,7 +4,7 @@
   "run_type": "pia_content_growth",
   "topic_fingerprint": "2026-11-12-oireachtas-committee-amended-finance-bill-98a-pia-section27-death-estate",
   "action": "substantive_canonical_guide_and_launch_tracker_update",
-  "status": "proposed_pr_pending_exact_sha_ci_and_production_verification",
+  "status": "merged_git_pages_deployed_individual_public_fingerprint_not_verified",
   "new_articles": 0,
   "existing_guide_updates": 1,
   "canonical_urls": [
@@ -50,13 +50,42 @@
   "qa": {
     "editorial": "Source-backed amendment terminology, source version, uncertainty and estate provisions checked manually",
     "source_dates": "Initiated Bill 19 Oct; committee-amended version 12 Nov; Revenue notice 7 Oct; primary checked 19 Nov",
-    "tests": "pending required exact PR head test and performance checks plus site build",
-    "live_guide_fingerprint": "not_yet_verified",
-    "live_tracker_fingerprint": "not_yet_verified",
-    "ads_and_social": "pending public inspection"
+    "tests": "CI run 44493727739: test and performance both success on exact PR head SHA 9c8d7f7c00e4a23574f87a39a80a7c6b5dca69b2; Github Pages build and deploy completed",
+    "live_guide_fingerprint": "Not independently confirmed: live web reader continued serving earlier 15 November legislative status, and did not show the 19 November section 747Y estate addition after merge",
+    "live_tracker_fingerprint": "Not independently confirmed: live web reader did not show 12 November committee-amended milestone after merge",
+    "ads_and_social": "Generic Pages site verification includes some canonical/ad checks but not this guide's exact live AdSense markup, CMP or social asset response; remain pending"
   },
   "work_branch": "automation/pia-committee-amended-bill-2026-11-19",
   "production_branch": "claude/clever-babbage-uibieq",
   "live_http_verified": false,
-  "verified_live_result": null
+  "verified_live_result": null,
+  "release": {
+    "pr_number": 183,
+    "pr_url": "https://github.com/davidomarayt/compound/pull/183",
+    "head_sha": "9c8d7f7c00e4a23574f87a39a80a7c6b5dca69b2",
+    "merge_sha": "76f62bef054547ceca33315c2fa3761137333f2c",
+    "merged_at_utc": "2026-11-19T09:18:56Z",
+    "required_pr_ci": {
+      "run_id": 44493727739,
+      "test": "success",
+      "performance": "success"
+    },
+    "github_pages": {
+      "run_id": 44495277037,
+      "url": "https://github.com/davidomarayt/compound/actions/runs/44495277037",
+      "build": "success",
+      "deploy": "success",
+      "general_verify_live": "success",
+      "finance_discovery_verify_live": "success",
+      "mobile_audit": "pending_at_reconciliation"
+    },
+    "note": "GitHub Pages checks verified general site and generic PIA canonical presence, not the exact new PIA text or tracker milestone"
+  },
+  "production_deployment_confirmed": true,
+  "production_deployment_note": "GitHub Pages deploy completed on merge SHA; new PIA-specific passage not yet independently verified publicly",
+  "follow_up": [
+    "Confirm the exact 19 November estate subsection and 12 November 98a tracker milestone on public canonical HTML after deployment/cache propagation, not merely generic HTTP 200",
+    "Check live guide OG/Twitter assets and AdSense script/CMP on the exact pages",
+    "Once verified, reconcile ledger without creating a competing article or resetting the global tracker source-check date"
+  ]
 }
