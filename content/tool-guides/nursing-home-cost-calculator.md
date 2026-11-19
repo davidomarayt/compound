@@ -16,6 +16,8 @@ The HSE typically assesses 80% of assessable income and 7.5% a year of assessabl
 
 Fair Deal funding starts from approval and the HSE says it cannot be backdated. If the person enters care earlier and has to pay the home privately, those weeks can make a large difference to the first-year budget. Use Advanced mode to enter how many weeks of private payment you want to model. This is your planning assumption. Ask your local Nursing Homes Support Office for the status of the application and confirm the start date before relying on funding.
 
+## Worked example with six weeks of private care
+
 Suppose the care quote is **€1,300 a week**, with **€50 in weekly extras**. A €450 assessed Fair Deal contribution brings the resident’s bill to **€500 a week** once approved, assuming the approved care rate is €1,300. Six private-pay weeks at €1,350 and 46 funded weeks at €500 give a **€31,100 first-year cost**, before any one-off costs. Twelve equal budget allocations would be **€2,591.67 per month**. The family would still need enough cash to cover the more expensive weeks when they fall due.
 
 ## Ask for a written list of extra charges
