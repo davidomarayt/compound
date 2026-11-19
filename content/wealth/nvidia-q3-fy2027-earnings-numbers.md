@@ -5,7 +5,7 @@ slug: nvidia-q3-fy2027-earnings-numbers
 canonical_path: /news/nvidia-q3-fy2027-earnings-numbers/
 pillar: wealth
 date: '2026-11-17'
-research_checked: '2026-11-17'
+research_checked: '2026-11-18'
 publication_status: published
 editorial_review_status: pending
 human_reviewed_by: null
@@ -21,6 +21,8 @@ hero_image_credit: "Gavin Phillips / Unsplash; published 20 October 2025; Unspla
 hero_image_source: https://unsplash.com/photos/nvidia-geforce-rtx-graphics-card-with-gold-accents-mEQUQqVk-MU
 require_pinned_hero: true
 sources:
+  - title: "NVIDIA Q3 FY2027 SEC Form 8-K Exhibit 99.1, 17 November 2026"
+    url: https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm
   - title: "NVIDIA — Third-quarter fiscal 2027 earnings release and unaudited financial statements, 17 November 2026"
     url: https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027
   - title: "NVIDIA — Fiscal Q2 2027 Form 10-Q, SEC, 26 August 2026"
@@ -33,7 +35,7 @@ sources:
 
 **Nvidia reported $115.844 billion in revenue for its fiscal third quarter, 103% above the same period last year. But the figure with the greatest implications for future profit may be its forecast for gross margin to fall from 74.8% to 71–72% next quarter.**
 
-The results released on **17 November 2026** cover the three months ended **25 October 2026**, part of Nvidia's fiscal year **2027**. They are actual reported results, not forecasts for calendar 2027. This analysis uses Nvidia's [official earnings announcement and unaudited financial statements](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027); the separate current-quarter SEC earnings filing was not yet accessible when this analysis was prepared, so no unverified 8-K accession is claimed.
+The results released on **17 November 2026** cover the three months ended **25 October 2026**, part of Nvidia's fiscal year **2027**. They are actual reported results, not forecasts for calendar 2027. This analysis uses Nvidia's [official earnings announcement and unaudited financial statements](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027); the figures were subsequently checked on 18 November against [SEC Form 8-K](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/nvda-20261117.htm) and its [Exhibit 99.1](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm). The exhibit contains unaudited statements furnished with the current report.
 
 ## Nvidia Q3 FY2027 earnings: the numbers
 
@@ -53,13 +55,19 @@ The rounded headline conceals a striking scale effect. Quarterly revenue added *
 
 Nvidia had previously guided to **$108 billion of Q3 revenue, plus or minus 2%**. Actual revenue beat that midpoint by **$7.844 billion**, approximately **7.3%**. That comparison is with *the company's own guidance*, not a claim about a Wall Street analyst consensus.
 
+## Net margin fell despite higher net income
+
+Dividing GAAP net income by revenue gives a **56.4% net margin** ($65.287bn ÷ $115.844bn). The comparable calculation is **62.0% in Q2** ($59.688bn ÷ $96.221bn) and **56.0% a year earlier** ($31.910bn ÷ $57.006bn). Net income grew **104.6% year on year**, while diluted EPS rose **107.7%**. These percentages are Compound calculations from the reported figures.
+
+The sequential net-margin decline was much larger than the 0.2 percentage-point gross-margin decline. Nvidia’s reconciliation shows net gains on equity securities falling from **$7.771bn in Q2 to $1.767bn in Q3**. That helps explain why GAAP net income grew more slowly than operating income. Such investment gains can vary between quarters and deserve separate attention when assessing operating performance. [SEC earnings exhibit](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm)
+
 ## Data Center accounted for nearly 93% of sales
 
-Nvidia separately reported **$107.6 billion in Data Center revenue**, up **21% from the prior quarter** and **110% year on year**. On rounded segment figures, Data Center represented approximately **92.9%** of group sales; Edge Computing supplied the remaining **$8.2 billion**, growing **14% sequentially** and **42% annually**.
+Nvidia separately reported **$107.6 billion in Data Center revenue**, up **21% from the prior quarter** and **110% year on year**. On rounded market-platform figures, Data Center represented approximately **92.9%** of group sales; Edge Computing supplied the remaining **$8.2 billion**, growing **14% sequentially** and **42% annually**.
 
 That concentration matters more than the headline that AI demand is expanding. Nvidia's investment case rests on sustained purchases of complete accelerated-computing systems by customers building infrastructure at extraordinary scale. The company says its **Vera Rubin NVL72** platform has begun shipping. That is a commercial milestone, but investors should distinguish equipment shipped to customers from the economic returns those customers will ultimately earn on their deployments.
 
-A large share of revenue coming from one reporting segment is not the same as reliance on a single buyer. Nevertheless, it means changes in infrastructure budgets, shipping schedules or product pricing can have an outsized influence on Nvidia's results.
+A large share of revenue coming from one market platform is not the same as reliance on a single buyer. Nevertheless, it means changes in infrastructure budgets, shipping schedules or product pricing can have an outsized influence on Nvidia's results.
 
 ## The real financial question: what happens to gross profit next quarter?
 
@@ -101,6 +109,8 @@ Export controls and Nvidia's decision to exclude China Data Center compute sales
 For the continuous fiscal-quarter history and live chart, use the [Nvidia (NVDA) earnings and stock page](/stocks/nvda/). See also [Compound's earnings archive](/wealth/earnings/) and [Nvidia stock research: software, margins and valuation](/wealth/nvidia-ai-gpu-margins-2026/).
 
 ## Sources and method
+
+- [SEC Form 8-K and earnings exhibits](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/nvda-20261117.htm), 17 November 2026, rechecked 18 November.
 
 - [Nvidia Q3 FY2027 results release, including statements of income, cash flow and outlook](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027), 17 November 2026.
 - [Nvidia Q2 FY2027 10-Q on the SEC](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm), for the previous fiscal quarter's regulated filing.

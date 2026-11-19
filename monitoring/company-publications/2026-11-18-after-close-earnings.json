@@ -1,0 +1,174 @@
+{
+  "date": "2026-11-18",
+  "status": "proposed",
+  "scan_since": "2026-11-11",
+  "scope": "Existing earnings pages; owner-authorised NVIDIA one-off article already published, updated at same URL",
+  "companies": {
+    "NVDA": {
+      "canonical_urls": [
+        "https://compound.ie/stocks/nvda/",
+        "https://compound.ie/news/nvidia-q3-fy2027-earnings-numbers/"
+      ],
+      "period": "Q3 FY2027 ended 2026-10-25",
+      "primary_sources": [
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/nvda-20261117.htm",
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm",
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27cfocommentary.htm",
+        "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+      ],
+      "verified_gaap": {
+        "revenue_usd": 115844000000,
+        "net_income_usd": 65287000000,
+        "diluted_eps_usd": 2.7
+      },
+      "claim_checks": "8-K identity, reporting period and Exhibit 99.1 verified. SEC exhibit agrees with issuer release. Income statement amounts in millions converted to USD. Net margins independently calculated 56.4%,62.0%,56.0% for Q3,Q2 and prior-year Q3. Equity securities gains 1.767bn versus7.771bn verified. Previous108bn guidance verified against Q2 SEC exhibit. Data Center is a market platform, distinct from reportable segments.",
+      "image": "Existing archival Gavin Phillips NVIDIA graphics-card photo under Unsplash License, pinned metadata retained. Live social image fetched HTTP200 image/webp."
+    },
+    "HD": {
+      "canonical_urls": [
+        "https://compound.ie/stocks/hd/"
+      ],
+      "verified_period": {
+        "fy": 2026,
+        "fp": "Q3",
+        "period_end": "2026-11-01",
+        "filed": "2026-11-17",
+        "form": "8-K",
+        "accession": "0000354950-26-000184",
+        "source": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000184/hd_exhibit991x11012026.htm",
+        "metrics": {
+          "revenue": {
+            "current": 43398000000,
+            "prior_year": 41352000000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP revenue"
+          },
+          "net_income": {
+            "current": 3713000000,
+            "prior_year": 3601000000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP net_income"
+          },
+          "diluted_eps": {
+            "current": 3.72,
+            "prior_year": 3.62,
+            "unit": "USD/shares",
+            "tag": "SEC Exhibit reported GAAP diluted_eps"
+          }
+        }
+      },
+      "claim_checks": "Original SEC 8-K and earnings exhibit inspected. Three-month GAAP statement values in millions converted to dollars, diluted EPS in USD/share. Prior-year same quarter taken directly from release. AMAT Q4 is reported standalone, not derived by subtraction. Existing history retained."
+    },
+    "LOW": {
+      "canonical_urls": [
+        "https://compound.ie/stocks/low/"
+      ],
+      "verified_period": {
+        "fy": 2026,
+        "fp": "Q3",
+        "period_end": "2026-10-30",
+        "filed": "2026-11-18",
+        "form": "8-K",
+        "accession": "0000060667-26-000126",
+        "source": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000126/exhibit991-10302026.htm",
+        "metrics": {
+          "revenue": {
+            "current": 22756000000,
+            "prior_year": 20813000000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP revenue"
+          },
+          "net_income": {
+            "current": 1673000000,
+            "prior_year": 1616000000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP net_income"
+          },
+          "diluted_eps": {
+            "current": 2.98,
+            "prior_year": 2.88,
+            "unit": "USD/shares",
+            "tag": "SEC Exhibit reported GAAP diluted_eps"
+          }
+        }
+      },
+      "claim_checks": "Original SEC 8-K and earnings exhibit inspected. Three-month GAAP statement values in millions converted to dollars, diluted EPS in USD/share. Prior-year same quarter taken directly from release. AMAT Q4 is reported standalone, not derived by subtraction. Existing history retained."
+    },
+    "TGT": {
+      "canonical_urls": [
+        "https://compound.ie/stocks/tgt/"
+      ],
+      "verified_period": {
+        "fy": 2026,
+        "fp": "Q3",
+        "period_end": "2026-10-31",
+        "filed": "2026-11-18",
+        "form": "8-K",
+        "accession": "0000027419-26-000051",
+        "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000051/a2026q3ex-99.htm",
+        "metrics": {
+          "revenue": {
+            "current": 27067000000,
+            "prior_year": 25270000000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP revenue"
+          },
+          "net_income": {
+            "current": 1211000000,
+            "prior_year": 689000000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP net_income"
+          },
+          "diluted_eps": {
+            "current": 2.65,
+            "prior_year": 1.51,
+            "unit": "USD/shares",
+            "tag": "SEC Exhibit reported GAAP diluted_eps"
+          }
+        }
+      },
+      "claim_checks": "Original SEC 8-K and earnings exhibit inspected. Three-month GAAP statement values in millions converted to dollars, diluted EPS in USD/share. Prior-year same quarter taken directly from release. AMAT Q4 is reported standalone, not derived by subtraction. Existing history retained."
+    },
+    "AMAT": {
+      "canonical_urls": [
+        "https://compound.ie/stocks/amat/"
+      ],
+      "release": {
+        "ended": "2026-10-25",
+        "period": "Q4 and FY2026",
+        "published": "2026-11-12",
+        "source": "https://www.sec.gov/Archives/edgar/data/6951/000162828026073360/exhibit991q42026earningsre.htm",
+        "summary": "Applied Materials reported fourth-quarter revenue of $10.409 billion, GAAP net income of $2.718 billion and GAAP diluted EPS of $3.40. Non-GAAP diluted EPS was $4.16. Full-year revenue was $34.446 billion and GAAP diluted EPS was $12.62. All amounts are US dollars."
+      },
+      "claim_checks": "SEC earnings exhibit verified. Standalone Q4 values displayed through supported release summary because quarterly-table validator excludes Q4. GAAP and non-GAAP EPS explicitly separated."
+    }
+  },
+  "checks": {
+    "offline_tests": "32 passed before four-company addition; rerun pending",
+    "build": "pending",
+    "duplicate": "Existing published article found in index, inventory and source. Update original URL. No overlapping open PR.",
+    "concurrency": "No running workflow at pre-write read. Existing compound-earnings-publisher controls retained.",
+    "human_review": "No human approval asserted."
+  },
+  "coverage": {
+    "sec_issuers": 505,
+    "live_pages_fetched": 505,
+    "fetch_errors": 0,
+    "since_inclusive": "2026-11-11",
+    "foreign_watch": "10 checked, 0 new discovery items, 35 pending",
+    "queue": "103 items pending before run; NVDA integrity issue addressed",
+    "pending_manual_limit": [
+      "P",
+      "PANW",
+      "TJX",
+      "ATO annual table",
+      "DHI annual table"
+    ],
+    "prior_unresolved": [
+      "BRK-B comparable EPS",
+      "VMRK comparable revenue"
+    ],
+    "amendments": "TECH 10-Q/A corrects signatures only. AMD 8-K/A item3.02, SWKS and TPR item5.02/5.07 are outside earnings-results changes. EXPD November18 item2.02 is investor-day presentation, not a fresh quarterly release.",
+    "limitations": "Pending releases and annual tables require source reconciliation on subsequent runs. No claim that all covered profiles are current."
+  }
+}

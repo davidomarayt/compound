@@ -2,33 +2,33 @@
   "cik": 354950,
   "company": "Home Depot (The)",
   "latest": {
-    "accession": "0001628280-26-058715",
-    "filed": "2026-08-25",
-    "form": "10-Q",
-    "fp": "Q2",
+    "accession": "0000354950-26-000184",
+    "filed": "2026-11-17",
+    "form": "8-K",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 4.79,
-        "prior_year": 4.58,
-        "tag": "EarningsPerShareDiluted",
+        "current": 3.72,
+        "prior_year": 3.62,
+        "tag": "SEC Exhibit reported GAAP diluted_eps",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 4766000000,
-        "prior_year": 4551000000,
-        "tag": "NetIncomeLoss",
+        "current": 3713000000,
+        "prior_year": 3601000000,
+        "tag": "SEC Exhibit reported GAAP net_income",
         "unit": "USD"
       },
       "revenue": {
-        "current": 47861000000,
-        "prior_year": 45277000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 43398000000,
+        "prior_year": 41352000000,
+        "tag": "SEC Exhibit reported GAAP revenue",
         "unit": "USD"
       }
     },
-    "period_end": "2026-08-02",
-    "source": "https://www.sec.gov/Archives/edgar/data/354950/000162828026058715/hd-20260802.htm"
+    "period_end": "2026-11-01",
+    "source": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000184/hd_exhibit991x11012026.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-08-02",
       "source": "https://www.sec.gov/Archives/edgar/data/354950/000162828026058715/hd-20260802.htm"
+    },
+    {
+      "accession": "0000354950-26-000184",
+      "filed": "2026-11-17",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 3.72,
+          "prior_year": 3.62,
+          "tag": "SEC Exhibit reported GAAP diluted_eps",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 3713000000,
+          "prior_year": 3601000000,
+          "tag": "SEC Exhibit reported GAAP net_income",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 43398000000,
+          "prior_year": 41352000000,
+          "tag": "SEC Exhibit reported GAAP revenue",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-11-01",
+      "source": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000184/hd_exhibit991x11012026.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "HD",
-  "updated": "2026-10-15"
+  "updated": "2026-11-18"
 }

@@ -2,33 +2,33 @@
   "cik": 27419,
   "company": "Target Corporation",
   "latest": {
-    "accession": "0000027419-26-000042",
-    "filed": "2026-08-28",
-    "form": "10-Q",
-    "fp": "Q2",
+    "accession": "0000027419-26-000051",
+    "filed": "2026-11-18",
+    "form": "8-K",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 4.11,
-        "prior_year": 2.05,
-        "tag": "EarningsPerShareDiluted",
+        "current": 2.65,
+        "prior_year": 1.51,
+        "tag": "SEC Exhibit reported GAAP diluted_eps",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 1877000000,
-        "prior_year": 935000000,
-        "tag": "NetIncomeLoss",
+        "current": 1211000000,
+        "prior_year": 689000000,
+        "tag": "SEC Exhibit reported GAAP net_income",
         "unit": "USD"
       },
       "revenue": {
-        "current": 26539000000,
-        "prior_year": 25211000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 27067000000,
+        "prior_year": 25270000000,
+        "tag": "SEC Exhibit reported GAAP revenue",
         "unit": "USD"
       }
     },
-    "period_end": "2026-08-01",
-    "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000042/tgt-20260801.htm"
+    "period_end": "2026-10-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000051/a2026q3ex-99.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-08-01",
       "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000042/tgt-20260801.htm"
+    },
+    {
+      "accession": "0000027419-26-000051",
+      "filed": "2026-11-18",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.65,
+          "prior_year": 1.51,
+          "tag": "SEC Exhibit reported GAAP diluted_eps",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1211000000,
+          "prior_year": 689000000,
+          "tag": "SEC Exhibit reported GAAP net_income",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 27067000000,
+          "prior_year": 25270000000,
+          "tag": "SEC Exhibit reported GAAP revenue",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/27419/000002741926000051/a2026q3ex-99.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "TGT",
-  "updated": "2026-10-15"
+  "updated": "2026-11-18"
 }

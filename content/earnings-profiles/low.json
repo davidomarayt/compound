@@ -2,33 +2,33 @@
   "cik": 60667,
   "company": "Lowe's",
   "latest": {
-    "accession": "0000060667-26-000117",
-    "filed": "2026-08-27",
-    "form": "10-Q",
-    "fp": "Q2",
+    "accession": "0000060667-26-000126",
+    "filed": "2026-11-18",
+    "form": "8-K",
+    "fp": "Q3",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": 4.27,
-        "prior_year": 4.27,
-        "tag": "EarningsPerShareDiluted",
+        "current": 2.98,
+        "prior_year": 2.88,
+        "tag": "SEC Exhibit reported GAAP diluted_eps",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 2399000000,
-        "prior_year": 2398000000,
-        "tag": "NetIncomeLoss",
+        "current": 1673000000,
+        "prior_year": 1616000000,
+        "tag": "SEC Exhibit reported GAAP net_income",
         "unit": "USD"
       },
       "revenue": {
-        "current": 25956000000,
-        "prior_year": 23959000000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "current": 22756000000,
+        "prior_year": 20813000000,
+        "tag": "SEC Exhibit reported GAAP revenue",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000117/low-20260731.htm"
+    "period_end": "2026-10-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000126/exhibit991-10302026.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-07-31",
       "source": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000117/low-20260731.htm"
+    },
+    {
+      "accession": "0000060667-26-000126",
+      "filed": "2026-11-18",
+      "form": "8-K",
+      "fp": "Q3",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.98,
+          "prior_year": 2.88,
+          "tag": "SEC Exhibit reported GAAP diluted_eps",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 1673000000,
+          "prior_year": 1616000000,
+          "tag": "SEC Exhibit reported GAAP net_income",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 22756000000,
+          "prior_year": 20813000000,
+          "tag": "SEC Exhibit reported GAAP revenue",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000126/exhibit991-10302026.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "LOW",
-  "updated": "2026-10-15"
+  "updated": "2026-11-18"
 }
