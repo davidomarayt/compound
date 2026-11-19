@@ -429,6 +429,27 @@ assert.equal(retrofitAdvanced.net_cost, '€2,550.00');
 
 
 // Family & Life Planning + Health flagship regression coverage.
+// Fair Deal budgets use a separate private quote and optional approved rate.
+const nursingQuote = {private_fee: 1300, weekly_extras: 50, use_fair_deal: true, contribution: 450};
+const nursingDefault = calculators.nursing_home_cost(nursingQuote);
+assert.equal(nursingDefault.first_year, '€26,000.00');
+assert.equal(nursingDefault.weekly_support, '€850.00');
+assert.equal(nursingDefault.private_weekly, '€1,350.00');
+const nursingWithWait = calculators.nursing_home_cost({
+  ...nursingQuote, __advanced: true, private_weeks: 6, approved_rate: 1400, once: 100
+});
+assert.equal(nursingWithWait.first_year, '€31,200.00');
+assert.equal(nursingWithWait.average_monthly, '€2,600.00');
+assert.equal(nursingWithWait.weekly_support, '€950.00');
+assert.equal(nursingWithWait.private_year, '€70,300.00');
+const noNursingSupport = calculators.nursing_home_cost({...nursingQuote, contribution: 1500});
+assert.equal(noNursingSupport.first_year, noNursingSupport.private_year);
+assert.equal(noNursingSupport.weekly_support, '€0.00');
+assert.equal(noNursingSupport.funded_weekly, '—');
+const privateCare = calculators.nursing_home_cost({private_fee: 1300, weekly_extras: 50, use_fair_deal: false});
+assert.equal(privateCare.first_year, '€70,200.00');
+assert.equal(privateCare.weekly_support, '—');
+
 // Department example, split coverage years and independent sibling awards.
 const childcareQuote = {fee_1: 280, rate_1: 2.14, booked_1: 45, funded_1: 45};
 const childcareCost = calculators.childcare_cost(childcareQuote);

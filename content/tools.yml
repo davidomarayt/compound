@@ -3059,6 +3059,51 @@ tools:
       - {title: "MyFutureFund — contribution rates and €80,000 threshold", url: "https://myfuturefund.ie/participant/contributions"}
       - {title: "MyFutureFund — participant guide", url: "https://myfuturefund.ie/participant-guide"}
 
+  - slug: nursing-home-cost-calculator
+    title: Nursing Home Cost Calculator Ireland
+    category: Family & Life Planning
+    formula: nursing_home_cost
+    summary: Budget for a nursing home in Ireland. Compare a private quote with your Fair Deal contribution, extra charges and any time you expect to pay privately before funding starts.
+    meta_description: Calculate weekly, monthly and first-year nursing home costs in Ireland. Compare private fees with Fair Deal and budget for extras and weeks before funding.
+    updated: 2026-11-19
+    quick_answer: "On an illustrative €1,300 weekly quote with €50 in extras, private care costs €1,350 a week. With a €450 Fair Deal contribution and the same extras, you pay €500 a week after funding starts."
+    basic_note: "The starting figures are an example. Estimate a full year of private care, or compare it with 52 weeks on Fair Deal using your weekly contribution."
+    advanced_note: "Add private-pay weeks before funding, a separate approved care rate if known, and one-off costs."
+    result_note: "This is an estimate for one resident. The HSE sets your actual contribution. Confirm the private quote, extra charges and funding start date directly."
+    hero_image_url: /static/images/evergreen/nursing-home-cost-ireland.jpg
+    hero_image_alt: Two older adults in wheelchairs clapping at a social event
+    hero_image_credit: Age Cymru
+    hero_image_source: https://unsplash.com/photos/elderly-couple-clapping-in-wheelchairs-mfyKb-cutSY
+    require_pinned_hero: true
+    next_step:
+      title: Find and compare nursing homes on FairPath
+      description: Search by county, check published rates and preview inspection summaries for homes on your shortlist.
+      links:
+        - {label: Find a nursing home, url: "https://fairpath.ie/nursing-homes-near-me"}
+        - {label: Browse the price list, url: "https://fairpath.ie/nursing-home-prices-ireland"}
+        - {label: View Care Report previews, url: "https://fairpath.ie/care-reports"}
+    fields:
+      - {id: private_fee, label: Private weekly care quote, type: number, prefix: "€", default: 1300, min: 0, max: 15000, step: 0.01, help: "Use the written weekly care fee before extras. Published Fair Deal rates can differ from a private quote."}
+      - {id: weekly_extras, label: Extra charges per week, type: number, prefix: "€", default: 50, min: 0, max: 15000, step: 0.01, help: "Enter charges billed on top of care. The model uses the same weekly extras before and after approval."}
+      - {id: use_fair_deal, label: Include a Fair Deal scenario, type: checkbox, default: true, help: "Untick for a private-only budget. The €450 starting contribution is illustrative."}
+      - {id: contribution, label: Weekly Fair Deal contribution, type: number, prefix: "€", default: 450, min: 0, max: 15000, step: 0.01, show_if: use_fair_deal, help: "Use the HSE assessment letter or an estimate. Enter €0 only if that is your contribution."}
+      - {id: approved_rate, label: Approved Fair Deal rate if different, type: number, prefix: "€", default: 0, min: 0, max: 15000, step: 0.01, advanced: true, show_if: use_fair_deal, help: "Use the approved weekly rate before extras. Leaving this at €0 uses the private fee as a proxy for the care rate."}
+      - {id: private_weeks, label: Weeks paying privately before funding, type: number, default: 0, min: 0, max: 52, step: 1, advanced: true, show_if: use_fair_deal, help: "Model 0 to 52 weeks. Fair Deal funding is payable from approval and cannot be backdated."}
+      - {id: once, label: One-off costs in the first year, type: number, prefix: "€", default: 0, min: 0, max: 50000, step: 0.01, advanced: true, help: "Only enter costs above the quoted weekly fee. Leave out a deposit that is fully credited against fees or repaid."}
+    results:
+      - {id: first_year, label: Estimated first-year cost to you}
+      - {id: average_monthly, label: Average monthly cost in year one}
+      - {id: private_weekly, label: Private weekly bill with extras}
+      - {id: funded_weekly, label: Your weekly bill when Fair Deal starts}
+      - {id: weekly_support, label: Estimated weekly HSE support after approval}
+      - {id: private_year, label: First year if paid entirely privately}
+    sources:
+      - {title: "HSE · How Fair Deal works, charges and approved home prices", url: "https://www.hse.ie/services/schemes-allowances/fair-deal-scheme/about/"}
+      - {title: "HSE · Financial assessment and worked examples", url: "https://www2.hse.ie/services/schemes-allowances/fair-deal-scheme/financial-assessment/"}
+      - {title: "HSE · Three-year cap", url: "https://www2.hse.ie/services/schemes-allowances/fair-deal-scheme/3-year-cap/"}
+      - {title: "HSE · Optional nursing home loan", url: "https://www2.hse.ie/services/schemes-allowances/fair-deal-scheme/nursing-home-loan/"}
+      - {title: "FairPath · Published nursing home price directory", url: "https://fairpath.ie/nursing-home-prices-ireland"}
+
   - slug: childcare-cost-calculator
     title: Childcare Cost Calculator Ireland
     category: Family & Life Planning
@@ -3075,6 +3120,12 @@ tools:
     hero_image_credit: Angie Dutton
     hero_image_source: https://unsplash.com/photos/wooden-shape-sorter-toy-with-colorful-blocks-E1shiIGT8Oo
     require_pinned_hero: true
+    next_step:
+      title: Find a childcare provider near you
+      description: Use SchoolPath to check local services, registered age ranges and available Tusla inspection coverage before requesting a quote.
+      links:
+        - {label: Crèches and preschools, url: "https://schoolpath.ie/maps/creches-preschools/"}
+        - {label: After-school care, url: "https://schoolpath.ie/maps/after-school-care/"}
     fields:
       - {id: fee_1, label: Weekly fee before NCS, type: number, prefix: "€", default: 280, min: 0, max: 5000, step: 0.01, help: "Use your provider’s fee for the exact days booked. If using ECCE, enter the fee after the ECCE deduction and before NCS."}
       - {id: rate_1, label: NCS hourly award, type: number, prefix: "€", suffix: "/hour", default: 2.14, min: 0, max: 30, step: 0.01, help: "Enter the hourly rate on your award, or €0 if you will not use NCS."}

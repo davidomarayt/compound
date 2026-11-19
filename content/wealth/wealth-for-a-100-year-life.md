@@ -172,6 +172,8 @@ Care is both a financial question and a question about preferences. Who would yo
 
 Ireland's **Fair Deal** scheme supports approved long-term nursing home care after care-needs and financial assessments. It does not cover all care or all extras: short-term care and additional charges for some services fall outside it. Funding is not backdated to cover a period before approval. [HSE (6)](https://www2.hse.ie/services/schemes-allowances/fair-deal-scheme/about/).
 
+Use the [Nursing Home Cost Calculator](/nursing-home-cost-calculator/) to budget for a written fee, your assessed contribution, extras and private-pay weeks before approval.
+
 The financial assessment considers income and assets, with different rules for single applicants and couples. The treatment of the home has specific provisions, including a three-year cap; this should not be read as a cap on every contribution or on all care costs. Use the HSE's assessment guidance and seek case-specific advice before transferring property or making assumptions about an inheritance. [HSE (7)](https://www2.hse.ie/services/schemes-allowances/fair-deal-scheme/financial-assessment/).
 
 The **HSE Home Support Service** is separate. It is mainly for people aged 65 or over who need help to remain at, or return, home, with some younger people eligible. The service is free, does not require a medical card and does not assess income. Support depends on needs; extra support beyond what the HSE offers may have to be paid for privately. [HSE (8)](https://www2.hse.ie/services/home-support-service/home-support-service-for-older-people/). Ask what is available in your circumstances rather than assuming a particular number of hours.

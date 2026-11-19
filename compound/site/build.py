@@ -193,6 +193,7 @@ TOOL_PRIMARY_RESULTS = {
     "solar-ev-battery-optimiser": "best_scenario",
     "whole-house-retrofit-planner": "payback",
     "myfuturefund-calculator": "total_2026",
+    "nursing-home-cost-calculator": "first_year",
     "childcare-cost-calculator": "monthly",
     "childcare-return-to-work-calculator": "household_gain",
     "mortgage-switch-calculator": "lifetime_difference",

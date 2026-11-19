@@ -631,6 +631,12 @@
         items.push('The statutory employee contribution rate starts lower and phases upward over time, so future take-home impact will not stay at the 2026 level.');
         items.push('Employer and State contributions are part of the retirement value even though they are not employee take-home deductions.');
         break;
+      case 'nursing_home_cost':
+        items.push('The first-year budget uses 52 weeks. The monthly estimate averages that cash cost over 12 months.');
+        items.push(v.use_fair_deal
+          ? 'Check the approved start date and enter any private-pay weeks in Advanced. The estimated HSE payment applies to eligible care only.'
+          : 'This budget assumes private payment for all 52 weeks. Turn on a Fair Deal scenario to compare what changes after approval.');
+        break;
       case 'childcare_cost':
         items.push('The monthly number is your annual cost spread across 12 months. A provider that bills every four weeks issues 13 bills over a full 52-week year.');
         items.push('Use the booked fee for the exact days and the NCS hours agreed with your provider. Change both when comparing schedules.');
@@ -1855,6 +1861,34 @@
         __chart:{type:'line',title:'Projected MyFutureFund balance',caption:'The projection applies the statutory calendar-year contribution phases to the annual pay assumption, subject to the €80,000 annual modelling cap. Actual eligibility and payroll collection use NAERSA rules including pay-period assessment.',labels,series:[{label:'Projected fund',values:funds},{label:'Starting fund + all contributions',values:contributionCum}]}
       };
     },
+    nursing_home_cost(v){
+      const toCents = value => Math.round(value * 100);
+      const privateFee = toCents(v.private_fee);
+      const extras = toCents(v.weekly_extras);
+      const oneOff = v.__advanced ? toCents(v.once) : 0;
+      const privateBill = privateFee + extras;
+      const approvedRate = v.__advanced && v.approved_rate > 0 ? toCents(v.approved_rate) : privateFee;
+      const careContribution = v.use_fair_deal ? toCents(v.contribution) : 0;
+      const support = v.use_fair_deal ? Math.max(0, approvedRate - careContribution) : 0;
+      const fundedBill = careContribution + extras;
+      const privateWeeks = support > 0 ? (v.__advanced ? Math.round(v.private_weeks) : 0) : 52;
+      const privateYear = privateBill * 52 + oneOff;
+      const firstYear = privateBill * privateWeeks + fundedBill * (52 - privateWeeks) + oneOff;
+      return {
+        first_year: money(firstYear / 100),
+        average_monthly: money(firstYear / 1200),
+        private_weekly: money(privateBill / 100),
+        funded_weekly: support > 0 ? money(fundedBill / 100) : '—',
+        weekly_support: v.use_fair_deal ? money(support / 100) : '—',
+        private_year: money(privateYear / 100),
+        __chart: {
+          type: 'bar', title: 'Compare the first year of care',
+          caption: 'Both totals include the weekly extras and any one-off costs you entered.',
+          labels: ['All private', 'Your scenario'],
+          series: [{label: 'First-year cost to you', values: [privateYear / 100, firstYear / 100]}]
+        }
+      };
+    },
     childcare_cost(v){
       const children = [1];
       if(v.__advanced && v.add_2) children.push(2);
@@ -2244,7 +2278,7 @@
       const values={}; let invalid=false, invalidField=null, invalidMessage='';
       root.querySelectorAll('[data-field]').forEach(el=>el.removeAttribute('aria-invalid'));
       root.querySelectorAll('[data-field]').forEach(el=>{
-        if(root.dataset.calculator==='childcare_cost' && el.closest('.tool-field')?.hidden) return;
+        if(['childcare_cost','nursing_home_cost'].includes(root.dataset.calculator) && el.closest('.tool-field')?.hidden) return;
         const raw=el.value;
         if(el.type==='checkbox'){ values[el.dataset.field]=el.checked; return; }
         if(el.type==='date'){

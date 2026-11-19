@@ -650,8 +650,8 @@
   margin-top: 0.45rem;
   font-size: 0.8rem;
 }
-.childcare-next h2 { margin-top: 0; }
-.childcare-next p { max-width: 65ch; }
+.tool-next h2 { margin-top: 0; }
+.tool-next p { max-width: 65ch; }
 
 @media (max-width: 700px) {
   .tool-page-header-with-photo { grid-template-columns: minmax(0, 1fr); }

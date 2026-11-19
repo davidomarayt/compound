@@ -4,8 +4,8 @@
 {% block head %}
 <link rel="canonical" href="{{ site_url }}{{ tool.url }}">
 <meta property="og:type" content="website"><meta property="og:title" content="{{ tool.seo_title or tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="{{ 'summary_large_image' if tool.hero_image_url else 'summary' }}">
-{% if tool.slug == "salary-hourly-rate-calculator" %}<link rel="stylesheet" href="/static/tools.css?v=20261117-salary-upgrade">{% else %}<link rel="stylesheet" href="/static/tools.css?v=20261119-childcare-cost">{% endif %}
-{% if tool.slug == "mortgage-calculator" %}<script defer src="/static/mortgage-calculator.js?v=20260927-performance1"></script>{% elif tool.slug == "salary-hourly-rate-calculator" %}<script defer src="/static/tools.js?v=20261117-salary-upgrade"></script>{% else %}<script defer src="/static/tools.js?v=20261119-childcare-cost"></script>{% endif %}
+{% if tool.slug == "salary-hourly-rate-calculator" %}<link rel="stylesheet" href="/static/tools.css?v=20261117-salary-upgrade">{% else %}<link rel="stylesheet" href="/static/tools.css?v=20261119-nursing-home-cost">{% endif %}
+{% if tool.slug == "mortgage-calculator" %}<script defer src="/static/mortgage-calculator.js?v=20260927-performance1"></script>{% elif tool.slug == "salary-hourly-rate-calculator" %}<script defer src="/static/tools.js?v=20261117-salary-upgrade"></script>{% else %}<script defer src="/static/tools.js?v=20261119-nursing-home-cost"></script>{% endif %}
 {% if tool.hero_image_url %}
 <meta property="og:image" content="{{ site_url }}{{ tool.hero_image_url }}">
 <meta property="og:image:alt" content="{{ tool.hero_image_alt }}">
@@ -64,6 +64,9 @@
         <p class="pia-quickstarts-note">Examples start at €0 and assume 6% annual returns, not a forecast. Advanced fee and inflation settings stay as entered. <a href="#pia-calculator-estimate">See results ↓</a></p>
         <p class="pia-quickstarts-status" data-pia-preset-status role="status" aria-live="polite"></p>
       </div>
+      {% endif %}
+      {% if tool.slug == "nursing-home-cost-calculator" %}
+      <p class="tool-field-help">Still waiting for your assessment? <a href="https://fairpath.ie/fair-deal-calculator">Estimate your weekly Fair Deal contribution on FairPath</a>.</p>
       {% endif %}
       <div class="tool-fields">
       {% for field in tool.fields %}
@@ -134,10 +137,10 @@
     <div class="tool-chart-scroll"><div class="tool-chart-canvas" data-chart-canvas></div></div>
     <div class="tool-chart-legend" data-chart-legend></div>
   </section>
-  {% if tool.slug == "childcare-cost-calculator" %}
-  <aside class="tool-more childcare-next" aria-labelledby="childcare-next-title">
-    <div><h2 id="childcare-next-title">Find a childcare provider near you</h2><p>Use SchoolPath to check local services, registered age ranges and available Tusla inspection coverage before requesting a quote.</p></div>
-    <div class="tool-more-links"><a href="https://schoolpath.ie/maps/creches-preschools/">Crèches and preschools</a><a href="https://schoolpath.ie/maps/after-school-care/">After-school care</a></div>
+  {% if tool.next_step %}
+  <aside class="tool-more tool-next" aria-labelledby="tool-next-title">
+    <div><h2 id="tool-next-title">{{ tool.next_step.title }}</h2><p>{{ tool.next_step.description }}</p></div>
+    <div class="tool-more-links">{% for link in tool.next_step.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}</div>
   </aside>
   {% else %}
   <section class="tool-use-strip" aria-label="How to use this calculator">

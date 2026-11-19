@@ -29,3 +29,7 @@ Licensed under https://unsplash.com/license. Illustrative photographs; people pi
 ## Childcare cost calculator
 
 - `evergreen/childcare-cost-ireland.jpg`: Angie Dutton / Unsplash. https://unsplash.com/photos/wooden-shape-sorter-toy-with-colorful-blocks-E1shiIGT8Oo · Unsplash License (https://unsplash.com/license).
+
+## Nursing home cost calculator
+
+- `evergreen/nursing-home-cost-ireland.jpg`: Age Cymru / Unsplash. https://unsplash.com/photos/elderly-couple-clapping-in-wheelchairs-mfyKb-cutSY · Unsplash License (https://unsplash.com/license). Illustrative photograph.
