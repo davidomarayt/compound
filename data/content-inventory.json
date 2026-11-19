@@ -271,6 +271,28 @@
         "status": "published"
       },
       {
+        "title": "Anduril and HD Hyundai Built a 600-Tonne Autonomous Ship. Who Will Pay for a Fleet?",
+        "url": "/wealth/anduril-hd-hyundai-asv-alpha-navy-procurement-economics/",
+        "source": "content/wealth/anduril-hd-hyundai-asv-alpha-navy-procurement-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "anduril-hd-hyundai-asv-alpha-navy-procurement-economics",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-anduril",
+          "anduril",
+          "hd-hyundai",
+          "autonomous-vessels",
+          "navy",
+          "defence-tech"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Anthropic IPO by the Numbers: The $61 Billion Share Sale, $900 Billion Compute Bet and Valuation Test",
         "url": "/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/",
         "source": "content/wealth/anthropic-ipo-2026-prospectus-numbers-valuation.md",
@@ -3965,6 +3987,28 @@
           "lab-ai",
           "ai-benchmarks",
           "science"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "OpenAI's Astra for Law Leads a Legal AI Benchmark. Why Does It Still Miss Four in Five Tasks?",
+        "url": "/wealth/openai-astra-law-legal-benchmark-reliability-economics/",
+        "source": "content/wealth/openai-astra-law-legal-benchmark-reliability-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-astra-law-legal-benchmark-reliability-economics",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "legal-ai",
+          "law-firms",
+          "model-evaluation",
+          "enterprise-ai"
         ],
         "status": "published"
       },
