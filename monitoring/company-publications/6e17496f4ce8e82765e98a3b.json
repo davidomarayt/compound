@@ -2,7 +2,7 @@
   "story_fingerprint": "6e17496f4ce8e82765e98a3b",
   "company": "CSCO",
   "date": "2026-11-19",
-  "status": "prepared_not_published",
+  "status": "published",
   "publication_kind": "new_analysis",
   "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to all factual, editorial, image, test, CI, deployment and live-verification gates.",
   "story_thesis": "AI networking growth is creating a material opportunity, but Cisco must convert a sharply higher supplier commitment into margin and cash.",
@@ -83,12 +83,34 @@
     "build": "Passed production-base build: 319 articles, 837 tags, 35 pages and 62 tools after restoring the current branch's approved image cache without committing unrelated assets.",
     "render": "Rendered HTML inspected: correct canonical, one H1, indexable, stock-profile/earnings-hub/diversification links and visible source credit. Sitemap and finance catalogue include the canonical. The generated 1200x675 WebP social image was visually inspected.",
     "ads": "Standard AdSense loader rendered with client ca-pub-6115783809711785. The site has no fixed article_top/article_bottom slot IDs configured, so no fixed slot markup is expected; Auto Ads remains enabled through the standard loader and consent controls.",
-    "ci": "pending exact-head CI",
-    "deployment": "not merged; no live publication claimed"
+    "ci": "GitHub Actions CI run 44500532887 passed on exact PR head 92fa00a5320dfbb36a5334917a8b22718e3ed5b3: full tests, production build and mobile Lighthouse job all succeeded.",
+    "deployment": "PR #185 merged as 9d617b94256ded563a05290d50cadc1c8171637b. Its initial Pages run was superseded by later branch activity; replacement site run 44502660724 on descendant f8750329ea8a12926f9f57128e17bfc377f01b1f built and deployed the same article successfully. Live and finance-discovery jobs passed."
   },
   "article_sha256": "857c76147b3f4f52daa763fb9ab4eaaea4998c42cf40da7117a4e8b2d392e0f8",
   "published_image_sha256": "071b7d237208606bad9c7735f9bab700f2c05efc090332367dc080819b258017",
-  "social_image_sha256": "4ce2ebf5e0cac71df720c36bf73d7876c011aa2155608e4f8b4e35f8883a990f",
-  "publication_state": "prepared_not_published",
-  "new_articles_published": 0
+  "social_image_sha256": "d47850a1488f43ee26a0a02165720c77dfcd82e7aeefb7c42148dd5f7490b219",
+  "pull_request": "https://github.com/davidomarayt/compound/pull/185",
+  "validated_head": "92fa00a5320dfbb36a5334917a8b22718e3ed5b3",
+  "merge_commit": "9d617b94256ded563a05290d50cadc1c8171637b",
+  "deployment_head": "f8750329ea8a12926f9f57128e17bfc377f01b1f",
+  "deployment_url": "https://github.com/davidomarayt/compound/actions/runs/44502660724",
+  "live_verified_at": "2026-11-19T10:16:46Z",
+  "live_verification": {
+    "article_http_status": 200,
+    "canonical": "https://compound.ie/wealth/cisco-ai-network-supply-commitments/",
+    "indexable": true,
+    "source_credit_present": true,
+    "stock_profile_link_present": true,
+    "earnings_hub_link_present": true,
+    "ads_loader_present": true,
+    "fixed_article_slots": "not configured in content/site.yml; standard consent-aware Auto Ads loader is present",
+    "social_image": "https://compound.ie/static/discover/cisco-ai-network-supply-commitments-16x9.webp",
+    "social_image_http_status": 200,
+    "social_image_dimensions": "1200x675",
+    "social_image_visually_inspected": true,
+    "sitemap_present": true,
+    "finance_catalogue_present": true
+  },
+  "publication_state": "live_verified",
+  "new_articles_published": 1
 }
