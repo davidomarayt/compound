@@ -55,3 +55,5 @@ It is money you need to have available before moving in. The calculator treats i
 ### Can I include a 12-month lease or a summer placement?
 
 Yes. Set the housing months to the period you must pay for and the other months to the period you want to budget for. For substantially different expenses during summer, calculate that period separately.
+
+Explore the [Ireland rent map](/ireland-rent-map/) for local whole-property rents. For a room or digs, enter the amount quoted for your own accommodation.

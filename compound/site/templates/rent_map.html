@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="/static/rent-map/leaflet.css">
+<link rel="stylesheet" href="/static/rent-map/map.css">
+<article class="rent-atlas">
+<header><small>HOUSING &nbsp; / &nbsp; RTB–ESRI RENT INDEX</small><h1>Ireland rent map</h1><p>Explore monthly rents across 166 local electoral areas. Hover for a price or select an area to see both tenancy types.</p></header>
+<section class="rent-shell"><div class="rent-bar"><strong>Monthly rent <small>Q1 2026</small></strong><label>Tenancy <select id="rent-type"><option value="new">New tenancies</option><option value="existing">Existing tenancies</option></select></label></div>
+<div class="rent-layout"><div id="rent-map" aria-label="Interactive map of Irish rents"></div>
+<aside><label for="rent-area">Find an area</label><select id="rent-area"><option value="">Republic of Ireland</option></select>
+<div aria-live="polite"><small id="rent-location">NATIONAL AVERAGE</small><h2 id="rent-name">Republic of Ireland</h2><dl><dt>New tenancy</dt><dd id="rent-new">€1,839</dd><dt>Existing tenancy</dt><dd id="rent-existing">€1,513</dd></dl><p id="rent-context">Standardised monthly rent for January to March 2026.</p></div>
+<button id="rent-reset" type="button">View all Ireland</button></aside></div>
+<div class="rent-key" aria-label="Monthly rent colour scale"></div></section>
+<p class="rent-source">Source: <a href="https://rtb.ie/research/rent-index/">RTB/ESRI Rent Index</a>, Q1 2026, Table 19. Figures are rounded standardised monthly rents on registered tenancies. Grey areas have too few observations for publication. Northern Ireland is outside the index.</p>
+<p class="rent-source">Local electoral boundaries © Tailte Éireann, generalised for display under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Planning a student budget? <a href="/college-cost-calculator/">Open the college cost calculator</a>.</p></article>
+<script defer src="/static/rent-map/leaflet.js"></script><script defer src="/static/rent-map/map.js"></script>

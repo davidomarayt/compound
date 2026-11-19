@@ -88,7 +88,8 @@
 {% endif %}
 {% endblock %}
 {% block content %}
-{% if page.slug == 'caffeine-calculator' %}
+{% if page.slug == 'ireland-rent-map' %}{% include 'rent_map.html' %}
+{% elif page.slug == 'caffeine-calculator' %}
 <div class="caf-page">
   <nav class="caf-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/health/">Health</a><span aria-hidden="true">/</span><span>Caffeine calculator</span></nav>
   <header class="caf-hero">
