@@ -38,6 +38,8 @@ PILLARS = ["health", "wealth", "happiness"]
 PILLAR_LABELS = {"wealth": "Wealth", "health": "Health", "happiness": "Life"}
 PILLAR_PUBLIC_SLUGS = {"wealth": "wealth", "health": "health", "happiness": "life"}
 
+MEDICINES_HUB_URL = "/health/medicines/"
+
 COURSE_PARENTS = {
     # Investing in Ireland 101
     "before-you-invest-ireland": ("Investing in Ireland 101", "/wealth/how-to-start-investing-in-ireland/"),
@@ -876,7 +878,11 @@ def article_breadcrumb_jsonld(a: Article, site_url: str) -> str:
             "name": PILLAR_LABELS.get(a.pillar, a.pillar.title()),
             "item": f"{base}/{a.public_pillar_slug}/",
         })
-        parent = COURSE_PARENTS.get(a.slug)
+        parent = (
+            ("Common Medicines", MEDICINES_HUB_URL)
+            if a.url.startswith(MEDICINES_HUB_URL)
+            else COURSE_PARENTS.get(a.slug)
+        )
         if parent:
             items.append({
                 "@type": "ListItem",
@@ -956,6 +962,7 @@ def article_context(env: Environment, settings: Settings, article: Article, prev
         article=article,
         # Editorial review status controls attribution, not advertising eligibility.
         ads_allowed=True,
+        medicines_hub_url=MEDICINES_HUB_URL if article.url.startswith(MEDICINES_HUB_URL) else "",
         preview=preview,
         series=series,
         article_body=body,
@@ -1155,6 +1162,7 @@ def build_site(settings: Settings) -> dict:
     reserved.update(programme["url"] for programme in spending["programmes"])
     reserved.update(tool["url"] for tool in tools)
     reserved.update(f"/{p}/" for p in PILLARS)
+    reserved.add(MEDICINES_HUB_URL)
     reserved.update(pg.url for pg in pages)
     if len({pg.url for pg in pages}) != len(pages):
         raise ValueError("Duplicate static page canonical routes")
@@ -1668,6 +1676,17 @@ def build_site(settings: Settings) -> dict:
                    checked=watchlist.get("checked", "not yet"),
                    has_coverage=bool(stories), ads_allowed=bool(stories)))
 
+    medicine_guides = sorted(
+        (a for a in by_pillar["health"] if a.url.startswith(MEDICINES_HUB_URL)),
+        key=lambda a: a.slug,
+    )
+    medicines_hub_url = MEDICINES_HUB_URL if medicine_guides else ""
+    if medicine_guides:
+        _write(out / MEDICINES_HUB_URL.strip("/") / "index.html",
+               env.get_template("medicines.html").render(
+                   title="Common Medicines in Ireland", pillar="health",
+                   medicines_hub_url=medicines_hub_url, guides=medicine_guides))
+
     for p in PILLARS:
         if p == "happiness":
             # Public branding moved from /happiness/ to /life/. GitHub Pages
@@ -1679,7 +1698,9 @@ def build_site(settings: Settings) -> dict:
                 _redirect_html("/life/", settings.site_base_url),
             )
             continue
-        _write(out / PILLAR_PUBLIC_SLUGS[p] / "index.html", env.get_template("pillar.html").render(pillar=p, articles=by_pillar[p], title=PILLAR_LABELS[p]))
+        _write(out / PILLAR_PUBLIC_SLUGS[p] / "index.html", env.get_template("pillar.html").render(
+            pillar=p, articles=by_pillar[p], title=PILLAR_LABELS[p],
+            medicines_hub_url=medicines_hub_url))
 
     # PIA Centre: retain the existing pillar article and tool URLs as canonicals.
     # Static provider facts live in a dated primary-source tracker, not code.
@@ -2104,6 +2125,9 @@ def build_site(settings: Settings) -> dict:
         (settings.site_base_url + f"/{PILLAR_PUBLIC_SLUGS[p]}/", None)
         for p in PILLARS
     )
+    if medicine_guides:
+        latest_medicine_update = max(a.research_checked or a.reviewed or a.date for a in medicine_guides)
+        sitemap_entries.append((settings.site_base_url + medicines_hub_url, latest_medicine_update.isoformat()))
     sitemap_entries.extend(
         (settings.site_base_url + a.url, (a.research_checked or a.reviewed or a.date).isoformat())
         for a in articles
@@ -2172,7 +2196,8 @@ def build_site(settings: Settings) -> dict:
                  else "Official issuer earnings release")}]),
         })
     finance = catalogue(settings.site_base_url, articles, tools, discovery_stocks, has_calculator)
-    write_discovery(settings.site_base_url, out, env, finance, sitemap_by_url)
+    write_discovery(settings.site_base_url, out, env, finance, sitemap_by_url,
+                    medicines_hub_url=medicines_hub_url)
 
     sitemap_rows = []
     for url, lastmod in sitemap_by_url.items():

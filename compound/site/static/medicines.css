@@ -1,0 +1,72 @@
+.medicines-hub {
+  max-width: 70rem;
+  margin: 2rem auto 4rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.medicines-intro,
+.medicines-sources {
+  padding: clamp(1.4rem, 4vw, 3rem);
+  background: var(--health-soft);
+  border-radius: 4px;
+}
+
+.medicines-intro h1 {
+  max-width: 15ch;
+  font-size: clamp(2.6rem, 6vw, 5rem);
+  line-height: 1.02;
+}
+
+.medicines-hub p {
+  max-width: 62ch;
+  margin-top: .8rem;
+  color: var(--ink-2);
+  line-height: 1.65;
+}
+
+.medicines-guides {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(19rem, 100%), 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.medicines-guide {
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+}
+
+.medicines-guide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 3px 3px 0 0;
+}
+
+.medicines-guide > div {
+  padding: 1.3rem;
+}
+
+.medicines-guide h3,
+.medicines-sources h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.medicines-hub .medicines-photo-credit {
+  font-size: .875rem;
+}
+
+.medicines-guide a,
+.medicines-sources a {
+  text-decoration: underline;
+  text-underline-offset: .2em;
+}
+
+.medicines-sources ul {
+  padding-left: 1.25rem;
+  margin-top: .8rem;
+}

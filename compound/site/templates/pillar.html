@@ -30,7 +30,7 @@
     <a class="health-goal" href="#sleep-recovery"><span class="health-goal-number">03</span><div><h3>Sleep & recovery</h3><p>Sleep needs, recovery and better rest.</p></div><span class="health-goal-jump">Go to category ↓</span></a>
     <a class="health-goal" href="#heart-health"><span class="health-goal-number">04</span><div><h3>Heart health</h3><p>Blood pressure, cholesterol, alcohol and prevention.</p></div><span class="health-goal-jump">Go to category ↓</span></a>
     <a class="health-goal" href="#pregnancy-family"><span class="health-goal-number">05</span><div><h3>Pregnancy & family</h3><p>Pregnancy timing, due dates and family health.</p></div><span class="health-goal-jump">Go to category ↓</span></a>
-    <a class="health-goal" href="#medicines-healthcare"><span class="health-goal-number">06</span><div><h3>Medicines & healthcare</h3><p>GLP-1 medicines, access, safety and Irish healthcare.</p></div><span class="health-goal-jump">Go to category ↓</span></a>
+    <a class="health-goal" href="#medicines-healthcare"><span class="health-goal-number">06</span><div><h3>Medicines & healthcare</h3><p>Common medicines, GLP-1s and Irish healthcare.</p></div><span class="health-goal-jump">Go to category ↓</span></a>
   </nav>
 
   <section class="health-category-section health-category-featured" id="weight-metabolism" aria-labelledby="weight-heading">
@@ -129,7 +129,8 @@
       <p>Medicine pages explain what a treatment is for, how access works in Ireland, what the evidence shows and when side effects need medical attention.</p>
     </div>
     <div class="health-category-tools">
-      <a class="health-resource health-resource-primary" href="/weight-loss-calculator/"><span>Related calculator</span><h3>Weight Loss Calculator</h3><p>Use a transparent weight-management estimate alongside — not instead of — clinical treatment discussions.</p><strong>Open calculator →</strong></a>
+      {% if medicines_hub_url %}<a class="health-resource health-resource-primary" href="{{ medicines_hub_url }}"><span>Medicine guides</span><h3>Common Medicines</h3><p>Read Irish guides to paracetamol and ibuprofen, including what they do, safety and when to get help.</p><strong>Browse medicine guides</strong></a>{% endif %}
+      <a class="health-resource{% if not medicines_hub_url %} health-resource-primary{% endif %}" href="/weight-loss-calculator/"><span>Related calculator</span><h3>Weight Loss Calculator</h3><p>Use a transparent weight-management estimate alongside — not instead of — clinical treatment discussions.</p><strong>Open calculator →</strong></a>
     </div>
     <div class="health-category-reading">
       <a href="/health/retatrutide-ireland/"><span>What's next</span><strong>Retatrutide in Ireland: availability, results and how it compares</strong></a>

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% set hub_url = site_url ~ medicines_hub_url %}
+{% set description = "Irish guides to common medicines, starting with paracetamol and ibuprofen. Find uses, adult doses, interactions, side effects and when to get help." %}
+{% block head_title %}Common Medicines in Ireland | Compound Health{% endblock %}
+{% block meta %}<meta name="description" content="{{ description }}">{% endblock %}
+{% block head %}
+<link rel="canonical" href="{{ hub_url }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ title }} | Compound Health">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ hub_url }}">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":{{ title|tojson }},"description":{{ description|tojson }},"url":{{ hub_url|tojson }},"inLanguage":"en-IE","hasPart":[{% for guide in guides %}{"@type":"Article","name":{{ guide.title|tojson }},"url":{{ (site_url ~ guide.url)|tojson }}}{% if not loop.last %},{% endif %}{% endfor %}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ (site_url ~ '/')|tojson }}},{"@type":"ListItem","position":2,"name":"Health","item":{{ (site_url ~ '/health/')|tojson }}},{"@type":"ListItem","position":3,"name":"Common Medicines","item":{{ hub_url|tojson }}}]}</script>
+{% endblock %}
+{% block post_styles %}<link rel="stylesheet" href="/static/medicines.css?v=1">{% endblock %}
+{% block content %}
+<div class="medicines-hub">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/health/">Health</a><span aria-hidden="true">/</span><span aria-current="page">Common Medicines</span></nav>
+  <header class="medicines-intro">
+    <h1>Common medicines in Ireland</h1>
+    <p>Find out what everyday medicines do, how to read the directions on your pack, who should check with a pharmacist and when to get medical help.</p>
+  </header>
+  <section aria-labelledby="medicine-guides-heading">
+    <h2 id="medicine-guides-heading">Medicine guides</h2>
+    <div class="medicines-guides">
+    {% for a in guides %}
+      <article class="medicines-guide">
+        <img src="{{ a.image }}" alt="{{ a.image_alt }}" width="1200" height="675" loading="lazy">
+        <div>
+          <h3><a href="{{ a.url }}">{{ a.title }}</a></h3>
+          <p>{{ a.summary }}</p>
+          {% if a.image_credit %}<p class="medicines-photo-credit"><a href="{{ a.image_source }}">{{ a.image_credit }}</a></p>{% endif %}
+        </div>
+      </article>
+    {% endfor %}
+    </div>
+  </section>
+  <aside class="medicines-sources">
+    <h2>Check your product leaflet</h2>
+    <p>Use the leaflet for the exact medicine and strength on your pack. Ask a pharmacist if you take other medicines, have a health condition or are unsure which product you have.</p>
+    <ul>
+      <li><a href="https://www2.hse.ie/medicines/">HSE medicines information</a></li>
+      <li><a href="https://www.hpra.ie/find-a-medicine">HPRA product and leaflet search</a></li>
+    </ul>
+  </aside>
+</div>
+{% endblock %}

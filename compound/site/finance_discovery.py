@@ -120,7 +120,7 @@ def validate_targets(data, out, sitemap_urls):
             raise ValueError(f'Finance discovery target is not indexable/canonical: {url}')
 
 
-def write_discovery(base, out, env, data, sitemap_urls):
+def write_discovery(base, out, env, data, sitemap_urls, *, medicines_hub_url=""):
     base = base.rstrip('/')
     validate_targets(data, out, sitemap_urls)
     schema = {'@context': 'https://schema.org', '@type': 'CollectionPage',
@@ -162,6 +162,9 @@ def write_discovery(base, out, env, data, sitemap_urls):
              f'- [Editorial policy]({base}/editorial-policy/): Editorial standards and limitations.',
              f'- [Sitemap]({base}/sitemap.xml): Full public URL inventory.', '',
              '## Selected starting points']
+    if medicines_hub_url:
+        lines.insert(lines.index('## Selected starting points') - 1,
+                     f'- [Common Medicines]({base}{medicines_hub_url}): Irish guides to everyday medicines, with HSE and HPRA sources.')
     for group in GROUPS:
         lines += ['', '### ' + group]
         lines += [f"- [{e['title']}]({e['url']}): {e['description']}".replace('\n', ' ')
