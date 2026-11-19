@@ -26,8 +26,12 @@
       <div class="pia-heading"><p class="eyebrow">SOURCE-VERIFIED PROVIDER TRACKER</p><h2 id="comparison-heading">Compare announced PIA providers</h2></div>
       <span class="pia-small">Checked {{ pia_updated }}</span>
     </div>
-    <p class="pia-small">Published intentions are not live products. The government scheme is pending legislation and all PIA-specific provider fees shown as <strong>Not published</strong> are unknown — not zero.</p>
-    <p class="pia-small"><strong>{{ providers | length }} official-source provider statements</strong> checked as of {{ pia_updated }}. <a href="/static/pia-provider-sources.csv" download>Download the source list (CSV)</a> for research and citation. This dataset is not a list of live accounts or confirmed fees.</p>
+    <p class="pia-unavailable">
+      <strong>{{ complete_fee_count }} of {{ providers | length }} tracked providers have a verified complete fee schedule.</strong>
+      {% if complete_fee_count %}<a href="#pia-fee-scenario">Set your balance and trading frequency to compare costs.</a>
+      {% else %}<a href="/pia/compare-fee-quotes/">See how to compare flat and percentage fees using worked examples.</a>{% endif %}
+    </p>
+    <p class="pia-small">The tracker covers public announcements. A fee marked <strong>Not published</strong> is unknown. <a href="/static/pia-provider-sources.csv" download>Download the dated source list (CSV)</a>.</p>
     <div class="pia-filter-panel" aria-label="Filter PIA providers">
       <div class="pia-control">
         <label for="pia-provider-search">Search providers</label>
@@ -113,7 +117,7 @@
   </section>
   <section class="pia-section" aria-labelledby="pia-fee-scenario">
     <div class="pia-heading"><p class="eyebrow">COST COMPARISON ENGINE</p><h2 id="pia-fee-scenario">Compare costs on the same assumptions</h2></div>
-    <p>When complete PIA-specific pricing is available, we'll compare provider fees for an identical investment balance and number of trades. Until then, the tool correctly displays an unavailable estimate rather than a guessed price.</p>
+    <p>Use the same balance and number of trades to compare annual costs across providers with complete, verified PIA fee schedules.</p>
     <div class="pia-scenario-tools" data-pia-scenario>
       <div class="pia-control">
         <label for="pia-balance">Illustrative investment balance (€)</label>

@@ -7,6 +7,8 @@ meta_description: "Compare Irish PIA fees with worked euro and 20-year examples.
 
 A €5 monthly account fee is €60 a year. A 0.40% annual platform fee also costs €60 at a €15,000 balance. Either could be the cheaper offer for you, depending on how much you hold and how often you trade.
 
+See the [latest provider announcements and verified fee schedules](/pia/providers/#comparison-heading). When complete prices are available, the tracker compares annual costs using the same balance and number of trades.
+
 ## A worked fee comparison
 
 These are invented prices for comparison, with a constant balance for one year. Both examples assume a fund charge of 0.20% a year and zero dealing, advice and foreign-exchange costs. No provider has supplied these quotes. The figures show fees before investment account tax.

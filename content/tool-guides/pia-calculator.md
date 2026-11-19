@@ -6,7 +6,7 @@
 | How much difference could fees make? | Switch to Advanced mode, save a comparison, then change only the annual fee assumption. |
 | What assumptions sit behind the tax estimate? | Read the tax formula and average-account-value method below, alongside the [PIA rules guide](/wealth/personal-investment-account-ireland/). |
 | Which providers have announced information? | Check the [PIA provider comparison](/pia/providers/), where confirmed information and unpublished terms are distinguished. |
-| Should I use a PIA or add to my pension? | Read the [PIA vs pension worked example](/pia/vs-pension/) using the same take-home cost and including the effect of employer matching. |
+| Should I use a PIA or add to my pension? | Use the [PIA vs pension calculator](/pia/vs-pension/#pia-pension-comparison) to compare both on the same take-home budget, with pension tax relief and any employer match. |
 
 To compare scenarios, select **Save for comparison** before changing one input. Keep the contribution amount and time horizon the same when comparing return or fee assumptions, so you can see what caused the difference. A projection illustrates your assumptions; it does not establish which investment is suitable for you.
 

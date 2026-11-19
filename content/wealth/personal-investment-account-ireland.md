@@ -535,7 +535,7 @@ For someone investing specifically for retirement, pension tax relief can be ext
 
 This is not a universal “pension first” rule. Employer contributions, tax relief, time horizon, access needs and personal circumstances all matter.
 
-Our [Pension vs Investing in Ireland guide](/wealth/pension-vs-investing-ireland/) explains that decision in detail.
+Use the [PIA vs pension calculator](/pia/vs-pension/#pia-pension-comparison) to model the same take-home budget in both accounts, including pension tax relief and any additional employer match. Our [Pension vs Investing in Ireland guide](/wealth/pension-vs-investing-ireland/) explains the broader retirement decision.
 
 <h2 id="pia-vs-savings">PIA vs savings account: what is the difference?</h2>
 
