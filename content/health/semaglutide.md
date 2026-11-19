@@ -10,7 +10,7 @@ summary: 'Ozempic, Wegovy and Rybelsus share an active ingredient. Learn how sem
 meta_description: 'An Irish guide to how semaglutide works, the differences between Ozempic, Wegovy and Rybelsus, and what to know about safety.'
 tags: [medicines, glp-1, semaglutide]
 image: /static/images/evergreen/semaglutide-guide.jpg
-image_alt: 'Photograph of Ozempic semaglutide packaging'
+image_alt: 'Ozempic semaglutide injection pen'
 image_credit: 'Dennis Sylvester Hurd, 2024 · CC0 1.0 · cropped'
 image_source: https://commons.wikimedia.org/wiki/File:Ozempic_(53899794358).jpg
 require_pinned_hero: true
