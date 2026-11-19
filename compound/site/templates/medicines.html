@@ -12,36 +12,72 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":{{ title|tojson }},"description":{{ description|tojson }},"url":{{ hub_url|tojson }},"inLanguage":"en-IE","hasPart":[{% for guide in guides %}{"@type":"Article","name":{{ guide.title|tojson }},"url":{{ (site_url ~ guide.url)|tojson }}}{% if not loop.last %},{% endif %}{% endfor %}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ (site_url ~ '/')|tojson }}},{"@type":"ListItem","position":2,"name":"Health","item":{{ (site_url ~ '/health/')|tojson }}},{"@type":"ListItem","position":3,"name":"Common Medicines","item":{{ hub_url|tojson }}}]}</script>
 {% endblock %}
-{% block post_styles %}<link rel="stylesheet" href="/static/medicines.css?v=1">{% endblock %}
+{% block post_styles %}
+<link rel="stylesheet" href="/static/medicines.css?v=2">
+<script defer src="/static/medicines.js?v=1"></script>
+{% endblock %}
 {% block content %}
+{% set medicines = {
+  'ibuprofen': ('Ibuprofen', 'Nurofen'),
+  'paracetamol': ('Paracetamol', 'Panadol')
+} %}
 <div class="medicines-hub">
-  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/health/">Health</a><span aria-hidden="true">/</span><span aria-current="page">Common Medicines</span></nav>
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a><span aria-hidden="true">/</span>
+    <a href="/health/">Health</a><span aria-hidden="true">/</span>
+    <span aria-current="page">Common Medicines</span>
+  </nav>
   <header class="medicines-intro">
-    <h1>Common medicines in Ireland</h1>
-    <p>Find out what everyday medicines do, how to read the directions on your pack, who should check with a pharmacist and when to get medical help.</p>
-  </header>
-  <section aria-labelledby="medicine-guides-heading">
-    <h2 id="medicine-guides-heading">Medicine guides</h2>
-    <div class="medicines-guides">
-    {% for a in guides %}
-      <article class="medicines-guide">
-        <img src="{{ a.image }}" alt="{{ a.image_alt }}" width="1200" height="675" loading="lazy">
-        <div>
-          <h3><a href="{{ a.url }}">{{ a.title }}</a></h3>
-          <p>{{ a.summary }}</p>
-          {% if a.image_credit %}<p class="medicines-photo-credit"><a href="{{ a.image_source }}">{{ a.image_credit }}</a></p>{% endif %}
-        </div>
-      </article>
-    {% endfor %}
+    <div>
+      <h1>Common medicines <span>in Ireland</span></h1>
+      <p>Find out what everyday medicines do, what to check on the pack and when to ask a pharmacist.</p>
     </div>
-  </section>
-  <aside class="medicines-sources">
-    <h2>Check your product leaflet</h2>
-    <p>Use the leaflet for the exact medicine and strength on your pack. Ask a pharmacist if you take other medicines, have a health condition or are unsure which product you have.</p>
-    <ul>
-      <li><a href="https://www2.hse.ie/medicines/">HSE medicines information</a></li>
-      <li><a href="https://www.hpra.ie/find-a-medicine">HPRA product and leaflet search</a></li>
-    </ul>
-  </aside>
+    <form class="medicines-search" aria-label="Medicine guide search" hidden>
+      <label for="medicine-query">Find a medicine</label>
+      <input id="medicine-query" type="search" placeholder="Try Panadol or ibuprofen" aria-controls="medicine-guides" autocomplete="off">
+    </form>
+  </header>
+
+  <div class="medicines-dashboard">
+    <section aria-labelledby="medicine-guides-heading">
+      <div class="medicines-section-heading">
+        <h2 id="medicine-guides-heading">Medicine guides</h2>
+        <p role="status" class="medicines-guide-count" data-medicine-count>{{ guides|length }} {{ 'guide' if guides|length == 1 else 'guides' }}</p>
+      </div>
+      <div class="medicines-guides" id="medicine-guides">
+      {% for guide in guides %}
+        {% set name, brand = medicines.get(guide.slug, (guide.title, '')) %}
+        <article class="medicines-guide" data-medicine-guide data-search="{{ name }} {{ brand }} {{ guide.title }}">
+          {% if guide.image %}
+          <img src="{{ guide.image }}" alt="{{ guide.image_alt }}" width="1200" height="675">
+          {% endif %}
+          <div class="medicines-guide-body">
+            <h3><a href="{{ guide.url }}">{{ name }}</a></h3>
+            {% if brand %}<p class="medicines-brand">Brand example · {{ brand }}</p>{% endif %}
+            <p class="medicines-summary">{{ guide.summary }}</p>
+            <a class="medicines-guide-action" href="{{ guide.url }}" aria-label="Read the {{ name }} guide">Read guide</a>
+            {% if guide.image_credit %}<p class="medicines-photo-credit"><a href="{{ guide.image_source }}">{{ guide.image_credit }}</a></p>{% endif %}
+          </div>
+        </article>
+      {% endfor %}
+      </div>
+      <div class="medicines-empty" hidden>
+        <p>Try a medicine name such as paracetamol or a brand name such as Panadol.</p>
+        <button type="button">Clear search</button>
+      </div>
+    </section>
+
+    <aside class="medicines-resources" aria-labelledby="medicine-resources-heading">
+      <h2 id="medicine-resources-heading">Irish medicine resources</h2>
+      <ul>
+        <li><a href="https://www2.hse.ie/medicines/"><strong>HSE Medicines A–Z</strong><span>Browse medicines by name</span></a></li>
+        <li><a href="https://www.hpra.ie/find-a-medicine"><strong>HPRA Find a Medicine</strong><span>Find authorised products and patient leaflets</span></a></li>
+      </ul>
+      <div class="medicines-leaflet">
+        <h3>Check your product leaflet</h3>
+        <p>Use the leaflet for the exact medicine and strength on your pack. Ask a pharmacist if you take other medicines, have a health condition or are unsure which product you have.</p>
+      </div>
+    </aside>
+  </div>
 </div>
 {% endblock %}

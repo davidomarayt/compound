@@ -1,40 +1,105 @@
 .medicines-hub {
-  max-width: 70rem;
-  margin: 2rem auto 4rem;
-  display: grid;
-  gap: 2rem;
+  --medicines-line: #cdd9d0;
+  --medicines-tint: #ecf1ea;
+  max-width: 72rem;
+  margin: clamp(1rem, 3vw, 2.5rem) auto 4rem;
 }
 
-.medicines-intro,
-.medicines-sources {
-  padding: clamp(1.4rem, 4vw, 3rem);
-  background: var(--health-soft);
-  border-radius: 4px;
+.medicines-hub .breadcrumbs {
+  margin-bottom: 1rem;
+}
+
+.medicines-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, .5fr);
+  align-items: end;
+  gap: 1.5rem 2.5rem;
+  padding: clamp(1.3rem, 4vw, 2.5rem);
+  background: var(--medicines-tint);
+  border: 1px solid var(--medicines-line);
+  border-radius: .75rem;
 }
 
 .medicines-intro h1 {
-  max-width: 15ch;
-  font-size: clamp(2.6rem, 6vw, 5rem);
-  line-height: 1.02;
+  max-width: 21ch;
+  font-size: clamp(2.15rem, 4.7vw, 3.85rem);
+  line-height: 1.04;
+  text-wrap: balance;
 }
 
-.medicines-hub p {
-  max-width: 62ch;
-  margin-top: .8rem;
-  color: var(--ink-2);
-  line-height: 1.65;
+.medicines-intro h1 span,
+.medicines-brand,
+.medicines-guide-action {
+  color: var(--health);
+}
+
+.medicines-intro p {
+  max-width: 45ch;
+  margin: .8rem 0 0;
+}
+
+.medicines-search label {
+  display: block;
+  margin-bottom: .45rem;
+  font-size: .95rem;
+  font-weight: 700;
+}
+
+.medicines-search input {
+  width: 100%;
+  min-height: 3rem;
+  padding: .6rem .8rem;
+  border: 1px solid #81998a;
+  border-radius: .4rem;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+
+.medicines-search input::placeholder {
+  color: var(--muted);
+}
+
+.medicines-dashboard {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(16rem, 1fr);
+  align-items: start;
+  gap: clamp(1rem, 2.25vw, 1.6rem);
+  margin-top: 1.65rem;
+}
+
+.medicines-section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .35rem 1rem;
+  margin-bottom: .85rem;
+}
+
+.medicines-section-heading h2,
+.medicines-resources h2 {
+  font-size: clamp(1.4rem, 2.7vw, 1.9rem);
+}
+
+.medicines-guide-count {
+  margin: 0;
+  color: var(--muted);
+  font-size: .875rem;
+  font-variant-numeric: tabular-nums;
 }
 
 .medicines-guides {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(19rem, 100%), 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
-  margin-top: 1rem;
 }
 
 .medicines-guide {
-  border: 1px solid var(--line);
-  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--medicines-line);
+  border-radius: .75rem;
   background: var(--surface);
 }
 
@@ -42,31 +107,146 @@
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 2 / 1;
   object-fit: cover;
-  border-radius: 3px 3px 0 0;
+  border-radius: .7rem .7rem 0 0;
 }
 
-.medicines-guide > div {
-  padding: 1.3rem;
+.medicines-guide-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.1rem;
 }
 
-.medicines-guide h3,
-.medicines-sources h2 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+.medicines-guide h3 {
+  font-size: clamp(1.55rem, 3vw, 2.05rem);
+  overflow-wrap: anywhere;
 }
 
-.medicines-hub .medicines-photo-credit {
+.medicines-brand {
+  margin: .35rem 0 0;
   font-size: .875rem;
 }
 
-.medicines-guide a,
-.medicines-sources a {
+.medicines-summary {
+  margin: .65rem 0 1rem;
+}
+
+.medicines-guide-action,
+.medicines-empty button {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  margin-top: auto;
+  padding: .45rem .8rem;
+  border: 1px solid var(--medicines-line);
+  border-radius: .4rem;
+  background: var(--medicines-tint);
+  font: inherit;
+  font-weight: 700;
+}
+
+.medicines-photo-credit {
+  margin: .65rem 0 0;
+  color: var(--muted);
+  font-size: .82rem;
+}
+
+.medicines-resources {
+  padding: 1.15rem;
+  border-radius: .75rem;
+  background: var(--medicines-tint);
+  border: 1px solid var(--medicines-line);
+}
+
+.medicines-resources ul {
+  list-style: none;
+  margin: .85rem 0 1.05rem;
+  padding: 0;
+  border-top: 1px solid var(--medicines-line);
+}
+
+.medicines-resources li {
+  border-bottom: 1px solid var(--medicines-line);
+}
+
+.medicines-resources li a {
+  display: grid;
+  gap: .25rem;
+  padding: .75rem 0;
+}
+
+.medicines-resources li strong {
+  color: var(--health);
+}
+
+.medicines-resources li span {
+  font-size: .9rem;
+}
+
+.medicines-leaflet h3 {
+  font-size: 1.13rem;
+}
+
+.medicines-leaflet p {
+  margin: .4rem 0 0;
+}
+
+.medicines-summary,
+.medicines-leaflet p,
+.medicines-intro p,
+.medicines-resources li span {
+  color: var(--ink-2);
+  line-height: 1.55;
+}
+
+.medicines-empty {
+  padding: 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--medicines-line);
+  border-radius: .75rem;
+}
+
+.medicines-empty p {
+  margin: 0 0 .8rem;
+}
+
+.medicines-empty button {
+  color: var(--health);
+  cursor: pointer;
+}
+
+.medicines-hub :is(a, button, input):focus-visible {
+  outline: 2px solid var(--health);
+  outline-offset: 3px;
+}
+
+.medicines-guide a:hover,
+.medicines-resources a:hover,
+.medicines-empty button:hover {
   text-decoration: underline;
   text-underline-offset: .2em;
 }
 
-.medicines-sources ul {
-  padding-left: 1.25rem;
-  margin-top: .8rem;
+@media (max-width: 56rem) {
+  .medicines-dashboard {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 40rem) {
+  .medicines-intro,
+  .medicines-guides {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .medicines-intro h1 {
+    text-wrap: wrap;
+  }
+
+  .medicines-guide img {
+    aspect-ratio: 2.5 / 1;
+  }
 }
