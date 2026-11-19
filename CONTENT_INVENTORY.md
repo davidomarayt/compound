@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 327
+- Published editorial articles and guides: 328
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -18,9 +18,10 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - Private-company directory profiles: 13
 - Draft or unpublished editorial files: 0
 
-## Health articles and guides — 31
+## Health articles and guides — 32
 
 - [Budget 2027 gives health €29.1bn. So why aren’t Mounjaro and Wegovy funded for obesity?](https://compound.ie/news/budget-2027-obesity-mounjaro-wegovy-ireland/)
+- [Cetirizine in Ireland: what it’s used for and can it make you drowsy?](https://compound.ie/health/medicines/cetirizine/)
 - [Creatine in Ireland: what it does, how to take it and what to watch](https://compound.ie/health/creatine-benefits-dosage-safety-ireland/)
 - [GLP-1 side effects: what is common, and when to get help](https://compound.ie/health/glp1-side-effects-when-to-seek-help/)
 - [GLP-1s and pregnancy: Ozempic, Wegovy, Mounjaro and what the evidence says](https://compound.ie/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/)

@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 327 published articles and guides, 69 tools,
+**Included:** 328 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -64,6 +64,7 @@ For the complete register (including 510+ company profiles), open
 - [Capital Gains Tax in Ireland: How Much CGT Do You Pay?](https://compound.ie/wealth/capital-gains-tax-ireland/) — **Wealth**
 - [Caterpillar Earnings: Why the Margin Matters More Than the Sales Headline](https://compound.ie/wealth/caterpillar-margin-growth/) — **Wealth**
 - [CEG vs SRESS in Ireland: which solar export route fits your project?](https://compound.ie/wealth/ceg-vs-sress-ireland/) — **Wealth**
+- [Cetirizine in Ireland: what it’s used for and can it make you drowsy?](https://compound.ie/health/medicines/cetirizine/) — **Health**
 - [Changing Jobs and Pension Transfers in Ireland](https://compound.ie/wealth/changing-jobs-transfer-pension-ireland/) — **Wealth**
 - [ChatGPT Enterprise Is on AWS Marketplace. Will Easier Buying Make OpenAI Stickier?](https://compound.ie/wealth/openai-aws-marketplace-enterprise-procurement-economics/) — **Wealth**
 - [Cigna’s Pharmacy Revenue Rose 9% While Profit Fell 22%. Can $3 Billion Fix the Margin?](https://compound.ie/wealth/cigna-pharmacy-margin-modernization/) — **Wealth**
