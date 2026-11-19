@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 325
+- Published editorial articles and guides: 326
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -51,7 +51,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What is paracetamol? Uses, adult doses and safety in Ireland](https://compound.ie/health/medicines/paracetamol/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
-## Wealth articles and guides — 269
+## Wealth articles and guides — 270
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -77,6 +77,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price](https://compound.ie/wealth/anthropic-loss-ipo-valuation/)
 - [Apple Stock Guide: iPhone, Services, Buybacks and Valuation](https://compound.ie/wealth/apple-iphone-services-profit-2026/)
 - [Apple's earnings growth: what remains after the tariff-refund boost?](https://compound.ie/wealth/apple-earnings-tariff-refunds-services/)
+- [Apple’s $39.9 Billion Vendor Receivables: How Much Sits With Two Manufacturers?](https://compound.ie/wealth/apple-vendor-receivables-concentration/)
 - [Apple’s $89.7 billion supply commitment puts more cash behind its demand forecast](https://compound.ie/wealth/apple-manufacturing-purchase-commitments/)
 - [Apple’s US supplier push: resilience before margin claims](https://compound.ie/wealth/apple-us-iphone-suppliers-manufacturing/)
 - [Aptiv Spun Off Its Wiring Business. Did the Remaining Company Get Better?](https://compound.ie/wealth/aptiv-post-spin-segment-quality/)
