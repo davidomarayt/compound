@@ -34,7 +34,7 @@ If you or your family cannot meet essential funeral expenses, **contact the Comm
 
 ## Planning ahead and protecting your budget
 
-Write down your wishes and tell someone where to find them. If you are comparing prepaid options, ask who holds the money, which services are guaranteed, how increases in cemetery or crematorium fees are handled, what happens if you move, and the rules for cancellation or refunds. Share a copy of any written agreement with the person likely to arrange the funeral. For estate costs that arise separately, see Compound’s [Irish probate costs guide](/wealth/probate-costs-fees-ireland/).
+Write down your wishes and tell someone where to find them. If you are comparing prepaid options, ask who holds the money, which services are guaranteed, how increases in cemetery or crematorium fees are handled, what happens if you move, and the rules for cancellation or refunds. Share a copy of any written agreement with the person likely to arrange the funeral. If you want to set money aside over time, the [Savings Goal Calculator](/savings-goal-calculator/) can turn an estimate into a monthly savings target. For estate costs that arise separately, see Compound’s [Irish probate costs guide](/wealth/probate-costs-fees-ireland/).
 
 ## Method and limitations
 

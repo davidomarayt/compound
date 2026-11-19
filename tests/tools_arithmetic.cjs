@@ -429,6 +429,41 @@ assert.equal(retrofitAdvanced.net_cost, '€2,550.00');
 
 
 // Family & Life Planning + Health flagship regression coverage.
+// HSE support only replaces matching visits, and the full quote applies while waiting.
+const homeCareInputs = {day_hours: 14, day_rate: 30, day_hse: 5};
+const homeCare = calculators.home_care_cost(homeCareInputs);
+assert.equal(homeCare.after_weekly, '€270.00');
+assert.equal(homeCare.after_monthly, '€1,170.00');
+assert.equal(homeCare.private_weekly, '€420.00');
+const careDelay = calculators.home_care_cost({
+  ...homeCareInputs, __advanced: true, weekend_hours: 0, weekend_rate: 35, weekend_hse: 0,
+  night_hours: 0, night_rate: 40, night_hse: 0, care_extras: 0, wait_weeks: 6
+});
+assert.equal(careDelay.first_year, '€14,940.00');
+const careShifts = calculators.home_care_cost({
+  ...homeCareInputs, __advanced: true, weekend_hours: 2, weekend_rate: 35, weekend_hse: 4,
+  night_hours: 8, night_rate: 40, night_hse: 0, care_extras: 10, wait_weeks: 0
+});
+assert.equal(careShifts.after_weekly, '€600.00');
+assert.equal(careShifts.private_weekly, '€820.00');
+assert.equal(careShifts.private_hours, '17 hrs');
+
+// Student funding reduces annual spending; refundable deposits affect upfront cash only.
+const collegeInputs = {college_fees: 2350, student_rent: 800, student_living: 300,
+  student_travel: 100, setup_cost: 400, fee_grant: 1000, maintenance: 2000};
+const collegeBasic = calculators.college_cost(collegeInputs);
+assert.equal(collegeBasic.gross_year, '€13,550.00');
+assert.equal(collegeBasic.net_year, '€10,550.00');
+assert.equal(collegeBasic.term_month, '€1,200.00');
+const collegeUpfront = calculators.college_cost({...collegeInputs, __advanced: true,
+  rent_months: 9, study_months: 9, deposit: 800, rent_upfront: 800, fees_upfront: 1350});
+assert.equal(collegeUpfront.upfront_cash, '€3,350.00');
+assert.equal(collegeUpfront.net_fees, '€1,350.00');
+const collegeCommuter = calculators.college_cost({...collegeInputs, student_rent: 0, student_travel: 180,
+  fee_grant: 3000, maintenance: 5000});
+assert.equal(collegeCommuter.net_fees, '€0.00');
+assert.equal(collegeCommuter.net_year, '€0.00');
+
 // Funeral deposits are part of the bill, and later payments cannot cover an upfront gap.
 const funeralQuote = {director: 2500, cemetery: 950, ceremony: 300, upfront_due: 1000};
 const funeralBasic = calculators.funeral_cost(funeralQuote);

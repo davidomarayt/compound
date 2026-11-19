@@ -3059,6 +3059,106 @@ tools:
       - {title: "MyFutureFund — contribution rates and €80,000 threshold", url: "https://myfuturefund.ie/participant/contributions"}
       - {title: "MyFutureFund — participant guide", url: "https://myfuturefund.ie/participant-guide"}
 
+  - slug: home-care-cost-calculator
+    title: Home Care Cost Calculator Ireland
+    category: Family & Life Planning
+    formula: home_care_cost
+    summary: Estimate the cost of care at home. Enter your private provider’s rates and confirmed HSE hours, then compare day visits, weekend or overnight care and the cost of waiting for support.
+    meta_description: Estimate private home care costs in Ireland. Budget for weekday, weekend and overnight visits after confirmed HSE Home Support hours.
+    updated: 2026-11-19
+    quick_answer: "Start with the hours someone needs each week. Deduct confirmed HSE hours only where they cover the same visits, then price the remaining hours using the provider’s written quote."
+    basic_note: "Basic mode models one hourly quote and the HSE hours that cover the same visits. Starting figures are illustrative."
+    advanced_note: "Add separately priced weekend and overnight hours, weekly extras, and weeks paying privately before the confirmed support starts."
+    result_note: "This is a budget for the schedule entered. The HSE and your provider confirm coverage, availability and charges."
+    hero_image_url: /static/images/evergreen/home-care-cost-ireland.jpg
+    hero_image_alt: A caregiver assisting an older woman at home
+    hero_image_credit: Jsme MILA
+    hero_image_provider: Pexels
+    hero_image_source: https://www.pexels.com/photo/elderly-caregiver-assisting-senior-woman-at-home-29372727/
+    require_pinned_hero: true
+    next_step:
+      title: Compare care at home with residential care
+      description: Compare the weekly costs, then use FairPath to look up homes, published rates and inspection report previews if residential care is one of your options.
+      links:
+        - {label: Calculate nursing home costs, url: "/nursing-home-cost-calculator/"}
+        - {label: Find nursing homes on FairPath, url: "https://fairpath.ie/nursing-homes-near-me"}
+        - {label: Explore FairPath’s nursing home prices, url: "https://fairpath.ie/nursing-home-prices-ireland"}
+    fields:
+      - {id: day_hours, label: Regular care hours needed per week, type: number, default: 14, min: 0, max: 168, step: 0.25, help: "In Advanced mode use this for the hours outside the separately priced weekend and overnight visits."}
+      - {id: day_rate, label: Regular private hourly rate, type: number, prefix: "€", default: 30, min: 0, max: 500, step: 0.01, help: "Use a written quote for the actual visit length or its effective hourly equivalent."}
+      - {id: day_hse, label: Confirmed HSE hours for regular visits, type: number, default: 5, min: 0, max: 168, step: 0.25, help: "Use confirmed hours that cover the same visits. The starting five hours are an example. Enter zero if none are confirmed."}
+      - {id: weekend_hours, label: Weekend hours needed per week, type: number, default: 0, min: 0, max: 168, step: 0.25, advanced: true, help: "Use hours priced at the weekend rate. Count overnight hours in one row only."}
+      - {id: weekend_rate, label: Weekend private hourly rate, type: number, prefix: "€", default: 35, min: 0, max: 500, step: 0.01, advanced: true}
+      - {id: weekend_hse, label: Confirmed HSE hours for weekend visits, type: number, default: 0, min: 0, max: 168, step: 0.25, advanced: true}
+      - {id: night_hours, label: Overnight hours needed per week, type: number, default: 0, min: 0, max: 168, step: 0.25, advanced: true}
+      - {id: night_rate, label: Overnight private hourly rate, type: number, prefix: "€", default: 40, min: 0, max: 500, step: 0.01, advanced: true, help: "For a flat shift quote, divide the quoted shift price by its billed hours."}
+      - {id: night_hse, label: Confirmed HSE hours for overnight visits, type: number, default: 0, min: 0, max: 168, step: 0.25, advanced: true}
+      - {id: care_extras, label: Separate weekly costs, type: number, prefix: "€", default: 0, min: 0, max: 10000, step: 0.01, advanced: true, help: "Include regularly billed extras only where they apply in both scenarios."}
+      - {id: wait_weeks, label: Weeks before confirmed HSE support starts, type: number, default: 0, min: 0, max: 52, step: 1, advanced: true, help: "The first-year budget uses the full private cost for these weeks. If nothing has been confirmed, set HSE hours to zero."}
+    results:
+      - {id: after_weekly, label: Weekly cost after entered HSE hours}
+      - {id: private_weekly, label: Weekly cost if paid fully privately}
+      - {id: after_monthly, label: Average month after support starts}
+      - {id: first_year, label: First-year cash budget}
+      - {id: private_hours, label: Weekly hours to pay for after support}
+    sources:
+      - {title: "HSE · Home Support Service for older people", url: "https://www2.hse.ie/services/home-support-service/home-support-service-for-older-people/"}
+      - {title: "HSE · How to apply for Home Support", url: "https://www2.hse.ie/services/home-support-service/how-to-apply/"}
+      - {title: "HSE · What happens after you apply", url: "https://www.hse.ie/services/home-support-service/after-you-apply/"}
+      - {title: "Revenue · Tax relief for employing a carer", url: "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/health-and-age/employing-a-carer/index.aspx"}
+      - {title: "Viola Care · Published Dublin example", url: "https://www.violacare.ie/dublin"}
+      - {title: "Hibernia Home Care · Published basic private rate", url: "https://hiberniahomecare.ie/faqs/"}
+
+  - slug: college-cost-calculator
+    title: College Cost Calculator Ireland
+    category: Family & Life Planning
+    formula: college_cost
+    summary: Compare commuting, renting near college or paying for digs. Budget for fees, living costs, grants and the amount you need before term starts.
+    meta_description: Estimate the cost of college in Ireland. Compare commuting and student accommodation, budget for fees and deposits, and include confirmed SUSI support.
+    updated: 2026-11-19
+    quick_answer: "Price the accommodation contract, term spending and college bill separately. Add confirmed grants, then check how much cash is due before any maintenance payment arrives."
+    basic_note: "Starting values illustrate nine months of renting and term spending. Enter zero accommodation cost if living at home without board."
+    advanced_note: "Use different numbers of months for housing and other expenses. Add the exact deposit, rent and net college fees due upfront."
+    result_note: "Use your college bill, accommodation contract and confirmed awards. The upfront figure includes setup costs and leaves out cash support whose payment date may differ."
+    hero_image_url: /static/images/evergreen/college-cost-ireland.jpg
+    hero_image_alt: Students working together in a library
+    hero_image_credit: Yan Krukau
+    hero_image_provider: Pexels
+    hero_image_source: https://www.pexels.com/photo/students-studying-inside-the-library-8199659/
+    require_pinned_hero: true
+    next_step:
+      title: Check your funding and accommodation
+      description: Confirm what your college charges, which grant payments you have been awarded and the dates your accommodation provider expects payment.
+      links:
+        - {label: Check SUSI grant information, url: "https://www.susi.ie/"}
+        - {label: Check student accommodation rules, url: "https://rtb.ie/renting/types-of-tenancies/student-specific-accommodation/"}
+    fields:
+      - {id: college_fees, label: College fees and levies before grants, type: number, prefix: "€", default: 2350, min: 0, max: 100000, step: 0.01, help: "Use the bill for your course. If you enter a bill already net of a grant, leave that fee grant at zero."}
+      - {id: student_rent, label: Monthly accommodation or board, type: number, prefix: "€", default: 800, min: 0, max: 15000, step: 0.01, help: "Use your share of the charge. Enter zero if living at home without a contribution."}
+      - {id: student_living, label: Monthly food, bills and personal costs, type: number, prefix: "€", default: 300, min: 0, max: 15000, step: 0.01, help: "Leave out meals or bills already included in your accommodation quote."}
+      - {id: student_travel, label: Monthly travel, type: number, prefix: "€", default: 100, min: 0, max: 15000, step: 0.01, help: "Include travel to campus, placements and regular trips home."}
+      - {id: setup_cost, label: Books, equipment and other setup costs, type: number, prefix: "€", default: 400, min: 0, max: 50000, step: 0.01}
+      - {id: fee_grant, label: Confirmed grant towards college fees, type: number, prefix: "€", default: 0, min: 0, max: 100000, step: 0.01, help: "Enter only the amount covering charges in your college bill."}
+      - {id: maintenance, label: Confirmed maintenance and cash support for the year, type: number, prefix: "€", default: 0, min: 0, max: 100000, step: 0.01, help: "Use your confirmed annual amount. The calculator does not assume it has arrived before term."}
+      - {id: rent_months, label: Months paying for accommodation, type: number, default: 9, min: 0, max: 12, step: 0.25, advanced: true, help: "For a fixed term price, divide the contracted total by the months entered as a budgeting equivalent."}
+      - {id: study_months, label: Months of living and travel costs, type: number, default: 9, min: 0, max: 12, step: 0.25, advanced: true}
+      - {id: deposit, label: Refundable accommodation deposit, type: number, prefix: "€", default: 0, min: 0, max: 50000, step: 0.01, advanced: true, help: "Counts as upfront cash, outside the annual spending total."}
+      - {id: rent_upfront, label: Rent due before term, type: number, prefix: "€", default: 0, min: 0, max: 100000, step: 0.01, advanced: true, help: "Use the agreed amount from the rent already included in the budget."}
+      - {id: fees_upfront, label: Net college fees due before term, type: number, prefix: "€", default: 0, min: 0, max: 100000, step: 0.01, advanced: true, help: "Use the amount your college actually expects before term, after any fee support already applied."}
+    results:
+      - {id: net_year, label: Academic-year cost after confirmed support}
+      - {id: gross_year, label: Academic-year budget before support}
+      - {id: term_month, label: Typical monthly living and housing costs}
+      - {id: net_fees, label: College fees left to pay}
+      - {id: upfront_cash, label: Upfront cash needed including deposit, advanced: true}
+    sources:
+      - {title: "HEA · Free Fees Initiative and 2026/27 student contribution", url: "https://hea.ie/funding-governance-performance/funding/student-finance/course-fees/"}
+      - {title: "SUSI · Undergraduate grant thresholds and award rates", url: "https://www.susi.ie/eligibility-criteria/income/full-time-undergraduate-income-thresholds-and-grant-award-rates/"}
+      - {title: "SUSI · Payment timing and registration", url: "https://www.susi.ie/payments/"}
+      - {title: "HEA · Student Assistance Fund", url: "https://hea.ie/policy/access-policy/student-assistance-fund/"}
+      - {title: "RTB · Student-specific accommodation", url: "https://rtb.ie/renting/types-of-tenancies/student-specific-accommodation/"}
+      - {title: "DCU · 2026/27 fact sheet and illustrative living budget", url: "https://www.dcu.ie/sites/default/files/inline-files/dcu-fact-sheet-2026-2027_4.pdf"}
+
   - slug: funeral-cost-calculator
     title: Funeral Cost Calculator Ireland
     category: Family & Life Planning

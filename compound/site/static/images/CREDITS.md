@@ -33,3 +33,10 @@ Licensed under https://unsplash.com/license. Illustrative photographs; people pi
 ## Nursing home cost calculator
 
 - `evergreen/nursing-home-cost-ireland.jpg`: Age Cymru / Unsplash. https://unsplash.com/photos/elderly-couple-clapping-in-wheelchairs-mfyKb-cutSY · Unsplash License (https://unsplash.com/license). Illustrative photograph.
+
+## Home care and college calculators
+
+- `evergreen/home-care-cost-ireland.jpg`: Jsme MILA / Pexels, https://www.pexels.com/photo/elderly-caregiver-assisting-senior-woman-at-home-29372727/.
+- `evergreen/college-cost-ireland.jpg`: Yan Krukau / Pexels, https://www.pexels.com/photo/students-studying-inside-the-library-8199659/.
+
+Illustrative stock photographs licensed under the [Pexels License](https://www.pexels.com/license/).

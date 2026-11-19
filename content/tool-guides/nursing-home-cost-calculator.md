@@ -34,6 +34,8 @@ The optional nursing home loan can defer payment of the property-related part of
 
 ## Look beyond the weekly price
 
+If staying at home is still an option, use the [Home Care Cost Calculator](/home-care-cost-calculator/) to estimate the weekly cost of private visits after confirmed HSE Home Support hours.
+
 For each home on the shortlist, ask about the availability of a room, the fees at the level of care required, how family visits work and what happens if a resident’s needs change. Review the latest published inspection information and use it to ask specific questions when you visit.
 
 [Find a nursing home on FairPath](https://fairpath.ie/nursing-homes-near-me) and [look for a Care Report preview](https://fairpath.ie/care-reports). FairPath is a sister site to Compound and sells full inspection summaries where available. Once you have two written quotes, use **Save for comparison** to compare scenarios. You can also use Compound’s [Lifetime Cost Calculator](/lifetime-cost-calculator/) for a separate long-term spending illustration.

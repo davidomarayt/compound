@@ -631,6 +631,14 @@
         items.push('The statutory employee contribution rate starts lower and phases upward over time, so future take-home impact will not stay at the 2026 level.');
         items.push('Employer and State contributions are part of the retirement value even though they are not employee take-home deductions.');
         break;
+      case 'home_care_cost':
+        items.push('Count HSE hours only against the visits they replace. If support has not been confirmed for your schedule, use zero hours for your immediate budget.');
+        items.push('Ask the provider about minimum visit charges and backup cover before using the hourly quote.');
+        break;
+      case 'college_cost':
+        items.push('Use the dates on the fee statement and accommodation agreement for your upfront budget. Maintenance payments can arrive later in the year.');
+        if (v.__advanced) items.push('A refundable deposit is cash needed before moving in. It sits outside the academic-year spending total.');
+        break;
       case 'funeral_cost': {
         const total = v.director + v.cemetery + v.ceremony + (v.__advanced ? v.reception + v.memorial : 0);
         items.push('Use each charge once. A deposit credited against the quoted price is part of the total.');
@@ -725,6 +733,9 @@
   };
 
   const validateRelationships = (name,v) => {
+    if (name === 'home_care_cost' && v.__advanced && v.day_hours + v.weekend_hours + v.night_hours > 168) {
+      return 'The care schedule cannot exceed 168 hours in a week. For concurrent carers, enter the combined rate for those hours.';
+    }
     if(name==='weight_loss'){
       const h=Math.max(0,v.height||0)/100, current=Math.max(0,v.current_weight||0), target=Math.max(0,v.target_weight||0);
       const currentBmi=h>0?current/(h*h):0, targetBmi=h>0?target/(h*h):0;
@@ -1871,6 +1882,71 @@
         __chart:{type:'line',title:'Projected MyFutureFund balance',caption:'The projection applies the statutory calendar-year contribution phases to the annual pay assumption, subject to the €80,000 annual modelling cap. Actual eligibility and payroll collection use NAERSA rules including pay-period assessment.',labels,series:[{label:'Projected fund',values:funds},{label:'Starting fund + all contributions',values:contributionCum}]}
       };
     },
+    home_care_cost(v){
+      const schedules = [[v.day_hours, v.day_rate, v.day_hse]];
+      if (v.__advanced) schedules.push(
+        [v.weekend_hours, v.weekend_rate, v.weekend_hse],
+        [v.night_hours, v.night_rate, v.night_hse]
+      );
+
+      const extras = v.__advanced ? Math.round(v.care_extras * 100) : 0;
+      let fullWeekly = extras;
+      let afterWeekly = extras;
+      let privateHours = 0;
+      for (const [hours, rate, hseHours] of schedules) {
+        const rateCents = Math.round(rate * 100);
+        const hoursToPay = Math.max(0, hours - hseHours);
+        fullWeekly += Math.round(hours * rateCents);
+        afterWeekly += Math.round(hoursToPay * rateCents);
+        privateHours += hoursToPay;
+      }
+
+      const waiting = v.__advanced ? Math.round(v.wait_weeks) : 0;
+      const firstYear = fullWeekly * waiting + afterWeekly * (52 - waiting);
+      return {
+        after_weekly: money(afterWeekly / 100),
+        private_weekly: money(fullWeekly / 100),
+        after_monthly: money(afterWeekly * 52 / 1200),
+        first_year: money(firstYear / 100),
+        private_hours: num(privateHours) + ' hrs',
+        __chart: {
+          type: 'bar', title: 'Weekly home care costs',
+          caption: 'See how the confirmed HSE visits change your weekly bill.',
+          labels: ['Fully private', 'After confirmed HSE hours'],
+          series: [{label: 'Weekly cost', values: [fullWeekly / 100, afterWeekly / 100]}]
+        }
+      };
+    },
+    college_cost(v){
+      const cents = amount => Math.round(amount * 100);
+      const rentMonths = v.__advanced ? v.rent_months : 9;
+      const studyMonths = v.__advanced ? v.study_months : 9;
+      const rentMonth = cents(v.student_rent);
+      const livingMonth = cents(v.student_living) + cents(v.student_travel);
+      const rent = Math.round(rentMonth * rentMonths);
+      const living = Math.round(livingMonth * studyMonths);
+      const setup = cents(v.setup_cost);
+      const fees = cents(v.college_fees);
+      const netFees = Math.max(0, fees - cents(v.fee_grant));
+      const grossYear = fees + setup + rent + living;
+      const netYear = Math.max(0, netFees + setup + rent + living - cents(v.maintenance));
+      const upfront = v.__advanced
+        ? setup + cents(v.deposit) + Math.min(rent, cents(v.rent_upfront)) + Math.min(netFees, cents(v.fees_upfront))
+        : 0;
+      return {
+        net_year: money(netYear / 100),
+        gross_year: money(grossYear / 100),
+        term_month: money(((rentMonths > 0 ? rentMonth : 0) + (studyMonths > 0 ? livingMonth : 0)) / 100),
+        net_fees: money(netFees / 100),
+        upfront_cash: v.__advanced ? money(upfront / 100) : '—',
+        __chart: {
+          type: 'bar', title: 'The academic-year budget',
+          caption: 'Compare the cost of your plans before and after confirmed support.',
+          labels: ['Before support', 'After support'],
+          series: [{label: 'Academic-year spending', values: [grossYear / 100, netYear / 100]}]
+        }
+      };
+    },
     funeral_cost(v){
       const cents = value => Math.round(value * 100);
       const director = cents(v.director);
@@ -2313,7 +2389,7 @@
       const values={}; let invalid=false, invalidField=null, invalidMessage='';
       root.querySelectorAll('[data-field]').forEach(el=>el.removeAttribute('aria-invalid'));
       root.querySelectorAll('[data-field]').forEach(el=>{
-        if(['childcare_cost','nursing_home_cost','funeral_cost'].includes(root.dataset.calculator) && el.closest('.tool-field')?.hidden) return;
+        if(['childcare_cost','nursing_home_cost','funeral_cost','home_care_cost','college_cost'].includes(root.dataset.calculator) && el.closest('.tool-field')?.hidden) return;
         const raw=el.value;
         if(el.type==='checkbox'){ values[el.dataset.field]=el.checked; return; }
         if(el.type==='date'){
