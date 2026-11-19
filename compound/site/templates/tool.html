@@ -5,7 +5,7 @@
 <link rel="canonical" href="{{ site_url }}{{ tool.url }}">
 <meta property="og:type" content="website"><meta property="og:title" content="{{ tool.seo_title or tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="{{ 'summary_large_image' if tool.hero_image_url else 'summary' }}">
 {% if tool.slug == "salary-hourly-rate-calculator" %}<link rel="stylesheet" href="/static/tools.css?v=20261117-salary-upgrade">{% else %}<link rel="stylesheet" href="/static/tools.css?v=20261119-nursing-home-cost">{% endif %}
-{% if tool.slug == "mortgage-calculator" %}<script defer src="/static/mortgage-calculator.js?v=20260927-performance1"></script>{% elif tool.slug == "salary-hourly-rate-calculator" %}<script defer src="/static/tools.js?v=20261117-salary-upgrade"></script>{% else %}<script defer src="/static/tools.js?v=20261119-home-care-college"></script>{% endif %}
+{% if tool.slug == "mortgage-calculator" %}<script defer src="/static/mortgage-calculator.js?v=20260927-performance1"></script>{% elif tool.slug == "salary-hourly-rate-calculator" %}<script defer src="/static/tools.js?v=20261117-salary-upgrade"></script>{% elif tool.slug == "pia-calculator" %}<script defer src="/static/tools.js?v=20261113-pia-events-20261119-home-care-college"></script>{% else %}<script defer src="/static/tools.js?v=20261119-home-care-college"></script>{% endif %}
 {% if tool.hero_image_url %}
 {% set social_image = tool.hero_image_url if tool.hero_image_url.startswith("https://") else site_url ~ tool.hero_image_url %}
 <meta property="og:image" content="{{ social_image }}">
