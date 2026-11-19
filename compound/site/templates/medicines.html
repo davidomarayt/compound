@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% set hub_url = site_url ~ medicines_hub_url %}
-{% set description = "Irish guides to common medicines, starting with paracetamol and ibuprofen. Find uses, adult doses, interactions, side effects and when to get help." %}
+{% set description = "Irish guides to common medicines, including paracetamol, ibuprofen and omeprazole. Find uses, adult doses, interactions, side effects and when to get help." %}
 {% block head_title %}Common Medicines in Ireland | Compound Health{% endblock %}
 {% block meta %}<meta name="description" content="{{ description }}">{% endblock %}
 {% block head %}
@@ -19,6 +19,7 @@
 {% block content %}
 {% set medicines = {
   'ibuprofen': ('Ibuprofen', 'Nurofen'),
+  'omeprazole': ('Omeprazole', 'Losec'),
   'paracetamol': ('Paracetamol', 'Panadol')
 } %}
 <div class="medicines-hub">
