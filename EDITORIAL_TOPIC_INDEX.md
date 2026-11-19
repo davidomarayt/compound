@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 315 published articles and guides, 69 tools,
+**Included:** 316 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -316,6 +316,7 @@ For the complete register (including 510+ company profiles), open
 - [Where did Tesla’s gross-profit growth come from? Start with services](https://compound.ie/wealth/tesla-services-gross-profit/) — **Wealth**
 - [Who carries the risk on Waymo’s $5 billion loan?](https://compound.ie/wealth/alphabet-waymo-term-loan/) — **Wealth**
 - [Who keeps the profit on an AI rack? AMD, Arista and Supermicro report](https://compound.ie/wealth/ai-infrastructure-earnings/) — **Wealth**
+- [Who Would Pay for Palmer Luckey’s SLAB? The First Customer Could Decide](https://compound.ie/news/palmer-luckey-slab-first-customer-financing/) — **Wealth**
 - [Why you feel more tired in autumn: what darker days do to sleep and mood](https://compound.ie/life/why-you-feel-tired-in-autumn-dark-evenings-ireland/) — **Life**
 - [Why your time off doesn’t always feel like a break](https://compound.ie/life/why-time-off-doesnt-feel-like-a-break/) — **Life**
 - [Will Tesla and SpaceX Merge in 2027? The Financial Case, Risks and Shareholder Impact](https://compound.ie/wealth/tesla-spacex-merger-2027/) — **Wealth**
