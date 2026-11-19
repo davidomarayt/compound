@@ -16,6 +16,8 @@ image_credit: 'Derrick Coetzee, 2013 · CC0 1.0 · cropped'
 image_source: https://commons.wikimedia.org/wiki/File:Ibuprofen_tablets_in_palm_of_hand.jpg
 require_pinned_hero: true
 sources:
+- title: 'HPRA | Ibuprofen prescribing information, section 5.1'
+  url: https://assets.hpra.ie/products/Human/27221/Licence_PA1986-117-003_07042025110231.pdf
 - title: 'HSE | NSAIDs'
   url: https://www2.hse.ie/medicines/nsaids/
 - title: 'HPRA | Nurofen 200 mg coated tablets patient leaflet'
@@ -27,6 +29,12 @@ sources:
 **Ibuprofen is an anti-inflammatory painkiller that also lowers a high temperature.** It belongs to a group of medicines called non-steroidal anti-inflammatory drugs (NSAIDs). Adults use it for symptoms such as period pain, toothache, headaches and pain from a sprain or strain. Some oral ibuprofen products, including Nurofen 200 mg coated tablets, are available in Irish pharmacies without a prescription. [HSE NSAID guide](https://www2.hse.ie/medicines/nsaids/)
 
 This guide covers oral ibuprofen for adults in Ireland. Follow the leaflet for your exact product. Sources checked 19 November 2026.
+
+## The Science Behind the Drug
+
+**Ibuprofen inhibits cyclooxygenase enzymes, often called COX enzymes.** These enzymes help turn arachidonic acid, a fatty acid in cell membranes, into precursors for prostaglandins. Prostaglandins are chemical messengers. In injured or inflamed tissue, some make nearby pain-sensing nerves more sensitive. Others contribute to inflammation and fever.
+
+When ibuprofen slows prostaglandin production, pain signals become less easily triggered and inflammation can ease. The same pathway also makes prostaglandins that help protect the stomach lining. Reducing those protective signals helps explain the risk of stomach irritation, ulcers and bleeding described below. [HPRA prescribing information](https://assets.hpra.ie/products/Human/27221/Licence_PA1986-117-003_07042025110231.pdf) · [Review of NSAIDs and stomach protection](https://pmc.ncbi.nlm.nih.gov/articles/PMC3251190/)
 
 ## How much ibuprofen can adults take?
 

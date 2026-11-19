@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% set hub_url = site_url ~ medicines_hub_url %}
-{% set description = "Irish guides to common medicines, including paracetamol, ibuprofen and omeprazole. Find uses, adult doses, interactions, side effects and when to get help." %}
+{% set description = "Irish guides to common medicines, including cetirizine, ibuprofen, omeprazole and paracetamol. Find out how they work, when they are used and what to look out for." %}
 {% block head_title %}Common Medicines in Ireland | Compound Health{% endblock %}
 {% block meta %}<meta name="description" content="{{ description }}">{% endblock %}
 {% block head %}
@@ -18,6 +18,7 @@
 {% endblock %}
 {% block content %}
 {% set medicines = {
+  'cetirizine': ('Cetirizine', 'Zirtek'),
   'ibuprofen': ('Ibuprofen', 'Nurofen'),
   'omeprazole': ('Omeprazole', 'Losec'),
   'paracetamol': ('Paracetamol', 'Panadol')
@@ -31,7 +32,7 @@
   <header class="medicines-intro">
     <div>
       <h1>Common medicines <span>in Ireland</span></h1>
-      <p>Find out what everyday medicines do, what to check on the pack and when to ask a pharmacist.</p>
+      <p>Find out what everyday medicines do, how they work, what to check on the pack and when to ask a pharmacist.</p>
     </div>
     <form class="medicines-search" aria-label="Medicine guide search" hidden>
       <label for="medicine-query">Find a medicine</label>

@@ -17,6 +17,8 @@ image_credit: 'W.carter, 2017 · CC0 1.0 · cropped'
 image_source: https://commons.wikimedia.org/wiki/File:Omeprazol_Activis_capsules.jpg
 require_pinned_hero: true
 sources:
+- title: 'HPRA | Omeprazole prescribing information, section 5.1'
+  url: https://assets.hpra.ie/products/Human/27211/Licence_PA2315-129-001_02092024160756.pdf
 - title: 'HSE | Omeprazole'
   url: https://www2.hse.ie/medicines/omeprazole/
 - title: 'HPRA | Losec Control 20 mg, Irish authorisation and product documents'
@@ -32,6 +34,12 @@ sources:
 **Omeprazole is a proton pump inhibitor (PPI) that reduces stomach acid.** It’s used for heartburn and acid reflux, and doctors also prescribe it for some stomach ulcers. If you’re taking it for reflux, you may need **two to three days** of treatment before symptoms start to improve. [HSE omeprazole guidance](https://www2.hse.ie/medicines/omeprazole/)
 
 This guide covers adults in Ireland. Follow the leaflet for your exact product or the directions on your prescription. Sources checked 19 November 2026.
+
+## The Science Behind the Drug
+
+**Omeprazole targets the proton pump in the stomach’s acid-producing cells.** Those cells, called parietal cells, use an enzyme called **H⁺/K⁺-ATPase** to move hydrogen ions into the stomach in exchange for potassium ions. That is the final step in secreting stomach acid.
+
+Omeprazole starts as an inactive **prodrug**. The very acidic environment next to an active pump converts it to a form that binds to the pump and disables it. The cell can make replacement pumps, so it can resume acid secretion. [HPRA prescribing information](https://assets.hpra.ie/products/Human/27211/Licence_PA2315-129-001_02092024160756.pdf) · [Review of proton pump inhibition and recovery](https://pmc.ncbi.nlm.nih.gov/articles/PMC5942154/)
 
 ## How long does omeprazole take to work?
 
