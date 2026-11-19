@@ -6543,6 +6543,15 @@
         "embedded_guide": "content/tool-guides/fuel-cost-calculator.md"
       },
       {
+        "title": "Funeral Cost Calculator Ireland",
+        "url": "/funeral-cost-calculator/",
+        "source": "content/tools.yml",
+        "kind": "Calculator",
+        "category": "Family & Life Planning",
+        "slug": "funeral-cost-calculator",
+        "embedded_guide": "content/tool-guides/funeral-cost-calculator.md"
+      },
+      {
         "title": "GLP-1 Cost Calculator Ireland",
         "url": "/glp1-cost-calculator-ireland/",
         "source": "content/tools.yml",
@@ -7049,6 +7058,12 @@
         "title": "Fuel Cost Calculator Ireland",
         "url": "/fuel-cost-calculator/",
         "source": "content/tool-guides/fuel-cost-calculator.md",
+        "kind": "Embedded calculator guide"
+      },
+      {
+        "title": "Funeral Cost Calculator Ireland",
+        "url": "/funeral-cost-calculator/",
+        "source": "content/tool-guides/funeral-cost-calculator.md",
         "kind": "Embedded calculator guide"
       },
       {

@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 313 published articles and guides, 66 tools,
+**Included:** 313 published articles and guides, 67 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -350,6 +350,7 @@ For the complete register (including 510+ company profiles), open
 - [FIRE Number Calculator Ireland](https://compound.ie/fire-number-calculator/) — **Pensions & Investing**
 - [First Home Scheme Calculator Ireland](https://compound.ie/first-home-scheme-calculator/) — **Mortgages & Home Buying**
 - [Fuel Cost Calculator Ireland](https://compound.ie/fuel-cost-calculator/) — **EV & Motoring**
+- [Funeral Cost Calculator Ireland](https://compound.ie/funeral-cost-calculator/) — **Family & Life Planning**
 - [GLP-1 Cost Calculator Ireland](https://compound.ie/glp1-cost-calculator-ireland/) — **Health**
 - [Health Insurance Cost Comparison Calculator Ireland](https://compound.ie/health-insurance-cost-comparison-calculator/) — **Insurance**
 - [Help to Buy Calculator Ireland](https://compound.ie/help-to-buy-calculator/) — **Mortgages & Home Buying**
