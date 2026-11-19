@@ -54,6 +54,10 @@ def verify() -> None:
         assert f'<link rel="canonical" href="{url}">' in html, url
         assert 'Compound Research</a>' in html, url
         assert AD_LOADER in html, f"Ad loader not configured on public article: {url}"
+        if story.get("action") == "substantive_canonical_update":
+            fingerprint = story.get("live_required_fingerprint")
+            assert fingerprint, f"Missing distinct update fingerprint in ledger: {url}"
+            assert fingerprint in html, f"Updated canonical content not yet publicly visible: {url}"
         assert f'href="/companies/{story["slug"]}/"' in html, url
 
         slug = Path(urlparse(url).path.rstrip("/")).name
@@ -69,7 +73,7 @@ def verify() -> None:
 
         profile = f"{SITE}/companies/{story['slug']}/"
         hub = fetch(profile).decode("utf-8")
-        assert f'href="/wealth/{slug}/"' in hub, profile
+        assert f'href="{urlparse(url).path}"' in hub, f"Exact canonical article link missing from profile: {profile}"
         assert AD_LOADER in hub, f"Profile ad loader missing: {profile}"
         print(f"PASS: production HTML, ad loader, company hub, cover and OG/Twitter WebP: {url}")
         count += 1
