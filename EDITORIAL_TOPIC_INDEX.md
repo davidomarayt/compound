@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 336 published articles and guides, 69 tools,
+**Included:** 391 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -18,6 +18,7 @@ For the complete register (including 510+ company profiles), open
 - [AI therapy in Ireland: 61% say they use AI for mental health — but what does the evidence actually show?](https://compound.ie/news/ai-therapy-ireland-chatgpt-mental-health/) — **Life**
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/) — **Wealth**
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/) — **Wealth**
+- [Allopurinol in Ireland | Xanthine oxidase, urate and gout](https://compound.ie/health/medicines/allopurinol/) — **Health**
 - [Alphabet Stock Guide: Google Search, Cloud, AI and Valuation](https://compound.ie/wealth/alphabet-search-ai-economics-2026/) — **Wealth**
 - [Alphabet's cash-flow squeeze deepens as Cloud doubles](https://compound.ie/wealth/alphabet-ai-capex-free-cash-flow/) — **Wealth**
 - [Alphabet’s European AI opportunity comes with conditions](https://compound.ie/wealth/alphabet-europe-ai-sovereignty/) — **Wealth**
@@ -26,9 +27,13 @@ For the complete register (including 510+ company profiles), open
 - [Amazon’s advertising growth slowed. How much can Prime Day explain?](https://compound.ie/wealth/amazon-advertising-prime-day-timing/) — **Wealth**
 - [Amazon’s €16 billion Germany plan needs a return test](https://compound.ie/wealth/amazon-germany-investment-returns/) — **Wealth**
 - [American Express Earnings: Spending Holds Up, but Read the Profit Adjustments](https://compound.ie/wealth/american-express-earnings-spending-adjusted-profit/) — **Wealth**
+- [Amitriptyline for depression in Ireland | A tricyclic antidepressant and its different receptor effects](https://compound.ie/health/medicines/amitriptyline-for-depression/) — **Health**
+- [Amitriptyline for pain and migraine in Ireland | Pain signalling and migraine prevention](https://compound.ie/health/medicines/amitriptyline-for-pain-and-migraine/) — **Health**
+- [Amlodipine in Ireland | Calcium channels, blood vessels and ankle swelling](https://compound.ie/health/medicines/amlodipine/) — **Health**
 - [Amoxicillin in Ireland: how it works, prescriptions and penicillin allergy](https://compound.ie/health/medicines/amoxicillin/) — **Health**
 - [An Post now lets you send small tracked parcels from 2,600 postboxes](https://compound.ie/news/an-post-postbox-drop-off-small-parcels-2026/) — **Wealth**
 - [Anduril and HD Hyundai Built a 600-Tonne Autonomous Ship. Who Will Pay for a Fleet?](https://compound.ie/wealth/anduril-hd-hyundai-asv-alpha-navy-procurement-economics/) — **Wealth**
+- [Antacids in Ireland | Neutralising stomach acid and adding a reflux barrier](https://compound.ie/health/medicines/antacids/) — **Health**
 - [Anthropic IPO by the Numbers: The $61 Billion Share Sale, $900 Billion Compute Bet and Valuation Test](https://compound.ie/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/) — **Wealth**
 - [Anthropic IPO Opens at $111.50. Here’s the ANT Lock-Up Release Schedule](https://compound.ie/news/anthropic-ipo-lockup-release-schedule/) — **Wealth**
 - [Anthropic Lets Customers Pay for Claude Usage Inside Other Apps. Who Keeps the Margin?](https://compound.ie/wealth/anthropic-linked-billing-api-customer-pays-agent-economics/) — **Wealth**
@@ -39,6 +44,10 @@ For the complete register (including 510+ company profiles), open
 - [Anthropic's Fable and Mythos 5.2: The Expensive Model Is Not Always the Best Deal](https://compound.ie/wealth/anthropic-fable-mythos-52-pricing-routing-economics/) — **Wealth**
 - [Anthropic's Self-Hosted Agents Shift the Security Boundary—and the Operating Bill](https://compound.ie/wealth/anthropic-self-hosted-managed-agents-enterprise-control-economics/) — **Wealth**
 - [Anthropic’s $80.7 Billion Loss: The Real Question Is the IPO Price](https://compound.ie/wealth/anthropic-loss-ipo-valuation/) — **Wealth**
+- [Antibiotics in Ireland | How bacterial targets and resistance shape treatment](https://compound.ie/health/medicines/antibiotics/) — **Health**
+- [Antidepressants in Ireland | Transporters, receptors and the time course of treatment](https://compound.ie/health/medicines/antidepressants/) — **Health**
+- [Antifungal medicines in Ireland | Fungal membranes, cell walls and treatment route](https://compound.ie/health/medicines/antifungal-medicines/) — **Health**
+- [Antihistamines in Ireland | Histamine signalling and why some tablets cause drowsiness](https://compound.ie/health/medicines/antihistamines/) — **Health**
 - [Apple Stock Guide: iPhone, Services, Buybacks and Valuation](https://compound.ie/wealth/apple-iphone-services-profit-2026/) — **Wealth**
 - [Apple's earnings growth: what remains after the tariff-refund boost?](https://compound.ie/wealth/apple-earnings-tariff-refunds-services/) — **Wealth**
 - [Apple’s $39.9 Billion Vendor Receivables: How Much Sits With Two Manufacturers?](https://compound.ie/wealth/apple-vendor-receivables-concentration/) — **Wealth**
@@ -49,11 +58,13 @@ For the complete register (including 510+ company profiles), open
 - [Attic Conversion & Dormer Planning Permission Ireland](https://compound.ie/wealth/attic-conversion-dormer-planning-permission-ireland/) — **Wealth**
 - [Axon’s Software Is Accelerating. Is Hardware and Drone Investment Changing the Risk?](https://compound.ie/wealth/axon-software-growth-skydio-capital-risk/) — **Wealth**
 - [Before You Invest in Ireland: Cash, Debt, Goals and Time](https://compound.ie/wealth/before-you-invest-ireland/) — **Wealth**
+- [Beta blockers in Ireland | Adrenaline signals, heart rate and differences between products](https://compound.ie/health/medicines/beta-blockers/) — **Health**
 - [Binance Investigates Suspected Hack as Billions in Crypto Are Frozen](https://compound.ie/news/binance-hack-october-2026/) — **Wealth**
 - [Block’s Lending Engine Is Growing Fast. Are Credit Costs Keeping Up?](https://compound.ie/wealth/block-cash-app-lending-credit-losses/) — **Wealth**
 - [Bloom Energy Earnings: Sales Surge, but Cash Flow Tells a Different Story](https://compound.ie/wealth/bloom-energy-earnings-growth-cash-flow/) — **Wealth**
 - [Blue Origin Has Qualified a New Glenn Valve Fix. The Hard Part Is Returning to Flight.](https://compound.ie/wealth/blue-origin-new-glenn-valve-fix-launch-economics/) — **Wealth**
 - [Boeing Is Generating Cash Again. Is the Recovery Durable?](https://compound.ie/wealth/boeing-cash-flow-commercial-airplanes-losses/) — **Wealth**
+- [Bronchodilators in Ireland | Relaxing the airway by two different routes](https://compound.ie/health/medicines/bronchodilators/) — **Health**
 - [Budget 2027 gives health €29.1bn. So why aren’t Mounjaro and Wegovy funded for obesity?](https://compound.ie/news/budget-2027-obesity-mounjaro-wegovy-ireland/) — **Health**
 - [Budget 2027 Ireland: The Key Changes to Tax, Rent, Childcare, Pensions and Energy](https://compound.ie/wealth/budget-2027-what-to-watch/) — **Wealth**
 - [Budget 2027: Up to €2bn Reportedly Set Aside for a New Public-Sector Pay Deal](https://compound.ie/news/budget-2027-public-sector-pay-deal-2bn/) — **Wealth**
@@ -72,13 +83,17 @@ For the complete register (including 510+ company profiles), open
 - [Cisco’s AI Growth Comes With a $21.9 Billion Supply Commitment. Is the Risk Worth It?](https://compound.ie/wealth/cisco-ai-network-supply-commitments/) — **Wealth**
 - [Claude's November Outages Exposed a Hidden Cost of AI Agents: Missed Work](https://compound.ie/wealth/anthropic-claude-outage-enterprise-agent-reliability-november-2026/) — **Wealth**
 - [Clocks go back in Ireland next Sunday: what changes, and what to check](https://compound.ie/news/clocks-go-back-ireland-october-2026/) — **Life**
+- [Clopidogrel in Ireland | P2Y12 signalling and how the liver activates the drug](https://compound.ie/health/medicines/clopidogrel/) — **Health**
 - [Closing on a House in Ireland: Keys, First Payments and What Comes Next](https://compound.ie/wealth/closing-buying-home-ireland/) — **Wealth**
+- [Codeine in Ireland | Opioid receptors, metabolism and why response varies](https://compound.ie/health/medicines/codeine/) — **Health**
 - [ConocoPhillips Returned 45% of Cash Flow. How Durable Is It When Price Does the Work?](https://compound.ie/wealth/conocophillips-cash-flow-shareholder-returns/) — **Wealth**
+- [Continuous combined HRT in Ireland | Oestrogen and continuous protection of the womb lining](https://compound.ie/health/medicines/continuous-combined-hrt/) — **Health**
 - [Could diesel prices in Ireland fall by 8c a litre? What the G7 oil release means for motorists](https://compound.ie/news/g7-oil-release-diesel-prices-ireland/) — **Wealth**
 - [Creatine in Ireland: what it does, how to take it and what to watch](https://compound.ie/health/creatine-benefits-dosage-safety-ireland/) — **Health**
 - [CVS Plans to Split in Two. Do the Segment Economics Support the Separation?](https://compound.ie/wealth/cvs-separation-segment-economics/) — **Wealth**
 - [Databricks Wants Genie to Work Without Being Asked. Who Pays for the Always-On Agent?](https://compound.ie/wealth/databricks-always-on-genie-enterprise-agent-economics/) — **Wealth**
 - [Databricks' $3 Billion EMEA Plan Is a Distribution Bet, Not a Revenue Forecast](https://compound.ie/wealth/databricks-three-billion-emea-investment-agent-platform-distribution/) — **Wealth**
+- [Diazepam in Ireland | GABA signalling, sedation and persistence](https://compound.ie/health/medicines/diazepam/) — **Health**
 - [Disney Is Spending $9 Billion on Experiences. Can Parks and Cruises Earn the Return?](https://compound.ie/wealth/disney-experiences-capital-spending-returns/) — **Wealth**
 - [Dividend Investing in Ireland: How Dividend Stocks Work](https://compound.ie/wealth/dividend-investing-ireland/) — **Wealth**
 - [Do I get public holiday pay if I don’t normally work that day?](https://compound.ie/wealth/public-holiday-pay-ireland-part-time/) — **Wealth**
@@ -87,19 +102,26 @@ For the complete register (including 510+ company profiles), open
 - [Do you actually need a battery with solar panels in Ireland?](https://compound.ie/wealth/solar-panels-vs-battery-ireland/) — **Wealth**
 - [Dublin Theatre Festival 2026: what’s on, when it runs and how to plan a visit](https://compound.ie/news/dublin-theatre-festival-2026-guide/) — **Life**
 - [Duke Energy Is Spending $12.6 Billion Before the New Load Arrives. Who Funds the Gap?](https://compound.ie/wealth/duke-energy-capital-spending-load-growth/) — **Wealth**
+- [Duloxetine in Ireland | Serotonin, noradrenaline and pain-modulating pathways](https://compound.ie/health/medicines/duloxetine/) — **Health**
 - [East- and West-Facing Solar Panels in Ireland: Are They Worth It?](https://compound.ie/wealth/east-west-facing-solar-panels-ireland/) — **Wealth**
 - [ECB Holds Rates as Lagarde Announces Departure: What It Means for Your Money](https://compound.ie/news/ecb-rates-lagarde-departure-ireland-october-2026/) — **Wealth**
 - [El Niño could be one of the strongest on record — what it actually means for Ireland](https://compound.ie/news/el-nino-2026-ireland-weather-food-transport/) — **Life**
 - [Electricity Tariffs in Ireland: Smart, Day/Night, EV & Dynamic Rates](https://compound.ie/wealth/electricity-tariffs-ireland/) — **Wealth**
 - [Eli Lilly Stock Guide: Medicines, Pipeline, Pricing and Valuation](https://compound.ie/wealth/eli-lilly-foundayo-obesity-growth-2026-10-19/) — **Wealth**
 - [Eli Lilly''s Foundayo Wins European Backing: What the Oral GLP-1 Means for LLY Investors](https://compound.ie/wealth/eli-lilly-foundayo-europe-approval-glp1-2026/) — **Wealth**
+- [Escitalopram in Ireland | The serotonin transporter and the delay in symptom change](https://compound.ie/health/medicines/escitalopram/) — **Health**
+- [Esomeprazole in Ireland | The stomach proton pump and time to acid suppression](https://compound.ie/health/medicines/esomeprazole/) — **Health**
 - [EU Rwanda Deportation Centre: What Will the Return Hub Actually Cost?](https://compound.ie/news/eu-rwanda-deportation-centre-cost-2026/) — **Wealth**
 - [EV vs Petrol vs Diesel in Ireland: Which Is Cheapest to Own?](https://compound.ie/wealth/ev-vs-petrol-vs-diesel-ireland/) — **Wealth**
 - [Executor of a Will in Ireland: Duties & Responsibilities](https://compound.ie/wealth/executor-of-a-will-ireland/) — **Wealth**
 - [Extension of farmer fuel supports being considered ahead of Budget 2027](https://compound.ie/news/farmer-fuel-supports-budget-2027/) — **Wealth**
+- [Ferrous fumarate in Ireland | Iron absorption, haemoglobin and the difference between two blood tests](https://compound.ie/health/medicines/ferrous-fumarate/) — **Health**
+- [Finding your patient information leaflet in Ireland | Read the exact Irish leaflet and locate the pharmacology](https://compound.ie/health/medicines/how-to-find-your-patient-information-leaflet-online/) — **Health**
 - [First-Time Buyer Supports in Ireland: Help to Buy and First Home Scheme](https://compound.ie/wealth/first-time-buyer-supports-ireland/) — **Wealth**
 - [Fixed vs Variable Mortgage in Ireland: How to Choose](https://compound.ie/wealth/fixed-vs-variable-mortgage-ireland/) — **Wealth**
+- [Folic acid in Ireland | Folate metabolism, new cells and two distinct uses](https://compound.ie/health/medicines/folic-acid/) — **Health**
 - [Fuel protests return ahead of Budget 2027 — and the next price shock could be bigger](https://compound.ie/news/fuel-protests-budget-2027-ireland/) — **Wealth**
+- [Furosemide in Ireland | Salt transport in the kidney and monitoring fluid balance](https://compound.ie/health/medicines/furosemide/) — **Health**
 - [Garage Conversion & Change of Use Planning Permission Ireland](https://compound.ie/wealth/garage-conversion-change-of-use-planning-ireland/) — **Wealth**
 - [Gartner’s Contract Value Is Growing Slowly. Are Buybacks Doing Too Much Work?](https://compound.ie/wealth/gartner-contract-value-buybacks/) — **Wealth**
 - [GE Vernova: The $197 Billion Backlog Still Has to Become Profit](https://compound.ie/wealth/ge-vernova-backlog-cash-flow/) — **Wealth**
@@ -116,6 +138,7 @@ For the complete register (including 510+ company profiles), open
 - [Heat Pumps in Ireland: Costs, Grants, Running Costs & Suitability](https://compound.ie/wealth/heat-pumps-ireland/) — **Wealth**
 - [Hershey Raised Prices 11% and Volume Fell 10%. How Durable Is the Margin Recovery?](https://compound.ie/wealth/hershey-pricing-volume-margin/) — **Wealth**
 - [Honeywell Raises Guidance: What the Headline Growth Number Misses](https://compound.ie/wealth/honeywell-earnings-organic-growth-guidance/) — **Wealth**
+- [Hormone replacement therapy (HRT) in Ireland | Systemic and local hormone effects during menopause](https://compound.ie/health/medicines/hrt/) — **Health**
 - [House Extension Planning Permission Ireland: The 45 m² Rule Explained](https://compound.ie/wealth/house-extension-planning-permission-ireland/) — **Wealth**
 - [House Hunting and Bidding in Ireland: How to Stay Disciplined](https://compound.ie/wealth/house-hunting-bidding-ireland/) — **Wealth**
 - [How accurate is a pregnancy due date? LMP vs dating scan explained](https://compound.ie/health/pregnancy-due-date-accuracy-lmp-vs-scan-ireland/) — **Health**
@@ -174,16 +197,22 @@ For the complete register (including 510+ company profiles), open
 - [Jensen Huang Says He Would Return as Nvidia CEO: What It Means for NVDA Stock](https://compound.ie/news/jensen-huang-willing-return-nvidia-ceo-nvda-2026/) — **Wealth**
 - [Jobseeker penalty would rise from €90 to €100 under Social Welfare Bill](https://compound.ie/news/jobseeker-penalty-social-welfare-bill-2026/) — **Wealth**
 - [Lam Research Earnings: Strong Growth Meets an Even Higher Bar](https://compound.ie/wealth/lam-research-earnings-growth-expectations/) — **Wealth**
+- [Lansoprazole in Ireland | Acid pump blockade and why formulations matter](https://compound.ie/health/medicines/lansoprazole/) — **Health**
+- [Laxatives in Ireland | Water, fibre, bowel movement and differences between types](https://compound.ie/health/medicines/laxatives/) — **Health**
+- [Lercanidipine in Ireland | Calcium channel blockade and exposure-sensitive interactions](https://compound.ie/health/medicines/lercanidipine/) — **Health**
+- [Levothyroxine in Ireland | Thyroid feedback, absorption and how to interpret TSH](https://compound.ie/health/medicines/levothyroxine/) — **Health**
 - [Life for a 100-Year Life: Connection, Purpose and Ordinary Days](https://compound.ie/life/happiness-for-a-100-year-life/) — **Life**
 - [Life Insurance Ireland 2026: Costs, Cover, Policy Types and How Much You Need](https://compound.ie/wealth/life-insurance-ireland/) — **Wealth**
 - [Lilly Has Earned Its Last Jardiance Sales Milestone. What Growth Remains?](https://compound.ie/wealth/lilly-jardiance-milestone-revenue/) — **Wealth**
 - [Lilly’s METiS deal: read beyond the $1.1 billion headline](https://compound.ie/wealth/eli-lilly-metis-drug-delivery-deal/) — **Wealth**
 - [Liraglutide (Saxenda): what it is and how it works](https://compound.ie/health/medicines/liraglutide/) — **Health**
+- [Lithium in Ireland | Brain signalling and a narrow therapeutic range](https://compound.ie/health/medicines/lithium/) — **Health**
 - [Live Nation’s Crowds Are Growing. Which Segment Carries the Economics?](https://compound.ie/wealth/live-nation-attendance-segment-economics/) — **Wealth**
 - [Live to 100: What a 100-Year Life Would Really Mean in Ireland](https://compound.ie/live-to-100/) — **Health**
 - [Local Property Tax Ireland 2026–2030: Bands, Rates & How Much You’ll Pay](https://compound.ie/wealth/local-property-tax-ireland/) — **Wealth**
 - [Loneliness in Ireland: how common it is and what actually helps](https://compound.ie/life/loneliness-ireland-how-common-what-helps/) — **Life**
 - [Looksmaxxing: What the Internet Promises Men — and What the Science Actually Says](https://compound.ie/health/looksmaxxing-science-male-attractiveness/) — **Health**
+- [Low-dose aspirin in Ireland | Platelets, thromboxane and prevention decisions](https://compound.ie/health/medicines/low-dose-aspirin/) — **Health**
 - [Macronutrients and micronutrients: a complete guide for Ireland](https://compound.ie/health/macronutrients-micronutrients-guide-ireland/) — **Health**
 - [Making a Will in Ireland: Complete Guide & Costs](https://compound.ie/wealth/how-to-make-a-will-ireland/) — **Wealth**
 - [Manchester City found guilty on 114 financial-rule charges: what the case was really about](https://compound.ie/news/manchester-city-114-financial-rule-breaches-explained/) — **Wealth**
@@ -202,6 +231,7 @@ For the complete register (including 510+ company profiles), open
 - [Microsoft's AI spending: the cash-flow test behind Azure's growth](https://compound.ie/wealth/microsoft-ai-capex-cash-flow/) — **Wealth**
 - [Microsoft's Layoff Wave: What the 60,000-Employee Exit Offer Really Means](https://compound.ie/news/microsoft-layoffs-voluntary-exit-offer-2026/) — **Wealth**
 - [Microsoft’s Essex exit exposes the power constraint on AI](https://compound.ie/wealth/microsoft-nscale-power-grid-delay/) — **Wealth**
+- [Mirtazapine in Ireland | Receptor signalling, wakefulness and appetite](https://compound.ie/health/medicines/mirtazapine/) — **Health**
 - [Molina Earnings: Guidance Holds as Medical Costs Squeeze Margins](https://compound.ie/wealth/molina-healthcare-earnings-medicaid-margins/) — **Wealth**
 - [Monster Sold More Cases but Earned Less per Case. Can Volume Carry the Margin?](https://compound.ie/wealth/monster-case-volume-margin-pressure/) — **Wealth**
 - [More than 500,000 Irish energy accounts are in arrears — what happens if you can’t pay?](https://compound.ie/news/energy-bill-arrears-ireland-cant-pay/) — **Wealth**
@@ -217,12 +247,14 @@ For the complete register (including 510+ company profiles), open
 - [No Energy Credit in Budget 2027: What Will Electricity Cost This Winter?](https://compound.ie/news/no-energy-credit-budget-2027-electricity-bills-winter/) — **Wealth**
 - [Nokia’s AI Sales Jump 123%—But Turning Growth Into Cash Is the Next Test](https://compound.ie/news/nokia-ai-growth-cash-flow/) — **Wealth**
 - [November fuel prices fall slightly, but Irish public EV charging rises sharply](https://compound.ie/news/irish-fuel-prices-november-2026-ev-charging/) — **Wealth**
+- [NSAIDs in Ireland | Cyclo-oxygenase, inflammation and where risk comes from](https://compound.ie/health/medicines/nsaids/) — **Health**
 - [Nvidia Creates National Security Committee: What It Means for NVDA Stock](https://compound.ie/news/nvidia-national-security-export-control-committee-2026/) — **Wealth**
 - [Nvidia Faces Fresh Huang Allegation: What the Governance Risk Means for Investors](https://compound.ie/news/nvidia-huang-governance-investor-risk/) — **Wealth**
 - [Nvidia Q3 Earnings: $115.8bn Sales, but Lower Q4 Margins Ahead](https://compound.ie/news/nvidia-q3-fy2027-earnings-numbers/) — **Wealth**
 - [Nvidia Stock Guide: AI Chips, CUDA, Margins and Valuation](https://compound.ie/wealth/nvidia-ai-gpu-margins-2026/) — **Wealth**
 - [Nvidia's 75% gross margin: how much room is there for competition?](https://compound.ie/wealth/nvidia-gross-margin-ai-demand/) — **Wealth**
 - [Nvidia’s next competitive test is software portability](https://compound.ie/wealth/nvidia-torchneuron-software-competition/) — **Wealth**
+- [Oestrogen tablets, patches, gel and spray in Ireland | Route of delivery and how systemic oestrogen reaches the body](https://compound.ie/health/medicines/oestrogen-tablets-patches-gel-spray/) — **Health**
 - [One in Seven Irish Adults Now Receive Financial Help From Family](https://compound.ie/news/family-financial-support-ireland-2026/) — **Wealth**
 - [onsemi's Margins Are Recovering. How Much Is AI Doing?](https://compound.ie/wealth/onsemi-margin-recovery-ai-data-centre/) — **Wealth**
 - [OpenAI Is Building a Business Channel Inside ChatGPT. Who Captures the Value?](https://compound.ie/wealth/openai-business-agents-chatgpt-merchant-economics-2026/) — **Wealth**
@@ -237,6 +269,9 @@ For the complete register (including 510+ company profiles), open
 - [Ozempic, Wegovy & Mounjaro: medical card cover in Ireland](https://compound.ie/health/glp1-hse-medical-card-ireland/) — **Health**
 - [Padel in Ireland: Rules, Courts, Costs & How to Start Playing](https://compound.ie/life/padel-ireland/) — **Life**
 - [Palmer Luckey's SLAB Project: $1B Valuation, Costs and Floating City Economics](https://compound.ie/news/palmer-luckey-slab-project-cost-valuation-floating-city/) — **Wealth**
+- [Pantoprazole in Ireland | Proton pump inhibition and indication-specific review](https://compound.ie/health/medicines/pantoprazole/) — **Health**
+- [Paracetamol for children in Ireland | Fever signalling, liquid strengths and safe measurement](https://compound.ie/health/medicines/paracetamol-for-children/) — **Health**
+- [Paxlovid in Ireland | Blocking a viral protease and slowing drug breakdown](https://compound.ie/health/medicines/paxlovid/) — **Health**
 - [Pay-related jobseeker claims rose by 5,077. What would the payment cover?](https://compound.ie/news/october-live-register-jobseekers-pay-related-benefit/) — **Wealth**
 - [PCP vs Hire Purchase vs Car Loan in Ireland: the real cost of each](https://compound.ie/wealth/pcp-vs-hp-vs-car-loan-ireland/) — **Wealth**
 - [Pension Funds and Fees in Ireland: What to Check](https://compound.ie/wealth/pension-funds-fees-ireland/) — **Wealth**
@@ -245,6 +280,7 @@ For the complete register (including 510+ company profiles), open
 - [Pension tax relief in Ireland: what it's worth, the limits, and how to claim](https://compound.ie/wealth/pension-tax-relief-ireland-how-to-claim/) — **Wealth**
 - [Pension vs Investing in Ireland: Which Wrapper Fits the Goal?](https://compound.ie/wealth/pension-vs-investing-ireland/) — **Wealth**
 - [Pensions in Ireland 101: A Complete Beginner’s Guide](https://compound.ie/wealth/pensions-in-ireland/) — **Wealth**
+- [Perindopril in Ireland | The ACE pathway and blood test follow-up](https://compound.ie/health/medicines/perindopril/) — **Health**
 - [Personal Investment Account Ireland (PIA): Complete 2027 Guide](https://compound.ie/wealth/personal-investment-account-ireland/) — **Wealth**
 - [PIA Dividend vs Growth Portfolio: Which Builds More Wealth?](https://compound.ie/wealth/pia-dividend-vs-growth-portfolio/) — **Wealth**
 - [Pickleball in Ireland: How to Play, Rules, Clubs & Where to Start](https://compound.ie/life/pickleball-ireland/) — **Life**
@@ -252,6 +288,8 @@ For the complete register (including 510+ company profiles), open
 - [Planning Application Process Ireland: Timeline, Fees and What Happens Next](https://compound.ie/wealth/planning-application-process-ireland/) — **Wealth**
 - [Planning Objections & Submissions in Ireland: How to Comment on an Application](https://compound.ie/wealth/planning-objections-submissions-ireland/) — **Wealth**
 - [Planning Permission in Ireland: The Complete Guide](https://compound.ie/wealth/planning-permission-ireland/) — **Wealth**
+- [Prednisolone in Ireland | Glucocorticoid receptors and why treatment length matters](https://compound.ie/health/medicines/prednisolone/) — **Health**
+- [Pregabalin in Ireland | Calcium channel subunits and nerve signalling](https://compound.ie/health/medicines/pregabalin/) — **Health**
 - [Pregnancy week by week in Ireland: GP, hospital and scan schedule](https://compound.ie/health/pregnancy-week-by-week-ireland-appointments/) — **Health**
 - [PrepayPower Freezes Winter Energy Prices — But Are Customers Getting a Good Deal?](https://compound.ie/news/prepaypower-price-freeze-winter-2026-2027/) — **Wealth**
 - [Prescription opioid use rises more than 10% under Ireland's medical card scheme](https://compound.ie/news/prescription-opioid-use-ireland-gms-2026/) — **Health**
@@ -261,6 +299,7 @@ For the complete register (including 510+ company profiles), open
 - [PRSI Rises Today: What the 1 October 2026 Increase Costs You](https://compound.ie/news/prsi-increase-october-2026/) — **Wealth**
 - [R132 traffic changes due as €15m Julianstown and Stamullen water project starts](https://compound.ie/news/julianstown-stamullen-water-main-r132-works/) — **Wealth**
 - [Ralph Lauren’s Gross Margin Rose 6.2 Points. Is Full-Price Demand Doing the Work?](https://compound.ie/wealth/ralph-lauren-full-price-margin/) — **Wealth**
+- [Ramipril in Ireland | ACE, bradykinin and follow-up blood tests](https://compound.ie/health/medicines/ramipril/) — **Health**
 - [Reddit’s Revenue Is Outrunning User Growth. Can It Last?](https://compound.ie/wealth/reddit-revenue-user-growth/) — **Wealth**
 - [Redundancy Tax in Ireland: Statutory Pay, Ex-Gratia & SCSB](https://compound.ie/wealth/redundancy-ireland-statutory-ex-gratia-tax/) — **Wealth**
 - [Remote Working in Ireland: Your Rights and How to Make a Request](https://compound.ie/life/remote-working-ireland-rights-request/) — **Life**
@@ -283,6 +322,8 @@ For the complete register (including 510+ company profiles), open
 - [Saving for your child in Ireland: tax, ownership and what happens at 18](https://compound.ie/wealth/saving-for-your-child-ireland/) — **Wealth**
 - [Section 5 Declaration Ireland: How to Confirm If Planning Permission Is Needed](https://compound.ie/wealth/section-5-declaration-ireland/) — **Wealth**
 - [Self-Employed Tax in Ireland 2026: Income Tax, USC, PRSI and What to Set Aside](https://compound.ie/wealth/self-employed-tax-ireland-2026-guide/) — **Wealth**
+- [Sequential combined HRT in Ireland | Cyclical progestogen and what bleeding can mean](https://compound.ie/health/medicines/sequential-combined-hormone-replacement-therapy/) — **Health**
+- [Sertraline in Ireland | Serotonin reuptake and assessing change over time](https://compound.ie/health/medicines/sertraline/) — **Health**
 - [Shares, ETFs and Funds in Ireland: What Is the Difference?](https://compound.ie/wealth/shares-etfs-funds-ireland/) — **Wealth**
 - [Sheds, Garden Rooms & Home Offices: Planning Permission in Ireland](https://compound.ie/wealth/sheds-garden-rooms-home-offices-planning-ireland/) — **Wealth**
 - [Shopify merchants sold $119 billion. How much cash reached Shopify?](https://compound.ie/wealth/shopify-merchant-sales-cash-flow/) — **Wealth**
@@ -297,6 +338,12 @@ For the complete register (including 510+ company profiles), open
 - [Starlink Mini 2: Price, Battery and What It Means for SpaceX and Tesla](https://compound.ie/news/starlink-mini-2-spacex-tesla-cost-stock-2026/) — **Wealth**
 - [State Pension in Ireland: Rates, PRSI Rules & How to Qualify](https://compound.ie/wealth/state-pension-ireland/) — **Wealth**
 - [State Pension set for at least €7.50 Budget 2027 rise: what it would mean](https://compound.ie/news/state-pension-increase-budget-2027-ireland/) — **Wealth**
+- [Statins in Ireland | The liver cholesterol pathway and reading risk reduction](https://compound.ie/health/medicines/statins/) — **Health**
+- [Steroid inhalers in Ireland | Airway inflammation, deposition and controller use](https://compound.ie/health/medicines/steroid-inhalers/) — **Health**
+- [Steroid injections in Ireland | Local anti-inflammatory action and short-term assessment](https://compound.ie/health/medicines/steroid-injections/) — **Health**
+- [Steroid nasal sprays in Ireland | Inflammation at the nasal lining and technique](https://compound.ie/health/medicines/steroid-nasal-sprays/) — **Health**
+- [Steroid tablets in Ireland | Whole-body exposure and the adrenal response](https://compound.ie/health/medicines/steroid-tablets/) — **Health**
+- [Steroids (corticosteroids) in Ireland | Anti-inflammatory receptors and why the route changes exposure](https://compound.ie/health/medicines/steroids/) — **Health**
 - [Stress symptoms: how to recognise stress and what actually helps](https://compound.ie/life/stress-symptoms-what-helps-ireland/) — **Life**
 - [Stripe Is Going Through HSBC's Banking App. Can That Change Small-Business Payments?](https://compound.ie/wealth/stripe-hsbc-tap-to-pay-bank-distribution-small-business/) — **Wealth**
 - [Tapestry Is Returning $2 Billion While Kate Spade Loses Money. Can Coach Carry Both?](https://compound.ie/wealth/tapestry-coach-kate-spade-capital-returns/) — **Wealth**
@@ -310,12 +357,18 @@ For the complete register (including 510+ company profiles), open
 - [The rise of GLP-1 medicines in Ireland: what the evidence says](https://compound.ie/health/glp1-medicines-ireland-rise-evidence/) — **Health**
 - [Thermo Fisher Earnings: Stronger Growth, Better Margins—and a Cash-Flow Test](https://compound.ie/wealth/thermo-fisher-earnings-organic-growth-cash-flow/) — **Wealth**
 - [Thousands may be due PAYE refunds — but 2022 claims expire this December](https://compound.ie/news/paye-tax-refunds-2025-unclaimed-november-2026/) — **Wealth**
+- [Tibolone in Ireland | Active metabolites and tissue-specific effects](https://compound.ie/health/medicines/tibolone/) — **Health**
+- [Topical corticosteroids in Ireland | Skin barrier, steroid strength and site of application](https://compound.ie/health/medicines/topical-corticosteroids/) — **Health**
 - [Two Irish couples earn €100,000. Why can their take-home pay differ by €9,556?](https://compound.ie/news/one-income-vs-two-incomes-ireland-2027/) — **Wealth**
 - [Tyson’s Chicken Earned $1.75 Billion. Can It Carry Beef’s $1.22 Billion Loss?](https://compound.ie/wealth/tyson-chicken-beef-segment-profit/) — **Wealth**
 - [Uber’s Audience Is Growing. Is the Platform Finally Showing Operating Leverage?](https://compound.ie/wealth/uber-audience-growth-operating-leverage/) — **Wealth**
 - [UPS Is Delivering Fewer US Packages. Can Price and Automation Do the Rest?](https://compound.ie/wealth/ups-package-volume-pricing-automation/) — **Wealth**
+- [Utrogestan in Ireland | Micronised progesterone and protection of the womb lining](https://compound.ie/health/medicines/utrogestan/) — **Health**
+- [Vaginal oestrogen in Ireland | Local tissue changes in the vagina and urinary tract](https://compound.ie/health/medicines/vaginal-oestrogen/) — **Health**
+- [Venlafaxine in Ireland | Serotonin and noradrenaline transporters and formulation differences](https://compound.ie/health/medicines/venlafaxine/) — **Health**
 - [Visa Earnings: Strong Payment Growth, but Watch the Incentives](https://compound.ie/wealth/visa-payments-growth-incentives/) — **Wealth**
 - [Vitamin D in winter: who in Ireland should take a supplement](https://compound.ie/health/vitamin-d-ireland-winter-who-should-take-it/) — **Health**
+- [Warfarin in Ireland | Vitamin K recycling, clotting factors and reading an INR](https://compound.ie/health/medicines/warfarin/) — **Health**
 - [Was Tesla's Cybertruck a Failure? The Numbers Behind the Wind-Down](https://compound.ie/news/tesla-cybertruck-success-failure-numbers/) — **Wealth**
 - [Wealth for a 100-Year Life: Money, Housing and Choices in Ireland](https://compound.ie/wealth/wealth-for-a-100-year-life/) — **Wealth**
 - [Western Digital Earnings: The AI Storage Boom Is Turning Into Cash](https://compound.ie/wealth/western-digital-earnings-ai-storage-cash-flow/) — **Wealth**
@@ -345,6 +398,8 @@ For the complete register (including 510+ company profiles), open
 - [Your inflation rate may be higher than 3.4% — who is being hit hardest in Ireland?](https://compound.ie/news/personal-inflation-rate-ireland-households-2026/) — **Wealth**
 - [Yuno Energy Freezes Winter Prices for 100,000 Customers — But Bills Have Already Risen](https://compound.ie/news/yuno-energy-price-freeze-winter-2026-2027/) — **Wealth**
 - [Zebra’s Sales Jumped 22%, but Gross Margin Fell. Can Automation Growth Absorb Memory Costs?](https://compound.ie/wealth/zebra-automation-growth-memory-margin/) — **Wealth**
+- [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/) — **Health**
+- [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/) — **Health**
 - [€16 an hour: what Ireland’s new Living Wage benchmark would mean for your pay](https://compound.ie/news/living-wage-16-ireland-2026/) — **Wealth**
 - [€2,000 Boiler Scrappage Grant Ireland: Now Live Under SEAI Scheme](https://compound.ie/news/boiler-scrappage-grant-ireland-2027/) — **Wealth**
 - [€400 Energy Credit Proposal: What Budget 2027 Actually Did](https://compound.ie/news/social-democrats-400-energy-credit-budget-2027/) — **Wealth**
