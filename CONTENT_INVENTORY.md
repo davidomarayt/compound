@@ -10,8 +10,8 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 - Published editorial articles and guides: 313
 - Existing automated/legacy earnings source files: 11
-- Tools and calculators: 64
-- Embedded tool-guide files: 57
+- Tools and calculators: 65
+- Embedded tool-guide files: 58
 - Information and policy pages: 27
 - Main hubs: 11
 - Public-company directory profiles: 511
@@ -356,7 +356,7 @@ Some old quarterly article routes are now redirects to continuous company profil
 - [Nike, Inc. (NKE) Earnings: FY 2027 Q1 Revenue, Profit and EPS](https://compound.ie/wealth/earnings/nke-earnings-fy2027-q1/) | source: content/wealth/nke-earnings-fy2027-q1.md
 - [PepsiCo (PEP) Earnings: FY 2026 Q3 Revenue, Profit and EPS](https://compound.ie/wealth/earnings/pep-earnings-fy2026-q3/) | source: content/wealth/pep-earnings-fy2026-q3.md
 
-## Interactive calculators and tools — 64
+## Interactive calculators and tools — 65
 
 ### EV & Motoring — 3
 
@@ -364,8 +364,9 @@ Some old quarterly article routes are now redirects to continuous company profil
 - [EV Charging Cost Calculator Ireland](https://compound.ie/ev-charging-cost-calculator/) | includes embedded guide
 - [Fuel Cost Calculator Ireland](https://compound.ie/fuel-cost-calculator/) | includes embedded guide
 
-### Family & Life Planning — 3
+### Family & Life Planning — 4
 
+- [Childcare Cost Calculator Ireland](https://compound.ie/childcare-cost-calculator/) | includes embedded guide
 - [Childcare Cost vs Returning to Work Calculator Ireland](https://compound.ie/childcare-return-to-work-calculator/) | includes embedded guide
 - [Lifetime Cost Calculator Ireland](https://compound.ie/lifetime-cost-calculator/) | includes embedded guide
 - [Pregnancy Due Date & Timeline Calculator Ireland](https://compound.ie/pregnancy-due-date-calculator/) | includes embedded guide
@@ -449,7 +450,7 @@ Some old quarterly article routes are now redirects to continuous company profil
 - [USC Calculator Ireland 2027](https://compound.ie/usc-calculator/) | includes embedded guide
 - [VAT Calculator Ireland 2026](https://compound.ie/vat-calculator/) | includes embedded guide
 
-## Supporting tool explainer files — 57
+## Supporting tool explainer files — 58
 
 Each entry lives within its corresponding calculator page; it is not a second standalone article.
 
@@ -458,6 +459,7 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - Budget 2027 Calculator Ireland | source: content/tool-guides/budget-2027-calculator.md
 - Capital Gains Tax Calculator Ireland | source: content/tool-guides/capital-gains-tax-calculator.md
 - Car Finance Calculator Ireland — Loan vs PCP vs Hire Purchase | source: content/tool-guides/car-finance-calculator.md
+- Childcare Cost Calculator Ireland | source: content/tool-guides/childcare-cost-calculator.md
 - Childcare Cost vs Returning to Work Calculator Ireland | source: content/tool-guides/childcare-return-to-work-calculator.md
 - Contractor Day Rate vs Salary Calculator Ireland 2026 | source: content/tool-guides/contractor-vs-salary-calculator.md
 - Debt Snowball vs Avalanche Calculator Ireland | source: content/tool-guides/debt-repayment-calculator.md

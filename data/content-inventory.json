@@ -6408,6 +6408,15 @@
         "embedded_guide": "content/tool-guides/car-finance-calculator.md"
       },
       {
+        "title": "Childcare Cost Calculator Ireland",
+        "url": "/childcare-cost-calculator/",
+        "source": "content/tools.yml",
+        "kind": "Calculator",
+        "category": "Family & Life Planning",
+        "slug": "childcare-cost-calculator",
+        "embedded_guide": "content/tool-guides/childcare-cost-calculator.md"
+      },
+      {
         "title": "Childcare Cost vs Returning to Work Calculator Ireland",
         "url": "/childcare-return-to-work-calculator/",
         "source": "content/tools.yml",
@@ -6959,6 +6968,12 @@
         "title": "Car Finance Calculator Ireland — Loan vs PCP vs Hire Purchase",
         "url": "/car-finance-calculator/",
         "source": "content/tool-guides/car-finance-calculator.md",
+        "kind": "Embedded calculator guide"
+      },
+      {
+        "title": "Childcare Cost Calculator Ireland",
+        "url": "/childcare-cost-calculator/",
+        "source": "content/tool-guides/childcare-cost-calculator.md",
         "kind": "Embedded calculator guide"
       },
       {
