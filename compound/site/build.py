@@ -1685,7 +1685,9 @@ def build_site(settings: Settings) -> dict:
         _write(out / MEDICINES_HUB_URL.strip("/") / "index.html",
                env.get_template("medicines.html").render(
                    title="Common Medicines in Ireland", pillar="health",
-                   medicines_hub_url=medicines_hub_url, guides=medicine_guides))
+                   medicines_hub_url=medicines_hub_url, guides=medicine_guides,
+                   oral_glp_guide=next((a for a in by_pillar["health"]
+                                       if a.slug == "oral-glp-1-medicines-ireland"), None)))
 
     for p in PILLARS:
         if p == "happiness":

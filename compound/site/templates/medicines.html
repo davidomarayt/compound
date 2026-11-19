@@ -13,7 +13,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ (site_url ~ '/')|tojson }}},{"@type":"ListItem","position":2,"name":"Health","item":{{ (site_url ~ '/health/')|tojson }}},{"@type":"ListItem","position":3,"name":"Common Medicines","item":{{ hub_url|tojson }}}]}</script>
 {% endblock %}
 {% block post_styles %}
-<link rel="stylesheet" href="/static/medicines.css?v=3">
+<link rel="stylesheet" href="/static/medicines.css?v=4">
 <script defer src="/static/medicines.js?v=2"></script>
 {% endblock %}
 {% block content %}
@@ -24,6 +24,7 @@
   'liraglutide': ('Liraglutide', 'Saxenda'),
   'metformin': ('Metformin', 'Glucophage'),
   'omeprazole': ('Omeprazole', 'Losec'),
+  'orforglipron': ('Orforglipron', 'Foundayo'),
   'paracetamol': ('Paracetamol', 'Panadol'),
   'salbutamol': ('Salbutamol', 'Ventolin'),
   'semaglutide': ('Semaglutide', 'Ozempic / Wegovy / Rybelsus'),
@@ -67,6 +68,9 @@
         ] if group_guides %}
         <section class="medicines-group" id="{{ group_id }}" aria-labelledby="{{ group_id }}-heading" data-medicine-group>
           <h3 id="{{ group_id }}-heading">{{ group_title }}</h3>
+          {% if group_id == 'glp-1-medicines' and oral_glp_guide %}
+          <p class="medicines-group-link"><a href="{{ oral_glp_guide.url }}">Compare oral GLP-1 medicines</a></p>
+          {% endif %}
           <div class="medicines-guides">
           {% for guide in group_guides %}
             {% set name, brand = medicines.get(guide.slug, (guide.title, '')) %}

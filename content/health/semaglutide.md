@@ -45,6 +45,10 @@ When you eat, the gut releases **glucagon-like peptide-1**, or GLP-1. Semaglutid
 
 The EMA documents describe the EU authorisation. Local stock and reimbursement are separate questions. Use the exact product on your prescription and check with your prescriber before switching between products. [EMA: Ozempic](https://www.ema.europa.eu/en/medicines/human/EPAR/ozempic) · [EMA: Wegovy](https://www.ema.europa.eu/en/documents/product-information/wegovy-epar-product-information_en.pdf) · [EMA: Rybelsus](https://www.ema.europa.eu/en/medicines/human/EPAR/rybelsus)
 
+### How do the tablets get absorbed?
+
+Wegovy tablets and Rybelsus contain salcaprozate sodium (SNAC), which helps semaglutide cross the stomach lining. Food can reduce absorption of oral semaglutide, so the tablet leaflets include fasting instructions. The products are authorised for different uses. See [oral GLP-1 medicines in Ireland](/health/oral-glp-1-medicines-ireland/) for the comparison with Foundayo and how Irish access is confirmed. [EMA Wegovy product information, section 5.2](https://www.ema.europa.eu/en/documents/product-information/wegovy-epar-product-information_en.pdf) · [EMA Rybelsus product information](https://www.ema.europa.eu/en/documents/product-information/rybelsus-epar-product-information_en.pdf)
+
 ## What should you discuss with your prescriber?
 
 Nausea, diarrhoea, vomiting and constipation can occur. Seek urgent medical advice for severe, persistent abdominal pain, which can be a sign of pancreatitis. Tell your care team if you take insulin or a sulfonylurea, are planning pregnancy, or are due to have an operation with general anaesthesia or deep sedation. The product leaflet covers these situations and other precautions in more detail. [EMA Wegovy prescribing information and leaflet](https://www.ema.europa.eu/en/documents/product-information/wegovy-epar-product-information_en.pdf)
