@@ -5,7 +5,7 @@ name: site
 on:
   push:
     branches: ["claude/clever-babbage-uibieq"]
-    paths: ["content/**", "compound/site/**", "scripts/news_images.py", "scripts/render_editorial_heroes.py", "scripts/verify_solar_mobile.py", "scripts/verify_finance_discovery.py", "tests/test_verify_finance_discovery.py", ".github/workflows/site.yml"]
+    paths: ["content/**", "compound/site/**", "scripts/news_images.py", "scripts/render_editorial_heroes.py", "scripts/verify_solar_mobile.py", "scripts/verify_private_company_live.py", "scripts/verify_finance_discovery.py", "tests/test_verify_finance_discovery.py", ".github/workflows/site.yml"]
   workflow_dispatch:
 permissions:
   contents: read
