@@ -53,3 +53,19 @@ def test_earnings_hub_and_search_labels_distinguish_source_types():
     assert "latest filings. Search" not in javascript
     assert "{{ report_cards|length }} recent company results" in template
     assert "source-checked reports and releases" in template
+
+
+def test_earnings_directory_intro_respects_issuer_release_provenance_and_location():
+    """The public intro must not claim every issuer release is SEC-filed."""
+    template = (ROOT / "compound/site/templates/earnings_hub.html").read_text(
+        encoding="utf-8"
+    )
+    assert "from US SEC filings and company-issued earnings releases" in template
+    assert "where reported, with links to original sources" in template
+    assert 'content="Explore company earnings from SEC filings and issuer releases.' in template
+    assert 'content="Quarterly and annual earnings from SEC filings and company releases,' in template
+    assert "Explore SEC-verified quarterly and annual company earnings" not in template
+    assert "checked against US SEC filings. Clear comparisons." not in template
+    assert '<span aria-current="page">Earnings</span>' in template
+    assert '<link rel="canonical" href="{{ site_url }}/wealth/earnings/">' in template
+    assert "{% if company.from_release %}COMPANY RESULTS · PUBLISHED" in template
