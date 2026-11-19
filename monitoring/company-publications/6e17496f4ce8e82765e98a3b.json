@@ -1,0 +1,94 @@
+{
+  "story_fingerprint": "6e17496f4ce8e82765e98a3b",
+  "company": "CSCO",
+  "date": "2026-11-19",
+  "status": "prepared_not_published",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to all factual, editorial, image, test, CI, deployment and live-verification gates.",
+  "story_thesis": "AI networking growth is creating a material opportunity, but Cisco must convert a sharply higher supplier commitment into margin and cash.",
+  "article_path": "content/wealth/cisco-ai-network-supply-commitments.md",
+  "canonical_url": "https://compound.ie/wealth/cisco-ai-network-supply-commitments/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/858877/000085887726000170/exhibit991pressrelease-q1f.htm",
+    "https://www.sec.gov/Archives/edgar/data/858877/000085887726000185/csco-20261024.htm"
+  ],
+  "identity": {
+    "issuer": "Cisco Systems, Inc.",
+    "CIK": 858877,
+    "release_accession": "0000858877-26-000170",
+    "filing_accession": "0000858877-26-000185",
+    "fiscal_year": 2027,
+    "fiscal_period": "Q1",
+    "period_end": "2026-10-24",
+    "filing_date": "2026-11-17",
+    "currency": "USD"
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, both content inventories, the live site, the prior 14 days of posts, open and merged PRs, company-publication records and concurrent Compound workflows. Cisco has a maintained stock profile but no canonical article answering the supply-commitment and AI-margin question. No active attempt uses this fingerprint.",
+  "claim_checks": [
+    {
+      "claim": "Q1 revenue $18.5bn, +24%; product +32%; networking +43%",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results release financial highlights and 10-Q revenue table",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "FY2027 AI infrastructure revenue expectation $9bn, more than double FY2026",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Management outlook in results release; identified as management expectation",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Purchase commitments $21.883bn versus $17.165bn at the prior quarter end",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q commitments table; increase = 21.883 - 17.165 = $4.718bn; 4.718 / 17.165 = 27.5%",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "$16.510bn of commitments due within one year; excess and obsolete commitment liability $351m versus $294m",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q purchase commitments and inventory note",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "GAAP product gross margin 61.8% versus 64.5%; total 63.7% versus 65.5%",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results release gross-margin table and 10-Q MD&A",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Operating cash flow $4.357bn; shareholder returns $3.7bn; approximately 84% cash-return ratio",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release and cash-flow statement; 3.7 / 4.357 = 84.9%, described as roughly 84% because reported return is rounded",
+      "result": "verified in separate claim pass"
+    }
+  ],
+  "fact_check_notes": [
+    "The $21.9bn commitment balance is company-wide, multi-period and not labelled entirely as AI; the article states that limitation.",
+    "Customer-order cancellation and limited-alternative-use risks are paraphrased from the 10-Q without implying that every order has identical terms.",
+    "GAAP and non-GAAP measures are labelled. No price, consensus estimate, quotation or unsupported forecast is used."
+  ],
+  "unresolved_material_claims": [],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Cisco_Catalyst_2950_network_switches_in_situ_-_IMG_1076.jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/4/42/Cisco_Catalyst_2950_network_switches_in_situ_-_IMG_1076.jpg",
+    "photographer": "Jemimus",
+    "license": "CC BY 2.0",
+    "capture_date": "2006-02-22",
+    "description": "Archival Cisco Catalyst switches in a connected network rack; explicitly not represented as current AI infrastructure",
+    "unique_asset": true,
+    "source_sha256": "c6c1e1b0eeb86e8fb10b33105fec277698b87ca18d66ac38dd4aa75369e940b3"
+  },
+  "gates": {
+    "offline_tests": "51 passed: news-image, finance-discovery, earnings-review, earnings-SEO, stock-inline-ad and pending-research-ad tests",
+    "build": "Passed production-base build: 319 articles, 837 tags, 35 pages and 62 tools after restoring the current branch's approved image cache without committing unrelated assets.",
+    "render": "Rendered HTML inspected: correct canonical, one H1, indexable, stock-profile/earnings-hub/diversification links and visible source credit. Sitemap and finance catalogue include the canonical. The generated 1200x675 WebP social image was visually inspected.",
+    "ads": "Standard AdSense loader rendered with client ca-pub-6115783809711785. The site has no fixed article_top/article_bottom slot IDs configured, so no fixed slot markup is expected; Auto Ads remains enabled through the standard loader and consent controls.",
+    "ci": "pending exact-head CI",
+    "deployment": "not merged; no live publication claimed"
+  },
+  "article_sha256": "857c76147b3f4f52daa763fb9ab4eaaea4998c42cf40da7117a4e8b2d392e0f8",
+  "published_image_sha256": "071b7d237208606bad9c7735f9bab700f2c05efc090332367dc080819b258017",
+  "social_image_sha256": "4ce2ebf5e0cac71df720c36bf73d7876c011aa2155608e4f8b4e35f8883a990f",
+  "publication_state": "prepared_not_published",
+  "new_articles_published": 0
+}
