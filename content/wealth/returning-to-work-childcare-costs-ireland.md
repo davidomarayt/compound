@@ -55,7 +55,7 @@ A better question is:
 
 > **How much additional household value does paid work create after tax, childcare and work-related costs — and what am I giving up if I look only at this year's cash flow?**
 
-The [Childcare Cost vs Returning to Work Calculator](/childcare-return-to-work-calculator/) is designed around that question.
+The [Childcare Cost vs Returning to Work Calculator](/childcare-return-to-work-calculator/) is designed around that question. If you still need to work out the childcare bill itself, start with the [Childcare Cost Calculator](/childcare-cost-calculator/).
 
 ## The short answer
 

@@ -25,3 +25,7 @@ Licensed under https://unsplash.com/license. Illustrative photographs; people pi
 - `hobby-painting.jpg`: Paintbrushes and coloured paint. Unsplash, https://images.unsplash.com/photo-1513364776144-60967b0f800f . Illustrative article cover; downloaded 14 September 2026.
 
 - `glp1-injector.jpg`: Semaglutide injector pen, Haberdoedas / Unsplash. https://unsplash.com/photos/a-semaglutide-injection-pen-is-shown-TzKc7FGaL7Y . Unsplash License; downloaded at 1200 px width, 14 September 2026. Illustrative device photograph, not administration instructions or a recommendation.
+
+## Childcare cost calculator
+
+- `evergreen/childcare-cost-ireland.jpg`: Angie Dutton / Unsplash. https://unsplash.com/photos/wooden-shape-sorter-toy-with-colorful-blocks-E1shiIGT8Oo · Unsplash License (https://unsplash.com/license).

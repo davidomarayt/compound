@@ -429,6 +429,28 @@ assert.equal(retrofitAdvanced.net_cost, '€2,550.00');
 
 
 // Family & Life Planning + Health flagship regression coverage.
+// Department example, split coverage years and independent sibling awards.
+const childcareQuote = {fee_1: 280, rate_1: 2.14, booked_1: 45, funded_1: 45};
+const childcareCost = calculators.childcare_cost(childcareQuote);
+assert.equal(childcareCost.weekly, '€183.70');
+assert.equal(childcareCost.weekly_support, '€96.30');
+assert.equal(childcareCost.annual, '€9,552.40');
+assert.equal(childcareCost.monthly, '€796.03');
+
+const familyChildcare = calculators.childcare_cost({
+  ...childcareQuote, __advanced: true, billed_1: 52, support_1: 48, extras: 100,
+  add_2: true, fee_2: 70, rate_2: 3, booked_2: 10, funded_2: 20,
+  billed_2: 38, support_2: 45,
+  add_3: true, fee_3: 200, rate_3: 2.14, booked_3: 40, funded_3: 30,
+  billed_3: 0, support_3: 0,
+});
+assert.equal(familyChildcare.weekly, '€223.70');
+assert.equal(familyChildcare.annual_support, '€5,762.40');
+assert.equal(familyChildcare.annual, '€11,557.60');
+assert.equal(familyChildcare.monthly, '€963.13');
+assert.equal(calculators.childcare_cost({...childcareQuote, fee_1: 30}).weekly, '€0.00');
+assert.equal(calculators.childcare_cost({...childcareQuote, rate_1: 0}).weekly, '€280.00');
+
 const childcareBasic = calculators.childcare_return({
   salary: 45000, pension_pct: 8, work_hours: 35, children: 1, childcare_hours: 40,
   childcare_fee: 8, ncs_rate: 2.14, childcare_weeks: 48, commute_weekly: 80,

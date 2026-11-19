@@ -3059,6 +3059,58 @@ tools:
       - {title: "MyFutureFund — contribution rates and €80,000 threshold", url: "https://myfuturefund.ie/participant/contributions"}
       - {title: "MyFutureFund — participant guide", url: "https://myfuturefund.ie/participant-guide"}
 
+  - slug: childcare-cost-calculator
+    title: Childcare Cost Calculator Ireland
+    category: Family & Life Planning
+    formula: childcare_cost
+    summary: Work out what you will pay for a crèche, preschool or after-school place after your National Childcare Scheme (NCS) subsidy.
+    meta_description: Estimate weekly, monthly and annual childcare costs in Ireland after your NCS subsidy. Compare crèche quotes and budget for siblings, extras and billed weeks.
+    updated: 2026-11-19
+    quick_answer: "On a €280 weekly fee, 45 subsidised hours at €2.14 an hour reduce the example bill by €96.30 to €183.70 a week."
+    basic_note: "Start with one child and a weekly quote. The annual budget assumes 52 billed weeks with the same subsidy each week."
+    advanced_note: "Set billed and subsidised weeks separately, include extras, or add up to two siblings with different fees and NCS awards."
+    result_note: "The weekly figures show a week when all entered care and applicable subsidies are active. The monthly figure averages the annual bill across 12 months."
+    hero_image_url: /static/images/evergreen/childcare-cost-ireland.jpg
+    hero_image_alt: Wooden preschool shape sorter and colourful blocks
+    hero_image_credit: Angie Dutton
+    hero_image_source: https://unsplash.com/photos/wooden-shape-sorter-toy-with-colorful-blocks-E1shiIGT8Oo
+    require_pinned_hero: true
+    fields:
+      - {id: fee_1, label: Weekly fee before NCS, type: number, prefix: "€", default: 280, min: 0, max: 5000, step: 0.01, help: "Use your provider’s fee for the exact days booked. If using ECCE, enter the fee after the ECCE deduction and before NCS."}
+      - {id: rate_1, label: NCS hourly award, type: number, prefix: "€", suffix: "/hour", default: 2.14, min: 0, max: 30, step: 0.01, help: "Enter the hourly rate on your award, or €0 if you will not use NCS."}
+      - {id: booked_1, label: Booked hours per week, type: number, default: 45, min: 0, max: 168, help: "Use the hours included in the provider’s quote."}
+      - {id: funded_1, label: NCS hours agreed per week, type: number, default: 45, min: 0, max: 45, help: "Use the hours the provider can register after any ECCE or school hours. The example assumes all 45 booked hours qualify."}
+      - {id: billed_1, label: Billed weeks for child 1, type: number, default: 52, min: 0, max: 52, step: 1, advanced: true, help: "Include weeks you pay for, even when booked care or the subsidy is unavailable."}
+      - {id: support_1, label: Subsidised weeks for child 1, type: number, default: 52, min: 0, max: 52, step: 1, advanced: true, help: "If fewer weeks are subsidised, reduce this number. The model caps it at billed weeks."}
+      - {id: add_2, label: Include a second child, type: checkbox, default: false, advanced: true}
+      - {id: fee_2, label: Weekly fee before NCS, type: number, prefix: "€", default: 0, min: 0, max: 5000, step: 0.01, advanced: true, show_if: add_2, section_start: Child 2}
+      - {id: rate_2, label: NCS hourly award, type: number, prefix: "€", suffix: "/hour", default: 2.14, min: 0, max: 30, step: 0.01, advanced: true, show_if: add_2}
+      - {id: booked_2, label: Booked hours per week, type: number, default: 0, min: 0, max: 168, advanced: true, show_if: add_2}
+      - {id: funded_2, label: NCS hours agreed per week, type: number, default: 0, min: 0, max: 45, advanced: true, show_if: add_2}
+      - {id: billed_2, label: Billed weeks for child 2, type: number, default: 52, min: 0, max: 52, step: 1, advanced: true, show_if: add_2}
+      - {id: support_2, label: Subsidised weeks for child 2, type: number, default: 52, min: 0, max: 52, step: 1, advanced: true, show_if: add_2}
+      - {id: add_3, label: Include a third child, type: checkbox, default: false, advanced: true}
+      - {id: fee_3, label: Weekly fee before NCS, type: number, prefix: "€", default: 0, min: 0, max: 5000, step: 0.01, advanced: true, show_if: add_3, section_start: Child 3}
+      - {id: rate_3, label: NCS hourly award, type: number, prefix: "€", suffix: "/hour", default: 2.14, min: 0, max: 30, step: 0.01, advanced: true, show_if: add_3}
+      - {id: booked_3, label: Booked hours per week, type: number, default: 0, min: 0, max: 168, advanced: true, show_if: add_3}
+      - {id: funded_3, label: NCS hours agreed per week, type: number, default: 0, min: 0, max: 45, advanced: true, show_if: add_3}
+      - {id: billed_3, label: Billed weeks for child 3, type: number, default: 52, min: 0, max: 52, step: 1, advanced: true, show_if: add_3}
+      - {id: support_3, label: Subsidised weeks for child 3, type: number, default: 52, min: 0, max: 52, step: 1, advanced: true, show_if: add_3}
+      - {id: extras, label: Extras and one-off costs this year, type: number, prefix: "€", default: 0, min: 0, max: 25000, step: 0.01, advanced: true, section_start: Other costs, help: "Enter the annual total across children. Exclude charges already included in your fee and any deposit credited against it."}
+    results:
+      - {id: monthly, label: Average monthly cost}
+      - {id: weekly, label: Weekly care bill with subsidy}
+      - {id: weekly_support, label: NCS subsidy in a funded week}
+      - {id: annual, label: Annual cost after subsidy}
+      - {id: annual_support, label: Total annual NCS subsidy}
+    sources:
+      - {title: "Department of Children · National Childcare Scheme and official subsidy calculator", url: "https://www.gov.ie/en/department-of-children-disability-and-equality/campaigns/national-childcare-scheme/"}
+      - {title: "Department of Children · Core Funding fee caps from September 2026", url: "https://www.gov.ie/en/department-of-children-disability-and-equality/press-releases/minister-foley-announces-details-of-maximum-fee-caps-alongside-over-480-million-for-core-funding-year-5/"}
+      - {title: "Department of Children · Budget 2027 childcare parent FAQ", url: "https://assets.gov.ie/static/documents/e2ad1136/Budget_2027_FAQ_parents_updated.pdf"}
+      - {title: "Department of Children · ECCE preschool programme", url: "https://www.gov.ie/en/department-of-children-disability-and-equality/publications/early-childhood-care-and-education-programme-ecce/"}
+      - {title: "Tusla · Childcare inspection reports and service search", url: "https://www.tusla.ie/services/preschool-services/creche-inspection-reports/"}
+      - {title: "Mary Geary’s Childcare · Historical parent fee statement, 2025/26", url: "https://marygearychildcare.ie/wp-content/uploads/2025/09/Parent-Statement-2025-English-2.pdf"}
+
   - slug: childcare-return-to-work-calculator
     title: Childcare Cost vs Returning to Work Calculator Ireland
     category: Family & Life Planning

@@ -631,6 +631,10 @@
         items.push('The statutory employee contribution rate starts lower and phases upward over time, so future take-home impact will not stay at the 2026 level.');
         items.push('Employer and State contributions are part of the retirement value even though they are not employee take-home deductions.');
         break;
+      case 'childcare_cost':
+        items.push('The monthly number is your annual cost spread across 12 months. A provider that bills every four weeks issues 13 bills over a full 52-week year.');
+        items.push('Use the booked fee for the exact days and the NCS hours agreed with your provider. Change both when comparing schedules.');
+        break;
       case 'childcare_return':
         items.push('This is an immediate cash-flow comparison; employer pension value and future career earnings are not included in the headline household gain.');
         items.push('Using your actual NCS award and provider fee matters more than relying on national averages.');
@@ -1851,6 +1855,40 @@
         __chart:{type:'line',title:'Projected MyFutureFund balance',caption:'The projection applies the statutory calendar-year contribution phases to the annual pay assumption, subject to the €80,000 annual modelling cap. Actual eligibility and payroll collection use NAERSA rules including pay-period assessment.',labels,series:[{label:'Projected fund',values:funds},{label:'Starting fund + all contributions',values:contributionCum}]}
       };
     },
+    childcare_cost(v){
+      const children = [1];
+      if(v.__advanced && v.add_2) children.push(2);
+      if(v.__advanced && v.add_3) children.push(3);
+
+      let weeklyFee = 0, weeklySupport = 0, annualFees = 0, annualSupport = 0;
+      for(const child of children){
+        const fee = Math.round(v['fee_' + child] * 100);
+        const rate = Math.round(v['rate_' + child] * 100);
+        const eligibleHours = Math.min(45, v['booked_' + child], v['funded_' + child]);
+        const subsidy = Math.min(fee, Math.round(rate * eligibleHours));
+        const billedWeeks = v.__advanced ? v['billed_' + child] : 52;
+        const fundedWeeks = v.__advanced ? Math.min(billedWeeks, v['support_' + child]) : 52;
+        weeklyFee += billedWeeks > 0 ? fee : 0;
+        weeklySupport += fundedWeeks > 0 ? subsidy : 0;
+        annualFees += fee * billedWeeks;
+        annualSupport += subsidy * fundedWeeks;
+      }
+      const extras = v.__advanced ? Math.round(v.extras * 100) : 0;
+      const annual = annualFees - annualSupport + extras;
+      return {
+        monthly: money(annual / 1200),
+        weekly: money((weeklyFee - weeklySupport) / 100),
+        weekly_support: money(weeklySupport / 100),
+        annual: money(annual / 100),
+        annual_support: money(annualSupport / 100),
+        __chart: {
+          type: 'bar', title: 'Your annual childcare budget',
+          caption: 'Compare core fees, the NCS amount deducted, and your total cost including any extras.',
+          labels: ['Care fees before NCS', 'NCS subsidy', 'You pay'],
+          series: [{label: 'Annual amount', values: [annualFees / 100, annualSupport / 100, annual / 100]}]
+        }
+      };
+    },
     childcare_return(v){
       const advanced=Boolean(v.__advanced);
       const salary=Math.max(0,v.salary);
@@ -2206,6 +2244,7 @@
       const values={}; let invalid=false, invalidField=null, invalidMessage='';
       root.querySelectorAll('[data-field]').forEach(el=>el.removeAttribute('aria-invalid'));
       root.querySelectorAll('[data-field]').forEach(el=>{
+        if(root.dataset.calculator==='childcare_cost' && el.closest('.tool-field')?.hidden) return;
         const raw=el.value;
         if(el.type==='checkbox'){ values[el.dataset.field]=el.checked; return; }
         if(el.type==='date'){

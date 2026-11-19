@@ -30,6 +30,8 @@ Do not compare gross salary with childcare cost. Use take-home pay. Do not ignor
 
 ## Related Compound tools
 
+Use the [Childcare Cost Calculator](/childcare-cost-calculator/) to compare weekly crèche or after-school quotes and calculate your bill from the actual subsidised hours for each child.
+
 Use the [Take-Home Pay Calculator](/take-home-pay-calculator/) for net income, [Pension Projection Calculator](/pension-projection-calculator/) for long-term retirement effects and [Lifetime Cost Calculator](/lifetime-cost-calculator/) for a broader household perspective.
 
 ## Frequently asked questions

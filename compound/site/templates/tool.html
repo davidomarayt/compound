@@ -3,15 +3,22 @@
 {% block meta %}<meta name="description" content="{{ tool.meta_description }}">{% endblock %}
 {% block head %}
 <link rel="canonical" href="{{ site_url }}{{ tool.url }}">
-<meta property="og:type" content="website"><meta property="og:title" content="{{ tool.seo_title or tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="summary">
-{% if tool.slug == "salary-hourly-rate-calculator" %}<link rel="stylesheet" href="/static/tools.css?v=20261117-salary-upgrade">{% else %}<link rel="stylesheet" href="/static/tools.css?v=20261117-gsc-quick-answer">{% endif %}
-{% if tool.slug == "mortgage-calculator" %}<script defer src="/static/mortgage-calculator.js?v=20260927-performance1"></script>{% elif tool.slug == "salary-hourly-rate-calculator" %}<script defer src="/static/tools.js?v=20261117-salary-upgrade"></script>{% else %}<script defer src="/static/tools.js?v=20261113-pia-events"></script>{% endif %}
+<meta property="og:type" content="website"><meta property="og:title" content="{{ tool.seo_title or tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="{{ 'summary_large_image' if tool.hero_image_url else 'summary' }}">
+{% if tool.slug == "salary-hourly-rate-calculator" %}<link rel="stylesheet" href="/static/tools.css?v=20261117-salary-upgrade">{% else %}<link rel="stylesheet" href="/static/tools.css?v=20261119-childcare-cost">{% endif %}
+{% if tool.slug == "mortgage-calculator" %}<script defer src="/static/mortgage-calculator.js?v=20260927-performance1"></script>{% elif tool.slug == "salary-hourly-rate-calculator" %}<script defer src="/static/tools.js?v=20261117-salary-upgrade"></script>{% else %}<script defer src="/static/tools.js?v=20261119-childcare-cost"></script>{% endif %}
+{% if tool.hero_image_url %}
+<meta property="og:image" content="{{ site_url }}{{ tool.hero_image_url }}">
+<meta property="og:image:alt" content="{{ tool.hero_image_alt }}">
+<meta name="twitter:image" content="{{ site_url }}{{ tool.hero_image_url }}">
+<meta name="twitter:image:alt" content="{{ tool.hero_image_alt }}">
+{% endif %}
 <script type="application/ld+json">{{ tool_jsonld|safe }}</script>
 {% endblock %}
 {% block content %}
 <article class="tool-page" data-calculator="{{ tool.formula }}" data-tool-name="{{ tool.slug }}">
   <div id="tool-interaction-zone" class="tool-interaction-zone">
-  <header class="tool-page-header">
+  <header class="tool-page-header{% if tool.hero_image_url %} tool-page-header-with-photo{% endif %}">
+    {% if tool.hero_image_url %}<div>{% endif %}
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/tools/">Tools</a></nav>
     <p class="eyebrow">{{ tool.category|upper }}</p><h1>{{ tool.title }}</h1><p class="tool-standfirst">{{ tool.summary }}</p>
     {% if tool.quick_answer %}
@@ -26,6 +33,13 @@
       <span>{{ tool.sources|length }} source{% if tool.sources|length != 1 %}s{% endif %}</span>
       <span>Reviewed {{ tool.updated|long_date }}</span>
     </div>
+    {% if tool.hero_image_url %}
+    </div>
+    <figure class="tool-header-photo">
+      <img src="{{ tool.hero_image_url }}" alt="{{ tool.hero_image_alt }}" width="1200" height="630">
+      <figcaption>Photo by <a href="{{ tool.hero_image_source }}">{{ tool.hero_image_credit }}</a> · Unsplash</figcaption>
+    </figure>
+    {% endif %}
   </header>
   <noscript><div class="tool-noscript">This calculator needs JavaScript to run. The educational guide and sources below remain available without it.</div></noscript>
   <section class="tool-workspace">
@@ -120,11 +134,18 @@
     <div class="tool-chart-scroll"><div class="tool-chart-canvas" data-chart-canvas></div></div>
     <div class="tool-chart-legend" data-chart-legend></div>
   </section>
+  {% if tool.slug == "childcare-cost-calculator" %}
+  <aside class="tool-more childcare-next" aria-labelledby="childcare-next-title">
+    <div><h2 id="childcare-next-title">Find a childcare provider near you</h2><p>Use SchoolPath to check local services, registered age ranges and available Tusla inspection coverage before requesting a quote.</p></div>
+    <div class="tool-more-links"><a href="https://schoolpath.ie/maps/creches-preschools/">Crèches and preschools</a><a href="https://schoolpath.ie/maps/after-school-care/">After-school care</a></div>
+  </aside>
+  {% else %}
   <section class="tool-use-strip" aria-label="How to use this calculator">
     <article><span>01</span><h3>Enter your situation</h3><p>Use figures that match your real quote, payslip, bill or plan where possible.</p></article>
     <article><span>02</span><h3>Stress-test it</h3><p>Change the assumptions that matter most instead of relying on one perfect-looking result.</p></article>
     <article><span>03</span><h3>Read the context</h3><p>Use the methodology, Irish rules and limitations below before acting on the estimate.</p></article>
   </section>
+  {% endif %}
   </div>
   <section class="tool-explainer">
     <div class="tool-explainer-main">
