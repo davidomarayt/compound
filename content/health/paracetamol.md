@@ -28,7 +28,7 @@ sources:
 
 This guide covers adults in Ireland. Follow the instructions for your own product and ask a pharmacist if anything is unclear. Sources checked 19 November 2026.
 
-> **Think you took too much?** Get advice immediately, even if you feel well. Call your GP or the National Poisons Information Centre on **[01 809 2166](tel:+35318092166)** (8am–10pm daily). Outside those hours, contact a GP or go to an emergency department. Call **112 or 999** or go to an emergency department immediately for a deliberate overdose or if you have vomiting, tummy pain or yellowing of the skin or eyes after taking too much. Bring the packet or leaflet and any remaining medicine. [HSE overdose advice](https://www2.hse.ie/medicines/paracetamol/#if-you-take-too-much-paracetamol)
+> **Think you took too much?** Get advice immediately, even if you feel well. Call your GP or the National Poisons Information Centre on **[01 809 2166](tel:+35318092166)** (8am–10pm daily). Outside those hours, contact a GP or go to an emergency department. Call **112 or 999** or go to an emergency department immediately for a deliberate overdose or if you have vomiting, tummy pain or yellowing of the skin or eyes after taking too much. Bring the packet or leaflet and any remaining medicine. [HSE overdose advice](https://www2.hse.ie/medicines/paracetamol/)
 
 ## How much paracetamol can adults take?
 
