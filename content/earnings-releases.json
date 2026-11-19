@@ -222,5 +222,12 @@
     "published": "2026-11-12",
     "source": "https://www.sec.gov/Archives/edgar/data/6951/000162828026073360/exhibit991q42026earningsre.htm",
     "summary": "Applied Materials reported fourth-quarter revenue of $10.409 billion, GAAP net income of $2.718 billion and GAAP diluted EPS of $3.40. Non-GAAP diluted EPS was $4.16. Full-year revenue was $34.446 billion and GAAP diluted EPS was $12.62. All amounts are US dollars."
+  },
+  "wmt": {
+    "ended": "2026-10-31",
+    "period": "Q3 FY2027",
+    "published": "2026-11-19",
+    "source": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/earningsreleasefy27q3.htm",
+    "summary": "Walmart reported third-quarter revenue of $188.835 billion and GAAP consolidated net income of $5.095 billion. Net income attributable to Walmart was $4.945 billion, with GAAP diluted EPS of $0.62 versus $0.77 a year earlier. Adjusted EPS was $0.65. All amounts are US dollars."
   }
 }

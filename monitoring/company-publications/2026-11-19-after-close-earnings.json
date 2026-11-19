@@ -1,0 +1,214 @@
+{
+  "date": "2026-11-19",
+  "status": "prepared_not_deployed",
+  "scan_since_inclusive": "2026-11-18",
+  "companies": {
+    "PANW": {
+      "canonical_url": "https://compound.ie/stocks/panw/",
+      "period": {
+        "fy": 2027,
+        "fp": "Q1",
+        "period_end": "2026-10-31",
+        "filed": "2026-11-18",
+        "form": "8-K",
+        "accession": "0001327567-26-000030",
+        "source": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000030/ex991q127earningsrelease.htm",
+        "metrics": {
+          "revenue": {
+            "current": 3445000000,
+            "prior_year": 2474000000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP revenue"
+          },
+          "net_income": {
+            "current": 482000000,
+            "prior_year": 334000000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP net_income"
+          },
+          "diluted_eps": {
+            "current": 0.57,
+            "prior_year": 0.47,
+            "unit": "USD/shares",
+            "tag": "SEC Exhibit reported GAAP diluted_eps"
+          }
+        }
+      },
+      "status": "verified_source_ingested_by_concurrent_monitor_pending_deployment",
+      "monitor_commit": "892f166dae4ea63c9719ee8a97e334f020ab0a6b",
+      "confirming_10q": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000033/panw-20261031.htm"
+    },
+    "P": {
+      "canonical_url": "https://compound.ie/stocks/p/",
+      "period": {
+        "fy": 2027,
+        "fp": "Q3",
+        "period_end": "2026-11-01",
+        "filed": "2026-11-18",
+        "form": "8-K",
+        "accession": "0001474432-26-000110",
+        "source": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000110/everpure-ex991q3fy2027xpre.htm",
+        "metrics": {
+          "revenue": {
+            "current": 1459791000,
+            "prior_year": 964453000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP revenue"
+          },
+          "net_income": {
+            "current": 100395000,
+            "prior_year": 54806000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP net_income"
+          },
+          "diluted_eps": {
+            "current": 0.29,
+            "prior_year": 0.16,
+            "unit": "USD/shares",
+            "tag": "SEC Exhibit reported GAAP diluted_eps"
+          }
+        }
+      },
+      "status": "verified_source_prepared"
+    },
+    "TJX": {
+      "canonical_url": "https://compound.ie/stocks/tjx/",
+      "period": {
+        "fy": 2027,
+        "fp": "Q3",
+        "period_end": "2026-10-31",
+        "filed": "2026-11-18",
+        "form": "8-K",
+        "accession": "0000109198-26-000058",
+        "source": "https://www.sec.gov/Archives/edgar/data/109198/000010919826000058/tjxq3fy27earningspressrele.htm",
+        "metrics": {
+          "revenue": {
+            "current": 15952000000,
+            "prior_year": 15117000000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP revenue"
+          },
+          "net_income": {
+            "current": 1543000000,
+            "prior_year": 1442000000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP net_income"
+          },
+          "diluted_eps": {
+            "current": 1.39,
+            "prior_year": 1.28,
+            "unit": "USD/shares",
+            "tag": "SEC Exhibit reported GAAP diluted_eps"
+          }
+        }
+      },
+      "status": "verified_source_prepared"
+    },
+    "ROST": {
+      "canonical_url": "https://compound.ie/stocks/rost/",
+      "period": {
+        "fy": 2026,
+        "fp": "Q3",
+        "period_end": "2026-10-31",
+        "filed": "2026-11-19",
+        "form": "8-K",
+        "accession": "0000745732-26-000047",
+        "source": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000047/q326exhibit991.htm",
+        "metrics": {
+          "revenue": {
+            "current": 6255954000,
+            "prior_year": 5600946000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP revenue"
+          },
+          "net_income": {
+            "current": 606321000,
+            "prior_year": 511935000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP net_income"
+          },
+          "diluted_eps": {
+            "current": 1.91,
+            "prior_year": 1.58,
+            "unit": "USD/shares",
+            "tag": "SEC Exhibit reported GAAP diluted_eps"
+          }
+        }
+      },
+      "status": "verified_source_prepared"
+    },
+    "WMT": {
+      "canonical_url": "https://compound.ie/stocks/wmt/",
+      "release": {
+        "ended": "2026-10-31",
+        "period": "Q3 FY2027",
+        "published": "2026-11-19",
+        "source": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/earningsreleasefy27q3.htm",
+        "summary": "Walmart reported third-quarter revenue of $188.835 billion and GAAP consolidated net income of $5.095 billion. Net income attributable to Walmart was $4.945 billion, with GAAP diluted EPS of $0.62 versus $0.77 a year earlier. Adjusted EPS was $0.65. All amounts are US dollars."
+      },
+      "status": "verified_source_prepared",
+      "note": "Release summary distinguishes consolidated net income from attributable earnings. Existing historical table preserved."
+    }
+  },
+  "source_checks": "Original SEC 8-K identity and Exhibit 99.1 statement tables checked twice. PANW/TJX millions and Everpure/Ross thousands converted to USD; diluted EPS GAAP. No adjusted figure substituted. History preserved.",
+  "nvidia_one_off": "Already fulfilled and live verified in prior ledger; no duplicate created.",
+  "counts": {
+    "new_articles": 0,
+    "live_updates": 0
+  },
+  "checks": {
+    "offline_earnings_tests": "46 passed",
+    "publication": "pending full build and exact-head CI",
+    "review_limit": 5,
+    "exact_head_ci": "Prior head passed both test and performance/full-build jobs; rebased to preserve concurrent ingestion. Rechecking."
+  },
+  "prior_unresolved": [
+    "ATO annual table",
+    "DHI annual table",
+    "EXPD supplemental disclosure",
+    "BRK-B comparable EPS",
+    "VMRK comparable revenue",
+    "foreign discovery queue"
+  ],
+  "narrow_ci_fixes": "Restore caffeine calculator link on health hub and stocks directory link plus eligibility disclaimer on PIA hub. No tests weakened.",
+  "pull_request": 190,
+  "coverage": {
+    "sec_submission_records_checked": 502,
+    "fetch_errors": [],
+    "window": "2026-11-18 through 2026-11-19 inclusive",
+    "candidate_live_pages_fetched": 13,
+    "candidate_live_errors": [],
+    "foreign_watch": {
+      "companies": 10,
+      "new_discovery_items": 0,
+      "pending_items": 35
+    },
+    "new_pending": [
+      "INTU 10-Q and earnings exhibit",
+      "KEYS earnings exhibit",
+      "WSM earnings exhibit",
+      "APD annual report reconciliation"
+    ],
+    "existing_pending": [
+      "ATO annual table",
+      "EXPD supplemental disclosure",
+      "BRK-B comparable EPS",
+      "VMRK comparable revenue"
+    ],
+    "already_live_accessions": {
+      "DHI": [
+        "0000882184-26-000157"
+      ],
+      "LOW": [
+        "0000060667-26-000126"
+      ],
+      "TGT": [
+        "0000027419-26-000051"
+      ]
+    },
+    "amendments": "NKE 8-K/A Item 5.02 is outside earnings-results changes.",
+    "panw_crosscheck": "19 November 10-Q accession 0001327567-26-000033 agrees with all six current/prior revenue, GAAP net income and diluted EPS values in 18 November earnings exhibit.",
+    "limits": "Five companies substantively source-reconciled. Other candidates and foreign disclosures pending. No claim that the whole universe is fully current.",
+    "intu_status": "Concurrent monitor ingested 10-Q, deployment pending; not manually reviewed in this five-company batch."
+  }
+}
