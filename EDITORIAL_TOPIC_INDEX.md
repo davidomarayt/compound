@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 323 published articles and guides, 69 tools,
+**Included:** 325 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -316,6 +316,8 @@ For the complete register (including 510+ company profiles), open
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/) — **Health**
 - [What if GTA 6 sells 100 million copies? A Take-Two stock valuation](https://compound.ie/wealth/gta-6-100-million-ttwo-valuation/) — **Wealth**
 - [What Is a REIT? How Property Investing Can Generate Income and Growth](https://compound.ie/wealth/what-is-a-reit/) — **Wealth**
+- [What is ibuprofen? Uses, adult doses and safety in Ireland](https://compound.ie/health/medicines/ibuprofen/) — **Health**
+- [What is paracetamol? Uses, adult doses and safety in Ireland](https://compound.ie/health/medicines/paracetamol/) — **Health**
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/) — **Health**
 - [What would an extra €100 a month do to your mortgage?](https://compound.ie/wealth/mortgage-overpayments-100-euro-ireland/) — **Wealth**
 - [When Can You Access Your Pension in Ireland? Retirement Options Explained](https://compound.ie/wealth/when-can-i-access-pension-ireland/) — **Wealth**

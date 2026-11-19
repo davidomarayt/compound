@@ -5962,6 +5962,38 @@
         "status": "published"
       },
       {
+        "title": "What is ibuprofen? Uses, adult doses and safety in Ireland",
+        "url": "/health/medicines/ibuprofen/",
+        "source": "content/health/ibuprofen.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "ibuprofen",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "pain-relief",
+          "ibuprofen"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "What is paracetamol? Uses, adult doses and safety in Ireland",
+        "url": "/health/medicines/paracetamol/",
+        "source": "content/health/paracetamol.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "paracetamol",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "pain-relief",
+          "paracetamol"
+        ],
+        "status": "published"
+      },
+      {
         "title": "What lethal injection drugs actually do to the body: the science of pentobarbital",
         "url": "/news/lethal-injection-drugs-pentobarbital-science/",
         "source": "content/health/lethal-injection-drugs-pentobarbital-science.md",

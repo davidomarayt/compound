@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 323
+- Published editorial articles and guides: 325
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -18,7 +18,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - Private-company directory profiles: 13
 - Draft or unpublished editorial files: 0
 
-## Health articles and guides — 28
+## Health articles and guides — 30
 
 - [Budget 2027 gives health €29.1bn. So why aren’t Mounjaro and Wegovy funded for obesity?](https://compound.ie/news/budget-2027-obesity-mounjaro-wegovy-ireland/)
 - [Creatine in Ireland: what it does, how to take it and what to watch](https://compound.ie/health/creatine-benefits-dosage-safety-ireland/)
@@ -47,6 +47,8 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [The rise of GLP-1 medicines in Ireland: what the evidence says](https://compound.ie/health/glp1-medicines-ireland-rise-evidence/)
 - [Vitamin D in winter: who in Ireland should take a supplement](https://compound.ie/health/vitamin-d-ireland-winter-who-should-take-it/)
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
+- [What is ibuprofen? Uses, adult doses and safety in Ireland](https://compound.ie/health/medicines/ibuprofen/)
+- [What is paracetamol? Uses, adult doses and safety in Ireland](https://compound.ie/health/medicines/paracetamol/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 
 ## Wealth articles and guides — 269
