@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-19",
+  "timezone": "Europe/Dublin",
+  "run_type": "pia_content_growth",
+  "topic_fingerprint": "2026-11-12-oireachtas-committee-amended-finance-bill-98a-pia-section27-death-estate",
+  "action": "substantive_canonical_guide_and_launch_tracker_update",
+  "status": "proposed_pr_pending_exact_sha_ci_and_production_verification",
+  "new_articles": 0,
+  "existing_guide_updates": 1,
+  "canonical_urls": [
+    "https://compound.ie/wealth/personal-investment-account-ireland/",
+    "https://compound.ie/pia/#pia-launch-tracker"
+  ],
+  "source_urls": [
+    "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf",
+    "https://www.revenue.ie/ga/corporate/press-office/press-releases/2026/pr-100726-irish-investment-account.aspx",
+    "https://www.oireachtas.ie/en/bills/bill/2026/98/",
+    "https://www.aib.ie/make-a-plan/investments/personal-investment-account",
+    "https://personalbanking.bankofireland.com/save-and-invest/investments/personal-investment-account/",
+    "https://www.irishlife.ie/investments/pia/",
+    "https://www.ptsb.ie/saving-and-investing/investments/state-investment-account/",
+    "https://www.zurich.ie/blog/a-guide-to-irelands-new-investment-account/"
+  ],
+  "research": {
+    "verified_primary": "Official Oireachtas committee-amended Bill No. 98a released as version dated 12 November 2026; source was independently read 19 November. Proposed IIA appears as section 27 versus section 26 in initiated text.",
+    "legal_status": "Committee-amended draft verified, not enactment or commencement; latest final Bill stage still unverified as live Oireachtas landing page returned HTTP 403.",
+    "tax": "Amended text preserves proposed 1% charge on annual average value above €50,000 and up to €12,000 annual contributions; no enacted law implied.",
+    "distinct_reader_value": "Consolidated new source-backed estate/death procedures in the existing complete guide rather than duplicating its search intent.",
+    "death_provisions": "Proposed section 747Y: no contributions after death, personal representatives interim control, possible no-grant closure, transition deadline tied to grant or three years and max one year, tax reporting continues; not an inheritance-tax exemption.",
+    "provider_findings": "Original AIB, Bank of Ireland, Irish Life, PTSB and Zurich information pages reviewed. No complete priced IIA/PIA account-specific fee schedule or open applications independently verified.",
+    "source_blockers": [
+      "Oireachtas Bill 98 live listing HTTP 403; official amended Bill PDF directly available",
+      "No provider-specific numerical quotes confirmed"
+    ]
+  },
+  "tracker": {
+    "path": "content/pia-launch-tracker.yml",
+    "change": "Source-backed 12 November committee-amended milestone and updated headline only; enacted-law and provider-open entries remain unverified; target remains conditional 2027-07-01",
+    "global_checked_retained": "2026-11-15",
+    "why_not_advance_checked": "Current final Oireachtas status unavailable; cannot claim all tracker sources fully reverified",
+    "provider_dataset_changed": false,
+    "provider_csv_regeneration_required": false
+  },
+  "release_recovery": {
+    "prior_guide_updates_2026_11_16_17": "Source-backed passages were publicly confirmed on 18 November; no deployment retry indicated",
+    "asset_ad_checks": "Raw ad/CMP and OG/Twitter image fetch remained outstanding from previous verification; do not claim complete audit"
+  },
+  "duplication_checks": "Compared existing guide, /pia/ hub, /pia-calculator/, prior 16-18 November PIA ledgers, editor index and recent PRs. Material amended primary legal text expands established guide rather than adding duplicate new article.",
+  "image_policy": "Existing canonical guide image left unchanged, no new image introduced.",
+  "qa": {
+    "editorial": "Source-backed amendment terminology, source version, uncertainty and estate provisions checked manually",
+    "source_dates": "Initiated Bill 19 Oct; committee-amended version 12 Nov; Revenue notice 7 Oct; primary checked 19 Nov",
+    "tests": "pending required exact PR head test and performance checks plus site build",
+    "live_guide_fingerprint": "not_yet_verified",
+    "live_tracker_fingerprint": "not_yet_verified",
+    "ads_and_social": "pending public inspection"
+  },
+  "work_branch": "automation/pia-committee-amended-bill-2026-11-19",
+  "production_branch": "claude/clever-babbage-uibieq",
+  "live_http_verified": false,
+  "verified_live_result": null
+}
