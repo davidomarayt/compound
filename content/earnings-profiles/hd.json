@@ -119,7 +119,7 @@
       "source": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000184/hd_exhibit991x11012026.htm"
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC XBRL for earlier periods; SEC Form 8-K earnings exhibit for latest quarter; no analyst estimates",
   "ticker": "HD",
   "updated": "2026-11-18"
 }
