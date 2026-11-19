@@ -12,7 +12,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
-- Information and policy pages: 27
+- Information and policy pages: 28
 - Main hubs: 11
 - Public-company directory profiles: 511
 - Private-company directory profiles: 13
@@ -521,7 +521,7 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - Weight Loss Calculator Ireland | source: content/tool-guides/weight-loss-calculator.md
 - Whole-House Retrofit Planner Ireland | source: content/tool-guides/whole-house-retrofit-planner.md
 
-## Information and policy pages — 27
+## Information and policy pages — 28
 
 - [About](https://compound.ie/about/)
 - [Caffeine Calculator: How Much Caffeine Is Left at Bedtime?](https://compound.ie/caffeine-calculator/)
@@ -537,6 +537,7 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - [Installer Portal | Compound Solar](https://compound.ie/solar-installer-portal/)
 - [Insurance Tools & Guides Ireland](https://compound.ie/insurance/)
 - [Invest Now or Wait for Ireland's PIA in July 2027? Calculator](https://compound.ie/pia-invest-now-or-wait/)
+- [Ireland Rent Map](https://compound.ie/ireland-rent-map/)
 - [Life](https://compound.ie/life/)
 - [PIA vs ETF vs Shares Calculator Ireland: After-Tax Comparison](https://compound.ie/pia-vs-ordinary-investing/)
 - [PIA vs Pension Calculator Ireland: Tax Relief, Fees & Growth](https://compound.ie/pia-vs-pension/)

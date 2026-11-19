@@ -7435,6 +7435,12 @@
         "kind": "Information / policy page"
       },
       {
+        "title": "Ireland Rent Map",
+        "url": "/ireland-rent-map/",
+        "source": "content/pages/ireland-rent-map.md",
+        "kind": "Information / policy page"
+      },
+      {
         "title": "Life",
         "url": "/life/",
         "source": "content/pages/life.md",
