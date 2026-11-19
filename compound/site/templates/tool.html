@@ -5,11 +5,12 @@
 <link rel="canonical" href="{{ site_url }}{{ tool.url }}">
 <meta property="og:type" content="website"><meta property="og:title" content="{{ tool.seo_title or tool.title }}"><meta property="og:description" content="{{ tool.meta_description }}"><meta property="og:url" content="{{ site_url }}{{ tool.url }}"><meta name="twitter:card" content="{{ 'summary_large_image' if tool.hero_image_url else 'summary' }}">
 {% if tool.slug == "salary-hourly-rate-calculator" %}<link rel="stylesheet" href="/static/tools.css?v=20261117-salary-upgrade">{% else %}<link rel="stylesheet" href="/static/tools.css?v=20261119-nursing-home-cost">{% endif %}
-{% if tool.slug == "mortgage-calculator" %}<script defer src="/static/mortgage-calculator.js?v=20260927-performance1"></script>{% elif tool.slug == "salary-hourly-rate-calculator" %}<script defer src="/static/tools.js?v=20261117-salary-upgrade"></script>{% else %}<script defer src="/static/tools.js?v=20261119-nursing-home-cost"></script>{% endif %}
+{% if tool.slug == "mortgage-calculator" %}<script defer src="/static/mortgage-calculator.js?v=20260927-performance1"></script>{% elif tool.slug == "salary-hourly-rate-calculator" %}<script defer src="/static/tools.js?v=20261117-salary-upgrade"></script>{% else %}<script defer src="/static/tools.js?v=20261119-funeral-cost"></script>{% endif %}
 {% if tool.hero_image_url %}
-<meta property="og:image" content="{{ site_url }}{{ tool.hero_image_url }}">
+{% set social_image = tool.hero_image_url if tool.hero_image_url.startswith("https://") else site_url ~ tool.hero_image_url %}
+<meta property="og:image" content="{{ social_image }}">
 <meta property="og:image:alt" content="{{ tool.hero_image_alt }}">
-<meta name="twitter:image" content="{{ site_url }}{{ tool.hero_image_url }}">
+<meta name="twitter:image" content="{{ social_image }}">
 <meta name="twitter:image:alt" content="{{ tool.hero_image_alt }}">
 {% endif %}
 <script type="application/ld+json">{{ tool_jsonld|safe }}</script>
@@ -37,7 +38,7 @@
     </div>
     <figure class="tool-header-photo">
       <img src="{{ tool.hero_image_url }}" alt="{{ tool.hero_image_alt }}" width="1200" height="630">
-      <figcaption>Photo by <a href="{{ tool.hero_image_source }}">{{ tool.hero_image_credit }}</a> · Unsplash</figcaption>
+      <figcaption>Photo by <a href="{{ tool.hero_image_source }}">{{ tool.hero_image_credit }}</a> · {{ tool.hero_image_provider or "Unsplash" }}</figcaption>
     </figure>
     {% endif %}
   </header>

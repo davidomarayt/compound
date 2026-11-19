@@ -429,6 +429,25 @@ assert.equal(retrofitAdvanced.net_cost, '€2,550.00');
 
 
 // Family & Life Planning + Health flagship regression coverage.
+// Funeral deposits are part of the bill, and later payments cannot cover an upfront gap.
+const funeralQuote = {director: 2500, cemetery: 950, ceremony: 300, upfront_due: 1000};
+const funeralBasic = calculators.funeral_cost(funeralQuote);
+assert.equal(funeralBasic.total_cost, '€3,750.00');
+assert.equal(funeralBasic.due_upfront, '€1,000.00');
+assert.equal(funeralBasic.due_later, '€2,750.00');
+const funeralAdvanced = calculators.funeral_cost({
+  ...funeralQuote, __advanced: true, reception: 350, memorial: 900, upfront_funds: 400, later_funds: 500
+});
+assert.equal(funeralAdvanced.total_cost, '€5,000.00');
+assert.equal(funeralAdvanced.upfront_gap, '€600.00');
+assert.equal(funeralAdvanced.later_gap, '€3,500.00');
+const funeralOverpayment = calculators.funeral_cost({
+  ...funeralQuote, upfront_due: 4000, __advanced: true, reception: 0, memorial: 0, upfront_funds: 5000, later_funds: 0
+});
+assert.equal(funeralOverpayment.due_upfront, '€3,750.00');
+assert.equal(funeralOverpayment.due_later, '€0.00');
+assert.equal(funeralOverpayment.upfront_gap, '€0.00');
+
 // Fair Deal budgets use a separate private quote and optional approved rate.
 const nursingQuote = {private_fee: 1300, weekly_extras: 50, use_fair_deal: true, contribution: 450};
 const nursingDefault = calculators.nursing_home_cost(nursingQuote);

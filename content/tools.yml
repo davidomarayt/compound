@@ -3059,6 +3059,55 @@ tools:
       - {title: "MyFutureFund — contribution rates and €80,000 threshold", url: "https://myfuturefund.ie/participant/contributions"}
       - {title: "MyFutureFund — participant guide", url: "https://myfuturefund.ie/participant-guide"}
 
+  - slug: funeral-cost-calculator
+    title: Funeral Cost Calculator Ireland
+    category: Family & Life Planning
+    formula: funeral_cost
+    summary: Work out the total cost of a funeral, what you need to pay before it takes place, and what can be paid later. Includes a guide to quotes and help with funeral expenses in Ireland.
+    meta_description: Estimate funeral costs in Ireland. Compare burial and cremation quotes, work out what is due upfront and find out what help is available if you cannot cover the bill.
+    updated: 2026-11-19
+    quick_answer: "Start with a written estimate that gives the full cost, the amount due before the funeral and which charges you will pay separately."
+    quick_link_url: "#if-you-cannot-cover-the-bill"
+    quick_link_label: Help if you cannot cover the bill
+    basic_note: "Start with the written quote and the amount due before the funeral. The opening figures are an example."
+    advanced_note: "Include separately billed reception and memorial costs. Enter confirmed payments by when they will be available."
+    result_note: "Use the funeral director’s confirmed charges and payment dates. The starting figures illustrate the calculation."
+    hero_image_url: "https://images.pexels.com/photos/8964077/pexels-photo-8964077.jpeg?auto=compress&fit=crop&w=1200&h=630"
+    hero_image_alt: White lilies laid at a grave as a memorial tribute
+    hero_image_credit: Ivan S
+    hero_image_provider: Pexels
+    hero_image_source: https://www.pexels.com/photo/laying-flowers-over-a-tombstone-8964077/
+    require_pinned_hero: true
+    next_step:
+      title: If payment is due soon
+      description: Ask for the written estimate and payment dates. Check how much you can cover by each date before committing to arrangements.
+      links:
+        - {label: Help with funeral expenses, url: "#if-you-cannot-cover-the-bill"}
+        - {label: What to check in a quote, url: "#check-what-the-quote-includes"}
+    fields:
+      - {id: director, label: Funeral director and included services, type: number, prefix: "€", default: 2500, min: 0, max: 100000, step: 0.01, help: "Include the coffin, hearse and preparation here if priced in the package."}
+      - {id: cemetery, label: Separate cemetery or crematorium charges, type: number, prefix: "€", default: 950, min: 0, max: 100000, step: 0.01, help: "Include any quoted plot, grave opening, cremation or crematorium chapel fees that are billed separately."}
+      - {id: ceremony, label: Separate ceremony and other charges, type: number, prefix: "€", default: 300, min: 0, max: 100000, step: 0.01, help: "Enter the charges you have not counted already, such as a celebrant, music, flowers or notices."}
+      - {id: upfront_due, label: Amount due before the funeral, type: number, prefix: "€", default: 1000, min: 0, max: 500000, step: 0.01, help: "Use the agreed deposit and any separate payments due before the funeral. They form part of the total."}
+      - {id: reception, label: Separate reception costs, type: number, prefix: "€", default: 0, min: 0, max: 100000, step: 0.01, advanced: true, help: "Enter the estimated venue or catering bill if it is not in your quote."}
+      - {id: memorial, label: Separate headstone or memorial costs, type: number, prefix: "€", default: 0, min: 0, max: 100000, step: 0.01, advanced: true, help: "Include any confirmed permit or foundation costs charged separately."}
+      - {id: upfront_funds, label: Confirmed payment towards the upfront bill, type: number, prefix: "€", default: 0, min: 0, max: 500000, step: 0.01, advanced: true, help: "Only include money confirmed for this deadline or already paid against the upfront amount."}
+      - {id: later_funds, label: Confirmed payment towards the later balance, type: number, prefix: "€", default: 0, min: 0, max: 500000, step: 0.01, advanced: true, help: "Use only funds confirmed for bills due later. Count each payment once."}
+    results:
+      - {id: total_cost, label: Total funeral budget}
+      - {id: due_upfront, label: Due before the funeral}
+      - {id: due_later, label: Balance due later}
+      - {id: upfront_gap, label: Upfront amount still to cover, advanced: true}
+      - {id: later_gap, label: Later amount still to cover, advanced: true}
+    sources:
+      - {title: "CCPC · Planning for a funeral and checking the quote", url: "https://www.ccpc.ie/manage-your-money/planning-for-the-future/planning-for-a-funeral"}
+      - {title: "Dublin Cemeteries Trust · Glasnevin fee schedule", url: "https://www.dctrust.ie/funeral-services/pricing.html"}
+      - {title: "An Post Insurance · Funeral guide with the February 2024 Red C survey", url: "https://www.anpostinsurance.ie/docs/default-source/life-insurance/api-funeral-guide-june-2025-final.pdf"}
+      - {title: "Department of Social Protection · Additional Needs Payment", url: "https://www.gov.ie/en/service/80b24c-exceptional-needs-payments-swa/"}
+      - {title: "Department of Social Protection · Occupational Injuries Death Benefit", url: "https://www.gov.ie/en/department-of-social-protection/services/death-benefit-scheme-under-the-occupational-injuries-scheme/"}
+      - {title: "PTSB · Releasing funeral funds", url: "https://www.ptsb.ie/help-and-support/life-changes/bereavement-support/releasing-funeral-funds/"}
+      - {title: "Law Society of Ireland · Payment of funeral expenses", url: "https://www.lawsociety.ie/Solicitors/knowledge-base/Practice-Notes/payment-of-funeral-expenses2"}
+
   - slug: nursing-home-cost-calculator
     title: Nursing Home Cost Calculator Ireland
     category: Family & Life Planning

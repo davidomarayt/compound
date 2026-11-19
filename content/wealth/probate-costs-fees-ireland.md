@@ -532,6 +532,8 @@ The exact CAT deduction depends on the tax rules and whether the cost is actuall
 
 Do not assume every probate-related expense is automatically deductible for CAT.
 
+For arrangements and near-term payments, use the [Funeral Cost Calculator](/funeral-cost-calculator/) to budget for the total, any deposit and the balance due later.
+
 ## Probate fee is not inheritance tax
 
 These are completely different.

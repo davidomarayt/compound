@@ -631,6 +631,16 @@
         items.push('The statutory employee contribution rate starts lower and phases upward over time, so future take-home impact will not stay at the 2026 level.');
         items.push('Employer and State contributions are part of the retirement value even though they are not employee take-home deductions.');
         break;
+      case 'funeral_cost': {
+        const total = v.director + v.cemetery + v.ceremony + (v.__advanced ? v.reception + v.memorial : 0);
+        items.push('Use each charge once. A deposit credited against the quoted price is part of the total.');
+        if (Math.round(v.upfront_due * 100) > Math.round(total * 100)) {
+          items.push('The upfront payment entered is higher than the total. The estimate caps it at the total. Check for missing costs or confirm the payment amount.');
+        } else {
+          items.push('Ask for the exact due dates. A payment confirmed for later will not reduce what you need before the funeral.');
+        }
+        break;
+      }
       case 'nursing_home_cost':
         items.push('The first-year budget uses 52 weeks. The monthly estimate averages that cash cost over 12 months.');
         items.push(v.use_fair_deal
@@ -1861,6 +1871,31 @@
         __chart:{type:'line',title:'Projected MyFutureFund balance',caption:'The projection applies the statutory calendar-year contribution phases to the annual pay assumption, subject to the €80,000 annual modelling cap. Actual eligibility and payroll collection use NAERSA rules including pay-period assessment.',labels,series:[{label:'Projected fund',values:funds},{label:'Starting fund + all contributions',values:contributionCum}]}
       };
     },
+    funeral_cost(v){
+      const cents = value => Math.round(value * 100);
+      const director = cents(v.director);
+      const cemetery = cents(v.cemetery);
+      const ceremony = cents(v.ceremony);
+      const optional = v.__advanced ? cents(v.reception) + cents(v.memorial) : 0;
+      const total = director + cemetery + ceremony + optional;
+      const upfront = Math.min(total, cents(v.upfront_due));
+      const later = total - upfront;
+      const upfrontPayment = v.__advanced ? cents(v.upfront_funds) : 0;
+      const laterPayment = v.__advanced ? cents(v.later_funds) : 0;
+      return {
+        total_cost: money(total / 100),
+        due_upfront: money(upfront / 100),
+        due_later: money(later / 100),
+        upfront_gap: money(Math.max(0, upfront - upfrontPayment) / 100),
+        later_gap: money(Math.max(0, later - laterPayment) / 100),
+        __chart: {
+          type: 'bar', title: 'What makes up the funeral budget',
+          caption: 'The bars show the entered costs before any confirmed payments.',
+          labels: ['Funeral director', 'Cemetery or crematorium', 'Ceremony and other', 'Reception and memorial'],
+          series: [{label: 'Cost', values: [director, cemetery, ceremony, optional].map(amount => amount / 100)}]
+        }
+      };
+    },
     nursing_home_cost(v){
       const toCents = value => Math.round(value * 100);
       const privateFee = toCents(v.private_fee);
@@ -2278,7 +2313,7 @@
       const values={}; let invalid=false, invalidField=null, invalidMessage='';
       root.querySelectorAll('[data-field]').forEach(el=>el.removeAttribute('aria-invalid'));
       root.querySelectorAll('[data-field]').forEach(el=>{
-        if(['childcare_cost','nursing_home_cost'].includes(root.dataset.calculator) && el.closest('.tool-field')?.hidden) return;
+        if(['childcare_cost','nursing_home_cost','funeral_cost'].includes(root.dataset.calculator) && el.closest('.tool-field')?.hidden) return;
         const raw=el.value;
         if(el.type==='checkbox'){ values[el.dataset.field]=el.checked; return; }
         if(el.type==='date'){
