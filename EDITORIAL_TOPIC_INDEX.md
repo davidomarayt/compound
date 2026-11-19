@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 331 published articles and guides, 69 tools,
+**Included:** 334 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -119,6 +119,8 @@ For the complete register (including 510+ company profiles), open
 - [House Extension Planning Permission Ireland: The 45 m² Rule Explained](https://compound.ie/wealth/house-extension-planning-permission-ireland/) — **Wealth**
 - [House Hunting and Bidding in Ireland: How to Stay Disciplined](https://compound.ie/wealth/house-hunting-bidding-ireland/) — **Wealth**
 - [How accurate is a pregnancy due date? LMP vs dating scan explained](https://compound.ie/health/pregnancy-due-date-accuracy-lmp-vs-scan-ireland/) — **Health**
+- [How does Mounjaro work? Tirzepatide and the science of GIP and GLP-1](https://compound.ie/health/medicines/tirzepatide/) — **Health**
+- [How does semaglutide work? Ozempic, Wegovy and Rybelsus explained](https://compound.ie/health/medicines/semaglutide/) — **Health**
 - [How Ireland exercises: walking dominates, gyms are second and work gets in the way](https://compound.ie/news/how-ireland-exercises-most-popular-sports-2025/) — **Life**
 - [How long do you stay on Mounjaro or Wegovy?](https://compound.ie/health/how-long-stay-on-mounjaro-wegovy-ireland/) — **Health**
 - [How Many Solar Panels Do You Need in Ireland? 4kW vs 6kW vs 8kW](https://compound.ie/wealth/how-many-solar-panels-do-i-need-ireland/) — **Wealth**
@@ -176,6 +178,7 @@ For the complete register (including 510+ company profiles), open
 - [Life Insurance Ireland 2026: Costs, Cover, Policy Types and How Much You Need](https://compound.ie/wealth/life-insurance-ireland/) — **Wealth**
 - [Lilly Has Earned Its Last Jardiance Sales Milestone. What Growth Remains?](https://compound.ie/wealth/lilly-jardiance-milestone-revenue/) — **Wealth**
 - [Lilly’s METiS deal: read beyond the $1.1 billion headline](https://compound.ie/wealth/eli-lilly-metis-drug-delivery-deal/) — **Wealth**
+- [Liraglutide (Saxenda): what it is and how it works](https://compound.ie/health/medicines/liraglutide/) — **Health**
 - [Live Nation’s Crowds Are Growing. Which Segment Carries the Economics?](https://compound.ie/wealth/live-nation-attendance-segment-economics/) — **Wealth**
 - [Live to 100: What a 100-Year Life Would Really Mean in Ireland](https://compound.ie/live-to-100/) — **Health**
 - [Local Property Tax Ireland 2026–2030: Bands, Rates & How Much You’ll Pay](https://compound.ie/wealth/local-property-tax-ireland/) — **Wealth**

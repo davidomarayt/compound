@@ -2077,6 +2077,38 @@
         "status": "published"
       },
       {
+        "title": "How does Mounjaro work? Tirzepatide and the science of GIP and GLP-1",
+        "url": "/health/medicines/tirzepatide/",
+        "source": "content/health/tirzepatide.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "tirzepatide",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "glp-1",
+          "tirzepatide"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "How does semaglutide work? Ozempic, Wegovy and Rybelsus explained",
+        "url": "/health/medicines/semaglutide/",
+        "source": "content/health/semaglutide.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "semaglutide",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "glp-1",
+          "semaglutide"
+        ],
+        "status": "published"
+      },
+      {
         "title": "How Ireland exercises: walking dominates, gyms are second and work gets in the way",
         "url": "/news/how-ireland-exercises-most-popular-sports-2025/",
         "source": "content/happiness/how-ireland-exercises-most-popular-sports-2025.md",
@@ -3194,6 +3226,22 @@
           "stock-lly",
           "lly",
           "editorial"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Liraglutide (Saxenda): what it is and how it works",
+        "url": "/health/medicines/liraglutide/",
+        "source": "content/health/liraglutide.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "liraglutide",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "glp-1",
+          "liraglutide"
         ],
         "status": "published"
       },

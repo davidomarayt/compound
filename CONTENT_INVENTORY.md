@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 331
+- Published editorial articles and guides: 334
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -18,7 +18,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - Private-company directory profiles: 13
 - Draft or unpublished editorial files: 0
 
-## Health articles and guides — 35
+## Health articles and guides — 38
 
 - [Amoxicillin in Ireland: how it works, prescriptions and penicillin allergy](https://compound.ie/health/medicines/amoxicillin/)
 - [Budget 2027 gives health €29.1bn. So why aren’t Mounjaro and Wegovy funded for obesity?](https://compound.ie/news/budget-2027-obesity-mounjaro-wegovy-ireland/)
@@ -28,6 +28,8 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [GLP-1s and pregnancy: Ozempic, Wegovy, Mounjaro and what the evidence says](https://compound.ie/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/)
 - [Health for a 100-Year Life: Staying Capable, Connected and Well](https://compound.ie/health/health-for-a-100-year-life/)
 - [How accurate is a pregnancy due date? LMP vs dating scan explained](https://compound.ie/health/pregnancy-due-date-accuracy-lmp-vs-scan-ireland/)
+- [How does Mounjaro work? Tirzepatide and the science of GIP and GLP-1](https://compound.ie/health/medicines/tirzepatide/)
+- [How does semaglutide work? Ozempic, Wegovy and Rybelsus explained](https://compound.ie/health/medicines/semaglutide/)
 - [How long do you stay on Mounjaro or Wegovy?](https://compound.ie/health/how-long-stay-on-mounjaro-wegovy-ireland/)
 - [How much do Wegovy, Mounjaro and Ozempic cost in Ireland?](https://compound.ie/health/wegovy-mounjaro-ozempic-cost-ireland/)
 - [How much protein do you actually need? An Irish evidence-based guide](https://compound.ie/health/how-much-protein-do-you-need-ireland/)
@@ -38,6 +40,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [How to lower cholesterol: what actually moves LDL, and by how much](https://compound.ie/health/how-to-lower-cholesterol-what-moves-ldl/)
 - [Ireland has a new five-year sepsis strategy — here are the warning signs the HSE wants people to know](https://compound.ie/news/ireland-sepsis-strategy-warning-signs-2026/)
 - [Ireland to Ban Loyalty-Card Alcohol Discounts: What Changes From March 2028](https://compound.ie/news/alcohol-loyalty-card-discounts-ban-ireland-2028/)
+- [Liraglutide (Saxenda): what it is and how it works](https://compound.ie/health/medicines/liraglutide/)
 - [Live to 100: What a 100-Year Life Would Really Mean in Ireland](https://compound.ie/live-to-100/)
 - [Looksmaxxing: What the Internet Promises Men — and What the Science Actually Says](https://compound.ie/health/looksmaxxing-science-male-attractiveness/)
 - [Macronutrients and micronutrients: a complete guide for Ireland](https://compound.ie/health/macronutrients-micronutrients-guide-ireland/)
