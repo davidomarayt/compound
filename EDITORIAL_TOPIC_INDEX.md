@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 313 published articles and guides, 65 tools,
+**Included:** 313 published articles and guides, 66 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -371,6 +371,7 @@ For the complete register (including 510+ company profiles), open
 - [Mortgage Switch & Rate Change Calculator Ireland](https://compound.ie/mortgage-switch-calculator/) — **Mortgages & Home Buying**
 - [MyFutureFund Auto-Enrolment Calculator Ireland](https://compound.ie/myfuturefund-calculator/) — **Pensions & Investing**
 - [Net Worth Calculator Ireland](https://compound.ie/net-worth-calculator/) — **Pensions & Investing**
+- [Nursing Home Cost Calculator Ireland](https://compound.ie/nursing-home-cost-calculator/) — **Family & Life Planning**
 - [Nutrition Needs Calculator Ireland — Energy, Protein & Macros](https://compound.ie/nutrition-needs-calculator/) — **Health**
 - [Pension Lump Sum Calculator Ireland](https://compound.ie/pension-lump-sum-calculator-ireland/) — **Pensions & Investing**
 - [Pension Projection Calculator Ireland](https://compound.ie/pension-projection-calculator/) — **Pensions & Investing**

@@ -6732,6 +6732,15 @@
         "embedded_guide": "content/tool-guides/net-worth-calculator.md"
       },
       {
+        "title": "Nursing Home Cost Calculator Ireland",
+        "url": "/nursing-home-cost-calculator/",
+        "source": "content/tools.yml",
+        "kind": "Calculator",
+        "category": "Family & Life Planning",
+        "slug": "nursing-home-cost-calculator",
+        "embedded_guide": "content/tool-guides/nursing-home-cost-calculator.md"
+      },
+      {
         "title": "Nutrition Needs Calculator Ireland — Energy, Protein & Macros",
         "url": "/nutrition-needs-calculator/",
         "source": "content/tools.yml",
@@ -7148,6 +7157,12 @@
         "title": "Net Worth Calculator Ireland",
         "url": "/net-worth-calculator/",
         "source": "content/tool-guides/net-worth-calculator.md",
+        "kind": "Embedded calculator guide"
+      },
+      {
+        "title": "Nursing Home Cost Calculator Ireland",
+        "url": "/nursing-home-cost-calculator/",
+        "source": "content/tool-guides/nursing-home-cost-calculator.md",
         "kind": "Embedded calculator guide"
       },
       {

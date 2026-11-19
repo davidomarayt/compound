@@ -10,8 +10,8 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 - Published editorial articles and guides: 313
 - Existing automated/legacy earnings source files: 11
-- Tools and calculators: 65
-- Embedded tool-guide files: 58
+- Tools and calculators: 66
+- Embedded tool-guide files: 59
 - Information and policy pages: 27
 - Main hubs: 11
 - Public-company directory profiles: 511
@@ -356,7 +356,7 @@ Some old quarterly article routes are now redirects to continuous company profil
 - [Nike, Inc. (NKE) Earnings: FY 2027 Q1 Revenue, Profit and EPS](https://compound.ie/wealth/earnings/nke-earnings-fy2027-q1/) | source: content/wealth/nke-earnings-fy2027-q1.md
 - [PepsiCo (PEP) Earnings: FY 2026 Q3 Revenue, Profit and EPS](https://compound.ie/wealth/earnings/pep-earnings-fy2026-q3/) | source: content/wealth/pep-earnings-fy2026-q3.md
 
-## Interactive calculators and tools — 65
+## Interactive calculators and tools — 66
 
 ### EV & Motoring — 3
 
@@ -364,11 +364,12 @@ Some old quarterly article routes are now redirects to continuous company profil
 - [EV Charging Cost Calculator Ireland](https://compound.ie/ev-charging-cost-calculator/) | includes embedded guide
 - [Fuel Cost Calculator Ireland](https://compound.ie/fuel-cost-calculator/) | includes embedded guide
 
-### Family & Life Planning — 4
+### Family & Life Planning — 5
 
 - [Childcare Cost Calculator Ireland](https://compound.ie/childcare-cost-calculator/) | includes embedded guide
 - [Childcare Cost vs Returning to Work Calculator Ireland](https://compound.ie/childcare-return-to-work-calculator/) | includes embedded guide
 - [Lifetime Cost Calculator Ireland](https://compound.ie/lifetime-cost-calculator/) | includes embedded guide
+- [Nursing Home Cost Calculator Ireland](https://compound.ie/nursing-home-cost-calculator/) | includes embedded guide
 - [Pregnancy Due Date & Timeline Calculator Ireland](https://compound.ie/pregnancy-due-date-calculator/) | includes embedded guide
 
 ### Health — 5
@@ -450,7 +451,7 @@ Some old quarterly article routes are now redirects to continuous company profil
 - [USC Calculator Ireland 2027](https://compound.ie/usc-calculator/) | includes embedded guide
 - [VAT Calculator Ireland 2026](https://compound.ie/vat-calculator/) | includes embedded guide
 
-## Supporting tool explainer files — 58
+## Supporting tool explainer files — 59
 
 Each entry lives within its corresponding calculator page; it is not a second standalone article.
 
@@ -489,6 +490,7 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - Mortgage Switch & Rate Change Calculator Ireland | source: content/tool-guides/mortgage-switch-calculator.md
 - MyFutureFund Auto-Enrolment Calculator Ireland | source: content/tool-guides/myfuturefund-calculator.md
 - Net Worth Calculator Ireland | source: content/tool-guides/net-worth-calculator.md
+- Nursing Home Cost Calculator Ireland | source: content/tool-guides/nursing-home-cost-calculator.md
 - Nutrition Needs Calculator Ireland — Energy, Protein & Macros | source: content/tool-guides/nutrition-needs-calculator.md
 - Pension Lump Sum Calculator Ireland | source: content/tool-guides/pension-lump-sum-calculator-ireland.md
 - Pension Projection Calculator Ireland | source: content/tool-guides/pension-projection-calculator.md
