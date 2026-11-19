@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% set hub_url = site_url ~ medicines_hub_url %}
-{% set description = "Irish guides to common medicines, including cetirizine, ibuprofen, omeprazole and paracetamol. Find out how they work, when they are used and what to look out for." %}
+{% set description = "Irish guides to common medicines, including painkillers, antihistamines, inhalers, diabetes medicines and antibiotics. Learn how they work and what to look out for." %}
 {% block head_title %}Common Medicines in Ireland | Compound Health{% endblock %}
 {% block meta %}<meta name="description" content="{{ description }}">{% endblock %}
 {% block head %}
@@ -18,10 +18,13 @@
 {% endblock %}
 {% block content %}
 {% set medicines = {
+  'amoxicillin': ('Amoxicillin', 'Clonamox'),
   'cetirizine': ('Cetirizine', 'Zirtek'),
   'ibuprofen': ('Ibuprofen', 'Nurofen'),
+  'metformin': ('Metformin', 'Glucophage'),
   'omeprazole': ('Omeprazole', 'Losec'),
-  'paracetamol': ('Paracetamol', 'Panadol')
+  'paracetamol': ('Paracetamol', 'Panadol'),
+  'salbutamol': ('Salbutamol', 'Ventolin')
 } %}
 <div class="medicines-hub">
   <nav class="breadcrumbs" aria-label="Breadcrumb">
