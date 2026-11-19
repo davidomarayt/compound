@@ -2,7 +2,7 @@
   "story_fingerprint": "a3f9783e3658e1609bea5b07",
   "company": "DIS",
   "date": "2026-11-19",
-  "status": "prepared_not_published",
+  "status": "published",
   "publication_kind": "new_analysis",
   "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to all factual, editorial, image, test, CI, deployment and live-verification gates.",
   "story_thesis": "Disney's dominant profit segment is entering another capital cycle; returns depend on incremental margins and cash generation keeping pace with parks and cruise assets.",
@@ -84,12 +84,34 @@
     "build": "Passed production-base build: 319 articles, 837 tags, 35 pages and 62 tools after restoring the current branch's approved image cache without committing unrelated assets.",
     "render": "Rendered HTML inspected: correct canonical, one H1, indexable, stock-profile/earnings-hub/diversification links and visible source credit. Sitemap and finance catalogue include the canonical. The generated 1200x675 WebP social image was visually inspected.",
     "ads": "Standard AdSense loader rendered with client ca-pub-6115783809711785. The site has no fixed article_top/article_bottom slot IDs configured, so no fixed slot markup is expected; Auto Ads remains enabled through the standard loader and consent controls.",
-    "ci": "pending exact-head CI",
-    "deployment": "not merged; no live publication claimed"
+    "ci": "GitHub Actions CI run 44500532887 passed on exact PR head 92fa00a5320dfbb36a5334917a8b22718e3ed5b3: full tests, production build and mobile Lighthouse job all succeeded.",
+    "deployment": "PR #185 merged as 9d617b94256ded563a05290d50cadc1c8171637b. Its initial Pages run was superseded by later branch activity; replacement site run 44502660724 on descendant f8750329ea8a12926f9f57128e17bfc377f01b1f built and deployed the same article successfully. Live and finance-discovery jobs passed."
   },
   "article_sha256": "20b5148f453bbdf3d6e8b836e0c21ca24af76fa7837a6d0d80c204bd15d8ca89",
   "published_image_sha256": "5c1427898fe6926794d9815a840b80b06b500d07db6494aca1ddac1cd218f1ff",
-  "social_image_sha256": "e56c3e132150de80f4f77410582d01daddc9801a72a0411b310f614677ff83db",
-  "publication_state": "prepared_not_published",
-  "new_articles_published": 0
+  "social_image_sha256": "709f80faaf42b3de730ab0cd9f919e8e4166a79dae269dda15ca7326fbc3b885",
+  "pull_request": "https://github.com/davidomarayt/compound/pull/185",
+  "validated_head": "92fa00a5320dfbb36a5334917a8b22718e3ed5b3",
+  "merge_commit": "9d617b94256ded563a05290d50cadc1c8171637b",
+  "deployment_head": "f8750329ea8a12926f9f57128e17bfc377f01b1f",
+  "deployment_url": "https://github.com/davidomarayt/compound/actions/runs/44502660724",
+  "live_verified_at": "2026-11-19T10:16:46Z",
+  "live_verification": {
+    "article_http_status": 200,
+    "canonical": "https://compound.ie/wealth/disney-experiences-capital-spending-returns/",
+    "indexable": true,
+    "source_credit_present": true,
+    "stock_profile_link_present": true,
+    "earnings_hub_link_present": true,
+    "ads_loader_present": true,
+    "fixed_article_slots": "not configured in content/site.yml; standard consent-aware Auto Ads loader is present",
+    "social_image": "https://compound.ie/static/discover/disney-experiences-capital-spending-returns-16x9.webp",
+    "social_image_http_status": 200,
+    "social_image_dimensions": "1200x675",
+    "social_image_visually_inspected": true,
+    "sitemap_present": true,
+    "finance_catalogue_present": true
+  },
+  "publication_state": "live_verified",
+  "new_articles_published": 1
 }
