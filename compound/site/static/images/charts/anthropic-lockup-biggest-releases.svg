@@ -1,0 +1,186 @@
+<svg role="img" aria-label="The 980 million-share base IPO is smaller than each of the three largest individual unlocks, whose ceilings are 1.7, 3.0 and 1.9 billion shares." xmlns:xlink="http://www.w3.org/1999/xlink" width="606.273745pt" height="220.79952pt" viewBox="0 0 606.273745 220.79952" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-19T17:11:03.421396</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="comparison-figure_1">
+  <g id="comparison-patch_1">
+   <path d="M 0 220.79952 
+L 606.273745 220.79952 
+L 606.273745 -0 
+L 0 -0 
+z
+" style="fill: #f6faf9"/>
+  </g>
+  <g id="comparison-axes_1">
+   <g id="comparison-patch_2">
+    <path d="M 201.11375 185.153582 
+L 586.459642 185.153582 
+L 586.459642 18 
+L 201.11375 18 
+z
+" style="fill: #f6faf9"/>
+   </g>
+   <g id="comparison-matplotlib.axis_1">
+    <g id="comparison-xtick_1">
+     <g id="comparison-line2d_1">
+      <path d="M 201.11375 185.153582 
+L 201.11375 18 
+" clip-path="url(#comparison-p755df6b748)" style="fill: none; stroke: #dce7e4; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="comparison-line2d_2">
+      <defs>
+       <path id="comparison-m55ad78b18d" d="M 0 0 
+L 0 3.5 
+" style="stroke: #465a61; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#comparison-m55ad78b18d" x="201.11375" y="185.153582" style="fill: #465a61; stroke: #465a61; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="comparison-text_1">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #465a61" x="201.11375" y="200.511864" transform="rotate(-0 201.11375 200.511864)">0</text>
+     </g>
+    </g>
+    <g id="comparison-xtick_2">
+     <g id="comparison-line2d_3">
+      <path d="M 306.687967 185.153582 
+L 306.687967 18 
+" clip-path="url(#comparison-p755df6b748)" style="fill: none; stroke: #dce7e4; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="comparison-line2d_4">
+      <g>
+       <use xlink:href="#comparison-m55ad78b18d" x="306.687967" y="185.153582" style="fill: #465a61; stroke: #465a61; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="comparison-text_2">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #465a61" x="306.687967" y="200.511864" transform="rotate(-0 306.687967 200.511864)">1bn</text>
+     </g>
+    </g>
+    <g id="comparison-xtick_3">
+     <g id="comparison-line2d_5">
+      <path d="M 412.262184 185.153582 
+L 412.262184 18 
+" clip-path="url(#comparison-p755df6b748)" style="fill: none; stroke: #dce7e4; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="comparison-line2d_6">
+      <g>
+       <use xlink:href="#comparison-m55ad78b18d" x="412.262184" y="185.153582" style="fill: #465a61; stroke: #465a61; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="comparison-text_3">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #465a61" x="412.262184" y="200.511864" transform="rotate(-0 412.262184 200.511864)">2bn</text>
+     </g>
+    </g>
+    <g id="comparison-xtick_4">
+     <g id="comparison-line2d_7">
+      <path d="M 517.836401 185.153582 
+L 517.836401 18 
+" clip-path="url(#comparison-p755df6b748)" style="fill: none; stroke: #dce7e4; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="comparison-line2d_8">
+      <g>
+       <use xlink:href="#comparison-m55ad78b18d" x="517.836401" y="185.153582" style="fill: #465a61; stroke: #465a61; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="comparison-text_4">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #465a61" x="517.836401" y="200.511864" transform="rotate(-0 517.836401 200.511864)">3bn</text>
+     </g>
+    </g>
+   </g>
+   <g id="comparison-matplotlib.axis_2">
+    <g id="comparison-ytick_1">
+     <g id="comparison-line2d_9"/>
+     <g id="comparison-text_5">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #465a61" x="195.11375" y="41.54841" transform="rotate(-0 195.11375 41.54841)">Base IPO offering</text>
+     </g>
+    </g>
+    <g id="comparison-ytick_2">
+     <g id="comparison-line2d_10"/>
+     <g id="comparison-text_6">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #465a61" x="195.11375" y="84.353425" transform="rotate(-0 195.11375 84.353425)">FY 2026 results +2 trading days</text>
+     </g>
+    </g>
+    <g id="comparison-ytick_3">
+     <g id="comparison-line2d_11"/>
+     <g id="comparison-text_7">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #465a61" x="195.11375" y="127.158439" transform="rotate(-0 195.11375 127.158439)">Q1 2027 results / day 180</text>
+     </g>
+    </g>
+    <g id="comparison-ytick_4">
+     <g id="comparison-line2d_12"/>
+     <g id="comparison-text_8">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #465a61" x="195.11375" y="169.963454" transform="rotate(-0 195.11375 169.963454)">Q3 2027 results / day 365</text>
+     </g>
+    </g>
+   </g>
+   <g id="comparison-patch_3">
+    <path d="M 201.11375 25.59789 
+L 304.576483 25.59789 
+L 304.576483 49.140648 
+L 201.11375 49.140648 
+z
+" clip-path="url(#comparison-p755df6b748)" style="fill: #718587"/>
+   </g>
+   <g id="comparison-patch_4">
+    <path d="M 201.11375 68.402905 
+L 380.589919 68.402905 
+L 380.589919 91.945663 
+L 201.11375 91.945663 
+z
+" clip-path="url(#comparison-p755df6b748)" style="fill: #02796f"/>
+   </g>
+   <g id="comparison-patch_5">
+    <path d="M 201.11375 111.20792 
+L 517.836401 111.20792 
+L 517.836401 134.750678 
+L 201.11375 134.750678 
+z
+" clip-path="url(#comparison-p755df6b748)" style="fill: #02796f"/>
+   </g>
+   <g id="comparison-patch_6">
+    <path d="M 201.11375 154.012934 
+L 401.704762 154.012934 
+L 401.704762 177.555692 
+L 201.11375 177.555692 
+z
+" clip-path="url(#comparison-p755df6b748)" style="fill: #02796f"/>
+   </g>
+   <g id="comparison-patch_7">
+    <path d="M 201.11375 185.153582 
+L 586.459642 185.153582 
+" style="fill: none; stroke: #cbd9d6; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="comparison-text_9">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182f36" x="311.576483" y="40.404582" transform="rotate(-0 311.576483 40.404582)">980m</text>
+   </g>
+   <g id="comparison-text_10">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182f36" x="387.589919" y="83.209596" transform="rotate(-0 387.589919 83.209596)">up to 1.7bn</text>
+   </g>
+   <g id="comparison-text_11">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182f36" x="524.836401" y="126.014611" transform="rotate(-0 524.836401 126.014611)">up to 3.0bn</text>
+   </g>
+   <g id="comparison-text_12">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #182f36" x="408.704762" y="168.819626" transform="rotate(-0 408.704762 168.819626)">up to 1.9bn</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="comparison-p755df6b748">
+   <rect x="201.11375" y="18" width="385.345892" height="167.153582"/>
+  </clipPath>
+ </defs>
+</svg>

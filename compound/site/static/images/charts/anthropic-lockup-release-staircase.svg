@@ -1,0 +1,417 @@
+<svg role="img" aria-label="The sum of rounded tranche ceilings climbs to 1.63 billion at tranche 5, 8.73 billion at tranche 12 and 15.48 billion at tranche 23." xmlns:xlink="http://www.w3.org/1999/xlink" width="605.99952pt" height="289.19952pt" viewBox="0 0 605.99952 289.19952" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-19T17:11:03.328770</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="staircase-figure_1">
+  <g id="staircase-patch_1">
+   <path d="M 0 289.19952 
+L 605.99952 289.19952 
+L 605.99952 0 
+L 0 0 
+z
+" style="fill: #f6faf9"/>
+  </g>
+  <g id="staircase-axes_1">
+   <g id="staircase-patch_2">
+    <path d="M 67.597969 238.907645 
+L 587.99952 238.907645 
+L 587.99952 18 
+L 67.597969 18 
+z
+" style="fill: #f6faf9"/>
+   </g>
+   <g id="staircase-matplotlib.axis_1">
+    <g id="staircase-xtick_1">
+     <g id="staircase-line2d_1">
+      <defs>
+       <path id="staircase-mb74dbd8dab" d="M 0 0 
+L 0 3.5 
+" style="stroke: #465a61; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#staircase-mb74dbd8dab" x="89.281367" y="238.907645" style="fill: #465a61; stroke: #465a61; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="staircase-text_1">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #465a61" x="89.281367" y="254.265926" transform="rotate(-0 89.281367 254.265926)">1</text>
+     </g>
+    </g>
+    <g id="staircase-xtick_2">
+     <g id="staircase-line2d_2">
+      <g>
+       <use xlink:href="#staircase-mb74dbd8dab" x="176.014959" y="238.907645" style="fill: #465a61; stroke: #465a61; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="staircase-text_2">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #465a61" x="176.014959" y="254.265926" transform="rotate(-0 176.014959 254.265926)">5</text>
+     </g>
+    </g>
+    <g id="staircase-xtick_3">
+     <g id="staircase-line2d_3">
+      <g>
+       <use xlink:href="#staircase-mb74dbd8dab" x="262.74855" y="238.907645" style="fill: #465a61; stroke: #465a61; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="staircase-text_3">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #465a61" x="262.74855" y="254.265926" transform="rotate(-0 262.74855 254.265926)">9</text>
+     </g>
+    </g>
+    <g id="staircase-xtick_4">
+     <g id="staircase-line2d_4">
+      <g>
+       <use xlink:href="#staircase-mb74dbd8dab" x="327.798744" y="238.907645" style="fill: #465a61; stroke: #465a61; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="staircase-text_4">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #465a61" x="327.798744" y="254.265926" transform="rotate(-0 327.798744 254.265926)">12</text>
+     </g>
+    </g>
+    <g id="staircase-xtick_5">
+     <g id="staircase-line2d_5">
+      <g>
+       <use xlink:href="#staircase-mb74dbd8dab" x="414.532336" y="238.907645" style="fill: #465a61; stroke: #465a61; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="staircase-text_5">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #465a61" x="414.532336" y="254.265926" transform="rotate(-0 414.532336 254.265926)">16</text>
+     </g>
+    </g>
+    <g id="staircase-xtick_6">
+     <g id="staircase-line2d_6">
+      <g>
+       <use xlink:href="#staircase-mb74dbd8dab" x="501.265928" y="238.907645" style="fill: #465a61; stroke: #465a61; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="staircase-text_6">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #465a61" x="501.265928" y="254.265926" transform="rotate(-0 501.265928 254.265926)">20</text>
+     </g>
+    </g>
+    <g id="staircase-xtick_7">
+     <g id="staircase-line2d_7">
+      <g>
+       <use xlink:href="#staircase-mb74dbd8dab" x="566.316122" y="238.907645" style="fill: #465a61; stroke: #465a61; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="staircase-text_7">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #465a61" x="566.316122" y="254.265926" transform="rotate(-0 566.316122 254.265926)">23</text>
+     </g>
+    </g>
+    <g id="staircase-text_8">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #465a61" x="327.798744" y="268.911864" transform="rotate(-0 327.798744 268.911864)">Prospectus tranche number</text>
+    </g>
+   </g>
+   <g id="staircase-matplotlib.axis_2">
+    <g id="staircase-ytick_1">
+     <g id="staircase-line2d_8">
+      <path d="M 67.597969 238.907645 
+L 587.99952 238.907645 
+" clip-path="url(#staircase-p7b8cb52975)" style="fill: none; stroke: #dce7e4; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="staircase-line2d_9">
+      <defs>
+       <path id="staircase-mc9867db2cc" d="M 0 0 
+L -3.5 0 
+" style="stroke: #465a61; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#staircase-mc9867db2cc" x="67.597969" y="238.907645" style="fill: #465a61; stroke: #465a61; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="staircase-text_9">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #465a61" x="60.597969" y="243.086786" transform="rotate(-0 60.597969 243.086786)">0</text>
+     </g>
+    </g>
+    <g id="staircase-ytick_2">
+     <g id="staircase-line2d_10">
+      <path d="M 67.597969 188.414469 
+L 587.99952 188.414469 
+" clip-path="url(#staircase-p7b8cb52975)" style="fill: none; stroke: #dce7e4; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="staircase-line2d_11">
+      <g>
+       <use xlink:href="#staircase-mc9867db2cc" x="67.597969" y="188.414469" style="fill: #465a61; stroke: #465a61; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="staircase-text_10">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #465a61" x="60.597969" y="192.59361" transform="rotate(-0 60.597969 192.59361)">4bn</text>
+     </g>
+    </g>
+    <g id="staircase-ytick_3">
+     <g id="staircase-line2d_12">
+      <path d="M 67.597969 137.921293 
+L 587.99952 137.921293 
+" clip-path="url(#staircase-p7b8cb52975)" style="fill: none; stroke: #dce7e4; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="staircase-line2d_13">
+      <g>
+       <use xlink:href="#staircase-mc9867db2cc" x="67.597969" y="137.921293" style="fill: #465a61; stroke: #465a61; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="staircase-text_11">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #465a61" x="60.597969" y="142.100434" transform="rotate(-0 60.597969 142.100434)">8bn</text>
+     </g>
+    </g>
+    <g id="staircase-ytick_4">
+     <g id="staircase-line2d_14">
+      <path d="M 67.597969 87.428117 
+L 587.99952 87.428117 
+" clip-path="url(#staircase-p7b8cb52975)" style="fill: none; stroke: #dce7e4; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="staircase-line2d_15">
+      <g>
+       <use xlink:href="#staircase-mc9867db2cc" x="67.597969" y="87.428117" style="fill: #465a61; stroke: #465a61; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="staircase-text_12">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #465a61" x="60.597969" y="91.607258" transform="rotate(-0 60.597969 91.607258)">12bn</text>
+     </g>
+    </g>
+    <g id="staircase-ytick_5">
+     <g id="staircase-line2d_16">
+      <path d="M 67.597969 36.934941 
+L 587.99952 36.934941 
+" clip-path="url(#staircase-p7b8cb52975)" style="fill: none; stroke: #dce7e4; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="staircase-line2d_17">
+      <g>
+       <use xlink:href="#staircase-mc9867db2cc" x="67.597969" y="36.934941" style="fill: #465a61; stroke: #465a61; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="staircase-text_13">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #465a61" x="60.597969" y="41.114082" transform="rotate(-0 60.597969 41.114082)">16bn</text>
+     </g>
+    </g>
+    <g id="staircase-text_14">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #465a61" x="26.358281" y="128.453822" transform="rotate(-90 26.358281 128.453822)">Cumulative shares</text>
+    </g>
+   </g>
+   <g id="staircase-FillBetweenPolyCollection_1">
+    <defs>
+     <path id="staircase-mcb0cb479c0" d="M 67.597969 -50.291875 
+L 67.597969 -50.291875 
+L 89.281367 -50.291875 
+L 89.281367 -54.268213 
+L 110.964765 -54.268213 
+L 110.964765 -58.093071 
+L 132.648163 -58.093071 
+L 132.648163 -61.917929 
+L 154.331561 -61.917929 
+L 154.331561 -66.373952 
+L 176.014959 -66.373952 
+L 176.014959 -70.829974 
+L 197.698357 -70.829974 
+L 197.698357 -92.289574 
+L 219.381755 -92.289574 
+L 219.381755 -98.348755 
+L 241.065153 -98.348755 
+L 241.065153 -104.407936 
+L 262.74855 -104.407936 
+L 262.74855 -110.467117 
+L 284.431948 -110.467117 
+L 284.431948 -116.526299 
+L 306.115346 -116.526299 
+L 306.115346 -122.58548 
+L 327.798744 -122.58548 
+L 327.798744 -160.455362 
+L 349.482142 -160.455362 
+L 349.482142 -166.097974 
+L 371.16554 -166.097974 
+L 371.16554 -171.740587 
+L 392.848938 -171.740587 
+L 392.848938 -177.383199 
+L 414.532336 -177.383199 
+L 414.532336 -183.025811 
+L 436.215734 -183.025811 
+L 436.215734 -190.069609 
+L 457.899132 -190.069609 
+L 457.899132 -196.406503 
+L 479.58253 -196.406503 
+L 479.58253 -202.743397 
+L 501.265928 -202.743397 
+L 501.265928 -209.08029 
+L 522.949326 -209.08029 
+L 522.949326 -215.417184 
+L 544.632724 -215.417184 
+L 544.632724 -221.754077 
+L 566.316122 -221.754077 
+L 566.316122 -245.738336 
+L 587.99952 -245.738336 
+L 587.99952 -245.738336 
+L 587.99952 -50.291875 
+L 587.99952 -50.291875 
+L 587.99952 -50.291875 
+L 566.316122 -50.291875 
+L 566.316122 -50.291875 
+L 544.632724 -50.291875 
+L 544.632724 -50.291875 
+L 522.949326 -50.291875 
+L 522.949326 -50.291875 
+L 501.265928 -50.291875 
+L 501.265928 -50.291875 
+L 479.58253 -50.291875 
+L 479.58253 -50.291875 
+L 457.899132 -50.291875 
+L 457.899132 -50.291875 
+L 436.215734 -50.291875 
+L 436.215734 -50.291875 
+L 414.532336 -50.291875 
+L 414.532336 -50.291875 
+L 392.848938 -50.291875 
+L 392.848938 -50.291875 
+L 371.16554 -50.291875 
+L 371.16554 -50.291875 
+L 349.482142 -50.291875 
+L 349.482142 -50.291875 
+L 327.798744 -50.291875 
+L 327.798744 -50.291875 
+L 306.115346 -50.291875 
+L 306.115346 -50.291875 
+L 284.431948 -50.291875 
+L 284.431948 -50.291875 
+L 262.74855 -50.291875 
+L 262.74855 -50.291875 
+L 241.065153 -50.291875 
+L 241.065153 -50.291875 
+L 219.381755 -50.291875 
+L 219.381755 -50.291875 
+L 197.698357 -50.291875 
+L 197.698357 -50.291875 
+L 176.014959 -50.291875 
+L 176.014959 -50.291875 
+L 154.331561 -50.291875 
+L 154.331561 -50.291875 
+L 132.648163 -50.291875 
+L 132.648163 -50.291875 
+L 110.964765 -50.291875 
+L 110.964765 -50.291875 
+L 89.281367 -50.291875 
+L 89.281367 -50.291875 
+L 67.597969 -50.291875 
+z
+" style="stroke: #c8e8e0; stroke-opacity: 0.85"/>
+    </defs>
+    <g clip-path="url(#staircase-p7b8cb52975)">
+     <use xlink:href="#staircase-mcb0cb479c0" x="0" y="289.19952" style="fill: #c8e8e0; fill-opacity: 0.85; stroke: #c8e8e0; stroke-opacity: 0.85"/>
+    </g>
+   </g>
+   <g id="staircase-line2d_18">
+    <path d="M 67.597969 238.907645 
+L 89.281367 238.907645 
+L 89.281367 234.931307 
+L 110.964765 234.931307 
+L 110.964765 231.106449 
+L 132.648163 231.106449 
+L 132.648163 227.281591 
+L 154.331561 227.281591 
+L 154.331561 222.825568 
+L 176.014959 222.825568 
+L 176.014959 218.369546 
+L 197.698357 218.369546 
+L 197.698357 196.909946 
+L 219.381755 196.909946 
+L 219.381755 190.850765 
+L 241.065153 190.850765 
+L 241.065153 184.791584 
+L 262.74855 184.791584 
+L 262.74855 178.732403 
+L 284.431948 178.732403 
+L 284.431948 172.673221 
+L 306.115346 172.673221 
+L 306.115346 166.61404 
+L 327.798744 166.61404 
+L 327.798744 128.744158 
+L 349.482142 128.744158 
+L 349.482142 123.101546 
+L 371.16554 123.101546 
+L 371.16554 117.458933 
+L 392.848938 117.458933 
+L 392.848938 111.816321 
+L 414.532336 111.816321 
+L 414.532336 106.173709 
+L 436.215734 106.173709 
+L 436.215734 99.129911 
+L 457.899132 99.129911 
+L 457.899132 92.793017 
+L 479.58253 92.793017 
+L 479.58253 86.456123 
+L 501.265928 86.456123 
+L 501.265928 80.11923 
+L 522.949326 80.11923 
+L 522.949326 73.782336 
+L 544.632724 73.782336 
+L 544.632724 67.445443 
+L 566.316122 67.445443 
+L 566.316122 43.461184 
+L 587.99952 43.461184 
+L 587.99952 43.461184 
+" clip-path="url(#staircase-p7b8cb52975)" style="fill: none; stroke: #02796f; stroke-width: 2.7; stroke-linecap: square"/>
+   </g>
+   <g id="staircase-line2d_19">
+    <defs>
+     <path id="staircase-mefbf7ae38f" d="M 0 2 
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
+C 1.789267 1.03916 2 0.530406 2 0 
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214 
+C 1.03916 -1.789267 0.530406 -2 0 -2 
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214 
+C -1.789267 -1.03916 -2 -0.530406 -2 0 
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214 
+C -1.03916 1.789267 -0.530406 2 0 2 
+z
+" style="stroke: #02796f"/>
+    </defs>
+    <g clip-path="url(#staircase-p7b8cb52975)">
+     <use xlink:href="#staircase-mefbf7ae38f" x="176.014959" y="218.369546" style="fill: #02796f; stroke: #02796f"/>
+    </g>
+   </g>
+   <g id="staircase-line2d_20">
+    <g clip-path="url(#staircase-p7b8cb52975)">
+     <use xlink:href="#staircase-mefbf7ae38f" x="327.798744" y="128.744158" style="fill: #02796f; stroke: #02796f"/>
+    </g>
+   </g>
+   <g id="staircase-line2d_21">
+    <g clip-path="url(#staircase-p7b8cb52975)">
+     <use xlink:href="#staircase-mefbf7ae38f" x="566.316122" y="43.461184" style="fill: #02796f; stroke: #02796f"/>
+    </g>
+   </g>
+   <g id="staircase-patch_3">
+    <path d="M 67.597969 238.907645 
+L 67.597969 18 
+" style="fill: none; stroke: #cbd9d6; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="staircase-patch_4">
+    <path d="M 67.597969 238.907645 
+L 587.99952 238.907645 
+" style="fill: none; stroke: #cbd9d6; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="staircase-text_15">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #02796f" x="177.014959" y="208.369546" transform="rotate(-0 177.014959 208.369546)">1.63bn</text>
+   </g>
+   <g id="staircase-text_16">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #02796f" x="330.798744" y="117.744158" transform="rotate(-0 330.798744 117.744158)">8.73bn</text>
+   </g>
+   <g id="staircase-text_17">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #02796f" x="566.316122" y="35.461184" transform="rotate(-0 566.316122 35.461184)">15.48bn</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="staircase-p7b8cb52975">
+   <rect x="67.597969" y="18" width="520.401551" height="220.907645"/>
+  </clipPath>
+ </defs>
+</svg>
