@@ -1,0 +1,161 @@
+{
+  "date": "2026-11-19",
+  "timezone": "Europe/Dublin",
+  "run_type": "private_company_daily",
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "automation/private-company-2026-11-19",
+  "target_new_articles": 3,
+  "new_article_count_prepared": 2,
+  "canonical_updates_prepared": 1,
+  "confirmed_live_new_articles": 0,
+  "status": "prepared_pending_pr_ci",
+  "ads_policy": "Standard ad loader and CMP required at release for every published article and profile; no review-status based ad suppression",
+  "editorial_quality_gate": "Search intent deduplicated against 313 article index, recent IPO and GPT-6.2 general launch; new Astra legal benchmark analysis and 12 Nov ASV Alpha shipyard economics, plus update rather than duplicate Anthropic priced IPO story",
+  "prior_publication_recovery": {
+    "checked_dates": [
+      "2026-11-15",
+      "2026-11-16",
+      "2026-11-17",
+      "2026-11-18"
+    ],
+    "all_previously_confirmed_live": true,
+    "latest_site_run": 44257562032,
+    "latest_audit_job": 134644752851,
+    "latest_audit_passed_at": "2026-11-18T07:25:43Z",
+    "recovery_needed": false
+  },
+  "duplication_checks": {
+    "index_snapshot": "2026-11-19",
+    "openai": "Specific legal-model task-level ROI is distinct from general GPT-6.2 launch economics and 18 Nov NATO",
+    "anthropic": "18 Nov existing article already covers $83 pricing; update it using 18 Nov official final counts rather than duplicate a new IPO story",
+    "third_company": "Anduril new ship prototype and self-funded risk not represented in inventory",
+    "competing_workflows": "Checked 17-19 Nov recent PRs and new 18 Nov Mag 8/PIA overlap; avoid other company coverage"
+  },
+  "articles": [
+    {
+      "company": "OpenAI",
+      "slug": "openai",
+      "action": "new_article",
+      "event_date": "2026-11-17",
+      "article_path": "content/wealth/openai-astra-law-legal-benchmark-reliability-economics.md",
+      "story_fingerprint": "2026-11-17-astra-law-6-2-legal-benchmark-economics-not-general-model-pricing",
+      "primary_source_urls": [
+        "https://openai.com/index/astra-law-6-2/",
+        "https://openai.com/index/introducing-gpt-6-2-astra-sol/"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Supreme_Court_from_Library_of_Congress.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Supreme_Court_from_Library_of_Congress.jpg",
+      "photo_focal_y": 0.45,
+      "image_license": "CC0 1.0",
+      "photo_provenance": "Packer1028, United States Supreme Court seen from Library of Congress, archival 13 Jan 2023, image crop",
+      "claim_checks": [
+        "OpenAI 17 Nov release: Astra for Law 20.8% full credit on 120 LAB-AA cases, generic Astra 15.0%; 79.2% without full credit is complement, not global failure rate",
+        "OpenAI Vals separate benchmark: 112/208 = 53.8% full credit; benchmarks cannot be interchanged",
+        "OpenAI lists generic Astra 6.2 output price $40 per 1m tokens; 64k tokens costs $2.56 output only; this is not a quoted specialist price",
+        "Hypothetical hours: 3h baseline vs 0.75h run + 1.5h review = 0.75h saved per case; 100 cases 75h × €120 = €9,000 capacity"
+      ],
+      "canonical_url": "https://compound.ie/wealth/openai-astra-law-legal-benchmark-reliability-economics/",
+      "profile_url": "https://compound.ie/companies/openai/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "not_deployed",
+      "status": "prepared_pending_ci"
+    },
+    {
+      "company": "Anthropic",
+      "slug": "anthropic",
+      "action": "substantive_canonical_update",
+      "event_date": "2026-11-18",
+      "article_path": "content/wealth/anthropic-ipo-pricing-nasdaq.md",
+      "story_fingerprint": "2026-11-18-confirmed-anthropic-83-dollar-980m-ipo-price-primary-secondary-2026-11-19-update",
+      "primary_source_urls": [
+        "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Nasdaq_MarketSite_(51494550508).jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Nasdaq_MarketSite_%2851494550508%29.jpg",
+      "photo_focal_y": 0.45,
+      "image_license": "CC BY 2.0",
+      "photo_provenance": "Ajay Suresh / Wikimedia Commons, Nasdaq MarketSite photograph 19 Sept 2021, existing approved archival cover retained",
+      "claim_checks": [
+        "Anthropic 18 Nov announcement confirms $83/share, 980m base shares, 956,351,354 primary and 23,648,646 secondary; not an unverified newswire rumour",
+        "980m × 83 = $81.34bn gross; primary $79,377,162,382, secondary $1,962,837,618; plus optional 147m shares $12.201bn if fully exercised",
+        "Nov 19 trading only expected at pre-open research check; no claimed stock price, opening quote or guaranteed close",
+        "Update original 18 Nov canonical /news/anthropic-ipo-pricing-nasdaq/ not duplicate IPO story"
+      ],
+      "canonical_url": "https://compound.ie/news/anthropic-ipo-pricing-nasdaq/",
+      "profile_url": "https://compound.ie/companies/anthropic/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "not_deployed",
+      "status": "prepared_pending_ci"
+    },
+    {
+      "company": "Anduril Industries",
+      "slug": "anduril",
+      "action": "new_article",
+      "event_date": "2026-11-15",
+      "article_path": "content/wealth/anduril-hd-hyundai-asv-alpha-navy-procurement-economics.md",
+      "story_fingerprint": "2026-11-12-asv-alpha-hyundai-anduril-ship-launch-2026-11-15-publication-unawarded-contract-economics",
+      "primary_source_urls": [
+        "https://www.anduril.com/news/anduril-to-build-autonomous-warships",
+        "https://www.navalnews.com/naval-news/2026/11/hd-hhi-anduril-launch-600-ton-asv-alpha/",
+        "https://www.workboat.com/hd-hyundai-anduril-launch-autonomous-vessel",
+        "https://www.koreatimes.co.kr/business/20261115/hd-hyundai-launches-autonomous-vessel-developed-with-anduril"
+      ],
+      "image_source": "https://commons.wikimedia.org/wiki/File:Hyundai_Heavy_Industries_Ulsan_Shipyard_from_Jujeon_Beacon_Mound_-_2023-07-24.jpg",
+      "photo_download_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Hyundai_Heavy_Industries_Ulsan_Shipyard_from_Jujeon_Beacon_Mound_-_2023-07-24.jpg",
+      "photo_focal_y": 0.52,
+      "image_license": "CC0 1.0",
+      "photo_provenance": "Wvdp / Wikimedia Commons, HD Hyundai Heavy Industries Ulsan yard photographed 24 July 2023, archival cropped; NOT ASV Alpha",
+      "claim_checks": [
+        "Event: launch 12 Nov 2026, company disclosed 15 Nov, detailed trade reporting 16 Nov; not a new 19 Nov launch",
+        "Approx 600 tonne prototype with VAone vessel functions and Lattice mission control, tests South Korea then early 2027 USA; no completed 2027 tests",
+        "Anduril and HD Hyundai financed development without disclosed US Navy production order; no company contract price or per-unit margin verified",
+        "Hypothetical 20 × $60m = $1.2bn; 15% margin = $180m; 20 × $40m × 5% = $40m, neither actual company forecast"
+      ],
+      "canonical_url": "https://compound.ie/wealth/anduril-hd-hyundai-asv-alpha-navy-procurement-economics/",
+      "profile_url": "https://compound.ie/companies/anduril/",
+      "editorial_review_status": "pending",
+      "human_reviewed": false,
+      "cover_image_verified": false,
+      "social_image_verified": false,
+      "ads_presence_verified": false,
+      "live_http_verified": false,
+      "verified_live_result": null,
+      "deployment_status": "not_deployed",
+      "status": "prepared_pending_ci"
+    }
+  ],
+  "profile_updates": [
+    {
+      "slug": "openai",
+      "status": "new verified specialist legal release"
+    },
+    {
+      "slug": "anthropic",
+      "status": "18 Nov priced IPO official primary info; no unverified stock trading"
+    },
+    {
+      "slug": "anduril",
+      "status": "12 Nov ship launch, 15 Nov disclosure; no Navy production order"
+    }
+  ],
+  "production_deployment": {
+    "status": "not_started",
+    "confirmed_live_urls": 0,
+    "branch_protection": "historically unprotected; enforce exact-head test and performance CI; native branch rules recommended"
+  },
+  "updated_at_utc": "2026-11-19",
+  "live_verification_reconciled_on": null
+}
