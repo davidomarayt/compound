@@ -98,7 +98,8 @@
       "live_http_verified": false,
       "verified_live_result": null,
       "deployment_status": "not_deployed",
-      "status": "prepared_pending_ci"
+      "status": "prepared_pending_ci",
+      "live_required_fingerprint": "980 million-share base offering"
     },
     {
       "company": "Anduril Industries",
