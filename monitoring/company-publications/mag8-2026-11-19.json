@@ -1,0 +1,54 @@
+{
+  "series": "mag8",
+  "date": "2026-11-19",
+  "company": "Apple Inc.",
+  "ticker": "AAPL",
+  "selection": "Least recently featured in Mag8 ledger: 4 November; 18 November Lilly override completed yesterday.",
+  "status": "prepared",
+  "publication_state": "not_live",
+  "new_articles_published": 0,
+  "canonical_updates_published": 0,
+  "article_path": "content/wealth/apple-vendor-receivables-concentration.md",
+  "canonical_url": "https://compound.ie/wealth/apple-vendor-receivables-concentration/",
+  "story_fingerprint": "AAPL-FY2026-vendor-nontrade-receivables-counterparty-concentration",
+  "article_sha256": "49a2947f73105a72e9ae067d972dbf459bb4193ecdf190e79e22a83712aee83b",
+  "story_thesis": "Measure concentrated vendor receivables and reconcile the fourth-quarter working-capital use without implying default or double-subtracting cash flow.",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+    "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm",
+    "https://www.apple.com/ie/newsroom/2026/11/apple-reports-fourth-quarter-results/"
+  ],
+  "duplicate_checks": [
+    "Read AGENTS.md, editorial topic index, inventory and JSON; inspected Apple source articles and live commitments/profile pages; no existing vendor-receivable concentration analysis.",
+    "Enumerated past 14 days of source posts and publication ledgers. No 19 November Mag8 or legacy Mag7 article. Today company batch Cisco/Disney/Tyson; private batch OpenAI/Anduril and Anthropic update; Irish news and medication work distinct.",
+    "Recent/open Compound PRs and FairPath PRs checked: health guides, Anthropic lockup, PIA, SLAB, Irish household news and FairPath operator monitor/mealtime guide do not overlap.",
+    "Existing Apple supply-commitment piece concerns future purchases; this piece concerns amounts already owed to Apple and unidentified-counterparty concentration. Crosslinked, not repeated."
+  ],
+  "claim_checks": [
+    "10-K balance 39896m vs 33180m; June 10-Q 27509m. Change 12387m QoQ=45.0289%, YoY=20.2411%.",
+    "10-K shares 45%+27%=72%; June 47%+22%=69%; prior year 46%+23%=69%. Approx exposures 28725.12m,18981.21m,22894.2m; rounding and unknown vendor identity explicitly caveated.",
+    "Cash-flow statements: FY vendor movement -6716m minus nine-month +5671m = Q4 -12387m; independent balance difference +12387m. Not a loss/expense or gross purchases.",
+    "Official Q4 release separately confirms approx 28bn OCF; already includes receivables effect. 10% scenario 3989.6m labelled sensitivity, no forecast/default/overdue claim.",
+    "Note 4 component-sale accounting directly checked in both filings; annual risk section confirms unsecured balances. Fiscal periods and 3 November annual filing date checked."
+  ],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:A13_APL1W85_iPhone11_mlb_820-01523-A.jpg",
+    "credit": "Sonic8400",
+    "license": "CC BY-SA 4.0",
+    "capture_date": "2020-12-28",
+    "archival": true,
+    "qa": "Generated 16:9 and square crops visually inspected; Apple A13 and component board remain visible; no current-device claim."
+  },
+  "editorial_qa": {
+    "human_reviewed_by": null,
+    "human_reviewed_at": null,
+    "ads": "Standard advertising immediately, preserve consent; no human-review ad gate.",
+    "second_pass": "Recomputed all bridge arithmetic; read source disclosures separately from draft; checked accounting interpretation, uncertainty, originality, period labels, headings, links, metadata, licence and actual crops.",
+    "rendered": "Compound Research attribution and ad loader present; no invented human review.",
+    "release_gates_pending": [
+      "exact-head CI/full build",
+      "production deployment",
+      "live canonical, cover/social, profile ads/backlink, sitemap/discovery"
+    ]
+  }
+}
