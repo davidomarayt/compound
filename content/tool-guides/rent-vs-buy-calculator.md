@@ -393,3 +393,5 @@ The model is deterministic. It does not model investment tax separately, mortgag
 - [CCPC — Understanding mortgages](https://www.ccpc.ie/manage-your-money/buying-a-home/about-mortgages/understanding-mortgages)
 - [CCPC — Applying for a mortgage](https://www.ccpc.ie/manage-your-money/buying-a-home/about-mortgages/understanding-mortgages/applying-for-a-mortgage)
 - [Revenue — Stamp Duty property rates](https://www.revenue.ie/en/property/stamp-duty/property/stamp-duty-property/rates.aspx)
+
+Explore the [Ireland rent map](/ireland-rent-map/) to compare standardised monthly rents across local electoral areas.

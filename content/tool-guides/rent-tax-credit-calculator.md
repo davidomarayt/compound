@@ -108,3 +108,5 @@ The calculator applies the implemented annual credit limit to the qualifying ren
 
 - [Revenue — Rent Tax Credit](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/index.aspx)
 - [Revenue — How to claim Rent Tax Credit](https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/land-and-property/rent-credit/how-to-claim.aspx)
+
+Explore the [Ireland rent map](/ireland-rent-map/) to compare standardised monthly rents across local electoral areas.

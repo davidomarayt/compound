@@ -145,3 +145,5 @@ If you are comparing petrol, diesel, hybrid and EV options, calculate fuel/charg
 
 The biggest cost in motoring is often not the one shown at the pump.
 
+
+Explore the [Ireland rent map](/ireland-rent-map/) to compare standardised monthly rents across local electoral areas.
