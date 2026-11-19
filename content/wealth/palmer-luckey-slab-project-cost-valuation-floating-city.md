@@ -123,6 +123,8 @@ US offshore regulatory requirements depend on the facility's location and purpos
 
 ## Who could fund SLAB and what would make it investable?
 
+Our follow-up looks at [who could pay for SLAB’s first phase and what a customer contract would need to cover](/news/palmer-luckey-slab-first-customer-financing/).
+
 At an early stage, the venture could rely on founders and private backers. A large-scale facility might ultimately require infrastructure funds, strategic industrial partners, equipment finance, project debt or government-supported industrial arrangements. **None of those structures has been announced as a committed SLAB financing package.**
 
 Before treating the concept as a bankable investment, investors would need:
