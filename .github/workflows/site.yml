@@ -857,7 +857,8 @@ jobs:
           done
           grep -Fq 'Nvidia Q3 FY2027 Earnings (October 2026)' /tmp/seo-earnings-nvda.html
           grep -Fq 'Quarter ended 25 October 2026' /tmp/seo-earnings-nvda.html
-          grep -Fq 'Company results published 17 November 2026' /tmp/seo-earnings-nvda.html
+          grep -Fq 'SEC 8-K filed 17 November 2026' /tmp/seo-earnings-nvda.html
+          grep -Fq 'https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm' /tmp/seo-earnings-nvda.html
           grep -Fq 'Oracle Q1 FY2027 Earnings (August 2026)' /tmp/seo-earnings-orcl.html
           grep -Fq 'Quarter ended 31 August 2026' /tmp/seo-earnings-orcl.html
           grep -Fq 'Q3 FY2027 (October 2026)' /tmp/earnings-hub.html
