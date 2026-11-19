@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 328 published articles and guides, 69 tools,
+**Included:** 331 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -26,6 +26,7 @@ For the complete register (including 510+ company profiles), open
 - [Amazon’s advertising growth slowed. How much can Prime Day explain?](https://compound.ie/wealth/amazon-advertising-prime-day-timing/) — **Wealth**
 - [Amazon’s €16 billion Germany plan needs a return test](https://compound.ie/wealth/amazon-germany-investment-returns/) — **Wealth**
 - [American Express Earnings: Spending Holds Up, but Read the Profit Adjustments](https://compound.ie/wealth/american-express-earnings-spending-adjusted-profit/) — **Wealth**
+- [Amoxicillin in Ireland: how it works, prescriptions and penicillin allergy](https://compound.ie/health/medicines/amoxicillin/) — **Health**
 - [An Post now lets you send small tracked parcels from 2,600 postboxes](https://compound.ie/news/an-post-postbox-drop-off-small-parcels-2026/) — **Wealth**
 - [Anduril and HD Hyundai Built a 600-Tonne Autonomous Ship. Who Will Pay for a Fleet?](https://compound.ie/wealth/anduril-hd-hyundai-asv-alpha-navy-procurement-economics/) — **Wealth**
 - [Anthropic IPO by the Numbers: The $61 Billion Share Sale, $900 Billion Compute Bet and Valuation Test](https://compound.ie/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/) — **Wealth**
@@ -191,6 +192,7 @@ For the complete register (including 510+ company profiles), open
 - [Meta Stock Guide: Advertising, AI, Reality Labs and Valuation](https://compound.ie/wealth/meta-ai-advertising-returns-2026/) — **Wealth**
 - [Meta's advertising engine is growing. Is enough cash reaching shareholders?](https://compound.ie/wealth/meta-advertising-growth-ai-cash-flow/) — **Wealth**
 - [Meta's Reality Labs lost less. What did the Quest business contribute?](https://compound.ie/wealth/meta-reality-labs-loss-bridge/) — **Wealth**
+- [Metformin in Ireland: how it works, slow-release tablets and side effects](https://compound.ie/health/medicines/metformin/) — **Health**
 - [Michael Carrick Sacked? Manchester United Exit Reports and the Financial Risk for $MANU](https://compound.ie/news/michael-carrick-sacked-manchester-united-manu-stock/) — **Wealth**
 - [Microsoft 365 outage: Outlook and Teams disruption continues into Friday](https://compound.ie/news/microsoft-365-outage-outlook-teams-november-13-2026/) — **Wealth**
 - [Microsoft Stock Guide: Azure, Software, AI and Cash Flow](https://compound.ie/wealth/microsoft-azure-ai-returns-2026/) — **Wealth**
@@ -271,6 +273,7 @@ For the complete register (including 510+ company profiles), open
 - [Robinhood Hits Record Revenue as Prediction Markets Overtake Crypto—but Earnings Fall](https://compound.ie/wealth/robinhood-earnings-prediction-markets-profit/) — **Wealth**
 - [RSUs & Share Options Tax in Ireland: How the Tax Works](https://compound.ie/wealth/rsu-share-options-tax-ireland/) — **Wealth**
 - [Rural House Planning Permission Ireland: One-Off Houses & Local Need](https://compound.ie/wealth/rural-one-off-house-planning-ireland/) — **Wealth**
+- [Salbutamol inhalers in Ireland: how Ventolin works and when to get help](https://compound.ie/health/medicines/salbutamol/) — **Health**
 - [Sale Agreed in Ireland: Survey, Valuation and Property Checks](https://compound.ie/wealth/sale-agreed-survey-valuation-ireland/) — **Wealth**
 - [Sandisk Earnings: AI Storage Surges as an Eight-for-One Split Approaches](https://compound.ie/wealth/sandisk-earnings-ai-storage-stock-split/) — **Wealth**
 - [Saving for your child in Ireland: tax, ownership and what happens at 18](https://compound.ie/wealth/saving-for-your-child-ireland/) — **Wealth**

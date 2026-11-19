@@ -253,6 +253,22 @@
         "status": "published"
       },
       {
+        "title": "Amoxicillin in Ireland: how it works, prescriptions and penicillin allergy",
+        "url": "/health/medicines/amoxicillin/",
+        "source": "content/health/amoxicillin.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "amoxicillin",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "antibiotics",
+          "amoxicillin"
+        ],
+        "status": "published"
+      },
+      {
         "title": "An Post now lets you send small tracked parcels from 2,600 postboxes",
         "url": "/news/an-post-postbox-drop-off-small-parcels-2026/",
         "source": "content/wealth/an-post-postbox-drop-off-small-parcels-2026.md",
@@ -3476,6 +3492,22 @@
         "status": "published"
       },
       {
+        "title": "Metformin in Ireland: how it works, slow-release tablets and side effects",
+        "url": "/health/medicines/metformin/",
+        "source": "content/health/metformin.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "metformin",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "diabetes",
+          "metformin"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Michael Carrick Sacked? Manchester United Exit Reports and the Financial Risk for $MANU",
         "url": "/news/michael-carrick-sacked-manchester-united-manu-stock/",
         "source": "content/wealth/michael-carrick-sacked-manchester-united-manu-stock.md",
@@ -5085,6 +5117,23 @@
           "local-need",
           "self-build",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Salbutamol inhalers in Ireland: how Ventolin works and when to get help",
+        "url": "/health/medicines/salbutamol/",
+        "source": "content/health/salbutamol.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "salbutamol",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "inhalers",
+          "salbutamol",
+          "asthma"
         ],
         "status": "published"
       },

@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 328
+- Published editorial articles and guides: 331
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -18,8 +18,9 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - Private-company directory profiles: 13
 - Draft or unpublished editorial files: 0
 
-## Health articles and guides — 32
+## Health articles and guides — 35
 
+- [Amoxicillin in Ireland: how it works, prescriptions and penicillin allergy](https://compound.ie/health/medicines/amoxicillin/)
 - [Budget 2027 gives health €29.1bn. So why aren’t Mounjaro and Wegovy funded for obesity?](https://compound.ie/news/budget-2027-obesity-mounjaro-wegovy-ireland/)
 - [Cetirizine in Ireland: what it’s used for and can it make you drowsy?](https://compound.ie/health/medicines/cetirizine/)
 - [Creatine in Ireland: what it does, how to take it and what to watch](https://compound.ie/health/creatine-benefits-dosage-safety-ireland/)
@@ -40,10 +41,12 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Live to 100: What a 100-Year Life Would Really Mean in Ireland](https://compound.ie/live-to-100/)
 - [Looksmaxxing: What the Internet Promises Men — and What the Science Actually Says](https://compound.ie/health/looksmaxxing-science-male-attractiveness/)
 - [Macronutrients and micronutrients: a complete guide for Ireland](https://compound.ie/health/macronutrients-micronutrients-guide-ireland/)
+- [Metformin in Ireland: how it works, slow-release tablets and side effects](https://compound.ie/health/medicines/metformin/)
 - [Ozempic, Wegovy & Mounjaro: medical card cover in Ireland](https://compound.ie/health/glp1-hse-medical-card-ireland/)
 - [Pregnancy week by week in Ireland: GP, hospital and scan schedule](https://compound.ie/health/pregnancy-week-by-week-ireland-appointments/)
 - [Prescription opioid use rises more than 10% under Ireland's medical card scheme](https://compound.ie/news/prescription-opioid-use-ireland-gms-2026/)
 - [Retatrutide Ireland: what is it, can you get it, and how does it compare with Mounjaro, Wegovy and Ozempic?](https://compound.ie/health/retatrutide-ireland/)
+- [Salbutamol inhalers in Ireland: how Ventolin works and when to get help](https://compound.ie/health/medicines/salbutamol/)
 - [Standard drinks in Ireland: what a pint, glass of wine and spirit actually count as](https://compound.ie/health/standard-drinks-ireland-pints-wine-spirits/)
 - [The rise of GLP-1 medicines in Ireland: what the evidence says](https://compound.ie/health/glp1-medicines-ireland-rise-evidence/)
 - [Vitamin D in winter: who in Ireland should take a supplement](https://compound.ie/health/vitamin-d-ireland-winter-who-should-take-it/)
