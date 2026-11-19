@@ -316,6 +316,8 @@ class Article:
     related_tools: list[str] = field(default_factory=list)
     research_review_pending: bool = False
     research_checked: date | None = None
+    medicine_index_name: str = ""
+    medicine_search_aliases: list[str] = field(default_factory=list)
 
     @property
     def body_with_charts(self) -> str:
@@ -589,6 +591,8 @@ def article_from_file(path: Path, *, include_drafts: bool = False) -> Article | 
         publication_status=status,
         research_review_pending=meta.get("editorial_review_status") == "pending",
         research_checked=_as_date(meta["research_checked"]) if meta.get("research_checked") else None,
+        medicine_index_name=str(meta.get("medicine_index_name") or ""),
+        medicine_search_aliases=[str(alias) for alias in (meta.get("medicine_search_aliases") or [])],
         canonical_path=canonical_path,
         seo_title=str(meta.get("seo_title") or ""),
         reviewed=_as_date(meta["reviewed"]) if meta.get("reviewed") else None,
@@ -1686,6 +1690,8 @@ def build_site(settings: Settings) -> dict:
                env.get_template("medicines.html").render(
                    title="Common Medicines in Ireland", pillar="health",
                    medicines_hub_url=medicines_hub_url, guides=medicine_guides,
+                   az_guides=sorted((guide for guide in medicine_guides if guide.medicine_index_name),
+                                    key=lambda guide: guide.medicine_index_name.casefold()),
                    oral_glp_guide=next((a for a in by_pillar["health"]
                                        if a.slug == "oral-glp-1-medicines-ireland"), None)))
 

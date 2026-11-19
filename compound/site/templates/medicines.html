@@ -13,7 +13,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":{{ (site_url ~ '/')|tojson }}},{"@type":"ListItem","position":2,"name":"Health","item":{{ (site_url ~ '/health/')|tojson }}},{"@type":"ListItem","position":3,"name":"Common Medicines","item":{{ hub_url|tojson }}}]}</script>
 {% endblock %}
 {% block post_styles %}
-<link rel="stylesheet" href="/static/medicines.css?v=4">
+<link rel="stylesheet" href="/static/medicines.css?v=5">
 <script defer src="/static/medicines.js?v=2"></script>
 {% endblock %}
 {% block content %}
@@ -54,8 +54,20 @@
         <p role="status" class="medicines-guide-count" data-medicine-count>{{ guides|length }} {{ 'guide' if guides|length == 1 else 'guides' }}</p>
       </div>
       <div id="medicine-guides">
+        {% if az_guides %}
+        <section class="medicines-group" id="medicines-a-z" aria-labelledby="medicines-a-z-heading" data-medicine-group>
+          <h3 id="medicines-a-z-heading">Medicines A–Z</h3>
+          <ul class="medicines-az-list">
+          {% for guide in az_guides %}
+            <li data-medicine-guide data-search="{{ guide.medicine_index_name }} {{ guide.medicine_search_aliases|join(' ') }}">
+              <a href="{{ guide.url }}"><strong>{{ guide.medicine_index_name }}</strong><span>{{ guide.summary }}</span></a>
+            </li>
+          {% endfor %}
+          </ul>
+        </section>
+        {% endif %}
         {% set groups = namespace(glp=[], other=[]) %}
-        {% for guide in guides %}
+        {% for guide in guides if not guide.medicine_index_name %}
           {% if 'glp-1' in guide.tags %}
             {% set groups.glp = groups.glp + [guide] %}
           {% else %}

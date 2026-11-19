@@ -6,27 +6,41 @@ canonical_path: /health/medicines/metformin/
 date: '2026-11-19'
 research_checked: '2026-11-19'
 editorial_review_status: pending
-summary: 'Learn how metformin lowers blood glucose, how standard and slow-release tablets differ, and what to discuss with your pharmacist or GP.'
-meta_description: 'An Irish adult guide to metformin for type 2 diabetes, how it works, standard versus slow-release tablets, side effects and when to ask for help.'
-tags: [medicines, diabetes, metformin]
+summary: Learn how metformin lowers blood glucose, how standard and slow-release tablets differ, and what to discuss
+  with your pharmacist or GP.
+meta_description: An Irish adult guide to metformin for type 2 diabetes, how it works, standard versus slow-release
+  tablets, side effects and when to ask for help.
+tags:
+- medicines
+- diabetes
+- metformin
 image: /static/images/evergreen/metformin-guide.jpg
-image_alt: 'Photograph of metformin 500 mg tablets'
-image_credit: 'Ash, 2007 · public domain · cropped'
+image_alt: Photograph of metformin 500 mg tablets
+image_credit: Ash, 2007 · public domain · cropped
 image_source: https://commons.wikimedia.org/wiki/File:Metformin_500mg_Tablets.jpg
 require_pinned_hero: true
 sources:
-- title: 'HSE | About metformin'
+- title: HSE | About metformin
   url: https://www2.hse.ie/medicines/metformin/about-metformin/
-- title: 'HSE | How and when to take metformin'
+- title: HSE | How and when to take metformin
   url: https://www2.hse.ie/medicines/metformin/how-and-when-to-take-metformin/
-- title: 'HSE | Side effects of metformin'
+- title: HSE | Side effects of metformin
   url: https://www2.hse.ie/medicines/metformin/side-effects-of-metformin/
-- title: 'HPRA | Metformin prescribing information, section 5.1'
+- title: HPRA | Metformin prescribing information, section 5.1
   url: https://assets.hpra.ie/products/Human/41736/Licence_PA1567-009-002_10042026154603.pdf
-- title: 'HPRA | Yaltormin SR prolonged-release prescribing information'
+- title: HPRA | Yaltormin SR prolonged-release prescribing information
   url: https://assets.hpra.ie/products/Human/26561/Licence_PA0281-241-001_10122021143143.pdf
-- title: 'Rena, Hardie and Pearson | The mechanisms of action of metformin'
+- title: Rena, Hardie and Pearson | The mechanisms of action of metformin
   url: https://link.springer.com/article/10.1007/s00125-017-4342-z
+- title: HSE | Metformin
+  url: https://www2.hse.ie/medicines/metformin/
+- title: DailyMed | Metformin Hcl Tablet (US label)
+  url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=235680e6-1c3e-45b8-902e-866583f1aef3
+medicine_index_name: Metformin
+medicine_search_aliases:
+- Glucophage
+- type 2 diabetes
+- HbA1c
 ---
 
 **Metformin is a prescription medicine that helps lower blood glucose in type 2 diabetes.** It acts partly by reducing how much glucose the liver makes. It comes in standard and prolonged-release forms, with different instructions depending on the product and your prescription. [HSE metformin guide](https://www2.hse.ie/medicines/metformin/) · [HPRA prescribing information](https://assets.hpra.ie/products/Human/41736/Licence_PA1567-009-002_10042026154603.pdf)
@@ -36,6 +50,10 @@ sources:
 Your liver releases glucose into the blood between meals. Metformin reduces **hepatic glucose production**, meaning the amount of glucose the liver makes. It can also improve glucose uptake in tissues beyond the liver and change how the gut handles glucose. It lowers blood glucose without directly stimulating the pancreas to release insulin. [HPRA prescribing information, section 5.1](https://assets.hpra.ie/products/Human/41736/Licence_PA1567-009-002_10042026154603.pdf)
 
 The molecular explanation is still being worked out. One line of research looks at **AMPK**, an enzyme that helps cells respond to changes in their energy supply. Other studies find effects that occur without AMPK, including changes in how cells produce energy and how the gut handles glucose. The clinical effect on blood glucose is established. Researchers are still working out which pathways account for it at the doses people take. [Diabetologia review](https://link.springer.com/article/10.1007/s00125-017-4342-z)
+
+### Glucose production in the liver, gut effects and monitoring
+
+Metformin reduces glucose output by the liver, and its effects also involve the gut and insulin-sensitive metabolism. Multiple cellular pathways have been proposed. Its action generally does not directly stimulate the pancreas to release insulin, which helps explain why hypoglycaemia is uncommon when metformin is used on its own. [DailyMed source](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=235680e6-1c3e-45b8-902e-866583f1aef3)
 
 ## How do standard and slow-release tablets differ?
 
@@ -53,3 +71,23 @@ Nausea, diarrhoea, stomach discomfort and loss of appetite can occur, especially
 If you are dehydrated because of severe vomiting or diarrhoea, the HSE advises you to **stop taking metformin temporarily and contact your GP urgently**. Get emergency help if severe tiredness comes with trouble breathing, feeling very cold or vomiting. These can be signs of **lactic acidosis**, a rare and serious complication. [HSE urgent and emergency advice](https://www2.hse.ie/medicines/metformin/side-effects-of-metformin/)
 
 [Browse all Common Medicines guides](/health/medicines/).
+
+## What the evidence measures
+
+HbA1c summarises longer-term exposure to glucose, while finger-prick measurements answer a more immediate question. Kidney function, gastrointestinal tolerability and possible vitamin B12 deficiency are separate review points.
+
+## What each check can tell you
+
+| What to check | Why it matters |
+|---|---|
+| HbA1c | longer-term glucose pattern |
+| Kidney function and B12 | suitability and potential adverse effects |
+
+
+## Why does the release formulation matter?
+
+Immediate-release and modified-release products deliver metformin at different rates. Take the exact packs to a review if stomach symptoms began after a change.
+
+## Related guides
+
+[Semaglutide](/health/medicines/semaglutide/) · [Tirzepatide](/health/medicines/tirzepatide/) · [How to find the Irish patient leaflet](/health/medicines/how-to-find-your-patient-information-leaflet-online/)

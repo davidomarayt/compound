@@ -108,6 +108,36 @@
   text-underline-offset: .18em;
 }
 
+.medicines-az-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
+  gap: .5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.medicines-az-list a {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  height: 100%;
+  padding: .7rem .85rem;
+  border: 1px solid var(--medicines-line);
+  border-radius: .55rem;
+  background: var(--surface);
+  line-height: 1.35;
+}
+
+.medicines-az-list a:hover strong {
+  text-decoration: underline;
+}
+
+.medicines-az-list span {
+  color: var(--muted);
+  font-size: .875rem;
+}
+
 .medicines-guides {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

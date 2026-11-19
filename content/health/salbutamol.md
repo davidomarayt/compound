@@ -6,23 +6,34 @@ canonical_path: /health/medicines/salbutamol/
 date: '2026-11-19'
 research_checked: '2026-11-19'
 editorial_review_status: pending
-summary: 'What a salbutamol reliever inhaler does, how it opens the airways, how it differs from a preventer and when breathing symptoms need urgent help.'
-meta_description: 'An Irish adult guide to salbutamol and Ventolin, how a reliever inhaler opens the airways, how it differs from a preventer and when to seek help.'
-tags: [medicines, inhalers, salbutamol, asthma]
+summary: What a salbutamol reliever inhaler does, how it opens the airways, how it differs from a preventer and
+  when breathing symptoms need urgent help.
+meta_description: An Irish adult guide to salbutamol and Ventolin, how a reliever inhaler opens the airways, how
+  it differs from a preventer and when to seek help.
+tags:
+- medicines
+- inhalers
+- salbutamol
+- asthma
 image: /static/images/evergreen/salbutamol-guide.jpg
-image_alt: 'Photograph of a blue Ventolin salbutamol inhaler'
-image_credit: 'Tomino de WS, 2021 · CC BY-SA 4.0 · cropped'
+image_alt: Photograph of a blue Ventolin salbutamol inhaler
+image_credit: Tomino de WS, 2021 · CC BY-SA 4.0 · cropped
 image_source: https://commons.wikimedia.org/wiki/File:Ventolin_Inhaler_N_100_ug_inh.jpg
 require_pinned_hero: true
 sources:
-- title: 'HSE | Salbutamol inhaler'
+- title: HSE | Salbutamol inhaler
   url: https://www2.hse.ie/medicines/salbutamol-inhaler/
-- title: 'HSE | Treating asthma and choosing inhalers'
+- title: HSE | Treating asthma and choosing inhalers
   url: https://www2.hse.ie/conditions/asthma/treating-asthma/
-- title: 'HSE | Asthma attacks in adults'
+- title: HSE | Asthma attacks in adults
   url: https://www2.hse.ie/conditions/asthma/asthma-attacks/
-- title: 'HPRA | Ventolin Evohaler prescribing information'
+- title: HPRA | Ventolin Evohaler prescribing information
   url: https://assets.hpra.ie/products/Human/24543/Licence_PA1077-049-010_03032026105901.pdf
+medicine_index_name: Salbutamol inhaler
+medicine_search_aliases:
+- Ventolin
+- albuterol
+- asthma
 ---
 
 **Salbutamol is a fast-acting reliever inhaler that widens the airways.** It can ease wheezing, coughing and breathlessness caused by narrowing of the airways in asthma or chronic obstructive pulmonary disease (COPD). In Ireland it is supplied on prescription. Ventolin and Salamol are examples of brand names. [HSE salbutamol guide](https://www2.hse.ie/medicines/salbutamol-inhaler/)
@@ -37,6 +48,10 @@ Salbutamol activates **beta-2 adrenergic receptors** on the smooth muscle that w
   <img src="/static/images/evergreen/salbutamol-airways.png" width="960" height="410" loading="lazy" alt="Two airway cross-sections show a smaller opening when smooth muscle tightens and a wider opening after the muscle relaxes.">
   <figcaption>Airway cross-sections showing the effect of smooth muscle relaxation. Schematic, dimensions are illustrative. <a href="https://www2.hse.ie/medicines/salbutamol-inhaler/">HSE source</a></figcaption>
 </figure>
+
+### Beta-2 receptors, a fast airway response and inhaler technique
+
+Salbutamol activates beta-2 receptors in airway smooth muscle. That raises cyclic AMP and reduces the force with which the muscle contracts. The airway can open relatively quickly if the medicine reaches it. Tremor and a fast heartbeat are examples of effects that can occur beyond the lung. [HSE source](https://www2.hse.ie/medicines/salbutamol-inhaler/)
 
 ## What is the difference between a reliever and a preventer?
 
@@ -53,3 +68,23 @@ Shaky hands, headache or a faster heartbeat can occur. Ask a pharmacist or GP if
 [Browse all Common Medicines guides](/health/medicines/).
 
 *Cover photograph and cropped versions licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).*
+
+## What the evidence measures
+
+Relief of tightness is one outcome. Frequency of symptoms, urgent visits and attacks measures a different aspect of control. Regular reliance on a reliever can be a reason to review the broader plan and inhaler technique.
+
+## Bring the inhaler to a technique check
+
+| What to check | Why it matters |
+|---|---|
+| Device | demonstrate how you take a normal puff |
+| Record | share symptom frequency and when you needed a reliever |
+
+
+## Can an inhaler problem look like a medicine problem?
+
+A depleted device, technique problems or a mismatch between device and breathing pattern can affect delivery. Demonstrating actual use helps the clinician decide what needs to change.
+
+## Related guides
+
+[Bronchodilators](/health/medicines/bronchodilators/) · [Steroid inhalers](/health/medicines/steroid-inhalers/) · [How to find the Irish patient leaflet](/health/medicines/how-to-find-your-patient-information-leaflet-online/)
