@@ -7441,6 +7441,12 @@
         "kind": "Information / policy page"
       },
       {
+        "title": "Irish sun path explorer",
+        "url": "/sun-path-explorer/",
+        "source": "content/pages/sun-path-explorer.md",
+        "kind": "Information / policy page"
+      },
+      {
         "title": "Life",
         "url": "/life/",
         "source": "content/pages/life.md",
@@ -7462,6 +7468,12 @@
         "title": "Privacy policy",
         "url": "/privacy/",
         "source": "content/pages/privacy.md",
+        "kind": "Information / policy page"
+      },
+      {
+        "title": "Rent and commute map of Ireland",
+        "url": "/rent-commute-map/",
+        "source": "content/pages/rent-commute-map.md",
         "kind": "Information / policy page"
       },
       {
