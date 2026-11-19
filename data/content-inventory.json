@@ -4312,6 +4312,23 @@
         "status": "published"
       },
       {
+        "title": "Oral GLP-1 medicines in Ireland: Foundayo, Wegovy tablets and Rybelsus",
+        "url": "/health/oral-glp-1-medicines-ireland/",
+        "source": "content/health/oral-glp-1-medicines-ireland.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "oral-glp-1-medicines-ireland",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "glp-1",
+          "semaglutide",
+          "orforglipron"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Ozempic, Wegovy & Mounjaro: medical card cover in Ireland",
         "url": "/health/glp1-hse-medical-card-ireland/",
         "source": "content/health/glp1-hse-medical-card-ireland.md",
@@ -6122,6 +6139,22 @@
           "medicines",
           "digestive-health",
           "omeprazole"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "What is orforglipron? How the Foundayo GLP-1 tablet works",
+        "url": "/health/medicines/orforglipron/",
+        "source": "content/health/orforglipron.md",
+        "kind": "Editorial article / guide",
+        "category": "Health",
+        "slug": "orforglipron",
+        "date": "2026-11-19",
+        "reviewed": "",
+        "tags": [
+          "medicines",
+          "glp-1",
+          "orforglipron"
         ],
         "status": "published"
       },

@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 334
+- Published editorial articles and guides: 336
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -18,7 +18,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - Private-company directory profiles: 13
 - Draft or unpublished editorial files: 0
 
-## Health articles and guides — 38
+## Health articles and guides — 40
 
 - [Amoxicillin in Ireland: how it works, prescriptions and penicillin allergy](https://compound.ie/health/medicines/amoxicillin/)
 - [Budget 2027 gives health €29.1bn. So why aren’t Mounjaro and Wegovy funded for obesity?](https://compound.ie/news/budget-2027-obesity-mounjaro-wegovy-ireland/)
@@ -45,6 +45,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Looksmaxxing: What the Internet Promises Men — and What the Science Actually Says](https://compound.ie/health/looksmaxxing-science-male-attractiveness/)
 - [Macronutrients and micronutrients: a complete guide for Ireland](https://compound.ie/health/macronutrients-micronutrients-guide-ireland/)
 - [Metformin in Ireland: how it works, slow-release tablets and side effects](https://compound.ie/health/medicines/metformin/)
+- [Oral GLP-1 medicines in Ireland: Foundayo, Wegovy tablets and Rybelsus](https://compound.ie/health/oral-glp-1-medicines-ireland/)
 - [Ozempic, Wegovy & Mounjaro: medical card cover in Ireland](https://compound.ie/health/glp1-hse-medical-card-ireland/)
 - [Pregnancy week by week in Ireland: GP, hospital and scan schedule](https://compound.ie/health/pregnancy-week-by-week-ireland-appointments/)
 - [Prescription opioid use rises more than 10% under Ireland's medical card scheme](https://compound.ie/news/prescription-opioid-use-ireland-gms-2026/)
@@ -56,6 +57,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [What happens when you stop taking a GLP-1 medicine?](https://compound.ie/health/stopping-glp1-weight-regain/)
 - [What is ibuprofen? Uses, adult doses and safety in Ireland](https://compound.ie/health/medicines/ibuprofen/)
 - [What is omeprazole? Uses, side effects and how long it takes to work](https://compound.ie/health/medicines/omeprazole/)
+- [What is orforglipron? How the Foundayo GLP-1 tablet works](https://compound.ie/health/medicines/orforglipron/)
 - [What is paracetamol? Uses, adult doses and safety in Ireland](https://compound.ie/health/medicines/paracetamol/)
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/)
 

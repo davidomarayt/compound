@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 334 published articles and guides, 69 tools,
+**Included:** 336 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -233,6 +233,7 @@ For the complete register (including 510+ company profiles), open
 - [OpenAI's ChatGPT Wallet Can Complete a Purchase. Can Merchants Trust the Checkout?](https://compound.ie/wealth/openai-chatgpt-wallet-agentic-checkout-economics/) — **Wealth**
 - [OpenAI's Hacktron Partnership Puts Agent Security at the Integration Layer](https://compound.ie/wealth/openai-hacktron-agent-security-third-party-risk/) — **Wealth**
 - [OpenAI's LVMH Media Deal Has Two Business Models: Newsroom AI and Reader Distribution](https://compound.ie/wealth/openai-lvmh-media-chatgpt-news-distribution-economics/) — **Wealth**
+- [Oral GLP-1 medicines in Ireland: Foundayo, Wegovy tablets and Rybelsus](https://compound.ie/health/oral-glp-1-medicines-ireland/) — **Health**
 - [Ozempic, Wegovy & Mounjaro: medical card cover in Ireland](https://compound.ie/health/glp1-hse-medical-card-ireland/) — **Health**
 - [Padel in Ireland: Rules, Courts, Costs & How to Start Playing](https://compound.ie/life/padel-ireland/) — **Life**
 - [Palmer Luckey's SLAB Project: $1B Valuation, Costs and Floating City Economics](https://compound.ie/news/palmer-luckey-slab-project-cost-valuation-floating-city/) — **Wealth**
@@ -326,6 +327,7 @@ For the complete register (including 510+ company profiles), open
 - [What Is a REIT? How Property Investing Can Generate Income and Growth](https://compound.ie/wealth/what-is-a-reit/) — **Wealth**
 - [What is ibuprofen? Uses, adult doses and safety in Ireland](https://compound.ie/health/medicines/ibuprofen/) — **Health**
 - [What is omeprazole? Uses, side effects and how long it takes to work](https://compound.ie/health/medicines/omeprazole/) — **Health**
+- [What is orforglipron? How the Foundayo GLP-1 tablet works](https://compound.ie/health/medicines/orforglipron/) — **Health**
 - [What is paracetamol? Uses, adult doses and safety in Ireland](https://compound.ie/health/medicines/paracetamol/) — **Health**
 - [What lethal injection drugs actually do to the body: the science of pentobarbital](https://compound.ie/news/lethal-injection-drugs-pentobarbital-science/) — **Health**
 - [What would an extra €100 a month do to your mortgage?](https://compound.ie/wealth/mortgage-overpayments-100-euro-ireland/) — **Wealth**
