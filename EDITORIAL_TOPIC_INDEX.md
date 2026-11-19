@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 313 published articles and guides, 67 tools,
+**Included:** 313 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -337,6 +337,7 @@ For the complete register (including 510+ company profiles), open
 - [Car Finance Calculator Ireland — Loan vs PCP vs Hire Purchase](https://compound.ie/car-finance-calculator/) — **EV & Motoring**
 - [Childcare Cost Calculator Ireland](https://compound.ie/childcare-cost-calculator/) — **Family & Life Planning**
 - [Childcare Cost vs Returning to Work Calculator Ireland](https://compound.ie/childcare-return-to-work-calculator/) — **Family & Life Planning**
+- [College Cost Calculator Ireland](https://compound.ie/college-cost-calculator/) — **Family & Life Planning**
 - [Compound Interest Calculator Ireland](https://compound.ie/compound-interest-calculator/) — **Pensions & Investing**
 - [Contractor Day Rate vs Salary Calculator Ireland 2026](https://compound.ie/contractor-vs-salary-calculator/) — **Tax & Take-Home Pay**
 - [Critical Illness Cover Calculator Ireland](https://compound.ie/critical-illness-cover-calculator/) — **Insurance**
@@ -354,6 +355,7 @@ For the complete register (including 510+ company profiles), open
 - [GLP-1 Cost Calculator Ireland](https://compound.ie/glp1-cost-calculator-ireland/) — **Health**
 - [Health Insurance Cost Comparison Calculator Ireland](https://compound.ie/health-insurance-cost-comparison-calculator/) — **Insurance**
 - [Help to Buy Calculator Ireland](https://compound.ie/help-to-buy-calculator/) — **Mortgages & Home Buying**
+- [Home Care Cost Calculator Ireland](https://compound.ie/home-care-cost-calculator/) — **Family & Life Planning**
 - [Home Insurance Rebuild Cost Calculator Ireland](https://compound.ie/home-insurance-rebuild-cost-calculator/) — **Insurance**
 - [House Buying Costs Calculator Ireland](https://compound.ie/house-buying-costs-calculator/) — **Mortgages & Home Buying**
 - [House Deposit Calculator Ireland](https://compound.ie/house-deposit-calculator/) — **Mortgages & Home Buying**

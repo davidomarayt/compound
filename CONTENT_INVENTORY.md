@@ -10,8 +10,8 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 - Published editorial articles and guides: 313
 - Existing automated/legacy earnings source files: 11
-- Tools and calculators: 67
-- Embedded tool-guide files: 60
+- Tools and calculators: 69
+- Embedded tool-guide files: 62
 - Information and policy pages: 27
 - Main hubs: 11
 - Public-company directory profiles: 511
@@ -356,7 +356,7 @@ Some old quarterly article routes are now redirects to continuous company profil
 - [Nike, Inc. (NKE) Earnings: FY 2027 Q1 Revenue, Profit and EPS](https://compound.ie/wealth/earnings/nke-earnings-fy2027-q1/) | source: content/wealth/nke-earnings-fy2027-q1.md
 - [PepsiCo (PEP) Earnings: FY 2026 Q3 Revenue, Profit and EPS](https://compound.ie/wealth/earnings/pep-earnings-fy2026-q3/) | source: content/wealth/pep-earnings-fy2026-q3.md
 
-## Interactive calculators and tools — 67
+## Interactive calculators and tools — 69
 
 ### EV & Motoring — 3
 
@@ -364,11 +364,13 @@ Some old quarterly article routes are now redirects to continuous company profil
 - [EV Charging Cost Calculator Ireland](https://compound.ie/ev-charging-cost-calculator/) | includes embedded guide
 - [Fuel Cost Calculator Ireland](https://compound.ie/fuel-cost-calculator/) | includes embedded guide
 
-### Family & Life Planning — 6
+### Family & Life Planning — 8
 
 - [Childcare Cost Calculator Ireland](https://compound.ie/childcare-cost-calculator/) | includes embedded guide
 - [Childcare Cost vs Returning to Work Calculator Ireland](https://compound.ie/childcare-return-to-work-calculator/) | includes embedded guide
+- [College Cost Calculator Ireland](https://compound.ie/college-cost-calculator/) | includes embedded guide
 - [Funeral Cost Calculator Ireland](https://compound.ie/funeral-cost-calculator/) | includes embedded guide
+- [Home Care Cost Calculator Ireland](https://compound.ie/home-care-cost-calculator/) | includes embedded guide
 - [Lifetime Cost Calculator Ireland](https://compound.ie/lifetime-cost-calculator/) | includes embedded guide
 - [Nursing Home Cost Calculator Ireland](https://compound.ie/nursing-home-cost-calculator/) | includes embedded guide
 - [Pregnancy Due Date & Timeline Calculator Ireland](https://compound.ie/pregnancy-due-date-calculator/) | includes embedded guide
@@ -452,7 +454,7 @@ Some old quarterly article routes are now redirects to continuous company profil
 - [USC Calculator Ireland 2027](https://compound.ie/usc-calculator/) | includes embedded guide
 - [VAT Calculator Ireland 2026](https://compound.ie/vat-calculator/) | includes embedded guide
 
-## Supporting tool explainer files — 60
+## Supporting tool explainer files — 62
 
 Each entry lives within its corresponding calculator page; it is not a second standalone article.
 
@@ -463,6 +465,7 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - Car Finance Calculator Ireland — Loan vs PCP vs Hire Purchase | source: content/tool-guides/car-finance-calculator.md
 - Childcare Cost Calculator Ireland | source: content/tool-guides/childcare-cost-calculator.md
 - Childcare Cost vs Returning to Work Calculator Ireland | source: content/tool-guides/childcare-return-to-work-calculator.md
+- College Cost Calculator Ireland | source: content/tool-guides/college-cost-calculator.md
 - Contractor Day Rate vs Salary Calculator Ireland 2026 | source: content/tool-guides/contractor-vs-salary-calculator.md
 - Debt Snowball vs Avalanche Calculator Ireland | source: content/tool-guides/debt-repayment-calculator.md
 - DIRT Calculator Ireland | source: content/tool-guides/dirt-calculator.md
@@ -476,6 +479,7 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - Funeral Cost Calculator Ireland | source: content/tool-guides/funeral-cost-calculator.md
 - GLP-1 Cost Calculator Ireland | source: content/tool-guides/glp1-cost-calculator-ireland.md
 - Help to Buy Calculator Ireland | source: content/tool-guides/help-to-buy-calculator.md
+- Home Care Cost Calculator Ireland | source: content/tool-guides/home-care-cost-calculator.md
 - House Buying Costs Calculator Ireland | source: content/tool-guides/house-buying-costs-calculator.md
 - House Deposit Calculator Ireland | source: content/tool-guides/house-deposit-calculator.md
 - Income Tax Calculator Ireland 2027 | source: content/tool-guides/income-tax-calculator.md

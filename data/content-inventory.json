@@ -6426,6 +6426,15 @@
         "embedded_guide": "content/tool-guides/childcare-return-to-work-calculator.md"
       },
       {
+        "title": "College Cost Calculator Ireland",
+        "url": "/college-cost-calculator/",
+        "source": "content/tools.yml",
+        "kind": "Calculator",
+        "category": "Family & Life Planning",
+        "slug": "college-cost-calculator",
+        "embedded_guide": "content/tool-guides/college-cost-calculator.md"
+      },
+      {
         "title": "Compound Interest Calculator Ireland",
         "url": "/compound-interest-calculator/",
         "source": "content/compound-calculator-guide.md",
@@ -6577,6 +6586,15 @@
         "category": "Mortgages & Home Buying",
         "slug": "help-to-buy-calculator",
         "embedded_guide": "content/tool-guides/help-to-buy-calculator.md"
+      },
+      {
+        "title": "Home Care Cost Calculator Ireland",
+        "url": "/home-care-cost-calculator/",
+        "source": "content/tools.yml",
+        "kind": "Calculator",
+        "category": "Family & Life Planning",
+        "slug": "home-care-cost-calculator",
+        "embedded_guide": "content/tool-guides/home-care-cost-calculator.md"
       },
       {
         "title": "Home Insurance Rebuild Cost Calculator Ireland",
@@ -7001,6 +7019,12 @@
         "kind": "Embedded calculator guide"
       },
       {
+        "title": "College Cost Calculator Ireland",
+        "url": "/college-cost-calculator/",
+        "source": "content/tool-guides/college-cost-calculator.md",
+        "kind": "Embedded calculator guide"
+      },
+      {
         "title": "Contractor Day Rate vs Salary Calculator Ireland 2026",
         "url": "/contractor-vs-salary-calculator/",
         "source": "content/tool-guides/contractor-vs-salary-calculator.md",
@@ -7076,6 +7100,12 @@
         "title": "Help to Buy Calculator Ireland",
         "url": "/help-to-buy-calculator/",
         "source": "content/tool-guides/help-to-buy-calculator.md",
+        "kind": "Embedded calculator guide"
+      },
+      {
+        "title": "Home Care Cost Calculator Ireland",
+        "url": "/home-care-cost-calculator/",
+        "source": "content/tool-guides/home-care-cost-calculator.md",
         "kind": "Embedded calculator guide"
       },
       {
