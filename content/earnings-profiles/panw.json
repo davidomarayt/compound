@@ -2,33 +2,33 @@
   "cik": 1327567,
   "company": "Palo Alto Networks",
   "latest": {
-    "accession": "0001327567-26-000023",
-    "filed": "2026-09-10",
-    "form": "10-K",
-    "fp": "FY",
-    "fy": 2026,
+    "accession": "0001327567-26-000033",
+    "filed": "2026-11-19",
+    "form": "10-Q",
+    "fp": "Q1",
+    "fy": 2027,
     "metrics": {
       "diluted_eps": {
-        "current": 0.4,
-        "prior_year": 1.6,
+        "current": 0.57,
+        "prior_year": 0.47,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": 307000000,
-        "prior_year": 1134000000,
+        "current": 482000000,
+        "prior_year": 334000000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 11480000000,
-        "prior_year": 9221000000,
+        "current": 3445000000,
+        "prior_year": 2474000000,
         "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
         "unit": "USD"
       }
     },
-    "period_end": "2026-07-31",
-    "source": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000023/panw-20260731.htm"
+    "period_end": "2026-10-31",
+    "source": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000033/panw-20261031.htm"
   },
   "periods": [
     {
@@ -117,9 +117,38 @@
       },
       "period_end": "2026-07-31",
       "source": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000023/panw-20260731.htm"
+    },
+    {
+      "accession": "0001327567-26-000033",
+      "filed": "2026-11-19",
+      "form": "10-Q",
+      "fp": "Q1",
+      "fy": 2027,
+      "metrics": {
+        "diluted_eps": {
+          "current": 0.57,
+          "prior_year": 0.47,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 482000000,
+          "prior_year": 334000000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 3445000000,
+          "prior_year": 2474000000,
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-10-31",
+      "source": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000033/panw-20261031.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "PANW",
-  "updated": "2026-10-15"
+  "updated": "2026-11-19"
 }
