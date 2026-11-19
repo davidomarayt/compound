@@ -89,6 +89,15 @@
   font-variant-numeric: tabular-nums;
 }
 
+.medicines-group:not([hidden]) + .medicines-group {
+  margin-top: 1.75rem;
+}
+
+.medicines-group > h3 {
+  margin: 0 0 .65rem;
+  font-size: 1.2rem;
+}
+
 .medicines-guides {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -120,7 +129,8 @@
   padding: 1.1rem;
 }
 
-.medicines-guide h3 {
+.medicines-guide h4 {
+  margin: 0;
   font-size: clamp(1.55rem, 3vw, 2.05rem);
   overflow-wrap: anywhere;
 }
