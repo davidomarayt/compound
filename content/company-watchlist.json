@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-17",
+  "checked": "2026-11-19",
   "listed": [
     {
       "slug": "spcx",
@@ -117,24 +117,24 @@
       "slug": "openai",
       "name": "OpenAI",
       "sector": "Artificial intelligence",
-      "summary": "AI models, enterprise adoption, research and security, including NATO's disclosed large-scale defensive model usage.",
+      "summary": "AI models, enterprise deployments and specialist legal intelligence, including the 17 November Astra for Law 6.2 benchmark update.",
       "website": "https://openai.com/",
       "latest_development": {
         "date": "2026-11-17",
-        "text": "OpenAI said its work with NATO's Communications and Information Agency included up to 300 billion combined input/output tokens per month for authorised cybersecurity work. It gave no contract value, recurring revenue or independently audited defensive outcomes.",
-        "source": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai/"
+        "text": "OpenAI updated its Astra for Law configuration built on GPT-6.2 Astra and opened requests to all ChatGPT Enterprise customers through Trusted Access. On 120 LAB-AA assignments the configuration achieved 20.8% full credit, against 15.0% for general GPT-6.2 Astra. No specialist-product revenue or adoption totals were disclosed.",
+        "source": "https://openai.com/index/astra-law-6-2/"
       }
     },
     {
       "slug": "anthropic",
       "name": "Anthropic",
       "sector": "Artificial intelligence",
-      "summary": "Claude AI models, developer APIs, enterprise agents, and a 17 November linked-billing beta that lets eligible enterprise customers pay for their Claude API use inside apps.",
+      "summary": "Claude AI models, developer APIs and enterprise agents. On 18 November it priced a 980-million-share Nasdaq IPO at $83 per share, with trading expected—not yet verified—on 19 November.",
       "website": "https://www.anthropic.com/",
       "latest_development": {
-        "date": "2026-11-17",
-        "text": "Anthropic's 17 November platform release notes introduced Linked Billing in beta for directly-billed Claude Platform organisations; marketplace-only and subscription-only users are excluded. Inference runs under the app operator's settings and no adoption or revenue was disclosed.",
-        "source": "https://platform.claude.com/docs/en/release-notes/overview"
+        "date": "2026-11-18",
+        "text": "Anthropic confirmed pricing its Class A IPO at $83 per share on 18 November: 980m base shares, including 956,351,354 primary and 23,648,646 secondary. Nasdaq trading under ANT was expected on 19 November, but had not been confirmed at this research check; the offer was scheduled to close 20 November subject to conditions.",
+        "source": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
       }
     },
     {
@@ -201,8 +201,13 @@
       "slug": "anduril",
       "name": "Anduril Industries",
       "sector": "Defence technology",
-      "summary": "Autonomous systems, sensing and defence software.",
-      "website": "https://www.anduril.com/"
+      "summary": "Privately held defence technology developer of Lattice autonomy, maritime and airborne systems; ASV Alpha prototype launched with HD Hyundai at Ulsan in November 2026.",
+      "website": "https://www.anduril.com/",
+      "latest_development": {
+        "date": "2026-11-15",
+        "text": "HD Hyundai announced on 15 November that it and Anduril had launched the roughly 600-tonne ASV Alpha at Ulsan on 12 November, using VAone for shipboard autonomy and Anduril Lattice for missions. Sea trials were planned in Korea and US testing in early 2027. No funded US Navy production order or unit price was disclosed.",
+        "source": "https://www.navalnews.com/naval-news/2026/11/hd-hhi-anduril-launch-600-ton-asv-alpha/"
+      }
     },
     {
       "slug": "neuralink",
