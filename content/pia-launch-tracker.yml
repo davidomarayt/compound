@@ -5,8 +5,8 @@
 # State "target" = stated future objective, not a guaranteed product release.
 checked: '2026-11-15'
 target_date: '2027-07-01'
-headline: 'Legislation proposed; provider launch details still to be confirmed'
-next_checkpoint: 'Verify the Finance Bill’s final text, commencement arrangements and Revenue operating guidance.'
+headline: 'Committee-amended Finance Bill published; enactment and provider opening unverified'
+next_checkpoint: 'Verify further Oireachtas stages, final enacted text, commencement arrangements and Revenue operating guidance.'
 milestones:
   - id: budget-2027
     title: 'Investment account design announced'
@@ -32,6 +32,14 @@ milestones:
     summary: 'Finance (No. 2) Bill 2026 was introduced. The draft calls the product an Individual Investment Account (IIA); introduction does not mean enactment.'
     source_label: 'Oireachtas Bill 98/2026'
     source_url: 'https://www.oireachtas.ie/en/bills/bill/2026/98/'
+  - id: bill-committee-amended
+    title: 'Committee-amended Finance Bill text published'
+    state: confirmed
+    date: '2026-11-12'
+    date_label: '12 November 2026'
+    summary: 'An official Oireachtas Bill version (No. 98a) is labelled as amended in Select Committee. It contains draft Individual Investment Account provisions in section 27. This is not enactment, commencement or a provider opening.'
+    source_label: 'Oireachtas: Finance (No. 2) Bill 2026, as amended'
+    source_url: 'https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf'
   - id: enacted-law
     title: 'Final law and commencement'
     state: unverified

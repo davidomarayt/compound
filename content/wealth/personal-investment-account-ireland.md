@@ -29,6 +29,8 @@ sources:
     url: https://assets.gov.ie/static/documents/89edf30b/Finance_No._2_Bill_2026.pdf
   - title: "Revenue: Irish Investment Account Technical Group Forum, published 7 October 2026; target launch subject to enactment."
     url: https://www.revenue.ie/ga/corporate/press-office/press-releases/2026/pr-100726-irish-investment-account.aspx
+  - title: "Houses of the Oireachtas: Finance (No. 2) Bill 2026, version No. 98a as amended in Select Committee, dated 12 November 2026; draft IIA provisions are now in section 27. Checked 19 November 2026; not enacted law."
+    url: https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf
   - title: "Houses of the Oireachtas: Finance (No. 2) Bill 2026 committee amendments, dated 3 November 2026; proposals, not enacted text."
     url: https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/dail/3/amendment/numberedList/eng/b9826d-dcnl.pdf
   - title: "RTÉ: Irish Investment Account to open on 1 July 2027 — Budget 2027 announcement. 6 October 2026."
@@ -55,7 +57,7 @@ The account is intended to hold investments such as **shares, bonds, investment 
 
 That makes the PIA one of the biggest changes to ordinary investing in Ireland in years.
 
-But there is an important caveat: **this is a proposed account, not an account you can open today**. The [Finance (No. 2) Bill 2026, introduced on 19 October](https://www.oireachtas.ie/en/bills/bill/2026/98/), already contains the draft legal framework under the name **Individual Investment Account (IIA)**. The Bill as introduced is not the final law; committee amendments and commencement arrangements can change the rules. The planned 1 July 2027 opening remains subject to enactment and provider readiness.
+But there is an important caveat: **this is a proposed account, not an account you can open today**. The [Finance (No. 2) Bill 2026, introduced on 19 October](https://www.oireachtas.ie/en/bills/bill/2026/98/), already contains the draft legal framework under the name **Individual Investment Account (IIA)**. The 3 November committee amendments preceded the next published version. The [official committee-amended version (Bill No. 98a)](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf) published in November moves the draft Individual Investment Account provisions to **section 27**; it is still a Bill, not enacted or commenced legislation. The planned 1 July 2027 opening remains subject to enactment and provider readiness.
 
 <div class="cs-intro" role="note">
 <p class="cs-kicker">What could a PIA mean for your savings?</p>
@@ -88,7 +90,7 @@ But there is an important caveat: **this is a proposed account, not an account y
 
 <p><strong>Choose your next PIA step:</strong> <a href="/pia/">start at the PIA Centre</a>, <a href="/pia-calculator/">model growth and the proposed charge</a>, <a href="/pia/vs-pension/">compare PIA with a pension</a>, <a href="/pia/investment-eligibility/">check an ETF or share</a>, or <a href="/pia/providers/">check verified provider announcements</a>. Provider fees and final product details may still change.</p>
 
-<p class="pia-status"><strong>Legislative sources checked: 15 November 2026.</strong> Finance (No. 2) Bill 2026 was introduced on 19 October and names the proposed scheme the <em>Individual Investment Account (IIA)</em>. The 3 November committee amendments show that proposed terms can still change; the current final parliamentary stage was not independently verified. The 1 July 2027 launch remains subject to enactment and provider readiness. Provider references elsewhere retain their original source-check dates; this is not a whole-article editorial re-review.</p>
+<p class="pia-status"><strong>Committee-amended text verified: 19 November 2026.</strong> The official <a href="https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf">Finance (No. 2) Bill 2026, No. 98a, as amended in Select Committee</a> contains proposed <em>Individual Investment Account (IIA)</em> provisions in section 27. The earlier introduced version used section 26. This verifies an amended draft, <strong>not</strong> final enactment, commencement or the latest completed parliamentary stage. The 1 July 2027 target remains conditional. Provider references retain their original source-check dates; this is not a whole-article editorial re-review.</p>
 
 <h2 id="pia-at-a-glance">Personal Investment Account Ireland: the rules at a glance</h2>
 
@@ -111,7 +113,7 @@ But there is an important caveat: **this is a proposed account, not an account y
 <tr><th scope="row">Eligible investments</th><td>Listed shares, listed bonds, regulated-market instruments, retail funds including ETFs, and eligible insurance-based investment products</td></tr>
 <tr><th scope="row">Crypto and derivatives</th><td><strong>Excluded</strong></td></tr>
 <tr><th scope="row">Tax administration</th><td>Provider calculates, reports and pays PIA tax to Revenue</td></tr>
-<tr><th scope="row">Legislative status</th><td><strong>Bill introduced 19 October 2026; final law and commencement not confirmed</strong>. Statutory draft calls it an Individual Investment Account (IIA).</td></tr>
+<tr><th scope="row">Legislative status</th><td><strong>Bill introduced 19 October 2026; committee-amended version No. 98a verified 19 November; final law and commencement not confirmed</strong>. Draft statutory name: Individual Investment Account (IIA).</td></tr>
 </tbody>
 </table>
 </div>
@@ -136,13 +138,13 @@ This matters because the existing Irish system can treat direct shares, domestic
 
 You may see several names used for the new account:
 
-* **Individual Investment Account (IIA)** — the legal term used in section 26 of the proposed Finance (No. 2) Bill 2026
+* **Individual Investment Account (IIA)** — the term used in section 26 of the introduced Bill and section 27 of the official committee-amended version
 * **Personal Investment Account (PIA)** — widely used in guides and by providers
 * **Investment Account** — broader policy shorthand
 * **Savings and Investment Account (SIA)** — wider European policy label
 * **Irish ISA** — an informal UK comparison, not the statutory Irish name
 
-The Department of Finance roadmap generally used **Investment Account**, while industry and media frequently use **Personal Investment Account**. However, [section 26 of the Bill as introduced](https://assets.gov.ie/static/documents/89edf30b/Finance_No._2_Bill_2026.pdf) calls the proposed scheme an **Individual Investment Account (IIA)**. This is the key official-name distinction: PIA is common shorthand, not the name used in that draft statute. The final enacted terminology must still be checked.
+The Department of Finance roadmap generally used **Investment Account**, while industry and media frequently use **Personal Investment Account**. However, [section 26 of the Bill as introduced](https://assets.gov.ie/static/documents/89edf30b/Finance_No._2_Bill_2026.pdf), and [section 27 of the subsequently amended Bill](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf), call the proposed scheme an **Individual Investment Account (IIA)**. The section number changed with the amended version; these citations refer to drafts, not enacted law. PIA remains the common shorthand, and the final enacted wording must still be checked.
 
 “**Irish ISA**” is an informal comparison with the UK's Individual Savings Account. It is useful shorthand for the idea of a dedicated retail investment wrapper, but it is **not an accurate description of the tax design**.
 
@@ -258,7 +260,7 @@ This is the most important part of the PIA.
 
 The new account is **not taxed like a normal capital gain**.
 
-Under the Department of Finance design, the provider calculates the account's value over the taxable period and uses those valuations to arrive at an **average account value**. Section 26 of the [Finance (No. 2) Bill as introduced](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf#page=53) proposes daily closing valuations. [See two accounts ending at €60,000 with different tax estimates](/pia/daily-valuation/).
+Under the Department of Finance design, the provider calculates the account's value over the taxable period and uses those valuations to arrive at an **average account value**. The draft account rules appear in section 26 of the [Bill as introduced](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/initiated/b9826d.pdf#page=53) and section 27 of the [committee-amended version](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf). Both describe daily account valuations; this is still proposed legislation. [See two accounts ending at €60,000 with different tax estimates](/pia/daily-valuation/).
 
 The Budget 2027 numbers then work like this:
 
@@ -469,6 +471,16 @@ It also envisages **in-specie transfers** where practical. That means moving the
 But the Department acknowledges that in-specie transfers will not always be possible because two providers may not support the same products.
 
 This portability is important because it should make it easier to switch if a competitor later offers lower fees, better investment options or a better service.
+
+<h2 id="pia-on-death">What happens to a proposed PIA if the account holder dies?</h2>
+
+The [committee-amended Finance Bill (section 27, proposed section 747Y)](https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf) now provides a more specific draft answer than the original policy roadmap. **The account would not simply turn into a tax-free PIA for a spouse or beneficiary.** The personal representatives would manage the deceased person's account during a limited estate-administration period. These rules are **proposed, not law**; the eventual provider process and estate tax treatment require separate confirmation.
+
+Under the draft, **no new money could be contributed after the holder's death**. A simplified closure without production of a probate grant could be possible if the applicable conditions are met, or the estate could pass into a transition period when a grant of probate or letters of administration is issued, or three years have elapsed after death, whichever comes first. The transition period would end when estate administration completes or after one year, whichever is earlier.
+
+The personal representatives would need to sell or otherwise liquidate investments before the transition period ends. If holdings remained at expiry, the draft would end the account's special status and treat the remaining investments as sold and immediately reacquired at market value. The provider would continue accounting for the proposed investment account tax during the applicable interim periods; this is not an assurance that inheritance tax or other estate liabilities disappear.
+
+**Practical implication:** Keep an up-to-date estate inventory, tell your executor where investment accounts are held, and do not assume a partner can inherit the investment wrapper unchanged. Compare the final enacted legislation and provider procedures with independent legal and tax advice before planning a transfer. For the broader estate process see the [Irish probate guide](/wealth/probate-ireland/) and check the [PIA launch tracker](/pia/#pia-launch-tracker) for verified legal milestones. No particular probate fee, tax outcome or entitlement is promised here.
 
 <h2 id="pia-vs-normal-investing">PIA vs a normal investment account in Ireland</h2>
 
@@ -755,7 +767,8 @@ If you are starting from scratch, the [Investing in Ireland 101 guide](/wealth/h
 <div role="listitem"><span>31 March 2026</span><p>The Government announces its intention to introduce an investment account at the Savings and Investment Forum.</p></div>
 <div role="listitem"><span>31 August 2026</span><p>The Department of Finance publishes its retail-investment roadmap and the high-level PIA design.</p></div>
 <div role="listitem"><span>6 October 2026</span><p>Budget 2027 sets the headline figures: €50,000 threshold, 1% annual charge above it, €12,000 maximum annual contribution and no minimum.</p></div>
-<div role="listitem"><span>19 October 2026</span><p>Finance (No. 2) Bill 2026 was introduced with draft Individual Investment Account rules in section 26. Dáil committee amendments were published on 3 November; the final rules and commencement still require verification.</p></div>
+<div role="listitem"><span>19 October 2026</span><p>Finance (No. 2) Bill 2026 introduced proposed Individual Investment Account provisions in section 26.</p></div>
+<div role="listitem"><span>12 November 2026</span><p>The Oireachtas published a committee-amended draft (No. 98a), now placing the account provisions in section 27. This is not enactment or commencement.</p></div>
 <div role="listitem"><span>1 July 2027</span><p>Government's planned launch date for the new Investment Account, subject to legislation and operational readiness.</p></div>
 </div>
 
@@ -763,14 +776,14 @@ If you are starting from scratch, the [Investing in Ireland 101 guide](/wealth/h
 
 Budget 2027 filled in the biggest missing numbers, but several practical details still matter.
 
-As of 6 October 2026, watch for clarification on:
+Following the 19 November 2026 targeted check of the committee-amended text, practical matters still requiring final law or provider confirmation include:
 
 * final regulations on valuation, including foreign-currency holdings;
 * how contribution limits operate when money is withdrawn;
 * whether any unused annual contribution allowance can carry forward;
 * the detailed treatment of existing investments moved into a PIA;
 * the final process for provider-to-provider transfers;
-* what happens to a PIA on death or a change in tax residence;
+* how providers will implement the proposed death/estate and non-residence procedures;
 * the full provider market;
 * each provider's investment menu;
 * and the fees charged by providers and underlying investments.
@@ -854,6 +867,10 @@ The roadmap intends provider-to-provider transfers to be tax-neutral, with in-sp
 ### Can I transfer investments I already own into a PIA?
 
 A tax-neutral route for moving pre-existing investments from an ordinary account into a new PIA has not yet been fully established in the published framework. Wait for the Finance Bill and provider guidance before assuming this is possible without tax consequences.
+
+### What happens to my PIA if I die?
+
+The [committee-amended Bill's proposed estate provisions](#pia-on-death) envisage personal representatives managing the account temporarily, no new contributions after death and eventual closure or liquidation. That does not establish inheritance-tax exemption, spouse rollover or final operational rules; the Bill is not enacted.
 
 ### Is a PIA better than a pension?
 
