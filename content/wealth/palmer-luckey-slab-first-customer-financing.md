@@ -6,6 +6,10 @@ canonical_path: /news/palmer-luckey-slab-first-customer-financing/
 pillar: wealth
 draft: false
 publication_status: published
+editorial_review_status: pending
+human_reviewed_by: null
+human_reviewed_at: null
+research_checked: 2026-11-19
 date: 2026-11-19
 summary: "Rotterdam’s port expansion shows why early customers matter. Our worked example explains what a first industrial contract could mean for SLAB’s financing."
 meta_description: "Who could pay for Palmer Luckey’s SLAB project? A Rotterdam port comparison and a worked financing example show what an anchor customer would need to sign."
