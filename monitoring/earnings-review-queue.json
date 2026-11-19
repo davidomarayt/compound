@@ -1,9 +1,9 @@
 {
-  "checked": "2026-11-18",
+  "checked": "2026-11-19",
   "counts": {
     "active_issuers": 500,
-    "company_articles": 109,
-    "mapped_articles": 85,
+    "company_articles": 116,
+    "mapped_articles": 90,
     "profiles_scanned": 499
   },
   "history": [
@@ -6242,9 +6242,557 @@
       "retirement_reason": "Evidence/content changed or condition cleared",
       "severity": "low",
       "status": "pending"
+    },
+    {
+      "company": "nvda",
+      "evidence": {
+        "article_reviewed": "2026-11-17",
+        "article_sources": [
+          {
+            "title": "NVIDIA — Third-quarter fiscal 2027 earnings release and unaudited financial statements, 17 November 2026",
+            "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+          },
+          {
+            "title": "NVIDIA — Fiscal Q2 2027 Form 10-Q, SEC, 26 August 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          },
+          {
+            "title": "NVIDIA — Fiscal Q2 2027 earnings exhibit, SEC Form 8-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm"
+          },
+          {
+            "title": "Gavin Phillips — archival NVIDIA graphics card photograph under Unsplash License",
+            "url": "https://unsplash.com/photos/nvidia-geforce-rtx-graphics-card-with-gold-accents-mEQUQqVk-MU"
+          }
+        ],
+        "canonical_path": "/news/nvidia-q3-fy2027-earnings-numbers/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "",
+          "filed": "",
+          "form": "Issuer earnings release (SEC filing pending)",
+          "fp": "Q3",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.7,
+              "prior_year": 1.3,
+              "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 65287000000,
+              "prior_year": 31910000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 115844000000,
+              "prior_year": 57006000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
+              "unit": "USD"
+            }
+          },
+          "notes": [
+            "Q3 FY2027 numbers are from NVIDIA's official unaudited earnings announcement dated 17 November 2026. The SEC earnings 8-K was not yet indexed at preparation; no SEC accession or filing date is asserted.",
+            "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
+          ],
+          "period_end": "2026-10-25",
+          "published": "2026-11-17",
+          "source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+        }
+      },
+      "first_seen": "2026-11-18",
+      "id": "45304ab81e3874b63a6e2125",
+      "kind": "article_review",
+      "last_seen": "2026-11-18",
+      "paths": [
+        "content/wealth/nvidia-q3-fy2027-earnings-numbers.md",
+        "content/earnings-profiles/nvda.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "retired": "2026-11-19",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "low",
+      "status": "pending"
+    },
+    {
+      "company": "nvda",
+      "evidence": {
+        "article_reviewed": "2026-11-08",
+        "article_sources": [
+          {
+            "title": "Nvidia fiscal Q2 2027 Form 10-Q, product warranty liabilities",
+            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          },
+          {
+            "title": "Nvidia fiscal Q1 2027 Form 10-Q, product warranty liabilities",
+            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm"
+          },
+          {
+            "title": "Nvidia fiscal Q2 2027 results and revenue comparisons",
+            "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027/"
+          }
+        ],
+        "canonical_path": "/wealth/nvidia-warranty-reserve/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "",
+          "filed": "",
+          "form": "Issuer earnings release (SEC filing pending)",
+          "fp": "Q3",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.7,
+              "prior_year": 1.3,
+              "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 65287000000,
+              "prior_year": 31910000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 115844000000,
+              "prior_year": 57006000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
+              "unit": "USD"
+            }
+          },
+          "notes": [
+            "Q3 FY2027 numbers are from NVIDIA's official unaudited earnings announcement dated 17 November 2026. The SEC earnings 8-K was not yet indexed at preparation; no SEC accession or filing date is asserted.",
+            "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
+          ],
+          "period_end": "2026-10-25",
+          "published": "2026-11-17",
+          "source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+        }
+      },
+      "first_seen": "2026-11-18",
+      "id": "4c1c58c7e945862f524a6f50",
+      "kind": "article_review",
+      "last_seen": "2026-11-18",
+      "paths": [
+        "content/wealth/nvidia-warranty-reserve.md",
+        "content/earnings-profiles/nvda.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "retired": "2026-11-19",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "low",
+      "status": "pending"
+    },
+    {
+      "company": "ttwo",
+      "evidence": {
+        "article_reviewed": "2026-10-29",
+        "article_sources": [
+          {
+            "title": "Rockstar Games: GTA VI release date",
+            "url": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026"
+          },
+          {
+            "title": "Take-Two: GTA VI pre-orders, platforms and US pricing, 24 June 2026",
+            "url": "https://www.take2games.com/ir/news/rockstar-games-announces-pre-orders-grand-theft-auto-vi"
+          },
+          {
+            "title": "Associated Press: GTA VI launch timing, 18 November 2026",
+            "url": "https://apnews.com/article/6e255c930da6de820e539721f4682253"
+          },
+          {
+            "title": "Reuters: Sensor Tower digital preorder estimate, 9 November 2026",
+            "url": "https://www.reuters.com/business/take-two-projects-third-quarter-bookings-below-estimates-2026-11-09/"
+          },
+          {
+            "title": "Take-Two: Fiscal Q2 2027 results and guidance, 9 November 2026",
+            "url": "https://ir.take2games.com/node/32676/pdf"
+          },
+          {
+            "title": "Take-Two: Fiscal 2026 results, 21 May 2026",
+            "url": "https://www.take2games.com/ir/news/take-two-interactive-software-inc-reports-results-fourth-2"
+          },
+          {
+            "title": "Take-Two: GTA V worldwide retail sales in its first three days, 20 September 2013",
+            "url": "https://ir.take2games.com/node/16191/"
+          }
+        ],
+        "canonical_path": "/wealth/ttwo-gta-6-entertainment-launch-revenue/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-072254",
+          "filed": "2026-11-09",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": -0.29,
+              "prior_year": -0.73,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": -54000000,
+              "prior_year": -133900000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 1497000000,
+              "prior_year": 1773800000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/946581/000162828026072254/ttwo-20260930.htm"
+        }
+      },
+      "first_seen": "2026-11-18",
+      "id": "885f85e4ab706761f113daba",
+      "kind": "article_review",
+      "last_seen": "2026-11-18",
+      "paths": [
+        "content/wealth/ttwo-gta-6-entertainment-launch-revenue.md",
+        "content/earnings-profiles/ttwo.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "retired": "2026-11-19",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "medium",
+      "status": "pending"
+    },
+    {
+      "company": "nvda",
+      "evidence": {
+        "article_reviewed": "2026-10-20",
+        "article_sources": [
+          {
+            "title": "Company primary reporting — business model and risk disclosures",
+            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        ],
+        "canonical_path": "/wealth/nvidia-ai-gpu-margins-2026/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "",
+          "filed": "",
+          "form": "Issuer earnings release (SEC filing pending)",
+          "fp": "Q3",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.7,
+              "prior_year": 1.3,
+              "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 65287000000,
+              "prior_year": 31910000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 115844000000,
+              "prior_year": 57006000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
+              "unit": "USD"
+            }
+          },
+          "notes": [
+            "Q3 FY2027 numbers are from NVIDIA's official unaudited earnings announcement dated 17 November 2026. The SEC earnings 8-K was not yet indexed at preparation; no SEC accession or filing date is asserted.",
+            "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
+          ],
+          "period_end": "2026-10-25",
+          "published": "2026-11-17",
+          "source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+        }
+      },
+      "first_seen": "2026-11-18",
+      "id": "b3e4675e8399f19637974d47",
+      "kind": "article_review",
+      "last_seen": "2026-11-18",
+      "paths": [
+        "content/wealth/nvidia-ai-gpu-margins-2026.md",
+        "content/earnings-profiles/nvda.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "retired": "2026-11-19",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "low",
+      "status": "pending"
+    },
+    {
+      "company": "nvda",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "PyTorch announcement",
+            "url": "https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "",
+          "filed": "",
+          "form": "Issuer earnings release (SEC filing pending)",
+          "fp": "Q3",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.7,
+              "prior_year": 1.3,
+              "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 65287000000,
+              "prior_year": 31910000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 115844000000,
+              "prior_year": 57006000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
+              "unit": "USD"
+            }
+          },
+          "notes": [
+            "Q3 FY2027 numbers are from NVIDIA's official unaudited earnings announcement dated 17 November 2026. The SEC earnings 8-K was not yet indexed at preparation; no SEC accession or filing date is asserted.",
+            "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
+          ],
+          "period_end": "2026-10-25",
+          "published": "2026-11-17",
+          "source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+        }
+      },
+      "first_seen": "2026-11-18",
+      "id": "d3431fdf18f144486c1f9172",
+      "kind": "article_review",
+      "last_seen": "2026-11-18",
+      "paths": [
+        "content/wealth/nvidia-torchneuron-software-competition.md",
+        "content/earnings-profiles/nvda.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "retired": "2026-11-19",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "low",
+      "status": "pending"
+    },
+    {
+      "company": "nvda",
+      "evidence": {
+        "article_reviewed": "2026-10-18",
+        "article_sources": [
+          {
+            "title": "second-quarter fiscal 2027 results",
+            "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/"
+          },
+          {
+            "title": "quarterly SEC filing",
+            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          },
+          {
+            "title": "Microsoft's own earnings call",
+            "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+          }
+        ],
+        "canonical_path": "/wealth/nvidia-gross-margin-ai-demand/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "",
+          "filed": "",
+          "form": "Issuer earnings release (SEC filing pending)",
+          "fp": "Q3",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.7,
+              "prior_year": 1.3,
+              "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 65287000000,
+              "prior_year": 31910000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 115844000000,
+              "prior_year": 57006000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
+              "unit": "USD"
+            }
+          },
+          "notes": [
+            "Q3 FY2027 numbers are from NVIDIA's official unaudited earnings announcement dated 17 November 2026. The SEC earnings 8-K was not yet indexed at preparation; no SEC accession or filing date is asserted.",
+            "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
+          ],
+          "period_end": "2026-10-25",
+          "published": "2026-11-17",
+          "source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+        }
+      },
+      "first_seen": "2026-11-18",
+      "id": "dba421ee79cc2034986d76b4",
+      "kind": "article_review",
+      "last_seen": "2026-11-18",
+      "paths": [
+        "content/wealth/nvidia-gross-margin-ai-demand.md",
+        "content/earnings-profiles/nvda.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "retired": "2026-11-19",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "low",
+      "status": "pending"
+    },
+    {
+      "company": "nvda",
+      "evidence": {},
+      "first_seen": "2026-11-18",
+      "id": "e685379f084f8bb52b4579d6",
+      "kind": "profile_integrity",
+      "last_seen": "2026-11-18",
+      "paths": [
+        "content/earnings-profiles/nvda.json"
+      ],
+      "reason": "Missing or invalid report/end dates; Source URL does not match the issuer and filing accession; Unsupported filing form in SEC quarterly dataset",
+      "retired": "2026-11-19",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "high",
+      "status": "pending"
+    },
+    {
+      "company": "nvda",
+      "evidence": {
+        "article_reviewed": "2026-10-22",
+        "article_sources": [
+          {
+            "title": "Nokia Form 6-K, 22 October 2026 — Q3 release and full interim report, accession 0001104659-26-117972",
+            "url": "https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm"
+          }
+        ],
+        "canonical_path": "/news/nokia-ai-growth-cash-flow/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "",
+          "filed": "",
+          "form": "Issuer earnings release (SEC filing pending)",
+          "fp": "Q3",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.7,
+              "prior_year": 1.3,
+              "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 65287000000,
+              "prior_year": 31910000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 115844000000,
+              "prior_year": 57006000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
+              "unit": "USD"
+            }
+          },
+          "notes": [
+            "Q3 FY2027 numbers are from NVIDIA's official unaudited earnings announcement dated 17 November 2026. The SEC earnings 8-K was not yet indexed at preparation; no SEC accession or filing date is asserted.",
+            "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
+          ],
+          "period_end": "2026-10-25",
+          "published": "2026-11-17",
+          "source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+        }
+      },
+      "first_seen": "2026-11-18",
+      "id": "fd770fcb9cf63dc1e49cd4e4",
+      "kind": "article_review",
+      "last_seen": "2026-11-18",
+      "paths": [
+        "content/wealth/nokia-ai-growth-cash-flow.md",
+        "content/earnings-profiles/nvda.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "retired": "2026-11-19",
+      "retirement_reason": "Evidence/content changed or condition cleared",
+      "severity": "low",
+      "status": "pending"
     }
   ],
   "jobs": {
+    "001ebbd30c2d7d4ea17b64d4": {
+      "company": "tsn",
+      "evidence": {
+        "article_reviewed": "2026-11-19",
+        "article_sources": [
+          {
+            "title": "Tyson Foods fiscal 2026 fourth-quarter and full-year results, 16 November 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/100493/000010049326000077/tsn2026q4exh-991.htm"
+          },
+          {
+            "title": "Tyson Foods Form 10-K, year ended 3 October 2026, filed 16 November 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/100493/000010049326000079/tsn-20261003.htm"
+          }
+        ],
+        "canonical_path": "/wealth/tyson-chicken-beef-segment-profit/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000100493-26-000079",
+          "filed": "2026-11-16",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 1.28,
+              "prior_year": 1.33,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 453000000,
+              "prior_year": 474000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 56419000000,
+              "prior_year": 54441000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-10-03",
+          "source": "https://www.sec.gov/Archives/edgar/data/100493/000010049326000079/tsn-20261003.htm"
+        }
+      },
+      "first_seen": "2026-11-19",
+      "id": "001ebbd30c2d7d4ea17b64d4",
+      "kind": "article_review",
+      "last_seen": "2026-11-19",
+      "paths": [
+        "content/wealth/tyson-chicken-beef-segment-profit.md",
+        "content/earnings-profiles/tsn.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
     "0308286ff9e20f6c516815e6": {
       "company": "aapl",
       "evidence": {
@@ -6290,7 +6838,7 @@
       "first_seen": "2026-11-05",
       "id": "0308286ff9e20f6c516815e6",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/apple-iphone-services-profit-2026.md",
         "content/earnings-profiles/aapl.json"
@@ -6307,7 +6855,7 @@
       "first_seen": "2026-10-28",
       "id": "05d9e53f1fdf6d05053a8d15",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/molina-healthcare-earnings-medicaid-margins.md"
       ],
@@ -6360,7 +6908,7 @@
       "first_seen": "2026-11-05",
       "id": "074cc4d1aba1c3f0974087fb",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/apple-us-iphone-suppliers-manufacturing.md",
         "content/earnings-profiles/aapl.json"
@@ -6426,7 +6974,7 @@
       "first_seen": "2026-11-05",
       "id": "088b0142c253598afb4baa82",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/apple-manufacturing-purchase-commitments.md",
         "content/earnings-profiles/aapl.json"
@@ -6484,7 +7032,7 @@
       "first_seen": "2026-11-07",
       "id": "0ea556d5e3f87855b6b6cd07",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/zebra-automation-growth-memory-margin.md",
         "content/earnings-profiles/zbra.json"
@@ -6546,7 +7094,7 @@
       "first_seen": "2026-11-02",
       "id": "10b556298dd35663fc4ed8ee",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/thermo-fisher-earnings-organic-growth-cash-flow.md",
         "content/earnings-profiles/tmo.json"
@@ -6604,7 +7152,7 @@
       "first_seen": "2026-10-28",
       "id": "12374d854994476420edb231",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/honeywell-earnings-organic-growth-guidance.md",
         "content/earnings-profiles/hon.json"
@@ -6621,7 +7169,7 @@
       "first_seen": "2026-11-14",
       "id": "12c9af68758b858e87028ca9",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/anthropic-claude-outage-enterprise-agent-reliability-november-2026.md"
       ],
@@ -6637,7 +7185,7 @@
       "first_seen": "2026-11-09",
       "id": "15bd78b122116bf855e5118c",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/mattel-tariff-refund-margin.md"
       ],
@@ -6702,7 +7250,7 @@
       "first_seen": "2026-10-28",
       "id": "1756912285ce69e0038e5db8",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/att-earnings-fiber-growth-dividend-cash-flow.md",
         "content/earnings-profiles/t.json"
@@ -6762,7 +7310,7 @@
       "first_seen": "2026-10-29",
       "id": "1ab9cb4157b58272ba76f023",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/robinhood-earnings-prediction-markets-profit.md",
         "content/earnings-profiles/hood.json"
@@ -6820,7 +7368,7 @@
       "first_seen": "2026-11-04",
       "id": "1e733ccacf8fb947ffd8c0d2",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/block-cash-app-lending-credit-losses.md",
         "content/earnings-profiles/xyz.json"
@@ -6837,7 +7385,7 @@
       "first_seen": "2026-11-13",
       "id": "1f1daebf430dd70026388e47",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/openai-business-agents-chatgpt-merchant-economics-2026.md"
       ],
@@ -6906,7 +7454,7 @@
       "first_seen": "2026-11-06",
       "id": "1f3f08a56c742076304e3561",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/tesla-cybertruck-success-failure-numbers.md",
         "content/earnings-profiles/tsla.json"
@@ -6923,7 +7471,7 @@
       "first_seen": "2026-11-04",
       "id": "202a13db7e6f8053b4b68322",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/shopify-merchant-sales-cash-flow.md"
       ],
@@ -6984,7 +7532,7 @@
       "first_seen": "2026-11-07",
       "id": "2130e79722eb732f70551388",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/amazon-advertising-prime-day-timing.md",
         "content/earnings-profiles/amzn.json"
@@ -7040,7 +7588,7 @@
       "first_seen": "2026-10-31",
       "id": "2285a8cc2074cd2b9fa9ff05",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/amazon-aws-retail-economics-2026.md",
         "content/earnings-profiles/amzn.json"
@@ -7057,7 +7605,7 @@
       "first_seen": "2026-11-15",
       "id": "22f61eb2c07d128d93b56315",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/stripe-hsbc-tap-to-pay-bank-distribution-small-business.md"
       ],
@@ -7073,7 +7621,7 @@
       "first_seen": "2026-11-15",
       "id": "29d13142a8df3da39e83060c",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/anthropic-claude-meetings-live-work-enterprise-economics.md"
       ],
@@ -7134,13 +7682,72 @@
       "first_seen": "2026-10-28",
       "id": "2abb2849c77d5064c43ad7a5",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/lam-research-earnings-growth-expectations.md",
         "content/earnings-profiles/lrcx.json"
       ],
       "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
       "severity": "low",
+      "status": "pending"
+    },
+    "2aca441eecb50eb321ca9dee": {
+      "company": "nvda",
+      "evidence": {
+        "article_reviewed": "2026-10-20",
+        "article_sources": [
+          {
+            "title": "Company primary reporting — business model and risk disclosures",
+            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+          }
+        ],
+        "canonical_path": "/wealth/nvidia-ai-gpu-margins-2026/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001045810-26-000088",
+          "filed": "2026-11-17",
+          "form": "8-K",
+          "fp": "Q3",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.7,
+              "prior_year": 1.3,
+              "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 65287000000,
+              "prior_year": 31910000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 115844000000,
+              "prior_year": 57006000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
+              "unit": "USD"
+            }
+          },
+          "notes": [
+            "Q3 FY2027 figures verified against NVIDIA’s official release and Exhibit 99.1 furnished with its 17 November 2026 Form 8-K. Statements are unaudited.",
+            "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
+          ],
+          "period_end": "2026-10-25",
+          "published": "2026-11-17",
+          "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
+        }
+      },
+      "first_seen": "2026-11-19",
+      "id": "2aca441eecb50eb321ca9dee",
+      "kind": "article_review",
+      "last_seen": "2026-11-19",
+      "paths": [
+        "content/wealth/nvidia-ai-gpu-margins-2026.md",
+        "content/earnings-profiles/nvda.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
       "status": "pending"
     },
     "2af41703040c47299beb8789": {
@@ -7192,7 +7799,7 @@
       "first_seen": "2026-10-28",
       "id": "2af41703040c47299beb8789",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/intuitive-surgical-earnings-growth-legal-charge.md",
         "content/earnings-profiles/isrg.json"
@@ -7250,7 +7857,7 @@
       "first_seen": "2026-11-08",
       "id": "2b3659722ea81026a1cdad88",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/hershey-pricing-volume-margin.md",
         "content/earnings-profiles/hsy.json"
@@ -7312,7 +7919,7 @@
       "first_seen": "2026-11-12",
       "id": "2c62ab7337de0efc0ab61352",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/revolut-pay-uber-rewards-payment-economics-2026.md",
         "content/earnings-profiles/uber.json"
@@ -7374,7 +7981,7 @@
       "first_seen": "2026-11-04",
       "id": "306f9b35925fbd690d75a5f9",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/lilly-mounjaro-china-reimbursement.md",
         "content/earnings-profiles/lly.json"
@@ -7446,7 +8053,7 @@
       "first_seen": "2026-11-01",
       "id": "3107d879ec828a0110ff6e09",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/eli-lilly-foundayo-europe-approval-glp1-2026.md",
         "content/earnings-profiles/lly.json"
@@ -7504,13 +8111,80 @@
       "first_seen": "2026-11-07",
       "id": "372deb60a0a2ac561ceae5c3",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/cigna-pharmacy-margin-modernization.md",
         "content/earnings-profiles/ci.json"
       ],
       "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
       "severity": "low",
+      "status": "pending"
+    },
+    "39ba9366529f8b8a3224a423": {
+      "company": "nvda",
+      "evidence": {
+        "article_reviewed": "2026-10-18",
+        "article_sources": [
+          {
+            "title": "second-quarter fiscal 2027 results",
+            "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/"
+          },
+          {
+            "title": "quarterly SEC filing",
+            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          },
+          {
+            "title": "Microsoft's own earnings call",
+            "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+          }
+        ],
+        "canonical_path": "/wealth/nvidia-gross-margin-ai-demand/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001045810-26-000088",
+          "filed": "2026-11-17",
+          "form": "8-K",
+          "fp": "Q3",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.7,
+              "prior_year": 1.3,
+              "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 65287000000,
+              "prior_year": 31910000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 115844000000,
+              "prior_year": 57006000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
+              "unit": "USD"
+            }
+          },
+          "notes": [
+            "Q3 FY2027 figures verified against NVIDIA’s official release and Exhibit 99.1 furnished with its 17 November 2026 Form 8-K. Statements are unaudited.",
+            "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
+          ],
+          "period_end": "2026-10-25",
+          "published": "2026-11-17",
+          "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
+        }
+      },
+      "first_seen": "2026-11-19",
+      "id": "39ba9366529f8b8a3224a423",
+      "kind": "article_review",
+      "last_seen": "2026-11-19",
+      "paths": [
+        "content/wealth/nvidia-gross-margin-ai-demand.md",
+        "content/earnings-profiles/nvda.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
       "status": "pending"
     },
     "3e6c282c0fd85b798a7b29ab": {
@@ -7570,7 +8244,7 @@
       "first_seen": "2026-11-18",
       "id": "3e6c282c0fd85b798a7b29ab",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/openai-gpt-6-2-astra-sol-pricing-performance-2026.md",
         "content/earnings-profiles/msft.json"
@@ -7624,84 +8298,13 @@
       "first_seen": "2026-10-28",
       "id": "44f2c04f6bce257c1676378d",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/tesla-q3-2026-autonomy-investment-case.md",
         "content/earnings-profiles/tsla.json"
       ],
       "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
       "severity": "medium",
-      "status": "pending"
-    },
-    "45304ab81e3874b63a6e2125": {
-      "company": "nvda",
-      "evidence": {
-        "article_reviewed": "2026-11-17",
-        "article_sources": [
-          {
-            "title": "NVIDIA — Third-quarter fiscal 2027 earnings release and unaudited financial statements, 17 November 2026",
-            "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
-          },
-          {
-            "title": "NVIDIA — Fiscal Q2 2027 Form 10-Q, SEC, 26 August 2026",
-            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
-          },
-          {
-            "title": "NVIDIA — Fiscal Q2 2027 earnings exhibit, SEC Form 8-K",
-            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm"
-          },
-          {
-            "title": "Gavin Phillips — archival NVIDIA graphics card photograph under Unsplash License",
-            "url": "https://unsplash.com/photos/nvidia-geforce-rtx-graphics-card-with-gold-accents-mEQUQqVk-MU"
-          }
-        ],
-        "canonical_path": "/news/nvidia-q3-fy2027-earnings-numbers/",
-        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
-        "latest_saved_result": {
-          "accession": "",
-          "filed": "",
-          "form": "Issuer earnings release (SEC filing pending)",
-          "fp": "Q3",
-          "fy": 2027,
-          "metrics": {
-            "diluted_eps": {
-              "current": 2.7,
-              "prior_year": 1.3,
-              "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
-              "unit": "USD/shares"
-            },
-            "net_income": {
-              "current": 65287000000,
-              "prior_year": 31910000000,
-              "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
-              "unit": "USD"
-            },
-            "revenue": {
-              "current": 115844000000,
-              "prior_year": 57006000000,
-              "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
-              "unit": "USD"
-            }
-          },
-          "notes": [
-            "Q3 FY2027 numbers are from NVIDIA's official unaudited earnings announcement dated 17 November 2026. The SEC earnings 8-K was not yet indexed at preparation; no SEC accession or filing date is asserted.",
-            "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
-          ],
-          "period_end": "2026-10-25",
-          "published": "2026-11-17",
-          "source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
-        }
-      },
-      "first_seen": "2026-11-18",
-      "id": "45304ab81e3874b63a6e2125",
-      "kind": "article_review",
-      "last_seen": "2026-11-18",
-      "paths": [
-        "content/wealth/nvidia-q3-fy2027-earnings-numbers.md",
-        "content/earnings-profiles/nvda.json"
-      ],
-      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
-      "severity": "low",
       "status": "pending"
     },
     "47451eea92a91e3680e71bbd": {
@@ -7753,13 +8356,71 @@
       "first_seen": "2026-11-08",
       "id": "47451eea92a91e3680e71bbd",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/ups-package-volume-pricing-automation.md",
         "content/earnings-profiles/ups.json"
       ],
       "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
       "severity": "medium",
+      "status": "pending"
+    },
+    "47998210d69710004ab2b808": {
+      "company": "dis",
+      "evidence": {
+        "article_reviewed": "2026-11-19",
+        "article_sources": [
+          {
+            "title": "Disney fiscal 2026 full-year results release, 17 November 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000065/fy2026_q4xerxex991.htm"
+          },
+          {
+            "title": "Disney Form 10-K, year ended 3 October 2026, filed 17 November 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000066/dis-20261003.htm"
+          }
+        ],
+        "canonical_path": "/wealth/disney-experiences-capital-spending-returns/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001744489-26-000066",
+          "filed": "2026-11-17",
+          "form": "10-K",
+          "fp": "FY",
+          "fy": 2026,
+          "metrics": {
+            "diluted_eps": {
+              "current": 5.63,
+              "prior_year": 6.85,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 9899000000,
+              "prior_year": 12404000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 102344000000,
+              "prior_year": 94425000000,
+              "tag": "Revenues",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-10-03",
+          "source": "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000066/dis-20261003.htm"
+        }
+      },
+      "first_seen": "2026-11-19",
+      "id": "47998210d69710004ab2b808",
+      "kind": "article_review",
+      "last_seen": "2026-11-19",
+      "paths": [
+        "content/wealth/disney-experiences-capital-spending-returns.md",
+        "content/earnings-profiles/dis.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
       "status": "pending"
     },
     "480671f259a5f23c3324aba5": {
@@ -7811,7 +8472,7 @@
       "first_seen": "2026-11-06",
       "id": "480671f259a5f23c3324aba5",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/axon-software-growth-skydio-capital-risk.md",
         "content/earnings-profiles/axon.json"
@@ -7873,7 +8534,7 @@
       "first_seen": "2026-10-31",
       "id": "48104abec897073954b6b863",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/microsoft-ai-capex-cash-flow.md",
         "content/earnings-profiles/msft.json"
@@ -7935,7 +8596,7 @@
       "first_seen": "2026-10-28",
       "id": "481fac8653f640c2315c504b",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/spacex-ai-growth-cash-spending.md",
         "content/earnings-profiles/spcx.json"
@@ -7993,7 +8654,7 @@
       "first_seen": "2026-11-06",
       "id": "48532b335422ee71e2a645e2",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/uber-audience-growth-operating-leverage.md",
         "content/earnings-profiles/uber.json"
@@ -8051,77 +8712,10 @@
       "first_seen": "2026-11-03",
       "id": "4be0728fb31a1a0fd93916c6",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/meta-reality-labs-loss-bridge.md",
         "content/earnings-profiles/meta.json"
-      ],
-      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
-      "severity": "low",
-      "status": "pending"
-    },
-    "4c1c58c7e945862f524a6f50": {
-      "company": "nvda",
-      "evidence": {
-        "article_reviewed": "2026-11-08",
-        "article_sources": [
-          {
-            "title": "Nvidia fiscal Q2 2027 Form 10-Q, product warranty liabilities",
-            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
-          },
-          {
-            "title": "Nvidia fiscal Q1 2027 Form 10-Q, product warranty liabilities",
-            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm"
-          },
-          {
-            "title": "Nvidia fiscal Q2 2027 results and revenue comparisons",
-            "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027/"
-          }
-        ],
-        "canonical_path": "/wealth/nvidia-warranty-reserve/",
-        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
-        "latest_saved_result": {
-          "accession": "",
-          "filed": "",
-          "form": "Issuer earnings release (SEC filing pending)",
-          "fp": "Q3",
-          "fy": 2027,
-          "metrics": {
-            "diluted_eps": {
-              "current": 2.7,
-              "prior_year": 1.3,
-              "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
-              "unit": "USD/shares"
-            },
-            "net_income": {
-              "current": 65287000000,
-              "prior_year": 31910000000,
-              "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
-              "unit": "USD"
-            },
-            "revenue": {
-              "current": 115844000000,
-              "prior_year": 57006000000,
-              "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
-              "unit": "USD"
-            }
-          },
-          "notes": [
-            "Q3 FY2027 numbers are from NVIDIA's official unaudited earnings announcement dated 17 November 2026. The SEC earnings 8-K was not yet indexed at preparation; no SEC accession or filing date is asserted.",
-            "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
-          ],
-          "period_end": "2026-10-25",
-          "published": "2026-11-17",
-          "source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
-        }
-      },
-      "first_seen": "2026-11-18",
-      "id": "4c1c58c7e945862f524a6f50",
-      "kind": "article_review",
-      "last_seen": "2026-11-18",
-      "paths": [
-        "content/wealth/nvidia-warranty-reserve.md",
-        "content/earnings-profiles/nvda.json"
       ],
       "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
       "severity": "low",
@@ -8178,7 +8772,7 @@
       "first_seen": "2026-10-31",
       "id": "4d9a2674d220577acda117ba",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/amazon-aws-profit-investment-gains.md",
         "content/earnings-profiles/amzn.json"
@@ -8236,7 +8830,7 @@
       "first_seen": "2026-11-08",
       "id": "4ec934ee8d5f6d73927e321d",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/mcdonalds-guest-counts-franchise-margins.md",
         "content/earnings-profiles/mcd.json"
@@ -8310,7 +8904,7 @@
       "first_seen": "2026-10-31",
       "id": "4fbb6c06312949b560dbfdf7",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/anthropic-loss-ipo-valuation.md",
         "content/earnings-profiles/msft.json"
@@ -8366,7 +8960,7 @@
       "first_seen": "2026-11-01",
       "id": "50ffb6ec6246cdaa6bc850e5",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/eli-lilly-metis-drug-delivery-deal.md",
         "content/earnings-profiles/lly.json"
@@ -8432,7 +9026,7 @@
       "first_seen": "2026-11-05",
       "id": "5197010853c73e31326a7baa",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/apple-earnings-tariff-refunds-services.md",
         "content/earnings-profiles/aapl.json"
@@ -8490,7 +9084,7 @@
       "first_seen": "2026-11-09",
       "id": "55c456c841ddb5619be9ead4",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/ralph-lauren-full-price-margin.md",
         "content/earnings-profiles/rl.json"
@@ -8566,7 +9160,7 @@
       "first_seen": "2026-10-30",
       "id": "572fa2d4f20a8c799e20bbe5",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/anthropic-loss-ipo-valuation.md",
         "content/earnings-profiles/googl.json"
@@ -8624,7 +9218,7 @@
       "first_seen": "2026-11-08",
       "id": "5797cbdf47a978d3ecab569e",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/live-nation-attendance-segment-economics.md",
         "content/earnings-profiles/lyv.json"
@@ -8641,7 +9235,7 @@
       "first_seen": "2026-11-18",
       "id": "599619534c0f5ef04be07509",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/openai-nato-cybersecurity-300-billion-tokens-economics.md"
       ],
@@ -8702,7 +9296,7 @@
       "first_seen": "2026-11-06",
       "id": "5b5d9082f207d4dd8475dd99",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/alphabet-waymo-term-loan.md",
         "content/earnings-profiles/googl.json"
@@ -8764,7 +9358,7 @@
       "first_seen": "2026-11-05",
       "id": "5bd7ec60dbd46b7fa55c0f96",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/ai-infrastructure-earnings.md",
         "content/earnings-profiles/anet.json"
@@ -8822,7 +9416,7 @@
       "first_seen": "2026-11-02",
       "id": "5c19dedad246065c859c0288",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/reddit-revenue-user-growth.md",
         "content/earnings-profiles/rddt.json"
@@ -8878,7 +9472,7 @@
       "first_seen": "2026-10-30",
       "id": "5c4100f773508ed49c737c83",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/gilead-earnings-hiv-growth-acquisition-cost.md",
         "content/earnings-profiles/gild.json"
@@ -8934,7 +9528,7 @@
       "first_seen": "2026-10-30",
       "id": "5d4baf47ddc4ca5acd475301",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/alphabet-search-ai-economics-2026.md",
         "content/earnings-profiles/googl.json"
@@ -8942,6 +9536,22 @@
       "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
       "severity": "medium",
       "status": "reviewed"
+    },
+    "60365dff6ba25ee3226c33ee": {
+      "company": "unmapped",
+      "evidence": {
+        "title": "Anduril and HD Hyundai Built a 600-Tonne Autonomous Ship. Who Will Pay for a Fleet?"
+      },
+      "first_seen": "2026-11-19",
+      "id": "60365dff6ba25ee3226c33ee",
+      "kind": "article_mapping",
+      "last_seen": "2026-11-19",
+      "paths": [
+        "content/wealth/anduril-hd-hyundai-asv-alpha-navy-procurement-economics.md"
+      ],
+      "reason": "Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.",
+      "severity": "medium",
+      "status": "pending"
     },
     "626b5da9d13cf8a47acb7f8e": {
       "company": "tsla",
@@ -9016,7 +9626,7 @@
       "first_seen": "2026-10-28",
       "id": "626b5da9d13cf8a47acb7f8e",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/tesla-spacex-merger-2027.md",
         "content/earnings-profiles/tsla.json"
@@ -9074,7 +9684,7 @@
       "first_seen": "2026-11-08",
       "id": "6275f266037381958b0b19bb",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/airbnb-bookings-free-cash-flow.md",
         "content/earnings-profiles/abnb.json"
@@ -9130,7 +9740,7 @@
       "first_seen": "2026-10-28",
       "id": "627b35ca35f4999655146e4c",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/meta-ai-advertising-returns-2026.md",
         "content/earnings-profiles/meta.json"
@@ -9147,7 +9757,7 @@
       "first_seen": "2026-11-13",
       "id": "6605e416085729d965f45d56",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/anthropic-anvil-automated-red-teaming-safety-economics.md"
       ],
@@ -9163,7 +9773,7 @@
       "first_seen": "2026-11-14",
       "id": "6846a74417c329fc63f7faf5",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/databricks-always-on-genie-enterprise-agent-economics.md"
       ],
@@ -9216,7 +9826,7 @@
       "first_seen": "2026-10-28",
       "id": "68a86b1b0041e706c5a9a256",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/tesla-earnings-cash-flow-profit-investment.md",
         "content/earnings-profiles/tsla.json"
@@ -9270,7 +9880,7 @@
       "first_seen": "2026-11-08",
       "id": "6b4f5ea24e4fd54b22fcf69b",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/caterpillar-margin-growth.md",
         "content/earnings-profiles/cat.json"
@@ -9330,7 +9940,7 @@
       "first_seen": "2026-11-01",
       "id": "6dfd2fc40939592f17c46ef1",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/intel-earnings-data-centre-growth-guidance.md",
         "content/earnings-profiles/intc.json"
@@ -9347,7 +9957,7 @@
       "first_seen": "2026-11-17",
       "id": "6f2d2888bf902298066ee2f3",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/openai-lvmh-media-chatgpt-news-distribution-economics.md"
       ],
@@ -9408,7 +10018,7 @@
       "first_seen": "2026-11-08",
       "id": "71c0271161978d523c22ba72",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/monster-case-volume-margin-pressure.md",
         "content/earnings-profiles/mnst.json"
@@ -9425,7 +10035,7 @@
       "first_seen": "2026-11-13",
       "id": "7272bceb0b72fa8cc9dc9b67",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/blue-origin-new-glenn-valve-fix-launch-economics.md"
       ],
@@ -9482,7 +10092,7 @@
       "first_seen": "2026-11-08",
       "id": "750971b5f4a66dd77ae8bd7d",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/tapestry-coach-kate-spade-capital-returns.md",
         "content/earnings-profiles/tpr.json"
@@ -9536,10 +10146,135 @@
       "first_seen": "2026-10-28",
       "id": "750c7dad402d7497ba7a7eb8",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/ibm-earnings-software-growth-cash-flow.md",
         "content/earnings-profiles/ibm.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "76342c276bac106ea96626b0": {
+      "company": "csco",
+      "evidence": {
+        "article_reviewed": "2026-11-19",
+        "article_sources": [
+          {
+            "title": "Cisco FY2027 first-quarter results release, 12 November 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000170/exhibit991pressrelease-q1f.htm"
+          },
+          {
+            "title": "Cisco Form 10-Q, quarter ended 24 October 2026, filed 17 November 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000185/csco-20261024.htm"
+          }
+        ],
+        "canonical_path": "/wealth/cisco-ai-network-supply-commitments/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0000858877-26-000185",
+          "filed": "2026-11-17",
+          "form": "10-Q",
+          "fp": "Q1",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 1.14,
+              "prior_year": 0.72,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 4552000000,
+              "prior_year": 2860000000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 18517000000,
+              "prior_year": 14883000000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-10-24",
+          "source": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000185/csco-20261024.htm"
+        }
+      },
+      "first_seen": "2026-11-19",
+      "id": "76342c276bac106ea96626b0",
+      "kind": "article_review",
+      "last_seen": "2026-11-19",
+      "paths": [
+        "content/wealth/cisco-ai-network-supply-commitments.md",
+        "content/earnings-profiles/csco.json"
+      ],
+      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
+      "severity": "low",
+      "status": "pending"
+    },
+    "77082fc30233f6e6937a0216": {
+      "company": "nvda",
+      "evidence": {
+        "article_reviewed": "2026-11-08",
+        "article_sources": [
+          {
+            "title": "Nvidia fiscal Q2 2027 Form 10-Q, product warranty liabilities",
+            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+          },
+          {
+            "title": "Nvidia fiscal Q1 2027 Form 10-Q, product warranty liabilities",
+            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm"
+          },
+          {
+            "title": "Nvidia fiscal Q2 2027 results and revenue comparisons",
+            "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027/"
+          }
+        ],
+        "canonical_path": "/wealth/nvidia-warranty-reserve/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001045810-26-000088",
+          "filed": "2026-11-17",
+          "form": "8-K",
+          "fp": "Q3",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.7,
+              "prior_year": 1.3,
+              "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 65287000000,
+              "prior_year": 31910000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 115844000000,
+              "prior_year": 57006000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
+              "unit": "USD"
+            }
+          },
+          "notes": [
+            "Q3 FY2027 figures verified against NVIDIA’s official release and Exhibit 99.1 furnished with its 17 November 2026 Form 8-K. Statements are unaudited.",
+            "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
+          ],
+          "period_end": "2026-10-25",
+          "published": "2026-11-17",
+          "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
+        }
+      },
+      "first_seen": "2026-11-19",
+      "id": "77082fc30233f6e6937a0216",
+      "kind": "article_review",
+      "last_seen": "2026-11-19",
+      "paths": [
+        "content/wealth/nvidia-warranty-reserve.md",
+        "content/earnings-profiles/nvda.json"
       ],
       "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
       "severity": "medium",
@@ -9553,7 +10288,7 @@
       "first_seen": "2026-11-16",
       "id": "7931946505c67c66d039478e",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/bytedance-400-billion-buyback-private-ipo-liquidity.md"
       ],
@@ -9614,7 +10349,7 @@
       "first_seen": "2026-11-12",
       "id": "7f433838584c7ef75021b0b5",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/meta-advertising-ai-spending-earnings.md",
         "content/earnings-profiles/meta.json"
@@ -9672,7 +10407,7 @@
       "first_seen": "2026-11-03",
       "id": "8259959f5084152072e90e42",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/idexx-recurring-diagnostics-growth-margin.md",
         "content/earnings-profiles/idxx.json"
@@ -9734,88 +10469,10 @@
       "first_seen": "2026-10-28",
       "id": "842970af7cead82840200005",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/netflix-earnings-growth-advertising-outlook.md",
         "content/earnings-profiles/nflx.json"
-      ],
-      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
-      "severity": "medium",
-      "status": "pending"
-    },
-    "885f85e4ab706761f113daba": {
-      "company": "ttwo",
-      "evidence": {
-        "article_reviewed": "2026-10-29",
-        "article_sources": [
-          {
-            "title": "Rockstar Games: GTA VI release date",
-            "url": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026"
-          },
-          {
-            "title": "Take-Two: GTA VI pre-orders, platforms and US pricing, 24 June 2026",
-            "url": "https://www.take2games.com/ir/news/rockstar-games-announces-pre-orders-grand-theft-auto-vi"
-          },
-          {
-            "title": "Associated Press: GTA VI launch timing, 18 November 2026",
-            "url": "https://apnews.com/article/6e255c930da6de820e539721f4682253"
-          },
-          {
-            "title": "Reuters: Sensor Tower digital preorder estimate, 9 November 2026",
-            "url": "https://www.reuters.com/business/take-two-projects-third-quarter-bookings-below-estimates-2026-11-09/"
-          },
-          {
-            "title": "Take-Two: Fiscal Q2 2027 results and guidance, 9 November 2026",
-            "url": "https://ir.take2games.com/node/32676/pdf"
-          },
-          {
-            "title": "Take-Two: Fiscal 2026 results, 21 May 2026",
-            "url": "https://www.take2games.com/ir/news/take-two-interactive-software-inc-reports-results-fourth-2"
-          },
-          {
-            "title": "Take-Two: GTA V worldwide retail sales in its first three days, 20 September 2013",
-            "url": "https://ir.take2games.com/node/16191/"
-          }
-        ],
-        "canonical_path": "/wealth/ttwo-gta-6-entertainment-launch-revenue/",
-        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
-        "latest_saved_result": {
-          "accession": "0001628280-26-072254",
-          "filed": "2026-11-09",
-          "form": "10-Q",
-          "fp": "Q2",
-          "fy": 2027,
-          "metrics": {
-            "diluted_eps": {
-              "current": -0.29,
-              "prior_year": -0.73,
-              "tag": "EarningsPerShareDiluted",
-              "unit": "USD/shares"
-            },
-            "net_income": {
-              "current": -54000000,
-              "prior_year": -133900000,
-              "tag": "NetIncomeLoss",
-              "unit": "USD"
-            },
-            "revenue": {
-              "current": 1497000000,
-              "prior_year": 1773800000,
-              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-              "unit": "USD"
-            }
-          },
-          "period_end": "2026-09-30",
-          "source": "https://www.sec.gov/Archives/edgar/data/946581/000162828026072254/ttwo-20260930.htm"
-        }
-      },
-      "first_seen": "2026-11-18",
-      "id": "885f85e4ab706761f113daba",
-      "kind": "article_review",
-      "last_seen": "2026-11-18",
-      "paths": [
-        "content/wealth/ttwo-gta-6-entertainment-launch-revenue.md",
-        "content/earnings-profiles/ttwo.json"
       ],
       "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
       "severity": "medium",
@@ -9829,7 +10486,7 @@
       "first_seen": "2026-11-18",
       "id": "88b03a85f03510b3801dd389",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/anthropic-linked-billing-api-customer-pays-agent-economics.md"
       ],
@@ -9886,7 +10543,7 @@
       "first_seen": "2026-11-04",
       "id": "8b4f8ad72b3124c3fe799597",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/gartner-contract-value-buybacks.md",
         "content/earnings-profiles/it.json"
@@ -9903,7 +10560,7 @@
       "first_seen": "2026-11-10",
       "id": "9034773fe06dfad8bfbf7aba",
       "kind": "coverage_check",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/earnings-profiles/okta.json"
       ],
@@ -9919,7 +10576,7 @@
       "first_seen": "2026-11-17",
       "id": "917d8a920f4985a8f7625a86",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/databricks-three-billion-emea-investment-agent-platform-distribution.md"
       ],
@@ -9978,7 +10635,7 @@
       "first_seen": "2026-10-31",
       "id": "94a65c4d562492d2d7dabfbc",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/sandisk-earnings-ai-storage-stock-split.md",
         "content/earnings-profiles/sndk.json"
@@ -10036,7 +10693,7 @@
       "first_seen": "2026-11-03",
       "id": "94c07432c919c5b7e9c51f52",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/marriott-fees-growth-buybacks-debt.md",
         "content/earnings-profiles/mar.json"
@@ -10094,7 +10751,7 @@
       "first_seen": "2026-11-03",
       "id": "986e05340377875bf2d8a324",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/onsemi-margin-recovery-ai-data-centre.md",
         "content/earnings-profiles/on.json"
@@ -10158,7 +10815,7 @@
       "first_seen": "2026-10-30",
       "id": "a1f97c61e7dddf2a846b965d",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/alphabet-europe-ai-sovereignty.md",
         "content/earnings-profiles/googl.json"
@@ -10216,7 +10873,7 @@
       "first_seen": "2026-11-08",
       "id": "a41583d882ac2e8c780a10b9",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/bloom-energy-earnings-growth-cash-flow.md",
         "content/earnings-profiles/be.json"
@@ -10274,7 +10931,7 @@
       "first_seen": "2026-11-09",
       "id": "a4511d86dfc33951d02fc0cd",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/duke-energy-capital-spending-load-growth.md",
         "content/earnings-profiles/duk.json"
@@ -10332,7 +10989,7 @@
       "first_seen": "2026-11-02",
       "id": "a4be7bf8f09e94fb04d16bee",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/nike-margin-demand-turnaround.md",
         "content/earnings-profiles/nke.json"
@@ -10394,7 +11051,7 @@
       "first_seen": "2026-11-07",
       "id": "ab370a13d46bf7d7b0a17490",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/ai-infrastructure-earnings.md",
         "content/earnings-profiles/amd.json"
@@ -10456,7 +11113,7 @@
       "first_seen": "2026-11-07",
       "id": "ab776339c96d4026d9b3f214",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/ai-infrastructure-earnings.md",
         "content/earnings-profiles/smci.json"
@@ -10473,7 +11130,7 @@
       "first_seen": "2026-11-18",
       "id": "ab7973030276f5a820000905",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/revolut-italy-judicial-supervision-aml-growth-costs.md"
       ],
@@ -10538,7 +11195,7 @@
       "first_seen": "2026-11-12",
       "id": "ad2ec106c4a862d1f8b6f98d",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/openai-aws-marketplace-enterprise-procurement-economics.md",
         "content/earnings-profiles/amzn.json"
@@ -10592,12 +11249,28 @@
       "first_seen": "2026-10-31",
       "id": "adedb4f6805da4a9e98c854c",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/microsoft-nscale-power-grid-delay.md",
         "content/earnings-profiles/msft.json"
       ],
       "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "af2dd9fcb66df6b5b3722222": {
+      "company": "unmapped",
+      "evidence": {
+        "title": "OpenAI's Astra for Law Leads a Legal AI Benchmark. Why Does It Still Miss Four in Five Tasks?"
+      },
+      "first_seen": "2026-11-19",
+      "id": "af2dd9fcb66df6b5b3722222",
+      "kind": "article_mapping",
+      "last_seen": "2026-11-19",
+      "paths": [
+        "content/wealth/openai-astra-law-legal-benchmark-reliability-economics.md"
+      ],
+      "reason": "Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.",
       "severity": "medium",
       "status": "pending"
     },
@@ -10609,7 +11282,7 @@
       "first_seen": "2026-11-12",
       "id": "b08ae5372476782fde9168cc",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/anthropic-fable-mythos-52-pricing-routing-economics.md"
       ],
@@ -10674,7 +11347,7 @@
       "first_seen": "2026-11-12",
       "id": "b0a5fb3306c0f912d75b0503",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/openai-aws-marketplace-enterprise-procurement-economics.md",
         "content/earnings-profiles/msft.json"
@@ -10683,60 +11356,59 @@
       "severity": "low",
       "status": "pending"
     },
-    "b3e4675e8399f19637974d47": {
-      "company": "nvda",
+    "b3610e75094781d1ea382105": {
+      "company": "lly",
       "evidence": {
-        "article_reviewed": "2026-10-20",
+        "article_reviewed": "2026-11-18",
         "article_sources": [
           {
-            "title": "Company primary reporting — business model and risk disclosures",
-            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+            "title": "Eli Lilly Q3 2026 Form 10-Q, Note 3: Boehringer Ingelheim collaboration",
+            "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000108/lly-20260930.htm"
+          },
+          {
+            "title": "Eli Lilly Q3 2026 results, SEC earnings release, 29 October 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000104/q326lillysalesandearningsp.htm"
           }
         ],
-        "canonical_path": "/wealth/nvidia-ai-gpu-margins-2026/",
+        "canonical_path": "/wealth/lilly-jardiance-milestone-revenue/",
         "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
         "latest_saved_result": {
-          "accession": "",
-          "filed": "",
-          "form": "Issuer earnings release (SEC filing pending)",
+          "accession": "0000059478-26-000108",
+          "filed": "2026-10-29",
+          "form": "10-Q",
           "fp": "Q3",
-          "fy": 2027,
+          "fy": 2026,
           "metrics": {
             "diluted_eps": {
-              "current": 2.7,
-              "prior_year": 1.3,
-              "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
+              "current": 7.22,
+              "prior_year": 6.21,
+              "tag": "EarningsPerShareDiluted",
               "unit": "USD/shares"
             },
             "net_income": {
-              "current": 65287000000,
-              "prior_year": 31910000000,
-              "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
+              "current": 6451000000,
+              "prior_year": 5583000000,
+              "tag": "NetIncomeLoss",
               "unit": "USD"
             },
             "revenue": {
-              "current": 115844000000,
-              "prior_year": 57006000000,
-              "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
+              "current": 24397000000,
+              "prior_year": 17601000000,
+              "tag": "Revenues",
               "unit": "USD"
             }
           },
-          "notes": [
-            "Q3 FY2027 numbers are from NVIDIA's official unaudited earnings announcement dated 17 November 2026. The SEC earnings 8-K was not yet indexed at preparation; no SEC accession or filing date is asserted.",
-            "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
-          ],
-          "period_end": "2026-10-25",
-          "published": "2026-11-17",
-          "source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000108/lly-20260930.htm"
         }
       },
-      "first_seen": "2026-11-18",
-      "id": "b3e4675e8399f19637974d47",
+      "first_seen": "2026-11-19",
+      "id": "b3610e75094781d1ea382105",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
-        "content/wealth/nvidia-ai-gpu-margins-2026.md",
-        "content/earnings-profiles/nvda.json"
+        "content/wealth/lilly-jardiance-milestone-revenue.md",
+        "content/earnings-profiles/lly.json"
       ],
       "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
       "severity": "low",
@@ -10789,7 +11461,7 @@
       "first_seen": "2026-10-31",
       "id": "b50ca524c1c6a7e8f4d50678",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/amazon-germany-investment-returns.md",
         "content/earnings-profiles/amzn.json"
@@ -10851,7 +11523,7 @@
       "first_seen": "2026-10-28",
       "id": "b55f6bf094c2801c107055bb",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/meta-advertising-growth-ai-cash-flow.md",
         "content/earnings-profiles/meta.json"
@@ -10909,13 +11581,72 @@
       "first_seen": "2026-11-02",
       "id": "bb7481a03c832f07bc0a6b22",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/boeing-cash-flow-commercial-airplanes-losses.md",
         "content/earnings-profiles/ba.json"
       ],
       "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
       "severity": "low",
+      "status": "pending"
+    },
+    "c554e8040237438021234b30": {
+      "company": "nvda",
+      "evidence": {
+        "article_reviewed": "2026-10-21",
+        "article_sources": [
+          {
+            "title": "PyTorch announcement",
+            "url": "https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/"
+          }
+        ],
+        "canonical_path": "",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001045810-26-000088",
+          "filed": "2026-11-17",
+          "form": "8-K",
+          "fp": "Q3",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.7,
+              "prior_year": 1.3,
+              "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 65287000000,
+              "prior_year": 31910000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 115844000000,
+              "prior_year": 57006000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
+              "unit": "USD"
+            }
+          },
+          "notes": [
+            "Q3 FY2027 figures verified against NVIDIA’s official release and Exhibit 99.1 furnished with its 17 November 2026 Form 8-K. Statements are unaudited.",
+            "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
+          ],
+          "period_end": "2026-10-25",
+          "published": "2026-11-17",
+          "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
+        }
+      },
+      "first_seen": "2026-11-19",
+      "id": "c554e8040237438021234b30",
+      "kind": "article_review",
+      "last_seen": "2026-11-19",
+      "paths": [
+        "content/wealth/nvidia-torchneuron-software-competition.md",
+        "content/earnings-profiles/nvda.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
       "status": "pending"
     },
     "c571e55a8b6490903d842f7d": {
@@ -10967,7 +11698,7 @@
       "first_seen": "2026-11-04",
       "id": "c571e55a8b6490903d842f7d",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/aptiv-post-spin-segment-quality.md",
         "content/earnings-profiles/aptv.json"
@@ -10984,7 +11715,7 @@
       "first_seen": "2026-10-28",
       "id": "c8b4e15d74e5225f9ca641f5",
       "kind": "coverage_check",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/earnings-profiles/brk-b.json"
       ],
@@ -10992,60 +11723,71 @@
       "severity": "medium",
       "status": "pending"
     },
-    "d3431fdf18f144486c1f9172": {
-      "company": "nvda",
+    "d3f8af24cc6cc13faf4bdc21": {
+      "company": "ttwo",
       "evidence": {
-        "article_reviewed": "2026-10-21",
+        "article_reviewed": "2026-11-18",
         "article_sources": [
           {
-            "title": "PyTorch announcement",
-            "url": "https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/"
+            "title": "SEC EDGAR · Take-Two Form 10-Q for the quarter ended 30 September 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/946581/000162828026072254/ttwo-20260930.htm"
+          },
+          {
+            "title": "SEC EDGAR · Take-Two Form 8-K, Exhibit 99.1, 9 November 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/946581/000162828026072175/ttwo2q27earningsrelease.htm"
+          },
+          {
+            "title": "ChartExchange · TTWO historical closing prices",
+            "url": "https://chartexchange.com/symbol/nasdaq-ttwo/historical/"
+          },
+          {
+            "title": "Take-Two · Rockstar’s GTA VI console preorder and pricing announcement",
+            "url": "https://www.take2games.com/ir/news/rockstar-games-announces-pre-orders-grand-theft-auto-vi"
+          },
+          {
+            "title": "Rockstar Games · Official GTA VI media and downloadable screenshots",
+            "url": "https://www.rockstargames.com/VI/media"
           }
         ],
-        "canonical_path": "",
+        "canonical_path": "/wealth/gta-6-100-million-ttwo-valuation/",
         "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
         "latest_saved_result": {
-          "accession": "",
-          "filed": "",
-          "form": "Issuer earnings release (SEC filing pending)",
-          "fp": "Q3",
+          "accession": "0001628280-26-072254",
+          "filed": "2026-11-09",
+          "form": "10-Q",
+          "fp": "Q2",
           "fy": 2027,
           "metrics": {
             "diluted_eps": {
-              "current": 2.7,
-              "prior_year": 1.3,
-              "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
+              "current": -0.29,
+              "prior_year": -0.73,
+              "tag": "EarningsPerShareDiluted",
               "unit": "USD/shares"
             },
             "net_income": {
-              "current": 65287000000,
-              "prior_year": 31910000000,
-              "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
+              "current": -54000000,
+              "prior_year": -133900000,
+              "tag": "NetIncomeLoss",
               "unit": "USD"
             },
             "revenue": {
-              "current": 115844000000,
-              "prior_year": 57006000000,
-              "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
+              "current": 1497000000,
+              "prior_year": 1773800000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
               "unit": "USD"
             }
           },
-          "notes": [
-            "Q3 FY2027 numbers are from NVIDIA's official unaudited earnings announcement dated 17 November 2026. The SEC earnings 8-K was not yet indexed at preparation; no SEC accession or filing date is asserted.",
-            "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
-          ],
-          "period_end": "2026-10-25",
-          "published": "2026-11-17",
-          "source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/946581/000162828026072254/ttwo-20260930.htm"
         }
       },
-      "first_seen": "2026-11-18",
-      "id": "d3431fdf18f144486c1f9172",
+      "first_seen": "2026-11-19",
+      "id": "d3f8af24cc6cc13faf4bdc21",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
-        "content/wealth/nvidia-torchneuron-software-competition.md",
-        "content/earnings-profiles/nvda.json"
+        "content/wealth/gta-6-100-million-ttwo-valuation.md",
+        "content/earnings-profiles/ttwo.json"
       ],
       "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
       "severity": "low",
@@ -11104,7 +11846,7 @@
       "first_seen": "2026-11-08",
       "id": "d4bb6d909284a1efd3cf98bf",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/microsoft-xbox-content-recovery.md",
         "content/earnings-profiles/msft.json"
@@ -11158,7 +11900,7 @@
       "first_seen": "2026-10-31",
       "id": "d62a64f807d253018619e9e5",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/microsoft-azure-ai-returns-2026.md",
         "content/earnings-profiles/msft.json"
@@ -11216,7 +11958,7 @@
       "first_seen": "2026-11-01",
       "id": "d68353ecb0ad4d7f0cc36d05",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/ge-vernova-backlog-cash-flow.md",
         "content/earnings-profiles/gev.json"
@@ -11233,7 +11975,7 @@
       "first_seen": "2026-11-16",
       "id": "d8cd404b933af68d51e04381",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/anthropic-always-on-agents-business-case-permissions-cost.md"
       ],
@@ -11314,7 +12056,7 @@
       "first_seen": "2026-10-28",
       "id": "da7b289733bf3c4cc7de361d",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/tesla-spacex-merger-2027.md",
         "content/earnings-profiles/spcx.json"
@@ -11331,7 +12073,7 @@
       "first_seen": "2026-11-17",
       "id": "da843b900adfb5e6fff8e433",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/anthropic-self-hosted-managed-agents-enterprise-control-economics.md"
       ],
@@ -11347,7 +12089,7 @@
       "first_seen": "2026-11-14",
       "id": "db2f004713638d126726a1ff",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/openai-chatgpt-wallet-agentic-checkout-economics.md"
       ],
@@ -11355,30 +12097,38 @@
       "severity": "medium",
       "status": "pending"
     },
-    "dba421ee79cc2034986d76b4": {
+    "de70e1dc6ef7190cb8793ea7": {
       "company": "nvda",
       "evidence": {
-        "article_reviewed": "2026-10-18",
+        "article_reviewed": "2026-11-17",
         "article_sources": [
           {
-            "title": "second-quarter fiscal 2027 results",
-            "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/"
+            "title": "NVIDIA Q3 FY2027 SEC Form 8-K Exhibit 99.1, 17 November 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
           },
           {
-            "title": "quarterly SEC filing",
+            "title": "NVIDIA — Third-quarter fiscal 2027 earnings release and unaudited financial statements, 17 November 2026",
+            "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+          },
+          {
+            "title": "NVIDIA — Fiscal Q2 2027 Form 10-Q, SEC, 26 August 2026",
             "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
           },
           {
-            "title": "Microsoft's own earnings call",
-            "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+            "title": "NVIDIA — Fiscal Q2 2027 earnings exhibit, SEC Form 8-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm"
+          },
+          {
+            "title": "Gavin Phillips — archival NVIDIA graphics card photograph under Unsplash License",
+            "url": "https://unsplash.com/photos/nvidia-geforce-rtx-graphics-card-with-gold-accents-mEQUQqVk-MU"
           }
         ],
-        "canonical_path": "/wealth/nvidia-gross-margin-ai-demand/",
+        "canonical_path": "/news/nvidia-q3-fy2027-earnings-numbers/",
         "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
         "latest_saved_result": {
-          "accession": "",
-          "filed": "",
-          "form": "Issuer earnings release (SEC filing pending)",
+          "accession": "0001045810-26-000088",
+          "filed": "2026-11-17",
+          "form": "8-K",
           "fp": "Q3",
           "fy": 2027,
           "metrics": {
@@ -11402,20 +12152,20 @@
             }
           },
           "notes": [
-            "Q3 FY2027 numbers are from NVIDIA's official unaudited earnings announcement dated 17 November 2026. The SEC earnings 8-K was not yet indexed at preparation; no SEC accession or filing date is asserted.",
+            "Q3 FY2027 figures verified against NVIDIA’s official release and Exhibit 99.1 furnished with its 17 November 2026 Form 8-K. Statements are unaudited.",
             "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
           ],
           "period_end": "2026-10-25",
           "published": "2026-11-17",
-          "source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
+          "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
         }
       },
-      "first_seen": "2026-11-18",
-      "id": "dba421ee79cc2034986d76b4",
+      "first_seen": "2026-11-19",
+      "id": "de70e1dc6ef7190cb8793ea7",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
-        "content/wealth/nvidia-gross-margin-ai-demand.md",
+        "content/wealth/nvidia-q3-fy2027-earnings-numbers.md",
         "content/earnings-profiles/nvda.json"
       ],
       "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
@@ -11467,7 +12217,7 @@
       "first_seen": "2026-11-08",
       "id": "e2a4927835029f245f51efd4",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/visa-payments-growth-incentives.md",
         "content/earnings-profiles/v.json"
@@ -11527,7 +12277,7 @@
       "first_seen": "2026-11-01",
       "id": "e2ff9639cd5188f2222df837",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/eli-lilly-foundayo-obesity-growth-2026-10-19.md",
         "content/earnings-profiles/lly.json"
@@ -11583,7 +12333,7 @@
       "first_seen": "2026-10-30",
       "id": "e52b44034a293995fc7b9b41",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/nokia-ai-growth-cash-flow.md",
         "content/earnings-profiles/googl.json"
@@ -11591,20 +12341,6 @@
       "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
       "severity": "medium",
       "status": "dismissed"
-    },
-    "e685379f084f8bb52b4579d6": {
-      "company": "nvda",
-      "evidence": {},
-      "first_seen": "2026-11-18",
-      "id": "e685379f084f8bb52b4579d6",
-      "kind": "profile_integrity",
-      "last_seen": "2026-11-18",
-      "paths": [
-        "content/earnings-profiles/nvda.json"
-      ],
-      "reason": "Missing or invalid report/end dates; Source URL does not match the issuer and filing accession; Unsupported filing form in SEC quarterly dataset",
-      "severity": "high",
-      "status": "pending"
     },
     "e8a450658190ddaca84a3d55": {
       "company": "unmapped",
@@ -11614,7 +12350,7 @@
       "first_seen": "2026-11-12",
       "id": "e8a450658190ddaca84a3d55",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/michael-carrick-sacked-manchester-united-manu-stock.md"
       ],
@@ -11679,7 +12415,7 @@
       "first_seen": "2026-10-28",
       "id": "ebc2af94dd4d36445aa1a430",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/tesla-energy-storage-margins.md",
         "content/earnings-profiles/tsla.json"
@@ -11737,7 +12473,7 @@
       "first_seen": "2026-11-14",
       "id": "edde20dd7e920d9bbd392f80",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/starbucks-earnings-turnaround-sales-china.md",
         "content/earnings-profiles/sbux.json"
@@ -11754,7 +12490,7 @@
       "first_seen": "2026-10-28",
       "id": "edeb84677b362b4bb3678657",
       "kind": "coverage_check",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/earnings-profiles/vmrk.json"
       ],
@@ -11770,7 +12506,7 @@
       "first_seen": "2026-11-16",
       "id": "ef0eea7b0dda3c7b7e4b2082",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/openai-biobasicsbench-wet-lab-ai-evidence-reliability.md"
       ],
@@ -11827,7 +12563,7 @@
       "first_seen": "2026-11-07",
       "id": "ef5977aad3e283ad663557e1",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/conocophillips-cash-flow-shareholder-returns.md",
         "content/earnings-profiles/cop.json"
@@ -11885,7 +12621,7 @@
       "first_seen": "2026-10-28",
       "id": "f4938ec19343a379f40cb114",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/western-digital-earnings-ai-storage-cash-flow.md",
         "content/earnings-profiles/wdc.json"
@@ -11943,7 +12679,7 @@
       "first_seen": "2026-11-07",
       "id": "f57dc7bff02a00097ca61984",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/cvs-separation-segment-economics.md",
         "content/earnings-profiles/cvs.json"
@@ -12003,7 +12739,7 @@
       "first_seen": "2026-11-01",
       "id": "f73b4125bac52f62c81f9bc3",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/alphabet-ai-capex-free-cash-flow.md",
         "content/earnings-profiles/googl.json"
@@ -12011,6 +12747,65 @@
       "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
       "severity": "low",
       "status": "reviewed"
+    },
+    "f8f5361c1050925e5d5a5f0f": {
+      "company": "nvda",
+      "evidence": {
+        "article_reviewed": "2026-10-22",
+        "article_sources": [
+          {
+            "title": "Nokia Form 6-K, 22 October 2026 — Q3 release and full interim report, accession 0001104659-26-117972",
+            "url": "https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm"
+          }
+        ],
+        "canonical_path": "/news/nokia-ai-growth-cash-flow/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001045810-26-000088",
+          "filed": "2026-11-17",
+          "form": "8-K",
+          "fp": "Q3",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": 2.7,
+              "prior_year": 1.3,
+              "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": 65287000000,
+              "prior_year": 31910000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 115844000000,
+              "prior_year": 57006000000,
+              "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
+              "unit": "USD"
+            }
+          },
+          "notes": [
+            "Q3 FY2027 figures verified against NVIDIA’s official release and Exhibit 99.1 furnished with its 17 November 2026 Form 8-K. Statements are unaudited.",
+            "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
+          ],
+          "period_end": "2026-10-25",
+          "published": "2026-11-17",
+          "source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000088/q3fy27pr.htm"
+        }
+      },
+      "first_seen": "2026-11-19",
+      "id": "f8f5361c1050925e5d5a5f0f",
+      "kind": "article_review",
+      "last_seen": "2026-11-19",
+      "paths": [
+        "content/wealth/nokia-ai-growth-cash-flow.md",
+        "content/earnings-profiles/nvda.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
+      "severity": "medium",
+      "status": "pending"
     },
     "f999a9c496888e1764fcaa15": {
       "company": "amzn",
@@ -12079,7 +12874,7 @@
       "first_seen": "2026-10-31",
       "id": "f999a9c496888e1764fcaa15",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/anthropic-loss-ipo-valuation.md",
         "content/earnings-profiles/amzn.json"
@@ -12096,11 +12891,89 @@
       "first_seen": "2026-11-16",
       "id": "facdcccedde7c19d5764eeaa",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/anthropic-ipo-2026-prospectus-numbers-valuation.md"
       ],
       "reason": "Company article has no unambiguous monitored issuer mapping; confirm company identity and primary sources.",
+      "severity": "medium",
+      "status": "pending"
+    },
+    "fb613db5b3ccf122e5265cbf": {
+      "company": "ttwo",
+      "evidence": {
+        "article_reviewed": "2026-10-29",
+        "article_sources": [
+          {
+            "title": "Rockstar Games: GTA VI release date",
+            "url": "https://www.rockstargames.com/newswire/article/ak3ak31a49a221/grand-theft-auto-vi-is-now-set-to-launch-november-19-2026"
+          },
+          {
+            "title": "Take-Two: GTA VI pre-orders, platforms and US pricing, 24 June 2026",
+            "url": "https://www.take2games.com/ir/news/rockstar-games-announces-pre-orders-grand-theft-auto-vi"
+          },
+          {
+            "title": "Associated Press: GTA VI launch timing, 18 November 2026",
+            "url": "https://apnews.com/article/6e255c930da6de820e539721f4682253"
+          },
+          {
+            "title": "Reuters: Sensor Tower digital preorder estimate, 9 November 2026",
+            "url": "https://www.reuters.com/business/take-two-projects-third-quarter-bookings-below-estimates-2026-11-09/"
+          },
+          {
+            "title": "Take-Two: Fiscal Q2 2027 results and guidance, 9 November 2026",
+            "url": "https://ir.take2games.com/node/32676/pdf"
+          },
+          {
+            "title": "Take-Two: Fiscal 2026 results, 21 May 2026",
+            "url": "https://www.take2games.com/ir/news/take-two-interactive-software-inc-reports-results-fourth-2"
+          },
+          {
+            "title": "Take-Two: GTA V worldwide retail sales in its first three days, 20 September 2013",
+            "url": "https://ir.take2games.com/node/16191/"
+          }
+        ],
+        "canonical_path": "/wealth/ttwo-gta-6-entertainment-launch-revenue/",
+        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
+        "latest_saved_result": {
+          "accession": "0001628280-26-072254",
+          "filed": "2026-11-09",
+          "form": "10-Q",
+          "fp": "Q2",
+          "fy": 2027,
+          "metrics": {
+            "diluted_eps": {
+              "current": -0.29,
+              "prior_year": -0.73,
+              "tag": "EarningsPerShareDiluted",
+              "unit": "USD/shares"
+            },
+            "net_income": {
+              "current": -54000000,
+              "prior_year": -133900000,
+              "tag": "NetIncomeLoss",
+              "unit": "USD"
+            },
+            "revenue": {
+              "current": 1497000000,
+              "prior_year": 1773800000,
+              "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD"
+            }
+          },
+          "period_end": "2026-09-30",
+          "source": "https://www.sec.gov/Archives/edgar/data/946581/000162828026072254/ttwo-20260930.htm"
+        }
+      },
+      "first_seen": "2026-11-19",
+      "id": "fb613db5b3ccf122e5265cbf",
+      "kind": "article_review",
+      "last_seen": "2026-11-19",
+      "paths": [
+        "content/wealth/ttwo-gta-6-entertainment-launch-revenue.md",
+        "content/earnings-profiles/ttwo.json"
+      ],
+      "reason": "Newer filing than the article review date; assess whether claims or outlook need updating.",
       "severity": "medium",
       "status": "pending"
     },
@@ -12149,7 +13022,7 @@
       "first_seen": "2026-10-28",
       "id": "fb87998f103d5b22f3bd277d",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/american-express-earnings-spending-adjusted-profit.md",
         "content/earnings-profiles/axp.json"
@@ -12211,69 +13084,10 @@
       "first_seen": "2026-11-10",
       "id": "fd7669fa178da22fa21fe43a",
       "kind": "article_review",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/tesla-services-gross-profit.md",
         "content/earnings-profiles/tsla.json"
-      ],
-      "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
-      "severity": "low",
-      "status": "pending"
-    },
-    "fd770fcb9cf63dc1e49cd4e4": {
-      "company": "nvda",
-      "evidence": {
-        "article_reviewed": "2026-10-22",
-        "article_sources": [
-          {
-            "title": "Nokia Form 6-K, 22 October 2026 — Q3 release and full interim report, accession 0001104659-26-117972",
-            "url": "https://www.sec.gov/Archives/edgar/data/924613/000110465926117972/tm2628115d1_6k.htm"
-          }
-        ],
-        "canonical_path": "/news/nokia-ai-growth-cash-flow/",
-        "historical_context": "Preserve original research/publication dates; distinguish historical claims from current ones.",
-        "latest_saved_result": {
-          "accession": "",
-          "filed": "",
-          "form": "Issuer earnings release (SEC filing pending)",
-          "fp": "Q3",
-          "fy": 2027,
-          "metrics": {
-            "diluted_eps": {
-              "current": 2.7,
-              "prior_year": 1.3,
-              "tag": "NVIDIA Q3 earnings release: GAAP EarningsPerShareDiluted",
-              "unit": "USD/shares"
-            },
-            "net_income": {
-              "current": 65287000000,
-              "prior_year": 31910000000,
-              "tag": "NVIDIA Q3 earnings release: GAAP NetIncome",
-              "unit": "USD"
-            },
-            "revenue": {
-              "current": 115844000000,
-              "prior_year": 57006000000,
-              "tag": "NVIDIA Q3 earnings release: GAAP Revenue",
-              "unit": "USD"
-            }
-          },
-          "notes": [
-            "Q3 FY2027 numbers are from NVIDIA's official unaudited earnings announcement dated 17 November 2026. The SEC earnings 8-K was not yet indexed at preparation; no SEC accession or filing date is asserted.",
-            "Data Center revenue: $107.6 billion; GAAP gross margin: 74.8%; Q4 FY2027 revenue guidance: $130 billion ±3%, covering an additional week. Non-GAAP EPS: $2.68."
-          ],
-          "period_end": "2026-10-25",
-          "published": "2026-11-17",
-          "source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027"
-        }
-      },
-      "first_seen": "2026-11-18",
-      "id": "fd770fcb9cf63dc1e49cd4e4",
-      "kind": "article_review",
-      "last_seen": "2026-11-18",
-      "paths": [
-        "content/wealth/nokia-ai-growth-cash-flow.md",
-        "content/earnings-profiles/nvda.json"
       ],
       "reason": "Baseline consistency review of this article against the saved company results and its original sources.",
       "severity": "low",
@@ -12287,7 +13101,7 @@
       "first_seen": "2026-11-15",
       "id": "ff3f2904626f84a5a47a2857",
       "kind": "article_mapping",
-      "last_seen": "2026-11-18",
+      "last_seen": "2026-11-19",
       "paths": [
         "content/wealth/openai-hacktron-agent-security-third-party-risk.md"
       ],
