@@ -1,0 +1,101 @@
+{
+  "story_fingerprint": "e0442dd7a0d0be738c62724f",
+  "company": "TSN",
+  "date": "2026-11-19",
+  "status": "prepared_not_published",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to all factual, editorial, image, test, CI, deployment and live-verification gates.",
+  "story_thesis": "Chicken and Prepared Foods are protecting Tyson from a severe Beef loss, but fiscal 2027 cash conversion will test how durable that diversification is.",
+  "article_path": "content/wealth/tyson-chicken-beef-segment-profit.md",
+  "canonical_url": "https://compound.ie/wealth/tyson-chicken-beef-segment-profit/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/100493/000010049326000077/tsn2026q4exh-991.htm",
+    "https://www.sec.gov/Archives/edgar/data/100493/000010049326000079/tsn-20261003.htm"
+  ],
+  "identity": {
+    "issuer": "Tyson Foods, Inc.",
+    "CIK": 100493,
+    "release_accession": "0000100493-26-000077",
+    "filing_accession": "0000100493-26-000079",
+    "fiscal_year": 2026,
+    "fiscal_period": "FY",
+    "period_end": "2026-10-03",
+    "filing_date": "2026-11-16",
+    "currency": "USD",
+    "calendar_note": "53-week fiscal year"
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, both content inventories, the live site, the prior 14 days of posts, open and merged PRs, company-publication records and concurrent Compound workflows. Tyson has a maintained stock profile but no canonical article answering the Beef-versus-Chicken segment-economics question. No active attempt uses this fingerprint.",
+  "claim_checks": [
+    {
+      "claim": "Reported segment operating income: Beef -$1.215bn, Chicken $1.749bn, Prepared Foods $1.326bn",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results release segment table and 10-K segment results",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Chicken plus Prepared Foods earned $3.075bn; Beef loss absorbed about 39.5%",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "1.749 + 1.326 = $3.075bn; 1.215 / 3.075 = 39.51%",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Beef volume -10.6% and price +10.2%; Chicken volume +4.1% and price +0.8%; Prepared volume +2.0% and price +3.7%",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results release sales-volume and average-price tables",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "GAAP operating income $1.100bn versus adjusted operating income $1.977bn",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release consolidated results and non-GAAP reconciliation; measures explicitly distinguished",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Operating cash flow $2.433bn, capex $770m and non-GAAP free cash flow $1.663bn; debt reduced $1.080bn",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release highlights and cash-flow reconciliation; 2.433 - 0.770 = $1.663bn",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "FY2027 FCF guidance $0.8-$1.3bn; midpoint about 37% below FY2026",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Management outlook; midpoint $1.05bn; (1.05 / 1.663 - 1) = -36.86%",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "FY2027 adjusted Beef range -$300m to +$100m; Chicken $1.3-$1.6bn; Prepared Foods $1.25-$1.4bn",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Management segment outlook; identified as adjusted guidance, not achieved GAAP results",
+      "result": "verified in separate claim pass"
+    }
+  ],
+  "fact_check_notes": [
+    "Reported and adjusted results are kept separate; plant restructuring and legal costs are not dismissed as non-economic.",
+    "Fiscal 2026 had 53 weeks and the article warns against assuming the calendar benefit repeats.",
+    "No commodity forecast, price, consensus figure, quotation or unsupported recovery timing is used."
+  ],
+  "unresolved_material_claims": [],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:150th_Anniversary_of_U_S_Department_of_Agriculture-Historical_imagery_(20120105-OC-AMW-0507).jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/3/38/150th_Anniversary_of_U_S_Department_of_Agriculture-Historical_imagery_%2820120105-OC-AMW-0507%29.jpg",
+    "photographer": "Bob Nichols / USDA",
+    "license": "Public domain",
+    "capture_date": "2010-03-25",
+    "description": "USDA poultry grader inspecting chicken at Tyson Foods' Berryville, Arkansas plant",
+    "unique_asset": true,
+    "source_sha256": "5865b5ba53abe7858ec7044b28a1295308c8994cb1bf076da13ff1174be29ad7"
+  },
+  "gates": {
+    "offline_tests": "51 passed: news-image, finance-discovery, earnings-review, earnings-SEO, stock-inline-ad and pending-research-ad tests",
+    "build": "Passed production-base build: 319 articles, 837 tags, 35 pages and 62 tools after restoring the current branch's approved image cache without committing unrelated assets.",
+    "render": "Rendered HTML inspected: correct canonical, one H1, indexable, stock-profile/earnings-hub/diversification links and visible source credit. Sitemap and finance catalogue include the canonical. The generated 1200x675 WebP social image was visually inspected.",
+    "ads": "Standard AdSense loader rendered with client ca-pub-6115783809711785. The site has no fixed article_top/article_bottom slot IDs configured, so no fixed slot markup is expected; Auto Ads remains enabled through the standard loader and consent controls.",
+    "ci": "pending exact-head CI",
+    "deployment": "not merged; no live publication claimed"
+  },
+  "article_sha256": "38917493690f77d4a4adbbbb60c16e3a547b4a6b9a5076d2d8a09bdb1791a799",
+  "published_image_sha256": "3d2c80311fc4462d8d85dea9de4ae10935380f4b9d4649b97bc67102c4940af5",
+  "social_image_sha256": "4725b449891cc076b3e9ff048ad08db307139acc2512fb96c783141b0e9fc5d0",
+  "publication_state": "prepared_not_published",
+  "new_articles_published": 0
+}

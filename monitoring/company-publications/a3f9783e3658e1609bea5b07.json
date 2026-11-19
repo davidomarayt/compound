@@ -1,0 +1,95 @@
+{
+  "story_fingerprint": "a3f9783e3658e1609bea5b07",
+  "company": "DIS",
+  "date": "2026-11-19",
+  "status": "prepared_not_published",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to all factual, editorial, image, test, CI, deployment and live-verification gates.",
+  "story_thesis": "Disney's dominant profit segment is entering another capital cycle; returns depend on incremental margins and cash generation keeping pace with parks and cruise assets.",
+  "article_path": "content/wealth/disney-experiences-capital-spending-returns.md",
+  "canonical_url": "https://compound.ie/wealth/disney-experiences-capital-spending-returns/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000065/fy2026_q4xerxex991.htm",
+    "https://www.sec.gov/Archives/edgar/data/1744489/000174448926000066/dis-20261003.htm"
+  ],
+  "identity": {
+    "issuer": "The Walt Disney Company",
+    "CIK": 1744489,
+    "release_accession": "0001744489-26-000065",
+    "filing_accession": "0001744489-26-000066",
+    "fiscal_year": 2026,
+    "fiscal_period": "FY",
+    "period_end": "2026-10-03",
+    "filing_date": "2026-11-17",
+    "currency": "USD",
+    "calendar_note": "53-week fiscal year"
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, both content inventories, the live site, the prior 14 days of posts, open and merged PRs, company-publication records and concurrent Compound workflows. Disney has a maintained stock profile but no canonical article answering the Experiences return-on-capital question. No active attempt uses this fingerprint.",
+  "claim_checks": [
+    {
+      "claim": "Experiences revenue $39.566bn and segment operating income $11.191bn, +9% and +12%",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results release segment table and 10-K segment results",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Experiences margin 28.3% versus 27.6%; incremental margin about 35%",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "11.191 / 39.566 = 28.28%; 9.995 / 36.156 = 27.64%; (11.191 - 9.995) / (39.566 - 36.156) = 35.07%",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Experiences contributed about 56.7% of total segment operating income",
+      "source_indexes": [0],
+      "location_or_arithmetic": "11.191 / 19.728 = 56.72%; segment operating income is labelled non-GAAP",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Operating cash flow $19.270bn, parks/resorts/property investment $8.698bn, free cash flow $10.572bn",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Release free-cash-flow reconciliation and 10-K cash-flow discussion; free cash flow is labelled non-GAAP",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "FY2027 capex about $9bn, free cash flow about $11bn and buyback target about $9bn",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Management fiscal 2027 outlook; identified as guidance/targets rather than facts already achieved",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Experiences depreciation increased $397m to $3.220bn; four additional cruise ships planned 2027-2030",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-K Experiences cost discussion and cruise fleet disclosure",
+      "result": "verified in separate claim pass"
+    }
+  ],
+  "fact_check_notes": [
+    "Segment operating income and free cash flow are explicitly labelled non-GAAP and are not conflated with GAAP income before tax.",
+    "Fiscal 2026 had 53 weeks; the article identifies that calendar effect and management's second-half comparison explanation.",
+    "No price, attendance estimate, consensus figure, quotation or unsupported return forecast is used."
+  ],
+  "unresolved_material_claims": [],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Cruise_ship_%22Disney_Dream%22_departing_Southampton,_England.jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Cruise_ship_%22Disney_Dream%22_departing_Southampton%2C_England.jpg",
+    "photographer": "ITookSomePhotos",
+    "license": "CC BY 4.0",
+    "capture_date": "2024-08-27",
+    "description": "Archival photograph of the Disney Dream cruise ship in Southampton",
+    "unique_asset": true,
+    "source_sha256": "19de12e199b16e51e2dbd1ce599c0c6980a7d55027e11faf3257ff564f38d350"
+  },
+  "gates": {
+    "offline_tests": "51 passed: news-image, finance-discovery, earnings-review, earnings-SEO, stock-inline-ad and pending-research-ad tests",
+    "build": "Passed production-base build: 319 articles, 837 tags, 35 pages and 62 tools after restoring the current branch's approved image cache without committing unrelated assets.",
+    "render": "Rendered HTML inspected: correct canonical, one H1, indexable, stock-profile/earnings-hub/diversification links and visible source credit. Sitemap and finance catalogue include the canonical. The generated 1200x675 WebP social image was visually inspected.",
+    "ads": "Standard AdSense loader rendered with client ca-pub-6115783809711785. The site has no fixed article_top/article_bottom slot IDs configured, so no fixed slot markup is expected; Auto Ads remains enabled through the standard loader and consent controls.",
+    "ci": "pending exact-head CI",
+    "deployment": "not merged; no live publication claimed"
+  },
+  "article_sha256": "20b5148f453bbdf3d6e8b836e0c21ca24af76fa7837a6d0d80c204bd15d8ca89",
+  "published_image_sha256": "5c1427898fe6926794d9815a840b80b06b500d07db6494aca1ddac1cd218f1ff",
+  "social_image_sha256": "e56c3e132150de80f4f77410582d01daddc9801a72a0411b310f614677ff83db",
+  "publication_state": "prepared_not_published",
+  "new_articles_published": 0
+}
