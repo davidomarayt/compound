@@ -2,9 +2,9 @@
   "date": "2026-11-20",
   "timezone": "Europe/Dublin",
   "run_type": "pia_content_growth",
-  "topic_fingerprint": "2026-10-new-ireland-assurance-first-party-individual-investment-account-launch-intent-verified-2026-11-20",
-  "action": "expand_existing_canonical_provider_comparison_source_dataset",
-  "status": "prepared_pending_exact_head_ci",
+  "topic_fingerprint": "2026-10-new-ireland-assurance-boi-group-related-brand-original-faq-checked-2026-11-20",
+  "action": "source_backed_related_brand_update_to_existing_provider_comparison",
+  "status": "revised_pending_exact_head_ci",
   "new_articles": 0,
   "existing_canonical_page_updates": 1,
   "canonical_urls": [
@@ -24,7 +24,7 @@
     "https://www.zurich.ie/blog/a-guide-to-irelands-new-investment-account/"
   ],
   "research": {
-    "material_discovery": "New Ireland Assurance first-party FAQ independently verified 20 Nov says it will offer an IIA at proposed 2027 launch, with unspecified range of funds investing in shares and bonds; source informational terms last dated October 2026, NOT a fresh 20 Nov launch announcement.",
+    "material_discovery": "New Ireland first-party FAQ last dated October 2026, independently checked 20 November, documents planned IIA and bond/share funds; surfaced as related group source rather than claiming a sixth independently available provider",
     "ownership": "Official New Ireland footer identifies New Ireland Assurance Company plc as a Bank of Ireland Group insurer; kept separate from bank's existing public statement without suggesting independence or two final products.",
     "availability": "No application process identified, product not yet open. Annual, dealing, fund and FX prices not published; no price set to zero.",
     "legislative_status": "The pending Finance (No. 2) Bill 2026 uses Individual Investment Account (IIA); PIA remains consumer shorthand. Committee-amended text 12 Nov verified in prior run. No enacted law or confirmed commencement independently established 20 Nov.",
@@ -43,13 +43,15 @@
   },
   "provider_data": {
     "path": "content/pia-providers.yml",
-    "previous_official_sources": 5,
-    "updated_official_sources": 6,
-    "new_entry": "New Ireland Assurance",
-    "source_checked": "2026-11-20",
-    "fees": "not published",
+    "provider_card_count": 5,
+    "verified_first_party_primary_statements": 5,
+    "related_source_added": "New Ireland Assurance (a Bank of Ireland Group insurer)",
+    "related_to": "Bank of Ireland provider card",
+    "related_source_checked": "2026-11-20",
+    "fees": "All primary provider card fee fields remain 'Not published'; New Ireland FAQ also does not publish numerical fees",
     "csv": "compound/site/static/pia-provider-sources.csv",
-    "export_rule": "same sorted field order as guarded scripts/export_pia_provider_sources.py, no numeric fee claims"
+    "export_rule": "five sorted primary provider rows, all source check dates updated to 2026-11-20 after recheck; guarded exporter output matches",
+    "rendering": "Linked and dated related brand evidence displayed as a distinct aside within Bank of Ireland card; no invented sixth priced or live product"
   },
   "recovery": {
     "original_date": "2026-11-19",
@@ -61,8 +63,8 @@
   },
   "qa": {
     "source_and_fees": "first-party FAQ and ownership footer verified; no invented provider fees",
-    "regressions": "awaiting CI test and performance on exact head",
-    "live_new_provider": "pending public HTML fetch following deployment",
+    "regressions": "Initial head test failed at test_pia_source_export.py because fixed five-provider count; new head awaiting full CI test/performance; hardcoded tests preserved",
+    "live_new_provider": "Pending live verification of related-brand link and text on /pia/providers/ after successful merge and Pages deployment",
     "ads": "pending exact public HTML verification",
     "images": "no hero/image changes; preserve existing canonical assets"
   },
@@ -71,5 +73,6 @@
   "live_http_verified": false,
   "verified_live_result": null,
   "human_review": "not asserted",
-  "communication": "no email or social posts"
+  "communication": "no email or social posts",
+  "quality_gate_note": "Initial six-card proposal triggered existing required CI regression tests that freeze five named primary providers. No tests were changed or weakened; proposal revised to retain five card identities and include New Ireland as clearly labelled related-group first-party source, with source-URL validation and synced CSV. Fresh exact-head CI is mandatory."
 }
