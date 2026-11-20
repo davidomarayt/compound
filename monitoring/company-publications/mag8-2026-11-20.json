@@ -5,9 +5,9 @@
   "company": "Alphabet Inc.",
   "ticker": "GOOGL",
   "selection": "Least recently featured in Mag8 ledger: 5 November. Lilly-only exception applied on 18 November; Apple completed 19 November.",
-  "status": "prepared",
-  "publication_state": "awaiting_ci_and_live_verification",
-  "new_articles_published": 0,
+  "status": "published",
+  "publication_state": "live_verified",
+  "new_articles_published": 1,
   "canonical_updates_published": 0,
   "article_path": "content/wealth/alphabet-data-centre-credit-backstops.md",
   "canonical_url": "https://compound.ie/wealth/alphabet-data-centre-credit-backstops/",
@@ -50,15 +50,84 @@
     "rendered": "Neutral Compound Research attribution and standard adsbygoogle loader present; no false human review. Standard consent and ad settings retained.",
     "validation": [
       "10 focused existing publication/company tests passed.",
-      "New article image preparation and template rendering passed."
+      "New article image preparation and template rendering passed.",
+      "Exact-head CI passed: 388 tests, 2 subtests, full production build and Lighthouse performance.",
+      "Production build and deployment succeeded; verify-live and verify-finance-discovery passed.",
+      "Fetched canonical, hero, OG/Twitter image, sitemap, finance JSON/directory and Alphabet stock backlink. Profile ad loader and slots 2138650464/8512487125 verified. Article standard Auto Ads loader present; no fixed article slots configured.",
+      "Live browser: actual cover, credits, headline, date, Compound Research attribution, table and article body inspected. Advertisement frames present; no claim of impression fill. Live social image visually inspected.",
+      "Post-deployment mobile-audit passed; all five site workflow jobs successful."
     ],
-    "release_gates_pending": [
-      "exact-head full test/performance CI",
-      "deployment",
-      "fetched canonical/social/sitemap/discovery/profile ads and links"
-    ]
+    "release_gates_pending": []
   },
-  "live_verification": null,
-  "pull_requests": [],
-  "outcome_notes": "Prepared one candidate only; count zero until live URL fetched. No paid LLM API calls or social posting. Schedule unchanged."
+  "live_verification": {
+    "verified_at": "2026-11-20T18:24:00.396252+00:00",
+    "url": "https://compound.ie/wealth/alphabet-data-centre-credit-backstops/",
+    "canonical": true,
+    "article_text": true,
+    "neutral_attribution": true,
+    "article_ad_loader": true,
+    "article_slots": [],
+    "profile_ad_loader": true,
+    "profile_slots": [
+      "2138650464",
+      "8512487125"
+    ],
+    "stock_backlink": true,
+    "social_image": "https://compound.ie/static/discover/alphabet-data-centre-credit-backstops-16x9.webp",
+    "social_sha256": "5dde7e3be8186dfa503b8b70849853cd3164b72dafb393314e42314941f2c3b5",
+    "hero_sha256": "bf79869786e20207f979d42d2cb60ec5c7c856891083372953fb620e7b97ecbc",
+    "sitemap": true,
+    "finance_catalogue": true,
+    "finance_directory": true,
+    "image_credit_and_archival_date": true,
+    "primary_and_internal_links": true,
+    "single_h1": true,
+    "indexable": true,
+    "browser_rendered_cover": true,
+    "browser_rendered_comparison_table": true,
+    "browser_neutral_attribution": true,
+    "browser_advertisement_frames_present": true,
+    "live_social_image_visually_checked": true
+  },
+  "pull_requests": [
+    {
+      "number": 221,
+      "url": "https://github.com/davidomarayt/compound/pull/221",
+      "head": "9036fb649602fb36f7dec0f974442bf9dc9d8941",
+      "merge": "33888856196882d7111a1555b23d40a3ae54220b",
+      "ci_run": 44788866237,
+      "ci": "success",
+      "site_run": 44791067120,
+      "site": "success"
+    }
+  ],
+  "outcome_notes": "Exactly one fetched live new Mag8 article for 20 November. No paid LLM API dependency or social posting. Schedule unchanged. No human approval or AdSense compliance asserted; standard ads enabled with no ad-fill promise.",
+  "deployment_jobs": [
+    {
+      "id": 136478532938,
+      "name": "build",
+      "conclusion": "success"
+    },
+    {
+      "id": 136482666536,
+      "name": "deploy",
+      "conclusion": "success"
+    },
+    {
+      "id": 136482883220,
+      "name": "mobile-audit",
+      "conclusion": "success"
+    },
+    {
+      "id": 136482883289,
+      "name": "verify-live",
+      "conclusion": "success"
+    },
+    {
+      "id": 136482883552,
+      "name": "verify-finance-discovery",
+      "conclusion": "success"
+    }
+  ]
 }
+
