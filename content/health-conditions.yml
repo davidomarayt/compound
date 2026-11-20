@@ -36,6 +36,9 @@ sources:
   ncri_latest:
     name: National Cancer Registry Ireland, Cancer in Ireland 1994–2023
     url: https://www.ncri.ie/en/media/900/download
+  ncri_ovary_2020:
+    name: National Cancer Registry Ireland, Cancer in Ireland 1994–2020
+    url: https://www.ncri.ie/en/media/515/download
   ncri_prevalence:
     name: National Cancer Registry Ireland, Cancer in Ireland 1994–2022
     url: https://www.ncri.ie/en/media/623/download
@@ -576,7 +579,7 @@ evidence:
   - value: '109'
     period: '2024'
     population: Stillbirths registered in Ireland
-    note: The CSO notes under-registration compared with perinatal notification data. This figure counts registered stillbirths.
+    note: The CSO reports 2.0 registered stillbirths per 1,000 live and stillborn children. It notes under-registration compared with perinatal notification data.
     source: stillbirth_cso
     locator: Stillbirths
     measure: registry
@@ -707,6 +710,13 @@ evidence:
     locator: table 5-2, page 77
     measure: prevalence
   ovarian-cancer-overview-and-symptoms:
+  - value: '3,327'
+    period: 31 December 2020
+    population: People in Ireland alive after an ovarian cancer diagnosis
+    note: Complete prevalence estimate for ICD-10 C56. It includes people who had completed treatment. The newer report combines ovarian cancer with other sites for its prevalence estimate.
+    source: ncri_ovary_2020
+    locator: table 4-2
+    measure: prevalence
   - value: 372 per year
     period: 2021–2023 average
     population: People diagnosed with ovarian cancer in Ireland
@@ -1623,3 +1633,292 @@ guides:
     help:
     - Get urgent advice if breathing becomes harder, a baby feeds much less than usual or wet nappies become noticeably
       less frequent. Older adults with worsening breathing or underlying conditions should seek prompt advice.
+  allergies:
+    aliases: allergy allergic reaction hay fever food allergy
+    summary: An allergy can cause anything from itchy eyes to a severe reaction. The symptoms, their timing and what you were exposed to help identify the cause.
+    emergency: If someone develops throat or tongue swelling, difficulty breathing or faintness after a possible allergen exposure, use an adrenaline auto-injector if available and call
+    symptoms:
+    - Pollen and dust mite allergies often affect the eyes and nose. Food, medicine or insect-sting reactions may cause hives, swelling, wheezing or several symptoms at once.
+    - Record what you ate, took or touched and how long it took for symptoms to start. The same rash can have several causes, so the surrounding details matter.
+    causes:
+    - The immune system reacts to a substance it recognises as a threat. In an immediate allergic reaction, immune cells release chemicals such as histamine, which can produce itching and swelling.
+    - Food intolerance can cause symptoms after eating through a different mechanism. The distinction affects which tests and precautions are appropriate.
+    diagnosis:
+    - Your GP can review the pattern, examine you and refer you for specialist tests if appropriate. A skin-prick test or specific IgE blood test can help answer a targeted question when interpreted alongside your history.
+    care:
+    - Treatment depends on the trigger and severity. A pharmacist or GP can advise on treatments for mild nasal or skin symptoms. Discuss unexplained food reactions before making major changes to your diet or your child's diet.
+    - If prescribed adrenaline auto-injectors, ask for a demonstration and a written action plan. Make sure the people who may need to help you know where you keep them.
+    complications:
+    - Ongoing symptoms can affect sleep and aggravate asthma. Anaphylaxis can develop rapidly and requires emergency care.
+    help:
+    - Speak to your GP after an unexplained reaction, if reactions recur or if they affect breathing. Seek emergency help immediately for suspected anaphylaxis.
+    sources:
+      HSE anaphylaxis and emergency response: https://www2.hse.ie/conditions/anaphylaxis/
+  diabetes:
+    aliases: diabetes mellitus high blood sugar insulin HbA1c
+    summary: Diabetes raises blood glucose. Which type you have determines your treatment, and regular checks can spot problems before symptoms develop.
+    emergency: If someone with suspected or known diabetes is very unwell with vomiting, rapid breathing or confusion and needs an ambulance, call
+    symptoms:
+    - Common signs include urinating more often, unusual thirst, tiredness and unexplained weight loss. Type 1 symptoms can develop quickly. Type 2 diabetes may develop gradually and can be discovered on a blood test.
+    causes:
+    - In type 1 diabetes, the immune system damages the pancreatic cells that make insulin. In type 2 diabetes, the body responds less effectively to insulin and insulin production may become insufficient over time.
+    - Gestational diabetes develops during pregnancy. It has its own testing and follow-up, including a check after birth.
+    diagnosis:
+    - A clinician uses blood tests and the pattern of symptoms. HbA1c reflects average glucose over recent months. Rapidly developing symptoms need immediate assessment and testing suited to an acute presentation.
+    care:
+    - People with type 1 diabetes need insulin. Type 2 care may include help with nutrition and activity, medicines and sometimes insulin. Your care team can explain your glucose targets and what to do when you are unwell.
+    - Ask about checks for kidneys, feet and blood pressure, and about registration for the HSE Diabetic RetinaScreen programme.
+    complications:
+    - Over time, raised blood glucose can damage blood vessels and nerves. Insulin and some other treatments can cause low blood glucose. Diabetic ketoacidosis can develop quickly and needs hospital treatment.
+    help:
+    - Contact a GP promptly if you or your child develop marked thirst, frequent urination or unexplained weight loss. Vomiting or rapid breathing with suspected diabetes warrants immediate medical assessment.
+    sources:
+      HSE diabetic ketoacidosis: https://www2.hse.ie/conditions/type-1-diabetes/blood-glucose/ketones-and-diabetic-ketoacidosis-dka/
+  cancer:
+    aliases: cancer warning signs tumour malignancy oncology biopsy
+    summary: Cancer is a group of diseases where cells grow abnormally. The site, type and stage of the cancer guide testing and treatment.
+    symptoms:
+    - A new lump, unusual bleeding, cough that persists, change in bowel habits or weight loss without trying can warrant investigation. The pattern and how long the change has lasted help a GP decide what to investigate.
+    causes:
+    - Changes in a cell can allow it to grow and divide when it should stop. Some cancers can invade nearby tissues or travel through blood or lymph to other parts of the body.
+    - Risk factors differ by cancer. Age, smoking, certain infections and inherited changes contribute to different cancers. A person's risk factors alone cannot determine whether a symptom is cancer.
+    diagnosis:
+    - Your GP starts with your symptoms and may arrange tests or a specialist referral. Scans show where changes are, and examination of a tissue sample can often identify the cancer type. Stage describes how far it has spread.
+    care:
+    - The specialist team may discuss surgery, radiotherapy or medicines such as chemotherapy, hormone therapy, immunotherapy or targeted treatment. The choices depend on your diagnosis and the goals of treatment.
+    - Ask who to contact about side effects and what support is available for fatigue, pain, work or family concerns.
+    complications:
+    - Cancer and its treatments affect people differently. National survival and prevalence figures describe groups of people. A specialist can explain what the cancer type, stage and test results mean for your own outlook.
+    help:
+    - Speak to your GP about a persistent or unexplained change, including one noticed between screening appointments. Tell them when it began and whether it is getting worse.
+    sources:
+      HSE signs and symptoms: https://www2.hse.ie/conditions/cancer/signs-and-symptoms/
+  pancreatic-cancer-symptoms:
+    aliases: pancreatic cancer pancreas cancer jaundice
+    summary: Pancreatic cancer may cause jaundice, weight loss or pain in the upper abdomen or back. Tests help establish whether it can be removed surgically.
+    symptoms:
+    - Jaundice can make the eyes or skin look yellow and may come with itching, dark urine or pale stools. Other changes include losing weight without trying, poor appetite and pain in the upper abdomen that may spread to the back.
+    causes:
+    - The pancreas makes digestive enzymes and hormones including insulin. A tumour can interfere with digestion or block the nearby bile duct. A blockage helps explain why jaundice, pale stools and dark urine can occur together.
+    diagnosis:
+    - A GP may arrange blood tests and refer you for imaging. CT can show the location of a suspected tumour and whether nearby blood vessels or other organs are involved. Some people have an endoscopic ultrasound and a tissue sample.
+    care:
+    - The specialist team assesses whether surgery is an option and discusses chemotherapy, other treatments and symptom control. A stent can sometimes relieve a blocked bile duct.
+    - Report weight loss and changes in stool to the team. A dietitian can help with nutrition, and pancreatic enzyme replacement may be considered when the pancreas cannot supply enough enzymes.
+    complications:
+    - Blocked bile flow, difficulty absorbing food and changes in blood glucose can create problems during care. Follow-up should include a way to report worsening symptoms between appointments.
+    help:
+    - Seek urgent medical advice if you develop jaundice. Arrange a GP assessment for persistent upper-abdominal or back pain, ongoing changes in digestion or unexplained weight loss.
+    sources:
+      HSE diagnosis and tests: https://www2.hse.ie/conditions/pancreatic-cancer-symptoms/diagnosis/
+      HSE treatment and supportive care: https://www2.hse.ie/conditions/pancreatic-cancer-symptoms/treatment/
+  lung-cancer:
+    aliases: lung tumour non-small cell small-cell lung cancer
+    summary: Lung cancer can cause a persistent cough, coughing up blood or breathlessness. The type and stage help determine which treatments are suitable.
+    symptoms:
+    - A new cough that will not settle, a change in a longstanding cough, coughing up blood or repeated chest infections can prompt investigation. Some people develop breathlessness, chest discomfort or unexplained weight loss.
+    causes:
+    - Cancer can start in the lung or airway. Tobacco smoke is a major risk factor, and lung cancer can also develop in people who have never smoked. The main groups are non-small cell and small cell lung cancer.
+    diagnosis:
+    - A GP may arrange a chest X-ray or refer you to a rapid access lung clinic. CT gives a more detailed view, and a biopsy can identify the cancer type. The specialist may use a bronchoscopy to examine the airways and take a sample.
+    - PET-CT can help assess spread in some cases. Additional tests on biopsy tissue can identify changes that help guide the choice of medicine.
+    care:
+    - Depending on the type, stage and your general health, options can include surgery, radiotherapy, chemotherapy, immunotherapy or targeted drugs. The team can also treat symptoms such as breathlessness and pain.
+    complications:
+    - A tumour can narrow an airway or lead to fluid collecting around a lung, either of which can worsen breathlessness. Tell your care team if your breathing, exercise tolerance or weight changes between appointments.
+    help:
+    - Contact your GP promptly if you cough up blood or have a persistent change in your cough, breathing or weight. Severe difficulty breathing requires emergency help.
+    sources:
+      HSE signs and symptoms: https://www2.hse.ie/conditions/lung-cancer/symptoms/
+      HSE tests and diagnosis: https://www2.hse.ie/conditions/lung-cancer/tests-and-diagnosis/
+      HSE lung cancer treatment: https://www2.hse.ie/conditions/lung-cancer/treatment/
+  breast-cancer-men:
+    aliases: male breast cancer breast lump nipple discharge
+    summary: Men can develop breast cancer. A new lump, changes around the nipple or an armpit lump should be checked by a GP.
+    symptoms:
+    - A lump under or near the nipple can be the first sign. Other changes include a nipple pulling in, nipple discharge, skin changes or a lump in the armpit. A lump can warrant assessment even if it does not hurt.
+    causes:
+    - Cancer can develop in the small amount of breast tissue men have. Risk increases with age and can also be affected by inherited changes such as BRCA2 variants.
+    diagnosis:
+    - Your GP examines the change and may refer you to a breast clinic. Imaging can help identify the abnormal area and a biopsy can show whether cancer is present. Receptor tests can help guide treatment.
+    care:
+    - Surgery is often part of care. A specialist may also discuss radiotherapy, chemotherapy or hormone treatment such as tamoxifen, depending on the results and stage.
+    - Ask whether your own or your family's medical history warrants a discussion about genetic assessment.
+    complications:
+    - Some people have chest or shoulder stiffness after surgery. Swelling of the arm on the treated side should be reported to the team, particularly after treatment involving lymph nodes.
+    help:
+    - Book a GP appointment for a new breast or armpit lump or a persistent change to the nipple or skin. Mention any family history of breast or ovarian cancer.
+    sources:
+      HSE symptoms in men: https://www2.hse.ie/conditions/breast-cancer-men/symptoms/
+      HSE treatment in men: https://www2.hse.ie/conditions/breast-cancer-men/treatment/
+  womb-cancer:
+    aliases: uterine cancer endometrial cancer postmenopausal bleeding
+    summary: Most womb cancers start in the lining of the uterus. Bleeding after menopause is a reason to contact your GP, even if it happens only once.
+    symptoms:
+    - Unexpected vaginal bleeding is the main warning sign. After menopause, report spotting, light bleeding or blood-stained discharge. Before menopause, bleeding between periods or a marked change from your normal pattern warrants assessment.
+    causes:
+    - The endometrium is the lining of the womb. Most womb cancers start there. Rarer cancers can arise in the muscle or other tissues, and the specialist uses the type of tumour to guide care.
+    diagnosis:
+    - A specialist may use a vaginal ultrasound to assess the lining. A biopsy samples the lining for laboratory examination. Hysteroscopy lets the clinician look inside the womb and can help with sampling.
+    care:
+    - Surgery often involves removing the womb. Other treatment decisions can depend on the cancer type, stage and risk of recurrence. Discuss fertility if relevant, recovery and what follow-up will involve with the specialist team.
+    complications:
+    - Surgery and other treatments can affect bladder, bowel or sexual function. The follow-up team can advise on symptoms such as ongoing pelvic discomfort or leg swelling.
+    help:
+    - Contact your GP about any bleeding after menopause, even if it stops, and about persistent changes in bleeding before menopause.
+    sources:
+      HSE diagnosis and tests: https://www.hse.ie/conditions/womb-cancer/diagnosis/
+      HSE womb cancer treatment: https://www2.hse.ie/conditions/womb-cancer/treatment/
+  ovarian-cancer-overview-and-symptoms:
+    aliases: ovarian cancer ovary cancer persistent bloating
+    summary: Ovarian cancer may cause persistent bloating, pelvic pain, feeling full quickly or urinary changes. A change that keeps recurring is worth discussing with your GP.
+    symptoms:
+    - Look for bloating that persists, getting full sooner than usual, abdominal or pelvic pain or needing to urinate more often. Tell your GP how often symptoms occur and whether they are new for you.
+    causes:
+    - Ovarian cancer is more common after menopause. Some inherited genetic changes increase risk. A family history of ovarian or breast cancer is worth raising even if no one in the family has had genetic testing.
+    diagnosis:
+    - A GP can assess symptoms and may order a CA125 blood test or an ultrasound. A raised CA125 can have several causes. A specialist interprets the results alongside symptoms and imaging and may need tissue testing.
+    care:
+    - A specialist team plans treatment using the cancer type, stage and your health. Surgery and chemotherapy are common options. For some people, further tests help determine whether a maintenance drug is suitable.
+    complications:
+    - Fluid in the abdomen can increase swelling or discomfort. Tell your team promptly about worsening pain, trouble eating or a significant change in bowel symptoms.
+    help:
+    - The HSE advises contacting a GP if symptoms last three weeks or more, if you first develop symptoms like irritable bowel syndrome after 50 or if you have a family history of ovarian or breast cancer. Go back if symptoms persist after an initial assessment.
+    sources:
+      HSE diagnosis and tests: https://www.hse.ie/conditions/ovarian-cancer-overview-and-symptoms/ovarian-cancer-diagnosis/
+      HSE ovarian cancer treatment: https://www.hse.ie/conditions/ovarian-cancer-overview-and-symptoms/treatment/
+  heart-attack:
+    aliases: myocardial infarction MI acute coronary syndrome
+    summary: A heart attack occurs when part of the heart muscle loses its blood supply. Suspected symptoms call for immediate emergency assessment.
+    emergency: If you suspect a heart attack, call
+    symptoms:
+    - Chest pressure, squeezing or discomfort may spread to an arm, jaw, neck or back. Breathlessness, sweating, nausea or feeling faint can also occur. Some people have little or no chest pain.
+    causes:
+    - A heart attack often starts when a deposit inside a coronary artery ruptures and a clot obstructs the flow of blood. The longer the heart muscle goes without enough blood, the greater the risk of lasting damage.
+    diagnosis:
+    - The ambulance or hospital team may record an ECG to look for changes in the heart's electrical activity. Blood tests for troponin look for heart muscle damage and may be repeated.
+    care:
+    - Hospital treatment may involve restoring blood flow with a procedure to open the artery and place a stent. The hospital team will explain medicines to reduce the risk of another event and refer eligible patients for cardiac rehabilitation.
+    - Before you leave hospital, ask which medicines you should take, when to resume activities and whom to contact if symptoms return.
+    complications:
+    - The damaged heart can develop rhythm problems or pump less effectively. Follow-up can include checks for heart failure symptoms and support for anxiety after the event.
+    help:
+    - Call for an ambulance if a heart attack is suspected. For new or worsening breathlessness, swelling or trouble with medicines after discharge, contact your care team promptly.
+    sources:
+      HSE diagnosis of a heart attack: https://www2.hse.ie/conditions/heart-attack/diagnosis/
+      HSE recovering from a heart attack: https://www2.hse.ie/conditions/heart-attack/recovering-from/
+      European Society of Cardiology guidelines: https://academic.oup.com/eurheartj/article/44/38/3720/7243210
+  neck-pain:
+    aliases: neck stiffness cervical pain trapped nerve
+    summary: Neck pain often improves within weeks. Pain after an injury or symptoms such as weakness need a different assessment from everyday stiffness.
+    symptoms:
+    - The neck may feel stiff and sore when you turn to look over your shoulder. Pain can spread into the shoulder. Pain, tingling or numbness travelling into an arm can point to nerve irritation.
+    causes:
+    - Staying in one position, sleeping awkwardly, a strain or age-related changes can contribute to symptoms. A sudden movement in a collision can cause whiplash. Sometimes a disc or nearby tissue irritates a nerve.
+    diagnosis:
+    - A clinician asks when it started, whether there was an injury and whether the pain travels into the arm. They may examine movement, strength and sensation. Imaging decisions depend on the examination and whether there are warning signs.
+    care:
+    - For ordinary stiffness, gentle movement and changing position regularly can help. A heat or cold pack wrapped in a towel is an option. A pharmacist can advise on pain relief that is suitable for you.
+    - Avoid driving or cycling if you cannot turn your neck far enough to do it safely. Persistent symptoms may benefit from a GP or physiotherapy assessment.
+    complications:
+    - Pain that persists can disrupt sleep and routine activity. New limb weakness or difficulty with balance or walking can be a sign of a more serious problem.
+    help:
+    - Get urgent medical assessment for neck pain after a significant injury, or if it comes with new weakness or difficulty walking. Contact your GP if stiffness is not improving after a few weeks, or if you have persistent pins and needles.
+    sources:
+      NHS neck pain guidance: https://www.nhs.uk/symptoms/neck-pain-and-stiff-neck/
+      NHS clinical guidance on neck pain warning signs: https://www.hweclinicalguidance.nhs.uk/clinical-pathways/neck-pain/
+  penile-cancer:
+    aliases: penile cancer penis cancer PeIN penile intraepithelial neoplasia
+    summary: Penile cancer is uncommon. A growth or sore that keeps returning or fails to heal, bleeding or a new change in the foreskin is worth getting checked.
+    symptoms:
+    - Changes can include a sore or growth on the penis, bleeding, discharge under the foreskin or new difficulty pulling the foreskin back. A lump in the groin can also warrant assessment.
+    - Some changes are easiest to see on the head of the penis or under the foreskin. Mention how long the change has been there and whether it has grown, bled or changed colour.
+    causes:
+    - Most penile cancers start in squamous cells at the surface. Some are associated with long-lasting infection with certain types of HPV. Smoking and some longstanding foreskin problems can also increase risk.
+    diagnosis:
+    - A GP can examine the area and refer you to urology. A biopsy can show whether a change is cancer. If cancer is confirmed, further examination, scans or sampling can help assess nearby lymph nodes and guide treatment.
+    care:
+    - The team considers the location and depth of the cancer, whether lymph nodes are involved and which options preserve function. Treatment can range from local treatment for selected superficial changes to more extensive surgery and other cancer treatments.
+    - Ask about the expected effect on urination, sexual function and sensation, and about support for those changes during recovery.
+    complications:
+    - Cancer can spread to lymph nodes in the groin. Treatment involving those nodes can also lead to swelling that may need assessment and support.
+    help:
+    - Book a GP appointment for a sore that has not healed within four weeks or for an unexplained lump, bleeding or discharge. An infection or skin condition can cause similar changes, and an examination helps distinguish them.
+    sources:
+      National Cancer Control Programme patient booklet: https://www.hse.ie/eng/services/list/5/cancer/patient/leaflets/nccp-penile-cancer-booklet.pdf
+  non-melanoma-skin-cancer:
+    aliases: keratinocyte cancer basal cell carcinoma BCC squamous cell carcinoma SCC
+    summary: Basal cell and squamous cell carcinomas are common skin cancers. A sore, lump or scab that keeps coming back or does not heal should be checked.
+    symptoms:
+    - Basal cell carcinoma may appear as a shiny or pearly bump, a flat patch or a sore that repeatedly scabs. Squamous cell carcinoma may look like a firm or scaly lump and can feel tender.
+    - Look for changes on sun-exposed skin such as the ears, face, scalp or hands. A lesion can warrant assessment even if it is small or painless.
+    causes:
+    - These cancers start in cells in the outer layer of the skin. Ultraviolet exposure from the sun or sunbeds can damage those cells. A weakened immune system can increase risk, especially for squamous cell carcinoma.
+    diagnosis:
+    - A GP may examine the lesion and refer you if cancer is suspected. A clinician can take a biopsy or remove the lesion and send it to a laboratory to confirm the type and check the edges of the tissue.
+    care:
+    - Surgery is a common treatment. Depending on the type and location, the team may discuss specialised surgery, a local treatment or radiotherapy. Follow-up depends on the features of the lesion and your risk of further skin cancers.
+    - Ask how to check the treated area and the rest of your skin. Use sun protection when working, exercising or spending time outdoors.
+    complications:
+    - Basal cell carcinoma can damage tissue around it as it grows. Some squamous cell cancers can spread, particularly if they have high-risk features. Having one skin cancer also increases the risk of developing another.
+    help:
+    - Arrange a GP assessment for a new skin change that persists, grows, bleeds or fails to heal. Tell the GP if you have a history of skin cancer or take medicines that suppress your immune system.
+    sources:
+      HSE treatment options: https://www2.hse.ie/conditions/non-melanoma-skin-cancer/treatment/
+  stillbirth:
+    aliases: stillborn baby pregnancy loss fetal death maternity bereavement reduced movements
+    summary: If you are worried about your baby's movements, call your maternity unit straight away. If your baby has died, the maternity team can explain the next steps and support you and your family.
+    symptoms:
+    - A change in your baby's usual movements, including movements becoming weaker, less frequent or stopping, needs assessment. Your maternity unit can help even if you are unsure what the change means.
+    causes:
+    - In Ireland, the HSE describes stillbirth as the birth of a baby without signs of life from 23 weeks of pregnancy or with a birth weight of at least 400 grams. Placental problems, health complications and conditions affecting the baby can contribute. Sometimes a cause remains unclear.
+    diagnosis:
+    - A maternity clinician will assess concerns about movements or other symptoms. Ultrasound can assess the baby's heartbeat. If a death is confirmed, the team can explain the findings and give you time to ask questions.
+    care:
+    - The maternity team will discuss the safest plan for birth and which investigations are available, including examination of the placenta or a post-mortem. Ask what each test may explain and when results will be available.
+    - Ask for a named contact for follow-up and information on bereavement support. The team can also discuss physical recovery, results and planning care in a future pregnancy when you are ready.
+    complications:
+    - Grief can affect parents and family members differently and can resurface at milestones. Midwives, the maternity bereavement team and your GP can help you access support suited to you.
+    help:
+    - Call your maternity unit immediately with any concern about your baby's movements and tell them you are coming for a check. Seek advice again if the concern returns, even after a previous reassuring assessment.
+    sources:
+      HSE stillbirth overview and advice: https://www2.hse.ie/conditions/stillbirth/
+      National Perinatal Epidemiology Centre clinical audit: https://www.ucc.ie/en/npec/newsevents/latest-perinatal-mortality-national-clinical-audit-in-ireland-annual-report-2023-.html
+  flu:
+    aliases: influenza seasonal flu fever body aches influenza A influenza B
+    summary: Flu often starts suddenly with fever, aches and exhaustion. People at higher risk of complications may need advice early, while antiviral treatment is most useful.
+    emergency: If someone has severe difficulty breathing or appears dangerously unwell, call
+    symptoms:
+    - Fever, chills, sore muscles, headache, cough and sudden tiredness are common. Symptoms can overlap with COVID-19 and other respiratory infections. Fatigue may persist after the fever and aches improve.
+    causes:
+    - Influenza viruses spread between people mainly through particles released when someone breathes, talks, coughs or sneezes. The flu vaccine is updated for the season as circulating viruses change.
+    diagnosis:
+    - A GP may assess symptoms and risk factors without testing in a straightforward case. Testing can help in hospital or when the result would change treatment or infection-control decisions.
+    care:
+    - Rest, fluids and appropriate symptom relief are enough for many people. If you are pregnant, older or have a long-term condition, seek advice early. A clinician can decide whether an antiviral is appropriate.
+    - The HSE publishes eligibility for seasonal vaccination. While unwell, reduce close contact with people at higher risk of severe infection.
+    complications:
+    - Flu can lead to pneumonia or worsen asthma, COPD or heart failure. Seek advice promptly if symptoms worsen or you become more unwell again after initially improving.
+    help:
+    - Contact your GP if you are at higher risk, concerned about your child or getting worse. Severe breathing problems need emergency help.
+    sources:
+      HSE symptoms, diagnosis and treatment: https://www2.hse.ie/conditions/flu/symptoms-diagnosis/
+  chickenpox:
+    aliases: varicella chicken pox VZV
+    summary: Chickenpox causes crops of itchy blisters. Exposure or illness can need prompt advice in pregnancy, in newborns and in people with a weakened immune system.
+    symptoms:
+    - A fever or general feeling of being unwell can come before the rash. Spots develop into fluid-filled blisters and then crust over. Fresh spots and scabs can appear at the same time.
+    - The rash can affect the scalp, trunk and other areas, sometimes including the mouth. A child with a sore mouth may drink less, so watch for signs of dehydration.
+    causes:
+    - Varicella-zoster virus causes chickenpox and spreads easily through close contact. After recovery it can stay inactive in nerves and later reactivate as shingles. Contact with shingles blisters can give chickenpox to someone without immunity.
+    diagnosis:
+    - A clinician can usually recognise chickenpox from the rash and history. Testing may help in unusual cases or after an exposure where immunity matters. Phone ahead before attending a clinic if you think you have chickenpox.
+    care:
+    - Encourage fluids and ask a pharmacist about itch or pain relief. The HSE advises against giving ibuprofen unless a doctor advises it. People at higher risk should ask promptly whether antiviral treatment or action after exposure is needed.
+    - Follow HSE guidance on when you can return to school, work or childcare. Avoid exposing newborns, pregnant people who may lack immunity and people with weakened immunity.
+    complications:
+    - Blisters can become infected. New warmth, swelling or increasing pain around spots warrants advice. Chickenpox can also cause complications such as pneumonia, especially in people at increased risk.
+    help:
+    - Contact a GP or maternity unit urgently after exposure or symptoms if pregnant and unsure of immunity, or if a newborn or someone with a weakened immune system is affected. Seek urgent medical advice if breathing is affected or the person is getting much more unwell.
+    sources:
+      HSE antiviral prescribing guideline: https://assets.hse.ie/media/documents/Chickenpox_guideline.pdf
