@@ -264,6 +264,9 @@ sources:
   noca_hip2025:
     name: NOCA, Irish Hip Fracture Database National Report 2025
     url: https://a.storyblok.com/f/265949/x/805703c2b0/irish-hip-fracture-database-national-report-2025-final.pdf
+  lenus_dehydration_2016:
+    name: Walsh and colleagues, Irish emergency hospital admission study in BMJ Open
+    url: https://www.lenus.ie/bitstreams/1efb6ec2-5be1-4e9d-b69d-5b01f6e2d466/download
 evidence:
   eczema:
   - value: About 10%
@@ -1875,6 +1878,33 @@ evidence:
     source: hpsc_parvovirus_lab
     locator: Parvovirus B19 in Ireland, 2024
     measure: registry
+  dehydration:
+  - value: 0.5 emergency admissions per 1,000 older adults
+    period: '2016'
+    population: Adults aged 65 and over in an Irish study using 34 public hospitals
+    note: The age- and sex-standardised national rate describes emergency admissions. It is a historical measure and excludes dehydration
+      managed without admission.
+    source: lenus_dehydration_2016
+    locator: Table 2, standardised national dehydration rate
+    measure: hospital
+  nosebleed:
+  - value: 824 inpatient discharges
+    period: '2023'
+    population: Irish acute public hospital discharges classified in HIPE epistaxis groups D62A and D62B
+    note: Sum of 116 major-complexity and 708 minor-complexity inpatient discharges. Day cases and nosebleeds managed without an
+      inpatient record are outside this figure.
+    source: hpo_2023
+    locator: Table 4.5, discharges by diagnosis-related group
+    measure: hospital
+  tonsillitis:
+  - value: 4,161 discharges following tonsillectomy or adenoidectomy as principal procedure
+    period: '2023'
+    population: Irish acute public hospital activity in HIPE procedure block 0412
+    note: The total includes day and inpatient discharges and different reasons for surgery, such as sleep-related obstruction. It
+      does not estimate how many people had tonsillitis.
+    source: hpo_2023
+    locator: Principal procedure by age and discharge type, block 0412
+    measure: hospital
 guides:
   asthma:
     aliases: wheezing reactive airways
@@ -9540,3 +9570,329 @@ guides:
     help:
     - Call your GP or maternity team about exposure if you are pregnant or at higher risk. Get urgent advice if a child is very pale,
       breathless or unusually drowsy.
+  black-eye:
+    aliases: Periorbital bruising, bruised eye, eye injury
+    summary: A black eye is bruised skin around the eye, usually after a blow. Take changes in eyesight or signs of a head injury
+      seriously.
+    evidence_gap: Irish injury statistics capture selected diagnoses and hospital visits. They do not measure the number of black
+      eyes across the community.
+    symptoms:
+    - Bruising, swelling and tenderness around the eye are typical. Double vision, pain when moving the eye, vomiting or an irregular
+      pupil suggest more than a skin bruise.
+    causes:
+    - A blow can break small blood vessels below the skin. More forceful injuries can damage the eye or the bones around it, and
+      can also injure the head.
+    diagnosis:
+    - A clinician may check vision, pupil shape, eye movement and nearby bones. An X-ray or scan may be needed if an eye socket fracture
+      or head injury is suspected.
+    care:
+    - Use a cold pack wrapped in a cloth for short periods during the first day or two. Avoid pressing on the eye and ask about suitable
+      pain relief.
+    complications:
+    - Bruising often fades gradually over a few weeks. Blood in the eye, a fracture or a retinal injury can affect vision and needs
+      prompt assessment.
+    help:
+    - Go to an emergency department after an injury if you have vision changes, an irregular pupil, blood inside the eye or bruising
+      around both eyes after a head blow.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/black-eye/
+  cold-sores:
+    aliases: Fever blister, oral herpes, HSV cold sore
+    summary: Cold sores are blisters that usually develop near the lip. The virus spreads easily during an outbreak and can cause
+      serious illness in newborns.
+    evidence_gap: Genital herpes notifications and hospital data on severe herpes cannot estimate day-to-day cold sore episodes.
+      Many episodes are managed at home or through pharmacies.
+    symptoms:
+    - Tingling, burning or itch may come before fluid-filled blisters. Blisters can break and crust over. A first infection can also
+      cause sore gums or mouth ulcers.
+    causes:
+    - Herpes simplex virus remains in nerves after infection. It may reactivate during illness, stress or sun exposure. Close contact
+      with a sore can pass on the virus.
+    diagnosis:
+    - A clinician or pharmacist can often recognise a typical sore. A lab test may be needed if there is concern about an eye infection,
+      severe illness or infection in a newborn.
+    care:
+    - A pharmacist can advise on treatment and when to start it. Wash hands after contact with a sore, avoid touching your eyes and
+      do not kiss a baby during an outbreak.
+    complications:
+    - The infection can spread to the eye or through areas of damaged skin. Newborns can become seriously ill after exposure and
+      need early assessment if symptoms appear.
+    help:
+    - Seek urgent advice for a sore near the eye or symptoms in a newborn. Call 112 or 999 if a baby is hard to wake, struggles to
+      breathe or has a seizure.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/cold-sores/
+  dehydration:
+    aliases: Fluid loss, dehydration in adults
+    summary: Dehydration happens when the body loses more fluid than it takes in. Thirst can be an early clue, while confusion or
+      going all day without passing urine needs urgent help.
+    emergency: 'Severe confusion, collapse or inability to wake: call'
+    symptoms:
+    - Dry mouth, dark urine, passing urine less often, dizziness and tiredness are common clues. Older adults may have reduced thirst
+      and show subtle changes in alertness.
+    causes:
+    - Vomiting, diarrhoea, fever, sweating and some medicines increase fluid loss. Illness or difficulty reaching a drink can reduce
+      fluid intake, especially in someone who needs support.
+    diagnosis:
+    - A clinician may ask about intake, fluid losses and medicines, and check vital signs. Severe illness may require blood tests
+      to check electrolytes and kidney function.
+    care:
+    - Try small frequent sips if you feel sick. A pharmacist can advise on oral rehydration solution. Ask your care team about fluid
+      replacement if you have a prescribed restriction.
+    complications:
+    - Severe dehydration can harm the kidneys and affect blood pressure or electrolytes. Fluid given through a vein may be needed
+      if drinking is unsafe or insufficient.
+    help:
+    - Seek emergency care if someone becomes confused or unusually drowsy, has a seizure, or has not passed urine all day. Call 112
+      or 999 if they collapse or are hard to wake.
+  earache:
+    aliases: Ear pain, otalgia, child earache
+    summary: Earache can come from the ear itself or from nearby areas such as the jaw, teeth or throat. The right treatment depends
+      on what is causing it.
+    evidence_gap: Ear pain has several causes, and many people manage brief episodes at home. Irish hospital counts for ear infections
+      do not measure the prevalence of earache.
+    symptoms:
+    - Pain can be sharp, dull or burning. A young child may pull at an ear, sleep poorly or seem distressed. Watch for discharge,
+      fever or a change in hearing.
+    causes:
+    - A middle ear infection, swollen ear canal, wax, an injury or pressure changes can hurt. Pain from a tooth, jaw or sore throat
+      can also be felt in the ear.
+    diagnosis:
+    - A GP can look at the eardrum and ear canal, and may examine the throat, jaw or teeth if the ear itself appears healthy.
+    care:
+    - Ask a pharmacist about suitable pain relief while symptoms settle. Avoid putting cotton buds or other objects into the ear,
+      and check before using drops if there is discharge.
+    complications:
+    - Most short-lived earaches settle. Infection with swelling or tenderness behind the ear, or new hearing changes, can require
+      urgent treatment and should be reassessed.
+    help:
+    - Contact your GP for persistent or worsening pain, discharge or a very unwell child. Seek urgent care if there is swelling behind
+      the ear or the ear starts to stick out.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/earache/
+  earwax-build-up:
+    aliases: Impacted cerumen, blocked ear wax, wax plug
+    summary: Earwax normally protects the ear canal. When it builds up, sounds may become muffled and a pharmacist or clinician can
+      advise on safe removal.
+    evidence_gap: Earwax is often treated at home, in pharmacies or in clinics using different records. There is no verified national
+      estimate for symptomatic wax build-up.
+    symptoms:
+    - You may notice gradual muffled hearing, a blocked feeling, ringing, itch or discomfort. A sudden hearing change can have other
+      causes and needs appropriate assessment.
+    causes:
+    - The ear usually moves wax outward naturally. Narrow ear canals, hearing aids or attempts to clean with cotton buds can make
+      it harder for wax to clear.
+    diagnosis:
+    - A clinician can inspect the ear canal and eardrum. They can check for wax, infection or injury and decide whether an examination
+      of hearing is needed.
+    care:
+    - Ask a pharmacist about softening drops if suitable. Check with a clinician first if you have had ear surgery, a perforated
+      eardrum, pain or discharge. Avoid ear candles and cotton buds.
+    complications:
+    - Compact wax can make conversation harder and cause hearing aid feedback. Inserting objects can push it deeper or injure the
+      canal and eardrum.
+    help:
+    - Arrange a review if the ear stays blocked after appropriate treatment. Seek urgent care for sudden hearing loss, significant
+      pain, blood, dizziness or a new discharge.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/earwax-build-up/
+  feeling-sick-nausea:
+    aliases: Nausea, feeling queasy, queasiness
+    summary: Nausea is the feeling you may vomit. How it starts and what else is happening, such as pain, headache or a medicine
+      change, can help identify the cause.
+    evidence_gap: Nausea can occur across many conditions. Irish datasets for specific diagnoses, such as gastroenteritis or pregnancy
+      sickness, cannot establish prevalence of nausea across the population.
+    symptoms:
+    - You may feel queasy, go off food or notice more saliva. Report whether vomiting, abdominal pain, fever, dizziness, diarrhoea
+      or a headache occurs with it.
+    causes:
+    - Possible causes include a stomach infection, pregnancy, migraine, motion sickness, a medicine or reflux. Sudden nausea with
+      chest pressure or breathlessness can indicate a heart emergency.
+    diagnosis:
+    - Your GP may ask about food, travel, medicines and when symptoms happen. Depending on the pattern, they may check for dehydration,
+      pregnancy or an underlying illness.
+    care:
+    - Small sips and smaller meals may be easier to tolerate. Avoid strong food smells if they trigger symptoms. A pharmacist or
+      clinician can advise on medicines when appropriate.
+    complications:
+    - Vomiting can lead to dehydration. Recurrent nausea can make it difficult to maintain food intake or take required medicines,
+      so seek help if it persists.
+    help:
+    - Contact your GP if nausea persists, returns often or stops you drinking. Call 112 or 999 for sudden nausea with chest pressure,
+      pain spreading to the arm or jaw, or breathlessness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/feeling-sick-nausea/
+  fever-adults:
+    aliases: Pyrexia, high temperature in adults
+    summary: A temperature of 38°C or higher is usually a fever in adults. The symptoms, how long the fever lasts and your medical
+      risk help decide when to get care.
+    evidence_gap: Fever is a symptom of many conditions. Irish surveillance of individual infections does not estimate how often
+      fever occurs among adults in the community.
+    symptoms:
+    - You may feel hot or chilled, sweat, ache or lose your appetite. Severe headache, rash, changing alertness, breathlessness or
+      a new pain may change the urgency.
+    causes:
+    - Infections often cause fever. Some inflammatory illnesses and medicines can also raise temperature. Heatstroke is a different
+      emergency where the body cannot cool itself adequately.
+    diagnosis:
+    - Measure your temperature with a thermometer if available. A clinician may ask about symptoms, travel, medicines and immune
+      status and examine or test for particular causes.
+    care:
+    - Rest, drink regularly and avoid overheating. A pharmacist can advise on fever or pain relief. Follow any emergency plan you
+      were given for treatment such as chemotherapy.
+    complications:
+    - Fever can contribute to dehydration. A serious infection can also cause someone to deteriorate quickly, including when fever
+      is mild or they later develop a low temperature.
+    help:
+    - Get urgent advice if pregnant, immunocompromised or rapidly worsening. Call 112 or 999 for confusion, severe breathing difficulty
+      or a rash that does not fade under pressure with severe illness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/fever-adults/
+  insect-bites-stings:
+    aliases: Bug bite, wasp sting, bee sting, insect reaction
+    summary: Bites and stings usually cause pain or itching where they occur. Swelling of the mouth or throat, breathing difficulty
+      or faintness can signal a severe allergic reaction.
+    emergency: 'Breathing difficulty or throat swelling after a sting: call'
+    evidence_gap: Most bites and stings are treated outside hospitals. Surveillance for particular insect-related illnesses cannot
+      measure how many bites and stings happen in Ireland.
+    symptoms:
+    - A bite or sting can produce a small raised, itchy or painful area. A larger local swelling may spread over several hours. Watch
+      for symptoms beyond the affected area.
+    causes:
+    - Insect saliva or venom can cause a local reaction. Some people have an allergy to venom and infection can occur later if the
+      skin is scratched or broken.
+    diagnosis:
+    - A clinician or pharmacist can assess the skin and how the reaction progressed. Tell them if a tick may have been attached,
+      or if you have had a severe reaction before.
+    care:
+    - Wash the area, remove a visible bee sting promptly and use a wrapped cold compress. Ask a pharmacist about suitable relief
+      if swelling or itching is troublesome.
+    complications:
+    - Anaphylaxis can develop quickly after a sting. Worsening warmth, spreading redness, pus or fever in the following days can
+      indicate a skin infection needing assessment.
+    help:
+    - Call 112 or 999 for breathing difficulty, throat swelling or collapse and use a prescribed adrenaline auto-injector if available.
+      Seek medical advice if redness spreads or you have fever.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/insect-bites-stings/
+  nosebleed:
+    aliases: Epistaxis, bleeding from nose
+    summary: Most nosebleeds stop with steady pressure on the soft part of the nose. Heavy bleeding, bleeding after a head injury
+      or bleeding that continues needs medical assessment.
+    symptoms:
+    - Blood can come from one or both nostrils. If it runs down the back of the throat it can make you feel sick or cause vomiting.
+    causes:
+    - Dryness, nose picking, forceful nose blowing or injury can break small blood vessels. Some medicines and clotting conditions
+      can make bleeding harder to stop.
+    diagnosis:
+    - A clinician can examine the nose, ask about injuries and medicines and check for blood loss. Repeated nosebleeds sometimes
+      require tests or an ENT referral.
+    care:
+    - Sit upright, lean forward and pinch the soft part of your nose continuously for 10 to 15 minutes. Breathe through your mouth
+      and avoid tipping your head back.
+    complications:
+    - A persistent bleed can cause significant blood loss, especially if you take an anticoagulant. A clinician may use cautery or
+      nasal packing if pressure does not work.
+    help:
+    - Go to an emergency department if bleeding continues after 10 to 15 minutes of pressure, is heavy, or followed a blow to the
+      head. Call 112 or 999 for collapse or serious breathing difficulty.
+  oral-thrush:
+    aliases: Mouth thrush, oral candidiasis, Candida in mouth
+    summary: Oral thrush is an overgrowth of yeast in the mouth. Babies, people wearing dentures and people taking certain medicines
+      can be more susceptible.
+    evidence_gap: Most cases are managed in primary care or pharmacies. Data on invasive Candida infections describe a different
+      illness and cannot estimate oral thrush prevalence in Ireland.
+    symptoms:
+    - Creamy white patches may leave a sore red area if wiped away. The mouth may feel sore or taste different. Babies can become
+      unsettled during feeds.
+    causes:
+    - Candida commonly lives in the mouth in small amounts. Antibiotics, inhaled steroids, dentures, diabetes or a weakened immune
+      system can allow it to grow more than usual.
+    diagnosis:
+    - A GP or dentist may recognise it by examining the mouth and asking about medicines and risk factors. Persistent or uncertain
+      cases may need further investigation.
+    care:
+    - A pharmacist or GP can advise on age-appropriate antifungal treatment. Clean dentures as advised and rinse your mouth after
+      using a steroid inhaler. Continue prescribed medicines unless told otherwise.
+    complications:
+    - Pain may make eating and drinking harder. Recurring symptoms can indicate an underlying contributor, while difficulty swallowing
+      in someone immunocompromised may suggest a more extensive infection.
+    help:
+    - Contact a GP for persistent or recurring patches, particularly with a weakened immune system. Seek prompt help if a baby feeds
+      poorly or if someone struggles to swallow fluids.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/oral-thrush/
+  perforated-eardrum-overview:
+    aliases: Ruptured eardrum, tympanic membrane perforation
+    summary: A perforated eardrum is a hole or tear in the membrane between the ear canal and middle ear. Most small tears heal,
+      but hearing changes should be checked.
+    evidence_gap: Hospital procedure figures capture only people who needed interventions. They miss perforations that heal on their
+      own and cannot establish national prevalence.
+    symptoms:
+    - Symptoms may include sudden ear pain, muffled hearing, ringing or fluid or blood coming from the ear. Some people feel dizzy
+      or notice the pain ease after discharge begins.
+    causes:
+    - A middle ear infection can build pressure behind the membrane. A blow, sudden pressure change, very loud sound or an object
+      inserted into the ear can also tear it.
+    diagnosis:
+    - A GP can look at the eardrum and check for infection. Hearing tests or a specialist examination may be needed if symptoms follow
+      significant trauma or persist.
+    care:
+    - Keep the ear dry while it heals, and avoid swimming and putting anything into the ear. Use ear drops only if a clinician confirms
+      they are suitable for a perforation.
+    complications:
+    - An opening can allow infection into the middle ear. Ongoing hearing loss, repeated discharge or a tear that does not close
+      may require an ENT review.
+    help:
+    - Contact your GP for hearing loss, discharge or suspected perforation. Seek urgent care for sudden major hearing loss, severe
+      dizziness or discharge after a significant head injury.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/perforated-eardrum-overview/
+  sore-throat:
+    aliases: Pharyngitis, painful throat, throat pain
+    summary: Sore throat is often caused by a short-lived infection. Difficulty breathing, drooling or rapid deterioration can signal
+      a problem that needs emergency care.
+    evidence_gap: Irish studies of people attending with throat pain describe selected patient groups. These studies cannot establish
+      how many people experience sore throat in the wider population.
+    symptoms:
+    - The throat may feel dry, scratchy or painful on swallowing. A cough, hoarseness, swollen glands or fever may occur and can
+      help guide the next step.
+    causes:
+    - Viral infections cause many cases, and group A streptococcus causes some bacterial sore throats. Smoke, dry air or reflux may
+      also irritate the throat.
+    diagnosis:
+    - A clinician can ask about duration, check the throat and consider testing where it would change treatment. Persistent symptoms
+      may justify an assessment for other causes.
+    care:
+    - Drink regularly and ask a pharmacist about suitable pain relief. Most acute sore throats settle without antibiotics. Only use
+      antibiotics that a clinician prescribes for this episode.
+    complications:
+    - Throat pain can make drinking harder and lead to dehydration. A rapidly worsening infection can occasionally cause an abscess
+      or swelling that affects the airway.
+    help:
+    - Contact your GP if the sore throat persists or keeps returning. Call 112 or 999 for breathing difficulty, drooling because
+      you cannot swallow, or severe rapidly worsening symptoms.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/sore-throat/
+  tonsillitis:
+    aliases: Inflamed tonsils, infected tonsils, recurrent tonsillitis
+    summary: Tonsillitis means the tonsils at the back of your throat are inflamed. Viruses are a common cause, and some bacterial
+      infections also need treatment.
+    symptoms:
+    - A sore throat, painful swallowing, fever and tender glands can occur. Tonsils may look enlarged or have a coating, but appearance
+      alone cannot reliably identify the cause.
+    causes:
+    - Viruses and bacteria such as group A streptococcus can cause tonsillitis. The infection can spread through contact with saliva
+      or respiratory secretions.
+    diagnosis:
+    - A GP can examine the throat, assess symptoms and decide whether testing or an antibiotic is likely to help. They may consider
+      glandular fever or an abscess if the pattern differs.
+    care:
+    - Drink regularly and use suitable pain relief if needed. Antibiotics are used when clinically appropriate, and a specialist
+      may discuss surgery for frequent severe episodes.
+    complications:
+    - Occasionally, an abscess develops beside a tonsil. One-sided worsening pain, difficulty opening your mouth or a change in voice
+      can be warning signs.
+    help:
+    - Seek urgent care for severe one-sided pain, difficulty opening your mouth or inability to drink. Call 112 or 999 if breathing
+      is difficult or you cannot swallow your saliva.
