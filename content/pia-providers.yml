@@ -1,7 +1,7 @@
 # Compound PIA comparison — official-provider statements only.
 # PIA-specific fees and referral contracts are NOT yet verified.
 # Future sponsored/referral placements require approval and a disclosed paid relationship.
-updated: '2026-11-15'
+updated: '2026-11-20'
 providers:
   - name: AIB
     slug: aib
@@ -64,6 +64,28 @@ providers:
     checked: '2026-11-15'
     source_url: 'https://www.irishlife.ie/investments/pia/'
     source_label: 'Irish Life — Personal Investment Accounts'
+    fee_model:
+      verified: false
+    referral:
+      active: false
+      approved: false
+  - name: New Ireland Assurance
+    slug: new-ireland-assurance
+    category: Insurer
+    stage: launch-planned
+    status: 'Plans an Individual Investment Account for July 2027, subject to legislation'
+    statement: 'New Ireland Assurance says it will offer an Individual Investment Account (IIA) and publish application details closer to the proposed July 2027 launch. It describes funds investing in shares and bonds but has not named its final fund menu or prices. New Ireland is a Bank of Ireland Group insurer; this listing does not imply an independent banking group or distinct final terms.'
+    availability: 'Not open yet'
+    annual_fee: 'Not published'
+    dealing_fee: 'Not published'
+    fund_fee: 'Not published'
+    fx_fee: 'Not published'
+    minimum_investment: 'Not published'
+    transfer_terms: 'Not published'
+    investment_range: 'Plans investment funds holding shares and bonds; exact funds not published'
+    checked: '2026-11-20'
+    source_url: 'https://www.newireland.ie/investments/individual-investment-account-faqs/'
+    source_label: 'New Ireland Assurance — Individual Investment Account FAQs'
     fee_model:
       verified: false
     referral:
