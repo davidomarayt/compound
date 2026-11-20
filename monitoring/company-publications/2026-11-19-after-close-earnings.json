@@ -1,6 +1,6 @@
 {
   "date": "2026-11-19",
-  "status": "merged_pending_deployment",
+  "status": "deployment_failed_recovery_pending",
   "scan_since_inclusive": "2026-11-18",
   "companies": {
     "PANW": {
@@ -36,8 +36,7 @@
       },
       "status": "verified_live_concurrent_monitor",
       "monitor_commit": "892f166dae4ea63c9719ee8a97e334f020ab0a6b",
-      "confirming_10q": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000033/panw-20261031.htm",
-      "live_verified_at": "2026-11-20T00:02:40Z"
+      "confirming_10q": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000033/panw-20261031.htm"
     },
     "P": {
       "canonical_url": "https://compound.ie/stocks/p/",
@@ -216,5 +215,8 @@
   },
   "merge_commit": "ee6b772be999255d13053d34fcc09a44f1a1a3d1",
   "validated_head": "f6f59f34b66a74246498c7becc6c5264a9d8fb3d",
-  "deployment_status": "pending"
+  "deployment_status": "failed_before_deploy",
+  "failed_deployment_run": "https://github.com/davidomarayt/compound/actions/runs/44643588363",
+  "recovery_pull_request": 191,
+  "failure": "WMT release-only override disabled detailed earnings SEO layout; unchanged production validation rejected it. Recovery moves SEC-verified GAAP parent-attributable net income and EPS into maintained quarterly table and removes release-only override."
 }
