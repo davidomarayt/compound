@@ -147,7 +147,18 @@ The **November knee osteoarthritis paper** also reports pain improvement in the 
 
 ## Retatrutide side effects and safety {#side-effects}
 
-Digestive symptoms were the most frequently reported side effects in TRIUMPH-1. Examples included nausea, diarrhoea, constipation and vomiting. Lilly’s trial summary reported nausea in **42.4%** of the 12 mg group and **14.8%** of the placebo group. It also reported **dysesthesia** in **12.5%** and **0.9%**, respectively. Dysesthesia means an altered or unpleasant sensation, such as tingling or skin sensitivity. Those percentages describe people in this trial, at the studied dose. [TRIUMPH-1 paper](https://pubmed.ncbi.nlm.nih.gov/42814954/) · [Lilly safety table](https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss)
+Digestive symptoms were the most frequently reported adverse events in TRIUMPH-1. The percentages below come from Lilly’s trial safety summary. They describe people enrolled in that study, at the studied dose. [Peer-reviewed TRIUMPH-1 paper](https://pubmed.ncbi.nlm.nih.gov/42814954/)
+
+| Reported event in TRIUMPH-1 | Retatrutide 12 mg group | Placebo |
+|---|---:|---:|
+| Nausea | 42.4% | 14.8% |
+| Diarrhoea | 32.0% | 13.5% |
+| Constipation | 26.1% | 10.9% |
+| Vomiting | 25.3% | 4.8% |
+| Dysesthesia (altered sensation) | 12.5% | 0.9% |
+| Stopped study treatment because of an adverse event | 11.3% | 4.9% |
+
+Dysesthesia means an altered or unpleasant sensation, such as tingling or skin sensitivity. Lilly reported that most such events resolved during treatment. The discontinuation rate shows how often people in each group stopped the study drug because of any adverse event. [Lilly safety table](https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss)
 
 The peer-reviewed knee osteoarthritis paper reported more serious adverse events with retatrutide than with placebo in both trials. The TRIUMPH-2 paper also found that low blood pressure and altered sensation occurred more often with retatrutide. Longer follow-up and regulatory evaluation will help establish how often rarer harms occur and which patients face higher risks. Treatment discontinuation and quality of life also matter when weighing potential benefits and harms. [Knee osteoarthritis paper](https://www.nejm.org/doi/10.1056/NEJMoa2610676) · [TRIUMPH-2 paper](https://pubmed.ncbi.nlm.nih.gov/42810372/)
 
