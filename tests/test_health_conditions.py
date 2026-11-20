@@ -48,6 +48,10 @@ def test_missing_evidence_requires_a_documented_gap(tmp_path, catalogue):
         ("test", "MedicalTest", "Preparing for the appointment", "Irish testing figures"),
         ("procedure", "MedicalProcedure", "How to prepare", "Irish procedure figures"),
         ("service", "Service", "What to consider", "Irish service figures"),
+        ("symptom", "MedicalSymptom", "How it is assessed", "Irish data on this symptom"),
+        ("topic", "Thing", "What to know", "Irish data and evidence"),
+        ("contraception", "Thing", "How to use or access it", "Irish contraception figures"),
+        ("vaccination", "MedicalProcedure", "What it protects against", "Irish vaccination figures"),
     ],
 )
 def test_guide_formats_documented_irish_data_gap(
@@ -79,3 +83,16 @@ def test_guide_formats_documented_irish_data_gap(
     assert f"<h2>{evidence_heading}</h2>" in html
     assert "The source gives no national count." in html
     assert "<figcaption>" not in html
+
+
+def test_abortion_uses_procedure_language():
+    content = ROOT / "content"
+    editorial = yaml.safe_load((content / "health-conditions.yml").read_text(encoding="utf-8"))
+    related_urls = {url for guide in editorial["guides"].values() for url in guide.get("links", {}).values()}
+    directory = load_conditions(content, related_urls)
+    entry = next(item for item in directory["featured"] if item["url"] == "/health/conditions/abortion/")
+
+    assert entry["schema_type"] == "MedicalProcedure"
+    assert dict(entry["sections"])["complications"] == "Aftercare and warning signs"
+    assert entry["records"][0]["measure"] == "procedure"
+    assert entry["records"][0]["label"] == "Reported terminations of pregnancy"
