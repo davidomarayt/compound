@@ -155,7 +155,7 @@ sources:
     url: https://about.hse.ie/api/v2/download-file/file_based_publications/IMIS_2024_National_Report.pdf
   imj_flush:
     name: Irish Medical Journal, prevalence and severity of menopausal symptoms study
-    url: https://imj.ie/wp-content/uploads/2025/01/Prevalence-and-severity-of-menopausal-symptoms-in-peri-and-post-menopausal-women.pdf
+    url: https://research.tus.ie/en/publications/prevalence-and-severity-of-menopausal-symptoms-in-peri-and-post-m/
   irish_amp_ps:
     name: HSE 2024 Antimicrobial Point Prevalence Survey in Acute Hospitals, appendix
     url: https://assets.hse.ie/media/documents/Antimicrobial_Point_Prevalence_Survey_in_Acute_Hospitals_in_Ireland_2024_Appendix_2.pdf
@@ -228,6 +228,27 @@ sources:
   nsrf_2025:
     name: National Self-Harm Registry Ireland Annual Report 2025
     url: https://www.drugsandalcohol.ie/46855/1/NSRF-National-Self-Harm-Registry-Ireland-2025_digital.pdf
+  atlanticdip_gdm:
+    name: ATLANTIC DIP regional Irish gestational diabetes study
+    url: https://pureadmin.qub.ac.uk/ws/portalfiles/portal/129039214/Health_related_quality_of_life_two_to_five_years_after_gestational_diabetes_mellitus.pdf
+  hpsc_ears2025:
+    name: HPSC, EARS-Net Ireland annual report 2025
+    url: https://file.hpsc.ie/uploads/europeanantimicrobialresistancesurveillancesystemearss/surveillancereports/1789980676.html
+  hpsc_hai2023_supplement:
+    name: HPSC, 2023 national hospital point prevalence survey by hospital type
+    url: https://file.hpsc.ie/uploads/infectioncontrolandhai/annualreports/1760249077.pdf
+  hpsc_ipd2024:
+    name: HPSC, invasive pneumococcal disease in Ireland 2024
+    url: https://file.hpsc.ie/uploads/pneumococcaldisease/annualreports/1787155242.pdf
+  hpsc_parvovirus_lab:
+    name: HPSC, parvovirus B19 epidemiological data
+    url: https://www.hpsc.ie/a-z/other/parvovirus/
+  hpsc_sti2025_summary:
+    name: HPSC, Sexually Transmitted Infections in Ireland 2025
+    url: https://file.hpsc.ie/uploads/sexuallytransmittedinfections/epidemiologicaldata/annualreports/1780666969.pdf
+  rotunda_2024_physio:
+    name: Rotunda Hospital Annual Report 2024, physiotherapy service
+    url: https://rotunda.ie/rotunda-pdfs/Clinical%20Reports/2024%20The%20Rotunda%20Annual%20Report.pdf?_t=1763639783
 evidence:
   eczema:
   - value: About 10%
@@ -1695,6 +1716,96 @@ evidence:
     source: healthyireland2025
     locator: Contraception section, use by method and age
     measure: prevalence
+  diabetes-and-pregnancy:
+  - value: 12.4% met gestational diabetes criteria
+    period: Historical ATLANTIC DIP cohort, reported 2015
+    population: Participants who completed screening in five antenatal centres along Ireland’s Atlantic seaboard
+    note: This uses IADPSG criteria for gestational diabetes in a regional cohort. It does not include pre-existing diabetes or provide
+      a current national estimate.
+    source: atlanticdip_gdm
+    locator: Methods, ATLANTIC DIP cohort
+    measure: prevalence
+  esbls:
+  - value: 279 ESBL-positive isolates
+    period: '2025'
+    population: Invasive E. coli isolates reported through Ireland’s EARS-Net surveillance
+    note: ESBL positivity was 11.0% among the 2,542 isolates with a positive or negative classification. The data exclude other bacterial
+      species and do not measure gut carriage.
+    source: hpsc_ears2025
+    locator: Table 6, extended spectrum beta-lactamase production
+    measure: registry
+  healthcare-associated-infections:
+  - value: 7.4% with an active infection
+    period: May 2023
+    population: 12,650 eligible inpatients at 65 Irish acute hospitals
+    note: 932 patients had at least one active healthcare-associated infection on the survey day. This is a snapshot among eligible
+      hospital inpatients.
+    source: hpsc_hai2023_supplement
+    locator: Patient demographics and characteristics, national overview
+    measure: prevalence
+  parvovirus-pregnancy:
+  - value: 411 positive IgM tests
+    period: January to December 2024
+    population: Parvovirus B19 test samples at Ireland’s National Virus Reference Laboratory
+    note: Positive results represented 5.9% of tests. The data include all tested groups and do not estimate the number of infections
+      among pregnant people specifically.
+    source: hpsc_parvovirus_lab
+    locator: Parvovirus B19 in Ireland, 2024
+    measure: registry
+  pelvic-girdle-pain-pregnancy:
+  - value: 2,260 new outpatient records
+    period: '2024'
+    population: Adult outpatient physiotherapy activity at the Rotunda Hospital in Dublin
+    note: These records had pelvic girdle pain as the referral category. The figures describe activity at one maternity hospital
+      and do not establish national prevalence.
+    source: rotunda_2024_physio
+    locator: Physiotherapy service, Table 1 adult new outpatients
+    measure: service
+  pneumococcal-vaccine:
+  - value: 84.2% uptake
+    period: Q4 2024
+    population: Children assessed at 24 months in HPSC’s Irish vaccine uptake data
+    note: Share who had received three doses of the pneumococcal conjugate vaccine. This is historical childhood programme coverage,
+      not uptake of the adult pneumococcal vaccine.
+    source: hpsc_ipd2024
+    locator: Background, vaccine uptake at 24 months
+    measure: service
+  sexually-transmitted-infections:
+  - value: 18,906 notifications
+    period: '2025'
+    population: Notifications in the Republic of Ireland included in the annual STI summary
+    note: The reported rate was 367.2 per 100,000 population. Notifications are reports across the infections in the summary, with
+      some conditions excluded, and should not be read as unique people or prevalence.
+    source: hpsc_sti2025_summary
+    locator: Summary of STIs in Ireland, 2025
+    measure: notifications
+  staph-infection:
+  - value: 1,121 invasive Staphylococcus aureus isolates
+    period: '2025'
+    population: Irish laboratory reports to EARS-Net
+    note: These are invasive isolates, of which 10.0% were methicillin resistant. The count excludes many localised skin infections
+      and does not measure how many people carry staph.
+    source: hpsc_ears2025
+    locator: Section 2, Staphylococcus aureus
+    measure: registry
+  urinary-catheter:
+  - value: 14.3% with a urinary catheter
+    period: May 2023
+    population: Eligible inpatients surveyed at 65 acute hospitals in Ireland
+    note: Share with a urinary catheter at the time of the hospital survey. This is a point-in-time device-use measure and excludes
+      catheter use outside the participating hospitals.
+    source: hpsc_hai2023_supplement
+    locator: National patient-demographic table, urinary catheter row
+    measure: service
+  urinary-incontinence-pregnancy:
+  - value: 230 new outpatient records
+    period: '2024'
+    population: Adult outpatient physiotherapy activity at the Rotunda Hospital in Dublin
+    note: The referral category includes incontinence during pregnancy and after birth. It does not count everyone with urinary leakage
+      or separate pregnancy from postpartum activity.
+    source: rotunda_2024_physio
+    locator: Physiotherapy service, Table 1 adult new outpatients
+    measure: service
 guides:
   asthma:
     aliases: wheezing reactive airways
@@ -8458,3 +8569,617 @@ guides:
       if treatment does not help.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/vaginal-thrush/
+  alzheimers-disease:
+    aliases: Alzheimer disease, Alzheimer's dementia
+    summary: Alzheimer’s disease gradually changes memory, thinking and the ability to manage everyday tasks. A GP assessment can
+      identify what else may be contributing and help you plan support early.
+    evidence_gap: The HSE estimated 64,143 people living with dementia in 2020, across all types. The national estimate does not
+      break out this specific type of dementia.
+    symptoms:
+    - Repeating questions, forgetting recent conversations and getting lost on familiar routes are possible early signs. Some people
+      first have difficulty finding words or following multistep tasks.
+    causes:
+    - Changes in the brain involving amyloid and tau are linked to damage to nerve cells. Risk rises with age, and inherited changes
+      cause a small proportion of cases.
+    diagnosis:
+    - Your GP can ask how the changes affect daily life, review medicines and request blood tests for other contributors. Memory
+      testing, brain imaging and specialist assessment can clarify the diagnosis.
+    care:
+    - Ask what support is available locally for memory, daily activities and carers. A specialist can discuss medicines for symptoms
+      and practical decisions about transport, finances and future care.
+    complications:
+    - As the disease progresses, eating, communication and safe movement may become harder. A plan for medication, meals and supervision
+      can change with the person’s needs.
+    help:
+    - Arrange a GP review for persistent changes that interfere with daily life. Sudden confusion needs urgent medical assessment,
+      while sudden facial droop, arm weakness or speech changes require 112 or 999.
+    sources:
+      Clinical guidance and further reading: https://www.hse.ie/eng/dementia-pathways/files/model-of-care-for-dementia-in-ireland.pdf
+  bronchitis:
+    aliases: Acute bronchitis, inflamed airways
+    summary: Acute bronchitis is inflammation of the larger airways that usually follows a viral infection. The cough can continue
+      after the other symptoms improve.
+    evidence_gap: Many episodes resolve at home, and Irish hospital data exclude these episodes. There is no verified national estimate
+      for acute bronchitis across the population.
+    symptoms:
+    - A cough may bring up mucus and be accompanied by tiredness, a sore throat, mild fever or discomfort when coughing. Symptoms
+      can overlap with pneumonia and asthma.
+    causes:
+    - Respiratory viruses commonly inflame the bronchial tubes, increasing mucus and sensitivity to coughing. Smoking and inhaled
+      irritants can irritate the airways and contribute to recurring symptoms.
+    diagnosis:
+    - A GP may ask about breathing, fever and how long the cough has lasted, then listen to the chest. Suspected pneumonia or another
+      cause may require further examination or tests.
+    care:
+    - Rest, fluids and avoiding smoke can help during recovery. A pharmacist can advise on safe symptom relief. Antibiotics are usually
+      unnecessary for acute viral bronchitis.
+    complications:
+    - Symptoms generally ease over several weeks. Worsening breathlessness, prolonged fever or reduced ability to drink can signal
+      a complication or another illness and should prompt reassessment.
+    help:
+    - Contact your GP if a cough lasts more than three weeks, symptoms worsen or you cough up blood. Call 112 or 999 for severe difficulty
+      breathing.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/bronchitis/
+  chest-infection:
+    aliases: Lower respiratory infection, chesty cough
+    summary: A chest infection affects the airways or lungs. Some are mild and resolve at home, while pneumonia and other severe
+      infections need medical assessment.
+    evidence_gap: Chest infection is a broad term. Surveillance of individual infections and admissions for pneumonia cannot measure
+      the national number of all chest infections.
+    symptoms:
+    - Cough, fever, wheeze, fatigue, chest discomfort and breathlessness may occur. Comparing breathing and activity with a person’s
+      usual level can help identify when their health is deteriorating.
+    causes:
+    - Viruses commonly cause bronchitis, while pneumonia may be caused by bacteria or viruses. Older age, smoking, pregnancy or some
+      long-term illnesses can increase the risk of complications.
+    diagnosis:
+    - A GP can check vital signs, listen to the chest and consider pneumonia or a flare of an existing condition. A chest X-ray or
+      other tests may be needed if symptoms are severe.
+    care:
+    - Rest, fluids and suitable fever or pain relief may help. Treatment depends on the cause, and antibiotics may be prescribed
+      when a significant bacterial infection is suspected.
+    complications:
+    - A serious infection can lead to low oxygen, dehydration or sepsis. A cough can outlast other symptoms, but new breathlessness
+      or high fever needs another assessment.
+    help:
+    - Get medical advice promptly if you are short of breath, feel very unwell or are at higher risk. Call 112 or 999 if breathing
+      becomes severely difficult or you develop blue lips or sudden confusion.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/chest-infection/
+  common-cold:
+    aliases: Viral cold, runny nose, head cold
+    summary: A common cold is a short-lived viral infection of the nose and throat. Most people improve with time and simple symptom
+      relief.
+    evidence_gap: Most colds never reach medical services. Irish surveillance of selected respiratory viruses cannot measure all
+      common-cold episodes in the community.
+    symptoms:
+    - Symptoms often develop gradually and include a stuffy or runny nose, sneezing, sore throat and cough. Young children may be
+      more unsettled and have difficulty feeding when congested.
+    causes:
+    - Many different viruses cause colds. They spread through respiratory particles or by transfer from hands to the eyes, nose or
+      mouth after contact with a contaminated surface.
+    diagnosis:
+    - Typical symptoms are usually recognised without tests. Because COVID-19, flu and other infections can begin similarly, symptom
+      pattern alone cannot reliably identify the specific virus.
+    care:
+    - Rest, drink enough and ask a pharmacist about safe options for blocked nose, pain or fever. Check ingredients to avoid taking
+      more than one product containing paracetamol.
+    complications:
+    - Cough and congestion can outlast the worst symptoms. Earache, worsening facial pain or breathlessness may indicate a different
+      problem or a complication that needs assessment.
+    help:
+    - Contact your GP if symptoms worsen, keep returning or do not improve after around ten days. Get emergency help if breathing
+      becomes severely difficult or someone is hard to wake.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/common-cold/
+  cough:
+    aliases: Persistent cough, dry cough, chesty cough
+    summary: Cough clears material from the airways. How long it lasts and what else is happening, such as fever or breathlessness,
+      help determine what to do next.
+    evidence_gap: Cough occurs across many conditions. An Irish count of medical visits for particular infections would miss many
+      people with cough and cannot establish symptom prevalence.
+    symptoms:
+    - A cough may be dry or bring up mucus. Record how long it has lasted, whether it interrupts sleep and any fever, wheeze, blood
+      or unexplained weight loss.
+    causes:
+    - Infections commonly cause short-lived cough. Asthma, reflux, cigarette smoke, medicines and other lung problems may contribute
+      to a cough that persists or keeps returning.
+    diagnosis:
+    - A clinician can check the lungs, review medicines and ask about exposures. Depending on the pattern, tests such as spirometry
+      or a chest X-ray may be appropriate.
+    care:
+    - Fluids and avoiding smoke can help. Honey may soothe a cough for people older than one year. A pharmacist can advise on age
+      limits and suitability of products.
+    complications:
+    - Persistent cough can disturb sleep, cause soreness and affect daily activity. Blood in mucus or worsening breathing may indicate
+      a cause that needs medical attention.
+    help:
+    - Contact your GP if a cough lasts more than three weeks or worsening symptoms concern you. Seek urgent help for coughing up
+      blood, and call 112 or 999 with severe breathing difficulty.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/cough/
+  dementia-lewy-bodies:
+    aliases: DLB, Lewy body dementia
+    summary: Dementia with Lewy bodies can affect attention, movement, sleep and what a person sees. Symptoms can vary considerably
+      within the same day.
+    evidence_gap: The HSE estimated 64,143 people living with dementia in 2020, across all types. The national estimate does not
+      break out this specific type of dementia.
+    symptoms:
+    - A person may see people or animals that are not there, have marked swings in alertness, move more slowly or act out dreams
+      during sleep. Memory may be relatively less affected early on.
+    causes:
+    - Lewy bodies are deposits containing alpha-synuclein. The parts of the brain affected help explain why changes in thinking can
+      occur alongside stiffness, slow movement and sleep disturbance.
+    diagnosis:
+    - Tell the GP about changes in alertness, falls, hallucinations and sleep, including when they began. Specialists can combine
+      that history with thinking tests, examination and sometimes imaging.
+    care:
+    - Treatment can target specific difficulties and may include a medicine for thinking symptoms or physiotherapy for movement.
+      Tell every prescriber about the diagnosis because some antipsychotics can cause serious reactions.
+    complications:
+    - Falls, fainting and swallowing difficulties can affect safety. Reviewing the home environment, the medicine list and the person’s
+      daily routine can help support independence.
+    help:
+    - Ask the GP about persistent symptoms or new falls. Seek urgent help for a sudden change in alertness or confusion, especially
+      with fever, injury or a recent medicine change.
+    sources:
+      Clinical guidance and further reading: https://www.hse.ie/eng/dementia-pathways/files/model-of-care-for-dementia-in-ireland.pdf
+  diabetes-and-pregnancy:
+    aliases: Gestational diabetes, diabetes in pregnancy, GDM
+    summary: Diabetes in pregnancy includes diabetes diagnosed before conception and high blood glucose that first develops during
+      pregnancy. The maternity and diabetes teams can help you manage either safely.
+    symptoms:
+    - Gestational diabetes often causes no noticeable symptoms. Thirst, tiredness and urinating more can have several explanations
+      in pregnancy, so glucose testing helps identify people who need care.
+    causes:
+    - Pregnancy hormones make insulin less effective, especially later in pregnancy. Gestational diabetes develops when the body
+      cannot produce enough insulin to keep blood glucose in the recommended range.
+    diagnosis:
+    - Antenatal teams assess risk and may arrange an oral glucose tolerance test, often at 24 to 28 weeks. If you already have diabetes,
+      ask for specialist care early.
+    care:
+    - Care may involve regular glucose checks, changes to food and activity, and medication if needed. Ask about monitoring after
+      birth and future diabetes checks if you had gestational diabetes.
+    complications:
+    - Poorly controlled blood glucose can increase the risk of a larger baby, birth complications and low blood sugar in the newborn.
+      Gestational diabetes also raises future type 2 diabetes risk.
+    help:
+    - Contact your diabetes or maternity team promptly if glucose is outside the limits in your plan. Seek urgent care for vomiting
+      with high glucose or ketones, or reduced fetal movement.
+  esbls:
+    aliases: Extended-spectrum beta-lactamases, ESBL-producing bacteria
+    summary: Some bacteria make enzymes called ESBLs that reduce the effectiveness of certain antibiotics. A laboratory can distinguish
+      carriage from a suspected infection when clinicians interpret the sample with symptoms.
+    symptoms:
+    - People often carry these bacteria in their gut without symptoms. Infection can cause urinary pain and urgency, fever or other
+      symptoms depending on the part of the body involved.
+    causes:
+    - ESBL enzymes can break down some antibiotics. Bacteria bearing them can spread through contact or cause infection when they
+      move from the gut to a vulnerable site.
+    diagnosis:
+    - A lab can test samples from a suspected infection to see which antibiotics work. A screening sample may show carriage in a
+      person who feels well.
+    care:
+    - Carriage generally does not need antibiotics. For infection, the clinician chooses treatment using symptoms and lab results.
+      Tell healthcare staff about a previous positive ESBL result.
+    complications:
+    - A urinary infection can spread to the kidneys or bloodstream. Resistance can narrow treatment choices and may mean that severe
+      infections require antibiotics given through a vein.
+    help:
+    - Contact a clinician promptly if you have fever and urinary symptoms, particularly after recent admission. Seek emergency care
+      for severe illness with confusion, collapse or breathing difficulty.
+  frontotemporal-dementia:
+    aliases: FTD, frontotemporal lobar degeneration
+    summary: Frontotemporal dementia often first changes behaviour or language. It can develop at a younger age than other dementias,
+      so problems sometimes appear while the person is working.
+    evidence_gap: The HSE estimated 64,143 people living with dementia in 2020, across all types. The national estimate does not
+      break out this specific type of dementia.
+    symptoms:
+    - Some people become less inhibited, lose interest in others or develop repetitive habits and food preferences. Others struggle
+      to name objects, understand words or produce fluent speech.
+    causes:
+    - Damage to nerve cells mainly affects the frontal and temporal parts of the brain. Some cases run in families, while many people
+      have no known inherited cause.
+    diagnosis:
+    - A GP can refer for specialist assessment when behaviour or language changes persist. A history from someone who knows the person
+      well, thinking or language tests and imaging can help.
+    care:
+    - Speech and language therapy can support communication. Occupational therapy, routine changes and carer support can help manage
+      behaviour and day-to-day activity, and specialists can advise on genetic counselling when relevant.
+    complications:
+    - Financial judgement, eating habits or communication may change before the person needs much physical help. In some forms, problems
+      with walking or swallowing eventually develop.
+    help:
+    - Discuss gradual personality or speech changes with your GP. Call 112 or 999 for sudden speech difficulty or one-sided weakness,
+      since those symptoms can indicate a stroke.
+    sources:
+      Clinical guidance and further reading: https://www.hse.ie/eng/dementia-pathways/files/model-of-care-for-dementia-in-ireland.pdf
+  genital-warts:
+    aliases: Anogenital warts, HPV warts, condyloma
+    summary: Genital warts are small growths caused by certain types of HPV. A sexual health clinic or GP can check the diagnosis
+      and explain treatment choices.
+    evidence_gap: The HPSC’s 2025 STI report says anogenital wart surveillance data have not been collated since 2019. Totals for
+      other STIs cannot establish current prevalence of genital warts.
+    symptoms:
+    - Warts may appear as individual bumps or clusters around the genitals or anus. They can be painless or cause itching, and other
+      types of skin growth can look similar.
+    causes:
+    - HPV can spread through close skin contact during sex. Types that typically cause genital warts differ from the high-risk HPV
+      types associated with most HPV-related cancers.
+    diagnosis:
+    - A clinician generally examines the area and may offer tests for other STIs depending on your history. Tell them if you are
+      pregnant or might be pregnant.
+    care:
+    - Warts can clear on their own or be treated with prescribed applications or freezing. Avoid using shop-bought preparations intended
+      for hand or foot warts on genital skin.
+    complications:
+    - Warts can recur after treatment. Condoms reduce the chance of transmission but leave some skin uncovered, and vaccination can
+      prevent infection with certain wart-causing HPV types.
+    help:
+    - Arrange a check for growths you cannot identify, or if they change, bleed or hurt. Ask your maternity team about suitable treatment
+      if you are pregnant.
+    sources:
+      Clinical guidance and further reading: https://file.hpsc.ie/uploads/sexuallytransmittedinfections/epidemiologicaldata/annualreports/1780666969.pdf
+  healthcare-associated-infections:
+    aliases: HAI, hospital-acquired infection, nosocomial infection
+    summary: A healthcare-associated infection develops in connection with medical care. It can affect a wound, the urinary tract,
+      the lungs or the bloodstream.
+    symptoms:
+    - Symptoms depend on the infection site. They may include fever, a wound becoming more painful or leaking fluid, cough, changes
+      in breathing or new urinary symptoms.
+    causes:
+    - Surgery, medical devices and underlying illness can increase risk. Germs may come from the person’s own skin or gut or spread
+      by contact in a care setting.
+    diagnosis:
+    - A clinician will consider the type and timing of care and examine the affected area. They may order cultures, blood tests or
+      imaging to choose the right treatment.
+    care:
+    - Hand hygiene and appropriate device care reduce risk. Treatment can include antibiotics, wound care or removal of a device,
+      depending on where the infection is and the organisms involved.
+    complications:
+    - A healthcare-associated infection may prolong recovery or spread to the bloodstream. People who have recently left hospital
+      should tell their clinician about recent surgery and any devices.
+    help:
+    - Alert your healthcare team promptly about possible infection after treatment or admission. Call 112 or 999 if the person develops
+      severe breathing difficulty, confusion or rapidly worsening illness.
+  iv-line-infection:
+    aliases: Intravenous cannula infection, line infection
+    summary: An IV line infection can start where a tube enters the skin or involve the bloodstream. Tell the team early if a line
+      site changes or you suddenly feel unwell.
+    evidence_gap: Irish surveys measure certain catheter-related infections under separate definitions. Those categories do not provide
+      a single national prevalence for infections across all types of IV line.
+    symptoms:
+    - Watch for pain, redness, swelling, warmth or discharge near the line. Fever and shivering can occur even without a visible
+      change at the insertion site.
+    causes:
+    - Germs can get around the insertion site or enter through the connection used to give treatment. The risk depends in part on
+      the device and how long it remains in place.
+    diagnosis:
+    - Staff examine the site and check your general condition. If bloodstream infection is possible, they may take blood cultures
+      and decide whether to remove the line.
+    care:
+    - Keep the dressing clean and dry and let the team know if it loosens. Clinicians may remove or replace a suspected infected
+      line and treat the infection when needed.
+    complications:
+    - Bloodstream infection can lead to sepsis. Protecting the site and removing a line when it is no longer needed can reduce the
+      chance of problems.
+    help:
+    - Alert staff at once for new redness, discharge, fever or shaking chills. At home, contact the team managing your line immediately
+      or seek emergency help for sudden severe illness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/iv-line-infection/
+  morning-sickness:
+    aliases: Nausea and vomiting in pregnancy, NVP, pregnancy sickness
+    summary: Pregnancy sickness can happen at any time of day. If vomiting makes it hard to drink or eat, ask your maternity team
+      for help before dehydration sets in.
+    evidence_gap: Hospital and maternity service figures miss many pregnancies with nausea managed at home. A hospital count for
+      hyperemesis cannot establish the Irish prevalence of all pregnancy sickness.
+    symptoms:
+    - Nausea, food aversions, sensitivity to smells and vomiting are common in early pregnancy. Dark urine, dizziness and weight
+      loss suggest you may be taking in too little fluid or food.
+    causes:
+    - Hormonal and other changes in early pregnancy contribute to sickness. Abdominal pain, fever or a change that starts later can
+      prompt assessment for a different cause.
+    diagnosis:
+    - A clinician may ask how much you can drink and how often you pass urine, check your weight and consider looking for dehydration
+      or another illness.
+    care:
+    - Small, frequent portions and regular sips may be easier to manage. A GP or maternity clinician can discuss anti-sickness medicines
+      suitable in pregnancy and arrange fluids if needed.
+    complications:
+    - Severe or persistent sickness can lead to dehydration, electrolyte disturbance and weight loss. Hyperemesis gravidarum can
+      need hospital assessment and support to recover safely.
+    help:
+    - Contact your GP or maternity unit promptly if you cannot keep fluids down, pass very little urine or feel faint. Seek urgent
+      assessment for severe pain or blood in vomit.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/morning-sickness/
+  parvovirus-pregnancy:
+    aliases: Slapped cheek exposure in pregnancy, parvovirus B19
+    summary: Parvovirus B19 can spread before a rash appears. If you are pregnant and exposed, contact your maternity team or GP
+      so they can assess whether testing is needed.
+    symptoms:
+    - Adults can develop joint pain, mild fever or a rash, and some have no symptoms. A child with infection may have a bright cheek
+      rash after earlier cold-like symptoms.
+    causes:
+    - Parvovirus B19 usually spreads through respiratory secretions. If a pregnant person becomes infected, it can sometimes cross
+      the placenta and temporarily reduce the baby’s production of red blood cells.
+    diagnosis:
+    - Your GP or maternity team can arrange blood tests to check immunity or recent infection. They may repeat a test if exposure
+      was too recent for a clear result.
+    care:
+    - If tests suggest a recent infection, your maternity team may refer you for ultrasound monitoring. A fetal medicine specialist
+      can assess and treat severe fetal anaemia when necessary.
+    complications:
+    - Most pregnancies are unaffected. In some cases infection can lead to severe fetal anaemia, fluid accumulation or pregnancy
+      loss, with the risk depending on timing.
+    help:
+    - Call your GP or maternity team about known exposure, a new rash or unexplained joint pain. Phone ahead before attending in
+      person so the service can limit exposure to others.
+  pelvic-girdle-pain-pregnancy:
+    aliases: PGP, symphysis pubis dysfunction, SPD
+    summary: Pregnancy-related pelvic girdle pain affects the joints and muscles around the pelvis. Daily movements like walking,
+      climbing stairs and rolling over in bed can become painful.
+    symptoms:
+    - Pain can be felt over the pubic bone, in the groin or across the lower back or buttocks. It can worsen when standing on one
+      leg or getting out of a car.
+    causes:
+    - Pregnancy changes the load on the pelvis and how muscles and joints share that load. A previous episode, back pain or an injury
+      can contribute to symptoms.
+    diagnosis:
+    - A midwife, GP or physiotherapist can assess where the pain occurs and which movements trigger it. They can check whether the
+      pattern suggests a different cause.
+    care:
+    - Ask about physiotherapy, pacing activity and adapting painful movements. Sitting down to dress, keeping your knees closer together
+      when turning and using a support as advised may help.
+    complications:
+    - Pain can disrupt sleep and limit mobility. Very limited movement can add to the risk of blood clots in pregnancy, so tell the
+      maternity team if walking becomes difficult.
+    help:
+    - Contact the maternity team if pelvic pain is severe or comes with bleeding, regular tightenings or reduced fetal movements.
+      Get urgent help for sudden breathlessness or one-sided leg swelling.
+  pleurisy:
+    aliases: Pleuritic chest pain, inflamed lung lining
+    summary: Pleurisy is inflammation of the thin lining around the lungs. It often hurts to breathe deeply, but several urgent conditions
+      can cause similar pain.
+    emergency: 'Sudden severe chest pain or difficulty breathing: call'
+    evidence_gap: Pleurisy can be recorded as a symptom or under the underlying condition. Irish hospital figures cannot reliably
+      establish community prevalence for pleurisy itself.
+    symptoms:
+    - The pain is often sharp, felt in the chest and worse with breathing in, coughing or movement. It may spread to the back or
+      shoulder.
+    causes:
+    - A lung infection is one possible cause. A pulmonary embolism, injury, autoimmune condition or other chest problem can also
+      cause inflammation or a similar pain.
+    diagnosis:
+    - A clinician assesses the onset, breathing and risk factors and examines the chest. They may order imaging, an ECG or blood
+      tests based on likely causes.
+    care:
+    - Treating the underlying problem matters. A clinician may recommend suitable pain relief, prescribe antibiotics for bacterial
+      infection or arrange hospital treatment when tests show a serious cause.
+    complications:
+    - Fluid can collect around the lung and make breathing harder. Ongoing breathlessness or a new fever may require re-evaluation
+      even after the pain eases.
+    help:
+    - Seek urgent advice for new sharp chest pain with breathing. Call 112 or 999 if pain is sudden and severe, breathing is difficult
+      or you cough up more than a few streaks of blood.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/pleurisy/
+  pneumococcal-vaccine:
+    kind: procedure
+    aliases: Pneumococcal immunisation, pneumococcal jab, PPV23, PCV
+    summary: Pneumococcal vaccines reduce the risk of serious disease caused by some types of pneumococcal bacteria. The vaccine
+      and schedule depend on age and medical risk.
+    symptoms:
+    - Vaccination can prevent forms of pneumonia, bloodstream infection and meningitis caused by covered types of pneumococcus. People
+      with some long-term illnesses or immune problems face greater risks.
+    causes:
+    - Vaccines help the immune system recognise the bacterium’s outer coating. Different products protect against different sets
+      of pneumococcal types and are used for different age and risk groups.
+    diagnosis:
+    - Ireland offers pneumococcal vaccination in childhood and recommends vaccination for older adults and certain people at increased
+      risk. Your GP can check which doses you need.
+    care:
+    - Bring any vaccination record and tell the clinic about previous serious reactions, immune treatment or removal of your spleen.
+      A clinician will explain if additional doses are advised.
+    complications:
+    - Pain, redness or swelling near the injection site and a mild fever may occur. Protection takes time to develop and does not
+      cover every cause of pneumonia.
+    help:
+    - Discuss a previous severe allergic reaction with a clinician before vaccination. Call 112 or 999 if someone develops breathing
+      difficulty or throat swelling after a dose.
+  respiratory-tract-infections:
+    aliases: RTIs, upper respiratory infection, lower respiratory infection
+    summary: Respiratory tract infections affect the nose, throat, airways or lungs. The location, duration and effect on breathing
+      matter more for immediate care than the name alone.
+    evidence_gap: HPSC surveillance tracks selected viruses and severe infections. It does not give a single measure of all upper
+      and lower respiratory infections in Ireland.
+    symptoms:
+    - Upper infections often cause stuffiness, sore throat or sneezing. Lower infections can lead to cough, wheezing, fever, chest
+      pain or difficulty breathing, although symptoms often overlap.
+    causes:
+    - Viruses cause many infections. Bacteria cause some, including certain types of pneumonia. Respiratory infections can spread
+      through droplets, smaller airborne particles and hands contaminated with secretions.
+    diagnosis:
+    - Many mild illnesses can be assessed by symptoms. A GP can examine the throat or chest and check oxygen levels. Imaging or targeted
+      tests are useful in some cases.
+    care:
+    - Most uncomplicated viral illnesses improve with time, fluids and rest. Ask a pharmacist about symptom relief. Antibiotics are
+      used only when clinically indicated for a bacterial infection.
+    complications:
+    - Some infections can worsen asthma or COPD or progress to pneumonia. Older people, infants and people with weaker immune systems
+      can deteriorate quickly and may need earlier review.
+    help:
+    - Ask a clinician for advice if symptoms deteriorate, you are at higher risk or a child feeds poorly. Call 112 or 999 for severe
+      breathing difficulty or blue lips.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/respiratory-tract-infections/
+  sexually-transmitted-infections:
+    aliases: STIs, sexually transmitted diseases, sexual health testing
+    summary: STIs can pass through sexual contact and often have no obvious symptoms. Taking an appropriate test helps you get treatment
+      and protect partners.
+    symptoms:
+    - Symptoms can include discharge, pain when urinating, sores, rash, pelvic pain or testicular pain. Many infections cause no
+      symptoms, so testing can matter even when you feel well.
+    causes:
+    - Different bacteria, viruses and parasites cause STIs. The chance of transmission depends on the type of contact, the infection
+      and measures such as barriers, vaccines or HIV prevention medicines.
+    diagnosis:
+    - Tell the service what kind of contact occurred and when. Depending on the infection, testing may use urine, swabs or blood,
+      and some tests may need repeating later.
+    care:
+    - In Ireland, a sexual health clinic, some GPs or an eligible home-testing pathway can help. If a result is positive, ask about
+      partner notification and when to resume sexual contact.
+    complications:
+    - Untreated infections can sometimes cause pelvic inflammatory disease, fertility problems or pregnancy complications. Some infections
+      also affect joints, nerves or other organs if they progress.
+    help:
+    - Seek prompt advice for possible recent HIV exposure because preventive treatment is time-sensitive. Arrange same-day assessment
+      for fever with severe pelvic pain, or sudden severe testicular pain.
+  shortness-of-breath-or-chest-pain-in-pregnancy:
+    aliases: Pregnancy breathlessness, chest pain while pregnant
+    summary: Breathing can feel different as pregnancy progresses. Sudden breathlessness, chest pain or faintness needs urgent attention
+      because pregnancy increases the chance of some serious conditions.
+    emergency: 'Chest pain with sudden or severe breathing difficulty: call'
+    evidence_gap: Irish surveillance for individual causes, such as blood clots, cannot measure all episodes of breathlessness or
+      chest pain in pregnancy.
+    symptoms:
+    - Take note of whether breathlessness begins at rest, happens suddenly or comes with chest pain, coughing up blood, a racing
+      heart, faintness or swelling in one leg.
+    causes:
+    - The physical demands of pregnancy can cause gradual breathlessness. Anaemia, asthma, infection or a clot in the lungs are other
+      possible causes, and chest pain warrants assessment.
+    diagnosis:
+    - A clinician can check oxygen levels, pulse and blood pressure and examine the heart, lungs and legs. They may arrange tests
+      or imaging appropriate to pregnancy.
+    care:
+    - Care depends on the cause. Tell healthcare staff you are pregnant and how far along you are, and contact your maternity team
+      about new breathlessness that limits normal activities.
+    complications:
+    - A pulmonary embolism, severe infection or heart condition can affect both the pregnant person and the baby. Acting early gives
+      clinicians time to investigate and treat the cause.
+    help:
+    - Call 112 or 999 for sudden or severe breathing difficulty, chest pain with breathlessness, fainting or coughing up blood. Contact
+      your maternity team urgently if symptoms are new or worsening.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/shortness-of-breath-or-chest-pain-in-pregnancy/
+  staph-infection:
+    aliases: Staphylococcus aureus, staphylococcal skin infection
+    summary: Staph bacteria can live harmlessly on the skin or in the nose. If they enter a wound or deeper tissues, they can cause
+      infection.
+    symptoms:
+    - Skin infection may cause a painful red lump, crusting or pus. A deeper infection can bring fever, chills or marked weakness,
+      with symptoms varying by infection site.
+    causes:
+    - Staph can enter through damaged skin or medical devices. Some strains are resistant to particular antibiotics, while others
+      remain susceptible to standard treatments.
+    diagnosis:
+    - A clinician may recognise a typical skin infection by examining it. Drainage, tissue or blood samples can show which bacteria
+      are present and guide antibiotic treatment.
+    care:
+    - Keep cuts clean and cover draining wounds while seeking advice. A clinician may need to drain an abscess or prescribe antibiotics,
+      depending on the size and severity.
+    complications:
+    - In some cases infection spreads through the skin, into a joint or bone, or into the bloodstream. Rapidly spreading redness
+      or new fever calls for reassessment.
+    help:
+    - Get medical advice if redness spreads, a wound produces pus or fever develops. Call 112 or 999 for severe illness with confusion,
+      collapse or difficulty breathing.
+  stomach-pain-cramps-pregnancy:
+    aliases: Abdominal pain in pregnancy, pregnancy cramps
+    summary: Abdominal pain during pregnancy can come from digestion or stretching ligaments, but pain with other symptoms may need
+      immediate assessment at any stage.
+    evidence_gap: This symptom has many causes. Figures for particular diagnoses, such as ectopic pregnancy, do not capture the prevalence
+      of abdominal pain in Irish pregnancies.
+    symptoms:
+    - Pay attention to where the pain is, whether it comes in waves and what else is happening. Bleeding, shoulder-tip pain, fever
+      or painful urination may change the urgency.
+    causes:
+    - Constipation, trapped wind and ligament pain can cause mild discomfort. Other possibilities include urinary infection, miscarriage,
+      ectopic pregnancy and, later on, labour or problems with the placenta.
+    diagnosis:
+    - The maternity team considers how far along the pregnancy is, your symptoms and examination. They may check urine, arrange an
+      ultrasound or monitor the baby, depending on the situation.
+    care:
+    - If the pain is mild and settles quickly, changing position or resting may help. Tell your maternity team if pain persists,
+      keeps returning or comes with other symptoms.
+    complications:
+    - Some causes, such as ectopic pregnancy or placental problems, can become serious quickly. If pregnancy location has not been
+      confirmed, one-sided pain is especially important to report.
+    help:
+    - Call your maternity unit for persistent pain, bleeding, regular tightenings or reduced fetal movement. Call 112 or 999 for
+      severe pain with collapse, fainting or heavy bleeding.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/stomach-pain-cramps-pregnancy/
+  urinary-catheter:
+    kind: procedure
+    aliases: Bladder catheter, indwelling catheter, intermittent catheter
+    summary: A urinary catheter drains urine from the bladder when you cannot empty it safely or when a medical procedure makes drainage
+      necessary.
+    symptoms:
+    - A catheter may help with urinary retention, during some operations or when clinicians need to measure urine closely. Ask why
+      a catheter is needed and how long it may stay.
+    causes:
+    - An intermittent catheter is inserted for drainage and removed. An indwelling catheter stays in place and may pass through the
+      urethra or through the lower abdomen.
+    diagnosis:
+    - A trained clinician chooses the type and explains how it goes in. People using intermittent catheterisation at home can be
+      taught the technique and what supplies they need.
+    care:
+    - Wash your hands before and after handling the drainage system. Keep tubing free from kinks and follow the instructions for
+      securing it, emptying the bag and cleaning around it.
+    complications:
+    - Possible problems include infection, bladder spasms, leakage or blockage. Removing an indwelling catheter as soon as clinically
+      appropriate limits how long you are exposed to these risks.
+    help:
+    - Contact your nurse or GP urgently for fever, new lower abdominal pain or a catheter that stops draining when you feel your
+      bladder filling. Get emergency help if you become very unwell.
+  urinary-incontinence-pregnancy:
+    aliases: Pregnancy bladder leakage, stress incontinence in pregnancy
+    summary: Urine leakage in pregnancy can happen with coughing, exercise or a sudden urge. A maternity clinician or pelvic health
+      physiotherapist can help you work out what is causing it.
+    symptoms:
+    - Stress leakage occurs with effort such as a cough or sneeze. Urgency leakage occurs with a strong need to pass urine, sometimes
+      with little warning.
+    causes:
+    - A growing uterus, changing pressure on the bladder and pelvic floor muscle changes can contribute. An infection can cause urinary
+      symptoms as well and may need quick treatment.
+    diagnosis:
+    - Tell your midwife or GP when leakage happens and whether you have pain or fever. They can consider a urine test or a pelvic
+      health physiotherapy assessment.
+    care:
+    - Pelvic floor exercises can help, particularly when taught with the right technique. Drink normally unless a clinician tells
+      you otherwise and ask for help if symptoms interfere with daily activity.
+    complications:
+    - Leakage can limit exercise or continue after birth. Symptoms that worsen, persist after delivery or interfere with bladder
+      emptying deserve a follow-up assessment and a treatment plan.
+    help:
+    - Contact your maternity unit if you are unsure whether watery leakage is urine or your waters breaking. Get prompt advice for
+      burning with fever, back pain or feeling very unwell.
+  vascular-dementia:
+    aliases: Vascular cognitive impairment, post-stroke dementia
+    summary: Vascular dementia develops when blood vessel damage affects the brain. Planning, concentration and movement may change
+      alongside memory, sometimes after a stroke.
+    evidence_gap: The HSE estimated 64,143 people living with dementia in 2020, across all types. The national estimate does not
+      break out this specific type of dementia.
+    symptoms:
+    - A person may take longer to think, struggle with familiar routines, walk unsteadily or have changes in mood. Difficulties can
+      appear after a stroke or develop gradually.
+    causes:
+    - Large strokes, smaller strokes or damage to small blood vessels can injure parts of the brain used for thinking. High blood
+      pressure, diabetes and smoking increase vascular risk.
+    diagnosis:
+    - Assessment considers the timing of symptoms, stroke history and daily functioning. A clinician may use cognitive tests and
+      brain imaging and check for other contributors such as depression or medicine effects.
+    care:
+    - Care can include rehabilitation and help with daily routines. A clinician may also manage blood pressure, diabetes, cholesterol
+      or heart rhythm to reduce the chance of further vascular damage.
+    complications:
+    - Further strokes can cause new disability. Mixed dementia is possible when vascular brain changes occur alongside Alzheimer’s
+      disease, so a person’s needs can evolve in different ways.
+    help:
+    - Arrange a GP review if thinking or walking has gradually changed. Call 112 or 999 for sudden facial droop, arm weakness or
+      speech problems, even if they improve.
+    sources:
+      Clinical guidance and further reading: https://www.hse.ie/eng/dementia-pathways/files/model-of-care-for-dementia-in-ireland.pdf
