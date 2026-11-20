@@ -21,9 +21,6 @@ sources:
   hse_coeliac:
     name: HSE Coeliac Disease Overview
     url: https://www2.hse.ie/conditions/coeliac-disease/
-  diabetes_ireland:
-    name: Diabetes Ireland Annual Report 2025
-    url: https://www.diabetes.ie/wp-content/uploads/2026/09/Annual-Report-2025.pdf
   sepsis:
     name: HSE National Sepsis Report 2024
     url: https://assets.hse.ie/media/documents/National_Sepsis_Report_2024.pdf
@@ -55,8 +52,8 @@ sources:
     name: Department of Health Annual Report 2025
     url: https://assets.gov.ie/static/documents/86a93d97/DoH_Annual_Report_2025_FINAL.pdf
   migraine_hse:
-    name: HSE Neurology Model of Care
-    url: https://www.hse.ie/eng/services/publications/clinical-strategy-and-programmes/neurology-model-of-care.pdf
+    name: HSE Parliamentary Question response 37774/25
+    url: https://www.hse.ie/eng/about/personalpq/pq/2025-pq-responses/july-2025/pq-37774-25-frank-feighan.pdf
   cso_ihs10:
     name: CSO Irish Health Survey 2025, table IHS10
     url: https://data.cso.ie/table/IHS10
@@ -75,6 +72,12 @@ sources:
   cso_ihs17:
     name: CSO Irish Health Survey 2025, table IHS17
     url: https://data.cso.ie/table/IHS17
+  hse_diabetes:
+    name: HSE Discover Diabetes Programme Evaluation 2024
+    url: https://www.hse.ie/eng/about/who/cspd/ncps/diabetes/resources/diabetes-workstreams/discover-diabetes-type-2-smes-programme-evaluation-report-2024.pdf
+  hse_type1:
+    name: National Clinical Guideline, Adult Type 1 Diabetes Mellitus
+    url: https://assets.hse.ie/media/documents/Adult_Type_1_Diabetes_Mellitus_National_Clinical_Guideline.pdf
 evidence:
   polio:
   - value: '0'
@@ -433,12 +436,12 @@ evidence:
     source: epicc
     locator: table 1
     measure: prevalence
-  - value: 308,948
-    period: 2025 annual report
+  - value: About 308,000
+    period: HSE evaluation published 2024
     population: People living in Ireland
-    note: Diabetes Ireland gives this estimate for all diabetes types. It is an estimated population count.
-    source: diabetes_ireland
-    locator: Introduction
+    note: The HSE estimated the Irish count by applying Scottish prevalence rates. This is a modelled count.
+    source: hse_diabetes
+    locator: Executive summary
     measure: prevalence
   transient-ischaemic-attack-tia:
   - value: 0.8%
@@ -534,20 +537,20 @@ evidence:
     locator: Who is affected
     measure: prevalence
   type-1-diabetes:
-  - value: 30,895
-    period: 2025 annual report
-    population: People living in Ireland
-    note: Diabetes Ireland gives this estimate for type 1 diabetes. It is an estimated population count.
-    source: diabetes_ireland
-    locator: Introduction
+  - value: 20,000–30,000
+    period: National clinical guideline estimate
+    population: Adults living in the Republic of Ireland
+    note: Approximate range cited in the national clinical guideline. This figure covers adults and excludes children.
+    source: hse_type1
+    locator: Executive summary
     measure: prevalence
   type-2-diabetes:
-  - value: 272,904
-    period: 2025 annual report
+  - value: About 273,000
+    period: HSE evaluation published 2024
     population: People living in Ireland
-    note: Diabetes Ireland gives this estimate for type 2 diabetes. It is an estimated population count.
-    source: diabetes_ireland
-    locator: Introduction
+    note: The HSE estimated the Irish count by applying Scottish prevalence rates. This is a modelled count.
+    source: hse_diabetes
+    locator: Executive summary
     measure: prevalence
   sepsis:
   - value: 12,323
@@ -733,12 +736,13 @@ evidence:
     locator: Response, page 1
     measure: prevalence
   migraine:
-  - value: More than 500,000
-    period: Published model of care
+  - value: Almost 800,000
+    period: HSE response published 2025
     population: People in Ireland
-    note: The HSE gives this approximate count in its neurology service planning document.
+    note: The HSE applied a published estimate of about 15% to the Irish population. This is a modelled estimate based
+      on research cited in the response.
     source: migraine_hse
-    locator: Neurological Conditions in Ireland
+    locator: The Irish context
     measure: prevalence
   allergies:
   - value: 15.8%
@@ -866,7 +870,7 @@ guides:
     sources:
       HSE asthma symptoms: https://www2.hse.ie/conditions/asthma/symptoms-of-asthma/
       HSE asthma diagnosis and tests: https://www2.hse.ie/conditions/asthma/diagnosing-asthma/
-      National clinical guideline on acute asthma: https://www.hse.ie/eng/about/who/cspd/ncps/ncpr/asthma/ncec%20guideline/ncec-guideline-no-14-management-of-an-acute-asthma-attack.pdf
+      HSE advice on asthma attacks: https://www2.hse.ie/conditions/asthma/asthma-attacks/
     links:
       Salbutamol inhaler guide: /health/medicines/salbutamol/
   high-blood-pressure-hypertension:
