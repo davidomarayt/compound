@@ -309,6 +309,15 @@ sources:
   tilda_syncope_2017:
     name: Bhangu and colleagues, Irish Longitudinal Study on Ageing analysis of falls and syncope
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5521793/
+  hse_sunburn_2024parents:
+    name: HSE National Cancer Control Programme, 2024 survey of parents and guardians
+    url: https://about.hse.ie/news/hse-reminds-parents-to-protect-childrens-skin-and-be-sunsmart-for-the-return-to-school/
+  ireland_vascular_model_2023:
+    name: National Clinical Programme in Surgery, Vascular Surgery A Model of Care for Ireland
+    url: https://rcsisurgicalaffairs.newsweaver.com/icfiles/1/47755/202433/7102763/912f351f50009149d25775e1/vascular%20surgery%20a%20model%20of%20care%20for%20ireland%202023.pdf
+  midwest_wounds_2021:
+    name: Regional wound prevalence audit in the midwest of Ireland
+    url: https://www.magonlinelibrary.com/doi/abs/10.12968/nrec.2021.23.6.2
 evidence:
   eczema:
   - value: About 10%
@@ -2163,6 +2172,33 @@ evidence:
     source: hpsc2025
     locator: Table 1, Zika virus infection row
     measure: notifications
+  sunburn:
+  - value: 26% of surveyed parents reported a child was sunburnt that year
+    period: '2024'
+    population: Parents and guardians surveyed by the National Cancer Control Programme in Ireland
+    note: The survey reflects reports from respondents about their children. It is not a count of sunburn episodes or a prevalence
+      estimate for every age group.
+    source: hse_sunburn_2024parents
+    locator: Research findings on reported childhood sunburn
+    measure: prevalence
+  venous-leg-ulcer:
+  - value: Around 1 in 500 people
+    period: 2023 model of care publication
+    population: Estimated burden of venous leg ulcers in Ireland
+    note: The Irish vascular model of care gives this approximate figure. It does not provide a recent national point-prevalence
+      survey or registry count.
+    source: ireland_vascular_model_2023
+    locator: Section on venous leg ulcers
+    measure: prevalence
+  wounds:
+  - value: 1,164 wounds across 791 patients
+    period: Audit published in 2021
+    population: Patients receiving wound care during a one-week study in an integrated care organisation in the Irish midwest
+    note: This is a regional audit during a defined week and includes multiple wounds for some patients. It does not count all injuries
+      or wounds treated outside the audited services.
+    source: midwest_wounds_2021
+    locator: Abstract, results
+    measure: service
 guides:
   asthma:
     aliases: wheezing reactive airways
@@ -11613,3 +11649,855 @@ guides:
     help:
     - Contact your GP or midwife after returning from an affected area if you are pregnant, even without symptoms. If planning pregnancy
       or travelling with a partner, ask about precautions in advance.
+  bow-legs-and-knock-knees-in-children:
+    aliases: Bow legs, knock knees, genu varum, genu valgum in children
+    summary: Leg alignment changes as children grow. Bow legs are common in toddlers and knock knees often appear later. Pain, asymmetry
+      or a pattern outside the expected ages deserves assessment.
+    evidence_gap: The HSE describes expected age-related changes. The sources reviewed did not provide separate national rates for
+      bow legs and knock knees in Irish children.
+    symptoms:
+    - With bow legs, the knees stay apart when the feet are together. With knock knees, the knees meet while there is a gap between
+      the ankles.
+    causes:
+    - Growth changes the angle of the knees and lower legs. Most childhood changes are symmetrical. An injury or a condition affecting
+      growth can sometimes change one side more than the other.
+    diagnosis:
+    - A clinician checks age, growth, walking and whether both sides look similar. Imaging or specialist assessment is sometimes
+      appropriate if there is pain or progressive asymmetry.
+    care:
+    - Typical changes usually improve on their own. Encourage normal activity if comfortable, and ask a clinician before buying special
+      footwear or supports for alignment.
+    complications:
+    - Most children with typical alignment changes keep walking and playing normally. Follow-up is more useful when a child has pain,
+      a limp or a worsening difference between the legs.
+    help:
+    - Contact the GP if bowing remains after age three, knock knees worsen after age eight, or one side differs markedly. Seek advice
+      sooner for pain or a limp.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/bow-legs-and-knock-knees-in-children/
+  bunions:
+    aliases: Hallux valgus, bump at big toe joint, bunion pain
+    summary: A bunion develops when the big toe angles towards the other toes and the joint becomes more prominent. The main reason
+      to seek treatment is bothersome pain or reduced function.
+    evidence_gap: The sources reviewed did not establish a national Irish prevalence estimate. Hospital coding for broader foot procedures
+      cannot tell how many Irish people have a bunion.
+    symptoms:
+    - Shoes may rub over the joint, which can become swollen, red or sore. The big toe may crowd adjacent toes, making certain footwear
+      uncomfortable.
+    causes:
+    - Foot shape, family factors and joint conditions can contribute. Tight footwear can make rubbing and pain worse, even when it
+      was not the original cause.
+    diagnosis:
+    - A clinician checks the toe position, movement and areas of pressure. A weight-bearing X-ray may be used when surgery is being
+      considered or the diagnosis is uncertain.
+    care:
+    - A shoe with enough width and depth can reduce pressure. A podiatrist can advise on fitting and padding, and a specialist can
+      discuss surgery for persistent symptoms.
+    complications:
+    - A bunion can slowly become more prominent. Surgery aims to improve symptoms and function, but recovery takes time and stiffness
+      or a recurrence is possible.
+    help:
+    - Speak to a GP or podiatrist if pain limits walking or footwear. Seek prompt assessment for a red, hot joint that becomes suddenly
+      painful, especially with fever.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/bunions/
+  corns-and-calluses:
+    aliases: Hard skin on feet, foot corn, plantar callus
+    summary: Corns and calluses are areas of thickened skin caused by pressure or rubbing. Reducing pressure can ease pain and help
+      stop the thick skin from coming back.
+    evidence_gap: The sources reviewed did not give a reliable national estimate. Pharmacy sales or podiatry appointments would miss
+      people managing thickened skin without professional care.
+    symptoms:
+    - A corn is often small and localised, with a firm centre that can hurt when pressed. A callus is usually wider and forms on
+      a pressure-bearing area.
+    causes:
+    - Skin thickens in response to repeated friction or loading. Shoe fit, work, walking patterns and foot shape can all affect where
+      thick skin develops.
+    diagnosis:
+    - A pharmacist or podiatrist can help distinguish thickened skin from a wart, sore or infection. People with diabetes or poor
+      circulation may need a full foot assessment.
+    care:
+    - Choose roomy supportive shoes and reduce rubbing. Ask a healthcare professional about safe care before trying medicated treatments
+      or filing, particularly if sensation or circulation is reduced.
+    complications:
+    - Continued pressure can make the area painful again. If sensation is reduced, damage beneath hard skin may go unnoticed and
+      develop into a foot ulcer.
+    help:
+    - Speak to a podiatrist or GP for persistent pain, bleeding or discharge. If you have diabetes, poor circulation or reduced feeling,
+      get advice before treating a lesion yourself.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/corns-and-calluses/
+  dandruff:
+    aliases: Flaky scalp, itchy scalp, scalp dandruff
+    summary: Dandruff causes loose flakes on the scalp and sometimes itching. A persistently inflamed scalp, patchy hair loss or
+      soreness can point to other conditions.
+    evidence_gap: Irish sources reviewed did not establish how common dandruff is. Estimates for diagnosed scalp dermatitis describe
+      a group with clinical inflammation and cannot measure everyday flaking.
+    symptoms:
+    - Flakes may be white or grey and collect in the hair or on clothes. Mild itch is common, but painful swelling or thick plaques
+      deserve review.
+    causes:
+    - Changes in skin oil, normal scalp yeast and skin sensitivity can contribute. Conditions such as seborrhoeic dermatitis, psoriasis
+      or eczema can also cause flaking.
+    diagnosis:
+    - A pharmacist can help with uncomplicated flaking. A clinician can examine scalp and hair if symptoms continue or if there are
+      bald patches, inflammation or a rash elsewhere.
+    care:
+    - Try an anti-dandruff shampoo recommended by a pharmacist and follow its instructions. If your scalp becomes irritated or does
+      not improve, ask whether another treatment or examination is appropriate.
+    complications:
+    - Flaking can return when treatment stops. Persistent inflammation, broken hairs or widespread scaling can be a reason to assess
+      for a separate scalp problem.
+    help:
+    - Talk to a GP if the scalp is sore or swollen, there is patchy hair loss, or pharmacy treatment has not helped after a reasonable
+      trial.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/dandruff/
+  dupuytrens-contracture:
+    aliases: Dupuytren disease, bent ring finger, palm cord, hand contracture
+    summary: Dupuytren's contracture develops when tissue under the palm thickens and can pull a finger into a bent position. Treatment
+      decisions depend on how much it affects your hand.
+    evidence_gap: The sources reviewed did not establish Irish population prevalence. Reports of hand operations measure selected
+      treated cases and cannot include people who never need a procedure.
+    symptoms:
+    - A firm palm lump or cord may appear before the finger starts bending. The ring and little fingers are commonly affected, and
+      flattening the hand becomes more difficult.
+    causes:
+    - Thick bands form in connective tissue beneath the palm. Family history and other factors can affect risk. The course can differ
+      between fingers and between hands.
+    diagnosis:
+    - A clinician examines the palm, checks finger extension and asks how symptoms affect daily tasks. A simple check is whether
+      you can place the hand flat on a table.
+    care:
+    - If the fingers still move well, monitoring may be enough. A hand specialist can explain procedures to release or remove tight
+      tissue if function is affected.
+    complications:
+    - The condition can progress gradually or remain stable. Stiffness, difficulties using the hand and recurrence after treatment
+      are possible and can guide decisions about review.
+    help:
+    - Talk to a GP if one or more fingers can no longer straighten or the changes interfere with grip and hand care. Report sudden
+      painful swelling separately.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/dupuytrens-contracture/
+  elbow-and-arm-pain:
+    aliases: Sore arm, elbow pain, forearm pain
+    summary: Arm and elbow pain can come from an injury, tendon irritation or another condition. Symptoms that appear with chest
+      pressure or shortness of breath need emergency assessment.
+    emergency: 'Arm pain with chest pressure, sweating or breathlessness: call'
+    evidence_gap: No national estimate for elbow and arm pain as a broad symptom group was identified. Irish data about specific
+      injuries describe only part of the group.
+    symptoms:
+    - Pain may be sharp after an injury or build slowly with repeated movement. Tell a clinician about swelling, pain in the neck,
+      tingling or trouble moving the arm.
+    causes:
+    - Tendons can become irritated by repeated loading. Fractures, arthritis and pressure on a nerve can also cause pain, sometimes
+      away from the site where the problem began.
+    diagnosis:
+    - The clinician compares movement, strength and sensation and asks how pain started. An X-ray or other test may be useful for
+      an injury or concerning findings.
+    care:
+    - Relative rest from painful tasks and gradual return to comfortable movement can help minor strains. Ask a pharmacist about
+      pain relief and a physiotherapist about rehabilitation if needed.
+    complications:
+    - Ongoing pain may limit grip or work tasks. Proper diagnosis matters if pain continues despite reducing strain or if movement
+      or sensation changes.
+    help:
+    - Call 112 or 999 if new arm pain occurs with chest pressure or breathing difficulty. Seek urgent review for a deformed limb,
+      severe injury or sudden weakness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/elbow-and-arm-pain/
+  emollients:
+    kind: service
+    aliases: Moisturisers for eczema, emollient creams and ointments, soap substitutes
+    summary: Emollients help trap moisture and protect dry skin. The right choice depends on where you need it, what feels tolerable
+      and any advice from your healthcare team.
+    evidence_gap: Emollient dispensing figures would miss many shop and pharmacy purchases and cannot measure the prevalence of any
+      one skin condition. No national user count was identified.
+    symptoms:
+    - They can help with dry or scaly skin, including some types of eczema and psoriasis. Different consistencies may suit the face,
+      body, hands or a hair-bearing area.
+    causes:
+    - Creams, ointments and lotions leave different amounts of oil on the skin. Some emollients can also be used instead of ordinary
+      soap if a clinician or pharmacist recommends it.
+    diagnosis:
+    - Tell a pharmacist about allergies, skin reactions and any prescribed treatments you use. Ask how to space applications and
+      whether the product is suitable for the area.
+    care:
+    - Apply gently and as often as advised, particularly after washing. If using a tub for a skin condition, follow advice to keep
+      the contents clean.
+    complications:
+    - Residue on clothing and bedding can make fabric catch fire more easily, including with some paraffin-free emollients. Keep
+      treated fabric away from cigarettes and naked flames.
+    help:
+    - If the skin becomes painful, hot, weepy or more inflamed, ask a clinician for advice. A pharmacist can help if a product stings
+      or feels impractical.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/emollients/
+  erythema-multiforme:
+    aliases: Target-shaped rash, target lesions, erythema multiforme
+    summary: Erythema multiforme causes a distinctive rash that may follow an infection. Sores affecting the mouth, eyes or genitals
+      need prompt medical advice.
+    evidence_gap: The sources reviewed did not establish national Irish prevalence. Data for the much broader group of skin reactions
+      cannot isolate erythema multiforme.
+    symptoms:
+    - Spots can develop rings of changing colour and often start on the limbs. They may itch or feel sore. Mouth involvement can
+      make drinking difficult.
+    causes:
+    - It is an immune reaction, often following a cold sore or another infection. Occasionally a medicine may be associated, and
+      a clinician can review the timing.
+    diagnosis:
+    - The clinician checks the pattern and whether the eyes, mouth or genitals are affected. They may review infections or medicines
+      and investigate if the appearance is uncertain.
+    care:
+    - Some cases settle with supportive care. A clinician can advise on symptom relief or treating a trigger, and arrange specialist
+      advice for recurrent or severe cases.
+    complications:
+    - Rashes can recur, especially after cold sores. Mouth symptoms can cause dehydration, and eye symptoms need attention to reduce
+      the chance of lasting problems.
+    help:
+    - Seek urgent medical assessment for eye pain, trouble drinking, fever with a rapidly spreading rash or widespread blistering
+      or peeling, especially after starting a medicine.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/erythema-multiforme/
+  flat-feet-in-children:
+    aliases: Child flat feet, flexible flatfoot, fallen arches in children
+    summary: Children often have a flatter arch while their feet develop. A flexible, painless flat foot usually needs no treatment,
+      while symptoms or a stiff foot can merit review.
+    evidence_gap: No national Irish prevalence estimate was found. Estimates from elsewhere depend strongly on children's age and
+      the method used to measure their arches.
+    symptoms:
+    - The inner arch may flatten during standing and appear again when the child is sitting or goes onto tiptoes. Pain, tired feet
+      or stiffness can affect activity.
+    causes:
+    - The arch commonly becomes more visible with age. Lax joints can contribute to a flexible flat foot. A stiff or one-sided change
+      may have a different cause.
+    diagnosis:
+    - A clinician checks foot movement, symmetry and how your child walks. They may look at the arch when weight is taken off the
+      foot or when your child tiptoes.
+    care:
+    - Comfortable shoes and ordinary play are generally fine if your child is pain free. A physiotherapist can advise on exercise
+      or other supports if symptoms affect activity.
+    complications:
+    - A painless flexible foot commonly needs little follow-up. If discomfort persists, assessment can help distinguish soreness
+      associated with activity from another cause of pain.
+    help:
+    - Ask your GP or a physiotherapist about pain, stiffness, difficulty keeping up or a flat foot that affects only one side. Seek
+      advice if a foot changes shape suddenly.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/flat-feet-in-children/
+  foot-drop:
+    aliases: Drop foot, weak ankle lift, foot dragging, steppage gait
+    summary: Foot drop is difficulty lifting the front of the foot. It can cause trips and may reflect a problem involving a nerve,
+      muscle or the brain or spinal cord.
+    emergency: 'Sudden weakness with face or speech changes: call'
+    evidence_gap: Irish data on underlying nerve or neurological conditions cannot estimate foot drop itself. No national prevalence
+      figure was identified in the sources reviewed.
+    symptoms:
+    - Toes may drag or catch on the floor. Some people lift the knee higher to clear the foot. Numbness or other areas of weakness
+      may also occur.
+    causes:
+    - Pressure or damage to a nerve near the knee or in the back can cause foot drop. Other neurological or muscle conditions can
+      produce a similar walking pattern.
+    diagnosis:
+    - A clinician checks strength, sensation and reflexes and asks how quickly it began. Nerve tests or imaging can help identify
+      the location and cause when needed.
+    care:
+    - An ankle-foot support, physiotherapy and steps to reduce tripping may help. The team can decide whether treating an underlying
+      nerve or spine problem is appropriate.
+    complications:
+    - The outlook depends on the cause and how long it has been present. Weakness that persists can affect balance and may require
+      longer-term supports to walk safely.
+    help:
+    - Have new foot drop assessed promptly. Call 112 or 999 for sudden weakness with facial droop or speech trouble. Seek emergency
+      assessment for new bladder or bowel problems with back symptoms.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/foot-drop/
+  frozen-shoulder:
+    aliases: Adhesive capsulitis, stiff shoulder, shoulder pain and stiffness
+    summary: Frozen shoulder causes pain followed by a loss of movement that can take many months to improve. The shoulder is stiff
+      even when someone else gently tries to move it.
+    evidence_gap: The sources reviewed did not provide an Irish population estimate. Shoulder clinic activity combines several diagnoses
+      and does not measure how common frozen shoulder is.
+    symptoms:
+    - Pain can disturb sleep or make reaching overhead or behind the back difficult. As stiffness increases, dressing and washing
+      hair can become awkward even if pain changes.
+    causes:
+    - The capsule around the joint becomes inflamed and tight. It may develop without an obvious injury, but diabetes and periods
+      of reduced shoulder use can increase risk.
+    diagnosis:
+    - A clinician compares your active movement with how far they can gently move the shoulder. Imaging may be used to rule out other
+      problems when appropriate.
+    care:
+    - Options include appropriate pain relief, gentle movement and physiotherapy. A clinician can discuss whether an injection or
+      another procedure could help if symptoms are severe or prolonged.
+    complications:
+    - Recovery is often gradual and varies between people. Some stiffness can persist, so decisions about therapy should account
+      for pain, function and how far symptoms have progressed.
+    help:
+    - Contact a GP if shoulder pain and progressive stiffness affect sleep or daily activities. Seek prompt assessment after a significant
+      injury or for fever with a hot, swollen joint.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/frozen-shoulder/
+  ganglion-cyst:
+    aliases: Wrist ganglion, hand cyst, fluid-filled lump near joint
+    summary: A ganglion is a fluid-filled lump that often develops near a joint or tendon, especially at the wrist. A clinician can
+      confirm the likely cause if it changes or hurts.
+    evidence_gap: Irish sources reviewed did not estimate how many people have a ganglion. Procedures would count only the minority
+      treated by aspiration or surgery in reported settings.
+    symptoms:
+    - It may feel smooth and firm, vary in size or become more noticeable after movement. Some cysts cause an ache, tingling or discomfort
+      with gripping.
+    causes:
+    - A small sac fills with fluid near a joint or tendon covering. The exact trigger is often unknown, and an injury or repeated
+      strain can sometimes precede it.
+    diagnosis:
+    - A clinician examines the lump and nearby movements. Ultrasound or further assessment can help when the lump has unusual features
+      or the diagnosis is unclear.
+    care:
+    - A painless confirmed ganglion usually needs no treatment. For persistent problems a specialist may discuss draining it or surgery.
+      Avoid trying to burst or drain it yourself.
+    complications:
+    - Ganglia can shrink without treatment and can recur after a procedure. A lump pressing on nearby structures may cause discomfort,
+      tingling or problems with certain activities.
+    help:
+    - Ask a clinician about a lump that is growing, hard, fixed or painful. Seek prompt advice if it becomes very red, hot or tender
+      or movement changes suddenly.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/ganglion-cyst/
+  hand-pain:
+    aliases: Painful hand, finger pain, hand or thumb joint pain
+    summary: Hand pain can follow an injury or build with joint, tendon or nerve problems. The pattern of pain and changes in movement
+      help narrow the possibilities.
+    evidence_gap: The sources reviewed did not establish how many people in Ireland have hand pain from all causes. Separate figures
+      for fractures or arthritis cannot fill that gap.
+    symptoms:
+    - Pain may affect a joint, palm or fingers. Look for swelling, numbness, stiffness, clicking or weakness, and note whether grip
+      has become more difficult.
+    causes:
+    - Repetitive use can irritate soft tissue. Falls can damage bones or ligaments, while conditions such as arthritis or nerve compression
+      may cause symptoms without an injury.
+    diagnosis:
+    - A GP or hand clinician checks where it hurts, how the fingers move and whether sensation and circulation are intact. Some injuries
+      may require an X-ray.
+    care:
+    - Avoid activities that increase pain if you can, and remove rings if swelling begins. A pharmacist or GP can advise on pain
+      relief, splints or follow-up.
+    complications:
+    - Pain can make daily tasks difficult. Persistent numbness, a loss of movement or gradually worsening grip can indicate a problem
+      that needs targeted treatment.
+    help:
+    - Seek prompt assessment if the hand is deformed, numb, discoloured or cannot move after injury. Get advice if swelling is hot,
+      red or accompanied by fever.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/hand-pain/
+  hand-tendon-repair:
+    kind: procedure
+    aliases: Finger tendon repair, flexor tendon repair, extensor tendon repair surgery
+    summary: A torn or cut hand tendon can leave a finger unable to bend or straighten. Repair and hand therapy help protect movement
+      while the injured tissue heals.
+    evidence_gap: Broad Irish hand-procedure coding cannot identify the prevalence of tendon injuries or isolate every repair. The
+      sources reviewed did not establish a national procedure count.
+    symptoms:
+    - Surgery is considered when a tendon injury keeps the finger or thumb from moving properly. The site and severity of the injury
+      affect which care is appropriate.
+    causes:
+    - The surgeon reconnects or reconstructs the damaged tendon and checks for nearby injuries. A hand therapist then helps plan
+      protected movement while the repair heals.
+    diagnosis:
+    - Tell the team about the cause and timing of injury, any numbness and medicines. Ask what support you will need with transport
+      and everyday activities after the procedure.
+    care:
+    - The surgeon makes the repair under an appropriate anaesthetic. A splint often protects the hand afterwards. You should receive
+      clear instructions before attempting exercises or using the hand.
+    complications:
+    - Healing tissue can stick to surrounding structures, and the repair can tear again if overloaded. Regular therapy helps balance
+      protecting the repair with maintaining movement.
+    help:
+    - Contact your team if a finger suddenly stops moving, the wound becomes hotter or redder, or swelling or pain rises unexpectedly.
+      Attend therapy as arranged.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/hand-tendon-repair/
+  heel-pain:
+    aliases: Pain under or behind heel, heel injury, sore heel when walking
+    summary: Heel pain can come from the tissue under the foot, the Achilles tendon or an injury. Where the pain sits and when it
+      started affect the next steps.
+    evidence_gap: The sources reviewed did not identify a national Irish rate for heel pain across its different causes. Procedure
+      and injury figures cover only selected diagnoses.
+    symptoms:
+    - Pain underneath the heel may be worse in the first steps after rest. Pain behind it can occur near the Achilles tendon and
+      worsen during activity.
+    causes:
+    - Repeated loading can irritate the plantar fascia or Achilles tendon. A sudden injury, stress fracture or other cause is possible,
+      especially with changes in training or footwear.
+    diagnosis:
+    - A clinician checks where the pain is, how you walk and what movements bring it on. Imaging may be needed after injury or if
+      the pattern is unusual.
+    care:
+    - Reduce activities that worsen symptoms and try supportive shoes. A physiotherapist or podiatrist can guide exercises and how
+      to return gradually to walking, work or sport.
+    complications:
+    - Continuing an aggravating activity can prolong pain. A sudden snapping sensation or inability to push off normally raises concern
+      about an injury that needs assessment.
+    help:
+    - Seek urgent care if you cannot bear weight, hear a snap or develop major swelling after injury. Ask for review if ongoing pain
+      is stopping normal activities.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/heel-pain/
+  in-toeing-and-out-toeing:
+    aliases: Feet point in or out, pigeon-toed walking, toddler gait
+    summary: Many children walk with toes pointing inwards or outwards while their legs are developing. Pain, a limp or obvious differences
+      between the sides are good reasons to ask for an assessment.
+    evidence_gap: Irish sources reviewed describe age-related variation but do not give a national prevalence estimate for inward
+      or outward walking in children.
+    symptoms:
+    - Feet can turn in or out when walking or running. Some children trip more often. Watch whether one side is consistently more
+      affected or the change is new.
+    causes:
+    - The shape or rotation of the hip, shin or foot can affect the way toes point. Several common developmental patterns improve
+      naturally as children get older.
+    diagnosis:
+    - A clinician watches the child walk and examines hip, leg and foot movement. A physiotherapist can assess balance, flexibility
+      and how the child manages their normal activities.
+    care:
+    - Most children only need time and usual activity. Avoid forcing the feet into a particular position. A physiotherapist may suggest
+      exercises if tightness or weakness is contributing.
+    complications:
+    - A typical developmental pattern can improve over several years. A painful limp, loss of movement or increasing asymmetry needs
+      review for causes beyond normal variation.
+    help:
+    - Speak to a GP if the pattern is new, painful, worsening or clearly unequal. Ask about physiotherapy if tripping makes it hard
+      for the child to participate in play.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/in-toeing-and-out-toeing/
+  ingrown-hairs:
+    aliases: Razor bumps, ingrown hair, pseudofolliculitis
+    summary: An ingrown hair grows back into the skin or becomes trapped beneath it. It often follows shaving or hair removal and
+      usually improves when irritation is reduced.
+    evidence_gap: Many cases are managed without healthcare. The sources reviewed did not have an Irish population estimate for ingrown
+      hairs or shaving-related bumps.
+    symptoms:
+    - Small raised bumps may feel itchy or tender. A hair can sometimes be seen in the bump. Pus, increasing warmth or spreading
+      redness can indicate infection.
+    causes:
+    - Shaving close to the skin or friction can let a cut hair curl back into the skin. People with tightly curled hair can be more
+      prone to this.
+    diagnosis:
+    - A clinician or pharmacist usually checks the area and asks about hair removal. Widespread or recurring bumps may need assessment
+      to rule out other causes.
+    care:
+    - Give the irritated area a break from shaving or waxing. Avoid picking or digging out hairs. A pharmacist can advise on skin
+      care and ways to avoid repeated irritation.
+    complications:
+    - Repeated inflammation can cause dark marks or scars. Picking at a bump can break the skin and increase the chance of infection
+      or lasting discolouration.
+    help:
+    - Seek GP advice if an area becomes very painful, hot or swollen or you develop a fever. Ask for review if bumps persist despite
+      changing your routine.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/ingrown-hairs/
+  ingrown-toenail:
+    aliases: Ingrowing nail, toenail growing into skin, painful nail edge
+    summary: An ingrown toenail occurs when the nail edge presses into skin, usually on a big toe. Early relief of pressure can reduce
+      irritation before infection develops.
+    evidence_gap: Irish hospital and pharmacy activity cannot capture all self-managed cases. The sources reviewed did not establish
+      population prevalence for ingrown toenails.
+    symptoms:
+    - The edge of the toe can become sore, red and swollen. Increasing pain or pus can indicate infection. Discomfort may be worse
+      in tight shoes.
+    causes:
+    - A curved nail, pressure from shoes, injury or cutting nails too short at the corners can let the edge irritate the skin as
+      it grows.
+    diagnosis:
+    - A clinician checks the nail and skin for infection. People with diabetes, poor circulation or reduced sensation need assessment
+      earlier because a small issue can progress.
+    care:
+    - Wear shoes with room around the toes and avoid digging into the corners. A podiatrist or GP can help with persistent cases
+      and discuss whether a procedure is needed.
+    complications:
+    - An untreated infection can spread. Some nails cause repeated problems, and a procedure may be needed to address the part of
+      the nail that keeps growing into skin.
+    help:
+    - Contact a GP or podiatrist if there is pus, worsening pain or repeated ingrowing. If you have diabetes or poor circulation,
+      seek advice before treating it yourself.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/ingrown-toenail/
+  itchy-skin:
+    aliases: Pruritus, itchy skin without rash, widespread itch
+    summary: An itch can come from dry or irritated skin, an infection or another condition. Where it occurs, when it began and whether
+      there is a rash affect the next steps.
+    evidence_gap: Irish estimates for particular diseases such as eczema do not measure itch from every cause. No separate national
+      prevalence estimate for itchy skin was identified.
+    symptoms:
+    - Notice whether the itch is limited to one area or widespread, and whether there are bumps, scales, broken skin or anyone nearby
+      with similar symptoms.
+    causes:
+    - Dryness, eczema, contact with an irritant, bites or scabies can cause itch. Sometimes a medicine or an underlying health condition
+      causes itch without an obvious rash.
+    diagnosis:
+    - A clinician checks the skin, reviews new products or medicines and asks about other symptoms. Widespread itch without a clear
+      explanation may warrant blood tests.
+    care:
+    - Use a gentle moisturiser, keep showers short and avoid products that make irritation worse. A pharmacist can help choose treatment
+      when there is a likely minor cause.
+    complications:
+    - Scratching can damage skin and let infection develop. Persistent itch can interrupt sleep and needs a different approach if
+      moisturising and avoiding irritants do not help.
+    help:
+    - Contact a GP for new widespread or persistent itch, or painful infected skin. If pregnant, contact your maternity team for
+      severe itch, especially on palms or soles.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/itchy-skin/
+  joint-hypermobility-children:
+    aliases: Flexible joints in children, double-jointed, paediatric joint hypermobility
+    summary: Many children can move joints farther than usual for their age. Support is worth considering if flexibility comes with
+      pain, tiredness, repeated injury or difficulty with everyday tasks.
+    evidence_gap: The HSE describes childhood hypermobility as common. Thresholds vary by age and assessment method, and the sources
+      reviewed did not identify a national Irish rate.
+    symptoms:
+    - A flexible child may have no symptoms. Others describe aching after activity, tired legs, clumsiness or trouble with practical
+      tasks such as handwriting and dressing.
+    causes:
+    - Connective tissue can allow extra movement, while strength and coordination affect how easy it is to control that movement.
+      Flexibility varies during childhood and between joints.
+    diagnosis:
+    - The assessment considers flexibility, strength and how symptoms affect normal life. A clinician may ask about injuries, family
+      history and symptoms that could need specialist assessment.
+    care:
+    - Encourage activity the child enjoys. A physiotherapist can tailor strengthening and coordination exercises, and an occupational
+      therapist can help when handwriting or self-care is particularly difficult.
+    complications:
+    - Most flexible children do well. A plan can help if pain leads to avoiding activity or makes school harder, and should be reviewed
+      if new symptoms appear.
+    help:
+    - Ask your GP, physiotherapist or occupational therapist if pain or tiredness interferes with school, play or sleep, or if your
+      child repeatedly injures or dislocates a joint.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/joint-hypermobility-children/
+  pain-in-the-ball-of-the-foot:
+    aliases: Metatarsalgia, forefoot pain, pain under toe joints
+    summary: The ball of the foot bears weight as you push off when walking. Pain there can come from pressure, joint irritation,
+      a trapped nerve or injury.
+    evidence_gap: Irish studies reviewed did not quantify plantar forefoot pain as a separate symptom nationwide. It includes several
+      conditions with different case definitions.
+    symptoms:
+    - Pain may feel aching, burning or sharp under the toe joints. Some people feel as if they are stepping on a pebble or have pins
+      and needles.
+    causes:
+    - Tight shoes, increased activity or changes in foot shape can shift pressure to the forefoot. Nerve irritation or a stress injury
+      can produce pain at the same location.
+    diagnosis:
+    - A clinician checks the painful area, footwear and walking pattern. They may test sensation and look for tenderness over individual
+      bones if a stress injury is possible.
+    care:
+    - Give the forefoot a break from painful loads, try roomy supportive shoes and ask about appropriate insoles or padding. Return
+      to activity gradually as comfort allows.
+    complications:
+    - Persistent pressure can lead to thicker skin or change how you walk. Numbness, continuing focal pain or an open sore needs
+      review to establish the cause.
+    help:
+    - Seek urgent assessment if you cannot walk after injury or the foot is deformed. Arrange review for recurrent pain, especially
+      if you have diabetes or reduced sensation.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/pain-in-the-ball-of-the-foot/
+  pain-in-the-bottom-of-the-foot:
+    aliases: Sole pain, plantar foot pain, arch pain
+    summary: Pain under the foot may involve the heel, arch or forefoot. Its location and timing can help distinguish a pressure
+      problem from an injury or another condition.
+    evidence_gap: There is no national Irish estimate from the sources reviewed that isolates pain under the foot. Each possible
+      diagnosis has a different definition and treatment pathway.
+    symptoms:
+    - Some pain is worst after standing up from rest, while other pain builds as you walk. Tell your clinician about burning, tingling
+      or spots of hard skin.
+    causes:
+    - Overloading the tissue that supports the arch, tight shoes or prolonged standing can be involved. Stress injuries, skin problems
+      and irritated nerves can cause similar pain.
+    diagnosis:
+    - A GP or podiatrist checks the site, skin, walking and movements that reproduce pain. Tests are sometimes appropriate when an
+      injury is suspected or symptoms persist.
+    care:
+    - Start with supportive footwear and reduce the most painful activities. A qualified clinician can advise on exercises, changing
+      activity, insoles or treating a separate skin problem.
+    complications:
+    - Walking differently to avoid pain can lead to soreness in other areas. Foot problems deserve earlier attention when circulation
+      or sensation in the feet is reduced.
+    help:
+    - Seek prompt advice if you cannot stand after an injury or have a red, hot foot with fever. Ask for review if pain persists
+      or disrupts your normal walking.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/pain-in-the-bottom-of-the-foot/
+  pain-in-the-top-of-the-foot:
+    aliases: Dorsal foot pain, sore top of foot, painful instep
+    summary: Pain over the top of the foot can follow a twist, repeated exercise or pressure from shoes. Swelling, bruising or difficulty
+      walking after injury can need urgent assessment.
+    evidence_gap: No reliable Irish population rate was identified for this symptom. Foot injury admissions do not count pressure,
+      tendon or joint pain managed in the community.
+    symptoms:
+    - The top of the foot may ache during activity or hurt when pressed. Swelling, bruising, warmth or difficulty lifting the toes
+      are details worth mentioning.
+    causes:
+    - Tight fastenings can compress the top of the foot. Irritated tendons, arthritis, a sprain or a small stress fracture may cause
+      similar symptoms in different situations.
+    diagnosis:
+    - Assessment checks when the pain started, whether there was a twist and where pressure hurts. An X-ray or other imaging may
+      be needed if a bone injury is suspected.
+    care:
+    - Reduce activities causing pain, loosen footwear pressure and keep the foot comfortable. If symptoms persist, a clinician can
+      advise whether rehabilitation or a short period of protection is needed.
+    complications:
+    - Pain that is concentrated over a bone and worsens with loading can need further investigation. Continuing to run through it
+      may worsen an unrecognised stress injury.
+    help:
+    - Seek urgent assessment if you cannot bear weight after an injury, or the foot changes shape. Contact a clinician for a hot
+      swollen foot without a clear injury.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/pain-in-the-top-of-the-foot/
+  pityriasis-rosea:
+    aliases: Herald patch, oval scaly rash on trunk, pityriasis rosea
+    summary: Pityriasis rosea often starts with a larger scaly patch followed by smaller patches on the chest or back. Most cases
+      settle on their own.
+    evidence_gap: No reliable Irish prevalence estimate was identified. Irish data for similarly named fungal rashes refer to a distinct
+      condition and cannot estimate pityriasis rosea.
+    symptoms:
+    - The first patch may go unnoticed. Smaller oval marks can develop later and may itch. Their colour and how they look can vary
+      with skin tone.
+    causes:
+    - The exact cause is uncertain. It is generally not thought to spread readily between people. Other rashes, including fungal
+      infections and drug reactions, can look similar.
+    diagnosis:
+    - A GP can assess the distribution and timing. If the pattern is unusual, they may review medicines or arrange tests to check
+      for a different skin condition.
+    care:
+    - Mild cases usually need no medical treatment. Moisturiser and advice from a pharmacist or GP can help with itching while you
+      wait for the rash to settle.
+    complications:
+    - The rash can last several weeks, and temporary colour changes can remain after it settles. Unusually persistent or painful
+      symptoms are a reason for review.
+    help:
+    - Ask a clinician about a widespread or changing rash, particularly if pregnant. Seek urgent advice if the rash comes with serious
+      illness, painful blistering or eye symptoms.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/pityriasis-rosea/
+  pityriasis-versicolor:
+    aliases: Tinea versicolor, yeast patches on trunk, flaky discoloured skin
+    summary: Pityriasis versicolor causes flat patches of skin that become lighter or darker. Treatment can clear the yeast overgrowth,
+      while skin colour may take longer to settle.
+    evidence_gap: Irish sources reviewed did not identify a national rate. Dispensed antifungals cover many conditions and do not
+      measure how many people have pityriasis versicolor.
+    symptoms:
+    - Small patches on the chest, back, shoulders or upper arms can merge. They may have fine scale and little itch, and can stand
+      out after surrounding skin tans.
+    causes:
+    - A yeast that normally lives on skin can grow more in warm or humid conditions. It can alter pigment temporarily and is unrelated
+      to poor hygiene.
+    diagnosis:
+    - A clinician or pharmacist may recognise the appearance. A skin scraping or other examination can help if the patches are unusual
+      or do not respond to treatment.
+    care:
+    - A pharmacist can advise on suitable topical antifungal treatment. If the area is extensive or symptoms recur repeatedly, a
+      GP can discuss other options and prevention.
+    complications:
+    - Colour changes can remain after treatment has worked. The condition can recur, so it helps to know when to ask about preventive
+      treatment or a fresh assessment.
+    help:
+    - Speak to a GP if patches keep spreading, are very itchy or do not improve as expected. Ask for advice before treating extensive
+      patches on a child.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/pityriasis-versicolor/
+  positional-talipes:
+    aliases: Flexible newborn clubfoot appearance, newborn foot turns inward, positional TEV
+    summary: A newborn's foot can turn down and in while still moving freely. A clinician checks whether it is flexible, because
+      a foot that stays stiff may need different care.
+    evidence_gap: Structural clubfoot incidence does not count flexible positional talipes. The sources reviewed did not establish
+      an Irish birth prevalence for this separate presentation.
+    symptoms:
+    - One or both feet may rest in a turned position. With positional talipes, a healthcare professional can move the foot towards
+      normal alignment during the newborn examination.
+    causes:
+    - The position may relate to how the baby lay in the womb. A flexible positional change differs from structural clubfoot, where
+      the foot is less easily moved.
+    diagnosis:
+    - A newborn examination checks flexibility, foot position and whether other findings need attention. A physiotherapist or specialist
+      can reassess when the foot does not move as expected.
+    care:
+    - Follow gentle exercises demonstrated by your baby's physiotherapist or healthcare professional, and never force a tight movement.
+      The care team can advise how frequently to review progress.
+    complications:
+    - Flexible feet often straighten over time with advice and monitoring. A persistent or stiff position may need earlier specialist
+      evaluation to decide whether further treatment is needed.
+    help:
+    - Contact the public health nurse, GP or physiotherapist if the foot is stiff, looks worse, or fails to improve as expected.
+      Ask for a demonstration before starting stretches.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/positional-talipes/
+  rash:
+    aliases: Skin rash, spots, blotches on skin, rash assessment
+    summary: A rash can reflect infection, allergy, irritation or another illness. The speed of change and symptoms such as fever,
+      pain or difficulty breathing matter as much as appearance.
+    emergency: 'Breathing difficulty, collapse or a non-fading rash with serious illness: call'
+    evidence_gap: A rash is a sign shared by many conditions. Irish disease registers and hospital figures cannot measure this broad
+      symptom across all causes.
+    symptoms:
+    - Look for sore, itchy, blistered or raised areas and any changes in colour. A rash may be easier to see on palms, soles or inside
+      the eyelids on darker skin.
+    causes:
+    - Rashes develop when the skin reacts to something, such as a virus, medicine, irritant or immune condition. The cause can differ
+      even when two rashes look similar.
+    diagnosis:
+    - A clinician asks about new medicines, illness, exposures and where the rash began. They may examine the rest of the skin or
+      use a test if needed.
+    care:
+    - If symptoms are mild, avoid a possible irritant and ask a pharmacist about relief. Seek medical advice before using medicines
+      for a rash that spreads or is painful.
+    complications:
+    - Skin can become infected or blister. A severe reaction or infection can also affect other organs, so breathing problems or
+      serious illness need immediate action.
+    help:
+    - Call 112 or 999 for breathing difficulty, collapse or a non-fading rash with severe illness. Get urgent care for skin peeling
+      or sores affecting eyes or mouth.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/rash/
+  shin-splints:
+    aliases: Shin pain from running, medial tibial stress syndrome, sore inner shin
+    summary: Shin splints cause exercise-related pain along the inner edge of the shin. Reducing impact early can help recovery and
+      make it easier to spot signs of a stress injury.
+    evidence_gap: Irish sports medicine referrals reflect people seeking care and do not establish a national prevalence for shin
+      splints. No Irish population estimate was identified.
+    symptoms:
+    - Pain usually covers a broader section of the inner shin and can worsen during or after exercise. Pain in a very small area
+      or at rest suggests a different problem.
+    causes:
+    - A rapid increase in running, jumping or training intensity can overload tissues around the shin. Footwear and changes in training
+      surface can also contribute for some people.
+    diagnosis:
+    - A clinician asks about your training, checks where the shin is tender and looks for other causes. Focal bone tenderness may
+      lead to further testing.
+    care:
+    - Pause activities that reliably cause pain, and consider comfortable low-impact exercise during recovery. A physiotherapist
+      can help plan strength work and a gradual return to impact.
+    complications:
+    - Symptoms can return if load rises too quickly. Persistent focal pain or growing pain at rest can be a reason to look for a
+      bone stress injury.
+    help:
+    - Contact a clinician if pain is worsening, wakes you at night or continues after resting from impact. Seek urgent assessment
+      for severe pain after an injury.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/shin-splints/
+  sunburn:
+    aliases: UV burn, red or blistered skin after sun, SunSmart
+    summary: Sunburn is a skin injury from ultraviolet radiation. Cool and protect the skin while it heals, and get medical advice
+      for severe blistering or signs of heat illness.
+    symptoms:
+    - Skin can feel hot, tender or swollen, even if the colour change is subtle. It may blister, then peel after several days as
+      the damaged outer layer is shed.
+    causes:
+    - Ultraviolet radiation damages skin cells. Sunburn can happen in Ireland on cloudy or cool days. Repeated exposure increases
+      skin damage and the risk of skin cancer.
+    diagnosis:
+    - The timing and appearance usually make sunburn recognisable. A clinician can assess how extensive it is and check for dehydration,
+      heat illness or a separate cause.
+    care:
+    - Move out of the sun and cool the skin with a cool shower or damp cloth. Drink fluids and keep damaged skin covered. Leave blisters
+      intact.
+    complications:
+    - Pain and peeling usually improve over time. Large blisters, dehydration or an infection can complicate recovery. Future protection
+      means covering skin, seeking shade and using suitable sunscreen.
+    help:
+    - Get urgent advice for extensive blistering, marked swelling, dizziness or vomiting, or a young child with significant sunburn.
+      Call emergency services if someone becomes confused or collapses.
+  toe-pain:
+    aliases: Sore toe, painful big toe, toe injury
+    summary: A sore toe can result from shoe pressure, a nail problem, joint inflammation or injury. Severe pain, infection or a
+      change in shape can require prompt care.
+    evidence_gap: The sources reviewed did not establish Irish prevalence for toe pain. National diagnosis or admission groups do
+      not combine all nail, pressure and joint causes into one measure.
+    symptoms:
+    - You might notice swelling, tenderness, bruising or pain near the nail. Tell a clinician if the toe becomes hot, changes colour
+      or is difficult to move.
+    causes:
+    - Shoes can rub or squeeze toes. A stubbed toe can injure a bone or joint, while gout, arthritis or infection can cause pain
+      without a clear injury.
+    diagnosis:
+    - A clinician asks about injury, when symptoms started and other health conditions. They may examine the nail, joint, circulation
+      and movement or arrange imaging when necessary.
+    care:
+    - Choose comfortable footwear with space around the toes and temporarily reduce activities that worsen pain. A clinician can
+      advise if the injury needs protection or specific care.
+    complications:
+    - Walking differently because of pain can affect the rest of the foot. An infection can spread, particularly when diabetes or
+      poor circulation makes healing more difficult.
+    help:
+    - Seek urgent assessment for a badly injured, deformed or numb toe. Contact a clinician promptly for spreading redness, pus or
+      a foot problem if you have diabetes.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/toe-pain/
+  varicose-eczema:
+    aliases: Venous eczema, stasis dermatitis, itchy skin around ankles
+    summary: Varicose eczema affects skin on the lower legs where vein circulation is poor. Treating skin inflammation and managing
+      swelling can make symptoms easier to control.
+    evidence_gap: Irish estimates of varicose veins or leg ulcers describe related conditions. The sources reviewed did not give
+      an Irish prevalence estimate for venous eczema itself.
+    symptoms:
+    - The skin may itch, flake, crack or change colour, often around the ankles. Some people have swelling and visible varicose veins
+      or patches where the skin feels firm.
+    causes:
+    - Raised pressure in leg veins can lead to fluid and inflammation in the skin. The damaged skin may become more sensitive to
+      products or to injury.
+    diagnosis:
+    - A clinician assesses skin, swelling and circulation and looks for infection or another type of eczema. This also helps decide
+      whether fitted compression can be used safely.
+    care:
+    - Regular moisturising and prescribed anti-inflammatory treatment can help settle irritation. A clinician can advise on movement,
+      elevation and compression when appropriate to manage the underlying swelling.
+    complications:
+    - Recurring inflammation can cause thicker or discoloured skin. Persistent swelling increases the risk of breakdown and ulcers,
+      so ongoing symptom control and skin protection are helpful.
+    help:
+    - See a GP for new itchy, swollen skin on the lower leg. Seek urgent assessment if it becomes increasingly hot, painful, red
+      or is accompanied by fever.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/varicose-eczema/
+  venous-leg-ulcer:
+    aliases: Venous ulcer, non-healing wound near ankle, lower leg ulcer
+    summary: A venous leg ulcer is an open sore linked to raised pressure in the leg veins. Early wound and circulation assessment
+      helps the team choose safe treatment.
+    symptoms:
+    - A sore around the lower leg or ankle may leak fluid or remain open for weeks. Swelling, dry skin, itching and brown colour
+      changes may also occur.
+    causes:
+    - When leg veins do not return blood efficiently, pressure rises and fluid can damage surrounding skin. A small injury can then
+      become a wound that takes longer to close.
+    diagnosis:
+    - The clinician assesses the wound and looks for infection or another cause. Checking arterial circulation helps determine whether
+      compression is safe and how much may be appropriate.
+    care:
+    - A nurse or wound team can manage suitable dressings and compression after assessment. Movement and raising the leg as advised
+      can help manage swelling, alongside regular checks.
+    complications:
+    - Healing may take weeks or months, and ulcers can return after closing. If suitable, long-term compression and skin care can
+      reduce risk and support continued healing.
+    help:
+    - Contact a GP or nurse about a lower-leg wound that is not healing. Seek urgent care for spreading redness, fever, increasing
+      pain or a sudden change in foot colour.
+  wounds:
+    aliases: Cuts, grazes, skin wound care, signs of wound infection
+    summary: Small cuts and grazes often heal with basic care. Heavy bleeding, bites, deeper injuries or a wound that will not heal
+      need advice based on the cause.
+    emergency: 'Life-threatening bleeding or severe injury: call'
+    symptoms:
+    - There may be bleeding, pain or dirt in a wound. Increasing warmth, swelling, discharge or pain after the initial injury can
+      indicate that it is becoming infected.
+    causes:
+    - Injury damages skin and sometimes deeper structures. Diabetes, poor circulation, infection and repeated pressure can slow healing
+      and make a wound more difficult to manage.
+    diagnosis:
+    - A clinician checks depth, contamination and whether nerves, tendons or blood vessels might be injured. They may review tetanus
+      protection or infection risk depending on the wound.
+    care:
+    - For a small wound, use pressure to stop bleeding, rinse it with clean water and cover with an appropriate sterile dressing.
+      Leave an embedded object in place and seek help.
+    complications:
+    - A dirty or deep wound may need professional cleaning, closure or other treatment. Wounds that fail to heal may need repeated
+      review or assessment of underlying problems.
+    help:
+    - Call 112 or 999 for life-threatening bleeding. Get urgent care if there is a deep wound, dirt that cannot be removed, a bite,
+      loss of sensation or spreading infection.
