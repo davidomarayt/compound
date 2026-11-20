@@ -294,6 +294,21 @@ sources:
   oireachtas_spiking_2026:
     name: Seanad Éireann debate, 12 November 2026
     url: https://data.oireachtas.ie/ie/oireachtas/debateRecord/seanad/2026-11-12/debate/mul%40/main.pdf
+  healthy_ireland_periods_2022:
+    name: Healthy Ireland Survey 2022, menstrual health module
+    url: https://www.ucd.ie/issda/t4media/0021-07_healthy_ireland_2022_summary_report.pdf
+  hpra_ed_2024:
+    name: HPRA-hosted erectile dysfunction pharmacist training material
+    url: https://assets.hpra.ie/products/Human/38661/6ce4e9e4-3d68-4eb5-9af6-3ddc97e74e5b.pdf
+  hse_lymphoedema_2022:
+    name: HSE Lymphoedema Guidelines
+    url: https://www2.healthservice.hse.ie/files/174/
+  tilda_oh_2014:
+    name: Finucane and colleagues, Irish Longitudinal Study on Ageing orthostatic blood pressure study
+    url: https://doi.org/10.1161/CIRCULATIONAHA.114.009831
+  tilda_syncope_2017:
+    name: Bhangu and colleagues, Irish Longitudinal Study on Ageing analysis of falls and syncope
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5521793/
 evidence:
   eczema:
   - value: About 10%
@@ -2067,6 +2082,87 @@ evidence:
     source: hpo_2023
     locator: Day-case and inpatient discharges by age and sex, all procedures 0727–0728
     measure: hospital
+  dizziness:
+  - value: 5,133 emergency inpatient discharges
+    period: '2023'
+    population: Emergency inpatient discharges in Irish acute public hospitals with dizziness or giddiness as the principal diagnosis
+    note: The figure uses principal diagnosis code R42. It excludes cases managed outside an emergency inpatient admission and episodes
+      with a different principal diagnosis.
+    source: hpo_2023
+    locator: Emergency inpatient discharges by principal diagnosis, code R42
+    measure: hospital
+  erectile-dysfunction:
+  - value: 15.4% reported erectile difficulty lasting at least one month in the previous five years
+    period: Historical survey estimate cited in 2024 training material
+    population: Adult men in an Irish survey described in HPRA-hosted pharmacist materials
+    note: A self-reported symptom measure over a five-year recall period. It is not a count of clinical diagnoses or a current point-prevalence
+      estimate.
+    source: hpra_ed_2024
+    locator: Prevalence section, Irish data
+    measure: prevalence
+  fainting:
+  - value: 4.4% in the previous year
+    period: Study published in 2017
+    population: Community-dwelling adults aged 50 and older in the Republic of Ireland
+    note: Participants in the Irish Longitudinal Study on Ageing self-reported a history of syncope. This historical estimate does
+      not cover younger people or those outside the study population.
+    source: tilda_syncope_2017
+    locator: Abstract and Results, prevalence of syncope
+    measure: prevalence
+  low-blood-pressure-hypotension:
+  - value: 6.9% had orthostatic hypotension
+    period: Study published in 2014
+    population: Adults aged 50 and over tested in the Irish Longitudinal Study on Ageing
+    note: Estimate for a sustained blood pressure fall after standing under the study definition. It does not measure all causes
+      of low blood pressure or all age groups.
+    source: tilda_oh_2014
+    locator: Table 2 and discussion, overall prevalence of orthostatic hypotension
+    measure: prevalence
+  lymphoedema:
+  - value: 6,190 to 32,285 people in modelled scenarios
+    period: 2018 population base, reported in HSE guidelines
+    population: Estimated primary and secondary lymphoedema burden in the Republic of Ireland
+    note: The HSE lists several scenarios applying rates from different studies or regional data. This is a span across model assumptions,
+      not a confidence interval or an Irish registry count.
+    source: hse_lymphoedema_2022
+    locator: Table 5, total row
+    measure: prevalence
+  period-problems:
+  - value: 51% reported limits on daily activities
+    period: '2022'
+    population: Irish menstrual health module respondents who currently had periods
+    note: The survey asked about limitations before or during periods from symptoms such as pain, fatigue, heavy bleeding or PMS.
+      This measures reported impact rather than a diagnosed condition.
+    source: healthy_ireland_periods_2022
+    locator: Section 8, Menstrual Health and Period Poverty
+    measure: prevalence
+  periods:
+  - value: 56% had periods monthly or irregularly
+    period: '2022'
+    population: Participants in the weighted Irish menstrual health module, offered to women and people identifying as another gender
+    note: The percentage describes current menstrual status among respondents to the optional module. It combines regular and irregular
+      periods and varies greatly by age.
+    source: healthy_ireland_periods_2022
+    locator: Section 8, Current menstrual status by age
+    measure: prevalence
+  stomach-ache:
+  - value: 8,867 inpatient discharges in the minor-complexity group
+    period: '2023'
+    population: Irish acute public hospital inpatient discharges in the HIPE abdominal pain and mesenteric adenitis group G66B
+    note: This group is a hospital activity proxy and includes mesenteric adenitis. It does not include most stomach aches or count
+      all hospital discharges involving abdominal pain.
+    source: hpo_2023
+    locator: Table 4.5, group G66B
+    measure: hospital
+  zika-virus-pregnancy:
+  - value: 0 notifications in 2025
+    period: 2025 (provisional)
+    population: All Zika virus infection notifications to HPSC in Ireland
+    note: This is an all-population surveillance count. It is not a pregnancy-specific estimate and cannot rule out infections that
+      went undetected.
+    source: hpsc2025
+    locator: Table 1, Zika virus infection row
+    measure: notifications
 guides:
   asthma:
     aliases: wheezing reactive airways
@@ -10688,3 +10784,832 @@ guides:
     help:
     - Seek urgent help for new one-sided leg swelling or persistent bleeding. Apply direct pressure to a bleeding vein and call 112
       or 999 if bleeding is heavy or you feel faint.
+  dizziness:
+    aliases: Light-headedness, feeling unsteady, new dizziness
+    summary: Dizziness can mean spinning, unsteadiness or feeling about to faint. Describing the sensation and what brings it on
+      helps guide what happens next.
+    emergency: 'New weakness, difficulty speaking or severe acute symptoms: call'
+    symptoms:
+    - You might feel that a room is moving, struggle to walk steadily or feel faint when standing. Tell a clinician about hearing
+      changes, headache, nausea or other symptoms.
+    causes:
+    - Potential causes include inner ear disorders, low blood pressure, dehydration, migraine and medicine effects. An abrupt balance
+      problem can sometimes be caused by a serious neurological condition.
+    diagnosis:
+    - A clinician asks about the timing and triggers and may check eye movements, balance, hearing and blood pressure. Other tests
+      depend on accompanying symptoms and the examination.
+    care:
+    - Sit or lie down if dizzy and move slowly when restarting activity. Avoid driving, climbing or operating machinery while symptoms
+      make this unsafe. Treatment depends on the cause.
+    complications:
+    - Persistent dizziness can lead to falls and make work or ordinary movement harder. Keeping a record of triggers and episode
+      length can help a clinician focus the assessment.
+    help:
+    - Contact a GP for recurrent or persistent dizziness. Call 112 or 999 if sudden dizziness comes with facial droop, weakness,
+      trouble speaking or a sudden severe loss of balance.
+  dizziness-and-fainting-pregnancy:
+    aliases: Feeling faint while pregnant, pregnancy dizziness, pregnancy syncope
+    summary: Light-headedness can occur during pregnancy, especially early on. What to do depends on whether it passes quickly and
+      whether you also have pain, bleeding or other symptoms.
+    emergency: 'Unconscious for more than a minute, serious injury or seizure: call'
+    evidence_gap: The HSE describes dizziness as common in early pregnancy. Available syncope surveys are not pregnancy-specific
+      and do not provide an Irish pregnancy prevalence estimate.
+    symptoms:
+    - A faint feeling can come with blurred vision, sweating, weakness or nausea. A faint is a brief loss of consciousness, and some
+      people feel tired or shaky afterwards.
+    causes:
+    - Blood pressure, circulation and blood sugar can change during pregnancy. Standing up quickly or overheating can make symptoms
+      worse, and anaemia or another illness may sometimes contribute.
+    diagnosis:
+    - A GP or maternity clinician asks when symptoms happen, reviews medicines and checks pulse and blood pressure. They may test
+      for anaemia or investigate another cause if indicated.
+    care:
+    - Sit down where you are or lie on your side if you feel faint. Tell someone nearby. Once it passes, take time to recover and
+      avoid driving straight afterwards.
+    complications:
+    - A fall can cause an injury. Contact the maternity unit if you land on your abdomen, feel abdominal pain or notice a change
+      in your baby's movements.
+    help:
+    - Contact your maternity hospital or emergency department immediately for dizziness with vaginal bleeding, severe headache, chest
+      pain or tummy pain. Call 112 or 999 for serious injury, seizure or ongoing unconsciousness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/dizziness-and-fainting-pregnancy/
+  erectile-dysfunction:
+    aliases: Erection problems, impotence, sexual function, erectile dysfunction
+    summary: Erectile dysfunction is recurring difficulty getting or keeping an erection. A GP can help identify physical and psychological
+      contributors and discuss treatments that fit your health history.
+    symptoms:
+    - An erection may not develop, may be less firm than usual or may fade before or during sex. Pattern, duration and differences
+      between situations can help guide assessment.
+    causes:
+    - Blood vessel disease, diabetes, smoking and some medicines can contribute. Stress, anxiety and relationship difficulties can
+      also affect erections, and several causes can occur together.
+    diagnosis:
+    - A GP can ask about onset, erections in different settings, prescribed medicines and general health. Blood pressure or blood
+      tests may help identify diabetes or cardiovascular risk.
+    care:
+    - Treatment may involve addressing a contributor, psychological support, medicine or a device. Tell the prescriber if you take
+      nitrates, which can interact dangerously with certain erection medicines.
+    complications:
+    - Persistent difficulties can affect confidence and relationships. An assessment can also uncover modifiable health risks and
+      give you a chance to discuss concerns confidentially.
+    help:
+    - Contact your GP if the problem keeps happening. Seek emergency care for a painful prolonged erection that lasts four hours
+      or more, including after certain treatments.
+  excessive-thirst:
+    aliases: Polydipsia, constant thirst, drinking more water, excessive urination
+    summary: Thirst after exercise, hot weather or illness often settles once you replace fluids. Persistent unexplained thirst,
+      especially with more frequent urination, deserves a medical check.
+    evidence_gap: The sources reviewed did not provide an Irish prevalence estimate for persistent excessive thirst. Irish data for
+      diabetes or dehydration measure possible causes rather than the symptom.
+    symptoms:
+    - You may keep feeling thirsty after drinking or wake at night to drink and pass urine. A dry mouth may feel similar but can
+      have a different cause.
+    causes:
+    - Dehydration and some medicines can make you thirsty. High blood sugar can increase urine output and thirst, and less common
+      conditions can affect the body's water balance.
+    diagnosis:
+    - A GP may ask how much you drink and urinate and whether symptoms are new. Urine and blood tests can help check blood sugar,
+      electrolytes and kidney function.
+    care:
+    - Replace clear fluid losses as appropriate and follow any fluid limit your care team has prescribed. Persistent symptoms need
+      investigation to guide treatment for the cause.
+    complications:
+    - Unrecognised diabetes can become serious, particularly if thirst comes with rapid weight loss or vomiting. A clinician can
+      also help distinguish thirst from ongoing mouth dryness.
+    help:
+    - Contact a GP if thirst persists despite drinking or you pass much more urine. Seek emergency assessment for thirst with vomiting,
+      deep or rapid breathing, confusion or marked drowsiness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/excessive-thirst/
+  fainting:
+    aliases: Syncope, passing out, blackout
+    summary: Fainting is a short loss of consciousness. Many episodes are triggered by standing, heat or distress, but some require
+      urgent assessment for a heart or other medical problem.
+    emergency: 'Unconsciousness that continues, chest pain or serious injury: call'
+    symptoms:
+    - People can feel sweaty, weak, nauseated or light-headed shortly before losing consciousness. Most regain awareness quickly.
+      A witness can help describe what happened during the episode.
+    causes:
+    - Fainting commonly occurs when blood flow to the brain briefly drops. Dehydration, pain or prolonged standing can trigger it,
+      while some episodes result from abnormal heart rhythms.
+    diagnosis:
+    - Assessment focuses on what happened beforehand, during and afterwards. A clinician may check blood pressure lying and standing,
+      use an ECG and request other tests depending on the account.
+    care:
+    - If you feel faint, lie down if safe or sit and lower your head. A bystander should check breathing and follow emergency instructions
+      if the person does not recover promptly.
+    complications:
+    - Falls can cause injuries. An episode during exercise or while lying down, unexplained repeated episodes or a family history
+      of sudden cardiac death can change what investigations you need.
+    help:
+    - Call 112 or 999 if someone cannot be woken after one minute, is hurt badly or has chest pain, speech or movement difficulties.
+      Arrange medical review after a faint.
+  heartburn-indigestion-pregnancy:
+    aliases: Acid reflux in pregnancy, dyspepsia, burning after meals
+    summary: Indigestion can leave you uncomfortably full or bloated after eating. Heartburn is the burning sensation that can occur
+      when stomach contents move back towards the throat.
+    evidence_gap: The HSE gives a general estimate of how common heartburn is in pregnancy. It does not identify an Irish sample
+      or establish a national Irish rate.
+    symptoms:
+    - You may feel burning behind the breastbone, burp, feel bloated or notice an acidic taste. It may worsen after meals, when bending
+      over or when lying down.
+    causes:
+    - Pregnancy hormones can relax the muscle that usually keeps stomach contents down. The growing womb also puts pressure on the
+      stomach, so symptoms can become more noticeable later on.
+    diagnosis:
+    - Typical symptoms can often be assessed from their pattern. Pain that feels unusual, ongoing vomiting, weight loss or swallowing
+      problems warrant a clinician's assessment for other causes.
+    care:
+    - Try smaller meals, stay upright after eating and notice which foods make symptoms worse for you. Ask a pharmacist, midwife
+      or GP about suitable reflux treatments in pregnancy.
+    complications:
+    - Heartburn can disrupt sleep and eating. Your team can help if self-care is insufficient or if symptoms change, especially when
+      there is pain high in the abdomen.
+    help:
+    - Contact your GP for weight loss, ongoing vomiting or trouble swallowing. Contact maternity services immediately for severe
+      upper abdominal pain, especially with headache or changes in vision.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/heartburn-indigestion-pregnancy/
+  irregular-periods:
+    aliases: Variable menstrual cycles, irregular bleeding, unpredictable periods
+    summary: Irregular periods are cycles that vary in length or timing. A change from your usual pattern matters, especially if
+      it persists, occurs with other symptoms or affects pregnancy plans.
+    evidence_gap: Healthy Ireland reports regular and irregular periods as one combined category. The combined result cannot estimate
+      prevalence of irregular cycles alone.
+    symptoms:
+    - You may have long gaps followed by closer periods, or find the date difficult to predict. Spotting between periods is a separate
+      detail to tell your GP.
+    causes:
+    - Cycles can vary around puberty and before menopause. Pregnancy, stress, weight changes, contraception, polycystic ovary syndrome
+      and thyroid conditions can also alter the pattern.
+    diagnosis:
+    - Track starts, duration and any spotting. A clinician can check whether pregnancy is possible and decide if other tests or an
+      examination would help establish the cause.
+    care:
+    - Treatment depends on why cycles changed and whether you want to conceive. Discuss contraception if you want to avoid pregnancy
+      because ovulation can still occur when cycles are irregular.
+    complications:
+    - Infrequent ovulation can make conception timing harder. If a hormonal condition is causing long gaps, follow-up can address
+      longer-term health considerations associated with that condition.
+    help:
+    - Contact a GP for a persistent change, bleeding after sex, or cycle changes with weight change or excess hair growth. Get urgent
+      advice for severe pain with possible pregnancy.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/irregular-periods/
+  leg-cramps:
+    aliases: Night leg cramps, calf spasms, nocturnal cramps
+    summary: Leg cramps are sudden painful tightening of a muscle, usually in the calf, foot or thigh. Night cramps can disturb sleep
+      and leave short-lived soreness.
+    evidence_gap: The sources reviewed did not identify a measured Irish national prevalence for recurrent leg cramps. General muscle-pain
+      or sleep surveys cannot isolate this symptom.
+    symptoms:
+    - A muscle can feel hard, contract without warning and be difficult to move for a short time. After it releases, the area may
+      remain tender for several hours.
+    causes:
+    - Cramps often have no obvious cause. Unaccustomed exercise, fluid loss, pregnancy and some medicines can contribute. Discomfort
+      that lasts between episodes may need a different assessment.
+    diagnosis:
+    - A clinician asks about timing, affected muscles, activities and medicines. They may check the leg and circulation or request
+      tests if they suspect another problem.
+    care:
+    - During a calf cramp, gently stretch by straightening the leg and drawing your toes up if you can. Ask a clinician if regular
+      stretching or changing activities is appropriate.
+    complications:
+    - Repeated cramps can cause loss of sleep. Keeping track of when they occur can help distinguish cramps from symptoms such as
+      restless legs or pain linked to walking.
+    help:
+    - Contact your GP if cramps keep interrupting sleep or come with numbness, weakness or swelling. Seek urgent assessment for a
+      persistently red, warm and swollen calf.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/leg-cramps/
+  leg-cramps-pregnancy:
+    aliases: Calf spasm in pregnancy, night cramps in pregnancy, foot cramp
+    summary: Leg cramps are sudden painful muscle spasms, often in the calf or foot at night. A cramp should ease, while a red, swollen
+      leg needs urgent assessment.
+    evidence_gap: The HSE describes pregnancy cramps as common. The sources reviewed did not quantify how many pregnant people have
+      them in Ireland.
+    symptoms:
+    - The calf or foot may suddenly tighten and hurt for seconds or minutes. The muscle can remain tender afterwards, but a cramp
+      does not usually cause persistent swelling.
+    causes:
+    - The exact cause is uncertain. Changes in circulation and tired leg muscles may play a part, especially in the later months
+      when the body is carrying more weight.
+    diagnosis:
+    - A midwife or GP can assess if the pain fits a muscle spasm or whether there are signs of another problem, such as a clot or
+      an injury.
+    care:
+    - Gently straighten your knee and draw your toes up to stretch the calf. Regular movement, supportive footwear and enough fluids
+      may help between episodes. Ask before taking supplements.
+    complications:
+    - Repeated cramps can interrupt sleep. A painful or swollen leg that does not settle needs assessment because a clot can cause
+      symptoms that resemble muscle pain.
+    help:
+    - Call your maternity unit or ask for an urgent GP appointment if one leg becomes red or swollen. Call 112 or 999 if this occurs
+      with chest pain or breathlessness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/leg-cramps-pregnancy/
+  low-blood-pressure-hypotension:
+    aliases: Hypotension, orthostatic hypotension, postural hypotension, low BP
+    summary: Low blood pressure can be normal for some people. Repeated dizziness, blurred vision or fainting after standing may
+      signal that it is affecting daily life.
+    symptoms:
+    - You may feel light-headed, weak, nauseated or have temporarily blurry vision. Symptoms after getting up from sitting or lying
+      are a clue to postural hypotension.
+    causes:
+    - Blood pressure can drop when you stand, when you are dehydrated or because of some medicines. Other causes include bleeding,
+      heart problems and conditions that affect blood pressure regulation.
+    diagnosis:
+    - A clinician can check blood pressure in different positions and review your readings, symptoms and medicines. Other tests depend
+      on how suddenly the symptoms began and what else is present.
+    care:
+    - Get up slowly and sit back down if you become light-headed. Ask about fluid advice if you have a heart or kidney condition.
+      Keep prescribed medicines unchanged until reviewed.
+    complications:
+    - Falls and injuries are concerns if symptoms occur when walking or standing. Very low pressure with a serious illness can mean
+      organs are not getting enough blood.
+    help:
+    - Speak to a GP if dizziness or fainting recurs. Get emergency help if low blood pressure accompanies collapse, severe bleeding,
+      chest pain or a sudden severe illness.
+  lymphoedema:
+    aliases: Lymphatic swelling, primary lymphoedema, secondary lymphoedema
+    summary: Lymphoedema is persistent swelling when the lymphatic system cannot drain fluid efficiently. Early advice can reduce
+      discomfort and help people manage changes in skin and movement.
+    symptoms:
+    - A limb can feel heavy, tight or swollen. Clothes or jewellery may start to pinch. Over time the skin can thicken and swelling
+      may become less responsive to rest.
+    causes:
+    - The lymphatic system can develop differently from birth or be damaged by surgery, radiotherapy, infection or other causes.
+      Some people develop symptoms long after cancer treatment.
+    diagnosis:
+    - A clinician reviews the swelling pattern, previous treatments and other possible causes. A specialist can assess the skin and
+      measure swelling to plan and track treatment.
+    care:
+    - A lymphoedema team can advise on fitted compression, skin care, movement and other therapies. Your plan depends on the affected
+      area, circulation and your ability to use compression safely.
+    complications:
+    - Cellulitis is an important complication. Skin changes and swelling can also affect mobility and daily activities. Regular review
+      helps when garments no longer fit or swelling changes.
+    help:
+    - Ask your GP about persistent swelling. Seek urgent assessment if a swollen area becomes hot, red or painful, particularly with
+      fever, chills or a sudden change.
+  ovulation-pain:
+    aliases: Mid-cycle pain, mittelschmerz, one-sided ovulation pain
+    summary: Some people have a short episode of lower abdominal pain around ovulation. Severe pain, pain that does not settle or
+      a possible pregnancy needs a different assessment.
+    evidence_gap: The sources reviewed did not determine how many people in Ireland have ovulation pain. Period pain survey figures
+      refer to a different stage of the cycle.
+    symptoms:
+    - The pain is often on one side and can feel sharp or achy. It may last from minutes to a day or two and may recur in a similar
+      part of the cycle.
+    causes:
+    - An ovary releases an egg during ovulation. Stretching or small amounts of fluid released around this time can irritate tissues
+      nearby. Other pelvic problems can mimic the pain.
+    diagnosis:
+    - A clinician considers the timing in the cycle and asks about bleeding, discharge and possible pregnancy. Testing or imaging
+      may be needed for new or persistent symptoms.
+    care:
+    - If the pattern is familiar and mild, heat and suitable pain relief may help. Your GP can discuss whether preventing ovulation
+      is an option if episodes repeatedly affect you.
+    complications:
+    - Brief episodes usually settle without lasting effects. Ongoing or worsening pain needs assessment for other causes rather than
+      assuming it is another episode of ovulation pain.
+    help:
+    - Seek urgent advice for severe pain, faintness, fever or pain if pregnancy is possible. Arrange GP review if the pain keeps
+      coming back or disrupts your activities.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/ovulation-pain/
+  period-problems:
+    aliases: Menstrual problems, heavy periods, painful periods, period symptoms
+    summary: When periods change or symptoms interfere with life, the timing of pain, bleeding and mood changes helps point to the
+      kind of assessment that can help.
+    symptoms:
+    - Problems can include heavier or missed bleeding, cramps, mood changes, or bleeding between periods. Make a note of symptoms
+      that prevent normal activities or occur outside the cycle.
+    causes:
+    - Possible contributors include hormone changes, contraception, fibroids, endometriosis or thyroid problems. Different symptoms
+      can share a cause, and several problems can also coexist.
+    diagnosis:
+    - A GP may ask about cycle timing, chance of pregnancy, pain, flow and medicines. Depending on symptoms, assessment can include
+      blood tests, examination or ultrasound.
+    care:
+    - Treatment depends on what matters most to you and what the assessment finds. Options can include pain relief, medicines to
+      reduce bleeding, hormonal treatment or referral to a specialist.
+    complications:
+    - Long-term heavy bleeding can cause anaemia. Repeated pain or severe mood changes can disrupt work, school and relationships
+      and may benefit from planned follow-up.
+    help:
+    - Seek advice if symptoms interfere with daily life or bleeding changes unexpectedly. Get urgent help for very heavy bleeding,
+      faintness or severe pain when pregnancy is possible.
+  periods:
+    aliases: Menstruation, menstrual cycle, first period, period tracking
+    summary: A period is bleeding that happens as the womb lining sheds. Tracking the timing, flow and symptoms can help you recognise
+      what is usual for you.
+    symptoms:
+    - Bleeding lasts several days for many people. Mild cramps can occur. The length and flow can vary with age, contraception and
+      changes such as approaching menopause.
+    causes:
+    - Hormone changes during a cycle prepare the womb for a possible pregnancy. If pregnancy does not occur, a drop in hormones usually
+      triggers shedding of the lining.
+    diagnosis:
+    - There is usually no test for a typical period. If bleeding changes, bring a record of start dates, flow and other symptoms
+      to a clinician to help guide assessment.
+    care:
+    - Choose period products you can use comfortably and follow their instructions. Heat or appropriate pain relief can help with
+      cramps. Ask a pharmacist about medicine if needed.
+    complications:
+    - Heavy or prolonged bleeding can contribute to iron deficiency. Pain that disrupts school, work or sleep is worth discussing
+      because there may be treatment options.
+    help:
+    - Contact a GP for new bleeding between periods, after sex or after menopause, or for a marked change in flow. Get urgent advice
+      for severe pain, dizziness or possible pregnancy.
+  pmdd-premenstrual-dysphoric-disorder:
+    aliases: PMDD, severe premenstrual mood symptoms, premenstrual dysphoric disorder
+    summary: PMDD causes severe symptoms in the days before a period, with improvement around or shortly after bleeding starts. Tracking
+      the pattern can help a clinician distinguish it from other causes.
+    evidence_gap: The Healthy Ireland survey reported PMS symptoms. It did not assess the diagnostic criteria for PMDD or estimate
+      its prevalence in Ireland.
+    symptoms:
+    - Symptoms can include feeling very low, irritable, anxious or overwhelmed, alongside changes in sleep, energy or concentration.
+      They can interfere with relationships, work or school.
+    causes:
+    - The exact cause is uncertain. Some people may respond more strongly to normal hormone changes during the cycle. A separate
+      condition can also become worse around a period.
+    diagnosis:
+    - A clinician asks about timing, severity and whether symptoms improve after bleeding starts. Daily symptom recording over at
+      least two cycles can help confirm the pattern.
+    care:
+    - Options include psychological support, certain antidepressants and some hormonal treatments. The choice depends on symptoms,
+      other health conditions and whether you want to avoid or plan pregnancy.
+    complications:
+    - Severe recurrent symptoms can affect wellbeing and safety. A written plan for times symptoms usually worsen can help you and
+      your clinician respond earlier.
+    help:
+    - Talk to your GP if symptoms recur and disrupt daily life. If you feel unable to keep yourself safe, seek immediate emergency
+      help and tell someone you trust.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/pmdd-premenstrual-dysphoric-disorder/
+  pubic-lice-crabs:
+    aliases: Crabs, pubic lice, pediculosis pubis, itching pubic hair
+    summary: Pubic lice are small insects that cling to coarse hair. They can cause intense itch and usually need treatment, with
+      advice for recent close or sexual contacts.
+    evidence_gap: Pubic lice are not separately listed in the HPSC's national 2025 STI notification tables. The sources reviewed
+      did not establish national prevalence or incidence.
+    symptoms:
+    - Itching, especially at night, is common. You may find small insects or eggs attached to hairs. Rarely, eyelashes or other areas
+      with coarse hair are affected.
+    causes:
+    - They usually spread through close bodily contact, including sexual contact. They differ from head lice, and itching alone is
+      not enough to identify what is causing it.
+    diagnosis:
+    - A GP, pharmacist or sexual health clinician can help identify lice or eggs. A clinician may recommend testing for other sexually
+      transmitted infections depending on your circumstances.
+    care:
+    - Ask about a suitable treatment and whether a repeat application is needed. Follow instructions for recent contacts and laundering.
+      Eyelashes need separate advice before products are used nearby.
+    complications:
+    - Scratching can damage skin and cause infection. Symptoms can recur if contacts are untreated or treatment does not reach all
+      affected areas. Getting the diagnosis right helps avoid unnecessary applications.
+    help:
+    - Talk to a pharmacist, GP or sexual health service if you suspect pubic lice. Get specific medical advice for eyelash involvement,
+      persistent symptoms or if you are pregnant.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/pubic-lice-crabs/
+  round-ligament-pain-pregnancy:
+    aliases: Pregnancy ligament pain, sharp pain moving in pregnancy, groin pain
+    summary: Pain from the round ligaments can feel sharp or pulling at the side of the lower abdomen or groin. It often starts during
+      a quick movement and settles with rest.
+    evidence_gap: Irish maternity reports do not give a national count for round ligament pain. General reports of abdominal pain
+      in pregnancy cannot isolate this cause.
+    symptoms:
+    - It may occur when standing up, turning in bed, coughing or sneezing. It can affect one or both sides and is often noticed in
+      the second trimester.
+    causes:
+    - The round ligaments support the womb and stretch as it grows. A sudden change of position can briefly pull on the tissues and
+      nearby muscles.
+    diagnosis:
+    - A midwife or doctor asks where you feel the pain, what triggered it and whether it eased. They may assess for other causes
+      if the pain persists or symptoms accompany it.
+    care:
+    - Slow down when changing position and rest if pain starts. Ask your midwife about comfortable positions, safe movement and options
+      if pain interferes with activity.
+    complications:
+    - Short episodes usually settle. Persistent, severe or new pain may have a different cause and should be assessed on its own
+      features, even if a previous episode was ligament pain.
+    help:
+    - Contact your maternity team urgently if pain is severe or persistent or comes with bleeding, fever, regular tightening or reduced
+      movements once you know your baby's usual pattern.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/round-ligament-pain-pregnancy/
+  skin-problems-pregnancy:
+    aliases: Pregnancy rash, melasma, itchy skin while pregnant, PUPPP
+    summary: Pregnancy can change skin colour, sensitivity and itching. The pattern of a rash and the location of the itch help determine
+      whether a maternity assessment is needed.
+    evidence_gap: The HSE provides a general estimate for one rash subtype, PUPPP. That estimate does not establish the prevalence
+      of pregnancy skin problems overall in Ireland.
+    symptoms:
+    - Some people notice darker patches on the face or abdomen, dry skin or an itchy rash that begins around stretch marks. Severe
+      itch without a rash needs separate attention.
+    causes:
+    - Hormones can affect pigment and skin sensitivity, and stretching can change how skin feels. A pregnancy-related liver condition
+      can also cause itch even without a visible rash.
+    diagnosis:
+    - A clinician may ask where itching began, whether there is a rash and whether symptoms worsen at night. Blood tests may be needed
+      to check liver function and bile acids.
+    care:
+    - Use gentle skin care and discuss creams or medicines with a pharmacist or maternity team. Sun protection can help reduce darkening
+      of exposed patches such as melasma.
+    complications:
+    - Many pigment changes and pregnancy rashes improve afterwards. Intense itch needs investigation because some pregnancy conditions
+      require extra monitoring and specific follow-up.
+    help:
+    - Contact your maternity unit promptly if itching is intense, affects palms or soles, is worse at night or occurs without a rash.
+      Call if your baby's movements change.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/skin-problems-pregnancy/
+  sore-ribs-pregnancy:
+    aliases: Rib pain while pregnant, third trimester rib discomfort, upper abdomen pregnancy
+    summary: As pregnancy progresses, pressure and changes in posture can make the ribs sore. Severe pain, shortness of breath or
+      symptoms of pre-eclampsia need prompt assessment.
+    evidence_gap: No Irish population estimate was identified for rib pain as a separate pregnancy symptom. Maternity admissions
+      capture some concerning causes without counting common mechanical discomfort.
+    symptoms:
+    - Discomfort may be felt at the front, side or back of the ribs. It can change with sitting, movement or meals. Tell your clinician
+      if the pattern suddenly changes.
+    causes:
+    - As the womb grows, there is less room for the rib cage and stomach to move. Muscle strain or reflux can contribute, but pain
+      under the ribs can have other causes.
+    diagnosis:
+    - A clinician asks where it hurts and whether symptoms occur with movement, urination or eating. They may check blood pressure,
+      urine or other tests according to your symptoms.
+    care:
+    - If a clinician advises that the discomfort is mechanical, try changing position, supporting your back and using pillows at
+      night. Ask about suitable pain relief if needed.
+    complications:
+    - Mechanical discomfort often eases with changing position. Upper abdominal or rib pain sometimes accompanies a more serious
+      pregnancy problem, so new symptoms change what action is needed.
+    help:
+    - Contact maternity or urgent care immediately for severe pain, breathing problems, coughing blood, headache with vision changes,
+      or rib or shoulder pain with bleeding early in pregnancy.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/sore-ribs-pregnancy/
+  stomach-ache:
+    aliases: Abdominal pain, tummy pain, stomach pain
+    summary: Pain in the abdomen can come from the bowel, bladder, reproductive organs or other structures. The location, timing
+      and accompanying symptoms help determine how urgently it needs assessment.
+    emergency: 'Sudden severe pain, collapse or vomiting blood: call'
+    symptoms:
+    - Pain can be sharp, cramping or dull. Notice where it begins, whether it moves and whether it occurs with fever, vomiting, constipation,
+      urinary symptoms or bleeding.
+    causes:
+    - Common possibilities include trapped wind, constipation, indigestion or a stomach infection. Some causes, including appendicitis
+      or an ectopic pregnancy, can require emergency treatment.
+    diagnosis:
+    - A clinician asks about the pain's pattern, bowel and urinary changes and whether pregnancy is possible. They may examine your
+      abdomen or use tests based on what they find.
+    care:
+    - Rest, fluids and advice from a pharmacist may be reasonable for mild, familiar discomfort. If the pain is new, persistent or
+      worsening, ask a clinician what assessment is appropriate.
+    complications:
+    - Many short episodes pass on their own. Pain that recurs, interrupts normal life or comes with unexplained weight loss deserves
+      assessment because some conditions need ongoing treatment.
+    help:
+    - Get urgent help for sudden or severe pain, blood in vomit or black stools, or symptoms during pregnancy. Call 112 or 999 if
+      someone collapses or is severely unwell.
+  stopped-or-missed-periods:
+    aliases: Amenorrhoea, missed period, periods stopped, no period
+    summary: Pregnancy is one common reason a period is missed. Repeated missed periods can also reflect changes in hormones, medicines,
+      energy intake or other areas of health.
+    evidence_gap: Irish survey categories combine different reasons for periods having stopped. The sources reviewed did not give
+      a national prevalence estimate for unexplained missed periods.
+    symptoms:
+    - You may notice an unexpected gap or that bleeding has stopped completely. Other symptoms, including pelvic pain, tiredness
+      or new hair growth, help guide an assessment.
+    causes:
+    - Breastfeeding, contraception and menopause can change bleeding patterns. Weight or exercise changes, stress, polycystic ovary
+      syndrome and thyroid problems are among other possible causes.
+    diagnosis:
+    - Take a pregnancy test if there is any possibility. For continuing missed periods, a GP may check your history and use blood
+      tests or ultrasound if indicated.
+    care:
+    - Treatment depends on the cause, your medicines and whether you want to conceive. Keep track of bleeding and ask your GP about
+      repeat testing if the first pregnancy test may have been early.
+    complications:
+    - Possible effects vary. For example, low oestrogen over time can affect bone health in some people, while others experience
+      a planned pause in bleeding from contraception.
+    help:
+    - Arrange review if three periods are missed in a row without an explanation. Seek emergency assessment if you might be pregnant
+      and have severe pain, dizziness or fainting.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/stopped-or-missed-periods/
+  stretch-marks-pregnancy:
+    aliases: Striae gravidarum, pregnancy stretch marks, abdominal stretch marks
+    summary: Stretch marks are lines that form as the skin changes during pregnancy. They often fade after birth and do not usually
+      require treatment.
+    evidence_gap: The sources reviewed did not provide an Irish prevalence estimate for pregnancy stretch marks. Cosmetic treatment
+      activity would represent only a selected group.
+    symptoms:
+    - Lines can look pink, red, purple, brown or lighter than the skin around them, depending on skin tone and age of the mark. Mild
+      itching is possible.
+    causes:
+    - Skin changes as the abdomen and other areas grow. Hormonal and genetic factors can affect who develops marks and where they
+      appear during or after pregnancy.
+    diagnosis:
+    - The pattern and appearance are usually enough to recognise stretch marks. A clinician may assess a separate rash if there are
+      raised bumps, spreading redness or intense itch.
+    care:
+    - Use a plain moisturiser if the skin feels dry or tight. Discuss skin treatments with a pharmacist or clinician before using
+      them in pregnancy or while breastfeeding.
+    complications:
+    - Marks usually become less noticeable over time and can remain visible. Changes after birth are individual, and no cream is
+      guaranteed to prevent or remove them.
+    help:
+    - Mention painful marks or a new rash to your midwife. Contact the maternity team for severe itching, especially with no rash
+      or when the palms or soles are affected.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/stretch-marks-pregnancy/
+  swollen-ankles-feet-and-legs-oedema:
+    aliases: Leg oedema, ankle swelling, fluid retention in the feet
+    summary: Swelling in the feet or ankles can follow prolonged standing or sitting. A new swollen leg, breathing symptoms or repeated
+      swelling can signal a medical problem.
+    emergency: 'Sudden breathlessness, chest pain or coughing blood: call'
+    evidence_gap: Hospital reports group swelling by different underlying diagnoses. The sources reviewed did not establish a national
+      prevalence estimate for ankle or leg oedema as a symptom.
+    symptoms:
+    - Shoes may feel tight, the skin may look stretched, or pressing the area may leave a dent. Note whether one or both legs are
+      affected and how quickly it started.
+    causes:
+    - Fluid can collect because of circulation problems, medicines or conditions affecting the heart, kidneys or liver. Sudden one-sided
+      swelling may reflect a clot or infection.
+    diagnosis:
+    - A clinician will ask about onset, pain, recent travel or surgery, medicines and breathing. The examination and any blood tests
+      or scans depend on the suspected cause.
+    care:
+    - When swelling is mild and follows inactivity, moving regularly and resting with legs raised may help. Ask a clinician before
+      using compression stockings or changing a prescribed medicine.
+    complications:
+    - Persistent swelling can damage the skin and lead to leaking fluid, infection or ulcers. Seek review if swelling is making walking
+      or wearing footwear more difficult.
+    help:
+    - Get urgent advice for unexplained swelling in one leg, redness or severe pain. Call 112 or 999 if swelling occurs with shortness
+      of breath, chest pain or coughing blood.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/swollen-ankles-feet-and-legs-oedema/
+  swollen-ankles-feet-fingers-pregnancy:
+    aliases: Pregnancy swelling, oedema in pregnancy, swollen hands in pregnancy
+    summary: Gradual swelling of both feet is common as pregnancy progresses. Sudden swelling, changes in vision or swelling mainly
+      in one leg can need urgent medical attention.
+    emergency: 'Breathlessness, chest pain or coughing blood with one swollen leg: call'
+    evidence_gap: The HSE describes gradual swelling as common during pregnancy. The sources reviewed did not measure how often it
+      occurs in the Irish pregnancy population.
+    symptoms:
+    - Shoes or rings may feel tighter, especially late in the day. Swelling affecting one calf or sudden swelling of the face and
+      hands differs from usual gradual swelling.
+    causes:
+    - Pregnancy increases fluid retention, and the growing womb can slow blood return from the legs. Other causes include high blood
+      pressure conditions and blood clots.
+    diagnosis:
+    - A clinician can check blood pressure and urine and ask when swelling started. A painful red or hot calf may need assessment
+      for a clot, sometimes with ultrasound.
+    care:
+    - For gradual swelling without other symptoms, move regularly, rest with your feet up and wear comfortable footwear. Remove rings
+      before they become too tight to take off easily.
+    complications:
+    - Gradual swelling is often uncomfortable without causing harm. Sudden swelling can accompany pre-eclampsia, and missing a clot
+      can lead to serious complications involving the lungs.
+    help:
+    - Call your GP or maternity hospital immediately for sudden swelling with headache, vision changes or pain below the ribs, or
+      for one hot, tender and swollen leg.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/swollen-ankles-feet-fingers-pregnancy/
+  thrush-pregnancy:
+    aliases: Vaginal candidiasis in pregnancy, itchy discharge pregnancy, Candida pregnancy
+    summary: Vaginal thrush can cause itching, soreness and thick discharge in pregnancy. Ask a GP or midwife to confirm the cause
+      and advise which treatments are suitable.
+    evidence_gap: The sources reviewed did not identify a national Irish estimate specifically for vaginal thrush in pregnancy. General
+      prescribing or infection data do not identify this population.
+    symptoms:
+    - Symptoms can include itching around the vagina, soreness and thick white discharge that usually has little smell. Irritation
+      can make sex or passing urine uncomfortable.
+    causes:
+    - Pregnancy changes the environment in the vagina and may make yeast overgrowth more likely. Discharge can also have other causes,
+      including infections that need different treatment.
+    diagnosis:
+    - A clinician asks about discharge, pain and other symptoms. They may examine the area or test a swab if symptoms are new, persistent
+      or do not fit typical thrush.
+    care:
+    - Follow advice from your maternity clinician or pharmacist on suitable local antifungal treatment. Check with them before using
+      any oral treatment or reusing a previous medicine.
+    complications:
+    - Thrush can recur or cause ongoing discomfort. Symptoms that continue after treatment deserve reassessment, as another infection
+      or skin condition may be responsible.
+    help:
+    - Contact your GP or midwife for new symptoms. Contact maternity services urgently for bleeding, fever, pelvic pain or a gush
+      or persistent trickle of watery fluid.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/thrush-pregnancy/
+  thumb-wrist-pain-after-baby:
+    aliases: De Quervain's after pregnancy, wrist pain after having a baby, thumb tendon pain
+    summary: Pain on the thumb side of the wrist after having a baby can come from irritated tendons. It often flares with lifting,
+      gripping or supporting the baby's head.
+    evidence_gap: The sources reviewed did not identify an Irish prevalence study specific to this postpartum wrist problem. General
+      tendon referrals would not capture people managing pain independently.
+    symptoms:
+    - Turning the wrist, spreading the thumb or lifting the baby can bring on sharp pain. Some people notice swelling or aching in
+      the area even at rest.
+    causes:
+    - Tendons that move the thumb can become irritated where they pass through a narrow space near the wrist. Repeated lifting and
+      positions that bend the wrist can contribute.
+    diagnosis:
+    - A clinician assesses the painful area and how your wrist and thumb move. They can consider other explanations if there was
+      an injury, numbness or unusual swelling.
+    care:
+    - Try keeping the wrist straight during lifting and supporting the baby with both arms or pillows when feeding. A physiotherapist
+      or GP can discuss splints or other treatments.
+    complications:
+    - Pain can interfere with feeding, carrying a child and household tasks. Adjusting the way you lift or hold the baby can reduce
+      strain while keeping necessary tasks manageable.
+    help:
+    - Contact a GP or physiotherapist if pain is getting worse, preventing normal care or continuing despite rest and adjustments.
+      Seek prompt care after an injury with major swelling or loss of movement.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/thumb-wrist-pain-after-baby/
+  tiredness-fatigue-pregnancy:
+    aliases: Pregnancy fatigue, first trimester exhaustion, tired in early pregnancy
+    summary: Tiredness is common in early pregnancy. When it is severe, persists or comes with symptoms such as breathlessness, it
+      is worth asking your maternity team about other possible causes.
+    evidence_gap: The Irish sources reviewed do not give a prevalence estimate for first-trimester fatigue itself. National anaemia
+      figures, where available, describe one possible cause rather than this symptom.
+    symptoms:
+    - You may feel sleepy, less able to do routine tasks or need more rest. Tell your clinician if fatigue is worsening or affecting
+      your ability to care for yourself.
+    causes:
+    - Early hormonal changes can affect energy and sleep, while nausea can limit food and fluids. Anaemia, thyroid problems, sleep
+      difficulties and low mood can also contribute.
+    diagnosis:
+    - A GP or midwife can review your sleep, nutrition, mood and symptoms. Antenatal blood tests and any additional checks can help
+      identify causes that need treatment.
+    care:
+    - Rest when possible, drink regularly and eat what you can tolerate if nausea is a problem. Ask about support with sleep, work
+      or chores if fatigue is disrupting daily life.
+    complications:
+    - Fatigue can improve after the first trimester and return later. Follow-up can help if an underlying cause is found or tiredness
+      continues to interfere with important activities.
+    help:
+    - Speak to your GP or midwife for persistent tiredness, dizziness or breathlessness with everyday activity. Get urgent help for
+      severe breathlessness, chest pain or collapse.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/tiredness-fatigue-pregnancy/
+  unintentional-weight-loss:
+    aliases: Unexplained weight loss, losing weight without trying, involuntary weight loss
+    summary: Losing weight without changing what you eat or how active you are can have many causes. Continuing or substantial weight
+      loss needs medical assessment.
+    evidence_gap: The sources reviewed did not give a population estimate for weight loss occurring without intent. Irish surveys
+      of BMI change include both intentional and unintentional changes.
+    symptoms:
+    - You may notice looser clothes or falling measurements without trying. Tell your clinician about reduced appetite, swallowing
+      difficulty, pain, bowel changes, fever or unusual tiredness.
+    causes:
+    - Stress and low mood can reduce appetite. Digestive problems, thyroid disease, diabetes, medicine effects and cancer are among
+      other explanations a clinician may consider.
+    diagnosis:
+    - A GP checks how much weight you have lost and over what period. They may review medicines, examine you and arrange blood tests
+      or other investigations based on your symptoms.
+    care:
+    - Regular meals and snacks may help if poor appetite is contributing. Your GP can guide treatment for the underlying cause and
+      suggest a dietitian if intake remains inadequate.
+    complications:
+    - Ongoing weight loss can reduce strength and ability to recover from illness. Early assessment helps direct tests and makes
+      it easier to monitor whether treatment is working.
+    help:
+    - Arrange a GP appointment if weight keeps falling without explanation. Seek prompt care if you cannot swallow fluids, have black
+      stools or vomit blood, or are severely unwell.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/unintentional-weight-loss/
+  vaginal-discharge-pregnancy:
+    aliases: Normal pregnancy discharge, show before labour, possible waters breaking
+    summary: Discharge often increases in pregnancy. A new smell, itching, bleeding or leaking watery fluid changes what advice you
+      need and when to seek it.
+    evidence_gap: Irish data do not distinguish routine pregnancy discharge from each cause of abnormal discharge or suspected membrane
+      rupture. There is no comparable rate from the sources reviewed.
+    symptoms:
+    - Usual discharge is often thin, clear or milky. Thick mucus with a slight pink streak can occur near labour. A gush or continuous
+      watery trickle may be amniotic fluid.
+    causes:
+    - Pregnancy changes the amount of fluid produced by the vagina and cervix. Infection can change its smell or appearance, while
+      waters breaking is a separate reason for fluid loss.
+    diagnosis:
+    - Your midwife may ask how far along you are, when the fluid started, its colour and whether there is pain or itching. They can
+      arrange assessment or a swab if appropriate.
+    care:
+    - Tell the maternity team if you are uncertain whether your waters have broken. Avoid treating a change in discharge on your
+      own before you establish the likely cause.
+    complications:
+    - Some infections need treatment, and early rupture of membranes can need monitoring or additional care. The team can advise
+      what to watch for after any assessment.
+    help:
+    - Call the maternity unit promptly for a gush or trickle, vaginal bleeding, fever, unusual pain or altered baby movements. Explain
+      if you are less than 37 weeks pregnant.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/vaginal-discharge-pregnancy/
+  vaginal-dryness:
+    aliases: Vaginal dryness, dryness during sex, genitourinary symptoms of menopause
+    summary: Vaginal dryness can cause day-to-day irritation or discomfort during sex. Hormone changes are one cause, and treatments
+      depend on the symptoms and your medical history.
+    evidence_gap: Irish menopause or service figures are not a measure of vaginal dryness across all ages and causes. No national
+      prevalence figure was identified in the sources reviewed.
+    symptoms:
+    - You may feel dry, itchy, sore or have pain with penetration. Some people notice urinary symptoms. Bleeding or a new change
+      in discharge is worth raising with a clinician.
+    causes:
+    - Lower oestrogen around menopause or while breastfeeding can affect moisture and tissue comfort. Medicines, irritating products
+      and some medical treatments can also contribute.
+    diagnosis:
+    - A clinician asks about the timing, medicines, menopause symptoms and whether you have bleeding or discharge. They may examine
+      you or suggest tests if another cause is possible.
+    care:
+    - A water-based lubricant can help during sex, and a vaginal moisturiser may help with regular dryness. Ask a clinician whether
+      a local hormone treatment is appropriate for you.
+    complications:
+    - Persistent discomfort can affect sleep, relationships and sexual wellbeing. A clinician can discuss options if simple treatment
+      is insufficient or you have a complicated medical history.
+    help:
+    - Speak to a GP if symptoms persist or are affecting everyday life. Arrange assessment for bleeding after sex or after menopause,
+      and for unusual discharge or persistent pelvic pain.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/vaginal-dryness/
+  vaginal-mesh-implants:
+    kind: procedure
+    aliases: Transvaginal mesh, bladder sling complications, mesh referral in Ireland
+    summary: If you have a vaginal mesh implant and develop new pelvic, urinary or sexual symptoms, a specialist can help decide
+      whether they relate to the implant and what care is available.
+    evidence_gap: The national guideline describes management of complications. It does not establish how common they are among all
+      people in Ireland who received a vaginal mesh implant.
+    symptoms:
+    - Mesh was used for some cases of stress urinary incontinence or pelvic organ prolapse. The HSE patient guidance describes a
+      pause on vaginal mesh surgery and outlines other treatments.
+    causes:
+    - Mesh is a material used to reinforce pelvic tissue or support the urethra. Exposure of mesh through tissue, infection and pain
+      can occur, and symptoms differ by person.
+    diagnosis:
+    - Try to find your operation details if available, and write down when symptoms started. The specialist can explain how they
+      assess which implant was used and whether it contributes.
+    care:
+    - Assessment can include discussion, a pelvic examination with consent and targeted tests. Depending on findings, care can involve
+      physiotherapy, medicines or referral to a multidisciplinary mesh centre.
+    complications:
+    - Removing part or all of an implant can help some people but has risks and cannot guarantee symptoms will settle. Ask how the
+      team would monitor recovery and persistent symptoms.
+    help:
+    - Contact your GP, the original surgeon or the hospital where you were treated if concerned. Seek prompt medical help for fever
+      with worsening pelvic pain, heavy bleeding or inability to pass urine.
+    sources:
+      Clinical guidance and further reading: https://www2.healthservice.hse.ie/organisation/national-pppgs/national-clinical-practice-guideline-diagnosis-and-management-of-mesh-complications/
+  varicose-veins-pregnancy:
+    aliases: Pregnancy varicose veins, swollen leg veins during pregnancy, vulval varicose veins
+    summary: Varicose veins can appear or become more noticeable in pregnancy. They often affect the legs, and some people develop
+      swollen veins around the vulva.
+    evidence_gap: Irish hospital activity reports combine patients with different indications and ages. Those totals do not estimate
+      how often varicose veins occur among pregnant people in Ireland.
+    symptoms:
+    - Visible twisted veins can come with aching, a heavy feeling or swelling that worsens after standing. Tell your clinician if
+      one leg becomes suddenly painful or swollen.
+    causes:
+    - Hormonal changes and increased blood volume can stretch veins. Pressure from the growing womb can slow blood flow out of the
+      legs as pregnancy progresses.
+    diagnosis:
+    - A GP or midwife can assess the appearance and symptoms. Different tests may be needed if a calf is painful, hot or swollen
+      or if a clot is suspected.
+    care:
+    - Move regularly and put your feet up when you can. Your clinician can discuss whether fitted compression stockings may help
+      and when they should be used.
+    complications:
+    - Some veins improve after birth. Persistent symptoms, skin changes or bleeding need follow-up. Seek a fresh assessment if the
+      symptoms change suddenly during or after pregnancy.
+    help:
+    - Get urgent advice for new swelling or pain in one leg, or a vein that becomes red and hard. Call 112 or 999 for serious sudden
+      breathlessness or chest pain.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/varicose-veins-pregnancy/
+  zika-virus-pregnancy:
+    aliases: Zika and pregnancy, travel advice before pregnancy, congenital Zika
+    summary: Zika infection during pregnancy can affect a baby's development. Ask for destination-specific travel advice before travel
+      and tell your maternity team about possible exposure afterwards, even if you feel well.
+    symptoms:
+    - Many people do not notice symptoms. Some develop a mild fever, itchy rash, aching joints or red eyes after exposure. Symptoms
+      can resemble other infections associated with travel.
+    causes:
+    - People can be exposed through a mosquito bite in affected areas or through sex with a person who has been exposed. Pregnancy
+      advice depends on where and when exposure occurred.
+    diagnosis:
+    - A clinician considers the location and timing of travel, symptom onset and who travelled. They may arrange testing or ultrasound
+      follow-up according to current public health and maternity guidance.
+    care:
+    - Discuss whether travel can be deferred and how to protect yourself if travel is essential. Ask about current advice on condoms
+      and how long to wait before trying to conceive afterwards.
+    complications:
+    - Infection during pregnancy can affect development of the brain and other organs. A maternity specialist can explain what monitoring
+      may be offered and the limitations of individual tests.
+    help:
+    - Contact your GP or midwife after returning from an affected area if you are pregnant, even without symptoms. If planning pregnancy
+      or travelling with a partner, ask about precautions in advance.
