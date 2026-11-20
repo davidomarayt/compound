@@ -244,7 +244,7 @@ Research based on pre-IPO disclosures.
     sitemap = (settings.public_dir / "sitemap.xml").read_text(encoding="utf-8")
     assert "Anthropic before the IPO" in stock
     assert 'href="/wealth/anthropic-legacy-analysis/"' in stock
-    assert 'href="/stocks/ant/"' not in index or "Anthropic" not in index
+    assert "Anthropic" not in index
     assert "http-equiv=\"refresh\"" in previous
     assert "https://example.test/stocks/ant/" in previous
     assert 'name="robots" content="noindex,follow"' in previous
