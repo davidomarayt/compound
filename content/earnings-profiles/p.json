@@ -2,33 +2,33 @@
   "cik": 1474432,
   "company": "Everpure",
   "latest": {
-    "accession": "0001474432-26-000088",
-    "filed": "2026-09-04",
-    "form": "10-Q",
-    "fp": "Q2",
     "fy": 2027,
+    "fp": "Q3",
+    "period_end": "2026-11-01",
+    "filed": "2026-11-18",
+    "form": "8-K",
+    "accession": "0001474432-26-000110",
+    "source": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000110/everpure-ex991q3fy2027xpre.htm",
     "metrics": {
-      "diluted_eps": {
-        "current": 0.21,
-        "prior_year": 0.14,
-        "tag": "EarningsPerShareDiluted",
-        "unit": "USD/shares"
+      "revenue": {
+        "current": 1459791000,
+        "prior_year": 964453000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP revenue"
       },
       "net_income": {
-        "current": 74149000,
-        "prior_year": 47118000,
-        "tag": "NetIncomeLoss",
-        "unit": "USD"
+        "current": 100395000,
+        "prior_year": 54806000,
+        "unit": "USD",
+        "tag": "SEC Exhibit reported GAAP net_income"
       },
-      "revenue": {
-        "current": 1185898000,
-        "prior_year": 861002000,
-        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-        "unit": "USD"
+      "diluted_eps": {
+        "current": 0.29,
+        "prior_year": 0.16,
+        "unit": "USD/shares",
+        "tag": "SEC Exhibit reported GAAP diluted_eps"
       }
-    },
-    "period_end": "2026-08-02",
-    "source": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000088/pstg-20260802.htm"
+    }
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-08-02",
       "source": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000088/pstg-20260802.htm"
+    },
+    {
+      "fy": 2027,
+      "fp": "Q3",
+      "period_end": "2026-11-01",
+      "filed": "2026-11-18",
+      "form": "8-K",
+      "accession": "0001474432-26-000110",
+      "source": "https://www.sec.gov/Archives/edgar/data/1474432/000147443226000110/everpure-ex991q3fy2027xpre.htm",
+      "metrics": {
+        "revenue": {
+          "current": 1459791000,
+          "prior_year": 964453000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP revenue"
+        },
+        "net_income": {
+          "current": 100395000,
+          "prior_year": 54806000,
+          "unit": "USD",
+          "tag": "SEC Exhibit reported GAAP net_income"
+        },
+        "diluted_eps": {
+          "current": 0.29,
+          "prior_year": 0.16,
+          "unit": "USD/shares",
+          "tag": "SEC Exhibit reported GAAP diluted_eps"
+        }
+      }
     }
   ],
-  "source_type": "US SEC XBRL; no analyst estimates",
+  "source_type": "US SEC XBRL for earlier periods; SEC Form 8-K earnings exhibit for latest quarter; no analyst estimates",
   "ticker": "P",
-  "updated": "2026-10-15"
+  "updated": "2026-11-19"
 }
