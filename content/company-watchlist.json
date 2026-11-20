@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-19",
+  "checked": "2026-11-20",
   "listed": [
     {
       "slug": "spcx",
@@ -117,12 +117,12 @@
       "slug": "openai",
       "name": "OpenAI",
       "sector": "Artificial intelligence",
-      "summary": "AI models, enterprise deployments and specialist legal intelligence, including the 17 November Astra for Law 6.2 benchmark update.",
+      "summary": "Developer and enterprise AI systems, including specialist legal research and an 18 November accounting workflow for reconciliation and month-end reporting.",
       "website": "https://openai.com/",
       "latest_development": {
-        "date": "2026-11-17",
-        "text": "OpenAI updated its Astra for Law configuration built on GPT-6.2 Astra and opened requests to all ChatGPT Enterprise customers through Trusted Access. On 120 LAB-AA assignments the configuration achieved 20.8% full credit, against 15.0% for general GPT-6.2 Astra. No specialist-product revenue or adoption totals were disclosed.",
-        "source": "https://openai.com/index/astra-law-6-2/"
+        "date": "2026-11-18",
+        "text": "OpenAI's 18 November ChatGPT release notes introduced an Accounting plugin for reconciling transactions, drafting invoice entries and preparing month-end reports. Desktop and workspace configuration apply; no separately published fee, independent accuracy score or Irish package integration was disclosed.",
+        "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
       }
     },
     {
@@ -189,12 +189,12 @@
       "slug": "blue-origin",
       "name": "Blue Origin",
       "sector": "Space technology",
-      "summary": "Launch vehicles, engines and space infrastructure.",
+      "summary": "Privately held launch, engine and space-infrastructure firm; New Glenn selected under Google's 19 November Project Suncatcher launch agreement targeting a first dedicated mission in Q1 2029.",
       "website": "https://www.blueorigin.com/",
       "latest_development": {
-        "date": "2026-11-10",
-        "text": "Blue Origin reported that its modified BE-4 main oxygen valve passed qualification tests following the May hotfire anomaly; fleet retrofit is underway and investigation closure was anticipated later in November. No new flight date was confirmed.",
-        "source": "https://www.blueorigin.com/news/gs1-3-hotfire-updates"
+        "date": "2026-11-19",
+        "text": "Blue Origin said Google selected New Glenn for the first dedicated heavy-lift launch of Project Suncatcher's planned solar-powered TPU computing satellites, targeted for Q1 2029. Price, launch cadence, margins and satellite compute economics were not disclosed; the mission has not flown.",
+        "source": "https://www.blueorigin.com/news/google-selects-new-glenn-for-project-suncatcher"
       }
     },
     {
