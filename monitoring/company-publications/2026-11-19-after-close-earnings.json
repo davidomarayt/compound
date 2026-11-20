@@ -1,6 +1,6 @@
 {
   "date": "2026-11-19",
-  "status": "prepared_not_deployed",
+  "status": "merged_pending_deployment",
   "scan_since_inclusive": "2026-11-18",
   "companies": {
     "PANW": {
@@ -34,9 +34,10 @@
           }
         }
       },
-      "status": "verified_source_ingested_by_concurrent_monitor_pending_deployment",
+      "status": "verified_live_concurrent_monitor",
       "monitor_commit": "892f166dae4ea63c9719ee8a97e334f020ab0a6b",
-      "confirming_10q": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000033/panw-20261031.htm"
+      "confirming_10q": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000033/panw-20261031.htm",
+      "live_verified_at": "2026-11-20T00:02:40Z"
     },
     "P": {
       "canonical_url": "https://compound.ie/stocks/p/",
@@ -154,13 +155,15 @@
   "nvidia_one_off": "Already fulfilled and live verified in prior ledger; no duplicate created.",
   "counts": {
     "new_articles": 0,
+    "merged_stock_updates": 4,
+    "verified_concurrent_monitor_updates": 1,
     "live_updates": 0
   },
   "checks": {
     "offline_earnings_tests": "46 passed",
     "publication": "pending full build and exact-head CI",
     "review_limit": 5,
-    "exact_head_ci": "Prior head passed both test and performance/full-build jobs; rebased to preserve concurrent ingestion. Rechecking."
+    "exact_head_ci": "Both test and full-build/performance jobs passed on revised head, runs 44641842041 and 44641833447"
   },
   "prior_unresolved": [
     "ATO annual table",
@@ -210,5 +213,8 @@
     "panw_crosscheck": "19 November 10-Q accession 0001327567-26-000033 agrees with all six current/prior revenue, GAAP net income and diluted EPS values in 18 November earnings exhibit.",
     "limits": "Five companies substantively source-reconciled. Other candidates and foreign disclosures pending. No claim that the whole universe is fully current.",
     "intu_status": "Concurrent monitor ingested 10-Q, deployment pending; not manually reviewed in this five-company batch."
-  }
+  },
+  "merge_commit": "ee6b772be999255d13053d34fcc09a44f1a1a3d1",
+  "validated_head": "f6f59f34b66a74246498c7becc6c5264a9d8fb3d",
+  "deployment_status": "pending"
 }
