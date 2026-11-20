@@ -189,6 +189,36 @@ sources:
   vte_hipe:
     name: National trends in venous thromboembolism incidence in Ireland, HIPE analysis
     url: https://cora.ucc.ie/items/a8a04f81-fb18-4e20-b073-67a6bf6f8c52
+  gaelic_suspected_concussion:
+    name: Sports Health, video study of suspected concussion in elite ladies’ Gaelic football
+    url: https://researchportal.bath.ac.uk/en/publications/a-video-analysis-of-suspected-injuries-and-suspected-concussions-/
+  hpo_2024:
+    name: Healthcare Pricing Office, Activity in Acute Public Hospitals in Ireland 2024
+    url: https://www.drugsandalcohol.ie/44501/1/HIPE_Report_2024.pdf
+  hpsc_scabies_2024:
+    name: HPSC outbreak figures, reported by the former Director of Human Health and Nutrition at safefood
+    url: https://www.thejournal.ie/readme/scabies-in-ireland-6646098-Mar2025/
+  hsa_injuries_2024:
+    name: Health and Safety Authority Annual Review of Workplace Injuries, Illnesses and Fatalities 2023–2024
+    url: https://hsa.ie/media/cgxibhgx/hsa-annual-review-of-workplace-injuries-illnesses-and-fatalities-2023-2024.pdf
+  hse_palliative_2024:
+    name: HSE national palliative care policy implementation plan announcement
+    url: https://about.hse.ie/news/hse-to-ensure-timely-and-high-quality-palliative-care-as-close-as-possible-to-home-for-patients-and-families/
+  hse_polyps:
+    name: HSE BowelScreen Programme Report 2022–2023, key results
+    url: https://www2.healthservice.hse.ie/organisation/nss/news/new-bowelscreen-programme-report-highlights-importance-of-screening-to-prevent-bowel-cancer/
+  irish_paediatric_rhinitis:
+    name: Irish paediatric allergic rhinitis clinic study, World Journal of Otorhinolaryngology
+    url: https://sivuh.ie/download.aspx?f=World+j++otorhinolaryngol+-head+neck+surg+-+2023+-+Nae+-+Allergic+rhinitis+facts+from+an+Irish+pediatric+population.pdf
+  noca_icu_2024:
+    name: NOCA Irish National ICU Audit 2024, key results
+    url: https://www.noca.ie/news-events/irish-national-icu-audit-annual-report-2024-highlights-strong-outcomes-despite-sustained-pressure-on-services-2/
+  noca_tbi_2023:
+    name: NOCA Irish National ICU Audit 2023 national report
+    url: https://d7g406zpx7bgk.cloudfront.net/x/439edea48f/irish-national-icu-audit-national-report-on-2023-data-final.pdf
+  who_oral_ireland:
+    name: WHO Oral Health Ireland Country Profile 2022
+    url: https://cdn.who.int/media/docs/default-source/country-profiles/oral-health/oral-health-irl-2022-country-profile.pdf
 evidence:
   eczema:
   - value: About 10%
@@ -1479,6 +1509,104 @@ evidence:
     source: noca_hip
     locator: Executive summary and Figure 4.1
     measure: service
+  allergic-rhinitis:
+  - value: 555 clinic diagnoses
+    period: 2015–2019
+    population: Patients assessed by one Irish tertiary paediatric ear, nose and throat clinic
+    note: A retrospective single-clinic study of referrals. The number does not establish population prevalence. Some diagnoses were
+      clinical without a confirmed specific allergen.
+    source: irish_paediatric_rhinitis
+    locator: Results, demographics
+    measure: registry
+  ankle-pain:
+  - value: 7%
+    period: '2024'
+    population: Worker injuries reported to the Irish Health and Safety Authority
+    note: Share of reported worker injuries affecting an ankle. It describes the location of selected injuries and excludes ankle
+      pain without a reportable work incident.
+    source: hsa_injuries_2024
+    locator: Figure 1.3, most injured body parts
+    measure: registry
+  bowel-polyps:
+  - value: 849 people
+    period: 2022–2023
+    population: People who had advanced polyps removed through BowelScreen in Ireland
+    note: This is a programme activity figure for removal of advanced polyps. It excludes polyps found outside the programme and
+      undetected cases.
+    source: hse_polyps
+    locator: Programme results
+    measure: service
+  chemotherapy:
+  - value: 147,943 day-patient discharges
+    period: '2024'
+    population: Irish public acute hospital discharges classified as chemotherapy under AR-DRG R63Z
+    note: Repeated visits by one person can count more than once. This administrative category does not establish the number of people
+      treated or distinguish every type of systemic treatment.
+    source: hpo_2024
+    locator: Case Mix Analysis, neoplastic disorders, AR-DRG R63Z
+    measure: hospital
+  concussion-grassroots-sport:
+  - value: 162 suspected concussions in 120 matches
+    period: 2022 season
+    population: Video study of elite ladies’ Gaelic football matches
+    note: Events were identified from video as suspected concussions. They were not confirmed diagnoses, and the figures cannot establish
+      the rate in grassroots sport.
+    source: gaelic_suspected_concussion
+    locator: Abstract, results
+    measure: registry
+  gum-disease:
+  - value: 4.9%
+    period: 2019 estimate
+    population: People aged 15 and older in Ireland
+    note: WHO estimate for severe periodontal disease only. Milder gum inflammation is outside this definition.
+    source: who_oral_ireland
+    locator: Oral disease burden
+    measure: prevalence
+  haemorrhoids-piles:
+  - value: 6,797 recorded principal procedures
+    period: '2023'
+    population: Discharges in HIPE for Irish public acute hospitals
+    note: The figure measures procedures for haemorrhoids. It does not represent how many people had symptoms or used pharmacy or
+      community care.
+    source: hpo_2023
+    locator: Principal procedures on the digestive system, block 0941
+    measure: hospital
+  head-injury-concussion:
+  - value: 423 ICU admissions
+    period: '2023'
+    population: Traumatic brain injury admissions captured by the Irish National ICU Audit
+    note: The admissions involved 372 patients. The count represents severe cases reaching ICU in audit units and cannot measure
+      how common concussion is.
+    source: noca_tbi_2023
+    locator: Chapter 4, trauma and traumatic brain injury
+    measure: hospital
+  intensive-care:
+  - value: 16,394 patients
+    period: '2024'
+    population: Adults captured in 29 ICUs or HDUs across 25 Irish hospitals
+    note: The audit covers almost all public adult critical care activity. It does not describe paediatric intensive care or all
+      private activity.
+    source: noca_icu_2024
+    locator: National audit, coverage and patient counts
+    measure: service
+  palliative-care:
+  - value: 15,253 patients
+    period: '2024'
+    population: Patients supported in their own place of residence by specialist palliative care teams in Ireland
+    note: The HSE reports hospital and hospice activity separately. This figure describes the home or residence setting and does
+      not count everyone who received palliative care.
+    source: hse_palliative_2024
+    locator: Service activity by setting
+    measure: service
+  scabies:
+  - value: 51 notified outbreaks
+    period: '2024'
+    population: Outbreaks reported to HPSC in Ireland
+    note: Outbreaks include more than one case. This figure does not describe the total number of people with scabies or include
+      every household infection.
+    source: hpsc_scabies_2024
+    locator: Irish trends and outbreaks
+    measure: notifications
 guides:
   asthma:
     aliases: wheezing reactive airways
@@ -6221,3 +6349,1266 @@ guides:
       worsens or you suspect a wound problem.
     sources:
       Clinical guidance and further reading: https://www.noca.ie/audits/irish-national-orthopaedic-register/
+  abscess:
+    aliases: abscess skin abscess pus lump drainage painful swelling
+    summary: An abscess is a collection of pus. An enlarging or painful lump, particularly with fever, needs a clinician to assess
+      whether it should be drained.
+    evidence_gap: Abscesses can be recorded under different sites and diagnoses. A single Irish rate covering all internal and external
+      abscesses was not found.
+    symptoms:
+    - A skin abscess can be warm, tender and swollen, with a soft middle or leakage. An abscess inside the body can cause different
+      symptoms depending on the site.
+    causes:
+    - Infection can lead to pus collecting rather than draining away. Some abscesses form after skin injury or surgery, and others
+      develop near a tooth or deeper inside the body.
+    diagnosis:
+    - A clinician examines an external lump and checks for signs of infection. Internal abscesses may need imaging. Tell them about
+      diabetes, weakened immunity or repeated episodes.
+    care:
+    - A clinician can drain accessible collections when appropriate. Antibiotics may be needed when there are signs of spreading
+      infection or certain other risks. Do not try to drain it at home.
+    complications:
+    - Infection can spread locally or into the bloodstream. Some types of abscess recur if the cause remains in place, such as a
+      dental source.
+    help:
+    - Seek prompt advice for a growing painful lump or one with fever, spreading redness or drainage. Seek emergency help for collapse,
+      confusion or severe breathing difficulty.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/abscess/
+  allergic-rhinitis:
+    aliases: allergic rhinitis dust mite pet allergy sneezing blocked nose nasal allergy
+    summary: Allergic rhinitis causes recurring sneezing, itching or a blocked nose after exposure to an allergen. The timing can
+      help distinguish seasonal pollen symptoms from year-round triggers.
+    symptoms:
+    - Sneezing, a runny or stuffy nose and itchy eyes are common. Disturbed sleep can make children tired or irritable. Symptoms
+      may recur in certain places or after contact with pets.
+    causes:
+    - The immune system reacts to particles such as pollen, house dust mites or animal dander. The nose becomes inflamed. Allergic
+      and non-allergic causes of a blocked nose can occur together.
+    diagnosis:
+    - A clinician asks about timing, places, pets and other allergies. Skin or blood tests may help if the trigger is unclear or
+      if the result would change management.
+    care:
+    - A pharmacist or GP can discuss antihistamines, nasal steroid sprays or saline. Ask how to use a spray correctly. A specialist
+      may discuss further treatment if symptoms remain difficult to control.
+    complications:
+    - Persistent congestion can disturb sleep and affect work or school. People with asthma should mention changes in breathing alongside
+      nasal symptoms.
+    help:
+    - Contact your GP if symptoms interfere with sleep, remain one-sided or do not respond to usual pharmacy care. Seek urgent help
+      if breathing suddenly becomes difficult.
+  ankle-pain:
+    aliases: ankle pain sore ankle ankle sprain swollen ankle walking
+    summary: Ankle pain may follow a twist or build up with activity. A change in shape or difficulty bearing weight after injury
+      needs prompt assessment.
+    symptoms:
+    - Notice where pain is strongest and whether swelling, bruising, warmth or weakness accompanies it. Pain on the outside after
+      a twist differs from soreness behind the heel or a red, hot joint.
+    causes:
+    - Common causes include sprains, tendon irritation, arthritis or fractures. A new hot swollen joint with no clear injury can
+      have a different cause.
+    diagnosis:
+    - A clinician examines movement, tenderness and how well you can stand or walk. The location and cause help decide whether an
+      X-ray, blood tests or another test is required.
+    care:
+    - Reduce painful activity at first and keep gentle movement as tolerated. A clinician can advise on support, pain relief and
+      exercises once serious injury has been excluded.
+    complications:
+    - Instability after a previous injury can increase the chance of another sprain. Long-lasting swelling, locking or continuing
+      inability to walk normally can need review.
+    help:
+    - Seek prompt advice if the ankle looks deformed, you cannot bear weight or it is red and hot with fever. See your GP or physiotherapist
+      if pain persists.
+  athletes-foot:
+    aliases: athlete's foot tinea pedis itchy feet fungal infection toes
+    summary: Athlete's foot often causes itching or cracked skin between the toes. Keep the area dry and ask a pharmacist about a
+      suitable antifungal treatment.
+    evidence_gap: Many cases are treated without a prescription. Irish pharmacy sales cannot identify who had athlete's foot or distinguish
+      it from other fungal infections.
+    symptoms:
+    - The skin can peel, crack or look moist and whitish between the toes. Some people develop dry scaling on the sole or itchy blisters.
+      Other conditions can look similar.
+    causes:
+    - Fungi grow more easily in warm damp areas. The infection can spread by contact with affected skin or shared surfaces. Footwear
+      that keeps feet damp can contribute.
+    diagnosis:
+    - A pharmacist or GP may recognise a typical pattern. Persistent or atypical symptoms can need a skin sample or assessment for
+      another cause, such as eczema.
+    care:
+    - Dry carefully between the toes, change socks and use the treatment for the directed duration. Ask about footwear and treatment
+      choices if you have diabetes or poor circulation.
+    complications:
+    - Cracked skin can let bacteria in. The fungus can also spread to nails or other skin. A hot swollen foot or worsening pain needs
+      assessment.
+    help:
+    - Ask for advice if the rash persists or keeps coming back. Get prompt help for a hot, red or swollen foot, particularly with
+      diabetes or fever.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/athletes-foot/
+  bleeding-from-the-bottom-rectal-bleeding:
+    aliases: rectal bleeding bleeding from bottom blood in stool bright red black stool
+    summary: Blood in or on the stool can have several causes. Tell your GP about new or unexplained bleeding, even if it stops by
+      itself.
+    emergency: If bleeding is heavy or continuous and you feel faint, confused or collapse, call
+    evidence_gap: Irish colorectal cancer and hospital bleeding figures describe selected diagnoses or severe episodes. They do not
+      count all rectal bleeding in the community.
+    symptoms:
+    - Blood may be bright red on wiping, mixed with stool or dark. Black, tarry stool can signal bleeding higher in the digestive
+      tract. Tell the clinician about pain, change in bowel habit or weight loss.
+    causes:
+    - Piles or a small tear can bleed, but inflammation, a polyp, a bowel condition or cancer may also be responsible. Colour and
+      amount give clues but cannot confirm the cause.
+    diagnosis:
+    - A clinician asks about symptoms and medicines and can examine the area. Blood tests, stool tests or a bowel investigation may
+      be appropriate depending on the findings.
+    care:
+    - Treatment depends on the cause. Keep track of when bleeding occurs and whether other symptoms change. Ask what to do if bleeding
+      returns while waiting for an appointment.
+    complications:
+    - Repeated bleeding can cause anaemia, and a large bleed can affect circulation. Some causes can be harder to treat if diagnosis
+      is delayed.
+    help:
+    - Arrange GP assessment for new or unexplained bleeding. Seek urgent care for heavy bleeding, tarry stools, severe pain or dizziness,
+      even if you already have piles.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/bleeding-from-the-bottom-rectal-bleeding/
+  boils-carbuncles:
+    aliases: boils carbuncles skin abscess furuncle staph pus lump
+    summary: A boil is a painful skin lump that may fill with pus. Several boils joined together form a carbuncle and may need medical
+      treatment.
+    evidence_gap: Irish hospital reports on skin abscesses and bacterial infections do not capture boils managed at home or reliably
+      identify carbuncles separately.
+    symptoms:
+    - A boil can begin as a firm tender lump that grows and develops a soft centre or leaks. A carbuncle is often larger or deeper
+      and can be accompanied by fever.
+    causes:
+    - Bacteria can enter around hair follicles, especially in irritated skin. Repeated lumps in skin folds can also point to a different
+      condition such as hidradenitis suppurativa.
+    diagnosis:
+    - A clinician checks size, location, surrounding skin and signs of illness. They may take a swab if infection recurs or treatment
+      is not working as expected.
+    care:
+    - A clean warm compress may help a small boil. Avoid squeezing it. A clinician may need to drain a larger collection and decide
+      if an antibiotic is appropriate.
+    complications:
+    - Infection can spread into deeper skin. Boils around the face, spreading redness or repeated episodes can need particular assessment.
+    help:
+    - Get advice for spreading redness, fever, a boil on the face, or a boil in someone with diabetes or weakened immunity. Talk
+      to a GP about repeated episodes.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/boils-carbuncles/
+  bowel-polyps:
+    aliases: bowel polyps colon adenoma serrated polyp colonoscopy biopsy
+    summary: Bowel polyps are growths in the lining of the bowel, often found during colonoscopy. The type, size and number influence
+      whether you need further checks.
+    symptoms:
+    - Most polyps cause no symptoms. Some can bleed or affect bowel habits. Symptoms such as bleeding or unexplained weight loss
+      still need assessment for other causes.
+    causes:
+    - A polyp forms when cells in the bowel lining grow in an unusual pattern. Some types are more likely than others to become cancer
+      over a number of years.
+    diagnosis:
+    - A colonoscopy can identify and often remove polyps. A lab examines the removed tissue so clinicians know its type and whether
+      further treatment or follow-up is needed.
+    care:
+    - Many polyps can be removed during colonoscopy. A difficult location or a larger polyp may require a specialist procedure. Ask
+      when your results will be available.
+    complications:
+    - New polyps can develop later, and not everyone needs repeat colonoscopy at the same interval. Your follow-up depends on what
+      was found and your broader risk.
+    help:
+    - Check who will explain the pathology result and any follow-up. Get urgent advice for heavy bleeding, severe pain or fever after
+      removal.
+  carpal-tunnel-syndrome:
+    aliases: carpal tunnel syndrome CTS wrist tingling numb fingers median nerve night
+    summary: Carpal tunnel syndrome can cause tingling or numbness in the hand, often at night. Persistent hand weakness needs a
+      GP review.
+    evidence_gap: Irish carpal tunnel surgery counts are a measure of procedures. They exclude people with milder symptoms and cannot
+      establish population prevalence.
+    symptoms:
+    - Tingling commonly affects the thumb, index and middle fingers and part of the ring finger. It may wake you at night. Some people
+      drop objects or find grip less reliable.
+    causes:
+    - The median nerve passes through a narrow space at the wrist. Swelling or other changes can compress it. Pregnancy, diabetes
+      and some other conditions can increase risk.
+    diagnosis:
+    - A clinician assesses which fingers are affected and examines strength and sensation. Nerve tests can help when the pattern
+      is unclear or surgery is being considered.
+    care:
+    - A night splint can help some people. A clinician may discuss changes to activities, an injection or a procedure to relieve
+      pressure if symptoms persist.
+    complications:
+    - Long-lasting compression can affect hand strength and feeling. Recovery may take longer when symptoms were severe before treatment.
+    help:
+    - Ask your GP about persistent tingling, weakness or objects slipping from your hand. Get reassessed if symptoms worsen despite
+      the treatment plan.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/carpal-tunnel-syndrome/
+  chemotherapy:
+    kind: procedure
+    aliases: chemotherapy chemo cancer treatment systemic anticancer therapy infusion tablets
+    summary: Chemotherapy can treat cancer by damaging cancer cells or preventing them from dividing. Ask your oncology team what
+      the treatment is meant to achieve and which symptoms require immediate advice.
+    symptoms:
+    - It may be given to shrink a cancer, reduce the chance of it returning or control symptoms. Treatment recommendations depend
+      on the cancer, the person's health and past treatment.
+    causes:
+    - Chemotherapy is a group of medicines rather than a single drug. It can be given through a vein or by mouth, often in cycles.
+      Different regimens can have different side effects.
+    diagnosis:
+    - Before treatment, the team reviews medicines and may check blood counts, kidneys or other measurements. Ask about fertility,
+      vaccination and what to do if you feel unwell between visits.
+    care:
+    - Staff confirm your regimen and give instructions for taking medicines safely. If you attend a day unit, check how long the
+      visit is expected to take and whether you need someone to accompany you.
+    complications:
+    - Low blood counts can increase the risk of infection. Fever or sudden illness during treatment can be urgent. Other side effects
+      depend on the regimen and should be discussed early.
+    help:
+    - Use the emergency contact or temperature threshold your treatment team gave you. Contact them promptly if you feel unwell even
+      if you are unsure that treatment caused it.
+  concussion-grassroots-sport:
+    aliases: sport concussion grassroots GAA rugby football return to play head injury
+    summary: Remove a player from activity immediately if concussion is suspected. They should not return on the same day, even if
+      they say they feel better.
+    symptoms:
+    - A player may appear dazed, unsteady or slow to respond. They may have headache, nausea or memory problems. Symptoms can develop
+      after leaving the pitch.
+    causes:
+    - A blow to the head or body can transmit force to the brain. A second injury during recovery can worsen the situation, so avoid
+      testing the player by sending them back into play.
+    diagnosis:
+    - A clinician should assess suspected concussion. Tell them how the injury happened, what others noticed and whether there were
+      previous concussions. Club staff should follow their sport's procedures.
+    care:
+    - Follow the clinician's and sport's gradual return plan. Progress through everyday activity and later training before contact.
+      The HSE advises avoiding contact sport for at least three weeks after a head injury.
+    complications:
+    - Symptoms can affect sleep, classes, work or training. A slower recovery may need tailored support. New severe symptoms or rapid
+      deterioration signal a need for emergency care.
+    help:
+    - Seek medical assessment for suspected concussion. Get emergency help for a seizure, reduced responsiveness, repeated vomiting
+      with deterioration or signs of a neck or serious head injury.
+  conjunctivitis:
+    aliases: conjunctivitis pink eye sticky discharge infected eye viral bacterial allergic
+    summary: Conjunctivitis can make an eye gritty, red, watery or sticky. Severe pain, light sensitivity or reduced vision warrant
+      assessment for another condition.
+    evidence_gap: Many cases resolve at home and do not enter national surveillance. A comparable Irish estimate that includes viral,
+      bacterial and allergic cases was not identified.
+    symptoms:
+    - The eyes may water or develop discharge that sticks the lashes together. Allergy often causes itching and affects both eyes.
+      A contact lens wearer with new redness needs prompt advice.
+    causes:
+    - Viruses, bacteria and allergens can inflame the thin membrane over the eye and inside the lids. Infectious conjunctivitis can
+      pass through hands or shared items.
+    diagnosis:
+    - A pharmacist or clinician considers discharge, itch, pain, vision and which eye is affected. Tell them about contact lenses,
+      injury, unusual exposure or a newborn with red eyes.
+    care:
+    - Wash hands, gently clear discharge and avoid sharing towels. Treatment depends on the cause, and antibiotics do not help viral
+      or allergic irritation. Stop wearing contact lenses while symptoms are present.
+    complications:
+    - Most uncomplicated cases improve. A painful eye, vision change or sensitivity to light may signal corneal involvement or a
+      different diagnosis and needs urgent assessment.
+    help:
+    - Seek urgent advice for eye pain, altered vision, light sensitivity, redness with contact lenses or red and sticky eyes in a
+      newborn.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/conjunctivitis/
+  constipation:
+    aliases: constipation hard stool infrequent bowel movements straining laxative
+    summary: Constipation can mean hard stools, difficulty passing them or going less often than usual. Persistent change, bleeding
+      or unexplained weight loss needs a GP review.
+    evidence_gap: Medication sales do not distinguish occasional constipation from persistent disease. A consistent Irish estimate
+      across adults living at home and in care was not identified.
+    symptoms:
+    - Stool can be dry or lumpy and take effort to pass. You may feel bloated or as though the bowel has not emptied fully. Compare
+      the pattern with what is normal for you.
+    causes:
+    - Fibre, fluid, activity, changes in routine and medicines can influence bowel movement. Some health conditions affect how the
+      bowel works or empties.
+    diagnosis:
+    - A GP asks about timing, medicines, diet and any warning signs. An examination or tests may be needed if the change is persistent,
+      severe or unfamiliar.
+    care:
+    - Gradually increasing fibre when appropriate, drinking enough and using a regular toilet routine can help. A pharmacist or GP
+      can advise on a suitable laxative where needed.
+    complications:
+    - Long-standing constipation can cause fissures, piles or a build-up of stool. Loose leakage can sometimes occur around trapped
+      stool and needs assessment.
+    help:
+    - Seek advice if symptoms persist or you have new bleeding or weight loss. Severe pain, vomiting, a swollen abdomen or being
+      unable to pass stool or wind may need urgent care.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/constipation/
+  constipation-children:
+    aliases: constipation children hard stool child withholding soiling toilet training
+    summary: Children can hold back stool after a painful bowel movement. Early treatment can help break the cycle and make going
+      to the toilet less worrying.
+    evidence_gap: Irish clinic activity does not account for symptoms managed at home or distinguish stool withholding from other
+      causes. A national paediatric prevalence figure was not identified.
+    symptoms:
+    - Stools can be large or hard and difficult to pass. A child may cross their legs, hide or hold on. Small amounts of loose stool
+      can leak around built-up stool.
+    causes:
+    - Pain can lead to avoidance, which makes stool harder. Changes in routine, low fluid or fibre intake and toilet-training difficulties
+      can contribute.
+    diagnosis:
+    - A clinician asks how long symptoms have lasted, what stools look like and how the child is growing. Symptoms from early infancy
+      or signs of poor growth may prompt further investigation.
+    care:
+    - Calm regular toilet time, foot support and positive encouragement can help. A GP may prescribe a laxative plan to clear built-up
+      stool and prevent it building up again.
+    complications:
+    - Pain and soiling can affect confidence, school and sleep. Treatment may need time even after stools become softer, so follow
+      the clinician's plan.
+    help:
+    - Get advice for persistent pain or soiling. Seek urgent review for vomiting with a swollen abdomen, severe pain, poor feeding
+      or significant blood in the stool.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/constipation-children/
+  constipation-pregnancy:
+    aliases: constipation pregnancy hard stool pregnant iron supplement laxative
+    summary: Constipation can become more noticeable during pregnancy. If dietary or routine changes are insufficient, a pharmacist,
+      GP or midwife can discuss treatment suitable for pregnancy.
+    evidence_gap: No comparable Irish estimate was identified for constipation during pregnancy. Rates depend on the stage of pregnancy
+      and which symptom definition a study uses.
+    symptoms:
+    - You may pass hard stools less often or strain more than usual. A small amount of bleeding on wiping can come from piles or
+      a fissure, but bleeding should be discussed if you are unsure of the source.
+    causes:
+    - Hormonal changes can slow bowel movement. The growing womb, changes in activity and some iron supplements can also contribute.
+    diagnosis:
+    - A clinician asks about the pattern, medicines and any pain or bleeding. Tell them if the symptoms differ from earlier constipation
+      or you are unsure whether bleeding is vaginal.
+    care:
+    - Gradually increase suitable fibre and drink enough fluid. Exercise if your maternity team says it is appropriate. Ask before
+      choosing a laxative or stopping prescribed iron.
+    complications:
+    - Straining can worsen piles or cause a tear near the anus. Sharp or severe pain can have another cause and should be assessed.
+    help:
+    - Contact your midwife or GP for persistent symptoms or bleeding. Seek urgent advice if you develop severe abdominal pain, vomiting
+      or possible vaginal bleeding.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/constipation-pregnancy/
+  contact-dermatitis:
+    aliases: contact dermatitis irritant allergic occupational hand eczema patch test
+    summary: Contact dermatitis is a skin reaction to something touching it. The pattern can help identify whether repeated irritation
+      or a contact allergy is involved.
+    evidence_gap: Occupational reports cover selected work-related cases. They cannot establish prevalence of contact dermatitis
+      from all triggers in Ireland.
+    symptoms:
+    - Skin can become itchy, cracked, sore or blistered. Hands are often affected by wet work. With an allergy, a rash may appear
+      after a delay or spread beyond where the substance touched.
+    causes:
+    - Repeated exposure to detergents, water or solvents can damage the skin barrier. An allergic reaction can be triggered by substances
+      such as fragrance, preservatives, metals or products used at work.
+    diagnosis:
+    - A GP reviews where the rash appears and what contacts occur at work and home. A dermatologist may use patch testing when a
+      contact allergy is suspected.
+    care:
+    - Reduce exposure where practical, use moisturisers and ask about appropriate protection. A GP may prescribe treatment for inflammation.
+      Ask occupational health for help if work exposures are involved.
+    complications:
+    - Untreated rash can crack, bleed or become infected. Symptoms can recur if the cause is not identified or contact continues.
+    help:
+    - Contact a GP if the rash persists, affects work or involves the face. Seek prompt advice for rapidly spreading pain, pus or
+      fever.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/contact-dermatitis/
+  dental-abscess:
+    aliases: dental abscess tooth abscess toothache gum swelling dental infection
+    summary: A dental abscess is a pocket of infection around a tooth or gum. It needs urgent dental assessment even if pain eases
+      or pus drains.
+    emergency: If swelling in the mouth or neck makes breathing or swallowing difficult, call
+    evidence_gap: National estimates for tooth decay do not measure dental abscesses. A comprehensive count across Irish dental and
+      emergency services was not identified.
+    symptoms:
+    - Pain may throb and spread to the jaw or ear. There may be gum or face swelling, a bad taste, sensitivity when chewing or fever.
+      A deeper infection can make opening the mouth difficult.
+    causes:
+    - Bacteria can reach the pulp inside a damaged or decayed tooth or enter tissues around a tooth through gum disease. The resulting
+      infection may form a collection of pus.
+    diagnosis:
+    - A dentist checks the tooth, gums and nearby swelling. An X-ray can help find the source. Tell the dentist if you have fever,
+      difficulty swallowing or a weakened immune system.
+    care:
+    - A dentist can drain an abscess and treat the source, for example with root canal treatment or extraction when appropriate.
+      An antibiotic may be needed if infection is spreading or causing general illness.
+    complications:
+    - Infection can spread into the face or neck. A severe infection can threaten the airway. Relief after spontaneous drainage does
+      not mean treatment is complete.
+    help:
+    - Contact a dentist urgently for possible abscess. Go to an emergency department for rapidly spreading swelling or inability
+      to open the mouth, and seek emergency help if breathing or swallowing becomes difficult.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/dental-abscess/
+  dry-eyes:
+    aliases: dry eyes dry eye disease tear film burning gritty eyes screen contact lenses
+    summary: Dry eyes can feel gritty, sore or watery. Redness with pain, light sensitivity or a change in vision needs medical assessment.
+    evidence_gap: Rates depend on whether studies count symptoms, formal diagnoses or abnormalities on testing. A comparable Irish
+      national prevalence estimate was not identified.
+    symptoms:
+    - Both eyes often feel dry or sting, particularly after screen use, in heated rooms or in wind. Blurring may fluctuate. Eyes
+      can also water in response to irritation.
+    causes:
+    - The tear film may evaporate too quickly or the eyes may make too few tears. Eyelid problems, age, some medicines and health
+      conditions can contribute.
+    diagnosis:
+    - A clinician may examine the eyelids and eye surface and ask about medicines, visual tasks and contact lenses. Symptoms that
+      affect one eye or persist despite care deserve review.
+    care:
+    - Taking breaks from screens, avoiding direct airflow and using suitable lubricating drops can help. Ask a pharmacist or optometrist
+      which product suits contact lenses or frequent use.
+    complications:
+    - Severe or long-standing dryness can damage the surface of the eye. Persistent pain, reduced vision or marked sensitivity to
+      light should not be assumed to be ordinary dryness.
+    help:
+    - Seek advice if daily symptoms continue or you need drops regularly. Get urgent assessment for a painful red eye, sudden change
+      in vision or redness with contact lenses.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/dry-eyes/
+  fungal-nail-infection:
+    aliases: fungal nail infection onychomycosis thick discoloured toenail
+    summary: A fungal nail infection can thicken or discolour a nail. Because injuries and other conditions can cause similar changes,
+      a sample may be useful before taking tablets.
+    evidence_gap: Diagnosis based on appearance and laboratory-confirmed onychomycosis give different rates. A directly comparable
+      Irish national estimate was not identified.
+    symptoms:
+    - A nail may turn yellow or white, become brittle or lift from the nail bed. Toenails are affected most often. Some people notice
+      discomfort in shoes.
+    causes:
+    - Fungi can infect the nail, sometimes following athlete's foot. Age, repeated minor injuries and damp footwear can all increase
+      susceptibility.
+    diagnosis:
+    - A pharmacist or GP can assess the nail and consider other causes. A clipping or scraping can check for fungus, particularly
+      before treatment with antifungal tablets.
+    care:
+    - Treatment can involve a nail product or tablets when appropriate. A clinician checks for interactions and whether any monitoring
+      is needed. Healthy nail takes months to grow out.
+    complications:
+    - The infection can recur or spread to other nails. People with diabetes, poor circulation or a painful inflamed toe need individual
+      advice because other foot problems can matter.
+    help:
+    - Give a GP or pharmacist details of any treatment tried and how long nail changes have been present. Seek prompt advice if surrounding
+      skin becomes hot, swollen or painful.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/fungal-nail-infection/
+  gum-disease:
+    aliases: gum disease gingivitis periodontitis bleeding gums periodontal disease loose teeth
+    summary: Bleeding gums can be an early sign of gum disease. A dental examination can check whether inflammation is limited to
+      the gums or has affected the support around the teeth.
+    symptoms:
+    - Gums may bleed when brushing, look swollen or pull back. Bad breath or loose teeth may occur in more advanced disease. Some
+      people have little pain.
+    causes:
+    - Plaque can irritate the gum. When disease progresses beyond the gum, it can damage the tissue and bone supporting teeth. Smoking
+      and diabetes can increase risk.
+    diagnosis:
+    - A dentist or hygienist checks bleeding and measures spaces around teeth. X-rays can help assess bone loss where appropriate.
+    care:
+    - Daily cleaning along the gum line and between teeth is important. Dental treatment can remove deposits above or below the gums.
+      A dentist can arrange specialist care for severe disease.
+    complications:
+    - Once supporting bone has been lost, treatment aims to prevent further damage and keep teeth working. Untreated disease can
+      lead to tooth loosening or loss.
+    help:
+    - Book a dental review for recurring bleeding, pain, swelling or loose teeth. Mention diabetes or smoking and ask the team to
+      show you how to clean difficult areas.
+  haemorrhoids-piles:
+    aliases: haemorrhoids piles anal lump bright red bleeding bowel movement
+    summary: Piles can cause itching, discomfort or bright red blood when passing stool. New bleeding from the bottom needs assessment
+      so other causes can be considered.
+    symptoms:
+    - A person may notice bright blood on paper, itching, a lump or mucus. A suddenly painful lump can occur when a clot forms in
+      an external pile.
+    causes:
+    - Vascular tissue near the anus can swell or move out of place. Straining, constipation and pregnancy can contribute. Other conditions
+      can cause similar bleeding and discomfort.
+    diagnosis:
+    - A GP may examine the area and ask about bowel changes, bleeding and other symptoms. Further tests are sometimes needed to rule
+      out causes higher in the bowel.
+    care:
+    - Softer stools and avoiding straining can reduce symptoms. A pharmacist can advise on short-term treatments. Persistent symptoms
+      may need a specialist procedure.
+    complications:
+    - Bleeding can recur, and painful thrombosis can need assessment. Ongoing bleeding, a change in bowel movements or weight loss
+      should be investigated.
+    help:
+    - Speak to your GP about rectal bleeding or symptoms that do not settle. Get urgent medical help for heavy bleeding, severe pain
+      or feeling faint.
+  hay-fever:
+    aliases: hay fever pollen allergy seasonal allergic rhinitis grass pollen
+    summary: Hay fever is a seasonal pollen allergy. Sneezing, itchy eyes and a blocked nose can flare during certain months or after
+      time outdoors.
+    evidence_gap: Irish studies of rhinitis do not always identify pollen as the cause. The rate for symptoms from all allergens
+      cannot serve as a national hay fever estimate.
+    symptoms:
+    - Symptoms can include itchy eyes, an itchy roof of the mouth, sneezing and clear discharge from the nose. Cough is possible,
+      particularly in someone who also has asthma.
+    causes:
+    - The immune system reacts to pollen. Which months cause trouble depends on the pollen that triggers you and local conditions.
+      Grass, tree and weed pollens have different seasons.
+    diagnosis:
+    - A pharmacist or GP can often recognise a seasonal pattern. Tell them whether symptoms also happen indoors or out of season,
+      which can suggest another trigger.
+    care:
+    - A pharmacist can advise on antihistamines, eye drops or nasal spray. Reducing pollen brought inside on clothes or hair may
+      help. Discuss safety or timing if pregnant, driving or taking other medicines.
+    complications:
+    - Severe symptoms can disrupt sleep, work or study. Asthma may be harder to manage during pollen season. Review a breathing plan
+      with your clinician if needed.
+    help:
+    - Contact your GP if symptoms persist despite treatment or your usual asthma symptoms increase. Seek urgent help for severe asthma
+      symptoms.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/hay-fever/
+  head-injury-concussion:
+    aliases: head injury concussion bump head brain injury vomiting red flags
+    summary: A blow or jolt to the head can cause concussion or a more serious injury. Worsening symptoms after the injury need urgent
+      assessment.
+    emergency: If someone is unconscious, has a seizure or develops new weakness after a head injury, call
+    symptoms:
+    - Headache, dizziness, nausea, sensitivity to light or difficulty concentrating can occur. Loss of consciousness is possible
+      but is not needed for concussion. Repeated vomiting, weakness or increasing drowsiness are warning signs.
+    causes:
+    - A sudden impact or movement can disrupt how the brain works. Bleeding inside the skull can also occur. A person's age, how
+      the injury happened and medicines affecting clotting can influence risk.
+    diagnosis:
+    - A clinician asks what happened and checks alertness, memory, movement and other signs. A scan may be needed when there are
+      signs of bleeding or higher risk. A normal scan can still be consistent with concussion.
+    care:
+    - Follow the hospital or GP's instructions for observation and return to everyday activity. After the initial rest period, activity
+      can resume gradually as advised. Avoid another head impact during recovery.
+    complications:
+    - Symptoms can emerge or worsen after an apparently minor injury. Some people have persistent headaches, dizziness or difficulty
+      with concentration, and need further support.
+    help:
+    - Seek urgent help for worsening headache, repeated vomiting, new confusion or unusually difficult waking. Tell clinicians if
+      the injured person takes a medicine that increases bleeding risk.
+  hives:
+    aliases: hives urticaria wheals itchy rash angioedema
+    summary: Hives are raised patches that can move or change shape over hours. Breathing problems, faintness or swelling of the
+      throat may signal a severe reaction.
+    emergency: If hives occur with throat swelling, difficulty breathing or faintness, call
+    evidence_gap: A national Irish estimate matching the duration and diagnosis of urticaria was not identified. General allergies
+      surveys do not isolate hives.
+    symptoms:
+    - Wheals can be itchy or sting. Individual patches often fade while others appear. Deeper swelling can affect lips, eyelids or
+      other areas.
+    causes:
+    - The skin releases histamine and other substances that increase swelling. Triggers can include infection, medicines, heat, pressure
+      or a food allergy. No clear trigger is found in many cases.
+    diagnosis:
+    - A clinician asks how long patches last and whether there is swelling or illness. A photo can help if the rash has changed.
+      Testing depends on the history.
+    care:
+    - A pharmacist or GP can advise on an antihistamine. Keep a brief record of recurring symptoms if helpful. Persistent hives may
+      need a treatment review or specialist advice.
+    complications:
+    - Swelling of the airway is an emergency. Repeated hives can also interrupt sleep or daily activities. A widespread rash with
+      fever or bruising can have a different cause.
+    help:
+    - Seek emergency help for signs of severe allergy or airway swelling. Ask a GP about hives that persist, recur or are accompanied
+      by fever or painful skin.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/hives/
+  home-oxygen-therapy:
+    kind: service
+    aliases: home oxygen therapy long term oxygen concentrator portable oxygen lung condition
+    summary: Home oxygen is prescribed for some people whose blood oxygen is persistently low. The team will explain when to use
+      it and how to handle the equipment safely.
+    evidence_gap: Disease prevalence and oxygen-device supply measure different things. A national count covering all home oxygen
+      prescriptions across Irish services was not identified.
+    symptoms:
+    - Specialists may assess people with severe lung disease or another condition affecting oxygen levels. Being breathless by itself
+      does not establish that extra oxygen will help.
+    causes:
+    - The equipment provides oxygen through small tubes at the nostrils or another device. Flow rate and the number of hours used
+      depend on the person's measured needs.
+    diagnosis:
+    - Ask how the prescription was set and whom to contact if you travel or lose power. Tell the supplier and team if anyone smokes
+      in the household or if there are other fire risks.
+    care:
+    - The service or supplier sets up equipment and explains how to use it. Follow the prescribed flow rate, look after the tubing
+      and report problems rather than adjusting it yourself.
+    complications:
+    - Oxygen supports burning. Keep it away from smoking, flames and heat sources and follow supplier safety instructions. Tubing
+      can also cause trips if not positioned carefully.
+    help:
+    - Contact the prescribing team or supplier if the equipment fails or your needs change. Severe new breathlessness, confusion
+      or blue lips needs emergency assessment.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/home-oxygen-therapy/
+  hormone-therapy-for-cancer:
+    kind: procedure
+    aliases: hormone therapy cancer endocrine therapy breast prostate tamoxifen hormonal treatment
+    summary: Hormone therapy can slow cancers that depend on hormones to grow. The medicine, expected benefit and length of treatment
+      vary with the type of cancer.
+    evidence_gap: Cancer incidence figures do not show who received hormone therapy. A prescription count would also include repeat
+      supplies and cannot establish the national number treated.
+    symptoms:
+    - It can be considered for some breast and prostate cancers. It may reduce recurrence or help control disease. A clinician can
+      explain which features of the cancer make it appropriate.
+    causes:
+    - Medicines can lower hormone production or prevent a hormone from acting on cancer cells. The treatment is different from hormone
+      replacement used for menopause symptoms.
+    diagnosis:
+    - Discuss your medicines, bone health, fertility and side-effect concerns before starting. Ask how the team will check that the
+      treatment is doing what it is intended to do.
+    care:
+    - Depending on the medicine, treatment may involve regular tablets, injections or a procedure. Keep appointments and ask the
+      team how to handle a delayed dose.
+    complications:
+    - Hot flushes, sexual symptoms, fatigue or bone effects can occur. Particular drugs have specific risks. Report side effects
+      so the team can discuss ways to manage them or consider alternatives.
+    help:
+    - Contact your cancer team if side effects are affecting daily life or you are thinking about stopping. Follow their guidance
+      for symptoms that require urgent medical attention.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/hormone-therapy-for-cancer/
+  immunotherapy:
+    kind: procedure
+    aliases: cancer immunotherapy checkpoint inhibitor immune side effects oncology
+    summary: Cancer immunotherapy uses the immune system to help fight cancer. Some side effects can start during or after treatment
+      and need early assessment.
+    evidence_gap: Irish hospital reports may group immunotherapy with other systemic cancer treatment. A national count covering
+      immunotherapy alone across all settings was not identified.
+    symptoms:
+    - Immunotherapy is suitable for some cancers depending on their type, stage and test results. An oncology team can explain where
+      it fits in the plan and what benefit is realistic.
+    causes:
+    - Some immunotherapies take the brakes off immune cells so they can respond to cancer. Different products work in different ways
+      and are not interchangeable.
+    diagnosis:
+    - Ask the team about planned scans and blood tests. Tell them about autoimmune conditions, medicines and any previous immunotherapy.
+      Keep a record or alert card with the name of your treatment.
+    care:
+    - You may receive the medicine through a vein at planned visits. The team checks for reactions and will review symptoms between
+      visits. Bring details of new symptoms to each review.
+    complications:
+    - An activated immune system can cause inflammation in organs such as the bowel, lungs, liver, skin or glands. Report unusual
+      diarrhoea, cough, breathlessness or severe fatigue promptly, even after treatment ends.
+    help:
+    - Follow your oncology team's urgent contact advice and tell other clinicians that you receive or previously received immunotherapy.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/immunotherapy/
+  indigestion:
+    aliases: indigestion dyspepsia upper abdominal fullness belching after eating
+    summary: Indigestion describes discomfort around the upper abdomen or chest after eating. Persistent symptoms or difficulty swallowing
+      should be reviewed.
+    evidence_gap: Self-reported indigestion and reflux disease use different definitions. Irish data for acid-suppressing medicines
+      do not count all people with indigestion.
+    symptoms:
+    - You may feel full soon after eating, bloated, nauseated or unable to finish a usual meal. Some people also have heartburn or
+      frequent belching.
+    causes:
+    - Reflux, some medicines, an ulcer or changes in how the stomach works can contribute. Several causes can feel similar, so the
+      other symptoms and how long they have lasted matter.
+    diagnosis:
+    - A clinician asks when symptoms occur and checks for weight loss, anaemia, bleeding or swallowing problems. Depending on findings,
+      they may arrange a test for H. pylori or further investigation.
+    care:
+    - A pharmacist can help with short-term symptom relief. Smaller meals or adjusting individual triggers can help some people.
+      A GP can review acid medicines and possible causes if symptoms recur.
+    complications:
+    - Persistent indigestion often has a manageable cause, but can sometimes be a sign of a condition that needs treatment. New chest
+      pain with pressure or sweating needs separate urgent assessment.
+    help:
+    - Contact your GP if symptoms keep returning or if you have difficulty swallowing, vomiting or unexplained weight loss. Seek
+      emergency help for signs of a heart attack or major bleeding.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/indigestion/
+  intensive-care:
+    kind: service
+    aliases: intensive care ICU critical care HDU ventilator intensive care unit
+    summary: Intensive care provides close monitoring and treatment for people who are critically ill or need specialised support
+      after an operation or injury.
+    symptoms:
+    - A person may need intensive care when breathing, circulation or another organ needs support. Staff may also admit a person
+      for close observation when their condition could change quickly.
+    causes:
+    - ICU staff use monitors and treatments tailored to each person. Some need a breathing machine, medicines to support circulation,
+      kidney support or more than one form of treatment.
+    diagnosis:
+    - Families can tell staff about the person's usual health, medicines and wishes if they are unable to speak. Ask when updates
+      are available and how to get support with decisions.
+    care:
+    - Staff will explain what tubes and monitors are for and what changes they are watching. Sedation, illness and lack of sleep
+      can affect the person's awareness and ability to communicate.
+    complications:
+    - Recovery can continue for months. Weakness, sleep disturbance or memory problems can occur after critical illness. Some hospitals
+      offer follow-up or rehabilitation after discharge.
+    help:
+    - Ask the nursing or medical team for advice on visiting, family meetings or the plan for transfer out of the unit. Report ongoing
+      symptoms to the GP or follow-up team.
+  mastectomy:
+    kind: procedure
+    aliases: mastectomy breast removal breast cancer surgery reconstruction lymph nodes
+    summary: Mastectomy removes breast tissue and can be part of breast cancer treatment or risk reduction. Your team can discuss
+      the extent of surgery and reconstruction options.
+    evidence_gap: Irish hospital tables can report specific mastectomy types. A single count covering all types across both public
+      and private settings was not identified.
+    symptoms:
+    - The treatment plan depends on cancer size and location, risk, past treatment and your preferences. Some people can choose between
+      breast-conserving surgery and mastectomy.
+    causes:
+    - A surgeon removes breast tissue and may assess or remove nearby lymph nodes. Reconstruction can sometimes take place at the
+      same operation or later, depending on your circumstances.
+    diagnosis:
+    - Ask about reconstruction, going flat, drains, pain relief and help at home. Tell the team about blood thinners, other medicines
+      and any earlier surgery or radiotherapy.
+    care:
+    - Surgery takes place under anaesthesia. Staff help you manage pain and teach exercises as appropriate. The tissue removed is
+      examined to guide the next stage of care.
+    complications:
+    - A wound infection, fluid collection or persistent pain can occur. Lymph node surgery can contribute to arm swelling. Report
+      worsening redness, fever or a problem with the wound.
+    help:
+    - Keep the appointment to review pathology and discuss further treatment. Ask who to contact about a drain, movement problems,
+      a prosthesis or reconstruction follow-up.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/mastectomy/
+  moles:
+    aliases: mole moles changing mole ABCDE melanoma skin check
+    summary: Most moles are harmless. A new or changing mark, especially one that looks different from your other moles, should be
+      assessed by a GP.
+    evidence_gap: Cancer registry numbers describe diagnosed skin cancers. They cannot estimate how many people have ordinary moles
+      or how many moles someone has.
+    symptoms:
+    - Look for a changing shape, uneven edges, several colours or a mark that grows, itches or bleeds. Melanoma can also occur in
+      a new mark and may be small.
+    causes:
+    - Moles are groups of pigment-producing cells. Genetics and sunlight affect skin and mole patterns. Changes can have a benign
+      cause but may warrant a closer check.
+    diagnosis:
+    - A GP examines the skin and considers recent changes. They may refer you for specialist examination or removal and lab testing
+      if a mole looks suspicious.
+    care:
+    - Take a dated photograph if a change has occurred, while arranging a clinical check. Use sun protection. Do not remove or treat
+      an undiagnosed mole yourself.
+    complications:
+    - A suspicious lesion may be skin cancer, and prompt assessment helps guide treatment. A stable mole can still need review if
+      new symptoms appear.
+    help:
+    - Book a GP visit if a mark is new and unusual, changes or bleeds. Tell the GP about prior skin cancer or close family history
+      if relevant.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/moles/
+  mouth-ulcers:
+    aliases: mouth ulcers canker sores aphthous ulcer sore inside mouth
+    summary: Most mouth ulcers heal within a couple of weeks. An ulcer that lasts more than three weeks needs examination by a dentist
+      or GP.
+    evidence_gap: Irish oral cancer or dental attendance figures do not capture temporary mouth ulcers. A national estimate based
+      on consistent definitions was not identified.
+    symptoms:
+    - A small round sore can hurt when eating or drinking. Several can occur at once. Persistent ulcers, an unusual patch or an ulcer
+      with a lump can have another cause.
+    causes:
+    - Minor injury from biting, a sharp tooth or braces can cause an ulcer. Recurrent ulcers can also be associated with certain
+      illnesses, medicines or nutrient deficiencies.
+    diagnosis:
+    - A dentist or GP examines the area and asks about duration, recurrence and other symptoms. Ongoing or unexplained ulcers may
+      need investigations or a specialist referral.
+    care:
+    - Avoid foods or products that make the area sting. A pharmacist can advise on suitable pain relief. A dentist can check whether
+      a sharp edge or appliance is rubbing.
+    complications:
+    - Pain can make it difficult to eat or drink. A persistent sore can occasionally be a sign of a serious condition, so arrange
+      review even if it is painless.
+    help:
+    - Contact a dentist or GP if the ulcer lasts longer than three weeks, is unusually large or keeps returning. Seek advice sooner
+      if you are finding it difficult to drink.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/mouth-ulcers/
+  nasal-polyps:
+    aliases: nasal polyps nose blockage loss of smell chronic sinus disease
+    summary: Nasal polyps are soft growths in the nose or sinuses. A persistent blocked nose or loss of smell is a reason to discuss
+      an examination with a clinician.
+    evidence_gap: The available Irish figures for sinus disease or surgery do not measure how many people have confirmed nasal polyps.
+      A national prevalence estimate was not found.
+    symptoms:
+    - Congestion, reduced smell or taste, runny nose or mucus draining into the throat may develop gradually. Polyps often involve
+      both sides of the nose.
+    causes:
+    - Long-term inflammation can cause swollen lining to form polyps. Some people also have asthma or other conditions that affect
+      the airways.
+    diagnosis:
+    - A GP may look inside the nose. A specialist can examine it with a small camera or use imaging to check extent. Persistent one-sided
+      symptoms or bleeding need separate assessment.
+    care:
+    - Nasal steroid treatment can shrink some polyps. A clinician may offer other medicines or surgery for more severe disease. Ask
+      about continued treatment after surgery.
+    complications:
+    - Polyps can return after treatment. Ongoing congestion or loss of smell can affect sleep, eating and safety, such as noticing
+      smoke or spoiled food.
+    help:
+    - Speak to your GP if symptoms persist or return. Seek prompt assessment for repeated nosebleeds, one-sided blockage, swelling
+      around an eye or trouble with vision.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/nasal-polyps/
+  palliative-care:
+    kind: service
+    aliases: palliative care hospice specialist palliative home care symptom control
+    summary: Palliative care supports people living with a serious, life-limiting illness and those close to them. It can begin alongside
+      treatment for the underlying illness.
+    symptoms:
+    - A person can benefit when pain, breathing problems, nausea or worry affect life, or when they need help with care decisions.
+      People with conditions other than cancer can also receive support.
+    causes:
+    - General palliative care can be provided by a GP or usual team. Specialist support may help with more complex symptoms or decisions.
+      Care can take place at home, in hospital or in a hospice.
+    diagnosis:
+    - Ask your team what you most want to improve and who will coordinate care. Discuss how support works outside normal hours and
+      which services are available locally.
+    care:
+    - Staff may review symptoms and medicines and talk through practical, emotional and family needs. They can help with a plan if
+      symptoms change and discuss preferences about where care is provided.
+    complications:
+    - Needs may change over time. Ask whom to contact when a home plan is becoming difficult or if carers need more help. Bereavement
+      support can be available to families.
+    help:
+    - Ask your GP or treating team about referral or advice. Use the contact plan for severe worsening symptoms and tell new clinicians
+      what matters most to the person receiving care.
+  plantar-fasciitis:
+    aliases: plantar fasciitis heel pain first steps plantar fascia sore arch
+    summary: Plantar fasciitis commonly causes heel pain on the first steps after getting out of bed. It can also flare after standing
+      or walking for a long time.
+    evidence_gap: Figures for heel pain include several diagnoses. A national estimate for confirmed plantar fasciitis in Ireland
+      was not identified.
+    symptoms:
+    - The underside of the heel may hurt when you first stand or after sitting. It can ease as you move and return after more activity.
+      Some people also feel pain along the arch.
+    causes:
+    - The tissue supporting the arch and attaching to the heel can become irritated when loading changes. Footwear, repetitive standing,
+      running or a tight calf may contribute.
+    diagnosis:
+    - A clinician checks the pain pattern and may examine the foot and ankle. A scan is often unnecessary unless features such as
+      significant trauma or unusual pain suggest another cause.
+    care:
+    - Supportive shoes, adapting activity and suitable calf or foot stretches may help. A physiotherapist or podiatrist can advise
+      how to rebuild activity gradually.
+    complications:
+    - Symptoms often improve over months but can persist. Increasing pain at rest, numbness or swelling may point to a problem needing
+      a different assessment.
+    help:
+    - Seek review if pain prevents ordinary activity or does not improve. Arrange prompt assessment after a significant injury or
+      if you cannot put weight on the foot.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/plantar-fasciitis/
+  red-eye:
+    aliases: red eye painful red eye blurred vision contact lens eye redness
+    summary: A red eye can come from irritation or infection. Pain, vision changes, light sensitivity or a red eye in a contact lens
+      wearer needs prompt assessment.
+    evidence_gap: Red eye is a symptom. Irish diagnosis rates for conjunctivitis or other eye disease cannot establish how often
+      it occurs from all causes.
+    symptoms:
+    - Look for pain, light sensitivity, discharge, gritty feeling or blurred vision. A red patch with no pain or visual change can
+      have a different cause from diffuse redness.
+    causes:
+    - Eye redness can reflect a change on the surface, a small burst blood vessel or inflammation deeper in the eye. Contact lenses
+      and eye injuries increase the need for careful assessment.
+    diagnosis:
+    - A clinician checks vision, symptoms, recent injury and how the surface of the eye looks. They may use dye or a specialist examination
+      to look for damage to the cornea.
+    care:
+    - Remove contact lenses and avoid wearing them until you have appropriate advice. Use the treatment recommended for your cause.
+      For a chemical splash, start rinsing immediately and seek emergency guidance.
+    complications:
+    - Some causes threaten vision if treatment is delayed. Worsening pain, reduced vision or increasing light sensitivity needs re-evaluation,
+      even if the redness looks mild.
+    help:
+    - Seek urgent assessment for pain, visual changes, light sensitivity, injury or redness with contact lenses. For a chemical exposure
+      or penetrating injury get emergency help.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/red-eye/
+  ringworm:
+    aliases: ringworm tinea fungal skin ring rash scalp ringworm
+    summary: Ringworm is a fungal skin infection that can appear as a scaly, expanding patch. Infection on the scalp usually needs
+      different treatment from a patch on the body.
+    evidence_gap: Irish data for fungal infections treated in hospital do not cover most ringworm cases, which are often managed
+      by pharmacies or general practice.
+    symptoms:
+    - A patch may itch and have a more raised or scaly edge. The centre can look clearer but this pattern is not always present.
+      Scalp infection may cause scaling and broken hairs.
+    causes:
+    - Skin fungi can spread by close contact with people or animals or through shared items. The rash is caused by a fungus rather
+      than a worm.
+    diagnosis:
+    - A pharmacist or GP checks the appearance and where it is. Sampling can help when diagnosis is uncertain, symptoms persist or
+      the scalp is involved.
+    care:
+    - A pharmacist can advise on topical treatment for suitable body patches. Scalp infection often needs prescription treatment
+      by mouth. Wash hands and avoid sharing clothes, combs or towels.
+    complications:
+    - Ringworm can spread to other areas or people. Significant scalp inflammation can affect the hair. Using a steroid product alone
+      can alter the rash and delay diagnosis.
+    help:
+    - Ask a GP about a rash on the scalp or widespread infection. Get reassessed if the rash returns or does not improve with the
+      advised treatment.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/ringworm/
+  scabies:
+    aliases: scabies itchy rash mites burrows fingers crusted scabies
+    summary: Scabies causes an itchy rash that is often worse at night. If it is confirmed, coordinate treatment with household members
+      and other close contacts.
+    symptoms:
+    - Itching can be intense, with small bumps or fine lines between fingers, on wrists or around the waist. Babies and some older
+      people can have a different distribution. The first symptoms can take weeks to appear.
+    causes:
+    - A mite burrows into the upper layer of skin. It spreads mainly through prolonged close skin contact. A form with thick crusted
+      skin can spread more readily and needs specialist advice.
+    diagnosis:
+    - A clinician assesses the rash, itch and whether close contacts have symptoms. Looking for mites or burrows can help when diagnosis
+      is uncertain, particularly during an outbreak.
+    care:
+    - Use the treatment as directed and coordinate the timing with contacts as advised. Follow instructions about a repeat application,
+      clothing and bedding. Ask a clinician about treatment in pregnancy or for a young child.
+    complications:
+    - Itch can last for weeks after successful treatment. New burrows or an ongoing rash can need reassessment, and scratched skin
+      may become infected.
+    help:
+    - Speak to a pharmacist or GP for suspected scabies or when someone close to you is diagnosed. If symptoms continue or another
+      person develops a rash after treatment, ask for a review.
+  sciatica:
+    aliases: sciatica leg pain nerve pain down leg numbness slipped disc
+    summary: Sciatica can cause pain, tingling or numbness down a leg. New changes in bladder or bowel control or numbness around
+      the genitals need emergency assessment.
+    emergency: For a new inability to pass urine or loss of control of the bowel or bladder with back and leg symptoms, call
+    evidence_gap: Irish back-pain surveys include many causes and cannot estimate sciatica separately. A comparable national figure
+      specific to nerve-related leg pain was not identified.
+    symptoms:
+    - Pain can extend from the buttock down the back of the leg and into the foot. Coughing or sneezing can worsen it. There can
+      be tingling, numbness or weakness.
+    causes:
+    - A nerve root in the lower back can become irritated, often by a disc or other changes in the spine. Similar pain can also come
+      from muscles or joints.
+    diagnosis:
+    - A clinician checks the symptom pattern, nerve function and whether any warning signs suggest urgent imaging. Most people do
+      not need a scan at the first uncomplicated visit.
+    care:
+    - Keep gently active as tolerated and ask about suitable pain relief and movement. Persistent pain or weakness may need physiotherapy
+      or specialist support.
+    complications:
+    - In a rare emergency, pressure on nerves causes numbness around the genitals or buttocks, or problems with bladder or bowel
+      function. Persistent leg weakness can need further assessment.
+    help:
+    - Seek emergency help for bladder or bowel changes, numbness around the genitals, or severe or worsening weakness in both legs.
+      Contact your GP if symptoms persist or limit ordinary activity.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/sciatica/
+  shoulder-pain:
+    aliases: shoulder pain sore shoulder rotator cuff painful arm movement
+    summary: Shoulder pain can come from tendons, joints or sometimes another area of the body. A sudden injury with deformity or
+      inability to lift the arm needs prompt assessment.
+    evidence_gap: Injury and compensation reports count selected shoulder injuries. They cannot capture shoulder pain from all causes
+      in the Irish population.
+    symptoms:
+    - Pain can occur when reaching overhead, lying on one side or moving the arm behind you. Stiffness, weakness or pain spreading
+      from the neck can guide assessment.
+    causes:
+    - Possible causes include tendon problems, bursitis, arthritis and injuries. Pain can sometimes be referred from the neck or
+      chest rather than arising inside the shoulder.
+    diagnosis:
+    - A clinician checks the arm and neck and compares active and assisted movement. An X-ray or other scan may be needed after injury
+      or if the diagnosis remains uncertain.
+    care:
+    - Gentle movement within comfort can help many conditions. A clinician may suggest exercise, pain relief or a treatment specific
+      to the cause. Avoid forcing movement after an injury.
+    complications:
+    - Pain and stiffness can limit sleep and daily tasks. Progressive weakness or continuing loss of movement can need additional
+      assessment.
+    help:
+    - Seek prompt review for severe injury, deformity or inability to move the arm. Call emergency services if shoulder or arm pain
+      comes with chest pressure, sweating or breathlessness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/shoulder-pain/
+  sinusitis:
+    aliases: sinusitis sinus infection facial pressure green mucus rhinosinusitis
+    summary: Sinusitis often follows a cold and can cause congestion and pressure around the cheeks or forehead. Most short episodes
+      improve without antibiotics.
+    evidence_gap: Antibiotic and referral totals include different sinus and upper-airway problems. A verified national frequency
+      for sinusitis was not identified.
+    symptoms:
+    - A blocked nose, reduced smell, facial pain or pressure and thick nasal discharge can occur. Symptoms may worsen when bending
+      forward. Some people have tooth pain or fever.
+    causes:
+    - The lining around the sinuses becomes swollen and drainage slows. Viruses are a common cause. Allergy, dental problems or other
+      conditions can cause similar symptoms.
+    diagnosis:
+    - A clinician considers symptom duration, severity and whether symptoms have worsened after improving. They may examine the nose
+      and face. Scans are not usually needed for a straightforward short episode.
+    care:
+    - Pain relief or a saline rinse may help. A pharmacist or GP can advise on nasal treatments and whether an antibiotic is indicated.
+      Repeated or longer-lasting episodes can need a specialist assessment.
+    complications:
+    - Rarely, infection can spread towards the eye or other areas. Swelling around an eye, double vision, severe frontal headache
+      or confusion requires urgent assessment.
+    help:
+    - Seek prompt help for swelling around an eye, a change in vision or severe illness. Contact your GP if symptoms persist, recur
+      or mostly affect one side.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/sinusitis/
+  sprains-and-strains:
+    aliases: sprain strain twisted joint soft tissue sports pulled muscle swelling
+    summary: A sprain stretches or tears a ligament, while a strain affects muscle or tendon. An injury with marked swelling, deformity
+      or inability to bear weight may need assessment for a fracture.
+    evidence_gap: Claims and accident reports count selected events. They exclude sprains and strains treated outside those systems
+      and cannot describe national prevalence.
+    symptoms:
+    - Pain, swelling and bruising can occur after a twist, fall or sudden movement. You may find it hard to move or use the area.
+      A crack or change in shape needs attention.
+    causes:
+    - Ligaments support joints. Muscles and tendons help move them. A sudden load can damage these tissues without breaking a bone,
+      but both injuries can occur together.
+    diagnosis:
+    - A clinician assesses movement, tenderness, circulation and how the injury occurred. They may arrange an X-ray if they suspect
+      a fracture.
+    care:
+    - Protect the area initially and ask about compression, elevation and appropriate pain relief. Begin gentle movement as advised
+      when comfortable. Recovery and return to sport depend on the injury.
+    complications:
+    - A more severe tear can leave joint instability or weakness. Continuing pain or repeated injuries can need physiotherapy or
+      further assessment.
+    help:
+    - Get prompt assessment if you cannot bear weight, the limb looks misshapen or numbness develops. Review a sprain or strain that
+      is not improving as expected.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/sprains-and-strains/
+  stomach-ulcer:
+    aliases: stomach ulcer gastric ulcer peptic ulcer H pylori upper abdominal pain
+    summary: A stomach ulcer is a sore in the stomach lining. Persistent upper abdominal pain needs assessment, and signs of bleeding
+      need urgent help.
+    emergency: If you vomit blood, pass black tarry stool with faintness or have sudden severe abdominal pain, call
+    evidence_gap: Hospital figures for bleeding ulcers exclude many less severe ulcers. Irish H. pylori estimates also do not measure
+      how many people have ulcers.
+    symptoms:
+    - An ulcer can cause burning or aching in the upper abdomen, nausea or early fullness. Some ulcers cause little pain until bleeding
+      occurs.
+    causes:
+    - Helicobacter pylori infection and some anti-inflammatory pain medicines can damage the normal protection of the stomach lining.
+      Other causes are less common.
+    diagnosis:
+    - A clinician asks about symptoms and medicines and may test for H. pylori. Endoscopy can identify an ulcer and allow sampling,
+      particularly with persistent symptoms or warning signs.
+    care:
+    - Treatment may include acid suppression and antibiotics if H. pylori is present. A clinician can review medicines that increase
+      bleeding risk and decide whether a repeat test or endoscopy is needed.
+    complications:
+    - An ulcer can bleed or rarely create a hole through the stomach wall. Black stool, vomiting blood or sudden severe pain requires
+      urgent assessment.
+    help:
+    - Ask your GP about persistent upper abdominal pain or nausea. Seek emergency help if you vomit blood, feel faint or have severe
+      sudden pain.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/stomach-ulcer/
+  stye:
+    aliases: stye eyelid lump hordeolum painful bump eyelash chalazion
+    summary: A stye is a tender lump near the edge of an eyelid. A warm compress can help while it settles. Worsening swelling or
+      a change in vision needs assessment.
+    evidence_gap: Most styes are managed outside hospital and do not have a dedicated national reporting system. No reliable Irish
+      population estimate was identified.
+    symptoms:
+    - A small painful bump can appear near the eyelashes or inside the lid. It may be red or swollen. A deeper, less tender lump
+      can have another cause such as a chalazion.
+    causes:
+    - An eyelash follicle or small gland near the eyelid can become inflamed or infected. Makeup and contact lenses may irritate
+      the eye while it settles.
+    diagnosis:
+    - A pharmacist or clinician can often recognise a stye. A recurring lump in the same place, widespread swelling or symptoms affecting
+      vision deserve further assessment.
+    care:
+    - Apply a clean warm compress and avoid squeezing or piercing the lump. Avoid contact lenses and eye makeup until it settles.
+      A clinician can advise if treatment is needed.
+    complications:
+    - Some lumps take longer to clear or recur. Spread of redness around the eye, fever or pain moving the eye can signal a deeper
+      problem.
+    help:
+    - Seek advice if the lump persists, swelling spreads or pain worsens. Get urgent assessment for vision changes or a very swollen
+      painful eye.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/stye/
+  targeted-therapy:
+    kind: procedure
+    aliases: targeted therapy cancer precision medicine HER2 EGFR oncology
+    summary: Targeted cancer therapy acts on a specific feature involved in cancer growth. Tumour testing can help determine whether
+      a given treatment is likely to help.
+    evidence_gap: Systemic treatment totals can mix targeted medicines with chemotherapy, immunotherapy and other oncology treatments.
+      An all-Ireland count specific to targeted therapy was not identified.
+    symptoms:
+    - These medicines may be offered when the type of cancer or a particular test result matches the treatment. Ask what the relevant
+      target is and how treatment success will be judged.
+    causes:
+    - A targeted medicine can block a signal, recognise a protein or interfere with another process that a cancer relies on. Healthy
+      tissues can also be affected, so side effects differ by drug.
+    diagnosis:
+    - The team may review tumour tests, medicines and baseline blood work. Ask how the drug interacts with other prescriptions, supplements
+      or foods and whether any monitoring is needed at home.
+    care:
+    - Some treatments are tablets and others are infusions. The team will tell you how to take it and what to do if you miss a dose
+      or vomit after taking it.
+    complications:
+    - The treatment may stop working if the cancer changes. Possible side effects vary and can include skin or digestive problems,
+      and some medicines need heart or blood-pressure monitoring.
+    help:
+    - Use the treatment team's contact plan for new or worsening symptoms. Check before stopping, doubling or combining doses.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/targeted-therapy/
+  tendonitis:
+    aliases: tendonitis tendinitis tendinopathy overuse tendon pain
+    summary: Tendon pain often worsens when a muscle repeatedly pulls on the affected tendon. A sudden pop with weakness can mean
+      a tear rather than overuse.
+    evidence_gap: Irish figures for sports and workplace injuries do not reliably identify all tendon problems or distinguish the
+      different tendons involved.
+    symptoms:
+    - Pain and tenderness often sit near a joint and increase with lifting, jumping or another specific action. There may be stiffness
+      after rest or mild swelling.
+    causes:
+    - A tendon attaches muscle to bone. A sudden increase in load can contribute to irritation or changes in the tendon. Persisting
+      symptoms are often referred to as tendinopathy.
+    diagnosis:
+    - A clinician examines which movements provoke pain and checks strength. Imaging may be needed after a sudden injury or when
+      the diagnosis is unclear.
+    care:
+    - Modify the activity causing painful overload, then build it back with a suitable exercise programme. A physiotherapist can
+      adapt the programme to the tendon and activity.
+    complications:
+    - Tendon symptoms can recur if load rises more quickly than the tissue can manage. Sudden weakness or a gap in a tendon can require
+      urgent assessment for rupture.
+    help:
+    - Seek prompt advice after a pop with loss of strength or inability to move normally. Ask for assessment if pain persists or
+      limits work or sport.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/tendonitis/
+  tennis-elbow:
+    aliases: tennis elbow lateral epicondylitis outer elbow pain grip wrist tendon
+    summary: Tennis elbow causes pain on the outside of the elbow, often when gripping or lifting. Work, household tasks and sport
+      can all aggravate it.
+    evidence_gap: Published Irish workplace injury records do not capture tennis elbow from all work, sports and household activities.
+      A national estimate was not found.
+    symptoms:
+    - Pain is usually worse when gripping, twisting a lid or lifting something with the palm down. It can spread into the forearm.
+      Numbness or persistent weakness can have a different cause.
+    causes:
+    - Repeated load on the tendons that help lift the wrist can irritate their attachment near the outside of the elbow. Symptoms
+      can develop without one clear injury.
+    diagnosis:
+    - A clinician asks which activities cause symptoms and examines grip and movement. A straightforward case often needs no scan,
+      but injuries or unusual symptoms may need investigation.
+    care:
+    - Change repetitive tasks where possible and ask a physiotherapist about exercises that build strength gradually. Some people
+      use a short period of support while adjusting activities.
+    complications:
+    - Recovery can take weeks or months. Returning quickly to the same workload may bring symptoms back. Persistent swelling or reduced
+      movement warrants review.
+    help:
+    - Contact a clinician if pain interferes with work, sleep or daily tasks. Arrange assessment sooner if the elbow is hot, swollen
+      or immobile after injury.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/tennis-elbow/
+  tinnitus:
+    aliases: tinnitus ringing buzzing ears pulsatile tinnitus noise hearing loss
+    summary: Tinnitus is hearing a sound without a matching outside source. New tinnitus with sudden hearing loss, or a sound that
+      beats with your pulse, needs medical assessment.
+    evidence_gap: Irish hearing loss data cannot establish the prevalence of tinnitus. The two can occur together, but not everyone
+      with one has the other.
+    symptoms:
+    - People can hear ringing, buzzing, hissing or other sounds in one or both ears. It may come and go, be constant or be more noticeable
+      in a quiet room.
+    causes:
+    - Tinnitus is often linked to changes in hearing or noise exposure. Wax, some medicines and other conditions can play a role.
+      Sounds that follow the heartbeat can need different investigation.
+    diagnosis:
+    - A clinician asks about timing, hearing loss, medicines and whether the sound pulses. An examination and hearing tests can identify
+      causes or guide specialist referral.
+    care:
+    - Treating a contributing cause or using hearing support can help some people. Sound enrichment and psychological strategies
+      can reduce distress or improve sleep. Protect hearing in noisy environments.
+    complications:
+    - Tinnitus can affect concentration, sleep and mood. New one-sided symptoms, sudden loss of hearing or distress that prevents
+      normal activity should be raised with a clinician.
+    help:
+    - Speak to your GP if tinnitus persists or is bothersome. Seek urgent assessment for sudden hearing loss, tinnitus after a head
+      injury or tinnitus with new severe vertigo or weakness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/tinnitus/
+  vertigo:
+    aliases: vertigo spinning dizziness BPPV balance inner ear
+    summary: Vertigo is a sensation of spinning or movement. Symptoms triggered by rolling over in bed can have a different cause
+      from continuous vertigo or dizziness with a new neurological symptom.
+    emergency: If sudden dizziness comes with arm or facial weakness, trouble speaking or new inability to walk, call
+    evidence_gap: Hospital and community data often group vertigo and other kinds of dizziness. A comparable Irish national figure
+      specific to vertigo was not identified.
+    symptoms:
+    - You may feel that the room is moving and have nausea or unsteadiness. Brief episodes on head movement differ from hours of
+      continuous spinning. Hearing loss or ringing can give another clue.
+    causes:
+    - Balance depends on signals from the inner ears, eyes and body. Loose particles in an inner ear canal can cause brief positional
+      vertigo. Other inner ear or brain disorders can cause a different pattern.
+    diagnosis:
+    - A clinician asks about duration, triggers, hearing and neurological symptoms. They may examine balance and eye movements and
+      perform positional tests. Some presentations need emergency investigation.
+    care:
+    - Treatment depends on the cause. A trained clinician can perform repositioning manoeuvres for confirmed positional vertigo.
+      Other causes may need medicine, rehabilitation or urgent hospital care.
+    complications:
+    - Vertigo can increase fall risk and affect driving. Severe new imbalance, double vision, problems speaking or sudden weakness
+      can signal a stroke or another emergency.
+    help:
+    - Ask a GP for review if vertigo recurs or interferes with activity. Seek urgent care for sudden hearing loss, severe new symptoms
+      or neurological warning signs.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/vertigo/
+  warts-verrucas:
+    aliases: warts verrucas verruca plantar wart HPV common wart skin
+    summary: Warts are small skin growths caused by a virus. A wart on the sole is called a verruca, which can hurt when standing
+      or walking.
+    evidence_gap: Warts managed at home are not captured in service records. Irish data for genital warts do not describe common
+      skin warts or verrucas.
+    symptoms:
+    - Common warts can be rough and raised. Verrucas may look flatter under pressure and sometimes have small black dots. Corns and
+      other lesions can look similar.
+    causes:
+    - Skin types of HPV can infect small breaks in the skin and spread by touch. The types involved in common skin warts differ from
+      many of those associated with genital disease.
+    diagnosis:
+    - A pharmacist, GP or podiatrist can often recognise a wart. An unusual colour, spontaneous bleeding or uncertainty about the
+      diagnosis needs assessment before treatment.
+    care:
+    - Many warts clear over time. A pharmacist can advise on suitable treatment for common warts. Ask for clinical advice before
+      treating feet if you have diabetes or poor circulation.
+    complications:
+    - Treatment can irritate skin, and warts can recur or spread. Avoid trimming or picking a wart, or sharing equipment that touches
+      it.
+    help:
+    - Ask a GP if you are unsure what a growth is, it changes rapidly or it is on the face or genitals. Seek advice if a foot lesion
+      makes walking painful.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/warts-verrucas/
+  wisdom-tooth-removal:
+    kind: procedure
+    aliases: wisdom tooth removal impacted wisdom tooth extraction oral surgery dry socket
+    summary: A wisdom tooth may need removal if it repeatedly causes infection, decay or damage to a neighbouring tooth. The dentist
+      can explain the plan using your examination and X-ray.
+    evidence_gap: Hospital extraction figures exclude procedures done in dental practices and may combine wisdom and other teeth.
+      A national activity count specific to wisdom tooth removal was not identified.
+    symptoms:
+    - Many wisdom teeth cause no difficulty. Removal can be considered if a partly erupted tooth leads to recurrent painful swelling
+      or a tooth cannot be treated in another way.
+    causes:
+    - Depending on position, the tooth can sometimes be removed through the gum in one piece. A deeper tooth may need a small gum
+      opening or removal in sections.
+    diagnosis:
+    - Tell the dentist about medicines, allergies or bleeding problems. Check instructions on fasting, sedation, transport and whether
+      you will need time off.
+    care:
+    - Local anaesthetic numbs the area, and some people also receive sedation or need a hospital procedure. The team will explain
+      how to control bleeding and manage pain at home.
+    complications:
+    - Pain and swelling are expected initially. Increasing pain after a few days can suggest dry socket or infection. Numbness, continued
+      bleeding or fever needs advice.
+    help:
+    - Follow the dentist's written instructions. Contact the service for worsening swelling, uncontrolled bleeding or fever. Get
+      emergency help if breathing or swallowing is affected.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/wisdom-tooth-removal/
