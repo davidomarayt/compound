@@ -2,33 +2,33 @@
   "cik": 2969,
   "company": "Air Products",
   "latest": {
-    "accession": "0000002969-26-000036",
-    "filed": "2026-07-30",
-    "form": "10-Q",
-    "fp": "Q3",
+    "accession": "0000002969-26-000050",
+    "filed": "2026-11-19",
+    "form": "10-K",
+    "fp": "FY",
     "fy": 2026,
     "metrics": {
       "diluted_eps": {
-        "current": -6.47,
-        "prior_year": 3.2,
+        "current": 2.39,
+        "prior_year": -1.77,
         "tag": "EarningsPerShareDiluted",
         "unit": "USD/shares"
       },
       "net_income": {
-        "current": -1440800000,
-        "prior_year": 713800000,
+        "current": 532100000,
+        "prior_year": -394500000,
         "tag": "NetIncomeLoss",
         "unit": "USD"
       },
       "revenue": {
-        "current": 3161000000,
-        "prior_year": 3022700000,
+        "current": 12990900000,
+        "prior_year": 12037300000,
         "tag": "Revenues",
         "unit": "USD"
       }
     },
-    "period_end": "2026-06-30",
-    "source": "https://www.sec.gov/Archives/edgar/data/2969/000000296926000036/apd-20260630.htm"
+    "period_end": "2026-09-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/2969/000000296926000050/apd-20260930.htm"
   },
   "periods": [
     {
@@ -88,9 +88,38 @@
       },
       "period_end": "2026-06-30",
       "source": "https://www.sec.gov/Archives/edgar/data/2969/000000296926000036/apd-20260630.htm"
+    },
+    {
+      "accession": "0000002969-26-000050",
+      "filed": "2026-11-19",
+      "form": "10-K",
+      "fp": "FY",
+      "fy": 2026,
+      "metrics": {
+        "diluted_eps": {
+          "current": 2.39,
+          "prior_year": -1.77,
+          "tag": "EarningsPerShareDiluted",
+          "unit": "USD/shares"
+        },
+        "net_income": {
+          "current": 532100000,
+          "prior_year": -394500000,
+          "tag": "NetIncomeLoss",
+          "unit": "USD"
+        },
+        "revenue": {
+          "current": 12990900000,
+          "prior_year": 12037300000,
+          "tag": "Revenues",
+          "unit": "USD"
+        }
+      },
+      "period_end": "2026-09-30",
+      "source": "https://www.sec.gov/Archives/edgar/data/2969/000000296926000050/apd-20260930.htm"
     }
   ],
   "source_type": "US SEC XBRL; no analyst estimates",
   "ticker": "APD",
-  "updated": "2026-10-15"
+  "updated": "2026-11-20"
 }
