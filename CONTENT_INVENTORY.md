@@ -14,8 +14,8 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - Embedded tool-guide files: 62
 - Information and policy pages: 30
 - Main hubs: 11
-- Public-company directory profiles: 511
-- Private-company directory profiles: 13
+- Public-company directory profiles: 512
+- Private-company directory profiles: 12
 - Draft or unpublished editorial files: 0
 
 ## Health articles and guides — 95
@@ -654,7 +654,7 @@ Each entry lives within its corresponding calculator page; it is not a second st
 - [Tools and Calculators](https://compound.ie/tools/)
 - [Wealth](https://compound.ie/wealth/)
 
-## Listed company stock research profiles — 511
+## Listed company stock research profiles — 512
 
 These are generated directory profiles, not individually written evergreen articles.
 
@@ -692,6 +692,7 @@ These are generated directory profiles, not individually written evergreen artic
 - [Amgen (AMGN) Stock](https://compound.ie/stocks/amgn/)
 - [Amphenol (APH) Stock](https://compound.ie/stocks/aph/)
 - [Analog Devices (ADI) Stock](https://compound.ie/stocks/adi/)
+- [Anthropic (ANT) Stock Research](https://compound.ie/stocks/ant/)
 - [Aon plc (AON) Stock](https://compound.ie/stocks/aon/)
 - [APA Corporation (APA) Stock](https://compound.ie/stocks/apa/)
 - [Apollo Global Management (APO) Stock](https://compound.ie/stocks/apo/)
@@ -1170,10 +1171,9 @@ These are generated directory profiles, not individually written evergreen artic
 - [Zimmer Biomet (ZBH) Stock](https://compound.ie/stocks/zbh/)
 - [Zoetis (ZTS) Stock](https://compound.ie/stocks/zts/)
 
-## Private-company research profiles — 13
+## Private-company research profiles — 12
 
 - [Anduril Industries Private Company Research](https://compound.ie/companies/anduril/)
-- [Anthropic Private Company Research](https://compound.ie/companies/anthropic/)
 - [Blue Origin Private Company Research](https://compound.ie/companies/blue-origin/)
 - [ByteDance Private Company Research](https://compound.ie/companies/bytedance/)
 - [Canva Private Company Research](https://compound.ie/companies/canva/)

@@ -585,6 +585,7 @@
         "date": "2026-10-21",
         "reviewed": "2026-10-21",
         "tags": [
+          "stock-ant",
           "stocks",
           "company-research",
           "anthropic",
@@ -9275,6 +9276,14 @@
         "origin": "S&P reference list"
       },
       {
+        "title": "Anthropic (ANT) Stock Research",
+        "url": "/stocks/ant/",
+        "source": "content/company-watchlist.json",
+        "kind": "Public-company profile",
+        "ticker": "ANT",
+        "origin": "Additional listed company"
+      },
+      {
         "title": "Aon plc (AON) Stock",
         "url": "/stocks/aon/",
         "source": "content/earnings-sp500.json",
@@ -13095,12 +13104,6 @@
       {
         "title": "Anduril Industries Private Company Research",
         "url": "/companies/anduril/",
-        "source": "content/company-watchlist.json",
-        "kind": "Private-company profile"
-      },
-      {
-        "title": "Anthropic Private Company Research",
-        "url": "/companies/anthropic/",
         "source": "content/company-watchlist.json",
         "kind": "Private-company profile"
       },
