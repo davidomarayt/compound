@@ -24,6 +24,14 @@ SECTIONS = (
     ("complications", "Complications and outlook"),
     ("help", "When to get help"),
 )
+TEST_SECTIONS = (
+    ("symptoms", "Why you might have the test"),
+    ("causes", "What the test measures"),
+    ("diagnosis", "Preparing for the appointment"),
+    ("care", "What happens on the day"),
+    ("complications", "After the test"),
+    ("help", "Getting your results and advice"),
+)
 
 
 def load_conditions(content, article_urls):
@@ -61,7 +69,10 @@ def load_conditions(content, article_urls):
             records.append({**record, "label": MEASURES[record["measure"]], "citation": source})
         guide = guides.get(slug)
         if guide:
-            if not records or not guide.get("summary") or any(not guide.get(key) for key, _ in SECTIONS):
+            has_evidence_gap = bool(guide.get("evidence_gap", "").strip() and guide.get("sources"))
+            if (not records and not has_evidence_gap) or not guide.get("summary") or any(
+                not guide.get(key) for key, _ in SECTIONS
+            ):
                 raise ValueError(f"Incomplete condition guide: {slug}")
             for label, target in guide.get("links", {}).items():
                 if target not in article_urls:
@@ -72,6 +83,7 @@ def load_conditions(content, article_urls):
             "url": f"{CONDITIONS_URL}{slug}/" if guide else official_url,
             "guide": guide,
             "records": records,
+            "sections": TEST_SECTIONS if guide and guide.get("kind") == "test" else SECTIONS,
         }
         by_slug[slug] = entry
         seen_urls[official_url] = entry
@@ -86,7 +98,6 @@ def load_conditions(content, article_urls):
         "topic_count": len(by_slug),
         "evidence_count": sum(bool(entry["records"]) for entry in by_slug.values()),
         "checked": checked,
-        "sections": SECTIONS,
     }
 
 
