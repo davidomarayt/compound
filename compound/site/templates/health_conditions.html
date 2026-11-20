@@ -7,7 +7,7 @@
 <meta property="og:url" content="{{ site_url }}{{ conditions_url }}">
 {% endblock %}
 {% block head %}
-<link rel="stylesheet" href="/static/health-conditions.css?v=2">
+<link rel="stylesheet" href="/static/health-conditions.css?v=3">
 <script src="/static/health-conditions.js?v=1" defer></script>
 <script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "CollectionPage", "name": title, "url": site_url ~ conditions_url, "inLanguage": "en-IE", "isPartOf": {"@type": "WebSite", "name": "Compound", "url": site_url}}|tojson }}</script>
 {% endblock %}
@@ -48,7 +48,11 @@
       <li data-condition-entry data-has-evidence="{{ 'yes' if entry.records else 'no' }}" data-search="{{ entry.name }} {{ entry.official_url.split('/')[-2]|replace('-', ' ') }} {{ entry.guide.get('aliases', '') if entry.guide else '' }}">
         <a class="condition-link" href="{{ entry.url }}"><strong>{{ entry.name }}</strong><span>{{ 'Compound guide' if entry.guide else 'HSE guidance ↗' }}</span></a>
         {% if entry.records %}
-        <details><summary>Irish data <span>{{ entry.records[0].value }} · {{ entry.records[0].period }}</span></summary>{% include "_condition_evidence.html" %}</details>
+        {% set headline = entry.records[0] %}
+        <details>
+          <summary>{{ headline.label }} <span>{{ headline.value }} · {{ headline.population }} · {{ headline.period }}</span></summary>
+          {% include "_condition_evidence.html" %}
+        </details>
         {% endif %}
       </li>
       {% endfor %}

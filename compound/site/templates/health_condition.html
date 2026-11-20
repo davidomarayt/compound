@@ -28,6 +28,9 @@
   <section class="condition-copy" id="{{ key }}">
     <h2>{{ label }}</h2>
     {% for paragraph in entry.guide[key] %}<p>{{ paragraph }}</p>{% endfor %}
+    {% if key == "care" and entry.guide.care_links %}
+    <ul>{% for label, target in entry.guide.care_links.items() %}<li><a href="{{ target }}">{{ label }}</a></li>{% endfor %}</ul>
+    {% endif %}
   </section>
   {% endfor %}
   <section class="condition-copy">

@@ -145,9 +145,10 @@ def load_conditions(content, article_urls):
                 not guide.get(key) for key, _ in SECTIONS
             ):
                 raise ValueError(f"Incomplete condition guide: {slug}")
-            for label, target in guide.get("links", {}).items():
-                if target not in article_urls:
-                    raise ValueError(f"Unknown related article for {slug}: {label} ({target})")
+            for links_key in ("links", "care_links"):
+                for label, target in guide.get(links_key, {}).items():
+                    if target not in article_urls:
+                        raise ValueError(f"Unknown related article for {slug}: {label} ({target})")
         kind = guide.get("kind", "condition") if guide else "condition"
         if kind not in GUIDE_FORMATS:
             raise ValueError(f"Unknown condition guide type for {slug}: {kind}")

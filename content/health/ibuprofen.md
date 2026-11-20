@@ -36,15 +36,15 @@ This guide covers oral ibuprofen for adults in Ireland. Follow the leaflet for y
 
 When ibuprofen slows prostaglandin production, pain signals become less easily triggered and inflammation can ease. The same pathway also makes prostaglandins that help protect the stomach lining. Reducing those protective signals helps explain the risk of stomach irritation, ulcers and bleeding described below. [HPRA prescribing information](https://assets.hpra.ie/products/Human/27221/Licence_PA1986-117-003_07042025110231.pdf) · [Review of NSAIDs and stomach protection](https://pmc.ncbi.nlm.nih.gov/articles/PMC3251190/)
 
-## How much ibuprofen can adults take?
-
-For **Nurofen 200 mg coated tablets**, the Irish patient leaflet gives a starting dose of **two tablets (400 mg)**. If needed, the leaflet allows one or two tablets for later doses, leaving at least four hours between doses. The maximum is **six tablets (1,200 mg) in 24 hours**. Use the lowest effective dose for the shortest time. The leaflet advises contacting a doctor if symptoms worsen or fail to improve after three days. Follow your own packet if you have a different product, a different strength or a prescription. [HPRA patient leaflet](https://assets.hpra.ie/products/Human/23657/71b462ca-45d4-4bb3-aaad-41ce4aaebacb.pdf)
-
 ## Who should check before taking ibuprofen?
 
 Speak to your pharmacist or GP first if you have asthma, a history of stomach ulcers, high blood pressure, or problems with your kidneys, liver or heart. If aspirin, ibuprofen or another NSAID has caused wheezing, swelling or another allergic reaction, avoid ibuprofen and ask about alternatives. The HSE advises against using ibuprofen if you have chickenpox. [HSE precautions](https://www2.hse.ie/medicines/nsaids/)
 
 **If you’re pregnant**, check with your GP or pharmacist before taking it. The product leaflet says to avoid ibuprofen during the last three months of pregnancy and to use it earlier only if advised by a doctor. It also flags additional fetal risks from 20 weeks onward, particularly if taken for more than a few days. Ask a pharmacist or GP if you’re trying to get pregnant or are breastfeeding. [HPRA patient leaflet](https://assets.hpra.ie/products/Human/23657/71b462ca-45d4-4bb3-aaad-41ce4aaebacb.pdf)
+
+## How much ibuprofen can adults take?
+
+For **Nurofen 200 mg coated tablets**, the Irish patient leaflet gives a starting dose of **two tablets (400 mg)**. If needed, the leaflet allows one or two tablets for later doses, leaving at least four hours between doses. The maximum is **six tablets (1,200 mg) in 24 hours**. Use the lowest effective dose for the shortest time. The leaflet advises contacting a doctor if symptoms worsen or fail to improve after three days. Follow your own packet if you have a different product, a different strength or a prescription. [HPRA patient leaflet](https://assets.hpra.ie/products/Human/23657/71b462ca-45d4-4bb3-aaad-41ce4aaebacb.pdf)
 
 ## Can you take ibuprofen with other medicines?
 

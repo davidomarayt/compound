@@ -2671,16 +2671,31 @@ guides:
     - A GP can arrange a blood test. HbA1c is one test used to assess average glucose over recent months. You may need
       another test to confirm the result, depending on symptoms and the result.
     care:
-    - Treatment can include changes to diet and activity, medicines and regular monitoring. A care team considers your
-      preferences and conditions such as kidney or heart disease when discussing options.
-    - Ask when to have your eyes, feet, kidneys and blood pressure checked. A plan should cover follow-up even when you
-      feel well.
+    - At your first review, ask what your latest HbA1c result means, what target you and your care team are aiming for,
+      and who will arrange the next blood test. Your GP or nurse can help you agree a plan for food, activity, medicines
+      and follow-up that fits your health and daily routine.
+    - Metformin is a common option when medicine is needed. The choice depends on factors such as kidney function,
+      heart health, other medicines and what you can tolerate. Ask what the medicine is intended to improve and when
+      its effects will be reviewed.
+    - Routine reviews look beyond blood glucose. Ask when your team will check blood pressure, cholesterol, kidney
+      function and foot health. Ask whether you are registered with Diabetic RetinaScreen. Retinal screening checks
+      for changes caused by diabetes and is separate from a routine sight test.
+    - You can ask about a free HSE diabetes support course, online or in person. The courses cover practical skills
+      such as managing meals, staying active and looking after your feet and eyes.
+    care_links:
+      Metformin guide: /health/medicines/metformin/
     complications:
     - Over time, raised glucose can damage blood vessels and nerves. Heart, kidney, eye and foot problems can develop,
       which is why follow-up covers more than glucose alone.
     help:
     - Speak to your GP if you have symptoms or were told you have pre-diabetes. If you already have diabetes and notice
       a new foot wound or infection, contact your care team promptly.
+    sources:
+      HSE guidance on getting diagnosed: https://www2.hse.ie/conditions/type-2-diabetes/about/getting-diagnosed/
+      HSE advice on HbA1c testing: https://www2.hse.ie/conditions/type-2-diabetes/managing-blood-glucose-levels/hba1c-testing/
+      HSE guidance on treatment: https://www2.hse.ie/conditions/type-2-diabetes/treatment/treatments-for-type-2-diabetes/
+      HSE guidance on regular check-ups: https://www2.hse.ie/conditions/type-2-diabetes/about/health-problems/
+      Free HSE diabetes support courses: https://www2.hse.ie/conditions/type-2-diabetes/courses-and-support/diabetes-support-courses/
   migraine:
     aliases: migraine with aura migraine headache
     summary: Migraine is a neurological condition that causes recurring attacks. Head pain, nausea and sensitivity to

@@ -88,7 +88,12 @@ def test_guide_formats_documented_irish_data_gap(
 def test_abortion_uses_procedure_language():
     content = ROOT / "content"
     editorial = yaml.safe_load((content / "health-conditions.yml").read_text(encoding="utf-8"))
-    related_urls = {url for guide in editorial["guides"].values() for url in guide.get("links", {}).values()}
+    related_urls = {
+        url
+        for guide in editorial["guides"].values()
+        for key in ("links", "care_links")
+        for url in guide.get(key, {}).values()
+    }
     directory = load_conditions(content, related_urls)
     entry = next(item for item in directory["featured"] if item["url"] == "/health/conditions/abortion/")
 
