@@ -82,6 +82,6 @@ Recent [Claude service interruptions](/wealth/anthropic-claude-outage-enterprise
 
 The key takeaway for enterprise teams is simple: **an agent's most expensive error is often not a wrong sentence, but an untracked action or a lost obligation.** If proactive AI becomes a sustained business category, its best products will make these failure modes visible and manageable.
 
-Explore the [Anthropic company profile](/companies/anthropic/) for broader private-company research.
+Explore the [Anthropic company profile](/stocks/ant/) for broader company research.
 
 *Research checked 16 November 2026; source engineering guide published 13 November. Monetary scenarios are illustrative, not actual pricing or observed Anthropic customer results. Cover: TechCrunch/Kimberly White, September 2023, CC BY 2.0, adapted archival crop.*

@@ -90,6 +90,6 @@ Look for stronger evidence of real-world improvements across repeated releases, 
 
 The central thesis is cautious: **automated red-teaming may increase the amount of meaningful scrutiny per development cycle, but its value is measured in prevented failures, not merely faster benchmark results.** Anthropic has provided interesting internal evidence; it has not supplied a universal safety guarantee or the financial data required to price the capability.
 
-Read the [Anthropic private-company profile](/companies/anthropic/) for related disclosures and the [separate analysis of Claude model-routing economics](/wealth/anthropic-fable-mythos-52-pricing-routing-economics/). Figures and performance comparisons here are attributed to Anthropic's 12 November 2026 study; independent external replication is not established.
+Read the [Anthropic stock research profile](/stocks/ant/) for related disclosures and the [separate analysis of Claude model-routing economics](/wealth/anthropic-fable-mythos-52-pricing-routing-economics/). Figures and performance comparisons here are attributed to Anthropic's 12 November 2026 study; independent external replication is not established.
 
 *Research checked 13 November 2026. The article analyses the 12 November research publication and does not provide methods for bypassing safeguards. Cover: archival 20 September 2023 TechCrunch photograph of Dario Amodei, CC BY 2.0, cropped; it does not depict the Anvil research.*

@@ -13,6 +13,24 @@
       "source": "https://ir.spacex.com/updates/releases-details/2026/Space-Exploration-Technologies-Corp--Announces-Closing-of-Initial-Public-Offering-Including-Full-Exercise-of-Underwriters-Option-to-Purchase-Additional-Shares-2026-RgoR-Y1Vwh/"
     },
     {
+      "slug": "ant",
+      "name": "Anthropic",
+      "ticker": "ANT",
+      "exchange": "Nasdaq",
+      "sector": "Artificial intelligence",
+      "market": "United States",
+      "tv_symbol": "NASDAQ:ANT",
+      "summary": "Claude AI models, enterprise software and developer APIs. Nasdaq-listed since 19 November 2026.",
+      "source": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq",
+      "website": "https://www.anthropic.com/",
+      "historical_private_slug": "anthropic",
+      "latest_development": {
+        "date": "2026-11-19",
+        "text": "Nasdaq confirmed on 19 November that Anthropic began public trading under ANT and opened at $111.50 per share. Reuters reported the first session close was $97.17. The $83 issuer offering price on 18 November is a separate allocation price.",
+        "source": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq"
+      }
+    },
+    {
       "slug": "tsm",
       "name": "Taiwan Semiconductor Manufacturing Company (TSMC)",
       "ticker": "TSM",
@@ -126,18 +144,6 @@
       }
     },
     {
-      "slug": "anthropic",
-      "name": "Anthropic",
-      "sector": "Artificial intelligence",
-      "summary": "Anthropic now trades on Nasdaq as ANT: priced its 980-million-share initial public offering at $83 on 18 November, opened at $111.50 and first closed at $97.17 on 19 November. Its former private-company hub awaits a separately validated canonical migration.",
-      "website": "https://www.anthropic.com/",
-      "latest_development": {
-        "date": "2026-11-19",
-        "text": "Nasdaq confirmed on 19 November that Anthropic began public trading under ANT and opened at $111.50 per share. Reuters reported the first session close was $97.17. The $83 issuer offering price on 18 November is a separate allocation price. Company is now publicly listed, and the existing private-directory profile awaits canonical migration pending PR #198.",
-        "source": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq"
-      }
-    },
-    {
       "slug": "bytedance",
       "name": "ByteDance",
       "sector": "Social media & AI",
@@ -245,5 +251,5 @@
       "website": "https://www.lego.com/en-us/aboutus"
     }
   ],
-  "notes": "Editorial watchlist with historical private-company coverage. Anthropic confirmed Nasdaq ANT trading 19 November 2026 and is temporarily retained here only for existing canonical/profile compatibility until the separately reviewed /stocks/ant/ migration PR #198 passes CI and merges. Never describe it as privately held after the listing. No valuation or quoted price for privately held businesses is inferred. Company status must be rechecked before every report."
+  "notes": "Editorial watchlist only. Listed securities and private businesses are distinct. No valuation or quoted price is inferred. Company status must be rechecked before a new report."
 }

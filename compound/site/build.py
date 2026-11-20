@@ -1510,6 +1510,9 @@ def build_site(settings: Settings) -> dict:
         tags = {("company-" if private else "stock-") + c["slug"]}
         if not private and c["ticker"].lower() not in earnings_profile_by_ticker:
             tags.add(c["ticker"].lower())
+        # Pre-IPO reporting keeps its original company-anthropic tag after listing.
+        if not private and c.get("historical_private_slug"):
+            tags.add("company-" + c["historical_private_slug"])
         return sorted((a for a in articles if "automated-earnings" not in a.tags and any(t in a.tags for t in tags)),
                       key=lambda a: (a.date, a.slug), reverse=True)
     # Source-checked 10-Q/10-K reports for eligible additional US issuers link
@@ -1544,6 +1547,8 @@ def build_site(settings: Settings) -> dict:
         profile = (f'/stocks/{c["slug"]}/', c["name"], c["tv_symbol"])
         earnings_profile_by_ticker["stock-" + c["slug"]] = profile
         earnings_profile_by_ticker.setdefault(c["ticker"].lower(), profile)
+        if c.get("historical_private_slug"):
+            earnings_profile_by_ticker["company-" + c["historical_private_slug"]] = profile
     for c in private_companies:
         earnings_profile_by_ticker["company-" + c["slug"]] = (f'/companies/{c["slug"]}/', c["name"], "")
     # Preserve existing quarter URLs with noindex + canonical redirects.
@@ -1687,6 +1692,13 @@ def build_site(settings: Settings) -> dict:
                    research=[a for a in stories if not is_news_article(a)],
                    checked=watchlist.get("checked", "not yet"),
                    has_coverage=bool(stories), ads_allowed=bool(stories)))
+
+    # Keep historical private-company bookmarks working when an issuer lists.
+    # The generated redirect has a canonical stock destination and noindex tag.
+    for c in extra_listed:
+        if c.get("historical_private_slug"):
+            _write(out / "companies" / c["historical_private_slug"] / "index.html",
+                   _redirect_html(f"/stocks/{c['slug']}/", settings.site_base_url))
 
     medicine_guides = sorted(
         (a for a in by_pillar["health"] if a.url.startswith(MEDICINES_HUB_URL)),

@@ -25,8 +25,23 @@ def assert_current_profile_uses_latest_sourced_disclosure(profile, slug, records
     assert records, f"No publication evidence for {slug}"
     development = profile["latest_development"]
     allowed = {url for record in records for url in record["primary_source_urls"]}
-    assert development["source"] in allowed, f"Unsourced latest profile: {slug}"
+    if profile.get("ticker") == "ANT" and slug == "anthropic":
+        # A source-backed listing update supersedes the older private-company ledger.
+        assert profile.get("historical_private_slug") == "anthropic"
+        assert development["source"] == "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq"
+        assert development["date"] == "2026-11-19"
+    else:
+        assert development["source"] in allowed, f"Unsourced latest profile: {slug}"
     assert development["date"] >= max(record["event_date"] for record in records), f"Profile regressed: {slug}"
+def historical_profile_index(watchlist):
+    """Map old private company slugs to current listed company profile after IPO."""
+    profiles = {p["slug"]: p for p in watchlist["private"]}
+    for company in watchlist["listed"]:
+        if company.get("historical_private_slug"):
+            profiles[company["historical_private_slug"]] = company
+    return profiles
+
+
 def test_daily_private_company_unique_sourced_real_photos():
     d = json.loads(LEDGER.read_text())
     assert d["date"] == "2026-11-12"
@@ -44,10 +59,11 @@ def test_daily_private_company_unique_sourced_real_photos():
         assert "CC BY 2.0" in meta["hero_image_credit"]
         assert "company-" + r["slug"] in meta["tags"]
         assert meta["hero_image_source"] == r["image_source"]
-        assert r["profile_url"].replace("https://compound.ie","") in raw
+        profile_path = "/stocks/ant/" if r["slug"] == "anthropic" else r["profile_url"].removeprefix("https://compound.ie")
+        assert profile_path in raw
         assert len(raw.split()) > 680
     watchlist = json.loads((ROOT / "content/company-watchlist.json").read_text())
-    profiles = {p["slug"]: p for p in watchlist["private"]}
+    profiles = historical_profile_index(watchlist)
     records = all_publication_records()
     for prior in d["articles"]:
         latest = profiles[prior["slug"]]["latest_development"]
@@ -63,7 +79,7 @@ def test_daily_private_company_13_nov_stories_are_distinct_and_photo_sourced():
     assert len({r["story_fingerprint"] for r in latest["articles"]}) == 3
     assert len({r["image_source"] for r in latest["articles"]}) == 3
     watchlist = json.loads((ROOT / "content/company-watchlist.json").read_text())
-    profiles = {p["slug"]: p for p in watchlist["private"]}
+    profiles = historical_profile_index(watchlist)
     records = all_publication_records()
     for record in latest["articles"]:
         article = (ROOT / record["article_path"]).read_text()
@@ -77,7 +93,8 @@ def test_daily_private_company_13_nov_stories_are_distinct_and_photo_sourced():
         assert meta["hero_image_url"] == record["photo_download_url"]
         assert meta["image"].endswith(Path(record["article_path"]).stem + ".jpg")
         assert "company-" + record["slug"] in meta["tags"]
-        assert record["profile_url"].removeprefix("https://compound.ie") in article
+        profile_path = "/stocks/ant/" if record["slug"] == "anthropic" else record["profile_url"].removeprefix("https://compound.ie")
+        assert profile_path in article
         assert record["primary_source_urls"][0] in article
         assert len(article.split()) >= 900
         assert_current_profile_uses_latest_sourced_disclosure(profiles[record["slug"]], record["slug"], records[record["slug"]])
