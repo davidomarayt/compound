@@ -6,7 +6,7 @@ on:
     - cron: '17,47 * * * *'
     # Refresh membership reference weekly. The official index may change between refreshes.
     - cron: '6 7 * * 1'
-    # Check all ten additional public companies for foreign-market disclosures daily.
+    # Check all eleven additional public companies for foreign-market disclosures daily.
     - cron: '9 8 * * *'
   push:
     branches: ['claude/clever-babbage-uibieq']
@@ -81,7 +81,7 @@ jobs:
           else
             python scripts/earnings.py --registry content/earnings-sp500.json --lookback-days 10 --max-new 8 --extra-watchlist content/company-watchlist.json --shard-count 4 --shard-index "$SHARD"
           fi
-      - name: Check all ten additional company investor disclosures
+      - name: Check all eleven additional company investor disclosures
         if: github.event.schedule == '9 8 * * *' || github.event_name == 'push' || github.event_name == 'workflow_dispatch'
         env:
           SEC_USER_AGENT: 'Compound.ie Earnings Research david@compound.ie'
