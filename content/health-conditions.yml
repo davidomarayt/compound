@@ -93,6 +93,9 @@ sources:
   psoriasis_atlas:
     name: Global Psoriasis Atlas, Ireland country profile
     url: https://www.globalpsoriasisatlas.org/modules/prevalence-page/country-pdf?aposDocId=nukxyzx1wdfn4a77xlkkw9hs&locale=en
+  aware2026:
+    name: Aware and Amárach Research, National Survey 2026
+    url: https://www.aware.ie/national-survey-2026/
   cholecystitis_nqais:
     name: National registry study of acute cholecystitis in Ireland
     url: https://www.sciencedirect.com/science/article/pii/S1479666X24000854
@@ -108,6 +111,9 @@ sources:
   earsnet_2025:
     name: HPSC EARS-Net Ireland National Report 2025
     url: https://file.hpsc.ie/uploads/europeanantimicrobialresistancesurveillancesystemearss/surveillancereports/1789980676.html
+  healthyireland2025:
+    name: Department of Health, Healthy Ireland Survey 2025 summary report
+    url: https://www.dentalhealth.ie/assets/files/pdf/healthy_ireland_summary_report_2025_web_07112025.pdf
   hiqa_aaa:
     name: HIQA health technology assessment of abdominal aortic aneurysm screening, draft analysis
     url: https://www.hiqa.ie/sites/default/files/2025-04/DRAFT-HTA-AAA-screening.pdf
@@ -135,12 +141,24 @@ sources:
   ibts_2024:
     name: Irish Blood Transfusion Service Annual Report 2024
     url: https://www.giveblood.ie/media/2a4dyqym/13230-ibts-annual-report-2024_v6.pdf
+  ilfa_pilot:
+    name: Irish Thoracic Society Future of Respiratory Trials report, ILD registry case study
+    url: https://irishthoracicsociety.com/wp-content/uploads/2025/05/FoRT-Report-5-25.pdf
   imis_2024:
     name: HSE Irish Maternity Indicator System National Report 2024
     url: https://about.hse.ie/api/v2/download-file/file_based_publications/IMIS_2024_National_Report.pdf
+  imj_flush:
+    name: Irish Medical Journal, prevalence and severity of menopausal symptoms study
+    url: https://imj.ie/wp-content/uploads/2025/01/Prevalence-and-severity-of-menopausal-symptoms-in-peri-and-post-menopausal-women.pdf
   irish_amp_ps:
     name: HSE 2024 Antimicrobial Point Prevalence Survey in Acute Hospitals, appendix
     url: https://assets.hse.ie/media/documents/Antimicrobial_Point_Prevalence_Survey_in_Acute_Hospitals_in_Ireland_2024_Appendix_2.pdf
+  its_sleep:
+    name: Irish Thoracic Society Annual Scientific Meeting 2024, abstract 7.6
+    url: https://irishthoracicsociety.com/wp-content/uploads/2025/05/ITS-ASM-2024-Abstract-Book-Final.pdf
+  mi_sickle:
+    name: Medical Independent, Irish clinical update on sickle cell disease
+    url: https://www.medicalindependent.ie/update/clinical-practice/sickle-cell-disease/
   miscarriage_guideline:
     name: Irish National Clinical Practice Guideline, First Trimester Miscarriage
     url: https://research.ucc.ie/en/publications/national-clinical-practice-guideline-first-trimester-miscarriage-/
@@ -1030,6 +1048,14 @@ evidence:
     source: hse_alpha1
     locator: What causes AAT deficiency
     measure: genetic
+  anxiety-tips-and-self-help:
+  - value: 19%
+    period: August–September 2026
+    population: Nationally representative online sample of 1,000 adults aged 18 and over in the Republic of Ireland
+    note: Share who said they had an anxiety disorder diagnosis. This is self-reported and covers anxiety disorders as a group.
+    source: aware2026
+    locator: Anxiety results and survey methods
+    measure: prevalence
   appendicitis:
   - value: 5,816 appendicectomies
     period: '2023'
@@ -1217,6 +1243,22 @@ evidence:
     source: newborn_2024
     locator: Table 1
     measure: diagnoses
+  hot-flushes:
+  - value: 214 of 255 (84%)
+    period: Irish study published January 2025
+    population: Perimenopausal and postmenopausal respondents in the Irish study who completed the symptom scale
+    note: Share reporting hot flushes and sweating in this study sample. It is not a national figure.
+    source: imj_flush
+    locator: Table 2 and discussion
+    measure: prevalence
+  idiopathic-pulmonary-fibrosis:
+  - value: 154 participants
+    period: Registry pilot described in the 2025 report
+    population: People with IPF in the Irish Lung Fibrosis Association pilot
+    note: Participant count from a registry pilot. It cannot establish how many people in Ireland have IPF.
+    source: ilfa_pilot
+    locator: ILD registry case study
+    measure: registry
   ivf:
   - value: 712 publicly funded IVF cycles started
     period: '2025'
@@ -1259,6 +1301,15 @@ evidence:
     source: hpsc2025
     locator: Table 1, meningococcal disease
     measure: notifications
+  menopause:
+  - value: 84%
+    period: Healthy Ireland Survey 2025
+    population: Women surveyed who were going through or had gone through menopause
+    note: Share reporting menopause symptoms. It measures symptoms among that group rather than the proportion of all women who are
+      in menopause.
+    source: healthyireland2025
+    locator: Menopause section, impact of symptoms
+    measure: prevalence
   miscarriage:
   - value: About 20% of clinical pregnancies
     period: Historical estimate cited in the Irish guideline
@@ -1291,6 +1342,15 @@ evidence:
     source: newborn_2024
     locator: Table 14 and screening yield section
     measure: diagnoses
+  obstructive-sleep-apnoea:
+  - value: 121 of 301 referrals
+    period: May and July 2024
+    population: Primary care non-cancer respiratory referrals to St James’s Hospital in the study months
+    note: Suspected obstructive sleep apnoea was the reason for these referrals. This is a single-hospital referral measure, which
+      does not count confirmed diagnoses or population prevalence.
+    source: its_sleep
+    locator: Abstract 7.6, referrals to St James’s Hospital
+    measure: service
   organ-donation:
   - value: 207 transplants
     period: '2025'
@@ -1344,6 +1404,14 @@ evidence:
     source: hse_maternity_profile
     locator: Trends in maternal health indicators, Pre-eclampsia
     measure: hospital
+  sickle-cell-disease:
+  - value: Approximately 600 people
+    period: Reported in 2025
+    population: People estimated to be living with sickle cell disease in Ireland
+    note: Estimate cited in an Irish clinical review. The source does not give a complete registry count or sampling interval.
+    source: mi_sickle
+    locator: Irish patient population estimate
+    measure: prevalence
   vre:
   - value: 110 resistant isolates
     period: '2025'
@@ -3278,6 +3346,54 @@ guides:
       from your usual pattern, get emergency advice promptly.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/angina/
+  anxiety-children:
+    aliases: anxiety in children child worry school refusal separation anxiety
+    summary: Children can show anxiety through worry, tummy aches or avoiding school and activities. Seek advice when it is persistent
+      or limiting everyday life.
+    evidence_gap: Irish youth surveys often measure symptoms or distress. These results should be described by age group and questionnaire,
+      and do not count clinical diagnoses across children of every age.
+    symptoms:
+    - A child may repeatedly seek reassurance, find separation difficult or avoid participation. Younger children may appear irritable,
+      clingy or complain about headaches or tummy aches rather than describe worry.
+    causes:
+    - Changes, bullying, family stress and developmental factors can influence anxiety. It can also occur alongside learning or sensory
+      difficulties. A supportive conversation can help identify what feels hard for the child.
+    diagnosis:
+    - A GP or other clinician asks how symptoms affect home, sleep, school and friendships, and checks for physical causes. Input
+      from school and the child's own description can help.
+    care:
+    - Support can include predictable routines, small steps to manage feared situations and therapy adapted to age. Work with the
+      school on a realistic plan if attendance or participation is affected.
+    complications:
+    - Long-lasting anxiety can affect learning, sleep and friendships. Sudden changes in behaviour, low mood or avoiding food can
+      signal a need for a broader assessment.
+    help:
+    - Speak to your GP if anxiety is persistent or interfering with ordinary life. Ask the school who can support the child. Get
+      urgent help if you are concerned about immediate safety.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/anxiety-children/
+  anxiety-tips-and-self-help:
+    aliases: anxiety stress nervous worry anxiety symptoms self help
+    summary: Anxiety is common and can show up as worry, tension or physical symptoms. If it persists or starts to affect daily life,
+      a GP can help you work out which support fits.
+    symptoms:
+    - Anxiety can cause racing thoughts, tension, poor sleep, a fast heartbeat or feeling short of breath. Some people avoid activities
+      because they fear how they will feel.
+    causes:
+    - Anxiety involves the body's response to a perceived threat. Stress, illness, trauma, stimulants and other factors can influence
+      it. New physical symptoms may have another cause that needs assessment.
+    diagnosis:
+    - A GP asks about symptoms, duration, effects on day-to-day life and medicines or substances. They may check for physical causes
+      or for patterns such as panic attacks or persistent worry.
+    care:
+    - Talking with someone you trust and taking manageable steps back into usual activity can help. For persistent or disabling symptoms,
+      a clinician can discuss talking therapy, medication or other support.
+    complications:
+    - Avoidance can temporarily relieve anxiety while making everyday tasks harder over time. Sleep, work and relationships can be
+      affected. Help is available even if you are unsure what type of anxiety you have.
+    help:
+    - Contact your GP if anxiety persists, keeps you from doing usual activities or leads you to use alcohol or other substances
+      to cope. Seek urgent help if you feel unable to keep yourself safe.
   aortic-dissection:
     aliases: aortic dissection aorta tear acute aortic syndrome chest back pain
     summary: Aortic dissection happens when blood enters a tear in the wall of the body's main artery. Sudden severe chest or back
@@ -4034,6 +4150,32 @@ guides:
       bleeding, severe pain or collapse requires emergency assessment.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/diverticular-disease-and-diverticulitis/
+  early-premature-menopause:
+    aliases: early menopause premature menopause primary ovarian insufficiency POI under 40 under 45
+    summary: Menopause before age 45 is considered early. Loss of normal ovarian function before 40 needs assessment and can affect
+      fertility, bones and long-term health.
+    evidence_gap: General menopause surveys cannot reliably estimate the frequency of premature ovarian insufficiency in Ireland
+      because they cover different ages and definitions.
+    symptoms:
+    - Periods may become irregular or stop, with hot flushes, vaginal dryness or sleep changes. Symptoms can develop gradually. Missed
+      periods have other possible causes, including pregnancy.
+    causes:
+    - Ovarian function may decline naturally or after some surgery, cancer treatment or other conditions. In some cases no cause
+      is found. Ovarian activity can sometimes fluctuate in premature ovarian insufficiency.
+    diagnosis:
+    - A GP considers menstrual history, treatments and symptoms and may request blood tests or refer to a specialist. Tests and timing
+      depend on age and use of hormonal contraception.
+    care:
+    - The team can discuss hormone treatment when suitable, symptom care and contraception or fertility planning. Discuss whether
+      bone or other health checks are needed.
+    complications:
+    - Lower oestrogen at a younger age can affect bone health. Diagnosis can have emotional and practical effects, especially when
+      pregnancy plans change. Ask about specialist support if needed.
+    help:
+    - Contact a GP if periods change or menopausal symptoms develop before age 45. If you have abruptly stopped having periods, raise
+      the possibility of pregnancy and other causes during assessment.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/early-premature-menopause/
   echocardiogram:
     kind: test
     aliases: echocardiogram echo heart ultrasound heart valves ejection fraction
@@ -4263,6 +4405,32 @@ guides:
       worsening illness.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/gallstones/
+  generalised-anxiety-disorder:
+    aliases: generalised anxiety disorder generalized anxiety disorder GAD persistent worry
+    summary: Generalised anxiety disorder involves persistent, difficult-to-control worry across several areas of life. Treatment
+      can help even when the worries feel hard to name or separate.
+    evidence_gap: Irish figures for anxiety disorders as a group do not identify generalised anxiety disorder separately. Broad self-reported
+      worry also cannot serve as a diagnosis.
+    symptoms:
+    - You may feel tense, restless or unable to switch off. Sleep and concentration can suffer, and worries can recur even when an
+      immediate problem has passed.
+    causes:
+    - Anxiety can persist through a combination of stress, past experiences and susceptibility. Looking for reassurance or avoiding
+      uncertain situations may keep the worry going.
+    diagnosis:
+    - A clinician assesses how wide-ranging and persistent the worry is and how much it interferes with life. They may ask about
+      physical health, mood, substance use and other anxiety patterns.
+    care:
+    - Talking therapies such as cognitive behavioural therapy can help. Medication may be considered with a GP. Ask what to expect
+      from treatment, when to review progress and what support is available while waiting.
+    complications:
+    - Persistent anxiety can make decisions, sleep and work difficult. It can coexist with depression or other anxiety disorders.
+      A change in symptoms may warrant a treatment review.
+    help:
+    - Contact your GP if worry affects functioning or sleep most days. Seek urgent help if you are in crisis or feel unable to keep
+      yourself safe.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/generalised-anxiety-disorder/
   glutaric-aciduria-type-1-ga1:
     aliases: GA1 glutaric aciduria type 1 glutaric acidaemia
     summary: Glutaric aciduria type 1 is an inherited condition that can injure the brain during illness. Newborn screening can find
@@ -4287,6 +4455,32 @@ guides:
       usual feeds. Follow an urgent screening referral even if the baby looks well.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/heel-prick-screening/conditions/
+  gout:
+    aliases: gout urate crystals high uric acid big toe flare joint
+    summary: Gout causes sudden painful inflammation in a joint, often at the base of the big toe. A hot swollen joint with fever
+      can also be due to infection and needs urgent assessment.
+    evidence_gap: Some Irish sources measure urate levels or treatment, and a high urate level alone does not diagnose gout. A directly
+      comparable national diagnosed prevalence estimate was not identified.
+    symptoms:
+    - A flare can start overnight and make the joint so tender that clothing or a sheet hurts. The ankle, knee or an upper limb joint
+      can also be affected.
+    causes:
+    - Urate can build up and form crystals in a joint, where they trigger inflammation. Kidney function, family history and some
+      medicines influence urate, as well as other health factors.
+    diagnosis:
+    - A clinician reviews the pattern, examines the joint and may check urate. Levels can be misleading during a flare. A joint fluid
+      sample can identify crystals or help rule out infection.
+    care:
+    - Different anti-inflammatory medicines can relieve a flare, depending on other conditions and prescriptions. Long-term urate-lowering
+      treatment can prevent recurrence. Ask about blood tests and the target if it is prescribed.
+    complications:
+    - Repeated uncontrolled flares can damage joints. Hard deposits called tophi may develop. Gout can coexist with kidney disease
+      or kidney stones.
+    help:
+    - Contact your GP about a first suspected attack or frequent flares. Arrange urgent assessment if a hot swollen joint comes with
+      fever or you feel generally unwell.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/gout/
   haemochromatosis:
     aliases: haemochromatosis hemochromatosis HFE hereditary iron overload ferritin
     summary: Hereditary haemochromatosis can cause the body to accumulate extra iron. Blood tests help distinguish iron overload
@@ -4311,6 +4505,32 @@ guides:
       starting an iron supplement until the need has been checked.
     sources:
       Clinical guidance and further reading: https://www.saolta.ie/news/hse-west-and-north-west-rolls-out-hereditary-haemochromatosis-hh-education-programme-gp
+  heartburn-and-acid-reflux:
+    aliases: heartburn acid reflux GORD GERD gastro oesophageal reflux
+    summary: Heartburn is a burning feeling behind the breastbone that can occur when stomach contents travel upwards. Trouble swallowing
+      or new, unexplained chest pain needs assessment.
+    evidence_gap: A national estimate for Ireland needs to distinguish occasional heartburn from diagnosed reflux disease. Figures
+      for medication use do not make that distinction.
+    symptoms:
+    - Symptoms may worsen after food, bending or lying down. You may notice a sour taste, regurgitation or a burning feeling that
+      rises towards the throat.
+    causes:
+    - A muscle at the lower end of the food pipe normally helps keep stomach contents down. If it relaxes at the wrong time, acid
+      can irritate the lining. Pregnancy or a hiatus hernia can also contribute.
+    diagnosis:
+    - A GP often starts by asking about symptom timing and medicines. Difficulty swallowing, weight loss or bleeding may need investigation
+      such as endoscopy. Other causes need assessment if the pattern is atypical.
+    care:
+    - A pharmacist can advise on short-term relief. Smaller meals and avoiding lying down shortly after eating may help. A GP can
+      decide whether a course of acid-suppressing medicine is appropriate and when to review it.
+    complications:
+    - Persistent reflux can inflame or narrow the food pipe. Some people develop Barrett's oesophagus, which may need specialist
+      follow-up. Occasional symptoms can be managed differently from daily symptoms.
+    help:
+    - Contact your GP for persistent symptoms, trouble swallowing, frequent vomiting or unexplained weight loss. Seek emergency help
+      for new chest pressure with breathlessness, sweating or faintness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/heartburn-and-acid-reflux/
   heat-exhaustion-and-heatstroke-in-children:
     aliases: heat exhaustion children heatstroke baby overheating heat illness
     summary: Babies and children can overheat quickly. Move a hot, unwell child to a cooler place and get emergency help for changes
@@ -4436,6 +4656,28 @@ guides:
       or a suspected serious clot needs emergency care.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/heel-prick-screening/conditions/
+  hot-flushes:
+    aliases: hot flushes hot flashes night sweats menopause vasomotor symptoms
+    summary: Hot flushes are sudden waves of warmth that can occur around menopause. If symptoms disturb sleep or have no clear explanation,
+      discuss them with a GP.
+    symptoms:
+    - A flush may affect the upper chest, neck or face, sometimes with sweating, a racing sensation or chills afterwards. Similar
+      episodes during sleep can soak clothes or bedding.
+    causes:
+    - Hormonal changes during menopause can affect how the body regulates temperature. Medicines or other conditions can also contribute,
+      especially when the symptoms are new or persistent.
+    diagnosis:
+    - Describe the timing, frequency and any changes in periods or medicines. Mention persistent fever, unexplained weight loss or
+      symptoms that occur despite a comfortable temperature.
+    care:
+    - Cooling the room, dressing in layers and noticing individual triggers can help some people. A GP can discuss hormone or non-hormone
+      treatment if symptoms are frequent or disruptive.
+    complications:
+    - Frequent night sweats can disturb sleep and affect concentration or mood. Sweating that is unexplained or comes with other
+      symptoms deserves assessment for a different cause.
+    help:
+    - Speak to your GP if flushes regularly interrupt sleep or daily activities. Get advice for persistent drenching sweats without
+      an obvious cause or sweats with fever or weight loss.
   hyperemesis-gravidarum:
     aliases: hyperemesis gravidarum severe pregnancy sickness HG vomiting pregnancy
     summary: Hyperemesis gravidarum is severe sickness in pregnancy. When vomiting prevents you from drinking, eating or taking medicines,
@@ -4462,6 +4704,106 @@ guides:
       losing weight. Seek help earlier if you previously had severe pregnancy sickness.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/hyperemesis-gravidarum/
+  idiopathic-pulmonary-fibrosis:
+    aliases: IPF idiopathic pulmonary fibrosis interstitial lung disease lung scarring
+    summary: Idiopathic pulmonary fibrosis causes progressive lung scarring. Persistent breathlessness on exertion and a dry cough
+      are reasons to ask your GP about assessment.
+    symptoms:
+    - People often notice that stairs or usual walks become harder. A persistent dry cough, fatigue or clubbing of the fingertips
+      can occur. Early symptoms can resemble other heart or lung conditions.
+    causes:
+    - Scarring thickens the tissue around the air sacs and reduces the lungs' ability to transfer oxygen. In IPF, a specialist cannot
+      identify another cause for the characteristic pattern of scarring.
+    diagnosis:
+    - A respiratory specialist may arrange high-resolution CT and breathing tests, review medicines and possible exposures, and discuss
+      the scans with an interstitial lung disease team.
+    care:
+    - Antifibrotic treatment can slow progression for some people. Exercise rehabilitation, oxygen when indicated and symptom support
+      can help. Some people are assessed for transplant. Ask the team about a plan for worsening symptoms.
+    complications:
+    - Progression varies. Sudden decline may be due to infection, a clot or an exacerbation that needs urgent assessment. Regular
+      lung function tests can help track change.
+    help:
+    - Contact your GP for unexplained breathlessness or a persistent dry cough. Seek urgent assessment for a significant new change,
+      especially breathlessness at rest or fever.
+  insomnia:
+    aliases: insomnia sleep problems waking early difficulty falling asleep
+    summary: Insomnia can mean trouble falling asleep, staying asleep or waking too early. If it persists and affects daytime function,
+      effective treatment may be available.
+    evidence_gap: Irish surveys of sleep duration or sleep quality do not always identify insomnia disorder. Different measures should
+      be interpreted separately.
+    symptoms:
+    - You may stay awake for long periods, wake often or feel unrefreshed. During the day, it can affect mood, energy, concentration
+      or alertness.
+    causes:
+    - Stress, changes in routine, caffeine, pain, some medicines and other sleep disorders can contribute. Spending longer in bed
+      trying to sleep can sometimes reinforce the pattern.
+    diagnosis:
+    - A GP may ask about bedtime, sleep timing, work shifts, snoring, substances and mood. Keeping a brief sleep diary can help identify
+      patterns and possible triggers.
+    care:
+    - A regular wake time and reviewing caffeine, alcohol and naps may help. Cognitive behavioural therapy for insomnia can help
+      persistent problems. Sleeping tablets have limited roles and need clinical advice.
+    complications:
+    - Poor sleep can affect driving and work safety. Loud snoring with pauses, unusual leg sensations or mood changes can point to
+      another issue that needs assessment.
+    help:
+    - Contact your GP if insomnia lasts, affects your functioning or does not improve with routine changes. Avoid driving or operating
+      machinery if you cannot stay alert.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/insomnia/
+  iron-deficiency-anaemia:
+    aliases: iron deficiency anaemia anemia low ferritin low haemoglobin tiredness
+    summary: Iron deficiency anaemia can cause tiredness, shortness of breath or palpitations. A blood test can confirm it, and finding
+      the cause is an important part of treatment.
+    evidence_gap: A low iron store and anaemia are distinct findings. Irish estimates for dietary iron intake or anaemia from all
+      causes cannot establish the prevalence of iron deficiency anaemia.
+    symptoms:
+    - Symptoms may include fatigue, pale skin, headaches or reduced exercise tolerance. Some people notice brittle nails or a strong
+      urge to chew ice. Mild deficiency can cause no obvious symptoms.
+    causes:
+    - Iron is needed to make haemoglobin, which carries oxygen. Heavy periods, bleeding in the digestive system, pregnancy, low intake
+      or problems absorbing iron can contribute.
+    diagnosis:
+    - A GP may check a full blood count and ferritin. Interpretation depends on other conditions. The clinician may investigate bleeding,
+      diet or absorption according to age and symptoms.
+    care:
+    - Treatment can include oral iron or, in selected cases, iron through a vein. Ask how long treatment should continue and when
+      a repeat test is due. The underlying cause may also need attention.
+    complications:
+    - Untreated anaemia can affect daily functioning and make breathing or heart symptoms worse. An improvement after iron treatment
+      does not remove the need to investigate unexplained blood loss.
+    help:
+    - Contact your GP if tiredness persists or you suspect an iron deficiency. Seek urgent care for breathlessness at rest, significant
+      bleeding, collapse or chest pain.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/iron-deficiency-anaemia/
+  irritable-bowel-syndrome:
+    aliases: IBS irritable bowel syndrome IBS D IBS C bloating bowel pain
+    summary: Irritable bowel syndrome can cause recurring abdominal pain and changes in bowel habits. A GP can check for warning
+      signs and discuss ways to manage symptoms.
+    evidence_gap: Population estimates differ with the diagnostic criteria used. Sources consulted did not provide a directly comparable
+      national estimate for diagnosed IBS in Ireland.
+    symptoms:
+    - Abdominal pain may improve or change after opening your bowels. Diarrhoea, constipation or both can occur, often with bloating.
+      The pattern may change over time.
+    causes:
+    - IBS involves changes in how the bowel and nervous system interact. Movement of the gut, sensitivity to stretching and factors
+      such as some foods or stress can influence symptoms.
+    diagnosis:
+    - A clinician may diagnose IBS from a recurring pattern and a medical assessment. Tests can check for alternatives such as coeliac
+      disease or inflammation where indicated. New warning signs may change the investigations needed.
+    care:
+    - Meals, physical activity and suitable changes to fibre or other foods can help some people. A GP or pharmacist can discuss
+      symptom-specific medicines. A dietitian can guide a limited elimination and reintroduction plan if appropriate.
+    complications:
+    - Symptoms can affect work, sleep and social plans. IBS does not explain rectal bleeding, unexplained weight loss or anaemia,
+      so these findings need separate assessment.
+    help:
+    - Speak to a GP about a persistent change in bowel habits. Seek assessment for blood in stools, loss of weight without trying,
+      or symptoms that wake you at night.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/irritable-bowel-syndrome/
   ivf:
     kind: procedure
     aliases: IVF in vitro fertilisation ICSI assisted human reproduction embryo transfer fertility treatment
@@ -4606,6 +4948,28 @@ guides:
     help:
     - Call emergency services if meningitis or sepsis is possible. Do not wait for a rash, a stiff neck or for all symptoms to appear.
       If illness worsens unexpectedly, seek help again.
+  menopause:
+    aliases: menopause perimenopause postmenopause HRT periods symptoms Ireland
+    summary: Menopause is reached after 12 months without a period due to the natural transition. Perimenopause is the time leading
+      up to it, when symptoms can start even if periods continue.
+    symptoms:
+    - Periods can become irregular, lighter or heavier. Hot flushes, night sweats, changes in sleep or mood, and vaginal dryness
+      can affect daily life. Symptoms can change over time.
+    causes:
+    - The ovaries release eggs less often and hormone levels fluctuate before falling. Symptoms and timing differ between people
+      and can change after medical or surgical treatment.
+    diagnosis:
+    - A GP usually considers age, menstrual pattern and symptoms. Hormonal contraception can make the pattern harder to interpret.
+      Symptoms at a younger age can need further assessment.
+    care:
+    - Treatment can include hormone replacement therapy, non-hormonal options or treatment focused on vaginal symptoms. Discuss your
+      medical history and preferences as well as contraception if still needed.
+    complications:
+    - Changes in oestrogen can affect bone health and vaginal or urinary symptoms. Bleeding after menopause should be assessed, including
+      when the amount is small.
+    help:
+    - Contact your GP if symptoms affect work, sleep or daily life, or appear before age 45. Arrange prompt review of bleeding after
+      menopause and ask about follow-up if taking HRT.
   miscarriage:
     aliases: miscarriage early pregnancy loss threatened miscarriage missed miscarriage
     summary: Bleeding in pregnancy can have several causes. A maternity team can assess whether a pregnancy is continuing and explain
@@ -4704,6 +5068,28 @@ guides:
       with your public health nurse or GP even if the newborn screen was clear.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/newborn-hearing-screening/why-we-screen/
+  obstructive-sleep-apnoea:
+    aliases: obstructive sleep apnoea OSA sleep apnea CPAP pauses snoring
+    summary: Obstructive sleep apnoea interrupts breathing repeatedly during sleep. Loud snoring with pauses or choking sounds and
+      persistent daytime sleepiness is worth discussing with your GP.
+    symptoms:
+    - A partner may notice pauses, gasps or snoring. You may wake unrefreshed or with a headache, or struggle to stay alert in the
+      day. Some people have symptoms without noticing loud snoring.
+    causes:
+    - During sleep the airway can narrow or close briefly. Repeated interruptions disturb sleep and can lower oxygen levels. Several
+      factors, including airway anatomy and weight, can influence risk.
+    diagnosis:
+    - Assessment includes questions about sleep and daytime alertness. A sleep study, often performed at home, checks breathing and
+      oxygen. A specialist interprets the findings and symptom burden together.
+    care:
+    - Treatment can involve a CPAP machine, a dental device or other measures selected with the sleep team. If CPAP is uncomfortable,
+      ask about changing the mask or reviewing the fit rather than abandoning follow-up.
+    complications:
+    - Untreated daytime sleepiness raises accident risk. Sleep apnoea is also associated with high blood pressure. If drowsy, avoid
+      driving and discuss Irish fitness-to-drive requirements with your clinician.
+    help:
+    - Speak to your GP if someone sees repeated breathing pauses or daytime sleepiness is affecting activity. Report any problems
+      staying awake while driving promptly.
   organ-donation:
     kind: service
     aliases: organ donation transplantation Ireland donor opt out family consent living kidney donor
@@ -4727,6 +5113,84 @@ guides:
     help:
     - Use the HSE's organ donation information if you want to check the opt-out process or learn about living donation. Ask your
       treating team about transplant assessment if you have organ failure.
+  overactive-thyroid-hyperthyroidism:
+    aliases: hyperthyroidism overactive thyroid Graves disease thyroid high hormones
+    summary: An overactive thyroid can cause a fast heartbeat, tremor and weight loss. Blood tests and further assessment can identify
+      the cause and guide treatment.
+    evidence_gap: Prescription totals and hospital activity miss untreated cases and can include other thyroid conditions. A directly
+      comparable Irish population figure was not found.
+    symptoms:
+    - Symptoms can include feeling hot, sweating, anxiety, loose stools or losing weight despite eating normally. Graves' disease
+      can also cause eye symptoms such as irritation or prominent eyes.
+    causes:
+    - Excess thyroid hormone speeds up processes around the body. Graves' disease can stimulate the gland, and thyroid nodules or
+      inflammation can also affect hormone levels.
+    diagnosis:
+    - A clinician usually checks thyroid-stimulating hormone and thyroid hormones. Further blood tests or imaging may distinguish
+      Graves' disease, thyroid nodules and other possible causes.
+    care:
+    - Options can include medicines to control hormone levels, radioactive iodine or surgery, depending on the cause. Ask about monitoring
+      and which symptoms or side effects should prompt contact.
+    complications:
+    - Persistent overactivity can affect heart rhythm and bone health. Rarely, severe illness with a very fast heartbeat, fever or
+      confusion needs emergency assessment.
+    help:
+    - Contact your GP for continuing palpitations, tremor or unexplained weight loss. Seek urgent care for severe breathlessness,
+      fever with confusion, collapse or chest pain.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/overactive-thyroid-hyperthyroidism/
+  panic-attacks:
+    aliases: panic attack sudden fear fast heart breathing tingling panic symptoms
+    summary: A panic attack can cause a sudden rush of fear with real physical symptoms. A first or different episode can need medical
+      assessment because other conditions can feel similar.
+    evidence_gap: Surveys of diagnosed panic disorder do not count all individual panic attacks. An equivalent Irish population measure
+      for attacks was not identified.
+    symptoms:
+    - Symptoms may include a pounding heart, trembling, dizziness, tightness in the chest, shortness of breath or tingling. The feeling
+      often builds quickly and then eases.
+    causes:
+    - The body's threat response can activate strongly, sometimes without an obvious trigger. Rapid breathing can make light-headedness
+      or tingling worse. Physical illness or substances can also cause similar symptoms.
+    diagnosis:
+    - A clinician asks how the episode started, how long it lasted and what else happened. They can assess heart, lung or other causes
+      if features do not fit a familiar pattern.
+    care:
+    - If a clinician has helped you recognise panic attacks, use the plan you agreed, such as slowing your breathing and allowing
+      the feeling to pass. Repeated episodes may respond to talking therapy or other treatment.
+    complications:
+    - Fear of future attacks can lead to avoiding places or activities. A single attack does not establish panic disorder. Recurrent
+      attacks and ongoing worry can need a separate assessment.
+    help:
+    - Get urgent assessment for new chest pain, fainting, obvious breathing difficulty or a first episode that differs from anything
+      you have had before. Contact your GP when attacks recur.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/panic-attacks/
+  panic-disorder:
+    aliases: panic disorder repeated panic attacks fear of panic avoidance
+    summary: Panic disorder involves repeated unexpected panic attacks and continued worry or changes in behaviour because another
+      might happen.
+    evidence_gap: Broad anxiety survey estimates do not identify clinically diagnosed panic disorder. An Irish national estimate
+      specific to the disorder was not identified.
+    symptoms:
+    - Attacks can include racing heartbeat, shaking, breathlessness and fear that something dangerous is happening. Between attacks,
+      you may monitor physical sensations or avoid places associated with them.
+    causes:
+    - Panic can form a cycle in which a physical sensation is interpreted as dangerous, increasing anxiety and symptoms. The pattern
+      can persist even when there is no obvious external threat.
+    diagnosis:
+    - A clinician considers whether the attacks recur unexpectedly and whether worry or avoidance continues between them. They can
+      also check for physical conditions or substances that could account for similar symptoms.
+    care:
+    - Treatment may include cognitive behavioural therapy that gradually helps people face feared sensations and situations. A GP
+      can discuss whether medication is appropriate and how to review response.
+    complications:
+    - The disorder can restrict travel, work or social life. It can occur alongside agoraphobia or depression, which are worth mentioning
+      when planning treatment.
+    help:
+    - Ask your GP for help if attacks recur or avoidance is growing. Seek urgent medical assessment for unexplained collapse, severe
+      chest pain or a new symptom that does not fit your usual pattern.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/panic-disorder/
   peak-flow-test:
     kind: test
     aliases: peak flow peak expiratory flow PEF asthma monitoring peak flow meter
@@ -4824,6 +5288,32 @@ guides:
     help:
     - Contact a GP urgently for breathlessness, pain on breathing, coughing blood or suspected pneumonia in someone at higher risk.
       Get emergency help for severe breathing problems or confusion.
+  postmenopausal-bleeding:
+    aliases: postmenopausal bleeding spotting after menopause vaginal bleeding after periods stop
+    summary: Bleeding after menopause needs a GP assessment, even if it happens once or is only light spotting. There are several
+      possible causes, including changes that need treatment.
+    evidence_gap: Irish cancer figures do not measure all postmenopausal bleeding. Many people assessed for the symptom have a non-cancerous
+      cause.
+    symptoms:
+    - Bleeding may appear as pink or brown discharge, spotting on tissue or a larger amount of blood. Tell the clinician when your
+      periods stopped and whether you are taking HRT.
+    causes:
+    - Thinning of vaginal or womb tissue and non-cancerous growths are possible causes. Cancer of the womb lining is another reason
+      the symptom is investigated.
+    diagnosis:
+    - A GP reviews bleeding and medicines and may refer for an examination. Tests can include vaginal ultrasound or a sample from
+      the womb lining, depending on findings.
+    care:
+    - Treatment depends on the cause. The clinician might manage vaginal dryness, remove a polyp or arrange specialist treatment
+      for a more serious finding.
+    complications:
+    - Even when the first episode settles, a repeat episode can need reassessment. Ask how you will receive results, and whether
+      new bleeding means you should contact the service directly.
+    help:
+    - Contact your GP promptly for any bleeding after menopause. Get urgent help if bleeding is heavy and you feel dizzy, faint or
+      unwell.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/postmenopausal-bleeding/
   postpartum-haemorrhage1:
     aliases: postpartum haemorrhage PPH heavy bleeding after birth obstetric haemorrhage
     summary: Heavy bleeding after birth can quickly become an emergency. If you feel faint or weak or are passing large clots with
@@ -4925,6 +5415,29 @@ guides:
       or you are waking up short of breath.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/shortness-breath/
+  sickle-cell-disease:
+    aliases: sickle cell disease SCD sickle cell crisis inherited haemoglobin sickle cell anaemia
+    summary: Sickle cell disease is an inherited blood condition. Fever, chest symptoms or severe pain that is difficult to control
+      can need urgent treatment.
+    emergency: If a person with sickle cell disease has severe breathing difficulty, signs of stroke or collapses, call
+    symptoms:
+    - Pain episodes can develop suddenly in bones, joints or other areas. Anaemia can cause fatigue or breathlessness. A fever can
+      be particularly important even when there are no other signs of infection.
+    causes:
+    - A change in haemoglobin can make red blood cells rigid under certain conditions. These cells break down sooner and can obstruct
+      small blood vessels, causing pain or organ injury.
+    diagnosis:
+    - A blood test can identify the type of haemoglobin. A specialist can explain the diagnosis, how it differs from having sickle
+      cell trait and whether relatives might benefit from testing.
+    care:
+    - Care can include infection prevention, a personalised pain plan and medicines or transfusions where indicated. Haematology
+      teams monitor for complications and advise on hydration, travel and pregnancy.
+    complications:
+    - Complications can include serious infection, stroke and acute chest syndrome. The latter can cause fever, chest pain and breathing
+      symptoms and requires urgent hospital assessment.
+    help:
+    - Follow the specialist team's emergency plan. Seek urgent assessment for fever, new chest pain, breathlessness or severe pain
+      not controlled by your plan. Mention sickle cell disease promptly to emergency staff.
   spirometry:
     kind: test
     aliases: spirometry breathing test FEV1 FVC asthma COPD lung function
@@ -4977,6 +5490,32 @@ guides:
       bleeding or light-headedness.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/spotting/
+  underactive-thyroid-hypothyroidism:
+    aliases: hypothyroidism underactive thyroid low thyroid TSH levothyroxine
+    summary: An underactive thyroid can cause tiredness, constipation and sensitivity to cold. Blood tests can determine whether
+      thyroid hormone replacement is needed.
+    evidence_gap: Irish newborn screening figures concern congenital hypothyroidism and cannot estimate the frequency of acquired
+      underactive thyroid in adults.
+    symptoms:
+    - Signs may develop gradually and include dry skin, feeling cold, constipation, slower thinking or changes in weight or periods.
+      These symptoms can also occur with other conditions.
+    causes:
+    - The thyroid makes hormones that affect energy use in many tissues. Autoimmune disease or past treatment to the thyroid can
+      reduce its function. Some medicines can also influence test results.
+    diagnosis:
+    - A clinician usually checks thyroid-stimulating hormone and free thyroid hormone. Different patterns require different follow-up.
+      Tell the clinician if you are pregnant, take biotin or have had previous thyroid treatment.
+    care:
+    - Levothyroxine can replace thyroid hormone when needed. A clinician adjusts the dose using tests and symptoms. Ask about taking
+      it consistently and about relevant interactions with iron or other medicines.
+    complications:
+    - Untreated disease can affect cholesterol, fertility or pregnancy. A dose that is too high can also cause problems, which is
+      why blood monitoring remains important after symptoms improve.
+    help:
+    - Speak to your GP about persistent symptoms or pregnancy planning if you have thyroid disease. Contact your prescriber promptly
+      if you become pregnant while on replacement treatment.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/underactive-thyroid-hypothyroidism/
   urinary-tract-infections-uti:
     aliases: urinary tract infection UTI urine infection cystitis kidney infection
     summary: A urinary tract infection can cause burning and frequent urination. Fever, pain in the side or vomiting can mean the
@@ -5029,6 +5568,32 @@ guides:
       the side or vomiting. Report contractions or a change in movements to maternity triage.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/urine-infections-pregnancy/
+  vitamin-b12-or-folate-deficiency-anaemia:
+    aliases: vitamin B12 folate deficiency anaemia macrocytic pernicious anaemia
+    summary: A vitamin B12 or folate deficiency can affect blood cell production. B12 deficiency can also cause nerve symptoms, sometimes
+      before anaemia is detected.
+    evidence_gap: Studies of vitamin levels cannot establish how many people have anaemia caused by the deficiency. A national count
+      matching both the cause and the anaemia diagnosis was not identified.
+    symptoms:
+    - Fatigue, breathlessness and a sore tongue can occur. With B12 deficiency, tingling, numbness, changes in balance or memory
+      difficulties can be important signs.
+    causes:
+    - Both vitamins are needed for healthy cell production. Low intake, poor absorption, certain medicines or a condition such as
+      pernicious anaemia can contribute.
+    diagnosis:
+    - A GP may check a blood count and vitamin levels. Other tests can help clarify the cause. Tell the clinician about diet, previous
+      stomach surgery or medicines and supplements.
+    care:
+    - Treatment depends on which vitamin is low and why. B12 can be given by injection or orally, depending on the cause. The clinician
+      considers B12 status before giving folic acid alone.
+    complications:
+    - Untreated B12 deficiency can cause neurological problems that may not fully reverse. Some causes require ongoing replacement
+      and follow-up even after blood counts improve.
+    help:
+    - Speak to your GP for persistent tiredness, tingling or poor balance. Do not delay assessment of new neurological symptoms while
+      trying a vitamin supplement.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/vitamin-b12-or-folate-deficiency-anaemia/
   vre:
     aliases: VRE vancomycin resistant enterococci resistant bacteria hospital screening
     summary: VRE are bacteria that can be carried in the gut without problems. They can be harder to treat if they cause an infection.
