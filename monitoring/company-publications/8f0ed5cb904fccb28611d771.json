@@ -1,0 +1,111 @@
+{
+  "story_fingerprint": "8f0ed5cb904fccb28611d771",
+  "company": "WMT",
+  "date": "2026-11-20",
+  "status": "prepared",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to all factual, editorial, image, test, CI, deployment and live-verification gates.",
+  "story_thesis": "Walmart's faster-growing advertising, membership and ecommerce activities must produce enough operating leverage and cash to justify a sharply heavier omnichannel capital programme.",
+  "article_path": "content/wealth/walmart-profit-mix-capex-cash.md",
+  "canonical_url": "https://compound.ie/wealth/walmart-profit-mix-capex-cash/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/earningsreleasefy27q3.htm",
+    "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/earningspresentationfy27.htm",
+    "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/wmt-20261119.htm"
+  ],
+  "identity": {
+    "issuer": "Walmart Inc.",
+    "CIK": 104169,
+    "accession": "0000104169-26-000168",
+    "fiscal_year": 2027,
+    "fiscal_period": "Q3",
+    "period_end": "2026-10-31",
+    "filing_date": "2026-11-19",
+    "currency": "USD"
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, both content inventories, the live site, the prior 14 days of posts, open and merged PRs, company-publication records and concurrent Compound/FairPath workflows. Walmart has a maintained stock profile but no canonical article answering the profit-mix, capex and cash-conversion question. PR #190 and #191 maintain the stock profile and earnings layout; neither is an overlapping analysis. No active attempt uses this fingerprint.",
+  "claim_checks": [
+    {
+      "claim": "Q3 total revenue $188.835bn, +5.2%",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results release income statement and presentation; prior-year total revenue $179.496bn",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Global ecommerce +17%, global advertising +25%, global membership-fee revenue +17%",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results highlights and presentation; each metric retains Walmart's stated definition and is not treated as a GAAP revenue line",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Walmart US ecommerce +23% and advertising +37%",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Walmart US segment highlights",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Membership and other income $2.078bn versus $1.727bn, +20.3%",
+      "source_indexes": [0],
+      "location_or_arithmetic": "GAAP statement of income; article explicitly distinguishes this line from membership-fee growth",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "FY2027 sales guidance +4.9% to +5.2% and adjusted operating-income guidance +8.0% to +8.6% in constant currency",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "19 November outlook; midpoint spread = 8.3% - 5.05% = 3.25 percentage points, rounded to 3.3",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Q3 GAAP operating income $7.770bn, +16%; adjusted operating income +5.5% constant currency; gross margin +28 basis points",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results highlights and reconciliations; GAAP and adjusted measures are labelled separately",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Nine-month operating cash flow $29.436bn, capex $22.621bn and non-GAAP free cash flow $6.815bn",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Cash-flow and free-cash-flow tables; 22.621 / 29.436 = 76.85%, rounded to roughly 77%",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Capex increased about 21%, operating cash flow about 7% and free cash flow declined about 23%",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Capex 22.621 versus 18.627 = +21.44%; OCF 29.436 versus 27.452 = +7.23%; FCF 6.815 versus 8.825 = -22.78%",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Annual capex guidance approximately 4% of net sales, previously approximately 3.5%",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Fiscal 2027 guidance table",
+      "result": "verified in separate claim pass"
+    }
+  ],
+  "fact_check_notes": [
+    "The article does not infer margins for advertising, ecommerce or membership because Walmart does not disclose complete stand-alone economics for those activities.",
+    "Reported and adjusted operating income are kept separate; the GAAP 16% increase is not presented as underlying mix growth.",
+    "No current price, consensus estimate, quotation or unsupported forecast is included. Facts, management guidance and Compound interpretation are distinguished."
+  ],
+  "unresolved_material_claims": [],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Walmart_store_front.jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Walmart_store_front.jpg",
+    "photographer": "Wikideas1",
+    "license": "CC0 1.0",
+    "capture_date": "2024-06-08",
+    "description": "Walmart store and car park in Onalaska, Wisconsin; archival image cropped and resized for publication",
+    "unique_asset": true,
+    "source_sha256": "181825efa1aa5fc2ca728abc4e422db5599645508c00274c10d560d4a38b0588",
+    "published_image_sha256": "75714d67ba3d092e37841a02b7343d65c86f3fbb213ccff6252d5175f667d653"
+  },
+  "gates": {
+    "offline_tests": "passed: 51 tests passed (news images, finance discovery, earnings review/SEO, stock inline ads and pending-research ads)",
+    "build": "passed: production canonical build completed with 396 articles, 870 tags, 35 pages and 62 tools",
+    "render": "passed: canonical, metadata, indexing, internal links, source credit, sitemap, finance catalogue, cover and 1200x675 social image inspected",
+    "ads": "passed: production render includes the configured ca-pub-6115783809711785 loader; article display slots are blank in the existing site configuration, so no fixed slot was invented",
+    "ci": "pending",
+    "deployment": "pending"
+  },
+  "article_sha256": "4b1ca3321566bda9364545b3dbf6ffe2ae7fa28664eae7a67921d6a555901be3",
+  "publication_state": "prepared_not_published",
+  "new_articles_published": 0
+}

@@ -1,0 +1,117 @@
+{
+  "story_fingerprint": "e1abda343d9a72aa16422cff",
+  "company": "PANW",
+  "date": "2026-11-20",
+  "status": "prepared",
+  "publication_kind": "new_analysis",
+  "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to all factual, editorial, image, test, CI, deployment and live-verification gates.",
+  "story_thesis": "Palo Alto Networks' acquisition-supported growth must be assessed against gross-margin compression, stock compensation and a materially larger diluted share base.",
+  "article_path": "content/wealth/palo-alto-growth-margin-acquisitions.md",
+  "canonical_url": "https://compound.ie/wealth/palo-alto-growth-margin-acquisitions/",
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000030/ex991q127earningsrelease.htm",
+    "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000033/panw-20261031.htm"
+  ],
+  "identity": {
+    "issuer": "Palo Alto Networks, Inc.",
+    "CIK": 1327567,
+    "release_accession": "0001327567-26-000030",
+    "filing_accession": "0001327567-26-000033",
+    "fiscal_year": 2027,
+    "fiscal_period": "Q1",
+    "period_end": "2026-10-31",
+    "filing_date": "2026-11-18",
+    "currency": "USD"
+  },
+  "duplicate_check": "Checked EDITORIAL_TOPIC_INDEX.md, both content inventories, the live site, the prior 14 days of posts, open and merged PRs, company-publication records and concurrent Compound/FairPath workflows. Palo Alto Networks has a maintained stock profile but no canonical article answering the acquisition-growth, margin and dilution question. PR #190 only updates the stock profile. No active attempt uses this fingerprint.",
+  "claim_checks": [
+    {
+      "claim": "Q1 revenue $3.445bn, +39%",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results release and 10-Q statements of operations; prior-year revenue $2.474bn",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "NGS ARR $9.73bn, +66%, and RPO $21.0bn, +35% year on year",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results highlights and 10-Q operating metrics; article states NGS ARR is not GAAP revenue",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Network & AI Security $2.282bn +20%; Cortex $647m +53%; Idira $353m; Corporate & Other $163m +10%",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q segment revenue table; Idira is identified as CyberArk identity-security revenue and Cortex growth as primarily driven by Chronosphere observability revenue",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Idira represented about 10% of revenue; excluding only Idira produces a 25% mechanical comparison, not organic growth",
+      "source_indexes": [1],
+      "location_or_arithmetic": "353 / 3,445 = 10.25%; (3,445 - 353) / 2,474 - 1 = 24.98%; limitation stated because other acquisitions remain",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Total gross margin 68.0% versus 74.2%; product 65.4% versus 79.5%; subscription and support 68.5% versus 73.1%",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q gross-margin table; total decline = 6.2 percentage points",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "GAAP operating income $96m versus $309m; non-GAAP reconciliation includes $622m share-compensation-related charges, $55m acquisition costs and $282m acquired-intangible amortisation",
+      "source_indexes": [0, 1],
+      "location_or_arithmetic": "Results reconciliation and 10-Q operations statement; measures are kept separate",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "RPO $21.0bn with $9.4bn expected over 12 months, versus $21.2bn at 31 July 2026",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q deferred-revenue/RPO note and MD&A operating-metrics table; sequential change = -$0.2bn",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Operating cash flow $1.929bn; share-based compensation for equity awards added back $596m, about 31% of OCF",
+      "source_indexes": [1],
+      "location_or_arithmetic": "Cash-flow statement; 596 / 1,929 = 30.9%",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "Diluted weighted-average shares 838m versus 709m, about +18%; no quarterly repurchases",
+      "source_indexes": [1],
+      "location_or_arithmetic": "10-Q EPS and repurchase notes; 838 / 709 - 1 = 18.2%",
+      "result": "verified in separate claim pass"
+    },
+    {
+      "claim": "FY2027 guidance: revenue +26% to +27%, non-GAAP operating margin 29.5%, adjusted free-cash-flow margin 38%",
+      "source_indexes": [0],
+      "location_or_arithmetic": "Results release financial outlook; management guidance, not Compound forecast",
+      "result": "verified in separate claim pass"
+    }
+  ],
+  "fact_check_notes": [
+    "The article does not label the 25% ex-Idira comparison organic because Chronosphere and other acquisitions remain in the revenue base.",
+    "RPO and NGS ARR definitions and limitations are stated; neither is treated as guaranteed GAAP revenue.",
+    "Stock-compensation cash-flow addback is not called fictional cash; the analysis links it to per-share dilution. No current price, consensus estimate, quotation or unsupported forecast is used."
+  ],
+  "unresolved_material_claims": [],
+  "image": {
+    "source": "https://commons.wikimedia.org/wiki/File:Palo_Alto_Networks_Headquarters_South_Side_2018.jpg",
+    "remote_asset": "https://upload.wikimedia.org/wikipedia/commons/7/75/Palo_Alto_Networks_Headquarters_South_Side_2018.jpg",
+    "photographer": "Namaste jinx",
+    "license": "CC BY-SA 4.0",
+    "capture_date": "2018-10-01",
+    "description": "Palo Alto Networks corporate campus in Santa Clara, California; archival image cropped and resized under the same licence",
+    "unique_asset": true,
+    "source_sha256": "b2d9464d27dcec4cf3bff526725d0a752c2cb7cead0dedfe225ad27e2781cefd",
+    "published_image_sha256": "f324565c3bfc9dfb0d4c9357ded1ded5bb3e238cbac6915087923b29efe84d31"
+  },
+  "gates": {
+    "offline_tests": "passed: 51 tests passed (news images, finance discovery, earnings review/SEO, stock inline ads and pending-research ads)",
+    "build": "passed: production canonical build completed with 396 articles, 870 tags, 35 pages and 62 tools",
+    "render": "passed: canonical, metadata, indexing, internal links, source credit, sitemap, finance catalogue, cover and 1200x675 social image inspected",
+    "ads": "passed: production render includes the configured ca-pub-6115783809711785 loader; article display slots are blank in the existing site configuration, so no fixed slot was invented",
+    "ci": "pending",
+    "deployment": "pending"
+  },
+  "article_sha256": "51fcdcc806f348738269e6ab420c4767327c509eeadb81c831aa5b91deb6105e",
+  "publication_state": "prepared_not_published",
+  "new_articles_published": 0
+}
