@@ -1,4 +1,4 @@
-"""Audit the complete 500+10 stock register and preserve vetted company labels."""
+"""Audit the complete 500+11 stock register and preserve vetted company labels."""
 import json
 import re
 from pathlib import Path
@@ -14,15 +14,15 @@ def current_register():
     return registry, watchlist
 
 
-def test_all_510_company_directory_entries_have_unique_valid_identity_and_readable_names():
+def test_all_511_company_directory_entries_have_unique_valid_identity_and_readable_names():
     registry, watchlist = current_register()
     active = [entry for entry in registry["members"] if entry["active"]]
     extra = watchlist["listed"]
     assert len(active) == 500
-    assert len(extra) == 10
+    assert len(extra) == 11
     assert len({item["symbol"] for item in active}) == 500
     slugs = [item["symbol"].lower() for item in active] + [item["slug"] for item in extra]
-    assert len(slugs) == len(set(slugs)) == 510
+    assert len(slugs) == len(set(slugs)) == 511
 
     for item in active:
         assert isinstance(item["cik"], int) and item["cik"] > 0
