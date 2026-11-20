@@ -314,7 +314,7 @@ For the complete register (including 510+ company profiles), open
 - [Rent Tax Credit in Ireland: Who Can Claim It and How](https://compound.ie/wealth/rent-tax-credit-ireland-who-can-claim/) — **Wealth**
 - [Rent took 28.5% of disposable income in Fingal on the CSO’s 2024 measure](https://compound.ie/news/irish-rent-burden-cso-fingal-2024/) — **Wealth**
 - [Rent-a-Room Relief Could Rise to €20,000 in Budget 2027](https://compound.ie/news/rent-a-room-relief-20000-budget-2027/) — **Wealth**
-- [Retatrutide Ireland: what is it, can you get it, and how does it compare with Mounjaro, Wegovy and Ozempic?](https://compound.ie/health/retatrutide-ireland/) — **Health**
+- [Retatrutide in Ireland: approval, Phase 3 results and side effects](https://compound.ie/health/retatrutide-ireland/) — **Health**
 - [Retention Planning Permission Ireland: Costs, Risks and What Happens If It Is Refused](https://compound.ie/wealth/retention-planning-permission-ireland/) — **Wealth**
 - [Revolut Faces a Year of Italian Supervision. What Does That Mean for Its Growth?](https://compound.ie/wealth/revolut-italy-judicial-supervision-aml-growth-costs/) — **Wealth**
 - [Revolut Launches Joint Investment Accounts in Ireland: What Couples Need to Know](https://compound.ie/news/revolut-joint-investment-accounts-ireland-2026/) — **Wealth**

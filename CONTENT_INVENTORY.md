@@ -88,7 +88,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Pregnancy week by week in Ireland: GP, hospital and scan schedule](https://compound.ie/health/pregnancy-week-by-week-ireland-appointments/)
 - [Prescription opioid use rises more than 10% under Ireland's medical card scheme](https://compound.ie/news/prescription-opioid-use-ireland-gms-2026/)
 - [Ramipril in Ireland | ACE, bradykinin and follow-up blood tests](https://compound.ie/health/medicines/ramipril/)
-- [Retatrutide Ireland: what is it, can you get it, and how does it compare with Mounjaro, Wegovy and Ozempic?](https://compound.ie/health/retatrutide-ireland/)
+- [Retatrutide in Ireland: approval, Phase 3 results and side effects](https://compound.ie/health/retatrutide-ireland/)
 - [Salbutamol inhalers in Ireland: how Ventolin works and when to get help](https://compound.ie/health/medicines/salbutamol/)
 - [Sequential combined HRT in Ireland | Cyclical progestogen and what bleeding can mean](https://compound.ie/health/medicines/sequential-combined-hormone-replacement-therapy/)
 - [Sertraline in Ireland | Serotonin reuptake and assessing change over time](https://compound.ie/health/medicines/sertraline/)
