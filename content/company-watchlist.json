@@ -1,5 +1,5 @@
 {
-  "checked": "2026-11-19",
+  "checked": "2026-11-20",
   "listed": [
     {
       "slug": "spcx",
@@ -117,24 +117,24 @@
       "slug": "openai",
       "name": "OpenAI",
       "sector": "Artificial intelligence",
-      "summary": "AI models, enterprise deployments and specialist legal intelligence, including the 17 November Astra for Law 6.2 benchmark update.",
+      "summary": "Developer and enterprise AI systems, including specialist legal research and an 18 November accounting workflow for reconciliation and month-end reporting.",
       "website": "https://openai.com/",
       "latest_development": {
-        "date": "2026-11-17",
-        "text": "OpenAI updated its Astra for Law configuration built on GPT-6.2 Astra and opened requests to all ChatGPT Enterprise customers through Trusted Access. On 120 LAB-AA assignments the configuration achieved 20.8% full credit, against 15.0% for general GPT-6.2 Astra. No specialist-product revenue or adoption totals were disclosed.",
-        "source": "https://openai.com/index/astra-law-6-2/"
+        "date": "2026-11-18",
+        "text": "OpenAI's 18 November ChatGPT release notes introduced an Accounting plugin for reconciling transactions, drafting invoice entries and preparing month-end reports. Desktop and workspace configuration apply; no separately published fee, independent accuracy score or Irish package integration was disclosed.",
+        "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
       }
     },
     {
       "slug": "anthropic",
       "name": "Anthropic",
       "sector": "Artificial intelligence",
-      "summary": "Claude AI models, developer APIs and enterprise agents. On 18 November it priced a 980-million-share Nasdaq IPO at $83 per share, with trading expected—not yet verified—on 19 November.",
+      "summary": "Anthropic now trades on Nasdaq as ANT: priced its 980-million-share initial public offering at $83 on 18 November, opened at $111.50 and first closed at $97.17 on 19 November. Its former private-company hub awaits a separately validated canonical migration.",
       "website": "https://www.anthropic.com/",
       "latest_development": {
-        "date": "2026-11-18",
-        "text": "Anthropic confirmed pricing its Class A IPO at $83 per share on 18 November: 980m base shares, including 956,351,354 primary and 23,648,646 secondary. Nasdaq trading under ANT was expected on 19 November, but had not been confirmed at this research check; the offer was scheduled to close 20 November subject to conditions.",
-        "source": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+        "date": "2026-11-19",
+        "text": "Nasdaq confirmed on 19 November that Anthropic began public trading under ANT and opened at $111.50 per share. Reuters reported the first session close was $97.17. The $83 issuer offering price on 18 November is a separate allocation price. Company is now publicly listed, and the existing private-directory profile awaits canonical migration pending PR #198.",
+        "source": "https://www.nasdaq.com/newsroom/anthropic-marks-ipo-at-nasdaq"
       }
     },
     {
@@ -189,12 +189,12 @@
       "slug": "blue-origin",
       "name": "Blue Origin",
       "sector": "Space technology",
-      "summary": "Launch vehicles, engines and space infrastructure.",
+      "summary": "Privately held launch, engine and space-infrastructure firm; New Glenn selected under Google's 19 November Project Suncatcher launch agreement targeting a first dedicated mission in Q1 2029.",
       "website": "https://www.blueorigin.com/",
       "latest_development": {
-        "date": "2026-11-10",
-        "text": "Blue Origin reported that its modified BE-4 main oxygen valve passed qualification tests following the May hotfire anomaly; fleet retrofit is underway and investigation closure was anticipated later in November. No new flight date was confirmed.",
-        "source": "https://www.blueorigin.com/news/gs1-3-hotfire-updates"
+        "date": "2026-11-19",
+        "text": "Blue Origin said Google selected New Glenn for the first dedicated heavy-lift launch of Project Suncatcher's planned solar-powered TPU computing satellites, targeted for Q1 2029. Price, launch cadence, margins and satellite compute economics were not disclosed; the mission has not flown.",
+        "source": "https://www.blueorigin.com/news/google-selects-new-glenn-for-project-suncatcher"
       }
     },
     {
@@ -245,5 +245,5 @@
       "website": "https://www.lego.com/en-us/aboutus"
     }
   ],
-  "notes": "Editorial watchlist only. Listed securities and private businesses are distinct. No valuation or quoted price is inferred. Company status must be rechecked before a new report."
+  "notes": "Editorial watchlist with historical private-company coverage. Anthropic confirmed Nasdaq ANT trading 19 November 2026 and is temporarily retained here only for existing canonical/profile compatibility until the separately reviewed /stocks/ant/ migration PR #198 passes CI and merges. Never describe it as privately held after the listing. No valuation or quoted price for privately held businesses is inferred. Company status must be rechecked before every report."
 }
