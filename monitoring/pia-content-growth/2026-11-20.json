@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-20",
+  "timezone": "Europe/Dublin",
+  "run_type": "pia_content_growth",
+  "topic_fingerprint": "2026-10-new-ireland-assurance-boi-group-related-brand-original-faq-checked-2026-11-20",
+  "action": "source_backed_related_brand_update_to_existing_provider_comparison",
+  "status": "revised_pending_exact_head_ci",
+  "new_articles": 0,
+  "existing_canonical_page_updates": 1,
+  "canonical_urls": [
+    "https://compound.ie/pia/providers/",
+    "https://compound.ie/pia/"
+  ],
+  "source_urls": [
+    "https://www.newireland.ie/investments/individual-investment-account/",
+    "https://www.newireland.ie/investments/individual-investment-account-faqs/",
+    "https://www.revenue.ie/ga/corporate/press-office/press-releases/2026/pr-100726-irish-investment-account.aspx",
+    "https://www.oireachtas.ie/en/bills/bill/2026/98/",
+    "https://data.oireachtas.ie/ie/oireachtas/bill/2026/98/eng/ver_a/b98a26d.pdf",
+    "https://www.aib.ie/make-a-plan/investments/personal-investment-account",
+    "https://personalbanking.bankofireland.com/save-and-invest/investments/personal-investment-account/",
+    "https://www.irishlife.ie/investments/pia/",
+    "https://www.ptsb.ie/saving-and-investing/investments/state-investment-account/",
+    "https://www.zurich.ie/blog/a-guide-to-irelands-new-investment-account/"
+  ],
+  "research": {
+    "material_discovery": "New Ireland first-party FAQ last dated October 2026, independently checked 20 November, documents planned IIA and bond/share funds; surfaced as related group source rather than claiming a sixth independently available provider",
+    "ownership": "Official New Ireland footer identifies New Ireland Assurance Company plc as a Bank of Ireland Group insurer; kept separate from bank's existing public statement without suggesting independence or two final products.",
+    "availability": "No application process identified, product not yet open. Annual, dealing, fund and FX prices not published; no price set to zero.",
+    "legislative_status": "The pending Finance (No. 2) Bill 2026 uses Individual Investment Account (IIA); PIA remains consumer shorthand. Committee-amended text 12 Nov verified in prior run. No enacted law or confirmed commencement independently established 20 Nov.",
+    "conditional_launch": "Revenue notice dated 7 Oct says 1 July 2027 conditional on legislation. New Ireland website claims July but its footnote identifies information as at October and conditional on legislation.",
+    "source_blockers": [
+      "Oireachtas Bill 98 landing still returned HTTP 403; cannot independently confirm latest parliamentary stage or enactment.",
+      "No verified complete PIA-specific numeric fee schedule from the six sources."
+    ]
+  },
+  "deduplication": "Reviewed editorial topic index, content inventory and 30-day existing PIA guides/calculators, PIA ledgers through 19 Nov, recent PRs including #183 #184 and overlapping workflows. Expand canonical /pia/providers/, no duplicate provider or news article.",
+  "tracker": {
+    "path": "content/pia-launch-tracker.yml",
+    "changed": false,
+    "global_checked_retained": "2026-11-15",
+    "reason": "New provider launch intent does not change legislative milestone, opening or fees; official stage remains blocked."
+  },
+  "provider_data": {
+    "path": "content/pia-providers.yml",
+    "provider_card_count": 5,
+    "verified_first_party_primary_statements": 5,
+    "related_source_added": "New Ireland Assurance (a Bank of Ireland Group insurer)",
+    "related_to": "Bank of Ireland provider card",
+    "related_source_checked": "2026-11-20",
+    "fees": "All primary provider card fee fields remain 'Not published'; New Ireland FAQ also does not publish numerical fees",
+    "csv": "compound/site/static/pia-provider-sources.csv",
+    "export_rule": "five sorted primary provider rows, all source check dates updated to 2026-11-20 after recheck; guarded exporter output matches",
+    "rendering": "Linked and dated related brand evidence displayed as a distinct aside within Bank of Ireland card; no invented sixth priced or live product"
+  },
+  "recovery": {
+    "original_date": "2026-11-19",
+    "guide_url": "https://compound.ie/wealth/personal-investment-account-ireland/",
+    "guide_live_fingerprint": "Verified public 20 Nov: 'What happens to a proposed PIA if the account holder dies?' and proposed section 747Y appear.",
+    "tracker_url": "https://compound.ie/pia/#pia-launch-tracker",
+    "tracker_live_fingerprint": "Verified public 20 Nov: 12 November committee-amended Bill No. 98a milestone appears.",
+    "ads_social": "Raw production AdSense/CMP and OG/Twitter image HTTP checks not yet independently available from text-mode reader, continue verification; do not claim full asset QA."
+  },
+  "qa": {
+    "source_and_fees": "first-party FAQ and ownership footer verified; no invented provider fees",
+    "regressions": "Initial head test failed at test_pia_source_export.py because fixed five-provider count; new head awaiting full CI test/performance; hardcoded tests preserved",
+    "live_new_provider": "Pending live verification of related-brand link and text on /pia/providers/ after successful merge and Pages deployment",
+    "ads": "pending exact public HTML verification",
+    "images": "no hero/image changes; preserve existing canonical assets"
+  },
+  "production_branch": "claude/clever-babbage-uibieq",
+  "work_branch": "automation/pia-new-ireland-provider-2026-11-20",
+  "live_http_verified": false,
+  "verified_live_result": null,
+  "human_review": "not asserted",
+  "communication": "no email or social posts",
+  "quality_gate_note": "Initial six-card proposal triggered existing required CI regression tests that freeze five named primary providers. No tests were changed or weakened; proposal revised to retain five card identities and include New Ireland as clearly labelled related-group first-party source, with source-URL validation and synced CSV. Fresh exact-head CI is mandatory."
+}
