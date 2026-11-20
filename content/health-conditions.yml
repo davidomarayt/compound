@@ -36,6 +36,9 @@ sources:
   ncri_latest:
     name: National Cancer Registry Ireland, Cancer in Ireland 1994–2023
     url: https://www.ncri.ie/en/media/900/download
+  ncri_ovary_2020:
+    name: National Cancer Registry Ireland, Cancer in Ireland 1994–2020
+    url: https://www.ncri.ie/en/media/515/download
   ncri_prevalence:
     name: National Cancer Registry Ireland, Cancer in Ireland 1994–2022
     url: https://www.ncri.ie/en/media/623/download
@@ -576,7 +579,7 @@ evidence:
   - value: '109'
     period: '2024'
     population: Stillbirths registered in Ireland
-    note: The CSO notes under-registration compared with perinatal notification data. This figure counts registered stillbirths.
+    note: The CSO reports 2.0 registered stillbirths per 1,000 live and stillborn children. It notes under-registration compared with perinatal notification data.
     source: stillbirth_cso
     locator: Stillbirths
     measure: registry
@@ -707,6 +710,13 @@ evidence:
     locator: table 5-2, page 77
     measure: prevalence
   ovarian-cancer-overview-and-symptoms:
+  - value: '3,327'
+    period: 31 December 2020
+    population: People in Ireland alive after an ovarian cancer diagnosis
+    note: Complete prevalence estimate for ICD-10 C56. It includes people who had completed treatment. The newer report combines ovarian cancer with other sites for its prevalence estimate.
+    source: ncri_ovary_2020
+    locator: table 4-2
+    measure: prevalence
   - value: 372 per year
     period: 2021–2023 average
     population: People diagnosed with ovarian cancer in Ireland
@@ -1817,3 +1827,98 @@ guides:
     sources:
       NHS neck pain guidance: https://www.nhs.uk/symptoms/neck-pain-and-stiff-neck/
       NHS clinical guidance on neck pain warning signs: https://www.hweclinicalguidance.nhs.uk/clinical-pathways/neck-pain/
+  penile-cancer:
+    aliases: penile cancer penis cancer PeIN penile intraepithelial neoplasia
+    summary: Penile cancer is uncommon. A growth or sore that keeps returning or fails to heal, bleeding or a new change in the foreskin is worth getting checked.
+    symptoms:
+    - Changes can include a sore or growth on the penis, bleeding, discharge under the foreskin or new difficulty pulling the foreskin back. A lump in the groin can also warrant assessment.
+    - Some changes are easiest to see on the head of the penis or under the foreskin. Mention how long the change has been there and whether it has grown, bled or changed colour.
+    causes:
+    - Most penile cancers start in squamous cells at the surface. Some are associated with long-lasting infection with certain types of HPV. Smoking and some longstanding foreskin problems can also increase risk.
+    diagnosis:
+    - A GP can examine the area and refer you to urology. A biopsy can show whether a change is cancer. If cancer is confirmed, further examination, scans or sampling can help assess nearby lymph nodes and guide treatment.
+    care:
+    - The team considers the location and depth of the cancer, whether lymph nodes are involved and which options preserve function. Treatment can range from local treatment for selected superficial changes to more extensive surgery and other cancer treatments.
+    - Ask about the expected effect on urination, sexual function and sensation, and about support for those changes during recovery.
+    complications:
+    - Cancer can spread to lymph nodes in the groin. Treatment involving those nodes can also lead to swelling that may need assessment and support.
+    help:
+    - Book a GP appointment for a sore that has not healed within four weeks or for an unexplained lump, bleeding or discharge. An infection or skin condition can cause similar changes, and an examination helps distinguish them.
+    sources:
+      National Cancer Control Programme patient booklet: https://www.hse.ie/eng/services/list/5/cancer/patient/leaflets/nccp-penile-cancer-booklet.pdf
+  non-melanoma-skin-cancer:
+    aliases: keratinocyte cancer basal cell carcinoma BCC squamous cell carcinoma SCC
+    summary: Basal cell and squamous cell carcinomas are common skin cancers. A sore, lump or scab that keeps coming back or does not heal should be checked.
+    symptoms:
+    - Basal cell carcinoma may appear as a shiny or pearly bump, a flat patch or a sore that repeatedly scabs. Squamous cell carcinoma may look like a firm or scaly lump and can feel tender.
+    - Look for changes on sun-exposed skin such as the ears, face, scalp or hands. A lesion can warrant assessment even if it is small or painless.
+    causes:
+    - These cancers start in cells in the outer layer of the skin. Ultraviolet exposure from the sun or sunbeds can damage those cells. A weakened immune system can increase risk, especially for squamous cell carcinoma.
+    diagnosis:
+    - A GP may examine the lesion and refer you if cancer is suspected. A clinician can take a biopsy or remove the lesion and send it to a laboratory to confirm the type and check the edges of the tissue.
+    care:
+    - Surgery is a common treatment. Depending on the type and location, the team may discuss specialised surgery, a local treatment or radiotherapy. Follow-up depends on the features of the lesion and your risk of further skin cancers.
+    - Ask how to check the treated area and the rest of your skin. Use sun protection when working, exercising or spending time outdoors.
+    complications:
+    - Basal cell carcinoma can damage tissue around it as it grows. Some squamous cell cancers can spread, particularly if they have high-risk features. Having one skin cancer also increases the risk of developing another.
+    help:
+    - Arrange a GP assessment for a new skin change that persists, grows, bleeds or fails to heal. Tell the GP if you have a history of skin cancer or take medicines that suppress your immune system.
+    sources:
+      HSE treatment options: https://www2.hse.ie/conditions/non-melanoma-skin-cancer/treatment/
+  stillbirth:
+    aliases: stillborn baby pregnancy loss fetal death maternity bereavement reduced movements
+    summary: If you are worried about your baby's movements, call your maternity unit straight away. If your baby has died, the maternity team can explain the next steps and support you and your family.
+    symptoms:
+    - A change in your baby's usual movements, including movements becoming weaker, less frequent or stopping, needs assessment. Your maternity unit can help even if you are unsure what the change means.
+    causes:
+    - In Ireland, the HSE describes stillbirth as the birth of a baby without signs of life from 23 weeks of pregnancy or with a birth weight of at least 400 grams. Placental problems, health complications and conditions affecting the baby can contribute. Sometimes a cause remains unclear.
+    diagnosis:
+    - A maternity clinician will assess concerns about movements or other symptoms. Ultrasound can assess the baby's heartbeat. If a death is confirmed, the team can explain the findings and give you time to ask questions.
+    care:
+    - The maternity team will discuss the safest plan for birth and which investigations are available, including examination of the placenta or a post-mortem. Ask what each test may explain and when results will be available.
+    - Ask for a named contact for follow-up and information on bereavement support. The team can also discuss physical recovery, results and planning care in a future pregnancy when you are ready.
+    complications:
+    - Grief can affect parents and family members differently and can resurface at milestones. Midwives, the maternity bereavement team and your GP can help you access support suited to you.
+    help:
+    - Call your maternity unit immediately with any concern about your baby's movements and tell them you are coming for a check. Seek advice again if the concern returns, even after a previous reassuring assessment.
+    sources:
+      HSE stillbirth overview and advice: https://www2.hse.ie/conditions/stillbirth/
+      National Perinatal Epidemiology Centre clinical audit: https://www.ucc.ie/en/npec/newsevents/latest-perinatal-mortality-national-clinical-audit-in-ireland-annual-report-2023-.html
+  flu:
+    aliases: influenza seasonal flu fever body aches influenza A influenza B
+    summary: Flu often starts suddenly with fever, aches and exhaustion. People at higher risk of complications may need advice early, while antiviral treatment is most useful.
+    emergency: If someone has severe difficulty breathing or appears dangerously unwell, call
+    symptoms:
+    - Fever, chills, sore muscles, headache, cough and sudden tiredness are common. Symptoms can overlap with COVID-19 and other respiratory infections. Fatigue may persist after the fever and aches improve.
+    causes:
+    - Influenza viruses spread between people mainly through particles released when someone breathes, talks, coughs or sneezes. The flu vaccine is updated for the season as circulating viruses change.
+    diagnosis:
+    - A GP may assess symptoms and risk factors without testing in a straightforward case. Testing can help in hospital or when the result would change treatment or infection-control decisions.
+    care:
+    - Rest, fluids and appropriate symptom relief are enough for many people. If you are pregnant, older or have a long-term condition, seek advice early. A clinician can decide whether an antiviral is appropriate.
+    - The HSE publishes eligibility for seasonal vaccination. While unwell, reduce close contact with people at higher risk of severe infection.
+    complications:
+    - Flu can lead to pneumonia or worsen asthma, COPD or heart failure. Seek advice promptly if symptoms worsen or you become more unwell again after initially improving.
+    help:
+    - Contact your GP if you are at higher risk, concerned about your child or getting worse. Severe breathing problems need emergency help.
+    sources:
+      HSE symptoms, diagnosis and treatment: https://www2.hse.ie/conditions/flu/symptoms-diagnosis/
+  chickenpox:
+    aliases: varicella chicken pox VZV
+    summary: Chickenpox causes crops of itchy blisters. Exposure or illness can need prompt advice in pregnancy, in newborns and in people with a weakened immune system.
+    symptoms:
+    - A fever or general feeling of being unwell can come before the rash. Spots develop into fluid-filled blisters and then crust over. Fresh spots and scabs can appear at the same time.
+    - The rash can affect the scalp, trunk and other areas, sometimes including the mouth. A child with a sore mouth may drink less, so watch for signs of dehydration.
+    causes:
+    - Varicella-zoster virus causes chickenpox and spreads easily through close contact. After recovery it can stay inactive in nerves and later reactivate as shingles. Contact with shingles blisters can give chickenpox to someone without immunity.
+    diagnosis:
+    - A clinician can usually recognise chickenpox from the rash and history. Testing may help in unusual cases or after an exposure where immunity matters. Phone ahead before attending a clinic if you think you have chickenpox.
+    care:
+    - Encourage fluids and ask a pharmacist about itch or pain relief. The HSE advises against giving ibuprofen unless a doctor advises it. People at higher risk should ask promptly whether antiviral treatment or action after exposure is needed.
+    - Follow HSE guidance on when you can return to school, work or childcare. Avoid exposing newborns, pregnant people who may lack immunity and people with weakened immunity.
+    complications:
+    - Blisters can become infected. New warmth, swelling or increasing pain around spots warrants advice. Chickenpox can also cause complications such as pneumonia, especially in people at increased risk.
+    help:
+    - Contact a GP or maternity unit urgently after exposure or symptoms if pregnant and unsure of immunity, or if a newborn or someone with a weakened immune system is affected. Seek urgent medical advice if breathing is affected or the person is getting much more unwell.
+    sources:
+      HSE antiviral prescribing guideline: https://assets.hse.ie/media/documents/Chickenpox_guideline.pdf
