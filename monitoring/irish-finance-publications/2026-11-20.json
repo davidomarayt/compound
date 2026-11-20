@@ -7,9 +7,9 @@
   "target_maximum": 3,
   "slots_already_filled_at_start": 0,
   "publishing_branch": "claude/clever-babbage-uibieq",
-  "verified_base_commit": "0252c4dc3472513aad5a9bbd0a777743af45fa94",
-  "programme_status": "prepared_not_published",
-  "confirmed_publications": 0,
+  "verified_base_commit": "bd856ed92a0259bdc33686fc0a04d05bbec547fd",
+  "programme_status": "published_live_verified",
+  "confirmed_publications": 3,
   "new_articles": 3,
   "canonical_updates": 0,
   "held_for_review": 0,
@@ -21,7 +21,7 @@
       "edition": "morning",
       "content_type": "news_analysis",
       "action": "new_article",
-      "status": "prepared_not_published",
+      "status": "published_live_verified",
       "source_path": "content/wealth/irish-house-prices-september-2026.md",
       "canonical_url": "https://compound.ie/news/irish-house-prices-september-2026/",
       "primary_sources": [
@@ -55,15 +55,15 @@
         "source": "https://commons.wikimedia.org/wiki/File:New_housing_estate_on_Seafield_Road,_Blackrock_-_geograph.org.uk_-_6040580.jpg",
         "processing": "Cropped to 1600 × 900; modification disclosed in credit"
       },
-      "publication_commit": null,
-      "deployment_status": "not_deployed"
+      "publication_commit": "16f1b01355a142520b4c82d250ed29f7ffa12ec4",
+      "deployment_status": "live_http_200_canonical_image_sitemap_ads_consent_verified"
     },
     {
       "topic": "CSO Labour Force Survey Q3 2026 record employment, underemployment and unemployment duration",
       "edition": "morning",
       "content_type": "news_analysis",
       "action": "new_article",
-      "status": "prepared_not_published",
+      "status": "published_live_verified",
       "source_path": "content/wealth/ireland-employment-q3-2026-underemployment.md",
       "canonical_url": "https://compound.ie/news/ireland-employment-q3-2026-underemployment/",
       "primary_sources": [
@@ -99,15 +99,15 @@
         "source": "https://commons.wikimedia.org/wiki/File:Commuter_Dublin_Ireland_Black_And_White_Street_Photography_(125183205).jpeg",
         "processing": "Resized to 1600 × 900; modification disclosed in credit"
       },
-      "publication_commit": null,
-      "deployment_status": "not_deployed"
+      "publication_commit": "16f1b01355a142520b4c82d250ed29f7ffa12ec4",
+      "deployment_status": "live_http_200_canonical_image_sitemap_ads_consent_verified"
     },
     {
       "topic": "New CSO linked data on school pupils and household supports, with current BSCFA and Working Family Payment checks",
       "edition": "morning",
       "content_type": "news_service",
       "action": "new_article",
-      "status": "prepared_not_published",
+      "status": "published_live_verified",
       "source_path": "content/wealth/irish-school-family-supports-cso-2026.md",
       "canonical_url": "https://compound.ie/news/irish-school-family-supports-cso-2026/",
       "primary_sources": [
@@ -144,8 +144,8 @@
         "source": "https://commons.wikimedia.org/wiki/File:St._Pius_X_school_classroom.jpg",
         "processing": "Cropped to 1600 × 900; modification disclosed in credit"
       },
-      "publication_commit": null,
-      "deployment_status": "not_deployed"
+      "publication_commit": "16f1b01355a142520b4c82d250ed29f7ffa12ec4",
+      "deployment_status": "live_http_200_canonical_image_sitemap_ads_consent_verified"
     }
   ],
   "deduplication": {
@@ -162,16 +162,24 @@
     "search_vs_social": "No current authenticated Search Console clicks or GA4 social-referral data are available, so no traffic-source or revenue conclusion is recorded."
   },
   "checks": {
-    "editorial": "Pending final source, arithmetic, duplication, originality, readability and rendering QA; no human approval claimed.",
-    "advertising": "Pending rendered and live verification of the standard ad loader and consent controls; ad fill will not be asserted.",
-    "images": "Three distinct licensed 1600 × 900 local covers prepared with complete attribution; rendered cover and social metadata checks pending.",
-    "tests": "Pending.",
-    "deployment": "Pending. No article is counted as published until its canonical URL is fetched from Compound.ie."
+    "editorial": "Source, arithmetic, date scope, duplication, originality, readability, metadata and internal-link QA passed; editorial_review_status remains truthfully pending and no human approval is claimed.",
+    "advertising": "Each fetched live article contains the standard ca-pub-6115783809711785 loader and existing consent/privacy controls; ad fill is not asserted.",
+    "images": "Three distinct licensed 1600 × 900 local covers passed metadata, rendered cover and social-image checks. Live 16:9 WebP social covers returned HTTP 200 with image/webp content types and 202974, 76876 and 130740 bytes respectively.",
+    "tests": "Local full suite: 387 passed plus 2 subtests, with one dependency deprecation warning. Post-rebase focused suite: 29 passed. Production build and PR CI run 44714927623, including Lighthouse, succeeded.",
+    "deployment": "GitHub Pages site run 44716704201 deployed merge commit 16f1b01355a142520b4c82d250ed29f7ffa12ec4. All three canonical URLs returned HTTP 200 with one H1, correct canonical and Open Graph metadata, standard ads and consent controls; all three entries were present in sitemap.xml."
   },
-  "pull_request": null,
-  "pull_request_head_commit": null,
-  "publication_commit": null,
-  "pr_ci_run": null,
-  "deployment_run": null,
-  "verified_at_utc": null
+  "recoverable_failures": [
+    {
+      "workflow_run": 44716704147,
+      "initial_result": "failed_before_pages_deployment_with_http_404",
+      "recovery": "rerun_failed_jobs_after_pages_deployment",
+      "final_result": "success_on_attempt_2"
+    }
+  ],
+  "pull_request": "https://github.com/davidomarayt/compound/pull/217",
+  "pull_request_head_commit": "6254db3476369b67b3dace3aef99a13ac41a8686",
+  "publication_commit": "16f1b01355a142520b4c82d250ed29f7ffa12ec4",
+  "pr_ci_run": "https://github.com/davidomarayt/compound/actions/runs/44714927623",
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/44716704201",
+  "verified_at_utc": "2026-11-20T10:18:43Z"
 }
