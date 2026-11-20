@@ -2,7 +2,7 @@
   "story_fingerprint": "e1abda343d9a72aa16422cff",
   "company": "PANW",
   "date": "2026-11-20",
-  "status": "prepared",
+  "status": "published",
   "publication_kind": "new_analysis",
   "authorization": "Publisher authorised up to three daily new-company analyses on 2 November 2026, subject to all factual, editorial, image, test, CI, deployment and live-verification gates.",
   "story_thesis": "Palo Alto Networks' acquisition-supported growth must be assessed against gross-margin compression, stock compensation and a materially larger diluted share base.",
@@ -108,10 +108,29 @@
     "build": "passed: production canonical build completed with 396 articles, 870 tags, 35 pages and 62 tools",
     "render": "passed: canonical, metadata, indexing, internal links, source credit, sitemap, finance catalogue, cover and 1200x675 social image inspected",
     "ads": "passed: production render includes the configured ca-pub-6115783809711785 loader; article display slots are blank in the existing site configuration, so no fixed slot was invented",
-    "ci": "pending",
-    "deployment": "pending"
+    "ci": "passed: PR #215 exact head 523575062d22b4fa4b5435bdb9c7ed9c05de2fa2, workflow 44711551976 test and performance jobs successful",
+    "deployment": "passed: GitHub Pages workflow 44713451115 completed successfully for merge c8a66863d4dafafe8b5d7b9dcb944681f7148ccc; build, deploy, verify-live, finance discovery and mobile audit all succeeded"
   },
   "article_sha256": "51fcdcc806f348738269e6ab420c4767327c509eeadb81c831aa5b91deb6105e",
-  "publication_state": "prepared_not_published",
-  "new_articles_published": 0
+  "publication_state": "live_verified",
+  "publication": {
+    "pr_url": "https://github.com/davidomarayt/compound/pull/215",
+    "validated_pr_head": "523575062d22b4fa4b5435bdb9c7ed9c05de2fa2",
+    "merge_commit": "c8a66863d4dafafe8b5d7b9dcb944681f7148ccc",
+    "deployment_run": 44713451115,
+    "deployment_completed_at": "2026-11-20T09:57:20Z",
+    "verified_live_at": "2026-11-20T09:57:20Z",
+    "live_url": "https://compound.ie/wealth/palo-alto-growth-margin-acquisitions/",
+    "page_http_200": true,
+    "canonical_and_indexing_verified": true,
+    "live_social_image": "https://compound.ie/static/discover/palo-alto-growth-margin-acquisitions-16x9.webp",
+    "social_image_http_200": true,
+    "social_image_dimensions": "1200x675",
+    "live_credit_verified": true,
+    "sitemap_verified": true,
+    "finance_catalogue_verified": true,
+    "adsense_loader_verified": true,
+    "live_ad_frames_observed": 0
+  },
+  "new_articles_published": 1
 }
