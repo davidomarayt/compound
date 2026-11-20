@@ -1,10 +1,9 @@
 {
   "date": "2026-11-20",
-  "status": "prepared_pending_checks",
+  "status": "merged_pending_deployment",
   "scan_since_inclusive": "2026-11-19",
   "publishing_branch": "claude/clever-babbage-uibieq",
   "pull_request": 223,
-  "validated_head_pending": "772a2fca91598cb916d04ca222156668160adf84",
   "companies": {
     "KEYS": {
       "canonical_url": "https://compound.ie/stocks/keys/",
@@ -173,7 +172,8 @@
     }
   },
   "checks": {
-    "offline_earnings_tests": "27 passed"
+    "offline_earnings_tests": "27 passed",
+    "exact_head_ci": "Both full test and build/performance runs passed on 772a2fca91598cb916d04ca222156668160adf84: 44837822045, 44837813019."
   },
   "monitor_repair": {
     "pull_request": 222,
@@ -268,5 +268,8 @@
       "ad_loader": true,
       "slots": []
     }
-  ]
+  ],
+  "merge_commit": "e865a051ef0fd9afdfaf0b3d0a4cc9bc740ca78e",
+  "deployment_run": 44839385963,
+  "validated_head": "772a2fca91598cb916d04ca222156668160adf84"
 }
