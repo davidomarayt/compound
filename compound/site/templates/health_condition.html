@@ -8,7 +8,7 @@
 {% endblock %}
 {% block head %}
 <link rel="stylesheet" href="/static/health-conditions.css?v=1">
-<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "MedicalWebPage", "name": title, "url": site_url ~ entry.url, "inLanguage": "en-IE", "description": entry.guide.summary, "about": {"@type": "MedicalCondition", "name": entry.name}, "publisher": {"@type": "Organization", "name": "Compound", "url": site_url}}|tojson }}</script>
+<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "MedicalWebPage", "name": title, "url": site_url ~ entry.url, "inLanguage": "en-IE", "description": entry.guide.summary, "about": {"@type": "MedicalTest" if entry.guide.kind == "test" else "MedicalCondition", "name": entry.name}, "publisher": {"@type": "Organization", "name": "Compound", "url": site_url}}|tojson }}</script>
 {% endblock %}
 {% block content %}
 <article class="conditions-shell condition-detail">
@@ -17,13 +17,14 @@
     <div><h1>{{ entry.name }}</h1><p>{{ entry.guide.summary }}</p><small>Sources checked <time datetime="{{ directory.checked }}">{{ directory.checked }}</time></small></div>
   </header>
   {% if entry.guide.emergency %}<p class="condition-emergency">{{ entry.guide.emergency }} <a href="tel:112">112</a> or <a href="tel:999">999</a>.</p>{% endif %}
-  <nav class="condition-toc" aria-label="On this page"><a href="#irish-data">Irish data</a>{% for key, label in directory.sections %}<a href="#{{ key }}">{{ label }}</a>{% endfor %}</nav>
+  <nav class="condition-toc" aria-label="On this page"><a href="#irish-data">Irish data</a>{% for key, label in entry.sections %}<a href="#{{ key }}">{{ label }}</a>{% endfor %}</nav>
   <section class="condition-copy" id="irish-data">
-    <h2>How common is it in Ireland?</h2>
-    {% include "_condition_evidence.html" %}
+    <h2>{{ "Irish testing figures" if entry.guide.kind == "test" else "How common is it in Ireland?" }}</h2>
+    {% if entry.records %}{% include "_condition_evidence.html" %}{% endif %}
+    {% if entry.guide.evidence_gap %}<p>{{ entry.guide.evidence_gap }}</p>{% endif %}
   </section>
   {% with slot=adsense.slots.article_top, name="article-top" %}{% include "_ad.html" %}{% endwith %}
-  {% for key, label in directory.sections %}
+  {% for key, label in entry.sections %}
   <section class="condition-copy" id="{{ key }}">
     <h2>{{ label }}</h2>
     {% for paragraph in entry.guide[key] %}<p>{{ paragraph }}</p>{% endfor %}

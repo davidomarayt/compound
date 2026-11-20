@@ -87,7 +87,18 @@ sources:
   hse_type2:
     name: HSE Type 2 Diabetes Prevention and Support
     url: https://about.hse.ie/news/hse-helping-people-reduce-risk-of-type-2-diabetes-with-free-intervention-and-support-programmes/
+  hiqa_teledermatology:
+    name: HIQA health technology assessment of teledermatology
+    url: https://www.hiqa.ie/sites/default/files/2026-03/HTA-Teledermatology-Report.pdf
 evidence:
+  acne:
+  - value: 23.2%
+    period: 2021 model estimate, reported by HIQA in 2026
+    population: People aged 15 to 19 in Ireland
+    note: Global Burden of Disease model estimate. HIQA also reports 14.5% for ages 10 to 14 and 9.1% for ages 20 to 24. These are age-specific estimates.
+    source: hiqa_teledermatology
+    locator: section on acne
+    measure: prevalence
   polio:
   - value: '0'
     period: 2025 (provisional)
@@ -2120,3 +2131,43 @@ guides:
     - Contact a GP if symptoms worsen, a fever and rash develop or a child is drinking much less. Get urgent medical help for signs of serious infection or rapid deterioration.
     sources:
       HSE signs and symptoms of strep A: https://www2.hse.ie/conditions/strep-a/
+  acne:
+    aliases: acne vulgaris spots pimples blackheads whiteheads
+    summary: Acne can cause blocked pores, inflamed spots and painful deep lumps. Early treatment can help reduce scarring and the effect acne has on daily life.
+    symptoms:
+    - Blackheads and whiteheads are blocked pores. The skin can also develop inflamed bumps, spots containing pus or deeper tender lumps. The face, upper back and chest are common areas.
+    - Tell your GP if the spots are leaving dents, raised scars or darker marks, or if they are affecting confidence or how you feel about going out.
+    causes:
+    - Oil and skin cells can build up in a hair follicle. Hormonal changes can increase oil production, and inflammation around the blocked follicle contributes to some types of spots.
+    diagnosis:
+    - A GP can usually diagnose acne by examining the type, number and distribution of the spots. They may ask about treatments you have tried, medicines and other symptoms to help rule out similar-looking conditions.
+    care:
+    - A pharmacist can advise on treatment for mild acne. A GP may prescribe a cream or gel or add a course of tablets, depending on severity. Many treatments need weeks of consistent use before you can judge their effect.
+    - Tell your GP if you are pregnant or planning a pregnancy, since some acne medicines are unsuitable. A dermatologist may consider isotretinoin for severe acne or acne at risk of leaving scars.
+    complications:
+    - Deep inflammation and picking can lead to permanent scars. Darker marks after a spot heals can persist for a time. Acne can affect mood and confidence even when someone else considers it mild.
+    help:
+    - Speak to your GP if you have deep painful lumps, scarring, widespread spots on the chest or back, or acne that continues despite pharmacy treatment. Mention the impact on your mood as well as the skin symptoms.
+    sources:
+      HSE acne treatment: https://www2.hse.ie/conditions/acne/treatment/
+      HSE living with acne: https://www2.hse.ie/conditions/acne/self-management/
+  blood-tests:
+    kind: test
+    aliases: blood tests blood draw venepuncture phlebotomy fasting blood test blood results
+    summary: Blood tests can help check your health, find the cause of symptoms or monitor treatment. How you prepare and what the results mean depend on the tests ordered.
+    evidence_gap: The HSE describes where blood can be taken and how to prepare. Its patient guidance does not give a national count covering blood tests across general practice, hospitals and other services.
+    symptoms:
+    - A clinician may order blood tests to investigate symptoms, check how well an organ is working, monitor a medicine or assess health during pregnancy. Ask what question the test is intended to answer.
+    causes:
+    - Different tests measure different things. A full blood count measures types of blood cells, while other tests can measure glucose, hormones or markers of kidney or liver function. One sample can often supply more than one test.
+    diagnosis:
+    - Check whether the clinic has asked you to fast or to book the test at a particular time. Follow its instructions about water and medication. If you take medicines for diabetes or anything that might need adjusting, check with the clinic beforehand.
+    care:
+    - A doctor, nurse or phlebotomist usually takes blood from a vein in your arm or hand. Tell the person taking the sample if you have fainted before or feel light-headed. A small dressing is usually applied afterwards.
+    - Your GP may take the sample in the practice or refer you to a hospital. Ask about any charge in advance. HSE guidance says routine GP blood tests should be free for medical card holders, with charges possible in certain circumstances.
+    complications:
+    - A small bruise or mild soreness can occur. Seek advice if bleeding continues despite pressure or if redness, swelling or pain around the puncture site is increasing.
+    help:
+    - Ask who will contact you with results and when to follow up if you have heard nothing. The person who ordered the test can explain whether a result matters in the context of your symptoms, medicines and previous results.
+    sources:
+      HSE common types of blood test: https://www2.hse.ie/conditions/blood-tests/common-types/
