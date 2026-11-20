@@ -191,19 +191,34 @@ sources:
     url: https://cora.ucc.ie/items/a8a04f81-fb18-4e20-b073-67a6bf6f8c52
   gaelic_suspected_concussion:
     name: Sports Health, video study of suspected concussion in elite ladies’ Gaelic football
-    url: https://journals.sagepub.com/doi/10.1177/19417381251372982
+    url: https://researchportal.bath.ac.uk/en/publications/a-video-analysis-of-suspected-injuries-and-suspected-concussions-/
+  hpo_2024:
+    name: Healthcare Pricing Office, Activity in Acute Public Hospitals in Ireland 2024
+    url: https://www.drugsandalcohol.ie/44501/1/HIPE_Report_2024.pdf
   hpsc_scabies_2024:
     name: HPSC outbreak figures, reported by the former Director of Human Health and Nutrition at safefood
     url: https://www.thejournal.ie/readme/scabies-in-ireland-6646098-Mar2025/
   hsa_injuries_2024:
     name: Health and Safety Authority Annual Review of Workplace Injuries, Illnesses and Fatalities 2023–2024
     url: https://hsa.ie/media/cgxibhgx/hsa-annual-review-of-workplace-injuries-illnesses-and-fatalities-2023-2024.pdf
+  hse_palliative_2024:
+    name: HSE national palliative care policy implementation plan announcement
+    url: https://about.hse.ie/news/hse-to-ensure-timely-and-high-quality-palliative-care-as-close-as-possible-to-home-for-patients-and-families/
+  hse_polyps:
+    name: HSE BowelScreen Programme Report 2022–2023, key results
+    url: https://www2.healthservice.hse.ie/organisation/nss/news/new-bowelscreen-programme-report-highlights-importance-of-screening-to-prevent-bowel-cancer/
   irish_paediatric_rhinitis:
     name: Irish paediatric allergic rhinitis clinic study, World Journal of Otorhinolaryngology
-    url: https://onlinelibrary.wiley.com/doi/full/10.1002/wjo2.105
+    url: https://sivuh.ie/download.aspx?f=World+j++otorhinolaryngol+-head+neck+surg+-+2023+-+Nae+-+Allergic+rhinitis+facts+from+an+Irish+pediatric+population.pdf
+  noca_icu_2024:
+    name: NOCA Irish National ICU Audit 2024, key results
+    url: https://www.noca.ie/news-events/irish-national-icu-audit-annual-report-2024-highlights-strong-outcomes-despite-sustained-pressure-on-services-2/
   noca_tbi_2023:
     name: NOCA Irish National ICU Audit 2023 national report
     url: https://d7g406zpx7bgk.cloudfront.net/x/439edea48f/irish-national-icu-audit-national-report-on-2023-data-final.pdf
+  who_oral_ireland:
+    name: WHO Oral Health Ireland Country Profile 2022
+    url: https://cdn.who.int/media/docs/default-source/country-profiles/oral-health/oral-health-irl-2022-country-profile.pdf
 evidence:
   eczema:
   - value: About 10%
@@ -1512,6 +1527,24 @@ evidence:
     source: hsa_injuries_2024
     locator: Figure 1.3, most injured body parts
     measure: registry
+  bowel-polyps:
+  - value: 849 people
+    period: 2022–2023
+    population: People who had advanced polyps removed through BowelScreen in Ireland
+    note: This is a programme activity figure for removal of advanced polyps. It excludes polyps found outside the programme and
+      undetected cases.
+    source: hse_polyps
+    locator: Programme results
+    measure: service
+  chemotherapy:
+  - value: 147,943 day-patient discharges
+    period: '2024'
+    population: Irish public acute hospital discharges classified as chemotherapy under AR-DRG R63Z
+    note: Repeated visits by one person can count more than once. This administrative category does not establish the number of people
+      treated or distinguish every type of systemic treatment.
+    source: hpo_2024
+    locator: Case Mix Analysis, neoplastic disorders, AR-DRG R63Z
+    measure: hospital
   concussion-grassroots-sport:
   - value: 162 suspected concussions in 120 matches
     period: 2022 season
@@ -1521,6 +1554,23 @@ evidence:
     source: gaelic_suspected_concussion
     locator: Abstract, results
     measure: registry
+  gum-disease:
+  - value: 4.9%
+    period: 2019 estimate
+    population: People aged 15 and older in Ireland
+    note: WHO estimate for severe periodontal disease only. Milder gum inflammation is outside this definition.
+    source: who_oral_ireland
+    locator: Oral disease burden
+    measure: prevalence
+  haemorrhoids-piles:
+  - value: 6,797 recorded principal procedures
+    period: '2023'
+    population: Discharges in HIPE for Irish public acute hospitals
+    note: The figure measures procedures for haemorrhoids. It does not represent how many people had symptoms or used pharmacy or
+      community care.
+    source: hpo_2023
+    locator: Principal procedures on the digestive system, block 0941
+    measure: hospital
   head-injury-concussion:
   - value: 423 ICU admissions
     period: '2023'
@@ -1530,6 +1580,24 @@ evidence:
     source: noca_tbi_2023
     locator: Chapter 4, trauma and traumatic brain injury
     measure: hospital
+  intensive-care:
+  - value: 16,394 patients
+    period: '2024'
+    population: Adults captured in 29 ICUs or HDUs across 25 Irish hospitals
+    note: The audit covers almost all public adult critical care activity. It does not describe paediatric intensive care or all
+      private activity.
+    source: noca_icu_2024
+    locator: National audit, coverage and patient counts
+    measure: service
+  palliative-care:
+  - value: 15,253 patients
+    period: '2024'
+    population: Patients supported in their own place of residence by specialist palliative care teams in Ireland
+    note: The HSE reports hospital and hospice activity separately. This figure describes the home or residence setting and does
+      not count everyone who received palliative care.
+    source: hse_palliative_2024
+    locator: Service activity by setting
+    measure: service
   scabies:
   - value: 51 notified outbreaks
     period: '2024'
@@ -6377,6 +6445,33 @@ guides:
       diabetes or fever.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/athletes-foot/
+  bleeding-from-the-bottom-rectal-bleeding:
+    aliases: rectal bleeding bleeding from bottom blood in stool bright red black stool
+    summary: Blood in or on the stool can have several causes. Tell your GP about new or unexplained bleeding, even if it stops by
+      itself.
+    emergency: If bleeding is heavy or continuous and you feel faint, confused or collapse, call
+    evidence_gap: Irish colorectal cancer and hospital bleeding figures describe selected diagnoses or severe episodes. They do not
+      count all rectal bleeding in the community.
+    symptoms:
+    - Blood may be bright red on wiping, mixed with stool or dark. Black, tarry stool can signal bleeding higher in the digestive
+      tract. Tell the clinician about pain, change in bowel habit or weight loss.
+    causes:
+    - Piles or a small tear can bleed, but inflammation, a polyp, a bowel condition or cancer may also be responsible. Colour and
+      amount give clues but cannot confirm the cause.
+    diagnosis:
+    - A clinician asks about symptoms and medicines and can examine the area. Blood tests, stool tests or a bowel investigation may
+      be appropriate depending on the findings.
+    care:
+    - Treatment depends on the cause. Keep track of when bleeding occurs and whether other symptoms change. Ask what to do if bleeding
+      returns while waiting for an appointment.
+    complications:
+    - Repeated bleeding can cause anaemia, and a large bleed can affect circulation. Some causes can be harder to treat if diagnosis
+      is delayed.
+    help:
+    - Arrange GP assessment for new or unexplained bleeding. Seek urgent care for heavy bleeding, tarry stools, severe pain or dizziness,
+      even if you already have piles.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/bleeding-from-the-bottom-rectal-bleeding/
   boils-carbuncles:
     aliases: boils carbuncles skin abscess furuncle staph pus lump
     summary: A boil is a painful skin lump that may fill with pus. Several boils joined together form a carbuncle and may need medical
@@ -6402,6 +6497,28 @@ guides:
       to a GP about repeated episodes.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/boils-carbuncles/
+  bowel-polyps:
+    aliases: bowel polyps colon adenoma serrated polyp colonoscopy biopsy
+    summary: Bowel polyps are growths in the lining of the bowel, often found during colonoscopy. The type, size and number influence
+      whether you need further checks.
+    symptoms:
+    - Most polyps cause no symptoms. Some can bleed or affect bowel habits. Symptoms such as bleeding or unexplained weight loss
+      still need assessment for other causes.
+    causes:
+    - A polyp forms when cells in the bowel lining grow in an unusual pattern. Some types are more likely than others to become cancer
+      over a number of years.
+    diagnosis:
+    - A colonoscopy can identify and often remove polyps. A lab examines the removed tissue so clinicians know its type and whether
+      further treatment or follow-up is needed.
+    care:
+    - Many polyps can be removed during colonoscopy. A difficult location or a larger polyp may require a specialist procedure. Ask
+      when your results will be available.
+    complications:
+    - New polyps can develop later, and not everyone needs repeat colonoscopy at the same interval. Your follow-up depends on what
+      was found and your broader risk.
+    help:
+    - Check who will explain the pathology result and any follow-up. Get urgent advice for heavy bleeding, severe pain or fever after
+      removal.
   carpal-tunnel-syndrome:
     aliases: carpal tunnel syndrome CTS wrist tingling numb fingers median nerve night
     summary: Carpal tunnel syndrome can cause tingling or numbness in the hand, often at night. Persistent hand weakness needs a
@@ -6427,6 +6544,29 @@ guides:
       the treatment plan.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/carpal-tunnel-syndrome/
+  chemotherapy:
+    kind: procedure
+    aliases: chemotherapy chemo cancer treatment systemic anticancer therapy infusion tablets
+    summary: Chemotherapy can treat cancer by damaging cancer cells or preventing them from dividing. Ask your oncology team what
+      the treatment is meant to achieve and which symptoms require immediate advice.
+    symptoms:
+    - It may be given to shrink a cancer, reduce the chance of it returning or control symptoms. Treatment recommendations depend
+      on the cancer, the person's health and past treatment.
+    causes:
+    - Chemotherapy is a group of medicines rather than a single drug. It can be given through a vein or by mouth, often in cycles.
+      Different regimens can have different side effects.
+    diagnosis:
+    - Before treatment, the team reviews medicines and may check blood counts, kidneys or other measurements. Ask about fertility,
+      vaccination and what to do if you feel unwell between visits.
+    care:
+    - Staff confirm your regimen and give instructions for taking medicines safely. If you attend a day unit, check how long the
+      visit is expected to take and whether you need someone to accompany you.
+    complications:
+    - Low blood counts can increase the risk of infection. Fever or sudden illness during treatment can be urgent. Other side effects
+      depend on the regimen and should be discussed early.
+    help:
+    - Use the emergency contact or temperature threshold your treatment team gave you. Contact them promptly if you feel unwell even
+      if you are unsure that treatment caused it.
   concussion-grassroots-sport:
     aliases: sport concussion grassroots GAA rugby football return to play head injury
     summary: Remove a player from activity immediately if concussion is suspected. They should not return on the same day, even if
@@ -6475,6 +6615,82 @@ guides:
       newborn.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/conjunctivitis/
+  constipation:
+    aliases: constipation hard stool infrequent bowel movements straining laxative
+    summary: Constipation can mean hard stools, difficulty passing them or going less often than usual. Persistent change, bleeding
+      or unexplained weight loss needs a GP review.
+    evidence_gap: Medication sales do not distinguish occasional constipation from persistent disease. A consistent Irish estimate
+      across adults living at home and in care was not identified.
+    symptoms:
+    - Stool can be dry or lumpy and take effort to pass. You may feel bloated or as though the bowel has not emptied fully. Compare
+      the pattern with what is normal for you.
+    causes:
+    - Fibre, fluid, activity, changes in routine and medicines can influence bowel movement. Some health conditions affect how the
+      bowel works or empties.
+    diagnosis:
+    - A GP asks about timing, medicines, diet and any warning signs. An examination or tests may be needed if the change is persistent,
+      severe or unfamiliar.
+    care:
+    - Gradually increasing fibre when appropriate, drinking enough and using a regular toilet routine can help. A pharmacist or GP
+      can advise on a suitable laxative where needed.
+    complications:
+    - Long-standing constipation can cause fissures, piles or a build-up of stool. Loose leakage can sometimes occur around trapped
+      stool and needs assessment.
+    help:
+    - Seek advice if symptoms persist or you have new bleeding or weight loss. Severe pain, vomiting, a swollen abdomen or being
+      unable to pass stool or wind may need urgent care.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/constipation/
+  constipation-children:
+    aliases: constipation children hard stool child withholding soiling toilet training
+    summary: Children can hold back stool after a painful bowel movement. Early treatment can help break the cycle and make going
+      to the toilet less worrying.
+    evidence_gap: Irish clinic activity does not account for symptoms managed at home or distinguish stool withholding from other
+      causes. A national paediatric prevalence figure was not identified.
+    symptoms:
+    - Stools can be large or hard and difficult to pass. A child may cross their legs, hide or hold on. Small amounts of loose stool
+      can leak around built-up stool.
+    causes:
+    - Pain can lead to avoidance, which makes stool harder. Changes in routine, low fluid or fibre intake and toilet-training difficulties
+      can contribute.
+    diagnosis:
+    - A clinician asks how long symptoms have lasted, what stools look like and how the child is growing. Symptoms from early infancy
+      or signs of poor growth may prompt further investigation.
+    care:
+    - Calm regular toilet time, foot support and positive encouragement can help. A GP may prescribe a laxative plan to clear built-up
+      stool and prevent it building up again.
+    complications:
+    - Pain and soiling can affect confidence, school and sleep. Treatment may need time even after stools become softer, so follow
+      the clinician's plan.
+    help:
+    - Get advice for persistent pain or soiling. Seek urgent review for vomiting with a swollen abdomen, severe pain, poor feeding
+      or significant blood in the stool.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/constipation-children/
+  constipation-pregnancy:
+    aliases: constipation pregnancy hard stool pregnant iron supplement laxative
+    summary: Constipation can become more noticeable during pregnancy. If dietary or routine changes are insufficient, a pharmacist,
+      GP or midwife can discuss treatment suitable for pregnancy.
+    evidence_gap: No comparable Irish estimate was identified for constipation during pregnancy. Rates depend on the stage of pregnancy
+      and which symptom definition a study uses.
+    symptoms:
+    - You may pass hard stools less often or strain more than usual. A small amount of bleeding on wiping can come from piles or
+      a fissure, but bleeding should be discussed if you are unsure of the source.
+    causes:
+    - Hormonal changes can slow bowel movement. The growing womb, changes in activity and some iron supplements can also contribute.
+    diagnosis:
+    - A clinician asks about the pattern, medicines and any pain or bleeding. Tell them if the symptoms differ from earlier constipation
+      or you are unsure whether bleeding is vaginal.
+    care:
+    - Gradually increase suitable fibre and drink enough fluid. Exercise if your maternity team says it is appropriate. Ask before
+      choosing a laxative or stopping prescribed iron.
+    complications:
+    - Straining can worsen piles or cause a tear near the anus. Sharp or severe pain can have another cause and should be assessed.
+    help:
+    - Contact your midwife or GP for persistent symptoms or bleeding. Seek urgent advice if you develop severe abdominal pain, vomiting
+      or possible vaginal bleeding.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/constipation-pregnancy/
   contact-dermatitis:
     aliases: contact dermatitis irritant allergic occupational hand eczema patch test
     summary: Contact dermatitis is a skin reaction to something touching it. The pattern can help identify whether repeated irritation
@@ -6500,6 +6716,33 @@ guides:
       fever.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/contact-dermatitis/
+  dental-abscess:
+    aliases: dental abscess tooth abscess toothache gum swelling dental infection
+    summary: A dental abscess is a pocket of infection around a tooth or gum. It needs urgent dental assessment even if pain eases
+      or pus drains.
+    emergency: If swelling in the mouth or neck makes breathing or swallowing difficult, call
+    evidence_gap: National estimates for tooth decay do not measure dental abscesses. A comprehensive count across Irish dental and
+      emergency services was not identified.
+    symptoms:
+    - Pain may throb and spread to the jaw or ear. There may be gum or face swelling, a bad taste, sensitivity when chewing or fever.
+      A deeper infection can make opening the mouth difficult.
+    causes:
+    - Bacteria can reach the pulp inside a damaged or decayed tooth or enter tissues around a tooth through gum disease. The resulting
+      infection may form a collection of pus.
+    diagnosis:
+    - A dentist checks the tooth, gums and nearby swelling. An X-ray can help find the source. Tell the dentist if you have fever,
+      difficulty swallowing or a weakened immune system.
+    care:
+    - A dentist can drain an abscess and treat the source, for example with root canal treatment or extraction when appropriate.
+      An antibiotic may be needed if infection is spreading or causing general illness.
+    complications:
+    - Infection can spread into the face or neck. A severe infection can threaten the airway. Relief after spontaneous drainage does
+      not mean treatment is complete.
+    help:
+    - Contact a dentist urgently for possible abscess. Go to an emergency department for rapidly spreading swelling or inability
+      to open the mouth, and seek emergency help if breathing or swallowing becomes difficult.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/dental-abscess/
   dry-eyes:
     aliases: dry eyes dry eye disease tear film burning gritty eyes screen contact lenses
     summary: Dry eyes can feel gritty, sore or watery. Redness with pain, light sensitivity or a change in vision needs medical assessment.
@@ -6551,6 +6794,49 @@ guides:
       skin becomes hot, swollen or painful.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/fungal-nail-infection/
+  gum-disease:
+    aliases: gum disease gingivitis periodontitis bleeding gums periodontal disease loose teeth
+    summary: Bleeding gums can be an early sign of gum disease. A dental examination can check whether inflammation is limited to
+      the gums or has affected the support around the teeth.
+    symptoms:
+    - Gums may bleed when brushing, look swollen or pull back. Bad breath or loose teeth may occur in more advanced disease. Some
+      people have little pain.
+    causes:
+    - Plaque can irritate the gum. When disease progresses beyond the gum, it can damage the tissue and bone supporting teeth. Smoking
+      and diabetes can increase risk.
+    diagnosis:
+    - A dentist or hygienist checks bleeding and measures spaces around teeth. X-rays can help assess bone loss where appropriate.
+    care:
+    - Daily cleaning along the gum line and between teeth is important. Dental treatment can remove deposits above or below the gums.
+      A dentist can arrange specialist care for severe disease.
+    complications:
+    - Once supporting bone has been lost, treatment aims to prevent further damage and keep teeth working. Untreated disease can
+      lead to tooth loosening or loss.
+    help:
+    - Book a dental review for recurring bleeding, pain, swelling or loose teeth. Mention diabetes or smoking and ask the team to
+      show you how to clean difficult areas.
+  haemorrhoids-piles:
+    aliases: haemorrhoids piles anal lump bright red bleeding bowel movement
+    summary: Piles can cause itching, discomfort or bright red blood when passing stool. New bleeding from the bottom needs assessment
+      so other causes can be considered.
+    symptoms:
+    - A person may notice bright blood on paper, itching, a lump or mucus. A suddenly painful lump can occur when a clot forms in
+      an external pile.
+    causes:
+    - Vascular tissue near the anus can swell or move out of place. Straining, constipation and pregnancy can contribute. Other conditions
+      can cause similar bleeding and discomfort.
+    diagnosis:
+    - A GP may examine the area and ask about bowel changes, bleeding and other symptoms. Further tests are sometimes needed to rule
+      out causes higher in the bowel.
+    care:
+    - Softer stools and avoiding straining can reduce symptoms. A pharmacist can advise on short-term treatments. Persistent symptoms
+      may need a specialist procedure.
+    complications:
+    - Bleeding can recur, and painful thrombosis can need assessment. Ongoing bleeding, a change in bowel movements or weight loss
+      should be investigated.
+    help:
+    - Speak to your GP about rectal bleeding or symptoms that do not settle. Get urgent medical help for heavy bleeding, severe pain
+      or feeling faint.
   hay-fever:
     aliases: hay fever pollen allergy seasonal allergic rhinitis grass pollen
     summary: Hay fever is a seasonal pollen allergy. Sneezing, itchy eyes and a blocked nose can flare during certain months or after
@@ -6627,6 +6913,162 @@ guides:
       by fever or painful skin.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/hives/
+  home-oxygen-therapy:
+    kind: service
+    aliases: home oxygen therapy long term oxygen concentrator portable oxygen lung condition
+    summary: Home oxygen is prescribed for some people whose blood oxygen is persistently low. The team will explain when to use
+      it and how to handle the equipment safely.
+    evidence_gap: Disease prevalence and oxygen-device supply measure different things. A national count covering all home oxygen
+      prescriptions across Irish services was not identified.
+    symptoms:
+    - Specialists may assess people with severe lung disease or another condition affecting oxygen levels. Being breathless by itself
+      does not establish that extra oxygen will help.
+    causes:
+    - The equipment provides oxygen through small tubes at the nostrils or another device. Flow rate and the number of hours used
+      depend on the person's measured needs.
+    diagnosis:
+    - Ask how the prescription was set and whom to contact if you travel or lose power. Tell the supplier and team if anyone smokes
+      in the household or if there are other fire risks.
+    care:
+    - The service or supplier sets up equipment and explains how to use it. Follow the prescribed flow rate, look after the tubing
+      and report problems rather than adjusting it yourself.
+    complications:
+    - Oxygen supports burning. Keep it away from smoking, flames and heat sources and follow supplier safety instructions. Tubing
+      can also cause trips if not positioned carefully.
+    help:
+    - Contact the prescribing team or supplier if the equipment fails or your needs change. Severe new breathlessness, confusion
+      or blue lips needs emergency assessment.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/home-oxygen-therapy/
+  hormone-therapy-for-cancer:
+    kind: procedure
+    aliases: hormone therapy cancer endocrine therapy breast prostate tamoxifen hormonal treatment
+    summary: Hormone therapy can slow cancers that depend on hormones to grow. The medicine, expected benefit and length of treatment
+      vary with the type of cancer.
+    evidence_gap: Cancer incidence figures do not show who received hormone therapy. A prescription count would also include repeat
+      supplies and cannot establish the national number treated.
+    symptoms:
+    - It can be considered for some breast and prostate cancers. It may reduce recurrence or help control disease. A clinician can
+      explain which features of the cancer make it appropriate.
+    causes:
+    - Medicines can lower hormone production or prevent a hormone from acting on cancer cells. The treatment is different from hormone
+      replacement used for menopause symptoms.
+    diagnosis:
+    - Discuss your medicines, bone health, fertility and side-effect concerns before starting. Ask how the team will check that the
+      treatment is doing what it is intended to do.
+    care:
+    - Depending on the medicine, treatment may involve regular tablets, injections or a procedure. Keep appointments and ask the
+      team how to handle a delayed dose.
+    complications:
+    - Hot flushes, sexual symptoms, fatigue or bone effects can occur. Particular drugs have specific risks. Report side effects
+      so the team can discuss ways to manage them or consider alternatives.
+    help:
+    - Contact your cancer team if side effects are affecting daily life or you are thinking about stopping. Follow their guidance
+      for symptoms that require urgent medical attention.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/hormone-therapy-for-cancer/
+  immunotherapy:
+    kind: procedure
+    aliases: cancer immunotherapy checkpoint inhibitor immune side effects oncology
+    summary: Cancer immunotherapy uses the immune system to help fight cancer. Some side effects can start during or after treatment
+      and need early assessment.
+    evidence_gap: Irish hospital reports may group immunotherapy with other systemic cancer treatment. A national count covering
+      immunotherapy alone across all settings was not identified.
+    symptoms:
+    - Immunotherapy is suitable for some cancers depending on their type, stage and test results. An oncology team can explain where
+      it fits in the plan and what benefit is realistic.
+    causes:
+    - Some immunotherapies take the brakes off immune cells so they can respond to cancer. Different products work in different ways
+      and are not interchangeable.
+    diagnosis:
+    - Ask the team about planned scans and blood tests. Tell them about autoimmune conditions, medicines and any previous immunotherapy.
+      Keep a record or alert card with the name of your treatment.
+    care:
+    - You may receive the medicine through a vein at planned visits. The team checks for reactions and will review symptoms between
+      visits. Bring details of new symptoms to each review.
+    complications:
+    - An activated immune system can cause inflammation in organs such as the bowel, lungs, liver, skin or glands. Report unusual
+      diarrhoea, cough, breathlessness or severe fatigue promptly, even after treatment ends.
+    help:
+    - Follow your oncology team's urgent contact advice and tell other clinicians that you receive or previously received immunotherapy.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/immunotherapy/
+  indigestion:
+    aliases: indigestion dyspepsia upper abdominal fullness belching after eating
+    summary: Indigestion describes discomfort around the upper abdomen or chest after eating. Persistent symptoms or difficulty swallowing
+      should be reviewed.
+    evidence_gap: Self-reported indigestion and reflux disease use different definitions. Irish data for acid-suppressing medicines
+      do not count all people with indigestion.
+    symptoms:
+    - You may feel full soon after eating, bloated, nauseated or unable to finish a usual meal. Some people also have heartburn or
+      frequent belching.
+    causes:
+    - Reflux, some medicines, an ulcer or changes in how the stomach works can contribute. Several causes can feel similar, so the
+      other symptoms and how long they have lasted matter.
+    diagnosis:
+    - A clinician asks when symptoms occur and checks for weight loss, anaemia, bleeding or swallowing problems. Depending on findings,
+      they may arrange a test for H. pylori or further investigation.
+    care:
+    - A pharmacist can help with short-term symptom relief. Smaller meals or adjusting individual triggers can help some people.
+      A GP can review acid medicines and possible causes if symptoms recur.
+    complications:
+    - Persistent indigestion often has a manageable cause, but can sometimes be a sign of a condition that needs treatment. New chest
+      pain with pressure or sweating needs separate urgent assessment.
+    help:
+    - Contact your GP if symptoms keep returning or if you have difficulty swallowing, vomiting or unexplained weight loss. Seek
+      emergency help for signs of a heart attack or major bleeding.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/indigestion/
+  intensive-care:
+    kind: service
+    aliases: intensive care ICU critical care HDU ventilator intensive care unit
+    summary: Intensive care provides close monitoring and treatment for people who are critically ill or need specialised support
+      after an operation or injury.
+    symptoms:
+    - A person may need intensive care when breathing, circulation or another organ needs support. Staff may also admit a person
+      for close observation when their condition could change quickly.
+    causes:
+    - ICU staff use monitors and treatments tailored to each person. Some need a breathing machine, medicines to support circulation,
+      kidney support or more than one form of treatment.
+    diagnosis:
+    - Families can tell staff about the person's usual health, medicines and wishes if they are unable to speak. Ask when updates
+      are available and how to get support with decisions.
+    care:
+    - Staff will explain what tubes and monitors are for and what changes they are watching. Sedation, illness and lack of sleep
+      can affect the person's awareness and ability to communicate.
+    complications:
+    - Recovery can continue for months. Weakness, sleep disturbance or memory problems can occur after critical illness. Some hospitals
+      offer follow-up or rehabilitation after discharge.
+    help:
+    - Ask the nursing or medical team for advice on visiting, family meetings or the plan for transfer out of the unit. Report ongoing
+      symptoms to the GP or follow-up team.
+  mastectomy:
+    kind: procedure
+    aliases: mastectomy breast removal breast cancer surgery reconstruction lymph nodes
+    summary: Mastectomy removes breast tissue and can be part of breast cancer treatment or risk reduction. Your team can discuss
+      the extent of surgery and reconstruction options.
+    evidence_gap: Irish hospital tables can report specific mastectomy types. A single count covering all types across both public
+      and private settings was not identified.
+    symptoms:
+    - The treatment plan depends on cancer size and location, risk, past treatment and your preferences. Some people can choose between
+      breast-conserving surgery and mastectomy.
+    causes:
+    - A surgeon removes breast tissue and may assess or remove nearby lymph nodes. Reconstruction can sometimes take place at the
+      same operation or later, depending on your circumstances.
+    diagnosis:
+    - Ask about reconstruction, going flat, drains, pain relief and help at home. Tell the team about blood thinners, other medicines
+      and any earlier surgery or radiotherapy.
+    care:
+    - Surgery takes place under anaesthesia. Staff help you manage pain and teach exercises as appropriate. The tissue removed is
+      examined to guide the next stage of care.
+    complications:
+    - A wound infection, fluid collection or persistent pain can occur. Lymph node surgery can contribute to arm swelling. Report
+      worsening redness, fever or a problem with the wound.
+    help:
+    - Keep the appointment to review pathology and discuss further treatment. Ask who to contact about a drain, movement problems,
+      a prosthesis or reconstruction follow-up.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/mastectomy/
   moles:
     aliases: mole moles changing mole ABCDE melanoma skin check
     summary: Most moles are harmless. A new or changing mark, especially one that looks different from your other moles, should be
@@ -6653,6 +7095,32 @@ guides:
       if relevant.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/moles/
+  mouth-ulcers:
+    aliases: mouth ulcers canker sores aphthous ulcer sore inside mouth
+    summary: Most mouth ulcers heal within a couple of weeks. An ulcer that lasts more than three weeks needs examination by a dentist
+      or GP.
+    evidence_gap: Irish oral cancer or dental attendance figures do not capture temporary mouth ulcers. A national estimate based
+      on consistent definitions was not identified.
+    symptoms:
+    - A small round sore can hurt when eating or drinking. Several can occur at once. Persistent ulcers, an unusual patch or an ulcer
+      with a lump can have another cause.
+    causes:
+    - Minor injury from biting, a sharp tooth or braces can cause an ulcer. Recurrent ulcers can also be associated with certain
+      illnesses, medicines or nutrient deficiencies.
+    diagnosis:
+    - A dentist or GP examines the area and asks about duration, recurrence and other symptoms. Ongoing or unexplained ulcers may
+      need investigations or a specialist referral.
+    care:
+    - Avoid foods or products that make the area sting. A pharmacist can advise on suitable pain relief. A dentist can check whether
+      a sharp edge or appliance is rubbing.
+    complications:
+    - Pain can make it difficult to eat or drink. A persistent sore can occasionally be a sign of a serious condition, so arrange
+      review even if it is painless.
+    help:
+    - Contact a dentist or GP if the ulcer lasts longer than three weeks, is unusually large or keeps returning. Seek advice sooner
+      if you are finding it difficult to drink.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/mouth-ulcers/
   nasal-polyps:
     aliases: nasal polyps nose blockage loss of smell chronic sinus disease
     summary: Nasal polyps are soft growths in the nose or sinuses. A persistent blocked nose or loss of smell is a reason to discuss
@@ -6679,6 +7147,29 @@ guides:
       around an eye or trouble with vision.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/nasal-polyps/
+  palliative-care:
+    kind: service
+    aliases: palliative care hospice specialist palliative home care symptom control
+    summary: Palliative care supports people living with a serious, life-limiting illness and those close to them. It can begin alongside
+      treatment for the underlying illness.
+    symptoms:
+    - A person can benefit when pain, breathing problems, nausea or worry affect life, or when they need help with care decisions.
+      People with conditions other than cancer can also receive support.
+    causes:
+    - General palliative care can be provided by a GP or usual team. Specialist support may help with more complex symptoms or decisions.
+      Care can take place at home, in hospital or in a hospice.
+    diagnosis:
+    - Ask your team what you most want to improve and who will coordinate care. Discuss how support works outside normal hours and
+      which services are available locally.
+    care:
+    - Staff may review symptoms and medicines and talk through practical, emotional and family needs. They can help with a plan if
+      symptoms change and discuss preferences about where care is provided.
+    complications:
+    - Needs may change over time. Ask whom to contact when a home plan is becoming difficult or if carers need more help. Bereavement
+      support can be available to families.
+    help:
+    - Ask your GP or treating team about referral or advice. Use the contact plan for severe worsening symptoms and tell new clinicians
+      what matters most to the person receiving care.
   plantar-fasciitis:
     aliases: plantar fasciitis heel pain first steps plantar fascia sore arch
     summary: Plantar fasciitis commonly causes heel pain on the first steps after getting out of bed. It can also flare after standing
@@ -6884,6 +7375,33 @@ guides:
       is not improving as expected.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/sprains-and-strains/
+  stomach-ulcer:
+    aliases: stomach ulcer gastric ulcer peptic ulcer H pylori upper abdominal pain
+    summary: A stomach ulcer is a sore in the stomach lining. Persistent upper abdominal pain needs assessment, and signs of bleeding
+      need urgent help.
+    emergency: If you vomit blood, pass black tarry stool with faintness or have sudden severe abdominal pain, call
+    evidence_gap: Hospital figures for bleeding ulcers exclude many less severe ulcers. Irish H. pylori estimates also do not measure
+      how many people have ulcers.
+    symptoms:
+    - An ulcer can cause burning or aching in the upper abdomen, nausea or early fullness. Some ulcers cause little pain until bleeding
+      occurs.
+    causes:
+    - Helicobacter pylori infection and some anti-inflammatory pain medicines can damage the normal protection of the stomach lining.
+      Other causes are less common.
+    diagnosis:
+    - A clinician asks about symptoms and medicines and may test for H. pylori. Endoscopy can identify an ulcer and allow sampling,
+      particularly with persistent symptoms or warning signs.
+    care:
+    - Treatment may include acid suppression and antibiotics if H. pylori is present. A clinician can review medicines that increase
+      bleeding risk and decide whether a repeat test or endoscopy is needed.
+    complications:
+    - An ulcer can bleed or rarely create a hole through the stomach wall. Black stool, vomiting blood or sudden severe pain requires
+      urgent assessment.
+    help:
+    - Ask your GP about persistent upper abdominal pain or nausea. Seek emergency help if you vomit blood, feel faint or have severe
+      sudden pain.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/stomach-ulcer/
   stye:
     aliases: stye eyelid lump hordeolum painful bump eyelash chalazion
     summary: A stye is a tender lump near the edge of an eyelid. A warm compress can help while it settles. Worsening swelling or
@@ -6910,6 +7428,32 @@ guides:
       painful eye.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/stye/
+  targeted-therapy:
+    kind: procedure
+    aliases: targeted therapy cancer precision medicine HER2 EGFR oncology
+    summary: Targeted cancer therapy acts on a specific feature involved in cancer growth. Tumour testing can help determine whether
+      a given treatment is likely to help.
+    evidence_gap: Systemic treatment totals can mix targeted medicines with chemotherapy, immunotherapy and other oncology treatments.
+      An all-Ireland count specific to targeted therapy was not identified.
+    symptoms:
+    - These medicines may be offered when the type of cancer or a particular test result matches the treatment. Ask what the relevant
+      target is and how treatment success will be judged.
+    causes:
+    - A targeted medicine can block a signal, recognise a protein or interfere with another process that a cancer relies on. Healthy
+      tissues can also be affected, so side effects differ by drug.
+    diagnosis:
+    - The team may review tumour tests, medicines and baseline blood work. Ask how the drug interacts with other prescriptions, supplements
+      or foods and whether any monitoring is needed at home.
+    care:
+    - Some treatments are tablets and others are infusions. The team will tell you how to take it and what to do if you miss a dose
+      or vomit after taking it.
+    complications:
+    - The treatment may stop working if the cancer changes. Possible side effects vary and can include skin or digestive problems,
+      and some medicines need heart or blood-pressure monitoring.
+    help:
+    - Use the treatment team's contact plan for new or worsening symptoms. Check before stopping, doubling or combining doses.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/targeted-therapy/
   tendonitis:
     aliases: tendonitis tendinitis tendinopathy overuse tendon pain
     summary: Tendon pain often worsens when a muscle repeatedly pulls on the affected tendon. A sudden pop with weakness can mean
@@ -7041,3 +7585,30 @@ guides:
       makes walking painful.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/warts-verrucas/
+  wisdom-tooth-removal:
+    kind: procedure
+    aliases: wisdom tooth removal impacted wisdom tooth extraction oral surgery dry socket
+    summary: A wisdom tooth may need removal if it repeatedly causes infection, decay or damage to a neighbouring tooth. The dentist
+      can explain the plan using your examination and X-ray.
+    evidence_gap: Hospital extraction figures exclude procedures done in dental practices and may combine wisdom and other teeth.
+      A national activity count specific to wisdom tooth removal was not identified.
+    symptoms:
+    - Many wisdom teeth cause no difficulty. Removal can be considered if a partly erupted tooth leads to recurrent painful swelling
+      or a tooth cannot be treated in another way.
+    causes:
+    - Depending on position, the tooth can sometimes be removed through the gum in one piece. A deeper tooth may need a small gum
+      opening or removal in sections.
+    diagnosis:
+    - Tell the dentist about medicines, allergies or bleeding problems. Check instructions on fasting, sedation, transport and whether
+      you will need time off.
+    care:
+    - Local anaesthetic numbs the area, and some people also receive sedation or need a hospital procedure. The team will explain
+      how to control bleeding and manage pain at home.
+    complications:
+    - Pain and swelling are expected initially. Increasing pain after a few days can suggest dry socket or infection. Numbness, continued
+      bleeding or fever needs advice.
+    help:
+    - Follow the dentist's written instructions. Contact the service for worsening swelling, uncontrolled bleeding or fever. Get
+      emergency help if breathing or swallowing is affected.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/wisdom-tooth-removal/
