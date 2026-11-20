@@ -25,7 +25,7 @@
     "period": "First half FY2027",
     "published": "2026-11-05",
     "source": "https://www.nintendo.co.jp/ir/pdf/2026/261105e.pdf",
-    "summary": "Nintendo reported net sales of \u00a5966.04 billion and operating profit of \u00a5216.50 billion for the six months to September."
+    "summary": "Nintendo reported net sales of ¥966.04 billion and operating profit of ¥216.50 billion for the six months to September."
   },
   "apd": {
     "ended": "2026-09-30",
@@ -39,7 +39,7 @@
     "period": "Q3 FY2026",
     "published": "2026-10-14",
     "source": "https://investor.asml.com/news-releases/news-release-details/asml-reports-eu11.7-billion-total-net-sales-and-eu5.0-billion-net-income-q3-2026",
-    "summary": "ASML reported quarterly net sales of \u20ac11.7 billion and net income of \u20ac5.0 billion."
+    "summary": "ASML reported quarterly net sales of €11.7 billion and net income of €5.0 billion."
   },
   "ato": {
     "ended": "2026-09-30",
@@ -116,7 +116,7 @@
     "period": "Nine-month revenue FY2026",
     "published": "2026-10-12",
     "source": "https://www.lvmh.com/en/publications/continued-growth-in-the-third-quarter-of-2026",
-    "summary": "LVMH recorded \u20ac57.1 billion in revenue for the first nine months. Organic revenue rose 2% year on year. This quarterly announcement covers sales."
+    "summary": "LVMH recorded €57.1 billion in revenue for the first nine months. Organic revenue rose 2% year on year. This quarterly announcement covers sales."
   },
   "nue": {
     "ended": "2026-10-03",
@@ -179,7 +179,7 @@
     "period": "First half FY2027",
     "published": "2026-11-05",
     "source": "https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_summary_en.pdf",
-    "summary": "Toyota reported first-half sales revenue of \u00a526,962.4 billion and operating income of \u00a52,191.1 billion, up 9.5% and 9.2% respectively on the previous year."
+    "summary": "Toyota reported first-half sales revenue of ¥26,962.4 billion and operating income of ¥2,191.1 billion, up 9.5% and 9.2% respectively on the previous year."
   },
   "tsm": {
     "ended": "2026-09-30",
@@ -222,12 +222,5 @@
     "published": "2026-11-12",
     "source": "https://www.sec.gov/Archives/edgar/data/6951/000162828026073360/exhibit991q42026earningsre.htm",
     "summary": "Applied Materials reported fourth-quarter revenue of $10.409 billion, GAAP net income of $2.718 billion and GAAP diluted EPS of $3.40. Non-GAAP diluted EPS was $4.16. Full-year revenue was $34.446 billion and GAAP diluted EPS was $12.62. All amounts are US dollars."
-  },
-  "wmt": {
-    "ended": "2026-10-31",
-    "period": "Q3 FY2027",
-    "published": "2026-11-19",
-    "source": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/earningsreleasefy27q3.htm",
-    "summary": "Walmart reported third-quarter revenue of $188.835 billion and GAAP consolidated net income of $5.095 billion. Net income attributable to Walmart was $4.945 billion, with GAAP diluted EPS of $0.62 versus $0.77 a year earlier. Adjusted EPS was $0.65. All amounts are US dollars."
   }
 }
