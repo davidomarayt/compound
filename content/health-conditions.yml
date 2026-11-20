@@ -318,6 +318,15 @@ sources:
   midwest_wounds_2021:
     name: Regional wound prevalence audit in the midwest of Ireland
     url: https://www.magonlinelibrary.com/doi/abs/10.12968/nrec.2021.23.6.2
+  hse_orthodontics_q126:
+    name: HSE National Oral Health Office response to PQ 38418/26
+    url: https://about.hse.ie/publications/question-from-deputy-david-cullinane-pq-38418-26/
+  hse_pulm_rehab_referrals:
+    name: HSE guidance for setting up a pulmonary rehabilitation programme
+    url: https://assets.hse.ie/media/documents/A_guidance_document_for_setting_up_a_Pulmonary_Rehabilitation_Programme_for.pdf
+  nans_vitamin_d:
+    name: Cashman and colleagues, vitamin D status of Irish adults in the National Adult Nutrition Survey
+    url: https://pubmed.ncbi.nlm.nih.gov/22883239/
 evidence:
   eczema:
   - value: About 10%
@@ -2199,6 +2208,33 @@ evidence:
     source: midwest_wounds_2021
     locator: Abstract, results
     measure: service
+  orthodontic-treatment-and-braces:
+  - value: 6,751 and 4,401 patients across the two reported treatment groups
+    period: End of Q1 2026
+    population: People listed by the HSE as waiting to start public orthodontic treatment under the reported grades
+    note: The two subtotals are for grades 4 and 5 after assessment. A separate list covers people waiting for assessment. Neither
+      list measures treatment need across all Irish children or private services.
+    source: hse_orthodontics_q126
+    locator: Table 1, both national grade totals
+    measure: service
+  pulmonary-rehabilitation-exercise-and-education-programme:
+  - value: About 1 in 4 hub team referrals came from GPs using Healthlink
+    period: National Clinical Programme respiratory data cited for 2024
+    population: Referrals to pulmonary rehabilitation teams in HSE specialist ambulatory care hubs
+    note: This is the estimated share from one source of referrals. It does not count all referrals, all programmes, people completing
+      rehabilitation or everyone eligible.
+    source: hse_pulm_rehab_referrals
+    locator: Section 4.5, GP Referrals to Pulmonary Rehabilitation
+    measure: service
+  vitamins-and-minerals:
+  - value: 6.7% below 30 nmol/L for vitamin D
+    period: Survey analysis published in 2013
+    population: Adults in the Irish National Adult Nutrition Survey with blood measurements
+    note: Year-round estimate for serum 25-hydroxyvitamin D below the stated threshold. The figure concerns one nutrient and cannot
+      estimate combined vitamin and mineral deficiencies.
+    source: nans_vitamin_d
+    locator: Abstract, year-round prevalence for serum 25(OH)D below 30 nmol/L
+    measure: prevalence
 guides:
   asthma:
     aliases: wheezing reactive airways
@@ -12501,3 +12537,1466 @@ guides:
     help:
     - Call 112 or 999 for life-threatening bleeding. Get urgent care if there is a deep wound, dirt that cannot be removed, a bite,
       loss of sensation or spreading infection.
+  catarrh:
+    aliases: Postnasal drip, mucus in throat, nasal catarrh
+    summary: Catarrh is a build-up of mucus in the nose or throat. It often eases after a cold, while persistent symptoms may need
+      assessment for another cause.
+    evidence_gap: The sources reviewed did not quantify catarrh in Ireland. It is a symptom pattern occurring across infections and
+      allergies, which are usually measured separately.
+    symptoms:
+    - You may feel mucus running down the throat, keep needing to clear it or have a blocked nose or cough. Symptoms can be worse
+      when lying down.
+    causes:
+    - A cold, sinus irritation or allergy can increase mucus. Smoke and other irritants sometimes contribute, and throat irritation
+      can feel similar even without excess mucus.
+    diagnosis:
+    - A clinician asks how long symptoms have lasted, whether one nostril is blocked and about allergies or other symptoms. They
+      may examine the nose and throat.
+    care:
+    - Drink normally, avoid smoke and ask a pharmacist about saline or treatments for an obvious allergy. Get advice before relying
+      on a decongestant for an extended period.
+    complications:
+    - Persistent symptoms can interrupt sleep or cause throat irritation. A one-sided blockage, repeated bleeding or worsening facial
+      pain needs assessment for a specific cause.
+    help:
+    - See a GP if catarrh lasts several weeks, keeps returning or comes with blood, one-sided symptoms or worsening pain. Seek urgent
+      advice for difficulty breathing.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/catarrh/
+  chronic-traumatic-encephalopathy:
+    aliases: CTE, repeated head impacts, traumatic encephalopathy
+    summary: CTE is a brain disease linked to a history of repeated head impacts. Similar symptoms have other causes, and a clinician
+      can investigate those during life.
+    evidence_gap: Studies of selected donated brains do not estimate the rate in Ireland. The sources reviewed did not provide an
+      Irish population prevalence study.
+    symptoms:
+    - People may report changes in memory, thinking, mood or behaviour. These symptoms are broad, can develop for many reasons and
+      do not establish a diagnosis by themselves.
+    causes:
+    - Repeated impacts are associated with an abnormal pattern of tau protein in brain tissue. The level of exposure that leads to
+      disease in a particular person is unclear.
+    diagnosis:
+    - A definite diagnosis currently requires examination of the brain after death. During life, assessment looks at symptoms, past
+      injury and other explanations that may be treatable.
+    care:
+    - A GP may arrange memory or neurological assessment and help address mood, sleep or other symptoms. Ask about safe return to
+      activity after a recent concussion.
+    complications:
+    - Long-term effects and needs vary. Reducing further head impacts and treating symptoms can be part of the care plan, irrespective
+      of whether the cause is established.
+    help:
+    - Contact a GP about lasting cognitive or behaviour changes. After a recent head injury, seek urgent care for worsening headache,
+      repeated vomiting, confusion or difficulty staying awake.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/chronic-traumatic-encephalopathy/
+  common-illnesses:
+    kind: service
+    aliases: Common illnesses Ireland, minor illness, pharmacy advice, when to seek help
+    summary: The HSE common illnesses collection covers everyday symptoms such as colds, sore throats and diarrhoea. Use the guide
+      that best matches the symptoms and how unwell you feel.
+    evidence_gap: The collection covers many different illnesses and symptoms. Irish surveillance uses separate definitions and cannot
+      produce a single valid prevalence estimate for common illnesses overall.
+    symptoms:
+    - It can help people managing a mild, recent illness and deciding whether to speak to a pharmacist or GP. Babies and vulnerable
+      people may need advice sooner.
+    causes:
+    - The collection explains the likely causes, self-care and warning signs for different symptoms. It also explains why antibiotics
+      are not needed for many short viral illnesses.
+    diagnosis:
+    - Note when symptoms began, whether they are improving and whether the person can drink normally. Consider pregnancy, age, medicines
+      and health conditions when deciding what help is needed.
+    care:
+    - Pharmacists can advise on appropriate symptom relief. If you see a GP, tell them the pattern and any recent treatment rather
+      than relying on a single symptom alone.
+    complications:
+    - Most minor illnesses improve, but worsening symptoms or inability to drink can change what care is needed. Follow public health
+      advice to limit spreading infections.
+    help:
+    - Get urgent advice for serious deterioration, dehydration or breathing difficulty. Call 112 or 999 for severe breathing problems,
+      a person who cannot be woken or another emergency.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/common-illnesses/
+  diaphragm-the-cap:
+    kind: service
+    aliases: Contraceptive diaphragm, cervical cap, hormone-free barrier contraception
+    summary: A contraceptive diaphragm or cap covers the cervix to reduce the chance of pregnancy. Its protection depends on correct
+      use each time and differs from STI protection.
+    evidence_gap: The sources reviewed did not identify recent national Irish uptake figures for diaphragms or caps. Scheme-wide
+      contraception totals do not establish how many people use this method.
+    symptoms:
+    - It may suit someone who prefers a reusable barrier method without hormones. Ask your GP or contraception clinic whether a diaphragm
+      or cap is suitable for you.
+    causes:
+    - The device covers the cervix and is commonly used with an appropriate spermicide. Position, timing and spermicide instructions
+      depend on the particular device you are using.
+    diagnosis:
+    - Ask about fit and how to check placement, including whether you need another assessment after childbirth or a major change
+      in weight. Discuss how to use it with other protection.
+    care:
+    - Your clinician or device instructions should explain how to insert it, when to remove it, how long it may stay in and what
+      to do if you have sex again.
+    complications:
+    - Irritation can occur and fertility returns right away when you stop using the device. Condoms can reduce the risk of STIs,
+      which a cap or diaphragm does not provide.
+    help:
+    - Seek prompt advice about emergency contraception if the device was displaced or used incorrectly. Contact a clinician if it
+      is difficult to remove or symptoms persist.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/diaphragm-the-cap/
+  dry-mouth:
+    aliases: Xerostomia, sticky mouth, reduced saliva
+    summary: A dry mouth can make speaking, eating and swallowing uncomfortable. Medicines and dehydration are common contributors,
+      and ongoing dryness can affect teeth and gums.
+    evidence_gap: Irish figures for conditions such as Sjögren's do not count all causes of dry mouth. The sources reviewed did not
+      establish national prevalence of the symptom.
+    symptoms:
+    - Your mouth may feel sticky, and food can stick or taste different. Sore lips, needing water at night and difficulty eating
+      dry foods are useful details.
+    causes:
+    - Saliva may be reduced by medicines, dehydration, mouth breathing, some diseases or radiotherapy. A dry sensation can also occur
+      without a major drop in saliva.
+    diagnosis:
+    - A GP or dentist reviews medicines and examines teeth, gums and mouth. They can decide whether tests for dehydration, diabetes
+      or another contributor are appropriate.
+    care:
+    - Try frequent sips if suitable for you, sugar-free gum if safe to chew and regular dental care. Ask a pharmacist about saliva
+      substitutes or a medicine review.
+    complications:
+    - Less saliva can increase tooth decay, mouth soreness and fungal infection. A dentist can give personalised advice on fluoride
+      and monitoring, especially with persistent symptoms.
+    help:
+    - Seek review for persistent dryness, trouble swallowing or discomfort that interferes with eating. Get assessment for a persistent
+      white or red patch or a mouth ulcer.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/dry-mouth/
+  early-or-delayed-puberty:
+    aliases: Precocious puberty, late puberty, delayed development in puberty
+    summary: Puberty begins at different ages. Development unusually early or late, or changes that progress rapidly, can be checked
+      to see whether growth or hormone levels need assessment.
+    evidence_gap: The timing thresholds are clinical triggers for assessment. The sources reviewed did not establish national Irish
+      rates for early and delayed puberty as separate diagnoses.
+    symptoms:
+    - Early signs can include breast or testicular development, body hair or a growth spurt. With delayed puberty, expected physical
+      changes have not started or have stopped progressing.
+    causes:
+    - Hormones from the brain and reproductive organs trigger development. Family patterns can affect timing, while some illnesses,
+      nutrition problems or hormone conditions can change it.
+    diagnosis:
+    - A GP can review growth charts, timing and family history and discuss an examination. A paediatric team may use blood tests
+      or an X-ray of bone development.
+    care:
+    - Monitoring is enough for some children. If an underlying condition needs treatment, a specialist can discuss options and help
+      the family support their child emotionally.
+    complications:
+    - Unexpected timing can affect confidence and how a child fits in with peers. Some hormone conditions can also affect adult height
+      or bone health without treatment.
+    help:
+    - Talk to a GP about signs before eight in girls or nine in boys, or absent breast development by 13 or testicular development
+      by 14.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/early-or-delayed-puberty/
+  excessive-sweating-hyperhidrosis:
+    aliases: Hyperhidrosis, excessive underarm sweating, sweaty hands and feet
+    summary: Hyperhidrosis is sweating that is more than your body needs for cooling. It may affect particular areas or start more
+      generally because of another health problem or medicine.
+    evidence_gap: Irish sources reviewed did not establish a national prevalence estimate. Sweating associated with other diagnoses
+      and sweating treated privately are hard to capture in one dataset.
+    symptoms:
+    - Hands, feet, face or underarms may sweat enough to soak clothes or make handling objects difficult. Let your GP know if you
+      sweat heavily while asleep.
+    causes:
+    - In primary hyperhidrosis the nerves controlling sweat glands are overactive. Other causes can include medicine effects, hormonal
+      changes or illnesses, especially when sweating begins suddenly.
+    diagnosis:
+    - A clinician asks where it happens, when it started and whether sleep is affected. Reviewing medicines and other symptoms can
+      guide whether blood tests are helpful.
+    care:
+    - Specialist antiperspirants can help some people. A clinician can discuss alternatives such as iontophoresis, injections or
+      other treatments when sweating interferes with daily life.
+    complications:
+    - Moisture can irritate skin and increase the risk of some infections. Sweating may also affect confidence, clothing choices
+      and the ability to use hands comfortably.
+    help:
+    - Speak to a GP for persistent sweating, sudden changes or regular drenching night sweats, especially if they come with unexplained
+      weight loss, fever or other illness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/excessive-sweating-hyperhidrosis/
+  fabricated-induced-illness-by-caregivers:
+    aliases: Fabricated or induced illness, FII, child safeguarding, Tusla
+    summary: Fabricated or induced illness is a form of abuse. If you are concerned about a child, report what you have observed
+      so safeguarding professionals can assess it.
+    emergency: 'Child in immediate danger: call'
+    evidence_gap: Safeguarding figures combine different types of child abuse and depend on detection and reporting. The sources
+      reviewed did not establish an Irish prevalence rate for FII.
+    symptoms:
+    - Concerns may arise when accounts of illness repeatedly differ from what is observed or when a child is undergoing unnecessary
+      care. A single discrepancy cannot establish abuse.
+    causes:
+    - The priority is the risk to the child, including repeated medical interventions or restrictions from ordinary life. Professionals
+      can consider other explanations while arranging a safeguarding assessment.
+    diagnosis:
+    - Healthcare and child protection teams compare observations over time and coordinate information. Record facts as accurately
+      as you can and share them with the relevant safeguarding service.
+    care:
+    - Tusla and other professionals can plan protection and support according to the risk. Avoid confronting a caregiver in a way
+      that could put the child at further risk.
+    complications:
+    - A child can experience physical harm, emotional effects and disruption to school or relationships. Follow-up can support recovery
+      and make sure needed medical care is still available.
+    help:
+    - Report a reasonable concern to Tusla and get safeguarding advice if you are unsure. If a child is in immediate danger, contact
+      Gardaí through 112 or 999.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/fabricated-induced-illness-by-caregivers/
+  farting:
+    aliases: Flatulence, passing wind, excess intestinal gas
+    summary: Passing wind is a normal part of digestion. If it increases or occurs with ongoing pain, a change in bowel habits or
+      weight loss, consider asking for advice.
+    evidence_gap: The sources reviewed did not give an Irish population estimate for problematic flatulence. Passing wind is normal,
+      and criteria for excessive symptoms differ.
+    symptoms:
+    - You may pass wind more often, notice a stronger smell or feel bloated. Tell your GP if the change is persistent or there are
+      bowel or appetite changes.
+    causes:
+    - Gas can come from swallowed air and from gut bacteria breaking down food. Fizzy drinks or particular foods can increase it,
+      while constipation may change how it feels.
+    diagnosis:
+    - A clinician reviews the pattern, diet and bowel symptoms. They may check for constipation, food intolerance or another cause
+      rather than testing uncomplicated gas on its own.
+    care:
+    - Eat more slowly and note whether a particular food reliably brings on symptoms. Avoid making major restrictive changes without
+      guidance, especially if you have lost weight.
+    complications:
+    - Gas alone usually does not damage the body, but embarrassment or discomfort can affect social activities. Persistent pain or
+      altered stools may need treatment for another cause.
+    help:
+    - Ask a GP if symptoms continue or disrupt daily life, or if you have ongoing pain, diarrhoea, constipation, blood in your stool
+      or weight loss.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/farting/
+  female-sterilisation:
+    kind: procedure
+    aliases: Tubal sterilisation, permanent contraception, blocking or removing fallopian tubes
+    summary: Female sterilisation is intended to permanently prevent pregnancy. A specialist can compare the procedure with reversible
+      methods and explain the consent process and recovery.
+    evidence_gap: Published counts for tube removal also include procedures performed for other reasons, so they cannot be used as
+      a national count of Irish female sterilisation.
+    symptoms:
+    - It may suit someone who has decided they do not want future pregnancies. Discuss long-acting reversible contraception first
+      if you want a method you can stop later.
+    causes:
+    - The surgeon blocks, divides or removes part or all of the fallopian tubes so sperm and egg cannot meet. The operation does
+      not usually change ovarian hormone production.
+    diagnosis:
+    - Ask about the planned surgical method, anaesthetic, fasting, medicines and when to stop using your existing contraception.
+      Confirm whether you need someone with you afterwards.
+    care:
+    - The details depend on the procedure. Afterward, the hospital team checks your recovery and explains wound care, pain relief
+      and when you can return to activities.
+    complications:
+    - Possible risks include infection, bleeding and injury to nearby organs. Rare pregnancy after sterilisation can be ectopic,
+      and reversal should not be relied on.
+    help:
+    - Contact the hospital for worsening pain, bleeding, fever or wound changes. Seek urgent evaluation if a pregnancy test is positive
+      and you have pain or bleeding.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/female-sterilisation/
+  glandular-fever:
+    aliases: Infectious mononucleosis, mono, Epstein–Barr virus, glandular fever
+    summary: Glandular fever is usually caused by Epstein–Barr virus and often affects teenagers and young adults. Fatigue can continue
+      after the sore throat and fever improve.
+    evidence_gap: Irish sources reviewed did not provide national prevalence for symptomatic glandular fever. Past infection with
+      the virus is a different measure and includes people without symptoms.
+    symptoms:
+    - Fever, sore throat, swollen neck glands and marked tiredness can occur. Some people develop a rash or feel discomfort in the
+      abdomen if the spleen enlarges.
+    causes:
+    - The virus can pass through saliva. After infection it remains in the body, but many infections cause few symptoms and do not
+      present as glandular fever.
+    diagnosis:
+    - A clinician asks about symptoms and may examine your throat, glands or abdomen. Blood tests can sometimes help confirm the
+      cause or rule out similar illnesses.
+    care:
+    - Rest, keep drinking and ask about suitable pain relief. Avoid contact sports and strenuous activity until advised it is safe,
+      due to possible spleen enlargement.
+    complications:
+    - Most people recover without a special treatment, although tiredness can last for weeks. Rare complications include breathing
+      problems due to severe throat swelling or an injured spleen.
+    help:
+    - Get urgent help if unable to swallow fluids or if you have severe abdominal pain. Call 112 or 999 for serious breathing difficulty
+      or collapse.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/glandular-fever/
+  hair-loss:
+    aliases: Alopecia, hair shedding, thinning hair, patchy hair loss
+    summary: Hair loss can appear as thinning, increased shedding or a discrete bald patch. The pattern and condition of the scalp
+      help identify whether treatment is available.
+    evidence_gap: Irish studies reviewed did not estimate prevalence across all forms of hair loss. Figures for alopecia areata or
+      patterned hair loss refer to defined subgroups.
+    symptoms:
+    - You may notice more hair on a brush or in the shower, a wider parting or patches without hair. Scalp pain or visible inflammation
+      is worth mentioning.
+    causes:
+    - Family patterns, a recent illness, childbirth, nutrition, medicines and inflammatory scalp disorders can all contribute. The
+      cause influences whether the hair is likely to grow back.
+    diagnosis:
+    - A GP or dermatologist checks the pattern, scalp and timing and may request blood tests or a scalp assessment. Bring a list
+      of medicines and relevant changes.
+    care:
+    - Treatment depends on the cause. It can involve addressing a deficiency or scalp problem, specific hair-loss treatment or support
+      with camouflage or a wig if you want it.
+    complications:
+    - Some shedding improves over time, while other forms progress. Scarring and inflammation can lead to lasting loss, so early
+      review can matter when the scalp is sore or changed.
+    help:
+    - Speak to a GP if hair loss is sudden, patchy or upsetting, or occurs with scaling, pain or other symptoms. Avoid unverified
+      supplements or treatments before assessment.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/hair-loss/
+  head-lice-nits:
+    aliases: Head lice, nits, live lice in hair, wet combing
+    summary: Head lice are small insects that live in hair and spread mainly through hair-to-hair contact. Finding a live louse is
+      the most useful clue that treatment is needed.
+    evidence_gap: Irish sources reviewed did not provide a representative national estimate. School observations and pharmacy sales
+      are not comparable measures of active head lice across Ireland.
+    symptoms:
+    - The scalp may itch, but some people have no symptoms. Nits are egg cases attached to hairs, and a case left after hatching
+      does not by itself confirm lice.
+    causes:
+    - Lice crawl from one head to another during close contact. They cannot jump or fly. Children who spend time playing close together
+      can pass them between households.
+    diagnosis:
+    - Check the whole scalp, including behind the ears and the back of the neck, with a fine detection comb. Treatment decisions
+      are based on finding live lice.
+    care:
+    - Wet combing and suitable licensed preparations are options. Follow the product or HSE instructions for repeat checks or treatment
+      and check close household contacts for live lice.
+    complications:
+    - Lice can return after fresh contact. Persistent itch after treatment is not necessarily live infestation, so check with a comb
+      before using more product.
+    help:
+    - Ask a pharmacist if you are still finding live lice after following instructions or you need a product for a young child. See
+      a GP if scalp sores become infected.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/head-lice-nits/
+  hiatus-hernia:
+    aliases: Hiatal hernia, stomach above diaphragm, reflux with hiatus hernia
+    summary: A hiatus hernia occurs when part of the stomach moves through an opening in the diaphragm. Many cause no symptoms, but
+      some are associated with reflux.
+    evidence_gap: Irish admission and procedure data do not measure all hiatus hernias, many of which cause no symptoms. The sources
+      reviewed did not establish national prevalence.
+    symptoms:
+    - If symptoms occur, they can include burning after meals, food or acid coming back up, bloating or swallowing discomfort. Some
+      hernias are found during tests for another reason.
+    causes:
+    - The opening that allows the food pipe to pass through the diaphragm can widen. That may let the upper part of the stomach move
+      above the diaphragm.
+    diagnosis:
+    - A clinician considers your symptoms and may arrange endoscopy or imaging if appropriate. Tests can check for other explanations
+      if you have swallowing difficulty or ongoing pain.
+    care:
+    - Smaller meals and staying upright after eating may ease reflux. A clinician can discuss medicines or refer for surgery if there
+      are significant persistent symptoms or certain hernia types.
+    complications:
+    - Reflux can inflame the food pipe. Rare complications depend on the type of hernia and can cause sudden severe pain or vomiting
+      that requires urgent care.
+    help:
+    - Contact a GP for progressively difficult swallowing, unexplained weight loss or frequent reflux. Get urgent help for severe
+      pain, vomiting blood or being unable to swallow fluids.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/hiatus-hernia/
+  hiccups:
+    aliases: Hiccoughs, diaphragm spasms, hiccups lasting more than two days
+    summary: Hiccups are short involuntary spasms followed by a characteristic sound. Most last only minutes. Hiccups lasting longer
+      than two days need clinical advice.
+    evidence_gap: The sources reviewed did not establish Irish prevalence for persistent hiccups. Short ordinary episodes are rarely
+      recorded in healthcare statistics.
+    symptoms:
+    - Spasms may recur every few seconds and interrupt a sentence or a meal. Prolonged hiccups can make it hard to eat, sleep or
+      drink enough.
+    causes:
+    - The diaphragm contracts unexpectedly and the vocal cords close briefly. Eating quickly or drinking fizzy drinks may trigger
+      short episodes. Persistent hiccups can have other causes.
+    diagnosis:
+    - A GP asks about duration, triggers, new medicines and other symptoms. They may examine you or request tests if a persistent
+      episode has no clear explanation.
+    care:
+    - Brief hiccups usually pass without treatment. Try slowing down while eating and avoid triggers that repeatedly affect you.
+      A clinician can consider treatment if they persist.
+    complications:
+    - Long episodes can affect sleep and intake. Follow-up may matter if hiccups recur very often or if a clinician needs to address
+      the condition behind them.
+    help:
+    - Contact a GP if hiccups last more than 48 hours or repeatedly interfere with normal life. Seek urgent advice if you have serious
+      breathing difficulty or cannot drink.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/hiccups/
+  how-to-clean-your-hands:
+    kind: service
+    aliases: Handwashing, hand hygiene, soap and water, preventing infection
+    summary: Cleaning your hands helps protect other people as well as you. Soap and water are especially important after using the
+      toilet and when hands are visibly dirty.
+    evidence_gap: Hand hygiene audits in Irish hospitals measure staff practice in observed settings and cannot establish how frequently
+      people wash their hands across the community.
+    symptoms:
+    - Everyone can use hand hygiene at key points, including before handling food, after going to the toilet and after touching rubbish
+      or cleaning up after illness.
+    causes:
+    - Soap, water and friction lift dirt and microbes. Alcohol rub can be useful in suitable situations when hands are visibly clean,
+      but it is not suitable for every purpose.
+    diagnosis:
+    - Gather soap, clean running water and a way to dry your hands. If using alcohol rub, follow instructions and keep it away from
+      small children and flames.
+    care:
+    - Wet hands, lather and rub palms, backs, fingers, thumbs and fingertips. Rinse thoroughly, then dry well. Help children clean
+      all surfaces rather than rushing the process.
+    complications:
+    - Repeated washing can dry sensitive skin. Drying thoroughly and using an appropriate moisturiser can help, especially in jobs
+      that require frequent hand cleaning.
+    help:
+    - Ask a pharmacist or clinician about cracked or inflamed skin that persists. Follow healthcare or public health instructions
+      when caring for someone with an infection.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/how-to-clean-your-hands/
+  injectable-contraception:
+    kind: service
+    aliases: Contraceptive injection, depot progestogen, repeat contraception injection
+    summary: A progestogen injection protects against pregnancy for a fixed interval. Discuss side effects, when repeat doses are
+      due and plans for pregnancy before choosing it.
+    evidence_gap: Published Irish contraception scheme totals aggregate different methods and people using them. The sources reviewed
+      did not identify a national injection-specific uptake estimate.
+    symptoms:
+    - It may suit someone who prefers a method that does not require taking a pill daily. A clinician checks if it is appropriate
+      based on your individual health and preferences.
+    causes:
+    - A progestogen is released gradually, usually stopping ovulation and thickening cervical mucus. The brand and route determine
+      the correct schedule, so record the next due date.
+    diagnosis:
+    - Discuss bleeding patterns, future fertility, bone health and prescribed medicines with a clinician. Ask whether extra contraception
+      is needed when starting or after a late appointment.
+    care:
+    - A clinician administers the injection and tells you when to return. Contact the clinic early if you may miss the date, because
+      protection can decrease if the injection is late.
+    complications:
+    - Bleeding may become irregular or stop, and side effects can last while the injection wears off. Fertility can take time to
+      return after stopping. It does not protect against STIs.
+    help:
+    - Ask a contraception provider for advice if a dose is late or symptoms are difficult to manage. Seek timely emergency contraception
+      advice if you might have lost protection.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/injectable-contraception/
+  itchy-bottom:
+    aliases: Anal itching, pruritus ani, itch around anus
+    summary: Itching around the anus can come from irritation, an infection or another problem. It often improves with gentle care,
+      while bleeding, pain or persistent symptoms need assessment.
+    evidence_gap: No Irish population rate was identified for anal itch across different causes. Prescribing and clinic records capture
+      selected people who seek treatment.
+    symptoms:
+    - Itch may be worse at night or after using the toilet. Note any soreness, discharge, bleeding, lumps or changes in bowel habits
+      when you seek advice.
+    causes:
+    - Moisture, stool leakage and fragranced products can irritate the skin. Haemorrhoids, skin conditions or threadworms are other
+      causes, particularly with characteristic night-time itch.
+    diagnosis:
+    - A clinician asks about timing, bowel symptoms and products or medicines you use. They may examine the skin or suggest a test
+      or treatment for a likely cause.
+    care:
+    - Wash gently with water and dry without rubbing. Avoid perfumed products and scratching. Ask a pharmacist or GP before using
+      creams if symptoms continue.
+    complications:
+    - Scratching can damage the skin and prolong irritation. Repeated symptoms sometimes improve only after treating an underlying
+      infection, skin condition or bowel problem.
+    help:
+    - Arrange GP review if itching persists, returns repeatedly or comes with blood, pain, discharge or a new lump. Seek urgent care
+      for significant bleeding or severe illness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/itchy-bottom/
+  lost-or-changed-sense-of-smell:
+    aliases: Anosmia, reduced smell, parosmia, distorted smell
+    summary: Smell can become weaker, disappear or change after a cold or another illness. An ongoing change can affect eating and
+      how you notice smoke or spoiled food.
+    evidence_gap: Irish data on infections do not show how many people develop or retain changes in smell. The sources reviewed did
+      not establish a national prevalence estimate.
+    symptoms:
+    - Familiar odours may seem faint or smell different. A blocked nose or other symptoms can give a clue. Loss of flavour often
+      follows a reduction in smell.
+    causes:
+    - Viral infections, sinus problems, nasal polyps and head injuries can affect smell. Persistent symptoms can sometimes have another
+      cause that needs a clinical assessment.
+    diagnosis:
+    - A clinician asks about infection, nasal symptoms, head injury and medicines. They may examine the nose and arrange further
+      tests if the change remains unexplained.
+    care:
+    - Management depends on the cause. Some people can try smell training with guidance, while an underlying nose condition may need
+      different care. Check smoke alarms are working.
+    complications:
+    - Loss of smell can affect diet and safety. Follow storage and use-by instructions rather than relying on smell alone, and tell
+      your clinician if eating becomes difficult.
+    help:
+    - Contact a GP if smell does not return after a few weeks or changes without an obvious reason. Seek urgent assessment if it
+      follows a serious head injury.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/lost-or-changed-sense-of-smell/
+  lumps:
+    aliases: New lump, bump under the skin, growing swelling
+    summary: Lumps can arise from skin, glands or deeper tissues. Many are benign, but a growing lump, a new breast or testicular
+      lump, or a persistent unexplained lump should be checked.
+    evidence_gap: Irish cancer, infection and procedure figures describe different causes. The sources reviewed did not establish
+      how many people have lumps of any kind.
+    symptoms:
+    - A lump may be soft or firm, tender or painless, and may move under the skin. Tell a clinician how long it has been there and
+      if it has changed.
+    causes:
+    - Cysts, fatty lumps, swollen lymph nodes and infections are possible causes. The likely explanation varies with location, physical
+      features and symptoms such as fever.
+    diagnosis:
+    - A clinician examines where and how deeply it sits and asks about changes. Ultrasound, blood tests or a referral may be needed
+      if the cause is uncertain.
+    care:
+    - Try not to squeeze or puncture it. Care ranges from monitoring a confirmed harmless lump to treating infection or arranging
+      specialist review for a concerning one.
+    complications:
+    - Some lumps settle or remain stable. If you are offered monitoring, make sure you know how long to wait and what signs should
+      prompt an earlier review.
+    help:
+    - Arrange GP assessment for unexplained, enlarging or fixed lumps, especially in the breast or testicle. Get urgent advice for
+      redness, severe pain or fever with the lump.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/lumps/
+  male-menopause:
+    aliases: Midlife symptoms in men, low testosterone, late-onset hypogonadism
+    summary: The term male menopause can obscure several different causes of fatigue, low mood or reduced sex drive in midlife. A
+      clinical assessment can identify what may help.
+    evidence_gap: There is no standard diagnosis covering all symptoms described as male menopause. An Irish rate for low testosterone
+      would use different criteria and should be measured separately.
+    symptoms:
+    - Men may notice tiredness, poor sleep, low mood, reduced libido or changes in erections or strength. Specific symptoms and when
+      they started help guide the assessment.
+    causes:
+    - Testosterone can change gradually with age. Depression, stress, medicines, diabetes or sleep problems can produce similar symptoms.
+      A smaller group have a diagnosable hormone deficiency.
+    diagnosis:
+    - A GP takes a history, checks for other conditions and decides whether hormone tests are useful. A low result often needs confirmation
+      and interpretation with symptoms.
+    care:
+    - Treatment may involve sleep, mental health or cardiovascular care, or reviewing medicines. Testosterone is an option only for
+      appropriately assessed cases, with monitoring and a discussion of risks.
+    complications:
+    - Finding a cause can improve quality of life and may reveal a separate health need. Treatments bought online can be unsafe or
+      delay appropriate investigation.
+    help:
+    - Contact a GP if symptoms persist, affect daily life or you are worried about testosterone. Seek immediate help if you feel
+      unsafe or at risk of serious harm.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/male-menopause/
+  medically-unexplained-symptoms:
+    aliases: Persistent physical symptoms, ongoing symptoms with normal tests, functional symptoms
+    summary: When physical symptoms persist without a clear explanation, they still deserve care. Assessment and treatment can focus
+      on what helps daily life while remaining open to new findings.
+    evidence_gap: The label covers different symptoms and definitions. No reliable estimate for this combined presentation in Ireland
+      was identified in the sources reviewed.
+    symptoms:
+    - People may have persistent pain, fatigue, dizziness or digestive symptoms. The experience and how it affects work, sleep, movement
+      or relationships differ from person to person.
+    causes:
+    - Multiple factors can affect how the body works and responds to signals. A symptom can be genuine even when routine tests do
+      not show a clear disease or injury.
+    diagnosis:
+    - A GP reviews previous tests, current symptoms and what has changed. They can explain which further tests are likely to help
+      and what new signs should prompt reassessment.
+    care:
+    - Agree a plan that may include gradual activity, physiotherapy, psychological support or symptom treatment. Regular follow-up
+      can help you work towards practical goals without repeatedly starting from scratch.
+    complications:
+    - Symptoms can fluctuate and affect participation in ordinary life. A useful plan often addresses sleep, activity and wellbeing
+      while providing a route back for changes that require assessment.
+    help:
+    - Contact your GP if symptoms are limiting your life or changing. Seek urgent help for a sudden severe new symptom rather than
+      assuming it belongs to an existing pattern.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/medically-unexplained-symptoms/
+  memory-loss-amnesia:
+    aliases: Amnesia, forgetfulness, memory problems
+    summary: Occasional forgetfulness is common. New memory loss, lapses that interfere with everyday tasks or difficulty following
+      familiar routines can benefit from assessment.
+    emergency: 'Sudden confusion or memory loss with weakness or speech difficulty: call'
+    evidence_gap: Irish dementia prevalence describes one possible cause. The sources reviewed did not establish a national rate
+      for memory loss or amnesia from all causes.
+    symptoms:
+    - You might repeat questions, forget recent events, lose track of appointments or struggle with tasks previously done easily.
+      Ask someone close whether they have noticed changes.
+    causes:
+    - Poor sleep, stress, depression, medicines and vitamin deficiencies can affect memory. Head injuries, neurological disease and
+      sudden illnesses can also cause difficulties of different kinds.
+    diagnosis:
+    - A GP asks about the pattern and impact and may review medicines, check thinking skills and order blood tests. A specialist
+      memory assessment or scan may follow.
+    care:
+    - Treatment depends on the cause. Keeping a routine, writing down information and asking someone you trust to attend appointments
+      can help while you are being assessed.
+    complications:
+    - Some causes can improve with treatment. If difficulties progress, earlier assessment offers time to discuss safety, day-to-day
+      support and future care with the people you choose.
+    help:
+    - Arrange GP review if memory problems keep recurring or affect independence. Call 112 or 999 for sudden confusion or loss of
+      memory with stroke signs or a serious head injury.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/memory-loss-amnesia/
+  metallic-taste:
+    aliases: Taste of metal, dysgeusia, altered taste
+    summary: A metallic taste can develop with dental problems, a recent infection, pregnancy or some medicines. The timing and any
+      change in smell can help identify the cause.
+    evidence_gap: The sources reviewed did not provide Irish population prevalence for metallic taste. Studies of taste changes after
+      a particular illness measure only one potential cause.
+    symptoms:
+    - Food, drink or saliva may taste metallic or bitter. It can be constant or noticed only while eating. Tell your clinician about
+      any pain or mouth changes.
+    causes:
+    - Gum disease, some medicines, reflux or a changed sense of smell can contribute. Some people notice it during pregnancy, and
+      the cause is sometimes unclear.
+    diagnosis:
+    - A GP or dentist asks about the timing, dental symptoms, prescriptions and changes in smell. They can examine the mouth and
+      check for contributors that can be treated.
+    care:
+    - Keep up usual dental care and seek advice about a possible medicine side effect without stopping treatment yourself. Discuss
+      strategies if the change is interfering with eating.
+    complications:
+    - Most temporary episodes improve once the trigger passes. Ongoing changes can reduce appetite and enjoyment of food, and unexplained
+      weight loss merits assessment.
+    help:
+    - Contact a GP or dentist if the taste persists without an obvious cause, or comes with gum bleeding, mouth lesions, swallowing
+      problems or weight loss.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/metallic-taste/
+  motion-sickness:
+    aliases: Travel sickness, seasickness, car sickness, motion nausea
+    summary: Motion sickness can cause nausea or dizziness while travelling. Looking at a stable point, choosing a position with
+      less movement and planning ahead can help.
+    evidence_gap: The sources reviewed did not establish an Irish population estimate. Motion sickness depends on the type of motion
+      and who is exposed, so travel surveys are hard to compare.
+    symptoms:
+    - You may feel sick, sweaty, pale or dizzy, and can sometimes vomit. Symptoms commonly start during movement and gradually settle
+      when it stops.
+    causes:
+    - The eyes and inner ear may send conflicting information about movement to the brain. This can happen in cars, boats or aircraft,
+      or with some screen experiences.
+    diagnosis:
+    - The timing of symptoms during travel is usually the best clue. New symptoms that continue when you are still, or come with
+      hearing changes, may need assessment.
+    care:
+    - Look ahead or towards the horizon, take breaks when possible and avoid reading or looking at a screen. Ask a pharmacist about
+      treatments and potential drowsiness.
+    complications:
+    - Vomiting can cause dehydration on a long journey. Some medicines affect alertness, so read instructions and avoid driving if
+      you feel drowsy or impaired.
+    help:
+    - See a GP if symptoms occur without travel or continue after it ends. Ask a pharmacist before giving travel sickness medicine
+      to a child or using it in pregnancy.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/motion-sickness/
+  munchausens-syndrome:
+    aliases: Factitious disorder imposed on self, fabricated illness, Munchausen syndrome
+    summary: Factitious disorder imposed on self involves presenting oneself as ill through falsified or deliberately produced symptoms.
+      It is a complex mental health condition that needs a professional assessment.
+    evidence_gap: Reported hospital cases reflect detection and documentation. The sources reviewed did not provide a national Irish
+      estimate for factitious disorder imposed on self.
+    symptoms:
+    - A clinician may notice unexplained differences between reported symptoms, examination findings and previous records. These
+      differences alone can have other explanations and do not prove a disorder.
+    causes:
+    - The underlying reasons are not fully understood. The behaviour is distinct from seeking an external reward, and is different
+      from having genuine symptoms without a clear diagnosis.
+    diagnosis:
+    - Diagnosis requires careful coordination and review, with a professional assessment of physical and mental health. A person
+      can have legitimate medical needs alongside concerns about factitious behaviour.
+    care:
+    - Support may involve consistent care through a named clinician and specialist mental health input. Treatment aims to reduce
+      harm and address the person's needs without confrontation.
+    complications:
+    - Unnecessary tests or treatment can cause injury, and self-inflicted illness can be serious. Continued support and a coordinated
+      plan can reduce repeated invasive investigation.
+    help:
+    - Speak to a GP or mental health professional if you are concerned about your own behaviour. Get urgent care for severe injury,
+      overdose or an immediate risk of harm.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/munchausens-syndrome/
+  nail-problems:
+    aliases: Brittle nails, nail lifting, nail discolouration, nail changes
+    summary: Nails can change after an injury, irritation or infection. A spreading colour change, painful swelling or a new streak
+      deserves assessment before taking treatment.
+    evidence_gap: No national Irish prevalence figure was identified for this broad group. Studies of fungal infection do not include
+      all other nail changes.
+    symptoms:
+    - Nails can split, crumble, thicken, lift or change colour. The number of nails affected and any changes in nearby skin can help
+      identify the cause.
+    causes:
+    - Hand exposure to water or chemicals, footwear pressure, fungal infection and conditions such as psoriasis can affect nails.
+      Some changes follow an earlier illness.
+    diagnosis:
+    - A clinician checks the nails, skin and pattern over time. A clipping or scraping may help confirm fungal infection before using
+      a treatment that takes months.
+    care:
+    - Keep nails protected from repeated trauma or harsh products. A pharmacist, GP or podiatrist can help you work out whether a
+      particular treatment is appropriate.
+    complications:
+    - Nails grow slowly, so improvements can take months. Persistent changes can make shoes uncomfortable or hide an underlying condition
+      that requires a different treatment.
+    help:
+    - See a clinician for redness, swelling, pain, a dark streak that changes, or a nail that changes without an obvious injury.
+      Get earlier advice if you have diabetes.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/nail-problems/
+  night-sweats:
+    aliases: Drenching night sweats, sweating during sleep, waking with wet bedding
+    summary: Night sweats mean sweating enough to soak nightwear or bedding in a room that is reasonably cool. Frequent, unexplained
+      episodes are worth discussing with a clinician.
+    evidence_gap: Irish figures are published for some possible causes, but the sources reviewed did not measure national prevalence
+      of drenching night sweats across causes.
+    symptoms:
+    - You may wake with wet sheets, clothing or hair. Tell your GP about fever, cough, weight loss, swollen glands or a recent change
+      in medicines.
+    causes:
+    - Hormonal changes, medicines, anxiety, low blood sugar and infections can contribute. The causes differ, and continued drenching
+      sweats can call for checks for a separate illness.
+    diagnosis:
+    - The clinician asks how often it happens and about other symptoms, travel and medicines. They may examine you and arrange tests
+      based on the most likely causes.
+    care:
+    - A cooler room may help if overheating is the cause. If episodes persist, make a note of timing and relevant symptoms and ask
+      before changing any medicine.
+    complications:
+    - Repeated sweating can disrupt sleep and may have a treatable cause. Follow-up matters if symptoms change or initial tests do
+      not explain what is happening.
+    help:
+    - Contact a GP if sweats repeatedly wake you or occur with fever, unexplained weight loss or a persistent cough. Seek urgent
+      care if you are seriously unwell.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/night-sweats/
+  nightmares-and-night-terrors-in-adults:
+    aliases: Adult night terrors, distressing dreams, parasomnia
+    summary: Nightmares are frightening dreams you can often remember. In a night terror, someone may seem frightened or active while
+      asleep and have little memory of it afterwards.
+    evidence_gap: The Irish Sleep Society notes a lack of population estimates for parasomnias in Ireland. International estimates
+      cannot be presented as Irish adult prevalence.
+    symptoms:
+    - A nightmare can wake you fully with a clear memory of the dream. During a night terror, a person may shout or move and be difficult
+      to wake.
+    causes:
+    - Sleep deprivation, stress, fever, medicines and other sleep conditions can contribute. Recurrent nightmares can also follow
+      trauma, while night terrors involve incomplete awakening from deeper sleep.
+    diagnosis:
+    - A GP considers when episodes occur, what a witness observed, sleep habits and any injury. Recurrent or unusual episodes can
+      need specialist assessment to exclude other problems.
+    care:
+    - Keep a regular sleep schedule and address sleep loss where possible. If trauma or nightmares are causing ongoing distress,
+      a clinician can discuss targeted psychological treatment.
+    complications:
+    - Episodes can disrupt sleep for the person and others and can occasionally lead to injury. Make the sleeping area safer if movement
+      at night is a concern.
+    help:
+    - Speak to a GP if episodes begin in adulthood, recur often or cause injury or daytime sleepiness. Get urgent care for serious
+      injury or breathing problems.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/nightmares-and-night-terrors-in-adults/
+  noise-sensitivity-hyperacusis:
+    aliases: Hyperacusis, sound sensitivity, sounds feel too loud
+    summary: Hyperacusis makes ordinary sounds feel unusually loud, uncomfortable or painful. An audiology or medical assessment
+      can help if everyday noise is limiting what you can do.
+    evidence_gap: National Irish hearing impairment figures do not distinguish hyperacusis. The sources reviewed did not establish
+      an Irish population estimate for this sensitivity.
+    symptoms:
+    - Certain voices or noises may feel sharp or physically uncomfortable. Sensitivity can affect one or both ears, with or without
+      ringing or a change in hearing.
+    causes:
+    - How the auditory system processes sound may change after loud noise, ear problems or another condition. It can also develop
+      without a clear cause.
+    diagnosis:
+    - A clinician looks for ear problems and asks which sounds trigger symptoms. An audiologist may check hearing, and a specialist
+      can assess unusual or worsening symptoms.
+    care:
+    - Use hearing protection for genuinely loud settings. A specialist may advise you on gradual sound exposure or other strategies
+      if avoiding ordinary sound is increasing sensitivity.
+    complications:
+    - Persistent symptoms can affect work, social activity and sleep. Support can focus on tolerable ways to participate in daily
+      activities and manage any related hearing problem.
+    help:
+    - Seek prompt care for sudden hearing loss, ear injury or new severe dizziness. Ask a GP or audiologist about sensitivity that
+      causes pain or disrupts daily life.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/noise-sensitivity-hyperacusis/
+  orthodontic-treatment-and-braces:
+    kind: procedure
+    aliases: Braces in Ireland, HSE orthodontics, children orthodontic referral, retainers
+    summary: Orthodontics moves teeth and can correct some problems with the bite. Public HSE treatment for children depends on severity,
+      so referral and eligibility are different steps.
+    symptoms:
+    - Braces can address crowded teeth, teeth that protrude, gaps or a bite where teeth do not meet well. A specialist explains the
+      likely functional and cosmetic benefits.
+    causes:
+    - Fixed braces or removable appliances move teeth gradually, depending on your needs. Retainers usually help hold teeth in their
+      new position after active treatment finishes.
+    diagnosis:
+    - Ask the dentist how to refer your child and whether the HSE eligibility rules apply. Discuss dental hygiene, expected visits
+      and private costs if you are considering other options.
+    care:
+    - An orthodontist examines the teeth and bite, sometimes with X-rays or scans. Treatment and adjustment take place over multiple
+      visits, with home instructions between visits.
+    complications:
+    - Discomfort after fitting or adjustment is common. Careful cleaning helps prevent decay and gum disease, and missing retainer
+      wear can let teeth move back.
+    help:
+    - Contact the orthodontic team for a broken appliance, wire that is injuring the mouth or ongoing pain. Ask who to contact for
+      retainer problems after treatment finishes.
+  penis-problems:
+    aliases: Penile symptoms, genital rash, discharge, foreskin and erection concerns
+    summary: Changes such as pain, discharge, rash or a new lump can have different causes. Mention them to a GP or sexual health
+      clinician to find the right assessment.
+    evidence_gap: Irish STI and urology counts cover separate diagnoses. The sources reviewed did not provide a combined estimate
+      covering all of these symptoms in Ireland.
+    symptoms:
+    - Look for redness, swelling, sores, lumps, discharge or changes in urination. Tell a clinician about a new bend during erections,
+      persistent pain or a change in how your foreskin moves.
+    causes:
+    - Possible causes include irritation, infection, skin conditions or scarring. Some infections are sexually transmitted, while
+      some problems involve the foreskin, blood flow or deeper tissues.
+    diagnosis:
+    - A clinician asks about symptoms, sexual health and medicines. They may examine the area, with consent, or arrange testing for
+      an infection or other condition.
+    care:
+    - Try to avoid products that cause irritation, and seek advice before applying treatments. Care depends on the diagnosis and
+      may include medicines or specialist referral.
+    complications:
+    - A persistent sore or lump needs assessment. Some untreated infections can spread or affect partners, and scarring or inflammation
+      can make urination or sex uncomfortable.
+    help:
+    - Get urgent help if you cannot pass urine, a pulled-back foreskin is stuck, or a painful erection lasts four hours. Arrange
+      review for unexplained discharge or sores.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/penis-problems/
+  pins-and-needles:
+    aliases: Paraesthesia, tingling, numbness in hands or feet
+    summary: Pins and needles often settle when you move after leaning on a limb. Persistent, recurrent or sudden tingling with other
+      symptoms can warrant medical assessment.
+    emergency: 'Sudden one-sided weakness or trouble speaking: call'
+    evidence_gap: The sources reviewed did not give an Irish prevalence rate for paraesthesia as a symptom. Specific nerve disorders
+      account for only some cases.
+    symptoms:
+    - You may feel prickling, burning or numbness in an area such as a hand or foot. Note how long it lasts and whether strength
+      or balance also changes.
+    causes:
+    - Pressure on a nerve can temporarily alter sensation. Longer-lasting symptoms can reflect nerve compression, an injury, diabetes,
+      nutritional deficiency or a neurological condition.
+    diagnosis:
+    - A clinician asks about the area, triggers, duration and wider symptoms. An examination can check sensation and strength, with
+      blood or nerve tests if indicated.
+    care:
+    - Change position if symptoms clearly follow pressure and settle quickly. If altered sensation persists, protecting the area
+      from heat or injury can help while the cause is investigated.
+    complications:
+    - Reduced sensation can make injuries harder to notice. Progressing symptoms or weakness can affect mobility, so report changes
+      rather than waiting for a routine follow-up.
+    help:
+    - See a GP for persistent or recurring tingling. Call 112 or 999 for sudden symptoms with facial weakness, speech trouble or
+      one-sided loss of strength.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/pins-and-needles/
+  pulmonary-rehabilitation-exercise-and-education-programme:
+    kind: service
+    aliases: Pulmonary rehabilitation Ireland, COPD rehab, lung exercise and education programme
+    summary: Pulmonary rehabilitation combines tailored exercise and education for people with some long-term lung conditions. It
+      aims to improve activity and help people manage breathlessness in daily life.
+    symptoms:
+    - It may suit people whose lung condition makes ordinary activity hard despite ongoing care. Ask your GP or respiratory team
+      if you meet local referral criteria.
+    causes:
+    - The team assesses your starting capacity and adapts exercise and education to your goals. You may learn pacing, symptom management
+      and strategies for staying active safely.
+    diagnosis:
+    - Tell the team about recent infections, heart problems, mobility issues and oxygen or inhalers. Ask about the format, transport,
+      clothing and what equipment you need.
+    care:
+    - A programme usually combines planned sessions with support to practise at home. The team checks your response and modifies
+      exercise when symptoms or health needs change.
+    complications:
+    - The programme can help confidence and fitness, and benefits can be maintained with regular activity afterwards. Ask the team
+      for a plan for illness and changes in symptoms.
+    help:
+    - Talk to your GP or respiratory team about referral. Follow your emergency plan for sudden breathlessness or chest pain, rather
+      than waiting for a rehabilitation appointment.
+  raynauds:
+    aliases: Raynaud phenomenon, white cold fingers, colour changes in fingers or toes
+    summary: Raynaud's causes episodes of reduced blood flow in fingers or toes, often after cold or stress. Severe, one-sided or
+      new symptoms can need assessment for an underlying cause.
+    evidence_gap: The sources reviewed did not find reliable national prevalence estimates separating primary and secondary Raynaud's
+      in Ireland. Clinic data represent selected patients.
+    symptoms:
+    - Digits may become pale, blue, darker or red in stages. They can feel numb, painful or tingly, particularly as warmth and colour
+      return.
+    causes:
+    - Small blood vessels narrow more strongly than usual in response to a trigger. In some people it occurs on its own, while others
+      have a related condition or medicine effect.
+    diagnosis:
+    - A clinician considers the pattern, age at onset and whether other symptoms suggest an underlying condition. Depending on the
+      findings, blood tests or specialist assessment may be useful.
+    care:
+    - Keep your body and hands warm, warm the affected area gently and avoid nicotine. A clinician can discuss medicine or other
+      measures if episodes are frequent or severe.
+    complications:
+    - Most uncomplicated episodes do not damage tissue. Persistent reduced blood flow can cause sores or other complications, especially
+      if Raynaud's is linked to an underlying disease.
+    help:
+    - Contact a GP if symptoms begin for the first time later in life, affect only one side or come with joint or skin problems.
+      Get urgent advice for sores or prolonged discolouration.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/raynauds/
+  rectal-examination:
+    kind: test
+    aliases: Digital rectal examination, DRE, examination of the back passage
+    summary: A rectal examination lets a clinician feel for changes in the lower bowel and nearby structures. They should explain
+      what they need to check and ask your permission.
+    evidence_gap: The sources reviewed did not provide a national count of rectal examinations. Many are performed within ordinary
+      consultations and are not counted as separate services.
+    symptoms:
+    - It may help investigate blood in the stool, pain or bowel changes, or help assess the prostate in someone with a prostate when
+      the symptoms warrant it.
+    causes:
+    - The clinician uses a lubricated, gloved finger to feel inside the lower rectum. A normal finding does not rule out every cause
+      of bleeding or bowel symptoms.
+    diagnosis:
+    - Tell the clinician about pain, bleeding or previous difficulty with examinations. Ask any questions, request a chaperone if
+      you want one and agree how to pause or stop.
+    care:
+    - You usually lie on your side with knees drawn up. The examination is brief, and the clinician can explain each step while respecting
+      your privacy.
+    complications:
+    - Pressure or brief discomfort can occur. The result may guide the need for tests or referral rather than giving a complete explanation
+      immediately.
+    help:
+    - Ask when you will hear any further results and what to do if symptoms continue. Seek urgent assessment for severe bleeding,
+      faintness or rapidly worsening pain.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/rectal-examination/
+  salivary-gland-stones:
+    aliases: Salivary stones, sialolithiasis, swelling under jaw at meals
+    summary: A salivary gland stone can block the flow of saliva. Pain or swelling that increases during meals is a useful clue,
+      particularly if it keeps recurring.
+    evidence_gap: Irish hospital groups combine salivary procedures with several mouth procedures. The sources reviewed did not identify
+      national incidence or prevalence specific to salivary stones.
+    symptoms:
+    - You may notice swelling under the tongue or jaw, or near the cheek. Food can bring on discomfort, while redness, pus or fever
+      may suggest infection.
+    causes:
+    - Minerals can form a small stone in a salivary duct. The gland makes more saliva during meals, raising pressure when the duct
+      is blocked.
+    diagnosis:
+    - A clinician may feel the gland, inspect the duct opening and arrange ultrasound or other imaging if a stone cannot be seen
+      or symptoms keep returning.
+    care:
+    - Water and gentle measures advised by a clinician can help some small stones pass. Do not use a sharp object to remove a stone.
+      Persistent symptoms may need a procedure.
+    complications:
+    - Repeated blockage can cause inflammation and sometimes infection. An ear, nose and throat or oral specialist can explain treatments
+      that preserve the gland when appropriate.
+    help:
+    - Ask for advice if swelling recurs with meals or does not settle. Seek urgent help for fever with increasing swelling or pain,
+      especially with trouble swallowing.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/salivary-gland-stones/
+  sleep-paralysis:
+    aliases: Unable to move on waking, sleep paralysis hallucinations, REM sleep
+    summary: Sleep paralysis is a short period of being aware but unable to move or speak while falling asleep or waking. It can
+      feel frightening and usually passes on its own.
+    evidence_gap: Irish Sleep Society guidance notes that Irish population data for parasomnias are unavailable. International sleep
+      paralysis estimates have different definitions and are not Irish figures.
+    symptoms:
+    - You may feel awake yet unable to move briefly, sense another presence or feel pressure. Episodes end as ordinary muscle movement
+      returns, without lasting paralysis.
+    causes:
+    - During dreaming sleep, most muscles normally become temporarily inactive. Sleep paralysis can happen when awareness returns
+      before that temporary change in movement has worn off.
+    diagnosis:
+    - A clinician asks whether episodes are linked to sleep and whether there is daytime sleepiness, irregular sleep or sudden muscle
+      weakness. Further assessment can help if another condition is suspected.
+    care:
+    - Regular adequate sleep and consistent sleep times may reduce episodes. A clinician can help if shift work, insomnia or daytime
+      symptoms are associated with attacks.
+    complications:
+    - Episodes can make you anxious about going to sleep. If attacks are frequent or occur with severe daytime sleepiness, an underlying
+      sleep disorder may need care.
+    help:
+    - See a GP if episodes are frequent, upsetting or leave you avoiding sleep. Sudden or persistent weakness while fully awake needs
+      assessment as a separate emergency if severe.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/sleep-paralysis/
+  sleepwalking:
+    aliases: Somnambulism, walking in sleep, sleepwalking in children or adults
+    summary: Sleepwalking involves getting up or doing things while still asleep. Making the environment safe is important, particularly
+      if someone could leave the house or hurt themselves.
+    evidence_gap: The Irish Sleep Society reports a lack of Irish parasomnia prevalence data. Clinical referrals alone would miss
+      many children and adults who sleepwalk without seeking care.
+    symptoms:
+    - A person may sit up, walk, open doors or speak without responding normally. They can be confused if woken and may remember
+      little the next morning.
+    causes:
+    - It usually occurs during partial awakening from deep sleep. Sleep loss, illness, some medicines and other sleep disorders can
+      make episodes more likely for some people.
+    diagnosis:
+    - A GP may ask a witness what happens and review sleep timing, frequency and triggers. New or unusual episodes sometimes warrant
+      further testing or sleep clinic review.
+    care:
+    - Keep paths clear and secure hazards such as stairs and doors in a way that preserves fire safety. Gently guide a sleepwalker
+      back to bed if safe.
+    complications:
+    - Many childhood episodes improve as children grow. Falls, leaving the house and disrupted sleep are reasons to ask about a more
+      specific plan or referral.
+    help:
+    - Seek advice if episodes begin in adulthood, happen often, cause injury or are accompanied by marked daytime sleepiness. Call
+      for help after a serious injury.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/sleepwalking/
+  smelly-urine:
+    aliases: Strong-smelling pee, change in urine odour, ammonia smell
+    summary: Urine can smell stronger after some foods or when you drink less. Pain, fever or other urinary changes matter more than
+      smell alone when considering infection.
+    evidence_gap: Irish UTI statistics cover infections rather than urine odour. No Irish prevalence estimate for smelly urine from
+      all causes was identified.
+    symptoms:
+    - Changes in smell may come and go. Tell a clinician about burning, passing urine more often, cloudy urine, blood, fever or pain
+      in your side.
+    causes:
+    - Concentrated urine, foods and some supplements can alter its odour. A urine infection or another condition can sometimes cause
+      a change alongside other symptoms.
+    diagnosis:
+    - A clinician asks about other symptoms and your likelihood of infection. They may use a urine test if clinically indicated,
+      especially in pregnancy or with recurring symptoms.
+    care:
+    - Drink enough water within any prescribed fluid restriction. Note whether the change relates to food or supplements and avoid
+      starting antibiotics just because the smell is stronger.
+    complications:
+    - Odour alone is often temporary. An untreated infection can worsen or affect the kidneys, particularly when accompanied by fever,
+      side pain or feeling very unwell.
+    help:
+    - Contact a clinician for persistent smell with burning, blood, fever or pain. Seek prompt advice for urinary symptoms if pregnant,
+      or urgent help if seriously unwell.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/smelly-urine/
+  snoring:
+    aliases: Loud snoring, noisy breathing during sleep, sleep apnoea warning signs
+    summary: Snoring comes from vibration as air moves through a narrowed upper airway during sleep. Pauses in breathing, choking
+      noises or daytime sleepiness can indicate obstructive sleep apnoea.
+    evidence_gap: Prevalence of obstructive sleep apnoea is not a measure of simple snoring. The sources reviewed did not identify
+      a general Irish population estimate for snoring.
+    symptoms:
+    - A partner may notice loud or irregular noises, gasping or pauses. You may wake feeling unrefreshed, with a dry mouth or headache,
+      or feel sleepy during the day.
+    causes:
+    - Sleeping position, nasal blockage, alcohol and the shape of the airway can affect snoring. Sleep apnoea involves repeated narrowing
+      or blockage that interrupts breathing.
+    diagnosis:
+    - A clinician asks about breathing pauses, daytime symptoms and medicines. A sleep test may be appropriate if sleep apnoea is
+      suspected or another sleep disorder could contribute.
+    care:
+    - Sleeping on your side or reducing alcohol near bedtime may help simple snoring. A healthcare professional can advise on nasal
+      problems or treatment if sleep apnoea is confirmed.
+    complications:
+    - Frequent snoring can disturb sleep for others. Untreated obstructive sleep apnoea can affect alertness and other aspects of
+      health, making evaluation important when related symptoms occur.
+    help:
+    - Talk to a GP if someone notices breathing pauses or you feel very sleepy during the day. Avoid driving when drowsy and seek
+      advice promptly.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/snoring/
+  sore-or-dry-lips:
+    aliases: Chapped lips, cracked lips, sore mouth corners
+    summary: Lips can become dry or sore from the weather, licking or irritation. Cracks at the corners or a sore area that does
+      not heal may need different care.
+    evidence_gap: There is no Irish prevalence estimate in the sources reviewed. Most uncomplicated chapping is treated at home and
+      is not captured in clinical data.
+    symptoms:
+    - The lips may feel tight, flaky or tender. A split can bleed when you eat or speak. Blisters, crusting or a lasting ulcer are
+      useful details.
+    causes:
+    - Wind, dry air, sun and irritating products can damage the lip barrier. Frequent licking can worsen dryness. Other causes include
+      an infection or a skin reaction.
+    diagnosis:
+    - A pharmacist can help with uncomplicated chapping. A clinician checks the pattern if one area remains sore, there is a blister
+      or a treatment has not worked.
+    care:
+    - Use a plain protective lip balm, avoid licking or picking and protect the lips from strong sun. A pharmacist can advise if
+      something you apply seems to irritate them.
+    complications:
+    - Repeated cracks can be painful or become infected. A persistent patch may need a clinician to decide whether it is inflammation,
+      sun damage or another problem.
+    help:
+    - Contact a GP or dentist for a persistent sore, bleeding patch or worsening swelling. Call emergency services if lip swelling
+      comes with breathing difficulty or faintness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/sore-or-dry-lips/
+  sore-or-white-tongue:
+    aliases: White tongue coating, sore tongue, pale patches on tongue
+    summary: A sore tongue or white coating can have several causes, including irritation, an infection or a change in the tongue's
+      surface. Persistent patches need assessment.
+    evidence_gap: A sore or white tongue is a symptom rather than one diagnosis. The sources reviewed did not establish how common
+      it is across Ireland.
+    symptoms:
+    - You may have soreness, cracks, smooth patches or a coating. Notice whether it wipes away and whether the area underneath is
+      tender, red or bleeding.
+    causes:
+    - Minor burns or rubbing can hurt the tongue. Dryness and thrush can produce a coating, while some persistent white areas are
+      caused by other oral conditions.
+    diagnosis:
+    - A dentist or GP can examine the mouth and ask about symptoms, medicines, dentures and risks for oral infections. They can arrange
+      further assessment of a persistent patch.
+    care:
+    - Keep up gentle oral care and avoid products or foods that make soreness worse. Ask for advice before assuming a white patch
+      needs an antifungal treatment.
+    complications:
+    - Pain can make it harder to eat or drink. A sore or white patch that persists despite simple care needs review because the cause
+      may need specific treatment.
+    help:
+    - See a dentist or GP for a persistent or unexplained patch, an ulcer lasting three weeks or trouble swallowing. Seek urgent
+      assessment if breathing becomes difficult.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/sore-or-white-tongue/
+  sterilisation:
+    kind: procedure
+    aliases: Permanent contraception options, vasectomy or tubal sterilisation, choosing sterilisation
+    summary: Sterilisation is intended to provide permanent contraception. The two main approaches differ in the surgery, recovery
+      and how soon you can rely on them.
+    evidence_gap: HIPE reports selected public hospital procedures but misses some community and private vasectomies. The sources
+      reviewed did not establish a national total across both methods.
+    symptoms:
+    - Consider it only if you are comfortable with a permanent decision. A GP or family planning clinic can compare options for you
+      or discuss a reversible method.
+    causes:
+    - A vasectomy blocks the tubes carrying sperm in semen. Tubal sterilisation blocks or removes fallopian tubes. Neither method
+      is intended to protect against sexually transmitted infections.
+    diagnosis:
+    - Ask about what happens if your circumstances change, whether your current contraception needs to continue afterwards and the
+      expected recovery for each option.
+    care:
+    - Procedures vary in type of anaesthetic, where they are performed and the recovery time. After a vasectomy, use contraception
+      until semen testing confirms you can rely on it.
+    complications:
+    - Bleeding, infection or ongoing discomfort can occur. Failure is uncommon but possible, and pregnancy after tubal sterilisation
+      needs prompt assessment if pain or bleeding develops.
+    help:
+    - A GP can explain local referral pathways and follow-up. Contact the treating team if there is worsening pain, swelling, fever
+      or uncertainty about when protection begins.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/sterilisation/
+  sticky-eyes-babies-toddlers:
+    aliases: Sticky newborn eye, blocked tear duct in babies, infant eye discharge
+    summary: A small amount of sticky discharge can occur as a baby's tear ducts develop. A red eye, marked swelling or a child who
+      appears unwell needs more attention.
+    emergency: 'Hard to wake, breathing difficulty or severe illness: call'
+    evidence_gap: The sources reviewed did not establish Irish population prevalence for sticky eyes in babies and toddlers. Treated
+      infections are only one cause of the symptom.
+    symptoms:
+    - There may be yellow or white crusting around the eyelids, often after sleep. Check whether the white of the eye looks pink
+      or red or the eyelid is swollen.
+    causes:
+    - Narrow tear ducts can prevent normal drainage. Conjunctivitis or another infection can also cause discharge, especially when
+      the eye is red or the child appears uncomfortable.
+    diagnosis:
+    - A GP or public health nurse can check the eye and the surrounding skin. They consider whether the redness, swelling or discharge
+      fits a blocked duct or an infection.
+    care:
+    - Wash your hands and ask how to clean the eyelids gently using fresh material for each wipe. A health professional can show
+      how to massage a blocked duct if appropriate.
+    complications:
+    - Many blocked ducts open as babies grow. A persistent problem or repeated infections can warrant specialist review. Let a clinician
+      know if the eyelid becomes more swollen or tender.
+    help:
+    - Contact a GP for redness, soreness or worsening discharge. Get emergency care for severe pain, an eye swollen shut, breathing
+      difficulty or a baby who is hard to wake.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/sticky-eyes-babies-toddlers/
+  surfers-ear:
+    aliases: External auditory exostoses, bony ear canal growths, cold-water ear
+    summary: Surfer's ear is bony growth in the ear canal associated with repeated cold-water exposure. It can trap water or wax
+      and contribute to repeated ear infections.
+    evidence_gap: General Irish ear disease figures do not isolate cold-water exostoses. The sources reviewed did not give national
+      prevalence among swimmers, surfers or the overall population.
+    symptoms:
+    - An affected ear may feel blocked after swimming, develop recurring discharge or feel muffled. Mild narrowing may cause few
+      symptoms and be found during an examination.
+    causes:
+    - Repeated exposure to cold water can stimulate bone growth in the outer ear canal. As the canal narrows, water and debris can
+      become harder to clear.
+    diagnosis:
+    - A clinician can look into the canal and check how much it is narrowed. Hearing tests or ear, nose and throat assessment can
+      help if symptoms persist.
+    care:
+    - Ask about suitable ear protection for cold-water activities. An ear specialist can manage infections or trapped debris and
+      discuss surgery if narrowing causes significant problems.
+    complications:
+    - The growth can gradually narrow the ear canal and predispose to infections or hearing difficulties. Follow-up depends on symptoms
+      and the degree of narrowing.
+    help:
+    - Seek assessment for recurring ear infections, discharge or gradual hearing changes. Get urgent medical advice for sudden hearing
+      loss or severe pain with fever.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/surfers-ear/
+  swallowing-pills:
+    kind: service
+    aliases: Cannot swallow tablets, difficulty taking pills, capsule swallowing
+    summary: Difficulty swallowing pills can be a problem with size, texture or technique. Difficulty swallowing food or drinks needs
+      a medical assessment before trying pill-swallowing tips.
+    evidence_gap: The sources reviewed did not provide an Irish national estimate for difficulty swallowing pills alone. Dysphagia
+      studies generally include people with food or liquid swallowing problems.
+    symptoms:
+    - This advice is for people who can eat and drink normally but struggle with a prescribed tablet or capsule. New coughing or
+      choking with meals needs separate attention.
+    causes:
+    - Tablet coatings or capsule shells can affect when a medicine is released. Changing the form yourself can alter a dose or make
+      a medicine unsafe.
+    diagnosis:
+    - Tell a pharmacist which product and dose you take and whether you have ever had swallowing difficulties. Ask if a smaller,
+      liquid or dissolving form is available.
+    care:
+    - Ask how to take the exact medicine and whether water or food is suitable. Avoid crushing tablets or opening capsules without
+      checking with a pharmacist or prescriber.
+    complications:
+    - An alternative form may make doses easier to take. If you have missed doses or cannot take a medicine at all, ask what to do
+      before the next dose.
+    help:
+    - Get GP advice promptly if difficulty also affects food or drink, or you cough while swallowing. Call emergency services for
+      choking with inability to breathe.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/swallowing-pills/
+  swollen-glands:
+    aliases: Enlarged lymph nodes, swollen neck glands, lymphadenopathy
+    summary: Swollen glands are often lymph nodes reacting to an infection near them. A persistent, hard or enlarging node needs
+      review even if it does not hurt.
+    evidence_gap: Clinical data group swollen lymph nodes with different infections and other causes. The sources reviewed did not
+      provide Irish prevalence for this symptom itself.
+    symptoms:
+    - A node may feel like a tender lump in the neck, armpit or groin. You may also have a sore throat, skin infection, fever or
+      other symptoms.
+    causes:
+    - Lymph nodes can enlarge while immune cells respond to infection. They can also swell with inflammatory conditions or, less
+      commonly, cancers. Location helps guide assessment.
+    diagnosis:
+    - The clinician checks which nodes are affected and looks for infection or another cause. Persistent or unexplained swelling
+      may need blood tests, an ultrasound or specialist review.
+    care:
+    - If linked to a minor infection, swelling can improve as the illness settles. Rest, fluids and suitable pain relief may help
+      while you follow advice on when to review.
+    complications:
+    - A node may take longer to shrink than the original symptoms take to pass. Growing or hard fixed nodes, or nodes above a collarbone,
+      need assessment.
+    help:
+    - Arrange GP advice if swelling grows, persists or comes with sweats or weight loss. Seek urgent help if it interferes with swallowing
+      or breathing, or you feel very unwell.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/swollen-glands/
+  threadworms:
+    aliases: Pinworm, threadworm, anal itching at night, Enterobius
+    summary: Threadworms are small white worms that often cause itching around the anus at night. Advice usually includes treatment
+      for household members and measures to reduce reinfection.
+    evidence_gap: The sources reviewed did not provide Irish population prevalence. Pharmacy treatment often occurs without laboratory
+      testing, so clinical records are unlikely to represent all cases.
+    symptoms:
+    - A child may scratch or sleep poorly. Small white worms like threads can sometimes be seen around the anus or in stool. Some
+      infected people have no symptoms.
+    causes:
+    - Eggs can pass from hands to the mouth after contact with contaminated skin or surfaces. Scratching makes it easier to spread
+      eggs and for the same person to become reinfected.
+    diagnosis:
+    - Typical symptoms or seeing a worm can help guide advice. If the explanation is unclear, a clinician can consider testing or
+      check for another cause of itch.
+    care:
+    - A pharmacist can advise on suitable household treatment and hygiene measures. Ask first about treatment if someone is pregnant,
+      breastfeeding or too young for the usual product.
+    complications:
+    - Reinfection is common if eggs remain in the household. Handwashing, short nails and careful laundering can help, alongside
+      following advice about how long to continue hygiene measures.
+    help:
+    - Speak to a pharmacist or GP for persistent symptoms, uncertainty about what you saw or before using medicine in pregnancy or
+      in a very young child.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/threadworms/
+  tremor-shaking-hands:
+    aliases: Hand tremor, shaky hands, resting tremor, essential tremor
+    summary: A tremor is movement you cannot fully control. A small amount of shaking can be normal, while new or worsening tremor
+      can have a treatable cause.
+    emergency: 'New shaking with face droop, weakness or speech difficulty: call'
+    evidence_gap: Different forms of tremor use different case definitions. Measures for Parkinson's disease or essential tremor
+      cannot estimate all shaking hands in the Irish population.
+    symptoms:
+    - Shaking may appear when reaching, writing or holding something, or while a hand is resting. Other body parts such as the head
+      or voice can also be affected.
+    causes:
+    - Stress, caffeine and some medicines can make normal tremor more noticeable. Thyroid disease, essential tremor and neurological
+      disorders are among other possible explanations a clinician considers.
+    diagnosis:
+    - A clinician checks which movements bring it on and whether one or both sides are affected. They review medicines and may arrange
+      blood tests or a specialist assessment.
+    care:
+    - Reducing a trigger may help. Do not stop prescribed medicines independently. Treatment for persistent tremor depends on its
+      cause and how much it interferes with important activities.
+    complications:
+    - Difficulty handling cups, cutlery or tools can affect independence. Occupational therapy can sometimes help with equipment
+      or strategies even while treatment options are being considered.
+    help:
+    - See a GP if shaking is worsening or affects daily life. Call 112 or 999 if it starts with sudden weakness, face droop or difficulty
+      speaking.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/tremor-shaking-hands/
+  vitamins-and-minerals:
+    kind: service
+    aliases: Nutrition, micronutrients, dietary supplements, vitamins and minerals Ireland
+    summary: Vitamins and minerals support different functions in the body. Most needs are met through food, while some people benefit
+      from specific supplements at particular stages of life.
+    symptoms:
+    - This guide is for people considering their diet or a supplement, including anyone following a restricted diet or navigating
+      pregnancy, older age or a diagnosed deficiency.
+    causes:
+    - Different nutrients have different roles. For example, iron supports red blood cells and vitamin D helps the body use calcium.
+      Taking more than needed can sometimes cause harm.
+    diagnosis:
+    - Review what you eat and the medicines or supplements you already take. A pharmacist, GP or dietitian can help assess need and
+      unsafe duplication between products.
+    care:
+    - Start with a varied diet where possible. Follow Irish guidance for your age and circumstances, or a clinician's instructions
+      if you have a confirmed deficiency or absorption problem.
+    complications:
+    - Some supplements interact with medicines or accumulate in the body. If prescribed treatment, ask how long to take it and whether
+      blood tests or follow-up are needed.
+    help:
+    - Seek advice before starting high-dose products or giving supplements to a child. Contact a clinician if symptoms such as persistent
+      tiredness or unexplained weight loss continue.
+  vomiting-babies-children:
+    aliases: Child vomiting, baby throwing up, dehydration in children
+    summary: Vomiting in a child is often short-lived. The child's age, hydration and whether the vomit is green, bloody or associated
+      with pain affect how urgently they need care.
+    emergency: 'Vomiting with stiff neck, headache and rash, or a child who is hard to wake: call'
+    evidence_gap: Irish reports describe specific causes such as norovirus. They do not count vomiting in babies and children from
+      all causes, and no national symptom prevalence was identified.
+    symptoms:
+    - Watch for fewer wet nappies or toilet trips, a dry mouth or unusual sleepiness. Small amounts of milk after a feed can be normal
+      in otherwise well babies.
+    causes:
+    - An infection such as gastroenteritis is one cause. Urinary infections, problems inside the abdomen and other illnesses can
+      also cause vomiting, especially with additional symptoms.
+    diagnosis:
+    - A clinician asks about feeds, wet nappies, fever, pain and the colour and frequency of vomit. They will check for dehydration
+      and decide if tests are needed.
+    care:
+    - Continue usual breast or formula feeds if tolerated and offer small frequent sips to older children. Ask about oral rehydration
+      advice and do not dilute formula.
+    complications:
+    - Young babies can dehydrate quickly. If a child cannot keep fluids down or becomes increasingly sleepy, they may need urgent
+      assessment and help replacing fluids.
+    help:
+    - Get medical advice immediately for green or bloody vomit, severe abdominal pain, dehydration or fever in a baby under three
+      months. Call emergency services for severe deterioration.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/vomiting-babies-children/
+  watering-eyes:
+    aliases: Watery eyes, epiphora, blocked tear duct, tearing
+    summary: Eyes can water when the surface is irritated or tears do not drain normally. New pain, redness or a change in vision
+      changes how urgently you need advice.
+    evidence_gap: Irish sources reviewed did not establish prevalence of watering eyes from all causes. Numbers for tear duct surgery
+      measure only selected cases.
+    symptoms:
+    - Tears may spill down the cheek or blur vision temporarily. Itching, sticky discharge, gritty discomfort or a lump near the
+      nose can point to different causes.
+    causes:
+    - Wind, allergies, dry eyes and eyelid problems can stimulate tears. A narrow or blocked drainage passage can lead to overflow
+      even if the eye makes a normal amount.
+    diagnosis:
+    - An optometrist or clinician examines the eye surface, lids and drainage area. They can look for irritation or infection and
+      refer if a tear duct problem is suspected.
+    care:
+    - Treatment depends on the cause. A pharmacist or optometrist can advise about dryness or allergy, while ongoing drainage problems
+      may need evaluation by an eye specialist.
+    complications:
+    - Persistent watering can irritate the skin or make reading and outdoor activities awkward. A blocked duct can sometimes become
+      infected and produce painful swelling.
+    help:
+    - Arrange an assessment if watering continues or affects activities. Seek urgent advice for eye pain, marked redness, light sensitivity,
+      injury or a change in sight.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/watering-eyes/
+  womens-health:
+    kind: service
+    aliases: Irish women's health services, women's screening, maternity and sexual health
+    summary: The HSE women's health hub brings together information about reproductive health, maternity care, mental health and
+      screening. It helps you find the service suited to your question.
+    evidence_gap: Women's health is a collection of services and conditions. National data are published for specific programmes
+      or conditions rather than for the entire collection.
+    symptoms:
+    - The hub is useful for women and others who need services such as cervical screening, contraception or pregnancy care. Eligibility
+      is explained separately for each service.
+    causes:
+    - It points to screening programmes, community supports and information on symptoms. A screening service checks eligible people
+      without symptoms and has a different role from a GP assessment.
+    diagnosis:
+    - Decide whether you want routine information, a screening appointment or help with a symptom. Have relevant dates, medicines
+      and previous test results available if you are seeking care.
+    care:
+    - Depending on the question, contact the programme, a GP, a midwife or a community service. The official HSE pages describe referral
+      routes and appointment options.
+    complications:
+    - Some services need repeat tests or follow-up. Ask who will contact you, how long results usually take and which symptoms should
+      prompt you to get advice sooner.
+    help:
+    - Contact a GP for new symptoms and use your maternity team if pregnant and concerned. Seek emergency care for severe pain, heavy
+      bleeding with faintness or sudden breathing difficulty.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/womens-health/
+  womens-health-a-z:
+    kind: service
+    aliases: Women's health A to Z, menopause, period conditions, pelvic health
+    summary: The women's health A to Z is a starting point for finding information on periods, pelvic symptoms, reproductive conditions
+      and menopause. It also links to guides on particular tests and treatments.
+    evidence_gap: The index links to distinct conditions with different populations and definitions. Irish prevalence is meaningful
+      for individual diagnoses, and there is no valid combined total for the index.
+    symptoms:
+    - Use it if you want to understand a diagnosis or find a term you heard at an appointment. Start with the symptom that concerns
+      you if the diagnosis is unknown.
+    causes:
+    - The HSE directory lists conditions alongside services, tests and treatments. Related symptoms can have more than one cause,
+      so use the page to prepare questions for a clinician.
+    diagnosis:
+    - Before seeking care, record timing, severity and what makes symptoms better or worse. If menstrual symptoms are involved, include
+      bleeding dates and whether pregnancy is possible.
+    care:
+    - Choose the relevant topic for symptoms, investigations and treatment options. A GP or specialist can then explain which options
+      fit your medical history and goals.
+    complications:
+    - Health needs can change over time, including with puberty, pregnancy, menopause or treatment. Bring recent symptom changes
+      to follow-up even if you already have a diagnosis.
+    help:
+    - Contact a GP for unusual bleeding, ongoing pelvic pain or other persistent changes. If pregnancy is possible and you have severe
+      pain, faintness or bleeding, seek emergency assessment.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/womens-health-a-z/
+  worms-in-humans:
+    aliases: Intestinal worms, parasitic worms, worm in stool, travel-related worms
+    summary: Different intestinal worms require different care. A GP can ask about travel, symptoms and what you saw and decide whether
+      a stool sample or other test would help.
+    evidence_gap: Irish surveillance includes some separately defined parasitic infections. Those counts cannot be combined into
+      a prevalence estimate for all intestinal worms, many of which are managed without testing.
+    symptoms:
+    - Possible clues include seeing a worm or segment, persistent tummy upset or unexplained weight loss. Night-time anal itch can
+      point to threadworms, which are managed differently from some others.
+    causes:
+    - Risk varies by type of worm. Some infections are linked to contact with contaminated soil, unsafe water or undercooked food,
+      while threadworms can spread within households.
+    diagnosis:
+    - Describe the appearance and any travel, food or soil exposure. A clinician may use a stool specimen or another test, depending
+      on the suspected organism.
+    care:
+    - Treatment should match the diagnosis. Follow prescribed medicine and prevention advice, including whether household contacts
+      need care. Ask about safe hygiene or food precautions for your situation.
+    complications:
+    - Some infections persist or cause anaemia and nutritional problems. Follow-up can confirm whether symptoms have resolved and
+      whether further tests are needed after treatment.
+    help:
+    - Contact a GP if you see a worm, have persistent diarrhoea or abdominal pain, or have lost weight without trying. Seek urgent
+      help for severe symptoms or dehydration.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/worms-in-humans/
