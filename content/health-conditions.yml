@@ -120,6 +120,12 @@ sources:
   hpo_2023:
     name: Healthcare Pricing Office, Activity in Acute Public Hospitals in Ireland 2023
     url: https://www.drugsandalcohol.ie/42152/1/HIPE_Report_2023.pdf
+  hpsc_infant_2025:
+    name: HPSC immunisation at 12 and 24 months, data through Q3 2025
+    url: https://file.hpsc.ie/uploads/vaccinepreventable/immunisationuptakereport/1760619550.xlsx
+  hpsc_school_2024:
+    name: HPSC school vaccination uptake workbook, data through 2023/24
+    url: https://file.hpsc.ie/uploads/vaccinepreventable/immunisationuptakereport/1760710259.xlsx
   hse_alpha1:
     name: HSE Alpha-1 antitrypsin deficiency guidance
     url: https://www2.hse.ie/conditions/alpha-1-antitrypsin-deficiency/
@@ -1251,6 +1257,15 @@ evidence:
     source: imj_flush
     locator: Table 2 and discussion
     measure: prevalence
+  hpv-vaccine:
+  - value: 74.9%
+    period: 2023/24 school cohort
+    population: First-year secondary students, age-equivalent special-school students and home-schooled children included in HPSC’s
+      national denominator
+    note: Share recorded as having received at least one HPV dose. It measures uptake for the school cohort.
+    source: hpsc_school_2024
+    locator: Summary and Trends, national uptake, row 45
+    measure: service
   idiopathic-pulmonary-fibrosis:
   - value: 154 participants
     period: Registry pilot described in the 2025 report
@@ -1292,6 +1307,23 @@ evidence:
     source: newborn_2024
     locator: Table 1
     measure: diagnoses
+  menacwy-vaccine:
+  - value: 79.0%
+    period: 2023/24 school cohort
+    population: First-year secondary students, age-equivalent special-school students and home-schooled children included in HPSC’s
+      national denominator
+    note: Recorded MenACWY vaccine uptake in the school cohort.
+    source: hpsc_school_2024
+    locator: Summary and Trends, national uptake, row 45
+    measure: service
+  menb-vaccine:
+  - value: 85.3%
+    period: Q3 2025
+    population: Children aged 24 months in reporting Irish areas
+    note: Share recorded as having received three MenB doses. Check the relevant HSE schedule for your child’s age and date of birth.
+    source: hpsc_infant_2025
+    locator: National 24 months, Q3 2025, MenB3; national commentary
+    measure: service
   meningitis-and-septicaemia:
   - value: 60 meningococcal disease notifications
     period: 2025, provisional
@@ -1319,6 +1351,14 @@ evidence:
     source: miscarriage_guideline
     locator: Miscarriage Care in Ireland
     measure: prevalence
+  mmr-vaccine:
+  - value: 86.3%
+    period: Q3 2025
+    population: Children aged 24 months in reporting Irish areas
+    note: Share with a recorded first MMR dose. It does not represent completion of the two-dose schedule or capture every area.
+    source: hpsc_infant_2025
+    locator: National 24 months, Q3 2025, MMR1; national commentary
+    measure: service
   mrsa:
   - value: 2.73 per 100,000 people
     period: '2025'
@@ -1412,6 +1452,15 @@ evidence:
     source: mi_sickle
     locator: Irish patient population estimate
     measure: prevalence
+  tdap-vaccine:
+  - value: 78.7%
+    period: 2023/24 school cohort
+    population: First-year secondary students, age-equivalent special-school students and home-schooled children included in HPSC’s
+      national denominator
+    note: Recorded school-cohort uptake. It excludes the separate vaccination programme in pregnancy.
+    source: hpsc_school_2024
+    locator: Summary and Trends, national uptake, row 45
+    measure: service
   vre:
   - value: 110 resistant isolates
     period: '2025'
@@ -3469,6 +3518,33 @@ guides:
       of when your next scan is due.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/babies-who-are-small-growing-slowly/
+  bcg-vaccine:
+    kind: procedure
+    aliases: BCG vaccine tuberculosis TB newborn selective immunisation Ireland
+    summary: BCG helps protect young children from some severe forms of tuberculosis. In Ireland it is offered to babies who are
+      assessed as having a higher risk of TB exposure.
+    evidence_gap: The HSE describes who is eligible for selective BCG vaccination. A national uptake figure for this newer programme
+      was not identified in the reports consulted.
+    symptoms:
+    - The maternity or public health team may ask about family contacts, countries where family members previously lived and future
+      travel or residence. Eligibility is assessed individually.
+    causes:
+    - BCG is a live vaccine. It helps the immune system recognise the bacteria associated with tuberculosis and is intended to reduce
+      the risk of severe illness in children.
+    diagnosis:
+    - Tell the clinic about illnesses, medicines that affect the immune system and any relevant screening tests. The team will review
+      whether the baby can safely have a live vaccine.
+    care:
+    - A healthcare professional injects the vaccine into the skin of the upper arm. Ask where you will be seen and what to look out
+      for in the days and weeks afterwards.
+    complications:
+    - A small bump or sore can develop where the injection was given and may leave a scar. Ask the clinic if the area becomes unusually
+      large, swollen or persistently uncomfortable.
+    help:
+    - Ask your maternity service or public health nurse about screening for eligibility if you think your baby may be at increased
+      risk. Contact a clinician promptly if TB exposure is suspected.
+    sources:
+      Clinical guidance and further reading: https://healthservice.hse.ie/staff/information-healthcare-workers/selective-bcg-vaccine-programme/
   blood-clots:
     aliases: blood clots venous thromboembolism VTE deep vein thrombosis pulmonary embolism
     summary: A clot in a deep vein can cause one-sided leg symptoms. If part travels to the lungs it can cause a pulmonary embolism,
@@ -3796,6 +3872,58 @@ guides:
       rather than assuming it is indigestion or a muscle problem.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/chest-pain/
+  colds-coughs-children:
+    aliases: cold and cough children baby viral infection congestion child cough
+    summary: Most childhood colds improve with time. Breathing, feeding and alertness are more useful to watch than how noisy the
+      cough sounds.
+    evidence_gap: Most childhood colds are untested. Irish surveillance for individual respiratory viruses counts a different group
+      from all childhood colds and coughs.
+    symptoms:
+    - Children may have a runny nose, cough, sore throat or fever and eat less for a short time. Babies with a blocked nose may struggle
+      to feed comfortably.
+    causes:
+    - Many viruses can inflame the nose and throat. Cough can continue after other symptoms ease. A different assessment is needed
+      if fast or difficult breathing develops.
+    diagnosis:
+    - Clinicians ask how long symptoms have lasted and examine breathing, hydration and alertness if needed. They may consider causes
+      such as croup, pneumonia or bronchiolitis in particular age groups.
+    care:
+    - Offer drinks or usual feeds often. Ask a pharmacist which treatment is suitable for the child's age, since many cough and cold
+      products are unsuitable for young children.
+    complications:
+    - Dehydration or breathing trouble can develop, especially in babies or children with other conditions. Returning fever or a
+      clear decline after initial improvement deserves review.
+    help:
+    - Seek prompt advice if breathing becomes harder, drinking falls significantly, a baby has fever or a child becomes less alert.
+      Call for emergency help for severe breathing difficulty.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/colds-coughs-children/
+  colic:
+    aliases: colic babies prolonged crying infant crying evening wind
+    summary: Colic is a pattern of prolonged crying in a baby who is otherwise well. It can be exhausting for parents and usually
+      improves as the baby gets older.
+    evidence_gap: National recording would miss many episodes managed at home. Surveys also vary in how they define colic, so no
+      comparable Irish population rate was identified.
+    symptoms:
+    - Crying may cluster in the evening and be difficult to settle. The baby may clench their fists or draw up their legs. A weak
+      cry or a sudden change from the usual pattern needs assessment.
+    causes:
+    - The exact cause is unclear. Babies also cry because of hunger, discomfort, tiredness or illness. A repeated pattern in a thriving
+      baby is different from new signs that the baby is unwell.
+    diagnosis:
+    - A GP or public health nurse can check feeding, growth, physical symptoms and the crying pattern. Tell them about vomiting,
+      temperature, nappies and changes in feeding.
+    care:
+    - Try a calm routine and usual feeds and accept help from a trusted adult. If overwhelmed, place the baby safely on their back
+      in their cot while you take a brief break. Never shake a baby.
+    complications:
+    - Crying can affect the whole household and make it hard to rest. If the baby has feeding difficulties, poor weight gain or other
+      symptoms, ask for further assessment.
+    help:
+    - Speak to your GP or public health nurse if crying is hard to manage or changes. Seek urgent advice if there is fever in a young
+      baby, poor feeding, repeated vomiting or unusual sleepiness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/colic/
   colposcopy:
     kind: test
     aliases: colposcopy abnormal cervical screening HPV cervix biopsy LLETZ
@@ -4150,6 +4278,32 @@ guides:
       bleeding, severe pain or collapse requires emergency assessment.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/diverticular-disease-and-diverticulitis/
+  ear-infections:
+    aliases: ear infections otitis media middle ear outer ear earache child
+    summary: Ear infections can cause ear pain, fever or temporary hearing changes. A clinician can distinguish a middle-ear infection
+      from conditions affecting the ear canal.
+    evidence_gap: Irish data from prescriptions or hospital visits do not cover ear infections treated at home. No comparable population
+      estimate for all types of ear infection was identified.
+    symptoms:
+    - A child may be irritable, sleep poorly or tug at one ear. Older children and adults can describe pain or muffled hearing. Discharge
+      can occur for several reasons.
+    causes:
+    - A cold can affect drainage from the middle ear. Infection may develop behind the eardrum. Outer-ear infection involves the
+      canal and may be associated with irritation or moisture.
+    diagnosis:
+    - A clinician looks in the ear and asks about pain, fever, discharge and hearing. Symptoms alone do not show whether antibiotic
+      treatment is needed.
+    care:
+    - Pain relief can help while a mild middle-ear infection settles. Antibiotics or drops are suitable for some cases, depending
+      on the type of infection and clinical advice.
+    complications:
+    - Fluid behind the eardrum can temporarily affect hearing. Pain or swelling behind the ear, an ear sticking out or a child getting
+      much more unwell can signal a complication.
+    help:
+    - Seek advice for severe pain, discharge, worsening fever or symptoms in a young baby. Arrange a GP review for repeated infections
+      or continuing trouble hearing.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/ear-infections/
   early-premature-menopause:
     aliases: early menopause premature menopause primary ovarian insufficiency POI under 40 under 45
     summary: Menopause before age 45 is considered early. Loss of normal ovarian function before 40 needs assessment and can affect
@@ -4505,6 +4659,32 @@ guides:
       starting an iron supplement until the need has been checked.
     sources:
       Clinical guidance and further reading: https://www.saolta.ie/news/hse-west-and-north-west-rolls-out-hereditary-haemochromatosis-hh-education-programme-gp
+  hand-foot-mouth-disease:
+    aliases: hand foot and mouth HFMD mouth ulcers hands feet child rash
+    summary: Hand, foot and mouth disease often causes mouth sores and a rash on the hands and feet. Drinking comfortably matters
+      more than eating normally for the first few days.
+    evidence_gap: Individual cases are not routinely notifiable to HPSC. Irish outbreak reports cover reported clusters, so they
+      cannot measure how often the illness occurs in children overall.
+    symptoms:
+    - A fever or sore throat may come before painful spots in the mouth and small blisters on the palms, soles or buttocks. A child
+      may drink less because swallowing hurts.
+    causes:
+    - Several enteroviruses can cause this illness. They spread through close contact and contaminated hands or surfaces. It is different
+      from the disease that affects farm animals.
+    diagnosis:
+    - A clinician can usually recognise the pattern of symptoms. Tell them how much the child is drinking and how many wet nappies
+      or trips to the toilet are usual.
+    care:
+    - Offer cool drinks often and soft foods if the child wants them. Ask a pharmacist about suitable pain relief. Handwashing and
+      avoiding shared cups can reduce spread.
+    complications:
+    - Most cases get better without specific treatment. Dehydration can develop if mouth sores make drinking difficult, particularly
+      in young children.
+    help:
+    - Ask for advice if a child drinks much less, passes little urine or is getting more unwell. Talk to your GP if you are pregnant
+      and think you may have been exposed.
+    sources:
+      Clinical guidance and further reading: https://www.hpsc.ie/a-z/other/handfootmouthdisease/
   heartburn-and-acid-reflux:
     aliases: heartburn acid reflux GORD GERD gastro oesophageal reflux
     summary: Heartburn is a burning feeling behind the breastbone that can occur when stomach contents travel upwards. Trouble swallowing
@@ -4632,6 +4812,34 @@ guides:
     help:
     - Contact your GP promptly if you notice jaundice, dark urine or have concerns about exposure. Seek emergency help if someone
       with suspected liver illness becomes confused, collapses or is very unwell.
+  high-temperature:
+    aliases: fever children high temperature baby thermometer child temperature
+    summary: Fever is a sign of illness. A baby younger than three months with a temperature of 38°C or higher needs urgent medical
+      advice.
+    emergency: If a child with fever is very difficult to wake, is struggling to breathe or has a rash that does not fade under pressure,
+      call
+    evidence_gap: Fever is a symptom tracked in many situations, including at home. Counts for specific infections cannot estimate
+      how many children get fever overall.
+    symptoms:
+    - A child may feel hot, sweaty or shivery. Check temperature with a suitable thermometer, and also pay attention to drinking,
+      wet nappies, breathing and alertness.
+    causes:
+    - Fever can occur when the body responds to an infection. The temperature alone does not show whether an illness is mild or serious.
+      Age and other symptoms matter.
+    diagnosis:
+    - A clinician may ask when fever started, how it was measured and whether the child is drinking, urinating and behaving normally.
+      Examination or tests depend on the symptoms and age.
+    care:
+    - Keep fluids available and avoid over-wrapping. Medicines for fever can be used for discomfort if appropriate for the child's
+      age and weight. Follow the label or clinical advice.
+    complications:
+    - A fever can accompany serious infection, including when symptoms are incomplete early on. Reduced alertness, poor drinking
+      or new breathing trouble should change the response.
+    help:
+    - Seek urgent advice for a young baby with fever or a child who is becoming more unwell. Call emergency services if the child
+      is difficult to wake, struggling to breathe or has a non-fading rash.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/high-temperature/
   homocystinuria:
     aliases: HCU homocystinuria CBS deficiency heel prick
     summary: Homocystinuria is an inherited condition that can affect the eyes, bones and blood vessels. Early treatment can reduce
@@ -4678,6 +4886,29 @@ guides:
     help:
     - Speak to your GP if flushes regularly interrupt sleep or daily activities. Get advice for persistent drenching sweats without
       an obvious cause or sweats with fever or weight loss.
+  hpv-vaccine:
+    kind: procedure
+    aliases: HPV vaccine human papillomavirus Gardasil school vaccine cervical cancer HPV Ireland
+    summary: The HPV vaccine protects against important types of human papillomavirus that can cause cancer or genital warts. The
+      HSE offers it through the school programme.
+    symptoms:
+    - The HSE usually offers vaccination in first year of secondary school. Ask the school vaccination team or local immunisation
+      service about eligibility if a dose was missed or your child is educated outside school.
+    causes:
+    - The vaccine prepares the immune system to recognise selected HPV types. It works best before exposure and is used to prevent
+      future infection-related disease.
+    diagnosis:
+    - Review the information and consent form. Tell the vaccinator about past reactions, current medication or a weakened immune
+      system, because the recommended schedule can differ.
+    care:
+    - A healthcare professional gives the vaccine into the upper arm. The team will confirm what was given and whether another dose
+      is needed.
+    complications:
+    - Pain or redness at the injection site and short-lived symptoms such as headache can occur. Ask the team which symptoms to report.
+      Keep attending cervical screening if eligible later in life.
+    help:
+    - Contact the school vaccination team or immunisation office if your child missed their visit. A GP or relevant service can check
+      advice for adults or people outside the routine programme.
   hyperemesis-gravidarum:
     aliases: hyperemesis gravidarum severe pregnancy sickness HG vomiting pregnancy
     summary: Hyperemesis gravidarum is severe sickness in pregnancy. When vomiting prevents you from drinking, eating or taking medicines,
@@ -4726,6 +4957,32 @@ guides:
     help:
     - Contact your GP for unexplained breathlessness or a persistent dry cough. Seek urgent assessment for a significant new change,
       especially breathlessness at rest or fever.
+  impetigo:
+    aliases: impetigo school skin sores honey crust contagious infection
+    summary: Impetigo is a contagious skin infection that often produces crusted sores around the nose or mouth. Prompt advice can
+      reduce discomfort and the chance of spreading it.
+    evidence_gap: Published Irish prescribing or pharmacy activity does not capture every untreated or recurrent episode, and was
+      not used as a national prevalence estimate.
+    symptoms:
+    - Small sores or blisters may break and leave a golden-brown crust. They can spread to nearby areas, particularly if scratched.
+      Some cases cause larger fluid-filled blisters.
+    causes:
+    - Bacteria can infect already irritated or scratched skin. It spreads by direct contact or shared items such as towels. Eczema
+      can make the skin more susceptible.
+    diagnosis:
+    - A pharmacist or clinician can often recognise impetigo from its appearance. Repeated episodes, extensive disease or lack of
+      improvement may lead to further assessment or a swab.
+    care:
+    - Treatment depends on how extensive the sores are and whether the person is unwell. Keep the area clean, wash hands after touching
+      it and avoid sharing towels. Follow advice on returning to school.
+    complications:
+    - Infection can spread over the skin or occasionally to deeper tissue. A rapidly expanding hot area or fever needs review, particularly
+      in a young or vulnerable child.
+    help:
+    - Get advice if you suspect impetigo. Seek prompt assessment if it spreads quickly, affects a young baby, or a child develops
+      fever or worsening discomfort.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/impetigo/
   insomnia:
     aliases: insomnia sleep problems waking early difficulty falling asleep
     summary: Insomnia can mean trouble falling asleep, staying asleep or waking too early. If it persists and affects daytime function,
@@ -4829,6 +5086,32 @@ guides:
       for unusual or worsening symptoms.
     sources:
       Clinical guidance and further reading: https://about.hse.ie/publications/hse-fertility-services-report-2025/
+  jaundice-newborn-babies:
+    aliases: newborn jaundice baby bilirubin yellow eyes phototherapy
+    summary: Jaundice is common in newborns, but the timing and bilirubin level matter. A yellow colour in the first 24 hours of
+      life needs urgent assessment.
+    evidence_gap: Irish maternity indicators do not provide a national count of all visible jaundice. Phototherapy activity, where
+      reported, covers babies treated above certain thresholds.
+    symptoms:
+    - The skin or whites of the eyes can look yellow. On darker skin the change may be easier to see in the eyes or gums. Poor feeding,
+      unusual sleepiness, pale stools or dark urine need attention.
+    causes:
+    - Bilirubin forms as red blood cells break down. A newborn's liver may take time to clear it. Prematurity, blood group incompatibility
+      and other conditions can raise bilirubin.
+    diagnosis:
+    - A maternity clinician can use a skin reading or blood sample to check bilirubin. They interpret the result using the baby's
+      age in hours and any risk factors.
+    care:
+    - Feeding support and monitoring may be enough for mild jaundice. High bilirubin levels may need phototherapy, which uses special
+      light. Follow instructions for any repeat check.
+    complications:
+    - Very high untreated levels can harm the brain. Jaundice that lasts longer than expected can sometimes reflect a liver or bile
+      problem and should be assessed.
+    help:
+    - Tell the midwife or GP if your baby looks yellow. Get urgent help if the colour appears on the first day, the baby is sleepy
+      or feeding poorly, or stools are very pale.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/jaundice-newborn-babies/
   kidney-infection:
     aliases: kidney infection pyelonephritis fever flank pain UTI
     summary: Fever or shaking chills with pain in the side or back can be signs of a kidney infection. Contact a clinician urgently,
@@ -4901,6 +5184,32 @@ guides:
       the team's emergency instructions while arranging help.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/heel-prick-screening/conditions/
+  mastoiditis:
+    aliases: mastoiditis ear infection swelling behind ear child protruding ear
+    summary: Mastoiditis is an uncommon but serious complication of some ear infections. Pain, redness or swelling behind the ear
+      needs urgent assessment.
+    evidence_gap: An overall Irish ear infection rate would include many milder illnesses and cannot estimate the frequency of mastoiditis.
+      A specific national figure was not identified.
+    symptoms:
+    - A person may have fever, discharge or ongoing ear pain. Swelling behind the ear can make the outer ear stick out. Children
+      can be tired, irritable or visibly unwell.
+    causes:
+    - Infection can spread from the middle ear to small air spaces in the bone behind it. The tissues can swell and sometimes form
+      a collection of pus.
+    diagnosis:
+    - A GP or emergency clinician examines the ear and area behind it. Hospital staff may do blood tests or a scan if they need to
+      assess spread or plan treatment.
+    care:
+    - Treatment usually takes place in hospital and may include antibiotics through a vein. An ear, nose and throat specialist may
+      need to drain fluid or operate if the infection is complicated.
+    complications:
+    - Untreated infection can affect hearing or spread to nearby areas. Follow-up can include a further ear examination or a hearing
+      check once the infection resolves.
+    help:
+    - Seek urgent medical help for swelling behind the ear, a protruding ear, or ear infection symptoms that worsen despite treatment.
+      A very unwell child needs emergency assessment.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/mastoiditis/
   mcadd-symptoms-causes-and-treatment:
     aliases: MCADD fatty acid oxidation deficiency newborn screening
     summary: MCADD makes it harder for the body to use stored fat for energy. A child who is unwell or unable to eat can need urgent
@@ -4925,6 +5234,52 @@ guides:
       as directed in their plan. Seek emergency help for reduced responsiveness or a seizure.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/heel-prick-screening/conditions/
+  menacwy-vaccine:
+    kind: procedure
+    aliases: MenACWY vaccine meningococcal A C W Y booster secondary school vaccination
+    summary: MenACWY protects against four groups of meningococcal bacteria. Meningococcal infection can cause meningitis or septicaemia,
+      so symptoms still need urgent assessment after vaccination.
+    symptoms:
+    - The HSE school programme offers MenACWY in first year of secondary school. Some people may also be advised to have it because
+      of travel or a medical risk.
+    causes:
+    - The vaccine helps the immune system recognise groups A, C, W and Y. MenB is a different group, for which a separate vaccine
+      is used.
+    diagnosis:
+    - Read the consent information and tell the vaccinator about previous serious reactions or health conditions. Check with the
+      local school team if you are unsure whether an offer applies.
+    care:
+    - The vaccinator checks consent and administers an injection, normally in the upper arm. Ask about documenting the dose and whom
+      to call if you have questions afterwards.
+    complications:
+    - An aching arm or short-lived fever or headache can occur. Severe allergic symptoms require immediate help. The vaccine cannot
+      protect against every cause of meningitis.
+    help:
+    - Contact the school vaccination team about a missed appointment or incomplete record. Seek emergency help if you suspect meningitis
+      or septicaemia, regardless of vaccination history.
+  menb-vaccine:
+    kind: procedure
+    aliases: MenB vaccine meningococcal B Bexsero infant vaccine immunisation Ireland
+    summary: The MenB vaccine helps protect babies against meningococcal group B disease. Ireland includes it in the primary childhood
+      immunisation programme.
+    symptoms:
+    - The HSE offers MenB at several routine visits during infancy. If an appointment was missed, ask the GP to check the child's
+      record and arrange a catch-up plan if needed.
+    causes:
+    - The vaccine helps the immune system recognise group B meningococcal bacteria, which can cause serious bloodstream infection
+      or meningitis. Other vaccines protect against different groups.
+    diagnosis:
+    - Bring the child's vaccine record and tell the GP about a current illness or previous reaction. Ask for instructions on fever
+      or discomfort after vaccination, especially when other vaccines will be given at the same visit.
+    care:
+    - The vaccinator checks which vaccines are due and gives the injection. They can confirm when to return. Keep track of any fever
+      and how your baby feeds or behaves afterwards.
+    complications:
+    - Soreness or fever can occur after vaccination. Follow the HSE and GP's age-specific advice and seek help if the baby is unusually
+      unwell or difficult to wake.
+    help:
+    - Ask your GP about missed doses or concerns after the appointment. If there are possible signs of meningitis or septicaemia,
+      seek emergency help immediately.
   meningitis-and-septicaemia:
     aliases: meningitis meningococcal septicaemia sepsis stiff neck non-blanching rash
     summary: Meningitis and septicaemia can become serious very quickly. Seek emergency help if you are concerned, even if there
@@ -4995,6 +5350,29 @@ guides:
       severe pain, faintness or new shoulder-tip pain.
     sources:
       Clinical guidance and further reading: https://research.ucc.ie/en/publications/national-clinical-practice-guideline-first-trimester-miscarriage-/
+  mmr-vaccine:
+    kind: procedure
+    aliases: MMR vaccine measles mumps rubella MMRV childhood vaccination catch up
+    summary: MMR protects against measles, mumps and rubella. In Ireland the recommended product and schedule can depend on your
+      child's age and date of birth.
+    symptoms:
+    - Childhood immunisation includes protection against these three infections. A GP can review the record if a dose was missed,
+      you have moved to Ireland or you are planning travel.
+    causes:
+    - The vaccine trains the immune system against measles, mumps and rubella. Depending on the child's schedule, protection against
+      chickenpox may be offered in a combined product or separately.
+    diagnosis:
+    - Tell the vaccinator about previous reactions, pregnancy, medicines or conditions affecting the immune system and earlier vaccination.
+      Bring the vaccine record if you have it.
+    care:
+    - A vaccinator checks which doses are due and gives the injection. Ask whether the child still needs another dose and where subsequent
+      doses will be offered.
+    complications:
+    - A sore arm or a short fever can occur. A temporary rash may appear later. For symptoms of severe allergy after vaccination,
+      call emergency services.
+    help:
+    - Ask your GP or local immunisation team to review missing or uncertain records. If measles exposure is suspected, contact a
+      clinician promptly and phone before attending.
   mrsa:
     aliases: MRSA methicillin resistant Staphylococcus aureus screening swabs carrier
     summary: MRSA is a type of staph bacteria resistant to several antibiotics. It can be carried on the skin or in the nose without
@@ -5017,6 +5395,30 @@ guides:
     help:
     - Contact staff if your wound becomes more painful, hot or leaky, or if you develop a fever. Mention any previous MRSA result
       to the team looking after you.
+  nappy-rash:
+    aliases: nappy rash diaper rash infant sore bottom barrier cream
+    summary: Nappy rash often improves with frequent changes and a simple skin barrier. Ask for advice if the rash spreads, becomes
+      painful or fails to improve.
+    evidence_gap: Nappy rash is commonly managed at home, and the Irish data reviewed do not establish a national rate for all episodes.
+    symptoms:
+    - The skin in contact with a nappy can become sore or inflamed. Spots in the skin folds or spread beyond the main rash can suggest
+      a different cause such as thrush.
+    causes:
+    - Moisture, friction and contact with urine or stool can irritate skin. A recent bout of diarrhoea can contribute. An infection
+      can sometimes develop in irritated skin.
+    diagnosis:
+    - A pharmacist or clinician can check the pattern. Point out any blisters, open sores or fever and describe products used, including
+      wipes and creams.
+    care:
+    - Change wet or dirty nappies promptly, clean gently and allow the skin to dry. A suitable barrier product can protect irritated
+      skin. A clinician can advise if a specific medicine is needed.
+    complications:
+    - Broken skin can become infected. Persistent or extensive rash may need a review for thrush, eczema or another condition.
+    help:
+    - Ask a pharmacist or GP for advice if the rash is not improving, is spreading or seems very sore. Seek prompt care if your baby
+      develops fever or appears unwell.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/nappy-rash/
   necrotising-fasciitis:
     aliases: necrotising fasciitis necrotizing fasciitis rapidly spreading skin infection
     summary: Necrotising fasciitis is a rare infection that spreads through tissue beneath the skin. Severe pain that is much worse
@@ -5265,6 +5667,32 @@ guides:
     help:
     - Contact the maternity unit immediately for bleeding, contractions or pain if you have been told your placenta is low. Heavy
       bleeding or feeling faint needs emergency care.
+  plagiocephaly:
+    aliases: plagiocephaly flat head syndrome baby flattening positional brachycephaly
+    summary: A flat patch on a baby's head can develop from pressure on one area. Keep using safe back sleeping and ask a healthcare
+      professional if the shape worries you.
+    evidence_gap: A verified Irish prevalence figure was not found. Estimates from care referrals would exclude mild flattening that
+      families manage through advice or normal development.
+    symptoms:
+    - The back or one side of the head may look flatter. The ear or forehead on the flatter side can look slightly further forward.
+      A baby may prefer to turn their head one way.
+    causes:
+    - A baby's skull is still developing. Repeated pressure on the same part of it can change its shape. Limited neck movement can
+      contribute.
+    diagnosis:
+    - A GP or public health nurse looks at head shape, growth and neck movement. They can check for less common causes, including
+      early fusion of skull bones, if the pattern is unusual.
+    care:
+    - Use supervised tummy time while the baby is awake and vary how you hold, carry or position them for play. A physiotherapist
+      can help if neck movement is limited.
+    complications:
+    - Positional flattening often improves as the baby gains head control and moves more. A marked or changing shape may need follow-up,
+      especially if it was present early.
+    help:
+    - Discuss concerns with your public health nurse or GP. Keep placing your baby on their back for sleep. Seek review if they struggle
+      to turn their head or the shape is becoming more noticeable.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/plagiocephaly/
   pneumonia:
     aliases: pneumonia lung infection chest cough fever community acquired hospital
     summary: Pneumonia is an infection of the lungs. It may cause fever, cough, shortness of breath and chest pain that is worse
@@ -5388,6 +5816,58 @@ guides:
       blood pressure medicine and find out you are pregnant, contact the prescriber promptly for a review.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/pre-eclampsia/
+  reflux-babies:
+    aliases: baby reflux infant posseting milk spit up silent reflux GORD
+    summary: Many babies bring up a little milk after feeding. A baby who is growing and comfortable usually needs different care
+      from a baby who feeds poorly or has concerning vomiting.
+    evidence_gap: Studies use different definitions of normal posseting and reflux disease. The sources consulted do not establish
+      an Irish national rate of reflux disease in babies.
+    symptoms:
+    - Milk may come back up during or after feeding. Some babies appear uncomfortable. Green or bloody vomit, forceful vomiting or
+      poor weight gain are warning signs rather than typical mild reflux.
+    causes:
+    - Babies have liquid feeds and the muscle at the top of their stomach is still developing. Milk can move upwards easily. Other
+      conditions can cause vomiting or feeding difficulty.
+    diagnosis:
+    - A GP or public health nurse asks how feeds go, whether the baby seems comfortable and how weight is changing. Testing is usually
+      reserved for concerning symptoms or uncertainty.
+    care:
+    - Keep the baby upright while awake after feeding if this helps. Always put the baby down to sleep on their back on a flat surface.
+      Ask your clinician about changes to feeding or the need for treatment.
+    complications:
+    - Feeding difficulties can reduce weight gain or hydration. Frequent uncomplicated posseting often improves during the first
+      year, as babies develop and spend more time upright.
+    help:
+    - Speak to a clinician if feeds are difficult, the baby is very distressed or growth is a concern. Get urgent help for green
+      or bloody vomit, forceful vomiting or signs of dehydration.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/reflux-babies/
+  scarlet-fever:
+    aliases: scarlet fever strep A fever sandpaper rash strawberry tongue
+    summary: Scarlet fever usually causes a sore throat and a rough rash. Contact your GP if you suspect it so they can decide whether
+      antibiotics are needed.
+    evidence_gap: HPSC does not require notification of scarlet fever cases. Irish invasive group A strep figures cover severe infections
+      and cannot stand in for scarlet fever incidence.
+    symptoms:
+    - A fever and sore throat may come first. A rough, fine rash often appears on the body, and the tongue can become red and bumpy.
+      The rash may be easier to feel than see on dark skin.
+    causes:
+    - Some group A streptococcal infections cause a rash because of substances the bacteria release. Scarlet fever spreads through
+      close contact, including in households and schools.
+    diagnosis:
+    - A GP checks the mouth, throat and rash and asks about contacts. Other illnesses can also cause a fever with rash, especially
+      if the child is unusually unwell.
+    care:
+    - A doctor may prescribe antibiotics. Ask when it is safe to return to school or childcare. Keep drinks available and report
+      any difficulty swallowing.
+    complications:
+    - Most people recover well. A worsening illness, increasing breathing difficulty or rapid decline can indicate a serious infection
+      requiring urgent review.
+    help:
+    - Call your GP about a fever with a rough rash or likely exposure. Seek emergency help if a child has difficulty breathing, is
+      difficult to wake or deteriorates rapidly.
+    sources:
+      Clinical guidance and further reading: https://www.hpsc.ie/a-z/other/scarletfever/factsheet
   shortness-breath:
     aliases: shortness of breath dyspnoea breathlessness breathing difficulty
     summary: Breathlessness can develop suddenly or gradually. Sudden severe difficulty breathing needs emergency help, particularly
@@ -5490,6 +5970,80 @@ guides:
       bleeding or light-headedness.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/spotting/
+  tdap-vaccine:
+    kind: procedure
+    aliases: Tdap booster tetanus diphtheria whooping cough pertussis school vaccine
+    summary: The Tdap booster refreshes protection against tetanus, diphtheria and whooping cough. The Irish school programme offers
+      it during first year of secondary school.
+    symptoms:
+    - Children receive earlier vaccines against these infections. A booster helps keep immunity up as they get older. The separate
+      pregnancy vaccination advice should be discussed with maternity care.
+    causes:
+    - The booster reminds the immune system how to recognise the three conditions. It includes an acellular pertussis component and
+      protection against tetanus and diphtheria toxins.
+    diagnosis:
+    - Read the school's information and consent form and tell staff about serious reactions to previous doses. If records are incomplete,
+      ask the team which doses are needed.
+    care:
+    - The vaccinator checks eligibility and consent and gives the injection, usually into the upper arm. Make a note of the date
+      for your vaccination records.
+    complications:
+    - A sore arm, tiredness or mild fever can occur briefly. Emergency treatment is needed for symptoms of a severe allergic reaction.
+    help:
+    - Contact the school vaccination team or local immunisation office about a missed offer. Pregnant people should discuss the separately
+      recommended whooping cough dose with their maternity team.
+  tongue-tie-and-breastfeeding:
+    aliases: tongue tie ankyloglossia breastfeeding latch feeding newborn frenotomy
+    summary: Tongue-tie can limit tongue movement and sometimes affects feeding. A feeding assessment can help determine whether
+      it is causing the difficulty.
+    evidence_gap: Procedure counts capture babies treated in particular services. They cannot estimate how many babies have a tongue-tie,
+      including those who feed without problems.
+    symptoms:
+    - Possible signs include trouble attaching to the breast, frequent loss of latch, nipple pain or poor milk transfer. A visible
+      band under the tongue can also be present when feeding is going well.
+    causes:
+    - A band of tissue connects the tongue to the mouth floor. If it limits useful tongue movement, it may affect feeding. Other
+      causes of a difficult latch or slow weight gain are common.
+    diagnosis:
+    - A clinician observes a feed, looks at how the tongue moves and checks the baby's weight pattern and nappies. A description
+      based only on how the tongue looks is less informative.
+    care:
+    - Positioning support and feeding review can help. A specialist may discuss releasing the tie if it affects feeding after support.
+      Ask about benefits, risks and the plan afterwards.
+    complications:
+    - Persistent poor milk transfer can affect weight or hydration and can make breastfeeding painful. A procedure does not guarantee
+      that every feeding issue will resolve.
+    help:
+    - Contact a public health nurse, GP, midwife or lactation service if feeding is painful or a baby has trouble transferring milk.
+      Get prompt advice for poor intake or fewer wet nappies.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/tongue-tie-and-breastfeeding/
+  torticollis-wry-neck-in-babies:
+    aliases: baby torticollis wry neck tight neck prefers looking one side
+    summary: A baby with torticollis may hold their head tilted or turn mainly to one side. Early assessment can help improve movement
+      and prevent pressure on one part of the head.
+    evidence_gap: Some referred babies have neck tightness together with positional head flattening, but these are distinct conditions.
+      No Irish population count for infant torticollis was identified.
+    symptoms:
+    - A baby may tilt the head toward one shoulder and turn their face the other way. They may prefer one side during feeding or
+      have difficulty turning fully.
+    causes:
+    - Some babies have a tight neck muscle. The cause and timing vary. A head tilt that appears suddenly with pain, fever or other
+      symptoms needs a different assessment.
+    diagnosis:
+    - A healthcare professional checks neck movement, head shape and development. They may refer for physiotherapy or investigate
+      other causes if the examination is unusual.
+    care:
+    - A physiotherapist can demonstrate appropriate handling and exercises. Use supervised play to encourage looking both ways. Keep
+      following safe sleeping advice.
+    complications:
+    - A persistent preference for one side can contribute to head flattening or make feeding more difficult. Follow-up checks whether
+      movement and head position improve.
+    help:
+    - Contact your public health nurse or GP if a baby always looks one way. Seek urgent advice for a sudden painful tilt, fever
+      or a baby who becomes unwell.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/torticollis-wry-neck-in-babies/
   underactive-thyroid-hypothyroidism:
     aliases: hypothyroidism underactive thyroid low thyroid TSH levothyroxine
     summary: An underactive thyroid can cause tiredness, constipation and sensitivity to cold. Blood tests can determine whether
