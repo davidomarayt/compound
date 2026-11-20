@@ -57,6 +57,24 @@ sources:
   migraine_hse:
     name: HSE Neurology Model of Care
     url: https://www.hse.ie/eng/services/publications/clinical-strategy-and-programmes/neurology-model-of-care.pdf
+  cso_ihs10:
+    name: CSO Irish Health Survey 2025, table IHS10
+    url: https://data.cso.ie/table/IHS10
+  cso_autism:
+    name: CSO Irish Health Survey 2025, children’s neurodiversity
+    url: https://www.cso.ie/en/releasesandpublications/ep/p-ihsch/irishhealthsurvey2025-childrenshealth/autismandotherneurodiversities/
+  cso_bmi:
+    name: CSO Irish Health Survey 2025, body mass index
+    url: https://www.cso.ie/en/releasesandpublications/ep/p-ihsmr/irishhealthsurvey-mainresults2025/bodymassindexbmi/
+  cso_ihs12:
+    name: CSO Irish Health Survey 2025, table IHS12
+    url: https://data.cso.ie/table/IHS12
+  cso_ihsc22:
+    name: CSO Irish Health Survey 2025, table IHSC22
+    url: https://data.cso.ie/table/IHSC22
+  cso_ihs17:
+    name: CSO Irish Health Survey 2025, table IHS17
+    url: https://data.cso.ie/table/IHS17
 evidence:
   polio:
   - value: '0'
@@ -324,6 +342,13 @@ evidence:
     locator: table 1
     measure: notifications
   asthma:
+  - value: 8.7%
+    period: '2025'
+    population: People aged 15 and over in Ireland
+    note: Self-reported experience in the previous 12 months. The survey includes allergic asthma.
+    source: cso_ihs10
+    locator: Ireland, both sexes, age 15+
+    measure: prevalence
   - value: About 450,000
     period: Model of care updated 2026
     population: People with doctor-diagnosed asthma in Ireland
@@ -340,6 +365,14 @@ evidence:
     locator: table 1
     measure: prevalence
   copd:
+  - value: 2.7%
+    period: '2025'
+    population: People aged 15 and over in Ireland
+    note: Self-reported experience in the previous 12 months. The question grouped chronic bronchitis, COPD and emphysema.
+      It cannot isolate a separately confirmed COPD diagnosis.
+    source: cso_ihs10
+    locator: Ireland, both sexes, age 15+
+    measure: prevalence
   - value: About 500,000
     period: HSE announcement published 2026
     population: Adults with COPD in Ireland
@@ -355,6 +388,13 @@ evidence:
     locator: table 1
     measure: prevalence
   coronary-heart-disease-chd:
+  - value: 1.8%
+    period: '2025'
+    population: People aged 15 and over in Ireland
+    note: Self-reported experience in the previous 12 months. The question grouped coronary heart disease and angina.
+    source: cso_ihs10
+    locator: Ireland, both sexes, age 15+
+    measure: prevalence
   - value: 3.7%
     period: 2019 survey, reported 2022
     population: Adults aged 18 and over in Ireland
@@ -363,6 +403,14 @@ evidence:
     locator: table 1
     measure: prevalence
   stroke:
+  - value: 0.7%
+    period: '2025'
+    population: People aged 15 and over in Ireland
+    note: Self-reported experience in the previous 12 months. The question grouped stroke and the consequences of stroke.
+      This is a survey estimate among people living in the community.
+    source: cso_ihs10
+    locator: Ireland, both sexes, age 15+
+    measure: prevalence
   - value: 0.6%
     period: 2019 survey, reported 2022
     population: Adults aged 18 and over in Ireland
@@ -371,6 +419,13 @@ evidence:
     locator: table 1
     measure: prevalence
   diabetes:
+  - value: 5.0%
+    period: '2025'
+    population: People aged 15 and over in Ireland
+    note: Self-reported experience in the previous 12 months. The survey measure combines diabetes types.
+    source: cso_ihs10
+    locator: Ireland, both sexes, age 15+
+    measure: prevalence
   - value: 4.6%
     period: 2019 survey, reported 2022
     population: Adults aged 18 and over in Ireland
@@ -410,6 +465,14 @@ evidence:
     locator: table 1
     measure: prevalence
   high-blood-pressure-hypertension:
+  - value: 18.0%
+    period: '2025'
+    population: People aged 15 and over in Ireland
+    note: Self-reported experience in the previous 12 months. People self-reported high blood pressure. This can miss
+      undiagnosed hypertension.
+    source: cso_ihs10
+    locator: Ireland, both sexes, age 15+
+    measure: prevalence
   - value: 13%
     period: '2019'
     population: People aged 15 and over in Ireland
@@ -434,6 +497,14 @@ evidence:
       with raised cholesterol who have never been tested.
     source: healthy2019
     locator: page 10
+    measure: prevalence
+  - value: 9.9%
+    period: '2025'
+    population: People aged 15 and over in Ireland
+    note: Self-reported experience in the previous 12 months. The CSO category is high blood lipids, which can include
+      raised triglycerides and raised cholesterol. It is broader than high cholesterol alone.
+    source: cso_ihs10
+    locator: Ireland, both sexes, age 15+
     measure: prevalence
   pre-diabetes:
   - value: 5.5%
@@ -534,6 +605,14 @@ evidence:
     source: ncri_latest
     locator: Executive summary
     measure: diagnoses
+  - value: 2.6%
+    period: '2025'
+    population: People aged 15 and over in Ireland
+    note: Self-reported experience in the previous 12 months. Captures respondents who reported having cancer in the
+      past year. The registry's complete prevalence measure uses a different definition and captures longer-term survivors.
+    source: cso_ihs10
+    locator: Ireland, both sexes, age 15+
+    measure: prevalence
   bowel-cancer:
   - value: 23,696
     period: 31 December 2023
@@ -660,6 +739,100 @@ evidence:
     note: The HSE gives this approximate count in its neurology service planning document.
     source: migraine_hse
     locator: Neurological Conditions in Ireland
+    measure: prevalence
+  allergies:
+  - value: 15.8%
+    period: '2025'
+    population: People aged 15 and over in Ireland
+    note: Self-reported experience in the previous 12 months. The question excluded allergic asthma.
+    source: cso_ihs10
+    locator: Ireland, both sexes, age 15+
+    measure: prevalence
+  back-pain:
+  - value: 12.5%
+    period: '2025'
+    population: People aged 15 and over in Ireland
+    note: Self-reported experience in the previous 12 months. The survey asked about a lower back disorder or other chronic
+      back condition. This figure reflects only the survey category and excludes transient pain that respondents did
+      not report as a health condition.
+    source: cso_ihs10
+    locator: Ireland, both sexes, age 15+
+    measure: prevalence
+  clinical-depression:
+  - value: 10.4%
+    period: '2025'
+    population: People aged 15 and over in Ireland
+    note: Self-reported experience in the previous 12 months. Respondents reported depression they experienced. The survey
+      did not use clinical assessment to confirm a diagnosis.
+    source: cso_ihs10
+    locator: Ireland, both sexes, age 15+
+    measure: prevalence
+  heart-attack:
+  - value: 0.6%
+    period: '2025'
+    population: People aged 15 and over in Ireland
+    note: Self-reported experience in the previous 12 months. The survey grouped heart attack with its chronic consequences.
+      This reports the share of respondents who had the condition or its effects, rather than new heart attacks in the
+      year.
+    source: cso_ihs10
+    locator: Ireland, both sexes, age 15+
+    measure: prevalence
+  neck-pain:
+  - value: 4.0%
+    period: '2025'
+    population: People aged 15 and over in Ireland
+    note: Self-reported experience in the previous 12 months. Counts a neck disorder or other chronic neck condition,
+      a narrower measure than pain of any duration.
+    source: cso_ihs10
+    locator: Ireland, both sexes, age 15+
+    measure: prevalence
+  urinary-incontinence:
+  - value: 4.8%
+    period: '2025'
+    population: People aged 15 and over in Ireland
+    note: Self-reported experience in the previous 12 months. The CSO grouping includes problems controlling the bladder.
+    source: cso_ihs10
+    locator: Ireland, both sexes, age 15+
+    measure: prevalence
+  autism:
+  - value: 6.4%
+    period: '2025'
+    population: Children aged 3 to 14 in Ireland
+    note: Survey estimate of the share of children with a parent- or guardian-reported diagnosis.
+    source: cso_ihsc22
+    locator: Ireland, autism diagnosed
+    measure: prevalence
+  - value: 1.8%
+    period: '2025'
+    population: People aged 15 and over in Ireland
+    note: Respondents reported whether they had ever received an autism diagnosis. The survey records reported diagnoses.
+    source: cso_ihs12
+    locator: Ireland, both sexes, age 15+
+    measure: prevalence
+  - value: 9.3% of boys · 3.2% of girls
+    period: '2025'
+    population: Children aged 3 to 14 in Ireland
+    note: The survey recorded diagnoses reported by parents or guardians. Rates of recorded diagnosis depend on assessment
+      access and practices.
+    source: cso_autism
+    locator: Figure 4.1
+    measure: prevalence
+  obesity:
+  - value: 23.0%
+    period: '2025'
+    population: People aged 15 and over in Ireland
+    note: Category based on BMI calculated from self-reported height and weight. BMI describes a population measure and
+      has limits for assessing individual health.
+    source: cso_ihs17
+    locator: Ireland, both sexes, age 15+
+    measure: prevalence
+  - value: 30.6% of women · 29.3% of men
+    period: '2025'
+    population: People aged 55 to 64 in Ireland
+    note: These are the estimates for the age group with the highest figures in the survey. BMI was calculated from self-reported
+      height and weight.
+    source: cso_bmi
+    locator: Figure 6.1
     measure: prevalence
 guides:
   asthma:
@@ -1293,3 +1466,152 @@ guides:
     help:
     - Make a GP appointment if you notice a new unusual mark or a mole changing over time. Photos with dates can help
       you describe the change, while clinical assessment is still needed.
+  clinical-depression:
+    aliases: major depression depressive disorder low mood
+    summary: Clinical depression can affect mood, energy, sleep and the ability to get through everyday activities. A
+      GP can help assess symptoms and discuss support and treatment.
+    emergency: If you or someone else is in immediate danger, call
+    symptoms:
+    - Common signs include lasting low mood, loss of interest in things you usually enjoy, fatigue, changes in sleep
+      or appetite, and difficulty concentrating. The signs can be different from one person to another.
+    - Pay attention to how long the changes last and how much they affect work, relationships and ordinary tasks. Depression
+      can also involve feelings of guilt, hopelessness or thoughts of suicide.
+    causes:
+    - Several factors can contribute, including family history, illness, major life changes and sustained stress. Depression
+      can develop without an obvious trigger.
+    diagnosis:
+    - A GP asks about symptoms, how long they have lasted and their effect on your life. They may ask about medicines,
+      physical health and distinct episodes of unusually high energy or mood because these details can affect the assessment.
+    care:
+    - Talking therapies and antidepressant medicines are among the treatment options. A plan depends on severity, your
+      preferences and earlier treatments. Agree when you will review how it is going and where to get help if symptoms
+      worsen.
+    complications:
+    - Depression can affect work, relationships, physical health and safety. Some people have repeated episodes. Follow-up
+      can help identify returning symptoms.
+    help:
+    - Contact your GP if low mood or loss of interest persists or makes everyday life difficult. Seek urgent help if
+      you feel unable to stay safe.
+  back-pain:
+    aliases: low back pain lower back ache lumbar pain lumbago
+    summary: Back pain is common and can limit movement, sleep and work. A GP or physiotherapist can help assess persistent
+      symptoms, and a few specific warning signs need urgent attention.
+    symptoms:
+    - Pain can feel like an ache or stiffness, and may change with movement or position. Pain that travels into a leg,
+      with tingling, weakness or numbness, can suggest irritation of a nerve.
+    causes:
+    - Pain may start after lifting or unaccustomed activity, or it can develop without a clear event. Muscles, joints
+      and other tissues in the back can all contribute. Sometimes a disc or other structure presses on a nerve.
+    diagnosis:
+    - A clinician asks where the pain started, what makes it better or worse and whether there are leg or bladder symptoms.
+      They may check strength and sensation. Many people with ordinary back pain do not need a scan early on.
+    care:
+    - Staying gently active within your ability can help many people. A GP or physiotherapist can discuss exercises,
+      ways to keep moving and options for pain relief.
+    - Tell the clinician what you need to get back to doing, such as driving, lifting, sleeping or caring for someone,
+      so you can plan a gradual return.
+    complications:
+    - Persistent pain can interrupt sleep, limit movement and make work harder. Some less common causes can lead to weakness
+      or loss of sensation and need specific care.
+    help:
+    - Get emergency assessment for new numbness around the genitals or bottom, difficulty passing urine, new loss of
+      bladder or bowel control, or weakness affecting both legs. Speak to a GP if pain persists, is severe, or keeps
+      you from usual activity.
+  urinary-incontinence:
+    aliases: bladder leakage overactive bladder stress incontinence urge incontinence
+    summary: Urinary incontinence means leaking urine unintentionally. The pattern of leakage helps identify which treatments
+      and practical supports could help.
+    symptoms:
+    - Leakage with a cough, laugh or exercise is typical of stress incontinence. A sudden strong urge followed by leakage
+      suggests urgency incontinence. Some people experience both patterns.
+    causes:
+    - Changes in pelvic floor support, bladder function or how completely the bladder empties can contribute. Pregnancy,
+      childbirth, prostate problems, medicines or other health conditions can be relevant.
+    diagnosis:
+    - A GP asks when the leakage happens and may arrange a urine test or examination. A diary of drinks, trips to the
+      toilet, urges and leaks can make the pattern easier to see.
+    care:
+    - Depending on the cause, care may include pelvic floor physiotherapy, bladder training, changing when you drink
+      certain fluids, medication or specialist assessment.
+    - Tell your clinician which daily activities are affected. That can help you agree priorities such as being able
+      to exercise, sleep or travel comfortably.
+    complications:
+    - Leakage can affect confidence, sleep, exercise and social activities. People may avoid going out or restrict drinks
+      too much. An agreed care plan can address the symptoms and their effect on daily life.
+    help:
+    - Speak with your GP about recurrent leakage. Seek prompt advice about blood in the urine or difficulty emptying
+      the bladder. New bladder symptoms with severe back pain and numbness around the genitals or bottom need emergency
+      assessment.
+  autism:
+    aliases: autism spectrum autistic asd neurodivergence
+    summary: Autism is a lifelong way of developing and experiencing the world. Autistic people may have different communication,
+      sensory and support needs.
+    symptoms:
+    - Signs can include differences in communication or social interaction, a preference for predictable routines, deep
+      interests or different responses to noise, light and other sensory input.
+    - Signs can look different in children and adults. Some people consciously adapt how they interact in certain settings,
+      so others may see only part of what they experience.
+    causes:
+    - Autism is a neurodevelopmental condition with a strong genetic contribution. It involves differences in how the
+      brain develops. Each person's strengths and support needs can be different.
+    diagnosis:
+    - An assessment considers developmental history, current experiences and how the person manages different settings.
+      An assessment for a child often draws on information from family and school. Adults can ask a GP about their referral
+      options.
+    care:
+    - Support can involve adapting communication, sensory environments and daily routines. Where appropriate, occupational
+      therapy, speech and language therapy or educational supports can help with specific needs.
+    - Ask what can be put in place now at home, school or work as well as what options are available after an assessment.
+    complications:
+    - Busy settings, unanticipated changes and barriers to communication can cause distress or exhaustion. Anxiety, sleep
+      difficulties or other health needs may also warrant attention in their own right.
+    help:
+    - Talk to your GP, public health nurse or the relevant service if development, communication, sensory needs or daily
+      participation are a concern. Adults can bring examples from childhood and daily life to a referral discussion.
+  obesity:
+    aliases: weight management body mass index bmi
+    summary: Obesity is a chronic condition involving excess body fat that can affect health. A healthcare professional
+      can put measurements and personal risk factors in context.
+    symptoms:
+    - People can have different levels of fitness, mobility and health at a similar weight. Breathlessness with activity,
+      joint pain or daytime tiredness can be worth discussing with your GP if they affect your life.
+    causes:
+    - Several factors influence body weight, including genetics, appetite regulation, medicines, sleep, health conditions
+      and access to food, activity and care. The mix differs from person to person.
+    diagnosis:
+    - A clinician may use BMI and other measures, such as waist measurement, alongside medical history and blood tests.
+      BMI describes the relationship between weight and height and has limits for assessing an individual's health.
+    care:
+    - Depending on the person, options can include support with eating, activity and sleep, medication or referral for
+      specialist treatment. Agree goals that matter in daily life, such as moving more comfortably, managing another
+      condition or improving sleep.
+    complications:
+    - Obesity is associated with a higher risk of type 2 diabetes, sleep apnoea, joint problems and some cardiovascular
+      conditions. Individual risk depends on more than weight alone.
+    help:
+    - A GP can discuss whether symptoms, health checks or changes in weight warrant further assessment. Ask about supports
+      available locally and what follow-up would involve.
+  rsv:
+    aliases: respiratory syncytial virus bronchiolitis
+    summary: Respiratory syncytial virus usually causes a cold-like illness, but babies, older adults and some people
+      with underlying conditions can become more unwell.
+    emergency: If a child stops breathing, is struggling for breath or develops blue or grey lips, call
+    symptoms:
+    - Cough, runny nose, fever and reduced appetite can occur. In babies, feeding less, breathing faster or pulling in
+      under the ribs when breathing can signal a more serious illness.
+    causes:
+    - RSV spreads through close contact and contaminated hands or surfaces. It can affect the small airways and lead
+      to bronchiolitis, particularly in babies.
+    diagnosis:
+    - Clinicians assess breathing, hydration and other signs. Testing may be useful in some settings, but many mild illnesses
+      can be managed based on symptoms.
+    care:
+    - Mild infections usually improve with supportive care. Offer fluids and keep an eye on breathing and feeding in
+      children. If hospital care is needed, the team can provide support such as oxygen or fluids.
+    - Ask your healthcare team about current HSE RSV immunisation guidance for eligible groups.
+    complications:
+    - RSV can lead to bronchiolitis, pneumonia or worsening of an existing heart or lung condition. Babies can become
+      dehydrated if breathing problems reduce feeding.
+    help:
+    - Get urgent advice if breathing becomes harder, a baby feeds much less than usual or wet nappies become noticeably
+      less frequent. Older adults with worsening breathing or underlying conditions should seek prompt advice.
