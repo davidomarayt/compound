@@ -1,0 +1,272 @@
+{
+  "date": "2026-11-20",
+  "status": "prepared_pending_checks",
+  "scan_since_inclusive": "2026-11-19",
+  "publishing_branch": "claude/clever-babbage-uibieq",
+  "pull_request": 223,
+  "validated_head_pending": "772a2fca91598cb916d04ca222156668160adf84",
+  "companies": {
+    "KEYS": {
+      "canonical_url": "https://compound.ie/stocks/keys/",
+      "period": {
+        "fy": 2026,
+        "fp": "FY",
+        "period_end": "2026-10-31",
+        "filed": "2026-11-19",
+        "form": "8-K",
+        "accession": "0001601046-26-000040",
+        "source": "https://www.sec.gov/Archives/edgar/data/1601046/000160104626000040/exhibit991-q426pressrelease.htm",
+        "metrics": {
+          "revenue": {
+            "current": 7157000000,
+            "prior_year": 5375000000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP revenue"
+          },
+          "net_income": {
+            "current": 1513000000,
+            "prior_year": 850000000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP net_income"
+          },
+          "diluted_eps": {
+            "current": 8.75,
+            "prior_year": 4.91,
+            "unit": "USD/shares",
+            "tag": "SEC Exhibit reported GAAP diluted_eps"
+          }
+        }
+      },
+      "status": "prepared"
+    },
+    "WSM": {
+      "canonical_url": "https://compound.ie/stocks/wsm/",
+      "period": {
+        "fy": 2026,
+        "fp": "Q3",
+        "period_end": "2026-11-01",
+        "filed": "2026-11-19",
+        "form": "8-K",
+        "accession": "0000719955-26-000244",
+        "source": "https://www.sec.gov/Archives/edgar/data/719955/000071995526000244/exhibit991fy2026q3earnings.htm",
+        "metrics": {
+          "revenue": {
+            "current": 1991175000,
+            "prior_year": 1882814000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP revenue"
+          },
+          "net_income": {
+            "current": 283146000,
+            "prior_year": 241592000,
+            "unit": "USD",
+            "tag": "SEC Exhibit reported GAAP net_income"
+          },
+          "diluted_eps": {
+            "current": 2.38,
+            "prior_year": 1.96,
+            "unit": "USD/shares",
+            "tag": "SEC Exhibit reported GAAP diluted_eps"
+          }
+        }
+      },
+      "status": "prepared"
+    },
+    "INTU": {
+      "canonical_url": "https://compound.ie/stocks/intu/",
+      "period": {
+        "accession": "0000896878-26-000045",
+        "filed": "2026-11-19",
+        "form": "10-Q",
+        "fp": "Q1",
+        "fy": 2027,
+        "metrics": {
+          "diluted_eps": {
+            "current": 2.59,
+            "prior_year": 1.59,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 695000000,
+            "prior_year": 446000000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 4354000000,
+            "prior_year": 3885000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-10-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000045/intu-20261031.htm"
+      },
+      "status": "verified_already_current"
+    },
+    "APD": {
+      "canonical_url": "https://compound.ie/stocks/apd/",
+      "period": {
+        "accession": "0000002969-26-000050",
+        "filed": "2026-11-19",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 2.39,
+            "prior_year": -1.77,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 532100000,
+            "prior_year": -394500000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 12990900000,
+            "prior_year": 12037300000,
+            "tag": "Revenues",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-09-30",
+        "source": "https://www.sec.gov/Archives/edgar/data/2969/000000296926000050/apd-20260930.htm"
+      },
+      "status": "verified_already_current"
+    },
+    "ATO": {
+      "canonical_url": "https://compound.ie/stocks/ato/",
+      "period": {
+        "accession": "0000731802-26-000150",
+        "filed": "2026-11-16",
+        "form": "10-K",
+        "fp": "FY",
+        "fy": 2026,
+        "metrics": {
+          "diluted_eps": {
+            "current": 8.49,
+            "prior_year": 7.46,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
+          },
+          "net_income": {
+            "current": 1426530000,
+            "prior_year": 1198754000,
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
+          },
+          "revenue": {
+            "current": 4980252000,
+            "prior_year": 4702755000,
+            "tag": "Revenues",
+            "unit": "USD"
+          }
+        },
+        "period_end": "2026-09-30",
+        "source": "https://www.sec.gov/Archives/edgar/data/731802/000073180226000150/ato-20260930.htm"
+      },
+      "status": "verified_already_current"
+    }
+  },
+  "checks": {
+    "offline_earnings_tests": "27 passed"
+  },
+  "monitor_repair": {
+    "pull_request": 222,
+    "commit": "f55d0f869ca83c2da117eab9c65e4a755a4aa5bc",
+    "production_run": 44837398983,
+    "status": "success",
+    "additional_companies_checked": 11,
+    "pending_international_items": 35
+  },
+  "nvidia_one_off": "Previously completed and verified; no duplicate created",
+  "new_articles": 0,
+  "review_limit": 5,
+  "pending": [
+    "KEYS standalone Q4: original statement verified but existing renderer supports Q1-Q3/FY only",
+    "EXPD supplemental disclosure",
+    "BRK-B comparable EPS",
+    "VMRK comparable revenue",
+    "35 international review items",
+    "HD 20 November 10-Q accession 0001628280-26-075287 absent from live source links",
+    "PTC 20 November 10-K accession 0001193125-26-470217 absent from live source links"
+  ],
+  "source_checks": "Original SEC exhibits and filing identity inspected. Statement units, fiscal periods, GAAP versus adjusted, and current/prior figures independently checked twice. APD profit is attributable to Air Products, not consolidated net income. Annual periods verified in separate live annual summary, not quarterly rows.",
+  "coverage": {
+    "sec_submission_records_checked": 502,
+    "errors": [],
+    "window": "2026-11-19 through 2026-11-20 inclusive",
+    "live_accession_checks": [
+      {
+        "ticker": "hd",
+        "latest_accession_present": false,
+        "status": 200
+      },
+      {
+        "ticker": "ptc",
+        "latest_accession_present": false,
+        "status": 200
+      },
+      {
+        "ticker": "wmt",
+        "latest_accession_present": true,
+        "status": 200
+      },
+      {
+        "ticker": "rost",
+        "latest_accession_present": true,
+        "status": 200
+      },
+      {
+        "ticker": "panw",
+        "latest_accession_present": true,
+        "status": 200
+      }
+    ],
+    "limits": "Five companies source-reconciled; not a claim that all issuers are fully current."
+  },
+  "live_checks": [
+    {
+      "ticker": "intu",
+      "source": "https://www.sec.gov/Archives/edgar/data/896878/000089687826000045/intu-20261031.htm",
+      "source_row_found": true,
+      "ad_loader": true,
+      "slots": [],
+      "verified_latest": true
+    },
+    {
+      "ticker": "apd",
+      "source": "https://www.sec.gov/Archives/edgar/data/2969/000000296926000050/apd-20260930.htm",
+      "source_row_found": false,
+      "ad_loader": true,
+      "slots": [],
+      "verified_latest": true
+    },
+    {
+      "ticker": "ato",
+      "source": "https://www.sec.gov/Archives/edgar/data/731802/000073180226000150/ato-20260930.htm",
+      "source_row_found": false,
+      "ad_loader": true,
+      "slots": [],
+      "verified_latest": true
+    },
+    {
+      "ticker": "keys",
+      "source": "https://www.sec.gov/Archives/edgar/data/1601046/000160104626000040/exhibit991-q426pressrelease.htm",
+      "source_row_found": false,
+      "ad_loader": true,
+      "slots": []
+    },
+    {
+      "ticker": "wsm",
+      "source": "https://www.sec.gov/Archives/edgar/data/719955/000071995526000244/exhibit991fy2026q3earnings.htm",
+      "source_row_found": false,
+      "ad_loader": true,
+      "slots": []
+    }
+  ]
+}
