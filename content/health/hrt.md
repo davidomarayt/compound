@@ -16,12 +16,14 @@ sources:
   url: https://www2.hse.ie/medicines/hrt/
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: NICE  |  Menopause identification and management
+  url: https://www.nice.org.uk/guidance/ng23/chapter/Recommendations
 image: /static/images/evergreen/az-hrt.jpg
 image_alt: A UK pack of estradiol valerate tablets, one example of an HRT product
 image_credit: Medgirl131 · 2020 · CC BY-SA 4.0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Progynova_(estradiol_valerate)_tablets_in_the_United_Kingdom.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Hormone replacement therapy (HRT)
 medicine_search_aliases:
@@ -60,6 +62,16 @@ Systemic treatment delivers hormone through the bloodstream to multiple tissues.
 ## When to ask for help or a medication review
 
 Review unexpected bleeding with the treating team. Mention previous clots, hormone-sensitive cancer or new diagnoses before a regimen is chosen or changed. [HSE patient guidance](https://www2.hse.ie/medicines/hrt/)
+
+## Decide which symptoms the proposed treatment is meant to help
+
+Write down which symptoms affect daily life most and discuss which formulation can address them. Hot flushes and night sweats are commonly discussed with systemic options. Vaginal dryness or discomfort can lead to a separate discussion about [local vaginal oestrogen](/health/medicines/vaginal-oestrogen/). Some people need to discuss both. The difference between local and systemic treatment matters when reading research, comparing risks and deciding whether a separate progestogen is needed. [HSE HRT guidance](https://www2.hse.ie/medicines/hrt/) · [Menopause guideline](https://www.nice.org.uk/guidance/ng23/chapter/Recommendations)
+
+## What makes a risk estimate relevant to you?
+
+Ask what formulation and route the estimate applies to, who was studied, and the period over which the outcomes were counted. Personal history can change the starting risk. It helps to bring information about bleeding patterns, previous surgery involving the uterus, clotting history, cancer history and medicines that affect hormone treatment. A number from a study on one regimen should not be carried across to every product. [Menopause guideline](https://www.nice.org.uk/guidance/ng23/chapter/Recommendations)
+
+For a product change, note the oestrogen and the progestogen in separate lines, including route and schedule. Check whether you are using [continuous combined HRT](/health/medicines/continuous-combined-hrt/) or a [sequential regimen](/health/medicines/sequential-combined-hormone-replacement-therapy/) and what bleeding pattern to report. [HSE HRT guidance](https://www2.hse.ie/medicines/hrt/)
 
 ## Related guides
 

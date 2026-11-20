@@ -16,12 +16,14 @@ sources:
   url: https://www2.hse.ie/medicines/steroid-inhalers/
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: HSE  |  Treating asthma
+  url: https://www2.hse.ie/conditions/asthma/treating-asthma/
 image: /static/images/evergreen/az-steroid-inhalers.jpg
 image_alt: Budesonide inhaler
 image_credit: Sadenäyttely · 2021 · CC BY-SA 4.0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Easyhaler_Budesonid_inhaler.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Steroid inhalers
 medicine_search_aliases: []
@@ -56,6 +58,16 @@ Ask about the actual inhaler and how to care for your mouth afterwards. Bring th
 ## When to ask for help or a medication review
 
 Use the personalised respiratory action plan. Worsening severe breathlessness needs urgent help. Discuss recurrent hoarseness or suspected mouth thrush with the pharmacist or prescriber. [HSE patient guidance](https://www2.hse.ie/medicines/steroid-inhalers/)
+
+## Why the medicine needs to reach the airway
+
+Inhaled corticosteroids are intended to act mainly where they are deposited in the airway. Poor technique can change how much medicine reaches that target and how much remains in the mouth. Bring the inhaler to a review and demonstrate it in real time, including use of a spacer if prescribed. Ask about mouth care for the exact device if you notice hoarseness, irritation or possible thrush. [HSE steroid inhaler guidance](https://www2.hse.ie/medicines/steroid-inhalers/) · [HSE asthma treatment](https://www2.hse.ie/conditions/asthma/treating-asthma/)
+
+## Check the action plan after a switch
+
+Some products contain a steroid alone and others also carry a bronchodilator. For a person following a maintenance-and-reliever plan, the exact prescription determines which inhaler can perform both jobs. Record the names, the plan for ordinary days and the steps when symptoms worsen. Keep the plan with the device and check that it still matches after a substitution. [HSE asthma treatment](https://www2.hse.ie/conditions/asthma/treating-asthma/)
+
+If you track progress, add night waking, reliever use and missed activities. Immediate relief and prevention of future flare-ups are different outcomes. The [bronchodilator guide](/health/medicines/bronchodilators/) explains what the other inhaled ingredients can do.
 
 ## Related guides
 

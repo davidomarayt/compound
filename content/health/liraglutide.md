@@ -4,7 +4,7 @@ slug: liraglutide
 pillar: health
 canonical_path: /health/medicines/liraglutide/
 date: '2026-11-19'
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 summary: 'Learn what liraglutide does, how the Saxenda injection affects appetite, and how it fits alongside semaglutide and tirzepatide.'
 meta_description: 'An Irish guide to liraglutide (Saxenda), how it activates the GLP-1 receptor, its approved role in weight management and safety considerations.'
@@ -46,6 +46,16 @@ Prescribing criteria, formulations and follow-up differ by product. The Saxenda 
 ## What should you watch for?
 
 The Saxenda leaflet lists nausea, vomiting, diarrhoea and constipation among common experiences during treatment. Seek urgent medical advice for severe, persistent abdominal pain, particularly if it spreads to your back. This may be a sign of pancreatitis. Speak to your prescriber about other medicines, pregnancy plans or a procedure that involves general anaesthesia or deep sedation. [EMA Saxenda prescribing information and patient leaflet](https://www.ema.europa.eu/en/documents/product-information/saxenda-epar-product-information_en.pdf)
+
+## Why a change in appetite and a treatment review are different
+
+Liraglutide activates the GLP-1 receptor. An early change in fullness or nausea tells you something about how you are tolerating treatment. The Saxenda adult review considers weight change after a period at the maintenance dose. The product information sets out the threshold and period, so the prescriber can apply it to the right treatment history. Keep the dates of initiation and dose changes instead of using the first day you noticed an effect as the start of the review period. [EMA Saxenda product information](https://www.ema.europa.eu/en/documents/product-information/saxenda-epar-product-information_en.pdf)
+
+## Check that the product name matches the reason for treatment
+
+Liraglutide is an ingredient, and Saxenda is a particular product. Products containing liraglutide can have different authorised uses and instructions. A [weekly semaglutide injection](/health/medicines/semaglutide/) or [weekly tirzepatide injection](/health/medicines/tirzepatide/) has its own formulation and review plan. Ask the prescriber to confirm the product, indication and monitoring plan before a switch. Do not match products by comparing the number printed on the pen. [EMA Saxenda product information](https://www.ema.europa.eu/en/documents/product-information/saxenda-epar-product-information_en.pdf)
+
+Keep a record of persistent vomiting, trouble keeping fluids down or symptoms suggesting low blood glucose if you take other diabetes medicines. Severe, persistent abdominal pain needs urgent medical advice. [EMA Saxenda product information](https://www.ema.europa.eu/en/documents/product-information/saxenda-epar-product-information_en.pdf)
 
 ## Read more on Compound Health
 

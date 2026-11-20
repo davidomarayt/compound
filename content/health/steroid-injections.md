@@ -21,7 +21,7 @@ image_alt: Kenalog triamcinolone acetonide packaging
 image_credit: Panthro ( talk ) · 2008 · Public domain · framed
 image_source: https://commons.wikimedia.org/wiki/File:Kenalog.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Steroid injections
 medicine_search_aliases: []
@@ -56,6 +56,16 @@ Benefits can be local and time-limited. Knowing the interval, site and response 
 ## When to ask for help or a medication review
 
 Seek urgent assessment for an increasingly hot, swollen and painful joint with fever or feeling very unwell. Ask about blood glucose checks if you have diabetes and about repeat injections. [HSE patient guidance](https://www2.hse.ie/medicines/steroid-injections/)
+
+## How to interpret the first day and the first few weeks
+
+When a local anaesthetic is given with a steroid, early numbness can reflect the anaesthetic. The inflammation-related effect of the steroid has another time course. Record those separately, along with which activities improved and how long the change lasted. A response can be useful without proving the sole cause of pain. The diagnosis and injection site help clinicians interpret what the response means. [HSE steroid injection guidance](https://www2.hse.ie/medicines/steroid-injections/)
+
+## Leave with a clear plan about aftercare
+
+Record the date, body site and product or combination if known. Ask who to contact for increasing pain, a hot swollen joint, fever or feeling unwell, which can require urgent assessment. Tell the clinician if you have diabetes and ask whether the team wants any extra glucose monitoring. Give them a history of other recent injections or steroid courses before considering another one. [HSE steroid injection guidance](https://www2.hse.ie/medicines/steroid-injections/)
+
+At review, bring one measure of function rather than just a number on a pain scale. An example is whether you could reach a shelf or walk the distance that originally prompted the treatment discussion.
 
 ## Related guides
 

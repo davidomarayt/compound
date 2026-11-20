@@ -16,12 +16,14 @@ sources:
   url: https://www2.hse.ie/medicines/lithium/
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: NHS SPS  |  Lithium monitoring
+  url: https://sps.nhs.uk/monitorings/lithium-monitoring/
 image: /static/images/evergreen/az-lithium.jpg
 image_alt: An extended-release lithium carbonate tablet
 image_credit: P3829 · 2026 · CC0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Lithium_carbonate_ER_300_mg.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Lithium
 medicine_search_aliases:
@@ -58,6 +60,16 @@ A blood level changes after a dose. The clinic wants a measurement at a defined 
 ## When to ask for help or a medication review
 
 New coarse tremor, confusion, marked drowsiness, poor coordination, or vomiting and diarrhoea can signal toxicity. Seek urgent medical advice if these occur. Check anti-inflammatory painkillers, diuretics and blood pressure medicines with the care team. [HSE patient guidance](https://www2.hse.ie/medicines/lithium/)
+
+## Why a blood result needs the time of the last dose
+
+Lithium blood levels change during the interval between doses. Test timing allows the clinician to compare one result with another and decide whether it is meaningful. Record the time of your last dose, the time the sample was taken and any missed doses, illness or change to the product. Take those details to the review even when the result appears in your records first. [Lithium monitoring guidance](https://sps.nhs.uk/monitorings/lithium-monitoring/)
+
+## How ordinary changes can affect lithium safety
+
+Lithium is largely cleared by the kidneys. Changes in fluid balance, kidney function or some other medicines can therefore make the same prescribed dose behave differently. Ask for instructions before using an [NSAID painkiller](/health/medicines/nsaids/) and tell the prescriber about diuretics or ACE inhibitors. Significant vomiting, diarrhoea or dehydration is relevant. Coarse tremor, confusion, drowsiness or problems with coordination need urgent assessment as potential signs of toxicity. [HSE lithium guidance](https://www2.hse.ie/medicines/lithium/) · [Lithium monitoring guidance](https://sps.nhs.uk/monitorings/lithium-monitoring/)
+
+Bring questions about the ongoing monitoring plan. A lithium level answers a different question from a kidney, thyroid or calcium result. The review should also consider the condition being treated and any symptoms that already existed before lithium was started.
 
 ## Related guides
 

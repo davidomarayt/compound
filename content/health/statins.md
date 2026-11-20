@@ -23,7 +23,7 @@ image_alt: An atorvastatin product, an example of a statin
 image_credit: Panthro ( talk ) · 2008 · CC BY-SA 3.0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Atorvastatin40mg.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Statins
 medicine_search_aliases:
@@ -65,6 +65,20 @@ It needs a starting risk, a timeframe and the outcome measured. Ask whether the 
 ## When to ask for help or a medication review
 
 Ask about new unexplained muscle symptoms or interactions with newly prescribed medicines. The relevant interactions differ with the particular statin. [HSE patient guidance](https://www2.hse.ie/medicines/statins/)
+
+## Why the LDL result and cardiovascular risk are different measures
+
+LDL tells the clinician about one part of the biological response to treatment. A prevention decision also considers the person's starting risk of cardiovascular events, the amount of LDL reduction and whether treatment follows a previous event. Two people can have similar LDL readings and different expected absolute benefits. Read the trial figures above alongside the population and period in which they were measured. [Cholesterol Treatment Trialists analysis](https://pubmed.ncbi.nlm.nih.gov/22607822/)
+
+## Make a muscle-symptom report useful
+
+Write down where symptoms are, when they started and any change in exercise, illness or prescription around the same time. Bring the name and strength of the specific statin and any antibiotics or antifungals recently prescribed. Interaction risks differ between statins. A clinician can decide whether symptoms warrant a blood test, a medicine change or assessment for another cause. [HSE statin guidance](https://www2.hse.ie/medicines/statins/)
+
+If a review focuses only on the LDL number, ask what outcome is being prevented and what the estimated risk means for you. Also ask how the team wants to follow up tolerability. Those two questions make the trial evidence easier to apply to a real decision.
+
+### What an absolute benefit depends on
+
+Imagine the same relative benefit applied to two populations. In the population where more vascular events would occur before treatment, preventing the same proportion of events would usually prevent more events overall. That is why the trial estimate above reports the group's starting risk, the LDL reduction and the period. Ask for absolute numbers for a group similar to you, rather than looking for one figure that applies to every statin prescription. [Cholesterol Treatment Trialists analysis](https://pubmed.ncbi.nlm.nih.gov/22607822/)
 
 ## Related guides
 

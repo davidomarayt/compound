@@ -20,12 +20,14 @@ sources:
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5c29aadb-b8fc-83c8-e063-6394a90a7a16
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: NICE  |  Hypertension in adults
+  url: https://www.nice.org.uk/guidance/ng136/chapter/Recommendations
 image: /static/images/evergreen/az-amlodipine.jpg
 image_alt: Example of amlodipine tablets
 image_credit: Hanabishi · 2021 · CC BY-SA 4.0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Amlodipine.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Amlodipine
 medicine_search_aliases:
@@ -64,6 +66,24 @@ The time swelling starts, whether both ankles are affected and whether there are
 ## When to ask for help or a medication review
 
 Record whether swelling is new, one-sided or accompanied by other symptoms. New severe chest pain or severe breathlessness needs urgent assessment. Bring recent blood pressure readings and a medication list to your review. [HSE patient guidance](https://www2.hse.ie/medicines/amlodipine/)
+
+## Why ankle swelling and blood pressure can move in different directions
+
+Amlodipine can lower blood pressure by opening up the small arteries that resist blood flow. That same dilation can increase pressure in the fine vessels supplying nearby tissue, particularly when someone has spent much of the day standing. Some fluid then moves out into the tissue around the ankle. This type of swelling has a different explanation from fluid retention caused by some heart or kidney problems, and a clinician may need to rule those out. The time of day, whether one or both ankles are affected and the presence of breathlessness all help frame that assessment. [Specialist Pharmacy Service review](https://sps.nhs.uk/articles/managing-peripheral-oedema-caused-by-calcium-channel-blockers/)
+
+## What a useful blood pressure record looks like
+
+Take the readings the way your GP or nurse has shown you and record the date, time and circumstances. A series of comparable readings is easier to interpret than one taken just after exercise, a stressful call or rushing upstairs. Record dizziness separately from the numbers and tell the clinician whether it comes on when standing. If you have angina, log exertion and chest symptoms as a separate series. The prescription can be assessed against both goals. [Hypertension guideline](https://www.nice.org.uk/guidance/ng136/chapter/Recommendations) · [HSE amlodipine guidance](https://www2.hse.ie/medicines/amlodipine/)
+
+If your prescription includes [ramipril](/health/medicines/ramipril/) as well, ask which checks belong to which medicines. They lower blood pressure through different mechanisms, so your follow-up may include both readings and blood tests.
+
+### A readings log you can copy
+
+| Date and time | Reading, if requested | What was happening | Symptom and timing |
+|---|---|---|---|
+| … | … | Resting, recent exertion, or another circumstance | Dizziness after standing, ankle swelling later in the day, or no symptoms |
+
+If your GP asks you to record more than one reading at each session, keep the individual readings in the log and follow their instructions for the home monitoring period. A blood pressure goal or a change to treatment is something to agree with the clinician. [Hypertension guideline](https://www.nice.org.uk/guidance/ng136/chapter/Recommendations)
 
 ## Related guides
 

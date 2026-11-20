@@ -23,7 +23,7 @@ image_alt: Archival US FDA photograph of an example patient package insert
 image_credit: The U.S. Food and Drug Administration · 2012 · Public domain · framed
 image_source: https://commons.wikimedia.org/wiki/File:Patient_Package_Insert_for_Oral_Contraceptives_(FDA_079)_(8249451687).jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Finding your patient information leaflet
 medicine_search_aliases:
@@ -65,3 +65,16 @@ Compare the strength, dosage form and authorisation number. An immediate-release
 Do not use a leaflet for another strength, modified-release form or jurisdiction to override instructions from your pharmacist. Ask them to retrieve the relevant Irish document if you cannot identify it. [HSE patient guidance](https://www2.hse.ie/medicines/how-to-find-your-patient-information-leaflet-online/)
 
 *Archival US FDA photograph of an example patient package insert.*
+
+## A worked example with two almost identical packs
+
+Imagine two boxes with the same active ingredient. One is an ordinary tablet and the other says prolonged release. Even if the brand and strength seem familiar, the preparation can change the instructions for swallowing, timing and missed doses. Copy the full name and dosage form into the search. Compare the authorisation number shown on the pack with the search result if it is available. [HPRA documents guide](https://www.hpra.ie/find-a-medicine/for-human-use/using-the-medicines-list/using-product-information)
+
+1. Find the Irish product record and open the **package leaflet**.
+2. Check the name, strength and form against the actual item supplied.
+3. If the record directs you to the EMA, check the exact presentation in its product information.
+4. Ask a pharmacist to resolve any conflict between the pack, leaflet and instructions you were given. [HSE leaflet guide](https://www2.hse.ie/medicines/how-to-find-your-patient-information-leaflet-online/)
+
+## Which document answers which question?
+
+The leaflet is where to look for patient-facing instructions and the effects to report. A professional summary gives the approved uses, contraindications, interactions and clinical pharmacology. An assessment report gives background on the regulator's evaluation and can include the studies used to support authorisation. If you are reporting a reaction, keep the pack and note the batch and the date it started. [HPRA documents guide](https://www.hpra.ie/find-a-medicine/for-human-use/using-the-medicines-list/using-product-information)

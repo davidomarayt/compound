@@ -23,7 +23,7 @@ image_alt: Two labelled packages of codeine phosphate
 image_credit: phenida@PHENTANYL · 2010 · Public domain · framed
 image_source: https://commons.wikimedia.org/wiki/File:Codeine-phosphate.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Codeine
 medicine_search_aliases:
@@ -60,6 +60,16 @@ The front of a pack may emphasise the brand. Read the active ingredients and che
 ## When to ask for help or a medication review
 
 Combining opioids with alcohol, benzodiazepines or other sedatives can increase breathing risk. Abnormally slow breathing or inability to wake someone needs emergency help. [HSE patient guidance](https://www2.hse.ie/medicines/codeine/)
+
+## Two labels can hide the same painkiller
+
+One box may say codeine plus paracetamol and another may simply be branded as a pain or cold remedy. Both could contribute to total exposure. A practical check is to line up the boxes and write down every active ingredient, even where there is only one brand name on the front. Ask a pharmacist about overlap before taking them together. If there may have been a paracetamol overdose, seek urgent advice even when you feel well. [HSE codeine guidance](https://www2.hse.ie/medicines/codeine/) · [Paracetamol guide](/health/medicines/paracetamol/)
+
+## Why one person gets more effect or more sleepiness
+
+Conversion to morphine differs between people, in part due to activity of the CYP2D6 enzyme. The effect also depends on other medicines taken and the cause of the pain. Review both the benefit and the cost. Could you move, sleep or do an important task more comfortably, and did the dose leave you unable to concentrate? A record of when you used it and what followed gives a GP more information than “strong” or “weak” alone. [HSE codeine guidance](https://www2.hse.ie/medicines/codeine/)
+
+Ask about a safer plan if the pain persists or you are taking [diazepam](/health/medicines/diazepam/), [pregabalin](/health/medicines/pregabalin/) or another medicine that makes you drowsy. Unresponsiveness or slow or difficult breathing needs emergency help. [HSE codeine guidance](https://www2.hse.ie/medicines/codeine/)
 
 ## Related guides
 

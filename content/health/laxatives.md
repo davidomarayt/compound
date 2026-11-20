@@ -16,12 +16,14 @@ sources:
   url: https://www2.hse.ie/medicines/laxatives/
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: HSE  |  Constipation
+  url: https://www2.hse.ie/conditions/constipation/
 image: /static/images/evergreen/az-laxatives.jpg
 image_alt: Macrogol packaging, an example of an osmotic laxative
 image_credit: Mystrixo · 2024 · CC BY-SA 4.0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Forlax_4g_Macrogol_4000-ar.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Laxatives
 medicine_search_aliases: []
@@ -56,6 +58,16 @@ Note stool consistency, straining, discomfort and any recent medicine changes. T
 ## When to ask for help or a medication review
 
 Obtain assessment for severe pain with vomiting, abdominal swelling or an inability to pass stool or gas. Ask about fluid requirements and whether an underlying cause or medicine needs review. [HSE patient guidance](https://www2.hse.ie/medicines/laxatives/)
+
+## Start with the pattern of constipation
+
+A frequency count tells part of the story. Very hard stools, straining or feeling unable to empty can matter even when the reported frequency looks unremarkable. Note when the problem began and whether it followed a new prescription such as [codeine](/health/medicines/codeine/) or [iron](/health/medicines/ferrous-fumarate/). The pattern affects which option the pharmacist or GP considers and whether an underlying cause needs attention. [HSE constipation guidance](https://www2.hse.ie/conditions/constipation/)
+
+## Why one laxative can behave differently from another
+
+A bulk-forming product changes the amount of material in the bowel and depends on adequate fluid. An osmotic medicine holds more water in the bowel. A stimulant has a different effect on the movement of the bowel. These differences matter for how soon the effect occurs, how the product is taken and how it fits the person's other health conditions. Bring the name of the product already tried rather than describing only the packaging. [HSE laxative guidance](https://www2.hse.ie/medicines/laxatives/)
+
+Ask what change counts as success, how long to wait before checking back and how to respond to persistent diarrhoea. Severe pain with vomiting, worsening swelling or inability to pass wind or stool needs assessment rather than repeated self-treatment. [HSE constipation guidance](https://www2.hse.ie/conditions/constipation/)
 
 ## Related guides
 

@@ -4,7 +4,7 @@ slug: semaglutide
 pillar: health
 canonical_path: /health/medicines/semaglutide/
 date: '2026-11-19'
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 summary: 'Ozempic, Wegovy and Rybelsus share an active ingredient. Learn how semaglutide affects appetite and blood glucose, and how the products differ.'
 meta_description: 'An Irish guide to how semaglutide works, the differences between Ozempic, Wegovy and Rybelsus, and what to know about safety.'
@@ -23,6 +23,8 @@ sources:
   url: https://www.ema.europa.eu/en/medicines/human/EPAR/rybelsus
 - title: 'HPRA | Warning on GLP-1 type products sold illegally online'
   url: https://www.hpra.ie/news-events/news/article/hpra-warns-of-health-risks-of-semaglutide-type-products-sold-illegally-online
+- title: EMA  |  Rybelsus product information
+  url: https://www.ema.europa.eu/en/documents/product-information/rybelsus-epar-product-information_en.pdf
 ---
 
 **Semaglutide is the active ingredient in Ozempic, Wegovy and Rybelsus.** It activates a receptor used by GLP-1, a hormone involved in appetite and blood glucose regulation. Each product has its own formulation, indication and instructions. This guide covers the main adult EU uses and links to separate coverage of Irish access and costs. [EMA: Ozempic](https://www.ema.europa.eu/en/medicines/human/EPAR/ozempic) · [EMA: Wegovy](https://www.ema.europa.eu/en/medicines/human/EPAR/wegovy) · [EMA: Rybelsus](https://www.ema.europa.eu/en/medicines/human/EPAR/rybelsus)
@@ -52,6 +54,16 @@ Wegovy tablets and Rybelsus contain salcaprozate sodium (SNAC), which helps sema
 ## What should you discuss with your prescriber?
 
 Nausea, diarrhoea, vomiting and constipation can occur. Seek urgent medical advice for severe, persistent abdominal pain, which can be a sign of pancreatitis. Tell your care team if you take insulin or a sulfonylurea, are planning pregnancy, or are due to have an operation with general anaesthesia or deep sedation. The product leaflet covers these situations and other precautions in more detail. [EMA Wegovy prescribing information and leaflet](https://www.ema.europa.eu/en/documents/product-information/wegovy-epar-product-information_en.pdf)
+
+## Keep formulation, indication and outcome attached to every result
+
+A trial of injectable semaglutide for weight management answers a different question from a trial of oral semaglutide in type 2 diabetes. Check the formulation and population before comparing a percentage change in body weight with a change in HbA1c. Even within one outcome, follow-up length, background treatments and how discontinuations were handled matter. Use the product-information study summaries to check which evidence applies to each brand. [EMA Wegovy information](https://www.ema.europa.eu/en/documents/product-information/wegovy-epar-product-information_en.pdf) · [EMA Rybelsus information](https://www.ema.europa.eu/en/documents/product-information/rybelsus-epar-product-information_en.pdf)
+
+## Take a product and monitoring checklist to the appointment
+
+Bring the brand, device or tablet, why it was started and dates of any recent changes. For the oral form, describe how you take it in practice. That gives the pharmacist a chance to discuss absorption and other medicines you take at the same time. Mention insulin or other diabetes drugs that could contribute to low glucose, persistent vomiting or difficulty keeping fluids down, and any upcoming procedure involving anaesthesia or deep sedation. [EMA Wegovy information](https://www.ema.europa.eu/en/documents/product-information/wegovy-epar-product-information_en.pdf)
+
+Read the [oral GLP-1 comparison](/health/oral-glp-1-medicines-ireland/) for more on the different formulations. Ask the prescriber or pharmacist about the current supply and instructions before making any change.
 
 ## Read more on Compound Health
 

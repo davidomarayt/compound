@@ -18,12 +18,14 @@ sources:
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=55731d95-0c99-ff61-e063-6394a90a1ab5
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: NHS SPS  |  Clopidogrel and proton pump inhibitors
+  url: https://sps.nhs.uk/articles/using-clopidogrel-with-proton-pump-inhibitors-ppis/
 image: /static/images/evergreen/az-clopidogrel.jpg
 image_alt: Clopidogrel tablets
 image_credit: Mx. Granger · 2024 · CC0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Clopidogrel_1.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Clopidogrel
 medicine_search_aliases:
@@ -60,6 +62,16 @@ Bring the event or stent date if known, the medicine list and any written treatm
 ## When to ask for help or a medication review
 
 Omeprazole and esomeprazole can affect clopidogrel activation. Ask the prescribing team to review the combination and to advise before surgery or any interruption. Serious bleeding needs urgent assessment. [HSE patient guidance](https://www2.hse.ie/medicines/clopidogrel/)
+
+## What an interaction can change before the drug reaches the platelet
+
+Clopidogrel must be converted to an active form. Some acid-suppressing medicines can interfere with the enzymes involved. The concern is specific to the drug combination, so a person who still needs protection for their stomach may be able to discuss a different option with their clinician. Bring the active ingredient in any reflux medicine you buy yourself, especially [omeprazole](/health/medicines/omeprazole/) or [esomeprazole](/health/medicines/esomeprazole/). [Specialist Pharmacy Service interaction guidance](https://sps.nhs.uk/articles/using-clopidogrel-with-proton-pump-inhibitors-ppis/)
+
+## Write down why you take it and who decides when treatment changes
+
+Was it started after a stent, a TIA or another vascular event? Write down the event date, who prescribed it, whether you also take aspirin, and any planned review or stop date. Those facts help a dentist, surgeon or pharmacist understand the reason for treatment. The prescriber and procedural team can weigh the risk of bleeding against the reason the antiplatelet is needed. Avoid making the change yourself based on an instruction for another kind of blood thinner. [HSE clopidogrel guidance](https://www2.hse.ie/medicines/clopidogrel/)
+
+Tell the care team about new frequent bruising or bleeding. Significant bleeding, vomiting blood or black, tarry stools needs urgent assessment. [HSE clopidogrel guidance](https://www2.hse.ie/medicines/clopidogrel/)
 
 ## Related guides
 

@@ -25,7 +25,7 @@ image_alt: A ramipril capsule
 image_credit: NLM · 2011 · Public domain · framed
 image_source: https://commons.wikimedia.org/wiki/File:Ramipril_1.25_MG_Oral_Capsule.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Ramipril
 medicine_search_aliases:
@@ -63,6 +63,16 @@ Illness, dehydration or other medicines can affect the same measurements. Record
 ## When to ask for help or a medication review
 
 Tongue or throat swelling is an emergency. Check anti-inflammatory painkillers, potassium products and pregnancy plans with your care team. Ask for an individual plan for illness or dehydration. [HSE patient guidance](https://www2.hse.ie/medicines/ramipril/)
+
+## Why a kidney blood test can change after treatment starts
+
+Angiotensin II helps regulate pressure within the kidney's filtering units. ACE inhibition can change that pressure, which is one reason clinicians follow creatinine or estimated kidney function after starting or changing treatment. The change is interpreted together with previous results and circumstances such as illness, dehydration or other medicines. Potassium is monitored for a different reason, related to changes in how the body handles that electrolyte. [ACE inhibitor monitoring guidance](https://sps.nhs.uk/monitorings/ace-inhibitors-and-angiotensin-ii-receptor-blockers-monitoring/)
+
+## Notes to bring when the treatment is reviewed
+
+Bring the reason for starting ramipril, home readings where requested, and a list of new prescriptions, painkillers or salt substitutes. Include the timing of any cough or dizziness so the prescriber can consider other causes and whether the symptoms followed a medicine change. Ask for a specific plan if vomiting or diarrhoea affects how much you can drink. [HSE ramipril guidance](https://www2.hse.ie/medicines/ramipril/)
+
+A persistent dry cough can be reviewed with the prescriber. Tongue or throat swelling, especially with breathing difficulty, needs emergency help. If taking ramipril with [amlodipine](/health/medicines/amlodipine/), ask what the blood tests and readings are intended to assess. [HSE ramipril guidance](https://www2.hse.ie/medicines/ramipril/)
 
 ## Related guides
 

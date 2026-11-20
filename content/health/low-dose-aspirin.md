@@ -20,12 +20,14 @@ sources:
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=cc5db55a-a2b0-48f4-802b-9e5e94fd9ceb
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: HSE  |  NSAIDs
+  url: https://www2.hse.ie/medicines/nsaids/
 image: /static/images/evergreen/az-low-dose-aspirin.jpg
 image_alt: Archival US FDA photograph of a recalled low-dose aspirin pack
 image_credit: The U.S. Food and Drug Administration · 2013 · Public domain · framed
 image_source: https://commons.wikimedia.org/wiki/File:RECALLED_%E2%80%93_Enteric_Coated_Aspirin_Tablets,81_mg_(9090268184).jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Low-dose aspirin
 medicine_search_aliases:
@@ -64,6 +66,20 @@ The medicine can change both outcomes. A smaller probability of a vascular event
 ## When to ask for help or a medication review
 
 Mention other antiplatelet or anticoagulant medicines, and check before adding an anti-inflammatory painkiller. Vomiting blood or black, tarry stools needs urgent assessment. Check with the prescribing team before changing treatment. [HSE patient guidance](https://www2.hse.ie/medicines/low-dose-aspirin/)
+
+## Why a tablet coating does not settle the bleeding question
+
+An enteric coating changes where the tablet dissolves. Aspirin's effect on platelets persists after it has been absorbed. Questions about bleeding therefore include your history of ulcers, previous bleeding and other medicines as well as the type of product. If you buy an anti-inflammatory painkiller or take another antiplatelet, show both packs to the pharmacist. [HSE aspirin guidance](https://www2.hse.ie/medicines/low-dose-aspirin/) · [HSE NSAID guidance](https://www2.hse.ie/medicines/nsaids/)
+
+## Make sure the reason for treatment is recorded
+
+For someone who has had a heart attack or a stroke due to a blocked artery, the reason for considering an antiplatelet is different from the question of taking aspirin before any such event. Personal risks and the other medicines used matter in both. The ASPREE figures above answer a specific primary prevention question in older adults and should be read in that context. [ASPREE trial](https://pmc.ncbi.nlm.nih.gov/articles/PMC6289056/)
+
+Before a procedure, bring the date and reason aspirin was started and the name of any anticoagulant or second antiplatelet. The procedural and prescribing teams can agree a plan. The [clopidogrel](/health/medicines/clopidogrel/) and [warfarin](/health/medicines/warfarin/) guides explain the different targets clinicians mean when they use the phrase “blood thinner.” [HSE aspirin guidance](https://www2.hse.ie/medicines/low-dose-aspirin/)
+
+### Read person-years as time observed
+
+A rate per 1,000 person-years combines follow-up time across participants. It is useful for comparing study groups with different observation times. A five-year risk instead describes the proportion expected to have the outcome over five years. The two measures are related, but cannot be read as the same number. When a headline says “per 1,000”, look for the period and whether it is an event rate or a probability. [ASPREE trial](https://pmc.ncbi.nlm.nih.gov/articles/PMC6289056/)
 
 ## Related guides
 

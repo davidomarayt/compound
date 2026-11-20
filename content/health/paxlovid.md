@@ -25,7 +25,7 @@ image_alt: Close-up of Paxlovid tablets
 image_credit: Intellec7 · 2022 · CC BY-SA 4.0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Paxlovid_pills_close-up,_backside.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Paxlovid
 medicine_search_aliases:
@@ -63,6 +63,20 @@ Some medicines can continue affecting drug metabolism after the last dose. Provi
 ## When to ask for help or a medication review
 
 Ask a clinician or pharmacist to screen the whole medicine list and check kidney function. Do not stop co-medications or decide eligibility on the basis of a web page. [HSE patient guidance](https://www2.hse.ie/medicines/paxlovid/)
+
+## Why kidney function and the medicine list answer different questions
+
+Kidney function affects how much nirmatrelvir can remain in the body, and can change the prescriber's approach. The full medicine list answers a separate question: ritonavir affects breakdown of many drugs and can cause important interactions. List supplements and occasional medicines as well as prescriptions. For recently stopped medicines, include the last day taken because some effects on drug metabolism can last beyond the last dose. [EMA Paxlovid information](https://www.ema.europa.eu/en/medicines/human/EPAR/paxlovid)
+
+## What makes the reported treatment benefit relevant?
+
+A study in people at higher risk of severe COVID can show a reduction in hospitalisation or death under particular conditions. The absolute benefit depends on the risk in the group studied, the period of follow-up, and timing after symptom onset. Ask the clinician how the evidence fits your risk and the current Irish pathway. [EMA Paxlovid information](https://www.ema.europa.eu/en/medicines/human/EPAR/paxlovid) · [HSE Paxlovid guidance](https://www2.hse.ie/medicines/paxlovid/)
+
+Write down when symptoms first appeared and have the packs to hand for the prescribing discussion. The clinician can decide if a medicine can be paused, adjusted or requires a different antiviral plan. Do not make those changes from an online interaction list. [HSE Paxlovid guidance](https://www2.hse.ie/medicines/paxlovid/)
+
+### A medication reconciliation example
+
+A person may say “I take a cholesterol tablet and something for sleep.” Each description could cover several medicines with very different interactions. Have the packs ready and give the exact name, strength, usual timing and last dose. Include an occasional treatment, a herbal product or a prescription recently stopped. The prescriber can then use a current interaction resource for the actual list. [EMA Paxlovid information](https://www.ema.europa.eu/en/medicines/human/EPAR/paxlovid)
 
 ## Related guides
 

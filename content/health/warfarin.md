@@ -23,7 +23,7 @@ image_alt: Warfarin medication bottles photographed in the US
 image_credit: Alisa Machalek, NIGMS/NIH · Public domain · framed
 image_source: https://commons.wikimedia.org/wiki/File:Warfarin_bottles_NIGMS.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Warfarin
 medicine_search_aliases:
@@ -63,6 +63,20 @@ Pass the reading, date, current schedule and recent changes to your clinic. A fi
 ## When to ask for help or a medication review
 
 Head injury or serious bleeding needs urgent assessment. Check new prescriptions and non-prescription products with a pharmacist or anticoagulation clinic. Follow the clinic’s instructions rather than adjusting treatment from an online example. [HSE patient guidance](https://www2.hse.ie/medicines/warfarin/)
+
+## Why timing can explain an INR change
+
+An INR measures clotting under standardised conditions. A measurement made after an infection, a missed dose or a medicine change may not tell the same story as one made during a stable period. After a regimen change, existing clotting factors can take time to turn over. Give the clinic both the date of the result and the dates of events around it. [HSE warfarin guidance](https://www2.hse.ie/medicines/warfarin/)
+
+## The information that makes a call to the clinic useful
+
+Have the recent results, your clinic's target, the instructions you actually followed and details of anything new. Include the brand and start date of antibiotics or other drugs, whether you were ill, and any big change in diet or alcohol. Vitamin K intake can affect response. Ask about keeping intake consistent and discussing planned dietary changes, rather than cutting out a food group. The clinician can interpret the record and advise whether and when to test again. [HSE warfarin guidance](https://www2.hse.ie/medicines/warfarin/)
+
+For a new prescription or procedure, flag warfarin early with the pharmacist or care team. A head injury, heavy bleeding, blood in vomit or new black, tarry stools needs urgent assessment. [HSE warfarin guidance](https://www2.hse.ie/medicines/warfarin/)
+
+### Example of a message for an anticoagulation clinic
+
+“Today I received the INR that the clinic asked me to check. I have written down the reading and my usual schedule. A doctor prescribed a new medicine on Friday, and I was unwell at the weekend. I can give you the medicine name, the time of my last dose and what I have eaten and drunk.” That gives the clinic a timeline it can use. It also makes clear where more information is needed before advising about the prescription. [HSE warfarin guidance](https://www2.hse.ie/medicines/warfarin/)
 
 ## Related guides
 

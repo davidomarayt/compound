@@ -18,12 +18,14 @@ sources:
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4132f91e-6f24-476a-9028-bab86ad0598e
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: NICE  |  Neuropathic pain in adults
+  url: https://www.nice.org.uk/guidance/cg173/chapter/1-recommendations
 image: /static/images/evergreen/az-amitriptyline-for-pain-and-migraine.jpg
 image_alt: Amitriptyline Nycomed packaging
 image_credit: Rünno · 2009 · Public domain · framed
 image_source: https://commons.wikimedia.org/wiki/File:Amitriptyline_Nycomed.JPG
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Amitriptyline for pain and migraine
 medicine_search_aliases: []
@@ -58,6 +60,16 @@ Use headache days, length of attacks and disruption to routine. Also record acut
 ## When to ask for help or a medication review
 
 Discuss excess sedation, constipation or difficulty passing urine. Ask the prescriber how to review or stop treatment, especially when also taking other sedating medicines. [HSE patient guidance](https://www2.hse.ie/medicines/amitriptyline-for-pain-and-migraine/)
+
+## A migraine preventive and a nerve-pain medicine have different jobs
+
+For migraine prevention, an informative baseline includes both headache days and the days you had to stop or change an activity. Make a separate note of medicines taken for an attack. For nerve pain, use a consistent activity such as walking the same route, sleeping through the night or tolerating clothing against a sensitive area. A change in one activity may be meaningful even if a number on a pain scale changes little. [HSE amitriptyline guidance](https://www2.hse.ie/medicines/amitriptyline-for-pain-and-migraine/) · [Neuropathic pain guideline](https://www.nice.org.uk/guidance/cg173/chapter/1-recommendations)
+
+The pain pathway is also different from the one targeted by a simple painkiller. Descending nerve circuits from the brain can turn down the transmission of pain signals in the spinal cord. Noradrenaline and serotonin take part in those circuits. A medicine that changes transmission may help some types of pain even when inflammation is not the main driver. The clinical response still depends on the cause of pain and varies from person to person. [Neuropathic pain guideline](https://www.nice.org.uk/guidance/cg173/chapter/1-recommendations)
+
+## Bring both a benefit and a cost to the review
+
+“I woke less often, but felt too groggy to drive early” is more useful than “it worked a bit.” Ask when benefit should be reviewed and whether the effects you notice are an expected part of treatment. Keep the [depression guide](/health/medicines/amitriptyline-for-depression/) in mind if a lower-dose prescription or different timing on another leaflet causes confusion. [HSE amitriptyline guidance](https://www2.hse.ie/medicines/amitriptyline-for-pain-and-migraine/)
 
 ## Related guides
 

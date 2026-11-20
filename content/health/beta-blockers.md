@@ -21,7 +21,7 @@ image_alt: Propranolol tablets, an example of a beta blocker
 image_credit: Whispyhistory · 2021 · CC BY-SA 4.0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Propranolol_tablets_(UK).jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Beta blockers
 medicine_search_aliases: []
@@ -56,6 +56,16 @@ They differ in receptor effects, formulations, duration and evidence for specifi
 ## When to ask for help or a medication review
 
 Tell the prescriber if you have asthma or COPD, low pulse symptoms, or take other medicines that slow heart rate. Discuss stopping with the prescriber because sudden withdrawal can cause problems. [HSE patient guidance](https://www2.hse.ie/medicines/beta-blockers/)
+
+## “Beta blocker” describes a target, not a single treatment
+
+Beta receptors sit in more than one tissue. Medicines that preferentially block beta-1 receptors mainly affect the heart and renin release at usual exposures, while some block beta-2 receptors as well. Selectivity is a tendency and can change with exposure. Propranolol, for example, has different receptor selectivity and clinical uses from some of the medicines used for heart failure. This is one reason a pharmacist checks the exact product and reason for prescribing before a switch. [HSE beta blocker guidance](https://www2.hse.ie/medicines/beta-blockers/)
+
+## What to note when pulse or exercise tolerance changes
+
+A resting pulse reading describes one moment. Add the circumstances and whether you felt faint, unusually tired or unable to do an activity you could previously manage. When the medicine is for an irregular rhythm, a record of the episode and how long it lasted may help more than a pulse taken hours later. If you have asthma or COPD, record any new wheeze or increase in reliever inhaler use and ask the prescribing team about it. [HSE beta blocker guidance](https://www2.hse.ie/medicines/beta-blockers/)
+
+If a review leads to a different formulation or a plan to stop, ask the prescriber to explain what to follow on which day. A new box and an older prescription list are easy to confuse. Keep both available for the reconciliation.
 
 ## Related guides
 

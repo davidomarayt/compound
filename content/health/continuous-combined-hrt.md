@@ -16,12 +16,14 @@ sources:
   url: https://www2.hse.ie/medicines/continuous-combined-hrt/
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: NICE  |  Menopause identification and management
+  url: https://www.nice.org.uk/guidance/ng23/chapter/Recommendations
 image: /static/images/evergreen/az-continuous-combined-hrt.jpg
 image_alt: An oestrogen patch and oral progestogen, examples of separate HRT components
 image_credit: Erica-Schroeder · 2020 · CC BY-SA 4.0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Estrogen_patch_with_oral_progestogen.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Continuous combined HRT
 medicine_search_aliases: []
@@ -56,6 +58,16 @@ Timing can reveal whether bleeding or side effects began after a formulation, sc
 ## When to ask for help or a medication review
 
 Report unexpected bleeding according to the care plan, particularly new or persistent bleeding. Ask the prescriber to review any change in the regimen so both components remain appropriate. [HSE patient guidance](https://www2.hse.ie/medicines/continuous-combined-hrt/)
+
+## When the combination is split across two packs
+
+The daily progestogen may be in the same product or prescribed separately from the oestrogen. Write down the product names, route and instructions for both. This matters when a pharmacy changes a brand or a GP adjusts one component. If you still have a uterus, the clinician needs to know how the progestogen part is being supplied when considering a change to the systemic oestrogen. [HSE continuous combined HRT guidance](https://www2.hse.ie/medicines/continuous-combined-hrt/) · [Menopause guideline](https://www.nice.org.uk/guidance/ng23/chapter/Recommendations)
+
+## What to include in a bleeding and symptom diary
+
+Write the date, duration and amount of any bleeding, when you started or changed either component, and any late or missed doses. Include why you started HRT and which symptoms are still affecting daily life. Spotting soon after a change and bleeding that begins after a settled period give the clinician different information. Ask what action to take if bleeding occurs and which patterns need assessment sooner, particularly new, heavy or persistent bleeding. [HSE continuous combined HRT guidance](https://www2.hse.ie/medicines/continuous-combined-hrt/) · [Menopause guideline](https://www.nice.org.uk/guidance/ng23/chapter/Recommendations)
+
+Read the [sequential combined HRT guide](/health/medicines/sequential-combined-hormone-replacement-therapy/) if you have a scheduled part-month progestogen. The expected timing of bleeding and the treatment calendar differ.
 
 ## Related guides
 

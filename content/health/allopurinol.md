@@ -18,12 +18,14 @@ sources:
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5d330416-4289-762e-e063-6294a90a532e
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: NICE  |  Gout diagnosis and management
+  url: https://www.nice.org.uk/guidance/ng219/chapter/Recommendations
 image: /static/images/evergreen/az-allopurinol.jpg
 image_alt: Allopurinol sold in the Russian market, photographed in 2025
 image_credit: Retired electrician · 2025 · CC0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:%D0%90%D0%BB%D0%BB%D0%BE%D0%BF%D1%83%D1%80%D0%B8%D0%BD%D0%BE%D0%BB_Egis_(Allopurinol_made_by_Egis_in_Hungary_for_Russian_market)_2025_02.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Allopurinol
 medicine_search_aliases:
@@ -61,6 +63,16 @@ The blood level can change before old deposits have cleared. Judge long-term ura
 ## When to ask for help or a medication review
 
 A new rash needs prompt assessment, especially if there is blistering, fever or mouth involvement. Mention azathioprine or mercaptopurine by name, since their metabolism can be affected. [HSE patient guidance](https://www2.hse.ie/medicines/allopurinol/)
+
+## Why a urate result can improve before your joints do
+
+A flare happens when the immune system reacts to urate crystals in a joint. Allopurinol changes the amount of urate available to make crystals. These are different processes. A lower blood level can be measurable while crystals accumulated over years are still present. That is why the dose review and the flare plan have different jobs, and why the prescriber may discuss temporary flare prevention while treatment is being established. [Gout management guideline](https://www.nice.org.uk/guidance/ng219/chapter/Recommendations)
+
+A single urate reading during a flare can also be hard to interpret. At review, bring the dates of flares, results from previous tests, and whether you were taking allopurinol consistently around each test. The pattern helps distinguish an apparent lack of benefit from a plan that is still being adjusted. Ask what serum urate result the team is aiming for and when they want the next sample. [Gout management guideline](https://www.nice.org.uk/guidance/ng219/chapter/Recommendations)
+
+## Questions after a change in treatment
+
+The interaction with azathioprine and mercaptopurine is especially important because xanthine oxidase also helps break these medicines down. Give the pharmacist the names of your regular prescriptions before a new prescription is started. A new rash deserves prompt advice. A rash with fever, blistering, mouth sores or peeling skin needs urgent assessment. [HSE allopurinol guidance](https://www2.hse.ie/medicines/allopurinol/)
 
 ## Related guides
 

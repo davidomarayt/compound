@@ -25,7 +25,7 @@ image_alt: An example of combination tablets containing perindopril and indapami
 image_credit: Tomino de WS · 2020 · CC BY-SA 4.0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Prestarium_neo_combi_5-1,25_mg_tbl.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Perindopril
 medicine_search_aliases:
@@ -63,6 +63,16 @@ Different salts and combination products exist. A number printed on one pack can
 ## When to ask for help or a medication review
 
 Swelling of the tongue or throat, especially with breathing difficulty, needs emergency help. Discuss potassium-containing products, anti-inflammatory painkillers and pregnancy with the care team. [HSE patient guidance](https://www2.hse.ie/medicines/perindopril/)
+
+## How to decode a change in the box
+
+Perindopril can appear as different salts and as part of combination products. The number on a box cannot be interpreted without the salt, strength and other active ingredients. Bringing an old and new box lets the pharmacist identify whether you received a comparable product, a changed strength or an extra medicine. If a tablet contains a diuretic or a calcium channel blocker too, include it on your list as a combination. [HSE perindopril guidance](https://www2.hse.ie/medicines/perindopril/)
+
+## Why the blood pressure reading and blood tests sit side by side
+
+Lower blood pressure is one possible intended effect. Blood creatinine and potassium help detect changes in kidney function and potassium handling. After a change, new illness, poor fluid intake and other medicines can also affect the same results. Tell the clinician about these circumstances rather than relying on the lab number alone. Ask who will review the results and when they want a repeat sample. [ACE inhibitor monitoring guidance](https://sps.nhs.uk/monitorings/ace-inhibitors-and-angiotensin-ii-receptor-blockers-monitoring/)
+
+Tell the team before taking products containing potassium or an anti-inflammatory painkiller. If you develop facial, tongue or throat swelling or difficulty breathing, seek emergency help. A persistent dry cough is a separate reason to arrange a medication review. [HSE perindopril guidance](https://www2.hse.ie/medicines/perindopril/)
 
 ## Related guides
 

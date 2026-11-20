@@ -16,12 +16,14 @@ sources:
   url: https://www2.hse.ie/medicines/steroid-nasal-sprays/
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: HSE  |  Allergic rhinitis
+  url: https://www2.hse.ie/conditions/allergic-rhinitis/
 image: /static/images/evergreen/az-steroid-nasal-sprays.jpg
 image_alt: A fluticasone nasal spray
 image_credit: Iamreallygoodatcheckers · 2020 · CC BY-SA 4.0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Flonase.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Steroid nasal sprays
 medicine_search_aliases: []
@@ -56,6 +58,16 @@ The way a spray is aimed affects delivery and irritation. A technique check and 
 ## When to ask for help or a medication review
 
 Ask a pharmacist to check technique if nosebleeds or irritation recur. Refer to product-specific guidance for children, pregnancy and use alongside other steroid products. [HSE patient guidance](https://www2.hse.ie/medicines/steroid-nasal-sprays/)
+
+## Check where the medicine goes, especially if you get nosebleeds
+
+Nasal steroids act through repeated contact with the inflamed nasal lining. If the spray repeatedly hits the partition in the centre of the nose or runs straight into the throat, technique may need review. Ask a pharmacist to demonstrate the device and then show them how you actually use it. Bring the spray so they can check the nozzle and its priming instructions. [HSE steroid nasal spray guidance](https://www2.hse.ie/medicines/steroid-nasal-sprays/)
+
+## Track the symptoms the spray should change
+
+Record congestion, sneezing, sleep and any nosebleeds over a comparable run of days. A fast sensation of airflow from a decongestant and improvement from an anti-inflammatory spray happen through different mechanisms. Ask the pharmacist how the expected timing of benefit applies to the exact product. If symptoms are persistent, single-sided or associated with recurrent bleeding, ask a clinician whether another cause needs assessment. [HSE allergic rhinitis guidance](https://www2.hse.ie/conditions/allergic-rhinitis/)
+
+If you also use a [steroid inhaler](/health/medicines/steroid-inhalers/) or a steroid cream, include it in the medicine list and note how often you use it. [HSE steroid nasal spray guidance](https://www2.hse.ie/medicines/steroid-nasal-sprays/)
 
 ## Related guides
 

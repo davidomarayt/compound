@@ -17,12 +17,14 @@ sources:
   url: https://www2.hse.ie/medicines/oestrogen-tablets-patches-gel-spray/
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: NICE  |  Menopause identification and management
+  url: https://www.nice.org.uk/guidance/ng23/chapter/Recommendations
 image: /static/images/evergreen/az-oestrogen-tablets-patches-gel-spray.jpg
 image_alt: An example of a transdermal estradiol patch from Australia
 image_credit: Vack Xu · 2025 · CC0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Estradiol_Patch_Australia.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Oestrogen tablets, patches, gel and spray
 medicine_search_aliases: []
@@ -57,6 +59,16 @@ Note the product, timing and site. Ask a pharmacist for product-specific applica
 ## When to ask for help or a medication review
 
 Discuss previous clots, unusual bleeding and any product substitution. Check product-specific application instructions, including precautions about another person touching the application area. [HSE patient guidance](https://www2.hse.ie/medicines/oestrogen-tablets-patches-gel-spray/)
+
+## Why route matters when reading a risk estimate
+
+A swallowed hormone reaches the liver first via blood draining the gut. A patch, gel or spray delivers hormone through the skin and largely avoids that first pass. This is one reason clinicians distinguish oral from transdermal HRT when assessing risks such as blood clots. The route does not settle the entire decision. Your history, dose and other parts of the regimen still matter. Ask which product and route an estimate was based on before applying it to your own treatment discussion. [Menopause guideline](https://www.nice.org.uk/guidance/ng23/chapter/Recommendations)
+
+## What to check around a change in how it is supplied
+
+Take the old and new pack names to the review. For patches or gels, describe any problem with adhesion, irritation or application. Give the name and schedule of a separate progestogen if you have one. The oestrogen route and which treatment protects the womb lining are different questions. The clinician can check that the two parts still fit together after a substitution. [HSE oestrogen guidance](https://www2.hse.ie/medicines/oestrogen-tablets-patches-gel-spray/)
+
+Record any new bleeding with dates and whether it began after a change. The [vaginal oestrogen guide](/health/medicines/vaginal-oestrogen/) covers a separate treatment route used primarily for symptoms in that area. [Menopause guideline](https://www.nice.org.uk/guidance/ng23/chapter/Recommendations)
 
 ## Related guides
 

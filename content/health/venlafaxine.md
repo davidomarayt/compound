@@ -18,12 +18,14 @@ sources:
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5fecf4b2-67fe-a7e9-e063-6394a90a793e
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: NICE  |  Medicines associated with dependence or withdrawal symptoms
+  url: https://www.nice.org.uk/guidance/ng215/chapter/Recommendations
 image: /static/images/evergreen/az-venlafaxine.jpg
 image_alt: A venlafaxine product
 image_credit: Telaneo · 2023 · CC0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Venlafaxin.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Venlafaxine
 medicine_search_aliases:
@@ -61,6 +63,16 @@ The release pattern changes how the product is taken. If a refill looks differen
 ## When to ask for help or a medication review
 
 Discuss missed doses and any taper with the prescriber. Seek urgent help for serious mental health deterioration or symptoms such as severe agitation with fever or confusion. [HSE patient guidance](https://www2.hse.ie/medicines/venlafaxine/)
+
+## A timeline to use around missed doses and changes
+
+Write the exact product and whether it is immediate release or prolonged release. Then record when a dose was delayed, missed or changed and when new symptoms began. Dizziness, nausea or unusual sensations around a change can have a different explanation from a gradual return of the original problem. Your prescriber can use the timing and the previous treatment history to assess what happened. [HSE venlafaxine guidance](https://www2.hse.ie/medicines/venlafaxine/) · [NICE dependence and withdrawal guideline](https://www.nice.org.uk/guidance/ng215/chapter/Recommendations)
+
+## Follow the intended outcome and monitoring in parallel
+
+Track one or two activities that depression or anxiety affected, and add a separate entry for side effects. If asked to monitor blood pressure, record readings as instructed and mention other medicines that might affect them. A prescriber can decide whether the benefit in your intended outcome justifies continuing or adjusting treatment. [HSE venlafaxine guidance](https://www2.hse.ie/medicines/venlafaxine/)
+
+Bring any new medicine that affects serotonin and ask about a planned reduction if necessary. Seek urgent support for severe worsening in mental health or if you cannot keep yourself safe. [HSE venlafaxine guidance](https://www2.hse.ie/medicines/venlafaxine/)
 
 ## Related guides
 

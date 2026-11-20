@@ -18,12 +18,14 @@ sources:
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4132f91e-6f24-476a-9028-bab86ad0598e
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: NICE  |  Depression in adults
+  url: https://www.nice.org.uk/guidance/ng222/chapter/Recommendations
 image: /static/images/evergreen/az-amitriptyline-for-depression.jpg
 image_alt: Amitriptyline product packaging
 image_credit: Dav77 · 2008 · Public domain · framed
 image_source: https://commons.wikimedia.org/wiki/File:Amitriptyline.JPG
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Amitriptyline for depression
 medicine_search_aliases: []
@@ -58,6 +60,16 @@ Sleepiness reflects one of the medicine’s receptor effects and may start early
 ## When to ask for help or a medication review
 
 Give the prescriber the full list of medicines, including sleep aids and products that affect heart rhythm. Severe drowsiness, collapse or suspected overdose needs emergency assessment. [HSE patient guidance](https://www2.hse.ie/medicines/amitriptyline-for-depression/)
+
+## Why the mood review and the side-effect review should be separate
+
+Amitriptyline acts on serotonin and noradrenaline transporters, but those two effects do not explain everything a person feels. Its action at histamine receptors can be felt as sleepiness quite early. Its action at muscarinic receptors can cause dry mouth, blurred vision or constipation. A person may therefore notice several strong effects before there is enough information to judge whether depression is improving. [HSE amitriptyline guidance](https://www2.hse.ie/medicines/amitriptyline-for-depression/) · [Depression treatment guideline](https://www.nice.org.uk/guidance/ng222/chapter/Recommendations)
+
+Try describing what happened in ordinary language. For example, “I fell asleep more easily, but still couldn't get out to walk in the morning” separates sleep onset from energy and function. An early side-effect review can address tolerability while the prescriber continues to assess the treatment outcome.
+
+## Why clinicians ask about heart history and other medicines
+
+Tricyclic antidepressants can affect electrical conduction in the heart, particularly in overdose. A heart rhythm history and the exact names of other prescriptions are relevant. The prescriber may also be interested in dizziness when standing, constipation or trouble passing urine. Bring a list of regular medicines, occasional sleep aids and anything bought at a pharmacy. Ask how the prescriber wants you to respond to new symptoms and how to arrange a safe review if you want to stop. [HSE amitriptyline guidance](https://www2.hse.ie/medicines/amitriptyline-for-depression/)
 
 ## Related guides
 

@@ -16,12 +16,14 @@ sources:
   url: https://www2.hse.ie/medicines/zopiclone/
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: NICE  |  Medicines associated with dependence or withdrawal symptoms
+  url: https://www.nice.org.uk/guidance/ng215/chapter/Recommendations
 image: /static/images/evergreen/az-zopiclone.jpg
 image_alt: A zopiclone medicine pack
 image_credit: Avopasia · 2023 · CC BY-SA 4.0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Zopiclone_Actavis_5mg.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Zopiclone
 medicine_search_aliases:
@@ -58,6 +60,16 @@ Record the timing, sleep pattern and related symptoms. A clinician can distingui
 ## When to ask for help or a medication review
 
 Discuss alcohol, opioids and other sedatives with the prescriber or pharmacist. If you have been taking it regularly, ask about the appropriate stopping plan. [HSE patient guidance](https://www2.hse.ie/medicines/zopiclone/)
+
+## Measure sleep and the next day's function
+
+A sleep diary can record when you went to bed, roughly when you fell asleep, and how often you woke. Add how you felt the next morning. A shorter time to fall asleep can coexist with daytime sleepiness, poor balance or memory problems. Bring any observations another person made during the night. This lets the clinician evaluate both the intended benefit and the risks. [HSE zopiclone guidance](https://www2.hse.ie/medicines/zopiclone/)
+
+## Why the course history matters when sleep worsens again
+
+Keep the dates of starting, missed doses and changes to the prescription. If sleep deteriorates around a change, the timing helps a clinician distinguish a return of the original insomnia from withdrawal or rebound effects. After regular use, ask the prescriber for a plan instead of changing or stopping the medicine yourself. [NICE dependence and withdrawal guideline](https://www.nice.org.uk/guidance/ng215/chapter/Recommendations)
+
+Bring any [opioids](/health/medicines/codeine/), [benzodiazepines](/health/medicines/diazepam/) or other sleeping medicines to a pharmacist's attention before taking them together. If another person is unusually hard to wake or breathing abnormally, seek emergency help. [HSE zopiclone guidance](https://www2.hse.ie/medicines/zopiclone/)
 
 ## Related guides
 

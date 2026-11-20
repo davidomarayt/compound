@@ -16,12 +16,14 @@ sources:
   url: https://www2.hse.ie/medicines/antidepressants/
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: NICE  |  Depression in adults
+  url: https://www.nice.org.uk/guidance/ng222/chapter/Recommendations
 image: /static/images/evergreen/az-antidepressants.jpg
 image_alt: Fluoxetine packages, examples of SSRI antidepressants
 image_credit: Anniina Järvelä · 2012 · Public domain · framed
 image_source: https://commons.wikimedia.org/wiki/File:Fluoxetine_drug_packages.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Antidepressants
 medicine_search_aliases: []
@@ -56,6 +58,16 @@ Record when it started, its severity and which part of day-to-day life it affect
 ## When to ask for help or a medication review
 
 Discuss dose changes or tapering with the prescriber. Seek urgent help if thoughts of self-harm emerge or you feel unable to stay safe. Bring other prescription, non-prescription and herbal products to the medication review. [HSE patient guidance](https://www2.hse.ie/medicines/antidepressants/)
+
+## Why the same medicine can show up on very different prescriptions
+
+Some antidepressants act on serotonin transport, others affect both serotonin and noradrenaline, and some have additional receptor effects. A GP may choose the same medicine for two people with different goals, such as improving depression symptoms or helping with a particular type of nerve pain. The expected time course and the outcomes worth tracking can differ. Your starting question should be “What is this intended to help in my case?” [HSE antidepressant guidance](https://www2.hse.ie/medicines/antidepressants/) · [Depression treatment guideline](https://www.nice.org.uk/guidance/ng222/chapter/Recommendations)
+
+## How to make a review more useful
+
+Take a before-and-after example of something that matters to you, such as getting out of bed, staying at work or taking a walk. Report side effects in a separate sentence and say when they appeared. The timing also helps if symptoms appear following a missed dose or a planned reduction. Symptoms during a change can have several explanations, including withdrawal effects and return of the original illness. Your prescriber can review the timing and make a plan for the next step. [Depression treatment guideline](https://www.nice.org.uk/guidance/ng222/chapter/Recommendations)
+
+For a closer look at different mechanisms, compare [sertraline](/health/medicines/sertraline/), [venlafaxine](/health/medicines/venlafaxine/) and [mirtazapine](/health/medicines/mirtazapine/). If you have thoughts of self-harm or feel unable to keep yourself safe, seek urgent help. [HSE antidepressant guidance](https://www2.hse.ie/medicines/antidepressants/)
 
 ## Related guides
 

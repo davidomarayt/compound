@@ -18,13 +18,15 @@ sources:
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=35f0b197-c3ae-445a-8da7-9ffcd4472e05
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: HSE  |  Steroid tablets
+  url: https://www2.hse.ie/medicines/steroid-tablets/
 image: /static/images/evergreen/az-prednisolone.jpg
 image_alt: Documentary photograph of a finger-prick blood glucose check, a monitoring issue during some systemic
   steroid treatment
 image_credit: Erik1980 · 2007 · CC BY-SA 3.0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Glucose_test.JPG
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Prednisolone
 medicine_search_aliases: []
@@ -61,6 +63,16 @@ Each product contributes differently to steroid exposure. The prescriber can use
 ## When to ask for help or a medication review
 
 Follow the prescriber’s stopping instructions and ask whether you need a steroid card or emergency advice for illness. Seek advice about severe infection symptoms or major mood changes. [HSE patient guidance](https://www2.hse.ie/medicines/prednisolone/)
+
+## The timing of the course matters for both benefit and safety
+
+Prednisolone changes the way cells respond to inflammatory and immune signals. The treatment goal may be easier breathing, less joint inflammation or another specific change. Ask what improvement the prescriber expects and what to do if symptoms persist. Since the effects are systemic, mention changes such as unexpected high blood glucose, sleep disruption or marked mood changes even if the original problem is improving. [HSE prednisolone guidance](https://www2.hse.ie/medicines/prednisolone/)
+
+## Keep a steroid timeline, including treatments from other clinics
+
+Write down the reason for each course, start and finish dates, and any instructions for stepping down. Include steroid injections and devices as relevant. Repeated or prolonged exposure can affect the body's ability to produce enough cortisol under stress. The prescriber can decide whether an illness plan or steroid card applies. If you are unsure about the instructions, ask before stopping or changing the medicine. [HSE steroid tablet guidance](https://www2.hse.ie/medicines/steroid-tablets/)
+
+Carry the record to appointments and tell the clinician about recent courses before procedures or if you become seriously unwell. A phone photo of the prescription label can be helpful if the cards and dates are otherwise hard to track.
 
 ## Related guides
 

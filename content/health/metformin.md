@@ -4,7 +4,7 @@ slug: metformin
 pillar: health
 canonical_path: /health/medicines/metformin/
 date: '2026-11-19'
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 summary: Learn how metformin lowers blood glucose, how standard and slow-release tablets differ, and what to discuss
   with your pharmacist or GP.
@@ -36,6 +36,8 @@ sources:
   url: https://www2.hse.ie/medicines/metformin/
 - title: DailyMed | Metformin Hcl Tablet (US label)
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=235680e6-1c3e-45b8-902e-866583f1aef3
+- title: MHRA  |  Metformin and reduced vitamin B12 levels
+  url: https://www.gov.uk/drug-safety-update/metformin-and-reduced-vitamin-b12-levels-new-advice-for-monitoring-patients-at-risk
 medicine_index_name: Metformin
 medicine_search_aliases:
 - Glucophage
@@ -87,6 +89,16 @@ HbA1c summarises longer-term exposure to glucose, while finger-prick measurement
 ## Why does the release formulation matter?
 
 Immediate-release and modified-release products deliver metformin at different rates. Take the exact packs to a review if stomach symptoms began after a change.
+
+## What kidney monitoring is checking
+
+Metformin is cleared through the kidneys. A kidney function result helps the clinician assess whether it is suitable at the current level of kidney function. It answers a different question from HbA1c, which reflects longer-term glucose exposure. Changes in nutrition, weight, other medicines and the underlying diabetes may also contribute to what happens to HbA1c over time. Ask which result should prompt a review and who is responsible for arranging it. [HSE metformin guidance](https://www2.hse.ie/medicines/metformin/about-metformin/)
+
+## What to raise when tiredness or tingling develops
+
+Long-term metformin use can reduce vitamin B12 levels in some people. New tiredness, tingling or a blood count change has more than one possible cause. Tell the clinician when the symptom started and how long you have taken metformin, so they can decide whether B12 and other checks are relevant. A B12 check can be useful even when blood glucose control is good. [Regulator's metformin and B12 advice](https://www.gov.uk/drug-safety-update/metformin-and-reduced-vitamin-b12-levels-new-advice-for-monitoring-patients-at-risk)
+
+If your illness affects eating or drinking, or if you have a procedure planned, ask for a written plan for that situation. Keep a note of whether you take an immediate- or modified-release product; a change in tolerance around a refill is useful information for the pharmacist. [HSE metformin guidance](https://www2.hse.ie/medicines/metformin/about-metformin/)
 
 ## Related guides
 

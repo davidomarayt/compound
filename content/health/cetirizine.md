@@ -5,7 +5,7 @@ slug: cetirizine
 pillar: health
 canonical_path: /health/medicines/cetirizine/
 date: '2026-11-19'
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 summary: 'Cetirizine is an antihistamine used for hay fever and hives. Learn how it blocks histamine signals, what to know about drowsiness and when to get help.'
 meta_description: 'An Irish adult guide to cetirizine (Zirtek), including hay fever and hives, H1 receptor blockade, drowsiness, pharmacy access and when to get help.'
@@ -27,6 +27,8 @@ sources:
   url: https://www2.hse.ie/medicines/antihistamines/
 - title: 'HSE | Anaphylaxis and emergency help'
   url: https://www2.hse.ie/conditions/anaphylaxis/
+- title: HSE  |  Allergic rhinitis
+  url: https://www2.hse.ie/conditions/allergic-rhinitis/
 ---
 
 **Cetirizine is an antihistamine that can ease sneezing, a runny nose and itchy or watery eyes caused by allergies.** It can also relieve symptoms of chronic hives. Zirtek is one brand listed in Ireland. Cetirizine can cause drowsiness in some people. [HPRA Irish product information](https://www.hpra.ie/find-a-medicine/for-human-use/authorised-medicines/details/22531) · [HSE antihistamine guide](https://www2.hse.ie/medicines/antihistamines/)
@@ -58,3 +60,13 @@ Headache, dizziness, tiredness and dry mouth are also listed. Check with a pharm
 [Browse all Common Medicines guides](/health/medicines/).
 
 *Photograph and cropped versions licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).*
+
+## Why it helps some allergy symptoms more than others
+
+Histamine signalling is prominent in itch, sneezing and hives. Cetirizine reduces the effect of histamine at H1 receptors, so these symptoms may respond even if you still have a blocked nose. Nasal blockage can reflect a broader inflammatory response. If you need advice on the next step, separate the symptoms and report which ones actually changed. A pharmacist can compare the target of cetirizine with a [nasal steroid](/health/medicines/steroid-nasal-sprays/) or another option. [HSE allergic rhinitis guidance](https://www2.hse.ie/conditions/allergic-rhinitis/)
+
+## Check alertness and the exact pack
+
+Even when a medicine is described as less sedating, the first several times you take it can reveal how you personally respond. Check the leaflet for advice on driving and alcohol. Report sleepiness separately from relief of itching or sneezing, especially if you use sleep aids or other products for colds and allergy. The pharmacist can look for duplicate antihistamines on the ingredient lists. [HSE antihistamine guidance](https://www2.hse.ie/medicines/antihistamines/)
+
+If you have kidney disease, ask whether it changes the suitability or instructions for the specific product. Bring the pack if you are using a liquid or a different strength than you used before. Hives with breathing difficulty, throat swelling or collapse needs emergency help. [HSE antihistamine guidance](https://www2.hse.ie/medicines/antihistamines/)

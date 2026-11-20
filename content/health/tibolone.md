@@ -23,7 +23,7 @@ image_alt: Archival photograph of a DXA scan in Bristol in 2011, illustrating th
 image_credit: Nick Smith photography · 2011 · CC BY-SA 3.0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:DEXA_scanner_in_use_ALSPAC.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Tibolone
 medicine_search_aliases:
@@ -61,6 +61,16 @@ The ingredient and active metabolites have distinct effects. Use comparisons fro
 ## When to ask for help or a medication review
 
 Mention unexplained bleeding and any history of stroke, blood clots or hormone-sensitive cancer. Get clinician advice on new or persistent bleeding. [HSE patient guidance](https://www2.hse.ie/medicines/tibolone/)
+
+## Why a single tablet can have several hormonal effects
+
+After it is absorbed, tibolone is converted into compounds with different hormonal activity. The balance can vary across tissues because each tissue has its own enzymes and receptors. That helps explain why findings from a trial of another HRT combination cannot be transferred to tibolone solely because the indications sound similar. Ask which evidence applies to your age, symptoms and medical history. [Irish Livial product documents](https://www.hpra.ie/find-a-medicine/for-human-use/authorised-medicines/details/23294)
+
+## Check what success looks like when the goal is bone protection
+
+A bone density result and a fracture are different measures. The patient leaflet explains the particular circumstances in which tibolone may be considered for postmenopausal osteoporosis prevention. Ask whether this is part of the reason it was prescribed or whether the main aim is relief of menopause symptoms. The answer changes what would be reviewed and how long follow-up may take. [Irish Livial product documents](https://www.hpra.ie/find-a-medicine/for-human-use/authorised-medicines/details/23294)
+
+Bring a record of new bleeding, dates of previous treatment changes and any history of stroke, blood clots or hormone-sensitive cancer. The [HRT guide](/health/medicines/hrt/) explains how product and route affect a menopause review. [HSE tibolone guidance](https://www2.hse.ie/medicines/tibolone/)
 
 ## Related guides
 

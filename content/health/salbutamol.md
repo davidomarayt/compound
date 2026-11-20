@@ -4,7 +4,7 @@ slug: salbutamol
 pillar: health
 canonical_path: /health/medicines/salbutamol/
 date: '2026-11-19'
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 summary: What a salbutamol reliever inhaler does, how it opens the airways, how it differs from a preventer and
   when breathing symptoms need urgent help.
@@ -84,6 +84,26 @@ Relief of tightness is one outcome. Frequency of symptoms, urgent visits and att
 ## Can an inhaler problem look like a medicine problem?
 
 A depleted device, technique problems or a mismatch between device and breathing pattern can affect delivery. Demonstrating actual use helps the clinician decide what needs to change.
+
+## Diagnose the delivery problem with the inhaler in your hand
+
+Two inhalers can contain the same active ingredient but require different techniques. A pressurised inhaler releases a spray when activated. Dry-powder designs rely on your inhalation to move the powder. Bring every device, including the spacer if you use one, to a pharmacist or respiratory review. Show the full sequence as you normally do it. This often provides more information than describing the instructions from memory. [HSE asthma treatment](https://www2.hse.ie/conditions/asthma/treating-asthma/)
+
+## What a record of reliever use can pick up
+
+Note which device you reach for, the circumstances, and whether relief lasts as expected. Record night waking and triggers separately. A spell of increasing reliance can help your team identify a problem with technique, medicine supply or control of the underlying disease. It is also useful to know whether the device is empty or has been changed. [HSE salbutamol guidance](https://www2.hse.ie/medicines/salbutamol-inhaler/)
+
+Compare salbutamol with the [steroid inhaler guide](/health/medicines/steroid-inhalers/). One medicine can relieve tightness while another treats airway inflammation. Follow the plan for the actual devices you have. Severe or worsening breathing difficulty needs urgent help. [HSE asthma treatment](https://www2.hse.ie/conditions/asthma/treating-asthma/)
+
+### A small record that can reveal a pattern
+
+| What happened | What to record |
+|---|---|
+| You used a reliever | Which inhaler, when, what triggered symptoms and whether relief lasted |
+| You woke at night | Time, symptoms and what happened after using your action plan |
+| You changed device or refill | Date, device name and whether anyone checked your technique |
+
+The record supports a review. Follow your personal asthma plan if symptoms worsen. [HSE asthma treatment](https://www2.hse.ie/conditions/asthma/treating-asthma/)
 
 ## Related guides
 

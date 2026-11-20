@@ -16,12 +16,14 @@ sources:
   url: https://www2.hse.ie/medicines/vaginal-oestrogen/
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: NICE  |  Menopause identification and management
+  url: https://www.nice.org.uk/guidance/ng23/chapter/Recommendations
 image: /static/images/evergreen/az-vaginal-oestrogen.jpg
 image_alt: An estriol cream
 image_credit: Lupus in Saxonia · 2021 · CC BY-SA 4.0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Estriol_(Sex_Hormone_Creme)_%E2%80%93_For_use_in_females_and_transgender_people_%E2%80%93_Cream_%E2%80%93_Image_002.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Vaginal oestrogen
 medicine_search_aliases: []
@@ -56,6 +58,16 @@ Several problems can cause similar urinary symptoms. Keep a short symptom record
 ## When to ask for help or a medication review
 
 Ask about unexplained bleeding and discuss a history of hormone-sensitive cancer or current endocrine treatment with the relevant care team. [HSE patient guidance](https://www2.hse.ie/medicines/vaginal-oestrogen/)
+
+## What local treatment is trying to improve
+
+The goal can be less dryness, irritation or discomfort with daily activities. Vaginal oestrogen acts at tissues that respond to local hormone exposure. It can improve the thickness and local environment of those tissues. Product formulation affects how it is applied and the treatment plan. Record which symptoms change and which remain bothersome, including urinary symptoms where relevant. [HSE vaginal oestrogen guidance](https://www2.hse.ie/medicines/vaginal-oestrogen/) · [Menopause guideline](https://www.nice.org.uk/guidance/ng23/chapter/Recommendations)
+
+## When the history changes the treatment discussion
+
+Persistent or unexpected bleeding needs assessment. Recurrent urinary symptoms can have other causes and may need separate investigation. If you have a history of breast cancer, especially if you are taking endocrine treatment, bring the exact prescription and discuss options with the relevant care team. Which combination is appropriate depends on the individual's history and symptoms. [Menopause guideline](https://www.nice.org.uk/guidance/ng23/chapter/Recommendations)
+
+Check whether a refill has the same form and instructions. The guide to [systemic oestrogen formulations](/health/medicines/oestrogen-tablets-patches-gel-spray/) explains why tablets, patches and gels used systemically serve a different purpose.
 
 ## Related guides
 

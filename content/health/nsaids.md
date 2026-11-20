@@ -21,7 +21,7 @@ image_alt: Several non-steroidal anti-inflammatory products including naproxen
 image_credit: Irib · 2014 · CC BY-SA 3.0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Naproxen_l%C3%A9%C4%8Div%C3%A9_p%C5%99%C3%ADpravky.JPG
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: NSAIDs
 medicine_search_aliases:
@@ -59,6 +59,16 @@ A gel and a tablet can contain medicines in the same class. The amount reaching 
 ## When to ask for help or a medication review
 
 Use a pharmacist to check interactions, especially if you take a blood thinner or a combination of a diuretic and some blood pressure medicines. Signs of gastrointestinal bleeding need urgent assessment. [HSE patient guidance](https://www2.hse.ie/medicines/nsaids/)
+
+## Follow the prostaglandin pathway beyond the painful area
+
+Prostaglandins make some pain endings more sensitive during inflammation, but they also help maintain the stomach lining and support kidney circulation in certain situations. Reducing prostaglandins can therefore improve pain while increasing the risk of bleeding or kidney problems for some people. A history of stomach ulcer, dehydration or kidney disease matters even when the intended use is brief. [HSE NSAID guidance](https://www2.hse.ie/medicines/nsaids/)
+
+## Put topical, oral and occasional treatments on the same list
+
+Write the ingredients of topical gels, period-pain tablets and cold remedies alongside regular prescriptions. Exposure from the skin is usually different from exposure after swallowing a tablet, but the ingredient and the amount of skin treated still matter. If you take an [ACE inhibitor](/health/medicines/ramipril/), a [diuretic](/health/medicines/furosemide/) or a drug that affects clotting, ask the pharmacist to check the combination before adding an NSAID. [HSE NSAID guidance](https://www2.hse.ie/medicines/nsaids/)
+
+To judge benefit, record what you could do more comfortably and how long the improvement lasted. If pain still limits the same tasks or is getting worse, ask whether it needs a different assessment. Bloody vomiting or black, tarry stools warrant urgent advice. [HSE NSAID guidance](https://www2.hse.ie/medicines/nsaids/)
 
 ## Related guides
 

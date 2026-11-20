@@ -16,12 +16,14 @@ sources:
   url: https://www2.hse.ie/medicines/sequential-combined-hormone-replacement-therapy/
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: NICE  |  Menopause identification and management
+  url: https://www.nice.org.uk/guidance/ng23/chapter/Recommendations
 image: /static/images/evergreen/az-sequential-combined-hormone-replacement-therapy.jpg
 image_alt: A progesterone product, an example of a component used in some HRT regimens
 image_credit: Tomino de WS · 2019 · CC BY-SA 4.0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Gynprodyl_200_mg_cps.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Sequential combined HRT
 medicine_search_aliases: []
@@ -56,6 +58,16 @@ Record the timing relative to the prescribed progestogen days, any missed applic
 ## When to ask for help or a medication review
 
 Ask about bleeding outside the expected pattern and protection of the womb lining. HRT schedules and contraception are separate topics to discuss with the clinician. [HSE patient guidance](https://www2.hse.ie/medicines/sequential-combined-hormone-replacement-therapy/)
+
+## Read the schedule against the purpose of each hormone
+
+A sequential plan uses a period of progestogen within the treatment cycle. Both the timing and whether the person has a uterus are relevant to how the regimen protects the womb lining. Different packs organise the sequence differently. Record which days you took the progestogen and whether it is combined in one pack or prescribed separately. A pharmacist can check the paperwork against the actual supply after a product change. [HSE sequential HRT guidance](https://www2.hse.ie/medicines/sequential-combined-hormone-replacement-therapy/) · [Menopause guideline](https://www.nice.org.uk/guidance/ng23/chapter/Recommendations)
+
+## Put bleeding on the same calendar as the treatment
+
+Mark the dates, how heavy bleeding was and how long it lasted. Note late or missed medicines and any recent change in formulation. A bleed around the expected time and bleeding that starts elsewhere in the cycle give the clinician different information. Agree when to report new, persistent or heavy bleeding and what to do if the schedule is interrupted. [Menopause guideline](https://www.nice.org.uk/guidance/ng23/chapter/Recommendations)
+
+Ask separately about contraception if it is relevant. The [continuous combined HRT guide](/health/medicines/continuous-combined-hrt/) explains why a different schedule can have different bleeding expectations.
 
 ## Related guides
 

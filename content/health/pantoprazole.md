@@ -18,12 +18,14 @@ sources:
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5f1f2694-3965-2cc7-e063-6294a90a87ed
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: NICE  |  Gastro-oesophageal reflux and dyspepsia in adults
+  url: https://www.nice.org.uk/guidance/cg184/chapter/Recommendations
 image: /static/images/evergreen/az-pantoprazole.jpg
 image_alt: An example of pantoprazole tablets
 image_credit: NLM · 2013 · Public domain · framed
 image_source: https://commons.wikimedia.org/wiki/File:Pantoprazole_20mg.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Pantoprazole
 medicine_search_aliases:
@@ -61,6 +63,16 @@ Some prescribed uses aim to protect or heal tissue rather than relieve current s
 ## When to ask for help or a medication review
 
 Discuss all other medicines and supplements with the pharmacist. Seek assessment for persistent vomiting, swallowing problems, or signs of bleeding even if acid-related symptoms seem to improve. [HSE patient guidance](https://www2.hse.ie/medicines/pantoprazole/)
+
+## Why quiet symptoms do not always settle the treatment decision
+
+Pantoprazole can be used to reduce acid-related symptoms or to protect or heal tissue in a different clinical situation. A symptom diary shows whether heartburn recurs. It cannot on its own answer whether an ulcer has healed or whether the original risk from another prescription still exists. At review, ask which outcome the clinician is trying to achieve and what would change the plan. [HSE pantoprazole guidance](https://www2.hse.ie/medicines/pantoprazole/) · [Reflux guideline](https://www.nice.org.uk/guidance/cg184/chapter/Recommendations)
+
+## Bring the exact formulation and any separate rescue products
+
+Gastro-resistant dosage forms protect the drug until it reaches a place where it can be absorbed. If swallowing or timing is difficult, show a pharmacist the packet so they can advise about that exact product. List antacids, alginates and other acid remedies you sometimes buy. Ask which treatment is meant for regular use and which one is intended for occasional symptoms. [HSE pantoprazole guidance](https://www2.hse.ie/medicines/pantoprazole/)
+
+Report difficulty swallowing, persistent vomiting, black stools or vomiting blood even if the medicine has previously relieved symptoms. The [omeprazole](/health/medicines/omeprazole/) and [antacid](/health/medicines/antacids/) guides explain the differences within and outside the proton pump inhibitor class. [Reflux guideline](https://www.nice.org.uk/guidance/cg184/chapter/Recommendations)
 
 ## Related guides
 

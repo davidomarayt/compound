@@ -16,12 +16,14 @@ sources:
   url: https://www2.hse.ie/medicines/bronchodilators/
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: HSE  |  Treating asthma
+  url: https://www2.hse.ie/conditions/asthma/treating-asthma/
 image: /static/images/evergreen/az-bronchodilators.jpg
 image_alt: Ipratropium bromide product, an example of an antimuscarinic bronchodilator
 image_credit: Intropin · 2010 · CC BY 3.0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Ipratropium_Bromide_(1).JPG
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Bronchodilators
 medicine_search_aliases: []
@@ -56,6 +58,16 @@ Their onset, duration and additional ingredients can differ. The decision about 
 ## When to ask for help or a medication review
 
 Follow the prescribed asthma or COPD plan. New or worsening severe breathlessness or failure of the emergency plan needs urgent help. A pharmacist or respiratory nurse can check how the device is being used. [HSE patient guidance](https://www2.hse.ie/medicines/bronchodilators/)
+
+## What the device changes
+
+A pressurised metered-dose inhaler releases a spray and typically needs coordination between starting to breathe and pressing the canister. Dry-powder products use the inhalation to move powder out of the device and have their own technique. A spacer can help with some devices. A demonstration with the actual inhaler can reveal problems that would be impossible to see by checking the prescription alone. [HSE asthma treatment](https://www2.hse.ie/conditions/asthma/treating-asthma/)
+
+Bronchodilators also differ on onset and duration. A fast effect can relieve airway tightness, while a long-acting medicine may be scheduled as part of ongoing treatment. Check for a second active ingredient. A combination product can also contain a steroid, which has a different target and may be part of a particular reliever-and-maintenance plan. [HSE bronchodilator guidance](https://www2.hse.ie/medicines/bronchodilators/)
+
+## The questions to answer on your written action plan
+
+Identify which device you use routinely, which one you use when symptoms worsen and who to contact if relief is less effective or shorter-lived. Bring all the devices to a review so the team can verify the instructions. Compare the separate [salbutamol](/health/medicines/salbutamol/) and [steroid inhaler](/health/medicines/steroid-inhalers/) guides to understand what each ingredient contributes. [HSE asthma treatment](https://www2.hse.ie/conditions/asthma/treating-asthma/)
 
 ## Related guides
 

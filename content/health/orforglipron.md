@@ -4,7 +4,7 @@ slug: orforglipron
 pillar: health
 canonical_path: /health/medicines/orforglipron/
 date: '2026-11-19'
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 summary: 'How the Foundayo tablet activates the GLP-1 receptor, what the trials tested and what is known about access in Ireland.'
 meta_description: 'How orforglipron (Foundayo) works, how it differs from oral semaglutide, and what US, UK and EU regulatory decisions mean for Ireland.'
@@ -27,6 +27,8 @@ sources:
   url: https://pubmed.ncbi.nlm.nih.gov/41765029/
 - title: 'Wharton et al. | ATTAIN-1 phase 3 trial, New England Journal of Medicine (2025)'
   url: https://pubmed.ncbi.nlm.nih.gov/40960239/
+- title: EMA  |  Wegovy product information
+  url: https://www.ema.europa.eu/en/documents/product-information/wegovy-epar-product-information_en.pdf
 ---
 
 **Orforglipron is the active ingredient in Foundayo, a daily prescription tablet that activates the GLP-1 receptor.** On 15 October 2026, the European Medicines Agency’s medicines committee recommended EU authorisation for weight management and type 2 diabetes in eligible adults. As of 19 November, we could verify that recommendation. We could not verify a final European Commission authorisation, a launch in the Republic of Ireland or HSE reimbursement. [EMA assessment](https://www.ema.europa.eu/en/medicines/human/EPAR/foundayo) · [European Commission register](https://ec.europa.eu/health/documents/community-register/html/index_en.htm)
@@ -57,5 +59,15 @@ The EMA identified nausea, vomiting and diarrhoea among the most common side eff
 
 - [Compare oral GLP-1 medicines in Ireland](/health/oral-glp-1-medicines-ireland/) and [read about semaglutide](/health/medicines/semaglutide/)
 - [GLP-1 side effects and when to get help](/health/glp1-side-effects-when-to-seek-help/) and [HSE reimbursement and medical card coverage](/health/glp1-hse-medical-card-ireland/)
+
+## What tablet absorption changes for the reader
+
+Orforglipron is a small molecule and activates the GLP-1 receptor after being absorbed. It does not use the same absorption-enhancing formulation as oral semaglutide. An oral product's directions can depend on how it gets into the circulation, so use the product information for the country and exact product concerned. You cannot infer the instructions for one tablet from another that acts on the same receptor. [FDA Foundayo label](https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220934Orig1s000lbl.pdf) · [EMA Wegovy information](https://www.ema.europa.eu/en/documents/product-information/wegovy-epar-product-information_en.pdf)
+
+## Separating comparisons from claims about which medicine to choose
+
+In the ACHIEVE-3 comparison, both populations and treatment had defined entry rules, including type 2 diabetes and background metformin. The researchers followed blood glucose outcomes at specified doses. The trial cannot by itself show how orforglipron compares with oral Wegovy for weight management. For that question, look for a direct comparison in the population and formulations you are interested in. [ACHIEVE-3 trial](https://pubmed.ncbi.nlm.nih.gov/41765029/)
+
+Before discussing a future prescription in Ireland, note what you would want explained: the indication, local availability, how the treatment is reviewed, and what to do if vomiting affects fluid intake. Bring any contraception, diabetes treatment and planned procedures to the discussion. [FDA Foundayo label](https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/220934Orig1s000lbl.pdf)
 
 *Cover photograph from Eli Lilly’s Foundayo digital media kit for press use, showing manufacturing laboratory testing.*

@@ -14,18 +14,20 @@ draft: false
 sources:
 - title: HSE | Levothyroxine
   url: https://www2.hse.ie/medicines/levothyroxine/
-- title: HPRA | Irish levothyroxine Summary of Product Characteristics
-  url: https://assets.hpra.ie/products/Human/43278/Licence_PA0711-354-001_01052026114633.pdf
+- title: HPRA | Eltroxin 50 microgram Irish Summary of Product Characteristics
+  url: https://assets.hpra.ie/products/Human/19816/Licence_PA1142-028-001_11112025165104.pdf
 - title: DailyMed | Levothyroxine Sodium Tablet (US label)
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1a2124e6-aea2-40dd-bb8d-52c58405a67e
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: NICE  |  Thyroid disease assessment and management
+  url: https://www.nice.org.uk/guidance/ng145/chapter/Recommendations
 image: /static/images/evergreen/az-levothyroxine.jpg
 image_alt: A levothyroxine medicine pack
 image_credit: User:Ash · 2007 · Public domain · framed
 image_source: https://commons.wikimedia.org/wiki/File:Levothyroxine_25mcg_Tablets.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Levothyroxine
 medicine_search_aliases:
@@ -42,7 +44,7 @@ Levothyroxine replaces the thyroid hormone thyroxine, also called T4. It is used
 
 ### How TSH fits into the thyroid feedback loop
 
-Tissues can convert T4 into T3, which binds nuclear receptors and alters gene expression. The pituitary responds to thyroid hormone levels by adjusting thyroid-stimulating hormone, or TSH. With common forms of primary hypothyroidism, TSH helps interpret replacement, although the approach differs in pregnancy and some pituitary conditions. [HPRA source](https://assets.hpra.ie/products/Human/43278/Licence_PA0711-354-001_01052026114633.pdf)
+Tissues can convert T4 into T3, which binds nuclear receptors and alters gene expression. The pituitary responds to thyroid hormone levels by adjusting thyroid-stimulating hormone, or TSH. With common forms of primary hypothyroidism, TSH helps interpret replacement, although the approach differs in pregnancy and some pituitary conditions. [HPRA source](https://assets.hpra.ie/products/Human/19816/Licence_PA1142-028-001_11112025165104.pdf)
 
 ## What the evidence measures
 
@@ -63,6 +65,26 @@ Some supplements affect absorption, and some can affect how a laboratory test is
 ## When to ask for help or a medication review
 
 Iron, calcium and other medicines can affect absorption. Ask about spacing, pregnancy plans and what to do after a product switch. Contact the treating team for individual interpretation of abnormal results. [HSE patient guidance](https://www2.hse.ie/medicines/levothyroxine/)
+
+## Read thyroid tests through the feedback loop
+
+TSH comes from the pituitary and is one of the signals that controls how much thyroid hormone the thyroid makes. In primary hypothyroidism, the pituitary's response helps the clinician judge treatment. In some pituitary disorders TSH may be less informative, and pregnancy can change how results should be interpreted. Keep a record of how long you have been on the current dose and formulation alongside the date of each blood test. [Thyroid guideline](https://www.nice.org.uk/guidance/ng145/chapter/Recommendations)
+
+## The timing details that can explain an unexpected result
+
+Iron, calcium, food and certain other products can affect how much levothyroxine is absorbed. A change in the routine can matter even when the strength on the prescription stays the same. Bring the actual packs and tell the clinician how you usually take them. Also mention biotin supplements because, for some laboratory methods, biotin can interfere with the test itself. These are separate questions: what entered the bloodstream and whether the laboratory could measure accurately. [Irish levothyroxine product information](https://assets.hpra.ie/products/Human/19816/Licence_PA1142-028-001_11112025165104.pdf) · [Thyroid guideline](https://www.nice.org.uk/guidance/ng145/chapter/Recommendations)
+
+Ask which results to expect at review and what to do if you become pregnant or a pharmacy changes the product. If fatigue persists, other causes may need assessment alongside thyroid tests. [HSE levothyroxine guidance](https://www2.hse.ie/medicines/levothyroxine/)
+
+### Two explanations that need different checks
+
+| What changed? | What to tell the team |
+|---|---|
+| You began taking an iron or calcium product | The exact product and the times you take it and levothyroxine |
+| You use a supplement containing biotin | The supplement name and timing before the blood sample |
+| Your pharmacy supplied another brand | Previous and current brand, when the switch happened and any new symptoms |
+
+These details help identify which question comes first: a change in absorption, a test issue or another explanation. [Thyroid guideline](https://www.nice.org.uk/guidance/ng145/chapter/Recommendations) · [Irish product information](https://assets.hpra.ie/products/Human/19816/Licence_PA1142-028-001_11112025165104.pdf)
 
 ## Related guides
 

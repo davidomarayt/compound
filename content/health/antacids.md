@@ -16,12 +16,14 @@ sources:
   url: https://www2.hse.ie/medicines/antacids/
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: NICE  |  Gastro-oesophageal reflux and dyspepsia in adults
+  url: https://www.nice.org.uk/guidance/cg184/chapter/Recommendations
 image: /static/images/evergreen/az-antacids.jpg
 image_alt: Maalox Plus, an example of an antacid product from the UK
 image_credit: Siufaiho ( talk ). · 2006 · Public domain · framed
 image_source: https://commons.wikimedia.org/wiki/File:Maalox_Plus_(UK).jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Antacids
 medicine_search_aliases: []
@@ -56,6 +58,16 @@ Temporary relief can be useful information, but response to an antacid does not 
 ## When to ask for help or a medication review
 
 Antacids can alter the absorption of other medicines. Check the particular pack and ask a pharmacist about spacing if you take regular prescriptions, especially thyroid medicine or iron. [HSE patient guidance](https://www2.hse.ie/medicines/antacids/)
+
+## Three different ways to deal with an acid symptom
+
+A neutralising antacid changes acid already in the stomach. An alginate helps form a physical barrier near the top of the stomach contents, which is useful to distinguish when the main problem is reflux into the oesophagus. A [proton pump inhibitor](/health/medicines/omeprazole/) acts on the cells that make acid, so the question it addresses and the timing of its effect are different. One pack can combine an alginate with neutralising ingredients. Read the active ingredients rather than relying on the brand or flavour. [HSE antacid guidance](https://www2.hse.ie/medicines/antacids/) · [Reflux guideline](https://www.nice.org.uk/guidance/cg184/chapter/Recommendations)
+
+## Two things to take to the pharmacist
+
+Bring the exact product label and a short record of what prompted you to use it. Include the time of day, any relation to meals, how quickly the discomfort returned, and any medicines you take regularly. Some products can affect absorption of another drug and may require spacing. A pharmacist can explain the interval for the actual product combination, especially if you take iron or thyroid replacement. [HSE antacid guidance](https://www2.hse.ie/medicines/antacids/)
+
+If the symptom keeps returning, a GP can ask whether it is really the same problem each time. Trouble swallowing, persistent vomiting, bleeding symptoms or unexplained weight loss warrant assessment even if temporary relief is possible. [Reflux guideline](https://www.nice.org.uk/guidance/cg184/chapter/Recommendations)
 
 ## Related guides
 

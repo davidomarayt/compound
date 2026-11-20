@@ -4,7 +4,7 @@ slug: paracetamol
 pillar: health
 canonical_path: /health/medicines/paracetamol/
 date: '2026-11-19'
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 summary: Paracetamol is a painkiller that also lowers fever. Learn how to check an adult dose, spot it in cold and
   flu medicines and get help if you take too much.
@@ -22,7 +22,7 @@ image_source: https://commons.wikimedia.org/wiki/File:Paracetamol_acetaminophen_
 require_pinned_hero: true
 sources:
 - title: HPRA | Paracetamol prescribing information, section 5.1
-  url: https://assets.hpra.ie/products/Human/37398/Licence_PA1986-101-001_25022025113123.pdf
+  url: https://assets.hpra.ie/products/Human/37398/Licence_PA1986-101-001_14102026173318.pdf
 - title: HSE | Paracetamol
   url: https://www2.hse.ie/medicines/paracetamol/
 - title: HPRA | Panadol Original 500 mg product documents
@@ -47,7 +47,7 @@ This guide covers adults in Ireland. Follow the instructions for your own produc
 
 **Paracetamol reduces pain and fever.** Its exact mechanism is still being studied. One finding is that it reduces the production of prostaglandins in the brain more strongly than it does in tissues outside the central nervous system. Prostaglandins are signalling molecules involved in pain and in how the body raises its temperature during a fever.
 
-The **hypothalamus**, a brain region that regulates body temperature, responds to chemical signals released during illness. Paracetamol dampens the effect of those fever signals. The evidence is less clear about which molecular pathway accounts for most of its pain relief. Its weaker effect on prostaglandin production outside the brain helps explain why it has little anti-inflammatory effect compared with [ibuprofen](/health/medicines/ibuprofen/). [HPRA prescribing information](https://assets.hpra.ie/products/Human/37398/Licence_PA1986-101-001_25022025113123.pdf)
+The **hypothalamus**, a brain region that regulates body temperature, responds to chemical signals released during illness. Paracetamol dampens the effect of those fever signals. The evidence is less clear about which molecular pathway accounts for most of its pain relief. Its weaker effect on prostaglandin production outside the brain helps explain why it has little anti-inflammatory effect compared with [ibuprofen](/health/medicines/ibuprofen/). [HPRA prescribing information](https://assets.hpra.ie/products/Human/37398/Licence_PA1986-101-001_14102026173318.pdf)
 
 ### Pain and fever signalling and hidden duplication
 
@@ -92,6 +92,16 @@ A temperature reading and comfort are different outcomes. For pain, look at chan
 ## What information helps if there may have been a double dose?
 
 Have the packs, strengths, times and estimated amounts available. Seek urgent advice and pass on anything uncertain rather than waiting for symptoms.
+
+## How to make a medicine record useful if there is a possible double dose
+
+Write the time, brand, ingredient, strength and estimated amount for each product. Include cold remedies and prescription combinations, not just the medicine you think of as paracetamol. If you cannot remember an amount, say it is uncertain rather than filling the gap with an estimate you are not confident about. Have the packaging and the record ready when you contact a healthcare professional. Suspected overdose needs urgent advice even if you feel fine. [HSE paracetamol guidance](https://www2.hse.ie/medicines/paracetamol/)
+
+## Why the first hours can be misleading
+
+The liver normally deals with a small amount of reactive by-product using glutathione. When too much paracetamol is taken, the pathways normally used to process it may be overwhelmed. The early symptoms do not reliably tell you how much injury could occur. Clinicians consider details such as the times and amounts taken and whether repeated doses were involved. Do not wait to see whether someone feels ill before asking for help. [HSE paracetamol guidance](https://www2.hse.ie/medicines/paracetamol/)
+
+For children's liquid products, keep the concentration and time in the record. The [children's paracetamol guide](/health/medicines/paracetamol-for-children/) explains how to read and record the exact product.
 
 ## Related guides
 

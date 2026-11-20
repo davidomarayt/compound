@@ -16,12 +16,14 @@ sources:
   url: https://www2.hse.ie/medicines/steroid-tablets/
 - title: HPRA | Find Irish-authorised medicines and their patient leaflets
   url: https://www.hpra.ie/find-a-medicine
+- title: HSE  |  Steroids
+  url: https://www2.hse.ie/medicines/steroids/
 image: /static/images/evergreen/az-steroid-tablets.jpg
 image_alt: Dexamethasone tablets, an example of an oral corticosteroid
 image_credit: Mx. Granger · 2023 · CC0 · framed
 image_source: https://commons.wikimedia.org/wiki/File:Dexamethasone_tablets.jpg
 require_pinned_hero: true
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 medicine_index_name: Steroid tablets
 medicine_search_aliases: []
@@ -56,6 +58,16 @@ Stopping instructions depend on the medicine, treatment history and reason for p
 ## When to ask for help or a medication review
 
 Follow your own prescribed stopping and illness instructions. Seek medical advice about possible serious infection or severe symptoms after an unsupervised change. [HSE patient guidance](https://www2.hse.ie/medicines/steroid-tablets/)
+
+## Why the ability to make cortisol matters during illness
+
+Cortisol helps the body respond to physiological stress. During sufficient exposure to a steroid tablet, the signals that normally stimulate cortisol production can be suppressed. That changes the questions to ask during serious illness or around a procedure. The relevance depends on the dose, duration, treatment history and individual situation. Ask whether you need an illness plan or a steroid card and who can clarify it if you become unwell. [HSE steroid tablet guidance](https://www2.hse.ie/medicines/steroid-tablets/)
+
+## Make a list that captures more than the current tablet
+
+Record previous courses, the condition each treated, and the stopping instructions that applied. Include other steroid treatments with dates. This can reveal repeated exposure even when there is no current prescription in the medicine list. It can also help the prescriber interpret symptoms that appear after a change. [HSE steroid guidance](https://www2.hse.ie/medicines/steroids/)
+
+Keep the instructions for your particular course with the medicine. Two people taking [prednisolone](/health/medicines/prednisolone/) may have different treatment lengths and stopping plans because their conditions and previous courses differ. Call the prescribing team if instructions are unclear rather than applying a schedule from an older prescription.
 
 ## Related guides
 

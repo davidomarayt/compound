@@ -4,7 +4,7 @@ slug: tirzepatide
 pillar: health
 canonical_path: /health/medicines/tirzepatide/
 date: '2026-11-19'
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 summary: 'Mounjaro contains tirzepatide. Learn how one molecule activates two hormone receptors, what this changes in the body and what to ask a prescriber.'
 meta_description: 'An Irish guide to how tirzepatide (Mounjaro) works, the difference between GIP and GLP-1, authorised uses and key safety questions.'
@@ -43,6 +43,16 @@ Activation of these receptors affects insulin release and blood glucose. Tirzepa
 ## What should you discuss with your prescriber?
 
 Nausea, diarrhoea and vomiting can occur. Severe, persistent abdominal pain needs urgent medical advice as it can be a sign of pancreatitis. Tell your prescriber if you use insulin or a sulfonylurea, have significant digestive symptoms, or are pregnant or planning a pregnancy. Tell your procedure team if you are due to receive general anaesthesia or deep sedation. [EMA Mounjaro product information and leaflet](https://www.ema.europa.eu/en/documents/product-information/mounjaro-epar-product-information_en.pdf)
+
+## What two receptor targets can and cannot tell you
+
+GIP and GLP-1 are signals released after food intake. Tirzepatide can activate both receptors. That makes its mechanism different from semaglutide's, but receptor counts cannot predict how much weight any person will lose or how they will tolerate treatment. Outcomes have to be read from studies in the relevant population. A study in type 2 diabetes and a weight-management study may measure different outcomes and use different background treatment. [EMA Mounjaro information](https://www.ema.europa.eu/en/documents/product-information/mounjaro-epar-product-information_en.pdf)
+
+## Which information helps when a prescriber is reviewing you?
+
+Bring why it was started, the exact product, any changes to the prescription and the timing of appetite or gastrointestinal symptoms. If you take insulin or another drug that can lower glucose, ask how the treatment plan deals with low readings. Tell the team about persistent vomiting or difficulty drinking, and about upcoming procedures involving deep sedation or anaesthesia. Severe persistent abdominal pain warrants urgent assessment. [EMA Mounjaro information](https://www.ema.europa.eu/en/documents/product-information/mounjaro-epar-product-information_en.pdf)
+
+If comparing with another product or changing treatment, check whether the plan refers to [semaglutide](/health/medicines/semaglutide/) or [liraglutide](/health/medicines/liraglutide/). These products have their own formulations, schedules and review points.
 
 ## Read more on Compound Health
 

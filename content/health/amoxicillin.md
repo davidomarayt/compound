@@ -4,7 +4,7 @@ slug: amoxicillin
 pillar: health
 canonical_path: /health/medicines/amoxicillin/
 date: '2026-11-19'
-research_checked: '2026-11-19'
+research_checked: '2026-11-20'
 editorial_review_status: pending
 summary: 'Learn why amoxicillin is prescribed, how it disrupts bacterial cell walls and what to tell your prescriber about a possible penicillin allergy.'
 meta_description: 'An Irish adult guide to amoxicillin, how it works against bacteria, when it is prescribed, common side effects and what to know about penicillin allergy.'
@@ -50,5 +50,15 @@ Follow the dose, timing and course length on your prescription. These depend on 
 Diarrhoea, nausea and a skin rash are listed as common side effects. Ask your pharmacist or prescriber if a new rash develops. Seek urgent medical advice for severe diarrhoea, especially if it contains blood or mucus, or comes with fever and stomach pain. [HPRA patient leaflet](https://assets.hpra.ie/products/Human/15319/bafe216b-4eb4-4d1c-88a1-9a724fe5072d.pdf)
 
 [Browse all Common Medicines guides](/health/medicines/).
+
+## Why a bacterial culture can change the prescription
+
+A bacterial cell needs to build and mend a wall strong enough to withstand pressure. Amoxicillin blocks proteins involved in the final cross-linking of that wall, which is particularly damaging while susceptible bacteria are growing. Some bacteria make enzymes that break open the drug's beta-lactam ring. Others change the target or resist through other means. A result showing resistance helps explain why a team might choose a different treatment even though the symptoms look similar to a previous illness. [HSE antibiotic information](https://www2.hse.ie/medicines/antibiotics/)
+
+A laboratory result is one piece of the decision. The site of infection, whether the organism in the sample is actually causing it, and the medicines the person can safely receive also matter. If a clinician changes the prescription after a test, ask which one to follow and whether the first product should be stopped. Follow the updated instructions from that clinician. [HSE antibiotic guidance](https://www2.hse.ie/medicines/antibiotics/)
+
+## Describe a reaction precisely
+
+Keep a note of the name of the drug, how soon the reaction started, what happened and whether you needed treatment. An isolated upset stomach and a rapidly developing reaction with wheezing or swelling have different implications for future prescribing. Never try to reproduce a suspected reaction yourself. Breathing difficulty, throat swelling or collapse needs emergency help. [HSE antibiotic guidance](https://www2.hse.ie/medicines/antibiotics/)
 
 *Cover photograph adapted under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).*
