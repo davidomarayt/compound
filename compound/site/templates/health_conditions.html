@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block meta %}
+<meta name="description" content="Search Ireland’s health conditions A–Z. Find symptoms, care guidance, official HSE resources and sourced Irish statistics.">
+<link rel="canonical" href="{{ site_url }}{{ conditions_url }}">
+<meta property="og:title" content="{{ title }} · Compound">
+<meta property="og:description" content="Search Ireland’s health conditions A–Z and find sourced Irish statistics.">
+<meta property="og:url" content="{{ site_url }}{{ conditions_url }}">
+{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="/static/health-conditions.css?v=1">
+<script src="/static/health-conditions.js?v=1" defer></script>
+<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "CollectionPage", "name": title, "url": site_url ~ conditions_url, "inLanguage": "en-IE", "isPartOf": {"@type": "WebSite", "name": "Compound", "url": site_url}}|tojson }}</script>
+{% endblock %}
+{% block content %}
+<div class="conditions-shell" data-conditions>
+  <nav class="condition-breadcrumb" aria-label="Breadcrumb"><a href="/health/">Health</a><span aria-hidden="true">/</span><span aria-current="page">Conditions A–Z</span></nav>
+  <header class="conditions-hero">
+    <div><h1>Health Conditions A–Z</h1><p>Search Ireland’s HSE health topics, read Compound’s condition guides and see what Irish data tells us about how common each condition is.</p></div>
+    <dl class="condition-totals"><div><dt>HSE topics</dt><dd>{{ directory.topic_count }}</dd></div><div><dt>With Irish data</dt><dd>{{ directory.evidence_count }}</dd></div></dl>
+    <div class="condition-controls" data-condition-controls hidden>
+      <label for="condition-search">Search the directory</label>
+      <input id="condition-search" type="search" placeholder="Try asthma, high blood pressure or coeliac disease" autocomplete="off">
+      <label class="condition-check"><input type="checkbox" data-condition-data> Show topics with Irish data</label>
+    </div>
+  </header>
+  {% if directory.featured %}
+  <section class="condition-featured" aria-labelledby="featured-conditions-heading">
+    <h2 id="featured-conditions-heading">Compound guides</h2>
+    <ul>{% for entry in directory.featured %}<li><a href="{{ entry.url }}">{{ entry.name }}</a></li>{% endfor %}</ul>
+  </section>
+  {% endif %}
+  <p class="condition-emergency">For a life-threatening emergency, call <a href="tel:112">112</a> or <a href="tel:999">999</a>. <a href="https://www.hse.ie/emergencies/when-to-call-112-or-999/">HSE emergency guidance</a></p>
+  <nav class="condition-alphabet" aria-label="Browse by letter">
+    {% for letter in directory.groups %}<a href="#conditions-{{ letter }}">{{ letter }}</a>{% endfor %}
+  </nav>
+  <details class="condition-method">
+    <summary>How to read the Irish figures</summary>
+    <p>Prevalence estimates how many people have a condition in a defined population and time frame. New diagnoses and notifications count events during a reporting period. Hospital and registry figures describe the people or encounters captured by those systems.</p>
+    <p>Each figure gives the population, period and original source. A missing figure means Compound has yet to verify one for this entry. The HSE index also includes symptoms, tests, treatments and services, which may have a different type of data.</p>
+    <p>Directory source <a href="https://www2.hse.ie/conditions/">HSE Health A to Z</a>. Catalogue checked <time datetime="{{ directory.checked }}">{{ directory.checked }}</time>.</p>
+  </details>
+  <p class="condition-status" role="status" data-condition-status></p>
+  {% for letter, entries in directory.groups.items() %}
+  <section class="condition-group" id="conditions-{{ letter }}" data-condition-group aria-labelledby="condition-letter-{{ letter }}">
+    <h2 id="condition-letter-{{ letter }}">{{ letter }}</h2>
+    <ul class="condition-grid">
+      {% for entry in entries %}
+      <li data-condition-entry data-has-evidence="{{ 'yes' if entry.records else 'no' }}" data-search="{{ entry.name }} {{ entry.official_url.split('/')[-2]|replace('-', ' ') }} {{ entry.guide.get('aliases', '') if entry.guide else '' }}">
+        <a class="condition-link" href="{{ entry.url }}"><strong>{{ entry.name }}</strong><span>{{ 'Compound guide' if entry.guide else 'HSE guidance ↗' }}</span></a>
+        {% if entry.records %}
+        <details><summary>Irish data <span>{{ entry.records[0].value }} · {{ entry.records[0].period }}</span></summary>{% include "_condition_evidence.html" %}</details>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+</div>
+{% endblock %}

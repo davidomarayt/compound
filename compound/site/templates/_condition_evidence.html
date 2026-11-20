@@ -1,0 +1,11 @@
+<div class="condition-evidence">
+  {% for record in entry.records %}
+  <figure>
+    <figcaption>{{ record.label }}</figcaption>
+    <strong>{{ record.value }}</strong>
+    <span class="condition-period">{{ record.population }} · {{ record.period }}</span>
+    <p>{{ record.note }}</p>
+    <a href="{{ record.citation.url }}">{{ record.citation.name }} <span>({{ record.locator }})</span></a>
+  </figure>
+  {% endfor %}
+</div>

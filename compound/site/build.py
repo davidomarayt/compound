@@ -23,6 +23,7 @@ from PIL import Image, ImageOps
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from compound.config import Settings
+from compound.site.health_conditions import CONDITIONS_URL, condition_search_entries, load_conditions
 from compound.site.finance_discovery import catalogue, source_links, write_discovery
 from compound.site.stock_names import normalise_company_names
 from compound.site.pia import load_pia_tracker, load_pia_launch_tracker
@@ -1111,6 +1112,8 @@ def build_site(settings: Settings) -> dict:
     # Consolidated company profiles supersede individual quarterly article URLs.
     articles = [a for a in all_articles if "automated-earnings" not in a.tags]
     pages = load_pages(settings.content_dir)
+    conditions = load_conditions(settings.content_dir, {article.url for article in articles})
+    conditions_url = CONDITIONS_URL if conditions else ""
     tools = load_tools(settings.content_dir)
     tools_by_slug = tool_catalogue(settings.content_dir, tools)
     # A source-backed snapshot; never manufacture programme-level allocations.
@@ -1168,6 +1171,11 @@ def build_site(settings: Settings) -> dict:
     reserved.update(f"/{p}/" for p in PILLARS)
     reserved.add(MEDICINES_HUB_URL)
     reserved.update(pg.url for pg in pages)
+    if conditions:
+        condition_urls = {CONDITIONS_URL, *(entry["url"] for entry in conditions["featured"])}
+        if conflict := reserved.intersection(condition_urls):
+            raise ValueError(f"Condition routes conflict with existing pages: {sorted(conflict)}")
+        reserved.update(condition_urls)
     if len({pg.url for pg in pages}) != len(pages):
         raise ValueError("Duplicate static page canonical routes")
     seen_urls = set(reserved)
@@ -1695,6 +1703,17 @@ def build_site(settings: Settings) -> dict:
                    oral_glp_guide=next((a for a in by_pillar["health"]
                                        if a.slug == "oral-glp-1-medicines-ireland"), None)))
 
+    if conditions:
+        _write(out / CONDITIONS_URL.strip("/") / "index.html",
+               env.get_template("health_conditions.html").render(
+                   title="Health Conditions A–Z in Ireland", pillar="health",
+                   directory=conditions, conditions_url=conditions_url))
+        for entry in conditions["featured"]:
+            _write(out / entry["url"].strip("/") / "index.html",
+                   env.get_template("health_condition.html").render(
+                       title=f'{entry["name"]} in Ireland', pillar="health",
+                       entry=entry, directory=conditions, conditions_url=conditions_url))
+
     for p in PILLARS:
         if p == "happiness":
             # Public branding moved from /happiness/ to /life/. GitHub Pages
@@ -1708,7 +1727,7 @@ def build_site(settings: Settings) -> dict:
             continue
         _write(out / PILLAR_PUBLIC_SLUGS[p] / "index.html", env.get_template("pillar.html").render(
             pillar=p, articles=by_pillar[p], title=PILLAR_LABELS[p],
-            medicines_hub_url=medicines_hub_url))
+            medicines_hub_url=medicines_hub_url, conditions_url=conditions_url))
 
     # PIA Centre: retain the existing pillar article and tool URLs as canonicals.
     # Static provider facts live in a dated primary-source tracker, not code.
@@ -2045,6 +2064,8 @@ def build_site(settings: Settings) -> dict:
                 "description": c["summary"], "image": "", "reading_minutes": 3,
                 "date_label": "Company profile",
             })
+    if conditions:
+        index[0:0] = condition_search_entries(conditions)
     _write(out / "search.json", json.dumps(index, ensure_ascii=False))
     _write(out / "search" / "index.html", env.get_template("search.html").render(title="Search", search_index=index, ads_allowed=False))
     _write(out / "feed.xml", env.get_template("feed.xml").render(articles=articles[:30]))
@@ -2133,6 +2154,12 @@ def build_site(settings: Settings) -> dict:
         (settings.site_base_url + f"/{PILLAR_PUBLIC_SLUGS[p]}/", None)
         for p in PILLARS
     )
+    if conditions:
+        sitemap_entries.append((settings.site_base_url + CONDITIONS_URL, conditions["checked"]))
+        sitemap_entries.extend(
+            (settings.site_base_url + entry["url"], conditions["checked"])
+            for entry in conditions["featured"]
+        )
     if medicine_guides:
         latest_medicine_update = max(a.research_checked or a.reviewed or a.date for a in medicine_guides)
         sitemap_entries.append((settings.site_base_url + medicines_hub_url, latest_medicine_update.isoformat()))

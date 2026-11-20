@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block meta %}
+<meta name="description" content="{{ entry.guide.summary }}">
+<link rel="canonical" href="{{ site_url }}{{ entry.url }}">
+<meta property="og:title" content="{{ title }} · Compound">
+<meta property="og:description" content="{{ entry.guide.summary }}">
+<meta property="og:url" content="{{ site_url }}{{ entry.url }}">
+{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="/static/health-conditions.css?v=1">
+<script type="application/ld+json">{{ {"@context": "https://schema.org", "@type": "MedicalWebPage", "name": title, "url": site_url ~ entry.url, "inLanguage": "en-IE", "description": entry.guide.summary, "about": {"@type": "MedicalCondition", "name": entry.name}, "publisher": {"@type": "Organization", "name": "Compound", "url": site_url}}|tojson }}</script>
+{% endblock %}
+{% block content %}
+<article class="conditions-shell condition-detail">
+  <nav class="condition-breadcrumb" aria-label="Breadcrumb"><a href="/health/">Health</a><span aria-hidden="true">/</span><a href="{{ conditions_url }}">Conditions A–Z</a><span aria-hidden="true">/</span><span aria-current="page">{{ entry.name }}</span></nav>
+  <header class="conditions-hero">
+    <div><h1>{{ entry.name }}</h1><p>{{ entry.guide.summary }}</p><small>Sources checked <time datetime="{{ directory.checked }}">{{ directory.checked }}</time></small></div>
+  </header>
+  {% if entry.guide.emergency %}<p class="condition-emergency">{{ entry.guide.emergency }} <a href="tel:112">112</a> or <a href="tel:999">999</a>.</p>{% endif %}
+  <nav class="condition-toc" aria-label="On this page"><a href="#irish-data">Irish data</a>{% for key, label in directory.sections %}<a href="#{{ key }}">{{ label }}</a>{% endfor %}</nav>
+  <section class="condition-copy" id="irish-data">
+    <h2>How common is it in Ireland?</h2>
+    {% include "_condition_evidence.html" %}
+  </section>
+  {% with slot=adsense.slots.article_top, name="article-top" %}{% include "_ad.html" %}{% endwith %}
+  {% for key, label in directory.sections %}
+  <section class="condition-copy" id="{{ key }}">
+    <h2>{{ label }}</h2>
+    {% for paragraph in entry.guide[key] %}<p>{{ paragraph }}</p>{% endfor %}
+  </section>
+  {% endfor %}
+  <section class="condition-copy">
+    <h2>Sources and further reading</h2>
+    <ul>
+      <li><a href="{{ entry.official_url }}">HSE guidance on {{ entry.name }}</a></li>
+      {% for label, target in entry.guide.get("sources", {}).items() %}<li><a href="{{ target }}">{{ label }}</a></li>{% endfor %}
+      {% for label, target in entry.guide.get("links", {}).items() %}<li><a href="{{ target }}">{{ label }}</a></li>{% endfor %}
+    </ul>
+    <p>Use this guide for general information. A clinician can advise on your individual symptoms and care.</p>
+  </section>
+  {% with slot=adsense.slots.article_bottom, name="article-bottom" %}{% include "_ad.html" %}{% endwith %}
+</article>
+{% endblock %}

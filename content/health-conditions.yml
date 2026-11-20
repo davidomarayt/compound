@@ -1,0 +1,1295 @@
+checked: 2026-11-20
+sources:
+  hpsc2025:
+    name: HPSC Infectious Disease Notifications 2020–2025
+    url: https://file.hpsc.ie/uploads/infectioncontrolandhai/surveillancereports/1787582316.pdf
+  epicc:
+    name: UCC EPICC, Chronic Disease Burden in Ireland
+    url: https://www.ucc.ie/en/media/academic/epidemiologyandpublichealth/pdfdocs/ChronicDiseaseBurdeninIreland.EPICCReport.May2022.pdf
+  healthy2019:
+    name: Department of Health, Healthy Ireland Survey 2019
+    url: https://www.drugsandalcohol.ie/31349/1/healthy.pdf
+  tilda:
+    name: TILDA, Trinity College Dublin, hypertension study
+    url: https://tilda.tcd.ie/news-events/2026/2602-New-TILDA-Research-Hypertension-Guidelines/
+  hse_chronic:
+    name: HSE National Framework for Integrated Care
+    url: https://about.hse.ie/api/v2/download-file/healthcare_professional_publications/National-framework-integrated-care-ICPCDM.pdf/
+  cfri:
+    name: Cystic Fibrosis Registry of Ireland, 2024 Annual Report
+    url: https://cfri.ie/wp-content/uploads/2025/12/CFRI-2024-Annual-Report-eISSN.pdf
+  hse_coeliac:
+    name: HSE Coeliac Disease Overview
+    url: https://www2.hse.ie/conditions/coeliac-disease/
+  diabetes_ireland:
+    name: Diabetes Ireland Annual Report 2025
+    url: https://www.diabetes.ie/wp-content/uploads/2026/09/Annual-Report-2025.pdf
+  sepsis:
+    name: HSE National Sepsis Report 2024
+    url: https://assets.hse.ie/media/documents/National_Sepsis_Report_2024.pdf
+  epilepsy:
+    name: Epilepsy Ireland, 2025 Annual Report release
+    url: https://www.epilepsy.ie/content/epilepsy-ireland-publish-2025-annual-report
+  stillbirth_cso:
+    name: CSO Vital Statistics Annual Report 2024
+    url: https://www.cso.ie/en/releasesandpublications/ep/p-vsar/vitalstatisticsannualreport2024/infantmortalitystillbirthsandmaternalmortality2024/
+  endometriosis:
+    name: HSE Parliamentary Question response 5907/25
+    url: https://www.hse.ie/eng/about/personalpq/pq/2025-pq-responses/february-2025/pq-5907-25-marie-sherlock.pdf
+  ncri_latest:
+    name: National Cancer Registry Ireland, Cancer in Ireland 1994–2023
+    url: https://www.ncri.ie/en/media/900/download
+  ncri_prevalence:
+    name: National Cancer Registry Ireland, Cancer in Ireland 1994–2022
+    url: https://www.ncri.ie/en/media/623/download
+  hse_gdm:
+    name: HSE Parliamentary Question response 1805/24
+    url: https://www.hse.ie/eng/about/personalpq/pq/2024-pq-responses/january-2024/pq-1805-24-peter-burke.pdf
+  asthma_hse:
+    name: HSE Integrated Model of Care for Asthma
+    url: https://assets.hse.ie/media/documents/National_Clinical_Programme_for_Respiratory_an_end_to_end_Model_of_Care_for_Asthma.pdf
+  copd_hse:
+    name: HSE COPD outreach announcement
+    url: https://about.hse.ie/news/more-patients-than-ever-receiving-specialist-copd-care-at-home-helping-to-avoid-hospital-admission/
+  doh2025:
+    name: Department of Health Annual Report 2025
+    url: https://assets.gov.ie/static/documents/86a93d97/DoH_Annual_Report_2025_FINAL.pdf
+  migraine_hse:
+    name: HSE Neurology Model of Care
+    url: https://www.hse.ie/eng/services/publications/clinical-strategy-and-programmes/neurology-model-of-care.pdf
+evidence:
+  polio:
+  - value: '0'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Zero notifications in the reporting year.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  botulism:
+  - value: '0'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Zero notifications in the reporting year.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  chickenpox:
+  - value: '104'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Surveillance counts hospitalised chickenpox cases only.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  chlamydia:
+  - value: 10,350
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Testing and reporting practices affect the number recorded.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  c-diff:
+  - value: 2,459
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Counts reported C. difficile infections, including cases across report classifications.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  covid19:
+  - value: 13,587
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Testing and reporting practices affect the number recorded.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  cytomegalovirus-pregnancy:
+  - value: '20'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Counts reported congenital infections. It gives no estimate of how often pregnant people acquire CMV.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  dengue-fever:
+  - value: '22'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Counts cases reported in Ireland. The total includes people who may have acquired the infection abroad.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  diphtheria:
+  - value: '0'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Zero notifications in the reporting year.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  gonorrhoea:
+  - value: 5,332
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Testing and reporting practices affect the number recorded.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  hepatitis-c:
+  - value: '454'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Annual notifications cannot show how many people currently have hepatitis C.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  genital-herpes-hsv:
+  - value: 1,916
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Testing and reporting practices affect the number recorded.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  neonatal-herpes:
+  - value: '0'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Zero notifications in the reporting year.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  hiv:
+  - value: '813'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Includes first positive tests in Ireland among people previously diagnosed abroad.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  flu:
+  - value: 38,756
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Calendar-year notifications capture only a share of all influenza infections.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  legionnaires-disease:
+  - value: '36'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: This surveillance category covers legionellosis, including Legionnaires’ disease.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  listeriosis:
+  - value: '21'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Counts cases notified to public health surveillance.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  lyme-disease:
+  - value: '4'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Irish mandatory surveillance covers Lyme neuroborreliosis. This is a subset of Lyme disease.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  lymphogranuloma-venereum-lgv:
+  - value: '56'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Testing and reporting practices affect the number recorded.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  malaria:
+  - value: '71'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Counts cases reported in Ireland, including infections acquired abroad.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  measles:
+  - value: '51'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Counts cases notified to public health surveillance.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  mpox:
+  - value: '55'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Counts cases notified to public health surveillance.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  mumps:
+  - value: '120'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Counts cases notified to public health surveillance.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  norovirus:
+  - value: 2,074
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Many people recover at home without a test. The count covers notifications only.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  whooping-cough-babies-and-children:
+  - value: '348'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Includes all ages. A separate age breakdown is needed for a figure about babies or children.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  rabies:
+  - value: '0'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Zero notifications in Ireland in the reporting year. Travel-related exposure remains possible.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  rsv:
+  - value: 7,774
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: All-age calendar-year count. Seasonal surveillance uses a different reporting period.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  shigella:
+  - value: '303'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Counts cases notified to public health surveillance.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  strep-a:
+  - value: '259'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Counts invasive infections. Routine strep throat and other non-invasive infections are outside this measure.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  group-b-strep:
+  - value: '36'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: All-age invasive cases. This measure excludes symptom-free carriage during pregnancy.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  syphilis:
+  - value: '911'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: All case classifications in this summary. STI reports that count early infectious syphilis use a narrower definition.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  tetanus:
+  - value: '0'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: Zero notifications in the reporting year.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  trichomonas-vaginalis-tv:
+  - value: '336'
+    period: 2025 (provisional)
+    population: Republic of Ireland
+    note: The HPSC expanded the case definition in 2024 to include molecular testing. Comparisons with earlier years
+      are affected.
+    source: hpsc2025
+    locator: table 1
+    measure: notifications
+  asthma:
+  - value: About 450,000
+    period: Model of care updated 2026
+    population: People with doctor-diagnosed asthma in Ireland
+    note: The HSE gives an approximate all-age count. The survey estimate shown separately uses a different population
+      and collection method.
+    source: asthma_hse
+    locator: Section 8.0
+    measure: prevalence
+  - value: 6.9%
+    period: 2019 survey, reported 2022
+    population: Adults aged 18 and over in Ireland
+    note: The 95% confidence interval was 6.1% to 7.8%.
+    source: epicc
+    locator: table 1
+    measure: prevalence
+  copd:
+  - value: About 500,000
+    period: HSE announcement published 2026
+    population: Adults with COPD in Ireland
+    note: The HSE gives an approximate count. The release does not provide a survey denominator or confidence interval.
+    source: copd_hse
+    locator: About COPD Outreach
+    measure: prevalence
+  - value: 1.8%
+    period: 2019 survey, reported 2022
+    population: Adults aged 18 and over in Ireland
+    note: The 95% confidence interval was 1.4% to 2.2%. The survey measure uses chronic lung disease.
+    source: epicc
+    locator: table 1
+    measure: prevalence
+  coronary-heart-disease-chd:
+  - value: 3.7%
+    period: 2019 survey, reported 2022
+    population: Adults aged 18 and over in Ireland
+    note: The 95% confidence interval was 3.2% to 4.2%. The study used a composite survey definition.
+    source: epicc
+    locator: table 1
+    measure: prevalence
+  stroke:
+  - value: 0.6%
+    period: 2019 survey, reported 2022
+    population: Adults aged 18 and over in Ireland
+    note: The 95% confidence interval was 0.4% to 0.8%. This survey estimate measures prevalence.
+    source: epicc
+    locator: table 1
+    measure: prevalence
+  diabetes:
+  - value: 4.6%
+    period: 2019 survey, reported 2022
+    population: Adults aged 18 and over in Ireland
+    note: The 95% confidence interval was 4.1% to 5.2%. This figure pools diabetes types.
+    source: epicc
+    locator: table 1
+    measure: prevalence
+  - value: 308,948
+    period: 2025 annual report
+    population: People living in Ireland
+    note: Diabetes Ireland gives this estimate for all diabetes types. It is an estimated population count.
+    source: diabetes_ireland
+    locator: Introduction
+    measure: prevalence
+  transient-ischaemic-attack-tia:
+  - value: 0.8%
+    period: 2019 survey, reported 2022
+    population: Adults aged 18 and over in Ireland
+    note: The 95% confidence interval was 0.5% to 1.0%.
+    source: epicc
+    locator: table 1
+    measure: prevalence
+  atrial-fibrillation:
+  - value: 1.8%
+    period: 2019 survey, reported 2022
+    population: Adults aged 18 and over in Ireland
+    note: The 95% confidence interval was 1.4% to 2.2%. The survey definition uses reported abnormal heart rhythm.
+    source: epicc
+    locator: table 1
+    measure: prevalence
+  - value: 3.2%
+    period: Framework published 2020
+    population: People aged 50 and over in Ireland
+    note: The framework reports this estimate for people aged 50 and over. Age and detection method affect the comparison
+      with general adult survey estimates.
+    source: hse_chronic
+    locator: table 1
+    measure: prevalence
+  high-blood-pressure-hypertension:
+  - value: 13%
+    period: '2019'
+    population: People aged 15 and over in Ireland
+    note: Respondents reported high blood pressure in the previous 12 months. This includes all survey ages from 15 upwards
+      and uses self-report.
+    source: healthy2019
+    locator: page 10
+    measure: prevalence
+  - value: 71%
+    period: Study published 2026
+    population: Study participants aged 50 and over in Ireland
+    note: The final wave of a 12-year study used measured blood pressure or use of blood pressure medication to identify
+      hypertension. The age group and case definition differ from the Healthy Ireland self-reported figure.
+    source: tilda
+    locator: Key findings
+    measure: prevalence
+  high-cholesterol:
+  - value: 10%
+    period: '2019'
+    population: People aged 15 and over in Ireland
+    note: Respondents reported high cholesterol in the previous 12 months. This measures self-report and can miss people
+      with raised cholesterol who have never been tested.
+    source: healthy2019
+    locator: page 10
+    measure: prevalence
+  pre-diabetes:
+  - value: 5.5%
+    period: Framework published 2020
+    population: People aged 50 and over in Ireland
+    note: The framework reports raised glucose (pre-diabetes) for this age group. Estimates depend on the population
+      and the blood glucose threshold.
+    source: hse_chronic
+    locator: table 1
+    measure: prevalence
+  cystic-fibrosis:
+  - value: 1,454
+    period: '2024'
+    population: People receiving care at Irish CF centres
+    note: The registry’s centre survey estimated 1,454 people attended for care. Of that group, 1,376 were enrolled in
+      the registry.
+    source: cfri
+    locator: Registry coverage of the CF population, page 8
+    measure: registry
+  coeliac-disease:
+  - value: About 1 in 100
+    period: HSE guidance checked November 2026
+    population: People in Ireland
+    note: The HSE gives this approximate prevalence and notes that milder cases can go undiagnosed. The page gives no
+      collection year for the estimate.
+    source: hse_coeliac
+    locator: Who is affected
+    measure: prevalence
+  type-1-diabetes:
+  - value: 30,895
+    period: 2025 annual report
+    population: People living in Ireland
+    note: Diabetes Ireland gives this estimate for type 1 diabetes. It is an estimated population count.
+    source: diabetes_ireland
+    locator: Introduction
+    measure: prevalence
+  type-2-diabetes:
+  - value: 272,904
+    period: 2025 annual report
+    population: People living in Ireland
+    note: Diabetes Ireland gives this estimate for type 2 diabetes. It is an estimated population count.
+    source: diabetes_ireland
+    locator: Introduction
+    measure: prevalence
+  sepsis:
+  - value: 12,323
+    period: '2024'
+    population: Adult, maternity and paediatric hospital cases in Ireland
+    note: Counts sepsis and septic shock recorded in the HSE report. The count covers hospital activity.
+    source: sepsis
+    locator: Executive summary
+    measure: hospital
+  epilepsy:
+  - value: About 45,000
+    period: 2025 annual report release
+    population: People living with epilepsy in Ireland
+    note: An approximate count cited by Epilepsy Ireland. The release does not give a denominator or confidence interval.
+    source: epilepsy
+    locator: Annual report release
+    measure: prevalence
+  stillbirth:
+  - value: '109'
+    period: '2024'
+    population: Stillbirths registered in Ireland
+    note: The CSO notes under-registration compared with perinatal notification data. This figure counts registered stillbirths.
+    source: stillbirth_cso
+    locator: Stillbirths
+    measure: registry
+  endometriosis:
+  - value: About 1 in 10
+    period: HSE response published 2025
+    population: Women; age range unspecified
+    note: The HSE cites this approximate frequency when discussing Irish services. The response gives no national survey
+      denominator or confidence interval.
+    source: endometriosis
+    locator: Response on National Endometriosis Framework
+    measure: prevalence
+  - value: More than 1,400
+    period: '2025'
+    population: Endometriosis-related operations in Ireland
+    note: This counts operations during the year, including activity in established specialist services.
+    source: doh2025
+    locator: Gynaecology Service Developments, page 49
+    measure: service
+  cancer:
+  - value: 230,946
+    period: 31 December 2023
+    population: People in Ireland alive after an invasive cancer diagnosis
+    note: Complete prevalence estimate for ICD-10 C00–C43 and C45–C96. It includes people living after diagnosis, including
+      people who have completed treatment.
+    source: ncri_latest
+    locator: table 5-1, page 77
+    measure: prevalence
+  - value: 26,528 per year
+    period: 2021–2023 average
+    population: Invasive cancer diagnoses in Ireland
+    note: Excludes non-melanoma skin cancer. This annual average counts new diagnoses.
+    source: ncri_latest
+    locator: Executive summary
+    measure: diagnoses
+  bowel-cancer:
+  - value: 23,696
+    period: 31 December 2023
+    population: People in Ireland alive after a colorectal cancer diagnosis
+    note: Complete prevalence estimate for ICD-10 C18–C20. It includes people living after diagnosis, including people
+      who have completed treatment.
+    source: ncri_latest
+    locator: table 5-2, page 77
+    measure: prevalence
+  pancreatic-cancer-symptoms:
+  - value: '995'
+    period: 31 December 2023
+    population: People in Ireland alive after a pancreatic cancer diagnosis
+    note: Complete prevalence estimate for ICD-10 C25. It includes people living after diagnosis, including people who
+      have completed treatment.
+    source: ncri_latest
+    locator: table 5-2, page 77
+    measure: prevalence
+  lung-cancer:
+  - value: 7,046
+    period: 31 December 2023
+    population: People in Ireland alive after a lung or bronchus cancer diagnosis
+    note: Complete prevalence estimate for ICD-10 C34. It includes people living after diagnosis, including people who
+      have completed treatment.
+    source: ncri_latest
+    locator: table 5-2, page 77
+    measure: prevalence
+  skin-cancer-melanoma:
+  - value: 16,308
+    period: 31 December 2023
+    population: People in Ireland alive after a melanoma diagnosis
+    note: Complete prevalence estimate for ICD-10 C43. It includes people living after diagnosis, including people who
+      have completed treatment.
+    source: ncri_latest
+    locator: table 5-2, page 77
+    measure: prevalence
+  breast-cancer-women:
+  - value: 49,047
+    period: 31 December 2022
+    population: Women in Ireland alive after a breast cancer diagnosis
+    note: Complete prevalence estimate for ICD-10 C50. It includes people living after diagnosis, including people who
+      have completed treatment.
+    source: ncri_prevalence
+    locator: Appendix V, page 37
+    measure: prevalence
+  - value: 4,036 per year
+    period: 2021–2023 average
+    population: Women diagnosed with breast cancer in Ireland
+    note: Average annual incidence for ICD-10 C50, as defined in the NCRI report.
+    source: ncri_latest
+    locator: Appendix I, page 89
+    measure: diagnoses
+  breast-cancer-men:
+  - value: '244'
+    period: 31 December 2022
+    population: Men in Ireland alive after a breast cancer diagnosis
+    note: Complete prevalence estimate for ICD-10 C50. It includes people living after diagnosis, including people who
+      have completed treatment.
+    source: ncri_prevalence
+    locator: Appendix V, page 37
+    measure: prevalence
+  - value: 33 per year
+    period: 2021–2023 average
+    population: Men diagnosed with breast cancer in Ireland
+    note: Average annual incidence for ICD-10 C50, as defined in the NCRI report.
+    source: ncri_latest
+    locator: Appendix I, page 89
+    measure: diagnoses
+  cervical-cancer:
+  - value: 5,329
+    period: 31 December 2023
+    population: Women in Ireland alive after a cervical cancer diagnosis
+    note: Complete prevalence estimate for ICD-10 C53. It includes people living after diagnosis, including people who
+      have completed treatment.
+    source: ncri_latest
+    locator: table 5-2, page 77
+    measure: prevalence
+  womb-cancer:
+  - value: 6,708
+    period: 31 December 2023
+    population: Women in Ireland alive after a cancer diagnosis in the body of the uterus
+    note: Complete prevalence estimate for ICD-10 C54. It includes people living after diagnosis, including people who
+      have completed treatment.
+    source: ncri_latest
+    locator: table 5-2, page 77
+    measure: prevalence
+  ovarian-cancer-overview-and-symptoms:
+  - value: 372 per year
+    period: 2021–2023 average
+    population: People diagnosed with ovarian cancer in Ireland
+    note: Average annual incidence for ICD-10 C56, as defined in the NCRI report.
+    source: ncri_latest
+    locator: Appendix I, page 89
+    measure: diagnoses
+  penile-cancer:
+  - value: 56 per year
+    period: 2021–2023 average
+    population: People diagnosed with penile cancer in Ireland
+    note: Average annual incidence for ICD-10 C60, as defined in the NCRI report.
+    source: ncri_latest
+    locator: Appendix I, page 89
+    measure: diagnoses
+  non-melanoma-skin-cancer:
+  - value: 11,078 per year
+    period: 2021–2023 average
+    population: Non-melanoma skin cancer diagnoses in Ireland
+    note: Average annual incidence for ICD-10 C44, as defined in the NCRI report.
+    source: ncri_latest
+    locator: Appendix I, page 89
+    measure: diagnoses
+  gestational-diabetes:
+  - value: 12–15%
+    period: HSE response published 2024
+    population: Pregnancies, using IADPSG criteria
+    note: The HSE says Irish Atlantic DIP research supports this range. It is an estimate using those diagnostic criteria.
+      The response explains the limits of national reporting.
+    source: hse_gdm
+    locator: Response, page 1
+    measure: prevalence
+  migraine:
+  - value: More than 500,000
+    period: Published model of care
+    population: People in Ireland
+    note: The HSE gives this approximate count in its neurology service planning document.
+    source: migraine_hse
+    locator: Neurological Conditions in Ireland
+    measure: prevalence
+guides:
+  asthma:
+    aliases: wheezing reactive airways
+    summary: Asthma makes the airways sensitive and can cause episodes of wheezing, coughing, breathlessness or chest
+      tightness. Good control reduces symptoms and the risk of an attack.
+    emergency: If someone is having a severe asthma attack, is too breathless to speak or is getting worse despite using
+      their reliever as directed in their action plan, call
+    symptoms:
+    - Symptoms may come and go. Wheezing, a tight chest, shortness of breath and a cough that wakes you at night are
+      typical. The pattern matters because examinations between episodes can be normal.
+    - Colds, pollen, exercise, smoke or cold air may bring on symptoms. What triggers one person's asthma may have little
+      effect on somebody else.
+    causes:
+    - In asthma, the lining of the airways becomes inflamed and the muscles around them can tighten. Swelling, muscle
+      tightening and mucus leave less room for air to move.
+    diagnosis:
+    - A GP reviews the pattern and may use spirometry or ask you to record peak flow over time. Changes in airflow after
+      an inhaler can help clarify the diagnosis.
+    care:
+    - Your clinician can check inhaler technique and explain when to use each inhaler. An asthma action plan sets out
+      what to do on ordinary days, when symptoms worsen and during an attack.
+    - Bring your inhalers to reviews. Night waking, avoiding exercise and increasingly frequent reliever use are worth
+      discussing even if you feel well on the day.
+    complications:
+    - Poorly controlled asthma can interfere with sleep, school, work or exercise. Attacks can come on quickly and can
+      require emergency treatment.
+    help:
+    - Arrange a GP review if symptoms recur, wake you or limit activity. Arrange prompt follow-up after an attack, even
+      if you feel better.
+    sources:
+      HSE asthma symptoms: https://www2.hse.ie/conditions/asthma/symptoms-of-asthma/
+      HSE asthma diagnosis and tests: https://www2.hse.ie/conditions/asthma/diagnosing-asthma/
+      National clinical guideline on acute asthma: https://www.hse.ie/eng/about/who/cspd/ncps/ncpr/asthma/ncec%20guideline/ncec-guideline-no-14-management-of-an-acute-asthma-attack.pdf
+    links:
+      Salbutamol inhaler guide: /health/medicines/salbutamol/
+  high-blood-pressure-hypertension:
+    aliases: hypertension raised blood pressure bp
+    summary: High blood pressure means the pressure in your arteries stays raised. Most people feel well, so measurement
+      is the way to find it.
+    symptoms:
+    - High blood pressure usually causes no symptoms. Feeling well is compatible with repeatedly high readings. Headaches
+      or dizziness have many causes and cannot tell you whether your blood pressure is high.
+    causes:
+    - The longer pressure in the arteries stays raised, the more work the heart has to do. Over time the strain can damage
+      blood vessels in the brain, kidneys and eyes.
+    - Age and family history can raise risk. A clinician may also consider kidney disease, medicines and other contributors
+      depending on your history.
+    diagnosis:
+    - Blood pressure changes during the day and with stress, activity and how it is measured. A GP may ask for readings
+      at home or arrange a 24-hour monitor to check whether it stays high.
+    - Bring the monitor or readings to your appointment. Ask what readings apply in your case and whether your cuff fits
+      properly.
+    care:
+    - Treatment can include changes such as eating less salt and being more physically active. Whether medicine is advised
+      depends on repeated readings, other health conditions and your overall risk of events such as stroke.
+    - Ask your GP or pharmacist what your tablets do and how your pressure and any relevant blood tests will be followed
+      up.
+    complications:
+    - High blood pressure increases the risk of stroke, heart disease, kidney damage and some eye problems. Identifying
+      it and treating it early helps reduce long-term risk.
+    help:
+    - Arrange a check with your GP, practice nurse or a pharmacy that offers checks. Contact your GP about repeatedly
+      high readings. Follow your maternity team's advice if you are pregnant, as raised blood pressure in pregnancy needs
+      separate assessment.
+    sources:
+      HSE hypertension treatment: https://www2.hse.ie/conditions/high-blood-pressure-hypertension/treatment/
+    links:
+      What helps lower blood pressure: /health/lower-blood-pressure-naturally-what-works/
+  high-cholesterol:
+    aliases: raised cholesterol hypercholesterolaemia ldl lipid
+    summary: High cholesterol usually comes to light on a blood test. The result helps your GP assess your overall risk
+      of a heart attack or stroke.
+    symptoms:
+    - Raised cholesterol usually causes no symptoms. Some people first learn about it after a cardiovascular event or
+      when a blood test is done for another reason.
+    causes:
+    - Cholesterol circulates in particles called lipoproteins. Higher levels of LDL cholesterol can contribute to a build-up
+      of plaque in artery walls. Over time this can restrict blood flow or lead to a sudden blockage.
+    - Inherited factors can have a major effect. Tell your GP if close relatives had a heart attack or stroke unusually
+      young or have been told they have familial hypercholesterolaemia.
+    diagnosis:
+    - A blood test can measure different components, including LDL cholesterol, HDL cholesterol and triglycerides. The
+      interpretation depends on why the test was done and your wider cardiovascular history.
+    - A GP may consider your age, smoking, blood pressure and diabetes status alongside your result. A single total cholesterol
+      value cannot give the whole risk picture.
+    care:
+    - Treatment can include dietary changes and medicines such as statins. The potential benefit depends partly on your
+      starting risk, so ask what the result means for you and when to repeat the test.
+    complications:
+    - Cholesterol-related plaque can contribute to coronary heart disease, stroke and problems with circulation in the
+      legs.
+    help:
+    - Speak to your GP if a test shows a high result, or if early heart disease runs in your family. Bring the full set
+      of results if they were taken elsewhere.
+    sources:
+      HSE cholesterol diagnosis: https://www2.hse.ie/conditions/high-cholesterol/diagnosis/
+    links:
+      What lowers LDL cholesterol: /health/how-to-lower-cholesterol-what-moves-ldl/
+      Statins and cardiovascular risk: /health/medicines/statins/
+  coeliac-disease:
+    aliases: celiac gluten enteropathy
+    summary: Coeliac disease is an immune reaction to gluten that damages the lining of the small bowel. It can cause
+      digestive symptoms, tiredness or nutrient deficiencies.
+    symptoms:
+    - Possible signs include diarrhoea, bloating, stomach pain, weight loss or persistent fatigue. In children, poor
+      growth can be a clue. Some people have few obvious digestive symptoms.
+    causes:
+    - Gluten proteins in wheat, barley and rye trigger an immune response in people with coeliac disease. It can damage
+      the villi, the tiny structures that absorb nutrients from food.
+    - A close family history raises the likelihood. Symptoms can overlap with irritable bowel syndrome, making it useful
+      to test before making a permanent change to your diet.
+    diagnosis:
+    - A GP can arrange a blood test and may refer you to a specialist for further testing. Whether a biopsy is needed
+      depends on your situation and the diagnostic pathway.
+    - Keep eating gluten while you discuss testing with your GP. Starting a gluten-free diet before testing can affect
+      the results. If you already avoid gluten, ask about your options before changing your diet again.
+    care:
+    - A lifelong gluten-free diet is the main treatment after diagnosis. A dietitian can help you spot hidden sources,
+      reduce cross-contact and plan meals with enough fibre, iron and other nutrients.
+    complications:
+    - Ongoing bowel damage can contribute to iron deficiency anaemia and weaker bones. Follow-up can help identify nutritional
+      problems even if stomach symptoms improve.
+    help:
+    - Ask your GP about testing if bowel symptoms persist, you have unexplained anaemia or a close relative has coeliac
+      disease. Mention if a child is losing weight or growing more slowly than expected.
+  cystic-fibrosis:
+    aliases: cf cftr
+    summary: Cystic fibrosis is an inherited condition that can affect the lungs and digestion. In Ireland, specialist
+      cystic fibrosis centres coordinate regular care.
+    symptoms:
+    - Signs can include a long-lasting cough, repeated chest infections, difficulty gaining weight or bulky, greasy stools.
+      The combination and severity vary from one person to another.
+    causes:
+    - Variants in the CFTR gene affect how salt and water move across cell surfaces. Secretions in the lungs and digestive
+      system can become thicker. Mucus can be harder to clear from the airways and digestive enzymes may have difficulty
+      reaching the bowel.
+    diagnosis:
+    - Newborn bloodspot screening can identify babies who need further tests. A sweat chloride test and genetic testing
+      can help confirm a diagnosis. A clinician may also investigate someone who develops suggestive symptoms later.
+    care:
+    - Care can involve airway clearance, treatment for chest infections and pancreatic enzymes where needed. Some people
+      can take CFTR modulators, which target the underlying protein problem. Suitability depends on each person's gene
+      variants and clinical circumstances.
+    - A specialist team can coordinate physiotherapy, nutrition, lung monitoring and transition from paediatric to adult
+      care.
+    complications:
+    - Repeated chest infections can damage the lungs. Some people develop nutrition problems, CF-related diabetes or
+      complications affecting other organs, which the CF team monitors.
+    help:
+    - If you have CF, ask your centre whom to contact if your cough changes, your breathing worsens or you develop fever.
+      If a baby has been referred after newborn screening, attend the follow-up even if the baby seems well.
+  endometriosis:
+    aliases: endo pelvic pain painful periods
+    summary: Endometriosis can cause pelvic pain, painful periods or difficulties getting pregnant when tissue similar
+      to the womb lining grows elsewhere.
+    symptoms:
+    - Common symptoms include pelvic pain, periods that disrupt daily life, pain deep during or after sex and pain when
+      opening your bowels or passing urine, particularly around a period. Some people have difficulty becoming pregnant.
+    - A diary can record the timing, what makes the pain worse and how it affects sleep, work, school or exercise. Pain
+      can have other causes as well.
+    causes:
+    - Tissue similar to the lining of the womb can grow outside it, often around the ovaries or elsewhere in the pelvis.
+      It can cause inflammation and sometimes scarring or ovarian cysts.
+    diagnosis:
+    - A GP can assess symptoms and may arrange an examination, ultrasound or onward referral. A normal scan can miss
+      some forms of endometriosis, so ongoing symptoms still deserve assessment.
+    - Your GP can discuss starting treatment while the assessment continues. Some people need a specialist evaluation
+      or keyhole surgery.
+    care:
+    - Options include pain relief, hormonal treatment and, for some people, surgery. The best fit depends on symptoms,
+      preferences and whether trying to get pregnant is a priority.
+    complications:
+    - Pelvic pain can affect work, relationships and wellbeing. Endometriosis can also make it harder to conceive, although
+      many people with the condition do become pregnant.
+    help:
+    - Speak to your GP if pain interferes with ordinary activities or treatment has not helped. Bring your symptom diary
+      and explain if fertility is a concern.
+    sources:
+      HSE National Framework for the Management of Endometriosis: https://about.hse.ie/publications/a-national-framework-for-the-management-of-endometriosis-in-ireland/
+  epilepsy:
+    aliases: seizures fits
+    summary: Epilepsy is a neurological condition that causes a tendency to have repeated seizures. Some seizures involve
+      staring or confusion, while others cause falls or shaking.
+    emergency: If it is a first seizure, lasts longer than five minutes, another follows without recovery, or the person
+      is seriously injured or has trouble breathing, call
+    symptoms:
+    - The signs depend on where abnormal electrical activity starts and how far it spreads. Someone may stare, become
+      confused, experience unusual sensations or develop stiffening and jerking.
+    - Recovery also varies. The person may be tired, confused or have limited memory of the event afterwards.
+    causes:
+    - Seizures arise from a temporary disruption in the brain's electrical activity. Epilepsy can have a genetic, structural
+      or other cause. Sometimes the cause remains unknown after investigation.
+    diagnosis:
+    - A detailed description from the person or a witness can help. A specialist may use an EEG to record brain activity
+      and may arrange imaging. A clinician evaluates possible causes, since fainting and some other conditions can resemble
+      a seizure.
+    care:
+    - Anti-seizure medicines reduce seizures for many people. Treatment and safety planning depend on the seizure type
+      and circumstances. Ask the epilepsy team about medicine reviews, driving rules and what to do when a seizure occurs.
+    complications:
+    - Seizures can lead to injury or affect daily activities. A seizure that continues or repeats without recovery is
+      an emergency.
+    help:
+    - During a convulsive seizure, time it, move hazards away, protect the person's head and stay with them. Avoid holding
+      them down or placing anything in their mouth. Follow their individual care plan if one is available.
+    sources:
+      Epilepsy Ireland seizure first aid: https://www.epilepsy.ie/content/seizure-first-aid
+  stroke:
+    aliases: cva brain attack fast
+    summary: A stroke happens when blood flow to part of the brain is blocked or when bleeding occurs in the brain. Getting
+      emergency help quickly can affect the outcome.
+    emergency: For sudden face drooping, arm weakness, speech difficulty or another suspected stroke symptom, call
+    symptoms:
+    - Think FAST. Check for sudden changes to the face, difficulty lifting an arm, or slurred or confused speech. Time
+      matters. Sudden vision changes, balance problems or weakness on one side can also occur.
+    - Symptoms that clear quickly still need emergency assessment, as a transient ischaemic attack can have the same
+      signs.
+    causes:
+    - An ischaemic stroke occurs when a blockage interrupts blood flow. A haemorrhagic stroke involves bleeding. In both,
+      brain cells can be injured and the treatment depends on the cause.
+    diagnosis:
+    - A hospital team examines symptoms and uses a brain scan to distinguish bleeding from a blockage. Blood tests, heart
+      rhythm checks and further scans can help identify why it happened.
+    care:
+    - Some people with an ischaemic stroke can receive urgent treatment to dissolve or remove a clot. The stroke team
+      uses scan findings, time since onset and clinical information to make this decision.
+    - Rehabilitation may help with movement, speech, swallowing and everyday tasks. The team also looks at how to lower
+      the risk of another stroke.
+    complications:
+    - Effects vary and can include changes to strength, sensation, language, vision, memory or swallowing. Recovery differs
+      by person and can continue well beyond the hospital stay.
+    help:
+    - Call emergency services when symptoms start. If you know when the person was last well, tell the ambulance team.
+      Seek help again if symptoms recur.
+    sources:
+      Irish National Audit of Stroke: https://www.noca.ie/audits/irish-national-audit-of-stroke/
+  sepsis:
+    aliases: septic shock blood poisoning
+    summary: Sepsis is a medical emergency in which the body's response to an infection starts to damage its own tissues
+      or organs.
+    emergency: If someone may have sepsis or is deteriorating rapidly with an infection, call
+    symptoms:
+    - Warning signs can include new confusion, severe breathlessness, passing very little urine, cold or mottled skin,
+      or feeling unusually and severely unwell. Signs in babies and children can differ from adults.
+    - A person can have sepsis without a high temperature. Take a rapid deterioration, or somebody becoming hard to wake,
+      seriously.
+    causes:
+    - Sepsis can develop from infections such as pneumonia, a urinary infection or an infection of the skin. The response
+      to infection can affect circulation and prevent organs getting enough blood and oxygen.
+    diagnosis:
+    - There is no single home test for sepsis. Clinicians assess symptoms, vital signs and blood tests and look for the
+      source of infection. Other tests depend on the person's condition.
+    care:
+    - Hospital treatment can include antibiotics when bacterial infection is suspected, fluid through a vein, oxygen
+      when needed and treatment of the infection's source. Some people need intensive care or other organ support.
+    complications:
+    - Sepsis can cause organ failure and can be fatal. Recovery can involve persistent tiredness, weakness or problems
+      with concentration. Ask your clinical team about follow-up if symptoms continue after discharge.
+    help:
+    - If someone with an infection is getting much worse, say clearly that you are worried about sepsis. Tell emergency
+      staff about the infection, recent surgery or treatment and when the change began.
+    links:
+      Ireland’s sepsis strategy and warning signs: /news/ireland-sepsis-strategy-warning-signs-2026/
+  copd:
+    aliases: chronic obstructive pulmonary disease emphysema chronic bronchitis
+    summary: Chronic obstructive pulmonary disease causes long-term airflow limitation. Breathlessness with ordinary
+      activity and a persistent cough are common clues.
+    emergency: If someone is struggling to breathe, cannot speak because of breathlessness or has blue or grey lips,
+      call
+    symptoms:
+    - Common symptoms include increasing breathlessness on exertion, a persistent cough with phlegm, wheeze and repeated
+      chest infections.
+    - A flare-up is a change from your usual symptoms, such as becoming much more breathless or producing more phlegm
+      than normal.
+    causes:
+    - COPD can involve damage to the tiny air sacs or long-term inflammation in the airways. This makes it harder to
+      breathe air out. Tobacco smoke is a major risk factor. Workplace dust, fumes and some inherited conditions can
+      also contribute.
+    diagnosis:
+    - A GP reviews symptoms and exposure history and may arrange spirometry, a test that measures how much and how quickly
+      you can breathe air out. Other tests can help investigate alternative explanations.
+    care:
+    - If you smoke, your clinician can offer support to quit. Depending on symptoms, treatment may also include inhalers,
+      vaccination advice and pulmonary rehabilitation.
+    - A written flare-up plan can spell out when to contact the GP or respiratory team. Ask someone to check your inhaler
+      technique before assuming a prescribed inhaler is failing.
+    complications:
+    - Flare-ups can require hospital care. Persistent symptoms can make daily activities harder and limit exercise. Rehabilitation
+      can help people build confidence with activity and manage breathlessness.
+    help:
+    - Book a GP assessment if you have ongoing breathlessness or a cough that persists. If you have COPD and your breathing
+      changes suddenly, follow your action plan and contact your clinical team promptly.
+  atrial-fibrillation:
+    aliases: af afib irregular heartbeat arrhythmia
+    summary: Atrial fibrillation is an irregular heart rhythm that can cause palpitations and raise the risk of stroke.
+      Some people only discover it during a pulse or heart rhythm check.
+    emergency: If someone has signs of stroke, such as sudden facial droop, arm weakness or difficulty speaking, call
+    symptoms:
+    - Some people notice a racing or irregular heartbeat, breathlessness, fatigue or dizziness. Others have no symptoms.
+      Episodes can come and go, so it helps to record when symptoms occur and how long they last.
+    causes:
+    - The upper chambers of the heart receive disorganised electrical signals. The heartbeat becomes irregular and may
+      be fast. Blood can pool in part of the heart, where a clot can form and travel to the brain.
+    diagnosis:
+    - An ECG records the electrical rhythm. A clinician may arrange a longer recording if episodes are brief or intermittent.
+      Other tests may look for underlying contributors, such as thyroid problems.
+    care:
+    - Your clinician may look at how to control the rate or restore the rhythm and will assess your risk of stroke and
+      bleeding. An anticoagulant can reduce stroke risk for people who are likely to benefit.
+    - Treatment discussions can cover rhythm procedures, what to do if symptoms recur and how to take medicines safely.
+      A home device reading can help start a conversation with your GP.
+    complications:
+    - Atrial fibrillation increases the risk of stroke. Persistent high heart rates can also strain the heart. Some people
+      continue to have symptoms that affect activity even when they're taking treatment.
+    help:
+    - Ask your GP about a pulse and rhythm check if you repeatedly notice a racing or irregular heartbeat. If palpitations
+      come with suspected heart attack or stroke symptoms, seek emergency help.
+  type-1-diabetes:
+    aliases: t1d insulin-dependent diabetes dka juvenile diabetes
+    summary: In type 1 diabetes the body makes little or no insulin. It needs prompt diagnosis and lifelong insulin treatment.
+    emergency: For suspected diabetic ketoacidosis with vomiting, severe drowsiness or unusual deep or rapid breathing,
+      call
+    symptoms:
+    - Drinking much more, passing urine more often, losing weight without trying and feeling extremely tired are common
+      signs. Symptoms can build up quickly, especially in children.
+    causes:
+    - The immune system attacks the insulin-producing cells in the pancreas. Without enough insulin, glucose builds up
+      in the blood and the body starts to use fat for energy, producing substances called ketones.
+    diagnosis:
+    - A GP can check blood glucose quickly when type 1 diabetes is suspected and arrange urgent hospital assessment if
+      needed. The specialist team may check ketones and use additional tests to clarify the diabetes type.
+    care:
+    - People with type 1 diabetes need insulin. The diabetes team helps plan insulin, glucose monitoring, meals, activity
+      and how to respond to low blood glucose.
+    - Ask your team for a written sick-day plan and guidance on when to check ketones. Illness can change glucose and
+      insulin requirements.
+    complications:
+    - Too little insulin can lead to diabetic ketoacidosis, an emergency. Insulin treatment can also lead to episodes
+      of low blood glucose. Over time, monitoring and treatment help protect the eyes, kidneys, nerves and blood vessels.
+    help:
+    - Contact a GP urgently if you suspect new type 1 diabetes. If you already have it and your glucose or ketones rise,
+      use your sick-day plan and contact the diabetes team when directed.
+    sources:
+      HSE advice on diabetic ketoacidosis: https://www2.hse.ie/conditions/type-1-diabetes/blood-glucose/ketones-and-diabetic-ketoacidosis-dka/
+  type-2-diabetes:
+    aliases: t2d diabetes glucose hba1c
+    summary: Type 2 diabetes develops when the body cannot use insulin effectively or cannot make enough to keep blood
+      glucose in a healthy range.
+    symptoms:
+    - Thirst, frequent urination, tiredness, blurred vision and slow-healing cuts can occur. Symptoms often build gradually
+      and some people first find out through a routine blood test.
+    causes:
+    - Insulin normally helps move glucose from the blood into cells. In type 2 diabetes, tissues respond less efficiently
+      to insulin and the pancreas may not keep up. Family history, age and a history of gestational diabetes can increase
+      risk.
+    diagnosis:
+    - A GP can arrange a blood test. HbA1c is one test used to assess average glucose over recent months. You may need
+      another test to confirm the result, depending on symptoms and the result.
+    care:
+    - Treatment can include changes to diet and activity, medicines and regular monitoring. A care team considers your
+      preferences and conditions such as kidney or heart disease when discussing options.
+    - Ask when to have your eyes, feet, kidneys and blood pressure checked. A plan should cover follow-up even when you
+      feel well.
+    complications:
+    - Over time, raised glucose can damage blood vessels and nerves. Heart, kidney, eye and foot problems can develop,
+      which is why follow-up covers more than glucose alone.
+    help:
+    - Speak to your GP if you have symptoms or were told you have pre-diabetes. If you already have diabetes and notice
+      a new foot wound or infection, contact your care team promptly.
+  migraine:
+    aliases: migraine with aura migraine headache
+    summary: Migraine is a neurological condition that causes recurring attacks. Head pain, nausea and sensitivity to
+      light or sound are common, and some people experience aura.
+    emergency: If a headache reaches severe intensity suddenly, or comes with new facial droop, weakness or difficulty
+      speaking, call
+    symptoms:
+    - An attack may bring moderate or severe head pain, sometimes on one side. Moving around may make the pain worse
+      and ordinary sound or light may feel difficult to tolerate.
+    - Some people have aura, such as flashing lights or changes in vision. Other people have migraine attacks without
+      aura.
+    causes:
+    - Migraine involves changes in how the brain and nerves process signals, including pain and sensory information.
+      It can run in families. Irregular sleep, missed meals or hormonal changes may be associated with attacks in some
+      people.
+    diagnosis:
+    - A GP usually starts with the pattern of symptoms and a neurological examination. Keeping a diary of timing, symptoms,
+      duration and medicines can help.
+    care:
+    - Your GP can discuss medicines to take during an attack and whether preventive treatment is suitable. Bring a list
+      of the medicines you use, including over-the-counter pain relief and how often you take it.
+    - Keeping meals, hydration and sleep relatively regular may help some people manage their attacks.
+    complications:
+    - Frequent migraine can interfere with work, study, sleep and family responsibilities. Frequent use of some acute
+      medicines can contribute to medication-overuse headache.
+    help:
+    - Speak to your GP if headaches recur, are becoming harder to manage or begin to follow a different pattern. New
+      sudden neurological symptoms need emergency assessment even when you have a history of migraine.
+  norovirus:
+    aliases: winter vomiting bug stomach bug
+    summary: Norovirus commonly causes sudden vomiting and diarrhoea. It spreads easily, so recovering at home and taking
+      care with handwashing can help protect others.
+    symptoms:
+    - The illness often begins with nausea, vomiting or watery diarrhoea. Some people also have stomach cramps, aches
+      or fever. Most people recover within a few days.
+    causes:
+    - The virus can pass from person to person and via surfaces, food or water. It can spread readily in households and
+      other shared settings.
+    diagnosis:
+    - The pattern of symptoms often guides care. A clinician may arrange a sample where the cause needs clarification,
+      for example when investigating an outbreak.
+    care:
+    - Take small, frequent sips if you are vomiting. A pharmacist can advise about oral rehydration products. Wash hands
+      with soap and water and clean contaminated surfaces.
+    - Follow HSE advice to stay away from work or school until at least 48 hours after symptoms stop. Avoid visiting
+      hospitals or care homes during that period.
+    complications:
+    - The main concern is dehydration, particularly in babies, older adults and people with other health problems. Watch
+      for passing less urine, or fewer wet nappies in a baby.
+    help:
+    - Contact a GP if you cannot keep fluids down, notice signs of dehydration, have blood in your stool or are concerned
+      about a baby or a vulnerable adult.
+  measles:
+    aliases: rubeola mmr rash
+    summary: Measles is a highly contagious viral illness that can cause fever, cough and a rash. Phone ahead if you
+      think you or your child may have it.
+    symptoms:
+    - Signs often begin with a fever, cough, runny nose or sore red eyes. The rash typically starts on the face or head
+      before spreading down the body. It can be more difficult to see on darker skin.
+    causes:
+    - The measles virus spreads through the air when someone with the infection breathes, coughs or sneezes. Measles
+      can spread before the rash appears.
+    diagnosis:
+    - A clinician asks about symptoms, vaccination, travel and possible exposure. Testing can confirm measles and helps
+      public health teams respond to cases.
+    care:
+    - Care focuses on symptoms and monitoring for complications. Stay away from others and follow isolation advice from
+      your clinician or public health team. The MMR vaccine helps prevent measles.
+    complications:
+    - Measles can cause ear infections, pneumonia and, more rarely, inflammation of the brain. Babies, pregnant people
+      and people with weakened immune systems may need particular advice after exposure.
+    help:
+    - Phone your GP before visiting if you suspect measles. Let them know if anyone exposed is pregnant, is a baby or
+      has a weakened immune system. If someone becomes severely breathless or very difficult to wake, call emergency
+      services.
+  transient-ischaemic-attack-tia:
+    aliases: mini stroke mini-stroke transient ischemic attack
+    summary: A transient ischaemic attack causes sudden stroke-like symptoms that resolve. It can be an early warning
+      of a future stroke and needs emergency assessment.
+    emergency: If you notice sudden face drooping, arm weakness or problems speaking, even if the symptoms have stopped,
+      call
+    symptoms:
+    - Signs can include sudden weakness or numbness on one side, a drooping face, speech difficulty or loss of vision.
+      Symptoms can clear before help arrives.
+    causes:
+    - A temporary interruption of blood flow to part of the brain produces symptoms. An underlying cause could be disease
+      in the blood vessels or a clot associated with a heart rhythm problem such as atrial fibrillation.
+    diagnosis:
+    - The team takes a history of exactly what happened and when. They may use brain or blood vessel imaging, heart rhythm
+      tests and blood tests to investigate the cause.
+    care:
+    - The treatment plan depends on the cause. The team may prescribe medicine to help prevent clots, treat blood pressure
+      or cholesterol, or investigate whether a procedure could help.
+    complications:
+    - A TIA often leaves no lasting symptoms, but the risk of stroke can be higher soon afterwards. Fast assessment gives
+      clinicians the opportunity to start preventive treatment.
+    help:
+    - Seek emergency help even when the person feels well again. Note when symptoms began and when they resolved. If
+      you already have a care plan, report new symptoms as an emergency.
+  coronary-heart-disease-chd:
+    aliases: ischemic heart disease coronary artery disease cad chd
+    summary: Coronary heart disease develops when the arteries supplying the heart become narrowed. It can cause angina
+      or lead to a heart attack.
+    emergency: If you suspect a heart attack, including new pressure or tightness in the chest with breathlessness, sweating
+      or pain spreading to an arm or jaw, call
+    symptoms:
+    - Symptoms can include chest pressure, tightness or breathlessness during exertion. Angina can sometimes feel like
+      discomfort in the arm, jaw, neck or back. The pattern varies between people.
+    causes:
+    - Atherosclerosis happens when plaque builds up in artery walls. It can reduce blood flow when the heart needs more
+      oxygen, for example during exercise. If plaque ruptures and a clot forms, blood flow may stop suddenly.
+    diagnosis:
+    - A GP or hospital team reviews symptoms and risk factors. Tests may include an ECG, blood tests and imaging to assess
+      how blood flows to the heart.
+    care:
+    - Care can include medicines, support to stop smoking, activity advice or a procedure to improve blood flow. Ask
+      your clinician how to manage symptoms and how to reduce the risk of a future heart attack.
+    complications:
+    - A heart attack can damage the heart muscle. Coronary disease can also contribute to changes in heart rhythm, heart
+      failure and reduced exercise capacity.
+    help:
+    - Tell your GP about recurring discomfort or breathlessness on exertion. Seek emergency help if there are suspected
+      heart attack symptoms or a sudden and severe change.
+  pre-diabetes:
+    aliases: prediabetes impaired glucose tolerance impaired fasting glucose
+    summary: Pre-diabetes means your blood glucose is higher than expected but below the range used to diagnose diabetes.
+      It identifies an increased risk of type 2 diabetes.
+    symptoms:
+    - Most people have no obvious symptoms and find out after a blood test. Tell your GP if you develop unusual thirst,
+      frequent urination or unexplained weight loss, since other assessments may be needed.
+    causes:
+    - Blood glucose can rise when tissues become less responsive to insulin or the pancreas cannot produce enough to
+      compensate. Family history, age and previous gestational diabetes can increase risk.
+    diagnosis:
+    - A GP can interpret tests such as HbA1c, which reflects average glucose over recent months. The interpretation depends
+      on the test used and individual circumstances.
+    care:
+    - A realistic plan often starts with changes to activity and food that you can sustain. Ask your GP whether a programme
+      is available in your area and when to repeat your blood test.
+    complications:
+    - Some people with pre-diabetes go on to develop type 2 diabetes, while others return to a lower glucose range. A
+      GP may also review blood pressure, cholesterol and smoking because they affect cardiovascular risk.
+    help:
+    - Arrange follow-up after a result in the pre-diabetes range. Bring previous results when you can, and contact your
+      GP sooner if new symptoms develop.
+  bowel-cancer:
+    aliases: colorectal cancer colon cancer rectal cancer
+    summary: Bowel cancer usually means cancer of the colon or rectum. Bleeding, changes in bowel habits and unexplained
+      anaemia are reasons to speak to a GP.
+    symptoms:
+    - Possible signs include blood in or on your stool, a lasting change in how often you go to the toilet, unexplained
+      weight loss or abdominal pain. Some people have fatigue because of anaemia.
+    - These signs can have other causes. New symptoms that last or keep returning deserve assessment even if they are
+      mild.
+    causes:
+    - Bowel cancer starts when cells in the colon or rectum grow out of control. Some cancers develop from growths called
+      polyps. The likelihood rises with age, and family history can change your risk.
+    diagnosis:
+    - A GP asks about symptoms and medical and family history, and may arrange an examination or tests. If bowel cancer
+      is suspected, a specialist may examine the bowel with a colonoscopy and take a sample to test.
+    - BowelScreen is a screening programme for people in eligible groups. If you have symptoms, contact a GP even if
+      you recently had a screening test or are waiting for an invitation.
+    care:
+    - Treatment depends on where the cancer is, whether it has spread and your health and preferences. It can involve
+      surgery, medicines and, for some rectal cancers, radiotherapy.
+    complications:
+    - A tumour can bleed or sometimes obstruct the bowel. Follow-up after treatment can also address changes to bowel
+      habits, diet, recovery and stoma care where relevant.
+    help:
+    - Make a GP appointment if you notice bleeding, unexplained weight loss or a persistent change in bowel habits. Severe
+      pain, vomiting and a swollen abdomen need urgent assessment.
+  breast-cancer-women:
+    aliases: breast lump breast tumour breast cancer
+    summary: Breast cancer can cause a new lump or other changes in a breast, but some cases are found on screening before
+      there are any symptoms.
+    symptoms:
+    - Look out for a new lump or thickening, an armpit lump, a nipple change or unusual discharge, and skin dimpling
+      or changes in breast shape. Tell a GP if you notice a change from what is normal for you.
+    causes:
+    - Breast cancer occurs when cells in breast tissue grow abnormally. Risk can be affected by age, some inherited gene
+      changes and other factors. A family history can guide whether you need a separate risk assessment.
+    diagnosis:
+    - A GP may refer you to a breast clinic. The team may examine you, perform mammography or ultrasound and take a tissue
+      sample. Testing the sample can show which treatments are likely to help.
+    care:
+    - Treatment can include surgery, radiotherapy, hormone-blocking treatment, chemotherapy or targeted medicines. The
+      treatment plan depends on the type and stage of cancer and your preferences.
+    - Ask the team about rehabilitation, managing treatment effects and whom to contact between appointments.
+    complications:
+    - Breast cancer can spread beyond the breast. Treatment and recovery can also affect arm movement and wellbeing.
+      Report persistent swelling or new concerns to your care team.
+    help:
+    - Contact your GP about a new breast change. BreastCheck is for eligible people without symptoms. If you have symptoms,
+      make a GP appointment even if you recently had a screening mammogram.
+  gestational-diabetes:
+    aliases: gdm pregnancy diabetes high blood sugar pregnancy
+    summary: Gestational diabetes is raised blood glucose first identified during pregnancy. Tests and a follow-up plan
+      help protect both the pregnant person and baby.
+    symptoms:
+    - Many people have no obvious symptoms and find out on a blood test. Unusual thirst or passing urine more often can
+      occur but can also have other explanations in pregnancy.
+    causes:
+    - Pregnancy-related changes make the body less sensitive to insulin. If the pancreas cannot make enough extra insulin
+      to compensate, blood glucose can rise.
+    diagnosis:
+    - A maternity team can arrange an oral glucose tolerance test. This measures how the body handles glucose after a
+      glucose drink. Testing schedules can vary with your history and local maternity pathway.
+    care:
+    - Your team may show you how to measure glucose at home and explain changes to food and activity. Some people need
+      medication. Monitoring during pregnancy and around birth is tailored to individual circumstances.
+    - Ask when to have your glucose rechecked after birth and how often to see your GP for longer-term follow-up.
+    complications:
+    - Raised glucose can increase the chance of a larger baby and some birth complications. The baby's glucose can fall
+      after delivery. A history of gestational diabetes also raises later type 2 diabetes risk.
+    help:
+    - Contact your maternity team with questions about an upcoming test, or about readings outside the range they gave
+      you. Follow their urgent-care advice for any sudden changes in how you feel or in your baby's movements.
+  cervical-cancer:
+    aliases: cancer of the cervix cervical tumour
+    summary: Cervical cancer starts in the cervix, the lower part of the womb. New bleeding or other unusual changes
+      deserve assessment even if you attend routine screening.
+    symptoms:
+    - Possible signs include bleeding after sex, between periods or after menopause. Changes in discharge or pelvic pain
+      can also occur, though other conditions can give similar symptoms.
+    causes:
+    - Persistent infection with certain types of human papillomavirus, or HPV, can cause changes in cervical cells over
+      time. Most HPV infections clear without causing cancer.
+    diagnosis:
+    - A GP asks about symptoms and may examine you or refer you. A specialist can assess the cervix and take a tissue
+      sample if needed. Cervical screening checks for risk and changes before symptoms develop.
+    care:
+    - Treatment depends on the stage and individual circumstances. It can include surgery, radiotherapy or medicines.
+      Tell your care team if preserving fertility is important when reviewing the options.
+    complications:
+    - Cervical cancer can spread to nearby organs or beyond the pelvis. Follow-up can also address bladder, bowel, sexual
+      health and other effects of treatment.
+    help:
+    - Contact your GP about unexpected vaginal bleeding, unusual discharge or persistent pelvic symptoms. Attend screening
+      when invited, and contact your GP about symptoms even after a recent screening result.
+  skin-cancer-melanoma:
+    aliases: melanoma malignant melanoma changing mole
+    summary: Melanoma is a skin cancer that can show up as a new mark or a changing mole. A GP can assess a change and
+      refer it for specialist examination.
+    symptoms:
+    - Pay attention to a new or changing mark. Warning signs include an uneven shape or border, multiple colours and
+      a change in size, shape or colour. Some melanomas look different from nearby moles and some may bleed or crust.
+    - Melanoma can develop on any skin tone. It can occur in areas that get little sun, including the soles, palms or
+      under a nail.
+    causes:
+    - It begins in the cells that produce skin pigment. Ultraviolet exposure is an important risk factor, though personal
+      and family history and other factors also matter.
+    diagnosis:
+    - A clinician examines the mark and may use a magnifying instrument. Removing the suspicious area and examining the
+      tissue can confirm whether it is melanoma.
+    care:
+    - Surgery is often the main treatment for early melanoma. A specialist considers the depth and other features to
+      plan further surgery, tests, follow-up or additional treatment.
+    complications:
+    - Melanoma can spread to lymph nodes or other parts of the body. Its depth and stage help the team discuss the outlook
+      and follow-up plan.
+    help:
+    - Make a GP appointment if you notice a new unusual mark or a mole changing over time. Photos with dates can help
+      you describe the change, while clinical assessment is still needed.

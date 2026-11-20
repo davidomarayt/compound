@@ -54,7 +54,11 @@
       <h1>Health guides and tools</h1>
       <p>Understand everyday medicines, explore health topics and use free calculators built for readers in Ireland.</p>
       <div class="health-masthead-links">
+        {% if conditions_url %}
+        <a class="health-hub-button" href="{{ conditions_url }}">Health conditions A–Z</a>
+        {% else %}
         <a class="health-hub-button" href="#health-topics">Browse health topics</a>
+        {% endif %}
         <a class="health-masthead-link" href="#health-calculators">Find a calculator</a>
       </div>
     </div>
