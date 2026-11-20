@@ -15,6 +15,8 @@ MEASURES = {
     "diagnoses": "New diagnoses",
     "hospital": "Hospital activity",
     "service": "Service activity",
+    "genetic": "Genetic frequency",
+    "mortality": "Deaths",
 }
 SECTIONS = (
     ("symptoms", "Symptoms and signs"),
@@ -32,6 +34,28 @@ TEST_SECTIONS = (
     ("complications", "After the test"),
     ("help", "Getting your results and advice"),
 )
+PROCEDURE_SECTIONS = (
+    ("symptoms", "Why it is offered"),
+    ("causes", "What it involves"),
+    ("diagnosis", "How to prepare"),
+    ("care", "What happens on the day"),
+    ("complications", "Risks and recovery"),
+    ("help", "Follow-up and getting help"),
+)
+SERVICE_SECTIONS = (
+    ("symptoms", "Who the service is for"),
+    ("causes", "How it works"),
+    ("diagnosis", "What to consider"),
+    ("care", "What to expect"),
+    ("complications", "Support and follow-up"),
+    ("help", "Where to get advice"),
+)
+GUIDE_FORMATS = {
+    "condition": (SECTIONS, "How common is it in Ireland?", "MedicalCondition"),
+    "test": (TEST_SECTIONS, "Irish testing figures", "MedicalTest"),
+    "procedure": (PROCEDURE_SECTIONS, "Irish procedure figures", "MedicalProcedure"),
+    "service": (SERVICE_SECTIONS, "Irish service figures", "Service"),
+}
 
 
 def load_conditions(content, article_urls):
@@ -77,13 +101,19 @@ def load_conditions(content, article_urls):
             for label, target in guide.get("links", {}).items():
                 if target not in article_urls:
                     raise ValueError(f"Unknown related article for {slug}: {label} ({target})")
+        kind = guide.get("kind", "condition") if guide else "condition"
+        if kind not in GUIDE_FORMATS:
+            raise ValueError(f"Unknown condition guide type for {slug}: {kind}")
+        sections, evidence_heading, schema_type = GUIDE_FORMATS[kind]
         entry = {
             "name": name,
             "official_url": official_url,
             "url": f"{CONDITIONS_URL}{slug}/" if guide else official_url,
             "guide": guide,
             "records": records,
-            "sections": TEST_SECTIONS if guide and guide.get("kind") == "test" else SECTIONS,
+            "sections": sections,
+            "evidence_heading": evidence_heading,
+            "schema_type": schema_type,
         }
         by_slug[slug] = entry
         seen_urls[official_url] = entry
