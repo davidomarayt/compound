@@ -32,7 +32,7 @@ def test_all_511_company_directory_entries_have_unique_valid_identity_and_readab
     for item in extra:
         assert item["name"] and item["ticker"] and item["slug"] and item["source"].startswith("https://")
         assert item["name"].strip() == item["name"]
-    assert len({item["name"] for item in active + extra}) == 510
+    assert len({item["name"] for item in active + extra}) == 511
 
 
 def test_all_15_reviewed_overrides_match_exact_ciks_and_preserve_source_names():
