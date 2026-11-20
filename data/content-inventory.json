@@ -427,6 +427,26 @@
         "status": "published"
       },
       {
+        "title": "Anthropic IPO: $83 Offer, $111.50 Opening and $97.17 First Close",
+        "url": "/news/anthropic-ipo-pricing-nasdaq/",
+        "source": "content/wealth/anthropic-ipo-pricing-nasdaq.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "anthropic-ipo-pricing-nasdaq",
+        "date": "2026-11-18",
+        "reviewed": "",
+        "tags": [
+          "news",
+          "finance",
+          "anthropic",
+          "company-anthropic",
+          "ipo",
+          "nasdaq",
+          "investing"
+        ],
+        "status": "published"
+      },
+      {
         "title": "Anthropic Lets Customers Pay for Claude Usage Inside Other Apps. Who Keeps the Margin?",
         "url": "/wealth/anthropic-linked-billing-api-customer-pays-agent-economics/",
         "source": "content/wealth/anthropic-linked-billing-api-customer-pays-agent-economics.md",
@@ -446,26 +466,6 @@
           "saas",
           "enterprise-ai",
           "developer-economics"
-        ],
-        "status": "published"
-      },
-      {
-        "title": "Anthropic Prices IPO at $83 a Share Ahead of Nasdaq Debut",
-        "url": "/news/anthropic-ipo-pricing-nasdaq/",
-        "source": "content/wealth/anthropic-ipo-pricing-nasdaq.md",
-        "kind": "Editorial article / guide",
-        "category": "Wealth",
-        "slug": "anthropic-ipo-pricing-nasdaq",
-        "date": "2026-11-18",
-        "reviewed": "",
-        "tags": [
-          "news",
-          "finance",
-          "anthropic",
-          "company-anthropic",
-          "ipo",
-          "nasdaq",
-          "investing"
         ],
         "status": "published"
       },
@@ -2169,6 +2169,29 @@
           "saxenda",
           "medicine-safety",
           "ireland"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "Google Chose Blue Origin for Space-Based AI Computing. Who Captures the Economics?",
+        "url": "/wealth/blue-origin-google-suncatcher-new-glenn-launch-economics/",
+        "source": "content/wealth/blue-origin-google-suncatcher-new-glenn-launch-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "blue-origin-google-suncatcher-new-glenn-launch-economics",
+        "date": "2026-11-20",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-blue-origin",
+          "blue-origin",
+          "google",
+          "new-glenn",
+          "launch-services",
+          "ai-compute",
+          "space"
         ],
         "status": "published"
       },
@@ -4702,6 +4725,28 @@
           "lab-ai",
           "ai-benchmarks",
           "science"
+        ],
+        "status": "published"
+      },
+      {
+        "title": "OpenAI's Accounting Plugin: Can AI Reconcile the Books Without Creating New Errors?",
+        "url": "/wealth/openai-accounting-plugin-bookkeeping-controls-economics/",
+        "source": "content/wealth/openai-accounting-plugin-bookkeeping-controls-economics.md",
+        "kind": "Editorial article / guide",
+        "category": "Wealth",
+        "slug": "openai-accounting-plugin-bookkeeping-controls-economics",
+        "date": "2026-11-20",
+        "reviewed": "",
+        "tags": [
+          "wealth",
+          "private-company",
+          "company-research",
+          "company-openai",
+          "openai",
+          "accounting",
+          "bookkeeping",
+          "enterprise-ai",
+          "small-business"
         ],
         "status": "published"
       },

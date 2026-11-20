@@ -8,7 +8,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 
 ## Summary
 
-- Published editorial articles and guides: 391
+- Published editorial articles and guides: 393
 - Existing automated/legacy earnings source files: 11
 - Tools and calculators: 69
 - Embedded tool-guide files: 62
@@ -116,7 +116,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Zolpidem in Ireland | The GABA-A receptor and the difference between sleep and next-day function](https://compound.ie/health/medicines/zolpidem/)
 - [Zopiclone in Ireland | GABA signalling, short-term benefit and stopping plans](https://compound.ie/health/medicines/zopiclone/)
 
-## Wealth articles and guides — 270
+## Wealth articles and guides — 272
 
 - [AIB Cuts Four-Year Fixed Mortgage Rates by Up to 0.35%: What You Could Save](https://compound.ie/news/aib-mortgage-rate-cut-october-2026/)
 - [Airbnb’s Bookings Grew 21%, but Free Cash Flow Rose 6%. Is the Buyback Earning Its Keep?](https://compound.ie/wealth/airbnb-bookings-free-cash-flow/)
@@ -132,8 +132,8 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [Anduril and HD Hyundai Built a 600-Tonne Autonomous Ship. Who Will Pay for a Fleet?](https://compound.ie/wealth/anduril-hd-hyundai-asv-alpha-navy-procurement-economics/)
 - [Anthropic IPO by the Numbers: The $61 Billion Share Sale, $900 Billion Compute Bet and Valuation Test](https://compound.ie/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/)
 - [Anthropic IPO Opens at $111.50. Here’s the ANT Lock-Up Release Schedule](https://compound.ie/news/anthropic-ipo-lockup-release-schedule/)
+- [Anthropic IPO: $83 Offer, $111.50 Opening and $97.17 First Close](https://compound.ie/news/anthropic-ipo-pricing-nasdaq/)
 - [Anthropic Lets Customers Pay for Claude Usage Inside Other Apps. Who Keeps the Margin?](https://compound.ie/wealth/anthropic-linked-billing-api-customer-pays-agent-economics/)
-- [Anthropic Prices IPO at $83 a Share Ahead of Nasdaq Debut](https://compound.ie/news/anthropic-ipo-pricing-nasdaq/)
 - [Anthropic Wants Claude to Work During Meetings. Will That Reduce the Follow-Up?](https://compound.ie/wealth/anthropic-claude-meetings-live-work-enterprise-economics/)
 - [Anthropic's Always-On Agent Blueprint: The Hidden Costs Are Permissions and Recovery](https://compound.ie/wealth/anthropic-always-on-agents-business-case-permissions-cost/)
 - [Anthropic's Anvil Found AI Safeguard Gaps Faster Than Human Testers. What Is That Worth?](https://compound.ie/wealth/anthropic-anvil-automated-red-teaming-safety-economics/)
@@ -199,6 +199,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [GE Vernova: The $197 Billion Backlog Still Has to Become Profit](https://compound.ie/wealth/ge-vernova-backlog-cash-flow/)
 - [Gift Tax in Ireland 2027: How Much Can You Give Tax-Free?](https://compound.ie/wealth/gift-tax-ireland/)
 - [Gilead Earnings: Strong HIV Sales, but Acquisitions Reshape the Profit Story](https://compound.ie/wealth/gilead-earnings-hiv-growth-acquisition-cost/)
+- [Google Chose Blue Origin for Space-Based AI Computing. Who Captures the Economics?](https://compound.ie/wealth/blue-origin-google-suncatcher-new-glenn-launch-economics/)
 - [Government considers extending petrol and diesel excise cuts into spring](https://compound.ie/news/petrol-diesel-excise-cuts-ev-costs-ireland/)
 - [Government revises public sector pay offer ahead of 12 November strike](https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/)
 - [GTA 6 Release: How Many Copies Could It Sell and What Does It Mean for TTWO?](https://compound.ie/wealth/ttwo-gta-6-entertainment-launch-revenue/)
@@ -293,6 +294,7 @@ Coverage: editorial content, all configured calculators, their embedded explanat
 - [OpenAI Launches GPT-6.2 Astra and Sol: The Cost of the New AI Race](https://compound.ie/news/openai-gpt-6-2-astra-sol-pricing-performance-2026/)
 - [OpenAI Says NATO Used Up to 300 Billion Tokens a Month. What Does That Prove?](https://compound.ie/wealth/openai-nato-cybersecurity-300-billion-tokens-economics/)
 - [OpenAI Tested AI on 100 Real Lab Tasks. The Hard Problem Is Knowing When Not to Trust It](https://compound.ie/wealth/openai-biobasicsbench-wet-lab-ai-evidence-reliability/)
+- [OpenAI's Accounting Plugin: Can AI Reconcile the Books Without Creating New Errors?](https://compound.ie/wealth/openai-accounting-plugin-bookkeeping-controls-economics/)
 - [OpenAI's Astra for Law Leads a Legal AI Benchmark. Why Does It Still Miss Four in Five Tasks?](https://compound.ie/wealth/openai-astra-law-legal-benchmark-reliability-economics/)
 - [OpenAI's ChatGPT Wallet Can Complete a Purchase. Can Merchants Trust the Checkout?](https://compound.ie/wealth/openai-chatgpt-wallet-agentic-checkout-economics/)
 - [OpenAI's Hacktron Partnership Puts Agent Security at the Integration Layer](https://compound.ie/wealth/openai-hacktron-agent-security-third-party-risk/)

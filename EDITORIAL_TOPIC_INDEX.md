@@ -8,7 +8,7 @@ If the search intent matches, expand the original canonical URL instead.
 For the complete register (including 510+ company profiles), open
 [CONTENT_INVENTORY.md](CONTENT_INVENTORY.md).
 
-**Included:** 391 published articles and guides, 69 tools,
+**Included:** 393 published articles and guides, 69 tools,
 11 legacy earnings source files listed separately.
 
 ## Published articles and guides — alphabetical
@@ -36,8 +36,8 @@ For the complete register (including 510+ company profiles), open
 - [Antacids in Ireland | Neutralising stomach acid and adding a reflux barrier](https://compound.ie/health/medicines/antacids/) — **Health**
 - [Anthropic IPO by the Numbers: The $61 Billion Share Sale, $900 Billion Compute Bet and Valuation Test](https://compound.ie/wealth/anthropic-ipo-2026-prospectus-numbers-valuation/) — **Wealth**
 - [Anthropic IPO Opens at $111.50. Here’s the ANT Lock-Up Release Schedule](https://compound.ie/news/anthropic-ipo-lockup-release-schedule/) — **Wealth**
+- [Anthropic IPO: $83 Offer, $111.50 Opening and $97.17 First Close](https://compound.ie/news/anthropic-ipo-pricing-nasdaq/) — **Wealth**
 - [Anthropic Lets Customers Pay for Claude Usage Inside Other Apps. Who Keeps the Margin?](https://compound.ie/wealth/anthropic-linked-billing-api-customer-pays-agent-economics/) — **Wealth**
-- [Anthropic Prices IPO at $83 a Share Ahead of Nasdaq Debut](https://compound.ie/news/anthropic-ipo-pricing-nasdaq/) — **Wealth**
 - [Anthropic Wants Claude to Work During Meetings. Will That Reduce the Follow-Up?](https://compound.ie/wealth/anthropic-claude-meetings-live-work-enterprise-economics/) — **Wealth**
 - [Anthropic's Always-On Agent Blueprint: The Hidden Costs Are Permissions and Recovery](https://compound.ie/wealth/anthropic-always-on-agents-business-case-permissions-cost/) — **Wealth**
 - [Anthropic's Anvil Found AI Safeguard Gaps Faster Than Human Testers. What Is That Worth?](https://compound.ie/wealth/anthropic-anvil-automated-red-teaming-safety-economics/) — **Wealth**
@@ -129,6 +129,7 @@ For the complete register (including 510+ company profiles), open
 - [Gilead Earnings: Strong HIV Sales, but Acquisitions Reshape the Profit Story](https://compound.ie/wealth/gilead-earnings-hiv-growth-acquisition-cost/) — **Wealth**
 - [GLP-1 side effects: what is common, and when to get help](https://compound.ie/health/glp1-side-effects-when-to-seek-help/) — **Health**
 - [GLP-1s and pregnancy: Ozempic, Wegovy, Mounjaro and what the evidence says](https://compound.ie/health/glp1-pregnancy-ozempic-wegovy-mounjaro-ireland/) — **Health**
+- [Google Chose Blue Origin for Space-Based AI Computing. Who Captures the Economics?](https://compound.ie/wealth/blue-origin-google-suncatcher-new-glenn-launch-economics/) — **Wealth**
 - [Government considers extending petrol and diesel excise cuts into spring](https://compound.ie/news/petrol-diesel-excise-cuts-ev-costs-ireland/) — **Wealth**
 - [Government revises public sector pay offer ahead of 12 November strike](https://compound.ie/wealth/ireland-public-sector-strike-pay-deal-budget-2027/) — **Wealth**
 - [GTA 6 Release: How Many Copies Could It Sell and What Does It Mean for TTWO?](https://compound.ie/wealth/ttwo-gta-6-entertainment-launch-revenue/) — **Wealth**
@@ -261,6 +262,7 @@ For the complete register (including 510+ company profiles), open
 - [OpenAI Launches GPT-6.2 Astra and Sol: The Cost of the New AI Race](https://compound.ie/news/openai-gpt-6-2-astra-sol-pricing-performance-2026/) — **Wealth**
 - [OpenAI Says NATO Used Up to 300 Billion Tokens a Month. What Does That Prove?](https://compound.ie/wealth/openai-nato-cybersecurity-300-billion-tokens-economics/) — **Wealth**
 - [OpenAI Tested AI on 100 Real Lab Tasks. The Hard Problem Is Knowing When Not to Trust It](https://compound.ie/wealth/openai-biobasicsbench-wet-lab-ai-evidence-reliability/) — **Wealth**
+- [OpenAI's Accounting Plugin: Can AI Reconcile the Books Without Creating New Errors?](https://compound.ie/wealth/openai-accounting-plugin-bookkeeping-controls-economics/) — **Wealth**
 - [OpenAI's Astra for Law Leads a Legal AI Benchmark. Why Does It Still Miss Four in Five Tasks?](https://compound.ie/wealth/openai-astra-law-legal-benchmark-reliability-economics/) — **Wealth**
 - [OpenAI's ChatGPT Wallet Can Complete a Purchase. Can Merchants Trust the Checkout?](https://compound.ie/wealth/openai-chatgpt-wallet-agentic-checkout-economics/) — **Wealth**
 - [OpenAI's Hacktron Partnership Puts Agent Security at the Integration Layer](https://compound.ie/wealth/openai-hacktron-agent-security-third-party-risk/) — **Wealth**
