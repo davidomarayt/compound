@@ -1,4 +1,4 @@
-"""Watch the ten additional public companies for verified financial disclosures.
+"""Watch additional listed public companies for verified financial disclosures.
 
 The SEC 10-Q/10-K generator cannot accurately normalise local-market IFRS
 statements and foreign-issuer 20-F/6-K releases. Instead, collect dated,
@@ -158,8 +158,18 @@ def sec_candidates(client, listed: list[dict], today: date) -> tuple[dict[str, l
 def run(watchlist: Path, snapshot: Path, *, today: date, client=None,
         fetch=fetch_page, dry_run=False) -> dict:
     listed = json.loads(watchlist.read_text(encoding="utf-8")).get("listed", [])
-    if len(listed) != 10 or len({row["slug"] for row in listed}) != 10:
-        raise ValueError("Expected the ten additional publicly listed companies")
+    # Preserve the ten-company legacy fixtures while enforcing the exact
+    # eleven-company production roster after Anthropic (ANT) moved to listed.
+    slugs = [row["slug"] for row in listed]
+    unique_slugs = set(slugs)
+    expected_eleven = {
+        "spcx", "ant", "tsm", "asml", "005930-ks", "tm", "0700-hk",
+        "1211-hk", "7974-t", "nvo", "mc-pa",
+    }
+    if len(slugs) not in {10, 11} or len(unique_slugs) != len(slugs):
+        raise ValueError("Expected ten or eleven unique additional listed companies")
+    if len(slugs) == 11 and unique_slugs != expected_eleven:
+        raise ValueError("Expected the exact eleven-company listed roster including ANT")
     previous = json.loads(snapshot.read_text(encoding="utf-8")) if snapshot.exists() else {}
     old_links = previous.get("observed_links", {})
     observed = dict(old_links)
