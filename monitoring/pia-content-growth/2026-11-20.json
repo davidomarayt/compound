@@ -4,7 +4,7 @@
   "run_type": "pia_content_growth",
   "topic_fingerprint": "2026-10-new-ireland-assurance-boi-group-related-brand-original-faq-checked-2026-11-20",
   "action": "source_backed_related_brand_update_to_existing_provider_comparison",
-  "status": "revised_pending_exact_head_ci",
+  "status": "merged_ci_passed_public_provider_update_not_yet_verified",
   "new_articles": 0,
   "existing_canonical_page_updates": 1,
   "canonical_urls": [
@@ -63,10 +63,10 @@
   },
   "qa": {
     "source_and_fees": "first-party FAQ and ownership footer verified; no invented provider fees",
-    "regressions": "Initial head test failed at test_pia_source_export.py because fixed five-provider count; new head awaiting full CI test/performance; hardcoded tests preserved",
-    "live_new_provider": "Pending live verification of related-brand link and text on /pia/providers/ after successful merge and Pages deployment",
-    "ads": "pending exact public HTML verification",
-    "images": "no hero/image changes; preserve existing canonical assets"
+    "regressions": "Initial six-card proposal failed existing count guard; revised five-card implementation passed exact-head CI test and performance without altering required regression tests.",
+    "live_new_provider": "Public /pia/providers/ reader still displayed 2026-11-15 and lacked New Ireland related-brand link at independent check following 09:27 UTC merge; new source-backed text not yet verified live.",
+    "ads": "PIA-specific public HTML ad loader, consent/CMP and slots not independently verified following merge.",
+    "images": "No hero or social image changes; existing metadata preserved in source, public OG/Twitter asset HTTP check outstanding."
   },
   "production_branch": "claude/clever-babbage-uibieq",
   "work_branch": "automation/pia-new-ireland-provider-2026-11-20",
@@ -74,5 +74,24 @@
   "verified_live_result": null,
   "human_review": "not asserted",
   "communication": "no email or social posts",
-  "quality_gate_note": "Initial six-card proposal triggered existing required CI regression tests that freeze five named primary providers. No tests were changed or weakened; proposal revised to retain five card identities and include New Ireland as clearly labelled related-group first-party source, with source-URL validation and synced CSV. Fresh exact-head CI is mandatory."
+  "quality_gate_note": "Initial six-card proposal triggered existing required CI regression tests that freeze five named primary providers. No tests were changed or weakened; proposal revised to retain five card identities and include New Ireland as clearly labelled related-group first-party source, with source-URL validation and synced CSV. Fresh exact-head CI is mandatory.",
+  "release": {
+    "pr_number": 214,
+    "pr_url": "https://github.com/davidomarayt/compound/pull/214",
+    "head_sha": "2011896b01d26d07e0c5989ae63f69a300d1ed11",
+    "merge_sha": "dedddc0bfaa6574e32fc5fb5a0faafe47fd3570c",
+    "merged_at_utc": "2026-11-20T09:27:02Z",
+    "ci_run_id": 44709212705,
+    "ci_url": "https://github.com/davidomarayt/compound/actions/runs/44709212705",
+    "test": "success",
+    "performance": "success",
+    "production_pages_status": "not_verified_after_merge",
+    "reason": "Public web reader still served 15 Nov provider snapshot; GitHub Pages post-merge build/deploy result not independently accessible from available repository tools."
+  },
+  "production_deployment_confirmed": false,
+  "follow_up": [
+    "Check actual GitHub Pages site build/deploy and mobile-audit for merge SHA; do not use unrelated Vercel compound-solar failure.",
+    "Refetch /pia/providers/ and verify New Ireland contextual link, all five 2026-11-20 checked dates, CSV source, canonical, ad/CMP loader and social image response.",
+    "Reconcile this ledger only after exact public evidence is obtained; no duplicate article or second provider entry."
+  ]
 }
