@@ -1,6 +1,6 @@
 {
   "date": "2026-11-20",
-  "status": "merged_pending_deployment",
+  "status": "deployed_verified_live",
   "scan_since_inclusive": "2026-11-19",
   "publishing_branch": "claude/clever-babbage-uibieq",
   "pull_request": 223,
@@ -36,7 +36,7 @@
           }
         }
       },
-      "status": "prepared"
+      "status": "published_verified_live"
     },
     "WSM": {
       "canonical_url": "https://compound.ie/stocks/wsm/",
@@ -69,7 +69,7 @@
           }
         }
       },
-      "status": "prepared"
+      "status": "published_verified_live"
     },
     "INTU": {
       "canonical_url": "https://compound.ie/stocks/intu/",
@@ -173,7 +173,8 @@
   },
   "checks": {
     "offline_earnings_tests": "27 passed",
-    "exact_head_ci": "Both full test and build/performance runs passed on 772a2fca91598cb916d04ca222156668160adf84: 44837822045, 44837813019."
+    "exact_head_ci": "Both full test and build/performance runs passed on 772a2fca91598cb916d04ca222156668160adf84: 44837822045, 44837813019.",
+    "production": "Build, deploy, verify-live and finance-discovery passed; separate mobile-audit still in progress at completion."
   },
   "monitor_repair": {
     "pull_request": 222,
@@ -271,5 +272,37 @@
   ],
   "merge_commit": "e865a051ef0fd9afdfaf0b3d0a4cc9bc740ca78e",
   "deployment_run": 44839385963,
-  "validated_head": "772a2fca91598cb916d04ca222156668160adf84"
+  "validated_head": "772a2fca91598cb916d04ca222156668160adf84",
+  "deployment_status": "success",
+  "post_deployment_mobile_audit": "in_progress",
+  "live_verification": [
+    {
+      "ticker": "keys",
+      "url": "https://compound.ie/stocks/keys/",
+      "status": 200,
+      "period": "FY",
+      "fy": 2026,
+      "source": "https://www.sec.gov/Archives/edgar/data/1601046/000160104626000040/exhibit991-q426pressrelease.htm",
+      "ad_loader": true,
+      "slots": [],
+      "verified_at": "2026-11-20T23:56:12.891375+00:00"
+    },
+    {
+      "ticker": "wsm",
+      "url": "https://compound.ie/stocks/wsm/",
+      "status": 200,
+      "period": "Q3",
+      "fy": 2026,
+      "source": "https://www.sec.gov/Archives/edgar/data/719955/000071995526000244/exhibit991fy2026q3earnings.htm",
+      "ad_loader": true,
+      "slots": [],
+      "verified_at": "2026-11-20T23:56:18.135394+00:00"
+    }
+  ],
+  "counts": {
+    "new_articles": 0,
+    "manual_stock_updates": 2,
+    "already_current_source_verified": 3
+  },
+  "checked_at": "2026-11-20 23:56:42 UTC"
 }
