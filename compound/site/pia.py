@@ -87,6 +87,13 @@ def load_pia_tracker(path: Path) -> dict:
         if p.get("stage") not in ALLOWED_STAGES:
             raise ValueError(f"Unsupported PIA provider stage: {slug}")
         _https_url(p.get("source_url"), f"{slug} official source")
+        if p.get("related_brand_source_url"):
+            _https_url(p["related_brand_source_url"], f"{slug} related-brand official source")
+            if not all(str(p.get(k) or "").strip() for k in
+                       ("related_brand_name", "related_brand_statement", "related_brand_checked")):
+                raise ValueError(f"Incomplete related-brand evidence for {slug}")
+            if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}", str(p["related_brand_checked"])):
+                raise ValueError(f"Invalid related-brand check date for {slug}")
         model = _fee_model(p.get("fee_model") or {"verified": False}, slug)
         p["fee_model"] = model
         referral = p.get("referral") or {}
