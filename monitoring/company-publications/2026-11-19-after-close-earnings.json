@@ -1,42 +1,43 @@
 {
   "date": "2026-11-19",
-  "status": "deployment_failed_recovery_pending",
+  "status": "deployed_verified_live",
   "scan_since_inclusive": "2026-11-18",
   "companies": {
     "PANW": {
       "canonical_url": "https://compound.ie/stocks/panw/",
       "period": {
-        "fy": 2027,
+        "accession": "0001327567-26-000033",
+        "filed": "2026-11-19",
+        "form": "10-Q",
         "fp": "Q1",
-        "period_end": "2026-10-31",
-        "filed": "2026-11-18",
-        "form": "8-K",
-        "accession": "0001327567-26-000030",
-        "source": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000030/ex991q127earningsrelease.htm",
+        "fy": 2027,
         "metrics": {
-          "revenue": {
-            "current": 3445000000,
-            "prior_year": 2474000000,
-            "unit": "USD",
-            "tag": "SEC Exhibit reported GAAP revenue"
+          "diluted_eps": {
+            "current": 0.57,
+            "prior_year": 0.47,
+            "tag": "EarningsPerShareDiluted",
+            "unit": "USD/shares"
           },
           "net_income": {
             "current": 482000000,
             "prior_year": 334000000,
-            "unit": "USD",
-            "tag": "SEC Exhibit reported GAAP net_income"
+            "tag": "NetIncomeLoss",
+            "unit": "USD"
           },
-          "diluted_eps": {
-            "current": 0.57,
-            "prior_year": 0.47,
-            "unit": "USD/shares",
-            "tag": "SEC Exhibit reported GAAP diluted_eps"
+          "revenue": {
+            "current": 3445000000,
+            "prior_year": 2474000000,
+            "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+            "unit": "USD"
           }
-        }
+        },
+        "period_end": "2026-10-31",
+        "source": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000033/panw-20261031.htm"
       },
       "status": "verified_live_concurrent_monitor",
       "monitor_commit": "892f166dae4ea63c9719ee8a97e334f020ab0a6b",
-      "confirming_10q": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000033/panw-20261031.htm"
+      "confirming_10q": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000033/panw-20261031.htm",
+      "corroborating_earnings_exhibit": "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000030/ex991q127earningsrelease.htm"
     },
     "P": {
       "canonical_url": "https://compound.ie/stocks/p/",
@@ -69,7 +70,7 @@
           }
         }
       },
-      "status": "verified_source_prepared"
+      "status": "published_verified_live"
     },
     "TJX": {
       "canonical_url": "https://compound.ie/stocks/tjx/",
@@ -102,7 +103,7 @@
           }
         }
       },
-      "status": "verified_source_prepared"
+      "status": "published_verified_live"
     },
     "ROST": {
       "canonical_url": "https://compound.ie/stocks/rost/",
@@ -135,38 +136,89 @@
           }
         }
       },
-      "status": "verified_source_prepared"
+      "status": "published_verified_live"
     },
     "WMT": {
       "canonical_url": "https://compound.ie/stocks/wmt/",
-      "release": {
-        "ended": "2026-10-31",
-        "period": "Q3 FY2027",
-        "published": "2026-11-19",
+      "status": "published_verified_live",
+      "note": "GAAP net income attributable to Walmart, consistent with diluted EPS and historical table basis; not consolidated net income or adjusted EPS.",
+      "period": {
+        "fy": 2027,
+        "fp": "Q3",
+        "period_end": "2026-10-31",
+        "filed": "2026-11-19",
+        "form": "8-K",
+        "accession": "0000104169-26-000168",
         "source": "https://www.sec.gov/Archives/edgar/data/104169/000010416926000168/earningsreleasefy27q3.htm",
-        "summary": "Walmart reported third-quarter revenue of $188.835 billion and GAAP consolidated net income of $5.095 billion. Net income attributable to Walmart was $4.945 billion, with GAAP diluted EPS of $0.62 versus $0.77 a year earlier. Adjusted EPS was $0.65. All amounts are US dollars."
-      },
-      "status": "verified_source_prepared",
-      "note": "Release summary distinguishes consolidated net income from attributable earnings. Existing historical table preserved."
+        "metrics": {
+          "revenue": {
+            "current": 188835000000,
+            "prior_year": 179496000000,
+            "unit": "USD",
+            "tag": "SEC Exhibit GAAP total revenues"
+          },
+          "net_income": {
+            "current": 4945000000,
+            "prior_year": 6143000000,
+            "unit": "USD",
+            "tag": "SEC Exhibit GAAP net income attributable to Walmart"
+          },
+          "diluted_eps": {
+            "current": 0.62,
+            "prior_year": 0.77,
+            "unit": "USD/shares",
+            "tag": "SEC Exhibit GAAP diluted EPS attributable to Walmart"
+          }
+        }
+      }
     }
   },
   "source_checks": "Original SEC 8-K identity and Exhibit 99.1 statement tables checked twice. PANW/TJX millions and Everpure/Ross thousands converted to USD; diluted EPS GAAP. No adjusted figure substituted. History preserved.",
   "nvidia_one_off": "Already fulfilled and live verified in prior ledger; no duplicate created.",
   "counts": {
     "new_articles": 0,
-    "merged_stock_updates": 4,
-    "verified_concurrent_monitor_updates": 1,
-    "live_updates": 0
+    "manual_stock_page_updates": 4,
+    "concurrent_monitor_updates_verified": 1,
+    "live_urls_verified": 5
   },
   "checks": {
     "offline_earnings_tests": "46 passed",
-    "publication": "pending full build and exact-head CI",
+    "publication": "Four manual page updates deployed and directly fetched; PANW concurrent monitor update independently source-reconciled and fetched.",
     "review_limit": 5,
-    "exact_head_ci": "Both test and full-build/performance jobs passed on revised head, runs 44641842041 and 44641833447"
+    "exact_head_ci": "Both test and full-build/performance jobs passed on revised head, runs 44641842041 and 44641833447",
+    "recovery_offline_tests": "41 passed",
+    "recovery_exact_head_ci": "Test and full-build/performance checks passed on 221daa47677217f28fd0444f26335fd1011e14ba; runs 44644817382 and 44644804486.",
+    "production_jobs": [
+      {
+        "name": "build",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "deploy",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "verify-finance-discovery",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "verify-live",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "mobile-audit",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ],
+    "local_limitations": "Initial local full-suite run stopped after temporary disk exhaustion and local image preparation blocked a full build. Exact-head remote test and build checks passed; no validation was weakened."
   },
   "prior_unresolved": [
     "ATO annual table",
-    "DHI annual table",
     "EXPD supplemental disclosure",
     "BRK-B comparable EPS",
     "VMRK comparable revenue",
@@ -211,12 +263,58 @@
     "amendments": "NKE 8-K/A Item 5.02 is outside earnings-results changes.",
     "panw_crosscheck": "19 November 10-Q accession 0001327567-26-000033 agrees with all six current/prior revenue, GAAP net income and diluted EPS values in 18 November earnings exhibit.",
     "limits": "Five companies substantively source-reconciled. Other candidates and foreign disclosures pending. No claim that the whole universe is fully current.",
-    "intu_status": "Concurrent monitor ingested 10-Q, deployment pending; not manually reviewed in this five-company batch."
+    "intu_status": "Concurrent monitor ingested the 19 November 10-Q; not manually source-reconciled in this five-company batch.",
+    "dhi_status": "Latest annual accession observed on live page; no independent financial reconciliation this batch."
   },
   "merge_commit": "ee6b772be999255d13053d34fcc09a44f1a1a3d1",
   "validated_head": "f6f59f34b66a74246498c7becc6c5264a9d8fb3d",
-  "deployment_status": "failed_before_deploy",
+  "deployment_status": "success",
   "failed_deployment_run": "https://github.com/davidomarayt/compound/actions/runs/44643588363",
   "recovery_pull_request": 191,
-  "failure": "WMT release-only override disabled detailed earnings SEO layout; unchanged production validation rejected it. Recovery moves SEC-verified GAAP parent-attributable net income and EPS into maintained quarterly table and removes release-only override."
+  "final_content_commit": "03e8382486fad88ac67aadb031a5ddb03d072716",
+  "deployment_run": "https://github.com/davidomarayt/compound/actions/runs/44646933272",
+  "recovery_merge_commit": "03e8382486fad88ac67aadb031a5ddb03d072716",
+  "recovery_validated_head": "221daa47677217f28fd0444f26335fd1011e14ba",
+  "recovered_failure": {
+    "run": "https://github.com/davidomarayt/compound/actions/runs/44643588363",
+    "reason": "WMT release-only override disabled detailed earnings SEO layout; unchanged production validation rejected it. Recovery moves SEC-verified GAAP parent-attributable net income and EPS into maintained quarterly table and removes release-only override.",
+    "resolution": "PR 191 removed the release-only override and appended the verified Q3 FY2027 maintained earnings-table row. Original production validation retained."
+  },
+  "live_verification": [
+    {
+      "url": "https://compound.ie/stocks/panw/",
+      "status": "verified_live",
+      "ad_loader": true,
+      "slots": []
+    },
+    {
+      "url": "https://compound.ie/stocks/p/",
+      "status": "verified_live",
+      "ad_loader": true,
+      "slots": []
+    },
+    {
+      "url": "https://compound.ie/stocks/tjx/",
+      "status": "verified_live",
+      "ad_loader": true,
+      "slots": []
+    },
+    {
+      "url": "https://compound.ie/stocks/rost/",
+      "status": "verified_live",
+      "ad_loader": true,
+      "slots": []
+    },
+    {
+      "url": "https://compound.ie/stocks/wmt/",
+      "status": "verified_live",
+      "ad_loader": true,
+      "slots": [
+        "2138650464"
+      ]
+    }
+  ],
+  "live_verified_at": "2026-11-20T00:47:08Z",
+  "completed_at": "2026-11-20 00:49:12 UTC",
+  "review_status": "Automated source verification and QA; no human approval asserted."
 }
