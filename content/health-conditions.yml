@@ -73,11 +73,14 @@ sources:
     name: CSO Irish Health Survey 2025, table IHS17
     url: https://data.cso.ie/table/IHS17
   hse_diabetes:
-    name: HSE Discover Diabetes Programme Evaluation 2024
-    url: https://www.hse.ie/eng/about/who/cspd/ncps/diabetes/resources/diabetes-workstreams/discover-diabetes-type-2-smes-programme-evaluation-report-2024.pdf
+    name: HSE Integrated Diabetes Service update
+    url: https://about.hse.ie/news/hse-integrated-diabetes-service-improving-access-to-care-and-reducing-waiting-lists-across-galway-roscommon-and-mayo/
   hse_type1:
     name: National Clinical Guideline, Adult Type 1 Diabetes Mellitus
     url: https://assets.hse.ie/media/documents/Adult_Type_1_Diabetes_Mellitus_National_Clinical_Guideline.pdf
+  hse_type2:
+    name: HSE Type 2 Diabetes Prevention and Support
+    url: https://about.hse.ie/news/hse-helping-people-reduce-risk-of-type-2-diabetes-with-free-intervention-and-support-programmes/
 evidence:
   polio:
   - value: '0'
@@ -436,12 +439,12 @@ evidence:
     source: epicc
     locator: table 1
     measure: prevalence
-  - value: About 308,000
-    period: HSE evaluation published 2024
+  - value: About 300,000
+    period: HSE update published 2026
     population: People living in Ireland
-    note: The HSE estimated the Irish count by applying Scottish prevalence rates. This is a modelled count.
+    note: This approximate figure covers diabetes across types. The HSE update does not describe the estimation method.
     source: hse_diabetes
-    locator: Executive summary
+    locator: World Diabetes Day update
     measure: prevalence
   transient-ischaemic-attack-tia:
   - value: 0.8%
@@ -545,12 +548,13 @@ evidence:
     locator: Executive summary
     measure: prevalence
   type-2-diabetes:
-  - value: About 273,000
-    period: HSE evaluation published 2024
+  - value: About 270,000
+    period: HSE announcement published 2024
     population: People living in Ireland
-    note: The HSE estimated the Irish count by applying Scottish prevalence rates. This is a modelled count.
-    source: hse_diabetes
-    locator: Executive summary
+    note: This approximate figure covers people living with type 2 diabetes in Ireland. The HSE announcement does not
+      give a confidence interval.
+    source: hse_type2
+    locator: National Type 2 diabetes estimate
     measure: prevalence
   sepsis:
   - value: 12,323
