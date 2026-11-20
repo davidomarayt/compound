@@ -7,7 +7,7 @@
 .conditions-hero h1 { font-size: clamp(2.2rem, 5.8vw, 4rem); line-height: 1.06; margin: 0 0 14px; }
 .conditions-hero p { max-width: 58ch; margin: 0; font-size: clamp(1rem, 2vw, 1.18rem); }
 .conditions-hero small { display: block; margin-top: 15px; }
-.condition-totals { display: flex; gap: 22px; margin: 0; }
+.condition-totals { display: flex; flex-wrap: wrap; gap: 12px 22px; margin: 0; }
 .condition-totals div { display: flex; flex-direction: column-reverse; }
 .condition-totals dt { font-size: .86rem; }
 .condition-totals dd { margin: 0; font-size: 2rem; line-height: 1.1; font-weight: 700; font-variant-numeric: tabular-nums; }
@@ -17,9 +17,9 @@
 .condition-check { display: flex; align-items: center; gap: 8px; min-height: 32px; font-size: .92rem; }
 .condition-check input { inline-size: 18px; block-size: 18px; accent-color: #125345; }
 .condition-featured { margin-block: 30px; }
-.condition-featured h2 { margin: 0 0 12px; font-size: 1.45rem; }
+.condition-featured summary { font-weight: 700; cursor: pointer; }
 .condition-featured ul, .condition-alphabet, .condition-toc { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; }
-.condition-featured ul { list-style: none; margin: 0; }
+.condition-featured ul { list-style: none; margin: 12px 0 0; }
 .condition-featured a, .condition-alphabet a, .condition-toc a { display: inline-block; padding: 8px 12px; border: 1px solid #d5e1da; border-radius: 7px; }
 .condition-alphabet { margin-block: 18px; }
 .condition-alphabet a { min-width: 38px; text-align: center; text-decoration: none; }

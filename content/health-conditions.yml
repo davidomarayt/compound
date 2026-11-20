@@ -93,6 +93,78 @@ sources:
   psoriasis_atlas:
     name: Global Psoriasis Atlas, Ireland country profile
     url: https://www.globalpsoriasisatlas.org/modules/prevalence-page/country-pdf?aposDocId=nukxyzx1wdfn4a77xlkkw9hs&locale=en
+  cholecystitis_nqais:
+    name: National registry study of acute cholecystitis in Ireland
+    url: https://www.sciencedirect.com/science/article/pii/S1479666X24000854
+  cpe_2025:
+    name: HPSC Enhanced surveillance of CPE in Ireland 2025
+    url: https://file.hpsc.ie/uploads/carbapenemresistantenterobacteriaceaecre/surveillancereports/1785423458.pdf
+  crohn_irish:
+    name: Crohn’s & Colitis Ireland, IBD Facts and Figures
+    url: https://crohnscolitis.ie/support/faq/category/ibd-facts-figures/
+  doh_top_2025:
+    name: Department of Health 2025 abortion notifications, reported by The Irish Times
+    url: https://www.irishtimes.com/politics/2026/07/08/abortion-numbers-fall-to-10600-during-2025-says-department-of-health-report/
+  earsnet_2025:
+    name: HPSC EARS-Net Ireland National Report 2025
+    url: https://file.hpsc.ie/uploads/europeanantimicrobialresistancesurveillancesystemearss/surveillancereports/1789980676.html
+  hiqa_aaa:
+    name: HIQA health technology assessment of abdominal aortic aneurysm screening, draft analysis
+    url: https://www.hiqa.ie/sites/default/files/2025-04/DRAFT-HTA-AAA-screening.pdf
+  hpo_2023:
+    name: Healthcare Pricing Office, Activity in Acute Public Hospitals in Ireland 2023
+    url: https://www.drugsandalcohol.ie/42152/1/HIPE_Report_2023.pdf
+  hse_alpha1:
+    name: HSE Alpha-1 antitrypsin deficiency guidance
+    url: https://www2.hse.ie/conditions/alpha-1-antitrypsin-deficiency/
+  hse_colposcopy:
+    name: HSE CervicalCheck programme report 2023–2024, key results
+    url: https://www2.healthservice.hse.ie/organisation/nss/news/cervicalcheck-programme-report-2023-2024/
+  hse_fertility_2025:
+    name: HSE Fertility Services Report 2025
+    url: https://about.hse.ie/api/v2/download-file/file_based_publications/HSE_Fertility_Services_Report_2025.pdf
+  hse_hh_model:
+    name: HSE West and North West, hereditary haemochromatosis education programme
+    url: https://www.saolta.ie/news/hse-west-and-north-west-rolls-out-hereditary-haemochromatosis-hh-education-programme-gp
+  hse_maternity_profile:
+    name: HSE National Maternity Population Health Profile
+    url: https://about.hse.ie/api/v2/download-file/file_based_publications/National_Maternity_Population_Health_Profile_RhOCXMj.pdf
+  hse_rsv_2024:
+    name: HSE RSV immunisation programme update, 16 December 2024
+    url: https://about.hse.ie/news/new-hse-rsv-immunisation-programme-significantly-reduces-infections-serious-illness-and-hospitalisations-in-babies/
+  ibts_2024:
+    name: Irish Blood Transfusion Service Annual Report 2024
+    url: https://www.giveblood.ie/media/2a4dyqym/13230-ibts-annual-report-2024_v6.pdf
+  imis_2024:
+    name: HSE Irish Maternity Indicator System National Report 2024
+    url: https://about.hse.ie/api/v2/download-file/file_based_publications/IMIS_2024_National_Report.pdf
+  irish_amp_ps:
+    name: HSE 2024 Antimicrobial Point Prevalence Survey in Acute Hospitals, appendix
+    url: https://assets.hse.ie/media/documents/Antimicrobial_Point_Prevalence_Survey_in_Acute_Hospitals_in_Ireland_2024_Appendix_2.pdf
+  miscarriage_guideline:
+    name: Irish National Clinical Practice Guideline, First Trimester Miscarriage
+    url: https://research.ucc.ie/en/publications/national-clinical-practice-guideline-first-trimester-miscarriage-/
+  newborn_2024:
+    name: HSE National Healthy Childhood Programme Screening Programmes Report 2024
+    url: https://assets.hse.ie/media/documents/National_Healthy_Childhood_Programme_Screening_Programmes_Annual_Report_2024.pdf
+  noca_hip:
+    name: NOCA Irish National Orthopaedic Register National Report 2015–2024
+    url: https://a.storyblok.com/f/265949/x/95d447cebc/irish-national-orthopaedic-register-national-report-2015-2024-final.pdf
+  noca_pneumonia:
+    name: NOCA National Audit of Hospital Mortality, National Report 2022 and 2023
+    url: https://a.storyblok.com/f/265949/x/e1943c445b/national-audit-of-hospital-mortality-national-report-2022-and-2023-final.pdf
+  noca_sids:
+    name: NOCA National Paediatric Mortality Register Report, statistical appendices
+    url: https://a.storyblok.com/f/265949/x/5e5b1a609e/national-paediatric-mortality-register-annual-report-2025_appendices.pdf
+  npec_smm:
+    name: National Perinatal Epidemiology Centre Severe Maternal Morbidity National Audit
+    url: https://www.ucc.ie/en/npec/clinical-audits/severematernalmorbiditynationalaudit/
+  nss_2025:
+    name: HSE National Screening Service End of Year Report 2025
+    url: https://assets.hse.ie/media/documents/NSS_End_of_Year_Report_2025.pdf
+  vte_hipe:
+    name: National trends in venous thromboembolism incidence in Ireland, HIPE analysis
+    url: https://cora.ucc.ie/items/a8a04f81-fb18-4e20-b073-67a6bf6f8c52
 evidence:
   eczema:
   - value: About 10%
@@ -916,6 +988,380 @@ evidence:
     source: cso_bmi
     locator: Figure 6.1
     measure: prevalence
+  abdominal-aortic-aneurysm:
+  - value: 90 per year on average
+    period: 2007–2022
+    population: Men aged 50 and older in Irish public hospital records
+    note: Records of ruptured abdominal aortic aneurysm, corresponding to about 14 ruptures per 100,000 men aged 50 and older per
+      year in this analysis. It excludes unrecognised aneurysms.
+    source: hiqa_aaa
+    locator: Chapter 2, epidemiology of ruptured AAA
+    measure: hospital
+  abortion:
+  - value: 10,600 notifications
+    period: '2025'
+    population: Terminations carried out under the 2018 Act and notified to the Irish Minister for Health
+    note: This is a notified activity count. It does not describe Irish residents who obtained care outside Ireland.
+    source: doh_top_2025
+    locator: Reported annual total
+    measure: notifications
+  acute-cholecystitis:
+  - value: 20,886 admission episodes
+    period: January 2017–July 2023
+    population: Patients presenting to public hospitals in Ireland
+    note: National registry study included 17,958 distinct patients. Admission episodes can count the same person more than once.
+    source: cholecystitis_nqais
+    locator: Methods and results
+    measure: hospital
+  ada-scid:
+  - value: About 1 in 137,072
+    period: May 2022–2024
+    population: Babies screened in Ireland
+    note: Birth incidence from the first two and a half years of ADA-SCID screening. The small number of cases makes the estimate
+      uncertain.
+    source: newborn_2024
+    locator: Table 1
+    measure: diagnoses
+  alpha-1-antitrypsin-deficiency:
+  - value: About 1 in 25
+    period: Estimate cited in HSE patient guidance
+    population: People in Ireland
+    note: Estimated frequency of carrying the Z variant. It cannot be interpreted as the proportion with severe deficiency or symptoms.
+    source: hse_alpha1
+    locator: What causes AAT deficiency
+    measure: genetic
+  appendicitis:
+  - value: 5,816 appendicectomies
+    period: '2023'
+    population: Discharges from Irish public acute hospitals
+    note: A procedure count covering recorded appendix removals. This misses episodes managed without an operation and is not a complete
+      count of appendicitis.
+    source: hpo_2023
+    locator: Principal procedures on the digestive system, block 0926
+    measure: hospital
+  blood-clots:
+  - value: 172 per 100,000 adults per year
+    period: 2015–2022
+    population: Adults in Irish public hospital discharge data
+    note: Mean crude rate of hospital-recorded venous thromboembolism, including primary and secondary diagnoses. It does not cover
+      cases managed solely outside hospital.
+    source: vte_hipe
+    locator: Abstract and results
+    measure: hospital
+  blood-transfusion:
+  - value: 128,471 red-cell units issued
+    period: '2024'
+    population: Irish Blood Transfusion Service
+    note: Units supplied, which can include multiple units intended for a single patient. It does not state how many people received
+      a transfusion.
+    source: ibts_2024
+    locator: Chief Executive’s Report
+    measure: service
+  bowel-screening:
+  - value: 192,139
+    period: 2025, provisional
+    population: BowelScreen in Ireland
+    note: People screened through the programme. This is not a count of bowel cancers.
+    source: nss_2025
+    locator: Numbers screened per programme 2025
+    measure: service
+  breast-screening:
+  - value: 173,443
+    period: 2025, provisional
+    population: BreastCheck in Ireland
+    note: Mammography screening activity reported by BreastCheck. It does not include diagnostic imaging outside the programme.
+    source: nss_2025
+    locator: Numbers screened per programme 2025
+    measure: service
+  bronchiolitis:
+  - value: 24 RSV hospitalisations
+    period: Autumn 2024 programme update, published 16 December
+    population: Irish babies born from 1 September 2024 in the HSE programme comparison
+    note: RSV is an important cause of bronchiolitis. The figure covers RSV hospitalisations in this eligible birth cohort, and excludes
+      bronchiolitis caused by other viruses.
+    source: hse_rsv_2024
+    locator: HSE press release, first bullet group
+    measure: hospital
+  c-auris:
+  - value: 0 bloodstream cases reported
+    period: '2025'
+    population: Ireland, EARS-Net Candida bloodstream surveillance
+    note: This figure concerns bloodstream surveillance. It does not rule out carriage or infections at other sites.
+    source: earsnet_2025
+    locator: Candida species causing bloodstream infections, Table 34
+    measure: notifications
+  cervical-screening:
+  - value: 209,699
+    period: 2025, provisional
+    population: CervicalCheck in Ireland
+    note: Screening activity reported by CervicalCheck. It does not represent the number of HPV-positive results or people with cervical
+      cancer.
+    source: nss_2025
+    locator: Numbers screened per programme 2025
+    measure: service
+  colposcopy:
+  - value: 45,080 first attendances
+    period: 1 April 2023–31 December 2024
+    population: Women attending colposcopy through CervicalCheck in Ireland
+    note: Counts first attendances through this programme. The broader appointment total includes new and follow-up visits.
+    source: hse_colposcopy
+    locator: Colposcopy services
+    measure: service
+  congenital-hypothyroidism-cht:
+  - value: 1 in 845
+    period: 2017–2024
+    population: Babies screened in Ireland
+    note: Screening-based incidence of congenital hypothyroidism in newborns.
+    source: newborn_2024
+    locator: Table 1
+    measure: diagnoses
+  cot-death:
+  - value: '34'
+    period: 2022–2023 combined
+    population: Postneonatal deaths in Ireland
+    note: Deaths coded R95, sudden infant death syndrome, from 28 days to under 1 year. It does not include other causes of sudden
+      unexpected death.
+    source: noca_sids
+    locator: Table 4.4, postneonatal deaths
+    measure: mortality
+  cpe:
+  - value: 1,471 reported CPE detections
+    period: '2025'
+    population: Cases in Irish enhanced surveillance across reporting laboratories
+    note: Most detections represented carriage. The total is not a count of infections or everyone carrying CPE.
+    source: cpe_2025
+    locator: 2025 national trends and source of detection
+    measure: notifications
+  crohns-disease:
+  - value: 5.9 new cases per 100,000
+    period: 2011 estimate, as reported by Crohn’s & Colitis Ireland
+    population: Irish population estimate reported by the patient organisation
+    note: Historical incidence estimate, not the number of people living with Crohn’s now. The organisation notes the absence of
+      an official database.
+    source: crohn_irish
+    locator: What is the prevalence and incidence of IBD in Ireland?
+    measure: diagnoses
+  diabetic-retina-screening:
+  - value: 156,404
+    period: 2025, provisional
+    population: Diabetic RetinaScreen in Ireland
+    note: Number screened through the programme. This does not show how many had retinopathy.
+    source: nss_2025
+    locator: Numbers screened per programme 2025
+    measure: service
+  ectopic-pregnancy:
+  - value: 987 recorded ectopic pregnancies
+    period: '2024'
+    population: Ireland’s 19 maternity hospitals and units
+    note: IMIS recorded 18.9 ectopic pregnancies per 1,000 women who delivered. This denominator is deliveries, not all pregnancies
+      including early losses.
+    source: imis_2024
+    locator: Indicator 24, ectopic pregnancy
+    measure: registry
+  endoscopy:
+  - value: 83,788 upper digestive panendoscopy procedures recorded
+    period: '2023'
+    population: Irish public acute hospital discharges in HIPE
+    note: Panendoscopy with or without excision. This is a specific subgroup of endoscopy and excludes procedures in settings outside
+      the dataset.
+    source: hpo_2023
+    locator: Principal procedures on the digestive system, blocks 1005–1008
+    measure: hospital
+  food-poisoning:
+  - value: 4,481 Campylobacter notifications
+    period: 2025, provisional
+    population: Republic of Ireland
+    note: One pathogen associated with foodborne illness. Not every case is confirmed to be foodborne, and the figure excludes other
+      causes and untested cases.
+    source: hpsc2025
+    locator: Table 1, Campylobacter infection
+    measure: notifications
+  glutaric-aciduria-type-1-ga1:
+  - value: 1 in 85,379
+    period: 2018–2024
+    population: Babies screened in Ireland
+    note: The programme began screening for GA1 in 2018. This rate is based on detections since then.
+    source: newborn_2024
+    locator: Table 1
+    measure: diagnoses
+  haemochromatosis:
+  - value: About 1 in 83
+    period: Estimate cited in the HSE model of care
+    population: People in Ireland
+    note: Approximate proportion genetically predisposed to hereditary haemochromatosis. It does not mean everyone with that predisposition
+      develops iron overload.
+    source: hse_hh_model
+    locator: Irish genetic predisposition estimate
+    measure: genetic
+  heel-prick-screening:
+  - value: 54,319
+    period: '2024'
+    population: Babies screened through the Irish newborn bloodspot programme
+    note: Number screened for the programme’s conditions. Screening activity counts babies tested.
+    source: newborn_2024
+    locator: National Newborn Bloodspot Screening Programme, 2024 summary metrics
+    measure: service
+  hepatitis:
+  - value: 572 hepatitis B notifications
+    period: 2025, provisional
+    population: Republic of Ireland
+    note: Includes acute and chronic hepatitis B notifications. Other viral and non-viral causes of hepatitis are outside this figure.
+    source: hpsc2025
+    locator: Table 1, hepatitis B
+    measure: notifications
+  homocystinuria:
+  - value: 1 in 66,417
+    period: 2017–2024
+    population: Babies screened in Ireland
+    note: Incidence for the form targeted by the newborn bloodspot screening programme.
+    source: newborn_2024
+    locator: Table 1
+    measure: diagnoses
+  ivf:
+  - value: 712 publicly funded IVF cycles started
+    period: '2025'
+    population: Eight HSE-approved fertility providers reporting public programme activity
+    note: Counts IVF cycles started. It excludes ICSI cycles, treatment outside this programme and cycle outcomes such as live births.
+    source: hse_fertility_2025
+    locator: Section 3.3.1, IVF cycles started
+    measure: service
+  kidney-infection:
+  - value: 240 recorded indications
+    period: 2024 survey
+    population: Patients receiving antimicrobials in participating Irish acute hospitals
+    note: Instances of pyelonephritis recorded as a diagnostic site in the survey. This is a point-in-time treatment measure, not
+      a yearly case count.
+    source: irish_amp_ps
+    locator: Appendix, diagnostic sites
+    measure: hospital
+  maple-syrup-urine-disease-overview:
+  - value: 1 in 464,916
+    period: 2017–2024
+    population: Babies screened in Ireland
+    note: A screening-based incidence estimate with very few cases. It can vary substantially across periods.
+    source: newborn_2024
+    locator: Table 1
+    measure: diagnoses
+  mcadd-symptoms-causes-and-treatment:
+  - value: 1 in 17,076
+    period: 2018–2024
+    population: Babies screened in Ireland
+    note: Screening-based incidence since the programme added MCADD in 2018.
+    source: newborn_2024
+    locator: Table 1
+    measure: diagnoses
+  meningitis-and-septicaemia:
+  - value: 60 meningococcal disease notifications
+    period: 2025, provisional
+    population: Republic of Ireland
+    note: One cause of meningitis or septicaemia. Other organisms can cause both conditions, so the figure is not their combined
+      total.
+    source: hpsc2025
+    locator: Table 1, meningococcal disease
+    measure: notifications
+  miscarriage:
+  - value: About 20% of clinical pregnancies
+    period: Historical estimate cited in the Irish guideline
+    population: Clinical pregnancies, as defined in earlier Irish guidance
+    note: The current guideline cites this earlier estimate and explains that Irish recording is incomplete. It cannot be used to
+      calculate a current national annual count.
+    source: miscarriage_guideline
+    locator: Miscarriage Care in Ireland
+    measure: prevalence
+  mrsa:
+  - value: 2.73 per 100,000 people
+    period: '2025'
+    population: Republic of Ireland
+    note: Reported MRSA bloodstream infection rate. It excludes people who carry MRSA and many skin and other infections.
+    source: earsnet_2025
+    locator: Table 1, EU targets and Irish incidence data
+    measure: notifications
+  newborn-hearing-screening:
+  - value: 52,862
+    period: '2024'
+    population: Babies screened by the national Irish programme
+    note: Number of babies offered and completing screening is tracked separately. This is the number screened.
+    source: newborn_2024
+    locator: Table 14
+    measure: service
+  - value: '68'
+    period: '2024'
+    population: Babies in the Irish newborn hearing programme
+    note: Cases of permanent childhood hearing loss identified through the programme. Cases arising later are outside this measure.
+    source: newborn_2024
+    locator: Table 14 and screening yield section
+    measure: diagnoses
+  organ-donation:
+  - value: 207 transplants
+    period: '2025'
+    population: Transplant activity reported by the Irish Department of Health
+    note: The total includes cross-border sharing where applicable and relates to 69 deceased and 29 living donors. Some donors provide
+      more than one organ.
+    source: doh2025
+    locator: Organ donation and transplantation
+    measure: service
+  phenylketonuria-pku-symptoms-causes-and-treatment:
+  - value: 1 in 4,078
+    period: 2017–2024
+    population: Babies screened in Ireland
+    note: Screening-based incidence of PKU in newborns.
+    source: newborn_2024
+    locator: Table 1
+    measure: diagnoses
+  placenta-praevia:
+  - value: 15%
+    period: 2021–2022
+    population: Major obstetric haemorrhage cases associated with caesarean birth in the Irish audit
+    note: Proportion in which placenta praevia was identified as a cause. The denominator is cases of major bleeding after caesarean
+      birth in the audit.
+    source: npec_smm
+    locator: Major Obstetric Haemorrhage Clinical Audit in Ireland, key findings
+    measure: hospital
+  pneumonia:
+  - value: 15,182 discharges
+    period: '2023'
+    population: Irish acute hospitals in the national audit
+    note: Hospital discharges with pneumonia as the principal diagnosis. It excludes cases managed entirely in the community and
+      may include repeat admissions.
+    source: noca_pneumonia
+    locator: Pneumonia chapter, national hospital discharges
+    measure: hospital
+  postpartum-haemorrhage1:
+  - value: 12.0%
+    period: '2024'
+    population: Irish public hospital delivery discharge episodes
+    note: Share with a coded postpartum haemorrhage diagnosis. This includes documented episodes of varying severity and relies on
+      hospital recording.
+    source: hse_maternity_profile
+    locator: Trends in maternal health indicators, Postpartum Haemorrhage
+    measure: hospital
+  pre-eclampsia:
+  - value: 2.2%
+    period: '2024'
+    population: Irish public hospital delivery discharge episodes
+    note: Share with a recorded diagnosis of pre-eclampsia. It depends on inpatient documentation and coding and does not capture
+      all presentations outside delivery admissions.
+    source: hse_maternity_profile
+    locator: Trends in maternal health indicators, Pre-eclampsia
+    measure: hospital
+  vre:
+  - value: 110 resistant isolates
+    period: '2025'
+    population: Irish EARS-Net invasive Enterococcus faecium surveillance
+    note: Vancomycin-resistant E. faecium among 478 E. faecium isolates. It does not count carriers or represent all enterococcal
+      species.
+    source: earsnet_2025
+    locator: Enterococcus faecium annual results
+    measure: notifications
+  who-a-hip-replacement-is-for:
+  - value: 22,249 primary total hip replacements
+    period: 2015–2024
+    population: Operations recorded at 17 participating Irish public and private hospitals
+    note: The figure covers primary hip replacement in the registry. It excludes revision operations and is not the total from every
+      hospital.
+    source: noca_hip
+    locator: Executive summary and Figure 4.1
+    measure: service
 guides:
   asthma:
     aliases: wheezing reactive airways
@@ -2659,3 +3105,2000 @@ guides:
     - Make a GP appointment if facial symptoms keep returning or bother you. Contact a GP urgently for a painful, red or gritty eye, blurred vision or new difficulty looking at light.
     sources:
       HSE rosacea symptoms, treatment and eye advice: https://www2.hse.ie/conditions/rosacea/
+  abdominal-aortic-aneurysm:
+    aliases: AAA abdominal aortic aneurysm aorta rupture aneurysm
+    summary: An abdominal aortic aneurysm is a widening of the main artery in the abdomen. Many are found incidentally. A rupture
+      is a medical emergency.
+    emergency: If there is sudden severe pain in the abdomen or back, especially with faintness or collapse, call
+    symptoms:
+    - An unruptured aneurysm often causes no symptoms. Some people notice recurring abdominal or back pain or a pulsating feeling
+      in the abdomen. Sudden severe pain, sweating or collapse can occur if it bursts.
+    causes:
+    - The wall of the abdominal aorta weakens and stretches. Age, smoking and family history can raise risk. An aneurysm can enlarge
+      over time, which is why measurements matter.
+    diagnosis:
+    - An abdominal ultrasound usually provides the first measurement. A hospital team can use CT to plan treatment or investigate
+      an emergency. Ask what the diameter was and when it should be checked again.
+    care:
+    - Smaller aneurysms are often monitored with repeat scans. A vascular specialist considers repair when size, symptoms, growth
+      or other factors make the risks of waiting greater. Blood-pressure control and stopping smoking are also part of care.
+    complications:
+    - Rupture can cause major internal bleeding. Repair can lower that risk but brings its own risks and may require long-term follow-up,
+      especially after a stent graft.
+    help:
+    - Keep scan appointments even if you feel well. New pain in someone with a known aneurysm should be assessed promptly. Sudden
+      severe pain or collapse needs emergency help.
+  abortion:
+    kind: procedure
+    aliases: abortion termination of pregnancy Ireland My Options medical surgical abortion
+    summary: The HSE's My Options service can explain how to access abortion care in Ireland. Contact it early if you think you may
+      want an abortion, especially if you are unsure how far along you are.
+    symptoms:
+    - People seek abortion care for different reasons. A GP, clinic or hospital can discuss your situation confidentially. My Options
+      provides information about services and supports for people making a decision.
+    causes:
+    - Care may involve medicines or a procedure. The appropriate method and location depend on the stage of pregnancy and medical
+      circumstances. The HSE explains when abortion is available under Irish law.
+    diagnosis:
+    - The clinician will check how far along you are, ask about medical history and explain consent and the next steps. Ask about
+      pain relief, what to expect at home and how to contact the service out of hours.
+    care:
+    - Medical abortion usually involves prescribed medicines that cause cramps and bleeding. Surgical abortion takes place in hospital.
+      Your treating team will give instructions specific to the care arranged.
+    complications:
+    - Heavy bleeding, fever, severe pain or increasing illness can need urgent help. Your team may give you a follow-up pregnancy
+      test. Follow the instructions for when to use it and what to do if the result is positive.
+    help:
+    - Contact the treating clinician or the HSE My Options service if you have concerns before or afterwards. If you have severe
+      pain with faintness, collapse or very heavy bleeding, seek emergency help.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/abortion/after/
+  acute-cholecystitis:
+    aliases: acute cholecystitis inflamed gallbladder gallstones right upper abdominal pain
+    summary: Acute cholecystitis is inflammation of the gallbladder. Persistent pain under the right ribs, especially with fever
+      or jaundice, needs urgent assessment.
+    symptoms:
+    - The pain is often steady and can spread to the right shoulder or back. It may worsen during a deep breath. Fever, nausea or
+      vomiting can occur.
+    causes:
+    - A gallstone can block the tube draining the gallbladder. The trapped bile and pressure can cause inflammation and sometimes
+      infection. Less commonly, cholecystitis occurs without a stone.
+    diagnosis:
+    - A clinician examines the abdomen and checks blood tests for inflammation and liver problems. Ultrasound is often the first
+      scan. Other imaging may be needed if the diagnosis remains uncertain.
+    care:
+    - Hospital treatment can include pain relief, fluid through a vein and antibiotics where indicated. A surgical team decides when
+      gallbladder removal is suitable or whether another approach is safer.
+    complications:
+    - Untreated inflammation can damage or perforate the gallbladder. A stone in the main bile duct can cause jaundice, serious infection
+      or pancreatitis.
+    help:
+    - Seek urgent help for persistent severe pain under the right ribs. Fever, yellowing of the eyes or skin, faintness or rapidly
+      worsening illness warrant prompt emergency assessment.
+  ada-scid:
+    aliases: ADA SCID adenosine deaminase deficiency severe combined immunodeficiency
+    summary: ADA-SCID is an inherited immune condition. Newborn screening can identify babies who need urgent specialist assessment
+      before serious infections occur.
+    symptoms:
+    - A baby can seem well at birth. Untreated babies may develop repeated or severe infections, persistent diarrhoea, oral thrush
+      or poor weight gain in the first months of life.
+    causes:
+    - Without enough adenosine deaminase, substances that damage developing immune cells build up. This weakens several parts of
+      the immune system and makes otherwise ordinary infections dangerous.
+    diagnosis:
+    - A high-risk heel-prick result needs urgent specialist assessment and confirmatory blood tests. Clinicians may check different
+      immune cells, enzyme activity and the responsible gene.
+    care:
+    - An immunology team can advise on infection precautions and decide which treatment is appropriate. Options can include enzyme
+      replacement, a stem-cell transplant or gene therapy, depending on the case and access.
+    complications:
+    - Serious infections can affect the lungs or other organs. Early detection and specialist treatment improve the outlook. Discuss
+      vaccines, feeding and contact with sick people directly with the baby's team.
+    help:
+    - If the screening team contacts you, follow its instructions immediately even if your baby seems well. For fever or signs of
+      infection in a baby with suspected or confirmed ADA-SCID, use the emergency plan given by the team.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/heel-prick-screening/conditions/ada-scid/
+  alpha-1-antitrypsin-deficiency:
+    aliases: alpha 1 AATD SERPINA1 alpha one inherited COPD liver disease
+    summary: Alpha-1 antitrypsin deficiency can contribute to lung or liver disease. A blood test can help explain otherwise unexpected
+      lung disease or identify who in a family might need follow-up.
+    symptoms:
+    - Lung problems can cause breathlessness, wheeze or a persistent cough, often in adulthood. Liver problems can occur in childhood
+      or adulthood and may cause jaundice or an abnormal liver blood test.
+    causes:
+    - The liver makes a protein that helps protect the lungs from damage. Some inherited variants decrease the amount reaching the
+      bloodstream or cause abnormal protein to build up in the liver.
+    diagnosis:
+    - Clinicians can measure alpha-1 antitrypsin in the blood and use further tests to identify its type or the gene variant. They
+      may offer breathing tests and liver assessment and discuss testing relatives.
+    care:
+    - Care depends on which organs are affected. It can involve avoiding tobacco smoke, treating associated lung disease, vaccination
+      advice and specialist liver or respiratory follow-up.
+    complications:
+    - Possible complications include emphysema, bronchiectasis or liver scarring. A carrier result and severe deficiency carry different
+      risks, so ask the team to explain your specific result.
+    help:
+    - Contact your GP if you have unexplained breathlessness, early COPD, abnormal liver tests or a close relative with alpha-1 deficiency.
+      Ask about testing through the Irish national programme.
+    sources:
+      Clinical guidance and further reading: https://www.hiqa.ie/areas-we-work/health-information/data-collections/alpha-one-foundation-registry
+  anaphylaxis:
+    aliases: anaphylaxis severe allergic reaction adrenaline auto-injector epipen
+    summary: Anaphylaxis is a severe allergic reaction that can affect breathing or circulation within minutes. Give adrenaline promptly
+      if the person has an auto-injector and call for an ambulance.
+    emergency: If you think someone is having anaphylaxis, use their adrenaline auto-injector if available and call
+    evidence_gap: Hospital statistics can track treated episodes, but a verified national estimate covering all anaphylaxis episodes
+      was not identified for this guide.
+    symptoms:
+    - Warning signs include swelling of the tongue or throat, difficult or noisy breathing, dizziness, faintness or collapse. A rash
+      may occur, but a severe reaction can happen without one.
+    causes:
+    - An immune reaction releases substances that can narrow the airways and drop blood pressure. Foods, insect stings and medicines
+      are common triggers, although the cause is not always identifiable.
+    diagnosis:
+    - Anaphylaxis is recognised and treated from its symptoms. Hospital staff may take blood samples or refer for allergy testing
+      later to investigate the trigger.
+    care:
+    - Use the prescribed adrenaline auto-injector without delay and follow the emergency operator's instructions. Keep the person
+      lying down if possible. If breathing is difficult they may need to sit up slowly, with legs extended. Do not let them stand
+      or walk.
+    complications:
+    - Symptoms can recur after initial improvement, which is one reason hospital assessment matters. After recovery, an allergy team
+      can review triggers, avoidance and the action plan.
+    help:
+    - Anaphylaxis always needs emergency assessment. If symptoms have not improved after five minutes, the HSE advises giving a second
+      injector if available. Tell emergency staff what was given and when.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/anaphylaxis/
+  angina:
+    aliases: angina stable angina unstable angina coronary chest pain GTN
+    summary: Angina often feels like tightness or pressure during exertion. A changing pattern, symptoms at rest or pain that persists
+      can signal a heart emergency.
+    emergency: If new chest pressure is severe, occurs at rest or is accompanied by breathlessness, sweating or nausea, call
+    evidence_gap: Irish studies often group angina with other coronary heart disease. That broader diagnosis cannot establish how
+      many people have angina specifically.
+    symptoms:
+    - Pressure, heaviness or a squeezing feeling may spread to the arm, jaw, neck or back. Stable angina often follows a recognisable
+      pattern, such as symptoms while walking uphill that ease with rest.
+    causes:
+    - The heart muscle needs more oxygen during activity. Narrowed coronary arteries may limit that extra supply. Other mechanisms
+      can cause angina even when larger arteries do not look blocked.
+    diagnosis:
+    - A clinician asks what triggers symptoms and how long they last. An ECG and other tests can help assess the heart. Suspected
+      acute coronary syndrome needs emergency assessment with tests such as ECGs and blood tests.
+    care:
+    - Treatment can include medicines for symptoms and reduction of future heart risks. Some people need a procedure to improve blood
+      flow. If you have a prescribed angina plan, follow its instructions for use of a GTN spray and for emergency help.
+    complications:
+    - A change in symptoms can signal unstable angina or a heart attack. Tell your GP if the same activities start to trigger symptoms
+      sooner, or if daily activities are limited.
+    help:
+    - Seek assessment for chest discomfort brought on by effort. For new, persistent or severe symptoms, or symptoms that differ
+      from your usual pattern, get emergency advice promptly.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/angina/
+  aortic-dissection:
+    aliases: aortic dissection aorta tear acute aortic syndrome chest back pain
+    summary: Aortic dissection happens when blood enters a tear in the wall of the body's main artery. Sudden severe chest or back
+      pain can be an emergency.
+    emergency: For sudden severe chest or upper back pain, especially with faintness, weakness or trouble breathing, call
+    evidence_gap: The HSE patient guidance describes aortic dissection but does not give an Irish national rate. Hospital series
+      that mix dissection with aneurysm cannot identify the frequency of dissection on its own.
+    symptoms:
+    - Pain can begin abruptly and may move from the chest into the back or abdomen. Some people collapse or experience shortness
+      of breath, sudden weakness or changes in speech.
+    causes:
+    - A tear in the inner layer lets blood separate layers of the aorta. High blood pressure and some inherited conditions can increase
+      risk. The tear can reduce blood flow to nearby organs.
+    diagnosis:
+    - Emergency staff assess symptoms and circulation and usually use urgent imaging to locate the tear. A CT scan can show which
+      part of the aorta is involved and guide the next step.
+    care:
+    - Treatment starts in hospital and can involve medicines to reduce strain on the aorta, surgery or a stent procedure. Tears affecting
+      the section closest to the heart usually need urgent surgical assessment.
+    complications:
+    - Complications include internal bleeding, stroke and reduced blood flow to the kidneys or other organs. Survivors usually need
+      regular imaging and careful blood-pressure management.
+    help:
+    - Sudden severe chest or back pain needs emergency assessment. Tell staff about any known aortic condition, family history or
+      previous aortic operation.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/aortic-dissection/
+  appendicitis:
+    aliases: appendicitis appendix right lower abdominal pain appendicectomy
+    summary: Appendicitis can cause worsening abdominal pain, often on the lower right. Seek urgent care, especially if movement
+      makes the pain worse or you feel sick.
+    symptoms:
+    - Pain can start around the belly button and move to the lower right abdomen. Loss of appetite, nausea, vomiting or fever can
+      occur. Children, older people and people who are pregnant can have less typical symptoms.
+    causes:
+    - The appendix becomes inflamed, sometimes because its opening is blocked. Pressure and infection can build, and an untreated
+      appendix can perforate.
+    diagnosis:
+    - Clinicians assess the pain and examine your abdomen. Blood and urine tests can help identify other causes. Depending on your
+      circumstances, an ultrasound, CT or observation may be needed.
+    care:
+    - Most people are treated with an operation to remove the appendix. Antibiotics are used around surgery and may be used as part
+      of another treatment plan in selected cases.
+    complications:
+    - A burst appendix can cause an abscess or infection of the abdominal lining. After surgery, contact the treating team if pain
+      increases, fever returns or a wound becomes red or starts to leak.
+    help:
+    - Seek urgent assessment if abdominal pain is getting worse, persistent or moving to the right lower abdomen. Go to an emergency
+      department if the pain is severe or you are very unwell.
+  babies-who-are-small-growing-slowly:
+    aliases: small baby pregnancy growth restriction FGR SGA fetal growth ultrasound
+    summary: Some babies are naturally small. If a baby's growth slows or measurements are well below the expected range, the maternity
+      team may offer closer monitoring.
+    evidence_gap: Low birth weight and fetal growth restriction measure different things. Irish birthweight statistics also count
+      some babies who are small because they were born early.
+    symptoms:
+    - You may notice no change. A bump measuring small or an ultrasound suggesting the baby is smaller than expected can prompt review.
+      Any change in the baby's usual movements needs immediate assessment.
+    causes:
+    - Some babies are small because of family characteristics. In fetal growth restriction, the baby may be growing more slowly than
+      expected, sometimes because the placenta is not supplying enough oxygen or nutrients.
+    diagnosis:
+    - The maternity team considers timing of the pregnancy and tracks growth on scans. It may use Doppler ultrasound to check blood
+      flow and assess the amount of fluid around the baby.
+    care:
+    - Management may involve repeat scans, monitoring movements and planning when and where to give birth. If blood flow or growth
+      becomes concerning, an earlier birth may be considered.
+    complications:
+    - Growth restriction can increase the risk of complications before and after birth. A baby's size alone does not determine the
+      plan. The trend, blood flow and stage of pregnancy also matter.
+    help:
+    - Keep appointments for growth checks. Contact the maternity service immediately if movements decrease or change, regardless
+      of when your next scan is due.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/babies-who-are-small-growing-slowly/
+  blood-clots:
+    aliases: blood clots venous thromboembolism VTE deep vein thrombosis pulmonary embolism
+    summary: A clot in a deep vein can cause one-sided leg symptoms. If part travels to the lungs it can cause a pulmonary embolism,
+      which needs emergency care.
+    emergency: If sudden breathlessness or chest pain occurs, or the person coughs blood or collapses, call
+    symptoms:
+    - A deep vein clot may cause swelling, pain, warmth or a change in colour in one leg. A lung clot can cause sudden breathlessness,
+      chest pain with breathing, coughing blood or collapse.
+    causes:
+    - This guide focuses on clots in veins. Risk rises after some operations, during periods of limited mobility and around pregnancy.
+      Previous clots and some types of cancer can also increase risk.
+    diagnosis:
+    - Clinicians use the symptoms and risk factors to decide which tests are needed. A leg ultrasound can detect a deep vein clot.
+      Suspected pulmonary embolism may need chest imaging.
+    care:
+    - Treatment usually includes an anticoagulant to prevent the clot growing while the body clears it. The choice and duration depend
+      on why the clot occurred, bleeding risk and other health conditions.
+    complications:
+    - A lung clot can be life-threatening. Some people have swelling or discomfort long after a leg clot. Treatment can cause bleeding,
+      so ask how to recognise important warning signs.
+    help:
+    - Arrange urgent same-day assessment for unexplained one-sided swelling or pain. For breathing difficulty, collapse or possible
+      pulmonary embolism, seek emergency help immediately.
+  blood-clots-pregnancy:
+    aliases: blood clots pregnancy postpartum VTE pulmonary embolism deep vein thrombosis
+    summary: Pregnancy and the weeks after birth raise the risk of a blood clot. Report a new swollen, painful leg or sudden breathing
+      symptoms urgently.
+    emergency: If you have sudden breathlessness, chest pain or collapse during pregnancy or after birth, call
+    evidence_gap: The Irish national guideline sets out prevention and diagnosis but is not a count of how many pregnancies are affected.
+      Figures from all adult hospital admissions include patients outside pregnancy.
+    symptoms:
+    - A clot in the leg or pelvis can cause pain, tenderness or swelling on one side. A clot in the lungs can cause sudden breathlessness,
+      pain on breathing, coughing blood or feeling faint.
+    causes:
+    - Blood clots more easily during pregnancy. Reduced movement, a caesarean birth, previous clots and some medical conditions can
+      raise risk further. Risk assessment can change after birth.
+    diagnosis:
+    - The maternity or emergency team assesses symptoms and may arrange an ultrasound or lung imaging. Tell staff how far along you
+      are or how recently you gave birth.
+    care:
+    - Some people are offered preventive injections during pregnancy or after birth. If a clot is diagnosed, the team chooses a suitable
+      anticoagulant and explains the plan for labour, recovery and breastfeeding.
+    complications:
+    - A clot in the lungs can be life-threatening. Finding and treating clots promptly helps reduce that risk. Ask when to restart
+      or stop prescribed injections around birth and how to manage any bleeding.
+    help:
+    - Contact your maternity team urgently for possible leg clot symptoms. Sudden breathing difficulty, chest pain, coughing blood
+      or collapse needs emergency help even after you have left maternity care.
+    sources:
+      Clinical guidance and further reading: https://www2.healthservice.hse.ie/organisation/national-pppgs/prevention-and-management-of-venous-thromboembolism-in-pregnancy/
+  blood-transfusion:
+    kind: procedure
+    aliases: blood transfusion red cells platelets haemoglobin transfusion reaction
+    summary: A transfusion replaces a part of blood that your body needs. Ask which component is planned, why it is needed and what
+      symptoms to report during or afterwards.
+    symptoms:
+    - A clinician may recommend red cells after significant blood loss or for some cases of severe anaemia. Platelets and other blood
+      components have different uses, including treatment of some bleeding problems.
+    causes:
+    - Blood components are given through a small tube in a vein. The team checks your identity, blood group and the compatibility
+      of the planned product before giving it.
+    diagnosis:
+    - Tell the team if you have had a reaction to blood products before or have concerns about transfusion. If there is time, ask
+      whether an alternative is appropriate and how you will be monitored.
+    care:
+    - Your blood pressure, pulse and temperature are checked. Tell staff immediately if you feel shivery, hot, breathless or develop
+      pain, itching or a rash during the transfusion.
+    complications:
+    - Some reactions occur after leaving the unit. Contact the treating team if you develop fever, a rash, dark urine or other unusual
+      symptoms after a transfusion. Severe breathing problems or collapse need emergency help.
+    help:
+    - Ask whether you need a further blood test and whom to contact out of hours. Tell future treating teams about any suspected
+      reaction.
+  bowel-screening:
+    kind: test
+    aliases: bowelscreen FIT bowel cancer stool home screening kit
+    summary: BowelScreen offers a home stool test for eligible people in Ireland. The result tells you whether further checks are
+      needed for blood in the sample.
+    symptoms:
+    - Screening is for eligible people who feel well. Check the current age range and your registration with BowelScreen. Tell your
+      GP about symptoms even if you are eligible for screening.
+    causes:
+    - The faecal immunochemical test or FIT detects small amounts of blood in a stool sample. Several conditions can cause bleeding,
+      so a result above the threshold needs investigation.
+    diagnosis:
+    - Check the instructions and expiry date on the kit. It explains how to collect the sample so it does not touch toilet water
+      and how to return it.
+    care:
+    - You collect a small sample at home, seal it in the tube and post it according to the kit instructions. The programme will contact
+      you about the result and arrange next steps where needed.
+    complications:
+    - A test above the threshold usually leads to an assessment for colonoscopy. A result below the threshold cannot rule out bowel
+      cancer or other causes of symptoms.
+    help:
+    - Contact your GP if you notice bleeding, a persistent change in bowel habits or unexplained weight loss. Contact BowelScreen
+      if you are eligible and have not received an invitation or expected result.
+    sources:
+      Clinical guidance and further reading: https://www2.healthservice.hse.ie/organisation/nss/activity-and-performance-data/
+  braxton-hicks:
+    aliases: Braxton Hicks practice contractions false labour tightenings pregnancy
+    summary: Braxton Hicks are intermittent tightenings of the womb. Regular, stronger or painful contractions, especially before
+      37 weeks, need advice from your maternity unit.
+    evidence_gap: There is no usable national denominator for brief, self-reported Braxton Hicks tightenings in the maternity data
+      consulted. Birth counts do not measure this symptom.
+    symptoms:
+    - The abdomen may tighten and then soften. Braxton Hicks often have no regular pattern. Labour contractions tend to become stronger,
+      closer together and more sustained.
+    causes:
+    - The womb muscles tighten briefly during pregnancy. The pattern alone cannot always distinguish early labour from practice tightenings,
+      especially when pregnancy is preterm.
+    diagnosis:
+    - If you contact maternity triage, staff will ask how far along you are, how often the contractions come, whether they hurt and
+      whether you have bleeding, fluid loss or changes in movement.
+    care:
+    - If the maternity team is satisfied they are practice tightenings, changing position, resting or drinking water can help you
+      feel more comfortable. Follow instructions if they ask you to track the timing.
+    complications:
+    - Practice tightenings do not themselves indicate birth is imminent. A change in pattern alongside pelvic pressure, backache
+      or fluid loss could need assessment for labour or another cause.
+    help:
+    - Contact the maternity unit for regular painful contractions, bleeding, possible broken waters or a change in movements. Get
+      advice urgently if you may be in labour before 37 weeks.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/braxton-hicks/
+  breast-screening:
+    kind: test
+    aliases: BreastCheck mammogram breast screening Irish national screening
+    summary: BreastCheck offers mammograms to eligible people in Ireland. A recall means more information is needed and may lead
+      to extra images, ultrasound or a biopsy.
+    symptoms:
+    - Screening aims to find breast cancer before it can be felt or causes other symptoms. Check eligibility and registration with
+      BreastCheck. Arrange an examination with your GP if you notice a change in your breast.
+    causes:
+    - A mammogram uses low-dose X-rays to look for changes in breast tissue. Screening can find early cancers and can also find changes
+      that turn out to be benign.
+    diagnosis:
+    - Tell the team if you have breast implants, mobility needs or a previous breast operation. Ask about adjustments if previous
+      mammograms were painful or difficult.
+    care:
+    - A radiographer positions each breast and briefly compresses it to take clear images. Let them know if you need to pause. The
+      appointment usually involves several images and the results are sent after review.
+    complications:
+    - Further tests after a recall can include more mammograms, ultrasound and a small tissue sample. Some cancers are missed by
+      screening, and screening can also find slow-growing changes that might never have caused harm.
+    help:
+    - See your GP about a new lump, nipple change or any persistent unexplained breast change. Contact BreastCheck if you need to
+      confirm an invitation, rearrange your appointment or follow up on a result.
+    sources:
+      Clinical guidance and further reading: https://www2.healthservice.hse.ie/organisation/nss/activity-and-performance-data/
+  breech-presentation:
+    aliases: breech baby breech presentation external cephalic version ECV
+    summary: A breech baby is positioned feet or bottom first. If the baby remains breech near the end of pregnancy, your maternity
+      team will discuss whether to try turning the baby and how to plan the birth.
+    evidence_gap: Hospital statistics for breech vaginal births count a specific mode of delivery. They exclude breech babies delivered
+      by caesarean and babies who turned before birth.
+    symptoms:
+    - Breech position usually causes no symptoms. The maternity team may suspect it when examining your abdomen. How kicks feel by
+      itself cannot confirm the baby's position.
+    causes:
+    - Babies can change position during pregnancy. Some remain breech close to the birth. Breech position may be more likely with
+      a multiple pregnancy or certain placental or uterine conditions.
+    diagnosis:
+    - An ultrasound confirms the position and helps the team decide whether external cephalic version, a procedure to try turning
+      the baby from outside, is suitable.
+    care:
+    - The team can explain the chance of turning the baby and what birth options are appropriate. Possible plans include a caesarean
+      or a vaginal breech birth in carefully selected circumstances with the right staff and facilities.
+    complications:
+    - A breech birth needs a plan because there can be increased risks, such as the cord slipping down if the waters break. After
+      a turning attempt, the team may monitor the baby's heartbeat.
+    help:
+    - If your waters break or labour starts before your agreed plan, contact the maternity unit promptly and tell them the baby is
+      breech. Report reduced movements or vaginal bleeding immediately.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/breech-presentation/
+  bronchiolitis:
+    aliases: bronchiolitis baby RSV infant wheeze breathing feeding
+    summary: Bronchiolitis affects the small airways of babies and young children. Watch how hard your baby is working to breathe
+      and how much they are drinking.
+    emergency: If a baby stops breathing, has blue or grey lips or is very difficult to wake, call
+    symptoms:
+    - It often begins with a blocked nose or cough, followed by faster or noisier breathing and difficulty feeding. The illness can
+      worsen over the first few days. Young babies may have pauses in breathing.
+    causes:
+    - A virus makes the smallest breathing tubes inflamed and clogged with mucus. RSV is one common cause, but several other viruses
+      can cause the same illness.
+    diagnosis:
+    - A clinician checks breathing effort, feeding, hydration and sometimes oxygen level. A typical mild case can often be assessed
+      without a chest X-ray or blood test.
+    care:
+    - Offer smaller, more frequent feeds if the baby can manage them. Hospital care may provide oxygen or fluids if needed. Medicines
+      used for asthma or bacterial infection are not routinely helpful for bronchiolitis.
+    complications:
+    - Poor feeding can cause dehydration, and breathing can become tiring. Very young babies, premature babies and those with some
+      heart or lung conditions are at greater risk.
+    help:
+    - Get urgent advice if breathing becomes faster or harder, feeds fall markedly or nappies are much drier than usual. Get emergency
+      help for breathing pauses, a change in colour or severe breathing difficulty.
+  c-auris:
+    aliases: Candida auris C auris Candidozyma auris fungal colonisation infection
+    summary: Candida auris is a fungus that can be carried without symptoms or cause serious infection, mainly in healthcare settings.
+      A positive screen and a bloodstream infection have different implications.
+    symptoms:
+    - Healthy carriers can have no symptoms. In a very ill patient, fever or deterioration can prompt testing for several causes.
+      Symptoms alone cannot distinguish Candida auris from other infections.
+    causes:
+    - The fungus can be carried on skin and spread in healthcare environments. It may resist some antifungal medicines. Patients
+      who have invasive devices or need complex hospital care may be more vulnerable to infection.
+    diagnosis:
+    - A laboratory identifies the fungus in samples taken to screen for carriage or investigate infection. Tell staff if you have
+      a previous positive result or were cared for in a hospital where there was an outbreak.
+    care:
+    - Carriage alone is generally managed with appropriate infection-control precautions. If it causes an infection, a hospital team
+      chooses treatment using the site of infection and laboratory results.
+    complications:
+    - Invasive disease can cause severe illness, including bloodstream infection. A positive screening result can also affect precautions
+      at later hospital visits.
+    help:
+    - If you are told you carry Candida auris, ask what precautions apply to you and inform future healthcare teams. Seek immediate
+      medical assessment if a vulnerable patient becomes severely unwell.
+    sources:
+      Clinical guidance and further reading: https://hpsc.ie/a-z/microbiologyantimicrobialresistance/infectioncontrolandhai/candidaauris
+  carbon-monoxide-poisoning:
+    aliases: carbon monoxide poisoning CO alarm headache fumes boiler
+    summary: Carbon monoxide cannot be seen or smelled. A headache or dizziness affecting more than one person indoors, or a carbon
+      monoxide alarm, should prompt immediate action.
+    emergency: If you suspect carbon monoxide poisoning, leave the building if you can do so safely and call
+    evidence_gap: Poison-centre enquiries or hospital cases do not cover every domestic exposure or alarm. A verified Irish rate
+      covering all poisonings was not identified.
+    symptoms:
+    - Symptoms can include headache, nausea, dizziness, weakness and confusion. Severe exposure can cause chest pain, collapse or
+      seizures. Symptoms can improve outdoors and return in the building.
+    causes:
+    - Carbon monoxide from incomplete burning can prevent the blood from carrying oxygen effectively. Faulty or poorly ventilated
+      fuel-burning appliances and use of engines or generators in enclosed spaces can cause dangerous exposure.
+    diagnosis:
+    - Emergency clinicians ask about exposure and other people affected. They can use a blood test to measure carbon monoxide exposure.
+      A normal reading on an ordinary fingertip oxygen monitor does not rule it out.
+    care:
+    - Get everyone to fresh air if it is safe. Get medical advice immediately and follow emergency instructions. Hospital treatment
+      may involve oxygen and monitoring.
+    complications:
+    - Serious exposure can harm the brain and heart. Pregnant people and those with heart or lung disease may need particular attention.
+      Have the source investigated before returning or using an affected appliance.
+    help:
+    - Leave if you suspect exposure or an alarm sounds. Seek emergency help for symptoms and do not re-enter until it has been declared
+      safe. Tell responders about others or pets still inside.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/carbon-monoxide-poisoning/
+  cellulitis:
+    aliases: cellulitis skin infection hot swollen spreading redness
+    summary: Cellulitis is an infection of deeper skin and tissue. A painful area that is hot, swollen or spreading needs prompt
+      medical assessment.
+    evidence_gap: A national antimicrobial survey combines skin and soft-tissue infections. It cannot tell how many participants
+      had cellulitis specifically or describe community prevalence.
+    symptoms:
+    - The affected area may feel tender, warm and swollen. Redness can be harder to see on darker skin. Some people feel feverish
+      or shivery, or notice swollen glands nearby.
+    causes:
+    - Bacteria can enter through small breaks in the skin, including cracks from eczema or athlete's foot, wounds or ulcers. The
+      point of entry is not always visible.
+    diagnosis:
+    - A clinician usually examines the area and checks how quickly it has changed and how unwell you feel. A clot or other skin problem
+      can look similar, so the whole clinical picture matters.
+    care:
+    - Treatment usually involves antibiotics. A clinician can advise how to track the area and when it should begin to improve. More
+      serious infection can require treatment through a vein.
+    complications:
+    - The infection may spread or enter the bloodstream. A person who becomes much more unwell, develops increasing pain or sees
+      rapid spread needs urgent reassessment.
+    help:
+    - Contact your GP urgently for a hot, painful, swollen patch, particularly if it is spreading or near an eye. Get emergency help
+      for severe illness, confusion, collapse or trouble breathing.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/cellulitis/
+  cervical-screening:
+    kind: test
+    aliases: CervicalCheck cervical screening HPV smear test Ireland
+    summary: CervicalCheck looks for high-risk HPV, which can cause changes in cervical cells over time. The programme explains what
+      your result means and when a repeat test or colposcopy is needed.
+    symptoms:
+    - Routine screening is offered to eligible people with a cervix, usually between ages 25 and 65. It is designed for people without
+      symptoms. Ask your GP about bleeding between periods, after sex or after menopause.
+    causes:
+    - The laboratory tests the sample for high-risk HPV. If found, the laboratory checks the cells for changes. Having HPV does not
+      by itself mean you have cancer.
+    diagnosis:
+    - You can check your place on the register and book with a registered GP or clinic. Tell the sample taker about relevant previous
+      treatment or concerns about pain, anxiety or accessibility.
+    care:
+    - The sample taker uses a speculum to see the cervix and a soft brush to collect cells. You can ask them to explain each step
+      and pause or stop at any point.
+    complications:
+    - Follow-up depends on what was found. Some people are asked to repeat screening while others are referred for colposcopy. Screening
+      can miss some conditions and does not investigate all causes of bleeding.
+    help:
+    - Check the result and the requested follow-up date. See your GP promptly if symptoms develop, even with a recent normal screen
+      or while waiting for a screening appointment.
+    sources:
+      Clinical guidance and further reading: https://www2.healthservice.hse.ie/organisation/nss/activity-and-performance-data/
+  chest-pain:
+    aliases: chest pain chest tightness chest pressure heart attack pain breathing
+    summary: Chest pain has many causes. New pressure, tightness or severe discomfort with sweating, nausea, breathlessness or pain
+      spreading to the arm or jaw needs emergency help.
+    emergency: If chest pain is sudden, severe, lasts several minutes or comes with breathlessness, sweating or faintness, call
+    evidence_gap: Chest pain is a symptom with many causes. Irish heart attack or hospital attendance figures measure selected outcomes
+      and cannot quantify all episodes.
+    symptoms:
+    - Describe when discomfort started, where it spreads and whether it is brought on by activity, breathing or movement. Heart symptoms
+      can include unusual breathlessness or nausea even when pain is mild.
+    causes:
+    - Chest muscles, the food pipe, heart and lungs can all cause pain. Some causes are serious, including a heart attack, a lung
+      clot or a problem with the aorta.
+    diagnosis:
+    - Emergency clinicians may check the heart tracing, blood tests and oxygen level, with imaging where indicated. A single normal
+      test may need to be repeated depending on symptoms and timing.
+    care:
+    - Treatment depends on the cause. For possible heart or lung emergencies, call for an ambulance instead of driving yourself.
+      Follow the emergency operator's instructions.
+    complications:
+    - A delay can matter in emergencies even if pain eases. Recurrent pain with exertion, a new pattern or other symptoms deserves
+      assessment.
+    help:
+    - For important warning signs seek emergency help. If pain is less acute but persists or keeps coming back, arrange a GP assessment
+      rather than assuming it is indigestion or a muscle problem.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/chest-pain/
+  colposcopy:
+    kind: test
+    aliases: colposcopy abnormal cervical screening HPV cervix biopsy LLETZ
+    summary: Colposcopy is a closer examination of the cervix. It can help determine whether cell changes need monitoring, sampling
+      or treatment.
+    symptoms:
+    - You may be referred after a cervical screening result or because a clinician wants to investigate an abnormality. A referral
+      does not automatically mean that cancer was found.
+    causes:
+    - A microscope outside the body magnifies the cervix. Liquids applied to the surface make areas of change easier to see. A small
+      tissue biopsy gives the laboratory more information if needed.
+    diagnosis:
+    - Read your appointment instructions and tell the clinic if you are pregnant, taking medicines that affect bleeding, or have
+      concerns about the examination. Ask whether you can bring someone for support.
+    care:
+    - A clinician inserts a speculum to see the cervix. You may feel a brief pinch if a sample is taken. Some clinics can offer treatment
+      at the same visit when appropriate and after discussing consent.
+    complications:
+    - Light bleeding or discharge can follow a biopsy or treatment. The clinic will give instructions for recovery. Severe pain,
+      heavy bleeding, fever or unpleasant-smelling discharge need medical advice.
+    help:
+    - Ask how the clinic provides results and how long they usually take. If you have not heard by then, follow up with the clinic.
+      Attend any return appointment after treatment or biopsy.
+  congenital-hypothyroidism-cht:
+    aliases: congenital hypothyroidism CHT newborn thyroid heel prick TSH
+    summary: Congenital hypothyroidism means a baby is born with too little thyroid hormone. Screening helps find babies early, when
+      treatment can protect growth and development.
+    symptoms:
+    - Many babies show no obvious signs at birth. Some develop prolonged jaundice, unusual sleepiness, feeding difficulties or constipation.
+      The screening result can be the first sign.
+    causes:
+    - The thyroid gland may be absent, be in an unusual place or be unable to make enough hormone. Thyroid hormone is important for
+      brain development and growth.
+    diagnosis:
+    - A high-risk heel-prick result is followed by blood tests to measure thyroid hormone and thyroid-stimulating hormone. The team
+      may investigate why the gland is underactive without delaying needed treatment.
+    care:
+    - A specialist prescribes replacement thyroid hormone and arranges repeat blood tests as the baby grows. Ask how to give the
+      medicine consistently and what to do if a dose is missed or vomited.
+    complications:
+    - Delayed treatment can affect development. Some babies need lifelong medicine and others may be reassessed later. Continue treatment
+      and follow-up until the specialist advises a change.
+    help:
+    - Follow the screening team's appointment instructions promptly. If there is a problem giving the medicine, contact the prescriber
+      before changing the dose or stopping it.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/heel-prick-screening/conditions/congenital-hypothyroidism/
+  cot-death:
+    aliases: cot death SIDS sudden infant death syndrome safer sleep
+    summary: Cot death, or sudden infant death syndrome, is the unexplained death of a baby after investigation. A safer sleep environment
+      lowers the risk.
+    emergency: If a baby is unresponsive or not breathing normally, call
+    symptoms:
+    - There is no reliable symptom that predicts SIDS. Call emergency services if a baby is unresponsive or is not breathing normally
+      and follow the operator's instructions.
+    causes:
+    - The exact cause is unknown. Risk can vary with the baby's stage of development and sleep environment. Exposure to tobacco smoke
+      and unsafe sleep surfaces are important avoidable risks.
+    diagnosis:
+    - When a baby dies unexpectedly, specialists investigate possible causes. The term SIDS is used when the death remains unexplained
+      after assessment. This investigation is different from medical care when a baby is found unresponsive.
+    care:
+    - Put your baby on their back for every sleep, on a flat firm surface in their own clear cot in your room. Keep pillows, loose
+      bedding and soft objects away, and avoid falling asleep with a baby on a sofa or chair.
+    complications:
+    - Unexpected infant death can be devastating. Maternity, bereavement and GP services can support families and explain the next
+      steps of an investigation.
+    help:
+    - Ask your midwife or public health nurse about preparing a safe place to sleep and managing night feeds. In an emergency call
+      for help immediately.
+    sources:
+      Clinical guidance and further reading: https://www.hse.ie/conditions/cot-death/
+  cpe:
+    aliases: CPE carbapenemase producing enterobacterales resistant bacteria colonisation
+    summary: CPE are bacteria that can be resistant to important antibiotics. Many people who test positive carry them without illness.
+      The result helps healthcare teams choose precautions and treatment.
+    symptoms:
+    - Carrying CPE usually causes no symptoms. If it causes infection, symptoms depend on where it occurs, for example painful urination
+      with a urinary infection or fever with a bloodstream infection.
+    causes:
+    - CPE make enzymes that can break down certain antibiotics. The bacteria can live in the gut without causing illness and can
+      spread between people, particularly in healthcare settings.
+    diagnosis:
+    - A rectal screening sample can check for carriage. If someone is ill, clinicians use samples from the suspected site of infection.
+      The lab can determine which medicines are likely to work.
+    care:
+    - Carriage does not usually need antibiotics. Hospitals may use precautions to prevent spread. A confirmed infection is treated
+      according to the site, severity and lab findings.
+    complications:
+    - Some infections are difficult to treat because of resistance. Carriage can last for a long time, and a previous result remains
+      useful when you are admitted to hospital.
+    help:
+    - Tell healthcare staff about a past CPE result. Ask how to reduce spread and whether precautions apply at home. Seek prompt
+      assessment for new signs of infection.
+    sources:
+      Clinical guidance and further reading: https://www.hpsc.ie/a-z/microbiologyantimicrobialresistance/carbapenemresistantenterobacteriaceaecre/surveillanceofcpeinireland/cpeannualreports/
+  crohns-disease:
+    aliases: Crohn's disease inflammatory bowel disease IBD terminal ileitis fistula
+    summary: Crohn’s disease causes long-term inflammation of the digestive tract. If diarrhoea, abdominal pain or unexplained weight
+      loss persist, ask your GP about assessment.
+    symptoms:
+    - Symptoms include persistent diarrhoea, abdominal pain, weight loss and fatigue. Some people notice blood or mucus in stools,
+      mouth ulcers or painful swelling near the anus. Children may grow more slowly.
+    causes:
+    - An abnormal immune response contributes to inflammation that can affect different areas of the digestive tract. Inflammation
+      can extend deeper into the bowel wall, which helps explain fistulas and narrowing.
+    diagnosis:
+    - A GP can arrange blood or stool tests and refer to a digestive specialist. Assessment may include colonoscopy with tissue samples
+      and imaging to look at parts of the bowel the scope cannot reach.
+    care:
+    - Treatment aims to control active inflammation and maintain remission. A specialist may prescribe medicines, recommend nutrition
+      support or discuss surgery for a complication. Ask for a written plan for a flare.
+    complications:
+    - Persistent inflammation can contribute to anaemia or nutritional problems. Narrowing can block the bowel, and abnormal channels
+      can form between it and another area. Surgery treats specific problems, and follow-up continues afterwards.
+    help:
+    - Contact your GP for ongoing diarrhoea, blood in stools or weight loss. Seek urgent care if you have severe pain, repeated vomiting,
+      abdominal swelling or cannot pass stool or wind.
+    sources:
+      Clinical guidance and further reading: https://crohnscolitis.ie/support/faq/category/ibd-facts-figures/
+  croup:
+    aliases: croup barking cough stridor child baby hoarse breathing
+    summary: Croup often causes a barking cough and a harsh sound when breathing in. A child who makes this sound while resting or
+      is working hard to breathe needs urgent assessment.
+    emergency: If a child is struggling to breathe, has blue or grey lips or becomes unusually difficult to wake, call
+    evidence_gap: The HSE patient guidance describes care for croup but gives no national case count. RSV notifications cannot represent
+      croup, which has several possible viral causes.
+    symptoms:
+    - Croup may start like a cold, then cause a hoarse voice and barking cough. Symptoms can be worse at night. The noise on breathing
+      in is called stridor.
+    causes:
+    - Viruses can inflame the voice box and nearby airway. Small children have narrower airways, so swelling can be enough to make
+      breathing noisy or difficult.
+    diagnosis:
+    - A clinician assesses the sound, effort of breathing and whether the child can swallow and drink. Other causes of noisy breathing
+      can need different and more urgent treatment.
+    care:
+    - Keep the child calm and upright if that is comfortable. A doctor can give a steroid to reduce swelling. A child with severe
+      symptoms may need urgent treatment and observation in hospital.
+    complications:
+    - Most cases improve over a few days. Drooling, trouble swallowing, worsening stridor or exhaustion could signal serious airway
+      trouble and should be assessed urgently.
+    help:
+    - Contact a GP or out-of-hours service if you think your child has croup. Get urgent help for noisy breathing at rest or increased
+      effort to breathe. Call emergency services for severe breathing difficulty.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/croup/
+  cystitis:
+    aliases: cystitis bladder infection UTI burning urine frequency
+    summary: Cystitis is inflammation of the bladder, commonly from a urinary infection. Burning and frequent urination are common.
+      Fever or pain in the side changes the urgency.
+    evidence_gap: Community episodes are not routinely captured in a single national register. Hospital UTI data also include upper
+      urinary tract infections and cannot measure cystitis alone.
+    symptoms:
+    - You may have a strong urge to urinate, pass small amounts more often or feel discomfort low in the abdomen. Cloudy urine alone
+      cannot confirm infection. Some people see blood in the urine.
+    causes:
+    - Bacteria entering the bladder are a common cause. Long-standing bladder pain or irritation can occur for other reasons. Persistent
+      symptoms with repeated negative cultures deserve a different assessment.
+    diagnosis:
+    - A clinician may diagnose an uncomplicated infection from the symptom pattern. A urine sample can be useful if symptoms are
+      atypical, recur or occur during pregnancy or another higher-risk situation.
+    care:
+    - A GP or participating pharmacist can advise on the appropriate route for uncomplicated symptoms. An antibiotic may be recommended
+      after assessment. Follow their instructions on reviewing symptoms that do not improve.
+    complications:
+    - Infection can travel upwards and affect a kidney. Recurring infections may need a review of contributing factors, treatments
+      used before and prevention options.
+    help:
+    - Seek prompt help for fever, vomiting, pain in the back or side, blood in urine, or a suspected infection during pregnancy.
+      Report symptoms that recur soon after treatment.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/cystitis/
+  cystoscopy:
+    kind: procedure
+    aliases: cystoscopy bladder camera flexible cystoscopy rigid cystoscopy
+    summary: A cystoscopy lets a specialist look inside the bladder. Ask whether your appointment is for a flexible examination or
+      a procedure that will use anaesthesia.
+    evidence_gap: Irish waiting-list figures count people awaiting care, and do not show how many diagnostic or treatment cystoscopies
+      were performed. A comparable national activity count was not identified.
+    symptoms:
+    - A clinician may recommend it to investigate blood in the urine, some recurring urinary symptoms, or a suspected bladder abnormality.
+      It can also form part of follow-up after bladder treatment.
+    causes:
+    - A small camera passes through the urethra into the bladder. A flexible scope is often used to inspect the bladder. A rigid
+      procedure can allow samples or treatment when required.
+    diagnosis:
+    - Check the appointment letter for fasting and transport instructions. Tell the team if you have symptoms of a urine infection
+      or take medicines that affect clotting. Ask before making any medication change.
+    care:
+    - The team uses an appropriate anaesthetic, depending on the type. Fluid fills the bladder so the lining can be seen. You may
+      feel an urge to pass urine during a flexible examination.
+    complications:
+    - Mild stinging or some blood in the urine may occur briefly afterwards. Seek advice for fever, severe pain, heavy bleeding or
+      difficulty passing urine.
+    help:
+    - Ask who will explain the findings and when a biopsy result, if any, will be available. Follow the specific driving and recovery
+      advice if you had sedation or anaesthesia.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/cystoscopy/
+  deep-vein-thrombosis:
+    aliases: deep vein thrombosis DVT leg clot calf swelling thrombosis
+    summary: Deep vein thrombosis is a clot inside a deep vein, often in the leg. New one-sided swelling and pain need urgent assessment.
+    emergency: If suspected deep vein thrombosis is accompanied by breathlessness, chest pain or collapse, call
+    evidence_gap: The Irish national VTE study includes deep vein thrombosis, but the overall VTE rate also includes lung clots.
+      A directly comparable standalone DVT figure was not obtained for this guide.
+    symptoms:
+    - A dull ache, tenderness, warmth or swelling may affect one calf or thigh. Skin may change colour. Some clots cause few local
+      symptoms, so the pattern and risk factors are important.
+    causes:
+    - Limited movement, a recent operation or injury, pregnancy and some medicines or illnesses can favour clotting. A DVT can also
+      arise without an obvious trigger.
+    diagnosis:
+    - A GP or emergency team assesses how likely a clot is. An ultrasound checks for a clot. A blood test can help rule one out in
+      some circumstances, but an abnormal result has other possible causes.
+    care:
+    - Anticoagulant treatment helps prevent extension or another clot. Ask what to do if you miss a dose and when you will be reviewed.
+      Tell other clinicians and pharmacists that you take an anticoagulant.
+    complications:
+    - A clot can travel to the lungs. Long-term leg swelling and discomfort can occur after damage to the vein. A clinician can assess
+      persistent symptoms and recommend measures suited to you.
+    help:
+    - Seek urgent assessment for a new swollen or painful leg, especially after surgery, travel or immobility. Emergency help is
+      needed if you also have unexplained breathlessness, chest pain or collapse.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/deep-vein-thrombosis/
+  diabetic-retina-screening:
+    kind: test
+    aliases: Diabetic RetinaScreen diabetic eye screening retinal photography Ireland
+    summary: Diabetic RetinaScreen takes pictures of the back of the eyes to look for damage from diabetes. Changes can appear before
+      you notice any problem with vision.
+    symptoms:
+    - People with diagnosed type 1 or type 2 diabetes can ask their GP or diabetes service about registration. Tell the team if you
+      are pregnant, since pre-existing diabetes can need more frequent monitoring during pregnancy.
+    causes:
+    - Photographs show the retina and its small blood vessels. Graders check for signs of diabetes-related damage and decide whether
+      you need early follow-up or a referral.
+    diagnosis:
+    - If drops will be used to widen your pupils, arrange transport home as vision may be blurred. Bring your glasses and tell the
+      team about problems you have had with eye drops before.
+    care:
+    - The clinic may check your vision before taking images of each eye. You will see a bright flash. Some people need a different
+      type of assessment if the photos cannot be graded clearly.
+    complications:
+    - Blurred vision and sensitivity to light can last several hours after dilating drops. An abnormal screening result can lead
+      to another appointment or referral to an eye clinic.
+    help:
+    - Attend follow-up as advised and contact the service if you are unsure about your result or next date. Sudden visual changes
+      need prompt assessment and should not wait for screening.
+    sources:
+      Clinical guidance and further reading: https://www2.healthservice.hse.ie/organisation/nss/activity-and-performance-data/
+  diabetic-retinopathy:
+    aliases: diabetic retinopathy diabetic eye disease macular oedema retinal blood vessels
+    summary: Diabetic retinopathy can damage the retina before vision changes. Regular diabetic eye screening can identify people
+      who need closer monitoring or treatment.
+    evidence_gap: National programme counts describe screening activity. They do not tell how many people with diabetes have retinopathy,
+      since attendance, severity and the number of examinations differ.
+    symptoms:
+    - Early changes usually cause no symptoms. Later signs can include blurred vision, new shapes floating in vision or a sudden
+      loss of sight. Other eye problems can cause similar changes.
+    causes:
+    - High blood sugar over time can damage the retina's small blood vessels. They may leak or close off, and new fragile vessels
+      can grow in more advanced disease.
+    diagnosis:
+    - Retinal photography can find changes during screening. An eye specialist can use a detailed examination and imaging to check
+      the retina and whether there is fluid near the centre of vision.
+    care:
+    - Control of blood sugar and blood pressure helps lower risk. Specialist treatment may include injections, laser or surgery,
+      depending on where and how severely the retina is affected.
+    complications:
+    - Untreated advanced disease can affect vision permanently. The pattern of follow-up depends on the findings. Pregnancy can require
+      more frequent checks for people with pre-existing diabetes.
+    help:
+    - Attend scheduled eye screening and tell the service if your contact details change. Seek urgent assessment for sudden loss
+      of vision, a curtain across vision or a sudden increase in floaters.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/diabetic-retinopathy/
+  diarrhoea-babies-children:
+    aliases: child diarrhoea baby loose poo dehydration wet nappies gastroenteritis
+    summary: Diarrhoea can dehydrate babies and young children more quickly than adults. Pay attention to drinking, wet nappies and
+      how alert the child is.
+    evidence_gap: National surveillance counts certain infections and some hospitalised cases. It does not include the many episodes
+      of diarrhoea in children managed at home.
+    symptoms:
+    - The number or consistency of stools changes noticeably from what is usual for the child. Fever, vomiting or tummy pain can
+      occur. A baby may feed less or be unusually quiet.
+    causes:
+    - Viruses often cause acute diarrhoea. Other infections, medicines or longer-term conditions can also be responsible. Loose stools
+      alone can be normal in some breastfed babies.
+    diagnosis:
+    - A clinician asks about stool frequency, blood, fever and how much the child is drinking and urinating. In persistent or more
+      serious cases, the clinician may arrange tests.
+    care:
+    - Continue usual breastfeeds or formula if tolerated. Offer small amounts often and ask a pharmacist or GP about oral rehydration
+      solution suitable for the child's age. Do not use adult diarrhoea remedies without advice.
+    complications:
+    - Drowsiness, dry mouth, few wet nappies or no tears can be signs of dehydration. A sick young baby can deteriorate rapidly.
+    help:
+    - Seek medical advice promptly for a young baby, blood in the stool, a child who cannot drink, or signs of dehydration. Seek
+      emergency help if they are difficult to wake or severely unwell.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/diarrhoea-babies-children/
+  diarrhoea-vomiting:
+    aliases: diarrhoea and vomiting stomach bug gastroenteritis oral rehydration
+    summary: Many short episodes of diarrhoea and vomiting improve at home. Seek medical advice if symptoms are severe, bloody or
+      keep you from drinking enough.
+    evidence_gap: Irish notifications cover specific pathogens such as norovirus. Many episodes are never tested, so those reports
+      cannot establish how often diarrhoea and vomiting occur overall.
+    symptoms:
+    - Loose stools, vomiting, nausea and cramping can occur together or separately. Dark urine, dizziness and passing less urine
+      can signal dehydration.
+    causes:
+    - Short episodes are often due to infection. Food, medicines and other bowel conditions can cause similar symptoms. The pattern
+      and duration help decide whether it is likely to be a simple stomach bug.
+    diagnosis:
+    - A clinician may assess hydration, travel, contact with other people who are unwell and any recent antibiotics. Persistent or
+      bloody symptoms may need stool or blood tests.
+    care:
+    - Take frequent small drinks and consider oral rehydration solution. Wash hands with soap and water and follow the HSE's advice
+      about staying away from work or school while infectious.
+    complications:
+    - Dehydration can become serious, particularly in older adults or people with some long-term conditions. Blood in stool or increasing
+      pain warrants review.
+    help:
+    - Get urgent advice if you cannot keep fluids down, have bloody diarrhoea, pass much less urine or have severe pain. Call emergency
+      services for collapse or marked confusion.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/diarrhoea-vomiting/
+  diverticular-disease-and-diverticulitis:
+    aliases: diverticular disease diverticulosis diverticulitis left lower abdominal pain
+    summary: Small pouches can form in the bowel wall and often cause no trouble. When a pouch becomes inflamed, persistent pain
+      and fever can signal diverticulitis.
+    evidence_gap: Hospital records represent treated episodes. They cannot measure silent diverticulosis or all symptomatic cases
+      managed outside hospital.
+    symptoms:
+    - Diverticular disease can cause abdominal discomfort, bloating or bowel changes. Diverticulitis tends to cause more constant
+      pain, often low on the left, sometimes with fever or a change in bowel habit.
+    causes:
+    - Pouches form where the bowel wall is weaker. Diverticulitis occurs when one or more pouches become inflamed. Similar pain can
+      have other causes, so a previous diagnosis does not explain every new episode.
+    diagnosis:
+    - A clinician checks symptoms and examines the abdomen. Blood tests or CT can help confirm a suspected attack or detect complications.
+      If further bowel investigation is needed, it may be arranged after recovery.
+    care:
+    - Mild episodes may be managed at home with advice and monitoring. A clinician decides whether antibiotics or hospital care are
+      needed. When well, discuss fluid and fibre intake and how to handle returning symptoms.
+    complications:
+    - An abscess, perforation, blockage or bleeding can occur. The need for further tests depends on symptoms, the severity of illness
+      and whether there could be another explanation.
+    help:
+    - Ask for urgent medical advice for persistent abdominal pain with fever, repeated vomiting or feeling very unwell. Heavy rectal
+      bleeding, severe pain or collapse requires emergency assessment.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/diverticular-disease-and-diverticulitis/
+  echocardiogram:
+    kind: test
+    aliases: echocardiogram echo heart ultrasound heart valves ejection fraction
+    summary: An echocardiogram uses ultrasound to look at the heart in motion. It can show how the heart pumps and whether blood
+      flows normally through its valves.
+    evidence_gap: A national count covering routine and specialist scans across both hospital and community providers was not identified.
+      Public waiting lists measure people waiting rather than tests completed.
+    symptoms:
+    - A clinician may request an echo for a heart murmur, breathlessness, suspected heart failure or monitoring a known valve or
+      heart muscle problem.
+    causes:
+    - The scan shows the heart chambers, valves and movement of the muscle. Doppler ultrasound can measure the direction and speed
+      of blood flow.
+    diagnosis:
+    - Check what type of echo is planned. A routine scan from outside the chest often needs little preparation. A scan using a probe
+      in the food pipe has different instructions, such as fasting.
+    care:
+    - For a routine echo, a healthcare professional puts gel on the chest and moves a probe over the skin. You may be asked to turn
+      onto your side or briefly hold your breath.
+    complications:
+    - You can usually return to normal activities after a routine chest scan. Follow separate recovery instructions if you have sedation
+      or a different type of echo.
+    help:
+    - Ask when the person who requested your scan will review the results. Get urgent assessment for new severe chest pain, collapse
+      or breathlessness rather than waiting for an echo result.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/echocardiogram/
+  ectopic-pregnancy:
+    aliases: ectopic pregnancy tubal pregnancy early pregnancy pain hCG
+    summary: An ectopic pregnancy grows outside the womb, usually in a fallopian tube. One-sided pain or bleeding in early pregnancy
+      needs prompt assessment.
+    emergency: If early pregnancy pain is severe or accompanied by collapse, faintness or shoulder-tip pain, call
+    symptoms:
+    - There may be spotting, one-sided lower abdominal pain or pain when using the toilet. Shoulder-tip pain, faintness and collapse
+      can be signs of internal bleeding. Some people have no symptoms at first.
+    causes:
+    - The pregnancy has implanted somewhere it cannot safely continue. As it grows, it can damage the surrounding tissue and cause
+      bleeding.
+    diagnosis:
+    - Clinicians usually use a vaginal ultrasound and blood tests for the pregnancy hormone hCG. If the pregnancy is too early to
+      locate, repeat tests help clarify where it is. An uncertain scan needs follow-up until the location or outcome is clear.
+    care:
+    - Treatment options include close monitoring, a medicine or surgery. The choice depends on the scan, hormone levels, symptoms
+      and ability to return for tests. Follow the hospital's instructions for repeat tests until it confirms follow-up is complete.
+    complications:
+    - A ruptured ectopic pregnancy can cause life-threatening bleeding. Following a previous ectopic pregnancy, contact your maternity
+      team early in a future pregnancy to discuss a scan.
+    help:
+    - Contact a maternity unit, GP or early pregnancy service urgently if you have pain or bleeding and could be pregnant. For severe
+      pain, collapse or feeling faint, get emergency help.
+  electrocardiogram-ecg:
+    kind: test
+    aliases: ECG EKG electrocardiogram heart tracing palpitations heart rhythm
+    summary: An ECG records the heart's electrical activity. A short tracing can identify some rhythm problems, and a longer monitor
+      may be used if symptoms come and go.
+    evidence_gap: There is no verified national count in the sources consulted of all ECGs performed in hospitals, ambulances and
+      GP practices.
+    symptoms:
+    - An ECG can be part of an assessment for palpitations, fainting, chest pain or a known heart condition. Different types of ECG
+      answer different questions.
+    causes:
+    - Adhesive sensors detect electrical signals produced by the heart. A clinician looks for changes in rhythm, rate and the pattern
+      of the tracing. A normal tracing at rest can miss a problem that happens intermittently.
+    diagnosis:
+    - For a routine ECG, you may be asked to remove clothing from the upper body. Ask whether you are booked for a resting test,
+      exercise test or a monitor to wear at home.
+    care:
+    - You lie still while a healthcare professional puts sensors on the chest and limbs. The machine records your heart's electrical
+      signals. It does not send electricity into your body.
+    complications:
+    - A brief resting ECG usually needs no recovery time. When wearing a longer monitor, follow instructions for recording symptoms
+      and keeping the device dry where required.
+    help:
+    - Ask why the test was ordered and how you will get the result. Get emergency help for severe new chest pain, collapse or breathing
+      difficulty even if an earlier ECG was normal.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/electrocardiogram-ecg/
+  endoscopy:
+    kind: procedure
+    aliases: endoscopy upper GI gastroscopy camera biopsy sedation
+    summary: Endoscopy lets a clinician look inside the body with a small camera. The preparation and recovery depend on exactly
+      which examination you are booked for.
+    symptoms:
+    - A clinician might request an endoscopy to investigate symptoms such as difficulty swallowing, bleeding, persistent digestive
+      symptoms or abnormal tests. Ask which kind of endoscopy is planned.
+    causes:
+    - An endoscope carries a camera and can take tissue samples or treat some findings. An upper endoscopy examines the food pipe,
+      stomach and first part of the small bowel.
+    diagnosis:
+    - Use the hospital's fasting or bowel preparation instructions for your procedure. Ask about diabetes medicines and blood thinners
+      well ahead of time. If sedation is planned, arrange an escort as instructed.
+    care:
+    - The team explains the examination and your options for comfort. During an upper endoscopy a narrow flexible tube passes through
+      the mouth, and sometimes small samples are taken.
+    complications:
+    - A mild sore throat or bloating can occur. Severe pain, fever, vomiting blood or passing significant blood need urgent assessment.
+      Sedation can affect judgement and coordination after discharge.
+    help:
+    - Ask whether there were biopsies, who will explain the results and when you should contact the unit. Follow the team's instructions
+      about driving, work and other activities after sedation.
+  febrile-seizures:
+    aliases: febrile seizure fever fit child convulsion febrile convulsion
+    summary: A febrile seizure can happen in a young child with a fever. A first seizure needs emergency assessment to check for
+      other causes.
+    emergency: If a child has a first seizure, has difficulty breathing, or the seizure lasts more than five minutes, call
+    evidence_gap: Published Irish hospital data capture some children who are assessed or admitted and cannot establish the proportion
+      of children who ever have a febrile seizure.
+    symptoms:
+    - A child may stiffen, shake, stop responding or look pale. Afterwards they may be sleepy or confused for a short time. One-sided
+      jerking or repeated seizures need urgent attention.
+    causes:
+    - Febrile seizures affect some young children during a febrile illness. The seizure does not identify what caused the fever,
+      so assessment of the underlying illness still matters.
+    diagnosis:
+    - The clinician asks what happened, how long it lasted and how the child recovered. Examination guides which tests, if any, are
+      needed to investigate the fever and exclude more serious causes.
+    care:
+    - Move nearby objects away, protect the child's head and note the time. Do not restrain them or put anything in their mouth.
+      When the movements stop, place them on their side if breathing normally.
+    complications:
+    - Most simple febrile seizures end on their own and do not cause lasting harm. Some children have another with a later fever.
+      Discuss the plan if another seizure occurs.
+    help:
+    - Call emergency services for a first seizure, prolonged seizure or breathing problems. Seek urgent medical advice if recovery
+      is slow, movements were one-sided or seizures recur.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/febrile-seizures/
+  food-allergy:
+    aliases: food allergy IgE food reaction hives anaphylaxis child food allergy
+    summary: A food allergy is an immune reaction to a food. Some reactions are mild, while breathing or circulation problems require
+      emergency treatment.
+    emergency: If a food reaction causes throat swelling, breathing difficulty, faintness or collapse, use prescribed adrenaline
+      if available and call
+    evidence_gap: The Irish figures consulted for broad allergies do not isolate confirmed food allergy. The rate also varies depending
+      on whether surveys use symptoms, self-report or supervised testing.
+    symptoms:
+    - Immediate symptoms can include itching, hives, lip swelling, vomiting or breathing difficulty. Some children have delayed symptoms,
+      which need a different assessment. Symptoms after a meal can have many other causes.
+    causes:
+    - The immune system reacts to a food protein. In immediate allergy, the reaction can be fast even after a small exposure. Some
+      delayed allergies involve other immune mechanisms.
+    diagnosis:
+    - A clinician asks what was eaten, how much and how soon symptoms started. Depending on the pattern, a specialist can sometimes
+      use skin tests, blood tests or a supervised food challenge.
+    care:
+    - The care plan may include avoiding the relevant food, checking labels and making a plan for accidental exposure. If an adrenaline
+      auto-injector is prescribed, ask for practical training and share the plan with school or carers.
+    complications:
+    - Severe reactions can become life-threatening. Unnecessary restriction can also affect nutrition, particularly for children,
+      so discuss elimination diets with an appropriate clinician or dietitian.
+    help:
+    - Speak to your GP about repeated symptoms after a specific food. For possible anaphylaxis, use the prescribed adrenaline and
+      seek emergency help immediately.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/food-allergy/
+  food-intolerance:
+    aliases: food intolerance bloating lactose intolerance diet symptoms reaction
+    summary: A food intolerance can cause digestive symptoms after some foods. Keeping a short record of meals and symptoms can help
+      a clinician decide whether another condition needs to be checked.
+    evidence_gap: Survey estimates for self-reported reactions can include allergies and other digestive disorders. No comparable
+      Irish population estimate for all confirmed food intolerances was identified.
+    symptoms:
+    - Bloating, gas, abdominal pain or diarrhoea may appear hours after eating. The amount eaten can matter. A pattern may be easier
+      to see over several meals than from one isolated episode.
+    causes:
+    - Some intolerances involve difficulty digesting part of a food, such as lactose. Similar symptoms can come from irritable bowel
+      syndrome, coeliac disease or another digestive problem.
+    diagnosis:
+    - Discuss the pattern with your GP. Depending on symptoms, they may arrange tests or a trial of dietary change. If coeliac disease
+      is possible, ask about testing before cutting out gluten.
+    care:
+    - A GP or dietitian can help plan a short, supervised exclusion and reintroduction where appropriate. Avoid restricting several
+      foods at once without support, especially for a child.
+    complications:
+    - Unnecessary restriction can make it hard to get enough nutrients or obscure the true cause. Weight loss, blood in stools or
+      symptoms that wake you at night need medical assessment.
+    help:
+    - Contact your GP for continuing or worsening symptoms. Breathing difficulty, throat swelling or collapse after food is an emergency
+      and suggests a different kind of reaction.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/food-intolerance/
+  food-poisoning:
+    aliases: food poisoning foodborne illness gastroenteritis diarrhoea vomiting campylobacter salmonella
+    summary: Food poisoning can cause diarrhoea, vomiting or abdominal cramps. Keeping up with fluids is important, and some people
+      need early medical assessment.
+    symptoms:
+    - Fever or nausea may occur along with diarrhoea. Symptoms can start at different times after exposure depending on the cause,
+      so the last meal is not always responsible.
+    causes:
+    - Food or drink may contain bacteria, viruses, parasites or toxins. Similar symptoms can also come from an infection passed person
+      to person. Let a clinician know if others became ill after the same meal.
+    diagnosis:
+    - A GP assesses symptoms, hydration and who else is affected. A stool test can be useful for persistent or bloody diarrhoea,
+      severe illness or a possible outbreak.
+    care:
+    - Small frequent drinks or oral rehydration solution may help. A clinician decides whether extra investigations or specific treatment
+      are needed. Ask about returning to work if you handle food or care for others.
+    complications:
+    - Vomiting and diarrhoea can cause dehydration. Some infections cause complications, especially in younger children, older adults,
+      pregnant people and people with weakened immune systems.
+    help:
+    - Seek prompt advice if you cannot keep fluids down, have blood in diarrhoea, a high fever, severe pain or signs of dehydration.
+      Tell your GP if you suspect an outbreak.
+  gallstones:
+    aliases: gallstones bile stones biliary colic cholelithiasis gallbladder
+    summary: Gallstones often cause no problems. A stone that blocks bile drainage can cause severe episodes of abdominal pain or
+      require treatment for complications.
+    evidence_gap: Irish hospital surgery data capture treated disease. They cannot count silent stones or reliably estimate how many
+      people in Ireland have gallstones.
+    symptoms:
+    - Biliary colic usually causes an episode of steady pain in the upper middle abdomen or under the right ribs. It can spread to
+      the back or shoulder and may be accompanied by nausea. Pain between attacks may disappear entirely.
+    causes:
+    - Stones form when substances in bile harden. They can move and temporarily block the outlet of the gallbladder or lodge in a
+      bile duct.
+    diagnosis:
+    - Ultrasound can show stones in the gallbladder. Liver blood tests or further scans can help assess whether a duct is blocked.
+      Stones found by coincidence may be unrelated to an individual's pain.
+    care:
+    - Stones without symptoms often need no treatment. For recurrent attacks or complications, a specialist may recommend removing
+      the gallbladder. A separate endoscopic procedure can clear a stone in a bile duct.
+    complications:
+    - A blockage can cause cholecystitis, jaundice, infection of the bile ducts or pancreatitis. Persistent pain with fever differs
+      from a brief uncomplicated pain episode and needs prompt assessment.
+    help:
+    - Contact your GP about repeated attacks. Seek urgent assessment for severe persistent pain, fever, jaundice or vomiting with
+      worsening illness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/gallstones/
+  glutaric-aciduria-type-1-ga1:
+    aliases: GA1 glutaric aciduria type 1 glutaric acidaemia
+    summary: Glutaric aciduria type 1 is an inherited condition that can injure the brain during illness. Newborn screening can find
+      it before the first crisis.
+    symptoms:
+    - A baby may look well at birth. Some have an unusually large head. During a crisis, signs can include vomiting, reduced alertness
+      or changes in movement, particularly with an infection or poor feeding.
+    causes:
+    - The condition affects an enzyme used to break down certain amino acids. Substances build up and can injure parts of the brain
+      responsible for movement, especially when illness increases energy needs.
+    diagnosis:
+    - Specialists use blood or urine tests and may use genetic testing after a high-risk screen. They explain what the result means
+      and arrange a plan for ordinary days and for illness.
+    care:
+    - Care may involve a prescribed diet, specialist supplements and treatment to prevent a metabolic crisis during illness. A metabolic
+      dietitian explains feeds and dietary changes to the family.
+    complications:
+    - A crisis can cause permanent difficulties controlling movement. Follow-up monitors growth and development and helps families
+      prepare for infections, surgery or other times when feeding can be disrupted.
+    help:
+    - Use the metabolic team's emergency plan and contact it promptly when your child is unwell, is vomiting or cannot take their
+      usual feeds. Follow an urgent screening referral even if the baby looks well.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/heel-prick-screening/conditions/
+  haemochromatosis:
+    aliases: haemochromatosis hemochromatosis HFE hereditary iron overload ferritin
+    summary: Hereditary haemochromatosis can cause the body to accumulate extra iron. Blood tests help distinguish iron overload
+      from other reasons for a high ferritin result.
+    symptoms:
+    - Some people feel well and are diagnosed from blood tests or family testing. Fatigue, joint pain and abnormal liver tests can
+      occur, but each can have other causes.
+    causes:
+    - Certain inherited variants affect how the body controls absorption of iron. Extra iron can accumulate in organs over time.
+      Carrying an at-risk genotype does not mean organ damage will occur.
+    diagnosis:
+    - A GP can check ferritin and transferrin saturation. Genetic testing may help when results or family history suggest hereditary
+      haemochromatosis. Some people also need liver assessment.
+    care:
+    - Regular removal of blood can reduce iron levels when treatment is needed. Ask about the target, test schedule and whether family
+      members should discuss testing with their GP.
+    complications:
+    - Iron overload can affect the liver, pancreas, heart or joints. Early treatment reduces the risk of some complications. Symptoms
+      such as joint pain may not resolve completely even after iron levels improve.
+    help:
+    - Contact your GP if a close relative has confirmed hereditary haemochromatosis or if your iron tests remain abnormal. Avoid
+      starting an iron supplement until the need has been checked.
+    sources:
+      Clinical guidance and further reading: https://www.saolta.ie/news/hse-west-and-north-west-rolls-out-hereditary-haemochromatosis-hh-education-programme-gp
+  heat-exhaustion-and-heatstroke-in-children:
+    aliases: heat exhaustion children heatstroke baby overheating heat illness
+    summary: Babies and children can overheat quickly. Move a hot, unwell child to a cooler place and get emergency help for changes
+      in alertness or failure to improve.
+    emergency: If a child in the heat is confused, has a seizure, collapses or is difficult to wake, call
+    evidence_gap: Irish surveillance of severe heat illness does not provide a national frequency for mild episodes in children.
+      A specific paediatric estimate was not identified.
+    symptoms:
+    - A child may become thirsty, weak, dizzy or nauseated. Babies may be unsettled or unusually sleepy. Confusion, a seizure or
+      loss of consciousness can suggest heatstroke.
+    causes:
+    - Babies and young children rely on adults to change their environment and offer drinks or feeds. Hot rooms, direct sun and cars
+      can expose them to far more heat than they can lose.
+    diagnosis:
+    - Assess how alert the child is and whether they can drink while arranging help. A healthcare professional can examine them for
+      dehydration or signs of more serious overheating.
+    care:
+    - Move the child into shade or a cool room, remove excess clothing and cool the skin. If alert and able to drink, offer fluids
+      appropriate for their age. Do not give anything by mouth if the child cannot swallow safely.
+    complications:
+    - Severe heatstroke can damage organs. Dehydration can worsen quickly in a baby, especially if feeding poorly or losing fluid
+      through vomiting or diarrhoea.
+    help:
+    - Seek emergency help if the child is difficult to wake, confused or still very unwell after cooling. Get medical advice promptly
+      if a baby has very few wet nappies or feeds poorly.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/heat-exhaustion-and-heatstroke-in-children/
+  heat-exhaustion-heatstroke:
+    aliases: heat exhaustion heatstroke heat stroke hot weather overheating
+    summary: Heat exhaustion can improve with cooling and fluids. Confusion, a seizure or collapse after heat exposure can mean heatstroke
+      and needs emergency help.
+    emergency: If someone in the heat becomes confused, has a seizure, collapses or is still very unwell after cooling, call
+    evidence_gap: Irish emergency and death records capture severe events. They do not establish how often mild heat exhaustion occurs
+      at home, at work or during sport.
+    symptoms:
+    - Heat exhaustion can cause headache, dizziness, thirst, nausea, muscle cramps and heavy sweating. Heatstroke can cause confusion,
+      loss of coordination, fainting or seizure. Sweating may still be present.
+    causes:
+    - The body can struggle to lose heat during hot weather, strenuous exercise or time in poorly ventilated places. Dehydration,
+      some medicines and illness can increase vulnerability.
+    diagnosis:
+    - Clinicians consider heat exposure, body temperature and the person's alertness. Suspected heatstroke is treated as an emergency
+      while further assessment is arranged.
+    care:
+    - Move the person to a cooler area, remove excess clothing and cool their skin. Offer cool fluids only if fully alert and able
+      to swallow. Keep cooling while waiting for help if heatstroke is suspected.
+    complications:
+    - Severe overheating can affect the brain, kidneys and other organs. Even people who are normally healthy can become seriously
+      ill during sustained heat or strenuous exercise.
+    help:
+    - Call for emergency help if there is confusion, a seizure, collapse or failure to improve after about 30 minutes of cooling.
+      Check on older or isolated people during hot weather.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/heat-exhaustion-heatstroke/
+  heel-prick-screening:
+    kind: test
+    aliases: newborn bloodspot screening heel prick newborn test Guthrie test
+    summary: Ireland offers newborn bloodspot screening to find certain rare conditions early. A small blood sample from the heel
+      can reveal a condition before a baby appears unwell.
+    symptoms:
+    - The test is offered to newborn babies as part of routine care. Early recognition can prevent serious complications for conditions
+      where waiting for symptoms would delay treatment.
+    causes:
+    - A laboratory analyses dried spots of blood for markers associated with the programme's conditions. The HSE maintains the current
+      list, which can change as the programme expands.
+    diagnosis:
+    - A midwife or public health nurse will explain the test, ask for consent and arrange it, usually on day 3 to 5. Ask who will
+      do it and when if you leave hospital early or are unsure whether it happened.
+    care:
+    - A healthcare professional takes a few drops of blood from the heel onto a card for the laboratory. You can usually hold and
+      comfort your baby during the sample.
+    complications:
+    - Sometimes a sample needs to be repeated because there was too little blood or the result needs to be clarified. A high-risk
+      screen leads to more tests to check whether the condition is present.
+    help:
+    - Keep your contact details up to date and respond quickly to a request for another sample or specialist appointment. If your
+      baby becomes unwell, seek clinical advice immediately instead of waiting for a screening result.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/heel-prick-screening/conditions/
+  hepatitis:
+    aliases: hepatitis liver inflammation viral hepatitis A B C E jaundice
+    summary: Hepatitis means liver inflammation. Viral infections, medicines, alcohol and immune conditions can cause it. Testing
+      identifies the cause and guides what happens next.
+    symptoms:
+    - Some people have no symptoms. Others develop tiredness, nausea, discomfort under the right ribs, dark urine or yellowing of
+      the skin or whites of the eyes.
+    causes:
+    - Different causes damage liver cells in different ways. Some viruses cause a short illness, while hepatitis B or C can persist.
+      Alcohol, medicines and autoimmune disease may also cause inflammation.
+    diagnosis:
+    - A clinician reviews the history and checks liver blood tests. Specific blood tests can identify viral hepatitis, and other
+      tests assess liver damage or investigate a non-viral cause.
+    care:
+    - Treatment depends on cause and severity. Some people need monitoring and supportive care, while others need antiviral or specialist
+      treatment. Ask whether testing, vaccination or advice for close contacts applies to you.
+    complications:
+    - Long-standing inflammation may cause liver scarring and increase the risk of liver failure or liver cancer. New jaundice or
+      confusion can require urgent assessment.
+    help:
+    - Contact your GP promptly if you notice jaundice, dark urine or have concerns about exposure. Seek emergency help if someone
+      with suspected liver illness becomes confused, collapses or is very unwell.
+  homocystinuria:
+    aliases: HCU homocystinuria CBS deficiency heel prick
+    summary: Homocystinuria is an inherited condition that can affect the eyes, bones and blood vessels. Early treatment can reduce
+      the risk of long-term problems.
+    symptoms:
+    - Babies often have no visible symptoms. Later signs may include very short-sighted vision, problems with the lens in the eye,
+      difficulties with development or a blood clot at an unusually young age.
+    causes:
+    - In the form targeted by newborn screening, a missing or underactive enzyme affects the body's handling of methionine and homocysteine.
+      Raised homocysteine contributes to the risk of blood clots.
+    diagnosis:
+    - A high-risk screen can lead to specialist blood tests for homocysteine and other markers. The team may use genetic testing
+      and assess whether the condition responds to vitamin B6.
+    care:
+    - Treatment can involve a prescribed diet, specific vitamins or medicines to reduce homocysteine. A dietitian and specialist
+      explain monitoring and how to manage school, holidays and illness.
+    complications:
+    - Untreated disease can lead to dislocation of the eye lens, bone problems or thrombosis. Treatment and repeat blood tests reduce
+      risk while the person grows.
+    help:
+    - Follow up promptly if called after newborn screening. Anyone with sudden chest pain and difficulty breathing, stroke symptoms
+      or a suspected serious clot needs emergency care.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/heel-prick-screening/conditions/
+  hyperemesis-gravidarum:
+    aliases: hyperemesis gravidarum severe pregnancy sickness HG vomiting pregnancy
+    summary: Hyperemesis gravidarum is severe sickness in pregnancy. When vomiting prevents you from drinking, eating or taking medicines,
+      ask your maternity team for assessment.
+    evidence_gap: Treatment records count people who reach a service. They omit people managed solely in primary care or at home
+      and cannot establish a national prevalence figure.
+    symptoms:
+    - Nausea and vomiting can make normal activities impossible. Passing little or dark urine, feeling faint or losing weight can
+      signal that the vomiting is affecting hydration or nutrition.
+    causes:
+    - Pregnancy-related sickness can become severe enough to affect how the body maintains fluid and salt levels. Other causes of
+      vomiting sometimes need to be ruled out, particularly if it starts later or comes with fever or pain.
+    diagnosis:
+    - A clinician asks about what you can keep down, weight changes and urine output. They may check pulse, blood pressure and blood
+      tests and consider whether another condition explains the symptoms.
+    care:
+    - Anti-sickness medicines can be prescribed in pregnancy. If you cannot drink enough, hospital or day-unit treatment can replace
+      fluids and manage complications. Ask for a plan if the first medicine fails or cannot be kept down.
+    complications:
+    - Prolonged vomiting can cause dehydration, salt imbalances and vitamin deficiencies. It can also affect work and mental health.
+      Symptoms severe enough to limit eating or drinking deserve review even without weight loss.
+    help:
+    - Contact your GP or maternity unit urgently if you cannot keep fluids down, are passing very little urine, feel faint or are
+      losing weight. Seek help earlier if you previously had severe pregnancy sickness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/hyperemesis-gravidarum/
+  ivf:
+    kind: procedure
+    aliases: IVF in vitro fertilisation ICSI assisted human reproduction embryo transfer fertility treatment
+    summary: IVF involves collecting eggs and fertilising them in a laboratory. Before treatment, ask the fertility team about your
+      chances, risks, likely timeline and eligibility for public funding.
+    symptoms:
+    - IVF can be an option for some kinds of infertility, including blocked fallopian tubes or some sperm-related problems. The team
+      considers both partners' needs where relevant and other options.
+    causes:
+    - The ovaries may be stimulated to produce eggs. Eggs are collected and fertilised in the laboratory. An embryo can be transferred
+      into the womb, and suitable remaining embryos may be stored under an agreed plan.
+    diagnosis:
+    - A clinic assesses medical and fertility history, tests and consent. Ask for clear instructions on injections, scans and appointments
+      and check the current HSE funding criteria before making financial commitments.
+    care:
+    - A cycle can involve medication, ultrasound monitoring, egg collection and sometimes a fresh or later frozen embryo transfer.
+      The clinic tells you when to take a pregnancy test.
+    complications:
+    - Treatment can be physically and emotionally demanding. Severe pain, marked swelling, difficulty breathing or passing less urine
+      after stimulation needs urgent advice because of possible ovarian hyperstimulation.
+    help:
+    - Ask whom to contact outside clinic hours, when to test and what happens after a positive or negative result. Contact the clinic
+      for unusual or worsening symptoms.
+    sources:
+      Clinical guidance and further reading: https://about.hse.ie/publications/hse-fertility-services-report-2025/
+  kidney-infection:
+    aliases: kidney infection pyelonephritis fever flank pain UTI
+    summary: Fever or shaking chills with pain in the side or back can be signs of a kidney infection. Contact a clinician urgently,
+      particularly if you are pregnant or have a kidney condition.
+    symptoms:
+    - Symptoms can include pain under the ribs on one side, fever, nausea and vomiting. There may also be burning or a frequent urge
+      to urinate, though bladder symptoms are not always present.
+    causes:
+    - A kidney infection often starts when bacteria travel from the bladder up a ureter. A blocked urinary tract can make it harder
+      to clear an infection.
+    diagnosis:
+    - The clinician reviews symptoms and often sends urine for culture. Blood tests or imaging may be useful if you are very unwell,
+      have recurrent infections or might have a blockage.
+    care:
+    - Antibiotics are used to treat a kidney infection. The clinician may change the prescription after the culture result. Hospital
+      care may be needed if you cannot keep medicine down or have signs of severe infection.
+    complications:
+    - A kidney infection can cause sepsis or damage the kidney in severe cases. A fever with a suspected blocked kidney needs prompt
+      hospital assessment.
+    help:
+    - Seek same-day advice if you have possible kidney infection, especially with fever, vomiting, pregnancy or pain in the side.
+      Call for emergency help for confusion, collapse or severe breathing difficulty.
+  kidney-stones:
+    aliases: kidney stones renal colic ureteric stone flank pain blood urine
+    summary: A kidney stone can cause intense pain in waves as it moves into the tube to the bladder. Severe pain with a fever needs
+      emergency assessment.
+    evidence_gap: Hospital treatment is only one part of kidney stone care. Published procedure counts exclude stones that pass at
+      home and cannot establish national prevalence.
+    symptoms:
+    - Pain may start at the side of the back and move towards the groin. Nausea or blood in the urine can occur. Some stones are
+      found during scans for other reasons before they cause symptoms.
+    causes:
+    - Stones form when minerals crystallise in urine. Smaller stones can become painful if they block the ureter as they move. Risk
+      can depend on hydration, family history and the type of stone.
+    diagnosis:
+    - A clinician checks for infection and whether urine can drain. Tests may include urine and blood samples and an ultrasound or
+      CT. Tell staff if you have a single kidney or could be pregnant.
+    care:
+    - Many small stones pass without a procedure. A clinician can advise on pain relief, follow-up and when to return. Larger or
+      persistent stones may need specialist treatment to break them up or remove them.
+    complications:
+    - A blocked kidney with infection can become life-threatening. Recurrent stones may warrant assessment of what they are made
+      of and an individual prevention plan.
+    help:
+    - Get urgent help with severe pain, fever, shivering, repeated vomiting or difficulty passing urine. Contact a GP for blood in
+      the urine even if the pain has stopped.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/kidney-stones/
+  maple-syrup-urine-disease-overview:
+    aliases: MSUD maple syrup urine disease newborn screening
+    summary: Maple syrup urine disease is an inherited metabolic condition. Babies with severe forms can become ill in the first
+      days after birth and need specialist treatment.
+    symptoms:
+    - A baby may feed poorly, vomit or become unusually sleepy. There may be unusual movements or a distinctive sweet smell. Seek
+      help for signs of illness even if you notice no change in smell.
+    causes:
+    - The body cannot properly break down three branched-chain amino acids. These and their by-products can build up, particularly
+      when a baby is ill or unable to feed.
+    diagnosis:
+    - A high-risk heel-prick result is followed by urgent specialist blood tests and sometimes genetic testing. Similar symptoms
+      in a newborn can also signal infection or another emergency.
+    care:
+    - A metabolic team uses a carefully measured diet and specialist formula. It gives a written illness plan. Severe illness can
+      require urgent hospital treatment to bring amino acid levels down.
+    complications:
+    - If levels rise severely, the brain can be affected, causing seizures or reduced consciousness. Regular blood monitoring supports
+      safe growth and helps the team adjust treatment.
+    help:
+    - Contact the team immediately if a baby with confirmed or suspected MSUD feeds poorly, vomits or seems unusually sleepy. Follow
+      the team's emergency instructions while arranging help.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/heel-prick-screening/conditions/
+  mcadd-symptoms-causes-and-treatment:
+    aliases: MCADD fatty acid oxidation deficiency newborn screening
+    summary: MCADD makes it harder for the body to use stored fat for energy. A child who is unwell or unable to eat can need urgent
+      treatment to prevent low blood sugar.
+    symptoms:
+    - Babies often look healthy at birth. Illness or missed feeds can lead to vomiting, unusual sleepiness, weakness or reduced responsiveness.
+      Symptoms can worsen quickly.
+    causes:
+    - The body usually uses stored fat between meals and during illness. In MCADD, an inherited enzyme deficiency limits this source
+      of energy, especially when the body runs short of readily available glucose.
+    diagnosis:
+    - Newborn bloodspot screening can identify a pattern that suggests MCADD. Specialist tests confirm the diagnosis and help decide
+      which advice applies to the child.
+    care:
+    - The metabolic team advises how long the child can safely go between feeds at different ages and gives an individual sick-day
+      plan. Severe illness or repeated vomiting can require glucose through a vein in hospital.
+    complications:
+    - A metabolic crisis can cause seizures or brain injury. With early diagnosis and a reliable emergency plan, many children remain
+      well and take part in normal activities.
+    help:
+    - If your child with MCADD cannot keep down their feeds or sick-day drinks, contact the metabolic service or emergency department
+      as directed in their plan. Seek emergency help for reduced responsiveness or a seizure.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/heel-prick-screening/conditions/
+  meningitis-and-septicaemia:
+    aliases: meningitis meningococcal septicaemia sepsis stiff neck non-blanching rash
+    summary: Meningitis and septicaemia can become serious very quickly. Seek emergency help if you are concerned, even if there
+      is no rash.
+    emergency: If you suspect meningitis or septicaemia, call
+    symptoms:
+    - Fever, severe headache, a stiff neck, discomfort in bright light or unusual drowsiness are possible signs. Babies may feed
+      poorly, be floppy or very irritable. A rash can be absent early in illness.
+    causes:
+    - Meningitis is inflammation of the membranes around the brain and spinal cord. Septicaemia involves serious infection in the
+      bloodstream. Meningococcal bacteria can cause either or both, and other organisms can also cause meningitis.
+    diagnosis:
+    - Hospital staff assess symptoms and can take blood samples or a sample of spinal fluid when safe. Treatment for suspected bacterial
+      disease may start before test results come back.
+    care:
+    - Bacterial meningitis needs urgent antibiotics. Severe illness can need support for breathing or circulation. Public health
+      staff can advise close contacts if preventive treatment is needed.
+    complications:
+    - People recovering from bacterial meningitis may need hearing tests, rehabilitation or other follow-up. Vaccines protect against
+      some common causes but do not cover every type of meningitis.
+    help:
+    - Call emergency services if meningitis or sepsis is possible. Do not wait for a rash, a stiff neck or for all symptoms to appear.
+      If illness worsens unexpectedly, seek help again.
+  miscarriage:
+    aliases: miscarriage early pregnancy loss threatened miscarriage missed miscarriage
+    summary: Bleeding in pregnancy can have several causes. A maternity team can assess whether a pregnancy is continuing and explain
+      the options if a miscarriage is confirmed.
+    emergency: If you are bleeding heavily and feel faint or collapse, call
+    symptoms:
+    - Spotting or heavier bleeding, cramps and passing tissue can occur. Some miscarriages are first found at an ultrasound when
+      there has been no bleeding or pain.
+    causes:
+    - Many early miscarriages happen because the pregnancy could not develop normally. Ordinary activity is unlikely to cause this.
+      A clinician may suggest further investigation after recurrent losses or in certain other circumstances.
+    diagnosis:
+    - A vaginal ultrasound and sometimes repeat scans or blood tests can clarify what has happened. If there is no confirmed pregnancy
+      in the womb, the team may need to rule out ectopic pregnancy even if bleeding has started.
+    care:
+    - If a miscarriage is confirmed, options may include waiting, medicines or a procedure. Ask about expected bleeding, pain relief,
+      how completion is checked and who to contact if you need support.
+    complications:
+    - Heavy bleeding, infection and retained pregnancy tissue can need further treatment. Grief varies and can affect both the pregnant
+      person and their partner. Ask about the hospital's bereavement service if you would like support.
+    help:
+    - Contact your maternity team, early pregnancy service or GP about bleeding or pain. Seek urgent care for heavy bleeding, fever,
+      severe pain, faintness or new shoulder-tip pain.
+    sources:
+      Clinical guidance and further reading: https://research.ucc.ie/en/publications/national-clinical-practice-guideline-first-trimester-miscarriage-/
+  mrsa:
+    aliases: MRSA methicillin resistant Staphylococcus aureus screening swabs carrier
+    summary: MRSA is a type of staph bacteria resistant to several antibiotics. It can be carried on the skin or in the nose without
+      making someone ill.
+    symptoms:
+    - Carriers usually feel well. Infection can cause a red painful area, a wound that drains or fever. The signs vary if the infection
+      is deeper or affects the bloodstream.
+    causes:
+    - MRSA can enter the body through a break in the skin or through a medical device. It can pass by contact, so hospital teams
+      may take additional hygiene precautions.
+    diagnosis:
+    - Swabs can check for carriage or identify bacteria in a wound. If serious infection is suspected, the team can take blood or
+      other samples. Laboratory results help distinguish MRSA from other staph.
+    care:
+    - A hospital may use a temporary skin and nasal treatment to reduce carriage before some procedures. A confirmed infection may
+      need wound care or antibiotics chosen using lab results.
+    complications:
+    - An infection can deepen or spread, particularly in a person with a medical device or weakened immunity. A positive carriage
+      result alone does not mean this will happen.
+    help:
+    - Contact staff if your wound becomes more painful, hot or leaky, or if you develop a fever. Mention any previous MRSA result
+      to the team looking after you.
+  necrotising-fasciitis:
+    aliases: necrotising fasciitis necrotizing fasciitis rapidly spreading skin infection
+    summary: Necrotising fasciitis is a rare infection that spreads through tissue beneath the skin. Severe pain that is much worse
+      than the visible skin change is a warning sign.
+    emergency: For severe and rapidly worsening pain around a wound with fever or serious illness, call
+    evidence_gap: Irish invasive group A strep surveillance includes several syndromes and does not count necrotising fasciitis as
+      a separate total. Other bacteria can cause the condition as well.
+    symptoms:
+    - Early signs can include rapidly worsening pain, swelling or warmth, sometimes after a small wound or surgery. Fever, blisters,
+      dark patches, numbness or sudden confusion can develop as illness progresses.
+    causes:
+    - Bacteria can infect deeper tissue and damage its blood supply. The visible skin may change after the underlying infection has
+      already become severe.
+    diagnosis:
+    - Emergency staff assess how fast symptoms have changed and whether circulation or organs are affected. Blood tests and imaging
+      can help, but urgent surgery may be needed to identify and treat the infection.
+    care:
+    - Treatment requires urgent hospital care. It can include surgery to remove infected tissue, antibiotics through a vein and organ
+      support. More than one operation may be needed.
+    complications:
+    - The infection can cause sepsis and permanent tissue damage. Recovery can involve wound care, rehabilitation and sometimes reconstruction.
+    help:
+    - Seek emergency help for severe, rapidly worsening pain or swelling with fever or severe illness. Tell staff about any recent
+      injury or operation and how quickly symptoms changed.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/necrotising-fasciitis/
+  newborn-hearing-screening:
+    kind: test
+    aliases: newborn hearing screening baby OAE AABR audiology
+    summary: The newborn hearing screen checks how a baby's ears respond to sound. If either ear has no clear response, follow-up
+      helps establish whether the baby needs support.
+    symptoms:
+    - The screening is offered to eligible babies soon after birth. Early hearing assessment and support can help with speech and
+      language development.
+    causes:
+    - The first test records whether the inner ear responds to a soft sound. A second type may be used to record how the hearing
+      nerve and brain respond.
+    diagnosis:
+    - The screening team usually offers the test in the maternity unit. If it was missed or could not be completed, ask about an
+      outpatient appointment. A quiet, settled baby makes testing easier.
+    care:
+    - A screener places a small soft tip in the ear. A second test may also use small sensors on the head. The tests can be done
+      while the baby rests.
+    complications:
+    - Temporary fluid in the ear or movement during testing can make the response unclear. Some babies receive a referral because
+      of other risk factors even when the immediate screen is clear.
+    help:
+    - Attend any audiology appointment offered. Keep watching how your baby responds to sound and voices. Discuss later concerns
+      with your public health nurse or GP even if the newborn screen was clear.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/newborn-hearing-screening/why-we-screen/
+  organ-donation:
+    kind: service
+    aliases: organ donation transplantation Ireland donor opt out family consent living kidney donor
+    summary: Organ donation can take place after death or, for some organs, during a donor's lifetime. Discussing your wishes with
+      family helps them understand what you would want.
+    symptoms:
+    - A transplant may be considered for people with serious organ failure. A specialist team assesses whether a recipient is suitable.
+      A potential living donor is assessed independently.
+    causes:
+    - Donor and recipient matching depends on the organ and the circumstances. Donation after death is possible only in certain situations,
+      and specialist teams assess each case.
+    diagnosis:
+    - Ireland has a soft opt-out system for deceased donation for eligible adults. Read the HSE guidance on how it applies, who is
+      excluded and how to record an objection. Tell those close to you about your decision.
+    care:
+    - The organ donation team checks the person's wishes and discusses donation with family when appropriate. Living donation involves
+      separate medical checks, informed consent and a recovery plan.
+    complications:
+    - A transplant recipient will need ongoing specialist care. Living donors also need follow-up. Donation at the end of life is
+      considered alongside support for the family.
+    help:
+    - Use the HSE's organ donation information if you want to check the opt-out process or learn about living donation. Ask your
+      treating team about transplant assessment if you have organ failure.
+  peak-flow-test:
+    kind: test
+    aliases: peak flow peak expiratory flow PEF asthma monitoring peak flow meter
+    summary: A peak flow test measures how fast you can blow air out. Repeated readings can help track asthma when used with a clear
+      action plan.
+    evidence_gap: Many readings are taken at home. There is no national record counting home peak flow tests, and asthma prevalence
+      measures something different.
+    symptoms:
+    - A clinician may ask for regular peak flow readings to investigate symptoms or track how well asthma is controlled. A single
+      reading has limited value on its own.
+    causes:
+    - A peak flow meter records the fastest part of a forceful breath out. Results depend on how the test is performed and can vary
+      from one person to another.
+    diagnosis:
+    - Ask when to measure and whether you should do so before or after inhalers. If you are using the meter at home, ask the healthcare
+      professional to check your technique first.
+    care:
+    - After resetting the meter, take a deep breath, seal your lips around the mouthpiece and blow hard and fast. Repeat as instructed
+      and record the highest of the efforts.
+    complications:
+    - Readings are most useful alongside symptoms, inhaler use and the person's usual best. Follow your written asthma plan for significant
+      changes or worsening symptoms.
+    help:
+    - Tell your clinician if readings fall repeatedly or you are relying on a reliever more often. Seek urgent help for severe breathing
+      difficulty, whatever the meter shows.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/peak-flow-test/
+  phenylketonuria-pku-symptoms-causes-and-treatment:
+    aliases: PKU phenylketonuria phenylalanine heel prick
+    summary: Phenylketonuria affects how the body handles an amino acid in protein. Irish newborn screening helps start treatment
+      before high levels affect brain development.
+    symptoms:
+    - A newborn with PKU usually looks well. Untreated PKU can later cause developmental and learning problems. A screening test
+      can detect the risk long before those changes are apparent.
+    causes:
+    - The body has difficulty breaking down phenylalanine. It accumulates in the blood if dietary intake is higher than the person
+      can process.
+    diagnosis:
+    - Specialists investigate a raised result with blood tests and, where appropriate, genetic confirmation. The result helps the
+      team set individual monitoring and treatment targets.
+    care:
+    - A metabolic dietitian teaches the family to manage phenylalanine intake and give prescribed protein substitutes. The team follows
+      blood levels as needs change with growth. Some people may be eligible for additional treatment.
+    complications:
+    - Treatment protects development. High phenylalanine levels during pregnancy can harm a developing baby, so anyone with PKU planning
+      a pregnancy should seek specialist advice well in advance.
+    help:
+    - Follow the newborn screening team's instructions promptly. Contact the metabolic service if you are running out of prescribed
+      products, having difficulties following treatment or planning a pregnancy.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/heel-prick-screening/conditions/
+  placenta-praevia:
+    aliases: placenta praevia placenta previa low lying placenta pregnancy bleeding
+    summary: A placenta that lies close to or over the cervix can affect how you give birth. If you have a low-lying placenta and
+      develop bleeding, contact your maternity unit immediately.
+    emergency: If vaginal bleeding is heavy and you feel faint or collapse, call
+    symptoms:
+    - Many people feel well and find out at their routine scan. Bleeding later in pregnancy can be painless, although contractions
+      or pain are also possible.
+    causes:
+    - The placenta attaches in the lower part of the womb. As the womb grows the distance between the placenta and the cervix can
+      increase. A placenta still covering the cervix later in pregnancy can block the baby's route out.
+    diagnosis:
+    - An ultrasound shows where the placenta lies. A repeat scan later in pregnancy, sometimes performed vaginally, helps clarify
+      its distance from the cervix and guide birth planning.
+    care:
+    - Care depends on the scan, any bleeding and the stage of pregnancy. The team will explain when to contact the unit and whether
+      a planned caesarean birth is needed. Some people need hospital observation.
+    complications:
+    - Bleeding can be sudden or heavy, and some babies need to be born early. A low placenta over a previous caesarean scar can prompt
+      additional checks for an abnormally adherent placenta.
+    help:
+    - Contact the maternity unit immediately for bleeding, contractions or pain if you have been told your placenta is low. Heavy
+      bleeding or feeling faint needs emergency care.
+  pneumonia:
+    aliases: pneumonia lung infection chest cough fever community acquired hospital
+    summary: Pneumonia is an infection of the lungs. It may cause fever, cough, shortness of breath and chest pain that is worse
+      when you breathe or cough.
+    emergency: If a person is severely short of breath, has blue or grey lips, or becomes confused or difficult to wake, call
+    symptoms:
+    - People may have a dry cough or cough up mucus, feel feverish or become unusually tired. Older adults may first appear confused
+      or weak. Children can show fast breathing or feed poorly.
+    causes:
+    - Infection makes air sacs inflamed and can fill them with liquid. Viruses and bacteria are common causes, and causes cannot
+      always be distinguished just from the symptoms.
+    diagnosis:
+    - A clinician checks breathing rate, oxygen level and chest sounds. A chest X-ray can help confirm pneumonia when hospital assessment
+      is needed or the diagnosis is uncertain.
+    care:
+    - Bacterial pneumonia is treated with antibiotics. Hospital care may provide oxygen, fluids or more intensive support. Even as
+      the infection clears, energy and exercise tolerance can take time to recover.
+    complications:
+    - Pneumonia can cause breathing failure, sepsis or infected fluid around a lung. Tell the treating team if symptoms are getting
+      worse or you are failing to improve as expected.
+    help:
+    - Contact a GP urgently for breathlessness, pain on breathing, coughing blood or suspected pneumonia in someone at higher risk.
+      Get emergency help for severe breathing problems or confusion.
+  postpartum-haemorrhage1:
+    aliases: postpartum haemorrhage PPH heavy bleeding after birth obstetric haemorrhage
+    summary: Heavy bleeding after birth can quickly become an emergency. If you feel faint or weak or are passing large clots with
+      heavy bleeding, get immediate help.
+    emergency: If you are bleeding heavily after birth and feel weak, faint or breathless, call
+    symptoms:
+    - Bleeding may be heavy and continuous or suddenly increase after it had been settling. A fast heartbeat, sweating, dizziness
+      or faintness can suggest significant blood loss. Bleeding can occur soon after delivery or later in recovery.
+    causes:
+    - The womb may fail to contract strongly enough after birth. Tears, retained placental tissue or problems with blood clotting
+      can also cause excessive bleeding.
+    diagnosis:
+    - The maternity team checks the amount of bleeding, vital signs and possible causes. Examination, blood tests or ultrasound can
+      help guide further treatment once emergency care has started.
+    care:
+    - Treatment depends on the cause and severity. It may include medicines to contract the womb, fluids or blood products and a
+      procedure to stop the bleeding. Recovery can include treatment for anaemia.
+    complications:
+    - Severe blood loss can cause shock. Weeks later you may still feel exhausted or dizzy. Ask when your blood count should be rechecked
+      and whether the bleeding should be reviewed before another pregnancy.
+    help:
+    - Tell maternity staff immediately if you are bleeding heavily. After discharge, contact the maternity unit for increasing bleeding,
+      large clots or fever. Get emergency help if you feel faint, weak or breathless with heavy bleeding.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/pregnancy-birth/birth/health-after-birth/medical-help-after-birth/
+  pre-eclampsia:
+    aliases: pre eclampsia pregnancy hypertension protein urine postpartum preeclampsia
+    summary: Pre-eclampsia is a pregnancy-related condition that can affect several organs. It can also develop after birth. A severe
+      headache, vision changes or pain under the ribs need urgent assessment.
+    emergency: If someone who is pregnant or has recently given birth has a seizure or collapses, call
+    symptoms:
+    - It is often first noticed during routine blood pressure or urine checks. Symptoms can include a severe headache, blurred vision,
+      pain under the ribs, vomiting or a sudden increase in swelling.
+    causes:
+    - Pre-eclampsia involves raised blood pressure and can affect the kidneys, liver or other organs. Problems with placental function
+      can also affect the baby's growth.
+    diagnosis:
+    - The maternity team checks blood pressure and may test urine and blood. Ultrasound or monitoring may be needed to assess how
+      the baby is doing. Tell the team if you have already given birth.
+    care:
+    - Care depends on how unwell you are and how far along the pregnancy is. It may include hospital observation, medicine for blood
+      pressure or to prevent seizures, and a plan for when to deliver.
+    complications:
+    - It can cause eclampsia, stroke, problems with liver or kidney function, or a need for premature delivery. Blood pressure can
+      remain high after the birth, so follow the maternity team's postnatal review plan.
+    help:
+    - Contact your maternity unit immediately if you develop severe headache, vision changes, upper abdominal pain or sudden swelling
+      during pregnancy or after birth. Do not wait until your next routine appointment.
+  pregnancy:
+    aliases: high blood pressure in pregnancy gestational hypertension chronic hypertension antenatal blood pressure
+    summary: Raised blood pressure in pregnancy needs monitoring even when you feel well. A maternity team can help distinguish long-standing
+      hypertension, gestational hypertension and pre-eclampsia.
+    evidence_gap: Irish surveillance figures for seizures due to eclampsia cannot describe all high blood pressure during pregnancy.
+      Those figures exclude uncomplicated gestational or chronic hypertension.
+    symptoms:
+    - High blood pressure often causes no symptoms. A severe headache, visual changes, pain under the ribs or new sudden swelling
+      can be signs of a more serious pregnancy complication.
+    causes:
+    - Some people have high blood pressure before pregnancy. In others it starts during pregnancy. Pre-eclampsia can involve raised
+      blood pressure with changes in urine, blood tests or how other organs are working.
+    diagnosis:
+    - Your team checks blood pressure, takes a history and may test urine or blood. Depending on the findings, they may assess the
+      baby's growth or arrange more frequent checks.
+    care:
+    - A clinician can decide whether blood pressure medicine is needed and which medicines are suitable during pregnancy. If you
+      are asked to check blood pressure at home, get clear instructions on when to call and whom to contact.
+    complications:
+    - Poorly controlled blood pressure can raise the risk of complications for the pregnant person and baby. Follow-up after birth
+      is important because blood pressure can remain raised or rise again.
+    help:
+    - Call the maternity unit immediately if severe symptoms develop or if readings reach the limits your team gave you. If you take
+      blood pressure medicine and find out you are pregnant, contact the prescriber promptly for a review.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/pre-eclampsia/
+  shortness-breath:
+    aliases: shortness of breath dyspnoea breathlessness breathing difficulty
+    summary: Breathlessness can develop suddenly or gradually. Sudden severe difficulty breathing needs emergency help, particularly
+      with chest pain or a change in colour.
+    emergency: For severe or sudden breathing difficulty, blue lips, collapse or chest pain with breathlessness, call
+    evidence_gap: Diagnosis-specific data on asthma, COPD, heart disease or other conditions do not count breathlessness as a symptom
+      across the Irish population.
+    symptoms:
+    - Notice whether it starts at rest or with activity, gets worse lying down, or comes with wheeze, fever, chest pain or leg swelling.
+      These details help identify possible causes.
+    causes:
+    - Heart or lung disease, infection, anaemia and anxiety can all contribute. Sometimes more than one factor is involved. A new
+      or severe episode needs assessment before attributing it to a familiar cause.
+    diagnosis:
+    - A clinician checks oxygen level, breathing effort and other signs. Depending on how it started and the examination, they may
+      use a heart tracing, blood tests, imaging or lung function tests.
+    care:
+    - Treatment depends on the cause and urgency. Follow any written plan for a known heart or lung condition while arranging help
+      for significant changes. New symptoms may need different treatment.
+    complications:
+    - Severe breathlessness can signal a heart or lung emergency. Gradual symptoms can limit sleep or mobility and may point to an
+      underlying condition that can be treated.
+    help:
+    - Get emergency help for severe or sudden symptoms. Ask your GP for assessment if your usual activity is increasingly limited
+      or you are waking up short of breath.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/shortness-breath/
+  spirometry:
+    kind: test
+    aliases: spirometry breathing test FEV1 FVC asthma COPD lung function
+    summary: Spirometry measures how much and how quickly you can breathe out. It can help assess conditions such as asthma and COPD.
+    evidence_gap: Published programme activity does not cover all spirometry carried out in general practice and hospitals. A consistent
+      national total was not identified.
+    symptoms:
+    - A clinician may recommend spirometry for a persistent cough, wheeze or breathlessness, or to follow a diagnosed lung condition.
+    causes:
+    - You breathe into a device that measures the air you blow out. A clinician compares the results with expected values and may
+      compare the tracing before and after an inhaled medicine.
+    diagnosis:
+    - Follow the clinic's instructions about inhalers. Tell staff if you have had recent surgery, chest symptoms, a lung infection
+      or another health change that might affect the test.
+    care:
+    - You take a deep breath and blow into a mouthpiece as instructed. You may be asked to repeat the effort several times to confirm
+      that the tracing is reliable.
+    complications:
+    - Some people feel briefly light-headed or cough during the test. Tell the technician if this happens. A result depends partly
+      on technique and has to be read alongside your symptoms.
+    help:
+    - Check who will go through the result with you and whether you need another test. Severe or worsening breathing difficulty needs
+      assessment without waiting for spirometry.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/spirometry/
+  spotting:
+    aliases: spotting early pregnancy bleeding first trimester blood pregnancy
+    summary: Light bleeding in early pregnancy can have more than one cause. Tell your maternity or early pregnancy team, particularly
+      if you also have pain.
+    emergency: For heavy bleeding with severe pain, faintness or collapse in early pregnancy, call
+    evidence_gap: Irish miscarriage and ectopic pregnancy figures cannot measure all episodes of spotting. Those outcomes capture
+      different events, and many people with spotting have an ongoing pregnancy.
+    symptoms:
+    - Spotting may be noticed when wiping or as a small amount on a pad. Describe the amount, whether it is increasing and whether
+      there is pain on one side, dizziness or shoulder-tip pain.
+    causes:
+    - Bleeding can come from the cervix, occur during an ongoing pregnancy or be associated with miscarriage or ectopic pregnancy.
+      The colour of the blood alone cannot determine the cause.
+    diagnosis:
+    - A healthcare professional will ask how far along you are and about symptoms and prior pregnancies. Depending on timing, an
+      ultrasound or repeat blood tests may be needed to confirm where the pregnancy is and how it is progressing.
+    care:
+    - Follow the maternity team's instructions for monitoring and repeat tests. Ask who to call if bleeding increases before the
+      appointment. Treatment depends on the cause.
+    complications:
+    - A scan very early in pregnancy may be inconclusive. Keep scheduled follow-up even if spotting stops, particularly if pregnancy
+      location has not yet been confirmed.
+    help:
+    - Contact your GP or maternity team about bleeding. Get urgent assessment for severe or one-sided pain, shoulder-tip pain, heavier
+      bleeding or light-headedness.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/spotting/
+  urinary-tract-infections-uti:
+    aliases: urinary tract infection UTI urine infection cystitis kidney infection
+    summary: A urinary tract infection can cause burning and frequent urination. Fever, pain in the side or vomiting can mean the
+      infection has reached a kidney.
+    evidence_gap: Hospital urine samples and prescribing records show parts of the burden. They cannot count all urinary tract infections
+      treated in the community or distinguish every symptomatic episode.
+    symptoms:
+    - Common bladder symptoms are burning when urinating, frequent or sudden urges and discomfort low in the abdomen. New blood in
+      urine should be discussed with a clinician.
+    causes:
+    - Most UTIs happen when bacteria enter the urinary tract. Pregnancy, a catheter, a blockage or difficulty emptying the bladder
+      can alter the risk and how the infection is assessed.
+    diagnosis:
+    - A clinician asks about symptoms and risk factors and may send a urine sample. This is particularly important for people who
+      are pregnant, people with recurrent infection and those who may have a kidney infection.
+    care:
+    - Treatment varies with symptoms and the person affected. An antibiotic may be appropriate. Ask whether you need a review if
+      symptoms persist, and mention any recent antibiotics or resistant infections.
+    complications:
+    - An infection can spread to the kidneys and occasionally lead to sepsis. Repeated symptoms can also have other causes, so discuss
+      patterns and lasting symptoms with a GP.
+    help:
+    - Seek prompt assessment for fever, back or side pain, vomiting, pregnancy or possible UTI in a child or man. Get emergency help
+      if someone appears severely unwell or confused with signs of infection.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/urinary-tract-infections-uti/
+  urine-infections-pregnancy:
+    aliases: urine infection pregnancy UTI cystitis asymptomatic bacteriuria antenatal
+    summary: Urine infections need attention during pregnancy, even when symptoms seem mild. A maternity clinician can check the
+      urine and choose a treatment suitable for pregnancy.
+    evidence_gap: Routine antenatal urine testing can find bacteria without symptoms. Positive cultures, symptomatic infections and
+      kidney infections are different measures, and no comparable national estimate was found.
+    symptoms:
+    - Burning, new urgency or discomfort while urinating can suggest infection. Needing to pass urine more often can also be part
+      of pregnancy. Fever, chills or pain in the side are more concerning.
+    causes:
+    - Bacteria can be present in the urine without symptoms. Pregnancy changes how urine drains, and bacteria can sometimes travel
+      to the kidneys.
+    diagnosis:
+    - Contact your GP or maternity service for assessment. A urine culture helps identify bacteria and which medicines are likely
+      to work. Tell the clinician how far along you are and about allergies.
+    care:
+    - A clinician may prescribe an antibiotic suitable for your stage of pregnancy and arrange follow-up or a repeat sample. If kidney
+      infection is suspected, you may need hospital assessment.
+    complications:
+    - An untreated infection can spread to the kidney and cause significant illness. Your team may monitor more closely if symptoms
+      return or you have had repeated infections.
+    help:
+    - Contact your GP or maternity unit promptly if you have symptoms. Seek urgent assessment for fever, shaking chills, pain in
+      the side or vomiting. Report contractions or a change in movements to maternity triage.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/urine-infections-pregnancy/
+  vre:
+    aliases: VRE vancomycin resistant enterococci resistant bacteria hospital screening
+    summary: VRE are bacteria that can be carried in the gut without problems. They can be harder to treat if they cause an infection.
+    symptoms:
+    - Carriage alone has no symptoms. Infection can cause symptoms related to the affected site, such as fever, pain when passing
+      urine or signs of a worsening wound.
+    causes:
+    - Enterococci can live in the bowel. Some have developed resistance to an antibiotic called vancomycin, which limits treatment
+      options. Hospitalised patients with devices or serious illness can be more vulnerable to infection.
+    diagnosis:
+    - The hospital can test a screening swab to look for carriage. Samples from blood, urine or wounds help identify what is causing
+      symptoms and which antibiotics might work.
+    care:
+    - People who carry VRE without infection do not usually need antibiotic treatment. Hospitals may use precautions to reduce spread.
+      A specialist can advise on treatment for confirmed infections.
+    complications:
+    - VRE can sometimes cause bloodstream infection. A positive carriage result mainly helps staff decide how to care for you safely
+      and prevent the bacteria spreading.
+    help:
+    - Tell healthcare workers about a previous VRE result. If a patient develops fever or seems more unwell during treatment, contact
+      the treating team promptly.
+  warning-signs-during-pregnancy:
+    aliases: pregnancy warning signs maternity triage bleeding reduced movements severe headache
+    summary: Contact your maternity service immediately if your baby's usual movements change, you have bleeding or severe pain,
+      or you develop other warning signs during pregnancy.
+    emergency: For collapse, a seizure or severe difficulty breathing, call
+    evidence_gap: This is a guide to assessing several symptoms. Irish maternity audits report individual diagnoses and outcomes,
+      so there is no single prevalence figure for the warning signs together.
+    symptoms:
+    - Warning signs can include bleeding, fluid loss, a change in the baby's usual movement pattern, severe headache or vision changes,
+      intense abdominal pain or a painful swollen leg. Sudden shortness of breath or chest pain also needs urgent attention.
+    causes:
+    - Different symptoms can indicate different conditions, including placental or blood-pressure problems, infection, early labour
+      or a blood clot. The timing and pattern of symptoms can help the maternity team assess the possible cause.
+    diagnosis:
+    - The team may ask how far along you are, when the symptoms started and whether movements or fluid loss have changed. Depending
+      on the concern, they may check your blood pressure, urine, blood tests or your baby's heartbeat.
+    care:
+    - Follow the maternity unit's instructions about where to attend. If you are asked to come in, take your maternity notes if available
+      without delaying. Being assessed quickly lets staff decide whether you need tests, monitoring or treatment.
+    complications:
+    - Some concerns turn out to be harmless after assessment. Serious conditions can change quickly, so contact the unit again if
+      symptoms return or worsen after advice or examination.
+    help:
+    - Use your maternity unit's urgent contact number and tell them what has changed. If your baby's movements change, seek help
+      immediately, even at night. A home Doppler does not replace having the baby assessed.
+    sources:
+      Clinical guidance and further reading: https://www.hse.ie/conditions/warning-signs-during-pregnancy/
+  who-a-hip-replacement-is-for:
+    kind: procedure
+    aliases: hip replacement hip arthroplasty osteoarthritis hip surgery recovery
+    summary: A hip replacement can improve pain and movement when hip damage substantially limits daily life. A surgeon weighs your
+      symptoms, health and expectations before recommending surgery.
+    symptoms:
+    - Hip replacement is often considered for severe arthritis when pain, stiffness or limited walking persists despite other care.
+      The decision depends on how the hip affects daily life as well as the X-ray.
+    causes:
+    - A surgeon replaces damaged joint surfaces with artificial components. The implant type and surgical approach depend on the
+      hip and the person's needs.
+    diagnosis:
+    - Bring a list of medicines and tell the team about previous clots or infections. Ask how you will manage stairs, walking aids
+      and help at home while you recover.
+    care:
+    - An anaesthesia team discusses options and monitors you during the operation. Staff usually help you start moving soon afterwards
+      and explain exercises and measures that reduce clot risk.
+    complications:
+    - The main short-term warning signs include increasing wound redness or discharge, fever and one-sided leg swelling. Sudden breathlessness
+      or chest pain after surgery needs emergency help.
+    help:
+    - Keep follow-up appointments even if recovery seems straightforward. Contact the orthopaedic team if pain increases, mobility
+      worsens or you suspect a wound problem.
+    sources:
+      Clinical guidance and further reading: https://www.noca.ie/audits/irish-national-orthopaedic-register/

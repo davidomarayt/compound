@@ -42,7 +42,18 @@ def test_missing_evidence_requires_a_documented_gap(tmp_path, catalogue):
         load_conditions(tmp_path, set())
 
 
-def test_test_guide_formats_documented_irish_data_gap(tmp_path, catalogue):
+@pytest.mark.parametrize(
+    ("kind", "schema_type", "section", "evidence_heading"),
+    [
+        ("test", "MedicalTest", "Preparing for the appointment", "Irish testing figures"),
+        ("procedure", "MedicalProcedure", "How to prepare", "Irish procedure figures"),
+        ("service", "Service", "What to consider", "Irish service figures"),
+    ],
+)
+def test_guide_formats_documented_irish_data_gap(
+    tmp_path, catalogue, kind, schema_type, section, evidence_heading
+):
+    catalogue["guides"]["test-topic"]["kind"] = kind
     catalogue["guides"]["test-topic"]["evidence_gap"] = "The source gives no national count."
     (tmp_path / "health-conditions.yml").write_text(yaml.safe_dump(catalogue), encoding="utf-8")
     directory = load_conditions(tmp_path, set())
@@ -63,8 +74,8 @@ def test_test_guide_formats_documented_irish_data_gap(tmp_path, catalogue):
         adsense={"slots": {}},
         analytics={},
     )
-    assert '"@type": "MedicalTest"' in html
-    assert "<h2>Preparing for the appointment</h2>" in html
-    assert "<h2>Irish testing figures</h2>" in html
+    assert f'"@type": "{schema_type}"' in html
+    assert f"<h2>{section}</h2>" in html
+    assert f"<h2>{evidence_heading}</h2>" in html
     assert "The source gives no national count." in html
     assert "<figcaption>" not in html
