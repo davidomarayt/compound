@@ -200,3 +200,26 @@ Sample article
     assert backfill.existing_backfill_count(folder) == 30
     assert backfill.backfill(tmp_path / "registry", root, client=FakeSEC(),
                              today=date(2026, 10, 12), days=365, max_new=8) == []
+
+
+def test_global_ir_watch_handles_anthropic_listing_without_relaxing_roster(tmp_path):
+    """Catch the 20 Nov earnings-monitor failure after ANT joined listed peers."""
+    import pytest
+    source = Path(__file__).resolve().parents[1] / "content" / "company-watchlist.json"
+    rows = json.loads(source.read_text(encoding="utf-8"))["listed"]
+    assert len(rows) == 11
+    assert "ant" in {row["slug"] for row in rows}
+    state = watch.run(source, tmp_path / "dry-run.json", today=date(2026, 11, 20),
+                      fetch=lambda url: "", dry_run=True)
+    assert state["companies_checked"] == 11
+    assert "ant" in state["companies"]
+    assert state["pending_review"] == []
+    assert not (tmp_path / "dry-run.json").exists()
+
+    altered = json.loads(json.dumps(rows))
+    altered[-1]["slug"] = "unexpected-ticker"
+    bad_list = tmp_path / "unexpected.json"
+    bad_list.write_text(json.dumps({"listed": altered}), encoding="utf-8")
+    with pytest.raises(ValueError, match="exact eleven-company"):
+        watch.run(bad_list, tmp_path / "bad-review.json",
+                  today=date(2026, 11, 20), fetch=lambda url: "")
