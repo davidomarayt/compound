@@ -219,6 +219,15 @@ sources:
   who_oral_ireland:
     name: WHO Oral Health Ireland Country Profile 2022
     url: https://cdn.who.int/media/docs/default-source/country-profiles/oral-health/oral-health-irl-2022-country-profile.pdf
+  hse_eating_referrals:
+    name: HSE response to Parliamentary Question 2328/26
+    url: https://about.hse.ie/api/v2/download-file/file_based_publications/PQ_2328-26_-_Liam_Quaide.pdf
+  hse_gtd:
+    name: Irish National Clinical Guideline on Gestational Trophoblastic Disease
+    url: https://www2.healthservice.hse.ie/files/138/
+  nsrf_2025:
+    name: National Self-Harm Registry Ireland Annual Report 2025
+    url: https://www.drugsandalcohol.ie/46855/1/NSRF-National-Self-Harm-Registry-Ireland-2025_digital.pdf
 evidence:
   eczema:
   - value: About 10%
@@ -1607,6 +1616,85 @@ evidence:
     source: hpsc_scabies_2024
     locator: Irish trends and outbreaks
     measure: notifications
+  contraception-and-menopause:
+  - value: 18%
+    period: Healthy Ireland Survey 2025
+    population: Women who reported being in perimenopause in the Irish survey
+    note: Share reporting use of a hormonal coil. The figure does not show whether the coil was fitted solely for contraception or
+      to manage symptoms as well.
+    source: healthyireland2025
+    locator: Contraception section, hormonal coil use by menopause phase
+    measure: prevalence
+  eating-disorders:
+  - value: 894 referrals
+    period: '2024'
+    population: Referrals received by public eating disorder services in the HSE response
+    note: This is the number of referrals across eating disorder diagnoses. It does not measure everyone affected or the number who
+      started treatment.
+    source: hse_eating_referrals
+    locator: Verified 2023 and 2024 table
+    measure: service
+  external-male-condom:
+  - value: 13%
+    period: Healthy Ireland Survey 2025
+    population: Respondents aged 17 and over in Ireland
+    note: Share reporting external condom use for contraception. This does not capture every use for STI protection or how often
+      condoms were used.
+    source: healthyireland2025
+    locator: Contraception section, use by method and age
+    measure: prevalence
+  fertility:
+  - value: 5,818 referrals
+    period: '2025'
+    population: Couples referred to the six HSE regional fertility hubs in Ireland
+    note: This is the number of referrals to the public pathway. It is not the number of people with fertility difficulties or the
+      number who started treatment.
+    source: hse_fertility_2025
+    locator: Executive summary and regional referrals
+    measure: service
+  intrauterine-system-ius:
+  - value: 5%
+    period: Healthy Ireland Survey 2025
+    population: Women surveyed in Ireland
+    note: Share reporting use of a hormonal coil. Some people also use a coil for another clinical reason, such as heavy bleeding.
+    source: healthyireland2025
+    locator: Contraception section, use by method and gender
+    measure: prevalence
+  molar-pregnancy:
+  - value: 131 registered complete or partial moles
+    period: '2021'
+    population: Women registered with Ireland’s National GTD Centre
+    note: Sum of 85 partial and 46 complete moles listed in the table. The national guideline notes that not all eligible patients
+      were registered.
+    source: hse_gtd
+    locator: Table 5, registered patients by mole classification
+    measure: registry
+  self-harm:
+  - value: 12,340 estimated hospital presentations
+    period: '2025'
+    population: Emergency department presentations in the Republic of Ireland
+    note: The registry estimated that 9,329 individuals accounted for these visits. It used modelling for some missing hospital data
+      and excludes events without an emergency department visit.
+    source: nsrf_2025
+    locator: Executive summary, national estimates
+    measure: hospital
+  the-copper-coil:
+  - value: 3%
+    period: Healthy Ireland Survey 2025
+    population: Women surveyed in Ireland
+    note: Share reporting use of a copper coil. This measures reported use and does not count fittings or how frequently it was used
+      for emergency contraception.
+    source: healthyireland2025
+    locator: Contraception section, use by method and gender
+    measure: prevalence
+  the-implant:
+  - value: 2%
+    period: Healthy Ireland Survey 2025
+    population: Respondents aged 17 and over in Ireland
+    note: Share reporting that they or their partner used an implant. This is self-reported use, not a count of insertions.
+    source: healthyireland2025
+    locator: Contraception section, use by method and age
+    measure: prevalence
 guides:
   asthma:
     aliases: wheezing reactive airways
@@ -7612,3 +7700,761 @@ guides:
       emergency help if breathing or swallowing is affected.
     sources:
       Clinical guidance and further reading: https://www2.hse.ie/conditions/wisdom-tooth-removal/
+  adenomyosis:
+    aliases: adenomyosis painful heavy periods uterus muscle endometrial tissue
+    summary: Adenomyosis can cause heavy bleeding and severe period pain. Discuss worsening symptoms with a GP even if you have previously
+      been told period pain is normal.
+    evidence_gap: Studies based on tissue removed during surgery exclude many people diagnosed by imaging or with no symptoms. An
+      Irish national estimate covering these groups was not identified.
+    symptoms:
+    - Common symptoms include painful or heavy periods, pelvic pressure or pain during sex. Some people have no symptoms and only
+      find out after a scan or operation.
+    causes:
+    - Gland-like tissue similar to the womb lining is present in the wall of the womb. It can contribute to inflammation, tenderness
+      and enlargement of the womb.
+    diagnosis:
+    - A clinician reviews the bleeding and pain pattern. Ultrasound or MRI can look for features of adenomyosis and other causes,
+      including fibroids. Adenomyosis and endometriosis can occur together.
+    care:
+    - Treatment may include pain relief, medication to reduce bleeding or a hormonal option. Surgery can be discussed in suitable
+      cases. Choices depend on symptoms and whether you want a pregnancy.
+    complications:
+    - Heavy bleeding can lead to anaemia. Symptoms can affect work, relationships and quality of life. Ask about checking your blood
+      count if you feel fatigued or breathless.
+    help:
+    - Arrange a GP review if pain or bleeding affects everyday life. Seek urgent advice if bleeding is very heavy, you feel faint
+      or severe pain occurs with possible pregnancy.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/adenomyosis/
+  anorexia-nervosa:
+    aliases: anorexia nervosa severe restriction eating disorder body image
+    summary: Anorexia nervosa can involve restricting food, strong fear about gaining weight or behaviours aimed at preventing weight
+      gain. Early assessment matters, even if a person seems to be managing at school or work.
+    evidence_gap: Irish eating-disorder referrals and hospital data group several diagnoses and capture only people who use those
+      services. They cannot estimate national anorexia prevalence.
+    symptoms:
+    - Changes can include avoiding meals, rigid food rules, distress about changes in weight, excessive exercise, fatigue or dizziness.
+      A child may stop growing at the expected rate.
+    causes:
+    - Physical and psychological factors reinforce each other. When the body is underfed, hunger cues, concentration and flexibility
+      around food can change, making it harder to eat enough.
+    diagnosis:
+    - A GP checks physical health and asks about weight history, food, exercise and thoughts. An ECG or blood tests may be needed.
+      An assessment considers the person's overall health, not just one weight measurement.
+    care:
+    - Treatment can involve specialist therapy, nutritional support and regular medical monitoring. Some people need hospital care.
+      Families can have an important role in supporting a child or young person.
+    complications:
+    - Malnutrition can affect the heart, bones, hormones and concentration. People can be medically unwell before the seriousness
+      is clear to those around them.
+    help:
+    - Contact a GP or treating team about persistent restriction, faintness or a fast deterioration. Get urgent medical help for
+      collapse, chest pain, severe weakness or significant concerns about safety.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/anorexia-nervosa/
+  binge-eating-disorder:
+    aliases: binge eating disorder BED episodes loss of control food eating disorder
+    summary: Binge eating disorder involves repeated distressing episodes of feeling unable to control eating. Treatment can help
+      people understand the pattern and reduce the episodes.
+    evidence_gap: Survey questions about occasional binge eating differ from a diagnosis of binge eating disorder. No directly comparable
+      Irish population figure was identified.
+    symptoms:
+    - A person may eat rapidly, eat despite being uncomfortably full or eat alone because of embarrassment. There can be considerable
+      distress afterwards. An isolated episode does not establish a disorder.
+    causes:
+    - Stress, restrictive dieting, emotions and other factors can affect eating patterns. More than one influence can be present
+      and the reason for episodes can differ over time.
+    diagnosis:
+    - A clinician asks about how often the episodes happen, the sense of control and what happens afterwards. An assessment also
+      considers mood, other eating disorder symptoms and physical health.
+    care:
+    - Guided self-help or talking therapy can be offered. A plan can involve regular meals and strategies to manage triggers. Ask
+      for support suited to your situation.
+    complications:
+    - The pattern can cause distress, isolation or health concerns. Focusing entirely on weight can miss the eating disorder and
+      delay the support that is needed.
+    help:
+    - Contact a GP if episodes recur or cause distress. Tell them if low mood, anxiety or another health issue is also affecting
+      you, so support can be planned together.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/binge-eating-disorder/
+  bipolar-disorder:
+    aliases: bipolar disorder mania hypomania depression mood episode bipolar affective
+    summary: Bipolar disorder involves distinct episodes of depression and mania or hypomania. A change in sleep, activity and judgement
+      that is very different from someone's usual pattern deserves assessment.
+    evidence_gap: Public hospital and mental-health service records represent people who access those services. A comparable Irish
+      population prevalence estimate was not identified.
+    symptoms:
+    - During an elevated episode, someone may need very little sleep, talk quickly, have racing ideas or take unusual risks. Depression
+      can involve low mood, loss of interest and changes in sleep or energy.
+    causes:
+    - Bipolar disorder has multiple contributing factors, including inherited vulnerability. Stress, changing sleep or substance
+      use can affect episodes but do not explain every case.
+    diagnosis:
+    - A mental health assessment reviews mood and behaviour over time. It can help to bring notes or invite a trusted person with
+      consent. Clinicians consider other causes and types of mood disorder.
+    care:
+    - Treatment may include medicines, psychological education and an agreed plan for early warning signs. Discuss sleep, alcohol,
+      medication monitoring and pregnancy planning where relevant.
+    complications:
+    - Episodes can interfere with work, relationships and safety. Some people develop severe symptoms such as psychosis and may need
+      urgent specialist treatment.
+    help:
+    - Seek advice promptly if someone goes for several nights with very little sleep and becomes increasingly active, reckless or
+      unwell. Seek emergency care if there is an immediate risk of serious harm.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/bipolar-disorder/
+  borderline-personality-disorder:
+    aliases: borderline personality disorder BPD emotional dysregulation emotional instability
+    summary: Borderline personality disorder can involve intense emotions and difficulty coping with distress or relationships. A
+      mental health assessment can help identify support without reducing the person to a label.
+    evidence_gap: Irish routine care data do not capture everyone meeting diagnostic criteria, particularly people without specialist
+      contact. A directly comparable estimate was not identified.
+    symptoms:
+    - Emotions may shift rapidly, and situations such as rejection or conflict can feel overwhelming. Some people struggle with impulsive
+      behaviour, feeling disconnected or repeated crises.
+    causes:
+    - Many factors can shape emotional regulation, including temperament and past experience. A person's history matters, but one
+      symptom or difficult experience cannot establish the diagnosis.
+    diagnosis:
+    - A specialist looks at long-term patterns and how they affect life. They also consider other conditions with similar features,
+      including trauma-related difficulties or mood disorders.
+    care:
+    - Structured therapies can teach coping, problem-solving and relationship skills. A GP or mental health team can help arrange
+      support and agree a plan for crises.
+    complications:
+    - Symptoms can affect relationships, work and safety, particularly during severe distress. With treatment and support, people
+      can develop skills and experience meaningful improvement.
+    help:
+    - Ask a GP or mental health team for help if distress or crises recur. Seek urgent help or attend an emergency department if
+      there is a risk of serious harm.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/borderline-personality-disorder/
+  bulimia:
+    aliases: bulimia nervosa binge eating compensatory behaviour eating disorder
+    summary: Bulimia involves episodes of binge eating followed by attempts to compensate. A person can have serious effects on health
+      even when others cannot see a change in weight.
+    evidence_gap: A comparable Irish national rate for bulimia was not identified. Service totals combine diagnoses and do not account
+      for people who have not sought care.
+    symptoms:
+    - A person may feel their eating is out of control during episodes, then feel distressed or ashamed. Symptoms can include sore
+      throat, dental changes, dizziness or fatigue. Some people hide what is happening.
+    causes:
+    - Stress, restrictive eating and concerns about weight or shape can contribute to a recurring cycle. Repeated compensatory behaviour
+      can disrupt the body's fluid and salt balance.
+    diagnosis:
+    - A GP asks about eating, mood and physical health and may request blood tests or a heart tracing. Being as honest as you can
+      helps the clinician assess risks and offer treatment.
+    care:
+    - Care can involve structured therapy, support with normalising eating and medical monitoring. Ask how to access local eating
+      disorder services and when follow-up will happen.
+    complications:
+    - Fluid or salt changes can affect heart rhythm. Dental problems and digestive discomfort can occur. Shame can make it harder
+      to seek help, but the condition is treatable.
+    help:
+    - Speak to a GP if you recognise a recurring pattern. Seek urgent assessment for fainting, chest pain, severe weakness or inability
+      to keep down fluids.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/bulimia/
+  combined-oral-contraception-the-pill:
+    kind: procedure
+    aliases: combined pill combined oral contraceptive oestrogen progestogen COC contraception
+    summary: The combined pill contains two hormones to prevent pregnancy. A clinician can check whether it suits you and explain
+      what to do if you miss a pill.
+    evidence_gap: Healthy Ireland reports the contraceptive pill as a group. The published figure does not separate the combined
+      pill from other oral contraception.
+    symptoms:
+    - It may suit someone who wants a daily contraceptive tablet and can take a method containing oestrogen. A history of particular
+      migraines, clots or some other conditions can affect suitability.
+    causes:
+    - The hormones usually prevent ovulation and change cervical mucus. Different products use different schedules, so instructions
+      for one brand may not apply to another.
+    diagnosis:
+    - Tell the prescriber about smoking, migraine symptoms, blood pressure, previous clots and medicines. Ask when protection starts
+      and what to do during vomiting or diarrhoea.
+    care:
+    - Take the pill according to the specific prescription and leaflet. Ask a pharmacist or clinician for missed-pill advice promptly,
+      especially if you recently had sex without another method.
+    complications:
+    - Some people have spotting or other side effects. Methods with oestrogen carry a small increased risk of a clot. Sudden chest
+      pain or breathlessness needs emergency assessment.
+    help:
+    - Speak to your GP or clinic if you develop new migraine features, have side effects or want to change methods. Seek prompt advice
+      after missed pills if pregnancy is possible.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/services/sexual-health/free-contraception/
+  contraception-and-menopause:
+    kind: service
+    aliases: contraception menopause perimenopause over 40 HRT coil stop contraception
+    summary: Periods can become irregular before menopause and pregnancy can still be possible. A GP or clinic can help you decide
+      which contraception to use and when it is safe to stop.
+    symptoms:
+    - Anyone who could become pregnant and wants to avoid pregnancy may need contraception during perimenopause. Choice changes with
+      age, health history and preferences.
+    causes:
+    - Menopausal hormone therapy is generally used to treat symptoms and does not provide contraception. Some devices can have more
+      than one role, with different replacement intervals.
+    diagnosis:
+    - Tell your clinician which contraception and HRT you use and when each was started. Bleeding patterns on hormonal methods can
+      make menopause timing harder to interpret.
+    care:
+    - Talk through options for switching, continuing or stopping a method. A clinician can advise when blood tests are relevant and
+      what to do if bleeding changes.
+    complications:
+    - Bleeding after menopause or new unexplained bleeding needs assessment. Ask how your contraception changes which symptoms should
+      prompt review.
+    help:
+    - Check with a GP or clinic before stopping contraception if you are unsure whether pregnancy is still possible. Ask for written
+      dates if a coil or other device also has a treatment role.
+  eating-disorders:
+    aliases: eating disorders anorexia bulimia binge eating disordered eating support
+    summary: Eating disorders can affect people at any weight or age. Changes in eating, distress about food or compulsive behaviour
+      around exercise are reasons to seek help early.
+    symptoms:
+    - Signs can include avoiding meals, eating in secret, repeated binge episodes, distress after eating or excessive concern about
+      weight. A person may also withdraw socially, feel cold or become dizzy.
+    causes:
+    - Several influences can contribute, including biological vulnerability, stressful experiences and social pressure. An eating
+      disorder can develop without an obvious trigger and cannot be recognised from appearance alone.
+    diagnosis:
+    - A GP asks about eating, exercise, physical symptoms and mental health. They may check pulse, blood pressure and blood tests,
+      and refer to a specialist eating disorder team.
+    care:
+    - Treatment can include psychological care, nutritional rehabilitation and physical monitoring. The person's age and the type
+      of eating disorder help guide the plan. Family or other supporters can be involved with consent.
+    complications:
+    - Some eating disorders can cause dehydration, abnormal heart rhythm or nutritional problems. Depression or anxiety can occur
+      alongside them. Early support can reduce medical risk and improve recovery.
+    help:
+    - Speak to a GP if eating patterns or distress are affecting your life. Get urgent help for fainting, chest symptoms, inability
+      to keep fluids down or serious concerns about safety.
+    sources:
+      Clinical guidance and further reading: https://about.hse.ie/publications/hcp-eating-disorders-model-of-care/
+  emergency-contraception:
+    kind: procedure
+    aliases: emergency contraception morning after pill emergency coil unprotected sex
+    summary: Emergency contraception can reduce the chance of pregnancy after sex without contraception or after a method fails.
+      Seek advice as soon as possible because options have time limits.
+    evidence_gap: The national Free Contraception Scheme records access across several methods. That overall count cannot identify
+      how often emergency contraception is used.
+    symptoms:
+    - You may need it after a missed pill, a split condom or another break in protection. A pharmacist or clinic can assess suitability
+      based on when sex happened and your usual method.
+    causes:
+    - Options in Ireland include certain tablets and the fitting of a copper coil. The choice depends on timing, medicines, health
+      history, and when you might have ovulated.
+    diagnosis:
+    - Tell the clinician or pharmacist the timing of sex, any contraception used and medicines taken recently. Mention if you are
+      breastfeeding or could already be pregnant.
+    care:
+    - A pharmacist or clinician can supply suitable tablets, or a trained clinician can arrange fitting of a copper coil. Ask when
+      you can restart or begin regular contraception.
+    complications:
+    - The next period can be earlier or later. Ask when to take a pregnancy test and what to do if you vomit soon after taking a
+      tablet. The tablet does not protect against infections.
+    help:
+    - Seek advice promptly from a pharmacy, GP or family planning clinic. Ask about STI care if needed, and seek assessment for severe
+      pain or suspected pregnancy.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/emergency-contraception/
+  external-male-condom:
+    kind: procedure
+    aliases: external condom condom use barrier contraception STI latex
+    summary: External condoms reduce the risk of pregnancy and many sexually transmitted infections. They work best when used correctly
+      from the start of sex.
+    symptoms:
+    - Condoms are suitable for many people who want a barrier method or STI protection alongside other contraception. A pharmacist
+      or clinic can advise on suitable types and sizes.
+    causes:
+    - A condom forms a physical barrier that reduces transfer of semen and other fluids. It may offer less protection against infections
+      passed through areas of skin it does not cover.
+    diagnosis:
+    - Check the use-by date and packaging. Use a suitable lubricant for the material. Oil-based products can damage latex. Use a
+      new condom each time.
+    care:
+    - Follow the packet instructions, including holding the base when withdrawing after use. Use a new one if the condom is damaged,
+      put on incorrectly or removed.
+    complications:
+    - A condom can split or slip. If that happens, promptly ask a pharmacist or clinic about emergency contraception or whether STI
+      assessment is appropriate.
+    help:
+    - Ask a pharmacist or sexual health service for advice about a split condom, testing, or choosing a suitable alternative if latex
+      causes irritation.
+  fertility:
+    aliases: fertility problems infertility trying to conceive fertility hub pregnancy tests Ireland
+    summary: Fertility problems can have more than one cause, and assessing both partners where relevant can help decide what to
+      do next. Your GP can discuss testing and referral.
+    symptoms:
+    - Some people have irregular periods, pelvic pain or known sperm problems. Others have no obvious symptoms beyond difficulty
+      conceiving. Age and time trying influence when to seek assessment.
+    causes:
+    - Factors can include problems with ovulation, fallopian tubes, sperm or the womb. Sometimes standard tests do not find a clear
+      cause. Previous pregnancy does not exclude a later difficulty.
+    diagnosis:
+    - A clinician reviews medical history, periods and medicines. Tests may include blood samples, semen analysis and imaging. The
+      timing and order depend on what has already been checked.
+    care:
+    - Care can involve addressing a cause, supporting ovulation or referral for assisted reproduction. Irish regional fertility hubs
+      assess eligibility for publicly funded treatment. Check the current criteria with the HSE.
+    complications:
+    - Tests and treatment can take time and have emotional and financial effects. Ask which next step would change the plan, when
+      to expect results and what support is available.
+    help:
+    - Contact your GP if you are struggling to conceive, particularly with irregular periods, known pelvic or sperm problems or concerns
+      about age. Ask about the regional fertility hub pathway.
+    sources:
+      Clinical guidance and further reading: https://about.hse.ie/publications/hse-fertility-services-report-2025/
+  heavy-periods:
+    aliases: heavy periods heavy menstrual bleeding menorrhagia anaemia period flooding
+    summary: Heavy periods can disrupt daily life and cause iron deficiency. Tell your GP how bleeding affects work, sleep or ordinary
+      activity, even if it has been heavy for a long time.
+    evidence_gap: Irish treatment and surgery records capture selected patients and do not identify everyone with heavy periods.
+      A comparable national estimate using a consistent symptom definition was not located.
+    symptoms:
+    - You may need to change period products frequently, pass large clots or bleed through clothes or bedding. Fatigue or breathlessness
+      can be signs of anaemia.
+    causes:
+    - Bleeding patterns can change with hormones, fibroids, adenomyosis, a device or other conditions. Some medicines affect bleeding,
+      and sometimes there is no clear structural cause.
+    diagnosis:
+    - A GP asks about timing, pain and bleeding between periods or after sex. They may check for pregnancy or anaemia and arrange
+      an examination, scan or specialist review.
+    care:
+    - Options can include medicines to reduce bleeding, hormonal treatment or a procedure. The choice depends on the cause, contraception
+      needs and plans for pregnancy.
+    complications:
+    - Ongoing blood loss can cause iron deficiency or anaemia. Sudden heavy bleeding or bleeding after menopause should be assessed
+      in its own right.
+    help:
+    - Contact your GP if bleeding affects your life or if you feel unusually tired. Get urgent help for very heavy bleeding with
+      faintness or severe pain, particularly if pregnancy is possible.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/heavy-periods/
+  intrauterine-system-ius:
+    kind: procedure
+    aliases: IUS hormonal coil intrauterine system LNG contraception Mirena
+    summary: The hormonal coil is fitted inside the womb and releases a small amount of progestogen. Some types are also used to
+      reduce heavy periods.
+    symptoms:
+    - The device offers long-lasting contraception without a daily tablet. Choice can depend on bleeding pattern, medical history
+      and whether the coil is intended for contraception or another use.
+    causes:
+    - Progestogen thickens cervical mucus and thins the lining of the womb. Products differ in how long they can stay in place and
+      what they are licensed to treat.
+    diagnosis:
+    - Ask how the clinician excludes pregnancy and whether you need extra contraception around insertion. Discuss pain relief, previous
+      difficult examinations and any infection symptoms.
+    care:
+    - A trained clinician inserts the device through the cervix. You can ask them to explain each step and pause if needed. Before
+      leaving, ask about follow-up and which symptoms to report.
+    complications:
+    - Spotting can be irregular at first and periods often become lighter. Severe pain or fever, concern that the device moved, or
+      symptoms of pregnancy need assessment.
+    help:
+    - Contact the fitting clinic about a change in threads, ongoing pain or suspected pregnancy. Confirm the replacement date for
+      the specific device and reason it was fitted.
+  mastitis:
+    aliases: mastitis breastfeeding breast inflammation breast infection fever hot red breast
+    summary: Mastitis while breastfeeding can cause a painful hot area of the breast and flu-like symptoms. Get advice early if you
+      feel unwell or the area worsens.
+    evidence_gap: Irish service records do not cover all episodes managed with feeding support at home. A comparable national figure
+      for mastitis during breastfeeding was not identified.
+    symptoms:
+    - A breast can become painful, firm or swollen, often in one area. There may be redness, fever, aches or chills. A persistent
+      lump or a soft painful swelling needs review.
+    causes:
+    - Breast tissue can become inflamed when milk flow changes or the breast is irritated. Sometimes infection occurs. Pressure or
+      forceful massage can worsen irritation.
+    diagnosis:
+    - A clinician or lactation professional checks symptoms, feeding pattern and how long the breast has been painful. Persistent
+      swelling or lack of improvement can prompt tests for an abscess.
+    care:
+    - Continue normal feeding as tolerated and ask for support with positioning or expression. A cool compress and suitable pain
+      relief may help. A clinician decides whether antibiotics are needed.
+    complications:
+    - An abscess can cause an increasingly painful swelling or persistent fever. It may need drainage. Persistent breast changes
+      after the inflammation settles should be assessed.
+    help:
+    - Contact your GP or maternity service if you feel very unwell, symptoms do not improve or a lump worsens. Ask for prompt assessment
+      if fever persists or redness spreads.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/mastitis/
+  molar-pregnancy:
+    aliases: molar pregnancy hydatidiform mole gestational trophoblastic disease GTD hCG
+    summary: A molar pregnancy is an uncommon problem with the tissue that would usually form the placenta. Specialist follow-up
+      is important even after the pregnancy tissue has been removed.
+    symptoms:
+    - Bleeding in pregnancy, severe nausea or a different scan pattern can lead to investigation. Some molar pregnancies are found
+      only after tissue is examined following a pregnancy loss.
+    causes:
+    - The genetic material in the pregnancy is abnormal. Placental tissue can grow in an unusual way and produce pregnancy hormone.
+      There are complete and partial types, which have different patterns.
+    diagnosis:
+    - A team uses ultrasound, blood tests for hCG and sometimes tissue examination. The type may only be confirmed after specialist
+      pathology review.
+    care:
+    - Care usually involves removing the pregnancy tissue and measuring hCG until follow-up is complete. Follow the specialist team's
+      advice about pregnancy during monitoring.
+    complications:
+    - In some cases abnormal tissue can continue growing and need additional treatment. Regular hCG measurements detect this early.
+      A later pregnancy can usually be planned with advice once follow-up ends.
+    help:
+    - Contact your maternity team about bleeding or severe symptoms in pregnancy. After diagnosis, ask who will arrange blood tests
+      and whom to call if you miss a result.
+  obsessive-compulsive-disorder:
+    aliases: OCD obsessive compulsive disorder intrusive thoughts checking rituals compulsions
+    summary: OCD can cause unwanted thoughts and repeated actions or mental rituals. Treatment can help reduce how much time and
+      distress the cycle causes.
+    evidence_gap: General Irish estimates for anxiety or psychological distress do not isolate OCD. A consistent Irish population
+      prevalence measure was not identified.
+    symptoms:
+    - A person may feel driven to check, wash, count, seek reassurance or repeat thoughts. These actions may provide short relief.
+      Intrusive thoughts can be upsetting and do not by themselves tell you what a person intends.
+    causes:
+    - A distressing thought or doubt can be followed by a ritual to reduce anxiety. Relief can reinforce the ritual and make it harder
+      to tolerate the uncertainty next time.
+    diagnosis:
+    - An assessment looks at patterns, time spent, distress and interference with daily life. Tell the clinician about mental rituals
+      as well as visible actions.
+    care:
+    - Specialist cognitive behavioural therapy can include exposure and response prevention. Some people also benefit from medication.
+      The therapist can tailor the plan and pace to the person.
+    complications:
+    - OCD can affect sleep, relationships, school or work. Avoidance and reassurance may gradually take up more time, and another
+      condition may need support too.
+    help:
+    - Talk to your GP or mental health team if symptoms are distressing, time-consuming or interfering with daily life. Ask about
+      specialist therapy for OCD.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/obsessive-compulsive-disorder/
+  period-pain:
+    aliases: period pain painful periods menstrual cramps dysmenorrhoea pelvic pain
+    summary: Period cramps are common, but pain that prevents everyday activities or changes over time deserves assessment. Conditions
+      such as endometriosis or adenomyosis can cause similar symptoms.
+    evidence_gap: Survey estimates for cramps can include mild discomfort or disabling pain. A comparable national Irish estimate
+      using a consistent severity definition was not identified.
+    symptoms:
+    - Cramping is often low in the abdomen and can spread to the back or thighs. Some people also feel nauseated or have loose stools.
+      Note whether pain occurs outside the period.
+    causes:
+    - The womb contracts during a period. Hormone-like substances can make the contractions stronger. Sometimes another pelvic condition
+      is responsible for unusually severe or spreading pain.
+    diagnosis:
+    - A clinician asks when the pain occurs and how it affects life. They may consider bleeding pattern, pregnancy, bladder or bowel
+      symptoms and whether an examination or scan is needed.
+    care:
+    - Heat and suitable pain relief can help some people. A clinician can discuss hormonal treatment or a plan to investigate persistent
+      pain. Track symptoms and what has helped.
+    complications:
+    - Pain can affect sleep, education and work. Delayed assessment may prolong avoidable symptoms, especially when there is an underlying
+      condition needing care.
+    help:
+    - Speak to your GP for severe or changing pain, pain between periods or pain during sex. Get urgent advice for sudden severe
+      pain, faintness or possible pregnancy.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/period-pain/
+  polyendocrine-metabolic-ovarian-syndrome-pmos:
+    aliases: PMOS PCOS polycystic ovary syndrome polyendocrine metabolic ovarian syndrome irregular periods
+    summary: Polyendocrine metabolic ovarian syndrome, previously called PCOS, can affect ovulation, periods, skin and metabolic
+      health. The effects vary from person to person.
+    evidence_gap: Estimates vary with the diagnostic criteria and age group. A directly comparable Irish national estimate for PMOS
+      was not identified.
+    symptoms:
+    - Periods may be infrequent or irregular. Some people notice acne, increased facial or body hair or difficulty conceiving. Ovaries
+      that look polycystic can occur without the syndrome.
+    causes:
+    - A combination of hormone changes, ovarian function and metabolic factors can contribute. Some people have insulin resistance.
+      The name change reflects features beyond the ovaries.
+    diagnosis:
+    - A clinician considers symptoms and can use blood tests and sometimes ultrasound to assess them and rule out similar conditions.
+      Diagnosis in adolescents requires particular care.
+    care:
+    - Management depends on symptoms and priorities. Treatment can help with periods, skin symptoms, fertility or metabolic risks.
+      Ask which health checks are appropriate and when to review them.
+    complications:
+    - Long gaps between periods can affect the womb lining. Some people have a higher risk of type 2 diabetes or other metabolic
+      complications and benefit from screening.
+    help:
+    - Discuss persistent changes in cycles, troublesome hair growth or trouble conceiving with a GP. Ask how the diagnosis was made
+      and what follow-up suits your age and circumstances.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/polyendocrine-metabolic-ovarian-syndrome-pmos/
+  postnatal-depression:
+    aliases: postnatal depression PND postpartum depression mental health after birth
+    summary: Postnatal depression can develop in the months after birth. Persistent low mood, anxiety or loss of interest deserves
+      support from your GP, midwife or public health nurse.
+    emergency: If you or a baby is in immediate danger, call
+    evidence_gap: Irish service figures include several perinatal conditions. A survey of symptoms or a referral count cannot show
+      how many people are diagnosed with postnatal depression nationally.
+    symptoms:
+    - You may feel low, numb, guilty, worried or unable to enjoy things. Sleep problems beyond the baby's usual waking can occur.
+      Some people find it difficult to feel connected or manage everyday tasks.
+    causes:
+    - Physical changes, sleep disruption, past depression, stress and available support can all contribute. You can have postnatal
+      depression even if the birth went as planned.
+    diagnosis:
+    - A clinician asks about symptoms, duration, daily functioning and safety. They may use a short screening questionnaire and check
+      for physical issues such as anaemia or thyroid problems if indicated.
+    care:
+    - Support can include practical help, talking therapy or medication. Tell the clinician if you are breastfeeding so you can discuss
+      suitable options. Specialist perinatal services can help with more complex symptoms.
+    complications:
+    - Depression can interfere with self-care and caring for the baby. Severe confusion, unusual beliefs or hearing voices after
+      birth can indicate a different emergency and need immediate help.
+    help:
+    - Speak to your GP or maternity team if you are worried, even in the first weeks. Get urgent help for thoughts of harming yourself
+      or the baby, or for severe confusion or unusual beliefs.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/postnatal-depression/
+  psychosis:
+    aliases: psychosis hallucinations delusions hearing voices first episode psychosis mental health
+    summary: Psychosis can change how someone experiences or interprets what is happening around them. New symptoms deserve prompt
+      medical assessment and can have several different causes.
+    evidence_gap: Irish studies of first episodes and hospital admissions measure different groups. No comparable prevalence figure
+      covering psychosis from all causes was identified.
+    symptoms:
+    - A person may hear or see things others do not, hold unusual beliefs or seem confused and unable to organise thoughts. Behaviour,
+      sleep and ability to manage daily life can change.
+    causes:
+    - Psychosis can occur in several mental or physical illnesses or be linked to substances, medicines or severe sleep disruption.
+      The first episode needs assessment to clarify the cause.
+    diagnosis:
+    - A clinician assesses symptoms, timing, physical health and safety. They may arrange tests or ask for observations from someone
+      who knows the person, with consent where possible.
+    care:
+    - Care may involve an early-intervention team, medication, psychological support and practical help with sleep, work or study.
+      The plan depends on the cause and the person's needs.
+    complications:
+    - Someone may feel frightened or find basic tasks difficult. Early support can help reduce disruption. Sudden confusion with
+      fever or physical illness can also need urgent medical care.
+    help:
+    - Contact a GP, mental health service or emergency department promptly about new symptoms. If there is immediate danger or the
+      person cannot be kept safe, call emergency services.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/psychosis/
+  ptsd:
+    aliases: PTSD post traumatic stress disorder trauma flashbacks nightmares avoidance
+    summary: Post-traumatic stress disorder can develop after a traumatic event. Persistent flashbacks, avoidance or feeling constantly
+      on guard are reasons to seek support.
+    evidence_gap: Estimates for individual trauma-exposed groups do not represent everyone living in Ireland. An equivalent Irish
+      national clinical estimate was not identified.
+    symptoms:
+    - People may have nightmares, unwanted memories or reactions to reminders, and may avoid places or activities. They can also
+      feel numb, irritable or easily startled.
+    causes:
+    - Some people remain highly alert or experience trauma memories as if the event is happening again. Recovery varies, and many
+      people exposed to trauma do not develop PTSD.
+    diagnosis:
+    - A GP or mental health professional asks about symptoms, timing, safety and effects on daily life. You can ask to go at a pace
+      that feels manageable.
+    care:
+    - Trauma-focused therapy can help. The team may also discuss help with sleep, symptoms of depression or other supports. Treatment
+      can be adapted to present safety needs.
+    complications:
+    - Persistent symptoms can affect relationships, work and physical health. Support is useful even if the event was long ago or
+      earlier treatment did not help.
+    help:
+    - Contact a GP or mental health service if symptoms persist or interfere with daily life. Seek urgent help if you are in immediate
+      danger or cannot keep yourself safe.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/ptsd/
+  schizophrenia:
+    aliases: schizophrenia psychosis hallucinations delusions negative symptoms mental health
+    summary: Schizophrenia can affect thinking, perception, motivation and daily life. Diagnosis involves looking at the pattern
+      over time and considering other causes.
+    evidence_gap: Hospitalisation and treatment data capture only some people living with schizophrenia. A directly comparable Irish
+      national prevalence figure was not identified.
+    symptoms:
+    - Symptoms can include hearing voices, strong beliefs that others do not share, difficulty organising thoughts or reduced interest
+      in everyday life. Changes in mood, sleep or self-care can also occur.
+    causes:
+    - Schizophrenia has several contributing influences. A psychotic episode alone does not establish the diagnosis, because similar
+      symptoms can occur with other illnesses.
+    diagnosis:
+    - A mental health team reviews symptoms and their duration, physical health, medicines and other possible factors. They can work
+      with the person and their supporters to plan follow-up.
+    care:
+    - Treatment can include antipsychotic medication, psychological or family support and help with education, work or daily routines.
+      Discuss side effects and physical-health monitoring with the team.
+    complications:
+    - Symptoms may improve substantially with care. Some people need continuing support or experience relapses. A written plan can
+      help recognise early changes and arrange help sooner.
+    help:
+    - Contact a GP or mental health team for persistent symptoms or a relapse. Seek urgent help if there is immediate danger or the
+      person cannot be kept safe.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/schizophrenia/
+  self-harm:
+    aliases: self harm emotional distress crisis injury support safety plan Ireland
+    summary: If you have hurt yourself or feel at risk of doing so, you can get help with both the physical harm and what led to
+      it. You do not have to manage it on your own.
+    emergency: If someone is seriously injured, in immediate danger or cannot stay safe, call
+    symptoms:
+    - A person may feel overwhelmed, detached, hopeless or afraid to tell anyone. Some people show little outward distress. Any injury,
+      poisoning or concern about immediate safety should be taken seriously.
+    causes:
+    - Self-harm can be a response to intense distress. Reasons differ and can change. A compassionate conversation can help someone
+      reach medical and emotional support.
+    diagnosis:
+    - A clinician can assess injuries or other immediate effects and ask how safe you feel. You can ask for someone you trust to
+      come with you. Share what happened so staff can choose the right care.
+    care:
+    - If possible, tell a trusted person and stay near someone while arranging help. A GP or mental health team can help develop
+      a safety plan and organise appropriate support or therapy.
+    complications:
+    - Physical effects may need urgent treatment even if you feel well at first. Ongoing distress and repeat episodes are reasons
+      to seek follow-up and make it easier to get help quickly next time.
+    help:
+    - Go to an emergency department or call emergency services for serious injury or immediate danger. Contact your GP, out-of-hours
+      GP or mental health team for urgent support when you are worried about staying safe.
+  the-copper-coil:
+    kind: procedure
+    aliases: copper coil IUD intrauterine device non hormonal emergency contraception
+    summary: The copper coil is a hormone-free device fitted inside the womb. It can provide long-term contraception or be used urgently
+      after sex when suitable.
+    symptoms:
+    - It may suit someone who wants contraception they do not need to remember daily. For emergency contraception the timing matters,
+      so contact a clinic promptly to check eligibility and fitting availability.
+    causes:
+    - Copper affects sperm, preventing fertilisation. Different devices are approved for different lengths of use. It does not protect
+      against sexually transmitted infections.
+    diagnosis:
+    - The clinician asks about the timing of any unprotected sex, periods and medical history. They will discuss pregnancy checks,
+      infection assessment and pain relief during fitting.
+    care:
+    - A trained clinician fits the device through the cervix. Ask whether you can have someone with you, how to check threads if
+      advised and whom to contact afterwards.
+    complications:
+    - Cramps or heavier periods can occur. A coil can rarely move, fall out or injure the womb during insertion. Severe pain, fever
+      or suspected pregnancy needs prompt assessment.
+    help:
+    - Contact your GP or clinic for severe pain, a change in threads or concerns about pregnancy. Ask about replacement timing and
+      use backup protection when advised.
+  the-implant:
+    kind: procedure
+    aliases: contraceptive implant arm implant progestogen Nexplanon long acting contraception
+    summary: A contraceptive implant is a small rod fitted under the skin of the upper arm. It releases a hormone for long-acting
+      contraception.
+    symptoms:
+    - The implant may suit people who want to avoid a daily tablet. It can be removed if you wish to stop or switch. Some medicines
+      can reduce its effectiveness.
+    causes:
+    - It releases progestogen, which usually prevents ovulation and thickens cervical mucus. It does not protect against sexually
+      transmitted infections.
+    diagnosis:
+    - Tell the clinician about medicines, supplements and recent unprotected sex. Ask when protection starts, how long the device
+      lasts and what kind of bleeding changes to expect.
+    care:
+    - The clinician numbs the skin, places the rod under it and checks the position. You should receive instructions about caring
+      for the insertion site and confirming removal or replacement dates.
+    complications:
+    - Bruising or soreness can occur after fitting. Bleeding can change and may remain unpredictable. Get advice if the site becomes
+      hot, swollen or increasingly painful.
+    help:
+    - Discuss troublesome bleeding, suspected movement or inability to feel the implant with the clinic. Ask about backup contraception
+      before starting medicines that might interact.
+  the-mini-pill:
+    kind: procedure
+    aliases: mini pill progestogen only pill POP contraception progesterone daily
+    summary: The mini pill is a progestogen-only contraceptive. How late you can take it and still be protected depends on which
+      product was prescribed.
+    evidence_gap: Irish survey figures group contraceptive pills. They do not report a separate national proportion using a progestogen-only
+      pill.
+    symptoms:
+    - It may be suitable for people who cannot use oestrogen or prefer a daily tablet. A clinician can review your medical history,
+      breastfeeding status and current medicines.
+    causes:
+    - Progestogen thickens mucus at the cervix. Some types also reliably stop ovulation. Different formulations have different timing
+      rules.
+    diagnosis:
+    - Ask when to start, whether you need extra protection temporarily and what counts as a missed pill for your brand. Tell the
+      prescriber about other medicines or supplements.
+    care:
+    - Take the tablet daily as instructed. If you miss a pill or have significant vomiting or diarrhoea, follow the product instructions
+      and seek timely advice if you might need emergency contraception.
+    complications:
+    - Bleeding can become irregular, lighter or absent. Report severe or persistent symptoms and ask about a pregnancy test if there
+      was a gap in protection.
+    help:
+    - Contact a GP, pharmacist or clinic for brand-specific advice after missed pills, interactions or unexpected bleeding. Read
+      current HSE information about access and cost.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/services/sexual-health/free-contraception/
+  the-patch:
+    kind: procedure
+    aliases: contraceptive patch combined hormonal patch weekly oestrogen progestogen
+    summary: The contraceptive patch releases hormones through the skin. It needs replacing on the recommended schedule, and advice
+      after detachment depends on how long it was off.
+    evidence_gap: Irish contraception totals are reported for broad groups. A reliable separate estimate for patch use was not identified.
+    symptoms:
+    - It may suit someone who wants a combined hormonal method without taking a tablet every day. A clinician screens for factors
+      that make oestrogen unsuitable.
+    causes:
+    - The patch releases oestrogen and progestogen to stop ovulation. Products have an application and replacement schedule that
+      should be followed to maintain protection.
+    diagnosis:
+    - Tell the prescriber about migraines, smoking, blood pressure, prior blood clots and medicines. Ask which skin sites to use
+      and how to check that the patch stays attached.
+    care:
+    - Apply it to a recommended area of clean, dry skin. Change it as directed and keep track of when the next patch is due. Check
+      product instructions if it peels or falls off.
+    complications:
+    - Skin irritation or spotting can occur. Combined hormonal contraception carries a small risk of a blood clot. Sudden breathlessness
+      or chest pain requires emergency assessment.
+    help:
+    - Ask a pharmacist or clinician promptly after a late change or detached patch, especially if you've recently had sex. Get a
+      clinical review if new risk factors or side effects arise.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/the-patch/
+  vaginal-ring:
+    kind: procedure
+    aliases: vaginal ring combined contraceptive ring NuvaRing hormonal vaginal contraception
+    summary: The vaginal ring is a flexible contraceptive placed in the vagina. The product has a schedule for insertion, removal
+      and replacement.
+    evidence_gap: The Healthy Ireland figures consulted do not provide a standalone national estimate for vaginal ring use.
+    symptoms:
+    - Some people choose the ring to avoid taking a daily tablet. It contains oestrogen, so a clinician checks whether a combined
+      hormonal method is suitable.
+    causes:
+    - The ring releases hormones that usually prevent ovulation. Correct timing helps maintain protection, especially around the
+      break or after the ring comes out.
+    diagnosis:
+    - Review medical history, other medicines and potential risk factors with the prescriber. Ask when contraception begins and when
+      you need to use another method temporarily.
+    care:
+    - You insert and remove the ring yourself. Follow the specific product's schedule. Contact a pharmacist or clinician after a
+      late insertion or if it comes out for longer than allowed.
+    complications:
+    - Some people notice spotting, vaginal discomfort or other hormonal side effects. Rare clot symptoms, including sudden breathlessness
+      or chest pain, need emergency help.
+    help:
+    - Contact your GP or clinic about repeated discomfort, missed changes or a suspected pregnancy. Read current HSE guidance on
+      scheme eligibility if cost is a concern.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/vaginal-ring/
+  vaginal-thrush:
+    aliases: vaginal thrush candidiasis vaginal yeast itching white discharge
+    summary: Vaginal thrush can cause itching or soreness with discharge. If symptoms are new or unusual, a clinician can check that
+      another infection or skin condition is not responsible.
+    evidence_gap: Many episodes are treated in pharmacies or without a consultation. Product sales do not establish a national prevalence
+      figure for confirmed thrush.
+    symptoms:
+    - Common symptoms include vulval itching, irritation, soreness during sex or a thick white discharge. A strong smell, pain in
+      the lower abdomen or bleeding can have another cause.
+    causes:
+    - Candida yeast can be present without symptoms. Overgrowth can lead to irritation. Antibiotic use, pregnancy and some health
+      conditions can make episodes more likely.
+    diagnosis:
+    - A pharmacist or clinician asks about symptoms and previous episodes. An examination or swab can help if symptoms recur, do
+      not improve or are difficult to identify.
+    care:
+    - Antifungal treatment can be offered if appropriate. Ask which products are suitable if pregnant, taking other medicines or
+      having repeated episodes. Avoid using the same treatment for every change in discharge.
+    complications:
+    - Recurrent symptoms can disrupt daily life and may require an assessment of other causes. Some treatments can affect certain
+      barrier contraceptives, so check the product information.
+    help:
+    - Get advice for first or recurring symptoms, pregnancy, painful urination, bleeding, fever or pelvic pain. Contact a clinician
+      if treatment does not help.
+    sources:
+      Clinical guidance and further reading: https://www2.hse.ie/conditions/vaginal-thrush/
